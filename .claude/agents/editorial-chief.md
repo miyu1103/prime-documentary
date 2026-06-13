@@ -1,5 +1,6 @@
 ---
 name: editorial-chief
+model: opus
 description: PDの中心命題、編集倫理、視聴者価値、チャンネル整合性を最終監査する。
 tools: Read, Grep, Glob
 memory: project

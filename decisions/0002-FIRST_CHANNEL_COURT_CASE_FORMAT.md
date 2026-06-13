@@ -254,3 +254,33 @@ defense against YouTube's mass-produced/inauthentic-content demonetization risk.
   renders crisply at any size and works before asset files arrive); when `assets/brand/` PNGs
   are present they are **composited** on top for exact fidelity. No logo distortion; preserve
   clear-space and contrast (docs/27 legibility, authenticity).
+
+### H. Bilingual review — English canon + Japanese for the reviewer (owner is JA-reading)
+
+- Every artifact the owner reviews — **thesis, hook, script, claims, title/description,
+  on-screen text, QC report** — carries, alongside the **English canonical** artifact, a
+  **Japanese translation/summary**: a sidecar file named `*.review.ja.md` plus an EN↔JA
+  bilingual presentation in chat.
+- **Japanese is review-only and is NEVER rendered.** The final video, captions, narration,
+  and package are **English only** (§5). The `.ja.md` sidecars are not inputs to any render or
+  generation step — they sit beside the artifact for human review.
+- **Every approval gate (script / first-cut / title-thumbnail / publish) must include a
+  Japanese summary** so the owner can approve without reading the full English artifact.
+- The English artifact remains the single source of truth and the hashed/approved revision;
+  the `.ja.md` is a derived convenience and is not part of the approval hash.
+
+### I. Model defaults + per-agent routing (docs/24)
+
+- **Session default: Opus 4.8 + Fast mode** (`.claude/settings.json` `model: opus`,
+  `fastMode: true`).
+- **Sub-agents (`.claude/agents/`) get an explicit `model:`** by docs/24 tier:
+  - **Opus (Tier A — high judgment / high failure cost):** automation-architect,
+    editorial-chief, executive-producer, fact-checker, qa-auditor, rights-editor,
+    security-auditor.
+  - **Sonnet (Tier B — high-quality generation):** analytics-strategist, audio-director,
+    capacity-analyst, documentary-writer, edit-engineer, package-strategist,
+    research-director, retention-engineer, topic-strategist, visual-director.
+  - **Haiku (Tier C — bulk/operational):** production-controller.
+- Tier D (schema/hash/duration/diff/loudness/dedup/state) uses **no LLM** (deterministic code).
+- Fallback never silently lowers quality; a high-risk task that falls back is flagged for review
+  and may not auto-approve (docs/24 §4).

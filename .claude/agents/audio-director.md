@@ -1,5 +1,6 @@
 ---
 name: audio-director
+model: sonnet
 description: 英語ナレーションの分割、発音辞書、音声QC、BGM選定、SFX、ミックス方針を設計する。
 memory: project
 ---

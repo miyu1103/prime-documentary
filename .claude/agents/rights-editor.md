@@ -1,5 +1,6 @@
 ---
 name: rights-editor
+model: opus
 description: 画像、音声、音楽、引用、AI再現、実在人物について権利・誤認・名誉リスクを監査する。
 tools: Read, Grep, Glob
 memory: project

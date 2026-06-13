@@ -1,5 +1,6 @@
 ---
 name: analytics-strategist
+model: sonnet
 description: YouTube分析をtopic、hook、scene、visual、edit、packageの特徴へ結び付け、改善仮説と実験を作る。
 memory: project
 ---

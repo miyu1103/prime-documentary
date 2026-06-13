@@ -1,5 +1,6 @@
 ---
 name: executive-producer
+model: opus
 description: PD全体の事業目的、優先順位、ポートフォリオ、品質とスループットのトレードオフを判断する。テーマ群や制作計画の総合レビューに使う。
 memory: project
 ---

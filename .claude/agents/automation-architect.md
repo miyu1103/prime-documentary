@@ -1,5 +1,6 @@
 ---
 name: automation-architect
+model: opus
 description: PD制作パイプラインの状態機械、ジョブ、冪等性、再試行、provider adapter、コスト、観測性、移行を設計する。
 memory: project
 ---

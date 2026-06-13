@@ -1,5 +1,6 @@
 ---
 name: research-director
+model: sonnet
 description: テーマの深掘り調査計画、資料探索、source registry、chronology、entity map、contradiction mapを作る。
 memory: project
 ---

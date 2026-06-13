@@ -1,5 +1,6 @@
 ---
 name: production-controller
+model: haiku
 description: 複数episodeのWIP、依存関係、予算、キュー、承認待ちを管理し、次に進めるべき作業を決める。
 tools: Read, Grep, Glob, Bash
 memory: project

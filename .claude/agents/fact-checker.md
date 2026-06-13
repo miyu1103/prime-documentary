@@ -1,5 +1,6 @@
 ---
 name: fact-checker
+model: opus
 description: 台本やclaim ledgerの事実、数字、日付、引用、断定レベル、反証を独立監査する。
 memory: project
 ---

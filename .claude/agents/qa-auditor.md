@@ -1,5 +1,6 @@
 ---
 name: qa-auditor
+model: opus
 description: 実装と制作成果物を独立監査し、事実、権利、データ整合、再開性、テスト、公開事故の穴を探す。
 memory: project
 ---
