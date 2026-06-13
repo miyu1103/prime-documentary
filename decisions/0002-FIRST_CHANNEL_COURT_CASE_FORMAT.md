@@ -224,3 +224,17 @@ defense against YouTube's mass-produced/inauthentic-content demonetization risk.
 - **Folder spec drift:** pipeline code uses `02_thesis/05_assets/06_audio/07_edit/08_qc`
   while docs/19 uses `02_story/05_visuals/06_voice/08_edit`. With Remotion-as-editor and no
   SDXL, fold this into one canonical layout in a follow-up (docs/19 + code + this episode).
+
+### F. Hook construction — cold-open, written last, payoff-verified (refines §4 Hook)
+
+- The **0:00–0:30 hook is written AFTER the full script is drafted**, not before. Claude
+  **identifies the script's climax / strongest moment**, then writes a **cold-open** that
+  **teases that payoff and pairs it with the central question** (outcome-tease + question).
+- **The body must pay the hook off.** The teased reveal has to actually land later in the
+  episode — no bait that the script never delivers (docs/26 retention, docs/27 promise_match,
+  invariant 1: no unsupported promise).
+- **QC gains a "promise payoff" check**: verify the hook's teased reveal and central question
+  are both resolved in the body, and flag any unpaid promise as a defect (gates publishability).
+- Claude produces **2–3 hook variants**; the owner selects one. This selection rides on the
+  existing **script approval gate** (the hook is part of the approved script revision), so it
+  adds no new gate — but the script is not "done" until a hook variant is chosen.
