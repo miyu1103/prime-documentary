@@ -1,4 +1,4 @@
-.PHONY: validate test status package
+.PHONY: validate test status package demo
 
 validate:
 	PYTHONPATH=src python scripts/validate_all_v2.py
@@ -11,3 +11,6 @@ status:
 
 package:
 	python scripts/build_v2_package.py
+
+demo:
+	PYTHONPATH=src python scripts/run_demo.py

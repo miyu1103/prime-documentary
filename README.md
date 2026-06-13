@@ -43,3 +43,17 @@ PYTHONPATH=src python scripts/validate_all_v2.py
 ```
 
 The reference code is intentionally small. It demonstrates the required invariants and does not pretend to be the full production platform.
+
+## Runnable vertical slice
+
+A first executable pipeline composes the core invariants into the artifact chain
+`topic → research_plan → sources → claims → thesis → script → scene_plan →
+asset_plan → voice_plan → edit_plan → qc_report` (no network, no LLM, no upload):
+
+```bash
+make demo      # run the whole chain on a throwaway episode under runs/
+make test      # 18 unit tests (core + pipeline)
+```
+
+See `docs/VERTICAL_SLICE_MVP.md` and the takeover audit in
+`reports/TAKEOVER_AUDIT_2026-06-13.md`.

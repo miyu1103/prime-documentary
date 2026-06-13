@@ -42,4 +42,5 @@
 - `39_AUTONOMY_PROMOTION_AND_GOVERNANCE.md` — 39 — Autonomy Promotion and Governance
 - `40_REVENUE_AND_ASSET_VALUE_MODEL.md` — 40 — Revenue and Asset Value Model
 - `41_CURRENT_PLATFORM_ASSUMPTIONS_2026-06-13.md` — 41 — Current Platform Assumptions as of 2026-06-13
+- `VERTICAL_SLICE_MVP.md` — Vertical-Slice MVP — Runnable Pipeline
 - `INDEX.md` — Prime Documentary Documentation Index
