@@ -52,8 +52,25 @@ asset_plan → voice_plan → edit_plan → qc_report` (no network, no LLM, no u
 
 ```bash
 make demo      # run the whole chain on a throwaway episode under runs/
-make test      # 18 unit tests (core + pipeline)
+make test      # unit tests (core + pipeline + studio/UI)
 ```
+
+## Minimal studio UI
+
+A one-screen web UI wraps the same pipeline: type a theme, click run, and read the
+generated thesis / script / scene plan / QC verdict. It is a thin adapter over
+`pd_factory.studio.create_and_run` — still no network, no LLM, no paid calls, no
+upload. Episodes are written to throwaway workspaces under `runs/ui/` (gitignored),
+and the QC gate keeps reporting the episode as not-publishable until real research
+replaces the placeholders.
+
+```bash
+make ui        # serves http://127.0.0.1:8765  (Ctrl-C to stop)
+```
+
+Note: clicking "run" only clears the local *screening* gate so the pipeline may
+execute. It is not a portfolio or publication approval — those human gates are
+untouched (nothing here publishes).
 
 See `docs/VERTICAL_SLICE_MVP.md` and the takeover audit in
 `reports/TAKEOVER_AUDIT_2026-06-13.md`.
