@@ -33,14 +33,17 @@ CONFIG_REVISION = "pipeline-mvp-1"
 PRODUCER = "pipeline:mvp"
 STAGE_COST_USD = 0.0  # local compute only
 
-# On-disk manifest state uses the *schema* enum (audit gap G1), not the richer
-# code-level EpisodeState. Order mirrors schemas/episode-manifest.schema.json.
+# On-disk manifest state uses the reconciled superset enum (audit gap G1, resolved
+# 2026-06-13) that now matches both schemas/episode-manifest.schema.json and the
+# code-level EpisodeState in domain.py.
 MANIFEST_STATE_ORDER = [
-    "idea", "screening", "approved", "researching", "research_ready",
-    "outline_ready", "script_draft", "script_verified", "scene_planned",
-    "assets_generating", "assets_ready", "voice_ready", "music_ready",
-    "edit_assembly", "edit_review", "package_ready", "publish_approved",
-    "scheduled", "published", "analytics_reviewed", "archived",
+    "idea", "screening", "approved", "pre_research", "researching", "research_ready",
+    "thesis_ready", "outline_ready", "script_draft", "script_review", "script_verified",
+    "scene_planned", "asset_plan_ready", "assets_generating", "assets_ready",
+    "audio_generating", "audio_ready", "voice_ready", "music_ready",
+    "edit_assembly", "edit_review", "finalizing", "package_ready", "publish_approved",
+    "uploading", "scheduled", "published", "analytics_active", "analytics_reviewed",
+    "archived",
 ]
 _READY_FOR_RESEARCH = MANIFEST_STATE_ORDER.index("approved")
 
@@ -63,7 +66,7 @@ STAGES: tuple[StageSpec, ...] = (
     StageSpec("research_plan", "01_research", "research_plan", "research-plan.schema.json", ("topic",), state="researching"),
     StageSpec("sources", "01_research", "sources", "source.schema.json", ("research_plan",), is_list=True, state="researching"),
     StageSpec("claims", "01_research", "claims", "claim-ledger.schema.json", ("topic", "sources", "research_plan"), state="research_ready"),
-    StageSpec("thesis", "02_thesis", "thesis", "thesis.schema.json", ("topic", "claims"), state="outline_ready"),
+    StageSpec("thesis", "02_thesis", "thesis", "thesis.schema.json", ("topic", "claims"), state="thesis_ready"),
     StageSpec("script", "03_script", "script.annotated", "script-annotated.schema.json", ("topic", "thesis", "claims"), state="script_draft"),
     StageSpec("scene_plan", "04_scenes", "scene_plan", "scene-plan.schema.json", ("script",)),
     StageSpec("asset_plan", "05_assets", "asset_plan", "asset-plan.schema.json", ("scene_plan",)),

@@ -57,9 +57,11 @@ PYTHONPATH=src python -m pd_factory.cli status <episode_dir>
   `script_verified` / `scene_planned`, because real fact-checking has not run. The
   downstream draft artifacts (scene/asset/voice/edit/qc) are produced to prove the
   architecture, and the QC gate reports that the episode is gated on research.
-- `manifest.state` uses the **schema** enum, not the richer `EpisodeState` in
-  `domain.py`. See audit gap **G1** in `reports/TAKEOVER_AUDIT_2026-06-13.md`;
-  reconciling the two enums is tracked as the next foundation task.
+- `manifest.state` uses the reconciled superset enum, which now matches both the
+  schema and the `EpisodeState` code model (audit gap **G1**, resolved — see the
+  resolution log in `reports/TAKEOVER_AUDIT_2026-06-13.md`). One editorial question
+  remains for the owner: whether to collapse `audio_ready` vs `voice_ready`/
+  `music_ready` into a single canonical model.
 
 ## New modules
 

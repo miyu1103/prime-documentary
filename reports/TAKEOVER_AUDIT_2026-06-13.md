@@ -178,3 +178,22 @@ Implemented in this PR. See `docs/VERTICAL_SLICE_MVP.md`.
 
 Each later phase keeps provider payloads behind adapters (invariant 9) and must not be
 treated as done merely because the blueprint validates (per `VALIDATION_REPORT_V2.md`).
+
+---
+
+## G. Resolution log (post-audit, same day)
+
+- **G1 (state-enum mismatch) — RESOLVED (conservative).** `schemas/common.schema.json`
+  and `schemas/episode-manifest.schema.json` `state` enums were widened to the
+  **superset** of the code state machine (`src/pd_factory/domain.py`, 28 states) and
+  the `docs/10` audio-split model (`voice_ready`/`music_ready`). This is additive and
+  reversible: no value was removed, so every existing artifact and every code-produced
+  state now validates. `pipeline.py::MANIFEST_STATE_ORDER` was aligned to the same list.
+  **Owner decision still open (not made unilaterally):** whether the canonical model
+  should be the 28-state code set or the audio-split set, i.e. whether `audio_ready`
+  and `voice_ready`/`music_ready` should be collapsed. Flagged per `CLAUDE.md` §5.
+- **G2 (sources array vs single-object schema) — NOT A DEFECT.** `source.schema.json`
+  correctly describes a single source; `sources.v*.json` is an array validated
+  **per-item**. This is already the established convention in
+  `scripts/validate_examples.py` (`is_list=True`) and is mirrored by the pipeline
+  (`StageSpec.is_list`). No schema change required; documented here to close the item.
