@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": [
+      "Read", "Glob", "Grep",
+      "Bash(git status:*)", "Bash(git diff:*)", "Bash(git log:*)", "Bash(git show:*)",
+      "Bash(git add:*)", "Bash(git commit:*)", "Bash(git checkout:*)", "Bash(git switch:*)",
+      "Bash(git branch:*)", "Bash(git fetch:*)", "Bash(git pull:*)", "Bash(git push:*)", "Bash(git stash:*)",
+      "Bash(ls:*)", "Bash(cat:*)", "Bash(pwd)", "Bash(mkdir:*)",
+      "Bash(pytest:*)", "Bash(python -m pytest:*)",
+      "Bash(make test)", "Bash(make validate)", "Bash(make demo)",
+      "Bash(python scripts/validate_all_v2.py:*)", "Bash(python scripts/validate_examples.py:*)",
+      "Bash(Get-Volume:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf /:*)", "Bash(rm -rf ~:*)",
+      "Bash(git push --force:*)", "Bash(git push:* --force:*)", "Bash(git reset --hard:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      { "matcher": "Bash", "hooks": [ { "type": "command", "command": "python scripts/guard_destructive.py", "timeout": 10 } ] }
+    ],
+    "PostToolUse": [
+      { "matcher": "Write|Edit", "hooks": [ { "type": "command", "command": "python scripts/check_secrets.py", "timeout": 20 } ] }
+    ]
+  }
+}
