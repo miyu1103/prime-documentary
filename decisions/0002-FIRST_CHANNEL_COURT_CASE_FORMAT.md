@@ -235,6 +235,8 @@ defense against YouTube's mass-produced/inauthentic-content demonetization risk.
   invariant 1: no unsupported promise).
 - **QC gains a "promise payoff" check**: verify the hook's teased reveal and central question
   are both resolved in the body, and flag any unpaid promise as a defect (gates publishability).
-- Claude produces **2–3 hook variants**; the owner selects one. This selection rides on the
-  existing **script approval gate** (the hook is part of the approved script revision), so it
-  adds no new gate — but the script is not "done" until a hook variant is chosen.
+- **Claude chooses the hook** (owner delegated this, 2026-06-14). Claude may draft a few
+  candidates internally and pick the strongest by payoff/clarity/curiosity; no separate hook
+  selection step. The chosen hook is still reviewed by the owner as part of the normal
+  **script approval gate** (it is in the approved script revision) and must pass the QC
+  promise-payoff check — so delegation removes a sub-choice, not the safety checks.
