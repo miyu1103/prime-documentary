@@ -4,6 +4,7 @@ import {BRAND} from './brand';
 import {Opening} from './compositions/Opening';
 import {Episode, TEMPLATE_12MIN} from './compositions/Episode';
 import {StyleTest} from './compositions/StyleTest';
+import {Animatic, animaticDurationInFrames} from './compositions/Animatic';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
 
 export const RemotionRoot: React.FC = () => {
@@ -35,6 +36,15 @@ export const RemotionRoot: React.FC = () => {
         id="StyleTest"
         component={StyleTest}
         durationInFrames={BRAND.video.fps * 60}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{bgmSrc: 'bgm_placeholder.wav' as string | null}}
+      />
+      <Composition
+        id="Animatic"
+        component={Animatic}
+        durationInFrames={animaticDurationInFrames(BRAND.video.fps)}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
