@@ -240,3 +240,17 @@ defense against YouTube's mass-produced/inauthentic-content demonetization risk.
   selection step. The chosen hook is still reviewed by the owner as part of the normal
   **script approval gate** (it is in the approved script revision) and must pass the QC
   promise-payoff check — so delegation removes a sub-choice, not the safety checks.
+
+### G. Brand identity (refines §5 visual look)
+
+- Brand = the **existing Prime Documentary** identity. Source assets live in **`assets/brand/`**
+  (owner drops them once): the **PD logo** and the **sunrise/horizon banner**.
+- **Palette:** base **black / deep navy**, primary **electric blue**, **silver**, with a
+  **gold accent**. Encoded as Remotion design tokens in `remotion/src/brand.ts` so every
+  component shares one source of truth.
+- **Remotion brand pieces:** an **Opening** (logo reveal over a rising horizon) and a
+  **thumbnail frame** (black ground + gold horizon line + large white caps title + PD mark).
+- **Logo handling:** primary is a **vector reproduction** (drawn in code from the spec, so it
+  renders crisply at any size and works before asset files arrive); when `assets/brand/` PNGs
+  are present they are **composited** on top for exact fidelity. No logo distortion; preserve
+  clear-space and contrast (docs/27 legibility, authenticity).
