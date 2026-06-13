@@ -152,3 +152,65 @@ defense against YouTube's mass-produced/inauthentic-content demonetization risk.
 - After the first batch (≈5 episodes) is published and QC-clean,
 - once per-episode human review time and Runway cost are measured,
 - before adding higher-risk case types or a second channel.
+
+---
+
+## Addendum — 2026-06-14 (tooling refinement)
+
+- Status: Accepted. Owner decision during the first local Claude Code session.
+- Effect: **supersedes the named items in §5 and §7 above** where they conflict. The
+  format (§4), risk posture (§2), first episode (§3) and infrastructure (§8) are unchanged.
+
+### A. Editing engine — Remotion + FFmpeg (supersedes the DaVinci motion text in §5/§7)
+
+- The assembly edit is produced **as code**: **Remotion** for compositions/graphics/motion,
+  **FFmpeg** for muxing/encode. **No DaVinci GUI hand-finishing.** DaVinci is optional and
+  only for a final color/loudness pass if ever wanted.
+- This makes docs/08's "deterministic assembly + rule-based motion + template graphics"
+  literally a render pipeline, not a manual timeline. The motion-template library (§10.5) is
+  therefore a **Remotion component library**, not a DaVinci/Fusion template set.
+
+### B. Visuals — Midjourney (manual) + Remotion; **SDXL dropped** (supersedes §5/§7 image rows)
+
+- **SDXL is not used.** Photo-symbolic stills come from **Midjourney**.
+- Midjourney has no usable commercial API → **generation is manual (owner)**. Division of labor:
+  **Claude writes the prompts**, and after the owner generates the 4-up, **Claude views the
+  images and recommends the single best pick.** Selection criteria: composition, `--sref`
+  consistency, no anatomical/structural breakage, scene-intent match, symbolic (must not read
+  as authentic footage — invariant 11).
+- **Brand look is unified across all episodes via Midjourney `--sref`.**
+- **Diagrams, maps, timelines, kinetic typography, lower-thirds (with burned-in citations
+  linked to `claim_id`), chapter cards, parallax on stills, transitions, open captions** are
+  all **rendered by Remotion** (code), not generated images.
+- Hero video clips (a few per episode) remain **Runway** (API, budget-capped — paid, confirm).
+
+### C. Audio — narration ElevenLabs; **music = reuse library** (supersedes §5 music / §7 Suno row)
+
+- Narration: **ElevenLabs** (paid/metered — confirm before master generation), per docs/07
+  draft-vs-master split.
+- Music is **not generated per episode.** Build a **reusable library** with **Suno**:
+  pre-generate **~50 tracks across 8 categories** — `hook`, `opening`, `explainer_bed`,
+  `tension_build`, `somber`, `reveal`, `outro`, `ambience` — plus **15–20 short SFX**.
+  **Claude writes the per-category briefs/prompts; owner generates in Suno and ingests.**
+- Register every track in **`music_registry.json`** with tags (category, mood, BPM, energy,
+  length, rights/licence, `suno_origin`, `verified_at`). Implement **automatic scene→track
+  selection** that matches by tag **and avoids reuse within the most recent N episodes**.
+- Music remains an **ingested asset** with rights metadata (not assumed programmatic; docs/07,
+  rule on Suno-origin assets).
+
+### D. Thumbnail — Remotion still component (supersedes §5 thumbnail / §7 Canva row)
+
+- **Canva is dropped.** The thumbnail is a **Remotion still composition**: background = a
+  **Midjourney still (or one frame pulled from video)**; **text, decoration and brand are
+  drawn by Remotion**.
+- **Auto-render multiple A/B variants** (title wording × layout) and present them for the
+  owner to choose at the **title/thumbnail approval gate** (§ gates unchanged).
+
+### E. Consequences to reconcile (tracked, not yet done)
+
+- **Provider registry (docs/33):** update records — drop SDXL; add Remotion (local/free),
+  FFmpeg (local/free), Midjourney (manual, no API), Suno (manual ingest, library model),
+  Canva removed. Set `verified_at`.
+- **Folder spec drift:** pipeline code uses `02_thesis/05_assets/06_audio/07_edit/08_qc`
+  while docs/19 uses `02_story/05_visuals/06_voice/08_edit`. With Remotion-as-editor and no
+  SDXL, fold this into one canonical layout in a follow-up (docs/19 + code + this episode).
