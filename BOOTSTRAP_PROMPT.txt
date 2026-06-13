@@ -1,0 +1,97 @@
+You are taking over the Prime Documentary autonomous production repository.
+
+Your first responsibility is not to code. Your first responsibility is to understand the business, production workflow, data contracts, safety boundaries, existing implementation, and actual gaps.
+
+Read in this order:
+
+1. CLAUDE.md
+2. VERSION.md
+3. START_HERE.md
+4. decisions/0001-PD_STRATEGY_AND_SCOPE.md
+5. PD_AUTONOMOUS_STUDIO_MASTER_SPEC_V2.md
+6. docs/00_PROJECT_CONTEXT.md
+7. docs/01_AUTONOMY_AND_ARCHITECTURE.md
+8. docs/02_END_TO_END_PIPELINE.md
+9. docs/10_DATA_MODEL_AND_STATE_MACHINE.md
+10. docs/12_QUALITY_GATES_AND_ACCEPTANCE.md
+11. docs/23_CREATOR_CONTROL_CENTER_AND_APPROVAL_UX.md
+12. docs/24_MODEL_ROUTING_AND_LLM_ECONOMICS.md
+13. docs/25_CROSS_MACHINE_WINDOWS_MAC_WORKFLOW.md
+14. docs/26_RETENTION_ENGINEERING.md
+15. docs/27_THUMBNAIL_AND_TITLE_EXPERIMENT_SYSTEM.md
+16. docs/28_RESEARCH_ACQUISITION_AND_WEB_SAFETY.md
+17. docs/29_SECURITY_THREAT_MODEL.md
+18. docs/30_ACCEPTANCE_SCENARIOS.md
+19. contracts/
+20. schemas/
+21. .claude/rules/
+22. .claude/skills/
+23. .claude/agents/
+24. architecture/adrs/
+25. backlog/
+
+Then inspect the entire repository without changing it.
+
+Produce an evidence-based takeover report containing:
+
+A. Repository map
+- What exists
+- What is executable
+- What is documentation only
+- What is duplicated
+- What is obsolete or inconsistent
+- What is missing
+
+B. Current capability matrix
+For each stage from demand sensing through analytics, state:
+- not started
+- specification only
+- partial
+- testable
+- production-ready
+- externally blocked
+
+C. Risk audit
+- secrets and credentials
+- destructive operations
+- paid API calls
+- public upload/publishing
+- rights and source provenance
+- prompt injection
+- data loss and stale artifacts
+- Windows/Mac path and synchronization issues
+- non-idempotent operations
+
+D. Architecture gap analysis
+Compare the current repository to the target architecture. Cite file paths and exact evidence.
+
+E. Recommended first vertical slice
+Choose the smallest slice that proves the system architecture rather than a toy feature. It should normally be:
+
+`sample topic → research plan → source registry → claim ledger → thesis → script → scene plan → placeholder asset plan → draft narration → edit plan → QC report`
+
+No public upload. No uncontrolled paid calls.
+
+F. Implementation plan
+Break the work into:
+1. Foundation
+2. First episode vertical slice
+3. Local SDXL integration
+4. Master narration and music library
+5. DaVinci assembly
+6. Approval and private upload
+7. Production Level 3
+8. Selective Level 4
+
+For each phase include:
+- outcome
+- exact files/modules
+- data migrations
+- tests
+- demo command
+- rollback
+- acceptance criteria
+- dependencies
+- risks
+
+Do not ask broad clarification questions. Use documented assumptions, mark uncertain areas, and propose configurable defaults. Do not implement anything until the takeover report is complete.

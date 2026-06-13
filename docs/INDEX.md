@@ -1,0 +1,45 @@
+# Documentation Index
+
+- `00_PROJECT_CONTEXT.md` — 00 — Project Context
+- `01_AUTONOMY_AND_ARCHITECTURE.md` — 01 — Autonomy and Architecture
+- `02_END_TO_END_PIPELINE.md` — 02 — End-to-End Pipeline
+- `03_TOPIC_AND_PORTFOLIO_SYSTEM.md` — 03 — Topic and Portfolio System
+- `04_RESEARCH_FACT_CHECK_AND_CITATION.md` — 04 — Research, Fact-check and Citation
+- `05_SCRIPT_STORY_AND_ENGLISH_STYLE.md` — 05 — Script, Story and English Style
+- `06_VISUAL_SYSTEM_SDXL_AND_CONTINUITY.md` — 06 — Visual System, SDXL and Continuity
+- `07_AUDIO_NARRATION_MUSIC_AND_MIX.md` — 07 — Audio, Narration, Music and Mix
+- `08_EDITING_DAVINCI_AUTOMATION.md` — 08 — Editing and DaVinci Automation
+- `09_PACKAGING_PUBLISHING_AND_ANALYTICS.md` — 09 — Packaging, Publishing and Analytics
+- `10_DATA_MODEL_AND_STATE_MACHINE.md` — 10 — Data Model and State Machine
+- `11_ORCHESTRATION_RETRIES_COSTS_AND_OBSERVABILITY.md` — 11 — Orchestration, Retries, Costs and Observability
+- `12_QUALITY_GATES_AND_ACCEPTANCE.md` — 12 — Quality Gates and Acceptance
+- `13_RIGHTS_SAFETY_AND_PUBLISH_RISK.md` — 13 — Rights, Safety and Publish Risk
+- `14_CLAUDE_CODE_OPERATING_MODEL.md` — 14 — Claude Code Operating Model
+- `15_IMPLEMENTATION_ROADMAP.md` — 15 — Implementation Roadmap
+- `16_OPERATIONS_RUNBOOK.md` — 16 — Operations Runbook
+- `17_PROMPT_AND_AGENT_DESIGN.md` — 17 — Prompt and Agent Design
+- `18_FAILURE_MODES_AND_PREMORTEM.md` — 18 — Failure Modes and Premortem
+- `19_FOLDER_NAMING_AND_ARTIFACT_SPEC.md` — 19 — Folder, Naming and Artifact Specification
+- `20_PROVIDER_ADAPTERS_AND_EXTERNAL_INTEGRATIONS.md` — 20 — Provider Adapters and External Integrations
+- `21_PRODUCTION_ECONOMICS_AND_CAPACITY.md` — 21 — Production Economics and Capacity
+- `22_EXPERIMENTS_KPI_AND_LEARNING_SYSTEM.md` — 22 — Experiments, KPI and Learning System
+- `23_CREATOR_CONTROL_CENTER_AND_APPROVAL_UX.md` — 23 — Creator Control Center and Approval UX
+- `24_MODEL_ROUTING_AND_LLM_ECONOMICS.md` — 24 — Model Routing and LLM Economics
+- `25_CROSS_MACHINE_WINDOWS_MAC_WORKFLOW.md` — 25 — Cross-machine Windows / Mac Workflow
+- `26_RETENTION_ENGINEERING.md` — 26 — Retention Engineering
+- `27_THUMBNAIL_AND_TITLE_EXPERIMENT_SYSTEM.md` — 27 — Thumbnail and Title Experiment System
+- `28_RESEARCH_ACQUISITION_AND_WEB_SAFETY.md` — 28 — Research Acquisition and Web Safety
+- `29_SECURITY_THREAT_MODEL.md` — 29 — Security Threat Model
+- `30_ACCEPTANCE_SCENARIOS.md` — 30 — End-to-End Acceptance Scenarios
+- `31_CONTENT_TAXONOMY_AND_CHANNEL_ARCHITECTURE.md` — 31 — Content Taxonomy and Channel Architecture
+- `32_EDITORIAL_ETHICS_AND_DOCUMENTARY_TRUST.md` — 32 — Editorial Ethics and Documentary Trust
+- `33_PROVIDER_CAPABILITY_REGISTRY.md` — 33 — Provider Capability Registry
+- `34_DATA_RETENTION_BACKUP_AND_DISASTER_RECOVERY.md` — 34 — Data Retention, Backup and Disaster Recovery
+- `35_CAPACITY_PLANNING_AND_BOTTLENECK_CONTROL.md` — 35 — Capacity Planning and Bottleneck Control
+- `36_MODEL_AND_PROMPT_EVALUATION_HARNESS.md` — 36 — Model and Prompt Evaluation Harness
+- `37_DASHBOARD_METRICS_AND_MANAGEMENT_CADENCE.md` — 37 — Dashboard Metrics and Management Cadence
+- `38_NO_GO_DECISIONS_AND_ANTI_OVERENGINEERING.md` — 38 — No-go Decisions and Anti-overengineering
+- `39_AUTONOMY_PROMOTION_AND_GOVERNANCE.md` — 39 — Autonomy Promotion and Governance
+- `40_REVENUE_AND_ASSET_VALUE_MODEL.md` — 40 — Revenue and Asset Value Model
+- `41_CURRENT_PLATFORM_ASSUMPTIONS_2026-06-13.md` — 41 — Current Platform Assumptions as of 2026-06-13
+- `INDEX.md` — Prime Documentary Documentation Index

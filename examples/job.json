@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "job_id": "01JEXAMPLEPD00000000000001",
+  "episode_id": "PD-2026-001-example",
+  "stage": "topic.screen",
+  "status": "queued",
+  "idempotency_key": "4e761f5682b51dcbed2ce264d550e3f6",
+  "input_revisions": {
+    "topic": "v001"
+  },
+  "output_artifact_ids": [],
+  "attempt": 0,
+  "max_attempts": 3,
+  "lease_owner": null,
+  "lease_expires_at": null,
+  "provider_request_ids": [],
+  "estimated_cost": {
+    "amount": 0.05,
+    "currency": "USD"
+  },
+  "actual_cost": {
+    "amount": 0,
+    "currency": "USD"
+  },
+  "error_class": null,
+  "error_message": null,
+  "created_at": "2026-06-13T12:00:00+09:00",
+  "started_at": null,
+  "finished_at": null
+}

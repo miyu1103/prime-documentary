@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-001-example",
+  "revision": "v001",
+  "scenes": [
+    {
+      "scene_id": "S001",
+      "script_span_ids": [
+        "SPN-0001"
+      ],
+      "purpose": "Reveal that the object is only the endpoint of a larger system.",
+      "primary_claim_id": "CLM-0001",
+      "emotional_function": "curiosity",
+      "visual_mode": "object",
+      "duration_seconds": 12,
+      "priority": "A",
+      "required_assets": [
+        "hero close-up",
+        "supply-chain reveal graphic"
+      ],
+      "continuity_refs": [],
+      "transition_in": "cold open",
+      "transition_out": "map expansion",
+      "on_screen_text": [],
+      "source_sensitivity": "low",
+      "human_review_required": false,
+      "fallback_visual": "Use a clean object close-up plus an SVG chain diagram."
+    }
+  ],
+  "coverage": {
+    "all_script_spans_mapped": true,
+    "orphan_scenes": []
+  }
+}

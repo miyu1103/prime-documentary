@@ -1,0 +1,153 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/scene-plan.schema.json",
+  "title": "PD Scene Plan",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "episode_id",
+    "revision",
+    "scenes",
+    "coverage"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^PD-[0-9]{4}-[0-9]{3}-[a-z0-9-]+$"
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^v[0-9]{3}$"
+    },
+    "scenes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scene_id",
+          "script_span_ids",
+          "purpose",
+          "visual_mode",
+          "duration_seconds",
+          "priority",
+          "required_assets",
+          "human_review_required"
+        ],
+        "properties": {
+          "scene_id": {
+            "type": "string",
+            "pattern": "^S[0-9]{3}$"
+          },
+          "script_span_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^SPN-[0-9]{4}$"
+            },
+            "minItems": 1
+          },
+          "purpose": {
+            "type": "string"
+          },
+          "primary_claim_id": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^CLM-[0-9]{4}$"
+          },
+          "emotional_function": {
+            "type": "string"
+          },
+          "visual_mode": {
+            "enum": [
+              "reenactment",
+              "location",
+              "object",
+              "archival_illustration",
+              "map",
+              "timeline",
+              "diagram",
+              "data_visualization",
+              "abstract",
+              "typography",
+              "breathing",
+              "transition_texture"
+            ]
+          },
+          "duration_seconds": {
+            "type": "number",
+            "minimum": 0.5
+          },
+          "priority": {
+            "enum": [
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "required_assets": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "continuity_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "transition_in": {
+            "type": "string"
+          },
+          "transition_out": {
+            "type": "string"
+          },
+          "on_screen_text": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source_sensitivity": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "human_review_required": {
+            "type": "boolean"
+          },
+          "fallback_visual": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "coverage": {
+      "type": "object",
+      "required": [
+        "all_script_spans_mapped",
+        "orphan_scenes"
+      ],
+      "properties": {
+        "all_script_spans_mapped": {
+          "type": "boolean"
+        },
+        "orphan_scenes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

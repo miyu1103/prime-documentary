@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/music-cue-sheet.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Music Cue Sheet",
+  "required": [
+    "cue_sheet_id",
+    "episode_id",
+    "revision",
+    "cues"
+  ],
+  "properties": {
+    "cue_sheet_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "cues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "cue_id",
+          "start_anchor",
+          "end_anchor",
+          "function",
+          "track_id",
+          "rights_status"
+        ],
+        "properties": {
+          "cue_id": {
+            "type": "string"
+          },
+          "start_anchor": {
+            "type": "string"
+          },
+          "end_anchor": {
+            "type": "string"
+          },
+          "function": {
+            "type": "string"
+          },
+          "track_id": {
+            "type": "string"
+          },
+          "energy": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "ducking_profile": {
+            "type": "string"
+          },
+          "rights_status": {
+            "enum": [
+              "clear",
+              "blocked",
+              "review"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

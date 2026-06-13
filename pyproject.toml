@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pd-factory-blueprint"
+version = "0.2.0"
+description = "Executable reference core for the Prime Documentary autonomous production blueprint"
+requires-python = ">=3.11"
+dependencies = [
+  "jsonschema>=4.22,<5",
+  "PyYAML>=6,<7"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.6,<1", "mypy>=1.10,<2"]
+
+[project.scripts]
+pd-blueprint = "pd_factory.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

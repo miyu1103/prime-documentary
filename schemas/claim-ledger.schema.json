@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/claim-ledger.schema.json",
+  "title": "PD Claim Ledger",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "episode_id",
+    "revision",
+    "claims",
+    "qc"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^PD-[0-9]{4}-[0-9]{3}-[a-z0-9-]+$"
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^v[0-9]{3}$"
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "claim_id",
+          "normalized_claim",
+          "importance",
+          "sensitivity",
+          "grade",
+          "source_ids",
+          "confidence",
+          "allowed_wording",
+          "prohibited_wording",
+          "status"
+        ],
+        "properties": {
+          "claim_id": {
+            "type": "string",
+            "pattern": "^CLM-[0-9]{4}$"
+          },
+          "normalized_claim": {
+            "type": "string",
+            "minLength": 3
+          },
+          "importance": {
+            "enum": [
+              "critical",
+              "major",
+              "supporting",
+              "context"
+            ]
+          },
+          "sensitivity": {
+            "enum": [
+              "low",
+              "medium",
+              "high",
+              "very_high"
+            ]
+          },
+          "grade": {
+            "enum": [
+              "A",
+              "B",
+              "C",
+              "D",
+              "E"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^SRC-[0-9]{4}$"
+            }
+          },
+          "evidence_locations": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "counterevidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "allowed_wording": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "prohibited_wording": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "temporal_scope": {
+            "type": "string"
+          },
+          "geographic_scope": {
+            "type": "string"
+          },
+          "units": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "approved",
+              "conditional",
+              "blocked",
+              "needs_research"
+            ]
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "qc": {
+      "type": "object",
+      "required": [
+        "critical_supported",
+        "e_claims_in_script_allowed",
+        "status"
+      ],
+      "properties": {
+        "critical_supported": {
+          "type": "boolean"
+        },
+        "e_claims_in_script_allowed": {
+          "const": false
+        },
+        "status": {
+          "enum": [
+            "pass",
+            "warn",
+            "fail",
+            "blocked"
+          ]
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

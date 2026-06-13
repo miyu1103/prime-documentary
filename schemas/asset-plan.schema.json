@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/asset-plan.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Asset Plan",
+  "required": [
+    "asset_plan_id",
+    "episode_id",
+    "revision",
+    "requirements"
+  ],
+  "properties": {
+    "asset_plan_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "requirement_id",
+          "scene_id",
+          "visual_mode",
+          "priority",
+          "candidate_count",
+          "fallback"
+        ],
+        "properties": {
+          "requirement_id": {
+            "type": "string"
+          },
+          "scene_id": {
+            "type": "string"
+          },
+          "shot_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "visual_mode": {
+            "type": "string"
+          },
+          "priority": {
+            "enum": [
+              "hero",
+              "A",
+              "B",
+              "C"
+            ]
+          },
+          "candidate_count": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "continuity_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "rights_class": {
+            "type": "string"
+          },
+          "fallback": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

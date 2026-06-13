@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/edit-plan.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Edit Plan",
+  "required": [
+    "edit_plan_id",
+    "episode_id",
+    "revision",
+    "timeline",
+    "segments",
+    "required_artifacts"
+  ],
+  "properties": {
+    "edit_plan_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "timeline": {
+      "type": "object",
+      "required": [
+        "fps",
+        "width",
+        "height",
+        "start_timecode"
+      ],
+      "properties": {
+        "fps": {
+          "type": "number"
+        },
+        "width": {
+          "type": "integer"
+        },
+        "height": {
+          "type": "integer"
+        },
+        "start_timecode": {
+          "type": "string"
+        },
+        "template_version": {
+          "type": "string"
+        }
+      }
+    },
+    "segments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "segment_id",
+          "scene_id",
+          "start_seconds",
+          "duration_seconds",
+          "visual_asset_ids",
+          "voice_chunk_ids"
+        ],
+        "properties": {
+          "segment_id": {
+            "type": "string"
+          },
+          "scene_id": {
+            "type": "string"
+          },
+          "start_seconds": {
+            "type": "number"
+          },
+          "duration_seconds": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "visual_asset_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "voice_chunk_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "motion_template": {
+            "type": "string"
+          },
+          "music_cue_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "markers": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "required_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/incident.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Incident",
+  "required": [
+    "incident_id",
+    "severity",
+    "category",
+    "detected_at",
+    "summary",
+    "status",
+    "containment"
+  ],
+  "properties": {
+    "incident_id": {
+      "type": "string"
+    },
+    "severity": {
+      "enum": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "category": {
+      "enum": [
+        "fact",
+        "rights",
+        "publish",
+        "security",
+        "cost",
+        "data",
+        "provider",
+        "quality",
+        "operations"
+      ]
+    },
+    "detected_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "affected_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "open",
+        "contained",
+        "resolved",
+        "closed"
+      ]
+    },
+    "containment": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "root_cause": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "preventive_actions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/approval.schema.json",
+  "title": "PD Approval",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "approval_id",
+    "episode_id",
+    "target_type",
+    "target_id",
+    "target_revision",
+    "decision",
+    "requested_at",
+    "requested_by"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "approval_id": {
+      "type": "string",
+      "minLength": 6
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^PD-[0-9]{4}-[0-9]{3}-[a-z0-9-]+$"
+    },
+    "target_type": {
+      "enum": [
+        "topic",
+        "thesis",
+        "research",
+        "script",
+        "visual_direction",
+        "edit",
+        "package",
+        "publish",
+        "budget",
+        "destructive_action"
+      ]
+    },
+    "target_id": {
+      "type": "string"
+    },
+    "target_revision": {
+      "type": "string",
+      "pattern": "^v[0-9]{3}$"
+    },
+    "decision": {
+      "enum": [
+        "pending",
+        "approved",
+        "rejected",
+        "approved_with_conditions",
+        "expired",
+        "revoked"
+      ]
+    },
+    "requested_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "requested_by": {
+      "type": "string"
+    },
+    "decided_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "decided_by": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expires_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "evidence_snapshot_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

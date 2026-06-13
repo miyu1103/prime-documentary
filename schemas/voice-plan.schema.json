@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/voice-plan.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Voice Plan",
+  "required": [
+    "voice_plan_id",
+    "episode_id",
+    "script_revision",
+    "voice_profile",
+    "chunks"
+  ],
+  "properties": {
+    "voice_plan_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "script_revision": {
+      "type": "string"
+    },
+    "voice_profile": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "draft",
+        "master"
+      ]
+    },
+    "chunks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "chunk_id",
+          "span_ids",
+          "spoken_text",
+          "target_seconds"
+        ],
+        "properties": {
+          "chunk_id": {
+            "type": "string"
+          },
+          "span_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "spoken_text": {
+            "type": "string"
+          },
+          "context_before": {
+            "type": "string"
+          },
+          "context_after": {
+            "type": "string"
+          },
+          "pronunciation_keys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "target_seconds": {
+            "type": "number",
+            "minimum": 0.2
+          },
+          "emotion": {
+            "type": "string"
+          },
+          "revision_risk": {
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

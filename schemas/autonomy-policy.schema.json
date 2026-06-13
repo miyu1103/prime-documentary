@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/autonomy-policy.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Autonomy Policy",
+  "required": [
+    "policy_id",
+    "operation",
+    "level",
+    "conditions",
+    "demotion_triggers"
+  ],
+  "properties": {
+    "policy_id": {
+      "type": "string"
+    },
+    "operation": {
+      "type": "string"
+    },
+    "level": {
+      "enum": [
+        "manual",
+        "suggest",
+        "auto_with_review",
+        "auto_unless_flagged",
+        "fully_auto",
+        "disabled"
+      ]
+    },
+    "risk_classes": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "R0",
+          "R1",
+          "R2",
+          "R3",
+          "R4"
+        ]
+      }
+    },
+    "conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "sample_audit_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "demotion_triggers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "approved_by": {
+      "type": "string"
+    },
+    "review_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

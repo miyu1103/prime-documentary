@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/publish-package-v2.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Publish Package V2",
+  "required": [
+    "package_id",
+    "episode_id",
+    "revision",
+    "video_artifact",
+    "selected_pair",
+    "metadata",
+    "rights_status",
+    "qc_status",
+    "approval_status"
+  ],
+  "properties": {
+    "package_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "video_artifact": {
+      "type": "object",
+      "required": [
+        "uri",
+        "sha256"
+      ],
+      "properties": {
+        "uri": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string"
+        }
+      }
+    },
+    "selected_pair": {
+      "type": "object",
+      "required": [
+        "title_id",
+        "thumbnail_id"
+      ],
+      "properties": {
+        "title_id": {
+          "type": "string"
+        },
+        "thumbnail_id": {
+          "type": "string"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": [
+        "title",
+        "description",
+        "language",
+        "privacy_status"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 100
+        },
+        "description": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        },
+        "privacy_status": {
+          "enum": [
+            "private",
+            "unlisted",
+            "public"
+          ]
+        },
+        "scheduled_at": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "chapters": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "rights_status": {
+      "enum": [
+        "clear",
+        "review",
+        "blocked"
+      ]
+    },
+    "qc_status": {
+      "enum": [
+        "pass",
+        "warn",
+        "fail"
+      ]
+    },
+    "approval_status": {
+      "enum": [
+        "missing",
+        "valid",
+        "invalidated"
+      ]
+    },
+    "channel_allowlist_id": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,200 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/asset.schema.json",
+  "title": "PD Asset",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "asset_id",
+    "episode_id",
+    "scene_id",
+    "asset_type",
+    "revision",
+    "status",
+    "uri",
+    "checksum",
+    "provenance",
+    "rights",
+    "qc"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "asset_id": {
+      "type": "string",
+      "minLength": 5
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^PD-[0-9]{4}-[0-9]{3}-[a-z0-9-]+$"
+    },
+    "scene_id": {
+      "type": "string",
+      "pattern": "^S[0-9]{3}$"
+    },
+    "shot_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "asset_type": {
+      "enum": [
+        "image",
+        "video",
+        "diagram",
+        "map",
+        "audio",
+        "music",
+        "subtitle",
+        "thumbnail",
+        "render",
+        "project",
+        "other"
+      ]
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^v[0-9]{3}$"
+    },
+    "status": {
+      "enum": [
+        "raw",
+        "candidate",
+        "approved",
+        "rejected",
+        "stale",
+        "superseded",
+        "missing"
+      ]
+    },
+    "uri": {
+      "type": "string"
+    },
+    "checksum": {
+      "type": "string"
+    },
+    "mime_type": {
+      "type": "string"
+    },
+    "size_bytes": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "created_by",
+        "input_hash"
+      ],
+      "properties": {
+        "created_by": {
+          "type": "string"
+        },
+        "provider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "provider_request_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "model_profile": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "prompt_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "seed": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "input_hash": {
+          "type": "string"
+        }
+      }
+    },
+    "rights": {
+      "type": "object",
+      "required": [
+        "status",
+        "origin",
+        "commercial_use"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unknown",
+            "clear",
+            "conditional",
+            "blocked"
+          ]
+        },
+        "origin": {
+          "type": "string"
+        },
+        "commercial_use": {
+          "enum": [
+            "unknown",
+            "allowed",
+            "restricted",
+            "not_allowed"
+          ]
+        },
+        "evidence_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "qc": {
+      "type": "object",
+      "required": [
+        "status",
+        "score",
+        "findings"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "not_run",
+            "pass",
+            "warn",
+            "fail",
+            "blocked"
+          ]
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "findings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

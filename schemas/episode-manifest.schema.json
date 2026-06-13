@@ -1,0 +1,276 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/episode-manifest.schema.json",
+  "title": "PD Episode Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "episode_id",
+    "topic_id",
+    "slug",
+    "state",
+    "risk_class",
+    "production_tier",
+    "active_revisions",
+    "artifacts",
+    "approvals",
+    "costs",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^PD-[0-9]{4}-[0-9]{3}-[a-z0-9-]+$"
+    },
+    "topic_id": {
+      "type": "string",
+      "pattern": "^TOP-[0-9]{8}-[0-9]{3}$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "title_working": {
+      "type": "string"
+    },
+    "state": {
+      "enum": [
+        "idea",
+        "screening",
+        "approved",
+        "researching",
+        "research_ready",
+        "outline_ready",
+        "script_draft",
+        "script_verified",
+        "scene_planned",
+        "assets_generating",
+        "assets_ready",
+        "voice_ready",
+        "music_ready",
+        "edit_assembly",
+        "edit_review",
+        "package_ready",
+        "publish_approved",
+        "scheduled",
+        "published",
+        "analytics_reviewed",
+        "archived"
+      ]
+    },
+    "risk_class": {
+      "enum": [
+        "R0",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ]
+    },
+    "production_tier": {
+      "enum": [
+        "A",
+        "B",
+        "C"
+      ]
+    },
+    "autonomy_level": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 4
+    },
+    "target_language": {
+      "const": "en"
+    },
+    "target_duration_minutes": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 180
+    },
+    "active_revisions": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string",
+        "pattern": "^v[0-9]{3}$"
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "artifact_id",
+          "artifact_type",
+          "revision",
+          "uri",
+          "checksum",
+          "status"
+        ],
+        "properties": {
+          "artifact_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "artifact_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "revision": {
+            "$ref": "#/$defs/revision"
+          },
+          "uri": {
+            "$ref": "#/$defs/uri"
+          },
+          "checksum": {
+            "type": "string",
+            "minLength": 8
+          },
+          "status": {
+            "enum": [
+              "draft",
+              "candidate",
+              "approved",
+              "rejected",
+              "stale",
+              "superseded",
+              "missing"
+            ]
+          },
+          "rights_status": {
+            "enum": [
+              "unknown",
+              "clear",
+              "conditional",
+              "blocked"
+            ]
+          },
+          "qc_status": {
+            "enum": [
+              "not_run",
+              "pass",
+              "warn",
+              "fail",
+              "blocked"
+            ]
+          }
+        }
+      }
+    },
+    "approvals": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "costs": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "estimated",
+        "actual",
+        "soft_limit",
+        "hard_limit"
+      ],
+      "properties": {
+        "estimated": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "amount",
+            "currency"
+          ],
+          "properties": {
+            "amount": {
+              "type": "number",
+              "minimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            }
+          }
+        },
+        "actual": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "amount",
+            "currency"
+          ],
+          "properties": {
+            "amount": {
+              "type": "number",
+              "minimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            }
+          }
+        },
+        "soft_limit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "amount",
+            "currency"
+          ],
+          "properties": {
+            "amount": {
+              "type": "number",
+              "minimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            }
+          }
+        },
+        "hard_limit": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "amount",
+            "currency"
+          ],
+          "properties": {
+            "amount": {
+              "type": "number",
+              "minimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            }
+          }
+        }
+      }
+    },
+    "warnings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "blockers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

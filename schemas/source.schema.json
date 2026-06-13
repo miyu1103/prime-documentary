@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/source.schema.json",
+  "title": "PD Source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "source_id",
+    "title",
+    "source_type",
+    "authority",
+    "directness",
+    "independence",
+    "accessed_at",
+    "reference",
+    "relevant_locations"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "source_id": {
+      "type": "string",
+      "pattern": "^SRC-[0-9]{4}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "organization": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "publication_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "accessed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "reference": {
+      "type": "string"
+    },
+    "source_type": {
+      "enum": [
+        "primary",
+        "official",
+        "academic",
+        "institutional",
+        "high_quality_secondary",
+        "secondary",
+        "community",
+        "unknown"
+      ]
+    },
+    "authority": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "directness": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "independence": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "recency": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "bias_or_interest": {
+      "type": "string"
+    },
+    "relevant_locations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "quotation_note": {
+      "type": "string"
+    },
+    "rights_note": {
+      "type": "string"
+    },
+    "content_hash": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

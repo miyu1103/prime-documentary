@@ -1,0 +1,175 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/common.schema.json",
+  "title": "Prime Documentary Common Definitions",
+  "$defs": {
+    "episodeId": {
+      "type": "string",
+      "pattern": "^PD-[0-9]{4}-[0-9]{3}-[a-z0-9-]+$"
+    },
+    "topicId": {
+      "type": "string",
+      "pattern": "^TOP-[0-9]{8}-[0-9]{3}$"
+    },
+    "sourceId": {
+      "type": "string",
+      "pattern": "^SRC-[0-9]{4}$"
+    },
+    "claimId": {
+      "type": "string",
+      "pattern": "^CLM-[0-9]{4}$"
+    },
+    "sceneId": {
+      "type": "string",
+      "pattern": "^S[0-9]{3}$"
+    },
+    "shotId": {
+      "type": "string",
+      "pattern": "^S[0-9]{3}-SH[0-9]{3}$"
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^v[0-9]{3}$"
+    },
+    "uri": {
+      "type": "string",
+      "minLength": 1
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "state": {
+      "enum": [
+        "idea",
+        "screening",
+        "approved",
+        "researching",
+        "research_ready",
+        "outline_ready",
+        "script_draft",
+        "script_verified",
+        "scene_planned",
+        "assets_generating",
+        "assets_ready",
+        "voice_ready",
+        "music_ready",
+        "edit_assembly",
+        "edit_review",
+        "package_ready",
+        "publish_approved",
+        "scheduled",
+        "published",
+        "analytics_reviewed",
+        "archived"
+      ]
+    },
+    "riskClass": {
+      "enum": [
+        "R0",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ]
+    },
+    "severity": {
+      "enum": [
+        "S0",
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    "approvalDecision": {
+      "enum": [
+        "pending",
+        "approved",
+        "rejected",
+        "approved_with_conditions",
+        "expired",
+        "revoked"
+      ]
+    },
+    "artifactRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "artifact_id",
+        "artifact_type",
+        "revision",
+        "uri",
+        "checksum",
+        "status"
+      ],
+      "properties": {
+        "artifact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "artifact_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "revision": {
+          "$ref": "#/$defs/revision"
+        },
+        "uri": {
+          "$ref": "#/$defs/uri"
+        },
+        "checksum": {
+          "type": "string",
+          "minLength": 8
+        },
+        "status": {
+          "enum": [
+            "draft",
+            "candidate",
+            "approved",
+            "rejected",
+            "stale",
+            "superseded",
+            "missing"
+          ]
+        },
+        "rights_status": {
+          "enum": [
+            "unknown",
+            "clear",
+            "conditional",
+            "blocked"
+          ]
+        },
+        "qc_status": {
+          "enum": [
+            "not_run",
+            "pass",
+            "warn",
+            "fail",
+            "blocked"
+          ]
+        }
+      }
+    },
+    "money": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "amount",
+        "currency"
+      ],
+      "properties": {
+        "amount": {
+          "type": "number",
+          "minimum": 0
+        },
+        "currency": {
+          "type": "string",
+          "pattern": "^[A-Z]{3}$"
+        }
+      }
+    }
+  }
+}

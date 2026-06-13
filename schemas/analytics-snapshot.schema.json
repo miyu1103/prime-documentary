@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/analytics-snapshot.schema.json",
+  "title": "PD Analytics Snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "episode_id",
+    "platform_video_id",
+    "window",
+    "captured_at",
+    "metrics"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^PD-[0-9]{4}-[0-9]{3}-[a-z0-9-]+$"
+    },
+    "platform_video_id": {
+      "type": "string"
+    },
+    "window": {
+      "enum": [
+        "1h",
+        "24h",
+        "72h",
+        "7d",
+        "28d",
+        "90d",
+        "180d",
+        "365d",
+        "custom"
+      ]
+    },
+    "captured_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "metrics": {
+      "type": "object",
+      "properties": {
+        "impressions": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "ctr": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "views": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "watch_time_hours": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "average_view_duration_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "average_percentage_viewed": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1
+        },
+        "subscribers_gained": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "likes": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "comments": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "revenue": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "amount",
+            "currency"
+          ],
+          "properties": {
+            "amount": {
+              "type": "number",
+              "minimum": 0
+            },
+            "currency": {
+              "type": "string",
+              "pattern": "^[A-Z]{3}$"
+            }
+          }
+        }
+      }
+    },
+    "retention_points": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "second",
+          "relative_retention"
+        ],
+        "properties": {
+          "second": {
+            "type": "number",
+            "minimum": 0
+          },
+          "relative_retention": {
+            "type": "number",
+            "minimum": 0
+          }
+        }
+      }
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

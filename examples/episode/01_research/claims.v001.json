@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-001-example",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "The object is produced through a multi-stage international supply chain.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Table 2"
+      ],
+      "counterevidence": [],
+      "confidence": 0.88,
+      "allowed_wording": [
+        "The object typically passes through multiple stages before reaching consumers."
+      ],
+      "prohibited_wording": [
+        "Every object follows the same route."
+      ],
+      "temporal_scope": "modern period",
+      "geographic_scope": "global",
+      "units": "",
+      "status": "approved",
+      "notes": "Example only."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": []
+  }
+}

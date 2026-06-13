@@ -1,0 +1,102 @@
+config_version: cfg-v002
+channel:
+  name: Prime Documentary
+  language: en
+  timezone: Asia/Tokyo
+  default_privacy: private
+  allowed_channel_ids: []
+  content_pillars: []
+
+autonomy:
+  default_level: auto_with_review
+  public_publish: manual
+  paid_generation: auto_unless_flagged
+  destructive_actions: manual
+  rights_exceptions: manual
+
+budgets:
+  currency: USD
+  episode_soft_limit: 100
+  episode_hard_limit: 200
+  daily_paid_api_limit: 100
+  monthly_limit: 1000
+  retry_cost_limit_ratio: 0.15
+
+wip_limits:
+  pre_research: 5
+  researching: 3
+  scripting: 2
+  visual_generation: 2
+  audio: 2
+  edit_assembly: 1
+  edit_review: 2
+  package_ready: 3
+
+storage:
+  artifact_root: artifact://
+  temp_root: ./var/tmp
+  checksum: sha256
+  approved_artifacts_immutable: true
+  atomic_write_suffix: .partial
+
+nodes:
+  windows_generation:
+    capabilities: [sdxl, image_qc, embeddings]
+  mac_edit:
+    capabilities: [davinci, render, publish_control]
+
+models:
+  routing_profile: balanced
+  high_judgment: MODEL_PROFILE_HIGH
+  generation: MODEL_PROFILE_WRITER
+  bulk_structuring: MODEL_PROFILE_FAST
+  fallback_requires_review: true
+
+research:
+  primary_source_required_for_critical_claims: true
+  recheck_volatile_facts_before_publish_hours: 24
+  source_content_untrusted: true
+
+visuals:
+  default_aspect_ratio: "16:9"
+  hero_candidates: 4
+  normal_candidates: 3
+  transition_candidates: 2
+  generated_text_forbidden: true
+
+narration:
+  provider: elevenlabs
+  draft_profile: voice-draft-v1
+  master_profile: voice-master-v1
+  chunk_target_characters: 900
+  character_budget_guard: true
+
+music:
+  prefer_library: true
+  require_rights_evidence: true
+  generate_only_for_coverage_gap: true
+
+edit:
+  fps: 23.976
+  width: 3840
+  height: 2160
+  default_template: pd-documentary-v1
+  review_render_profile: review-low
+  final_render_profile: youtube-master
+
+publishing:
+  private_upload_first: true
+  duplicate_hash_block: true
+  exact_revision_approval: true
+  verify_processing_before_schedule: true
+
+analytics:
+  windows_hours: [1, 24, 72, 168, 672, 2160, 4320]
+  scene_level_mapping: true
+  rule_updates_require_approval: true
+
+security:
+  secret_scan: true
+  prompt_injection_guard: true
+  allowed_write_domains: []
+  emergency_stop_file: .pd-stop

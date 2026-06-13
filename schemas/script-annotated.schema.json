@@ -1,0 +1,133 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/script-annotated.schema.json",
+  "title": "PD Annotated Script",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "episode_id",
+    "revision",
+    "language",
+    "thesis",
+    "viewer_promise",
+    "chapters",
+    "spans",
+    "estimated_duration_seconds",
+    "qc_status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^PD-[0-9]{4}-[0-9]{3}-[a-z0-9-]+$"
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^v[0-9]{3}$"
+    },
+    "language": {
+      "const": "en"
+    },
+    "thesis": {
+      "type": "string",
+      "minLength": 10
+    },
+    "viewer_promise": {
+      "type": "string",
+      "minLength": 10
+    },
+    "chapters": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "chapter_id",
+          "title",
+          "function",
+          "span_ids"
+        ],
+        "properties": {
+          "chapter_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "function": {
+            "type": "string"
+          },
+          "span_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "spans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "span_id",
+          "text",
+          "claim_ids",
+          "narrative_function"
+        ],
+        "properties": {
+          "span_id": {
+            "type": "string",
+            "pattern": "^SPN-[0-9]{4}$"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 1
+          },
+          "claim_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^CLM-[0-9]{4}$"
+            }
+          },
+          "narrative_function": {
+            "type": "string"
+          },
+          "pronunciation_keys": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "visual_intent": {
+            "type": "string"
+          },
+          "on_screen_text": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "estimated_duration_seconds": {
+      "type": "number",
+      "minimum": 1
+    },
+    "qc_status": {
+      "enum": [
+        "not_run",
+        "pass",
+        "warn",
+        "fail",
+        "blocked"
+      ]
+    }
+  }
+}

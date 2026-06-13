@@ -1,0 +1,215 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/topic.schema.json",
+  "title": "PD Topic Brief",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "topic_id",
+    "subject",
+    "angle",
+    "central_question",
+    "viewer_promise",
+    "target_audience",
+    "differentiation",
+    "scores",
+    "risk_class",
+    "recommendation",
+    "status"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "topic_id": {
+      "type": "string",
+      "pattern": "^TOP-[0-9]{8}-[0-9]{3}$"
+    },
+    "subject": {
+      "type": "string",
+      "minLength": 3
+    },
+    "angle": {
+      "type": "string",
+      "minLength": 3
+    },
+    "central_question": {
+      "type": "string",
+      "minLength": 10
+    },
+    "viewer_promise": {
+      "type": "string",
+      "minLength": 10
+    },
+    "surprise": {
+      "type": "string"
+    },
+    "stakes": {
+      "type": "string"
+    },
+    "target_audience": {
+      "type": "string"
+    },
+    "evergreen_horizon": {
+      "enum": [
+        "timely",
+        "1y",
+        "3y",
+        "5y",
+        "10y_plus"
+      ]
+    },
+    "series_cluster": {
+      "type": "string"
+    },
+    "demand_evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "competition": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "differentiation": {
+      "type": "string"
+    },
+    "research_feasibility": {
+      "type": "string"
+    },
+    "visual_feasibility": {
+      "type": "string"
+    },
+    "scores": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "demand",
+        "clickability",
+        "retention",
+        "evergreen",
+        "differentiation",
+        "visual",
+        "sources",
+        "series",
+        "monetization",
+        "efficiency",
+        "risk_deduction",
+        "total"
+      ],
+      "properties": {
+        "demand": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 20
+        },
+        "clickability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "retention": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 15
+        },
+        "evergreen": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "differentiation": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "visual": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "sources": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 8
+        },
+        "series": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 5
+        },
+        "monetization": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "efficiency": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 3
+        },
+        "risk_deduction": {
+          "type": "number",
+          "minimum": -70,
+          "maximum": 0
+        },
+        "total": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        }
+      }
+    },
+    "risk_class": {
+      "enum": [
+        "R0",
+        "R1",
+        "R2",
+        "R3",
+        "R4"
+      ]
+    },
+    "risk_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "estimated_cost_band": {
+      "enum": [
+        "low",
+        "medium",
+        "high",
+        "very_high"
+      ]
+    },
+    "recommendation": {
+      "enum": [
+        "priority",
+        "candidate",
+        "reframe",
+        "hold",
+        "reject"
+      ]
+    },
+    "kill_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "candidate",
+        "needs_reframe",
+        "approved",
+        "rejected",
+        "held"
+      ]
+    }
+  }
+}

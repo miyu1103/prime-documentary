@@ -1,0 +1,112 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/research-plan.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Research Plan",
+  "required": [
+    "research_plan_id",
+    "episode_id",
+    "revision",
+    "central_question",
+    "subquestions",
+    "query_tracks",
+    "stop_conditions",
+    "provenance"
+  ],
+  "properties": {
+    "research_plan_id": {
+      "type": "string"
+    },
+    "episode_id": {
+      "type": "string"
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^v[0-9]{3,}$"
+    },
+    "central_question": {
+      "type": "string",
+      "minLength": 10
+    },
+    "subquestions": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "question",
+          "importance"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "question": {
+            "type": "string"
+          },
+          "importance": {
+            "type": "string",
+            "enum": [
+              "critical",
+              "major",
+              "supporting"
+            ]
+          }
+        }
+      }
+    },
+    "query_tracks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "queries"
+        ],
+        "properties": {
+          "type": {
+            "enum": [
+              "primary",
+              "counterevidence",
+              "chronology",
+              "numbers",
+              "current",
+              "visual",
+              "rights"
+            ]
+          },
+          "queries": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "source_requirements": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "volatile_facts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "stop_conditions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "provenance": {
+      "type": "object"
+    }
+  }
+}

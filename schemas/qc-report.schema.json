@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/qc-report.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "QC Report",
+  "required": [
+    "qc_report_id",
+    "target_type",
+    "target_id",
+    "target_revision",
+    "gate",
+    "result",
+    "findings",
+    "created_at"
+  ],
+  "properties": {
+    "qc_report_id": {
+      "type": "string"
+    },
+    "target_type": {
+      "type": "string"
+    },
+    "target_id": {
+      "type": "string"
+    },
+    "target_revision": {
+      "type": "string"
+    },
+    "gate": {
+      "type": "string"
+    },
+    "result": {
+      "enum": [
+        "pass",
+        "pass_with_warnings",
+        "fail",
+        "blocked"
+      ]
+    },
+    "findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "finding_id",
+          "severity",
+          "code",
+          "message",
+          "action"
+        ],
+        "properties": {
+          "finding_id": {
+            "type": "string"
+          },
+          "severity": {
+            "enum": [
+              "S0",
+              "S1",
+              "S2",
+              "S3",
+              "S4",
+              "S5"
+            ]
+          },
+          "code": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          },
+          "location": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "action": {
+            "enum": [
+              "none",
+              "review",
+              "repair",
+              "regenerate",
+              "research",
+              "block"
+            ]
+          },
+          "related_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "validator_versions": {
+      "type": "object"
+    }
+  }
+}

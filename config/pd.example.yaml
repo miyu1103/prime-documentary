@@ -1,0 +1,102 @@
+project:
+  name: prime-documentary
+  target_language: en
+  timezone: Asia/Tokyo
+  default_autonomy_level: 3
+  default_production_tier: B
+
+storage:
+  artifact_root: ./episodes
+  library_root: ./library
+  runtime_root: ./runtime
+  checksum: sha256
+  atomic_writes: true
+
+workflow:
+  wip_limits:
+    researching: 3
+    scripting: 2
+    assets_generating: 2
+    edit_assembly: 1
+    edit_review: 2
+    package_ready: 3
+  default_upload_visibility: private
+  require_publish_approval: true
+  require_current_revision_approval: true
+  partial_rerun: true
+
+budgets:
+  currency: USD
+  episode_soft_limit: 100
+  episode_hard_limit: 200
+  daily_provider_limit: 250
+  monthly_channel_limit: 3000
+
+llm:
+  gateway_profile: default
+  structured_output_required: true
+  cache_deterministic_tasks: true
+  prompts_versioned: true
+
+image:
+  provider: local_sdxl
+  generation_node: windows-rtx4090
+  default_width: 1920
+  default_height: 1080
+  hero_candidates: 4
+  tier_a_candidates: 4
+  tier_b_candidates: 3
+  tier_c_candidates: 2
+  max_retries_per_shot: 3
+
+narration:
+  provider: elevenlabs
+  voice_profile: pd-main-narrator
+  draft_profile: pd-draft
+  master_profile: pd-master
+  require_script_approval_for_master: true
+  pronunciation_dictionary: ./library/pronunciation/pd.json
+
+music:
+  selection_first: true
+  library_root: ./library/music
+  generate_only_for_coverage_gaps: true
+  require_rights_metadata: true
+  unofficial_ui_automation_enabled: false
+
+editing:
+  provider: davinci_resolve
+  editing_node: mac-editor
+  project_template: ./templates/davinci/pd-master-template
+  review_render_profile: review_high
+  final_render_profile: youtube_upload
+  use_ui_automation_as_last_resort: true
+
+publishing:
+  provider: youtube
+  allowed_channel_ids:
+    - REPLACE_WITH_CHANNEL_ID
+  default_privacy: private
+  public_publish_requires_human: true
+  duplicate_hash_check: true
+
+quality:
+  critical_claim_min_grade: B
+  block_e_grade_claims: true
+  visual_qc_min_score: 75
+  thumbnail_qc_min_score: 80
+  severity_block_threshold: S3
+
+notifications:
+  immediate:
+    - accidental_public_risk
+    - rights_block
+    - fact_block
+    - hard_budget
+    - destructive_action_attempt
+    - data_loss_risk
+  digest:
+    - normal_qc_failure
+    - completed_draft
+    - daily_status
+    - weekly_analytics

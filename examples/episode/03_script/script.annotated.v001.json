@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-001-example",
+  "revision": "v001",
+  "language": "en",
+  "thesis": "The familiar object is best understood not as a product, but as the endpoint of a hidden system.",
+  "viewer_promise": "By the end, the viewer will see the ordinary object as a map of the system that produced it.",
+  "chapters": [
+    {
+      "chapter_id": "CH01",
+      "title": "The Object in Plain Sight",
+      "function": "Open the question and reveal the hidden chain.",
+      "span_ids": [
+        "SPN-0001"
+      ]
+    }
+  ],
+  "spans": [
+    {
+      "span_id": "SPN-0001",
+      "text": "It looks like a single object. In reality, it is the final visible step in a chain that may cross industries, borders, and years.",
+      "claim_ids": [
+        "CLM-0001"
+      ],
+      "narrative_function": "hook",
+      "pronunciation_keys": [],
+      "visual_intent": "Begin on a close detail, then reveal a map-like chain.",
+      "on_screen_text": []
+    }
+  ],
+  "estimated_duration_seconds": 12,
+  "qc_status": "pass"
+}

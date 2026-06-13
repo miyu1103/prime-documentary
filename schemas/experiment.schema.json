@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/experiment.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "title": "Experiment",
+  "required": [
+    "experiment_id",
+    "hypothesis",
+    "change",
+    "primary_metric",
+    "start_condition",
+    "stop_condition",
+    "status"
+  ],
+  "properties": {
+    "experiment_id": {
+      "type": "string"
+    },
+    "hypothesis": {
+      "type": "string"
+    },
+    "change": {
+      "type": "string"
+    },
+    "primary_metric": {
+      "type": "string"
+    },
+    "secondary_metrics": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "confounders": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "start_condition": {
+      "type": "string"
+    },
+    "stop_condition": {
+      "type": "string"
+    },
+    "status": {
+      "enum": [
+        "planned",
+        "active",
+        "completed",
+        "cancelled"
+      ]
+    },
+    "result": {
+      "type": [
+        "object",
+        "null"
+      ]
+    }
+  }
+}
