@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-001-miranda",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-14T01:25:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-14T01:30:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner approved Miranda script v001 at the script gate (confirmed in chat). Bound to content_hash sha256:e2e556eb23412a108f8ac96b126baa6504e0b6243036b85fe6b3686ba1b30adc — re-approval required if the script revision/hash changes (rules/12). NOTE: research QC is still 'warn' (CourtListener durable hash pending token); recheck before publish, not a script-gate blocker.",
+  "conditions": [
+    "Re-verify Ernesto Miranda facts (CLM-0006) phrasing remains accurate before publish.",
+    "Capture CourtListener durable content hash (add COURTLISTENER_TOKEN) before publish."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-001-miranda/03_script/script.annotated.v001.json"
+}
