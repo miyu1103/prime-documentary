@@ -179,6 +179,16 @@ defense against YouTube's mass-produced/inauthentic-content demonetization risk.
   consistency, no anatomical/structural breakage, scene-intent match, symbolic (must not read
   as authentic footage — invariant 11).
 - **Brand look is unified across all episodes via Midjourney `--sref`.**
+- **Use stills richly — do not ration them.** Budget **30–50+ Midjourney stills per episode**
+  (cheap relative to retention value). To keep the manual-generation load sustainable, split
+  into two pools: (a) a **reusable generic-motif library** (gavel, courtroom, document/scales,
+  flag, jail bars, map textures, abstract "system" imagery, negative-space breathers) ingested
+  once and reused across episodes, registered in **`library/visual/visual_registry.json`**
+  (tags: motif, mood, `--sref`, orientation, `content_hash`, `rights_basis`, `verified_at`,
+  reuse-tracking) — mirrors the music-library model; and (b) **episode-specific imagery**
+  (the actual case: people-as-symbol, specific places/objects, the unique "hidden system"
+  visual), where Claude concentrates prompt and selection effort. Claude writes all prompts and
+  recommends picks for both pools; the owner only clicks generate.
 - **Diagrams, maps, timelines, kinetic typography, lower-thirds (with burned-in citations
   linked to `claim_id`), chapter cards, parallax on stills, transitions, open captions** are
   all **rendered by Remotion** (code), not generated images.
