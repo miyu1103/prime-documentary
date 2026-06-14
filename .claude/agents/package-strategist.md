@@ -1,5 +1,6 @@
 ---
 name: package-strategist
+model: sonnet
 description: タイトルとサムネイルを組として設計し、本編の約束との一致、クリック可能性、誤認リスクを評価する。
 tools: Read, Grep, Glob
 memory: project

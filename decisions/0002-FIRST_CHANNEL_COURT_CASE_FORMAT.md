@@ -152,3 +152,135 @@ defense against YouTube's mass-produced/inauthentic-content demonetization risk.
 - After the first batch (≈5 episodes) is published and QC-clean,
 - once per-episode human review time and Runway cost are measured,
 - before adding higher-risk case types or a second channel.
+
+---
+
+## Addendum — 2026-06-14 (tooling refinement)
+
+- Status: Accepted. Owner decision during the first local Claude Code session.
+- Effect: **supersedes the named items in §5 and §7 above** where they conflict. The
+  format (§4), risk posture (§2), first episode (§3) and infrastructure (§8) are unchanged.
+
+### A. Editing engine — Remotion + FFmpeg (supersedes the DaVinci motion text in §5/§7)
+
+- The assembly edit is produced **as code**: **Remotion** for compositions/graphics/motion,
+  **FFmpeg** for muxing/encode. **No DaVinci GUI hand-finishing.** DaVinci is optional and
+  only for a final color/loudness pass if ever wanted.
+- This makes docs/08's "deterministic assembly + rule-based motion + template graphics"
+  literally a render pipeline, not a manual timeline. The motion-template library (§10.5) is
+  therefore a **Remotion component library**, not a DaVinci/Fusion template set.
+
+### B. Visuals — Midjourney (manual) + Remotion; **SDXL dropped** (supersedes §5/§7 image rows)
+
+- **SDXL is not used.** Photo-symbolic stills come from **Midjourney**.
+- Midjourney has no usable commercial API → **generation is manual (owner)**. Division of labor:
+  **Claude writes the prompts**, and after the owner generates the 4-up, **Claude views the
+  images and recommends the single best pick.** Selection criteria: composition, `--sref`
+  consistency, no anatomical/structural breakage, scene-intent match, symbolic (must not read
+  as authentic footage — invariant 11).
+- **Brand look is unified across all episodes via Midjourney `--sref`.**
+- **Use stills richly — do not ration them.** Budget **30–50+ Midjourney stills per episode**
+  (cheap relative to retention value). To keep the manual-generation load sustainable, split
+  into two pools: (a) a **reusable generic-motif library** (gavel, courtroom, document/scales,
+  flag, jail bars, map textures, abstract "system" imagery, negative-space breathers) ingested
+  once and reused across episodes, registered in **`library/visual/visual_registry.json`**
+  (tags: motif, mood, `--sref`, orientation, `content_hash`, `rights_basis`, `verified_at`,
+  reuse-tracking) — mirrors the music-library model; and (b) **episode-specific imagery**
+  (the actual case: people-as-symbol, specific places/objects, the unique "hidden system"
+  visual), where Claude concentrates prompt and selection effort. Claude writes all prompts and
+  recommends picks for both pools; the owner only clicks generate.
+- **Diagrams, maps, timelines, kinetic typography, lower-thirds (with burned-in citations
+  linked to `claim_id`), chapter cards, parallax on stills, transitions, open captions** are
+  all **rendered by Remotion** (code), not generated images.
+- Hero video clips (a few per episode) remain **Runway** (API, budget-capped — paid, confirm).
+
+### C. Audio — narration ElevenLabs; **music = reuse library** (supersedes §5 music / §7 Suno row)
+
+- Narration: **ElevenLabs** (paid/metered — confirm before master generation), per docs/07
+  draft-vs-master split.
+- Music is **not generated per episode.** Build a **reusable library** with **Suno**:
+  pre-generate **~50 tracks across 8 categories** — `hook`, `opening`, `explainer_bed`,
+  `tension_build`, `somber`, `reveal`, `outro`, `ambience` — plus **15–20 short SFX**.
+  **Claude writes the per-category briefs/prompts; owner generates in Suno and ingests.**
+- Register every track in **`music_registry.json`** with tags (category, mood, BPM, energy,
+  length, rights/licence, `suno_origin`, `verified_at`). Implement **automatic scene→track
+  selection** that matches by tag **and avoids reuse within the most recent N episodes**.
+- Music remains an **ingested asset** with rights metadata (not assumed programmatic; docs/07,
+  rule on Suno-origin assets).
+
+### D. Thumbnail — Remotion still component (supersedes §5 thumbnail / §7 Canva row)
+
+- **Canva is dropped.** The thumbnail is a **Remotion still composition**: background = a
+  **Midjourney still (or one frame pulled from video)**; **text, decoration and brand are
+  drawn by Remotion**.
+- **Auto-render multiple A/B variants** (title wording × layout) and present them for the
+  owner to choose at the **title/thumbnail approval gate** (§ gates unchanged).
+
+### E. Consequences to reconcile (tracked, not yet done)
+
+- **Provider registry (docs/33):** update records — drop SDXL; add Remotion (local/free),
+  FFmpeg (local/free), Midjourney (manual, no API), Suno (manual ingest, library model),
+  Canva removed. Set `verified_at`.
+- **Folder spec drift:** pipeline code uses `02_thesis/05_assets/06_audio/07_edit/08_qc`
+  while docs/19 uses `02_story/05_visuals/06_voice/08_edit`. With Remotion-as-editor and no
+  SDXL, fold this into one canonical layout in a follow-up (docs/19 + code + this episode).
+
+### F. Hook construction — cold-open, written last, payoff-verified (refines §4 Hook)
+
+- The **0:00–0:30 hook is written AFTER the full script is drafted**, not before. Claude
+  **identifies the script's climax / strongest moment**, then writes a **cold-open** that
+  **teases that payoff and pairs it with the central question** (outcome-tease + question).
+- **The body must pay the hook off.** The teased reveal has to actually land later in the
+  episode — no bait that the script never delivers (docs/26 retention, docs/27 promise_match,
+  invariant 1: no unsupported promise).
+- **QC gains a "promise payoff" check**: verify the hook's teased reveal and central question
+  are both resolved in the body, and flag any unpaid promise as a defect (gates publishability).
+- **Claude chooses the hook** (owner delegated this, 2026-06-14). Claude may draft a few
+  candidates internally and pick the strongest by payoff/clarity/curiosity; no separate hook
+  selection step. The chosen hook is still reviewed by the owner as part of the normal
+  **script approval gate** (it is in the approved script revision) and must pass the QC
+  promise-payoff check — so delegation removes a sub-choice, not the safety checks.
+
+### G. Brand identity (refines §5 visual look)
+
+- Brand = the **existing Prime Documentary** identity. Source assets live in **`assets/brand/`**
+  (owner drops them once): the **PD logo** and the **sunrise/horizon banner**.
+- **Palette:** base **black / deep navy**, primary **electric blue**, **silver**, with a
+  **gold accent**. Encoded as Remotion design tokens in `remotion/src/brand.ts` so every
+  component shares one source of truth.
+- **Remotion brand pieces:** an **Opening** (logo reveal over a rising horizon) and a
+  **thumbnail frame** (black ground + gold horizon line + large white caps title + PD mark).
+- **Logo handling:** primary is a **vector reproduction** (drawn in code from the spec, so it
+  renders crisply at any size and works before asset files arrive); when `assets/brand/` PNGs
+  are present they are **composited** on top for exact fidelity. No logo distortion; preserve
+  clear-space and contrast (docs/27 legibility, authenticity).
+
+### H. Bilingual review — English canon + Japanese for the reviewer (owner is JA-reading)
+
+- Every artifact the owner reviews — **thesis, hook, script, claims, title/description,
+  on-screen text, QC report** — carries, alongside the **English canonical** artifact, a
+  **Japanese translation/summary**: a sidecar file named `*.review.ja.md` plus an EN↔JA
+  bilingual presentation in chat.
+- **Japanese is review-only and is NEVER rendered.** The final video, captions, narration,
+  and package are **English only** (§5). The `.ja.md` sidecars are not inputs to any render or
+  generation step — they sit beside the artifact for human review.
+- **Every approval gate (script / first-cut / title-thumbnail / publish) must include a
+  Japanese summary** so the owner can approve without reading the full English artifact.
+- The English artifact remains the single source of truth and the hashed/approved revision;
+  the `.ja.md` is a derived convenience and is not part of the approval hash.
+
+### I. Model defaults + per-agent routing (docs/24)
+
+- **Session default: Opus 4.8 + Fast mode** (`.claude/settings.json` `model: opus`,
+  `fastMode: true`).
+- **Sub-agents (`.claude/agents/`) get an explicit `model:`** by docs/24 tier:
+  - **Opus (Tier A — high judgment / high failure cost):** automation-architect,
+    editorial-chief, executive-producer, fact-checker, qa-auditor, rights-editor,
+    security-auditor.
+  - **Sonnet (Tier B — high-quality generation):** analytics-strategist, audio-director,
+    capacity-analyst, documentary-writer, edit-engineer, package-strategist,
+    research-director, retention-engineer, topic-strategist, visual-director.
+  - **Haiku (Tier C — bulk/operational):** production-controller.
+- Tier D (schema/hash/duration/diff/loudness/dedup/state) uses **no LLM** (deterministic code).
+- Fallback never silently lowers quality; a high-risk task that falls back is flagged for review
+  and may not auto-approve (docs/24 §4).

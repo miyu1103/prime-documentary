@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/music-track.schema.json",
+  "title": "PD Music Library Track",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "track_id",
+    "category",
+    "title",
+    "source",
+    "rights_basis",
+    "verified_at"
+  ],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "track_id": { "type": "string", "pattern": "^(MUS|SFX)-[0-9]{4}$" },
+    "category": {
+      "enum": [
+        "hook",
+        "opening",
+        "explainer_bed",
+        "tension_build",
+        "somber",
+        "reveal",
+        "outro",
+        "ambience",
+        "sfx"
+      ]
+    },
+    "title": { "type": "string" },
+    "mood": { "type": "string" },
+    "function": { "type": "string" },
+    "bpm": { "type": ["number", "null"], "minimum": 0 },
+    "energy": { "type": "integer", "minimum": 1, "maximum": 5 },
+    "duration_sec": { "type": "number", "minimum": 0 },
+    "loopable": { "type": "boolean" },
+    "source": { "enum": ["suno", "licensed", "other"] },
+    "suno_origin": { "type": "boolean" },
+    "suno_prompt": { "type": "string" },
+    "asset_uri": { "type": ["string", "null"] },
+    "content_hash": { "type": ["string", "null"] },
+    "rights_basis": { "type": "string" },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "reuse_count": { "type": "integer", "minimum": 0 },
+    "last_used_episode": { "type": ["string", "null"] },
+    "verified_at": { "type": "string", "format": "date" },
+    "notes": { "type": "string" }
+  }
+}

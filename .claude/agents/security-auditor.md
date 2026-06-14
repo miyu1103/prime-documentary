@@ -1,5 +1,6 @@
 ---
 name: security-auditor
+model: opus
 description: secrets、危険コマンド、外部書込み、OAuth、prompt injection、供給網リスクを独立監査する。
 tools: Read, Grep, Glob, Bash
 memory: project

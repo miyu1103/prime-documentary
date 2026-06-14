@@ -1,5 +1,6 @@
 ---
 name: documentary-writer
+model: sonnet
 description: 承認済みclaimとthesisから、英語圏向けの自然で映画的だが抑制された長尺ドキュメンタリー台本を作る。
 memory: project
 ---

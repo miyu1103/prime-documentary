@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-001-miranda",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Miranda v. Arizona (1966) the Supreme Court held that the prosecution may not use statements from custodial interrogation unless it shows that procedural safeguards effective to secure the Fifth Amendment privilege were used.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Warren, C.J.), holding"
+      ],
+      "counterevidence": [
+        "Harlan, J. and White, J. dissented from the rule's scope."
+      ],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled that confessions from custodial questioning can't be used unless the suspect was first warned of their rights."
+      ],
+      "prohibited_wording": [
+        "The Court banned all police interrogation.",
+        "Miranda made confessions illegal."
+      ],
+      "temporal_scope": "1966-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Miranda v. Arizona was decided on June 13, 1966 by a 5-4 vote, with the majority opinion written by Chief Justice Earl Warren.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Syllabus / decision date",
+        "Oyez: decision"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "In a narrow 5-4 decision in 1966, Chief Justice Warren wrote for the Court."
+      ],
+      "prohibited_wording": [
+        "The decision was unanimous."
+      ],
+      "temporal_scope": "1966",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date/vote/author."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The decision rests on the Fifth Amendment privilege against compelled self-incrimination.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, constitutional basis"
+      ],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "The ruling is grounded in the Fifth Amendment right against self-incrimination."
+      ],
+      "prohibited_wording": [
+        "The ruling is based on the Second Amendment."
+      ],
+      "temporal_scope": "1966-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Constitutional basis."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "Before custodial interrogation a suspect must be warned: of the right to remain silent; that anything said can be used against them in court; of the right to an attorney; and that if they cannot afford one, an attorney will be appointed.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court, required warnings"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "The Court spelled out the four warnings police must give."
+      ],
+      "prohibited_wording": [
+        "The warning must be read word-for-word from a single official script."
+      ],
+      "temporal_scope": "1966-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The four warnings."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "The 1966 decision resolved four consolidated cases: Miranda v. Arizona, Vignera v. New York, Westover v. United States, and California v. Stewart.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Syllabus, consolidated cases"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Miranda actually bundled four separate cases into one ruling."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "1966",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Consolidated cases."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "Ernesto Miranda was arrested in Phoenix, Arizona in 1963 and confessed during interrogation without being told of his rights; the Supreme Court reversed that conviction, and he was later retried and convicted again on other evidence.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Opinion, facts (No. 759)",
+        "Oyez: facts of the case"
+      ],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "Miranda's original conviction was overturned; at a new trial he was convicted again on other evidence."
+      ],
+      "prohibited_wording": [
+        "Miranda was found innocent.",
+        "Miranda went free because of the ruling."
+      ],
+      "temporal_scope": "1963-1967",
+      "geographic_scope": "Arizona, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Real person; state charged/convicted status accurately (docs/32). Not exonerated by the ruling."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "Justices Harlan and White each wrote dissents arguing the majority's rule went beyond what the Constitution and precedent required.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Dissenting opinions (Harlan, J.; White, J.)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Four justices dissented, warning the rule would hamper law enforcement."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "1966",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Dissents (balance)."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "The required advisement became known as the 'Miranda warning' and is now a routine part of US custodial arrests.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Oyez: significance / conclusion"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "That scripted advisement is what we now call the Miranda warning."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "1966-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The 'system' payoff / naming."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "warn",
+    "findings": [
+      "SRC-0001: live content not captured (no durable hash); recheck before publish."
+    ]
+  }
+}

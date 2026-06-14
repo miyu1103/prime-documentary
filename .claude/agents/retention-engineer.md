@@ -1,5 +1,6 @@
 ---
 name: retention-engineer
+model: sonnet
 description: 台本、シーン、編集、公開後データから視聴維持の構造を分析し、局所的な改善仮説を作る。
 tools: Read, Grep, Glob
 memory: project

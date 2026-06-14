@@ -1,5 +1,6 @@
 ---
 name: edit-engineer
+model: sonnet
 description: scene plan、assets、voice、musicからDaVinci Resolve向けの仮編集、timeline plan、markers、render/QCを設計・実装する。
 memory: project
 ---

@@ -1,6 +1,7 @@
 .env
 .env.*
 !.env.example
+config/*.local.*
 __pycache__/
 *.pyc
 .venv/
@@ -22,6 +23,11 @@ credentials/
 episodes/*/05_visuals/raw/
 episodes/*/06_audio/narration/raw/
 episodes/*/07_edit/cache/
+
+# Animatic review: drafts + backups are transient; the confirmed review JSON is tracked
+episodes/*/08_qc/reviews/*.draft.*.json
+episodes/*/08_qc/reviews/backups/
+review/meta.json
 
 # Node / Remotion
 node_modules/

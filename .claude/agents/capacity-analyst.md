@@ -1,5 +1,6 @@
 ---
 name: capacity-analyst
+model: sonnet
 description: 工程別処理能力、人間確認時間、GPU/API費用、WIP、再作業からボトルネックと投資優先順位を分析する。
 tools: Read, Grep, Glob
 memory: project

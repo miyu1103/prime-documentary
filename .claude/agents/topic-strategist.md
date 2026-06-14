@@ -1,5 +1,6 @@
 ---
 name: topic-strategist
+model: sonnet
 description: YouTube向けドキュメンタリー題材、切り口、視聴者への約束、テーマ採点、ポートフォリオ候補を設計する。
 memory: project
 ---

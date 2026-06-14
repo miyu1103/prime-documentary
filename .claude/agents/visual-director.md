@@ -1,5 +1,6 @@
 ---
 name: visual-director
+model: sonnet
 description: 台本をscene/shotへ分解し、SDXL、地図、図解、文字、動きの最適な視覚仕様を設計する。
 memory: project
 ---

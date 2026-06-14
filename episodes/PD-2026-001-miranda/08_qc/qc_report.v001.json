@@ -1,0 +1,21 @@
+{
+  "qc_report_id": "QC-PD-2026-001-miranda-v001",
+  "target_type": "episode_pre_render",
+  "target_id": "PD-2026-001-miranda",
+  "target_revision": "v001",
+  "gate": "pre_render_review",
+  "result": "pass_with_warnings",
+  "findings": [
+    {"finding_id": "QC-0001", "severity": "S0", "code": "citation_integrity", "message": "All factual script spans link to grade A/B claims; every cited claim exists in the ledger; all 8 ledger claims used; no E-grade claims in the script.", "location": "03_script/script.annotated.v001.json", "action": "none", "related_ids": ["CLM-0001","CLM-0002","CLM-0003","CLM-0004","CLM-0005","CLM-0006","CLM-0007","CLM-0008"]},
+    {"finding_id": "QC-0002", "severity": "S0", "code": "critical_supported", "message": "Both critical claims (CLM-0001 holding, CLM-0002 date/vote/author) are supported by the primary opinion (directness 5).", "location": "01_research/claims.v001.json", "action": "none", "related_ids": ["CLM-0001","CLM-0002"]},
+    {"finding_id": "QC-0003", "severity": "S0", "code": "promise_payoff", "message": "Cold-open hook promises are all paid off in the body: thrown-out confession -> Act III (CLM-0001); won yet jailed -> Act IV/Ending (CLM-0006); four sentences -> Act III/IV (CLM-0004/0008).", "location": "03_script", "action": "none", "related_ids": ["SPN-0001","SPN-0012","SPN-0018"]},
+    {"finding_id": "QC-0004", "severity": "S0", "code": "scene_coverage", "message": "All 23 script spans are mapped to scenes; no orphan scenes; planned duration ~745s (within the 12-min format).", "location": "04_scenes/scene_plan.v001.json", "action": "none", "related_ids": []},
+    {"finding_id": "QC-0005", "severity": "S2", "code": "research_durable_hash_pending", "message": "Research QC is 'warn': the CourtListener opinion's durable content hash was not captured (API needs COURTLISTENER_TOKEN; HTTP 401). The published citation 384 U.S. 436 is valid, but capture the hash and recheck volatile facts before publish.", "location": "01_research/sources.v001.json", "action": "research", "related_ids": ["SRC-0001"]},
+    {"finding_id": "QC-0006", "severity": "S2", "code": "real_person_review_required", "message": "Six scenes depict the real person / case as symbolic reconstruction (Ernesto Miranda, CLM-0006). Human review required before render/publish; phrasing must keep 'conviction reversed, then reconvicted on other evidence' and must NOT imply exoneration (docs/32, invariant 11).", "location": "04_scenes/scene_plan.v001.json", "action": "review", "related_ids": ["S003","S004","S006","S007","S018","S022"]},
+    {"finding_id": "QC-0007", "severity": "S2", "code": "assets_not_generated", "message": "Episode-specific Midjourney stills (5) and reusable motifs are not generated yet, and the Suno music library is empty; the full render uses fallback placeholders until owner generates and Claude selects/registers them.", "location": "04_scenes/midjourney_prompts.v001.md, library/", "action": "regenerate", "related_ids": []},
+    {"finding_id": "QC-0008", "severity": "S1", "code": "narration_not_generated", "message": "Narration audio is not generated (ElevenLabs is paid; voice_plan v001 is a $0 plan only). Master generation requires owner cost approval and the script-approved revision (APR-0001).", "location": "06_audio/voice_plan.v001.json", "action": "none", "related_ids": ["APR-0001"]},
+    {"finding_id": "QC-0009", "severity": "S1", "code": "synthetic_media_disclaimer", "message": "Reconstructions/illustrations must carry the synthetic-media + 'not legal advice' disclaimer (cold-open line + description) before publish (decisions/0002 §5, docs/13/32).", "location": "09_publish (pending)", "action": "review", "related_ids": []}
+  ],
+  "created_at": "2026-06-14T02:00:00+09:00",
+  "validator_versions": {"schema": "qc-report.schema.json@1.0.0", "checks": "manual+coverage-script"}
+}
