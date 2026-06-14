@@ -125,27 +125,32 @@ export function pickArt(visualMode: string, motifHint: string): React.FC {
   return ART.gavel;
 }
 
-const PhotoFrame: React.FC<{src: string; onScreenText: string[]}> = ({src, onScreenText}) => {
+function panDirection(motifHint: string): 1 | -1 {
+  let sum = 0;
+  for (let i = 0; i < motifHint.length; i++) sum += motifHint.charCodeAt(i);
+  return sum % 2 === 0 ? 1 : -1;
+}
+
+const PhotoFrame: React.FC<{src: string; motifHint: string}> = ({src, motifHint}) => {
   const f = useCurrentFrame();
   const {durationInFrames} = useVideoConfig();
-  const scale = interpolate(f, [0, durationInFrames], [1.0, 1.06], {extrapolateRight: 'clamp'});
+  const t = f / durationInFrames;
+  const dir = panDirection(motifHint);
+  const scale = interpolate(t, [0, 1], [1.0, 1.14]);
+  const tx    = interpolate(t, [0, 1], [0, dir * 55]);
+  const ty    = interpolate(t, [0, 1], [0, -18]);
   return (
-    <AbsoluteFill style={{background: BRAND.color.ink, justifyContent: 'center', alignItems: 'center'}}>
-      <AbsoluteFill style={{transform: `scale(${scale})`, transformOrigin: '50% 50%'}}>
-        <Img
-          src={staticFile(src)}
-          style={{width: '100%', height: '100%', objectFit: 'cover'}}
-        />
-      </AbsoluteFill>
-      {/* dark gradient overlay so text is readable */}
+    <AbsoluteFill style={{background: BRAND.color.ink, overflow: 'hidden'}}>
       <AbsoluteFill style={{
-        background: 'linear-gradient(to top, rgba(10,10,12,0.82) 0%, rgba(10,10,12,0.22) 55%, rgba(10,10,12,0.55) 100%)',
+        transform: `scale(${scale}) translate(${tx}px, ${ty}px)`,
+        transformOrigin: '50% 50%',
+        willChange: 'transform',
+      }}>
+        <Img src={staticFile(src)} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+      </AbsoluteFill>
+      <AbsoluteFill style={{
+        background: 'linear-gradient(to top, rgba(10,10,12,0.75) 0%, rgba(10,10,12,0.10) 40%, rgba(10,10,12,0.40) 100%)',
       }} />
-      {onScreenText.length > 0 && (
-        <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 80}}>
-          <Caption lines={onScreenText.slice(0, 3)} />
-        </AbsoluteFill>
-      )}
     </AbsoluteFill>
   );
 };
@@ -155,7 +160,7 @@ export const SceneArt: React.FC<{visualMode: string; motifHint: string; onScreen
 }) => {
   const imgSrc = MJ_IMAGE_MAP[motifHint];
   if (imgSrc) {
-    return <PhotoFrame src={imgSrc} onScreenText={onScreenText} />;
+    return <PhotoFrame src={imgSrc} motifHint={motifHint} />;
   }
   const Art = pickArt(visualMode, motifHint);
   return (

@@ -73,51 +73,6 @@ const SceneVisual: React.FC<{scene: AnimaticScene}> = ({scene}) => {
   return <SceneArt visualMode={m} motifHint={motifHint} onScreenText={ost} />;
 };
 
-/** Split text into chunks of ~8 words at natural boundaries. */
-function toChunks(text: string, size = 8): string[] {
-  const words = text.replace(/\s+/g, ' ').trim().split(' ');
-  const chunks: string[] = [];
-  for (let i = 0; i < words.length; i += size) {
-    chunks.push(words.slice(i, i + size).join(' '));
-  }
-  return chunks;
-}
-
-/** VO-preview caption — shows 5 words at a time, fades between chunks. */
-const ScriptCaption: React.FC<{text: string}> = ({text}) => {
-  const frame = useCurrentFrame();
-  const {durationInFrames, fps} = useVideoConfig();
-  const chunks = toChunks(text, 5);
-  // leave last 10% of scene caption-free so it breathes before transition
-  const activeDur = durationInFrames * 0.90;
-  const cpf = activeDur / chunks.length;          // frames per chunk
-  const idx = Math.min(Math.floor(frame / cpf), chunks.length - 1);
-  const f0 = idx * cpf;
-  const fadeIn  = interpolate(frame, [f0, f0 + 5],        [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const fadeOut = interpolate(frame, [f0 + cpf - 6, f0 + cpf], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const opacity = frame >= activeDur ? 0 : Math.min(fadeIn, fadeOut);
-
-  return (
-    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 72, pointerEvents: 'none'}}>
-      <div style={{
-        opacity,
-        background: 'rgba(10,10,12,0.72)',
-        borderRadius: 6,
-        padding: '10px 28px',
-        color: BRAND.color.white,
-        fontFamily: BRAND.font.body,
-        fontSize: 36,
-        fontWeight: 600,
-        textAlign: 'center',
-        maxWidth: '72%',
-        lineHeight: 1.35,
-        letterSpacing: 0.2,
-      }}>
-        {chunks[idx]}
-      </div>
-    </AbsoluteFill>
-  );
-};
 
 const Hud: React.FC<{scene: AnimaticScene; index: number; total: number}> = ({scene, index, total}) => (
   <AbsoluteFill style={{pointerEvents: 'none'}}>
@@ -154,9 +109,8 @@ export const Animatic: React.FC<AnimaticProps> = ({bgmSrc = 'bgm_placeholder.wav
         return (
           <Sequence key={scene.sceneId} from={from} durationInFrames={dur} name={scene.sceneId}>
             <SceneVisual scene={scene} />
-            <ScriptCaption text={scene.caption} />
             <Hud scene={scene} index={i} total={MIRANDA_ANIMATIC.length} />
-            {i > 0 ? <WipeTransition durationFrames={12} /> : null}
+            {i > 0 ? <WipeTransition durationFrames={24} /> : null}
           </Sequence>
         );
       })}
