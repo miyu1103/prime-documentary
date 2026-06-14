@@ -42,6 +42,14 @@ first-cut (rule 16) unchanged.
 - **Several hero motion clips per episode** for the biggest beats.
 - Maps, diagrams, timelines **animate** (draw-on, travel, pulse) — never static.
 
+**Rhythm & transitions:**
+- Vary cut length: mostly 4–8s, but **punctuate key beats with a 0.5–1s full-frame "punch" insert**
+  (a number, a name, a reveal image) + an SFX hit — for emphasis and rhythm. Don't keep a uniform
+  pace; variation holds attention.
+- Use a **small, consistent set of transitions tied to meaning**: whoosh/whip + SFX on a topic
+  change, ink-dip on an act break, match-cut to connect ideas, quick punch-in for emphasis.
+- **Restraint = premium.** No random fancy effects; overused/decorative transitions read amateur.
+
 ## D. Real-asset-first inserts (decision §L)
 
 Insert **real public-domain audio and video** wherever it exists (oral-argument audio, newsreels,
