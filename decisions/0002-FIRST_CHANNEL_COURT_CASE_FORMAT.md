@@ -343,3 +343,28 @@ credibility and — unlike AI images — are **genuine evidence**, which strengt
 - **Binds** `rights-editor` (clearance + manifest), `research-director` (locate PD sources during
   research), and `visual-director` (sourcing plan: real-first where credible, AI-symbolic for the
   rest).
+
+### M. Topic selection policy (owner direction 2026-06-14)
+
+Core formula: **"a familiar door, a hidden room"** — pick subjects with **built-in recognition**
+(instant clicks + existing search demand) and deliver the **surprising hidden system** behind them.
+For a new channel, reach (familiarity) gates everything; interestingness rides on top of it.
+
+Preference order:
+
+- ◎ **Famous / widely-recognized** subjects (e.g. "Miranda rights") — low explanation cost, high
+  click-through, existing search demand. **Default.**
+- ◎ **Foundational to the country / how everyday systems work** — evergreen (compounds for years),
+  advertiser-safe, universally interesting.
+- ◎ **Genuinely connected to adjacent episodes** (per §K) — builds session watch-time.
+- ◎ **Deeply interesting** — required, but it must sit on a *recognizable door*; fascinating-but-
+  obscure topics get near-zero search and die on arrival.
+- △ **Niche / deep-cut** — only **after** a subscriber base exists.
+- △ **Topical** — occasionally, and only when it can be made **evergreen**.
+- ✕ **Breaking / latest-news** and **hot partisan politics** — avoid: spikes then dies, fact-
+  volatile, and advertiser-unfriendly → low CPM / **demonetization** (priority §10.1–2, incident
+  risk). Not worth it for a revenue-compounding library.
+
+**Binds** `topic-strategist` (candidate generation + portfolio scoring should weight recognition,
+evergreen value, advertiser-safety, and series-thread fit) and `executive-producer` (portfolio
+approval). Expand toward niche/deeper cuts only as audience and data justify it.
