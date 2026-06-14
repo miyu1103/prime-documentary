@@ -73,8 +73,8 @@ const SceneVisual: React.FC<{scene: AnimaticScene}> = ({scene}) => {
   return <SceneArt visualMode={m} motifHint={motifHint} onScreenText={ost} />;
 };
 
-/** Split text into chunks of ~5 words at natural boundaries. */
-function toChunks(text: string, size = 5): string[] {
+/** Split text into chunks of ~8 words at natural boundaries. */
+function toChunks(text: string, size = 8): string[] {
   const words = text.replace(/\s+/g, ' ').trim().split(' ');
   const chunks: string[] = [];
   for (let i = 0; i < words.length; i += size) {
@@ -101,15 +101,17 @@ const ScriptCaption: React.FC<{text: string}> = ({text}) => {
     <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 72, pointerEvents: 'none'}}>
       <div style={{
         opacity,
+        background: 'rgba(10,10,12,0.72)',
+        borderRadius: 6,
+        padding: '10px 28px',
         color: BRAND.color.white,
         fontFamily: BRAND.font.body,
-        fontSize: 38,
-        fontWeight: 700,
+        fontSize: 36,
+        fontWeight: 600,
         textAlign: 'center',
-        maxWidth: '68%',
-        lineHeight: 1.3,
-        textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,1)',
-        letterSpacing: 0.3,
+        maxWidth: '72%',
+        lineHeight: 1.35,
+        letterSpacing: 0.2,
       }}>
         {chunks[idx]}
       </div>
