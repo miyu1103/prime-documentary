@@ -7,6 +7,7 @@ import {StyleTest} from './compositions/StyleTest';
 import {Animatic, animaticDurationInFrames} from './compositions/Animatic';
 import {ClipProof} from './compositions/ClipProof';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
+import {ThumbConcept} from './compositions/ThumbConcept';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
 
 export const RemotionRoot: React.FC = () => {
@@ -74,6 +75,19 @@ export const RemotionRoot: React.FC = () => {
         width={BRAND.video.width}
         height={BRAND.video.height}
         defaultProps={{beats: MIRANDA_HOOK}}
+      />
+      <Still
+        id="ThumbConcept"
+        component={ThumbConcept}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{
+          kicker: 'MIRANDA v. ARIZONA',
+          line1: 'Won.',
+          line2: 'Still jailed.',
+          sub: 'How 4 words rewrote every U.S. arrest',
+          symbol: 'bars' as const,
+        }}
       />
       <Still
         id="ThumbnailFrame"
