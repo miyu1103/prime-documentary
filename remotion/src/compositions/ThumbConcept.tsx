@@ -1,5 +1,5 @@
 import React from 'react';
-import {AbsoluteFill} from 'remotion';
+import {AbsoluteFill, Img, staticFile} from 'remotion';
 import {BRAND} from '../brand';
 
 /**
@@ -54,19 +54,41 @@ export type ThumbConceptProps = {
   line2: string;
   sub?: string;
   symbol: 'gavel' | 'bars' | 'scales';
+  /** Optional real background still (Midjourney) — static path or http; falls back to gradient.
+   *  When supplied, the coded symbol is hidden by default (the photo is the visual). */
+  backgroundSrc?: string | null;
+  showSymbol?: boolean;
 };
 
-export const ThumbConcept: React.FC<ThumbConceptProps> = ({kicker, line1, line2, sub, symbol}) => {
+export const ThumbConcept: React.FC<ThumbConceptProps> = ({
+  kicker,
+  line1,
+  line2,
+  sub,
+  symbol,
+  backgroundSrc = null,
+  showSymbol,
+}) => {
   const Sym = SYM[symbol] ?? Gavel;
+  const symbolVisible = showSymbol ?? !backgroundSrc;
   return (
     <AbsoluteFill style={{backgroundColor: S.ink}}>
-      <AbsoluteFill
-        style={{background: `radial-gradient(120% 100% at 78% 38%, ${S.navy} 0%, ${S.ink} 78%)`}}
-      />
-      {/* symbol, right side */}
-      <div style={{position: 'absolute', right: 24, top: '50%', transform: 'translateY(-50%)', opacity: 0.92}}>
-        <Sym />
-      </div>
+      {backgroundSrc ? (
+        <Img
+          src={backgroundSrc.startsWith('http') ? backgroundSrc : staticFile(backgroundSrc)}
+          style={{width: '100%', height: '100%', objectFit: 'cover'}}
+        />
+      ) : (
+        <AbsoluteFill
+          style={{background: `radial-gradient(120% 100% at 78% 38%, ${S.navy} 0%, ${S.ink} 78%)`}}
+        />
+      )}
+      {/* symbol, right side (hidden when a real background is provided) */}
+      {symbolVisible ? (
+        <div style={{position: 'absolute', right: 24, top: '50%', transform: 'translateY(-50%)', opacity: 0.92}}>
+          <Sym />
+        </div>
+      ) : null}
       {/* left scrim for text legibility */}
       <AbsoluteFill
         style={{background: `linear-gradient(90deg, ${S.ink}F2 0%, ${S.ink}C0 46%, transparent 72%)`}}
