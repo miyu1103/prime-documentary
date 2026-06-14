@@ -65,6 +65,20 @@ only for what was never recorded, always labelled (invariant 11). Every real ass
 4. **SFX** — on **every transition** and **every on-screen-text reveal**, plus impacts/risers on
    beats. Mix: VO 0 ref · music −18…−22 LUFS · ambience ≈ −30 · master ≈ −14 LUFS.
 
+## E2. Abundance floors (owner: use these heavily — "バンバン")
+
+Minimums per 12-min episode. These are floors, not targets; richer is better. QC flags shortfalls.
+
+- **Real PD inserts:** ≥ **8–12** distinct real footage/audio moments **where real material exists**
+  (newsreel B-roll, oral-argument audio, documents, portraits). Use them liberally; AI only fills
+  what was never recorded.
+- **AI motion clips (hero shots):** ≥ **6–10** (Runway / Midjourney-animate) on the biggest beats.
+- **Animated graphics:** every data / number / list / map / timeline / quote is animated, not static.
+- **SFX cues:** ≥ **one per transition + one per on-screen-text reveal** → realistically **60–100+**
+  cues across the episode; plus impacts/risers on key beats.
+- **Ambience:** **100% coverage** — a bed under every second; never a silent frame.
+- **Distinct shots:** ≥ **90–150** (a visual change every 4–8s, per §C).
+
 ## F. Content bar
 
 - Deeper research, more sources, **one sharp thesis**, several **surprising but verified** facts.
