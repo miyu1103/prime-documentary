@@ -284,3 +284,24 @@ defense against YouTube's mass-produced/inauthentic-content demonetization risk.
 - Tier D (schema/hash/duration/diff/loudness/dedup/state) uses **no LLM** (deterministic code).
 - Fallback never silently lowers quality; a high-risk task that falls back is flagged for review
   and may not auto-approve (docs/24 §4).
+
+### J. Script readability standard (owner direction 2026-06-14)
+
+Refines §"Language: American English, plain and clear". The audience is the **broad** US
+general public, not only highly-educated viewers — accessibility raises retention, and
+retention is what drives revenue (CLAUDE.md §2, §10).
+
+- **Target reading level: US grade 7–8** (accessible to most adults). Aim for it; do not write
+  down to the audience or strip the substance.
+- **Short sentences, one idea each** (target average ≤ ~18 words; break long clauses).
+- **Concrete over abstract.** Avoid free-floating literary metaphors; if a metaphor is used,
+  ground it in the same breath with a plain restatement.
+- **Everyday vocabulary.** Any necessary legal/technical term is explained inline on first use.
+- **Keep the "smart" feeling from structure and surprising true facts, not from hard words.**
+- **Scope:** applies from **PD-2026-002 onward**. **PD-2026-001 (Miranda) v001 stays as approved**
+  (already locked); it may be simplified later only as a new revision, never overwritten (rules
+  12, 05).
+- **Binds** the `documentary-writer` agent and the `pd-script` skill. QC/script review should flag
+  a draft that reads clearly above the grade-7–8 target as a revision request, not an auto-pass.
+- This is a readability target, **not** a license to weaken factual precision, citations, or the
+  claim→span integrity invariants (CLAUDE.md §4).
