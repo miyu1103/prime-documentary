@@ -57,9 +57,21 @@ Money-channel specifics:
 `topic-strategist`, `documentary-writer`, `visual-director`, `package-strategist`, `rights-editor`,
 `audio-director`.
 
+## Identity (owner decisions 2026-06-14)
+
+- **Channel name: "Money with Pino"** (handle TBD; verify availability).
+- **Personality: sharp & skeptical — "don't get fooled."** A savvy consumer-advocate who shows you
+  how money tricks work so you see them coming.
+- **Voice: bright & upbeat**, clear and adult-intelligible (ElevenLabs voice id TBD — distinct from
+  channel 1's Brian; not baby-cute → avoids kids classification).
+- **Combination = "cheerful but street-smart":** upbeat delivery over savvy, protective content.
+
+> Tone guardrail (ties to Safety + 0002 §N): the "don't get fooled" angle is **empowering and
+> educational, never conspiratorial rage-bait.** Frame as "here's how this works, so it can't work
+> on you," not "THEY are stealing from you." Keeps it advertiser-safe and trustworthy.
+
 ## Open (decide next)
 
-- Pino's **personality** (curious / witty / calm-wise / deadpan).
-- **Channel name + handle.**
-- Pino's **voice id** (ElevenLabs) and speaking style.
-- First episode topic + a Shorts batch.
+- Pino's **ElevenLabs voice id** (pick a bright, clear, upbeat adult voice).
+- Channel **handle** + availability check.
+- First long-form topic + an opening **Shorts batch**.
