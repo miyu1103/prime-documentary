@@ -19,4 +19,4 @@ ui:
 	PYTHONPATH=src python scripts/run_ui.py
 
 review:
-	python review/serve.py
+	py -3.11 review/serve.py

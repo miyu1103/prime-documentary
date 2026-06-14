@@ -90,8 +90,8 @@ class Handler(BaseHTTPRequestHandler):
                     break
                 try:
                     self.wfile.write(chunk)
-                except (BrokenPipeError, ConnectionResetError):
-                    return  # client seeked / closed; normal for video
+                except (ConnectionError, OSError):
+                    return  # client seeked / closed (incl. WinError 10053); normal for video
                 remaining -= len(chunk)
 
     def _safe_static(self, rel: str) -> Path | None:
