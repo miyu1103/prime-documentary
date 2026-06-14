@@ -2,6 +2,7 @@ import React from 'react';
 import {
   AbsoluteFill,
   Audio,
+  Img,
   Sequence,
   interpolate,
   staticFile,
@@ -13,10 +14,71 @@ import {KineticType} from '../components/KineticType';
 import {DiagramFlow} from '../components/DiagramFlow';
 import {SymbolicScene} from '../components/Parallax';
 import {SceneArt} from '../components/SceneArt';
-import {MovingStage} from '../components/Motion';
+import {CameraRig, LightSweep, MovingStage, Particles, Vignette} from '../components/Motion';
 import {Grain} from '../components/Grain';
 import {WipeTransition} from '../components/Transition';
 import {AnimaticScene, MIRANDA_ANIMATIC} from '../data/miranda_animatic';
+import {SCENE_IMG} from '../data/scene_assets';
+
+/**
+ * Real image background: Ken Burns push + scrim + particles.
+ * Used for any scene that has a real asset in SCENE_IMG.
+ */
+const RealImageBg: React.FC<{src: string; sceneId: string; ost: string[]}> = ({src, sceneId, ost}) => {
+  const f = useCurrentFrame();
+  const S = BRAND.color;
+  return (
+    <AbsoluteFill style={{backgroundColor: S.ink, overflow: 'hidden'}}>
+      <CameraRig seed={sceneId} intensity={0.55}>
+        <AbsoluteFill>
+          <Img
+            src={staticFile(src)}
+            style={{width: '100%', height: '100%', objectFit: 'cover'}}
+          />
+        </AbsoluteFill>
+      </CameraRig>
+      {/* bottom-up scrim for text legibility */}
+      <AbsoluteFill
+        style={{background: `linear-gradient(0deg, ${S.ink}E6 0%, ${S.ink}77 30%, ${S.ink}22 58%, transparent 100%)`}}
+      />
+      <LightSweep seed={sceneId} />
+      <Particles seed={sceneId} count={14} />
+      <Vignette />
+      {ost.length > 0 && (
+        <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', paddingTop: 60}}>
+          <div style={{textAlign: 'center', padding: '0 80px'}}>
+            {ost.map((t, i) => {
+              const o = interpolate(f, [6 + i * 8, 22 + i * 8], [0, 1], {
+                extrapolateLeft: 'clamp',
+                extrapolateRight: 'clamp',
+              });
+              const y = interpolate(o, [0, 1], [18, 0]);
+              return (
+                <div
+                  key={i}
+                  style={{
+                    opacity: o,
+                    transform: `translateY(${y}px)`,
+                    color: i === 0 ? S.white : S.gold,
+                    fontFamily: BRAND.font.display,
+                    fontSize: i === 0 ? 46 : 38,
+                    fontWeight: 900,
+                    textTransform: 'uppercase' as const,
+                    letterSpacing: 1,
+                    textShadow: `0 4px 28px ${S.ink}`,
+                    marginBottom: 10,
+                  }}
+                >
+                  {t}
+                </div>
+              );
+            })}
+          </div>
+        </AbsoluteFill>
+      )}
+    </AbsoluteFill>
+  );
+};
 
 /** Placeholder card for visual modes whose real asset (Midjourney) is not generated yet. */
 const PlaceholderCard: React.FC<{mode: string; motif: string; ost: string[]}> = ({mode, motif, ost}) => (
@@ -54,6 +116,13 @@ const PlaceholderCard: React.FC<{mode: string; motif: string; ost: string[]}> = 
 
 const SceneVisual: React.FC<{scene: AnimaticScene}> = ({scene}) => {
   const {visualMode: m, onScreenText: ost, motifHint, sceneId} = scene;
+
+  // Use real image when available — always takes priority over coded art
+  const realImg = SCENE_IMG[sceneId];
+  if (realImg) {
+    return <RealImageBg src={realImg} sceneId={sceneId} ost={ost} />;
+  }
+
   if (m === 'typography') {
     const lines = (ost.length ? ost : ['Prime Documentary']).map((t, i) => ({
       text: t,
