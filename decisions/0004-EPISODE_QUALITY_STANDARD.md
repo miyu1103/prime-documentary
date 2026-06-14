@@ -1,0 +1,76 @@
+# 0004 — Episode quality standard v2 (raise the bar from PD-2026-002)
+
+Status: **accepted** (owner direction 2026-06-14)
+Applies from **PD-2026-002 onward** (channel 1). The Pino channel (0003) adopts a Shorts/long
+variant of the same layers. **PD-2026-001 (Miranda) stays as-is** (immutable; already approved).
+
+Goal: every episode after #1 is **several times higher quality** than the first — in content *and*
+production — by locking structure and assets up front and enforcing density/motion/sound minimums.
+
+## A. Lock-before-generate (process)
+
+Decide and approve the **structure + shot list + asset list BEFORE generating** heavy media:
+`thesis → outline → script → storyboard/shotlist → asset plan → (animatic) → generate → assemble`.
+This prevents rework and is the "固めてから進める" the owner asked for. Owner gate at script and at
+first-cut (rule 16) unchanged.
+
+## B. Structure (12-min target; adjust per topic)
+
+- **Hook / cold open — ~0:00–0:20.** Strongest surprise in the **first 5s**; tease the payoff. Use
+  the `ColdOpen` pattern (recognition → subversion → surprise → title). Never open on a static
+  text-only card.
+- **Opening — ~0:20–1:00.** Thesis + viewer promise ("what you'll learn") + ≤3s brand. Into the
+  body inside the first minute.
+- **Body — ~9 min, 4 acts.** Chronological/causal. Each act: setup → detail → insight, ending on a
+  **mini-cliffhanger / open loop** that pulls to the next.
+- **Ending — last ~1 min.** Payoff (the hidden system) → tight recap → CTA + **genuine next-episode
+  tease** (0002 §K).
+
+## C. Visual density & motion (the core upgrade)
+
+- **No static slides. Every shot moves** — real B-roll, an AI motion clip, strong Ken-Burns/parallax
+  on a *detailed* still, or an animated Remotion graphic. A still that only sits = defect.
+- **A visual change every ~4–8s** (new shot or major motion) → ≈ 90–150 shots for 12 min.
+- **More images:** target **2–4 distinct visuals per scene** (not one card per paragraph).
+- **Source priority per shot:** real PD footage (where it exists) → AI **motion clip** for hero beats
+  (Runway / Midjourney-animate) → AI still **with** motion → Remotion graphic (data/typography).
+- **Several hero motion clips per episode** for the biggest beats.
+- Maps, diagrams, timelines **animate** (draw-on, travel, pulse) — never static.
+
+## D. Real-asset-first inserts (decision §L)
+
+Insert **real public-domain audio and video** wherever it exists (oral-argument audio, newsreels,
+documents, portraits) — it raises credibility and is genuine evidence. AI symbolic reconstruction
+only for what was never recorded, always labelled (invariant 11). Every real asset rights-gated (§N).
+
+## E. Sound — four layers, always on
+
+1. **Narration (VO)** — top, always intelligible.
+2. **Music bed** — per the audio cue sheet, ducked ~3–4 dB under VO.
+3. **Ambience / room tone** — **continuous; the episode is never silent.** Tenser drone in tension
+   scenes.
+4. **SFX** — on **every transition** and **every on-screen-text reveal**, plus impacts/risers on
+   beats. Mix: VO 0 ref · music −18…−22 LUFS · ambience ≈ −30 · master ≈ −14 LUFS.
+
+## F. Content bar
+
+- Deeper research, more sources, **one sharp thesis**, several **surprising but verified** facts.
+- Readability: channel 1 grade 7–8, Pino grade 6–7; short sentences, concrete, jargon explained
+  inline (§J).
+- Retention structure: open loops, act cliffhangers, payoff at the end; honest next-episode thread.
+
+## G. Quality gates (QC enforces C–F; flagged issues block first-cut pass)
+
+- **Motion coverage:** flag any shot static beyond ~4s with no camera/parallax/animation.
+- **Visual density:** shots-per-minute ≥ threshold; flag scenes with a single static visual.
+- **Audio layers present:** VO + music + ambience + SFX all on the timeline; no silent gaps.
+- **Real-asset usage:** real PD inserts used where available (not all-AI when real exists).
+- **Citations:** every on-screen/spoken claim backed by a graded, cited claim (§N).
+- BAN-avoidance checklist (§N) + rights manifest complete before publish.
+
+## H. Binds
+
+`documentary-writer` (structure, hooks, readability), `visual-director` (density, motion, source
+priority, storyboard), `edit-engineer` (assembly, motion, four-layer mix), `audio-director` (VO,
+music, ambience, SFX, mix), `research-director`/`rights-editor` (real PD assets + rights), `pd-qc`
+(gates §G). Speed comes from reusing the libraries built in episode 1, not from lowering this bar.
