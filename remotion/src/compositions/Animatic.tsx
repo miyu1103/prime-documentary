@@ -12,6 +12,7 @@ import {BRAND} from '../brand';
 import {KineticType} from '../components/KineticType';
 import {DiagramFlow} from '../components/DiagramFlow';
 import {SymbolicScene} from '../components/Parallax';
+import {SceneArt} from '../components/SceneArt';
 import {Grain} from '../components/Grain';
 import {WipeTransition} from '../components/Transition';
 import {AnimaticScene, MIRANDA_ANIMATIC} from '../data/miranda_animatic';
@@ -63,7 +64,9 @@ const SceneVisual: React.FC<{scene: AnimaticScene}> = ({scene}) => {
   if (m === 'abstract' || m === 'breathing' || m === 'transition_texture') {
     return <SymbolicScene />;
   }
-  return <PlaceholderCard mode={m} motif={motifHint} ost={ost} />;
+  // map / timeline / object / reenactment / archival_illustration / location:
+  // coded symbolic art so it reads as a video, not a placeholder box.
+  return <SceneArt visualMode={m} motifHint={motifHint} onScreenText={ost} />;
 };
 
 /** VO-preview caption (the narration text, shown as review subtitle — NOT spoken). */
