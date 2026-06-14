@@ -13,6 +13,7 @@ import {KineticType} from '../components/KineticType';
 import {DiagramFlow} from '../components/DiagramFlow';
 import {SymbolicScene} from '../components/Parallax';
 import {SceneArt} from '../components/SceneArt';
+import {MovingStage} from '../components/Motion';
 import {Grain} from '../components/Grain';
 import {WipeTransition} from '../components/Transition';
 import {AnimaticScene, MIRANDA_ANIMATIC} from '../data/miranda_animatic';
@@ -52,27 +53,71 @@ const PlaceholderCard: React.FC<{mode: string; motif: string; ost: string[]}> = 
 );
 
 const SceneVisual: React.FC<{scene: AnimaticScene}> = ({scene}) => {
-  const {visualMode: m, onScreenText: ost, motifHint} = scene;
-  // MJ-EP images take priority over visualMode dispatch
-  if (motifHint.startsWith('MJ-EP:')) {
-    return <SceneArt visualMode={m} motifHint={motifHint} onScreenText={ost} />;
-  }
+  const {visualMode: m, onScreenText: ost, motifHint, sceneId} = scene;
   if (m === 'typography') {
-    const lines = (ost.length ? ost : ['Prime Documentary']).map((t, i) => ({text: t, at: i * 8}));
-    return <KineticType lines={lines} />;
+    const lines = (ost.length ? ost : ['Prime Documentary']).map((t, i) => ({
+      text: t,
+      at: i * 8,
+      emphasis: i === 0,
+    }));
+    return (
+      <MovingStage seed={sceneId} intensity={0.8} particles={24}>
+        <KineticType lines={lines} />
+      </MovingStage>
+    );
   }
   if (m === 'diagram') {
     const steps = ost.length >= 2 ? ost.slice(0, 4) : ['Cause', 'Mechanism', 'Effect'];
-    return <DiagramFlow steps={steps} />;
+    return (
+      <MovingStage seed={sceneId} intensity={0.7} particles={22}>
+        <DiagramFlow steps={steps} />
+      </MovingStage>
+    );
   }
   if (m === 'abstract' || m === 'breathing' || m === 'transition_texture') {
-    return <SymbolicScene />;
+    return (
+      <MovingStage seed={sceneId} intensity={0.7} particles={36}>
+        <SymbolicScene />
+      </MovingStage>
+    );
   }
   // map / timeline / object / reenactment / archival_illustration / location:
-  // coded symbolic art so it reads as a video, not a placeholder box.
-  return <SceneArt visualMode={m} motifHint={motifHint} onScreenText={ost} />;
+  // coded symbolic art that animates so it reads as a video, not a placeholder box.
+  return <SceneArt visualMode={m} motifHint={motifHint} onScreenText={ost} seed={sceneId} />;
 };
 
+/** VO-preview caption (the narration text, shown as review subtitle — NOT spoken). */
+const ScriptCaption: React.FC<{text: string}> = ({text}) => {
+  const frame = useCurrentFrame();
+  const o = interpolate(frame, [0, 12], [0, 1], {extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 60}}>
+      <div
+        style={{
+          opacity: o,
+          maxWidth: '82%',
+          background: `${BRAND.color.ink}CC`,
+          borderTop: `2px solid ${BRAND.color.gold}`,
+          padding: '14px 24px',
+          color: BRAND.color.white,
+          fontFamily: BRAND.font.body,
+          fontSize: 24,
+          lineHeight: 1.35,
+          textAlign: 'center',
+        }}
+      >
+        {text}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+/** Soft entrance cover (a quick ink dip) to seat each cut. */
+const SceneEnter: React.FC = () => {
+  const frame = useCurrentFrame();
+  const o = interpolate(frame, [0, 12], [0.7, 0], {extrapolateRight: 'clamp'});
+  return <AbsoluteFill style={{backgroundColor: BRAND.color.ink, opacity: o, pointerEvents: 'none'}} />;
+};
 
 const Hud: React.FC<{scene: AnimaticScene; index: number; total: number}> = ({scene, index, total}) => (
   <AbsoluteFill style={{pointerEvents: 'none'}}>
@@ -109,12 +154,14 @@ export const Animatic: React.FC<AnimaticProps> = ({bgmSrc = 'bgm_placeholder.wav
         return (
           <Sequence key={scene.sceneId} from={from} durationInFrames={dur} name={scene.sceneId}>
             <SceneVisual scene={scene} />
+            <ScriptCaption text={scene.caption} />
             <Hud scene={scene} index={i} total={MIRANDA_ANIMATIC.length} />
-            {i > 0 ? <WipeTransition durationFrames={24} /> : null}
+            {i > 0 ? <SceneEnter /> : null}
+            {i > 0 ? <WipeTransition durationFrames={16} /> : null}
           </Sequence>
         );
       })}
-      <Grain opacity={0.05} />
+      <Grain opacity={0.07} />
       {bgmSrc ? <Audio src={staticFile(bgmSrc)} volume={0.35} loop /> : null}
     </AbsoluteFill>
   );
