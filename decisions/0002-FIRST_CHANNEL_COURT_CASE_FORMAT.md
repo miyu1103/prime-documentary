@@ -320,3 +320,26 @@ Episodes are planned as a **loosely connected series**, not isolated one-offs, t
   the next episode answers.
 - **Binds** `topic-strategist` (sequence the weekly portfolio so adjacent episodes share a real
   thread), `documentary-writer` (ending/CTA), and `package-strategist` (end card + "next" framing).
+
+### L. Real archival / primary-source materials (owner direction 2026-06-14)
+
+Use **real** public-domain or licensed primary sources liberally where they exist. They add
+credibility and — unlike AI images — are **genuine evidence**, which strengthens factual integrity
+(CLAUDE.md §4). This does **not** loosen invariant 11; it adds a second, authentic visual track.
+
+- **Allowed, use freely:** **public-domain** material (US Supreme Court opinions & syllabus text,
+  **oral-argument audio** via National Archives / Oyez, official Court/justice portraits, federal
+  government documents & photos, case-record documents) and **properly licensed** assets.
+- **Prohibited:** unlicensed third-party copyrighted news **photos/footage** (AP, Getty, news
+  orgs, etc.). YouTube Content ID → claims/strikes → **demonetization + incident risk**, the exact
+  failure the business objective minimizes (CLAUDE.md §2; priority §10.1–2). "Use everything" does
+  **not** mean "use copyrighted material without rights."
+- **Hard gate:** every real asset enters only with a recorded **rights basis**
+  (`public_domain` | `licensed` | `fair_use` with written justification) plus `source` and
+  `verified_at`, captured in the episode **rights manifest** before it ships (rule 16, pd-package).
+- **Labeling:** real materials are shown **as authentic**; AI-generated visuals stay **clearly
+  symbolic reconstructions**, never presented as real (invariant 11). The two are distinguished
+  on screen and in the rights manifest.
+- **Binds** `rights-editor` (clearance + manifest), `research-director` (locate PD sources during
+  research), and `visual-director` (sourcing plan: real-first where credible, AI-symbolic for the
+  rest).
