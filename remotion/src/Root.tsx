@@ -6,6 +6,7 @@ import {Episode, TEMPLATE_12MIN} from './compositions/Episode';
 import {StyleTest} from './compositions/StyleTest';
 import {Animatic, animaticDurationInFrames} from './compositions/Animatic';
 import {ClipProof} from './compositions/ClipProof';
+import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
 
 export const RemotionRoot: React.FC = () => {
@@ -64,6 +65,15 @@ export const RemotionRoot: React.FC = () => {
           citation: 'Miranda v. Arizona, 384 U.S. 436 (1966)',
           reconstruction: true,
         }}
+      />
+      <Composition
+        id="ColdOpen"
+        component={ColdOpen}
+        durationInFrames={hookDurationInFrames(MIRANDA_HOOK)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{beats: MIRANDA_HOOK}}
       />
       <Still
         id="ThumbnailFrame"
