@@ -368,3 +368,32 @@ Preference order:
 **Binds** `topic-strategist` (candidate generation + portfolio scoring should weight recognition,
 evergreen value, advertiser-safety, and series-thread fit) and `executive-producer` (portfolio
 approval). Expand toward niche/deeper cuts only as audience and data justify it.
+
+### N. Channel-survival / non-termination policy (owner direction 2026-06-14)
+
+**Not getting the channel banned, struck, or demonetized is a MUST** — it is priority §10.1–2
+(public-release + rights safety) made concrete. These are **hard publish gates**: a package that
+fails any check **cannot be published** (no human override silently bypasses them).
+
+Termination / demonetization risks and required guards:
+
+- **Copyright strikes (3 → channel termination):** only public-domain or licensed assets, each with
+  a recorded rights basis (§L). **No** unlicensed third-party photos/footage.
+- **Music claims (Content ID):** every track (Suno / ElevenLabs / library) must have its commercial
+  /monetized-use terms verified and recorded before use.
+- **"Inauthentic / mass-produced" demonetization:** each episode is original research + script +
+  narration (transformative). Avoid templated, reused, or zero-effort feel.
+- **Synthetic-media disclosure:** when realistic AI visuals are used, set YouTube's
+  **altered/synthetic-content disclosure** *and* keep the on-screen "symbolic reconstruction"
+  label (invariant 11). Never present AI as authentic record.
+- **Misinformation (esp. legal/medical/elections):** every on-screen/spoken claim is backed by a
+  graded, cited claim in the ledger (`fact-checker`); no unsupported assertion ships (CLAUDE.md §4.1).
+- **Advertiser-friendly:** neutral educational tone; no gratuitous violence/gore, shock, or
+  sensational thumbnails/titles (crime topics handled soberly).
+- **Misleading metadata:** title ⇄ thumbnail ⇄ content must match (existing title-thumbnail gate).
+- **Defamation / real people:** documented public record only; favor historical/deceased subjects;
+  no identifiable-likeness AI of real people (invariant 11; `rights-editor`).
+
+**Binds** `pd-qc`, `pd-publish-preflight`, `rights-editor`, and `security-auditor`: this checklist
+is part of the publish-preflight gate and the rights manifest. Publish is blocked until it fully
+passes for the exact approved revision (rule 16, §A approval boundaries).
