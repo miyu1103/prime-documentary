@@ -73,27 +73,45 @@ const SceneVisual: React.FC<{scene: AnimaticScene}> = ({scene}) => {
   return <SceneArt visualMode={m} motifHint={motifHint} onScreenText={ost} />;
 };
 
-/** VO-preview caption (the narration text, shown as review subtitle — NOT spoken). */
+/** Split text into chunks of ~5 words at natural boundaries. */
+function toChunks(text: string, size = 5): string[] {
+  const words = text.replace(/\s+/g, ' ').trim().split(' ');
+  const chunks: string[] = [];
+  for (let i = 0; i < words.length; i += size) {
+    chunks.push(words.slice(i, i + size).join(' '));
+  }
+  return chunks;
+}
+
+/** VO-preview caption — shows 5 words at a time, fades between chunks. */
 const ScriptCaption: React.FC<{text: string}> = ({text}) => {
   const frame = useCurrentFrame();
-  const o = interpolate(frame, [0, 12], [0, 1], {extrapolateRight: 'clamp'});
+  const {durationInFrames, fps} = useVideoConfig();
+  const chunks = toChunks(text, 5);
+  // leave last 10% of scene caption-free so it breathes before transition
+  const activeDur = durationInFrames * 0.90;
+  const cpf = activeDur / chunks.length;          // frames per chunk
+  const idx = Math.min(Math.floor(frame / cpf), chunks.length - 1);
+  const f0 = idx * cpf;
+  const fadeIn  = interpolate(frame, [f0, f0 + 5],        [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const fadeOut = interpolate(frame, [f0 + cpf - 6, f0 + cpf], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const opacity = frame >= activeDur ? 0 : Math.min(fadeIn, fadeOut);
+
   return (
-    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 60}}>
-      <div
-        style={{
-          opacity: o,
-          maxWidth: '82%',
-          background: `${BRAND.color.ink}CC`,
-          borderTop: `2px solid ${BRAND.color.gold}`,
-          padding: '14px 24px',
-          color: BRAND.color.white,
-          fontFamily: BRAND.font.body,
-          fontSize: 24,
-          lineHeight: 1.35,
-          textAlign: 'center',
-        }}
-      >
-        {text}
+    <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 72, pointerEvents: 'none'}}>
+      <div style={{
+        opacity,
+        color: BRAND.color.white,
+        fontFamily: BRAND.font.body,
+        fontSize: 38,
+        fontWeight: 700,
+        textAlign: 'center',
+        maxWidth: '68%',
+        lineHeight: 1.3,
+        textShadow: '0 2px 12px rgba(0,0,0,0.95), 0 0 2px rgba(0,0,0,1)',
+        letterSpacing: 0.3,
+      }}>
+        {chunks[idx]}
       </div>
     </AbsoluteFill>
   );
