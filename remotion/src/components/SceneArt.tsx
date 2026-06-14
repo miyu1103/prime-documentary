@@ -1,6 +1,14 @@
 import React from 'react';
-import {AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig} from 'remotion';
+import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {BRAND} from '../brand';
+
+const MJ_IMAGE_MAP: Record<string, string> = {
+  'MJ-EP:constitution-fifth-amendment': 'approved/s002_s014_constitution_fifth_amendment_01_primary.png',
+  'MJ-EP:interrogation-room-symbolic':  'approved/s004_interrogation_room_01_primary.png',
+  'MJ-EP:courtroom-1960s-symbolic':     'approved/s007_courtroom_1960s_01_primary.png',
+  'MJ-EP:miranda-warning-card':         'approved/s016_miranda_warning_card_01_primary.png',
+  'MJ-EP:retrial-symbolic':             'approved/s018_retrial_symbolic_01_primary.png',
+};
 
 /**
  * Coded symbolic art for scenes whose real Midjourney still is not generated yet.
@@ -117,9 +125,38 @@ export function pickArt(visualMode: string, motifHint: string): React.FC {
   return ART.gavel;
 }
 
+const PhotoFrame: React.FC<{src: string; onScreenText: string[]}> = ({src, onScreenText}) => {
+  const f = useCurrentFrame();
+  const {durationInFrames} = useVideoConfig();
+  const scale = interpolate(f, [0, durationInFrames], [1.0, 1.06], {extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{background: BRAND.color.ink, justifyContent: 'center', alignItems: 'center'}}>
+      <AbsoluteFill style={{transform: `scale(${scale})`, transformOrigin: '50% 50%'}}>
+        <Img
+          src={staticFile(src)}
+          style={{width: '100%', height: '100%', objectFit: 'cover'}}
+        />
+      </AbsoluteFill>
+      {/* dark gradient overlay so text is readable */}
+      <AbsoluteFill style={{
+        background: 'linear-gradient(to top, rgba(10,10,12,0.82) 0%, rgba(10,10,12,0.22) 55%, rgba(10,10,12,0.55) 100%)',
+      }} />
+      {onScreenText.length > 0 && (
+        <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 80}}>
+          <Caption lines={onScreenText.slice(0, 3)} />
+        </AbsoluteFill>
+      )}
+    </AbsoluteFill>
+  );
+};
+
 export const SceneArt: React.FC<{visualMode: string; motifHint: string; onScreenText: string[]}> = ({
   visualMode, motifHint, onScreenText,
 }) => {
+  const imgSrc = MJ_IMAGE_MAP[motifHint];
+  if (imgSrc) {
+    return <PhotoFrame src={imgSrc} onScreenText={onScreenText} />;
+  }
   const Art = pickArt(visualMode, motifHint);
   return (
     <Frame>
