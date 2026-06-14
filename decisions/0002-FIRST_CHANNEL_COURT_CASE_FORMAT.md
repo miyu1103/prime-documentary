@@ -305,3 +305,18 @@ retention is what drives revenue (CLAUDE.md §2, §10).
   a draft that reads clearly above the grade-7–8 target as a revision request, not an auto-pass.
 - This is a readability target, **not** a license to weaken factual precision, citations, or the
   claim→span integrity invariants (CLAUDE.md §4).
+
+### K. Series threading + next-episode hook (owner direction 2026-06-14)
+
+Episodes are planned as a **loosely connected series**, not isolated one-offs, to grow YouTube
+**session watch-time** (consecutive views) — a strong ranking + revenue lever.
+
+- Each episode is **standalone** (no prerequisite viewing) but ends by **teasing the next** through
+  a **genuine thematic thread** (e.g. Miranda → Gideon: "who even gets a lawyer?").
+- **Honest links only.** A forced, exaggerated, or misleading connection is prohibited — it breaks
+  editorial integrity and viewer trust (CLAUDE.md §4, rights/misrepresentation rules). **Even a
+  small real link is enough**; the bar is "true and inviting," not "tight."
+- The end-card CTA should leave the viewer **wanting the next one**, framed around an open question
+  the next episode answers.
+- **Binds** `topic-strategist` (sequence the weekly portfolio so adjacent episodes share a real
+  thread), `documentary-writer` (ending/CTA), and `package-strategist` (end card + "next" framing).
