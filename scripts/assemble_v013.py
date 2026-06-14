@@ -127,25 +127,33 @@ def main() -> None:
         str(endcard),
     ], "endcard", cwd=tmp)
 
-    # ── 2. Trim animatic + freeze last frame ──────────────────────────────────
-    # tpad clone: last good frame (t=615s, "Cause->Mechanism->Effect" diagram)
-    # holds for freeze_dur seconds — narration continues over it
+    # ── 2a. Trim animatic to safe end (no tpad — separate filler is more reliable)
     main_mp4 = tmp / "main.mp4"
     run([
         FFMPEG, "-y",
         "-t", f"{anim_trim:.3f}",
         "-i", str(ANIMATIC_MP4),
-        "-vf", f"tpad=stop_mode=clone:stop_duration={freeze_dur:.3f}",
         "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-an",
         str(main_mp4),
-    ], f"trim animatic {anim_trim:.1f}s + freeze {freeze_dur:.1f}s")
+    ], f"trim animatic {anim_trim:.1f}s")
 
-    # ── 3. Video concat: ColdOpen + Opening + Main + Endcard ─────────────────
+    # ── 2b. Dark filler: narration tail over last chapter's atmosphere ─────────
+    filler_mp4 = tmp / "filler.mp4"
+    run([
+        FFMPEG, "-y",
+        "-f", "lavfi",
+        "-i", f"color=color=0x0A0A0C:s=1920x1080:r=30:d={freeze_dur:.3f}",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-an",
+        str(filler_mp4),
+    ], f"dark filler {freeze_dur:.1f}s")
+
+    # ── 3. Video concat: ColdOpen + Opening + Main + Filler + Endcard ─────────
     concat_txt = tmp / "concat.txt"
     concat_txt.write_text(
         f"file '{COLD_OPEN_MP4.as_posix()}'\n"
         f"file '{OPENING_MP4.as_posix()}'\n"
         f"file '{main_mp4.as_posix()}'\n"
+        f"file '{filler_mp4.as_posix()}'\n"
         f"file '{endcard.as_posix()}'\n",
         encoding="utf-8",
     )
@@ -170,7 +178,7 @@ def main() -> None:
         FFMPEG, "-y",
         "-i", str(video_raw),
         "-vf", f"subtitles='{srt_path}':force_style='{style}'",
-        "-c:v", "libx264", "-preset", "slow", "-crf", "17", "-an",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-an",
         str(video_subbed),
     ], "subtitle burn-in")
 
@@ -211,8 +219,9 @@ def main() -> None:
     tmp_out.replace(OUT_MP4)
 
     size_mb = OUT_MP4.stat().st_size / 1_048_576
+    actual_dur = probe_duration(OUT_MP4)
     print(f"\n>> {OUT_MP4}")
-    print(f"   {size_mb:.1f} MB  {total_dur:.0f}s  (~{total_dur/60:.1f} min)")
+    print(f"   {size_mb:.1f} MB  expected={total_dur:.0f}s  actual={actual_dur:.1f}s")
 
 
 if __name__ == "__main__":
