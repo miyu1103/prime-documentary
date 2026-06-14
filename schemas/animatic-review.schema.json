@@ -1,0 +1,91 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://prime-documentary.local/schemas/animatic-review.schema.json",
+  "title": "PD Animatic Review",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "review_id",
+    "episode_id",
+    "composition_id",
+    "review_state",
+    "player_state",
+    "session",
+    "markers",
+    "comments",
+    "state_history"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "review_id": {"type": "string", "minLength": 3},
+    "episode_id": {"type": "string"},
+    "episode_slug": {"type": "string"},
+    "composition_id": {"type": "string"},
+    "source_revision": {"type": "object"},
+    "review_state": {"enum": ["not_started", "first_pass", "second_pass", "completed"]},
+    "language": {"type": "object"},
+    "player_state": {
+      "type": "object",
+      "required": ["fps", "current_frame", "current_seconds", "playback_rate"],
+      "properties": {
+        "fps": {"type": "number", "exclusiveMinimum": 0},
+        "duration_frames": {"type": ["integer", "null"]},
+        "duration_seconds": {"type": ["number", "null"]},
+        "current_frame": {"type": "number", "minimum": 0},
+        "current_seconds": {"type": "number", "minimum": 0},
+        "playback_rate": {"type": "number", "exclusiveMinimum": 0}
+      }
+    },
+    "session": {"type": "object"},
+    "draft": {"type": "object"},
+    "markers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["marker_id", "marker_type", "frame", "seconds", "timecode", "fps", "created_at"],
+        "properties": {
+          "marker_id": {"type": "string", "pattern": "^MRK-[0-9]{4}$"},
+          "marker_type": {"enum": ["boring", "unclear", "awkward", "blocker", "good", "confusing", "needs_fix", "check_later"]},
+          "severity": {"type": ["string", "null"], "enum": ["minor", "needs_fix", "blocker", null]},
+          "frame": {"type": "number", "minimum": 0},
+          "seconds": {"type": "number", "minimum": 0},
+          "timecode": {"type": "string"},
+          "fps": {"type": "number", "exclusiveMinimum": 0},
+          "scene_id": {"type": ["string", "null"]},
+          "note_ja": {"type": ["string", "null"]},
+          "created_at": {"type": "string"}
+        }
+      }
+    },
+    "comments": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["comment_id", "category", "severity", "frame", "seconds", "timecode", "fps", "original_comment_ja", "status", "created_at", "updated_at"],
+        "properties": {
+          "comment_id": {"type": "string", "pattern": "^CMT-[0-9]{4}$"},
+          "marker_id": {"type": ["string", "null"]},
+          "category": {"enum": ["pacing", "visual", "caption", "audio", "direction", "fact_check", "other"]},
+          "severity": {"enum": ["minor", "needs_fix", "blocker"]},
+          "frame": {"type": "number", "minimum": 0},
+          "seconds": {"type": "number", "minimum": 0},
+          "timecode": {"type": "string"},
+          "fps": {"type": "number", "exclusiveMinimum": 0},
+          "scene_id": {"type": ["string", "null"]},
+          "nearby_reference": {"type": ["string", "null"]},
+          "original_comment_ja": {"type": "string"},
+          "instruction_en": {"type": ["string", "null"]},
+          "translation_status": {"type": "string"},
+          "status": {"enum": ["open", "resolved", "wont_fix"]},
+          "created_at": {"type": "string"},
+          "updated_at": {"type": "string"}
+        }
+      }
+    },
+    "state_history": {"type": "array", "items": {"type": "object"}},
+    "save_status": {"type": "object"}
+  }
+}

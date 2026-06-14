@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PD Animatic Review — Miranda v. Arizona</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body>
+  <header>
+    <div class="title">PD Animatic Review · <span class="muted">Miranda v. Arizona</span></div>
+    <div id="reviewState" class="state">未開始</div>
+    <div id="saveStatus" class="save muted">—</div>
+  </header>
+
+  <div id="resume" class="resume hidden">
+    <div id="resumeText"></div>
+    <div class="row">
+      <button data-resume="continue">続きから再開</button>
+      <button data-resume="lastComment">最後の確定コメントから</button>
+      <button data-resume="start">最初から</button>
+      <button data-resume="dismiss" class="ghost">閉じる</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="player">
+      <video id="video" preload="metadata" controls></video>
+      <div class="bar">
+        <button id="playPause">⏯ 再生/停止 (Space)</button>
+        <button data-seek="-5">⟲ 5s (←)</button>
+        <button data-seek="5">5s ⟳ (→)</button>
+        <span class="rate">速度:
+          <button data-rate="0.5">0.5x</button>
+          <button data-rate="1" class="active">1x</button>
+          <button data-rate="2">2x</button>
+        </span>
+        <span id="timecode" class="tc">00:00:00.000</span>
+        <span class="muted">/ <span id="duration">--:--:--</span> · <span id="fps">30</span>fps</span>
+      </div>
+    </section>
+
+    <section class="side">
+      <div class="pass">
+        <strong>レビュー状態</strong>
+        <div class="row">
+          <button data-state="first_pass">1回目視聴</button>
+          <button data-state="second_pass">2回目コメント</button>
+          <button data-state="completed">完了</button>
+        </div>
+      </div>
+
+      <div class="markers">
+        <strong>1回目: マーカー (現在位置に記録)</strong>
+        <div class="row">
+          <button data-marker="boring">退屈 (B)</button>
+          <button data-marker="unclear">分かりにくい (U)</button>
+          <button data-marker="awkward">違和感 (A)</button>
+          <button data-marker="blocker" class="danger">公開不可 (X)</button>
+        </div>
+      </div>
+
+      <div class="comment">
+        <strong>2回目: コメント (M で現在位置を取得)</strong>
+        <div class="cap" id="capTc">位置: —</div>
+        <div class="row">
+          <select id="category" title="category">
+            <option value="pacing">テンポ</option>
+            <option value="visual">画像</option>
+            <option value="caption">字幕</option>
+            <option value="audio">音声</option>
+            <option value="direction">演出</option>
+            <option value="fact_check">事実確認</option>
+            <option value="other">その他</option>
+          </select>
+          <select id="severity" title="severity">
+            <option value="minor">軽微 (1)</option>
+            <option value="needs_fix">要修正 (2)</option>
+            <option value="blocker">公開不可 (3)</option>
+          </select>
+        </div>
+        <textarea id="commentText" rows="3" placeholder="日本語でコメント (Win+H で音声入力可)。Ctrl+Enter で確定保存。"></textarea>
+        <div class="row">
+          <button id="captureBtn">現在位置を取得 (M)</button>
+          <button id="saveComment" class="primary">コメント確定 (Ctrl+Enter)</button>
+          <button id="cancelComment" class="ghost">取消 (Esc)</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="lists">
+    <div>
+      <strong>マーカー <span id="mCount" class="muted">0</span></strong>
+      <ul id="markerList"></ul>
+    </div>
+    <div>
+      <strong>コメント <span id="cCount" class="muted">0</span></strong>
+      <ul id="commentList"></ul>
+    </div>
+  </section>
+
+  <details class="help">
+    <summary>キーボード操作</summary>
+    <div class="grid">
+      <span>Space</span><span>再生/停止</span>
+      <span>← / →</span><span>5秒 戻る/進む</span>
+      <span>M</span><span>現在位置を取得（コメント開始）</span>
+      <span>1 / 2 / 3</span><span>severity: 軽微 / 要修正 / 公開不可</span>
+      <span>B / U / A / X</span><span>マーカー: 退屈 / 分かりにくい / 違和感 / 公開不可</span>
+      <span>Ctrl+Enter</span><span>コメント確定保存</span>
+      <span>Esc</span><span>コメントUIを閉じる</span>
+      <span>S</span><span>手動保存</span>
+    </div>
+  </details>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
