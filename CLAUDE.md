@@ -161,3 +161,19 @@ Report in this order:
 7. Known limitations and risks
 8. Rollback procedure
 9. Next highest-value action
+
+## 13. P0 Animatic Review workflow (Prime Documentary)
+
+The Miranda v. Arizona Episode 1 animatic is reviewed through a local, on-demand
+workflow. When (and only when) the owner asks to build or run the local animatic
+review screen, invoke the project skill:
+
+    /prime-animatic-review
+
+The full P0 implementation contract lives under
+`.claude/skills/prime-animatic-review/` and loads only when that workflow runs.
+This workflow is local-only and must never run paid APIs, publish/upload, operate
+YouTube, automate Midjourney/Runway/ElevenLabs, expose secrets, or perform
+destructive operations without explicit owner approval — consistent with
+sections 3, 4 and 8 above. It begins by inspecting the repository and reporting a
+plan in Japanese before editing.
