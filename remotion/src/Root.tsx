@@ -5,6 +5,7 @@ import {Opening} from './compositions/Opening';
 import {Episode, TEMPLATE_12MIN} from './compositions/Episode';
 import {StyleTest} from './compositions/StyleTest';
 import {Animatic, animaticDurationInFrames} from './compositions/Animatic';
+import {ClipProof} from './compositions/ClipProof';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
 
 export const RemotionRoot: React.FC = () => {
@@ -49,6 +50,20 @@ export const RemotionRoot: React.FC = () => {
         width={BRAND.video.width}
         height={BRAND.video.height}
         defaultProps={{bgmSrc: 'bgm_placeholder.wav' as string | null}}
+      />
+      <Composition
+        id="ClipProof"
+        component={ClipProof}
+        durationInFrames={Math.round(BRAND.video.fps * 5)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          src: 'proof_clip.mp4',
+          hook: 'You have the right to remain silent.',
+          citation: 'Miranda v. Arizona, 384 U.S. 436 (1966)',
+          reconstruction: true,
+        }}
       />
       <Still
         id="ThumbnailFrame"
