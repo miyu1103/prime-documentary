@@ -16,9 +16,11 @@ first-cut (rule 16) unchanged.
 
 ## B. Structure (12-min target; same for Pino long-form)
 
-- **Hook / cold open — ~0:00–0:08 (5–8s).** One strongest line: the single most surprising fact or
-  question, landing in the first 5 seconds. Just the grab — no full setup yet. Never open on a
-  static text-only card; it moves from frame one.
+- **Hook / cold open — ~0:00–0:08 (5–8s).** **Flash-forward:** pull the single most dramatic
+  moment from *later* in the episode — the climax/twist visual + a punchy line — and show it as a
+  cold-open teaser, then rewind to start the story. Land the grab in the first 5 seconds. **Tease,
+  don't resolve** (keep the open loop). Reuses footage already in the cut = no extra asset cost.
+  Never open on a static text-only card; it moves from frame one.
 - **Opening — ~0:08–1:00.** The **first explanation**: thesis + the context the viewer needs +
   viewer promise ("what you'll learn") + ≤3s brand. Into the body inside the first minute.
 - **Body — ~9–10 min, 4 acts.** Chronological/causal. Each act: setup → detail → insight, ending on
