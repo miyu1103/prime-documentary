@@ -1,10 +1,11 @@
 import React from 'react';
 import {Composition, Still} from 'remotion';
 import {BRAND} from './brand';
-import {Opening} from './compositions/Opening';
+import {Opening, OPENING_DURATION_FRAMES} from './compositions/Opening';
 import {Episode, TEMPLATE_12MIN} from './compositions/Episode';
 import {StyleTest} from './compositions/StyleTest';
 import {Animatic, animaticDurationInFrames} from './compositions/Animatic';
+import {ClipProof, CLIP_PROOF_DURATION_SEC} from './compositions/ClipProof';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
 
 export const RemotionRoot: React.FC = () => {
@@ -13,7 +14,7 @@ export const RemotionRoot: React.FC = () => {
       <Composition
         id="Opening"
         component={Opening}
-        durationInFrames={Math.round(BRAND.video.fps * 2.5)}
+        durationInFrames={OPENING_DURATION_FRAMES}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
@@ -49,6 +50,15 @@ export const RemotionRoot: React.FC = () => {
         width={BRAND.video.width}
         height={BRAND.video.height}
         defaultProps={{bgmSrc: 'bgm_placeholder.wav' as string | null}}
+      />
+      <Composition
+        id="ClipProof"
+        component={ClipProof}
+        durationInFrames={Math.round(BRAND.video.fps * CLIP_PROOF_DURATION_SEC)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{}}
       />
       <Still
         id="ThumbnailFrame"
