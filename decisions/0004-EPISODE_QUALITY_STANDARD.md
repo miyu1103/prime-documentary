@@ -14,17 +14,20 @@ Decide and approve the **structure + shot list + asset list BEFORE generating** 
 This prevents rework and is the "固めてから進める" the owner asked for. Owner gate at script and at
 first-cut (rule 16) unchanged.
 
-## B. Structure (12-min target; adjust per topic)
+## B. Structure (12-min target; same for Pino long-form)
 
-- **Hook / cold open — ~0:00–0:20.** Strongest surprise in the **first 5s**; tease the payoff. Use
-  the `ColdOpen` pattern (recognition → subversion → surprise → title). Never open on a static
-  text-only card.
-- **Opening — ~0:20–1:00.** Thesis + viewer promise ("what you'll learn") + ≤3s brand. Into the
-  body inside the first minute.
-- **Body — ~9 min, 4 acts.** Chronological/causal. Each act: setup → detail → insight, ending on a
-  **mini-cliffhanger / open loop** that pulls to the next.
+- **Hook / cold open — ~0:00–0:08 (5–8s).** One strongest line: the single most surprising fact or
+  question, landing in the first 5 seconds. Just the grab — no full setup yet. Never open on a
+  static text-only card; it moves from frame one.
+- **Opening — ~0:08–1:00.** The **first explanation**: thesis + the context the viewer needs +
+  viewer promise ("what you'll learn") + ≤3s brand. Into the body inside the first minute.
+- **Body — ~9–10 min, 4 acts.** Chronological/causal. Each act: setup → detail → insight, ending on
+  a **mini-cliffhanger / open loop** that pulls to the next.
 - **Ending — last ~1 min.** Payoff (the hidden system) → tight recap → CTA + **genuine next-episode
   tease** (0002 §K).
+
+> Flow the owner wants: **a 5–8s hook, then the opening carries the first explanation**, then body,
+> then ending. Length locked at **12 min**. (PD-2026-001's longer 20s cold open stays as-is.)
 
 ## C. Visual density & motion (the core upgrade)
 
