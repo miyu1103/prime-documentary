@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-001-miranda",
+  "target_type": "title_thumbnail_pair",
+  "target_id": "youtube_meta.v002",
+  "target_revision": "v002",
+  "decision": "approved",
+  "requested_at": "2026-06-15T00:00:00Z",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-15T00:00:00Z",
+  "decided_by": "owner",
+  "notes": "Owner approved thumbnail file (thumb_final.png, SHA256:099f4612fdbd0182e32e6cbc7f6ebe38580bada21cafa0526e0de93bb5772192) and title 'Why Do Police Read You Your Rights?' together with description/tags as defined in youtube_meta.v002.json. Midjourney background (dark cell + iron bars + cold blue light, no real person) confirmed by owner. Rule 16 title-thumbnail pair gate satisfied.",
+  "approved_artifacts": [
+    {
+      "artifact": "remotion/out/thumb_final.png",
+      "sha256": "099f4612fdbd0182e32e6cbc7f6ebe38580bada21cafa0526e0de93bb5772192"
+    },
+    {
+      "artifact": "episodes/PD-2026-001-miranda/09_package/youtube_meta.v002.json",
+      "fields": ["title", "description", "tags", "chapters"]
+    }
+  ],
+  "conditions": [
+    "Approval is invalidated if title, description, or thumbnail file changes.",
+    "Public scheduling still requires separate publish-approval after first-cut review."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-001-miranda/09_package/youtube_meta.v002.json"
+}

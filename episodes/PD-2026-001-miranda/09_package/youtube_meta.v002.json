@@ -45,6 +45,8 @@
   "made_for_kids": false,
   "visibility": "private",
   "publish_approved": false,
+  "title_thumbnail_approved": true,
+  "title_thumbnail_approval_ref": "APR-0002",
   "comments": "on_with_review",
   "license": "standard_youtube",
   "playlist": "Landmark Rights Cases",
@@ -90,9 +92,7 @@
   },
   "publish_gate": "blocked",
   "publish_gate_blockers": [
-    "final thumbnail file not owner-approved",
-    "title + description not owner sign-off",
-    "first-cut review not completed",
+    "first-cut review not completed (watch sample_v011.mp4)",
     "ai_disclosure labels in video not verified",
     "rights manifest JSON not finalized"
   ],
