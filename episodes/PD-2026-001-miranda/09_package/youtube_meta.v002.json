@@ -3,7 +3,7 @@
   "revision": "v002",
   "source_doc": "episodes/PD-2026-001-miranda/09_publish/package.v002.md",
   "status": "draft_pending_approval",
-  "video_file": "sample_v011.mp4",
+  "video_file": "sample_v013.mp4",
   "title": "Why Do Police Read You Your Rights?",
   "title_alternates": [
     "The Confession the Supreme Court Threw Out",
@@ -21,7 +21,7 @@
     {"index": 8, "timestamp": "7:12", "timestamp_sec": 432,  "title": "The twist: he won, then went back to prison"},
     {"index": 9, "timestamp": "8:22", "timestamp_sec": 502,  "title": "Why it still shapes every arrest"}
   ],
-  "chapter_notes": "Timestamps derived from cumulative VC-0001..VC-0023 durations (voice_qc.v001.json). Each chapter ≥10s apart. First at 0:00. Total video 9:53 (593s).",
+  "chapter_notes": "Timestamps derived from cumulative VC-0001..VC-0023 slowed durations (atempo=0.856). Each chapter ≥10s apart. First at 0:00. Total video 12:00 (720s). Chapter timestamps need recalculation against v013 timing.",
   "tags": [
     "miranda rights",
     "miranda v arizona",
@@ -85,14 +85,15 @@
     "title_thumbnail_content_match": true,
     "advertiser_friendly": true,
     "final_cut_hash_recorded": true,
-    "final_cut_hash_notes": "SHA256 of sample_v011.mp4. Approval of publish must reference this exact hash.",
-    "final_cut_hash": "7eb082ff65e0f5a5b58e4b2732b0fb56b2f167a632f61110c1228a469105340c",
-    "final_cut_path": "H:/pd-media/episodes/PD-2026-001-miranda/07_edit/sample/sample_v011.mp4",
-    "final_cut_size_bytes": 535914436
+    "final_cut_hash_notes": "SHA256 of sample_v013.mp4. Approval of publish must reference this exact hash.",
+    "final_cut_hash": "e9e335a89d015b999788bd470a7c860b1302087407ec006de70950db7a0a2506",
+    "final_cut_path": "H:/pd-media/episodes/PD-2026-001-miranda/07_edit/sample/sample_v013.mp4",
+    "final_cut_size_bytes": 125175603
   },
   "publish_gate": "blocked",
   "publish_gate_blockers": [
-    "first-cut review not completed (watch sample_v011.mp4)",
+    "first-cut review not completed (watch sample_v013.mp4)",
+    "chapter timestamps need recalculation for v013 12-min timing",
     "ai_disclosure labels in video not verified",
     "rights manifest JSON not finalized"
   ],
