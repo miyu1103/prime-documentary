@@ -284,3 +284,116 @@ defense against YouTube's mass-produced/inauthentic-content demonetization risk.
 - Tier D (schema/hash/duration/diff/loudness/dedup/state) uses **no LLM** (deterministic code).
 - Fallback never silently lowers quality; a high-risk task that falls back is flagged for review
   and may not auto-approve (docs/24 §4).
+
+### J. Script readability standard (owner direction 2026-06-14)
+
+Refines §"Language: American English, plain and clear". The audience is the **broad** US
+general public, not only highly-educated viewers — accessibility raises retention, and
+retention is what drives revenue (CLAUDE.md §2, §10).
+
+- **Target reading level: US grade 7–8** (accessible to most adults). Aim for it; do not write
+  down to the audience or strip the substance.
+- **Short sentences, one idea each** (target average ≤ ~18 words; break long clauses).
+- **Concrete over abstract.** Avoid free-floating literary metaphors; if a metaphor is used,
+  ground it in the same breath with a plain restatement.
+- **Everyday vocabulary.** Any necessary legal/technical term is explained inline on first use.
+- **Keep the "smart" feeling from structure and surprising true facts, not from hard words.**
+- **Scope:** applies from **PD-2026-002 onward**. **PD-2026-001 (Miranda) v001 stays as approved**
+  (already locked); it may be simplified later only as a new revision, never overwritten (rules
+  12, 05).
+- **Binds** the `documentary-writer` agent and the `pd-script` skill. QC/script review should flag
+  a draft that reads clearly above the grade-7–8 target as a revision request, not an auto-pass.
+- This is a readability target, **not** a license to weaken factual precision, citations, or the
+  claim→span integrity invariants (CLAUDE.md §4).
+
+### K. Series threading + next-episode hook (owner direction 2026-06-14)
+
+Episodes are planned as a **loosely connected series**, not isolated one-offs, to grow YouTube
+**session watch-time** (consecutive views) — a strong ranking + revenue lever.
+
+- Each episode is **standalone** (no prerequisite viewing) but ends by **teasing the next** through
+  a **genuine thematic thread** (e.g. Miranda → Gideon: "who even gets a lawyer?").
+- **Honest links only.** A forced, exaggerated, or misleading connection is prohibited — it breaks
+  editorial integrity and viewer trust (CLAUDE.md §4, rights/misrepresentation rules). **Even a
+  small real link is enough**; the bar is "true and inviting," not "tight."
+- The end-card CTA should leave the viewer **wanting the next one**, framed around an open question
+  the next episode answers.
+- **Binds** `topic-strategist` (sequence the weekly portfolio so adjacent episodes share a real
+  thread), `documentary-writer` (ending/CTA), and `package-strategist` (end card + "next" framing).
+
+### L. Real archival / primary-source materials (owner direction 2026-06-14)
+
+Use **real** public-domain or licensed primary sources liberally where they exist. They add
+credibility and — unlike AI images — are **genuine evidence**, which strengthens factual integrity
+(CLAUDE.md §4). This does **not** loosen invariant 11; it adds a second, authentic visual track.
+
+- **Allowed, use freely:** **public-domain** material (US Supreme Court opinions & syllabus text,
+  **oral-argument audio** via National Archives / Oyez, official Court/justice portraits, federal
+  government documents & photos, case-record documents) and **properly licensed** assets.
+- **Prohibited:** unlicensed third-party copyrighted news **photos/footage** (AP, Getty, news
+  orgs, etc.). YouTube Content ID → claims/strikes → **demonetization + incident risk**, the exact
+  failure the business objective minimizes (CLAUDE.md §2; priority §10.1–2). "Use everything" does
+  **not** mean "use copyrighted material without rights."
+- **Hard gate:** every real asset enters only with a recorded **rights basis**
+  (`public_domain` | `licensed` | `fair_use` with written justification) plus `source` and
+  `verified_at`, captured in the episode **rights manifest** before it ships (rule 16, pd-package).
+- **Labeling:** real materials are shown **as authentic**; AI-generated visuals stay **clearly
+  symbolic reconstructions**, never presented as real (invariant 11). The two are distinguished
+  on screen and in the rights manifest.
+- **Binds** `rights-editor` (clearance + manifest), `research-director` (locate PD sources during
+  research), and `visual-director` (sourcing plan: real-first where credible, AI-symbolic for the
+  rest).
+
+### M. Topic selection policy (owner direction 2026-06-14)
+
+Core formula: **"a familiar door, a hidden room"** — pick subjects with **built-in recognition**
+(instant clicks + existing search demand) and deliver the **surprising hidden system** behind them.
+For a new channel, reach (familiarity) gates everything; interestingness rides on top of it.
+
+Preference order:
+
+- ◎ **Famous / widely-recognized** subjects (e.g. "Miranda rights") — low explanation cost, high
+  click-through, existing search demand. **Default.**
+- ◎ **Foundational to the country / how everyday systems work** — evergreen (compounds for years),
+  advertiser-safe, universally interesting.
+- ◎ **Genuinely connected to adjacent episodes** (per §K) — builds session watch-time.
+- ◎ **Deeply interesting** — required, but it must sit on a *recognizable door*; fascinating-but-
+  obscure topics get near-zero search and die on arrival.
+- △ **Niche / deep-cut** — only **after** a subscriber base exists.
+- △ **Topical** — occasionally, and only when it can be made **evergreen**.
+- ✕ **Breaking / latest-news** and **hot partisan politics** — avoid: spikes then dies, fact-
+  volatile, and advertiser-unfriendly → low CPM / **demonetization** (priority §10.1–2, incident
+  risk). Not worth it for a revenue-compounding library.
+
+**Binds** `topic-strategist` (candidate generation + portfolio scoring should weight recognition,
+evergreen value, advertiser-safety, and series-thread fit) and `executive-producer` (portfolio
+approval). Expand toward niche/deeper cuts only as audience and data justify it.
+
+### N. Channel-survival / non-termination policy (owner direction 2026-06-14)
+
+**Not getting the channel banned, struck, or demonetized is a MUST** — it is priority §10.1–2
+(public-release + rights safety) made concrete. These are **hard publish gates**: a package that
+fails any check **cannot be published** (no human override silently bypasses them).
+
+Termination / demonetization risks and required guards:
+
+- **Copyright strikes (3 → channel termination):** only public-domain or licensed assets, each with
+  a recorded rights basis (§L). **No** unlicensed third-party photos/footage.
+- **Music claims (Content ID):** every track (Suno / ElevenLabs / library) must have its commercial
+  /monetized-use terms verified and recorded before use.
+- **"Inauthentic / mass-produced" demonetization:** each episode is original research + script +
+  narration (transformative). Avoid templated, reused, or zero-effort feel.
+- **Synthetic-media disclosure:** when realistic AI visuals are used, set YouTube's
+  **altered/synthetic-content disclosure** *and* keep the on-screen "symbolic reconstruction"
+  label (invariant 11). Never present AI as authentic record.
+- **Misinformation (esp. legal/medical/elections):** every on-screen/spoken claim is backed by a
+  graded, cited claim in the ledger (`fact-checker`); no unsupported assertion ships (CLAUDE.md §4.1).
+- **Advertiser-friendly:** neutral educational tone; no gratuitous violence/gore, shock, or
+  sensational thumbnails/titles (crime topics handled soberly).
+- **Misleading metadata:** title ⇄ thumbnail ⇄ content must match (existing title-thumbnail gate).
+- **Defamation / real people:** documented public record only; favor historical/deceased subjects;
+  no identifiable-likeness AI of real people (invariant 11; `rights-editor`).
+
+**Binds** `pd-qc`, `pd-publish-preflight`, `rights-editor`, and `security-auditor`: this checklist
+is part of the publish-preflight gate and the rights manifest. Publish is blocked until it fully
+passes for the exact approved revision (rule 16, §A approval boundaries).
