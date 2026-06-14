@@ -33,3 +33,6 @@ textarea { width: 100%; margin-top: 8px; resize: vertical; font-family: inherit;
 .help { margin: 0 16px 24px; color: var(--silver); }
 .help .grid { display: grid; grid-template-columns: 160px 1fr; gap: 4px 12px; margin-top: 8px; font-size: 13px; }
 .hidden { display: none; }
+.vmsg { margin-top: 8px; padding: 8px 12px; background: #15203a; border: 1px solid var(--electric);
+  border-radius: 6px; color: var(--silver); font-size: 14px; }
+.hint { margin-top: 6px; color: var(--silver); font-size: 13px; }

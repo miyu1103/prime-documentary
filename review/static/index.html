@@ -25,7 +25,9 @@
 
   <main>
     <section class="player">
-      <video id="video" preload="metadata" controls></video>
+      <video id="video" preload="auto" autoplay muted playsinline controls></video>
+      <div id="videoMsg" class="vmsg">動画を読み込み中…</div>
+      <div class="hint">▶ 自動で再生されます。音は再生バーの 🔊 を押すと出ます（最初は音が消えています）。</div>
       <div class="bar">
         <button id="playPause">⏯ 再生/停止 (Space)</button>
         <button data-seek="-5">⟲ 5s (←)</button>

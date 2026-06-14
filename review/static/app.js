@@ -172,6 +172,10 @@ async function init() {
     review.player_state.duration_frames = Math.round((review.player_state.duration_seconds || d) * fps);
   });
   video.addEventListener('timeupdate', () => { $('#timecode').textContent = fmtTc(video.currentTime); });
+  const vmsg = $('#videoMsg');
+  video.addEventListener('canplay', () => { if (vmsg) vmsg.style.display = 'none'; video.play().catch(() => { if (vmsg) { vmsg.style.display = 'block'; vmsg.textContent = '▶ をクリックすると再生します'; } }); });
+  video.addEventListener('playing', () => { if (vmsg) vmsg.style.display = 'none'; });
+  video.addEventListener('error', () => { if (vmsg) { vmsg.style.display = 'block'; vmsg.textContent = '動画を読み込めませんでした。ページを再読み込みしてください。'; } setSave('動画エラー', false); });
 
   // controls
   $('#playPause').onclick = () => video.paused ? video.play() : video.pause();
