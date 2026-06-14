@@ -53,6 +53,10 @@ const PlaceholderCard: React.FC<{mode: string; motif: string; ost: string[]}> = 
 
 const SceneVisual: React.FC<{scene: AnimaticScene}> = ({scene}) => {
   const {visualMode: m, onScreenText: ost, motifHint} = scene;
+  // MJ-EP images take priority over visualMode dispatch
+  if (motifHint.startsWith('MJ-EP:')) {
+    return <SceneArt visualMode={m} motifHint={motifHint} onScreenText={ost} />;
+  }
   if (m === 'typography') {
     const lines = (ost.length ? ost : ['Prime Documentary']).map((t, i) => ({text: t, at: i * 8}));
     return <KineticType lines={lines} />;
