@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260615-002",
   "slug": "gideon",
   "title_working": "He Had No Lawyer — So He Beat the Supreme Court",
-  "state": "assets_generating",
+  "state": "audio_generating",
   "risk_class": "R1",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -18,7 +18,8 @@
     "script": "v001",
     "scene_plan": "v001",
     "voice_plan": "v001",
-    "rights_manifest": "v001"
+    "rights_manifest": "v001",
+    "narration_index": "v001"
   },
   "artifacts": [],
   "approvals": [
@@ -43,12 +44,12 @@
     }
   },
   "warnings": [
-    "Asset acquisition IN PROGRESS. DONE: 21 Midjourney stills + 2 thumbnail backgrounds selected by local-claude and routed to remotion/public/mj (rights_manifest.v001, status=in_progress). PENDING: Suno music (owner — files not yet located in inbox/music), Runway clips (owner), narration (me, ElevenLabs), SFX/ambience (me), real public-domain assets (me: petition/audio/portraits/Constitution/B-roll).",
+    "Asset acquisition IN PROGRESS. DONE: 21 MJ stills + 2 thumb bgs, 9 Runway clips, 4 Suno tracks, narration (28 chunks, 9:38). PENDING (me): SFX/ambience cue sheet (reuse library), real public-domain assets (petition/audio/portraits/Constitution/B-roll), captions (at assembly); music expansion->strain = library reuse (owner decision).",
     "Research live-verification pending: SRC-0001/0002/0003 content_hash/verified_at not captured (generalize run_research before publish).",
     "Title/thumbnail SELECTED (title + thumbnail concepts 2+3) but APR pending thumbnail render + owner confirm.",
     "Final-cut QC + complete rights manifest are mandatory publish gates (EP1 lesson)."
   ],
   "blockers": [],
   "created_at": "2026-06-15T04:20:31.666942+00:00",
-  "updated_at": "2026-06-16T02:30:00+00:00"
+  "updated_at": "2026-06-16T04:00:00+00:00"
 }
