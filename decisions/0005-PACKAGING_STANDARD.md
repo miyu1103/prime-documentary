@@ -17,11 +17,17 @@ the **title carries the recognition/search**. They never repeat the same words.
 - Background image / subject, the bold words, the emotional/curiosity hook.
 
 **Rules:**
+- **Objective = maximize CTR.** Every thumbnail choice serves the click: a curiosity/emotion trigger,
+  strong contrast, one unmistakable focal point, the fewest possible words at the biggest size, and a
+  clear read at phone-thumbnail scale. Validate by shrinking it tiny — if it still hits, it works.
 - **3–5 huge words**, one focal point, **mobile-legible**, high contrast.
 - **Channel 2: Pino appears in every thumbnail** — a recurring character face is a top CTR + brand
   device.
 - Not identical episode-to-episode (identical = blurs together in the feed).
-- **A/B test** with YouTube *Test & Compare*; keep the winner; feed results back to refine the skeleton.
+- **A/B test — MANDATORY on every video, in YouTube Studio → "Test & Compare".** Submit **2–3
+  thumbnail variants** (and titles where the feature allows); YouTube rotates them and picks the
+  winner by watch-time share. Keep the winner; feed results into the learning loop (§D) to refine the
+  skeleton. So produce ≥2 thumbnail variants + ≥2 candidate titles per episode by default.
 
 ## B. Title system
 

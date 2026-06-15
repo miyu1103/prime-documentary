@@ -95,15 +95,21 @@ State machine (CLAUDE.md §9). **Drive transitions with `pd-run-pipeline` / `pd-
   ambience** (never silent) + **SFX on every transition & on-screen-text reveal** (master ≈ −14 LUFS).
 - **Narration delivery is dynamic (抑揚):** calm, measured baseline → emotional/intense at the climax,
   twist and payoff (mark each chunk calm/building/intense; vary TTS expressiveness; music swells in sync).
+- **Captions:** **word-for-word the narration**, **frame-accurate sync** (from the TTS timestamps —
+  no hand-timed drift); clean open captions (brand font, subtle scrim, lower safe-area, ~5–8 words,
+  smooth fade). QC checks caption↔audio text-match + sync.
+- **Content is genuinely useful:** every video leaves a real takeaway (interest + learning + surprise);
+  substance over engagement-bait.
 - **Editing rhythm:** vary cut length; **0.5–1s punch inserts + SFX** on key beats; transitions tied
   to meaning; **restraint = premium** (no decorative effect spam).
 - **Abundance floors / 12 min:** ≥8–12 real inserts · ≥6–10 motion clips · animate every
   number/list/map/timeline/quote · 60–100+ SFX · 100% ambience · 90–150 shots.
 
 ## 6. Packaging (0005)
-- **Thumbnail:** consistent brand frame (palette/font/layout/logo) + **different punch** per video
-  (image, 3–5 huge words, one focal point, mobile-legible). **Ch2: Pino in every thumbnail.** A/B
-  test; repackage losers.
+- **Thumbnail (objective: MAXIMIZE CTR):** consistent brand frame + **different punch** per video;
+  one focal point, fewest/biggest words, high contrast, readable at tiny size. **Ch2: Pino in every
+  thumbnail.** **A/B test EVERY video in YouTube Studio → "Test & Compare"** (2–3 thumbnails + ≥2
+  titles); keep the winner; repackage losers; feed the learning loop.
 - **Title:** curiosity gap (don't reveal), front-load keywords, specific/numbers, ~40–60 chars,
   **complement the thumbnail** (no repeated words), no clickbait lies. Formats: question / paradox /
   hidden-reason / how-it-works. Mix search vs browse.
