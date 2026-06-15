@@ -75,3 +75,36 @@ Money-channel specifics:
 - Pino's **ElevenLabs voice id** (pick a bright, clear, upbeat adult voice).
 - Channel **handle** + availability check.
 - First long-form topic + an opening **Shorts batch**.
+
+## Content formats & launch (owner-designed 2026-06-14)
+
+**Episode formula (all formats):** a familiar money question everyone has wondered → reveal the
+hidden system/trick behind it → "now you know" → tease the next. Empowering, never rage-bait (§Safety).
+
+**Repeatable formats (each a reusable template):**
+1. **Why is X so expensive?** — hidden margin/structure (popcorn, ink, concert tickets). Short/long.
+2. **The trick behind X** — one seller tactic ($9.99 charm pricing, "limited time", drip fees). Short.
+3. **How does X actually make money?** — business model reveal (free apps, Costco, casinos, IKEA). Long.
+4. **Don't get fooled: X** — scam/trap awareness (subscription traps, fake discounts, warranties). Short/long.
+5. **A vs B — which is the rip-off?** — comparison (brand vs generic, lease vs buy, cash vs card). Short.
+6. **The hidden cost of X** — what you don't see (free shipping, buy-now-pay-later, airline fees). Short.
+7. **How they make you spend more** — psychology/design (store layout, menus, dark patterns). Long.
+
+**Launch rotation (3 pillars):** signature Short **"Pino's trick reveal"** (format 2) · signature
+Short **"Don't get fooled"** (format 4, save/share-worthy) · flagship long-form **"How X makes
+money"** (format 3, monetization). Shorts → discovery/subs; long-form → revenue. Name the recurring
+series for brand recognition.
+
+**Opening Shorts batch (first 5):** (1) why movie popcorn is $8 · (2) why prices end in $9.99 ·
+(3) why "free" apps make billions · (4) why the gym wants your January signup · (5) why cards make
+you spend more than cash. **First long-form:** "Supermarkets are designed to make you spend more."
+
+**Sample Short script — "Why is movie popcorn so expensive?" (~50s, Pino, upbeat + savvy):**
+> "Eight bucks for popcorn? Yeah — that's on purpose. Theaters barely make money on your ticket —
+> most of it goes to the studio. So how do they survive? You. At the snack counter. Popcorn costs
+> them pennies and sells for eight dollars. That's not an accident — that IS the business. The movie
+> gets you in the door; the popcorn pays the rent. So next time you see that giant bucket, now you
+> know what it's really for. Follow for more tricks they hope you never notice."
+
+Readability grade ~6–7; structure = surprise → mechanism → number → "don't get fooled" → follow CTA.
+Production reuses the PD pipeline + Pino expression set + Remotion rig (0003 §Production).
