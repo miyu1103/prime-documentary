@@ -30,6 +30,25 @@
         "master"
       ]
     },
+    "voice_id": {
+      "comment": "Optional. Provider voice identifier (e.g. ElevenLabs). Ch1 narrator = Brian nPczCjzI2devNBz1zQrb.",
+      "type": "string"
+    },
+    "model_id": {
+      "comment": "Optional. Provider TTS model identifier (e.g. eleven_multilingual_v2).",
+      "type": "string"
+    },
+    "delivery_legend": {
+      "comment": "Optional. Human-readable explanation of the calm/building/intense delivery markers (decisions/0004).",
+      "type": "string"
+    },
+    "pronunciation_keys_global": {
+      "comment": "Optional. Episode-wide pronunciation guide applied across chunks.",
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "chunks": {
       "type": "array",
       "items": {
@@ -41,6 +60,20 @@
           "target_seconds"
         ],
         "properties": {
+          "delivery": {
+            "comment": "Optional. Dynamic-delivery marker (decisions/0004): calm baseline / building tension / intense peak.",
+            "enum": [
+              "calm",
+              "building",
+              "intense"
+            ]
+          },
+          "scene_id": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          },
           "chunk_id": {
             "type": "string"
           },
