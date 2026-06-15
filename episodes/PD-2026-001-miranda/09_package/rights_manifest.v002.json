@@ -1,0 +1,259 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-001-miranda",
+  "revision": "v002",
+  "generated_at": "2026-06-15T00:00:00Z",
+  "status": "complete",
+  "notes": "v002: replaced 3 unverified pd/ images with Midjourney-generated symbolic images (owner-generated, commercial plan). All rights blockers resolved. Corresponds to sample_v021.mp4.",
+
+  "assets": [
+
+    {
+      "asset_id": "AST-0001",
+      "type": "narration_audio",
+      "description": "Full narration vc_master_v002.mp3 — 23 voice chunks, slowed to atempo=0.856",
+      "file": "H:/pd-media/episodes/PD-2026-001-miranda/06_voice/master/vc_master_v002.mp3",
+      "producer": "ElevenLabs",
+      "voice_id": "commercial",
+      "license": "ElevenLabs commercial plan — generated audio is licensable for commercial use",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+
+    {
+      "asset_id": "AST-0002",
+      "type": "bgm",
+      "description": "Hook / bed track",
+      "file": "H:/pd-media/downloads/music/mus_20260614_hook_glass_air_bed_v1.mp3",
+      "producer": "Suno",
+      "license": "Suno Pro/Commercial plan — generated music is licensable for commercial use",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0003",
+      "type": "bgm",
+      "description": "Main body track",
+      "file": "H:/pd-media/downloads/music/mus_20260614_somber_ledger_of_ash_v1.mp3",
+      "producer": "Suno",
+      "license": "Suno Pro/Commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0004",
+      "type": "bgm",
+      "description": "Outro track",
+      "file": "H:/pd-media/downloads/music/mus_20260614_outro_last_frame_v2.mp3",
+      "producer": "Suno",
+      "license": "Suno Pro/Commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0005",
+      "type": "bgm",
+      "description": "Ambience / filler track",
+      "file": "H:/pd-media/downloads/music/mus_20260614_ambience_empty_hall_v1.mp3",
+      "producer": "Suno",
+      "license": "Suno Pro/Commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+
+    {
+      "asset_id": "AST-0010",
+      "type": "image",
+      "description": "Constitution / Fifth Amendment — used S002, S014",
+      "file": "remotion/public/approved/s002_s014_constitution_fifth_amendment_01_primary.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan — owner-generated, commercial use permitted",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0011",
+      "type": "image",
+      "description": "Phoenix 1963 arrest scene — used S003",
+      "file": "remotion/public/mj/s003_phoenix_arrest.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0012",
+      "type": "image",
+      "description": "Interrogation room — used S004",
+      "file": "remotion/public/approved/s004_interrogation_room_01_primary.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0013",
+      "type": "image",
+      "description": "Interrogation imbalance diagram — used S005",
+      "file": "remotion/public/mj/s005_interrogation_imbalance.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0014",
+      "type": "image",
+      "description": "Arrest record symbolic — used S006 (replaces Miranda fingerprint card; original had unconfirmed rights)",
+      "file": "remotion/public/mj/s006_arrest_record.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan — owner-generated 2026-06-15",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false,
+      "replaced_asset_note": "Replaced pd/miranda_fingerprints_1963.jpg (Arizona State Library copyright — not cleared for commercial use)"
+    },
+    {
+      "asset_id": "AST-0015",
+      "type": "image",
+      "description": "1960s courtroom illustration — used S007",
+      "file": "remotion/public/approved/s007_courtroom_1960s_01_primary.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0016",
+      "type": "image",
+      "description": "SCOTUS exterior — used S008, S011",
+      "file": "remotion/public/mj/s008_scotus_exterior.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0017",
+      "type": "image",
+      "description": "Four cases ascending SCOTUS steps — used S009 (replaces Miranda portrait 1967; original had AP copyright)",
+      "file": "remotion/public/mj/s009_four_cases_scotus.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan — owner-generated 2026-06-15",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false,
+      "replaced_asset_note": "Replaced pd/miranda_portrait_1967.jpg (AP copyright — not cleared for commercial use). Scene S009 shows 4 case names as typography; SCOTUS steps image fits context."
+    },
+    {
+      "asset_id": "AST-0018",
+      "type": "image",
+      "description": "Chief justice silhouette — used S010, S015 (replaces Earl Warren portrait; original had unconfirmed provenance)",
+      "file": "remotion/public/mj/s010_s015_chief_justice.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan — owner-generated 2026-06-15",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false,
+      "replaced_asset_note": "Replaced pd/earl_warren_chief_justice.jpg (provenance unconfirmed). No identifiable likeness — figure is back-turned silhouette in judicial robe. Complies with invariant 11."
+    },
+    {
+      "asset_id": "AST-0019",
+      "type": "image",
+      "description": "SCOTUS chamber interior — used S012",
+      "file": "remotion/public/mj/s012_scotus_chamber.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0020",
+      "type": "image",
+      "description": "Miranda rights card — used S013",
+      "file": "remotion/public/mj/s013_miranda_rights_card.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0021",
+      "type": "image",
+      "description": "Miranda warning card (approved) — used S016",
+      "file": "remotion/public/approved/s016_miranda_warning_card_01_primary.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0022",
+      "type": "image",
+      "description": "Miranda warning reading scene — used S017",
+      "file": "remotion/public/mj/s017_miranda_warning_reading.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0023",
+      "type": "image",
+      "description": "Retrial symbolic (approved) — used S018",
+      "file": "remotion/public/approved/s018_retrial_symbolic_01_primary.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0024",
+      "type": "image",
+      "description": "Miranda rights wall poster — used S019",
+      "file": "remotion/public/mj/s016_miranda_rights_wall.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0025",
+      "type": "image",
+      "description": "Courtroom trial scene — used S020",
+      "file": "remotion/public/mj/s007_courtroom_trial.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0026",
+      "type": "image",
+      "description": "Courtroom retrial — used S021 freeze filler, S022",
+      "file": "remotion/public/mj/s018_courtroom_retrial.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "AST-0027",
+      "type": "image",
+      "description": "Thumbnail background (dark prison cell, iron bars) — used in thumbnail only",
+      "file": "remotion/public/thumb_bg.png",
+      "producer": "Midjourney",
+      "license": "Midjourney commercial plan — owner-supplied 2026-06-15",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "needs_verification": false
+    },
+
+    {
+      "asset_id": "AST-0030",
+      "type": "text_source",
+      "description": "Miranda v. Arizona, 384 U.S. 436 (1966) — opinion quoted in script",
+      "reference": "https://www.courtlistener.com/opinion/107252/miranda-v-arizona/",
+      "license": "Public domain — U.S. Supreme Court opinion",
+      "needs_verification": false
+    }
+  ],
+
+  "verification_required": []
+}

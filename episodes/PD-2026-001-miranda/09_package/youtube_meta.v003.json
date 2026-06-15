@@ -1,9 +1,9 @@
 {
   "episode_id": "PD-2026-001-miranda",
-  "revision": "v002",
+  "revision": "v003",
   "source_doc": "episodes/PD-2026-001-miranda/09_publish/package.v002.md",
-  "status": "draft_pending_approval",
-  "video_file": "sample_v020.mp4",
+  "status": "pending_publish_approval",
+  "video_file": "sample_v021.mp4",
   "title": "Why Do Police Read You Your Rights?",
   "title_alternates": [
     "The Confession the Supreme Court Threw Out",
@@ -21,23 +21,12 @@
     {"index": 8, "timestamp": "8:49", "timestamp_sec": 529,  "title": "The twist: he won, then went back to prison"},
     {"index": 9, "timestamp": "9:28", "timestamp_sec": 568,  "title": "Why it still shapes every arrest"}
   ],
-  "chapter_notes": "Timestamps recalculated for v014 (slowed narration atempo=0.856, total 673s animatic). ColdOpen=20s, Opening=6s, offset=26s added to scene start times. Scenes mapped: S001→ch1(0:00 ColdOpen), S002→ch2(0:53), S003→ch3(1:41), S005→ch4(2:11), S009→ch5(4:26), S012→ch6(5:47), S013→ch7(6:10), S018→ch8(8:49), S019→ch9(9:28). Total video 12:00 (720s).",
   "tags": [
-    "miranda rights",
-    "miranda v arizona",
-    "you have the right to remain silent",
-    "supreme court",
-    "ernesto miranda",
-    "fifth amendment",
-    "miranda warning",
-    "police interrogation",
-    "landmark supreme court cases",
-    "us law explained",
-    "constitutional rights",
-    "criminal justice",
-    "history documentary",
-    "legal history",
-    "know your rights"
+    "miranda rights", "miranda v arizona", "you have the right to remain silent",
+    "supreme court", "ernesto miranda", "fifth amendment", "miranda warning",
+    "police interrogation", "landmark supreme court cases", "us law explained",
+    "constitutional rights", "criminal justice", "history documentary",
+    "legal history", "know your rights"
   ],
   "category": "Education",
   "language": "en-US",
@@ -74,30 +63,30 @@
       "backgroundSrc": "thumb_bg.png"
     },
     "background_src": "remotion/public/thumb_bg.png",
-    "background_note": "Midjourney — dark prison cell with iron bars, cold blue light, no person. Owner-supplied 2026-06-15.",
     "content_hash": "099f4612fdbd0182e32e6cbc7f6ebe38580bada21cafa0526e0de93bb5772192",
     "status": "rendered_pending_approval"
   },
   "safety_checklist": {
-    "ai_disclosure_set": "partial",
-    "ai_disclosure_notes": "symbolic_reconstruction labels required in video; not yet verified in sample_v011",
+    "ai_disclosure_set": true,
+    "ai_disclosure_notes": "Symbolic reconstruction label visible at 1:57 (S004). All 3 replacement images are Midjourney symbolic — no authentic-record confusion.",
     "not_made_for_kids": true,
     "no_legal_advice_disclaimer_present": true,
     "no_misinformation_claim_graded": "partial",
-    "no_misinformation_notes": "claim ledger exists (claims.v001.json) but full grade pass not completed",
-    "rights_manifest_complete": "partial",
-    "rights_manifest_notes": "opinion PDF (PD), portraits (Wikimedia PD), car_00004 (California Revealed PD), UN-35-53 excluded (wrong content). Music SFX: Suno commercial + ElevenLabs commercial. Rights manifest JSON not yet finalized.",
+    "no_misinformation_notes": "Claim ledger exists (claims.v001.json); full grade pass not completed but all claims cite 384 U.S. 436.",
+    "rights_manifest_complete": true,
+    "rights_manifest_notes": "rights_manifest.v002.json — all 27 assets cleared. Zero needs_verification items. 3 previously uncleared pd/ images replaced with Midjourney owner-generated images.",
     "title_thumbnail_content_match": true,
     "advertiser_friendly": true,
     "final_cut_hash_recorded": true,
-    "final_cut_hash_notes": "SHA256 of sample_v020.mp4. Short ending: NARR_TAIL=4s, ENDCARD=10s, BGM fade at narr end. Total 688.3s (11:28). Approval of publish must reference this exact hash.",
-    "final_cut_hash": "14348e8c7d16f4df168327d5a035fc6d00329d0ae4a9842080c3ab636fad3d29",
-    "final_cut_path": "H:/pd-media/episodes/PD-2026-001-miranda/07_edit/sample/sample_v020.mp4",
-    "final_cut_size_bytes": 407808423
+    "final_cut_hash": "20e926fb71c204ba40b5d6539f24d499b706cd820a215bc0b6d453758275d651",
+    "final_cut_path": "H:/pd-media/episodes/PD-2026-001-miranda/07_edit/sample/sample_v021.mp4",
+    "final_cut_size_bytes": 413859840,
+    "final_cut_notes": "v021: animatic re-rendered with 3 new Midjourney images (S006 arrest record, S009 four cases SCOTUS, S010/S015 chief justice silhouette). Duration unchanged at 688.3s."
   },
-  "publish_gate": "blocked",
-  "publish_gate_blockers": [
-    "3 images need source URL confirmation before upload: AST-0014 (Miranda fingerprints), AST-0017 (Miranda portrait 1967), AST-0018 (Earl Warren portrait) — see rights_manifest.v001.json"
+  "publish_gate": "open",
+  "publish_gate_blockers": [],
+  "pending_approvals_required": [
+    "APR-0004: owner publish approval for sample_v021.mp4 (hash 20e926fb...) required before upload"
   ],
   "generated_at": "2026-06-15T00:00:00Z"
 }

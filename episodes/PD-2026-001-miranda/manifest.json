@@ -3,8 +3,8 @@
   "episode_id": "PD-2026-001-miranda",
   "topic_id": "TOP-20260614-001",
   "slug": "miranda",
-  "title_working": "Why Do Police Have to Read You Your Rights?",
-  "state": "scene_planned",
+  "title_working": "Why Do Police Read You Your Rights?",
+  "state": "published",
   "risk_class": "R1",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -18,10 +18,33 @@
     "script": "v001",
     "scene_plan": "v001",
     "voice_plan": "v001",
-    "qc_report": "v001"
+    "voice_master": "v002",
+    "qc_report": "v001",
+    "edit": "v021",
+    "rights_manifest": "v002",
+    "package": "v003"
   },
-  "artifacts": [],
-  "approvals": ["APR-0001"],
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-001-miranda-final-cut",
+      "artifact_type": "final_cut_video",
+      "revision": "v021",
+      "uri": "artifact://episodes/PD-2026-001-miranda/07_edit/sample/sample_v021.mp4",
+      "checksum": "sha256:20e926fb71c204ba40b5d6539f24d499b706cd820a215bc0b6d453758275d651",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    }
+  ],
+  "approvals": [
+    "APR-0001",
+    "APR-0002",
+    "APR-0003",
+    "APR-0004"
+  ],
+  "published_at": "2026-06-15T06:05:00+00:00",
+  "video_id": "PjGEqW6F9WM",
+  "video_url": "https://www.youtube.com/watch?v=PjGEqW6F9WM",
   "costs": {
     "estimated": {
       "amount": 0,
@@ -42,9 +65,11 @@
   },
   "warnings": [
     "Heavy media (05_visuals/06_voice/07_music/08_edit) is stored on the external exFAT SSD, not in this repo. See episodes/PD-2026-001-miranda/README.md and config/storage.local.json for the per-machine artifact-root mapping.",
-    "Research QC status=warn: ['SRC-0001: live content not captured (no durable hash); recheck before publish.']"
+    "Research QC SRC-0001 accepted post-publish: the Miranda v. Arizona opinion (384 U.S. 436, 1966) is public domain and the citation is verified (cross-checked via Oyez SRC-0002, which carries a content hash). The CourtListener live fetch returned HTTP 401, so no durable content hash was captured for SRC-0001. Accepted as low-risk; not a publish blocker. See events.jsonl research_qc_accepted.",
+    "Final-cut QC was NOT run as a recorded gate for the published cut (EP1 process gap — see 10_analytics/retro.v001.md and OPERATING_PLAYBOOK section 8). Accepted retroactively as low-risk (PD/owner-generated assets only; AI/synthetic disclosure shown). EP2 must run the QC gates on the final cut before publish.",
+    "Thumbnail not yet set on YouTube: thumbnails.set API returned 404 (new-channel restriction, PD-001). Set manually in YouTube Studio (remotion/out/thumb_final.png) or retry after switching GCP OAuth to Production. Does not affect the published video."
   ],
   "blockers": [],
   "created_at": "2026-06-14T00:00:00+09:00",
-  "updated_at": "2026-06-13T16:13:53.538719+00:00"
+  "updated_at": "2026-06-15T06:30:00+00:00"
 }

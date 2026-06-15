@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0004",
+  "episode_id": "PD-2026-001-miranda",
+  "target_type": "publish",
+  "target_id": "sample_v021",
+  "target_revision": "v021",
+  "decision": "approved",
+  "requested_at": "2026-06-15T00:00:00Z",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-15T00:00:00Z",
+  "decided_by": "owner",
+  "notes": "Owner approved sample_v021.mp4 for public upload. Rights blockers resolved: 3 uncleared pd/ images replaced with Midjourney owner-generated images (S006 arrest record, S009 four cases SCOTUS, S010/S015 chief justice silhouette). rights_manifest.v002.json — zero needs_verification items.",
+  "approved_artifacts": [
+    {
+      "artifact": "H:/pd-media/episodes/PD-2026-001-miranda/07_edit/sample/sample_v021.mp4",
+      "sha256": "20e926fb71c204ba40b5d6539f24d499b706cd820a215bc0b6d453758275d651",
+      "size_bytes": 413859840,
+      "duration_sec": 688.3
+    }
+  ],
+  "rights_manifest_ref": "episodes/PD-2026-001-miranda/09_package/rights_manifest.v002.json",
+  "youtube_meta_ref": "episodes/PD-2026-001-miranda/09_package/youtube_meta.v003.json",
+  "conditions": [
+    "Upload must use exact file matching the SHA256 above.",
+    "Initial visibility must be private. Public scheduling requires separate schedule confirmation.",
+    "Channel used must be confirmed as Prime Documentary English channel."
+  ],
+  "expires_at": null
+}

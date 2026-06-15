@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0003",
+  "episode_id": "PD-2026-001-miranda",
+  "target_type": "first_cut",
+  "target_id": "sample_v020",
+  "target_revision": "v020",
+  "decision": "approved",
+  "requested_at": "2026-06-15T00:00:00Z",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-15T00:00:00Z",
+  "decided_by": "owner",
+  "notes": "Owner watched sample_v020.mp4 and approved as first cut. Duration 688.3s (11:28). All 22 animatic scenes have real images with Ken Burns. SRT subtitles burned in. BGM throughout. AI disclosure label ('Reconstruction — not authentic footage') verified visible at 1:57 (S004). Short cool ending with 4s BGM tail + 10s endcard.",
+  "approved_artifacts": [
+    {
+      "artifact": "H:/pd-media/episodes/PD-2026-001-miranda/07_edit/sample/sample_v020.mp4",
+      "sha256": "14348e8c7d16f4df168327d5a035fc6d00329d0ae4a9842080c3ab636fad3d29",
+      "size_bytes": 407808423,
+      "duration_sec": 688.3
+    }
+  ],
+  "conditions": [
+    "Approval is invalidated if video file changes.",
+    "Public scheduling still requires separate publish-approval (APR-0004) after rights manifest and AI disclosure are finalized."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-001-miranda/09_package/youtube_meta.v002.json"
+}

@@ -281,6 +281,30 @@
     "updated_at": {
       "type": "string",
       "format": "date-time"
+    },
+    "published_at": {
+      "comment": "Optional. Set when the episode reaches the published state. UTC date-time of public availability.",
+      "type": "string",
+      "format": "date-time"
+    },
+    "video_id": {
+      "comment": "Optional. Platform video identifier (e.g. YouTube videoId) once uploaded.",
+      "type": "string"
+    },
+    "video_url": {
+      "comment": "Optional. Canonical public URL of the published video.",
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "revision": {
+      "type": "string",
+      "pattern": "^v[0-9]{3}$"
+    },
+    "uri": {
+      "comment": "Logical artifact URI (not an OS-absolute path). See .claude/rules/14-cross-platform-paths.md.",
+      "type": "string",
+      "minLength": 1
     }
   }
 }
