@@ -13,9 +13,8 @@ export const BRAND = {
     white: '#F5F7FA',
   },
   font: {
-    // System stack for now; swap to the licensed brand font when available.
-    display: '"Arial Black", "Helvetica Neue", Arial, sans-serif',
-    body: '"Helvetica Neue", Arial, sans-serif',
+    display: 'Impact, "Arial Black", Arial, sans-serif',
+    body: '"Trebuchet MS", "Helvetica Neue", Arial, sans-serif',
   },
   video: {fps: 30, width: 1920, height: 1080},
   thumb: {width: 1280, height: 720},

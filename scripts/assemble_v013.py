@@ -28,13 +28,13 @@ OPENING_MP4   = REMOTION / "out" / "opening.mp4"
 ANIMATIC_MP4  = REMOTION / "out" / "animatic_motion.mp4"
 NARR_MP3      = Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_voice\master\vc_master_v002.mp3")
 SRT_IN        = EDIT_DIR / "subs_vc_v002.srt"
-OUT_MP4       = EDIT_DIR / "sample_v013.mp4"
+OUT_MP4       = EDIT_DIR / "sample_v021.mp4"
 
 HOOK_SEC      = 20.0
 OPENING_SEC   =  6.0
-ENDCARD_SEC   = 20.0
-NARR_TAIL_SEC = 26.0   # ナレーション終了後のBGMのみ区間（エンドカード直前の余韻）
-ANIM_SAFE_END = 615.0  # アニマティック安全末端（t>=625s でイントロループ発生）
+ENDCARD_SEC   = 10.0
+NARR_TAIL_SEC =  4.0   # ナレーション終了後の短い余韻（すぐフェードアウト）
+ANIM_SAFE_END = 643.0  # S023(チャンネル登録カード)開始直前まで — アニマティック再レンダ後 total=674s
 BGM_VOL       = 0.18
 
 BGM_TRACKS = [
@@ -137,32 +137,37 @@ def main() -> None:
         str(main_mp4),
     ], f"trim animatic {anim_trim:.1f}s")
 
-    # ── 2b. Dark filler: narration tail over last chapter's atmosphere ─────────
+    # ── 2b. Filler: アニマティック最終フレームのフリーズ (黒画面回避) ──────────
+    last_frame = tmp / "last_frame.png"
+    run([
+        FFMPEG, "-y",
+        "-sseof", "-0.5", "-i", str(main_mp4),
+        "-frames:v", "1", str(last_frame),
+    ], "extract last frame")
     filler_mp4 = tmp / "filler.mp4"
     run([
         FFMPEG, "-y",
-        "-f", "lavfi",
-        "-i", f"color=color=0x0A0A0C:s=1920x1080:r=30:d={freeze_dur:.3f}",
+        "-loop", "1", "-i", str(last_frame),
+        "-t", f"{freeze_dur:.3f}",
         "-c:v", "libx264", "-preset", "fast", "-crf", "20", "-an",
         str(filler_mp4),
-    ], f"dark filler {freeze_dur:.1f}s")
+    ], f"freeze filler {freeze_dur:.1f}s")
 
     # ── 3. Video concat: ColdOpen + Opening + Main + Filler + Endcard ─────────
-    concat_txt = tmp / "concat.txt"
-    concat_txt.write_text(
-        f"file '{COLD_OPEN_MP4.as_posix()}'\n"
-        f"file '{OPENING_MP4.as_posix()}'\n"
-        f"file '{main_mp4.as_posix()}'\n"
-        f"file '{filler_mp4.as_posix()}'\n"
-        f"file '{endcard.as_posix()}'\n",
-        encoding="utf-8",
-    )
+    # filter_complex concat を使う: cold_open/opening は音声ストリームを持つが
+    # main/filler/endcard は映像のみ。concat デマルチプレクサはストリーム数の
+    # 不一致で途中停止するため filter_complex で明示的に v:0 のみ結合する。
     video_raw = tmp / "video_raw.mp4"
+    segs = [COLD_OPEN_MP4, OPENING_MP4, main_mp4, filler_mp4, endcard]
+    inputs = [arg for s in segs for arg in ("-i", str(s))]
+    n = len(segs)
+    fc = "".join(f"[{i}:v:0]" for i in range(n)) + f"concat=n={n}:v=1:a=0[vout]"
     run([
         FFMPEG, "-y",
-        "-f", "concat", "-safe", "0",
-        "-i", str(concat_txt),
-        "-c:v", "copy", "-an",
+        *inputs,
+        "-filter_complex", fc,
+        "-map", "[vout]",
+        "-c:v", "libx264", "-preset", "fast", "-crf", "18", "-an",
         str(video_raw),
     ], "video concat")
 
@@ -198,7 +203,7 @@ def main() -> None:
     # BGM を apad で total_dur+2 まで延長し amix duration=longest で結合
     # → ナレーション終了後もBGMが継続、エンドカードまで音途切れなし
     pad_to  = int(total_dur) + 2
-    fade_st = total_dur - 3.5
+    fade_st = narr_dur + NARR_TAIL_SEC - 3.0  # ナレーション終了直後からフェードアウト
     tmp_out = OUT_MP4.with_suffix(".tmp.mp4")
     run([
         FFMPEG, "-y",

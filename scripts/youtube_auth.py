@@ -28,8 +28,9 @@ import urllib.request
 from pathlib import Path
 
 SCOPES = (
+    "https://www.googleapis.com/auth/youtube "
     "https://www.googleapis.com/auth/youtube.upload "
-    "https://www.googleapis.com/auth/youtube.readonly"
+    "https://www.googleapis.com/auth/youtube.force-ssl"
 )
 AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth"
 TOKEN_URL = "https://oauth2.googleapis.com/token"
