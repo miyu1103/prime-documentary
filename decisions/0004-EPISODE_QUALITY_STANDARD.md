@@ -42,6 +42,15 @@ first-cut (rule 16) unchanged.
 - **Several hero motion clips per episode** for the biggest beats.
 - Maps, diagrams, timelines **animate** (draw-on, travel, pulse) — never static.
 
+**Animation — meaningful and layered (owner: maximize motion from EP2):**
+- Animation must **explain or emphasize**, not just decorate (Kurzgesagt-style purposeful motion).
+- **Composite animated layers ON TOP of images/footage** — don't leave a still bare. Overlay:
+  drifting particles / light / dust / smoke, animated callouts·arrows·underlines·highlights, kinetic
+  text over the shot, **2.5D parallax** (cut the still into fg/mid/bg and move them at different
+  speeds), masked reveals, glows on the focal point.
+- Aim for **as much (purposeful) motion as possible** — layered motion on a still often beats a flat
+  clip. Combine: real/AI image base + Remotion animated overlay.
+
 **Rhythm & transitions:**
 - Vary cut length: mostly 4–8s, but **punctuate key beats with a 0.5–1s full-frame "punch" insert**
   (a number, a name, a reveal image) + an SFX hit — for emphasis and rhythm. Don't keep a uniform
@@ -64,6 +73,14 @@ only for what was never recorded, always labelled (invariant 11). Every real ass
    scenes.
 4. **SFX** — on **every transition** and **every on-screen-text reveal**, plus impacts/risers on
    beats. Mix: VO 0 ref · music −18…−22 LUFS · ambience ≈ −30 · master ≈ −14 LUFS.
+
+**Narration delivery — dynamic, with 抑揚 (owner direction):**
+- **Calm, measured, almost flat baseline** for exposition → **lift to emotional/intense at the
+  climax, the twist, and the payoff.** Not monotone, not melodramatic.
+- Implementation: mark each voice-plan chunk with an intended intensity (**calm / building /
+  intense**); vary the TTS expressiveness per chunk (steadier on exposition, more expressive on
+  climaxes — e.g. ElevenLabs stability/style per chunk or emotional controls), and pick the take
+  that matches. Music/SFX/ambience **swell in sync** with the narration's emotional lifts.
 
 ## E2. Abundance floors (owner: use these heavily — "バンバン")
 
