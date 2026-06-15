@@ -52,8 +52,9 @@ did win 9–0 and was acquitted on retrial. Keyword front-loading: "lawyer", "Su
 ### Concept 2 — "The Pencil vs. the Court"
 - **Focal point:** an extreme close-up of a worn pencil and a hand-printed letter on prison paper,
   the marble Supreme Court facade looming, out of focus, behind it. Scale contrast = the hook.
-- **Brand props:** `kicker: "1963"`, `line1: "A pencil."`, `line2: "vs. the Supreme Court."`,
+- **Brand props:** `kicker: "1963"`, `line1: "A pencil."`, `line2: "vs. the highest court."`,
   `sub: "The letter that rewrote the rules"`, `symbol: "none"`.
+  (line2 = "the highest court", NOT "the Supreme Court", so it does not repeat the chosen title's words.)
 - **Pairs with title:** Primary A ("He Had No Lawyer — So He Beat the Supreme Court").
 - **MJ background brief:** `extreme close-up of an old yellow pencil resting on a handwritten letter
   on lined paper, the white marble U.S. Supreme Court building blurred in the background, dramatic
@@ -113,6 +114,15 @@ how the law works and is not legal advice.
 > (EP1 lesson: don't hand-time chapters). Keep first chapter at 0:00.
 
 ---
+
+## SELECTED for A/B (owner, 2026-06-16)
+- **Main title:** `He Had No Lawyer — So He Beat the Supreme Court`
+- **Thumbnails for A/B:** Concept 2 ("The Pencil", line2 adjusted to "vs. the highest court") + Concept 3 ("ALONE").
+- **Pairing note:** Concept 3 words ("ALONE / against the state") complement the title (no overlap);
+  Concept 2 line2 changed to "the highest court" to avoid repeating the title's "Supreme Court".
+- **Owner to generate (Midjourney):** backgrounds for Concept 2 + Concept 3 (briefs above).
+- **Title/thumbnail APR:** recorded AFTER the backgrounds are generated and the thumbnails are rendered
+  via the brand component and the owner confirms the final visuals.
 
 ## Tags (draft)
 `gideon v wainwright, right to counsel, public defender, supreme court, sixth amendment, clarence

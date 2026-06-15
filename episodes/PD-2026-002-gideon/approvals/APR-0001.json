@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-002-gideon",
+  "target_type": "script",
+  "target_id": "script.en",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-16T00:00:00+00:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-16T00:00:00+00:00",
+  "decided_by": "owner",
+  "notes": "Owner approved Gideon script v001 at the script gate (explicit selection 'approve as-is' in the structured prompt). Bound to content_hash sha256:949fc1977ee43609222a1c19c119c9586f40372477f8135d4139cc8afc5290f1 of script.en.v001.md — re-approval required if the script revision/hash changes (rules/12). NOTE: research QC is still 'warn' (live CourtListener content_hash pending adapter generalization); recheck before publish, not a script-gate blocker.",
+  "conditions": [
+    "Re-verify Clarence Earl Gideon real-person facts (CLM-0004, CLM-0007) phrasing remains accurate before publish.",
+    "Capture durable CourtListener/Oyez content hashes (generalize run_research adapter for case 372 U.S. 335) before publish to flip research QC warn->pass.",
+    "Derive script.annotated (SPN spans -> CLM links) for production provenance from this locked text."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-002-gideon/03_script/script.en.v001.md"
+}

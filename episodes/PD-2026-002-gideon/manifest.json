@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260615-002",
   "slug": "gideon",
   "title_working": "He Had No Lawyer — So He Beat the Supreme Court",
-  "state": "script_draft",
+  "state": "script_verified",
   "risk_class": "R1",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -18,7 +18,9 @@
     "script": "v001"
   },
   "artifacts": [],
-  "approvals": [],
+  "approvals": [
+    "APR-0001"
+  ],
   "costs": {
     "estimated": {
       "amount": 0,
@@ -39,10 +41,10 @@
   },
   "warnings": [
     "Research live-verification pending: SRC-0001/0002/0003 have no content_hash/verified_at yet. run_research.py is Miranda-specific; generalize the research adapter (per-case CourtListener cluster + Oyez URL) and run with COURTLISTENER_TOKEN to flip research QC warn->pass before publish.",
-    "Script v001 is a DRAFT awaiting owner approval gate (no APR yet). Do not lock storyboard/assets until script is approved.",
-    "Packaging concept v001 (title + thumbnail) awaiting owner approval gate (no APR yet)."
+    "Title/thumbnail SELECTED by owner (title 'He Had No Lawyer — So He Beat the Supreme Court'; thumbnail concepts 2+3 for A/B) but NOT yet APR-approved: Midjourney backgrounds + thumbnail render + owner confirmation required before the title/thumbnail APR.",
+    "Final-cut QC + rights manifest are mandatory publish gates (EP1 lesson): run before any publish."
   ],
   "blockers": [],
   "created_at": "2026-06-15T04:20:31.666942+00:00",
-  "updated_at": "2026-06-15T07:30:00+00:00"
+  "updated_at": "2026-06-16T00:30:00+00:00"
 }
