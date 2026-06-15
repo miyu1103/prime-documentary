@@ -68,13 +68,41 @@ def _free_port() -> int:
         return s.getsockname()[1]
 
 
+def _from_client_json() -> tuple[str, str] | None:
+    """Fallback: read client_id/secret from a Google-downloaded OAuth client JSON
+    (client_secret*.json) placed in the repo root. Saves the owner from hunting for
+    the secret string in the console."""
+    root = Path(__file__).resolve().parent.parent
+    candidates = sorted(root.glob("client_secret*.json")) + sorted(
+        root.glob("*apps.googleusercontent.com.json")
+    )
+    for path in candidates:
+        try:
+            data = json.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        node = data.get("installed") or data.get("web") or {}
+        cid, csec = node.get("client_id"), node.get("client_secret")
+        if cid and csec:
+            print(f"(using OAuth client from {path.name})")
+            return cid, csec
+    return None
+
+
 def main() -> int:
     env = _read_env()
     client_id = env.get("YOUTUBE_CLIENT_ID")
     client_secret = env.get("YOUTUBE_CLIENT_SECRET")
     if not client_id or not client_secret:
-        print("ERROR: set YOUTUBE_CLIENT_ID and YOUTUBE_CLIENT_SECRET in .env first "
-              "(see this script's header for the Google Cloud steps).")
+        from_json = _from_client_json()
+        if from_json:
+            client_id, client_secret = from_json
+    if not client_id or not client_secret:
+        print("ERROR: no OAuth client found. Do ONE of:\n"
+              "  (a) set YOUTUBE_CLIENT_ID and YOUTUBE_CLIENT_SECRET in .env, or\n"
+              "  (b) download the OAuth client JSON from Google Cloud Console\n"
+              "      (Clients -> your desktop client -> Download JSON) and save it in the\n"
+              "      project root as client_secret.json — then re-run this script.")
         return 2
 
     port = _free_port()
