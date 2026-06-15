@@ -29,6 +29,9 @@ episodes/*/08_qc/reviews/*.draft.*.json
 episodes/*/08_qc/reviews/backups/
 review/meta.json
 
+# Local Claude Code settings (per-machine only, never commit)
+.claude/settings.local.json
+
 # Node / Remotion
 node_modules/
 remotion/out/

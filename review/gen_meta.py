@@ -15,6 +15,10 @@ BRAND_TS = REPO_ROOT / "remotion" / "src" / "brand.ts"
 SCENE_PLAN = REPO_ROOT / "episodes" / "PD-2026-001-miranda" / "04_scenes" / "scene_plan.v001.json"
 # Prefer the full-res render; fall back to the half-res preview if that's all that exists.
 MEDIA_CANDIDATES = [
+    Path(r"H:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\sample_v011.mp4"),
+    Path(r"H:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\sample_v010.mp4"),
+    REPO_ROOT / "remotion" / "out" / "proof.mp4",
+    REPO_ROOT / "remotion" / "out" / "animatic_motion.mp4",
     REPO_ROOT / "remotion" / "out" / "miranda-animatic.mp4",
     REPO_ROOT / "remotion" / "out" / "animatic_miranda.mp4",
 ]

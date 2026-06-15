@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0.0",
+  "review_id": "REV-PD-2026-001-miranda-ANIMATIC-001",
+  "episode_id": "PD-2026-001-miranda",
+  "episode_slug": "miranda",
+  "composition_id": "Animatic",
+  "source_revision": {
+    "script": "v001",
+    "scene_plan": "v001",
+    "animatic": "v001"
+  },
+  "review_state": "second_pass",
+  "language": {
+    "input": "ja-JP",
+    "execution": "en-US"
+  },
+  "player_state": {
+    "fps": 30,
+    "duration_frames": 22350,
+    "duration_seconds": 745,
+    "current_frame": 4251,
+    "current_seconds": 141.683379,
+    "playback_rate": 1
+  },
+  "session": {
+    "started_at": "2026-06-15T03:30:55+09:00",
+    "updated_at": "2026-06-14T19:43:23.255Z",
+    "completed_at": null,
+    "last_saved_at": "2026-06-15T04:43:23+09:00"
+  },
+  "draft": {
+    "active": false,
+    "category": null,
+    "severity": null,
+    "original_comment_ja": "",
+    "timecode": null,
+    "frame": null,
+    "seconds": null,
+    "updated_at": null
+  },
+  "markers": [
+    {
+      "marker_id": "MRK-0001",
+      "marker_type": "boring",
+      "severity": null,
+      "frame": 18510,
+      "seconds": 617.011583,
+      "timecode": "00:10:17.012",
+      "fps": 30,
+      "scene_id": null,
+      "note_ja": null,
+      "created_at": "2026-06-14T18:32:12.740Z"
+    },
+    {
+      "marker_id": "MRK-0002",
+      "marker_type": "unclear",
+      "severity": null,
+      "frame": 18572,
+      "seconds": 619.075502,
+      "timecode": "00:10:19.076",
+      "fps": 30,
+      "scene_id": null,
+      "note_ja": null,
+      "created_at": "2026-06-14T18:32:14.804Z"
+    },
+    {
+      "marker_id": "MRK-0003",
+      "marker_type": "blocker",
+      "severity": "blocker",
+      "frame": 22351,
+      "seconds": 745.045333,
+      "timecode": "00:12:25.045",
+      "fps": 30,
+      "scene_id": null,
+      "note_ja": null,
+      "created_at": "2026-06-14T18:33:14.465Z"
+    },
+    {
+      "marker_id": "MRK-0004",
+      "marker_type": "blocker",
+      "severity": "blocker",
+      "frame": 22351,
+      "seconds": 745.045333,
+      "timecode": "00:12:25.045",
+      "fps": 30,
+      "scene_id": null,
+      "note_ja": null,
+      "created_at": "2026-06-14T18:33:16.249Z"
+    }
+  ],
+  "comments": [
+    {
+      "comment_id": "CMT-0001",
+      "marker_id": null,
+      "category": "pacing",
+      "severity": "minor",
+      "frame": 19534,
+      "seconds": 651.135596,
+      "timecode": "00:10:51.136",
+      "fps": 30,
+      "scene_id": null,
+      "nearby_reference": null,
+      "original_comment_ja": "音声がないよ",
+      "instruction_en": null,
+      "translation_status": "pending",
+      "status": "open",
+      "created_at": "2026-06-14T18:32:46.864Z",
+      "updated_at": "2026-06-14T18:32:46.865Z"
+    },
+    {
+      "comment_id": "CMT-0002",
+      "marker_id": null,
+      "category": "pacing",
+      "severity": "minor",
+      "frame": 8984,
+      "seconds": 299.456409,
+      "timecode": "00:04:59.456",
+      "fps": 30,
+      "scene_id": null,
+      "nearby_reference": null,
+      "original_comment_ja": "オープニングがしょぼいし早い\nもう少しおしゃれに\n長めでいい",
+      "instruction_en": null,
+      "translation_status": "pending",
+      "status": "open",
+      "created_at": "2026-06-14T19:30:57.097Z",
+      "updated_at": "2026-06-14T19:30:57.097Z"
+    },
+    {
+      "comment_id": "CMT-0003",
+      "marker_id": null,
+      "category": "pacing",
+      "severity": "minor",
+      "frame": 4251,
+      "seconds": 141.683379,
+      "timecode": "00:02:21.683",
+      "fps": 30,
+      "scene_id": null,
+      "nearby_reference": null,
+      "original_comment_ja": "オープニングのロゴが小さいからもっと大きくして。\nマークだけでいい\n四角い画像は素材をそのままつかってるから加工して\n\n字幕とナレーションが完璧にあってない\n見ていて違和感があるから\n徹底的に一致させて",
+      "instruction_en": null,
+      "translation_status": "pending",
+      "status": "open",
+      "created_at": "2026-06-14T19:43:23.254Z",
+      "updated_at": "2026-06-14T19:43:23.254Z"
+    }
+  ],
+  "state_history": [
+    {
+      "from": "not_started",
+      "to": "first_pass",
+      "changed_at": "2026-06-14T18:32:09.559Z",
+      "reason": "owner_action"
+    },
+    {
+      "from": "first_pass",
+      "to": "second_pass",
+      "changed_at": "2026-06-14T19:31:30.849Z",
+      "reason": "owner_action"
+    }
+  ],
+  "save_status": {
+    "last_result": null,
+    "last_error": null
+  }
+}

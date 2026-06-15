@@ -28,23 +28,29 @@ export const KineticType: React.FC<{
     >
       {lines.map((l, i) => {
         const local = frame - l.at;
-        const enter = spring({frame: local, fps, config: {damping: 200}});
-        const y = interpolate(enter, [0, 1], [40, 0]);
+        const enter = spring({frame: local, fps, config: {damping: 18, stiffness: 120, mass: 0.7}});
+        const dir = i % 2 === 0 ? 1 : -1;
+        const y   = interpolate(enter, [0, 1], [60, 0]);
+        const x   = interpolate(enter, [0, 1], [dir * 40, 0]);
+        const sc  = interpolate(enter, [0, 1], [0.82, 1]);
         return (
           <div
             key={i}
             style={{
-              transform: `translateY(${y}px)`,
-              opacity: enter,
+              transform: `translate(${x}px, ${y}px) scale(${sc})`,
+              opacity: Math.min(enter * 1.5, 1),
               color: l.emphasis ? BRAND.color.gold : BRAND.color.white,
               fontFamily: BRAND.font.display,
               fontWeight: 900,
-              fontSize: l.emphasis ? 84 : 58,
+              fontSize: l.emphasis ? 88 : 62,
               lineHeight: 1.05,
               letterSpacing: -1,
               textAlign: align === 'center' ? 'center' : 'left',
               maxWidth: '85%',
               textTransform: 'uppercase',
+              textShadow: l.emphasis
+                ? `0 0 40px ${BRAND.color.gold}88`
+                : `0 2px 16px rgba(0,0,0,0.6)`,
             }}
           >
             {l.text}
