@@ -87,9 +87,14 @@ State machine (CLAUDE.md §9). **Drive transitions with `pd-run-pipeline` / `pd-
   on a mini-cliffhanger) → **ending** (payoff + recap + genuine next-episode tease).
 - **Motion:** **no static slides** — every shot moves (B-roll / motion clip / strong Ken-Burns-parallax
   on a detailed still / animated graphic). **Visual change every 4–8s** (90–150 shots).
+- **Animation — meaningful & layered:** explains/emphasizes (not decorative); **composite animated
+  layers ON TOP of images/footage** (particles, callouts/arrows/highlights, kinetic text, 2.5D
+  parallax cutouts, masked reveals, focal glows). Never leave a still bare. Maximize purposeful motion.
 - **Real-first** inserts wherever real material exists.
 - **Sound = four layers always:** narration (top) + music bed (−18…−22 LUFS, ducked) + **continuous
   ambience** (never silent) + **SFX on every transition & on-screen-text reveal** (master ≈ −14 LUFS).
+- **Narration delivery is dynamic (抑揚):** calm, measured baseline → emotional/intense at the climax,
+  twist and payoff (mark each chunk calm/building/intense; vary TTS expressiveness; music swells in sync).
 - **Editing rhythm:** vary cut length; **0.5–1s punch inserts + SFX** on key beats; transitions tied
   to meaning; **restraint = premium** (no decorative effect spam).
 - **Abundance floors / 12 min:** ≥8–12 real inserts · ≥6–10 motion clips · animate every
