@@ -39,6 +39,11 @@ first-cut (rule 16) unchanged.
 - **More images:** target **2–4 distinct visuals per scene** (not one card per paragraph).
 - **Source priority per shot:** real PD footage (where it exists) → AI **motion clip** for hero beats
   (Runway / Midjourney-animate) → AI still **with** motion → Remotion graphic (data/typography).
+- **Premium-not-cheap (see `docs/CINEMATIC_PROMPT_GUIDE.md`):** detailed **cinematic source** +
+  **SUBTLE controlled motion** (big AI motion warps/morphs = the "cheap" tell) + **brand grade**.
+  **Diversify motion** — depth-parallax (free, default for static subjects) / MJ-animate / Runway /
+  SVD-AnimateDiff / Remotion — don't rely on one tool. Write cinematic prompts (subject+lens+lighting+
+  grade), not generic ones.
 - **Several hero motion clips per episode** for the biggest beats.
 - Maps, diagrams, timelines **animate** (draw-on, travel, pulse) — never static.
 

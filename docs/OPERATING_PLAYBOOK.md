@@ -90,6 +90,10 @@ State machine (CLAUDE.md §9). **Drive transitions with `pd-run-pipeline` / `pd-
 - **Animation — meaningful & layered:** explains/emphasizes (not decorative); **composite animated
   layers ON TOP of images/footage** (particles, callouts/arrows/highlights, kinetic text, 2.5D
   parallax cutouts, masked reveals, focal glows). Never leave a still bare. Maximize purposeful motion.
+- **Premium AI assets (see `docs/CINEMATIC_PROMPT_GUIDE.md`):** cinematic detailed source + **subtle
+  controlled** motion (big AI motion warps = cheap) + brand grade; **diversify** motion across
+  depth-parallax / MJ-animate / Runway / SVD / Remotion (don't lean on Runway alone); write
+  cinematic prompts (subject + lens + lighting + grade), not generic ones.
 - **Real-first** inserts wherever real material exists.
 - **Sound = four layers always:** narration (top) + music bed (−18…−22 LUFS, ducked) + **continuous
   ambience** (never silent) + **SFX on every transition & on-screen-text reveal** (master ≈ −14 LUFS).
