@@ -20,6 +20,9 @@ runs/
 *.tmp
 secrets/
 credentials/
+# Google OAuth client secret files (downloaded from Cloud Console — never commit)
+client_secret*.json
+*apps.googleusercontent.com.json
 episodes/*/05_visuals/raw/
 episodes/*/06_audio/narration/raw/
 episodes/*/07_edit/cache/
