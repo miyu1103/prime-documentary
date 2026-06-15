@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0.0",
+  "research_plan_id": "RP-PD-2026-002-gideon",
+  "episode_id": "PD-2026-002-gideon",
+  "revision": "v001",
+  "generated_at": "2026-06-15T00:00:00Z",
+  "central_question": "How did one handwritten prison petition force the US Supreme Court to guarantee appointed counsel for all felony defendants — and what system did that ruling actually create?",
+  "subquestions": [
+    {
+      "id": "SQ1",
+      "question": "What exactly did Gideon v. Wainwright hold?",
+      "importance": "critical"
+    },
+    {
+      "id": "SQ2",
+      "question": "On what constitutional basis — which Amendment(s) and which doctrine?",
+      "importance": "critical"
+    },
+    {
+      "id": "SQ3",
+      "question": "What was Clarence Earl Gideon charged with and what happened at his original 1961 trial?",
+      "importance": "major"
+    },
+    {
+      "id": "SQ4",
+      "question": "Who was his appointed attorney on retrial (Abe Fortas) and what was the result?",
+      "importance": "major"
+    },
+    {
+      "id": "SQ5",
+      "question": "What prior precedent did Gideon overturn (Betts v. Brady, 1942) and why?",
+      "importance": "major"
+    },
+    {
+      "id": "SQ6",
+      "question": "Was the decision unanimous, and who wrote the opinion (Hugo Black)?",
+      "importance": "major"
+    },
+    {
+      "id": "SQ7",
+      "question": "What system did the ruling create — public defender offices, funding, caseload pressure?",
+      "importance": "supporting"
+    },
+    {
+      "id": "SQ8",
+      "question": "How does the right to counsel connect forward to Miranda (right in practice vs. right in warning)?",
+      "importance": "supporting"
+    }
+  ],
+  "primary_sources": [
+    {
+      "id": "PS-001",
+      "description": "Gideon v. Wainwright, 372 U.S. 335 (1963) — full opinion",
+      "url": "https://www.courtlistener.com/opinion/106456/gideon-v-wainwright/",
+      "rights": "public_domain",
+      "verified_at": null
+    },
+    {
+      "id": "PS-002",
+      "description": "Oyez case summary — oral argument audio and summary",
+      "url": "https://www.oyez.org/cases/1962/155",
+      "rights": "public_domain",
+      "verified_at": null
+    },
+    {
+      "id": "PS-003",
+      "description": "Betts v. Brady, 316 U.S. 455 (1942) — overruled precedent",
+      "url": "https://www.courtlistener.com/opinion/103771/betts-v-brady/",
+      "rights": "public_domain",
+      "verified_at": null
+    }
+  ],
+  "query_tracks": [
+    {
+      "type": "primary",
+      "queries": [
+        "372 U.S. 335",
+        "Gideon v. Wainwright full opinion",
+        "CourtListener 106456"
+      ]
+    },
+    {
+      "type": "counterevidence",
+      "queries": [
+        "Betts v. Brady 1942 overruled",
+        "Gideon dissent (none — unanimous, but Harlan concurrence nuance)"
+      ]
+    },
+    {
+      "type": "chronology",
+      "queries": [
+        "Gideon 1961 Florida trial",
+        "Gideon handwritten petition Supreme Court",
+        "Gideon retrial acquittal 1963"
+      ]
+    },
+    {
+      "type": "impact",
+      "queries": [
+        "public defender office history United States",
+        "right to counsel indigent defendants funding"
+      ]
+    }
+  ],
+  "source_requirements": [
+    "Each critical claim cites 372 U.S. 335 (primary opinion).",
+    "Betts v. Brady holding confirmed from primary opinion text.",
+    "Gideon's original trial facts confirmed from opinion or NARA record.",
+    "At least one institutional source (Oyez / LOC) corroborates the holding."
+  ],
+  "archival_assets_to_locate": [
+    {
+      "description": "Gideon's handwritten petition to SCOTUS",
+      "source": "NARA / LOC",
+      "rights_basis": "public_domain_federal_record",
+      "needs_verification": true
+    },
+    {
+      "description": "Justice Hugo Black portrait (official SCOTUS)",
+      "source": "LOC / Wikimedia",
+      "rights_basis": "public_domain_us_government",
+      "needs_verification": true
+    }
+  ],
+  "volatile_facts": [],
+  "stop_conditions": [
+    "Every critical subquestion answered from 372 U.S. 335.",
+    "No critical claim relies on a single non-independent secondary source.",
+    "Betts v. Brady holding confirmed for accurate 'overruled' claim."
+  ],
+  "provenance": {
+    "producer": "local-claude-code",
+    "derived_from": "topic.v001"
+  }
+}

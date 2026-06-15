@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-002-gideon",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Gideon v. Wainwright (1963) the Supreme Court held that the Sixth Amendment right to the assistance of counsel is a fundamental right, made obligatory on the states by the Fourteenth Amendment, so a state must provide appointed counsel to a defendant charged with a serious offense who cannot afford a lawyer.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Black, J.), holding"],
+      "counterevidence": [],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled that states must provide a lawyer to poor defendants who can't afford one.",
+        "The right to a lawyer applies to the states, and the state must appoint one if you can't pay."
+      ],
+      "prohibited_wording": [
+        "Gideon guaranteed a free lawyer for every legal matter.",
+        "Gideon created the right to remain silent."
+      ],
+      "temporal_scope": "1963-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Gideon v. Wainwright was decided on March 18, 1963 by a unanimous Court, with the opinion of the Court written by Justice Hugo Black.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Syllabus / decision date", "Oyez: decision"],
+      "counterevidence": [
+        "Justices Douglas, Clark, and Harlan filed concurring opinions; the result (right to counsel applies to the states) was unanimous."
+      ],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "In 1963 a unanimous Court, in an opinion by Justice Hugo Black, ruled for Gideon."
+      ],
+      "prohibited_wording": [
+        "The decision was 5-4.",
+        "The Court was deeply divided on the result."
+      ],
+      "temporal_scope": "1963",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date / unanimity / author. Concurrences existed but the result was unanimous."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "Gideon v. Wainwright expressly overruled Betts v. Brady (1942), which had held that appointment of counsel in state non-capital cases was required only where special circumstances made a fair trial otherwise impossible.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0003"],
+      "evidence_locations": ["Opinion of the Court (treatment of Betts v. Brady)", "Betts v. Brady holding"],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "Gideon overturned an earlier ruling, Betts v. Brady, that had let states deny poor defendants a lawyer."
+      ],
+      "prohibited_wording": [
+        "There was no prior rule on this question."
+      ],
+      "temporal_scope": "1942-1963",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The precedent overruled; the obstacle Gideon had to clear."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "Clarence Earl Gideon was charged in Florida with breaking and entering with intent to commit a misdemeanor (a felony under Florida law); at his 1961 trial he asked the court to appoint a lawyer, the judge refused because Florida then appointed counsel only in capital cases, Gideon represented himself, was convicted, and was sentenced to prison.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Opinion, facts", "Oyez: facts of the case"],
+      "counterevidence": [],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "Charged with breaking into a Florida poolroom, Gideon asked for a lawyer, was refused, defended himself, and was convicted."
+      ],
+      "prohibited_wording": [
+        "Gideon was charged with a violent crime.",
+        "Gideon was guilty beyond doubt."
+      ],
+      "temporal_scope": "1961",
+      "geographic_scope": "Florida, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Real person; state the charge and outcome accurately (docs/32). He maintained innocence and was later acquitted on retrial (CLM-0007)."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "From prison, Gideon filed a handwritten petition asking the Supreme Court to hear his case, proceeding in forma pauperis (as a poor person who could not pay court fees).",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": ["SRC-0002"],
+      "evidence_locations": ["Oyez: facts / procedural history", "Supreme Court docket record"],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Gideon mailed the Supreme Court a handwritten petition from his prison cell."
+      ],
+      "prohibited_wording": [
+        "A team of lawyers brought Gideon's case to the Supreme Court."
+      ],
+      "temporal_scope": "1961-1962",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The handwritten in forma pauperis petition is the iconic fact; graded B (procedural record / institutional source)."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "The Supreme Court appointed Abe Fortas, a prominent Washington attorney (later a Supreme Court Justice), to represent Gideon before the Court.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0002"],
+      "evidence_locations": ["Oyez: counsel of record / case record"],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "The Court appointed Abe Fortas to argue Gideon's side."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "1962-1963",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The irony: the man denied a lawyer was finally given one of the best in the country, by the Court itself."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "After the Supreme Court reversed his conviction, Gideon was retried in 1963 with an appointed lawyer and was acquitted.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": ["SRC-0002"],
+      "evidence_locations": ["Oyez: conclusion / aftermath"],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Retried with a real lawyer, Gideon was found not guilty."
+      ],
+      "prohibited_wording": [
+        "Gideon was executed.",
+        "Gideon went back to prison after the ruling."
+      ],
+      "temporal_scope": "1963",
+      "geographic_scope": "Florida, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The payoff contrast with Miranda: Gideon actually won his freedom on retrial."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "The right vindicated in Gideon is grounded in the Sixth Amendment guarantee of assistance of counsel, applied to the states through the Due Process Clause of the Fourteenth Amendment.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court, constitutional basis"],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "The ruling rests on the Sixth Amendment right to a lawyer, made binding on the states by the Fourteenth Amendment."
+      ],
+      "prohibited_wording": [
+        "The ruling is based on the Fifth Amendment.",
+        "The ruling is based on the Second Amendment."
+      ],
+      "temporal_scope": "1963-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Constitutional basis; distinct from Miranda's Fifth Amendment grounding."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "Gideon is widely credited with driving the expansion of appointed-counsel and public-defender systems across the United States, while the resources to fund that right (staffing, caseloads) have remained a persistent strain.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": ["SRC-0002"],
+      "evidence_locations": ["Oyez: significance / legacy"],
+      "counterevidence": [],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "Gideon is why public defender offices exist across the country, even as those offices are often stretched thin."
+      ],
+      "prohibited_wording": [
+        "Every defendant today gets a fully resourced lawyer.",
+        "Public defenders handle X cases per year (no specific number is sourced)."
+      ],
+      "temporal_scope": "1963-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Impact / 'imperfect system' angle. Keep qualitative; no unsourced numbers (rule 09). Specific funding/caseload statistics would be E-grade and are excluded."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "The Miranda warning's promise that 'if you cannot afford a lawyer, one will be appointed for you' depends on the right to appointed counsel established in Gideon.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Opinion of the Court (right to appointed counsel)", "Series continuity with Miranda (384 U.S. 436)"],
+      "counterevidence": [],
+      "confidence": 0.88,
+      "allowed_wording": [
+        "The fourth Miranda warning only means something because Gideon guaranteed the appointed lawyer it promises."
+      ],
+      "prohibited_wording": [
+        "Gideon and Miranda are the same case.",
+        "Miranda created the right to a lawyer."
+      ],
+      "temporal_scope": "1963-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Series-thread link to EP1. Framed as the logical/legal dependency, not a quote."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "warn",
+    "findings": [
+      "Live source verification pending: SRC-0001/0002/0003 content_hash + verified_at not yet captured. run_research.py is Miranda-specific; generalize the research adapter (per-case cluster/Oyez URL) and run with COURTLISTENER_TOKEN to flip warn->pass before publish.",
+      "CLM-0005/0007 graded B from institutional source (Oyez) + docket record; acceptable for script framing, confirm against primary record at verification."
+    ]
+  }
+}
