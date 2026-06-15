@@ -96,8 +96,23 @@ Minimums per 12-min episode. These are floors, not targets; richer is better. QC
 - **Ambience:** **100% coverage** — a bed under every second; never a silent frame.
 - **Distinct shots:** ≥ **90–150** (a visual change every 4–8s, per §C).
 
+## E3. Captions / subtitles (owner: clean + exactly matched)
+
+- **Text = the narration, word-for-word.** Captions are generated from the exact narrated script —
+  no paraphrase, no drift, no separate re-edit of the wording.
+- **Frame-accurate sync to the audio:** time captions from the TTS word/character timestamps
+  (ElevenLabs returns timings) or forced alignment, so each line appears exactly when it is spoken.
+  (EP1's subtitle drift / CMT-0003 came from hand-timed chunks — do not repeat.)
+- **Clean presentation:** open captions, brand font, high contrast with a subtle scrim/bar, lower
+  safe-area (never covering faces, key visuals, or the citation lower-third), 1–2 lines, ~5–8 words
+  per chunk, smooth fade in/out, consistent style, mobile-legible. Optional word-highlight kept tasteful.
+- **QC gate:** a caption↔audio **text-match + sync** check; any mismatch or drift blocks first-cut pass.
+
 ## F. Content bar
 
+- **Genuinely useful & meaningful (owner):** every video leaves the viewer with a real **takeaway**
+  they understand and keep — interest + learning + surprise. Substance over empty engagement-bait;
+  the value is the moat.
 - Deeper research, more sources, **one sharp thesis**, several **surprising but verified** facts.
 - Readability: channel 1 grade 7–8, Pino grade 6–7; short sentences, concrete, jargon explained
   inline (§J).
