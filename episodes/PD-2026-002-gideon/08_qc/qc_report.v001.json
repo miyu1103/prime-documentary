@@ -86,8 +86,17 @@
       "finding_id": "QC-0013",
       "severity": "S0",
       "code": "ending_endcard",
-      "message": "FIXED (owner note): distinct branded end-card added (payoff line -> attribution -> Subscribe CTA -> next-ep tease -> PD brand), visually separated from the body. ~9s.",
-      "location": "GideonPremium EndCard",
+      "message": "FIXED (owner note): standard branded end-card — reusable BrandEndcard (PD monogram + Subscribe + 'New episodes weekly'), IDENTICAL every episode (channel consistency). ~9s.",
+      "location": "components/Bookends.tsx",
+      "action": "none",
+      "related_ids": []
+    },
+    {
+      "finding_id": "QC-0014",
+      "severity": "S0",
+      "code": "opening_title_sequence",
+      "message": "ADDED (owner note): reusable branded title opening (BrandOpening: PD monogram + gold rule + series/title/subtitle over sunrise, ~3.5s) inserted right after the hook; narration/captions(v003)/music/SFX shifted in sync. hook -> opening -> body. Bookends shared for EP3+.",
+      "location": "components/Bookends.tsx",
       "action": "none",
       "related_ids": []
     },

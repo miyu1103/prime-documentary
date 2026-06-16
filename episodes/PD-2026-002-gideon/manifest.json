@@ -22,13 +22,13 @@
     "narration_index": "v001",
     "narration_master": "v001",
     "timing": "v001",
-    "captions": "v002",
+    "captions": "v003",
     "audio_cue_sheet": "v001",
     "real_asset_sourcing": "v001",
     "shotlist": "v001",
     "youtube_meta": "v001",
     "qc_report": "v001",
-    "edit": "v002"
+    "edit": "v003"
   },
   "artifacts": [],
   "approvals": [
@@ -53,8 +53,8 @@
     }
   },
   "warnings": [
-    "PREMIUM cut v2 rendered (owner-note fixes applied): gideon_premium_v001.mp4 (697s, sha256:86a9404b7ce5..). QC pass_with_warnings.",
-    "Owner-note fixes DONE: (1) captions forced-aligned frame-accurate + clean breaks (captions.v002); (2) hook tightened 14s->7.5s (5-8s spec); (3) distinct branded end-card added.",
+    "PREMIUM cut v2 rendered (owner-note fixes applied): gideon_premium_v001.mp4 (700s, sha256:ffcbcea3efd5..). QC pass_with_warnings.",
+    "Owner-note fixes DONE: (1) captions forced-aligned frame-accurate + clean breaks (captions.v003, shifted for opening); (2) hook tightened 14s->7.5s (5-8s spec); (3) reusable branded opening (~3.5s) + standard branded end-card — same bookends every episode (components/Bookends.tsx).",
     "State edit_review: awaiting OWNER FIRST-CUT approval (watch the cut) — not auto-approved.",
     "Pre-publish gates remaining: research live-verification (QC-0008), owner title/thumbnail approval, owner publish approval. Optional polish: archive.org B-roll, opinion-PDF, Justice-era Black portrait."
   ],
