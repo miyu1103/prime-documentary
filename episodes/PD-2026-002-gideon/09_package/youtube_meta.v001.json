@@ -2,7 +2,7 @@
   "episode_id": "PD-2026-002-gideon",
   "revision": "v001",
   "source_doc": "episodes/PD-2026-002-gideon/09_package/packaging_concept.v001.md",
-  "status": "uploaded_private_pending_public",
+  "status": "published",
   "video_file": "gideon_premium_v001.mp4",
   "video_file_planned": "gideon_v001.mp4",
   "title": "He Had No Lawyer — So He Beat the Supreme Court",
@@ -84,8 +84,8 @@
   "language": "en-US",
   "audio_language": "en-US",
   "made_for_kids": false,
-  "visibility": "private",
-  "publish_approved": false,
+  "visibility": "public",
+  "publish_approved": true,
   "first_cut_approved": true,
   "first_cut_approval_ref": "APR-0002",
   "title_thumbnail_approved": true,
@@ -158,10 +158,8 @@
     "final_cut_size_bytes": 448904326,
     "final_cut_notes": "PREMIUM v001 (GideonPremium: moving stage + real assets + clips + grade + 121 SFX). 700.4s."
   },
-  "publish_gate": "private_upload_ready",
-  "publish_gate_blockers": [
-    "public flip pending owner go (recommend research SRC live-verification first, QC-0008)"
-  ],
+  "publish_gate": "published",
+  "publish_gate_blockers": [],
   "pending_approvals_required": [
     "APR-0002: first-cut approval for the rendered gideon cut (hash TBD)",
     "APR-0003: title + thumbnail approval (A/B set)",
