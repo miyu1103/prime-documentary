@@ -1,0 +1,27 @@
+{
+  "qc_report_id": "QC-PD-2026-003-mapp-v001",
+  "target_type": "episode_final_cut",
+  "target_id": "PD-2026-003-mapp",
+  "target_revision": "v001",
+  "gate": "first_cut_review",
+  "result": "pass_with_warnings",
+  "cut_file": "artifact://episodes/PD-2026-003-mapp/08_edit/mapp_premium_v001.mp4",
+  "runtime_seconds": 579.6,
+  "acceptance_gate": {
+    "A_no_slideshow": {"status": "PASS", "evidence": "ffmpeg freezedetect n=-50dB d=1.5 -> 0 freeze segments across 9:40. Moving stage (CameraRig + particles + light sweep + vignette + grain) on all 87 shots; visual change ~every 4-8s. Better than EP2 (which had 2 static windows)."},
+    "B_hook_structure": {"status": "PASS", "evidence": "5-8s flash-forward hook -> opening -> 4 acts (door/gap/ruling/cost) each ending on a mini-cliffhanger -> ending with payoff + next-episode tease."},
+    "C_four_layer_audio": {"status": "PASS", "evidence": "narration (Brian, -16 LUFS chunks) + music bed (4 mood regions from owner BGM, ducked 0.15) + continuous ambience (amb_night_window 0.05) + 91 SFX cues at shot boundaries + emphasis hits. Integrated -17.1 LUFS (YouTube normalizes to -14)."},
+    "D_captions": {"status": "PASS", "evidence": "Forced-aligned via faster-whisper word timestamps -> 305 cues, word-for-word the narration, 5-8 word lines, clean lower-safe display, punctuation-only cues removed. Frame-accurate (not proportional)."},
+    "E_ban_safety": {"status": "PASS_WITH_FOLLOWUP", "evidence": "Symbolic-reconstruction labels burned on AI reenactment shots; no identifiable faces (silhouettes/backs/hands); the seized materials are NEVER depicted/named (word 'obscene' absent); vote phrased 'over three dissents' (never unanimous); Cardozo line attributed. FOLLOW-UP: AI/synthetic disclosure goes in the description (package); source live-verification (367 U.S. 643 / Wolf 338 U.S. 25) still pending (fetch blocked from this node)."},
+    "F_growth": {"status": "PENDING", "evidence": "Packaging (title + A/B thumbnails + description + chapters + end screen) is the next stage (task 13)."}
+  },
+  "findings": [
+    {"finding_id": "QC-0001", "severity": "S0", "code": "no_slideshow", "message": "freezedetect 0 segments — premium motion floor met.", "action": "none"},
+    {"finding_id": "QC-0002", "severity": "S2", "code": "loudness_conservative", "message": "Integrated -17.1 LUFS, slightly under the -14 target; YouTube will normalize up. Optional: a +3 LU master pass.", "action": "optional"},
+    {"finding_id": "QC-0003", "severity": "S2", "code": "sdxl_substitute_visuals", "message": "Visuals are SDXL substitutes (owner-directed), to be swapped to Midjourney later. Quality is high and BAN-safe, but this is a placeholder visual pass.", "action": "swap_later"},
+    {"finding_id": "QC-0004", "severity": "S2", "code": "source_live_verification_pending", "message": "SRC-0001..0004 content_hash/verified_at not captured (CourtListener/Oyez fetch blocked from this node). Flip research QC warn->pass before public.", "action": "research"},
+    {"finding_id": "QC-0005", "severity": "S3", "code": "ai_disclosure_in_description", "message": "Ensure the description carries the AI-narration + symbolic-reconstruction disclosure (packaging stage).", "action": "package"}
+  ],
+  "created_at": "2026-06-17T00:00:00+00:00",
+  "validator_versions": {"checks": "ffmpeg freezedetect + ebur128 + frame spot-checks (hook/opening/act2/act3/act4/ending) + caption-display verify"}
+}

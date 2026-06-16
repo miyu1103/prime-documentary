@@ -7,6 +7,7 @@ import {StyleTest} from './compositions/StyleTest';
 import {Animatic, animaticDurationInFrames, durationInFramesFor} from './compositions/Animatic';
 import {GIDEON_ANIMATIC, GIDEON_SCENE_IMG} from './data/gideon_animatic';
 import {GideonPremium, gideonPremiumDurationInFrames} from './compositions/GideonPremium';
+import {MappPremium, mappPremiumDurationInFrames} from './compositions/MappPremium';
 import {ClipProof} from './compositions/ClipProof';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
@@ -54,6 +55,14 @@ export const RemotionRoot: React.FC = () => {
         id="GideonPremium"
         component={GideonPremium}
         durationInFrames={gideonPremiumDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="MappPremium"
+        component={MappPremium}
+        durationInFrames={mappPremiumDurationInFrames(BRAND.video.fps)}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
