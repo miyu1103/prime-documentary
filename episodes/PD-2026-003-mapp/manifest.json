@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-003-mapp",
+  "topic_id": "TOP-20260617-003",
+  "slug": "mapp",
+  "title_working": "The Police Broke In — So the Court Let Her Go",
+  "state": "approved",
+  "risk_class": "R1",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001"
+  },
+  "artifacts": [],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "Owner-directed 3rd episode (2026-06-17). Series: Miranda(1) -> Gideon(2) -> Mapp(3).",
+    "VISUALS NOT YET GENERATED: Midjourney/Runway are owner-manual (no API, decisions/0002). Pipeline will produce mj/runway prompt sheets; owner generates stills/clips into the inbox before selection/edit. Cannot reach private_upload_ready until those assets exist.",
+    "Source live-verification (CourtListener/Oyez) is blocked from this node (anti-bot/JS) — needs API token or owner fetch, same as EP2 QC-0008."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-17T00:00:00+00:00",
+  "updated_at": "2026-06-17T00:00:00+00:00"
+}

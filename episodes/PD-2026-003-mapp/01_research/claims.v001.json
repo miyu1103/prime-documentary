@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-003-mapp",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Mapp v. Ohio (1961) the Supreme Court held that evidence obtained through a search or seizure that violates the Fourth Amendment is inadmissible in state criminal courts, applying the federal exclusionary rule to the states through the Due Process Clause of the Fourteenth Amendment.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Clark, J.), holding"
+      ],
+      "counterevidence": [],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled that evidence from an illegal search can't be used against you in a state court.",
+        "Illegally seized evidence is thrown out — the exclusionary rule now applies to the states."
+      ],
+      "prohibited_wording": [
+        "Mapp banned all searches.",
+        "Mapp created the right to remain silent."
+      ],
+      "temporal_scope": "1961-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Mapp v. Ohio was decided on June 19, 1961; the opinion of the Court was written by Justice Tom C. Clark, and the conviction was reversed over three dissents, with a majority extending the exclusionary rule to the states (Justice Black concurring on broader grounds; Justice Stewart concurring only on the obscenity-statute question).",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Syllabus / decision date",
+        "Opinion author",
+        "Concurrences and dissent"
+      ],
+      "counterevidence": [
+        "The exact line-up is nuanced: 6 Justices voted to reverse, 5 joined the exclusionary-rule rationale; do not call it unanimous."
+      ],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "In 1961, over three dissents, the Court extended the rule to the states, in an opinion by Justice Clark."
+      ],
+      "prohibited_wording": [
+        "The decision was unanimous.",
+        "The vote was 9-0.",
+        "The vote was 5-4 to reverse."
+      ],
+      "temporal_scope": "1961",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date/author/vote nuance. Reversed 6-3; exclusionary-rule rationale joined by 5. Never 'unanimous'."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "Mapp v. Ohio overruled Wolf v. Colorado (1949) on the remedy question: Wolf had held the Fourth Amendment binds the states through the Fourteenth Amendment but had declined to require the exclusionary remedy in state courts.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Opinion (treatment of Wolf v. Colorado)",
+        "Wolf v. Colorado holding"
+      ],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "Mapp overturned an earlier ruling, Wolf v. Colorado, that had let states use illegally seized evidence."
+      ],
+      "prohibited_wording": [
+        "There was no prior rule on this question.",
+        "Wolf said the Fourth Amendment didn't apply to states at all."
+      ],
+      "temporal_scope": "1949-1961",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The precedent overruled; Wolf applied the right but not the remedy."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "On May 23, 1957, Cleveland police came to Dollree Mapp's home looking for a bombing suspect and forced their way in without producing a valid search warrant; during the search they found materials that led to her conviction under an Ohio obscenity law, and that conviction — not any bombing charge — was what reached the Supreme Court.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Opinion, statement of facts",
+        "Oyez: facts of the case"
+      ],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "Police forced their way into Dollree Mapp's home without a real warrant, searching for a suspect, and ended up charging her over what they found.",
+        "The search, not the bombing, became the issue."
+      ],
+      "prohibited_wording": [
+        "(do NOT describe, name, or depict the allegedly obscene materials)",
+        "Mapp was a bombing suspect.",
+        "Mapp was guilty of a violent crime."
+      ],
+      "temporal_scope": "1957",
+      "geographic_scope": "Cleveland, Ohio, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Real person (d. 2014); neutral, accurate. BAN/taste: keep the story on the SEARCH and the warrant, never on the obscene materials (topic risk_note)."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "The Fourth Amendment guarantees the right of the people to be secure against unreasonable searches and seizures; before Mapp, in many states evidence obtained by an unconstitutional search could still be admitted in a state criminal trial.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Fourth Amendment text",
+        "Opinion (pre-Mapp state practice / Wolf)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "The Fourth Amendment protects you from unreasonable searches — but before 1961 many states could still use what an illegal search turned up."
+      ],
+      "prohibited_wording": [
+        "The Fourth Amendment did not exist before Mapp."
+      ],
+      "temporal_scope": "1791-1961",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Sets up the gap the exclusionary rule fills."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "The Court justified the exclusionary rule as necessary to give the Fourth Amendment real force — reasoning that without excluding illegally obtained evidence the constitutional protection would be reduced to 'a form of words' and that the rule deters unlawful police conduct and preserves the integrity of the courts.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (rationale; 'form of words')"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Without the rule, the Court said, the Fourth Amendment would be just 'a form of words.'",
+        "The point is to deter illegal searches and keep the courts clean."
+      ],
+      "prohibited_wording": [
+        "The rule exists to help criminals."
+      ],
+      "temporal_scope": "1961-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "'form of words' is a short attributed quote from the opinion (echoing Silverthorne/Weeks). Verify exact wording at source verification."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "The exclusionary rule is controversial because it can require reliable evidence of guilt to be suppressed, sometimes allowing a guilty defendant to go free — a cost famously summarized by Judge Benjamin Cardozo's line that 'the criminal is to go free because the constable has blundered.'",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Cardozo, People v. Defore (1926), quoted in exclusionary-rule debates"
+      ],
+      "counterevidence": [
+        "Defenders argue deterrence of police misconduct is worth the cost; the rule has since been narrowed by exceptions."
+      ],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Critics put it bluntly: sometimes 'the criminal goes free because the constable has blundered.'"
+      ],
+      "prohibited_wording": [
+        "Everyone agrees the rule is wrong.",
+        "The rule means no guilty person is ever convicted."
+      ],
+      "temporal_scope": "1926-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The tension/cost = the hidden-room payoff. Attribute the line to Cardozo (People v. Defore), not to Mapp itself."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "A federal exclusionary rule had existed since Weeks v. United States (1914), which barred illegally seized evidence from federal prosecutions; Mapp's innovation was extending that remedy to the states, where the great majority of criminal cases are tried.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "Opinion (history of the rule; Weeks)",
+        "Weeks v. United States holding"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "The rule had applied in federal court since 1914 — Mapp pushed it down to the states, where most cases actually happen."
+      ],
+      "prohibited_wording": [
+        "Mapp invented the exclusionary rule from nothing."
+      ],
+      "temporal_scope": "1914-1961",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Context: Weeks (federal) -> Mapp (states)."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "Mapp gave the Fourth Amendment practical force in state courtrooms and reshaped American policing, though the Supreme Court later created limits and exceptions to the exclusionary rule (for example a good-faith exception).",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion (significance)",
+        "Later doctrine (good-faith exception) — qualitative"
+      ],
+      "counterevidence": [
+        "The rule today is narrower than in 1961 due to subsequent exceptions."
+      ],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "Mapp is why an illegal search can sink a case in state court — even though later rulings carved out exceptions."
+      ],
+      "prohibited_wording": [
+        "The rule today is absolute.",
+        "(no unsourced statistics about case numbers)"
+      ],
+      "temporal_scope": "1961-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Impact + honest 'narrowed later' nuance. No unsourced numbers (rule 09)."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "Mapp v. Ohio, Gideon v. Wainwright, and Miranda v. Arizona are part of the Warren Court's expansion of criminal-procedure protections, each applying a Bill of Rights guarantee to the states: Mapp (searches), Gideon (counsel), Miranda (interrogation warnings).",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion (Fourteenth Amendment incorporation)",
+        "Series continuity with EP1 Miranda / EP2 Gideon"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Mapp, Gideon, and Miranda are three pieces of the same shift — applying your rights to the states."
+      ],
+      "prohibited_wording": [
+        "Mapp, Gideon, and Miranda are the same case."
+      ],
+      "temporal_scope": "1961-1966",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Series thread to EP1/EP2 — honest doctrinal link (incorporation)."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "warn",
+    "findings": [
+      "Live source verification pending: SRC-0001..0004 content_hash + verified_at not captured (CourtListener/Oyez fetch blocked from this node; needs API token or owner fetch). Flip warn->pass before publish.",
+      "CLM-0002 vote line-up is nuanced (reversed 6-3; exclusionary rationale joined by 5; Black concurring, Stewart on obscenity statute) — never describe as unanimous.",
+      "CLM-0004 BAN/taste guard: never describe or depict the allegedly obscene materials; keep the narrative on the warrantless SEARCH."
+    ]
+  }
+}
