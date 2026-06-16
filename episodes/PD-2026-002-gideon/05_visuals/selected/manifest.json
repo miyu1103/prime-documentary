@@ -1,0 +1,437 @@
+{
+  "schema": "pd.visuals.selected/v1",
+  "episode_id": "PD-2026-002-gideon",
+  "stage": "asset_plan_ready -> assets selection (Midjourney stills curated)",
+  "created_at": "2026-06-17",
+  "verified_at": "2026-06-17",
+  "selector": "local Claude (Windows RTX4090 node)",
+  "source": {
+    "inbox": "artifact://downloads/inbox (H:\\pd-media\\downloads\\inbox) — preserved intact as raw record",
+    "total_candidates_reviewed": 174,
+    "candidate_note": "Midjourney 4-up clusters (_0.._3); ' (1)' files are exact duplicates and were ignored."
+  },
+  "selection_criteria": [
+    "cinematic",
+    "matches prompt intent",
+    "no warp/morph/broken geometry",
+    "composition + negative space",
+    "brand palette (deep navy/black + electric-blue #1F6BFF rim + silver/gold)",
+    "thumbnail-pop at small size",
+    "symbolic: no real face / no readable text / no logo (invariant 11)"
+  ],
+  "counts": {
+    "selected": 11,
+    "for_runway": 7,
+    "for_local_parallax": 4,
+    "rejected_archived": 74
+  },
+  "buckets": {
+    "selected": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/",
+    "rejected": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/rejected/ (contested clusters' non-chosen variants; nothing deleted)",
+    "for_runway": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/for_runway/ (subtle-motion clips)",
+    "for_local_parallax": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/for_local_parallax/ (4090 depth-parallax)"
+  },
+  "assets": [
+    {
+      "id": "PD-2026-002-01_style_anchor",
+      "seq": "01",
+      "label": "style_anchor",
+      "shot_intent": "brand establishing / ColdOpen style base (blue light + drifting dust)",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/01_style_anchor.png",
+      "routing": "for_local_parallax",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_Cinematic_establishing_still_defining_a_premium_bran_68cc6d76-8ee1-4816-b320-17d4f7776ffc_2.png",
+        "mj_cluster_uuid_prefix": "68cc6d76",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "深紺+電光青リム+舞う塵+金のランプで最高コントラスト。三分割と余白、視線が天からのビームに一点集約。",
+        "runner_up": "…_68cc6d76…_1",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "d2d7181f6b8aa188324b0139ee5e6544120226a32faa8be947a0dd40e3f73107",
+        "bytes": 5795563
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\01_style_anchor.png"
+      }
+    },
+    {
+      "id": "PD-2026-002-02_pencil_letter",
+      "seq": "02",
+      "label": "pencil_letter",
+      "shot_intent": "s008_pencil_closeup / hook S001 (pencil on petition letter)",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/02_pencil_letter.png",
+      "routing": "for_runway",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_Extreme_close-up_of_a_hand-written_pencil_letter_on__51a2ba49-7aed-424e-bfbb-1f3cd85ecf6d_3.png",
+        "mj_cluster_uuid_prefix": "51a2ba49",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "鉛筆先の金色光+紙の藍、背景ボケが黄金比。文字は非可読でinvariant11適合。",
+        "runner_up": "…_51a2ba49…_1",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "f99619eefe08e57278ff4b9ab852e1924f093397f0337ab40b57e3064d705d0c",
+        "bytes": 6859342
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\02_pencil_letter.png"
+      }
+    },
+    {
+      "id": "PD-2026-002-03_cell_writing",
+      "seq": "03",
+      "label": "cell_writing",
+      "shot_intent": "s002_prison_cell / lone silhouette writing at night",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/03_cell_writing.png",
+      "routing": "for_runway",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_A_lone_mans_silhouette_hunched_writing_at_a_tiny_tab_211245ab-b118-429a-8a81-d699a42ace38_3.png",
+        "mj_cluster_uuid_prefix": "211245ab",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "深紺に電光青リム、左下の強いオレンジリム、最浅の被写界深度。書く人影が究極の孤独を表現。",
+        "runner_up": "…_211245ab…_0",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "84e21f8709d5a2fc926498d7c9ab5956f1602a6d32f5cd43605899a85b9c4be5",
+        "bytes": 5898512
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\03_cell_writing.png"
+      }
+    },
+    {
+      "id": "PD-2026-002-04_defense_table",
+      "seq": "04",
+      "label": "defense_table",
+      "shot_intent": "s002_courtroom_request / s003_lone_defendant (lone defendant, vast court)",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/04_defense_table.png",
+      "routing": "for_runway",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_s002_courtroom_request_A_poor_defendant_standing_alo_0b8181f0-57a0-4eb0-b221-9c53ecbe9675_3.png",
+        "mj_cluster_uuid_prefix": "0b8181f0",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "被告が中央に立ち、背後の判事席シルエットで圧倒感最大。電光青の天井、緊張と孤立の表現。",
+        "runner_up": "s003_lone_defendant_7d41acd8…_0",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "2030052b978208681f17b5323c3ad71531e3da139868cf5d42bd1a7ef158edc8",
+        "bytes": 5826412
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\04_defense_table.png"
+      }
+    },
+    {
+      "id": "PD-2026-002-05_supreme_court",
+      "seq": "05",
+      "label": "supreme_court",
+      "shot_intent": "s015_scotus_chamber (imposing marble Supreme Court interior)",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/05_supreme_court.png",
+      "routing": "for_runway",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_Imposing_marble_Supreme_Court_interior_in_dramatic_l_bc6ac3f5-59d3-4806-a056-83ff60ea7b55_3.png",
+        "mj_cluster_uuid_prefix": "bc6ac3f5",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "柱の整列が完璧、最深の空間遠近、青/金パレット、建築モーフィングゼロ。",
+        "runner_up": "…_bc6ac3f5…_0",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "bdc533167c84f091bf80eaf7eaccfb1375f60337a52dca69e1a91e4a70fc5ec8",
+        "bytes": 6696371
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\05_supreme_court.png"
+      }
+    },
+    {
+      "id": "PD-2026-002-06_light_through_bars",
+      "seq": "06",
+      "label": "light_through_bars",
+      "shot_intent": "S002 cold-open bars motif (cold blue shaft through prison bars)",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/06_light_through_bars.png",
+      "routing": "for_runway",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_A_shaft_of_cold_blue_light_falling_through_prison_ba_8904dbf5-e129-47e6-b786-7be6245c8e46_2.png",
+        "mj_cluster_uuid_prefix": "8904dbf5",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "鉄格子グリッドが明瞭、青いボリュメトリック光線と舞う塵、プロンプト忠実。",
+        "runner_up": "…_8904dbf5…_0",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "1f3e5f20ac2ceccac2224a805eba27ad6a72e6d9133c1ef9a05fc2a6ca10474b",
+        "bytes": 7623526
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\06_light_through_bars.png"
+      }
+    },
+    {
+      "id": "PD-2026-002-07_pool_hall",
+      "seq": "07",
+      "label": "pool_hall",
+      "shot_intent": "s004_poolroom (dim 1960s pool hall exterior, neon, rain)",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/07_pool_hall.png",
+      "routing": "for_runway",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_A_dim_1960s_American_pool_hall_exterior_at_night_fad_17037f32-e3b8-47cc-8138-278e90aa5090_2.png",
+        "mj_cluster_uuid_prefix": "17037f32",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "film-noir、濡れた地面の反射が電光青と暖色ネオンの完璧なバランス。視線が看板に集約。",
+        "runner_up": "…_17037f32…_3",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "75618e02b43e9be2a53a44b082b18eff1462c3c30013976f0b52595b19e47765",
+        "bytes": 6589768
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\07_pool_hall.png"
+      }
+    },
+    {
+      "id": "PD-2026-002-08_handcuffs",
+      "seq": "08",
+      "label": "handcuffs",
+      "shot_intent": "S004 arrest motif (macro weathered 1960s steel handcuffs)",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/08_handcuffs.png",
+      "routing": "for_local_parallax",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_Macro_close-up_of_weathered_1960s_steel_handcuffs_on_352fa6ac-3b14-414d-8331-f691c20b986b_1.png",
+        "mj_cluster_uuid_prefix": "352fa6ac",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "風化表現が最高、側面構図でチェーン破綻なし。電光青リムが金属質感を際立たせる。",
+        "runner_up": "…_352fa6ac…_2",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "80c7e10eddbb0f7a8d71d37ea190bbe95aff2b51cd1bce008f8479215c5ae5a4",
+        "bytes": 5624317
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\08_handcuffs.png"
+      }
+    },
+    {
+      "id": "PD-2026-002-09_law_books",
+      "seq": "09",
+      "label": "law_books",
+      "shot_intent": "s024_overloaded_desk / towering stack of legal documents",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/09_law_books.png",
+      "routing": "for_local_parallax",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_A_towering_stack_of_old_legal_documents_and_worn_law_073c60fb-2267-4ed4-b6ae-f22d8267c0fd_3.png",
+        "mj_cluster_uuid_prefix": "073c60fb",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "圧倒的な垂直構図、書類の塔が破綻なし。紺背景に青/金の層、可読文字なし。",
+        "runner_up": "…_073c60fb…_2",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "a4ac4496e92695f72407fb6718135ba92748f387e88a0385c3d6d15f5f4555aa",
+        "bytes": 6919694
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\09_law_books.png"
+      }
+    },
+    {
+      "id": "PD-2026-002-10_corridor",
+      "seq": "10",
+      "label": "corridor",
+      "shot_intent": "prison cell-block corridor receding to far light",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/10_corridor.png",
+      "routing": "for_runway",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_A_long_dark_1960s_prison_cell-block_corridor_recedin_5eb86b13-223d-49af-b6aa-f16929d8c4a1_2.png",
+        "mj_cluster_uuid_prefix": "5eb86b13",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "完璧な1点透視で遠くの光へ収束、金/青のchiaroscuro、格子の歪みなし。",
+        "runner_up": "…_5eb86b13…_3",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "75362cc2907bc520d967f28f8d85ca70a3e8448ee42b05160bd3d6fedacc0973",
+        "bytes": 5722398
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\10_corridor.png"
+      }
+    },
+    {
+      "id": "PD-2026-002-11_thumb_bg",
+      "seq": "11",
+      "label": "thumb_bg",
+      "shot_intent": "T1 thumb_gideon_pencil (pencil+letter, dark area LEFT for text)",
+      "artifact_uri": "artifact://episodes/PD-2026-002-gideon/05_visuals/selected/11_thumb_bg.png",
+      "routing": "for_local_parallax",
+      "provenance": {
+        "producer": "midjourney",
+        "generated_by": "owner (manual, no API)",
+        "style_ref": "brand --sref (locked Miranda seed); --ar 16:9 --style raw",
+        "source_inbox_filename": "PrimeDoc_thumb_gideon_pencil_Extreme_close-up_of_an_old_worn__b147f82b-d8f6-4fa0-abff-7dc307318f5d_1.png",
+        "mj_cluster_uuid_prefix": "b147f82b",
+        "rights_basis": "midjourney_commercial",
+        "symbolic_reconstruction": true,
+        "no_identifiable_real_face": true,
+        "no_readable_text_or_logo": true
+      },
+      "selection": {
+        "method": "vision review by parallel Explore subagents against brand criteria",
+        "reason": "左側に深い暗部の広大な余白（テキスト配置可）、鉛筆と手紙が強い一点焦点。",
+        "runner_up": "…_b147f82b…_2",
+        "verdict": "strong"
+      },
+      "image": {
+        "width": 2944,
+        "height": 1648,
+        "aspect": "16:9",
+        "sha256": "83173daa78edfc28fe226e42bbc31a2649fa0369625b060a9ad2c8efd55abc5c",
+        "bytes": 5912219
+      },
+      "_local_path_hint": {
+        "machine_id": "windows-rtx4090",
+        "abspath": "H:\\pd-media\\episodes\\PD-2026-002-gideon\\05_visuals\\selected\\11_thumb_bg.png"
+      }
+    }
+  ],
+  "notes": [
+    "Heavy PNGs live on the SSD media root only (gitignored space); this manifest + runway_prompts.txt are the committed metadata.",
+    "All 11 shots graded 'strong' by vision review; no regeneration required for this pass.",
+    "Extra scene clusters present in inbox (s011 stone wall, s013 fortas silhouette, s014 crowd, s020 retrial filled chair, s021 defense attorney, s023 public defender office, police intake form, four-figures-on-steps, silhouette black-robed figure) map to OTHER scenes and were left in inbox for later scene work — not part of this 11-shot pass."
+  ]
+}
