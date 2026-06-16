@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260617-003",
   "slug": "mapp",
   "title_working": "The Police Broke In — So the Court Let Her Go",
-  "state": "edit_review",
+  "state": "package_ready",
   "risk_class": "R1",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -25,7 +25,9 @@
     "timing": "v001",
     "captions": "v001",
     "edit": "v001",
-    "qc_report": "v001"
+    "qc_report": "v001",
+    "youtube_meta": "v001",
+    "rights_manifest": "v001"
   },
   "artifacts": [],
   "approvals": [
@@ -51,8 +53,10 @@
   },
   "warnings": [
     "Owner-directed 3rd episode (2026-06-17). Series: Miranda(1) -> Gideon(2) -> Mapp(3).",
-    "VISUALS: owner directed SDXL SUBSTITUTES now (local A1111+SDXL on the 4090), to be swapped to Midjourney later. Pipeline generates SDXL stills locally + mj/runway prompt sheets for the future swap. Premium motion via SVD/depth-parallax to avoid slideshow.",
-    "Source live-verification (CourtListener/Oyez) is blocked from this node (anti-bot/JS) — needs API token or owner fetch, same as EP2 QC-0008."
+    "PACKAGE READY (one step before posting): premium cut mapp_premium_v001.mp4 (9:40, sha256:2449119d.., 192MB) + QC pass (freezedetect 0 = no slideshow) + youtube_meta + rights (57 assets) + 2 A/B thumbnails. STOPPED before owner gates — not uploaded/published.",
+    "VISUALS are SDXL SUBSTITUTES (owner-directed). Swap to Midjourney later (mj prompts in 04_scenes/shotlist.v001.md); rights stay owner-owned. Re-render after swap, then re-QC.",
+    "Owner gates remaining before public: first-cut approval (watch the cut), title/thumbnail approval (A/B), source live-verification (QC-0004, fetch blocked here), private upload, public GO.",
+    "Source live-verification (CourtListener/Oyez) is blocked from this node (anti-bot/JS) — needs API token or owner fetch."
   ],
   "blockers": [],
   "created_at": "2026-06-17T00:00:00+00:00",
