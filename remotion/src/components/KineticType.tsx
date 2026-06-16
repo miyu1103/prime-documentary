@@ -13,13 +13,17 @@ export type KineticLine = {
 export const KineticType: React.FC<{
   lines: KineticLine[];
   align?: 'center' | 'flex-start';
-}> = ({lines, align = 'center'}) => {
+  /** When true, no opaque background — kinetic text overlays whatever is behind (e.g. a real still). */
+  transparent?: boolean;
+}> = ({lines, align = 'center', transparent = false}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   return (
     <AbsoluteFill
       style={{
-        background: `radial-gradient(120% 90% at 50% 45%, ${BRAND.color.navy} 0%, ${BRAND.color.ink} 80%)`,
+        background: transparent
+          ? 'transparent'
+          : `radial-gradient(120% 90% at 50% 45%, ${BRAND.color.navy} 0%, ${BRAND.color.ink} 80%)`,
         justifyContent: 'center',
         alignItems: align,
         padding: 120,

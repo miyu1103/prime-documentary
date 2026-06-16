@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260615-002",
   "slug": "gideon",
   "title_working": "He Had No Lawyer — So He Beat the Supreme Court",
-  "state": "audio_ready",
+  "state": "edit_review",
   "risk_class": "R1",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -26,24 +26,36 @@
     "audio_cue_sheet": "v001",
     "real_asset_sourcing": "v001",
     "shotlist": "v001",
-    "youtube_meta": "v001"
+    "youtube_meta": "v001",
+    "qc_report": "v001",
+    "edit": "v001"
   },
   "artifacts": [],
   "approvals": [
     "APR-0001"
   ],
   "costs": {
-    "estimated": {"amount": 0, "currency": "USD"},
-    "actual": {"amount": 0, "currency": "USD"},
-    "soft_limit": {"amount": 100, "currency": "USD"},
-    "hard_limit": {"amount": 200, "currency": "USD"}
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
   },
   "warnings": [
-    "PREMIUM RE-PRODUCTION to standard 0004 (raised bar). A draft first-cut (gideon_v001.mp4, stills+KenBurns) exists as a proof but is BELOW the 0004 floors (no real assets, no grade/parallax, no SFX) — NOT package_ready.",
-    "DONE (this pass): audio_cue_sheet v001 (library-bound); rights_manifest v001 COMPLETE (67 assets, 67/67 hashes verified) incl. 8 real PD assets; real_asset_sourcing v001; shotlist v001 LOCKED (112 shots, floors met); youtube_meta v001; 2 thumbnails rendered.",
-    "REAL PD ASSETS acquired (0004 §D, floor 8-12 met): Gideon pencil cert petition p1-p5 (NARA/Commons), Hugo Black portrait (LoC), real 1963 oral-argument audio x2 (Oyez/NARA). B-roll (archive.org) + opinion PDF still recommended.",
-    "NEXT (gated, not started): premium assembly per shotlist — depth-parallax + overlays + brand LUT/grain (CINEMATIC_PROMPT_GUIDE), 60-100+ SFX 4-layer mix, frame-accurate captions from TTS timestamps -> first-cut owner gate -> QC (0004 §G + §N) -> package title/thumb gate (A/B) -> publish-preflight -> owner publish.",
-    "Research live-verification (SRC content_hash) still pending before publish (APR-0001 conditions)."
+    "PREMIUM first cut rendered: gideon_premium_v001.mp4 (694s, sha256:2f8b2452d2c3..). QC pass_with_warnings (6xS0, 2xS2, 2xS3, 1xS5).",
+    "State edit_review: awaiting OWNER FIRST-CUT approval (watch the cut) — not auto-approved.",
+    "Pre-publish gates remaining: caption forced-align (QC-0007), research live-verification (QC-0008), owner title/thumbnail approval, owner publish approval. B-roll/opinion-PDF optional polish."
   ],
   "blockers": [],
   "created_at": "2026-06-15T04:20:31.666942+00:00",
