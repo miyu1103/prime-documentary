@@ -4,7 +4,8 @@ import {BRAND} from './brand';
 import {Opening} from './compositions/Opening';
 import {Episode, TEMPLATE_12MIN} from './compositions/Episode';
 import {StyleTest} from './compositions/StyleTest';
-import {Animatic, animaticDurationInFrames} from './compositions/Animatic';
+import {Animatic, animaticDurationInFrames, durationInFramesFor} from './compositions/Animatic';
+import {GIDEON_ANIMATIC, GIDEON_SCENE_IMG} from './data/gideon_animatic';
 import {ClipProof} from './compositions/ClipProof';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
@@ -33,6 +34,19 @@ export const RemotionRoot: React.FC = () => {
           title: 'Why Do Police Read You Your Rights?',
           channelName: 'Prime Documentary',
           sections: TEMPLATE_12MIN,
+        }}
+      />
+      <Composition
+        id="GideonAnimatic"
+        component={Animatic}
+        durationInFrames={durationInFramesFor(GIDEON_ANIMATIC, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          bgmSrc: null as string | null,
+          scenes: GIDEON_ANIMATIC,
+          sceneImg: GIDEON_SCENE_IMG,
         }}
       />
       <Composition

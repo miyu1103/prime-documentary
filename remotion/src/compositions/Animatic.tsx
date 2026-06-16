@@ -108,9 +108,9 @@ const TopShade: React.FC = () => (
   }} />
 );
 
-const SceneVisual: React.FC<{scene: AnimaticScene}> = ({scene}) => {
+const SceneVisual: React.FC<{scene: AnimaticScene; sceneImg: Partial<Record<string, string>>}> = ({scene, sceneImg}) => {
   const {visualMode: m, onScreenText: ost, motifHint, sceneId} = scene;
-  const imgSrc = SCENE_IMG[sceneId];
+  const imgSrc = sceneImg[sceneId];
 
   // ── Typography ─────────────────────────────────────────────────────────────
   if (m === 'typography') {
@@ -170,21 +170,29 @@ const SceneVisual: React.FC<{scene: AnimaticScene}> = ({scene}) => {
   return <SceneArt visualMode={m} motifHint={motifHint} onScreenText={ost} seed={sceneId} />;
 };
 
-export type AnimaticProps = {bgmSrc?: string | null};
+export type AnimaticProps = {
+  bgmSrc?: string | null;
+  scenes?: AnimaticScene[];
+  sceneImg?: Partial<Record<string, string>>;
+};
 
-export const Animatic: React.FC<AnimaticProps> = ({bgmSrc = 'bgm_placeholder.wav'}) => {
+export const Animatic: React.FC<AnimaticProps> = ({
+  bgmSrc = 'bgm_placeholder.wav',
+  scenes = MIRANDA_ANIMATIC,
+  sceneImg = SCENE_IMG,
+}) => {
   const {fps} = useVideoConfig();
   let cursor = 0;
   return (
     <AbsoluteFill style={{backgroundColor: INK}}>
-      {MIRANDA_ANIMATIC.map((scene, i) => {
+      {scenes.map((scene) => {
         const from = Math.round(cursor * fps);
         const dur  = Math.round(scene.durationSec * fps);
         cursor += scene.durationSec;
         return (
           // No transition component — hard cuts look clean with Ken Burns motion
           <Sequence key={scene.sceneId} from={from} durationInFrames={dur} name={scene.sceneId}>
-            <SceneVisual scene={scene} />
+            <SceneVisual scene={scene} sceneImg={sceneImg} />
           </Sequence>
         );
       })}
@@ -194,5 +202,8 @@ export const Animatic: React.FC<AnimaticProps> = ({bgmSrc = 'bgm_placeholder.wav
   );
 };
 
+export const durationInFramesFor = (scenes: AnimaticScene[], fps: number): number =>
+  Math.round(scenes.reduce((a, s) => a + s.durationSec, 0) * fps);
+
 export const animaticDurationInFrames = (fps: number): number =>
-  Math.round(MIRANDA_ANIMATIC.reduce((a, s) => a + s.durationSec, 0) * fps);
+  durationInFramesFor(MIRANDA_ANIMATIC, fps);
