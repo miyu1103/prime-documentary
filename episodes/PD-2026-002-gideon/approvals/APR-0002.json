@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-002-gideon",
+  "target_type": "episode_first_cut",
+  "target_id": "gideon_premium",
+  "target_revision": "v001",
+  "target_artifact": "artifact://episodes/PD-2026-002-gideon/08_edit/gideon_premium_v001.mp4",
+  "target_content_hash": "sha256:2f8b2452d2c352432f0346f2257d823e235af602e86a72ea319311c97984afb1",
+  "target_size_bytes": 450647041,
+  "decision": "pending",
+  "requested_at": "2026-06-17T00:00:00+00:00",
+  "requested_by": "local-claude-code",
+  "decided_at": null,
+  "decided_by": null,
+  "gate": "first_cut_approval",
+  "notes": "First-cut (owner) review request for the PREMIUM cut gideon_premium_v001.mp4 (GideonPremium: moving stage + real PD assets + 9 Runway clips + brand grade/grain + 4-layer audio with 121 SFX + real 1963 oral-argument excerpt + burned captions). QC v001 = pass_with_warnings. NOT auto-approved — owner must watch the cut and approve this exact hash.",
+  "owner_review_focus": [
+    "Watch end-to-end: motion every 4-8s, no static-over-4s shot, no AI warping/morphing.",
+    "Caption sync (QC-0007: proportional timing, not forced-aligned — possible minor drift).",
+    "Real oral-argument excerpt at S013 briefly overlaps VO (QC-0009) — acceptable or needs a narration gap?",
+    "Factual accuracy of symbolic reenactments (QC-0010)."
+  ],
+  "pre_publish_gates_remaining": [
+    "this first-cut approval (APR-0002)",
+    "caption forced-alignment verify (QC-0007)",
+    "research live-verification SRC-0001..0003 (QC-0008)",
+    "title + thumbnail approval (separate APR)",
+    "publish-preflight + private upload + owner publish GO"
+  ],
+  "staleness": "Per rule 12 this request targets the exact v001 hash above; any re-render (e.g. the v002 still-upgrade pass, or the in-flight audio/caption edits) invalidates this request and requires a new APR against the new hash.",
+  "related": {
+    "rights_manifest": "v002 (additive superset; v001 cut keeps valid v001 rights)",
+    "qc_report": "v001",
+    "v002_upgrade_pool": "episodes/PD-2026-002-gideon/05_visuals/v002_still_upgrade_map.md"
+  }
+}
