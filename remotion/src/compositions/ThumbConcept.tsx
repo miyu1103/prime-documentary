@@ -46,14 +46,33 @@ const Scales: React.FC = () => (
   </svg>
 );
 
-const SYM: Record<string, React.FC> = {gavel: Gavel, bars: Bars, scales: Scales};
+/** A handwritten letter sheet with a pencil — the icon of the Gideon story. */
+const Letter: React.FC = () => (
+  <svg width="520" height="520" viewBox="0 0 420 420">
+    <g transform="rotate(-8 210 210)">
+      <rect x="90" y="60" width="240" height="300" rx="8" fill={`${S.silver}1a`} stroke={S.silver} strokeWidth="4" />
+      {[110, 145, 180, 215, 250, 285].map((y) => (
+        <rect key={y} x="120" y={y} width={y % 2 ? 150 : 180} height="7" rx="3" fill={`${S.silver}99`} />
+      ))}
+    </g>
+    {/* pencil */}
+    <g transform="rotate(38 300 300)">
+      <rect x="285" y="120" width="26" height="240" fill={S.gold} />
+      <polygon points="285,360 311,360 298,400" fill={S.silver} />
+      <polygon points="290,392 306,392 298,408" fill={S.ink} />
+      <rect x="285" y="120" width="26" height="26" fill={`${S.electric}`} />
+    </g>
+  </svg>
+);
+
+const SYM: Record<string, React.FC> = {gavel: Gavel, bars: Bars, scales: Scales, letter: Letter};
 
 export type ThumbConceptProps = {
   kicker?: string;
   line1: string;
   line2: string;
   sub?: string;
-  symbol: 'gavel' | 'bars' | 'scales';
+  symbol: 'gavel' | 'bars' | 'scales' | 'letter';
   /** Optional real background still (Midjourney) — static path or http; falls back to gradient.
    *  When supplied, the coded symbol is hidden by default (the photo is the visual). */
   backgroundSrc?: string | null;
