@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260615-002",
   "slug": "gideon",
   "title_working": "He Had No Lawyer — So He Beat the Supreme Court",
-  "state": "edit_review",
+  "state": "scheduled",
   "risk_class": "R1",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -32,7 +32,10 @@
   },
   "artifacts": [],
   "approvals": [
-    "APR-0001"
+    "APR-0001",
+    "APR-0002",
+    "APR-0003",
+    "APR-0004"
   ],
   "costs": {
     "estimated": {
@@ -53,10 +56,7 @@
     }
   },
   "warnings": [
-    "PREMIUM cut v2 rendered (owner-note fixes applied): gideon_premium_v001.mp4 (700s, sha256:ffcbcea3efd5..). QC pass_with_warnings.",
-    "Owner-note fixes DONE: (1) captions forced-aligned frame-accurate + clean breaks (captions.v003, shifted for opening); (2) hook tightened 14s->7.5s (5-8s spec); (3) reusable branded opening (~3.5s) + standard branded end-card — same bookends every episode (components/Bookends.tsx).",
-    "State edit_review: awaiting OWNER FIRST-CUT approval (watch the cut) — not auto-approved.",
-    "Pre-publish gates remaining: research live-verification (QC-0008), owner title/thumbnail approval, owner publish approval. Optional polish: archive.org B-roll, opinion-PDF, Justice-era Black portrait."
+    "UPLOADED PRIVATE to YouTube: video_id ch2hQ5jhDmQ (https://youtu.be/ch2hQ5jhDmQ), click thumbnail set. PUBLIC flip pending explicit owner go (recommend research SRC live-verification first, QC-0008)."
   ],
   "blockers": [],
   "created_at": "2026-06-15T04:20:31.666942+00:00",
