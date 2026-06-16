@@ -28,28 +28,40 @@ FFPROBE = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffprobe.exe"
 
 VIDEO = REPO / "remotion/out/gideon_premium.mp4"
 NARR = MEDIA / "episodes" / EP / "06_voice/master/vc_master_v001.mp3"
-SRT = REPO / "episodes" / EP / "08_edit/captions.v001.srt"
+SRT = REPO / "episodes" / EP / "08_edit/captions.v002.srt"  # forced-aligned
 EPM = MEDIA / "episodes" / EP / "07_music"
 REAL = MEDIA / "episodes" / EP / "05_visuals/real"
 LIB = MEDIA / "library"
 SFXD = LIB / "sfx"
 OUT = MEDIA / "episodes" / EP / "08_edit" / "gideon_premium_v001.mp4"
-TOTAL = 694.411
+ENDCARD_SEC = 9.0
 
-# music regions (start,end,track) — same plan as the cue sheet
-REGIONS = [
-    (EPM / "mus_gideon_hook_pencil.mp3", 0.0, 42.695),
-    (LIB / "music/opening/mus_20260614_opening_measured_arpeggio_v1.mp3", 42.695, 98.981),
-    (LIB / "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v1.mp3", 98.981, 145.823),
-    (EPM / "mus_gideon_wall_betts.mp3", 145.823, 308.766),
-    (EPM / "mus_gideon_reveal_verdict.mp3", 308.766, 457.838),
-    (LIB / "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3", 457.838, 500.603),
-    (LIB / "music/somber/mus_20260614_somber_ledger_of_ash_v1.mp3", 500.603, 531.412),
-    (LIB / "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3", 531.412, 599.98),
-    (EPM / "mus_gideon_outro.mp3", 599.98, TOTAL),
-]
+# timing-derived (robust to hook/timeline changes): music regions keyed to scene-start boundaries.
+_TM = json.loads((REPO / "episodes" / EP / "08_edit/timing.v001.json").read_text("utf-8"))
+_START = {s["scene_id"]: s["start"] for s in _TM["scenes"]}
+NARR_TOTAL = _TM["total_seconds"]
+TOTAL = round(NARR_TOTAL + ENDCARD_SEC, 3)
+
+
+def _t(scene_id, end=False):
+    return TOTAL if scene_id == "END" else _START[scene_id]
+
+
+# (track, start_scene, end_scene) — boundaries resolve from timing; outro covers the end-card.
+REGIONS = [(t, _t(a), _t(b)) for (t, a, b) in [
+    (EPM / "mus_gideon_hook_pencil.mp3", "S001", "S003"),
+    (LIB / "music/opening/mus_20260614_opening_measured_arpeggio_v1.mp3", "S003", "S004"),
+    (LIB / "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v1.mp3", "S004", "S006"),
+    (EPM / "mus_gideon_wall_betts.mp3", "S006", "S013"),
+    (EPM / "mus_gideon_reveal_verdict.mp3", "S013", "S020"),
+    (LIB / "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3", "S020", "S022"),
+    (LIB / "music/somber/mus_20260614_somber_ledger_of_ash_v1.mp3", "S022", "S023"),
+    (LIB / "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3", "S023", "S025"),
+    (EPM / "mus_gideon_outro.mp3", "S025", "END"),
+]]
 AMB = LIB / "ambience/amb_institutional_drone.mp3"
 ARG = REAL / "gideon_oral_argument_19630115_part1.mp3"
+ARG_AT = _START["S013"]  # feature the real argument at the S013 beat
 
 # per-scene shot counts (from shotlist.v001.md) — used to place a transition SFX per shot boundary
 SHOTS = {"S001":3,"S002":5,"S003":6,"S004":4,"S005":3,"S006":5,"S007":3,"S008":3,"S009":4,"S010":4,
@@ -144,7 +156,7 @@ def main():
          "-i",str(VIDEO),"-i",str(NARR),"-i",str(music),"-stream_loop","-1","-i",str(AMB),"-i",str(ARG),"-i",str(sfx),
          "-filter_complex",
          f"[3:a]atrim=0:{TOTAL:.3f},volume=0.05[amb];"
-         f"[4:a]atrim=40:50,volume=0.16,afade=t=in:st=0:d=1,afade=t=out:st=8:d=2,adelay=309000|309000[arg];"
+         f"[4:a]atrim=40:50,volume=0.16,afade=t=in:st=0:d=1,afade=t=out:st=8:d=2,adelay={int(ARG_AT*1000)}|{int(ARG_AT*1000)}[arg];"
          f"[2:a]volume=0.16[mus];[5:a]volume=0.5[sfx];[1:a]volume=1.0[narr];"
          f"[narr][mus][amb][arg][sfx]amix=inputs=5:normalize=0:duration=longest:dropout_transition=0,"
          f"afade=t=out:st={TOTAL-2.0:.3f}:d=2.0[a]",

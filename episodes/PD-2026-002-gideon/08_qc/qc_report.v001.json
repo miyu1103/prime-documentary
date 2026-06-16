@@ -66,11 +66,29 @@
     },
     {
       "finding_id": "QC-0007",
-      "severity": "S2",
-      "code": "caption_sync_proportional",
-      "message": "Captions are narration-text-exact but timed by proportional split, not forced-aligned to TTS word/char timestamps (0004 §E3). Verify sync / run forced alignment before publish; possible minor drift (EP1 lesson CMT-0003).",
-      "location": "08_edit/captions.v001.srt",
-      "action": "review",
+      "severity": "S0",
+      "code": "caption_sync_forced_aligned",
+      "message": "FIXED (owner note): captions re-built by forced alignment (faster-whisper word timestamps) -> frame-accurate timing + clean clause/sentence breaks (5-8 words), narration text. captions.v002.srt (310 lines). No more odd mid-clause breaks or drift.",
+      "location": "08_edit/captions.v002.srt",
+      "action": "none",
+      "related_ids": []
+    },
+    {
+      "finding_id": "QC-0012",
+      "severity": "S0",
+      "code": "hook_5_8s",
+      "message": "FIXED (owner note): flash-forward hook tightened from 14.0s to ~7.5s (VC-0001 re-voiced) — within the 0004 §B 5-8s spec; then cold-open -> opening -> body.",
+      "location": "06_audio/voice_plan.v001.json",
+      "action": "none",
+      "related_ids": []
+    },
+    {
+      "finding_id": "QC-0013",
+      "severity": "S0",
+      "code": "ending_endcard",
+      "message": "FIXED (owner note): distinct branded end-card added (payoff line -> attribution -> Subscribe CTA -> next-ep tease -> PD brand), visually separated from the body. ~9s.",
+      "location": "GideonPremium EndCard",
+      "action": "none",
       "related_ids": []
     },
     {

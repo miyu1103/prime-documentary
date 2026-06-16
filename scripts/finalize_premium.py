@@ -48,7 +48,9 @@ def main():
             {"finding_id":"QC-0004","severity":"S0","code":"real_asset_usage","message":"Real PD assets used first: pencil cert petition (hook hero + petition beats), Hugo Black portrait (opinion author), real 1963 oral-argument audio (S013). 8 real inserts (floor 8-12).","location":"05_visuals/real","action":"none","related_ids":["AST-0200","AST-0210","AST-0220"]},
             {"finding_id":"QC-0005","severity":"S0","code":"synthetic_media_label","message":"FIXED: on-screen 'symbolic reconstruction — not authentic footage' label now burned on AI reenactment shots (S002,S004,S007,S013,S020,S021,S027). Description also discloses AI narration + reconstructions.","location":"GideonPremium ReconLabel","action":"none","related_ids":[]},
             {"finding_id":"QC-0006","severity":"S0","code":"rights_complete","message":"rights_manifest.v001 = 67 assets, 67/67 sha256 verified, 0 needs_verification (incl. 8 real PD assets + library reuse).","location":"09_package/rights_manifest.v001.json","action":"none","related_ids":[]},
-            {"finding_id":"QC-0007","severity":"S2","code":"caption_sync_proportional","message":"Captions are narration-text-exact but timed by proportional split, not forced-aligned to TTS word/char timestamps (0004 §E3). Verify sync / run forced alignment before publish; possible minor drift (EP1 lesson CMT-0003).","location":"08_edit/captions.v001.srt","action":"review","related_ids":[]},
+            {"finding_id":"QC-0007","severity":"S0","code":"caption_sync_forced_aligned","message":"FIXED (owner note): captions re-built by forced alignment (faster-whisper word timestamps) -> frame-accurate timing + clean clause/sentence breaks (5-8 words), narration text. captions.v002.srt (310 lines). No more odd mid-clause breaks or drift.","location":"08_edit/captions.v002.srt","action":"none","related_ids":[]},
+            {"finding_id":"QC-0012","severity":"S0","code":"hook_5_8s","message":"FIXED (owner note): flash-forward hook tightened from 14.0s to ~7.5s (VC-0001 re-voiced) — within the 0004 §B 5-8s spec; then cold-open -> opening -> body.","location":"06_audio/voice_plan.v001.json","action":"none","related_ids":[]},
+            {"finding_id":"QC-0013","severity":"S0","code":"ending_endcard","message":"FIXED (owner note): distinct branded end-card added (payoff line -> attribution -> Subscribe CTA -> next-ep tease -> PD brand), visually separated from the body. ~9s.","location":"GideonPremium EndCard","action":"none","related_ids":[]},
             {"finding_id":"QC-0008","severity":"S2","code":"research_live_verification_pending","message":"SRC-0001..0003 durable content_hash/verified_at not captured (generalize run_research for 372 U.S. 335 / 316 U.S. 455). Citations valid; flip research QC warn->pass before publish (APR-0001 conditions).","location":"01_research/sources.v001.json","action":"research","related_ids":["SRC-0001","SRC-0002","SRC-0003"]},
             {"finding_id":"QC-0009","severity":"S3","code":"real_audio_vo_overlap","message":"The featured real oral-argument excerpt at S013 (~10s, low) briefly overlaps VO. Consider a dedicated narration gap to foreground it, or keep as low texture (current). Human listen-through recommended.","location":"08_edit/gideon_premium_v001.mp4","action":"review","related_ids":[]},
             {"finding_id":"QC-0010","severity":"S3","code":"real_person_accuracy","message":"Black portrait is an authentic but younger photo; symbolic reenactments depict Gideon/Fortas. Keep facts accurate (retried WITH counsel and acquitted; Fortas court-appointed). Human review.","location":"04_scenes/scene_plan.v001.json","action":"review","related_ids":["CLM-0004","CLM-0007"]},
@@ -82,11 +84,12 @@ def main():
 
     mani = json.loads((EPDIR / "manifest.json").read_text("utf-8"))
     mani["state"] = "edit_review"
-    mani["active_revisions"].update({"qc_report": "v001", "edit": "v001"})
+    mani["active_revisions"].update({"qc_report": "v001", "edit": "v002", "captions": "v002"})
     mani["warnings"] = [
-        f"PREMIUM first cut rendered: gideon_premium_v001.mp4 ({dur:.0f}s, sha256:{h[:12]}..). QC pass_with_warnings (6xS0, 2xS2, 2xS3, 1xS5).",
+        f"PREMIUM cut v2 rendered (owner-note fixes applied): gideon_premium_v001.mp4 ({dur:.0f}s, sha256:{h[:12]}..). QC pass_with_warnings.",
+        "Owner-note fixes DONE: (1) captions forced-aligned frame-accurate + clean breaks (captions.v002); (2) hook tightened 14s->7.5s (5-8s spec); (3) distinct branded end-card added.",
         "State edit_review: awaiting OWNER FIRST-CUT approval (watch the cut) — not auto-approved.",
-        "Pre-publish gates remaining: caption forced-align (QC-0007), research live-verification (QC-0008), owner title/thumbnail approval, owner publish approval. B-roll/opinion-PDF optional polish.",
+        "Pre-publish gates remaining: research live-verification (QC-0008), owner title/thumbnail approval, owner publish approval. Optional polish: archive.org B-roll, opinion-PDF, Justice-era Black portrait.",
     ]
     mani["updated_at"] = TS
     (EPDIR / "manifest.json").write_text(json.dumps(mani, indent=2, ensure_ascii=False) + "\n", "utf-8")

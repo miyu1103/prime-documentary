@@ -5,7 +5,7 @@
 import type {AnimaticScene} from "./miranda_animatic";
 
 export const GIDEON_ANIMATIC: AnimaticScene[] = [
-  {sceneId: "S001", visualMode: "typography", durationSec: 14.272, emotion: "hook_tension", review: true, motifHint: "REM-kinetic-hook", onScreenText: ["NO LAWYER", "9–0"], citation: {source: "Gideon v. Wainwright, 372 U.S. 335 (1963)", claimIds: ["CLM-0002"]}, caption: ``},
+  {sceneId: "S001", visualMode: "typography", durationSec: 7.759, emotion: "hook_tension", review: true, motifHint: "REM-kinetic-hook", onScreenText: ["NO LAWYER", "9–0"], citation: {source: "Gideon v. Wainwright, 372 U.S. 335 (1963)", claimIds: ["CLM-0002"]}, caption: ``},
   {sceneId: "S002", visualMode: "reenactment", durationSec: 28.423, emotion: "curiosity", review: true, motifHint: "MJ-S002-prison-cell", onScreenText: ["Clarence Earl Gideon", "Florida, 1961"], citation: {source: "Gideon v. Wainwright, 372 U.S. 335 (1963)", claimIds: ["CLM-0004"]}, caption: ``},
   {sceneId: "S003", visualMode: "typography", durationSec: 56.286, emotion: "orientation", review: false, motifHint: "REM-thesis-kinetic", onScreenText: ["A free lawyer is younger than your grandparents", "1 letter · 1 prisoner · 1 unanimous ruling"], citation: {source: "Gideon v. Wainwright, 372 U.S. 335 (1963)", claimIds: ["CLM-0001"]}, caption: ``},
   {sceneId: "S004", visualMode: "reenactment", durationSec: 24.389, emotion: "grounding", review: true, motifHint: "MJ-S004-poolroom", onScreenText: ["Breaking & entering — a felony"], citation: {source: "Gideon v. Wainwright, 372 U.S. 335 (1963)", claimIds: ["CLM-0004"]}, caption: ``},

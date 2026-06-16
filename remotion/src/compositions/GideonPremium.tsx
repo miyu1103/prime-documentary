@@ -4,7 +4,10 @@ import {
   Img,
   OffthreadVideo,
   Sequence,
+  spring,
+  interpolate,
   staticFile,
+  useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
 import {BRAND} from '../brand';
@@ -151,8 +154,52 @@ const SceneBlock: React.FC<{scene: AnimaticScene}> = ({scene}) => {
   );
 };
 
+export const ENDCARD_SEC = 9;
+
+/** A timed reveal line. */
+const Reveal: React.FC<{at: number; children: React.ReactNode; style?: React.CSSProperties}> = ({at, children, style}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const e = spring({frame: frame - at, fps, config: {damping: 18, stiffness: 110, mass: 0.7}});
+  const y = interpolate(e, [0, 1], [26, 0]);
+  return <div style={{transform: `translateY(${y}px)`, opacity: Math.min(e * 1.4, 1), ...style}}>{children}</div>;
+};
+
+/** Distinct branded end-card / outro: payoff → attribution → CTA + next-ep tease. */
+const EndCard: React.FC = () => {
+  const {fps, durationInFrames} = useVideoConfig();
+  const frame = useCurrentFrame();
+  const out = interpolate(frame, [durationInFrames - 18, durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{background: `radial-gradient(120% 100% at 50% 38%, ${NAVY} 0%, ${INK} 82%)`, opacity: out}}>
+      <Particles seed="endcard" count={20} />
+      <div style={{position: 'absolute', left: 0, right: 0, bottom: '32%', height: 4, background: GOLD, opacity: 0.85}} />
+      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', padding: 90, textAlign: 'center', gap: 16}}>
+        <Reveal at={Math.round(0.3 * fps)} style={{color: WHITE, fontFamily: BRAND.font.display, fontWeight: 900, fontSize: 78, letterSpacing: -1, textTransform: 'uppercase', textShadow: `0 0 38px ${GOLD}55`}}>
+          “You have the right<br />to an attorney.”
+        </Reveal>
+        <Reveal at={Math.round(3.2 * fps)} style={{color: GOLD, fontFamily: BRAND.font.body, fontWeight: 700, fontSize: 30, letterSpacing: 1}}>
+          Gideon v. Wainwright · 1963 — a right won with a pencil.
+        </Reveal>
+      </AbsoluteFill>
+      <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', padding: '0 0 70px', gap: 10}}>
+        <Reveal at={Math.round(5.6 * fps)} style={{color: WHITE, fontFamily: BRAND.font.body, fontWeight: 700, fontSize: 34}}>
+          ▶ Subscribe — Landmark Rights Cases
+        </Reveal>
+        <Reveal at={Math.round(6.4 * fps)} style={{color: SILVER, fontFamily: BRAND.font.body, fontSize: 26}}>
+          Next: who decides what counts as a crime?
+        </Reveal>
+        <Reveal at={Math.round(7.0 * fps)} style={{color: SILVER, fontFamily: BRAND.font.body, fontSize: 20, letterSpacing: 3, opacity: 0.8, marginTop: 8}}>
+          PRIME DOCUMENTARY
+        </Reveal>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
 export const GideonPremium: React.FC = () => {
   const {fps} = useVideoConfig();
+  const narrTotal = GIDEON_ANIMATIC.reduce((a, s) => a + s.durationSec, 0);
   let cursor = 0;
   return (
     <AbsoluteFill style={{backgroundColor: INK}}>
@@ -166,10 +213,13 @@ export const GideonPremium: React.FC = () => {
           </Sequence>
         );
       })}
+      <Sequence from={Math.round(narrTotal * fps)} durationInFrames={Math.round(ENDCARD_SEC * fps)} name="endcard">
+        <EndCard />
+      </Sequence>
       <Grain opacity={0.05} />
     </AbsoluteFill>
   );
 };
 
 export const gideonPremiumDurationInFrames = (fps: number): number =>
-  Math.round(GIDEON_ANIMATIC.reduce((a, s) => a + s.durationSec, 0) * fps);
+  Math.round((GIDEON_ANIMATIC.reduce((a, s) => a + s.durationSec, 0) + ENDCARD_SEC) * fps);
