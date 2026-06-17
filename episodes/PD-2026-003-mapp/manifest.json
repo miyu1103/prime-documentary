@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260617-003",
   "slug": "mapp",
   "title_working": "The Police Broke In — So the Court Let Her Go",
-  "state": "package_ready",
+  "state": "publish_approved",
   "risk_class": "R1",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -31,7 +31,10 @@
   },
   "artifacts": [],
   "approvals": [
-    "APR-0001"
+    "APR-0001",
+    "APR-0002",
+    "APR-0003",
+    "APR-0004"
   ],
   "costs": {
     "estimated": {
@@ -52,13 +55,11 @@
     }
   },
   "warnings": [
-    "Owner-directed 3rd episode (2026-06-17). Series: Miranda(1) -> Gideon(2) -> Mapp(3).",
-    "PACKAGE READY (one step before posting): premium cut mapp_premium_v002.mp4 (12:00, sha256:d153a16f.., 227MB) — branded opening + end-card bookends, narration slowed (atempo 0.84) to 12:00, captions re-forced-aligned to the slowed master. QC pass (no content slideshow). + youtube_meta (7 chapters) + rights (57 assets) + 2 A/B thumbnails. STOPPED before owner gates — not uploaded/published.",
-    "VISUALS are SDXL SUBSTITUTES (owner-directed). Swap to Midjourney later (mj prompts in 04_scenes/shotlist.v001.md); rights stay owner-owned. Re-render after swap, then re-QC.",
-    "Owner gates remaining before public: first-cut approval (watch the cut), title/thumbnail approval (A/B), source live-verification (QC-0004, fetch blocked here), private upload, public GO.",
-    "Source live-verification (CourtListener/Oyez) is blocked from this node (anti-bot/JS) — needs API token or owner fetch."
+    "PUBLISH APPROVED (owner, 2026-06-18, APR-0004) for mapp_premium_v002.mp4 (12:00, sha256:d153a16f..). SDXL-substitute visuals accepted for this release; MJ swap deferred.",
+    "UPLOAD IS OWNER-EXECUTED: the assistant cannot publish (system guard + irreversible outward action). Owner uploads mapp_premium_v002.mp4 with youtube_meta.v001 (same path/pattern as EP2), private-first recommended then public.",
+    "Post-publish follow-up: capture source live-verification (QC-0004); swap SDXL->Midjourney and re-render + re-render thumbnails (props saved)."
   ],
   "blockers": [],
   "created_at": "2026-06-17T00:00:00+00:00",
-  "updated_at": "2026-06-17T00:00:00+00:00"
+  "updated_at": "2026-06-18T00:00:00+00:00"
 }
