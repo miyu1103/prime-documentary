@@ -107,6 +107,52 @@
       "units": "USD",
       "status": "needs_primary_confirm",
       "notes": "The widely-cited '$65B' is a credit-LIMIT/capacity figure, not the amount stolen. Do NOT conflate with the ~$8B customer shortfall. Confirm phrasing carefully before script lock."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "Bankman-Fried's estimated personal fortune peaked around $26 billion in early 2022; during the November 2022 collapse Bloomberg recorded his assets falling from about $16 billion to under $1 billion in a single day (Nov 8, 2022), and to effectively zero by the FTX bankruptcy filing on Nov 11, 2022.",
+      "importance": "high",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0006"],
+      "confidence": 0.93,
+      "allowed_wording": ["an estimated fortune of around twenty-six billion dollars", "by some estimates his wealth fell from sixteen billion to near zero in a single day"],
+      "prohibited_wording": ["he had exactly $26 billion in cash"],
+      "temporal_scope": "2022",
+      "geographic_scope": "United States",
+      "units": "USD",
+      "status": "approved",
+      "notes": "These are estimates of paper net worth; use 'estimated/by some estimates'. Vivid scale beat."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "At its peak FTX ran a high-profile marketing push including a 2022 Super Bowl commercial starring Larry David and the naming rights to the Miami Heat's arena ('FTX Arena', a deal approved in 2021); after the collapse the arena name was stripped and later became the Kaseya Center (2023).",
+      "importance": "medium",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0007", "SRC-0008"],
+      "confidence": 0.97,
+      "allowed_wording": ["a Super Bowl ad", "its name on an NBA arena"],
+      "prohibited_wording": ["the celebrities were in on the fraud"],
+      "temporal_scope": "2021-2023",
+      "geographic_scope": "United States",
+      "status": "approved",
+      "notes": "Do NOT imply endorsers knew of or took part in wrongdoing. Use to show the trusted public image."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "Bankman-Fried cultivated an 'eccentric genius' image — rumpled T-shirt and shorts, sleeping on beanbag chairs — and was reported (by FTX's head of product) to have played the video game League of Legends during an investor pitch meeting.",
+      "importance": "low",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": ["SRC-0009"],
+      "confidence": 0.85,
+      "allowed_wording": ["he was reported to have played a video game during an investor pitch", "shorts, T-shirt, beanbag-chair image"],
+      "prohibited_wording": ["he never cared about the company"],
+      "temporal_scope": "2021-2022",
+      "geographic_scope": "United States",
+      "status": "approved",
+      "notes": "Characterization detail; attribute the gaming anecdote ('reportedly'). Color, not a fact-critical claim."
     }
   ]
 }
