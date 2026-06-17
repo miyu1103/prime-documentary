@@ -6,8 +6,15 @@ import {DiagramFlow} from '../components/DiagramFlow';
 import {SceneArt} from '../components/SceneArt';
 import {Grain} from '../components/Grain';
 import {CameraRig, Particles, LightSweep, Vignette} from '../components/Motion';
+import {BrandOpening, BrandEndcard, OPENING_SEC, ENDCARD_SEC} from '../components/Bookends';
 import type {AnimaticScene} from '../data/miranda_animatic';
 import {MAPP_ANIMATIC, MAPP_SCENE_IMG} from '../data/mapp_animatic';
+
+// Reusable channel bookends (same every episode): BrandOpening (after the flash-forward hook) + BrandEndcard.
+const SERIES_LABEL = 'Landmark Rights Cases · No. 3';
+const EP_TITLE = 'Mapp v. Ohio';
+const EP_SUBTITLE = 'The illegal-search rule';
+const HOOK_SCENES = MAPP_ANIMATIC.filter((s) => s.emotion === 'hook').length || 1;
 
 /**
  * MappPremium — EP3 (Mapp v. Ohio), 0004-standard cut. Every shot MOVES (the moving
@@ -96,23 +103,39 @@ const StillStage: React.FC<{scene: AnimaticScene}> = ({scene}) => {
 
 export const MappPremium: React.FC = () => {
   const {fps} = useVideoConfig();
+  const els: React.ReactNode[] = [];
   let cursor = 0;
+  MAPP_ANIMATIC.forEach((scene, i) => {
+    const from = Math.round(cursor * fps);
+    const dur = Math.max(1, Math.round(scene.durationSec * fps));
+    cursor += scene.durationSec;
+    els.push(
+      <Sequence key={scene.sceneId} from={from} durationInFrames={dur} name={scene.sceneId}>
+        <StillStage scene={scene} />
+      </Sequence>
+    );
+    if (i === HOOK_SCENES - 1) {
+      // branded title opening right after the flash-forward hook, then the rest shifts +OPENING_SEC
+      els.push(
+        <Sequence key="opening" from={Math.round(cursor * fps)} durationInFrames={Math.round(OPENING_SEC * fps)} name="opening">
+          <BrandOpening seriesLabel={SERIES_LABEL} title={EP_TITLE} subtitle={EP_SUBTITLE} />
+        </Sequence>
+      );
+      cursor += OPENING_SEC;
+    }
+  });
+  els.push(
+    <Sequence key="endcard" from={Math.round(cursor * fps)} durationInFrames={Math.round(ENDCARD_SEC * fps)} name="endcard">
+      <BrandEndcard />
+    </Sequence>
+  );
   return (
     <AbsoluteFill style={{backgroundColor: INK}}>
-      {MAPP_ANIMATIC.map((scene) => {
-        const from = Math.round(cursor * fps);
-        const dur = Math.max(1, Math.round(scene.durationSec * fps));
-        cursor += scene.durationSec;
-        return (
-          <Sequence key={scene.sceneId} from={from} durationInFrames={dur} name={scene.sceneId}>
-            <StillStage scene={scene} />
-          </Sequence>
-        );
-      })}
+      {els}
       <Grain opacity={0.05} />
     </AbsoluteFill>
   );
 };
 
 export const mappPremiumDurationInFrames = (fps: number): number =>
-  Math.round(MAPP_ANIMATIC.reduce((a, s) => a + s.durationSec, 0) * fps);
+  Math.round((MAPP_ANIMATIC.reduce((a, s) => a + s.durationSec, 0) + OPENING_SEC + ENDCARD_SEC) * fps);

@@ -22,9 +22,9 @@
     "narration_index": "v001",
     "narration_master": "v001",
     "music_registry": "v001",
-    "timing": "v001",
-    "captions": "v001",
-    "edit": "v001",
+    "timing": "v002",
+    "captions": "v002",
+    "edit": "v002",
     "qc_report": "v001",
     "youtube_meta": "v001",
     "rights_manifest": "v001"
@@ -53,7 +53,7 @@
   },
   "warnings": [
     "Owner-directed 3rd episode (2026-06-17). Series: Miranda(1) -> Gideon(2) -> Mapp(3).",
-    "PACKAGE READY (one step before posting): premium cut mapp_premium_v001.mp4 (9:40, sha256:2449119d.., 192MB) + QC pass (freezedetect 0 = no slideshow) + youtube_meta + rights (57 assets) + 2 A/B thumbnails. STOPPED before owner gates — not uploaded/published.",
+    "PACKAGE READY (one step before posting): premium cut mapp_premium_v002.mp4 (12:00, sha256:d153a16f.., 227MB) — branded opening + end-card bookends, narration slowed (atempo 0.84) to 12:00, captions re-forced-aligned to the slowed master. QC pass (no content slideshow). + youtube_meta (7 chapters) + rights (57 assets) + 2 A/B thumbnails. STOPPED before owner gates — not uploaded/published.",
     "VISUALS are SDXL SUBSTITUTES (owner-directed). Swap to Midjourney later (mj prompts in 04_scenes/shotlist.v001.md); rights stay owner-owned. Re-render after swap, then re-QC.",
     "Owner gates remaining before public: first-cut approval (watch the cut), title/thumbnail approval (A/B), source live-verification (QC-0004, fetch blocked here), private upload, public GO.",
     "Source live-verification (CourtListener/Oyez) is blocked from this node (anti-bot/JS) — needs API token or owner fetch."
