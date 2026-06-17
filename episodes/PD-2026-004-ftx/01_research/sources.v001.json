@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-004-ftx",
+  "revision": "v001",
+  "note": "Initial source set, web-verified 2026-06-18. Tier-1 = major outlets / court reporting. Primary court documents (indictment, verdict sheet, sentencing transcript, bankruptcy filings) to be added before script lock; all dollar figures must trace to court record or official filing.",
+  "sources": [
+    {
+      "source_id": "SRC-0001",
+      "title": "Sam Bankman-Fried found guilty on all seven criminal fraud counts",
+      "publisher": "CNBC",
+      "url": "https://www.cnbc.com/2023/11/02/sam-bankman-fried-found-guilty-on-all-seven-criminal-fraud-counts.html",
+      "date": "2023-11-02",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0001", "CLM-0002"]
+    },
+    {
+      "source_id": "SRC-0002",
+      "title": "Guilty verdict for Sam Bankman-Fried in FTX's fraud trial",
+      "publisher": "NPR",
+      "url": "https://www.npr.org/2023/11/02/1210100678/sam-bankman-fried-trial-verdict-ftx-crypto",
+      "date": "2023-11-02",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0001", "CLM-0002"]
+    },
+    {
+      "source_id": "SRC-0003",
+      "title": "Sam Bankman-Fried sentenced to 25 years in federal prison",
+      "publisher": "CNN Business",
+      "url": "https://www.cnn.com/2024/03/28/business/ftx-sam-bankman-fried-sentencing",
+      "date": "2024-03-28",
+      "tier": "tier1",
+      "verified": true,
+      "supports": ["CLM-0003", "CLM-0004"]
+    },
+    {
+      "source_id": "SRC-0004",
+      "title": "Gary Wang said Sam Bankman-Fried ordered Alameda to use FTX customer funds (trial testimony)",
+      "publisher": "Slate",
+      "url": "https://slate.com/technology/2023/10/gary-wang-sam-bankman-fried-trial-testimony-ftx-alameda-backdoor.html",
+      "date": "2023-10",
+      "tier": "tier2",
+      "verified": true,
+      "supports": ["CLM-0005", "CLM-0006"]
+    },
+    {
+      "source_id": "SRC-0005",
+      "title": "FTX Python code 'allowed' Alameda Research to spend deposits",
+      "publisher": "The Register",
+      "url": "https://www.theregister.com/security/2023/10/10/ftx_python_code_allowed_alameda/",
+      "date": "2023-10-10",
+      "tier": "tier2",
+      "verified": true,
+      "supports": ["CLM-0005", "CLM-0006"]
+    }
+  ]
+}

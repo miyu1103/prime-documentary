@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-004-ftx",
+  "revision": "v001",
+  "note": "Core verified claims for script anchoring. R2 sensitivity: state only adjudicated facts; attribute trial assertions to prosecution/testimony. Dollar figures to be re-confirmed against court record before script lock.",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "On November 2, 2023, a federal jury in the Southern District of New York found Samuel Bankman-Fried, founder of the crypto exchange FTX and trading firm Alameda Research, guilty on all seven counts: two counts of wire fraud, two counts of conspiracy to commit wire fraud, one count of conspiracy to commit securities fraud, one count of conspiracy to commit commodities fraud, and one count of conspiracy to commit money laundering.",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "A New York jury found him guilty on all seven counts.",
+        "He was convicted of fraud and conspiracy."
+      ],
+      "prohibited_wording": [
+        "He admitted to stealing the money.",
+        "He was the only one responsible."
+      ],
+      "temporal_scope": "2023-11-02",
+      "geographic_scope": "United States (SDNY)",
+      "status": "approved",
+      "notes": "Adjudicated fact. The conviction (not allegation) is what we state as fact."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Prosecutors and multiple major outlets described the FTX fraud as one of the largest financial frauds in US history, drawing comparison to Bernie Madoff's Ponzi scheme; Bankman-Fried faced a statutory maximum of up to 115 years.",
+      "importance": "high",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "confidence": 0.95,
+      "allowed_wording": ["prosecutors called it one of the biggest financial frauds in American history"],
+      "prohibited_wording": ["the biggest fraud ever"],
+      "temporal_scope": "2023",
+      "geographic_scope": "United States",
+      "status": "approved",
+      "notes": "Attribute the 'largest' framing to prosecutors/outlets, not as our own absolute claim."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "On March 28, 2024, Judge Lewis Kaplan sentenced Bankman-Fried to 25 years in federal prison and ordered forfeiture of approximately $11.02 billion.",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0003"],
+      "confidence": 0.98,
+      "allowed_wording": ["He was sentenced to 25 years in prison.", "The judge ordered more than $11 billion in forfeiture."],
+      "prohibited_wording": ["He will serve exactly 25 years."],
+      "temporal_scope": "2024-03-28",
+      "geographic_scope": "United States (SDNY)",
+      "status": "approved",
+      "notes": "Sentence + forfeiture from court."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "Reported losses associated with the collapse include roughly $8 billion owed to FTX customers, about $1.7 billion to FTX equity investors, and about $1.3 billion to Alameda Research lenders.",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "B",
+      "source_ids": ["SRC-0003"],
+      "confidence": 0.85,
+      "allowed_wording": ["customers were owed about $8 billion", "roughly $8 billion of customer money was gone"],
+      "prohibited_wording": ["customers lost everything forever", "exactly $8 billion was stolen"],
+      "temporal_scope": "2022-2024",
+      "geographic_scope": "Global customers / United States",
+      "units": "USD",
+      "status": "needs_primary_confirm",
+      "notes": "Re-confirm against sentencing record / bankruptcy filings before script lock; use 'about/roughly' framing. Note later recoveries in bankruptcy mean creditors were eventually repaid a large share — mention to stay accurate."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "At trial, FTX co-founder Gary Wang testified that, on Bankman-Fried's instruction, FTX's code gave Alameda Research special privileges — including an 'allow_negative' flag and an effectively enormous line of credit — letting Alameda withdraw and spend customer deposits in ways ordinary customers could not.",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0004", "SRC-0005"],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "A co-founder testified that the code let Alameda spend customer money.",
+        "Prosecutors pointed to a special setting in the code that gave Alameda a near-unlimited line of credit."
+      ],
+      "prohibited_wording": [
+        "Everyone at FTX knew and approved.",
+        "The code automatically stole money on its own."
+      ],
+      "temporal_scope": "trial testimony, Oct 2023 (re: code from ~2019)",
+      "geographic_scope": "United States",
+      "status": "approved",
+      "notes": "Attribute to trial testimony (Wang). This is the 'hidden mechanism' spine of the episode."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "The special Alameda credit line was reported at trial/coverage as reaching figures on the order of tens of billions of dollars of borrowing capacity, far beyond any normal customer.",
+      "importance": "medium",
+      "sensitivity": "high",
+      "grade": "C",
+      "source_ids": ["SRC-0004", "SRC-0005"],
+      "confidence": 0.7,
+      "allowed_wording": ["a line of credit far larger than any ordinary user's"],
+      "prohibited_wording": ["a confirmed $65 billion was withdrawn"],
+      "temporal_scope": "2019-2022",
+      "geographic_scope": "United States",
+      "units": "USD",
+      "status": "needs_primary_confirm",
+      "notes": "The widely-cited '$65B' is a credit-LIMIT/capacity figure, not the amount stolen. Do NOT conflate with the ~$8B customer shortfall. Confirm phrasing carefully before script lock."
+    }
+  ]
+}
