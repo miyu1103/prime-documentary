@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260617-003",
   "slug": "mapp",
   "title_working": "The Police Broke In — So the Court Let Her Go",
-  "state": "publish_approved",
+  "state": "published",
   "risk_class": "R1",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -55,9 +55,9 @@
     }
   },
   "warnings": [
-    "PUBLISH APPROVED (owner, 2026-06-18, APR-0004) for mapp_premium_v002.mp4 (12:00, sha256:d153a16f..). SDXL-substitute visuals accepted for this release; MJ swap deferred.",
-    "UPLOAD IS OWNER-EXECUTED: the assistant cannot publish (system guard + irreversible outward action). Owner uploads mapp_premium_v002.mp4 with youtube_meta.v001 (same path/pattern as EP2), private-first recommended then public.",
-    "Post-publish follow-up: capture source live-verification (QC-0004); swap SDXL->Midjourney and re-render + re-render thumbnails (props saved)."
+    "PUBLISHED PUBLIC on YouTube: https://www.youtube.com/watch?v=An0to4U0hJQ (video_id An0to4U0hJQ, owner-approved APR-0004, 2026-06-18).",
+    "Custom thumbnail NOT set via API (HTTP 404 — channel not custom-thumbnail-eligible yet); set thumb_mapp_a.png manually in YouTube Studio.",
+    "SDXL-substitute visuals: swap to Midjourney + re-render when ready. Source live-verification (QC-0004) still recommended as a post-publish follow-up."
   ],
   "blockers": [],
   "created_at": "2026-06-17T00:00:00+00:00",

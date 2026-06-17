@@ -1,7 +1,7 @@
 {
   "episode_id": "PD-2026-003-mapp",
   "revision": "v001",
-  "status": "approved_ready_for_upload",
+  "status": "published",
   "video_file": "mapp_premium_v002.mp4",
   "title": "The Police Broke In — So the Court Let Her Go",
   "title_alternates": [
@@ -76,7 +76,7 @@
   "language": "en-US",
   "audio_language": "en-US",
   "made_for_kids": false,
-  "visibility": "private",
+  "visibility": "public",
   "publish_approved": true,
   "first_cut_approved": true,
   "title_thumbnail_approved": true,
@@ -137,13 +137,17 @@
     "final_cut_hash": "d153a16f08f74e0322190267d2640f88a45629dfbe69bea21d355c4f957b6abe",
     "final_cut_path": "H:/pd-media/episodes/PD-2026-003-mapp/08_edit/mapp_premium_v002.mp4"
   },
-  "publish_gate": "approved_pending_owner_upload",
-  "publish_gate_blockers": [
-    "owner-executed upload/publish (system blocks publish from the assistant)",
-    "post-publish follow-up: source live-verification (QC-0004); Midjourney visual swap + thumbnail re-render"
-  ],
+  "publish_gate": "published",
+  "publish_gate_blockers": [],
   "generated_at": "2026-06-17T00:00:00+00:00",
   "first_cut_approval_ref": "APR-0002",
   "title_thumbnail_approval_ref": "APR-0003",
-  "publish_approval_ref": "APR-0004"
+  "publish_approval_ref": "APR-0004",
+  "video_id": "An0to4U0hJQ",
+  "url": "https://www.youtube.com/watch?v=An0to4U0hJQ",
+  "post_publish_followups": [
+    "Custom thumbnail not set via API (HTTP 404 — channel not yet eligible for custom thumbnails); set thumb_mapp_a.png manually in YouTube Studio.",
+    "Source live-verification (QC-0004) — capture 367 U.S. 643 / Wolf 338 U.S. 25 content_hash + verified_at.",
+    "Swap SDXL substitute visuals -> Midjourney, re-render, re-render thumbnails (props saved), optionally re-upload."
+  ]
 }
