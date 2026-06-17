@@ -92,13 +92,19 @@
   "thumbnail_ab_set": [
     {
       "slot": "A",
-      "concept": "NO WARRANT — officers at the door",
-      "file": "thumb_mapp_a.png"
+      "concept": "NO WARRANT / THROWN OUT — officers at the door",
+      "file": "thumb_mapp_a.png",
+      "renderer": "remotion ThumbConcept (brand frame, same as EP1/EP2)",
+      "props": {"kicker": "MAPP v. OHIO", "line1": "NO WARRANT.", "line2": "THROWN OUT.", "sub": "An illegal search — and the rule it made", "symbol": "bars", "backgroundSrc": "mapp/S001.png", "showSymbol": false},
+      "note": "background is an SDXL substitute (S001); re-render this thumbnail after the Midjourney swap"
     },
     {
       "slot": "B",
       "concept": "NOT A WARRANT — the paper",
-      "file": "thumb_mapp_b.png"
+      "file": "thumb_mapp_b.png",
+      "renderer": "remotion ThumbConcept (brand frame)",
+      "props": {"kicker": "1961", "line1": "NOT A", "line2": "WARRANT.", "sub": "The search that rewrote the 4th Amendment", "symbol": "letter", "backgroundSrc": "mapp/S002.png", "showSymbol": false},
+      "note": "background is an SDXL substitute (S002); re-render after the Midjourney swap"
     }
   ],
   "safety_checklist": {
