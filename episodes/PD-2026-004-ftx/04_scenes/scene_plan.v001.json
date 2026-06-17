@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-004-ftx",
+  "revision": "v001",
+  "script_ref": "script.en.v002",
+  "target_runtime": "12:00",
+  "shot_count_target": 170,
+  "animation_cap_pct": 10,
+  "tier_legend": {
+    "R": "true animation (Runway/SVD) — key beats only, <=10% total",
+    "M": "moving still (Ken Burns / 2.5D parallax / drifting light) — default",
+    "K": "motion graphics (numbers / timeline / code / quote cards)"
+  },
+  "image_pipeline": "MJ heroes (H1-H28) lock brand sref -> SDXL (RealVisXL/JuggernautXL, max quality) mass-produces coverage -> R-ESRGAN -> 1080p; all people anonymous silhouettes (R2).",
+  "sections": [
+    {"id": "00_hook", "time": "0:00-0:10", "shots": 8, "runway_shots": 2},
+    {"id": "01_cold_open", "time": "0:10-0:45", "shots": 10, "runway_shots": 1},
+    {"id": "02_opening", "time": "0:45-1:35", "shots": 12, "runway_shots": 0},
+    {"id": "actI_trust", "time": "1:35-3:55", "shots": 26, "runway_shots": 1},
+    {"id": "actII_code", "time": "3:55-6:35", "shots": 30, "runway_shots": 2},
+    {"id": "actIII_run", "time": "6:35-8:55", "shots": 28, "runway_shots": 2},
+    {"id": "actIV_verdict", "time": "8:55-10:55", "shots": 24, "runway_shots": 1},
+    {"id": "ending", "time": "10:55-12:00", "shots": 16, "runway_shots": 0}
+  ],
+  "animation_estimate": "~13-15 animated shots of ~170 = ~8-9% (within 10% cap, plus ~3 SVD).",
+  "status": "draft_ready_for_generation"
+}
