@@ -13,6 +13,21 @@ fix, with reusable prompt recipes. Pairs with `decisions/0004` §C (source prior
 grade.** Big flashy motion reads cheap; restraint reads expensive. Quality comes more from source
 detail + subtlety + grade than from the tool's raw power. Diversify motion — don't lean on one tool.
 
+## A0. Midjourney MAX-quality protocol (obsess over image beauty)
+The prompt is only half of it. To get gorgeous, premium stills:
+- **Latest model** (V8.x) at **highest quality/HD**; web UI: low–moderate **Stylization** for cinematic
+  control (too high = generic-pretty), or **`--style raw`** for photographic control. **`--ar 16:9`**.
+- **Name a cinematic look** (huge beauty lift): e.g. *"chiaroscuro film-noir lighting,"* *"volumetric
+  light,"* *"shot on Kodak Vision3, anamorphic,"* *"A24 cinematic,"* *"Roger Deakins-style motivated
+  lighting."* Add **lens + film stock + grade** every time.
+- **Curate hard:** generate several, keep the **single best**; reroll weak ones. One stunning > four ok.
+- **Lock a brand `--sref`:** make one style-anchor image, reuse its `--sref` across the whole episode
+  so every still shares a premium, cohesive look (replaces the still-unset `<SREF>`).
+- **Upscale + finish:** MJ upscale (Subtle) → optional 4K via local Topaz/4090 → **brand LUT grade +
+  grain** on everything. This removes the last of the "cheap" feel.
+- **Avoid the cheap tells:** oversaturation, HDR glow, plastic skin, flat front-lighting, generic
+  stock look, busy clutter. Prefer deep contrast, one motivated light, negative space.
+
 ## A. Still prompt recipe (Midjourney / SDXL) — the quality base
 Order: **subject + specific detail → shot/composition → lens/camera → lighting → mood/atmosphere →
 film stock/grade → style → quality tags → params**.
