@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v001",
+  "brand_within_channel": "Prime Documentary house style (faceless symbolic noir) applied to a finance-fraud episode.",
+  "palette": {
+    "base": ["near-black", "deep charcoal", "midnight navy"],
+    "accent": ["muted gold", "aged brass", "warm amber"],
+    "signal": ["a single cold cyan/white for the return LINE so it reads against the gold"],
+    "forbidden": ["PINK (any shade) — explicit owner constraint", "neon/candy colors", "bright saturated red as a base"]
+  },
+  "mood": "restrained, authoritative, quietly ominous; 'trust' rendered as warm gold that slowly turns cold as the truth emerges.",
+  "lighting": "low-key, single-source, deep shadows, volumetric dust/haze, subtle film grain.",
+  "people_rule": "NO real-person likeness of anyone (Madoff, whistleblower, family, victims, officials). People are anonymous silhouettes / backs of heads / hands only. No deepfakes. (invariant 11)",
+  "hero_motif": {
+    "name": "THE LINE",
+    "spec": "An impossibly smooth, always-rising return curve on a dark grid, cold cyan/white stroke. Renders/animates in Remotion. Never dips meaningfully. Used as: opening image, per-act refrain, and final reveal (annotated as the red flag). Contrast device: a jagged 'real market' line shown beside it.",
+    "render": "Remotion (tier K) — exact, data-driven, animatable; NOT a Midjourney image."
+  },
+  "recurring_symbols": [
+    "the invite-only club door (exclusivity)",
+    "paper account statements / fabricated trade confirmations (stacks, drifting)",
+    "the Ponzi loop: coins passing from new hands to old hands in a closed circle",
+    "an empty vault / safe with nothing inside",
+    "unread warning letters piling at a vast institutional facade (the regulator)",
+    "a single calculator + annotated chart (the analyst)",
+    "courthouse exterior (NY federal courthouse framing), gavel as restrained accent",
+    "coins flowing partly BACK (the recovery beat)"
+  ],
+  "typography": {
+    "numbers_cards": "large condensed sans, gold on black, for $65B -> $17.5B and '150 years'",
+    "quote_citation_lowerthirds": "small caps source label burned in for major claims, linked to claim_id (e.g. 'SEC OIG report, 2009' / 'SIPA Trustee')",
+    "open_captions": "burned-in, high-contrast, bottom-third, styled per channel"
+  },
+  "sref_strategy": "Generate 3-5 MJ hero stills first; lock ONE --sref seed for the whole episode; reuse across all SDXL coverage for visual unity. Record the sref in library/visual if reusable across episodes.",
+  "thumbnail_concept": {
+    "primary": "The perfect rising LINE filling the frame (cold stroke on black/gold) + bold short text 'TOO PERFECT TO BE REAL'. No face. No pink.",
+    "alt": "An empty vault with a single golden statement fluttering + 'WHERE WAS THE $65 BILLION?'",
+    "rules": ["no real-person likeness", "high contrast for mobile", "<=4 words", "curiosity-gap, not misleading"]
+  },
+  "do_not": ["present any generated visual as authentic historical footage", "use pink", "show a recognizable likeness of a real person", "imply non-defendants committed crimes"]
+}
