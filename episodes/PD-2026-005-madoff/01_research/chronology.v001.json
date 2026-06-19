@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v001",
+  "note": "Working chronology for narrative structure. Pre-1990 dates are approximate and must be locked to primary sources before script lock; entries here that drive factual claims are tied to claim IDs.",
+  "events": [
+    {
+      "date": "1960",
+      "event": "Bernard L. Madoff founds Bernard L. Madoff Investment Securities (a legitimate broker-dealer/market-making business that coexisted with the later-fraudulent advisory arm).",
+      "confidence": "medium",
+      "source_ids": ["SRC-0001"],
+      "lock_before_script": true
+    },
+    {
+      "date": "1990s (or earlier)",
+      "event": "The investment advisory arm is, by the trustee's findings, operating as a Ponzi scheme: client money is not really invested; 'returns' are paid from other investors' principal; account statements are fabricated.",
+      "confidence": "medium",
+      "claim_ids": ["CLM-0003"],
+      "source_ids": ["SRC-0005", "SRC-0001"],
+      "lock_before_script": true
+    },
+    {
+      "date": "1999-2000",
+      "event": "Analyst Harry Markopolos concludes Madoff's steady returns are mathematically impossible and begins warning the SEC.",
+      "confidence": "high",
+      "claim_ids": ["CLM-0005", "CLM-0006"],
+      "source_ids": ["SRC-0006", "SRC-0007"]
+    },
+    {
+      "date": "2005",
+      "event": "Markopolos submits a detailed memo to the SEC (commonly referred to as 'The World's Largest Hedge Fund Is a Fraud' — title to be primary-verified).",
+      "confidence": "medium",
+      "claim_ids": ["CLM-0005"],
+      "source_ids": ["SRC-0006", "SRC-0011"],
+      "lock_before_script": true
+    },
+    {
+      "date": "2008-12-11",
+      "event": "Madoff is arrested after confessing to his sons during the financial crisis, when redemption demands he cannot meet expose the scheme.",
+      "confidence": "high",
+      "claim_ids": ["CLM-0007"],
+      "source_ids": ["SRC-0001"]
+    },
+    {
+      "date": "2009-03-12",
+      "event": "Madoff pleads guilty to an 11-count criminal information and is remanded into custody.",
+      "confidence": "high",
+      "claim_ids": ["CLM-0001"],
+      "source_ids": ["SRC-0003", "SRC-0001"]
+    },
+    {
+      "date": "2009-06-29",
+      "event": "Madoff is sentenced to 150 years in federal prison.",
+      "confidence": "high",
+      "claim_ids": ["CLM-0002"],
+      "source_ids": ["SRC-0004", "SRC-0008"]
+    },
+    {
+      "date": "2009-08-31",
+      "event": "SEC Office of Inspector General report examines the agency's failure to uncover the scheme despite repeated warnings.",
+      "confidence": "medium",
+      "claim_ids": ["CLM-0011"],
+      "source_ids": ["SRC-0011", "SRC-0006"],
+      "lock_before_script": true
+    },
+    {
+      "date": "2021-04-14",
+      "event": "Madoff dies in federal prison at age 82, having served ~12 years.",
+      "confidence": "high",
+      "claim_ids": ["CLM-0010"],
+      "source_ids": ["SRC-0009"]
+    },
+    {
+      "date": "2009-2025",
+      "event": "SIPA trustee Irving Picard and the DOJ Madoff Victim Fund recover the large majority of lost principal (trustee recoveries ~$14.7-15.3B by mid-2025; many victims recover >90% of actual losses).",
+      "confidence": "high",
+      "claim_ids": ["CLM-0009", "CLM-0004"],
+      "source_ids": ["SRC-0005", "SRC-0010"]
+    }
+  ]
+}
