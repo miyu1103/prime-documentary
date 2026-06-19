@@ -1,4 +1,6 @@
-# PD-2026-005-madoff — Midjourney Hero Prompts v001
+> SUPERSEDED (2026-06-19): Owner chose SDXL (local) over Midjourney for this episode. Use **sdxl_prompts.v001.md** instead. This file is kept for provenance only and is NOT the active image spec.
+
+# PD-2026-005-madoff — Midjourney Hero Prompts v001 (SUPERSEDED)
 
 Owner generates these; Claude/Codex then views the 4-up and recommends the single best pick per the selection criteria. Charts, diagrams, number cards, timeline, quote/citation cards and captions are NOT here — those are Remotion (see remotion_plan).
 

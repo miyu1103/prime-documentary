@@ -32,7 +32,7 @@
     "quote_citation_lowerthirds": "small caps source label burned in for major claims, linked to claim_id (e.g. 'SEC OIG report, 2009' / 'SIPA Trustee')",
     "open_captions": "burned-in, high-contrast, bottom-third, styled per channel"
   },
-  "sref_strategy": "Generate 3-5 MJ hero stills first; lock ONE --sref seed for the whole episode; reuse across all SDXL coverage for visual unity. Record the sref in library/visual if reusable across episodes.",
+  "consistency_strategy": "SDXL local (NO Midjourney). Lock ONE model/VAE (+ optional style LoRA) and a seed family for the whole episode; vary composition via prompt, not model, for visual unity. See sdxl_prompts.v001.md. Record the chosen model/seed/LoRA in library/visual if reusable across episodes.",
   "thumbnail_concept": {
     "primary": "The perfect rising LINE filling the frame (cold stroke on black/gold) + bold short text 'TOO PERFECT TO BE REAL'. No face. No pink.",
     "alt": "An empty vault with a single golden statement fluttering + 'WHERE WAS THE $65 BILLION?'",
