@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-005-madoff",
+  "revision": "v002",
+  "supersedes": "v001",
+  "stage": "research",
+  "summary": "All four pre-lock follow-ups from qc.v001 are resolved against primary / primary-equivalent sources (2026-06-19). Every claim (11/11) is now approved; none unsupported. Critically, confirming the details did NOT change any wording in script v001 — the script uses qualitative/range phrasing, not the exact figures refined here — so NO script v002 is required and the final-script approval APR-0003 stands. Research gate for script lock: PASS.",
+  "coverage": {
+    "claims_total": 11,
+    "approved": 11,
+    "needs_primary_confirm": 0,
+    "unsupported": 0,
+    "critical_claims": ["CLM-0001", "CLM-0002", "CLM-0003", "CLM-0004", "CLM-0005"],
+    "critical_unsupported": 0
+  },
+  "grades": {"A": 8, "B": 3, "C": 0, "needs_confirm": 0},
+  "resolved_followups": [
+    {
+      "from_qc_v001": "SEC OIG report (OIG-509): lock exact Markopolos submission count/dates and the 2005 memo title (CLM-0005, CLM-0011).",
+      "resolution": "Confirmed: Report No. OIG-509 (IG H. David Kotz, 2009-08-31) found six substantive complaints between June 1992 and December 2008; Markopolos submissions in 2000, 2001, 2005, 2007, 2008; the 2005 memo is titled 'The World's Largest Hedge Fund Is a Fraud' (2005-11-07). Sources SRC-0011 (now verified), SRC-0012.",
+      "claim_ids": ["CLM-0005", "CLM-0011"]
+    },
+    {
+      "from_qc_v001": "Trustee/DOJ: confirm latest recovery totals and official $65B/$17.5B definitions (CLM-0004, CLM-0009).",
+      "resolution": "Confirmed: $65B = fabricated customer-statement value incl. fictional profits; ~$17.5B = actual principal lost; $170B = forfeiture/flow figure, not net loss. Latest officially confirmed recovery (SIPC, as of 2025-10-31): ~$14.83B recovered, ~$14.67B distributed, 72.015% of allowed claims; DOJ MVF final distribution early 2025; many victims >90%. Sources SRC-0005, SRC-0014, SRC-0015.",
+      "claim_ids": ["CLM-0004", "CLM-0009"]
+    },
+    {
+      "from_qc_v001": "Source 1-3 named institutional victims, neutral framing (CLM-0008).",
+      "resolution": "Confirmed illustrative institutions: Fairfield Greenwich Group (~$7B routed), Tremont Group (MassMutual, ~$3B), Banco Santander/Optimal, HSBC, Yeshiva University, JEHT Foundation (closed). Framed as exposure/loss, not complicity; magnitudes 'on the order of'. Sources SRC-0001, SRC-0005, SRC-0016.",
+      "claim_ids": ["CLM-0008"]
+    },
+    {
+      "from_qc_v001": "Confirm exact wording of the 11 criminal counts (CLM-0001).",
+      "resolution": "Confirmed verbatim 11 counts (added to CLM-0001.verbatim_counts), incl. the previously omitted 'Making A False Filing With The SEC' and the three money-laundering counts. Source SRC-0013 (FBI charging release; ABC7 corroboration).",
+      "claim_ids": ["CLM-0001"]
+    }
+  ],
+  "gaps_before_script_lock": [],
+  "open_followups_for_publish": [
+    "CLM-0009: distributions are ongoing; re-pull the latest SIPC/madofftrustee distribution figure at publish time and cite with its as-of date (later 2026 reporting cites ~$15.3B+)."
+  ],
+  "script_lock_ready": true,
+  "script_v002_required": false,
+  "script_lock_note": "Script v001 facts were checked span-by-span against the confirmed claims; all hold. APR-0003 (final script v001) remains valid; no dependent assets are invalidated.",
+  "blocking": false,
+  "block_reason": null,
+  "gate_decision": "pass",
+  "rights_safety_notes": [
+    "Defendant deceased (R1); adjudicated facts stateable plainly.",
+    "Non-defendants (sons, whistleblower, SEC staff, victims) neutral, role-based; no implied crimes beyond record.",
+    "OIG finding = failure/incompetence, NOT corruption; OIG expressly found no improper financial connection and that a family relationship did not influence exams; do not allege bribery.",
+    "Named institutional victims = exposure/loss only, never complicity; some feeder funds settled civil clawbacks without admission.",
+    "Red-flag framing is educational, not investment advice; disclaimer required.",
+    "All visuals symbolic/faceless, no real-person likeness; no pink."
+  ],
+  "verified_at": "2026-06-19T13:51:00+00:00"
+}

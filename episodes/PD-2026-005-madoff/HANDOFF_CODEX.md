@@ -10,17 +10,20 @@ You are the **local executor** (Codex on the owner's Windows/Mac nodes). Claude 
 ## 1. HARD safety constraints (do not violate)
 1. **No pink** anywhere. All people are anonymous silhouettes — **no real-person likeness**, no deepfakes (invariant 11).
 2. Generated visuals are symbolic reconstruction, **never** presented as authentic footage. Keep the cold-open + description disclaimer ("Dramatized symbolic reconstruction. Not financial or legal advice.").
-3. Every on-screen factual number must carry a **citation lower-third linked to its claim_id** (see claims.v001).
+3. Every on-screen factual number must carry a **citation lower-third linked to its claim_id** (see claims.v002).
 4. **Paid generation only after SCRIPT LOCK + explicit owner go** (ElevenLabs master, Runway). Drafts/dry-runs first. Use idempotency keys; log provider request IDs; never silently double-bill (rules/11).
 5. **Publish = upload PRIVATE first**; public scheduling needs the exact-revision **publish approval** gate. Channel/destination allowlist only.
 6. Keep media off the git repo (logical URIs); repo holds specs/manifest/approvals only (rules/14).
 
-## 2. Resolve BEFORE script lock (research follow-ups)
-From `01_research/qc.v001.json` — confirm against primary sources, then lock script:
-- SEC OIG report (OIG-509): exact Markopolos submission count/dates + the 2005 memo title (CLM-0005/0011).
-- Trustee/DOJ: latest recovery totals + official $65B vs $17.5B definitions (CLM-0004/0009).
-- 1–3 named institutional victims, neutral framing (CLM-0008); exact 11-count wording (CLM-0001).
-- If any changes the wording of an adjudicated fact → create script v002 (invalidates dependent assets).
+## 2. Pre-script-lock research follow-ups — ✅ RESOLVED (2026-06-19, see `qc.v002.json`)
+All four follow-ups are confirmed against primary sources. **Use `claims.v002` / `sources.v002` / `qc.v002` (not v001).** Do NOT re-research these:
+- SEC OIG (CLM-0005/0011): **Report No. OIG-509** (IG H. David Kotz, 2009-08-31) found **six substantive complaints, June 1992–Dec 2008**; Markopolos submissions **2000, 2001, 2005, 2007, 2008**; the 2005 memo is **"The World's Largest Hedge Fund Is a Fraud" (2005-11-07)**. OIG finding = failure/incompetence, **not** corruption.
+- $65B/$17.5B (CLM-0004): **$65B = fabricated statement value** (incl. fictional profits); **~$17.5B = real principal**; **$170B = forfeiture/flow**, not "the amount stolen".
+- Recovery (CLM-0009): latest officially confirmed (SIPC, **as of 2025-10-31**): **~$14.83B recovered, ~$14.67B distributed, 72.015% of allowed claims**; DOJ MVF final distribution early 2025; many victims >90%. **At publish time, re-pull the latest distribution figure** (later 2026 reporting cites ~$15.3B+).
+- Victims (CLM-0008): illustrative, neutral — Fairfield Greenwich, Tremont (MassMutual), Banco Santander/Optimal, HSBC, Yeshiva University, JEHT Foundation (closed). Exposure/loss only, never complicity.
+- 11 counts (CLM-0001): verbatim list locked in `claims.v002` (`verbatim_counts`).
+
+**Script lock status:** confirming these facts did **not** change any script wording → **NO script v002 required; final script v001 (APR-0003) stands.** Only the recovery number must be refreshed at publish (CLM-0009 `verify_note`). You may proceed to T1.
 
 ## 3. Execution tasks (in order)
 
