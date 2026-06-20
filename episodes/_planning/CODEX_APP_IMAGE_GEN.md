@@ -31,18 +31,42 @@ H:\pd-media\assets\ai\<話名>\<場面ID>.png
 
 ---
 
-## ▼ Codexアプリにそのまま貼るプロンプト
+## ▼ Codexアプリにそのまま貼るプロンプト（これ一つで完結）
 
-> あなたはCodexです。リポジトリ `prime-documentary`（ブランチ `claude/vibrant-archimedes-2mmr5h`）で作業します。
-> 目的：**第9〜15話ぶんのAI画像を生成して保存**すること（動画の各場面に使う）。
->
-> 手順：
-> 1. `episodes/_planning/VIDEO_RULES.md` と `episodes/_planning/CODEX_APP_IMAGE_GEN.md` を読む。
-> 2. 各話の `04_scenes/ai_prompts.v001.md`（生成リスト）を開く。各項目に「プロンプト・保存名・保存先」がある。
-> 3. 各項目について、**美しい画像を1枚生成**する。プロンプトは記載のものを土台に、より良くしてよい（ただし共通スタイルと安全ルールは厳守）。
->    - 共通スタイル：cinematic documentary still, ドラマチックな照明, 紺×黒＋エレクトリックブルー＋金, 写実的, 高精細, 浅い被写界深度, 16:9。
->    - 安全：**画面の文字なし・透かしなし・ロゴなし・実在人物の肖像/ディープフェイクなし**（象徴的に）。第15話(Theranos)は特に本人を描かない。
-> 4. 生成した画像を **`H:\pd-media\assets\ai\<話名>\<場面ID>.png`** に、リスト記載のファイル名で保存する。
-> 5. 全話・全項目を生成。1場面に複数欲しい時は `<場面ID>_02.png` で追加。
->
-> 注意：課金が発生する生成はオーナーの承認・予算内で。終わったら、話ごとに「何枚保存したか・保存先」を報告して。
+```
+あなたはCodexです。リポジトリ prime-documentary（ブランチ claude/vibrant-archimedes-2mmr5h）で作業します。
+目的：ドキュメンタリー動画「Prime Documentary」第9〜15話の各場面に使う、美しいAI画像を生成して保存すること。
+
+【まず読む】
+- episodes/_planning/VIDEO_RULES.md（動画の全ルール）
+- 各話の生成リスト：episodes/<話フォルダ>/04_scenes/ai_prompts.v001.md
+  → 画像ごとに「下書きプロンプト・保存ファイル名・保存先」が書いてある。
+
+【生成する画像】
+各話の ai_prompts.v001.md にある項目すべて（🎨の場面ぶん）。合計およそ145枚。
+1場面に複数欲しいときは連番（例 SPN-0004_02.png）で追加してよい。
+
+【スタイル（全画像共通・厳守）】
+cinematic documentary still, ドラマチックで重厚な照明, 配色は「黒・濃紺・エレクトリックブルー・金」,
+写実的, 高精細, 浅い被写界深度, 16:9, 美しく映画的。
+下書きプロンプトは土台。より良く具体化してよいが、上のスタイルと下の安全ルールは必ず守る。
+
+【安全（厳守）】
+画面内の文字なし・透かしなし・ロゴなし。実在人物の肖像やディープフェイクは作らない（象徴的・代表的に表現）。
+第15話(theranos)はElizabeth Holmes / Sunny Balwani 本人を描かない。
+
+【保存先（必ずここに・ファイル名はリスト記載のとおり）】
+H:\pd-media\assets\ai\<話名>\<場面ID>.png
+  ・timbs       → 第9話   : H:\pd-media\assets\ai\timbs\
+  ・kelo        → 第10話  : H:\pd-media\assets\ai\kelo\
+  ・mahanoy     → 第11話  : H:\pd-media\assets\ai\mahanoy\
+  ・arbitration → 第12話  : H:\pd-media\assets\ai\arbitration\
+  ・king        → 第13話  : H:\pd-media\assets\ai\king\
+  ・lange       → 第14話  : H:\pd-media\assets\ai\lange\
+  ・theranos    → 第15話  : H:\pd-media\assets\ai\theranos\
+PNG・1920×1080以上・16:9。フォルダが無ければ作成。例: H:\pd-media\assets\ai\mahanoy\SPN-0004.png
+
+【終わったら】
+話ごとに「保存枚数・保存先フォルダ」を報告。課金が発生する生成はオーナー承認・予算内で。
+（保存後、ローカル側で import_to_remotion.py を回すと各場面へ自動で入るので、生成と保存に専念してOK）
+```
