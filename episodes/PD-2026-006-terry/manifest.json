@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-006",
   "slug": "terry",
   "title_working": "A Cop Can Search You Without a Warrant \u2014 Here's the Catch",
-  "state": "package_ready",
+  "state": "scheduled",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -39,7 +39,8 @@
     "captions_final": "v001",
     "final_qc": "v001",
     "youtube_meta": "v001",
-    "final_render": "v001"
+    "final_render": "v001",
+    "youtube_schedule_result": "v001"
   },
   "artifacts": [
     {
@@ -383,6 +384,16 @@
       "qc_status": "pass"
     },
     {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0005",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0005.json",
+      "checksum": "sha256:8adb028150a3e2ae39696894ee6f6651e27384d8058e1a62913e3a6f61658001",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
       "artifact_id": "PD-2026-006-terry-narration-generation-script",
       "artifact_type": "narration_generation_script",
       "revision": "v001",
@@ -437,7 +448,7 @@
       "artifact_type": "youtube_metadata",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_meta.v001.json",
-      "checksum": "sha256:88799e89b5f878666c744ec1cd252917fcdc8f081056733d1d7648b33f374378",
+      "checksum": "sha256:50adc46788366e74c711b4d2203c78fe108959e5c275d89aa881d6b8582f0446",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -451,12 +462,34 @@
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0004",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0004.json",
+      "checksum": "sha256:ebace393caaa0ecd3f053231739f2b273921a6e1ac489d3d55ac30bcbbac1c95",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-youtube-schedule-result",
+      "artifact_type": "youtube_schedule_result",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_schedule_result.v001.json",
+      "checksum": "sha256:5433e2991a2aa9e9e9bc6f35d908cb253e9af11e17c5882aa4e7d2c2c3e98eb2",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
     }
   ],
   "approvals": [
     "APR-0001",
     "APR-0002",
-    "APR-0003"
+    "APR-0003",
+    "APR-0004",
+    "APR-0005"
   ],
   "costs": {
     "estimated": {
@@ -495,9 +528,11 @@
     "Publish remains blocked until separate publish approval; YouTube synthetic-content disclosure required.",
     "Thumbnail selection revised after owner requested a denser option: thumbnail_option_06.v001.png selected; upload/publish still not approved.",
     "Thumbnail selection revised again after owner requested a more beautiful Codex-made image: thumbnail_option_07.v001.png selected; upload/publish still not approved.",
-    "Thumbnail selection revised again after owner requested a more beautiful detailed Codex-generated image: thumbnail_option_08.v001.png selected; upload/publish still not approved."
+    "Thumbnail selection revised again after owner requested a more beautiful detailed Codex-generated image: thumbnail_option_08.v001.png selected; upload/publish still not approved.",
+    "YouTube private upload completed and scheduled under APR-0004: video_id dcqWIPXun7c, public release 2026-06-21T12:00:00+09:00; thumbnail_option_08.v001.png set.",
+    "Publish schedule approved under APR-0005 for 2026-06-22T12:00:00+09:00 (2026-06-22T03:00:00Z); upload/schedule script must verify channel allowlist and exact hashes before external write."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T23:35:00+09:00"
+  "updated_at": "2026-06-20T23:50:00+09:00"
 }

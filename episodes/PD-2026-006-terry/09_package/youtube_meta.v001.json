@@ -2,19 +2,20 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-006-terry",
   "revision": "v001",
-  "status": "package_ready_no_publish",
+  "status": "scheduled",
   "title": "A Cop Can Search You Without a Warrant - Here's the Catch",
   "thumbnail": "episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_08.v001.png",
   "video": "artifact://episodes/PD-2026-006-terry/08_edit/terry_final_v001.mp4",
   "video_sha256": "sha256:938897c59113adb46d501b81c379ab692dc918fd8c931a9f4743cb9a8d30343e",
   "synthetic_content_disclosure_required": true,
   "contains_ai_symbolic_reconstruction": true,
-  "upload_performed": false,
+  "upload_performed": true,
   "publish_performed": false,
   "approval_ids": [
     "APR-0001",
     "APR-0002",
-    "APR-0003"
+    "APR-0003",
+    "APR-0004"
   ],
   "selected_thumbnail": "episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_08.v001.png",
   "selected_thumbnail_sha256": "sha256:2410160486162ad7e2b0f25c8e6f92dbcba19177a1618622e9fb28f366a4acc0",
@@ -92,7 +93,17 @@
     "final_qc": "episodes/PD-2026-006-terry/08_edit/renders/final.v001.qc.json",
     "synthetic_content_disclosure_required": true,
     "publish_approval_required": true,
-    "upload_performed": false,
-    "publish_performed": false
-  }
+    "upload_performed": true,
+    "publish_performed": false,
+    "public_schedule_set": true,
+    "schedule_result": "episodes/PD-2026-006-terry/09_package/youtube_schedule_result.v001.json"
+  },
+  "youtube_video_id": "dcqWIPXun7c",
+  "youtube_watch_url": "https://youtu.be/dcqWIPXun7c",
+  "youtube_studio_url": "https://studio.youtube.com/video/dcqWIPXun7c/edit",
+  "youtube_channel_id": "UCuQPtAz1rca9eJ4xhvX0yKA",
+  "scheduled_at_local": "2026-06-21T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-21T03:00:00Z",
+  "privacy_status": "private",
+  "thumbnail_set": true
 }
