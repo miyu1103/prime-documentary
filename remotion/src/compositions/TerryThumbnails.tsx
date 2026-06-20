@@ -16,7 +16,7 @@ type ThumbVariant = {
   headline: string;
   kicker: string;
   image?: string;
-  motif: 'gap' | 'frisk' | 'scale' | 'street' | 'phone' | 'dense';
+  motif: 'gap' | 'frisk' | 'scale' | 'street' | 'phone' | 'dense' | 'cinematic';
   accent: 'blue' | 'gold';
 };
 
@@ -67,6 +67,14 @@ export const terryThumbnailVariants: ThumbVariant[] = [
     motif: 'dense',
     accent: 'gold',
   },
+  {
+    id: 'thumb07',
+    headline: 'NO WARRANT?',
+    kicker: 'TERRY STOP · 1968 · 8-1',
+    image: 'terry/PD-2026-006-terry-S004-IMG-001.v001.png',
+    motif: 'cinematic',
+    accent: 'gold',
+  },
 ];
 
 const splitHeadline = (headline: string): string[] => {
@@ -77,6 +85,77 @@ const splitHeadline = (headline: string): string[] => {
 };
 
 const Motif: React.FC<{variant: ThumbVariant; accent: string}> = ({variant, accent}) => {
+  if (variant.motif === 'cinematic') {
+    return (
+      <svg width="1280" height="720" style={{position: 'absolute', inset: 0}}>
+        <defs>
+          <filter id="cinematicGlow" x="-70%" y="-70%" width="240%" height="240%">
+            <feGaussianBlur stdDeviation="12" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+          <linearGradient id="goldPanel" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stopColor={GOLD} stopOpacity="0.96" />
+            <stop offset="100%" stopColor="#8d6412" stopOpacity="0.86" />
+          </linearGradient>
+          <linearGradient id="bluePath" x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stopColor="#1e5bff" />
+            <stop offset="55%" stopColor={BLUE} />
+            <stop offset="100%" stopColor={GOLD} />
+          </linearGradient>
+        </defs>
+
+        <g opacity="0.88">
+          <rect x="704" y="112" width="472" height="420" fill="#02050dcc" stroke={GOLD} strokeWidth="2" opacity="0.54" />
+          <rect x="730" y="136" width="102" height="286" fill={GOLD} opacity="0.12" />
+          <rect x="854" y="128" width="132" height="352" fill={GOLD} opacity="0.18" />
+          <rect x="1012" y="150" width="118" height="300" fill={GOLD} opacity="0.14" />
+          <line x1="704" x2="1176" y1="230" y2="230" stroke={SILVER} strokeWidth="2" opacity="0.18" />
+          <line x1="838" x2="838" y1="112" y2="532" stroke={SILVER} strokeWidth="2" opacity="0.16" />
+          <line x1="1000" x2="1000" y1="112" y2="532" stroke={SILVER} strokeWidth="2" opacity="0.16" />
+        </g>
+
+        <g transform="translate(736 128)" filter="url(#cinematicGlow)">
+          {Array.from({length: 9}, (_, i) => (
+            <rect key={i} x={i * 34} y="0" width="24" height="24" fill={i === 8 ? GOLD : BLUE} opacity={i === 8 ? 0.96 : 0.88} />
+          ))}
+          <text x="0" y="76" fill={GOLD} fontFamily={BRAND.font.display} fontSize="54">8-1</text>
+        </g>
+
+        <g opacity="0.96">
+          <path d="M642 493 C690 444 724 428 774 454 C830 485 858 400 910 426 C950 447 986 466 1028 406 C1058 364 1090 394 1126 418" fill="none" stroke="#001c5a" strokeWidth="31" strokeLinecap="round" opacity="0.5" />
+          <path d="M642 493 C690 444 724 428 774 454 C830 485 858 400 910 426 C950 447 986 466 1028 406 C1058 364 1090 394 1126 418" fill="none" stroke="url(#bluePath)" strokeWidth="10" strokeLinecap="round" />
+          {[642, 774, 910, 1028, 1126].map((x, i) => (
+            <circle key={x} cx={x} cy={[493, 454, 426, 406, 418][i]} r={i === 3 ? 14 : 11} fill={i === 3 ? GOLD : BLUE} stroke="#06101f" strokeWidth="4" />
+          ))}
+        </g>
+
+        <g transform="translate(724 290)">
+          <rect x="0" y="0" width="368" height="116" rx="2" fill="#010409dd" stroke={GOLD} strokeWidth="4" />
+          <text x="28" y="36" fill={SILVER} fontFamily={BRAND.font.body} fontSize="18" fontWeight="800">LOWER STANDARD</text>
+          <line x1="28" x2="330" y1="70" y2="70" stroke={SILVER} strokeWidth="5" opacity="0.48" />
+          <line x1="28" x2="174" y1="70" y2="70" stroke={GOLD} strokeWidth="10" strokeLinecap="round" />
+          <circle cx="174" cy="70" r="18" fill={GOLD} />
+          <text x="27" y="104" fill={SILVER} fontFamily={BRAND.font.body} fontSize="17">hunch</text>
+          <text x="136" y="104" fill={GOLD} fontFamily={BRAND.font.body} fontSize="17" fontWeight="900">suspicion</text>
+          <text x="285" y="104" fill={SILVER} fontFamily={BRAND.font.body} fontSize="17">proof</text>
+        </g>
+
+        <g transform="translate(890 448)">
+          <rect x="0" y="0" width="84" height="118" fill="url(#goldPanel)" opacity="0.95" />
+          <rect x="-56" y="78" width="196" height="44" fill="#03070dcc" />
+          <text x="-42" y="113" fill={GOLD} fontFamily={BRAND.font.display} fontSize="44">GAP</text>
+        </g>
+
+        <g transform="translate(618 584)">
+          <rect x="0" y="-44" width="234" height="62" fill="#03070de6" stroke={SILVER} strokeWidth="1" opacity="0.9" />
+          <text x="20" y="0" fill={WHITE} fontFamily={BRAND.font.display} fontSize="48">~12 TRIPS</text>
+        </g>
+      </svg>
+    );
+  }
   if (variant.motif === 'dense') {
     return (
       <svg width="1280" height="720" style={{position: 'absolute', inset: 0}}>
@@ -183,6 +262,7 @@ export const TerryThumbnail: React.FC<{variantIndex?: number}> = ({variantIndex 
   const variant = terryThumbnailVariants[variantIndex] ?? terryThumbnailVariants[0];
   const accent = variant.accent === 'gold' ? GOLD : BLUE;
   const lines = splitHeadline(variant.headline);
+  const isCinematic = variant.motif === 'cinematic';
   return (
     <AbsoluteFill style={{backgroundColor: INK, overflow: 'hidden'}}>
       {variant.image ? (
@@ -195,14 +275,15 @@ export const TerryThumbnail: React.FC<{variantIndex?: number}> = ({variantIndex 
             height: '100%',
             objectFit: 'cover',
             transform: 'scale(1.08)',
-            filter: 'brightness(0.66) contrast(1.22) saturate(1.04)',
+            filter: isCinematic ? 'brightness(0.76) contrast(1.34) saturate(1.18)' : 'brightness(0.66) contrast(1.22) saturate(1.04)',
           }}
         />
       ) : (
         <AbsoluteFill style={{background: `radial-gradient(90% 74% at 70% 36%, #173d6f 0%, ${NAVY} 34%, ${INK} 82%)`}} />
       )}
-      <AbsoluteFill style={{background: 'linear-gradient(90deg, #000000f4 0%, #02050be8 49%, #00000022 100%)'}} />
-      <AbsoluteFill style={{background: `radial-gradient(54% 68% at 78% 45%, ${accent}3f 0%, #00000000 64%)`}} />
+      <AbsoluteFill style={{background: isCinematic ? 'linear-gradient(90deg, #000000f8 0%, #02050bec 45%, #00000036 100%)' : 'linear-gradient(90deg, #000000f4 0%, #02050be8 49%, #00000022 100%)'}} />
+      <AbsoluteFill style={{background: `radial-gradient(54% 68% at 78% 45%, ${accent}${isCinematic ? '55' : '3f'} 0%, #00000000 64%)`}} />
+      {isCinematic ? <AbsoluteFill style={{background: 'linear-gradient(180deg, #00000070 0%, #00000000 35%, #00000088 100%)'}} /> : null}
       <Motif variant={variant} accent={accent} />
       <div style={{position: 'absolute', left: 52, top: 48, width: 720}}>
         <div style={{fontFamily: BRAND.font.body, fontSize: 28, fontWeight: 900, color: accent, letterSpacing: 0}}>

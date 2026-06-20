@@ -67,6 +67,12 @@ VARIANTS = [
         "kicker": "TERRY STOP - 1968 - 8-1",
         "assessment": "Denser alternate requested by owner: adds the trip path, 8-1 ruling, suspicion scale, and GAP motif while keeping the main hook readable.",
     },
+    {
+        "id": "thumb07",
+        "headline": "NO WARRANT?",
+        "kicker": "TERRY STOP - 1968 - 8-1",
+        "assessment": "Selected. Codex-polished cinematic variant: keeps the dense Terry-specific cues from option 06, but improves depth, lighting, hierarchy, and small-size readability.",
+    },
 ]
 
 
@@ -130,8 +136,9 @@ def build_contact_sheet() -> str:
     for i in range(1, len(VARIANTS) + 1):
         inputs.extend(["-i", str(OUT_DIR / f"thumbnail_option_{i:02d}.v001.png")])
     labels = "".join(f"[{i}:v]scale=384:216[t{i}];" for i in range(len(VARIANTS)))
+    positions = [f"{(i % 3) * 384}_{(i // 3) * 216}" for i in range(len(VARIANTS))]
     layout = "".join(f"[t{i}]" for i in range(len(VARIANTS)))
-    layout += "xstack=inputs=6:layout=0_0|384_0|768_0|0_216|384_216|768_216[out]"
+    layout += f"xstack=inputs={len(VARIANTS)}:layout={'|'.join(positions)}[out]"
     run([
         FFMPEG,
         "-y",
@@ -164,12 +171,12 @@ def write_options(options: list[dict], contact_hash: str) -> None:
             "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S018/PD-2026-006-terry-S018-IMG-001.v001.png",
         ],
         "recommended_shortlist": [
+            "thumbnail_option_07.v001.png",
             "thumbnail_option_06.v001.png",
             "thumbnail_option_01.v001.png",
-            "thumbnail_option_02.v001.png",
         ],
-        "selected": "thumbnail_option_06.v001.png",
-        "selection_reason": "Owner requested a denser thumbnail than option 01. Option 06 keeps the NO WARRANT? hook readable while adding the Terry-specific trip path, 8-1 ruling cue, suspicion scale, and GAP motif.",
+        "selected": "thumbnail_option_07.v001.png",
+        "selection_reason": "Owner asked to make the thumbnail image more beautiful with Codex. Option 07 keeps the denser Terry-specific information from option 06 while improving cinematic depth, lighting, hierarchy, and small-size readability.",
         "options": options,
         "contact_sheet": {
             "file": f"episodes/{EP}/10_thumbnail/{CONTACT.name}",

@@ -107,7 +107,7 @@
       "artifact_type": "rights_manifest",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json",
-      "checksum": "sha256:c52442bc1352a0f5266e936cef2800c54d4dc92ca993dfc4de4ca2b3f2724190",
+      "checksum": "sha256:ebaed3dafbbdfe94996cff022a129fec1fae597d416e5a588577ea3bc3d4ffcb",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -237,7 +237,7 @@
       "artifact_type": "thumbnail_component",
       "revision": "v001",
       "uri": "artifact://remotion/src/compositions/TerryThumbnails.tsx",
-      "checksum": "sha256:b1037d8dd545f1cc0870e61f7ec4a53c54a1bd28301f4219f038a09b608fd0d6",
+      "checksum": "sha256:95c26fafab61305ca9d53ccd6adeff021cb2c178d6fb507aaf66991a15e4e531",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -247,7 +247,7 @@
       "artifact_type": "thumbnail_build_script",
       "revision": "v001",
       "uri": "artifact://scripts/build_terry_thumbnails_v001.py",
-      "checksum": "sha256:25c80e2e14d133a70924e8bf37cc3a679742ade068dcc727347c9e6a35423f7e",
+      "checksum": "sha256:90c89d40eca89cc4a5b20bc3d42f310bd5b7b83ec4b1324885248d39b7e34f2d",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -257,7 +257,7 @@
       "artifact_type": "thumbnail_options",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_options.v001.json",
-      "checksum": "sha256:445c23b6fc4984f90eb7dfbe3dd4ecc7f18aaf44c4da67617b70cd8a20fbf56c",
+      "checksum": "sha256:d3d637e5108f7bdc27f4f134d16916a9e48abe712cded8b06fd054e72095b548",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -267,7 +267,7 @@
       "artifact_type": "thumbnail_contact_sheet",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_contact_sheet.v001.jpg",
-      "checksum": "sha256:8eff0fae1983889d715cf739ae74500d11f2556581942c64b14a682c4717f126",
+      "checksum": "sha256:84e46b5a50a5b61ecbb29d0dfaa6001f458d506da4968f675583da6c45c03f09",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -328,6 +328,16 @@
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_06.v001.png",
       "checksum": "sha256:0f74baa103d2f772a291e781380303926e9ea10d372472764661d84c914e0dec",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-07",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_07.v001.png",
+      "checksum": "sha256:0adde85c93ccd5ca83eea695531b14a0433d985ccd5e22bfa9ba49a3601f24d6",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -407,7 +417,7 @@
       "artifact_type": "youtube_metadata",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_meta.v001.json",
-      "checksum": "sha256:24d0fed70a47a58530a45ff1a9102a914b9b3c5d4fd3eac83c21528e1adfc1e0",
+      "checksum": "sha256:83bd929bbcb42dbe9dda547e2428ecde060195832a6bcab3b2949560b3b90429",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -463,9 +473,10 @@
     "Package-ready local final render created with ElevenLabs narration under APR-0002; no upload or publish performed.",
     "Title/thumbnail selected under APR-0003: recommended title + thumbnail_option_01.v001.png.",
     "Publish remains blocked until separate publish approval; YouTube synthetic-content disclosure required.",
-    "Thumbnail selection revised after owner requested a denser option: thumbnail_option_06.v001.png selected; upload/publish still not approved."
+    "Thumbnail selection revised after owner requested a denser option: thumbnail_option_06.v001.png selected; upload/publish still not approved.",
+    "Thumbnail selection revised again after owner requested a more beautiful Codex-made image: thumbnail_option_07.v001.png selected; upload/publish still not approved."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T22:45:00+09:00"
+  "updated_at": "2026-06-20T23:10:00+09:00"
 }

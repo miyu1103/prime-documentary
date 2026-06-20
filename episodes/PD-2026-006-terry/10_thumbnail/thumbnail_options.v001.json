@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-006-terry",
   "revision": "v001",
-  "generated_at": "2026-06-20T13:23:25.828372+00:00",
+  "generated_at": "2026-06-20T13:38:31.893702+00:00",
   "status": "thumbnail_selected_not_published",
   "publish_performed": false,
   "upload_performed": false,
@@ -14,10 +14,12 @@
     "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S018/PD-2026-006-terry-S018-IMG-001.v001.png"
   ],
   "recommended_shortlist": [
+    "thumbnail_option_07.v001.png",
     "thumbnail_option_06.v001.png",
-    "thumbnail_option_01.v001.png",
-    "thumbnail_option_02.v001.png"
+    "thumbnail_option_01.v001.png"
   ],
+  "selected": "thumbnail_option_07.v001.png",
+  "selection_reason": "Owner asked to make the thumbnail image more beautiful with Codex. Option 07 keeps the denser Terry-specific information from option 06 while improving cinematic depth, lighting, hierarchy, and small-size readability.",
   "options": [
     {
       "id": "thumb01",
@@ -65,13 +67,21 @@
       "headline": "NO WARRANT?",
       "kicker": "TERRY STOP - 1968 - 8-1",
       "sha256": "0f74baa103d2f772a291e781380303926e9ea10d372472764661d84c914e0dec",
-      "assessment": "Selected. Denser owner-requested variant: keeps the NO WARRANT? hook readable while adding the trip path, 8-1 ruling cue, suspicion scale, and GAP motif.",
+      "assessment": "Denser alternate requested by owner: adds the trip path, 8-1 ruling, suspicion scale, and GAP motif while keeping the main hook readable."
+    },
+    {
+      "id": "thumb07",
+      "file": "episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_07.v001.png",
+      "headline": "NO WARRANT?",
+      "kicker": "TERRY STOP - 1968 - 8-1",
+      "sha256": "0adde85c93ccd5ca83eea695531b14a0433d985ccd5e22bfa9ba49a3601f24d6",
+      "assessment": "Selected. Codex-polished cinematic variant: keeps the dense Terry-specific cues from option 06, but improves depth, lighting, hierarchy, and small-size readability.",
       "dimensions": "1280x720"
     }
   ],
   "contact_sheet": {
     "file": "episodes/PD-2026-006-terry/10_thumbnail/thumbnail_contact_sheet.v001.jpg",
-    "sha256": "8eff0fae1983889d715cf739ae74500d11f2556581942c64b14a682c4717f126"
+    "sha256": "84e46b5a50a5b61ecbb29d0dfaa6001f458d506da4968f675583da6c45c03f09"
   },
   "title_candidates": [
     "A Cop Can Search You Without a Warrant - Here's the Catch",
@@ -80,7 +90,5 @@
     "Suspicion Is Not Proof - But It Can Still Get You Searched",
     "Terry v. Ohio: The Rule Behind Every Street Stop"
   ],
-  "recommended_title": "A Cop Can Search You Without a Warrant - Here's the Catch",
-  "selected": "thumbnail_option_06.v001.png",
-  "selection_reason": "Owner requested a denser thumbnail than option 01. Option 06 keeps the NO WARRANT? hook readable while adding the Terry-specific trip path, 8-1 ruling cue, suspicion scale, and GAP motif."
+  "recommended_title": "A Cop Can Search You Without a Warrant - Here's the Catch"
 }
