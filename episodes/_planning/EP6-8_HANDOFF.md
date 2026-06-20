@@ -197,3 +197,15 @@ and assign real CLM ids — but the facts below are confirmed.
   Sources: https://www.lawfaremedia.org/article/summary-supreme-court-rules-carpenter-v-united-states ; https://en.wikipedia.org/wiki/Carpenter_v._United_States ; https://www.justice.gov/usao-edmi/pr/cell-phone-store-robber-sentenced-116-years
 - WARNING for Codex: a Cornell LII AI-summary misreports Carpenter as "6–3" — IGNORE; the vote is
   5–4 per all primary sources.
+
+## 8. OWNER APPROVAL — content / direction sign-off (2026-06-20)
+- The owner approved the EP6–EP8 seed scripts (Terry / Riley / Carpenter) — slate, thesis,
+  structure, and narrative content — as fact-verified in §7. Recorded against the seed drafts at the
+  commit that adds this line.
+- SCOPE: this authorizes Codex to proceed through the pipeline (pd-new-episode → pd-research →
+  pd-script) WITHOUT re-confirming topic or direction.
+- BINDING GATE (unchanged, per rules/16 + invariant 1): the formal final-script approval still
+  targets the exact produced revision episodes/PD-2026-00X/03_script/script.en.v001.md, once the
+  [CLM-xxxx] placeholders are entered into the claim ledger as graded, cited claims and script_qc
+  passes. This content sign-off carries forward to that revision provided no fact or claim changes
+  from the verified seed; any factual change re-opens the gate.
