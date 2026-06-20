@@ -3,8 +3,8 @@
   "episode_id": "PD-2026-007-riley",
   "revision": "v001",
   "generated_at": "2026-06-20T19:30:00+09:00",
-  "status": "in_progress",
-  "notes": "Rights manifest updated through thumbnail gate candidates v001. All selected visuals and thumbnail candidates are symbolic reconstructions, AI-disclosed, and not authentic footage. No real-person likeness is allowed for David Riley or Brima Wurie. Paid narration, music, final title/thumbnail selection, upload, and publish require owner gate approval.",
+  "status": "scheduled",
+  "notes": "Rights manifest updated through Riley scheduled package v001. Selected visuals and thumbnails are symbolic reconstructions, AI-disclosed, and not authentic footage. No real-person likeness is allowed for David Riley or Brima Wurie. ElevenLabs narration, reusable library music, final render, selected thumbnail, and YouTube scheduled use are registered.",
   "assets": [
     {
       "asset_id": "PD-2026-007-S001-IMG-001",
@@ -328,7 +328,8 @@
       "source_candidate": "remotion/src/compositions/RileyThumbnails.tsx",
       "prompt_ref": "episodes/PD-2026-007-riley/09_package/thumbnail_candidates.v001.json",
       "selected_at": "2026-06-20T19:30:00+09:00",
-      "qc_status": "pass_thumbnail_candidate"
+      "qc_status": "pass_selected_thumbnail",
+      "package_selected": true
     },
     {
       "asset_id": "PD-2026-007-THUMB-002",
@@ -401,7 +402,69 @@
       "prompt_ref": "episodes/PD-2026-007-riley/09_package/thumbnail_candidates.v001.json",
       "selected_at": "2026-06-20T19:30:00+09:00",
       "qc_status": "pass_thumbnail_candidate"
+    },
+    {
+      "asset_id": "PD-2026-007-VO-001",
+      "type": "narration_audio",
+      "scene": "all",
+      "description": "ElevenLabs channel voice narration master generated under owner approval APR-0002.",
+      "file": "artifact://episodes/PD-2026-007-riley/06_voice/master/vc_master_v001.mp3",
+      "producer": "ElevenLabs",
+      "license": "ElevenLabs commercial plan - owner-approved generation",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:56a771474fe8fe2fe5b5e8a24b85f6148eba22572d0222f09f2c18b128bb79eb",
+      "needs_verification": false,
+      "approval_id": "APR-0002",
+      "estimated_cost_usd": 2.66
+    },
+    {
+      "asset_id": "PD-2026-007-VO-FIT-001",
+      "type": "narration_audio",
+      "scene": "all",
+      "description": "Timeline-fitted ElevenLabs narration conformed to the 646s Riley final render.",
+      "file": "artifact://episodes/PD-2026-007-riley/06_voice/master/vc_master_v001_fit_640s.wav",
+      "producer": "FFmpeg atempo/PCM from ElevenLabs master",
+      "license": "Derived from owner-approved ElevenLabs narration master",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:480f2f69adc8796652f26ea3e25220680d07e07761cfb5124c4a1499da64b1a6",
+      "needs_verification": false,
+      "approval_id": "APR-0002"
+    },
+    {
+      "asset_id": "PD-2026-007-MUS-001",
+      "type": "library_audio_source",
+      "scene": "all",
+      "description": "Reusable Prime Documentary library music bed used quietly under the Riley final render.",
+      "file": "artifact://library/music/reveal/mus_20260614_reveal_hidden_system_clicks_v2.mp3",
+      "producer": "Prime Documentary reusable music library",
+      "license": "Rights-tracked reusable library bed",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:57e1c433e2d91519004bf0f903001c3ecd3bfa4fa558defb870169140c288d95",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "PD-2026-007-RENDER-FINAL-001",
+      "type": "render",
+      "scene": "all",
+      "description": "Local final package render, not uploaded or published. Includes ElevenLabs narration, library music, approved symbolic visuals, motion graphics, and sidecar SRT captions.",
+      "file": "artifact://episodes/PD-2026-007-riley/08_edit/riley_final_v001.mp4",
+      "producer": "Remotion visual proxy + FFmpeg final mux",
+      "license": "Composite final render from rights-tracked inputs",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:ca595294db079a42a408543a83a7aee79a34348ada70494071560e97bb2ee3fe",
+      "needs_verification": false,
+      "ai_disclosure_required": true,
+      "synthetic_content_disclosure_required": true,
+      "external_upload": true,
+      "publish_ready": true,
+      "approval_ids": [
+        "APR-0001",
+        "APR-0002",
+        "APR-0003"
+      ],
+      "public_schedule_set": true
     }
   ],
-  "verification_required": []
+  "verification_required": [],
+  "updated_at": "2026-06-20T23:56:28+09:00"
 }
