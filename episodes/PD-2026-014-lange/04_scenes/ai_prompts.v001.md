@@ -9,7 +9,7 @@
 **全画像 共通スタイル**:
 > cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, shallow depth of field, 16:9, ultra high resolution 4K, masterpiece quality, razor-sharp focus, exquisite fine detail. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
 
-**生成枚数: 126 枚**（🎨 19 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
+**生成枚数: 91 枚**（🎨 13 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
 
 ## SPN-0002  〜47秒  → 11枚
 - 場面: 「The Fourth Amendment protects a lot of places, but it protects your home most of all. As a…」
@@ -33,18 +33,6 @@
   - `SPN-0004_02.png` ← ~100 feet from home, close-up detail
   - `SPN-0004_03.png` ← ~100 feet from home, low-angle dramatic shot
 
-## SPN-0006  〜33秒  → 8枚
-- 場面: 「Now, one thing has to be clear, because it is easy to get backwards. The legal fight that…」
-- テロップ: The question: the ENTRY, not the DUI
-  - `SPN-0006.png` ← The question: the ENTRY, not the DUI, wide establishing shot
-  - `SPN-0006_02.png` ← The question: the ENTRY, not the DUI, close-up detail
-  - `SPN-0006_03.png` ← The question: the ENTRY, not the DUI, low-angle dramatic shot
-  - `SPN-0006_04.png` ← The question: the ENTRY, not the DUI, overhead top-down view
-  - `SPN-0006_05.png` ← The question: the ENTRY, not the DUI, soft-focus atmospheric background
-  - `SPN-0006_06.png` ← The question: the ENTRY, not the DUI, silhouette against light
-  - `SPN-0006_07.png` ← The question: the ENTRY, not the DUI, abstract symbolic composition
-  - `SPN-0006_08.png` ← The question: the ENTRY, not the DUI, medium shot, shallow focus
-
 ## SPN-0007  〜18秒  → 5枚
 - 場面: 「California's answer was yes, automatically. Under the rule the state defended, whenever a suspect flees — even from…」
 - テロップ: California: any flight = automatic entry
@@ -58,19 +46,6 @@
 - 場面: 「To see why that rule troubled the Court, you have to appreciate how strongly the law guards the…」
   - `SPN-0008.png` ← To see why that rule troubled the Court, you have to appreciate how strongly, wide establishing shot
   - `SPN-0008_02.png` ← To see why that rule troubled the Court, you have to appreciate how strongly, close-up detail
-
-## SPN-0009  〜38秒  → 9枚
-- 場面: 「For centuries, the home has been the high ground of privacy law — the place where the demand…」
-- テロップ: Exigent circumstances: danger · evidence · escape
-  - `SPN-0009.png` ← Exigent circumstances: danger · evidence · escape, wide establishing shot
-  - `SPN-0009_02.png` ← Exigent circumstances: danger · evidence · escape, close-up detail
-  - `SPN-0009_03.png` ← Exigent circumstances: danger · evidence · escape, low-angle dramatic shot
-  - `SPN-0009_04.png` ← Exigent circumstances: danger · evidence · escape, overhead top-down view
-  - `SPN-0009_05.png` ← Exigent circumstances: danger · evidence · escape, soft-focus atmospheric background
-  - `SPN-0009_06.png` ← Exigent circumstances: danger · evidence · escape, silhouette against light
-  - `SPN-0009_07.png` ← Exigent circumstances: danger · evidence · escape, abstract symbolic composition
-  - `SPN-0009_08.png` ← Exigent circumstances: danger · evidence · escape, medium shot, shallow focus
-  - `SPN-0009_09.png` ← Exigent circumstances: danger · evidence · escape, wide establishing shot
 
 ## SPN-0010  〜22秒  → 5枚
 - 場面: 「Hot pursuit fits that logic when the stakes are high. If a dangerous suspect runs into a house,…」
@@ -92,13 +67,6 @@
   - `SPN-0011_07.png` ← Don't let suspects escape — vs — don't gut the home, abstract symbolic composition
   - `SPN-0011_08.png` ← Don't let suspects escape — vs — don't gut the home, medium shot, shallow focus
   - `SPN-0011_09.png` ← Don't let suspects escape — vs — don't gut the home, wide establishing shot
-
-## SPN-0012  〜14秒  → 4枚
-- 場面: 「So the Court had to decide whether "the suspect fled" is, by itself, enough — a flat, automatic…」
-  - `SPN-0012.png` ← So the Court had to decide whether "the suspect fled" is, by itself, enough, wide establishing shot
-  - `SPN-0012_02.png` ← So the Court had to decide whether "the suspect fled" is, by itself, enough, close-up detail
-  - `SPN-0012_03.png` ← So the Court had to decide whether "the suspect fled" is, by itself, enough, low-angle dramatic shot
-  - `SPN-0012_04.png` ← So the Court had to decide whether "the suspect fled" is, by itself, enough, overhead top-down view
 
 ## SPN-0014  〜33秒  → 8枚
 - 場面: 「The principal opinion was written by Justice Elena Kagan. Flight, she explained, is a real and relevant fact…」
@@ -128,14 +96,6 @@
   - `SPN-0015_11.png` ← Roberts + Alito: concur in result, want a broader rule, low-angle dramatic shot
   - `SPN-0015_12.png` ← Roberts + Alito: concur in result, want a broader rule, overhead top-down view
 
-## SPN-0016  〜17秒  → 4枚
-- 場面: 「The Court did not decide whether the entry into Arthur Lange's garage was ultimately lawful. It vacated the…」
-- テロップ: Vacated & remanded
-  - `SPN-0016.png` ← Vacated & remanded, wide establishing shot
-  - `SPN-0016_02.png` ← Vacated & remanded, close-up detail
-  - `SPN-0016_03.png` ← Vacated & remanded, low-angle dramatic shot
-  - `SPN-0016_04.png` ← Vacated & remanded, overhead top-down view
-
 ## SPN-0017  〜34秒  → 8枚
 - 場面: 「So here is the practical takeaway. If an officer is chasing you over something minor and you make…」
   - `SPN-0017.png` ← So here is the practical takeaway. If an officer is chasing you over something, wide establishing shot
@@ -157,14 +117,6 @@
   - `SPN-0018_06.png` ← That is not a clean, bright line, and the Court knew it. A case-by-case, silhouette against light
   - `SPN-0018_07.png` ← That is not a clean, bright line, and the Court knew it. A case-by-case, abstract symbolic composition
 
-## SPN-0019  〜18秒  → 4枚
-- 場面: 「A foot under a garage door turned into a ruling about the deepest line in American privacy law…」
-- テロップ: The line at your front door
-  - `SPN-0019.png` ← The line at your front door, wide establishing shot
-  - `SPN-0019_02.png` ← The line at your front door, close-up detail
-  - `SPN-0019_03.png` ← The line at your front door, low-angle dramatic shot
-  - `SPN-0019_04.png` ← The line at your front door, overhead top-down view
-
 ## SPN-0020  〜28秒  → 7枚
 - 場面: 「And that is where this run of cases lands. We have followed the state as it stops you…」
   - `SPN-0020.png` ← And that is where this run of cases lands. We have followed the state, wide establishing shot
@@ -185,16 +137,6 @@
   - `SPN-0021_05.png` ← Finale: when does a bold promise become a crime?, soft-focus atmospheric background
   - `SPN-0021_06.png` ← Finale: when does a bold promise become a crime?, silhouette against light
   - `SPN-0021_07.png` ← Finale: when does a bold promise become a crime?, abstract symbolic composition
-
-## SPN-0022  〜26秒  → 6枚
-- 場面: 「And the range of "misdemeanor" really is enormous. It can mean a violent assault — or it can…」
-- テロップ: Misdemeanor: assault ... or a noise complaint
-  - `SPN-0022.png` ← Misdemeanor: assault ... or a noise complaint, wide establishing shot
-  - `SPN-0022_02.png` ← Misdemeanor: assault ... or a noise complaint, close-up detail
-  - `SPN-0022_03.png` ← Misdemeanor: assault ... or a noise complaint, low-angle dramatic shot
-  - `SPN-0022_04.png` ← Misdemeanor: assault ... or a noise complaint, overhead top-down view
-  - `SPN-0022_05.png` ← Misdemeanor: assault ... or a noise complaint, soft-focus atmospheric background
-  - `SPN-0022_06.png` ← Misdemeanor: assault ... or a noise complaint, silhouette against light
 
 ## SPN-0023  〜28秒  → 7枚
 - 場面: 「Kagan also leaned on history. At common law — the centuries of tradition the Fourth Amendment was built…」

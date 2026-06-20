@@ -9,7 +9,7 @@
 **全画像 共通スタイル**:
 > cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, shallow depth of field, 16:9, ultra high resolution 4K, masterpiece quality, razor-sharp focus, exquisite fine detail. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
 
-**生成枚数: 146 枚**（🎨 26 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
+**生成枚数: 103 枚**（🎨 18 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
 
 ## SPN-0001  〜28秒  → 7枚
 - 場面: 「The government can take your home. Most people know that — for a highway, a school, a bridge.…」
@@ -36,14 +36,6 @@
   - `SPN-0002_09.png` ← 5th Amendment: takings only "for public use", wide establishing shot
   - `SPN-0002_10.png` ← 5th Amendment: takings only "for public use", close-up detail
 
-## SPN-0003  〜14秒  → 4枚
-- 場面: 「The place is New London, Connecticut, a small city on the water, and the neighborhood is called Fort…」
-- テロップ: Fort Trumbull, New London, CT
-  - `SPN-0003.png` ← Establishing: a modest waterfront neighborhood, wide establishing shot
-  - `SPN-0003_02.png` ← Establishing: a modest waterfront neighborhood, close-up detail
-  - `SPN-0003_03.png` ← Establishing: a modest waterfront neighborhood, low-angle dramatic shot
-  - `SPN-0003_04.png` ← Establishing: a modest waterfront neighborhood, overhead top-down view
-
 ## SPN-0004  〜20秒  → 5枚
 - 場面: 「One of them belongs to Susette Kelo. It is a small house she has fixed up and painted…」
 - テロップ: Not blighted. Owner did nothing wrong.
@@ -61,14 +53,6 @@
   - `SPN-0005_03.png` ← The plan: offices, hotel, jobs, taxes, low-angle dramatic shot
   - `SPN-0005_04.png` ← The plan: offices, hotel, jobs, taxes, overhead top-down view
   - `SPN-0005_05.png` ← The plan: offices, hotel, jobs, taxes, soft-focus atmospheric background
-
-## SPN-0006  〜22秒  → 5枚
-- 場面: 「To do it, the city works through a private nonprofit acting as its development agent, the New London…」
-  - `SPN-0006.png` ← To do it, the city works through a private nonprofit acting as its development, wide establishing shot
-  - `SPN-0006_02.png` ← To do it, the city works through a private nonprofit acting as its development, close-up detail
-  - `SPN-0006_03.png` ← To do it, the city works through a private nonprofit acting as its development, low-angle dramatic shot
-  - `SPN-0006_04.png` ← To do it, the city works through a private nonprofit acting as its development, overhead top-down view
-  - `SPN-0006_05.png` ← To do it, the city works through a private nonprofit acting as its development, soft-focus atmospheric background
 
 ## SPN-0007  〜25秒  → 6枚
 - 場面: 「Susette Kelo and a handful of neighbors refuse. They are not holding out for more money. They simply…」
@@ -88,17 +72,6 @@
   - `SPN-0008_04.png` ← Is that "public use"?, overhead top-down view
   - `SPN-0008_05.png` ← Is that "public use"?, soft-focus atmospheric background
 
-## SPN-0009  〜28秒  → 7枚
-- 場面: 「To see why this was so hard, you have to look closely at the words themselves: "public use."…」
-- テロップ: Narrow: the public actually uses it
-  - `SPN-0009.png` ← Narrow: the public actually uses it, wide establishing shot
-  - `SPN-0009_02.png` ← Narrow: the public actually uses it, close-up detail
-  - `SPN-0009_03.png` ← Narrow: the public actually uses it, low-angle dramatic shot
-  - `SPN-0009_04.png` ← Narrow: the public actually uses it, overhead top-down view
-  - `SPN-0009_05.png` ← Narrow: the public actually uses it, soft-focus atmospheric background
-  - `SPN-0009_06.png` ← Narrow: the public actually uses it, silhouette against light
-  - `SPN-0009_07.png` ← Narrow: the public actually uses it, abstract symbolic composition
-
 ## SPN-0010  〜21秒  → 5枚
 - 場面: 「But over the twentieth century, courts had read those words more and more broadly — as "public purpose."…」
 - テロップ: Broad: any "public purpose"
@@ -115,15 +88,6 @@
   - `SPN-0011_02.png` ← City: economic development = public use, close-up detail
   - `SPN-0011_03.png` ← City: economic development = public use, low-angle dramatic shot
   - `SPN-0011_04.png` ← City: economic development = public use, overhead top-down view
-
-## SPN-0012  〜26秒  → 6枚
-- 場面: 「If the Court accepted that, the implications were enormous. Almost any home, anywhere, could be taken and handed…」
-  - `SPN-0012.png` ← If the Court accepted that, the implications were enormous. Almost any home, anywhere, could, wide establishing shot
-  - `SPN-0012_02.png` ← If the Court accepted that, the implications were enormous. Almost any home, anywhere, could, close-up detail
-  - `SPN-0012_03.png` ← If the Court accepted that, the implications were enormous. Almost any home, anywhere, could, low-angle dramatic shot
-  - `SPN-0012_04.png` ← If the Court accepted that, the implications were enormous. Almost any home, anywhere, could, overhead top-down view
-  - `SPN-0012_05.png` ← If the Court accepted that, the implications were enormous. Almost any home, anywhere, could, soft-focus atmospheric background
-  - `SPN-0012_06.png` ← If the Court accepted that, the implications were enormous. Almost any home, anywhere, could, silhouette against light
 
 ## SPN-0013  〜14秒  → 4枚
 - 場面: 「So the case was never really about one pink house. It was about whether the words "for public…」
@@ -143,19 +107,6 @@
   - `SPN-0015_06.png` ← "Public use" = "public purpose", silhouette against light
   - `SPN-0015_07.png` ← "Public use" = "public purpose", abstract symbolic composition
 
-## SPN-0016  〜40秒  → 9枚
-- 場面: 「The four dissenters were alarmed. Justice Sandra Day O'Connor wrote the main dissent, and her warning was blunt.…」
-- テロップ: Dissent (O'Connor): "for public use" — erased?
-  - `SPN-0016.png` ← Dissent (O'Connor): "for public use" — erased?, wide establishing shot
-  - `SPN-0016_02.png` ← Dissent (O'Connor): "for public use" — erased?, close-up detail
-  - `SPN-0016_03.png` ← Dissent (O'Connor): "for public use" — erased?, low-angle dramatic shot
-  - `SPN-0016_04.png` ← Dissent (O'Connor): "for public use" — erased?, overhead top-down view
-  - `SPN-0016_05.png` ← Dissent (O'Connor): "for public use" — erased?, soft-focus atmospheric background
-  - `SPN-0016_06.png` ← Dissent (O'Connor): "for public use" — erased?, silhouette against light
-  - `SPN-0016_07.png` ← Dissent (O'Connor): "for public use" — erased?, abstract symbolic composition
-  - `SPN-0016_08.png` ← Dissent (O'Connor): "for public use" — erased?, medium shot, shallow focus
-  - `SPN-0016_09.png` ← Dissent (O'Connor): "for public use" — erased?, wide establishing shot
-
 ## SPN-0017  〜19秒  → 5枚
 - 場面: 「It was a 5-4 split, and unlike many such splits, it did not fall along the usual lines.…」
   - `SPN-0017.png` ← It was a 5-4 split, and unlike many such splits, it did not fall, wide establishing shot
@@ -172,17 +123,6 @@
   - `SPN-0018_03.png` ← Backlash: bipartisan, low-angle dramatic shot
   - `SPN-0018_04.png` ← Backlash: bipartisan, overhead top-down view
   - `SPN-0018_05.png` ← Backlash: bipartisan, soft-focus atmospheric background
-
-## SPN-0019  〜29秒  → 7枚
-- 場面: 「And legislatures responded. In the years after Kelo, by the Institute for Justice's count, roughly forty or more…」
-- テロップ: ~40+ states reformed (many criticized as weak)
-  - `SPN-0019.png` ← ~40+ states reformed (many criticized as weak), wide establishing shot
-  - `SPN-0019_02.png` ← ~40+ states reformed (many criticized as weak), close-up detail
-  - `SPN-0019_03.png` ← ~40+ states reformed (many criticized as weak), low-angle dramatic shot
-  - `SPN-0019_04.png` ← ~40+ states reformed (many criticized as weak), overhead top-down view
-  - `SPN-0019_05.png` ← ~40+ states reformed (many criticized as weak), soft-focus atmospheric background
-  - `SPN-0019_06.png` ← ~40+ states reformed (many criticized as weak), silhouette against light
-  - `SPN-0019_07.png` ← ~40+ states reformed (many criticized as weak), abstract symbolic composition
 
 ## SPN-0020  〜20秒  → 5枚
 - 場面: 「But the sharpest verdict on Kelo came not from a legislature. It came from the land itself. After…」
@@ -201,13 +141,6 @@
   - `SPN-0022_03.png` ← The pink house was moved, not destroyed, low-angle dramatic shot
   - `SPN-0022_04.png` ← The pink house was moved, not destroyed, overhead top-down view
   - `SPN-0022_05.png` ← The pink house was moved, not destroyed, soft-focus atmospheric background
-
-## SPN-0023  〜16秒  → 4枚
-- 場面: 「Kelo is still good law. The Supreme Court has never overturned it. What pushed back against it was…」
-  - `SPN-0023.png` ← Kelo is still good law. The Supreme Court has never overturned it. What pushed, wide establishing shot
-  - `SPN-0023_02.png` ← Kelo is still good law. The Supreme Court has never overturned it. What pushed, close-up detail
-  - `SPN-0023_03.png` ← Kelo is still good law. The Supreme Court has never overturned it. What pushed, low-angle dramatic shot
-  - `SPN-0023_04.png` ← Kelo is still good law. The Supreme Court has never overturned it. What pushed, overhead top-down view
 
 ## SPN-0024  〜18秒  → 4枚
 - 場面: 「And that is the strange lesson of the case. The Constitution's limit — "for public use" — was…」
@@ -228,11 +161,6 @@
   - `SPN-0025_07.png` ← Next: where does free speech end?, abstract symbolic composition
   - `SPN-0025_08.png` ← Next: where does free speech end?, medium shot, shallow focus
   - `SPN-0025_09.png` ← Next: where does free speech end?, wide establishing shot
-
-## SPN-0026  〜2秒  → 1枚
-- 場面: 「That is next time.…」
-- テロップ: Subscribe
-  - `SPN-0026.png` ← Subscribe, wide establishing shot
 
 ## SPN-0027  〜20秒  → 5枚
 - 場面: 「One vote in the majority came with a caveat. Justice Kennedy, who joined the Court's opinion, wrote separately…」

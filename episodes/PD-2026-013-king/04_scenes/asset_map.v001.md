@@ -7,7 +7,7 @@
 - 🎨 = **Codexが画像を生成**する場面（今は仮の写真が入っているので、AIで作って差しかえる）。
 - 🔤 = 文字グラフィック（素材不要、Remotionのテロップ）。
 
-**この話の内訳**：🎨生成 19 場面 ／ ✅既存素材 0 場面 ／ 🔤文字 4 場面。
+**この話の内訳**：🎨生成 13 場面 ／ ✅既存素材 6 場面 ／ 🔤文字 4 場面。
 ※自動で選んだ仮の割り当てです。合わないものは差しかえてOK（動画=複数を数秒ずつ切替／写真=Ken Burnsで動かす）。
 
 ## SPN-0001  [hook]  〜30秒
@@ -41,15 +41,15 @@
 - 使う素材: 🖼 pixabay_i_6808677.jpg — gavel、🖼 pexels_i_36984943.jpg — supreme_court、🖼 pexels_i_36984938.jpg — supreme_court、🖼 pixabay_i_2225765.jpg — supreme_court
 
 ## SPN-0006  [act1]  〜35秒
-- 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
+- 担当: ✅ 既存の実写動画を使う（下の素材／ダウンロード済み）
 - ナレ: 「So look at what just happened from two different angles, because the whole case…」
 - テロップ: A cold case solved — vs — a suspicionless search
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_2225766.jpg — supreme_court、🖼 pexels_i_159720.jpg — law_books、🖼 pexels_i_37726703.jpg — law_books、🖼 pixabay_i_923898.jpg — law_books、🖼 pixabay_i_3324024.jpg — law_books、🖼 pexels_i_6077797.jpg — scales_of_justice
+- 使う素材: 🎬 pexels_phone_scroll.mp4 — hands scrolling phone、🎬 pexels_cell_tower.mp4 — cell tower against sky
 
 ## SPN-0007  [act1]  〜4秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
 - ナレ: 「Both descriptions are true. That is what makes the case hard.…」
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_30483132.jpg — scales_of_justice
+- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_2225766.jpg — supreme_court
 
 ## SPN-0008  [act2]  〜12秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
@@ -58,87 +58,87 @@
 - 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_17155842.jpg — fingerprint、🖼 pexels_i_37538043.jpg — fingerprint
 
 ## SPN-0009  [act2]  〜26秒
-- 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
+- 担当: ✅ 既存の実写動画を使う（下の素材／ダウンロード済み）
 - ナレ: 「Think about what already happens when you are booked. The police take your fingerprints…」
 - テロップ: Booking: fingerprints + photo = identify
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_677940.jpg — scales_of_justice、🖼 pixabay_i_677945.jpg — scales_of_justice、🖼 pexels_i_7483195.jpg — american_flag、🖼 pexels_i_7649100.jpg — american_flag、🖼 pixabay_i_2636065.jpg — american_flag
+- 使う素材: 🎬 pexels_demolition.mp4 — building demolition、🎬 pexels_v_5636977.mp4 — courtroom
 
 ## SPN-0010  [act2]  〜21秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
 - ナレ: 「The state argued DNA is just the next step in that same process —…」
 - テロップ: State: "the fingerprint of the 21st century"
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_319668.jpg — fingerprint、🖼 pixabay_i_6841384.jpg — fingerprint、🖼 pixabay_i_2578873.jpg — american_flag、🖼 pexels_i_20417783.jpg — us_capitol
+- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_319668.jpg — fingerprint、🖼 pixabay_i_6841384.jpg — fingerprint、🖼 pexels_i_159720.jpg — law_books、🖼 pexels_i_37726703.jpg — law_books
 
 ## SPN-0011  [act2]  〜47秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
 - ナレ: 「But critics, and four of the justices, saw a sleight of hand in that…」
 - テロップ: CODIS — the FBI's national DNA database
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_19574309.jpg — us_capitol、🖼 pixabay_i_826993.jpg — us_capitol、🖼 pixabay_i_477987.jpg — us_capitol、🖼 pexels_i_8850753.jpg — constitution、🖼 pexels_i_51343.jpg — constitution、🖼 pixabay_i_3212015.jpg — constitution、🖼 pixabay_i_623167.jpg — constitution、🖼 pexels_i_9364799.jpg — police_car
+- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_923898.jpg — law_books、🖼 pixabay_i_3324024.jpg — law_books、🖼 pexels_i_6077797.jpg — scales_of_justice、🖼 pexels_i_30483132.jpg — scales_of_justice、🖼 pixabay_i_677940.jpg — scales_of_justice、🖼 pixabay_i_677945.jpg — scales_of_justice、🖼 pexels_i_7483195.jpg — american_flag、🖼 pexels_i_7649100.jpg — american_flag
 
 ## SPN-0012  [act3]  〜17秒
 - 担当: 🔤 文字グラフィック（Remotionのテロップ。素材不要）
 - ナレ: 「In 2013, the Supreme Court upheld the swab. By a vote of five to…」
 - テロップ: 2013 — 5–4
-- 使う素材: 🖼 pexels_i_12727666.jpg — police_car、🖼 pixabay_i_1701179.jpg — police_car、🖼 pixabay_i_2672054.jpg — police_car
+- 使う素材: 🖼 pixabay_i_2636065.jpg — american_flag、🖼 pixabay_i_2578873.jpg — american_flag、🖼 pexels_i_20417783.jpg — us_capitol
 
 ## SPN-0013  [act3]  〜30秒
-- 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
+- 担当: ✅ 既存の実写動画を使う（下の素材／ダウンロード済み）
 - ナレ: 「The opinion was written by Justice Anthony Kennedy. The intrusion, he reasoned, is minimal…」
 - テロップ: "like fingerprinting and photographing"
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_10466471.jpg — police_lights、🖼 pixabay_i_986047.jpg — police_lights、🖼 pixabay_i_4988448.jpg — police_lights、🖼 pexels_i_37730971.jpg — handcuffs、🖼 pexels_i_7773262.jpg — handcuffs
+- 使う素材: 🎬 pixabay_v_37417.mp4 — courtroom、🎬 pexels_v_6101367.mp4 — gavel
 
 ## SPN-0014  [act3]  〜22秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
 - ナレ: 「The dissent was sharp, and it came from an unusual place. Justice Antonin Scalia…」
 - テロップ: Dissent: Scalia + Ginsburg, Sotomayor, Kagan
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_7790176.jpg — handcuffs、🖼 pixabay_i_1078870.jpg — handcuffs、🖼 pexels_i_17155842.jpg — fingerprint、🖼 pexels_i_37538043.jpg — fingerprint
+- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_19574309.jpg — us_capitol、🖼 pixabay_i_826993.jpg — us_capitol、🖼 pixabay_i_477987.jpg — us_capitol、🖼 pexels_i_8850753.jpg — constitution
 
 ## SPN-0015  [act3]  〜49秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
 - ナレ: 「Scalia's argument was direct. The swab, he said, was not really about identifying Alonzo…」
 - テロップ: "...rightly or wrongly, and for whatever reason"
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_319668.jpg — fingerprint、🖼 pixabay_i_6841384.jpg — fingerprint、🖼 pexels_i_19782580.jpg — surveillance_camera、🖼 pexels_i_36852946.jpg — surveillance_camera、🖼 pixabay_i_7267551.jpg — surveillance_camera、🖼 pixabay_i_1144371.jpg — surveillance_camera、🖼 pexels_i_18160079.jpg — smartphone、🖼 pexels_i_242427.jpg — smartphone、🖼 pixabay_i_2507499.jpg — smartphone
+- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_51343.jpg — constitution、🖼 pixabay_i_3212015.jpg — constitution、🖼 pixabay_i_623167.jpg — constitution、🖼 pexels_i_9364799.jpg — police_car、🖼 pexels_i_12727666.jpg — police_car、🖼 pixabay_i_1701179.jpg — police_car、🖼 pixabay_i_2672054.jpg — police_car、🖼 pexels_i_10466471.jpg — police_lights、🖼 pixabay_i_986047.jpg — police_lights
 
 ## SPN-0016  [act4]  〜22秒
-- 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
+- 担当: ✅ 既存の実写動画を使う（下の素材／ダウンロード済み）
 - ナレ: 「So here is where it leaves you. In much of the country, being arrested…」
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_1283938.jpg — smartphone、🖼 pexels_i_6260105.jpg — phone_typing、🖼 pexels_i_5835330.jpg — phone_typing、🖼 pixabay_i_1542594.jpg — phone_typing
+- 使う素材: 🎬 pixabay_v_145738.mp4 — gavel、🎬 pexels_v_29188241.mp4 — supreme_court
 
 ## SPN-0017  [act4]  〜34秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
 - ナレ: 「And the honest truth is that both sides of this were right about something…」
 - テロップ: It solves crimes. It also files the merely arrested.
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_2575058.jpg — phone_typing、🖼 pexels_i_16229745.jpg — social_media、🖼 pexels_i_7634159.jpg — social_media、🖼 pixabay_i_763731.jpg — social_media、🖼 pixabay_i_3113279.jpg — social_media、🖼 pexels_i_37730212.jpg — data_server
+- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_4988448.jpg — police_lights、🖼 pexels_i_37730971.jpg — handcuffs、🖼 pexels_i_7773262.jpg — handcuffs、🖼 pixabay_i_7790176.jpg — handcuffs、🖼 pixabay_i_1078870.jpg — handcuffs、🖼 pexels_i_17155842.jpg — fingerprint
 
 ## SPN-0018  [act4]  〜24秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
 - ナレ: 「That is the trade the Court made, by one vote: a powerful tool against…」
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_17489151.jpg — data_server、🖼 pixabay_i_2160321.jpg — data_server、🖼 pixabay_i_1376349.jpg — data_server、🖼 pexels_i_8052620.jpg — laptop
+- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_37538043.jpg — fingerprint、🖼 pixabay_i_319668.jpg — fingerprint、🖼 pixabay_i_6841384.jpg — fingerprint、🖼 pexels_i_19782580.jpg — surveillance_camera
 
 ## SPN-0019  [ending]  〜25秒
-- 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
+- 担当: ✅ 既存の実写動画を使う（下の素材／ダウンロード済み）
 - ナレ: 「A cheek swab taken at a booking desk solved a six-year-old crime — and,…」
 - テロップ: Identify you — or investigate you?
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_7241619.jpg — laptop、🖼 pixabay_i_849825.jpg — laptop、🖼 pixabay_i_731894.jpg — laptop、🖼 pexels_i_11624826.jpg — cash、🖼 pexels_i_12198529.jpg — cash
+- 使う素材: 🎬 pixabay_v_50109.mp4 — supreme_court、🎬 pexels_v_8061661.mp4 — law_books
 
 ## SPN-0020  [ending]  〜20秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
 - ナレ: 「We have followed the state as it reaches into your pockets, your phone, your…」
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_2180330.jpg — cash、🖼 pixabay_i_2696219.jpg — cash、🖼 pexels_i_6590651.jpg — dollars、🖼 pexels_i_16886248.jpg — dollars
+- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_36852946.jpg — surveillance_camera、🖼 pixabay_i_7267551.jpg — surveillance_camera、🖼 pixabay_i_1144371.jpg — surveillance_camera、🖼 pexels_i_18160079.jpg — smartphone
 
 ## SPN-0021  [ending]  〜28秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
 - ナレ: 「But there is one place that has always been the strongest fortress of all…」
 - テロップ: Next: can a cop follow you into your home?
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_499481.jpg — dollars、🖼 pixabay_i_943762.jpg — dollars、🖼 pexels_i_6770610.jpg — stock_market、🖼 pexels_i_16594725.jpg — stock_market、🖼 pixabay_i_6286877.jpg — stock_market
+- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_242427.jpg — smartphone、🖼 pixabay_i_2507499.jpg — smartphone、🖼 pixabay_i_1283938.jpg — smartphone、🖼 pexels_i_6260105.jpg — phone_typing、🖼 pexels_i_5835330.jpg — phone_typing
 
 ## SPN-0022  [act2]  〜30秒
-- 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
+- 担当: ✅ 既存の実写動画を使う（下の素材／ダウンロード済み）
 - ナレ: 「There was also a quieter worry underneath. A fingerprint reveals almost nothing about you…」
 - テロップ: A fingerprint vs. a genetic blueprint
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_6693060.jpg — stock_market、🖼 pexels_i_35076286.jpg — bank、🖼 pexels_i_16760546.jpg — bank、🖼 pixabay_i_5738714.jpg — bank、🖼 pixabay_i_371288.jpg — bank、🖼 pexels_i_48148.jpg — contract_signing
+- 使う素材: 🎬 pexels_v_10617219.mp4 — fingerprint、🎬 pixabay_v_5392.mp4 — fingerprint
 
 ## SPN-0023  [act3]  〜28秒
 - 担当: 🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）
 - ナレ: 「Kennedy also spelled out what "identification" meant to the majority, and it was broader…」
-- 仮置き写真（AIで生成して差しかえ）: 🖼 pexels_i_7876037.jpg — contract_signing、🖼 pixabay_i_5710164.jpg — contract_signing、🖼 pixabay_i_2003808.jpg — contract_signing、🖼 pexels_i_33175650.jpg — business_meeting、🖼 pexels_i_7792841.jpg — business_meeting
+- 仮置き写真（AIで生成して差しかえ）: 🖼 pixabay_i_1542594.jpg — phone_typing、🖼 pixabay_i_2575058.jpg — phone_typing、🖼 pexels_i_16229745.jpg — social_media、🖼 pexels_i_7634159.jpg — social_media、🖼 pixabay_i_763731.jpg — social_media

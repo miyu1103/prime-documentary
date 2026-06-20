@@ -53,17 +53,34 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0003",
       "chapterId": "act1",
       "seconds": 13.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "kelo/pexels_i_20270908.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "kelo/pexels_v_17362431.mp4",
       "telop": [
         "Fort Trumbull, New London, CT"
       ],
       "priority": "B",
-      "images": [
-        "kelo/pexels_i_20270908.jpg",
-        "kelo/pexels_i_37097738.jpg",
-        "kelo/pexels_i_3845102.jpg"
+      "clips": [
+        {
+          "src": "kelo/pexels_v_17362431.mp4",
+          "clipSeconds": 20.12
+        },
+        {
+          "src": "kelo/pexels_v_3858852.mp4",
+          "clipSeconds": 35.18
+        },
+        {
+          "src": "kelo/pexels_v_3859473.mp4",
+          "clipSeconds": 28.01
+        },
+        {
+          "src": "kelo/pexels_v_37978559.mp4",
+          "clipSeconds": 31.24
+        },
+        {
+          "src": "kelo/pixabay_v_166289.mp4",
+          "clipSeconds": 20.07
+        }
       ]
     },
     {
@@ -106,16 +123,20 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0006",
       "chapterId": "act1",
       "seconds": 21.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "kelo/pexels_i_3961748.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "kelo/pexels_v_31008269.mp4",
       "telop": [],
       "priority": "A",
-      "images": [
-        "kelo/pexels_i_3961748.jpg",
-        "kelo/pexels_i_16553771.jpg",
-        "kelo/pixabay_i_2047596.jpg",
-        "kelo/pixabay_i_1839623.jpg"
+      "clips": [
+        {
+          "src": "kelo/pexels_v_31008269.mp4",
+          "clipSeconds": 9.68
+        },
+        {
+          "src": "kelo/pexels_v_2801656.mp4",
+          "clipSeconds": 47.32
+        }
       ]
     },
     {
@@ -124,15 +145,15 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 24.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_6706970.jpg",
+      "src": "kelo/pexels_i_3961748.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "kelo/pixabay_i_6706970.jpg",
-        "kelo/pexels_i_37738120.jpg",
-        "kelo/pexels_i_17602526.jpg",
-        "kelo/pexels_i_33043393.jpg",
-        "kelo/pixabay_i_6538926.jpg"
+        "kelo/pexels_i_3961748.jpg",
+        "kelo/pexels_i_16553771.jpg",
+        "kelo/pixabay_i_2047596.jpg",
+        "kelo/pixabay_i_1839623.jpg",
+        "kelo/pixabay_i_6706970.jpg"
       ]
     },
     {
@@ -141,35 +162,38 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 20.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_1834446.jpg",
+      "src": "kelo/pexels_i_37738120.jpg",
       "telop": [
         "Is that \"public use\"?"
       ],
       "priority": "C",
       "images": [
-        "kelo/pixabay_i_1834446.jpg",
-        "kelo/pixabay_i_565914.jpg",
-        "kelo/scotus_gavel.jpg",
-        "kelo/us_constitution_p1.jpg"
+        "kelo/pexels_i_37738120.jpg",
+        "kelo/pexels_i_17602526.jpg",
+        "kelo/pexels_i_33043393.jpg",
+        "kelo/pixabay_i_6538926.jpg"
       ]
     },
     {
       "spanId": "SPN-0009",
       "chapterId": "act2",
       "seconds": 28.0,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "kelo/bill_of_rights.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "kelo/pexels_v_5362813.mp4",
       "telop": [
         "Narrow: the public actually uses it"
       ],
       "priority": "C",
-      "images": [
-        "kelo/bill_of_rights.jpg",
-        "kelo/us_dollar_bill.jpg",
-        "kelo/rbg_scotus_portrait.jpg",
-        "kelo/roberts_scotus_portrait.jpg",
-        "kelo/pexels_smartphone_hand.jpg"
+      "clips": [
+        {
+          "src": "kelo/pexels_v_5362813.mp4",
+          "clipSeconds": 6.72
+        },
+        {
+          "src": "kelo/pixabay_v_78804.mp4",
+          "clipSeconds": 20.0
+        }
       ]
     },
     {
@@ -178,16 +202,16 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 21.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_money_handover.jpg",
+      "src": "kelo/pixabay_i_1834446.jpg",
       "telop": [
         "Broad: any \"public purpose\""
       ],
       "priority": "C",
       "images": [
-        "kelo/pexels_money_handover.jpg",
-        "kelo/pexels_tow_truck.jpg",
-        "kelo/pexels_house_for_sale.jpg",
-        "kelo/pexels_signing_contract.jpg"
+        "kelo/pixabay_i_1834446.jpg",
+        "kelo/pixabay_i_565914.jpg",
+        "kelo/scotus_gavel.jpg",
+        "kelo/us_constitution_p1.jpg"
       ]
     },
     {
@@ -211,17 +235,20 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0012",
       "chapterId": "act2",
       "seconds": 26.0,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "kelo/pexels_police_car.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "kelo/pixabay_v_85109.mp4",
       "telop": [],
       "priority": "C",
-      "images": [
-        "kelo/pexels_police_car.jpg",
-        "kelo/pexels_i_14766052.jpg",
-        "kelo/pexels_i_37730973.jpg",
-        "kelo/pixabay_i_3194994.jpg",
-        "kelo/pexels_i_6077447.jpg"
+      "clips": [
+        {
+          "src": "kelo/pixabay_v_85109.mp4",
+          "clipSeconds": 20.89
+        },
+        {
+          "src": "kelo/pixabay_v_16166.mp4",
+          "clipSeconds": 8.17
+        }
       ]
     },
     {
@@ -230,13 +257,13 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 13.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_37732186.jpg",
+      "src": "kelo/bill_of_rights.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "kelo/pexels_i_37732186.jpg",
-        "kelo/pixabay_i_2492011.jpg",
-        "kelo/pixabay_i_6808677.jpg"
+        "kelo/bill_of_rights.jpg",
+        "kelo/us_dollar_bill.jpg",
+        "kelo/rbg_scotus_portrait.jpg"
       ]
     },
     {
@@ -253,8 +280,8 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "priority": "A",
       "images": [
         "kelo/oyez_kelo_2005.mp3",
-        "kelo/pexels_i_36984943.jpg",
-        "kelo/pexels_i_36984938.jpg"
+        "kelo/roberts_scotus_portrait.jpg",
+        "kelo/pexels_smartphone_hand.jpg"
       ]
     },
     {
@@ -263,38 +290,39 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 27.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_2225765.jpg",
+      "src": "kelo/pexels_money_handover.jpg",
       "telop": [
         "\"Public use\" = \"public purpose\""
       ],
       "priority": "A",
       "images": [
-        "kelo/pixabay_i_2225765.jpg",
-        "kelo/pixabay_i_2225766.jpg",
-        "kelo/pexels_i_159720.jpg",
-        "kelo/pexels_i_37726703.jpg",
-        "kelo/pixabay_i_923898.jpg"
+        "kelo/pexels_money_handover.jpg",
+        "kelo/pexels_tow_truck.jpg",
+        "kelo/pexels_house_for_sale.jpg",
+        "kelo/pexels_signing_contract.jpg",
+        "kelo/pexels_police_car.jpg"
       ]
     },
     {
       "spanId": "SPN-0016",
       "chapterId": "act3",
       "seconds": 39.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "kelo/pixabay_i_3324024.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "kelo/pexels_v_17362431.mp4",
       "telop": [
         "Dissent (O'Connor): \"for public use\" — erased?"
       ],
       "priority": "A",
-      "images": [
-        "kelo/pixabay_i_3324024.jpg",
-        "kelo/pexels_i_6077797.jpg",
-        "kelo/pexels_i_30483132.jpg",
-        "kelo/pixabay_i_677940.jpg",
-        "kelo/pixabay_i_677945.jpg",
-        "kelo/pexels_i_7483195.jpg",
-        "kelo/pexels_i_7649100.jpg"
+      "clips": [
+        {
+          "src": "kelo/pexels_v_17362431.mp4",
+          "clipSeconds": 20.12
+        },
+        {
+          "src": "kelo/pexels_v_3858852.mp4",
+          "clipSeconds": 35.18
+        }
       ]
     },
     {
@@ -303,14 +331,14 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 19.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_2636065.jpg",
+      "src": "kelo/pexels_i_14766052.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "kelo/pixabay_i_2636065.jpg",
-        "kelo/pixabay_i_2578873.jpg",
-        "kelo/pexels_i_20417783.jpg",
-        "kelo/pexels_i_19574309.jpg"
+        "kelo/pexels_i_14766052.jpg",
+        "kelo/pexels_i_37730973.jpg",
+        "kelo/pixabay_i_3194994.jpg",
+        "kelo/pexels_i_6077447.jpg"
       ]
     },
     {
@@ -319,35 +347,38 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 18.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_826993.jpg",
+      "src": "kelo/pexels_i_37732186.jpg",
       "telop": [
         "Backlash: bipartisan"
       ],
       "priority": "C",
       "images": [
-        "kelo/pixabay_i_826993.jpg",
-        "kelo/pixabay_i_477987.jpg",
-        "kelo/pexels_i_8850753.jpg",
-        "kelo/pexels_i_51343.jpg"
+        "kelo/pexels_i_37732186.jpg",
+        "kelo/pixabay_i_2492011.jpg",
+        "kelo/pixabay_i_6808677.jpg",
+        "kelo/pexels_i_36984943.jpg"
       ]
     },
     {
       "spanId": "SPN-0019",
       "chapterId": "act4",
       "seconds": 29.2,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "kelo/pixabay_i_3212015.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "kelo/pexels_v_3859473.mp4",
       "telop": [
         "~40+ states reformed (many criticized as weak)"
       ],
       "priority": "C",
-      "images": [
-        "kelo/pixabay_i_3212015.jpg",
-        "kelo/pixabay_i_623167.jpg",
-        "kelo/pexels_i_9364799.jpg",
-        "kelo/pexels_i_12727666.jpg",
-        "kelo/pixabay_i_1701179.jpg"
+      "clips": [
+        {
+          "src": "kelo/pexels_v_3859473.mp4",
+          "clipSeconds": 28.01
+        },
+        {
+          "src": "kelo/pexels_v_8206441.mp4",
+          "clipSeconds": 28.32
+        }
       ]
     },
     {
@@ -374,17 +405,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 24.8,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "kelo/pixabay_i_2672054.jpg",
+      "src": "kelo/pexels_i_36984938.jpg",
       "telop": [
         "2009: Pfizer leaves New London"
       ],
       "priority": "C",
       "images": [
-        "kelo/pixabay_i_2672054.jpg",
-        "kelo/pexels_i_10466471.jpg",
-        "kelo/pixabay_i_986047.jpg",
-        "kelo/pixabay_i_4988448.jpg",
-        "kelo/pexels_i_37730971.jpg"
+        "kelo/pexels_i_36984938.jpg",
+        "kelo/pixabay_i_2225765.jpg",
+        "kelo/pixabay_i_2225766.jpg",
+        "kelo/pexels_i_159720.jpg",
+        "kelo/pexels_i_37726703.jpg"
       ]
     },
     {
@@ -409,15 +440,20 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0023",
       "chapterId": "ending",
       "seconds": 16.4,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "kelo/pexels_i_7773262.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "kelo/pexels_v_36212672.mp4",
       "telop": [],
       "priority": "C",
-      "images": [
-        "kelo/pexels_i_7773262.jpg",
-        "kelo/pixabay_i_7790176.jpg",
-        "kelo/pixabay_i_1078870.jpg"
+      "clips": [
+        {
+          "src": "kelo/pexels_v_36212672.mp4",
+          "clipSeconds": 6.34
+        },
+        {
+          "src": "kelo/pexels_v_8206435.mp4",
+          "clipSeconds": 66.0
+        }
       ]
     },
     {
@@ -426,13 +462,13 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 17.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_17155842.jpg",
+      "src": "kelo/pixabay_i_923898.jpg",
       "telop": [],
       "priority": "A",
       "images": [
-        "kelo/pexels_i_17155842.jpg",
-        "kelo/pexels_i_37538043.jpg",
-        "kelo/pixabay_i_319668.jpg"
+        "kelo/pixabay_i_923898.jpg",
+        "kelo/pixabay_i_3324024.jpg",
+        "kelo/pexels_i_6077797.jpg"
       ]
     },
     {
@@ -449,26 +485,33 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "images": [
         "kelo/pixabay_i_1834446.jpg",
         "kelo/pixabay_i_565914.jpg",
-        "kelo/pixabay_i_6841384.jpg",
-        "kelo/pexels_i_19782580.jpg",
-        "kelo/pexels_i_36852946.jpg",
-        "kelo/pixabay_i_7267551.jpg",
-        "kelo/pixabay_i_1144371.jpg"
+        "kelo/pexels_i_30483132.jpg",
+        "kelo/pixabay_i_677940.jpg",
+        "kelo/pixabay_i_677945.jpg",
+        "kelo/pexels_i_7483195.jpg",
+        "kelo/pexels_i_7649100.jpg"
       ]
     },
     {
       "spanId": "SPN-0026",
       "chapterId": "ending",
       "seconds": 1.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "kelo/pexels_i_18160079.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "kelo/pixabay_v_230060.mp4",
       "telop": [
         "Subscribe"
       ],
       "priority": "C",
-      "images": [
-        "kelo/pexels_i_18160079.jpg"
+      "clips": [
+        {
+          "src": "kelo/pixabay_v_230060.mp4",
+          "clipSeconds": 45.12
+        },
+        {
+          "src": "kelo/pixabay_v_34573.mp4",
+          "clipSeconds": 9.01
+        }
       ]
     },
     {
@@ -477,16 +520,16 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 19.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_242427.jpg",
+      "src": "kelo/pixabay_i_2636065.jpg",
       "telop": [
         "Kennedy: pretextual takings still barred"
       ],
       "priority": "A",
       "images": [
-        "kelo/pexels_i_242427.jpg",
-        "kelo/pixabay_i_2507499.jpg",
-        "kelo/pixabay_i_1283938.jpg",
-        "kelo/pexels_i_6260105.jpg"
+        "kelo/pixabay_i_2636065.jpg",
+        "kelo/pixabay_i_2578873.jpg",
+        "kelo/pexels_i_20417783.jpg",
+        "kelo/pexels_i_19574309.jpg"
       ]
     },
     {
@@ -495,16 +538,16 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 31.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_5835330.jpg",
+      "src": "kelo/pixabay_i_826993.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "kelo/pexels_i_5835330.jpg",
-        "kelo/pixabay_i_1542594.jpg",
-        "kelo/pixabay_i_2575058.jpg",
-        "kelo/pexels_i_16229745.jpg",
-        "kelo/pexels_i_7634159.jpg",
-        "kelo/pixabay_i_763731.jpg"
+        "kelo/pixabay_i_826993.jpg",
+        "kelo/pixabay_i_477987.jpg",
+        "kelo/pexels_i_8850753.jpg",
+        "kelo/pexels_i_51343.jpg",
+        "kelo/pixabay_i_3212015.jpg",
+        "kelo/pixabay_i_623167.jpg"
       ]
     }
   ]

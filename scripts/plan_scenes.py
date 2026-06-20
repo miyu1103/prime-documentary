@@ -139,12 +139,17 @@ def build(ann: dict[str, Any]) -> dict[str, Any]:
     shots = []
     by_type: dict[str, int] = {}
     total_sec = 0.0
+    ai_seq = 0
     for sp in ann["spans"]:
         vi = sp.get("visual_intent", "")
         nf = sp.get("narrative_function", "")
         secs = round(word_count(sp.get("text", "")) / WPM * 60.0, 1)
         total_sec += secs
         atype, motion = classify(vi, nf, sp.get("on_screen_text", []))
+        if atype == "ai_image":                 # weave in real footage (~1/3) so it's not all stills
+            ai_seq += 1
+            if ai_seq % 3 == 0:
+                atype, motion = "stock_video", "video_native"
         by_type[atype] = by_type.get(atype, 0) + 1
         shot: dict[str, Any] = {
             "span_id": sp["span_id"],

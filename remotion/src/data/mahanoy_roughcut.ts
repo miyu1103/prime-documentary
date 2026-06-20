@@ -135,17 +135,22 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0007",
       "chapterId": "act1",
       "seconds": 12.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_1687949.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "mahanoy/pixabay_v_202987.mp4",
       "telop": [
         "Suspended from JV cheer — 1 year"
       ],
       "priority": "C",
-      "images": [
-        "mahanoy/pixabay_i_1687949.jpg",
-        "mahanoy/pexels_i_16229745.jpg",
-        "mahanoy/pexels_i_7634159.jpg"
+      "clips": [
+        {
+          "src": "mahanoy/pixabay_v_202987.mp4",
+          "clipSeconds": 15.06
+        },
+        {
+          "src": "mahanoy/pixabay_v_47743.mp4",
+          "clipSeconds": 6.97
+        }
       ]
     },
     {
@@ -173,15 +178,15 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 15.6,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "mahanoy/pixabay_i_763731.jpg",
+      "src": "mahanoy/pixabay_i_1687949.jpg",
       "telop": [
         "Tinker v. Des Moines (1969)"
       ],
       "priority": "C",
       "images": [
-        "mahanoy/pixabay_i_763731.jpg",
-        "mahanoy/pixabay_i_3113279.jpg",
-        "mahanoy/pexels_i_15452110.jpg"
+        "mahanoy/pixabay_i_1687949.jpg",
+        "mahanoy/pexels_i_16229745.jpg",
+        "mahanoy/pexels_i_7634159.jpg"
       ]
     },
     {
@@ -190,31 +195,36 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 19.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_15452106.jpg",
+      "src": "mahanoy/pixabay_i_763731.jpg",
       "telop": [
         "Test: \"substantial disruption\""
       ],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_15452106.jpg",
-        "mahanoy/pixabay_i_6367607.jpg",
-        "mahanoy/pixabay_i_4257401.jpg",
-        "mahanoy/pexels_i_8456146.jpg"
+        "mahanoy/pixabay_i_763731.jpg",
+        "mahanoy/pixabay_i_3113279.jpg",
+        "mahanoy/pexels_i_15452110.jpg",
+        "mahanoy/pexels_i_15452106.jpg"
       ]
     },
     {
       "spanId": "SPN-0011",
       "chapterId": "act2",
       "seconds": 12.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_32292156.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "mahanoy/pexels_v_37627304.mp4",
       "telop": [],
       "priority": "C",
-      "images": [
-        "mahanoy/pexels_i_32292156.jpg",
-        "mahanoy/pixabay_i_94959.jpg",
-        "mahanoy/pixabay_i_728344.jpg"
+      "clips": [
+        {
+          "src": "mahanoy/pexels_v_37627304.mp4",
+          "clipSeconds": 6.3
+        },
+        {
+          "src": "mahanoy/pexels_v_9465320.mp4",
+          "clipSeconds": 6.0
+        }
       ]
     },
     {
@@ -242,15 +252,15 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 25.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_9654894.jpg",
+      "src": "mahanoy/pixabay_i_6367607.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_9654894.jpg",
-        "mahanoy/pexels_i_10127242.jpg",
-        "mahanoy/pixabay_i_5458722.jpg",
-        "mahanoy/pixabay_i_3354784.jpg",
-        "mahanoy/pexels_i_694424.jpg"
+        "mahanoy/pixabay_i_6367607.jpg",
+        "mahanoy/pixabay_i_4257401.jpg",
+        "mahanoy/pexels_i_8456146.jpg",
+        "mahanoy/pexels_i_32292156.jpg",
+        "mahanoy/pixabay_i_94959.jpg"
       ]
     },
     {
@@ -259,33 +269,36 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 14.0,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "mahanoy/pexels_i_7821755.jpg",
+      "src": "mahanoy/pixabay_i_728344.jpg",
       "telop": [
         "2021 — 8–1",
         "Mahanoy v. B.L., 594 U.S. 180"
       ],
       "priority": "A",
       "images": [
-        "mahanoy/pexels_i_7821755.jpg",
-        "mahanoy/pixabay_i_1869510.jpg",
-        "mahanoy/pixabay_i_1851218.jpg"
+        "mahanoy/pixabay_i_728344.jpg",
+        "mahanoy/pexels_i_9654894.jpg",
+        "mahanoy/pexels_i_10127242.jpg"
       ]
     },
     {
       "spanId": "SPN-0015",
       "chapterId": "act3",
       "seconds": 27.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_13872497.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "mahanoy/pixabay_v_171085.mp4",
       "telop": [],
       "priority": "A",
-      "images": [
-        "mahanoy/pexels_i_13872497.jpg",
-        "mahanoy/pexels_i_34612562.jpg",
-        "mahanoy/pixabay_i_7335258.jpg",
-        "mahanoy/pixabay_i_3387324.jpg",
-        "mahanoy/pixabay_i_824419.jpg"
+      "clips": [
+        {
+          "src": "mahanoy/pixabay_v_171085.mp4",
+          "clipSeconds": 44.04
+        },
+        {
+          "src": "mahanoy/pixabay_v_73847.mp4",
+          "clipSeconds": 14.48
+        }
       ]
     },
     {
@@ -294,15 +307,15 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 16.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_29659894.jpg",
+      "src": "mahanoy/pixabay_i_5458722.jpg",
       "telop": [
         "Disruption: a few minutes of class chatter"
       ],
       "priority": "A",
       "images": [
-        "mahanoy/pexels_i_29659894.jpg",
-        "mahanoy/pexels_i_8419261.jpg",
-        "mahanoy/pixabay_i_993886.jpg"
+        "mahanoy/pixabay_i_5458722.jpg",
+        "mahanoy/pixabay_i_3354784.jpg",
+        "mahanoy/pexels_i_694424.jpg"
       ]
     },
     {
@@ -311,36 +324,39 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 29.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_7718642.jpg",
+      "src": "mahanoy/pexels_i_7821755.jpg",
       "telop": [
         "Still reachable: bullying · threats · cheating"
       ],
       "priority": "A",
       "images": [
-        "mahanoy/pixabay_i_7718642.jpg",
-        "mahanoy/pexels_i_6958629.jpg",
-        "mahanoy/pexels_i_6255934.jpg",
-        "mahanoy/pixabay_i_1822438.jpg",
-        "mahanoy/pixabay_i_1687949.jpg"
+        "mahanoy/pexels_i_7821755.jpg",
+        "mahanoy/pixabay_i_1869510.jpg",
+        "mahanoy/pixabay_i_1851218.jpg",
+        "mahanoy/pexels_i_13872497.jpg",
+        "mahanoy/pexels_i_34612562.jpg"
       ]
     },
     {
       "spanId": "SPN-0018",
       "chapterId": "act3",
       "seconds": 27.2,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_16229745.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "mahanoy/pixabay_v_202987.mp4",
       "telop": [
         "Dissent: Thomas, J. (alone)"
       ],
       "priority": "A",
-      "images": [
-        "mahanoy/pexels_i_16229745.jpg",
-        "mahanoy/pexels_i_7634159.jpg",
-        "mahanoy/pixabay_i_763731.jpg",
-        "mahanoy/pixabay_i_3113279.jpg",
-        "mahanoy/pexels_i_15452110.jpg"
+      "clips": [
+        {
+          "src": "mahanoy/pixabay_v_202987.mp4",
+          "clipSeconds": 15.06
+        },
+        {
+          "src": "mahanoy/pixabay_v_47743.mp4",
+          "clipSeconds": 6.97
+        }
       ]
     },
     {
@@ -349,14 +365,14 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 20.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_15452106.jpg",
+      "src": "mahanoy/pixabay_i_7335258.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_15452106.jpg",
-        "mahanoy/pixabay_i_6367607.jpg",
-        "mahanoy/pixabay_i_4257401.jpg",
-        "mahanoy/pexels_i_8456146.jpg"
+        "mahanoy/pixabay_i_7335258.jpg",
+        "mahanoy/pixabay_i_3387324.jpg",
+        "mahanoy/pixabay_i_824419.jpg",
+        "mahanoy/pexels_i_29659894.jpg"
       ]
     },
     {
@@ -365,33 +381,36 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 20.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_32292156.jpg",
+      "src": "mahanoy/pexels_i_8419261.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_32292156.jpg",
-        "mahanoy/pixabay_i_94959.jpg",
-        "mahanoy/pixabay_i_728344.jpg",
-        "mahanoy/pexels_i_9654894.jpg"
+        "mahanoy/pexels_i_8419261.jpg",
+        "mahanoy/pixabay_i_993886.jpg",
+        "mahanoy/pixabay_i_7718642.jpg",
+        "mahanoy/pexels_i_6958629.jpg"
       ]
     },
     {
       "spanId": "SPN-0021",
       "chapterId": "act4",
       "seconds": 24.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_10127242.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "mahanoy/pexels_v_37627304.mp4",
       "telop": [
         "Free speech is tested by speech we dislike"
       ],
       "priority": "A",
-      "images": [
-        "mahanoy/pexels_i_10127242.jpg",
-        "mahanoy/pixabay_i_5458722.jpg",
-        "mahanoy/pixabay_i_3354784.jpg",
-        "mahanoy/pexels_i_694424.jpg",
-        "mahanoy/pexels_i_7821755.jpg"
+      "clips": [
+        {
+          "src": "mahanoy/pexels_v_37627304.mp4",
+          "clipSeconds": 6.3
+        },
+        {
+          "src": "mahanoy/pexels_v_9465320.mp4",
+          "clipSeconds": 6.0
+        }
       ]
     },
     {
@@ -400,14 +419,14 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 19.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_1869510.jpg",
+      "src": "mahanoy/pexels_i_6255934.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "mahanoy/pixabay_i_1869510.jpg",
-        "mahanoy/pixabay_i_1851218.jpg",
-        "mahanoy/pexels_i_13872497.jpg",
-        "mahanoy/pexels_i_34612562.jpg"
+        "mahanoy/pexels_i_6255934.jpg",
+        "mahanoy/pixabay_i_1822438.jpg",
+        "mahanoy/pixabay_i_1687949.jpg",
+        "mahanoy/pexels_i_16229745.jpg"
       ]
     },
     {
@@ -416,34 +435,38 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 32.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_7335258.jpg",
+      "src": "mahanoy/pexels_i_7634159.jpg",
       "telop": [],
       "priority": "A",
       "images": [
-        "mahanoy/pixabay_i_7335258.jpg",
-        "mahanoy/pixabay_i_3387324.jpg",
-        "mahanoy/pixabay_i_824419.jpg",
-        "mahanoy/pexels_i_29659894.jpg",
-        "mahanoy/pexels_i_8419261.jpg",
-        "mahanoy/pixabay_i_993886.jpg"
+        "mahanoy/pexels_i_7634159.jpg",
+        "mahanoy/pixabay_i_763731.jpg",
+        "mahanoy/pixabay_i_3113279.jpg",
+        "mahanoy/pexels_i_15452110.jpg",
+        "mahanoy/pexels_i_15452106.jpg",
+        "mahanoy/pixabay_i_6367607.jpg"
       ]
     },
     {
       "spanId": "SPN-0024",
       "chapterId": "ending",
       "seconds": 23.2,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_7718642.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "mahanoy/pixabay_v_171085.mp4",
       "telop": [
         "Next: the right you sign away"
       ],
       "priority": "A",
-      "images": [
-        "mahanoy/pixabay_i_7718642.jpg",
-        "mahanoy/pexels_i_6958629.jpg",
-        "mahanoy/pexels_i_6255934.jpg",
-        "mahanoy/pixabay_i_1822438.jpg"
+      "clips": [
+        {
+          "src": "mahanoy/pixabay_v_171085.mp4",
+          "clipSeconds": 44.04
+        },
+        {
+          "src": "mahanoy/pixabay_v_73847.mp4",
+          "clipSeconds": 14.48
+        }
       ]
     },
     {
@@ -452,13 +475,13 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 1.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_1687949.jpg",
+      "src": "mahanoy/pixabay_i_4257401.jpg",
       "telop": [
         "Subscribe"
       ],
       "priority": "C",
       "images": [
-        "mahanoy/pixabay_i_1687949.jpg"
+        "mahanoy/pixabay_i_4257401.jpg"
       ]
     },
     {
@@ -467,16 +490,16 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 21.6,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "mahanoy/pexels_i_16229745.jpg",
+      "src": "mahanoy/pexels_i_8456146.jpg",
       "telop": [
         "1965: armbands to mourn the war dead"
       ],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_16229745.jpg",
-        "mahanoy/pexels_i_7634159.jpg",
-        "mahanoy/pixabay_i_763731.jpg",
-        "mahanoy/pixabay_i_3113279.jpg"
+        "mahanoy/pexels_i_8456146.jpg",
+        "mahanoy/pexels_i_32292156.jpg",
+        "mahanoy/pixabay_i_94959.jpg",
+        "mahanoy/pixabay_i_728344.jpg"
       ]
     },
     {
@@ -485,31 +508,36 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 22.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_15452110.jpg",
+      "src": "mahanoy/pexels_i_9654894.jpg",
       "telop": [
         "\"nurseries of democracy\" — Breyer"
       ],
       "priority": "A",
       "images": [
-        "mahanoy/pexels_i_15452110.jpg",
-        "mahanoy/pexels_i_15452106.jpg",
-        "mahanoy/pixabay_i_6367607.jpg",
-        "mahanoy/pixabay_i_4257401.jpg"
+        "mahanoy/pexels_i_9654894.jpg",
+        "mahanoy/pexels_i_10127242.jpg",
+        "mahanoy/pixabay_i_5458722.jpg",
+        "mahanoy/pixabay_i_3354784.jpg"
       ]
     },
     {
       "spanId": "SPN-0028",
       "chapterId": "act1",
       "seconds": 17.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_8456146.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "mahanoy/pixabay_v_202987.mp4",
       "telop": [],
       "priority": "C",
-      "images": [
-        "mahanoy/pexels_i_8456146.jpg",
-        "mahanoy/pexels_i_32292156.jpg",
-        "mahanoy/pixabay_i_94959.jpg"
+      "clips": [
+        {
+          "src": "mahanoy/pixabay_v_202987.mp4",
+          "clipSeconds": 15.06
+        },
+        {
+          "src": "mahanoy/pixabay_v_47743.mp4",
+          "clipSeconds": 6.97
+        }
       ]
     }
   ]

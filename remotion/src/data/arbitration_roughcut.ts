@@ -120,17 +120,22 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0005",
       "chapterId": "act1",
       "seconds": 16.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_4067653.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "arbitration/pexels_v_7721705.mp4",
       "telop": [
         "Class action = many small claims, bundled"
       ],
       "priority": "C",
-      "images": [
-        "arbitration/pixabay_i_4067653.jpg",
-        "arbitration/scotus_gavel.jpg",
-        "arbitration/us_constitution_p1.jpg"
+      "clips": [
+        {
+          "src": "arbitration/pexels_v_7721705.mp4",
+          "clipSeconds": 12.28
+        },
+        {
+          "src": "arbitration/pexels_v_5876311.mp4",
+          "clipSeconds": 12.88
+        }
       ]
     },
     {
@@ -149,7 +154,7 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
         "arbitration/pexels_i_16760546.jpg",
         "arbitration/pixabay_i_5738714.jpg",
         "arbitration/pixabay_i_371288.jpg",
-        "arbitration/bill_of_rights.jpg"
+        "arbitration/pixabay_i_4067653.jpg"
       ]
     },
     {
@@ -158,27 +163,33 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 17.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "arbitration/us_dollar_bill.jpg",
+      "src": "arbitration/scotus_gavel.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "arbitration/us_dollar_bill.jpg",
-        "arbitration/rbg_scotus_portrait.jpg",
-        "arbitration/roberts_scotus_portrait.jpg"
+        "arbitration/scotus_gavel.jpg",
+        "arbitration/us_constitution_p1.jpg",
+        "arbitration/bill_of_rights.jpg"
       ]
     },
     {
       "spanId": "SPN-0008",
       "chapterId": "act2",
       "seconds": 6.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "arbitration/pexels_smartphone_hand.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "arbitration/pexels_v_8746664.mp4",
       "telop": [],
       "priority": "C",
-      "images": [
-        "arbitration/pexels_smartphone_hand.jpg",
-        "arbitration/pexels_money_handover.jpg"
+      "clips": [
+        {
+          "src": "arbitration/pexels_v_8746664.mp4",
+          "clipSeconds": 19.05
+        },
+        {
+          "src": "arbitration/pixabay_v_68367.mp4",
+          "clipSeconds": 7.83
+        }
       ]
     },
     {
@@ -187,17 +198,17 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 27.2,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "arbitration/pexels_tow_truck.jpg",
+      "src": "arbitration/us_dollar_bill.jpg",
       "telop": [
         "Federal Arbitration Act — 1925"
       ],
       "priority": "C",
       "images": [
-        "arbitration/pexels_tow_truck.jpg",
-        "arbitration/pexels_house_for_sale.jpg",
-        "arbitration/pexels_signing_contract.jpg",
-        "arbitration/pexels_police_car.jpg",
-        "arbitration/pexels_i_14766052.jpg"
+        "arbitration/us_dollar_bill.jpg",
+        "arbitration/rbg_scotus_portrait.jpg",
+        "arbitration/roberts_scotus_portrait.jpg",
+        "arbitration/pexels_smartphone_hand.jpg",
+        "arbitration/pexels_money_handover.jpg"
       ]
     },
     {
@@ -225,36 +236,38 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 20.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "arbitration/pexels_i_37730973.jpg",
+      "src": "arbitration/pexels_tow_truck.jpg",
       "telop": [
         "Critics: closes the courthouse door"
       ],
       "priority": "C",
       "images": [
-        "arbitration/pexels_i_37730973.jpg",
-        "arbitration/pixabay_i_3194994.jpg",
-        "arbitration/pixabay_i_565914.jpg",
-        "arbitration/pexels_i_6077447.jpg"
+        "arbitration/pexels_tow_truck.jpg",
+        "arbitration/pexels_house_for_sale.jpg",
+        "arbitration/pexels_signing_contract.jpg",
+        "arbitration/pexels_police_car.jpg"
       ]
     },
     {
       "spanId": "SPN-0012",
       "chapterId": "act2",
       "seconds": 30.4,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "arbitration/pexels_i_37732186.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "arbitration/pixabay_v_1383.mp4",
       "telop": [
         "Defenders: faster, cheaper, agreed-to"
       ],
       "priority": "C",
-      "images": [
-        "arbitration/pexels_i_37732186.jpg",
-        "arbitration/pixabay_i_2492011.jpg",
-        "arbitration/pixabay_i_6808677.jpg",
-        "arbitration/pexels_i_36984943.jpg",
-        "arbitration/pexels_i_36984938.jpg",
-        "arbitration/pixabay_i_2225765.jpg"
+      "clips": [
+        {
+          "src": "arbitration/pixabay_v_1383.mp4",
+          "clipSeconds": 7.48
+        },
+        {
+          "src": "arbitration/pixabay_v_3174.mp4",
+          "clipSeconds": 12.16
+        }
       ]
     },
     {
@@ -263,17 +276,17 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 21.2,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "arbitration/pixabay_i_2225766.jpg",
+      "src": "arbitration/pexels_i_14766052.jpg",
       "telop": [
         "2011 — 5–4",
         "AT&T Mobility v. Concepcion, 563 U.S. 333"
       ],
       "priority": "A",
       "images": [
-        "arbitration/pixabay_i_2225766.jpg",
-        "arbitration/pexels_i_159720.jpg",
-        "arbitration/pexels_i_37726703.jpg",
-        "arbitration/pixabay_i_923898.jpg"
+        "arbitration/pexels_i_14766052.jpg",
+        "arbitration/pexels_i_37730973.jpg",
+        "arbitration/pixabay_i_3194994.jpg",
+        "arbitration/pixabay_i_565914.jpg"
       ]
     },
     {
@@ -282,13 +295,13 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 16.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_3324024.jpg",
+      "src": "arbitration/pexels_i_6077447.jpg",
       "telop": [],
       "priority": "A",
       "images": [
-        "arbitration/pixabay_i_3324024.jpg",
-        "arbitration/pexels_i_6077797.jpg",
-        "arbitration/pexels_i_30483132.jpg"
+        "arbitration/pexels_i_6077447.jpg",
+        "arbitration/pexels_i_37732186.jpg",
+        "arbitration/pixabay_i_2492011.jpg"
       ]
     },
     {
@@ -297,17 +310,17 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 25.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_677940.jpg",
+      "src": "arbitration/pixabay_i_6808677.jpg",
       "telop": [
         "Dissent (Breyer): the only realistic remedy?"
       ],
       "priority": "A",
       "images": [
-        "arbitration/pixabay_i_677940.jpg",
-        "arbitration/pixabay_i_677945.jpg",
-        "arbitration/pexels_i_7483195.jpg",
-        "arbitration/pexels_i_7649100.jpg",
-        "arbitration/pixabay_i_2636065.jpg"
+        "arbitration/pixabay_i_6808677.jpg",
+        "arbitration/pexels_i_36984943.jpg",
+        "arbitration/pexels_i_36984938.jpg",
+        "arbitration/pixabay_i_2225765.jpg",
+        "arbitration/pixabay_i_2225766.jpg"
       ]
     },
     {
@@ -316,35 +329,39 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 36.4,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "arbitration/pixabay_i_2578873.jpg",
+      "src": "arbitration/pexels_i_159720.jpg",
       "telop": [
         "2018: Epic Systems extends it to your job"
       ],
       "priority": "A",
       "images": [
-        "arbitration/pixabay_i_2578873.jpg",
-        "arbitration/pexels_i_20417783.jpg",
-        "arbitration/pexels_i_19574309.jpg",
-        "arbitration/pixabay_i_826993.jpg",
-        "arbitration/pixabay_i_477987.jpg",
-        "arbitration/pexels_i_8850753.jpg",
-        "arbitration/pexels_i_51343.jpg"
+        "arbitration/pexels_i_159720.jpg",
+        "arbitration/pexels_i_37726703.jpg",
+        "arbitration/pixabay_i_923898.jpg",
+        "arbitration/pixabay_i_3324024.jpg",
+        "arbitration/pexels_i_6077797.jpg",
+        "arbitration/pexels_i_30483132.jpg",
+        "arbitration/pixabay_i_677940.jpg"
       ]
     },
     {
       "spanId": "SPN-0017",
       "chapterId": "act4",
       "seconds": 24.0,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_3212015.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "arbitration/pexels_v_7645745.mp4",
       "telop": [],
       "priority": "C",
-      "images": [
-        "arbitration/pixabay_i_3212015.jpg",
-        "arbitration/pixabay_i_623167.jpg",
-        "arbitration/pexels_i_9364799.jpg",
-        "arbitration/pexels_i_12727666.jpg"
+      "clips": [
+        {
+          "src": "arbitration/pexels_v_7645745.mp4",
+          "clipSeconds": 11.29
+        },
+        {
+          "src": "arbitration/pexels_v_1797017.mp4",
+          "clipSeconds": 24.98
+        }
       ]
     },
     {
@@ -353,16 +370,16 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 23.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_1701179.jpg",
+      "src": "arbitration/pixabay_i_677945.jpg",
       "telop": [
         "The debate is real. The mechanism is not."
       ],
       "priority": "C",
       "images": [
-        "arbitration/pixabay_i_1701179.jpg",
-        "arbitration/pixabay_i_2672054.jpg",
-        "arbitration/pexels_i_10466471.jpg",
-        "arbitration/pixabay_i_986047.jpg"
+        "arbitration/pixabay_i_677945.jpg",
+        "arbitration/pexels_i_7483195.jpg",
+        "arbitration/pexels_i_7649100.jpg",
+        "arbitration/pixabay_i_2636065.jpg"
       ]
     },
     {
@@ -371,30 +388,33 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 17.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_4988448.jpg",
+      "src": "arbitration/pixabay_i_2578873.jpg",
       "telop": [],
       "priority": "A",
       "images": [
-        "arbitration/pixabay_i_4988448.jpg",
-        "arbitration/pexels_i_37730971.jpg",
-        "arbitration/pexels_i_7773262.jpg"
+        "arbitration/pixabay_i_2578873.jpg",
+        "arbitration/pexels_i_20417783.jpg",
+        "arbitration/pexels_i_19574309.jpg"
       ]
     },
     {
       "spanId": "SPN-0020",
       "chapterId": "ending",
       "seconds": 24.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_7790176.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "arbitration/pexels_v_2836344.mp4",
       "telop": [],
       "priority": "C",
-      "images": [
-        "arbitration/pixabay_i_7790176.jpg",
-        "arbitration/pixabay_i_1078870.jpg",
-        "arbitration/pexels_i_17155842.jpg",
-        "arbitration/pexels_i_37538043.jpg",
-        "arbitration/pixabay_i_319668.jpg"
+      "clips": [
+        {
+          "src": "arbitration/pexels_v_2836344.mp4",
+          "clipSeconds": 18.11
+        },
+        {
+          "src": "arbitration/pixabay_v_164241.mp4",
+          "clipSeconds": 9.38
+        }
       ]
     },
     {
@@ -403,14 +423,14 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 19.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_6841384.jpg",
+      "src": "arbitration/pixabay_i_826993.jpg",
       "telop": [],
       "priority": "A",
       "images": [
-        "arbitration/pixabay_i_6841384.jpg",
-        "arbitration/pexels_i_19782580.jpg",
-        "arbitration/pexels_i_36852946.jpg",
-        "arbitration/pixabay_i_7267551.jpg"
+        "arbitration/pixabay_i_826993.jpg",
+        "arbitration/pixabay_i_477987.jpg",
+        "arbitration/pexels_i_8850753.jpg",
+        "arbitration/pexels_i_51343.jpg"
       ]
     },
     {
@@ -419,36 +439,38 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 22.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_1144371.jpg",
+      "src": "arbitration/pixabay_i_3212015.jpg",
       "telop": [
         "Next: can they take your DNA?"
       ],
       "priority": "A",
       "images": [
-        "arbitration/pixabay_i_1144371.jpg",
-        "arbitration/pexels_i_18160079.jpg",
-        "arbitration/pexels_i_242427.jpg",
-        "arbitration/pixabay_i_2507499.jpg"
+        "arbitration/pixabay_i_3212015.jpg",
+        "arbitration/pixabay_i_623167.jpg",
+        "arbitration/pexels_i_9364799.jpg",
+        "arbitration/pexels_i_12727666.jpg"
       ]
     },
     {
       "spanId": "SPN-0023",
       "chapterId": "act2",
       "seconds": 33.2,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "arbitration/pexels_i_31421521.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "arbitration/pixabay_v_3174.mp4",
       "telop": [
         "You 'agree' just by using it"
       ],
       "priority": "C",
-      "images": [
-        "arbitration/pexels_i_31421521.jpg",
-        "arbitration/pexels_i_4278336.jpg",
-        "arbitration/pexels_i_10029300.jpg",
-        "arbitration/pixabay_i_3062270.jpg",
-        "arbitration/pixabay_i_3442955.jpg",
-        "arbitration/pixabay_i_2734960.jpg"
+      "clips": [
+        {
+          "src": "arbitration/pixabay_v_3174.mp4",
+          "clipSeconds": 12.16
+        },
+        {
+          "src": "arbitration/pixabay_v_270066.mp4",
+          "clipSeconds": 31.77
+        }
       ]
     },
     {
@@ -457,16 +479,16 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 23.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_1283938.jpg",
+      "src": "arbitration/pixabay_i_1701179.jpg",
       "telop": [
         "Dissent (Ginsburg) — read from the bench"
       ],
       "priority": "A",
       "images": [
-        "arbitration/pixabay_i_1283938.jpg",
-        "arbitration/pexels_i_6260105.jpg",
-        "arbitration/pexels_i_5835330.jpg",
-        "arbitration/pixabay_i_1542594.jpg"
+        "arbitration/pixabay_i_1701179.jpg",
+        "arbitration/pixabay_i_2672054.jpg",
+        "arbitration/pexels_i_10466471.jpg",
+        "arbitration/pixabay_i_986047.jpg"
       ]
     },
     {
@@ -475,15 +497,15 @@ export const ARBITRATION_ROUGHCUT: RoughCutData = {
       "seconds": 24.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "arbitration/pixabay_i_2575058.jpg",
+      "src": "arbitration/pixabay_i_4988448.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "arbitration/pixabay_i_2575058.jpg",
-        "arbitration/pexels_i_16229745.jpg",
-        "arbitration/pexels_i_7634159.jpg",
-        "arbitration/pixabay_i_763731.jpg",
-        "arbitration/pixabay_i_3113279.jpg"
+        "arbitration/pixabay_i_4988448.jpg",
+        "arbitration/pexels_i_37730971.jpg",
+        "arbitration/pexels_i_7773262.jpg",
+        "arbitration/pixabay_i_7790176.jpg",
+        "arbitration/pixabay_i_1078870.jpg"
       ]
     }
   ]

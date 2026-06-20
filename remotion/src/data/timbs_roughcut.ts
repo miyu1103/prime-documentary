@@ -101,18 +101,22 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0005",
       "chapterId": "act1",
       "seconds": 21.2,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "timbs/pexels_i_10475004.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "timbs/pexels_v_5243246.mp4",
       "telop": [
         "No prison — home detention + probation"
       ],
       "priority": "C",
-      "images": [
-        "timbs/pexels_i_10475004.jpg",
-        "timbs/pexels_i_10474995.jpg",
-        "timbs/pixabay_i_2403953.jpg",
-        "timbs/pixabay_i_553836.jpg"
+      "clips": [
+        {
+          "src": "timbs/pexels_v_5243246.mp4",
+          "clipSeconds": 22.78
+        },
+        {
+          "src": "timbs/pixabay_v_93536.mp4",
+          "clipSeconds": 5.01
+        }
       ]
     },
     {
@@ -170,17 +174,22 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0009",
       "chapterId": "act2",
       "seconds": 12.4,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "timbs/pexels_house_for_sale.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "timbs/pexels_cell_tower.mp4",
       "telop": [
         "The case is against the property"
       ],
       "priority": "A",
-      "images": [
-        "timbs/pexels_house_for_sale.jpg",
-        "timbs/pexels_signing_contract.jpg",
-        "timbs/pexels_police_car.jpg"
+      "clips": [
+        {
+          "src": "timbs/pexels_cell_tower.mp4",
+          "clipSeconds": 40.55
+        },
+        {
+          "src": "timbs/pexels_v_10480745.mp4",
+          "clipSeconds": 17.72
+        }
       ]
     },
     {
@@ -199,8 +208,8 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
         "timbs/pixabay_i_1869313.jpg",
         "timbs/pixabay_i_7035102.jpg",
         "timbs/us_dollar_bill.jpg",
-        "timbs/pexels_i_14766052.jpg",
-        "timbs/pexels_i_37730973.jpg"
+        "timbs/pexels_house_for_sale.jpg",
+        "timbs/pexels_signing_contract.jpg"
       ]
     },
     {
@@ -209,13 +218,13 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 12.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "timbs/pixabay_i_3194994.jpg",
+      "src": "timbs/pexels_police_car.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "timbs/pixabay_i_3194994.jpg",
-        "timbs/pixabay_i_565914.jpg",
-        "timbs/pexels_i_6077447.jpg"
+        "timbs/pexels_police_car.jpg",
+        "timbs/pexels_i_14766052.jpg",
+        "timbs/pexels_i_37730973.jpg"
       ]
     },
     {
@@ -224,35 +233,38 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 22.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "timbs/pexels_i_37732186.jpg",
+      "src": "timbs/pixabay_i_3194994.jpg",
       "telop": [
         "Supporters: it disrupts criminal profit"
       ],
       "priority": "C",
       "images": [
-        "timbs/pexels_i_37732186.jpg",
-        "timbs/pixabay_i_2492011.jpg",
-        "timbs/pixabay_i_6808677.jpg",
-        "timbs/pexels_i_36984943.jpg"
+        "timbs/pixabay_i_3194994.jpg",
+        "timbs/pixabay_i_565914.jpg",
+        "timbs/pexels_i_6077447.jpg",
+        "timbs/pexels_i_37732186.jpg"
       ]
     },
     {
       "spanId": "SPN-0013",
       "chapterId": "act2",
       "seconds": 28.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "timbs/pexels_house_for_sale.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "timbs/pexels_v_5636967.mp4",
       "telop": [
         "Critics (Institute for Justice): \"policing for profit\""
       ],
       "priority": "C",
-      "images": [
-        "timbs/pexels_house_for_sale.jpg",
-        "timbs/pexels_i_6077797.jpg",
-        "timbs/pexels_i_30483132.jpg",
-        "timbs/pixabay_i_677940.jpg",
-        "timbs/pixabay_i_677945.jpg"
+      "clips": [
+        {
+          "src": "timbs/pexels_v_5636967.mp4",
+          "clipSeconds": 10.03
+        },
+        {
+          "src": "timbs/pexels_v_10480744.mp4",
+          "clipSeconds": 40.44
+        }
       ]
     },
     {
@@ -261,16 +273,16 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 22.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "timbs/pexels_i_36984938.jpg",
+      "src": "timbs/pixabay_i_2492011.jpg",
       "telop": [
         "Criticism: bipartisan"
       ],
       "priority": "C",
       "images": [
-        "timbs/pexels_i_36984938.jpg",
-        "timbs/pixabay_i_2225765.jpg",
-        "timbs/pixabay_i_2225766.jpg",
-        "timbs/pexels_i_159720.jpg"
+        "timbs/pixabay_i_2492011.jpg",
+        "timbs/pixabay_i_6808677.jpg",
+        "timbs/pexels_i_36984943.jpg",
+        "timbs/pexels_i_36984938.jpg"
       ]
     },
     {
@@ -279,15 +291,15 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 14.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "timbs/pexels_i_37726703.jpg",
+      "src": "timbs/pixabay_i_2225765.jpg",
       "telop": [
         "8th Amendment: no \"excessive fines\""
       ],
       "priority": "C",
       "images": [
-        "timbs/pexels_i_37726703.jpg",
-        "timbs/pixabay_i_923898.jpg",
-        "timbs/pixabay_i_3324024.jpg"
+        "timbs/pixabay_i_2225765.jpg",
+        "timbs/pixabay_i_2225766.jpg",
+        "timbs/pexels_i_159720.jpg"
       ]
     },
     {
@@ -296,36 +308,38 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 23.6,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "timbs/pexels_i_6077797.jpg",
+      "src": "timbs/pexels_i_37726703.jpg",
       "telop": [
         "Roots: Magna Carta, 1215"
       ],
       "priority": "B",
       "images": [
-        "timbs/pexels_i_6077797.jpg",
-        "timbs/pexels_i_30483132.jpg",
-        "timbs/pixabay_i_677940.jpg",
-        "timbs/pixabay_i_677945.jpg"
+        "timbs/pexels_i_37726703.jpg",
+        "timbs/pixabay_i_923898.jpg",
+        "timbs/pixabay_i_3324024.jpg",
+        "timbs/pexels_i_6077797.jpg"
       ]
     },
     {
       "spanId": "SPN-0017",
       "chapterId": "act3",
       "seconds": 34.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "timbs/pexels_i_7483195.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "timbs/pexels_v_20758153.mp4",
       "telop": [
         "Does it bind the states? Indiana said no."
       ],
       "priority": "C",
-      "images": [
-        "timbs/pexels_i_7483195.jpg",
-        "timbs/pexels_i_7649100.jpg",
-        "timbs/pixabay_i_2636065.jpg",
-        "timbs/pixabay_i_2578873.jpg",
-        "timbs/pexels_i_20417783.jpg",
-        "timbs/pexels_i_19574309.jpg"
+      "clips": [
+        {
+          "src": "timbs/pexels_v_20758153.mp4",
+          "clipSeconds": 11.86
+        },
+        {
+          "src": "timbs/pexels_v_27568801.mp4",
+          "clipSeconds": 19.74
+        }
       ]
     },
     {
@@ -342,10 +356,10 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "priority": "A",
       "images": [
         "timbs/oyez_timbs_2018.mp3",
-        "timbs/pixabay_i_826993.jpg",
-        "timbs/pixabay_i_477987.jpg",
-        "timbs/pexels_i_8850753.jpg",
-        "timbs/pexels_i_51343.jpg"
+        "timbs/pexels_i_30483132.jpg",
+        "timbs/pixabay_i_677940.jpg",
+        "timbs/pixabay_i_677945.jpg",
+        "timbs/pexels_i_7483195.jpg"
       ]
     },
     {
@@ -354,14 +368,14 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 20.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "timbs/pixabay_i_3212015.jpg",
+      "src": "timbs/pexels_i_7649100.jpg",
       "telop": [],
       "priority": "A",
       "images": [
-        "timbs/pixabay_i_3212015.jpg",
-        "timbs/pixabay_i_623167.jpg",
-        "timbs/pexels_i_9364799.jpg",
-        "timbs/pexels_i_12727666.jpg"
+        "timbs/pexels_i_7649100.jpg",
+        "timbs/pixabay_i_2636065.jpg",
+        "timbs/pixabay_i_2578873.jpg",
+        "timbs/pexels_i_20417783.jpg"
       ]
     },
     {
@@ -370,33 +384,37 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 27.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "timbs/pixabay_i_1701179.jpg",
+      "src": "timbs/pexels_i_19574309.jpg",
       "telop": [
         "A limit — not the end of forfeiture"
       ],
       "priority": "A",
       "images": [
-        "timbs/pixabay_i_1701179.jpg",
-        "timbs/pixabay_i_2672054.jpg",
-        "timbs/pexels_i_10466471.jpg",
-        "timbs/pixabay_i_986047.jpg",
-        "timbs/pixabay_i_4988448.jpg"
+        "timbs/pexels_i_19574309.jpg",
+        "timbs/pixabay_i_826993.jpg",
+        "timbs/pixabay_i_477987.jpg",
+        "timbs/pexels_i_8850753.jpg",
+        "timbs/pexels_i_51343.jpg"
       ]
     },
     {
       "spanId": "SPN-0021",
       "chapterId": "act4",
       "seconds": 21.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "timbs/pexels_i_37730971.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "timbs/pexels_v_12839875.mp4",
       "telop": [],
       "priority": "C",
-      "images": [
-        "timbs/pexels_i_37730971.jpg",
-        "timbs/pexels_i_7773262.jpg",
-        "timbs/pixabay_i_7790176.jpg",
-        "timbs/pixabay_i_1078870.jpg"
+      "clips": [
+        {
+          "src": "timbs/pexels_v_12839875.mp4",
+          "clipSeconds": 13.21
+        },
+        {
+          "src": "timbs/pexels_v_19119345.mp4",
+          "clipSeconds": 8.09
+        }
       ]
     },
     {
@@ -423,32 +441,37 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 29.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "timbs/pexels_i_17155842.jpg",
+      "src": "timbs/pixabay_i_3212015.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "timbs/pexels_i_17155842.jpg",
-        "timbs/pexels_i_37538043.jpg",
-        "timbs/pixabay_i_319668.jpg",
-        "timbs/pixabay_i_6841384.jpg",
-        "timbs/pexels_i_19782580.jpg"
+        "timbs/pixabay_i_3212015.jpg",
+        "timbs/pixabay_i_623167.jpg",
+        "timbs/pexels_i_9364799.jpg",
+        "timbs/pexels_i_12727666.jpg",
+        "timbs/pixabay_i_1701179.jpg"
       ]
     },
     {
       "spanId": "SPN-0024",
       "chapterId": "act4",
       "seconds": 15.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "timbs/pexels_i_36852946.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "timbs/pixabay_v_218215.mp4",
       "telop": [
         "A limit is only as strong as who can use it"
       ],
       "priority": "A",
-      "images": [
-        "timbs/pexels_i_36852946.jpg",
-        "timbs/pixabay_i_7267551.jpg",
-        "timbs/pixabay_i_1144371.jpg"
+      "clips": [
+        {
+          "src": "timbs/pixabay_v_218215.mp4",
+          "clipSeconds": 13.88
+        },
+        {
+          "src": "timbs/pixabay_v_160402.mp4",
+          "clipSeconds": 10.03
+        }
       ]
     },
     {
@@ -457,17 +480,17 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 27.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "timbs/pexels_i_18160079.jpg",
+      "src": "timbs/pixabay_i_2672054.jpg",
       "telop": [
         "See → Take"
       ],
       "priority": "C",
       "images": [
-        "timbs/pexels_i_18160079.jpg",
-        "timbs/pexels_i_242427.jpg",
-        "timbs/pixabay_i_2507499.jpg",
-        "timbs/pixabay_i_1283938.jpg",
-        "timbs/pexels_i_6260105.jpg"
+        "timbs/pixabay_i_2672054.jpg",
+        "timbs/pexels_i_10466471.jpg",
+        "timbs/pixabay_i_986047.jpg",
+        "timbs/pixabay_i_4988448.jpg",
+        "timbs/pexels_i_37730971.jpg"
       ]
     },
     {
@@ -476,31 +499,34 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 6.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "timbs/pexels_i_5835330.jpg",
+      "src": "timbs/pexels_i_7773262.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "timbs/pexels_i_5835330.jpg",
-        "timbs/pixabay_i_1542594.jpg"
+        "timbs/pexels_i_7773262.jpg",
+        "timbs/pixabay_i_7790176.jpg"
       ]
     },
     {
       "spanId": "SPN-0027",
       "chapterId": "ending",
       "seconds": 27.2,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "timbs/pixabay_i_2575058.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "timbs/pixabay_v_186198.mp4",
       "telop": [
         "Next: can the government take your home?"
       ],
       "priority": "A",
-      "images": [
-        "timbs/pixabay_i_2575058.jpg",
-        "timbs/pexels_i_16229745.jpg",
-        "timbs/pexels_i_7634159.jpg",
-        "timbs/pixabay_i_763731.jpg",
-        "timbs/pixabay_i_3113279.jpg"
+      "clips": [
+        {
+          "src": "timbs/pixabay_v_186198.mp4",
+          "clipSeconds": 22.03
+        },
+        {
+          "src": "timbs/pexels_phone_scroll.mp4",
+          "clipSeconds": 16.85
+        }
       ]
     },
     {
@@ -509,13 +535,13 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
       "seconds": 1.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "timbs/pexels_i_37730212.jpg",
+      "src": "timbs/pixabay_i_1078870.jpg",
       "telop": [
         "Subscribe"
       ],
       "priority": "C",
       "images": [
-        "timbs/pexels_i_37730212.jpg"
+        "timbs/pixabay_i_1078870.jpg"
       ]
     }
   ]

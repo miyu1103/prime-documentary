@@ -9,7 +9,7 @@
 **全画像 共通スタイル**:
 > cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, shallow depth of field, 16:9, ultra high resolution 4K, masterpiece quality, razor-sharp focus, exquisite fine detail. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
 
-**生成枚数: 112 枚**（🎨 20 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
+**生成枚数: 79 枚**（🎨 14 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
 
 ## SPN-0002  〜46秒  → 11枚
 - 場面: 「The clause is an arbitration agreement. It says that if you have a dispute, you will not sue…」
@@ -34,14 +34,6 @@
   - `SPN-0003_03.png` ← "Free" phones — ~$30 in tax, low-angle dramatic shot
   - `SPN-0003_04.png` ← "Free" phones — ~$30 in tax, overhead top-down view
 
-## SPN-0005  〜17秒  → 4枚
-- 場面: 「The tool for that fight is the class action: a single lawsuit that bundles together everyone with the…」
-- テロップ: Class action = many small claims, bundled
-  - `SPN-0005.png` ← Class action = many small claims, bundled, wide establishing shot
-  - `SPN-0005_02.png` ← Class action = many small claims, bundled, close-up detail
-  - `SPN-0005_03.png` ← Class action = many small claims, bundled, low-angle dramatic shot
-  - `SPN-0005_04.png` ← Class action = many small claims, bundled, overhead top-down view
-
 ## SPN-0006  〜27秒  → 6枚
 - 場面: 「But their AT&T contract said no. It required any dispute to go to individual arbitration, and it specifically…」
 - テロップ: CA 'Discover Bank' rule: waiver unenforceable
@@ -58,11 +50,6 @@
   - `SPN-0007_02.png` ← AT&T argued that California rule had to give way to a much older federal, close-up detail
   - `SPN-0007_03.png` ← AT&T argued that California rule had to give way to a much older federal, low-angle dramatic shot
   - `SPN-0007_04.png` ← AT&T argued that California rule had to give way to a much older federal, overhead top-down view
-
-## SPN-0008  〜7秒  → 2枚
-- 場面: 「To understand the case, you have to understand two things: a 1925 law, and one small, powerful sentence.…」
-  - `SPN-0008.png` ← To understand the case, you have to understand two things: a 1925 law, and, wide establishing shot
-  - `SPN-0008_02.png` ← To understand the case, you have to understand two things: a 1925 law, and, close-up detail
 
 ## SPN-0010  〜27秒  → 7枚
 - 場面: 「The powerful sentence is the class-action waiver. Arbitration by itself just changes the venue — court versus a…」
@@ -84,17 +71,6 @@
   - `SPN-0011_04.png` ← Critics: closes the courthouse door, overhead top-down view
   - `SPN-0011_05.png` ← Critics: closes the courthouse door, soft-focus atmospheric background
 
-## SPN-0012  〜30秒  → 7枚
-- 場面: 「Defenders argue the opposite: that arbitration is generally faster, cheaper, and less formal than a lawsuit, that the…」
-- テロップ: Defenders: faster, cheaper, agreed-to
-  - `SPN-0012.png` ← Defenders: faster, cheaper, agreed-to, wide establishing shot
-  - `SPN-0012_02.png` ← Defenders: faster, cheaper, agreed-to, close-up detail
-  - `SPN-0012_03.png` ← Defenders: faster, cheaper, agreed-to, low-angle dramatic shot
-  - `SPN-0012_04.png` ← Defenders: faster, cheaper, agreed-to, overhead top-down view
-  - `SPN-0012_05.png` ← Defenders: faster, cheaper, agreed-to, soft-focus atmospheric background
-  - `SPN-0012_06.png` ← Defenders: faster, cheaper, agreed-to, silhouette against light
-  - `SPN-0012_07.png` ← Defenders: faster, cheaper, agreed-to, abstract symbolic composition
-
 ## SPN-0014  〜17秒  → 4枚
 - 場面: 「The opinion was written by Justice Antonin Scalia. A state rule that singles out arbitration's class-action waivers and…」
   - `SPN-0014.png` ← The opinion was written by Justice Antonin Scalia. A state rule that singles out, wide establishing shot
@@ -111,15 +87,6 @@
   - `SPN-0015_04.png` ← Dissent (Breyer): the only realistic remedy?, overhead top-down view
   - `SPN-0015_05.png` ← Dissent (Breyer): the only realistic remedy?, soft-focus atmospheric background
   - `SPN-0015_06.png` ← Dissent (Breyer): the only realistic remedy?, silhouette against light
-
-## SPN-0017  〜24秒  → 6枚
-- 場面: 「So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are now a standard feature…」
-  - `SPN-0017.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, wide establishing shot
-  - `SPN-0017_02.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, close-up detail
-  - `SPN-0017_03.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, low-angle dramatic shot
-  - `SPN-0017_04.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, overhead top-down view
-  - `SPN-0017_05.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, soft-focus atmospheric background
-  - `SPN-0017_06.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, silhouette against light
 
 ## SPN-0018  〜23秒  → 6枚
 - 場面: 「Whether that is a good thing depends on which argument you find more convincing, and that is a…」
@@ -138,15 +105,6 @@
   - `SPN-0019_03.png` ← And notice what makes this different from everything else in this series. No officer, low-angle dramatic shot
   - `SPN-0019_04.png` ← And notice what makes this different from everything else in this series. No officer, overhead top-down view
 
-## SPN-0020  〜25秒  → 6枚
-- 場面: 「A thirty-dollar charge on a "free" phone ended up drawing one of the quietest but widest lines in…」
-  - `SPN-0020.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, wide establishing shot
-  - `SPN-0020_02.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, close-up detail
-  - `SPN-0020_03.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, low-angle dramatic shot
-  - `SPN-0020_04.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, overhead top-down view
-  - `SPN-0020_05.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, soft-focus atmospheric background
-  - `SPN-0020_06.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, silhouette against light
-
 ## SPN-0021  〜19秒  → 5枚
 - 場面: 「We have now watched the state search you, track you, take your property, and police your speech —…」
   - `SPN-0021.png` ← We have now watched the state search you, track you, take your property, and, wide establishing shot
@@ -163,18 +121,6 @@
   - `SPN-0022_03.png` ← Next: can they take your DNA?, low-angle dramatic shot
   - `SPN-0022_04.png` ← Next: can they take your DNA?, overhead top-down view
   - `SPN-0022_05.png` ← Next: can they take your DNA?, soft-focus atmospheric background
-
-## SPN-0023  〜33秒  → 8枚
-- 場面: 「And here is what makes them so easy to miss. You do not sign these clauses with a…」
-- テロップ: You 'agree' just by using it
-  - `SPN-0023.png` ← You 'agree' just by using it, wide establishing shot
-  - `SPN-0023_02.png` ← You 'agree' just by using it, close-up detail
-  - `SPN-0023_03.png` ← You 'agree' just by using it, low-angle dramatic shot
-  - `SPN-0023_04.png` ← You 'agree' just by using it, overhead top-down view
-  - `SPN-0023_05.png` ← You 'agree' just by using it, soft-focus atmospheric background
-  - `SPN-0023_06.png` ← You 'agree' just by using it, silhouette against light
-  - `SPN-0023_07.png` ← You 'agree' just by using it, abstract symbolic composition
-  - `SPN-0023_08.png` ← You 'agree' just by using it, medium shot, shallow focus
 
 ## SPN-0024  〜23秒  → 6枚
 - 場面: 「Epic was not a quiet decision either. Justice Ruth Bader Ginsburg wrote a forceful dissent, arguing that forcing…」

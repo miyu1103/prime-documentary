@@ -9,7 +9,7 @@
 **全画像 共通スタイル**:
 > cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, shallow depth of field, 16:9, ultra high resolution 4K, masterpiece quality, razor-sharp focus, exquisite fine detail. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
 
-**生成枚数: 112 枚**（🎨 18 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
+**生成枚数: 71 枚**（🎨 12 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
 
 ## SPN-0002  〜40秒  → 9枚
 - 場面: 「For this whole series, we have watched the power of the state pressing against one person — searching…」
@@ -31,16 +31,6 @@
   - `SPN-0003_02.png` ← Era motif 2003; symbolic; NO real-person likeness, close-up detail
   - `SPN-0003_03.png` ← Era motif 2003; symbolic; NO real-person likeness, low-angle dramatic shot
 
-## SPN-0006  〜26秒  → 6枚
-- 場面: 「Notice what made this so powerful. It was not just a product; it was a story — a…」
-- テロップ: A story powerful enough to stop the questions
-  - `SPN-0006.png` ← A story powerful enough to stop the questions, wide establishing shot
-  - `SPN-0006_02.png` ← A story powerful enough to stop the questions, close-up detail
-  - `SPN-0006_03.png` ← A story powerful enough to stop the questions, low-angle dramatic shot
-  - `SPN-0006_04.png` ← A story powerful enough to stop the questions, overhead top-down view
-  - `SPN-0006_05.png` ← A story powerful enough to stop the questions, soft-focus atmospheric background
-  - `SPN-0006_06.png` ← A story powerful enough to stop the questions, silhouette against light
-
 ## SPN-0008  〜25秒  → 6枚
 - 場面: 「What it reported was devastating. The Edison did not work as advertised. Behind the scenes, the investigation said,…」
 - テロップ: Tests run on other companies' machines
@@ -56,17 +46,6 @@
   - `SPN-0009.png` ← For a tech demo, unreliable results are an embarrassment. For a medical test, they, wide establishing shot
   - `SPN-0009_02.png` ← For a tech demo, unreliable results are an embarrassment. For a medical test, they, close-up detail
   - `SPN-0009_03.png` ← For a tech demo, unreliable results are an embarrassment. For a medical test, they, low-angle dramatic shot
-
-## SPN-0011  〜27秒  → 7枚
-- 場面: 「But a collapsed company and a civil settlement are not the same as a crime. The harder question…」
-- テロップ: Failure — or fraud?
-  - `SPN-0011.png` ← Failure — or fraud?, wide establishing shot
-  - `SPN-0011_02.png` ← Failure — or fraud?, close-up detail
-  - `SPN-0011_03.png` ← Failure — or fraud?, low-angle dramatic shot
-  - `SPN-0011_04.png` ← Failure — or fraud?, overhead top-down view
-  - `SPN-0011_05.png` ← Failure — or fraud?, soft-focus atmospheric background
-  - `SPN-0011_06.png` ← Failure — or fraud?, silhouette against light
-  - `SPN-0011_07.png` ← Failure — or fraud?, abstract symbolic composition
 
 ## SPN-0012  〜45秒  → 11枚
 - 場面: 「That question went to a federal court, in the case United States v. Holmes. And to understand the…」
@@ -92,20 +71,6 @@
   - `SPN-0014_04.png` ← ACQUITTED: patient counts · NO VERDICT: 3 counts, overhead top-down view
   - `SPN-0014_05.png` ← ACQUITTED: patient counts · NO VERDICT: 3 counts, soft-focus atmospheric background
 
-## SPN-0015  〜43秒  → 10枚
-- 場面: 「It is tempting to read the patient acquittals as a verdict that the technology was fine, or that…」
-- テロップ: Acquittal ≠ exoneration. Balwani: convicted on all 12.
-  - `SPN-0015.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., wide establishing shot
-  - `SPN-0015_02.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., close-up detail
-  - `SPN-0015_03.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., low-angle dramatic shot
-  - `SPN-0015_04.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., overhead top-down view
-  - `SPN-0015_05.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., soft-focus atmospheric background
-  - `SPN-0015_06.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., silhouette against light
-  - `SPN-0015_07.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., abstract symbolic composition
-  - `SPN-0015_08.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., medium shot, shallow focus
-  - `SPN-0015_09.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., wide establishing shot
-  - `SPN-0015_10.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., close-up detail
-
 ## SPN-0016  〜18秒  → 4枚
 - 場面: 「As for Holmes: in November 2022, she was sentenced to about eleven years and three months in federal…」
 - テロップ: Sentenced: ~11 years, 3 months
@@ -123,15 +88,6 @@
   - `SPN-0017_04.png` ← "Fake it till you make it" — usually legal, overhead top-down view
   - `SPN-0017_05.png` ← "Fake it till you make it" — usually legal, soft-focus atmospheric background
   - `SPN-0017_06.png` ← "Fake it till you make it" — usually legal, silhouette against light
-
-## SPN-0018  〜21秒  → 5枚
-- 場面: 「The line is intent and reliance. Selling an ambitious vision is legal. Knowingly telling people something false —…」
-- テロップ: The line: knowingly false + relied upon = fraud
-  - `SPN-0018.png` ← The line: knowingly false + relied upon = fraud, wide establishing shot
-  - `SPN-0018_02.png` ← The line: knowingly false + relied upon = fraud, close-up detail
-  - `SPN-0018_03.png` ← The line: knowingly false + relied upon = fraud, low-angle dramatic shot
-  - `SPN-0018_04.png` ← The line: knowingly false + relied upon = fraud, overhead top-down view
-  - `SPN-0018_05.png` ← The line: knowingly false + relied upon = fraud, soft-focus atmospheric background
 
 ## SPN-0019  〜27秒  → 6枚
 - 場面: 「And there is a reason the stakes felt higher here than in an ordinary bad investment. A failed…」
@@ -155,15 +111,6 @@
   - `SPN-0020_08.png` ← One question, many costumes: where is the line?, medium shot, shallow focus
   - `SPN-0020_09.png` ← One question, many costumes: where is the line?, wide establishing shot
 
-## SPN-0021  〜23秒  → 6枚
-- 場面: 「That is what all of these cases really are — not dramatic stories about famous people, but arguments…」
-  - `SPN-0021.png` ← That is what all of these cases really are — not dramatic stories about, wide establishing shot
-  - `SPN-0021_02.png` ← That is what all of these cases really are — not dramatic stories about, close-up detail
-  - `SPN-0021_03.png` ← That is what all of these cases really are — not dramatic stories about, low-angle dramatic shot
-  - `SPN-0021_04.png` ← That is what all of these cases really are — not dramatic stories about, overhead top-down view
-  - `SPN-0021_05.png` ← That is what all of these cases really are — not dramatic stories about, soft-focus atmospheric background
-  - `SPN-0021_06.png` ← That is what all of these cases really are — not dramatic stories about, silhouette against light
-
 ## SPN-0022  〜14秒  → 4枚
 - 場面: 「Thank you for watching this series. If you want to keep seeing how a single case can redraw…」
 - テロップ: Subscribe — one line at a time
@@ -180,14 +127,3 @@
   - `SPN-0023_03.png` ← Prestige became a substitute for scrutiny, low-angle dramatic shot
   - `SPN-0023_04.png` ← Prestige became a substitute for scrutiny, overhead top-down view
   - `SPN-0023_05.png` ← Prestige became a substitute for scrutiny, soft-focus atmospheric background
-
-## SPN-0024  〜30秒  → 7枚
-- 場面: 「At trial, the two sides told that exact split-screen story. Prosecutors argued that Holmes knew about the device's…」
-- テロップ: Prosecution: she knew. Defense: a true believer.
-  - `SPN-0024.png` ← Prosecution: she knew. Defense: a true believer., wide establishing shot
-  - `SPN-0024_02.png` ← Prosecution: she knew. Defense: a true believer., close-up detail
-  - `SPN-0024_03.png` ← Prosecution: she knew. Defense: a true believer., low-angle dramatic shot
-  - `SPN-0024_04.png` ← Prosecution: she knew. Defense: a true believer., overhead top-down view
-  - `SPN-0024_05.png` ← Prosecution: she knew. Defense: a true believer., soft-focus atmospheric background
-  - `SPN-0024_06.png` ← Prosecution: she knew. Defense: a true believer., silhouette against light
-  - `SPN-0024_07.png` ← Prosecution: she knew. Defense: a true believer., abstract symbolic composition

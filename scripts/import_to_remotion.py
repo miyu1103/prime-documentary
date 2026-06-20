@@ -174,6 +174,8 @@ def main() -> int:
     bound = 0
     img_pool = [a for a in pool if a.get("asset_type") == "image"]  # for filling empty picture slots
     img_i = 0
+    vid_pool = [a for a in pool if a.get("asset_type") == "video"]   # for guaranteeing real footage
+    vid_i = 0
 
     def queue_copy(asset: dict[str, Any]) -> str:
         fname = os.path.basename(asset["file"])
@@ -192,8 +194,13 @@ def main() -> int:
             src = images_out[0]
             bound += 1
         elif atype == "stock_video":
-            for a in pick_videos(sh, pool, used):
+            vids = pick_videos(sh, pool, used)        # keyword-matched clips first
+            for a in vids:
                 used.add(a["asset_id"])
+            while len(vids) < 2 and vid_pool:          # guarantee real motion (cut between >=2 clips)
+                vids.append(vid_pool[vid_i % len(vid_pool)])
+                vid_i += 1
+            for a in vids:
                 clips_out.append({"src": queue_copy(a),
                                   "clipSeconds": probe_seconds(resolve_file(a["file"])) or 6.0})
             if clips_out:

@@ -107,20 +107,22 @@ export const KING_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0006",
       "chapterId": "act1",
       "seconds": 34.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "king/pixabay_i_2225766.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "king/pexels_phone_scroll.mp4",
       "telop": [
         "A cold case solved — vs — a suspicionless search"
       ],
       "priority": "C",
-      "images": [
-        "king/pixabay_i_2225766.jpg",
-        "king/pexels_i_159720.jpg",
-        "king/pexels_i_37726703.jpg",
-        "king/pixabay_i_923898.jpg",
-        "king/pixabay_i_3324024.jpg",
-        "king/pexels_i_6077797.jpg"
+      "clips": [
+        {
+          "src": "king/pexels_phone_scroll.mp4",
+          "clipSeconds": 16.85
+        },
+        {
+          "src": "king/pexels_cell_tower.mp4",
+          "clipSeconds": 40.55
+        }
       ]
     },
     {
@@ -129,11 +131,11 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 4.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pexels_i_30483132.jpg",
+      "src": "king/pixabay_i_2225766.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "king/pexels_i_30483132.jpg"
+        "king/pixabay_i_2225766.jpg"
       ]
     },
     {
@@ -156,19 +158,22 @@ export const KING_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0009",
       "chapterId": "act2",
       "seconds": 26.0,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "king/pixabay_i_677940.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "king/pexels_demolition.mp4",
       "telop": [
         "Booking: fingerprints + photo = identify"
       ],
       "priority": "C",
-      "images": [
-        "king/pixabay_i_677940.jpg",
-        "king/pixabay_i_677945.jpg",
-        "king/pexels_i_7483195.jpg",
-        "king/pexels_i_7649100.jpg",
-        "king/pixabay_i_2636065.jpg"
+      "clips": [
+        {
+          "src": "king/pexels_demolition.mp4",
+          "clipSeconds": 11.78
+        },
+        {
+          "src": "king/pexels_v_5636977.mp4",
+          "clipSeconds": 10.03
+        }
       ]
     },
     {
@@ -185,8 +190,8 @@ export const KING_ROUGHCUT: RoughCutData = {
       "images": [
         "king/pixabay_i_319668.jpg",
         "king/pixabay_i_6841384.jpg",
-        "king/pixabay_i_2578873.jpg",
-        "king/pexels_i_20417783.jpg"
+        "king/pexels_i_159720.jpg",
+        "king/pexels_i_37726703.jpg"
       ]
     },
     {
@@ -195,20 +200,20 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 47.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pexels_i_19574309.jpg",
+      "src": "king/pixabay_i_923898.jpg",
       "telop": [
         "CODIS — the FBI's national DNA database"
       ],
       "priority": "C",
       "images": [
-        "king/pexels_i_19574309.jpg",
-        "king/pixabay_i_826993.jpg",
-        "king/pixabay_i_477987.jpg",
-        "king/pexels_i_8850753.jpg",
-        "king/pexels_i_51343.jpg",
-        "king/pixabay_i_3212015.jpg",
-        "king/pixabay_i_623167.jpg",
-        "king/pexels_i_9364799.jpg"
+        "king/pixabay_i_923898.jpg",
+        "king/pixabay_i_3324024.jpg",
+        "king/pexels_i_6077797.jpg",
+        "king/pexels_i_30483132.jpg",
+        "king/pixabay_i_677940.jpg",
+        "king/pixabay_i_677945.jpg",
+        "king/pexels_i_7483195.jpg",
+        "king/pexels_i_7649100.jpg"
       ]
     },
     {
@@ -217,35 +222,38 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 16.8,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "king/pexels_i_12727666.jpg",
+      "src": "king/pixabay_i_2636065.jpg",
       "telop": [
         "2013 — 5–4",
         "Maryland v. King, 569 U.S. 435"
       ],
       "priority": "A",
       "images": [
-        "king/pexels_i_12727666.jpg",
-        "king/pixabay_i_1701179.jpg",
-        "king/pixabay_i_2672054.jpg"
+        "king/pixabay_i_2636065.jpg",
+        "king/pixabay_i_2578873.jpg",
+        "king/pexels_i_20417783.jpg"
       ]
     },
     {
       "spanId": "SPN-0013",
       "chapterId": "act3",
       "seconds": 30.0,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "king/pexels_i_10466471.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "king/pixabay_v_37417.mp4",
       "telop": [
         "\"like fingerprinting and photographing\""
       ],
       "priority": "A",
-      "images": [
-        "king/pexels_i_10466471.jpg",
-        "king/pixabay_i_986047.jpg",
-        "king/pixabay_i_4988448.jpg",
-        "king/pexels_i_37730971.jpg",
-        "king/pexels_i_7773262.jpg"
+      "clips": [
+        {
+          "src": "king/pixabay_v_37417.mp4",
+          "clipSeconds": 11.95
+        },
+        {
+          "src": "king/pexels_v_6101367.mp4",
+          "clipSeconds": 11.2
+        }
       ]
     },
     {
@@ -254,16 +262,16 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 21.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_7790176.jpg",
+      "src": "king/pexels_i_19574309.jpg",
       "telop": [
         "Dissent: Scalia + Ginsburg, Sotomayor, Kagan"
       ],
       "priority": "A",
       "images": [
-        "king/pixabay_i_7790176.jpg",
-        "king/pixabay_i_1078870.jpg",
-        "king/pexels_i_17155842.jpg",
-        "king/pexels_i_37538043.jpg"
+        "king/pexels_i_19574309.jpg",
+        "king/pixabay_i_826993.jpg",
+        "king/pixabay_i_477987.jpg",
+        "king/pexels_i_8850753.jpg"
       ]
     },
     {
@@ -272,37 +280,41 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 49.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_319668.jpg",
+      "src": "king/pexels_i_51343.jpg",
       "telop": [
         "\"...rightly or wrongly, and for whatever reason\""
       ],
       "priority": "A",
       "images": [
-        "king/pixabay_i_319668.jpg",
-        "king/pixabay_i_6841384.jpg",
-        "king/pexels_i_19782580.jpg",
-        "king/pexels_i_36852946.jpg",
-        "king/pixabay_i_7267551.jpg",
-        "king/pixabay_i_1144371.jpg",
-        "king/pexels_i_18160079.jpg",
-        "king/pexels_i_242427.jpg",
-        "king/pixabay_i_2507499.jpg"
+        "king/pexels_i_51343.jpg",
+        "king/pixabay_i_3212015.jpg",
+        "king/pixabay_i_623167.jpg",
+        "king/pexels_i_9364799.jpg",
+        "king/pexels_i_12727666.jpg",
+        "king/pixabay_i_1701179.jpg",
+        "king/pixabay_i_2672054.jpg",
+        "king/pexels_i_10466471.jpg",
+        "king/pixabay_i_986047.jpg"
       ]
     },
     {
       "spanId": "SPN-0016",
       "chapterId": "act4",
       "seconds": 22.4,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "king/pixabay_i_1283938.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "king/pixabay_v_145738.mp4",
       "telop": [],
       "priority": "C",
-      "images": [
-        "king/pixabay_i_1283938.jpg",
-        "king/pexels_i_6260105.jpg",
-        "king/pexels_i_5835330.jpg",
-        "king/pixabay_i_1542594.jpg"
+      "clips": [
+        {
+          "src": "king/pixabay_v_145738.mp4",
+          "clipSeconds": 10.03
+        },
+        {
+          "src": "king/pexels_v_29188241.mp4",
+          "clipSeconds": 20.07
+        }
       ]
     },
     {
@@ -311,18 +323,18 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 34.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_2575058.jpg",
+      "src": "king/pixabay_i_4988448.jpg",
       "telop": [
         "It solves crimes. It also files the merely arrested."
       ],
       "priority": "C",
       "images": [
-        "king/pixabay_i_2575058.jpg",
-        "king/pexels_i_16229745.jpg",
-        "king/pexels_i_7634159.jpg",
-        "king/pixabay_i_763731.jpg",
-        "king/pixabay_i_3113279.jpg",
-        "king/pexels_i_37730212.jpg"
+        "king/pixabay_i_4988448.jpg",
+        "king/pexels_i_37730971.jpg",
+        "king/pexels_i_7773262.jpg",
+        "king/pixabay_i_7790176.jpg",
+        "king/pixabay_i_1078870.jpg",
+        "king/pexels_i_17155842.jpg"
       ]
     },
     {
@@ -331,33 +343,36 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 24.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pexels_i_17489151.jpg",
+      "src": "king/pexels_i_37538043.jpg",
       "telop": [],
       "priority": "A",
       "images": [
-        "king/pexels_i_17489151.jpg",
-        "king/pixabay_i_2160321.jpg",
-        "king/pixabay_i_1376349.jpg",
-        "king/pexels_i_8052620.jpg"
+        "king/pexels_i_37538043.jpg",
+        "king/pixabay_i_319668.jpg",
+        "king/pixabay_i_6841384.jpg",
+        "king/pexels_i_19782580.jpg"
       ]
     },
     {
       "spanId": "SPN-0019",
       "chapterId": "ending",
       "seconds": 24.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "king/pexels_i_7241619.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "king/pixabay_v_50109.mp4",
       "telop": [
         "Identify you — or investigate you?"
       ],
       "priority": "C",
-      "images": [
-        "king/pexels_i_7241619.jpg",
-        "king/pixabay_i_849825.jpg",
-        "king/pixabay_i_731894.jpg",
-        "king/pexels_i_11624826.jpg",
-        "king/pexels_i_12198529.jpg"
+      "clips": [
+        {
+          "src": "king/pixabay_v_50109.mp4",
+          "clipSeconds": 18.42
+        },
+        {
+          "src": "king/pexels_v_8061661.mp4",
+          "clipSeconds": 14.04
+        }
       ]
     },
     {
@@ -366,14 +381,14 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 20.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_2180330.jpg",
+      "src": "king/pexels_i_36852946.jpg",
       "telop": [],
       "priority": "A",
       "images": [
-        "king/pixabay_i_2180330.jpg",
-        "king/pixabay_i_2696219.jpg",
-        "king/pexels_i_6590651.jpg",
-        "king/pexels_i_16886248.jpg"
+        "king/pexels_i_36852946.jpg",
+        "king/pixabay_i_7267551.jpg",
+        "king/pixabay_i_1144371.jpg",
+        "king/pexels_i_18160079.jpg"
       ]
     },
     {
@@ -382,37 +397,39 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 28.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_499481.jpg",
+      "src": "king/pexels_i_242427.jpg",
       "telop": [
         "Next: can a cop follow you into your home?"
       ],
       "priority": "A",
       "images": [
-        "king/pixabay_i_499481.jpg",
-        "king/pixabay_i_943762.jpg",
-        "king/pexels_i_6770610.jpg",
-        "king/pexels_i_16594725.jpg",
-        "king/pixabay_i_6286877.jpg"
+        "king/pexels_i_242427.jpg",
+        "king/pixabay_i_2507499.jpg",
+        "king/pixabay_i_1283938.jpg",
+        "king/pexels_i_6260105.jpg",
+        "king/pexels_i_5835330.jpg"
       ]
     },
     {
       "spanId": "SPN-0022",
       "chapterId": "act2",
       "seconds": 30.4,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "king/pixabay_i_6693060.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "king/pexels_v_10617219.mp4",
       "telop": [
         "A fingerprint vs. a genetic blueprint"
       ],
       "priority": "C",
-      "images": [
-        "king/pixabay_i_6693060.jpg",
-        "king/pexels_i_35076286.jpg",
-        "king/pexels_i_16760546.jpg",
-        "king/pixabay_i_5738714.jpg",
-        "king/pixabay_i_371288.jpg",
-        "king/pexels_i_48148.jpg"
+      "clips": [
+        {
+          "src": "king/pexels_v_10617219.mp4",
+          "clipSeconds": 22.08
+        },
+        {
+          "src": "king/pixabay_v_5392.mp4",
+          "clipSeconds": 14.4
+        }
       ]
     },
     {
@@ -421,15 +438,15 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 27.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pexels_i_7876037.jpg",
+      "src": "king/pixabay_i_1542594.jpg",
       "telop": [],
       "priority": "A",
       "images": [
-        "king/pexels_i_7876037.jpg",
-        "king/pixabay_i_5710164.jpg",
-        "king/pixabay_i_2003808.jpg",
-        "king/pexels_i_33175650.jpg",
-        "king/pexels_i_7792841.jpg"
+        "king/pixabay_i_1542594.jpg",
+        "king/pixabay_i_2575058.jpg",
+        "king/pexels_i_16229745.jpg",
+        "king/pexels_i_7634159.jpg",
+        "king/pixabay_i_763731.jpg"
       ]
     }
   ]

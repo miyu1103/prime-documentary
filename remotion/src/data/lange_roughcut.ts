@@ -138,20 +138,22 @@ export const LANGE_ROUGHCUT: RoughCutData = {
       "spanId": "SPN-0006",
       "chapterId": "act1",
       "seconds": 32.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "lange/pixabay_i_355358.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "lange/pixabay_v_354038.mp4",
       "telop": [
         "The question: the ENTRY, not the DUI"
       ],
       "priority": "C",
-      "images": [
-        "lange/pixabay_i_355358.jpg",
-        "lange/pexels_i_6186370.jpg",
-        "lange/pexels_i_29925640.jpg",
-        "lange/pexels_i_10923060.jpg",
-        "lange/pixabay_i_4795739.jpg",
-        "lange/pixabay_i_3698073.jpg"
+      "clips": [
+        {
+          "src": "lange/pixabay_v_354038.mp4",
+          "clipSeconds": 9.3
+        },
+        {
+          "src": "lange/pexels_v_32078346.mp4",
+          "clipSeconds": 24.02
+        }
       ]
     },
     {
@@ -160,10 +162,62 @@ export const LANGE_ROUGHCUT: RoughCutData = {
       "seconds": 18.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "lange/pixabay_i_10283354.jpg",
+      "src": "lange/pixabay_i_355358.jpg",
       "telop": [
         "California: any flight = automatic entry"
       ],
+      "priority": "C",
+      "images": [
+        "lange/pixabay_i_355358.jpg",
+        "lange/pexels_i_6186370.jpg",
+        "lange/pexels_i_29925640.jpg",
+        "lange/pexels_i_10923060.jpg"
+      ]
+    },
+    {
+      "spanId": "SPN-0008",
+      "chapterId": "act2",
+      "seconds": 7.6,
+      "assetType": "ai_image",
+      "motion": "ken_burns",
+      "src": "lange/pixabay_i_4795739.jpg",
+      "telop": [],
+      "priority": "C",
+      "images": [
+        "lange/pixabay_i_4795739.jpg",
+        "lange/pixabay_i_3698073.jpg"
+      ]
+    },
+    {
+      "spanId": "SPN-0009",
+      "chapterId": "act2",
+      "seconds": 38.4,
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "lange/pexels_v_8551363.mp4",
+      "telop": [
+        "Exigent circumstances: danger · evidence · escape"
+      ],
+      "priority": "C",
+      "clips": [
+        {
+          "src": "lange/pexels_v_8551363.mp4",
+          "clipSeconds": 11.95
+        },
+        {
+          "src": "lange/pexels_v_5221403.mp4",
+          "clipSeconds": 10.88
+        }
+      ]
+    },
+    {
+      "spanId": "SPN-0010",
+      "chapterId": "act2",
+      "seconds": 21.6,
+      "assetType": "ai_image",
+      "motion": "ken_burns",
+      "src": "lange/pixabay_i_10283354.jpg",
+      "telop": [],
       "priority": "C",
       "images": [
         "lange/pixabay_i_10283354.jpg",
@@ -173,90 +227,44 @@ export const LANGE_ROUGHCUT: RoughCutData = {
       ]
     },
     {
-      "spanId": "SPN-0008",
-      "chapterId": "act2",
-      "seconds": 7.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "lange/us_dollar_bill.jpg",
-      "telop": [],
-      "priority": "C",
-      "images": [
-        "lange/us_dollar_bill.jpg",
-        "lange/rbg_scotus_portrait.jpg"
-      ]
-    },
-    {
-      "spanId": "SPN-0009",
-      "chapterId": "act2",
-      "seconds": 38.4,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "lange/roberts_scotus_portrait.jpg",
-      "telop": [
-        "Exigent circumstances: danger · evidence · escape"
-      ],
-      "priority": "C",
-      "images": [
-        "lange/roberts_scotus_portrait.jpg",
-        "lange/pexels_smartphone_hand.jpg",
-        "lange/pexels_money_handover.jpg",
-        "lange/pexels_tow_truck.jpg",
-        "lange/pexels_house_for_sale.jpg",
-        "lange/pexels_signing_contract.jpg",
-        "lange/pexels_police_car.jpg"
-      ]
-    },
-    {
-      "spanId": "SPN-0010",
-      "chapterId": "act2",
-      "seconds": 21.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "lange/pexels_i_14766052.jpg",
-      "telop": [],
-      "priority": "C",
-      "images": [
-        "lange/pexels_i_14766052.jpg",
-        "lange/pexels_i_37730973.jpg",
-        "lange/pixabay_i_3194994.jpg",
-        "lange/pixabay_i_565914.jpg"
-      ]
-    },
-    {
       "spanId": "SPN-0011",
       "chapterId": "act2",
       "seconds": 38.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "lange/pexels_i_6077447.jpg",
+      "src": "lange/us_dollar_bill.jpg",
       "telop": [
         "Don't let suspects escape — vs — don't gut the home"
       ],
       "priority": "C",
       "images": [
-        "lange/pexels_i_6077447.jpg",
-        "lange/pexels_i_37732186.jpg",
-        "lange/pixabay_i_2492011.jpg",
-        "lange/pixabay_i_6808677.jpg",
-        "lange/pexels_i_36984943.jpg",
-        "lange/pexels_i_36984938.jpg",
-        "lange/pixabay_i_2225765.jpg"
+        "lange/us_dollar_bill.jpg",
+        "lange/rbg_scotus_portrait.jpg",
+        "lange/roberts_scotus_portrait.jpg",
+        "lange/pexels_smartphone_hand.jpg",
+        "lange/pexels_money_handover.jpg",
+        "lange/pexels_tow_truck.jpg",
+        "lange/pexels_house_for_sale.jpg"
       ]
     },
     {
       "spanId": "SPN-0012",
       "chapterId": "act2",
       "seconds": 13.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "lange/pixabay_i_2225766.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "lange/pixabay_v_88883.mp4",
       "telop": [],
       "priority": "C",
-      "images": [
-        "lange/pixabay_i_2225766.jpg",
-        "lange/pexels_i_159720.jpg",
-        "lange/pexels_i_37726703.jpg"
+      "clips": [
+        {
+          "src": "lange/pixabay_v_88883.mp4",
+          "clipSeconds": 6.43
+        },
+        {
+          "src": "lange/pixabay_v_6714.mp4",
+          "clipSeconds": 10.61
+        }
       ]
     },
     {
@@ -265,17 +273,17 @@ export const LANGE_ROUGHCUT: RoughCutData = {
       "seconds": 18.4,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "lange/pixabay_i_923898.jpg",
+      "src": "lange/pexels_signing_contract.jpg",
       "telop": [
         "2021 — 9–0 (in judgment)",
         "Lange v. California, 594 U.S. 295"
       ],
       "priority": "A",
       "images": [
-        "lange/pixabay_i_923898.jpg",
-        "lange/pixabay_i_3324024.jpg",
-        "lange/pexels_i_6077797.jpg",
-        "lange/pexels_i_30483132.jpg"
+        "lange/pexels_signing_contract.jpg",
+        "lange/pexels_police_car.jpg",
+        "lange/pexels_i_14766052.jpg",
+        "lange/pexels_i_37730973.jpg"
       ]
     },
     {
@@ -291,11 +299,11 @@ export const LANGE_ROUGHCUT: RoughCutData = {
       "priority": "A",
       "images": [
         "lange/scotus_gavel.jpg",
-        "lange/pixabay_i_677940.jpg",
-        "lange/pixabay_i_677945.jpg",
-        "lange/pexels_i_7483195.jpg",
-        "lange/pexels_i_7649100.jpg",
-        "lange/pixabay_i_2636065.jpg"
+        "lange/pixabay_i_3194994.jpg",
+        "lange/pixabay_i_565914.jpg",
+        "lange/pexels_i_6077447.jpg",
+        "lange/pexels_i_37732186.jpg",
+        "lange/pixabay_i_2492011.jpg"
       ]
     },
     {
@@ -311,31 +319,36 @@ export const LANGE_ROUGHCUT: RoughCutData = {
       "priority": "A",
       "images": [
         "lange/roberts_scotus_portrait.jpg",
-        "lange/pixabay_i_2578873.jpg",
-        "lange/pexels_i_20417783.jpg",
-        "lange/pexels_i_19574309.jpg",
-        "lange/pixabay_i_826993.jpg",
-        "lange/pixabay_i_477987.jpg",
-        "lange/pexels_i_8850753.jpg",
-        "lange/pexels_i_51343.jpg",
-        "lange/pixabay_i_3212015.jpg"
+        "lange/pixabay_i_6808677.jpg",
+        "lange/pexels_i_36984943.jpg",
+        "lange/pexels_i_36984938.jpg",
+        "lange/pixabay_i_2225765.jpg",
+        "lange/pixabay_i_2225766.jpg",
+        "lange/pexels_i_159720.jpg",
+        "lange/pexels_i_37726703.jpg",
+        "lange/pixabay_i_923898.jpg"
       ]
     },
     {
       "spanId": "SPN-0016",
       "chapterId": "act3",
       "seconds": 16.8,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "lange/pixabay_i_623167.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "lange/pixabay_v_200276.mp4",
       "telop": [
         "Vacated & remanded"
       ],
       "priority": "A",
-      "images": [
-        "lange/pixabay_i_623167.jpg",
-        "lange/pexels_i_9364799.jpg",
-        "lange/pexels_i_12727666.jpg"
+      "clips": [
+        {
+          "src": "lange/pixabay_v_200276.mp4",
+          "clipSeconds": 10.01
+        },
+        {
+          "src": "lange/pexels_v_10349015.mp4",
+          "clipSeconds": 17.28
+        }
       ]
     },
     {
@@ -344,16 +357,16 @@ export const LANGE_ROUGHCUT: RoughCutData = {
       "seconds": 33.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "lange/pixabay_i_1701179.jpg",
+      "src": "lange/pixabay_i_3324024.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "lange/pixabay_i_1701179.jpg",
-        "lange/pixabay_i_2672054.jpg",
-        "lange/pexels_i_10466471.jpg",
-        "lange/pixabay_i_986047.jpg",
-        "lange/pixabay_i_4988448.jpg",
-        "lange/pexels_i_37730971.jpg"
+        "lange/pixabay_i_3324024.jpg",
+        "lange/pexels_i_6077797.jpg",
+        "lange/pexels_i_30483132.jpg",
+        "lange/pixabay_i_677940.jpg",
+        "lange/pixabay_i_677945.jpg",
+        "lange/pexels_i_7483195.jpg"
       ]
     },
     {
@@ -362,32 +375,37 @@ export const LANGE_ROUGHCUT: RoughCutData = {
       "seconds": 29.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "lange/pexels_i_7773262.jpg",
+      "src": "lange/pexels_i_7649100.jpg",
       "telop": [],
       "priority": "C",
       "images": [
-        "lange/pexels_i_7773262.jpg",
-        "lange/pixabay_i_7790176.jpg",
-        "lange/pixabay_i_1078870.jpg",
-        "lange/pexels_i_17155842.jpg",
-        "lange/pexels_i_37538043.jpg"
+        "lange/pexels_i_7649100.jpg",
+        "lange/pixabay_i_2636065.jpg",
+        "lange/pixabay_i_2578873.jpg",
+        "lange/pexels_i_20417783.jpg",
+        "lange/pexels_i_19574309.jpg"
       ]
     },
     {
       "spanId": "SPN-0019",
       "chapterId": "ending",
       "seconds": 18.0,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "lange/pexels_i_37124334.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "lange/pixabay_v_200276.mp4",
       "telop": [
         "The line at your front door"
       ],
       "priority": "C",
-      "images": [
-        "lange/pexels_i_37124334.jpg",
-        "lange/pexels_i_32011828.jpg",
-        "lange/pexels_i_5487403.jpg"
+      "clips": [
+        {
+          "src": "lange/pixabay_v_200276.mp4",
+          "clipSeconds": 10.01
+        },
+        {
+          "src": "lange/pexels_v_10349011.mp4",
+          "clipSeconds": 6.36
+        }
       ]
     },
     {
@@ -396,15 +414,15 @@ export const LANGE_ROUGHCUT: RoughCutData = {
       "seconds": 28.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "lange/pixabay_i_319668.jpg",
+      "src": "lange/pixabay_i_826993.jpg",
       "telop": [],
       "priority": "A",
       "images": [
-        "lange/pixabay_i_319668.jpg",
-        "lange/pixabay_i_6841384.jpg",
-        "lange/pexels_i_19782580.jpg",
-        "lange/pexels_i_36852946.jpg",
-        "lange/pixabay_i_7267551.jpg"
+        "lange/pixabay_i_826993.jpg",
+        "lange/pixabay_i_477987.jpg",
+        "lange/pexels_i_8850753.jpg",
+        "lange/pexels_i_51343.jpg",
+        "lange/pixabay_i_3212015.jpg"
       ]
     },
     {
@@ -413,36 +431,39 @@ export const LANGE_ROUGHCUT: RoughCutData = {
       "seconds": 28.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "lange/pixabay_i_1144371.jpg",
+      "src": "lange/pixabay_i_623167.jpg",
       "telop": [
         "Finale: when does a bold promise become a crime?"
       ],
       "priority": "A",
       "images": [
-        "lange/pixabay_i_1144371.jpg",
-        "lange/pexels_i_18160079.jpg",
-        "lange/pexels_i_242427.jpg",
-        "lange/pixabay_i_2507499.jpg",
-        "lange/pixabay_i_1283938.jpg"
+        "lange/pixabay_i_623167.jpg",
+        "lange/pexels_i_9364799.jpg",
+        "lange/pexels_i_12727666.jpg",
+        "lange/pixabay_i_1701179.jpg",
+        "lange/pixabay_i_2672054.jpg"
       ]
     },
     {
       "spanId": "SPN-0022",
       "chapterId": "act2",
       "seconds": 25.6,
-      "assetType": "ai_image",
-      "motion": "ken_burns",
-      "src": "lange/pexels_i_6260105.jpg",
+      "assetType": "stock_video",
+      "motion": "video_native",
+      "src": "lange/pexels_v_12232631.mp4",
       "telop": [
         "Misdemeanor: assault ... or a noise complaint"
       ],
       "priority": "C",
-      "images": [
-        "lange/pexels_i_6260105.jpg",
-        "lange/pexels_i_5835330.jpg",
-        "lange/pixabay_i_1542594.jpg",
-        "lange/pixabay_i_2575058.jpg",
-        "lange/pexels_i_16229745.jpg"
+      "clips": [
+        {
+          "src": "lange/pexels_v_12232631.mp4",
+          "clipSeconds": 3.65
+        },
+        {
+          "src": "lange/pixabay_v_312758.mp4",
+          "clipSeconds": 10.48
+        }
       ]
     },
     {
@@ -461,7 +482,7 @@ export const LANGE_ROUGHCUT: RoughCutData = {
         "lange/pexels_i_37726703.jpg",
         "lange/pixabay_i_923898.jpg",
         "lange/pixabay_i_3324024.jpg",
-        "lange/pexels_i_7634159.jpg"
+        "lange/pexels_i_10466471.jpg"
       ]
     }
   ]
