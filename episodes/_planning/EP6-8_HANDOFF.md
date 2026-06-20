@@ -35,6 +35,14 @@ Do NOT publish, run paid APIs, or generate paid assets from this file. This is a
   the source, MUST: (1) be disclosed as AI-generated; (2) be registered in the rights manifest
   (origin / creator / license / verified_at); (3) contain NO real-person likeness or deepfake
   (invariant 11); (4) match PD brand (palette/spec in remotion/src/brand.ts).
+- REAL FOOTAGE / PHOTOS (rights-clean — USE for authenticity, less AI-look): prefer public-domain +
+  CC0/free-commercial stock for B-roll and establishing shots (courthouses, streets, generic objects,
+  maps) and public-domain historical photos; SCOTUS oral-argument audio is public domain and usable.
+  Approved sources + rules in references/README.md. EVERY external asset: license-verified for
+  commercial use, attributed where required, recorded in the rights manifest (origin/creator/license/
+  URL/verified_at). NO identifiable real-person likeness, trademarks, editorial-only stock, or
+  copyrighted news/TV footage. Codex-generated visuals = symbolic reconstruction; rights-clean real
+  footage carries the documentary authenticity.
 - Motion / on-screen graphics: Remotion (parallax, data, typography); Runway optional for AI motion.
 - Narration: ElevenLabs (master). PAID → owner approval + idempotency + budget check.
 - Music / SFX: Suno reuse library (rights-tracked); no new paid generation assumed.
