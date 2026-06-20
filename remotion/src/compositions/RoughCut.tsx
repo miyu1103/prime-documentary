@@ -170,7 +170,7 @@ const VideoShot: React.FC<{clips: {src: string; clipSeconds: number}[]; shotSeco
 const ImageShot: React.FC<{images: string[]; shotSeconds: number}> = ({images, shotSeconds}) => {
   const {fps} = useVideoConfig();
   const total = Math.max(1, Math.round(shotSeconds * fps));
-  const per = Math.round(6 * fps);
+  const per = Math.round(4.5 * fps); // cut to a new image ~every 4.5s (matches ai_image_brief.py)
   const segs: {src: string; frames: number; dir: number}[] = [];
   let acc = 0;
   let k = 0;

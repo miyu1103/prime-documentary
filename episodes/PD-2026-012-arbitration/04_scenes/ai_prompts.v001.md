@@ -7,118 +7,190 @@
 フォルダが無ければ作成可。PNG推奨・1920x1080以上。
 
 **全画像 共通スタイル**:
-> cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
+> cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, shallow depth of field, 16:9, ultra high resolution 4K, masterpiece quality, razor-sharp focus, exquisite fine detail. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
 
-生成枚数: 20 枚（🎨の場面ぶん）。1場面に複数欲しいときは `<ID>_02.png` のように連番で追加可。
+**生成枚数: 112 枚**（🎨 20 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
 
-## SPN-0002  → 保存名 `SPN-0002.png`
+## SPN-0002  〜46秒  → 11枚
 - 場面: 「The clause is an arbitration agreement. It says that if you have a dispute, you will not sue…」
 - テロップ: Arbitration clause + class-action waiver
-- **プロンプト**: Arbitration clause + class-action waiver. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0002.png`
+  - `SPN-0002.png` ← Arbitration clause + class-action waiver, wide establishing shot
+  - `SPN-0002_02.png` ← Arbitration clause + class-action waiver, close-up detail
+  - `SPN-0002_03.png` ← Arbitration clause + class-action waiver, low-angle dramatic shot
+  - `SPN-0002_04.png` ← Arbitration clause + class-action waiver, overhead top-down view
+  - `SPN-0002_05.png` ← Arbitration clause + class-action waiver, soft-focus atmospheric background
+  - `SPN-0002_06.png` ← Arbitration clause + class-action waiver, silhouette against light
+  - `SPN-0002_07.png` ← Arbitration clause + class-action waiver, abstract symbolic composition
+  - `SPN-0002_08.png` ← Arbitration clause + class-action waiver, medium shot, shallow focus
+  - `SPN-0002_09.png` ← Arbitration clause + class-action waiver, wide establishing shot
+  - `SPN-0002_10.png` ← Arbitration clause + class-action waiver, close-up detail
+  - `SPN-0002_11.png` ← Arbitration clause + class-action waiver, low-angle dramatic shot
 
-## SPN-0003  → 保存名 `SPN-0003.png`
+## SPN-0003  〜16秒  → 4枚
 - 場面: 「It starts with a couple in California, Vincent and Liza Concepcion. They sign up with AT&T for cellphones…」
 - テロップ: "Free" phones — ~$30 in tax
-- **プロンプト**: "Free" phones — ~$30 in tax. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0003.png`
+  - `SPN-0003.png` ← "Free" phones — ~$30 in tax, wide establishing shot
+  - `SPN-0003_02.png` ← "Free" phones — ~$30 in tax, close-up detail
+  - `SPN-0003_03.png` ← "Free" phones — ~$30 in tax, low-angle dramatic shot
+  - `SPN-0003_04.png` ← "Free" phones — ~$30 in tax, overhead top-down view
 
-## SPN-0005  → 保存名 `SPN-0005.png`
+## SPN-0005  〜17秒  → 4枚
 - 場面: 「The tool for that fight is the class action: a single lawsuit that bundles together everyone with the…」
 - テロップ: Class action = many small claims, bundled
-- **プロンプト**: Class action = many small claims, bundled. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0005.png`
+  - `SPN-0005.png` ← Class action = many small claims, bundled, wide establishing shot
+  - `SPN-0005_02.png` ← Class action = many small claims, bundled, close-up detail
+  - `SPN-0005_03.png` ← Class action = many small claims, bundled, low-angle dramatic shot
+  - `SPN-0005_04.png` ← Class action = many small claims, bundled, overhead top-down view
 
-## SPN-0006  → 保存名 `SPN-0006.png`
+## SPN-0006  〜27秒  → 6枚
 - 場面: 「But their AT&T contract said no. It required any dispute to go to individual arbitration, and it specifically…」
 - テロップ: CA 'Discover Bank' rule: waiver unenforceable
-- **プロンプト**: CA 'Discover Bank' rule: waiver unenforceable. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0006.png`
+  - `SPN-0006.png` ← CA 'Discover Bank' rule: waiver unenforceable, wide establishing shot
+  - `SPN-0006_02.png` ← CA 'Discover Bank' rule: waiver unenforceable, close-up detail
+  - `SPN-0006_03.png` ← CA 'Discover Bank' rule: waiver unenforceable, low-angle dramatic shot
+  - `SPN-0006_04.png` ← CA 'Discover Bank' rule: waiver unenforceable, overhead top-down view
+  - `SPN-0006_05.png` ← CA 'Discover Bank' rule: waiver unenforceable, soft-focus atmospheric background
+  - `SPN-0006_06.png` ← CA 'Discover Bank' rule: waiver unenforceable, silhouette against light
 
-## SPN-0007  → 保存名 `SPN-0007.png`
+## SPN-0007  〜18秒  → 4枚
 - 場面: 「AT&T argued that California rule had to give way to a much older federal law. And so a…」
-- **プロンプト**: AT&T argued that California rule had to give way to a much older federal. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0007.png`
+  - `SPN-0007.png` ← AT&T argued that California rule had to give way to a much older federal, wide establishing shot
+  - `SPN-0007_02.png` ← AT&T argued that California rule had to give way to a much older federal, close-up detail
+  - `SPN-0007_03.png` ← AT&T argued that California rule had to give way to a much older federal, low-angle dramatic shot
+  - `SPN-0007_04.png` ← AT&T argued that California rule had to give way to a much older federal, overhead top-down view
 
-## SPN-0008  → 保存名 `SPN-0008.png`
+## SPN-0008  〜7秒  → 2枚
 - 場面: 「To understand the case, you have to understand two things: a 1925 law, and one small, powerful sentence.…」
-- **プロンプト**: To understand the case, you have to understand two things: a 1925 law, and. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0008.png`
+  - `SPN-0008.png` ← To understand the case, you have to understand two things: a 1925 law, and, wide establishing shot
+  - `SPN-0008_02.png` ← To understand the case, you have to understand two things: a 1925 law, and, close-up detail
 
-## SPN-0010  → 保存名 `SPN-0010.png`
+## SPN-0010  〜27秒  → 7枚
 - 場面: 「The powerful sentence is the class-action waiver. Arbitration by itself just changes the venue — court versus a…」
 - テロップ: The waiver: one person at a time
-- **プロンプト**: The waiver: one person at a time. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0010.png`
+  - `SPN-0010.png` ← The waiver: one person at a time, wide establishing shot
+  - `SPN-0010_02.png` ← The waiver: one person at a time, close-up detail
+  - `SPN-0010_03.png` ← The waiver: one person at a time, low-angle dramatic shot
+  - `SPN-0010_04.png` ← The waiver: one person at a time, overhead top-down view
+  - `SPN-0010_05.png` ← The waiver: one person at a time, soft-focus atmospheric background
+  - `SPN-0010_06.png` ← The waiver: one person at a time, silhouette against light
+  - `SPN-0010_07.png` ← The waiver: one person at a time, abstract symbolic composition
 
-## SPN-0011  → 保存名 `SPN-0011.png`
+## SPN-0011  〜20秒  → 5枚
 - 場面: 「This is where honest people split, and it is worth hearing both sides plainly. Critics argue that mandatory…」
 - テロップ: Critics: closes the courthouse door
-- **プロンプト**: Critics: closes the courthouse door. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0011.png`
+  - `SPN-0011.png` ← Critics: closes the courthouse door, wide establishing shot
+  - `SPN-0011_02.png` ← Critics: closes the courthouse door, close-up detail
+  - `SPN-0011_03.png` ← Critics: closes the courthouse door, low-angle dramatic shot
+  - `SPN-0011_04.png` ← Critics: closes the courthouse door, overhead top-down view
+  - `SPN-0011_05.png` ← Critics: closes the courthouse door, soft-focus atmospheric background
 
-## SPN-0012  → 保存名 `SPN-0012.png`
+## SPN-0012  〜30秒  → 7枚
 - 場面: 「Defenders argue the opposite: that arbitration is generally faster, cheaper, and less formal than a lawsuit, that the…」
 - テロップ: Defenders: faster, cheaper, agreed-to
-- **プロンプト**: Defenders: faster, cheaper, agreed-to. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0012.png`
+  - `SPN-0012.png` ← Defenders: faster, cheaper, agreed-to, wide establishing shot
+  - `SPN-0012_02.png` ← Defenders: faster, cheaper, agreed-to, close-up detail
+  - `SPN-0012_03.png` ← Defenders: faster, cheaper, agreed-to, low-angle dramatic shot
+  - `SPN-0012_04.png` ← Defenders: faster, cheaper, agreed-to, overhead top-down view
+  - `SPN-0012_05.png` ← Defenders: faster, cheaper, agreed-to, soft-focus atmospheric background
+  - `SPN-0012_06.png` ← Defenders: faster, cheaper, agreed-to, silhouette against light
+  - `SPN-0012_07.png` ← Defenders: faster, cheaper, agreed-to, abstract symbolic composition
 
-## SPN-0014  → 保存名 `SPN-0014.png`
+## SPN-0014  〜17秒  → 4枚
 - 場面: 「The opinion was written by Justice Antonin Scalia. A state rule that singles out arbitration's class-action waivers and…」
-- **プロンプト**: The opinion was written by Justice Antonin Scalia. A state rule that singles out. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0014.png`
+  - `SPN-0014.png` ← The opinion was written by Justice Antonin Scalia. A state rule that singles out, wide establishing shot
+  - `SPN-0014_02.png` ← The opinion was written by Justice Antonin Scalia. A state rule that singles out, close-up detail
+  - `SPN-0014_03.png` ← The opinion was written by Justice Antonin Scalia. A state rule that singles out, low-angle dramatic shot
+  - `SPN-0014_04.png` ← The opinion was written by Justice Antonin Scalia. A state rule that singles out, overhead top-down view
 
-## SPN-0015  → 保存名 `SPN-0015.png`
+## SPN-0015  〜26秒  → 6枚
 - 場面: 「Justice Stephen Breyer wrote the dissent, and it put the other half of the problem into words. For…」
 - テロップ: Dissent (Breyer): the only realistic remedy?
-- **プロンプト**: Dissent (Breyer): the only realistic remedy?. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0015.png`
+  - `SPN-0015.png` ← Dissent (Breyer): the only realistic remedy?, wide establishing shot
+  - `SPN-0015_02.png` ← Dissent (Breyer): the only realistic remedy?, close-up detail
+  - `SPN-0015_03.png` ← Dissent (Breyer): the only realistic remedy?, low-angle dramatic shot
+  - `SPN-0015_04.png` ← Dissent (Breyer): the only realistic remedy?, overhead top-down view
+  - `SPN-0015_05.png` ← Dissent (Breyer): the only realistic remedy?, soft-focus atmospheric background
+  - `SPN-0015_06.png` ← Dissent (Breyer): the only realistic remedy?, silhouette against light
 
-## SPN-0017  → 保存名 `SPN-0017.png`
+## SPN-0017  〜24秒  → 6枚
 - 場面: 「So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are now a standard feature…」
-- **プロンプト**: So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0017.png`
+  - `SPN-0017.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, wide establishing shot
+  - `SPN-0017_02.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, close-up detail
+  - `SPN-0017_03.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, low-angle dramatic shot
+  - `SPN-0017_04.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, overhead top-down view
+  - `SPN-0017_05.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, soft-focus atmospheric background
+  - `SPN-0017_06.png` ← So here is where it leaves you. Mandatory arbitration clauses, with class-action waivers, are, silhouette against light
 
-## SPN-0018  → 保存名 `SPN-0018.png`
+## SPN-0018  〜23秒  → 6枚
 - 場面: 「Whether that is a good thing depends on which argument you find more convincing, and that is a…」
 - テロップ: The debate is real. The mechanism is not.
-- **プロンプト**: The debate is real. The mechanism is not.. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0018.png`
+  - `SPN-0018.png` ← The debate is real. The mechanism is not., wide establishing shot
+  - `SPN-0018_02.png` ← The debate is real. The mechanism is not., close-up detail
+  - `SPN-0018_03.png` ← The debate is real. The mechanism is not., low-angle dramatic shot
+  - `SPN-0018_04.png` ← The debate is real. The mechanism is not., overhead top-down view
+  - `SPN-0018_05.png` ← The debate is real. The mechanism is not., soft-focus atmospheric background
+  - `SPN-0018_06.png` ← The debate is real. The mechanism is not., silhouette against light
 
-## SPN-0019  → 保存名 `SPN-0019.png`
+## SPN-0019  〜18秒  → 4枚
 - 場面: 「And notice what makes this different from everything else in this series. No officer took anything. No school…」
-- **プロンプト**: And notice what makes this different from everything else in this series. No officer. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0019.png`
+  - `SPN-0019.png` ← And notice what makes this different from everything else in this series. No officer, wide establishing shot
+  - `SPN-0019_02.png` ← And notice what makes this different from everything else in this series. No officer, close-up detail
+  - `SPN-0019_03.png` ← And notice what makes this different from everything else in this series. No officer, low-angle dramatic shot
+  - `SPN-0019_04.png` ← And notice what makes this different from everything else in this series. No officer, overhead top-down view
 
-## SPN-0020  → 保存名 `SPN-0020.png`
+## SPN-0020  〜25秒  → 6枚
 - 場面: 「A thirty-dollar charge on a "free" phone ended up drawing one of the quietest but widest lines in…」
-- **プロンプト**: A thirty-dollar charge on a "free" phone ended up drawing one of the quietest. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0020.png`
+  - `SPN-0020.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, wide establishing shot
+  - `SPN-0020_02.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, close-up detail
+  - `SPN-0020_03.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, low-angle dramatic shot
+  - `SPN-0020_04.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, overhead top-down view
+  - `SPN-0020_05.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, soft-focus atmospheric background
+  - `SPN-0020_06.png` ← A thirty-dollar charge on a "free" phone ended up drawing one of the quietest, silhouette against light
 
-## SPN-0021  → 保存名 `SPN-0021.png`
+## SPN-0021  〜19秒  → 5枚
 - 場面: 「We have now watched the state search you, track you, take your property, and police your speech —…」
-- **プロンプト**: We have now watched the state search you, track you, take your property, and. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0021.png`
+  - `SPN-0021.png` ← We have now watched the state search you, track you, take your property, and, wide establishing shot
+  - `SPN-0021_02.png` ← We have now watched the state search you, track you, take your property, and, close-up detail
+  - `SPN-0021_03.png` ← We have now watched the state search you, track you, take your property, and, low-angle dramatic shot
+  - `SPN-0021_04.png` ← We have now watched the state search you, track you, take your property, and, overhead top-down view
+  - `SPN-0021_05.png` ← We have now watched the state search you, track you, take your property, and, soft-focus atmospheric background
 
-## SPN-0022  → 保存名 `SPN-0022.png`
+## SPN-0022  〜22秒  → 5枚
 - 場面: 「The next case moves that question somewhere more intimate than a phone or a contract. Not what you…」
 - テロップ: Next: can they take your DNA?
-- **プロンプト**: Next: can they take your DNA?. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0022.png`
+  - `SPN-0022.png` ← Next: can they take your DNA?, wide establishing shot
+  - `SPN-0022_02.png` ← Next: can they take your DNA?, close-up detail
+  - `SPN-0022_03.png` ← Next: can they take your DNA?, low-angle dramatic shot
+  - `SPN-0022_04.png` ← Next: can they take your DNA?, overhead top-down view
+  - `SPN-0022_05.png` ← Next: can they take your DNA?, soft-focus atmospheric background
 
-## SPN-0023  → 保存名 `SPN-0023.png`
+## SPN-0023  〜33秒  → 8枚
 - 場面: 「And here is what makes them so easy to miss. You do not sign these clauses with a…」
 - テロップ: You 'agree' just by using it
-- **プロンプト**: You 'agree' just by using it. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0023.png`
+  - `SPN-0023.png` ← You 'agree' just by using it, wide establishing shot
+  - `SPN-0023_02.png` ← You 'agree' just by using it, close-up detail
+  - `SPN-0023_03.png` ← You 'agree' just by using it, low-angle dramatic shot
+  - `SPN-0023_04.png` ← You 'agree' just by using it, overhead top-down view
+  - `SPN-0023_05.png` ← You 'agree' just by using it, soft-focus atmospheric background
+  - `SPN-0023_06.png` ← You 'agree' just by using it, silhouette against light
+  - `SPN-0023_07.png` ← You 'agree' just by using it, abstract symbolic composition
+  - `SPN-0023_08.png` ← You 'agree' just by using it, medium shot, shallow focus
 
-## SPN-0024  → 保存名 `SPN-0024.png`
+## SPN-0024  〜23秒  → 6枚
 - 場面: 「Epic was not a quiet decision either. Justice Ruth Bader Ginsburg wrote a forceful dissent, arguing that forcing…」
 - テロップ: Dissent (Ginsburg) — read from the bench
-- **プロンプト**: Dissent (Ginsburg) — read from the bench. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0024.png`
+  - `SPN-0024.png` ← Dissent (Ginsburg) — read from the bench, wide establishing shot
+  - `SPN-0024_02.png` ← Dissent (Ginsburg) — read from the bench, close-up detail
+  - `SPN-0024_03.png` ← Dissent (Ginsburg) — read from the bench, low-angle dramatic shot
+  - `SPN-0024_04.png` ← Dissent (Ginsburg) — read from the bench, overhead top-down view
+  - `SPN-0024_05.png` ← Dissent (Ginsburg) — read from the bench, soft-focus atmospheric background
+  - `SPN-0024_06.png` ← Dissent (Ginsburg) — read from the bench, silhouette against light
 
-## SPN-0025  → 保存名 `SPN-0025.png`
+## SPN-0025  〜25秒  → 6枚
 - 場面: 「What can you actually do about it? Honestly, not much in the moment — the terms are rarely…」
-- **プロンプト**: What can you actually do about it? Honestly, not much in the moment —. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\arbitration\SPN-0025.png`
+  - `SPN-0025.png` ← What can you actually do about it? Honestly, not much in the moment —, wide establishing shot
+  - `SPN-0025_02.png` ← What can you actually do about it? Honestly, not much in the moment —, close-up detail
+  - `SPN-0025_03.png` ← What can you actually do about it? Honestly, not much in the moment —, low-angle dramatic shot
+  - `SPN-0025_04.png` ← What can you actually do about it? Honestly, not much in the moment —, overhead top-down view
+  - `SPN-0025_05.png` ← What can you actually do about it? Honestly, not much in the moment —, soft-focus atmospheric background
+  - `SPN-0025_06.png` ← What can you actually do about it? Honestly, not much in the moment —, silhouette against light

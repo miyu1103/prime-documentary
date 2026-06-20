@@ -7,123 +7,191 @@
 フォルダが無ければ作成可。PNG推奨・1920x1080以上。
 
 **全画像 共通スタイル**:
-> cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
+> cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, shallow depth of field, 16:9, ultra high resolution 4K, masterpiece quality, razor-sharp focus, exquisite fine detail. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
 
-生成枚数: 21 枚（🎨の場面ぶん）。1場面に複数欲しいときは `<ID>_02.png` のように連番で追加可。
+**生成枚数: 110 枚**（🎨 21 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
 
-## SPN-0004  → 保存名 `SPN-0004.png`
+## SPN-0004  〜15秒  → 4枚
 - 場面: 「She wants to be on varsity. She does not make it. She is told to stay on JV,…」
-- **プロンプト**: She wants to be on varsity. She does not make it. She is told. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0004.png`
+  - `SPN-0004.png` ← She wants to be on varsity. She does not make it. She is told, wide establishing shot
+  - `SPN-0004_02.png` ← She wants to be on varsity. She does not make it. She is told, close-up detail
+  - `SPN-0004_03.png` ← She wants to be on varsity. She does not make it. She is told, low-angle dramatic shot
+  - `SPN-0004_04.png` ← She wants to be on varsity. She does not make it. She is told, overhead top-down view
 
-## SPN-0006  → 保存名 `SPN-0006.png`
+## SPN-0006  〜23秒  → 6枚
 - 場面: 「Here is the thing about Snapchat. The post is supposed to vanish. It goes out to her friends…」
 - テロップ: Snaps "disappear" — screenshots don't
-- **プロンプト**: Snaps "disappear" — screenshots don't. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0006.png`
+  - `SPN-0006.png` ← Snaps "disappear" — screenshots don't, wide establishing shot
+  - `SPN-0006_02.png` ← Snaps "disappear" — screenshots don't, close-up detail
+  - `SPN-0006_03.png` ← Snaps "disappear" — screenshots don't, low-angle dramatic shot
+  - `SPN-0006_04.png` ← Snaps "disappear" — screenshots don't, overhead top-down view
+  - `SPN-0006_05.png` ← Snaps "disappear" — screenshots don't, soft-focus atmospheric background
+  - `SPN-0006_06.png` ← Snaps "disappear" — screenshots don't, silhouette against light
 
-## SPN-0007  → 保存名 `SPN-0007.png`
+## SPN-0007  〜13秒  → 3枚
 - 場面: 「The school's response is firm. For that post — made on a weekend, off campus, on her own…」
 - テロップ: Suspended from JV cheer — 1 year
-- **プロンプト**: Suspended from JV cheer — 1 year. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0007.png`
+  - `SPN-0007.png` ← Suspended from JV cheer — 1 year, wide establishing shot
+  - `SPN-0007_02.png` ← Suspended from JV cheer — 1 year, close-up detail
+  - `SPN-0007_03.png` ← Suspended from JV cheer — 1 year, low-angle dramatic shot
 
-## SPN-0008  → 保存名 `SPN-0008.png`
+## SPN-0008  〜25秒  → 6枚
 - 場面: 「To the school, this is simple discipline: a cheerleader publicly trashing the program she is part of. To…」
 - テロップ: School's order vs. a student's voice
-- **プロンプト**: School's order vs. a student's voice. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0008.png`
+  - `SPN-0008.png` ← School's order vs. a student's voice, wide establishing shot
+  - `SPN-0008_02.png` ← School's order vs. a student's voice, close-up detail
+  - `SPN-0008_03.png` ← School's order vs. a student's voice, low-angle dramatic shot
+  - `SPN-0008_04.png` ← School's order vs. a student's voice, overhead top-down view
+  - `SPN-0008_05.png` ← School's order vs. a student's voice, soft-focus atmospheric background
+  - `SPN-0008_06.png` ← School's order vs. a student's voice, silhouette against light
 
-## SPN-0010  → 保存名 `SPN-0010.png`
+## SPN-0010  〜20秒  → 5枚
 - 場面: 「Tinker set the rule that still governs student speech. Yes, students have First Amendment rights. But a school…」
 - テロップ: Test: "substantial disruption"
-- **プロンプト**: Test: "substantial disruption". cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0010.png`
+  - `SPN-0010.png` ← Test: "substantial disruption", wide establishing shot
+  - `SPN-0010_02.png` ← Test: "substantial disruption", close-up detail
+  - `SPN-0010_03.png` ← Test: "substantial disruption", low-angle dramatic shot
+  - `SPN-0010_04.png` ← Test: "substantial disruption", overhead top-down view
+  - `SPN-0010_05.png` ← Test: "substantial disruption", soft-focus atmospheric background
 
-## SPN-0011  → 保存名 `SPN-0011.png`
+## SPN-0011  〜13秒  → 3枚
 - 場面: 「For fifty years, that test worked, because it had a place. School speech meant speech at school —…」
-- **プロンプト**: For fifty years, that test worked, because it had a place. School speech meant. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0011.png`
+  - `SPN-0011.png` ← For fifty years, that test worked, because it had a place. School speech meant, wide establishing shot
+  - `SPN-0011_02.png` ← For fifty years, that test worked, because it had a place. School speech meant, close-up detail
+  - `SPN-0011_03.png` ← For fifty years, that test worked, because it had a place. School speech meant, low-angle dramatic shot
 
-## SPN-0012  → 保存名 `SPN-0012.png`
+## SPN-0012  〜28秒  → 7枚
 - 場面: 「The phone erased those edges. When a student can broadcast to the entire school from her own bedroom,…」
 - テロップ: The phone erased the gate
-- **プロンプト**: The phone erased the gate. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0012.png`
+  - `SPN-0012.png` ← The phone erased the gate, wide establishing shot
+  - `SPN-0012_02.png` ← The phone erased the gate, close-up detail
+  - `SPN-0012_03.png` ← The phone erased the gate, low-angle dramatic shot
+  - `SPN-0012_04.png` ← The phone erased the gate, overhead top-down view
+  - `SPN-0012_05.png` ← The phone erased the gate, soft-focus atmospheric background
+  - `SPN-0012_06.png` ← The phone erased the gate, silhouette against light
+  - `SPN-0012_07.png` ← The phone erased the gate, abstract symbolic composition
 
-## SPN-0013  → 保存名 `SPN-0013.png`
+## SPN-0013  〜26秒  → 6枚
 - 場面: 「And that is the quiet danger the case exposed. Not that schools would punish one rude Snapchat, but…」
-- **プロンプト**: And that is the quiet danger the case exposed. Not that schools would punish. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0013.png`
+  - `SPN-0013.png` ← And that is the quiet danger the case exposed. Not that schools would punish, wide establishing shot
+  - `SPN-0013_02.png` ← And that is the quiet danger the case exposed. Not that schools would punish, close-up detail
+  - `SPN-0013_03.png` ← And that is the quiet danger the case exposed. Not that schools would punish, low-angle dramatic shot
+  - `SPN-0013_04.png` ← And that is the quiet danger the case exposed. Not that schools would punish, overhead top-down view
+  - `SPN-0013_05.png` ← And that is the quiet danger the case exposed. Not that schools would punish, soft-focus atmospheric background
+  - `SPN-0013_06.png` ← And that is the quiet danger the case exposed. Not that schools would punish, silhouette against light
 
-## SPN-0015  → 保存名 `SPN-0015.png`
+## SPN-0015  〜28秒  → 7枚
 - 場面: 「Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special authority over what students…」
-- **プロンプト**: Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0015.png`
+  - `SPN-0015.png` ← Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special, wide establishing shot
+  - `SPN-0015_02.png` ← Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special, close-up detail
+  - `SPN-0015_03.png` ← Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special, low-angle dramatic shot
+  - `SPN-0015_04.png` ← Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special, overhead top-down view
+  - `SPN-0015_05.png` ← Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special, soft-focus atmospheric background
+  - `SPN-0015_06.png` ← Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special, silhouette against light
+  - `SPN-0015_07.png` ← Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special, abstract symbolic composition
 
-## SPN-0016  → 保存名 `SPN-0016.png`
+## SPN-0016  〜17秒  → 4枚
 - 場面: 「The Court also looked at what had actually happened, and found almost nothing. Brandi's post had caused, at…」
 - テロップ: Disruption: a few minutes of class chatter
-- **プロンプト**: Disruption: a few minutes of class chatter. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0016.png`
+  - `SPN-0016.png` ← Disruption: a few minutes of class chatter, wide establishing shot
+  - `SPN-0016_02.png` ← Disruption: a few minutes of class chatter, close-up detail
+  - `SPN-0016_03.png` ← Disruption: a few minutes of class chatter, low-angle dramatic shot
+  - `SPN-0016_04.png` ← Disruption: a few minutes of class chatter, overhead top-down view
 
-## SPN-0017  → 保存名 `SPN-0017.png`
+## SPN-0017  〜29秒  → 7枚
 - 場面: 「But — and this is the part people miss — the Court refused to give students a blank…」
 - テロップ: Still reachable: bullying · threats · cheating
-- **プロンプト**: Still reachable: bullying · threats · cheating. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0017.png`
+  - `SPN-0017.png` ← Still reachable: bullying · threats · cheating, wide establishing shot
+  - `SPN-0017_02.png` ← Still reachable: bullying · threats · cheating, close-up detail
+  - `SPN-0017_03.png` ← Still reachable: bullying · threats · cheating, low-angle dramatic shot
+  - `SPN-0017_04.png` ← Still reachable: bullying · threats · cheating, overhead top-down view
+  - `SPN-0017_05.png` ← Still reachable: bullying · threats · cheating, soft-focus atmospheric background
+  - `SPN-0017_06.png` ← Still reachable: bullying · threats · cheating, silhouette against light
+  - `SPN-0017_07.png` ← Still reachable: bullying · threats · cheating, abstract symbolic composition
 
-## SPN-0018  → 保存名 `SPN-0018.png`
+## SPN-0018  〜27秒  → 7枚
 - 場面: 「One justice would have gone the other way. Justice Clarence Thomas dissented, arguing that historically schools had broad…」
 - テロップ: Dissent: Thomas, J. (alone)
-- **プロンプト**: Dissent: Thomas, J. (alone). cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0018.png`
+  - `SPN-0018.png` ← Dissent: Thomas, J. (alone), wide establishing shot
+  - `SPN-0018_02.png` ← Dissent: Thomas, J. (alone), close-up detail
+  - `SPN-0018_03.png` ← Dissent: Thomas, J. (alone), low-angle dramatic shot
+  - `SPN-0018_04.png` ← Dissent: Thomas, J. (alone), overhead top-down view
+  - `SPN-0018_05.png` ← Dissent: Thomas, J. (alone), soft-focus atmospheric background
+  - `SPN-0018_06.png` ← Dissent: Thomas, J. (alone), silhouette against light
+  - `SPN-0018_07.png` ← Dissent: Thomas, J. (alone), abstract symbolic composition
 
-## SPN-0019  → 保存名 `SPN-0019.png`
+## SPN-0019  〜20秒  → 5枚
 - 場面: 「So where does this leave you, or your kid? With a protection that is real but deliberately fuzzy.…」
-- **プロンプト**: So where does this leave you, or your kid? With a protection that is. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0019.png`
+  - `SPN-0019.png` ← So where does this leave you, or your kid? With a protection that is, wide establishing shot
+  - `SPN-0019_02.png` ← So where does this leave you, or your kid? With a protection that is, close-up detail
+  - `SPN-0019_03.png` ← So where does this leave you, or your kid? With a protection that is, low-angle dramatic shot
+  - `SPN-0019_04.png` ← So where does this leave you, or your kid? With a protection that is, overhead top-down view
+  - `SPN-0019_05.png` ← So where does this leave you, or your kid? With a protection that is, soft-focus atmospheric background
 
-## SPN-0020  → 保存名 `SPN-0020.png`
+## SPN-0020  〜20秒  → 5枚
 - 場面: 「But it is not a wall. The same ruling keeps the door open for the serious cases —…」
-- **プロンプト**: But it is not a wall. The same ruling keeps the door open for. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0020.png`
+  - `SPN-0020.png` ← But it is not a wall. The same ruling keeps the door open for, wide establishing shot
+  - `SPN-0020_02.png` ← But it is not a wall. The same ruling keeps the door open for, close-up detail
+  - `SPN-0020_03.png` ← But it is not a wall. The same ruling keeps the door open for, low-angle dramatic shot
+  - `SPN-0020_04.png` ← But it is not a wall. The same ruling keeps the door open for, overhead top-down view
+  - `SPN-0020_05.png` ← But it is not a wall. The same ruling keeps the door open for, soft-focus atmospheric background
 
-## SPN-0021  → 保存名 `SPN-0021.png`
+## SPN-0021  〜25秒  → 6枚
 - 場面: 「And notice what the Court actually protected. Not a noble political statement, but a crude, throwaway Snapchat that…」
 - テロップ: Free speech is tested by speech we dislike
-- **プロンプト**: Free speech is tested by speech we dislike. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0021.png`
+  - `SPN-0021.png` ← Free speech is tested by speech we dislike, wide establishing shot
+  - `SPN-0021_02.png` ← Free speech is tested by speech we dislike, close-up detail
+  - `SPN-0021_03.png` ← Free speech is tested by speech we dislike, low-angle dramatic shot
+  - `SPN-0021_04.png` ← Free speech is tested by speech we dislike, overhead top-down view
+  - `SPN-0021_05.png` ← Free speech is tested by speech we dislike, soft-focus atmospheric background
+  - `SPN-0021_06.png` ← Free speech is tested by speech we dislike, silhouette against light
 
-## SPN-0022  → 保存名 `SPN-0022.png`
+## SPN-0022  〜20秒  → 5枚
 - 場面: 「A fourteen-year-old's bad weekend, captured in a disappearing post, ended up drawing one of the most important lines…」
-- **プロンプト**: A fourteen-year-old's bad weekend, captured in a disappearing post, ended up drawing one of. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0022.png`
+  - `SPN-0022.png` ← A fourteen-year-old's bad weekend, captured in a disappearing post, ended up drawing one of, wide establishing shot
+  - `SPN-0022_02.png` ← A fourteen-year-old's bad weekend, captured in a disappearing post, ended up drawing one of, close-up detail
+  - `SPN-0022_03.png` ← A fourteen-year-old's bad weekend, captured in a disappearing post, ended up drawing one of, low-angle dramatic shot
+  - `SPN-0022_04.png` ← A fourteen-year-old's bad weekend, captured in a disappearing post, ended up drawing one of, overhead top-down view
+  - `SPN-0022_05.png` ← A fourteen-year-old's bad weekend, captured in a disappearing post, ended up drawing one of, soft-focus atmospheric background
 
-## SPN-0023  → 保存名 `SPN-0023.png`
+## SPN-0023  〜32秒  → 8枚
 - 場面: 「We have now watched the state try to search you, track you, and take your property — and…」
-- **プロンプト**: We have now watched the state try to search you, track you, and take. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0023.png`
+  - `SPN-0023.png` ← We have now watched the state try to search you, track you, and take, wide establishing shot
+  - `SPN-0023_02.png` ← We have now watched the state try to search you, track you, and take, close-up detail
+  - `SPN-0023_03.png` ← We have now watched the state try to search you, track you, and take, low-angle dramatic shot
+  - `SPN-0023_04.png` ← We have now watched the state try to search you, track you, and take, overhead top-down view
+  - `SPN-0023_05.png` ← We have now watched the state try to search you, track you, and take, soft-focus atmospheric background
+  - `SPN-0023_06.png` ← We have now watched the state try to search you, track you, and take, silhouette against light
+  - `SPN-0023_07.png` ← We have now watched the state try to search you, track you, and take, abstract symbolic composition
+  - `SPN-0023_08.png` ← We have now watched the state try to search you, track you, and take, medium shot, shallow focus
 
-## SPN-0024  → 保存名 `SPN-0024.png`
+## SPN-0024  〜23秒  → 6枚
 - 場面: 「But not every right is taken from you by a school or a police officer. Some you hand…」
 - テロップ: Next: the right you sign away
-- **プロンプト**: Next: the right you sign away. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0024.png`
+  - `SPN-0024.png` ← Next: the right you sign away, wide establishing shot
+  - `SPN-0024_02.png` ← Next: the right you sign away, close-up detail
+  - `SPN-0024_03.png` ← Next: the right you sign away, low-angle dramatic shot
+  - `SPN-0024_04.png` ← Next: the right you sign away, overhead top-down view
+  - `SPN-0024_05.png` ← Next: the right you sign away, soft-focus atmospheric background
+  - `SPN-0024_06.png` ← Next: the right you sign away, silhouette against light
 
-## SPN-0025  → 保存名 `SPN-0025.png`
+## SPN-0025  〜2秒  → 1枚
 - 場面: 「That is next time.…」
 - テロップ: Subscribe
-- **プロンプト**: Subscribe. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0025.png`
+  - `SPN-0025.png` ← Subscribe, wide establishing shot
 
-## SPN-0027  → 保存名 `SPN-0027.png`
+## SPN-0027  〜22秒  → 5枚
 - 場面: 「Breyer added a thought that explains why the Court bent toward the student. America's public schools, he wrote,…」
 - テロップ: "nurseries of democracy" — Breyer
-- **プロンプト**: "nurseries of democracy" — Breyer. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0027.png`
+  - `SPN-0027.png` ← "nurseries of democracy" — Breyer, wide establishing shot
+  - `SPN-0027_02.png` ← "nurseries of democracy" — Breyer, close-up detail
+  - `SPN-0027_03.png` ← "nurseries of democracy" — Breyer, low-angle dramatic shot
+  - `SPN-0027_04.png` ← "nurseries of democracy" — Breyer, overhead top-down view
+  - `SPN-0027_05.png` ← "nurseries of democracy" — Breyer, soft-focus atmospheric background
 
-## SPN-0028  → 保存名 `SPN-0028.png`
+## SPN-0028  〜18秒  → 4枚
 - 場面: 「And it is worth sitting with how ordinary this was. No threat. No named target. No plan. Just…」
-- **プロンプト**: And it is worth sitting with how ordinary this was. No threat. No named. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\mahanoy\SPN-0028.png`
+  - `SPN-0028.png` ← And it is worth sitting with how ordinary this was. No threat. No named, wide establishing shot
+  - `SPN-0028_02.png` ← And it is worth sitting with how ordinary this was. No threat. No named, close-up detail
+  - `SPN-0028_03.png` ← And it is worth sitting with how ordinary this was. No threat. No named, low-angle dramatic shot
+  - `SPN-0028_04.png` ← And it is worth sitting with how ordinary this was. No threat. No named, overhead top-down view

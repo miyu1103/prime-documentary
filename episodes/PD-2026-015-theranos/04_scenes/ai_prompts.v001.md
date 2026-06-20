@@ -7,111 +7,187 @@
 フォルダが無ければ作成可。PNG推奨・1920x1080以上。
 
 **全画像 共通スタイル**:
-> cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
+> cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, shallow depth of field, 16:9, ultra high resolution 4K, masterpiece quality, razor-sharp focus, exquisite fine detail. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
 
-生成枚数: 18 枚（🎨の場面ぶん）。1場面に複数欲しいときは `<ID>_02.png` のように連番で追加可。
+**生成枚数: 112 枚**（🎨 18 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
 
-## SPN-0002  → 保存名 `SPN-0002.png`
+## SPN-0002  〜40秒  → 9枚
 - 場面: 「For this whole series, we have watched the power of the state pressing against one person — searching…」
 - テロップ: Finale: one person vs. everyone
-- **プロンプト**: Finale: one person vs. everyone. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0002.png`
+  - `SPN-0002.png` ← Finale: one person vs. everyone, wide establishing shot
+  - `SPN-0002_02.png` ← Finale: one person vs. everyone, close-up detail
+  - `SPN-0002_03.png` ← Finale: one person vs. everyone, low-angle dramatic shot
+  - `SPN-0002_04.png` ← Finale: one person vs. everyone, overhead top-down view
+  - `SPN-0002_05.png` ← Finale: one person vs. everyone, soft-focus atmospheric background
+  - `SPN-0002_06.png` ← Finale: one person vs. everyone, silhouette against light
+  - `SPN-0002_07.png` ← Finale: one person vs. everyone, abstract symbolic composition
+  - `SPN-0002_08.png` ← Finale: one person vs. everyone, medium shot, shallow focus
+  - `SPN-0002_09.png` ← Finale: one person vs. everyone, wide establishing shot
 
-## SPN-0003  → 保存名 `SPN-0003.png`
+## SPN-0003  〜11秒  → 3枚
 - 場面: 「It begins in 2003, with a nineteen-year-old who drops out of Stanford to start a company. Her name…」
 - テロップ: 2003 — a Stanford dropout's startup
-- **プロンプト**: Era motif 2003; symbolic; NO real-person likeness. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0003.png`
+  - `SPN-0003.png` ← Era motif 2003; symbolic; NO real-person likeness, wide establishing shot
+  - `SPN-0003_02.png` ← Era motif 2003; symbolic; NO real-person likeness, close-up detail
+  - `SPN-0003_03.png` ← Era motif 2003; symbolic; NO real-person likeness, low-angle dramatic shot
 
-## SPN-0006  → 保存名 `SPN-0006.png`
+## SPN-0006  〜26秒  → 6枚
 - 場面: 「Notice what made this so powerful. It was not just a product; it was a story — a…」
 - テロップ: A story powerful enough to stop the questions
-- **プロンプト**: A story powerful enough to stop the questions. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0006.png`
+  - `SPN-0006.png` ← A story powerful enough to stop the questions, wide establishing shot
+  - `SPN-0006_02.png` ← A story powerful enough to stop the questions, close-up detail
+  - `SPN-0006_03.png` ← A story powerful enough to stop the questions, low-angle dramatic shot
+  - `SPN-0006_04.png` ← A story powerful enough to stop the questions, overhead top-down view
+  - `SPN-0006_05.png` ← A story powerful enough to stop the questions, soft-focus atmospheric background
+  - `SPN-0006_06.png` ← A story powerful enough to stop the questions, silhouette against light
 
-## SPN-0008  → 保存名 `SPN-0008.png`
+## SPN-0008  〜25秒  → 6枚
 - 場面: 「What it reported was devastating. The Edison did not work as advertised. Behind the scenes, the investigation said,…」
 - テロップ: Tests run on other companies' machines
-- **プロンプト**: Tests run on other companies' machines. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0008.png`
+  - `SPN-0008.png` ← Tests run on other companies' machines, wide establishing shot
+  - `SPN-0008_02.png` ← Tests run on other companies' machines, close-up detail
+  - `SPN-0008_03.png` ← Tests run on other companies' machines, low-angle dramatic shot
+  - `SPN-0008_04.png` ← Tests run on other companies' machines, overhead top-down view
+  - `SPN-0008_05.png` ← Tests run on other companies' machines, soft-focus atmospheric background
+  - `SPN-0008_06.png` ← Tests run on other companies' machines, silhouette against light
 
-## SPN-0009  → 保存名 `SPN-0009.png`
+## SPN-0009  〜12秒  → 3枚
 - 場面: 「For a tech demo, unreliable results are an embarrassment. For a medical test, they are something else entirely…」
-- **プロンプト**: For a tech demo, unreliable results are an embarrassment. For a medical test, they. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0009.png`
+  - `SPN-0009.png` ← For a tech demo, unreliable results are an embarrassment. For a medical test, they, wide establishing shot
+  - `SPN-0009_02.png` ← For a tech demo, unreliable results are an embarrassment. For a medical test, they, close-up detail
+  - `SPN-0009_03.png` ← For a tech demo, unreliable results are an embarrassment. For a medical test, they, low-angle dramatic shot
 
-## SPN-0011  → 保存名 `SPN-0011.png`
+## SPN-0011  〜27秒  → 7枚
 - 場面: 「But a collapsed company and a civil settlement are not the same as a crime. The harder question…」
 - テロップ: Failure — or fraud?
-- **プロンプト**: Failure — or fraud?. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0011.png`
+  - `SPN-0011.png` ← Failure — or fraud?, wide establishing shot
+  - `SPN-0011_02.png` ← Failure — or fraud?, close-up detail
+  - `SPN-0011_03.png` ← Failure — or fraud?, low-angle dramatic shot
+  - `SPN-0011_04.png` ← Failure — or fraud?, overhead top-down view
+  - `SPN-0011_05.png` ← Failure — or fraud?, soft-focus atmospheric background
+  - `SPN-0011_06.png` ← Failure — or fraud?, silhouette against light
+  - `SPN-0011_07.png` ← Failure — or fraud?, abstract symbolic composition
 
-## SPN-0012  → 保存名 `SPN-0012.png`
+## SPN-0012  〜45秒  → 11枚
 - 場面: 「That question went to a federal court, in the case United States v. Holmes. And to understand the…」
 - テロップ: Fraud = intent to deceive (not just failure)
-- **プロンプト**: Fraud = intent to deceive (not just failure). cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0012.png`
+  - `SPN-0012.png` ← Fraud = intent to deceive (not just failure), wide establishing shot
+  - `SPN-0012_02.png` ← Fraud = intent to deceive (not just failure), close-up detail
+  - `SPN-0012_03.png` ← Fraud = intent to deceive (not just failure), low-angle dramatic shot
+  - `SPN-0012_04.png` ← Fraud = intent to deceive (not just failure), overhead top-down view
+  - `SPN-0012_05.png` ← Fraud = intent to deceive (not just failure), soft-focus atmospheric background
+  - `SPN-0012_06.png` ← Fraud = intent to deceive (not just failure), silhouette against light
+  - `SPN-0012_07.png` ← Fraud = intent to deceive (not just failure), abstract symbolic composition
+  - `SPN-0012_08.png` ← Fraud = intent to deceive (not just failure), medium shot, shallow focus
+  - `SPN-0012_09.png` ← Fraud = intent to deceive (not just failure), wide establishing shot
+  - `SPN-0012_10.png` ← Fraud = intent to deceive (not just failure), close-up detail
+  - `SPN-0012_11.png` ← Fraud = intent to deceive (not just failure), low-angle dramatic shot
 
-## SPN-0014  → 保存名 `SPN-0014.png`
+## SPN-0014  〜19秒  → 5枚
 - 場面: 「But on the counts that accused her of defrauding patients, the jury found her not guilty. And on…」
 - テロップ: ACQUITTED: patient counts · NO VERDICT: 3 counts
-- **プロンプト**: ACQUITTED: patient counts · NO VERDICT: 3 counts. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0014.png`
+  - `SPN-0014.png` ← ACQUITTED: patient counts · NO VERDICT: 3 counts, wide establishing shot
+  - `SPN-0014_02.png` ← ACQUITTED: patient counts · NO VERDICT: 3 counts, close-up detail
+  - `SPN-0014_03.png` ← ACQUITTED: patient counts · NO VERDICT: 3 counts, low-angle dramatic shot
+  - `SPN-0014_04.png` ← ACQUITTED: patient counts · NO VERDICT: 3 counts, overhead top-down view
+  - `SPN-0014_05.png` ← ACQUITTED: patient counts · NO VERDICT: 3 counts, soft-focus atmospheric background
 
-## SPN-0015  → 保存名 `SPN-0015.png`
+## SPN-0015  〜43秒  → 10枚
 - 場面: 「It is tempting to read the patient acquittals as a verdict that the technology was fine, or that…」
 - テロップ: Acquittal ≠ exoneration. Balwani: convicted on all 12.
-- **プロンプト**: Acquittal ≠ exoneration. Balwani: convicted on all 12.. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0015.png`
+  - `SPN-0015.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., wide establishing shot
+  - `SPN-0015_02.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., close-up detail
+  - `SPN-0015_03.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., low-angle dramatic shot
+  - `SPN-0015_04.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., overhead top-down view
+  - `SPN-0015_05.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., soft-focus atmospheric background
+  - `SPN-0015_06.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., silhouette against light
+  - `SPN-0015_07.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., abstract symbolic composition
+  - `SPN-0015_08.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., medium shot, shallow focus
+  - `SPN-0015_09.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., wide establishing shot
+  - `SPN-0015_10.png` ← Acquittal ≠ exoneration. Balwani: convicted on all 12., close-up detail
 
-## SPN-0016  → 保存名 `SPN-0016.png`
+## SPN-0016  〜18秒  → 4枚
 - 場面: 「As for Holmes: in November 2022, she was sentenced to about eleven years and three months in federal…」
 - テロップ: Sentenced: ~11 years, 3 months
-- **プロンプト**: Sentenced: ~11 years, 3 months. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0016.png`
+  - `SPN-0016.png` ← Sentenced: ~11 years, 3 months, wide establishing shot
+  - `SPN-0016_02.png` ← Sentenced: ~11 years, 3 months, close-up detail
+  - `SPN-0016_03.png` ← Sentenced: ~11 years, 3 months, low-angle dramatic shot
+  - `SPN-0016_04.png` ← Sentenced: ~11 years, 3 months, overhead top-down view
 
-## SPN-0017  → 保存名 `SPN-0017.png`
+## SPN-0017  〜26秒  → 6枚
 - 場面: 「So where, exactly, is the line that Holmes crossed? Because here is the uncomfortable truth: a lot of…」
 - テロップ: "Fake it till you make it" — usually legal
-- **プロンプト**: "Fake it till you make it" — usually legal. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0017.png`
+  - `SPN-0017.png` ← "Fake it till you make it" — usually legal, wide establishing shot
+  - `SPN-0017_02.png` ← "Fake it till you make it" — usually legal, close-up detail
+  - `SPN-0017_03.png` ← "Fake it till you make it" — usually legal, low-angle dramatic shot
+  - `SPN-0017_04.png` ← "Fake it till you make it" — usually legal, overhead top-down view
+  - `SPN-0017_05.png` ← "Fake it till you make it" — usually legal, soft-focus atmospheric background
+  - `SPN-0017_06.png` ← "Fake it till you make it" — usually legal, silhouette against light
 
-## SPN-0018  → 保存名 `SPN-0018.png`
+## SPN-0018  〜21秒  → 5枚
 - 場面: 「The line is intent and reliance. Selling an ambitious vision is legal. Knowingly telling people something false —…」
 - テロップ: The line: knowingly false + relied upon = fraud
-- **プロンプト**: The line: knowingly false + relied upon = fraud. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0018.png`
+  - `SPN-0018.png` ← The line: knowingly false + relied upon = fraud, wide establishing shot
+  - `SPN-0018_02.png` ← The line: knowingly false + relied upon = fraud, close-up detail
+  - `SPN-0018_03.png` ← The line: knowingly false + relied upon = fraud, low-angle dramatic shot
+  - `SPN-0018_04.png` ← The line: knowingly false + relied upon = fraud, overhead top-down view
+  - `SPN-0018_05.png` ← The line: knowingly false + relied upon = fraud, soft-focus atmospheric background
 
-## SPN-0019  → 保存名 `SPN-0019.png`
+## SPN-0019  〜27秒  → 6枚
 - 場面: 「And there is a reason the stakes felt higher here than in an ordinary bad investment. A failed…」
-- **プロンプト**: And there is a reason the stakes felt higher here than in an ordinary. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0019.png`
+  - `SPN-0019.png` ← And there is a reason the stakes felt higher here than in an ordinary, wide establishing shot
+  - `SPN-0019_02.png` ← And there is a reason the stakes felt higher here than in an ordinary, close-up detail
+  - `SPN-0019_03.png` ← And there is a reason the stakes felt higher here than in an ordinary, low-angle dramatic shot
+  - `SPN-0019_04.png` ← And there is a reason the stakes felt higher here than in an ordinary, overhead top-down view
+  - `SPN-0019_05.png` ← And there is a reason the stakes felt higher here than in an ordinary, soft-focus atmospheric background
+  - `SPN-0019_06.png` ← And there is a reason the stakes felt higher here than in an ordinary, silhouette against light
 
-## SPN-0020  → 保存名 `SPN-0020.png`
+## SPN-0020  〜36秒  → 9枚
 - 場面: 「Theranos is where this series ends, and it is a fitting place — because under every episode we…」
 - テロップ: One question, many costumes: where is the line?
-- **プロンプト**: One question, many costumes: where is the line?. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0020.png`
+  - `SPN-0020.png` ← One question, many costumes: where is the line?, wide establishing shot
+  - `SPN-0020_02.png` ← One question, many costumes: where is the line?, close-up detail
+  - `SPN-0020_03.png` ← One question, many costumes: where is the line?, low-angle dramatic shot
+  - `SPN-0020_04.png` ← One question, many costumes: where is the line?, overhead top-down view
+  - `SPN-0020_05.png` ← One question, many costumes: where is the line?, soft-focus atmospheric background
+  - `SPN-0020_06.png` ← One question, many costumes: where is the line?, silhouette against light
+  - `SPN-0020_07.png` ← One question, many costumes: where is the line?, abstract symbolic composition
+  - `SPN-0020_08.png` ← One question, many costumes: where is the line?, medium shot, shallow focus
+  - `SPN-0020_09.png` ← One question, many costumes: where is the line?, wide establishing shot
 
-## SPN-0021  → 保存名 `SPN-0021.png`
+## SPN-0021  〜23秒  → 6枚
 - 場面: 「That is what all of these cases really are — not dramatic stories about famous people, but arguments…」
-- **プロンプト**: That is what all of these cases really are — not dramatic stories about. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0021.png`
+  - `SPN-0021.png` ← That is what all of these cases really are — not dramatic stories about, wide establishing shot
+  - `SPN-0021_02.png` ← That is what all of these cases really are — not dramatic stories about, close-up detail
+  - `SPN-0021_03.png` ← That is what all of these cases really are — not dramatic stories about, low-angle dramatic shot
+  - `SPN-0021_04.png` ← That is what all of these cases really are — not dramatic stories about, overhead top-down view
+  - `SPN-0021_05.png` ← That is what all of these cases really are — not dramatic stories about, soft-focus atmospheric background
+  - `SPN-0021_06.png` ← That is what all of these cases really are — not dramatic stories about, silhouette against light
 
-## SPN-0022  → 保存名 `SPN-0022.png`
+## SPN-0022  〜14秒  → 4枚
 - 場面: 「Thank you for watching this series. If you want to keep seeing how a single case can redraw…」
 - テロップ: Subscribe — one line at a time
-- **プロンプト**: Subscribe — one line at a time. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0022.png`
+  - `SPN-0022.png` ← Subscribe — one line at a time, wide establishing shot
+  - `SPN-0022_02.png` ← Subscribe — one line at a time, close-up detail
+  - `SPN-0022_03.png` ← Subscribe — one line at a time, low-angle dramatic shot
+  - `SPN-0022_04.png` ← Subscribe — one line at a time, overhead top-down view
 
-## SPN-0023  → 保存名 `SPN-0023.png`
+## SPN-0023  〜22秒  → 5枚
 - 場面: 「And the prestige fed on itself. A board of household names made the company look unimpeachable; a soaring…」
 - テロップ: Prestige became a substitute for scrutiny
-- **プロンプト**: Prestige became a substitute for scrutiny. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0023.png`
+  - `SPN-0023.png` ← Prestige became a substitute for scrutiny, wide establishing shot
+  - `SPN-0023_02.png` ← Prestige became a substitute for scrutiny, close-up detail
+  - `SPN-0023_03.png` ← Prestige became a substitute for scrutiny, low-angle dramatic shot
+  - `SPN-0023_04.png` ← Prestige became a substitute for scrutiny, overhead top-down view
+  - `SPN-0023_05.png` ← Prestige became a substitute for scrutiny, soft-focus atmospheric background
 
-## SPN-0024  → 保存名 `SPN-0024.png`
+## SPN-0024  〜30秒  → 7枚
 - 場面: 「At trial, the two sides told that exact split-screen story. Prosecutors argued that Holmes knew about the device's…」
 - テロップ: Prosecution: she knew. Defense: a true believer.
-- **プロンプト**: Prosecution: she knew. Defense: a true believer.. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\theranos\SPN-0024.png`
+  - `SPN-0024.png` ← Prosecution: she knew. Defense: a true believer., wide establishing shot
+  - `SPN-0024_02.png` ← Prosecution: she knew. Defense: a true believer., close-up detail
+  - `SPN-0024_03.png` ← Prosecution: she knew. Defense: a true believer., low-angle dramatic shot
+  - `SPN-0024_04.png` ← Prosecution: she knew. Defense: a true believer., overhead top-down view
+  - `SPN-0024_05.png` ← Prosecution: she knew. Defense: a true believer., soft-focus atmospheric background
+  - `SPN-0024_06.png` ← Prosecution: she knew. Defense: a true believer., silhouette against light
+  - `SPN-0024_07.png` ← Prosecution: she knew. Defense: a true believer., abstract symbolic composition

@@ -7,114 +7,202 @@
 フォルダが無ければ作成可。PNG推奨・1920x1080以上。
 
 **全画像 共通スタイル**:
-> cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
+> cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, shallow depth of field, 16:9, ultra high resolution 4K, masterpiece quality, razor-sharp focus, exquisite fine detail. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
 
-生成枚数: 19 枚（🎨の場面ぶん）。1場面に複数欲しいときは `<ID>_02.png` のように連番で追加可。
+**生成枚数: 126 枚**（🎨 19 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。
 
-## SPN-0002  → 保存名 `SPN-0002.png`
+## SPN-0002  〜47秒  → 11枚
 - 場面: 「The Fourth Amendment protects a lot of places, but it protects your home most of all. As a…」
 - テロップ: The home: warrant required (with narrow exceptions)
-- **プロンプト**: The home: warrant required (with narrow exceptions). cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0002.png`
+  - `SPN-0002.png` ← The home: warrant required (with narrow exceptions), wide establishing shot
+  - `SPN-0002_02.png` ← The home: warrant required (with narrow exceptions), close-up detail
+  - `SPN-0002_03.png` ← The home: warrant required (with narrow exceptions), low-angle dramatic shot
+  - `SPN-0002_04.png` ← The home: warrant required (with narrow exceptions), overhead top-down view
+  - `SPN-0002_05.png` ← The home: warrant required (with narrow exceptions), soft-focus atmospheric background
+  - `SPN-0002_06.png` ← The home: warrant required (with narrow exceptions), silhouette against light
+  - `SPN-0002_07.png` ← The home: warrant required (with narrow exceptions), abstract symbolic composition
+  - `SPN-0002_08.png` ← The home: warrant required (with narrow exceptions), medium shot, shallow focus
+  - `SPN-0002_09.png` ← The home: warrant required (with narrow exceptions), wide establishing shot
+  - `SPN-0002_10.png` ← The home: warrant required (with narrow exceptions), close-up detail
+  - `SPN-0002_11.png` ← The home: warrant required (with narrow exceptions), low-angle dramatic shot
 
-## SPN-0004  → 保存名 `SPN-0004.png`
+## SPN-0004  〜13秒  → 3枚
 - 場面: 「By now, Lange is just about home — roughly a hundred feet away. Instead of stopping in the…」
 - テロップ: ~100 feet from home
-- **プロンプト**: ~100 feet from home. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0004.png`
+  - `SPN-0004.png` ← ~100 feet from home, wide establishing shot
+  - `SPN-0004_02.png` ← ~100 feet from home, close-up detail
+  - `SPN-0004_03.png` ← ~100 feet from home, low-angle dramatic shot
 
-## SPN-0006  → 保存名 `SPN-0006.png`
+## SPN-0006  〜33秒  → 8枚
 - 場面: 「Now, one thing has to be clear, because it is easy to get backwards. The legal fight that…」
 - テロップ: The question: the ENTRY, not the DUI
-- **プロンプト**: The question: the ENTRY, not the DUI. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0006.png`
+  - `SPN-0006.png` ← The question: the ENTRY, not the DUI, wide establishing shot
+  - `SPN-0006_02.png` ← The question: the ENTRY, not the DUI, close-up detail
+  - `SPN-0006_03.png` ← The question: the ENTRY, not the DUI, low-angle dramatic shot
+  - `SPN-0006_04.png` ← The question: the ENTRY, not the DUI, overhead top-down view
+  - `SPN-0006_05.png` ← The question: the ENTRY, not the DUI, soft-focus atmospheric background
+  - `SPN-0006_06.png` ← The question: the ENTRY, not the DUI, silhouette against light
+  - `SPN-0006_07.png` ← The question: the ENTRY, not the DUI, abstract symbolic composition
+  - `SPN-0006_08.png` ← The question: the ENTRY, not the DUI, medium shot, shallow focus
 
-## SPN-0007  → 保存名 `SPN-0007.png`
+## SPN-0007  〜18秒  → 5枚
 - 場面: 「California's answer was yes, automatically. Under the rule the state defended, whenever a suspect flees — even from…」
 - テロップ: California: any flight = automatic entry
-- **プロンプト**: California: any flight = automatic entry. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0007.png`
+  - `SPN-0007.png` ← California: any flight = automatic entry, wide establishing shot
+  - `SPN-0007_02.png` ← California: any flight = automatic entry, close-up detail
+  - `SPN-0007_03.png` ← California: any flight = automatic entry, low-angle dramatic shot
+  - `SPN-0007_04.png` ← California: any flight = automatic entry, overhead top-down view
+  - `SPN-0007_05.png` ← California: any flight = automatic entry, soft-focus atmospheric background
 
-## SPN-0008  → 保存名 `SPN-0008.png`
+## SPN-0008  〜8秒  → 2枚
 - 場面: 「To see why that rule troubled the Court, you have to appreciate how strongly the law guards the…」
-- **プロンプト**: To see why that rule troubled the Court, you have to appreciate how strongly. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0008.png`
+  - `SPN-0008.png` ← To see why that rule troubled the Court, you have to appreciate how strongly, wide establishing shot
+  - `SPN-0008_02.png` ← To see why that rule troubled the Court, you have to appreciate how strongly, close-up detail
 
-## SPN-0009  → 保存名 `SPN-0009.png`
+## SPN-0009  〜38秒  → 9枚
 - 場面: 「For centuries, the home has been the high ground of privacy law — the place where the demand…」
 - テロップ: Exigent circumstances: danger · evidence · escape
-- **プロンプト**: Exigent circumstances: danger · evidence · escape. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0009.png`
+  - `SPN-0009.png` ← Exigent circumstances: danger · evidence · escape, wide establishing shot
+  - `SPN-0009_02.png` ← Exigent circumstances: danger · evidence · escape, close-up detail
+  - `SPN-0009_03.png` ← Exigent circumstances: danger · evidence · escape, low-angle dramatic shot
+  - `SPN-0009_04.png` ← Exigent circumstances: danger · evidence · escape, overhead top-down view
+  - `SPN-0009_05.png` ← Exigent circumstances: danger · evidence · escape, soft-focus atmospheric background
+  - `SPN-0009_06.png` ← Exigent circumstances: danger · evidence · escape, silhouette against light
+  - `SPN-0009_07.png` ← Exigent circumstances: danger · evidence · escape, abstract symbolic composition
+  - `SPN-0009_08.png` ← Exigent circumstances: danger · evidence · escape, medium shot, shallow focus
+  - `SPN-0009_09.png` ← Exigent circumstances: danger · evidence · escape, wide establishing shot
 
-## SPN-0010  → 保存名 `SPN-0010.png`
+## SPN-0010  〜22秒  → 5枚
 - 場面: 「Hot pursuit fits that logic when the stakes are high. If a dangerous suspect runs into a house,…」
-- **プロンプト**: Hot pursuit fits that logic when the stakes are high. If a dangerous suspect. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0010.png`
+  - `SPN-0010.png` ← Hot pursuit fits that logic when the stakes are high. If a dangerous suspect, wide establishing shot
+  - `SPN-0010_02.png` ← Hot pursuit fits that logic when the stakes are high. If a dangerous suspect, close-up detail
+  - `SPN-0010_03.png` ← Hot pursuit fits that logic when the stakes are high. If a dangerous suspect, low-angle dramatic shot
+  - `SPN-0010_04.png` ← Hot pursuit fits that logic when the stakes are high. If a dangerous suspect, overhead top-down view
+  - `SPN-0010_05.png` ← Hot pursuit fits that logic when the stakes are high. If a dangerous suspect, soft-focus atmospheric background
 
-## SPN-0011  → 保存名 `SPN-0011.png`
+## SPN-0011  〜38秒  → 9枚
 - 場面: 「And here the two sides pull in opposite directions, and both have a real point. On one side:…」
 - テロップ: Don't let suspects escape — vs — don't gut the home
-- **プロンプト**: Don't let suspects escape — vs — don't gut the home. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0011.png`
+  - `SPN-0011.png` ← Don't let suspects escape — vs — don't gut the home, wide establishing shot
+  - `SPN-0011_02.png` ← Don't let suspects escape — vs — don't gut the home, close-up detail
+  - `SPN-0011_03.png` ← Don't let suspects escape — vs — don't gut the home, low-angle dramatic shot
+  - `SPN-0011_04.png` ← Don't let suspects escape — vs — don't gut the home, overhead top-down view
+  - `SPN-0011_05.png` ← Don't let suspects escape — vs — don't gut the home, soft-focus atmospheric background
+  - `SPN-0011_06.png` ← Don't let suspects escape — vs — don't gut the home, silhouette against light
+  - `SPN-0011_07.png` ← Don't let suspects escape — vs — don't gut the home, abstract symbolic composition
+  - `SPN-0011_08.png` ← Don't let suspects escape — vs — don't gut the home, medium shot, shallow focus
+  - `SPN-0011_09.png` ← Don't let suspects escape — vs — don't gut the home, wide establishing shot
 
-## SPN-0012  → 保存名 `SPN-0012.png`
+## SPN-0012  〜14秒  → 4枚
 - 場面: 「So the Court had to decide whether "the suspect fled" is, by itself, enough — a flat, automatic…」
-- **プロンプト**: So the Court had to decide whether "the suspect fled" is, by itself, enough. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0012.png`
+  - `SPN-0012.png` ← So the Court had to decide whether "the suspect fled" is, by itself, enough, wide establishing shot
+  - `SPN-0012_02.png` ← So the Court had to decide whether "the suspect fled" is, by itself, enough, close-up detail
+  - `SPN-0012_03.png` ← So the Court had to decide whether "the suspect fled" is, by itself, enough, low-angle dramatic shot
+  - `SPN-0012_04.png` ← So the Court had to decide whether "the suspect fled" is, by itself, enough, overhead top-down view
 
-## SPN-0014  → 保存名 `SPN-0014.png`
+## SPN-0014  〜33秒  → 8枚
 - 場面: 「The principal opinion was written by Justice Elena Kagan. Flight, she explained, is a real and relevant fact…」
 - テロップ: Judge each case — flight is a factor, not a trigger
-- **プロンプト**: Judge each case — flight is a factor, not a trigger. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0014.png`
+  - `SPN-0014.png` ← Judge each case — flight is a factor, not a trigger, wide establishing shot
+  - `SPN-0014_02.png` ← Judge each case — flight is a factor, not a trigger, close-up detail
+  - `SPN-0014_03.png` ← Judge each case — flight is a factor, not a trigger, low-angle dramatic shot
+  - `SPN-0014_04.png` ← Judge each case — flight is a factor, not a trigger, overhead top-down view
+  - `SPN-0014_05.png` ← Judge each case — flight is a factor, not a trigger, soft-focus atmospheric background
+  - `SPN-0014_06.png` ← Judge each case — flight is a factor, not a trigger, silhouette against light
+  - `SPN-0014_07.png` ← Judge each case — flight is a factor, not a trigger, abstract symbolic composition
+  - `SPN-0014_08.png` ← Judge each case — flight is a factor, not a trigger, medium shot, shallow focus
 
-## SPN-0015  → 保存名 `SPN-0015.png`
+## SPN-0015  〜50秒  → 12枚
 - 場面: 「It is worth being precise about the vote, because it is often described loosely. The result was unanimous…」
 - テロップ: Roberts + Alito: concur in result, want a broader rule
-- **プロンプト**: Roberts + Alito: concur in result, want a broader rule. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0015.png`
+  - `SPN-0015.png` ← Roberts + Alito: concur in result, want a broader rule, wide establishing shot
+  - `SPN-0015_02.png` ← Roberts + Alito: concur in result, want a broader rule, close-up detail
+  - `SPN-0015_03.png` ← Roberts + Alito: concur in result, want a broader rule, low-angle dramatic shot
+  - `SPN-0015_04.png` ← Roberts + Alito: concur in result, want a broader rule, overhead top-down view
+  - `SPN-0015_05.png` ← Roberts + Alito: concur in result, want a broader rule, soft-focus atmospheric background
+  - `SPN-0015_06.png` ← Roberts + Alito: concur in result, want a broader rule, silhouette against light
+  - `SPN-0015_07.png` ← Roberts + Alito: concur in result, want a broader rule, abstract symbolic composition
+  - `SPN-0015_08.png` ← Roberts + Alito: concur in result, want a broader rule, medium shot, shallow focus
+  - `SPN-0015_09.png` ← Roberts + Alito: concur in result, want a broader rule, wide establishing shot
+  - `SPN-0015_10.png` ← Roberts + Alito: concur in result, want a broader rule, close-up detail
+  - `SPN-0015_11.png` ← Roberts + Alito: concur in result, want a broader rule, low-angle dramatic shot
+  - `SPN-0015_12.png` ← Roberts + Alito: concur in result, want a broader rule, overhead top-down view
 
-## SPN-0016  → 保存名 `SPN-0016.png`
+## SPN-0016  〜17秒  → 4枚
 - 場面: 「The Court did not decide whether the entry into Arthur Lange's garage was ultimately lawful. It vacated the…」
 - テロップ: Vacated & remanded
-- **プロンプト**: Vacated & remanded. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0016.png`
+  - `SPN-0016.png` ← Vacated & remanded, wide establishing shot
+  - `SPN-0016_02.png` ← Vacated & remanded, close-up detail
+  - `SPN-0016_03.png` ← Vacated & remanded, low-angle dramatic shot
+  - `SPN-0016_04.png` ← Vacated & remanded, overhead top-down view
 
-## SPN-0017  → 保存名 `SPN-0017.png`
+## SPN-0017  〜34秒  → 8枚
 - 場面: 「So here is the practical takeaway. If an officer is chasing you over something minor and you make…」
-- **プロンプト**: So here is the practical takeaway. If an officer is chasing you over something. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0017.png`
+  - `SPN-0017.png` ← So here is the practical takeaway. If an officer is chasing you over something, wide establishing shot
+  - `SPN-0017_02.png` ← So here is the practical takeaway. If an officer is chasing you over something, close-up detail
+  - `SPN-0017_03.png` ← So here is the practical takeaway. If an officer is chasing you over something, low-angle dramatic shot
+  - `SPN-0017_04.png` ← So here is the practical takeaway. If an officer is chasing you over something, overhead top-down view
+  - `SPN-0017_05.png` ← So here is the practical takeaway. If an officer is chasing you over something, soft-focus atmospheric background
+  - `SPN-0017_06.png` ← So here is the practical takeaway. If an officer is chasing you over something, silhouette against light
+  - `SPN-0017_07.png` ← So here is the practical takeaway. If an officer is chasing you over something, abstract symbolic composition
+  - `SPN-0017_08.png` ← So here is the practical takeaway. If an officer is chasing you over something, medium shot, shallow focus
 
-## SPN-0018  → 保存名 `SPN-0018.png`
+## SPN-0018  〜30秒  → 7枚
 - 場面: 「That is not a clean, bright line, and the Court knew it. A case-by-case rule means more judgment…」
-- **プロンプト**: That is not a clean, bright line, and the Court knew it. A case-by-case. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0018.png`
+  - `SPN-0018.png` ← That is not a clean, bright line, and the Court knew it. A case-by-case, wide establishing shot
+  - `SPN-0018_02.png` ← That is not a clean, bright line, and the Court knew it. A case-by-case, close-up detail
+  - `SPN-0018_03.png` ← That is not a clean, bright line, and the Court knew it. A case-by-case, low-angle dramatic shot
+  - `SPN-0018_04.png` ← That is not a clean, bright line, and the Court knew it. A case-by-case, overhead top-down view
+  - `SPN-0018_05.png` ← That is not a clean, bright line, and the Court knew it. A case-by-case, soft-focus atmospheric background
+  - `SPN-0018_06.png` ← That is not a clean, bright line, and the Court knew it. A case-by-case, silhouette against light
+  - `SPN-0018_07.png` ← That is not a clean, bright line, and the Court knew it. A case-by-case, abstract symbolic composition
 
-## SPN-0019  → 保存名 `SPN-0019.png`
+## SPN-0019  〜18秒  → 4枚
 - 場面: 「A foot under a garage door turned into a ruling about the deepest line in American privacy law…」
 - テロップ: The line at your front door
-- **プロンプト**: The line at your front door. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0019.png`
+  - `SPN-0019.png` ← The line at your front door, wide establishing shot
+  - `SPN-0019_02.png` ← The line at your front door, close-up detail
+  - `SPN-0019_03.png` ← The line at your front door, low-angle dramatic shot
+  - `SPN-0019_04.png` ← The line at your front door, overhead top-down view
 
-## SPN-0020  → 保存名 `SPN-0020.png`
+## SPN-0020  〜28秒  → 7枚
 - 場面: 「And that is where this run of cases lands. We have followed the state as it stops you…」
-- **プロンプト**: And that is where this run of cases lands. We have followed the state. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0020.png`
+  - `SPN-0020.png` ← And that is where this run of cases lands. We have followed the state, wide establishing shot
+  - `SPN-0020_02.png` ← And that is where this run of cases lands. We have followed the state, close-up detail
+  - `SPN-0020_03.png` ← And that is where this run of cases lands. We have followed the state, low-angle dramatic shot
+  - `SPN-0020_04.png` ← And that is where this run of cases lands. We have followed the state, overhead top-down view
+  - `SPN-0020_05.png` ← And that is where this run of cases lands. We have followed the state, soft-focus atmospheric background
+  - `SPN-0020_06.png` ← And that is where this run of cases lands. We have followed the state, silhouette against light
+  - `SPN-0020_07.png` ← And that is where this run of cases lands. We have followed the state, abstract symbolic composition
 
-## SPN-0021  → 保存名 `SPN-0021.png`
+## SPN-0021  〜29秒  → 7枚
 - 場面: 「For the finale, we turn the camera completely around. Every case so far has been about the state's…」
 - テロップ: Finale: when does a bold promise become a crime?
-- **プロンプト**: Finale: when does a bold promise become a crime?. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0021.png`
+  - `SPN-0021.png` ← Finale: when does a bold promise become a crime?, wide establishing shot
+  - `SPN-0021_02.png` ← Finale: when does a bold promise become a crime?, close-up detail
+  - `SPN-0021_03.png` ← Finale: when does a bold promise become a crime?, low-angle dramatic shot
+  - `SPN-0021_04.png` ← Finale: when does a bold promise become a crime?, overhead top-down view
+  - `SPN-0021_05.png` ← Finale: when does a bold promise become a crime?, soft-focus atmospheric background
+  - `SPN-0021_06.png` ← Finale: when does a bold promise become a crime?, silhouette against light
+  - `SPN-0021_07.png` ← Finale: when does a bold promise become a crime?, abstract symbolic composition
 
-## SPN-0022  → 保存名 `SPN-0022.png`
+## SPN-0022  〜26秒  → 6枚
 - 場面: 「And the range of "misdemeanor" really is enormous. It can mean a violent assault — or it can…」
 - テロップ: Misdemeanor: assault ... or a noise complaint
-- **プロンプト**: Misdemeanor: assault ... or a noise complaint. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0022.png`
+  - `SPN-0022.png` ← Misdemeanor: assault ... or a noise complaint, wide establishing shot
+  - `SPN-0022_02.png` ← Misdemeanor: assault ... or a noise complaint, close-up detail
+  - `SPN-0022_03.png` ← Misdemeanor: assault ... or a noise complaint, low-angle dramatic shot
+  - `SPN-0022_04.png` ← Misdemeanor: assault ... or a noise complaint, overhead top-down view
+  - `SPN-0022_05.png` ← Misdemeanor: assault ... or a noise complaint, soft-focus atmospheric background
+  - `SPN-0022_06.png` ← Misdemeanor: assault ... or a noise complaint, silhouette against light
 
-## SPN-0023  → 保存名 `SPN-0023.png`
+## SPN-0023  〜28秒  → 7枚
 - 場面: 「Kagan also leaned on history. At common law — the centuries of tradition the Fourth Amendment was built…」
 - テロップ: No automatic rule at common law
-- **プロンプト**: No automatic rule at common law. cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9. No on-screen text or captions, no watermark, no logos, and no identifiable real person (symbolic / representative only).
-- 保存先: `H:\pd-media\assets\ai\lange\SPN-0023.png`
+  - `SPN-0023.png` ← No automatic rule at common law, wide establishing shot
+  - `SPN-0023_02.png` ← No automatic rule at common law, close-up detail
+  - `SPN-0023_03.png` ← No automatic rule at common law, low-angle dramatic shot
+  - `SPN-0023_04.png` ← No automatic rule at common law, overhead top-down view
+  - `SPN-0023_05.png` ← No automatic rule at common law, soft-focus atmospheric background
+  - `SPN-0023_06.png` ← No automatic rule at common law, silhouette against light
+  - `SPN-0023_07.png` ← No automatic rule at common law, abstract symbolic composition

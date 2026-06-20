@@ -10,14 +10,21 @@ Read-only inputs; --write saves the brief.
 Usage: .venv/Scripts/python.exe scripts/ai_image_brief.py 9 --write
 """
 from __future__ import annotations
-import sys, os, json, glob, re, tempfile
+import sys, os, json, glob, re, tempfile, math
 from typing import Any
+
+SECONDS_PER_IMAGE = 4.5  # cut to a new image ~every 4.5s -> dynamic; long spans need several images
+# Distinct angles so the multiple images of one span differ (real-coverage feel, not a repeat).
+ANGLES = ["wide establishing shot", "close-up detail", "low-angle dramatic shot",
+          "overhead top-down view", "soft-focus atmospheric background", "silhouette against light",
+          "abstract symbolic composition", "medium shot, shallow focus"]
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EPDIR = os.path.join(ROOT, "episodes")
 
 STYLE = ("cinematic documentary still, dramatic moody lighting, deep navy-and-black palette with "
-         "electric-blue and gold accents, photorealistic, highly detailed, shallow depth of field, 16:9")
+         "electric-blue and gold accents, photorealistic, shallow depth of field, 16:9, "
+         "ultra high resolution 4K, masterpiece quality, razor-sharp focus, exquisite fine detail")
 SAFETY = ("No on-screen text or captions, no watermark, no logos, and no identifiable real person "
           "(symbolic / representative only).")
 _JARGON = ("symbolic", "rights-clean", "ai-disclosed", "disclosed", "no real", "no face", "motif",
@@ -68,6 +75,8 @@ def main() -> int:
     save_dir = f"H:\\pd-media\\assets\\ai\\{slug}\\"
 
     ai_shots = [s for s in shotlist["shots"] if s["suggested_asset_type"] == "ai_image"]
+    counts = {s["span_id"]: max(1, math.ceil(s["estimated_seconds"] / SECONDS_PER_IMAGE)) for s in ai_shots}
+    total = sum(counts.values())
     lines = [f"# AI画像 生成リスト（設計書） — {ep_id}", "",
              f"題材: {subject}", "",
              f"**保存先フォルダ（必ずここに保存）**: `{save_dir}`",
@@ -75,17 +84,19 @@ def main() -> int:
              "フォルダが無ければ作成可。PNG推奨・1920x1080以上。",
              "", "**全画像 共通スタイル**:",
              f"> {STYLE}. {SAFETY}",
-             "", f"生成枚数: {len(ai_shots)} 枚（🎨の場面ぶん）。1場面に複数欲しいときは `<ID>_02.png` のように連番で追加可。", ""]
+             "", f"**生成枚数: {total} 枚**（🎨 {len(ai_shots)} 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。", ""]
     for s in ai_shots:
         sid = s["span_id"]
         subj = clean(s.get("visual_intent", "")) or (s.get("on_screen_text") or [""])[0] or " ".join(text.get(sid, "").split()[:14])
-        prompt = f"{subj}. {STYLE}. {SAFETY}"
-        lines.append(f"## {sid}  → 保存名 `{sid}.png`")
+        n = counts[sid]
+        lines.append(f"## {sid}  〜{s['estimated_seconds']:.0f}秒  → {n}枚")
         lines.append(f"- 場面: 「{' '.join(text.get(sid, '').split()[:18])}…」")
         if s.get("on_screen_text"):
             lines.append(f"- テロップ: {s['on_screen_text'][0]}")
-        lines.append(f"- **プロンプト**: {prompt}")
-        lines.append(f"- 保存先: `{save_dir}{sid}.png`")
+        for i in range(n):
+            fname = f"{sid}.png" if i == 0 else f"{sid}_{i + 1:02d}.png"
+            angle = ANGLES[i % len(ANGLES)]
+            lines.append(f"  - `{fname}` ← {subj}, {angle}")
         lines.append("")
 
     out = os.path.join(EPDIR, ep, "04_scenes", "ai_prompts.v001.md")
