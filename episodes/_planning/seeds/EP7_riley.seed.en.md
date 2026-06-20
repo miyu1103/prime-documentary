@@ -32,7 +32,7 @@
 [VO:] And the old justifications did not fit. The data inside a phone cannot be used as a weapon; it cannot cut an officer or help a suspect escape [CLM-0716]. The fear of evidence being destroyed could be handled in other ways, like securing the device. Strip away those two reasons, and what was left was simply the government wanting to read a person's entire digital life, on the spot, because they happened to be under arrest [CLM-0717].
 
 ## ACT III — GET A WARRANT — 6:15–9:00 — ~360 words
-[VO:] In 2014, the Supreme Court ruled — unanimously [CLM-0718]. Every justice agreed. The opinion was written by Chief Justice John Roberts, and its core was simple: the police generally may not search the digital contents of a cell phone seized during an arrest without a warrant [CLM-0719].
+[VO:] In 2014, the Supreme Court ruled, and not one justice dissented [CLM-0718]. The opinion was written by Chief Justice John Roberts, and its core was simple: the police generally may not search the digital contents of a cell phone seized during an arrest without a warrant [CLM-0719].
 
 [VO:] Roberts wrote that modern phones are now "such a pervasive and insistent part of daily life" that they hold, in digital form, the privacies of life [CLM-0720]. The sum of an individual's private life can be reconstructed from the device — where they have been, who they know, what they believe, what they fear. A search of a phone, he said, is not like emptying a pocket. It is more revealing than the most thorough search of a house [CLM-0721].
 

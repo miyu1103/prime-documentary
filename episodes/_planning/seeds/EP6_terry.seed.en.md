@@ -12,7 +12,7 @@
 ## ACT I — THE STREET — 1:15–3:30 — ~310 words
 [VO:] It is October 1963, in downtown Cleveland, Ohio. A plainclothes detective named Martin McFadden, thirty-nine years on the force, is watching the street the way he has watched it for decades [CLM-0604].
 
-[VO:] He notices two men. One walks down the block, pauses at a particular store window, looks inside, and walks on. A short distance away he turns, comes back, and looks into the same window again. Then the second man does exactly the same thing. Back and forth, the two of them, more than a dozen times [CLM-0605].
+[VO:] He notices two men. One walks down the block, pauses at a particular store window, looks inside, and walks on. A short distance away he turns, comes back, and looks into the same window again. Then the second man does exactly the same thing. Back and forth, the two of them, about a dozen trips in all — five or six times apiece [CLM-0605].
 
 [VO:] To most people on the sidewalk, this is nothing. To McFadden, it is a pattern he recognizes. Men do not usually study a single store window a dozen times in the middle of the afternoon. He believes he is watching two men rehearse a robbery — checking the layout, the register, the way out [CLM-0606].
 

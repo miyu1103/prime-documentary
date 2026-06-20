@@ -18,7 +18,7 @@
 
 [VO:] Here is what that is. Every time your phone connects to a tower — to send a text, take a call, or just check for messages in the background — the network logs which tower it used [CLM-0809]. Those towers cover known areas. String the records together over days and weeks, and you do not just get a few points. You get a map of a person's movements, hour by hour.
 
-[VO:] The government obtained around 127 days of Carpenter's records — roughly 13,000 location points tracing where his phone had been [CLM-0810]. The data placed him near several of the robberies when they happened. He was convicted and sentenced to more than a hundred years in prison [CLM-0811].
+[VO:] The government obtained around 127 days of Carpenter's records — almost 13,000 location points, about 12,898 in all, tracing where his phone had been [CLM-0810]. The data placed him near several of the robberies when they happened. He was convicted and sentenced to 116 years in prison [CLM-0811].
 
 [VO:] And the police had gathered that 127-day map without a warrant [CLM-0812]. They had not convinced a judge that there was probable cause. They had used a federal law that let them get the records on a much weaker showing — a standard far below the one the Fourth Amendment usually demands [CLM-0813]. The reason they were allowed to do that came from a rule almost no one outside a courtroom had ever heard of.
 

@@ -43,8 +43,9 @@ Do NOT publish, run paid APIs, or generate paid assets from this file. This is a
 - Thumbnail: Remotion.
 - Publish: YouTube, private upload first; public scheduling = gate.
 - Heavy media (images/video/audio/renders) → H:\pd-media (git-ignored). Repo holds the "brain" only.
-- RECONCILE (stale docs): CLAUDE.md §11 still says DaVinci; decisions/0002 addendum + 0007 still say
-  Midjourney. Both are now superseded → edit = Remotion+FFmpeg, images = Codex. Update those docs.
+- RECONCILED: CLAUDE.md §11 updated 2026-06-20 (edit = Remotion+FFmpeg, images = Codex), explicitly
+  superseding earlier DaVinci/Midjourney references in docs/ and decisions/. (decisions/0002 & 0007
+  prose not yet rewritten, but are overridden by CLAUDE.md §11 — the top source-of-truth.)
 
 ## 1. PIPELINE INSTRUCTIONS FOR CODEX (run per episode, EP6 first)
 1. pd-new-episode → create workspace, IDs (PD-2026-006/007/008), manifest, topic brief
@@ -173,3 +174,26 @@ Do NOT publish, run paid APIs, or generate paid assets from this file. This is a
     - episodes/_planning/seeds/EP8_carpenter.seed.en.md
 - House format examples: episodes/PD-2026-001-miranda/03_script/script.en.v001.md ;
   episodes/PD-2026-002-gideon/03_script/script.en.v001.md
+
+## 7. FACT VERIFICATION LOG (checked 2026-06-20 vs primary/authoritative web sources)
+Load-bearing facts of all three cases were fact-checked BEFORE handoff; corrections already applied
+to the seed drafts. pd-research must still register these into the claim ledger (claims.vNNN.json)
+and assign real CLM ids — but the facts below are confirmed.
+- EP6 Terry v. Ohio — 392 U.S. 1, decided 1968-06-10; 8–1; Warren; sole dissent Douglas. Cleveland,
+  1963-10-31; Det. McFadden (39 yrs on force / 35 as detective). CORRECTION applied: the two men
+  cased the window "about a dozen trips total (~5–6 each)", not "more than a dozen." Holding
+  (reasonable suspicion + weapons frisk) verified.
+  Sources: https://www.law.cornell.edu/supremecourt/text/392/1 ; https://api.oyez.org/cases/1967/67
+- EP7 Riley v. California — 573 U.S. 373, decided 2014-06-25; 9–0 in the RESULT (Roberts; Alito
+  concurred in part & in the judgment — not unanimous in reasoning); companion United States v.
+  Wurie; "get a warrant"; Chimel rationales; exigency exception preserved. CORRECTION applied:
+  "every justice agreed" → "not one justice dissented" (precise).
+  Sources: https://www.law.cornell.edu/supremecourt/text/13-132 ; https://supreme.justia.com/cases/federal/us/573/373
+- EP8 Carpenter v. United States — 585 U.S. 296 / 138 S.Ct. 2206, decided 2018-06-22; 5–4; Roberts;
+  dissents Kennedy/Thomas/Alito/Gorsuch. Detroit-area RadioShack/T-Mobile robberies 2010–11; SCA
+  §2703(d) "specific and articulable facts" (< probable cause); 127 days / ~12,898 CSLI points;
+  sentenced 116 years. Third-party doctrine = Smith v. Maryland (1979) + United States v. Miller
+  (1976); NOT overruled, NOT extended. CORRECTIONS applied: "~12,898 points", "116 years".
+  Sources: https://www.lawfaremedia.org/article/summary-supreme-court-rules-carpenter-v-united-states ; https://en.wikipedia.org/wiki/Carpenter_v._United_States ; https://www.justice.gov/usao-edmi/pr/cell-phone-store-robber-sentenced-116-years
+- WARNING for Codex: a Cornell LII AI-summary misreports Carpenter as "6–3" — IGNORE; the vote is
+  5–4 per all primary sources.
