@@ -1,72 +1,61 @@
-# Codex prompt — EP8 (Carpenter v. United States) — paste this whole block into one Codex thread
+# Codexプロンプト — 第8話(Carpenter v. United States)— このブロックをそのままCodexスレッドに貼る
 
-You are Codex, working in the Prime Documentary repo (github.com/miyu1103/prime-documentary), branch
-`claude/vibrant-archimedes-2mmr5h`. Before doing anything, read `CLAUDE.md` and
-`episodes/_planning/EP6-8_HANDOFF.md`.
+あなたはCodexです。Prime Documentaryリポジトリ(github.com/miyu1103/prime-documentary、ブランチ
+`claude/vibrant-archimedes-2mmr5h`)で作業します。着手前に必ず `CLAUDE.md` と
+`episodes/_planning/EP6-8_HANDOFF.md` を読んでください。
 
-## Your role
-Division of labor (owner-set): Claude has finished the LEFT pipeline (topic → research → claims →
-script). **You own the RIGHT pipeline: scenes → images → narration → music → edit → render.**
+## あなたの担当
+分担(オーナー決定):Claudeが左側(topic → research → claims → 台本)を完了済み。
+**あなたは右側=シーン → 画像 → ナレーション → 音楽 → 編集 → 書き出し を担当します。**
 
-The script for this episode is FINISHED, owner-approved (APR-0001), schema-validated, and
-`state = script_verified`. It is LOCKED. **Do NOT rewrite, re-summarize, re-time, or regenerate the
-script, the annotated script, or the claims.** If you believe a factual line is wrong, STOP and flag
-it to the owner — do not edit it yourself (editing re-opens the approval gate).
+この話の台本は**完成・オーナー承認済み(APR-0001)・スキーマ検証済み・`state = script_verified`・ロック済み**です。
+**台本・注釈台本・claimsを書き換え/要約し直し/作り直してはいけません。** 事実の誤りに気づいたら、自分で
+直さずSTOPしてオーナーに報告(編集すると承認ゲートが再オープンします)。
 
-## Locked input (read, do not modify)
-- `episodes/PD-2026-008-carpenter/03_script/script.en.v001.md` — the narration ([VO:] = spoken).
-- `episodes/PD-2026-008-carpenter/03_script/script.annotated.v001.json` — 30 claim-linked spans, each
-  with `visual_intent` and `on_screen_text`. Build your scenes to these spans; respect chapter order
-  and `estimated_duration_seconds` (~11 min).
-- `episodes/PD-2026-008-carpenter/01_research/claims.v001.json` — the cited facts behind each span.
-- `episodes/PD-2026-008-carpenter/manifest.json` — current state and active revisions.
+## ロック入力(読むだけ。変更不可)
+- `episodes/PD-2026-008-carpenter/03_script/script.en.v001.md` — ナレーション([VO:]=読み上げ)
+- `episodes/PD-2026-008-carpenter/03_script/script.annotated.v001.json` — claim連結の30スパン。各スパンに
+  `visual_intent` と `on_screen_text` あり。これに沿ってシーンを作り、章順と `estimated_duration_seconds`
+  (約11分)を尊重する。
+- `episodes/PD-2026-008-carpenter/01_research/claims.v001.json` — 各スパンの根拠(出典つき事実)
+- `episodes/PD-2026-008-carpenter/manifest.json` — 現在のstate / active revisions
 
-## Toolchain (authoritative — CLAUDE.md §11 + handoff §0A)
-- Images: **Codex image generation = primary**; local SDXL/SVD for bulk variants.
-- Motion / on-screen graphics: Remotion. Narration: ElevenLabs (PAID). Music/SFX: Suno reuse library.
-- Edit & render: **Remotion + FFmpeg** (CPU/libx264, quality-first). Thumbnail: Remotion.
-- Heavy media (images/video/audio/renders) → `H:\pd-media` (git-ignored). Repo holds the brain only.
+## ツールチェーン(正:CLAUDE.md §11 + handoff §0A)
+- 画像:**Codex画像生成=主力**。量産バリエは ローカルSDXL/SVD。
+- モーション/図版:Remotion。ナレーション:ElevenLabs(課金)。音楽/SFX:Suno再利用ライブラリ。
+- 編集・書き出し:**Remotion + FFmpeg**(CPU/libx264・品質最優先)。サムネ:Remotion。
+- 重メディア(画像/動画/音声/レンダ)→ `H:\pd-media`(git対象外)。リポジトリは頭脳(設計)のみ。
 
-## Hard rules (non-negotiable)
-1. Every AI image: disclosed as AI, registered in the rights manifest (origin/creator/license/
-   verified_at), brand-consistent (`remotion/src/brand.ts`), and **NO real-person likeness or
-   deepfake** — Timothy Carpenter must never be depicted as an identifiable real person
-   (invariant 11).
-2. No paid API (ElevenLabs/Runway), upload, or publish without **explicit owner approval** +
-   idempotency + budget check. Respect `guard_destructive` / `check_secrets` hooks.
-3. All visuals are symbolic reconstruction, never authentic footage; set the YouTube altered/
-   synthetic-content disclosure and keep an on-screen "symbolic reconstruction" label.
-4. Tone: neutral, advertiser-safe, educational. Commit each step to the branch with clear messages.
+## 厳守ルール(交渉不可)
+1. すべてのAI画像:AI生成と開示、rights manifestに登録(origin/creator/license/verified_at)、ブランド準拠
+   (`remotion/src/brand.ts`)、**実在人物の肖像・ディープフェイク禁止**(Timothy Carpenterを識別可能な実在人物
+   として描かない/invariant 11)。
+2. 課金API(ElevenLabs/Runway)・アップロード・公開は、**オーナーの明示承認**＋冪等キー＋予算チェックなしに実行禁止。
+   `guard_destructive` / `check_secrets` フックを尊重。
+3. 映像はすべて象徴的再構成であり、本物の記録映像として提示しない。YouTubeの改変/合成コンテンツ開示を設定し、
+   画面上に「symbolic reconstruction」表示を残す。
+4. トーンは中立・広告に安全・教育的。各ステップごとにブランチへコミット。
 
-## Pipeline to run (this episode)
-1. `pd-scenes` → scene/shot/visual/on-screen-text plan from the annotated spans (continuity +
-   generation specs). Reuse each span's `visual_intent` and `on_screen_text`.
-2. `pd-generate-assets` → generate the images (Codex primary; SDXL/SVD for variants), QC and register
-   them with rights metadata.
-3. Narration (ElevenLabs — request owner approval before the paid run) + music (Suno library) +
-   Remotion motion/graphics.
-4. `pd-build-edit` → assemble and render in Remotion + FFmpeg; run QC.
-5. **STOP at the first-cut review gate, then at the title/thumbnail gate, for owner approval. Do not
-   publish.**
+## 実行パイプライン(この話)
+1. `pd-scenes` → 注釈スパンから シーン/ショット/ビジュアル/画面テキスト計画を作成(連続性＋生成仕様)。
+   各スパンの `visual_intent` と `on_screen_text` を流用。
+2. `pd-generate-assets` → 画像生成(Codex主力＋SDXL/SVDでバリエ)、QC、権利メタデータ登録。
+3. ナレーション(ElevenLabs。**課金実行前にオーナー承認を取る**)＋音楽(Sunoライブラリ)＋Remotionモーション。
+4. `pd-build-edit` → Remotion + FFmpeg で組み立て＆レンダ、QC。
+5. **初稿(first-cut)レビューゲート、続いてタイトル/サムネのゲートでSTOPし、オーナー承認を待つ。公開はしない。**
 
-## EP8 specifics
-- Working title: "Your Phone Is Tracking You — and the Police Wanted the Map." (test 3–5 variants at
-  the title/thumbnail gate.)
-- Risk class: **R2 — Carpenter is a convicted person on the public record. Stay neutral and
-  factual; do not editorialize on guilt beyond the record.**
-- Accuracy note for on-screen text: the vote is **5–4** (CLM-0002). **Ignore any "6–3" summary** — a
-  stray AI-generated case summary misreports it; the correct vote is 5–4.
-- Visual throughline (present-tense framing) — this is the series capstone: open on a location trail
-  blooming on a dark map from a phone icon, "127 days · no warrant"; Act I = Detroit 2010–2011 store
-  robberies (symbolic) → pings-to-towers becoming a connected path → "~12,898 points"; Act II = a
-  thin single dialed-number list vs a full life-mapping location trail (the third-party doctrine,
-  Smith 1979 / Miller 1976); Act III = 2018 / 5–4 / "Carpenter v. United States, 585 U.S. 296"
-  lower-thirds; Act IV = "location was just the first door" (search/purchases/messages/sensors). The
-  ending is the trilogy payoff — callback to Terry (the body) → Riley (the phone's contents) →
-  Carpenter (location); land it on the viewer's own device.
-- Brand palette: black / navy / electric-blue / gold (see `remotion/src/brand.ts`).
+## 第8話の固有指定
+- 仮タイトル:"Your Phone Is Tracking You — and the Police Wanted the Map."(タイトル/サムネのゲートで3〜5案を検証)
+- リスク区分:**R2 — Carpenterは公的記録上の有罪確定者。中立・事実ベースで、記録を超えて有罪を論評しない。**
+- 画面テキストの正確性:評決は **5–4**(CLM-0002)。**「6–3」とする要約は無視**(AI生成の誤要約。正しくは5–4)。
+- ビジュアルの一本筋(現在形フレーム/シリーズの締め):冒頭は暗い地図上に位置トレイルが広がる「127日・令状なし」。
+  第1幕=デトロイトの2010–2011年の店舗強盗(象徴)→ 基地局へのping が経路になる →「約12,898点」。
+  第2幕=細い1本の発信番号リスト vs 生活全体を地図化する位置トレイル(第三者法理:Smith 1979 / Miller 1976)。
+  第3幕=2018 / 5–4 / "Carpenter v. United States, 585 U.S. 296" の下部テロップ。
+  第4幕=「位置は最初の扉にすぎない」(検索/購入/メッセージ/センサー)。
+  結末=三部作のペイオフ:Terry(身体)→ Riley(電話の中身)→ Carpenter(位置)を回収し、視聴者自身の端末に着地。
+- ブランド配色:黒 / 紺 / エレクトリックブルー / 金(`remotion/src/brand.ts` 参照)。
 
-## First action
-Read the four locked input files above and `CLAUDE.md` §11 + the handoff, then post a short scene
-plan summary (chapters → shots → image prompts → on-screen text) for owner review BEFORE generating
-assets. Then proceed through the pipeline, stopping at the gates.
+## 最初のアクション
+上のロック入力4ファイルと `CLAUDE.md` §11 + handoff を読み、**画像生成の前に**シーン計画の要約(章 → ショット →
+画像プロンプト → 画面テキスト)をオーナーレビュー用に投稿する。その後パイプラインを進め、各ゲートで停止する。
