@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-014-lange",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Lange v. California (2021) the Supreme Court held that the pursuit of a fleeing misdemeanor suspect does not categorically (automatically) justify a warrantless entry into a home; whether such an entry is justified by exigent circumstances must be assessed case-by-case.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Kagan, J.), holding"
+      ],
+      "counterevidence": [
+        "Roberts (joined by Alito) concurred in the judgment but favored a broader hot-pursuit entry rule."
+      ],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "Chasing a fleeing misdemeanor suspect does not, by itself, let police enter your home without a warrant; it depends on the circumstances."
+      ],
+      "prohibited_wording": [
+        "Police can never enter a home in pursuit.",
+        "Police can always follow a fleeing suspect inside."
+      ],
+      "temporal_scope": "2021-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Lange v. California was decided on June 23, 2021; the judgment was unanimous (9-0, vacating and remanding), with the principal opinion by Justice Elena Kagan, and Chief Justice John Roberts (joined by Justice Samuel Alito) concurred in the judgment while favoring a broader rule permitting warrantless entry in hot pursuit.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Syllabus / lineup / concurrences"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "The result was unanimous (9-0 to send it back); Justice Kagan wrote the main opinion, with Chief Justice Roberts and Justice Alito agreeing on the outcome but wanting a broader rule."
+      ],
+      "prohibited_wording": [
+        "It was a unanimous opinion (all reasoning agreed).",
+        "The decision was 5-4."
+      ],
+      "temporal_scope": "2021",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Unanimous in JUDGMENT, not opinion; Roberts+Alito concurred in judgment only."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "A warrantless entry into a home is presumptively unreasonable under the Fourth Amendment, subject to exceptions including 'exigent circumstances,' of which 'hot pursuit' can be one.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, Fourth Amendment / exigency framework"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "Normally police need a warrant to enter your home, unless there is an emergency — an 'exigent circumstance' — like a true hot pursuit."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The home's special protection + exigency framework."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "Arthur Lange was driving in Sonoma County, California, playing loud music and repeatedly honking his horn; a California Highway Patrol officer began following him and turned on his overhead lights to signal a stop.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, facts"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Lange was playing loud music and honking; an officer followed and put on his lights to pull him over."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2016-2021",
+      "geographic_scope": "California, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Minor traffic conduct; the trigger."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "Lange, about 100 feet from home, continued into his attached garage; as the garage door descended, the officer stuck his foot under it to stop it, entered, observed signs that Lange was intoxicated, and Lange was charged with DUI, a misdemeanor.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, facts (foot under garage door; DUI)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.94,
+      "allowed_wording": [
+        "He pulled into his garage; the officer stuck a foot under the closing door, entered, and found signs of a DUI — a misdemeanor."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2016",
+      "geographic_scope": "California, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The vivid foot-under-the-door fact; DUI was what the entry revealed."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "The legal question was about the misdemeanor flight itself — whether fleeing a misdemeanor automatically creates an exigency justifying a warrantless home entry — not about the DUI specifically; the DUI was what the entry revealed.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, framing of the question"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "The fight was over whether fleeing a minor offense lets police enter automatically — not about the DUI itself."
+      ],
+      "prohibited_wording": [
+        "The case was about whether DUI lets police enter your home."
+      ],
+      "temporal_scope": "2021",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Keep the question framed as misdemeanor flight, not DUI."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "The majority (Kagan) emphasized the home's strong Fourth Amendment protection and held that exigency must be judged case-by-case under the totality of the circumstances, with the suspect's flight a relevant factor but not an automatic trigger for entry.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Kagan, J.)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "The Court said judge each case on its facts — flight matters, but it is not an automatic green light to enter."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2021-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Case-by-case standard; majority reasoning."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "In an opinion concurring in the judgment, Chief Justice Roberts, joined by Justice Alito, argued that hot pursuit of a fleeing suspect should itself justify entry, emphasizing officer safety and preventing the suspect's escape or the loss of evidence.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Roberts, C.J., concurring in the judgment (joined by Alito)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "Chief Justice Roberts and Justice Alito agreed with the outcome but argued hot pursuit should generally allow entry, for officer safety and to stop escape."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2021",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The other side, fairly presented."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "The Supreme Court vacated the lower court's decision and remanded the case for the lower courts to apply the case-by-case exigent-circumstances standard.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, disposition (vacate and remand)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "The Court sent the case back to apply the case-by-case test."
+      ],
+      "prohibited_wording": [
+        "The Court threw out the charges."
+      ],
+      "temporal_scope": "2021",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Vacated and remanded."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable hashes 1/2 (SRC-0002 blocked). Vote = unanimous-in-judgment; question = misdemeanor flight not DUI; neutral."
+    ]
+  }
+}
