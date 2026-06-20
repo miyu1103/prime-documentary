@@ -164,7 +164,7 @@ def main() -> int:
             f.write(ts)
         os.replace(tmp, ts_path)
         print(f"\nWROTE {os.path.relpath(ts_path, ROOT)}  (+{copied} assets -> remotion/public/{slug}/)")
-        print(f"Register in Root.tsx: import {{RoughCut, roughCutDurationInFrames}} + {{{const}}} and add a <Composition id=\"RoughCut_{slug}\" ...>.")
+        print(f"Register in Root.tsx: import {{RoughCut, roughCutDurationInFrames}} + {{{const}}} and add a <Composition id=\"RoughCut-{slug}\" ...> (hyphen only; '_' is invalid in Remotion ids).")
     else:
         print(f"\n(dry-run) would write the .ts and copy {len(copies)} usable asset(s). Pass --write.")
     return 0

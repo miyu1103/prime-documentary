@@ -20,7 +20,7 @@ export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
-        id="RoughCut_mahanoy"
+        id="RoughCut-mahanoy"
         component={RoughCut}
         durationInFrames={roughCutDurationInFrames(MAHANOY_ROUGHCUT)}
         fps={BRAND.video.fps}

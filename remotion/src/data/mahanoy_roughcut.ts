@@ -15,7 +15,7 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 29.2,
       "assetType": "stock_video",
       "motion": "video_native",
-      "src": null,
+      "src": "mahanoy/pexels_v_853987.mp4",
       "telop": [
         "Can your school punish your weekend post?"
       ],
@@ -61,7 +61,7 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 30.0,
       "assetType": "stock_video",
       "motion": "video_native",
-      "src": null,
+      "src": "mahanoy/pexels_v_37627304.mp4",
       "telop": [
         "[caption censored]"
       ],
@@ -143,7 +143,7 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 27.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": null,
+      "src": "mahanoy/pexels_i_694424.jpg",
       "telop": [
         "The phone erased the gate"
       ],

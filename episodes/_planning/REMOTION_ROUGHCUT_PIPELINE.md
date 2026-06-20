@@ -41,11 +41,11 @@ Claude側（左工程）が U1–U5 の道具と配線を用意済み。Codex（
    `scripts/import_to_remotion.py 11 --write`
    - 素材が無いスパンは `src=null` → RoughCutが**ブランドのモーションカード（テロップ）**を描画（タイムラインは常に完結）。
 6. **U5 ラフカット確認**（Remotion）
-   - Root.tsx に第11話=`RoughCut_mahanoy` を登録済み。別話は U4 出力後に同様の`<Composition>`を追記（importの行を真似る）。
-   - `cd remotion && npm run studio` で `RoughCut_<slug>` を開く。
+   - Root.tsx に第11話=`RoughCut-mahanoy` を登録済み。別話は U4 出力後に同様の`<Composition>`を追記（importの行を真似る）。
+   - `cd remotion && npm run studio` で `RoughCut-<slug>` を開く。
    - 動画=`OffthreadVideo`、画像=Ken Burns/parallaxで**必ず動く**、AI画像は「Reconstruction」表示、テロップは金ルールの下三分の一。
    - ナレ/BGMは `<slug>_roughcut.ts` の `narrationSrc`/`bgmSrc` にpublic相対パスを入れると載る（ElevenLabsナレは**課金前にオーナー承認**）。
-7. **書き出し** … `npm run render RoughCut_<slug> out/<slug>_rough.mp4`（CPU/libx264）。**初稿はオーナーゲートで停止**。公開しない。
+7. **書き出し** … `npm run render RoughCut-<slug> out/<slug>_rough.mp4`（CPU/libx264）。**初稿はオーナーゲートで停止**。公開しない。
 
 ## ゲート（必ず止まる）
 - ナレーション課金（ElevenLabs）前 / 初稿 / タイトル・サムネ / 公開。**第15話(Theranos)はR3=公開前に法務レビュー必須**・本人肖像/実映像禁止。
