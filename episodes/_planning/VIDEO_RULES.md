@@ -32,6 +32,7 @@
 - Runwayは高コストなので**決め所だけ**。
 - **共有の使い回し棚（`references/stock_manifest.json`・現在234点）を必ず活用**。各話の取得分＋棚が自動で候補になる。
 - AI画像を足したら `05_stock/stock_ledger.v001.json` に1行記録（source=ai_codex/ai_sdxl, commercial_use=allowed, sha256）。
+- **Codexアプリで事前生成する場合**：各話 `04_scenes/ai_prompts.v001.md`（生成リスト）に従い、`H:\pd-media\assets\ai\<話名>\<場面ID>.png` に保存 → `import_to_remotion.py` が自動で各場面に入れる（AI画像が仮写真より優先）。詳細は `CODEX_APP_IMAGE_GEN.md`。
 
 ## 5. 権利（最重要・絶対）
 - **商用利用OKの素材だけ。** 1点ずつ「出典URL・作者・ライセンス・取得日・使用シーン・sha256」を記録。

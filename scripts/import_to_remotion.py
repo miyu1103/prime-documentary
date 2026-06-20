@@ -73,6 +73,21 @@ def resolve_file(file: str) -> str | None:
     return os.path.join(ROOT, file)
 
 
+def ai_images_for(slug: str, span_id: str) -> list[str]:
+    """Hand-made AI images for a span, dropped by the Codex app at
+    <media>/assets/ai/<slug>/<span_id>*.{png,jpg,...}. These take priority over stock."""
+    mr = media_root()
+    if not mr:
+        return []
+    d = os.path.join(mr, "assets", "ai", slug)
+    if not os.path.isdir(d):
+        return []
+    out: list[str] = []
+    for ext in ("png", "jpg", "jpeg", "webp"):
+        out += glob.glob(os.path.join(d, f"{span_id}*.{ext}"))
+    return sorted(out)
+
+
 def resolve_ep(arg: str) -> str:
     if os.path.isdir(os.path.join(EPDIR, arg)):
         return arg
@@ -171,7 +186,12 @@ def main() -> int:
         clips_out: list[dict[str, Any]] = []
         images_out: list[str] = []
         atype = sh["suggested_asset_type"]
-        if atype == "stock_video":
+        ai_paths = ai_images_for(slug, sh["span_id"])  # hand-made AI images win over stock/placeholders
+        if ai_paths:
+            images_out = [queue_copy({"file": p}) for p in ai_paths]
+            src = images_out[0]
+            bound += 1
+        elif atype == "stock_video":
             for a in pick_videos(sh, pool, used):
                 used.add(a["asset_id"])
                 clips_out.append({"src": queue_copy(a),
