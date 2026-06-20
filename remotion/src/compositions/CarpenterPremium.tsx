@@ -51,29 +51,33 @@ type Scene = {
   kicker?: string;
   citation?: string;
   image?: string;
+  images?: string[];
   text?: string[];
 };
 
+const sceneImages = (id: string): string[] =>
+  Array.from({length: 10}, (_, i) => `carpenter/v007/${id}/${id}_${String(i + 1).padStart(3, '0')}.png`);
+
 const scenes: Scene[] = [
-  {id: 's01', kind: 'trail', start: 0, dur: 27, title: '127 days. No warrant.', subtitle: 'Your phone is already drawing the map.', kicker: 'HOOK', image: 'carpenter/carpenter_hook_phone_map_v006_seed948991.png', text: ['127 days', 'no warrant']},
+  {id: 's01', kind: 'trail', start: 0, dur: 27, title: '127 days. No warrant.', subtitle: 'Your phone is already drawing the map.', kicker: 'HOOK', image: 'carpenter/carpenter_hook_phone_map_v006_seed948991.png', images: sceneImages('s01'), text: ['127 days', 'no warrant']},
   {id: 'open', kind: 'opening', start: 27, dur: OPENING_SEC, title: 'Carpenter', subtitle: 'The phone that tracks you'},
-  {id: 's02', kind: 'trilogy', start: 30.5, dur: 32, title: 'Body. Phone. Location.', subtitle: 'The privacy line moves into the device.', kicker: 'OPENING', image: 'carpenter/carpenter_ordinary_phone_desk_v006_seed949982.png'},
-  {id: 's03', kind: 'detroit', start: 62.5, dur: 31, title: 'Detroit area — 2010–2011', subtitle: 'A case begins with phone numbers.', kicker: 'ACT I', image: 'carpenter/carpenter_detroit_store_symbolic_v006_seed950973.png', text: ['Detroit', '2010–2011']},
-  {id: 's04', kind: 'tower', start: 93.5, dur: 37, title: 'Cell-site location information', subtitle: 'Pings become a path.', kicker: 'ACT I', image: 'carpenter/carpenter_cell_tower_city_v006_seed951964.png', text: ['CSLI']},
-  {id: 's05', kind: 'points', start: 130.5, dur: 35, title: '~12,898 points', subtitle: '127 days of location records.', kicker: 'ACT I', image: 'carpenter/carpenter_cell_tower_city_v006_seed951964.png', citation: 'CLM-0006', text: ['~12,898', '127 days']},
-  {id: 's06', kind: 'warrant', start: 165.5, dur: 28, title: 'No warrant', subtitle: 'A lower Stored Communications Act standard.', kicker: 'ACT I', image: 'carpenter/carpenter_blank_order_phone_v006_seed952955.png', citation: 'CLM-0005', text: ['probable cause', 'lower standard']},
-  {id: 's07', kind: 'doctrine', start: 193.5, dur: 34, title: 'The third-party doctrine', subtitle: 'Share it with a company, lose privacy?', kicker: 'ACT II', text: ['Miller 1976', 'Smith 1979']},
-  {id: 's08', kind: 'thinList', start: 227.5, dur: 34, title: 'A list is thin', subtitle: 'Dialed numbers are not a life map.', kicker: 'ACT II', image: 'carpenter/carpenter_doctrine_split_v006_seed953946.png', text: ['dialed numbers']},
-  {id: 's09', kind: 'lifeMap', start: 261.5, dur: 50, title: 'Different in kind, not degree', subtitle: 'Continuous, automatic, unavoidable.', kicker: 'ACT II', image: 'carpenter/carpenter_hook_phone_map_v006_seed948991.png', text: ['home', 'work', 'faith', 'health']},
-  {id: 's10', kind: 'collision', start: 311.5, dur: 34, title: 'The collision', subtitle: 'A 1970s rule meets an always-on phone.', kicker: 'ACT II', image: 'carpenter/carpenter_ordinary_phone_desk_v006_seed949982.png', text: ['share it, lose it?', 'constant tracking']},
-  {id: 's11', kind: 'ruling', start: 345.5, dur: 36, title: '2018 — 5–4', subtitle: 'Carpenter v. United States, 585 U.S. 296', kicker: 'ACT III', image: 'carpenter/carpenter_supreme_columns_abstract_v006_seed954937.png', citation: 'CLM-0002 / CLM-0001', text: ['5', '4']},
-  {id: 's12', kind: 'boundary', start: 381.5, dur: 42, title: 'Did not overrule. Refused to extend.', subtitle: 'The old doctrine stops at CSLI.', kicker: 'ACT III', citation: 'CLM-0003', text: ['not overruled', 'not extended']},
-  {id: 's13', kind: 'lifeMap', start: 423.5, dur: 40, title: 'Depth + no real choice', subtitle: 'A record you cannot avoid creating.', kicker: 'ACT III', citation: 'CLM-0009', text: ['depth', 'no choice']},
-  {id: 's14', kind: 'dissent', start: 463.5, dur: 40, title: 'Where is the line?', subtitle: 'The dissents warned the rule was blurry.', kicker: 'ACT III', citation: 'CLM-0010', text: ['Congress?', 'Courts?']},
-  {id: 's15', kind: 'boundary', start: 503.5, dur: 26, title: 'Rich + unavoidable = still private', subtitle: 'The warrant remains the line.', kicker: 'ACT III', text: ['warrant generally required']},
-  {id: 's16', kind: 'doors', start: 529.5, dur: 48, title: 'Location was just the first door', subtitle: 'Searches. Purchases. Messages. Sensors.', kicker: 'ACT IV', image: 'carpenter/carpenter_data_doors_corridor_v006_seed955928.png', citation: 'CLM-0003', text: ['search', 'purchases', 'messages', 'sensors']},
-  {id: 's17', kind: 'trilogy', start: 577.5, dur: 38, title: 'Body · Phone · Location', subtitle: 'Terry. Riley. Carpenter.', kicker: 'ENDING', text: ['Terry', 'Riley', 'Carpenter']},
-  {id: 's18', kind: 'trail', start: 615.5, dur: 53.5, title: 'The line runs through your phone.', subtitle: 'And it is still being redrawn.', kicker: 'ENDING', image: 'carpenter/carpenter_viewer_device_final_v006_seed956919.png'},
+  {id: 's02', kind: 'trilogy', start: 30.5, dur: 32, title: 'Body. Phone. Location.', subtitle: 'The privacy line moves into the device.', kicker: 'OPENING', image: 'carpenter/carpenter_ordinary_phone_desk_v006_seed949982.png', images: sceneImages('s02')},
+  {id: 's03', kind: 'detroit', start: 62.5, dur: 31, title: 'Detroit area — 2010–2011', subtitle: 'A case begins with phone numbers.', kicker: 'ACT I', image: 'carpenter/carpenter_detroit_store_symbolic_v006_seed950973.png', images: sceneImages('s03'), text: ['Detroit', '2010–2011']},
+  {id: 's04', kind: 'tower', start: 93.5, dur: 37, title: 'Cell-site location information', subtitle: 'Pings become a path.', kicker: 'ACT I', image: 'carpenter/carpenter_cell_tower_city_v006_seed951964.png', images: sceneImages('s04'), text: ['CSLI']},
+  {id: 's05', kind: 'points', start: 130.5, dur: 35, title: '~12,898 points', subtitle: '127 days of location records.', kicker: 'ACT I', image: 'carpenter/carpenter_cell_tower_city_v006_seed951964.png', images: sceneImages('s05'), citation: 'CLM-0006', text: ['~12,898', '127 days']},
+  {id: 's06', kind: 'warrant', start: 165.5, dur: 28, title: 'No warrant', subtitle: 'A lower Stored Communications Act standard.', kicker: 'ACT I', image: 'carpenter/carpenter_blank_order_phone_v006_seed952955.png', images: sceneImages('s06'), citation: 'CLM-0005', text: ['probable cause', 'lower standard']},
+  {id: 's07', kind: 'doctrine', start: 193.5, dur: 34, title: 'The third-party doctrine', subtitle: 'Share it with a company, lose privacy?', kicker: 'ACT II', images: sceneImages('s07'), text: ['Miller 1976', 'Smith 1979']},
+  {id: 's08', kind: 'thinList', start: 227.5, dur: 34, title: 'A list is thin', subtitle: 'Dialed numbers are not a life map.', kicker: 'ACT II', image: 'carpenter/carpenter_doctrine_split_v006_seed953946.png', images: sceneImages('s08'), text: ['dialed numbers']},
+  {id: 's09', kind: 'lifeMap', start: 261.5, dur: 50, title: 'Different in kind, not degree', subtitle: 'Continuous, automatic, unavoidable.', kicker: 'ACT II', image: 'carpenter/carpenter_hook_phone_map_v006_seed948991.png', images: sceneImages('s09'), text: ['home', 'work', 'faith', 'health']},
+  {id: 's10', kind: 'collision', start: 311.5, dur: 34, title: 'The collision', subtitle: 'A 1970s rule meets an always-on phone.', kicker: 'ACT II', image: 'carpenter/carpenter_ordinary_phone_desk_v006_seed949982.png', images: sceneImages('s10'), text: ['share it, lose it?', 'constant tracking']},
+  {id: 's11', kind: 'ruling', start: 345.5, dur: 36, title: '2018 — 5–4', subtitle: 'Carpenter v. United States, 585 U.S. 296', kicker: 'ACT III', image: 'carpenter/carpenter_supreme_columns_abstract_v006_seed954937.png', images: sceneImages('s11'), citation: 'CLM-0002 / CLM-0001', text: ['5', '4']},
+  {id: 's12', kind: 'boundary', start: 381.5, dur: 42, title: 'Did not overrule. Refused to extend.', subtitle: 'The old doctrine stops at CSLI.', kicker: 'ACT III', images: sceneImages('s12'), citation: 'CLM-0003', text: ['not overruled', 'not extended']},
+  {id: 's13', kind: 'lifeMap', start: 423.5, dur: 40, title: 'Depth + no real choice', subtitle: 'A record you cannot avoid creating.', kicker: 'ACT III', images: sceneImages('s13'), citation: 'CLM-0009', text: ['depth', 'no choice']},
+  {id: 's14', kind: 'dissent', start: 463.5, dur: 40, title: 'Where is the line?', subtitle: 'The dissents warned the rule was blurry.', kicker: 'ACT III', images: sceneImages('s14'), citation: 'CLM-0010', text: ['Congress?', 'Courts?']},
+  {id: 's15', kind: 'boundary', start: 503.5, dur: 26, title: 'Rich + unavoidable = still private', subtitle: 'The warrant remains the line.', kicker: 'ACT III', images: sceneImages('s15'), text: ['warrant generally required']},
+  {id: 's16', kind: 'doors', start: 529.5, dur: 48, title: 'Location was just the first door', subtitle: 'Searches. Purchases. Messages. Sensors.', kicker: 'ACT IV', image: 'carpenter/carpenter_data_doors_corridor_v006_seed955928.png', images: sceneImages('s16'), citation: 'CLM-0003', text: ['search', 'purchases', 'messages', 'sensors']},
+  {id: 's17', kind: 'trilogy', start: 577.5, dur: 38, title: 'Body · Phone · Location', subtitle: 'Terry. Riley. Carpenter.', kicker: 'ENDING', images: sceneImages('s17'), text: ['Terry', 'Riley', 'Carpenter']},
+  {id: 's18', kind: 'trail', start: 615.5, dur: 53.5, title: 'The line runs through your phone.', subtitle: 'And it is still being redrawn.', kicker: 'ENDING', image: 'carpenter/carpenter_viewer_device_final_v006_seed956919.png', images: sceneImages('s18')},
   {id: 'end', kind: 'end', start: 669, dur: ENDCARD_SEC, title: ''},
 ];
 
@@ -89,27 +93,41 @@ const SceneShell: React.FC<{scene: Scene; children: React.ReactNode}> = ({scene,
   const seed = sceneSeed(scene.id);
   const xDir = seed % 2 === 0 ? 1 : -1;
   const yDir = seed % 3 === 0 ? 1 : -1;
-  const imgScale = 1.12 + eased * 0.16;
-  const imgX = xDir * interpolate(eased, [0, 1], [-44, 44]);
-  const imgY = yDir * interpolate(eased, [0, 1], [-24, 24]);
-  const imgRot = xDir * interpolate(eased, [0, 1], [-0.35, 0.35]);
+  const imageSet = scene.images && scene.images.length > 0 ? scene.images : scene.image ? [scene.image] : [];
+  const segment = Math.max(42, Math.round(localDuration / Math.max(1, imageSet.length)));
+  const currentIndex = imageSet.length > 0 ? Math.floor(frame / segment) % imageSet.length : 0;
+  const nextIndex = imageSet.length > 0 ? (currentIndex + 1) % imageSet.length : 0;
+  const segmentFrame = frame % segment;
+  const nextOpacity = imageSet.length > 1 ? interpolate(segmentFrame, [segment * 0.74, segment], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}) : 0;
+  const currentPulse = interpolate(segmentFrame, [0, segment], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const imgScale = 1.1 + eased * 0.1 + currentPulse * 0.06;
+  const imgX = xDir * interpolate(eased, [0, 1], [-58, 58]) + xDir * interpolate(currentPulse, [0, 1], [-18, 18]);
+  const imgY = yDir * interpolate(eased, [0, 1], [-32, 32]) + yDir * interpolate(currentPulse, [0, 1], [14, -14]);
+  const imgRot = xDir * interpolate(eased, [0, 1], [-0.45, 0.45]);
   const pulse = 0.5 + 0.5 * Math.sin(frame * 0.035 + seed);
+  const renderImage = (src: string, opacity: number, offset: number) => (
+    <Img
+      src={staticFile(src)}
+      style={{
+        position: 'absolute',
+        inset: 0,
+        width: '100%',
+        height: '100%',
+        objectFit: 'cover',
+        opacity,
+        transform: `translate3d(${imgX + offset * 16}px, ${imgY - offset * 9}px, 0) scale(${imgScale + offset * 0.025}) rotate(${imgRot + offset * 0.08}deg)`,
+        transformOrigin: `${seed % 2 === 0 ? 64 : 36}% ${seed % 3 === 0 ? 58 : 42}%`,
+        filter: 'brightness(0.78) contrast(1.22) saturate(1.08)',
+        willChange: 'transform, opacity',
+      }}
+    />
+  );
   return (
     <AbsoluteFill style={{backgroundColor: INK, overflow: 'hidden'}}>
-      {scene.image ? (
+      {imageSet.length > 0 ? (
         <AbsoluteFill style={{overflow: 'hidden'}}>
-          <Img
-            src={staticFile(scene.image)}
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              transform: `translate3d(${imgX}px, ${imgY}px, 0) scale(${imgScale}) rotate(${imgRot}deg)`,
-              transformOrigin: `${seed % 2 === 0 ? 64 : 36}% ${seed % 3 === 0 ? 58 : 42}%`,
-              filter: 'brightness(0.78) contrast(1.18) saturate(1.04)',
-              willChange: 'transform',
-            }}
-          />
+          {renderImage(imageSet[currentIndex], 1, 0)}
+          {imageSet.length > 1 ? renderImage(imageSet[nextIndex], nextOpacity, 1) : null}
           <AbsoluteFill
             style={{
               background: `radial-gradient(60% 55% at ${58 + xDir * 12}% ${44 + yDir * 6}%, ${BLUE}${Math.round(22 + pulse * 22).toString(16).padStart(2, '0')} 0%, #00000000 66%)`,

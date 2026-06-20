@@ -27,6 +27,7 @@ REMOTION = ROOT / "remotion"
 PUBLIC_CARP = REMOTION / "public" / "carpenter"
 SDXL = EPM / "05_visuals" / "sdxl_ultra_v001"
 SDXL_MOTION = EPM / "05_visuals" / "sdxl_motion_v006"
+SDXL_HQ_V007 = EPM / "05_visuals" / "sdxl_hq_v007_180"
 VISUAL = EPM / "08_edit" / "carpenter_visual_v001.mp4"
 OUT_MEDIA = EPM / "08_edit" / "carpenter_review_v001.mp4"
 QC_REPO = EPDIR / "08_edit" / "renders" / "review.proxy.v001.qc.json"
@@ -131,6 +132,14 @@ def prepare_public_images() -> list[Path]:
             if not dst.exists() or dst.stat().st_size != src.stat().st_size:
                 shutil.copy2(src, dst)
             copied.append(src)
+    if SDXL_HQ_V007.exists():
+        for src in sorted(SDXL_HQ_V007.rglob("*.png")):
+            rel = src.relative_to(SDXL_HQ_V007)
+            dst = PUBLIC_CARP / "v007" / rel
+            dst.parent.mkdir(parents=True, exist_ok=True)
+            if not dst.exists() or dst.stat().st_size != src.stat().st_size:
+                shutil.copy2(src, dst)
+            copied.append(src)
     if not copied:
         raise FileNotFoundError(f"No SDXL candidates found under {SDXL}")
     print(f"copied_or_verified_images={len(copied)} -> {PUBLIC_CARP}")
@@ -180,14 +189,70 @@ def make_captions() -> None:
 
 def render_visual() -> None:
     VISUAL.parent.mkdir(parents=True, exist_ok=True)
+    total_frames = int(TOTAL_SEC * 30)
+    seq_dir = VISUAL.parent / "carpenter_visual_v007_sequence"
+    seq_dir.mkdir(parents=True, exist_ok=True)
+
+    def frame_file(frame: int) -> Path:
+        return seq_dir / f"element-{frame:05d}.jpeg"
+
+    def render_range(start: int, end: int) -> None:
+        tmp_dir = seq_dir.parent / f"carpenter_visual_v007_sequence_tmp_{start:05d}_{end:05d}"
+        if tmp_dir.exists():
+            shutil.rmtree(tmp_dir)
+        run([
+            NPX, "remotion", "render", "src/carpenter_index.tsx", "CarpenterPremium", tmp_dir,
+            "--frames", f"{start}-{end}",
+            "--sequence",
+            "--image-format", "jpeg",
+            "--jpeg-quality", "95",
+            "--concurrency", "1",
+            "--timeout", "600000",
+        ], f"Remotion render CarpenterPremium image sequence frames {start}-{end}", cwd=REMOTION)
+        moved = 0
+        for src in sorted(tmp_dir.glob("element-*.jpeg")):
+            m = re.search(r"element-0*([0-9]+)\.jpeg$", src.name)
+            if not m:
+                raise RuntimeError(f"Unexpected sequence filename: {src.name}")
+            frame = int(m.group(1))
+            dst = frame_file(frame)
+            shutil.move(str(src), dst)
+            moved += 1
+        shutil.rmtree(tmp_dir)
+        expected = end - start + 1
+        if moved != expected:
+            raise RuntimeError(f"Expected {expected} frames for {start}-{end}, moved {moved}")
+
+    chunk = 800
+    cursor = 0
+    while cursor < total_frames:
+        if frame_file(cursor).exists():
+            cursor += 1
+            continue
+        end = min(total_frames - 1, cursor + chunk - 1)
+        while end > cursor and frame_file(end).exists():
+            end -= 1
+        render_range(cursor, end)
+        cursor = end + 1
+
+    missing = [i for i in range(total_frames) if not frame_file(i).exists()]
+    if missing:
+        raise RuntimeError(f"Missing sequence frames: {missing[:10]} total={len(missing)}")
+    joined = VISUAL.with_suffix(".sequence.mp4")
     run([
-        NPX, "remotion", "render", "src/carpenter_index.tsx", "CarpenterPremium", VISUAL,
-        "--codec", "h264",
-        "--crf", "17",
-        "--pixel-format", "yuv420p",
-        "--concurrency", "1",
-        "--timeout", "600000",
-    ], "Remotion render CarpenterPremium", cwd=REMOTION)
+        FFMPEG, "-y",
+        "-framerate", "30",
+        "-start_number", "0",
+        "-i", str(seq_dir / "element-%05d.jpeg"),
+        "-frames:v", str(total_frames),
+        "-c:v", "libx264",
+        "-preset", "slow",
+        "-crf", "17",
+        "-pix_fmt", "yuv420p",
+        "-movflags", "+faststart",
+        joined,
+    ], "encode Remotion image sequence")
+    joined.replace(VISUAL)
 
 
 def make_music(tmp: Path) -> Path:
@@ -304,8 +369,15 @@ def write_rights(generated: list[Path]) -> None:
             selected_item = {
                 "reason": "Selected premium motion-backdrop v006 asset; symbolic reconstruction, no people, no logos, no readable text."
             }
+        if path.is_relative_to(SDXL_HQ_V007):
+            qc_status = "accepted"
+            selected_item = {
+                "reason": "Selected high-quality v007 motion plate; symbolic reconstruction, no people, no logos, no readable text."
+            }
         used_in_cut = path.name in accepted_names
         if path.is_relative_to(SDXL_MOTION):
+            used_in_cut = True
+        if path.is_relative_to(SDXL_HQ_V007):
             used_in_cut = True
         rel_visual = path.relative_to(EPM / "05_visuals")
         assets.append({
@@ -423,7 +495,10 @@ def write_rights(generated: list[Path]) -> None:
         "thumbnail_options": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_options.v005.json",
         "assets": assets,
         "verification_required": [
-            f"image:{path.name}" for path in generated if path.name not in selection_by_name and not path.is_relative_to(SDXL_MOTION)
+            f"image:{path.name}" for path in generated
+            if path.name not in selection_by_name
+            and not path.is_relative_to(SDXL_MOTION)
+            and not path.is_relative_to(SDXL_HQ_V007)
         ],
     }, indent=2, ensure_ascii=False) + "\n", "utf-8")
 
