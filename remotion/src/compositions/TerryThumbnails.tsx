@@ -16,7 +16,7 @@ type ThumbVariant = {
   headline: string;
   kicker: string;
   image?: string;
-  motif: 'gap' | 'frisk' | 'scale' | 'street' | 'phone' | 'dense' | 'cinematic';
+  motif: 'gap' | 'frisk' | 'scale' | 'street' | 'phone' | 'dense' | 'cinematic' | 'codexKeyart';
   accent: 'blue' | 'gold';
 };
 
@@ -75,6 +75,14 @@ export const terryThumbnailVariants: ThumbVariant[] = [
     motif: 'cinematic',
     accent: 'gold',
   },
+  {
+    id: 'thumb08',
+    headline: 'NO WARRANT?',
+    kicker: 'TERRY STOP · 1968 · 8-1',
+    image: 'terry/codex_keyart_background.v008.png',
+    motif: 'codexKeyart',
+    accent: 'gold',
+  },
 ];
 
 const splitHeadline = (headline: string): string[] => {
@@ -85,6 +93,60 @@ const splitHeadline = (headline: string): string[] => {
 };
 
 const Motif: React.FC<{variant: ThumbVariant; accent: string}> = ({variant, accent}) => {
+  if (variant.motif === 'codexKeyart') {
+    return (
+      <svg width="1280" height="720" style={{position: 'absolute', inset: 0}}>
+        <defs>
+          <filter id="keyartGlow" x="-70%" y="-70%" width="240%" height="240%">
+            <feGaussianBlur stdDeviation="10" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+          <linearGradient id="keyartPanel" x1="0" x2="1" y1="0" y2="1">
+            <stop offset="0%" stopColor="#02050d" stopOpacity="0.94" />
+            <stop offset="100%" stopColor="#091322" stopOpacity="0.68" />
+          </linearGradient>
+        </defs>
+        <g opacity="0.92">
+          <rect x="710" y="104" width="434" height="396" fill="url(#keyartPanel)" stroke={GOLD} strokeWidth="2.5" opacity="0.66" />
+          <line x1="710" x2="1144" y1="230" y2="230" stroke={SILVER} strokeWidth="1.5" opacity="0.22" />
+          <line x1="850" x2="850" y1="104" y2="500" stroke={SILVER} strokeWidth="1.5" opacity="0.18" />
+          <line x1="1000" x2="1000" y1="104" y2="500" stroke={SILVER} strokeWidth="1.5" opacity="0.18" />
+        </g>
+
+        <g transform="translate(735 126)" filter="url(#keyartGlow)">
+          {Array.from({length: 9}, (_, i) => (
+            <rect key={i} x={i * 31} y="0" width="22" height="22" fill={i === 8 ? GOLD : BLUE} opacity={i === 8 ? 0.98 : 0.86} />
+          ))}
+          <text x="0" y="72" fill={GOLD} fontFamily={BRAND.font.display} fontSize="54">8-1</text>
+        </g>
+
+        <g transform="translate(720 282)">
+          <rect x="0" y="0" width="364" height="122" rx="4" fill="#010409e8" stroke={GOLD} strokeWidth="4" />
+          <text x="26" y="36" fill={SILVER} fontFamily={BRAND.font.body} fontSize="18" fontWeight="900">LOWER STANDARD</text>
+          <line x1="28" x2="328" y1="72" y2="72" stroke={SILVER} strokeWidth="5" opacity="0.48" />
+          <line x1="28" x2="174" y1="72" y2="72" stroke={GOLD} strokeWidth="10" strokeLinecap="round" />
+          <circle cx="174" cy="72" r="18" fill={GOLD} />
+          <text x="28" y="106" fill={SILVER} fontFamily={BRAND.font.body} fontSize="17">hunch</text>
+          <text x="134" y="106" fill={GOLD} fontFamily={BRAND.font.body} fontSize="17" fontWeight="900">suspicion</text>
+          <text x="282" y="106" fill={SILVER} fontFamily={BRAND.font.body} fontSize="17">proof</text>
+        </g>
+
+        <g transform="translate(626 538)" filter="url(#keyartGlow)">
+          <rect x="0" y="0" width="246" height="66" fill="#02050df2" stroke={SILVER} strokeWidth="1.5" opacity="0.95" />
+          <text x="18" y="48" fill={WHITE} fontFamily={BRAND.font.display} fontSize="52">~12 TRIPS</text>
+        </g>
+
+        <g transform="translate(888 438)">
+          <rect x="0" y="0" width="82" height="126" fill={GOLD} opacity="0.9" />
+          <rect x="-56" y="76" width="188" height="46" fill="#02050de8" />
+          <text x="-40" y="113" fill={GOLD} fontFamily={BRAND.font.display} fontSize="44">GAP</text>
+        </g>
+      </svg>
+    );
+  }
   if (variant.motif === 'cinematic') {
     return (
       <svg width="1280" height="720" style={{position: 'absolute', inset: 0}}>
@@ -262,7 +324,8 @@ export const TerryThumbnail: React.FC<{variantIndex?: number}> = ({variantIndex 
   const variant = terryThumbnailVariants[variantIndex] ?? terryThumbnailVariants[0];
   const accent = variant.accent === 'gold' ? GOLD : BLUE;
   const lines = splitHeadline(variant.headline);
-  const isCinematic = variant.motif === 'cinematic';
+  const isCinematic = variant.motif === 'cinematic' || variant.motif === 'codexKeyart';
+  const isCodexKeyart = variant.motif === 'codexKeyart';
   return (
     <AbsoluteFill style={{backgroundColor: INK, overflow: 'hidden'}}>
       {variant.image ? (
@@ -274,15 +337,15 @@ export const TerryThumbnail: React.FC<{variantIndex?: number}> = ({variantIndex 
             width: '100%',
             height: '100%',
             objectFit: 'cover',
-            transform: 'scale(1.08)',
-            filter: isCinematic ? 'brightness(0.76) contrast(1.34) saturate(1.18)' : 'brightness(0.66) contrast(1.22) saturate(1.04)',
+            transform: isCodexKeyart ? 'scale(1.015)' : 'scale(1.08)',
+            filter: isCodexKeyart ? 'brightness(0.86) contrast(1.2) saturate(1.08)' : isCinematic ? 'brightness(0.76) contrast(1.34) saturate(1.18)' : 'brightness(0.66) contrast(1.22) saturate(1.04)',
           }}
         />
       ) : (
         <AbsoluteFill style={{background: `radial-gradient(90% 74% at 70% 36%, #173d6f 0%, ${NAVY} 34%, ${INK} 82%)`}} />
       )}
-      <AbsoluteFill style={{background: isCinematic ? 'linear-gradient(90deg, #000000f8 0%, #02050bec 45%, #00000036 100%)' : 'linear-gradient(90deg, #000000f4 0%, #02050be8 49%, #00000022 100%)'}} />
-      <AbsoluteFill style={{background: `radial-gradient(54% 68% at 78% 45%, ${accent}${isCinematic ? '55' : '3f'} 0%, #00000000 64%)`}} />
+      <AbsoluteFill style={{background: isCodexKeyart ? 'linear-gradient(90deg, #000000f8 0%, #02050bdc 39%, #00000016 74%, #00000030 100%)' : isCinematic ? 'linear-gradient(90deg, #000000f8 0%, #02050bec 45%, #00000036 100%)' : 'linear-gradient(90deg, #000000f4 0%, #02050be8 49%, #00000022 100%)'}} />
+      <AbsoluteFill style={{background: `radial-gradient(54% 68% at 78% 45%, ${accent}${isCodexKeyart ? '35' : isCinematic ? '55' : '3f'} 0%, #00000000 64%)`}} />
       {isCinematic ? <AbsoluteFill style={{background: 'linear-gradient(180deg, #00000070 0%, #00000000 35%, #00000088 100%)'}} /> : null}
       <Motif variant={variant} accent={accent} />
       <div style={{position: 'absolute', left: 52, top: 48, width: 720}}>

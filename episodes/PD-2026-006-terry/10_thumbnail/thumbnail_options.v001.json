@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-006-terry",
   "revision": "v001",
-  "generated_at": "2026-06-20T13:38:31.893702+00:00",
+  "generated_at": "2026-06-20T13:47:20.466262+00:00",
   "status": "thumbnail_selected_not_published",
   "publish_performed": false,
   "upload_performed": false,
@@ -11,15 +11,16 @@
   "source_visuals": [
     "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S003/PD-2026-006-terry-S003-IMG-001.v001.png",
     "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S004/PD-2026-006-terry-S004-IMG-001.v001.png",
-    "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S018/PD-2026-006-terry-S018-IMG-001.v001.png"
+    "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S018/PD-2026-006-terry-S018-IMG-001.v001.png",
+    "artifact://episodes/PD-2026-006-terry/10_thumbnail/codex_keyart_background.v008.png"
   ],
   "recommended_shortlist": [
+    "thumbnail_option_08.v001.png",
     "thumbnail_option_07.v001.png",
-    "thumbnail_option_06.v001.png",
-    "thumbnail_option_01.v001.png"
+    "thumbnail_option_06.v001.png"
   ],
-  "selected": "thumbnail_option_07.v001.png",
-  "selection_reason": "Owner asked to make the thumbnail image more beautiful with Codex. Option 07 keeps the denser Terry-specific information from option 06 while improving cinematic depth, lighting, hierarchy, and small-size readability.",
+  "selected": "thumbnail_option_08.v001.png",
+  "selection_reason": "Owner asked for a more beautiful and more detailed Codex-generated image. Option 08 uses the recovered Codex-generated key-art background and keeps exact project-rendered text and legal motifs for reliability.",
   "options": [
     {
       "id": "thumb01",
@@ -75,13 +76,21 @@
       "headline": "NO WARRANT?",
       "kicker": "TERRY STOP - 1968 - 8-1",
       "sha256": "0adde85c93ccd5ca83eea695531b14a0433d985ccd5e22bfa9ba49a3601f24d6",
-      "assessment": "Selected. Codex-polished cinematic variant: keeps the dense Terry-specific cues from option 06, but improves depth, lighting, hierarchy, and small-size readability.",
+      "assessment": "Selected. Codex-polished cinematic variant: keeps the dense Terry-specific cues from option 06, but improves depth, lighting, hierarchy, and small-size readability."
+    },
+    {
+      "id": "thumb08",
+      "file": "episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_08.v001.png",
+      "headline": "NO WARRANT?",
+      "kicker": "TERRY STOP - 1968 - 8-1",
+      "sha256": "2410160486162ad7e2b0f25c8e6f92dbcba19177a1618622e9fb28f366a4acc0",
+      "assessment": "Selected. Uses the recovered Codex-generated detailed key-art background with richer storefront texture, wet-pavement reflections, blue path light, and cleaner documentary hierarchy.",
       "dimensions": "1280x720"
     }
   ],
   "contact_sheet": {
     "file": "episodes/PD-2026-006-terry/10_thumbnail/thumbnail_contact_sheet.v001.jpg",
-    "sha256": "84e46b5a50a5b61ecbb29d0dfaa6001f458d506da4968f675583da6c45c03f09"
+    "sha256": "b558384d27df8748b7e16e95e4e234ec74d14b94829ce4077d72adf37b9e492a"
   },
   "title_candidates": [
     "A Cop Can Search You Without a Warrant - Here's the Catch",
@@ -90,5 +99,13 @@
     "Suspicion Is Not Proof - But It Can Still Get You Searched",
     "Terry v. Ohio: The Rule Behind Every Street Stop"
   ],
-  "recommended_title": "A Cop Can Search You Without a Warrant - Here's the Catch"
+  "recommended_title": "A Cop Can Search You Without a Warrant - Here's the Catch",
+  "supporting_assets": [
+    {
+      "file": "episodes/PD-2026-006-terry/10_thumbnail/codex_keyart_background.v008.png",
+      "sha256": "fd6f3e4300fe36a37632b11fe2f4453a7804a8b080c707a07cde2930a8337aa4",
+      "dimensions": "1792x1024",
+      "generator": "Codex built-in image generation, recovered from session image_generation result"
+    }
+  ]
 }

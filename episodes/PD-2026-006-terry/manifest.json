@@ -107,7 +107,7 @@
       "artifact_type": "rights_manifest",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json",
-      "checksum": "sha256:ebaed3dafbbdfe94996cff022a129fec1fae597d416e5a588577ea3bc3d4ffcb",
+      "checksum": "sha256:2352730266114a8585cbf14254ca6090535f8c9f5a3aacdeb87d92980967983f",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -237,7 +237,7 @@
       "artifact_type": "thumbnail_component",
       "revision": "v001",
       "uri": "artifact://remotion/src/compositions/TerryThumbnails.tsx",
-      "checksum": "sha256:95c26fafab61305ca9d53ccd6adeff021cb2c178d6fb507aaf66991a15e4e531",
+      "checksum": "sha256:e25008d42e370f2b276008f4e3eea09bb3e5ade047c05cd1e7b1533b3790fcfa",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -247,7 +247,7 @@
       "artifact_type": "thumbnail_build_script",
       "revision": "v001",
       "uri": "artifact://scripts/build_terry_thumbnails_v001.py",
-      "checksum": "sha256:90c89d40eca89cc4a5b20bc3d42f310bd5b7b83ec4b1324885248d39b7e34f2d",
+      "checksum": "sha256:7a3012cc303b57e1643dba4010fc9fa1a3c23739be60e60ef9cc945eb5c06ac3",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -257,7 +257,7 @@
       "artifact_type": "thumbnail_options",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_options.v001.json",
-      "checksum": "sha256:d3d637e5108f7bdc27f4f134d16916a9e48abe712cded8b06fd054e72095b548",
+      "checksum": "sha256:0af23d8f3cee2c49c96254f0f84e28dac76883b026ed1546424a3c9482cf3197",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -267,7 +267,7 @@
       "artifact_type": "thumbnail_contact_sheet",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_contact_sheet.v001.jpg",
-      "checksum": "sha256:84e46b5a50a5b61ecbb29d0dfaa6001f458d506da4968f675583da6c45c03f09",
+      "checksum": "sha256:b558384d27df8748b7e16e95e4e234ec74d14b94829ce4077d72adf37b9e492a",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -338,6 +338,26 @@
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_07.v001.png",
       "checksum": "sha256:0adde85c93ccd5ca83eea695531b14a0433d985ccd5e22bfa9ba49a3601f24d6",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-08",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_08.v001.png",
+      "checksum": "sha256:2410160486162ad7e2b0f25c8e6f92dbcba19177a1618622e9fb28f366a4acc0",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-bg-008",
+      "artifact_type": "thumbnail_background",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/codex_keyart_background.v008.png",
+      "checksum": "sha256:fd6f3e4300fe36a37632b11fe2f4453a7804a8b080c707a07cde2930a8337aa4",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -417,7 +437,7 @@
       "artifact_type": "youtube_metadata",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_meta.v001.json",
-      "checksum": "sha256:83bd929bbcb42dbe9dda547e2428ecde060195832a6bcab3b2949560b3b90429",
+      "checksum": "sha256:88799e89b5f878666c744ec1cd252917fcdc8f081056733d1d7648b33f374378",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -474,9 +494,10 @@
     "Title/thumbnail selected under APR-0003: recommended title + thumbnail_option_01.v001.png.",
     "Publish remains blocked until separate publish approval; YouTube synthetic-content disclosure required.",
     "Thumbnail selection revised after owner requested a denser option: thumbnail_option_06.v001.png selected; upload/publish still not approved.",
-    "Thumbnail selection revised again after owner requested a more beautiful Codex-made image: thumbnail_option_07.v001.png selected; upload/publish still not approved."
+    "Thumbnail selection revised again after owner requested a more beautiful Codex-made image: thumbnail_option_07.v001.png selected; upload/publish still not approved.",
+    "Thumbnail selection revised again after owner requested a more beautiful detailed Codex-generated image: thumbnail_option_08.v001.png selected; upload/publish still not approved."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T23:10:00+09:00"
+  "updated_at": "2026-06-20T23:35:00+09:00"
 }

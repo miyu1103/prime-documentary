@@ -73,6 +73,12 @@ VARIANTS = [
         "kicker": "TERRY STOP - 1968 - 8-1",
         "assessment": "Selected. Codex-polished cinematic variant: keeps the dense Terry-specific cues from option 06, but improves depth, lighting, hierarchy, and small-size readability.",
     },
+    {
+        "id": "thumb08",
+        "headline": "NO WARRANT?",
+        "kicker": "TERRY STOP - 1968 - 8-1",
+        "assessment": "Selected. Codex-generated detailed key-art background with richer storefront texture, wet-pavement reflections, blue path light, and cleaner documentary hierarchy.",
+    },
 ]
 
 
@@ -101,6 +107,9 @@ def prepare_public_images() -> None:
         if not dst.exists() or dst.stat().st_size != src.stat().st_size:
             shutil.copy2(src, dst)
         copied += 1
+    keyart = OUT_DIR / "codex_keyart_background.v008.png"
+    if keyart.exists():
+        shutil.copy2(keyart, PUBLIC_TERRY / keyart.name)
     if copied < 3:
         raise FileNotFoundError(f"Expected approved Terry images under {SELECTED}, found {copied}")
     print(f"copied_or_verified_images={copied} -> {PUBLIC_TERRY}")
@@ -169,14 +178,15 @@ def write_options(options: list[dict], contact_hash: str) -> None:
             "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S003/PD-2026-006-terry-S003-IMG-001.v001.png",
             "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S004/PD-2026-006-terry-S004-IMG-001.v001.png",
             "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S018/PD-2026-006-terry-S018-IMG-001.v001.png",
+            "artifact://episodes/PD-2026-006-terry/10_thumbnail/codex_keyart_background.v008.png",
         ],
         "recommended_shortlist": [
+            "thumbnail_option_08.v001.png",
             "thumbnail_option_07.v001.png",
             "thumbnail_option_06.v001.png",
-            "thumbnail_option_01.v001.png",
         ],
-        "selected": "thumbnail_option_07.v001.png",
-        "selection_reason": "Owner asked to make the thumbnail image more beautiful with Codex. Option 07 keeps the denser Terry-specific information from option 06 while improving cinematic depth, lighting, hierarchy, and small-size readability.",
+        "selected": "thumbnail_option_08.v001.png",
+        "selection_reason": "Owner asked for a more beautiful and more detailed Codex-generated image. Option 08 uses a Codex-generated key-art background and keeps exact project-rendered text and legal motifs for reliability.",
         "options": options,
         "contact_sheet": {
             "file": f"episodes/{EP}/10_thumbnail/{CONTACT.name}",
