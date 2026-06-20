@@ -15,8 +15,21 @@ Usage:
   .venv/Scripts/python.exe scripts/import_to_remotion.py 11 --write
 """
 from __future__ import annotations
-import sys, os, json, glob, shutil, tempfile, re
+import sys, os, json, glob, shutil, tempfile, re, subprocess
 from typing import Any
+
+
+def probe_seconds(path: str | None) -> float | None:
+    """Clip length via ffprobe, so RoughCut can play a short clip once (slowed) instead of looping."""
+    if not path or not os.path.exists(path):
+        return None
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", path],
+            capture_output=True, text=True, timeout=30)
+        return round(float(out.stdout.strip()), 2)
+    except Exception:
+        return None
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EPDIR = os.path.join(ROOT, "episodes")
@@ -116,6 +129,7 @@ def main() -> int:
     bound = 0
     for sh in shotlist["shots"]:
         src = None
+        clip_seconds: float | None = None
         if sh["suggested_asset_type"] != "motion_graphic":
             a = pick_asset(sh, pool, used)
             if a:
@@ -124,7 +138,9 @@ def main() -> int:
                 src = f"{slug}/{fname}"
                 copies.append((a["file"], os.path.join(dest_dir, fname)))
                 bound += 1
-        shots_out.append({
+                if a.get("asset_type") == "video":
+                    clip_seconds = probe_seconds(resolve_file(a["file"]))
+        shot_out: dict[str, Any] = {
             "spanId": sh["span_id"],
             "chapterId": sh.get("chapter_id"),
             "seconds": sh["estimated_seconds"],
@@ -133,7 +149,10 @@ def main() -> int:
             "src": src,
             "telop": sh.get("on_screen_text", []),
             "priority": sh["priority"],
-        })
+        }
+        if clip_seconds:
+            shot_out["clipSeconds"] = clip_seconds
+        shots_out.append(shot_out)
 
     data = {"episodeId": ep_id, "title": title, "fps": 30,
             "narrationSrc": None, "bgmSrc": None, "shots": shots_out}

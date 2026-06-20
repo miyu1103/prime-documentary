@@ -31,6 +31,7 @@ export type RoughShot = {
   assetType: 'stock_video' | 'stock_image' | 'ai_image' | 'motion_graphic' | 'archival_pd';
   motion: 'video_native' | 'ken_burns' | 'parallax' | 'graphic_anim' | 'static';
   src: string | null; // staticFile path under remotion/public, or null -> branded card
+  clipSeconds?: number; // real length of a video clip (so we slow it to fit instead of looping)
   telop: string[];
   priority: 'A' | 'B' | 'C';
 };
@@ -73,15 +74,33 @@ const MovingImage: React.FC<{src: string; motion: RoughShot['motion']}> = ({src,
   );
 };
 
-/** A playing video clip with a touch of extra push-in over its own motion. */
-const MovingVideo: React.FC<{src: string}> = ({src}) => {
+/**
+ * A playing video clip with a touch of extra push-in. If we know the clip length, we play it
+ * ONCE, slowed (or sped) to fit the shot — smooth, no loop jumps ('trembling'). If the clip is
+ * far too short to stretch, we fall back to a gentle loop. Unknown length -> loop.
+ */
+const MovingVideo: React.FC<{src: string; clipSeconds?: number; shotSeconds: number}> = ({
+  src,
+  clipSeconds,
+  shotSeconds,
+}) => {
   const f = useCurrentFrame();
   const {durationInFrames} = useVideoConfig();
   const scale = interpolate(f, [0, durationInFrames], [1.02, 1.09]);
+  const ideal = clipSeconds && clipSeconds > 0 ? clipSeconds / shotSeconds : 1;
+  const rate = Math.min(1.5, Math.max(0.2, ideal));
+  // Single pass only when the clip (at this rate) actually covers the shot; else loop gently.
+  const covers = !!clipSeconds && clipSeconds / rate >= shotSeconds - 0.1;
   return (
     <AbsoluteFill style={{overflow: 'hidden', backgroundColor: BRAND.color.ink}}>
       <AbsoluteFill style={{transform: `scale(${scale})`, transformOrigin: '50% 50%'}}>
-        <Video src={staticFile(src)} muted loop style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+        <Video
+          src={staticFile(src)}
+          muted
+          loop={!covers}
+          playbackRate={rate}
+          style={{width: '100%', height: '100%', objectFit: 'cover'}}
+        />
       </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -169,7 +188,7 @@ const Shot: React.FC<{shot: RoughShot}> = ({shot}) => {
     <AbsoluteFill style={{backgroundColor: BRAND.color.ink}}>
       {hasVideo ? (
         <>
-          <MovingVideo src={shot.src as string} />
+          <MovingVideo src={shot.src as string} clipSeconds={shot.clipSeconds} shotSeconds={shot.seconds} />
           {grade}
           <Vignette />
           <Grain opacity={0.05} />

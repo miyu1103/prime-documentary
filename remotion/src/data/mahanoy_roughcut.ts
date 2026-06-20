@@ -19,7 +19,8 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "telop": [
         "Can your school punish your weekend post?"
       ],
-      "priority": "A"
+      "priority": "A",
+      "clipSeconds": 10.96
     },
     {
       "spanId": "SPN-0002",
@@ -65,7 +66,8 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "telop": [
         "[caption censored]"
       ],
-      "priority": "B"
+      "priority": "B",
+      "clipSeconds": 6.3
     },
     {
       "spanId": "SPN-0006",
