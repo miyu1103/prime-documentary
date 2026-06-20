@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-007-riley",
+  "revision": "v002",
+  "generated_at": "2026-06-20T18:45:00+09:00",
+  "status": "visual_proxy_firstcut_ready",
+  "composition": {
+    "entry": "remotion/src/riley_index.tsx",
+    "composition_id": "RileyPremium",
+    "source": "remotion/src/compositions/RileyPremium.tsx",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "duration_seconds": 646,
+    "duration_frames": 19380
+  },
+  "render": {
+    "kind": "first_cut_visual_proxy",
+    "file": "H:/pd-media/episodes/PD-2026-007-riley/08_edit/renders/PD-2026-007-riley-firstcut-visual-proxy.v002.mp4",
+    "content_hash": "sha256:68323a1543bda9cad09e145ec4266f6a0a7642313a37de8618d89234ad581dd0",
+    "codec": "h264",
+    "crf": 18,
+    "pixel_format": "yuv420p",
+    "audio_status": "placeholder_silent_or_empty_track_from_remotion_render",
+    "narration_status": "blocked_until_explicit_paid_elevenlabs_approval",
+    "music_status": "not_added",
+    "synthetic_content_disclosure_required": true
+  },
+  "inputs": {
+    "locked_script": "episodes/PD-2026-007-riley/03_script/script.en.v001.md",
+    "annotated_script": "episodes/PD-2026-007-riley/03_script/script.annotated.v001.json",
+    "scene_plan": "episodes/PD-2026-007-riley/04_scenes/scene_plan.v001.json",
+    "rights_manifest": "episodes/PD-2026-007-riley/09_package/rights_manifest.v001.json"
+  },
+  "selected_visual_assets": [
+    "PD-2026-007-S001-IMG-001",
+    "PD-2026-007-S002-IMG-001",
+    "PD-2026-007-S003-IMG-001",
+    "PD-2026-007-S004-IMG-001",
+    "PD-2026-007-S005-IMG-001",
+    "PD-2026-007-S007-IMG-001",
+    "PD-2026-007-S010-IMG-001",
+    "PD-2026-007-S011-IMG-001",
+    "PD-2026-007-S012-IMG-001",
+    "PD-2026-007-S014-IMG-001",
+    "PD-2026-007-S015-IMG-001",
+    "PD-2026-007-S018-IMG-001",
+    "PD-2026-007-S023-IMG-001",
+    "PD-2026-007-S025-IMG-001",
+    "PD-2026-007-S027-IMG-001"
+  ],
+  "qc": {
+    "ffprobe_duration_seconds": 646.058667,
+    "ffprobe_frames": 19380,
+    "ffprobe_resolution": "1920x1080",
+    "representative_frames": [
+      "H:/pd-media/episodes/PD-2026-007-riley/08_edit/qc_frames_v002/riley_v002_000010.png",
+      "H:/pd-media/episodes/PD-2026-007-riley/08_edit/qc_frames_v002/riley_v002_000120.png",
+      "H:/pd-media/episodes/PD-2026-007-riley/08_edit/qc_frames_v002/riley_v002_000210.png",
+      "H:/pd-media/episodes/PD-2026-007-riley/08_edit/qc_frames_v002/riley_v002_000435.png",
+      "H:/pd-media/episodes/PD-2026-007-riley/08_edit/qc_frames_v002/riley_v002_000550.png",
+      "H:/pd-media/episodes/PD-2026-007-riley/08_edit/qc_frames_v002/riley_v002_000730.png",
+      "H:/pd-media/episodes/PD-2026-007-riley/08_edit/qc_frames_v002/riley_v002_000915.png",
+      "H:/pd-media/episodes/PD-2026-007-riley/08_edit/qc_frames_v002/riley_v002_001025.png"
+    ],
+    "black_frame_spotcheck": "pass",
+    "onscreen_accuracy_spotcheck": "pass",
+    "real_person_likeness_spotcheck": "pass"
+  },
+  "gate": {
+    "current_gate": "first_cut_visual_proxy_review",
+    "must_stop_before": [
+      "paid_elevenlabs_narration",
+      "publish_or_upload",
+      "title_thumbnail_finalization"
+    ],
+    "owner_approval_required_for_next_paid_step": true
+  }
+}

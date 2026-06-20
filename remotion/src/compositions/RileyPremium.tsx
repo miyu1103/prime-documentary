@@ -23,6 +23,7 @@ const SILVER = BRAND.color.silver;
 
 type Mode =
   | 'hook'
+  | 'still'
   | 'phone'
   | 'map'
   | 'evidence'
@@ -56,32 +57,32 @@ type Scene = {
 
 const scenes: Scene[] = [
   {id: 'S001', start: 0, dur: 28, mode: 'hook', title: 'Can they search your phone?', kicker: 'HOOK', image: 'riley/PD-2026-007-S001-IMG-001.v001.png', text: ['Can they search your phone?'], recon: true},
-  {id: 'S002', start: 28, dur: 44, mode: 'phone', title: "A phone is not an object. It's a window.", kicker: 'OPENING', text: ['photos', 'messages', 'maps', 'searches', 'cloud']},
-  {id: 'S003', start: 72, dur: 22, mode: 'map', title: 'San Diego - 2009', kicker: 'ACT I', citation: 'CLM-0006', recon: true},
-  {id: 'S004', start: 94, dur: 22, mode: 'evidence', title: 'Phone taken from pocket', subtitle: 'Car search. Firearms. Arrest.', kicker: 'ACT I', citation: 'CLM-0006', recon: true},
-  {id: 'S005', start: 116, dur: 32, mode: 'stamp', title: 'Searched twice. No warrant.', kicker: 'ACT I', citation: 'CLM-0006', text: ['PHONE SEARCH', 'NO WARRANT'], recon: true},
+  {id: 'S002', start: 28, dur: 44, mode: 'still', title: "A phone is not an object. It's a window.", kicker: 'OPENING', image: 'riley/PD-2026-007-S002-IMG-001.v001.png', text: ['photos', 'messages', 'maps', 'searches', 'cloud']},
+  {id: 'S003', start: 72, dur: 22, mode: 'still', title: 'San Diego - 2009', kicker: 'ACT I', image: 'riley/PD-2026-007-S003-IMG-001.v001.png', citation: 'CLM-0006', recon: true},
+  {id: 'S004', start: 94, dur: 22, mode: 'still', title: 'Phone taken from pocket', subtitle: 'Car search. Firearms. Arrest.', kicker: 'ACT I', image: 'riley/PD-2026-007-S004-IMG-001.v001.png', citation: 'CLM-0006', recon: true},
+  {id: 'S005', start: 116, dur: 32, mode: 'stamp', title: 'Searched twice. No warrant.', kicker: 'ACT I', image: 'riley/PD-2026-007-S005-IMG-001.v001.png', citation: 'CLM-0006', text: ['PHONE SEARCH', 'NO WARRANT'], recon: true},
   {id: 'S006', start: 148, dur: 18, mode: 'type', title: 'Traffic stop -> shooting case', kicker: 'ACT I'},
-  {id: 'S007', start: 166, dur: 28, mode: 'split', title: 'Riley v. California + United States v. Wurie', kicker: 'ACT I', citation: 'CLM-0001 / CLM-0007', text: ['Riley', 'Wurie']},
+  {id: 'S007', start: 166, dur: 28, mode: 'still', title: 'Riley v. California + United States v. Wurie', kicker: 'ACT I', image: 'riley/PD-2026-007-S007-IMG-001.v001.png', citation: 'CLM-0001 / CLM-0007', text: ['Riley', 'Wurie']},
   {id: 'S008', start: 194, dur: 12, mode: 'type', title: 'Search incident to arrest', kicker: 'ACT II'},
   {id: 'S009', start: 206, dur: 32, mode: 'logic', title: '1) Officer safety  2) Preserve evidence', kicker: 'ACT II', text: ['officer safety', 'preserve evidence']},
-  {id: 'S010', start: 238, dur: 23, mode: 'wallet', title: 'If a wallet, why not a phone?', kicker: 'ACT II', text: ['wallet', 'phone']},
-  {id: 'S011', start: 261, dur: 30, mode: 'wallet', title: 'Wallet vs. smartphone', kicker: 'ACT II', text: ['wallet', 'smartphone']},
-  {id: 'S012', start: 291, dur: 24, mode: 'cloud', title: 'Half in your pocket, half in the cloud', kicker: 'ACT II'},
+  {id: 'S010', start: 238, dur: 23, mode: 'still', title: 'If a wallet, why not a phone?', kicker: 'ACT II', image: 'riley/PD-2026-007-S010-IMG-001.v001.png', text: ['wallet', 'phone']},
+  {id: 'S011', start: 261, dur: 30, mode: 'still', title: 'Wallet vs. smartphone', kicker: 'ACT II', image: 'riley/PD-2026-007-S011-IMG-001.v001.png', text: ['wallet', 'smartphone']},
+  {id: 'S012', start: 291, dur: 24, mode: 'still', title: 'Half in your pocket, half in the cloud', kicker: 'ACT II', image: 'riley/PD-2026-007-S012-IMG-001.v001.png'},
   {id: 'S013', start: 315, dur: 26, mode: 'secure', title: 'Data is not a weapon', subtitle: 'Secure the device', kicker: 'ACT II'},
-  {id: 'S014', start: 341, dur: 26, mode: 'court', title: '2014 / 9-0 result', subtitle: 'Riley v. California, 573 U.S. 373', kicker: 'ACT III', citation: 'CLM-0002'},
-  {id: 'S015', start: 367, dur: 25, mode: 'quote', title: '"the privacies of life"', kicker: 'ACT III', citation: 'CLM-0003'},
+  {id: 'S014', start: 341, dur: 26, mode: 'still', title: '2014 / 9-0 result', subtitle: 'Riley v. California, 573 U.S. 373', kicker: 'ACT III', image: 'riley/PD-2026-007-S014-IMG-001.v001.png', citation: 'CLM-0002'},
+  {id: 'S015', start: 367, dur: 25, mode: 'quote', title: '"the privacies of life"', kicker: 'ACT III', image: 'riley/PD-2026-007-S015-IMG-001.v001.png', citation: 'CLM-0003'},
   {id: 'S016', start: 392, dur: 24, mode: 'logic', title: 'More revealing than a house', kicker: 'ACT III', text: ['home', 'phone']},
   {id: 'S017', start: 416, dur: 20, mode: 'quote', title: '"Get a warrant."', kicker: 'ACT III', citation: 'CLM-0001'},
-  {id: 'S018', start: 436, dur: 27, mode: 'booth', title: 'Katz v. United States (1967): people, not places', kicker: 'ACT III'},
+  {id: 'S018', start: 436, dur: 27, mode: 'still', title: 'Katz v. United States (1967): people, not places', kicker: 'ACT III', image: 'riley/PD-2026-007-S018-IMG-001.v001.png'},
   {id: 'S019', start: 463, dur: 18, mode: 'phone', title: 'One rule for the phone category', kicker: 'ACT III'},
   {id: 'S020', start: 481, dur: 10, mode: 'type', title: 'Exception: true emergencies', kicker: 'ACT III'},
   {id: 'S021', start: 491, dur: 26, mode: 'secure', title: 'Contents protected', subtitle: 'Warrant, consent, emergency', kicker: 'ACT III'},
   {id: 'S022', start: 517, dur: 28, mode: 'apps', title: 'A phone can reveal a life', kicker: 'ACT IV', text: ['calendar', 'photos', 'banking', 'health', 'messages', 'search']},
-  {id: 'S023', start: 545, dur: 24, mode: 'trail', title: 'Automatic records', kicker: 'ACT IV'},
+  {id: 'S023', start: 545, dur: 24, mode: 'still', title: 'Automatic records', kicker: 'ACT IV', image: 'riley/PD-2026-007-S023-IMG-001.v001.png'},
   {id: 'S024', start: 569, dur: 12, mode: 'split', title: 'Inside the phone vs. the trail it leaves', kicker: 'ACT IV', text: ['inside', 'trail']},
-  {id: 'S025', start: 581, dur: 22, mode: 'quote', title: 'For that, police need a warrant.', kicker: 'ACT IV'},
+  {id: 'S025', start: 581, dur: 22, mode: 'quote', title: 'For that, police need a warrant.', kicker: 'ACT IV', image: 'riley/PD-2026-007-S025-IMG-001.v001.png'},
   {id: 'S026', start: 603, dur: 16, mode: 'split', title: 'Chosen contents | Automatic records', kicker: 'ENDING', text: ['chosen contents', 'automatic records']},
-  {id: 'S027', start: 619, dur: 21, mode: 'trail', title: "Next: your phone is tracking you", kicker: 'NEXT'},
+  {id: 'S027', start: 619, dur: 21, mode: 'still', title: "Next: your phone is tracking you", kicker: 'NEXT', image: 'riley/PD-2026-007-S027-IMG-001.v001.png'},
   {id: 'S028', start: 640, dur: 6, mode: 'end', title: 'Prime Documentary', subtitle: 'Subscribe', kicker: 'END'},
 ];
 
