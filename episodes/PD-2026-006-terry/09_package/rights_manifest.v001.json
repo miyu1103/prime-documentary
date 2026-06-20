@@ -3,7 +3,7 @@
   "episode_id": "PD-2026-006-terry",
   "revision": "v001",
   "created_at": "2026-06-20T15:30:00+09:00",
-  "status": "first_cut_review_ready",
+  "status": "package_ready_no_publish",
   "items": [
     {
       "asset_id": "PD-2026-006-terry-S003-IMG-001",
@@ -175,6 +175,54 @@
       "needs_verification": false,
       "ai_disclosure_required": true,
       "synthetic_content_disclosure_required": true
+    },
+    {
+      "asset_id": "PD-2026-006-terry-VO-001",
+      "type": "narration_audio",
+      "scene": "all",
+      "description": "ElevenLabs channel voice narration master generated after owner approval APR-0002.",
+      "file": "artifact://episodes/PD-2026-006-terry/06_voice/master/vc_master_v001.mp3",
+      "producer": "ElevenLabs",
+      "license": "ElevenLabs commercial plan - owner-approved generation",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:dd004422a072f8ca7a98cabdbb74c612dc2574869985ed5a0c04b1a335116725",
+      "needs_verification": false,
+      "approval_id": "APR-0002",
+      "estimated_cost_usd": 2.75
+    },
+    {
+      "asset_id": "PD-2026-006-terry-VO-SLOWED-001",
+      "type": "narration_audio",
+      "scene": "all",
+      "description": "Slowed ElevenLabs narration conformed to the 678s Terry final timeline.",
+      "file": "artifact://episodes/PD-2026-006-terry/06_voice/master/vc_master_v001_slowed_672s.mp3",
+      "producer": "FFmpeg atempo from ElevenLabs master",
+      "license": "Derived from owner-approved ElevenLabs narration master",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:87ef50d5475e121b0d3d016474f536f73310a6f2402e1d45a9f882d2a88b6970",
+      "needs_verification": false,
+      "approval_id": "APR-0002"
+    },
+    {
+      "asset_id": "PD-2026-006-terry-RENDER-FINAL-001",
+      "type": "render",
+      "scene": "all",
+      "description": "Local final package render, not uploaded or published. Includes ElevenLabs narration, library music, approved symbolic visuals, and burned captions.",
+      "file": "artifact://episodes/PD-2026-006-terry/08_edit/terry_final_v001.mp4",
+      "producer": "Remotion + FFmpeg",
+      "license": "Composite final render from rights-tracked inputs",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:938897c59113adb46d501b81c379ab692dc918fd8c931a9f4743cb9a8d30343e",
+      "needs_verification": false,
+      "ai_disclosure_required": true,
+      "synthetic_content_disclosure_required": true,
+      "external_upload": false,
+      "publish_ready": false,
+      "approval_ids": [
+        "APR-0001",
+        "APR-0002",
+        "APR-0003"
+      ]
     }
   ],
   "constraints": [
@@ -184,5 +232,5 @@
     "Every additional AI image must be added here before first-cut use",
     "First-cut proxy uses local draft narration; final narration requires owner approval for ElevenLabs paid generation"
   ],
-  "updated_at": "2026-06-20T19:20:00+09:00"
+  "updated_at": "2026-06-20T20:15:00+09:00"
 }

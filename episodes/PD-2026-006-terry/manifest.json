@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-006",
   "slug": "terry",
   "title_working": "A Cop Can Search You Without a Warrant \u2014 Here's the Catch",
-  "state": "edit_review",
+  "state": "package_ready",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -32,7 +32,14 @@
     "review_proxy_render": "v001",
     "thumbnail_component": "v001",
     "thumbnail_build_script": "v001",
-    "thumbnail_options": "v001"
+    "thumbnail_options": "v001",
+    "narration_index": "v001",
+    "narration_generation_script": "v001",
+    "final_build_script": "v001",
+    "captions_final": "v001",
+    "final_qc": "v001",
+    "youtube_meta": "v001",
+    "final_render": "v001"
   },
   "artifacts": [
     {
@@ -100,7 +107,7 @@
       "artifact_type": "rights_manifest",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json",
-      "checksum": "sha256:2f22e12dc3f536458b19956551596c93b33606b6f7c1a02324a51fb709026aea",
+      "checksum": "sha256:9e51b615182a1275769823a9f9f1feedc0b101d335414cc227e8d86c185ad062",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -314,18 +321,110 @@
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0002",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0002.json",
+      "checksum": "sha256:fe16324650a7908b5f1cae4348d141c679157987103bd89b162f815defec23fe",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0003",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0003.json",
+      "checksum": "sha256:d41028303fd92db37ee9404d4cfd7730e6c4aa149238150b313791d6ba862db8",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-narration-generation-script",
+      "artifact_type": "narration_generation_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/gen_narration_terry.py",
+      "checksum": "sha256:e2ce414c3c367ba0ff54df3d5c246267b89a63caa27d8152012c0ac88403e441",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-build-script",
+      "artifact_type": "final_build_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/build_terry_final_v001.py",
+      "checksum": "sha256:88a4ef888dc51bf89cfb9414b2f9ceedcdf1eb8f96a4f9ec69ebd4a02027b025",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-narration-index",
+      "artifact_type": "narration_index",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/06_audio/narration_index.v001.json",
+      "checksum": "sha256:42d220ce05ee784546207887d3a4f36d3e08848f8a88d409b9a7c59d7851bcae",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-captions-final",
+      "artifact_type": "captions",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/captions.final.v001.srt",
+      "checksum": "sha256:16f341f1b4e1edfe2476ea401a218f1417c27a4ccffc54109bd3e75c1e74b5c9",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-qc",
+      "artifact_type": "qc_report",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/renders/final.v001.qc.json",
+      "checksum": "sha256:27d4b133162778235be3c9245bdc5efe312257004ba5382ee3296b53a2b2b9a2",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-youtube-meta",
+      "artifact_type": "youtube_metadata",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_meta.v001.json",
+      "checksum": "sha256:2493ef55299891c1ef4447b4665abee363e1ad16144da6a1d1e211100f880cc5",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-render",
+      "artifact_type": "final_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/terry_final_v001.mp4",
+      "checksum": "sha256:938897c59113adb46d501b81c379ab692dc918fd8c931a9f4743cb9a8d30343e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
     }
   ],
   "approvals": [
-    "APR-0001"
+    "APR-0001",
+    "APR-0002",
+    "APR-0003"
   ],
   "costs": {
     "estimated": {
-      "amount": 0,
+      "amount": 2.75,
       "currency": "USD"
     },
     "actual": {
-      "amount": 0,
+      "amount": 2.75,
       "currency": "USD"
     },
     "soft_limit": {
@@ -350,9 +449,12 @@
     "First-cut review proxy rendered locally with Remotion + FFmpeg; no paid API, external upload, or publish performed.",
     "Review proxy uses local Windows SAPI draft narration; ElevenLabs master requires explicit owner approval and will require caption re-alignment.",
     "QC notes: duration/streams pass; blackdetect flags the dark endcard background and freezedetect flags short low-motion segments, both documented for v002 polish.",
-    "Thumbnail gate package rendered: five Remotion options plus title candidates; no upload/publish performed, owner selection still required."
+    "Thumbnail gate package rendered: five Remotion options plus title candidates; no upload/publish performed, owner selection still required.",
+    "Package-ready local final render created with ElevenLabs narration under APR-0002; no upload or publish performed.",
+    "Title/thumbnail selected under APR-0003: recommended title + thumbnail_option_01.v001.png.",
+    "Publish remains blocked until separate publish approval; YouTube synthetic-content disclosure required."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T19:20:00+09:00"
+  "updated_at": "2026-06-20T20:15:00+09:00"
 }
