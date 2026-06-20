@@ -43,6 +43,7 @@ if not FFMPEG.exists():
     FFMPEG = Path("ffmpeg")
 if not FFPROBE.exists():
     FFPROBE = Path("ffprobe")
+NPX = shutil.which("npx.cmd") or shutil.which("npx") or "npx"
 
 
 def run(cmd: list[str | os.PathLike[str]], desc: str, cwd: Path | None = None) -> None:
@@ -170,7 +171,7 @@ def make_captions() -> None:
 def render_visual() -> None:
     VISUAL.parent.mkdir(parents=True, exist_ok=True)
     run([
-        "npx", "remotion", "render", "src/carpenter_index.tsx", "CarpenterPremium", VISUAL,
+        NPX, "remotion", "render", "src/carpenter_index.tsx", "CarpenterPremium", VISUAL,
         "--codec", "h264",
         "--crf", "17",
         "--pixel-format", "yuv420p",
