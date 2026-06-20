@@ -58,6 +58,13 @@ Claude側（左工程）が U1–U5 の道具と配線を用意済み。Codex（
 - `build_usable_assets.py` は、その話で取得した素材に加えて **共有ライブラリ `references/stock_manifest.json`（権利クリーン既存素材）も自動で取り込む**。Claudeが集めた素材・過去に取得した素材は捨てずに毎回候補になる。
 - AI画像(Codex/SDXL)を足すときは `05_stock/stock_ledger.v001.json` に1行追記（source=ai_codex/ai_sdxl, commercial_use=allowed, sha256）→ 同様にゲートを通って使われる。
 
+## どの素材を使う／どれを生成するか（Codex向け）
+各話の `04_scenes/asset_map.v001.md` を見れば、**場面ごとに担当が分かる**（`asset_map.py`が生成）：
+- **✅ = 既存素材を使う**（Pexels/Pixabay等のダウンロード済み。下に具体ファイル名＋内容）。
+- **🎨 = Codexが画像を生成**する場面（`ai_image`）。いまは“仮置きの写真”が入っているだけなので、**ブランド調のAI画像を作って差しかえる**（実在人物の肖像は禁止／AI開示）。
+- **🔤 = 文字グラフィック**（素材不要、Remotionのテロップ）。
+冒頭に「🎨生成◯場面／✅既存◯場面」の内訳も出る。**実写動画やB-rollは既存素材を優先し、🎨の見せ場だけ生成**するのが基本。
+
 ## 注意
 - 重メディア（候補/コピー元）は `H:\pd-media`（git管理外）。`remotion/public/<slug>/` の採用素材だけがリポジトリに入る。
 - `remotion/` の既存型エラーは `MadoffPremium.tsx`（別ワーカーの既存issue）だけ。**本パイプラインの追加分（RoughCut/Root/データ）は型クリーン**。

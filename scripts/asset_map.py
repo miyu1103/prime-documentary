@@ -17,6 +17,15 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EPDIR = os.path.join(ROOT, "episodes")
 DATA = os.path.join(ROOT, "remotion", "src", "data")
 
+# Per-shot directive so Codex knows: USE the downloaded asset, or GENERATE its own AI image.
+PLAN = {
+    "stock_video": "✅ 既存の実写動画を使う（下の素材／ダウンロード済み）",
+    "stock_image": "✅ 既存の写真を使う（下の素材／ダウンロード済み）",
+    "archival_pd": "✅ 既存の資料/写真を使う（ダウンロード済み）",
+    "ai_image": "🎨 Codexが画像を生成（下の写真は“仮置き”。AIで作って差しかえる）",
+    "motion_graphic": "🔤 文字グラフィック（Remotionのテロップ。素材不要）",
+}
+
 
 def resolve_ep(arg: str) -> str:
     if os.path.isdir(os.path.join(EPDIR, arg)):
@@ -81,14 +90,24 @@ def main() -> int:
         d = dep.get(bn, "")
         return f"{bn}" + (f" — {d}" if d else "")
 
+    cnt = {"generate": 0, "use": 0, "text": 0}
+    for sh in data["shots"]:
+        cnt["generate" if sh["assetType"] == "ai_image" else "text" if sh["assetType"] == "motion_graphic" else "use"] += 1
     lines = [f"# 素材マップ — {ep_id}", "",
-             f"各場面（スパン）に、どの映像・写真を使う予定かの一覧。タイトル「{data.get('title','')}」。",
+             f"各場面（スパン）に、どの映像・写真を使うか／Codexが何を生成するかの一覧。タイトル「{data.get('title','')}」。", "",
+             "**Codexへ — 担当の見方**",
+             "- ✅ = 既にダウンロード済みの素材を使う（下に列挙）。",
+             "- 🎨 = **Codexが画像を生成**する場面（今は仮の写真が入っているので、AIで作って差しかえる）。",
+             "- 🔤 = 文字グラフィック（素材不要、Remotionのテロップ）。",
+             "",
+             f"**この話の内訳**：🎨生成 {cnt['generate']} 場面 ／ ✅既存素材 {cnt['use']} 場面 ／ 🔤文字 {cnt['text']} 場面。",
              "※自動で選んだ仮の割り当てです。合わないものは差しかえてOK（動画=複数を数秒ずつ切替／写真=Ken Burnsで動かす）。", ""]
     for sh in data["shots"]:
         sid = sh["spanId"]
         ch = span_chapter.get(sid, "")
         words = " ".join(span_text.get(sid, "").split()[:14])
-        lines.append(f"## {sid}  [{ch}]  〜{sh['seconds']:.0f}秒  ({sh['assetType']})")
+        lines.append(f"## {sid}  [{ch}]  〜{sh['seconds']:.0f}秒")
+        lines.append(f"- 担当: {PLAN.get(sh['assetType'], sh['assetType'])}")
         if words:
             lines.append(f"- ナレ: 「{words}…」")
         if sh.get("telop"):
@@ -100,7 +119,8 @@ def main() -> int:
             vis += [f"🖼 {label(s)}" for s in sh["images"]]
         if not vis and sh.get("src"):
             vis = [label(sh["src"])]
-        lines.append("- 使う素材: " + ("、".join(vis) if vis else "（文字カード）"))
+        tag = "仮置き写真（AIで生成して差しかえ）" if sh["assetType"] == "ai_image" else "使う素材"
+        lines.append(f"- {tag}: " + ("、".join(vis) if vis else "（文字カード）"))
         lines.append("")
 
     out = os.path.join(EPDIR, ep, "04_scenes", "asset_map.v001.md")
