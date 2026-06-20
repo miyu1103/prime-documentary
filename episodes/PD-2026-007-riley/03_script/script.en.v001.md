@@ -29,6 +29,8 @@
 
 [VO:] But the Court looked harder at what a phone actually is. A wallet holds a few cards and photos. A modern smartphone holds tens of thousands of messages, years of photographs, a browsing history, a calendar, location records, and access to even more data stored in the cloud [CLM-0004]. The two are not the same kind of thing, the Court said — not in how much they hold, and not in what that holding reveals.
 
+[VO:] And much of what a phone reaches is not even stored on the phone. Tap an app and you may be looking at data that lives on a company's servers, somewhere else entirely. By 2014, searching the device could quietly become a search of a life that is kept half in your pocket and half in the cloud [CLM-0004].
+
 [VO:] And the old justifications did not fit. The data inside a phone cannot be used as a weapon; it cannot cut an officer or help a suspect escape [CLM-0003]. The fear of evidence being destroyed could be handled in other ways, like securing the device. Strip away those two reasons, and what was left was simply the government wanting to read a person's entire digital life, on the spot, because they happened to be under arrest.
 
 ## ACT III — GET A WARRANT — 6:15–9:00
@@ -36,9 +38,13 @@
 
 [VO:] Roberts wrote that modern phones are now such a pervasive and insistent part of daily life that they hold, in digital form, the privacies of life [CLM-0004]. The sum of an individual's private life can be reconstructed from the device — where they have been, who they know, what they believe, what they fear. A search of a phone, he said, is not like emptying a pocket.
 
+[VO:] Roberts pushed the point further. A search of a phone, he wrote, is not just larger than a search of a wallet — it can be more revealing than the most thorough search of a house. Your home does not carry a record of everywhere you have been, everything you have searched for, and every message you have ever sent. The phone in your pocket does [CLM-0004].
+
 [VO:] The Court did not say the police can never see what is on your phone. It said they have to do what the Constitution normally requires for something this private: go to a judge, show probable cause, and get a warrant [CLM-0001]. The ruling came down to three words that are now quoted constantly: get a warrant [CLM-0007].
 
 [VO:] This was not a brand-new idea. It rested on a principle the Court had set out decades earlier, in a case about a man in a phone booth. There, the Court had held that the Fourth Amendment protects people, not places — that what you reasonably try to keep private stays protected, even out in the world [CLM-0009]. Riley took that principle and carried it into the smartphone. Your phone is not a place the police have walked into. It is the most concentrated record of you that has ever existed.
+
+[VO:] It is also why the Court took two phones, not one. Riley's was a modern smartphone; Wurie's was a basic flip phone. By deciding them together, the justices made clear the rule was not about how advanced your device is. The protection attaches to the phone as a category — the thing almost everyone now carries — not to the model in your hand [CLM-0005].
 
 [VO:] The Court left one important door open. In a true emergency — a bomb, a kidnapping, a child in danger — the police can still act without waiting for a warrant [CLM-0008]. The rule protects your phone. It does not turn it into a shield.
 
@@ -46,6 +52,8 @@
 [VO:] Riley was the first time the Supreme Court looked squarely at the smartphone and said: this changes things [CLM-0001]. The old rules, written for pockets and wallets, could not simply be stretched over a device that holds your entire life.
 
 [VO:] But notice how careful the ruling is. It protects the contents of the phone — the messages, the photos, the files you can see when you unlock it. It assumes the private thing is the data you put there on purpose. And it still leaves room for emergencies, for consent, and for the warrant the police can always go and get [CLM-0008].
+
+[VO:] Think about what is actually on the device the Court was protecting. Not only photos and messages, but the apps that quietly reveal the most private corners of a life — what you pray to, who you love, what illness you are reading about at two in the morning. The Court did not need to catalog every one. It only had to see that, taken together, they add up to you [CLM-0004].
 
 [VO:] What it does not fully answer is the harder question hiding underneath. Your phone does not only hold what you choose to put in it. Just by being on, it is constantly creating new information about you — and handing it to someone else. Every few minutes, it tells the nearest tower where it is. You never type that. You never see it. And it does not stay in your pocket — it goes straight to your phone company.
 

@@ -40,7 +40,11 @@
 
 [VO:] The Court built its answer in two parts. First, the stop. An officer may briefly stop a person when he can point to specific, describable facts that make him reasonably suspect that crime is afoot [CLM-0004]. Not a hunch he cannot explain — facts he can lay out later, the way McFadden could describe the pacing and the window.
 
+[VO:] That phrase — specific and articulable facts — is doing quiet, heavy work. It means an officer cannot simply say a person looked suspicious and leave it there. He has to be able to name what he saw and explain why it added up. McFadden could: two men, the same window, a dozen trips, their heads together between each pass. Reasonable suspicion is not a feeling the officer has; it is a story he can tell afterward, in specific terms, that a judge can test [CLM-0004].
+
 [VO:] Second, the frisk. If, during that stop, the officer reasonably believes the person may be armed and dangerous, he may run his hands over the outer clothing — and only the outer clothing — to check for weapons [CLM-0001]. The purpose is narrow: not to find evidence, but to make sure no one gets shot during the encounter.
+
+[VO:] And the Court drew that limit tightly. A frisk is not a license to empty your pockets. It is a pat-down of the outer clothing, feeling for the hard shape of a weapon — nothing more. If an officer goes further, reaching in to explore for something that is plainly not a weapon, he has crossed the line the Court drew and stepped back into the world that needs probable cause and a warrant [CLM-0003]. The whole point was to give an officer just enough, and not one inch more.
 
 [VO:] The Court was honest about what this was. A stop is a seizure. A frisk is a search [CLM-0003]. It did not pretend otherwise. It simply held that this limited kind of search could be reasonable on a lower standard than probable cause — a new standard the law now calls reasonable suspicion [CLM-0004]. With that, the gun found on Terry was allowed to stand [CLM-0007].
 
@@ -50,6 +54,8 @@
 [VO:] The "Terry stop" became one of the most common encounters between police and the public in America [CLM-0009]. Every day, officers stop people on a standard that is real but blurry: facts that add up to reasonable suspicion.
 
 [VO:] The strength of the rule is also its weakness. "Reasonable suspicion" depends on judgment, and judgment can be sharpened by training — or bent by bias. In the decades after Terry, some cities used the stop-and-frisk power so heavily that it became the center of a national argument about who gets stopped, and how often, and why [CLM-0009].
+
+[VO:] Picture how that plays out now. An officer does not need to watch you commit a crime. He needs a handful of facts he can later put into words — where you were, what you did, how it fit a pattern he has seen before. On a good day, that is careful police work stopping a real threat before it happens. On a bad day, the same low bar can make being stopped feel less like an event and more like weather [CLM-0009].
 
 [VO:] That argument is not really a disagreement about the 1968 ruling. The Court was careful. It demanded specific facts, not vague feelings, and it limited the frisk to a search for weapons. The problem is what happens when a careful rule meets the pressure of a quota, a bad assumption, or a long day on a hard street.
 

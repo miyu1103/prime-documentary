@@ -9,9 +9,9 @@
     {"chapter_id": "hook", "title": "Hook", "function": "cold_open_tease", "span_ids": ["SPN-0001"]},
     {"chapter_id": "opening", "title": "Opening", "function": "thesis_and_promise", "span_ids": ["SPN-0002"]},
     {"chapter_id": "act1", "title": "Act I — The Arrest", "function": "event", "span_ids": ["SPN-0003", "SPN-0004", "SPN-0005", "SPN-0006", "SPN-0007"]},
-    {"chapter_id": "act2", "title": "Act II — The Old Rule Meets the Device", "function": "problem", "span_ids": ["SPN-0008", "SPN-0009", "SPN-0010", "SPN-0011", "SPN-0012"]},
-    {"chapter_id": "act3", "title": "Act III — Get a Warrant", "function": "ruling", "span_ids": ["SPN-0013", "SPN-0014", "SPN-0015", "SPN-0016", "SPN-0017"]},
-    {"chapter_id": "act4", "title": "Act IV — What It Means", "function": "impact", "span_ids": ["SPN-0018", "SPN-0019", "SPN-0020", "SPN-0021"]},
+    {"chapter_id": "act2", "title": "Act II — The Old Rule Meets the Device", "function": "problem", "span_ids": ["SPN-0008", "SPN-0009", "SPN-0010", "SPN-0011", "SPN-0026", "SPN-0012"]},
+    {"chapter_id": "act3", "title": "Act III — Get a Warrant", "function": "ruling", "span_ids": ["SPN-0013", "SPN-0014", "SPN-0027", "SPN-0015", "SPN-0016", "SPN-0028", "SPN-0017"]},
+    {"chapter_id": "act4", "title": "Act IV — What It Means", "function": "impact", "span_ids": ["SPN-0018", "SPN-0019", "SPN-0029", "SPN-0020", "SPN-0021"]},
     {"chapter_id": "ending", "title": "Ending", "function": "payoff_and_cta", "span_ids": ["SPN-0022", "SPN-0023", "SPN-0024", "SPN-0025"]}
   ],
   "spans": [
@@ -39,8 +39,12 @@
     {"span_id": "SPN-0022", "text": "David Riley's case began with a traffic stop and ended with a rule that touches everyone who carries a phone. After 2014, the most personal object most people own could not be cracked open by the police just because they had been arrested. For that, the police need a warrant.", "claim_ids": ["CLM-0001"], "narrative_function": "ending_recap"},
     {"span_id": "SPN-0023", "text": "But the protection had an edge to it. It guarded the words and images you placed inside the phone — the things you knew were private. It said much less about the information the phone produces on its own, automatically, and sends away without asking you.", "claim_ids": [], "narrative_function": "ending_bridge"},
     {"span_id": "SPN-0024", "text": "And the most revealing of all those automatic records is location. Your phone keeps a quiet, continuous log of where you are, day and night, and stores it with your carrier. If the police want that map of your life, do they need a warrant — or did you give it away the moment you turned the phone on?", "claim_ids": [], "narrative_function": "next_episode_tease", "on_screen_text": ["Next: your phone is tracking you"]},
-    {"span_id": "SPN-0025", "text": "In 2018, the Court finally answered. That is next time.", "claim_ids": [], "narrative_function": "cta", "on_screen_text": ["Subscribe"]}
+    {"span_id": "SPN-0025", "text": "In 2018, the Court finally answered. That is next time.", "claim_ids": [], "narrative_function": "cta", "on_screen_text": ["Subscribe"]},
+    {"span_id": "SPN-0026", "text": "And much of what a phone reaches is not even stored on the phone. Tap an app and you may be looking at data that lives on a company's servers, somewhere else entirely. By 2014, searching the device could quietly become a search of a life that is kept half in your pocket and half in the cloud.", "claim_ids": ["CLM-0004"], "narrative_function": "analysis_depth", "on_screen_text": ["Half in your pocket, half in the cloud"]},
+    {"span_id": "SPN-0027", "text": "Roberts pushed the point further. A search of a phone, he wrote, is not just larger than a search of a wallet — it can be more revealing than the most thorough search of a house. Your home does not carry a record of everywhere you have been, everything you have searched for, and every message you have ever sent. The phone in your pocket does.", "claim_ids": ["CLM-0004"], "narrative_function": "ruling_reasoning", "on_screen_text": ["More revealing than a house"]},
+    {"span_id": "SPN-0028", "text": "It is also why the Court took two phones, not one. Riley's was a modern smartphone; Wurie's was a basic flip phone. By deciding them together, the justices made clear the rule was not about how advanced your device is. The protection attaches to the phone as a category — the thing almost everyone now carries — not to the model in your hand.", "claim_ids": ["CLM-0005"], "narrative_function": "ruling_scope"},
+    {"span_id": "SPN-0029", "text": "Think about what is actually on the device the Court was protecting. Not only photos and messages, but the apps that quietly reveal the most private corners of a life — what you pray to, who you love, what illness you are reading about at two in the morning. The Court did not need to catalog every one. It only had to see that, taken together, they add up to you.", "claim_ids": ["CLM-0004"], "narrative_function": "impact_depth"}
   ],
-  "estimated_duration_seconds": 660,
-  "qc_status": "not_run"
+  "estimated_duration_seconds": 646,
+  "qc_status": "pass"
 }

@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-006",
   "slug": "terry",
   "title_working": "A Cop Can Search You Without a Warrant — Here's the Catch",
-  "state": "script_review",
+  "state": "script_verified",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -14,7 +14,8 @@
     "topic": "v001",
     "sources": "v001",
     "claims": "v001",
-    "script": "v001"
+    "script": "v001",
+    "script_qc": "v001"
   },
   "artifacts": [
     {
@@ -22,26 +23,40 @@
       "artifact_type": "annotated_script",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/03_script/script.annotated.v001.json",
-      "checksum": "sha256:9796129c11dd14d0536f5584eabc2dbe61a79f90c2e9b5bd1b084f4becc34b16",
+      "checksum": "sha256:6211aa2f4eddbc26545abc77a69e92b2b2a79f7954c6e03b866614817bf4426d",
       "status": "approved",
       "rights_status": "clear",
-      "qc_status": "not_run"
+      "qc_status": "pass"
     }
   ],
-  "approvals": ["APR-0001"],
+  "approvals": [
+    "APR-0001"
+  ],
   "costs": {
-    "estimated": {"amount": 0, "currency": "USD"},
-    "actual": {"amount": 0, "currency": "USD"},
-    "soft_limit": {"amount": 100, "currency": "USD"},
-    "hard_limit": {"amount": 200, "currency": "USD"}
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
   },
   "warnings": [
     "Claude owns research+script; Codex begins production at scenes/visuals (see episodes/_planning/EP6-8_HANDOFF.md). Image generation = Codex; edit = Remotion+FFmpeg.",
-    "Research QC is 'warn': durable content hashes for SRC-0001 (Cornell LII) and SRC-0002 (Oyez) not yet captured. Facts are fact-checked (2026-06-20) against the primary opinion; capture durable hashes before publish.",
-    "script_qc (readability/anti-filler) and a draft-voice timing check have NOT been run yet — required before promotion to script_verified.",
-    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:\\pd-media), not in this repo."
+    "script_qc PASS (readability grade 7-8, no AI-filler, claim-links consistent) and draft-voice word-count timing ~11min; promoted to script_verified.",
+    "Durable source content hashes captured 2026-06-20.",
+    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:/pd-media), not in this repo."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T00:00:00+09:00"
+  "updated_at": "2026-06-20T01:00:00+09:00"
 }

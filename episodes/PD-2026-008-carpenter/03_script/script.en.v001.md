@@ -33,6 +33,8 @@
 
 [VO:] Cell-site records are different in kind, not just degree [CLM-0009]. You do not choose to send them. Simply by carrying a phone that is turned on — which, in modern life, is nearly everyone, nearly always — you generate a continuous record of your location and hand it to a company [CLM-0009]. There is no door to close. There is no way to step out of the booth. To opt out of the tracking, you would have to disconnect from modern life entirely.
 
+[VO:] And there is no realistic way out. You cannot hold a job, raise a family, or call for help in modern life without a phone, and the moment it is on, the tracking begins. The 1970s idea of voluntarily sharing assumed a choice. Carrying a phone is not a choice in that sense — it is the price of admission to ordinary life [CLM-0009].
+
 [VO:] So Carpenter's case forced a collision. On one side stood a 1970s rule: share it, and you lose it. On the other stood a device that shares your location constantly, automatically, with no real choice involved [CLM-0009]. If the old doctrine applied, then the most detailed map of your life ever created was available to the government for the asking.
 
 ## ACT III — THE LINE IN THE DIGITAL AGE — 6:15–9:15
@@ -46,6 +48,8 @@
 
 [VO:] The four dissenting justices warned that the Court had opened a door it could not close [CLM-0010]. Where exactly is the line? How much data is too much? Is location special, or will the same logic eventually cover your emails, your searches, your purchases? They argued the Court had traded a clear rule for a vague one, and that drawing these lines was a job for legislatures, not judges [CLM-0010].
 
+[VO:] The dissenters had a fair worry. A clear rule, even an uncomfortable one, tells the police exactly what they may do. A blurry line invites years of new cases just to find where it really falls — and until they are decided, no one is quite sure [CLM-0010].
+
 [VO:] They were not wrong that the line is blurry. But the majority had decided that a blurry line in the right place was better than a clear rule in the wrong one.
 
 ## ACT IV — WHAT IT MEANS FOR YOU — 9:15–10:45
@@ -54,6 +58,8 @@
 [VO:] But notice what the decision did not do. It did not say the government can never see your data. It said that, for this kind of record, it usually needs a warrant — a judge, and probable cause [CLM-0001]. The protection is real, and it is also narrow. The Court deliberately limited the ruling to these facts and left dozens of harder questions for later [CLM-0003].
 
 [VO:] And those questions are already here. Your location is only one of the trails you leave. There are records of what you search, what you buy, who you message, and what your devices sense around you. Each of those is held by a third party. Each of them, under the old doctrine, might be fair game. Carpenter cracked that doctrine open for location data. It did not resolve the rest [CLM-0003].
+
+[VO:] That is the unfinished part. Carpenter answered the question for location, but the same logic is now knocking on every other door — your searches, your messages, the quiet sensors in the devices around you. Each new case will ask the Court to decide, again, whether a record you cannot avoid creating is still yours [CLM-0003].
 
 [VO:] So the line we started drawing on a Cleveland sidewalk is still moving. Every new device asks the same question in a new form: what have you truly kept private, when modern life requires you to hand so much of yourself to someone else just to function?
 

@@ -10,8 +10,8 @@
     {"chapter_id": "opening", "title": "Opening", "function": "thesis_and_promise", "span_ids": ["SPN-0002"]},
     {"chapter_id": "act1", "title": "Act I — The Street", "function": "event", "span_ids": ["SPN-0003", "SPN-0004", "SPN-0005", "SPN-0006", "SPN-0007", "SPN-0008"]},
     {"chapter_id": "act2", "title": "Act II — The Problem", "function": "trial", "span_ids": ["SPN-0009", "SPN-0010", "SPN-0011", "SPN-0012", "SPN-0013", "SPN-0014"]},
-    {"chapter_id": "act3", "title": "Act III — The Ruling", "function": "ruling", "span_ids": ["SPN-0015", "SPN-0016", "SPN-0017", "SPN-0018", "SPN-0019"]},
-    {"chapter_id": "act4", "title": "Act IV — The Cost", "function": "impact", "span_ids": ["SPN-0020", "SPN-0021", "SPN-0022", "SPN-0023"]},
+    {"chapter_id": "act3", "title": "Act III — The Ruling", "function": "ruling", "span_ids": ["SPN-0015", "SPN-0016", "SPN-0028", "SPN-0017", "SPN-0029", "SPN-0018", "SPN-0019"]},
+    {"chapter_id": "act4", "title": "Act IV — The Cost", "function": "impact", "span_ids": ["SPN-0020", "SPN-0021", "SPN-0030", "SPN-0022", "SPN-0023"]},
     {"chapter_id": "ending", "title": "Ending", "function": "payoff_and_cta", "span_ids": ["SPN-0024", "SPN-0025", "SPN-0026", "SPN-0027"]}
   ],
   "spans": [
@@ -41,8 +41,11 @@
     {"span_id": "SPN-0024", "text": "Terry v. Ohio answered a question about the street: how much can the police do to your body, in public, on less than proof. The detective watched two men, named a real suspicion, and the Court let the gun stand.", "claim_ids": ["CLM-0001", "CLM-0007"], "narrative_function": "ending_recap"},
     {"span_id": "SPN-0025", "text": "But almost everything in that case depended on being out in the open — on a man the officer could see, on a sidewalk anyone could walk down. The Fourth Amendment grew up protecting physical things: your house, your pockets, the ground you stand on.", "claim_ids": [], "narrative_function": "ending_bridge"},
     {"span_id": "SPN-0026", "text": "So what happens when the police do not want what is in your pockets, but what is on the device inside them? When the thing they reach for is the phone that holds your messages, your photos, your whole life? The next time the Court faced that question, it had to decide whether the rules built for pockets and coats could possibly fit a computer that fits in your hand.", "claim_ids": [], "narrative_function": "next_episode_tease", "on_screen_text": ["Next: can they search your phone?"]},
-    {"span_id": "SPN-0027", "text": "That is next time.", "claim_ids": [], "narrative_function": "cta", "on_screen_text": ["Subscribe"]}
+    {"span_id": "SPN-0027", "text": "That is next time.", "claim_ids": [], "narrative_function": "cta", "on_screen_text": ["Subscribe"]},
+    {"span_id": "SPN-0028", "text": "That phrase — specific and articulable facts — is doing quiet, heavy work. It means an officer cannot simply say a person looked suspicious and leave it there. He has to be able to name what he saw and explain why it added up. McFadden could: two men, the same window, a dozen trips, their heads together between each pass. Reasonable suspicion is not a feeling the officer has; it is a story he can tell afterward, in specific terms, that a judge can test.", "claim_ids": ["CLM-0004"], "narrative_function": "ruling_explainer", "on_screen_text": ["\"specific and articulable facts\""]},
+    {"span_id": "SPN-0029", "text": "And the Court drew that limit tightly. A frisk is not a license to empty your pockets. It is a pat-down of the outer clothing, feeling for the hard shape of a weapon — nothing more. If an officer goes further, reaching in to explore for something that is plainly not a weapon, he has crossed the line the Court drew and stepped back into the world that needs probable cause and a warrant. The whole point was to give an officer just enough, and not one inch more.", "claim_ids": ["CLM-0001", "CLM-0003"], "narrative_function": "ruling_limit", "on_screen_text": ["Outer clothing · weapons only"]},
+    {"span_id": "SPN-0030", "text": "Picture how that plays out now. An officer does not need to watch you commit a crime. He needs a handful of facts he can later put into words — where you were, what you did, how it fit a pattern he has seen before. On a good day, that is careful police work stopping a real threat before it happens. On a bad day, the same low bar can make being stopped feel less like an event and more like weather.", "claim_ids": ["CLM-0009"], "narrative_function": "impact_present"}
   ],
-  "estimated_duration_seconds": 690,
-  "qc_status": "not_run"
+  "estimated_duration_seconds": 678,
+  "qc_status": "pass"
 }

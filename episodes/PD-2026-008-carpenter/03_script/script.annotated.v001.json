@@ -9,9 +9,9 @@
     {"chapter_id": "hook", "title": "Hook", "function": "cold_open_tease", "span_ids": ["SPN-0001"]},
     {"chapter_id": "opening", "title": "Opening", "function": "thesis_and_promise", "span_ids": ["SPN-0002"]},
     {"chapter_id": "act1", "title": "Act I — The Trail", "function": "event", "span_ids": ["SPN-0003", "SPN-0004", "SPN-0005", "SPN-0006", "SPN-0007", "SPN-0008"]},
-    {"chapter_id": "act2", "title": "Act II — The Third-Party Doctrine", "function": "problem", "span_ids": ["SPN-0009", "SPN-0010", "SPN-0011", "SPN-0012", "SPN-0013", "SPN-0014"]},
-    {"chapter_id": "act3", "title": "Act III — The Line in the Digital Age", "function": "ruling", "span_ids": ["SPN-0015", "SPN-0016", "SPN-0017", "SPN-0018", "SPN-0019", "SPN-0020"]},
-    {"chapter_id": "act4", "title": "Act IV — What It Means for You", "function": "impact", "span_ids": ["SPN-0021", "SPN-0022", "SPN-0023", "SPN-0024"]},
+    {"chapter_id": "act2", "title": "Act II — The Third-Party Doctrine", "function": "problem", "span_ids": ["SPN-0009", "SPN-0010", "SPN-0011", "SPN-0012", "SPN-0013", "SPN-0028", "SPN-0014"]},
+    {"chapter_id": "act3", "title": "Act III — The Line in the Digital Age", "function": "ruling", "span_ids": ["SPN-0015", "SPN-0016", "SPN-0017", "SPN-0018", "SPN-0019", "SPN-0029", "SPN-0020"]},
+    {"chapter_id": "act4", "title": "Act IV — What It Means for You", "function": "impact", "span_ids": ["SPN-0021", "SPN-0022", "SPN-0023", "SPN-0030", "SPN-0024"]},
     {"chapter_id": "ending", "title": "Ending", "function": "payoff_and_cta", "span_ids": ["SPN-0025", "SPN-0026", "SPN-0027"]}
   ],
   "spans": [
@@ -41,8 +41,11 @@
     {"span_id": "SPN-0024", "text": "So the line we started drawing on a Cleveland sidewalk is still moving. Every new device asks the same question in a new form: what have you truly kept private, when modern life requires you to hand so much of yourself to someone else just to function?", "claim_ids": [], "narrative_function": "synthesis"},
     {"span_id": "SPN-0025", "text": "Three episodes, one question. On a Cleveland sidewalk, the Court asked how much the police could do to your body in public. With a phone seized in an arrest, it asked whether the device in your pocket was just one more thing to search. And in Carpenter, it asked whether a phone that tracks you every minute could quietly erase everything the first two cases had built.", "claim_ids": ["CLM-0001"], "narrative_function": "series_recap", "on_screen_text": ["Body · Phone · Location"]},
     {"span_id": "SPN-0026", "text": "The answer, so far, is that the Constitution is still trying to keep up. The justices who wrote these rulings could not have imagined the phone in your pocket. They gave us tools — reasonable suspicion, reasonable expectation, the warrant — and left it to each new generation to decide how those tools apply to machines that did not exist when the words were written.", "claim_ids": [], "narrative_function": "synthesis"},
-    {"span_id": "SPN-0027", "text": "That is the real story under all three cases. The line between you and the people who would watch you is not fixed. It is argued, and redrawn, every time the technology changes. And right now, that line runs straight through the device you are probably holding to watch this.", "claim_ids": [], "narrative_function": "ending_payoff_cta", "on_screen_text": ["Subscribe", "The line runs through your phone."]}
+    {"span_id": "SPN-0027", "text": "That is the real story under all three cases. The line between you and the people who would watch you is not fixed. It is argued, and redrawn, every time the technology changes. And right now, that line runs straight through the device you are probably holding to watch this.", "claim_ids": [], "narrative_function": "ending_payoff_cta", "on_screen_text": ["Subscribe", "The line runs through your phone."]},
+    {"span_id": "SPN-0028", "text": "And there is no realistic way out. You cannot hold a job, raise a family, or call for help in modern life without a phone, and the moment it is on, the tracking begins. The 1970s idea of voluntarily sharing assumed a choice. Carrying a phone is not a choice in that sense — it is the price of admission to ordinary life.", "claim_ids": ["CLM-0009"], "narrative_function": "analysis_depth", "on_screen_text": ["No realistic opt-out"]},
+    {"span_id": "SPN-0029", "text": "The dissenters had a fair worry. A clear rule, even an uncomfortable one, tells the police exactly what they may do. A blurry line invites years of new cases just to find where it really falls — and until they are decided, no one is quite sure.", "claim_ids": ["CLM-0010"], "narrative_function": "ruling_counterpoint_depth"},
+    {"span_id": "SPN-0030", "text": "That is the unfinished part. Carpenter answered the question for location, but the same logic is now knocking on every other door — your searches, your messages, the quiet sensors in the devices around you. Each new case will ask the Court to decide, again, whether a record you cannot avoid creating is still yours.", "claim_ids": ["CLM-0003"], "narrative_function": "impact_open_questions", "on_screen_text": ["Location was just the first door"]}
   ],
-  "estimated_duration_seconds": 700,
-  "qc_status": "not_run"
+  "estimated_duration_seconds": 669,
+  "qc_status": "pass"
 }
