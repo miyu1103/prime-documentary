@@ -8,14 +8,26 @@ import {Animatic, animaticDurationInFrames, durationInFramesFor} from './composi
 import {GIDEON_ANIMATIC, GIDEON_SCENE_IMG} from './data/gideon_animatic';
 import {GideonPremium, gideonPremiumDurationInFrames} from './compositions/GideonPremium';
 import {MappPremium, mappPremiumDurationInFrames} from './compositions/MappPremium';
+import {MadoffPremium, madoffPremiumDurationInFrames} from './compositions/MadoffPremium';
 import {ClipProof} from './compositions/ClipProof';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
+import {RoughCut, roughCutDurationInFrames} from './compositions/RoughCut';
+import {MAHANOY_ROUGHCUT} from './data/mahanoy_roughcut';
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="RoughCut_mahanoy"
+        component={RoughCut}
+        durationInFrames={roughCutDurationInFrames(MAHANOY_ROUGHCUT)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{data: MAHANOY_ROUGHCUT}}
+      />
       <Composition
         id="Opening"
         component={Opening}
@@ -63,6 +75,14 @@ export const RemotionRoot: React.FC = () => {
         id="MappPremium"
         component={MappPremium}
         durationInFrames={mappPremiumDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="MadoffPremium"
+        component={MadoffPremium}
+        durationInFrames={madoffPremiumDurationInFrames(BRAND.video.fps)}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
