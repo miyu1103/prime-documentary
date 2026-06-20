@@ -1,0 +1,49 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-011-mahanoy",
+  "topic_id": "TOP-20260620-011",
+  "slug": "mahanoy",
+  "title_working": "Can Your School Punish You for a Post You Made Off Campus?",
+  "state": "script_verified",
+  "risk_class": "R2",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-011-mahanoy-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-011-mahanoy/03_script/script.annotated.v001.json",
+      "checksum": "sha256:b28f42c87c4e194d6ebf41ca98f383f7f233bcd31e6e7ef78b8a9a396438c4f4",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": ["APR-0001"],
+  "costs": {
+    "estimated": {"amount": 0, "currency": "USD"},
+    "actual": {"amount": 0, "currency": "USD"},
+    "soft_limit": {"amount": 100, "currency": "USD"},
+    "hard_limit": {"amount": 200, "currency": "USD"}
+  },
+  "warnings": [
+    "Claude owns research+script; Codex begins at scenes/visuals. Use rights-clean real footage (references/README.md, H:/pd-media/assets/stock). Image gen = Codex; edit = Remotion+FFmpeg.",
+    "script_qc PASS (FK 7.0, no AI-filler), timing ~10.1min; promoted to script_verified.",
+    "ADVERTISER SAFETY (CLM-0006): the post's caption was profane — the narration DESCRIBES it and must NEVER read the explicit words; on-screen text must be censored/blurred.",
+    "Brandi Levy (B.L.) was a minor but went public with the ACLU — safe to name; describe neutrally. Keep neutral on school-vs-student; present the school's interest fairly.",
+    "Heavy media (scenes/visuals/audio/edit) on the external SSD (H:\\pd-media), not in this repo."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-20T04:00:00+09:00",
+  "updated_at": "2026-06-20T04:00:00+09:00"
+}

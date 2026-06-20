@@ -1,0 +1,248 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-011-mahanoy",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Mahanoy Area School District v. B.L. (2021) the Supreme Court held that a public school violated a student's First Amendment free-speech rights by punishing her for off-campus speech, and that a school's special authority to regulate student speech is diminished when the speech happens off campus.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion of the Court (Breyer, J.), holding"
+      ],
+      "counterevidence": [
+        "Justice Thomas dissented."
+      ],
+      "confidence": 0.99,
+      "allowed_wording": [
+        "The Court ruled the school went too far in punishing an off-campus post."
+      ],
+      "prohibited_wording": [
+        "Schools can never punish student speech.",
+        "Students have no free speech at school."
+      ],
+      "temporal_scope": "2021-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Core holding; primary source."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Mahanoy v. B.L. was decided on June 23, 2021 by an 8-1 vote; the majority opinion was by Justice Stephen Breyer, Justice Alito concurred (joined by Gorsuch), and Justice Thomas was the lone dissenter.",
+      "importance": "critical",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Syllabus / vote / opinions"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "In an 8-1 decision in 2021, Justice Breyer wrote for the Court; Justice Thomas dissented alone."
+      ],
+      "prohibited_wording": [
+        "The decision was unanimous.",
+        "The decision was 5-4."
+      ],
+      "temporal_scope": "2021",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Date/vote/lineup."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The Court did not hold that schools can never regulate off-campus speech; it expressly left open categories such as serious bullying or harassment, threats, and cheating, and declined to announce a broad rule.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, limits of the holding"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "The Court did not give students total immunity off campus; it left room for things like bullying, threats, and cheating."
+      ],
+      "prohibited_wording": [
+        "Schools have no power over off-campus speech at all."
+      ],
+      "temporal_scope": "2021-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Narrow, careful holding."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The decision built on Tinker v. Des Moines (1969) — that students do not 'shed their constitutional rights to freedom of speech or expression at the schoolhouse gate' — and Tinker's 'substantial disruption' standard, which the Court found was not met here.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, discussion of Tinker"
+      ],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": [
+        "It built on the 1969 Tinker case: students keep free-speech rights at school, but schools can act against speech that substantially disrupts."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "1969-present",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Tinker lineage + substantial-disruption standard."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "The student, Brandi Levy (anonymized in the case as 'B.L.'), was a 14-year-old high-school student and junior-varsity cheerleader at Mahanoy Area High School in Mahanoy City, Pennsylvania.",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Opinion, facts",
+        "ACLU case page (age, identity public)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "The student, Brandi Levy, was a 14-year-old JV cheerleader in Mahanoy, Pennsylvania."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2017",
+      "geographic_scope": "Pennsylvania, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Use '14-year-old high-school student' (avoid pinning a grade label). She went public with the ACLU — safe to name."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "On a weekend, off campus at a local convenience store, after she failed to make the varsity cheer team, she posted a Snapchat image of herself and a friend raising their middle fingers, with a profane caption venting frustration at school, softball, cheer, and 'everything.'",
+      "importance": "supporting",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, facts"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Off campus on a weekend, she posted a Snapchat with raised middle fingers and a profane caption after being put on JV instead of varsity."
+      ],
+      "prohibited_wording": [
+        "[Do NOT quote the explicit profanity verbatim in narration; describe it.]"
+      ],
+      "temporal_scope": "2017",
+      "geographic_scope": "Pennsylvania, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "ADVERTISER SAFETY: describe the profanity, never read it; censor on screen."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "The post was sent to about 250 Snapchat friends; although Snaps disappear, it was screenshotted and reached the cheerleading coaches, and the school suspended her from the junior-varsity cheerleading team for a year.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, facts (~250 friends; suspension)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.94,
+      "allowed_wording": [
+        "It went to about 250 friends, was screenshotted, reached the coaches, and the school suspended her from JV cheer for a year."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2017",
+      "geographic_scope": "Pennsylvania, United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The disappearing-post irony; the punishment."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "She and her parents, represented by the ACLU, sued the school district, and the courts — and ultimately the Supreme Court — ruled in her favor.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Opinion, procedural posture",
+        "ACLU case page"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "She sued with the ACLU, and won — at every level, up to the Supreme Court."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2017-2021",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "ACLU counsel; outcome."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "The Court noted the actual disruption at school was minimal — a brief classroom discussion of a few minutes — far short of the 'substantial disruption' Tinker requires before a school may punish student speech.",
+      "importance": "context",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Opinion, disruption analysis"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "The only fallout at school was a few minutes of classroom chatter — not a substantial disruption."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2021",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Why the school lost: no substantial disruption."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable hashes 2/3 (SRC-0002 blocked). Advertiser-safe: never read profanity (CLM-0006). Neutral school-vs-student."
+    ]
+  }
+}
