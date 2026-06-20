@@ -57,7 +57,7 @@ PROMPTS = [
         "act1",
         "S004",
         "S004-SH001",
-        "two faceless anonymous men in 1960s coats walking past a single store window, wide shot from across the street, no faces, no readable signage, repeated-path feeling, muted gold window glow, navy shadows",
+        "empty 1960s storefront window on a downtown sidewalk, no people, no mannequins, no readable signs, no shop name, blank awning, warm gold interior glow behind glass, deep navy exterior shadows, clean negative space for animated path lines added later in Remotion",
         8,
     ),
     (

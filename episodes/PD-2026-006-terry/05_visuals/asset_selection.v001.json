@@ -16,6 +16,17 @@
       "qc_score": 93,
       "rights_status": "clear",
       "notes": "Accepted as Act I Cleveland establishing image. Symbolic reconstruction only."
+    },
+    {
+      "asset_id": "PD-2026-006-terry-S004-IMG-001",
+      "scene_id": "S004",
+      "shot_id": "S004-SH001",
+      "source_candidate": "artifact://episodes/PD-2026-006-terry/05_visuals/sdxl_ultra_v001/act1/S004/TERRY_H03_store_window_passes_c01_seed608682.png",
+      "selected_uri": "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S004/PD-2026-006-terry-S004-IMG-001.v001.png",
+      "sha256": "32c3de3944da2cdf1eaaef4b4d513b775c584e760173855cf45d307d5ab3e8b7",
+      "qc_score": 94,
+      "rights_status": "clear",
+      "notes": "Accepted as signless storefront background. The two-men/about-12-trips fact is represented by Remotion path graphics, not by generated people."
     }
   ],
   "rejected_or_not_locked": [
@@ -32,6 +43,13 @@
       "candidate_count_reviewed": 5,
       "status": "one_locked",
       "reason": "Earlier candidates had generated signage/text. Prompt repaired to signless office street; seed 608235 accepted."
+    },
+    {
+      "scene_id": "S004",
+      "prompt_id": "TERRY_H03_store_window_passes",
+      "candidate_count_reviewed": 3,
+      "status": "one_locked",
+      "reason": "People-in-window candidates failed due extra person/faces/text. Prompt switched to empty storefront background; movement will be accurate Remotion path-counter overlay. Seed 608682 accepted."
     }
   ],
   "next_generation_priority": [
