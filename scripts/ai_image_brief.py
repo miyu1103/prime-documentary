@@ -84,7 +84,8 @@ def main() -> int:
              "フォルダが無ければ作成可。PNG推奨・1920x1080以上。",
              "", "**全画像 共通スタイル**:",
              f"> {STYLE}. {SAFETY}",
-             "", f"**生成枚数: {total} 枚**（🎨 {len(ai_shots)} 場面 ぶん。長い場面は約6秒ごとに切り替えるため複数枚＝下記の連番で）。", ""]
+             "", f"**生成枚数: {total} 枚**（🎨 {len(ai_shots)} 場面 ぶん。長い場面は約4.5秒ごとに切り替えるため複数枚＝下記の連番で）。",
+             "各画像の下に**そのまま使える完成プロンプト**を記載（コピーして生成→指定ファイル名で保存）。", ""]
     for s in ai_shots:
         sid = s["span_id"]
         subj = clean(s.get("visual_intent", "")) or (s.get("on_screen_text") or [""])[0] or " ".join(text.get(sid, "").split()[:14])
@@ -96,7 +97,9 @@ def main() -> int:
         for i in range(n):
             fname = f"{sid}.png" if i == 0 else f"{sid}_{i + 1:02d}.png"
             angle = ANGLES[i % len(ANGLES)]
-            lines.append(f"  - `{fname}` ← {subj}, {angle}")
+            full = f"{subj}, {angle}. {STYLE}. {SAFETY}"
+            lines.append(f"  - `{fname}`")
+            lines.append(f"    {full}")
         lines.append("")
 
     out = os.path.join(EPDIR, ep, "04_scenes", "ai_prompts.v001.md")
