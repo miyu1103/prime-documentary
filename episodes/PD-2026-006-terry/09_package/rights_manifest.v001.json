@@ -1,0 +1,30 @@
+{
+  "schema_version": "rights_manifest_v1",
+  "episode_id": "PD-2026-006-terry",
+  "revision": "v001",
+  "created_at": "2026-06-20T15:30:00+09:00",
+  "status": "partial_assets_generating",
+  "items": [
+    {
+      "asset_id": "PD-2026-006-terry-S003-IMG-001",
+      "type": "image",
+      "scene": "S003",
+      "description": "AI-generated local SDXL symbolic reconstruction of a 1963 downtown Cleveland street establishing shot; no real-person likeness; no readable text/logos.",
+      "file": "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S003/PD-2026-006-terry-S003-IMG-001.v001.png",
+      "producer": "Codex + local A1111 SDXL on owner RTX4090",
+      "model_profile": "juggernautXL_ragnarokBy.safetensors [dd08fa32f9]",
+      "seed": 608235,
+      "license": "Owner-local AI generation; commercial use allowed subject to model/license assumptions; disclose as AI-generated symbolic reconstruction.",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:38263f5a202dd0b7675e2a0b4154765b6b50f9a8668111239496479111935ed6",
+      "needs_verification": false,
+      "ai_disclosure_required": true
+    }
+  ],
+  "constraints": [
+    "No real-person likeness or deepfake",
+    "Generated visuals are symbolic reconstruction, never authentic footage",
+    "YouTube synthetic-content disclosure required",
+    "Every additional AI image must be added here before first-cut use"
+  ]
+}

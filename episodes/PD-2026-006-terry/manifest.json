@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-006",
   "slug": "terry",
   "title_working": "A Cop Can Search You Without a Warrant — Here's the Catch",
-  "state": "scene_planned",
+  "state": "assets_generating",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -21,7 +21,9 @@
     "visual_bible": "v001",
     "codex_image_prompts": "v001",
     "remotion_plan": "v001",
-    "visual_qc_plan": "v001"
+    "visual_qc_plan": "v001",
+    "asset_selection": "v001",
+    "rights_manifest": "v001"
   },
   "artifacts": [
     {
@@ -40,6 +42,36 @@
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/scene_plan.v001.json",
       "checksum": "sha256:7a21af708581ea224bc728c046629bcbf2fecada9985339c2cc91f696c7edf04",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-asset-selection",
+      "artifact_type": "asset_selection",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/05_visuals/asset_selection.v001.json",
+      "checksum": "sha256:cbd935ecea9598481a39ad3d0574f9c5151a3bd6caf689eb61f16f228c9bce32",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-S003-IMG-001",
+      "artifact_type": "image_asset_metadata",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/05_visuals/assets/PD-2026-006-terry-S003-IMG-001.v001.json",
+      "checksum": "sha256:8bae321a47e90fc165ae3e9eaa9686dbdc1e0722b188b138978617af5bdbfc44",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-rights-manifest",
+      "artifact_type": "rights_manifest",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json",
+      "checksum": "sha256:4bd4848d800e5b3820603f9dc7fadcbd9b4d2d36a7f8bfb310a34fe6b186c174",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -122,9 +154,10 @@
     "Durable source content hashes captured 2026-06-20.",
     "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:/pd-media), not in this repo.",
     "Scene package v001 created by Codex from locked script/annotated spans; script, annotated script, and claims were not modified.",
-    "Owner set premium image bar: selected AI stills must pass visual_qc_plan.v001.md; placeholders are not acceptable for first-cut."
+    "Owner set premium image bar: selected AI stills must pass visual_qc_plan.v001.md; placeholders are not acceptable for first-cut.",
+    "Asset generation started locally via A1111/SDXL. S003 establishing image approved; S001 stop/pat-down candidates rejected/not locked due visual/QC defects."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T14:16:49+09:00"
+  "updated_at": "2026-06-20T15:30:00+09:00"
 }

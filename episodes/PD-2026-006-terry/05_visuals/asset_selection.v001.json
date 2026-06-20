@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-006-terry",
+  "revision": "v001",
+  "status": "partial_assets_generating",
+  "generated_at": "2026-06-20T15:30:00+09:00",
+  "media_root": "artifact://episodes/PD-2026-006-terry/05_visuals/",
+  "accepted_assets": [
+    {
+      "asset_id": "PD-2026-006-terry-S003-IMG-001",
+      "scene_id": "S003",
+      "shot_id": "S003-SH002",
+      "source_candidate": "artifact://episodes/PD-2026-006-terry/05_visuals/sdxl_ultra_v001/act1/S003/TERRY_H02_cleveland_street_c01_seed608235.png",
+      "selected_uri": "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S003/PD-2026-006-terry-S003-IMG-001.v001.png",
+      "sha256": "38263f5a202dd0b7675e2a0b4154765b6b50f9a8668111239496479111935ed6",
+      "qc_score": 93,
+      "rights_status": "clear",
+      "notes": "Accepted as Act I Cleveland establishing image. Symbolic reconstruction only."
+    }
+  ],
+  "rejected_or_not_locked": [
+    {
+      "scene_id": "S001",
+      "prompt_id": "TERRY_H01_pov_street_stop",
+      "candidate_count_reviewed": 11,
+      "status": "not_locked",
+      "reason": "Initial candidates either lacked the POV/pat-down beat, included badge-like insignia, had hand/anatomy defects, or were too soft. Do not use in first-cut. Use Remotion/abstract stop graphic until a clean image passes."
+    },
+    {
+      "scene_id": "S003",
+      "prompt_id": "TERRY_H02_cleveland_street",
+      "candidate_count_reviewed": 5,
+      "status": "one_locked",
+      "reason": "Earlier candidates had generated signage/text. Prompt repaired to signless office street; seed 608235 accepted."
+    }
+  ],
+  "next_generation_priority": [
+    "S004 store-window repeated-pass environment, no signage",
+    "S008/S018 coat-fabric boundary without hand anatomy risk",
+    "S022/S024 modern street montage, no faces/logos"
+  ]
+}
