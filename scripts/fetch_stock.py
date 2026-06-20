@@ -130,7 +130,7 @@ def queries_from_shotlist(b: str) -> list[tuple[str, list[str]]]:
         return []
     out = []
     for s in json.load(open(sl, encoding="utf-8"))["shots"]:
-        if s["suggested_asset_type"] in ("stock_video", "stock_image") and s.get("search_keywords"):
+        if s["suggested_asset_type"] in ("stock_video", "stock_image", "ai_image") and s.get("search_keywords"):
             out.append((s["search_keywords"][0], [s["span_id"]]))
     return out
 
@@ -153,7 +153,8 @@ def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     argv = sys.argv[1:]
     write = "--write" in argv
-    images = "--images" in argv
+    images_only = "--images-only" in argv
+    images = "--images" in argv or images_only
     per = int(argv[argv.index("--per-source") + 1]) if "--per-source" in argv else 1
     query = argv[argv.index("--query") + 1] if "--query" in argv else None
     pos = [a for a in argv if not a.startswith("--") and a != query and (not a.isdigit() or a == argv[0])]
@@ -194,9 +195,9 @@ def main() -> int:
         cands: list[dict[str, Any]] = []
         try:
             if pk:
-                cands += pexels_video(q, pk, per) + (pexels_image(q, pk, per) if images else [])
+                cands += ([] if images_only else pexels_video(q, pk, per)) + (pexels_image(q, pk, per) if images else [])
             if xk:
-                cands += pixabay_video(q, xk, per) + (pixabay_image(q, xk, per) if images else [])
+                cands += ([] if images_only else pixabay_video(q, xk, per)) + (pixabay_image(q, xk, per) if images else [])
         except Exception as e:
             print(f"  search error q='{q}': {e}")
             continue

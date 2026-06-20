@@ -33,6 +33,7 @@ export type RoughShot = {
   src: string | null; // staticFile path under remotion/public, or null -> branded card
   clipSeconds?: number; // real length of a single fallback video clip
   clips?: {src: string; clipSeconds: number}[]; // several clips to CUT between across a long shot
+  images?: string[]; // several photos to CUT between (Ken Burns) so a long shot never dwells
   telop: string[];
   priority: 'A' | 'B' | 'C';
 };
@@ -107,15 +108,16 @@ const MovingVideo: React.FC<{src: string; clipSeconds?: number; shotSeconds: num
   );
 };
 
-/** One clip at NORMAL speed with a gentle push-in (used as a segment inside a VideoShot). */
-const VideoSegment: React.FC<{src: string}> = ({src}) => {
+/** One clip segment at NORMAL speed, starting from `startFrom` so a reused clip CONTINUES
+ *  (no jump back to its first frame), with a gentle push-in. */
+const VideoSegment: React.FC<{src: string; startFrom: number}> = ({src, startFrom}) => {
   const f = useCurrentFrame();
   const {durationInFrames} = useVideoConfig();
-  const scale = interpolate(f, [0, durationInFrames], [1.03, 1.1]);
+  const scale = interpolate(f, [0, durationInFrames], [1.03, 1.08]);
   return (
     <AbsoluteFill style={{overflow: 'hidden', backgroundColor: BRAND.color.ink}}>
       <AbsoluteFill style={{transform: `scale(${scale})`, transformOrigin: '50% 50%'}}>
-        <Video src={staticFile(src)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+        <Video src={staticFile(src)} muted startFrom={startFrom} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
@@ -132,22 +134,58 @@ const VideoShot: React.FC<{clips: {src: string; clipSeconds: number}[]; shotSeco
 }) => {
   const {fps} = useVideoConfig();
   const total = Math.max(1, Math.round(shotSeconds * fps));
-  const segs: {src: string; frames: number}[] = [];
+  const clipFrames = clips.map((c) => Math.max(1, Math.round((c.clipSeconds > 0 ? c.clipSeconds : 6) * fps)));
+  const consumed = clips.map(() => 0);
+  const maxSeg = Math.round(8 * fps);
+  const segs: {src: string; startFrom: number; frames: number}[] = [];
   let acc = 0;
   let i = 0;
-  while (acc < total && i < 200) {
-    const c = clips[i % clips.length];
-    const cap = Math.min(c.clipSeconds > 0 ? c.clipSeconds : 6, 8);
-    const frames = Math.min(Math.max(1, Math.round(cap * fps)), total - acc);
-    segs.push({src: c.src, frames});
-    acc += frames;
+  let guard = 0;
+  while (acc < total && guard < 400) {
+    guard++;
+    const idx = i % clips.length;
     i++;
+    if (consumed[idx] >= clipFrames[idx]) {
+      if (consumed.every((c, k) => c >= clipFrames[k])) consumed.fill(0); // all used -> 2nd pass
+      else continue; // skip an exhausted clip, try the next
+    }
+    const len = Math.min(clipFrames[idx] - consumed[idx], maxSeg, total - acc);
+    if (len <= 0) continue;
+    segs.push({src: clips[idx].src, startFrom: consumed[idx], frames: len});
+    consumed[idx] += len;
+    acc += len;
   }
   return (
     <Series>
       {segs.map((s, idx) => (
         <Series.Sequence key={idx} durationInFrames={s.frames}>
-          <VideoSegment src={s.src} />
+          <VideoSegment src={s.src} startFrom={s.startFrom} />
+        </Series.Sequence>
+      ))}
+    </Series>
+  );
+};
+
+/** A shot covered by CUTTING between several photos (~6s each, Ken Burns), so it never dwells. */
+const ImageShot: React.FC<{images: string[]; shotSeconds: number}> = ({images, shotSeconds}) => {
+  const {fps} = useVideoConfig();
+  const total = Math.max(1, Math.round(shotSeconds * fps));
+  const per = Math.round(6 * fps);
+  const segs: {src: string; frames: number; dir: number}[] = [];
+  let acc = 0;
+  let k = 0;
+  while (acc < total && k < 200) {
+    const len = Math.min(per, total - acc);
+    if (len <= 0) break;
+    segs.push({src: images[k % images.length], frames: len, dir: k % 2});
+    acc += len;
+    k++;
+  }
+  return (
+    <Series>
+      {segs.map((s, idx) => (
+        <Series.Sequence key={idx} durationInFrames={s.frames}>
+          <MovingImage src={s.src} motion={s.dir ? 'parallax' : 'ken_burns'} />
         </Series.Sequence>
       ))}
     </Series>
@@ -230,8 +268,8 @@ const Telop: React.FC<{telop: string[]}> = ({telop}) => {
 };
 
 const Shot: React.FC<{shot: RoughShot}> = ({shot}) => {
-  const hasVideo = !!shot.src && shot.assetType === 'stock_video';
-  const hasImage = !!shot.src && shot.assetType !== 'stock_video' && shot.assetType !== 'motion_graphic';
+  const hasVideo = (shot.clips && shot.clips.length > 0) || (shot.assetType === 'stock_video' && !!shot.src);
+  const hasImages = (shot.images && shot.images.length > 0) || (!!shot.src && shot.assetType !== 'stock_video');
   return (
     <AbsoluteFill style={{backgroundColor: BRAND.color.ink}}>
       {hasVideo ? (
@@ -246,27 +284,17 @@ const Shot: React.FC<{shot: RoughShot}> = ({shot}) => {
           <Grain opacity={0.05} />
           <Telop telop={shot.telop} />
         </>
-      ) : hasImage ? (
+      ) : hasImages ? (
         <>
-          <MovingImage src={shot.src as string} motion={shot.motion} />
+          {shot.images && shot.images.length > 0 ? (
+            <ImageShot images={shot.images} shotSeconds={shot.seconds} />
+          ) : (
+            <MovingImage src={shot.src as string} motion={shot.motion} />
+          )}
           {grade}
           <Vignette />
           <Grain opacity={0.06} />
           <Telop telop={shot.telop} />
-          {shot.assetType === 'ai_image' ? (
-            <div
-              style={{
-                position: 'absolute',
-                right: 36,
-                top: 28,
-                color: `${BRAND.color.silver}AA`,
-                fontFamily: BRAND.font.body,
-                fontSize: 17,
-              }}
-            >
-              Reconstruction — not authentic footage
-            </div>
-          ) : null}
         </>
       ) : (
         <GraphicCard

@@ -15,8 +15,21 @@ Usage:
   .venv/Scripts/python.exe scripts/import_to_remotion.py 11 --write
 """
 from __future__ import annotations
-import sys, os, json, glob, shutil, tempfile, re, subprocess
+import sys, os, json, glob, shutil, tempfile, re, subprocess, math
 from typing import Any
+
+
+def conform_video(srcp: str, dstp: str, fps: int = 30) -> bool:
+    """Re-encode a clip to the timeline fps (no crop), so mixed-fps clips don't judder in the
+    fixed-fps composition. Near-transparent quality (crf 16). Returns True on success."""
+    try:
+        subprocess.run(
+            ["ffmpeg", "-y", "-i", srcp, "-vf", f"fps={fps}", "-c:v", "libx264",
+             "-crf", "16", "-preset", "medium", "-an", dstp],
+            capture_output=True, timeout=600)
+        return os.path.exists(dstp) and os.path.getsize(dstp) > 0
+    except Exception:
+        return False
 
 
 def probe_seconds(path: str | None) -> float | None:
@@ -144,27 +157,44 @@ def main() -> int:
     copies: list[tuple[str, str]] = []
     shots_out: list[dict[str, Any]] = []
     bound = 0
+    img_pool = [a for a in pool if a.get("asset_type") == "image"]  # for filling empty picture slots
+    img_i = 0
+
+    def queue_copy(asset: dict[str, Any]) -> str:
+        fname = os.path.basename(asset["file"])
+        pair = (asset["file"], os.path.join(dest_dir, fname))
+        if pair not in copies:
+            copies.append(pair)
+        return f"{slug}/{fname}"
     for sh in shotlist["shots"]:
         src = None
         clips_out: list[dict[str, Any]] = []
+        images_out: list[str] = []
         atype = sh["suggested_asset_type"]
         if atype == "stock_video":
             for a in pick_videos(sh, pool, used):
                 used.add(a["asset_id"])
-                fname = os.path.basename(a["file"])
-                copies.append((a["file"], os.path.join(dest_dir, fname)))
-                clips_out.append({"src": f"{slug}/{fname}",
+                clips_out.append({"src": queue_copy(a),
                                   "clipSeconds": probe_seconds(resolve_file(a["file"])) or 6.0})
             if clips_out:
                 src = clips_out[0]["src"]
                 bound += 1
-        elif atype != "motion_graphic":
-            a = pick_asset(sh, pool, used)
-            if a:
+        else:
+            # Every non-video shot gets ENOUGH photos to cut every ~6s, so nothing dwells/looks static.
+            n = max(1, math.ceil(sh["estimated_seconds"] / 6.0))
+            chosen: list[dict[str, Any]] = []
+            while len(chosen) < n:                       # keyword-matched photos first
+                a = pick_asset(sh, pool, used)
+                if not a:
+                    break
                 used.add(a["asset_id"])
-                fname = os.path.basename(a["file"])
-                src = f"{slug}/{fname}"
-                copies.append((a["file"], os.path.join(dest_dir, fname)))
+                chosen.append(a)
+            while len(chosen) < n and img_pool:          # fill the rest from the pool (may reuse)
+                chosen.append(img_pool[img_i % len(img_pool)])
+                img_i += 1
+            images_out = [queue_copy(a) for a in chosen]
+            if images_out:
+                src = images_out[0]
                 bound += 1
         shot_out: dict[str, Any] = {
             "spanId": sh["span_id"],
@@ -178,6 +208,8 @@ def main() -> int:
         }
         if clips_out:
             shot_out["clips"] = clips_out
+        if images_out:
+            shot_out["images"] = images_out
         shots_out.append(shot_out)
 
     data = {"episodeId": ep_id, "title": title, "fps": 30,
@@ -199,8 +231,12 @@ def main() -> int:
         for srcf, dstf in copies:
             rp = resolve_file(srcf)
             if rp and os.path.exists(rp):
-                shutil.copy2(rp, dstf)
-                copied += 1
+                is_video = dstf.lower().endswith((".mp4", ".mov", ".webm", ".m4v"))
+                if is_video and conform_video(rp, dstf):
+                    copied += 1
+                else:
+                    shutil.copy2(rp, dstf)
+                    copied += 1
             else:
                 print(f"  WARN missing usable file, leaving card: {srcf}")
         os.makedirs(DATA, exist_ok=True)
