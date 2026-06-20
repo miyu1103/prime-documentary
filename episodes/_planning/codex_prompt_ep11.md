@@ -13,7 +13,7 @@ Claudeが左側(topic→research→claims→台本)完了。**あなたは右側
 - `episodes/PD-2026-011-mahanoy/01_research/claims.v001.json` / `manifest.json`
 
 ## ツール & 素材方針（2026-06-20改定 — 紙芝居回避・実写動画を主軸・権利ゲート厳守）
-- **静止画の羅列で“紙芝居”にしない。** B-rollは原則「実写の動画クリップ」を主役に。AI生成(Codex/SDXL/Runway)は**見せ場だけ**（Runwayはコスト都合で全カット不可）。
+- **しょぼい動画にしない＝“静止で見せない”。** AI画像(Codex/SDXL)は主役級に**たくさん使ってOK**。ただし全カット必ず動かす（寄り引き/パララックス/微ズーム/グレイン/被写界深度）。さらに実写の動画クリップを要所に混ぜて単調を回避。Runwayは高コストなので決め所だけ。
 - 編集=Remotion+FFmpeg。AI画像=Codex生成＋SDXL（見せ場用）。ナレ=ElevenLabs(課金=要承認)。音楽=Suno。
 - **無料動画素材を主軸に**：Pexels / Pixabay / Mixkit。必要に応じ Wikimedia Commons / NASA、音は YouTube Audio Library も可。既存ライブラリ=`H:\pd-media\assets\stock`(STOCK_MANIFEST.json)＋`references/README.md`・`references/stock_manifest.json`。
 - **権利管理（最重要・厳守）**：商用利用可の素材のみ使用。1点ずつ「出典URL・作者・ライセンス・取得日・使用シーン・sha256」をrights台帳に記録。
@@ -28,7 +28,7 @@ Claudeが左側(topic→research→claims→台本)完了。**あなたは右側
 4. 中立(学校 vs 生徒のどちらにも寄らない。学校側の秩序維持の言い分も公平に)。
 
 ## パイプライン
-`pd-scenes`(各スパンの検索キーワード/秒数/テロップを整理) → `pd-generate-assets`(**実写動画を主役**＋見せ場のみAI(Codex/SDXL)、QC＋**権利台帳登録・OK素材のみ採用**)→ ナレーション(ElevenLabs・**課金前に承認**)
+`04_scenes/shotlist.v001.json`(`scripts/plan_scenes.py`で生成済=各スパンの推奨素材種別/動き/検索キーワード/秒数/テロップ) → `pd-generate-assets`(**AI画像(Codex/SDXL)を大量に＋実写動画を要所に・全カット動かす**、QC＋**権利台帳登録・OK素材のみ採用**)→ ナレーション(ElevenLabs・**課金前に承認**)
 ＋音楽＋Remotion → `pd-build-edit`(Remotion+FFmpeg)→ **初稿・タイトル/サムネのゲートでSTOP。公開しない。**
 
 ## 第11話の固有指定
