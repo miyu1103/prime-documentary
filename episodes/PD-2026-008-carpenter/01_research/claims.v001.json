@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-008-carpenter",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "In Carpenter v. United States (2018) the Supreme Court held that the government's acquisition of historical cell-site location information (CSLI) is a search under the Fourth Amendment and generally requires a warrant.",
+      "importance": "critical", "sensitivity": "low", "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court (Roberts, C.J.), holding"],
+      "counterevidence": ["Four justices dissented (Kennedy, Thomas, Alito, Gorsuch)."],
+      "confidence": 0.99,
+      "allowed_wording": ["Getting your historical location records is a search; police generally need a warrant."],
+      "prohibited_wording": ["The government can never get your location.", "All phone data now needs a warrant."],
+      "temporal_scope": "2018-present", "geographic_scope": "United States", "units": "",
+      "status": "approved", "notes": "Core holding."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "Carpenter was decided on June 22, 2018 by a 5-4 vote; the majority opinion was by Chief Justice John Roberts, and Justices Kennedy, Thomas, Alito and Gorsuch each filed a dissent.",
+      "importance": "critical", "sensitivity": "low", "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Syllabus / vote / dissents"],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": ["In a 5-4 decision in 2018, Chief Justice Roberts wrote for the Court; four justices dissented separately."],
+      "prohibited_wording": ["The vote was 6-3.", "The decision was unanimous."],
+      "temporal_scope": "2018", "geographic_scope": "United States", "units": "",
+      "status": "approved", "notes": "Date/vote/author/dissents. A stray AI-summary says 6-3; it is wrong (see SRC-0001 note)."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The Court did not overrule the third-party doctrine; it declined to extend it to cell-site location information.",
+      "importance": "major", "sensitivity": "low", "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court, third-party doctrine discussion"],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": ["The Court refused to extend the third-party doctrine to location data; it did not throw the doctrine out."],
+      "prohibited_wording": ["The Court abolished the third-party doctrine."],
+      "temporal_scope": "2018-present", "geographic_scope": "United States", "units": "",
+      "status": "approved", "notes": "Narrow holding."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The third-party doctrine — that information voluntarily shared with a third party loses its reasonable expectation of privacy — comes from Smith v. Maryland (1979, dialed phone numbers) and United States v. Miller (1976, bank records).",
+      "importance": "major", "sensitivity": "low", "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Opinion, discussion of Smith and Miller"],
+      "counterevidence": [],
+      "confidence": 0.96,
+      "allowed_wording": ["The doctrine says if you share it with a company, you lose the privacy in it; it comes from 1970s cases about dialed numbers and bank records."],
+      "prohibited_wording": [],
+      "temporal_scope": "1976-present", "geographic_scope": "United States", "units": "",
+      "status": "approved", "notes": "Doctrinal background; both cases/years verified."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "The records were obtained without a warrant under the Stored Communications Act (18 U.S.C. 2703(d)), which requires only a court order on 'specific and articulable facts' — a standard lower than probable cause.",
+      "importance": "supporting", "sensitivity": "low", "grade": "A",
+      "source_ids": ["SRC-0002"],
+      "evidence_locations": ["Lawfare summary; opinion, procedural posture"],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": ["Police used a federal law that needed far less than a warrant."],
+      "prohibited_wording": ["Police had a warrant."],
+      "temporal_scope": "2011-present", "geographic_scope": "United States", "units": "",
+      "status": "approved", "notes": "SCA 2703(d) standard."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "The government obtained about 127 days of Carpenter's cell-site location information, roughly 12,898 location points tracing his phone's movements.",
+      "importance": "supporting", "sensitivity": "low", "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court, facts (127 days; ~12,898 points)"],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": ["127 days of records — almost 13,000 location points."],
+      "prohibited_wording": [],
+      "temporal_scope": "2010-2011", "geographic_scope": "United States", "units": "days; location points",
+      "status": "approved", "notes": "Exact figure ~12,898; 'almost 13,000' acceptable."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "The case arose from a series of armed robberies of RadioShack and cell-phone (T-Mobile) stores in the Detroit, Michigan area in 2010-2011; a confederate confessed to the FBI and provided phone numbers, including Timothy Carpenter's.",
+      "importance": "supporting", "sensitivity": "medium", "grade": "A",
+      "source_ids": ["SRC-0002", "SRC-0003"],
+      "evidence_locations": ["Lawfare summary; DOJ press release"],
+      "counterevidence": [],
+      "confidence": 0.93,
+      "allowed_wording": ["A string of store robberies near Detroit; a confederate gave the FBI the suspects' phone numbers."],
+      "prohibited_wording": [],
+      "temporal_scope": "2010-2011", "geographic_scope": "Detroit area, Michigan, United States", "units": "",
+      "status": "approved", "notes": "Real person; factual, neutral."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "Timothy Carpenter was convicted and sentenced to 116 years in prison.",
+      "importance": "supporting", "sensitivity": "medium", "grade": "B",
+      "source_ids": ["SRC-0003"],
+      "evidence_locations": ["DOJ press release (116-year sentence)"],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": ["He was convicted and sentenced to 116 years."],
+      "prohibited_wording": ["He was acquitted."],
+      "temporal_scope": "2013-present", "geographic_scope": "United States", "units": "years",
+      "status": "approved", "notes": "Sentence per DOJ. Describe neutrally; the Supreme Court ruling concerned the search, not guilt."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "The Court reasoned that CSLI provides a comprehensive, detailed, and effortless chronicle of a person's movements over time and is generated without meaningful voluntary choice, so sharing it with a carrier does not strip away its Fourth Amendment privacy.",
+      "importance": "major", "sensitivity": "low", "grade": "A",
+      "source_ids": ["SRC-0001"],
+      "evidence_locations": ["Opinion of the Court, qualitative-difference reasoning"],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": ["Location data maps your whole life and you don't really choose to create it, so sharing it doesn't surrender your privacy."],
+      "prohibited_wording": [],
+      "temporal_scope": "2018-present", "geographic_scope": "United States", "units": "",
+      "status": "approved", "notes": "Reasoning core."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "The four dissenting justices warned that the majority's line was vague and that drawing such lines was a task for legislatures rather than courts.",
+      "importance": "context", "sensitivity": "low", "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002"],
+      "evidence_locations": ["Dissents (Kennedy, Thomas, Alito, Gorsuch)"],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": ["The dissenters said the line was blurry and that Congress, not the Court, should draw it."],
+      "prohibited_wording": [],
+      "temporal_scope": "2018", "geographic_scope": "United States", "units": "",
+      "status": "approved", "notes": "Dissent (balance)."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "warn",
+    "findings": ["Durable content hashes for SRC-0001/0002/0003 not yet captured; recheck before publish. Note: ignore the stray Cornell LII AI-summary that misreports the vote as 6-3 (true vote 5-4)."]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-006-terry",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T00:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-20T00:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner content/direction sign-off for the Terry v. Ohio script v001 (part of the EP6-8 trilogy approval, see episodes/_planning/EP6-8_HANDOFF.md sec.8). Bound to content_hash sha256:9796129c11dd14d0536f5584eabc2dbe61a79f90c2e9b5bd1b084f4becc34b16 — re-approval required if the script revision/hash changes (rules/12). Facts were fact-checked 2026-06-20 against the primary opinion (392 U.S. 1). This sign-off carries forward to the verified revision provided no fact or claim changes.",
+  "conditions": [
+    "Run script_qc (readability / anti-filler / claim-link audit) and a draft-voice timing check before promotion to script_verified.",
+    "Capture durable content hashes for SRC-0001 (Cornell LII) and SRC-0002 (Oyez) before publish.",
+    "Keep policing tone strictly neutral; treat later stop-and-frisk controversy as documented debate (CLM-0009), not accusation."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-006-terry/03_script/script.annotated.v001.json"
+}

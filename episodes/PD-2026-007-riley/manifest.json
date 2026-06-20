@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-007-riley",
+  "topic_id": "TOP-20260620-007",
+  "slug": "riley",
+  "title_working": "Can the Police Search Your Phone?",
+  "state": "script_review",
+  "risk_class": "R2",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-007-riley-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/03_script/script.annotated.v001.json",
+      "checksum": "sha256:605f7feee0cbf3032d67a9076307d84e6aaf60d92d392d6653ccd087afe51d4c",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "not_run"
+    }
+  ],
+  "approvals": ["APR-0001"],
+  "costs": {
+    "estimated": {"amount": 0, "currency": "USD"},
+    "actual": {"amount": 0, "currency": "USD"},
+    "soft_limit": {"amount": 100, "currency": "USD"},
+    "hard_limit": {"amount": 200, "currency": "USD"}
+  },
+  "warnings": [
+    "Claude owns research+script; Codex begins production at scenes/visuals (see episodes/_planning/EP6-8_HANDOFF.md). Image generation = Codex; edit = Remotion+FFmpeg.",
+    "Research QC is 'warn': durable content hashes for SRC-0001/0002/0003 not yet captured. Facts fact-checked (2026-06-20) against the primary opinion; capture durable hashes before publish.",
+    "script_qc (readability/anti-filler) and a draft-voice timing check have NOT been run yet — required before promotion to script_verified.",
+    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:\\pd-media), not in this repo."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-20T00:00:00+09:00",
+  "updated_at": "2026-06-20T00:00:00+09:00"
+}

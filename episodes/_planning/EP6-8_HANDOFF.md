@@ -54,10 +54,20 @@ Strength-based split (owner-set):
 - **CODEX owns the RIGHT side**: scenes → visual assets (image generation) → narration audio →
   music → motion → edit → render.
 
-### 1A. CLAUDE — script status (this is Claude's deliverable, not Codex's)
-- EP6–8 scripts: written, fact-checked (§7), owner content-approved (§8). Claude finishes the
-  formal grounding (CLM placeholders → cited claim ledger) + final polish → script.en.v001.md.
-- Codex consumes these as the authoritative, locked input. Do not regenerate them.
+### 1A. CLAUDE — script status (DONE — Claude's deliverable, not Codex's)
+- EP6–8 are now formalized as proper episode workspaces (owner content-approved §8; schema-validated
+  + claim-link-consistent on 2026-06-20):
+    - episodes/PD-2026-006-terry/       (state: script_review)
+    - episodes/PD-2026-007-riley/       (state: script_review)
+    - episodes/PD-2026-008-carpenter/   (state: script_review)
+  Each contains: 00_topic/topic.v001.json; 01_research/sources.v001.json + claims.v001.json (cited,
+  graded; facts fact-checked, see §7); 03_script/script.en.v001.md + script.annotated.v001.json
+  (claim-linked, every span→claim verified); manifest.json; events/events.jsonl; approvals/APR-0001.json.
+- Codex consumes script.en.v001.md / script.annotated.v001.json as the AUTHORITATIVE, LOCKED input.
+  Do NOT regenerate or rewrite them. The seed drafts in episodes/_planning/seeds/ are SUPERSEDED.
+- Remaining (Claude, minor, pre-publish only): run script_qc + a draft-voice timing pass to promote
+  script_review → script_verified; capture durable source content hashes. Neither blocks Codex's
+  scene/visual work.
 
 ### 1B. CODEX — START HERE (per episode, EP6 first), using Claude's finished script
 1. pd-new-episode → workspace/manifest/IDs PD-2026-006/007/008 (if not already created).

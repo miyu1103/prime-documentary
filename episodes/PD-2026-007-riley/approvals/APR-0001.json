@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-007-riley",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T00:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-20T00:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner content/direction sign-off for the Riley v. California script v001 (part of the EP6-8 trilogy approval, see episodes/_planning/EP6-8_HANDOFF.md sec.8). Bound to content_hash sha256:605f7feee0cbf3032d67a9076307d84e6aaf60d92d392d6653ccd087afe51d4c — re-approval required if the script revision/hash changes (rules/12). Facts fact-checked 2026-06-20 against the primary opinion (573 U.S. 373). Carries forward to the verified revision provided no fact or claim changes.",
+  "conditions": [
+    "Run script_qc (readability / anti-filler / claim-link audit) and a draft-voice timing check before promotion to script_verified.",
+    "Capture durable content hashes for SRC-0001/0002/0003 before publish.",
+    "Phrase the vote as unanimous in the result (9-0) with Alito concurring in part and in the judgment (CLM-0002); do not overstate full agreement on reasoning."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-007-riley/03_script/script.annotated.v001.json"
+}
