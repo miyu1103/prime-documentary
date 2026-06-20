@@ -6,9 +6,11 @@ Local A1111 only. No paid API, no upload. Outputs go to H:/pd-media.
 from __future__ import annotations
 
 import base64
+import argparse
 import hashlib
 import json
 import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -61,9 +63,9 @@ def sha256_text(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
-def post(payload: dict) -> dict:
+def post(payload: dict, *, timeout: int = 900) -> dict:
     req = urllib.request.Request(API, data=json.dumps(payload).encode("utf-8"), headers={"Content-Type": "application/json"})
-    with urllib.request.urlopen(req, timeout=420) as r:
+    with urllib.request.urlopen(req, timeout=timeout) as r:
         return json.loads(r.read().decode("utf-8"))
 
 
@@ -72,7 +74,26 @@ def save(b64: str, path: Path) -> None:
     path.write_bytes(base64.b64decode(b64))
 
 
-def main() -> int:
+def post_interrupt() -> None:
+    try:
+        req = urllib.request.Request("http://127.0.0.1:7860/sdapi/v1/interrupt", data=b"{}", headers={"Content-Type": "application/json"})
+        urllib.request.urlopen(req, timeout=10).read()
+    except Exception:
+        pass
+
+
+def candidate_total() -> int:
+    total = 0
+    for _, section, *_ in PROMPTS:
+        total += 6 if section in {"hook", "thumbnail"} else 4
+    return total
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--max-new", type=int, default=0, help="Stop after generating this many new images. 0 = no limit.")
+    parser.add_argument("--section", default="", help="Only generate this section, e.g. hook, act1, thumbnail.")
+    args = parser.parse_args(argv)
     OUT.mkdir(parents=True, exist_ok=True)
     manifest = {
         "episode_id": EP,
@@ -84,14 +105,30 @@ def main() -> int:
         "items": [],
     }
     base_seed = 826000
-    total = len(PROMPTS) * 4
+    total = candidate_total()
     n = 0
+    generated = 0
+    skipped = 0
+    failed = 0
     for item_id, section, scene_id, shot_id, core in PROMPTS:
+        if args.section and section != args.section:
+            continue
         candidate_count = 6 if section in {"hook", "thumbnail"} else 4
         for c in range(candidate_count):
             n += 1
             seed = base_seed + n * 137
             prompt = f"{core}, {STYLE}"
+            out = OUT / section / f"{item_id}_c{c+1:02d}_seed{seed}.png"
+            meta_path = out.with_suffix(".json")
+            if out.exists() and out.stat().st_size > 1024 and meta_path.exists():
+                try:
+                    manifest["items"].append(json.loads(meta_path.read_text("utf-8")))
+                except Exception:
+                    manifest["items"].append({"path": str(out), "status": "candidate_existing"})
+                skipped += 1
+                continue
+            if args.max_new and generated >= args.max_new:
+                break
             payload = {
                 "prompt": prompt,
                 "negative_prompt": NEG,
@@ -116,8 +153,18 @@ def main() -> int:
                 "do_not_save_samples": True,
                 "do_not_save_grid": True,
             }
-            result = post(payload)
-            out = OUT / section / f"{item_id}_c{c+1:02d}_seed{seed}.png"
+            try:
+                result = post(payload)
+            except TimeoutError as e:
+                failed += 1
+                post_interrupt()
+                print(f"[TIMEOUT] {item_id} c{c+1:02d} seed={seed}: {e}")
+                continue
+            except (urllib.error.URLError, urllib.error.HTTPError, ConnectionError) as e:
+                failed += 1
+                post_interrupt()
+                print(f"[ERROR] {item_id} c{c+1:02d} seed={seed}: {e}")
+                continue
             save(result["images"][0], out)
             meta = {
                 "asset_id": f"{EP}-{scene_id}-IMG-{c+1:03d}",
@@ -138,14 +185,20 @@ def main() -> int:
             }
             out.with_suffix(".json").write_text(json.dumps(meta, indent=2, ensure_ascii=False) + "\n", "utf-8")
             manifest["items"].append(meta)
+            generated += 1
             print(f"[{n:03d}] {out}")
             if n % 8 == 0:
                 (OUT / "asset_manifest.v001.partial.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", "utf-8")
+        if args.max_new and generated >= args.max_new:
+            break
     manifest["finished_at"] = time.strftime("%Y-%m-%dT%H:%M:%S%z")
     manifest["count"] = len(manifest["items"])
+    manifest["generated_this_run"] = generated
+    manifest["skipped_existing"] = skipped
+    manifest["failed_this_run"] = failed
     (OUT / "asset_manifest.v001.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", "utf-8")
-    print(f"done count={len(manifest['items'])} out={OUT}")
-    return 0
+    print(f"done count={len(manifest['items'])} generated={generated} skipped={skipped} failed={failed} out={OUT}")
+    return 0 if failed == 0 else 1
 
 
 if __name__ == "__main__":
