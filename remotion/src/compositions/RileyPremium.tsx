@@ -10,6 +10,7 @@ import {
   useVideoConfig,
 } from 'remotion';
 import {BRAND} from '../brand';
+import {BrandEndcard, BrandOpening, OPENING_SEC} from '../components/Bookends';
 import {Grain} from '../components/Grain';
 import {LightSweep, Particles, Vignette} from '../components/Motion';
 
@@ -81,12 +82,19 @@ const scenes: Scene[] = [
   {id: 'S023', start: 545, dur: 24, mode: 'still', title: 'Automatic records', kicker: 'ACT IV', image: 'riley/PD-2026-007-S023-IMG-001.v001.png'},
   {id: 'S024', start: 569, dur: 12, mode: 'split', title: 'Inside the phone vs. the trail it leaves', kicker: 'ACT IV', text: ['inside', 'trail']},
   {id: 'S025', start: 581, dur: 22, mode: 'quote', title: 'For that, police need a warrant.', kicker: 'ACT IV', image: 'riley/PD-2026-007-S025-IMG-001.v001.png'},
-  {id: 'S026', start: 603, dur: 16, mode: 'split', title: 'Chosen contents | Automatic records', kicker: 'ENDING', text: ['chosen contents', 'automatic records']},
-  {id: 'S027', start: 619, dur: 21, mode: 'still', title: "Next: your phone is tracking you", kicker: 'NEXT', image: 'riley/PD-2026-007-S027-IMG-001.v001.png'},
-  {id: 'S028', start: 640, dur: 6, mode: 'end', title: 'Prime Documentary', subtitle: 'Subscribe', kicker: 'END'},
+  {id: 'S026', start: 603, dur: 18, mode: 'split', title: 'Chosen contents | Automatic records', kicker: 'ENDING', text: ['chosen contents', 'automatic records']},
+  {id: 'S027', start: 621, dur: 16, mode: 'still', title: "Next: your phone is tracking you", kicker: 'NEXT', image: 'riley/PD-2026-007-S027-IMG-001.v001.png'},
+  {id: 'S028', start: 637, dur: 9, mode: 'end', title: 'Prime Documentary', subtitle: 'Subscribe', kicker: 'END'},
 ];
 
 const fitTitle = (text: string): number => Math.min(82, Math.max(38, 1380 / Math.max(text.length, 15)));
+
+const sceneNumber = (id: string): number => {
+  const match = id.match(/\d+/);
+  return match ? Number(match[0]) : 1;
+};
+
+const clamp01 = (value: number): number => Math.max(0, Math.min(1, value));
 
 const ReconstructionLabel: React.FC = () => (
   <div style={{
@@ -140,9 +148,14 @@ const LowerThird: React.FC<{scene: Scene}> = ({scene}) => {
 
 const Shell: React.FC<{scene: Scene; children: React.ReactNode}> = ({scene, children}) => {
   const frame = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-  const p = interpolate(frame, [0, durationInFrames], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
-  const scale = 1.015 + p * 0.055;
+  const {fps} = useVideoConfig();
+  const sceneFrames = Math.max(1, Math.round(scene.dur * fps));
+  const p = interpolate(frame, [0, sceneFrames], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const seed = sceneNumber(scene.id);
+  const panX = Math.sin(seed * 1.63) * 74;
+  const panY = Math.cos(seed * 1.21) * 46;
+  const scale = 1.08 + p * (0.14 + (seed % 4) * 0.012);
+  const rotate = Math.sin((frame + seed * 19) / 155) * 0.45;
   return (
     <AbsoluteFill style={{backgroundColor: INK, overflow: 'hidden'}}>
       {scene.image ? (
@@ -153,15 +166,33 @@ const Shell: React.FC<{scene: Scene; children: React.ReactNode}> = ({scene, chil
               width: '100%',
               height: '100%',
               objectFit: 'cover',
-              transform: `scale(${scale}) translateY(${p * -18}px)`,
-              filter: 'brightness(0.58) contrast(1.18) saturate(0.95)',
+              objectPosition: `${50 + Math.sin(seed) * 8}% ${50 + Math.cos(seed) * 6}%`,
+              transform: `scale(${scale}) translate(${interpolate(p, [0, 1], [-panX, panX])}px, ${interpolate(p, [0, 1], [-panY, panY])}px) rotate(${rotate}deg)`,
+              filter: 'brightness(0.62) contrast(1.22) saturate(1.03)',
+            }}
+          />
+          <Img
+            src={staticFile(scene.image)}
+            style={{
+              position: 'absolute',
+              left: `${seed % 2 ? 58 : -3}%`,
+              top: `${seed % 3 === 0 ? 11 : 40}%`,
+              width: '52%',
+              height: '52%',
+              objectFit: 'cover',
+              transform: `scale(${1.16 + p * 0.18}) translate(${Math.sin(frame / 90 + seed) * 34}px, ${Math.cos(frame / 110 + seed) * 22}px)`,
+              opacity: 0.18,
+              filter: 'brightness(1.1) contrast(1.45) saturate(0.9) blur(1px)',
+              mixBlendMode: 'screen',
+              clipPath: seed % 2 ? 'polygon(14% 0, 100% 0, 82% 100%, 0 100%)' : 'polygon(0 0, 86% 0, 100% 100%, 18% 100%)',
             }}
           />
         </AbsoluteFill>
       ) : (
         <AbsoluteFill style={{background: `radial-gradient(90% 70% at 64% 34%, #14345f 0%, ${NAVY} 35%, ${INK} 84%)`}} />
       )}
-      <AbsoluteFill style={{background: `linear-gradient(180deg, ${INK}E8 0%, #00000016 43%, ${INK}F4 100%)`}} />
+      <AbsoluteFill style={{background: `linear-gradient(180deg, ${INK}D8 0%, #00000008 42%, ${INK}E8 100%)`}} />
+      <SceneMotionOverlay scene={scene} progress={p} seed={seed} />
       <LightSweep seed={scene.id} color={scene.mode === 'court' || scene.mode === 'quote' ? GOLD : BLUE} />
       <Particles seed={scene.id} count={scene.image ? 18 : 28} color={scene.mode === 'court' ? GOLD : BLUE} />
       {children}
@@ -169,6 +200,127 @@ const Shell: React.FC<{scene: Scene; children: React.ReactNode}> = ({scene, chil
       {scene.recon ? <ReconstructionLabel /> : null}
       <Vignette strength={1} />
       <Grain opacity={0.05} />
+    </AbsoluteFill>
+  );
+};
+
+const SceneMotionOverlay: React.FC<{scene: Scene; progress: number; seed: number}> = ({scene, progress, seed}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const scanPeriod = Math.round(fps * (3.3 + (seed % 4) * 0.35));
+  const scanP = (frame % scanPeriod) / scanPeriod;
+  const scanX = interpolate(scanP, [0, 1], [-260, 2160]);
+  const pulse = 0.55 + Math.sin(frame / 14 + seed) * 0.25;
+  const chips = (scene.text ?? []).slice(0, 5);
+  const routeOpacity = scene.mode === 'still' || scene.mode === 'stamp' ? 0.58 : 0.32;
+  return (
+    <>
+      <svg width="1920" height="1080" style={{position: 'absolute', inset: 0, opacity: 0.88}}>
+        <defs>
+          <linearGradient id={`scan-${scene.id}`} x1="0" x2="1" y1="0" y2="0">
+            <stop offset="0%" stopColor={BLUE} stopOpacity="0" />
+            <stop offset="48%" stopColor={scene.mode === 'quote' ? GOLD : BLUE} stopOpacity="0.74" />
+            <stop offset="100%" stopColor={BLUE} stopOpacity="0" />
+          </linearGradient>
+        </defs>
+        <rect x={scanX} y="0" width="185" height="1080" fill={`url(#scan-${scene.id})`} opacity={0.25 + pulse * 0.25} />
+        {Array.from({length: 7}, (_, i) => {
+          const y = 210 + i * 96 + Math.sin(frame / 55 + i + seed) * 16;
+          const x1 = 220 + ((i * 173 + seed * 31) % 560);
+          const x2 = 1160 + ((i * 127 + seed * 47) % 470);
+          return (
+            <path
+              key={i}
+              d={`M${x1} ${y} C${x1 + 190} ${y - 70}, ${x2 - 230} ${y + 84}, ${x2} ${y + Math.sin(i + seed) * 58}`}
+              fill="none"
+              stroke={i % 2 ? GOLD : BLUE}
+              strokeWidth={i % 2 ? 4 : 5}
+              strokeLinecap="round"
+              strokeDasharray="18 22"
+              strokeDashoffset={-(frame * (1.2 + i * 0.18))}
+              opacity={routeOpacity * (0.5 + i / 12)}
+            />
+          );
+        })}
+        <circle cx={1480 + Math.sin(frame / 80 + seed) * 70} cy={240 + Math.cos(frame / 70 + seed) * 42} r={42 + pulse * 22} fill="none" stroke={GOLD} strokeWidth="5" opacity="0.32" />
+        <circle cx={1480 + Math.sin(frame / 80 + seed) * 70} cy={240 + Math.cos(frame / 70 + seed) * 42} r="9" fill={GOLD} opacity="0.8" />
+      </svg>
+      {chips.map((label, i) => {
+        const enter = clamp01((progress * 1.45) - i * 0.12);
+        return (
+          <div
+            key={`${scene.id}-${label}`}
+            style={{
+              position: 'absolute',
+              left: 1260 + Math.sin(seed + i) * 95,
+              top: 430 + i * 76 + Math.cos(seed * 0.4 + i) * 22,
+              width: 250,
+              height: 54,
+              border: `2px solid ${i % 2 ? GOLD : BLUE}`,
+              background: '#000000A8',
+              color: i % 2 ? GOLD : WHITE,
+              fontFamily: BRAND.font.body,
+              fontSize: 22,
+              fontWeight: 800,
+              textTransform: 'uppercase',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              opacity: enter * 0.82,
+              transform: `translateX(${(1 - enter) * 80 + Math.sin(frame / 45 + i) * 8}px)`,
+              boxShadow: `0 0 22px ${i % 2 ? GOLD : BLUE}55`,
+              letterSpacing: 0,
+            }}
+          >
+            {label}
+          </div>
+        );
+      })}
+      <div
+        style={{
+          position: 'absolute',
+          left: 92,
+          bottom: 54,
+          width: 410,
+          height: 7,
+          background: `linear-gradient(90deg, ${GOLD}, ${BLUE})`,
+          transformOrigin: 'left center',
+          transform: `scaleX(${Math.max(0.08, progress)})`,
+          opacity: 0.72,
+          boxShadow: `0 0 22px ${BLUE}`,
+        }}
+      />
+    </>
+  );
+};
+
+const SectionBumper: React.FC<{label: string; title: string; subtitle?: string; tone?: 'blue' | 'gold'}> = ({label, title, subtitle, tone = 'blue'}) => {
+  const frame = useCurrentFrame();
+  const {fps, durationInFrames} = useVideoConfig();
+  const color = tone === 'gold' ? GOLD : BLUE;
+  const inS = spring({frame: frame - Math.round(0.08 * fps), fps, config: {damping: 18, stiffness: 100}});
+  const out = interpolate(frame, [durationInFrames - Math.round(0.42 * fps), durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const rule = interpolate(frame, [8, 28], [0, 620], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{background: `radial-gradient(95% 85% at 52% 42%, ${tone === 'gold' ? '#3A2A08' : '#0F356B'} 0%, ${NAVY} 39%, ${INK} 86%)`, opacity: Math.min(inS, out), overflow: 'hidden'}}>
+      <LightSweep seed={`section-${label}`} color={color} />
+      <Particles seed={`section-${label}`} count={24} color={color} />
+      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
+        <div style={{fontFamily: BRAND.font.body, color: SILVER, fontSize: 25, fontWeight: 800, textTransform: 'uppercase', letterSpacing: 0, opacity: inS}}>
+          {label}
+        </div>
+        <div style={{width: rule, height: 3, background: color, margin: '18px 0 26px', boxShadow: `0 0 20px ${color}`}} />
+        <div style={{fontFamily: BRAND.font.display, color: WHITE, fontSize: 96, lineHeight: 0.92, textTransform: 'uppercase', textAlign: 'center', textShadow: `0 0 44px ${color}66`, transform: `translateY(${interpolate(inS, [0, 1], [32, 0])}px)`, opacity: inS, letterSpacing: 0}}>
+          {title}
+        </div>
+        {subtitle ? (
+          <div style={{fontFamily: BRAND.font.body, color: color, fontSize: 30, fontWeight: 800, marginTop: 18, opacity: inS, letterSpacing: 0}}>
+            {subtitle}
+          </div>
+        ) : null}
+      </AbsoluteFill>
+      <Vignette strength={1} />
+      <Grain opacity={0.06} />
     </AbsoluteFill>
   );
 };
@@ -416,13 +568,7 @@ const TrailGraphic: React.FC = () => {
 };
 
 const EndGraphic: React.FC = () => (
-  <AbsoluteFill style={{background: `radial-gradient(70% 70% at 50% 42%, #12345C 0%, ${NAVY} 38%, ${INK} 84%)`, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{textAlign: 'center'}}>
-      <div style={{fontFamily: BRAND.font.display, color: WHITE, fontSize: 96, textTransform: 'uppercase', letterSpacing: 0}}>Prime Documentary</div>
-      <div style={{fontFamily: BRAND.font.body, color: GOLD, fontSize: 34, marginTop: 16, fontWeight: 800, letterSpacing: 0}}>Subscribe</div>
-    </div>
-    <Grain opacity={0.05} />
-  </AbsoluteFill>
+  <BrandEndcard />
 );
 
 const SceneBody: React.FC<{scene: Scene}> = ({scene}) => {
@@ -456,6 +602,18 @@ export const RileyPremium: React.FC = () => (
         <SceneBody scene={scene} />
       </Sequence>
     ))}
+    <Sequence from={0} durationInFrames={Math.round(3.2 * BRAND.video.fps)} name="HOOK_BUMPER">
+      <SectionBumper label="Hook" title="Can they search your phone?" subtitle="The arrest question" tone="blue" />
+    </Sequence>
+    <Sequence from={Math.round(28 * BRAND.video.fps)} durationInFrames={Math.round(OPENING_SEC * BRAND.video.fps)} name="BRAND_OPENING">
+      <BrandOpening seriesLabel="Landmark Rights Cases" title="Riley v. California" subtitle="When your phone became different" />
+    </Sequence>
+    <Sequence from={Math.round(72 * BRAND.video.fps)} durationInFrames={Math.round(2.5 * BRAND.video.fps)} name="MAIN_BODY_BUMPER">
+      <SectionBumper label="Main Story" title="The case and the rule" subtitle="Riley + Wurie -> Get a warrant" tone="gold" />
+    </Sequence>
+    <Sequence from={Math.round(603 * BRAND.video.fps)} durationInFrames={Math.round(2.6 * BRAND.video.fps)} name="ENDING_BUMPER">
+      <SectionBumper label="Ending" title="The edge of protection" subtitle="Inside the phone vs. the trail it leaves" tone="blue" />
+    </Sequence>
   </AbsoluteFill>
 );
 
