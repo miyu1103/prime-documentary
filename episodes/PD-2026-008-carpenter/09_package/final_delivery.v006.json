@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-008-carpenter",
+  "revision": "v006",
+  "generated_at": "2026-06-21T00:38:00+09:00",
+  "status": "complete_not_published",
+  "publish_performed": false,
+  "upload_performed": false,
+  "paid_generation_performed": true,
+  "youtube": {
+    "selected_title": "Your Phone Is Tracking You — and the Police Wanted the Map",
+    "thumbnail": "episodes/PD-2026-008-carpenter/09_package/thumbnail.selected.v005.png",
+    "thumbnail_source_option": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail.sdxl_art.v005.png",
+    "synthetic_content_disclosure_required": true,
+    "on_screen_synthetic_label": "symbolic reconstruction",
+    "publish_gate": "closed"
+  },
+  "render": {
+    "file": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\08_edit\\carpenter_review_v001.mp4",
+    "artifact": "artifact://episodes/PD-2026-008-carpenter/08_edit/carpenter_review_v001.mp4",
+    "sha256": "4336316404118b944adccc52cd10cfa06c64c1c88864875c94070d26582fbc79",
+    "duration_seconds": 678.0,
+    "video": "1920x1080 H.264, 30fps, v006 SDXL motion-backdrop cut",
+    "audio": "AAC, narration + library music/SFX",
+    "audio_mean_volume_db": -22.4,
+    "audio_max_volume_db": -2.0
+  },
+  "thumbnail": {
+    "file": "episodes/PD-2026-008-carpenter/09_package/thumbnail.selected.v005.png",
+    "sha256": "2edbb9b38b5ac02e0c7d99381c446ec11dc942b0591afd7947189f6d9a57bec7",
+    "dimensions": "1280x720",
+    "text": "127 DAYS / NO WARRANT",
+    "kicker": "PHONE LOCATION RECORDS",
+    "source_option": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail.sdxl_art.v005.png",
+    "selection_reason": "Replaces v004's flat procedural look with richer generated background art, while keeping text accurate and thumbnail-readable."
+  },
+  "qc": {
+    "review_contact_sheet": "episodes/PD-2026-008-carpenter/08_edit/renders/review_contact_sheet.motion_v006.jpg",
+    "image_selection": "episodes/PD-2026-008-carpenter/05_visuals/selection.v002.json",
+    "thumbnail_options": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_options.v005.json",
+    "rights_manifest": "episodes/PD-2026-008-carpenter/09_package/rights_manifest.v001.json",
+    "caption_file": "episodes/PD-2026-008-carpenter/08_edit/captions.review_proxy.v001.srt",
+    "accuracy_checks": {
+      "vote_5_4": true,
+      "no_6_3_in_generated_thumbnail_or_remotion_sources": true,
+      "points_12898": true,
+      "symbolic_reconstruction_label": true,
+      "no_real_person_likeness": true,
+      "no_authentic_footage_claim": true
+    }
+  },
+  "locked_inputs_unchanged": [
+    "episodes/PD-2026-008-carpenter/03_script/script.en.v001.md",
+    "episodes/PD-2026-008-carpenter/03_script/script.annotated.v001.json",
+    "episodes/PD-2026-008-carpenter/01_research/claims.v001.json"
+  ],
+  "notes": [
+    "Completion package is ready for owner review or manual upload, but upload/publish was not performed.",
+    "Video v006 replaces weak static backgrounds with local SDXL symbolic-reconstruction backdrops and stronger Remotion pan/zoom/light-sweep motion.",
+    "Selected thumbnail v005 remains active.",
+    "All AI-assisted visuals are symbolic reconstruction and require synthetic-content disclosure on YouTube.",
+    "Timothy Carpenter is not depicted with an identifiable likeness."
+  ]
+}

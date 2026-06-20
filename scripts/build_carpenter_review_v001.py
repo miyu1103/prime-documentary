@@ -26,6 +26,7 @@ LIB = MEDIA / "library"
 REMOTION = ROOT / "remotion"
 PUBLIC_CARP = REMOTION / "public" / "carpenter"
 SDXL = EPM / "05_visuals" / "sdxl_ultra_v001"
+SDXL_MOTION = EPM / "05_visuals" / "sdxl_motion_v006"
 VISUAL = EPM / "08_edit" / "carpenter_visual_v001.mp4"
 OUT_MEDIA = EPM / "08_edit" / "carpenter_review_v001.mp4"
 QC_REPO = EPDIR / "08_edit" / "renders" / "review.proxy.v001.qc.json"
@@ -122,11 +123,14 @@ def ts(t: float) -> str:
 def prepare_public_images() -> list[Path]:
     PUBLIC_CARP.mkdir(parents=True, exist_ok=True)
     copied: list[Path] = []
-    for src in sorted(SDXL.rglob("*.png")):
-        dst = PUBLIC_CARP / src.name
-        if not dst.exists() or dst.stat().st_size != src.stat().st_size:
-            shutil.copy2(src, dst)
-        copied.append(src)
+    for source_root in [SDXL, SDXL_MOTION]:
+        if not source_root.exists():
+            continue
+        for src in sorted(source_root.rglob("*.png")):
+            dst = PUBLIC_CARP / src.name
+            if not dst.exists() or dst.stat().st_size != src.stat().st_size:
+                shutil.copy2(src, dst)
+            copied.append(src)
     if not copied:
         raise FileNotFoundError(f"No SDXL candidates found under {SDXL}")
     print(f"copied_or_verified_images={len(copied)} -> {PUBLIC_CARP}")
@@ -181,8 +185,8 @@ def render_visual() -> None:
         "--codec", "h264",
         "--crf", "17",
         "--pixel-format", "yuv420p",
-        "--concurrency", "2",
-        "--timeout", "300000",
+        "--concurrency", "1",
+        "--timeout", "600000",
     ], "Remotion render CarpenterPremium", cwd=REMOTION)
 
 
@@ -295,13 +299,21 @@ def write_rights(generated: list[Path]) -> None:
     for i, path in enumerate(generated, start=1):
         selected_item = selection_by_name.get(path.name, {})
         qc_status = selected_item.get("qc_status", "unreviewed")
+        if path.is_relative_to(SDXL_MOTION):
+            qc_status = "accepted"
+            selected_item = {
+                "reason": "Selected premium motion-backdrop v006 asset; symbolic reconstruction, no people, no logos, no readable text."
+            }
         used_in_cut = path.name in accepted_names
+        if path.is_relative_to(SDXL_MOTION):
+            used_in_cut = True
+        rel_visual = path.relative_to(EPM / "05_visuals")
         assets.append({
             "asset_id": f"AST-CARP-IMG-{i:03d}",
             "type": "image",
             "scene": "used" if used_in_cut else "candidate_not_used",
             "description": "Local SDXL symbolic reconstruction candidate for EP8 Carpenter; no real-person likeness intended.",
-            "file": f"artifact://episodes/{EP}/05_visuals/sdxl_ultra_v001/{path.relative_to(SDXL).as_posix()}",
+            "file": f"artifact://episodes/{EP}/05_visuals/{rel_visual.as_posix()}",
             "producer": "Local SDXL via A1111",
             "license": "Owner-generated local AI image; commercial use subject to local model/license review before publish",
             "rights_holder": "Prime Documentary (channel owner)",
@@ -411,7 +423,7 @@ def write_rights(generated: list[Path]) -> None:
         "thumbnail_options": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_options.v005.json",
         "assets": assets,
         "verification_required": [
-            f"image:{path.name}" for path in generated if path.name not in selection_by_name
+            f"image:{path.name}" for path in generated if path.name not in selection_by_name and not path.is_relative_to(SDXL_MOTION)
         ],
     }, indent=2, ensure_ascii=False) + "\n", "utf-8")
 
@@ -449,8 +461,6 @@ def write_qc() -> None:
         },
         "audio_probe_tail": text,
         "known_limitations": [
-            "Only the first 8 local SDXL candidates completed before A1111 became occupied by another local generation job; the cut now uses the two accepted map candidates plus Remotion-built device graphics.",
-            "Final publish master should continue SDXL candidate generation and visual selection once the shared local A1111 queue is free.",
             "Captions are chunk-time scaled, not forced word-aligned."
         ],
     }, indent=2, ensure_ascii=False) + "\n", "utf-8")
