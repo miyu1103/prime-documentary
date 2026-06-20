@@ -29,7 +29,10 @@
     "edit_build_script": "v001",
     "captions_review_proxy": "v001",
     "review_proxy_qc": "v001",
-    "review_proxy_render": "v001"
+    "review_proxy_render": "v001",
+    "thumbnail_component": "v001",
+    "thumbnail_build_script": "v001",
+    "thumbnail_options": "v001"
   },
   "artifacts": [
     {
@@ -97,7 +100,7 @@
       "artifact_type": "rights_manifest",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json",
-      "checksum": "sha256:d66bb21f5fe461d08d23bcd7b5097ec91521c7fa21aa727fcd5092d9ece51ae5",
+      "checksum": "sha256:2f22e12dc3f536458b19956551596c93b33606b6f7c1a02324a51fb709026aea",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -177,7 +180,7 @@
       "artifact_type": "remotion_entry",
       "revision": "v001",
       "uri": "artifact://remotion/src/terry_index.tsx",
-      "checksum": "sha256:3f3dc774fb4ec6642129068f4f02903246c5756edfa11472c8295fcb2504572e",
+      "checksum": "sha256:6fdafb92e14a501154957bcee1c7f22f7cb2a152b32350c3735d621d48b82c8e",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -221,6 +224,96 @@
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-component",
+      "artifact_type": "thumbnail_component",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/compositions/TerryThumbnails.tsx",
+      "checksum": "sha256:ea83343ef02a0bb7ae28395c072fcaa827a7a0737f3f3ebe1c4863b2099b23b7",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-build-script",
+      "artifact_type": "thumbnail_build_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/build_terry_thumbnails_v001.py",
+      "checksum": "sha256:01a37fd1cc988d586e24465d1d7f3ce6807982bbe56e64473efe85dfdff22a7c",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-options",
+      "artifact_type": "thumbnail_options",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_options.v001.json",
+      "checksum": "sha256:13ccceafa4553d8c82744dc82936773e5ebd2f95eaf82778e9996909791b4fdd",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-contact-sheet",
+      "artifact_type": "thumbnail_contact_sheet",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_contact_sheet.v001.jpg",
+      "checksum": "sha256:860488bec7d41fd4b68769c9c2b607ca7932dd9a2ded755f83bac0d999acbee2",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-01",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_01.v001.png",
+      "checksum": "sha256:e08e467a3ec9f4420f46321cac4594bbaceb3293311c652d024bf5d0b3ffba99",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-02",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_02.v001.png",
+      "checksum": "sha256:d1a95ac2effcfc4851231d1fc1faa18b2cf84c3ab905a03f7e076fe7c8ce1fc8",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-03",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_03.v001.png",
+      "checksum": "sha256:366d86b243fa07962dcbb4f93a8b11d97b37b927a0f06e12ca7e0c8eda6978f4",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-04",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_04.v001.png",
+      "checksum": "sha256:f327918727c6548501a5917d05acbaec0e4d9131547a32465ca01ba7c01d6093",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-thumbnail-option-05",
+      "artifact_type": "thumbnail_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_05.v001.png",
+      "checksum": "sha256:d6e73e7abdbb57235751988fc7775af996b0a6a6139ac8843f507d39850f84f6",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
     }
   ],
   "approvals": [
@@ -256,9 +349,10 @@
     "S018 approved as outer-clothing boundary motif only; not to be used as literal pat-down action without Remotion weapons-only overlay.",
     "First-cut review proxy rendered locally with Remotion + FFmpeg; no paid API, external upload, or publish performed.",
     "Review proxy uses local Windows SAPI draft narration; ElevenLabs master requires explicit owner approval and will require caption re-alignment.",
-    "QC notes: duration/streams pass; blackdetect flags the dark endcard background and freezedetect flags short low-motion segments, both documented for v002 polish."
+    "QC notes: duration/streams pass; blackdetect flags the dark endcard background and freezedetect flags short low-motion segments, both documented for v002 polish.",
+    "Thumbnail gate package rendered: five Remotion options plus title candidates; no upload/publish performed, owner selection still required."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T18:35:00+09:00"
+  "updated_at": "2026-06-20T19:20:00+09:00"
 }
