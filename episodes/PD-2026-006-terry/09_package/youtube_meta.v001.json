@@ -15,11 +15,12 @@
     "APR-0001",
     "APR-0002",
     "APR-0003",
-    "APR-0004"
+    "APR-0004",
+    "APR-0005"
   ],
   "selected_thumbnail": "episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_08.v001.png",
   "selected_thumbnail_sha256": "sha256:2410160486162ad7e2b0f25c8e6f92dbcba19177a1618622e9fb28f366a4acc0",
-  "description": "A police officer stops you on the sidewalk, has no warrant, and has not seen a crime. Can he still frisk you?\n\nThis episode explains Terry v. Ohio, the 1968 Supreme Court case that created the modern rule for brief street stops and weapons-only frisks based on reasonable suspicion.\n\nVisual note: this video uses AI-generated symbolic reconstructions and motion graphics. They are not authentic footage, and no real-person likeness is intended.\n\nNext episode: the phone in your pocket.",
+  "description": "A police officer stops you on the sidewalk. He has no warrant. He has not seen a crime. Can he still frisk you?\n\nThis episode explains Terry v. Ohio, the 1968 Supreme Court case that created the modern rule for brief street stops and weapons-only frisks based on reasonable suspicion. It is the case behind the everyday legal question: how much does an officer need before a street encounter becomes a search?\n\nWe trace the Cleveland storefront observations, the Fourth Amendment problem, the Supreme Court's 8-1 ruling, and the lasting gap between a hunch, reasonable suspicion, and proof.\n\nThis is an educational documentary, not legal advice.\n\nVisual note: this video uses AI-generated symbolic reconstructions and motion graphics. They are not authentic footage, and no real-person likeness is intended.\n\nNext episode: the phone in your pocket.",
   "chapters": [
     {
       "time": "00:00",
@@ -76,18 +77,21 @@
   ],
   "tags": [
     "Terry v Ohio",
+    "Terry v. Ohio",
     "reasonable suspicion",
     "Fourth Amendment",
     "stop and frisk",
-    "Supreme Court",
     "police search",
-    "warrant",
+    "warrantless search",
+    "Supreme Court cases",
     "constitutional law",
     "legal history",
+    "know your rights",
+    "criminal procedure",
     "Prime Documentary"
   ],
   "playlist": "Landmark Rights Cases",
-  "pinned_comment": "Terry is a narrow rule with a long shadow: a brief stop, specific facts, and a weapons-only frisk. Next episode: what changes when the thing in your pocket is your phone?",
+  "pinned_comment": "Terry drew a narrow line: a brief stop, specific facts, and a weapons-only frisk. Next episode: what changes when the thing in your pocket is your phone?",
   "pre_publish_checks": {
     "rights_manifest": "episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json",
     "final_qc": "episodes/PD-2026-006-terry/08_edit/renders/final.v001.qc.json",
@@ -96,14 +100,27 @@
     "upload_performed": true,
     "publish_performed": false,
     "public_schedule_set": true,
-    "schedule_result": "episodes/PD-2026-006-terry/09_package/youtube_schedule_result.v001.json"
+    "schedule_result": "episodes/PD-2026-006-terry/09_package/youtube_schedule_update.v002.json",
+    "publish_approval": "episodes/PD-2026-006-terry/approvals/APR-0005.json",
+    "scheduled_at_local": "2026-06-22T12:00:00+09:00",
+    "scheduled_at_utc": "2026-06-22T03:00:00Z"
   },
   "youtube_video_id": "dcqWIPXun7c",
   "youtube_watch_url": "https://youtu.be/dcqWIPXun7c",
   "youtube_studio_url": "https://studio.youtube.com/video/dcqWIPXun7c/edit",
   "youtube_channel_id": "UCuQPtAz1rca9eJ4xhvX0yKA",
-  "scheduled_at_local": "2026-06-21T12:00:00+09:00",
-  "scheduled_at_utc": "2026-06-21T03:00:00Z",
+  "scheduled_at_local": "2026-06-22T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-22T03:00:00Z",
   "privacy_status": "private",
-  "thumbnail_set": true
+  "thumbnail_set": true,
+  "scheduled_publish_target": {
+    "scheduled_at_local": "2026-06-22T12:00:00+09:00",
+    "scheduled_at_utc": "2026-06-22T03:00:00Z",
+    "timezone": "Asia/Tokyo",
+    "approval_id": "APR-0005"
+  },
+  "video_id": "dcqWIPXun7c",
+  "video_url": "https://youtu.be/dcqWIPXun7c",
+  "studio_url": "https://studio.youtube.com/video/dcqWIPXun7c/edit",
+  "schedule_result": "episodes/PD-2026-006-terry/09_package/youtube_schedule_update.v002.json"
 }
