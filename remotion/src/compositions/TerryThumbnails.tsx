@@ -16,7 +16,7 @@ type ThumbVariant = {
   headline: string;
   kicker: string;
   image?: string;
-  motif: 'gap' | 'frisk' | 'scale' | 'street' | 'phone';
+  motif: 'gap' | 'frisk' | 'scale' | 'street' | 'phone' | 'dense';
   accent: 'blue' | 'gold';
 };
 
@@ -59,6 +59,14 @@ export const terryThumbnailVariants: ThumbVariant[] = [
     motif: 'phone',
     accent: 'gold',
   },
+  {
+    id: 'thumb06',
+    headline: 'NO WARRANT?',
+    kicker: 'TERRY STOP · 1968 · 8-1',
+    image: 'terry/PD-2026-006-terry-S004-IMG-001.v001.png',
+    motif: 'dense',
+    accent: 'gold',
+  },
 ];
 
 const splitHeadline = (headline: string): string[] => {
@@ -69,6 +77,54 @@ const splitHeadline = (headline: string): string[] => {
 };
 
 const Motif: React.FC<{variant: ThumbVariant; accent: string}> = ({variant, accent}) => {
+  if (variant.motif === 'dense') {
+    return (
+      <svg width="1280" height="720" style={{position: 'absolute', inset: 0}}>
+        <defs>
+          <filter id="denseGlow" x="-60%" y="-60%" width="220%" height="220%">
+            <feGaussianBlur stdDeviation="9" result="blur" />
+            <feMerge>
+              <feMergeNode in="blur" />
+              <feMergeNode in="SourceGraphic" />
+            </feMerge>
+          </filter>
+        </defs>
+        <g opacity="0.78">
+          <polyline points="650,484 720,438 792,474 858,422 935,460 1012,398 1100,432" fill="none" stroke={BLUE} strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+          <polyline points="650,484 720,438 792,474 858,422 935,460 1012,398 1100,432" fill="none" stroke={BLUE} strokeWidth="24" strokeLinecap="round" strokeLinejoin="round" opacity="0.14" />
+          {[650,720,792,858,935,1012,1100].map((x, i) => <circle key={x} cx={x} cy={[484,438,474,422,460,398,432][i]} r={i % 2 ? 10 : 8} fill={i === 5 ? GOLD : BLUE} />)}
+        </g>
+        <g transform="translate(740 166)" filter="url(#denseGlow)">
+          {Array.from({length: 8}, (_, i) => <rect key={i} x={i * 36} y="0" width="25" height="25" fill={i === 7 ? GOLD : BLUE} opacity="0.94" />)}
+          <text x="0" y="72" fill={GOLD} fontFamily={BRAND.font.display} fontSize="48">8-1</text>
+        </g>
+        <g transform="translate(742 288)">
+          <rect x="0" y="0" width="330" height="112" fill="#00000099" stroke={GOLD} strokeWidth="4" />
+          <line x1="24" x2="306" y1="62" y2="62" stroke={SILVER} strokeWidth="5" opacity="0.55" />
+          <line x1="24" x2="156" y1="62" y2="62" stroke={GOLD} strokeWidth="9" strokeLinecap="round" />
+          <circle cx="156" cy="62" r="17" fill={GOLD} />
+          <text x="22" y="98" fill={SILVER} fontFamily={BRAND.font.body} fontSize="19">hunch</text>
+          <text x="132" y="98" fill={GOLD} fontFamily={BRAND.font.body} fontSize="19">suspicion</text>
+          <text x="250" y="98" fill={SILVER} fontFamily={BRAND.font.body} fontSize="19">proof</text>
+        </g>
+        <g transform="translate(894 438)">
+          <rect x="0" y="0" width="82" height="170" fill={GOLD} opacity="0.92" />
+          <text x="-8" y="216" fill={GOLD} fontFamily={BRAND.font.display} fontSize="55">GAP</text>
+        </g>
+        <g opacity="0.62">
+          {[
+            [1015,250,70,38,GOLD],
+            [1095,306,54,34,SILVER],
+            [700,246,64,36,SILVER],
+            [654,336,48,32,GOLD],
+            [1130,502,66,36,SILVER],
+            [790,542,56,34,BLUE],
+          ].map(([x,y,w,h,c], i) => <rect key={i} x={x as number} y={y as number} width={w as number} height={h as number} fill={c as string} opacity="0.55" />)}
+        </g>
+        <text x="638" y="622" fill={WHITE} fontFamily={BRAND.font.display} fontSize="48" opacity="0.92">~12 TRIPS</text>
+      </svg>
+    );
+  }
   if (variant.motif === 'frisk') {
     return (
       <svg width="1280" height="720" style={{position: 'absolute', inset: 0}}>

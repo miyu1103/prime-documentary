@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-006-terry",
   "revision": "v001",
-  "generated_at": "2026-06-20T08:16:17.999830+00:00",
-  "status": "thumbnail_gate_ready",
+  "generated_at": "2026-06-20T13:23:25.828372+00:00",
+  "status": "thumbnail_selected_not_published",
   "publish_performed": false,
   "upload_performed": false,
   "ai_disclosure_required": true,
@@ -14,9 +14,9 @@
     "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S018/PD-2026-006-terry-S018-IMG-001.v001.png"
   ],
   "recommended_shortlist": [
+    "thumbnail_option_06.v001.png",
     "thumbnail_option_01.v001.png",
-    "thumbnail_option_02.v001.png",
-    "thumbnail_option_03.v001.png"
+    "thumbnail_option_02.v001.png"
   ],
   "options": [
     {
@@ -58,11 +58,20 @@
       "kicker": "FROM YOUR BODY TO YOUR PHONE",
       "sha256": "d6e73e7abdbb57235751988fc7775af996b0a6a6139ac8843f507d39850f84f6",
       "assessment": "Best series-bridge option into Riley; more elegant than urgent."
+    },
+    {
+      "id": "thumb06",
+      "file": "episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_06.v001.png",
+      "headline": "NO WARRANT?",
+      "kicker": "TERRY STOP - 1968 - 8-1",
+      "sha256": "0f74baa103d2f772a291e781380303926e9ea10d372472764661d84c914e0dec",
+      "assessment": "Selected. Denser owner-requested variant: keeps the NO WARRANT? hook readable while adding the trip path, 8-1 ruling cue, suspicion scale, and GAP motif.",
+      "dimensions": "1280x720"
     }
   ],
   "contact_sheet": {
     "file": "episodes/PD-2026-006-terry/10_thumbnail/thumbnail_contact_sheet.v001.jpg",
-    "sha256": "860488bec7d41fd4b68769c9c2b607ca7932dd9a2ded755f83bac0d999acbee2"
+    "sha256": "8eff0fae1983889d715cf739ae74500d11f2556581942c64b14a682c4717f126"
   },
   "title_candidates": [
     "A Cop Can Search You Without a Warrant - Here's the Catch",
@@ -71,5 +80,7 @@
     "Suspicion Is Not Proof - But It Can Still Get You Searched",
     "Terry v. Ohio: The Rule Behind Every Street Stop"
   ],
-  "recommended_title": "A Cop Can Search You Without a Warrant - Here's the Catch"
+  "recommended_title": "A Cop Can Search You Without a Warrant - Here's the Catch",
+  "selected": "thumbnail_option_06.v001.png",
+  "selection_reason": "Owner requested a denser thumbnail than option 01. Option 06 keeps the NO WARRANT? hook readable while adding the Terry-specific trip path, 8-1 ruling cue, suspicion scale, and GAP motif."
 }

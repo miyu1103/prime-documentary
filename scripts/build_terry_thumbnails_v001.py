@@ -61,6 +61,12 @@ VARIANTS = [
         "kicker": "FROM YOUR BODY TO YOUR PHONE",
         "assessment": "Best series-bridge option into Riley; more elegant than urgent.",
     },
+    {
+        "id": "thumb06",
+        "headline": "NO WARRANT?",
+        "kicker": "TERRY STOP - 1968 - 8-1",
+        "assessment": "Denser alternate requested by owner: adds the trip path, 8-1 ruling, suspicion scale, and GAP motif while keeping the main hook readable.",
+    },
 ]
 
 
@@ -121,10 +127,11 @@ def render_options() -> list[dict]:
 
 def build_contact_sheet() -> str:
     inputs: list[str] = []
-    for i in range(1, 6):
+    for i in range(1, len(VARIANTS) + 1):
         inputs.extend(["-i", str(OUT_DIR / f"thumbnail_option_{i:02d}.v001.png")])
-    labels = "".join(f"[{i}:v]scale=384:216[t{i}];" for i in range(5))
-    layout = "color=c=black:s=384x216[blank];[t0][t1][t2][t3][t4][blank]xstack=inputs=6:layout=0_0|384_0|768_0|0_216|384_216|768_216[out]"
+    labels = "".join(f"[{i}:v]scale=384:216[t{i}];" for i in range(len(VARIANTS)))
+    layout = "".join(f"[t{i}]" for i in range(len(VARIANTS)))
+    layout += "xstack=inputs=6:layout=0_0|384_0|768_0|0_216|384_216|768_216[out]"
     run([
         FFMPEG,
         "-y",
@@ -146,7 +153,7 @@ def write_options(options: list[dict], contact_hash: str) -> None:
         "episode_id": EP,
         "revision": "v001",
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "status": "thumbnail_gate_ready",
+        "status": "thumbnail_selected_not_published",
         "publish_performed": False,
         "upload_performed": False,
         "ai_disclosure_required": True,
@@ -157,10 +164,12 @@ def write_options(options: list[dict], contact_hash: str) -> None:
             "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S018/PD-2026-006-terry-S018-IMG-001.v001.png",
         ],
         "recommended_shortlist": [
+            "thumbnail_option_06.v001.png",
             "thumbnail_option_01.v001.png",
             "thumbnail_option_02.v001.png",
-            "thumbnail_option_03.v001.png",
         ],
+        "selected": "thumbnail_option_06.v001.png",
+        "selection_reason": "Owner requested a denser thumbnail than option 01. Option 06 keeps the NO WARRANT? hook readable while adding the Terry-specific trip path, 8-1 ruling cue, suspicion scale, and GAP motif.",
         "options": options,
         "contact_sheet": {
             "file": f"episodes/{EP}/10_thumbnail/{CONTACT.name}",
