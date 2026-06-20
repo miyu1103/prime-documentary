@@ -124,10 +124,26 @@ def load_items(ep: str, from_path: str | None) -> tuple[list[dict[str, Any]], st
         data = json.load(open(os.path.join(ROOT, from_path), encoding="utf-8"))
         items = data["assets"] if isinstance(data, dict) and "assets" in data else data
         return [normalize(x) for x in items], from_path
+    items: list[dict[str, Any]] = []
+    srcs: list[str] = []
     led = os.path.join(EPDIR, ep, "05_stock", "stock_ledger.v001.json")
-    if not os.path.exists(led):
-        raise SystemExit(f"no ledger: {led}\n(create it with fetch_stock.py, or pass --from <manifest>)")
-    return [normalize(x) for x in json.load(open(led, encoding="utf-8"))["assets"]], led
+    if os.path.exists(led):
+        items += [normalize(x) for x in json.load(open(led, encoding="utf-8"))["assets"]]
+        srcs.append("episode ledger")
+    lib = os.path.join(ROOT, "references", "stock_manifest.json")  # reusable shared, rights-clean library
+    if os.path.exists(lib):
+        items += [normalize(x) for x in json.load(open(lib, encoding="utf-8"))]
+        srcs.append("shared library")
+    if not items:
+        raise SystemExit(f"no episode ledger ({led}) and no shared library; run fetch_stock.py first")
+    seen: set[str] = set()
+    deduped: list[dict[str, Any]] = []
+    for a in items:                                  # de-dup so shared + episode assets don't double up
+        if a["asset_id"] in seen:
+            continue
+        seen.add(a["asset_id"])
+        deduped.append(a)
+    return deduped, " + ".join(srcs)
 
 
 def write_doc(path: str, ep_id: str, kind: str, assets: list[dict[str, Any]], schema: dict) -> None:

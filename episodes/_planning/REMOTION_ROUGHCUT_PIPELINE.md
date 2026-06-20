@@ -50,6 +50,14 @@ Claude側（左工程）が U1–U5 の道具と配線を用意済み。Codex（
 ## ゲート（必ず止まる）
 - ナレーション課金（ElevenLabs）前 / 初稿 / タイトル・サムネ / 公開。**第15話(Theranos)はR3=公開前に法務レビュー必須**・本人肖像/実映像禁止。
 
+## 公開スケジュール（重要）
+- YouTubeの予約投稿は **6/23 まで埋まっている**。**次の予約は 6/24 以降から**割り当てること。過去日や 6/23 以前に重ねない。
+- 公開・予約はオーナー承認ゲート（公開前に停止）。第15話(Theranos)は加えて法務レビュー必須。
+
+## 素材の使い回し（自動）
+- `build_usable_assets.py` は、その話で取得した素材に加えて **共有ライブラリ `references/stock_manifest.json`（権利クリーン既存素材）も自動で取り込む**。Claudeが集めた素材・過去に取得した素材は捨てずに毎回候補になる。
+- AI画像(Codex/SDXL)を足すときは `05_stock/stock_ledger.v001.json` に1行追記（source=ai_codex/ai_sdxl, commercial_use=allowed, sha256）→ 同様にゲートを通って使われる。
+
 ## 注意
 - 重メディア（候補/コピー元）は `H:\pd-media`（git管理外）。`remotion/public/<slug>/` の採用素材だけがリポジトリに入る。
 - `remotion/` の既存型エラーは `MadoffPremium.tsx`（別ワーカーの既存issue）だけ。**本パイプラインの追加分（RoughCut/Root/データ）は型クリーン**。
