@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-015-theranos",
+  "topic_id": "TOP-20260620-015",
+  "slug": "theranos",
+  "title_working": "When Does a Bold Promise Become a Crime? The Rise and Fall of Theranos",
+  "state": "script_verified",
+  "risk_class": "R3",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {"topic": "v001", "sources": "v001", "claims": "v001", "script": "v001", "script_qc": "v001"},
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-015-theranos-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/03_script/script.annotated.v001.json",
+      "checksum": "sha256:b839847e1f8ad5fe4bdb9b9f59b50e6cd3dca7a1480af14cde2a21dfc0cba31d",
+      "status": "approved",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": ["APR-0001"],
+  "costs": {"estimated": {"amount": 0, "currency": "USD"}, "actual": {"amount": 0, "currency": "USD"}, "soft_limit": {"amount": 100, "currency": "USD"}, "hard_limit": {"amount": 200, "currency": "USD"}},
+  "warnings": [
+    "Claude owns research+script; Codex begins at scenes/visuals. Image gen = Codex; edit = Remotion+FFmpeg.",
+    "script_qc PASS (no AI-filler), timing ~10.2min; promoted to script_verified.",
+    "R3 — LIVING, CRIMINALLY CONVICTED person (Elizabeth Holmes; also Ramesh Balwani). DEDICATED RIGHTS/LEGAL REVIEW REQUIRED before publish (rights_status=review_required). Truth is the safeguard: keep everything record-based.",
+    "PHRASING (load-bearing): state the FOUR investor-fraud CONVICTIONS as fact; patient counts = 'acquitted/not guilty'; the 3 deadlocked counts = 'mistrial/no verdict' — NEVER 'guilty'. Acquittal != exoneration and != 'the tech worked' (CLM-0010). Attribute intent/knowledge to the jury/court, not the narrator.",
+    "NO real-person likeness or deepfake of Holmes/Balwani (invariant 11) — magazine-cover/courtroom visuals must be symbolic and AI-disclosed. Figures: Holmes 135 months (~11y3m); Balwani ~155 months ('nearly 13 years'). Walgreens rollout limited (mostly Arizona) — not nationwide.",
+    "Heavy media on the external SSD (H:\\pd-media), not in this repo."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-20T08:00:00+09:00",
+  "updated_at": "2026-06-20T08:00:00+09:00"
+}
