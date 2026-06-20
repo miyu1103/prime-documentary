@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-006",
   "slug": "terry",
   "title_working": "A Cop Can Search You Without a Warrant — Here's the Catch",
-  "state": "script_verified",
+  "state": "scene_planned",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -15,7 +15,13 @@
     "sources": "v001",
     "claims": "v001",
     "script": "v001",
-    "script_qc": "v001"
+    "script_qc": "v001",
+    "scene_plan": "v001",
+    "shotlist": "v001",
+    "visual_bible": "v001",
+    "codex_image_prompts": "v001",
+    "remotion_plan": "v001",
+    "visual_qc_plan": "v001"
   },
   "artifacts": [
     {
@@ -25,6 +31,66 @@
       "uri": "artifact://episodes/PD-2026-006-terry/03_script/script.annotated.v001.json",
       "checksum": "sha256:6211aa2f4eddbc26545abc77a69e92b2b2a79f7954c6e03b866614817bf4426d",
       "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-scene-plan",
+      "artifact_type": "scene_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/scene_plan.v001.json",
+      "checksum": "sha256:7a21af708581ea224bc728c046629bcbf2fecada9985339c2cc91f696c7edf04",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-shotlist",
+      "artifact_type": "shotlist",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/shotlist.v001.md",
+      "checksum": "sha256:0e3e425607564fd57f19de04d3aa0a5529591d3ddae3110d6277217d9b11e3ce",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-visual-bible",
+      "artifact_type": "visual_bible",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/visual_bible.v001.json",
+      "checksum": "sha256:8d472208b9d94861a8c4e6afd16b8bbbb5d01c8f966cf52106198221e4717bc6",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-codex-image-prompts",
+      "artifact_type": "image_prompt_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/codex_image_prompts.v001.md",
+      "checksum": "sha256:46d68a706bf0e0d066bce76306d3a41e364774509e4dc72a82a7c3f18ffe9496",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-remotion-plan",
+      "artifact_type": "remotion_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/remotion_plan.v001.json",
+      "checksum": "sha256:0d8dbab48765872b4b179240229f8972ddedcb96bbf90eda0ac16b601bdf7678",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-visual-qc-plan",
+      "artifact_type": "visual_qc_plan",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/04_scenes/visual_qc_plan.v001.md",
+      "checksum": "sha256:ed93170b2055a062b1c23dd86b9d0371fd8743aaf36d232a560065afca582abf",
+      "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
     }
@@ -54,9 +120,11 @@
     "Claude owns research+script; Codex begins production at scenes/visuals (see episodes/_planning/EP6-8_HANDOFF.md). Image generation = Codex; edit = Remotion+FFmpeg.",
     "script_qc PASS (readability grade 7-8, no AI-filler, claim-links consistent) and draft-voice word-count timing ~11min; promoted to script_verified.",
     "Durable source content hashes captured 2026-06-20.",
-    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:/pd-media), not in this repo."
+    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:/pd-media), not in this repo.",
+    "Scene package v001 created by Codex from locked script/annotated spans; script, annotated script, and claims were not modified.",
+    "Owner set premium image bar: selected AI stills must pass visual_qc_plan.v001.md; placeholders are not acceptable for first-cut."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T01:00:00+09:00"
+  "updated_at": "2026-06-20T14:16:49+09:00"
 }
