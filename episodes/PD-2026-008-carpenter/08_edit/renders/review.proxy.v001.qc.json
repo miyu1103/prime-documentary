@@ -1,0 +1,28 @@
+{
+  "episode_id": "PD-2026-008-carpenter",
+  "render": "08_edit/renders/review.proxy.v001.mp4",
+  "media_render": "H:\\pd-media\\episodes\\PD-2026-008-carpenter\\08_edit\\carpenter_review_v001.mp4",
+  "sha256": "2f83c879007844438ee3fda4da520ef797abd777c230cb16c625c358dc4ad5ec",
+  "duration_seconds": 678.0,
+  "target_duration_seconds": 678.0,
+  "video": "Remotion CarpenterPremium, synthetic-symbolic visuals, 1920x1080 H.264",
+  "audio": "ElevenLabs narration slowed to ~669s, library music, ambience, SFX",
+  "captions": "burned SRT from locked script text, scaled to slowed narration",
+  "paid_generation_performed": true,
+  "estimated_elevenlabs_cost_usd": 2.82,
+  "external_upload_performed": false,
+  "publish_performed": false,
+  "synthetic_content_disclosure_required": true,
+  "accuracy_checks": {
+    "vote_5_4": true,
+    "no_incorrect_vote_count": true,
+    "points_12898": true,
+    "symbolic_reconstruction_label": true
+  },
+  "audio_probe_tail": "0:02:36.06 bitrate=N/A speed= 102x elapsed=0:00:01.53    \nframe= 6316 fps=3074 q=-0.0 size=N/A time=00:03:30.53 bitrate=N/A speed= 102x elapsed=0:00:02.05    \nframe= 7448 fps=2895 q=-0.0 size=N/A time=00:04:08.26 bitrate=N/A speed=96.5x elapsed=0:00:02.57    \nframe= 8707 fps=2816 q=-0.0 size=N/A time=00:04:50.23 bitrate=N/A speed=93.9x elapsed=0:00:03.09    \nframe=10182 fps=2822 q=-0.0 size=N/A time=00:05:39.36 bitrate=N/A speed=94.1x elapsed=0:00:03.60    \nframe=11636 fps=2830 q=-0.0 size=N/A time=00:06:27.83 bitrate=N/A speed=94.3x elapsed=0:00:04.11    \nframe=13219 fps=2855 q=-0.0 size=N/A time=00:07:20.63 bitrate=N/A speed=95.2x elapsed=0:00:04.63    \nframe=14817 fps=2877 q=-0.0 size=N/A time=00:08:13.90 bitrate=N/A speed=95.9x elapsed=0:00:05.15    \nframe=16399 fps=2892 q=-0.0 size=N/A time=00:09:06.63 bitrate=N/A speed=96.4x elapsed=0:00:05.66    \nframe=17959 fps=2910 q=-0.0 size=N/A time=00:09:58.63 bitrate=N/A speed=  97x elapsed=0:00:06.17    \nframe=19463 fps=2908 q=-0.0 size=N/A time=00:10:48.76 bitrate=N/A speed=96.9x elapsed=0:00:06.69    \n[Parsed_volumedetect_0 @ 000001ce9d0ea940] n_samples: 29900800\n[Parsed_volumedetect_0 @ 000001ce9d0ea940] mean_volume: -22.4 dB\n[Parsed_volumedetect_0 @ 000001ce9d0ea940] max_volume: -2.0 dB\n[Parsed_volumedetect_0 @ 000001ce9d0ea940] histogram_2db: 22\n[Parsed_volumedetect_0 @ 000001ce9d0ea940] histogram_3db: 71\n[Parsed_volumedetect_0 @ 000001ce9d0ea940] histogram_4db: 271\n[Parsed_volumedetect_0 @ 000001ce9d0ea940] histogram_5db: 896\n[Parsed_volumedetect_0 @ 000001ce9d0ea940] histogram_6db: 2904\n[Parsed_volumedetect_0 @ 000001ce9d0ea940] histogram_7db: 7132\n[Parsed_volumedetect_0 @ 000001ce9d0ea940] histogram_8db: 16948\n[Parsed_volumedetect_0 @ 000001ce9d0ea940] histogram_9db: 36910\n[out#0/null @ 000001ce9aa043c0] video:8422KiB audio:58400KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nframe=20340 fps=2910 q=-0.0 Lsize=N/A time=00:11:18.00 bitrate=N/A speed=  97x elapsed=0:00:06.99    \n",
+  "known_limitations": [
+    "Only the first 8 local SDXL candidates completed before A1111 timeout; the cut uses those plus Remotion graphics.",
+    "Image candidate QC is first-cut level; final publish master should continue SDXL candidate generation and visual selection.",
+    "Captions are chunk-time scaled, not forced word-aligned."
+  ]
+}

@@ -276,7 +276,7 @@ def final_mix(music: Path, sfx: Path) -> None:
     shutil.copy2(OUT_MEDIA, OUT_REPO)
 
 
-def write_rights(generated: list[Path], music: Path, sfx: Path) -> None:
+def write_rights(generated: list[Path]) -> None:
     assets = []
     for i, path in enumerate(generated, start=1):
         assets.append({
@@ -304,12 +304,31 @@ def write_rights(generated: list[Path], music: Path, sfx: Path) -> None:
         "content_hash": "sha256:" + sha256(NARR_SLOW),
         "needs_verification": False,
     })
-    for i, path in enumerate([music, sfx], start=1):
+    library_sources = [
+        LIB / "music/hook/mus_20260614_hook_glass_air_bed_v1.mp3",
+        LIB / "music/opening/mus_20260614_opening_measured_arpeggio_v1.mp3",
+        LIB / "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v1.mp3",
+        LIB / "music/reveal/mus_20260614_reveal_hidden_system_clicks_v1.mp3",
+        LIB / "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3",
+        LIB / "music/somber/mus_20260614_somber_ledger_of_ash_v1.mp3",
+        LIB / "music/outro/mus_20260614_outro_last_frame_v1.mp3",
+        LIB / "ambience/amb_institutional_drone.mp3",
+        LIB / "sfx/sfx_sub_drop.mp3",
+        LIB / "sfx/sfx_soft_impact.mp3",
+        LIB / "sfx/sfx_data_blip.mp3",
+        LIB / "sfx/sfx_stamp_seal.mp3",
+        LIB / "sfx/sfx_gavel_knock.mp3",
+        LIB / "sfx/sfx_page_turn.mp3",
+        LIB / "sfx/sfx_low_boom.mp3",
+        LIB / "sfx/sfx_binder_lock.mp3",
+        LIB / "sfx/sfx_riser_2s.mp3",
+    ]
+    for i, path in enumerate(library_sources, start=1):
         assets.append({
             "asset_id": f"AST-CARP-AUD-{i:03d}",
-            "type": "audio_mix_component",
+            "type": "library_audio_source",
             "scene": "all",
-            "description": path.name,
+            "description": f"Library source used in first-cut mix: {path.name}",
             "file": str(path),
             "producer": "Prime Documentary library reuse",
             "license": "Rights-tracked reusable library bed",
@@ -317,6 +336,18 @@ def write_rights(generated: list[Path], music: Path, sfx: Path) -> None:
             "content_hash": "sha256:" + sha256(path),
             "needs_verification": False,
         })
+    assets.append({
+        "asset_id": "AST-CARP-RENDER-001",
+        "type": "render",
+        "scene": "all",
+        "description": "First-cut review render, not published.",
+        "file": f"artifact://episodes/{EP}/08_edit/carpenter_review_v001.mp4",
+        "producer": "Remotion + FFmpeg",
+        "license": "Composite review render from rights-tracked inputs",
+        "rights_holder": "Prime Documentary (channel owner)",
+        "content_hash": "sha256:" + sha256(OUT_MEDIA),
+        "needs_verification": False,
+    })
     RIGHTS.parent.mkdir(parents=True, exist_ok=True)
     RIGHTS.write_text(json.dumps({
         "schema_version": "1.0.0",
@@ -384,7 +415,7 @@ def main() -> int:
         music = make_music(tmp)
         sfx = make_sfx(tmp)
         final_mix(music, sfx)
-        write_rights(generated, music, sfx)
+        write_rights(generated)
     write_qc()
     print(f"OUT {OUT_REPO}")
     print(f"MEDIA {OUT_MEDIA}")
