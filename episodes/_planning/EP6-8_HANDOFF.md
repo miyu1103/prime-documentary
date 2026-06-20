@@ -47,22 +47,31 @@ Do NOT publish, run paid APIs, or generate paid assets from this file. This is a
   superseding earlier DaVinci/Midjourney references in docs/ and decisions/. (decisions/0002 & 0007
   prose not yet rewritten, but are overridden by CLAUDE.md §11 — the top source-of-truth.)
 
-## 1. PIPELINE INSTRUCTIONS FOR CODEX (run per episode, EP6 first)
-1. pd-new-episode → create workspace, IDs (PD-2026-006/007/008), manifest, topic brief
-   (00_topic/topic.v001.json) from the per-episode spec below. Set risk_class as noted.
-2. pd-research → source registry + claim ledger. MUST ground every fact in "CLAIMS TO LOCK" below
-   to a primary/strong source (court opinion, reputable legal/historical source). LLM is NOT a
-   source. Any claim that cannot reach grade C+ is a blocker.
-3. thesis + outline (pd-script) → use the THESIS, HOOK and ACT STRUCTURE below as the spec. Verify
-   the promise→payoff pairs resolve.
-4. script (pd-script) → write script.en.v001.md in house style; attach claim links from step 2;
-   run readability / anti-filler QC.
-5. STOP at the final-script approval gate. Do not proceed to scenes/assets/audio/publish without
-   owner approval (CLAUDE.md §3, rules/16).
-6. Reference seed narration (optional): earlier Claude drafts exist for EP6 & EP8 — structural
-   reference only; all facts must still be re-grounded in step 2.
-- Constraints: respect guard_destructive / check_secrets hooks; commit each step to main; no paid
-  ops; real people described by role, neutral; synthetic visuals disclosed.
+## 1. DIVISION OF LABOR (Claude ↔ Codex)
+Strength-based split (owner-set):
+- **CLAUDE owns the LEFT side**: topic, research + claim ledger, thesis, outline, and the FINISHED
+  SCRIPT. Codex must NOT write or rewrite scripts.
+- **CODEX owns the RIGHT side**: scenes → visual assets (image generation) → narration audio →
+  music → motion → edit → render.
+
+### 1A. CLAUDE — script status (this is Claude's deliverable, not Codex's)
+- EP6–8 scripts: written, fact-checked (§7), owner content-approved (§8). Claude finishes the
+  formal grounding (CLM placeholders → cited claim ledger) + final polish → script.en.v001.md.
+- Codex consumes these as the authoritative, locked input. Do not regenerate them.
+
+### 1B. CODEX — START HERE (per episode, EP6 first), using Claude's finished script
+1. pd-new-episode → workspace/manifest/IDs PD-2026-006/007/008 (if not already created).
+2. pd-scenes → convert the finished script into scene / shot / visual / on-screen-text plans
+   (continuity + generation specs). Use the ACT STRUCTURE + visual notes below.
+3. pd-generate-assets → generate images: **Codex (primary)**, SDXL/SVD for bulk variants. Every
+   image: AI-disclosed, rights-manifest registered, brand-consistent, NO real-person likeness.
+4. audio = ElevenLabs narration (PAID → owner approval + budget) ; music = Suno reuse library ;
+   motion/graphics = Remotion.
+5. pd-build-edit → assemble & render in **Remotion + FFmpeg** (CPU/libx264, quality-first); QC.
+6. STOP at the first-cut gate and the title/thumbnail gate (owner approval). No publish without
+   approval (CLAUDE.md §3, rules/16).
+- Constraints: respect guard_destructive / check_secrets hooks; commit each step; no paid ops or
+  publish without approval; real people by role, neutral; all synthetic visuals disclosed.
 
 ## 2. EP6 — Terry v. Ohio (1968)  [risk_class: R2]
 - Logline: A cop can stop you on the street and pat you down with no warrant and no proof of a
