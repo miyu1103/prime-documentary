@@ -21,37 +21,37 @@ type ThumbVariant = {
 export const thumbnailVariants: ThumbVariant[] = [
   {
     id: 'thumb01',
-    headline: 'YOUR PHONE IS TRACKING YOU',
+    headline: 'YOUR PHONE IS A MAP',
     kicker: '127 DAYS · NO WARRANT',
-    image: 'carpenter/CARP_H02_dark_location_bloom_c02_seed827096.png',
+    image: 'carpenter/CARP_H02_dark_location_bloom_c06_seed827644.png',
     accent: 'gold',
   },
   {
     id: 'thumb02',
-    headline: 'POLICE WANTED THE MAP',
+    headline: '127 DAYS NO WARRANT',
+    kicker: 'PHONE LOCATION RECORDS',
+    image: 'carpenter/CARP_H02_dark_location_bloom_c02_seed827096.png',
+    accent: 'gold',
+  },
+  {
+    id: 'thumb03',
+    headline: 'POLICE WANTED THIS MAP',
     kicker: 'CARPENTER v. UNITED STATES',
     image: 'carpenter/CARP_H02_dark_location_bloom_c01_seed826959.png',
     accent: 'blue',
   },
   {
-    id: 'thumb03',
-    headline: 'THE MAP IN YOUR POCKET',
-    kicker: '5-4 · THE WARRANT LINE',
-    image: 'carpenter/CARP_H02_dark_location_bloom_c02_seed827096.png',
-    accent: 'gold',
-  },
-  {
     id: 'thumb04',
-    headline: '127 DAYS OF YOUR LOCATION',
-    kicker: 'NO WARRANT',
-    image: 'carpenter/CARP_H02_dark_location_bloom_c01_seed826959.png',
+    headline: 'THE MAP IN YOUR PHONE',
+    kicker: '5-4 · THE WARRANT LINE',
+    image: 'carpenter/CARP_H02_dark_location_bloom_c04_seed827370.png',
     accent: 'blue',
   },
   {
     id: 'thumb05',
     headline: 'CAN POLICE MAP YOUR LIFE?',
     kicker: 'PHONE LOCATION PRIVACY',
-    image: 'carpenter/CARP_H02_dark_location_bloom_c02_seed827096.png',
+    image: 'carpenter/CARP_H02_dark_location_bloom_c06_seed827644.png',
     accent: 'gold',
   },
 ];
@@ -77,18 +77,18 @@ const Phone: React.FC<{accent: string}> = ({accent}) => (
         </feMerge>
       </filter>
     </defs>
-    <g transform="translate(770 122) rotate(-7 170 250)">
-      <rect x="-36" y="40" width="410" height="542" rx="68" fill="#000" opacity="0.48" filter="url(#thumbGlow)" />
-      <rect x="0" y="0" width="330" height="560" rx="54" fill="#05070b" stroke="#d8e1ee" strokeOpacity="0.68" strokeWidth="6" />
-      <rect x="22" y="26" width="286" height="508" rx="38" fill="url(#thumbPhoneGlass)" stroke={`${BLUE}88`} strokeWidth="3" />
+    <g transform="translate(760 96) rotate(-7 180 270)">
+      <rect x="-42" y="44" width="444" height="590" rx="74" fill="#000" opacity="0.52" filter="url(#thumbGlow)" />
+      <rect x="0" y="0" width="356" height="608" rx="58" fill="#05070b" stroke="#d8e1ee" strokeOpacity="0.72" strokeWidth="7" />
+      <rect x="24" y="28" width="308" height="552" rx="42" fill="url(#thumbPhoneGlass)" stroke={`${BLUE}88`} strokeWidth="3" />
       <rect x="82" y="18" width="166" height="14" rx="7" fill="#080c13" stroke="#344054" strokeWidth="1" />
-      <ellipse cx="166" cy="248" rx="126" ry="156" fill="url(#thumbPhoneGlow)" />
-      <path d="M 65 405 C 116 270, 178 400, 256 145" fill="none" stroke={accent} strokeWidth="14" strokeLinecap="round" />
-      <path d="M 65 405 C 116 270, 178 400, 256 145" fill="none" stroke={accent} strokeWidth="32" strokeLinecap="round" opacity="0.16" filter="url(#thumbGlow)" />
-      {[65, 132, 206, 256].map((x, i) => (
+      <ellipse cx="178" cy="270" rx="136" ry="172" fill="url(#thumbPhoneGlow)" />
+      <path d="M 70 445 C 126 292, 194 426, 276 154" fill="none" stroke={accent} strokeWidth="17" strokeLinecap="round" />
+      <path d="M 70 445 C 126 292, 194 426, 276 154" fill="none" stroke={accent} strokeWidth="38" strokeLinecap="round" opacity="0.17" filter="url(#thumbGlow)" />
+      {[70, 142, 224, 276].map((x, i) => (
         <g key={x}>
-          <circle cx={x} cy={[405, 328, 250, 145][i]} r={i === 3 ? 18 : 13} fill={i === 3 ? accent : BLUE} />
-          <circle cx={x} cy={[405, 328, 250, 145][i]} r={i === 3 ? 38 : 28} fill="none" stroke={i === 3 ? accent : BLUE} strokeWidth="4" opacity="0.25" />
+          <circle cx={x} cy={[445, 360, 274, 154][i]} r={i === 3 ? 21 : 15} fill={i === 3 ? accent : BLUE} />
+          <circle cx={x} cy={[445, 360, 274, 154][i]} r={i === 3 ? 42 : 31} fill="none" stroke={i === 3 ? accent : BLUE} strokeWidth="4" opacity="0.26" />
         </g>
       ))}
     </g>
@@ -141,24 +141,26 @@ export const CarpenterThumbnail: React.FC<{variantIndex?: number}> = ({variantIn
           filter: 'brightness(0.72) contrast(1.18) saturate(1.08)',
         }}
       />
-      <AbsoluteFill style={{background: 'linear-gradient(90deg, #000000f2 0%, #02050bd9 42%, #0000001f 100%)'}} />
-      <AbsoluteFill style={{background: 'radial-gradient(60% 70% at 78% 50%, #1f6bff3f 0%, #00000000 62%)'}} />
+      <AbsoluteFill style={{background: 'linear-gradient(90deg, #000000fa 0%, #02050bef 46%, #00000022 100%)'}} />
+      <AbsoluteFill style={{background: 'radial-gradient(64% 76% at 80% 50%, #1f6bff4f 0%, #00000000 62%)'}} />
       <Trail accent={accent} />
       <Phone accent={accent} />
-      <div style={{position: 'absolute', left: 52, top: 54, width: 650}}>
-        <div style={{fontFamily: BRAND.font.body, fontSize: 29, fontWeight: 900, color: accent, letterSpacing: 0}}>
+      <div style={{position: 'absolute', left: 46, top: 48, width: 700}}>
+        <div style={{fontFamily: BRAND.font.body, fontSize: 28, fontWeight: 900, color: accent, letterSpacing: 0}}>
           {variant.kicker}
         </div>
-        <div style={{height: 5, width: 328, background: accent, marginTop: 16, marginBottom: 34}} />
-        <div style={{fontFamily: BRAND.font.display, fontSize: 96, lineHeight: 0.92, color: WHITE, textTransform: 'uppercase', textShadow: '0 6px 22px #000'}}>
+        <div style={{height: 6, width: 336, background: accent, marginTop: 14, marginBottom: 28}} />
+        <div style={{fontFamily: BRAND.font.display, fontSize: 104, lineHeight: 0.89, color: WHITE, textTransform: 'uppercase', textShadow: '0 8px 26px #000'}}>
           {lineA}
         </div>
-        <div style={{fontFamily: BRAND.font.display, fontSize: 96, lineHeight: 0.92, color: accent, textTransform: 'uppercase', textShadow: '0 6px 22px #000'}}>
+        <div style={{fontFamily: BRAND.font.display, fontSize: 104, lineHeight: 0.89, color: accent, textTransform: 'uppercase', textShadow: '0 8px 26px #000'}}>
           {lineB}
         </div>
       </div>
-      <div style={{position: 'absolute', left: 56, bottom: 44, fontFamily: BRAND.font.body, fontSize: 22, color: SILVER, fontWeight: 800}}>
-        PRIME DOCUMENTARY
+      <div style={{position: 'absolute', left: 52, bottom: 42, display: 'flex', gap: 14, alignItems: 'center'}}>
+        <div style={{fontFamily: BRAND.font.body, fontSize: 22, color: SILVER, fontWeight: 900}}>PRIME DOCUMENTARY</div>
+        <div style={{width: 2, height: 24, background: `${SILVER}66`}} />
+        <div style={{fontFamily: BRAND.font.body, fontSize: 20, color: accent, fontWeight: 900}}>SYMBOLIC RECONSTRUCTION</div>
       </div>
       <Vignette strength={0.82} />
       <Grain opacity={0.045} />
