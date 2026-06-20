@@ -20,7 +20,24 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
         "Can your school punish your weekend post?"
       ],
       "priority": "A",
-      "clipSeconds": 10.96
+      "clips": [
+        {
+          "src": "mahanoy/pexels_v_853987.mp4",
+          "clipSeconds": 10.96
+        },
+        {
+          "src": "mahanoy/pexels_v_853796.mp4",
+          "clipSeconds": 12.96
+        },
+        {
+          "src": "mahanoy/pixabay_v_202987.mp4",
+          "clipSeconds": 15.06
+        },
+        {
+          "src": "mahanoy/pixabay_v_47743.mp4",
+          "clipSeconds": 6.97
+        }
+      ]
     },
     {
       "spanId": "SPN-0002",
@@ -67,7 +84,24 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
         "[caption censored]"
       ],
       "priority": "B",
-      "clipSeconds": 6.3
+      "clips": [
+        {
+          "src": "mahanoy/pexels_v_37627304.mp4",
+          "clipSeconds": 6.3
+        },
+        {
+          "src": "mahanoy/pexels_v_9465320.mp4",
+          "clipSeconds": 6.0
+        },
+        {
+          "src": "mahanoy/pixabay_v_171085.mp4",
+          "clipSeconds": 44.04
+        },
+        {
+          "src": "mahanoy/pixabay_v_73847.mp4",
+          "clipSeconds": 14.48
+        }
+      ]
     },
     {
       "spanId": "SPN-0006",

@@ -81,6 +81,23 @@ def tokens(*strs: Any) -> set[str]:
     return {w for w in re.findall(r"[a-z]{3,}", text)}
 
 
+def pick_videos(shot: dict[str, Any], pool: list[dict[str, Any]], used: set[str], max_n: int = 5) -> list[dict[str, Any]]:
+    """Several usable VIDEO clips for one shot, best keyword match first, so a long narration
+    span is covered by cutting between clips at normal speed (not one clip looped/slowed)."""
+    kw = tokens(*shot.get("search_keywords", []), *shot.get("on_screen_text", []), shot.get("visual_intent", ""))
+    scored = []
+    for a in pool:
+        if a["asset_id"] in used or a.get("asset_type") != "video":
+            continue
+        score = len(kw & tokens(a.get("depicts"), a.get("query"), a.get("asset_id")))
+        if shot["span_id"] in (a.get("used_in_spans") or []):
+            score += 100
+        if score >= 1:
+            scored.append((score, a))
+    scored.sort(key=lambda x: -x[0])
+    return [a for _, a in scored[:max_n]]
+
+
 def pick_asset(shot: dict[str, Any], pool: list[dict[str, Any]], used: set[str]) -> dict[str, Any] | None:
     """Best unused usable asset of a compatible media type, by keyword overlap."""
     want_video = shot["suggested_asset_type"] == "stock_video"
@@ -129,8 +146,19 @@ def main() -> int:
     bound = 0
     for sh in shotlist["shots"]:
         src = None
-        clip_seconds: float | None = None
-        if sh["suggested_asset_type"] != "motion_graphic":
+        clips_out: list[dict[str, Any]] = []
+        atype = sh["suggested_asset_type"]
+        if atype == "stock_video":
+            for a in pick_videos(sh, pool, used):
+                used.add(a["asset_id"])
+                fname = os.path.basename(a["file"])
+                copies.append((a["file"], os.path.join(dest_dir, fname)))
+                clips_out.append({"src": f"{slug}/{fname}",
+                                  "clipSeconds": probe_seconds(resolve_file(a["file"])) or 6.0})
+            if clips_out:
+                src = clips_out[0]["src"]
+                bound += 1
+        elif atype != "motion_graphic":
             a = pick_asset(sh, pool, used)
             if a:
                 used.add(a["asset_id"])
@@ -138,8 +166,6 @@ def main() -> int:
                 src = f"{slug}/{fname}"
                 copies.append((a["file"], os.path.join(dest_dir, fname)))
                 bound += 1
-                if a.get("asset_type") == "video":
-                    clip_seconds = probe_seconds(resolve_file(a["file"]))
         shot_out: dict[str, Any] = {
             "spanId": sh["span_id"],
             "chapterId": sh.get("chapter_id"),
@@ -150,8 +176,8 @@ def main() -> int:
             "telop": sh.get("on_screen_text", []),
             "priority": sh["priority"],
         }
-        if clip_seconds:
-            shot_out["clipSeconds"] = clip_seconds
+        if clips_out:
+            shot_out["clips"] = clips_out
         shots_out.append(shot_out)
 
     data = {"episodeId": ep_id, "title": title, "fps": 30,

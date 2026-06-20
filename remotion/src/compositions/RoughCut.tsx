@@ -31,7 +31,8 @@ export type RoughShot = {
   assetType: 'stock_video' | 'stock_image' | 'ai_image' | 'motion_graphic' | 'archival_pd';
   motion: 'video_native' | 'ken_burns' | 'parallax' | 'graphic_anim' | 'static';
   src: string | null; // staticFile path under remotion/public, or null -> branded card
-  clipSeconds?: number; // real length of a video clip (so we slow it to fit instead of looping)
+  clipSeconds?: number; // real length of a single fallback video clip
+  clips?: {src: string; clipSeconds: number}[]; // several clips to CUT between across a long shot
   telop: string[];
   priority: 'A' | 'B' | 'C';
 };
@@ -103,6 +104,53 @@ const MovingVideo: React.FC<{src: string; clipSeconds?: number; shotSeconds: num
         />
       </AbsoluteFill>
     </AbsoluteFill>
+  );
+};
+
+/** One clip at NORMAL speed with a gentle push-in (used as a segment inside a VideoShot). */
+const VideoSegment: React.FC<{src: string}> = ({src}) => {
+  const f = useCurrentFrame();
+  const {durationInFrames} = useVideoConfig();
+  const scale = interpolate(f, [0, durationInFrames], [1.03, 1.1]);
+  return (
+    <AbsoluteFill style={{overflow: 'hidden', backgroundColor: BRAND.color.ink}}>
+      <AbsoluteFill style={{transform: `scale(${scale})`, transformOrigin: '50% 50%'}}>
+        <Video src={staticFile(src)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+/**
+ * A long shot covered by CUTTING between several short clips at normal speed (like real editing):
+ * no slow-motion judder, no loop-restart 'trembling'. Each segment shows part of a clip (capped),
+ * cycling the clip list until the shot is filled.
+ */
+const VideoShot: React.FC<{clips: {src: string; clipSeconds: number}[]; shotSeconds: number}> = ({
+  clips,
+  shotSeconds,
+}) => {
+  const {fps} = useVideoConfig();
+  const total = Math.max(1, Math.round(shotSeconds * fps));
+  const segs: {src: string; frames: number}[] = [];
+  let acc = 0;
+  let i = 0;
+  while (acc < total && i < 200) {
+    const c = clips[i % clips.length];
+    const cap = Math.min(c.clipSeconds > 0 ? c.clipSeconds : 6, 8);
+    const frames = Math.min(Math.max(1, Math.round(cap * fps)), total - acc);
+    segs.push({src: c.src, frames});
+    acc += frames;
+    i++;
+  }
+  return (
+    <Series>
+      {segs.map((s, idx) => (
+        <Series.Sequence key={idx} durationInFrames={s.frames}>
+          <VideoSegment src={s.src} />
+        </Series.Sequence>
+      ))}
+    </Series>
   );
 };
 
@@ -188,7 +236,11 @@ const Shot: React.FC<{shot: RoughShot}> = ({shot}) => {
     <AbsoluteFill style={{backgroundColor: BRAND.color.ink}}>
       {hasVideo ? (
         <>
-          <MovingVideo src={shot.src as string} clipSeconds={shot.clipSeconds} shotSeconds={shot.seconds} />
+          {shot.clips && shot.clips.length > 0 ? (
+            <VideoShot clips={shot.clips} shotSeconds={shot.seconds} />
+          ) : (
+            <MovingVideo src={shot.src as string} clipSeconds={shot.clipSeconds} shotSeconds={shot.seconds} />
+          )}
           {grade}
           <Vignette />
           <Grain opacity={0.05} />
