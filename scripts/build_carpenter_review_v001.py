@@ -30,7 +30,9 @@ VISUAL = EPM / "08_edit" / "carpenter_visual_v001.mp4"
 OUT_MEDIA = EPM / "08_edit" / "carpenter_review_v001.mp4"
 QC_REPO = EPDIR / "08_edit" / "renders" / "review.proxy.v001.qc.json"
 RIGHTS = EPDIR / "09_package" / "rights_manifest.v001.json"
-SELECTION = EPDIR / "05_visuals" / "selection.v001.json"
+SELECTION = EPDIR / "05_visuals" / "selection.v002.json"
+THUMBNAILS = EPDIR / "10_thumbnail" / "thumbnail_options.v001.json"
+SELECTED_THUMB = EPDIR / "09_package" / "thumbnail.selected.v001.png"
 CAPTIONS = EPDIR / "08_edit" / "captions.review_proxy.v001.srt"
 NARR_MASTER = EPM / "06_voice" / "master" / "vc_master_v001.mp3"
 NARR_SLOW = EPM / "06_voice" / "master" / "vc_master_v001_slowed_669s.mp3"
@@ -309,6 +311,38 @@ def write_rights(generated: list[Path]) -> None:
             "qc_status": qc_status,
             "qc_reason": selected_item.get("reason", ""),
         })
+    if THUMBNAILS.exists():
+        thumbs = json.loads(THUMBNAILS.read_text("utf-8"))
+        for i, thumb in enumerate(thumbs.get("options", []), start=1):
+            assets.append({
+                "asset_id": f"AST-CARP-THUMB-{i:03d}",
+                "type": "thumbnail_render",
+                "scene": "thumbnail_gate",
+                "description": "Remotion thumbnail option composited from rights-tracked symbolic reconstruction map image and project-native graphics.",
+                "file": thumb["file"],
+                "producer": "Remotion + local AI image source",
+                "license": "Composite thumbnail from rights-tracked inputs",
+                "rights_holder": "Prime Documentary (channel owner)",
+                "content_hash": "sha256:" + thumb["sha256"],
+                "needs_verification": False,
+                "ai_disclosure": True,
+                "synthetic_content_disclosure_required": True,
+            })
+    if SELECTED_THUMB.exists():
+        assets.append({
+            "asset_id": "AST-CARP-THUMB-SELECTED-001",
+            "type": "thumbnail_selected",
+            "scene": "thumbnail_gate",
+            "description": "Selected final thumbnail for manual upload; composited from rights-tracked symbolic reconstruction map image and project-native graphics.",
+            "file": "episodes/PD-2026-008-carpenter/09_package/thumbnail.selected.v001.png",
+            "producer": "Remotion + local AI image source",
+            "license": "Composite thumbnail from rights-tracked inputs",
+            "rights_holder": "Prime Documentary (channel owner)",
+            "content_hash": "sha256:" + sha256(SELECTED_THUMB),
+            "needs_verification": False,
+            "ai_disclosure": True,
+            "synthetic_content_disclosure_required": True,
+        })
     assets.append({
         "asset_id": "AST-CARP-VO-001",
         "type": "narration_audio",
@@ -373,7 +407,8 @@ def write_rights(generated: list[Path]) -> None:
         "generated_at": "2026-06-20",
         "status": "first_cut_review_ready",
         "notes": "All visuals are symbolic reconstruction; YouTube synthetic-content disclosure required before publish. No upload performed.",
-        "image_selection": "episodes/PD-2026-008-carpenter/05_visuals/selection.v001.json",
+        "image_selection": "episodes/PD-2026-008-carpenter/05_visuals/selection.v002.json",
+        "thumbnail_options": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_options.v001.json",
         "assets": assets,
         "verification_required": [
             f"image:{path.name}" for path in generated if path.name not in selection_by_name
