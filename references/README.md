@@ -8,6 +8,14 @@ Materials we are ALLOWED to use, for grounding and in the videos. Goal: more aut
   Safe to keep, quote on screen (short, attributed), and use to ground claims. Source URL at top of each file.
   (terry, riley, carpenter, timbs, kelo.)
 
+## ✅ Stock library already downloaded (on the SSD, ready for production)
+- `H:\pd-media\assets\stock\` — **20 rights-clean REAL assets** (12 images, **5 real SCOTUS oral-argument
+  MP3s**, 3 video clips) covering EP6–12. All ★ Public Domain / CC0 / Pexels (no attribution, no
+  share-alike) — the ban-proof tier. Rights recorded in `STOCK_MANIFEST.json` there (repo copy:
+  `references/stock_manifest.json`).
+- Codex: use these for B-roll/establishing shots and the **authentic oral-argument audio**; pull more
+  from the approved sources below (verify + log each).
+
 ## ✅ Approved sources for VIDEO + IMAGES (use freely for commercial video — verify each)
 Public domain / U.S. government (no license fee; attribution as courtesy):
 - **National Archives (NARA)** catalog — PD U.S. gov photos/film.
