@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-009-timbs",
+  "topic_id": "TOP-20260620-009",
+  "slug": "timbs",
+  "title_working": "Police Can Take Your Car Without Convicting You — The Supreme Court Drew a Line",
+  "state": "script_verified",
+  "risk_class": "R2",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-009-timbs-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-009-timbs/03_script/script.annotated.v001.json",
+      "checksum": "sha256:6d3c055f01b9b14ec62c0d73a4784bab6392360527bb3dc9b97b9ec6949d40a8",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": ["APR-0001"],
+  "costs": {
+    "estimated": {"amount": 0, "currency": "USD"},
+    "actual": {"amount": 0, "currency": "USD"},
+    "soft_limit": {"amount": 100, "currency": "USD"},
+    "hard_limit": {"amount": 200, "currency": "USD"}
+  },
+  "warnings": [
+    "Claude owns research+script; Codex begins production at scenes/visuals. Image generation = Codex; edit = Remotion+FFmpeg.",
+    "script_qc PASS (FK 7.3, no AI-filler, claim-links consistent), timing ~10.3min; promoted to script_verified.",
+    "Forfeiture-system + 'policing for profit' claims (CLM-0008/0009) rest on advocacy sources (Institute for Justice / ACLU) and are ATTRIBUTED as critique with defenders' view shown; keep strictly neutral and non-partisan; consider an R3 expert pass before publish.",
+    "Real person (Tyson Timbs) by role, neutral; no real-person likeness in AI visuals; drug context kept modest and non-sensational; emphasize no prison.",
+    "Disposition = vacated and remanded; the Court did NOT itself rule the seizure excessive (on remand Indiana let Timbs keep the car, CLM-0010).",
+    "Heavy media (scenes/visuals/audio/edit) on the external SSD (H:\\pd-media), not in this repo."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-20T02:00:00+09:00",
+  "updated_at": "2026-06-20T02:00:00+09:00"
+}
