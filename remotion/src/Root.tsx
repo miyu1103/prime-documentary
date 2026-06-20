@@ -15,6 +15,21 @@ import {ThumbConcept} from './compositions/ThumbConcept';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
 import {RoughCut, roughCutDurationInFrames} from './compositions/RoughCut';
 import {MAHANOY_ROUGHCUT} from './data/mahanoy_roughcut';
+import {TIMBS_ROUGHCUT} from './data/timbs_roughcut';
+import {KELO_ROUGHCUT} from './data/kelo_roughcut';
+import {ARBITRATION_ROUGHCUT} from './data/arbitration_roughcut';
+import {KING_ROUGHCUT} from './data/king_roughcut';
+import {LANGE_ROUGHCUT} from './data/lange_roughcut';
+import {THERANOS_ROUGHCUT} from './data/theranos_roughcut';
+
+const ROUGHCUTS = [
+  ['RoughCut-timbs', TIMBS_ROUGHCUT],
+  ['RoughCut-kelo', KELO_ROUGHCUT],
+  ['RoughCut-arbitration', ARBITRATION_ROUGHCUT],
+  ['RoughCut-king', KING_ROUGHCUT],
+  ['RoughCut-lange', LANGE_ROUGHCUT],
+  ['RoughCut-theranos', THERANOS_ROUGHCUT],
+] as const;
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -28,6 +43,18 @@ export const RemotionRoot: React.FC = () => {
         height={BRAND.video.height}
         defaultProps={{data: MAHANOY_ROUGHCUT}}
       />
+      {ROUGHCUTS.map(([id, data]) => (
+        <Composition
+          key={id}
+          id={id}
+          component={RoughCut}
+          durationInFrames={roughCutDurationInFrames(data)}
+          fps={BRAND.video.fps}
+          width={BRAND.video.width}
+          height={BRAND.video.height}
+          defaultProps={{data}}
+        />
+      ))}
       <Composition
         id="Opening"
         component={Opening}
