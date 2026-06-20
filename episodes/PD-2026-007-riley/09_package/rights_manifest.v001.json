@@ -23,6 +23,24 @@
       "prompt_ref": "scripts/gen_riley_sdxl_ultra.py:RILEY_H01_phone_lift_pocket",
       "selected_at": "2026-06-20T16:36:12+09:00",
       "qc_status": "pass_selected"
+    },
+    {
+      "asset_id": "PD-2026-007-FIRSTCUT-VISUAL-PROXY-v001",
+      "type": "edit_render",
+      "scene": "S001-S028",
+      "description": "Full-length Remotion first-cut visual proxy assembled from approved scene plan timings, one selected AI-symbolic still, and code-native motion graphics. Not final audio. Not approved for publishing.",
+      "file": "H:/pd-media/episodes/PD-2026-007-riley/08_edit/renders/PD-2026-007-riley-firstcut-visual-proxy.v001.mp4",
+      "producer": "Remotion + FFmpeg/libx264 on local workstation",
+      "license": "Prime Documentary local edit render; contains AI/synthetic symbolic reconstruction visual material and code-native graphics; YouTube synthetic-content disclosure required.",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "content_hash": "sha256:b8696d923108df432d4eaaa8ad85033ad4dd9fc13cf29fdfeedb0db663c14670",
+      "needs_verification": false,
+      "ai_disclosure_required": true,
+      "symbolic_reconstruction": true,
+      "source_candidate": "remotion/src/riley_index.tsx",
+      "prompt_ref": "episodes/PD-2026-007-riley/04_scenes/scene_plan.v001.json",
+      "selected_at": "2026-06-20T17:47:14+09:00",
+      "qc_status": "pass_visual_proxy"
     }
   ],
   "verification_required": []

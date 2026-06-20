@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-007",
   "slug": "riley",
   "title_working": "Can the Police Search Your Phone?",
-  "state": "assets_generating",
+  "state": "edit_review",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -20,7 +20,9 @@
     "asset_plan": "v001",
     "visual_bible": "v001",
     "visual_qc_plan": "v001",
-    "rights_manifest": "v001"
+    "rights_manifest": "v001",
+    "edit_manifest": "v001",
+    "firstcut_qc": "v001"
   },
   "artifacts": [
     {
@@ -78,8 +80,28 @@
       "artifact_type": "rights_manifest",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-007-riley/09_package/rights_manifest.v001.json",
-      "checksum": "sha256:ffe1359ae1b133d184a1283901d656feb39b71f678297beccfbd0828090836e2",
+      "checksum": "sha256:10dffa7806a404a416d03e5f219839bb4213e0a22e379cddad6d5fda44b7f232",
       "status": "draft",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-edit-manifest",
+      "artifact_type": "edit_manifest",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_edit/edit_manifest.v001.json",
+      "checksum": "sha256:ea4b58ae6bb0dcf4d27673f603f6ea43d980463ca36b834ddbeaa7e42a27f954",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-firstcut-visual-proxy-qc",
+      "artifact_type": "firstcut_qc",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/08_qc/firstcut_visual_proxy_qc.v001.md",
+      "checksum": "sha256:c1f59f10d7c7cf59ec3bbe6dbe496312cb3a70540c0b63afa88133f5283caec6",
+      "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
     }
@@ -109,9 +131,10 @@
     "Claude owns research+script; Codex begins production at scenes/visuals (see episodes/_planning/EP6-8_HANDOFF.md). Image generation = Codex; edit = Remotion+FFmpeg.",
     "script_qc PASS (readability grade 7-8, no AI-filler, claim-links consistent) and draft-voice word-count timing ~11min; promoted to script_verified.",
     "Durable source content hashes captured 2026-06-20 (Justia SRC-0002 403, non-blocking).",
-    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:/pd-media), not in this repo."
+    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:/pd-media), not in this repo.",
+    "First-cut visual proxy v001 is ready for owner review, but paid ElevenLabs narration, music, and final asset pass remain blocked until explicit owner approval/gate clearance."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T16:36:12+09:00"
+  "updated_at": "2026-06-20T17:47:14+09:00"
 }
