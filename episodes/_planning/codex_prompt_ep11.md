@@ -12,10 +12,14 @@ Claudeが左側(topic→research→claims→台本)完了。**あなたは右側
 - `episodes/PD-2026-011-mahanoy/03_script/script.en.v001.md` / `script.annotated.v001.json`(28スパン・約10.1分)
 - `episodes/PD-2026-011-mahanoy/01_research/claims.v001.json` / `manifest.json`
 
-## ツール & 実素材
-画像=Codex生成＋SDXL。編集=Remotion+FFmpeg。ナレ=ElevenLabs(課金=要承認)。音楽=Suno。
-**実写の使用可素材を活用**(B-roll・導入):`H:\pd-media\assets\stock`(STOCK_MANIFEST.json)＋`references/README.md`。
-**1点ずつライセンス確認＋クレジット＋rights manifest記録**。重メディア→`H:\pd-media`。
+## ツール & 素材方針（2026-06-20改定 — 紙芝居回避・実写動画を主軸・権利ゲート厳守）
+- **静止画の羅列で“紙芝居”にしない。** B-rollは原則「実写の動画クリップ」を主役に。AI生成(Codex/SDXL/Runway)は**見せ場だけ**（Runwayはコスト都合で全カット不可）。
+- 編集=Remotion+FFmpeg。AI画像=Codex生成＋SDXL（見せ場用）。ナレ=ElevenLabs(課金=要承認)。音楽=Suno。
+- **無料動画素材を主軸に**：Pexels / Pixabay / Mixkit。必要に応じ Wikimedia Commons / NASA、音は YouTube Audio Library も可。既存ライブラリ=`H:\pd-media\assets\stock`(STOCK_MANIFEST.json)＋`references/README.md`・`references/stock_manifest.json`。
+- **権利管理（最重要・厳守）**：商用利用可の素材のみ使用。1点ずつ「出典URL・作者・ライセンス・取得日・使用シーン・sha256」をrights台帳に記録。
+  - **禁止取得元**＝通常のYouTube/TikTok/Instagram/X・ニュース番組/TV番組・映画・アニメ・MV・スポーツ映像・まとめサイト・Google画像検索 からの無断取得は使わない。
+  - **権利が曖昧な素材はRemotionのタイムラインに自動投入しない**（review送り）。OKの素材だけ投入。有料サイト(Storyblocks/Artlist/Envato/Adobe Stock)連携は今は不要。
+- ラフカット=Remotionで「実写動画＋画像＋ナレ＋BGM＋SFX＋字幕＋テロップ」を合成→**人間が確認・修正して完成**（完全自動にしない）。重メディア→`H:\pd-media`。
 
 ## 厳守ルール
 1. 全AI画像:AI開示・rights manifest登録・ブランド準拠・**実在人物の肖像/ディープフェイク禁止**(Brandi Levy等)。
@@ -24,7 +28,7 @@ Claudeが左側(topic→research→claims→台本)完了。**あなたは右側
 4. 中立(学校 vs 生徒のどちらにも寄らない。学校側の秩序維持の言い分も公平に)。
 
 ## パイプライン
-`pd-scenes` → `pd-generate-assets`(Codex画像＋SDXL＋実写配置、QC＋権利登録)→ ナレーション(ElevenLabs・**課金前に承認**)
+`pd-scenes`(各スパンの検索キーワード/秒数/テロップを整理) → `pd-generate-assets`(**実写動画を主役**＋見せ場のみAI(Codex/SDXL)、QC＋**権利台帳登録・OK素材のみ採用**)→ ナレーション(ElevenLabs・**課金前に承認**)
 ＋音楽＋Remotion → `pd-build-edit`(Remotion+FFmpeg)→ **初稿・タイトル/サムネのゲートでSTOP。公開しない。**
 
 ## 第11話の固有指定
