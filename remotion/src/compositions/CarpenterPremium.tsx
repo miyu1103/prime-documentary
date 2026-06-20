@@ -55,7 +55,7 @@ type Scene = {
 };
 
 const scenes: Scene[] = [
-  {id: 's01', kind: 'trail', start: 0, dur: 27, title: '127 days. No warrant.', subtitle: 'Your phone is already drawing the map.', kicker: 'HOOK', image: 'carpenter/CARP_H01_phone_map_hand_c04_seed826548.png', text: ['127 days', 'no warrant']},
+  {id: 's01', kind: 'trail', start: 0, dur: 27, title: '127 days. No warrant.', subtitle: 'Your phone is already drawing the map.', kicker: 'HOOK', image: 'carpenter/CARP_H02_dark_location_bloom_c02_seed827096.png', text: ['127 days', 'no warrant']},
   {id: 'open', kind: 'opening', start: 27, dur: OPENING_SEC, title: 'Carpenter', subtitle: 'The phone that tracks you'},
   {id: 's02', kind: 'trilogy', start: 30.5, dur: 32, title: 'Body. Phone. Location.', subtitle: 'The privacy line moves into the device.', kicker: 'OPENING'},
   {id: 's03', kind: 'detroit', start: 62.5, dur: 31, title: 'Detroit area — 2010–2011', subtitle: 'A case begins with phone numbers.', kicker: 'ACT I', text: ['Detroit', '2010–2011']},
@@ -73,7 +73,7 @@ const scenes: Scene[] = [
   {id: 's15', kind: 'boundary', start: 503.5, dur: 26, title: 'Rich + unavoidable = still private', subtitle: 'The warrant remains the line.', kicker: 'ACT III', text: ['warrant generally required']},
   {id: 's16', kind: 'doors', start: 529.5, dur: 48, title: 'Location was just the first door', subtitle: 'Searches. Purchases. Messages. Sensors.', kicker: 'ACT IV', citation: 'CLM-0003', text: ['search', 'purchases', 'messages', 'sensors']},
   {id: 's17', kind: 'trilogy', start: 577.5, dur: 38, title: 'Body · Phone · Location', subtitle: 'Terry. Riley. Carpenter.', kicker: 'ENDING', text: ['Terry', 'Riley', 'Carpenter']},
-  {id: 's18', kind: 'trail', start: 615.5, dur: 53.5, title: 'The line runs through your phone.', subtitle: 'And it is still being redrawn.', kicker: 'ENDING', image: 'carpenter/CARP_H01_phone_map_hand_c02_seed826274.png'},
+  {id: 's18', kind: 'trail', start: 615.5, dur: 53.5, title: 'The line runs through your phone.', subtitle: 'And it is still being redrawn.', kicker: 'ENDING', image: 'carpenter/CARP_H02_dark_location_bloom_c01_seed826959.png'},
   {id: 'end', kind: 'end', start: 669, dur: ENDCARD_SEC, title: ''},
 ];
 
@@ -179,30 +179,81 @@ const MapGrid: React.FC<{dense?: boolean}> = ({dense}) => {
     const on = interpolate(frame, [i * 0.7, i * 0.7 + 18], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
     return {x, y, on};
   });
-  const path = dots.filter((_, i) => i % 13 === 0 || i % 17 === 0).slice(0, 18);
+  const mainPath = [
+    [230, 430],
+    [420, 476],
+    [605, 546],
+    [792, 520],
+    [985, 606],
+    [1192, 468],
+    [1396, 612],
+    [1640, 524],
+  ];
+  const branchPath = [
+    [985, 606],
+    [1084, 520],
+    [1192, 468],
+    [1306, 388],
+  ];
   return (
     <svg width="1920" height="1080" style={{position: 'absolute'}}>
       <g opacity="0.26">
         {Array.from({length: 9}, (_, i) => <line key={`h${i}`} x1="180" x2="1740" y1={230 + i * 70} y2={230 + i * 70} stroke={SILVER} strokeWidth="1" />)}
         {Array.from({length: 13}, (_, i) => <line key={`v${i}`} x1={210 + i * 125} x2={210 + i * 125} y1="190" y2="830" stroke={SILVER} strokeWidth="1" />)}
       </g>
-      {path.length > 1 ? <polyline points={path.map((d) => `${d.x},${d.y}`).join(' ')} fill="none" stroke={GOLD} strokeWidth="5" opacity="0.9" /> : null}
+      <polyline points={branchPath.map((d) => `${d[0]},${d[1]}`).join(' ')} fill="none" stroke={GOLD} strokeWidth="4" opacity="0.34" strokeLinecap="round" strokeLinejoin="round" />
+      <polyline points={mainPath.map((d) => `${d[0]},${d[1]}`).join(' ')} fill="none" stroke={`${GOLD}44`} strokeWidth="18" opacity="0.52" strokeLinecap="round" strokeLinejoin="round" />
+      <polyline points={mainPath.map((d) => `${d[0]},${d[1]}`).join(' ')} fill="none" stroke={GOLD} strokeWidth="6" opacity="0.92" strokeLinecap="round" strokeLinejoin="round" />
+      {mainPath.map(([x, y], i) => <circle key={`p${i}`} cx={x} cy={y} r={i === mainPath.length - 1 ? 13 : 8} fill={i === mainPath.length - 1 ? GOLD : BLUE} opacity="0.95" />)}
       {dots.map((d, i) => <circle key={i} cx={d.x} cy={d.y} r={dense ? 4 : 7} fill={i % 11 === 0 ? GOLD : BLUE} opacity={d.on * 0.9} />)}
     </svg>
   );
 };
 
 const Phone: React.FC<{large?: boolean}> = ({large}) => {
-  const w = large ? 310 : 210;
-  const h = large ? 580 : 390;
+  const frame = useCurrentFrame();
+  const w = large ? 320 : 230;
+  const h = large ? 590 : 420;
+  const x = large ? 800 : 1325;
+  const y = large ? 245 : 335;
+  const shimmer = interpolate((frame % 180), [0, 90, 180], [0.18, 0.55, 0.18]);
   return (
     <svg width="1920" height="1080" style={{position: 'absolute'}}>
-      <g transform={`translate(${large ? 805 : 1340} ${large ? 250 : 350})`}>
-        <rect x="0" y="0" width={w} height={h} rx="44" fill="#06080c" stroke={SILVER} strokeWidth="5" />
-        <rect x="26" y="42" width={w - 52} height={h - 84} rx="22" fill="#07101f" stroke={`${BLUE}66`} strokeWidth="2" />
-        <circle cx={w / 2} cy={h - 28} r="8" fill={SILVER} opacity="0.5" />
-        <path d={`M ${w * 0.24} ${h * 0.68} C ${w * 0.45} ${h * 0.42}, ${w * 0.52} ${h * 0.8}, ${w * 0.78} ${h * 0.25}`} fill="none" stroke={GOLD} strokeWidth="7" />
-        {[0.25, 0.42, 0.58, 0.77].map((t) => <circle key={t} cx={w * t} cy={h * (0.75 - t * 0.55)} r="8" fill={BLUE} />)}
+      <defs>
+        <linearGradient id="phoneGlass" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0" stopColor="#0d1729" />
+          <stop offset="0.46" stopColor="#02050a" />
+          <stop offset="1" stopColor="#0a1c35" />
+        </linearGradient>
+        <radialGradient id="phoneGlow" cx="50%" cy="42%" r="58%">
+          <stop offset="0" stopColor={BLUE} stopOpacity="0.72" />
+          <stop offset="0.36" stopColor={BLUE} stopOpacity="0.16" />
+          <stop offset="1" stopColor={BLUE} stopOpacity="0" />
+        </radialGradient>
+        <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="12" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+      </defs>
+      <g transform={`translate(${x} ${y}) rotate(-3 ${w / 2} ${h / 2})`}>
+        <rect x="-28" y="42" width={w + 56} height={h - 20} rx="64" fill="#000" opacity="0.34" filter="url(#softGlow)" />
+        <rect x="0" y="0" width={w} height={h} rx="48" fill="#05070b" stroke="#d8e1ee" strokeOpacity="0.55" strokeWidth="4" />
+        <rect x="17" y="21" width={w - 34} height={h - 42} rx="36" fill="url(#phoneGlass)" stroke={`${BLUE}70`} strokeWidth="2" />
+        <rect x="58" y="16" width={w - 116} height="12" rx="6" fill="#0a0e15" stroke="#2f3d52" strokeWidth="1" />
+        <ellipse cx={w / 2} cy={h * 0.45} rx={w * 0.38} ry={h * 0.25} fill="url(#phoneGlow)" opacity={0.75 + shimmer * 0.25} />
+        <path d={`M ${w * 0.20} ${h * 0.70} C ${w * 0.40} ${h * 0.46}, ${w * 0.55} ${h * 0.80}, ${w * 0.80} ${h * 0.28}`} fill="none" stroke="#f5b740" strokeWidth="7" strokeLinecap="round" opacity="0.94" />
+        <path d={`M ${w * 0.20} ${h * 0.70} C ${w * 0.40} ${h * 0.46}, ${w * 0.55} ${h * 0.80}, ${w * 0.80} ${h * 0.28}`} fill="none" stroke={GOLD} strokeWidth="16" strokeLinecap="round" opacity="0.14" filter="url(#softGlow)" />
+        {[0.20, 0.38, 0.57, 0.80].map((t, i) => (
+          <g key={t}>
+            <circle cx={w * t} cy={h * (0.82 - t * 0.67)} r={i === 3 ? 11 : 8} fill={i === 3 ? GOLD : BLUE} />
+            <circle cx={w * t} cy={h * (0.82 - t * 0.67)} r={i === 3 ? 24 : 18} fill="none" stroke={i === 3 ? GOLD : BLUE} strokeWidth="3" opacity="0.24" />
+          </g>
+        ))}
+        <path d={`M ${w * 0.20} 56 L ${w * 0.74} ${h - 90}`} stroke="#ffffff" strokeWidth="2" opacity={shimmer} />
+        <rect x="21" y="25" width={w - 42} height={h - 50} rx="34" fill="none" stroke="#ffffff" strokeOpacity="0.10" strokeWidth="2" />
       </g>
     </svg>
   );
@@ -250,6 +301,20 @@ const Vote: React.FC = () => (
   </svg>
 );
 
+const CourtColumns: React.FC = () => (
+  <svg width="1920" height="1080" style={{position: 'absolute', opacity: 0.22}}>
+    <g transform="translate(1110 235)">
+      {Array.from({length: 5}, (_, i) => (
+        <g key={i} transform={`translate(${i * 120} 0)`}>
+          <rect x="20" y="92" width="54" height="455" fill="#d8e1ee" opacity="0.35" />
+          <path d="M 0 88 L 94 88 L 72 44 L 22 44 Z" fill={GOLD} opacity="0.42" />
+          <rect x="-6" y="548" width="106" height="28" fill={GOLD} opacity="0.28" />
+        </g>
+      ))}
+    </g>
+  </svg>
+);
+
 const Doors: React.FC<{labels: string[]}> = ({labels}) => (
   <div style={{position: 'absolute', left: 230, right: 230, top: 340, display: 'grid', gridTemplateColumns: `repeat(${labels.length}, 1fr)`, gap: 28}}>
     {labels.map((label, i) => (
@@ -290,7 +355,7 @@ const SceneContent: React.FC<{scene: Scene}> = ({scene}) => {
       {scene.kind === 'thinList' ? <ThinList /> : null}
       {scene.kind === 'lifeMap' ? <><MapGrid dense /><Doors labels={scene.text ?? ['home', 'work', 'faith', 'health']} /></> : null}
       {scene.kind === 'collision' ? <TwoColumn left="1970s rule" right="Modern phone" leftSub="share it, lose it" rightSub="constant, automatic, unavoidable" /> : null}
-      {scene.kind === 'ruling' ? <Vote /> : null}
+      {scene.kind === 'ruling' ? <><CourtColumns /><Vote /></> : null}
       {scene.kind === 'boundary' ? <Boundary /> : null}
       {scene.kind === 'dissent' ? <TwoColumn left="Clear rule" right="Blurry line" leftSub="easy to apply" rightSub="maybe in the right place" /> : null}
       {scene.kind === 'doors' ? <Doors labels={scene.text ?? ['location', 'search', 'messages', 'sensors']} /> : null}
@@ -334,4 +399,3 @@ export const CarpenterPremium: React.FC = () => (
 );
 
 export const carpenterPremiumDurationInFrames = (fps: number): number => Math.round(TOTAL_SEC * fps);
-

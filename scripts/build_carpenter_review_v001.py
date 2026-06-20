@@ -30,6 +30,7 @@ VISUAL = EPM / "08_edit" / "carpenter_visual_v001.mp4"
 OUT_MEDIA = EPM / "08_edit" / "carpenter_review_v001.mp4"
 QC_REPO = EPDIR / "08_edit" / "renders" / "review.proxy.v001.qc.json"
 RIGHTS = EPDIR / "09_package" / "rights_manifest.v001.json"
+SELECTION = EPDIR / "05_visuals" / "selection.v001.json"
 CAPTIONS = EPDIR / "08_edit" / "captions.review_proxy.v001.srt"
 NARR_MASTER = EPM / "06_voice" / "master" / "vc_master_v001.mp3"
 NARR_SLOW = EPM / "06_voice" / "master" / "vc_master_v001_slowed_669s.mp3"
@@ -158,6 +159,10 @@ def make_captions() -> None:
         parts = [" ".join(words[j:j + 8]) for j in range(0, len(words), 8)]
         span = max(0.75, (end - start) / len(parts))
         for j, part in enumerate(parts):
+            part = re.sub(r"\s+([.,;:!?])", r"\1", part).strip()
+            part = re.sub(r"^[.,;:!?]\s*", "", part).strip()
+            if not part:
+                continue
             a = start + j * span
             b = min(end, a + span * 0.92)
             blocks.append(f"{n}\n{ts(a)} --> {ts(b)}\n{part}\n")
@@ -274,20 +279,35 @@ def final_mix(music: Path, sfx: Path) -> None:
 
 
 def write_rights(generated: list[Path]) -> None:
+    selection_by_name: dict[str, dict] = {}
+    accepted_names: set[str] = set()
+    if SELECTION.exists():
+        selected = json.loads(SELECTION.read_text("utf-8"))
+        for item in selected.get("items", []):
+            source = Path(item.get("source_file", ""))
+            if source.name:
+                selection_by_name[source.name] = item
+                if item.get("qc_status") == "accepted":
+                    accepted_names.add(source.name)
     assets = []
     for i, path in enumerate(generated, start=1):
+        selected_item = selection_by_name.get(path.name, {})
+        qc_status = selected_item.get("qc_status", "unreviewed")
+        used_in_cut = path.name in accepted_names
         assets.append({
             "asset_id": f"AST-CARP-IMG-{i:03d}",
             "type": "image",
-            "scene": "used/candidate",
-            "description": "Local SDXL symbolic reconstruction candidate used or available for EP8 Carpenter first cut; no real-person likeness intended.",
+            "scene": "used" if used_in_cut else "candidate_not_used",
+            "description": "Local SDXL symbolic reconstruction candidate for EP8 Carpenter; no real-person likeness intended.",
             "file": f"artifact://episodes/{EP}/05_visuals/sdxl_ultra_v001/{path.relative_to(SDXL).as_posix()}",
             "producer": "Local SDXL via A1111",
             "license": "Owner-generated local AI image; commercial use subject to local model/license review before publish",
             "rights_holder": "Prime Documentary (channel owner)",
             "content_hash": "sha256:" + sha256(path),
-            "needs_verification": False,
+            "needs_verification": qc_status == "unreviewed",
             "ai_disclosure": True,
+            "qc_status": qc_status,
+            "qc_reason": selected_item.get("reason", ""),
         })
     assets.append({
         "asset_id": "AST-CARP-VO-001",
@@ -353,8 +373,11 @@ def write_rights(generated: list[Path]) -> None:
         "generated_at": "2026-06-20",
         "status": "first_cut_review_ready",
         "notes": "All visuals are symbolic reconstruction; YouTube synthetic-content disclosure required before publish. No upload performed.",
+        "image_selection": "episodes/PD-2026-008-carpenter/05_visuals/selection.v001.json",
         "assets": assets,
-        "verification_required": [],
+        "verification_required": [
+            f"image:{path.name}" for path in generated if path.name not in selection_by_name
+        ],
     }, indent=2, ensure_ascii=False) + "\n", "utf-8")
 
 
@@ -391,8 +414,8 @@ def write_qc() -> None:
         },
         "audio_probe_tail": text,
         "known_limitations": [
-            "Only the first 8 local SDXL candidates completed before A1111 timeout; the cut uses those plus Remotion graphics.",
-            "Image candidate QC is first-cut level; final publish master should continue SDXL candidate generation and visual selection.",
+            "Only the first 8 local SDXL candidates completed before A1111 became occupied by another local generation job; the cut now uses the two accepted map candidates plus Remotion-built device graphics.",
+            "Final publish master should continue SDXL candidate generation and visual selection once the shared local A1111 queue is free.",
             "Captions are chunk-time scaled, not forced word-aligned."
         ],
     }, indent=2, ensure_ascii=False) + "\n", "utf-8")
