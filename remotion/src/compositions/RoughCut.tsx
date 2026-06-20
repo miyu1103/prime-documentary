@@ -3,8 +3,8 @@ import {
   AbsoluteFill,
   Audio,
   Img,
-  OffthreadVideo,
   Series,
+  Video,
   interpolate,
   staticFile,
   useCurrentFrame,
@@ -81,7 +81,7 @@ const MovingVideo: React.FC<{src: string}> = ({src}) => {
   return (
     <AbsoluteFill style={{overflow: 'hidden', backgroundColor: BRAND.color.ink}}>
       <AbsoluteFill style={{transform: `scale(${scale})`, transformOrigin: '50% 50%'}}>
-        <OffthreadVideo src={staticFile(src)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+        <Video src={staticFile(src)} muted loop style={{width: '100%', height: '100%', objectFit: 'cover'}} />
       </AbsoluteFill>
     </AbsoluteFill>
   );
