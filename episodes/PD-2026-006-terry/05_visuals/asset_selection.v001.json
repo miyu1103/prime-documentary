@@ -27,6 +27,17 @@
       "qc_score": 94,
       "rights_status": "clear",
       "notes": "Accepted as signless storefront background. The two-men/about-12-trips fact is represented by Remotion path graphics, not by generated people."
+    },
+    {
+      "asset_id": "PD-2026-006-terry-S018-IMG-001",
+      "scene_id": "S018",
+      "shot_id": "S018-SH001",
+      "source_candidate": "artifact://episodes/PD-2026-006-terry/05_visuals/sdxl_ultra_v001/act3/S018/TERRY_H09_coat_fabric_boundary_c02_seed608980.png",
+      "selected_uri": "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S018/PD-2026-006-terry-S018-IMG-001.v001.png",
+      "sha256": "65126460a83dd5e9707680dcc0de88969732d2643d72c6ab9b9de0f9af416aee",
+      "qc_score": 92,
+      "rights_status": "clear",
+      "notes": "Accepted as outer-clothing boundary motif. Not a literal pat-down action; use Remotion weapons-only boundary overlay."
     }
   ],
   "rejected_or_not_locked": [
@@ -50,6 +61,13 @@
       "candidate_count_reviewed": 3,
       "status": "one_locked",
       "reason": "People-in-window candidates failed due extra person/faces/text. Prompt switched to empty storefront background; movement will be accurate Remotion path-counter overlay. Seed 608682 accepted."
+    },
+    {
+      "scene_id": "S018",
+      "prompt_id": "TERRY_H09_coat_fabric_boundary",
+      "candidate_count_reviewed": 2,
+      "status": "one_locked",
+      "reason": "Seed 608980 accepted for outer-clothing boundary motif. Seed 608831 kept as alternate but reads more like clasped hands; neither should be presented as literal frisk action without Remotion overlay."
     }
   ],
   "next_generation_priority": [
