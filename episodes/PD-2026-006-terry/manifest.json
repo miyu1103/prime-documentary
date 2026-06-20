@@ -3,8 +3,8 @@
   "episode_id": "PD-2026-006-terry",
   "topic_id": "TOP-20260620-006",
   "slug": "terry",
-  "title_working": "A Cop Can Search You Without a Warrant — Here's the Catch",
-  "state": "assets_generating",
+  "title_working": "A Cop Can Search You Without a Warrant \u2014 Here's the Catch",
+  "state": "edit_review",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -24,7 +24,12 @@
     "visual_qc_plan": "v001",
     "asset_selection": "v001",
     "rights_manifest": "v001",
-    "asset_generation_script": "v001"
+    "asset_generation_script": "v001",
+    "remotion_component": "v001",
+    "edit_build_script": "v001",
+    "captions_review_proxy": "v001",
+    "review_proxy_qc": "v001",
+    "review_proxy_render": "v001"
   },
   "artifacts": [
     {
@@ -92,7 +97,7 @@
       "artifact_type": "rights_manifest",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json",
-      "checksum": "sha256:c91318a268150735424d893bd76a22b30eb415342659f8ecc483fb9601afbebc",
+      "checksum": "sha256:d66bb21f5fe461d08d23bcd7b5097ec91521c7fa21aa727fcd5092d9ece51ae5",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -156,6 +161,66 @@
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-remotion-component",
+      "artifact_type": "remotion_component",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/compositions/TerryPremium.tsx",
+      "checksum": "sha256:f7e569d1f1404f43443fb88da191e48444c2e2bf7e7f8885f529fb8e57b4fcad",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-remotion-entry",
+      "artifact_type": "remotion_entry",
+      "revision": "v001",
+      "uri": "artifact://remotion/src/terry_index.tsx",
+      "checksum": "sha256:3f3dc774fb4ec6642129068f4f02903246c5756edfa11472c8295fcb2504572e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-edit-build-script",
+      "artifact_type": "edit_build_script",
+      "revision": "v001",
+      "uri": "artifact://scripts/build_terry_review_v001.py",
+      "checksum": "sha256:f2d3de285b21db6ba34ee057c3df741b9228e19b19d2127fd5a52bd1869c8d05",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-captions-review-proxy",
+      "artifact_type": "captions",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/captions.review_proxy.v001.srt",
+      "checksum": "sha256:daa4ea91f4fd0c76e15e8c0e492c4a2011f8ff1e8c9275224185682e5fe4da6b",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-review-proxy-qc",
+      "artifact_type": "qc_report",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/renders/review.proxy.v001.qc.json",
+      "checksum": "sha256:d9778166cfe4b2a5e1e454fbbab73321c533001c54096d952d66dbac9b580f09",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-review-proxy-render",
+      "artifact_type": "review_proxy_render",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/terry_review_proxy_v001.mp4",
+      "checksum": "sha256:3a2136b68826ada0879fcd04136bbda4fe7c5d930a9517656afd5e8b426e913c",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
     }
   ],
   "approvals": [
@@ -188,9 +253,12 @@
     "Owner set premium image bar: selected AI stills must pass visual_qc_plan.v001.md; placeholders are not acceptable for first-cut.",
     "Asset generation started locally via A1111/SDXL. S003 establishing image approved; S001 stop/pat-down candidates rejected/not locked due visual/QC defects.",
     "S004 approved as empty storefront background; the repeated two-person path/counter is handled by exact Remotion graphics to avoid generated-face/text risk.",
-    "S018 approved as outer-clothing boundary motif only; not to be used as literal pat-down action without Remotion weapons-only overlay."
+    "S018 approved as outer-clothing boundary motif only; not to be used as literal pat-down action without Remotion weapons-only overlay.",
+    "First-cut review proxy rendered locally with Remotion + FFmpeg; no paid API, external upload, or publish performed.",
+    "Review proxy uses local Windows SAPI draft narration; ElevenLabs master requires explicit owner approval and will require caption re-alignment.",
+    "QC notes: duration/streams pass; blackdetect flags the dark endcard background and freezedetect flags short low-motion segments, both documented for v002 polish."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T15:56:00+09:00"
+  "updated_at": "2026-06-20T18:35:00+09:00"
 }

@@ -3,7 +3,7 @@
   "episode_id": "PD-2026-006-terry",
   "revision": "v001",
   "created_at": "2026-06-20T15:30:00+09:00",
-  "status": "partial_assets_generating",
+  "status": "first_cut_review_ready",
   "items": [
     {
       "asset_id": "PD-2026-006-terry-S003-IMG-001",
@@ -49,12 +49,56 @@
       "content_hash": "sha256:65126460a83dd5e9707680dcc0de88969732d2643d72c6ab9b9de0f9af416aee",
       "needs_verification": false,
       "ai_disclosure_required": true
+    },
+    {
+      "asset_id": "PD-2026-006-terry-VO-PROXY-001",
+      "type": "narration_audio_proxy",
+      "scene": "all",
+      "description": "Local Windows SAPI draft narration for first-cut review only; not the final ElevenLabs narration master.",
+      "file": "artifact://episodes/PD-2026-006-terry/06_voice/draft_local/terry_local_sapi_draft_v001_fit.wav",
+      "producer": "Local Windows System.Speech SAPI via build_terry_review_v001.py",
+      "license": "Owner-local generated proxy audio; replace with owner-approved ElevenLabs narration before final cut.",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:d30cd58cfbf5382a268c1d85ced064f8d36db98996d53283738fa6195b10dd64",
+      "needs_verification": false,
+      "paid_api_used": false,
+      "external_upload": false
+    },
+    {
+      "asset_id": "PD-2026-006-terry-MUS-001",
+      "type": "library_audio_source",
+      "scene": "all",
+      "description": "Reusable Prime Documentary library music bed used quietly under the review proxy.",
+      "file": "artifact://library/music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v2.mp3",
+      "producer": "Prime Documentary reusable music library",
+      "license": "Rights-tracked reusable library bed",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:bf0999be6a0bbe85312c465c0fea72b67ee5d887cf0f8631539b4fb2e6bb4e72",
+      "needs_verification": false
+    },
+    {
+      "asset_id": "PD-2026-006-terry-RENDER-PROXY-001",
+      "type": "render",
+      "scene": "all",
+      "description": "First-cut review proxy render, not published. Includes Remotion visuals, approved AI symbolic stills, local draft narration, library music, and burned captions.",
+      "file": "artifact://episodes/PD-2026-006-terry/08_edit/terry_review_proxy_v001.mp4",
+      "producer": "Remotion + FFmpeg",
+      "license": "Composite review render from rights-tracked inputs",
+      "rights_holder": "Prime Documentary",
+      "content_hash": "sha256:3a2136b68826ada0879fcd04136bbda4fe7c5d930a9517656afd5e8b426e913c",
+      "needs_verification": false,
+      "ai_disclosure_required": true,
+      "synthetic_content_disclosure_required": true,
+      "external_upload": false,
+      "publish_ready": false
     }
   ],
   "constraints": [
     "No real-person likeness or deepfake",
     "Generated visuals are symbolic reconstruction, never authentic footage",
     "YouTube synthetic-content disclosure required",
-    "Every additional AI image must be added here before first-cut use"
-  ]
+    "Every additional AI image must be added here before first-cut use",
+    "First-cut proxy uses local draft narration; final narration requires owner approval for ElevenLabs paid generation"
+  ],
+  "updated_at": "2026-06-20T18:35:00+09:00"
 }

@@ -1,0 +1,55 @@
+{
+  "schema_version": "first_cut_qc_v1",
+  "episode_id": "PD-2026-006-terry",
+  "revision": "v001",
+  "render": "08_edit/renders/review.proxy.v001.mp4",
+  "heavy_media_render": "artifact://episodes/PD-2026-006-terry/08_edit/terry_review_proxy_v001.mp4",
+  "render_actual_path": "H:\\pd-media\\episodes\\PD-2026-006-terry\\08_edit\\terry_review_proxy_v001.mp4",
+  "sha256": "3a2136b68826ada0879fcd04136bbda4fe7c5d930a9517656afd5e8b426e913c",
+  "duration_seconds": 678.0,
+  "target_duration_seconds": 678.0,
+  "video": {
+    "renderer": "Remotion TerryPremium",
+    "codec_finish": "FFmpeg libx264 crf16 slow",
+    "symbolic_reconstruction_label": "present on AI/symbolic street reenactment scenes",
+    "no_real_person_likeness": true
+  },
+  "audio": {
+    "narration": "local Windows SAPI draft proxy, not ElevenLabs master",
+    "paid_api_used": false,
+    "music": "H:\\pd-media\\library\\music\\explainer_bed\\mus_20260614_explainer_bed_soft_explainer_v2.mp3"
+  },
+  "captions": {
+    "source": "locked script.en.v001.md [VO:] lines",
+    "file": "08_edit/captions.review_proxy.v001.srt",
+    "timing": "approximate proxy timing; re-align after approved ElevenLabs master"
+  },
+  "rights": {
+    "ai_images_registered": true,
+    "synthetic_content_disclosure_required": true,
+    "external_upload": false,
+    "publish_ready": false
+  },
+  "gate": {
+    "status": "first_cut_review_ready",
+    "next_required_approval": "owner first-cut approval before ElevenLabs paid narration/title-thumbnail/publish steps"
+  },
+  "warnings": [
+    "Review proxy uses local draft TTS because ElevenLabs paid run requires explicit owner approval.",
+    "Only approved/right-registered AI stills are included; high-risk human contact beats are Remotion graphics.",
+    "Caption timing is approximate and must be force-aligned after final narration."
+  ],
+  "created_at": "2026-06-20T07:22:20.579135+00:00",
+  "automated_checks": {
+    "ffprobe": "pass: 678.000s, 1920x1080 h264 video, 48kHz stereo AAC audio",
+    "blackdetect": "warn: detected 672.000-677.967s because endcard uses a black brand background; frame inspection confirms visible Prime Documentary endcard text",
+    "freezedetect": "warn: short 3.0-3.9s low-motion intervals detected in dark graphic scenes; no blank/failed render found in contact sheet or spot frames",
+    "contact_sheet": "artifact://episodes/PD-2026-006-terry/08_edit/terry_review_proxy_v001_contact.jpg",
+    "spot_frames": [
+      82,
+      100,
+      414,
+      675
+    ]
+  }
+}
