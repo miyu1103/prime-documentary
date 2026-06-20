@@ -5,7 +5,7 @@ Side effects in non-dry-run mode:
 - refreshes the local YouTube OAuth token
 - uploads the exact final MP4 as a private video
 - sets the selected thumbnail
-- schedules public release for 2026-06-22T12:00:00+09:00
+- schedules public release for 2026-06-21T12:00:00+09:00
 - writes local result, package state, manifest, and event files
 
 Idempotency strategy:
@@ -37,21 +37,19 @@ from upload_episode import CHANNEL_ALLOWLIST, get_channel_id, sha256_file, uploa
 EP = "PD-2026-006-terry"
 EPDIR = ROOT / "episodes" / EP
 META = EPDIR / "09_package" / "youtube_meta.v001.json"
-APR_ID = "APR-0005"
+APR_ID = "APR-0007"
 APR = EPDIR / "approvals" / f"{APR_ID}.json"
 RIGHTS = EPDIR / "09_package" / "rights_manifest.v001.json"
 FINAL_QC = EPDIR / "08_edit" / "renders" / "final.v001.qc.json"
 VIDEO = Path(r"H:\pd-media\episodes\PD-2026-006-terry\08_edit\terry_final_v001.mp4")
-THUMB = EPDIR / "10_thumbnail" / "thumbnail_option_08.v001.png"
 MANIFEST = EPDIR / "manifest.json"
 RESULT = EPDIR / "09_package" / "youtube_schedule_result.v002.json"
-UPDATE_RESULT = EPDIR / "09_package" / "youtube_schedule_update.v002.json"
+UPDATE_RESULT = EPDIR / "09_package" / "youtube_schedule_update.v003.json"
 EVENTS = EPDIR / "events" / "events.jsonl"
 
 EXPECTED_VIDEO = "938897c59113adb46d501b81c379ab692dc918fd8c931a9f4743cb9a8d30343e"
-EXPECTED_THUMB = "2410160486162ad7e2b0f25c8e6f92dbcba19177a1618622e9fb28f366a4acc0"
-SCHEDULED_AT_LOCAL = "2026-06-22T12:00:00+09:00"
-SCHEDULED_AT_UTC = "2026-06-22T03:00:00Z"
+SCHEDULED_AT_LOCAL = "2026-06-21T12:00:00+09:00"
+SCHEDULED_AT_UTC = "2026-06-21T03:00:00Z"
 
 
 def load_json(path: Path) -> dict:
@@ -65,6 +63,23 @@ def write_json(path: Path, data: dict) -> None:
 def append_event(data: dict) -> None:
     with EVENTS.open("a", encoding="utf-8") as f:
         f.write(json.dumps(data, ensure_ascii=False) + "\n")
+
+
+def selected_thumbnail_path(meta: dict) -> Path:
+    rel = meta.get("selected_thumbnail") or meta.get("thumbnail")
+    if not rel:
+        raise RuntimeError("youtube_meta has no selected thumbnail")
+    path = ROOT / rel
+    if not path.exists():
+        raise RuntimeError(f"Missing selected thumbnail: {path}")
+    return path
+
+
+def selected_thumbnail_sha(meta: dict) -> str:
+    value = meta.get("selected_thumbnail_sha256")
+    if not isinstance(value, str) or not value.startswith("sha256:"):
+        raise RuntimeError("youtube_meta selected thumbnail sha256 is missing")
+    return value.removeprefix("sha256:")
 
 
 def update_artifact_checksum(manifest: dict, artifact_id: str, path: Path, artifact_type: str | None = None) -> None:
@@ -252,17 +267,15 @@ def verify_preconditions(allow_existing_result: bool = False) -> tuple[dict, dic
         raise RuntimeError("Missing metadata, rights manifest, or final QC")
     if not VIDEO.exists():
         raise RuntimeError(f"Missing final video: {VIDEO}")
-    if not THUMB.exists():
-        raise RuntimeError(f"Missing selected thumbnail: {THUMB}")
     actual_video = sha256_file(VIDEO)
-    actual_thumb = sha256_file(THUMB)
     if actual_video != EXPECTED_VIDEO:
         raise RuntimeError(f"Video hash mismatch: expected {EXPECTED_VIDEO}, actual {actual_video}")
-    if actual_thumb != EXPECTED_THUMB:
-        raise RuntimeError(f"Thumbnail hash mismatch: expected {EXPECTED_THUMB}, actual {actual_thumb}")
     meta = load_json(META)
-    if meta.get("selected_thumbnail_sha256") != f"sha256:{EXPECTED_THUMB}":
-        raise RuntimeError("youtube_meta selected thumbnail hash does not match option 08")
+    thumb = selected_thumbnail_path(meta)
+    expected_thumb = selected_thumbnail_sha(meta)
+    actual_thumb = sha256_file(thumb)
+    if actual_thumb != expected_thumb:
+        raise RuntimeError(f"Thumbnail hash mismatch: expected {expected_thumb}, actual {actual_thumb}")
     if not allow_existing_result and (meta.get("publish_performed") is not False or meta.get("upload_performed") is not False):
         raise RuntimeError("youtube_meta already marks upload/publish performed")
     if allow_existing_result and meta.get("publish_performed") is not False:
@@ -283,9 +296,12 @@ def load_existing_video_id() -> str:
 
 def run_update_existing(meta: dict, dry_run: bool) -> int:
     video_id = load_existing_video_id()
+    thumb = selected_thumbnail_path(meta)
+    thumb_sha = selected_thumbnail_sha(meta)
     print(f"OK existing YouTube video found: {video_id}")
     print(f"OK update target local={SCHEDULED_AT_LOCAL} utc={SCHEDULED_AT_UTC}")
     print(f"OK updated title: {meta['title']}")
+    print(f"OK selected thumbnail {thumb.relative_to(ROOT)} sha256={thumb_sha}")
     print("OK update will keep privacy private, madeForKids=false, containsSyntheticMedia=true")
     if dry_run:
         print("DRY_RUN_OK no external writes performed")
@@ -304,7 +320,7 @@ def run_update_existing(meta: dict, dry_run: bool) -> int:
     print("OK snippet updated")
     schedule_update = update_schedule(token, video_id, state_before)
     print("OK schedule updated")
-    thumb_status = set_thumbnail(token, video_id, THUMB)
+    thumb_status = set_thumbnail(token, video_id, thumb)
     print("OK thumbnail re-set")
     state_after = get_video_state(token, video_id)
     items = state_after.get("items") or []
@@ -328,6 +344,8 @@ def run_update_existing(meta: dict, dry_run: bool) -> int:
         "publish_at_platform": publish_at,
         "metadata_updated": True,
         "thumbnail_set": True,
+        "thumbnail_file": str(thumb.relative_to(ROOT)).replace("\\", "/"),
+        "thumbnail_sha256": thumb_sha,
         "thumbnail_status": thumb_status,
         "youtube_meta": str(META),
         "youtube_state_before": state_before,
@@ -380,7 +398,7 @@ def main(argv: list[str]) -> int:
     print(f"OK {APR_ID} approved")
     print(f"OK schedule target local={SCHEDULED_AT_LOCAL} utc={SCHEDULED_AT_UTC}")
     print(f"OK exact video hash {EXPECTED_VIDEO}")
-    print(f"OK exact thumbnail hash {EXPECTED_THUMB}")
+    print(f"OK selected thumbnail hash {selected_thumbnail_sha(meta)}")
     print(f"OK title: {meta['title']}")
     print("OK upload will be private first, madeForKids=false, containsSyntheticMedia=true")
 
@@ -391,6 +409,8 @@ def main(argv: list[str]) -> int:
         print("DRY_RUN_OK no external writes performed")
         return 0
 
+    thumb = selected_thumbnail_path(meta)
+    thumb_sha = selected_thumbnail_sha(meta)
     env = load_env()
     token = _access_token(env)
     print("OK access token obtained")
@@ -409,7 +429,7 @@ def main(argv: list[str]) -> int:
     thumb_status = None
     thumb_error = None
     try:
-        thumb_status = set_thumbnail(token, video_id, THUMB)
+        thumb_status = set_thumbnail(token, video_id, thumb)
         print("OK thumbnail set")
     except Exception as exc:
         thumb_error = str(exc)
@@ -439,8 +459,8 @@ def main(argv: list[str]) -> int:
         "publish_at_platform": publish_at,
         "video_file": str(VIDEO),
         "video_sha256": EXPECTED_VIDEO,
-        "thumbnail_file": str(THUMB),
-        "thumbnail_sha256": EXPECTED_THUMB,
+        "thumbnail_file": str(thumb),
+        "thumbnail_sha256": thumb_sha,
         "thumbnail_set": thumb_status is not None,
         "thumbnail_status": thumb_status,
         "thumbnail_error": thumb_error,
@@ -462,7 +482,7 @@ def main(argv: list[str]) -> int:
         "revision": "v001",
         "actor": "codex",
         "approval_id": APR_ID,
-        "detail": f"Uploaded EP6 Terry to YouTube as private video_id={video_id} and scheduled public release for {SCHEDULED_AT_LOCAL}. Thumbnail option 08 selected. No public immediate publish performed.",
+        "detail": f"Uploaded EP6 Terry to YouTube as private video_id={video_id} and scheduled public release for {SCHEDULED_AT_LOCAL}. Selected thumbnail set from youtube_meta. No public immediate publish performed.",
         "video_id": video_id,
         "watch": f"https://youtu.be/{video_id}",
         "studio": f"https://studio.youtube.com/video/{video_id}/edit",

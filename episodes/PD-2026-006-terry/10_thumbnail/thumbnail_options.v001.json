@@ -3,7 +3,7 @@
   "episode_id": "PD-2026-006-terry",
   "revision": "v001",
   "generated_at": "2026-06-20T13:47:20.466262+00:00",
-  "status": "thumbnail_selected_not_published",
+  "status": "thumbnail_selected_and_youtube_updated",
   "publish_performed": false,
   "upload_performed": false,
   "ai_disclosure_required": true,
@@ -15,12 +15,12 @@
     "artifact://episodes/PD-2026-006-terry/10_thumbnail/codex_keyart_background.v008.png"
   ],
   "recommended_shortlist": [
+    "thumbnail_option_09_codex_beauty.v001.png",
     "thumbnail_option_08.v001.png",
-    "thumbnail_option_07.v001.png",
-    "thumbnail_option_06.v001.png"
+    "thumbnail_option_07.v001.png"
   ],
-  "selected": "thumbnail_option_08.v001.png",
-  "selection_reason": "Owner asked for a more beautiful and more detailed Codex-generated image. Option 08 uses the recovered Codex-generated key-art background and keeps exact project-rendered text and legal motifs for reliability.",
+  "selected": "thumbnail_option_09_codex_beauty.v001.png",
+  "selection_reason": "Owner requested a more beautiful Codex-made thumbnail. Option 09 keeps the cinematic Codex key-art background but improves mobile readability with a cleaner STOPPED? / NO WARRANT hierarchy.",
   "options": [
     {
       "id": "thumb01",
@@ -86,6 +86,15 @@
       "sha256": "2410160486162ad7e2b0f25c8e6f92dbcba19177a1618622e9fb28f366a4acc0",
       "assessment": "Selected. Uses the recovered Codex-generated detailed key-art background with richer storefront texture, wet-pavement reflections, blue path light, and cleaner documentary hierarchy.",
       "dimensions": "1280x720"
+    },
+    {
+      "id": "thumb09",
+      "file": "episodes/PD-2026-006-terry/10_thumbnail/thumbnail_option_09_codex_beauty.v001.png",
+      "headline": "STOPPED?",
+      "kicker": "NO WARRANT",
+      "sha256": "5f364026fc46758441c9673e47cdd93f96ceec265810d2267643d0d4695c45bf",
+      "assessment": "Selected replacement. Cleaner, more premium, and more readable at mobile size than option 08 while preserving the Terry-specific legal tension.",
+      "dimensions": "1280x720"
     }
   ],
   "contact_sheet": {
@@ -107,5 +116,6 @@
       "dimensions": "1792x1024",
       "generator": "Codex built-in image generation, recovered from session image_generation result"
     }
-  ]
+  ],
+  "youtube_thumbnail_update": "episodes/PD-2026-006-terry/09_package/youtube_thumbnail_update.v003.json"
 }
