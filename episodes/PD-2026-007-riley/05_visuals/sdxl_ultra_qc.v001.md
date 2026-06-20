@@ -47,3 +47,30 @@ python .\scripts\gen_riley_sdxl_ultra.py --ids RILEY_H01_phone_lift_pocket --can
 ```
 
 Then rebuild the contact sheet and score against `04_scenes/visual_qc_plan.v001.md`.
+
+## Update - 2026-06-20 16:36 +09:00
+
+Additional S001 sets were generated:
+
+- `sdxl_ultra_v002`: closer to phone-pocket intent, rejected because the images still read as people
+  holding phones rather than the decisive seizure object.
+- `sdxl_ultra_v003`: rejected; visually stronger but still too hand/person-led and not a pocket image.
+- `sdxl_ultra_v004`: rejected; did not follow no-person/object-portrait instruction.
+- `sdxl_ultra_v005`: first object-led set; candidate 06 became a useful direction but the screen was
+  too bright/blue.
+- `sdxl_ultra_v006`: selected `hook/RILEY_H01_phone_lift_pocket_c06_seed857894.png` as
+  `H:/pd-media/episodes/PD-2026-007-riley/05_visuals/selected/PD-2026-007-S001-IMG-001.v001.png`.
+
+Selected S001 score:
+
+- Concept clarity: 18/20
+- Composition/editability: 20/20
+- Light/color: 19/20
+- Material realism: 18/20
+- Safety/rights: 20/20
+- Total: 95/100
+
+Rationale: the image is object-led, faceless, no text/logo, brand-consistent, with strong negative
+space and a clear privacy-through-phone motif. It is less literal than a hand removing the phone, but
+that is preferable to accepting weaker person-led reconstructions. The seizure action will be
+completed in Remotion with motion, SFX, and the on-screen `symbolic reconstruction` label.

@@ -41,7 +41,7 @@ PROMPTS = [
         "hook",
         "S001",
         "S001-SH001",
-        "extreme macro close-up of a modern black smartphone halfway pulled from a dark jacket pocket, anonymous hand gripping only the phone edge, pocket seam and fabric texture sharply visible, no torso, no head, no full body, reflected blue police light, tense neutral privacy moment",
+        "museum-grade extreme macro object portrait, no people: a folded dark coat on a black studio surface, one coat pocket sharply visible, a modern black smartphone protruding halfway from the pocket, pocket seam and heavy woven fabric in crisp detail, phone screen off and mostly black, only a narrow electric-blue police-light reflection streak across the glass, subtle silver phone edge, no glowing blue screen, no hand, no fingers, no standing person, no torso, no head, no body, no visible UI, intimate privacy violation symbol",
         8,
     ),
     (
@@ -190,13 +190,16 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--ids", nargs="*", help="Optional item_id filter, e.g. RILEY_H01_phone_lift_pocket")
     parser.add_argument("--candidates", type=int, default=None, help="Override candidate count per selected item.")
+    parser.add_argument("--set-name", default="sdxl_ultra_v001", help="Output set name under 05_visuals.")
+    parser.add_argument("--base-seed", type=int, default=807000, help="Base seed for deterministic candidate families.")
     args = parser.parse_args()
     wanted = set(args.ids or [])
 
-    OUT.mkdir(parents=True, exist_ok=True)
+    out_root = MEDIA / "episodes" / EP / "05_visuals" / args.set_name
+    out_root.mkdir(parents=True, exist_ok=True)
     manifest = {
         "episode_id": EP,
-        "set": "sdxl_ultra_v001",
+        "set": args.set_name,
         "generator": "local-a1111-sdxl",
         "api": API,
         "ai_disclosure_required": True,
@@ -206,7 +209,7 @@ def main() -> int:
         "started_at": time.strftime("%Y-%m-%dT%H:%M:%S%z"),
         "items": [],
     }
-    base_seed = 807000
+    base_seed = args.base_seed
     n = 0
     for item_id, section, scene_id, shot_id, core, candidate_count in PROMPTS:
         if wanted and item_id not in wanted:
@@ -242,7 +245,7 @@ def main() -> int:
                 "do_not_save_grid": True,
             }
             result = post(payload)
-            out = OUT / section / f"{item_id}_c{c+1:02d}_seed{seed}.png"
+            out = out_root / section / f"{item_id}_c{c+1:02d}_seed{seed}.png"
             save(result["images"][0], out)
             meta = {
                 "asset_id": f"{EP}-{scene_id}-IMG-{c+1:03d}",
@@ -265,13 +268,13 @@ def main() -> int:
             manifest["items"].append(meta)
             print(f"[{n:03d}] {out}", flush=True)
             if n % 8 == 0:
-                (OUT / "asset_manifest.v001.partial.json").write_text(
+                (out_root / "asset_manifest.v001.partial.json").write_text(
                     json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", "utf-8"
                 )
     manifest["finished_at"] = time.strftime("%Y-%m-%dT%H:%M:%S%z")
     manifest["count"] = len(manifest["items"])
-    (OUT / "asset_manifest.v001.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", "utf-8")
-    print(f"done count={len(manifest['items'])} out={OUT}", flush=True)
+    (out_root / "asset_manifest.v001.json").write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", "utf-8")
+    print(f"done count={len(manifest['items'])} out={out_root}", flush=True)
     return 0
 
 

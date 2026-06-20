@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-007-riley",
+  "revision": "v001",
+  "generated_at": "2026-06-20T16:36:12+09:00",
+  "status": "in_progress",
+  "notes": "Rights manifest opened at first selected visual. All visuals are symbolic reconstructions, AI-disclosed, and not authentic footage. No real-person likeness is allowed for David Riley or Brima Wurie. Add narration, music, SFX, edit renders, and all later selected visual assets before first-cut approval.",
+  "assets": [
+    {
+      "asset_id": "PD-2026-007-S001-IMG-001",
+      "type": "image",
+      "scene": "S001",
+      "description": "Selected S001 hook still: generic smartphone on dark coat pocket/fabric, symbolic reconstruction of phone seizure/privacy stakes; no people, no faces, no readable text, no logos.",
+      "file": "H:/pd-media/episodes/PD-2026-007-riley/05_visuals/selected/PD-2026-007-S001-IMG-001.v001.png",
+      "producer": "Local SDXL via A1111 (juggernautXL_ragnarokBy, RTX4090)",
+      "license": "Locally generated AI image for Prime Documentary; commercial use by channel owner subject to model/source terms; AI/synthetic disclosure required.",
+      "rights_holder": "Prime Documentary (channel owner)",
+      "content_hash": "sha256:6c74a6af90772916bd3acad549dcca8439fcd0924ff94a94637a8079b96f3d63",
+      "needs_verification": false,
+      "ai_disclosure_required": true,
+      "symbolic_reconstruction": true,
+      "source_candidate": "H:/pd-media/episodes/PD-2026-007-riley/05_visuals/sdxl_ultra_v006/hook/RILEY_H01_phone_lift_pocket_c06_seed857894.png",
+      "prompt_ref": "scripts/gen_riley_sdxl_ultra.py:RILEY_H01_phone_lift_pocket",
+      "selected_at": "2026-06-20T16:36:12+09:00",
+      "qc_status": "pass_selected"
+    }
+  ],
+  "verification_required": []
+}

@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-007",
   "slug": "riley",
   "title_working": "Can the Police Search Your Phone?",
-  "state": "asset_plan_ready",
+  "state": "assets_generating",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -19,7 +19,8 @@
     "scene_plan": "v001",
     "asset_plan": "v001",
     "visual_bible": "v001",
-    "visual_qc_plan": "v001"
+    "visual_qc_plan": "v001",
+    "rights_manifest": "v001"
   },
   "artifacts": [
     {
@@ -71,6 +72,16 @@
       "status": "approved",
       "rights_status": "clear",
       "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-007-riley-rights-manifest",
+      "artifact_type": "rights_manifest",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-007-riley/09_package/rights_manifest.v001.json",
+      "checksum": "sha256:ffe1359ae1b133d184a1283901d656feb39b71f678297beccfbd0828090836e2",
+      "status": "draft",
+      "rights_status": "clear",
+      "qc_status": "pass"
     }
   ],
   "approvals": [
@@ -102,5 +113,5 @@
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T14:14:50+09:00"
+  "updated_at": "2026-06-20T16:36:12+09:00"
 }
