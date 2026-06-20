@@ -28,7 +28,6 @@ PUBLIC_CARP = REMOTION / "public" / "carpenter"
 SDXL = EPM / "05_visuals" / "sdxl_ultra_v001"
 VISUAL = EPM / "08_edit" / "carpenter_visual_v001.mp4"
 OUT_MEDIA = EPM / "08_edit" / "carpenter_review_v001.mp4"
-OUT_REPO = EPDIR / "08_edit" / "renders" / "review.proxy.v001.mp4"
 QC_REPO = EPDIR / "08_edit" / "renders" / "review.proxy.v001.qc.json"
 RIGHTS = EPDIR / "09_package" / "rights_manifest.v001.json"
 CAPTIONS = EPDIR / "08_edit" / "captions.review_proxy.v001.srt"
@@ -272,8 +271,6 @@ def final_mix(music: Path, sfx: Path) -> None:
         tmp_out,
     ], "final mix + captions")
     tmp_out.replace(OUT_MEDIA)
-    OUT_REPO.parent.mkdir(parents=True, exist_ok=True)
-    shutil.copy2(OUT_MEDIA, OUT_REPO)
 
 
 def write_rights(generated: list[Path]) -> None:
@@ -362,19 +359,20 @@ def write_rights(generated: list[Path]) -> None:
 
 
 def write_qc() -> None:
-    final_dur = duration(OUT_REPO)
+    final_dur = duration(OUT_MEDIA)
     audio_probe = subprocess.run(
-        [str(FFMPEG), "-hide_banner", "-i", OUT_REPO, "-af", "volumedetect", "-f", "null", "NUL"],
+        [str(FFMPEG), "-hide_banner", "-i", OUT_MEDIA, "-af", "volumedetect", "-f", "null", "NUL"],
         capture_output=True,
         encoding="utf-8",
         errors="replace",
     )
     text = (audio_probe.stderr or "")[-2000:]
+    QC_REPO.parent.mkdir(parents=True, exist_ok=True)
     QC_REPO.write_text(json.dumps({
         "episode_id": EP,
-        "render": "08_edit/renders/review.proxy.v001.mp4",
+        "render": f"artifact://episodes/{EP}/08_edit/carpenter_review_v001.mp4",
         "media_render": str(OUT_MEDIA),
-        "sha256": sha256(OUT_REPO),
+        "sha256": sha256(OUT_MEDIA),
         "duration_seconds": round(final_dur, 3),
         "target_duration_seconds": TOTAL_SEC,
         "video": "Remotion CarpenterPremium, synthetic-symbolic visuals, 1920x1080 H.264",
@@ -417,9 +415,9 @@ def main() -> int:
         final_mix(music, sfx)
         write_rights(generated)
     write_qc()
-    print(f"OUT {OUT_REPO}")
+    print(f"OUT {OUT_MEDIA}")
     print(f"MEDIA {OUT_MEDIA}")
-    print(f"SHA256 {sha256(OUT_REPO)}")
+    print(f"SHA256 {sha256(OUT_MEDIA)}")
     return 0
 
 
