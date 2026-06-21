@@ -62,4 +62,5 @@
 - `lottie-asset-workflow.md` — Lottie手動運用
 - `thumbnail-and-title-system.md` — サムネ/タイトル設計（CTR・A/B）
 - `audio-sfx-bgm-library-plan.md` — 音素材（SFX/環境音/BGM）調達・運用
-- `codex-motion-implementation-brief.md` — CodexへのPhase1実装指示
+- `codex-motion-implementation-brief.md` — CodexへのPhase1実装指示（Motion最小エンジン）
+- `codex-asset-factory-implementation-brief.md` — CodexへのPhase2実装指示（Asset Factory）
