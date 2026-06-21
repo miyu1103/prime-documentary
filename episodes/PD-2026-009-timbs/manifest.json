@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-009",
   "slug": "timbs",
   "title_working": "Police Can Take Your Car Without Convicting You — The Supreme Court Drew a Line",
-  "state": "script_verified",
+  "state": "scheduled",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -15,7 +15,11 @@
     "sources": "v001",
     "claims": "v001",
     "script": "v001",
-    "script_qc": "v001"
+    "script_qc": "v001",
+    "youtube_meta": "v001",
+    "rights_manifest": "v001",
+    "youtube_schedule_result": "v001",
+    "youtube_captions_result": "v001"
   },
   "artifacts": [
     {
@@ -29,12 +33,27 @@
       "qc_status": "pass"
     }
   ],
-  "approvals": ["APR-0001"],
+  "approvals": [
+    "APR-0001",
+    "APR-0002"
+  ],
   "costs": {
-    "estimated": {"amount": 0, "currency": "USD"},
-    "actual": {"amount": 0, "currency": "USD"},
-    "soft_limit": {"amount": 100, "currency": "USD"},
-    "hard_limit": {"amount": 200, "currency": "USD"}
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
   },
   "warnings": [
     "Claude owns research+script; Codex begins production at scenes/visuals. Image generation = Codex; edit = Remotion+FFmpeg.",
@@ -42,9 +61,12 @@
     "Forfeiture-system + 'policing for profit' claims (CLM-0008/0009) rest on advocacy sources (Institute for Justice / ACLU) and are ATTRIBUTED as critique with defenders' view shown; keep strictly neutral and non-partisan; consider an R3 expert pass before publish.",
     "Real person (Tyson Timbs) by role, neutral; no real-person likeness in AI visuals; drug context kept modest and non-sensational; emphasize no prison.",
     "Disposition = vacated and remanded; the Court did NOT itself rule the seizure excessive (on remand Indiana let Timbs keep the car, CLM-0010).",
-    "Heavy media (scenes/visuals/audio/edit) on the external SSD (H:\\pd-media), not in this repo."
+    "Heavy media (scenes/visuals/audio/edit) on the external SSD (H:\\pd-media), not in this repo.",
+    "YouTube private upload completed and scheduled under APR-0002: video_id m-uWzgWHGPg, public release 2026-06-24T12:00:00+09:00. containsSyntheticMedia=true; immediate public publish not performed."
   ],
   "blockers": [],
   "created_at": "2026-06-20T02:00:00+09:00",
-  "updated_at": "2026-06-20T02:00:00+09:00"
+  "updated_at": "2026-06-21T08:37:03.459116+00:00",
+  "video_id": "m-uWzgWHGPg",
+  "video_url": "https://youtu.be/m-uWzgWHGPg"
 }
