@@ -6,7 +6,8 @@
 > - **サムネのヒーローショット6案も生成済み前提**（`H:\pd-media\assets\ai\thumbs\kelo\THUMB-01..06.png`）。このパスでは生成せず、選定1枚にタイトルを重ねて書き出すだけ。
 > - **ストック取り込み済みで `import_to_remotion.py 10` は全28ショットを実素材にbind＝カード0**（今ある素材だけで隙間なく組める。共有素材棚=factoryのDL完了を待つ必要はない）。
 > - **ナレーション(ElevenLabs)は課金を気にせず実行してよい**（都度の課金承認待ちは不要）。
-> - 仕上げ設計は `08_edit/edit_design.v001.md`（4部構成＋全28ショットの意味あるアニメ＋字幕/テロップ/出典レイアウト）、音声設計は `06_audio/audio_cue_sheet.v001.md`（4層＋ダッキング）に確定済み。**この2本に従う**。
+> - 仕上げ設計は `08_edit/edit_design.v001.md`（4部構成＋全28ショットの意味あるアニメ＋字幕/テロップ/出典レイアウト＋§6 Premium実装ガイド）、音声設計は `06_audio/audio_cue_sheet.v001.md`（4層＋ダッキング）に確定済み。**この2本に従う**。
+> - **アニメは Premium級コード演出で作る**（`KeloPremium.tsx` を新規作成。SceneArt/Motion 等のコード部品を使用）。汎用RoughCutでは“意味あるアニメ”は出ない。**今DL中の共有素材棚(factory: vfx/light/particle/loops)はこのEP10では使わない**（コード演出で代替・将来用）。
 
 あなたはローカルのCodexです。作業フォルダ `C:\Users\aab15\Documents\prime-documentary`（ブランチ `claude/vibrant-archimedes-2mmr5h`）。
 **第10話 PD-2026-010-kelo のラフカット制作〜仕上げ**を進めてください。slug = `kelo`。
@@ -40,25 +41,25 @@
 
 ## 手順と【保存先】
 
-### 1. 取り込み（ラフカットデータ生成）
+### 1. 素材ステージング（AI画像/実写を public へ）
 ```
 ./.venv/Scripts/python.exe scripts/import_to_remotion.py 10 --write
 ```
-- AI画像（`H:\pd-media\assets\ai\kelo\SPN-XXXX*.png`）が各場面に優先で入り、実写動画は動画場面に残る。
-- **保存先**：
-  - ラフカットデータ → `remotion/src/data/kelo_roughcut.ts`（git管理・自動生成。手で編集しない）
-  - コピー先素材 → `remotion/public/kelo/`（**git管理外**）
-- `coded/cards` が **0** であることを確認（今ある素材で全28埋まるはず）。
+- AI画像（`H:\pd-media\assets\ai\kelo\SPN-XXXX*.png`）と実写が `remotion/public/kelo/` にコピーされる（**KeloPremium がここを参照**）。
+- 副産物の `remotion/src/data/kelo_roughcut.ts` は**下見/素材一覧用**（最終はこれではなくPremiumコンポ）。`coded/cards=0` を確認。
 
-### 2. ラフカット確認
-```
-cd remotion && npm run studio   # → RoughCut-kelo
-```
-- 画像が動く／実写再生／約4.5秒切替／**字幕とテロップが被らない**を確認。
-- **【STOPゲート①】無ナレのラフカットをオーナーに提示してレビュー依頼**（先へ進む前に1度）。
+### 2. ★KeloPremium を作る（Premium級コード演出＝最重要）
+- **汎用RoughCutでは §2 の“意味あるアニメ”は出ない。** `remotion/src/compositions/KeloPremium.tsx` を新規作成し、`CarpenterPremium.tsx`/`RileyPremium.tsx` を雛形にする。
+- 既存部品を再利用：`SceneArt`（小槌/天秤/年表/USマップ/書類＋印章）, `Motion`(`MovingStage`/`Particles`/`LightSweep`/`Vignette`), `Grain`, `Bookends`(`BrandOpening`/`BrandEndcard`), Carpenterの `Vote`(5–4)/`MapGrid`/`TwoColumn`/`Doors`/`BigNumber`。
+- **割り当ては `08_edit/edit_design.v001.md` §6 の表に従う**（SPN別に画像Ken Burns or コード演出を指定済み）。
+- `Root.tsx` に `KeloPremium`（`id="KeloPremium"`）を登録（ハイフンのみ）。
 
-### 3. 4部構成を組む
-フック(本編ハイライト約10カット)→オープニング(従来スタイル)→本編(4幕)→エンディング。骨組み→中身の順。
+### 3. プレビュー確認
+```
+cd remotion && npm run studio   # → KeloPremium
+```
+- §2の各演出（山場SPN-0014の年表→5–4→印章、SPN-0019のUSマップ40+ 等）が出る／4部構成／**字幕とテロップが被らない**を確認。
+- **【STOPゲート①】無ナレの `KeloPremium` をオーナーに提示してレビュー依頼**（先へ進む前に1度）。
 
 ### 4. ナレーション（課金は気にせず実行してよい）
 - `script.en.v001.md` の `[VO:]` を ElevenLabs で生成。**課金承認待ちは不要**（止まらず進める）。
@@ -84,7 +85,7 @@ cd remotion && npm run studio   # → RoughCut-kelo
 
 ### 7. 書き出し（最終レンダー）
 ```
-cd remotion && npm run render RoughCut-kelo out/kelo_rough.mp4 --crf=16
+cd remotion && npm run render KeloPremium out/kelo_premium.mp4 --crf=16
 ```
 - **CPU/libx264・1920×1080・NVENC不可**（品質最優先）。
 - **保存先（最終）**：`H:\pd-media\episodes\PD-2026-010-kelo\08_edit\kelo_premium_v001.mp4`（既存EPと同じ命名規約）。レビュー用QCは `episodes/PD-2026-010-kelo/08_edit\renders\rough.v001.qc.json`。
@@ -104,4 +105,4 @@ cd remotion && npm run render RoughCut-kelo out/kelo_rough.mp4 --crf=16
 - 台本・claims・注釈は**変更禁止**。VIDEO_RULES 準拠。
 
 ## 最初のアクション
-**手順1（`import_to_remotion.py 10 --write`）を実行**し、`coded/cards=0` を確認 → `RoughCut-kelo` の無ナレ・ラフカットをオーナーに提示して【STOPゲート①】のレビュー依頼。
+**手順1（`import_to_remotion.py 10 --write` で素材を public/kelo へ）→ 手順2（`KeloPremium.tsx` を作成し `edit_design §6` の割り当てで演出を実装）** → `npm run studio` で `KeloPremium` を無ナレ確認 → オーナーに提示して【STOPゲート①】のレビュー依頼。
