@@ -9,6 +9,7 @@ import {GIDEON_ANIMATIC, GIDEON_SCENE_IMG} from './data/gideon_animatic';
 import {GideonPremium, gideonPremiumDurationInFrames} from './compositions/GideonPremium';
 import {MappPremium, mappPremiumDurationInFrames} from './compositions/MappPremium';
 import {MadoffPremium, madoffPremiumDurationInFrames} from './compositions/MadoffPremium';
+import {KeloPremium, keloPremiumDurationInFrames} from './compositions/KeloPremium';
 import {ClipProof} from './compositions/ClipProof';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
@@ -110,6 +111,14 @@ export const RemotionRoot: React.FC = () => {
         id="MadoffPremium"
         component={MadoffPremium}
         durationInFrames={madoffPremiumDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="KeloPremium"
+        component={KeloPremium}
+        durationInFrames={keloPremiumDurationInFrames(BRAND.video.fps)}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
