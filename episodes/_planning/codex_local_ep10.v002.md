@@ -1,4 +1,4 @@
-# ローカルCodex プロンプト — 第10話(kelo) ラフカット〜仕上げ【確定版 v002 / このブロックをそのまま貼る】
+# ローカルCodex プロンプト — 第10話(kelo) 制作〜公開寸前までノンストップ【確定版 v002 / このブロックをそのまま貼る】
 
 > 確定状況（2026-06-22 時点で Claude 側が確認済み）
 > - 第10話 `PD-2026-010-kelo`（Kelo v. New London / 収用権）は **state=script_verified**・`validate_episode 10` **PASS**（10 claims / 28 spans / QC pass）。
@@ -10,7 +10,8 @@
 > - **アニメは Premium級コード演出で作る**（`KeloPremium.tsx` を新規作成。SceneArt/Motion 等のコード部品を使用）。汎用RoughCutでは“意味あるアニメ”は出ない。**今DL中の共有素材棚(factory: vfx/light/particle/loops)はこのEP10では使わない**（コード演出で代替・将来用）。
 
 あなたはローカルのCodexです。作業フォルダ `C:\Users\aab15\Documents\prime-documentary`（ブランチ `claude/vibrant-archimedes-2mmr5h`）。
-**第10話 PD-2026-010-kelo のラフカット制作〜仕上げ**を進めてください。slug = `kelo`。
+**第10話 PD-2026-010-kelo を、制作から“公開寸前”まで一気通貫（ノンストップ）で**仕上げてください。slug = `kelo`。
+**唯一の停止点は最後の「公開（public化/公開予約）」だけ**（オーナー承認が要る）。それ以外の中間レビューでは止まらない。
 
 ---
 
@@ -54,12 +55,11 @@
 - **割り当ては `08_edit/edit_design.v001.md` §6 の表に従う**（SPN別に画像Ken Burns or コード演出を指定済み）。
 - `Root.tsx` に `KeloPremium`（`id="KeloPremium"`）を登録（ハイフンのみ）。
 
-### 3. プレビュー確認
+### 3. プレビュー自己確認（止まらない）
 ```
 cd remotion && npm run studio   # → KeloPremium
 ```
-- §2の各演出（山場SPN-0014の年表→5–4→印章、SPN-0019のUSマップ40+ 等）が出る／4部構成／**字幕とテロップが被らない**を確認。
-- **【STOPゲート①】無ナレの `KeloPremium` をオーナーに提示してレビュー依頼**（先へ進む前に1度）。
+- §2の各演出（山場SPN-0014の年表→5–4→印章、SPN-0019のUSマップ40+ 等）が出る／4部構成／**字幕とテロップが被らない**を**自分で**確認し、問題なければ**そのまま次へ**（オーナー確認待ちで止まらない）。
 
 ### 4. ナレーション（課金は気にせず実行してよい）
 - `script.en.v001.md` の `[VO:]` を ElevenLabs で生成。**課金承認待ちは不要**（止まらず進める）。
@@ -77,27 +77,41 @@ cd remotion && npm run studio   # → KeloPremium
   - 音源（BGM/SFX/環境音の実体）→ `H:\pd-media\library\...`（既存の共有ライブラリを参照）＋話別が要るなら `H:\pd-media\episodes\PD-2026-010-kelo\07_audio\`
   - ナレタイムライン → `episodes/PD-2026-010-kelo/08_edit\narration_timeline.v001.json`
 
-### 6. サムネ（★ヒーロー6案は生成済み前提。ここでは選定＋タイトル合成のみ）
-- **生成済み素材**：`H:\pd-media\assets\ai\thumbs\kelo\THUMB-01.png` 〜 `THUMB-06.png`（無ければオーナーに連絡）。
-- オーナーが1枚選択 → `thumb_prompts.v001.md` の**タイトル3案(A/B/C)**から選び、既存 `ThumbnailFrame`/`*Thumbnails` で **1280×720** Still 書き出し（**実在人物の肖像なし・広告安全・ブランド配色**）。
-- **保存先（タイトル乗せ完成サムネ）**：`episodes/PD-2026-010-kelo/10_thumbnail\kelo_thumbnail_optNN.v001.png`（候補）→ 採用1枚。候補メタは `09_package/title_thumbnail_candidates.v001.json`。
-- **【STOPゲート＝タイトル・サムネ承認】**。A/Bテストして勝者に差し替え。
+### 6. サムネ（生成済み前提・自動選定＋合成。止まらない）
+- **生成済み素材**：`H:\pd-media\assets\ai\thumbs\kelo\THUMB-01.png` 〜 `THUMB-06.png`（無ければ `codex_thumbs_ep10.md` で生成してから続行）。
+- **承認待ちで止まらない**：CTR観点で**最強の1枚をCodexが自動選定**し、`thumb_prompts.v001.md` の**タイトル3案(A/B/C)を全部**、既存 `ThumbnailFrame`/`*Thumbnails` で **1280×720** Still 書き出し（**実在人物の肖像なし・広告安全・ブランド配色**）。
+- **保存先**：候補 `episodes/PD-2026-010-kelo/10_thumbnail/kelo_thumbnail_optNN.v001.png`、候補メタ `09_package/title_thumbnail_candidates.v001.json`。自動選定の暫定勝者を採用にしつつ、**全候補を残して後で差し替え可能**にする。
 
 ### 7. 書き出し（最終レンダー）
 ```
 cd remotion && npm run render KeloPremium out/kelo_premium.mp4 --crf=16
 ```
 - **CPU/libx264・1920×1080・NVENC不可**（品質最優先）。
-- **保存先（最終）**：`H:\pd-media\episodes\PD-2026-010-kelo\08_edit\kelo_premium_v001.mp4`（既存EPと同じ命名規約）。レビュー用QCは `episodes/PD-2026-010-kelo/08_edit\renders\rough.v001.qc.json`。
+- **保存先（最終）**：`H:\pd-media\episodes\PD-2026-010-kelo\08_edit\kelo_premium_v001.mp4`。QCは `episodes/PD-2026-010-kelo/08_edit\renders\final.v001.qc.json`（尺/ラウドネス−14LUFS/TP≤−1/字幕同期を自動チェック）。
 
-### 8. コミット
-各ステップでコミット。**重メディア（`H:\pd-media`）と `remotion/public` はGit管理外**。コミットするのは台本/設計/`*_roughcut.ts`/captions/manifest等の軽量成果物のみ。
+### 8. パッケージ（公開メタ一式・止まらない）
+- `pd-package` 準拠で作成：タイトル（A/B/C）/説明文/チャプター/字幕(SRT)/タグ/権利マニフェスト/`youtube_meta`。
+- **保存先**：`episodes/PD-2026-010-kelo/09_package/`（`youtube_meta.v001.json` / `rights_manifest.v001.json` / `title_thumbnail_candidates.v001.json` / `chapters.v001.json` 等）。
+- 権利：**商用OK・実在人物の肖像なし**を `rights_manifest` で確認（AI画像はAI開示）。
+
+### 9. プライベート（非公開）アップロード準備まで＝公開寸前で停止
+- `pd-publish-preflight` で**exact-revision の整合・ハッシュ・チャンネルallowlist・権利・プライバシー**を検証。
+- YouTubeへ**private/非公開でアップロードまで**（または公開直前のドラフトを用意）。**公開（public化）・公開スケジュールは実行しない。**
+- ここで**停止**してオーナーに「公開準備完了」を報告（公開予約は手順10＝オーナー承認）。
+
+### 10. 【唯一のSTOP＝公開予約】※オーナー承認が必須・勝手に越えない
+- タイトル/サムネの最終確定 → **公開予約（6/24以降）はオーナーの承認後にのみ実行**（invariant 2）。Codexはここを自動で越えない。
+
+### コミット
+各ステップでコミット。**重メディア（`H:\pd-media`）と `remotion/public` はGit管理外**。軽量成果物（設計/台本/captions/manifest/package）のみコミット。
 
 ---
 
-## 止まるゲート（承認境界・勝手に越えない）
-- **①無ナレ初稿レビュー** ／ **②タイトル・サムネ承認** ／ **③公開予約（6/24以降）**。
-- ※ナレーション課金ゲートは今回**無効**（課金を気にせず実行してよい）。
+## ノンストップ運用（重要）
+- **手順1〜9はオーナー確認を挟まず一気に通す**（初稿レビュー・タイトル/サムネ承認の中間ゲートは**無効化**）。詰まったら止めずに自分で判断して進め、最後にまとめて報告。
+- **唯一止まるのは手順10＝公開（public化/公開予約）**。これは承認なしに越えない。
+- ※ナレーション課金ゲートも**無効**（課金を気にせず実行）。
+- 進行中に**台本・claims の誤り**や**権利/実在人物の肖像リスク**を見つけた場合のみ即STOP報告（それ以外は止まらない）。
 
 ## この話の厳守事項
 - **中立**（公共の用 vs 個人の家のどちらにも寄らない）。
@@ -105,4 +119,5 @@ cd remotion && npm run render KeloPremium out/kelo_premium.mp4 --crf=16
 - 台本・claims・注釈は**変更禁止**。VIDEO_RULES 準拠。
 
 ## 最初のアクション
-**手順1（`import_to_remotion.py 10 --write` で素材を public/kelo へ）→ 手順2（`KeloPremium.tsx` を作成し `edit_design §6` の割り当てで演出を実装）** → `npm run studio` で `KeloPremium` を無ナレ確認 → オーナーに提示して【STOPゲート①】のレビュー依頼。
+**手順1から始め、手順1→9をノンストップで実行**（素材ステージング→KeloPremium実装→ナレ→音/字幕→サムネ自動選定→最終レンダー→パッケージ→非公開アップロード準備）。
+**手順10（公開予約）の手前で停止**し、「公開準備完了」をオーナーに報告する。途中で台本/権利の重大問題を見つけた時のみ即STOP報告。
