@@ -15,17 +15,19 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 28.0,
       "assetType": "ai_image",
       "motion": "parallax",
-      "src": "kelo/pexels_i_15263342.jpg",
+      "src": "kelo/SPN-0001.png",
       "telop": [
         "Your home — for a private developer?"
       ],
       "priority": "A",
       "images": [
-        "kelo/pexels_i_15263342.jpg",
-        "kelo/pexels_i_19378121.jpg",
-        "kelo/pexels_i_37900459.jpg",
-        "kelo/pixabay_i_7783664.jpg",
-        "kelo/pixabay_i_2666433.jpg"
+        "kelo/SPN-0001.png",
+        "kelo/SPN-0001_02.png",
+        "kelo/SPN-0001_03.png",
+        "kelo/SPN-0001_04.png",
+        "kelo/SPN-0001_05.png",
+        "kelo/SPN-0001_06.png",
+        "kelo/SPN-0001_07.png"
       ]
     },
     {
@@ -34,19 +36,22 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 40.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_house_for_sale.jpg",
+      "src": "kelo/SPN-0002.png",
       "telop": [
         "5th Amendment: takings only \"for public use\""
       ],
       "priority": "A",
       "images": [
-        "kelo/pexels_house_for_sale.jpg",
-        "kelo/pexels_i_15263342.jpg",
-        "kelo/pexels_i_19378121.jpg",
-        "kelo/pexels_i_37900459.jpg",
-        "kelo/pixabay_i_7783664.jpg",
-        "kelo/pixabay_i_2666433.jpg",
-        "kelo/pixabay_i_1869914.jpg"
+        "kelo/SPN-0002.png",
+        "kelo/SPN-0002_02.png",
+        "kelo/SPN-0002_03.png",
+        "kelo/SPN-0002_04.png",
+        "kelo/SPN-0002_05.png",
+        "kelo/SPN-0002_06.png",
+        "kelo/SPN-0002_07.png",
+        "kelo/SPN-0002_08.png",
+        "kelo/SPN-0002_09.png",
+        "kelo/SPN-0002_10.png"
       ]
     },
     {
@@ -89,16 +94,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 19.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_4389714.jpg",
+      "src": "kelo/SPN-0004.png",
       "telop": [
         "Not blighted. Owner did nothing wrong."
       ],
       "priority": "B",
       "images": [
-        "kelo/pexels_i_4389714.jpg",
-        "kelo/pexels_i_3961748.jpg",
-        "kelo/pexels_i_16553771.jpg",
-        "kelo/pixabay_i_2047596.jpg"
+        "kelo/SPN-0004.png",
+        "kelo/SPN-0004_02.png",
+        "kelo/SPN-0004_03.png",
+        "kelo/SPN-0004_04.png",
+        "kelo/SPN-0004_05.png"
       ]
     },
     {
@@ -107,16 +113,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 18.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_20270908.jpg",
+      "src": "kelo/SPN-0005.png",
       "telop": [
         "The plan: offices, hotel, jobs, taxes"
       ],
       "priority": "C",
       "images": [
-        "kelo/pexels_i_20270908.jpg",
-        "kelo/pexels_i_37097738.jpg",
-        "kelo/pexels_i_3845102.jpg",
-        "kelo/pexels_i_4389714.jpg"
+        "kelo/SPN-0005.png",
+        "kelo/SPN-0005_02.png",
+        "kelo/SPN-0005_03.png",
+        "kelo/SPN-0005_04.png",
+        "kelo/SPN-0005_05.png"
       ]
     },
     {
@@ -145,15 +152,16 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 24.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_3961748.jpg",
+      "src": "kelo/SPN-0007.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "kelo/pexels_i_3961748.jpg",
-        "kelo/pexels_i_16553771.jpg",
-        "kelo/pixabay_i_2047596.jpg",
-        "kelo/pixabay_i_1839623.jpg",
-        "kelo/pixabay_i_6706970.jpg"
+        "kelo/SPN-0007.png",
+        "kelo/SPN-0007_02.png",
+        "kelo/SPN-0007_03.png",
+        "kelo/SPN-0007_04.png",
+        "kelo/SPN-0007_05.png",
+        "kelo/SPN-0007_06.png"
       ]
     },
     {
@@ -162,16 +170,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 20.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_37738120.jpg",
+      "src": "kelo/SPN-0008.png",
       "telop": [
         "Is that \"public use\"?"
       ],
       "priority": "C",
       "images": [
-        "kelo/pexels_i_37738120.jpg",
-        "kelo/pexels_i_17602526.jpg",
-        "kelo/pexels_i_33043393.jpg",
-        "kelo/pixabay_i_6538926.jpg"
+        "kelo/SPN-0008.png",
+        "kelo/SPN-0008_02.png",
+        "kelo/SPN-0008_03.png",
+        "kelo/SPN-0008_04.png",
+        "kelo/SPN-0008_05.png"
       ]
     },
     {
@@ -202,16 +211,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 21.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_1834446.jpg",
+      "src": "kelo/SPN-0010.png",
       "telop": [
         "Broad: any \"public purpose\""
       ],
       "priority": "C",
       "images": [
-        "kelo/pixabay_i_1834446.jpg",
-        "kelo/pixabay_i_565914.jpg",
-        "kelo/scotus_gavel.jpg",
-        "kelo/us_constitution_p1.jpg"
+        "kelo/SPN-0010.png",
+        "kelo/SPN-0010_02.png",
+        "kelo/SPN-0010_03.png",
+        "kelo/SPN-0010_04.png",
+        "kelo/SPN-0010_05.png"
       ]
     },
     {
@@ -220,15 +230,16 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 16.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_3890028.jpg",
+      "src": "kelo/SPN-0011.png",
       "telop": [
         "City: economic development = public use"
       ],
       "priority": "C",
       "images": [
-        "kelo/pexels_i_3890028.jpg",
-        "kelo/pexels_i_19841146.jpg",
-        "kelo/pixabay_i_4132144.jpg"
+        "kelo/SPN-0011.png",
+        "kelo/SPN-0011_02.png",
+        "kelo/SPN-0011_03.png",
+        "kelo/SPN-0011_04.png"
       ]
     },
     {
@@ -257,13 +268,14 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 13.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/bill_of_rights.jpg",
+      "src": "kelo/SPN-0013.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "kelo/bill_of_rights.jpg",
-        "kelo/us_dollar_bill.jpg",
-        "kelo/rbg_scotus_portrait.jpg"
+        "kelo/SPN-0013.png",
+        "kelo/SPN-0013_02.png",
+        "kelo/SPN-0013_03.png",
+        "kelo/SPN-0013_04.png"
       ]
     },
     {
@@ -280,8 +292,8 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "priority": "A",
       "images": [
         "kelo/oyez_kelo_2005.mp3",
-        "kelo/roberts_scotus_portrait.jpg",
-        "kelo/pexels_smartphone_hand.jpg"
+        "kelo/pexels_i_15263342.jpg",
+        "kelo/pexels_i_19378121.jpg"
       ]
     },
     {
@@ -290,17 +302,19 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 27.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_money_handover.jpg",
+      "src": "kelo/SPN-0015.png",
       "telop": [
         "\"Public use\" = \"public purpose\""
       ],
       "priority": "A",
       "images": [
-        "kelo/pexels_money_handover.jpg",
-        "kelo/pexels_tow_truck.jpg",
-        "kelo/pexels_house_for_sale.jpg",
-        "kelo/pexels_signing_contract.jpg",
-        "kelo/pexels_police_car.jpg"
+        "kelo/SPN-0015.png",
+        "kelo/SPN-0015_02.png",
+        "kelo/SPN-0015_03.png",
+        "kelo/SPN-0015_04.png",
+        "kelo/SPN-0015_05.png",
+        "kelo/SPN-0015_06.png",
+        "kelo/SPN-0015_07.png"
       ]
     },
     {
@@ -331,14 +345,15 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 19.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_14766052.jpg",
+      "src": "kelo/SPN-0017.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "kelo/pexels_i_14766052.jpg",
-        "kelo/pexels_i_37730973.jpg",
-        "kelo/pixabay_i_3194994.jpg",
-        "kelo/pexels_i_6077447.jpg"
+        "kelo/SPN-0017.png",
+        "kelo/SPN-0017_02.png",
+        "kelo/SPN-0017_03.png",
+        "kelo/SPN-0017_04.png",
+        "kelo/SPN-0017_05.png"
       ]
     },
     {
@@ -347,16 +362,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 18.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_37732186.jpg",
+      "src": "kelo/SPN-0018.png",
       "telop": [
         "Backlash: bipartisan"
       ],
       "priority": "C",
       "images": [
-        "kelo/pexels_i_37732186.jpg",
-        "kelo/pixabay_i_2492011.jpg",
-        "kelo/pixabay_i_6808677.jpg",
-        "kelo/pexels_i_36984943.jpg"
+        "kelo/SPN-0018.png",
+        "kelo/SPN-0018_02.png",
+        "kelo/SPN-0018_03.png",
+        "kelo/SPN-0018_04.png",
+        "kelo/SPN-0018_05.png"
       ]
     },
     {
@@ -387,16 +403,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 19.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pexels_i_37738120.jpg",
+      "src": "kelo/SPN-0020.png",
       "telop": [
         "The development was never built."
       ],
       "priority": "B",
       "images": [
-        "kelo/pexels_i_37738120.jpg",
-        "kelo/pexels_i_17602526.jpg",
-        "kelo/pexels_i_33043393.jpg",
-        "kelo/pixabay_i_6538926.jpg"
+        "kelo/SPN-0020.png",
+        "kelo/SPN-0020_02.png",
+        "kelo/SPN-0020_03.png",
+        "kelo/SPN-0020_04.png",
+        "kelo/SPN-0020_05.png"
       ]
     },
     {
@@ -405,17 +422,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 24.8,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "kelo/pexels_i_36984938.jpg",
+      "src": "kelo/pexels_i_37900459.jpg",
       "telop": [
         "2009: Pfizer leaves New London"
       ],
       "priority": "C",
       "images": [
-        "kelo/pexels_i_36984938.jpg",
-        "kelo/pixabay_i_2225765.jpg",
-        "kelo/pixabay_i_2225766.jpg",
-        "kelo/pexels_i_159720.jpg",
-        "kelo/pexels_i_37726703.jpg"
+        "kelo/pexels_i_37900459.jpg",
+        "kelo/pixabay_i_7783664.jpg",
+        "kelo/pixabay_i_2666433.jpg",
+        "kelo/pixabay_i_1869914.jpg",
+        "kelo/pexels_i_20270908.jpg"
       ]
     },
     {
@@ -424,16 +441,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 18.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_1839623.jpg",
+      "src": "kelo/SPN-0022.png",
       "telop": [
         "The pink house was moved, not destroyed"
       ],
       "priority": "C",
       "images": [
-        "kelo/pixabay_i_1839623.jpg",
-        "kelo/pixabay_i_6706970.jpg",
-        "kelo/pixabay_i_1869914.jpg",
-        "kelo/pexels_i_164558.jpg"
+        "kelo/SPN-0022.png",
+        "kelo/SPN-0022_02.png",
+        "kelo/SPN-0022_03.png",
+        "kelo/SPN-0022_04.png",
+        "kelo/SPN-0022_05.png"
       ]
     },
     {
@@ -462,13 +480,14 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 17.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_923898.jpg",
+      "src": "kelo/SPN-0024.png",
       "telop": [],
       "priority": "A",
       "images": [
-        "kelo/pixabay_i_923898.jpg",
-        "kelo/pixabay_i_3324024.jpg",
-        "kelo/pexels_i_6077797.jpg"
+        "kelo/SPN-0024.png",
+        "kelo/SPN-0024_02.png",
+        "kelo/SPN-0024_03.png",
+        "kelo/SPN-0024_04.png"
       ]
     },
     {
@@ -477,19 +496,21 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 36.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_1834446.jpg",
+      "src": "kelo/SPN-0025.png",
       "telop": [
         "Next: where does free speech end?"
       ],
       "priority": "A",
       "images": [
-        "kelo/pixabay_i_1834446.jpg",
-        "kelo/pixabay_i_565914.jpg",
-        "kelo/pexels_i_30483132.jpg",
-        "kelo/pixabay_i_677940.jpg",
-        "kelo/pixabay_i_677945.jpg",
-        "kelo/pexels_i_7483195.jpg",
-        "kelo/pexels_i_7649100.jpg"
+        "kelo/SPN-0025.png",
+        "kelo/SPN-0025_02.png",
+        "kelo/SPN-0025_03.png",
+        "kelo/SPN-0025_04.png",
+        "kelo/SPN-0025_05.png",
+        "kelo/SPN-0025_06.png",
+        "kelo/SPN-0025_07.png",
+        "kelo/SPN-0025_08.png",
+        "kelo/SPN-0025_09.png"
       ]
     },
     {
@@ -520,16 +541,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 19.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_2636065.jpg",
+      "src": "kelo/SPN-0027.png",
       "telop": [
         "Kennedy: pretextual takings still barred"
       ],
       "priority": "A",
       "images": [
-        "kelo/pixabay_i_2636065.jpg",
-        "kelo/pixabay_i_2578873.jpg",
-        "kelo/pexels_i_20417783.jpg",
-        "kelo/pexels_i_19574309.jpg"
+        "kelo/SPN-0027.png",
+        "kelo/SPN-0027_02.png",
+        "kelo/SPN-0027_03.png",
+        "kelo/SPN-0027_04.png",
+        "kelo/SPN-0027_05.png"
       ]
     },
     {
@@ -538,16 +560,17 @@ export const KELO_ROUGHCUT: RoughCutData = {
       "seconds": 31.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "kelo/pixabay_i_826993.jpg",
+      "src": "kelo/SPN-0028.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "kelo/pixabay_i_826993.jpg",
-        "kelo/pixabay_i_477987.jpg",
-        "kelo/pexels_i_8850753.jpg",
-        "kelo/pexels_i_51343.jpg",
-        "kelo/pixabay_i_3212015.jpg",
-        "kelo/pixabay_i_623167.jpg"
+        "kelo/SPN-0028.png",
+        "kelo/SPN-0028_02.png",
+        "kelo/SPN-0028_03.png",
+        "kelo/SPN-0028_04.png",
+        "kelo/SPN-0028_05.png",
+        "kelo/SPN-0028_06.png",
+        "kelo/SPN-0028_07.png"
       ]
     }
   ]
