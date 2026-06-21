@@ -256,10 +256,9 @@ def update_records(meta: dict, result: dict, caption: dict | None, state: dict) 
     write_json(META, meta)
 
     manifest = load_json(MANIFEST)
-    manifest["state"] = "private_uploaded"
+    manifest["state"] = "package_ready"
     manifest["video_id"] = result["video_id"]
     manifest["video_url"] = result["watch"]
-    manifest["public_schedule_active"] = False
     manifest["updated_at"] = now
     manifest.setdefault("active_revisions", {}).update(
         {
