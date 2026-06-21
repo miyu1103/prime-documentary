@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-006",
   "slug": "terry",
   "title_working": "A Cop Can Search You Without a Warrant — Here's the Catch",
-  "state": "scheduled",
+  "state": "published",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -23,7 +23,7 @@
     "remotion_plan": "v001",
     "visual_qc_plan": "v001",
     "asset_selection": "v001",
-    "rights_manifest": "v001",
+    "rights_manifest": "v003",
     "asset_generation_script": "v001",
     "remotion_component": "v001",
     "edit_build_script": "v001",
@@ -35,14 +35,16 @@
     "thumbnail_options": "v001",
     "narration_index": "v001",
     "narration_generation_script": "v001",
-    "final_build_script": "v001",
-    "captions_final": "v001",
-    "final_qc": "v001",
-    "youtube_meta": "v001",
+    "final_build_script": "v003",
+    "captions_final": "v003",
+    "final_qc": "v003",
+    "youtube_meta": "v003",
     "final_render": "v001",
     "youtube_schedule_result": "v001",
     "youtube_thumbnail_update": "v003",
-    "thumbnail_option_09": "v001"
+    "thumbnail_option_09": "v001",
+    "final_delivery": "v003",
+    "youtube_publish_result": "v003"
   },
   "artifacts": [
     {
@@ -534,6 +536,76 @@
       "status": "approved",
       "rights_status": "clear",
       "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-approval-APR-0008",
+      "artifact_type": "approval",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-006-terry/approvals/APR-0008.json",
+      "checksum": "sha256:757588155b203ee0daa680817677873bb8ba4977ef9a9761411f951b0246e804",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-qc-v003",
+      "artifact_type": "qc_report",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/08_edit/renders/final.v003.qc.json",
+      "checksum": "sha256:5fedc2ebd6c013ec6647a9e4ad6964dcd92a8e7caa36b0e7857622b1aae1b340",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-delivery-v003",
+      "artifact_type": "final_delivery_manifest",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/final_delivery.v003.json",
+      "checksum": "sha256:bd6718ef2a93eea3a6b404a78031218191555b956dcf4275f8bb38f137078f8c",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-rights-manifest-v003",
+      "artifact_type": "rights_manifest",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/rights_manifest.v003.json",
+      "checksum": "sha256:f9361e8f28076333c3f8a2f9c676b38e0b96cc4682a9991c1ed7afb84741aee2",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-final-render-v003",
+      "artifact_type": "final_render",
+      "revision": "v003",
+      "uri": "H:\\pd-media\\episodes\\PD-2026-006-terry\\08_edit\\terry_final_v003.mp4",
+      "checksum": "sha256:b28f14502d8a0937e5b5b2eaaff7245cdda6ad04ef99149f8780166cfb75ca26",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-youtube-meta-v003",
+      "artifact_type": "youtube_metadata",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_meta.v003.json",
+      "checksum": "sha256:360af639e06a71dec927651193384ecd228bfcba8d2db4795cad2850cdf2f7b9",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-006-terry-youtube-publish-result-v003",
+      "artifact_type": "youtube_publish_result",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-006-terry/09_package/youtube_publish_result.v003.json",
+      "checksum": "sha256:d20b47158b622508349e1b3656ee7bc6399770549f9cbaa0746c63852d53a41f",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
     }
   ],
   "approvals": [
@@ -543,7 +615,8 @@
     "APR-0004",
     "APR-0005",
     "APR-0006",
-    "APR-0007"
+    "APR-0007",
+    "APR-0008"
   ],
   "costs": {
     "estimated": {
@@ -587,11 +660,12 @@
     "Publish schedule approved under APR-0005 for 2026-06-22T12:00:00+09:00 (2026-06-22T03:00:00Z); upload/schedule script must verify channel allowlist and exact hashes before external write.",
     "YouTube upload completed as private and scheduled for 2026-06-22T12:00:00+09:00; public immediate publish not performed.",
     "YouTube thumbnail replaced under APR-0006: thumbnail_option_09_codex_beauty.v001.png set on video_id dcqWIPXun7c; video file, metadata, privacy, and schedule were not changed.",
-    "YouTube upload completed as private and scheduled for 2026-06-21T12:00:00+09:00; public immediate publish not performed."
+    "YouTube upload completed as private and scheduled for 2026-06-21T12:00:00+09:00; public immediate publish not performed.",
+    "YouTube public upload completed for Terry v003 under APR-0008: video_id bYcqabvvxak. Synthetic-content disclosure set; previous video check/action: not_found_no_action."
   ],
   "blockers": [],
   "created_at": "2026-06-20T00:00:00+09:00",
-  "updated_at": "2026-06-20T14:33:26.289787+00:00",
-  "video_id": "dcqWIPXun7c",
-  "video_url": "https://youtu.be/dcqWIPXun7c"
+  "updated_at": "2026-06-21T04:57:45.970288+00:00",
+  "video_id": "bYcqabvvxak",
+  "video_url": "https://youtu.be/bYcqabvvxak"
 }
