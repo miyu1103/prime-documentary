@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-010-kelo",
+  "script_revision": "v001",
+  "script": "artifact://episodes/PD-2026-010-kelo/03_script/script.en.v001.md",
+  "script_hashes": {
+    "script": "sha256:0bdc7df5572f1330b2ef35c69d268f6ad27f625bb5d11b7550a7aab0ed8837e4",
+    "annotated_script": "sha256:95c3cbda57e5685c725015c2e911db3da254f4f97b7f1df50689db8a175eb2da"
+  },
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "approval_id": "CHAT-EP10-NONSTOP-OWNER",
+  "estimated_characters": 8983,
+  "estimated_words": 1618,
+  "estimated_cost_usd": 2.69,
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "The government can take your home. Most people know that — for a highway, a school, a bridge. But what if it takes your home, in perfect condition, having done nothing wrong, and hands the land to a private developer? In 2005, a woman's small pink house in Connecticut put that exact question in front of the Supreme Court . The answer changed what two words in the Constitution are allowed to mean.",
+      "idempotency_key": "sha256:222c4c0b0245b926925757bbd4381ca33f735c679087dae3634ff4bc52f5ca1e"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "OPENING",
+      "delivery": "building",
+      "spoken_text": "The power is called eminent domain. The Fifth Amendment lets the government take private property — but only \"for public use,\" and only if it pays you a fair price . For most of history, \"public use\" meant something the public actually uses: a road, a reservoir, a courthouse. Kelo v. New London asked whether those two words could stretch to cover something else entirely — taking working-class homes and giving the land to private business in the hope of jobs and taxes. Over the next twelve minutes: the neighborhood that was erased, the 5-4 decision that allowed it, and the spectacular way it backfired.",
+      "idempotency_key": "sha256:6dfe2ca2173f619a87431e72c0e108542882931ce12695fc26238060a54f3e97"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "ACT I",
+      "delivery": "building",
+      "spoken_text": "The place is New London, Connecticut, a small city on the water, and the neighborhood is called Fort Trumbull. It is not rich, but it is real — modest homes, some lived in for generations .",
+      "idempotency_key": "sha256:499c4eaa451ac9f73a736dacd4447728bd74c523953f9288497a58a000d6fc3f"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "ACT I",
+      "delivery": "building",
+      "spoken_text": "One of them belongs to Susette Kelo. It is a small house she has fixed up and painted a distinctive pink, with a view of the water. She has done nothing wrong. Her home is not run-down. There is no crime scene here, no blight, no code violations .",
+      "idempotency_key": "sha256:7456cb715af4f53981a5ce4213710e2a35e9f4a749617e9e56cd8057fc3acc50"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "ACT I",
+      "delivery": "building",
+      "spoken_text": "But the city has a plan. The pharmaceutical company Pfizer is building a large research facility nearby, and New London wants to capitalize on it — to remake the whole Fort Trumbull area with offices, a hotel, and upscale housing that would bring in jobs and tax revenue .",
+      "idempotency_key": "sha256:099358e29f323af7f58ee5db55f1157db5ddba0056890853aa11fd5c9e7be3a4"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "ACT I",
+      "delivery": "building",
+      "spoken_text": "To do it, the city works through a private nonprofit acting as its development agent, the New London Development Corporation. And that agency is given the power to do something dramatic: to use eminent domain to condemn the homes in Fort Trumbull — to force the owners to sell, whether they want to or not .",
+      "idempotency_key": "sha256:e537b2d6d69a587f6ced784106a974facfedf92cb98d8c69303dd423dc09a786"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "ACT I",
+      "delivery": "building",
+      "spoken_text": "Susette Kelo and a handful of neighbors refuse. They are not holding out for more money. They simply do not want to lose their homes so that someone else can build something more profitable on the land. So they sue, represented by a public-interest law firm, the Institute for Justice, and their fight climbs all the way to the Supreme Court .",
+      "idempotency_key": "sha256:d32c77d48fffeda3f02cc5c171fc916c6374f8b5f1bad525b045db1726540f81"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "ACT I",
+      "delivery": "building",
+      "spoken_text": "And the question they bring is deceptively simple. The Constitution allows takings \"for public use.\" Is handing your home to a private developer — for a plan that might create jobs — really a \"public use\"? Or has the city just found a way to take from one private owner and give to another?",
+      "idempotency_key": "sha256:9a07424386336ea9bea16eef82cf2bb7de0cf1ca3f19305e87323fef77470e09"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "ACT II",
+      "delivery": "building",
+      "spoken_text": "To see why this was so hard, you have to look closely at the words themselves: \"public use.\"",
+      "idempotency_key": "sha256:07d595d05d3bf95a05e35a8c43d07c16b40eb13f1aceb8b3fdf8c2a93bcf2975"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "ACT II",
+      "delivery": "building",
+      "spoken_text": "Read narrowly, \"public use\" means the public gets to use the thing — you can drive on the road, drink from the reservoir, walk into the courthouse. Under that reading, taking homes to hand to a private company fails, because the public will not own or use the new development; private parties will .",
+      "idempotency_key": "sha256:066d32b605cb77431ccd45eebea175c40e6bb4c75ecfa46fee3c3d3f64bc0501"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "ACT II",
+      "delivery": "building",
+      "spoken_text": "But over the twentieth century, courts had read those words more and more broadly — as \"public purpose.\" Under that reading, a taking is fine as long as it serves some public benefit, even if a private party ends up with the property. Clearing genuine slums, for example, had been upheld on that logic .",
+      "idempotency_key": "sha256:096fb949b74177904376fd47e8b737d901289d24afb2d3d0f6efb16328b78714"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "ACT II",
+      "delivery": "building",
+      "spoken_text": "New London's argument leaned entirely on the broad reading. The city was not claiming Fort Trumbull was a slum. It was claiming that economic development itself — more jobs, more taxes, a revitalized waterfront — is a public purpose, and therefore a public use .",
+      "idempotency_key": "sha256:d4e87669b2ca5279687c44abc63eae973e0b94835330159adc3b928f97bc661d"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "ACT II",
+      "delivery": "building",
+      "spoken_text": "If the Court accepted that, the implications were enormous. Almost any home, anywhere, could be taken and handed to a developer, as long as a city could claim the new use would generate more economic activity than the old one. A modest house almost always produces less tax revenue than offices or luxury condos. Under the broad reading, that gap alone could justify taking it .",
+      "idempotency_key": "sha256:6203d26d878a01ee7b082089d62fba427fc5fa5af551f8d092134cfe2cbbe6bf"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "ACT II",
+      "delivery": "building",
+      "spoken_text": "So the case was never really about one pink house. It was about whether the words \"for public use\" still set any limit at all on whose property the government can transfer to whom.",
+      "idempotency_key": "sha256:ba4982b93774c3031c0501b2c698fa79441469f821d25413f8d5c919bf2ddad4"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "ACT III",
+      "delivery": "intense",
+      "spoken_text": "In 2005, the Supreme Court sided with the city. By a vote of five to four, it held that taking the Fort Trumbull homes for the economic-development plan did count as a \"public use\" under the Fifth Amendment .",
+      "idempotency_key": "sha256:8058329f2cf17af49cd16125333c8dce471da749e30c41ccfc7340ce4030402c"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "ACT III",
+      "delivery": "intense",
+      "spoken_text": "The opinion was written by Justice John Paul Stevens. The Court did not say the homes had to be blighted. It said that a carefully considered economic-development plan, aimed at public benefits like jobs and revenue, qualifies as a public purpose — and that courts should largely defer to a city's judgment about what its community needs . \"Public use,\" in other words, would be read as \"public purpose.\"",
+      "idempotency_key": "sha256:d79508dcef5b03edf42d6cd3453ffd336925907c60343b32d729b251377c352d"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT III",
+      "delivery": "intense",
+      "spoken_text": "One vote in the majority came with a caveat. Justice Kennedy, who joined the Court's opinion, wrote separately to stress that a taking meant only to benefit a particular private party, with a merely pretextual public purpose, would still be unconstitutional — leaving a door, however narrow, for future challenges .",
+      "idempotency_key": "sha256:3e0f1866d1110d2fbd7ac3af2c5f58d44fd873bec4c510da7eeec9b894420685"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT III",
+      "delivery": "intense",
+      "spoken_text": "The four dissenters were alarmed. Justice Sandra Day O'Connor wrote the main dissent, and her warning was blunt. Under this ruling, she argued, the government could now take property from one private owner simply to give it to another who might use it more profitably. The specter, she wrote, was that any home could be taken for any other private use that promised more taxes — and that the words \"for public use\" had, in effect, been erased from the Constitution . Justice Thomas wrote a separate dissent arguing the Court had drifted far from the original meaning of the clause.",
+      "idempotency_key": "sha256:d686e35e0e615db4684f001b4abe2479583944999e3a284b18d169ce0d463566"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT III",
+      "delivery": "intense",
+      "spoken_text": "It was a 5-4 split, and unlike many such splits, it did not fall along the usual lines. That is part of why what happened next was so unusual. Because the public reaction to Kelo did something American legal decisions almost never do: it united nearly everyone against it.",
+      "idempotency_key": "sha256:d371264305e6df5e8c7e8838a280ff32e14554b8cb1fade0ca929481dc44278e"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT IV",
+      "delivery": "building",
+      "spoken_text": "The ruling set off one of the largest popular backlashes to any modern Supreme Court decision — and a rare bipartisan one. People across the political spectrum recoiled at the idea that the government could bulldoze your home to make way for a more profitable private project .",
+      "idempotency_key": "sha256:4c7b83bc726cea2ba37987b5ddfb34533171213959e793c0fddc70ba855c4c34"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT IV",
+      "delivery": "building",
+      "spoken_text": "And legislatures responded. In the years after Kelo, by the Institute for Justice's count, roughly forty or more states passed new laws or constitutional amendments restricting the use of eminent domain for economic development. The catch — and it is an important one — is that many of these reforms were later criticized as weak, full of loopholes that left the core power largely intact. \"Passed a reform\" did not always mean \"actually protected homeowners\" .",
+      "idempotency_key": "sha256:cbaa4cfb399ab345625a978ec2231afb9ec2e44dc5ea9642b15af0d4c58e767f"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT IV",
+      "delivery": "building",
+      "spoken_text": "But the sharpest verdict on Kelo came not from a legislature. It came from the land itself. After the homes of Fort Trumbull were taken and demolished, the grand redevelopment was never built. The promised offices and hotel did not appear. The cleared land sat empty, year after year .",
+      "idempotency_key": "sha256:acbafebb8ff938f37b13ada328ea1ca40f2a0b066fcd1baa3f9e085f41d9dc42"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT IV",
+      "delivery": "building",
+      "spoken_text": "And then the final irony. In 2009, Pfizer — the company whose arrival had justified the whole plan — closed its New London facility and left . The neighborhood had been erased for a development that never came, to serve a company that did not stay. For a long time, the most famous use of the bulldozed land was as a place to dump storm debris.",
+      "idempotency_key": "sha256:c67708ece791a9ee72368611710de74227b862390ee0f6377c4204caf0942aee"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT IV",
+      "delivery": "building",
+      "spoken_text": "And it is worth being precise about what \"taken\" meant for the people who lived there. Some families had been in Fort Trumbull for generations. They were paid the market value of their homes, as the Constitution requires — but market value does not buy back the place you have lived your whole life, or the neighbors who scatter once the bulldozers arrive. That, the dissent had warned, was the human cost the broad reading made easy to ignore .",
+      "idempotency_key": "sha256:63c53a558e6ecf544041cb20c2e5de4418839c89d16d16b0ed6a3087d9bdb687"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT IV",
+      "delivery": "building",
+      "spoken_text": "Susette Kelo's house, at least, survived. It was not destroyed — it was carefully taken apart and moved, piece by piece, to a new lot elsewhere in New London, where it stands today as a small monument to the fight . She does not live in it anymore.",
+      "idempotency_key": "sha256:cda6b0b4cfd1cc21f6f326c52c7ef8cce998960d9bce94b4531abc28509389c6"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Kelo is still good law. The Supreme Court has never overturned it. What pushed back against it was not the Court but the country — the backlash, the state reforms, and the empty lot that made the human cost impossible to ignore .",
+      "idempotency_key": "sha256:897aa827eefd6c923840990db2608c5af918a91af46ada8ad08335552c1ba5b5"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "And that is the strange lesson of the case. The Constitution's limit — \"for public use\" — was read so broadly that it stopped doing much work. What replaced it was not a better legal rule, but public outrage and an embarrassing failure on the ground.",
+      "idempotency_key": "sha256:bad822bb99dae4bbd73dd0262dcb88060fd7c0a2d63576af2a97d8191bac9201"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "We have now followed the state as it reaches for your body, your phone, your movements, your property, and your home — the things it can watch and the things it can take. But there is one more kind of power, and it is the most personal of all. Not what the government can take from you, but what it can stop you from saying. The next case begins with a teenager, a few words, and a question every student and worker eventually asks: where does your right to speak actually end?",
+      "idempotency_key": "sha256:6ff5ef799491ccf18d8b7bab5190b4ddfbda51f0f2ebc1579c841423388b567c"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "That is next time.",
+      "idempotency_key": "sha256:57940bb8d4a63c1fe03579cdeff95e498e7d51c33b3f38ce625d9b8f6670ac26"
+    }
+  ]
+}
