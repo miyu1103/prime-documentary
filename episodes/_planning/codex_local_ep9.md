@@ -32,6 +32,11 @@
 6. **書き出し（最高画質）**：`npm run render RoughCut-timbs out/timbs_rough.mp4 --crf=16`（CPU/libx264・1920×1080・NVENC不可）。
 7. **各ステップでコミット**（重メディアは `H:\pd-media`、`remotion/public` はGit管理外）。
 
+## サムネ（Codex生成→複数から選択）
+- **サムネのキー画像はCodexアプリで生成する**。`04_scenes/thumb_prompts.v001.md` の**ヒーローショット6案を全部生成**し、`H:\pd-media\assets\ai\thumbs\timbs\THUMB-01..06.png` に保存。
+- **最高画質・CTR重視**。神ショット/ヒーローショットを複数出し、オーナーが1枚を選ぶ。
+- 選んだ1枚を背景に `thumb_prompts.v001.md` のタイトル3案(A/B/C)から選び、既存 `ThumbnailFrame`/`*Thumbnails` で 1280×720 Still 書き出し。詳細は `docs/thumbnail-and-title-system.md`。
+
 ## 止まるゲート（必ず停止して承認を待つ）
 - ナレ課金の前 / **初稿(ラフカット)レビュー** / タイトル・サムネ / 公開予約（**6/24以降**から）。
 
