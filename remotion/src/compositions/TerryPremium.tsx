@@ -10,10 +10,11 @@ import {
   useVideoConfig,
 } from 'remotion';
 import {BRAND} from '../brand';
+import {BrandEndcard, BrandOpening, ENDCARD_SEC, OPENING_SEC} from '../components/Bookends';
 import {Grain} from '../components/Grain';
 import {LightSweep, Particles, Vignette} from '../components/Motion';
 
-const TOTAL_SEC = 678;
+const TOTAL_SEC = 672 + ENDCARD_SEC;
 const INK = BRAND.color.ink;
 const NAVY = BRAND.color.navy;
 const BLUE = BRAND.color.electric;
@@ -64,36 +65,35 @@ const sceneImages = (id: string): string[] =>
   Array.from({length: 10}, (_, i) => `terry/v002/${id}/${id}_${String(i + 1).padStart(3, '0')}.png`);
 
 const scenes: Scene[] = [
-  {id: 'S001', kind: 'pov', start: 0, dur: 30, title: 'No warrant. No crime seen.', subtitle: 'A street stop before the legal line is named.', kicker: 'HOOK', images: sceneImages('t01'), text: ['No warrant', 'No crime seen'], recon: true},
-  {id: 'S002', kind: 'wall', start: 30, dur: 47, title: 'Suspicion, not proof', subtitle: 'The Fourth Amendment wall has a gap.', kicker: 'OPENING', images: sceneImages('t02'), text: ['warrant', 'solid evidence', 'suspicion'], recon: true},
-  {id: 'S003', kind: 'image', start: 77, dur: 18, title: 'Cleveland, Ohio - 1963', subtitle: 'The case begins on a downtown street.', kicker: 'ACT I', image: 'terry/PD-2026-006-terry-S003-IMG-001.v001.png', images: sceneImages('t03'), citation: 'CLM-0005', recon: true},
-  {id: 'S004', kind: 'counter', start: 95, dur: 25, title: '~12 trips', subtitle: 'Two men, one store window, a repeated path.', kicker: 'ACT I', image: 'terry/PD-2026-006-terry-S004-IMG-001.v001.png', images: sceneImages('t04'), citation: 'CLM-0006', text: ['~12 trips'], recon: true},
-  {id: 'S005', kind: 'observer', start: 120, dur: 18, title: 'A pattern forms', subtitle: 'Experience turns ordinary motion into suspicion.', kicker: 'ACT I', images: sceneImages('t05'), text: ['window', 'return', 'heads together'], recon: true},
-  {id: 'S006', kind: 'type', start: 138, dur: 14, title: 'Suspicion != proof', subtitle: 'Under the ordinary rule, that is not enough.', kicker: 'ACT I', images: sceneImages('t06'), recon: true},
-  {id: 'S007', kind: 'risk', start: 152, dur: 22, title: 'The decision point', subtitle: 'Officer safety on one side. Innocent contact on the other.', kicker: 'ACT I', images: sceneImages('t07'), text: ['officer safety', 'innocent contact'], recon: true},
-  {id: 'S008', kind: 'frisk', start: 174, dur: 16, title: 'Outer clothing', subtitle: 'The weapon question is shown as a boundary, not a spectacle.', kicker: 'ACT I', image: 'terry/PD-2026-006-terry-S018-IMG-001.v001.png', images: sceneImages('t08'), citation: 'CLM-0006', recon: true},
-  {id: 'S009', kind: 'charge', start: 190, dur: 12, title: 'Carrying a concealed weapon', subtitle: 'The street encounter becomes a constitutional case.', kicker: 'ACT II', images: sceneImages('t09'), citation: 'CLM-0007', recon: true},
-  {id: 'S010', kind: 'scale', start: 202, dur: 24, title: 'Probable cause + warrant', subtitle: 'The ordinary Fourth Amendment baseline.', kicker: 'ACT II', images: sceneImages('t10'), text: ['reasonable suspicion', 'probable cause', 'warrant'], recon: true},
-  {id: 'S011', kind: 'scale', start: 226, dur: 22, title: 'Threshold not met', subtitle: 'A window pattern is less than full probable cause.', kicker: 'ACT II', images: sceneImages('t11'), recon: true},
-  {id: 'S012', kind: 'risk', start: 248, dur: 24, title: 'The unknown moment', subtitle: 'Before proof exists, the safety risk can still be real.', kicker: 'ACT II', images: sceneImages('t12'), recon: true},
-  {id: 'S013', kind: 'question', start: 272, dur: 30, title: 'Below arrest?', subtitle: 'Can a brief stop sit below probable cause?', kicker: 'ACT II', images: sceneImages('t13'), text: ['encounter', 'stop', 'arrest'], recon: true},
-  {id: 'S014', kind: 'wall', start: 302, dur: 24, title: 'Two truths at once', subtitle: 'Real streets. Real abuse risk.', kicker: 'ACT II', images: sceneImages('t14'), recon: true},
-  {id: 'S015', kind: 'ruling', start: 326, dur: 26, title: '1968 - 8-1', subtitle: 'Terry v. Ohio, 392 U.S. 1', kicker: 'ACT III', images: sceneImages('t15'), citation: 'CLM-0002', text: ['8', '1'], recon: true},
-  {id: 'S016', kind: 'facts', start: 352, dur: 24, title: 'Specific, articulable facts', subtitle: 'Reasonable suspicion must be describable.', kicker: 'ACT III', images: sceneImages('t16'), citation: 'CLM-0004', recon: true},
-  {id: 'S017', kind: 'facts', start: 376, dur: 34, title: '"specific and articulable facts"', subtitle: 'Two men. Same window. A dozen trips. Heads together.', kicker: 'ACT III', images: sceneImages('t16'), citation: 'CLM-0004', text: ['two men', 'same window', 'a dozen trips', 'heads together'], recon: true},
-  {id: 'S018', kind: 'frisk', start: 410, dur: 20, title: 'Weapons only', subtitle: 'Outer clothing, and only for weapons.', kicker: 'ACT III', image: 'terry/PD-2026-006-terry-S018-IMG-001.v001.png', images: sceneImages('t08'), citation: 'CLM-0001', recon: true},
-  {id: 'S019', kind: 'boundary', start: 430, dur: 29, title: 'Outer clothing - weapons only', subtitle: 'Not pockets. Not evidence. Not one inch more.', kicker: 'ACT III', images: sceneImages('t08'), citation: 'CLM-0003', recon: true},
-  {id: 'S020', kind: 'equation', start: 459, dur: 32, title: 'Stop = seizure. Frisk = search.', subtitle: 'Still reasonable on a lower standard.', kicker: 'ACT III', images: sceneImages('t11'), citation: 'CLM-0003 / CLM-0004', recon: true},
-  {id: 'S021', kind: 'dissent', start: 491, dur: 22, title: 'Dissent: Douglas, J. (alone)', subtitle: 'A warning about lowering the probable-cause line.', kicker: 'ACT III', images: sceneImages('t15'), citation: 'CLM-0008', recon: true},
-  {id: 'S022', kind: 'modern', start: 513, dur: 16, title: '"Terry stop"', subtitle: 'One of the most common police-public encounters.', kicker: 'ACT IV', images: sceneImages('t17'), citation: 'CLM-0009', recon: true},
-  {id: 'S023', kind: 'pressure', start: 529, dur: 22, title: 'Judgment can bend', subtitle: 'Training can sharpen it. Bias can distort it.', kicker: 'ACT IV', images: sceneImages('t17'), citation: 'CLM-0009', recon: true},
-  {id: 'S024', kind: 'modern', start: 551, dur: 27, title: 'Facts, later put into words', subtitle: 'A low bar can be careful work - or weather.', kicker: 'ACT IV', images: sceneImages('t17'), citation: 'CLM-0009', recon: true},
-  {id: 'S025', kind: 'pressure', start: 578, dur: 20, title: 'Careful rule. Pressured street.', subtitle: 'The risk is application under pressure.', kicker: 'ACT IV', images: sceneImages('t17'), recon: true},
-  {id: 'S026', kind: 'line', start: 598, dur: 20, title: 'The line is thin', subtitle: 'Redrawn on sidewalks every day.', kicker: 'ACT IV', images: sceneImages('t17'), recon: true},
-  {id: 'S027', kind: 'equation', start: 618, dur: 18, title: 'Street. Body. Less than proof.', subtitle: 'A real suspicion, and the gun was allowed to stand.', kicker: 'ENDING', images: sceneImages('t18'), citation: 'CLM-0001 / CLM-0007', recon: true},
-  {id: 'S028', kind: 'objects', start: 636, dur: 18, title: 'Physical things', subtitle: 'House. Pockets. The ground you stand on.', kicker: 'ENDING', images: sceneImages('t18'), recon: true},
-  {id: 'S029', kind: 'phone', start: 654, dur: 18, title: 'Next: can they search your phone?', subtitle: 'The device inside the pocket changes the question.', kicker: 'NEXT', images: sceneImages('t18'), recon: true},
-  {id: 'S030', kind: 'end', start: 672, dur: 6, title: 'Prime Documentary', subtitle: 'Subscribe', kicker: 'END'},
+  {id: 'S001', kind: 'pov', start: 0, dur: 30.5, title: 'No warrant. No crime seen.', subtitle: 'A street stop before the legal line is named.', kicker: 'HOOK', images: sceneImages('t01'), text: ['No warrant', 'No crime seen'], recon: true},
+  {id: 'S002', kind: 'wall', start: 30.91, dur: 33.57, title: 'Suspicion, not proof', subtitle: 'The Fourth Amendment wall has a gap.', kicker: 'OPENING', images: sceneImages('t02'), text: ['warrant', 'solid evidence', 'suspicion'], recon: true},
+  {id: 'S003', kind: 'image', start: 64.9, dur: 13.55, title: 'Cleveland, Ohio - 1963', subtitle: 'The case begins on a downtown street.', kicker: 'MAIN BODY · ACT I', image: 'terry/PD-2026-006-terry-S003-IMG-001.v001.png', images: sceneImages('t03'), citation: 'CLM-0005', recon: true},
+  {id: 'S004', kind: 'counter', start: 78.86, dur: 26.17, title: '~12 trips', subtitle: 'Two men, one store window, a repeated path.', kicker: 'ACT I', image: 'terry/PD-2026-006-terry-S004-IMG-001.v001.png', images: sceneImages('t04'), citation: 'CLM-0006', text: ['~12 trips'], recon: true},
+  {id: 'S005', kind: 'observer', start: 105.44, dur: 20.84, title: 'A pattern forms', subtitle: 'Experience turns ordinary motion into suspicion.', kicker: 'ACT I', images: sceneImages('t05'), text: ['window', 'return', 'heads together'], recon: true},
+  {id: 'S006', kind: 'type', start: 126.7, dur: 14.32, title: 'Suspicion != proof', subtitle: 'Under the ordinary rule, that is not enough.', kicker: 'ACT I', images: sceneImages('t06'), recon: true},
+  {id: 'S007', kind: 'risk', start: 141.43, dur: 22.6, title: 'The decision point', subtitle: 'Officer safety on one side. Innocent contact on the other.', kicker: 'ACT I', images: sceneImages('t07'), text: ['officer safety', 'innocent contact'], recon: true},
+  {id: 'S008', kind: 'frisk', start: 164.44, dur: 12.07, title: 'Outer clothing', subtitle: 'The weapon question is shown as a boundary, not a spectacle.', kicker: 'ACT I', image: 'terry/PD-2026-006-terry-S018-IMG-001.v001.png', images: sceneImages('t08'), citation: 'CLM-0006', recon: true},
+  {id: 'S009', kind: 'charge', start: 176.92, dur: 8.01, title: 'Carrying a concealed weapon', subtitle: 'The street encounter becomes a constitutional case.', kicker: 'ACT II', images: sceneImages('t09'), citation: 'CLM-0007', recon: true},
+  {id: 'S010', kind: 'scale', start: 185.34, dur: 20.08, title: 'Probable cause + warrant', subtitle: 'The ordinary Fourth Amendment baseline.', kicker: 'ACT II', images: sceneImages('t10'), text: ['reasonable suspicion', 'probable cause', 'warrant'], recon: true},
+  {id: 'S011', kind: 'scale', start: 205.83, dur: 20.08, title: 'Threshold not met', subtitle: 'A window pattern is less than full probable cause.', kicker: 'ACT II', images: sceneImages('t11'), recon: true},
+  {id: 'S012', kind: 'risk', start: 226.32, dur: 27.26, title: 'The unknown moment', subtitle: 'Before proof exists, the safety risk can still be real.', kicker: 'ACT II', images: sceneImages('t12'), recon: true},
+  {id: 'S013', kind: 'question', start: 254, dur: 25.18, title: 'Below arrest?', subtitle: 'Can a brief stop sit below probable cause?', kicker: 'ACT II', images: sceneImages('t13'), text: ['encounter', 'stop', 'arrest'], recon: true},
+  {id: 'S014', kind: 'wall', start: 279.59, dur: 18.49, title: 'Two truths at once', subtitle: 'Real streets. Real abuse risk.', kicker: 'ACT II', images: sceneImages('t14'), recon: true},
+  {id: 'S015', kind: 'ruling', start: 298.49, dur: 26.99, title: '1968 - 8-1', subtitle: 'Terry v. Ohio, 392 U.S. 1', kicker: 'ACT III', images: sceneImages('t15'), citation: 'CLM-0002', text: ['8', '1'], recon: true},
+  {id: 'S016', kind: 'facts', start: 325.89, dur: 23.7, title: 'Specific, articulable facts', subtitle: 'Reasonable suspicion must be describable.', kicker: 'ACT III', images: sceneImages('t16'), citation: 'CLM-0004', recon: true},
+  {id: 'S017', kind: 'facts', start: 350, dur: 36.31, title: '"specific and articulable facts"', subtitle: 'Two men. Same window. A dozen trips. Heads together.', kicker: 'ACT III', images: sceneImages('t16'), citation: 'CLM-0004', text: ['two men', 'same window', 'a dozen trips', 'heads together'], recon: true},
+  {id: 'S018', kind: 'frisk', start: 386.73, dur: 22.22, title: 'Weapons only', subtitle: 'Outer clothing, and only for weapons.', kicker: 'ACT III', image: 'terry/PD-2026-006-terry-S018-IMG-001.v001.png', images: sceneImages('t08'), citation: 'CLM-0001', recon: true},
+  {id: 'S019', kind: 'boundary', start: 409.36, dur: 31.87, title: 'Outer clothing - weapons only', subtitle: 'Not pockets. Not evidence. Not one inch more.', kicker: 'ACT III', images: sceneImages('t08'), citation: 'CLM-0003', recon: true},
+  {id: 'S020', kind: 'equation', start: 441.64, dur: 26.71, title: 'Stop = seizure. Frisk = search.', subtitle: 'Still reasonable on a lower standard.', kicker: 'ACT III', images: sceneImages('t11'), citation: 'CLM-0003 / CLM-0004', recon: true},
+  {id: 'S021', kind: 'dissent', start: 468.77, dur: 26.28, title: 'Dissent: Douglas, J. (alone)', subtitle: 'A warning about lowering the probable-cause line.', kicker: 'ACT III', images: sceneImages('t15'), citation: 'CLM-0008', recon: true},
+  {id: 'S022', kind: 'modern', start: 495.46, dur: 15.08, title: '"Terry stop"', subtitle: 'One of the most common police-public encounters.', kicker: 'ACT IV', images: sceneImages('t17'), citation: 'CLM-0009', recon: true},
+  {id: 'S023', kind: 'pressure', start: 510.96, dur: 23.53, title: 'Judgment can bend', subtitle: 'Training can sharpen it. Bias can distort it.', kicker: 'ACT IV', images: sceneImages('t17'), citation: 'CLM-0009', recon: true},
+  {id: 'S024', kind: 'modern', start: 534.9, dur: 28.8, title: 'Facts, later put into words', subtitle: 'A low bar can be careful work - or weather.', kicker: 'ACT IV', images: sceneImages('t17'), citation: 'CLM-0009', recon: true},
+  {id: 'S025', kind: 'pressure', start: 564.12, dur: 25.01, title: 'Careful rule. Pressured street.', subtitle: 'The risk is application under pressure.', kicker: 'ACT IV', images: sceneImages('t17'), recon: true},
+  {id: 'S026', kind: 'line', start: 589.54, dur: 23.81, title: 'The line is thin', subtitle: 'Redrawn on sidewalks every day.', kicker: 'ACT IV', images: sceneImages('t17'), recon: true},
+  {id: 'S027', kind: 'equation', start: 613.76, dur: 14.54, title: 'Street. Body. Less than proof.', subtitle: 'A real suspicion, and the gun was allowed to stand.', kicker: 'ENDING', images: sceneImages('t18'), citation: 'CLM-0001 / CLM-0007', recon: true},
+  {id: 'S028', kind: 'objects', start: 628.72, dur: 17.99, title: 'Physical things', subtitle: 'House. Pockets. The ground you stand on.', kicker: 'ENDING', images: sceneImages('t18'), recon: true},
+  {id: 'S029', kind: 'phone', start: 647.12, dur: 24.88, title: 'Next: can they search your phone?', subtitle: 'The device inside the pocket changes the question.', kicker: 'NEXT', images: sceneImages('t18'), recon: true},
 ];
 
 const fit = (text: string): number => Math.min(86, Math.max(42, 1240 / Math.max(text.length, 14)));
@@ -120,6 +120,12 @@ const Lower: React.FC<{scene: Scene}> = ({scene}) => {
   if (scene.kind === 'end') return null;
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
+  const hiddenByBumper =
+    (scene.id === 'S001' && frame < Math.round(3.2 * fps)) ||
+    (scene.id === 'S002' && frame < Math.round(OPENING_SEC * fps)) ||
+    (scene.id === 'S003' && frame < Math.round(2.6 * fps)) ||
+    (scene.id === 'S027' && frame < Math.round(2.6 * fps));
+  if (hiddenByBumper) return null;
   const e = spring({frame: frame - Math.round(0.12 * fps), fps, config: {damping: 18, stiffness: 90}});
   return (
     <div style={{position: 'absolute', left: 58, top: 48, opacity: Math.min(1, e), maxWidth: 1260}}>
@@ -136,6 +142,35 @@ const Lower: React.FC<{scene: Scene}> = ({scene}) => {
       {scene.subtitle ? <div style={{fontFamily: BRAND.font.body, fontSize: 28, color: SILVER, marginTop: 12, maxWidth: 1030}}>{scene.subtitle}</div> : null}
       {scene.citation ? <div style={{fontFamily: BRAND.font.body, fontSize: 19, color: GOLD, marginTop: 15, background: '#000000AA', padding: '7px 11px', display: 'inline-block'}}>{scene.citation}</div> : null}
     </div>
+  );
+};
+
+const SectionBumper: React.FC<{label: string; title: string; subtitle?: string; tone?: 'blue' | 'gold'}> = ({label, title, subtitle, tone = 'blue'}) => {
+  const frame = useCurrentFrame();
+  const {fps, durationInFrames} = useVideoConfig();
+  const color = tone === 'gold' ? GOLD : BLUE;
+  const enter = spring({frame: frame - Math.round(0.08 * fps), fps, config: {damping: 18, stiffness: 100}});
+  const out = interpolate(frame, [durationInFrames - Math.round(0.42 * fps), durationInFrames], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const rule = interpolate(frame, [8, 28], [0, 620], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill style={{background: `radial-gradient(95% 85% at 52% 42%, ${tone === 'gold' ? '#3A2A08' : '#0F356B'} 0%, ${NAVY} 39%, ${INK} 86%)`, opacity: Math.min(enter, out), overflow: 'hidden'}}>
+      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
+        <div style={{fontFamily: BRAND.font.body, color: SILVER, fontSize: 25, fontWeight: 800, textTransform: 'uppercase', opacity: enter}}>
+          {label}
+        </div>
+        <div style={{width: rule, height: 3, background: color, margin: '18px 0 26px', boxShadow: `0 0 20px ${color}`}} />
+        <div style={{fontFamily: BRAND.font.display, color: WHITE, fontSize: 92, lineHeight: 0.92, textTransform: 'uppercase', textAlign: 'center', textShadow: `0 0 44px ${color}66`, transform: `translateY(${interpolate(enter, [0, 1], [32, 0])}px)`, opacity: enter}}>
+          {title}
+        </div>
+        {subtitle ? (
+          <div style={{fontFamily: BRAND.font.body, color, fontSize: 30, fontWeight: 800, marginTop: 18, opacity: enter}}>
+            {subtitle}
+          </div>
+        ) : null}
+      </AbsoluteFill>
+      <Vignette strength={1} />
+      <Grain opacity={0.06} />
+    </AbsoluteFill>
   );
 };
 
@@ -226,13 +261,48 @@ const Pairs: React.FC<{left: string; right: string}> = ({left, right}) => (
 
 const PovGraphic: React.FC = () => {
   const frame = useCurrentFrame();
-  const hand = interpolate(frame, [20, 90, 160], [240, 0, 40], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const {fps} = useVideoConfig();
+  const stop = spring({frame: frame - Math.round(0.6 * fps), fps, config: {damping: 18, stiffness: 95}});
+  const pat = spring({frame: frame - Math.round(1.75 * fps), fps, config: {damping: 20, stiffness: 90}});
+  const rule = spring({frame: frame - Math.round(2.8 * fps), fps, config: {damping: 18, stiffness: 100}});
+  const path = interpolate(frame, [0, 210], [250, 955], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const scan = interpolate(frame, [58, 142], [470, 710], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
     <>
-      <div style={{position: 'absolute', left: 780, top: 305, width: 340, height: 460, border: `3px solid ${SILVER}55`, borderRadius: 170, opacity: 0.44}} />
-      <div style={{position: 'absolute', left: 600 - hand, top: 560, width: 320, height: 60, background: `${GOLD}DD`, transform: 'rotate(-10deg)', boxShadow: `0 0 36px ${GOLD}88`}} />
-      <div style={{position: 'absolute', right: 480 - hand, top: 585, width: 320, height: 60, background: `${BLUE}CC`, transform: 'rotate(8deg)', boxShadow: `0 0 36px ${BLUE}88`}} />
-      <div style={{position: 'absolute', left: 820, top: 805, width: 280, height: 4, background: GOLD}} />
+      <svg width="1920" height="1080" style={{position: 'absolute'}}>
+        <g opacity="0.34">
+          {Array.from({length: 10}, (_, i) => <line key={`h${i}`} x1="280" x2="1640" y1={300 + i * 52} y2={300 + i * 52} stroke={SILVER} strokeWidth="1" />)}
+          {Array.from({length: 11}, (_, i) => <line key={`v${i}`} x1={310 + i * 132} x2={310 + i * 132} y1="280" y2="820" stroke={SILVER} strokeWidth="1" />)}
+        </g>
+        <path d="M320 700 C520 610, 700 730, 930 635 S1320 610, 1540 520" fill="none" stroke={`${BLUE}66`} strokeWidth="12" strokeLinecap="round" />
+        <circle cx={path} cy="635" r="18" fill={BLUE} opacity="0.95" />
+        <line x1="820" x2="1120" y1="420" y2="420" stroke={GOLD} strokeWidth="8" opacity={Math.min(stop, 1)} strokeLinecap="round" />
+        <text x="842" y="395" fill={GOLD} fontFamily={BRAND.font.display} fontSize="54" opacity={Math.min(stop, 1)}>STOP</text>
+        <rect x="760" y="455" width="420" height="315" rx="150" fill="#00000099" stroke={SILVER} strokeWidth="3" opacity="0.72" />
+        <rect x="835" y="510" width="270" height="205" rx="96" fill="none" stroke={BLUE} strokeWidth="5" opacity={Math.min(pat, 1)} />
+        <line x1="835" x2="1105" y1={scan} y2={scan} stroke={GOLD} strokeWidth="7" opacity={Math.min(pat, 1)} strokeLinecap="round" />
+        <text x="812" y="806" fill={SILVER} fontFamily={BRAND.font.body} fontSize="28" opacity={Math.min(pat, 1)}>outer clothing only</text>
+      </svg>
+      <div style={{position: 'absolute', right: 170, top: 398, display: 'grid', gap: 14, opacity: Math.min(rule, 0.86)}}>
+        {['NO WARRANT', 'NO CRIME SEEN', 'LEGAL QUESTION'].map((label, i) => (
+          <div key={label} style={{
+            width: 300,
+            height: 62,
+            border: `2px solid ${i === 2 ? GOLD : BLUE}`,
+            background: '#000000AA',
+            color: i === 2 ? GOLD : WHITE,
+            fontFamily: BRAND.font.display,
+            fontSize: 28,
+            display: 'flex',
+            alignItems: 'center',
+            paddingLeft: 22,
+            textTransform: 'uppercase',
+            boxShadow: `0 0 26px ${i === 2 ? GOLD : BLUE}33`,
+          }}>
+            {label}
+          </div>
+        ))}
+      </div>
     </>
   );
 };
@@ -378,16 +448,8 @@ const PhoneGraphic: React.FC = () => {
   );
 };
 
-const EndCard: React.FC = () => (
-  <AbsoluteFill style={{background: INK, alignItems: 'center', justifyContent: 'center'}}>
-    <div style={{fontFamily: BRAND.font.display, fontSize: 84, color: WHITE, textTransform: 'uppercase'}}>Prime Documentary</div>
-    <div style={{fontFamily: BRAND.font.body, fontSize: 30, color: GOLD, marginTop: 16}}>Subscribe</div>
-    <Grain opacity={0.05} />
-  </AbsoluteFill>
-);
-
 const SceneBody: React.FC<{scene: Scene}> = ({scene}) => {
-  if (scene.kind === 'end') return <EndCard />;
+  if (scene.kind === 'end') return <BrandEndcard />;
   let body: React.ReactNode;
   switch (scene.kind) {
     case 'pov':
@@ -459,6 +521,21 @@ export const TerryPremium: React.FC = () => (
         <SceneBody scene={scene} />
       </Sequence>
     ))}
+    <Sequence from={0} durationInFrames={Math.round(3.2 * BRAND.video.fps)} name="HOOK_BUMPER">
+      <SectionBumper label="Hook" title="Stopped on the street" subtitle="No warrant. No crime seen." tone="blue" />
+    </Sequence>
+    <Sequence from={Math.round(30.5 * BRAND.video.fps)} durationInFrames={Math.round(OPENING_SEC * BRAND.video.fps)} name="BRAND_OPENING">
+      <BrandOpening seriesLabel="Landmark Rights Cases" title="Terry v. Ohio" subtitle="The line between suspicion and proof" />
+    </Sequence>
+    <Sequence from={Math.round(64.48 * BRAND.video.fps)} durationInFrames={Math.round(2.6 * BRAND.video.fps)} name="MAIN_BODY_BUMPER">
+      <SectionBumper label="Main Story" title="The stop, the frisk, the rule" subtitle="Cleveland 1963 -> Supreme Court 1968" tone="gold" />
+    </Sequence>
+    <Sequence from={Math.round(613.35 * BRAND.video.fps)} durationInFrames={Math.round(2.6 * BRAND.video.fps)} name="ENDING_BUMPER">
+      <SectionBumper label="Ending" title="Street. Body. Less than proof." subtitle="And then the phone in your pocket" tone="blue" />
+    </Sequence>
+    <Sequence from={Math.round(672 * BRAND.video.fps)} durationInFrames={Math.round(ENDCARD_SEC * BRAND.video.fps)} name="BRAND_ENDCARD">
+      <BrandEndcard />
+    </Sequence>
   </AbsoluteFill>
 );
 
