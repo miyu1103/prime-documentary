@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Audio,
   Img,
   Sequence,
   Video,
@@ -537,6 +538,7 @@ export const KeloPremium: React.FC = () => (
     <Sequence from={Math.round(631.5 * FPS)} durationInFrames={Math.round(ENDCARD_SEC * FPS)} name="PART_4_BRAND_ENDCARD">
       <BrandEndcard />
     </Sequence>
+    <Audio src={staticFile('kelo/audio/kelo_final_mix_v001.mp3')} />
     <CaptionBand />
   </AbsoluteFill>
 );
