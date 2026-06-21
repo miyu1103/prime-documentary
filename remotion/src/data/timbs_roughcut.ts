@@ -12,7 +12,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0001",
       "chapterId": "hook",
-      "seconds": 20.0,
+      "seconds": 20,
       "assetType": "stock_video",
       "motion": "video_native",
       "src": "timbs/pexels_v_10480745.mp4",
@@ -66,7 +66,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0002",
       "chapterId": "opening",
-      "seconds": 36.4,
+      "seconds": 43.3,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0002.png",
@@ -89,7 +89,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0003",
       "chapterId": "act1",
-      "seconds": 16.8,
+      "seconds": 20,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0003.png",
@@ -107,7 +107,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0004",
       "chapterId": "act1",
-      "seconds": 19.6,
+      "seconds": 23.3,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
       "src": "timbs/pexels_i_10480828.jpg",
@@ -123,7 +123,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0005",
       "chapterId": "act1",
-      "seconds": 21.2,
+      "seconds": 25.2,
       "assetType": "stock_video",
       "motion": "video_native",
       "src": "timbs/pexels_v_5243246.mp4",
@@ -145,7 +145,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0006",
       "chapterId": "act1",
-      "seconds": 24.0,
+      "seconds": 28.6,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
       "src": "timbs/pexels_i_10480828.jpg",
@@ -163,7 +163,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0007",
       "chapterId": "act1",
-      "seconds": 22.4,
+      "seconds": 26.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0007.png",
@@ -182,7 +182,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0008",
       "chapterId": "act1",
-      "seconds": 17.2,
+      "seconds": 20.5,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0008.png",
@@ -198,7 +198,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0009",
       "chapterId": "act2",
-      "seconds": 12.4,
+      "seconds": 14.8,
       "assetType": "stock_video",
       "motion": "video_native",
       "src": "timbs/pexels_cell_tower.mp4",
@@ -220,7 +220,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0010",
       "chapterId": "act2",
-      "seconds": 34.8,
+      "seconds": 41.4,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
       "src": "timbs/pexels_i_14356008.jpg",
@@ -240,7 +240,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0011",
       "chapterId": "act2",
-      "seconds": 12.8,
+      "seconds": 15.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0011.png",
@@ -255,7 +255,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0012",
       "chapterId": "act2",
-      "seconds": 22.4,
+      "seconds": 26.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0012.png",
@@ -274,7 +274,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0013",
       "chapterId": "act2",
-      "seconds": 28.8,
+      "seconds": 34.3,
       "assetType": "stock_video",
       "motion": "video_native",
       "src": "timbs/pexels_v_5636967.mp4",
@@ -296,7 +296,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0014",
       "chapterId": "act2",
-      "seconds": 22.8,
+      "seconds": 27.1,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0014.png",
@@ -316,7 +316,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0015",
       "chapterId": "act3",
-      "seconds": 14.4,
+      "seconds": 17.1,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0015.png",
@@ -334,7 +334,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0016",
       "chapterId": "act3",
-      "seconds": 23.6,
+      "seconds": 28.1,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
       "src": "timbs/pexels_i_20695252.jpg",
@@ -352,7 +352,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0017",
       "chapterId": "act3",
-      "seconds": 34.8,
+      "seconds": 41.4,
       "assetType": "stock_video",
       "motion": "video_native",
       "src": "timbs/pexels_v_20758153.mp4",
@@ -374,17 +374,17 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0018",
       "chapterId": "act3",
-      "seconds": 26.8,
+      "seconds": 31.9,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "timbs/oyez_timbs_2018.mp3",
+      "src": "timbs/pexels_i_30483132.jpg",
       "telop": [
         "2019 — 9–0",
         "Timbs v. Indiana, 586 U.S. 146"
       ],
       "priority": "A",
       "images": [
-        "timbs/oyez_timbs_2018.mp3",
+        "timbs/pexels_i_30483132.jpg",
         "timbs/pixabay_i_7035102.jpg",
         "timbs/scotus_gavel.jpg",
         "timbs/us_constitution_p1.jpg",
@@ -394,7 +394,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0019",
       "chapterId": "act3",
-      "seconds": 20.4,
+      "seconds": 24.3,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0019.png",
@@ -411,7 +411,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0020",
       "chapterId": "act3",
-      "seconds": 27.6,
+      "seconds": 32.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0020.png",
@@ -432,7 +432,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0021",
       "chapterId": "act4",
-      "seconds": 21.6,
+      "seconds": 25.7,
       "assetType": "stock_video",
       "motion": "video_native",
       "src": "timbs/pexels_v_12839875.mp4",
@@ -452,7 +452,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0022",
       "chapterId": "act4",
-      "seconds": 19.2,
+      "seconds": 22.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0022.png",
@@ -471,7 +471,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0023",
       "chapterId": "act4",
-      "seconds": 29.6,
+      "seconds": 35.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0023.png",
@@ -490,7 +490,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0024",
       "chapterId": "act4",
-      "seconds": 15.6,
+      "seconds": 18.6,
       "assetType": "stock_video",
       "motion": "video_native",
       "src": "timbs/pixabay_v_218215.mp4",
@@ -512,7 +512,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0025",
       "chapterId": "ending",
-      "seconds": 27.6,
+      "seconds": 32.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0025.png",
@@ -531,7 +531,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0026",
       "chapterId": "ending",
-      "seconds": 6.8,
+      "seconds": 8.1,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0026.png",
@@ -545,7 +545,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0027",
       "chapterId": "ending",
-      "seconds": 27.2,
+      "seconds": 32.4,
       "assetType": "stock_video",
       "motion": "video_native",
       "src": "timbs/pixabay_v_186198.mp4",
@@ -567,7 +567,7 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0028",
       "chapterId": "ending",
-      "seconds": 1.6,
+      "seconds": 1.9,
       "assetType": "ai_image",
       "motion": "ken_burns",
       "src": "timbs/SPN-0028.png",
