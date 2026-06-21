@@ -161,11 +161,12 @@ def write_captions() -> list[dict[str, float | str]]:
         weights = [max(1, len(part.split())) for part in parts]
         total = sum(weights)
         cursor = start
+        elapsed_weight = 0
         for part, weight in zip(parts, weights):
-            dur = max(1.05, (end - start) * weight / total)
-            part_end = min(end, cursor + dur)
+            elapsed_weight += weight
+            part_end = start + (end - start) * elapsed_weight / total
             if part_end <= cursor:
-                part_end = min(end, cursor + 0.8)
+                part_end = min(end, cursor + 0.001)
             cues.append(f"{cue_no}\n{ts_srt(cursor)} --> {ts_srt(part_end)}\n{part}\n")
             cue_json.append({"start": round(cursor, 3), "end": round(part_end, 3), "text": part})
             cue_no += 1
