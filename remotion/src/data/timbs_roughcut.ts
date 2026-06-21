@@ -12,34 +12,54 @@ export const TIMBS_ROUGHCUT: RoughCutData = {
     {
       "spanId": "SPN-0001",
       "chapterId": "hook",
-      "seconds": 30.8,
+      "seconds": 20.0,
       "assetType": "stock_video",
       "motion": "video_native",
       "src": "timbs/pexels_v_10480745.mp4",
       "telop": [
-        "They take the property. Not you."
+        "They can seize property before it's proven guilty."
       ],
       "priority": "A",
       "clips": [
         {
           "src": "timbs/pexels_v_10480745.mp4",
-          "clipSeconds": 17.72
+          "clipSeconds": 2
         },
         {
           "src": "timbs/pexels_v_10480744.mp4",
-          "clipSeconds": 40.44
+          "clipSeconds": 2
         },
         {
           "src": "timbs/pexels_v_20758153.mp4",
-          "clipSeconds": 11.86
+          "clipSeconds": 2
         },
         {
           "src": "timbs/pexels_v_6581288.mp4",
-          "clipSeconds": 25.51
+          "clipSeconds": 2
         },
         {
           "src": "timbs/pixabay_v_6095.mp4",
-          "clipSeconds": 23.27
+          "clipSeconds": 2
+        },
+        {
+          "src": "timbs/pexels_cell_tower.mp4",
+          "clipSeconds": 2
+        },
+        {
+          "src": "timbs/pexels_v_5243246.mp4",
+          "clipSeconds": 2
+        },
+        {
+          "src": "timbs/pixabay_v_93536.mp4",
+          "clipSeconds": 2
+        },
+        {
+          "src": "timbs/pexels_v_12839875.mp4",
+          "clipSeconds": 2
+        },
+        {
+          "src": "timbs/pexels_v_5636967.mp4",
+          "clipSeconds": 2
         }
       ]
     },
