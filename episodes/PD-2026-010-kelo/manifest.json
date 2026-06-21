@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-010",
   "slug": "kelo",
   "title_working": "The Government Took Their Homes for a Developer — Then the Plan Collapsed",
-  "state": "script_verified",
+  "state": "private_uploaded",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -15,7 +15,14 @@
     "sources": "v001",
     "claims": "v001",
     "script": "v001",
-    "script_qc": "v001"
+    "script_qc": "v001",
+    "youtube_meta": "v001",
+    "youtube_private_upload_result": "v001",
+    "youtube_captions_result": "v001",
+    "youtube_status_verify": "v001",
+    "final_delivery": "v001",
+    "final_qc": "v001",
+    "rights_manifest": "v001"
   },
   "artifacts": [
     {
@@ -29,21 +36,39 @@
       "qc_status": "pass"
     }
   ],
-  "approvals": ["APR-0001"],
+  "approvals": [
+    "APR-0001"
+  ],
   "costs": {
-    "estimated": {"amount": 0, "currency": "USD"},
-    "actual": {"amount": 0, "currency": "USD"},
-    "soft_limit": {"amount": 100, "currency": "USD"},
-    "hard_limit": {"amount": 200, "currency": "USD"}
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
   },
   "warnings": [
     "Claude owns research+script; Codex begins production at scenes/visuals. Image generation = Codex; edit = Remotion+FFmpeg. Use rights-clean real footage/photos (references/README.md, H:/pd-media/assets/stock) for B-roll.",
     "script_qc PASS (FK 8.9, no AI-filler, claim-links consistent), timing ~10.5min; promoted to script_verified.",
     "Keep neutral and non-partisan: the Kelo backlash was bipartisan. Present the city's economic-development rationale fairly. The state-reform count (CLM-0008) is a RANGE attributed to the Institute for Justice; note many reforms were criticized as weak.",
     "Real people (Susette Kelo et al.) by role, neutral; no real-person likeness in AI visuals. NLDC = private nonprofit acting as the city's development agent (not an independent private condemnor).",
-    "Heavy media (scenes/visuals/audio/edit) on the external SSD (H:\\pd-media), not in this repo."
+    "Heavy media (scenes/visuals/audio/edit) on the external SSD (H:\\pd-media), not in this repo.",
+    "YouTube private upload completed for Kelo: video_id r54vcIq5APg. Public publish/schedule not performed; owner approval still required."
   ],
   "blockers": [],
   "created_at": "2026-06-20T03:00:00+09:00",
-  "updated_at": "2026-06-20T03:00:00+09:00"
+  "updated_at": "2026-06-21T18:01:59.440838+00:00",
+  "video_id": "r54vcIq5APg",
+  "video_url": "https://youtu.be/r54vcIq5APg",
+  "public_schedule_active": false
 }
