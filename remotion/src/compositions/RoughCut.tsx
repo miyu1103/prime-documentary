@@ -38,12 +38,20 @@ export type RoughShot = {
   priority: 'A' | 'B' | 'C';
 };
 
+export type CaptionCue = {
+  id: string;
+  start: number;
+  end: number;
+  text: string;
+};
+
 export type RoughCutData = {
   episodeId: string;
   title: string;
   fps: number;
   narrationSrc: string | null;
   bgmSrc: string | null;
+  captions?: CaptionCue[];
   shots: RoughShot[];
 };
 
@@ -241,7 +249,7 @@ const GraphicCard: React.FC<{telop: string[]; placeholder: string}> = ({telop, p
   );
 };
 
-/** Telop lower-third (gold rule), shown when a moving asset is present. */
+/** Telop upper-third (gold rule), shown when a moving asset is present. */
 const Telop: React.FC<{telop: string[]}> = ({telop}) => {
   const line = telop[0];
   if (!line) return null;
@@ -250,7 +258,7 @@ const Telop: React.FC<{telop: string[]}> = ({telop}) => {
       style={{
         position: 'absolute',
         left: 48,
-        bottom: 64,
+        top: 56,
         maxWidth: '70%',
         color: BRAND.color.white,
         background: `${BRAND.color.ink}99`,
@@ -263,6 +271,38 @@ const Telop: React.FC<{telop: string[]}> = ({telop}) => {
       }}
     >
       {line}
+    </div>
+  );
+};
+
+const CaptionBand: React.FC<{captions?: CaptionCue[]}> = ({captions}) => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  if (!captions || captions.length === 0) return null;
+  const t = frame / fps;
+  const cue = captions.find((c) => t >= c.start && t < c.end);
+  if (!cue) return null;
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        left: 0,
+        right: 0,
+        bottom: 0,
+        minHeight: 116,
+        padding: '22px 210px 28px',
+        color: BRAND.color.white,
+        background: `linear-gradient(180deg, transparent 0%, ${BRAND.color.ink}E6 24%, ${BRAND.color.ink}F7 100%)`,
+        fontFamily: BRAND.font.body,
+        fontWeight: 800,
+        fontSize: 36,
+        lineHeight: 1.18,
+        textAlign: 'center',
+        textShadow: `0 3px 12px ${BRAND.color.ink}`,
+        letterSpacing: -0.2,
+      }}
+    >
+      {cue.text}
     </div>
   );
 };
@@ -323,6 +363,7 @@ export const RoughCut: React.FC<{data: RoughCutData}> = ({data}) => {
       </Series>
       {data.narrationSrc ? <Audio src={staticFile(data.narrationSrc)} /> : null}
       {data.bgmSrc ? <Audio src={staticFile(data.bgmSrc)} volume={0.16} /> : null}
+      <CaptionBand captions={data.captions} />
     </AbsoluteFill>
   );
 };
