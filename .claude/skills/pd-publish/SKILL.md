@@ -28,6 +28,20 @@ description: Uploads or schedules a PD video only after validating current appro
 9. Save URL, IDs, timestamps and settings.
 10. Register analytics monitoring windows.
 
+## Post-Publish Standard Operations (EP10+, mandatory)
+
+EP10以降は公開/予約の直後に必ず実行（詳細・根拠は docs/09 §17）：
+
+1. Read-only audit: `uploadStatus=processed`, privacy正, no rejection/failure, `madeForKids=False`, `defaultAudioLanguage=en`。
+2. Upload final caption sidecar (`captions.final.vNNN.srt`, `en/standard`). **proxy SRT 禁止**。最終SRTが無ければ公開前に生成。
+3. Assign to the correct playlist per docs/31 taxonomy（未登録ゼロ）。
+4. Post the pinned engagement comment (`pinned_comment.md`) as `@PrimeDocumentaryStudio`。pin自体はAPI不可＝手動。
+5. Verify caption track + playlist membership by re-read; record in manifest/events.
+
+Gate add-on: `captions_sidecar_final_uploaded`, `playlist_assigned`, `pinned_comment_posted` がすべて true。
+Tooling: `scripts/yt_apply_playlist_captions.py`（冪等）, `scripts/yt_full_audit.py`（確認）。
+API不可（Studio/手動）: サムネA/Bテスト, CTR/impressions, コメントpin。
+
 ## Never
 
 - Public publish with stale or missing approval.
