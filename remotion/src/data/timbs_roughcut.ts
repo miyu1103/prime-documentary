@@ -6,6 +6,8 @@ import {TIMBS_CAPTIONS} from './timbs_captions';
 export const TIMBS_ROUGHCUT: RoughCutData = {
   "episodeId": "PD-2026-009-timbs",
   "title": "Police Can Take Your Car Without Convicting You — The Supreme Court Drew a Line",
+  "openingTitle": "Timbs v. Indiana",
+  "openingSubtitle": "The car the Constitution would not let them keep",
   "fps": 30,
   "narrationSrc": "timbs/timbs_final_mix_v001.mp3",
   "bgmSrc": null,

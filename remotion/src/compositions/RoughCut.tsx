@@ -11,6 +11,7 @@ import {
   useVideoConfig,
 } from 'remotion';
 import {BRAND} from '../brand';
+import {BrandOpening, OPENING_SEC} from '../components/Bookends';
 import {Grain} from '../components/Grain';
 import {Vignette} from '../components/Motion';
 
@@ -48,6 +49,8 @@ export type CaptionCue = {
 export type RoughCutData = {
   episodeId: string;
   title: string;
+  openingTitle?: string;
+  openingSubtitle?: string;
   fps: number;
   narrationSrc: string | null;
   bgmSrc: string | null;
@@ -307,7 +310,7 @@ const CaptionBand: React.FC<{captions?: CaptionCue[]}> = ({captions}) => {
   );
 };
 
-const Shot: React.FC<{shot: RoughShot}> = ({shot}) => {
+const VisualShot: React.FC<{shot: RoughShot}> = ({shot}) => {
   const hasVideo = (shot.clips && shot.clips.length > 0) || (shot.assetType === 'stock_video' && !!shot.src);
   const hasImages = (shot.images && shot.images.length > 0) || (!!shot.src && shot.assetType !== 'stock_video');
   return (
@@ -350,6 +353,29 @@ const Shot: React.FC<{shot: RoughShot}> = ({shot}) => {
   );
 };
 
+const Shot: React.FC<{shot: RoughShot; data: RoughCutData}> = ({shot, data}) => {
+  const {fps} = useVideoConfig();
+  if (shot.chapterId === 'opening') {
+    const openingFrames = Math.min(framesFor(OPENING_SEC, fps), framesFor(shot.seconds, fps));
+    const remainingFrames = Math.max(1, framesFor(shot.seconds, fps) - openingFrames);
+    return (
+      <Series>
+        <Series.Sequence durationInFrames={openingFrames}>
+          <BrandOpening
+            seriesLabel="Prime Documentary"
+            title={data.openingTitle ?? data.title}
+            subtitle={data.openingSubtitle}
+          />
+        </Series.Sequence>
+        <Series.Sequence durationInFrames={remainingFrames}>
+          <VisualShot shot={{...shot, seconds: remainingFrames / fps}} />
+        </Series.Sequence>
+      </Series>
+    );
+  }
+  return <VisualShot shot={shot} />;
+};
+
 export const RoughCut: React.FC<{data: RoughCutData}> = ({data}) => {
   const {fps} = useVideoConfig();
   return (
@@ -357,7 +383,7 @@ export const RoughCut: React.FC<{data: RoughCutData}> = ({data}) => {
       <Series>
         {data.shots.map((shot) => (
           <Series.Sequence key={shot.spanId} durationInFrames={framesFor(shot.seconds, fps)}>
-            <Shot shot={shot} />
+            <Shot shot={shot} data={data} />
           </Series.Sequence>
         ))}
       </Series>
