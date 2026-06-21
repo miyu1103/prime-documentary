@@ -65,8 +65,17 @@ def main():
     man = load(f"{b}/manifest.json")
     val(sch["topic"], topic, "topic"); val(sch["claims"], claims, "claims")
     val(sch["ann"], ann, "annotated"); val(sch["manifest"], man, "manifest")
+    # This is a SCRIPT-STAGE validator: only generic request->decision approvals match
+    # approval.schema.json. Publish-gate approvals (title/thumbnail/publish/schedule) use a
+    # different shape (approved_at/gate/scheduled_at_utc, no requested_at) and are validated
+    # at publish time (pd-publish-preflight), not here -- skip them instead of mis-applying.
+    skipped_publish = []
     for fp in glob.glob(f"{b}/approvals/APR-*.json"):
-        val(sch["approval"], load(fp), os.path.basename(fp))
+        ap = load(fp)
+        if "requested_at" not in ap and ("gate" in ap or "scheduled_at_utc" in ap):
+            skipped_publish.append(os.path.basename(fp))
+            continue
+        val(sch["approval"], ap, os.path.basename(fp))
     for i, s in enumerate(load(f"{b}/01_research/sources.v001.json")):
         val(sch["source"], s, f"source[{i}]")
     # events + qc parse
@@ -112,6 +121,8 @@ def main():
     print(f"Episode: {ep}   state={man.get('state')}   annotated qc_status={ann.get('qc_status')}")
     print(f"QC: words={nw} FK={fk:.1f} duration={dur:.1f}min sentences={ns}")
     print(f"Schema errors: {len(problems)} | claims={len(cids)} spans={len(spanids)}")
+    if skipped_publish:
+        print(f"  note: skipped {len(skipped_publish)} publish-gate approval(s) (validated at publish preflight): {skipped_publish}")
     for p in problems:
         print("  ERROR:", p)
     for w in warns:
