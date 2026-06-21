@@ -8,11 +8,19 @@ into remotion/public/<slug>/, and emits a typed remotion/src/data/<slug>_roughcu
 by the RoughCut composition. Shots with no usable asset get src=null -> RoughCut renders a
 branded motion card (telop) so the timeline is complete. motion_graphic shots are always coded.
 
+Asset-Factory fallback: when an episode has NO usable asset of the media type a shot needs
+(empty img/vid pool), the commercial-OK Asset Factory shelf (assets/asset_manifest.v001.json)
+supplies candidates so the slot is filled instead of left as a branded card. This is GAP-ONLY:
+if the usable pool already has assets of that type, the factory code path is unreachable and
+output is byte-identical to before. Disable with --no-factory. Only license-allowed factory
+assets are used (CLAUDE.md rights invariants).
+
 NEVER copies a review/blocked asset. Default dry-run; --write performs copies + writes the .ts.
 
 Usage:
   .venv/Scripts/python.exe scripts/import_to_remotion.py 11
   .venv/Scripts/python.exe scripts/import_to_remotion.py 11 --write
+  .venv/Scripts/python.exe scripts/import_to_remotion.py 11 --no-factory
 """
 from __future__ import annotations
 import sys, os, json, glob, shutil, tempfile, re, subprocess, math
@@ -71,6 +79,43 @@ def resolve_file(file: str) -> str | None:
         if os.path.exists(cand):
             return cand
     return os.path.join(ROOT, file)
+
+
+# Asset Factory shelf (episode-independent reusable pool). Only these licenses are
+# commercial-OK and may reach a timeline; keep in sync with validate_asset_manifest.py.
+FACTORY_MANIFEST = os.path.join(ROOT, "assets", "asset_manifest.v001.json")
+FACTORY_ALLOWED_LICENSES = {
+    "cc0", "royalty_free", "generated_owned",
+    "Pexels License", "Pixabay Content License",
+}
+
+
+def load_factory_pool() -> list[dict[str, Any]]:
+    """Adapt the Asset Factory manifest to the usable-pool shape (asset_id/asset_type/file/
+    depicts/query). License-allowed image/video entries only. Returns [] if the manifest is
+    absent or unreadable (e.g. mid-write by the bulk builder) -- callers then keep prior
+    behavior (branded cards). Loaded lazily: episodes with full usable pools never read it."""
+    try:
+        doc = json.load(open(FACTORY_MANIFEST, encoding="utf-8"))
+    except (OSError, ValueError):
+        return []
+    out: list[dict[str, Any]] = []
+    for e in doc.get("assets", []):
+        if e.get("license") not in FACTORY_ALLOWED_LICENSES:
+            continue
+        kind = e.get("kind")
+        if kind not in ("image", "video"):
+            continue
+        path = e.get("path") or ""
+        out.append({
+            "asset_id": e.get("id"),
+            "asset_type": kind,
+            "file": "assets/" + path,                       # resolve_file maps assets/ -> media root
+            "depicts": e.get("subtype"),
+            "query": " ".join((e.get("tags") or []) + [e.get("sourcePrompt") or ""]),
+            "used_in_spans": [],
+        })
+    return out
 
 
 def ai_images_for(slug: str, span_id: str) -> list[str]:
@@ -151,6 +196,7 @@ def main() -> int:
     sys.stdout.reconfigure(encoding="utf-8")
     argv = sys.argv[1:]
     write = "--write" in argv
+    use_factory = "--no-factory" not in argv
     pos = [a for a in argv if not a.startswith("--")]
     if not pos:
         raise SystemExit("usage: import_to_remotion.py <episode> [--write]")
@@ -176,6 +222,18 @@ def main() -> int:
     img_i = 0
     vid_pool = [a for a in pool if a.get("asset_type") == "video"]   # for guaranteeing real footage
     vid_i = 0
+    # GAP-ONLY factory fallback: only when this episode has zero usable assets of a media
+    # type do we draw from the commercial-OK shelf. If the usable pool is non-empty, the
+    # pools below are unchanged and output is byte-identical to the pre-factory importer.
+    factory_img = factory_vid = 0
+    if use_factory and (not img_pool or not vid_pool):
+        factory = load_factory_pool()
+        if not img_pool:
+            img_pool = [a for a in factory if a["asset_type"] == "image"]
+            factory_img = len(img_pool)
+        if not vid_pool:
+            vid_pool = [a for a in factory if a["asset_type"] == "video"]
+            factory_vid = len(vid_pool)
 
     def queue_copy(asset: dict[str, Any]) -> str:
         fname = os.path.basename(asset["file"])
@@ -251,6 +309,8 @@ def main() -> int:
 
     print(f"Episode: {ep_id}  slug: {slug}")
     print(f"Shots: {len(shots_out)}   usable pool: {len(pool)}   bound to real assets: {bound}   coded/cards: {len(shots_out)-bound}")
+    if factory_img or factory_vid:
+        print(f"Factory fallback: filled empty usable pool with shelf candidates (img={factory_img}, vid={factory_vid})")
     print(f"Data file: remotion/src/data/{slug}_roughcut.ts   export: {const}")
     if write:
         os.makedirs(dest_dir, exist_ok=True)
