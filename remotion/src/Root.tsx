@@ -10,6 +10,7 @@ import {GideonPremium, gideonPremiumDurationInFrames} from './compositions/Gideo
 import {MappPremium, mappPremiumDurationInFrames} from './compositions/MappPremium';
 import {MadoffPremium, madoffPremiumDurationInFrames} from './compositions/MadoffPremium';
 import {KeloPremium, keloPremiumDurationInFrames} from './compositions/KeloPremium';
+import {KeloThumbnailFrame} from './compositions/KeloThumbnailFrame';
 import {ClipProof} from './compositions/ClipProof';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
@@ -186,6 +187,19 @@ export const RemotionRoot: React.FC = () => {
           title: 'Why Do Police Read You Your Rights?',
           backgroundSrc: null,
           variant: 'left' as const,
+        }}
+      />
+      <Still
+        id="KeloThumbnailFrame"
+        component={KeloThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{
+          backgroundSrc: 'kelo/thumbs/THUMB-02.png',
+          headlineTop: 'YOUR HOME',
+          headlineBottom: 'TAKEN?',
+          badge: 'FOR A DEVELOPER',
+          variant: 'taken' as const,
         }}
       />
     </>

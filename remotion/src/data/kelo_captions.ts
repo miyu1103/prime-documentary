@@ -7,1282 +7,997 @@ export type KeloCaptionCue = {
 export const KELO_CAPTIONS: KeloCaptionCue[] = [
   {
     "start": 0.0,
-    "end": 2.254,
+    "end": 1.42,
     "text": "The government can take your home."
   },
   {
-    "start": 2.254,
-    "end": 5.26,
-    "text": "Most people know that — for a highway,"
+    "start": 2.14,
+    "end": 5.24,
+    "text": "Most people know that\nfor a highway a school"
   },
   {
-    "start": 5.26,
-    "end": 6.763,
-    "text": "a school, a bridge."
+    "start": 5.48,
+    "end": 8.765,
+    "text": "a bridge. But what if it\ntakes your home in perfect"
   },
   {
-    "start": 6.763,
-    "end": 9.393,
-    "text": "But what if it takes your home,"
+    "start": 8.8,
+    "end": 11.163,
+    "text": "condition having done nothing wrong and"
   },
   {
-    "start": 9.393,
-    "end": 12.023,
-    "text": "in perfect condition, having done nothing wrong,"
+    "start": 12.025,
+    "end": 13.92,
+    "text": "hands the land to a private developer"
   },
   {
-    "start": 12.023,
-    "end": 15.029,
-    "text": "and hands the land to a private developer?"
+    "start": 15.04,
+    "end": 18.265,
+    "text": "In 2005 a woman's small pink house"
   },
   {
-    "start": 15.029,
-    "end": 18.035,
-    "text": "In 2005, a woman's small pink house in"
+    "start": 18.3,
+    "end": 21.605,
+    "text": "in Connecticut put that exact\nquestion in front of the"
   },
   {
-    "start": 18.035,
-    "end": 21.041,
-    "text": "Connecticut put that exact question in front of"
+    "start": 21.64,
+    "end": 24.805,
+    "text": "Supreme Court. The answer\nchanged what two words"
   },
   {
-    "start": 21.041,
-    "end": 22.543,
-    "text": "the Supreme Court ."
+    "start": 24.84,
+    "end": 26.94,
+    "text": "in the Constitution are allowed to mean."
   },
   {
-    "start": 22.543,
-    "end": 25.549,
-    "text": "The answer changed what two words in the"
-  },
-  {
-    "start": 25.549,
-    "end": 27.428,
-    "text": "Constitution are allowed to mean."
-  },
-  {
-    "start": 27.823,
-    "end": 30.229,
+    "start": 27.64,
+    "end": 29.48,
     "text": "The power is called eminent domain."
   },
   {
-    "start": 30.229,
-    "end": 33.037,
-    "text": "The Fifth Amendment lets the government take"
+    "start": 30.38,
+    "end": 33.32,
+    "text": "The Fifth Amendment lets the\ngovernment take private property"
   },
   {
-    "start": 33.037,
-    "end": 36.245,
-    "text": "private property — but only \"for public use,\""
+    "start": 33.98,
+    "end": 37.165000000000006,
+    "text": "but only for public use and only if it"
   },
   {
-    "start": 36.245,
-    "end": 39.454,
-    "text": "and only if it pays you a fair"
+    "start": 37.2,
+    "end": 38.28,
+    "text": "pays you a fair price."
   },
   {
-    "start": 39.454,
-    "end": 40.256,
-    "text": "price ."
+    "start": 39.18,
+    "end": 42.15,
+    "text": "For most of history public use meant"
   },
   {
-    "start": 40.256,
-    "end": 43.064,
-    "text": "For most of history, \"public use\" meant"
+    "start": 42.465,
+    "end": 45.12,
+    "text": "something the public actually uses a road"
   },
   {
-    "start": 43.064,
-    "end": 45.871,
-    "text": "something the public actually uses: a road,"
+    "start": 45.78,
+    "end": 47.7,
+    "text": "a reservoir a courthouse."
   },
   {
-    "start": 45.871,
-    "end": 47.475,
-    "text": "a reservoir, a courthouse."
+    "start": 48.78,
+    "end": 51.885000000000005,
+    "text": "Kelo v. New London asked whether\nthose two words could stretch"
   },
   {
-    "start": 47.475,
-    "end": 48.277,
-    "text": "Kelo v."
+    "start": 51.92,
+    "end": 54.76,
+    "text": "to cover something else entirely taking"
   },
   {
-    "start": 48.277,
-    "end": 51.486,
-    "text": "New London asked whether those two words could"
+    "start": 54.795,
+    "end": 58.725,
+    "text": "working-class homes and giving the\nland to private business in the hope"
   },
   {
-    "start": 51.486,
-    "end": 54.293,
-    "text": "stretch to cover something else entirely —"
+    "start": 58.76,
+    "end": 59.98,
+    "text": "of jobs and taxes."
   },
   {
-    "start": 54.293,
-    "end": 57.101,
-    "text": "taking working-class homes and giving the land"
+    "start": 61.14,
+    "end": 64.04,
+    "text": "Over the next twelve minutes\nthe neighborhood that was erased"
   },
   {
-    "start": 57.101,
-    "end": 60.309,
-    "text": "to private business in the hope of jobs"
+    "start": 64.84,
+    "end": 67.14,
+    "text": "the 5-4 decision that allowed it"
   },
   {
-    "start": 60.309,
-    "end": 61.112,
-    "text": "and taxes."
+    "start": 67.625,
+    "end": 69.44,
+    "text": "and the spectacular way it backfired."
   },
   {
-    "start": 61.112,
-    "end": 63.919,
-    "text": "Over the next twelve minutes: the neighborhood"
+    "start": 70.32,
+    "end": 73.58500000000001,
+    "text": "The place is New London\nConnecticut a small"
   },
   {
-    "start": 63.919,
-    "end": 67.127,
-    "text": "that was erased, the 5-4 decision that allowed"
+    "start": 73.62,
+    "end": 76.78,
+    "text": "city on the water and the\nneighborhood is called Fort Trumbull."
   },
   {
-    "start": 67.127,
-    "end": 69.935,
-    "text": "it, and the spectacular way it backfired."
+    "start": 77.38,
+    "end": 80.325,
+    "text": "It is not rich but it is real modest"
   },
   {
-    "start": 70.33,
-    "end": 72.086,
-    "text": "The place is New London,"
+    "start": 80.36,
+    "end": 82.34,
+    "text": "homes some lived in for generations."
   },
   {
-    "start": 72.086,
-    "end": 74.543,
-    "text": "Connecticut, a small city on the water,"
-  },
-  {
-    "start": 74.543,
-    "end": 77.001,
-    "text": "and the neighborhood is called Fort Trumbull."
-  },
-  {
-    "start": 77.001,
-    "end": 79.809,
-    "text": "It is not rich, but it is real"
-  },
-  {
-    "start": 79.809,
-    "end": 82.618,
-    "text": "— modest homes, some lived in for generations"
-  },
-  {
-    "start": 82.618,
-    "end": 82.969,
-    "text": "."
-  },
-  {
-    "start": 83.364,
-    "end": 85.971,
+    "start": 83.22,
+    "end": 85.74,
     "text": "One of them belongs to Susette Kelo."
   },
   {
-    "start": 85.971,
-    "end": 88.951,
-    "text": "It is a small house she has fixed"
+    "start": 86.46,
+    "end": 89.14500000000001,
+    "text": "It is a small house she\nhas fixed up and painted a"
   },
   {
-    "start": 88.951,
-    "end": 91.186,
-    "text": "up and painted a distinctive pink,"
+    "start": 89.18,
+    "end": 91.74,
+    "text": "distinctive pink with a view of the water."
   },
   {
-    "start": 91.186,
-    "end": 93.421,
-    "text": "with a view of the water."
-  },
-  {
-    "start": 93.421,
-    "end": 95.283,
+    "start": 92.72,
+    "end": 94.14,
     "text": "She has done nothing wrong."
   },
   {
-    "start": 95.283,
-    "end": 97.145,
-    "text": "Her home is not run-down."
+    "start": 94.72,
+    "end": 96.002,
+    "text": "Her home is not"
   },
   {
-    "start": 97.145,
-    "end": 99.38,
-    "text": "There is no crime scene here,"
+    "start": 96.037,
+    "end": 99.071,
+    "text": "run-down. There is no crime scene here"
   },
   {
-    "start": 99.38,
-    "end": 101.615,
-    "text": "no blight, no code violations ."
+    "start": 99.945,
+    "end": 100.98,
+    "text": "no blight no code violations."
   },
   {
-    "start": 102.01,
-    "end": 104.379,
+    "start": 101.96,
+    "end": 103.2,
     "text": "But the city has a plan."
   },
   {
-    "start": 104.379,
-    "end": 107.144,
-    "text": "The pharmaceutical company Pfizer is building a"
+    "start": 103.8,
+    "end": 107.08500000000001,
+    "text": "The pharmaceutical company Pfizer\nis building a large research"
   },
   {
-    "start": 107.144,
-    "end": 109.908,
-    "text": "large research facility nearby, and New London"
+    "start": 107.12,
+    "end": 110.285,
+    "text": "facility nearby and New London wants to"
   },
   {
-    "start": 109.908,
-    "end": 113.068,
-    "text": "wants to capitalize on it — to remake"
+    "start": 110.32,
+    "end": 113.405,
+    "text": "capitalize on it to remake the whole Fort"
   },
   {
-    "start": 113.068,
-    "end": 115.832,
-    "text": "the whole Fort Trumbull area with offices,"
+    "start": 113.44,
+    "end": 116.64,
+    "text": "Trumbull area with offices a hotel"
   },
   {
-    "start": 115.832,
-    "end": 118.992,
-    "text": "a hotel, and upscale housing that would bring"
+    "start": 117.22,
+    "end": 120.86,
+    "text": "and upscale housing that would\nbring in jobs and tax revenue."
   },
   {
-    "start": 118.992,
-    "end": 121.361,
-    "text": "in jobs and tax revenue ."
+    "start": 121.7,
+    "end": 124.86500000000001,
+    "text": "To do it the city works through\na private nonprofit acting"
   },
   {
-    "start": 121.756,
-    "end": 124.491,
-    "text": "To do it, the city works through a"
+    "start": 124.9,
+    "end": 128.58,
+    "text": "as its development agent the New\nLondon Development Corporation."
   },
   {
-    "start": 124.491,
-    "end": 126.542,
-    "text": "private nonprofit acting as its development"
+    "start": 129.22,
+    "end": 132.34,
+    "text": "And that agency is given the\npower to do something dramatic"
   },
   {
-    "start": 126.542,
-    "end": 128.593,
-    "text": "agent, the New London Development Corporation."
+    "start": 132.7,
+    "end": 135.865,
+    "text": "to use eminent domain to\ncondemn the homes in Fort"
   },
   {
-    "start": 128.593,
-    "end": 131.327,
-    "text": "And that agency is given the power to"
+    "start": 135.9,
+    "end": 139.105,
+    "text": "Trumbull to force the\nowners to sell whether"
   },
   {
-    "start": 131.327,
-    "end": 134.062,
-    "text": "do something dramatic: to use eminent domain to"
+    "start": 139.14,
+    "end": 140.5,
+    "text": "they want to or not."
   },
   {
-    "start": 134.062,
-    "end": 136.797,
-    "text": "condemn the homes in Fort Trumbull — to"
+    "start": 141.2,
+    "end": 143.78,
+    "text": "Susette Kelo and a handful\nof neighbors refuse."
   },
   {
-    "start": 136.797,
-    "end": 138.506,
-    "text": "force the owners to sell,"
-  },
-  {
-    "start": 138.506,
-    "end": 140.899,
-    "text": "whether they want to or not ."
-  },
-  {
-    "start": 141.294,
-    "end": 144.136,
-    "text": "Susette Kelo and a handful of neighbors refuse."
-  },
-  {
-    "start": 144.136,
-    "end": 146.978,
+    "start": 144.68,
+    "end": 146.4,
     "text": "They are not holding out for more money."
   },
   {
-    "start": 146.978,
-    "end": 149.82,
-    "text": "They simply do not want to lose their"
+    "start": 146.72,
+    "end": 149.665,
+    "text": "They simply do not want to\nlose their homes so that"
   },
   {
-    "start": 149.82,
-    "end": 152.662,
-    "text": "homes so that someone else can build something"
+    "start": 149.7,
+    "end": 153.02,
+    "text": "someone else can build something\nmore profitable on the land."
   },
   {
-    "start": 152.662,
-    "end": 154.439,
-    "text": "more profitable on the land."
+    "start": 153.72,
+    "end": 156.965,
+    "text": "So they sue represented\nby a public-interest law"
   },
   {
-    "start": 154.439,
-    "end": 156.926,
-    "text": "So they sue, represented by a public-interest"
+    "start": 157.0,
+    "end": 160.105,
+    "text": "firm the Institute for Justice and their"
   },
   {
-    "start": 156.926,
-    "end": 159.057,
-    "text": "law firm, the Institute for Justice,"
+    "start": 160.14,
+    "end": 162.78,
+    "text": "fight climbs all the way\nto the Supreme Court."
   },
   {
-    "start": 159.057,
-    "end": 161.899,
-    "text": "and their fight climbs all the way to"
+    "start": 163.42,
+    "end": 166.12,
+    "text": "And the question they bring\nis deceptively simple."
   },
   {
-    "start": 161.899,
-    "end": 163.32,
-    "text": "the Supreme Court ."
+    "start": 166.68,
+    "end": 169.98,
+    "text": "The Constitution allows\ntakings for public use."
   },
   {
-    "start": 163.716,
-    "end": 166.272,
-    "text": "And the question they bring is deceptively"
+    "start": 170.88,
+    "end": 174.005,
+    "text": "Is handing your home to\na private developer for a"
   },
   {
-    "start": 166.272,
-    "end": 166.637,
-    "text": "simple."
+    "start": 174.04,
+    "end": 177.165,
+    "text": "plan that might create\njobs really a public"
   },
   {
-    "start": 166.637,
-    "end": 168.828,
-    "text": "The Constitution allows takings \"for public"
+    "start": 177.2,
+    "end": 180.365,
+    "text": "use Or has the city\njust found a way to take"
   },
   {
-    "start": 168.828,
-    "end": 171.749,
-    "text": "use.\" Is handing your home to a private"
+    "start": 180.4,
+    "end": 182.88,
+    "text": "from one private owner and give to another"
   },
   {
-    "start": 171.749,
-    "end": 174.67,
-    "text": "developer — for a plan that might create"
+    "start": 183.78,
+    "end": 186.745,
+    "text": "To see why this was so hard\nyou have to look closely"
   },
   {
-    "start": 174.67,
-    "end": 176.861,
-    "text": "jobs — really a \"public use\"?"
+    "start": 186.78,
+    "end": 189.64,
+    "text": "at the words themselves public use."
   },
   {
-    "start": 176.861,
-    "end": 179.782,
-    "text": "Or has the city just found a way"
+    "start": 190.44,
+    "end": 193.625,
+    "text": "Read narrowly public use means the"
   },
   {
-    "start": 179.782,
-    "end": 182.704,
-    "text": "to take from one private owner and give"
+    "start": 193.66,
+    "end": 196.805,
+    "text": "public gets to use the\nthing you can drive on the"
   },
   {
-    "start": 182.704,
-    "end": 183.434,
-    "text": "to another?"
+    "start": 196.84,
+    "end": 200.04500000000002,
+    "text": "road drink from the reservoir walk into"
   },
   {
-    "start": 183.829,
-    "end": 186.297,
-    "text": "To see why this was so hard,"
+    "start": 200.08,
+    "end": 203.185,
+    "text": "the courthouse. Under that reading taking"
   },
   {
-    "start": 186.297,
-    "end": 189.117,
-    "text": "you have to look closely at the words"
+    "start": 203.22,
+    "end": 205.72,
+    "text": "homes to hand to a private company fails"
   },
   {
-    "start": 189.117,
-    "end": 190.175,
-    "text": "themselves: \"public use.\""
+    "start": 206.36,
+    "end": 209.26500000000001,
+    "text": "because the public will\nnot own or use the new"
   },
   {
-    "start": 190.57,
-    "end": 193.371,
-    "text": "Read narrowly, \"public use\" means the public"
+    "start": 209.3,
+    "end": 211.56,
+    "text": "development private parties will."
   },
   {
-    "start": 193.371,
-    "end": 196.572,
-    "text": "gets to use the thing — you can"
+    "start": 212.42,
+    "end": 215.385,
+    "text": "But over the twentieth\ncentury courts had read those"
   },
   {
-    "start": 196.572,
-    "end": 199.773,
-    "text": "drive on the road, drink from the reservoir,"
+    "start": 215.42,
+    "end": 218.58,
+    "text": "words more and more\nbroadly as public purpose."
   },
   {
-    "start": 199.773,
-    "end": 201.373,
-    "text": "walk into the courthouse."
+    "start": 219.48,
+    "end": 222.705,
+    "text": "Under that reading a taking\nis fine as long as it"
   },
   {
-    "start": 201.373,
-    "end": 204.574,
-    "text": "Under that reading, taking homes to hand to"
+    "start": 222.74,
+    "end": 225.965,
+    "text": "serves some public benefit\neven if a private party"
   },
   {
-    "start": 204.574,
-    "end": 207.775,
-    "text": "a private company fails, because the public will"
+    "start": 226.0,
+    "end": 227.12,
+    "text": "ends up with the property."
   },
   {
-    "start": 207.775,
-    "end": 210.976,
-    "text": "not own or use the new development; private"
+    "start": 228.0,
+    "end": 231.6,
+    "text": "Clearing genuine slums for example\nhad been upheld on that logic."
   },
   {
-    "start": 210.976,
-    "end": 212.176,
-    "text": "parties will ."
+    "start": 232.62,
+    "end": 235.6,
+    "text": "New London's argument leaned\nentirely on the broad reading."
   },
   {
-    "start": 212.572,
-    "end": 214.345,
-    "text": "But over the twentieth century,"
+    "start": 236.3,
+    "end": 239.28,
+    "text": "The city was not claiming\nFort Trumbull was a slum."
   },
   {
-    "start": 214.345,
-    "end": 217.183,
-    "text": "courts had read those words more and more"
+    "start": 239.94,
+    "end": 242.68,
+    "text": "It was claiming that\neconomic development itself"
   },
   {
-    "start": 217.183,
-    "end": 219.666,
-    "text": "broadly — as \"public purpose.\" Under that"
+    "start": 243.5,
+    "end": 246.8,
+    "text": "more jobs more taxes a\nrevitalized waterfront"
   },
   {
-    "start": 219.666,
-    "end": 222.504,
-    "text": "reading, a taking is fine as long as"
+    "start": 247.14,
+    "end": 250.64,
+    "text": "is a public purpose and\ntherefore a public use."
   },
   {
-    "start": 222.504,
-    "end": 224.277,
-    "text": "it serves some public benefit,"
+    "start": 251.42,
+    "end": 255.06,
+    "text": "If the Court accepted that the\nimplications were enormous."
   },
   {
-    "start": 224.277,
-    "end": 227.115,
-    "text": "even if a private party ends up with"
+    "start": 256.06,
+    "end": 259.325,
+    "text": "Almost any home anywhere\ncould be taken and handed to a"
   },
   {
-    "start": 227.115,
-    "end": 227.824,
-    "text": "the property."
+    "start": 259.36,
+    "end": 262.66499999999996,
+    "text": "developer as long as a\ncity could claim the new"
   },
   {
-    "start": 227.824,
-    "end": 229.598,
-    "text": "Clearing genuine slums, for example,"
+    "start": 262.7,
+    "end": 265.98499999999996,
+    "text": "use would generate more\neconomic activity than the"
   },
   {
-    "start": 229.598,
-    "end": 232.081,
-    "text": "had been upheld on that logic ."
+    "start": 266.02,
+    "end": 269.125,
+    "text": "old one. A modest house almost always"
   },
   {
-    "start": 232.476,
-    "end": 235.389,
-    "text": "New London's argument leaned entirely on the"
+    "start": 269.16,
+    "end": 272.185,
+    "text": "produces less tax revenue than offices or"
   },
   {
-    "start": 235.389,
-    "end": 236.221,
-    "text": "broad reading."
+    "start": 272.22,
+    "end": 274.583,
+    "text": "luxury condos. Under the broad reading"
   },
   {
-    "start": 236.221,
-    "end": 239.549,
-    "text": "The city was not claiming Fort Trumbull was"
+    "start": 275.365,
+    "end": 277.34,
+    "text": "that gap alone could justify taking it."
   },
   {
-    "start": 239.549,
-    "end": 240.381,
-    "text": "a slum."
+    "start": 277.94,
+    "end": 281.1,
+    "text": "So the case was never\nreally about one pink house."
   },
   {
-    "start": 240.381,
-    "end": 243.293,
-    "text": "It was claiming that economic development itself"
+    "start": 281.64,
+    "end": 284.78499999999997,
+    "text": "It was about whether\nthe words for public use"
   },
   {
-    "start": 243.293,
-    "end": 245.374,
-    "text": "— more jobs, more taxes,"
+    "start": 284.82,
+    "end": 287.72499999999997,
+    "text": "still set any limit at all on whose"
   },
   {
-    "start": 245.374,
-    "end": 248.702,
-    "text": "a revitalized waterfront — is a public purpose,"
+    "start": 287.76,
+    "end": 290.2,
+    "text": "property the government\ncan transfer to whom."
   },
   {
-    "start": 248.702,
-    "end": 251.198,
-    "text": "and therefore a public use ."
+    "start": 291.18,
+    "end": 294.26,
+    "text": "In 2005 the Supreme Court\nsided with the city."
   },
   {
-    "start": 251.594,
-    "end": 253.572,
-    "text": "If the Court accepted that,"
+    "start": 294.92,
+    "end": 298.085,
+    "text": "By a vote of five to four\nit held that taking the"
   },
   {
-    "start": 253.572,
-    "end": 255.155,
-    "text": "the implications were enormous."
+    "start": 298.12,
+    "end": 301.145,
+    "text": "Fort Trumbull homes for the\neconomic-development plan"
   },
   {
-    "start": 255.155,
-    "end": 258.321,
-    "text": "Almost any home, anywhere, could be taken and"
+    "start": 301.18,
+    "end": 304.64,
+    "text": "did count as a public use\nunder the Fifth Amendment."
   },
   {
-    "start": 258.321,
-    "end": 261.486,
-    "text": "handed to a developer, as long as a"
+    "start": 305.56,
+    "end": 308.4,
+    "text": "The opinion was written by\nJustice John Paul Stevens."
   },
   {
-    "start": 261.486,
-    "end": 264.652,
-    "text": "city could claim the new use would generate"
+    "start": 309.14,
+    "end": 311.94,
+    "text": "The Court did not say the\nhomes had to be blighted."
   },
   {
-    "start": 264.652,
-    "end": 267.422,
-    "text": "more economic activity than the old one."
-  },
-  {
-    "start": 267.422,
-    "end": 270.588,
-    "text": "A modest house almost always produces less tax"
-  },
-  {
-    "start": 270.588,
-    "end": 272.962,
-    "text": "revenue than offices or luxury condos."
-  },
-  {
-    "start": 272.962,
-    "end": 276.128,
-    "text": "Under the broad reading, that gap alone could"
-  },
-  {
-    "start": 276.128,
-    "end": 277.71,
-    "text": "justify taking it ."
-  },
-  {
-    "start": 278.106,
-    "end": 281.067,
-    "text": "So the case was never really about one"
-  },
-  {
-    "start": 281.067,
-    "end": 281.808,
-    "text": "pink house."
-  },
-  {
-    "start": 281.808,
-    "end": 284.769,
-    "text": "It was about whether the words \"for public"
-  },
-  {
-    "start": 284.769,
-    "end": 287.731,
-    "text": "use\" still set any limit at all on"
-  },
-  {
-    "start": 287.731,
-    "end": 290.322,
-    "text": "whose property the government can transfer to"
-  },
-  {
-    "start": 290.322,
-    "end": 290.693,
-    "text": "whom."
-  },
-  {
-    "start": 291.088,
-    "end": 293.992,
-    "text": "In 2005, the Supreme Court sided with the"
-  },
-  {
-    "start": 293.992,
-    "end": 294.356,
-    "text": "city."
-  },
-  {
-    "start": 294.356,
-    "end": 296.897,
-    "text": "By a vote of five to four,"
-  },
-  {
-    "start": 296.897,
-    "end": 299.802,
-    "text": "it held that taking the Fort Trumbull homes"
-  },
-  {
-    "start": 299.802,
-    "end": 302.706,
-    "text": "for the economic-development plan did count as a"
-  },
-  {
-    "start": 302.706,
-    "end": 305.248,
-    "text": "\"public use\" under the Fifth Amendment ."
-  },
-  {
-    "start": 305.643,
-    "end": 308.805,
-    "text": "The opinion was written by Justice John Paul"
-  },
-  {
-    "start": 308.805,
-    "end": 309.2,
-    "text": "Stevens."
-  },
-  {
-    "start": 309.2,
-    "end": 312.362,
-    "text": "The Court did not say the homes had"
-  },
-  {
-    "start": 312.362,
-    "end": 313.548,
-    "text": "to be blighted."
-  },
-  {
-    "start": 313.548,
-    "end": 315.919,
+    "start": 312.38,
+    "end": 314.44,
     "text": "It said that a carefully considered"
   },
   {
-    "start": 315.919,
-    "end": 317.895,
-    "text": "economic-development plan, aimed at public"
+    "start": 314.475,
+    "end": 318.28,
+    "text": "economic-development plan aimed\nat public benefits like jobs"
   },
   {
-    "start": 317.895,
-    "end": 319.871,
-    "text": "benefits like jobs and revenue,"
+    "start": 318.345,
+    "end": 321.32,
+    "text": "and revenue qualifies as a public purpose"
   },
   {
-    "start": 319.871,
-    "end": 323.033,
-    "text": "qualifies as a public purpose — and that"
+    "start": 322.04,
+    "end": 325.265,
+    "text": "and that courts should largely\ndefer to a city's judgment"
   },
   {
-    "start": 323.033,
-    "end": 326.195,
-    "text": "courts should largely defer to a city's judgment"
+    "start": 325.3,
+    "end": 327.22,
+    "text": "about what its community needs."
   },
   {
-    "start": 326.195,
-    "end": 328.566,
-    "text": "about what its community needs ."
+    "start": 328.62,
+    "end": 332.24,
+    "text": "Public use in other words would\nbe read as public purpose."
   },
   {
-    "start": 328.566,
-    "end": 330.543,
-    "text": "\"Public use,\" in other words,"
+    "start": 333.26,
+    "end": 335.7,
+    "text": "One vote in the majority\ncame with a caveat."
   },
   {
-    "start": 330.543,
-    "end": 332.914,
-    "text": "would be read as \"public purpose.\""
+    "start": 336.36,
+    "end": 339.24,
+    "text": "Justice Kennedy who\njoined the Court's opinion"
   },
   {
-    "start": 333.309,
-    "end": 336.805,
-    "text": "One vote in the majority came with a"
+    "start": 339.74,
+    "end": 342.945,
+    "text": "wrote separately to\nstress that a taking meant"
   },
   {
-    "start": 336.805,
-    "end": 337.243,
-    "text": "caveat."
+    "start": 342.98,
+    "end": 345.965,
+    "text": "only to benefit a particular private party"
   },
   {
-    "start": 337.243,
-    "end": 340.302,
-    "text": "Justice Kennedy, who joined the Court's opinion,"
+    "start": 346.0,
+    "end": 349.08,
+    "text": "with a merely pretextual public purpose"
   },
   {
-    "start": 340.302,
-    "end": 343.798,
-    "text": "wrote separately to stress that a taking meant"
+    "start": 349.44,
+    "end": 352.23,
+    "text": "would still be unconstitutional leaving a"
   },
   {
-    "start": 343.798,
-    "end": 346.857,
-    "text": "only to benefit a particular private party,"
+    "start": 352.725,
+    "end": 355.02,
+    "text": "door however narrow for future challenges."
   },
   {
-    "start": 346.857,
-    "end": 349.479,
-    "text": "with a merely pretextual public purpose,"
-  },
-  {
-    "start": 349.479,
-    "end": 352.539,
-    "text": "would still be unconstitutional — leaving a"
-  },
-  {
-    "start": 352.539,
-    "end": 355.598,
-    "text": "door, however narrow, for future challenges ."
-  },
-  {
-    "start": 355.993,
-    "end": 357.919,
+    "start": 355.92,
+    "end": 357.76,
     "text": "The four dissenters were alarmed."
   },
   {
-    "start": 357.919,
-    "end": 360.616,
-    "text": "Justice Sandra Day O'Connor wrote the main"
+    "start": 358.94,
+    "end": 362.0,
+    "text": "Justice Sandra Day O'Connor\nwrote the main dissent"
   },
   {
-    "start": 360.616,
-    "end": 362.928,
-    "text": "dissent, and her warning was blunt."
+    "start": 362.38,
+    "end": 363.82,
+    "text": "and her warning was blunt."
   },
   {
-    "start": 362.928,
-    "end": 364.854,
-    "text": "Under this ruling, she argued,"
+    "start": 364.66,
+    "end": 367.78499999999997,
+    "text": "Under this ruling she\nargued the government could"
   },
   {
-    "start": 364.854,
-    "end": 367.936,
-    "text": "the government could now take property from one"
+    "start": 367.82,
+    "end": 370.36499999999995,
+    "text": "now take property from one private owner"
   },
   {
-    "start": 367.936,
-    "end": 371.019,
-    "text": "private owner simply to give it to another"
+    "start": 370.4,
+    "end": 374.3,
+    "text": "simply to give it to another who\nmight use it more profitably."
   },
   {
-    "start": 371.019,
-    "end": 373.33,
-    "text": "who might use it more profitably."
+    "start": 374.88,
+    "end": 378.10499999999996,
+    "text": "The specter she wrote was\nthat any home could be taken"
   },
   {
-    "start": 373.33,
-    "end": 376.413,
-    "text": "The specter, she wrote, was that any home"
+    "start": 378.14,
+    "end": 380.965,
+    "text": "for any other private\nuse that promised more"
   },
   {
-    "start": 376.413,
-    "end": 379.495,
-    "text": "could be taken for any other private use"
+    "start": 381.0,
+    "end": 384.16499999999996,
+    "text": "taxes and that the words for public"
   },
   {
-    "start": 379.495,
-    "end": 382.577,
-    "text": "that promised more taxes — and that the"
+    "start": 384.2,
+    "end": 387.62,
+    "text": "use had in effect been\nerased from the Constitution."
   },
   {
-    "start": 382.577,
-    "end": 384.503,
-    "text": "words \"for public use\" had,"
+    "start": 388.64,
+    "end": 391.78499999999997,
+    "text": "Justice Thomas wrote a separate\ndissent arguing the Court had"
   },
   {
-    "start": 384.503,
-    "end": 387.585,
-    "text": "in effect, been erased from the Constitution ."
+    "start": 391.82,
+    "end": 394.32,
+    "text": "drifted far from the original\nmeaning of the clause."
   },
   {
-    "start": 387.585,
-    "end": 390.282,
-    "text": "Justice Thomas wrote a separate dissent arguing"
+    "start": 395.34,
+    "end": 398.60499999999996,
+    "text": "It was a 5-4 split and unlike many such"
   },
   {
-    "start": 390.282,
-    "end": 393.365,
-    "text": "the Court had drifted far from the original"
+    "start": 398.64,
+    "end": 401.78,
+    "text": "splits it did not fall\nalong the usual lines."
   },
   {
-    "start": 393.365,
-    "end": 394.906,
-    "text": "meaning of the clause."
+    "start": 402.48,
+    "end": 405.12,
+    "text": "That is part of why what\nhappened next was so unusual."
   },
   {
-    "start": 395.301,
-    "end": 397.297,
-    "text": "It was a 5-4 split,"
+    "start": 405.72,
+    "end": 408.465,
+    "text": "Because the public reaction\nto Kelo did something"
   },
   {
-    "start": 397.297,
-    "end": 399.293,
-    "text": "and unlike many such splits,"
+    "start": 408.5,
+    "end": 411.6,
+    "text": "American legal decisions almost never do"
   },
   {
-    "start": 399.293,
-    "end": 402.487,
-    "text": "it did not fall along the usual lines."
+    "start": 412.14,
+    "end": 414.56,
+    "text": "it united nearly everyone against it."
   },
   {
-    "start": 402.487,
-    "end": 405.68,
-    "text": "That is part of why what happened next"
+    "start": 415.24,
+    "end": 418.185,
+    "text": "The ruling set off one\nof the largest popular"
   },
   {
-    "start": 405.68,
-    "end": 406.878,
-    "text": "was so unusual."
+    "start": 418.22,
+    "end": 420.8,
+    "text": "backlashes to any modern\nSupreme Court decision"
   },
   {
-    "start": 406.878,
-    "end": 409.672,
-    "text": "Because the public reaction to Kelo did"
+    "start": 421.44,
+    "end": 423.32,
+    "text": "and a rare bipartisan one."
   },
   {
-    "start": 409.672,
-    "end": 412.068,
-    "text": "something American legal decisions almost never"
+    "start": 423.92,
+    "end": 427.22499999999997,
+    "text": "People across the political\nspectrum recoiled at the idea"
   },
   {
-    "start": 412.068,
-    "end": 414.862,
-    "text": "do: it united nearly everyone against it."
+    "start": 427.26,
+    "end": 430.385,
+    "text": "that the government could\nbulldoze your home to make way"
   },
   {
-    "start": 415.257,
-    "end": 418.212,
-    "text": "The ruling set off one of the largest"
+    "start": 430.42,
+    "end": 432.92,
+    "text": "for a more profitable private"
   },
   {
-    "start": 418.212,
-    "end": 420.797,
-    "text": "popular backlashes to any modern Supreme Court"
+    "start": 432.955,
+    "end": 434.92,
+    "text": "project. And legislatures responded."
   },
   {
-    "start": 420.797,
-    "end": 423.382,
-    "text": "decision — and a rare bipartisan one."
+    "start": 435.56,
+    "end": 438.565,
+    "text": "In the years after Kelo\nby the Institute for"
   },
   {
-    "start": 423.382,
-    "end": 425.967,
-    "text": "People across the political spectrum recoiled at"
+    "start": 438.6,
+    "end": 441.705,
+    "text": "Justice's count roughly\nforty or more states"
   },
   {
-    "start": 425.967,
-    "end": 428.921,
-    "text": "the idea that the government could bulldoze your"
+    "start": 441.74,
+    "end": 444.465,
+    "text": "passed new laws or\nconstitutional amendments"
   },
   {
-    "start": 428.921,
-    "end": 431.876,
-    "text": "home to make way for a more profitable"
+    "start": 444.5,
+    "end": 448.32,
+    "text": "restricting the use of eminent\ndomain for economic development."
   },
   {
-    "start": 431.876,
-    "end": 432.984,
-    "text": "private project ."
+    "start": 448.86,
+    "end": 452.02,
+    "text": "The catch and it is an important one"
   },
   {
-    "start": 433.379,
-    "end": 434.675,
-    "text": "And legislatures responded."
+    "start": 452.4,
+    "end": 455.42499999999995,
+    "text": "is that many of these\nreforms were later criticized"
   },
   {
-    "start": 434.675,
-    "end": 436.835,
-    "text": "In the years after Kelo,"
+    "start": 455.46,
+    "end": 457.73,
+    "text": "as weak full of loopholes that"
   },
   {
-    "start": 436.835,
-    "end": 439.426,
-    "text": "by the Institute for Justice's count,"
+    "start": 458.645,
+    "end": 460.0,
+    "text": "left the core power largely intact."
   },
   {
-    "start": 439.426,
-    "end": 442.882,
-    "text": "roughly forty or more states passed new laws"
+    "start": 460.36,
+    "end": 463.372,
+    "text": "Passed a reform did not always"
   },
   {
-    "start": 442.882,
-    "end": 445.474,
-    "text": "or constitutional amendments restricting the use"
+    "start": 463.407,
+    "end": 465.38,
+    "text": "mean actually protected homeowners"
   },
   {
-    "start": 445.474,
-    "end": 448.066,
-    "text": "of eminent domain for economic development."
+    "start": 466.56,
+    "end": 469.96,
+    "text": "But the sharpest verdict on Kelo\ncame not from a legislature."
   },
   {
-    "start": 448.066,
-    "end": 451.521,
-    "text": "The catch — and it is an important"
-  },
-  {
-    "start": 451.521,
-    "end": 454.977,
-    "text": "one — is that many of these reforms"
-  },
-  {
-    "start": 454.977,
-    "end": 457.137,
-    "text": "were later criticized as weak,"
-  },
-  {
-    "start": 457.137,
-    "end": 460.593,
-    "text": "full of loopholes that left the core power"
-  },
-  {
-    "start": 460.593,
-    "end": 461.457,
-    "text": "largely intact."
-  },
-  {
-    "start": 461.457,
-    "end": 464.912,
-    "text": "\"Passed a reform\" did not always mean \"actually"
-  },
-  {
-    "start": 464.912,
-    "end": 466.208,
-    "text": "protected homeowners\" ."
-  },
-  {
-    "start": 466.603,
-    "end": 470.186,
-    "text": "But the sharpest verdict on Kelo came not"
-  },
-  {
-    "start": 470.186,
-    "end": 471.53,
-    "text": "from a legislature."
-  },
-  {
-    "start": 471.53,
-    "end": 474.217,
+    "start": 470.74,
+    "end": 472.4,
     "text": "It came from the land itself."
   },
   {
-    "start": 474.217,
-    "end": 477.8,
-    "text": "After the homes of Fort Trumbull were taken"
+    "start": 473.44,
+    "end": 476.385,
+    "text": "After the homes of Fort\nTrumbull were taken and"
   },
   {
-    "start": 477.8,
-    "end": 480.487,
-    "text": "and demolished, the grand redevelopment was"
+    "start": 476.42,
+    "end": 479.9,
+    "text": "demolished the grand\nredevelopment was never built."
   },
   {
-    "start": 480.487,
-    "end": 481.383,
-    "text": "never built."
+    "start": 480.74,
+    "end": 484.02,
+    "text": "The promised offices and\nhotel did not appear."
   },
   {
-    "start": 481.383,
-    "end": 484.966,
-    "text": "The promised offices and hotel did not appear."
+    "start": 485.02,
+    "end": 488.6,
+    "text": "The cleared land sat\nempty year after year."
   },
   {
-    "start": 484.966,
-    "end": 487.205,
-    "text": "The cleared land sat empty,"
-  },
-  {
-    "start": 487.205,
-    "end": 488.997,
-    "text": "year after year ."
-  },
-  {
-    "start": 489.392,
-    "end": 491.255,
+    "start": 489.22,
+    "end": 490.62,
     "text": "And then the final irony."
   },
   {
-    "start": 491.255,
-    "end": 494.237,
-    "text": "In 2009, Pfizer — the company whose arrival"
+    "start": 491.06,
+    "end": 494.24499999999995,
+    "text": "In 2009 Pfizer the company"
   },
   {
-    "start": 494.237,
-    "end": 497.218,
-    "text": "had justified the whole plan — closed its"
+    "start": 494.28,
+    "end": 496.78,
+    "text": "whose arrival had justified the whole plan"
   },
   {
-    "start": 497.218,
-    "end": 499.454,
-    "text": "New London facility and left ."
+    "start": 497.28,
+    "end": 499.74,
+    "text": "closed its New London facility and left."
   },
   {
-    "start": 499.454,
-    "end": 502.063,
-    "text": "The neighborhood had been erased for a"
+    "start": 500.72,
+    "end": 503.78499999999997,
+    "text": "The neighborhood had been erased\nfor a development that never"
   },
   {
-    "start": 502.063,
-    "end": 505.044,
-    "text": "development that never came, to serve a company"
+    "start": 503.82,
+    "end": 507.16,
+    "text": "came to serve a company that did not stay."
   },
   {
-    "start": 505.044,
-    "end": 506.535,
-    "text": "that did not stay."
+    "start": 507.96,
+    "end": 511.125,
+    "text": "For a long time the most\nfamous use of the bulldozed"
   },
   {
-    "start": 506.535,
-    "end": 509.516,
-    "text": "For a long time, the most famous use"
+    "start": 511.16,
+    "end": 513.42,
+    "text": "land was as a place to dump storm debris."
   },
   {
-    "start": 509.516,
-    "end": 512.497,
-    "text": "of the bulldozed land was as a place"
+    "start": 514.42,
+    "end": 517.565,
+    "text": "And it is worth being precise\nabout what taken meant"
   },
   {
-    "start": 512.497,
-    "end": 513.988,
-    "text": "to dump storm debris."
+    "start": 517.6,
+    "end": 518.9,
+    "text": "for the people who lived there."
   },
   {
-    "start": 514.383,
-    "end": 517.178,
-    "text": "And it is worth being precise about what"
+    "start": 519.46,
+    "end": 522.18,
+    "text": "Some families had been in\nFort Trumbull for generations."
   },
   {
-    "start": 517.178,
-    "end": 519.973,
-    "text": "\"taken\" meant for the people who lived there."
+    "start": 522.94,
+    "end": 525.845,
+    "text": "They were paid the market\nvalue of their homes as the"
   },
   {
-    "start": 519.973,
-    "end": 522.769,
-    "text": "Some families had been in Fort Trumbull for"
+    "start": 525.88,
+    "end": 528.825,
+    "text": "Constitution requires but market"
   },
   {
-    "start": 522.769,
-    "end": 523.118,
-    "text": "generations."
+    "start": 528.86,
+    "end": 531.765,
+    "text": "value does not buy back the\nplace you have lived your whole"
   },
   {
-    "start": 523.118,
-    "end": 525.913,
-    "text": "They were paid the market value of their"
+    "start": 531.8,
+    "end": 534.128,
+    "text": "life or the neighbors who scatter"
   },
   {
-    "start": 525.913,
-    "end": 528.708,
-    "text": "homes, as the Constitution requires — but market"
+    "start": 534.625,
+    "end": 535.68,
+    "text": "once the bulldozers arrive."
   },
   {
-    "start": 528.708,
-    "end": 531.504,
-    "text": "value does not buy back the place you"
+    "start": 536.36,
+    "end": 539.325,
+    "text": "That the dissent had warned was the human"
   },
   {
-    "start": 531.504,
-    "end": 533.251,
-    "text": "have lived your whole life,"
+    "start": 539.36,
+    "end": 541.84,
+    "text": "cost the broad reading\nmade easy to ignore."
   },
   {
-    "start": 533.251,
-    "end": 536.046,
-    "text": "or the neighbors who scatter once the bulldozers"
+    "start": 542.92,
+    "end": 544.8,
+    "text": "Susette Kelo's house at least survived."
   },
   {
-    "start": 536.046,
-    "end": 536.395,
-    "text": "arrive."
+    "start": 545.44,
+    "end": 548.6650000000001,
+    "text": "It was not destroyed\nit was carefully taken"
   },
   {
-    "start": 536.395,
-    "end": 538.142,
-    "text": "That, the dissent had warned,"
+    "start": 548.7,
+    "end": 551.885,
+    "text": "apart and moved piece by piece to a"
   },
   {
-    "start": 538.142,
-    "end": 540.937,
-    "text": "was the human cost the broad reading made"
+    "start": 551.92,
+    "end": 555.145,
+    "text": "new lot elsewhere in New\nLondon where it stands today"
   },
   {
-    "start": 540.937,
-    "end": 542.335,
-    "text": "easy to ignore ."
+    "start": 555.18,
+    "end": 556.98,
+    "text": "as a small monument to the fight."
   },
   {
-    "start": 542.73,
-    "end": 544.517,
-    "text": "Susette Kelo's house, at least,"
-  },
-  {
-    "start": 544.517,
-    "end": 544.874,
-    "text": "survived."
-  },
-  {
-    "start": 544.874,
-    "end": 547.732,
-    "text": "It was not destroyed — it was carefully"
-  },
-  {
-    "start": 547.732,
-    "end": 550.233,
-    "text": "taken apart and moved, piece by piece,"
-  },
-  {
-    "start": 550.233,
-    "end": 553.091,
-    "text": "to a new lot elsewhere in New London,"
-  },
-  {
-    "start": 553.091,
-    "end": 555.949,
-    "text": "where it stands today as a small monument"
-  },
-  {
-    "start": 555.949,
-    "end": 557.378,
-    "text": "to the fight ."
-  },
-  {
-    "start": 557.378,
-    "end": 559.879,
+    "start": 557.7,
+    "end": 559.32,
     "text": "She does not live in it anymore."
   },
   {
-    "start": 560.275,
-    "end": 562.202,
+    "start": 560.32,
+    "end": 561.6,
     "text": "Kelo is still good law."
   },
   {
-    "start": 562.202,
-    "end": 564.899,
+    "start": 562.34,
+    "end": 564.8,
     "text": "The Supreme Court has never overturned it."
   },
   {
-    "start": 564.899,
-    "end": 567.983,
-    "text": "What pushed back against it was not the"
+    "start": 565.26,
+    "end": 568.1850000000001,
+    "text": "What pushed back against it\nwas not the Court but the"
   },
   {
-    "start": 567.983,
-    "end": 570.68,
-    "text": "Court but the country — the backlash,"
+    "start": 568.22,
+    "end": 571.205,
+    "text": "country the backlash the state"
   },
   {
-    "start": 570.68,
-    "end": 573.764,
-    "text": "the state reforms, and the empty lot that"
+    "start": 571.24,
+    "end": 574.3050000000001,
+    "text": "reforms and the empty\nlot that made the human"
   },
   {
-    "start": 573.764,
-    "end": 576.847,
-    "text": "made the human cost impossible to ignore ."
+    "start": 574.34,
+    "end": 576.28,
+    "text": "cost impossible to ignore."
   },
   {
-    "start": 577.242,
-    "end": 580.434,
-    "text": "And that is the strange lesson of the"
+    "start": 577.24,
+    "end": 579.42,
+    "text": "And that is the strange\nlesson of the case."
   },
   {
-    "start": 580.434,
-    "end": 580.833,
-    "text": "case."
+    "start": 580.12,
+    "end": 582.965,
+    "text": "The Constitution's limit for public"
   },
   {
-    "start": 580.833,
-    "end": 584.025,
-    "text": "The Constitution's limit — \"for public use\" —"
+    "start": 583.0,
+    "end": 586.085,
+    "text": "use was read so broadly that it"
   },
   {
-    "start": 584.025,
-    "end": 587.218,
-    "text": "was read so broadly that it stopped doing"
+    "start": 586.12,
+    "end": 587.44,
+    "text": "stopped doing much work."
   },
   {
-    "start": 587.218,
-    "end": 588.016,
-    "text": "much work."
+    "start": 588.04,
+    "end": 590.76,
+    "text": "What replaced it was\nnot a better legal rule"
   },
   {
-    "start": 588.016,
-    "end": 591.208,
-    "text": "What replaced it was not a better legal"
+    "start": 591.16,
+    "end": 594.4250000000001,
+    "text": "but public outrage and\nan embarrassing failure"
   },
   {
-    "start": 591.208,
-    "end": 594.001,
-    "text": "rule, but public outrage and an embarrassing"
+    "start": 594.46,
+    "end": 597.745,
+    "text": "on the ground. We have\nnow followed the state as"
   },
   {
-    "start": 594.001,
-    "end": 595.597,
-    "text": "failure on the ground."
+    "start": 597.78,
+    "end": 600.38,
+    "text": "it reaches for your body your phone"
   },
   {
-    "start": 595.992,
-    "end": 598.879,
-    "text": "We have now followed the state as it"
+    "start": 600.9,
+    "end": 603.84,
+    "text": "your movements your property and your home"
   },
   {
-    "start": 598.879,
-    "end": 601.044,
-    "text": "reaches for your body, your phone,"
+    "start": 604.6,
+    "end": 607.42,
+    "text": "the things it can watch\nand the things it can take."
   },
   {
-    "start": 601.044,
-    "end": 603.931,
-    "text": "your movements, your property, and your home —"
+    "start": 608.12,
+    "end": 611.105,
+    "text": "But there is one more kind\nof power and it is the"
   },
   {
-    "start": 603.931,
-    "end": 606.817,
-    "text": "the things it can watch and the things"
+    "start": 611.14,
+    "end": 612.38,
+    "text": "most personal of all."
   },
   {
-    "start": 606.817,
-    "end": 607.9,
-    "text": "it can take."
+    "start": 612.98,
+    "end": 616.265,
+    "text": "Not what the government can\ntake from you but what it"
   },
   {
-    "start": 607.9,
-    "end": 610.786,
-    "text": "But there is one more kind of power,"
+    "start": 616.3,
+    "end": 617.56,
+    "text": "can stop you from saying."
   },
   {
-    "start": 610.786,
-    "end": 613.673,
-    "text": "and it is the most personal of all."
+    "start": 618.5,
+    "end": 621.505,
+    "text": "The next case begins with\na teenager a few words"
   },
   {
-    "start": 613.673,
-    "end": 616.56,
-    "text": "Not what the government can take from you,"
+    "start": 621.54,
+    "end": 624.5450000000001,
+    "text": "and a question every student\nand worker eventually"
   },
   {
-    "start": 616.56,
-    "end": 619.446,
-    "text": "but what it can stop you from saying."
+    "start": 624.58,
+    "end": 627.6650000000001,
+    "text": "asks where does your right to speak"
   },
   {
-    "start": 619.446,
-    "end": 621.972,
-    "text": "The next case begins with a teenager,"
-  },
-  {
-    "start": 621.972,
-    "end": 624.859,
-    "text": "a few words, and a question every student"
-  },
-  {
-    "start": 624.859,
-    "end": 627.384,
-    "text": "and worker eventually asks: where does your"
-  },
-  {
-    "start": 627.384,
-    "end": 629.189,
-    "text": "right to speak actually end?"
-  },
-  {
-    "start": 629.584,
-    "end": 631.0,
-    "text": "That is next time."
+    "start": 627.7,
+    "end": 630.54,
+    "text": "actually end That is next time."
   }
 ];

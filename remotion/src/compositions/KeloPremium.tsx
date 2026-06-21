@@ -135,19 +135,20 @@ const CaptionBand: React.FC = () => {
     <div
       style={{
         position: 'absolute',
-        left: 210,
-        right: 210,
-        bottom: 38,
-        minHeight: 82,
-        padding: '16px 28px',
+        left: 190,
+        right: 190,
+        bottom: 36,
+        minHeight: 96,
+        padding: '18px 34px',
         background: '#000000D8',
         borderTop: `2px solid ${GOLD}`,
         color: WHITE,
         fontFamily: BRAND.font.body,
-        fontSize: cue.text.length > 96 ? 27 : 31,
-        lineHeight: 1.18,
+        fontSize: cue.text.length > 78 ? 34 : 36,
+        lineHeight: 1.22,
         textAlign: 'center',
         textShadow: '0 2px 10px #000',
+        whiteSpace: 'pre-line',
       }}
     >
       {cue.text}
@@ -264,6 +265,7 @@ const ClipPlates: React.FC<{scene: PremiumScene}> = ({scene}) => {
 
 const SceneBase: React.FC<{scene: PremiumScene; children?: React.ReactNode}> = ({scene, children}) => {
   const shot = getShot(scene.spanId);
+  const showLower = scene.mode !== 'purposeMorph';
   return (
     <AbsoluteFill style={{backgroundColor: INK, overflow: 'hidden'}}>
       {shot.assetType === 'stock_video' ? <ClipPlates scene={scene} /> : <StillPlates scene={scene} />}
@@ -271,7 +273,7 @@ const SceneBase: React.FC<{scene: PremiumScene; children?: React.ReactNode}> = (
       <LightSweep seed={scene.spanId} color={scene.mode === 'ruling' || scene.mode === 'pfizer' ? GOLD : BLUE} />
       <Particles seed={scene.spanId} count={18} color={scene.mode === 'ruling' ? GOLD : BLUE} />
       {children}
-      <Lower scene={scene} />
+      {showLower ? <Lower scene={scene} /> : null}
       <ReconstructionLabel />
       <Vignette strength={0.9} />
       <Grain opacity={0.045} />
