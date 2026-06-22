@@ -74,13 +74,14 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 14.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_29659894.jpg",
+      "src": "mahanoy/SPN-0004.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_29659894.jpg",
-        "mahanoy/pexels_i_8419261.jpg",
-        "mahanoy/pixabay_i_993886.jpg"
+        "mahanoy/SPN-0004.png",
+        "mahanoy/SPN-0004_02.png",
+        "mahanoy/SPN-0004_03.png",
+        "mahanoy/SPN-0004_04.png"
       ]
     },
     {
@@ -119,16 +120,18 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 22.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_7718642.jpg",
+      "src": "mahanoy/SPN-0006.png",
       "telop": [
         "Snaps \"disappear\" — screenshots don't"
       ],
       "priority": "A",
       "images": [
-        "mahanoy/pixabay_i_7718642.jpg",
-        "mahanoy/pexels_i_6958629.jpg",
-        "mahanoy/pexels_i_6255934.jpg",
-        "mahanoy/pixabay_i_1822438.jpg"
+        "mahanoy/SPN-0006.png",
+        "mahanoy/SPN-0006_02.png",
+        "mahanoy/SPN-0006_03.png",
+        "mahanoy/SPN-0006_04.png",
+        "mahanoy/SPN-0006_05.png",
+        "mahanoy/SPN-0006_06.png"
       ]
     },
     {
@@ -159,17 +162,18 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 25.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_29659894.jpg",
+      "src": "mahanoy/SPN-0008.png",
       "telop": [
         "School's order vs. a student's voice"
       ],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_29659894.jpg",
-        "mahanoy/pexels_i_8419261.jpg",
-        "mahanoy/pixabay_i_993886.jpg",
-        "mahanoy/pixabay_i_7718642.jpg",
-        "mahanoy/pexels_i_8456146.jpg"
+        "mahanoy/SPN-0008.png",
+        "mahanoy/SPN-0008_02.png",
+        "mahanoy/SPN-0008_03.png",
+        "mahanoy/SPN-0008_04.png",
+        "mahanoy/SPN-0008_05.png",
+        "mahanoy/SPN-0008_06.png"
       ]
     },
     {
@@ -178,15 +182,15 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 15.6,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "mahanoy/pixabay_i_1687949.jpg",
+      "src": "mahanoy/pexels_i_29659894.jpg",
       "telop": [
         "Tinker v. Des Moines (1969)"
       ],
       "priority": "C",
       "images": [
-        "mahanoy/pixabay_i_1687949.jpg",
-        "mahanoy/pexels_i_16229745.jpg",
-        "mahanoy/pexels_i_7634159.jpg"
+        "mahanoy/pexels_i_29659894.jpg",
+        "mahanoy/pexels_i_8419261.jpg",
+        "mahanoy/pixabay_i_993886.jpg"
       ]
     },
     {
@@ -195,16 +199,17 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 19.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_763731.jpg",
+      "src": "mahanoy/SPN-0010.png",
       "telop": [
         "Test: \"substantial disruption\""
       ],
       "priority": "C",
       "images": [
-        "mahanoy/pixabay_i_763731.jpg",
-        "mahanoy/pixabay_i_3113279.jpg",
-        "mahanoy/pexels_i_15452110.jpg",
-        "mahanoy/pexels_i_15452106.jpg"
+        "mahanoy/SPN-0010.png",
+        "mahanoy/SPN-0010_02.png",
+        "mahanoy/SPN-0010_03.png",
+        "mahanoy/SPN-0010_04.png",
+        "mahanoy/SPN-0010_05.png"
       ]
     },
     {
@@ -233,17 +238,19 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 27.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_694424.jpg",
+      "src": "mahanoy/SPN-0012.png",
       "telop": [
         "The phone erased the gate"
       ],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_694424.jpg",
-        "mahanoy/pexels_i_7821755.jpg",
-        "mahanoy/pixabay_i_1869510.jpg",
-        "mahanoy/pixabay_i_1851218.jpg",
-        "mahanoy/pexels_i_16229745.jpg"
+        "mahanoy/SPN-0012.png",
+        "mahanoy/SPN-0012_02.png",
+        "mahanoy/SPN-0012_03.png",
+        "mahanoy/SPN-0012_04.png",
+        "mahanoy/SPN-0012_05.png",
+        "mahanoy/SPN-0012_06.png",
+        "mahanoy/SPN-0012_07.png"
       ]
     },
     {
@@ -252,15 +259,16 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 25.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_6367607.jpg",
+      "src": "mahanoy/SPN-0013.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "mahanoy/pixabay_i_6367607.jpg",
-        "mahanoy/pixabay_i_4257401.jpg",
-        "mahanoy/pexels_i_8456146.jpg",
-        "mahanoy/pexels_i_32292156.jpg",
-        "mahanoy/pixabay_i_94959.jpg"
+        "mahanoy/SPN-0013.png",
+        "mahanoy/SPN-0013_02.png",
+        "mahanoy/SPN-0013_03.png",
+        "mahanoy/SPN-0013_04.png",
+        "mahanoy/SPN-0013_05.png",
+        "mahanoy/SPN-0013_06.png"
       ]
     },
     {
@@ -269,16 +277,16 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 14.0,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "mahanoy/pixabay_i_728344.jpg",
+      "src": "mahanoy/pixabay_i_7718642.jpg",
       "telop": [
         "2021 — 8–1",
         "Mahanoy v. B.L., 594 U.S. 180"
       ],
       "priority": "A",
       "images": [
-        "mahanoy/pixabay_i_728344.jpg",
-        "mahanoy/pexels_i_9654894.jpg",
-        "mahanoy/pexels_i_10127242.jpg"
+        "mahanoy/pixabay_i_7718642.jpg",
+        "mahanoy/pexels_i_6958629.jpg",
+        "mahanoy/pexels_i_6255934.jpg"
       ]
     },
     {
@@ -307,15 +315,16 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 16.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_5458722.jpg",
+      "src": "mahanoy/SPN-0016.png",
       "telop": [
         "Disruption: a few minutes of class chatter"
       ],
       "priority": "A",
       "images": [
-        "mahanoy/pixabay_i_5458722.jpg",
-        "mahanoy/pixabay_i_3354784.jpg",
-        "mahanoy/pexels_i_694424.jpg"
+        "mahanoy/SPN-0016.png",
+        "mahanoy/SPN-0016_02.png",
+        "mahanoy/SPN-0016_03.png",
+        "mahanoy/SPN-0016_04.png"
       ]
     },
     {
@@ -324,17 +333,19 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 29.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_7821755.jpg",
+      "src": "mahanoy/SPN-0017.png",
       "telop": [
         "Still reachable: bullying · threats · cheating"
       ],
       "priority": "A",
       "images": [
-        "mahanoy/pexels_i_7821755.jpg",
-        "mahanoy/pixabay_i_1869510.jpg",
-        "mahanoy/pixabay_i_1851218.jpg",
-        "mahanoy/pexels_i_13872497.jpg",
-        "mahanoy/pexels_i_34612562.jpg"
+        "mahanoy/SPN-0017.png",
+        "mahanoy/SPN-0017_02.png",
+        "mahanoy/SPN-0017_03.png",
+        "mahanoy/SPN-0017_04.png",
+        "mahanoy/SPN-0017_05.png",
+        "mahanoy/SPN-0017_06.png",
+        "mahanoy/SPN-0017_07.png"
       ]
     },
     {
@@ -365,14 +376,15 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 20.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_7335258.jpg",
+      "src": "mahanoy/SPN-0019.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "mahanoy/pixabay_i_7335258.jpg",
-        "mahanoy/pixabay_i_3387324.jpg",
-        "mahanoy/pixabay_i_824419.jpg",
-        "mahanoy/pexels_i_29659894.jpg"
+        "mahanoy/SPN-0019.png",
+        "mahanoy/SPN-0019_02.png",
+        "mahanoy/SPN-0019_03.png",
+        "mahanoy/SPN-0019_04.png",
+        "mahanoy/SPN-0019_05.png"
       ]
     },
     {
@@ -381,14 +393,15 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 20.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_8419261.jpg",
+      "src": "mahanoy/SPN-0020.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_8419261.jpg",
-        "mahanoy/pixabay_i_993886.jpg",
-        "mahanoy/pixabay_i_7718642.jpg",
-        "mahanoy/pexels_i_6958629.jpg"
+        "mahanoy/SPN-0020.png",
+        "mahanoy/SPN-0020_02.png",
+        "mahanoy/SPN-0020_03.png",
+        "mahanoy/SPN-0020_04.png",
+        "mahanoy/SPN-0020_05.png"
       ]
     },
     {
@@ -419,14 +432,15 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 19.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_6255934.jpg",
+      "src": "mahanoy/SPN-0022.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_6255934.jpg",
-        "mahanoy/pixabay_i_1822438.jpg",
-        "mahanoy/pixabay_i_1687949.jpg",
-        "mahanoy/pexels_i_16229745.jpg"
+        "mahanoy/SPN-0022.png",
+        "mahanoy/SPN-0022_02.png",
+        "mahanoy/SPN-0022_03.png",
+        "mahanoy/SPN-0022_04.png",
+        "mahanoy/SPN-0022_05.png"
       ]
     },
     {
@@ -435,16 +449,18 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 32.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_7634159.jpg",
+      "src": "mahanoy/SPN-0023.png",
       "telop": [],
       "priority": "A",
       "images": [
-        "mahanoy/pexels_i_7634159.jpg",
-        "mahanoy/pixabay_i_763731.jpg",
-        "mahanoy/pixabay_i_3113279.jpg",
-        "mahanoy/pexels_i_15452110.jpg",
-        "mahanoy/pexels_i_15452106.jpg",
-        "mahanoy/pixabay_i_6367607.jpg"
+        "mahanoy/SPN-0023.png",
+        "mahanoy/SPN-0023_02.png",
+        "mahanoy/SPN-0023_03.png",
+        "mahanoy/SPN-0023_04.png",
+        "mahanoy/SPN-0023_05.png",
+        "mahanoy/SPN-0023_06.png",
+        "mahanoy/SPN-0023_07.png",
+        "mahanoy/SPN-0023_08.png"
       ]
     },
     {
@@ -475,13 +491,13 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 1.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pixabay_i_4257401.jpg",
+      "src": "mahanoy/SPN-0025.png",
       "telop": [
         "Subscribe"
       ],
       "priority": "C",
       "images": [
-        "mahanoy/pixabay_i_4257401.jpg"
+        "mahanoy/SPN-0025.png"
       ]
     },
     {
@@ -490,16 +506,16 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 21.6,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "mahanoy/pexels_i_8456146.jpg",
+      "src": "mahanoy/pixabay_i_1822438.jpg",
       "telop": [
         "1965: armbands to mourn the war dead"
       ],
       "priority": "C",
       "images": [
-        "mahanoy/pexels_i_8456146.jpg",
-        "mahanoy/pexels_i_32292156.jpg",
-        "mahanoy/pixabay_i_94959.jpg",
-        "mahanoy/pixabay_i_728344.jpg"
+        "mahanoy/pixabay_i_1822438.jpg",
+        "mahanoy/pixabay_i_1687949.jpg",
+        "mahanoy/pexels_i_16229745.jpg",
+        "mahanoy/pexels_i_7634159.jpg"
       ]
     },
     {
@@ -508,16 +524,17 @@ export const MAHANOY_ROUGHCUT: RoughCutData = {
       "seconds": 22.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "mahanoy/pexels_i_9654894.jpg",
+      "src": "mahanoy/SPN-0027.png",
       "telop": [
         "\"nurseries of democracy\" — Breyer"
       ],
       "priority": "A",
       "images": [
-        "mahanoy/pexels_i_9654894.jpg",
-        "mahanoy/pexels_i_10127242.jpg",
-        "mahanoy/pixabay_i_5458722.jpg",
-        "mahanoy/pixabay_i_3354784.jpg"
+        "mahanoy/SPN-0027.png",
+        "mahanoy/SPN-0027_02.png",
+        "mahanoy/SPN-0027_03.png",
+        "mahanoy/SPN-0027_04.png",
+        "mahanoy/SPN-0027_05.png"
       ]
     },
     {
