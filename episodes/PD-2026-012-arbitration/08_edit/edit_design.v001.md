@@ -129,3 +129,97 @@ SPN-0001(「I agree」を押す指＋スクロールする細字) / SPN-0002(arb
 
 > **加飾レイヤ（VIDEO_RULES §4/§12）＝DL済みファクトリ素材を活かす**: `assets/asset_manifest.v001.json`（商用OK・DL済み）から**トーンの合うものだけ**を `scripts/select_factory_assets.py` で選び `remotion/public/arbitration/factory/` へコピー → `ArbitrationPremium` に **背景プレート(下地)＋light/particle/vfxオーバーレイ(screen/add)＋texture(overlay)** の3層で重ね、奥行きと光で美しくダイナミックに。**意味あるアニメはコード演出が主役・factoryは加飾**（過剰にしない・合わない素材は使わない・licenseはallowedのみ）。映画的カメラ＝`MovingStage`/`CameraRig` で全カットに寄り引き/パララックス＋イージング。
 > 注意：`CarpenterPremium` 内の `ReconLabel`（"symbolic reconstruction"）は AI画像/図解スパンにのみ付け、実写stockスパンには付けない（実写を「象徴的再現」と誤表示しない＝invariant 11）。
+> **ファクトリ加飾の具体割り当ては §7 を参照**（§6の「加飾レイヤ」段落を SPN 単位まで具体化したもの）。
+
+---
+
+## 7. ファクトリ素材の本格活用（テーマ別 b-roll／背景／オーバーレイ）
+
+DL済みファクトリ棚（`assets/asset_manifest.v001.json`・商用OK・全件 Pexels/Pixabay／`episodes/_planning/FACTORY_INVENTORY.md` 参照）を **ふんだんに**使い、奥行き・光・質感で「美しくダイナミック」に仕上げる（VIDEO_RULES §4／§12）。**ここで使う theme/subtype は FACTORY_INVENTORY.md に実在する名前だけ**（架空名禁止）。本話の題材＝契約・規約／司法（連邦仲裁法・最高裁）／企業／被害額の累積／象徴（鎖・空席・時計）。
+
+### 7.1 三層構成（役割分担）
+1. **第1層＝意味グラフィック（コード演出が主役）**：年表・5–4票・出典確定・天秤／印章・矢印など §2／§6 のbespoke演出。**情報の中心はここ**。ファクトリで上書きしない。
+2. **第2層＝AI画像（ヒーロー／象徴）**：`remotion/public/arbitration/SPN-XXXX*.png`。各スパンの主たる被写体・象徴イメージ。
+3. **第3層＝ファクトリ（加飾）**：
+   - **establishingショット／b-roll／カットアウェイ**＝`backgrounds` のテーマ別 video/image（転換・“間”・実景）。
+   - **背景プレート**＝`backgrounds`／`loops` を**薄く**下地に（被写体くっきり分離・ベタ塗り回避）。
+   - **light／particle／vfx オーバーレイ**＝screen/add 合成でreveal・空気感。
+   - **texture 下地**＝書類／カード／年表／印章の質感に overlay。
+
+> 原則：**1カットにつき加飾は1〜2層**まで（ナレ・字幕・意味グラフィックを邪魔しない）。ファクトリは**一般ストック＝illustrative/symbolic**。実在の「事件の実物・実在人物」として提示しない・実在人物の肖像なし。トーン＝黒／紺／青／金に合うものだけ。`license=allowed` のみ・出典/sha256記録。
+
+### 7.2 SPN → ファクトリ割り当て表
+列＝SPN／シーン（章・要旨）／使うファクトリ（theme・subtype＝実在名）／層（b-roll=確立/カットアウェイ・bg=背景プレート・overlay=光/粒子/vfx・texture=質感下地）／kind（image/video）。**意味グラフィックとAI画像が主役、下記は加飾**。
+
+| SPN | シーン（章・要旨） | ファクトリ theme・subtype（実在名） | 層 | kind |
+|---|---|---|---|---|
+| 0001 | hook「I agree」を押す指＋細字スクロール | `surveillance_tech: smartphone_notification_glow` / `light_assets: tv_screen_glow_on_face` / `texture_assets: film_grain_texture` | b-roll＋overlay＋texture | video / video / image |
+| 0002 | opening 契約書面に2語を確定 | `documents_paper: contract_paperwork_signing` / `texture_assets: aged_document_texture` / `particle_assets: dust_motes_sunlight` | bg＋texture＋overlay | video / image / video |
+| 0003 | act1「FREE」携帯＋"+$30 tax"打刻 | `documents_paper: documents_on_desk` / `texture_assets: old_paper` | bg＋texture | image / image |
+| 0004 | act1 $30が群衆ぶんに増殖→巨額 | `finance_money: money_cash_counting` / `finance_money: stack_of_hundred_dollar_bills` | b-roll＋カットアウェイ | video / image |
+| 0005 | act1 散らばる点が1束に集まる（集団訴訟） | `atmosphere_symbolic: silhouette_crowd_at_protest`（注：投票/民主テーマ起源、群衆の象徴として）／代替 `documents_paper: case_files_stack_desk` / `particle_assets: bokeh_particles_dark` | b-roll＋overlay | video / image / video |
+| 0006 | act1 Discover Bank 州法＋"unenforceable"印 | `legal_court: law_library_books` / `documents_paper: wax_seal_on_document` / `texture_assets: parchment_texture` | bg＋カットアウェイ＋texture | image / image / image |
+| 0007 | act1 連邦法へ橋渡し（1925の予感） | `legal_court: us_constitution_document` / `texture_assets: aged_document_texture` | bg＋texture | image / image |
+| 0008 | act2「2つのこと」導入（短尺） | `urban_night: office_interior_dark` / `particle_assets: floating_dust_in_light_beam` | bg＋overlay | video / video |
+| 0009 | act2 年表→1925→FAA点灯（図解主役） | `legal_court: law_books_spines_macro`（背景薄く）／ `texture_assets: blueprint_paper`（年表下地） | bg＋texture | image / image |
+| 0010 | act2 多数の人型が1人ずつ切り離される | `atmosphere_symbolic: single_chair_empty_room` / `particle_assets: dust_motes_sunlight` | カットアウェイ＋overlay | image / video |
+| 0011 | act2 critics「裁判所の扉が閉じる」 | `legal_court: courthouse_steps` / `legal_court: courtroom_interior` / `vfx_overlays: fog_rolling`（薄く陰影） | b-roll＋overlay | video / video / video |
+| 0012 | act2 defenders「速い・安い・合意済み」（0011と左右対比） | `urban_night: handshake_business` / `urban_night: boardroom_table_dark` | b-roll＋bg | video / video |
+| 0023 | act2 4アイコン点灯「使うだけで同意」 | `surveillance_tech: smartphone_in_dark` / `documents_paper: contract_paperwork_signing` | カットアウェイ＋bg | video / video |
+| 0013 | **act3 山場①** 年表→2011→5–4→出典563 U.S.333（図解主役） | `legal_court: supreme_court_building` / `legal_court: balance_scale_brass` / `light_assets: god_rays`（GOLD・ため→開放）／ `vfx_overlays: light_streaks_motion` | b-roll＋カットアウェイ＋overlay×2 | video / image / video / video |
+| 0014 | act3 Scalia多数意見→州法に取り消し線 | `legal_court: judge_gavel_wooden` / `texture_assets: dark_wood` | カットアウェイ＋texture | image / image |
+| 0015 | act3 Breyer反対意見「唯一の現実的救済か？」 | `atmosphere_symbolic: clock_ticking_macro` / `particle_assets: bokeh_particles_dark` | カットアウェイ＋overlay | video / video |
+| 0016 | **act3 山場②** 年表→2018→phone→job矢印（図解主役） | `legal_court: federal_building_columns_night` / `urban_night: empty_office_cubicles`（job側） / `light_assets: light_leak_overlay` | b-roll＋bg＋overlay | image / video / video |
+| 0024 | act3 Ginsburg反対意見＝法廷から読み上げ | `legal_court: courtroom_empty_wide` / `legal_court: lady_justice_statue` / `light_assets: warm_window_light_rays` | b-roll＋カットアウェイ＋overlay | video / image / video |
+| 0017 | act4 影響の総括（phone/bank/job が日常に） | `urban_night: city_skyline_dusk` / `finance_money: bank_building_columns`（=legal_court内 bank_building_columns） | b-roll | video / image |
+| 0018 | act4 debate(天秤) vs mechanism(印章) 対置 | `legal_court: antique_brass_scales`（左・揺れ）／ `documents_paper: wax_seal_on_document`（右・固定） | カットアウェイ×2 | image / image |
+| 0025 | act4「できることは少ない／議論は続く」 | `atmosphere_symbolic: empty_road_sunset` / `particle_assets: rain_particles_backlit` | b-roll＋overlay | video / video |
+| 0019 | **act4 決め所** ボタンを押す手へ静かに | `atmosphere_symbolic: padlock_and_chain` / `atmosphere_symbolic: chains_and_padlock_rusty` / `light_assets: soft_golden_light` | カットアウェイ＋overlay | image / image / video |
+| 0020 | ending 結末「$30が最も静かで広い線を引いた」 | `documents_paper: shredded_documents_pile` / `texture_assets: grunge_texture_dark` | b-roll＋texture | video / image |
+| 0021 | ending シリーズ統合 search→track→take→speech＋"by contract" | `surveillance_tech: world_map_dark_glowing` / `loops: abstract_network_nodes_loop` | bg＋overlay | image / video |
+| 0022 | ending 次回予告（DNA） | `forensics_dna: dna_double_helix_render` / `forensics_dna: fingerprint_scan_blue` / `light_assets: bokeh_lights` | b-roll＋カットアウェイ＋overlay | video / image / video |
+
+> 表記注：`bank_building_columns` は FACTORY_INVENTORY の「法廷/司法」インデックスに列挙（金融カットアウェイにも流用可）。`silhouette_crowd_at_protest` は「投票/民主主義」テーマの実在subtypeで、群衆＝多数の小被害の象徴に**illustrativeに**流用（特定の抗議運動として提示しない）。テーマに合わない場合は代替（`case_files_stack_desk`）を使用。
+
+### 7.3 取り込みコマンド例（→ `remotion/public/arbitration/factory/`）
+テーマ単位でステージングしてから選別する。`license=allowed` のみ・出典/sha256を `05_stock/stock_ledger.v001.json` に記録。
+
+```bash
+# テーマ一覧と点数を確認
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --themes
+
+# 書類/契約（§7.2の bg/カットアウェイ/印章）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme documents_paper --kind video
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme documents_paper --kind image
+
+# 司法（establishing・山場の最高裁/天秤/法廷）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme legal_court --kind video
+
+# 企業（defenders・取締役会・握手）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme urban_night --kind video
+
+# 被害額の累積（現金カウント／百ドル札）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme finance_money --kind video
+
+# 象徴（鎖・空席・時計）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme atmosphere_symbolic --kind image
+
+# サブタイプ直指定（必要な確立ショットをピンポイント）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --subtype supreme_court_building
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --subtype balance_scale_brass
+
+# 加飾レイヤ（light / vfx / particle / texture）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --subtype god_rays
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --subtype light_streaks_motion
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --subtype dust_motes_sunlight
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --subtype aged_document_texture
+```
+抽出物は `remotion/public/arbitration/factory/<theme>/...` へコピーし、`ArbitrationPremium` の各 `Scene` で背景/オーバーレイ/質感として参照する。
+
+### 7.4 合成指針（screen/add・overlay・ため→開放）
+- **背景プレート**＝`backgrounds`／`loops` を不透明度を落として下地に。被写体（AI画像・図解）とくっきり分離（ベタ塗り禁止）。動く下地は `loops`（0021）。
+- **light／vfx／particle**＝**screen または add** で重ねる（黒地が消え光だけ乗る）。reveal・転換・空気感に。
+- **texture**＝**overlay** で書類/カード/年表/印章の質感に（0002/0006/0007/0009/0014/0020 等）。
+- **山場の演出（SPN-0013＝2011・5–4・出典確定）**：`god_rays`（GOLD）＋`light_streaks_motion` で**ため→開放**（票が並ぶ手前で光を溜め、出典563 U.S.333確定で一気に開放・SFXと同期）。SPN-0016（2018・job拡張）も `light_leak_overlay` で同型の小さなアクセント。
+- **過剰回避**：1カット1〜2層まで。意味グラフィック・字幕・テロップが主。実写stockスパン（0001/0004/0008/0011/0012/0017/0020/0023）には `ReconLabel`（"symbolic reconstruction"）を**付けない**（invariant 11）。
+- **中立**：critics（0011=扉が閉じる・暗め）と defenders（0012=握手/会議・明るめ）を**同じ尺感・同程度のトーン**で。一方を過度に荘厳/陰鬱にしない。

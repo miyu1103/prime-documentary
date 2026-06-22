@@ -247,3 +247,88 @@
 | `Vote`/`MapGrid`/`TwoColumn`/`Doors`/`BigNumber`/`CourtColumns` | `remotion/src/compositions/CarpenterPremium.tsx`（**横1080座標ハードコード・Vote=5–4固定**）→ 縦版を§4で新規実装 |
 
 > 雛形：長尺 Premium は `CarpenterPremium.tsx` / `RileyPremium.tsx` / `MadoffPremium.tsx` / `KeloPremium.tsx`。縦ショートも同思想で、ベースは仕様Aの `Short.tsx`、山場だけ§4の縦コンポを差す。
+
+---
+
+## ファクトリ素材の本格活用（縦ショート・全15本）
+
+DL済みファクトリ棚（`assets/asset_manifest.v001.json`・全件 Pexels/Pixabay＝**商用OK**、実体 `H:\pd-media\assets\factory\<category>\<theme>\`）を、縦ショート15本に**ふんだんに**活かす。**意味のあるアニメ（票/天秤/地図/年表/図解/数字/崩落）は §1〜§4 のコード演出が主役**。ファクトリ素材は**確立ショット・b-roll・背景プレート・オーバーレイ・質感の加飾**として重ね、AI画像（ヒーロー/象徴）とコード演出の三層構成を厚くする。**使うのは `FACTORY_INVENTORY.md` に実在するtheme/subtypeのみ**（本セクションのsubtypeはすべて実在名）。
+
+### A. 縦での使い方（セーフエリア厳守）
+
+縦9:16でファクトリ素材を扱う際の層・合成・配置ルール（仕様A §4／本書 §2 のセーフエリアに完全準拠）。
+
+| 層 | 使う素材 | kind | 縦での出し方・合成 | セーフエリアの扱い |
+|---|---|---|---|---|
+| **背景プレート**（最背面） | backgrounds（image/video）・loops（video） | image/video | コード演出/AI被写体の**背後**に薄く（不透明度 0.25〜0.5）。縦トリミング前提＝**横長素材は中央を9:16でクロップ**し被写体と分離。**センター被写体は別レイヤ**（背景はあくまで奥行き） | フルフレーム可。ただし**上ゾーン(y180–560)・下ゾーン(y1280–1560)に文字/重要モチーフが来る素材は避ける**（無地寄りの背景を選ぶ） |
+| **オーバーレイ**（最前〜中間） | light_assets・vfx_overlays・particle_assets（image/video） | image/video | **screen / add 合成**でreveal・空気感。縦でもフルフレームで重ねてよい（光・粒子は位置依存が弱い） | フルフレーム可。ただし**輝度の高い塊が下ゾーン字幕に被らない**よう配置/不透明度調整。1カット light＋particle など**1〜2レイヤまで** |
+| **質感（下地）** | texture_assets（image のみ・videoなし） | image | 書類/カード/年表/地図SVGの**下地**に overlay（不透明度 0.15〜0.35）。`SceneArt motifHint="document/timeline"` や `CitationTopLeft` の紙地として | 中央ゾーンのコード演出に追従。上下ゾーンを侵さない |
+| **抽象動背景** | loops（video・11種） | video | データ/章扉/抽象ビートの**動く背景**（`SceneArt motifHint="map"` のグリッド背後など） | フルフレーム可・上下ゾーン回避 |
+
+- **上ゾーン(テロップ)/下ゾーン(字幕)を絶対に侵さない**：ファクトリ素材は中央ゾーン(y560–1280)を主舞台にし、フルフレーム背景/オーバーレイでも**輝度・モチーフが上下ゾーンの文字可読性を落とさない**ものだけ採用。
+- **過剰回避**：1カットあたり「背景プレート1＋オーバーレイ1〜2」を上限の目安。ナレ・字幕・意味グラフィックを邪魔しない。
+- **license=allowed のみ／出典・sha256 を記録**（VIDEO_RULES §4/§5）。
+
+### B. #1〜#15 ファクトリ割り当て表
+
+各ショートの「論点／山場」に即して、確立(estab)・b-roll・背景プレート(bg)・オーバーレイ(ovl)・質感(tex)用のファクトリ theme・subtype を割り当てる。**ビート時間/テロップ/AI画像/コード演出は §3・各 `SHORTS_EP*.md` のまま不変**。下表は**その上に重ねる加飾**の指定。
+
+> 法廷汎用（各話のリビール/権威表現）＝`legal_court`：`courtroom_interior` / `courtroom_empty_wide` / `judge_gavel_wooden` / `courtroom_gavel_block_macro` / `balance_scale_brass` / `antique_brass_scales` / `lady_justice_statue` / `supreme_court_building` / `law_library_books`。評決(`VoteVertical`)や `CitationTopLeft` の背後プレートに薄く使う。
+
+| ショート / 論点 | 使う factory theme・subtype（実在） | 層 | kind |
+|---|---|---|---|
+| **#1 Miranda**／取調室・警告 | `crime_police`: police_interrogation_room_empty, one_way_mirror_room, police_station_at_night ／ `atmosphere_symbolic`: single_chair_empty_room, clock_ticking_macro ／ `legal_court`: courtroom_empty_wide（オチ） | estab/bg/b-roll | video+image |
+| └ ovl/tex | `light`: tv_screen_glow_on_face, flashlight_beam_fog ／ `particle`: dust_motes_sunlight ／ `texture`: aged_document_texture（自白書の下地） | ovl/tex | video+image |
+| **#2 Gideon**／独房・嘆願・9–0 | `crime_police`: jail_cell_bars, prison_corridor ／ `documents_paper`: quill_and_ink_pot, stacked_legal_documents ／ `legal_court`: courtroom_empty_wide, law_library_books, jury_box_empty | estab/bg/b-roll | video+image |
+| └ ovl/tex | `light`: warm_window_light_rays（独房窓光）, god_rays ／ `texture`: old_paper, parchment_texture（嘆願書） | ovl/tex | video+image |
+| **#3 Mapp**／違法捜索・排除・天秤 | `property_home`: front_door_house, suburban_house_exterior_night ／ `documents_paper`: magnifying_glass_on_document, case_files_stack_desk ／ `legal_court`: balance_scale_brass, antique_brass_scales（オチ天秤） | estab/bg/b-roll | video+image |
+| └ ovl/tex | `light`: flashlight_beam_fog（夜の押し入り）／ `vfx`: fog_rolling ／ `texture`: aged_document_texture（空白令状） | ovl/tex | video+image |
+| **#4 FTX**／取引所・抜け穴・金庫（本人非描画） | `finance_money`: stock_market_screen, trading_floor_screens, physical_bitcoin_coin, bank_vault_door, open_safe_empty（空金庫リビール）, money_counting_machine ／ `urban_night`: city_skyline_dusk | estab/bg/b-roll | video+image |
+| └ ovl/tex | `surveillance_tech`: binary_code_screen_green, circuit_data_flow（コードの抜け穴背景）／ `light`: neon_glow_abstract ／ `loops`: data_stream_loop | ovl/bg | video |
+| **#5 Madoff**／安定曲線・ポンジ・崩壊150年（本人非描画） | `finance_money`: stock_chart_rising_green（出来すぎ曲線）, stock_ticker_board, wall_street_sign, stock_chart_crashing_red（崩壊と同期） ／ `legal_court`: federal_building_columns_night（権威） | estab/bg/b-roll | video+image |
+| └ ovl/tex | `loops`: looping_gradient_navy ／ `light`: bokeh_lights ／ `vfx`: smoke_on_black（崩落の煙・`CollapseViz`と併用） | ovl/bg | video |
+| **#6 Terry**／夜路上の制止・stop&frisk | `crime_police`: police_car_lights_night, police_badge_close_up ／ `urban_night`: rain_on_city_street_neon, city_traffic_night_long_exposure ／ `atmosphere_symbolic`: long_shadow_of_a_person, lone_person_silhouette_walking | estab/bg/b-roll | video+image |
+| └ ovl/tex | `light`: **police_strobe_red_and_blue**, headlights_in_rain ／ `particle`: rain_particles_backlit | ovl | video |
+| **#7 Riley**／証拠スマホ・令状・9–0 | `surveillance_tech`: smartphone_in_dark, smartphone_notification_glow ／ `crime_police`: evidence_bag, evidence_locker_shelves ／ `documents_paper`: stacked_legal_documents（令状） | estab/bg/b-roll | image+video |
+| └ ovl/tex | `light`: tv_screen_glow_on_face（スマホ光）, neon_glow_abstract ／ `particle`: bokeh_particles_dark ／ `loops`: looping_particles_blue | ovl/bg | video |
+| **#8 Carpenter**／基地局・位置追跡・5–4 | `surveillance_tech`: cell_tower_silhouette, cell_tower_at_sunset, mobile_phone_map_location, world_map_dark_glowing, smartphone_in_dark ／ `urban_night`: drone_city_aerial_night | estab/bg/b-roll | video+image |
+| └ ovl/tex | `loops`: abstract_network_nodes_loop, looping_light_rays（位置pingの動背景）／ `particle`: static_noise_particles | ovl/bg | video |
+| **#9 Timbs**／没収SUV・過大罰金・9–0天秤 | `atmosphere_symbolic`: old_keys_on_table（赤タグの鍵）, padlock_and_chain ／ `documents_paper`: contract_paperwork_signing（保険証書）／ `legal_court`: balance_scale_brass（SUVが小銭を圧倒）, antique_brass_scales | estab/bg/b-roll | image+video |
+| └ ovl/tex | `urban_night`: highway_night_long_exposure（SUV夜景）／ `light`: headlights_in_rain ／ `texture`: aged_document_texture | ovl/tex | video+image |
+| **#10 Kelo**／ピンクの家・収用・5–4・更地 | `property_home`: front_door_house, white_picket_fence, suburban_house_exterior_night, for_sale_sign_yard, broken_house_demolition（解体）, moving_boxes_empty_room（更地/退去）, american_suburb_aerial（更地リビール俯瞰） | estab/bg/b-roll | video+image |
+| └ ovl/tex | `texture`: aged_document_texture（修正5条パーチ）, parchment_texture ／ `light`: golden_hour_flare ／ `vfx`: dust_cloud（解体） | ovl/tex | video+image |
+| **#11 Mahanoy**／校外SNS・境界・8–1（本人非描画） | `school_youth`: school_hallway_empty, empty_playground_at_dusk, graduation_cap_toss ／ `surveillance_tech`: smartphone_notification_glow, smartphone_in_dark（消えるアイコン） | estab/bg/b-roll | image+video |
+| └ ovl/tex | `light`: neon_glow_abstract（消滅ピクセル）／ `particle`: static_noise_particles, glitter_particles ／ `vfx`: fog_rolling（ぼやけた境界線） | ovl | video |
+| **#12 仲裁**／細字・集団訴訟不可・5–4（中立） | `documents_paper`: contract_paperwork_signing, stacked_legal_documents, magnifying_glass_on_document ／ `atmosphere_symbolic`: padlock_and_chain, chains_and_padlock_rusty（束ねられない鎖）／ `legal_court`: courthouse_steps（閉じる法廷） | estab/bg/b-roll | image+video |
+| └ ovl/tex | `texture`: old_paper, aged_document_texture（細字の下地）／ `light`: soft_golden_light ／ `office`: office_interior_dark（孤立する労働者） | ovl/tex | image+video |
+| **#13 King**／頬スワブ→DNA→DB照合・5–4（本人非描画） | `forensics_dna`: dna_double_helix_render, dna_laboratory_blue, fingerprint_scan_blue, blood_sample_vial, microscope_lab ／ `surveillance_tech`: server_room_blue, data_center, world_map_dark_glowing（全国DBグリッド） | estab/bg/b-roll | video+image |
+| └ ovl/tex | `loops`: data_stream_loop, abstract_network_nodes_loop（DB照合）／ `light`: neon_glow_abstract ／ `particle`: bokeh_particles_dark | ovl/bg | video |
+| **#14 Lange**／夜追跡・ガレージ・敷居・9–0 | `crime_police`: police_car_lights_night ／ `property_home`: front_door_house, suburban_house_exterior_night ／ `urban_night`: rain_street_reflection_night, empty_road_sunset ／ `legal_court`: courtroom_empty_wide（オチ） | estab/bg/b-roll | video+image |
+| └ ovl/tex | `light`: **police_strobe_red_and_blue**, headlights_in_rain（追跡）／ `particle`: rain_particles_backlit | ovl | video |
+| **#15 Theranos**／一滴の血・空デバイス・崩落・有罪（R3・本人非描画） | `medical_lab`: test_tubes_rack_lab, blood_vials_in_rack, laboratory_glassware, laboratory_centrifuge, modern_medical_lab ／ `legal_court`: federal_building_columns_night, courtroom_empty_wide（中立リビール）／ `finance_money`: stock_chart_crashing_red（$9B崩落と同期） | estab/bg/b-roll | video+image |
+| └ ovl/tex | `light`: bokeh_lights ／ `vfx`: smoke_on_black, ink_in_water（崩落・`CollapseViz`併用）／ `loops`: looping_gradient_navy ／ `texture`: dark_marble（権威の下地） | ovl/tex | video+image |
+
+> **R3注意（#15）**：`medical_lab`/`legal_court` の素材は**一般ストック＝illustrative/symbolic**にのみ使用。**実在人物を想起させる素材・雑誌風の人物・氏名は不可**。評決リビールは中立アイコン（§3表）。公開前に法務レビュー（MEMORY: EP15 Theranos=R3）。
+
+### C. 取り込み手順（Codex実装）
+
+各ショートで使う theme をファクトリ棚から抽出し、`remotion/public/shorts/shortNN/factory/` へコピーして `Short.tsx` の背景プレート/オーバーレイレイヤから参照する。
+
+```bash
+# テーマ別b-roll動画を抽出（例：#6 Terry の夜警察）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme crime_police --kind video
+# サブタイプ直指定（例：#14 のストロボ光オーバーレイ）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --subtype police_strobe_red_and_blue
+# 抽出後、選んだ点だけ remotion/public/shorts/shortNN/factory/ にコピー（重メディアはH:、publicはGit管理外）
+```
+
+- 背景プレート＝`MovingImage`/`Video` を最背面に薄く（不透明度・縦クロップ）。オーバーレイ＝screen/add の `Video`/`Image` レイヤ。質感＝`SceneArt`/`Citation` 系の紙地に overlay。
+- 取り込んだ点は `05_stock`/stock_ledger 系に1行記録（source=factory_pexels/factory_pixabay, commercial_use=allowed, sha256）。
+
+### D. 合成指針（厳守）
+
+1. **過剰回避**：1カット「背景プレート1＋オーバーレイ1〜2」まで。意味あるアニメ（コード演出）・ナレ・字幕を最優先、ファクトリは加飾で主役にしない。
+2. **縦セーフエリア厳守**：上ゾーン(y180–560 テロップ)／下ゾーン(y1280–1560 字幕)を侵さない。フルフレーム背景/オーバーレイでも文字可読性を落とさないものだけ採用。
+3. **一般ストックは実物提示しない**：その事件の実物・現場・実在人物そのものとして提示しない（illustrative/symbolic）。トーン/配色（黒/紺/青/金）に合うものを選ぶ。
+4. **実在人物の肖像なし**（#4/#5/#11/#13/#15 は特に厳守）。**#15 はR3で公開前法務レビュー**。
+5. **license=allowed のみ**・出典/sha256 記録（VIDEO_RULES §4/§5）。

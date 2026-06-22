@@ -138,4 +138,80 @@ SPN-0001(一滴の血＋$9B→$0グラフ) / 0008(他社の機械で検査) / 00
 3. `npm run studio` で `TheranosPremium` を確認 → §2の各演出が出ているか／4部構成か／**R3表現チェック（§4）**をチェック。
 4. 書き出しは `TheranosPremium`（quality-first CPU/libx264）。**公開前に法務レビュー（§5）を通すまで `publish_approved` に進めない。**
 
-> **加飾レイヤ（VIDEO_RULES §4/§12）＝DL済みファクトリ素材を活かす**: `assets/asset_manifest.v001.json`（商用OK・DL済み）から**トーンの合うものだけ**を `scripts/select_factory_assets.py` で選び `remotion/public/theranos/factory/` へコピー → `TheranosPremium` に **背景プレート(下地)＋light/particle/vfxオーバーレイ(screen/add)＋texture(overlay)** の3層で重ね、奥行きと光で美しくダイナミックに。**意味あるアニメはコード演出が主役・factoryは加飾**（過剰にしない・合わない素材は使わない・licenseはallowedのみ）。**実在人物を想起させる素材は使わない（R3）。** 映画的カメラ＝`MovingStage`/`CameraRig`。
+> **加飾レイヤ（VIDEO_RULES §4/§12）＝DL済みファクトリ素材を活かす**: `assets/asset_manifest.v001.json`（商用OK・DL済み）から**トーンの合うものだけ**を `scripts/select_factory_assets.py` で選び `remotion/public/theranos/factory/` へコピー → `TheranosPremium` に **背景プレート(下地)＋light/particle/vfxオーバーレイ(screen/add)＋texture(overlay)** の3層で重ね、奥行きと光で美しくダイナミックに。**意味あるアニメはコード演出が主役・factoryは加飾**（過剰にしない・合わない素材は使わない・licenseはallowedのみ）。**実在人物を想起させる素材は使わない（R3）。** 映画的カメラ＝`MovingStage`/`CameraRig`。詳細割り当ては **§7** を参照。
+
+---
+
+## 7. ファクトリ素材の本格活用（テーマ別b-roll/背景/オーバーレイ）
+
+DL済みファクトリ棚（`assets/asset_manifest.v001.json`・全件 Pexels/Pixabay＝**商用OK**・`H:\pd-media\assets\factory\`）を、§6の「コード演出が主役」を崩さずに**ふんだんに**活かす。実体は `FACTORY_INVENTORY.md` のテーマ別インデックスに準拠し、**実在サブタイプ名のみ**を指定する（新規名を作らない）。**本話はR3**：実在人物（Holmes / Balwani）を**想起させる素材は使わない**。一般的な研究室・抽象・象徴のみ。実機（Edison）・実ロゴ・雑誌表紙・記者・実写の人物は出さない。一般ストックは**「その事件の実物そのもの」として提示しない**（illustrative/symbolic）。
+
+### 7.1 三層構成（主役＝コード演出 / 象徴＝AI / 加飾＝ファクトリ）
+
+| 層 | 役割 | 主な担い手 | 本話での扱い |
+|---|---|---|---|
+| **① コード演出（主役）** | 意味のあるアニメ＝票/年表/評決ボード/評価額グラフ/境界の等式/定義カード | §6の手組みコンポ（`VerdictBoard`/`ValuationGraph`/`TwoColumn`/`Boundary`/`BigNumber`/`SceneArt`） | **意味は必ずコードで描く。ファクトリで意味を代替しない。** |
+| **② AI画像（象徴）** | ヒーロー/象徴ショット（**人物なし**・無人ラボ・抽象） | `remotion/public/theranos/SPN-XXXX*.png`＋`SceneShell`（多画像Ken Burns） | 実在人物の肖像なし（不変項11）・`symbolic reconstruction` ラベル常時。 |
+| **③ ファクトリ（加飾）** | **確立ショット・b-roll・カットアウェイ・背景プレート・overlay・texture** | `backgrounds`（b-roll/establishing/背景）＋`light/vfx/particle`（screen/add）＋`texture`（overlay）＋`loops`（動く抽象背景） | トーン（黒/紺/青/金）に合うものだけ薄く。1カット1〜2レイヤ。**意味は持たせない。** |
+
+### 7.2 SPN→ファクトリ割り当て表（theme・subtype は実在名のみ）
+
+凡例 — **層**: BG=背景/b-roll、OVL=オーバーレイ（light/vfx/particle, screen/add）、TEX=質感（overlay）、LOOP=動く抽象背景。**kind**: video / image。subtypeは複数候補から**トーン適合の1点**を選ぶ。
+
+| SPN | 章 | theme | subtype（実在・候補） | 層 | kind |
+|---|---|---|---|---|---|
+| 0001 | hook | finance_money / atmosphere_symbolic | stock_chart_crashing_red, shattered_mirror | BG下地＋OVL | video |
+| 0002 | opening | atmosphere_symbolic / loops | empty_road_sunset, looping_gradient_navy | BG/LOOP | video |
+| 0003 | act1 | medical_lab | modern_medical_lab, laboratory_glassware | BG（establishing・無人ラボ） | video |
+| 0023 | act1 | documents_paper / texture | documents_on_desk, aged_document_texture | BG＋TEX（肩書きカード下地） | image |
+| 0004 | act1 | medical_lab | test_tubes_rack_lab, blood_vials_in_rack, laboratory_centrifuge | BG（b-roll・指先一滴の文脈） | video |
+| 0005 | act1 | finance_money | stock_market_screen, stock_chart_rising_green | BG（評価額上昇の背後） | video |
+| 0006 | act1 | atmosphere_symbolic | single_chair_empty_room, clock_ticking_macro | BG（“間”・静けさ） | video |
+| 0007 | act2 | documents_paper | newspaper_macro, newspaper_printing_press | BG（調査報道の象徴・紙面のみ） | video |
+| 0008 | act2 | medical_lab | laboratory_centrifuge, microscope_lab | BG（市販機への差替の文脈） | video |
+| 0009 | act2 | medical_lab | microscope_lab, test_tubes_rack_lab | BG（誤数値→誤判断の連鎖） | video |
+| 0010 | act2 | finance_money / documents_paper | stock_chart_crashing_red, documents_on_desk | BG（解散・$9B→0の背後） | video |
+| 0011 | act2 | atmosphere_symbolic | shattered_mirror, clock_ticking_macro | OVL/BG（Failure vs Fraud の橋渡し） | video |
+| 0012 | act3 | legal_court | balance_scale_brass, judge_gavel | BG（天秤＝詐欺の法定義） | video |
+| 0024 | act3 | legal_court | courtroom_interior | BG（検察 vs 弁護の二分） | video |
+| **0013** | **act3** | **legal_court ＋ light/vfx** | **courtroom_interior, judge_gavel ＋ god_rays + smoke_on_black** | **BG＋OVL（山場・評決ボードに光＋vfxで“ため→開放”）** | **video** |
+| 0014 | act3 | legal_court | balance_scale_brass | BG（無罪/評決不成立の続き・別色） | video |
+| 0015 | act3 | legal_court / documents_paper | courtroom_interior, documents_on_desk | BG（無罪≠潔白／Balwani全12件） | video |
+| 0016 | act3 | atmosphere_symbolic / legal_court | clock_ticking_macro, balance_scale_brass | BG＋OVL（量刑＝時間が積む象徴） | video |
+| 0017 | act4 | atmosphere_symbolic | empty_road_sunset | BG（“Fake it…”標語の一般化） | video |
+| 0018 | act4 | atmosphere_symbolic | shattered_mirror | OVL（境界の等式の背後・薄く） | video |
+| 0019 | act4 | medical_lab / finance_money | blood_vials_in_rack, money_cash_counting | BG（検査の損失 vs 金の損失の対比） | video |
+| 0020 | ending | urban_night / atmosphere_symbolic | abandoned_factory_interior, single_chair_empty_room | BG（シリーズ総括の引き） | video |
+| 0021 | ending | atmosphere_symbolic / loops | clock_ticking_macro, atmospheric_loop | BG/LOOP（線を引き直し続ける） | video |
+| 0022 | ending | atmosphere_symbolic | single_chair_empty_room | BG（CTA下地・控えめ） | image |
+
+> 全編共通の**空気感レイヤ（薄く）**: `particle`＝dust_motes_sunlight / floating_dust_in_light_beam（screen/add）、`texture`＝aged_document_texture / film_grain_texture（書類・カードの下地, overlay）、`light`＝soft_golden_light / bokeh_lights（reveal・山場のアクセント）。`loops`＝looping_gradient_navy / atmospheric_loop は章扉・抽象場面の動く背景。
+
+### 7.3 取り込み例（select_factory_assets.py → factory/ へコピー）
+
+```sh
+# テーマ別b-roll動画（医療/検査）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme medical_lab --kind video
+# 金融（評価額崩落）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme finance_money --kind video
+# 書類/暴露
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme documents_paper --kind video
+# 司法（山場SPN-0013）
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme legal_court --kind video
+# 崩落/空虚の象徴
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --theme atmosphere_symbolic --kind video
+# サブタイプ直指定の例
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --subtype stock_chart_crashing_red
+./.venv/Scripts/python.exe scripts/select_factory_assets.py --subtype abandoned_factory_interior
+```
+
+抽出後 → `remotion/public/theranos/factory/` へコピーして `TheranosPremium` から参照。**`license` が allowed のものだけ**・出典/作者/sha256を `05_stock/stock_ledger.v001.json` に記録（VIDEO_RULES §5）。
+
+### 7.4 合成指針（中立・R3・過剰回避）
+
+1. **背景プレートは薄く**: backgrounds/loops を下地に置き、被写体（コード演出・テロップ・字幕）と**くっきり分離**（ベタ塗り回避）。意味グラフィックを邪魔しない。
+2. **オーバーレイは screen/add**: light/vfx/particle を reveal・空気感に。**山場 SPN-0013（評決ボード）は `god_rays`＋`smoke_on_black` で“ため→開放”**、`LightSweep` 色＝GOLD と同期（§6）。1カット1〜2レイヤを目安・盛りすぎない。
+3. **質感は overlay**: texture（aged_document_texture / film_grain_texture / blueprint_paper）を肩書きカード（0023）・書類（0007/0015）・等式（0018）の下地に薄く。
+4. **R3＝実在人物想起素材は不可**: 実機（Edison）・実ロゴ・雑誌表紙・記者の顔・実写の人物・特定の本社/施設を想起させる素材は使わない。一般的な研究室（modern_medical_lab 等）・抽象・象徴のみ。**一般ストックを「その事件の実物」として提示しない**（illustrative/symbolic）。`symbolic reconstruction` ラベルはAI画像に常時。
+5. **評決の区別を侵さない**: 投資家詐欺**4件＝GUILTY（事実として提示可）**／患者関連＝**ACQUITTED（無罪）**／3件＝**NO VERDICT（評決不成立）**。ファクトリの加飾（光・天秤・法廷b-roll）は**どの区別にも有罪のニュアンスを足さない**（0014は別色・GUILTY表記なし）。意図/認識は陪審・裁判所に帰属させ、加飾で断定有罪を演出しない。
+6. **中立**: 「失敗 or 詐欺」に肩入れする加飾（崩落・破壊の過剰演出で詐欺側に寄せる等）をしない。崩落系（stock_chart_crashing_red / shattered_mirror）は記録事実（評価額の下落・解散）に対応する箇所のみ・象徴の範囲で。
