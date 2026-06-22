@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-010-kelo",
   "revision": "v002",
-  "generated_at": "2026-06-21T19:46:04.487499+00:00",
+  "generated_at": "2026-06-22T00:17:48.276669+00:00",
   "status": "PASS",
   "checks": {
     "final_qc_pass": true,
@@ -10,10 +10,12 @@
     "thumbnail_hash_matches_youtube_meta": true,
     "rights_clear": true,
     "privacy_target_private": true,
-    "publish_or_schedule_requested": false,
-    "public_release_gate_closed": true,
+    "publish_or_schedule_requested": true,
+    "public_release_gate_closed": false,
     "script_claims_locked": true,
-    "real_person_likeness_risk": false
+    "real_person_likeness_risk": false,
+    "owner_schedule_approval_present": true,
+    "youtube_schedule_verified": true
   },
   "video_sha256": "sha256:f16bb925df8691c90c96380d0a2f6258c82786a18da12002b31bfb6c84962cc4",
   "thumbnail_sha256": "sha256:5c1b8e6437980b12d6884b8342a896146bde1fcdb796fd0e6678e161a3f79f94",
@@ -28,5 +30,8 @@
       "schedule_public_release"
     ]
   },
-  "planned_public_release_at_jst": "2026-06-25T12:00:00+09:00"
+  "planned_public_release_at_jst": "2026-06-25T12:00:00+09:00",
+  "scheduled_at_local": "2026-06-25T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-25T03:00:00Z",
+  "schedule_result": "episodes/PD-2026-010-kelo/09_package/youtube_schedule_result.v002.json"
 }

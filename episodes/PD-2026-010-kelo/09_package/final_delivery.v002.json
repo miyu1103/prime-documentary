@@ -2,8 +2,8 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-010-kelo",
   "revision": "v002",
-  "generated_at": "2026-06-21T19:46:04.487499+00:00",
-  "status": "ready_for_private_upload",
+  "generated_at": "2026-06-22T00:17:48.276669+00:00",
+  "status": "scheduled",
   "publish_performed": false,
   "schedule_performed": false,
   "upload_target": "youtube_private",
@@ -12,8 +12,12 @@
     "thumbnail": "episodes/PD-2026-010-kelo/09_package/thumbnail.selected.v002.png",
     "thumbnail_sha256": "5c1b8e6437980b12d6884b8342a896146bde1fcdb796fd0e6678e161a3f79f94",
     "synthetic_content_disclosure_required": true,
-    "publish_gate": "closed",
-    "planned_public_release_at_jst": "2026-06-25T12:00:00+09:00"
+    "publish_gate": "owner_approved_scheduled",
+    "planned_public_release_at_jst": "2026-06-25T12:00:00+09:00",
+    "public_schedule_active": true,
+    "scheduled_at_local": "2026-06-25T12:00:00+09:00",
+    "scheduled_at_utc": "2026-06-25T03:00:00Z",
+    "schedule_result": "episodes/PD-2026-010-kelo/09_package/youtube_schedule_result.v002.json"
   },
   "render": {
     "file": "H:\\pd-media\\episodes\\PD-2026-010-kelo\\08_edit\\kelo_premium_v002.mp4",

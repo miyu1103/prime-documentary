@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-010",
   "slug": "kelo",
   "title_working": "The Government Took Their Homes for a Developer — Then the Plan Collapsed",
-  "state": "package_ready",
+  "state": "scheduled",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -24,7 +24,10 @@
     "final_qc": "v002",
     "rights_manifest": "v002",
     "captions_final": "v002",
-    "thumbnail_candidates": "v002"
+    "thumbnail_candidates": "v002",
+    "youtube_schedule_result": "v002",
+    "youtube_status_verify_scheduled": "v002",
+    "approval_publish_schedule": "v002"
   },
   "artifacts": [
     {
@@ -39,7 +42,8 @@
     }
   ],
   "approvals": [
-    "APR-0001"
+    "APR-0001",
+    "APR-0002"
   ],
   "costs": {
     "estimated": {
@@ -67,11 +71,12 @@
     "Heavy media (scenes/visuals/audio/edit) on the external SSD (H:\\pd-media), not in this repo.",
     "YouTube private upload completed for Kelo: video_id r54vcIq5APg. Public publish/schedule not performed; owner approval still required.",
     "Kelo v002 package prepared with corrected captions/05:14 animation and thumbnail v002. Planned public schedule is 2026-06-25T12:00:00+09:00, owner approval still required.",
-    "YouTube private upload completed for Kelo v002: video_id 89SQoRgAD7U. Public publish/schedule not performed; owner approval still required for 2026-06-25T12:00:00+09:00."
+    "YouTube private upload completed for Kelo v002: video_id 89SQoRgAD7U. Public publish/schedule not performed; owner approval still required for 2026-06-25T12:00:00+09:00.",
+    "Kelo v002 scheduled on YouTube: video_id 89SQoRgAD7U for 2026-06-25T12:00:00+09:00. Immediate public publish not performed."
   ],
   "blockers": [],
   "created_at": "2026-06-20T03:00:00+09:00",
-  "updated_at": "2026-06-21T19:55:41.732919+00:00",
+  "updated_at": "2026-06-22T00:17:48.276669+00:00",
   "video_id": "89SQoRgAD7U",
   "video_url": "https://youtu.be/89SQoRgAD7U"
 }

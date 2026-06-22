@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-010-kelo",
   "revision": "v002",
-  "status": "private_uploaded_public_gate_closed",
+  "status": "scheduled",
   "title": "Your Home for a Developer? The Kelo Supreme Court Case",
   "description": "In Kelo v. City of New London, the Supreme Court had to decide whether the government could take private homes for an economic-development plan tied to private redevelopment.\n\nThe homeowners had not been accused of wrongdoing. Their properties were not blighted. The city argued that the plan served the public by creating jobs and tax revenue. The question was whether that counted as \"public use\" under the Fifth Amendment.\n\nThis episode traces the little pink house, the 5-4 decision, the dissent, the bipartisan backlash, and why Kelo still matters whenever public purpose and private property collide.\n\nThis is an educational documentary, not legal advice.\n\nVisual note: this video uses AI-generated symbolic reconstructions, archival-style graphics, and motion design. They are not authentic footage, no real-person likeness is intended, and no judge likeness is depicted.\n\nChapters:\n00:00 Your home for a developer?\n00:25 Opening: Kelo\n00:32 Fort Trumbull\n01:12 The little pink house\n01:51 Jobs, taxes, and a plan\n02:51 The Fifth Amendment question\n03:12 Public use or public purpose\n04:17 Narrow versus broad\n04:57 The 2005 decision\n05:09 The 5-4 line\n06:00 O'Connor's warning\n07:17 Kennedy's concurrence\n08:05 The backlash in the states\n09:20 The plan collapses\n10:00 What Kelo means now\n10:32 Prime Documentary",
   "chapters": [
@@ -105,8 +105,8 @@
   "privacy_status_target": "private",
   "upload_performed": true,
   "publish_performed": false,
-  "schedule_performed": false,
-  "publish_gate": "closed",
+  "schedule_performed": true,
+  "publish_gate": "owner_approved_scheduled",
   "pre_publish_checks": {
     "rights_manifest": "episodes/PD-2026-010-kelo/09_package/rights_manifest.v002.json",
     "final_qc": "episodes/PD-2026-010-kelo/08_edit/renders/final.v002.qc.json",
@@ -114,7 +114,11 @@
     "synthetic_content_disclosure_required": true,
     "publish_approval_required": true,
     "public_schedule_requires_owner_approval": true,
-    "planned_public_release_at_jst": "2026-06-25T12:00:00+09:00"
+    "planned_public_release_at_jst": "2026-06-25T12:00:00+09:00",
+    "owner_schedule_approval": "episodes/PD-2026-010-kelo/approvals/APR-0002.json",
+    "schedule_result": "episodes/PD-2026-010-kelo/09_package/youtube_schedule_result.v002.json",
+    "scheduled_at_local": "2026-06-25T12:00:00+09:00",
+    "scheduled_at_utc": "2026-06-25T03:00:00Z"
   },
   "pinned_comment": "Kelo turned one phrase, \"public use,\" into a national argument over homes, redevelopment, and the limits of eminent domain.",
   "created_at": "2026-06-21T19:46:04.487499+00:00",
@@ -130,6 +134,14 @@
   "status_verify_result": "episodes/PD-2026-010-kelo/09_package/youtube_status_verify.v002.json",
   "processing_status": "processing",
   "processing_status_verified_at": "2026-06-21T19:55:41.732919+00:00",
-  "public_schedule_active": false,
-  "updated_at": "2026-06-21T19:55:41.732919+00:00"
+  "public_schedule_active": true,
+  "updated_at": "2026-06-22T00:17:48.276669+00:00",
+  "scheduled_at_local": "2026-06-25T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-25T03:00:00Z",
+  "publish_at_platform": "2026-06-25T03:00:00Z",
+  "schedule_result": "episodes/PD-2026-010-kelo/09_package/youtube_schedule_result.v002.json",
+  "status_verify_scheduled_result": "episodes/PD-2026-010-kelo/09_package/youtube_status_verify.scheduled.v002.json",
+  "approval_ids": [
+    "APR-0002"
+  ]
 }

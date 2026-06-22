@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-010-kelo",
+  "decision": "approved",
+  "scope": [
+    "use Kelo v002 corrected render",
+    "use Kelo v002 selected thumbnail",
+    "keep YouTube video private until scheduled release",
+    "schedule public release for 2026-06-25T12:00:00+09:00"
+  ],
+  "requested_by": "owner",
+  "approved_by": "owner",
+  "actor": "codex",
+  "decision_source": "Owner request on 2026-06-22 JST: 公開するときは6/25の12:00に予約だよ / 予約で進めて",
+  "exact_revision": "Kelo v002 package with corrected captions, 05:14 animation fix, and thumbnail v002",
+  "exact_video": "H:/pd-media/episodes/PD-2026-010-kelo/08_edit/kelo_premium_v002.mp4",
+  "exact_video_sha256": "sha256:f16bb925df8691c90c96380d0a2f6258c82786a18da12002b31bfb6c84962cc4",
+  "selected_thumbnail": "episodes/PD-2026-010-kelo/09_package/thumbnail.selected.v002.png",
+  "selected_thumbnail_sha256": "sha256:5c1b8e6437980b12d6884b8342a896146bde1fcdb796fd0e6678e161a3f79f94",
+  "youtube_video_id": "89SQoRgAD7U",
+  "youtube_meta": "episodes/PD-2026-010-kelo/09_package/youtube_meta.v002.json",
+  "final_delivery": "episodes/PD-2026-010-kelo/09_package/final_delivery.v002.json",
+  "captions_sidecar": "episodes/PD-2026-010-kelo/08_edit/captions.v002.srt",
+  "scheduled_at_local": "2026-06-25T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-25T03:00:00Z",
+  "constraints": [
+    "Do not change locked script, annotated script, claims, or video content.",
+    "No immediate public publish; use private-first scheduled release.",
+    "Do not delete or modify other episode uploads.",
+    "Synthetic visual reconstruction disclosure remains required and declared.",
+    "Use the allowlisted Prime Documentary YouTube channel only."
+  ],
+  "created_at": "2026-06-22T05:14:00+09:00"
+}
