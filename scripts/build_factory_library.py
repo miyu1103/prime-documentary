@@ -171,11 +171,11 @@ def main() -> int:
             cands = []
             try:
                 if kinds in ("image", "both"):
-                    if pk: cands += fs.pexels_image(q, pk, a.per_image)
-                    if xk: cands += fs.pixabay_image(q, xk, a.per_image)
+                    if pk: cands += fs.pexels_image(q, pk, min(a.per_image, 80))   # Pexels max per_page=80
+                    if xk: cands += fs.pixabay_image(q, xk, min(a.per_image, 200))  # Pixabay max per_page=200
                 if kinds in ("video", "both"):
-                    if pk: cands += fs.pexels_video(q, pk, a.per_video)
-                    if xk: cands += fs.pixabay_video(q, xk, a.per_video)
+                    if pk: cands += fs.pexels_video(q, pk, min(a.per_video, 80))
+                    if xk: cands += fs.pixabay_video(q, xk, min(a.per_video, 200))
             except Exception as e:
                 print(f"  [api err] {cat}/{q}: {e}"); time.sleep(2); continue
             new = [c for c in cands if c["id"] not in seen]
