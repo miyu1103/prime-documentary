@@ -91,7 +91,7 @@ SPN-0001(一滴の血＋$9B→$0グラフ) / 0008(他社の機械で検査) / 00
 ## 6. 実装方針＝Premium級コード演出（★重要・汎用RoughCutでは出ない）
 
 §2 の「意味あるアニメ」は**汎用 `RoughCut` では描画されない**（RoughCutは Ken Burns＋動画＋テロップ＋グレイン止まり）。
-→ EP15は**bespokeな `remotion/src/compositions/TheranosPremium.tsx` を新規作成**し、既存 `CarpenterPremium.tsx`（雛形）／`MadoffPremium.tsx`（金融詐欺・近題材）を参考にする。`RoughCut-theranos` は素材ステージング/下見用に残してよいが、**最終書き出しは `TheranosPremium`**。**factory(stock vfx/light/particle/loops)は使わない**（コード演出で代替）。
+→ EP15は**bespokeな `remotion/src/compositions/TheranosPremium.tsx` を新規作成**し、既存 `CarpenterPremium.tsx`（雛形）／`MadoffPremium.tsx`（金融詐欺・近題材）を参考にする。`RoughCut-theranos` は素材ステージング/下見用に残してよいが、**最終書き出しは `TheranosPremium`**。意味あるアニメはコード演出が主役、**DL済みファクトリ素材は加飾レイヤとして活かす**（§6末尾の加飾レイヤ参照・実在人物想起素材は不可）。
 
 ### 使う既存コード部品（再利用・新規実装を最小化／実在確認済み）
 - `components/Motion.tsx`: `MovingStage`（カメラ＋粒子＋光）, `Particles`, `LightSweep`, `Vignette`, `CameraRig`。
@@ -138,4 +138,4 @@ SPN-0001(一滴の血＋$9B→$0グラフ) / 0008(他社の機械で検査) / 00
 3. `npm run studio` で `TheranosPremium` を確認 → §2の各演出が出ているか／4部構成か／**R3表現チェック（§4）**をチェック。
 4. 書き出しは `TheranosPremium`（quality-first CPU/libx264）。**公開前に法務レビュー（§5）を通すまで `publish_approved` に進めない。**
 
-> 注：共有素材棚（factory: vfx/light/particle/loops）は**このPremium経路では使わない**（コード演出＝`Particles`/`LightSweep` 等で代替。stock素材は将来のギャップ補完・バリエーション用）。
+> **加飾レイヤ（VIDEO_RULES §4/§12）＝DL済みファクトリ素材を活かす**: `assets/asset_manifest.v001.json`（商用OK・DL済み）から**トーンの合うものだけ**を `scripts/select_factory_assets.py` で選び `remotion/public/theranos/factory/` へコピー → `TheranosPremium` に **背景プレート(下地)＋light/particle/vfxオーバーレイ(screen/add)＋texture(overlay)** の3層で重ね、奥行きと光で美しくダイナミックに。**意味あるアニメはコード演出が主役・factoryは加飾**（過剰にしない・合わない素材は使わない・licenseはallowedのみ）。**実在人物を想起させる素材は使わない（R3）。** 映画的カメラ＝`MovingStage`/`CameraRig`。

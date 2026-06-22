@@ -127,5 +127,5 @@ SPN-0001(「I agree」を押す指＋スクロールする細字) / SPN-0002(arb
 3. `npm run studio` で `ArbitrationPremium` を確認 → §2の各演出が出ているか／4部構成か／critics・defenders が公平かをチェック。
 4. 書き出しは `ArbitrationPremium`（quality-first・CPU/libx264）。
 
-> 注：`factory(stock)`（共有DL素材棚 vfx/light/particle/loops）は**このPremium経路では使わない**（コード演出＝`Particles`/`LightSweep` 等で代替。stock素材は将来のギャップ補完・バリエーション用）。
+> **加飾レイヤ（VIDEO_RULES §4/§12）＝DL済みファクトリ素材を活かす**: `assets/asset_manifest.v001.json`（商用OK・DL済み）から**トーンの合うものだけ**を `scripts/select_factory_assets.py` で選び `remotion/public/arbitration/factory/` へコピー → `ArbitrationPremium` に **背景プレート(下地)＋light/particle/vfxオーバーレイ(screen/add)＋texture(overlay)** の3層で重ね、奥行きと光で美しくダイナミックに。**意味あるアニメはコード演出が主役・factoryは加飾**（過剰にしない・合わない素材は使わない・licenseはallowedのみ）。映画的カメラ＝`MovingStage`/`CameraRig` で全カットに寄り引き/パララックス＋イージング。
 > 注意：`CarpenterPremium` 内の `ReconLabel`（"symbolic reconstruction"）は AI画像/図解スパンにのみ付け、実写stockスパンには付けない（実写を「象徴的再現」と誤表示しない＝invariant 11）。
