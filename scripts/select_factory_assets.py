@@ -17,6 +17,9 @@ from __future__ import annotations
 import sys, os, json, argparse
 
 sys.stdout.reconfigure(encoding="utf-8")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from factory_themes import theme_of  # theme DERIVED from subtype (manifest has no theme field)
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAN = os.path.join(REPO, "assets", "asset_manifest.v001.json")
 
@@ -55,8 +58,8 @@ def main() -> int:
 
     if a.themes:
         import collections
-        by = collections.Counter(f"{x.get('type')}/{x.get('theme','(none)')}" for x in assets)
-        print(f"{len(assets)} assets across {len(by)} category/theme groups:")
+        by = collections.Counter(f"{x.get('type')}/{theme_of(x.get('subtype'), x.get('type'))}" for x in assets)
+        print(f"{len(assets)} assets across {len(by)} category/theme groups (theme derived from subtype):")
         for k, n in sorted(by.items()):
             print(f"  {n:6}  {k}")
         return 0
@@ -64,7 +67,7 @@ def main() -> int:
     def ok(x):
         if a.category and x.get("type") != a.category:
             return False
-        if a.theme and x.get("theme") != a.theme:
+        if a.theme and theme_of(x.get("subtype"), x.get("type")) != a.theme:
             return False
         if a.subtype and x.get("subtype") != a.subtype:
             return False
@@ -86,7 +89,7 @@ def main() -> int:
     else:
         print(f"{len(hits)} match (of {len(assets)} in shelf)")
         for x in hits:
-            print(f"  {x['id']:<16} {x.get('kind','?'):<6} {x.get('theme','-'):<18} {x['path']}")
+            print(f"  {x['id']:<16} {x.get('kind','?'):<6} {theme_of(x.get('subtype'), x.get('type')):<18} {x['path']}")
     return 0
 
 

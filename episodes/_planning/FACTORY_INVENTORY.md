@@ -3,15 +3,16 @@
 `assets/asset_manifest.v001.json`（商用OK・DL済み）の現況。設計書・Codex実装はこれを見て**ふんだんに活用**する。
 **全件 Pexels / Pixabay（License: Pexels License / Pixabay Content License＝商用OK）**。
 
-## 整理後の構造（2026-06-23 テーマ別に再分類済み）
-- 実体パス＝**`H:\pd-media\assets\factory\<category>\<theme>\AF-<CAT>-NNNN__<subtype>.<ext>`**（`scripts/recategorize_factory.py` でテーマ別フォルダへ整理）。
-- マニフェスト各エントリに **`theme`（テーマ）＋`subcategory`（=subtype）** を付与済み。
-- **backgrounds は14テーマに分割**：`legal_court / civic_voting / crime_police / forensics_dna / medical_lab / finance_money / property_home / school_youth / surveillance_tech / documents_paper / urban_night / nature_landscape / atmosphere_symbolic / abstract`。light/vfx/particle/texture/loops は各カテゴリ＝1バケット。
-- **取り出し方（速い）**：
+## カテゴリ分け＝テーマ（クエリ時に導出・ビルダー非依存）
+> 重要：素材ビルダー（ダウンロード/登録）が `asset_manifest.v001.json` を**フラットパスで継続的に上書き**するため、テーマは**マニフェストに保存しない**。`scripts/factory_themes.py` の `theme_of(subtype)` で**抽出時にサブタイプから導出**する（＝ビルダーが何度書き換えても効く・物理移動不要）。
+- 実体パス＝**`H:\pd-media\assets\factory\<category>\AF-<CAT>-NNNN__<subtype>.<ext>`**（フラット維持）。
+- **backgrounds の14テーマ**：`legal_court / civic_voting / crime_police / forensics_dna / medical_lab / finance_money / property_home / school_youth / surveillance_tech / documents_paper / urban_night / nature_landscape / atmosphere_symbolic / abstract`。light/vfx/particle/texture/loops は各カテゴリ＝1バケット。
+- **取り出し方（速い・どの状態でも動く）**：
   - `./.venv/Scripts/python.exe scripts/select_factory_assets.py --themes`（テーマ一覧＋点数）
   - `... --theme legal_court --kind video`（テーマ別b-roll動画）
   - `... --subtype courtroom_interior`（サブタイプ直指定）
   - 抽出後 `remotion/public/<slug>/factory/` へコピーして使用。
+- **物理フォルダ整理（factory/<category>/<theme>/）は保留**：DLが完全停止してから `scripts/recategorize_factory.py` を1回実行（実行中はビルダーに上書きされ不整合になるため）。逆操作＝`scripts/revert_factory_reorg.py`。
 
 ## 総量
 - **総点数 65,543（≈221GB）／ image 53,960・video 11,583。**
