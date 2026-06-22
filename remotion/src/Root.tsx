@@ -11,6 +11,7 @@ import {MappPremium, mappPremiumDurationInFrames} from './compositions/MappPremi
 import {MadoffPremium, madoffPremiumDurationInFrames} from './compositions/MadoffPremium';
 import {KeloPremium, keloPremiumDurationInFrames} from './compositions/KeloPremium';
 import {KeloThumbnailFrame} from './compositions/KeloThumbnailFrame';
+import {MahanoyPremium, mahanoyPremiumDurationInFrames} from './compositions/MahanoyPremium';
 import {ClipProof} from './compositions/ClipProof';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
@@ -120,6 +121,14 @@ export const RemotionRoot: React.FC = () => {
         id="KeloPremium"
         component={KeloPremium}
         durationInFrames={keloPremiumDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="MahanoyPremium"
+        component={MahanoyPremium}
+        durationInFrames={mahanoyPremiumDurationInFrames(BRAND.video.fps)}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
