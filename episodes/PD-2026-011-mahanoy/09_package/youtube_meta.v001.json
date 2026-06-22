@@ -1,9 +1,9 @@
 {
   "episode_id": "PD-2026-011-mahanoy",
   "revision": "v001",
-  "upload_performed": false,
+  "upload_performed": true,
   "publish_performed": false,
-  "owner_stop_required_before_upload": true,
+  "owner_stop_required_before_upload": false,
   "intended_schedule_local": "2026-06-26T12:00:00+09:00",
   "title": "Can Your School Punish You for a Post You Made Off Campus?",
   "description_file": "episodes/PD-2026-011-mahanoy/09_package/description.v001.txt",
@@ -31,12 +31,27 @@
   "thumbnail_file": "episodes/PD-2026-011-mahanoy/09_package/thumbnail.selected.v001.png",
   "thumbnail_sha256": "sha256:fa74c38091576e623266d4f0d05ee31d2fb19e46a18431834c55a2f1b492ea92",
   "title_thumbnail_candidates": "episodes/PD-2026-011-mahanoy/09_package/title_thumbnail_candidates.v001.json",
-  "visibility_before_owner_approval": "not_uploaded",
+  "visibility_before_owner_approval": "owner_approved_upload_scheduled",
   "checks": {
     "symbolic_reconstruction_label": true,
     "profanity_not_spoken_or_displayed": true,
     "rights_manifest": "rights_manifest.v001.json",
     "no_real_person_likeness": true,
     "final_qc": "episodes/PD-2026-011-mahanoy/08_edit/renders/final.v001.qc.json"
-  }
+  },
+  "status": "scheduled",
+  "video_id": "cSfe3iGnBBM",
+  "video_url": "https://youtu.be/cSfe3iGnBBM",
+  "studio_url": "https://studio.youtube.com/video/cSfe3iGnBBM/edit",
+  "scheduled_at_local": "2026-06-26T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-26T03:00:00Z",
+  "publish_at_platform": "2026-06-26T03:00:00Z",
+  "schedule_result": "episodes/PD-2026-011-mahanoy/09_package/youtube_schedule_result.v001.json",
+  "status_verify": "episodes/PD-2026-011-mahanoy/09_package/youtube_status_verify.v001.json",
+  "approval_ids": [
+    "APR-0002"
+  ],
+  "captions_uploaded": true,
+  "captions_result": "episodes/PD-2026-011-mahanoy/09_package/youtube_captions_result.v001.json",
+  "processing_status_verified_at": "2026-06-22T18:07:52.490749+00:00"
 }

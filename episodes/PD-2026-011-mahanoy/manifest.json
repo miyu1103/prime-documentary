@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-011",
   "slug": "mahanoy",
   "title_working": "Can Your School Punish You for a Post You Made Off Campus?",
-  "state": "package_ready",
+  "state": "scheduled",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -24,7 +24,10 @@
     "final_qc": "v001",
     "rights_manifest": "v001",
     "youtube_meta": "v001",
-    "final_delivery": "v001"
+    "final_delivery": "v002",
+    "youtube_schedule_result": "v001",
+    "youtube_status_verify": "v001",
+    "youtube_captions_result": "v001"
   },
   "artifacts": [
     {
@@ -43,7 +46,7 @@
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-011-mahanoy/08_edit/mahanoy_premium_v001.mp4",
       "checksum": "sha256:898ee186255dc54989a944cb92e4d174e1e8603b77c4a75faf9a461497eaac87",
-      "status": "owner_review_ready",
+      "status": "approved",
       "rights_status": "clear",
       "qc_status": "pass"
     },
@@ -52,14 +55,25 @@
       "artifact_type": "final_delivery",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-011-mahanoy/09_package/final_delivery.v001.json",
-      "checksum": null,
-      "status": "owner_review_ready",
+      "checksum": "sha256:9a5759079ba295cb85a5f61a0b9e6f110326a66b14692a4e49f6937e7cfc8fd2",
+      "status": "superseded",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-011-mahanoy-final-delivery-v002",
+      "artifact_type": "final_delivery",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-011-mahanoy/09_package/final_delivery.v002.json",
+      "checksum": "sha256:a1acc633636a5810f0a1e491aeb43f81a48317c3aae7af6cb33051626d75ab59",
+      "status": "approved",
       "rights_status": "clear",
       "qc_status": "pass"
     }
   ],
   "approvals": [
-    "APR-0001"
+    "APR-0001",
+    "APR-0002"
   ],
   "costs": {
     "estimated": {
@@ -85,9 +99,12 @@
     "ADVERTISER SAFETY (CLM-0006): the post's caption was profane — the narration DESCRIBES it and must NEVER read the explicit words; on-screen text must be censored/blurred.",
     "Brandi Levy (B.L.) was a minor but went public with the ACLU — safe to name; describe neutrally. Keep neutral on school-vs-student; present the school's interest fairly.",
     "Heavy media (scenes/visuals/audio/edit) on the external SSD (H:\\pd-media), not in this repo.",
-    "EP11 package is ready for owner review. YouTube upload/public scheduling was not performed. Intended schedule metadata: 2026-06-26T12:00:00+09:00."
+    "EP11 package is ready for owner review. YouTube upload/public scheduling was not performed. Intended schedule metadata: 2026-06-26T12:00:00+09:00.",
+    "YouTube private upload completed and scheduled under APR-0002: video_id cSfe3iGnBBM, public release 2026-06-26T12:00:00+09:00. containsSyntheticMedia=true; immediate public publish not performed."
   ],
   "blockers": [],
   "created_at": "2026-06-20T04:00:00+09:00",
-  "updated_at": "2026-06-22T17:08:30Z"
+  "updated_at": "2026-06-22T18:07:52.490749+00:00",
+  "video_id": "cSfe3iGnBBM",
+  "video_url": "https://youtu.be/cSfe3iGnBBM"
 }
