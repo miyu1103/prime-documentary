@@ -111,8 +111,23 @@ def main():
     dur = nw / 150.0
     filler = {x: vo.lower().count(x) for x in BANNED if vo.lower().count(x) > 0}
     warns = []
-    if not (10.0 <= dur <= 12.8):
-        warns.append(f"timing {dur:.1f}min outside 10.0-12.8")
+    # Duration band. Standard episodes: 10.0-12.8 narration-minutes. FEATURE episodes
+    # (manifest.target_duration_minutes >= 20) use a wider narration band that scales
+    # with the planned runtime: feature cuts use deliberate silence + visual/music
+    # sequences, so narration-minutes run well below total runtime. See
+    # decisions/0003-feature-duration-profile.md (ADR-0003). This is an explicit,
+    # documented profile keyed off an existing manifest field, applied ONLY when the
+    # manifest declares a feature-length target -- NOT a silent weakening of the
+    # standard gate (invariant 15); the standard 10.0-12.8 band is unchanged.
+    tdm = man.get("target_duration_minutes")
+    if isinstance(tdm, (int, float)) and tdm >= 20:
+        lo, hi = 0.50 * tdm, 1.05 * tdm
+        band = f"{lo:.1f}-{hi:.1f}min (feature; target {tdm:.0f}min runtime)"
+    else:
+        lo, hi = 10.0, 12.8
+        band = "10.0-12.8min"
+    if not (lo <= dur <= hi):
+        warns.append(f"narration {dur:.1f}min outside {band}")
     if fk > 9.5:
         warns.append(f"readability FK {fk:.1f} > 9.5")
     if filler:

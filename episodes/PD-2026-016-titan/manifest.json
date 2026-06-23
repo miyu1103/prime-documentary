@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-016-titan",
+  "topic_id": "TOP-20260624-016",
+  "slug": "titan",
+  "title_working": "Pure Waste — The Last Dive of the Titan",
+  "state": "script_verified",
+  "risk_class": "R2",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 58,
+  "active_revisions": {"topic": "v001", "sources": "v001", "claims": "v001", "script": "v001", "script_qc": "v001"},
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-016-titan-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-016-titan/03_script/script.annotated.v001.json",
+      "checksum": "sha256:e2e109f574c41a64170dc0a848eabcb2cb70056f3855365f2b86f0f98c2594b9",
+      "status": "approved",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": ["APR-0001"],
+  "costs": {"estimated": {"amount": 0, "currency": "USD"}, "actual": {"amount": 0, "currency": "USD"}, "soft_limit": {"amount": 150, "currency": "USD"}, "hard_limit": {"amount": 300, "currency": "USD"}},
+  "warnings": [
+    "FIRST PD FEATURE (60-min flagship). target_duration_minutes=58 is the planned RUNTIME; narration is 6266 words (~41.8min @150wpm) and the rest is designed silence/visual/music. Feature duration band applied in validate_episode.py per ADR-0003; standard 10.0-12.8 gate unchanged (invariant 15).",
+    "Claude owns research+script (left process); Codex begins at scenes/visuals (right process). Image gen = Codex (local SDXL :7860, juggernautXL); edit = Remotion + FFmpeg libx264 (quality-first).",
+    "R2 — recent disaster, named deceased victims + living relatives. PRE-PUBLISH FACT RE-CHECK REQUIRED (rights_status=conditional): verify USCG report wording, MTS exhibit URL, exact Rush-quote source.",
+    "DIGNITY (load-bearing): moral center = Suleman (19); no schadenfreude; no graphic implosion/remains; cause attributed to the U.S. Coast Guard Board; living relatives & whistleblower via documented statements only.",
+    "NO real-person likeness/deepfake of any of the five or of Stockton Rush (invariant 11); all AI visuals symbolic + disclosed; brand markings (OceanGate/Logitech/Titanic operators) kept non-specific.",
+    "Remaining human gates: final-script sign-off (this APR-0001 is owner content sign-off), first-cut, title/thumbnail, public scheduling. Media on external SSD (H:\\pd-media), not in repo."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-24T12:00:00+09:00",
+  "updated_at": "2026-06-24T12:00:00+09:00"
+}
