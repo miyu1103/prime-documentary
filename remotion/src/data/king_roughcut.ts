@@ -34,20 +34,23 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 46.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/roberts_scotus_portrait.jpg",
+      "src": "king/SPN-0002.png",
       "telop": [
         "Identification — or a search?"
       ],
       "priority": "A",
       "images": [
-        "king/roberts_scotus_portrait.jpg",
-        "king/pexels_smartphone_hand.jpg",
-        "king/pexels_money_handover.jpg",
-        "king/pexels_tow_truck.jpg",
-        "king/pexels_house_for_sale.jpg",
-        "king/pexels_signing_contract.jpg",
-        "king/pexels_police_car.jpg",
-        "king/pexels_i_14766052.jpg"
+        "king/SPN-0002.png",
+        "king/SPN-0002_02.png",
+        "king/SPN-0002_03.png",
+        "king/SPN-0002_04.png",
+        "king/SPN-0002_05.png",
+        "king/SPN-0002_06.png",
+        "king/SPN-0002_07.png",
+        "king/SPN-0002_08.png",
+        "king/SPN-0002_09.png",
+        "king/SPN-0002_10.png",
+        "king/SPN-0002_11.png"
       ]
     },
     {
@@ -63,8 +66,8 @@ export const KING_ROUGHCUT: RoughCutData = {
       "priority": "B",
       "images": [
         "king/pexels_house_for_sale.jpg",
-        "king/pexels_i_37730973.jpg",
-        "king/pixabay_i_3194994.jpg"
+        "king/roberts_scotus_portrait.jpg",
+        "king/pexels_smartphone_hand.jpg"
       ]
     },
     {
@@ -73,16 +76,17 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 18.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_565914.jpg",
+      "src": "king/SPN-0004.png",
       "telop": [
         "The swab was NOT the reason for arrest"
       ],
       "priority": "C",
       "images": [
-        "king/pixabay_i_565914.jpg",
-        "king/pexels_i_6077447.jpg",
-        "king/pexels_i_37732186.jpg",
-        "king/pixabay_i_2492011.jpg"
+        "king/SPN-0004.png",
+        "king/SPN-0004_02.png",
+        "king/SPN-0004_03.png",
+        "king/SPN-0004_04.png",
+        "king/SPN-0004_05.png"
       ]
     },
     {
@@ -91,16 +95,16 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 18.8,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "king/pixabay_i_6808677.jpg",
+      "src": "king/pexels_money_handover.jpg",
       "telop": [
         "Match: an unsolved 2003 case"
       ],
       "priority": "A",
       "images": [
-        "king/pixabay_i_6808677.jpg",
-        "king/pexels_i_36984943.jpg",
-        "king/pexels_i_36984938.jpg",
-        "king/pixabay_i_2225765.jpg"
+        "king/pexels_money_handover.jpg",
+        "king/pexels_tow_truck.jpg",
+        "king/pexels_house_for_sale.jpg",
+        "king/pexels_signing_contract.jpg"
       ]
     },
     {
@@ -131,11 +135,11 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 4.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_2225766.jpg",
+      "src": "king/SPN-0007.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "king/pixabay_i_2225766.jpg"
+        "king/SPN-0007.png"
       ]
     },
     {
@@ -144,14 +148,15 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 11.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pexels_i_17155842.jpg",
+      "src": "king/SPN-0008.png",
       "telop": [
         "Fingerprint or search?"
       ],
       "priority": "C",
       "images": [
-        "king/pexels_i_17155842.jpg",
-        "king/pexels_i_37538043.jpg"
+        "king/SPN-0008.png",
+        "king/SPN-0008_02.png",
+        "king/SPN-0008_03.png"
       ]
     },
     {
@@ -182,16 +187,17 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 20.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_319668.jpg",
+      "src": "king/SPN-0010.png",
       "telop": [
         "State: \"the fingerprint of the 21st century\""
       ],
       "priority": "C",
       "images": [
-        "king/pixabay_i_319668.jpg",
-        "king/pixabay_i_6841384.jpg",
-        "king/pexels_i_159720.jpg",
-        "king/pexels_i_37726703.jpg"
+        "king/SPN-0010.png",
+        "king/SPN-0010_02.png",
+        "king/SPN-0010_03.png",
+        "king/SPN-0010_04.png",
+        "king/SPN-0010_05.png"
       ]
     },
     {
@@ -200,20 +206,23 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 47.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_923898.jpg",
+      "src": "king/SPN-0011.png",
       "telop": [
         "CODIS — the FBI's national DNA database"
       ],
       "priority": "C",
       "images": [
-        "king/pixabay_i_923898.jpg",
-        "king/pixabay_i_3324024.jpg",
-        "king/pexels_i_6077797.jpg",
-        "king/pexels_i_30483132.jpg",
-        "king/pixabay_i_677940.jpg",
-        "king/pixabay_i_677945.jpg",
-        "king/pexels_i_7483195.jpg",
-        "king/pexels_i_7649100.jpg"
+        "king/SPN-0011.png",
+        "king/SPN-0011_02.png",
+        "king/SPN-0011_03.png",
+        "king/SPN-0011_04.png",
+        "king/SPN-0011_05.png",
+        "king/SPN-0011_06.png",
+        "king/SPN-0011_07.png",
+        "king/SPN-0011_08.png",
+        "king/SPN-0011_09.png",
+        "king/SPN-0011_10.png",
+        "king/SPN-0011_11.png"
       ]
     },
     {
@@ -222,16 +231,16 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 16.8,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "king/pixabay_i_2636065.jpg",
+      "src": "king/pexels_police_car.jpg",
       "telop": [
         "2013 — 5–4",
         "Maryland v. King, 569 U.S. 435"
       ],
       "priority": "A",
       "images": [
-        "king/pixabay_i_2636065.jpg",
-        "king/pixabay_i_2578873.jpg",
-        "king/pexels_i_20417783.jpg"
+        "king/pexels_police_car.jpg",
+        "king/pexels_i_14766052.jpg",
+        "king/pexels_i_37730973.jpg"
       ]
     },
     {
@@ -262,16 +271,17 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 21.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pexels_i_19574309.jpg",
+      "src": "king/SPN-0014.png",
       "telop": [
         "Dissent: Scalia + Ginsburg, Sotomayor, Kagan"
       ],
       "priority": "A",
       "images": [
-        "king/pexels_i_19574309.jpg",
-        "king/pixabay_i_826993.jpg",
-        "king/pixabay_i_477987.jpg",
-        "king/pexels_i_8850753.jpg"
+        "king/SPN-0014.png",
+        "king/SPN-0014_02.png",
+        "king/SPN-0014_03.png",
+        "king/SPN-0014_04.png",
+        "king/SPN-0014_05.png"
       ]
     },
     {
@@ -280,21 +290,23 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 49.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pexels_i_51343.jpg",
+      "src": "king/SPN-0015.png",
       "telop": [
         "\"...rightly or wrongly, and for whatever reason\""
       ],
       "priority": "A",
       "images": [
-        "king/pexels_i_51343.jpg",
-        "king/pixabay_i_3212015.jpg",
-        "king/pixabay_i_623167.jpg",
-        "king/pexels_i_9364799.jpg",
-        "king/pexels_i_12727666.jpg",
-        "king/pixabay_i_1701179.jpg",
-        "king/pixabay_i_2672054.jpg",
-        "king/pexels_i_10466471.jpg",
-        "king/pixabay_i_986047.jpg"
+        "king/SPN-0015.png",
+        "king/SPN-0015_02.png",
+        "king/SPN-0015_03.png",
+        "king/SPN-0015_04.png",
+        "king/SPN-0015_05.png",
+        "king/SPN-0015_06.png",
+        "king/SPN-0015_07.png",
+        "king/SPN-0015_08.png",
+        "king/SPN-0015_09.png",
+        "king/SPN-0015_10.png",
+        "king/SPN-0015_11.png"
       ]
     },
     {
@@ -323,18 +335,20 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 34.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_4988448.jpg",
+      "src": "king/SPN-0017.png",
       "telop": [
         "It solves crimes. It also files the merely arrested."
       ],
       "priority": "C",
       "images": [
-        "king/pixabay_i_4988448.jpg",
-        "king/pexels_i_37730971.jpg",
-        "king/pexels_i_7773262.jpg",
-        "king/pixabay_i_7790176.jpg",
-        "king/pixabay_i_1078870.jpg",
-        "king/pexels_i_17155842.jpg"
+        "king/SPN-0017.png",
+        "king/SPN-0017_02.png",
+        "king/SPN-0017_03.png",
+        "king/SPN-0017_04.png",
+        "king/SPN-0017_05.png",
+        "king/SPN-0017_06.png",
+        "king/SPN-0017_07.png",
+        "king/SPN-0017_08.png"
       ]
     },
     {
@@ -343,14 +357,16 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 24.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pexels_i_37538043.jpg",
+      "src": "king/SPN-0018.png",
       "telop": [],
       "priority": "A",
       "images": [
-        "king/pexels_i_37538043.jpg",
-        "king/pixabay_i_319668.jpg",
-        "king/pixabay_i_6841384.jpg",
-        "king/pexels_i_19782580.jpg"
+        "king/SPN-0018.png",
+        "king/SPN-0018_02.png",
+        "king/SPN-0018_03.png",
+        "king/SPN-0018_04.png",
+        "king/SPN-0018_05.png",
+        "king/SPN-0018_06.png"
       ]
     },
     {
@@ -381,14 +397,15 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 20.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pexels_i_36852946.jpg",
+      "src": "king/SPN-0020.png",
       "telop": [],
       "priority": "A",
       "images": [
-        "king/pexels_i_36852946.jpg",
-        "king/pixabay_i_7267551.jpg",
-        "king/pixabay_i_1144371.jpg",
-        "king/pexels_i_18160079.jpg"
+        "king/SPN-0020.png",
+        "king/SPN-0020_02.png",
+        "king/SPN-0020_03.png",
+        "king/SPN-0020_04.png",
+        "king/SPN-0020_05.png"
       ]
     },
     {
@@ -397,17 +414,19 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 28.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pexels_i_242427.jpg",
+      "src": "king/SPN-0021.png",
       "telop": [
         "Next: can a cop follow you into your home?"
       ],
       "priority": "A",
       "images": [
-        "king/pexels_i_242427.jpg",
-        "king/pixabay_i_2507499.jpg",
-        "king/pixabay_i_1283938.jpg",
-        "king/pexels_i_6260105.jpg",
-        "king/pexels_i_5835330.jpg"
+        "king/SPN-0021.png",
+        "king/SPN-0021_02.png",
+        "king/SPN-0021_03.png",
+        "king/SPN-0021_04.png",
+        "king/SPN-0021_05.png",
+        "king/SPN-0021_06.png",
+        "king/SPN-0021_07.png"
       ]
     },
     {
@@ -438,15 +457,17 @@ export const KING_ROUGHCUT: RoughCutData = {
       "seconds": 27.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "king/pixabay_i_1542594.jpg",
+      "src": "king/SPN-0023.png",
       "telop": [],
       "priority": "A",
       "images": [
-        "king/pixabay_i_1542594.jpg",
-        "king/pixabay_i_2575058.jpg",
-        "king/pexels_i_16229745.jpg",
-        "king/pexels_i_7634159.jpg",
-        "king/pixabay_i_763731.jpg"
+        "king/SPN-0023.png",
+        "king/SPN-0023_02.png",
+        "king/SPN-0023_03.png",
+        "king/SPN-0023_04.png",
+        "king/SPN-0023_05.png",
+        "king/SPN-0023_06.png",
+        "king/SPN-0023_07.png"
       ]
     }
   ]
