@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-012",
   "slug": "arbitration",
   "title_working": "The Fine Print That Took Away Your Right to Sue",
-  "state": "package_ready",
+  "state": "scheduled",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -22,7 +22,10 @@
     "thumbnail_candidates": "v001",
     "youtube_meta": "v001",
     "rights_manifest": "v001",
-    "final_delivery": "v001"
+    "final_delivery": "v001",
+    "youtube_schedule_result": "v001",
+    "youtube_status_verify": "v001",
+    "youtube_captions_result": "v001"
   },
   "artifacts": [
     {
@@ -37,7 +40,8 @@
     }
   ],
   "approvals": [
-    "APR-0001"
+    "APR-0001",
+    "APR-0002"
   ],
   "costs": {
     "estimated": {
@@ -63,9 +67,12 @@
     "POLICY DEBATE — keep strictly neutral/balanced. 'Forced arbitration' is the critics' term; pair with neutral 'mandatory/pre-dispute arbitration'. CLM-0007/0008 (critics vs defenders) must stay attributed; do not narrate empirical cost/speed claims as fact.",
     "Companies (AT&T, Epic Systems) named only for documented case facts; no editorializing.",
     "Heavy media on the external SSD (H:\\pd-media), not in this repo.",
-    "Arbitration v001 package prepared for owner review. Upload/schedule is stopped before YouTube; target schedule 2026-06-27T12:00:00+09:00 / 2026-06-27T03:00:00Z."
+    "Arbitration v001 package prepared for owner review. Upload/schedule is stopped before YouTube; target schedule 2026-06-27T12:00:00+09:00 / 2026-06-27T03:00:00Z.",
+    "YouTube private upload completed and scheduled under APR-0002: video_id 1pox44KsaV8, public release 2026-06-27T12:00:00+09:00. containsSyntheticMedia=true; immediate public publish not performed."
   ],
   "blockers": [],
   "created_at": "2026-06-20T05:00:00+09:00",
-  "updated_at": "2026-06-23T12:49:49.827439+00:00"
+  "updated_at": "2026-06-23T13:21:54.311945+00:00",
+  "video_id": "1pox44KsaV8",
+  "video_url": "https://youtu.be/1pox44KsaV8"
 }

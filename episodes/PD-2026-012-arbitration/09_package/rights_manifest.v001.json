@@ -3,9 +3,9 @@
   "episode_id": "PD-2026-012-arbitration",
   "revision": "v001",
   "generated_at": "2026-06-23T12:49:49.827439+00:00",
-  "status": "clear_for_owner_review_upload_preparation",
+  "status": "cleared_for_scheduled_publication",
   "commercial_use": "allowed",
-  "publication_gate": "closed_owner_must_upload_or_approve",
+  "publication_gate": "owner_approved_scheduled_publication",
   "assertions": {
     "script_claims_unchanged": true,
     "claims_ledger_unchanged": true,
@@ -17,7 +17,8 @@
     "critics_defenders_balanced": true,
     "commercial_ok_assets_only": true,
     "elevenlabs_tts_owner_approved": true,
-    "external_upload_not_performed": true
+    "external_upload_not_performed": false,
+    "youtube_upload_scheduled_by_owner_approval": true
   },
   "assets": [
     {
@@ -47,5 +48,9 @@
       "file": "episodes/PD-2026-012-arbitration/09_package/title_thumbnail_candidates.v001.json",
       "sha256": "sha256:c16bbdbb268d5b2094eac324a94f1eb29e26ffe4935c54ff1eb4f5a9ed384acf"
     }
-  ]
+  ],
+  "publication_approval": "APR-0002",
+  "youtube_video_id": "1pox44KsaV8",
+  "scheduled_at_local": "2026-06-27T12:00:00+09:00",
+  "scheduled_at_utc": "2026-06-27T03:00:00Z"
 }
