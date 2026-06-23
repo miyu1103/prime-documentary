@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-013-king",
   "revision": "v001",
-  "status": "upload_ready_owner_review_required",
+  "status": "scheduled",
   "generated_at": "2026-06-23T16:25:25.277583+00:00",
   "final_video": "H:\\pd-media\\episodes\\PD-2026-013-king\\08_edit\\king_premium_v001.mp4",
   "final_video_exists": true,
@@ -17,5 +17,19 @@
   "target_schedule_after_owner_approval": {
     "jst": "2026-06-28T12:00:00+09:00",
     "utc": "2026-06-28T03:00:00Z"
+  },
+  "youtube": {
+    "video_id": "g5yFmDt48oU",
+    "watch": "https://youtu.be/g5yFmDt48oU",
+    "studio": "https://studio.youtube.com/video/g5yFmDt48oU/edit",
+    "privacy": "private",
+    "scheduled_at_local": "2026-06-28T12:00:00+09:00",
+    "scheduled_at_utc": "2026-06-28T03:00:00Z",
+    "upload_performed": true,
+    "schedule_performed": true,
+    "public_immediate_publish": false,
+    "result": "episodes/PD-2026-013-king/09_package/youtube_schedule_result.v001.json",
+    "processing_status": "succeeded",
+    "processing_status_verified_at": "2026-06-23T17:01:40.923218+00:00"
   }
 }
