@@ -13,7 +13,7 @@
   "thumbnail": {
     "schema_version": "1.0.0",
     "episode_id": "PD-2026-012-arbitration",
-    "revision": "v001",
+    "revision": "v002",
     "created_at": "2026-06-23T01:20:23.183138+00:00",
     "status": "selected",
     "selection_criterion": "CTR maximum: high contrast, single clear subject, emotion, large text space, mobile readability.",
@@ -95,14 +95,15 @@
       }
     ],
     "selected_title_id": "B",
-    "selected_thumbnail": "episodes/PD-2026-012-arbitration/09_package/thumbnail.selected.v001.png",
-    "selected_thumbnail_sha256": "sha256:013171c838f4b1c8626437620a66e2620e6a2df8086d36b44ad4236bfcb7ed66",
+    "selected_thumbnail": "episodes/PD-2026-012-arbitration/09_package/thumbnail.selected.v002.png",
+    "selected_thumbnail_sha256": "sha256:7d5825ec6606ee1091192d6f7e563497396e727534a56af68e720316f569756c",
     "safety": {
       "real_person_likeness": false,
       "judge_likeness": false,
       "text_in_background": false,
       "commercial_ok": true
-    }
+    },
+    "update_reason": "Owner rejected v001 thumbnail; replaced with bolder, higher-CTR v002."
   },
   "youtube": {
     "meta": "episodes/PD-2026-012-arbitration/09_package/youtube_meta.v001.json",
@@ -115,7 +116,8 @@
     "studio": "https://studio.youtube.com/video/1pox44KsaV8/edit",
     "schedule_performed": true,
     "public_immediate_publish": false,
-    "result": "episodes/PD-2026-012-arbitration/09_package/youtube_schedule_result.v001.json"
+    "result": "episodes/PD-2026-012-arbitration/09_package/youtube_schedule_result.v001.json",
+    "thumbnail_update": "episodes/PD-2026-012-arbitration/09_package/youtube_thumbnail_update.v002.json"
   },
   "rights": "episodes/PD-2026-012-arbitration/09_package/rights_manifest.v001.json",
   "captions": "episodes/PD-2026-012-arbitration/08_edit/captions.v001.srt"
