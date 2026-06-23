@@ -139,7 +139,7 @@ def main():
                     "sourceTool": "sdxl", "source": "sdxl", "kind": "image",
                     "durationFrames": None, "fps": None, "width": 1344, "height": 768,
                     "hasAlpha": False, "loopable": False, "mood": None, "intensity": None,
-                    "useCases": [cat], "compatibleSceneTypes": [], "colorTone": "navy_gold",
+                    "useCases": [cat], "compatibleSceneTypes": [], "colorTone": "high_contrast",
                     "tags": [cat, subtype, "sdxl", "brand"], "sourcePrompt": subj + STYLE,
                     "negativePrompt": NEG, "seed": seed, "model": MODEL,
                     "license": "generated_owned", "sourceUrl": "", "sha256": sha,
