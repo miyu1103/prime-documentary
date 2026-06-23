@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   AbsoluteFill,
+  Audio,
   Img,
   Loop,
   Sequence,
@@ -15,9 +16,11 @@ import {BRAND} from '../brand';
 import {BrandEndcard, BrandOpening, ENDCARD_SEC, OPENING_SEC} from '../components/Bookends';
 import {Grain} from '../components/Grain';
 import {LightSweep, Particles, Vignette} from '../components/Motion';
+import {KING_CAPTIONS} from '../data/king_captions';
+import {KING_SCENE_TIMING, KING_TOTAL_SEC} from '../data/king_timing';
 
 const FPS = BRAND.video.fps;
-const TARGET_SEC = 720;
+const TARGET_SEC = KING_TOTAL_SEC;
 const RAW_SEC = 603.2;
 const SCALE = (TARGET_SEC - OPENING_SEC - ENDCARD_SEC) / RAW_SEC;
 const INK = BRAND.color.ink;
@@ -300,12 +303,15 @@ const scenes = (() => {
   const out: Array<Scene & {start: number; dur: number}> = [];
   bodyScenes.forEach((scene, index) => {
     if (index === 1) {
-      out.push({id: 'brand', kind: 'brand', rawDur: OPENING_SEC, start: cursor, dur: OPENING_SEC, title: 'King'});
+      const hookTiming = KING_SCENE_TIMING['SPN-0001'];
+      out.push({id: 'brand', kind: 'brand', rawDur: OPENING_SEC, start: hookTiming ? hookTiming.start + hookTiming.dur : cursor, dur: OPENING_SEC, title: 'King'});
       cursor += OPENING_SEC;
     }
-    const dur = scene.rawDur * SCALE;
-    out.push({...scene, start: cursor, dur});
-    cursor += dur;
+    const timing = KING_SCENE_TIMING[scene.id];
+    const dur = timing ? timing.dur : scene.rawDur * SCALE;
+    const start = timing ? timing.start : cursor;
+    out.push({...scene, start, dur});
+    cursor = start + dur;
   });
   out.push({id: 'end', kind: 'end', rawDur: ENDCARD_SEC, start: cursor, dur: ENDCARD_SEC, title: ''});
   return out;
@@ -757,6 +763,48 @@ const SceneContent: React.FC<{scene: Scene}> = ({scene}) => {
   );
 };
 
+const CaptionOverlay: React.FC = () => {
+  const frame = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const t = frame / fps;
+  const cap = KING_CAPTIONS.find((c) => t >= c.start && t <= c.end);
+  if (!cap) return null;
+  return (
+    <div
+      style={{
+        position: 'absolute',
+        left: 220,
+        right: 220,
+        bottom: 44,
+        minHeight: 104,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        textAlign: 'center',
+        padding: '16px 28px',
+        background: '#000000B0',
+        borderRadius: 4,
+        boxShadow: '0 10px 34px #000000AA',
+        zIndex: 20,
+      }}
+    >
+      <div
+        style={{
+          fontFamily: BRAND.font.body,
+          fontSize: cap.text.length > 58 ? 48 : 54,
+          lineHeight: 1.13,
+          fontWeight: 900,
+          color: WHITE,
+          textShadow: '0 3px 0 #000, 0 0 16px #000, 0 0 26px #000',
+          maxWidth: 1320,
+        }}
+      >
+        {cap.text}
+      </div>
+    </div>
+  );
+};
+
 const BigCenter: React.FC<{text: string}> = ({text}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
@@ -772,11 +820,13 @@ const BigCenter: React.FC<{text: string}> = ({text}) => {
 
 export const KingPremium: React.FC = () => (
   <AbsoluteFill style={{backgroundColor: INK}}>
+    <Audio src={staticFile('king/audio/final_mix_v001.mp3')} />
     {scenes.map((scene) => (
       <Sequence key={scene.id} from={Math.round(scene.start * FPS)} durationInFrames={Math.round(scene.dur * FPS)}>
         <SceneContent scene={scene} />
       </Sequence>
     ))}
+    <CaptionOverlay />
   </AbsoluteFill>
 );
 
