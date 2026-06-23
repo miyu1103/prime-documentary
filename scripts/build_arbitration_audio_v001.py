@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Build local narration, captions, and final audio mix for ArbitrationPremium.
+"""Build narration, captions, and final audio mix for ArbitrationPremium.
 
-No paid provider call is made. Narration is generated through Windows SAPI,
-then fitted to the locked 12-minute edit structure.
+Prefers the channel ElevenLabs narration master when present. Falls back to the
+local Windows SAPI draft only when the channel master has not been generated.
 """
 from __future__ import annotations
 
@@ -27,7 +27,8 @@ EPM = MEDIA / "episodes" / EP
 LIB = MEDIA / "library"
 VOICE_PLAN = EPDIR / "06_audio" / "voice_plan.v001.json"
 NARR_INDEX = EPDIR / "06_audio" / "narration_index.v001.json"
-NARR_MASTER = EPM / "06_voice" / "master" / "vc_master_v001.wav"
+NARR_MASTER_SAPI = EPM / "06_voice" / "master" / "vc_master_v001.wav"
+NARR_MASTER_ELEVEN = EPM / "06_voice" / "master" / "vc_master_v001.mp3"
 NARR_FIT = EPM / "06_voice" / "master" / "vc_master_v001_fit_711s.wav"
 CAPTIONS = EPDIR / "08_edit" / "captions.v001.srt"
 CAPTIONS_JSON = EPDIR / "08_edit" / "captions.v001.json"
@@ -216,13 +217,18 @@ def concat_master(index: list[dict[str, object]]) -> list[dict[str, object]]:
             lines.append(f"file '{silence.as_posix()}'\n")
             cursor += 0.35
     concat.write_text("".join(lines), encoding="utf-8")
-    NARR_MASTER.parent.mkdir(parents=True, exist_ok=True)
-    run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat), "-c:a", "pcm_s16le", str(NARR_MASTER)], "concat narration master")
+    NARR_MASTER_SAPI.parent.mkdir(parents=True, exist_ok=True)
+    run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat), "-c:a", "pcm_s16le", str(NARR_MASTER_SAPI)], "concat narration master")
     return timed
 
 
-def fit_voice() -> float:
-    src = duration(NARR_MASTER)
+def selected_narration_master() -> Path:
+    return NARR_MASTER_ELEVEN if NARR_MASTER_ELEVEN.exists() else NARR_MASTER_SAPI
+
+
+def fit_voice(master: Path | None = None) -> float:
+    master = master or selected_narration_master()
+    src = duration(master)
     atempo = src / VOICE_TARGET_SEC
     if not 0.5 <= atempo <= 2.0:
         raise RuntimeError(f"atempo out of range: {atempo}")
@@ -232,7 +238,7 @@ def fit_voice() -> float:
             "ffmpeg",
             "-y",
             "-i",
-            str(NARR_MASTER),
+            str(master),
             "-filter:a",
             f"atempo={atempo:.8f},aresample=48000",
             "-c:a",
@@ -369,8 +375,10 @@ def loudnorm_qc() -> dict[str, object]:
         "target_duration_seconds": TOTAL_SEC,
         "target_lufs": -14,
         "loudnorm": loud,
-        "external_paid_request": False,
-        "provider": "Windows SAPI local + local FFmpeg mix",
+        "external_paid_request": NARR_MASTER_ELEVEN.exists(),
+        "provider": "ElevenLabs channel voice + local FFmpeg mix" if NARR_MASTER_ELEVEN.exists() else "Windows SAPI local + local FFmpeg mix",
+        "voice_id": "nPczCjzI2devNBz1zQrb" if NARR_MASTER_ELEVEN.exists() else None,
+        "model_id": "eleven_multilingual_v2" if NARR_MASTER_ELEVEN.exists() else None,
     }
     AUDIO_QC.write_text(json.dumps(qc, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     return qc
@@ -387,7 +395,7 @@ def write_index(timed: list[dict[str, object]], src_total: float) -> None:
                 "script_hashes": script_hashes(),
                 "generated_total_seconds": round(src_total, 3),
                 "master": f"artifact://episodes/{EP}/06_voice/master/vc_master_v001.wav",
-                "master_sha256": "sha256:" + sha256_file(NARR_MASTER),
+                "master_sha256": "sha256:" + sha256_file(NARR_MASTER_SAPI),
                 "fitted_master": str(NARR_FIT),
                 "fitted_master_sha256": "sha256:" + sha256_file(NARR_FIT),
                 "chunks": timed,
@@ -406,11 +414,21 @@ def main() -> int:
     except Exception:
         pass
     chunks = parse_script()
-    write_voice_plan(chunks)
-    generated = generate_sapi(chunks)
-    timed = concat_master(generated)
-    src_total = fit_voice()
-    write_index(timed, src_total)
+    if NARR_MASTER_ELEVEN.exists():
+        if not NARR_INDEX.exists():
+            raise RuntimeError(f"ElevenLabs master exists but narration index is missing: {NARR_INDEX}")
+        index_data = json.loads(NARR_INDEX.read_text("utf-8"))
+        if index_data.get("provider") != "ElevenLabs":
+            raise RuntimeError("ElevenLabs master exists but narration index is not ElevenLabs metadata")
+        timed = index_data["chunks"]
+        src_total = fit_voice(NARR_MASTER_ELEVEN)
+        print(f"using ElevenLabs channel voice {NARR_MASTER_ELEVEN} duration={src_total:.1f}s")
+    else:
+        write_voice_plan(chunks)
+        generated = generate_sapi(chunks)
+        timed = concat_master(generated)
+        src_total = fit_voice(NARR_MASTER_SAPI)
+        write_index(timed, src_total)
     cues = write_captions(timed, src_total)
     build_mix()
     qc = loudnorm_qc()

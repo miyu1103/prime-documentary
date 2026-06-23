@@ -1,24 +1,26 @@
 {
   "episode_id": "PD-2026-012-arbitration",
   "revision": "v001",
-  "created_at": "2026-06-23T02:01:15.573765+00:00",
+  "created_at": "2026-06-23T12:05:54.998013+00:00",
   "audio_mix": "C:\\Users\\aab15\\Documents\\prime-documentary\\remotion\\public\\arbitration\\audio\\arbitration_final_mix_v001.mp3",
-  "audio_mix_sha256": "sha256:71c10059e0f1d0a34e24d95ba2afc0298e220f8c6402eb438fcb4845ec359b0b",
+  "audio_mix_sha256": "sha256:72edb263425a9014b1dca88e3656317e2aef043034c9f9c24835f102da481a36",
   "duration_seconds": 720.0,
   "target_duration_seconds": 720.0,
   "target_lufs": -14,
   "loudnorm": {
-    "input_i": "-15.38",
-    "input_tp": "-1.20",
-    "input_lra": "3.40",
-    "input_thresh": "-25.89",
-    "output_i": "-14.58",
+    "input_i": "-15.26",
+    "input_tp": "-1.07",
+    "input_lra": "2.30",
+    "input_thresh": "-25.41",
+    "output_i": "-14.33",
     "output_tp": "-1.00",
-    "output_lra": "3.30",
-    "output_thresh": "-25.04",
+    "output_lra": "2.20",
+    "output_thresh": "-24.47",
     "normalization_type": "dynamic",
-    "target_offset": "0.58"
+    "target_offset": "0.33"
   },
-  "external_paid_request": false,
-  "provider": "Windows SAPI local + local FFmpeg mix"
+  "external_paid_request": true,
+  "provider": "ElevenLabs channel voice + local FFmpeg mix",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2"
 }

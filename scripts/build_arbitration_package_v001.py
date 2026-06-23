@@ -68,7 +68,7 @@ def main() -> int:
         "Epic Systems Corp. v. Lewis, 584 U.S. 497 (2018).\n"
         "Federal Arbitration Act, 9 U.S.C. §§ 1-16.\n\n"
         "About this video\n"
-        "Independent educational documentary. Narration is locally generated. Visuals are symbolic reconstructions and rights-cleared/AI-assisted illustrative assets, not authentic footage or evidence. This is not legal advice.\n\n"
+        "Independent educational documentary. Narration is AI-generated with the channel voice. Visuals are symbolic reconstructions and rights-cleared/AI-assisted illustrative assets, not authentic footage or evidence. This is not legal advice.\n\n"
         "Previous: Mahanoy and off-campus student speech.\n"
         "Next: DNA after arrest.\n"
         "Subscribe for the hidden systems behind everyday life.\n\n"
@@ -103,10 +103,12 @@ def main() -> int:
             "critics_forced_arbitration_term_attributed": True,
             "critics_defenders_balanced": True,
             "commercial_ok_assets_only": True,
+            "elevenlabs_tts_owner_approved": True,
             "external_upload_not_performed": True,
         },
         "assets": [
             {"type": "final_render", "file": str(VIDEO).replace("\\", "/"), "sha256": video_sha},
+            {"type": "narration", "provider": "ElevenLabs", "voice_id": "nPczCjzI2devNBz1zQrb", "model_id": "eleven_multilingual_v2", "license": "Paid TTS generated under owner approval for commercial channel use"},
             {"type": "thumbnail_selected", "file": rel(THUMB), "sha256": thumb_sha},
             {"type": "captions", "file": rel(CAPTIONS), "sha256": sha256(CAPTIONS)},
             {"type": "thumbnail_candidates", "file": rel(THUMB_META), "sha256": sha256(THUMB_META)},

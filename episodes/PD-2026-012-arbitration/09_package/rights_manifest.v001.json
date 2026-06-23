@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-012-arbitration",
   "revision": "v001",
-  "generated_at": "2026-06-23T02:42:01.005284+00:00",
+  "generated_at": "2026-06-23T12:49:49.827439+00:00",
   "status": "clear_for_owner_review_upload_preparation",
   "commercial_use": "allowed",
   "publication_gate": "closed_owner_must_upload_or_approve",
@@ -16,13 +16,21 @@
     "critics_forced_arbitration_term_attributed": true,
     "critics_defenders_balanced": true,
     "commercial_ok_assets_only": true,
+    "elevenlabs_tts_owner_approved": true,
     "external_upload_not_performed": true
   },
   "assets": [
     {
       "type": "final_render",
       "file": "H:/pd-media/episodes/PD-2026-012-arbitration/08_edit/arbitration_premium_v001.mp4",
-      "sha256": "sha256:73bf5176327b12d1a48aead52ed7c91988d5aa775b79b31058e43aff7099e00c"
+      "sha256": "sha256:4cb8e5e9e67e36b118fd671a70c3b3e78e748562bbe08290d2d1b1514b4f7c0c"
+    },
+    {
+      "type": "narration",
+      "provider": "ElevenLabs",
+      "voice_id": "nPczCjzI2devNBz1zQrb",
+      "model_id": "eleven_multilingual_v2",
+      "license": "Paid TTS generated under owner approval for commercial channel use"
     },
     {
       "type": "thumbnail_selected",
@@ -32,7 +40,7 @@
     {
       "type": "captions",
       "file": "episodes/PD-2026-012-arbitration/08_edit/captions.v001.srt",
-      "sha256": "sha256:d1639ef3743c38da72ba8aa26b856098645d8be933b502277cd556924a29fbae"
+      "sha256": "sha256:19c9b691a968d372b796ab12a9fe9a1f713bbc2faa3f59357f8bbf20c68fd47a"
     },
     {
       "type": "thumbnail_candidates",
