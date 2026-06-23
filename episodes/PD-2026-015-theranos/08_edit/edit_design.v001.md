@@ -17,6 +17,8 @@
 | **③ 本編** | act1〜act4（SPN-0002〜SPN-0019・台本順に再配列） | shotlist 各ショット | 約9分 |
 | **④ エンディング** | 結末＋シリーズ総括＋CTA/フォロー誘導（SPN-0020〜0022） | shotlist ending | 約75秒 |
 
+> **尺の目標＝約12分（11.5〜12.5分）**。台本（ナレ本文）は変えない。本編ナレ＋**フック(約30秒)＋オープニング＋エンディング(約75〜90秒)＋幕間の“ひと呼吸”**（山場SPN-0013の評決ボード後の余韻、act転換の短い間）で約12分に寄せる。間延びさせず密度で稼ぐ（カット切替は約4.5秒を維持＝§2）。**R3：余韻・間で断定有罪の含意を足さない／患者関連の無罪・評決不成立の区別を崩さない。**
+>
 > **章順の注意**: shotlist は `span_id` 昇順だが、`chapter_id` は台本の流れ（act1→act2→act3→act4→ending）に従って配置すること。具体的には **SPN-0023(act1) は SPN-0005 と 0006 の間**、**SPN-0024(act3) は SPN-0012 と 0013 の間** に挿入する（asset_map のナレ対応に一致）。台本テキストは変えない。
 
 **フックに使う本編ハイライト候補（priority A 優先・各1〜2秒で速いカット）**:
@@ -62,7 +64,8 @@ SPN-0001(一滴の血＋$9B→$0グラフ) / 0008(他社の機械で検査) / 00
 
 ## 3. テロップ／字幕／出典のレイアウト（被らせない＝VIDEO_RULES §13）
 
-- **字幕（ナレ全文・forced alignment）**: 画面**下部の帯**。常時ナレと語単位同期。
+- **字幕（ナレ全文・forced alignment）**: 画面**下部の安全帯**。**ナレと語単位でぴったり同期（ズレ≤約120ms）**・一字一句一致。
+- **見やすさ（VIDEO_RULES §13・数値）**: 文字 ≈48〜60px・本文太字・**白文字＋濃い縁取り/影＋半透明黒帯(不透明度~55〜70%)**・最大2行・中央寄せ・1〜2行ずつ送り、読み切れる表示時間（高速点滅切替しない）。
 - **テロップ（キーワード＝on_screen_text）**: **上/中央**。短く・大きく。字幕帯と**重ねない**。
 - **出典（金ライン）**: 例 `United States v. Holmes (N.D. Cal.) — verdict Jan 3, 2022` / `SEC charges 2018 (settled, no admission)`。**右下など別ポジション**固定。字幕・テロップと別レイヤ・別位置。判決/記録ベースのみ。
 - **AI画像には常時 `symbolic reconstruction` ラベル**（`CarpenterPremium` の `ReconLabel` を流用）。生成映像は記録ではない旨を画面で明示（不変項11）。
@@ -138,7 +141,7 @@ SPN-0001(一滴の血＋$9B→$0グラフ) / 0008(他社の機械で検査) / 00
 3. `npm run studio` で `TheranosPremium` を確認 → §2の各演出が出ているか／4部構成か／**R3表現チェック（§4）**をチェック。
 4. 書き出しは `TheranosPremium`（quality-first CPU/libx264）。**公開前に法務レビュー（§5）を通すまで `publish_approved` に進めない。**
 
-> **加飾レイヤ（VIDEO_RULES §4/§12）＝DL済みファクトリ素材を活かす**: `assets/asset_manifest.v001.json`（商用OK・DL済み）から**トーンの合うものだけ**を `scripts/select_factory_assets.py` で選び `remotion/public/theranos/factory/` へコピー → `TheranosPremium` に **背景プレート(下地)＋light/particle/vfxオーバーレイ(screen/add)＋texture(overlay)** の3層で重ね、奥行きと光で美しくダイナミックに。**意味あるアニメはコード演出が主役・factoryは加飾**（過剰にしない・合わない素材は使わない・licenseはallowedのみ）。**実在人物を想起させる素材は使わない（R3）。** 映画的カメラ＝`MovingStage`/`CameraRig`。詳細割り当ては **§7** を参照。
+> **加飾レイヤ（VIDEO_RULES §4/§12）＝DL済みファクトリ素材を活かす**: `assets/asset_manifest.v001.json`（商用OK・DL済み）から**トーンの合うものだけ**を `scripts/select_factory_assets.py` で選び `remotion/public/theranos/factory/` へコピー → `TheranosPremium` に **背景プレート(下地)＋light/particle/vfxオーバーレイ(screen/add)＋texture(overlay)** の3層で重ね、奥行きと光で美しくダイナミックに。**意味あるアニメはコード演出が主役・factoryは加飾**（過剰にしない・合わない素材は使わない・licenseはallowedのみ）。**実在人物を想起させる素材は使わない（R3）。** **美しくダイナミックに**＝映画的カメラ（`MovingStage`/`CameraRig` で全カットに寄り/引き/パララックス＋イージング、spring/ease＝リニア禁止）＋ファクトリ三層加飾（§7）＋**山場 SPN-0013 は“ため→開放”でSFX同期**。トランジションは上品・速め（光ワイプ/クロスディゾルブ）。**ただしR3＝実在人物想起素材なし・断定有罪の演出なし・無罪/評決不成立の区別を崩さない。** 詳細割り当ては **§7** を参照。
 
 ---
 
