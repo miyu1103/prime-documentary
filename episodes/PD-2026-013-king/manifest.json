@@ -4,13 +4,26 @@
   "topic_id": "TOP-20260620-013",
   "slug": "king",
   "title_working": "The Police Can Take Your DNA When They Arrest You",
-  "state": "script_verified",
+  "state": "package_ready",
   "risk_class": "R2",
   "production_tier": "B",
   "autonomy_level": 3,
   "target_language": "en",
   "target_duration_minutes": 12,
-  "active_revisions": {"topic": "v001", "sources": "v001", "claims": "v001", "script": "v001", "script_qc": "v001"},
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "narration_index": "v001",
+    "captions": "v001",
+    "final_qc": "v001",
+    "rights_manifest": "v001",
+    "thumbnail_candidates": "v001",
+    "youtube_meta": "v001",
+    "final_delivery": "v001"
+  },
   "artifacts": [
     {
       "artifact_id": "PD-2026-013-king-script-annotated",
@@ -30,9 +43,10 @@
     "script_qc PASS (FK ~9, no AI-filler), timing ~10.1min; promoted to script_verified.",
     "FRAMING (critical): King was arrested independently for assault (probable cause); the rape was a downstream DNA-database match — visuals/narration must NEVER imply the swab was the purpose of, or pretext for, the arrest (CLM-0004).",
     "Handle the sexual-assault subject soberly, not sensationally. Keep neutral: present the majority's identification/public-safety rationale and Scalia's privacy objection fairly. Alonzo King (convicted, public record) described neutrally; no real-person likeness in AI visuals.",
-    "Heavy media on the external SSD (H:\\pd-media), not in this repo."
+    "Heavy media on the external SSD (H:\\pd-media), not in this repo.",
+    "King v001 package prepared through the YouTube-upload-ready stop point. Final video rendered at 11:31.2, audio QC passes -13.99 LUFS / TP -2.47 dB, and YouTube upload/schedule were not performed. Planned schedule after owner approval: 2026-06-28T12:00:00+09:00."
   ],
   "blockers": [],
   "created_at": "2026-06-20T06:00:00+09:00",
-  "updated_at": "2026-06-20T06:00:00+09:00"
+  "updated_at": "2026-06-23T16:25:44.509354+00:00"
 }
