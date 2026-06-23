@@ -74,7 +74,7 @@ def main() -> int:
         "Subscribe for the hidden systems behind everyday life.\n\n"
         "#SupremeCourt #Arbitration #ClassAction #ConsumerRights"
     )
-    tags = ["Supreme Court", "arbitration", "forced arbitration", "mandatory arbitration", "class action waiver", "AT&T Mobility v Concepcion", "Epic Systems v Lewis", "Federal Arbitration Act", "consumer rights", "employment law", "legal documentary", "Prime Documentary"]
+    tags = ["Supreme Court", "arbitration", "mandatory arbitration", "pre-dispute arbitration", "arbitration debate", "class action waiver", "AT&T Mobility v Concepcion", "Epic Systems v Lewis", "Federal Arbitration Act", "consumer rights", "employment law", "legal documentary", "Prime Documentary"]
     video_sha = sha256(VIDEO)
     thumb_sha = sha256(THUMB)
     files = {

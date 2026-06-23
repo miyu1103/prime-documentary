@@ -247,18 +247,26 @@ def fit_voice() -> float:
 def split_caption_text(text: str) -> list[str]:
     text = re.sub(r"\s+", " ", text).strip()
     words = text.split()
-    lines: list[str] = []
+    cues: list[list[str]] = []
     current: list[str] = []
     for word in words:
-        trial = " ".join(current + [word])
-        if len(trial) > 50 and current:
-            lines.append(" ".join(current))
+        trial_words = current + [word]
+        trial = " ".join(trial_words)
+        if current and (len(trial) > 68 or len(trial_words) > 7):
+            cues.append(current)
             current = [word]
         else:
-            current.append(word)
+            current = trial_words
     if current:
-        lines.append(" ".join(current))
-    return ["\n".join(lines[i : i + 2]) for i in range(0, len(lines), 2)]
+        cues.append(current)
+
+    def two_lines(cue_words: list[str]) -> str:
+        if len(" ".join(cue_words)) <= 42:
+            return " ".join(cue_words)
+        best = max(1, len(cue_words) // 2)
+        return " ".join(cue_words[:best]) + "\n" + " ".join(cue_words[best:])
+
+    return [two_lines(cue) for cue in cues]
 
 
 def fmt_srt(t: float) -> str:
@@ -273,7 +281,10 @@ def fmt_srt(t: float) -> str:
 
 
 def write_captions(timed: list[dict[str, object]], src_total: float) -> list[dict[str, object]]:
-    scale = VOICE_TARGET_SEC / src_total
+    # Use the chunk timeline as the subtitle basis; the WAV container duration can drift
+    # after concat because SAPI emits mixed sample rates.
+    timeline_total = float(timed[-1]["end"])
+    scale = VOICE_TARGET_SEC / timeline_total
     cues: list[dict[str, object]] = []
     for chunk in timed:
         text = str(chunk["spoken_text"])
