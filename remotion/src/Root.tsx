@@ -14,6 +14,7 @@ import {KeloThumbnailFrame} from './compositions/KeloThumbnailFrame';
 import {MahanoyPremium, mahanoyPremiumDurationInFrames} from './compositions/MahanoyPremium';
 import {ArbitrationPremium, arbitrationPremiumDurationInFrames} from './compositions/ArbitrationPremium';
 import {KingPremium, kingPremiumDurationInFrames} from './compositions/KingPremium';
+import {KingThumbnailFrame} from './compositions/KingThumbnailFrame';
 import {ClipProof} from './compositions/ClipProof';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
@@ -227,6 +228,19 @@ export const RemotionRoot: React.FC = () => {
           headlineBottom: 'TAKEN?',
           badge: 'FOR A DEVELOPER',
           variant: 'taken' as const,
+        }}
+      />
+      <Still
+        id="KingThumbnailFrame"
+        component={KingThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{
+          backgroundSrc: 'king/SPN-0004.png',
+          line1: 'DNA AT',
+          line2: 'ARREST?',
+          badge: 'MARYLAND v. KING',
+          variant: 'left' as const,
         }}
       />
     </>
