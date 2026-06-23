@@ -76,7 +76,7 @@ SPN-0001(一滴の血＋$9B→$0グラフ) / 0008(他社の機械で検査) / 00
 - [ ] `coded/cards = 0`（全ショット実素材 or 図解で埋まっている）
 - [ ] 全ショットにモーション（静止画ゼロ）／Ken Burns 一辺倒でない
 - [ ] 字幕・テロップ・出典が**位置で分離**し被っていない／AI画像に `symbolic reconstruction` ラベル
-- [ ] 音4層＋**ダッキング**でナレ最優先（`06_audio/audio_cue_sheet.v001.md`）
+- [ ] 音4層＋**ダッキング**でナレ最優先（`06_audio/audio_cue_sheet.v001.md`）。**ナレ＝ElevenLabsで生成OK（課金承認待ち不要）**＝−14 LUFS / TP ≤ −1
 - [ ] **R3表現チェック**：実在人物の肖像/実写/ディープフェイクなし・断定有罪なし・**患者関連は無罪/評決不成立であり「有罪」表記なし**・意図は陪審/裁判所に帰属
 - [ ] **公開前 法務レビュー（R3）を実施・記録**（本書 §5 / EP15 は公開前に法務レビュー必須）
 - [ ] 中立・台本/claims 不改変
@@ -175,9 +175,9 @@ DL済みファクトリ棚（`assets/asset_manifest.v001.json`・全件 Pexels/P
 | 0009 | act2 | medical_lab | microscope_lab, test_tubes_rack_lab | BG（誤数値→誤判断の連鎖） | video |
 | 0010 | act2 | finance_money / documents_paper | stock_chart_crashing_red, documents_on_desk | BG（解散・$9B→0の背後） | video |
 | 0011 | act2 | atmosphere_symbolic | shattered_mirror, clock_ticking_macro | OVL/BG（Failure vs Fraud の橋渡し） | video |
-| 0012 | act3 | legal_court | balance_scale_brass, judge_gavel | BG（天秤＝詐欺の法定義） | video |
+| 0012 | act3 | legal_court | balance_scale_brass, judge_gavel_wooden | BG（天秤＝詐欺の法定義） | video |
 | 0024 | act3 | legal_court | courtroom_interior | BG（検察 vs 弁護の二分） | video |
-| **0013** | **act3** | **legal_court ＋ light/vfx** | **courtroom_interior, judge_gavel ＋ god_rays + smoke_on_black** | **BG＋OVL（山場・評決ボードに光＋vfxで“ため→開放”）** | **video** |
+| **0013** | **act3** | **legal_court ＋ light/vfx** | **courtroom_interior, judge_gavel_wooden ＋ god_rays + smoke_on_black** | **BG＋OVL（山場・評決ボードに光＋vfxで“ため→開放”）** | **video** |
 | 0014 | act3 | legal_court | balance_scale_brass | BG（無罪/評決不成立の続き・別色） | video |
 | 0015 | act3 | legal_court / documents_paper | courtroom_interior, documents_on_desk | BG（無罪≠潔白／Balwani全12件） | video |
 | 0016 | act3 | atmosphere_symbolic / legal_court | clock_ticking_macro, balance_scale_brass | BG＋OVL（量刑＝時間が積む象徴） | video |
@@ -218,3 +218,21 @@ DL済みファクトリ棚（`assets/asset_manifest.v001.json`・全件 Pexels/P
 4. **R3＝実在人物想起素材は不可**: 実機（Edison）・実ロゴ・雑誌表紙・記者の顔・実写の人物・特定の本社/施設を想起させる素材は使わない。一般的な研究室（modern_medical_lab 等）・抽象・象徴のみ。**一般ストックを「その事件の実物」として提示しない**（illustrative/symbolic）。`symbolic reconstruction` ラベルはAI画像に常時。
 5. **評決の区別を侵さない**: 投資家詐欺**4件＝GUILTY（事実として提示可）**／患者関連＝**ACQUITTED（無罪）**／3件＝**NO VERDICT（評決不成立）**。ファクトリの加飾（光・天秤・法廷b-roll）は**どの区別にも有罪のニュアンスを足さない**（0014は別色・GUILTY表記なし）。意図/認識は陪審・裁判所に帰属させ、加飾で断定有罪を演出しない。
 6. **中立**: 「失敗 or 詐欺」に肩入れする加飾（崩落・破壊の過剰演出で詐欺側に寄せる等）をしない。崩落系（stock_chart_crashing_red / shattered_mirror）は記録事実（評価額の下落・解散）に対応する箇所のみ・象徴の範囲で。
+
+---
+
+## 完成定義（書き出し前に全✓・＋公開前法務レビュー）
+
+書き出し前に**以下を全て満たす**こと（§4 品質ゲートと併用・本話はR3＝法務レビューを追加の最終ゲートとする）。
+
+- [ ] **4部構成**：フック → オープニング → 本編（act1〜act4・台本順に再配列） → エンディングになっている（§1）。
+- [ ] **coded/cards = 0**：全ショットが実素材／AI画像／コード演出（図解）で埋まり、空カード・プレースホルダがない（§4）。
+- [ ] **全カットが動いている**：静止画ゼロ・Ken Burns 一辺倒でない・全カットに映画的カメラ（寄り/引き/パララックス＋spring/ease、リニア禁止）（§2・§6末尾）。
+- [ ] **字幕がナレと語単位同期（ズレ≤約120ms）＆一字一句一致**、字幕／テロップ／出典／`symbolic reconstruction` ラベルが**位置で分離**し非重複（§3）。
+- [ ] **音4層（VO/BGM/SFX/ambience）＋ダッキング**でナレ最優先・**−14 LUFS / true peak ≤ −1 dBTP**。**ナレ＝ElevenLabsで生成OK（課金承認待ち不要）**（§4・`06_audio/audio_cue_sheet.v001.md`）。
+- [ ] **評決の区別を侵さない**：投資家詐欺**4件＝GUILTY（事実として提示可）**／患者関連＝**ACQUITTED（無罪）**／3件＝**NO VERDICT（評決不成立）**。「無罪 ≠ 潔白／技術が機能した」とは言わない。意図/認識は陪審・裁判所に帰属（§4・§5・§7.4）。
+- [ ] **実在人物（Holmes / Balwani 等）を想起させる素材なし**：肖像・実写・ディープフェイク・実機（Edison）・実ロゴ・雑誌表紙・記者・特定の本社/施設を出さない。AI画像に `symbolic reconstruction` ラベル常時（§3・§5・§7.4）。
+- [ ] **factory三層加飾**：①コード演出（主役・意味）／②AI画像（象徴・人物なし）／③ファクトリ（加飾・薄く1カット1〜2レイヤ）。license=allowed のみ・出典/sha256を `05_stock/stock_ledger.v001.json` に記録（§7・VIDEO_RULES §5）。
+- [ ] **山場 SPN-0013** が“ため→開放”でSFX（gavel_knock＋low_boom）・`god_rays`＋`smoke_on_black`・`LightSweep`色=GOLD と同期（§6・§7.4）。
+- [ ] **尺＝約12分（11.5〜12.5分）**・中立・台本/claims 不改変（Read専用）。
+- [ ] **公開前 法務レビュー（R3）を実施・記録（exact revision/hash）**。**法務レビュー記録なしに `publish_approved` へ進めない**（CLAUDE.md invariant 2、`.claude/rules/16-approval-boundaries.md`、VIDEO_RULES §6・§8）。← 本話の最終・不可侵ゲート。

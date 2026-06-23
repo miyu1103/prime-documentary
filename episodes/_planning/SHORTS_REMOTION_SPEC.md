@@ -75,7 +75,7 @@ export const shortDurationInFrames = (d: ShortData, fps: number) =>
 - **【重要】意味のあるアニメ（天秤/票/地図/年表/図解/数字）は MovingImage だけにせず、コード部品（`SceneArt`/`Motion`/`KineticType`/`DiagramFlow` 等）を背景の上にラップして出す。**各ビート種別への具体的な演出割当・縦用セーフエリア・新規縦コンポ（`VoteVertical` 等）は **`SHORTS_MOTION_DESIGN.md` を参照**。
 
 ## 6. 音（§11準拠・必須4層＋ダッキング）
-- **ナレ**＝0dB基準・常に明瞭。**BGM**＝−16dB目安、ナレ中は−22dBへ自動ダッキング。**環境音**＝−24dB薄く。**SFX**＝カット/リビール/数字/テロップ出現に短く（−10〜−6dB、`beat.fast`は強め）。
+- **ナレ＝ElevenLabsで生成してOK（課金承認待ち不要・止まらず進める）**（`VIDEO_RULES.md §11`）。0dB基準・常に明瞭。**BGM**＝−16dB目安、ナレ中は−22dBへ自動ダッキング。**環境音**＝−24dB薄く。**SFX**＝カット/リビール/数字/テロップ出現に短く（−10〜−6dB、`beat.fast`は強め）。
 - 実装：ナレの有無で BGM/ambience の `volume` を時間関数で下げる（簡易ダッキング）。クリップ無し。
 
 ## 7. 字幕（forced alignment・ぴったり同期＋見やすさ）
@@ -115,6 +115,6 @@ export const shortDurationInFrames = (d: ShortData, fps: number) =>
 > **指針**：意味のあるアニメはコード部品（`SceneArt`/`Motion`/`KineticType`/`DiagramFlow`）で出す。**MovingImage だけにしない。**各ショート・各ビートの演出割当と新規縦コンポ（`VoteVertical` 等・評決は話ごとに可変）は **`SHORTS_MOTION_DESIGN.md`** に詳細。
 1. `Short.tsx`（本仕様3・4・5）と `MovingImage`/`TelopLayer`/`CaptionLayer` を実装（長尺部品を縦流用）。型チェック必須。
 2. `build_short_data.py`（任意）→ `shortNN.ts` 生成、`Root.tsx` 登録。
-3. ナレ（課金前承認）→ forced alignment → `captions`。BGM/SFX/環境音を用意しミックス（ダッキング）。
+3. ナレ（**ElevenLabsで生成OK＝課金承認待ち不要**・止まらず進める）→ forced alignment → `captions`。BGM/SFX/環境音を用意しミックス（ダッキング）。
 4. `Short-shortNN` を studio で確認（受け入れ基準）。`ShortThumb-shortNN` でサムネ。
 5. 書き出し→初稿ゲートで停止。まず #1（short01）で1本通し、OKなら他に横展開。

@@ -237,7 +237,7 @@
 
 | 部品 | パス | 主要props |
 |---|---|---|
-| `SceneArt` | `remotion/src/components/SceneArt.tsx` | `visualMode`,`motifHint`,`onScreenText:string[]`,`seed?`。motif=gavel/scales/document/room/courtroom/map/timeline |
+| `SceneArt` | `remotion/src/components/SceneArt.tsx` | `visualMode`,`motifHint`,`onScreenText:string[]`,`seed?`。motif=gavel/scales/document/room/courtroom/map/timeline（`motifHint` に `"seal"`/`"warning-card"`/`"constitution"` を含めると **document**（印章スタンプ付き）にマップ＝§2の `"seal"` 指定は有効） |
 | `MovingStage`/`CameraRig`/`Particles`/`LightSweep`/`Vignette` | `remotion/src/components/Motion.tsx` | `seed`,`intensity?`,`color?` 等 |
 | `Grain` | `remotion/src/components/Grain.tsx` | `opacity?` |
 | `KineticType` | `remotion/src/components/KineticType.tsx` | `lines:{text,emphasis?,at}[]`,`align?`,`transparent?` |
@@ -339,3 +339,18 @@ DL済みファクトリ棚（`assets/asset_manifest.v001.json`・全件 Pexels/P
 
 - 字幕は **`SHORTS_REMOTION_SPEC.md` §7（ナレと語単位でぴったり同期＝ズレ≤約120ms・一字一句一致＋可読性数値）に従う**。本書のコード演出はこれを侵さない。
 - **テロップ(上ゾーン y180–560)と字幕(下ゾーン y1280–1560)を絶対に被らせない**（コード演出は中央ゾーン y600–1240 に収める・§2 セーフエリア厳守）。
+
+---
+
+## 完成定義（各ショート書き出し前に全✓）
+
+各ショート（#1〜#15）を `npm run render` で書き出す**前**に、下記を1本ずつ全項目チェックする。1つでも✗があれば書き出さない。**仕様A §11／本書 §5 の統合チェックリスト**（DoD）。
+
+- [ ] **(a) 形式**：1080×1920（9:16）／30fps／尺 35〜45秒（`durationSec` = beats合計）。
+- [ ] **(b) 全カット動く**：静止カットゼロ（`MovingImage` kenburns/parallax/pushin、動画は `Video`）。フックは速いカット＋SFX（`beat.fast`）。
+- [ ] **(c) 意味あるコード演出**：各ショートの“1つの驚き”ビート（多くはb2/オチ）に、票/地図/天秤/年表/図解/数字/崩落のいずれかのコード演出が**最低1つ**（§3表どおり）。MovingImageだけで山場を終えない。`VoteVertical` は**話ごとの評決**（§3評決欄＝9–0/8–1/5–4・反対人数）で表示し、5–4ハードコードでない。
+- [ ] **(d) ファクトリ三層加飾**：§B表の theme/subtype（**`FACTORY_INVENTORY.md` 実在名のみ**）で、背景プレート／光・粒子・vfxオーバーレイ（screen/add）／質感（overlay）を重ねる。1カット「背景プレート1＋オーバーレイ1〜2」まで。**縦セーフエリア厳守**（上下ゾーンに重要モチーフ・高輝度塊を被せない・横長素材は中央9:16クロップ）。
+- [ ] **(e) 字幕の同期と非重複**：ナレと語単位でぴったり同期（**ズレ≤約120ms**）・一字一句一致・1〜2行送り・可読性数値（56〜68px・白太字・縁取り＋半透明黒帯）。**テロップ(上 y180–560)／字幕(下 y1280–1560)／出典(左上 `CitationTopLeft`)／コード演出(中央 y600–1240)が位置で完全分離**し一度も被らない。下左 `CitationLowerThird` は縦では使わない。
+- [ ] **(f) 音4層＋ダッキング**：ナレ（**ElevenLabsで生成OK＝課金承認待ち不要**）＋BGM＋環境音＋SFX。ナレ中はBGM/環境音を自動ダッキング。クリップ/ノイズ無し。
+- [ ] **(g) 権利・安全**：実在人物の肖像・本人映像なし（#4/#5/#11/#13/#15 は特に厳守）。一般ストックは illustrative/symbolic（実物・実在人物そのものとして提示しない）。中立・広告安全・ブランド配色（黒/紺/青/金）。`license=allowed` のみ・出典/sha256記録。**#15 Theranos は R3＝公開前に法務レビュー必須**。
+- [ ] **CTA／サムネ／公開**：末尾CTA（`BrandEndcard`＋本編リンク・URLはオーナー差し込み）。縦サムネ（`ShortThumb`・大文言）あり。公開は**6/24以降**・各ゲートで停止（唯一の停止点＝YouTubeアップロード直前）。

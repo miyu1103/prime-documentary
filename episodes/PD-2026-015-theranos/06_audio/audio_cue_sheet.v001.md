@@ -33,7 +33,8 @@
 | **エンディング** SPN0020,0021,0022 | `outro`（解決・希望） | なし〜薄く | `dust_swell`/`riser_2s`（0020 総括の引き）, `soft_impact`+`ui_tick`（0022 Subscribe） | シリーズ総括「many costumes・where is the line?」→線を引き直し続ける→CTA/フォロー誘導 |
 
 ## 3. 工程と保存先
-- ナレ生成: `script.en.v001.md` の `[VO:]` → ElevenLabs → ドラフト `H:\pd-media\episodes\PD-2026-015-theranos\06_voice\draft\VC-XXXX.mp3` → マスター `…\06_voice\master\VC-XXXX.mp3`。
+- **ナレ＝ElevenLabsで生成OK（課金承認待ち不要）**。中間ゲート無効＝オーナー確認待ちで止めない（VIDEO_RULES §8）。唯一の停止点はYouTubeアップロード直前、＋本話はR3＝公開前法務レビュー必須（§4・本書末尾）。
+- ナレ生成: `script.en.v001.md` の `[VO:]` → ElevenLabs（生成OK・承認待ち不要） → ドラフト `H:\pd-media\episodes\PD-2026-015-theranos\06_voice\draft\VC-XXXX.mp3` → マスター `…\06_voice\master\VC-XXXX.mp3`。
 - ナレ計画/索引(git): `06_audio/voice_plan.v001.json` / `06_audio/narration_index.v001.json`。
 - 字幕(git): forced alignment で `08_edit/captions.v001.srt`(+`.json`)。テロップと**被らせない**（位置で分離・`edit_design.v001.md` §3）。
 - BGM/SFX/環境音の実体は `H:\pd-media\library\` を参照（話別が要れば `…\07_audio\` にコピー）。

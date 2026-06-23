@@ -6,6 +6,7 @@
 **この話のトーン**: 緊張（追跡・扉）→説明（聖域としての家）→山場（2021・9–0・差戻し）→内省（明快な線ではない）→締め（玄関の一線）＋次回フィナーレ予告。住居プライバシー vs 警察の安全は音でも公平に（どちらかを煽り過ぎない）。
 
 ## 0. 4層の役割
+> **ナレ＝ElevenLabsで生成OK（課金承認待ち不要・止まらず進める）**。VIDEO_RULES §11／§8（ノンストップ運用）準拠。ナレ生成ゲートで停止しない（重大な事実誤り・権利リスク発見時のみ即停止）。手順は §3。
 1. **VO（ナレ）** = 最優先。`06_voice/master/VC-XXXX.mp3`。常に明瞭。
 2. **BGM** = `music/<mood>` から1曲/章。控えめ。
 3. **SFX** = カット/リビール/数字/テロップ出現/扉・足の効果音。
@@ -32,7 +33,7 @@
 > 実在ファイル例（棚と一致）: BGM `music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3`, `music/reveal/mus_20260614_reveal_verdict_at_dawn_v1.mp3`, `music/somber/mus_20260614_somber_ledger_of_ash_v1.mp3`, `music/outro/mus_20260614_outro_last_frame_v1.mp3`。SFX `sfx/sfx_gavel_knock.mp3`, `sfx/sfx_stamp_seal.mp3`, `sfx/sfx_low_boom.mp3`, `sfx/sfx_soft_impact.mp3`, `sfx/sfx_sub_drop.mp3`, `sfx/sfx_riser_2s.mp3`, `sfx/sfx_whoosh_short.mp3`, `sfx/sfx_whoosh_medium.mp3`, `sfx/sfx_ui_tick.mp3`, `sfx/sfx_data_blip.mp3`, `sfx/sfx_page_turn.mp3`, `sfx/sfx_paper_rustle.mp3`, `sfx/sfx_clock_tick_loop.mp3`。環境音 `ambience/amb_night_window.mp3`, `amb_courtroom_room_tone.mp3`, `amb_institutional_drone.mp3`, `amb_empty_hallway.mp3`, `amb_tension_drone.mp3`。
 
 ## 3. 工程と保存先
-- ナレ生成: `script.en.v001.md` の `[VO:]` → ElevenLabs → ドラフト `H:\pd-media\episodes\PD-2026-014-lange\06_voice\draft\VC-XXXX.mp3` → マスター `…\06_voice\master\VC-XXXX.mp3`。
+- ナレ生成: `script.en.v001.md` の `[VO:]` → **ElevenLabs（生成OK・課金承認待ち不要・止まらず進める）** → ドラフト `H:\pd-media\episodes\PD-2026-014-lange\06_voice\draft\VC-XXXX.mp3` → マスター `…\06_voice\master\VC-XXXX.mp3`。台本本文（`[VO:]`）は一字一句変えない。
 - ナレ計画/索引(git): `06_audio/voice_plan.v001.json` / `06_audio/narration_index.v001.json`。
 - 字幕(git): forced alignment で `08_edit/captions.v001.srt`(+`.json`)。テロップと**被らせない**（位置で分離・`edit_design.v001.md` §3）。
 - BGM/SFX/環境音の実体は `H:\pd-media\library\` を参照（話別が要れば `…\07_audio\` にコピー）。

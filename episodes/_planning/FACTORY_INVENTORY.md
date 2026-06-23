@@ -14,18 +14,17 @@
   - 抽出後 `remotion/public/<slug>/factory/` へコピーして使用。
 - **物理フォルダ整理（factory/<category>/<theme>/）は保留**：DLが完全停止してから `scripts/recategorize_factory.py` を1回実行（実行中はビルダーに上書きされ不整合になるため）。逆操作＝`scripts/revert_factory_reorg.py`。
 
-## 総量
-- **総点数 65,543（≈221GB）／ image 53,960・video 11,583。**
-- カテゴリ（14分類中6カテゴリが充実、他8は未充填）:
+## 総量（2026-06-23 DL完了・確定）
+- **総点数 88,740。** カテゴリ別：
 
-| カテゴリ | 点数 | image | video | 用途 |
-|---|---|---|---|---|
-| backgrounds | 45,027 | 36,939 | 8,088 | **テーマ別の本格b-roll/確立ショット/背景プレート**（190サブタイプ） |
-| light_assets | 6,169 | 5,034 | 1,135 | 光・フレア・リーク（reveal/雰囲気の加飾, screen/add） |
-| vfx_overlays | 5,076 | 4,137 | 939 | 煙/水/稲妻/インク/火花（転換・reveal, screen/add） |
-| particle_assets | 4,973 | 4,004 | 969 | 塵/雪/灰/火の粉/蛍（奥行き・空気感, screen/add） |
-| texture_assets | 3,846 | 3,846 | 0 | 紙/羊皮紙/blueprint/古地図/木/大理石（書類/カード/年表の下地, overlay） |
-| loops | 452 | 0 | 452 | 抽象ループ背景（network/data_stream/gradient/light_rays/particles） |
+| カテゴリ | 点数 | 用途 |
+|---|---|---|
+| backgrounds | 64,154 | **テーマ別の本格b-roll/確立ショット/背景プレート**（約190サブタイプ・image/video両方） |
+| light_assets | 7,428 | 光・フレア・リーク（reveal/雰囲気の加飾, screen/add） |
+| particle_assets | 6,564 | 塵/雪/灰/火の粉/蛍（奥行き・空気感, screen/add） |
+| vfx_overlays | 6,229 | 煙/水/稲妻/インク/火花（転換・reveal, screen/add） |
+| texture_assets | 3,911 | 紙/羊皮紙/blueprint/古地図/木/大理石（書類/カード/年表の下地, overlay） |
+| loops | 454 | 抽象ループ背景（network/data_stream/gradient/light_rays/particles・動画） |
 
 > 未充填（必要なら別途）: parallax_layers, transitions, typography_assets, diagram_assets, sfx, ai_video_shots, lottie_assets, ui_motion_assets。
 
