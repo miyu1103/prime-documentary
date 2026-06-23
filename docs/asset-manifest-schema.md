@@ -52,7 +52,7 @@
 
 | フィールド | 型 | 必須 | 値域 / enum | 説明・例 |
 |---|---|:--:|---|---|
-| `id` | string | ◎ | `^AF-[A-Z_]+-[0-9]{4}$` | Asset Factory ID。例 `AF-BACKGROUNDS-0007`。`PD-...` とは別系統。 |
+| `id` | string | ◎ | `^AF-[A-Z_]+-[0-9]{4,}$` | Asset Factory ID。例 `AF-BACKGROUNDS-0007`。`PD-...` とは別系統。 |
 | `type` | string(enum) | ◎ | 下記 **14 カテゴリ** | 素材棚のカテゴリ。例 `backgrounds`。 |
 | `subtype` | string | ◎ | 自由文字列（カテゴリ内の細分） | 例 `abstract_data_grid`, `paper_tear`, `whoosh_low`。 |
 | `path` | string(uri) | ◎ | 論理 URI（`artifact://` / repo 相対 / `<media>` 相対） | 素材本体。例 `artifact://assets/backgrounds/AF-BACKGROUNDS-0007.mp4`。 |
