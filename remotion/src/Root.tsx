@@ -7,6 +7,7 @@ import {StyleTest} from './compositions/StyleTest';
 import {Animatic, animaticDurationInFrames, durationInFramesFor} from './compositions/Animatic';
 import {GIDEON_ANIMATIC, GIDEON_SCENE_IMG} from './data/gideon_animatic';
 import {GideonPremium, gideonPremiumDurationInFrames} from './compositions/GideonPremium';
+import {MirandaPremium, mirandaPremiumDurationInFrames} from './compositions/MirandaPremium';
 import {MappPremium, mappPremiumDurationInFrames} from './compositions/MappPremium';
 import {MadoffPremium, madoffPremiumDurationInFrames} from './compositions/MadoffPremium';
 import {KeloPremium, keloPremiumDurationInFrames} from './compositions/KeloPremium';
@@ -15,6 +16,7 @@ import {MahanoyPremium, mahanoyPremiumDurationInFrames} from './compositions/Mah
 import {ArbitrationPremium, arbitrationPremiumDurationInFrames} from './compositions/ArbitrationPremium';
 import {KingPremium, kingPremiumDurationInFrames} from './compositions/KingPremium';
 import {KingThumbnailFrame} from './compositions/KingThumbnailFrame';
+import {MirandaThumbnailFrame} from './compositions/MirandaThumbnailFrame';
 import {ClipProof} from './compositions/ClipProof';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
@@ -100,6 +102,14 @@ export const RemotionRoot: React.FC = () => {
         id="GideonPremium"
         component={GideonPremium}
         durationInFrames={gideonPremiumDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="MirandaPremium"
+        component={MirandaPremium}
+        durationInFrames={mirandaPremiumDurationInFrames(BRAND.video.fps)}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
@@ -215,6 +225,78 @@ export const RemotionRoot: React.FC = () => {
           title: 'Why Do Police Read You Your Rights?',
           backgroundSrc: null,
           variant: 'left' as const,
+        }}
+      />
+      <Still
+        id="MirandaThumbnailA"
+        component={ThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{
+          title: 'The 4 Sentences That Rewrote Every U.S. Arrest',
+          backgroundSrc: 'miranda/thumbs/THUMB-01.png',
+          variant: 'left' as const,
+        }}
+      />
+      <Still
+        id="MirandaThumbnailB"
+        component={ThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{
+          title: 'He Won at the Supreme Court — and Still Went to Prison',
+          backgroundSrc: 'miranda/thumbs/THUMB-01.png',
+          variant: 'left' as const,
+        }}
+      />
+      <Still
+        id="MirandaThumbnailC"
+        component={ThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{
+          title: 'Why Police MUST Read You Your Rights',
+          backgroundSrc: 'miranda/thumbs/THUMB-01.png',
+          variant: 'left' as const,
+        }}
+      />
+      <Still
+        id="MirandaThumbnailA2"
+        component={MirandaThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{
+          backgroundSrc: 'miranda/thumbs/THUMB-05.png',
+          line1: 'READ RIGHTS',
+          line2: "OR IT'S OUT",
+          badge: 'The warning police must say',
+          variant: 'red_alert' as const,
+        }}
+      />
+      <Still
+        id="MirandaThumbnailB2"
+        component={MirandaThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{
+          backgroundSrc: 'miranda/thumbs/THUMB-01.png',
+          line1: 'HE WON',
+          line2: 'STILL GUILTY',
+          badge: 'The twist behind Miranda rights',
+          variant: 'gold_verdict' as const,
+        }}
+      />
+      <Still
+        id="MirandaThumbnailC2"
+        component={MirandaThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{
+          backgroundSrc: 'miranda/thumbs/THUMB-05.png',
+          line1: 'POLICE',
+          line2: 'MUST SAY THIS',
+          badge: 'Miranda rights explained',
+          variant: 'blue_rights' as const,
         }}
       />
       <Still
