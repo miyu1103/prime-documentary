@@ -266,7 +266,7 @@ const bodyScenes: Scene[] = [
     rawDur: 24.0,
     title: 'A trade decided by one vote',
     kicker: 'ACT IV',
-    images: imgs('SPN-0018', 7),
+    images: imgs('SPN-0018', 6),
     overlay: ['king/factory/AF-PART-0052__dust_particles_floating.mp4'],
   },
   {
@@ -284,7 +284,7 @@ const bodyScenes: Scene[] = [
     rawDur: 20.4,
     title: 'Pockets → phone → property → contracts → body',
     kicker: 'ENDING',
-    images: imgs('SPN-0020', 7),
+    images: imgs('SPN-0020', 5),
     factory: ['king/factory/AF-BG-7464__circuit_data_flow.mp4', 'king/factory/AF-LOOP-0002__abstract_loop_dark.mp4'],
   },
   {
