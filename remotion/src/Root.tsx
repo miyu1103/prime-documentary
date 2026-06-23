@@ -13,6 +13,7 @@ import {KeloPremium, keloPremiumDurationInFrames} from './compositions/KeloPremi
 import {KeloThumbnailFrame} from './compositions/KeloThumbnailFrame';
 import {MahanoyPremium, mahanoyPremiumDurationInFrames} from './compositions/MahanoyPremium';
 import {ArbitrationPremium, arbitrationPremiumDurationInFrames} from './compositions/ArbitrationPremium';
+import {KingPremium, kingPremiumDurationInFrames} from './compositions/KingPremium';
 import {ClipProof} from './compositions/ClipProof';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
@@ -138,6 +139,14 @@ export const RemotionRoot: React.FC = () => {
         id="ArbitrationPremium"
         component={ArbitrationPremium}
         durationInFrames={arbitrationPremiumDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="KingPremium"
+        component={KingPremium}
+        durationInFrames={kingPremiumDurationInFrames(BRAND.video.fps)}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
