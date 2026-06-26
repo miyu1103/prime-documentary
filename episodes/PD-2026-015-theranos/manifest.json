@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-015",
   "slug": "theranos",
   "title_working": "When Does a Bold Promise Become a Crime? The Rise and Fall of Theranos",
-  "state": "edit_review",
+  "state": "owner_review_required",
   "risk_class": "R3",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -22,12 +22,18 @@
     "review_proxy_captions": "v001",
     "review_proxy_qc": "v001",
     "thumbnail_candidates": "v001",
-    "youtube_meta": "v001",
-    "rights_manifest": "v001",
-    "final_delivery": "v001",
-    "owner_review_request": "v001",
-    "approval_drafts": "v001",
-    "legal_rights_review_packet": "v001"
+    "youtube_meta": "v002",
+    "rights_manifest": "v002",
+    "final_delivery": "v002",
+    "owner_review_request": "v002",
+    "approval_drafts": "v002",
+    "legal_rights_review_packet": "v002",
+    "captions_final": "v001",
+    "audio_mix": "v001",
+    "final_acceptance": "v001",
+    "chapters": "v002",
+    "tags": "v002",
+    "title": "v002"
   },
   "artifacts": [
     {
@@ -69,6 +75,76 @@
       "status": "candidate",
       "rights_status": "conditional",
       "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v002",
+      "artifact_type": "final_delivery",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v002.json",
+      "checksum": "sha256:553b748fb85c170c9a678bfbaecef79abf9656bcd19c5bd5db6cdc2002fd8c7d",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v002",
+      "artifact_type": "youtube_metadata",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v002.json",
+      "checksum": "sha256:7956202864e852374bfb99cc366bb61e74b3f99b493022695fc7708f1194ce42",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v002",
+      "artifact_type": "rights_manifest",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v002.json",
+      "checksum": "sha256:a5365d98f8c60538a85b381fc60b9fe4e07d1a5075237cf7de9430a3811d343a",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v002",
+      "artifact_type": "owner_review_request",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v002.json",
+      "checksum": "sha256:5206dcf0f070f58e656057dd43e3091580fad60b395d2d31fd617687e6638f9b",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v002",
+      "artifact_type": "approval_drafts",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v002.json",
+      "checksum": "sha256:564f4e1b07b5c0bbeac54bedb38c318ad7628acd126b11df1c2c08ffd80d468c",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v002",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v002.json",
+      "checksum": "sha256:70d82f01f0f6c1f292dc30f06f8a2d5c42aab5c62a90983a88c8435b430ec33a",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v001",
+      "artifact_type": "final_acceptance",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v001.acceptance.json",
+      "checksum": "sha256:c42dc305e157932c3234d3efca704b46636accb0cfb1b257710b16fc54627572",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
     }
   ],
   "approvals": [
@@ -101,7 +177,7 @@
     "Heavy media on the external SSD (H:\\pd-media), not in this repo.",
     "Review-proxy package prepared; public upload/schedule still blocked by owner approval and final narration/legal gates.",
     "Theranos legal_rights_review_packet.v001 prepared; public release remains blocked until owner/legal review and final narration decision are recorded for exact hashes.",
-    "EDIT/RUNTIME (binding): finished render MUST be 690-750s (11.5-12.5min; target ~715s) per edit_design.v002 §1 budget. Enforce with scripts/check_runtime_band.py BEFORE accepting any render. Current review_proxy v003 is 624.96s (10.42min) = SHORT by ~65s (hook + breathing beats not yet built) and must be rebuilt to the §1 budget from existing footage/VO/music (no re-record, no new assets)."
+    "Final candidate v002 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v001.mp4 sha256=sha256:61166f21665e0c0f4d7dd00582278f9613de27736ec8efb9619e9a494c18d418; public release remains blocked by APR-0002..APR-0006 including R3 legal review."
   ],
   "blockers": [
     "Owner approval required for exact first-cut review video before finalization (APR-0002).",
@@ -111,5 +187,5 @@
     "Owner publish/schedule approval required before any upload, schedule, or public release (APR-0006)."
   ],
   "created_at": "2026-06-20T08:00:00+09:00",
-  "updated_at": "2026-06-26T09:53:36+09:00"
+  "updated_at": "2026-06-26T19:30:16.175738+00:00"
 }
