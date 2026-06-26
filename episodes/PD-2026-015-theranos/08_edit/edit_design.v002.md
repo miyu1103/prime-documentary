@@ -31,6 +31,8 @@
 
 > **増やす尺はすべてナレを足さない**（held ビジュアル＋音楽＋既存VO断片のみ）＝**ナレ録り直し・ElevenLabs追加課金・字幕の作り直しは発生しない**。台本／claims／shotlist は **Read専用・不改変**（不変項6・12）。**R3：余韻・間・フックで断定有罪の含意を足さない／患者関連の無罪・評決不成立の区別を崩さない**（GUILTY表記は投資家詐欺4件のみ）。間延びさせず密度で稼ぐ（カット切替は約4.5秒を維持＝§2）。
 >
+> **【v002 実測補正・ナレ生成後 2026-06-27】** ElevenLabs本番ナレを生成済み＝**実VO合計556秒**（master: `H:\pd-media\episodes\PD-2026-015-theranos\06_voice\master\vc_master_v001.mp3` / 索引 `06_audio/narration_index.v001.json`・provider=ElevenLabs）。これは shotlist推定(612.4s)より**短い**。よって本編尺は上表の612.4sではなく**実VO556s＋幕間/余韻**で構成し、**幕間"ひと呼吸"＋山場の余韻＋主要グラフの間で合計約120〜130秒**を足して **690〜750秒** に乗せる（フック7s・窓690〜750sは不変）。**Codexは shotlist推定でなく `narration_index.v001.json` の実チャンク start/end で視覚を再タイミングすること**（各VCの章はindexの`section`どおり：VC-0001=HOOK段落…VC-0025=ENDING）。
+>
 > ### 1.1 なぜ尺が足りなくなるか（14話の教訓・本改訂の理由）
 > 14話(lange)は本編ナレ ~10.3分で、**書き出し直前にフックを引き伸ばして 11.5〜12.5分の窓に押し込んだ**（`final.v003.qc.json` ノート「Hook was extended to bring runtime into the requested 11.5–12.5 minute window」）。これが「色々やり直し」の一因。原因は2つ：(a) フックと“ひと呼吸”が**目安**としか書かれず、実装で省略されて本編＋開閉だけの ~10.4分になった。(b) レンダーQCが**尺の窓を検査していない**（`duration_positive` だけ）ので短い尺でも PASS してしまう。15話も現状この穴を抱えたまま（proxy v003＝10.42分）。本v002で (a)を**秒バジェットの必須項目化**、(b)を **`check_runtime_band.py` の不可侵ゲート化**で塞ぐ。
 >
