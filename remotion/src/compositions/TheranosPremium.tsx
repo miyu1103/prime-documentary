@@ -17,6 +17,7 @@ import {Grain} from '../components/Grain';
 import {LightSweep, Particles, Vignette} from '../components/Motion';
 import {SceneArt} from '../components/SceneArt';
 import {THERANOS_CAPTIONS} from '../data/theranos_captions';
+import {THERANOS_FACTORY_ASSETS, type TheranosFactoryAsset} from '../data/theranos_factory_assets';
 import {THERANOS_ROUGHCUT} from '../data/theranos_roughcut';
 
 const FPS = BRAND.video.fps;
@@ -302,11 +303,60 @@ const CaptionBand: React.FC = () => {
   );
 };
 
+const factoryFor = (spanId: string, role: TheranosFactoryAsset['role']): TheranosFactoryAsset[] =>
+  THERANOS_FACTORY_ASSETS.filter((item) => item.role === role && item.useScenes.includes(spanId));
+
+const FactoryImage: React.FC<{asset: TheranosFactoryAsset; opacity: number; blend: React.CSSProperties['mixBlendMode']; scale?: number; blur?: number}> = ({
+  asset,
+  opacity,
+  blend,
+  scale = 1.04,
+  blur = 0,
+}) => {
+  const frame = useCurrentFrame();
+  const p = Math.sin(frame * 0.006 + asset.id.length) * 10;
+  return (
+    <Img
+      src={staticFile(asset.staticPath)}
+      style={{
+        position: 'absolute',
+        inset: '-4%',
+        width: '108%',
+        height: '108%',
+        objectFit: 'cover',
+        opacity,
+        mixBlendMode: blend,
+        transform: `translate3d(${p}px, ${-p * 0.45}px, 0) scale(${scale})`,
+        filter: `saturate(0.78) contrast(1.16) brightness(0.82)${blur > 0 ? ` blur(${blur}px)` : ''}`,
+        pointerEvents: 'none',
+      }}
+    />
+  );
+};
+
+const FactoryLayers: React.FC<{scene: BodyScene}> = ({scene}) => {
+  const bg = factoryFor(scene.spanId, 'bg')[0];
+  const light = factoryFor(scene.spanId, 'light')[0] ?? (scene.chapter === 'act3' ? THERANOS_FACTORY_ASSETS.find((item) => item.id === 'AF-LIGHT-0220') : undefined);
+  const vfx = factoryFor(scene.spanId, 'vfx')[0];
+  const particle = factoryFor(scene.spanId, 'particle')[0];
+  const texture = factoryFor(scene.spanId, 'texture')[0];
+  return (
+    <>
+      {bg ? <FactoryImage asset={bg} opacity={0.16} blend="screen" scale={1.08} blur={0.2} /> : null}
+      {texture ? <FactoryImage asset={texture} opacity={0.09} blend="overlay" scale={1.02} /> : null}
+      {light ? <FactoryImage asset={light} opacity={scene.kind === 'verdictGuilty' ? 0.32 : 0.17} blend="screen" scale={1.05} blur={0.4} /> : null}
+      {vfx ? <FactoryImage asset={vfx} opacity={scene.kind.includes('verdict') ? 0.19 : 0.11} blend="screen" scale={1.1} /> : null}
+      {particle ? <FactoryImage asset={particle} opacity={0.13} blend="screen" scale={1.06} /> : null}
+    </>
+  );
+};
+
 const SceneShell: React.FC<{scene: BodyScene; media: React.ReactNode; children?: React.ReactNode}> = ({scene, media, children}) => (
   <AbsoluteFill style={{backgroundColor: INK, overflow: 'hidden'}}>
     {media}
     <AbsoluteFill style={{background: `linear-gradient(180deg, ${INK}B8 0%, #00000024 44%, ${INK}DD 100%)`}} />
     <AbsoluteFill style={{background: `radial-gradient(78% 64% at 68% 45%, ${scene.chapter === 'act3' ? `${GOLD}24` : `${BLUE}20`} 0%, #00000000 70%)`, mixBlendMode: 'screen'}} />
+    <FactoryLayers scene={scene} />
     <LightSweep seed={scene.spanId} color={scene.chapter === 'act3' ? GOLD : BLUE} />
     <Particles seed={scene.spanId} color={scene.chapter === 'act3' ? GOLD : BLUE} count={22} />
     {children}
