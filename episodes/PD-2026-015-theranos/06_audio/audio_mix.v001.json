@@ -1,0 +1,482 @@
+{
+  "episode_id": "PD-2026-015-theranos",
+  "revision": "v001",
+  "created_at": "2026-06-26T18:08:07.450045+00:00",
+  "timeline_seconds": 705.259,
+  "voice_source": {
+    "provider": "ElevenLabs",
+    "master": "artifact://episodes/PD-2026-015-theranos/06_voice/master/vc_master_v001.mp3",
+    "master_sha256": "sha256:6fee72875c34867cf8e37d34bbbdee769bbbf4735cbeb7adf884e886760a58b0",
+    "method": "ffmpeg atrim from approved master plus timeline holds; no regeneration",
+    "voice_timeline": "artifact://episodes/PD-2026-015-theranos/06_voice/master/theranos_vo_timeline_v001.wav",
+    "voice_timeline_sha256": "sha256:12de99d350748be5bdf793dc2063443f5cff7436ab6b9cb50852adc683bcee0e"
+  },
+  "mix": {
+    "master": "artifact://episodes/PD-2026-015-theranos/06_voice/master/theranos_mix_v001.mp3",
+    "master_sha256": "sha256:e835d8aa3cc8e0d754d827e983d649db2f1666791a28e2dc613fdd0d90661dff",
+    "remotion_static_audio": "theranos/audio/theranos_mix_v001.mp3",
+    "duration_seconds": 705.218,
+    "loudness_probe": {
+      "input_i": -14.16,
+      "input_tp": -3.11,
+      "input_lra": 6.7,
+      "target_offset": 0.57
+    },
+    "layers": [
+      "voice",
+      "bgm",
+      "sfx",
+      "ambience"
+    ],
+    "ducking": "FFmpeg sidechaincompress on BGM and ambience keyed by master-derived VO timeline"
+  },
+  "placements": [
+    {
+      "span_id": "SPN-0001",
+      "chunk_id": "VC-0001",
+      "start": 12.0,
+      "source_start": 0.0,
+      "source_end": 27.725,
+      "seconds": 27.725,
+      "end": 39.725
+    },
+    {
+      "span_id": "SPN-0002",
+      "chunk_id": "VC-0002",
+      "start": 47.725,
+      "source_start": 28.075,
+      "source_end": 64.345,
+      "seconds": 36.27,
+      "end": 83.995
+    },
+    {
+      "span_id": "SPN-0003",
+      "chunk_id": "VC-0003",
+      "start": 95.495,
+      "source_start": 64.695,
+      "source_end": 74.076,
+      "seconds": 9.381,
+      "end": 104.876
+    },
+    {
+      "span_id": "SPN-0004",
+      "chunk_id": "VC-0004",
+      "start": 104.876,
+      "source_start": 74.426,
+      "source_end": 99.968,
+      "seconds": 25.542,
+      "end": 130.418
+    },
+    {
+      "span_id": "SPN-0005",
+      "chunk_id": "VC-0005",
+      "start": 130.418,
+      "source_start": 100.318,
+      "source_end": 124.699,
+      "seconds": 24.381,
+      "end": 154.799
+    },
+    {
+      "span_id": "SPN-0023",
+      "chunk_id": "VC-0006",
+      "start": 162.799,
+      "source_start": 125.049,
+      "source_end": 144.507,
+      "seconds": 19.458,
+      "end": 182.257
+    },
+    {
+      "span_id": "SPN-0006",
+      "chunk_id": "VC-0007",
+      "start": 182.257,
+      "source_start": 144.857,
+      "source_end": 169.099,
+      "seconds": 24.242,
+      "end": 206.499
+    },
+    {
+      "span_id": "SPN-0007",
+      "chunk_id": "VC-0008",
+      "start": 217.999,
+      "source_start": 169.449,
+      "source_end": 179.155,
+      "seconds": 9.706,
+      "end": 227.705
+    },
+    {
+      "span_id": "SPN-0008",
+      "chunk_id": "VC-0009",
+      "start": 227.705,
+      "source_start": 179.505,
+      "source_end": 202.539,
+      "seconds": 23.034,
+      "end": 250.739
+    },
+    {
+      "span_id": "SPN-0009",
+      "chunk_id": "VC-0010",
+      "start": 250.739,
+      "source_start": 202.889,
+      "source_end": 213.338,
+      "seconds": 10.449,
+      "end": 261.188
+    },
+    {
+      "span_id": "SPN-0010",
+      "chunk_id": "VC-0011",
+      "start": 261.188,
+      "source_start": 213.688,
+      "source_end": 238.115,
+      "seconds": 24.427,
+      "end": 285.615
+    },
+    {
+      "span_id": "SPN-0011",
+      "chunk_id": "VC-0012",
+      "start": 292.615,
+      "source_start": 238.465,
+      "source_end": 261.221,
+      "seconds": 22.756,
+      "end": 315.371
+    },
+    {
+      "span_id": "SPN-0012",
+      "chunk_id": "VC-0013",
+      "start": 326.871,
+      "source_start": 261.571,
+      "source_end": 271.556,
+      "seconds": 9.985,
+      "end": 336.856
+    },
+    {
+      "span_id": "SPN-0012",
+      "chunk_id": "VC-0014",
+      "start": 336.856,
+      "source_start": 271.906,
+      "source_end": 301.488,
+      "seconds": 29.582,
+      "end": 366.438
+    },
+    {
+      "span_id": "SPN-0024",
+      "chunk_id": "VC-0015",
+      "start": 366.438,
+      "source_start": 301.838,
+      "source_end": 327.937,
+      "seconds": 26.099,
+      "end": 392.537
+    },
+    {
+      "span_id": "SPN-0013",
+      "chunk_id": "VC-0016",
+      "start": 392.537,
+      "source_start": 328.287,
+      "source_end": 351.553,
+      "seconds": 23.266,
+      "end": 415.803
+    },
+    {
+      "span_id": "SPN-0014",
+      "chunk_id": "VC-0017",
+      "start": 435.803,
+      "source_start": 351.903,
+      "source_end": 368.343,
+      "seconds": 16.44,
+      "end": 452.243
+    },
+    {
+      "span_id": "SPN-0015",
+      "chunk_id": "VC-0018",
+      "start": 452.243,
+      "source_start": 368.693,
+      "source_end": 411.139,
+      "seconds": 42.446,
+      "end": 494.689
+    },
+    {
+      "span_id": "SPN-0016",
+      "chunk_id": "VC-0019",
+      "start": 494.689,
+      "source_start": 411.489,
+      "source_end": 427.789,
+      "seconds": 16.3,
+      "end": 510.989
+    },
+    {
+      "span_id": "SPN-0017",
+      "chunk_id": "VC-0020",
+      "start": 522.489,
+      "source_start": 428.139,
+      "source_end": 449.919,
+      "seconds": 21.78,
+      "end": 544.269
+    },
+    {
+      "span_id": "SPN-0018",
+      "chunk_id": "VC-0021",
+      "start": 544.269,
+      "source_start": 450.269,
+      "source_end": 468.706,
+      "seconds": 18.437,
+      "end": 562.706
+    },
+    {
+      "span_id": "SPN-0019",
+      "chunk_id": "VC-0022",
+      "start": 570.706,
+      "source_start": 469.056,
+      "source_end": 491.161,
+      "seconds": 22.105,
+      "end": 592.811
+    },
+    {
+      "span_id": "SPN-0020",
+      "chunk_id": "VC-0023",
+      "start": 604.311,
+      "source_start": 491.511,
+      "source_end": 524.623,
+      "seconds": 33.112,
+      "end": 637.423
+    },
+    {
+      "span_id": "SPN-0021",
+      "chunk_id": "VC-0024",
+      "start": 644.423,
+      "source_start": 524.973,
+      "source_end": 546.01,
+      "seconds": 21.037,
+      "end": 665.46
+    },
+    {
+      "span_id": "SPN-0022",
+      "chunk_id": "VC-0025",
+      "start": 670.46,
+      "source_start": 546.36,
+      "source_end": 556.159,
+      "seconds": 9.799,
+      "end": 680.259
+    }
+  ],
+  "music_segments": [
+    {
+      "start": 0.0,
+      "end": 4.0,
+      "file": "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3",
+      "volume": 0.2
+    },
+    {
+      "start": 4.0,
+      "end": 8.5,
+      "file": "music/hook/mus_20260614_hook_glass_air_bed_v1.mp3",
+      "volume": 0.2
+    },
+    {
+      "start": 8.5,
+      "end": 12.0,
+      "file": "music/opening/mus_20260614_opening_measured_arpeggio_v1.mp3",
+      "volume": 0.16
+    },
+    {
+      "start": 12.0,
+      "end": 95.495,
+      "file": "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v1.mp3",
+      "volume": 0.12
+    },
+    {
+      "start": 95.495,
+      "end": 217.999,
+      "file": "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v1.mp3",
+      "volume": 0.11
+    },
+    {
+      "start": 217.999,
+      "end": 326.871,
+      "file": "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3",
+      "volume": 0.12
+    },
+    {
+      "start": 326.871,
+      "end": 392.537,
+      "file": "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3",
+      "volume": 0.12
+    },
+    {
+      "start": 392.537,
+      "end": 452.243,
+      "file": "music/reveal/mus_20260614_reveal_verdict_at_dawn_v1.mp3",
+      "volume": 0.14
+    },
+    {
+      "start": 452.243,
+      "end": 522.489,
+      "file": "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3",
+      "volume": 0.105
+    },
+    {
+      "start": 522.489,
+      "end": 604.311,
+      "file": "music/somber/mus_20260614_somber_ledger_of_ash_v1.mp3",
+      "volume": 0.105
+    },
+    {
+      "start": 604.311,
+      "end": 705.259,
+      "file": "music/outro/mus_20260614_outro_last_frame_v1.mp3",
+      "volume": 0.14
+    }
+  ],
+  "ambience_segments": [
+    {
+      "start": 0.0,
+      "end": 95.5,
+      "file": "ambience/amb_tension_drone.mp3",
+      "volume": 0.045
+    },
+    {
+      "start": 95.5,
+      "end": 218.0,
+      "file": "ambience/amb_office_hum.mp3",
+      "volume": 0.035
+    },
+    {
+      "start": 218.0,
+      "end": 326.9,
+      "file": "ambience/amb_institutional_drone.mp3",
+      "volume": 0.037
+    },
+    {
+      "start": 326.9,
+      "end": 522.5,
+      "file": "ambience/amb_courtroom_room_tone.mp3",
+      "volume": 0.035
+    },
+    {
+      "start": 522.5,
+      "end": 604.4,
+      "file": "ambience/amb_empty_hallway.mp3",
+      "volume": 0.037
+    },
+    {
+      "start": 604.4,
+      "end": 705.259,
+      "file": "ambience/amb_night_window.mp3",
+      "volume": 0.026
+    }
+  ],
+  "sfx_cues": [
+    {
+      "at": 0.2,
+      "file": "sfx_riser_2s.mp3",
+      "volume": 0.24,
+      "note": "hook riser"
+    },
+    {
+      "at": 1.8,
+      "file": "sfx_whoosh_short.mp3",
+      "volume": 0.18,
+      "note": "hook cut"
+    },
+    {
+      "at": 3.7,
+      "file": "sfx_whoosh_short.mp3",
+      "volume": 0.18,
+      "note": "hook cut"
+    },
+    {
+      "at": 5.5,
+      "file": "sfx_low_boom.mp3",
+      "volume": 0.22,
+      "note": "hook sentence"
+    },
+    {
+      "at": 37.0,
+      "file": "sfx_sub_drop.mp3",
+      "volume": 0.2,
+      "note": "$9B to $0"
+    },
+    {
+      "at": 149.418,
+      "file": "sfx_soft_impact.mp3",
+      "volume": 0.16,
+      "note": "$9B rise"
+    },
+    {
+      "at": 282.188,
+      "file": "sfx_sub_drop.mp3",
+      "volume": 0.18,
+      "note": "SEC collapse"
+    },
+    {
+      "at": 396.037,
+      "file": "sfx_gavel_knock.mp3",
+      "volume": 0.22,
+      "note": "verdict count 1"
+    },
+    {
+      "at": 399.737,
+      "file": "sfx_gavel_knock.mp3",
+      "volume": 0.2,
+      "note": "verdict count 2"
+    },
+    {
+      "at": 403.537,
+      "file": "sfx_gavel_knock.mp3",
+      "volume": 0.2,
+      "note": "verdict count 3"
+    },
+    {
+      "at": 407.537,
+      "file": "sfx_gavel_knock.mp3",
+      "volume": 0.22,
+      "note": "verdict count 4"
+    },
+    {
+      "at": 409.537,
+      "file": "sfx_low_boom.mp3",
+      "volume": 0.18,
+      "note": "verdict release"
+    },
+    {
+      "at": 438.803,
+      "file": "sfx_ui_tick.mp3",
+      "volume": 0.13,
+      "note": "acquitted reveal"
+    },
+    {
+      "at": 442.803,
+      "file": "sfx_ui_tick.mp3",
+      "volume": 0.13,
+      "note": "no verdict reveal"
+    },
+    {
+      "at": 499.689,
+      "file": "sfx_stamp_seal.mp3",
+      "volume": 0.18,
+      "note": "sentence seal"
+    },
+    {
+      "at": 553.269,
+      "file": "sfx_stamp_seal.mp3",
+      "volume": 0.16,
+      "note": "equation seal"
+    },
+    {
+      "at": 678.46,
+      "file": "sfx_soft_impact.mp3",
+      "volume": 0.17,
+      "note": "subscribe"
+    }
+  ],
+  "captions": {
+    "srt": "artifact://episodes/PD-2026-015-theranos/08_edit/captions.v001.srt",
+    "json": "artifact://episodes/PD-2026-015-theranos/08_edit/captions.v001.json",
+    "cue_count": 247,
+    "method": "faster-whisper word timestamps on master-derived VO timeline, aligned to locked script text"
+  },
+  "external_side_effects": {
+    "elevenlabs_generation": false,
+    "paid_api": false,
+    "upload": false,
+    "publish": false
+  }
+}
