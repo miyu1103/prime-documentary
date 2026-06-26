@@ -92,12 +92,14 @@ SPN-0001(一滴の血＋$9B→$0グラフ) / 0008(他社の機械で検査) / 00
 > - `voice_is_master`：ElevenLabs本番ナレ（`06_audio/voice_plan.v001.json` の provider＝elevenlabs）。**SAPI/`review_proxy` 音声を最終に使わない。**
 > - `captions_final`：`08_edit/captions.v001.srt`（**`review_proxy` でない**最終字幕）が存在し尺の90%以上をカバー。
 > - `images_present`：長い黒画面なし（全カットに画像/実写/図解が出ている）。
+> - `bgm_present`：**BGM（音楽の帯）が常時鳴っている**。無音の合計が長い＝ナレだけで音楽が入っていない（14話=109秒・15話proxy=102秒の無音＝音楽なし）。音設計書(`06_audio/audio_cue_sheet.v001.md`)の4層ミックスを必ず適用すること。
 > - `runtime_band`：690〜750秒。
 
 - [ ] **【尺・不可侵】最終実尺＝690〜750秒（11.5〜12.5分）に入っている**。`scripts/check_runtime_band.py <render.mp4>` または `check_final_acceptance.py` が PASS（窓外＝書き出しやり直し）。**`duration_positive` だけのPASSでは不可**（§1・§1.1）
 - [ ] **【声・不可侵】最終音声＝ElevenLabs本番ナレ**（proxyのWindows SAPI声で書き出さない）。`check_final_acceptance.py` の `voice_is_master` PASS
 - [ ] **【字幕・不可侵】最終字幕（非proxy）が焼き込み/サイドカーで存在**し全編同期。`captions_final` PASS
 - [ ] **【画像・不可侵】全カットに絵がある**（黒画面/空カードなし）。`images_present` PASS
+- [ ] **【BGM・不可侵】音楽の帯が常時鳴っている**（ナレだけにしない・無音帯を作らない）。音設計書の4層(VO/BGM/SFX/ambience)＋ダッキングを適用。`bgm_present` PASS
 - [ ] **フックは本編ハイライト約7秒**（短く punchy・長尺化しない＝オーナー指定）＋幕間“ひと呼吸”×4（各約10秒）・山場の余韻が§1バジェット通り組み込まれている（尺は主に幕間と余韻で稼ぐ）
 - [ ] フック→オープニング→本編→エンディングの**4部**になっている
 - [ ] `coded/cards = 0`（全ショット実素材 or 図解で埋まっている）

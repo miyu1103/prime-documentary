@@ -25,6 +25,8 @@ Hard checks (block the final):
   - runtime_band       : finished runtime within 690-750s (11.5-12.5 min).
   - images_present     : no excessive black (a "no images" / placeholder render
                          shows long black stretches).
+  - bgm_present        : a continuous (ducked) music bed -- narration-only mixes
+                         leave long silence between sentences (EP14 final = 109s).
 Soft checks (reported, do not block):
   - hook_added         : runtime exceeds (shotlist body + bookends) by enough to
                          hold a >=25s hook + breathing beats.
@@ -52,6 +54,7 @@ EPDIR = ROOT / "episodes"
 RUNTIME_LO, RUNTIME_HI = 690.0, 750.0           # 11.5-12.5 min finished runtime
 MAX_TOTAL_BLACK_S = 8.0                          # cumulative black tolerated
 MAX_SINGLE_BLACK_S = 3.0                         # any single black gap
+MAX_TOTAL_SILENCE_S = 25.0                       # >this => no continuous BGM bed
 LUFS_LO, LUFS_HI = -16.0, -12.0
 SAPI_MARKERS = ("sapi", "local_windows", "windows_sapi", "zira", "local-")
 MASTER_MARKERS = ("eleven",)                     # ElevenLabs = the usual master voice
@@ -162,6 +165,26 @@ def check_black(path: Path) -> dict:
                       f"(limits {MAX_TOTAL_BLACK_S:.0f}/{MAX_SINGLE_BLACK_S:.0f})"}
 
 
+def check_bgm(path: Path) -> dict:
+    """No continuous music bed -> the mix is narration-only. A properly bedded
+    (and ducked) 4-layer mix has near-zero silence; a narration-only render
+    leaves long gaps between sentences (EP14 final = 109s, EP15 proxy = 102s)."""
+    try:
+        out = subprocess.run(
+            ["ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
+             "-af", "silencedetect=n=-40dB:d=0.6", "-f", "null", os.devnull],
+            capture_output=True, text=True, check=True, timeout=900)
+    except Exception as exc:  # noqa: BLE001
+        return {"check": "bgm_present", "ok": True, "hard": True, "skipped": True,
+                "reason": f"silencedetect skipped ({exc})"}
+    sil = [float(x) for x in re.findall(r"silence_duration:\s*(\d+(?:\.\d+)?)", out.stderr)]
+    total = sum(sil)
+    ok = total <= MAX_TOTAL_SILENCE_S
+    return {"check": "bgm_present", "ok": ok, "hard": True,
+            "reason": f"total silence {total:.0f}s (limit {MAX_TOTAL_SILENCE_S:.0f}s; "
+                      f"high => no continuous BGM bed / narration-only mix)"}
+
+
 def check_hook(epdir: Path, dur: float) -> dict:
     """Soft: runtime must exceed (shotlist body + bookends) enough to hold a hook."""
     sl = _load(epdir / "04_scenes" / "shotlist.v001.json") or {}
@@ -226,6 +249,7 @@ def main() -> int:
             render_dur = ffprobe_duration(render)
             results.append(check_runtime(render_dur))
             results.append(check_black(render))
+            results.append(check_bgm(render))
             results.append(check_hook(epdir, render_dur))
             results.append(check_loudness(render))
         except Exception as exc:  # noqa: BLE001

@@ -3,7 +3,7 @@
 > このブロックを丸ごと Codex スレッドに貼る。EP15の**右側工程の“完成”**専用プロンプト。
 > **重要：15話はゼロからではない。** `TheranosPremium.tsx` も review-proxy 動画(v003)も**既に存在**する。あなたの主タスクは「**既存の約10.42分の構成を、新しい仕上げ設計 v002 の尺バジェット通りに作り直して 11.5〜12.5分の窓に入れ、字幕・音・加飾・パッケージを本番品質で完成させる**」こと。
 >
-> **★14話(lange)の失敗を繰り返さない（オーナー実視聴の指摘）。** 14話の“最終”は実物が **①声がいつものElevenLabsでなくSAPIプロキシ声 ②最終字幕なし ③黒画面=画像が出ていない（実測で連続58秒の黒）④フックから始まる4部構成でない** という不適合だったのに、QC json には `four_part_structure/all_shots_filled/captions_burned_in=true` と**手書きで true**にされて素通りした。**QCを自分で true と書くのは禁止。** 最終は必ず独立検証スクリプト `scripts/check_final_acceptance.py`（実ファイルを機械測定）の **PASS** を関門にする（§3 STEP F/G）。
+> **★14話(lange)の失敗を繰り返さない（オーナー実視聴の指摘）。** 14話の“最終”は実物が **①声がいつものElevenLabsでなくSAPIプロキシ声 ②最終字幕なし ③黒画面=画像が出ていない（実測で連続58秒の黒）④フックから始まる4部構成でない ⑤BGM（音楽）が入っていない（実測で無音109秒＝ナレだけ）** という不適合だったのに、QC json には `four_part_structure/all_shots_filled/captions_burned_in/4層=true` と**手書きで true**にされて素通りした。**QCを自分で true と書くのは禁止。** 最終は必ず独立検証スクリプト `scripts/check_final_acceptance.py`（実ファイルを機械測定＝声/字幕/画像/**BGM**/尺）の **PASS** を関門にする（§3 STEP F/G）。**設計書(cue sheet/edit_design)に書いてあっても、実レンダーに適用されていなければ不合格。**
 > **本話は R3（存命の有罪確定者）＝法的高リスク。公開前に法務レビュー必須。** 表現の不変条項（後述§2）を1つでも侵したら即STOP・日本語報告。
 
 ---
@@ -64,7 +64,7 @@
 - **3者を位置で分離**：字幕=下部安全帯／テロップ(on_screen_text)=上・中央／出典(金ライン 例 `United States v. Holmes (N.D. Cal.) — verdict Jan 3, 2022` / `SEC charges 2018 (settled, no admission)`)=右下固定。AI画像に `symbolic reconstruction` ラベル常時。一度も被らせない。
 
 ### STEP D — 音4層ミックス＋ダッキング（audio_cue_sheet 準拠）
-- 4層＝**VO（最優先）/ BGM（章ごと1曲）/ SFX / ambience**。音源は `H:\pd-media\library\`（`music_registry.v001.json`/`sfx_registry.v001.json`）。
+- 4層＝**VO（最優先）/ BGM（章ごと1曲）/ SFX / ambience**。音源は `H:\pd-media\library\`（`music_registry.v001.json`/`sfx_registry.v001.json`）。**★BGMは全編で“常時鳴らす”**（ナレの合間も帯が途切れない＝14話/15話proxyはナレだけで無音100秒超＝音楽が入っていなかった失敗）。cue sheet §1/§2 の章別 mood（hook→tension_build／act1 explainer_bed／act2 tension_build／act3 tension_build→**reveal(0013山場)**／act4 somber／ending outro）の実ファイルを必ず敷く。意図的な“一瞬無音”は数秒のみ。
 - 章別キューは cue sheet §2の表どおり。**決定的ビート**：$9B→$0 崩落に `soft_impact`+`sub_drop`、**SPN-0013 評決ボード確定に `gavel_knock`+`low_boom`（“ため→開放”同期）**、出典確定に `stamp_seal`。各テロップ出現にSFX同期。
 - **ダッキング必須**：VOサイドチェインでナレ区間 BGM −16〜−18dB / ambience −26〜−30dB、ナレ頭16フレーム前に先行ダッキング。整音 **−14 LUFS / true peak ≤ −1 dBTP**、VOが常に明瞭。**R3：音演出で断定有罪・患者被害の断定を足さない（中立）。**
 
@@ -78,6 +78,7 @@
 - [ ] **【声・不可侵】最終音声＝ElevenLabs本番ナレ**（STEP Bで生成したmaster）。proxyのWindows SAPI声で書き出していない。`check_final_acceptance.py` の `voice_is_master` PASS。
 - [ ] **【字幕・不可侵】最終字幕（非proxy `captions.v001.srt`）が存在し全編同期**・焼き込み/サイドカー。`captions_final` PASS。
 - [ ] **【画像・不可侵】全カットに絵がある**（黒画面/空カードなし）。`images_present` PASS。
+- [ ] **【BGM・不可侵】音楽の帯が全編で鳴っている**（ナレだけにしない・無音帯を作らない）。cue sheet の4層を実レンダーに適用。`bgm_present` PASS。
 - [ ] **【尺・不可侵】最終実尺＝690〜750秒（11.5〜12.5分）**。`check_runtime_band.py <final.mp4>` または acceptance の `runtime_band` が **PASS**（`duration_positive` だけのPASSでは不可）。
 - [ ] **フックは本編ハイライト約7秒**（短くpunchy・長尺化しない）＋幕間“ひと呼吸”×4（各約10秒）・山場の余韻が §1 バジェット通り組み込まれている（尺は主に幕間と余韻で稼ぐ）。
 - [ ] 4部構成（フック→BrandOpening→本編act1–4→エンディング→Endcard）。
