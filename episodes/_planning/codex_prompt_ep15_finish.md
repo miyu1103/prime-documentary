@@ -2,6 +2,8 @@
 
 > このブロックを丸ごと Codex スレッドに貼る。EP15の**右側工程の“完成”**専用プロンプト。
 > **重要：15話はゼロからではない。** `TheranosPremium.tsx` も review-proxy 動画(v003)も**既に存在**する。あなたの主タスクは「**既存の約10.42分の構成を、新しい仕上げ設計 v002 の尺バジェット通りに作り直して 11.5〜12.5分の窓に入れ、字幕・音・加飾・パッケージを本番品質で完成させる**」こと。
+>
+> **★14話(lange)の失敗を繰り返さない（オーナー実視聴の指摘）。** 14話の“最終”は実物が **①声がいつものElevenLabsでなくSAPIプロキシ声 ②最終字幕なし ③黒画面=画像が出ていない（実測で連続58秒の黒）④フックから始まる4部構成でない** という不適合だったのに、QC json には `four_part_structure/all_shots_filled/captions_burned_in=true` と**手書きで true**にされて素通りした。**QCを自分で true と書くのは禁止。** 最終は必ず独立検証スクリプト `scripts/check_final_acceptance.py`（実ファイルを機械測定）の **PASS** を関門にする（§3 STEP F/G）。
 > **本話は R3（存命の有罪確定者）＝法的高リスク。公開前に法務レビュー必須。** 表現の不変条項（後述§2）を1つでも侵したら即STOP・日本語報告。
 
 ---
@@ -72,8 +74,11 @@
 - 山場 SPN-0013 は `god_rays`＋`smoke_on_black`＋`LightSweep`色=**GOLD** で“ため→開放”。**R3：実在人物想起素材・実機・実ロゴ・雑誌表紙は不可。** license=allowed のみ・出典/sha256記録。
 
 ### STEP F — 品質ゲート（書き出し直前に全✓・edit_design「完成定義」）
-1つでも未達なら書き出さない：
-- [ ] **【尺・不可侵】最終実尺＝690〜750秒（11.5〜12.5分）**。`./.venv/Scripts/python.exe scripts/check_runtime_band.py <final.mp4>` が **PASS**（`duration_positive` だけのPASSでは不可）。
+**★最初に独立受け入れゲートを実行（自己申告QC禁止）**：`./.venv/Scripts/python.exe scripts/check_final_acceptance.py 15 --render <final.mp4>` が **RESULT: PASS（exit 0）** であること。これは実ファイルを測定し **声(ElevenLabs本番か／SAPI proxyでないか)・最終字幕の有無・黒画面=画像なし・尺** を機械検出する（14話の二の舞防止）。**QC json に true を手書きして通すのは不可。** 以下は人手目視の併用チェック：
+- [ ] **【声・不可侵】最終音声＝ElevenLabs本番ナレ**（STEP Bで生成したmaster）。proxyのWindows SAPI声で書き出していない。`check_final_acceptance.py` の `voice_is_master` PASS。
+- [ ] **【字幕・不可侵】最終字幕（非proxy `captions.v001.srt`）が存在し全編同期**・焼き込み/サイドカー。`captions_final` PASS。
+- [ ] **【画像・不可侵】全カットに絵がある**（黒画面/空カードなし）。`images_present` PASS。
+- [ ] **【尺・不可侵】最終実尺＝690〜750秒（11.5〜12.5分）**。`check_runtime_band.py <final.mp4>` または acceptance の `runtime_band` が **PASS**（`duration_positive` だけのPASSでは不可）。
 - [ ] **フックが25秒以上**の実montage＋幕間“ひと呼吸”×4・山場の余韻が §1 バジェット通り組み込まれている。
 - [ ] 4部構成（フック→BrandOpening→本編act1–4→エンディング→Endcard）。
 - [ ] `coded/cards = 0`（全24ショットが実写/AI画像/図解で充填・空カードなし）。
@@ -85,7 +90,7 @@
 - [ ] ファクトリ三層加飾が実在subtype・allowed・記録済み・主役を食わない・**実在人物想起素材なし**。
 
 ### STEP G — 最終レンダー → パッケージ
-- **書き出し＝`TheranosPremium`**（quality-first・**CPU/libx264**・NVENCに切替えない）→ `H:\pd-media\episodes\PD-2026-015-theranos\08_edit\renders\final\`。書き出し後に **STEP F の尺ゲートを再実行**して窓内を確認。
+- **書き出し＝`TheranosPremium`**（quality-first・**CPU/libx264**・NVENCに切替えない）→ `H:\pd-media\episodes\PD-2026-015-theranos\08_edit\renders\final\`。**書き出し後に `scripts/check_final_acceptance.py 15 --render <final.mp4>` を再実行し RESULT: PASS（exit 0）を確認**。FAILなら最終としない＝原因（声/字幕/画像/尺）を直して書き出し直す。その出力(JSON)を `08_edit/renders/final.vNNN.acceptance.json` として保存し、QC json の数値は**この独立測定の結果を転記**する（手書きの true を作らない）。
 - 既存 review-proxy パッケージ（`09_package\`）を本番版へ更新：`youtube_meta` / `chapters` / `tags` / `rights_manifest`（全AI画像・ファクトリ・stockを登録）/ `final_delivery` / サムネ選定。タイトルは仮 `"When Does a Bold Promise Become a Crime? The Rise and Fall of Theranos"`、サムネは THUMB-01..06／A-C から提案（**評決表記・R3を侵さない**）。
 - `manifest.json` の state/active_revisions/artifacts(checksum) を**新revision**で更新（承認済みは上書きせず新版＝不変項6）。
 

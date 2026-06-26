@@ -87,7 +87,17 @@ SPN-0001(一滴の血＋$9B→$0グラフ) / 0008(他社の機械で検査) / 00
 - 3者＋ラベルを同じ場所に重ねない（読めない/被るのは不可）。
 
 ## 4. 品質ゲート（書き出し前チェック＝motion-quality-gate）
-- [ ] **【尺・不可侵】最終実尺＝690〜750秒（11.5〜12.5分）に入っている**。`scripts/check_runtime_band.py <render.mp4>` が PASS（窓外＝書き出しやり直し）。**`duration_positive` だけのPASSでは不可**（§1・§1.1）
+
+> **【最重要・独立受け入れゲート】QCを“自分で true と書く”のは禁止。** `./.venv/Scripts/python.exe scripts/check_final_acceptance.py 15 --render <final.mp4>` を実行し **RESULT: PASS（exit 0）** を得ること。これは実ファイルを機械測定する独立検証で、14話で起きた**①声がSAPIプロキシ（いつものElevenLabsでない）②最終字幕なし③黒画面=画像なし④尺不足**を自動検出する（14話は手書きQCで全部 true と書いていたが実物は不適合だった＝§1.1の二の舞防止）。下のチェックリストは人手の目視確認用で、**機械ゲートのPASSが最終の必須条件**。
+> - `voice_is_master`：ElevenLabs本番ナレ（`06_audio/voice_plan.v001.json` の provider＝elevenlabs）。**SAPI/`review_proxy` 音声を最終に使わない。**
+> - `captions_final`：`08_edit/captions.v001.srt`（**`review_proxy` でない**最終字幕）が存在し尺の90%以上をカバー。
+> - `images_present`：長い黒画面なし（全カットに画像/実写/図解が出ている）。
+> - `runtime_band`：690〜750秒。
+
+- [ ] **【尺・不可侵】最終実尺＝690〜750秒（11.5〜12.5分）に入っている**。`scripts/check_runtime_band.py <render.mp4>` または `check_final_acceptance.py` が PASS（窓外＝書き出しやり直し）。**`duration_positive` だけのPASSでは不可**（§1・§1.1）
+- [ ] **【声・不可侵】最終音声＝ElevenLabs本番ナレ**（proxyのWindows SAPI声で書き出さない）。`check_final_acceptance.py` の `voice_is_master` PASS
+- [ ] **【字幕・不可侵】最終字幕（非proxy）が焼き込み/サイドカーで存在**し全編同期。`captions_final` PASS
+- [ ] **【画像・不可侵】全カットに絵がある**（黒画面/空カードなし）。`images_present` PASS
 - [ ] **フックが25秒以上**の実ハイライト montage になっている（1〜2秒のお飾り不可）＋幕間“ひと呼吸”×4・山場の余韻が§1バジェット通り組み込まれている
 - [ ] フック→オープニング→本編→エンディングの**4部**になっている
 - [ ] `coded/cards = 0`（全ショット実素材 or 図解で埋まっている）
