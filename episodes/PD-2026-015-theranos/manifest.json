@@ -4,13 +4,31 @@
   "topic_id": "TOP-20260620-015",
   "slug": "theranos",
   "title_working": "When Does a Bold Promise Become a Crime? The Rise and Fall of Theranos",
-  "state": "script_verified",
+  "state": "edit_review",
   "risk_class": "R3",
   "production_tier": "B",
   "autonomy_level": 3,
   "target_language": "en",
   "target_duration_minutes": 12,
-  "active_revisions": {"topic": "v001", "sources": "v001", "claims": "v001", "script": "v001", "script_qc": "v001"},
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "shotlist": "v001",
+    "usable_assets": "v001",
+    "review_proxy_audio": "v001",
+    "review_proxy_captions": "v001",
+    "review_proxy_qc": "v001",
+    "thumbnail_candidates": "v001",
+    "youtube_meta": "v001",
+    "rights_manifest": "v001",
+    "final_delivery": "v001",
+    "owner_review_request": "v001",
+    "approval_drafts": "v001",
+    "legal_rights_review_packet": "v001"
+  },
   "artifacts": [
     {
       "artifact_id": "PD-2026-015-theranos-script-annotated",
@@ -21,19 +39,77 @@
       "status": "approved",
       "rights_status": "conditional",
       "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner-review-request",
+      "artifact_type": "owner_review_request",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v001.json",
+      "checksum": "sha256:2b19645cd75f34505e58e8c113ccc3ceafbfac378c7e3df993fa7e7ae7346e75",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval-drafts",
+      "artifact_type": "approval_drafts",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v001.json",
+      "checksum": "sha256:7c16a25a8466f31900de1ec2486e2abe4261ec1a35936577cd4a90fe07d92a48",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal-rights-review-packet",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v001.json",
+      "checksum": "sha256:d4c93a506f328dd88555d0ce59ddde57ebdb2c4c6e8af37f87c254cb0f2b3772",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
     }
   ],
-  "approvals": ["APR-0001"],
-  "costs": {"estimated": {"amount": 0, "currency": "USD"}, "actual": {"amount": 0, "currency": "USD"}, "soft_limit": {"amount": 100, "currency": "USD"}, "hard_limit": {"amount": 200, "currency": "USD"}},
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
   "warnings": [
     "Claude owns research+script; Codex begins at scenes/visuals. Image gen = Codex; edit = Remotion+FFmpeg.",
     "script_qc PASS (no AI-filler), timing ~10.2min; promoted to script_verified.",
     "R3 — LIVING, CRIMINALLY CONVICTED person (Elizabeth Holmes; also Ramesh Balwani). DEDICATED RIGHTS/LEGAL REVIEW REQUIRED before publish (rights_status=review_required). Truth is the safeguard: keep everything record-based.",
     "PHRASING (load-bearing): state the FOUR investor-fraud CONVICTIONS as fact; patient counts = 'acquitted/not guilty'; the 3 deadlocked counts = 'mistrial/no verdict' — NEVER 'guilty'. Acquittal != exoneration and != 'the tech worked' (CLM-0010). Attribute intent/knowledge to the jury/court, not the narrator.",
     "NO real-person likeness or deepfake of Holmes/Balwani (invariant 11) — magazine-cover/courtroom visuals must be symbolic and AI-disclosed. Figures: Holmes 135 months (~11y3m); Balwani ~155 months ('nearly 13 years'). Walgreens rollout limited (mostly Arizona) — not nationwide.",
-    "Heavy media on the external SSD (H:\\pd-media), not in this repo."
+    "Heavy media on the external SSD (H:\\pd-media), not in this repo.",
+    "Review-proxy package prepared; public upload/schedule still blocked by owner approval and final narration/legal gates.",
+    "Theranos legal_rights_review_packet.v001 prepared; public release remains blocked until owner/legal review and final narration decision are recorded for exact hashes.",
+    "EDIT/RUNTIME (binding): finished render MUST be 690-750s (11.5-12.5min; target ~715s) per edit_design.v002 §1 budget. Enforce with scripts/check_runtime_band.py BEFORE accepting any render. Current review_proxy v003 is 624.96s (10.42min) = SHORT by ~65s (hook + breathing beats not yet built) and must be rebuilt to the §1 budget from existing footage/VO/music (no re-record, no new assets)."
   ],
-  "blockers": [],
+  "blockers": [
+    "Owner approval required for exact first-cut review video before finalization (APR-0002).",
+    "Owner approval required for exact title/thumbnail package before finalization (APR-0003).",
+    "Owner approval required for final narration release decision before public package (APR-0004).",
+    "Dedicated legal/rights review approval required for exact Theranos package before public release (APR-0005).",
+    "Owner publish/schedule approval required before any upload, schedule, or public release (APR-0006)."
+  ],
   "created_at": "2026-06-20T08:00:00+09:00",
-  "updated_at": "2026-06-20T08:00:00+09:00"
+  "updated_at": "2026-06-26T09:53:36+09:00"
 }
