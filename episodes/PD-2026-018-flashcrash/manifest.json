@@ -1,0 +1,58 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-018-flashcrash",
+  "topic_id": "TOP-20260627-018",
+  "slug": "flashcrash",
+  "title_working": "Did One Man Really Break the Stock Market? The 2010 Flash Crash",
+  "state": "script_draft",
+  "risk_class": "R3",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "shotlist": "v001",
+    "ai_prompts": "v001",
+    "thumb_prompts": "v001",
+    "edit_design": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-018-flashcrash-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-018-flashcrash/03_script/script.annotated.v001.json",
+      "checksum": "sha256:1962e652072e3e3cafbe6cb642ce4adef399dab56b29524fc4b73e31dbaac6b5",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [],
+  "costs": {
+    "estimated": {"amount": 0, "currency": "USD"},
+    "actual": {"amount": 0, "currency": "USD"},
+    "soft_limit": {"amount": 100, "currency": "USD"},
+    "hard_limit": {"amount": 200, "currency": "USD"}
+  },
+  "warnings": [
+    "Claude owns research+script+design (left process); Codex begins at scenes/visuals/render (right process). AI image gen = SDXL 4K (>=3840); edit = Remotion+FFmpeg.",
+    "FEATURE ~30 min = mid profile (runtime band 27-33 min). Narration ~15.1 min by design; runtime reached with hero shots + factory b-roll + held beats + 4-part bookends.",
+    "OUTPUT GATE = docs/PD_ONE_PASS_PRODUCTION_SPEC.v1.md. Codex must satisfy rows 1-13 from the first render; not done until check_final_acceptance.py 18 exits 0. Self-asserted QC forbidden.",
+    "R3 — LIVING person who pleaded guilty (Sarao). DEDICATED legal/rights review required before publish. CAUSATION LOCK: guilty plea (wire fraud+spoofing) = fact; crash = 'contributed/significantly responsible', NEVER 'caused/single-handedly/one man broke the market'; attribute to officials; no real-person likeness.",
+    "Durable source hashes pending (content_hash=sha256:pending) -> compute at fact_recheck before publish. Current facts to be re-verified pre-publish.",
+    "SDXL 4K hero plates generating to H:/pd-media/assets/ai/flashcrash + remotion/public/flashcrash (26 shots x 3 variants, 3840x2160). Heavy media on the external SSD, not in this repo."
+  ],
+  "blockers": [
+    "Script not yet validated (pd-verify) or owner-approved; do not generate ElevenLabs narration until script is verified to avoid re-record.",
+    "Dedicated legal/rights review required before any publish (R3).",
+    "Owner approvals (script content, first-cut, title/thumbnail, narration release, publish/schedule) required before public release."
+  ],
+  "created_at": "2026-06-27T09:00:00+09:00",
+  "updated_at": "2026-06-27T09:00:00+09:00"
+}
