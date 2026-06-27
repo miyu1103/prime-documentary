@@ -49,6 +49,18 @@ SELECTED = [
         "notes": "empty courtroom-desk plate; general court illustration only",
     },
     {
+        "id": "AF-BG-0468",
+        "role": "bg",
+        "use_scenes": ["SPN-0013", "SPN-0014"],
+        "notes": "alternate empty courtroom interior for verdict sequence; general court illustration only",
+    },
+    {
+        "id": "AF-BG-0470",
+        "role": "bg",
+        "use_scenes": ["SPN-0024", "SPN-0015"],
+        "notes": "alternate court plate for prosecution/defense and split-verdict nuance",
+    },
+    {
         "id": "AF-BG-10161",
         "role": "bg",
         "use_scenes": ["SPN-0007", "SPN-0010", "SPN-0023"],
@@ -59,6 +71,18 @@ SELECTED = [
         "role": "bg",
         "use_scenes": ["SPN-0005", "SPN-0010"],
         "notes": "stock-report plate for valuation/collapse scenes",
+    },
+    {
+        "id": "AF-BG-2000",
+        "role": "bg",
+        "use_scenes": ["SPN-0004", "SPN-0008"],
+        "notes": "generic laboratory glassware variation; symbolic only, no real Theranos device claim",
+    },
+    {
+        "id": "AF-BG-2001",
+        "role": "bg",
+        "use_scenes": ["SPN-0009", "SPN-0019"],
+        "notes": "generic laboratory plate for diagnostic-stakes scenes; symbolic only",
     },
     {
         "id": "AF-LIGHT-0220",

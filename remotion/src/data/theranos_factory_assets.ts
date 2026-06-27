@@ -71,6 +71,30 @@ export const THERANOS_FACTORY_ASSETS: TheranosFactoryAsset[] = [
     "sha256": "sha256:1466a94a30c0779c72cdebe0f5beaa90b5ffee710eb52240ba55bfc101e06f08"
   },
   {
+    "id": "AF-BG-0468",
+    "role": "bg",
+    "subtype": "courtroom_interior",
+    "kind": "image",
+    "staticPath": "theranos/factory/backgrounds/AF-BG-0468__courtroom_interior.jpg",
+    "useScenes": [
+      "SPN-0013",
+      "SPN-0014"
+    ],
+    "sha256": "sha256:82f6d49ad3879b7a9f0d575dd8d73dea16f8260b00acdc4fc7918d40c923c0f1"
+  },
+  {
+    "id": "AF-BG-0470",
+    "role": "bg",
+    "subtype": "courtroom_interior",
+    "kind": "image",
+    "staticPath": "theranos/factory/backgrounds/AF-BG-0470__courtroom_interior.jpg",
+    "useScenes": [
+      "SPN-0024",
+      "SPN-0015"
+    ],
+    "sha256": "sha256:cad5d6a09432de8ace2727d7a6e3f2e4a7953d53529245de9ca2c092821934fb"
+  },
+  {
     "id": "AF-BG-10161",
     "role": "bg",
     "subtype": "stacked_legal_documents",
@@ -94,6 +118,30 @@ export const THERANOS_FACTORY_ASSETS: TheranosFactoryAsset[] = [
       "SPN-0010"
     ],
     "sha256": "sha256:49a7b1f2e8effc740f09cdf6528c580b533146887792d87c74646c1348642e7c"
+  },
+  {
+    "id": "AF-BG-2000",
+    "role": "bg",
+    "subtype": "laboratory_glassware",
+    "kind": "image",
+    "staticPath": "theranos/factory/backgrounds/AF-BG-2000__laboratory_glassware.jpg",
+    "useScenes": [
+      "SPN-0004",
+      "SPN-0008"
+    ],
+    "sha256": "sha256:5064a11b7b5250f80a99ce4c34f5c788bfc6fcaebbb54a9464158056f016e5a1"
+  },
+  {
+    "id": "AF-BG-2001",
+    "role": "bg",
+    "subtype": "laboratory_glassware",
+    "kind": "image",
+    "staticPath": "theranos/factory/backgrounds/AF-BG-2001__laboratory_glassware.jpg",
+    "useScenes": [
+      "SPN-0009",
+      "SPN-0019"
+    ],
+    "sha256": "sha256:e396f37479e3116afbb3ad72bf41fc8d011db385d00729d2334ea2f7a705adad"
   },
   {
     "id": "AF-LIGHT-0220",

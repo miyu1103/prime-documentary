@@ -393,7 +393,7 @@ def check_factory_used(epdir: Path, render_dur: float | None) -> dict:
     one distinct clip per ~45s of runtime."""
     slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
     fdir = ROOT / "remotion" / "public" / slug / "factory"
-    n = len([p for p in fdir.glob("*") if p.is_file()]) if fdir.is_dir() else 0
+    n = len([p for p in fdir.rglob("*") if p.is_file()]) if fdir.is_dir() else 0
     comp = next((p for p in (ROOT / "remotion" / "src" / "compositions").glob("*.tsx")
                  if slug.lower() in p.name.lower()), None)
     referenced = bool(comp and "factory" in comp.read_text(encoding="utf-8", errors="ignore").lower())
