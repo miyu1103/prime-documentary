@@ -7,7 +7,7 @@ export type FlashCrashCaptionCue = {
 export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   {
     "start": 0.167,
-    "end": 1.52,
+    "end": 2.049,
     "text": "Two thirty-two in the afternoon."
   },
   {
@@ -17,7 +17,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 3.389,
-    "end": 6.32,
+    "end": 6.624,
     "text": "twenty-ten. For most of the\nworld nothing is happening."
   },
   {
@@ -37,12 +37,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 16.1,
-    "end": 17.42,
+    "end": 17.453,
     "text": "it has been taken away."
   },
   {
     "start": 18.28,
-    "end": 20.0,
+    "end": 20.045,
     "text": "Nearly a thousand points gone."
   },
   {
@@ -57,7 +57,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 27.5,
-    "end": 29.24,
+    "end": 29.265,
     "text": "a heartbeat at a single penny."
   },
   {
@@ -77,7 +77,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 39.14,
-    "end": 41.7,
+    "end": 41.787,
     "text": "market is fine. The\nmachine corrected itself."
   },
   {
@@ -142,12 +142,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 77.84,
-    "end": 80.56,
+    "end": 80.84,
     "text": "of everyone in the middle\nof an ordinary afternoon."
   },
   {
     "start": 81.28,
-    "end": 84.04,
+    "end": 84.574,
     "text": "Over the next half hour we\nare going to do three things."
   },
   {
@@ -172,7 +172,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 96.92,
-    "end": 98.14,
+    "end": 98.214,
     "text": "completely by the end."
   },
   {
@@ -202,22 +202,22 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 111.8,
-    "end": 113.26,
+    "end": 113.58,
     "text": "think a stock market looks like."
   },
   {
     "start": 113.62,
-    "end": 117.28,
+    "end": 117.326,
     "text": "There are no men in coloured\njackets shouting and waving paper."
   },
   {
     "start": 118.02,
-    "end": 120.1,
+    "end": 120.58,
     "text": "There haven't been not\nreally for a long time."
   },
   {
     "start": 120.62,
-    "end": 122.4,
+    "end": 122.561,
     "text": "The modern market is not a place."
   },
   {
@@ -227,7 +227,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 125.848,
-    "end": 128.88,
+    "end": 128.907,
     "text": "climate-controlled rooms\ntrading with other machines"
   },
   {
@@ -247,7 +247,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 138.98,
-    "end": 140.9,
+    "end": 141.54,
     "text": "called high-frequency\ntraders. Algorithms. Programs."
   },
   {
@@ -272,17 +272,17 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 154.42,
-    "end": 157.14,
+    "end": 157.84,
     "text": "their orders would arrive a few\nmillionths of a second sooner."
   },
   {
     "start": 157.88,
-    "end": 160.36,
+    "end": 160.762,
     "text": "In this market that head\nstart is the whole game."
   },
   {
     "start": 161.14,
-    "end": 164.86,
+    "end": 165.022,
     "text": "And most of the time these machines\ndo something genuinely useful."
   },
   {
@@ -327,12 +327,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 190.64,
-    "end": 191.98,
+    "end": 192.346,
     "text": "These machines are not loyal."
   },
   {
     "start": 192.44,
-    "end": 193.94,
+    "end": 194.205,
     "text": "They feel no duty to be there."
   },
   {
@@ -367,7 +367,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 212.62,
-    "end": 214.1,
+    "end": 214.679,
     "text": "it before a human could even blink."
   },
   {
@@ -382,7 +382,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 220.4,
-    "end": 222.24,
+    "end": 222.282,
     "text": "The order book is not just data."
   },
   {
@@ -392,7 +392,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 225.98,
-    "end": 228.14,
+    "end": 228.451,
     "text": "of what everyone else is about to do next."
   },
   {
@@ -407,7 +407,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 235.48,
-    "end": 236.8,
+    "end": 237.186,
     "text": "But a picture can be painted."
   },
   {
@@ -417,7 +417,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 240.34,
-    "end": 243.14,
+    "end": 243.458,
     "text": "in a picture can be fooled\nat the speed of light too."
   },
   {
@@ -457,12 +457,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 266.62,
-    "end": 268.28,
+    "end": 268.738,
     "text": "one man was not asking the question."
   },
   {
     "start": 268.88,
-    "end": 270.74,
+    "end": 271.115,
     "text": "He had stopped asking it years before."
   },
   {
@@ -487,22 +487,22 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 284.22,
-    "end": 287.16,
+    "end": 287.22,
     "text": "the planes pass overhead\nevery ninety seconds or so"
   },
   {
     "start": 287.74,
-    "end": 290.6,
+    "end": 291.152,
     "text": "close enough to rattle the\nwindows regular as a heartbeat."
   },
   {
     "start": 291.46,
-    "end": 293.86,
+    "end": 294.519,
     "text": "He is brilliant with numbers\nand uneasy with people."
   },
   {
     "start": 294.6,
-    "end": 297.66,
+    "end": 297.953,
     "text": "Years later doctors will\ndiagnose him with severe autism."
   },
   {
@@ -542,7 +542,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 320.56,
-    "end": 323.48,
+    "end": 324.031,
     "text": "People who traded near him\ndescribe it as a kind of genius."
   },
   {
@@ -557,7 +557,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 329.8,
-    "end": 330.92,
+    "end": 331.094,
     "text": "He does not want them."
   },
   {
@@ -572,12 +572,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 337.8,
-    "end": 339.84,
+    "end": 340.44,
     "text": "the curtains often drawn\nagainst the afternoon."
   },
   {
     "start": 340.48,
-    "end": 343.3,
+    "end": 343.892,
     "text": "And there is something almost\nunbearable about the picture"
   },
   {
@@ -592,12 +592,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 350.86,
-    "end": 352.1,
+    "end": 352.625,
     "text": "people will see in a lifetime."
   },
   {
     "start": 352.96,
-    "end": 355.8,
+    "end": 356.46,
     "text": "And here is the detail that\neveryone who meets him remembers"
   },
   {
@@ -647,12 +647,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 385.68,
-    "end": 387.8,
+    "end": 388.26,
     "text": "interest in the money he\nearned was not an act."
   },
   {
     "start": 388.3,
-    "end": 389.56,
+    "end": 389.771,
     "text": "It was simply who he was."
   },
   {
@@ -667,7 +667,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 396.82,
-    "end": 399.68,
+    "end": 399.761,
     "text": "against him personally but\nby the fastest machines"
   },
   {
@@ -687,12 +687,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 410.02,
-    "end": 411.34,
+    "end": 411.64,
     "text": "He doesn't want to join them."
   },
   {
     "start": 411.68,
-    "end": 412.72,
+    "end": 412.974,
     "text": "He wants to beat them."
   },
   {
@@ -742,12 +742,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 440.64,
-    "end": 444.14,
+    "end": 444.169,
     "text": "Orders that look for a fraction\nof a second completely real."
   },
   {
     "start": 445.12,
-    "end": 447.72,
+    "end": 448.44,
     "text": "Orders that were never for\none moment meant to be filled."
   },
   {
@@ -792,7 +792,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 471.88,
-    "end": 474.2,
+    "end": 474.233,
     "text": "to sell and the prices they will accept."
   },
   {
@@ -822,7 +822,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 491.12,
-    "end": 494.1,
+    "end": 494.86,
     "text": "to get out a half-second ahead\nof everyone else before the fall."
   },
   {
@@ -847,7 +847,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 506.78,
-    "end": 509.3,
+    "end": 509.427,
     "text": "the current price. The\nmachines see the wall."
   },
   {
@@ -897,12 +897,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 536.86,
-    "end": 540.42,
+    "end": 540.625,
     "text": "market simply vanish because they\nwere never meant to be filled."
   },
   {
     "start": 540.8,
-    "end": 544.12,
+    "end": 544.271,
     "text": "They were a ghost. And in the\nempty space they leave behind"
   },
   {
@@ -912,12 +912,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 547.445,
-    "end": 548.74,
+    "end": 548.974,
     "text": "created he buys. For real."
   },
   {
     "start": 549.58,
-    "end": 551.94,
+    "end": 552.44,
     "text": "Then he turns the entire\nthing upside down to sell."
   },
   {
@@ -927,7 +927,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 555.605,
-    "end": 557.16,
+    "end": 557.605,
     "text": "the price pull the wall sell high."
   },
   {
@@ -957,12 +957,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 568.63,
-    "end": 571.641,
+    "end": 571.652,
     "text": "By his own later admission this\nearns him at least twelve point"
   },
   {
     "start": 571.692,
-    "end": 572.862,
+    "end": 572.986,
     "text": "eight million dollars."
   },
   {
@@ -982,7 +982,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 582.94,
-    "end": 584.16,
+    "end": 584.293,
     "text": "in words but in orders."
   },
   {
@@ -992,7 +992,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 587.543,
-    "end": 591.32,
+    "end": 591.484,
     "text": "lightning-fast machine that holds\nthe savings of millions of people"
   },
   {
@@ -1002,7 +1002,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 594.8,
-    "end": 597.24,
+    "end": 597.54,
     "text": "And the strangest part is\nhow invisible it all is."
   },
   {
@@ -1022,12 +1022,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 607.6,
-    "end": 610.3,
+    "end": 610.718,
     "text": "To almost everyone watching\nthe market in those years"
   },
   {
     "start": 610.78,
-    "end": 611.96,
+    "end": 612.34,
     "text": "nothing looks wrong at all."
   },
   {
@@ -1037,12 +1037,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 615.66,
-    "end": 617.92,
+    "end": 618.58,
     "text": "who built it ever knows\nit was never really there."
   },
   {
     "start": 618.62,
-    "end": 620.82,
+    "end": 621.42,
     "text": "For most of those years\nalmost no one even notices."
   },
   {
@@ -1057,17 +1057,17 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 627.545,
-    "end": 628.72,
+    "end": 629.32,
     "text": "sophisticated financial system ever built."
   },
   {
     "start": 629.36,
-    "end": 630.96,
+    "end": 631.36,
     "text": "And the system it turns out leans."
   },
   {
     "start": 631.7,
-    "end": 633.12,
+    "end": 633.524,
     "text": "It bends right where he pushes."
   },
   {
@@ -1082,17 +1082,17 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 640.26,
-    "end": 642.42,
+    "end": 642.613,
     "text": "leans on it at exactly the wrong moment."
   },
   {
     "start": 643.26,
-    "end": 646.56,
+    "end": 646.613,
     "text": "May the sixth twenty-ten does\nnot begin as a catastrophe."
   },
   {
     "start": 647.28,
-    "end": 648.7,
+    "end": 648.868,
     "text": "It begins as a nervous day."
   },
   {
@@ -1117,12 +1117,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 662.68,
-    "end": 664.04,
+    "end": 664.327,
     "text": "Fear is already in the room."
   },
   {
     "start": 664.48,
-    "end": 665.56,
+    "end": 665.715,
     "text": "It only needs a push."
   },
   {
@@ -1132,12 +1132,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 669.32,
-    "end": 670.92,
+    "end": 671.085,
     "text": "Sarao switches on his program."
   },
   {
     "start": 671.84,
-    "end": 675.0,
+    "end": 675.3,
     "text": "Investigators will later say\nthat on this single day he places"
   },
   {
@@ -1152,12 +1152,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 681.605,
-    "end": 683.66,
+    "end": 683.664,
     "text": "on the market on and off for hours."
   },
   {
     "start": 684.36,
-    "end": 685.42,
+    "end": 685.536,
     "text": "But he is not alone."
   },
   {
@@ -1182,7 +1182,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 698.205,
-    "end": 700.26,
+    "end": 700.44,
     "text": "to hedge a position to protect itself."
   },
   {
@@ -1217,7 +1217,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 719.9,
-    "end": 722.54,
+    "end": 722.665,
     "text": "gets or the damage it\nmight do on the way down."
   },
   {
@@ -1227,7 +1227,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 726.06,
-    "end": 727.26,
+    "end": 727.589,
     "text": "market at the same moment."
   },
   {
@@ -1262,7 +1262,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 747.6,
-    "end": 750.42,
+    "end": 750.6,
     "text": "At two thirty-two in the\nafternoon something gives."
   },
   {
@@ -1287,27 +1287,27 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 762.02,
-    "end": 763.28,
+    "end": 763.373,
     "text": "step back. All at once."
   },
   {
     "start": 763.72,
-    "end": 767.32,
+    "end": 767.72,
     "text": "To protect themselves from a falling\nmarket they simply stop buying."
   },
   {
     "start": 767.94,
-    "end": 768.92,
+    "end": 769.411,
     "text": "And the floor disappears."
   },
   {
     "start": 770.02,
-    "end": 771.22,
+    "end": 771.373,
     "text": "Now prices do not fall."
   },
   {
     "start": 771.78,
-    "end": 773.42,
+    "end": 773.427,
     "text": "They collapse into a vacuum."
   },
   {
@@ -1327,12 +1327,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 784.44,
-    "end": 787.36,
+    "end": 787.98,
     "text": "a company worth tens of billions\nof dollars for a single penny"
   },
   {
     "start": 788.02,
-    "end": 791.16,
+    "end": 791.314,
     "text": "not because anything real had\nchanged about that company"
   },
   {
@@ -1362,7 +1362,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 807.36,
-    "end": 810.44,
+    "end": 810.478,
     "text": "automatically if my stock\never falls below this price"
   },
   {
@@ -1382,12 +1382,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 821.8,
-    "end": 824.46,
+    "end": 824.94,
     "text": "selling people's savings into\nthe very bottom of the crash"
   },
   {
     "start": 824.98,
-    "end": 826.62,
+    "end": 826.804,
     "text": "at the worst prices of the day."
   },
   {
@@ -1397,12 +1397,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 830.5,
-    "end": 833.78,
+    "end": 833.971,
     "text": "real and lasting loss of people\nwho were not even watching."
   },
   {
     "start": 834.62,
-    "end": 835.68,
+    "end": 836.16,
     "text": "And then the safeties trip."
   },
   {
@@ -1417,7 +1417,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 843.76,
-    "end": 845.26,
+    "end": 845.72,
     "text": "Cautiously the machines come back."
   },
   {
@@ -1452,12 +1452,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 863.82,
-    "end": 865.08,
+    "end": 865.232,
     "text": "much prefer not to know."
   },
   {
     "start": 865.68,
-    "end": 867.06,
+    "end": 867.327,
     "text": "Afterward comes the autopsy."
   },
   {
@@ -1467,17 +1467,17 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 870.96,
-    "end": 873.88,
+    "end": 873.96,
     "text": "have to resist with both\nhands the ending you want."
   },
   {
     "start": 874.24,
-    "end": 875.48,
+    "end": 875.769,
     "text": "Because we want a villain."
   },
   {
     "start": 875.84,
-    "end": 877.42,
+    "end": 877.487,
     "text": "A villain would be a relief."
   },
   {
@@ -1497,12 +1497,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 888.2,
-    "end": 890.08,
+    "end": 890.082,
     "text": "had grown too thin to absorb it."
   },
   {
     "start": 890.64,
-    "end": 893.2,
+    "end": 893.287,
     "text": "It barely mentions a\ntrader in London at all."
   },
   {
@@ -1537,7 +1537,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 912.96,
-    "end": 915.9,
+    "end": 916.019,
     "text": "ghost back to its source\nto the bedroom in Hounslow."
   },
   {
@@ -1547,7 +1547,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 919.98,
-    "end": 921.24,
+    "end": 921.627,
     "text": "that tipped the market over."
   },
   {
@@ -1557,7 +1557,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 925.02,
-    "end": 927.1,
+    "end": 927.726,
     "text": "order imbalances that\nhelped trigger the fall."
   },
   {
@@ -1572,7 +1572,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 934.58,
-    "end": 937.34,
+    "end": 938.051,
     "text": "orders had simply vanished the\ninstant they did their work."
   },
   {
@@ -1607,12 +1607,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 957.6,
-    "end": 959.9,
+    "end": 960.46,
     "text": "someone slow and stubborn\nenough to keep looking."
   },
   {
     "start": 960.5,
-    "end": 962.54,
+    "end": 962.794,
     "text": "But notice the words they actually use."
   },
   {
@@ -1637,12 +1637,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 974.56,
-    "end": 977.34,
+    "end": 977.58,
     "text": "Because the honest answer is\nharder than a single villain"
   },
   {
     "start": 977.62,
-    "end": 978.76,
+    "end": 979.091,
     "text": "and far more frightening."
   },
   {
@@ -1652,12 +1652,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 982.4,
-    "end": 985.76,
+    "end": 986.26,
     "text": "A swarm of machines all protecting\nthemselves at the same instant."
   },
   {
     "start": 986.3,
-    "end": 988.66,
+    "end": 988.829,
     "text": "A world already sick\nwith fear over Greece."
   },
   {
@@ -1667,7 +1667,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 992.44,
-    "end": 994.08,
+    "end": 994.087,
     "text": "at exactly the wrong moment."
   },
   {
@@ -1692,7 +1692,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1008.54,
-    "end": 1010.0,
+    "end": 1010.128,
     "text": "from the very first second."
   },
   {
@@ -1722,12 +1722,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1026.84,
-    "end": 1029.44,
+    "end": 1029.899,
     "text": "in the end does not get to\nanswer that with a shrug."
   },
   {
     "start": 1030.02,
-    "end": 1031.84,
+    "end": 1032.255,
     "text": "The law has to choose someone to hold."
   },
   {
@@ -1757,7 +1757,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1048.8,
-    "end": 1050.1,
+    "end": 1050.329,
     "text": "they finally come for him."
   },
   {
@@ -1782,12 +1782,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1063.34,
-    "end": 1065.84,
+    "end": 1066.34,
     "text": "helped trigger a trillion-dollar\ncrash from his bedroom."
   },
   {
     "start": 1066.38,
-    "end": 1068.32,
+    "end": 1068.48,
     "text": "He fights the extradition for months."
   },
   {
@@ -1802,7 +1802,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1075.12,
-    "end": 1076.52,
+    "end": 1077.061,
     "text": "find something almost unbearable."
   },
   {
@@ -1842,17 +1842,17 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1099.66,
-    "end": 1101.36,
+    "end": 1101.91,
     "text": "part trusting people from their savings."
   },
   {
     "start": 1101.95,
-    "end": 1104.76,
+    "end": 1105.009,
     "text": "He had beaten the high score\nover and over for years"
   },
   {
     "start": 1105.23,
-    "end": 1106.86,
+    "end": 1107.289,
     "text": "and kept almost none of the points."
   },
   {
@@ -1872,12 +1872,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1116.01,
-    "end": 1117.42,
+    "end": 1117.539,
     "text": "and one count of spoofing."
   },
   {
     "start": 1117.84,
-    "end": 1120.64,
+    "end": 1120.9,
     "text": "He agrees to hand back nearly\nthirteen million dollars."
   },
   {
@@ -1897,7 +1897,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1130.36,
-    "end": 1134.28,
+    "end": 1134.301,
     "text": "caught him understand the very\nthing he had spent years perfecting."
   },
   {
@@ -1962,17 +1962,17 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1172.445,
-    "end": 1173.58,
+    "end": 1174.092,
     "text": "do something genuinely rare."
   },
   {
     "start": 1174.16,
-    "end": 1175.48,
+    "end": 1175.866,
     "text": "They ask the judge for mercy."
   },
   {
     "start": 1176.0,
-    "end": 1177.28,
+    "end": 1177.765,
     "text": "They point to his cooperation."
   },
   {
@@ -2027,7 +2027,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1209.48,
-    "end": 1212.24,
+    "end": 1212.774,
     "text": "In the bedroom more or less\nwhere the whole thing began."
   },
   {
@@ -2072,7 +2072,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1236.46,
-    "end": 1238.44,
+    "end": 1238.872,
     "text": "But that is not quite what happened here."
   },
   {
@@ -2087,17 +2087,17 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1245.2,
-    "end": 1247.6,
+    "end": 1248.141,
     "text": "finger and touched the\ngreat machine of the market"
   },
   {
     "start": 1248.44,
-    "end": 1250.8,
+    "end": 1251.087,
     "text": "and the machine for\nthirty-six minutes shook."
   },
   {
     "start": 1251.68,
-    "end": 1252.92,
+    "end": 1253.033,
     "text": "He did not do it alone."
   },
   {
@@ -2127,17 +2127,17 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1269.92,
-    "end": 1271.44,
+    "end": 1271.94,
     "text": "that the water will always be there."
   },
   {
     "start": 1271.98,
-    "end": 1273.44,
+    "end": 1273.568,
     "text": "We are told it is rational."
   },
   {
     "start": 1274.16,
-    "end": 1275.16,
+    "end": 1275.513,
     "text": "We are told it is safe."
   },
   {
@@ -2157,7 +2157,7 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1285.4,
-    "end": 1287.42,
+    "end": 1287.94,
     "text": "So here is the question\nwe will leave you with."
   },
   {
@@ -2182,12 +2182,12 @@ export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   },
   {
     "start": 1301.58,
-    "end": 1302.52,
+    "end": 1302.639,
     "text": "this channel does."
   },
   {
     "start": 1303.6,
-    "end": 1305.34,
+    "end": 1306.306,
     "text": "Subscribe and we will\nsee you in the next one."
   }
 ];
