@@ -213,17 +213,18 @@ def ffmpeg_voice_filters(placements: list[dict[str, Any]]) -> tuple[list[str], s
             f"asetpts=PTS-STARTPTS,atempo={NARRATION_TEMPO:.5f},aresample=48000,adelay={delay}|{delay}[vc{i}]"
         )
         labels.append(f"[vc{i}]")
+    filters.append(f"anullsrc=r=48000:cl=stereo:d={TOTAL_SEC:.3f}[narr_silence]")
     filters.append(
-        f"{''.join(labels)}amix=inputs={len(labels)}:normalize=0:duration=longest:dropout_transition=0,"
-        f"apad=pad_dur={TOTAL_SEC:.3f},atrim=0:{TOTAL_SEC:.3f}[vo]"
+        f"[narr_silence]{''.join(labels)}amix=inputs={len(labels) + 1}:normalize=0:duration=first:dropout_transition=0,"
+        f"apad=pad_dur={TOTAL_SEC:.3f},atrim=0:{TOTAL_SEC:.3f}[narr_timeline]"
     )
-    return filters, "[vo]"
+    return filters, "[narr_timeline]"
 
 
 def build_voice_timeline() -> list[dict[str, Any]]:
     placements = resolved_voice_placements()
     VOICE_TIMELINE.parent.mkdir(parents=True, exist_ok=True)
-    filters, _ = ffmpeg_voice_filters(placements)
+    filters, voice_label = ffmpeg_voice_filters(placements)
     run(
         [
             FFMPEG,
@@ -233,7 +234,7 @@ def build_voice_timeline() -> list[dict[str, Any]]:
             "-filter_complex",
             ";".join(filters),
             "-map",
-            "[vo]",
+            voice_label,
             "-t",
             f"{TOTAL_SEC:.3f}",
             "-ar",
@@ -374,12 +375,13 @@ def build_final_mix(placements: list[dict[str, Any]]) -> tuple[dict[str, Any], l
     filters += sfx_filters
 
     filters += [
-        "[mraw][vo]sidechaincompress=threshold=0.030:ratio=8:attack=18:release=420:makeup=1[mduck]",
-        "[araw][vo]sidechaincompress=threshold=0.028:ratio=7:attack=18:release=520:makeup=1[aduck]",
+        "[narr_timeline]asplit=3[narr_mix][narr_music_sc][narr_amb_sc]",
+        "[mraw][narr_music_sc]sidechaincompress=threshold=0.030:ratio=8:attack=18:release=420:makeup=1[mduck]",
+        "[araw][narr_amb_sc]sidechaincompress=threshold=0.028:ratio=7:attack=18:release=520:makeup=1[aduck]",
         (
-            "[vo][mduck][aduck][sfxraw]amix=inputs=4:normalize=0:duration=longest:dropout_transition=0,"
+            "[narr_mix][mduck][aduck][sfxraw]amix=inputs=4:normalize=0:duration=longest:dropout_transition=0,"
             f"apad=pad_dur=20,atrim=0:{TOTAL_SEC:.3f},loudnorm=I=-14:TP=-1:LRA=11:linear=false,"
-            f"alimiter=limit=0.78,afade=t=out:st={TOTAL_SEC - 2.0:.3f}:d=2[aout]"
+            f"alimiter=limit=0.78,volume=0.84,afade=t=out:st={TOTAL_SEC - 2.0:.3f}:d=2[aout]"
         ),
     ]
     tmp = MIX_MASTER.with_suffix(".tmp.mp3")
