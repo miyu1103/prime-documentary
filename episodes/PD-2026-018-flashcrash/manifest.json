@@ -27,7 +27,7 @@
       "artifact_type": "annotated_script",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-018-flashcrash/03_script/script.annotated.v001.json",
-      "checksum": "sha256:1962e652072e3e3cafbe6cb642ce4adef399dab56b29524fc4b73e31dbaac6b5",
+      "checksum": "sha256:da6bd4ce14894561ce7d7b0f218b78ab827476b6ac55e176c8caacc2c563d79b",
       "status": "candidate",
       "rights_status": "conditional",
       "qc_status": "pass"
@@ -35,10 +35,22 @@
   ],
   "approvals": [],
   "costs": {
-    "estimated": {"amount": 0, "currency": "USD"},
-    "actual": {"amount": 0, "currency": "USD"},
-    "soft_limit": {"amount": 100, "currency": "USD"},
-    "hard_limit": {"amount": 200, "currency": "USD"}
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
   },
   "warnings": [
     "Claude owns research+script+design (left process); Codex begins at scenes/visuals/render (right process). AI image gen = SDXL 4K (>=3840); edit = Remotion+FFmpeg.",
