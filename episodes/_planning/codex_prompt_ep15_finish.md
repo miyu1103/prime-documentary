@@ -4,6 +4,7 @@
 > **正典は edit_design.v002。** 本プロンプトと設計書が食い違ったら **edit_design.v002 を優先**。台本/claims/shotlist は Read専用・不改変。
 > **本話は R3（存命の有罪確定者 Holmes/Balwani）＝法的高リスク。** 公開前に法務レビュー必須。評決表記の不変条項（§2）を1つでも侵したら即STOP・日本語報告。
 > **★QCを自分で true と書くのは禁止。** 最終は必ず独立検証 `scripts/check_final_acceptance.py 15 --render <final.mp4>` の **RESULT: PASS（exit 0）** を関門にする。
+> **★出荷基準の正典＝`docs/PD_ONE_PASS_PRODUCTION_SPEC.v1.md`（ONE-PASS PRODUCTION SPEC v1）。** BGM/声/字幕/改行/画質/Max品質/素材活用/アニメ/フック/4部構成/サムネ/タイトルCTR の全失敗モードが「仕様＋ゲート」で固定されている。最初のレンダーから同表を満たし、`check_final_acceptance.py` が exit 0 になるまで完成としない。未コードの行（画像≥3840・素材活用）はスペック§Cどおり手動測定で0違反。
 
 ---
 

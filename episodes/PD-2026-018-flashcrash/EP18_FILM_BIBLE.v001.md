@@ -348,3 +348,10 @@
 - **R3**：claims化で因果系（CLM）の allowed/prohibited wording を本書§10どおりロック（“caused”禁止・“contributed/exacerbated”許可）。
 - 仕上げ設計（§6/7/8 を edit_design v001 に落とす）＋独立受け入れゲート（声/字幕/画像/BGM/尺）は EP15 の仕組みを継承。
 - 分担：本書（脚本・設計＝Claude左工程）→ 視覚実装/レンダー＝Codex右工程。
+
+## 13. 公開の必須関門（★正典に結線・出荷停止権あり）
+
+- **本話の出荷基準は `docs/PD_ONE_PASS_PRODUCTION_SPEC.v1.md`（ONE-PASS PRODUCTION SPEC v1・EP17以降拘束）を正典とする。** あなたが繰り返し当たった問題（BGM無し・声違い・ナレ≠字幕・字幕の変な改行・画像が荒い・Max品質でない・素材未活用・アニメしょぼい・フックがハイライトでない・4部構成でない・サムネ無い/派手でない/CTR非最適）は、すべて同スペックの **行1〜13＝「仕様＋ゲート」** に固定されている。
+- **「完成」の定義（自己申告QC禁止）**：制作（Codex）は最初のレンダーから同スペック表を満たすこと。**公開前に独立検証 `./.venv/Scripts/python.exe scripts/check_final_acceptance.py 18 --json` が exit 0（全hardゲートPASS）になるまで完成としない。** FAILは原因を直して再レンダー。QC json に true を手書きして通すのは禁止（EP14の二の舞）。
+- **未コードの行（行5 画像≥3840・行7 素材活用）** はスペック§Cどおり**手動測定で0違反**を必ず満たす（コード化され次第ゲートに加わる）。
+- R3：公開前に専用 法務/権利レビュー（exact hash）。記録なしに `publish_approved` 不可（§10）。
