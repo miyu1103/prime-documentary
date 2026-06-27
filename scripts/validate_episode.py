@@ -119,10 +119,20 @@ def main():
     # documented profile keyed off an existing manifest field, applied ONLY when the
     # manifest declares a feature-length target -- NOT a silent weakening of the
     # standard gate (invariant 15); the standard 10.0-12.8 band is unchanged.
+    # Two long-form profiles distinguished by how far narration runs below runtime:
+    #   FEATURE (tdm>=45): heavy designed silence/visual -> narration 0.50-0.85x runtime
+    #     (decisions/0003-feature-duration-profile.md, ADR-0003).
+    #   MID (20<=tdm<45): narration ~ runtime -> narration 0.80-1.08x runtime
+    #     (decisions/0008-mid-duration-profile.md, ADR-0008).
+    # Both keyed off the existing manifest field; the standard 10.0-12.8 band is unchanged
+    # (invariant 15 -- explicit documented profiles, not a silent weakening).
     tdm = man.get("target_duration_minutes")
-    if isinstance(tdm, (int, float)) and tdm >= 20:
-        lo, hi = 0.50 * tdm, 1.05 * tdm
+    if isinstance(tdm, (int, float)) and tdm >= 45:
+        lo, hi = 0.50 * tdm, 0.85 * tdm
         band = f"{lo:.1f}-{hi:.1f}min (feature; target {tdm:.0f}min runtime)"
+    elif isinstance(tdm, (int, float)) and tdm >= 20:
+        lo, hi = 0.80 * tdm, 1.08 * tdm
+        band = f"{lo:.1f}-{hi:.1f}min (mid; target {tdm:.0f}min runtime)"
     else:
         lo, hi = 10.0, 12.8
         band = "10.0-12.8min"

@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-017-onecoin",
+  "topic_id": "TOP-20260627-017",
+  "slug": "onecoin",
+  "title_working": "Nothing — The Woman Who Sold a Coin That Did Not Exist",
+  "state": "approved",
+  "risk_class": "R3",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "topic": "v001",
+    "design_bible": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-017-onecoin-topic",
+      "artifact_type": "topic",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-017-onecoin/00_topic/topic.v001.json",
+      "status": "approved",
+      "rights_status": "n/a",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-017-onecoin-design-bible",
+      "artifact_type": "design_bible",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-017-onecoin/04_scenes/design_bible.v001.md",
+      "status": "draft",
+      "rights_status": "n/a",
+      "qc_status": "n/a"
+    }
+  ],
+  "approvals": [],
+  "costs": {
+    "estimated": {"amount": 0, "currency": "USD"},
+    "actual": {"amount": 0, "currency": "USD"},
+    "soft_limit": {"amount": 150, "currency": "USD"},
+    "hard_limit": {"amount": 300, "currency": "USD"}
+  },
+  "warnings": [
+    "MID FEATURE (~30 min). target_duration_minutes=30 uses the new 'mid' duration profile (ADR-0008): narration band 24.0-32.4 min; finished-runtime band 27-33 min (check_final_acceptance). NOT the standard 11.5-12.5 gate.",
+    "R3 — living, charged-but-unconvicted fugitive (Ruja Ignatova) + named living associates. PRE-PUBLISH LEGAL REVIEW REQUIRED (cf. EP15 Theranos). Never assert guilt as fact: 'alleged/charged/according to the U.S. indictment'. Victims are the moral center; documented statements only; no invented dialogue; no real-person likeness (invariant 11).",
+    "Production binds to docs/PD_ONE_PASS_PRODUCTION_SPEC.v1.md: Done = check_final_acceptance.py 17 exit 0 (+ manual rows 5/7/12/13), not validator PASS. Design auteur treatment + acceptance contract in 04_scenes/design_bible.v001.md.",
+    "Left process (Claude) not yet started beyond topic + design bible: research/claims/sources/script/shotlist/ai_prompts/fact_recheck still to do before script_verified and Codex handoff. Media on external SSD (H:\\pd-media), not in repo."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-27T00:00:00+09:00",
+  "updated_at": "2026-06-27T00:00:00+09:00"
+}
