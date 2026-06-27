@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260627-018",
   "slug": "flashcrash",
   "title_working": "Did One Man Really Break the Stock Market? The 2010 Flash Crash",
-  "state": "script_draft",
+  "state": "script_verified",
   "risk_class": "R3",
   "production_tier": "A",
   "autonomy_level": 3,
@@ -19,7 +19,8 @@
     "shotlist": "v001",
     "ai_prompts": "v001",
     "thumb_prompts": "v001",
-    "edit_design": "v001"
+    "edit_design": "v001",
+    "narration_index": "v001"
   },
   "artifacts": [
     {
@@ -28,12 +29,14 @@
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-018-flashcrash/03_script/script.annotated.v001.json",
       "checksum": "sha256:da6bd4ce14894561ce7d7b0f218b78ab827476b6ac55e176c8caacc2c563d79b",
-      "status": "candidate",
+      "status": "approved",
       "rights_status": "conditional",
       "qc_status": "pass"
     }
   ],
-  "approvals": [],
+  "approvals": [
+    "APR-0001"
+  ],
   "costs": {
     "estimated": {
       "amount": 0,
@@ -58,7 +61,8 @@
     "OUTPUT GATE = docs/PD_ONE_PASS_PRODUCTION_SPEC.v1.md. Codex must satisfy rows 1-13 from the first render; not done until check_final_acceptance.py 18 exits 0. Self-asserted QC forbidden.",
     "R3 — LIVING person who pleaded guilty (Sarao). DEDICATED legal/rights review required before publish. CAUSATION LOCK: guilty plea (wire fraud+spoofing) = fact; crash = 'contributed/significantly responsible', NEVER 'caused/single-handedly/one man broke the market'; attribute to officials; no real-person likeness.",
     "Durable source hashes pending (content_hash=sha256:pending) -> compute at fact_recheck before publish. Current facts to be re-verified pre-publish.",
-    "SDXL 4K hero plates generating to H:/pd-media/assets/ai/flashcrash + remotion/public/flashcrash (26 shots x 3 variants, 3840x2160). Heavy media on the external SSD, not in this repo."
+    "SDXL 4K hero plates generating to H:/pd-media/assets/ai/flashcrash + remotion/public/flashcrash (26 shots x 3 variants, 3840x2160). Heavy media on the external SSD, not in this repo.",
+    "Narration master generated (ElevenLabs, channel voice nPczCjzI2devNBz1zQrb): vc_master_v001.mp3 (~21.8min), narration_index.v001.json provider=ElevenLabs. Script content approved (APR-0001) -> state script_verified."
   ],
   "blockers": [
     "Script not yet validated (pd-verify) or owner-approved; do not generate ElevenLabs narration until script is verified to avoid re-record.",
@@ -66,5 +70,5 @@
     "Owner approvals (script content, first-cut, title/thumbnail, narration release, publish/schedule) required before public release."
   ],
   "created_at": "2026-06-27T09:00:00+09:00",
-  "updated_at": "2026-06-27T09:00:00+09:00"
+  "updated_at": "2026-06-27T23:53:17+09:00"
 }
