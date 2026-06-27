@@ -13,8 +13,9 @@
 - **脚本＝検証済み**（`validate_episode.py 18` PASS・51 spans・~25.1分ナレ）。`[VO:]`は一字一句変更禁止。
 - **claims/sources/shotlist/ai_prompts/thumb_prompts/edit_design＝あり**（検証済み）。
 - **AI画像＝SDXL 4K(3840×2160)生成済/生成中**：`H:\pd-media\assets\ai\flashcrash\S**.png`（26ショット×3バリアント）→ `remotion/public/flashcrash/`。**全ヒーロー画像 長辺≥3840**（正典row5）。
-- **ナレ＝未生成**（オーナーの脚本内容承認後にあなたが生成）。**台本が変わると録り直しになるため、APR-0001(内容承認)後に生成すること。**
-- → あなたの仕事＝**STEP A〜H**：①ナレ生成(ElevenLabs)②bespoke `FlashCrashPremium` 実装③字幕④BGM4層⑤ファクトリ加飾⑥独立ゲートPASS⑦最終レンダー⑧パッケージ→STEP H 停止。
+- **★ナレ＝生成済（使うだけ・再生成禁止＝二重課金）**：オーナー承認(APR-0001)済→`H:\pd-media\episodes\PD-2026-018-flashcrash\06_voice\master\vc_master_v001.mp3`（ElevenLabs本番・チャンネル声・~21.8分）＋`06_audio/narration_index.v001.json`（provider=ElevenLabs）。**`voice_is_master` 既にPASS。ElevenLabsを再度叩かない。**
+- **★字幕＝生成済（使うだけ）**：`08_edit/captions.v001.srt` ＋ `remotion/src/data/flashcrash_captions.ts`（強制アライン・437キュー・≤17cps）。**`captions_final`＋`caption_format` 既にPASS。** 最終尺に合わせて**VOを再タイミングした場合のみ** `scripts/align_flashcrash_captions.py` を再実行。
+- → あなたの仕事＝**STEP B〜H**（ナレ/字幕は済）：②bespoke `FlashCrashPremium` 実装③（字幕は既存・必要時のみ再アライン）④BGM4層⑤ファクトリ加飾⑥独立ゲートPASS⑦最終レンダー⑧パッケージ→STEP H 停止。
 
 ### ★過去話の失敗を繰り返さない（オーナー実視聴の指摘）
 声がSAPI／字幕なし／黒画面／BGMなし／フックがハイライトでない／4部構成でない／画像が荒い／素材未活用／アニメしょぼい／サムネ無い・派手でない——**全て正典 row1-13 で固定済**。最初のレンダーから満たし、**`check_final_acceptance.py 18` が exit 0 になるまで完成としない**。設計書に書いてあっても実レンダーに入っていなければ不合格。
@@ -28,16 +29,16 @@
 
 ## 3. パイプライン（各ステップ後 commit+push）
 
-### STEP A — ナレ生成（ElevenLabs・APR-0001後）
-- `scripts/gen_narration_theranos.py` を雛形に `gen_narration_flashcrash.py` を作成（EP=PD-2026-018-flashcrash・**チャンネル共通 voice_id `nPczCjzI2devNBz1zQrb`・model eleven_multilingual_v2**）。`script.en.v001.md` の `[VO:]` をそのまま生成→ master `…/06_voice/master/vc_master_v001.mp3`、`06_audio/narration_index.v001.json`（**provider=ElevenLabs**）。発音注意：Sarao/Hounslow/E-mini/CME/Heathrow。**SAPIは下書き専用・最終に使わない。**
+### STEP A — ナレ＝完了済（何もしない・再生成禁止）
+- master `vc_master_v001.mp3`（ElevenLabs本番・~21.8分）＋ `narration_index.v001.json`（provider=ElevenLabs）が既にある。**そのまま使う。ElevenLabsを再度叩かない（二重課金）。** 音声入力は STEP D の4層ミックス master に向ける。
 
 ### STEP B — bespoke `FlashCrashPremium.tsx`（edit_design §6・row8/9/10）
 - 雛形＝`CarpenterPremium.tsx`/参照`MadoffPremium.tsx`。汎用RoughCut不可。再利用：`Motion.tsx`/`Grain.tsx`/`Bookends.tsx`(`BrandOpening`/`BrandEndcard`)/`SceneArt.tsx`/`SceneShell`/`TwoColumn`/`BigNumber`/`Boundary`。
 - **新規小コンポ3つ（SVG/CSS・$0・実在人物を描かない）**：`ValuationCollapse`（市場ライン崩落＋$0.01／S02,S17,S18）・`OrderBook`（買売二列＋見せ玉の壁積み上げ／S10）・`GhostWall`（巨大な壁が迫る→消滅→隙間に本物1注文／S11,S12,S13＝スプーフィングを“完全に理解できる”図解）。
 - **4部構成（row10）**：① フック＝本編山場の速いカット集（約20〜30秒・row9＝本編が約束を果たす）→ ② `BrandOpening`＋thesis「Did one man break the market?」→ ③ 本編 act1-6（実VO=narration_indexで再タイミング）→ ④ Ending＋CTA「Subscribe」（最後30秒）→ `BrandEndcard`。**尺＝mid 27〜33分**（`check_final_acceptance` runtime_band）。VO~25分＋幕間/factory b-roll/山場S17の余韻で寄せる（ナレは足さない）。全カット映画的カメラ（静止2秒超なし）。
 
-### STEP C — 字幕（強制アライン・row3/4）
-- 新VOを強制アライン→`08_edit/captions.v001.srt`(+json)。**ズレ≤120ms・台本一字一句一致・≤2行/≤42字/1.0-6.0s/≤17cps・単語途中で切らない**。`remotion/src/data/flashcrash_captions.ts` を生成。位置分離（字幕下/テロップ上/出典右下 例`United States v. Sarao` `CFTC-SEC report, May 6 2010`）。
+### STEP C — 字幕＝完了済（使うだけ）
+- `08_edit/captions.v001.srt` ＋ `remotion/src/data/flashcrash_captions.ts`（`FLASHCRASH_CAPTIONS`・437キュー・≤17cps・`caption_format` PASS）が既にある。`FlashCrashPremium` で焼き込み（位置分離＝字幕下/テロップ上/出典右下 例`United States v. Sarao`・`CFTC-SEC report, May 6 2010`・AI画像に`symbolic reconstruction`）。**最終尺でVOを再タイミングした場合のみ** `scripts/align_flashcrash_captions.py`（VOICEを最終mix/再タイミング後の音声へ向けて）を再実行。
 
 ### STEP D — BGM 4層ミックス（row1・★BGM常時）
 - `build_kelo_audio_v001.py` 雛形→`build_flashcrash_audio_v001.py`（VO/BGM/SFX/ambience＋VOサイドチェインダッキング）。**BGM全編常時（無音≤25s）**。章別mood：hook=tension_build→hook／act1-2=explainer_bed→tension_build／act3=tension_build／**act4=tension_build→(S17暴落)低域ドローン＋ほぼ無音の数秒**／act5=somber／ending=outro。決定的SFX：$9B/$1T崩落に sub_drop+low_boom、S17 plunge “ため→開放”。整音 −14 LUFS / TP≤−1。完全ミックスmasterを `FlashCrashPremium` の音声入力に。
