@@ -86,6 +86,8 @@ MAX_FREEZE_TOTAL_S = 8.0
 MIN_VIDEO_W, MIN_VIDEO_H = 1920, 1080
 THUMB_W, THUMB_H = 1280, 720
 MIN_THUMB_VARIANTS = 3
+IMG_MIN_LONG_EDGE = 3840                         # spec row 5: hero stills upscaled to >=4K long edge
+FACTORY_SECONDS_PER_CLIP = 45                    # spec row 7: >=1 distinct factory clip per ~45s
 
 
 def runtime_band(epdir: Path) -> tuple[float, float]:
@@ -363,6 +365,45 @@ def check_loudness(path: Path) -> dict:
             "reason": f"integrated {lufs:.1f} LUFS (target -14, band {LUFS_LO}..{LUFS_HI})"}
 
 
+def check_image_resolution(epdir: Path) -> dict:
+    """Spec row 5: every hero still must be 4K-grade (long edge >= 3840 px).
+    Catches 'images are coarse / low quality'. Reads staged PNGs in
+    remotion/public/<slug> (factory overlays excluded)."""
+    slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
+    pub = ROOT / "remotion" / "public" / slug
+    pngs = list(pub.glob("*.png")) if pub.is_dir() else []
+    if not pngs:
+        return {"check": "image_resolution", "ok": True, "hard": True, "skipped": True,
+                "reason": f"no hero PNGs staged in remotion/public/{slug}"}
+    low = []
+    for p in pngs:
+        dim = _png_dims(p)
+        if dim and max(dim) < IMG_MIN_LONG_EDGE:
+            low.append(f"{p.name}={dim[0]}x{dim[1]}")
+    ok = not low
+    return {"check": "image_resolution", "ok": ok, "hard": True,
+            "reason": (f"{len(pngs)} hero PNGs, all long-edge >= {IMG_MIN_LONG_EDGE}px"
+                       if ok else f"{len(low)}/{len(pngs)} below {IMG_MIN_LONG_EDGE}px: {low[:4]}")}
+
+
+def check_factory_used(epdir: Path, render_dur: float | None) -> dict:
+    """Spec row 7: the downloaded factory shelf must actually be used as the
+    decoration layer. Catches 'downloaded assets barely used'. Requires the
+    factory dir to be non-empty AND referenced by the composition, with at least
+    one distinct clip per ~45s of runtime."""
+    slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
+    fdir = ROOT / "remotion" / "public" / slug / "factory"
+    n = len([p for p in fdir.glob("*") if p.is_file()]) if fdir.is_dir() else 0
+    comp = next((p for p in (ROOT / "remotion" / "src" / "compositions").glob("*.tsx")
+                 if slug.lower() in p.name.lower()), None)
+    referenced = bool(comp and "factory" in comp.read_text(encoding="utf-8", errors="ignore").lower())
+    need = max(1, int((render_dur or 0) // FACTORY_SECONDS_PER_CLIP)) if render_dur else 1
+    ok = n >= need and referenced
+    return {"check": "factory_used", "ok": ok, "hard": True,
+            "reason": f"{n} factory clip(s) staged, referenced_in_composition={referenced}, "
+                      f"need >= {need} (1 per {FACTORY_SECONDS_PER_CLIP}s)"}
+
+
 def resolve_render(epdir: Path, override: str | None) -> Path | None:
     if override:
         return Path(override)
@@ -413,6 +454,8 @@ def main() -> int:
     results.append(check_captions(epdir, render_dur))
     results.append(check_caption_format(epdir))
     results.append(check_thumbnail(epdir))
+    results.append(check_image_resolution(epdir))
+    results.append(check_factory_used(epdir, render_dur))
 
     hard_fail = [r for r in results if r["hard"] and not r["ok"]]
     soft_fail = [r for r in results if not r["hard"] and not r["ok"]]
