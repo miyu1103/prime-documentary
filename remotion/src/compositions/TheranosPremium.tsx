@@ -196,7 +196,7 @@ const CitationBadge: React.FC<{text?: string}> = ({text}) => {
       style={{
         position: 'absolute',
         right: 58,
-        bottom: 158,
+        bottom: 226,
         maxWidth: 610,
         fontFamily: BRAND.font.body,
         fontSize: 20,

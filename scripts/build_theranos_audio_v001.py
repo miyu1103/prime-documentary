@@ -12,6 +12,7 @@ import re
 import shutil
 import subprocess
 from datetime import datetime, timezone
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
 
@@ -408,21 +409,195 @@ def transcribe_words(path: Path) -> list[dict[str, Any]]:
     return words
 
 
-def split_caption_lines(tokens: list[str]) -> list[tuple[str, int, int]]:
-    lines: list[tuple[str, int, int]] = []
-    cur: list[tuple[str, int]] = []
-    for i, token in enumerate(tokens):
-        trial = " ".join([x for x, _ in cur] + [token]) if cur else token
-        if cur and (len(cur) >= 8 or len(trial) > 50):
-            lines.append((" ".join(x for x, _ in cur), cur[0][1], cur[-1][1]))
-            cur = []
-        cur.append((token, i))
-        if re.search(r"[.?!]$", token) or token.endswith(":") or (token.endswith(",") and len(cur) >= 5):
-            lines.append((" ".join(x for x, _ in cur), cur[0][1], cur[-1][1]))
-            cur = []
-    if cur:
-        lines.append((" ".join(x for x, _ in cur), cur[0][1], cur[-1][1]))
-    return lines
+BAD_BREAK_ENDS = {
+    "a",
+    "an",
+    "and",
+    "are",
+    "as",
+    "at",
+    "be",
+    "been",
+    "being",
+    "but",
+    "by",
+    "does",
+    "every",
+    "for",
+    "from",
+    "in",
+    "into",
+    "is",
+    "of",
+    "on",
+    "or",
+    "over",
+    "that",
+    "the",
+    "to",
+    "was",
+    "were",
+    "with",
+}
+
+
+def word_cost(script_word: str, heard_word: str) -> float:
+    if not script_word or not heard_word:
+        return 2.0
+    if script_word == heard_word:
+        return 0.0
+    if script_word in {"nine", "9"} and heard_word in {"9", "nine"}:
+        return 0.05
+    if script_word in {"dollars", "dollar"} and heard_word in {"billion", "million"}:
+        return 0.9
+    if min(len(script_word), len(heard_word)) >= 4 and (
+        script_word.startswith(heard_word[:4]) or heard_word.startswith(script_word[:4])
+    ):
+        return 0.2
+    ratio = SequenceMatcher(None, script_word, heard_word).ratio()
+    if ratio >= 0.72:
+        return 1.0 - ratio
+    return 1.35
+
+
+def align_token_times(
+    tokens: list[str],
+    local_words: list[dict[str, Any]],
+    chunk_start: float,
+    chunk_end: float,
+) -> list[tuple[float, float]]:
+    script_norm = [norm(token) for token in tokens]
+    heard_norm = [str(word["norm"]) for word in local_words]
+    n = len(script_norm)
+    m = len(heard_norm)
+    dp = [[0.0] * (m + 1) for _ in range(n + 1)]
+    back: list[list[str]] = [[""] * (m + 1) for _ in range(n + 1)]
+    for i in range(1, n + 1):
+        dp[i][0] = dp[i - 1][0] + 0.72
+        back[i][0] = "skip_token"
+    for j in range(1, m + 1):
+        dp[0][j] = dp[0][j - 1] + 0.58
+        back[0][j] = "skip_heard"
+    for i in range(1, n + 1):
+        for j in range(1, m + 1):
+            choices = [
+                (dp[i - 1][j - 1] + word_cost(script_norm[i - 1], heard_norm[j - 1]), "match"),
+                (dp[i - 1][j] + 0.72, "skip_token"),
+                (dp[i][j - 1] + 0.58, "skip_heard"),
+            ]
+            dp[i][j], back[i][j] = min(choices, key=lambda item: item[0])
+
+    token_times: list[tuple[float, float] | None] = [None] * n
+    i, j = n, m
+    while i > 0 or j > 0:
+        op = back[i][j]
+        if op == "match":
+            cost = word_cost(script_norm[i - 1], heard_norm[j - 1])
+            if cost <= 1.05:
+                token_times[i - 1] = (float(local_words[j - 1]["start"]), float(local_words[j - 1]["end"]))
+            i -= 1
+            j -= 1
+        elif op == "skip_token":
+            i -= 1
+        else:
+            j -= 1
+
+    assigned = [idx for idx, value in enumerate(token_times) if value is not None]
+    if not assigned:
+        span = max(0.1, chunk_end - chunk_start)
+        return [
+            (chunk_start + span * idx / max(1, n), chunk_start + span * (idx + 1) / max(1, n))
+            for idx in range(n)
+        ]
+
+    for idx in range(n):
+        if token_times[idx] is not None:
+            continue
+        prev_items = [item for item in assigned if item < idx]
+        next_items = [item for item in assigned if item > idx]
+        prev_idx = prev_items[-1] if prev_items else None
+        next_idx = next_items[0] if next_items else None
+        if prev_idx is None and next_idx is None:
+            frac = (idx + 0.5) / max(1, n)
+            t = chunk_start + frac * (chunk_end - chunk_start)
+        elif prev_idx is None:
+            next_start = token_times[next_idx][0]  # type: ignore[index]
+            t = chunk_start + (next_start - chunk_start) * (idx + 1) / (next_idx + 1)
+        elif next_idx is None:
+            prev_end = token_times[prev_idx][1]  # type: ignore[index]
+            t = prev_end + (chunk_end - prev_end) * (idx - prev_idx) / max(1, n - prev_idx)
+        else:
+            prev_end = token_times[prev_idx][1]  # type: ignore[index]
+            next_start = token_times[next_idx][0]  # type: ignore[index]
+            t = prev_end + (next_start - prev_end) * (idx - prev_idx) / (next_idx - prev_idx)
+        token_times[idx] = (max(chunk_start, t - 0.08), min(chunk_end, t + 0.22))
+
+    return [(float(item[0]), float(item[1])) for item in token_times if item is not None]
+
+
+def bad_break(token: str) -> bool:
+    return norm(token) in BAD_BREAK_ENDS
+
+
+def choose_break(tokens: list[str], start: int, end: int) -> int:
+    midpoint = (start + end) / 2
+    best = start + 1
+    best_score = 1_000_000.0
+    for idx in range(start + 2, end - 1):
+        left = " ".join(tokens[start : idx + 1])
+        right = " ".join(tokens[idx + 1 : end + 1])
+        score = abs(idx - midpoint) * 4 + abs(len(left) - len(right)) * 0.65
+        score += max(0, len(left) - 46) * 8
+        score += max(0, len(right) - 46) * 8
+        if tokens[idx].endswith(",") or tokens[idx] in {"—", "-", "–"}:
+            score -= 28
+        if re.search(r"[;:]$", tokens[idx]):
+            score -= 18
+        if norm(tokens[idx + 1]) in {"and", "but", "because", "while", "when", "where", "so"}:
+            score -= 10
+        if bad_break(tokens[idx]):
+            score += 45
+        if score < best_score:
+            best = idx
+            best_score = score
+    return best
+
+
+def wrap_caption_text(tokens: list[str]) -> str:
+    text = " ".join(tokens)
+    if len(text) <= 44:
+        return text
+    split = choose_break(tokens, 0, len(tokens) - 1)
+    return " ".join(tokens[: split + 1]) + "\n" + " ".join(tokens[split + 1 :])
+
+
+def split_caption_groups(tokens: list[str], token_times: list[tuple[float, float]]) -> list[tuple[str, int, int]]:
+    sentence_groups: list[tuple[int, int]] = []
+    start = 0
+    for idx, token in enumerate(tokens):
+        if re.search(r"[.?!]$", token) or token.endswith(":"):
+            sentence_groups.append((start, idx))
+            start = idx + 1
+    if start < len(tokens):
+        sentence_groups.append((start, len(tokens) - 1))
+
+    groups: list[tuple[int, int]] = []
+    pending = sentence_groups[:]
+    while pending:
+        a, b = pending.pop(0)
+        text = " ".join(tokens[a : b + 1])
+        dur = token_times[b][1] - token_times[a][0]
+        if len(tokens[a : b + 1]) > 16 or len(text) > 90 or dur > 6.2:
+            split = choose_break(tokens, a, b)
+            pending.insert(0, (split + 1, b))
+            pending.insert(0, (a, split))
+        else:
+            groups.append((a, b))
+
+    out: list[tuple[str, int, int]] = []
+    for a, b in groups:
+        out.append((wrap_caption_text(tokens[a : b + 1]), a, b))
+    return out
 
 
 def ts_srt(seconds: float) -> str:
@@ -445,31 +620,10 @@ def write_captions(placements: list[dict[str, Any]]) -> list[dict[str, Any]]:
         end = float(placement["end"])
         local_words = [w for w in words if start - 0.18 <= (w["start"] + w["end"]) / 2 <= end + 0.18]
         tokens = text.split()
-        token_times: list[tuple[float, float] | None] = [None] * len(tokens)
-        j = 0
-        for ti, token in enumerate(tokens):
-            tn = norm(token)
-            if not tn:
-                continue
-            found = None
-            for k in range(j, min(j + 5, len(local_words))):
-                wn = str(local_words[k]["norm"])
-                if wn == tn or (len(tn) >= 4 and wn.startswith(tn[:4])):
-                    found = k
-                    break
-            if found is None and j < len(local_words):
-                found = j
-            if found is not None:
-                token_times[ti] = (float(local_words[found]["start"]), float(local_words[found]["end"]))
-                j = found + 1
-        for ti, current in enumerate(token_times):
-            if current is None:
-                frac = (ti + 0.5) / max(1, len(tokens))
-                t = start + frac * (end - start)
-                token_times[ti] = (t, min(end, t + 0.35))
-        for line, a, b in split_caption_lines(tokens):
-            s = token_times[a][0]  # type: ignore[index]
-            e = token_times[b][1]  # type: ignore[index]
+        token_times = align_token_times(tokens, local_words, start, end)
+        for line, a, b in split_caption_groups(tokens, token_times):
+            s = max(start, token_times[a][0] - 0.04)
+            e = min(end, token_times[b][1] + 0.12)
             if e <= s:
                 e = min(end, s + 0.65)
             entries.append({"id": f"CAP-{len(entries) + 1:04d}", "start": round(s, 3), "end": round(e, 3), "text": line, "chunk_id": placement["chunk_id"]})
@@ -480,6 +634,10 @@ def write_captions(placements: list[dict[str, Any]]) -> list[dict[str, Any]]:
         if entry["end"] <= entry["start"]:
             entry["end"] = round(float(entry["start"]) + 0.55, 3)
         fixed.append(entry)
+    expected = " ".join(chunks).replace("\n", " ")
+    actual = " ".join(str(item["text"]).replace("\n", " ") for item in fixed)
+    if re.sub(r"\s+", " ", actual).strip() != re.sub(r"\s+", " ", expected).strip():
+        raise RuntimeError("Caption text does not exactly match locked script VO text after CLM removal")
     CAPTIONS.parent.mkdir(parents=True, exist_ok=True)
     CAPTIONS.write_text(
         "\n".join(
