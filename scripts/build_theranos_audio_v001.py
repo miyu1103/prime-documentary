@@ -37,13 +37,47 @@ REMOTION_AUDIO = ROOT / "remotion" / "public" / "theranos" / "audio" / "theranos
 FFMPEG = "ffmpeg"
 FFPROBE = "ffprobe"
 FPS = 30
+NARRATION_TEMPO = 0.92
 HOOK_MONTAGE_SEC = 7.0
 BRIDGE_SEC = 1.5
 OPENING_SEC = 3.5
 CONTENT_START_SEC = HOOK_MONTAGE_SEC + BRIDGE_SEC + OPENING_SEC
 ENDCARD_SEC = 9.0
 
+
+def slow(seconds: float) -> float:
+    return seconds / NARRATION_TEMPO
+
+
 BODY_INPUT = [
+    ("SPN-0001", "VC-0001", slow(27.725) + 7.0),
+    ("SPN-0002", "VC-0002", slow(36.270) + 10.5),
+    ("SPN-0003", "VC-0003", slow(9.381)),
+    ("SPN-0004", "VC-0004", slow(25.542)),
+    ("SPN-0005", "VC-0005", slow(24.381) + 7.0),
+    ("SPN-0023", "VC-0006", slow(19.458)),
+    ("SPN-0006", "VC-0007", slow(24.242) + 10.5),
+    ("SPN-0007", "VC-0008", slow(9.706)),
+    ("SPN-0008", "VC-0009", slow(23.034)),
+    ("SPN-0009", "VC-0010", slow(10.449)),
+    ("SPN-0010", "VC-0011", slow(24.427) + 6.5),
+    ("SPN-0011", "VC-0012", slow(22.756) + 10.5),
+    ("SPN-0012", "VC-0013+VC-0014", slow(9.985) + slow(29.582)),
+    ("SPN-0024", "VC-0015", slow(26.099)),
+    ("SPN-0013", "VC-0016", slow(23.266) + 16.0),
+    ("SPN-0014", "VC-0017", slow(16.440)),
+    ("SPN-0015", "VC-0018", slow(42.446)),
+    ("SPN-0016", "VC-0019", slow(16.300) + 10.5),
+    ("SPN-0017", "VC-0020", slow(21.780)),
+    ("SPN-0018", "VC-0021", slow(18.437) + 7.0),
+    ("SPN-0019", "VC-0022", slow(22.105) + 10.5),
+    ("SPN-0020", "VC-0023", slow(33.112) + 6.5),
+    ("SPN-0021", "VC-0024", slow(21.037) + 4.5),
+    ("SPN-0022", "VC-0025", slow(9.799) + 12.0),
+]
+
+BASE_CAPTION_COMMIT = "96e7815"
+OLD_BODY_INPUT = [
     ("SPN-0001", "VC-0001", 27.725 + 8.0),
     ("SPN-0002", "VC-0002", 36.270 + 11.5),
     ("SPN-0003", "VC-0003", 9.381),
@@ -70,6 +104,20 @@ BODY_INPUT = [
     ("SPN-0022", "VC-0025", 9.799 + 16.0),
 ]
 
+
+def placement_map(body_input: list[tuple[str, str, float]], *, tempo: float) -> dict[str, dict[str, float]]:
+    index = load_index()
+    out: dict[str, dict[str, float]] = {}
+    cursor = CONTENT_START_SEC
+    for span_id, chunk_expr, scene_dur in body_input:
+        local = cursor
+        for chunk_id in chunk_expr.split("+"):
+            seconds = float(index[chunk_id]["seconds"]) / tempo
+            out[chunk_id] = {"start": local, "end": local + seconds, "seconds": seconds}
+            local += seconds
+        cursor += scene_dur
+    return out
+
 VOICE_PLACEMENTS: list[dict[str, Any]] = []
 cursor = CONTENT_START_SEC
 for span_id, chunk_expr, scene_dur in BODY_INPUT:
@@ -78,9 +126,9 @@ for span_id, chunk_expr, scene_dur in BODY_INPUT:
         VOICE_PLACEMENTS.append({"span_id": span_id, "chunk_id": chunk_id, "start": round(local, 3)})
         item_seconds = 0.0
         if chunk_id == "VC-0013":
-            item_seconds = 9.985
+            item_seconds = slow(9.985)
         elif chunk_id == "VC-0014":
-            item_seconds = 29.582
+            item_seconds = slow(29.582)
         else:
             # Filled from narration_index at runtime.
             item_seconds = -1.0
@@ -146,8 +194,10 @@ def resolved_voice_placements() -> list[dict[str, Any]]:
                 **item,
                 "source_start": float(src["start"]),
                 "source_end": float(src["end"]),
-                "seconds": float(src["seconds"]),
-                "end": round(float(item["start"]) + float(src["seconds"]), 3),
+                "seconds": slow(float(src["seconds"])),
+                "source_seconds": float(src["seconds"]),
+                "tempo": NARRATION_TEMPO,
+                "end": round(float(item["start"]) + slow(float(src["seconds"])), 3),
             }
         )
     return out
@@ -160,7 +210,7 @@ def ffmpeg_voice_filters(placements: list[dict[str, Any]]) -> tuple[list[str], s
         delay = int(round(float(item["start"]) * 1000))
         filters.append(
             f"[0:a]atrim=start={item['source_start']:.3f}:end={item['source_end']:.3f},"
-            f"asetpts=PTS-STARTPTS,aresample=48000,adelay={delay}|{delay}[vc{i}]"
+            f"asetpts=PTS-STARTPTS,atempo={NARRATION_TEMPO:.5f},aresample=48000,adelay={delay}|{delay}[vc{i}]"
         )
         labels.append(f"[vc{i}]")
     filters.append(
@@ -328,7 +378,7 @@ def build_final_mix(placements: list[dict[str, Any]]) -> tuple[dict[str, Any], l
         "[araw][vo]sidechaincompress=threshold=0.028:ratio=7:attack=18:release=520:makeup=1[aduck]",
         (
             "[vo][mduck][aduck][sfxraw]amix=inputs=4:normalize=0:duration=longest:dropout_transition=0,"
-            f"atrim=0:{TOTAL_SEC:.3f},loudnorm=I=-14:TP=-1:LRA=11:linear=false,"
+            f"apad=pad_dur=20,atrim=0:{TOTAL_SEC:.3f},loudnorm=I=-14:TP=-1:LRA=11:linear=false,"
             f"alimiter=limit=0.78,afade=t=out:st={TOTAL_SEC - 2.0:.3f}:d=2[aout]"
         ),
     ]
@@ -611,7 +661,89 @@ def ts_srt(seconds: float) -> str:
     return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
 
 
+def write_caption_files(fixed: list[dict[str, Any]], method: str) -> list[dict[str, Any]]:
+    chunks = script_chunks()
+    expected = " ".join(chunks).replace("\n", " ")
+    actual = " ".join(str(item["text"]).replace("\n", " ") for item in fixed)
+    if re.sub(r"\s+", " ", actual).strip() != re.sub(r"\s+", " ", expected).strip():
+        raise RuntimeError("Caption text does not exactly match locked script VO text after CLM removal")
+    CAPTIONS.parent.mkdir(parents=True, exist_ok=True)
+    CAPTIONS.write_text(
+        "\n".join(
+            f"{i}\n{ts_srt(float(item['start']))} --> {ts_srt(float(item['end']))}\n{item['text']}\n"
+            for i, item in enumerate(fixed, start=1)
+        ),
+        encoding="utf-8",
+    )
+    CAPTIONS_JSON.write_text(
+        json.dumps(
+            {
+                "episode_id": EP,
+                "method": method,
+                "timeline_seconds": round(TOTAL_SEC, 3),
+                "narration_tempo": NARRATION_TEMPO,
+                "cues": fixed,
+            },
+            indent=2,
+            ensure_ascii=False,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
+    cues_for_ts = [{"id": item["id"], "start": item["start"], "end": item["end"], "text": item["text"]} for item in fixed]
+    CAPTIONS_TS.write_text(
+        "export type TheranosCaption = {id: string; start: number; end: number; text: string};\n"
+        f"export const THERANOS_CAPTIONS: TheranosCaption[] = {json.dumps(cues_for_ts, indent=2, ensure_ascii=False)};\n",
+        encoding="utf-8",
+    )
+    print(f"captions={CAPTIONS} cues={len(fixed)}", flush=True)
+    return fixed
+
+
+def load_base_caption_cues() -> list[dict[str, Any]]:
+    rel_path = "episodes/PD-2026-015-theranos/08_edit/captions.v001.json"
+    result = subprocess.run(
+        ["git", "show", f"{BASE_CAPTION_COMMIT}:{rel_path}"],
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        check=False,
+    )
+    if result.returncode == 0:
+        return json.loads(result.stdout)["cues"]
+    data = json.loads(CAPTIONS_JSON.read_text(encoding="utf-8"))
+    if float(data.get("timeline_seconds", 9999)) > 720:
+        raise RuntimeError("Current captions are already slow-timeline captions; cannot use as retiming seed")
+    return data["cues"]
+
+
+def write_stretched_captions() -> list[dict[str, Any]]:
+    seed = load_base_caption_cues()
+    old_map = placement_map(OLD_BODY_INPUT, tempo=1.0)
+    new_map = placement_map(BODY_INPUT, tempo=NARRATION_TEMPO)
+    fixed: list[dict[str, Any]] = []
+    for i, item in enumerate(seed, start=1):
+        chunk_id = item["chunk_id"]
+        old = old_map[chunk_id]
+        new = new_map[chunk_id]
+        start = new["start"] + (float(item["start"]) - old["start"]) / NARRATION_TEMPO
+        end = new["start"] + (float(item["end"]) - old["start"]) / NARRATION_TEMPO
+        start = max(new["start"], start)
+        end = min(new["end"], end)
+        if fixed and start < float(fixed[-1]["end"]):
+            start = float(fixed[-1]["end"]) + 0.001
+        if end <= start:
+            end = start + 0.55
+        fixed.append({**item, "id": f"CAP-{i:04d}", "start": round(start, 3), "end": round(end, 3)})
+    return write_caption_files(
+        fixed,
+        f"mathematical retime from {BASE_CAPTION_COMMIT} captions; ElevenLabs master stretched with atempo={NARRATION_TEMPO}",
+    )
+
+
 def write_captions(placements: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    if NARRATION_TEMPO != 1.0:
+        return write_stretched_captions()
     chunks = script_chunks()
     words = transcribe_words(VOICE_TIMELINE)
     entries: list[dict[str, Any]] = []
@@ -634,40 +766,7 @@ def write_captions(placements: list[dict[str, Any]]) -> list[dict[str, Any]]:
         if entry["end"] <= entry["start"]:
             entry["end"] = round(float(entry["start"]) + 0.55, 3)
         fixed.append(entry)
-    expected = " ".join(chunks).replace("\n", " ")
-    actual = " ".join(str(item["text"]).replace("\n", " ") for item in fixed)
-    if re.sub(r"\s+", " ", actual).strip() != re.sub(r"\s+", " ", expected).strip():
-        raise RuntimeError("Caption text does not exactly match locked script VO text after CLM removal")
-    CAPTIONS.parent.mkdir(parents=True, exist_ok=True)
-    CAPTIONS.write_text(
-        "\n".join(
-            f"{i}\n{ts_srt(float(item['start']))} --> {ts_srt(float(item['end']))}\n{item['text']}\n"
-            for i, item in enumerate(fixed, start=1)
-        ),
-        encoding="utf-8",
-    )
-    CAPTIONS_JSON.write_text(
-        json.dumps(
-            {
-                "episode_id": EP,
-                "method": "master-vo-timeline faster-whisper word timestamps aligned to locked script",
-                "timeline_seconds": round(TOTAL_SEC, 3),
-                "cues": fixed,
-            },
-            indent=2,
-            ensure_ascii=False,
-        )
-        + "\n",
-        encoding="utf-8",
-    )
-    cues_for_ts = [{"id": item["id"], "start": item["start"], "end": item["end"], "text": item["text"]} for item in fixed]
-    CAPTIONS_TS.write_text(
-        "export type TheranosCaption = {id: string; start: number; end: number; text: string};\n"
-        f"export const THERANOS_CAPTIONS: TheranosCaption[] = {json.dumps(cues_for_ts, indent=2, ensure_ascii=False)};\n",
-        encoding="utf-8",
-    )
-    print(f"captions={CAPTIONS} cues={len(fixed)}", flush=True)
-    return fixed
+    return write_caption_files(fixed, "master-vo-timeline faster-whisper word timestamps aligned to locked script")
 
 
 def main() -> int:

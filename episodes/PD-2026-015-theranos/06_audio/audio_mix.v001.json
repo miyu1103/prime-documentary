@@ -1,25 +1,25 @@
 {
   "episode_id": "PD-2026-015-theranos",
   "revision": "v001",
-  "created_at": "2026-06-27T10:33:08.120512+00:00",
-  "timeline_seconds": 705.259,
+  "created_at": "2026-06-27T14:29:31.380309+00:00",
+  "timeline_seconds": 735.39,
   "voice_source": {
     "provider": "ElevenLabs",
     "master": "artifact://episodes/PD-2026-015-theranos/06_voice/master/vc_master_v001.mp3",
     "master_sha256": "sha256:6fee72875c34867cf8e37d34bbbdee769bbbf4735cbeb7adf884e886760a58b0",
     "method": "ffmpeg atrim from approved master plus timeline holds; no regeneration",
     "voice_timeline": "artifact://episodes/PD-2026-015-theranos/06_voice/master/theranos_vo_timeline_v001.wav",
-    "voice_timeline_sha256": "sha256:12de99d350748be5bdf793dc2063443f5cff7436ab6b9cb50852adc683bcee0e"
+    "voice_timeline_sha256": "sha256:88f4909b6a97c62dccc82ef59bb919f8cf646d81b356e79b8d147137f856a4b4"
   },
   "mix": {
     "master": "artifact://episodes/PD-2026-015-theranos/06_voice/master/theranos_mix_v001.mp3",
-    "master_sha256": "sha256:e835d8aa3cc8e0d754d827e983d649db2f1666791a28e2dc613fdd0d90661dff",
+    "master_sha256": "sha256:95b8557c9f63bbc117c7c04652c36e5c5c04f73a88c060dcfa6d4c463bf566f4",
     "remotion_static_audio": "theranos/audio/theranos_mix_v001.mp3",
-    "duration_seconds": 705.218,
+    "duration_seconds": 735.38,
     "loudness_probe": {
-      "input_i": -14.16,
-      "input_tp": -3.11,
-      "input_lra": 6.7,
+      "input_i": -14.12,
+      "input_tp": -3.06,
+      "input_lra": 8.5,
       "target_offset": 0.57
     },
     "layers": [
@@ -37,224 +37,274 @@
       "start": 12.0,
       "source_start": 0.0,
       "source_end": 27.725,
-      "seconds": 27.725,
-      "end": 39.725
+      "seconds": 30.13586956521739,
+      "source_seconds": 27.725,
+      "tempo": 0.92,
+      "end": 42.136
     },
     {
       "span_id": "SPN-0002",
       "chunk_id": "VC-0002",
-      "start": 47.725,
+      "start": 49.136,
       "source_start": 28.075,
       "source_end": 64.345,
-      "seconds": 36.27,
-      "end": 83.995
+      "seconds": 39.423913043478265,
+      "source_seconds": 36.27,
+      "tempo": 0.92,
+      "end": 88.56
     },
     {
       "span_id": "SPN-0003",
       "chunk_id": "VC-0003",
-      "start": 95.495,
+      "start": 99.06,
       "source_start": 64.695,
       "source_end": 74.076,
-      "seconds": 9.381,
-      "end": 104.876
+      "seconds": 10.196739130434782,
+      "source_seconds": 9.381,
+      "tempo": 0.92,
+      "end": 109.257
     },
     {
       "span_id": "SPN-0004",
       "chunk_id": "VC-0004",
-      "start": 104.876,
+      "start": 109.257,
       "source_start": 74.426,
       "source_end": 99.968,
-      "seconds": 25.542,
-      "end": 130.418
+      "seconds": 27.76304347826087,
+      "source_seconds": 25.542,
+      "tempo": 0.92,
+      "end": 137.02
     },
     {
       "span_id": "SPN-0005",
       "chunk_id": "VC-0005",
-      "start": 130.418,
+      "start": 137.02,
       "source_start": 100.318,
       "source_end": 124.699,
-      "seconds": 24.381,
-      "end": 154.799
+      "seconds": 26.50108695652174,
+      "source_seconds": 24.381,
+      "tempo": 0.92,
+      "end": 163.521
     },
     {
       "span_id": "SPN-0023",
       "chunk_id": "VC-0006",
-      "start": 162.799,
+      "start": 170.521,
       "source_start": 125.049,
       "source_end": 144.507,
-      "seconds": 19.458,
-      "end": 182.257
+      "seconds": 21.15,
+      "source_seconds": 19.458,
+      "tempo": 0.92,
+      "end": 191.671
     },
     {
       "span_id": "SPN-0006",
       "chunk_id": "VC-0007",
-      "start": 182.257,
+      "start": 191.671,
       "source_start": 144.857,
       "source_end": 169.099,
-      "seconds": 24.242,
-      "end": 206.499
+      "seconds": 26.35,
+      "source_seconds": 24.242,
+      "tempo": 0.92,
+      "end": 218.021
     },
     {
       "span_id": "SPN-0007",
       "chunk_id": "VC-0008",
-      "start": 217.999,
+      "start": 228.521,
       "source_start": 169.449,
       "source_end": 179.155,
-      "seconds": 9.706,
-      "end": 227.705
+      "seconds": 10.549999999999999,
+      "source_seconds": 9.706,
+      "tempo": 0.92,
+      "end": 239.071
     },
     {
       "span_id": "SPN-0008",
       "chunk_id": "VC-0009",
-      "start": 227.705,
+      "start": 239.071,
       "source_start": 179.505,
       "source_end": 202.539,
-      "seconds": 23.034,
-      "end": 250.739
+      "seconds": 25.03695652173913,
+      "source_seconds": 23.034,
+      "tempo": 0.92,
+      "end": 264.108
     },
     {
       "span_id": "SPN-0009",
       "chunk_id": "VC-0010",
-      "start": 250.739,
+      "start": 264.108,
       "source_start": 202.889,
       "source_end": 213.338,
-      "seconds": 10.449,
-      "end": 261.188
+      "seconds": 11.357608695652173,
+      "source_seconds": 10.449,
+      "tempo": 0.92,
+      "end": 275.466
     },
     {
       "span_id": "SPN-0010",
       "chunk_id": "VC-0011",
-      "start": 261.188,
+      "start": 275.465,
       "source_start": 213.688,
       "source_end": 238.115,
-      "seconds": 24.427,
-      "end": 285.615
+      "seconds": 26.551086956521736,
+      "source_seconds": 24.427,
+      "tempo": 0.92,
+      "end": 302.016
     },
     {
       "span_id": "SPN-0011",
       "chunk_id": "VC-0012",
-      "start": 292.615,
+      "start": 308.516,
       "source_start": 238.465,
       "source_end": 261.221,
-      "seconds": 22.756,
-      "end": 315.371
+      "seconds": 24.734782608695653,
+      "source_seconds": 22.756,
+      "tempo": 0.92,
+      "end": 333.251
     },
     {
       "span_id": "SPN-0012",
       "chunk_id": "VC-0013",
-      "start": 326.871,
+      "start": 343.751,
       "source_start": 261.571,
       "source_end": 271.556,
-      "seconds": 9.985,
-      "end": 336.856
+      "seconds": 10.853260869565217,
+      "source_seconds": 9.985,
+      "tempo": 0.92,
+      "end": 354.604
     },
     {
       "span_id": "SPN-0012",
       "chunk_id": "VC-0014",
-      "start": 336.856,
+      "start": 354.604,
       "source_start": 271.906,
       "source_end": 301.488,
-      "seconds": 29.582,
-      "end": 366.438
+      "seconds": 32.154347826086955,
+      "source_seconds": 29.582,
+      "tempo": 0.92,
+      "end": 386.758
     },
     {
       "span_id": "SPN-0024",
       "chunk_id": "VC-0015",
-      "start": 366.438,
+      "start": 386.759,
       "source_start": 301.838,
       "source_end": 327.937,
-      "seconds": 26.099,
-      "end": 392.537
+      "seconds": 28.368478260869566,
+      "source_seconds": 26.099,
+      "tempo": 0.92,
+      "end": 415.127
     },
     {
       "span_id": "SPN-0013",
       "chunk_id": "VC-0016",
-      "start": 392.537,
+      "start": 415.127,
       "source_start": 328.287,
       "source_end": 351.553,
-      "seconds": 23.266,
-      "end": 415.803
+      "seconds": 25.289130434782606,
+      "source_seconds": 23.266,
+      "tempo": 0.92,
+      "end": 440.416
     },
     {
       "span_id": "SPN-0014",
       "chunk_id": "VC-0017",
-      "start": 435.803,
+      "start": 456.416,
       "source_start": 351.903,
       "source_end": 368.343,
-      "seconds": 16.44,
-      "end": 452.243
+      "seconds": 17.869565217391305,
+      "source_seconds": 16.44,
+      "tempo": 0.92,
+      "end": 474.286
     },
     {
       "span_id": "SPN-0015",
       "chunk_id": "VC-0018",
-      "start": 452.243,
+      "start": 474.286,
       "source_start": 368.693,
       "source_end": 411.139,
-      "seconds": 42.446,
-      "end": 494.689
+      "seconds": 46.13695652173913,
+      "source_seconds": 42.446,
+      "tempo": 0.92,
+      "end": 520.423
     },
     {
       "span_id": "SPN-0016",
       "chunk_id": "VC-0019",
-      "start": 494.689,
+      "start": 520.423,
       "source_start": 411.489,
       "source_end": 427.789,
-      "seconds": 16.3,
-      "end": 510.989
+      "seconds": 17.717391304347824,
+      "source_seconds": 16.3,
+      "tempo": 0.92,
+      "end": 538.14
     },
     {
       "span_id": "SPN-0017",
       "chunk_id": "VC-0020",
-      "start": 522.489,
+      "start": 548.64,
       "source_start": 428.139,
       "source_end": 449.919,
-      "seconds": 21.78,
-      "end": 544.269
+      "seconds": 23.67391304347826,
+      "source_seconds": 21.78,
+      "tempo": 0.92,
+      "end": 572.314
     },
     {
       "span_id": "SPN-0018",
       "chunk_id": "VC-0021",
-      "start": 544.269,
+      "start": 572.314,
       "source_start": 450.269,
       "source_end": 468.706,
-      "seconds": 18.437,
-      "end": 562.706
+      "seconds": 20.04021739130435,
+      "source_seconds": 18.437,
+      "tempo": 0.92,
+      "end": 592.354
     },
     {
       "span_id": "SPN-0019",
       "chunk_id": "VC-0022",
-      "start": 570.706,
+      "start": 599.354,
       "source_start": 469.056,
       "source_end": 491.161,
-      "seconds": 22.105,
-      "end": 592.811
+      "seconds": 24.027173913043477,
+      "source_seconds": 22.105,
+      "tempo": 0.92,
+      "end": 623.381
     },
     {
       "span_id": "SPN-0020",
       "chunk_id": "VC-0023",
-      "start": 604.311,
+      "start": 633.882,
       "source_start": 491.511,
       "source_end": 524.623,
-      "seconds": 33.112,
-      "end": 637.423
+      "seconds": 35.99130434782609,
+      "source_seconds": 33.112,
+      "tempo": 0.92,
+      "end": 669.873
     },
     {
       "span_id": "SPN-0021",
       "chunk_id": "VC-0024",
-      "start": 644.423,
+      "start": 676.373,
       "source_start": 524.973,
       "source_end": 546.01,
-      "seconds": 21.037,
-      "end": 665.46
+      "seconds": 22.866304347826084,
+      "source_seconds": 21.037,
+      "tempo": 0.92,
+      "end": 699.239
     },
     {
       "span_id": "SPN-0022",
       "chunk_id": "VC-0025",
-      "start": 670.46,
+      "start": 703.739,
       "source_start": 546.36,
       "source_end": 556.159,
-      "seconds": 9.799,
-      "end": 680.259
+      "seconds": 10.651086956521738,
+      "source_seconds": 9.799,
+      "tempo": 0.92,
+      "end": 714.39
     }
   ],
   "music_segments": [
@@ -278,49 +328,49 @@
     },
     {
       "start": 12.0,
-      "end": 95.495,
+      "end": 99.06,
       "file": "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v1.mp3",
       "volume": 0.12
     },
     {
-      "start": 95.495,
-      "end": 217.999,
+      "start": 99.06,
+      "end": 228.521,
       "file": "music/explainer_bed/mus_20260614_explainer_bed_soft_explainer_v1.mp3",
       "volume": 0.11
     },
     {
-      "start": 217.999,
-      "end": 326.871,
+      "start": 228.521,
+      "end": 343.751,
       "file": "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3",
       "volume": 0.12
     },
     {
-      "start": 326.871,
-      "end": 392.537,
+      "start": 343.751,
+      "end": 415.127,
       "file": "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3",
       "volume": 0.12
     },
     {
-      "start": 392.537,
-      "end": 452.243,
+      "start": 415.127,
+      "end": 474.286,
       "file": "music/reveal/mus_20260614_reveal_verdict_at_dawn_v1.mp3",
       "volume": 0.14
     },
     {
-      "start": 452.243,
-      "end": 522.489,
+      "start": 474.286,
+      "end": 548.64,
       "file": "music/tension_build/mus_20260614_tension_build_courtroom_horizon_v1.mp3",
       "volume": 0.105
     },
     {
-      "start": 522.489,
-      "end": 604.311,
+      "start": 548.64,
+      "end": 633.882,
       "file": "music/somber/mus_20260614_somber_ledger_of_ash_v1.mp3",
       "volume": 0.105
     },
     {
-      "start": 604.311,
-      "end": 705.259,
+      "start": 633.882,
+      "end": 735.39,
       "file": "music/outro/mus_20260614_outro_last_frame_v1.mp3",
       "volume": 0.14
     }
@@ -358,7 +408,7 @@
     },
     {
       "start": 604.4,
-      "end": 705.259,
+      "end": 735.39,
       "file": "ambience/amb_night_window.mp3",
       "volume": 0.026
     }
@@ -395,73 +445,73 @@
       "note": "$9B to $0"
     },
     {
-      "at": 149.418,
+      "at": 156.02,
       "file": "sfx_soft_impact.mp3",
       "volume": 0.16,
       "note": "$9B rise"
     },
     {
-      "at": 282.188,
+      "at": 296.465,
       "file": "sfx_sub_drop.mp3",
       "volume": 0.18,
       "note": "SEC collapse"
     },
     {
-      "at": 396.037,
+      "at": 418.627,
       "file": "sfx_gavel_knock.mp3",
       "volume": 0.22,
       "note": "verdict count 1"
     },
     {
-      "at": 399.737,
+      "at": 422.327,
       "file": "sfx_gavel_knock.mp3",
       "volume": 0.2,
       "note": "verdict count 2"
     },
     {
-      "at": 403.537,
+      "at": 426.127,
       "file": "sfx_gavel_knock.mp3",
       "volume": 0.2,
       "note": "verdict count 3"
     },
     {
-      "at": 407.537,
+      "at": 430.127,
       "file": "sfx_gavel_knock.mp3",
       "volume": 0.22,
       "note": "verdict count 4"
     },
     {
-      "at": 409.537,
+      "at": 432.127,
       "file": "sfx_low_boom.mp3",
       "volume": 0.18,
       "note": "verdict release"
     },
     {
-      "at": 438.803,
+      "at": 459.416,
       "file": "sfx_ui_tick.mp3",
       "volume": 0.13,
       "note": "acquitted reveal"
     },
     {
-      "at": 442.803,
+      "at": 463.416,
       "file": "sfx_ui_tick.mp3",
       "volume": 0.13,
       "note": "no verdict reveal"
     },
     {
-      "at": 499.689,
+      "at": 525.423,
       "file": "sfx_stamp_seal.mp3",
       "volume": 0.18,
       "note": "sentence seal"
     },
     {
-      "at": 553.269,
+      "at": 581.314,
       "file": "sfx_stamp_seal.mp3",
       "volume": 0.16,
       "note": "equation seal"
     },
     {
-      "at": 678.46,
+      "at": 711.739,
       "file": "sfx_soft_impact.mp3",
       "volume": 0.17,
       "note": "subscribe"

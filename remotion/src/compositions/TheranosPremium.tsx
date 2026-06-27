@@ -30,10 +30,12 @@ const SILVER = BRAND.color.silver;
 const RED = '#C64A46';
 const GREEN = '#4FD19B';
 
+const NARRATION_TEMPO = 0.92;
 const HOOK_MONTAGE_SEC = 7;
 const BRIDGE_SEC = 1.5;
 const CONTENT_START_SEC = HOOK_MONTAGE_SEC + BRIDGE_SEC + OPENING_SEC;
 const MIX_SRC = 'theranos/audio/theranos_mix_v001.mp3';
+const slow = (seconds: number) => seconds / NARRATION_TEMPO;
 
 type SceneKind =
   | 'valuationCrash'
@@ -76,30 +78,30 @@ type BodySceneInput = {
 type BodyScene = BodySceneInput & {start: number};
 
 const BODY_INPUT: BodySceneInput[] = [
-  {spanId: 'SPN-0001', dur: 27.725 + 8, chapter: 'hook', kind: 'valuationCrash', kicker: 'HOOK', title: 'When does selling a dream become a crime?', subtitle: '$9B promise -> $0 collapse', citation: 'United States v. Holmes (N.D. Cal.) - verdict Jan 3, 2022'},
-  {spanId: 'SPN-0002', dur: 36.27 + 11.5, chapter: 'opening', kind: 'arrowFlip', kicker: 'OPENING', title: 'Finale: one person vs. everyone', subtitle: 'The series camera turns around.', ai: true},
-  {spanId: 'SPN-0003', dur: 9.381, chapter: 'act1', kind: 'timeline2003', kicker: 'ACT I', title: "2003 - a Stanford dropout's startup", subtitle: 'A symbolic origin, no likeness.', ai: true},
-  {spanId: 'SPN-0004', dur: 25.542, chapter: 'act1', kind: 'needleBox', kicker: 'ACT I', title: 'The Edison: hundreds of tests, one drop', subtitle: 'A black box symbol, not the real device.'},
-  {spanId: 'SPN-0005', dur: 24.381 + 8, chapter: 'act1', kind: 'valuationRise', kicker: 'ACT I', title: '~$9B - board prestige - Walgreens limited', subtitle: 'Limited rollout, not nationwide.', citation: 'SEC charges 2018 (settled, no admission)'},
-  {spanId: 'SPN-0023', dur: 19.458, chapter: 'act1', kind: 'authority', kicker: 'ACT I', title: 'Prestige became a substitute for scrutiny', subtitle: 'Credentials grow; scrutiny shrinks.', ai: true},
-  {spanId: 'SPN-0006', dur: 24.242 + 11.5, chapter: 'act1', kind: 'story', kicker: 'ACT I', title: 'A story powerful enough to stop the questions', subtitle: 'The product and the myth separate.'},
-  {spanId: 'SPN-0007', dur: 9.706, chapter: 'act2', kind: 'timeline2015', kicker: 'ACT II', title: '2015: The Wall Street Journal investigates', subtitle: 'Documents and whistleblowers.'},
-  {spanId: 'SPN-0008', dur: 23.034, chapter: 'act2', kind: 'machineSwap', kicker: 'ACT II', title: "Tests run on other companies' machines", subtitle: 'Own device -> commercial machines.', ai: true},
-  {spanId: 'SPN-0009', dur: 10.449, chapter: 'act2', kind: 'diagnosisChain', kicker: 'ACT II', title: 'Bad data becomes a decision', subtitle: 'A medical number is not a demo.', ai: true},
-  {spanId: 'SPN-0010', dur: 24.427 + 7, chapter: 'act2', kind: 'secCollapse', kicker: 'ACT II', title: '2018: SEC civil charge; company dissolves', subtitle: 'Settled without admitting or denying wrongdoing.', citation: 'SEC charges 2018 - settled, no admission'},
-  {spanId: 'SPN-0011', dur: 22.756 + 11.5, chapter: 'act2', kind: 'failureFraud', kicker: 'ACT II', title: 'Failure - or fraud?', subtitle: 'A sad story is not automatically a crime.'},
-  {spanId: 'SPN-0012', dur: 9.985 + 29.582, chapter: 'act3', kind: 'definition', kicker: 'ACT III', title: 'Fraud = intent to deceive', subtitle: 'Not just failure.', ai: true},
-  {spanId: 'SPN-0024', dur: 26.099, chapter: 'act3', kind: 'trialSplit', kicker: 'ACT III', title: 'Prosecution: she knew. Defense: a true believer.', subtitle: 'The jury decided count by count.'},
-  {spanId: 'SPN-0013', dur: 23.266 + 20, chapter: 'act3', kind: 'verdictGuilty', kicker: 'ACT III', title: '2022 - GUILTY: 4 investor counts', subtitle: 'One conspiracy count + three wire-fraud counts.', citation: 'United States v. Holmes (N.D. Cal.) - verdict Jan 3, 2022'},
-  {spanId: 'SPN-0014', dur: 16.44, chapter: 'act3', kind: 'verdictSplit', kicker: 'ACT III', title: 'ACQUITTED: patient counts - NO VERDICT: 3 counts', subtitle: 'No GUILTY label belongs here.', citation: 'United States v. Holmes - split verdict', ai: true},
-  {spanId: 'SPN-0015', dur: 42.446, chapter: 'act3', kind: 'acquittalNuance', kicker: 'ACT III', title: 'Acquittal does not mean exoneration', subtitle: 'Balwani: convicted on all 12.'},
-  {spanId: 'SPN-0016', dur: 16.3 + 11.5, chapter: 'act3', kind: 'sentence', kicker: 'ACT III', title: 'Sentenced: ~11 years, 3 months', subtitle: '135 months.', ai: true},
-  {spanId: 'SPN-0017', dur: 21.78, chapter: 'act4', kind: 'fakeIt', kicker: 'ACT IV', title: '"Fake it till you make it" - usually legal', subtitle: 'Ambition alone is not fraud.', ai: true},
-  {spanId: 'SPN-0018', dur: 18.437 + 8, chapter: 'act4', kind: 'boundaryEquation', kicker: 'ACT IV', title: 'The line: knowingly false + relied upon = fraud', subtitle: 'Intent and reliance draw the line.'},
-  {spanId: 'SPN-0019', dur: 22.105 + 11.5, chapter: 'act4', kind: 'stakes', kicker: 'ACT IV', title: 'A failed app costs money. A wrong test costs a diagnosis.', subtitle: 'The stakes are different.', ai: true},
-  {spanId: 'SPN-0020', dur: 33.112 + 7, chapter: 'ending', kind: 'seriesTriptych', kicker: 'ENDING', title: 'One question, many costumes: where is the line?', subtitle: 'Stop/arrest. Identify/investigate. Promise/lie.', ai: true},
-  {spanId: 'SPN-0021', dur: 21.037 + 5, chapter: 'ending', kind: 'lineRedrawn', kicker: 'ENDING', title: 'The line keeps moving', subtitle: 'Technology, money, and power move it.'},
-  {spanId: 'SPN-0022', dur: 9.799 + 16, chapter: 'ending', kind: 'subscribe', kicker: 'ENDING', title: 'Subscribe - one line at a time', subtitle: 'Prime Documentary continues here.', ai: true},
+  {spanId: 'SPN-0001', dur: slow(27.725) + 7, chapter: 'hook', kind: 'valuationCrash', kicker: 'HOOK', title: 'When does selling a dream become a crime?', subtitle: '$9B promise -> $0 collapse', citation: 'United States v. Holmes (N.D. Cal.) - verdict Jan 3, 2022'},
+  {spanId: 'SPN-0002', dur: slow(36.27) + 10.5, chapter: 'opening', kind: 'arrowFlip', kicker: 'OPENING', title: 'Finale: one person vs. everyone', subtitle: 'The series camera turns around.', ai: true},
+  {spanId: 'SPN-0003', dur: slow(9.381), chapter: 'act1', kind: 'timeline2003', kicker: 'ACT I', title: "2003 - a Stanford dropout's startup", subtitle: 'A symbolic origin, no likeness.', ai: true},
+  {spanId: 'SPN-0004', dur: slow(25.542), chapter: 'act1', kind: 'needleBox', kicker: 'ACT I', title: 'The Edison: hundreds of tests, one drop', subtitle: 'A black box symbol, not the real device.'},
+  {spanId: 'SPN-0005', dur: slow(24.381) + 7, chapter: 'act1', kind: 'valuationRise', kicker: 'ACT I', title: '~$9B - board prestige - Walgreens limited', subtitle: 'Limited rollout, not nationwide.', citation: 'SEC charges 2018 (settled, no admission)'},
+  {spanId: 'SPN-0023', dur: slow(19.458), chapter: 'act1', kind: 'authority', kicker: 'ACT I', title: 'Prestige became a substitute for scrutiny', subtitle: 'Credentials grow; scrutiny shrinks.', ai: true},
+  {spanId: 'SPN-0006', dur: slow(24.242) + 10.5, chapter: 'act1', kind: 'story', kicker: 'ACT I', title: 'A story powerful enough to stop the questions', subtitle: 'The product and the myth separate.'},
+  {spanId: 'SPN-0007', dur: slow(9.706), chapter: 'act2', kind: 'timeline2015', kicker: 'ACT II', title: '2015: The Wall Street Journal investigates', subtitle: 'Documents and whistleblowers.'},
+  {spanId: 'SPN-0008', dur: slow(23.034), chapter: 'act2', kind: 'machineSwap', kicker: 'ACT II', title: "Tests run on other companies' machines", subtitle: 'Own device -> commercial machines.', ai: true},
+  {spanId: 'SPN-0009', dur: slow(10.449), chapter: 'act2', kind: 'diagnosisChain', kicker: 'ACT II', title: 'Bad data becomes a decision', subtitle: 'A medical number is not a demo.', ai: true},
+  {spanId: 'SPN-0010', dur: slow(24.427) + 6.5, chapter: 'act2', kind: 'secCollapse', kicker: 'ACT II', title: '2018: SEC civil charge; company dissolves', subtitle: 'Settled without admitting or denying wrongdoing.', citation: 'SEC charges 2018 - settled, no admission'},
+  {spanId: 'SPN-0011', dur: slow(22.756) + 10.5, chapter: 'act2', kind: 'failureFraud', kicker: 'ACT II', title: 'Failure - or fraud?', subtitle: 'A sad story is not automatically a crime.'},
+  {spanId: 'SPN-0012', dur: slow(9.985) + slow(29.582), chapter: 'act3', kind: 'definition', kicker: 'ACT III', title: 'Fraud = intent to deceive', subtitle: 'Not just failure.', ai: true},
+  {spanId: 'SPN-0024', dur: slow(26.099), chapter: 'act3', kind: 'trialSplit', kicker: 'ACT III', title: 'Prosecution: she knew. Defense: a true believer.', subtitle: 'The jury decided count by count.'},
+  {spanId: 'SPN-0013', dur: slow(23.266) + 16, chapter: 'act3', kind: 'verdictGuilty', kicker: 'ACT III', title: '2022 - GUILTY: 4 investor counts', subtitle: 'One conspiracy count + three wire-fraud counts.', citation: 'United States v. Holmes (N.D. Cal.) - verdict Jan 3, 2022'},
+  {spanId: 'SPN-0014', dur: slow(16.44), chapter: 'act3', kind: 'verdictSplit', kicker: 'ACT III', title: 'ACQUITTED: patient counts - NO VERDICT: 3 counts', subtitle: 'No GUILTY label belongs here.', citation: 'United States v. Holmes - split verdict', ai: true},
+  {spanId: 'SPN-0015', dur: slow(42.446), chapter: 'act3', kind: 'acquittalNuance', kicker: 'ACT III', title: 'Acquittal does not mean exoneration', subtitle: 'Balwani: convicted on all 12.'},
+  {spanId: 'SPN-0016', dur: slow(16.3) + 10.5, chapter: 'act3', kind: 'sentence', kicker: 'ACT III', title: 'Sentenced: ~11 years, 3 months', subtitle: '135 months.', ai: true},
+  {spanId: 'SPN-0017', dur: slow(21.78), chapter: 'act4', kind: 'fakeIt', kicker: 'ACT IV', title: '"Fake it till you make it" - usually legal', subtitle: 'Ambition alone is not fraud.', ai: true},
+  {spanId: 'SPN-0018', dur: slow(18.437) + 7, chapter: 'act4', kind: 'boundaryEquation', kicker: 'ACT IV', title: 'The line: knowingly false + relied upon = fraud', subtitle: 'Intent and reliance draw the line.'},
+  {spanId: 'SPN-0019', dur: slow(22.105) + 10.5, chapter: 'act4', kind: 'stakes', kicker: 'ACT IV', title: 'A failed app costs money. A wrong test costs a diagnosis.', subtitle: 'The stakes are different.', ai: true},
+  {spanId: 'SPN-0020', dur: slow(33.112) + 6.5, chapter: 'ending', kind: 'seriesTriptych', kicker: 'ENDING', title: 'One question, many costumes: where is the line?', subtitle: 'Stop/arrest. Identify/investigate. Promise/lie.', ai: true},
+  {spanId: 'SPN-0021', dur: slow(21.037) + 4.5, chapter: 'ending', kind: 'lineRedrawn', kicker: 'ENDING', title: 'The line keeps moving', subtitle: 'Technology, money, and power move it.'},
+  {spanId: 'SPN-0022', dur: slow(9.799) + 12, chapter: 'ending', kind: 'subscribe', kicker: 'ENDING', title: 'Subscribe - one line at a time', subtitle: 'Prime Documentary continues here.', ai: true},
 ];
 
 const BODY_SCENES: BodyScene[] = BODY_INPUT.reduce<BodyScene[]>((acc, scene) => {
