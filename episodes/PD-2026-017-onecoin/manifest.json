@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260627-017",
   "slug": "onecoin",
   "title_working": "Nothing — The Woman Who Sold a Coin That Did Not Exist",
-  "state": "scene_planned",
+  "state": "assets_ready",
   "risk_class": "R3",
   "production_tier": "A",
   "autonomy_level": 3,
@@ -19,7 +19,9 @@
     "script_qc": "v001",
     "shotlist": "v001",
     "ai_prompts": "v001",
-    "thumb_prompts": "v001"
+    "thumb_prompts": "v001",
+    "usable_assets": "v001",
+    "fact_recheck": "v001"
   },
   "artifacts": [
     {
@@ -51,6 +53,16 @@
       "status": "candidate",
       "rights_status": "conditional",
       "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-017-onecoin-usable-assets",
+      "artifact_type": "usable_assets",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-017-onecoin/05_stock/usable_assets.v001.json",
+      "checksum": "sha256:1ece0c90ca4d4ee69e83f8df71d21d34dfd5f6e94bc7a42c23b868367310a81f",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
     }
   ],
   "approvals": [],
@@ -80,5 +92,5 @@
   ],
   "blockers": [],
   "created_at": "2026-06-27T00:00:00+09:00",
-  "updated_at": "2026-06-27T03:00:00+09:00"
+  "updated_at": "2026-06-28T00:00:00+09:00"
 }
