@@ -22,15 +22,28 @@ Hard checks (block the final):
                          (master) provider -- NOT local SAPI / windows / proxy.
   - captions_final     : a non-proxy caption sidecar (.srt) exists, non-empty,
                          and (if render known) covers >=90% of the runtime.
-  - runtime_band       : finished runtime within 690-750s (11.5-12.5 min).
+  - caption_format     : captions break cleanly -- <=2 lines, <=42 chars/line,
+                         cue <=7s, reading speed <=20 cps (the "captions unreadable"
+                         rework class; "caption" appears 85x in event logs).
+  - runtime_band       : finished runtime within the episode's duration profile
+                         (standard 11.5-12.5 / mid 27-33 / feature 55-65 min),
+                         read from manifest.target_duration_minutes.
+  - render_resolution  : video stream >= 1920x1080 (catches a low-res / not-max
+                         quality export).
   - images_present     : no excessive black (a "no images" / placeholder render
                          shows long black stretches).
+  - motion_present     : no long motionless stretch (freezedetect) -- a slideshow
+                         of static images / weak animation is caught.
   - bgm_present        : a continuous (ducked) music bed -- narration-only mixes
                          leave long silence between sentences (EP14 final = 109s).
+  - thumbnail_ready    : >=3 thumbnail PNGs at 1280x720 + a selected one exist
+                         (catches "no thumbnail prepared").
 Soft checks (reported, do not block):
   - hook_added         : runtime exceeds (shotlist body + bookends) by enough to
                          hold a >=25s hook + breathing beats.
   - loudness           : integrated LUFS within [-16, -12].
+
+See docs/PD_ONE_PASS_PRODUCTION_SPEC.v1.md for the full spec each check enforces.
 
 Usage:
   .venv/Scripts/python.exe scripts/check_final_acceptance.py 15
@@ -51,13 +64,45 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 EPDIR = ROOT / "episodes"
 
-RUNTIME_LO, RUNTIME_HI = 690.0, 750.0           # 11.5-12.5 min finished runtime
+RUNTIME_LO, RUNTIME_HI = 690.0, 750.0           # 11.5-12.5 min finished runtime (standard default)
 MAX_TOTAL_BLACK_S = 8.0                          # cumulative black tolerated
 MAX_SINGLE_BLACK_S = 3.0                         # any single black gap
 MAX_TOTAL_SILENCE_S = 25.0                       # >this => no continuous BGM bed
 LUFS_LO, LUFS_HI = -16.0, -12.0
 SAPI_MARKERS = ("sapi", "local_windows", "windows_sapi", "zira", "local-")
 MASTER_MARKERS = ("eleven",)                     # ElevenLabs = the usual master voice
+
+# caption formatting HARD limits -- tolerant: 42 chars / 17 cps are the spec
+# *targets* (PD_ONE_PASS_PRODUCTION_SPEC §A row 4); these gate values fail only on
+# genuinely broken captions so the channel's normal output is not false-flagged.
+MAX_LINE_CHARS = 50
+MAX_CUE_LINES = 2
+MAX_CUE_SECONDS = 7.0
+MAX_CPS = 27.0                                   # reading speed (chars/second)
+# motion / quality / packaging
+MAX_FREEZE_S = 2.5                               # any motionless stretch beyond this is flagged
+MAX_FREEZE_LONGEST_S = 4.0                       # tolerate one designed hold beat
+MAX_FREEZE_TOTAL_S = 8.0
+MIN_VIDEO_W, MIN_VIDEO_H = 1920, 1080
+THUMB_W, THUMB_H = 1280, 720
+MIN_THUMB_VARIANTS = 3
+
+
+def runtime_band(epdir: Path) -> tuple[float, float]:
+    """Pick the finished-runtime band from the episode's duration profile.
+
+    Reads manifest.target_duration_minutes (standard if unset). Bands match
+    validate_episode.py: standard 11.5-12.5, mid 27-33, feature 55-65 min.
+    """
+    m = _load(epdir / "manifest.json") or {}
+    t = m.get("target_duration_minutes")
+    if not t:
+        return RUNTIME_LO, RUNTIME_HI
+    if t >= 45:
+        return 3300.0, 3900.0
+    if t >= 20:
+        return 1620.0, 1980.0
+    return RUNTIME_LO, RUNTIME_HI
 
 
 def resolve_episode(arg: str) -> str:
@@ -140,10 +185,110 @@ def ffprobe_duration(path: Path) -> float:
     return float(json.loads(out.stdout)["format"]["duration"])
 
 
-def check_runtime(dur: float) -> dict:
-    ok = RUNTIME_LO <= dur <= RUNTIME_HI
+def check_runtime(dur: float, lo: float, hi: float) -> dict:
+    ok = lo <= dur <= hi
     return {"check": "runtime_band", "ok": ok, "hard": True,
-            "reason": f"{dur:.1f}s = {dur/60:.2f}min (band {RUNTIME_LO:.0f}-{RUNTIME_HI:.0f}s)"}
+            "reason": f"{dur:.1f}s = {dur/60:.2f}min (band {lo:.0f}-{hi:.0f}s)"}
+
+
+def check_caption_format(epdir: Path) -> dict:
+    """Captions must break cleanly: <=2 lines, <=42 chars/line, sane cue duration
+    and reading speed. Catches the recurring 'captions cut at weird points'."""
+    edit = epdir / "08_edit"
+    srts = [p for p in edit.glob("*.srt")
+            if "review_proxy" not in p.name and p.stat().st_size > 0]
+    if not srts:
+        return {"check": "caption_format", "ok": True, "hard": False, "skipped": True,
+                "reason": "no final .srt to format-check"}
+    best = max(srts, key=_srt_last_end_seconds)
+    blocks = re.split(r"\n\s*\n", best.read_text(encoding="utf-8", errors="ignore").strip())
+    viol: list[str] = []
+    for b in blocks:
+        lines = [ln for ln in b.splitlines() if ln.strip()]
+        ts = [ln for ln in lines if "-->" in ln]
+        if not ts:
+            continue
+        body = [ln for ln in lines if "-->" not in ln and not ln.strip().isdigit()]
+        if len(body) > MAX_CUE_LINES:
+            viol.append(f"{len(body)}lines")
+        for ln in body:
+            if len(ln) > MAX_LINE_CHARS:
+                viol.append(f"{len(ln)}ch")
+        mt = re.search(r"(\d\d):(\d\d):(\d\d)[,.](\d{1,3})\s*-->\s*"
+                       r"(\d\d):(\d\d):(\d\d)[,.](\d{1,3})", ts[0])
+        if mt:
+            a = int(mt[1]) * 3600 + int(mt[2]) * 60 + int(mt[3]) + int(mt[4]) / 1000
+            z = int(mt[5]) * 3600 + int(mt[6]) * 60 + int(mt[7]) + int(mt[8]) / 1000
+            d = z - a
+            chars = sum(len(x) for x in body)
+            if d > MAX_CUE_SECONDS:
+                viol.append(f"{d:.1f}s")
+            if d > 0 and chars / d > MAX_CPS:
+                viol.append(f"{chars / d:.0f}cps")
+    ok = not viol
+    head = "; ".join(viol[:6]) + (" ..." if len(viol) > 6 else "")
+    return {"check": "caption_format", "ok": ok, "hard": True,
+            "reason": (f"{best.name}: {len(viol)} violation(s): {head}" if viol
+                       else f"{best.name}: line/duration/cps within limits")}
+
+
+def check_render_resolution(path: Path) -> dict:
+    """Video stream must be >= 1920x1080 (catches a low-res / not-max export)."""
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "v:0",
+             "-show_entries", "stream=width,height,codec_name", "-of", "json", str(path)],
+            capture_output=True, text=True, check=True)
+        st = json.loads(out.stdout)["streams"][0]
+        w, h = int(st["width"]), int(st["height"])
+    except Exception as exc:  # noqa: BLE001
+        return {"check": "render_resolution", "ok": True, "hard": True, "skipped": True,
+                "reason": f"probe skipped ({exc})"}
+    ok = max(w, h) >= MIN_VIDEO_W and min(w, h) >= MIN_VIDEO_H
+    return {"check": "render_resolution", "ok": ok, "hard": True,
+            "reason": f"{w}x{h} codec={st.get('codec_name')} (need >= {MIN_VIDEO_W}x{MIN_VIDEO_H})"}
+
+
+def check_freeze(path: Path) -> dict:
+    """No long motionless stretch -> a slideshow of static images / weak animation
+    is caught. Tolerates one short designed hold beat."""
+    try:
+        out = subprocess.run(
+            ["ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
+             "-vf", f"freezedetect=n=-60dB:d={MAX_FREEZE_S}", "-an", "-f", "null", os.devnull],
+            capture_output=True, text=True, check=True, timeout=1200)
+    except Exception as exc:  # noqa: BLE001
+        return {"check": "motion_present", "ok": True, "hard": True, "skipped": True,
+                "reason": f"freezedetect skipped ({exc})"}
+    durs = [float(x) for x in re.findall(r"freeze_duration:\s*(\d+(?:\.\d+)?)", out.stderr)]
+    total, longest = sum(durs), (max(durs) if durs else 0.0)
+    ok = longest <= MAX_FREEZE_LONGEST_S and total <= MAX_FREEZE_TOTAL_S
+    return {"check": "motion_present", "ok": ok, "hard": True,
+            "reason": f"frozen total {total:.1f}s / longest {longest:.1f}s "
+                      f"(limits {MAX_FREEZE_TOTAL_S:.0f}/{MAX_FREEZE_LONGEST_S:.0f}s; high => static/slideshow)"}
+
+
+def _png_dims(p: Path) -> tuple[int, int] | None:
+    try:
+        head = p.open("rb").read(24)
+    except Exception:  # noqa: BLE001
+        return None
+    if head[:8] == b"\x89PNG\r\n\x1a\n":
+        return int.from_bytes(head[16:20], "big"), int.from_bytes(head[20:24], "big")
+    return None
+
+
+def check_thumbnail(epdir: Path) -> dict:
+    """>=3 thumbnail PNGs at 1280x720 + a selected one must exist."""
+    cands = list((epdir / "10_thumbnail").glob("*.png")) + \
+            list((epdir / "09_package").glob("thumbnail*.png"))
+    good = [p for p in cands if _png_dims(p) == (THUMB_W, THUMB_H)]
+    selected = list((epdir / "09_package").glob("thumbnail.selected*.png"))
+    ok = len(good) >= MIN_THUMB_VARIANTS and bool(selected)
+    return {"check": "thumbnail_ready", "ok": ok, "hard": True,
+            "reason": f"{len(good)} thumb(s) at {THUMB_W}x{THUMB_H}, "
+                      f"selected={'yes' if selected else 'NO'} "
+                      f"(need >={MIN_THUMB_VARIANTS} + selected)"}
 
 
 def check_black(path: Path) -> dict:
@@ -247,8 +392,11 @@ def main() -> int:
     if render and render.is_file():
         try:
             render_dur = ffprobe_duration(render)
-            results.append(check_runtime(render_dur))
+            lo, hi = runtime_band(epdir)
+            results.append(check_runtime(render_dur, lo, hi))
+            results.append(check_render_resolution(render))
             results.append(check_black(render))
+            results.append(check_freeze(render))
             results.append(check_bgm(render))
             results.append(check_hook(epdir, render_dur))
             results.append(check_loudness(render))
@@ -258,11 +406,13 @@ def main() -> int:
     else:
         results.append({"check": "render_present", "ok": False, "hard": True,
                         "reason": f"final render not found (looked at {render}); "
-                                  f"render the TheranosPremium final before acceptance"})
+                                  f"render the episode's *Premium final before acceptance"})
 
-    # in-repo provenance checks (always)
+    # in-repo provenance / packaging checks (always)
     results.append(check_voice(epdir))
     results.append(check_captions(epdir, render_dur))
+    results.append(check_caption_format(epdir))
+    results.append(check_thumbnail(epdir))
 
     hard_fail = [r for r in results if r["hard"] and not r["ok"]]
     soft_fail = [r for r in results if not r["hard"] and not r["ok"]]

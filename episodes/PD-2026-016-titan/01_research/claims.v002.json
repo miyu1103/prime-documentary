@@ -1,0 +1,401 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-016-titan",
+  "revision": "v002",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "On June 18, 2023, the OceanGate submersible Titan dived toward the wreck of the RMS Titanic in the North Atlantic off Newfoundland with five people aboard: OceanGate CEO Stockton Rush, French Titanic expert Paul-Henri Nargeolet, British businessman Hamish Harding, and Pakistani-British businessman Shahzada Dawood with his 19-year-old son Suleman.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0002",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Five aboard; date; location",
+        "Dive to the Titanic wreck"
+      ],
+      "counterevidence": [],
+      "confidence": 0.98,
+      "allowed_wording": [
+        "On June 18, 2023, the submersible Titan began its dive to the Titanic with five people aboard."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2023-06-18",
+      "geographic_scope": "North Atlantic (off Newfoundland)",
+      "units": "",
+      "status": "approved",
+      "notes": "The who/when/where."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "The Titan was an experimental submersible that had not been approved or certified by any regulatory body; passengers signed waivers acknowledging it was experimental and that the dive could result in death.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0005",
+        "SRC-0010"
+      ],
+      "evidence_locations": [
+        "Uncertified experimental hull (USCG)",
+        "Waiver language acknowledging experimental status and risk of death"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "The Titan was experimental and uncertified; passengers signed a waiver that named death as a possible outcome."
+      ],
+      "prohibited_wording": [
+        "The Titan was certified safe."
+      ],
+      "temporal_scope": "2021-2023",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Signature device: the waiver. Death named in the waiver."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "OceanGate CEO Stockton Rush publicly minimized formal safety and regulation; in a 2022 on-record interview he said, 'At some point, safety just is pure waste,' and elsewhere framed himself as someone who broke rules.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0010"
+      ],
+      "evidence_locations": [
+        "2022 David Pogue interview quote",
+        "'rules you break' framing"
+      ],
+      "counterevidence": [],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "Rush once said, 'At some point, safety just is pure waste.'"
+      ],
+      "prohibited_wording": [
+        "Rush wanted his passengers to die."
+      ],
+      "temporal_scope": "2022",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The villain states the theme. Re-verify exact wording vs CBS Sunday Morning before publish."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The Titan was piloted using a modified off-the-shelf wireless video-game controller.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0003",
+        "SRC-0010"
+      ],
+      "evidence_locations": [
+        "Game controller used to steer the sub"
+      ],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "The Titan was steered with a modified video-game controller."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2021-2023",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Signature device: comedy that curdles. Keep brand non-specific in visuals (invariant 11)."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "In 2018, OceanGate's director of marine operations David Lochridge delivered a quality-control inspection report warning about carbon-fiber hull flaws and the lack of non-destructive testing; he also raised that the craft's acrylic viewport was rated to only about 1,300 meters while OceanGate intended to dive to about 4,000 meters. He was fired days later, filed an OSHA whistleblower complaint, and OceanGate sued him (the parties settled in late 2018).",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0005",
+        "SRC-0006"
+      ],
+      "evidence_locations": [
+        "2018 QC inspection report; fired days later",
+        "Carbon-fiber hull flaws; objected to diving without non-destructive testing (NDT)",
+        "Acrylic viewport rated ~1,300 m vs intended ~4,000 m (per Lochridge testimony)",
+        "OSHA whistleblower complaint; OceanGate lawsuit; settled late 2018"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "In 2018 OceanGate fired David Lochridge after he warned, in a quality-control report, that the hull was not proven safe; he filed a whistleblower complaint and the company sued him."
+      ],
+      "prohibited_wording": [
+        "Lochridge predicted the exact implosion."
+      ],
+      "temporal_scope": "2018",
+      "geographic_scope": "United States",
+      "units": "meters",
+      "status": "approved",
+      "notes": "Whistleblower spine of Movement 2. Attribute to court filings/testimony; he 'warned'/'alleged'/'testified'. v002 (2026-06-27 fact_recheck): corrected viewport-vs-hull conflation — the ~1,300 m rating was the acrylic VIEWPORT, not the carbon-fiber hull; the hull concern was carbon-fiber flaws + no NDT. Script v001/v002 never asserted the 1,300 m number, so no script span content changed."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "On March 27, 2018, the Marine Technology Society sent OceanGate a letter, reflecting the concerns of more than three dozen industry experts, warning that the company's 'current experimental approach' could result in negative outcomes 'from minor to catastrophic,' and objecting that OceanGate was not pursuing the industry's recognized certification.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0007"
+      ],
+      "evidence_locations": [
+        "'minor to catastrophic' warning",
+        "Concern about declining recognized certification (DNV-GL)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "A 2018 industry letter warned that OceanGate's 'experimental approach' could lead to outcomes 'from minor to catastrophic.'"
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2018-03-27",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The expert chorus. Primary document (USCG exhibit). Quote 'minor to catastrophic' exactly."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "About 1 hour and 33 minutes into the June 18, 2023 dive, communication between the Titan and its support ship Polar Prince was lost; among the Titan's last text messages were 'All good here' and, finally, that it had dropped weights.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0003",
+        "SRC-0004"
+      ],
+      "evidence_locations": [
+        "Loss of contact 1h33m",
+        "Last messages: 'All good here'; 'dropped two wts'"
+      ],
+      "counterevidence": [],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "About an hour and a half down, contact was lost; one of the last messages read simply, 'All good here.'"
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2023-06-18",
+      "geographic_scope": "North Atlantic",
+      "units": "minutes",
+      "status": "approved",
+      "notes": "The last words. Corrected from earlier '1h45m' to 1h33m."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "A four-day international search (June 18-22, 2023) gripped the world; on June 22, 2023 a remotely operated vehicle found a debris field about 500 meters from the Titanic's bow, and officials confirmed a catastrophic implosion that killed all five aboard.",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0002",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "4-day search",
+        "Debris ~500 m from Titanic bow (June 22)",
+        "Catastrophic implosion; five dead"
+      ],
+      "counterevidence": [],
+      "confidence": 0.97,
+      "allowed_wording": [
+        "After a four-day search the world watched, a debris field was found near the Titanic; all five had died in a catastrophic implosion."
+      ],
+      "prohibited_wording": [
+        "graphic depiction of remains",
+        "they suffered"
+      ],
+      "temporal_scope": "2023-06-18/2023-06-22",
+      "geographic_scope": "North Atlantic",
+      "units": "meters",
+      "status": "approved",
+      "notes": "DIGNITY: no graphic detail of remains."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "Investigators concluded the implosion was near-instantaneous and occurred shortly after the loss of contact on June 18 — meaning the four-day search the world followed was for people who had already died on the first day.",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0003"
+      ],
+      "evidence_locations": [
+        "Near-instantaneous implosion",
+        "Occurred shortly after loss of contact"
+      ],
+      "counterevidence": [],
+      "confidence": 0.92,
+      "allowed_wording": [
+        "The implosion was near-instantaneous, and it happened on that first day — while the world's days-long search had not yet begun in earnest."
+      ],
+      "prohibited_wording": [
+        "They felt it.",
+        "moment of terror"
+      ],
+      "temporal_scope": "2023-06-18",
+      "geographic_scope": "North Atlantic",
+      "units": "",
+      "status": "approved",
+      "notes": "The central dramatic irony, stated as investigators' conclusion, not omniscient narration. No suffering implied (instantaneous)."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "Suleman Dawood was 19; according to his family, he was reportedly anxious about the dive but went over Father's Day weekend to be with his father, and he brought a Rubik's Cube hoping to set a record for solving it at the Titanic's depth. His mother, Christine Dawood, had given up her own place on the dive to her son.",
+      "importance": "major",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0008",
+        "SRC-0009"
+      ],
+      "evidence_locations": [
+        "Suleman, 19; Rubik's Cube record attempt",
+        "Reportedly anxious; went for his father",
+        "Christine gave up her place"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Suleman was nineteen. He brought a Rubik's Cube, hoping to set a record at the bottom; his mother had given her seat to him."
+      ],
+      "prohibited_wording": [
+        "He knew he would die.",
+        "invented quotes from Suleman"
+      ],
+      "temporal_scope": "2023-06",
+      "geographic_scope": "North Atlantic",
+      "units": "",
+      "status": "approved",
+      "notes": "Emotional spine; the moral guardrail. Attribute 'reportedly'; living mother — documented only; no invented dialogue."
+    },
+    {
+      "claim_id": "CLM-0011",
+      "normalized_claim": "Paul-Henri Nargeolet was a veteran French deep-sea explorer and one of the world's foremost Titanic experts, having visited the wreck many times over decades.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0002"
+      ],
+      "evidence_locations": [
+        "Nargeolet: leading Titanic expert; many dives"
+      ],
+      "counterevidence": [],
+      "confidence": 0.85,
+      "allowed_wording": [
+        "Paul-Henri Nargeolet had spent a lifetime visiting the Titanic; few people on Earth knew that wreck better."
+      ],
+      "prohibited_wording": [
+        "exact dive count asserted without source"
+      ],
+      "temporal_scope": "1987-2023",
+      "geographic_scope": "North Atlantic",
+      "units": "",
+      "status": "approved",
+      "notes": "Even the expert went. Avoid asserting a precise dive count unless re-sourced."
+    },
+    {
+      "claim_id": "CLM-0012",
+      "normalized_claim": "The U.S. Coast Guard's Marine Board of Investigation, in its report released August 5, 2025, concluded the disaster was preventable; it found the primary contributing factors to be OceanGate's inadequate design, certification, maintenance, and inspection process, together with a toxic workplace culture, and that the experimental carbon-fiber/titanium hull contained bonding voids and defects.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "'Preventable' finding",
+        "Primary contributing factors",
+        "Hull voids/defects"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "Two years later, the Coast Guard's investigation reached a one-word conclusion: preventable."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2025-08-05",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "The official verdict on the theme. Attribute cause to the Board (not narrator)."
+    },
+    {
+      "claim_id": "CLM-0013",
+      "normalized_claim": "The Coast Guard board found that OceanGate failed to properly investigate and address known hull anomalies, including acoustic anomalies and signs of delamination detected after a 2022 dive, before continuing to carry passengers.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": [
+        "SRC-0001"
+      ],
+      "evidence_locations": [
+        "Ignored acoustic anomalies",
+        "Delamination after Dive 80 (July 2022) not properly addressed"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "The hull had been warning them too: anomalies the company recorded and did not resolve."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2022-2023",
+      "geographic_scope": "North Atlantic",
+      "units": "",
+      "status": "approved",
+      "notes": "Even the machine warned them. Attribute to the Board."
+    },
+    {
+      "claim_id": "CLM-0014",
+      "normalized_claim": "The documented record — repeated expert and employee warnings, the refusal of recognized certification, and the official finding that the loss was preventable — illustrates how a culture that treats safety rules as optional can override warning after warning until physics forecloses the choice.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "B",
+      "source_ids": [
+        "SRC-0001",
+        "SRC-0005",
+        "SRC-0007"
+      ],
+      "evidence_locations": [
+        "Warnings (CLM-0005/0006/0013)",
+        "'Preventable' (CLM-0012)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.82,
+      "allowed_wording": [
+        "The story is not that no one knew. It is that everyone who mattered was told — and chose belief over the warning."
+      ],
+      "prohibited_wording": [
+        "The acquittal-style exoneration",
+        "speculation about private motives"
+      ],
+      "temporal_scope": "2018-2025",
+      "geographic_scope": "United States",
+      "units": "",
+      "status": "approved",
+      "notes": "Controlling idea; grounded in the record, attributed, not editorializing beyond it."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "pass",
+    "findings": [
+      "Durable hashes 10/10 sources. R2 — pre-publish fact re-check required (current event; USCG report wording, MTS exhibit URL, Rush quote source).",
+      "DIGNITY guardrails: no graphic remains; boy's inner state attributed 'reportedly'; living relatives documented-only, no invented dialogue; cause findings attributed to the Coast Guard Board, not the narrator; no real-person likeness (invariant 11)."
+    ]
+  }
+}

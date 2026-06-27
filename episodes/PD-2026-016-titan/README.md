@@ -2,7 +2,7 @@
 
 OceanGate's Titan submersible: how a culture that treated safety certification as optional ignored years of explicit warnings and dived to the wreck of the Titanic. The U.S. Coast Guard later found the loss **preventable**.
 
-- **State:** `script_verified` (validator PASS) · **Risk:** R2 · **Tier:** A · **Lang:** EN narration
+- **State:** `assets_ready` (per manifest — left process done + validator PASS + 76 hero images generated) · **Risk:** R2 · **Tier:** A · **Lang:** EN narration · fact re-check: `01_research/fact_recheck.v001.md` (2026-06-27)
 - **Thesis:** Why intelligent people believe the rule-breaking visionary until physics forecloses the choice. The ocean is the one investor that always does its own due diligence.
 - **Moral center / dignity guardrail:** Suleman Dawood (19). No schadenfreude; no graphic implosion; cause attributed to the USCG Board; no real-person likeness.
 
