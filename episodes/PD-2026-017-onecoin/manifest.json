@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260627-017",
   "slug": "onecoin",
   "title_working": "Nothing — The Woman Who Sold a Coin That Did Not Exist",
-  "state": "research_ready",
+  "state": "script_verified",
   "risk_class": "R3",
   "production_tier": "A",
   "autonomy_level": 3,
@@ -14,7 +14,9 @@
     "topic": "v001",
     "design_bible": "v001",
     "sources": "v001",
-    "claims": "v001"
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001"
   },
   "artifacts": [
     {
@@ -23,8 +25,9 @@
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-017-onecoin/00_topic/topic.v001.json",
       "status": "approved",
-      "rights_status": "n/a",
-      "qc_status": "pass"
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:5e57217334ec1fab4759e9a0d068f9f4afd02b974e631edef3af1bfd6369e298"
     },
     {
       "artifact_id": "PD-2026-017-onecoin-design-bible",
@@ -32,8 +35,19 @@
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-017-onecoin/04_scenes/design_bible.v001.md",
       "status": "draft",
-      "rights_status": "n/a",
-      "qc_status": "n/a"
+      "rights_status": "unknown",
+      "qc_status": "not_run",
+      "checksum": "sha256:11f359145718c31da91fa2fcfe8b2cf17ba2219d78700a46979354ad70529d9a"
+    },
+    {
+      "artifact_id": "PD-2026-017-onecoin-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-017-onecoin/03_script/script.annotated.v001.json",
+      "checksum": "sha256:9ce1519238eab31949f984aba16edd1b784e9145dafce75c726b3f340bc60ab9",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
     }
   ],
   "approvals": [],
@@ -63,5 +77,5 @@
   ],
   "blockers": [],
   "created_at": "2026-06-27T00:00:00+09:00",
-  "updated_at": "2026-06-27T01:00:00+09:00"
+  "updated_at": "2026-06-27T02:30:00+09:00"
 }
