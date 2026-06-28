@@ -10,6 +10,7 @@ import {GideonPremium, gideonPremiumDurationInFrames} from './compositions/Gideo
 import {MirandaPremium, mirandaPremiumDurationInFrames} from './compositions/MirandaPremium';
 import {MappPremium, mappPremiumDurationInFrames} from './compositions/MappPremium';
 import {MadoffPremium, madoffPremiumDurationInFrames} from './compositions/MadoffPremium';
+import {FlashCrashPremium, flashCrashPremiumDurationInFrames} from './compositions/FlashCrashPremium';
 import {KeloPremium, keloPremiumDurationInFrames} from './compositions/KeloPremium';
 import {KeloThumbnailFrame} from './compositions/KeloThumbnailFrame';
 import {MahanoyPremium, mahanoyPremiumDurationInFrames} from './compositions/MahanoyPremium';
@@ -126,6 +127,14 @@ export const RemotionRoot: React.FC = () => {
         id="MadoffPremium"
         component={MadoffPremium}
         durationInFrames={madoffPremiumDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="FlashCrashPremium"
+        component={FlashCrashPremium}
+        durationInFrames={flashCrashPremiumDurationInFrames(BRAND.video.fps)}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
