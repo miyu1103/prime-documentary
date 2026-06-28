@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260620-015",
   "slug": "theranos",
   "title_working": "When Does a Bold Promise Become a Crime? The Rise and Fall of Theranos",
-  "state": "owner_review_required",
+  "state": "scheduled",
   "risk_class": "R3",
   "production_tier": "B",
   "autonomy_level": 3,
@@ -22,9 +22,9 @@
     "review_proxy_captions": "v001",
     "review_proxy_qc": "v001",
     "thumbnail_candidates": "v001",
-    "youtube_meta": "v008",
+    "youtube_meta": "v009",
     "rights_manifest": "v008",
-    "final_delivery": "v008",
+    "final_delivery": "v009",
     "owner_review_request": "v008",
     "approval_drafts": "v008",
     "legal_rights_review_packet": "v008",
@@ -33,7 +33,11 @@
     "final_acceptance": "v006",
     "chapters": "v008",
     "tags": "v008",
-    "title": "v008"
+    "title": "v008",
+    "youtube_schedule_result": "v001",
+    "youtube_status_verify": "v001",
+    "youtube_captions_result": "v001",
+    "youtube_thumbnail_result": "v001"
   },
   "artifacts": [
     {
@@ -635,10 +639,75 @@
       "status": "candidate",
       "rights_status": "conditional",
       "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v009",
+      "artifact_type": "youtube_metadata",
+      "revision": "v009",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v009.json",
+      "checksum": "sha256:4370abf22ba3103c3fd6899df24b556afe1aea96ce4bfb9f01e0004649e2d3e5",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v009",
+      "artifact_type": "final_delivery",
+      "revision": "v009",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v009.json",
+      "checksum": "sha256:ed5afbae6ab8f0a21af13ba68fbda03e67042a6221ff9ea9b460529800f3c712",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_schedule_result-v001",
+      "artifact_type": "youtube_schedule_result",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_schedule_result.v001.json",
+      "checksum": "sha256:7ee48e24038bcc32e47a133165cbf7dab29853beaed8c5e30dcb0208a8c78a9c",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_status_verify-v001",
+      "artifact_type": "youtube_status_verify",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_status_verify.v001.json",
+      "checksum": "sha256:3a8663ab0bcc4f37f08c4696d2b0e21cb4360c1412af320de66a5c242b03c588",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_captions_result-v001",
+      "artifact_type": "youtube_captions_result",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_captions_result.v001.json",
+      "checksum": "sha256:cf7647c1b28eca48e0c7a11a709317b9baa46d34521d49cc69415a40456c62af",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_thumbnail_result-v001",
+      "artifact_type": "youtube_thumbnail_result",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_thumbnail_result.v001.json",
+      "checksum": "sha256:8e208571f3e253091a1cc8ed5a54c3d438b513a002355808b8f786c425d18b28",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
     }
   ],
   "approvals": [
-    "APR-0001"
+    "APR-0001",
+    "APR-0002",
+    "APR-0003",
+    "APR-0004",
+    "APR-0005",
+    "APR-0006"
   ],
   "costs": {
     "estimated": {
@@ -674,15 +743,13 @@
     "Final candidate v006 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v005.mp4 sha256=sha256:e797da9c5cf0b8918fa192be4f0fa8c2d7d847cc134e47c1dc3d8458bf3fdd03; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
     "Final candidate v007 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4 sha256=sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
     "Final candidate v008 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4 sha256=sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
-    "Final candidate v008 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4 sha256=sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec; public release remains blocked by APR-0002..APR-0006 including R3 legal review."
+    "Final candidate v008 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4 sha256=sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "YouTube private upload completed for Theranos v009 package: video_id LXFjJqE6vKU, thumbnail set, public release scheduled for 2026-06-30T12:00:00+09:00. Immediate public publish not performed."
   ],
-  "blockers": [
-    "Owner approval required for exact first-cut review video before finalization (APR-0002).",
-    "Owner approval required for exact title/thumbnail package before finalization (APR-0003).",
-    "Owner approval required for final narration release decision before public package (APR-0004).",
-    "Dedicated legal/rights review approval required for exact Theranos package before public release (APR-0005).",
-    "Owner publish/schedule approval required before any upload, schedule, or public release (APR-0006)."
-  ],
+  "blockers": [],
   "created_at": "2026-06-20T08:00:00+09:00",
-  "updated_at": "2026-06-28T03:39:31.395875+00:00"
+  "updated_at": "2026-06-28T04:04:45.665581+00:00",
+  "video_id": "LXFjJqE6vKU",
+  "video_url": "https://youtu.be/LXFjJqE6vKU",
+  "public_schedule_active": true
 }
