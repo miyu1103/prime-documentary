@@ -61,7 +61,34 @@ type Scene = {
   act: string;
 };
 
-const sceneDur = (MAIN_END - MAIN_START) / 26;
+const SCENE_STARTS = [
+  MAIN_START,
+  61.411,
+  91.605,
+  167.664,
+  232.124,
+  331.159,
+  373.653,
+  438.58,
+  515.393,
+  590.442,
+  641.621,
+  712.401,
+  768.687,
+  827.806,
+  879.913,
+  959.19,
+  986.846,
+  1021.467,
+  1062.451,
+  1098.976,
+  1191.317,
+  1318.332,
+  1415.882,
+  1488.655,
+  1575.558,
+  1646.659,
+];
 
 const scenes: Scene[] = [
   {id: 'S01', kind: 'marketRoom', kicker: 'HOOK PAYOFF', act: 'opening', title: '2:32 PM', subtitle: 'The market begins to fall.', citation: 'CFTC-SEC report, May 6 2010'},
@@ -77,15 +104,15 @@ const scenes: Scene[] = [
   {id: 'S11', kind: 'ghostwall', kicker: 'ACT III', act: 'act3', title: 'A ghost wall', subtitle: 'Large displayed orders press on the market.', citation: 'United States v. Sarao'},
   {id: 'S12', kind: 'ghostwall', kicker: 'ACT III', act: 'act3', title: 'Then it disappears', subtitle: 'The signal vanishes before execution.', citation: 'United States v. Sarao'},
   {id: 'S13', kind: 'ghostwall', kicker: 'ACT III', act: 'act3', title: 'One real order remains', subtitle: 'The diagram is symbolic, not evidence footage.', citation: 'United States v. Sarao'},
-  {id: 'S14', kind: 'home', kicker: 'ACT IV', act: 'act4', title: 'A bedroom in Hounslow', subtitle: 'No portrait. Only a symbolic reconstruction.', citation: 'Court sentencing record'},
-  {id: 'S15', kind: 'court', kicker: 'ACT IV', act: 'act4', title: 'Wire fraud. Spoofing.', subtitle: 'The guilty plea is fact. The crash cause is not simplified.', citation: 'United States v. Sarao'},
-  {id: 'S16', kind: 'causal', kicker: 'ACT IV', act: 'act4', title: 'Responsible for imbalance', subtitle: 'A contribution inside a wider market event.', citation: 'CFTC order / DOJ materials'},
+  {id: 'S14', kind: 'marketRoom', kicker: 'ACT IV', act: 'act4', title: 'Greece in the background', subtitle: 'A nervous market was already listening for danger.', citation: 'Market context, May 2010'},
+  {id: 'S15', kind: 'causal', kicker: 'ACT IV', act: 'act4', title: 'Two great weights', subtitle: 'Large sell pressure and a ghost wall press the same book.', citation: 'CFTC-SEC report / United States v. Sarao'},
+  {id: 'S16', kind: 'systems', kicker: 'ACT IV', act: 'act4', title: 'Liquidity pulls back', subtitle: 'The machines step away when the floor is needed.', citation: 'CFTC-SEC report, May 6 2010'},
   {id: 'S17', kind: 'valuation', kicker: 'THE PLUNGE', act: 'climax', title: '998.5 points', subtitle: 'A fast fall, then a fast partial recovery.', citation: 'CFTC-SEC report, May 6 2010'},
   {id: 'S18', kind: 'valuation', kicker: 'THE PENNY', act: 'climax', title: '$0.01', subtitle: 'Some trades briefly printed at a penny.', citation: 'CFTC-SEC report, May 6 2010'},
-  {id: 'S19', kind: 'causal', kicker: 'ACT V', act: 'act5', title: '75,000 contracts', subtitle: 'About $4.1B in E-mini sell pressure.', citation: 'CFTC-SEC report, May 6 2010'},
-  {id: 'S20', kind: 'systems', kicker: 'ACT V', act: 'act5', title: 'Liquidity pulled back', subtitle: 'The book thinned when it mattered.', citation: 'CFTC-SEC report, May 6 2010'},
-  {id: 'S21', kind: 'marketRoom', kicker: 'ACT V', act: 'act5', title: 'Greece in the background', subtitle: 'A nervous market was already listening for danger.', citation: 'Market context, May 2010'},
-  {id: 'S22', kind: 'court', kicker: 'ACT VI', act: 'act6', title: '2016 plea', subtitle: 'Wire fraud and spoofing.', citation: 'United States v. Sarao'},
+  {id: 'S19', kind: 'timeline', kicker: 'ACT V', act: 'act5', title: 'The safeties trip', subtitle: 'Circuit breakers help the market find a floor.', citation: 'CFTC-SEC report, May 6 2010'},
+  {id: 'S20', kind: 'systems', kicker: 'ACT V', act: 'act5', title: 'The autopsy', subtitle: 'The official report starts with the large sell program.', citation: 'CFTC-SEC report, May 6 2010'},
+  {id: 'S21', kind: 'causal', kicker: 'ACT V', act: 'act5', title: 'Part of. Contributed to.', subtitle: 'Not a single-handed cause. A contribution inside a wider event.', citation: 'CFTC order / DOJ materials'},
+  {id: 'S22', kind: 'court', kicker: 'ACT VI', act: 'act6', title: 'The law chooses someone', subtitle: '2015 arrest. 2016 plea: wire fraud and spoofing.', citation: 'United States v. Sarao'},
   {id: 'S23', kind: 'money', kicker: 'ACT VI', act: 'act6', title: '$12.9M forfeiture', subtitle: 'The legal ending is smaller than the market story.', citation: 'Court sentencing record'},
   {id: 'S24', kind: 'home', kicker: 'ACT VI', act: 'act6', title: '2020', subtitle: 'One year of home detention.', citation: 'Court sentencing record'},
   {id: 'S25', kind: 'question', kicker: 'ENDING', act: 'ending', title: 'Person or system?', subtitle: 'The honest answer is not a single villain.', citation: 'Prime Documentary conclusion'},
@@ -93,7 +120,9 @@ const scenes: Scene[] = [
 ];
 
 const framesFor = (seconds: number, fps: number = FPS): number => Math.max(1, Math.round(seconds * fps));
-const sceneStart = (index: number): number => MAIN_START + index * sceneDur;
+const sceneStart = (index: number): number => SCENE_STARTS[index] ?? MAIN_START;
+const sceneEnd = (index: number): number => SCENE_STARTS[index + 1] ?? MAIN_END;
+const sceneDuration = (index: number): number => Math.max(1, sceneEnd(index) - sceneStart(index));
 const sceneImages = (id: string): string[] => [id, `${id}_02`, `${id}_03`].map((name) => `flashcrash/${name}.png`);
 
 const fitTitle = (text: string): number => Math.min(112, Math.max(50, 1280 / Math.max(text.length, 12)));
@@ -549,7 +578,7 @@ export const FlashCrashPremium: React.FC = () => (
       <BrandOpening seriesLabel="Prime Documentary" title="Flash Crash" subtitle="Did one man break the market?" />
     </Sequence>
     {scenes.map((scene, index) => (
-      <Sequence key={scene.id} from={framesFor(sceneStart(index))} durationInFrames={framesFor(sceneDur)} name={`${scene.act}_${scene.id}`}>
+      <Sequence key={scene.id} from={framesFor(sceneStart(index))} durationInFrames={framesFor(sceneDuration(index))} name={`${scene.act}_${scene.id}`}>
         <SceneView scene={scene} />
       </Sequence>
     ))}
