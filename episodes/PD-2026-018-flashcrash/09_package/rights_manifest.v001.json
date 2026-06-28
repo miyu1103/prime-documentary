@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-018-flashcrash",
+  "revision": "v001",
+  "generated_at": "2026-06-28T06:46:42.306842+00:00",
+  "status": "owner_review_ready_r3_legal_required",
+  "summary": {
+    "commercial_use_review_required": true,
+    "real_person_likeness": false,
+    "brand_marks_intended": false,
+    "ai_symbolic_reconstruction": true,
+    "stock_factory_broll_used": true,
+    "on_screen_synthetic_label_present": true,
+    "pre_publish_legal_review_required": true,
+    "same_day_fact_recheck_required": true,
+    "causation_lock_required": true,
+    "publish_approved": false
+  },
+  "assets": [
+    {
+      "asset_id": "PD-2026-018-flashcrash-final-render-v001",
+      "type": "final_render",
+      "file": "H:/pd-media/episodes/PD-2026-018-flashcrash/08_edit/renders/final/flashcrash_final_v001.mp4",
+      "sha256": "sha256:3370a95e2cc988461fbdc66534207f6606a3ad54a4b2c12db91d683fa8c9b6b7",
+      "rights_status": "conditional_owner_r3_review"
+    },
+    {
+      "asset_id": "PD-2026-018-flashcrash-thumbnail-selected-v001",
+      "type": "thumbnail_selected",
+      "file": "episodes/PD-2026-018-flashcrash/09_package/thumbnail.selected.v001.png",
+      "sha256": "sha256:6be8a7fc823859ce4441f051ae6daf5da6a7296fe7346ac396c543341e1dc27c",
+      "rights_status": "conditional_owner_r3_review"
+    },
+    {
+      "asset_id": "PD-2026-018-flashcrash-captions-v001",
+      "type": "captions",
+      "file": "episodes/PD-2026-018-flashcrash/08_edit/captions.v001.srt",
+      "sha256": "sha256:93000b1b535b9183485c62347d44f2748454c5d3a4cc763c4eff312547901c42",
+      "rights_status": "clear"
+    },
+    {
+      "asset_id": "PD-2026-018-flashcrash-audio-mix-meta-v001",
+      "type": "audio_mix_metadata",
+      "file": "episodes/PD-2026-018-flashcrash/06_audio/audio_mix.v001.json",
+      "sha256": "sha256:8744e1c8eace9d4f0bcab4d2e0fa76d10ed91f21867d20a12a63bbe18d95e662",
+      "rights_status": "clear"
+    },
+    {
+      "asset_id": "PD-2026-018-flashcrash-factory-ledger-v001",
+      "type": "factory_ledger",
+      "file": "episodes/PD-2026-018-flashcrash/05_stock/stock_ledger.v001.json",
+      "sha256": "sha256:48a46693e590cb0e1f6c064ec92d7d624a47d68289dcb431128f2d1e010d5734",
+      "rights_status": "clear"
+    },
+    {
+      "asset_id": "PD-2026-018-flashcrash-acceptance-v001",
+      "type": "acceptance_report",
+      "file": "episodes/PD-2026-018-flashcrash/09_package/EVIDENCE/final_acceptance.v001.txt",
+      "sha256": "sha256:51f66df1537824df09f16d79cf27d971f43e6f237e84821c8a11e6c1c0e26467",
+      "rights_status": "clear"
+    }
+  ],
+  "r3_notes": [
+    "No statement says Sarao caused the crash single-handedly.",
+    "Sarao guilty plea is limited to wire fraud and spoofing.",
+    "Crash causation is framed as contributed to / exacerbated / order imbalance, with other factors named.",
+    "No real-person likeness or deepfake is intentionally used.",
+    "Dedicated R3 legal/rights review is required before any upload, scheduling, or publication."
+  ]
+}
