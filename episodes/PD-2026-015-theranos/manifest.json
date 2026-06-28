@@ -22,18 +22,18 @@
     "review_proxy_captions": "v001",
     "review_proxy_qc": "v001",
     "thumbnail_candidates": "v001",
-    "youtube_meta": "v005",
-    "rights_manifest": "v005",
-    "final_delivery": "v005",
-    "owner_review_request": "v005",
-    "approval_drafts": "v005",
-    "legal_rights_review_packet": "v005",
+    "youtube_meta": "v006",
+    "rights_manifest": "v006",
+    "final_delivery": "v006",
+    "owner_review_request": "v006",
+    "approval_drafts": "v006",
+    "legal_rights_review_packet": "v006",
     "captions_final": "v001",
     "audio_mix": "v001",
-    "final_acceptance": "v004",
-    "chapters": "v005",
-    "tags": "v005",
-    "title": "v005"
+    "final_acceptance": "v005",
+    "chapters": "v006",
+    "tags": "v006",
+    "title": "v006"
   },
   "artifacts": [
     {
@@ -355,6 +355,76 @@
       "status": "candidate",
       "rights_status": "conditional",
       "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v006",
+      "artifact_type": "final_delivery",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v006.json",
+      "checksum": "sha256:b5ba6be9bde1e725f614c2cba63b69cf401439981e42680764d0acc3e956d193",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v006",
+      "artifact_type": "youtube_metadata",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v006.json",
+      "checksum": "sha256:fe0b2b986b07b29b5121fc520462bb50a5c2551b280e3823a1dc15e290fd7353",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v006",
+      "artifact_type": "rights_manifest",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v006.json",
+      "checksum": "sha256:37b13c04e3fc0da81f690a29994536d046c876644e267ddf96f1f7932c7d0378",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v006",
+      "artifact_type": "owner_review_request",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v006.json",
+      "checksum": "sha256:a953bfac458c5d909e8f9e93c14019c9d670a8840d093e96ae5e246a86978ae7",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v006",
+      "artifact_type": "approval_drafts",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v006.json",
+      "checksum": "sha256:27c9fde8ab023935cca6dc2bbc76edd6cf2df8d5fc04dac5aaeb275e2f7247b1",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v006",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v006.json",
+      "checksum": "sha256:ff42d6b4aa30bb230d1f4fc88c2e4a6efa8233ec037c2c8bde1a84ec0fef9a1e",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v005",
+      "artifact_type": "final_acceptance",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v005.acceptance.json",
+      "checksum": "sha256:8671c4d4f1ab0c183b0404b250b825d238c0e99132af1c0da221700d9514022d",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
     }
   ],
   "approvals": [
@@ -390,7 +460,8 @@
     "Final candidate v002 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v001.mp4 sha256=sha256:61166f21665e0c0f4d7dd00582278f9613de27736ec8efb9619e9a494c18d418; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
     "Final candidate v003 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v002.mp4 sha256=sha256:0ae40d6ed8b98be5a7d83e3276fb1c97f6c6e0c97282e0f117691c77c3d32f17; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
     "Final candidate v004 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v003.mp4 sha256=sha256:73c9300e761f6abe449f8322b5e78f3cde36215fa49fbb7cc26d6485de8f056e; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
-    "Final candidate v005 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v004.mp4 sha256=sha256:42d4bc6ec6e822c91c42fda518cd3d79739d6399b58da2244b96655e6e717ff2; public release remains blocked by APR-0002..APR-0006 including R3 legal review."
+    "Final candidate v005 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v004.mp4 sha256=sha256:42d4bc6ec6e822c91c42fda518cd3d79739d6399b58da2244b96655e6e717ff2; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "Final candidate v006 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v005.mp4 sha256=sha256:e797da9c5cf0b8918fa192be4f0fa8c2d7d847cc134e47c1dc3d8458bf3fdd03; public release remains blocked by APR-0002..APR-0006 including R3 legal review."
   ],
   "blockers": [
     "Owner approval required for exact first-cut review video before finalization (APR-0002).",
@@ -400,5 +471,5 @@
     "Owner publish/schedule approval required before any upload, schedule, or public release (APR-0006)."
   ],
   "created_at": "2026-06-20T08:00:00+09:00",
-  "updated_at": "2026-06-28T00:08:10.997415+00:00"
+  "updated_at": "2026-06-28T00:17:33.213068+00:00"
 }

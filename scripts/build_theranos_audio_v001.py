@@ -38,6 +38,9 @@ FFMPEG = "ffmpeg"
 FFPROBE = "ffprobe"
 FPS = 30
 NARRATION_TEMPO = 0.92
+VOICE_MIX_GAIN = 1.65
+MUSIC_DUCK_MAKEUP = 0.72
+AMBIENCE_DUCK_MAKEUP = 0.78
 HOOK_MONTAGE_SEC = 7.0
 BRIDGE_SEC = 1.5
 OPENING_SEC = 3.5
@@ -375,9 +378,12 @@ def build_final_mix(placements: list[dict[str, Any]]) -> tuple[dict[str, Any], l
     filters += sfx_filters
 
     filters += [
-        "[narr_timeline]asplit=3[narr_mix][narr_music_sc][narr_amb_sc]",
-        "[mraw][narr_music_sc]sidechaincompress=threshold=0.030:ratio=8:attack=18:release=420:makeup=1[mduck]",
-        "[araw][narr_amb_sc]sidechaincompress=threshold=0.028:ratio=7:attack=18:release=520:makeup=1[aduck]",
+        "[narr_timeline]asplit=3[narr_mix_raw][narr_music_sc][narr_amb_sc]",
+        f"[narr_mix_raw]volume={VOICE_MIX_GAIN:.2f}[narr_mix]",
+        "[mraw][narr_music_sc]sidechaincompress=threshold=0.018:ratio=12:attack=12:release=460:makeup=1[mduck_raw]",
+        f"[mduck_raw]volume={MUSIC_DUCK_MAKEUP:.2f}[mduck]",
+        "[araw][narr_amb_sc]sidechaincompress=threshold=0.018:ratio=10:attack=12:release=560:makeup=1[aduck_raw]",
+        f"[aduck_raw]volume={AMBIENCE_DUCK_MAKEUP:.2f}[aduck]",
         (
             "[narr_mix][mduck][aduck][sfxraw]amix=inputs=4:normalize=0:duration=longest:dropout_transition=0,"
             f"apad=pad_dur=20,atrim=0:{TOTAL_SEC:.3f},loudnorm=I=-14:TP=-1:LRA=11:linear=false,"
