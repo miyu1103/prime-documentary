@@ -12,10 +12,12 @@
 ## 0. 現在地（左工程＝検証済み・あなたは右工程＝視覚/音/レンダー）
 - **脚本＝検証済み**（`validate_episode.py 18` PASS・51 spans・~25.1分ナレ）。`[VO:]`は一字一句変更禁止。
 - **claims/sources/shotlist/ai_prompts/thumb_prompts/edit_design＝あり**（検証済み）。
-- **AI画像＝SDXL 4K(3840×2160)生成済/生成中**：`H:\pd-media\assets\ai\flashcrash\S**.png`（26ショット×3バリアント）→ `remotion/public/flashcrash/`。**全ヒーロー画像 長辺≥3840**（正典row5）。
-- **★ナレ＝生成済（使うだけ・再生成禁止＝二重課金）**：オーナー承認(APR-0001)済→`H:\pd-media\episodes\PD-2026-018-flashcrash\06_voice\master\vc_master_v001.mp3`（ElevenLabs本番・チャンネル声・~21.8分）＋`06_audio/narration_index.v001.json`（provider=ElevenLabs）。**`voice_is_master` 既にPASS。ElevenLabsを再度叩かない。**
-- **★字幕＝生成済（使うだけ）**：`08_edit/captions.v001.srt` ＋ `remotion/src/data/flashcrash_captions.ts`（強制アライン・437キュー・≤17cps）。**`captions_final`＋`caption_format` 既にPASS。** 最終尺に合わせて**VOを再タイミングした場合のみ** `scripts/align_flashcrash_captions.py` を再実行。
-- → あなたの仕事＝**STEP B〜H**（ナレ/字幕は済）：②bespoke `FlashCrashPremium` 実装③（字幕は既存・必要時のみ再アライン）④BGM4層⑤ファクトリ加飾⑥独立ゲートPASS⑦最終レンダー⑧パッケージ→STEP H 停止。
+> **★左工程＋持ち越せる素材は完了済＝5ゲートが既にPASS。** `voice_is_master`／`captions_final`／`caption_format`／`image_resolution`／`thumbnail_ready`。**これらは作り直さない（特にナレ＝ElevenLabs再課金禁止）。**
+- **AI画像＝完了（78枚・全て3840×2160・4K）**：`remotion/public/flashcrash/S01..S26(.._02/.._03).png`（＋`H:\pd-media\assets\ai\flashcrash`）。`image_resolution` PASS。コンタクトシート＝`09_package/EVIDENCE/contact_sheet.jpg`。R3目視OK（顔/ロゴなし）。
+- **★ナレ＝生成済（使うだけ・再生成禁止＝二重課金）**：`H:\pd-media\episodes\PD-2026-018-flashcrash\06_voice\master\vc_master_v001.mp3`（ElevenLabs本番・チャンネル声・~21.8分）＋`06_audio/narration_index.v001.json`（provider=ElevenLabs）。`voice_is_master` PASS。
+- **★字幕＝生成済（使うだけ）**：`08_edit/captions.v001.srt` ＋ `remotion/src/data/flashcrash_captions.ts`（`FLASHCRASH_CAPTIONS`・437キュー・≤17cps）。`captions_final`＋`caption_format` PASS。最終尺でVO再タイミング時のみ `scripts/align_flashcrash_captions.py` 再実行。
+- **サムネ＝3案＋選定済**：`10_thumbnail/thumbnail.flashcrash_option_A/B/C.v001.png`（1280×720）＋`09_package/thumbnail.selected.v001.png`（A＝「$1 TRILLION / GONE IN 36 MINUTES」）。`thumbnail_ready` PASS。`09_package/EVIDENCE/titles.md`＝CTRタイトル5案。**作り直し不要（必要なら微調整のみ・因果断定しない）。**
+- → あなたの仕事＝**残りの右工程**：① bespoke `FlashCrashPremium` 実装（視覚）② **BGM4層ミックス**（最終尺に紐づくのでここで）③ ファクトリ加飾 ④ 独立ゲート全PASS ⑤ 最終レンダー ⑥ パッケージ → STEP H 停止。**未達ゲート＝`bgm_present`・`images_present`・`motion_present`・`render_resolution`/Max品質・`factory_used`・`runtime_band`** を最初のレンダーで満たす。
 
 ### ★過去話の失敗を繰り返さない（オーナー実視聴の指摘）
 声がSAPI／字幕なし／黒画面／BGMなし／フックがハイライトでない／4部構成でない／画像が荒い／素材未活用／アニメしょぼい／サムネ無い・派手でない——**全て正典 row1-13 で固定済**。最初のレンダーから満たし、**`check_final_acceptance.py 18` が exit 0 になるまで完成としない**。設計書に書いてあっても実レンダーに入っていなければ不合格。
