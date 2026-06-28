@@ -22,18 +22,18 @@
     "review_proxy_captions": "v001",
     "review_proxy_qc": "v001",
     "thumbnail_candidates": "v001",
-    "youtube_meta": "v004",
-    "rights_manifest": "v004",
-    "final_delivery": "v004",
-    "owner_review_request": "v004",
-    "approval_drafts": "v004",
-    "legal_rights_review_packet": "v004",
+    "youtube_meta": "v005",
+    "rights_manifest": "v005",
+    "final_delivery": "v005",
+    "owner_review_request": "v005",
+    "approval_drafts": "v005",
+    "legal_rights_review_packet": "v005",
     "captions_final": "v001",
     "audio_mix": "v001",
-    "final_acceptance": "v003",
-    "chapters": "v004",
-    "tags": "v004",
-    "title": "v004"
+    "final_acceptance": "v004",
+    "chapters": "v005",
+    "tags": "v005",
+    "title": "v005"
   },
   "artifacts": [
     {
@@ -285,6 +285,76 @@
       "status": "candidate",
       "rights_status": "conditional",
       "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v005",
+      "artifact_type": "final_delivery",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v005.json",
+      "checksum": "sha256:2f5804921ae1d83b4e0844359cad593e3b0ac8fc78ab2889c802f75c33a75dff",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v005",
+      "artifact_type": "youtube_metadata",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v005.json",
+      "checksum": "sha256:27920fc35641b647ce26f4706767aa7bcca4e513a1bfc0b35da242f92be34267",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v005",
+      "artifact_type": "rights_manifest",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v005.json",
+      "checksum": "sha256:a5f8185b7ddf44cb8baef82674736346554a7858c69fffa7736ae26b2c8c0e8c",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v005",
+      "artifact_type": "owner_review_request",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v005.json",
+      "checksum": "sha256:d8fd1cd1e08f7606b278b9e8bafdc568ddb5c4dfb99370abbff1b207c87fc88d",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v005",
+      "artifact_type": "approval_drafts",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v005.json",
+      "checksum": "sha256:2051f22f66280d73c81e3d1e39055345b2f85eb4cc85ad7f9373ce3409acd219",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v005",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v005.json",
+      "checksum": "sha256:e271069373f6d17caf05a28d0d086e7a7233cd3bba8ab8d5d441486bb0cafce4",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v004",
+      "artifact_type": "final_acceptance",
+      "revision": "v004",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v004.acceptance.json",
+      "checksum": "sha256:9deba61780ce99ffb59f92a7b09363d6cf895fad6b7d6a1e315403b0f0f5bba3",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
     }
   ],
   "approvals": [
@@ -319,7 +389,8 @@
     "Theranos legal_rights_review_packet.v001 prepared; public release remains blocked until owner/legal review and final narration decision are recorded for exact hashes.",
     "Final candidate v002 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v001.mp4 sha256=sha256:61166f21665e0c0f4d7dd00582278f9613de27736ec8efb9619e9a494c18d418; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
     "Final candidate v003 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v002.mp4 sha256=sha256:0ae40d6ed8b98be5a7d83e3276fb1c97f6c6e0c97282e0f117691c77c3d32f17; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
-    "Final candidate v004 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v003.mp4 sha256=sha256:73c9300e761f6abe449f8322b5e78f3cde36215fa49fbb7cc26d6485de8f056e; public release remains blocked by APR-0002..APR-0006 including R3 legal review."
+    "Final candidate v004 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v003.mp4 sha256=sha256:73c9300e761f6abe449f8322b5e78f3cde36215fa49fbb7cc26d6485de8f056e; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "Final candidate v005 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v004.mp4 sha256=sha256:42d4bc6ec6e822c91c42fda518cd3d79739d6399b58da2244b96655e6e717ff2; public release remains blocked by APR-0002..APR-0006 including R3 legal review."
   ],
   "blockers": [
     "Owner approval required for exact first-cut review video before finalization (APR-0002).",
@@ -329,5 +400,5 @@
     "Owner publish/schedule approval required before any upload, schedule, or public release (APR-0006)."
   ],
   "created_at": "2026-06-20T08:00:00+09:00",
-  "updated_at": "2026-06-27T16:07:51.568381+00:00"
+  "updated_at": "2026-06-28T00:08:10.997415+00:00"
 }
