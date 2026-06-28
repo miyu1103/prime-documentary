@@ -1,6 +1,12 @@
 export type TheranosCaption = {id: string; start: number; end: number; text: string};
 export const THERANOS_CAPTIONS: TheranosCaption[] = [
   {
+    "id": "CAP-HOOK-0001",
+    "start": 1.0,
+    "end": 5.348,
+    "text": "A single drop of blood.\nA company worth nine billion dollars."
+  },
+  {
     "id": "CAP-0001",
     "start": 12.0,
     "end": 13.326,

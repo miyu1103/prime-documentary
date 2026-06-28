@@ -1,7 +1,7 @@
 {
   "episode_id": "PD-2026-015-theranos",
   "revision": "v001",
-  "created_at": "2026-06-28T00:14:14.109899+00:00",
+  "created_at": "2026-06-28T00:23:18.849969+00:00",
   "timeline_seconds": 735.39,
   "voice_source": {
     "provider": "ElevenLabs",
@@ -9,18 +9,18 @@
     "master_sha256": "sha256:6fee72875c34867cf8e37d34bbbdee769bbbf4735cbeb7adf884e886760a58b0",
     "method": "ffmpeg atrim from approved master plus timeline holds; no regeneration",
     "voice_timeline": "artifact://episodes/PD-2026-015-theranos/06_voice/master/theranos_vo_timeline_v001.wav",
-    "voice_timeline_sha256": "sha256:59bbaa4dadbb806a0dd334914345d9a093b7a45899f538da068dd6598196d1a4"
+    "voice_timeline_sha256": "sha256:93b58a3cb828fe7a3df6aa99d8ac25bb0b2f0713cacd943a87c7fc6f642e6b2d"
   },
   "mix": {
     "master": "artifact://episodes/PD-2026-015-theranos/06_voice/master/theranos_mix_v001.mp3",
-    "master_sha256": "sha256:c3049bbcffc5ae1c65cf6495aab192491e087763d38b10e12dc240c3a363855f",
+    "master_sha256": "sha256:083b1500352a3eab4945428e0f6b96ab0a7b57f5a60a6c8cf1aa439b6b492be5",
     "remotion_static_audio": "theranos/audio/theranos_mix_v001.mp3",
     "duration_seconds": 735.38,
     "loudness_probe": {
-      "input_i": -14.46,
-      "input_tp": -1.25,
+      "input_i": -14.52,
+      "input_tp": -1.5,
       "input_lra": 7.9,
-      "target_offset": 0.24
+      "target_offset": 0.21
     },
     "layers": [
       "voice",
@@ -31,6 +31,18 @@
     "ducking": "FFmpeg sidechaincompress on BGM and ambience keyed by master-derived VO timeline"
   },
   "placements": [
+    {
+      "span_id": "HOOK-TEASER",
+      "chunk_id": "VC-HOOK-TEASER",
+      "start": 1.0,
+      "source_start": 0.0,
+      "source_end": 4.0,
+      "teaser": true,
+      "seconds": 4.3478260869565215,
+      "source_seconds": 4.0,
+      "tempo": 0.92,
+      "end": 5.348
+    },
     {
       "span_id": "SPN-0001",
       "chunk_id": "VC-0001",
@@ -520,7 +532,7 @@
   "captions": {
     "srt": "artifact://episodes/PD-2026-015-theranos/08_edit/captions.v001.srt",
     "json": "artifact://episodes/PD-2026-015-theranos/08_edit/captions.v001.json",
-    "cue_count": 162,
+    "cue_count": 163,
     "method": "faster-whisper word timestamps on master-derived VO timeline, aligned to locked script text"
   },
   "external_side_effects": {

@@ -42,6 +42,8 @@ VOICE_MIX_GAIN = 1.65
 MUSIC_DUCK_MAKEUP = 0.72
 AMBIENCE_DUCK_MAKEUP = 0.78
 HOOK_MONTAGE_SEC = 7.0
+HOOK_TEASER_START_SEC = 1.0
+HOOK_TEASER_SOURCE_END_SEC = 4.0
 BRIDGE_SEC = 1.5
 OPENING_SEC = 3.5
 CONTENT_START_SEC = HOOK_MONTAGE_SEC + BRIDGE_SEC + OPENING_SEC
@@ -121,7 +123,16 @@ def placement_map(body_input: list[tuple[str, str, float]], *, tempo: float) -> 
         cursor += scene_dur
     return out
 
-VOICE_PLACEMENTS: list[dict[str, Any]] = []
+VOICE_PLACEMENTS: list[dict[str, Any]] = [
+    {
+        "span_id": "HOOK-TEASER",
+        "chunk_id": "VC-HOOK-TEASER",
+        "start": HOOK_TEASER_START_SEC,
+        "source_start": 0.0,
+        "source_end": HOOK_TEASER_SOURCE_END_SEC,
+        "teaser": True,
+    }
+]
 cursor = CONTENT_START_SEC
 for span_id, chunk_expr, scene_dur in BODY_INPUT:
     local = cursor
@@ -191,16 +202,24 @@ def resolved_voice_placements() -> list[dict[str, Any]]:
     index = load_index()
     out: list[dict[str, Any]] = []
     for item in VOICE_PLACEMENTS:
-        src = index[item["chunk_id"]]
+        if "source_start" in item and "source_end" in item:
+            source_start = float(item["source_start"])
+            source_end = float(item["source_end"])
+            source_seconds = source_end - source_start
+        else:
+            src = index[item["chunk_id"]]
+            source_start = float(src["start"])
+            source_end = float(src["end"])
+            source_seconds = float(src["seconds"])
         out.append(
             {
                 **item,
-                "source_start": float(src["start"]),
-                "source_end": float(src["end"]),
-                "seconds": slow(float(src["seconds"])),
-                "source_seconds": float(src["seconds"]),
+                "source_start": source_start,
+                "source_end": source_end,
+                "seconds": slow(source_seconds),
+                "source_seconds": source_seconds,
                 "tempo": NARRATION_TEMPO,
-                "end": round(float(item["start"]) + slow(float(src["seconds"])), 3),
+                "end": round(float(item["start"]) + slow(source_seconds), 3),
             }
         )
     return out
@@ -672,7 +691,7 @@ def ts_srt(seconds: float) -> str:
 def write_caption_files(fixed: list[dict[str, Any]], method: str) -> list[dict[str, Any]]:
     chunks = script_chunks()
     expected = " ".join(chunks).replace("\n", " ")
-    actual = " ".join(str(item["text"]).replace("\n", " ") for item in fixed)
+    actual = " ".join(str(item["text"]).replace("\n", " ") for item in fixed if not item.get("teaser"))
     if re.sub(r"\s+", " ", actual).strip() != re.sub(r"\s+", " ", expected).strip():
         raise RuntimeError("Caption text does not exactly match locked script VO text after CLM removal")
     CAPTIONS.parent.mkdir(parents=True, exist_ok=True)
@@ -729,7 +748,16 @@ def write_stretched_captions() -> list[dict[str, Any]]:
     seed = load_base_caption_cues()
     old_map = placement_map(OLD_BODY_INPUT, tempo=1.0)
     new_map = placement_map(BODY_INPUT, tempo=NARRATION_TEMPO)
-    fixed: list[dict[str, Any]] = []
+    fixed: list[dict[str, Any]] = [
+        {
+            "id": "CAP-HOOK-0001",
+            "chunk_id": "VC-HOOK-TEASER",
+            "start": HOOK_TEASER_START_SEC,
+            "end": round(HOOK_TEASER_START_SEC + slow(HOOK_TEASER_SOURCE_END_SEC), 3),
+            "text": "A single drop of blood.\nA company worth nine billion dollars.",
+            "teaser": True,
+        }
+    ]
     for i, item in enumerate(seed, start=1):
         chunk_id = item["chunk_id"]
         old = old_map[chunk_id]
