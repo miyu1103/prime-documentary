@@ -26,7 +26,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -51,6 +51,8 @@ VISUALS = EP_MEDIA / "05_visuals"
 SELECTED = VISUALS / "selected"
 PUBLIC = ROOT / "remotion" / "public" / "varsityblues"
 FACTORY = PUBLIC / "factory"
+BOOKEND_BG = ROOT / "remotion" / "public" / "banner_sunrise.png"
+PD_LOGO = ROOT / "remotion" / "public" / "pd_logo.png"
 MASTER_DIR = EP_MEDIA / "06_audio" / f"master_elevenlabs_{VOICE_REV}"
 RAW_DIR = MASTER_DIR / "raw_mp3"
 WAV_DIR = MASTER_DIR / "wav"
@@ -434,42 +436,110 @@ def wrap_caption(words: list[str]) -> str:
 
 def split_caption_text(text: str) -> list[str]:
     words = text.split()
-    parts: list[list[str]] = []
+    groups: list[list[str]] = []
     cur: list[str] = []
     for word in words:
         trial = " ".join(cur + [word])
-        flush = cur and (len(trial) > 42 or len(cur) >= 6)
-        if flush:
-            parts.append(cur)
+        hard_long = cur and len(trial) > 72
+        soft_long = cur and len(trial) > 52 and re.search(r"[,;:]$", cur[-1])
+        if hard_long or soft_long:
+            groups.append(cur)
             cur = []
         cur.append(word)
-        if re.search(r"[.?!]$", word) and len(cur) >= 3:
-            parts.append(cur)
-            cur = []
-        elif word.endswith(",") and len(cur) >= 5:
-            parts.append(cur)
+        phrase = " ".join(cur)
+        strong_stop = re.search(r"[.?!]([\"”’')\]]*)$", word) and len(phrase) >= 18
+        medium_stop = re.search(r"[,;:]([\"”’')\]]*)$", word) and len(phrase) >= 34
+        dash_stop = word.endswith("—") and len(phrase) >= 24
+        if strong_stop or medium_stop or dash_stop or len(phrase) >= 76:
+            groups.append(cur)
             cur = []
     if cur:
-        parts.append(cur)
-    return [wrap_caption(p) for p in parts]
+        groups.append(cur)
+    return [wrap_caption(g) for g in groups]
+
+
+def merge_short_caption_groups(parts: list[str], available: float) -> list[str]:
+    """Avoid twitchy flashes while preserving exact VO word order."""
+    if not parts or available <= 0:
+        return parts
+    groups = parts[:]
+    while len(groups) > 1:
+        weights = [max(1, len(g.replace("\n", " "))) for g in groups]
+        total_weight = sum(weights)
+        durations = [available * w / total_weight for w in weights]
+        short = [i for i, dur in enumerate(durations) if dur < 0.85]
+        if not short:
+            break
+        i = short[0]
+        candidates: list[tuple[int, int]] = []
+        if i > 0:
+            candidates.append((i - 1, i))
+        if i < len(groups) - 1:
+            candidates.append((i, i + 1))
+        candidates.sort(key=lambda pair: durations[pair[0]] + durations[pair[1]])
+        merged: str | None = None
+        merge_span: tuple[int, int] | None = None
+        for lo, hi in candidates:
+            merged_words = (groups[lo].replace("\n", " ") + " " + groups[hi].replace("\n", " ")).split()
+            wrapped = wrap_caption(merged_words)
+            if max(map(len, wrapped.split("\n"))) <= 42:
+                merged = wrapped
+                merge_span = (lo, hi)
+                break
+        if merged is None or merge_span is None:
+            break
+        lo, hi = merge_span
+        groups[lo : hi + 1] = [merged]
+    return groups
+
+
+def allocate_caption_durations(parts: list[str], available: float, gap: float) -> list[float]:
+    if not parts:
+        return []
+    usable = max(0.1, available - gap * (len(parts) - 1))
+    weights = [max(1, len(part.replace("\n", " "))) for part in parts]
+    total_weight = sum(weights) or 1
+    durations = [usable * weight / total_weight for weight in weights]
+    min_dur = min(1.0, usable / len(parts))
+    locked = [False] * len(durations)
+    while True:
+        short = [i for i, dur in enumerate(durations) if not locked[i] and dur < min_dur]
+        if not short:
+            break
+        for i in short:
+            durations[i] = min_dur
+            locked[i] = True
+        remaining_time = usable - sum(durations[i] for i, done in enumerate(locked) if done)
+        remaining_indices = [i for i, done in enumerate(locked) if not done]
+        if remaining_time <= 0 or not remaining_indices:
+            break
+        remaining_weight = sum(weights[i] for i in remaining_indices) or 1
+        for i in remaining_indices:
+            durations[i] = remaining_time * weights[i] / remaining_weight
+    return durations
 
 
 def write_captions(timed: list[dict[str, Any]]) -> list[dict[str, Any]]:
     cues = []
     idx = 1
     min_gap = 2 / FPS
-    global_cursor = 0.0
     for row in timed:
-        parts = split_caption_text(row["text"])
-        global_cursor = max(global_cursor, float(row["voice_start"]))
-        for part in parts:
-            chars = len(part.replace("\n", ""))
-            cue_start = global_cursor
-            cue_dur = min(6.0, max(1.0, chars / 16.2))
-            cue_end = cue_start + cue_dur
+        start = float(row["voice_start"])
+        end = float(row["voice_end"])
+        available = max(0.1, end - start)
+        parts = merge_short_caption_groups(split_caption_text(row["text"]), available)
+        durations = allocate_caption_durations(parts, available, min_gap)
+        cursor = start
+        for n, part in enumerate(parts):
+            cue_start = cursor
+            cue_end = cue_start + durations[n]
+            if n == len(parts) - 1:
+                cue_end = min(end, cue_end)
+            if cue_end <= cue_start:
+                cue_end = min(end, cue_start + 0.2)
             cues.append({"index": idx, "start": round(cue_start, 3), "end": round(cue_end, 3), "text": part})
             idx += 1
-            global_cursor = cue_end + min_gap
+            cursor = cue_end + min_gap
     CAPTIONS_SRT.parent.mkdir(parents=True, exist_ok=True)
     CAPTIONS_SRT.write_text(
         "\n".join(f"{c['index']}\n{srt_ts(c['start'])} --> {srt_ts(c['end'])}\n{c['text']}\n" for c in cues),
@@ -477,7 +547,12 @@ def write_captions(timed: list[dict[str, Any]]) -> list[dict[str, Any]]:
     )
     CAPTIONS_JSON.write_text(
         json.dumps(
-            {"episode_id": EP, "revision": AUDIO_REV, "alignment_method": "ElevenLabs chunk time proportional breath-group proxy", "cues": cues},
+            {
+                "episode_id": EP,
+                "revision": AUDIO_REV,
+                "alignment_method": "Exact ElevenLabs VO transcript, chunk-time locked, punctuation breath groups",
+                "cues": cues,
+            },
             indent=2,
             ensure_ascii=False,
         )
@@ -719,22 +794,120 @@ def draw_cta(frame: np.ndarray, t: float, total: float) -> np.ndarray:
     return np.asarray(img, dtype=np.uint8)
 
 
+_BOOKEND_BG_CACHE: Image.Image | None = None
+_PD_LOGO_CACHE: Image.Image | None = None
+
+
+def bookend_background(progress: float, ending: bool) -> Image.Image:
+    global _BOOKEND_BG_CACHE
+    if _BOOKEND_BG_CACHE is None:
+        if BOOKEND_BG.exists():
+            bg = Image.open(BOOKEND_BG).convert("RGB")
+        else:
+            bg = Image.new("RGB", (W, H), (3, 8, 16))
+        bg = ImageOps.fit(bg, (W, H), method=Image.Resampling.LANCZOS, centering=(0.5, 0.46 if not ending else 0.44))
+        bg = ImageEnhance.Brightness(bg).enhance(0.58)
+        bg = ImageEnhance.Contrast(bg).enhance(1.16)
+        bg = ImageEnhance.Color(bg).enhance(0.94)
+        _BOOKEND_BG_CACHE = bg
+    img = _BOOKEND_BG_CACHE.copy().convert("RGBA")
+    d = ImageDraw.Draw(img, "RGBA")
+    d.rectangle((0, 0, W, H), fill=(3, 8, 16, 145 if not ending else 180))
+    bloom_y = int(H * (0.70 if not ending else 0.66))
+    bloom_w = int(860 + 140 * math.sin(progress * math.pi))
+    bloom_h = 270
+    bloom = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    bd = ImageDraw.Draw(bloom, "RGBA")
+    bd.ellipse((W // 2 - bloom_w, bloom_y - bloom_h, W // 2 + bloom_w, bloom_y + bloom_h), fill=(229, 181, 58, 62))
+    bloom = bloom.filter(ImageFilter.GaussianBlur(46))
+    img.alpha_composite(bloom)
+    return img
+
+
+def pd_logo(size: int) -> Image.Image | None:
+    global _PD_LOGO_CACHE
+    if not PD_LOGO.exists():
+        return None
+    if _PD_LOGO_CACHE is None:
+        _PD_LOGO_CACHE = Image.open(PD_LOGO).convert("RGBA")
+    return ImageOps.contain(_PD_LOGO_CACHE, (size, size), Image.Resampling.LANCZOS)
+
+
+def draw_gold_particles(d: ImageDraw.ImageDraw, seed: int, progress: float, count: int = 26) -> None:
+    rng = random.Random(seed)
+    for i in range(count):
+        base_x = rng.randint(180, W - 180)
+        base_y = rng.randint(130, H - 130)
+        drift = (progress * 180 + i * 7) % 90
+        x = int(base_x + math.sin(progress * math.tau + i) * 22)
+        y = int(base_y - drift)
+        r = rng.randint(2, 5)
+        alpha = int(70 + 130 * (0.5 + 0.5 * math.sin(progress * math.tau + i * 0.7)))
+        d.ellipse((x - r, y - r, x + r, y + r), fill=(229, 181, 58, alpha))
+
+
 def draw_bookends(frame: np.ndarray, t: float, total: float) -> np.ndarray:
     opening = 8.0 <= t <= 11.5
     ending = t >= total - 9.0
     if not opening and not ending:
         return frame
-    img = Image.fromarray(frame)
-    d = ImageDraw.Draw(img, "RGBA")
-    d.rectangle((0, 0, W, H), fill=(3, 8, 16, 150 if opening else 185))
-    d.text((W // 2, H // 2 - 90), "PD", anchor="mm", font=font(190, True), fill=(229, 181, 58, 245))
     if opening:
-        d.text((W // 2, H // 2 + 62), "PRIME DOCUMENTARY", anchor="mm", font=font(58, True), fill=(245, 247, 250, 240))
-        d.text((W // 2, H // 2 + 126), "OPERATION VARSITY BLUES", anchor="mm", font=font(44, True), fill=(200, 205, 214, 230))
+        local = t - 8.0
+        duration = 3.5
     else:
-        d.text((W // 2, H // 2 + 64), "PRIME DOCUMENTARY", anchor="mm", font=font(64, True), fill=(245, 247, 250, 240))
-        d.text((W // 2, H // 2 + 134), "THANKS FOR WATCHING", anchor="mm", font=font(42, True), fill=(200, 205, 214, 225))
-    return np.asarray(img, dtype=np.uint8)
+        local = t - (total - 9.0)
+        duration = 9.0
+    p = min(1.0, max(0.0, local / duration))
+    fade_in = min(1.0, p / 0.11)
+    fade_out = min(1.0, (1.0 - p) / 0.12)
+    alpha = max(0.0, min(fade_in, fade_out))
+    img = bookend_background(p, ending)
+    d = ImageDraw.Draw(img, "RGBA")
+    draw_gold_particles(d, 1901 if opening else 1902, p, 26 if opening else 24)
+    streak_x = int((-0.25 + p * 1.6) * W)
+    streak = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    sd = ImageDraw.Draw(streak, "RGBA")
+    sd.polygon(
+        [
+            (streak_x - 520, int(H * (0.48 if ending else 0.55))),
+            (streak_x + 290, int(H * (0.37 if ending else 0.44))),
+            (streak_x + 360, int(H * (0.45 if ending else 0.52))),
+            (streak_x - 450, int(H * (0.57 if ending else 0.64))),
+        ],
+        fill=(245, 247, 250, int(22 * math.sin(min(1, p * 2) * math.pi))),
+    )
+    img.alpha_composite(streak)
+    rule_p = min(1.0, max(0.0, (p - 0.22) / 0.26))
+    logo_s = 0.72 + 0.28 * min(1.0, max(0.0, (p - 0.04) / 0.22))
+    logo_size = int((120 if opening else 150) * logo_s)
+    logo = pd_logo(logo_size)
+    logo_y = H // 2 - (205 if opening else 190)
+    if logo is not None:
+        img.alpha_composite(logo, (W // 2 - logo.width // 2, logo_y - logo.height // 2))
+    else:
+        d.text((W // 2, logo_y), "PD", anchor="mm", font=font(150 if opening else 185, True), fill=(229, 181, 58, 245))
+    series_alpha = int(245 * min(1.0, max(0.0, (p - 0.15) / 0.26)))
+    title_alpha = int(245 * min(1.0, max(0.0, (p - 0.30) / 0.25)))
+    sub_alpha = int(235 * min(1.0, max(0.0, (p - 0.55) / 0.25)))
+    rule_w = int(560 * rule_p)
+    d.rectangle((W // 2 - rule_w // 2, H // 2 - 37, W // 2 + rule_w // 2, H // 2 - 33), fill=(229, 181, 58, 235))
+    if opening:
+        d.text((W // 2, H // 2 - 92), "PRIME DOCUMENTARY", anchor="mm", font=font(44, True), fill=(245, 247, 250, series_alpha))
+        d.text((W // 2, H // 2 + 56), "OPERATION VARSITY BLUES", anchor="mm", font=font(88, True), fill=(245, 247, 250, title_alpha))
+        d.text((W // 2, H // 2 + 132), "The side door into elite colleges", anchor="mm", font=font(31, True), fill=(229, 181, 58, sub_alpha))
+    else:
+        pulse = 1.0 + 0.04 * math.sin(local * 4.8)
+        d.text((W // 2, H // 2 - 82), "PRIME DOCUMENTARY", anchor="mm", font=font(58, True), fill=(245, 247, 250, series_alpha))
+        d.text((W // 2, H // 2 + 48), "SUBSCRIBE - LANDMARK RIGHTS CASES", anchor="mm", font=font(int(34 * pulse), True), fill=(229, 181, 58, title_alpha))
+        d.text((W // 2, H // 2 + 104), "New episodes every week", anchor="mm", font=font(27, False), fill=(200, 205, 214, sub_alpha))
+        base_w = int(W * 0.70 * min(1.0, max(0.0, (p - 0.18) / 0.28)))
+        d.rectangle((W // 2 - base_w // 2, int(H * 0.78), W // 2 + base_w // 2, int(H * 0.78) + 3), fill=(229, 181, 58, 210))
+    d.rectangle((0, 0, W, H), outline=(0, 0, 0, 0))
+    if alpha >= 0.999:
+        return np.asarray(img.convert("RGB"), dtype=np.uint8)
+    base = Image.fromarray(frame).convert("RGBA")
+    blended = Image.blend(base, img, alpha)
+    return np.asarray(blended.convert("RGB"), dtype=np.uint8)
 
 
 def render_silent_video(paths: list[Path], total: float) -> None:
@@ -809,8 +982,8 @@ def burn_and_mux(total: float) -> None:
     srt = str(CAPTIONS_SRT.resolve()).replace("\\", "/").replace(":", "\\:")
     vf = (
         f"subtitles='{srt}':force_style="
-        "'FontName=Arial,FontSize=32,PrimaryColour=&H00F5F7FA,OutlineColour=&H00000000,"
-        "BorderStyle=3,BackColour=&HAA000000,Outline=2,Shadow=1,MarginV=48,Alignment=2'"
+        "'FontName=Arial,FontSize=30,PrimaryColour=&H00F5F7FA,OutlineColour=&H00000000,"
+        "BorderStyle=3,BackColour=&HAA000000,Outline=2,Shadow=1,MarginV=18,Alignment=2'"
     )
     FINAL_MP4.parent.mkdir(parents=True, exist_ok=True)
     run(
