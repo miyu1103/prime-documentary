@@ -14,5 +14,50 @@
     "audio_bitrate": "320k"
   },
   "state": "edit_review",
-  "created_at": "2026-06-29T18:29:49.724568+00:00"
+  "created_at": "2026-06-29T18:29:49.724568+00:00",
+  "status": "scheduled",
+  "youtube_meta": "episodes/PD-2026-019-varsityblues/09_package/youtube_meta.v001.json",
+  "youtube_meta_sha256": "sha256:a3c268654e2adc235c11b2605ed229bcf1e6590bc882ee9478b22ca79d38c645",
+  "video_sha256": "sha256:a5b97b26f862f8c48093267673293206e0353eae37c1406e1fe2675cefdce11e",
+  "thumbnail": "episodes/PD-2026-019-varsityblues/09_package/thumbnail.selected.v001.png",
+  "thumbnail_sha256": "sha256:5bdd8af461a26a594c4c0b975aa7a83c06d2b14c5ff72147ef19f9a1c26f2833",
+  "captions_sha256": "sha256:a9746306dd44f6dbff2b9b660fa4fdfca4bb8fbe623f9f09fef1f42ffc702450",
+  "rights_manifest_sha256": "sha256:5fd06fd944fe7e3707f1ceded75256c64a2c099728b1706daf58757ee7f00b95",
+  "acceptance_sha256": "sha256:1f4dc477f8e6a0bd5a9222770b4fb7ce2edb8804b181730d51b137a832f58969",
+  "requested_schedule": {
+    "local_time": "2026-07-04T12:00:00+09:00",
+    "utc_time": "2026-07-04T03:00:00Z",
+    "status": "scheduled"
+  },
+  "external_side_effects": {
+    "upload": true,
+    "publish": false,
+    "schedule": true,
+    "paid_api": false
+  },
+  "publish_gate": "owner_requested_schedule_2026-06-30",
+  "updated_at": "2026-06-29T18:55:17.768363+00:00",
+  "upload_performed": true,
+  "schedule_performed": true,
+  "publish_performed": false,
+  "public_immediate_publish": false,
+  "video_id": "j8U8c4BB_GQ",
+  "watch": "https://youtu.be/j8U8c4BB_GQ",
+  "studio": "https://studio.youtube.com/video/j8U8c4BB_GQ/edit",
+  "youtube": {
+    "video_id": "j8U8c4BB_GQ",
+    "watch": "https://youtu.be/j8U8c4BB_GQ",
+    "studio": "https://studio.youtube.com/video/j8U8c4BB_GQ/edit",
+    "privacy": "private",
+    "scheduled_at_local": "2026-07-04T12:00:00+09:00",
+    "scheduled_at_utc": "2026-07-04T03:00:00Z",
+    "upload_performed": true,
+    "schedule_performed": true,
+    "public_immediate_publish": false,
+    "result": "episodes/PD-2026-019-varsityblues/09_package/youtube_schedule_result.v001.json",
+    "thumbnail_sha256": "sha256:5bdd8af461a26a594c4c0b975aa7a83c06d2b14c5ff72147ef19f9a1c26f2833",
+    "thumbnail_variant": "C"
+  },
+  "thumbnail_variant": "C",
+  "thumbnail_ctr_rationale": "Selected for stronger CTR: money hook, high contrast, anonymous no-likeness subject."
 }

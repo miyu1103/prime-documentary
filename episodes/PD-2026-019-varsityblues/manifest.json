@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260628-019",
   "slug": "varsityblues",
   "title_working": "The Side Door: How the Rich Bought Their Kids Into Elite Colleges",
-  "state": "edit_review",
+  "state": "scheduled",
   "risk_class": "R3",
   "production_tier": "A",
   "autonomy_level": 3,
@@ -19,7 +19,11 @@
     "codex_image_prompts": "v001",
     "audio_mix": "v001",
     "captions": "v001",
-    "edit": "v001"
+    "edit": "v001",
+    "youtube_meta": "v001",
+    "final_delivery": "v001",
+    "rights_manifest": "v001",
+    "youtube_schedule_result": "v001"
   },
   "artifacts": [
     {
@@ -74,7 +78,10 @@
     }
   ],
   "approvals": [
-    "APR-0001"
+    "APR-0001",
+    "APR-0002",
+    "APR-0003",
+    "APR-0004"
   ],
   "costs": {
     "estimated": {
@@ -104,5 +111,8 @@
   ],
   "blockers": [],
   "created_at": "2026-06-28T00:00:00+00:00",
-  "updated_at": "2026-06-29T18:29:49.724568+00:00"
+  "updated_at": "2026-06-29T18:53:58.581487+00:00",
+  "video_id": "j8U8c4BB_GQ",
+  "video_url": "https://youtu.be/j8U8c4BB_GQ",
+  "public_schedule_active": true
 }
