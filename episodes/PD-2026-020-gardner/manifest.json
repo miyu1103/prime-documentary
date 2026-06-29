@@ -4,7 +4,7 @@
   "topic_id": "TOP-20260629-020",
   "slug": "gardner",
   "title_working": "The Heist That Was Never Solved: The Gardner Museum Mystery",
-  "state": "script_verified",
+  "state": "edit_review",
   "risk_class": "R2",
   "production_tier": "A",
   "autonomy_level": 3,
@@ -15,7 +15,12 @@
     "sources": "v001",
     "claims": "v001",
     "script": "v001",
-    "script_qc": "v001"
+    "script_qc": "v001",
+    "audio_mix": "v001",
+    "captions": "v003",
+    "factory_ledger": "v001",
+    "edit_scaffold": "v001",
+    "edit": "v001"
   },
   "artifacts": [
     {
@@ -88,6 +93,18 @@
     "Final-script approval is an OWNER gate: APR-0001 is PENDING (not self-approved). Before broadcast: confirm living/deceased status of any person of interest; lock verbatim FBI/DOJ quotes."
   ],
   "blockers": [],
+  "events": [
+    {
+      "timestamp": "2026-06-29T19:29:44.641367+00:00",
+      "event": "edit_review_built",
+      "details": {
+        "final_video": "H:/pd-media/episodes/PD-2026-020-gardner/08_edit/final.mp4",
+        "captions": "episodes/PD-2026-020-gardner/08_edit/captions.v003.srt",
+        "acceptance_report": "episodes/PD-2026-020-gardner/09_package/acceptance_report.v001.json",
+        "acceptance_status": "PASS"
+      }
+    }
+  ],
   "created_at": "2026-06-29T00:00:00+00:00",
-  "updated_at": "2026-06-29T00:00:00+00:00"
+  "updated_at": "2026-06-29T19:29:44.641367+00:00"
 }

@@ -1,0 +1,29 @@
+{
+  "episode_id": "PD-2026-020-gardner",
+  "revision": "v001",
+  "status": "superseded_by_accepted_final",
+  "known_pass_now": {
+    "remotion_config": "canonical",
+    "bookends": "canonical Bookends.tsx present",
+    "script_locked": true,
+    "annotated_spans": 73,
+    "voice_provider": "elevenlabs",
+    "voice_master_duration_seconds": 1643.132,
+    "audio_mix_loudness_lufs": -14.3,
+    "captions_file": "episodes/PD-2026-020-gardner/08_edit/captions.v003.srt",
+    "caption_alignment": "Whisper word timestamps aligned to locked VO text; breath-gap grouped",
+    "caption_format_gate": "pass",
+    "factory_assets_staged": 72
+  },
+  "known_pending": [
+    "none; accepted final is recorded in acceptance_report.v001.json"
+  ],
+  "preflight": {
+    "script": "C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-020-gardner\\03_script\\script.en.v001.md",
+    "annotated_spans": 73,
+    "hero_images_present": 92,
+    "hero_images_missing": [],
+    "acceptance_script_executes": true
+  },
+  "created_at": "2026-06-29T19:10:19.775294+00:00"
+}

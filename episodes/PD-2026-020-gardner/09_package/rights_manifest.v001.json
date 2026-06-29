@@ -1,0 +1,1663 @@
+{
+  "episode_id": "PD-2026-020-gardner",
+  "revision": "v001",
+  "assets": [
+    {
+      "asset_id": "EP20-VOICE-MASTER-v001",
+      "type": "narration",
+      "origin": "ElevenLabs text-to-speech from locked script [VO:] lines",
+      "license": "provider generated under account terms",
+      "path": "H:/pd-media/episodes/PD-2026-020-gardner/06_audio/master_elevenlabs_v001/voice_master.v001.wav",
+      "ai_disclosure": true
+    },
+    {
+      "asset_id": "EP20-AUDIO-MIX-v001",
+      "type": "audio_mix",
+      "origin": "Local FFmpeg mix of ElevenLabs narration + rights-tracked library music/SFX",
+      "license": "internal reusable PD library",
+      "path": "H:/pd-media/episodes/PD-2026-020-gardner/08_edit/gardner_final_mix.v001.wav",
+      "ai_disclosure": true
+    },
+    {
+      "asset_id": "AF-BG-0212",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/cable-car-in-dense-fog-with-limited-visibility-37418492/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0212__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0212.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0213",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/a-foggy-forest-with-trees-and-fog-17428163/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0213__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0213.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0214",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/moody-black-and-white-mountain-landscape-30449698/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0214__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0214.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0215",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/sunlight-and-fog-in-forest-10978948/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0215__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0215.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0216",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/moody-foggy-hillside-landscape-at-dusk-30449776/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0216__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0216.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0217",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/misty-landscape-with-fog-and-bare-trees-37244865/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0217__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0217.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0218",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/a-black-and-white-photo-of-a-forest-in-the-fog-20100164/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0218__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0218.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0219",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/eerie-foggy-cemetery-with-cross-silhouette-35863235/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0219__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0219.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0220",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/misty-mountain-landscape-in-black-and-white-31270356/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0220__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0220.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0221",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/misty-mountain-range-in-italian-alps-35574238/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0221__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0221.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0222",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-317645/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0222__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0222.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0223",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-317646/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0223__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0223.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0224",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-350718/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0224__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0224.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0225",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-344921/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0225__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0225.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0226",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-331046/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0226__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0226.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0227",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-322213/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0227__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0227.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0228",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-333501/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0228__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0228.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0229",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-293332/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0229__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0229.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0230",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-322938/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0230__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0230.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0231",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-328315/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0231__moody_atmosphere_fog.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0231.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0510",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/scale-of-justice-5636967/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0510__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0510.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0511",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/lady-justice-statue-over-desk-8061662/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0511__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0511.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0512",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/female-judge-hitting-the-auction-hammer-6101343/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0512__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0512.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0513",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/balance-scales-and-gavel-placed-on-a-wooden-desk-5636977/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0513__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0513.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0514",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/a-person-holding-a-pen-8731580/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0514__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0514.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0515",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/lady-justice-statue-8061659/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0515__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0515.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0516",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/a-serious-lawyer-wearing-black-coat-6101308/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0516__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0516.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0517",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/woman-sitting-on-a-chair-talking-6101334/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0517__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0517.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0518",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/judge-using-a-gavel-6699964/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0518__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0518.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0519",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/woman-reading-documents-6101336/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0519__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0519.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0520",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-24125/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0520__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0520.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0521",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-1623/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0521__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0521.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0522",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-173348/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0522__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0522.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0523",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-27727/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0523__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0523.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0524",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-158316/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0524__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0524.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0525",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-201968/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0525__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0525.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0526",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-106674/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0526__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0526.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0527",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-201947/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0527__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0527.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0528",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-126924/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0528__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0528.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0529",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-136727/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0529__courtroom_interior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0529.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0585",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/woman-sitting-on-a-chair-reading-documents-6101341/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0585__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0585.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0586",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/lady-justice-statue-over-desk-8061661/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0586__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0586.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0587",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/close-up-of-books-collection-7841709/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0587__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0587.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0588",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/a-man-choosing-a-book-7841674/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0588__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0588.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0589",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/books-in-the-bookshelves-8499706/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0589__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0589.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0590",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/serene-library-interior-with-bookshelves-29096835/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0590__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0590.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0591",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/a-woman-carrying-books-down-the-stairs-6334047/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0591__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0591.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0592",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/book-series-on-shelf-6136340/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0592__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0592.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0593",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/a-person-walking-through-a-library-with-books-17151509/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0593__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0593.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0594",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/a-woman-looking-for-a-book-8199442/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0594__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0594.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0595",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-145428/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0595__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0595.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0596",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-140807/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0596__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0596.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0597",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-122232/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0597__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0597.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0598",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-140587/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0598__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0598.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0599",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-140593/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0599__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0599.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0600",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-846/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0600__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0600.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0601",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-123514/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0601__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0601.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0602",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-122229/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0602__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0602.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0603",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-140591/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0603__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0603.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0604",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-140808/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0604__law_library_books.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0604.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0665",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/a-large-building-with-a-flag-on-top-of-it-28454582/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0665__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0665.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0666",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/american-flag-over-raleigh-state-capitol-building-34779888/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0666__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0666.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0667",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/majestic-neoclassical-building-at-night-34539253/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0667__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0667.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0668",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/illuminated-parliament-building-at-dusk-38155769/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0668__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0668.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0669",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/video-of-a-road-and-cars-5106698/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0669__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0669.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0670",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/azerbaijan-flag-waving-in-baku-government-building-34075510/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0670__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0670.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0671",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/us-treasury-building-in-washington-dc-29188207/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0671__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0671.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0672",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/aerial-footage-of-ontario-government-building-29905707/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0672__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0672.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0673",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/view-of-the-washington-state-capitol-building-6599402/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0673__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0673.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0674",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pexels License",
+      "source_url": "https://www.pexels.com/video/capitol-20001896/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0674__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0674.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0675",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-64759/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0675__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0675.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "AF-BG-0676",
+      "type": "factory_broll",
+      "origin": "Prime Documentary asset factory shelf",
+      "license": "Pixabay Content License",
+      "source_url": "https://pixabay.com/videos/id-2143/",
+      "path": "H:/pd-media/assets/factory/backgrounds/AF-BG-0676__government_building_exterior.mp4",
+      "remotion_src": "gardner/factory/AF-BG-0676.mp4",
+      "ai_disclosure": false
+    },
+    {
+      "asset_id": "EP20-IMG-001",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-001.png",
+      "remotion_src": "gardner/EP20-IMG-001.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-002",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-002.png",
+      "remotion_src": "gardner/EP20-IMG-002.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-003",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-003.png",
+      "remotion_src": "gardner/EP20-IMG-003.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-004",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-004.png",
+      "remotion_src": "gardner/EP20-IMG-004.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-005",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-005.png",
+      "remotion_src": "gardner/EP20-IMG-005.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-006",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-006.png",
+      "remotion_src": "gardner/EP20-IMG-006.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-007",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-007.png",
+      "remotion_src": "gardner/EP20-IMG-007.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-008",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-008.png",
+      "remotion_src": "gardner/EP20-IMG-008.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-009",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-009.png",
+      "remotion_src": "gardner/EP20-IMG-009.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-010",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-010.png",
+      "remotion_src": "gardner/EP20-IMG-010.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-011",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-011.png",
+      "remotion_src": "gardner/EP20-IMG-011.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-012",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-012.png",
+      "remotion_src": "gardner/EP20-IMG-012.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-013",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-013.png",
+      "remotion_src": "gardner/EP20-IMG-013.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-014",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-014.png",
+      "remotion_src": "gardner/EP20-IMG-014.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-015",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-015.png",
+      "remotion_src": "gardner/EP20-IMG-015.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-016",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-016.png",
+      "remotion_src": "gardner/EP20-IMG-016.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-017",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-017.png",
+      "remotion_src": "gardner/EP20-IMG-017.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-018",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-018.png",
+      "remotion_src": "gardner/EP20-IMG-018.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-019",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-019.png",
+      "remotion_src": "gardner/EP20-IMG-019.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-020",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-020.png",
+      "remotion_src": "gardner/EP20-IMG-020.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-021",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-021.png",
+      "remotion_src": "gardner/EP20-IMG-021.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-022",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-022.png",
+      "remotion_src": "gardner/EP20-IMG-022.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-023",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-023.png",
+      "remotion_src": "gardner/EP20-IMG-023.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-024",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-024.png",
+      "remotion_src": "gardner/EP20-IMG-024.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-025",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-025.png",
+      "remotion_src": "gardner/EP20-IMG-025.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-026",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-026.png",
+      "remotion_src": "gardner/EP20-IMG-026.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-027",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-027.png",
+      "remotion_src": "gardner/EP20-IMG-027.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-028",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-028.png",
+      "remotion_src": "gardner/EP20-IMG-028.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-029",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-029.png",
+      "remotion_src": "gardner/EP20-IMG-029.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-030",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-030.png",
+      "remotion_src": "gardner/EP20-IMG-030.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-031",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-031.png",
+      "remotion_src": "gardner/EP20-IMG-031.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-032",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-032.png",
+      "remotion_src": "gardner/EP20-IMG-032.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-033",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-033.png",
+      "remotion_src": "gardner/EP20-IMG-033.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-034",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-034.png",
+      "remotion_src": "gardner/EP20-IMG-034.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-035",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-035.png",
+      "remotion_src": "gardner/EP20-IMG-035.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-036",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-036.png",
+      "remotion_src": "gardner/EP20-IMG-036.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-037",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-037.png",
+      "remotion_src": "gardner/EP20-IMG-037.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-038",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-038.png",
+      "remotion_src": "gardner/EP20-IMG-038.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-039",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-039.png",
+      "remotion_src": "gardner/EP20-IMG-039.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-040",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-040.png",
+      "remotion_src": "gardner/EP20-IMG-040.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-041",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-041.png",
+      "remotion_src": "gardner/EP20-IMG-041.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-042",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-042.png",
+      "remotion_src": "gardner/EP20-IMG-042.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-043",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-043.png",
+      "remotion_src": "gardner/EP20-IMG-043.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-044",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-044.png",
+      "remotion_src": "gardner/EP20-IMG-044.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-045",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-045.png",
+      "remotion_src": "gardner/EP20-IMG-045.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-046",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-046.png",
+      "remotion_src": "gardner/EP20-IMG-046.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-047",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-047.png",
+      "remotion_src": "gardner/EP20-IMG-047.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-048",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-048.png",
+      "remotion_src": "gardner/EP20-IMG-048.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-049",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-049.png",
+      "remotion_src": "gardner/EP20-IMG-049.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-050",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-050.png",
+      "remotion_src": "gardner/EP20-IMG-050.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-051",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-051.png",
+      "remotion_src": "gardner/EP20-IMG-051.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-052",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-052.png",
+      "remotion_src": "gardner/EP20-IMG-052.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-053",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-053.png",
+      "remotion_src": "gardner/EP20-IMG-053.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-054",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-054.png",
+      "remotion_src": "gardner/EP20-IMG-054.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-055",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-055.png",
+      "remotion_src": "gardner/EP20-IMG-055.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-056",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-056.png",
+      "remotion_src": "gardner/EP20-IMG-056.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-057",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-057.png",
+      "remotion_src": "gardner/EP20-IMG-057.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-058",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-058.png",
+      "remotion_src": "gardner/EP20-IMG-058.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-059",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-059.png",
+      "remotion_src": "gardner/EP20-IMG-059.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-060",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-060.png",
+      "remotion_src": "gardner/EP20-IMG-060.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-061",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-061.png",
+      "remotion_src": "gardner/EP20-IMG-061.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-062",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-062.png",
+      "remotion_src": "gardner/EP20-IMG-062.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-063",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-063.png",
+      "remotion_src": "gardner/EP20-IMG-063.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-064",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-064.png",
+      "remotion_src": "gardner/EP20-IMG-064.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-065",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-065.png",
+      "remotion_src": "gardner/EP20-IMG-065.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-066",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-066.png",
+      "remotion_src": "gardner/EP20-IMG-066.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-067",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-067.png",
+      "remotion_src": "gardner/EP20-IMG-067.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-068",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-068.png",
+      "remotion_src": "gardner/EP20-IMG-068.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-069",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-069.png",
+      "remotion_src": "gardner/EP20-IMG-069.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-070",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-070.png",
+      "remotion_src": "gardner/EP20-IMG-070.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-071",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-071.png",
+      "remotion_src": "gardner/EP20-IMG-071.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-072",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-072.png",
+      "remotion_src": "gardner/EP20-IMG-072.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-073",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-073.png",
+      "remotion_src": "gardner/EP20-IMG-073.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-074",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-074.png",
+      "remotion_src": "gardner/EP20-IMG-074.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-075",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-075.png",
+      "remotion_src": "gardner/EP20-IMG-075.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-076",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-076.png",
+      "remotion_src": "gardner/EP20-IMG-076.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-077",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-077.png",
+      "remotion_src": "gardner/EP20-IMG-077.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-078",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-078.png",
+      "remotion_src": "gardner/EP20-IMG-078.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-079",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-079.png",
+      "remotion_src": "gardner/EP20-IMG-079.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-080",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-080.png",
+      "remotion_src": "gardner/EP20-IMG-080.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-081",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-081.png",
+      "remotion_src": "gardner/EP20-IMG-081.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-082",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-082.png",
+      "remotion_src": "gardner/EP20-IMG-082.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-083",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-083.png",
+      "remotion_src": "gardner/EP20-IMG-083.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-084",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-084.png",
+      "remotion_src": "gardner/EP20-IMG-084.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-085",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-085.png",
+      "remotion_src": "gardner/EP20-IMG-085.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-086",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-086.png",
+      "remotion_src": "gardner/EP20-IMG-086.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-087",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-087.png",
+      "remotion_src": "gardner/EP20-IMG-087.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-088",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-088.png",
+      "remotion_src": "gardner/EP20-IMG-088.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-089",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-089.png",
+      "remotion_src": "gardner/EP20-IMG-089.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-090",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-090.png",
+      "remotion_src": "gardner/EP20-IMG-090.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-091",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-091.png",
+      "remotion_src": "gardner/EP20-IMG-091.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    },
+    {
+      "asset_id": "EP20-IMG-092",
+      "type": "hero_still",
+      "origin": "Codex AI-generated symbolic reconstruction selected for EP20",
+      "license": "AI-generated under account terms",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/gardner/EP20-IMG-092.png",
+      "remotion_src": "gardner/EP20-IMG-092.png",
+      "ai_disclosure": true,
+      "r2_safety": "no real-person likeness; no real Gardner Museum/logo; no authentic artwork reproduction intended"
+    }
+  ],
+  "updated_at": "2026-06-29T19:27:17.490501+00:00"
+}
