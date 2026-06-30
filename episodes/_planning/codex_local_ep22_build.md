@@ -41,7 +41,7 @@ SOURCES OF TRUTH — obey exactly, numbers not adjectives (do not improvise, do 
 3. episodes/PD-2026-022-milken/03_script/script.en.v001.md   <- narration ([VO:] only) + "# [PRODUCTION ...]" notes. LOCKED.
 4. .../03_script/script.annotated.v001.json           <- 76 spans, each with claim_ids + visual_intent.
 5. .../01_research/claims.v001.json                   <- R3 wording locks (below). Never contradict.
-6. .../04_scenes/codex_image_prompts.v001.md          <- the 74 stills to generate (ONE per prompt).
+6. .../04_scenes/codex_image_prompts.v001.md          <- what each of the 74 already-generated stills depicts (1 per prompt).
 If two sources seem to conflict: spec v2 wins, then the master design doc; then pick the stricter reading
 and note it in the final report. Ask NOTHING.
 
