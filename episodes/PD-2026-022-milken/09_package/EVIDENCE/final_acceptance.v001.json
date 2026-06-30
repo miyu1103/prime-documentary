@@ -1,0 +1,88 @@
+{
+  "check": "final_acceptance",
+  "episode": "PD-2026-022-milken",
+  "render": "H:\\pd-media\\episodes\\PD-2026-022-milken\\08_edit\\final.mp4",
+  "render_duration_seconds": 1658.23,
+  "status": "PASS",
+  "results": [
+    {
+      "check": "runtime_band",
+      "ok": true,
+      "hard": true,
+      "reason": "1658.2s = 27.64min (band 1620-1980s)"
+    },
+    {
+      "check": "render_resolution",
+      "ok": true,
+      "hard": true,
+      "reason": "1920x1080 codec=h264 (need >= 1920x1080)"
+    },
+    {
+      "check": "images_present",
+      "ok": true,
+      "hard": true,
+      "reason": "black total 0.0s / longest 0.0s (limits 8/3)"
+    },
+    {
+      "check": "motion_present",
+      "ok": true,
+      "hard": true,
+      "reason": "frozen total 0.0s / longest 0.0s (limits 8/4s; high => static/slideshow)"
+    },
+    {
+      "check": "bgm_present",
+      "ok": true,
+      "hard": true,
+      "reason": "total silence 0s (limit 25s; high => no continuous BGM bed / narration-only mix)"
+    },
+    {
+      "check": "hook_added",
+      "ok": true,
+      "hard": false,
+      "skipped": true,
+      "reason": "shotlist totals missing"
+    },
+    {
+      "check": "loudness",
+      "ok": true,
+      "hard": false,
+      "reason": "integrated -14.3 LUFS (target -14, band -16.0..-12.0)"
+    },
+    {
+      "check": "voice_is_master",
+      "ok": true,
+      "hard": true,
+      "reason": "master narration present: ['elevenlabs']"
+    },
+    {
+      "check": "captions_final",
+      "ok": true,
+      "hard": true,
+      "reason": "final captions captions.v001.srt (last cue 1649s)"
+    },
+    {
+      "check": "caption_format",
+      "ok": true,
+      "hard": true,
+      "reason": "captions.v001.srt: line/duration/cps within limits"
+    },
+    {
+      "check": "thumbnail_ready",
+      "ok": true,
+      "hard": true,
+      "reason": "4 thumb(s) at 1280x720, selected=yes (need >=3 + selected)"
+    },
+    {
+      "check": "image_resolution",
+      "ok": true,
+      "hard": true,
+      "reason": "74 hero PNGs, all long-edge >= 3840px"
+    },
+    {
+      "check": "factory_used",
+      "ok": true,
+      "hard": true,
+      "reason": "64 factory clip(s) staged, referenced_in_composition=True, need >= 36 (1 per 45s)"
+    }
+  ]
+}

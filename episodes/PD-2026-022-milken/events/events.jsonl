@@ -4,3 +4,17 @@
 {"ts": "2026-06-30T00:00:00+00:00", "episode_id": "PD-2026-022-milken", "event": "script_qc_passed", "revision": "v001", "by": "claude"}
 {"ts": "2026-06-30T00:00:00+00:00", "episode_id": "PD-2026-022-milken", "event": "state_changed", "from": "script_draft", "to": "script_verified", "by": "claude"}
 {"ts": "2026-06-30T00:00:00+00:00", "episode_id": "PD-2026-022-milken", "event": "owner_script_approval_requested", "target": "APR-0001", "by": "claude", "note": "R3: confirm living status + lock verbatim White House/court/SEC quotes before publish"}
+{"ts": "2026-06-30T16:18:45.612845+00:00", "event": "remotion_scaffold_prepared", "payload": {"revision": "v001", "factory_assets": 64, "roughcut": "remotion/src/data/milken_roughcut.ts", "hero_images_pending": true}}
+{"ts": "2026-06-30T16:19:11.800281+00:00", "event": "remotion_scaffold_prepared", "payload": {"revision": "v001", "factory_assets": 64, "roughcut": "remotion/src/data/milken_roughcut.ts", "hero_images_pending": true}}
+{"ts": "2026-06-30T16:26:49.681441+00:00", "event": "audio_ready_built", "payload": {"revision": "v001", "voice_master": "H:/pd-media/episodes/PD-2026-022-milken/06_audio/master_elevenlabs_v001/voice_master.v001.wav", "audio_mix": "H:/pd-media/episodes/PD-2026-022-milken/08_edit/milken_final_mix.v001.wav", "duration_seconds": 1658.213, "caption_cues": 510, "narration_provider": "elevenlabs", "images_pending": true}}
+{"ts": "2026-06-30T16:27:44.713431+00:00", "event": "remotion_scaffold_prepared", "payload": {"revision": "v001", "factory_assets": 64, "roughcut": "remotion/src/data/milken_roughcut.ts", "hero_images_pending": true}}
+{"ts": "2026-06-30T16:27:44.785947+00:00", "event": "thumbnail_candidates_built", "payload": {"revision": "v001", "available_hero_images": 5, "thumbnails": 3}}
+{"ts": "2026-06-30T16:45:39.908170+00:00", "event": "final_wait_blocked", "payload": {"hero_images": 9, "expected": 74}}
+{"ts": "2026-06-30T16:47:10.832716+00:00", "event": "prefinal_package_prepared", "payload": {"revision": "v001", "upload_performed": false, "publish_performed": false, "waiting_for_hero_images": true}}
+{"ts": "2026-06-30T16:47:33.171347+00:00", "event": "thumbnail_candidates_built", "payload": {"revision": "v001", "available_hero_images": 10, "thumbnails": 3}}
+{"ts": "2026-06-30T17:18:11.514011+00:00", "event": "final_wait_blocked", "payload": {"hero_images": 11, "expected": 74}}
+{"ts": "2026-06-30T18:18:29.156642+00:00", "event": "final_wait_blocked", "payload": {"hero_images": 34, "expected": 74}}
+{"ts": "2026-06-30T21:10:42.847420+00:00", "event": "final_wait_ready", "payload": {"hero_images": 74}}
+{"ts": "2026-06-30T21:23:20.601642+00:00", "event": "edit_review_built", "payload": {"revision": "v001", "final_video": "H:/pd-media/episodes/PD-2026-022-milken/08_edit/final.mp4", "duration_seconds": 1658.213, "caption_cues": 510, "narration_provider": "elevenlabs"}}
+{"ts": "2026-06-30T21:24:45.768828+00:00", "event": "final_acceptance_measured", "payload": {"returncode": 0}}
+{"ts": "2026-06-30T21:25:43.803257+00:00", "event": "final_acceptance_passed", "payload": {"revision": "v001", "final_video": "H:/pd-media/episodes/PD-2026-022-milken/08_edit/final.mp4", "acceptance": "episodes/PD-2026-022-milken/09_package/EVIDENCE/final_acceptance.v001.json", "upload_performed": false, "publish_performed": false}}
