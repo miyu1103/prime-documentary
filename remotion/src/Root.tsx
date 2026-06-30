@@ -16,6 +16,7 @@ import {KeloThumbnailFrame} from './compositions/KeloThumbnailFrame';
 import {MahanoyPremium, mahanoyPremiumDurationInFrames} from './compositions/MahanoyPremium';
 import {ArbitrationPremium, arbitrationPremiumDurationInFrames} from './compositions/ArbitrationPremium';
 import {KingPremium, kingPremiumDurationInFrames} from './compositions/KingPremium';
+import {RajaratnamPremium, rajaratnamPremiumDurationInFrames} from './compositions/RajaratnamPremium';
 import {KingThumbnailFrame} from './compositions/KingThumbnailFrame';
 import {MirandaThumbnailFrame} from './compositions/MirandaThumbnailFrame';
 import {ClipProof} from './compositions/ClipProof';
@@ -167,6 +168,14 @@ export const RemotionRoot: React.FC = () => {
         id="KingPremium"
         component={KingPremium}
         durationInFrames={kingPremiumDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="RajaratnamPremium"
+        component={RajaratnamPremium}
+        durationInFrames={rajaratnamPremiumDurationInFrames(BRAND.video.fps)}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}

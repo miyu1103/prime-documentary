@@ -16,6 +16,9 @@ Config.setCodec('h264');
 // CRF=16：数値が小さいほど高品質。16はほぼ視覚的ロスレス（one-pass spec row6と一致）
 Config.setCrf(16);
 
+// libx264 preset は slow 固定（NVENC/高速プリセットへ逃がさない）
+Config.setX264Preset('slow');
+
 // 全プレーヤー互換のyuv420p
 Config.setPixelFormat('yuv420p');
 
