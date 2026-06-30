@@ -45,6 +45,8 @@
 
 [VO:] The rule on Wall Street was practically carved in stone. Respectable money does not touch junk. It is too risky. Those companies default, you lose your shirt, end of conversation. So the capital that growing businesses needed most simply was not there for them. The door was shut, with a polite little sign on it that said: not for you. [CLM-0001]
 
+[VO:] So the rule carried a quiet cruelty inside it. The biggest, safest companies, the ones that needed help least, could borrow all day long at the cheapest rates in the world. The smaller, hungrier companies, the ones a loan might actually transform, were left standing out in the cold. Money flowed toward the people who already had it, and away from the people who did not. That was simply how the system worked, and almost nobody thought to ask whether it had to work that way. [CLM-0001]
+
 [VO:] Milken studied this same despised corner of the market as a young man, and he noticed something everyone else had filed away as obvious and never bothered to question. He pointed to research suggesting that a basket of these low-rated bonds, held together as a group, actually paid investors more than enough to cover the handful that went bad. Yes, some would default. But the high interest on all the rest more than made up the difference. Priced for fear, the whole category was quietly a bargain. [CLM-0001]
 
 [VO:] Sit with how large that thought is. The entire market had agreed, without really checking, that junk was something to run from. Milken's claim was that the label itself was wrong. That the fear was overpriced. And that buried inside all that fear was an enormous, untapped opportunity, just sitting there in plain sight. [CLM-0001]
@@ -80,7 +82,11 @@
 
 [VO:] Supporters saw this as the market doing exactly what a market is supposed to do. Shaking the dust off lazy, bloated companies. Forcing complacent managers to either perform or step aside for someone who would. Critics saw something far darker. A wave of debt-fueled raids that buried great companies under mountains of borrowing, broke some of them apart for scrap, and cost ordinary people their jobs, all to enrich a handful of financiers standing in the middle. They were watching the very same events. They just could not agree on what they were looking at. [CLM-0013]
 
+[VO:] What made the fight so bitter is that the stakes were real on both sides. Real companies were built with this money, companies that had been frozen out for years. And real workers found themselves on the wrong end of a buyout, told the factory was being sold or shut to help pay down a mountain of fresh debt. The same engine that created opportunity for some created wreckage for others. Where a person landed on Michael Milken often came down to which end of that engine they happened to be standing at. [CLM-0003] [CLM-0013]
+
 [VO:] In the middle of all of it sat the money. Milken's personal fortune in these years is almost hard to say out loud. In one single year, 1987, his pay was reported at around five hundred and fifty million dollars. Not his firm's haul. His. At the time, it was the largest annual sum anyone in America had ever been recorded earning. [CLM-0002]
+
+[VO:] Put it in plain terms. In a single year, one financier was paid a sum that most successful companies would need a decade to earn. Not a corporation. Not a bank. One person. Money like that does not just buy houses and planes. It buys influence, access, and the benefit of the doubt. It also paints a very large target on your back. [CLM-0002]
 
 [VO:] Try to actually hold that number in your head. By some measures, he was personally earning more than the entire companies he was financing. More, in a year, than household-name corporations booked in profit. One man, at one desk, on the wrong coast for Wall Street, had turned himself into a financial superpower. [CLM-0002]
 
@@ -98,6 +104,8 @@
 [VO:] Boesky was a famous Wall Street speculator, an arbitrageur who made his fortune betting on corporate takeovers, the very deals Milken's money helped set in motion. In 1986, Boesky was caught in a securities-fraud scandal of his own. Facing his own ruin, he did what cornered men so often do. He cooperated. He started handing the government other names. And one of the names he gave them was Michael Milken. [CLM-0004]
 
 [VO:] Boesky's cooperation pointed investigators toward a tangle of dealings between the two men. Arrangements where, the government would allege, the true ownership of stock had been hidden, where favors were quietly traded, where the disclosures the law requires had been quietly falsified. The genius of the open door, prosecutors suspected, had a hidden room tucked in behind it. [CLM-0004]
+
+[VO:] These were never going to be simple cases to make. The deals at the heart of them were fiendishly complex, layered through company after company and account after account, the kind of thing that took trained investigators years just to map out. That complexity cut both ways. It made real wrongdoing genuinely hard to prove. It also made almost anything look suspicious to outsiders who could not follow the trail through the maze. [CLM-0005]
 
 [VO:] For two years the investigation ground forward, one of the largest securities-fraud probes the country had ever launched. Then, in 1989, it landed with full force. A federal grand jury handed up a ninety-eight-count indictment against Michael Milken. [CLM-0005]
 
@@ -137,6 +145,8 @@
 [VO:] Because the second thing arrived in February of 2020. President Donald Trump granted Michael Milken a full pardon. [CLM-0009]
 
 [VO:] The White House statement praised his decades of philanthropy and described his offenses as novel. Technical and regulatory violations, it said, of a kind that had rarely if ever been charged as crimes before. It listed a long roster of powerful people who had pushed for the pardon. Financiers. Media moguls. Political heavyweights. After thirty years, the establishment had not merely forgiven Michael Milken. Parts of it had spent years actively lobbying to clear his name. [CLM-0010]
+
+[VO:] By then he was no longer just a disgraced financier. He was a major philanthropist, a man who convened presidents and chief executives, whose name sat on a respected think tank and a leading medical charity. So the pardon did not fall out of a clear sky. It was the result of a long, patient, well-funded campaign to reshape how the world remembered him. Whether that campaign was a search for justice or a quiet purchase of it is precisely the thing people cannot agree on. [CLM-0010] [CLM-0012] [CLM-0013]
 
 [VO:] It is worth being very clear about what a pardon is, and what it is not. A pardon is forgiveness. It is the government choosing to set aside the punishment. What it is not is a declaration of innocence. It does not erase the guilty plea. It does not say the six felonies never happened. Michael Milken pleaded guilty, and in the eyes of the law, that remains true to this day. The pardon forgave the crime. It did not undo it. [CLM-0009]
 
