@@ -6,7 +6,7 @@
 > prompt (74 total)** — NOT a pool of candidates. Regenerate ONLY a specific shot that fails §0/§3. No paid API /
 > upload authorized by this file. Heavy output -> H:\pd-media\episodes\PD-2026-022-milken\.
 
-This is the episode's image library, keyed to the locked script beats (71 spans). Each entry is a self-contained MEGA-PROMPT.
+This is the episode's image library, keyed to the locked script beats (76 spans). Each entry is a self-contained MEGA-PROMPT.
 
 ---
 
@@ -61,7 +61,7 @@ cluttered frame, stock-photo lighting, real landmark, real building interior.`
 - Editability: parallax/Ken-Burns friendly, crop room, doesn't fight bottom-safe captions.
 - Neighbor fit: distinct from adjacent shots.
 
-## 4. SCENE MAP (74 hero stills, keyed to 71 spans)
+## 4. SCENE MAP (74 hero stills, keyed to 76 spans)
 - HOOK EP22-IMG-001..006 · OPENING 007..014 · ACT1 The Idea 015..030 · ACT2 The Empire 031..046 ·
   ACT3 The Fall 047..060 · ACT4 The Reckoning & Forgiveness 061..068 · ENDING 069..074.
 
@@ -457,7 +457,7 @@ negative space.
   text, no real artwork/landmark).
 
 ## 7. COVERAGE & HANDOFF NOTES
-- 74 hero stills (EP22-IMG-001..074) cover hook + opening + 4 acts + ending, keyed to the 71 locked script spans.
+- 74 hero stills (EP22-IMG-001..074) cover hook + opening + 4 acts + ending, keyed to the 76 locked script spans.
   Generate EXACTLY ONE image per ID (74 total); select per the Quality Bar (§3) and Hard Rules (§0).
 - All on-screen figures, names, dates, dollar amounts ($550M, ~$600M = $200M fine + $400M restitution), the
   "98 charged / 6 pleaded" graphic, the SUBSCRIBE/LIKE UI, map labels, and citations are **Remotion graphics/

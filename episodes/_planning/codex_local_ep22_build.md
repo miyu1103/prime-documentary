@@ -20,7 +20,7 @@ A row the script lists as manual, you MUST measure yourself against the stated n
 PRE-FLIGHT (do this BEFORE building anything; if a check fails, STOP and report — do not improvise)
 ==================================================================================================
 [ ] script + annotated exist and are LOCKED: episodes/PD-2026-022-milken/03_script/script.en.v001.md
-    and script.annotated.v001.json (71 spans). Do NOT rewrite a single word.
+    and script.annotated.v001.json (76 spans). Do NOT rewrite a single word.
 [ ] validate_episode.py 22 prints RESULT: PASS (it does). Do not regress it.
 [ ] generate all 74 stills per 04_scenes/codex_image_prompts.v001.md to
     H:\pd-media\episodes\PD-2026-022-milken\05_visuals\selected\EP22-IMG-001.png … EP22-IMG-074.png .
@@ -37,7 +37,7 @@ SOURCES OF TRUTH — obey exactly, numbers not adjectives (do not improvise, do 
 1. episodes/_planning/codex_prompt_ep22.md            <- master design doc. Build to all of it.
 2. docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md             <- binding acceptance table, rows 1-16.
 3. episodes/PD-2026-022-milken/03_script/script.en.v001.md   <- narration ([VO:] only) + "# [PRODUCTION ...]" notes. LOCKED.
-4. .../03_script/script.annotated.v001.json           <- 71 spans, each with claim_ids + visual_intent.
+4. .../03_script/script.annotated.v001.json           <- 76 spans, each with claim_ids + visual_intent.
 5. .../01_research/claims.v001.json                   <- R3 wording locks (below). Never contradict.
 6. .../04_scenes/codex_image_prompts.v001.md          <- the 74 stills to generate (ONE per prompt).
 If two sources seem to conflict: spec v2 wins, then the master design doc; then pick the stricter reading
