@@ -1,0 +1,116 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-024-rajaratnam",
+  "topic_id": "TOP-20260630-024",
+  "slug": "rajaratnam",
+  "title_working": "The Wiretap That Cracked Wall Street",
+  "state": "script_verified",
+  "risk_class": "R2",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "annotated": "v001",
+    "codex_image_prompts": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-024-rajaratnam-topic",
+      "artifact_type": "topic",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-024-rajaratnam/00_topic/topic.v001.json",
+      "checksum": "sha256:09ad8e974ef06a043e587201f1a5695c1d32c4c17a74830f3b40523faa93d6e5",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-024-rajaratnam-sources",
+      "artifact_type": "sources",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-024-rajaratnam/01_research/sources.v001.json",
+      "checksum": "sha256:3868314549e1840429588988667ee8c4b9ca3b706769f445eb3deb921f4d8e1c",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-024-rajaratnam-claims",
+      "artifact_type": "claim_ledger",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-024-rajaratnam/01_research/claims.v001.json",
+      "checksum": "sha256:36a0a9c14f987e32f03820c71f75f7f9fa7194ff379043678851656a2783d2ac",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-024-rajaratnam-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-024-rajaratnam/03_script/script.annotated.v001.json",
+      "checksum": "sha256:8aa4d2e7e161ac10722b84bd5a36aafe17692f9faf3d2b5ffd9ffe81f64ccc8c",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-024-rajaratnam-script-qc",
+      "artifact_type": "script_qc",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-024-rajaratnam/03_script/script_qc.v001.json",
+      "checksum": "sha256:b2f283e50e8f0e96e25a6b2afd1c881b4bbc0ec52fd759993b67858591d466c3",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-024-rajaratnam-codex-image-prompts",
+      "artifact_type": "codex_image_prompts",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-024-rajaratnam/04_scenes/codex_image_prompts.v001.md",
+      "checksum": "sha256:a7ca5c5008188420ca68e07c8a3756fbc14164f9945fa49dc9b196bea57982ee",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "not_run"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 150,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 300,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "MID FEATURE (~30 min). target_duration_minutes=30 uses the 'mid' duration profile (ADR-0008): narration band 24.0-32.4 min; finished-runtime band 27-33 min (check_final_acceptance). NOT the standard 11.5-12.5 gate.",
+    "R2 — Raj Rajaratnam is living and was CONVICTED AT A JURY TRIAL (verdict May 11, 2011; 14 counts). Conviction and sentence are stateable as fact; conduct framed as 'the jury found / prosecutors proved / the government said'. PRE-PUBLISH LEGAL REVIEW REQUIRED before any public release.",
+    "DO NOT conflate co-defendants. Rajat Gupta is a SEPARATE case (convicted June 2012; 2 years + $5M fine) and must never be merged with Rajaratnam's conduct or penalties. Tippers (Goel/Intel, Kumar/McKinsey, Moffat/IBM, Chiesi/New Castle) charged separately. SEC $92.8M civil penalty kept distinct from the $53,816,434 forfeiture + $10M fine.",
+    "Profit is scope-dependent; on screen use the court forfeiture '$53.8 million' / 'more than $50 million', never a single invented flat number. The 'longest insider-trading sentence' superlative is attributed to prosecutors and time-bound to 2011.",
+    "Left process (Claude) complete through script_verified: topic + sources(15) + claims(20) + script + annotated(53 spans) + script_qc + codex image prompts + design docs. NEXT human gate = APR-0001 owner script approval (currently PENDING). No paid API, render, upload, or publish performed.",
+    "No real-person likeness or real logos/seals/landmarks in any generated image (invariant 11). Codex image generation only; SDXL not used for this episode's hero stills."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-30T00:00:00+09:00",
+  "updated_at": "2026-06-30T00:00:00+09:00"
+}
