@@ -21,8 +21,8 @@ SOURCES OF TRUTH (obey exactly — numbers not adjectives; ask nothing)
 ==================================================================================================
 1. episodes/_planning/codex_prompt_024_rajaratnam.md   <- MASTER DESIGN DOC. Build to ALL of it.
 2. docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md              <- binding acceptance table, rows 1-16.
-3. episodes/PD-2026-024-rajaratnam/03_script/script.en.v001.md          <- narration ([VO:] only). LOCKED. ~3,776 words.
-4. .../03_script/script.annotated.v001.json            <- 53 spans (SPN-0001..SPN-0053), 6 chapters, claim_ids + visual_intent. annotated estimated 1510.4s (~25.2 min @150 wpm).
+3. episodes/PD-2026-024-rajaratnam/03_script/script.en.v001.md          <- narration ([VO:] only). LOCKED. ~4,835 words.
+4. .../03_script/script.annotated.v001.json            <- 64 spans (SPN-0001..SPN-0064), 6 chapters, claim_ids + visual_intent. annotated estimated 1934.0s (~32.2 min @150 wpm; ~28.0 min at the measured ~173 wpm).
 5. .../01_research/claims.v001.json                    <- 20 claims, R2 wording locks (Section 8 of the master doc). Never contradict.
 6. .../04_scenes/codex_image_prompts.v001.md           <- per-scene image brief (the prompts you generate in Step 1).
 7. .../manifest.json                                   <- state=script_verified, active_revisions all v001, APR-0001 PENDING.
@@ -31,9 +31,9 @@ If two sources conflict: spec v2 wins, then the master design doc, then the stri
 ==================================================================================================
 PRE-FLIGHT (do BEFORE building; if a check fails, STOP and report — do not improvise)
 ==================================================================================================
-[ ] script + annotated exist and are LOCKED (53 spans). Do NOT rewrite a single word.
+[ ] script + annotated exist and are LOCKED (64 spans). Do NOT rewrite a single word.
 [ ] 04_scenes/codex_image_prompts.v001.md exists. If MISSING, STOP and report (it is the per-scene
-    image brief keyed to the 53 spans' visual_intent; do not invent random images).
+    image brief (42 scenes, S001..S042) keyed to the 64 spans' visual_intent; do not invent random images).
 [ ] ElevenLabs API key present and reachable (narration is required; Step 2).
 [ ] remotion.config.ts has canonical values: png intermediate / libx264 -preset slow -crf 16 /
     yuv420p / bt709 / aac 320k / all cores / GPU angle. If not, fix that ONE file first.
@@ -61,7 +61,7 @@ STEP 1 — IMAGES (Codex generation only; SDXL NOT used) — do FIRST, before ed
 STEP 2 — NARRATION (row 2) — PAID, do EXACTLY once
   - ElevenLabs master. VOICE_ID = nPczCjzI2devNBz1zQrb, model eleven_multilingual_v2, stability 0.35,
     similarity_boost 0.80, style 0, speaker_boost on.
-  - Speak ONLY the [VO:] lines, in order (SPN-0001..SPN-0053). Ignore "#" lines; strip every [CLM-xxxx] tag.
+  - Speak ONLY the [VO:] lines, in order (SPN-0001..SPN-0064). Ignore "#" lines; strip every [CLM-xxxx] tag.
   - Idempotency key per chunk; if a chunk exists on disk, DO NOT regenerate (no double billing).
   - HARD BUDGET CAP: $25 for this episode's narration. If you would exceed it, STOP and report.
   - SAPI / Windows / local TTS is FORBIDDEN in the final (EP14 shipped SAPI — never again).
@@ -91,7 +91,7 @@ STEP 5 — FACTORY B-ROLL (row 7) — the establish / "breath" layer
   - WRITE to: remotion/public/rajaratnam/factory/.
 
 STEP 6 — REMOTION ASSEMBLY (rows 8-10) — motion mandatory, NO static
-  - Feed from remotion/src/data/rajaratnam_roughcut.ts (all 53 spans grouped by chapter_id, color per the
+  - Feed from remotion/src/data/rajaratnam_roughcut.ts (all 64 spans grouped by chapter_id, color per the
     register table in master doc Section 2) + rajaratnam_captions.ts (Step 3). Drive through the existing
     premium-from-roughcut composition; register in remotion/src/Root.tsx if needed (id distinct from
     other episodes — avoid name collision). fps per BRAND.video.fps; ~30 min duration.
@@ -105,7 +105,7 @@ STEP 6 — REMOTION ASSEMBLY (rows 8-10) — motion mandatory, NO static
     (Bookends.tsx; AFTER the hook, not frame 0) -> Body Act1 THE EDGE / Act2 THE WHISPER NETWORK /
     Act3 THE WIRE / Act4 THE RECKONING -> Coda -> BrandEndcard at tail. Re-hook every ~2-3 min by cutting
     back to the reel/grey-room/waveform motif.
-  - CTA BEAT ~29:10-29:35 on SPN-0053: dedicated Subscribe+Like animation, PD brand styling, gold
+  - CTA BEAT ~29:10-29:35 on SPN-0064: dedicated Subscribe+Like animation, PD brand styling, gold
     SUBSCRIBE + white LIKE that fills gold on the word "like", spark/Trail, music dips ~3 dB but bed stays
     audible. NO real YouTube logo.
 

@@ -26,33 +26,33 @@
 - **The one human funnel = Raj Rajaratnam.** Every thread routes through him. Co-defendants are nodes that lead back to his telephone; never let a side character take the wheel.
 - **Central question — opened in the first 8s, paid off in the coda:**
   - Opened (SPN-0005, cold open): *"What does it actually take to catch one of them? And what did the people chasing him have to become, to finally make it stick?"*
-  - Paid off (SPN-0051, coda): *"It took the government deciding to treat a billionaire like a gangster. It took a judge's signature granting permission to listen. And in the end, it took the one piece of evidence that even the most powerful man in the room cannot argue with: himself."*
-- **Re-hook every ~2–3 min** at chapter seams and inside long chapters: cut back to the grey room / the turning reel / the waveform motif so the "his own voice catches him" promise stays alive (motif appears SPN-0001, SPN-0004, SPN-0024 visual, SPN-0028, SPN-0035, SPN-0051). Retention engineered to stay flat-to-rising.
-- **The "Like = the system finally caught one"** payoff is earned, not begged: CTA only lands after SPN-0053.
+  - Paid off (SPN-0061, coda): *"It took the government deciding to treat a billionaire like a gangster. It took a judge's signature granting permission to listen. And in the end, it took the one piece of evidence that even the most powerful man in the room cannot argue with: himself."*
+- **Re-hook every ~2–3 min** at chapter seams and inside long chapters: cut back to the grey room / the turning reel / the waveform motif so the "his own voice catches him" promise stays alive (motif appears SPN-0001, SPN-0004, SPN-0041 waveform, SPN-0061 payoff). Retention engineered to stay flat-to-rising.
+- **The "Like = the system finally caught one"** payoff is earned, not begged: CTA only lands after SPN-0064.
 - **Money lines (pulled verbatim from script — protect these beats; let picture breathe under them):**
   1. *"How do you prove a whisper?"* (SPN-0009)
   2. *"The whisper had a waveform."* (SPN-0035)
   3. *"They were hiding in plain sight... protected by one simple and seemingly permanent fact. No one could hear them."* (SPN-0027)
   4. *"This was never the story of a single bad apple. It was the story of an orchard."* (SPN-0046)
-  5. *"...the one piece of evidence that even the most powerful man in the room cannot argue with: himself."* (SPN-0051)
+  5. *"...the one piece of evidence that even the most powerful man in the room cannot argue with: himself."* (SPN-0061)
 
 ## 2. STRUCTURE & RUNTIME
-Source: script.en.v001.md (narration master, [VO:] only) + script.annotated.v001.json (53 spans, SPN-0001..SPN-0053, 6 chapters).
+Source: script.en.v001.md (narration master, [VO:] only) + script.annotated.v001.json (64 spans, SPN-0001..SPN-0064, 6 chapters).
 
 | Block | Chapter id | Title | Script timecode | Spans | Register / color |
 |---|---|---|---|---|---|
 | HOOK (~0:00–0:08) | cold_open | flash-forward | inside 0:00–1:40 | first beat of SPN-0001 | grey, near silence, single reel turning |
-| COLD OPEN | cold_open | (tease) | 0:00–1:40 | SPN-0001..0005 | grey + a thread of electric blue |
+| COLD OPEN | cold_open | (tease) | 0:00–1:40 | SPN-0001..0006 | grey + a thread of electric blue |
 | OPENING (BrandOpening) | — | brand title | lands AFTER the 8s hook | — | gold sunrise + PD monogram |
-| ACT 1 | the_edge | **THE EDGE** | 1:40–9:30 | SPN-0006..0017 | gold, warm, seductive (M1 rising, confident) |
-| ACT 2 | the_whisper | **THE WHISPER NETWORK** | 9:30–16:30 | SPN-0018..0028 | warm interiors turning clinical (M2 intimate + cold thread) |
-| ACT 3 | the_wire | **THE WIRE** | 16:30–23:30 | SPN-0029..0039 | cold blue surveillance (M3 low, patient, mechanical pulse) |
-| ACT 4 | the_reckoning | **THE RECKONING** | 23:30–28:30 | SPN-0040..0049 | flat courtroom daylight (M4 spare, building to one resolved chord at the verdict) |
-| ENDING + CTA | coda | resolution & CTA | 28:30–30:00 | SPN-0050..0053 | dusk cooling to blue (M5 = M1 theme returned, quieter) |
+| ACT 1 | the_edge | **THE EDGE** | 1:40–9:30 | SPN-0007..0020 | gold, warm, seductive (M1 rising, confident) |
+| ACT 2 | the_whisper | **THE WHISPER NETWORK** | 9:30–16:30 | SPN-0021..0033 | warm interiors turning clinical (M2 intimate + cold thread) |
+| ACT 3 | the_wire | **THE WIRE** | 16:30–23:30 | SPN-0034..0047 | cold blue surveillance (M3 low, patient, mechanical pulse) |
+| ACT 4 | the_reckoning | **THE RECKONING** | 23:30–28:30 | SPN-0048..0059 | flat courtroom daylight (M4 spare, building to one resolved chord at the verdict) |
+| ENDING + CTA | coda | resolution & CTA | 28:30–30:00 | SPN-0060..0064 | dusk cooling to blue (M5 = M1 theme returned, quieter) |
 
-- **HOOK** = the first ~8s of SPN-0001 (the grey room, the thumb on PLAY) cut fast, THEN the gold **BrandOpening** lands (not at frame 0). **BrandEndcard** at tail under/after SPN-0053.
-- **Dedicated Subscribe+Like CTA beat ~29:10–29:35** sits on SPN-0053 ("...subscribe to the channel, and hit the like button below..."). PD brand styling, NO real YouTube logo.
-- **Narration length:** ~3,776 words. annotated `estimated_duration_seconds = 1510.4` (~25.2 min @150 wpm). Authoritative bands from manifest: **narration 24.0–32.4 min; finished runtime 27–33 min.** The edit (factory layer, transitions, breaths, hook + endcard) carries the finished cut into the 27–33 band; do NOT pad with dead air.
+- **HOOK** = the first ~8s of SPN-0001 (the grey room, the thumb on PLAY) cut fast, THEN the gold **BrandOpening** lands (not at frame 0). **BrandEndcard** at tail under/after SPN-0064.
+- **Dedicated Subscribe+Like CTA beat ~29:10–29:35** sits on SPN-0064 ("...subscribe to the channel, and hit the like button below..."). PD brand styling, NO real YouTube logo.
+- **Narration length:** ~4,835 words (expanded v001). annotated `estimated_duration_seconds = 1934.0` (~32.2 min @150 wpm; ~28.0 min at the measured ~173 wpm). Authoritative bands from manifest: **narration 24.0–32.4 min; finished runtime 27–33 min.** The edit (factory layer, transitions, breaths, hook + endcard) carries the finished cut into the 27–33 band; do NOT pad with dead air.
 - **OP/ED canonical = `remotion/src/components/Bookends.tsx`** (`OPENING_SEC = 3.5`, `ENDCARD_SEC = 9`). **DO NOT FORK IT.** Drive EP24 through the existing premium-from-roughcut composition (register in `remotion/src/Root.tsx` if needed).
 
 ## 3. VOICE & MUSIC (numbers)
@@ -67,7 +67,7 @@ Source: script.en.v001.md (narration master, [VO:] only) + script.annotated.v001
 - **Position: lower 10–15% (bottom-safe). NEVER centered or high.** Brand font, drop-shadow. **Coverage ≥95%** of runtime.
 
 ## 5. IMAGES — Codex generation only (SDXL NOT used this episode)
-- **Generate every numbered MEGA-PROMPT in `episodes/PD-2026-024-rajaratnam/04_scenes/codex_image_prompts.v001.md`** (the per-scene image brief). NOTE: at handoff time that file may not yet be written — it is the authoritative per-scene image brief keyed to the 53 spans' `visual_intent`. If it is missing, STOP and report (do not invent random images); do not start the edit without it.
+- **Generate every numbered MEGA-PROMPT in `episodes/PD-2026-024-rajaratnam/04_scenes/codex_image_prompts.v001.md`** (the per-scene image brief). NOTE: at handoff time that file may not yet be written — it is the authoritative per-scene image brief (42 scenes, S001..S042) keyed to the 64 spans' `visual_intent`. If it is missing, STOP and report (do not invent random images); do not start the edit without it.
 - **ONE masterpiece prompt per scene → exactly 1 image per prompt.** Regenerate ONLY failures (a still that violates a hard rule below). No bulk variant farming.
 - **Output:** 16:9, **long edge ≥ 3840 px**.
 - **Brand palette:** black / midnight-navy base + **electric-blue `#1F6BFF`** + **gold `#E5B53A`** + silver.
