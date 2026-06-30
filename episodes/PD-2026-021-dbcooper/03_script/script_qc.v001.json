@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-021-dbcooper",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 4445,
+    "est_duration_minutes_at_150wpm": 29.6,
+    "est_duration_minutes_at_173wpm_actual_voice": 25.7,
+    "target_profile": "mid (30:00; narration band 24.0-32.4 @150wpm)",
+    "claim_link_consistency": "pass",
+    "risk_class": "R2"
+  },
+  "status": "pass",
+  "findings": [
+    "R2 wording locks: UNSOLVED; FBI never confirmed any suspect; never assert anyone 'was D.B. Cooper'; never accuse a living person; suspects proposed by third parties.",
+    "De-AI voice: em-dash ~3.8/1k, varied openings, no rigid both-sides frames.",
+    "Durable source content hashes PENDING (FBI bot-protected); non-blocking, capture before publish.",
+    "Before broadcast: confirm any named suspect's living/deceased status; lock verbatim FBI quotes."
+  ]
+}
