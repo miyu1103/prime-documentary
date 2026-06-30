@@ -1,0 +1,154 @@
+TASK: Build Prime Documentary EP22 (Michael Milken — Genius, or the Face of Greed?) into a FINISHED,
+GATE-ACCEPTED final video, fully autonomously. Run the entire right-process to completion WITHOUT pausing for
+approval. Stop ONLY when the independent acceptance gate passes (accepted final.mp4 + thumbnails), or at a genuine
+blocker you cannot fix after real attempts. Generate the 74 images, then assemble the film.
+
+REPO: C:\Users\aab15\Documents\prime-documentary
+EPISODE: PD-2026-022-milken   |   PROFILE: mid, target 30:00 (runtime band 27-33)   |   RISK: R3 (LIVING + PARDONED)
+
+==================================================================================================
+THE ONE RULE (this is how we stop the endless rework — read it twice)
+==================================================================================================
+"Done" is NOT your opinion. "Done" = this command exits 0 with every gate satisfied:
+    ./.venv/Scripts/python.exe scripts/check_final_acceptance.py 22 --json
+You MUST run it, read the JSON, and if ANY gate fails or warns, FIX the cause and RUN IT AGAIN.
+Loop build -> measure -> fix -> re-measure until it exits 0. Do NOT ask for approval between loops.
+Do NOT declare success until the real file passes. Self-reported "looks good" is rejected.
+A row the script lists as manual, you MUST measure yourself against the stated number and record it.
+
+==================================================================================================
+PRE-FLIGHT (do this BEFORE building anything; if a check fails, STOP and report — do not improvise)
+==================================================================================================
+[ ] script + annotated exist and are LOCKED: episodes/PD-2026-022-milken/03_script/script.en.v001.md
+    and script.annotated.v001.json (71 spans). Do NOT rewrite a single word.
+[ ] validate_episode.py 22 prints RESULT: PASS (it does). Do not regress it.
+[ ] generate all 74 stills per 04_scenes/codex_image_prompts.v001.md to
+    H:\pd-media\episodes\PD-2026-022-milken\05_visuals\selected\EP22-IMG-001.png … EP22-IMG-074.png .
+    If any are missing/failed, list which and regenerate ONLY those (do not substitute random images).
+[ ] ElevenLabs API key present and reachable (narration is required; see step A).
+[ ] remotion.config.ts has the canonical values (png / libx264 -crf 16 / yuv420p / bt709 / aac 320k /
+    all cores / angle). If not, fix that ONE file first.
+[ ] OP/ED component exists: remotion/src/components/Bookends.tsx (do NOT fork it).
+[ ] check_final_acceptance.py runs for episode 22 (even if it fails — confirm it executes).
+
+==================================================================================================
+SOURCES OF TRUTH — obey exactly, numbers not adjectives (do not improvise, do not reinterpret)
+==================================================================================================
+1. episodes/_planning/codex_prompt_ep22.md            <- master design doc. Build to all of it.
+2. docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md             <- binding acceptance table, rows 1-16.
+3. episodes/PD-2026-022-milken/03_script/script.en.v001.md   <- narration ([VO:] only) + "# [PRODUCTION ...]" notes. LOCKED.
+4. .../03_script/script.annotated.v001.json           <- 71 spans, each with claim_ids + visual_intent.
+5. .../01_research/claims.v001.json                   <- R3 wording locks (below). Never contradict.
+6. .../04_scenes/codex_image_prompts.v001.md          <- the 74 stills to generate (ONE per prompt).
+If two sources seem to conflict: spec v2 wins, then the master design doc; then pick the stricter reading
+and note it in the final report. Ask NOTHING.
+
+==================================================================================================
+PIPELINE (run in order; every step has an exact spec — hit the number)
+==================================================================================================
+A. NARRATION (row 2) — PAID, do exactly once:
+   - ElevenLabs master. VOICE_ID = nPczCjzI2devNBz1zQrb, model eleven_multilingual_v2, stability 0.35,
+     similarity_boost 0.80, style 0, speaker_boost on.
+   - Speak ONLY the [VO:] lines, in order. Ignore "#" lines and strip every "[CLM-xxxx]" tag.
+   - Idempotency key per chunk; if a chunk already exists on disk, DO NOT regenerate it (no double billing).
+   - HARD BUDGET CAP: $25 total for this episode's narration. If you would exceed it, STOP and report.
+   - SAPI/Windows/local TTS is FORBIDDEN in the final. (EP14 shipped SAPI — never again.)
+B. CAPTIONS (rows 3-4): force-align to the RENDERED ElevenLabs audio (verbatim, not pasted from script).
+   1 cue = 1 breath group. <=2 lines, <=42 chars/line, 1.0-6.0s, <=17 cps, >=2-frame gaps. Brand font,
+   bottom-safe (lower 10-15%), drop-shadow. Coverage >=95% of runtime.
+C. MUSIC/BGM (row 1): continuous library bed (Suno reuse), one track per chapter (8-category set). Duck under VO
+   to a FLOOR of ~ -22 LUFS — the bed MUST stay audible under narration; NEVER duck to silence. No silent stretch
+   > 25s. Final integrated loudness -16..-12 LUFS.
+D. MOTION/EDIT (row 8): NO static image; NO frame held > 2s; NO naked hard cut. Every still: Ken Burns >= 6% zoom
+   or parallax; hero beats (hook montage, tower of money, the 98->6 collapse, the pardon) get SVD/organic motion +
+   ink/particle overlays. Transitions DESIGNED: 0.3-0.5s crossfade/dissolve; OVERLAP Sequences by the transition
+   length (no 1-frame black/jump); carry motion direction THROUGH the cut (no "kaku" velocity reset); Trail motion
+   blur on fast moves. Fast pace: average shot <= ~6s.
+E. ABUNDANT MATERIAL (row 7): use the factory shelf densely — >= 1 distinct factory clip per ~25-30s; every span
+   >= 1 layer; factory layer across >=40% of the timeline; no single clip reused > 3x.
+   scripts/select_factory_assets.py --theme finance/legal/crime (trading floors, courthouses, money, vaults,
+   1980s textures; clinical/lab footage for Act 4).
+F. STRUCTURE/OP-ED (rows 9-10): Hook ~0:08 montage (EP22-IMG-001..006) -> Opening (The Two-Sided Man) -> Body
+   (Act 1 The Idea / Act 2 The Empire / Act 3 The Fall / Act 4 The Reckoning & the Forgiveness) -> Ending (Your
+   Verdict), per the script timecodes. Gold BrandOpening AFTER the hook; BrandEndcard at tail. OP/ED canonical =
+   remotion/src/components/Bookends.tsx (OPENING_SEC 3.5 / ENDCARD_SEC 9; DO NOT fork). Drive EP22 through
+   CasePremiumFromRoughCut (register in remotion/src/Root.tsx if needed).
+G. CTA BEAT (~29:10-29:35): build the dedicated Subscribe+Like animation EXACTLY to the "# [PRODUCTION - DEDICATED
+   CTA BEAT ...]" note (gold SUBSCRIBE pill spring d14/s120 0.45s; gold underline wipe Easing.out(cubic) 0.5s;
+   white LIKE thumb pop spring d10/s140, FILLS gold on the word "like" with 6% pulse + spark/Trail; navy vignette;
+   hold ~5s; ease out 0.4s; soft click SFX on fill; music dips ~3 dB but bed stays audible). Backdrop EP22-IMG-074.
+   NO real YouTube logo. PD brand styling.
+H. RENDER (row 6): driven by remotion.config.ts canonical values (png intermediate / libx264 -preset slow -crf 16 /
+   yuv420p / bt709 / aac 320k / all cores / GPU angle). 1920x1080 (4K master if source allows). NEVER NVENC.
+   Per-chapter render -> concat. Output to H:\pd-media\episodes\PD-2026-022-milken\08_edit\ .
+I. THUMBNAILS (rows 11-13): render >= 3 variants as Remotion <Still> at 1280x720, backgrounds from the image
+   library (split gold/blue figure / X-shaped desk / tower of money / pardon parchment beside the locked padlock —
+   NO face, NO real logo/seal). "Loud": UPPERCASE headline <= 3-4 words, huge subject, very high contrast
+   black/navy + gold #E5B53A or electric #1F6BFF accent, white/silver text, legible at 320px. Title <= 60 chars;
+   A/B title x thumb. Headline ideas: "GENIUS OR GREED?" / "$550 MILLION. ONE YEAR." / "PARDONED, NOT CLEARED" /
+   "98 CHARGES. 6 PLEAS." Pick a selected; DO NOT upload it.
+
+==================================================================================================
+R3 WORDING LOCKS — must hold in EVERY caption / on-screen text / thumbnail (legal; living + pardoned)
+==================================================================================================
+- "PLEADED GUILTY", never "convicted at trial" — he did NOT go to trial.
+- He pleaded guilty to SIX felony counts. NEVER "convicted of insider trading" and NEVER "convicted of
+  racketeering/RICO." No standalone insider-trading or RICO conviction.
+- Distinguish CHARGED (98-count indictment, 1989, incl. RICO) from PLEADED (6 counts, 1990). RICO + 92 dropped.
+  Charges are accusations, not findings.
+- "~$600 million" = $200M fine + $400M restitution fund (1990). Sentenced to 10 years, reduced; served ~2 years.
+- SEC LIFETIME industry BAN remains and was NOT lifted by the pardon.
+- The Feb 18, 2020 PARDON is clemency, NOT innocence/exoneration; the guilty plea STANDS. (Do not repeat the
+  White House "pleaded guilty in 1989" date; the plea was April 1990.)
+- The genius-vs-greed framing is ATTRIBUTED ("critics argue / defenders argue") — never settled fact.
+- Visuals: NO real-person likeness of anyone, NO real logos/seals, NO authentic-looking records, NO readable text.
+
+==================================================================================================
+HARD GATES — the run is not finished until ALL pass (measured on the real file)
+==================================================================================================
+Run: ./.venv/Scripts/python.exe scripts/check_final_acceptance.py 22 --json   -> must exit 0.
+Also confirm with your own measurement, and FIX + re-run on any miss:
+ [ ] runtime in band 27-33 min (also scripts/check_runtime_band.py on the render)
+ [ ] narration provider contains "eleven" (never sapi/local)
+ [ ] captions coverage >=95%, breath-group, <=17cps, 0 format violations, R3 locks intact
+ [ ] BGM present, no silent stretch >25s, audible floor under VO
+ [ ] loudness -16..-12 LUFS
+ [ ] motion: 0 static spans, 0 freeze >2s, transitions present (no naked hard cut) — check_dynamics.py
+ [ ] images all long-edge >=3840, 0 face/real-logo/real-seal/text/real-artwork violations
+ [ ] factory density >= runtime/30s, factory layer >=40% of timeline
+ [ ] structure: hook(~8s)/opening/body/ending present + CTA in last 30s
+ [ ] OP after hook, ED at tail
+ [ ] >=3 thumbnails @1280x720 + selected
+ [ ] 0 black frames
+
+==================================================================================================
+COMMON FAILURE MODES — explicitly BANNED (the exact things that caused past rework)
+==================================================================================================
+- Shipping with SAPI/robot voice instead of ElevenLabs.        - Missing or pasted-from-script captions (must be force-aligned).
+- BGM that drops to silence under narration.                   - Static images / a frame held still / naked hard cuts ("kaku").
+- Short runtime (narration only, no real edit) below the band. - Black frames / dead air.
+- A thumbnail or caption that says "convicted", "insider trading conviction", or "RICO conviction".
+- Implying the pardon = innocence, or that the SEC ban was lifted. - Stating genius-vs-greed as settled fact.
+- Any real-person face/likeness, real logo/seal, or readable real document in an image.
+- Declaring "done" without the gate exit 0.
+
+==================================================================================================
+DO NOT (hard stops)
+==================================================================================================
+- Do NOT upload, publish, set a thumbnail live, or change privacy/visibility. Build to a finished file and STOP.
+- Do NOT run the pre-publish review yourself or mark it done — that + publish remain owner gates (R3 legal review first).
+- Do NOT use NVENC. Do NOT overwrite any already-published mp4. Do NOT exceed the $25 narration cap.
+- Do NOT rewrite the script/claims, invent facts, or contradict the R3 wording locks. Do NOT use any real-person
+  face/likeness, real logo/seal, or authentic-looking record.
+
+==================================================================================================
+WHEN THE GATE PASSES — finish like this, then STOP
+==================================================================================================
+- Leave: the accepted final.mp4 (H:\...\08_edit\), captions .srt, >=3 thumbnails @1280x720 (selected marked),
+  and a render/QC log. Register every used asset in the rights manifest (origin, license, AI-disclosure; no likeness).
+- Write a SELF-AUDIT REPORT mapping EACH gate above -> the measured value (e.g. "runtime 29.6 min OK",
+  "loudness -13.1 LUFS OK", "captions 96% coverage OK", "0 black frames OK", "0 likeness/logo/text violations OK").
+- Update manifest.json state to edit_review (NOT published), append events, commit ONLY EP22's own files.
+- Then STOP and tell me it's ready for the owner gate (R3 pre-publish: confirm living status + lock verbatim
+  White House/court/SEC quotes; then title/thumbnail; then publish). Keep looping build->measure->fix until
+  check_final_acceptance.py 22 exits 0. Hand me a file that already passes every gate, not a "first cut for review".
