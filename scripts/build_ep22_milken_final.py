@@ -26,7 +26,7 @@ from pathlib import Path
 from typing import Any
 
 import numpy as np
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageEnhance, ImageFont, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -414,26 +414,77 @@ def srt_ts(t: float) -> str:
     return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
 
 
+BAD_LINE_END = {
+    "a",
+    "an",
+    "the",
+    "of",
+    "to",
+    "in",
+    "on",
+    "for",
+    "with",
+    "by",
+    "from",
+    "as",
+    "at",
+    "into",
+    "over",
+    "under",
+    "and",
+    "or",
+    "but",
+}
+BAD_LINE_START = BAD_LINE_END | {"that", "which", "who", "when", "where"}
+CAPTION_LINE_TARGET = 40
+CAPTION_LINE_MAX = 46
+CAPTION_GROUP_TARGET = 66
+CAPTION_GROUP_MAX = 78
+
+
+def _plain_word(word: str) -> str:
+    return re.sub(r"^[^A-Za-z0-9$]+|[^A-Za-z0-9$]+$", "", word).lower()
+
+
+def _caption_text(words: list[str]) -> str:
+    return " ".join(words)
+
+
+def _line_cut_score(words: list[str], cut: int, midpoint: int) -> float:
+    left = _caption_text(words[:cut])
+    right = _caption_text(words[cut:])
+    if len(left) > CAPTION_LINE_MAX or len(right) > CAPTION_LINE_MAX:
+        return 10_000
+    score = abs(len(left) - midpoint) + abs(len(right) - midpoint) * 0.6
+    prev_word = _plain_word(words[cut - 1])
+    next_word = _plain_word(words[cut])
+    if prev_word in BAD_LINE_END:
+        score += 900
+    if next_word in BAD_LINE_START:
+        score += 900
+    if re.search(r"[,;:]([\"”’')\]]*)$", words[cut - 1]):
+        score -= 12
+    return score
+
+
 def wrap_caption(words: list[str]) -> str:
-    lines: list[str] = []
-    cur: list[str] = []
-    for word in words:
-        trial = " ".join(cur + [word])
-        if cur and len(trial) > 42:
-            lines.append(" ".join(cur))
-            cur = [word]
-        else:
-            cur.append(word)
-    if cur:
-        lines.append(" ".join(cur))
-    if len(lines) <= 2:
-        return "\n".join(lines)
-    # Rebalance into two lines.
-    joined = " ".join(words)
-    midpoint = len(joined) // 2
-    spaces = [m.start() for m in re.finditer(" ", joined)]
-    cut = min(spaces, key=lambda x: abs(x - midpoint)) if spaces else midpoint
-    return joined[:cut].strip() + "\n" + joined[cut:].strip()
+    joined = _caption_text(words)
+    if len(joined) <= CAPTION_LINE_MAX:
+        return joined
+    candidates = [
+        cut
+        for cut in range(1, len(words))
+        if len(_caption_text(words[:cut])) <= CAPTION_LINE_MAX
+        and len(_caption_text(words[cut:])) <= CAPTION_LINE_MAX
+    ]
+    if not candidates:
+        midpoint = len(joined) // 2
+        spaces = [m.start() for m in re.finditer(" ", joined)]
+        cut_pos = min(spaces, key=lambda x: abs(x - midpoint)) if spaces else midpoint
+        return joined[:cut_pos].strip() + "\n" + joined[cut_pos:].strip()
+    midpoint = max(1, len(joined) // 2)
+    cut = min(candidates, key=lambda n: _line_cut_score(words, n, midpoint))
+    return _caption_text(words[:cut]) + "\n" + _caption_text(words[cut:])
 
 
 def split_caption_text(text: str) -> list[str]:
@@ -442,17 +493,28 @@ def split_caption_text(text: str) -> list[str]:
     cur: list[str] = []
     for word in words:
         trial = " ".join(cur + [word])
-        hard_long = cur and len(trial) > 72
-        soft_long = cur and len(trial) > 52 and re.search(r"[,;:]$", cur[-1])
+        hard_long = cur and len(trial) > CAPTION_GROUP_MAX
+        soft_long = cur and len(trial) > CAPTION_GROUP_TARGET and re.search(r"[,;:]([\"”’')\]]*)$", cur[-1])
         if hard_long or soft_long:
-            groups.append(cur)
-            cur = []
+            if _plain_word(cur[-1]) in BAD_LINE_END and len(cur) > 1:
+                moved = cur.pop()
+                groups.append(cur)
+                cur = [moved]
+            else:
+                groups.append(cur)
+                cur = []
+        if not cur and _plain_word(word) in BAD_LINE_START and groups:
+            groups[-1].append(word)
+            continue
+        if hard_long or soft_long:
+            cur.append(word)
+            continue
         cur.append(word)
         phrase = " ".join(cur)
-        strong_stop = re.search(r"[.?!]([\"”’')\]]*)$", word) and len(phrase) >= 18
-        medium_stop = re.search(r"[,;:]([\"”’')\]]*)$", word) and len(phrase) >= 34
-        dash_stop = word.endswith("—") and len(phrase) >= 24
-        if strong_stop or medium_stop or dash_stop or len(phrase) >= 76:
+        strong_stop = re.search(r"[.?!]([\"”’')\]]*)$", word) and len(phrase) >= 22
+        medium_stop = re.search(r"[,;:]([\"”’')\]]*)$", word) and len(phrase) >= 42
+        dash_stop = word.endswith("—") and len(phrase) >= 28
+        if strong_stop or medium_stop or dash_stop or len(phrase) >= CAPTION_GROUP_MAX:
             groups.append(cur)
             cur = []
     if cur:
@@ -484,7 +546,7 @@ def merge_short_caption_groups(parts: list[str], available: float) -> list[str]:
         for lo, hi in candidates:
             merged_words = (groups[lo].replace("\n", " ") + " " + groups[hi].replace("\n", " ")).split()
             wrapped = wrap_caption(merged_words)
-            if max(map(len, wrapped.split("\n"))) <= 42:
+            if max(map(len, wrapped.split("\n"))) <= CAPTION_LINE_MAX:
                 merged = wrapped
                 merge_span = (lo, hi)
                 break
@@ -754,21 +816,18 @@ def bookend_background(progress: float, ending: bool) -> Image.Image:
         else:
             bg = Image.new("RGB", (W, H), (3, 8, 16))
         bg = ImageOps.fit(bg, (W, H), method=Image.Resampling.LANCZOS, centering=(0.5, 0.46 if not ending else 0.44))
-        bg = ImageEnhance.Brightness(bg).enhance(0.58)
-        bg = ImageEnhance.Contrast(bg).enhance(1.16)
-        bg = ImageEnhance.Color(bg).enhance(0.94)
+        bg = ImageEnhance.Brightness(bg).enhance(0.72)
+        bg = ImageEnhance.Contrast(bg).enhance(1.10)
+        bg = ImageEnhance.Color(bg).enhance(0.82)
         _BOOKEND_BG_CACHE = bg
     img = _BOOKEND_BG_CACHE.copy().convert("RGBA")
     d = ImageDraw.Draw(img, "RGBA")
-    d.rectangle((0, 0, W, H), fill=(3, 8, 16, 145 if not ending else 180))
-    bloom_y = int(H * (0.70 if not ending else 0.66))
-    bloom_w = int(860 + 140 * math.sin(progress * math.pi))
-    bloom_h = 270
-    bloom = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    bd = ImageDraw.Draw(bloom, "RGBA")
-    bd.ellipse((W // 2 - bloom_w, bloom_y - bloom_h, W // 2 + bloom_w, bloom_y + bloom_h), fill=(229, 181, 58, 62))
-    bloom = bloom.filter(ImageFilter.GaussianBlur(46))
-    img.alpha_composite(bloom)
+    if ending:
+        d.rectangle((0, 0, W, H), fill=(20, 42, 72, 255))
+        d.rectangle((0, int(H * 0.58), W, H), fill=(26, 52, 86, 170))
+    else:
+        d.rectangle((0, 0, W, H), fill=(8, 18, 34, 86))
+        d.rectangle((0, int(H * 0.62), W, H), fill=(14, 26, 48, 52))
     return img
 
 
@@ -790,7 +849,7 @@ def draw_gold_particles(d: ImageDraw.ImageDraw, seed: int, progress: float, coun
         x = int(base_x + math.sin(progress * math.tau + i) * 22)
         y = int(base_y - drift)
         r = rng.randint(2, 5)
-        alpha = int(70 + 130 * (0.5 + 0.5 * math.sin(progress * math.tau + i * 0.7)))
+        alpha = int(20 + 45 * (0.5 + 0.5 * math.sin(progress * math.tau + i * 0.7)))
         d.ellipse((x - r, y - r, x + r, y + r), fill=(229, 181, 58, alpha))
 
 
@@ -811,20 +870,7 @@ def draw_bookends(frame: np.ndarray, t: float, total: float) -> np.ndarray:
     alpha = max(0.0, min(fade_in, fade_out))
     img = bookend_background(p, ending)
     d = ImageDraw.Draw(img, "RGBA")
-    draw_gold_particles(d, 1901 if opening else 1902, p, 26 if opening else 24)
-    streak_x = int((-0.25 + p * 1.6) * W)
-    streak = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    sd = ImageDraw.Draw(streak, "RGBA")
-    sd.polygon(
-        [
-            (streak_x - 520, int(H * (0.48 if ending else 0.55))),
-            (streak_x + 290, int(H * (0.37 if ending else 0.44))),
-            (streak_x + 360, int(H * (0.45 if ending else 0.52))),
-            (streak_x - 450, int(H * (0.57 if ending else 0.64))),
-        ],
-        fill=(245, 247, 250, int(22 * math.sin(min(1, p * 2) * math.pi))),
-    )
-    img.alpha_composite(streak)
+    draw_gold_particles(d, 1901 if opening else 1902, p, 10 if opening else 8)
     rule_p = min(1.0, max(0.0, (p - 0.22) / 0.26))
     logo_s = 0.72 + 0.28 * min(1.0, max(0.0, (p - 0.04) / 0.22))
     logo_size = int((120 if opening else 150) * logo_s)
@@ -909,9 +955,6 @@ def render_silent_video(paths: list[Path], total: float) -> None:
                     q = (local - (shot_len - transition)) / transition
                     nxt = crop_motion(cache.get(base_idx + 1), t, shot + 1, 0.0, shot_len)
                     cur = (cur.astype(np.float32) * (1 - q) + nxt.astype(np.float32) * q).astype(np.uint8)
-            # Moving light streaks prevent accidental frozen-frame detection.
-            x = int((t * 120 + (shot if t >= 8 else 0) * 19) % (W + 360)) - 180
-            cur[:, max(0, x) : min(W, x + 7), :] = np.maximum(cur[:, max(0, x) : min(W, x + 7), :], np.array([160, 125, 45], dtype=np.uint8))
             cur = draw_cta(cur, t, total)
             cur = draw_bookends(cur, t, total)
             proc.stdin.write(cur.tobytes())
@@ -930,8 +973,8 @@ def burn_and_mux(total: float) -> None:
     srt = str(CAPTIONS_SRT.resolve()).replace("\\", "/").replace(":", "\\:")
     vf = (
         f"subtitles='{srt}':force_style="
-        "'FontName=Arial,FontSize=30,PrimaryColour=&H00F5F7FA,OutlineColour=&H00000000,"
-        "BorderStyle=3,BackColour=&HAA000000,Outline=2,Shadow=1,MarginV=18,Alignment=2'"
+        "'FontName=Arial,FontSize=17,PrimaryColour=&H00F5F7FA,OutlineColour=&H00202020,"
+        "BorderStyle=1,BackColour=&H00000000,Outline=0.9,Shadow=0.4,MarginV=56,Alignment=2'"
     )
     FINAL_MP4.parent.mkdir(parents=True, exist_ok=True)
     run(
