@@ -78,6 +78,34 @@ HERO_IMAGE_COUNT = 46
 BASE_PAUSE_SECONDS = 4.85
 CHAPTER_PAUSE_SECONDS = 5.60
 CHAPTER_BREAK_AFTER_INDICES = {0, 8, 22, 39, 52, 59}
+CAPTION_MAX_LINE_CHARS = 42
+CAPTION_TARGET_LINE_CHARS = 34
+CAPTION_MAX_GROUP_CHARS = 82
+CAPTION_BAD_LINE_STARTS = {
+    "and",
+    "or",
+    "but",
+    "because",
+    "while",
+    "with",
+    "without",
+    "to",
+    "of",
+    "in",
+    "on",
+    "at",
+    "by",
+    "for",
+    "from",
+    "into",
+    "over",
+    "under",
+    "through",
+    "that",
+    "which",
+    "who",
+}
+CAPTION_BAD_LINE_ENDS = CAPTION_BAD_LINE_STARTS | {"a", "an", "the"}
 
 
 def now() -> str:
@@ -417,12 +445,92 @@ def srt_ts(t: float) -> str:
     return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
 
 
+def caption_word_key(word: str) -> str:
+    return re.sub(r"[^A-Za-z0-9']+", "", word).lower()
+
+
+def can_wrap_caption_words(words: list[str]) -> bool:
+    joined = " ".join(words)
+    if len(joined) <= CAPTION_MAX_LINE_CHARS:
+        return True
+    return any(
+        len(" ".join(words[:i])) <= CAPTION_MAX_LINE_CHARS
+        and len(" ".join(words[i:])) <= CAPTION_MAX_LINE_CHARS
+        for i in range(1, len(words))
+    )
+
+
+def caption_text_len(words: list[str]) -> int:
+    return len(" ".join(words))
+
+
+def rebalance_caption_groups(groups: list[list[str]]) -> list[list[str]]:
+    balanced = [g[:] for g in groups if g]
+    for i in range(len(balanced) - 1):
+        end_key = caption_word_key(balanced[i][-1])
+        if end_key not in CAPTION_BAD_LINE_ENDS and end_key != "one":
+            continue
+        best: tuple[float, list[str], list[str]] | None = None
+        start_k = max(1, len(balanced[i]) - 9)
+        for k in range(start_k, len(balanced[i])):
+            left = balanced[i][:k]
+            moved_tail = balanced[i][k:]
+            right = moved_tail + balanced[i + 1]
+            if caption_text_len(left) < 24 or caption_text_len(right) < 18:
+                continue
+            if caption_text_len(left) > CAPTION_MAX_GROUP_CHARS or caption_text_len(right) > CAPTION_MAX_GROUP_CHARS:
+                continue
+            if not can_wrap_caption_words(left) or not can_wrap_caption_words(right):
+                continue
+            left_end = caption_word_key(left[-1])
+            right_start = caption_word_key(right[0])
+            if left_end in CAPTION_BAD_LINE_ENDS or left_end == "one":
+                continue
+            score = abs(caption_text_len(left) - caption_text_len(right))
+            score += abs(len(moved_tail) - 5) * 4
+            if right_start in CAPTION_BAD_LINE_STARTS:
+                score += 12
+            candidate = (score, left, right)
+            if best is None or candidate[0] < best[0]:
+                best = candidate
+        if best is not None:
+            _, balanced[i], balanced[i + 1] = best
+    return balanced
+
+
 def wrap_caption(words: list[str]) -> str:
+    joined = " ".join(words)
+    if len(joined) <= CAPTION_MAX_LINE_CHARS:
+        return joined
+    candidates: list[tuple[float, str, str]] = []
+    for i in range(1, len(words)):
+        left = " ".join(words[:i])
+        right = " ".join(words[i:])
+        if len(left) > CAPTION_MAX_LINE_CHARS or len(right) > CAPTION_MAX_LINE_CHARS:
+            continue
+        left_key = caption_word_key(words[i - 1])
+        right_key = caption_word_key(words[i])
+        score = abs(len(left) - len(right)) * 1.4
+        score += abs(len(left) - CAPTION_TARGET_LINE_CHARS) * 0.25
+        score += abs(len(right) - CAPTION_TARGET_LINE_CHARS) * 0.25
+        if left_key in CAPTION_BAD_LINE_ENDS:
+            score += 8
+        if right_key in CAPTION_BAD_LINE_STARTS:
+            score += 12
+        if len(left) < 16 or len(right) < 16:
+            score += 10
+        if re.search(r"[,;:]$", words[i - 1]):
+            score -= 3
+        candidates.append((score, left, right))
+    if candidates:
+        _, left, right = min(candidates, key=lambda item: item[0])
+        return left + "\n" + right
+
     lines: list[str] = []
     cur: list[str] = []
     for word in words:
         trial = " ".join(cur + [word])
-        if cur and len(trial) > 42:
+        if cur and len(trial) > CAPTION_MAX_LINE_CHARS:
             lines.append(" ".join(cur))
             cur = [word]
         else:
@@ -431,12 +539,7 @@ def wrap_caption(words: list[str]) -> str:
         lines.append(" ".join(cur))
     if len(lines) <= 2:
         return "\n".join(lines)
-    # Rebalance into two lines.
-    joined = " ".join(words)
-    midpoint = len(joined) // 2
-    spaces = [m.start() for m in re.finditer(" ", joined)]
-    cut = min(spaces, key=lambda x: abs(x - midpoint)) if spaces else midpoint
-    return joined[:cut].strip() + "\n" + joined[cut:].strip()
+    raise RuntimeError(f"caption group cannot fit in two lines: {' '.join(words)}")
 
 
 def split_caption_text(text: str) -> list[str]:
@@ -444,23 +547,24 @@ def split_caption_text(text: str) -> list[str]:
     groups: list[list[str]] = []
     cur: list[str] = []
     for word in words:
-        trial = " ".join(cur + [word])
-        hard_long = cur and len(trial) > 72
-        soft_long = cur and len(trial) > 52 and re.search(r"[,;:]$", cur[-1])
+        candidate = cur + [word]
+        trial = " ".join(candidate)
+        hard_long = cur and (len(trial) > CAPTION_MAX_GROUP_CHARS or not can_wrap_caption_words(candidate))
+        soft_long = cur and len(trial) > 54 and re.search(r"[,;:]$", cur[-1])
         if hard_long or soft_long:
             groups.append(cur)
             cur = []
         cur.append(word)
         phrase = " ".join(cur)
-        strong_stop = re.search(r"[.?!]([\"”’')\]]*)$", word) and len(phrase) >= 18
-        medium_stop = re.search(r"[,;:]([\"”’')\]]*)$", word) and len(phrase) >= 34
+        strong_stop = re.search(r"[.?!]([\"”’')\]]*)$", word) and len(phrase) >= 16
+        medium_stop = re.search(r"[,;:]([\"”’')\]]*)$", word) and len(phrase) >= 30
         dash_stop = word.endswith("—") and len(phrase) >= 24
-        if strong_stop or medium_stop or dash_stop or len(phrase) >= 76:
+        if strong_stop or medium_stop or dash_stop or len(phrase) >= CAPTION_MAX_GROUP_CHARS:
             groups.append(cur)
             cur = []
     if cur:
         groups.append(cur)
-    return [wrap_caption(g) for g in groups]
+    return [wrap_caption(g) for g in rebalance_caption_groups(groups)]
 
 
 def merge_short_caption_groups(parts: list[str], available: float) -> list[str]:
@@ -486,8 +590,10 @@ def merge_short_caption_groups(parts: list[str], available: float) -> list[str]:
         merge_span: tuple[int, int] | None = None
         for lo, hi in candidates:
             merged_words = (groups[lo].replace("\n", " ") + " " + groups[hi].replace("\n", " ")).split()
+            if not can_wrap_caption_words(merged_words):
+                continue
             wrapped = wrap_caption(merged_words)
-            if max(map(len, wrapped.split("\n"))) <= 42:
+            if max(map(len, wrapped.split("\n"))) <= CAPTION_MAX_LINE_CHARS:
                 merged = wrapped
                 merge_span = (lo, hi)
                 break
@@ -721,57 +827,53 @@ def draw_cta(frame: np.ndarray, t: float, total: float) -> np.ndarray:
     d = ImageDraw.Draw(img, "RGBA")
     p = min(1, max(0, (t - start) / 0.45))
     y = int(670 - 80 * (1 - p) * (1 - p))
-    d.rectangle((0, 0, W, H), fill=(5, 12, 24, 92))
+    d.rectangle((0, 0, W, H), fill=(5, 12, 24, 76))
     pill = (600, y, 1320, y + 120)
-    d.rounded_rectangle(pill, radius=60, fill=(229, 181, 58, 235), outline=(255, 255, 255, 95), width=4)
-    d.text((W // 2, y + 58), "SUBSCRIBE", anchor="mm", font=font(76, True), fill=(8, 15, 28, 255))
+    d.rounded_rectangle(pill, radius=60, fill=(10, 22, 42, 235), outline=(245, 247, 250, 120), width=3)
+    d.text((W // 2, y + 58), "SUBSCRIBE", anchor="mm", font=font(72, True), fill=(245, 247, 250, 255))
     wipe = min(1, max(0, (t - start - 0.3) / 0.5))
-    d.rectangle((600, y + 146, 600 + int(720 * wipe), y + 158), fill=(229, 181, 58, 240))
+    d.rectangle((600, y + 146, 600 + int(720 * wipe), y + 154), fill=(31, 107, 255, 220))
     like_p = min(1, max(0, (t - start - 1.0) / 0.35))
     pulse = 1.0 + (0.06 * math.sin((t - start) * 16) if like_p >= 1 else 0)
     lx, ly = 780, y - 148
     size = int(78 * max(0.2, like_p) * pulse)
-    fill = (229, 181, 58, 255) if t > start + 1.55 else (245, 247, 250, 245)
-    d.rounded_rectangle((lx, ly, lx + 360, ly + 96), radius=18, fill=(0, 0, 0, 150), outline=(229, 181, 58, 140), width=3)
+    fill = (31, 107, 255, 255) if t > start + 1.55 else (245, 247, 250, 245)
+    d.rounded_rectangle((lx, ly, lx + 360, ly + 96), radius=18, fill=(0, 0, 0, 145), outline=(245, 247, 250, 105), width=2)
     d.text((lx + 170, ly + 48), "LIKE", anchor="mm", font=font(size, True), fill=fill)
     if t > start + 1.55:
         rng = random.Random(int(t * 30))
-        for _ in range(18):
+        for _ in range(10):
             a = rng.random() * math.tau
-            r = rng.randint(40, 190)
+            r = rng.randint(40, 150)
             cx = lx + 310 + int(math.cos(a) * r)
             cy = ly + 50 + int(math.sin(a) * r)
-            d.ellipse((cx - 4, cy - 4, cx + 4, cy + 4), fill=(229, 181, 58, 210))
+            d.ellipse((cx - 3, cy - 3, cx + 3, cy + 3), fill=(31, 107, 255, 155))
     return np.asarray(img, dtype=np.uint8)
 
 
-_BOOKEND_BG_CACHE: Image.Image | None = None
+_BOOKEND_BG_CACHE: dict[bool, Image.Image] = {}
 _PD_LOGO_CACHE: Image.Image | None = None
 
 
 def bookend_background(progress: float, ending: bool) -> Image.Image:
     global _BOOKEND_BG_CACHE
-    if _BOOKEND_BG_CACHE is None:
+    if ending not in _BOOKEND_BG_CACHE:
         if BOOKEND_BG.exists():
             bg = Image.open(BOOKEND_BG).convert("RGB")
         else:
             bg = Image.new("RGB", (W, H), (3, 8, 16))
         bg = ImageOps.fit(bg, (W, H), method=Image.Resampling.LANCZOS, centering=(0.5, 0.46 if not ending else 0.44))
-        bg = ImageEnhance.Brightness(bg).enhance(0.58)
-        bg = ImageEnhance.Contrast(bg).enhance(1.16)
+        bg = ImageEnhance.Brightness(bg).enhance(0.72 if ending else 0.58)
+        bg = ImageEnhance.Contrast(bg).enhance(1.10 if ending else 1.16)
         bg = ImageEnhance.Color(bg).enhance(0.94)
-        _BOOKEND_BG_CACHE = bg
-    img = _BOOKEND_BG_CACHE.copy().convert("RGBA")
+        _BOOKEND_BG_CACHE[ending] = bg
+    img = _BOOKEND_BG_CACHE[ending].copy().convert("RGBA")
     d = ImageDraw.Draw(img, "RGBA")
-    d.rectangle((0, 0, W, H), fill=(3, 8, 16, 145 if not ending else 180))
-    bloom_y = int(H * (0.70 if not ending else 0.66))
-    bloom_w = int(860 + 140 * math.sin(progress * math.pi))
-    bloom_h = 270
-    bloom = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    bd = ImageDraw.Draw(bloom, "RGBA")
-    bd.ellipse((W // 2 - bloom_w, bloom_y - bloom_h, W // 2 + bloom_w, bloom_y + bloom_h), fill=(229, 181, 58, 62))
-    bloom = bloom.filter(ImageFilter.GaussianBlur(46))
-    img.alpha_composite(bloom)
+    if ending:
+        d.rectangle((0, 0, W, H), fill=(18, 42, 74, 238))
+        d.rectangle((0, int(H * 0.68), W, H), fill=(8, 18, 34, 95))
+    else:
+        d.rectangle((0, 0, W, H), fill=(3, 8, 16, 145))
     return img
 
 
@@ -814,20 +916,6 @@ def draw_bookends(frame: np.ndarray, t: float, total: float) -> np.ndarray:
     alpha = max(0.0, min(fade_in, fade_out))
     img = bookend_background(p, ending)
     d = ImageDraw.Draw(img, "RGBA")
-    draw_gold_particles(d, 1901 if opening else 1902, p, 26 if opening else 24)
-    streak_x = int((-0.25 + p * 1.6) * W)
-    streak = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    sd = ImageDraw.Draw(streak, "RGBA")
-    sd.polygon(
-        [
-            (streak_x - 520, int(H * (0.48 if ending else 0.55))),
-            (streak_x + 290, int(H * (0.37 if ending else 0.44))),
-            (streak_x + 360, int(H * (0.45 if ending else 0.52))),
-            (streak_x - 450, int(H * (0.57 if ending else 0.64))),
-        ],
-        fill=(245, 247, 250, int(22 * math.sin(min(1, p * 2) * math.pi))),
-    )
-    img.alpha_composite(streak)
     rule_p = min(1.0, max(0.0, (p - 0.22) / 0.26))
     logo_s = 0.72 + 0.28 * min(1.0, max(0.0, (p - 0.04) / 0.22))
     logo_size = int((120 if opening else 150) * logo_s)
@@ -836,23 +924,23 @@ def draw_bookends(frame: np.ndarray, t: float, total: float) -> np.ndarray:
     if logo is not None:
         img.alpha_composite(logo, (W // 2 - logo.width // 2, logo_y - logo.height // 2))
     else:
-        d.text((W // 2, logo_y), "PD", anchor="mm", font=font(150 if opening else 185, True), fill=(229, 181, 58, 245))
+        d.text((W // 2, logo_y), "PD", anchor="mm", font=font(150 if opening else 185, True), fill=(245, 247, 250, 245))
     series_alpha = int(245 * min(1.0, max(0.0, (p - 0.15) / 0.26)))
     title_alpha = int(245 * min(1.0, max(0.0, (p - 0.30) / 0.25)))
     sub_alpha = int(235 * min(1.0, max(0.0, (p - 0.55) / 0.25)))
     rule_w = int(560 * rule_p)
-    d.rectangle((W // 2 - rule_w // 2, H // 2 - 37, W // 2 + rule_w // 2, H // 2 - 33), fill=(229, 181, 58, 235))
+    d.rectangle((W // 2 - rule_w // 2, H // 2 - 37, W // 2 + rule_w // 2, H // 2 - 34), fill=(31, 107, 255, 220))
     if opening:
         d.text((W // 2, H // 2 - 92), "PRIME DOCUMENTARY", anchor="mm", font=font(44, True), fill=(245, 247, 250, series_alpha))
         d.text((W // 2, H // 2 + 56), "D.B. COOPER", anchor="mm", font=font(92, True), fill=(245, 247, 250, title_alpha))
-        d.text((W // 2, H // 2 + 132), "The only hijacking America never solved", anchor="mm", font=font(31, True), fill=(229, 181, 58, sub_alpha))
+        d.text((W // 2, H // 2 + 132), "The only hijacking America never solved", anchor="mm", font=font(31, True), fill=(210, 220, 235, sub_alpha))
     else:
         pulse = 1.0 + 0.04 * math.sin(local * 4.8)
         d.text((W // 2, H // 2 - 82), "PRIME DOCUMENTARY", anchor="mm", font=font(58, True), fill=(245, 247, 250, series_alpha))
-        d.text((W // 2, H // 2 + 48), "SUBSCRIBE - LANDMARK RIGHTS CASES", anchor="mm", font=font(int(34 * pulse), True), fill=(229, 181, 58, title_alpha))
+        d.text((W // 2, H // 2 + 48), "SUBSCRIBE - LANDMARK RIGHTS CASES", anchor="mm", font=font(int(34 * pulse), True), fill=(210, 220, 235, title_alpha))
         d.text((W // 2, H // 2 + 104), "New episodes every week", anchor="mm", font=font(27, False), fill=(200, 205, 214, sub_alpha))
         base_w = int(W * 0.70 * min(1.0, max(0.0, (p - 0.18) / 0.28)))
-        d.rectangle((W // 2 - base_w // 2, int(H * 0.78), W // 2 + base_w // 2, int(H * 0.78) + 3), fill=(229, 181, 58, 210))
+        d.rectangle((W // 2 - base_w // 2, int(H * 0.78), W // 2 + base_w // 2, int(H * 0.78) + 3), fill=(31, 107, 255, 190))
     d.rectangle((0, 0, W, H), outline=(0, 0, 0, 0))
     if alpha >= 0.999:
         return np.asarray(img.convert("RGB"), dtype=np.uint8)
@@ -912,9 +1000,6 @@ def render_silent_video(paths: list[Path], total: float) -> None:
                     q = (local - (shot_len - transition)) / transition
                     nxt = crop_motion(cache.get(base_idx + 1), t, shot + 1, 0.0, shot_len)
                     cur = (cur.astype(np.float32) * (1 - q) + nxt.astype(np.float32) * q).astype(np.uint8)
-            # Moving light streaks prevent accidental frozen-frame detection.
-            x = int((t * 120 + (shot if t >= 8 else 0) * 19) % (W + 360)) - 180
-            cur[:, max(0, x) : min(W, x + 7), :] = np.maximum(cur[:, max(0, x) : min(W, x + 7), :], np.array([160, 125, 45], dtype=np.uint8))
             cur = draw_cta(cur, t, total)
             cur = draw_bookends(cur, t, total)
             proc.stdin.write(cur.tobytes())
@@ -933,8 +1018,8 @@ def burn_and_mux(total: float) -> None:
     srt = str(CAPTIONS_SRT.resolve()).replace("\\", "/").replace(":", "\\:")
     vf = (
         f"subtitles='{srt}':force_style="
-        "'FontName=Arial,FontSize=30,PrimaryColour=&H00F5F7FA,OutlineColour=&H00000000,"
-        "BorderStyle=3,BackColour=&HAA000000,Outline=2,Shadow=1,MarginV=18,Alignment=2'"
+        "'FontName=Arial,FontSize=14,PrimaryColour=&H00F5F7FA,OutlineColour=&H00000000,"
+        "BorderStyle=1,Outline=1,Shadow=1,MarginV=34,Alignment=2'"
     )
     FINAL_MP4.parent.mkdir(parents=True, exist_ok=True)
     run(
@@ -1183,7 +1268,7 @@ def write_motion_report(total: float | None, status: str = "planned") -> None:
         "static_image_holds_over_2s_planned": 0,
         "naked_hard_cuts_planned": 0,
         "motion_continues_through_cuts": True,
-        "hero_organic_motion_target": ">=1 per 60s via continuous Ken Burns/parallax and streak motion",
+        "hero_organic_motion_target": ">=1 per 60s via continuous Ken Burns/parallax and crossfaded motion",
         "estimated_shot_count": shot_count,
         "created_at": now(),
     }

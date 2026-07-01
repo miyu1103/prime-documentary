@@ -10,34 +10,40 @@
     "R2 unsolved-case owner review remains required before upload/publish."
   ],
   "independent_gate": {
-    "check_final_acceptance": {
-      "command": ".venv/Scripts/python.exe scripts/check_final_acceptance.py 21 --json",
-      "exit_code": 0,
-      "status": "PASS",
+    "checked_at": "2026-07-01T02:33:48+00:00",
+    "commands": [
+      ".\\.venv\\Scripts\\python.exe scripts\\check_final_acceptance.py 21 --json",
+      ".\\.venv\\Scripts\\python.exe scripts\\check_dynamics.py 21",
+      ".\\.venv\\Scripts\\python.exe scripts\\check_runtime_band.py H:/pd-media/episodes/PD-2026-021-dbcooper/08_edit/final.mp4"
+    ],
+    "exit_codes": {
+      "check_final_acceptance": 0,
+      "check_dynamics": 0,
+      "check_runtime_band": 0
+    },
+    "measured": {
       "duration_seconds": 1781.07,
+      "duration_minutes": 29.68,
       "loudness_lufs": -14.3,
-      "black_frames_seconds": 0.0,
-      "frozen_frames_seconds": 0.0,
-      "silence_seconds": 0.0,
-      "caption_last_cue_seconds": 1772,
+      "black_seconds_total": 0.0,
+      "black_seconds_longest": 0.0,
+      "frozen_seconds_total": 2.7,
+      "frozen_seconds_longest": 2.7,
+      "silence_seconds_total": 0.0,
+      "caption_cues": 492,
+      "caption_max_line_chars": 42,
+      "caption_max_duration_seconds": 5.306,
       "factory_assets": 64,
       "hero_images": 46,
-      "thumbnails_1280x720": 4
+      "thumbnails": 4
     },
-    "check_dynamics": {
-      "command": ".venv/Scripts/python.exe scripts/check_dynamics.py 21",
-      "exit_code": 0,
-      "status": "PASS"
-    },
-    "check_runtime_band": {
-      "command": ".venv/Scripts/python.exe scripts/check_runtime_band.py H:/pd-media/episodes/PD-2026-021-dbcooper/08_edit/final.mp4",
-      "exit_code": 0,
-      "status": "PASS",
-      "band_seconds": [
-        1620,
-        1980
-      ]
-    }
+    "evidence": [
+      "episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/final_acceptance.caption_fix.v005.stdout.txt",
+      "episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/dynamics.caption_fix.v005.stdout.txt",
+      "episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/runtime_band.caption_fix.v005.stdout.txt",
+      "episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/caption_visual_fix_render.v005.stdout.txt"
+    ]
   },
-  "created_at": "2026-07-01T00:15:52.314667+00:00"
+  "created_at": "2026-07-01T00:15:52.314667+00:00",
+  "updated_at": "2026-07-01T02:33:48+00:00"
 }

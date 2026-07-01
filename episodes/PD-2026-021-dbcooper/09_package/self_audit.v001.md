@@ -3,7 +3,7 @@
 Episode: PD-2026-021-dbcooper
 State: edit_review
 Final video: H:/pd-media/episodes/PD-2026-021-dbcooper/08_edit/final.mp4
-Generated: 2026-07-01T00:21:00+00:00
+Generated: 2026-07-01T02:33:48+00:00
 
 ## Gate Results
 
@@ -18,8 +18,9 @@ Generated: 2026-07-01T00:21:00+00:00
 - Loudness: -14.3 LUFS; required -16.0 to -12.0 LUFS.
 - Voice: ElevenLabs master narration present; provider locked to elevenlabs.
 - Captions: captions.v001.srt present; 492 cues; final cue at 1772 seconds; caption format gate passed.
+- Caption visual fix: smaller unboxed subtitles; smarter two-line wraps; source-script word sequence verified against captions with no dropped words.
 - Black frames: 0.0 seconds total, 0.0 seconds longest.
-- Frozen frames/static holds: 0.0 seconds total, 0.0 seconds longest.
+- Frozen frames/static holds: 2.7 seconds total, 2.7 seconds longest; within the 8.0/4.0 second gate.
 - Audio silence: 0.0 seconds total.
 - Hero images: 46 PNGs present; all long edge >= 3840 px.
 - Factory assets: 64 staged and referenced in composition; gate requires >=39.
@@ -35,7 +36,7 @@ Generated: 2026-07-01T00:21:00+00:00
 
 ## Evidence
 
-- episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/final_acceptance.v001.stdout.txt
-- episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/dynamics.v001.stdout.txt
-- episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/runtime_band.v001.stdout.txt
-- episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/final_build.v001.stdout.txt
+- episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/final_acceptance.caption_fix.v005.stdout.txt
+- episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/dynamics.caption_fix.v005.stdout.txt
+- episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/runtime_band.caption_fix.v005.stdout.txt
+- episodes/PD-2026-021-dbcooper/09_package/EVIDENCE/caption_visual_fix_render.v005.stdout.txt
