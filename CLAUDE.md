@@ -139,8 +139,10 @@ Never trade priorities 1–6 for speed.
 
 ## 11. Current production topology
 
-- Windows RTX 4090 node: local image generation and GPU-heavy analysis.
-- Mac editing node: DaVinci Resolve, review, final render, and publishing control.
+- Windows RTX 4090 node: GPU-heavy analysis and local bulk image generation (SDXL/SVD) for variants.
+- Image generation: **Codex (primary)**; local SDXL/SVD for bulk variants. (Midjourney retired — no quality gain.) All AI images must be disclosed, rights-tracked, brand-consistent, and contain no real-person likeness (invariant 11).
+- Editing & render: **Remotion + FFmpeg** (local, quality-first CPU/libx264 encode), review, final render, and publishing control.
+- (2026-06-20 owner update: the two lines above supersede earlier "DaVinci Resolve" and "Midjourney" references anywhere in docs/ and decisions/.)
 - Claude Code: codebase operation, workflow implementation, structured generation, validation, orchestration support.
 - ElevenLabs adapter: master narration, with explicit character/cost tracking.
 - Music library: rights-tracked reusable BGM; Suno-origin tracks are ingested as assets, not assumed to be programmatically generated.

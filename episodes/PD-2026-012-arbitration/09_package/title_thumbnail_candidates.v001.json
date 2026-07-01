@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-012-arbitration",
+  "revision": "v001",
+  "created_at": "2026-06-23T01:20:23.183138+00:00",
+  "status": "selected",
+  "selection_criterion": "CTR maximum: high contrast, single clear subject, emotion, large text space, mobile readability.",
+  "background_candidates": [
+    {
+      "id": "THUMB-01",
+      "episode_file": "episodes/PD-2026-012-arbitration/10_thumbnail/background.THUMB-01.png",
+      "public_static": "arbitration/thumbs/THUMB-01.png",
+      "sha256": "sha256:c3ce6e03547cf9d555db4d25d4a925f30cf69db79ac8304f728bf450e5009612",
+      "ctr_score": 87,
+      "ctr_reason": "Clear click/contract metaphor; strong right-side object and left text space."
+    },
+    {
+      "id": "THUMB-02",
+      "episode_file": "episodes/PD-2026-012-arbitration/10_thumbnail/background.THUMB-02.png",
+      "public_static": "arbitration/thumbs/THUMB-02.png",
+      "sha256": "sha256:8885b827a92ce5fd33578c2070db935a5e4d402fcfd9ce34558f679268593c0f",
+      "ctr_score": 83,
+      "ctr_reason": "Fine-print scale is on-theme, but the tiny subject is slightly less mobile-legible."
+    },
+    {
+      "id": "THUMB-03",
+      "episode_file": "episodes/PD-2026-012-arbitration/10_thumbnail/background.THUMB-03.png",
+      "public_static": "arbitration/thumbs/THUMB-03.png",
+      "sha256": "sha256:30efe66851b8b32c1e8cb220b7315b364960a182b70220c587a6ed96fe477f78",
+      "ctr_score": 94,
+      "ctr_reason": "Best one-second story: courthouse door closed by chain; very high contrast and simple focal shape."
+    },
+    {
+      "id": "THUMB-04",
+      "episode_file": "episodes/PD-2026-012-arbitration/10_thumbnail/background.THUMB-04.png",
+      "public_static": "arbitration/thumbs/THUMB-04.png",
+      "sha256": "sha256:716d9cdcb9c18ce5d8fa6d64487b7841bc1562f77db4cc0aca3821754c68a0db",
+      "ctr_score": 86,
+      "ctr_reason": "Strong consumer-phone hook, but shackle shadow is more subtle at mobile size."
+    },
+    {
+      "id": "THUMB-05",
+      "episode_file": "episodes/PD-2026-012-arbitration/10_thumbnail/background.THUMB-05.png",
+      "public_static": "arbitration/thumbs/THUMB-05.png",
+      "sha256": "sha256:e697e778003218c6b3907af1854bc2735299eaf71b3744efc5209d4ad1f460bb",
+      "ctr_score": 89,
+      "ctr_reason": "Contract/signature chain is direct and premium, slightly less emotionally sharp than closed courthouse."
+    },
+    {
+      "id": "THUMB-06",
+      "episode_file": "episodes/PD-2026-012-arbitration/10_thumbnail/background.THUMB-06.png",
+      "public_static": "arbitration/thumbs/THUMB-06.png",
+      "sha256": "sha256:cb6f57f6fc6c7fc6591ec9542dd8958c510864a613747f1964921f3bde71b181",
+      "ctr_score": 80,
+      "ctr_reason": "Class-action isolation idea is accurate, but multiple figures reduce single-subject clarity."
+    }
+  ],
+  "selected_background_id": "THUMB-03",
+  "title_candidates": [
+    {
+      "id": "A",
+      "title": "You Gave Up Your Right to Sue",
+      "file": "episodes/PD-2026-012-arbitration/10_thumbnail/thumbnail.arbitration_option_A.v001.png",
+      "sha256": "sha256:c1ed6506c29628f3d271e0ab7f0bc7ea0e948aee2ba99ed491ad5e8bc97d178d",
+      "ctr_score": 88,
+      "reason": "Direct second-person hook; a little long for mobile."
+    },
+    {
+      "id": "B",
+      "title": "The Fine Print Took Your Right to Sue",
+      "file": "episodes/PD-2026-012-arbitration/10_thumbnail/thumbnail.arbitration_option_B.v001.png",
+      "sha256": "sha256:013171c838f4b1c8626437620a66e2620e6a2df8086d36b44ad4236bfcb7ed66",
+      "ctr_score": 93,
+      "reason": "Most compact curiosity gap: fine print quietly took a right."
+    },
+    {
+      "id": "C",
+      "title": "Why You Can't Sue Your Bank or Boss",
+      "file": "episodes/PD-2026-012-arbitration/10_thumbnail/thumbnail.arbitration_option_C.v001.png",
+      "sha256": "sha256:84634e06697938e8eb23e4360fe7a0d019e2705dda720350a1f891a185a4a594",
+      "ctr_score": 84,
+      "reason": "Concrete entities help, but the phrasing is broader and less iconic."
+    }
+  ],
+  "selected_title_id": "B",
+  "selected_thumbnail": "episodes/PD-2026-012-arbitration/09_package/thumbnail.selected.v001.png",
+  "selected_thumbnail_sha256": "sha256:013171c838f4b1c8626437620a66e2620e6a2df8086d36b44ad4236bfcb7ed66",
+  "safety": {
+    "real_person_likeness": false,
+    "judge_likeness": false,
+    "text_in_background": false,
+    "commercial_ok": true
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-014-lange",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T07:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-20T07:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner delegated EP10-15 topic selection to Claude and approved proceeding to the end. Content/direction sign-off for the Lange v. California script v001, bound to content_hash sha256:76fd7617f50f0ea9ef79f1389294cf4ffef1522c9a7ab18223145ab7e88981dd — re-approval if revision/hash changes (rules/12). Facts web-verified 2026-06-20 against the primary opinion (594 U.S. 295). Carries forward provided no fact or claim changes.",
+  "conditions": [
+    "VOTE: say 'unanimous in the judgment / 9-0 to vacate & remand', not 'unanimous opinion'; present the Roberts/Alito concurrence-in-judgment fairly (CLM-0002/0008).",
+    "Frame the question as misdemeanor FLIGHT, not the DUI (CLM-0006). Arthur Lange by role, neutral; no real-person likeness in AI visuals; neutral on policing.",
+    "Capture durable content hashes for SRC-0001/0002 before publish."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-014-lange/03_script/script.annotated.v001.json"
+}

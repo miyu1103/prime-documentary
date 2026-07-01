@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-010-kelo",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-06-20T03:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-06-20T03:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner delegated EP10-15 topic selection to Claude and approved proceeding to the end. Content/direction sign-off for the Kelo v. New London script v001, bound to content_hash sha256:95c3cbda57e5685c725015c2e911db3da254f4f97b7f1df50689db8a175eb2da — re-approval required if the script revision/hash changes (rules/12). Facts web-verified 2026-06-20 against the primary opinion (545 U.S. 469). Carries forward to the verified revision provided no fact or claim changes.",
+  "conditions": [
+    "Capture durable content hashes for SRC-0001/0002/0003/0004 before publish.",
+    "Keep neutral/non-partisan: the backlash was bipartisan; present the city's rationale fairly. CLM-0008 state-reform count is a RANGE attributed to the Institute for Justice; note many reforms were criticized as weak.",
+    "Real people by role, neutral; phrase NLDC as the city's development agent, not an independent private condemnor."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-010-kelo/03_script/script.annotated.v001.json"
+}

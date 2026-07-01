@@ -1,0 +1,96 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-017-onecoin",
+  "topic_id": "TOP-20260627-017",
+  "slug": "onecoin",
+  "title_working": "Nothing — The Woman Who Sold a Coin That Did Not Exist",
+  "state": "assets_ready",
+  "risk_class": "R3",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "topic": "v001",
+    "design_bible": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "shotlist": "v001",
+    "ai_prompts": "v001",
+    "thumb_prompts": "v001",
+    "usable_assets": "v001",
+    "fact_recheck": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-017-onecoin-topic",
+      "artifact_type": "topic",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-017-onecoin/00_topic/topic.v001.json",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass",
+      "checksum": "sha256:5e57217334ec1fab4759e9a0d068f9f4afd02b974e631edef3af1bfd6369e298"
+    },
+    {
+      "artifact_id": "PD-2026-017-onecoin-design-bible",
+      "artifact_type": "design_bible",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-017-onecoin/04_scenes/design_bible.v001.md",
+      "status": "draft",
+      "rights_status": "unknown",
+      "qc_status": "not_run",
+      "checksum": "sha256:11f359145718c31da91fa2fcfe8b2cf17ba2219d78700a46979354ad70529d9a"
+    },
+    {
+      "artifact_id": "PD-2026-017-onecoin-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-017-onecoin/03_script/script.annotated.v001.json",
+      "checksum": "sha256:9ce1519238eab31949f984aba16edd1b784e9145dafce75c726b3f340bc60ab9",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-017-onecoin-usable-assets",
+      "artifact_type": "usable_assets",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-017-onecoin/05_stock/usable_assets.v001.json",
+      "checksum": "sha256:1ece0c90ca4d4ee69e83f8df71d21d34dfd5f6e94bc7a42c23b868367310a81f",
+      "status": "approved",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [],
+  "costs": {
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 150,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 300,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "MID FEATURE (~30 min). target_duration_minutes=30 uses the new 'mid' duration profile (ADR-0008): narration band 24.0-32.4 min; finished-runtime band 27-33 min (check_final_acceptance). NOT the standard 11.5-12.5 gate.",
+    "R3 — living, charged-but-unconvicted fugitive (Ruja Ignatova) + named living associates. PRE-PUBLISH LEGAL REVIEW REQUIRED (cf. EP15 Theranos). Never assert guilt as fact: 'alleged/charged/according to the U.S. indictment'. Victims are the moral center; documented statements only; no invented dialogue; no real-person likeness (invariant 11).",
+    "Production binds to docs/PD_ONE_PASS_PRODUCTION_SPEC.v1.md: Done = check_final_acceptance.py 17 exit 0 (+ manual rows 5/7/12/13), not validator PASS. Design auteur treatment + acceptance contract in 04_scenes/design_bible.v001.md.",
+    "Left process (Claude) not yet started beyond topic + design bible: research/claims/sources/script/shotlist/ai_prompts/fact_recheck still to do before script_verified and Codex handoff. Media on external SSD (H:\\pd-media), not in repo."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-27T00:00:00+09:00",
+  "updated_at": "2026-06-28T00:00:00+09:00"
+}

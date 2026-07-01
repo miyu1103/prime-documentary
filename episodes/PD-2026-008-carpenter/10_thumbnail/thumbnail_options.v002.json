@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-008-carpenter",
+  "revision": "v002",
+  "generated_at": "2026-06-20T22:30:00+09:00",
+  "status": "thumbnail_selected_not_published",
+  "publish_performed": false,
+  "upload_performed": false,
+  "ai_disclosure_required": true,
+  "synthetic_content_disclosure_required": true,
+  "source_visuals": [
+    "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c02_seed827096.png",
+    "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c06_seed827644.png",
+    "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c01_seed826959.png",
+    "artifact://episodes/PD-2026-008-carpenter/05_visuals/sdxl_ultra_v001/hook/CARP_H02_dark_location_bloom_c04_seed827370.png"
+  ],
+  "recommended_shortlist": [
+    "thumbnail_option_02.v002.png",
+    "thumbnail_option_01.v002.png",
+    "thumbnail_option_05.v002.png"
+  ],
+  "selected": "thumbnail_option_02.v002.png",
+  "selection_reason": "Best YouTube packaging: the viewer reads a specific intrusion claim before parsing the title, and the symbolic phone-map image makes the privacy stakes immediately concrete.",
+  "options": [
+    {
+      "id": "thumb01",
+      "file": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_option_01.v002.png",
+      "headline": "YOUR PHONE IS A MAP",
+      "kicker": "127 DAYS - NO WARRANT",
+      "sha256": "67e9b64bdfcc49bef7dd13db5b7c07b671e69ace3e0f5d8e7332aad348fe8d53",
+      "dimensions": "1280x720",
+      "assessment": "Strong self-relevance hook; clear premise, but the stacked \"A MAP\" phrasing is slightly more explanatory than the selected version."
+    },
+    {
+      "id": "thumb02",
+      "file": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_option_02.v002.png",
+      "headline": "127 DAYS NO WARRANT",
+      "kicker": "PHONE LOCATION RECORDS",
+      "sha256": "34971deeb8b271ec4fa844e16202688637ede58408340054884563837f4f6b20",
+      "dimensions": "1280x720",
+      "assessment": "Selected. Strongest click-read: concrete duration plus warrant tension, with the phone-map visual explaining the case instantly at small size."
+    },
+    {
+      "id": "thumb03",
+      "file": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_option_03.v002.png",
+      "headline": "POLICE WANTED THIS MAP",
+      "kicker": "CARPENTER v. UNITED STATES",
+      "sha256": "5e347aa9a18c4e17baed036bd66b786c45932278e8a455018e6d05f08430a59f",
+      "dimensions": "1280x720",
+      "assessment": "Good case-angle alternate; slightly less personal and more institutional than the selected version."
+    },
+    {
+      "id": "thumb04",
+      "file": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_option_04.v002.png",
+      "headline": "THE MAP IN YOUR PHONE",
+      "kicker": "5-4 - THE WARRANT LINE",
+      "sha256": "c051663009c98754b5c3a1af63210fef976df3b2d9406e9995c1f620596b7a74",
+      "dimensions": "1280x720",
+      "assessment": "Accurate capstone framing; useful for legally minded viewers, but less urgent than the selected version."
+    },
+    {
+      "id": "thumb05",
+      "file": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_option_05.v002.png",
+      "headline": "CAN POLICE MAP YOUR LIFE?",
+      "kicker": "PHONE LOCATION PRIVACY",
+      "sha256": "01d190bd8c4c9462eefe27406ff54dc25c41806b1075e0fed1adbf1c885f1ed8",
+      "dimensions": "1280x720",
+      "assessment": "Strong question-format alternate; good self-relevance, but longer and less punchy in browse-size contexts."
+    }
+  ],
+  "contact_sheet": {
+    "file": "episodes/PD-2026-008-carpenter/10_thumbnail/thumbnail_contact_sheet.v002.jpg",
+    "sha256": "c92cbbdc8996891c6377581de624cfed41bd5f9cf7b03bb82186ec24084a8966"
+  }
+}

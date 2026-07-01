@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-015-theranos",
+  "revision": "v002",
+  "status": "final_candidate_owner_review_required",
+  "generated_at": "2026-06-26T19:30:16.138736+00:00",
+  "final_video": "H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v001.mp4",
+  "final_video_exists": true,
+  "final_video_sha256": "sha256:61166f21665e0c0f4d7dd00582278f9613de27736ec8efb9619e9a494c18d418",
+  "ffprobe": {
+    "streams": [
+      {
+        "index": 0,
+        "codec_name": "h264",
+        "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+        "profile": "High",
+        "codec_type": "video",
+        "codec_tag_string": "avc1",
+        "codec_tag": "0x31637661",
+        "mime_codec_string": "avc1.640028",
+        "width": 1920,
+        "height": 1080,
+        "coded_width": 1920,
+        "coded_height": 1080,
+        "has_b_frames": 2,
+        "sample_aspect_ratio": "1:1",
+        "display_aspect_ratio": "16:9",
+        "pix_fmt": "yuvj420p",
+        "level": 40,
+        "color_range": "pc",
+        "color_space": "bt470bg",
+        "chroma_location": "center",
+        "field_order": "progressive",
+        "is_avc": "true",
+        "nal_length_size": "4",
+        "id": "0x1",
+        "r_frame_rate": "30/1",
+        "avg_frame_rate": "30/1",
+        "time_base": "1/90000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 63474000,
+        "duration": "705.266667",
+        "bit_rate": "4044064",
+        "bits_per_raw_sample": "8",
+        "nb_frames": "21158",
+        "extradata_size": 51,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "VideoHandler"
+        },
+        "side_data_list": [
+          {
+            "side_data_type": "ICC Profile"
+          }
+        ]
+      },
+      {
+        "index": 1,
+        "codec_name": "aac",
+        "codec_long_name": "AAC (Advanced Audio Coding)",
+        "profile": "LC",
+        "codec_type": "audio",
+        "codec_tag_string": "mp4a",
+        "codec_tag": "0x6134706d",
+        "mime_codec_string": "mp4a.40.2",
+        "sample_fmt": "fltp",
+        "sample_rate": "48000",
+        "channels": 2,
+        "channel_layout": "stereo",
+        "bits_per_sample": 0,
+        "initial_padding": 0,
+        "id": "0x2",
+        "r_frame_rate": "0/0",
+        "avg_frame_rate": "0/0",
+        "time_base": "1/48000",
+        "start_pts": 0,
+        "start_time": "0.000000",
+        "duration_ts": 33853440,
+        "duration": "705.280000",
+        "bit_rate": "317375",
+        "nb_frames": "33060",
+        "extradata_size": 2,
+        "disposition": {
+          "default": 1,
+          "dub": 0,
+          "original": 0,
+          "comment": 0,
+          "lyrics": 0,
+          "karaoke": 0,
+          "forced": 0,
+          "hearing_impaired": 0,
+          "visual_impaired": 0,
+          "clean_effects": 0,
+          "attached_pic": 0,
+          "timed_thumbnails": 0,
+          "non_diegetic": 0,
+          "captions": 0,
+          "descriptions": 0,
+          "metadata": 0,
+          "dependent": 0,
+          "still_image": 0,
+          "multilayer": 0
+        },
+        "tags": {
+          "language": "und",
+          "handler_name": "SoundHandler"
+        }
+      }
+    ],
+    "format": {
+      "filename": "H:\\pd-media\\episodes\\PD-2026-015-theranos\\08_edit\\renders\\final\\theranos_premium_final_v001.mp4",
+      "nb_streams": 2,
+      "nb_programs": 0,
+      "nb_stream_groups": 0,
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "format_long_name": "QuickTime / MOV",
+      "start_time": "0.000000",
+      "duration": "705.280000",
+      "size": "385276492",
+      "bit_rate": "4370196",
+      "probe_score": 100,
+      "tags": {
+        "major_brand": "isom",
+        "minor_version": "512",
+        "compatible_brands": "isomiso2avc1mp41",
+        "encoder": "Lavf61.7.100",
+        "comment": "Made with Remotion 4.0.476"
+      }
+    }
+  },
+  "runtime_seconds": 705.28,
+  "runtime_mmss": "11:45",
+  "selected_thumbnail": "episodes/PD-2026-015-theranos/09_package/thumbnail.selected.v001.png",
+  "selected_thumbnail_sha256": "sha256:f0d14264ffaf47aaa601ce7ad7eff5106dc828e30a3da8da17c31c3eca603963",
+  "captions": "episodes/PD-2026-015-theranos/08_edit/captions.v001.srt",
+  "captions_sha256": "sha256:f27536e181ee507d90cfec44c81ba491e32033916acdea6a81737f26dfd98917",
+  "youtube_meta": "episodes/PD-2026-015-theranos/09_package/youtube_meta.v002.json",
+  "rights_manifest": "episodes/PD-2026-015-theranos/09_package/rights_manifest.v002.json",
+  "acceptance": "episodes/PD-2026-015-theranos/08_edit/renders/final.v001.acceptance.json",
+  "acceptance_sha256": "sha256:c42dc305e157932c3234d3efca704b46636accb0cfb1b257710b16fc54627572",
+  "acceptance_status": "PASS",
+  "acceptance_results": [
+    {
+      "check": "runtime_band",
+      "ok": true,
+      "hard": true,
+      "reason": "705.3s = 11.75min (band 690-750s)"
+    },
+    {
+      "check": "images_present",
+      "ok": true,
+      "hard": true,
+      "reason": "black total 1.8s / longest 1.8s (limits 8/3)"
+    },
+    {
+      "check": "bgm_present",
+      "ok": true,
+      "hard": true,
+      "reason": "total silence 2s (limit 25s; high => no continuous BGM bed / narration-only mix)"
+    },
+    {
+      "check": "hook_added",
+      "ok": true,
+      "hard": false,
+      "reason": "runtime exceeds body+bookends by 80s (need >=25s for hook+breathing; body=612s)"
+    },
+    {
+      "check": "loudness",
+      "ok": true,
+      "hard": false,
+      "reason": "integrated -14.1 LUFS (target -14, band -16.0..-12.0)"
+    },
+    {
+      "check": "voice_is_master",
+      "ok": true,
+      "hard": true,
+      "reason": "master narration present: ['elevenlabs']"
+    },
+    {
+      "check": "captions_final",
+      "ok": true,
+      "hard": true,
+      "reason": "final captions captions.v001.srt (last cue 680s)"
+    }
+  ],
+  "audio_mix": "episodes/PD-2026-015-theranos/06_audio/audio_mix.v001.json",
+  "narration_index": "episodes/PD-2026-015-theranos/06_audio/narration_index.v001.json",
+  "composition": "TheranosPremium",
+  "render_command": "npx remotion render TheranosPremium <final.mp4> --codec=h264 --crf=16",
+  "external_side_effects": {
+    "upload": false,
+    "publish": false,
+    "schedule": false,
+    "paid_api": false
+  },
+  "owner_stop_point": "Final candidate is ready. STOP for owner approval and R3 legal/rights review before any upload/publish/schedule."
+}

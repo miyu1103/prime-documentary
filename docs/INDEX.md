@@ -44,3 +44,23 @@
 - `41_CURRENT_PLATFORM_ASSUMPTIONS_2026-06-13.md` — 41 — Current Platform Assumptions as of 2026-06-13
 - `VERTICAL_SLICE_MVP.md` — Vertical-Slice MVP — Runnable Pipeline
 - `INDEX.md` — Prime Documentary Documentation Index
+
+## Video Production Engine (Asset-First + Code-Operable Motion System)
+- `video-production-architecture.md` — 全体像（台本→Scene Plan→Shot Recipe→Asset→Remotion→Quality Gate）
+- `code-operable-motion-system.md` — Remotionを動画制作エンジンへ（preset/props駆動）
+- `motion-design-language.md` — 30種のmotion grammar定義
+- `remotion-animation-component-roadmap.md` — src/motion/* コンポーネント設計（既存ラップ）
+- `shot-recipe-system.md` — Shot Recipe型 + 20 sceneType
+- `scene-plan-schema.md` — Scene Plan v2（既存schema拡張）
+- `asset-manifest-schema.md` — Asset Manifest（素材棚レジストリ）
+- `asset-factory.md` — 14カテゴリの素材棚
+- `asset-priority-list.md` — 先に作る素材の優先リスト
+- `asset-generation-prompts.md` — 素材生成プロンプト雛形
+- `production-workflow.md` — 素材選択型10ステップ運用
+- `motion-quality-gate.md` — 7軸の品質ゲート
+- `cost-control-policy.md` — 既存ツールで回すコスト方針
+- `lottie-asset-workflow.md` — Lottie手動運用
+- `thumbnail-and-title-system.md` — サムネ/タイトル設計（CTR・A/B）
+- `audio-sfx-bgm-library-plan.md` — 音素材（SFX/環境音/BGM）調達・運用
+- `codex-motion-implementation-brief.md` — CodexへのPhase1実装指示（Motion最小エンジン）
+- `codex-asset-factory-implementation-brief.md` — CodexへのPhase2実装指示（Asset Factory）

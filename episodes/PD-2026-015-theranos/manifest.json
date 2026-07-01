@@ -1,0 +1,755 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-015-theranos",
+  "topic_id": "TOP-20260620-015",
+  "slug": "theranos",
+  "title_working": "When Does a Bold Promise Become a Crime? The Rise and Fall of Theranos",
+  "state": "scheduled",
+  "risk_class": "R3",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 12,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001",
+    "shotlist": "v001",
+    "usable_assets": "v001",
+    "review_proxy_audio": "v001",
+    "review_proxy_captions": "v001",
+    "review_proxy_qc": "v001",
+    "thumbnail_candidates": "v001",
+    "youtube_meta": "v009",
+    "rights_manifest": "v008",
+    "final_delivery": "v009",
+    "owner_review_request": "v008",
+    "approval_drafts": "v008",
+    "legal_rights_review_packet": "v008",
+    "captions_final": "v001",
+    "audio_mix": "v001",
+    "final_acceptance": "v006",
+    "chapters": "v008",
+    "tags": "v008",
+    "title": "v008",
+    "youtube_schedule_result": "v001",
+    "youtube_status_verify": "v001",
+    "youtube_captions_result": "v001",
+    "youtube_thumbnail_result": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-015-theranos-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/03_script/script.annotated.v001.json",
+      "checksum": "sha256:b839847e1f8ad5fe4bdb9b9f59b50e6cd3dca7a1480af14cde2a21dfc0cba31d",
+      "status": "approved",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner-review-request",
+      "artifact_type": "owner_review_request",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v001.json",
+      "checksum": "sha256:2b19645cd75f34505e58e8c113ccc3ceafbfac378c7e3df993fa7e7ae7346e75",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval-drafts",
+      "artifact_type": "approval_drafts",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v001.json",
+      "checksum": "sha256:7c16a25a8466f31900de1ec2486e2abe4261ec1a35936577cd4a90fe07d92a48",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal-rights-review-packet",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v001.json",
+      "checksum": "sha256:d4c93a506f328dd88555d0ce59ddde57ebdb2c4c6e8af37f87c254cb0f2b3772",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v002",
+      "artifact_type": "final_delivery",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v002.json",
+      "checksum": "sha256:553b748fb85c170c9a678bfbaecef79abf9656bcd19c5bd5db6cdc2002fd8c7d",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v002",
+      "artifact_type": "youtube_metadata",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v002.json",
+      "checksum": "sha256:7956202864e852374bfb99cc366bb61e74b3f99b493022695fc7708f1194ce42",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v002",
+      "artifact_type": "rights_manifest",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v002.json",
+      "checksum": "sha256:a5365d98f8c60538a85b381fc60b9fe4e07d1a5075237cf7de9430a3811d343a",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v002",
+      "artifact_type": "owner_review_request",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v002.json",
+      "checksum": "sha256:5206dcf0f070f58e656057dd43e3091580fad60b395d2d31fd617687e6638f9b",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v002",
+      "artifact_type": "approval_drafts",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v002.json",
+      "checksum": "sha256:564f4e1b07b5c0bbeac54bedb38c318ad7628acd126b11df1c2c08ffd80d468c",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v002",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v002.json",
+      "checksum": "sha256:70d82f01f0f6c1f292dc30f06f8a2d5c42aab5c62a90983a88c8435b430ec33a",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v001",
+      "artifact_type": "final_acceptance",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v001.acceptance.json",
+      "checksum": "sha256:c42dc305e157932c3234d3efca704b46636accb0cfb1b257710b16fc54627572",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v003",
+      "artifact_type": "final_delivery",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v003.json",
+      "checksum": "sha256:fcdea1f017e463943ad98e2a502b0c3c5877f6009781e84a73101c331723dfe2",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v003",
+      "artifact_type": "youtube_metadata",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v003.json",
+      "checksum": "sha256:26a4e8bf432944903dc7fb4b024d786e8e2f62ae7078631a4db79a81844df764",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v003",
+      "artifact_type": "rights_manifest",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v003.json",
+      "checksum": "sha256:f38e4da6a257d1cd10a2a1f915aba040fce55736743a0a6e7cd101c8cffbb310",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v003",
+      "artifact_type": "owner_review_request",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v003.json",
+      "checksum": "sha256:dd83f63f78c1a002ffed20688426ca7bfca9470612dce9b6a8452f8fc09b8918",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v003",
+      "artifact_type": "approval_drafts",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v003.json",
+      "checksum": "sha256:13e8655830d1c71afd1aa677e9e02e4c810f32632a5b60ba73164ea5ba8178ae",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v003",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v003.json",
+      "checksum": "sha256:ecc9ed3fb5fb3e45f7f2caadd5c6a08ba0814d00697de8a70f8e38393274d05e",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v002",
+      "artifact_type": "final_acceptance",
+      "revision": "v002",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v002.acceptance.json",
+      "checksum": "sha256:efe0ae49ad27e18fa675c36a4ae465c718f43d69d9ced68a71913b1d61507df5",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v004",
+      "artifact_type": "final_delivery",
+      "revision": "v004",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v004.json",
+      "checksum": "sha256:b0467f86cdb6a1d7c038923535984ff86091814a23423cc8648f007a3380a2cc",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v004",
+      "artifact_type": "youtube_metadata",
+      "revision": "v004",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v004.json",
+      "checksum": "sha256:23df1782c8d7d419d56f16ec98807b9290932a9fc427ca71f36307058417150a",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v004",
+      "artifact_type": "rights_manifest",
+      "revision": "v004",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v004.json",
+      "checksum": "sha256:06f3d70492ec4b644b83484377b55614c687681d8f2ab8171d2521eec4c8f36f",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v004",
+      "artifact_type": "owner_review_request",
+      "revision": "v004",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v004.json",
+      "checksum": "sha256:5e38364b7ad44f09248a2715b669bedc8a353245596141cf216e396fb78fcf7a",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v004",
+      "artifact_type": "approval_drafts",
+      "revision": "v004",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v004.json",
+      "checksum": "sha256:52ff6228f53a84ec8e5be4d85cd9b2bc4d38b0008a1351296b2accb087cf2b0b",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v004",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v004",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v004.json",
+      "checksum": "sha256:b8434c1bf1e341128699e2b3ee3cefc3bd30125b127aee69816f14cc3d290a2f",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v003",
+      "artifact_type": "final_acceptance",
+      "revision": "v003",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v003.acceptance.json",
+      "checksum": "sha256:44b1bacbd75cc1e0d5852692e030bfc962329cb9ad34cce85740de6871833703",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v005",
+      "artifact_type": "final_delivery",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v005.json",
+      "checksum": "sha256:2f5804921ae1d83b4e0844359cad593e3b0ac8fc78ab2889c802f75c33a75dff",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v005",
+      "artifact_type": "youtube_metadata",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v005.json",
+      "checksum": "sha256:27920fc35641b647ce26f4706767aa7bcca4e513a1bfc0b35da242f92be34267",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v005",
+      "artifact_type": "rights_manifest",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v005.json",
+      "checksum": "sha256:a5f8185b7ddf44cb8baef82674736346554a7858c69fffa7736ae26b2c8c0e8c",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v005",
+      "artifact_type": "owner_review_request",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v005.json",
+      "checksum": "sha256:d8fd1cd1e08f7606b278b9e8bafdc568ddb5c4dfb99370abbff1b207c87fc88d",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v005",
+      "artifact_type": "approval_drafts",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v005.json",
+      "checksum": "sha256:2051f22f66280d73c81e3d1e39055345b2f85eb4cc85ad7f9373ce3409acd219",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v005",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v005.json",
+      "checksum": "sha256:e271069373f6d17caf05a28d0d086e7a7233cd3bba8ab8d5d441486bb0cafce4",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v004",
+      "artifact_type": "final_acceptance",
+      "revision": "v004",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v004.acceptance.json",
+      "checksum": "sha256:9deba61780ce99ffb59f92a7b09363d6cf895fad6b7d6a1e315403b0f0f5bba3",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v006",
+      "artifact_type": "final_delivery",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v006.json",
+      "checksum": "sha256:b5ba6be9bde1e725f614c2cba63b69cf401439981e42680764d0acc3e956d193",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v006",
+      "artifact_type": "youtube_metadata",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v006.json",
+      "checksum": "sha256:fe0b2b986b07b29b5121fc520462bb50a5c2551b280e3823a1dc15e290fd7353",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v006",
+      "artifact_type": "rights_manifest",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v006.json",
+      "checksum": "sha256:37b13c04e3fc0da81f690a29994536d046c876644e267ddf96f1f7932c7d0378",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v006",
+      "artifact_type": "owner_review_request",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v006.json",
+      "checksum": "sha256:a953bfac458c5d909e8f9e93c14019c9d670a8840d093e96ae5e246a86978ae7",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v006",
+      "artifact_type": "approval_drafts",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v006.json",
+      "checksum": "sha256:27c9fde8ab023935cca6dc2bbc76edd6cf2df8d5fc04dac5aaeb275e2f7247b1",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v006",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v006.json",
+      "checksum": "sha256:ff42d6b4aa30bb230d1f4fc88c2e4a6efa8233ec037c2c8bde1a84ec0fef9a1e",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v005",
+      "artifact_type": "final_acceptance",
+      "revision": "v005",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v005.acceptance.json",
+      "checksum": "sha256:8671c4d4f1ab0c183b0404b250b825d238c0e99132af1c0da221700d9514022d",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v007",
+      "artifact_type": "final_delivery",
+      "revision": "v007",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v007.json",
+      "checksum": "sha256:b0a2afbd6cf234b917a0ad00833864e13b117e5c987b4af9b6aa7ea9bf634fa1",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v007",
+      "artifact_type": "youtube_metadata",
+      "revision": "v007",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v007.json",
+      "checksum": "sha256:e3a3d146f5a1e3d138100ec673c1d9a38340cb7ed48870a4cb8327f36d875cef",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v007",
+      "artifact_type": "rights_manifest",
+      "revision": "v007",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v007.json",
+      "checksum": "sha256:a6a852829fc6b04b35618997cb0ac1a79f43f93803c4483da6644b92ac9bda7b",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v007",
+      "artifact_type": "owner_review_request",
+      "revision": "v007",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v007.json",
+      "checksum": "sha256:6de7f3237676285067b5cc48393df424878f18cada4b172ad649d4c05dc4c519",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v007",
+      "artifact_type": "approval_drafts",
+      "revision": "v007",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v007.json",
+      "checksum": "sha256:85aff3d6f41ec838d9c89e9ab04f70a0c874d63fe5431150ff78f2ccde5c6a79",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v007",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v007",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v007.json",
+      "checksum": "sha256:0fecc57c48ce55f33cc6946831ea8954ec81cb0dde9115f7afcf5dc6f8c107ef",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v006",
+      "artifact_type": "final_acceptance",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v006.acceptance.json",
+      "checksum": "sha256:9fd0129980216de24a68855829c0bd460440a34e3e27ba9013a3d22d01adea26",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v008",
+      "artifact_type": "final_delivery",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v008.json",
+      "checksum": "sha256:07dfcc02d14e585c4959bdef6ac730efe9d8667639218effebeb3281c91a959b",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v008",
+      "artifact_type": "youtube_metadata",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v008.json",
+      "checksum": "sha256:47937ab87ad190e76da2ecebb932cd6e8926ba1c4266b63e03cd2029c4d01963",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v008",
+      "artifact_type": "rights_manifest",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v008.json",
+      "checksum": "sha256:7706a57b3eba516bc9e7fa739d6c34675d51c2b09eadc61a6c48b300522740a6",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v008",
+      "artifact_type": "owner_review_request",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v008.json",
+      "checksum": "sha256:4bb6194c2774a111da77efa32e3718a5f7e02a4c9f9b034e883f11777618cbe1",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v008",
+      "artifact_type": "approval_drafts",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v008.json",
+      "checksum": "sha256:b703fb82a931e3d4ff818a428c1ccd76d6fd50d84643342c79adb2de81a7e31a",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v008",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v008.json",
+      "checksum": "sha256:1c13f6cfe5907985ce1d60069324762efae9baad2d5a878f9b711a732be090a9",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v006",
+      "artifact_type": "final_acceptance",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v006.acceptance.json",
+      "checksum": "sha256:9fd0129980216de24a68855829c0bd460440a34e3e27ba9013a3d22d01adea26",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v008",
+      "artifact_type": "final_delivery",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v008.json",
+      "checksum": "sha256:3e3fb56da842a802c7112959f69d56f62490d0c7c217af72023f30fdf1cff28e",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v008",
+      "artifact_type": "youtube_metadata",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v008.json",
+      "checksum": "sha256:e95039f9f38c4742c01e9549419f06632ece3a8c30c86fae93873e9960eb3e32",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-rights_manifest-v008",
+      "artifact_type": "rights_manifest",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/rights_manifest.v008.json",
+      "checksum": "sha256:25b7b2837bf9dfd7466620386e86ee1d23718de0d5b8aab3ecf8d1a5d218b865",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-owner_review_request-v008",
+      "artifact_type": "owner_review_request",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/OWNER_REVIEW_REQUEST.v008.json",
+      "checksum": "sha256:4d3841d5e6b0c241eda515b1d16481db08be0866fc1ff9a662c5cd5ac06bc4d8",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-approval_drafts-v008",
+      "artifact_type": "approval_drafts",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/approval_drafts.v008.json",
+      "checksum": "sha256:b7198730f37ad3b7b7021fed53e62a36ebc73d4fdb68346e1cf653ca4eb505fe",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-legal_rights_review_packet-v008",
+      "artifact_type": "legal_rights_review_packet",
+      "revision": "v008",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/legal_rights_review_packet.v008.json",
+      "checksum": "sha256:0ad72c5ce2f84ee2c01eb8c84f4540cc1da1cdb084fa5255ec06cb204a243d56",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_acceptance-v006",
+      "artifact_type": "final_acceptance",
+      "revision": "v006",
+      "uri": "artifact://episodes/PD-2026-015-theranos/08_edit/renders/final.v006.acceptance.json",
+      "checksum": "sha256:9fd0129980216de24a68855829c0bd460440a34e3e27ba9013a3d22d01adea26",
+      "status": "candidate",
+      "rights_status": "conditional",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_metadata-v009",
+      "artifact_type": "youtube_metadata",
+      "revision": "v009",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_meta.v009.json",
+      "checksum": "sha256:4370abf22ba3103c3fd6899df24b556afe1aea96ce4bfb9f01e0004649e2d3e5",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-final_delivery-v009",
+      "artifact_type": "final_delivery",
+      "revision": "v009",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/final_delivery.v009.json",
+      "checksum": "sha256:ed5afbae6ab8f0a21af13ba68fbda03e67042a6221ff9ea9b460529800f3c712",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_schedule_result-v001",
+      "artifact_type": "youtube_schedule_result",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_schedule_result.v001.json",
+      "checksum": "sha256:7ee48e24038bcc32e47a133165cbf7dab29853beaed8c5e30dcb0208a8c78a9c",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_status_verify-v001",
+      "artifact_type": "youtube_status_verify",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_status_verify.v001.json",
+      "checksum": "sha256:3a8663ab0bcc4f37f08c4696d2b0e21cb4360c1412af320de66a5c242b03c588",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_captions_result-v001",
+      "artifact_type": "youtube_captions_result",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_captions_result.v001.json",
+      "checksum": "sha256:cf7647c1b28eca48e0c7a11a709317b9baa46d34521d49cc69415a40456c62af",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-015-theranos-youtube_thumbnail_result-v001",
+      "artifact_type": "youtube_thumbnail_result",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-015-theranos/09_package/youtube_thumbnail_result.v001.json",
+      "checksum": "sha256:8e208571f3e253091a1cc8ed5a54c3d438b513a002355808b8f786c425d18b28",
+      "status": "scheduled",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001",
+    "APR-0002",
+    "APR-0003",
+    "APR-0004",
+    "APR-0005",
+    "APR-0006"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "Claude owns research+script; Codex begins at scenes/visuals. Image gen = Codex; edit = Remotion+FFmpeg.",
+    "script_qc PASS (no AI-filler), timing ~10.2min; promoted to script_verified.",
+    "R3 — LIVING, CRIMINALLY CONVICTED person (Elizabeth Holmes; also Ramesh Balwani). DEDICATED RIGHTS/LEGAL REVIEW REQUIRED before publish (rights_status=review_required). Truth is the safeguard: keep everything record-based.",
+    "PHRASING (load-bearing): state the FOUR investor-fraud CONVICTIONS as fact; patient counts = 'acquitted/not guilty'; the 3 deadlocked counts = 'mistrial/no verdict' — NEVER 'guilty'. Acquittal != exoneration and != 'the tech worked' (CLM-0010). Attribute intent/knowledge to the jury/court, not the narrator.",
+    "NO real-person likeness or deepfake of Holmes/Balwani (invariant 11) — magazine-cover/courtroom visuals must be symbolic and AI-disclosed. Figures: Holmes 135 months (~11y3m); Balwani ~155 months ('nearly 13 years'). Walgreens rollout limited (mostly Arizona) — not nationwide.",
+    "Heavy media on the external SSD (H:\\pd-media), not in this repo.",
+    "Review-proxy package prepared; public upload/schedule still blocked by owner approval and final narration/legal gates.",
+    "Theranos legal_rights_review_packet.v001 prepared; public release remains blocked until owner/legal review and final narration decision are recorded for exact hashes.",
+    "Final candidate v002 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v001.mp4 sha256=sha256:61166f21665e0c0f4d7dd00582278f9613de27736ec8efb9619e9a494c18d418; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "Final candidate v003 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v002.mp4 sha256=sha256:0ae40d6ed8b98be5a7d83e3276fb1c97f6c6e0c97282e0f117691c77c3d32f17; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "Final candidate v004 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v003.mp4 sha256=sha256:73c9300e761f6abe449f8322b5e78f3cde36215fa49fbb7cc26d6485de8f056e; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "Final candidate v005 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v004.mp4 sha256=sha256:42d4bc6ec6e822c91c42fda518cd3d79739d6399b58da2244b96655e6e717ff2; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "Final candidate v006 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v005.mp4 sha256=sha256:e797da9c5cf0b8918fa192be4f0fa8c2d7d847cc134e47c1dc3d8458bf3fdd03; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "Final candidate v007 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4 sha256=sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "Final candidate v008 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4 sha256=sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "Final candidate v008 rendered and independently accepted: H:/pd-media/episodes/PD-2026-015-theranos/08_edit/renders/final/theranos_premium_final_v006.mp4 sha256=sha256:3c769f26b3a63b4c665b8b2fb4c68492be2e3e2c965f075cb474c3695063a4ec; public release remains blocked by APR-0002..APR-0006 including R3 legal review.",
+    "YouTube private upload completed for Theranos v009 package: video_id LXFjJqE6vKU, thumbnail set, public release scheduled for 2026-06-30T12:00:00+09:00. Immediate public publish not performed."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-20T08:00:00+09:00",
+  "updated_at": "2026-06-28T04:04:45.665581+00:00",
+  "video_id": "LXFjJqE6vKU",
+  "video_url": "https://youtu.be/LXFjJqE6vKU",
+  "public_schedule_active": true
+}

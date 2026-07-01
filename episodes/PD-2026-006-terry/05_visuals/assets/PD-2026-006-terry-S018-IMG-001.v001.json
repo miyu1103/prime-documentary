@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "asset_id": "PD-2026-006-terry-S018-IMG-001",
+  "episode_id": "PD-2026-006-terry",
+  "scene_id": "S018",
+  "shot_id": "S018-SH001",
+  "asset_type": "image",
+  "revision": "v001",
+  "status": "approved",
+  "uri": "artifact://episodes/PD-2026-006-terry/05_visuals/selected/S018/PD-2026-006-terry-S018-IMG-001.v001.png",
+  "checksum": "sha256:65126460a83dd5e9707680dcc0de88969732d2643d72c6ab9b9de0f9af416aee",
+  "mime_type": "image/png",
+  "size_bytes": 1169491,
+  "provenance": {
+    "created_by": "codex",
+    "provider": "local-a1111-sdxl",
+    "provider_request_id": null,
+    "model_profile": "juggernautXL_ragnarokBy.safetensors [dd08fa32f9]",
+    "prompt_ref": "episodes/PD-2026-006-terry/04_scenes/codex_image_prompts.v001.md#COD-S018-coat-fabric-hands",
+    "seed": 608980,
+    "input_hash": "sha256:bbbf36cb3523b300fca8dbd7f09add812d650549cf58715408ef0013cc5cbc24"
+  },
+  "rights": {
+    "status": "clear",
+    "origin": "AI-generated local SDXL symbolic reconstruction",
+    "commercial_use": "allowed",
+    "evidence_ref": "episodes/PD-2026-006-terry/09_package/rights_manifest.v001.json#PD-2026-006-terry-S018-IMG-001",
+    "notes": "Generated locally on owner machine. No upload or paid API. Use as outer-clothing boundary motif with Remotion weapons-only overlay; not presented as authentic frisk footage."
+  },
+  "qc": {
+    "status": "pass",
+    "score": 92,
+    "findings": [
+      "Pass: high-quality coat texture and hands with no face or likeness risk.",
+      "Pass: no readable text, logos, badge, or weapon.",
+      "Pass: useful as outer-clothing boundary motif for S018/S019.",
+      "Caution: hands read as clasped rather than pat-down; do not use as literal frisk action. Pair with Remotion outer-clothing/weapons-only overlay."
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-022-milken",
+  "topic_id": "TOP-20260630-022",
+  "slug": "milken",
+  "title_working": "Michael Milken: Genius, or the Face of Greed?",
+  "state": "script_verified",
+  "risk_class": "R3",
+  "production_tier": "A",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "topic": "v001",
+    "sources": "v001",
+    "claims": "v001",
+    "script": "v001",
+    "script_qc": "v001"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "PD-2026-022-milken-topic",
+      "artifact_type": "topic",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/00_topic/topic.v001.json",
+      "checksum": "sha256:79a8a4a69f9e3ce111daa5e10593f6e42f25dfcc585f06a130dd1bb23dcbf282",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-sources",
+      "artifact_type": "source_set",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/01_research/sources.v001.json",
+      "checksum": "sha256:fdcd32c9976897e308f3e0a6b3330ef56d1730c223da23103fb296674f28928e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "warn"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-claims",
+      "artifact_type": "claim_ledger",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/01_research/claims.v001.json",
+      "checksum": "sha256:eb1cead41d42ba74d61187c743a6cd542756b2ce44d7d19c81575bd58d8f537e",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    },
+    {
+      "artifact_id": "PD-2026-022-milken-script-annotated",
+      "artifact_type": "annotated_script",
+      "revision": "v001",
+      "uri": "artifact://episodes/PD-2026-022-milken/03_script/script.annotated.v001.json",
+      "checksum": "sha256:c074a0ab2181e239a9450532a8ab2170816fb817b0667d6655d30add5690b131",
+      "status": "candidate",
+      "rights_status": "clear",
+      "qc_status": "pass"
+    }
+  ],
+  "approvals": [
+    "APR-0001"
+  ],
+  "costs": {
+    "estimated": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 0.0,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    }
+  },
+  "warnings": [
+    "R3 LIVING person who PLEADED GUILTY (April 1990, six felony counts) and was later PARDONED (Feb 18, 2020). Strictly record-based and neutral. NEVER say 'convicted at trial', 'convicted of insider trading', or 'convicted of racketeering/RICO'. Always distinguish CHARGED (98 counts, incl. RICO) from PLEADED (6 counts); RICO + 92 counts dropped.",
+    "The 2020 pardon is clemency, NOT innocence/exoneration: the guilty plea STANDS and the SEC LIFETIME industry BAN was NOT lifted. The genius-vs-greed debate must stay ATTRIBUTED ('critics argue / defenders argue'), never settled fact.",
+    "Visuals: NO real-person likeness of anyone, NO real logos/seals, NO readable text in images (Remotion adds text). Symbolic reconstruction only.",
+    "Left-process only (Claude): topic/research/claims/script. Codex owns scenes/visuals/audio/edit/render.",
+    "Narration sized at measured ~173 wpm (~26.8 min, Gardner-level) to fill ~27-33 min runtime with hook montage, OP/ED bookends, music beats and the CTA hold; validator estimates at 150 wpm (~30.9 min, in mid band).",
+    "Durable source content hashes PENDING (capture before publish; non-blocking). Final-script approval is an OWNER gate: APR-0001 is PENDING (not self-approved). Before broadcast: re-confirm the subject is living and lock verbatim White House / court / SEC quotes."
+  ],
+  "blockers": [],
+  "created_at": "2026-06-30T00:00:00+00:00",
+  "updated_at": "2026-06-30T00:00:00+00:00"
+}
