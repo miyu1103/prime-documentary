@@ -1,0 +1,43 @@
+{
+  "episode_id": "PD-2026-021-dbcooper",
+  "revision": "v001",
+  "status": "gate_accepted",
+  "render": "H:/pd-media/episodes/PD-2026-021-dbcooper/08_edit/final.mp4",
+  "captions": "C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-021-dbcooper/08_edit/captions.v001.srt",
+  "thumbnails": "episodes/PD-2026-021-dbcooper/10_thumbnail/*.png; 09_package/thumbnail.selected.v001.png",
+  "notes": [
+    "Hero images must come from Codex app output under H:/pd-media/episodes/PD-2026-021-dbcooper/05_visuals/selected; no local image generation.",
+    "R2 unsolved-case owner review remains required before upload/publish."
+  ],
+  "independent_gate": {
+    "check_final_acceptance": {
+      "command": ".venv/Scripts/python.exe scripts/check_final_acceptance.py 21 --json",
+      "exit_code": 0,
+      "status": "PASS",
+      "duration_seconds": 1781.07,
+      "loudness_lufs": -14.3,
+      "black_frames_seconds": 0.0,
+      "frozen_frames_seconds": 0.0,
+      "silence_seconds": 0.0,
+      "caption_last_cue_seconds": 1772,
+      "factory_assets": 64,
+      "hero_images": 46,
+      "thumbnails_1280x720": 4
+    },
+    "check_dynamics": {
+      "command": ".venv/Scripts/python.exe scripts/check_dynamics.py 21",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    "check_runtime_band": {
+      "command": ".venv/Scripts/python.exe scripts/check_runtime_band.py H:/pd-media/episodes/PD-2026-021-dbcooper/08_edit/final.mp4",
+      "exit_code": 0,
+      "status": "PASS",
+      "band_seconds": [
+        1620,
+        1980
+      ]
+    }
+  },
+  "created_at": "2026-07-01T00:15:52.314667+00:00"
+}
