@@ -10,7 +10,7 @@ Result: PASS, exit code 0.
 
 Final video: `H:\pd-media\episodes\PD-2026-024-rajaratnam\08_edit\v001.mp4`
 
-Final SHA-256: `f82918b214cee1c6caf30116fecdd245ddaf7f67c4f41864312d9e06dd6e2047`
+Final SHA-256: `b5e7f23d6829b0fab023b6ed3ce73c314767f45c94cf20843685bdf2b5034ecf`
 
 ## Gate Measurements
 
@@ -19,8 +19,9 @@ Final SHA-256: `f82918b214cee1c6caf30116fecdd245ddaf7f67c4f41864312d9e06dd6e2047
 - NVENC: not used, OK.
 - Narration: ElevenLabs master present, provider contains `elevenlabs`, OK.
 - Narration budget: estimated $8.04 of $25 cap, OK.
-- Captions: 562 cues, last cue 1707.686s, 99.47% coverage, OK.
-- Caption format: 0 strict violations; min duration 1.000s, max duration 4.932s, max CPS 16.44, 0 gap violations, OK.
+- Captions: 565 cues, last cue 1707.686s, 99.47% coverage, OK.
+- Caption format: 0 strict violations; max line length 42, max CPS 16.27, 0 gap violations, OK.
+- Caption display: reduced to Arial 17, no box, thin outline/drop shadow, bottom-safe; weak line endings smoothed, OK.
 - BGM: continuous six-cue Suno-origin library bed, total silence 0s, longest silence 0s, OK.
 - Loudness: -14.3 LUFS integrated, OK.
 - Motion: frozen total 0.0s, longest freeze 0.0s, OK.

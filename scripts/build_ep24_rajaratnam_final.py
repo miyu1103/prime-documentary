@@ -46,6 +46,33 @@ FPS = 30
 W, H = 1920, 1080
 PANEL_W, PANEL_H = 3840, 2160
 SCENE_COUNT = 42
+CAPTION_LINE_MAX = 42
+CAPTION_GROUP_MAX = 78
+CAPTION_WEAK_LINE_ENDS = {
+    "a",
+    "an",
+    "and",
+    "are",
+    "as",
+    "at",
+    "be",
+    "been",
+    "by",
+    "for",
+    "from",
+    "in",
+    "is",
+    "of",
+    "on",
+    "or",
+    "that",
+    "the",
+    "this",
+    "to",
+    "was",
+    "were",
+    "with",
+}
 WORK = EP_MEDIA / "08_edit" / "_build_v001"
 VISUALS = EP_MEDIA / "05_visuals"
 SELECTED = VISUALS / "selected"
@@ -474,23 +501,36 @@ def srt_ts(t: float) -> str:
 
 
 def wrap_caption(words: list[str]) -> str:
-    lines: list[str] = []
-    cur: list[str] = []
-    for word in words:
-        trial = " ".join(cur + [word])
-        if cur and len(trial) > 42:
-            lines.append(" ".join(cur))
-            cur = [word]
-        else:
-            cur.append(word)
-    if cur:
-        lines.append(" ".join(cur))
-    if len(lines) <= 2:
-        return "\n".join(lines)
     joined = " ".join(words)
+    if len(joined) <= CAPTION_LINE_MAX:
+        return joined
+    candidates: list[tuple[int, int]] = []
     spaces = [m.start() for m in re.finditer(" ", joined)]
-    cut = min(spaces, key=lambda x: abs(x - len(joined) // 2)) if spaces else len(joined) // 2
-    return joined[:cut].strip() + "\n" + joined[cut:].strip()
+    if not spaces:
+        return joined
+    for cut in spaces:
+        left = joined[:cut].strip()
+        right = joined[cut + 1 :].strip()
+        if not left or not right:
+            continue
+        left_words = left.split()
+        right_words = right.split()
+        left_last = left_words[-1].strip(".,;:!?\"')(").lower()
+        right_first = right_words[0].strip(".,;:!?\"')(").lower()
+        score = abs(len(left) - len(right)) * 3
+        score += max(0, len(left) - CAPTION_LINE_MAX) * 1000
+        score += max(0, len(right) - CAPTION_LINE_MAX) * 1000
+        if left_last in CAPTION_WEAK_LINE_ENDS:
+            score += 900
+        if right_first in CAPTION_WEAK_LINE_ENDS and len(right_words) <= 2:
+            score += 30
+        if len(left_words) == 1 or len(right_words) == 1:
+            score += 60
+        candidates.append((score, cut))
+    if not candidates:
+        return joined
+    _, cut = min(candidates)
+    return joined[:cut].strip() + "\n" + joined[cut + 1 :].strip()
 
 
 def split_caption_text(text: str) -> list[str]:
@@ -499,12 +539,12 @@ def split_caption_text(text: str) -> list[str]:
     cur: list[str] = []
     for word in words:
         phrase = " ".join(cur + [word])
-        if cur and len(phrase) > 70:
+        if cur and len(phrase) > CAPTION_GROUP_MAX:
             groups.append(cur)
             cur = []
         cur.append(word)
         phrase = " ".join(cur)
-        if (re.search(r"[.?!]([\"')\]]*)$", word) and len(phrase) >= 18) or (re.search(r"[,;:]$", word) and len(phrase) >= 34) or len(phrase) >= 76:
+        if (re.search(r"[.?!]([\"')\]]*)$", word) and len(phrase) >= 18) or (re.search(r"[,;:]$", word) and len(phrase) >= 30) or len(phrase) >= CAPTION_GROUP_MAX:
             groups.append(cur)
             cur = []
     if cur:
@@ -532,7 +572,7 @@ def merge_short_caption_groups(parts: list[str], available: float) -> list[str]:
         span = None
         for lo, hi in candidates:
             wrapped = wrap_caption((groups[lo].replace("\n", " ") + " " + groups[hi].replace("\n", " ")).split())
-            if len(wrapped.splitlines()) <= 2 and max(len(x) for x in wrapped.splitlines()) <= 42:
+            if len(wrapped.splitlines()) <= 2 and max(len(x) for x in wrapped.splitlines()) <= CAPTION_LINE_MAX:
                 merged = wrapped
                 span = (lo, hi)
                 break
@@ -540,6 +580,62 @@ def merge_short_caption_groups(parts: list[str], available: float) -> list[str]:
             break
         groups[span[0] : span[1] + 1] = [merged]
     return groups
+
+
+def smooth_weak_linebreak_cues(cues: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    smoothed: list[dict[str, Any]] = []
+    gap = 2 / FPS
+    for cue in cues:
+        lines = cue["text"].splitlines()
+        if len(lines) != 2:
+            smoothed.append(cue)
+            continue
+        left_last = lines[0].split()[-1].strip(".,;:!?\"')(").lower()
+        if left_last not in CAPTION_WEAK_LINE_ENDS:
+            smoothed.append(cue)
+            continue
+        left_words = lines[0].split()
+        weak_word = left_words[-1]
+        shifted_right = f"{weak_word} {lines[1]}"
+        if len(left_words) > 1 and len(shifted_right) <= CAPTION_LINE_MAX:
+            lines = [" ".join(left_words[:-1]), shifted_right]
+        available = cue["end"] - cue["start"] - gap
+        weights = [max(1, len(line.replace(" ", ""))) for line in lines]
+        durations = [available * weight / sum(weights) for weight in weights]
+        if available <= 0 or min(durations) < 1.0:
+            smoothed.append(cue)
+            continue
+        cps = [len(lines[i].replace(" ", "")) / durations[i] for i in range(2)]
+        if max(cps) > 17:
+            smoothed.append(cue)
+            continue
+        first_end = round(cue["start"] + durations[0], 3)
+        second_start = round(first_end + gap, 3)
+        smoothed.append({"index": cue["index"], "start": cue["start"], "end": first_end, "text": lines[0]})
+        smoothed.append({"index": cue["index"], "start": second_start, "end": cue["end"], "text": lines[1]})
+    for i in range(len(smoothed) - 1):
+        lines = smoothed[i]["text"].splitlines()
+        if len(lines) != 1 or re.search(r"[.?!]([\"')\]]*)$", lines[0]):
+            continue
+        words = lines[0].split()
+        if len(words) <= 1:
+            continue
+        left_last = words[-1].strip(".,;:!?\"')(").lower()
+        if left_last not in CAPTION_WEAK_LINE_ENDS:
+            continue
+        current_text = " ".join(words[:-1])
+        next_text = wrap_caption((words[-1] + " " + smoothed[i + 1]["text"].replace("\n", " ")).split())
+        if max(len(line) for line in next_text.splitlines()) > CAPTION_LINE_MAX:
+            continue
+        current_cps = len(current_text.replace(" ", "")) / max(0.1, smoothed[i]["end"] - smoothed[i]["start"])
+        next_cps = len(next_text.replace("\n", " ").replace(" ", "")) / max(0.1, smoothed[i + 1]["end"] - smoothed[i + 1]["start"])
+        if max(current_cps, next_cps) > 17:
+            continue
+        smoothed[i]["text"] = current_text
+        smoothed[i + 1]["text"] = next_text
+    for idx, cue in enumerate(smoothed, 1):
+        cue["index"] = idx
+    return smoothed
 
 
 def write_captions(timed: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -569,6 +665,7 @@ def write_captions(timed: list[dict[str, Any]]) -> list[dict[str, Any]]:
             continue
         limit = cues[i + 1]["start"] - gap if i + 1 < len(cues) else cue["start"] + 1.0
         cue["end"] = round(min(cue["start"] + 1.0, limit), 3)
+    cues = smooth_weak_linebreak_cues(cues)
     CAPTIONS_SRT.parent.mkdir(parents=True, exist_ok=True)
     CAPTIONS_SRT.write_text(
         "\n".join(f"{c['index']}\n{srt_ts(c['start'])} --> {srt_ts(c['end'])}\n{c['text']}\n" for c in cues),
@@ -1174,8 +1271,8 @@ def burn_and_mux(total: float) -> None:
     srt = str(CAPTIONS_SRT.resolve()).replace("\\", "/").replace(":", "\\:")
     vf = (
         f"subtitles='{srt}':force_style="
-        "'FontName=Arial,FontSize=30,PrimaryColour=&H00F5F7FA,OutlineColour=&H00000000,"
-        "BorderStyle=3,BackColour=&HA0000000,Outline=2,Shadow=1,MarginV=18,Alignment=2'"
+        "'FontName=Arial,FontSize=17,PrimaryColour=&H00F5F7FA,OutlineColour=&H76000000,"
+        "BorderStyle=1,Outline=1.0,Shadow=0.45,MarginV=74,Alignment=2'"
     )
     FINAL_MP4.parent.mkdir(parents=True, exist_ok=True)
     run(
