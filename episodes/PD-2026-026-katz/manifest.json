@@ -54,7 +54,7 @@
       "artifact_type": "script_markdown",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-026-katz/03_script/script.en.v001.md",
-      "checksum": "sha256:58c1bf2a6176b4afa56e30d569b1534ba2a0ffdac4d418547676e8b8e073a685",
+      "checksum": "sha256:aed14c9d4e652ba4905d98085df16b9084cf2d6c95c9c057f52b7f18e3682b8f",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -64,8 +64,8 @@
       "artifact_type": "annotated_script",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-026-katz/03_script/script.annotated.v001.json",
-      "checksum": "sha256:84dc0b3dfb30f8660ff00ca122087ec380fd32aeb81daf5d75aca7a01c937c1d",
-      "status": "approved",
+      "checksum": "sha256:01893c07f18c7cd65a5628f2ccbfa37e5db7ba4036db910b9f8a73d6cc9c609d",
+      "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
     },
@@ -74,7 +74,7 @@
       "artifact_type": "qc_report",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-026-katz/03_script/script_qc.v001.json",
-      "checksum": "sha256:3bb4f404d11780a416d9f30414c3740ea81f46863a7efdc37a640667de803f98",
+      "checksum": "sha256:8eee3f4c629c93a3cea5e6e4e7695057f649d4c652fcdcfd57eaf79365fc0c45",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -119,9 +119,10 @@
     "Do NOT overstate the holding downstream: the Court required prior judicial authorization (a warrant) and did NOT ban wiretapping (CLM-0008). The 'reasonable expectation of privacy' test is Harlan's concurrence (CLM-0009), not the majority holding.",
     "Charles (Charlie) Katz and the justices are real people on the public record; treat by role, factually; no real-person likeness in AI visuals (invariant 11). Illegal gambling appears only as the factual reason for the surveillance, never depicted or glamorized.",
     "The Codex image-prompt file (04_scenes/codex_image_prompts.v001.md) was authored earlier and was NOT modified; the annotated script's visual_intent is consistent with its beats.",
-    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:/pd-media), not in this repo."
+    "Heavy media (scenes/visuals/audio/edit) will be stored on the external SSD (H:/pd-media), not in this repo.",
+    "2026-07-04 content-polish pass on script v001 (in-place, pre-approval): accuracy re-verified against the primary opinion (389 U.S. 347) via Cornell LII (all wording locks held: 'protects people, not places' = Stewart majority; two-part reasonable-expectation-of-privacy = Harlan concurrence; no wiretap ban, warrant required; device on OUTSIDE of booth, no trespass; 7-1, Dec 18 1967, Black lone dissent; Olmstead trespass doctrine retired). Line/hook/voice polish only; no new facts except naming the cross-state bookmaker cities Miami and Boston (already in CLM-0005/SRC-0001). New annotated content_hash sha256:01893c07f18c7cd65a5628f2ccbfa37e5db7ba4036db910b9f8a73d6cc9c609d; APR-0001 re-bound to the new hash with decision=pending (re-approval required, NOT self-approved). script_qc: 1730 words, FK 6.2, ~11.5 min."
   ],
   "blockers": [],
   "created_at": "2026-07-04T00:00:00+00:00",
-  "updated_at": "2026-07-04T00:00:00+00:00"
+  "updated_at": "2026-07-04T12:00:00+00:00"
 }
