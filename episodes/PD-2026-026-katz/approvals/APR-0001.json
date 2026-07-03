@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-026-katz",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "pending",
+  "requested_at": "2026-07-04T00:00:00+00:00",
+  "requested_by": "local-claude-code",
+  "decided_at": null,
+  "decided_by": null,
+  "notes": "Content/direction sign-off REQUEST for the Katz v. United States annotated script v001. Bound to content_hash sha256:84dc0b3dfb30f8660ff00ca122087ec380fd32aeb81daf5d75aca7a01c937c1d - re-approval required if the script revision/hash changes (rules/12). This artifact records that a HUMAN OWNER final-script gate is still required (decision=pending, decided_by=null); it is NOT a self-approval for publication and no downstream production, paid API, upload, or publish is authorized by it. Facts were fact-checked 2026-07-04 against the primary opinion (389 U.S. 347) via Cornell LII and cross-checked on Oyez.",
+  "conditions": [
+    "Human owner must review and decide this final-script gate before scenes/visuals or any paid/production step.",
+    "Keep tone neutral between personal privacy and legitimate law-enforcement need; do NOT overstate the holding (CLM-0008): the Court required prior judicial authorization (a warrant) and did NOT ban wiretapping.",
+    "Present the 'reasonable expectation of privacy' two-part test as Justice Harlan's concurrence (CLM-0009) that later became the standard, NOT as the majority holding.",
+    "Charles Katz and the justices are real people on the public record: handle factually, by role; no real-person likeness in visuals; illegal gambling appears only as the factual reason for surveillance, never depicted or glamorized.",
+    "script_qc PASS and durable source content hashes already captured (2026-07-04); re-verify at publish time if sources change."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-026-katz/03_script/script.annotated.v001.json"
+}
