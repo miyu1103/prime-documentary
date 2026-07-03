@@ -1,0 +1,23 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-027-rodriguez",
+  "target_type": "script",
+  "target_id": "script.annotated",
+  "target_revision": "v001",
+  "decision": "pending",
+  "requested_at": "2026-07-04T00:00:00+00:00",
+  "requested_by": "local-claude-code",
+  "decided_at": null,
+  "decided_by": null,
+  "notes": "Content/direction sign-off REQUEST for the Rodriguez v. United States annotated script v001. Bound to content_hash sha256:b2ab348c7579bee14bafb6d51738d846f38dd375be85afe0da6fd43ec531f38e - re-approval required if the script revision/hash changes (rules/12). This records that a HUMAN OWNER final-script gate is still required (decision=pending, decided_by=null); it is NOT a self-approval for publication and no downstream production, paid API, upload, or publish is authorized by it. Facts were fact-checked 2026-07-04 against the primary opinion (575 U.S. 348) via Cornell LII and cross-checked on Justia and Oyez.",
+  "conditions": [
+    "Human owner must review and decide this final-script gate before scenes/visuals or any paid/production step.",
+    "Keep tone neutral between the driver's time/liberty and legitimate law-enforcement need; do NOT overstate the holding (CLM-0009): the Court barred prolonging a stop past its mission without reasonable suspicion and remanded - it did NOT ban dog sniffs or traffic stops, and did not free Rodriguez.",
+    "Dennys Rodriguez and Officer Morgan Struble are real people on the public record: handle factually, by role; no real-person likeness in visuals. The methamphetamine is only 'what the search found' - never depict drugs; the K-9 is procedural, never attacking.",
+    "Present the dissents (Thomas/Alito/Kennedy) fairly: they argued the short, safety-motivated delay was reasonable / de minimis and that reasonable suspicion existed.",
+    "script_qc PASS and durable source content hashes already captured (2026-07-04); re-verify at publish time if sources change."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-027-rodriguez/03_script/script.annotated.v001.json"
+}

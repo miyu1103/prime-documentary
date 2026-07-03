@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-027-rodriguez",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 1859,
+    "sentences": 122,
+    "avg_sentence_words": 15.2,
+    "flesch_kincaid_grade": 7.1,
+    "est_duration_minutes": 12.4,
+    "em_dash_per_100w": 1.5,
+    "ai_filler_hits": {},
+    "claim_link_consistency": "pass"
+  },
+  "status": "pass",
+  "findings": [
+    "FK grade 7.1 (<= 9.5). Narration 1859 words, ~12.4 min at 150 wpm (within the 10.0-12.8 standard band); ~10.7 min at 173 wpm.",
+    "No banned AI-filler phrases. Em-dash density reduced to 1.5 per 100 words in an editing pass.",
+    "Claim-link consistency: every factual span maps to an approved claim; dangling refs 0; all 12 claims (CLM-0001..CLM-0012) are used at least once.",
+    "Neutrality/accuracy: holding is not overstated (CLM-0009) - the ruling barred prolonging a stop past its mission without reasonable suspicion and remanded; it did NOT ban dog sniffs or traffic stops, and did not free Rodriguez. Dissents (Thomas/Alito/Kennedy) presented fairly as arguing the short, safety-motivated delay was reasonable / de minimis. The methamphetamine is treated only as 'what the search found,' with no drug depiction; the K-9 is procedural, never attacking.",
+    "Cold-open hook ('How long can the police keep you at the side of the road?') pays off in the ending recap; series-closing tease is thematic (home / person / time), naming no specific next case."
+  ]
+}
