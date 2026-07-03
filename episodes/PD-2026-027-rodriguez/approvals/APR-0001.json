@@ -6,11 +6,11 @@
   "target_id": "script.annotated",
   "target_revision": "v001",
   "decision": "pending",
-  "requested_at": "2026-07-04T00:00:00+00:00",
+  "requested_at": "2026-07-04T12:00:00+00:00",
   "requested_by": "local-claude-code",
   "decided_at": null,
   "decided_by": null,
-  "notes": "Content/direction sign-off REQUEST for the Rodriguez v. United States annotated script v001. Bound to content_hash sha256:b2ab348c7579bee14bafb6d51738d846f38dd375be85afe0da6fd43ec531f38e - re-approval required if the script revision/hash changes (rules/12). This records that a HUMAN OWNER final-script gate is still required (decision=pending, decided_by=null); it is NOT a self-approval for publication and no downstream production, paid API, upload, or publish is authorized by it. Facts were fact-checked 2026-07-04 against the primary opinion (575 U.S. 348) via Cornell LII and cross-checked on Justia and Oyez.",
+  "notes": "Content/direction sign-off REQUEST for the Rodriguez v. United States annotated script v001 (refined in place via a 3-pass content polish 2026-07-04: accuracy/lock re-verification vs the primary opinion 575 U.S. 348, hook/retention, line polish; 1859 -> 1812 words). Bound to the NEW content_hash sha256:399fdd14b400f2c76f68f74ddc27c167e8dff379ab7222b3189a34669547b7fb - re-approval required because the script hash changed (rules/12); decision reset to pending. This records that a HUMAN OWNER final-script gate is still required (decision=pending, decided_by=null); it is NOT a self-approval for publication and no downstream production, paid API, upload, or publish is authorized by it. Facts were fact-checked 2026-07-04 against the primary opinion (575 U.S. 348) via Cornell LII and cross-checked on Justia and Oyez.",
   "conditions": [
     "Human owner must review and decide this final-script gate before scenes/visuals or any paid/production step.",
     "Keep tone neutral between the driver's time/liberty and legitimate law-enforcement need; do NOT overstate the holding (CLM-0009): the Court barred prolonging a stop past its mission without reasonable suspicion and remanded - it did NOT ban dog sniffs or traffic stops, and did not free Rodriguez.",
@@ -19,5 +19,5 @@
     "script_qc PASS and durable source content hashes already captured (2026-07-04); re-verify at publish time if sources change."
   ],
   "expires_at": null,
-  "evidence_snapshot_ref": "artifact://episodes/PD-2026-027-rodriguez/03_script/script.annotated.v001.json"
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-027-rodriguez/03_script/script.annotated.v001.json#sha256:399fdd14b400f2c76f68f74ddc27c167e8dff379ab7222b3189a34669547b7fb"
 }

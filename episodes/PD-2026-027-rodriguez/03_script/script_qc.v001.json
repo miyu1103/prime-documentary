@@ -4,19 +4,19 @@
   "revision": "v001",
   "stage": "script_qc",
   "metrics": {
-    "narration_words": 1859,
-    "sentences": 122,
-    "avg_sentence_words": 15.2,
-    "flesch_kincaid_grade": 7.1,
-    "est_duration_minutes": 12.4,
-    "em_dash_per_100w": 1.5,
+    "narration_words": 1812,
+    "sentences": 120,
+    "avg_sentence_words": 15.1,
+    "flesch_kincaid_grade": 7.0,
+    "est_duration_minutes": 12.1,
+    "em_dash_per_100w": 1.55,
     "ai_filler_hits": {},
     "claim_link_consistency": "pass"
   },
   "status": "pass",
   "findings": [
-    "FK grade 7.1 (<= 9.5). Narration 1859 words, ~12.4 min at 150 wpm (within the 10.0-12.8 standard band); ~10.7 min at 173 wpm.",
-    "No banned AI-filler phrases. Em-dash density reduced to 1.5 per 100 words in an editing pass.",
+    "FK grade 7.0 (<= 9.5). Narration 1812 words, ~12.1 min at 150 wpm (within the 10.0-12.8 standard band); ~10.5 min at 173 wpm. Three-pass polish trimmed ~47 words from v001-draft (1859 -> 1812) to keep the runtime off the top of the band.",
+    "No banned AI-filler phrases. Em-dash density held at 1.55 per 100 words (parenthetical dashes converted to commas in the line-polish pass, removing an AI over-dash tell).",
     "Claim-link consistency: every factual span maps to an approved claim; dangling refs 0; all 12 claims (CLM-0001..CLM-0012) are used at least once.",
     "Neutrality/accuracy: holding is not overstated (CLM-0009) - the ruling barred prolonging a stop past its mission without reasonable suspicion and remanded; it did NOT ban dog sniffs or traffic stops, and did not free Rodriguez. Dissents (Thomas/Alito/Kennedy) presented fairly as arguing the short, safety-motivated delay was reasonable / de minimis. The methamphetamine is treated only as 'what the search found,' with no drug depiction; the K-9 is procedural, never attacking.",
     "Cold-open hook ('How long can the police keep you at the side of the road?') pays off in the ending recap; series-closing tease is thematic (home / person / time), naming no specific next case."

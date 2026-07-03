@@ -54,7 +54,7 @@
       "artifact_type": "script_markdown",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-027-rodriguez/03_script/script.en.v001.md",
-      "checksum": "sha256:af24fbfaa0e06dd380698330262967004885f17ff30feb67ed5965a7c9ac0d7c",
+      "checksum": "sha256:8f5476e1852146e0244c240cbd49ca17ac26f814b66c76c0906aa3538767050e",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -64,7 +64,7 @@
       "artifact_type": "annotated_script",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-027-rodriguez/03_script/script.annotated.v001.json",
-      "checksum": "sha256:b2ab348c7579bee14bafb6d51738d846f38dd375be85afe0da6fd43ec531f38e",
+      "checksum": "sha256:399fdd14b400f2c76f68f74ddc27c167e8dff379ab7222b3189a34669547b7fb",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -74,7 +74,7 @@
       "artifact_type": "qc_report",
       "revision": "v001",
       "uri": "artifact://episodes/PD-2026-027-rodriguez/03_script/script_qc.v001.json",
-      "checksum": "sha256:fec8aeb5493347fd4f39fe6564655e033b687719668d93f75b875dcfe91c3af8",
+      "checksum": "sha256:283b8338f231d718bf39bea399341a12ddae6c2e13a747dd878f0ee3af8d9dfe",
       "status": "candidate",
       "rights_status": "clear",
       "qc_status": "pass"
@@ -113,7 +113,7 @@
   },
   "warnings": [
     "Claude owns research + script (left process); Codex begins production at scenes/visuals. Image generation = Codex; edit = Remotion + FFmpeg.",
-    "script_qc PASS (FK 7.1, no AI-filler, em-dash density 1.5/100w, claim-links consistent, dangling=0, all 12 claims used) and draft-timing ~12.4 min at 150 wpm (in the 10.0-12.8 band); state promoted to script_verified.",
+    "script_qc PASS (FK 7.0, no AI-filler, em-dash density 1.55/100w, claim-links consistent, dangling=0, all 12 claims used) and timing ~12.1 min at 150 wpm (in the 10.0-12.8 band); state promoted to script_verified. v001 refined in place via a 3-pass content polish (accuracy/locks re-verified vs 575 U.S. 348, hook+retention, line polish; 1859 -> 1812 words) - annotated content_hash and APR-0001 re-bound; APR-0001 decision reset to pending (re-approval required).",
     "Facts fact-checked 2026-07-04 against the primary opinion (Rodriguez v. United States, 575 U.S. 348) via Cornell LII, cross-checked on Justia and Oyez. Durable source content hashes captured (Justia returns 403 to the fetch bot; hashed via direct GET - non-blocking).",
     "APR-0001 is a PENDING final-script content/direction gate bound to the annotated content_hash: a HUMAN OWNER sign-off is still REQUIRED before any downstream production. NOT self-approved; annotated artifact status kept 'candidate'.",
     "Do NOT overstate the holding downstream (CLM-0009): the Court barred prolonging a stop past its mission without reasonable suspicion and remanded; it did NOT ban dog sniffs or traffic stops, and did not free Rodriguez.",
@@ -123,5 +123,5 @@
   ],
   "blockers": [],
   "created_at": "2026-07-04T00:00:00+00:00",
-  "updated_at": "2026-07-04T00:00:00+00:00"
+  "updated_at": "2026-07-04T12:00:00+00:00"
 }
