@@ -35,7 +35,7 @@
 
 | 指標 | 取得元 | フロア（最低） | Good | Great | 現状 |
 |---|---|---|---|---|---|
-| **CTR**（サムネ・クリック率） | Studio内部（後述スクレイパー） | 4% | **6%** | 8–10% | 未計測 |
+| **CTR**（サムネ・クリック率） | Studio内部（`yt_studio_ctr.py`） | 4% | **6%** | 8–10% | **2.31%**（実測2026-07-04） |
 | **APV**（平均視聴率・本編） | Analytics API `averageViewPercentage` | 35% | **45%** | 55%+ | 15–25% |
 | **30秒残存率**（フック） | Analytics API `audienceRetention` | 60% | **70%** | 80%+ | 未計測 |
 | **登録転換**（subs/1,000再生） | `subscribersGained ÷ views × 1000` | 5 | **10** | 15+ | ≈2 |
@@ -125,7 +125,9 @@
 - cookieは**機密**。`.gitignore` 済みのローカルファイルのみに保存し、コミット・ログ・スクショに出さない（invariant 3）。
 - 書き込み・削除・設定変更は一切しない（読み取り専用）。
 
-**実装ステータス:** 未完成（正確なペイロードはブラウザ実キャプチャが必要）。オーナーの1回だけの手順（DevTools→該当リクエストを "Copy as cURL"）を受領後、`scripts/yt_studio_ctr.py` として確定する。以降は全自動。
+**実装ステータス:** **完成・稼働（2026-07-04）**。`scripts/yt_studio_ctr.py`。cookieは `secrets/studio_cookies.txt`（gitignore済）から読み、SAPISIDHASHは毎回再計算。`youtubei/v1/yta_web/get_screen`（ANALYTICS_TAB_ID_CONTENT）を叩き、`VIDEO_THUMBNAIL_IMPRESSIONS`(=インプレ) / `VIDEO_THUMBNAIL_IMPRESSIONS_VTR`(=CTR) / `SHORTS_FEED_IMPRESSIONS_VTR` を抽出→`_yt_studio_ctr_summary.json`。
+**初回実測（デフォルト期間・チャンネル全体）:** インプレ **9,655** / **CTR 2.31%**（=フロア4%未満・要改善）/ Shortsフィード突破率 **29.17%** / サムネ経由平均視聴 140秒。
+**運用:** cookieは数日〜数週で失効。失効したら同手順でcURLを取り直し`secrets/studio_cookies.txt`を更新（`CLIENT_VERSION`が古くなった時も更新）。読み取り専用・書込なし。
 
 ---
 
