@@ -144,13 +144,24 @@ skipped for time, log it.
 
 ## 5. Port status & next step (owner-gated)
 
-Reference implementations currently live under `remotion/prototypes/motion3d/` (prototyped in the
-pino-channel Remotion workbench, copied here for version control). They are **not yet wired into the
-production `Root.tsx`** and `@remotion/three` is **not yet installed** in `remotion/`. Shipping in an episode
-requires the one-time port:
-1. `npm i @remotion/three@4.0.484 three @react-three/fiber@8 @types/three` in `remotion/`.
-2. Port `OpeningPhoto3D` behind `BrandOpening`; merge `Figures` into `DiagramFlow`.
-3. Add the §4 gates.
+**Pilot: EP28, depth-first (owner-approved 2026-07-05).** Porting the prototypes
+(`remotion/prototypes/motion3d/`) into the production engine, one reviewed slice at a time.
 
-This port is a bounded vertical slice (rule 18) and an owner-gated change to the binding motion path — do it
-as its own reviewed commit, not silently inside an episode render.
+**DONE — slice 1 (depth treatment):**
+- `@remotion/three three @react-three/fiber@8 @types/three` installed in `remotion/` (matched to remotion 4.0.476).
+- **`CaseFilm.tsx` now has a `depth` treatment** (`DepthStill`): a subdivided plane displaced by the image's
+  DPT depth map (`<name>_depth.png`) in `@remotion/three`, camera dolly-in → REAL parallax. Slots into the
+  existing `switch(cut.treatment)` beside `bleed/scan/duotone/focus/card` (extends, does not fork — invariant 14).
+  A shotlist cut just sets `treatment:"depth"`. **This replaces the fake `bleed` pseudo-2.5D as the anti-紙芝居 default.**
+- Batch depth: `tools/depth/gen_depth.py` (ComfyUI venv python, `Intel/dpt-large` safetensors) writes
+  `<name>_depth.png` beside every image in `remotion/public/<ep>/`.
+- Dev harness: composition `DepthTest` (renders `DepthStill` on a staged `public/_motiontest/test.jpg`+`_depth.png`;
+  `_motiontest/` is gitignored — stage a test image locally). Verified rendering in PD remotion.
+
+**TODO — remaining slices (owner-gated, one reviewed commit each):**
+1. Generate EP28's 40 images (Codex — the real blocker) → run `gen_depth.py` → set high-motion cuts to `treatment:"depth"`.
+2. `CaseMap` (challenge #3) as a graphics beat; merge `Figures` into `DiagramFlow`; audio-reactive overlay; Blender hero `OffthreadVideo` in the hook.
+3. Add the §4 gates. Then propagate EP28 → EP29/30/31.
+
+Each slice is a bounded vertical slice (rule 18) on the binding motion path — reviewed commit, verified on EP28
+via `check_final_acceptance`, never silently inside an episode render.

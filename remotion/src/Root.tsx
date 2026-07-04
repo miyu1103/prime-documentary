@@ -29,6 +29,7 @@ import {OneCoinThumbnailFrame} from './compositions/OneCoinThumbnailFrame';
 import {KingThumbnailFrame} from './compositions/KingThumbnailFrame';
 import {MirandaThumbnailFrame} from './compositions/MirandaThumbnailFrame';
 import {ClipProof} from './compositions/ClipProof';
+import {DepthTest} from './compositions/DepthTest';
 import {MotionSample, motionSampleDurationInFrames} from './compositions/MotionSample';
 import {CaseFilm, caseFilmDurationInFrames, FilmData} from './compositions/CaseFilm';
 import kylloFilm from './data/kyllo_film.json';
@@ -36,6 +37,7 @@ import katzFilm from './data/katz_film.json';
 import rodriguezFilm from './data/rodriguez_film.json';
 import cottonFilm from './data/cotton_film.json';
 import unlockFilm from './data/unlock_film.json';
+import forfeitureFilm from './data/forfeiture_film.json';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
@@ -93,6 +95,15 @@ const ROUGHCUTS = [
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      {/* dev harness: CaseFilm `depth` treatment（実DPT深度パララックス）の目視確認 */}
+      <Composition
+        id="DepthTest"
+        component={DepthTest}
+        durationInFrames={90}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
       {/* プレビュー専用: ブランドオープニング磨き上げ版(アフター・未採用) */}
       <Composition
         id="BumperBrushupPreview"
@@ -751,6 +762,36 @@ export const RemotionRoot: React.FC = () => {
         }}
       />
       <Composition
+        id="Short-short27-yt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT27, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT27, platform: 'yt' as const}}
+      />
+      <Composition
+        id="Short-short27-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT27, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT27, platform: 'tiktok' as const}}
+      />
+      <Still
+        id="ShortThumb-short27"
+        component={ShortThumb}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          data: SHORT27,
+          headline: 'STOP WAS\nOVER',
+          badge: '6–3 · 2015',
+          backgroundSrc: 'shorts/short27/short27_thumb.png',
+        }}
+      />
+      <Composition
         id="Short-short01-yt"
         component={Short}
         durationInFrames={shortDurationInFrames(SHORT01, BRAND.video.fps)}
@@ -1107,6 +1148,20 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{option}}
         />
       ))}
+      <Composition
+        id="CaseFilm-forfeiture"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(forfeitureFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: forfeitureFilm as unknown as FilmData,
+          seriesLabel: 'THEY DID NOTHING WRONG',
+          title: 'They Took the House',
+          subtitle: 'Sourovelis v. City of Philadelphia (2018)',
+        }}
+      />
       <Composition
         id="CaseFilm-kyllo"
         component={CaseFilm}
