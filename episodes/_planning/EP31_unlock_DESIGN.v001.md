@@ -1,3 +1,5 @@
+> ⚠️ **SUPERSEDED by `EP31_unlock_DESIGN.v002.md`（2026-07-05）**。台本v002化・画像42枚生成済・音声マスター済・国境/BFU追加を反映した最新は v002。本v001は履歴。
+
 # EP31 制作設計書 — "Can They Force Your Phone Open?"（スマホ強制解除）
 
 **Episode ID:** `PD-2026-031-unlock`  ·  **slug:** `unlock`

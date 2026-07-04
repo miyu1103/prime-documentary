@@ -1,3 +1,5 @@
+> ⚠️ **SUPERSEDED by `EP31_unlock_FILM_BIBLE.v002.md`（2026-07-05）**。台本v002の追加7ビート（国境/BFU/Payne留保等）を反映した最新は v002。本v001は履歴。
+
 # EP31 `FILM_BIBLE.v001` — "Can They Force Your Phone Open?"（スマホ強制解除）ドラマ設計
 
 **Episode:** `PD-2026-031-unlock`  ·  **status:** DRAFT（★=fact_recheck(R2)で確定するまで台本本文に書かない）
