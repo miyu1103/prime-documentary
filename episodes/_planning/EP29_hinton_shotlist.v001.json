@@ -1,0 +1,1313 @@
+{
+  "schema_version": "1.0.0-motionsample",
+  "episode_id": "PD-2026-029-hinton",
+  "revision": "v001",
+  "generated_from": "EP29_hinton_script.annotated.v001.json",
+  "source_annotated_sha256": "426e063efe94412eaa038d3311286eea091fa23ec545dd07cb401b93fde192e7",
+  "note": "PLAN only. Build step (build_case_film assets) resolves real image filenames + audio-aligned per-cut start/dur into remotion/src/data/hinton_film.json. avg_cut<=~6s and freeze/animation_density gates apply at acceptance.",
+  "shots": [
+    {
+      "span_id": "SPN-0001",
+      "chapter_id": "hook",
+      "narrative_function": "hook_cold_open",
+      "estimated_seconds": 16.5,
+      "cut_count": 6,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 4,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-01",
+        "PD-2026-029-IMG-02",
+        "PD-2026-029-IMG-03",
+        "PD-2026-029-IMG-04",
+        "PD-2026-029-IMG-05"
+      ],
+      "footage_search_keywords": [
+        "death row cell door",
+        "bullet macro",
+        "prison bars"
+      ],
+      "on_screen_text": [
+        "30 YEARS",
+        "INNOCENT"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "8s cold open, ~2s punch cuts: a death-row cell door slamming; a bullet macro with 'MATCH?' cracking apart; an anonymous man in a cell looking up; '30 YEARS / INNOCENT' kinetic type. Dark, navy, restrained."
+    },
+    {
+      "span_id": "SPN-0002",
+      "chapter_id": "opening",
+      "narrative_function": "thesis_and_promise",
+      "estimated_seconds": 18.9,
+      "cut_count": 7,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 4,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-21",
+        "PD-2026-029-IMG-22",
+        "PD-2026-029-IMG-23",
+        "PD-2026-029-IMG-24"
+      ],
+      "footage_search_keywords": [
+        "barred window light"
+      ],
+      "on_screen_text": [
+        "ANTHONY RAY HINTON",
+        "ALABAMA"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Gold BrandOpening lands here. Then a barred window with a single shaft of light — the motif of light vs dark. Restrained brand card."
+    },
+    {
+      "span_id": "SPN-0003",
+      "chapter_id": "act1",
+      "narrative_function": "event",
+      "estimated_seconds": 38.3,
+      "cut_count": 14,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 6,
+        "footage": 8,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-01",
+        "PD-2026-029-IMG-02",
+        "PD-2026-029-IMG-03",
+        "PD-2026-029-IMG-04",
+        "PD-2026-029-IMG-05",
+        "PD-2026-029-IMG-06",
+        "PD-2026-029-IMG-07",
+        "PD-2026-029-IMG-08",
+        "PD-2026-029-IMG-09",
+        "PD-2026-029-IMG-10"
+      ],
+      "footage_search_keywords": [
+        "closed restaurant night",
+        "empty safe",
+        "police cruiser fog",
+        "warehouse night shift",
+        "punch clock",
+        "photo lineup"
+      ],
+      "on_screen_text": [
+        "Birmingham, 1985"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A closed fast-food restaurant at night, bare lit sign; an empty safe; a police cruiser in the fog. No gore, no people's faces. Somber, procedural."
+    },
+    {
+      "span_id": "SPN-0004",
+      "chapter_id": "act1",
+      "narrative_function": "event_turn",
+      "estimated_seconds": 34.6,
+      "cut_count": 12,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 5,
+        "footage": 7,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-01",
+        "PD-2026-029-IMG-02",
+        "PD-2026-029-IMG-03",
+        "PD-2026-029-IMG-04",
+        "PD-2026-029-IMG-05",
+        "PD-2026-029-IMG-06",
+        "PD-2026-029-IMG-07",
+        "PD-2026-029-IMG-08",
+        "PD-2026-029-IMG-09",
+        "PD-2026-029-IMG-10"
+      ],
+      "footage_search_keywords": [
+        "closed restaurant night",
+        "empty safe",
+        "police cruiser fog",
+        "warehouse night shift",
+        "punch clock",
+        "photo lineup"
+      ],
+      "on_screen_text": [
+        "One photo lineup. No other evidence."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A photo-lineup array of anonymous faces; a finger landing on one. Then an anonymous young man, framed neutrally (no likeness of a real person)."
+    },
+    {
+      "span_id": "SPN-0005",
+      "chapter_id": "act1",
+      "narrative_function": "counterweight",
+      "estimated_seconds": 25.8,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-01",
+        "PD-2026-029-IMG-02",
+        "PD-2026-029-IMG-03",
+        "PD-2026-029-IMG-04",
+        "PD-2026-029-IMG-05",
+        "PD-2026-029-IMG-06",
+        "PD-2026-029-IMG-07",
+        "PD-2026-029-IMG-08",
+        "PD-2026-029-IMG-09"
+      ],
+      "footage_search_keywords": [
+        "closed restaurant night",
+        "empty safe",
+        "police cruiser fog",
+        "warehouse night shift",
+        "punch clock",
+        "photo lineup"
+      ],
+      "on_screen_text": [
+        "Clocked in. 15 miles away."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An anonymous night-shift worker inside a locked warehouse under a caged bulb; a punch clock stamping a time card. The alibi made concrete."
+    },
+    {
+      "span_id": "SPN-0006",
+      "chapter_id": "act1",
+      "narrative_function": "act1_button",
+      "estimated_seconds": 20.5,
+      "cut_count": 7,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 4,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-10",
+        "PD-2026-029-IMG-01",
+        "PD-2026-029-IMG-02",
+        "PD-2026-029-IMG-03",
+        "PD-2026-029-IMG-04",
+        "PD-2026-029-IMG-05",
+        "PD-2026-029-IMG-06"
+      ],
+      "footage_search_keywords": [
+        "closed restaurant night",
+        "empty safe",
+        "police cruiser fog",
+        "warehouse night shift",
+        "punch clock",
+        "photo lineup"
+      ],
+      "on_screen_text": [],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "The warehouse and the crime scene split by distance; then a slow push toward a single object glinting in an evidence bag — the pivot to the bullets."
+    },
+    {
+      "span_id": "SPN-0007",
+      "chapter_id": "act1",
+      "narrative_function": "reveal",
+      "estimated_seconds": 2.0,
+      "cut_count": 1,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 1,
+        "footage": 0,
+        "treatments_rotation": [
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-07"
+      ],
+      "footage_search_keywords": [
+        "closed restaurant night",
+        "empty safe",
+        "police cruiser fog",
+        "warehouse night shift",
+        "punch clock",
+        "photo lineup"
+      ],
+      "on_screen_text": [],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Hard cut to a macro of bullets on a steel tray under clinical light. A single, cold statement."
+    },
+    {
+      "span_id": "SPN-0008",
+      "chapter_id": "act2",
+      "narrative_function": "mechanism",
+      "estimated_seconds": 37.1,
+      "cut_count": 13,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 5,
+        "footage": 8,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-11",
+        "PD-2026-029-IMG-12",
+        "PD-2026-029-IMG-13",
+        "PD-2026-029-IMG-14",
+        "PD-2026-029-IMG-15",
+        "PD-2026-029-IMG-16",
+        "PD-2026-029-IMG-17",
+        "PD-2026-029-IMG-18",
+        "PD-2026-029-IMG-19",
+        "PD-2026-029-IMG-20"
+      ],
+      "footage_search_keywords": [
+        "revolver evidence bag",
+        "comparison microscope",
+        "empty courtroom",
+        "jury box",
+        "gavel shadow",
+        "clock sweep"
+      ],
+      "on_screen_text": [
+        "The only evidence: the bullets"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An old .38 revolver as evidence; a comparison microscope; scales tipping. The whole case balanced on one object."
+    },
+    {
+      "span_id": "SPN-0009",
+      "chapter_id": "act2",
+      "narrative_function": "mechanism_core",
+      "estimated_seconds": 39.5,
+      "cut_count": 14,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 6,
+        "footage": 8,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-11",
+        "PD-2026-029-IMG-12",
+        "PD-2026-029-IMG-13",
+        "PD-2026-029-IMG-14",
+        "PD-2026-029-IMG-15",
+        "PD-2026-029-IMG-16",
+        "PD-2026-029-IMG-17",
+        "PD-2026-029-IMG-18",
+        "PD-2026-029-IMG-19",
+        "PD-2026-029-IMG-20"
+      ],
+      "footage_search_keywords": [
+        "revolver evidence bag",
+        "comparison microscope",
+        "empty courtroom",
+        "jury box",
+        "gavel shadow",
+        "clock sweep"
+      ],
+      "on_screen_text": [
+        "A $1,000 cap that never existed"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Motion graphic: '$1,000' stamped down as a false ceiling; the real, higher limit greyed out behind it. The fatal, mistaken line."
+    },
+    {
+      "span_id": "SPN-0010",
+      "chapter_id": "act2",
+      "narrative_function": "mechanism_vivid",
+      "estimated_seconds": 33.4,
+      "cut_count": 12,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 5,
+        "footage": 7,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-11",
+        "PD-2026-029-IMG-12",
+        "PD-2026-029-IMG-13",
+        "PD-2026-029-IMG-14",
+        "PD-2026-029-IMG-15",
+        "PD-2026-029-IMG-16",
+        "PD-2026-029-IMG-17",
+        "PD-2026-029-IMG-18",
+        "PD-2026-029-IMG-19",
+        "PD-2026-029-IMG-20"
+      ],
+      "footage_search_keywords": [
+        "revolver evidence bag",
+        "comparison microscope",
+        "empty courtroom",
+        "jury box",
+        "gavel shadow",
+        "clock sweep"
+      ],
+      "on_screen_text": [
+        "A defense that couldn't see"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A comparison microscope; an out-of-focus eyepiece; a witness silhouette shrinking under hard courtroom light. Systemic failure, not mockery."
+    },
+    {
+      "span_id": "SPN-0011",
+      "chapter_id": "act2",
+      "narrative_function": "analysis",
+      "estimated_seconds": 25.4,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-11",
+        "PD-2026-029-IMG-12",
+        "PD-2026-029-IMG-13",
+        "PD-2026-029-IMG-14",
+        "PD-2026-029-IMG-15",
+        "PD-2026-029-IMG-16",
+        "PD-2026-029-IMG-17",
+        "PD-2026-029-IMG-18",
+        "PD-2026-029-IMG-19"
+      ],
+      "footage_search_keywords": [
+        "revolver evidence bag",
+        "comparison microscope",
+        "empty courtroom",
+        "jury box",
+        "gavel shadow",
+        "clock sweep"
+      ],
+      "on_screen_text": [
+        "One question, never asked"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A single unchecked box / an unasked question rendered as typography; the weight of one omission. Minimalist, damning."
+    },
+    {
+      "span_id": "SPN-0012",
+      "chapter_id": "act2",
+      "narrative_function": "turn",
+      "estimated_seconds": 8.9,
+      "cut_count": 3,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 1,
+        "footage": 2,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-20",
+        "PD-2026-029-IMG-11",
+        "PD-2026-029-IMG-12"
+      ],
+      "footage_search_keywords": [
+        "revolver evidence bag",
+        "comparison microscope",
+        "empty courtroom",
+        "jury box",
+        "gavel shadow",
+        "clock sweep"
+      ],
+      "on_screen_text": [
+        "1986 — guilty in about an hour"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A clock hand sweeping one hour in seconds; a gavel in shadow; '1986' timeline hit. Fast, cold, final."
+    },
+    {
+      "span_id": "SPN-0013",
+      "chapter_id": "act2",
+      "narrative_function": "theme",
+      "estimated_seconds": 41.1,
+      "cut_count": 15,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 6,
+        "footage": 9,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-13",
+        "PD-2026-029-IMG-14",
+        "PD-2026-029-IMG-15",
+        "PD-2026-029-IMG-16",
+        "PD-2026-029-IMG-17",
+        "PD-2026-029-IMG-18",
+        "PD-2026-029-IMG-19",
+        "PD-2026-029-IMG-20",
+        "PD-2026-029-IMG-11",
+        "PD-2026-029-IMG-12"
+      ],
+      "footage_search_keywords": [
+        "revolver evidence bag",
+        "comparison microscope",
+        "empty courtroom",
+        "jury box",
+        "gavel shadow",
+        "clock sweep"
+      ],
+      "on_screen_text": [
+        "“The verdict was written before the trial” — Hinton"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Restrained, dignified: an empty jury box; a lone defendant's chair in hard light. Attribute the framing to Hinton's own words on screen."
+    },
+    {
+      "span_id": "SPN-0014",
+      "chapter_id": "act3",
+      "narrative_function": "endurance_setup",
+      "estimated_seconds": 31.4,
+      "cut_count": 11,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 7,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-21",
+        "PD-2026-029-IMG-22",
+        "PD-2026-029-IMG-23",
+        "PD-2026-029-IMG-24",
+        "PD-2026-029-IMG-25",
+        "PD-2026-029-IMG-26",
+        "PD-2026-029-IMG-27",
+        "PD-2026-029-IMG-28",
+        "PD-2026-029-IMG-29",
+        "PD-2026-029-IMG-30",
+        "PD-2026-029-IMG-31"
+      ],
+      "footage_search_keywords": [
+        "death row corridor",
+        "prison cell bunk",
+        "tally marks wall",
+        "prison library books",
+        "barred window shaft light",
+        "execution chamber door"
+      ],
+      "on_screen_text": [
+        "A cell can hold a body, not a mind"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A tiny cell; tally marks on the wall; a man sitting head-down, then lifting his head. The turn from despair to resolve."
+    },
+    {
+      "span_id": "SPN-0015",
+      "chapter_id": "act3",
+      "narrative_function": "human_beat",
+      "estimated_seconds": 29.0,
+      "cut_count": 10,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 6,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-21",
+        "PD-2026-029-IMG-22",
+        "PD-2026-029-IMG-23",
+        "PD-2026-029-IMG-24",
+        "PD-2026-029-IMG-25",
+        "PD-2026-029-IMG-26",
+        "PD-2026-029-IMG-27",
+        "PD-2026-029-IMG-28",
+        "PD-2026-029-IMG-29",
+        "PD-2026-029-IMG-30"
+      ],
+      "footage_search_keywords": [
+        "death row corridor",
+        "prison cell bunk",
+        "tally marks wall",
+        "prison library books",
+        "barred window shaft light",
+        "execution chamber door"
+      ],
+      "on_screen_text": [
+        "The Death Row Book Club"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Worn paperbacks in a prison library; then dreamlike, warm flashes (a stadium, an open road) rendered as memory/imagination overlays. Hope inside confinement."
+    },
+    {
+      "span_id": "SPN-0016",
+      "chapter_id": "act3",
+      "narrative_function": "analysis",
+      "estimated_seconds": 30.6,
+      "cut_count": 11,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 7,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-31",
+        "PD-2026-029-IMG-21",
+        "PD-2026-029-IMG-22",
+        "PD-2026-029-IMG-23",
+        "PD-2026-029-IMG-24",
+        "PD-2026-029-IMG-25",
+        "PD-2026-029-IMG-26",
+        "PD-2026-029-IMG-27",
+        "PD-2026-029-IMG-28",
+        "PD-2026-029-IMG-29",
+        "PD-2026-029-IMG-30"
+      ],
+      "footage_search_keywords": [
+        "death row corridor",
+        "prison cell bunk",
+        "tally marks wall",
+        "prison library books",
+        "barred window shaft light",
+        "execution chamber door"
+      ],
+      "on_screen_text": [],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A shaft of light through bars widening into an imagined horizon; the interior world as protected ground. Lyrical, restrained."
+    },
+    {
+      "span_id": "SPN-0017",
+      "chapter_id": "act3",
+      "narrative_function": "stakes",
+      "estimated_seconds": 32.6,
+      "cut_count": 12,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 5,
+        "footage": 7,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-31",
+        "PD-2026-029-IMG-21",
+        "PD-2026-029-IMG-22",
+        "PD-2026-029-IMG-23",
+        "PD-2026-029-IMG-24",
+        "PD-2026-029-IMG-25",
+        "PD-2026-029-IMG-26",
+        "PD-2026-029-IMG-27",
+        "PD-2026-029-IMG-28",
+        "PD-2026-029-IMG-29",
+        "PD-2026-029-IMG-30"
+      ],
+      "footage_search_keywords": [
+        "death row corridor",
+        "prison cell bunk",
+        "tally marks wall",
+        "prison library books",
+        "barred window shaft light",
+        "execution chamber door"
+      ],
+      "on_screen_text": [
+        "54 walks to the chair"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A long death-row corridor; a heavy door at the end; empty chairs where the book club met. '54' as a grave, restrained beat (his testimony)."
+    },
+    {
+      "span_id": "SPN-0018",
+      "chapter_id": "act3",
+      "narrative_function": "turn",
+      "estimated_seconds": 40.3,
+      "cut_count": 14,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 6,
+        "footage": 8,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-31",
+        "PD-2026-029-IMG-21",
+        "PD-2026-029-IMG-22",
+        "PD-2026-029-IMG-23",
+        "PD-2026-029-IMG-24",
+        "PD-2026-029-IMG-25",
+        "PD-2026-029-IMG-26",
+        "PD-2026-029-IMG-27",
+        "PD-2026-029-IMG-28",
+        "PD-2026-029-IMG-29",
+        "PD-2026-029-IMG-30"
+      ],
+      "footage_search_keywords": [
+        "death row corridor",
+        "prison cell bunk",
+        "tally marks wall",
+        "prison library books",
+        "barred window shaft light",
+        "execution chamber door"
+      ],
+      "on_screen_text": [
+        "2002: the bullets matched nothing"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An attorney with boxes of files working late; then three experts and a microscope; a bullet and a gun failing to line up on a lightbox. The science reversed."
+    },
+    {
+      "span_id": "SPN-0019",
+      "chapter_id": "act3",
+      "narrative_function": "act3_button_openloop",
+      "estimated_seconds": 22.6,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-31",
+        "PD-2026-029-IMG-21",
+        "PD-2026-029-IMG-22",
+        "PD-2026-029-IMG-23",
+        "PD-2026-029-IMG-24",
+        "PD-2026-029-IMG-25",
+        "PD-2026-029-IMG-26",
+        "PD-2026-029-IMG-27"
+      ],
+      "footage_search_keywords": [
+        "death row corridor",
+        "prison cell bunk",
+        "tally marks wall",
+        "prison library books",
+        "barred window shaft light",
+        "execution chamber door"
+      ],
+      "on_screen_text": [
+        "The evidence collapsed. He stayed."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A single thread under tension over a dark void; it should snap, but doesn't. Frustration and suspense into Act IV."
+    },
+    {
+      "span_id": "SPN-0020",
+      "chapter_id": "act4",
+      "narrative_function": "ruling",
+      "estimated_seconds": 50.0,
+      "cut_count": 18,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 7,
+        "footage": 11,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-32",
+        "PD-2026-029-IMG-33",
+        "PD-2026-029-IMG-34",
+        "PD-2026-029-IMG-35",
+        "PD-2026-029-IMG-36",
+        "PD-2026-029-IMG-37",
+        "PD-2026-029-IMG-38",
+        "PD-2026-029-IMG-39",
+        "PD-2026-029-IMG-40"
+      ],
+      "footage_search_keywords": [
+        "supreme court marble",
+        "prison gate daylight",
+        "sunrise horizon",
+        "open field sky",
+        "case file closing"
+      ],
+      "on_screen_text": [
+        "2014 — 9–0",
+        "Hinton v. Alabama"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Marble Supreme Court gravitas; '9–0' rendered in kinetic type; the false $1,000 ceiling shattering. No justices' faces."
+    },
+    {
+      "span_id": "SPN-0021",
+      "chapter_id": "act4",
+      "narrative_function": "resolution",
+      "estimated_seconds": 31.0,
+      "cut_count": 11,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 7,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-32",
+        "PD-2026-029-IMG-33",
+        "PD-2026-029-IMG-34",
+        "PD-2026-029-IMG-35",
+        "PD-2026-029-IMG-36",
+        "PD-2026-029-IMG-37",
+        "PD-2026-029-IMG-38",
+        "PD-2026-029-IMG-39",
+        "PD-2026-029-IMG-40"
+      ],
+      "footage_search_keywords": [
+        "supreme court marble",
+        "prison gate daylight",
+        "sunrise horizon",
+        "open field sky",
+        "case file closing"
+      ],
+      "on_screen_text": [
+        "The match could never be reproduced"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A bullet and a gun that will not align, no matter the light; a case file closing. The lie finally undone."
+    },
+    {
+      "span_id": "SPN-0022",
+      "chapter_id": "act4",
+      "narrative_function": "payoff",
+      "estimated_seconds": 23.4,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-32",
+        "PD-2026-029-IMG-33",
+        "PD-2026-029-IMG-34",
+        "PD-2026-029-IMG-35",
+        "PD-2026-029-IMG-36",
+        "PD-2026-029-IMG-37",
+        "PD-2026-029-IMG-38",
+        "PD-2026-029-IMG-39"
+      ],
+      "footage_search_keywords": [
+        "supreme court marble",
+        "prison gate daylight",
+        "sunrise horizon",
+        "open field sky",
+        "case file closing"
+      ],
+      "on_screen_text": [
+        "Freed — April 3, 2015",
+        "“The sun does shine”"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A gate opening to overwhelming daylight; an anonymous man walking out from behind; sun flaring warm after the navy. The light motif pays off."
+    },
+    {
+      "span_id": "SPN-0023",
+      "chapter_id": "act4",
+      "narrative_function": "act4_button",
+      "estimated_seconds": 4.8,
+      "cut_count": 2,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 1,
+        "footage": 1,
+        "treatments_rotation": [
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-40",
+        "PD-2026-029-IMG-32"
+      ],
+      "footage_search_keywords": [
+        "supreme court marble",
+        "prison gate daylight",
+        "sunrise horizon",
+        "open field sky",
+        "case file closing"
+      ],
+      "on_screen_text": [
+        "The real killer was never found"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Two cold case files left open on a desk; the unresolved cost of a wrong answer. Quiet, sober."
+    },
+    {
+      "span_id": "SPN-0024",
+      "chapter_id": "ending",
+      "narrative_function": "ending_theme",
+      "estimated_seconds": 21.8,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-32",
+        "PD-2026-029-IMG-33",
+        "PD-2026-029-IMG-34",
+        "PD-2026-029-IMG-35",
+        "PD-2026-029-IMG-36",
+        "PD-2026-029-IMG-37",
+        "PD-2026-029-IMG-38",
+        "PD-2026-029-IMG-39"
+      ],
+      "footage_search_keywords": [
+        "cold case files",
+        "free man silhouette daylight"
+      ],
+      "on_screen_text": [
+        "It looked like science"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A polished 'scientific' chart that dissolves into nothing when examined; certainty as a surface. Callback to the bullet motif."
+    },
+    {
+      "span_id": "SPN-0025",
+      "chapter_id": "ending",
+      "narrative_function": "ending_synthesis",
+      "estimated_seconds": 34.2,
+      "cut_count": 12,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 5,
+        "footage": 7,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-40",
+        "PD-2026-029-IMG-32",
+        "PD-2026-029-IMG-33",
+        "PD-2026-029-IMG-34",
+        "PD-2026-029-IMG-35",
+        "PD-2026-029-IMG-36",
+        "PD-2026-029-IMG-37",
+        "PD-2026-029-IMG-38",
+        "PD-2026-029-IMG-39"
+      ],
+      "footage_search_keywords": [
+        "cold case files",
+        "free man silhouette daylight"
+      ],
+      "on_screen_text": [
+        "Certainty is not proof"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "The bright line of the theme; then a warm, resolved portrait-in-shadow of a free man (anonymous). Earned calm."
+    },
+    {
+      "span_id": "SPN-0026",
+      "chapter_id": "ending",
+      "narrative_function": "cta",
+      "estimated_seconds": 11.3,
+      "cut_count": 4,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 2,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-40",
+        "PD-2026-029-IMG-32",
+        "PD-2026-029-IMG-33",
+        "PD-2026-029-IMG-34"
+      ],
+      "footage_search_keywords": [
+        "cold case files",
+        "free man silhouette daylight"
+      ],
+      "on_screen_text": [
+        "hit like — harder to look away",
+        "Subscribe"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Brand endcard tail; a warm horizon; a specific, earned CTA — not a generic beg."
+    }
+  ],
+  "totals": {
+    "span_count": 26,
+    "cut_count": 251,
+    "estimated_total_seconds": 705.0,
+    "avg_cut_seconds": 2.81,
+    "image_footage_ratio_target": "≈4:6",
+    "distinct_asset_target": ">= 23 (runtime/30)",
+    "max_reuse_per_clip": 3,
+    "hero_stills_available": 40
+  }
+}

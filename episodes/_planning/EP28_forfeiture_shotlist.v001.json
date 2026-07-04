@@ -1,0 +1,1556 @@
+{
+  "schema_version": "1.0.0-motionsample",
+  "episode_id": "PD-2026-028-forfeiture",
+  "revision": "v001",
+  "generated_from": "EP28_forfeiture_script.annotated.v001.json",
+  "source_annotated_sha256": "d94dcc6bf12fca738735ab10b55bb1177894b7b73482f52de1cd862721886193",
+  "note": "PLAN only. Build step (build_case_film assets) resolves real image filenames + audio-aligned per-cut start/dur into remotion/src/data/forfeiture_film.json. avg_cut<=~6s and freeze/animation_density gates apply at acceptance.",
+  "shots": [
+    {
+      "span_id": "SPN-0001",
+      "chapter_id": "hook",
+      "narrative_function": "hook_cold_open",
+      "estimated_seconds": 13.4,
+      "cut_count": 5,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 3,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-01",
+        "PD-2026-028-IMG-02",
+        "PD-2026-028-IMG-03",
+        "PD-2026-028-IMG-04"
+      ],
+      "footage_search_keywords": [
+        "row house night",
+        "police lights brick street",
+        "sealed door notice"
+      ],
+      "on_screen_text": [
+        "THE HOUSE WAS THE DEFENDANT"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Cold-open, ~8s of ~2s punch cuts: a sealed legal notice on a modest brick row-house door at night; police-style light washing the street; a huge '$40' kinetic title; an anonymous family standing on the front steps (no identifiable faces). Dark, navy, ominous."
+    },
+    {
+      "span_id": "SPN-0002",
+      "chapter_id": "opening",
+      "narrative_function": "thesis_and_promise",
+      "estimated_seconds": 19.1,
+      "cut_count": 7,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 4,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-04",
+        "PD-2026-028-IMG-05"
+      ],
+      "footage_search_keywords": [
+        "front door threshold",
+        "official seal paper"
+      ],
+      "on_screen_text": [
+        "PHILADELPHIA",
+        "CIVIL FORFEITURE"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Brand opening lands here (gold BrandOpening). Then a threshold/front-door motif as the 'core of the home'; a faint official-seal texture. Restrained brand card."
+    },
+    {
+      "span_id": "SPN-0003",
+      "chapter_id": "act1",
+      "narrative_function": "event",
+      "estimated_seconds": 28.9,
+      "cut_count": 10,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 6,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-01",
+        "PD-2026-028-IMG-02",
+        "PD-2026-028-IMG-03",
+        "PD-2026-028-IMG-04",
+        "PD-2026-028-IMG-05",
+        "PD-2026-028-IMG-06",
+        "PD-2026-028-IMG-07",
+        "PD-2026-028-IMG-08",
+        "PD-2026-028-IMG-09",
+        "PD-2026-028-IMG-10"
+      ],
+      "footage_search_keywords": [
+        "philadelphia row houses",
+        "family kitchen window night",
+        "porch bike",
+        "night street"
+      ],
+      "on_screen_text": [
+        "Somerton, Philadelphia"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An anonymous house painter on a ladder (face turned); a modest two-story NE Philadelphia row house in soft daylight; a warm, lived-in family home. Humanize the ordinary. No real-person likeness."
+    },
+    {
+      "span_id": "SPN-0004",
+      "chapter_id": "act1",
+      "narrative_function": "thesis_reinforce",
+      "estimated_seconds": 15.1,
+      "cut_count": 5,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 3,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-01",
+        "PD-2026-028-IMG-02",
+        "PD-2026-028-IMG-03",
+        "PD-2026-028-IMG-04",
+        "PD-2026-028-IMG-05"
+      ],
+      "footage_search_keywords": [
+        "philadelphia row houses",
+        "family kitchen window night",
+        "porch bike",
+        "night street"
+      ],
+      "on_screen_text": [],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Quiet domestic details — keys on a hook, a child's bike on the porch, a warm kitchen window at dusk. Anonymous, tender, calm-before-the-storm."
+    },
+    {
+      "span_id": "SPN-0005",
+      "chapter_id": "act1",
+      "narrative_function": "event_trigger",
+      "estimated_seconds": 21.2,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-06",
+        "PD-2026-028-IMG-07",
+        "PD-2026-028-IMG-08",
+        "PD-2026-028-IMG-09",
+        "PD-2026-028-IMG-10",
+        "PD-2026-028-IMG-01",
+        "PD-2026-028-IMG-02",
+        "PD-2026-028-IMG-03"
+      ],
+      "footage_search_keywords": [
+        "philadelphia row houses",
+        "family kitchen window night",
+        "porch bike",
+        "night street"
+      ],
+      "on_screen_text": [
+        "March 2014",
+        "~$40 of heroin"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Restrained, non-lurid: a night street, a macro of two twenty-dollar bills in an anonymous hand, red-blue light on brick. No drugs shown graphically; the son is anonymous, framed neutrally."
+    },
+    {
+      "span_id": "SPN-0006",
+      "chapter_id": "act1",
+      "narrative_function": "human_beat",
+      "estimated_seconds": 11.0,
+      "cut_count": 4,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 2,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-04",
+        "PD-2026-028-IMG-05",
+        "PD-2026-028-IMG-06",
+        "PD-2026-028-IMG-07"
+      ],
+      "footage_search_keywords": [
+        "philadelphia row houses",
+        "family kitchen window night",
+        "porch bike",
+        "night street"
+      ],
+      "on_screen_text": [
+        "$40"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A giant '$40' kinetic-typography beat against black, then anonymous parents at a doorway, blindsided. Emphasize the parents' innocence."
+    },
+    {
+      "span_id": "SPN-0007",
+      "chapter_id": "act1",
+      "narrative_function": "misdirection",
+      "estimated_seconds": 11.0,
+      "cut_count": 4,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 2,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-08",
+        "PD-2026-028-IMG-09",
+        "PD-2026-028-IMG-10",
+        "PD-2026-028-IMG-01"
+      ],
+      "footage_search_keywords": [
+        "philadelphia row houses",
+        "family kitchen window night",
+        "porch bike",
+        "night street"
+      ],
+      "on_screen_text": [],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A settling, almost-resolved calm — a lamp-lit living room, the street going quiet. The audience is meant to relax here."
+    },
+    {
+      "span_id": "SPN-0008",
+      "chapter_id": "act1",
+      "narrative_function": "act1_turn_rehook",
+      "estimated_seconds": 15.5,
+      "cut_count": 6,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 4,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-02",
+        "PD-2026-028-IMG-03",
+        "PD-2026-028-IMG-04",
+        "PD-2026-028-IMG-05",
+        "PD-2026-028-IMG-06",
+        "PD-2026-028-IMG-07"
+      ],
+      "footage_search_keywords": [
+        "philadelphia row houses",
+        "family kitchen window night",
+        "porch bike",
+        "night street"
+      ],
+      "on_screen_text": [
+        "The house"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Slow push toward the house; a cold institutional shadow creeping over the warm home; the house isolated in frame as the real target."
+    },
+    {
+      "span_id": "SPN-0009",
+      "chapter_id": "act2",
+      "narrative_function": "mechanism_event",
+      "estimated_seconds": 12.2,
+      "cut_count": 4,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 2,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-11",
+        "PD-2026-028-IMG-12",
+        "PD-2026-028-IMG-13",
+        "PD-2026-028-IMG-14"
+      ],
+      "footage_search_keywords": [
+        "empty courtroom",
+        "government hallway benches",
+        "case files stack",
+        "padlock door",
+        "evidence room",
+        "gavel shadow",
+        "cash counted table"
+      ],
+      "on_screen_text": [
+        "May 8, 2014",
+        "SEIZE AND SEAL"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An empty, cold courtroom; a document being stamped; a hand pressing an official seal (no readable text). Bureaucratic, faceless power."
+    },
+    {
+      "span_id": "SPN-0010",
+      "chapter_id": "act2",
+      "narrative_function": "mechanism_event",
+      "estimated_seconds": 24.4,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-15",
+        "PD-2026-028-IMG-16",
+        "PD-2026-028-IMG-17",
+        "PD-2026-028-IMG-18",
+        "PD-2026-028-IMG-19",
+        "PD-2026-028-IMG-20",
+        "PD-2026-028-IMG-21",
+        "PD-2026-028-IMG-11",
+        "PD-2026-028-IMG-12"
+      ],
+      "footage_search_keywords": [
+        "empty courtroom",
+        "government hallway benches",
+        "case files stack",
+        "padlock door",
+        "evidence room",
+        "gavel shadow",
+        "cash counted table"
+      ],
+      "on_screen_text": [],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A sealed front door with an official notice; a packed bag on a threshold; a family (anonymous, from behind) leaving their own home. Restrained, devastating."
+    },
+    {
+      "span_id": "SPN-0011",
+      "chapter_id": "act2",
+      "narrative_function": "central_question",
+      "estimated_seconds": 15.5,
+      "cut_count": 6,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 4,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-13",
+        "PD-2026-028-IMG-14",
+        "PD-2026-028-IMG-15",
+        "PD-2026-028-IMG-16",
+        "PD-2026-028-IMG-17",
+        "PD-2026-028-IMG-18"
+      ],
+      "footage_search_keywords": [
+        "empty courtroom",
+        "government hallway benches",
+        "case files stack",
+        "padlock door",
+        "evidence room",
+        "gavel shadow",
+        "cash counted table"
+      ],
+      "on_screen_text": [
+        "Charged with nothing. Lost the house anyway."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A clean split motif: 'INNOCENT OWNERS' vs an advancing seal/shadow. A single question suspended on black."
+    },
+    {
+      "span_id": "SPN-0012",
+      "chapter_id": "act2",
+      "narrative_function": "mechanism_explainer",
+      "estimated_seconds": 39.9,
+      "cut_count": 14,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 6,
+        "footage": 8,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-19",
+        "PD-2026-028-IMG-20",
+        "PD-2026-028-IMG-21",
+        "PD-2026-028-IMG-11",
+        "PD-2026-028-IMG-12",
+        "PD-2026-028-IMG-13",
+        "PD-2026-028-IMG-14",
+        "PD-2026-028-IMG-15",
+        "PD-2026-028-IMG-16",
+        "PD-2026-028-IMG-17",
+        "PD-2026-028-IMG-18"
+      ],
+      "footage_search_keywords": [
+        "empty courtroom",
+        "government hallway benches",
+        "case files stack",
+        "padlock door",
+        "evidence room",
+        "gavel shadow",
+        "cash counted table"
+      ],
+      "on_screen_text": [
+        "THE HOUSE ON TRIAL"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Motion-graphic contrast: 'PERSON on trial (must be proven guilty)' vs 'PROPERTY on trial (guilty until you prove otherwise)'; the house rendered as a defendant in a dock. Kinetic typography."
+    },
+    {
+      "span_id": "SPN-0013",
+      "chapter_id": "act2",
+      "narrative_function": "mechanism_vivid",
+      "estimated_seconds": 26.5,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-19",
+        "PD-2026-028-IMG-20",
+        "PD-2026-028-IMG-21",
+        "PD-2026-028-IMG-11",
+        "PD-2026-028-IMG-12",
+        "PD-2026-028-IMG-13",
+        "PD-2026-028-IMG-14",
+        "PD-2026-028-IMG-15",
+        "PD-2026-028-IMG-16"
+      ],
+      "footage_search_keywords": [
+        "empty courtroom",
+        "government hallway benches",
+        "case files stack",
+        "padlock door",
+        "evidence room",
+        "gavel shadow",
+        "cash counted table"
+      ],
+      "on_screen_text": [
+        "THE STATE v. ONE HOUSE"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Mock in-rem case captions as kinetic type over a docket texture (no real docket numbers): 'THE STATE v. ONE HOUSE', 'THE STATE v. ONE CAR', 'THE STATE v. $178'. Deadpan, chilling."
+    },
+    {
+      "span_id": "SPN-0014",
+      "chapter_id": "act2",
+      "narrative_function": "human_beat",
+      "estimated_seconds": 15.9,
+      "cut_count": 6,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 4,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-17",
+        "PD-2026-028-IMG-18",
+        "PD-2026-028-IMG-19",
+        "PD-2026-028-IMG-20",
+        "PD-2026-028-IMG-21",
+        "PD-2026-028-IMG-11"
+      ],
+      "footage_search_keywords": [
+        "empty courtroom",
+        "government hallway benches",
+        "case files stack",
+        "padlock door",
+        "evidence room",
+        "gavel shadow",
+        "cash counted table"
+      ],
+      "on_screen_text": [
+        "Homeless in their own city"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An anonymous family on a relative's couch, dim and cramped; a deed/document under a cold lamp elsewhere. Intimate, quiet hardship."
+    },
+    {
+      "span_id": "SPN-0015",
+      "chapter_id": "act2",
+      "narrative_function": "human_beat",
+      "estimated_seconds": 17.9,
+      "cut_count": 6,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 4,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-12",
+        "PD-2026-028-IMG-13",
+        "PD-2026-028-IMG-14",
+        "PD-2026-028-IMG-15",
+        "PD-2026-028-IMG-16",
+        "PD-2026-028-IMG-17"
+      ],
+      "footage_search_keywords": [
+        "empty courtroom",
+        "government hallway benches",
+        "case files stack",
+        "padlock door",
+        "evidence room",
+        "gavel shadow",
+        "cash counted table"
+      ],
+      "on_screen_text": [
+        "Sign here. Give up your son."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A hand signing a document; a threshold with a son (anonymous) turned away outside it. The cost of getting home back."
+    },
+    {
+      "span_id": "SPN-0016",
+      "chapter_id": "act2",
+      "narrative_function": "mechanism_vivid",
+      "estimated_seconds": 48.5,
+      "cut_count": 17,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 7,
+        "footage": 10,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-18",
+        "PD-2026-028-IMG-19",
+        "PD-2026-028-IMG-20",
+        "PD-2026-028-IMG-21",
+        "PD-2026-028-IMG-11",
+        "PD-2026-028-IMG-12",
+        "PD-2026-028-IMG-13",
+        "PD-2026-028-IMG-14",
+        "PD-2026-028-IMG-15",
+        "PD-2026-028-IMG-16",
+        "PD-2026-028-IMG-17"
+      ],
+      "footage_search_keywords": [
+        "empty courtroom",
+        "government hallway benches",
+        "case files stack",
+        "padlock door",
+        "evidence room",
+        "gavel shadow",
+        "cash counted table"
+      ],
+      "on_screen_text": [
+        "COURTROOM 478",
+        "NO JUDGE · NO LAWYER"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A bleak upper-floor city-hall hearing room with no judge's bench; anonymous owners waiting on benches; forms pushed across a table. Kafkaesque, cold."
+    },
+    {
+      "span_id": "SPN-0017",
+      "chapter_id": "act2",
+      "narrative_function": "act2_button",
+      "estimated_seconds": 9.4,
+      "cut_count": 3,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 1,
+        "footage": 2,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-18",
+        "PD-2026-028-IMG-19",
+        "PD-2026-028-IMG-20"
+      ],
+      "footage_search_keywords": [
+        "empty courtroom",
+        "government hallway benches",
+        "case files stack",
+        "padlock door",
+        "evidence room",
+        "gavel shadow",
+        "cash counted table"
+      ],
+      "on_screen_text": [],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A door with an official seal; the words 'COLLECTION DEPARTMENT' implied by ledgers and cash envelopes glimpsed inside. Damning, restrained."
+    },
+    {
+      "span_id": "SPN-0018",
+      "chapter_id": "act3",
+      "narrative_function": "act3_rehook_second_person",
+      "estimated_seconds": 25.7,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-22",
+        "PD-2026-028-IMG-23",
+        "PD-2026-028-IMG-24",
+        "PD-2026-028-IMG-25",
+        "PD-2026-028-IMG-26",
+        "PD-2026-028-IMG-27",
+        "PD-2026-028-IMG-28",
+        "PD-2026-028-IMG-29",
+        "PD-2026-028-IMG-30"
+      ],
+      "footage_search_keywords": [
+        "case boxes wall",
+        "city map markers",
+        "lawyer office night",
+        "ledger desk lamp",
+        "seizure envelopes",
+        "supreme court marble"
+      ],
+      "on_screen_text": [
+        "One address on a very long list"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A wall / map of the city dotted densely with markers (abstract, no readable labels); pull back to reveal how many. Then a single anonymous 'you' figure among them."
+    },
+    {
+      "span_id": "SPN-0019",
+      "chapter_id": "act3",
+      "narrative_function": "scale",
+      "estimated_seconds": 22.4,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-31",
+        "PD-2026-028-IMG-22",
+        "PD-2026-028-IMG-23",
+        "PD-2026-028-IMG-24",
+        "PD-2026-028-IMG-25",
+        "PD-2026-028-IMG-26",
+        "PD-2026-028-IMG-27",
+        "PD-2026-028-IMG-28"
+      ],
+      "footage_search_keywords": [
+        "case boxes wall",
+        "city map markers",
+        "lawyer office night",
+        "ledger desk lamp",
+        "seizure envelopes",
+        "supreme court marble"
+      ],
+      "on_screen_text": [
+        "1,200+ HOMES",
+        "$50M+ CASH",
+        "median seizure: $178"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Big motion-graphic counters climbing: 1,200+ HOMES / 3,500+ CARS / $50M+ CASH, then a hard cut to a small '$178'. Kinetic numbers with spring + motion blur."
+    },
+    {
+      "span_id": "SPN-0020",
+      "chapter_id": "act3",
+      "narrative_function": "analysis",
+      "estimated_seconds": 21.2,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-29",
+        "PD-2026-028-IMG-30",
+        "PD-2026-028-IMG-31",
+        "PD-2026-028-IMG-22",
+        "PD-2026-028-IMG-23",
+        "PD-2026-028-IMG-24",
+        "PD-2026-028-IMG-25",
+        "PD-2026-028-IMG-26"
+      ],
+      "footage_search_keywords": [
+        "case boxes wall",
+        "city map markers",
+        "lawyer office night",
+        "ledger desk lamp",
+        "seizure envelopes",
+        "supreme court marble"
+      ],
+      "on_screen_text": [
+        "$178"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A single $178 in an envelope dwarfed by the machinery around it; ordinary hands, empty pockets. The cruelty of the small number."
+    },
+    {
+      "span_id": "SPN-0021",
+      "chapter_id": "act3",
+      "narrative_function": "rehook_question",
+      "estimated_seconds": 9.8,
+      "cut_count": 4,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 2,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-27",
+        "PD-2026-028-IMG-28",
+        "PD-2026-028-IMG-29",
+        "PD-2026-028-IMG-30"
+      ],
+      "footage_search_keywords": [
+        "case boxes wall",
+        "city map markers",
+        "lawyer office night",
+        "ledger desk lamp",
+        "seizure envelopes",
+        "supreme court marble"
+      ],
+      "on_screen_text": [
+        "Follow the money"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A question on black, then money physically flowing along a path toward a police/DA seal. 'Follow the money' as literal motion."
+    },
+    {
+      "span_id": "SPN-0022",
+      "chapter_id": "act3",
+      "narrative_function": "mechanism_core",
+      "estimated_seconds": 33.4,
+      "cut_count": 12,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 5,
+        "footage": 7,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-31",
+        "PD-2026-028-IMG-22",
+        "PD-2026-028-IMG-23",
+        "PD-2026-028-IMG-24",
+        "PD-2026-028-IMG-25",
+        "PD-2026-028-IMG-26",
+        "PD-2026-028-IMG-27",
+        "PD-2026-028-IMG-28",
+        "PD-2026-028-IMG-29",
+        "PD-2026-028-IMG-30"
+      ],
+      "footage_search_keywords": [
+        "case boxes wall",
+        "city map markers",
+        "lawyer office night",
+        "ledger desk lamp",
+        "seizure envelopes",
+        "supreme court marble"
+      ],
+      "on_screen_text": [
+        "THE MONEY PAID THEIR OWN SALARIES",
+        "~$6M a year"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Motion graphic: seized property -> a budget/ledger -> paychecks, a closed loop. '~$6M / YEAR' counter. The conflict of interest made visual."
+    },
+    {
+      "span_id": "SPN-0023",
+      "chapter_id": "act3",
+      "narrative_function": "legal_backdrop",
+      "estimated_seconds": 41.1,
+      "cut_count": 15,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 6,
+        "footage": 9,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-31",
+        "PD-2026-028-IMG-22",
+        "PD-2026-028-IMG-23",
+        "PD-2026-028-IMG-24",
+        "PD-2026-028-IMG-25",
+        "PD-2026-028-IMG-26",
+        "PD-2026-028-IMG-27",
+        "PD-2026-028-IMG-28",
+        "PD-2026-028-IMG-29",
+        "PD-2026-028-IMG-30"
+      ],
+      "footage_search_keywords": [
+        "case boxes wall",
+        "city map markers",
+        "lawyer office night",
+        "ledger desk lamp",
+        "seizure envelopes",
+        "supreme court marble"
+      ],
+      "on_screen_text": [
+        "\"egregious and well-chronicled abuses\"",
+        "— Justice Thomas, 2017"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Marble Supreme Court gravitas; the Thomas quote as restrained typography over stone; a 2017 -> 2019 timeline beat. No justices' faces."
+    },
+    {
+      "span_id": "SPN-0024",
+      "chapter_id": "act3",
+      "narrative_function": "turn_to_fight",
+      "estimated_seconds": 33.0,
+      "cut_count": 12,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 5,
+        "footage": 7,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-31",
+        "PD-2026-028-IMG-22",
+        "PD-2026-028-IMG-23",
+        "PD-2026-028-IMG-24",
+        "PD-2026-028-IMG-25",
+        "PD-2026-028-IMG-26",
+        "PD-2026-028-IMG-27",
+        "PD-2026-028-IMG-28",
+        "PD-2026-028-IMG-29",
+        "PD-2026-028-IMG-30"
+      ],
+      "footage_search_keywords": [
+        "case boxes wall",
+        "city map markers",
+        "lawyer office night",
+        "ledger desk lamp",
+        "seizure envelopes",
+        "supreme court marble"
+      ],
+      "on_screen_text": [
+        "SOUROVELIS v. CITY OF PHILADELPHIA"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An anonymous attorney before a wall of case boxes; four names rising as typography (the plaintiffs) — no likenesses. A David-vs-machine framing."
+    },
+    {
+      "span_id": "SPN-0025",
+      "chapter_id": "act3",
+      "narrative_function": "act3_button_openloop",
+      "estimated_seconds": 20.0,
+      "cut_count": 7,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 4,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-31",
+        "PD-2026-028-IMG-22",
+        "PD-2026-028-IMG-23",
+        "PD-2026-028-IMG-24",
+        "PD-2026-028-IMG-25",
+        "PD-2026-028-IMG-26",
+        "PD-2026-028-IMG-27"
+      ],
+      "footage_search_keywords": [
+        "case boxes wall",
+        "city map markers",
+        "lawyer office night",
+        "ledger desk lamp",
+        "seizure envelopes",
+        "supreme court marble"
+      ],
+      "on_screen_text": [
+        "Could a city be forced to stop?"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A small figure squared off against a vast machine/institution silhouette. The stakes raised to their peak before Act IV."
+    },
+    {
+      "span_id": "SPN-0026",
+      "chapter_id": "act4",
+      "narrative_function": "resolution_tension",
+      "estimated_seconds": 12.2,
+      "cut_count": 4,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 2,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-32",
+        "PD-2026-028-IMG-33",
+        "PD-2026-028-IMG-34",
+        "PD-2026-028-IMG-35"
+      ],
+      "footage_search_keywords": [
+        "key in door dawn",
+        "sunrise row houses",
+        "porch light dusk",
+        "settlement document pen",
+        "quiet street golden hour"
+      ],
+      "on_screen_text": [
+        "Four years"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A calendar/clock motif of years passing; stacks of filings growing. Grind and endurance."
+    },
+    {
+      "span_id": "SPN-0027",
+      "chapter_id": "act4",
+      "narrative_function": "resolution_turn",
+      "estimated_seconds": 18.3,
+      "cut_count": 7,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 4,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-36",
+        "PD-2026-028-IMG-37",
+        "PD-2026-028-IMG-38",
+        "PD-2026-028-IMG-39",
+        "PD-2026-028-IMG-40",
+        "PD-2026-028-IMG-32",
+        "PD-2026-028-IMG-33"
+      ],
+      "footage_search_keywords": [
+        "key in door dawn",
+        "sunrise row houses",
+        "porch light dusk",
+        "settlement document pen",
+        "quiet street golden hour"
+      ],
+      "on_screen_text": [
+        "They kept their home — and kept fighting"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A key turning in the family's own front door at dawn (anonymous hand); then a choice — walk away, or keep fighting for everyone else. Warm light returning."
+    },
+    {
+      "span_id": "SPN-0028",
+      "chapter_id": "act4",
+      "narrative_function": "payoff_reform",
+      "estimated_seconds": 53.4,
+      "cut_count": 19,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 8,
+        "footage": 11,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-34",
+        "PD-2026-028-IMG-35",
+        "PD-2026-028-IMG-36",
+        "PD-2026-028-IMG-37",
+        "PD-2026-028-IMG-38",
+        "PD-2026-028-IMG-39",
+        "PD-2026-028-IMG-40",
+        "PD-2026-028-IMG-32",
+        "PD-2026-028-IMG-33"
+      ],
+      "footage_search_keywords": [
+        "key in door dawn",
+        "sunrise row houses",
+        "porch light dusk",
+        "settlement document pen",
+        "quiet street golden hour"
+      ],
+      "on_screen_text": [
+        "THE MACHINE WAS DISMANTLED",
+        "$3M returned"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Motion-graphic checklist of the reforms landing one by one with spring/scale; a '$3,000,000 FUND' beat. The machine visibly powering down."
+    },
+    {
+      "span_id": "SPN-0029",
+      "chapter_id": "act4",
+      "narrative_function": "act4_button",
+      "estimated_seconds": 4.9,
+      "cut_count": 2,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 1,
+        "footage": 1,
+        "treatments_rotation": [
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-34",
+        "PD-2026-028-IMG-35"
+      ],
+      "footage_search_keywords": [
+        "key in door dawn",
+        "sunrise row houses",
+        "porch light dusk",
+        "settlement document pen",
+        "quiet street golden hour"
+      ],
+      "on_screen_text": [
+        "Courtroom 478: closed"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "The Courtroom 478 door closing and going dark; a lock turning. Symbolic end of the machine."
+    },
+    {
+      "span_id": "SPN-0030",
+      "chapter_id": "ending",
+      "narrative_function": "ending_callback",
+      "estimated_seconds": 12.2,
+      "cut_count": 4,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 2,
+        "footage": 2,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-32",
+        "PD-2026-028-IMG-33",
+        "PD-2026-028-IMG-34",
+        "PD-2026-028-IMG-35"
+      ],
+      "footage_search_keywords": [
+        "sealed door removed",
+        "family doorway warm",
+        "street golden hour"
+      ],
+      "on_screen_text": [
+        "They did nothing wrong"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Callback to the cold-open: the sealed door, the packed bag, the family on the steps — now with the seal removed. Bookend the imagery."
+    },
+    {
+      "span_id": "SPN-0031",
+      "chapter_id": "ending",
+      "narrative_function": "ending_theme",
+      "estimated_seconds": 28.9,
+      "cut_count": 10,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 6,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-36",
+        "PD-2026-028-IMG-37",
+        "PD-2026-028-IMG-38",
+        "PD-2026-028-IMG-39",
+        "PD-2026-028-IMG-40",
+        "PD-2026-028-IMG-32",
+        "PD-2026-028-IMG-33",
+        "PD-2026-028-IMG-34",
+        "PD-2026-028-IMG-35"
+      ],
+      "footage_search_keywords": [
+        "sealed door removed",
+        "family doorway warm",
+        "street golden hour"
+      ],
+      "on_screen_text": [
+        "PROOF BEFORE PUNISHMENT"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "The thesis rendered plainly: 'PROOF BEFORE PUNISHMENT' vs 'take first, prove later' — a reversed arrow snapping back to the correct direction."
+    },
+    {
+      "span_id": "SPN-0032",
+      "chapter_id": "ending",
+      "narrative_function": "ending_human",
+      "estimated_seconds": 23.2,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-36",
+        "PD-2026-028-IMG-37",
+        "PD-2026-028-IMG-38",
+        "PD-2026-028-IMG-39",
+        "PD-2026-028-IMG-40",
+        "PD-2026-028-IMG-32",
+        "PD-2026-028-IMG-33",
+        "PD-2026-028-IMG-34"
+      ],
+      "footage_search_keywords": [
+        "sealed door removed",
+        "family doorway warm",
+        "street golden hour"
+      ],
+      "on_screen_text": [],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An ordinary painter's hand; then a long line of anonymous people behind him, the burden lifting from each. Warm, earned resolution."
+    },
+    {
+      "span_id": "SPN-0033",
+      "chapter_id": "ending",
+      "narrative_function": "cta",
+      "estimated_seconds": 6.9,
+      "cut_count": 2,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 1,
+        "footage": 1,
+        "treatments_rotation": [
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-028-IMG-35",
+        "PD-2026-028-IMG-36"
+      ],
+      "footage_search_keywords": [
+        "sealed door removed",
+        "family doorway warm",
+        "street golden hour"
+      ],
+      "on_screen_text": [
+        "hit like — so more people know",
+        "Subscribe"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Brand endcard tail. A warm, resolved street at golden hour; earned, specific CTA — not a generic beg."
+    }
+  ],
+  "totals": {
+    "span_count": 33,
+    "cut_count": 254,
+    "estimated_total_seconds": 712.0,
+    "avg_cut_seconds": 2.8,
+    "image_footage_ratio_target": "≈4:6",
+    "distinct_asset_target": ">= 23 (runtime/30)",
+    "max_reuse_per_clip": 3,
+    "hero_stills_available": 40
+  }
+}
