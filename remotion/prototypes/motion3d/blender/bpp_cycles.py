@@ -33,7 +33,10 @@ for dt in ['OPTIX', 'CUDA', 'HIP', 'ONEAPI']:
 print('CYCLES device =', picked)
 scene.cycles.samples = SAMPLES
 scene.cycles.use_denoising = True
-try: scene.cycles.caustics_reflective = True; scene.cycles.caustics_refractive = True
+# NOTE: caustics OFF on purpose — with glass they make some frames explode in
+# render time (a single frame stalled for minutes mid-animation). The Glare
+# bloom already supplies the glow. Do not re-enable for animation renders.
+try: scene.cycles.caustics_reflective = False; scene.cycles.caustics_refractive = False
 except Exception: pass
 
 scene.render.resolution_x = RX
