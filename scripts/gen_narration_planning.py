@@ -140,9 +140,16 @@ def main(argv):
     made = skipped = failed = 0
     for c in chunks:
         out = outdir / f"{c['chunk_id']}.mp3"
-        if out.exists() and out.stat().st_size > 2048:
-            skipped += 1
-            continue
+        meta = out.with_suffix(".json")
+        # text-aware idempotency: skip only if the existing mp3 was made from the
+        # SAME text (rule 11). A changed span re-generates; unchanged ones are free.
+        if out.exists() and out.stat().st_size > 2048 and meta.exists():
+            try:
+                if json.loads(meta.read_text("utf-8")).get("text_sha256") == c["text_sha256"]:
+                    skipped += 1
+                    continue
+            except Exception:
+                pass
         body = json.dumps({"text": c["spoken_text"], "model_id": MODEL,
                            "voice_settings": SETTINGS[c["delivery"]]}).encode("utf-8")
         req = urllib.request.Request(TTS.format(vid=VOICE_ID), data=body,
@@ -151,6 +158,9 @@ def main(argv):
         try:
             with urllib.request.urlopen(req, timeout=180) as r:
                 out.write_bytes(r.read())
+            meta.write_text(json.dumps({"chunk_id": c["chunk_id"], "text_sha256": c["text_sha256"],
+                                        "characters": len(c["spoken_text"]), "delivery": c["delivery"],
+                                        "generated_at": time.strftime("%Y-%m-%dT%H:%M:%S%z")}, ensure_ascii=False), "utf-8")
             print(f"  {c['chunk_id']} {c['delivery']:8s} {len(c['spoken_text']):4d}ch -> {out.stat().st_size//1024}KB {dur(out):.2f}s")
             made += 1
             time.sleep(0.35)
