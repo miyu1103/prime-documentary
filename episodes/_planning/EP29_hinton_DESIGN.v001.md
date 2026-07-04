@@ -2,7 +2,7 @@
 
 **Episode ID:** `PD-2026-029-hinton`  ·  **slug:** `hinton`
 **Series arc:** *They Did Nothing Wrong*（普通の人 vs システムの暴走）2/3
-**Duration profile:** standard — target **12:00 (720s)**, band **690–750s**
+**Duration profile:** standard — target **12:00 (720s)**, band **690–750s** · **AS-BUILT (2026-07-05): 696.8s = 11.6min（band内）**
 **R-rating:** **R2**（実在・存命人物＋死刑・人種。fact_recheck と公開前法務ゲート必須）
 **Binding spec:** `docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md`（rows 1–16 のインスタンス）
 
@@ -20,14 +20,27 @@
 
 ---
 
-## 1. 事実の骨子（★=fact_recheck で verbatim 確定。**この段階では未確定**）
+## ✅ 制作ステータス（AS-BUILT 2026-07-05）
+
+左工程＋ナレ音声＋字幕まで完成・機械ゲート緑。**残るは画像→組立のみ**。
+- **事実**: `fact_recheck.v001`（多出典・GUARDRAILS）で確定。
+- **台本**: `script.annotated.v001.json`（正典スキーマ）＝確定ナレ源・**2,058語**（3パス済）。
+- **ナレ音声**: ElevenLabs master **676.3s**（`voice_is_master` PASS・$約4）。
+- **字幕**: 強制アライン `captions.final.v001.srt`（一致100%／format／カバー **全PASS**）。
+- **尺**: 総尺 **696.8s = 11.6分**（band 690–750 内）。式＝hook8＋opening3.5＋ナレ＋endcard9。
+- **カット割**: `shotlist.v001.json`（**251カット**・平均2.8s・treatmentローテ・密度≥23）。
+- **残**: 画像40枚(Codex・`ai_prompts.v001`)→`remotion/public/hinton`ステージ→`data/hinton_film.json`→Remotion組立→`check_final_acceptance` exit0→MotionSample目視。
+
+---
+
+## 1. 事実の骨子（**FACTS LOCKED**: `fact_recheck.v001` で多出典確定・GUARDRAILS拘束）
 
 実話ベース：**Anthony Ray Hinton**（アラバマ／無実の死刑囚）。
 
 - ★ 1985年、ファストフード店長を狙った連続強盗殺人（2件）でアラバマの黒人男性 Hinton を逮捕。犯行時、彼は**施錠された倉庫で夜勤中**というアリバイ。
 - ★ 有罪の柱は**信用性の低い弾道（ballistics）鑑定**——母親の古いリボルバーと現場の弾が「一致」とされた。
-- ★ 貧困で**弁護が機能不全**（州の予算上限・雇った鑑定専門家が不適格＝片目が見えない等★）。
-- ★ 1985/86年に死刑判決 → **約30年**を死刑房で過ごす。
+- **弁護が機能不全（訂正・最重要）**：弁護人は鑑定費を**上限$1,000と誤認**（実際は上限規定なし）→その額しか請求せず、雇えた"専門家"は**片目しか見えず比較顕微鏡を操作できない**土木技師。※この**"誤認"が最高裁のineffective assistance判断の核心**（"予算上限"ではない）。
+- 逮捕1985/7/31・**有罪1986/9/17**（評決約1時間）→ **nearly 30 years** 死刑房（2015/4/3釈放＝死刑冤罪152人目）。※尺表現は"約30年/almost three decades"、断定年数は避ける。
 - ★ **Equal Justice Initiative / Bryan Stevenson** が受任。新しい弾道専門家が「弾は銃と一致しない」と証明。
 - ★ 2014年、**連邦最高裁が全員一致**で「弁護は違憲的に不十分」（*Hinton v. Alabama*）。
 - ★ 2015年4月、州が再鑑定で結び付けられず**釈放**。回顧録 *The Sun Does Shine*（★2018）。
@@ -48,7 +61,7 @@
 | **ACT IV 光** | ~560–711 | ~2.5min | 全員一致の最高裁／釈放／**フック回収**／稼いだLikeへのCTA | ~430w |
 | **BrandEndcard** | 711–720 | 9.0s | `BrandEndcard`（CTA/cadence） | 0 |
 
-**ナレ合計 ≈ 2,030w**（実測後 band 内へ微調整）。
+**ナレ合計 ＝ 2,058語（AS-BUILT）**＝ElevenLabs実音声 **676.3s** → 総尺 **696.8s＝11.6分（band内）**。※当初~1,750語で band 下限割れが判明し、出典内で **+約300語**して補正済（2026-07-05）。
 **リテンション（row16）**：フックの謎（彼は殺されるのか？）をラストまで保持。オープンループ「だが弾は、嘘をついていた…」をACT II末。**再フック~2:30ごと**（アリバイ→鑑定→30年→最高裁）。20秒超の平坦禁止。
 
 ---

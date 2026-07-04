@@ -20,7 +20,20 @@
 
 ---
 
-## 1. 事実の骨子（★=fact_recheck で verbatim 確定。**この設計書段階では未確定**）
+## ✅ 制作ステータス（AS-BUILT 2026-07-05）
+
+左工程＋ナレ音声＋字幕まで完成・機械ゲート緑。**残るは画像→組立のみ**。
+- **事実**: `fact_recheck.v001`（多出典・GUARDRAILS）で確定（★は逐語ロック済）。
+- **台本**: `script.annotated.v001.json`（正典スキーマ）＝確定ナレ源・**2,054語**（3パス済）。
+- **ナレ音声**: ElevenLabs master **686.1s**（`voice_is_master` PASS）。
+- **字幕**: 強制アライン `captions.final.v001.srt`（一致100%／format／カバー **全PASS**）。
+- **尺**: 総尺 **706.6s = 11.8分**（band 690–750 内）。式＝hook8＋opening3.5＋ナレ＋endcard9。
+- **カット割**: `shotlist.v001.json`（**257カット**・平均2.8s・treatmentローテ・密度≥23）。
+- **残**: 画像40枚(Codex・`ai_prompts.v001`)→`remotion/public/forfeiture`ステージ→`data/forfeiture_film.json`→Remotion組立→`check_final_acceptance` exit0→MotionSample目視。
+
+---
+
+## 1. 事実の骨子（**FACTS LOCKED**: `fact_recheck.v001` で多出典確定・GUARDRAILS拘束）
 
 実話ベース：**Sourovelis v. City of Philadelphia**（フィラデルフィアの民事没収）。
 
