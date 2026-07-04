@@ -42,8 +42,12 @@ Hard checks (block the final):
                          quality export).
   - images_present     : no excessive black (a "no images" / placeholder render
                          shows long black stretches).
-  - motion_present     : no long motionless stretch (freezedetect) -- a slideshow
-                         of static images / weak animation is caught.
+  - motion_present     : no long FULLY motionless stretch (freezedetect).
+  - animation_density  : the frame must actually MOVE, not merely be 'not frozen'
+                         -- a raised freezedetect noise floor flags near-still
+                         spans (pasted still / slow Ken Burns), fails if > 10% of
+                         runtime is near-still or one hold > 3s. Catches the
+                         '紙芝居 (slideshow)' that motion_present misses.
   - bgm_present        : a continuous (ducked) music bed -- narration-only mixes
                          leave long silence between sentences (EP14 final = 109s).
   - thumbnail_ready    : >=3 thumbnail PNGs at 1280x720 + a selected one exist
@@ -94,6 +98,21 @@ MAX_CPS = 27.0                                   # reading speed (chars/second)
 MAX_FREEZE_S = 2.5                               # any motionless stretch beyond this is flagged
 MAX_FREEZE_LONGEST_S = 4.0                       # tolerate one designed hold beat
 MAX_FREEZE_TOTAL_S = 8.0
+# animation density (row 8): "not frozen" != "actually animated". A raised
+# freezedetect noise floor flags NEAR-still spans (a pasted still or a slow Ken
+# Burns zoom -- the "紙芝居" the owner keeps getting). Calibrated 2026-07-04 on
+# real renders: approved MotionSample = 5.5% near-still; an old slideshow-style
+# cut = 14.4%. So the enforceable floor sits between.
+LOW_MOTION_NOISE_DB = -38.0                      # freezedetect noise tolerance (higher => catches slow motion)
+LOW_MOTION_MIN_SPAN_S = 0.8                      # a near-still stretch must last this long to count
+LOW_MOTION_MAX_FRACTION = 0.10                   # >10% of runtime near-still => too little animation
+LOW_MOTION_MAX_SPAN_S = 3.0                      # any single near-still hold beyond this fails
+# ending BGM must resolve, not get chopped mid-phrase at full volume. This is a
+# FLOOR only (a hard full-volume cut fails); whether it lands on a musical cadence
+# ("切りのいいところ") is an arrangement choice + a manual listen -- not amplitude.
+BGM_END_MIN_BODY_DB = -45.0                      # if the last seconds are quieter than this, no bed to resolve -> skip
+BGM_END_TAIL_SILENCE_DB = -45.0                  # final 0.3s ~silent => resolved/faded cleanly
+BGM_END_MIN_DROP_DB = 10.0                       # OR final 0.3s >=10 dB below the body => resolving, not chopped
 MIN_VIDEO_W, MIN_VIDEO_H = 1920, 1080
 THUMB_W, THUMB_H = 1280, 720
 MIN_THUMB_VARIANTS = 3
@@ -462,6 +481,68 @@ def check_bgm(path: Path) -> dict:
                       f"high => no continuous BGM bed / narration-only mix)"}
 
 
+def check_low_motion(path: Path, dur: float) -> dict:
+    """HARD: enough of the frame must actually be MOVING, not merely 'not frozen'.
+    `motion_present` (check_freeze) only catches a FULLY frozen frame -- a slow Ken
+    Burns zoom or a barely-moving pasted still sails through it, which is exactly
+    the '紙芝居 (slideshow)' the owner keeps getting despite the animation promise.
+    This raises the freezedetect noise floor so near-still spans are flagged, and
+    fails when too much of the runtime is near-still (or one hold runs too long).
+    Calibrated on real renders: approved MotionSample ~5.5%; old slideshow ~14.4%."""
+    try:
+        out = subprocess.run(
+            ["ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
+             "-vf", f"freezedetect=n={LOW_MOTION_NOISE_DB}dB:d={LOW_MOTION_MIN_SPAN_S}",
+             "-map", "0:v", "-an", "-f", "null", os.devnull],
+            capture_output=True, text=True, timeout=1800)
+    except Exception as exc:  # noqa: BLE001
+        return {"check": "animation_density", "ok": True, "hard": False, "skipped": True,
+                "reason": f"freezedetect skipped ({exc})"}
+    durs = [float(x) for x in re.findall(r"freeze_duration:\s*([0-9.]+)", out.stderr)]
+    total_lm = sum(durs)
+    longest = max(durs) if durs else 0.0
+    frac = (total_lm / dur) if dur else 0.0
+    ok = frac <= LOW_MOTION_MAX_FRACTION and longest <= LOW_MOTION_MAX_SPAN_S
+    return {"check": "animation_density", "ok": ok, "hard": True,
+            "reason": f"near-still {frac * 100:.1f}% of runtime "
+                      f"({total_lm:.0f}s over {len(durs)} spans, longest {longest:.1f}s); "
+                      f"limits <= {LOW_MOTION_MAX_FRACTION * 100:.0f}% and single <= "
+                      f"{LOW_MOTION_MAX_SPAN_S:.0f}s (approved MotionSample ~5.5%)"}
+
+
+def _mean_volume(path: Path, start: float, dur: float) -> float | None:
+    """mean_volume (dB) of a [start, start+dur] audio window, or None."""
+    out = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-nostats", "-ss", f"{start}", "-t", f"{dur}",
+         "-i", str(path), "-map", "0:a:0", "-af", "volumedetect", "-f", "null", os.devnull],
+        capture_output=True, text=True)
+    m = re.search(r"mean_volume:\s*(-?\d+(?:\.\d+)?) dB", out.stderr)
+    return float(m.group(1)) if m else None
+
+
+def check_bgm_ending(path: Path, dur: float) -> dict:
+    """HARD (floor): the ending BGM must NOT be chopped off at full volume -- the
+    final ~0.3s must resolve, either to near-silence or clearly below the ending
+    body (a fade / a composed cadence). This only catches the jarring hard cut;
+    landing on a musical cadence ('切りのいいところ') is enforced by arrangement
+    (align the ending cue's own end to the video end) + a manual listen, NOT here.
+    Skips when there is no music bed under the tail (nothing to resolve)."""
+    if not dur:
+        return {"check": "bgm_ending", "ok": True, "hard": False, "skipped": True, "reason": "no duration"}
+    body = _mean_volume(path, max(0.0, dur - 2.0), 1.5)   # 1.5s ending 0.5s before the end
+    tail = _mean_volume(path, max(0.0, dur - 0.30), 0.30)  # the final 0.30s
+    if body is None or tail is None or body < BGM_END_MIN_BODY_DB:
+        return {"check": "bgm_ending", "ok": True, "hard": False, "skipped": True,
+                "reason": f"no music bed under the tail to resolve (body {body} dB)"}
+    drop = body - tail
+    resolved = tail <= BGM_END_TAIL_SILENCE_DB or drop >= BGM_END_MIN_DROP_DB
+    return {"check": "bgm_ending", "ok": resolved, "hard": True,
+            "reason": (f"ending resolves: final 0.3s {tail:.1f} dB vs body {body:.1f} dB "
+                       f"(drop {drop:.1f} dB)" if resolved else
+                       f"ending HARD-CHOPPED: final 0.3s {tail:.1f} dB ~= body {body:.1f} dB "
+                       f"(drop only {drop:.1f} dB; music cut mid-phrase at full volume)")}
+
+
 def check_hook(epdir: Path, dur: float) -> dict:
     """Soft: runtime must exceed (shotlist body + bookends) enough to hold a hook."""
     sl = _load(epdir / "04_scenes" / "shotlist.v001.json") or {}
@@ -568,7 +649,9 @@ def main() -> int:
             results.append(check_render_resolution(render))
             results.append(check_black(render))
             results.append(check_freeze(render))
+            results.append(check_low_motion(render, render_dur))
             results.append(check_bgm(render))
+            results.append(check_bgm_ending(render, render_dur))
             results.append(check_hook(epdir, render_dur))
             results.append(check_loudness(render))
         except Exception as exc:  # noqa: BLE001
