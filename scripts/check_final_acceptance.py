@@ -25,6 +25,16 @@ Hard checks (block the final):
   - caption_format     : captions break cleanly -- <=2 lines, <=42 chars/line,
                          cue <=7s, reading speed <=20 cps (the "captions unreadable"
                          rework class; "caption" appears 85x in event logs).
+  - caption_narration_match : the burned captions are the SAME WORDS (>=90% token
+                         match) as the approved narration spoken_text -- catches a
+                         wrong / review-proxy .srt burned in (the EP14 "captions
+                         != narration" class that caption_format cannot detect).
+  - structure_4part    : narration sections run HOOK -> OPENING -> body -> ENDING
+                         and (if film-data present) the render carries a real
+                         cold-open hook -- reads the artifact, not a self-asserted
+                         four_part_structure bool.
+  - op_ed_bookends     : the episode composition uses the canonical BrandOpening +
+                         BrandEndcard from components/Bookends (no off-brand OP/ED).
   - runtime_band       : finished runtime within the episode's duration profile
                          (standard 11.5-12.5 / mid 27-33 / feature 55-65 min),
                          read from manifest.target_duration_minutes.
@@ -53,6 +63,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import difflib
 import glob
 import json
 import os
@@ -88,6 +99,12 @@ THUMB_W, THUMB_H = 1280, 720
 MIN_THUMB_VARIANTS = 3
 IMG_MIN_LONG_EDGE = 3840                         # spec row 5: hero stills upscaled to >=4K long edge
 FACTORY_SECONDS_PER_CLIP = 45                    # spec row 7: >=1 distinct factory clip per ~45s
+# caption<->narration identity + 4-part structure + canonical bookends
+CAPTION_MATCH_MIN = 0.90                         # burned captions must be >=90% the narration words
+HOOK_MIN_SEC = 5.0                               # render must open with a real cold-open hook
+HOOK_SECTION = "HOOK"
+OPENING_SECTION = "OPENING"
+ENDING_MARKERS = ("ENDING", "OUTRO", "CTA", "CLOSE", "CONCLUSION", "CODA")
 
 
 def runtime_band(epdir: Path) -> tuple[float, float]:
@@ -232,6 +249,119 @@ def check_caption_format(epdir: Path) -> dict:
     return {"check": "caption_format", "ok": ok, "hard": True,
             "reason": (f"{best.name}: {len(viol)} violation(s): {head}" if viol
                        else f"{best.name}: line/duration/cps within limits")}
+
+
+def _srt_text(p: Path) -> str:
+    """All spoken caption text (index + timestamp lines dropped)."""
+    out: list[str] = []
+    for b in re.split(r"\n\s*\n", p.read_text(encoding="utf-8", errors="ignore").strip()):
+        for ln in b.splitlines():
+            s = ln.strip()
+            if not s or "-->" in s or s.isdigit():
+                continue
+            out.append(s)
+    return " ".join(out)
+
+
+def _norm_tokens(s: str) -> list[str]:
+    return re.findall(r"[a-z0-9]+", s.lower())
+
+
+def _latest_narration(epdir: Path) -> dict | None:
+    """Latest non-proxy narration_index (carries per-chunk spoken_text + section)."""
+    cands = [p for p in (epdir / "06_audio").glob("narration_index*.json")
+             if "review_proxy" not in p.name]
+    return _load(sorted(cands)[-1]) if cands else None
+
+
+def check_caption_narration_match(epdir: Path) -> dict:
+    """HARD: the burned final captions must be the SAME WORDS as the approved
+    narration (spoken_text). Catches the EP14 class where a wrong / review-proxy
+    .srt is burned in, so the on-screen text does not match the spoken audio --
+    the exact 'captions != narration' complaint that caption_format cannot see."""
+    nar = _latest_narration(epdir)
+    ref = " ".join(c.get("spoken_text", "") for c in (nar or {}).get("chunks") or []).strip()
+    srts = [p for p in (epdir / "08_edit").glob("*.srt")
+            if "review_proxy" not in p.name and p.stat().st_size > 0]
+    if not ref or not srts:
+        return {"check": "caption_narration_match", "ok": True, "hard": False, "skipped": True,
+                "reason": "no narration spoken_text and/or final .srt to compare"}
+    best = max(srts, key=_srt_last_end_seconds)
+    ref_t, hyp_t = _norm_tokens(ref), _norm_tokens(_srt_text(best))
+    ratio = difflib.SequenceMatcher(None, ref_t, hyp_t, autojunk=False).ratio()
+    ok = ratio >= CAPTION_MATCH_MIN
+    return {"check": "caption_narration_match", "ok": ok, "hard": True,
+            "reason": f"{best.name} vs narration: {ratio * 100:.1f}% token match "
+                      f"(min {CAPTION_MATCH_MIN * 100:.0f}%; narration {len(ref_t)}w, "
+                      f"captions {len(hyp_t)}w)"}
+
+
+def check_structure(epdir: Path) -> dict:
+    """HARD: the episode must be built HOOK -> OPENING -> body -> ENDING.
+    Reads the approved narration section labels (a real artifact, not a
+    self-asserted four_part_structure=true bool) and, when the render's
+    film-data json exists, confirms it actually carries a cold-open hook."""
+    nar = _latest_narration(epdir)
+    secs = [str(c.get("section", "")).upper().strip() for c in (nar or {}).get("chunks") or []]
+    ordered: list[str] = []
+    for s in secs:
+        if not ordered or ordered[-1] != s:
+            ordered.append(s)
+    if not ordered:
+        return {"check": "structure_4part", "ok": True, "hard": False, "skipped": True,
+                "reason": "no narration sections to check"}
+    problems: list[str] = []
+    if not ordered[0].startswith(HOOK_SECTION):
+        problems.append(f"first section '{ordered[0]}' is not HOOK")
+    if not any(s.startswith(OPENING_SECTION) for s in ordered):
+        problems.append("no OPENING section")
+    elif ordered[0].startswith(HOOK_SECTION) and len(ordered) > 1 \
+            and not ordered[1].startswith(OPENING_SECTION):
+        problems.append(f"OPENING does not follow HOOK (got '{ordered[1]}')")
+    if not any(s.startswith(m) for s in ordered for m in ENDING_MARKERS):
+        problems.append("no ENDING/CTA section")
+    body = [s for s in ordered if not s.startswith(HOOK_SECTION)
+            and not s.startswith(OPENING_SECTION)
+            and not any(s.startswith(m) for m in ENDING_MARKERS)]
+    if not body:
+        problems.append("no body/ACT sections")
+    slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
+    fdata = ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
+    d = _load(fdata) if fdata.is_file() else None
+    if d is not None:
+        if (d.get("hookSeconds") or 0) < HOOK_MIN_SEC:
+            problems.append(f"film hookSeconds={d.get('hookSeconds')} < {HOOK_MIN_SEC}")
+        if not str(d.get("hookLine", "")).strip():
+            problems.append("film hookLine empty")
+    ok = not problems
+    return {"check": "structure_4part", "ok": ok, "hard": True,
+            "reason": (f"{' -> '.join(ordered)}" if ok else "; ".join(problems))}
+
+
+def check_bookends(epdir: Path) -> dict:
+    """HARD: OP/ED must be the canonical channel bookends (BrandOpening +
+    BrandEndcard from components/Bookends), not a per-episode reinvention.
+    Follows one import hop into the shared renderer (CaseFilm /
+    CasePremiumFromRoughCut) when the episode composition delegates to it."""
+    slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
+    cdir = ROOT / "remotion" / "src" / "compositions"
+    comp = next((p for p in cdir.glob("*.tsx") if slug.lower() in p.name.lower()), None)
+    if comp is None:
+        return {"check": "op_ed_bookends", "ok": True, "hard": False, "skipped": True,
+                "reason": f"no composition matching slug '{slug}'"}
+    texts = [comp.read_text(encoding="utf-8", errors="ignore")]
+    for dep in ("CaseFilm", "CasePremiumFromRoughCut"):
+        if re.search(rf"from '\./{dep}'", texts[0]) and (cdir / f"{dep}.tsx").is_file():
+            texts.append((cdir / f"{dep}.tsx").read_text(encoding="utf-8", errors="ignore"))
+    blob = "\n".join(texts)
+    has_import = "components/Bookends" in blob
+    has_open = "BrandOpening" in blob
+    has_end = "BrandEndcard" in blob
+    ok = has_import and has_open and has_end
+    return {"check": "op_ed_bookends", "ok": ok, "hard": True,
+            "reason": (f"{comp.name} uses canonical BrandOpening + BrandEndcard"
+                       if ok else f"{comp.name}: canonical bookends missing "
+                       f"(bookends_import={has_import} opening={has_open} endcard={has_end})")}
 
 
 def check_render_resolution(path: Path) -> dict:
@@ -453,6 +583,9 @@ def main() -> int:
     results.append(check_voice(epdir))
     results.append(check_captions(epdir, render_dur))
     results.append(check_caption_format(epdir))
+    results.append(check_caption_narration_match(epdir))
+    results.append(check_structure(epdir))
+    results.append(check_bookends(epdir))
     results.append(check_thumbnail(epdir))
     results.append(check_image_resolution(epdir))
     results.append(check_factory_used(epdir, render_dur))
