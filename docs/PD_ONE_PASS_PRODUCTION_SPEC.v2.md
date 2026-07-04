@@ -53,8 +53,16 @@ Claude does not hand off until these are locked, so Codex can hit rows 1–15 on
 
 ## C. VERIFIER STATUS (infra to keep current)
 `scripts/check_final_acceptance.py` machine-enforces (measured on the real file):
-rows **1 (bgm incl. audible-floor under VO), 2 (voice master), 3 (caption coverage), 4 (caption format + breath-group boundaries), 6 (runtime band from profile + render res/pix_fmt), 8 (motion: no static/freeze + transitions present), 9 (hook headroom), 11 (≥3 thumbnails @1280×720 + selected)** + black-frame + loudness.
-**Still manual** (until coded): row 5 (≥3840 px + sharpness), row 7 (factory density ≥ runtime/30), row 12 (thumbnail legibility/派手), row 13 (title ≤60 / A-B), row 15 (film-bible craft review). New gates (audible-floor, breath-group, transition-present, ~173 wpm word-count) to be added to the script as coded.
+rows **1 (bgm incl. audible-floor under VO + `bgm_ending` resolve), 2 (voice master), 3 (caption coverage), 4 (caption format + `caption_narration_match` 100%-grade token match), 6 (runtime band + render res), 8 (`motion_present` no-freeze AND `animation_density`: near-still ≤10% of runtime / single hold ≤3s — kills the 紙芝居/slow-Ken-Burns a freeze check misses), 9 (hook headroom), 11 (≥3 thumbnails @1280×720 + selected)** + `images_present` (black), loudness.
+**Now also coded (2026-07-04):** row 7 → **`footage_diversity`** (distinct/total ≥0.40, no clip reused >4×, generic symbols like 天秤/gavel ≤2×); row 12 → **`thumbnail_visibility`** (selected thumb luma mean ≥33 + contrast floor — the "しょぼい/暗い/CTR下がる" reject class); row 14 → **`op_ed_bookends`** (canonical BrandOpening+BrandEndcard imported, not forked); + `structure_4part` (row 9), `image_resolution` (row 5, ≥3840). **Still manual:** row 13 (title ≤60 / A-B), row 15 (film-bible craft review).
+
+### C1. Ship Gate — the schedule is LOCKED to a green receipt (binding, all threads)
+`docs/PD_SHIP_GATE.md` + `.claude/rules/19-ship-gate.md` are canonical. No long-form is scheduled until the gate has measured the exact render and issued a receipt:
+1. `check_final_acceptance.py <ep> --render <final.mp4> --emit-receipt` → writes `09_package/acceptance_receipt.v001.json` (per-check results + `video_sha256`).
+2. `upload_schedule_case_v001.py --ep <slug>` **hard-refuses** to upload unless a receipt exists whose `video_sha256` matches the file and whose only tolerated hard failure is `runtime_band` (the one owner-accepted deviation). Self-certified "done" is impossible; the gate is never weakened to pass (invariant 15).
+
+### C2. Premium animation engine (row 8 implementation of record)
+`remotion/src/compositions/CaseFilm.tsx` is the long-form engine: designed **motion-blurred cut transitions** (push-in/rise/slide, spring-eased, decaying blur), **mask-reveal kinetic typography** ("切り上がり") + gold kicker chip/underline, `@remotion/motion-blur` **Trail** on beats + hook, over the upgraded **Bookends** (row 14). The per-beat **`AmbientMotion`** overlay (drifting bokeh + orbiting glows) composites on top so no frame is static. Banned: left→right vertical sweep line, full-screen yellow/gold wash, plain zoom/pan-only.
 
 ## E. CODEX DETERMINISM (why the handoff keeps drifting, and the fix)
 Codex builds from the design doc **standalone** (it does not read CLAUDE.md or memory). When the result "isn't what I wanted," the cause is an under-specified doc, not Codex. So the per-episode handoff MUST be written to leave **zero interpretation room**:
