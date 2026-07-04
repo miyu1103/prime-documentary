@@ -23,9 +23,9 @@
 - **統一ルールなし（H）**：上告不受理を繰り返す＝*Pennsylvania v. Davis* No.19-1254（2020/10/5 denied）／*Andrews v. New Jersey* No.20-937（2021/5/17 denied）／*Sneed v. Illinois* No.23-5827（2024/2/26 denied）。**最高裁は強制暗証番号/生体解除を一度も本案判断していない**＝州境で権利が変わる。
 - **国境例外（M・補足）**：国境/空港では border-search exception で令状不要の主張。1st/4th/9th 巡回は forensic 捜索に reasonable suspicion 要、11th は不要、S.D.N.Y. *Smith*(2023) は令状要と判断＝ここも流動的。⚠Riley（逮捕付随）と国境は別枠。
 
-## ⚠ CONFIRM（最終ロック前に一次ソース確認・それまで断定しない）
-1. **Utah *Valdez* の上告（No. 23-1020）**：2024年に申立て・ブリーフ確認済だが、**不受理の正確な期日を一次ドケットで未確認**。「最高裁は受理しなかった（＝未解決のまま）」の範囲でのみ言及。
-2. **S.D.N.Y. *United States v. Smith* (2023) の F. Supp. 巻頁**：逐語引用するなら頁を確定（673 F. Supp. 3d 381 と見られるが要確認）。
+## ✅ CONFIRM 済（一次ソース確認完了・2026-07-04）
+1. **Utah *Valdez*（No. 23-1020）（H）**：**2024/6/24 上告不受理（cert denied）**（Order List 602 U.S.／SCOTUS公式ドケット）。原判決 *State v. Valdez*, 2023 UT 26（2023/12/14）＝口頭の暗証番号は供述的・foregone conclusion 不適用。→ 「最高裁は受理せず＝未解決のまま」の裏付け。
+2. **S.D.N.Y. *United States v. Smith*（H）**：**673 F. Supp. 3d 381 (S.D.N.Y. 2023)**、Rakoff判事、No.22-cr-352(JSR)、2023/5/11。国境でのスマホ捜索に令状を要すると判断した初の地裁（ただし good-faith 例外で証拠排除は認めず）。
 
 ## 🚫 SCRIPT GUARDRAILS（台本Pass1で必ずチェック）
 - **第4修正（捜索＝Riley）と第5修正（強制自白＝解除）を混同しない**。「令状があれば開けさせられる」と短絡しない。
@@ -40,6 +40,18 @@
 4. ❌「生体認証は絶対に守られない」→ Brown(D.C. 2025) は逆。**割れている**。
 5. ❌「顔・指は無防備／番号は聖域、という綺麗な全国ルールがある」→ **トレンド**であり反例あり。「多くの裁判所」「主流の流れ」と表現。
 6. ❌「暗証番号を拒めば不利に扱われない」→ 一様でない（*Valdez* は不利な言及を禁じたが全国ルールでない）。強制可の州では**法廷侮辱**の恐れ。
+
+## FR ラベル（`script.annotated.v001.json` の `claim_ids` 対応）
+- **FR-R** — Riley v. California, 573 U.S. 373 (2014)：スマホの中身の捜索には原則令状（"見る"の話）。
+- **FR-T** — 第5修正の"testimonial"／金庫の暗証番号 vs 鍵（Doe 1988）：記憶した番号＝供述的・体の特徴＝非供述的。
+- **FR-P** — U.S. v. Payne, 99 F.4th 495 (9th Cir. 2024)：強制指紋解除は非供述的＝合違反でない（留保①どの指か選ばせたら別②本人が電話と認めていた・9th Cir.限定）。
+- **FR-B** — U.S. v. Brown, 125 F.4th 1186 (D.C. Cir. 2025)：強制指紋解除は供述的＝違反（Payneと対立）。
+- **FR-PC-prot** — 暗証番号は守られた：Davis(Pa 2019)/Seo(Ind 2020)/Valdez(Utah 2023)。
+- **FR-PC-comp** — 暗証番号は強制可：Andrews(NJ 2020)/Sneed(Ill 2023)。
+- **FR-FC** — foregone conclusion（Fisher 1976）：対象を「番号」か「中のデータ」かで結論反転。
+- **FR-SC** — 最高裁は未判断：Davis(2020/10/5)/Andrews(2021/5/17)/Sneed(2024/2/26) 上告不受理＋Valdez(2024/6/24) 不受理＝州境で権利が変わる。
+- **FR-FL** — フロリダ州内分裂：G.A.Q.L.(4th DCA 2018 守る) vs Stahl(2d DCA 2016 強制可)。（本編未使用・予備）
+- **FR-BORDER** — 国境例外は別枠・流動的：Smith(S.D.N.Y. 2023)ほか。（本編未使用・予備）
 
 ## 出典（検証済URL）
 Riley: supreme.justia.com/cases/federal/us/573/373 ／ Fisher: supreme.justia.com/cases/federal/us/425/391 ／ Davis(Pa): law.justia.com/cases/pennsylvania/supreme-court/2019/56-map-2018 ＋ scotusblog Pennsylvania v. Davis ／ Seo(Ind): law.justia.com/cases/indiana/supreme-court/2020/18s-cr-595 ＋ eff.org 2020-06 ／ Andrews(NJ): law.justia.com/cases/new-jersey/supreme-court/2020/a-72-18 ＋ scotusblog ／ G.A.Q.L./Stahl(Fla): jolt.law.harvard.edu/digest/compelled-decryption-in-florida-a-foregone-conclusion ／ Payne(9th): cdn.ca9.uscourts.gov/datastore/opinions/2024/04/17/22-50262.pdf ／ Brown(D.C.): arnoldporter.com 2025-03 "When Your Fingers Do the Talking" ／ Valdez(Utah): law.justia.com/cases/utah/supreme-court/2023/20210175 ／ Sneed(Ill): law.justia.com/cases/illinois/supreme-court/2023/127968 ／ 国境: congress.gov/crs-product/LSB10387 ＋ eff.org 2023-05 ／ 生体まとめ: americanbar.org（compelled-biometrics-fifth-amendment-rights）。
