@@ -89,6 +89,9 @@
 - **カット**：平均 **2.5–3.0s**。ハードカット裸禁止＝**0.35s クロスディゾルブ**で重ねる。
 - **静止画を動かす手法をローテーション**（同一連続禁止）：`bleed`(2.5Dパララックス)／`scan`(走査光)／`duotone`(ネイビー雰囲気)／`focus`(ラックフォーカス)／`motion_graphics`(比喩アニメ)。斜め"card"は稀のみ。
 - **モーショングラフィックス（本作の主役級・法理を"見せる"）**：金庫vs鍵／割れる合衆国地図／foregone conclusion の断層（番号 or データで反転）／最高裁の扉が3回閉じる／**空港の検査台と国境ライン（v002）**／**電源オフ→パスコード復帰（v002）**。大型キネティックタイポ＋spring＋scale＋Trail。上部1/5レイヤー。`on_screen_text`/`visual_intent` を**必ず実装**。
+  - **「割れる合衆国地図」＝実データ地図で（challenge#3・実装済／レベルアップ2026-07-05）**：概略イラストでなく `MapScene.tsx`（`us-atlas`＝US Census 由来・パブリックドメイン、d3 `geoAlbersUsa` 投影）で**実際の州境**を描き、州ごとに **2色（保護強い/弱い）で割る** highlight＝「州で真逆」を地理的に正確に見せる（ACT III・SPN-0033）。参照＝`remotion/prototypes/motion3d/map/`（`convert_map.mjs`→`us_map.json`／実行時d3不要）。
+  - **"割れる"の決めカットに剛体崩壊（challenge#4・Blender・実装中）**：金庫/地図が**物理で砕ける**1カットを Blender剛体（EEVEE・Glare Bloom・DOF・PNGseq→`libx264 crf16`→`OffthreadVideo`）で。owner-gated・点で。参照＝`blender/bpp_physics.py`。
+  - **音声リアクティブ（challenge#2・実装済）**：`@remotion/media-utils` で沈黙→パスコード復帰・国境の緊張などの**感情の山**に、脈打つコア/スペクトラムを点で重ねる（retention row16・`audio/AudioReactive.tsx`）。全編化しない。
   - **要注意（review_log申し送り）**：`SPN-0018`（foregone conclusion・~31s）が唯一"講義"に寄る危険区間。フォーク型キネティック図で必ず動かす（静止解説にしない）。
 - **フッテージ（factory棚）**：夜の道路・パトランプ・法廷・**空港/検査台**・スマホ操作の手元。強め暗く＋ネイビー＋ビネット。
 - **Runway（契約内・点で使用）**：フック冒頭 or ACT IV の1–2カットのみ。

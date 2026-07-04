@@ -112,6 +112,10 @@
 ### 5.4 フッテージ（factory棚＝主役）
 - 強め暗く＋**ネイビー multiply 0.14＋ビネット**で統一（明るい霧/雪/白テックが浮くのを防ぐ）。**featureless（素の霧/空/抽象）は除外**。各クリップにゆっくり push（translateX ±14, scale 1.04→1.1）で動きのフロア。
 
+### 5.5 Runway（契約内・点で）／禁止エフェクト
+- **Runway**：フック冒頭 or ACT IV の決定的 **1–2カットのみ** img2vid で生かす。使いすぎない。
+- **禁止エフェクト（使わない）**：金の縦スイープ（`WipeTransition`）／黄・金の全画面ウォッシュ・フラッシュ／ただのズーム・左右パンだけ（`CameraRig`）。`StyleTest` は手本にしない。
+
 ### 5.6 情報ビジュアル＝Figures tier（別スレ `DiagramFlow` 拡張を取り込む・row16リテンション）
 データ系の `on_screen_text` は**平文タイポでなくアニメ図**にして「静止画退屈」を殺す（`docs/PD_MOTION3D_HERO_AND_FIGURES_SPEC.md §3`）。単一アクセント・暗いサーフェス・全て `useCurrentFrame()` 駆動：
 - **StatCounter**：`$40` / `~$3M FUND` / 押収規模を **0→値 count-up**（`Easing.out(Easing.cubic)`）＋accent下線＋ラベル。
@@ -131,7 +135,9 @@
 - **① 任意画像の"実"3D深度パララックス（challenge#1・実装済）**：全ヒーロー静止画に **DPT深度マップ（Intel DPT / ComfyUI venv）** を生成→`@remotion/three` で**細分割プレーンを変位**→カメラ移動で**単一の静止画から"本物"のパララックス**。＝2.5Dカードの擬似深度でなく**実深度**で、**「紙芝居問題」を全静止画で根絶**。移植先＝`MovingImage` バリアント（`depth/depth.py`＋`depth/DepthScene.tsx`）。**EP28の40枚全部**に効く＝敷居/ドア/夜の連棟住宅/478号法廷/引越し箱が立体に生きる。
 - **② dolly-in＋dust 改良（fix・実装済）**：弱い横オービットは廃止。**カメラが写真の中へ入る"確信のdolly-in"（head-on＝ラバーシート融解回避）**＋強めの変位＋**前景の3D dust motes がプレーンに対して視差**＝実奥行きを売る。EP28は「敷居に立つ父親」「封印された玄関」「空の法廷」で特に効かせる。
 - **③ 音声リアクティブ・ビジュアル（challenge#2・実装済）**：`@remotion/media-utils` が完成mix音声から **脈打つコア＋円形スペクトラム＋波形＋エネルギーグロー** を駆動＝**画がナレの息に合わせて呼吸**（retention row16）。使いどころ＝コールドオープン／`reveal`（**"$40 → 家"／機械解体**の瞬間）／感情の山（締め出し・ペイオフ）。**全編化しない**（点で効かせる）。
-- **統合**：①②は静止画技法（§5.2の`bleed`）を**実深度パララックスへ格上げ**、③はビート/reveal層に重ねる。`AmbientMotion`＋派手`Bookends`と合体（コミット後）。**本番移植・3Dヒーロー(§5.7)はオーナー承認後**。
+- **④ 資金ルートのアニメーション地図（challenge#3・実装済）**：`MapScene.tsx`（`us-atlas`＝US Census TIGER 由来＝**パブリックドメイン**、d3 `geoAlbersUsa().fitExtent` で1920×1080投影）＝州が左→右スタッガーで描画→対象州が発光→都市ピンが波紋→**"follow the money"の弧に光点が走る**。EP28での使いどころ＝**没収の地理**（没収が集中する州／押収→州基金→警察装備の資金フロー）を"数字でなく地図で"見せる（row16）。データ＝shotlist駆動、`{accent,title,highlight[],routes}`。ビルド＝`convert_map.mjs`→`us_map.json`（実行時d3不要）。参照＝`remotion/prototypes/motion3d/map/`。移植先＝`CaseMap`。
+- **⑤ 剛体崩壊シミュ（challenge#4・Blender・実装中）**：発光する破壊球がブロックの塔を突き破って崩落（Blender剛体・EEVEE・Glare Bloom＋DOF・PNGseq→`libx264 crf16 yuv420p`→`OffthreadVideo`）＝**"They Took the House"＝暮らしが崩れる**メタファーの決めカット1つに。抽象生成物＝不変項11 OK。owner-gated・**点で使用**（全編化しない）。参照＝`remotion/prototypes/motion3d/blender/bpp_physics.py`。
+- **統合**：①②は静止画技法（§5.2の`bleed`）を**実深度パララックスへ格上げ**、③は感情の山、④は"没収の地理"ブロック、⑤はコールド/ペイオフの決めカットに重ねる。`AmbientMotion`＋派手`Bookends`と合体（コミット後）。**本番移植・3Dヒーロー(§5.7)・地図/物理はオーナー承認後**。
 
 > **不変項11＋オーナー指示(2026-07-04)**：**人物の姿は描いてよい**——役者的な"代表的人物"（匿名の一般人の像）はOK。むしろ人を映して画面を生かす。**禁じるのは実在・特定できる本人の肖像だけ**（Sourovelis家本人・実名個人の顔の再現）。よって Codex画像は「敷居に立つ父親」「引越し箱を運ぶ家族」「令状フロアで待つ所有者たち」等の**匿名の人物**で描く（実在の誰かに似せない・特定顔の一致を避ける）。実写の本人アーカイブ素材は権利未クリアなので使わない（factory棚＝権利クリア汎用のみ）。シルエット/後ろ姿/手元は"手法の一つ"であって縛りではない。
 

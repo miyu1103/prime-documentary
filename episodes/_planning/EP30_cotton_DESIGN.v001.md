@@ -81,6 +81,15 @@
 - **オーバーレイ**：塵/グレイン/揺らぐ照明を薄く常時。**Runway**：フック or 和解の決定的1–2カットのみ点で。
 - **禁止エフェクト**：金の縦スイープ／黄・金ウォッシュ・フラッシュ／ただのズーム・左右パン（`CameraRig`）。`StyleTest`は手本にしない。
 
+### 5.x アニメ最新強化（別スレ実装・レベルアップ反映 2026-07-05／`docs/PD_MOTION3D_HERO_AND_FIGURES_SPEC.md`）
+> 別スレのプロトタイプ（`remotion/prototypes/motion3d/`）。本番は各コンポーネントの**コミット後に彼らのものを使う**（二重実装しない＝不変項14）。全て `useCurrentFrame()` 駆動・決定論。**本番移植・3Dヒーロー/地図/物理はオーナー承認後**。
+
+- **① 実3D深度パララックス（challenge#1・実装済）**：全ヒーロー静止画に **DPT深度マップ（Intel DPT / ComfyUI venv）**→`@remotion/three` で細分割プレーン変位→**確信のdolly-in**＋前景3D dust＝単一静止画から**実深度**（擬似2.5Dでなく）。「紙芝居」を40枚全部で根絶。EP30＝ラインナップ／監房／目のマクロが立体に生きる。`depth/depth.py`＋`depth/DepthScene.tsx`。
+- **② 音声リアクティブ（challenge#2・実装済）**：`@remotion/media-utils` で **脈打つコア＋円形スペクトラム＋波形＋グロー** が完成mix音声に同期＝画がナレの息で呼吸（row16）。使いどころ＝**誤認の瞬間／DNA一致／和解**の感情の山。全編化しない。`audio/AudioReactive.tsx`。
+- **③ アニメーション地図（challenge#3・実装済）**：`MapScene.tsx`（US Census/us-atlas＝パブリックドメイン・d3 `geoAlbersUsa` 投影）＝**誤認証言由来の冤罪件数を州で可視化**（NC＝本件州を発光）。`map/`（`convert_map.mjs`→`us_map.json`／実行時d3不要）。
+- **④ 剛体崩壊（challenge#4・Blender・実装中）**：**「確信の証言」が崩れる**決めカットを Blender剛体（EEVEE・Bloom・DOF→`OffthreadVideo`）。owner-gated・点で。`blender/bpp_physics.py`。
+- **図解＝Figures tier**：`11 YEARS`／DNA照合／年表は平文でなく **StatCounter/Timeline/NetworkDiagram**（`§3`・単一アクセント・暗いサーフェス）で。
+
 > **不変項11＋オーナー指示(2026-07-04)**：**人物の姿は描いてよい**（匿名の代表的人物）。**禁じるのは実在・特定本人の肖像だけ**（Thompson／Cotton／Poole 本人の顔の再現）。Codex画像は「ラインナップの匿名の男たち」「顔を見つめる匿名の女性」「監房の匿名の男」「触れ合う二つの手」等で描く（実在の誰かに似せない）。性暴力は図像化せず示唆に留める。実写の本人アーカイブは権利未クリアで不使用（factory棚＝権利クリア汎用のみ）。
 
 ---
