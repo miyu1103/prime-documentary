@@ -15,7 +15,7 @@ This is the story of how one piece of "science" and a broke defense sent an inno
 【OST: ANTHONY RAY HINTON · ALABAMA】
 
 ## ACT I — 逮捕  (アリバイと"確実"の芽)
-In 1985, around Birmingham, Alabama, two fast-food managers were murdered in separate late-night robberies — John Davidson in February, Thomas Wayne Vason in July. Both were killed for the cash in a restaurant safe. There were no eyewitnesses to either killing. There were no fingerprints. For months, the cases went nowhere — and an unsolved murder of a working man is exactly the kind of case a police department badly needs to close.
+In 1985, around Birmingham, Alabama, two fast-food managers were murdered in separate late-night robberies — John Davidson in February, Thomas Wayne Vason in July. Both were killed for the cash in a restaurant safe. There were no eyewitnesses to either killing. There were no fingerprints. For months, the cases went nowhere — and an unsolved murder of a working man is exactly the kind of case a police department badly needs to close. Pressure to solve a killing is its own kind of force; it bends everything toward an answer, any answer that will hold.
 
 Then, weeks later, a third restaurant was robbed. This time the manager, a man named Sidney Smotherman, survived being shot at — and later picked a face out of a photo lineup. The face belonged to a twenty-nine-year-old Black man named Anthony Ray Hinton.
 
@@ -40,6 +40,8 @@ Understand what that thousand-dollar mistake really was. In a case built entirel
 The jury took about an hour. In September of 1986, they convicted him of both murders, and he was sentenced to die.
 
 Hinton always said what he believed put him there. He was Black. He was poor. He could not afford a defense that could fight back. And in Alabama, in 1986, that was enough.
+
+He would say later that he understood exactly what he must have looked like to that jury: a poor Black man from Alabama, accused of killing two people, with a broken-down witness for a defense and a court-appointed lawyer who had not fought for the money to defend him. In a system like that, he came to believe, the verdict was written before the trial ever began.
 【OST: Black. Poor. Sentenced to die.】
 
 ## ACT III — 30年  (時間と尊厳)
@@ -48,6 +50,8 @@ He was sent to a cell the size of a bathroom on Alabama's death row. And he woul
 For the first three years, he barely spoke — swallowed by rage and grief at a system that would not listen. And then Anthony Ray Hinton made the decision that is the heart of this story. He decided that a cell could hold his body, but it would not hold his mind.
 
 He started a book club — condemned men meeting among the law books to argue about writers like James Baldwin. In his imagination, he simply left. He traveled the world. He married movie stars. He played center field for the New York Yankees. He found humor in a place with no reason for any. You can lock up a man's body, he understood. You cannot lock up what he allows himself to imagine.
+
+From the outside, that can sound like a small thing — a man telling himself stories to pass the time. It was not small. It was the difference between surviving and being erased. The state had taken his freedom, his good name, nearly three decades of his one life. The single thing it could not reach was the country he built inside his own head — and he defended it like the last free ground he had left.
 
 But imagination is not innocence, and the years kept coming. He had founded that book club with a handful of other condemned men — and one by one, over the years, he watched its members walked past his cell to be executed, until he was the last of them still breathing. Over his decades on the row, Hinton says he counted **fifty-four men** taken to the electric chair, close enough to know each one. Any year, it could be his door.
 
@@ -61,7 +65,7 @@ In the end, it took the Supreme Court of the United States.
 
 In 2014, in *Hinton v. Alabama*, the Court ruled — and it was **unanimous, nine to nothing**. Every justice agreed that Hinton's original trial had been unconstitutional, because his lawyer's failure to seek the money for a real expert — a failure built on that false belief about a thousand-dollar cap — had denied him a real defense. The right to a lawyer, the Court has always said, means the right to a lawyer who does the basic work. In a case that lived and died on expert testimony, asking for the money to hire a competent expert was as basic as it gets. The verdict was thrown out. The case was sent back.
 
-And when the state finally had to prove its ballistics match again, with modern experts, it couldn't. The evidence that had sent him to death row simply could not be reproduced — because it had never been true. With no case left, prosecutors moved to drop the charges.
+And when the state finally had to prove its ballistics match again, with modern experts, it couldn't. The evidence that had sent him to death row simply could not be reproduced — because it had never been true. With no case left, prosecutors moved to drop the charges. It had taken sixteen years of Bryan Stevenson's fight, and thirty years of Anthony Ray Hinton's life, to undo a one-hour verdict built on a bullet that never matched.
 
 On April 3rd, 2015, Anthony Ray Hinton walked out of prison a free man, after nearly thirty years — the hundred-and-fifty-second person freed from death row in America after being wrongly condemned to die. He stepped into the sunlight, and he said the words that would become the title of his book: the sun does shine.
 【OST: 2014 — 9–0. Freed 2015.】
