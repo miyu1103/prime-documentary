@@ -51,7 +51,8 @@
 
 ## 2. 4部構成 — 秒割タイムライン（**AS-BUILT: fps=30（CaseFilm／BRAND.video.fps）／全長 696.8s** ／ 数値は定数）
 
-> **AS-BUILT SYNC (2026-07-05)** — 真実源＝`episodes/PD-2026-029-hinton/03_script/script.annotated.v001.json`（この .md は当初ドラフト）。実測: ナレ **676.3s**・**2,058語**・**28 on_screen_text**・字幕全PASS・`shotlist.v001` 251カット・総尺 **696.8s**（hook8+OP3.5+676.3+ED9・band内）。CaseFilmは **30fps**（旧記載 fps=60 は誤り＝オープニング実演用で長尺エンジン非適用）。組立=`CaseFilm-hinton`（プレミアム＋別スレAmbientMotion/派手Bookends/3Dヒーローで統一）→ ship-gate 受領書緑まで（`docs/PD_SHIP_GATE.md`）。
+> **AS-BUILT SYNC (2026-07-05)** — 真実源＝`episodes/PD-2026-029-hinton/03_script/script.annotated.v001.json`（この .md は当初ドラフト）。実測: ナレ **676.3s**・**2,058語**・**23 on_screen_text**（26スパン中）・字幕全PASS・`shotlist.v001` 251カット・総尺 **696.8s**（hook8+OP3.5+676.3+ED9・band内）。CaseFilmは **30fps**（旧記載 fps=60 は誤り＝オープニング実演用で長尺エンジン非適用）。組立=`CaseFilm-hinton`（プレミアム＋別スレAmbientMotion/派手Bookends/3Dヒーローで統一）→ ship-gate 受領書緑まで（`docs/PD_SHIP_GATE.md`）。
+> **⚠️最重要（EP30の失敗に学ぶ）**：この696.8sは**"正式CaseFillmレンダ(Bookends 8+3.5+9込み)"前提**。ナレmaster(676.3s)には既にHook/Openingチャンクが含まれるため、**FFmpegフォールバック（Bookends無し）で書き出すと尺≈677s＝690s下限割れ**＋`animation_density`/`factory_used`不合格（＝紙芝居）。EP30実レンダv003はこれで690.4sの画像スライドショー(factory0本)に落ちた。**必ずプレミアムCaseFilmで通し**、Remotionがタイムアウトするなら**セグメント分割レンダで完走**させる（FFmpegスライドショー納品は不可）。`--emit-receipt`で受領書取得まで完成としない。
 
 | Part | 区間(s) | 尺 | 役割 | ナレ語数(≈173wpm) |
 |---|---|---|---|---|
@@ -101,7 +102,7 @@
 - `bleed`＝2.5Dパララックス(fgS 1.05→1.14)／`scan`＝走査光+微グリッド／`duotone`＝ネイビー基調／`focus`＝ラックフォーカス(blur 16→0)。斜め2.5D `card` は**稀に**。
 - 各カット常時：**Particles＋Vignette＋Grain(0.11)**。統一後は **AmbientMotion** を上に重ね「静止フレームゼロ」。
 
-### 5.3 キネティック・タイポグラフィ（`on_screen_text` を必ず実装＝**28ビート**）
+### 5.3 キネティック・タイポグラフィ（`on_screen_text` を必ず実装＝**23ビート**）
 - `script.annotated` の**全 `on_screen_text`**（`30 YEARS`／`INNOCENT`／`9–0`(全員一致)／`MATCH?`(砕ける)／`ALIBI`／年）を上部1/5に大型キネティックタイポ（下部字幕と別レイヤー・span↔chunk 1:1）。
 - **マスク切り上がり**：`overflow:hidden` 枠内で translateY 118%→0（`spring{damping:18,stiffness:110}`）、行ごと **7F stagger**。line0=白/以降=gold。short=92px・long=54px。
 - **金キッカーチップ**＋**金アニメ下線**（scaleX spring）＋入りに **Trail** 残像。
