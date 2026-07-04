@@ -1,6 +1,7 @@
 # EP30 `FILM_BIBLE.v001` — "The Face She Was Sure Of"（誤認証言と和解）ドラマ設計
 
-**Episode:** `PD-2026-030-cotton`  ·  **status:** DRAFT（★=fact_recheck(R2)で確定するまで台本本文に書かない）
+**Episode:** `PD-2026-030-cotton`  ·  **status:** DRAFT ★=事実。**FACTS LOCKED v001** → `EP30_cotton_fact_recheck.v001.md`
+> **要点（研究確定）**：二審制（1985有罪→1987破棄→1987再審）／真犯人**Bobby Poole**（有罪答弁・1998獄死Mだが要二次確認）／服役**10年超**・1995 LabCorp DNAで釈放／**1997/4 対面・和解**／本=**Picking Cotton(2009)**。**サバイバーを責めない・性暴力は示唆のみ・"24犯罪"等の数字は断定しない**。名場面＝冤罪被害者が**自分を救ったLabCorpに就職**。
 **方針（row15/16・厳命）**：見ごたえ最優先・普通の情報提供は禁止。事実の上の"映画"。性暴力は扇情でなく**示唆と敬意**で。ナレは節度、画に語らせる。
 **尺**：standard 12:00 / ナレ≈2,030語(173wpm)。逐語は `script.annotated.v001`（研究確定後・3パスレビュー）。
 
