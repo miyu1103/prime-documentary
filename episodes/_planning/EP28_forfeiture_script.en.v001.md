@@ -100,4 +100,10 @@ If you didn't know your own government could do this — hit like, so that more 
 
 ---
 **Pass1(事実) 自己照合**：$40ヘロイン/息子中立(逮捕→リハビリのみ)/両親の無実明記✓・"1,200軒(2002-14集計)"使用＝300-500の罠回避✓・Seth Williams非言及✓・約$350k/約1週間の概数✓・in rem/478(裁判官なし・弁護士なし・default)/中央値$178/年$6M/$64M>Brooklyn+LA/Thomas引用(Leonard 2017)/IJ初の集団訴訟/4原告実名/2015取下げで家維持/2018同意判決5点/$3M基金＝全て `fact_recheck.v001` と一致。Welch/Hernandez/Geiger は**氏名のみ**（個別事情は未検証のため創作しない）。
-**次(Pass3)**：再フック位置の最終確認（各ACT頭）＋オープンループ「家は戻るのか」の張り/回収の間合い＋**息継ぎ単位で字幕分割**できる文か点検。→ `script.annotated.v001.json`(span/section/on_screen_text/visual_intent)→ `shotlist.v001`。
+**Pass3(リテンション/字幕) 点検済**：
+- **オープンループ**＝「家は戻るのか／市を止められるのか」をHOOKで張り、ACT IV「It took four years…」〜ENDINGで回収。✓
+- **再フック（各ACT頭・~2:30間隔）**：ACT I末「the city had noticed the house」／ACT II頭「how can a government take your house when you've been charged with nothing?」／ACT III頭「the Sourovelis family was not unusual…one address on a very long list」/「why grind so hard on people with so little? Follow the money」／ACT IV頭「It took four years」。各境界に新しい問い/転換あり。✓
+- **平坦20秒超なし**：制度説明（in rem/478/規模）も問い→具体→含意で運動を保つ。✓
+- **息継ぎ字幕**：長文は句/節で自然に割れる構造（"But…","Because…","And…"で分節）。弱語(the/of/to)終わりのキュー分割を避ける前提。実装は強制アライン後に breath-group で分割。✓
+- **語数**：1,738w＝~10.0分ナレ（kyllo 1,775w相当）。総尺は hook+bookends+間で 11.5–12分見込み＝band内。
+**次**：`script.annotated.v001.json`(span/section/on_screen_text/visual_intent) → `shotlist.v001`（Codex画像40枚＋factoryフッテージのカット割・平均≤6s・0.35sディゾルブ）。※annotated/shotlist は生成画像が揃い次第、確定して組立へ。
