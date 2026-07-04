@@ -141,7 +141,7 @@ Never trade priorities 1–6 for speed.
 
 - Windows RTX 4090 node: GPU-heavy analysis and local bulk image generation (SDXL/SVD) for variants.
 - Image generation: **Codex (primary)**; local SDXL/SVD for bulk variants. (Midjourney retired — no quality gain.) All AI images must be disclosed, rights-tracked, brand-consistent, and contain no real-person likeness (invariant 11).
-  - **Shorts image quality (owner directive 2026-07-05, updated):** ショートの画像は商用OKモデルのみ。**第一選択＝SD3.5 Large**（ComfyUI 8188 / `sd35_gen.py`・検証済み）、**フォールバック＝SDXL `gen_max.ps1`**（clip_skip1 / SDXL-VAE / ADetailer / Hires）。ComfyUIとA1111はVRAMを取り合うので同時フルロード禁止（`unload-checkpoint`で解放）。**FLUX.1-dev は非商用のため成果物に使用禁止（参考検証のみ）。** 詳細は `docs/SHORTS_IMAGE_QUALITY_DIRECTIVE.md`。長尺の画像方針（Codexのみ / rule 19）は不変。
+  - **Image quality standard (owner directive 2026-07-05, updated):** 画像は商用OKモデルのみ・チューニング済み経由（素のSDXL禁止）。**第一選択＝SD3.5 Large**（ComfyUI 8188 / `sd35_gen.py`・検証済み）、**フォールバック＝SDXL `gen_max.ps1`**（clip_skip1 / SDXL-VAE / ADetailer / Hires）。基本はショート用。**長尺は原則Codex（rule 19）だが、Codex画像の修正・不足画像の緊急追加に限り上記ローカルを使用可。** ComfyUIとA1111はVRAM競合（同時フルロード禁止・`unload-checkpoint`で解放）。**FLUX.1-dev は非商用のため成果物に使用禁止（参考検証のみ）。** 詳細は `docs/SHORTS_IMAGE_QUALITY_DIRECTIVE.md`。
 - Editing & render: **Remotion + FFmpeg** (local, quality-first CPU/libx264 encode), review, final render, and publishing control.
 - (2026-06-20 owner update: the two lines above supersede earlier "DaVinci Resolve" and "Midjourney" references anywhere in docs/ and decisions/.)
 - Claude Code: codebase operation, workflow implementation, structured generation, validation, orchestration support.

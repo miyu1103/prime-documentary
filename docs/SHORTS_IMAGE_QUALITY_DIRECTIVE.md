@@ -1,7 +1,7 @@
 # ショート画像 品質ディレクティブ（商用OK・最高品質）
 
-Owner directive (2026-07-05)。**この文書はショート（縦9:16）制作スレッド向け**。
-長尺エピソードの画像方針は変更しない（長尺は従来どおり Codex のみ / rule 19）。
+Owner directive (2026-07-05)。**基本はショート（縦9:16）向けの標準**。
+長尺エピソードの画像は原則これまで通り **Codex** で作る（rule 19）。ただしオーナー明示許可(2026-07-05)により、下記の商用OK高品質ローカルは**長尺でも例外的に使用可**：(a) Codexが作った画像の修正・手直し、(b) 不足画像の緊急追加。詳細は末尾「長尺での例外的使用」。
 
 ## 結論（何を使うか）
 
@@ -35,6 +35,17 @@ SD3.5が使えない時（ComfyUI未起動・A1111が別用途でVRAM占有中�
 固定設定: clip_skip1 / SDXL-VAE / ADetailer顔+目2パス / Hires R-ESRGAN 4x+ / DPM++ 2M SDE Karras / steps32 CFG5。
 起動: A1111 API(7860)。停止中なら `& ".\venv\Scripts\python.exe" launch.py --api --no-half-vae --xformers`（venv直・batは不可）。
 商用OKモデル: JuggernautXL Ragnarok / RealVisXL V5.0 フル版。
+
+## 長尺での例外的使用（2026-07-05 オーナー許可）
+
+長尺の本編画像は**原則 Codex**（rule 19）。ただし次の2ケースに限り、商用OK高品質ローカル（SD3.5 `sd35_gen.py` 第一 / SDXL `gen_max.ps1` フォールバック）を使ってよい：
+- **(a) Codex画像の修正・手直し**（顔の破綻直し・部分描き直し・高精細化など。img2img/ADetailer/Hiresで整える）
+- **(b) 不足画像の緊急追加**（Codexの生成が間に合わない/欠けたコマを埋める）
+
+制約（長尺の不変条件はすべて適用）:
+- 素のSDXLは不可（必ず gen_max.ps1 か sd35_gen.py 経由）。**FLUX-devは長尺でも不可**。
+- 実在人物の肖像は不可（invariant 11）。AI画像は開示・権利manifest・provenance・ブランド整合を長尺の既存フローに載せる。
+- 「原則Codex」は維持。上記(a)(b)以外で長尺画像をローカル生成に置き換えない。
 
 ## 禁止（重要）
 

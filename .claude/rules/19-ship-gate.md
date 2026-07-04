@@ -7,4 +7,4 @@
 - チェックやしきい値を通すために緩めない。詳細は `docs/PD_SHIP_GATE.md`。
 - アニメは必須要件: `CaseFilm` は設計トランジション＋モーションブラー(Trail)＋マスク切り上がり文字。`animation_density` が機械フロア。紙芝居・左右スイープ線・黄ウォッシュ・ただのズームは不可。
 - 素材の被り禁止: `footage_diversity`（distinct≥0.40／再利用≤4／天秤等の汎用象徴≤2）。ビルダーは不足点数を警告する。
-- 長尺の画像は Codex のみ（SDXLを勝手に起動しない）。
+- 長尺の画像は原則 Codex（SDXLを勝手に起動しない）。例外(オーナー許可2026-07-05)=商用OK高品質ローカル(SD3.5 sd35_gen.py / SDXL gen_max.ps1)を「Codex画像の修正」「不足画像の緊急追加」に限り使用可。素のSDXL・FLUX-devは不可。実在肖像禁止/権利/provenanceは不変。詳細 `docs/SHORTS_IMAGE_QUALITY_DIRECTIVE.md`。
