@@ -82,6 +82,8 @@
 
 ## 5. ビジュアル/アニメ・システム（row 8・`MotionSample.tsx` 準拠＝**紙芝居禁止**・本作は特に厳格）
 
+> ⏳ **同期保留（2026-07-05）**：アニメーション・エンジンを**別スレで強化中**（未コミットで `Bookends.tsx`／Premium系／`package.json` に変更あり・`motion-test` ブランチ・motion系設計docあり）。オーナー指示＝**強化が `CaseFilm`/`Bookends` に確定・コミットされてから、実装を見て本§5を正確に同期し、EP31を新エンジンで再レンダする**。現行の初号カット（現行エンジン）は次工程（BGM/サムネ/受領ゲート）の配線検証用。下記は**現行エンジン基準**の記述。cf. `[[pd-animation-upgrade-pending]]`
+
 **土台テンプレ**：`remotion/src/compositions/CaseFilm.tsx`（`data/unlock_film.json` 駆動）。承認済み `MotionSample` の作り。ショットリスト＝`EP31_unlock_shotlist.v002.json`（33ショット）。
 
 - **カット**：平均 **2.5–3.0s**。ハードカット裸禁止＝**0.35s クロスディゾルブ**で重ねる。
