@@ -91,20 +91,39 @@
 
 ## 5. ビジュアル/アニメ・システム（row 8・`MotionSample.tsx` 準拠＝**紙芝居禁止**）
 
-**土台テンプレ**：`remotion/src/compositions/CaseFilm.tsx`（`data/forfeiture_film.json` 駆動）。承認済み `MotionSample` の作り。
+**土台＝`remotion/src/compositions/CaseFilm.tsx`（プレミアム・エンジン, `data/forfeiture_film.json` 駆動, fps=30）。** 実装記録＝`docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md §C2`。承認済み `MotionSample` の質感を全編維持。**統一アニメ**＝別スレの `components/AmbientMotion.tsx`（各ビートに重ねる手続き型モーショングラフィックス＝ボケ粒子＋公転グロー）＋派手 `Bookends`（OP/ED）と合体（コミット後に本編へ重ねる。二重実装せず彼らのを使う＝不変項14）。**数値は決定論＝形容詞でなく値で書く。**
 
-- **カット**：平均 **2.5–3.0s**（速いテンポ・常に画が変化）。ハードカット裸禁止＝**0.35s クロスディゾルブ**でシーケンスを重ねる（1フレーム黒/ジャンプを作らない）。
-- **静止画（Codex生成）を動かす手法をローテーション**（同一手法の連続禁止）：
-  - `bleed`＝2.5Dパララックス（前景/被写体/背景を深度分離、別速度）
-  - `scan`＝微グリッド/走査光（書類・地図に情報系の質感）
-  - `duotone`＝ネイビー基調の雰囲気ショット
-  - `focus`＝ラックフォーカス送り
-  - 斜め2.5D "card" は**稀に**のみ（全カード単調はNG）
-- **モーショングラフィックス**：`$40` / `in rem` の法理 / 押収規模の数字カウント / 年表を、**大型キネティックタイポ＋spring＋scale＋Trailモーションブラー**で。上部1/5レイヤー（下部字幕と別）。`script.annotated` の `on_screen_text`/`visual_intent` を**必ず実装**。
-- **フッテージ（factory棚）**：主役。**強め暗く＋ネイビー寄せ＋ビネット**で統一。素の霧/空/抽象など featureless クリップは除外。
-- **オーバーレイ**：塵/フィルムグレイン/揺らぐ照明を薄く常時。
-- **Runway（契約内・点で使用）**：フック冒頭 or ACT IV の決定的1–2カットのみ img2vid で生かす。使いすぎない。
-- **禁止エフェクト（使わない）**：金の縦スイープ（`WipeTransition`）／黄・金の全画面ウォッシュ・フラッシュ／ただのズーム・左右パン（`CameraRig`）。`StyleTest` は手本にしない。
+### 5.1 カット遷移（"かくっ"禁止・全カットに設計トランジション）
+- 平均カット長 **2.5–3.0s**（常に画が変化）。**裸のハードカット禁止。**
+- **クロスディゾルブ**：隣接カットの Sequence を **0.35s オーバーラップ**（重ねる＝1フレーム黒/ジャンプなし）で溶かす。**カット越しに動きの向き・速度を継続**（velocity reset しない＝"かくっ"の根絶）。
+- **入りの設計モーション**：`spring{damping:18,stiffness:90,mass:0.9}` で index%3 ローテ＝プッシュイン(scale 1.14→1.0) / せり上がり(translateY 64→0px) / スライド(translateX ±60→0px)。
+- **モーションブラー**：入り 0–9F に減衰 `blur(14→0px)`。速い要素（フック/ビート）は `@remotion/motion-blur` **Trail(layers 6–7, trailOpacity 0.5–0.55)**。
+
+### 5.2 静止画（Codex生成）を動かす（同一手法の連続禁止でローテ）
+- `bleed`＝2.5Dパララックス（bg を blur 拡大＋鋭い前景が逆方向へドリフト, fgS 1.05→1.14）／`scan`＝走査光＋微グリッド（書類/地図の情報系質感）／`duotone`＝ネイビー基調の雰囲気／`focus`＝ラックフォーカス(blur 16→0)。斜め2.5D `card` は**稀に**のみ（全カード単調はNG）。
+- 各カット常時：**Particles（塵/光の粒）＋Vignette＋Grain(0.11)**。統一後は **AmbientMotion** を上に重ね「静止フレームゼロ」。
+
+### 5.3 キネティック・タイポグラフィ（`on_screen_text` を必ず実装＝**28ビート**）
+- `script.annotated` の **全 `on_screen_text`（28個：`THE HOUSE WAS THE DEFENDANT`／`PHILADELPHIA · CIVIL FORFEITURE`／`$40`／`in rem`／`Courtroom 478`／`~$3M FUND` 等）** を上部1/5に大型キネティックタイポで（下部字幕と別レイヤー）。span↔ナレchunk 1:1 のタイミング。
+- **マスク切り上がり（"切り上がり"）**：各行を `overflow:hidden` 枠内で translateY 118%→0（`spring{damping:18,stiffness:110}`）、行ごと **7F stagger**。line0=白／以降=gold。short(≤18字)=92px・long=54px。
+- **金キッカーチップ**（幅54pxバーが scaleX で伸長）＋**金アニメ下線**（scaleX spring）＋入りに **Trail** 残像。
+- 数値/年表（`$40`↔家の価値↔`~$3M`、`in rem` の法理、押収規模）は **count-up / draw-on** で動的に。
+
+### 5.4 フッテージ（factory棚＝主役）
+- 強め暗く＋**ネイビー multiply 0.14＋ビネット**で統一（明るい霧/雪/白テックが浮くのを防ぐ）。**featureless（素の霧/空/抽象）は除外**。各クリップにゆっくり push（translateX ±14, scale 1.04→1.1）で動きのフロア。
+
+### 5.6 情報ビジュアル＝Figures tier（別スレ `DiagramFlow` 拡張を取り込む・row16リテンション）
+データ系の `on_screen_text` は**平文タイポでなくアニメ図**にして「静止画退屈」を殺す（`docs/PD_MOTION3D_HERO_AND_FIGURES_SPEC.md §3`）。単一アクセント・暗いサーフェス・全て `useCurrentFrame()` 駆動：
+- **StatCounter**：`$40` / `~$3M FUND` / 押収規模を **0→値 count-up**（`Easing.out(Easing.cubic)`）＋accent下線＋ラベル。
+- **Timeline**：2014逮捕 → 2014 IJ連邦提訴 → 2018同意判決 の年表。baseline を L→R に spring で描き、event dot を **0.18s スタッガー**で pop、year+caption はマスク上げ、上下交互。
+- **BarChart**：フィラデルフィアの没収規模／件数を bars **0→値 0.12s スタッガー**（4px角丸・baseline固定・direct label・軸は控えめ）。
+- **NetworkDiagram**：押収金が検察/警察へ還流する**利益相反**の関係図。edge を `strokeDashoffset`(spring) で描き node を pop（"follow the money"）。
+
+### 5.7 プレミアム3Dヒーロー階層（`PD_MOTION3D_HERO_AND_FIGURES_SPEC` L1–L3・elective・**owner-gated**）
+「奥行きが無い＝紙芝居」を根本から解く上位階層。掴みに厚みを出す：
+- **掴みヒーロープレート**：コールドオープン（フック冒頭・金 `BrandOpening` 着地の前）に **Blender L2 EEVEE**（発光ジェム＋Glare Bloom＋反射床＋DOF f2.2, ~1.8s/f＝90–120f で1–2分）で1カットの掴みプレートを PNGseq→`libx264 crf16 yuv420p`→`OffthreadVideo` で敷く。最上級の1カットのみ **L3 Cycles**（ガラス屈折 IOR1.85＋Bevel, AgX, ~8s/f）。抽象生成物＝不変項11 OK（実在人物なし・記録として提示しない）。EP28のモチーフ＝**鍵/敷居**を3Dで（ガラスの鍵 or 発光する敷居）。
+- **OP背景奥行き**：`@remotion/three`(L1) で `BrandOpening` の背景プレートに実奥行き＋前景ボケ＋スロー・ドリー（Bookends はタイトル層のまま＝不変項14）。deps `@remotion/three@4.0.484 three @react-three/fiber@8`、参照 `remotion/prototypes/motion3d/`。**本番移植はオーナー承認後**。
+- 決定論：全モーション `useCurrentFrame()` 駆動（r3f `useFrame` 禁止）、encode は row6 値（libx264/crf16/yuv420p/bt709/aac320k）。
 
 > **不変項11＋オーナー指示(2026-07-04)**：**人物の姿は描いてよい**——役者的な"代表的人物"（匿名の一般人の像）はOK。むしろ人を映して画面を生かす。**禁じるのは実在・特定できる本人の肖像だけ**（Sourovelis家本人・実名個人の顔の再現）。よって Codex画像は「敷居に立つ父親」「引越し箱を運ぶ家族」「令状フロアで待つ所有者たち」等の**匿名の人物**で描く（実在の誰かに似せない・特定顔の一致を避ける）。実写の本人アーカイブ素材は権利未クリアなので使わない（factory棚＝権利クリア汎用のみ）。シルエット/後ろ姿/手元は"手法の一つ"であって縛りではない。
 
@@ -112,9 +131,9 @@
 
 ## 6. 素材プラン（row 7・**集めて未使用ゼロ**）
 
-- **密度**：`distinct_factory_used ≥ runtime/30` → **≥ 24 distinct クリップ**。単一クリップ再利用 **≤ 3回**。空スパン 0。
-- **画像:フッテージ ≒ 4:6**（kyllo v002 の学び）。全素材を no-repeat（MIN_GAP~22）で散らす。
-- **factory 抽出テーマ**（`select_factory_assets.py --theme`）：`property`（連棟住宅/玄関/鍵/引越し）, `crime`（パトランプ/夜の街/証拠袋）, `legal`（法廷/書類/ガベル/ファイル）, `finance`（現金/帳簿/数字）, Philadelphia の街。cf. `[[reference_factory_shelf]]`。
+- **多様性ゲート `footage_diversity`（機械・ハード）**：distinct/total **≥ 0.40**・単一クリップ再利用 **≤ 4回**・天秤/ガベル等の汎用象徴 **≤ 2回**・空スパン 0。ビルダー(`build_case_film_assets.py`)は上限3/汎用1で更に厳しく散らす。
+- **AS-BUILT（2026-07-05）**：factory **96本を6テーマ分散でステージ済**（`remotion/public/forfeiture/factory`）＋Codex画像~40＝**distinct≈136 / cuts≈215 → distinct_frac≈0.63**（ゲート事前クリア）。**画像:フッテージ ≒ 4:6**、全素材 no-repeat(MIN_GAP~22)。
+- **factory 抽出テーマ**（`select_factory_assets.py --theme`・実ステージ済）：`crime_police`18 / `legal_court`18 / `property_home`18 / `finance_money`16 / `documents_paper`13 / `urban_night`13。cf. `[[reference_factory_shelf]]`。
 - **Codex 生成ヒーロー静止画**（`ai_prompts.v001`・**計40枚**・1画像=1プロンプト・長辺≥3840・**匿名人物OK/実在本人の肖像なし**・使い回し単調回避）：敷居に立つ父親（匿名）／引越し箱を抱える家族（匿名）／令状フロアで待つ所有者たち（匿名群衆）／施錠告知の書類マクロ／夜の連棟住宅／空の法廷（Courtroom 478 の雰囲気）／敷居に置かれた鍵／没収書類の山／$の帳簿。各プロンプトに negative（**specific real person / celebrity likeness**, on-image text, bad anatomy…）と upscale≥3840 を明記。人物像は自然な実写調で、特定の実在人物に似せない。
 
 ---

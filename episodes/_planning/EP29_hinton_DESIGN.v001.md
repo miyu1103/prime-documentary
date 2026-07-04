@@ -49,7 +49,9 @@
 
 ---
 
-## 2. 4部構成 — 秒割タイムライン（fps=60 / 全長 720s）
+## 2. 4部構成 — 秒割タイムライン（**AS-BUILT: fps=30（CaseFilm／BRAND.video.fps）／全長 696.8s** ／ 数値は定数）
+
+> **AS-BUILT SYNC (2026-07-05)** — 真実源＝`episodes/PD-2026-029-hinton/03_script/script.annotated.v001.json`（この .md は当初ドラフト）。実測: ナレ **676.3s**・**2,058語**・**28 on_screen_text**・字幕全PASS・`shotlist.v001` 251カット・総尺 **696.8s**（hook8+OP3.5+676.3+ED9・band内）。CaseFilmは **30fps**（旧記載 fps=60 は誤り＝オープニング実演用で長尺エンジン非適用）。組立=`CaseFilm-hinton`（プレミアム＋別スレAmbientMotion/派手Bookends/3Dヒーローで統一）→ ship-gate 受領書緑まで（`docs/PD_SHIP_GATE.md`）。
 
 | Part | 区間(s) | 尺 | 役割 | ナレ語数(≈173wpm) |
 |---|---|---|---|---|
@@ -87,14 +89,42 @@
 
 ## 5. ビジュアル/アニメ・システム（row8・`MotionSample.tsx` 準拠＝紙芝居禁止）
 
-土台＝`CaseFilm.tsx`（`data/hinton_film.json` 駆動）。承認済み `MotionSample` の作り。
+**土台＝`remotion/src/compositions/CaseFilm.tsx`（プレミアム・エンジン, `data/hinton_film.json` 駆動, fps=30）。** 実装記録＝`docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md §C2`。承認済み `MotionSample` の質感を全編維持。**統一アニメ**＝別スレの `components/AmbientMotion.tsx`（各ビートに重ねる手続き型モーショングラフィックス）＋派手 `Bookends`（OP/ED）と合体（コミット後に重ねる。二重実装せず彼らのを使う＝不変項14）。**数値は決定論＝値で書く。**
 
-- **カット**：平均 **2.5–3.0s**。裸ハードカット禁止＝**0.35s クロスディゾルブ**でオーバーラップ。
-- **静止画技法をローテ**：`bleed`(2.5Dパララックス)／`scan`(走査光・微グリッド)／`duotone`(ネイビー雰囲気)／`focus`(ラック送り)。斜め2.5D "card" は稀に。
-- **モーショングラフィックス**：`30 YEARS`／`5–4`でなく`9–0`(全員一致)／年表／弾道の"一致しない"可視化を、大型キネティックタイポ＋spring＋scale＋Trail で。上部1/5・下部字幕と別レイヤー。`on_screen_text`/`visual_intent` を必ず実装。
-- **フッテージ（factory棚）**：主役。強め暗く＋ネイビー＋ビネットで統一。featurelessクリップ除外。
-- **オーバーレイ**：塵/グレイン/揺らぐ照明を薄く常時。**Runway**：フック or 釈放の決定的1–2カットのみ点で。
-- **禁止エフェクト**：金の縦スイープ／黄・金ウォッシュ・フラッシュ／ただのズーム・左右パン（`CameraRig`）。`StyleTest`は手本にしない。
+### 5.1 カット遷移（"かくっ"禁止・全カットに設計トランジション）
+- 平均カット長 **2.5–3.0s**。**裸のハードカット禁止。**
+- **クロスディゾルブ**：隣接カットの Sequence を **0.35s オーバーラップ**で溶かす（1F黒/ジャンプなし）。**カット越しに動きの向き・速度を継続**（velocity resetしない＝"かくっ"根絶）。
+- **入りの設計モーション**：`spring{damping:18,stiffness:90,mass:0.9}` で index%3 ローテ＝プッシュイン(scale 1.14→1.0)/せり上がり(translateY 64→0px)/スライド(translateX ±60→0px)。
+- **モーションブラー**：入り 0–9F 減衰 `blur(14→0px)`。速い要素は `@remotion/motion-blur` **Trail(layers 6–7, trailOpacity 0.5–0.55)**。
+
+### 5.2 静止画（Codex生成）を動かす（同一手法連続禁止でローテ）
+- `bleed`＝2.5Dパララックス(fgS 1.05→1.14)／`scan`＝走査光+微グリッド／`duotone`＝ネイビー基調／`focus`＝ラックフォーカス(blur 16→0)。斜め2.5D `card` は**稀に**。
+- 各カット常時：**Particles＋Vignette＋Grain(0.11)**。統一後は **AmbientMotion** を上に重ね「静止フレームゼロ」。
+
+### 5.3 キネティック・タイポグラフィ（`on_screen_text` を必ず実装＝**28ビート**）
+- `script.annotated` の**全 `on_screen_text`**（`30 YEARS`／`INNOCENT`／`9–0`(全員一致)／`MATCH?`(砕ける)／`ALIBI`／年）を上部1/5に大型キネティックタイポ（下部字幕と別レイヤー・span↔chunk 1:1）。
+- **マスク切り上がり**：`overflow:hidden` 枠内で translateY 118%→0（`spring{damping:18,stiffness:110}`）、行ごと **7F stagger**。line0=白/以降=gold。short=92px・long=54px。
+- **金キッカーチップ**＋**金アニメ下線**（scaleX spring）＋入りに **Trail** 残像。
+- 数値/年表（`30 YEARS`のcount-up、`9–0`、弾道"一致しない"可視化）は count-up / draw-on で動的に。
+
+### 5.4 フッテージ（factory棚＝主役）
+- 強め暗く＋**ネイビー multiply 0.14＋ビネット**で統一。**featureless（素の霧/空/抽象）は除外**。各クリップにゆっくり push（translateX ±14, scale 1.04→1.1）。
+
+### 5.5 Runway／禁止
+- **Runway**：フック or 釈放の決定的 **1–2カットのみ** img2vid。使いすぎない。
+- **禁止**：金の縦スイープ（`WipeTransition`）／黄・金の全画面ウォッシュ・フラッシュ／ただのズーム・左右パンだけ（`CameraRig`）。`StyleTest`は手本にしない。
+
+### 5.6 情報ビジュアル＝Figures tier（別スレ `DiagramFlow` 拡張を取り込む・row16）
+データ系は平文でなく**アニメ図**（`PD_MOTION3D_HERO_AND_FIGURES_SPEC §3`・単一アクセント・暗いサーフェス・`useCurrentFrame()` 駆動）：
+- **StatCounter**：`30 YEARS`／獄中年数を **0→値 count-up**（`Easing.out(Easing.cubic)`）＋accent下線。
+- **Timeline**：1985逮捕 → 死刑判決 → 2014最高裁(9–0) → 2015釈放。baseline を L→R spring、event dot 0.18s スタッガー、year+captionマスク上げ。
+- **BarChart / 対比**：弾道"一致"の主張 vs 再鑑定＝一致しない、を対比バーで（0.12s スタッガー・direct label）。
+- **NetworkDiagram**：EJI/Stevenson → 新鑑定 → 最高裁 の関係図（edgeを `strokeDashoffset` spring で描く）。
+
+### 5.7 プレミアム3Dヒーロー階層（`PD_MOTION3D_HERO_AND_FIGURES_SPEC` L1–L3・elective・**owner-gated**）
+- **掴みヒーロープレート**：コールドオープン（金 `BrandOpening` 着地の前）に **Blender L2 EEVEE**（発光ジェム＋Glare Bloom＋反射床＋DOF f2.2, ~1.8s/f）を PNGseq→`libx264 crf16 yuv420p`→`OffthreadVideo` で敷く。最上級1カットのみ **L3 Cycles**（ガラス屈折 IOR1.85＋Bevel, AgX, ~8s/f）。抽象生成物＝不変項11 OK。EP29モチーフ＝**光と闇**（*The Sun Does Shine*）＝闇に差す一条の光/鉄扉を3Dで。
+- **OP背景奥行き**：`@remotion/three`(L1) で `BrandOpening` 背景に実奥行き＋前景ボケ＋スロー・ドリー（Bookendsはタイトル層＝不変項14）。deps `@remotion/three@4.0.484 three @react-three/fiber@8`、参照 `remotion/prototypes/motion3d/`。**本番移植はオーナー承認後**。
+- 決定論：全モーション `useCurrentFrame()` 駆動（r3f `useFrame` 禁止）、encode row6 値。
 
 > **不変項11＋オーナー指示(2026-07-04)**：**人物の姿は描いてよい**（匿名の代表的人物）。**禁じるのは実在・特定本人の肖像だけ**（Hinton本人・実在の関係者の顔の再現）。Codex画像は「房の中の匿名の男」「看守」「法廷の匿名の人々」「夜勤の労働者」等で描く（実在の誰かに似せない）。実写の本人アーカイブは権利未クリアで不使用（factory棚＝権利クリア汎用のみ）。
 
@@ -102,8 +132,8 @@
 
 ## 6. 素材プラン（row7・集めて未使用ゼロ）
 
-- **密度**：`distinct_factory_used ≥ runtime/30` → **≥ 24 distinct**。単一再利用 ≤ 3回。空スパン0。**画像:フッテージ ≒ 4:6**。no-repeat(MIN_GAP~22)。
-- **factory抽出テーマ**（`select_factory_assets.py --theme`）：`crime`(現場/警察)、`legal`(法廷/ガベル/書類/独房・刑務所)、`tech`/`dna`(弾道・鑑定・実験)、夜の街・時計/カレンダー。cf. `[[reference_factory_shelf]]`。
+- **多様性ゲート `footage_diversity`（機械・ハード）**：distinct/total **≥ 0.40**・単一クリップ再利用 **≤ 4回**・天秤/ガベル等の汎用象徴 **≤ 2回**・空スパン 0。ビルダーは上限3/汎用1で更に厳しく散らす。**画像:フッテージ ≒ 4:6**、no-repeat(MIN_GAP~22)。
+- **factory抽出テーマ**（`select_factory_assets.py --theme`・**組立前に90本前後を分散ステージ**＝distinct_frac≥0.55確保）：`crime_police`(現場/警察)・`legal_court`(法廷/ガベル/書類/独房・刑務所)・`forensics_dna`(弾道・鑑定・実験)・`documents_paper`・`urban_night`(夜の街)・時計/カレンダー。cf. `[[reference_factory_shelf]]`。EP28と同一クリップの再利用を避け**別テーマ束から引く**（[[feedback_footage_diversity]]）。
 - **Codex ヒーロー静止画**（`ai_prompts.v001`・**計40枚**・1画像1プロンプト・長辺≥3840・**匿名人物OK/実在本人なし**・使い回し単調回避）：房内で座る匿名の男／鉄扉／弾丸マクロ／古いリボルバー（証拠）／法廷の匿名の陪審／夜勤の倉庫／窓から差す一条の光。negative に `specific real person / celebrity likeness, on-image text, bad anatomy`。人物は自然な実写調・特定実在に似せない。
 
 ---
@@ -137,8 +167,9 @@
 ## 9. 通過必須ゲート（Done・§D）
 
 `./.venv/Scripts/python.exe scripts/check_final_acceptance.py 29 --json` **exit 0**（ハードゲート＝実ファイル測定）：
-`runtime_band`690–750s／`render_resolution`≥1920×1080／`images_present`／`motion_present`(紙芝居検出)／`bgm_present`(無音>25sなし)／`voice_is_master`(ElevenLabs)／`captions_final`(≥90%)／`caption_format`／**新3ゲート**＝`caption_narration_match`(字幕↔ナレ≥90%)・`structure_4part`(HOOK→OPENING→body→ENDING＋`hinton_film.json`実フック)・`op_ed_bookends`(正典Bookends)／`thumbnail_ready`／`image_resolution`(≥3840)／`factory_used`。
-**手動実測（飛ばさない）**：row5画質・row7密度≥runtime/30・row12サムネ派手/可読・row13タイトル・row15クラフト・**目視で失敗1〜9消滅**（MotionSampleと並べ／on_screen_text全実装）。
+`runtime_band`690–750s／`render_resolution`≥1920×1080／`images_present`／`motion_present`＋**`animation_density`**(near-still≤10%・単一ホールド≤3s＝紙芝居/スローKB検出)／`bgm_present`(無音>25sなし)＋**`bgm_ending`**(終端が切りよく解決)／`voice_is_master`(ElevenLabs)／`captions_final`(≥90%)／`caption_format`／`caption_narration_match`(字幕↔ナレ≥90%)・`structure_4part`(HOOK→OPENING→body→ENDING＋`hinton_film.json`実フック)・`op_ed_bookends`(正典Bookends)／`thumbnail_ready`＋**`thumbnail_visibility`**(輝度mean≥33＋コントラスト＝暗い/しょぼいサムネ阻止)／`image_resolution`(≥3840)／`factory_used`＋**`footage_diversity`**(distinct/total≥0.40・再利用≤4・天秤等汎用象徴≤2＝素材使い回し阻止)。
+**Ship-gate（`docs/PD_SHIP_GATE.md`）**：`check_final_acceptance.py 29 --render <mp4> --emit-receipt` で**動画sha256紐づけ受領書**発行 → `upload_schedule_case_v001.py --ep hinton` は**緑の受領書（sha一致・許容不合格はruntime_bandのみ）が無ければ物理的に投稿不可**。自己申告Done不可。
+**手動実測（飛ばさない・未コード）**：row5画質/sharpness・row13タイトル≤60/A-B・row15クラフト・**目視で失敗1〜9消滅**（MotionSampleと並べ／on_screen_text全実装）。
 
 ---
 
