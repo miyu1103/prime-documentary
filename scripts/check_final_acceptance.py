@@ -398,6 +398,40 @@ def check_bookends(epdir: Path) -> dict:
                        f"(bookends_import={has_import} opening={has_open} endcard={has_end})")}
 
 
+def check_leveled_animation(epdir: Path) -> dict:
+    """HARD: the composition must actually WIRE IN the leveled-up premium animation, not
+    just describe it in the design doc (the recurring "約束を守らない" failure). Verifies the
+    episode composition (following the CaseFilm import hop) references: the AmbientMotion
+    overlay (no-static-frame), @remotion/motion-blur Trail (real motion blur), and the
+    mask-reveal kinetic typography (overflow-hidden + translateY). Skips non-CaseFilm comps."""
+    slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
+    cdir = ROOT / "remotion" / "src" / "compositions"
+    comp = next((p for p in cdir.glob("*.tsx") if slug.lower() in p.name.lower()), None)
+    if comp is None:
+        return {"check": "leveled_animation", "ok": True, "hard": False, "skipped": True,
+                "reason": f"no composition matching slug '{slug}'"}
+    texts = [comp.read_text(encoding="utf-8", errors="ignore")]
+    is_casefilm = False
+    for dep in ("CaseFilm", "CasePremiumFromRoughCut"):
+        if re.search(rf"from '\./{dep}'", texts[0]) and (cdir / f"{dep}.tsx").is_file():
+            texts.append((cdir / f"{dep}.tsx").read_text(encoding="utf-8", errors="ignore"))
+            is_casefilm = True
+    if not is_casefilm:
+        return {"check": "leveled_animation", "ok": True, "hard": False, "skipped": True,
+                "reason": f"{comp.name} is not a CaseFilm episode (leveled-anim check n/a)"}
+    blob = "\n".join(texts)
+    have = {
+        "AmbientMotion": "AmbientMotion" in blob,
+        "motion_blur(Trail)": "Trail" in blob and "@remotion/motion-blur" in blob,
+        "mask_reveal_typo": ("overflow" in blob and "translateY" in blob),
+    }
+    missing = [k for k, v in have.items() if not v]
+    ok = not missing
+    return {"check": "leveled_animation", "ok": ok, "hard": True,
+            "reason": ("wired: AmbientMotion + Trail motion-blur + mask-reveal kinetic type"
+                       if ok else f"leveled-up animation NOT wired into the render: missing {missing}")}
+
+
 def check_render_resolution(path: Path) -> dict:
     """Video stream must be >= 1920x1080 (catches a low-res / not-max export)."""
     try:
@@ -753,6 +787,7 @@ def main() -> int:
     results.append(check_caption_narration_match(epdir))
     results.append(check_structure(epdir))
     results.append(check_bookends(epdir))
+    results.append(check_leveled_animation(epdir))
     results.append(check_thumbnail(epdir))
     results.append(check_thumbnail_visibility(epdir))
     results.append(check_image_resolution(epdir))

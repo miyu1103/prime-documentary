@@ -14,6 +14,7 @@ import {
 import {Trail} from '@remotion/motion-blur';
 import {BRAND} from '../brand';
 import {Particles, LightSweep, Vignette} from '../components/Motion';
+import {AmbientMotion} from '../components/AmbientMotion';
 import {Grain} from '../components/Grain';
 import {BrandOpening, BrandEndcard, OPENING_SEC, ENDCARD_SEC} from '../components/Bookends';
 
@@ -518,6 +519,9 @@ export const CaseFilm: React.FC<{data: FilmData; seriesLabel: string; title: str
         <AbsoluteFill
           style={{pointerEvents: 'none', background: `radial-gradient(105% 72% at 50% 46%, ${navy}22 0%, transparent 80%)`}}
         />
+        {/* leveled-up animation (other-thread AmbientMotion): drifting bokeh + orbiting glows
+            composited over the body so no frame is ever static — the "紙芝居" killer. */}
+        <AmbientMotion count={14} intensity={0.9} />
         <GraphicsBeats beats={data.graphics} />
         <Captions cues={data.captions} />
         <Grain opacity={0.11} />
