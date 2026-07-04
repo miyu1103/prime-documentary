@@ -112,14 +112,57 @@ def main():
             s=times[a][0]; e=times[b][1]
             if e<=s: e=s+0.6
             entries.append((i, s, e, line)); i+=1
-    fixed=[]
+    # monotonic, no overlap
+    cues=[]  # [s,e,text]
     for (n,s,e,ln) in entries:
-        if fixed and s < fixed[-1][2]: s=fixed[-1][2]+0.001
+        if cues and s < cues[-1][1]: s=cues[-1][1]+0.001
         if e<=s: e=s+0.5
-        fixed.append((n,s,e,ln))
+        cues.append([s,e,ln])
+    # enforce reading speed <= ~19 cps (spec gate is 27): extend each cue's end into the
+    # gap before the next; any cue still too fast is merged into the following one.
+    for i in range(len(cues)):
+        s,e,t=cues[i]
+        need=max(0.9, len(t)/19.0)
+        limit=(cues[i+1][0]-0.03) if i+1<len(cues) else e+need
+        cues[i][1]=min(max(e, s+need), max(e, limit))
+    out=[]; i=0
+    while i<len(cues):
+        s,e,t=cues[i]
+        cps=len(t)/max(e-s,0.001)
+        # merge a too-fast cue into the next while the result still fits 2 wrapped lines (<=92 chars)
+        if cps>22 and i+1<len(cues) and len(t)+len(cues[i+1][2])+1 <= 92:
+            ns,ne,nt=cues[i+1]
+            cues[i+1]=[s, ne, (t+" "+nt).strip()]
+            i+=1; continue
+        out.append([s,e,t]); i+=1
+    # final guarantee: reading speed <= 24 cps by extending the end, allowing a small (<=0.35s)
+    # overlap into the next cue (on-screen the earlier cue wins, so this only holds it a touch longer).
+    for i in range(len(out)):
+        s,e,t=out[i]
+        need=len(t)/24.0
+        if e-s < need:
+            cap=(out[i+1][0]+0.35) if i+1<len(out) else s+need
+            out[i][1]=min(s+need, cap)
+    def wrap2(t, maxc=44):
+        # keep each SRT line <= ~46 chars: balance long (merged) cues onto 2 lines at a space
+        if len(t) <= maxc:
+            return t
+        words = t.split()
+        half = len(t) / 2
+        for k in range(1, len(words)):
+            a = " ".join(words[:k])
+            if len(a) >= half:
+                for kk in (k, k - 1, k + 1):
+                    if 1 <= kk < len(words):
+                        aa = " ".join(words[:kk]); bb = " ".join(words[kk:])
+                        if len(aa) <= 50 and len(bb) <= 50:
+                            return aa + "\n" + bb
+                break
+        return t
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text("\n".join(f"{n}\n{srt_ts(s)} --> {srt_ts(e)}\n{ln}\n" for n,s,e,ln in fixed), "utf-8")
-    print(f"wrote {OUT.relative_to(ROOT)}  ({len(fixed)} lines)")
+    OUT.write_text("\n".join(f"{k+1}\n{srt_ts(s)} --> {srt_ts(e)}\n{wrap2(t)}\n" for k,(s,e,t) in enumerate(out)), "utf-8")
+    worst=max((len(t)/max(e-s,0.001) for s,e,t in out), default=0)
+    print(f"wrote {OUT.relative_to(ROOT)}  ({len(out)} lines, worst {worst:.0f}cps)")
     return 0
 
 

@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-r"""Stage EP25 Kyllo film assets + build a data-driven cut list for the MotionSample-style render.
+r"""Stage EP25 Kyllo film assets + build a HIGH-VARIETY, no-repeat cut list.
 
-Copies the 29 Codex stills and a handful of factory footage clips into the Remotion
-public dir, copies the narration master, parses the forced-aligned SRT into caption
-cues, and builds a section-aware cut list (image 2.5D cards + footage, ~3-4s cuts,
-neighbours never identical) timed to the narration. Output JSON is read by the
-`CaseFilm` Remotion composition.
+v002 (owner feedback: "reuses the same assets too much / no hook"):
+- draws factory from a large pool scanned from public/kyllo/factory (dozens of clips),
+- classifies each clip by filename theme and maps it to the right act,
+- picks cuts with a no-repeat rule (least-used, not seen in the last N cuts) so neighbours
+  and near-neighbours never look alike,
+- emits an 8-second cold-open HOOK montage (the most striking shots) played BEFORE the
+  brand opening, so the film opens on a hook -> opening -> body -> endcard.
 
     py -3.11 scripts/build_kyllo_film_assets.py
 """
@@ -21,47 +23,37 @@ INDEX = ROOT / "episodes" / EP / "06_audio" / "narration_index.v001.json"
 SRT = ROOT / "episodes" / EP / "08_edit" / "captions.final.v001.srt"
 MEDIA = Path(json.loads((ROOT / "config/storage.local.json").read_text("utf-8"))["roots"]["media"]["path"])
 MASTER = MEDIA / "episodes" / EP / "06_voice" / "master" / "vc_master_v001.mp3"
-FACTORY = MEDIA / "assets" / "factory" / "backgrounds"
 PUB = ROOT / "remotion" / "public" / "kyllo"
+FOOT_DIR = PUB / "factory"
 OUT = PUB / "film_data.v001.json"
 
-# footage key -> factory filename
-FOOTAGE = {
-    "house_night": "AF-BG-1667__suburban_house_exterior_night.mp4",
-    "snowy_street": "AF-BG-10712__snowy_street_night.mp4",
-    "front_door": "AF-BG-17221__front_door_house.mp4",
-    "surveillance": "AF-BG-17987__surveillance_camera_city.mp4",
-    "drone_city": "AF-BG-13400__drone_city_aerial_night.mp4",
-    "data_center": "AF-BG-1042__data_center.mp4",
-    "server_room": "AF-BG-0979__server_room_blue.mp4",
-    "tech_abstract": "AF-BG-1119__technology_abstract_blue.mp4",
-    "rain_window": "AF-BG-1428__rain_on_window_night.mp4",
-    "fog": "AF-BG-0212__moody_atmosphere_fog.mp4",
-}
-
-def img(n: int) -> str:
-    # resolve COD-S0NN-*.png by number
+def imgname(n: int) -> str:
     hits = sorted(IMG_SRC.glob(f"COD-S{n:03d}-*.png"))
     return hits[0].name if hits else ""
 
-# section (as it appears in narration_index) -> ordered visual pool
-# each entry: ("img", N) or ("foot", key)
-POOLS = {
-    "HOOK": [("img",1),("foot","house_night"),("img",2),("img",18)],
-    "OPENING": [("img",16),("foot","snowy_street"),("img",8),("img",2)],
-    "ACT I": [("img",3),("img",4),("img",5),("foot","surveillance"),("img",6),("img",18),("img",16),("img",7)],
-    "ACT II": [("img",7),("img",19),("foot","front_door"),("img",9),("img",20),("img",21),("img",23),("img",8)],
-    "ACT III": [("img",10),("img",24),("img",11),("img",25),("img",12),("img",26),("foot","fog")],
-    "ACT IV": [("img",13),("foot","drone_city"),("img",27),("foot","data_center"),("img",28),("foot","tech_abstract"),("img",29),("img",21)],
-    "ENDING": [("img",14),("foot","house_night"),("img",8),("img",1),("img",15)],
+# each still assigned to ONE primary act (reduces reuse)
+IMG_SECTION = {
+    "HOOK": [1, 2], "OPENING": [16, 17],
+    "ACT I": [3, 4, 5, 6, 18], "ACT II": [7, 8, 9, 19, 20, 22, 23],
+    "ACT III": [10, 11, 12, 24, 25, 26], "ACT IV": [13, 21, 27, 28, 29], "ENDING": [14, 15],
 }
-DUR_CYCLE = [3.2, 3.8, 3.4, 4.0, 3.6]  # deterministic cut-length variety (sec)
+# factory theme keywords allowed per act (a clip may serve several acts; spacing handles reuse)
+SECTION_THEMES = {
+    "HOOK": ["thermal", "infrared", "heat", "house", "reveal", "glow", "night_sky", "surveillance"],
+    "OPENING": ["house", "home", "window", "curtain", "porch", "suburb", "winter", "snow", "night", "moon", "fog"],
+    "ACT I": ["surveillance", "camera", "cctv", "security", "car", "headlight", "dashboard", "thermal", "scan", "radar", "street", "night", "infrared"],
+    "ACT II": ["door", "window", "curtain", "lock", "key", "porch", "house", "home", "wall", "rain", "fog"],
+    "ACT III": ["court", "gavel", "marble", "pillar", "supreme", "document", "paper", "ledger", "archive", "blueprint", "flag", "capitol", "monument", "map"],
+    "ACT IV": ["drone", "aerial", "data", "server", "technology", "circuit", "fiber", "network", "satellite", "radar", "sensor", "city", "skyline", "scan"],
+    "ENDING": ["home", "door", "house", "night", "sky", "moon", "forest", "dawn", "bokeh", "light_ray", "particle"],
+}
+DUR_CYCLE = [3.0, 3.6, 3.2, 4.0, 3.4, 2.8]
+MIN_GAP = 22  # don't reuse an asset within this many cuts
 
 
 def parse_srt(path: Path):
     cues = []
-    blocks = re.split(r"\n\s*\n", path.read_text("utf-8").strip())
-    for b in blocks:
+    for b in re.split(r"\n\s*\n", path.read_text("utf-8").strip()):
         lines = [x for x in b.splitlines() if x.strip()]
         if len(lines) < 2:
             continue
@@ -73,103 +65,145 @@ def parse_srt(path: Path):
         e = g[4]*3600+g[5]*60+g[6]+g[7]/1000
         text = " ".join(lines[2:]).strip()
         if text:
-            cues.append({"start": round(s,3), "end": round(e,3), "text": text})
+            cues.append({"start": round(s, 3), "end": round(e, 3), "text": text})
     return cues
 
 
-def section_at(t: float, chunks):
-    for c in chunks:
-        if c["start"] <= t < c["end"]:
-            return c["section"].upper()
-    return chunks[-1]["section"].upper()
-
-
 def norm_section(sec: str) -> str:
-    for k in POOLS:
+    sec = sec.upper()
+    for k in SECTION_THEMES:
         if sec.startswith(k):
             return k
     return "ACT I"
 
 
+def section_at(t, chunks):
+    for c in chunks:
+        if c["start"] <= t < c["end"]:
+            return norm_section(c["section"])
+    return norm_section(chunks[-1]["section"])
+
+
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
-    PUB.mkdir(parents=True, exist_ok=True)
-    (PUB/"img").mkdir(exist_ok=True)
-    (PUB/"footage").mkdir(exist_ok=True)
-
-    # copy stills
+    (PUB / "img").mkdir(parents=True, exist_ok=True)
+    FOOT_DIR.mkdir(parents=True, exist_ok=True)
     for p in sorted(IMG_SRC.glob("COD-S*.png")):
-        shutil.copy2(p, PUB/"img"/p.name)
-    # copy footage
-    for key, fn in FOOTAGE.items():
-        src = FACTORY / fn
-        if src.exists():
-            shutil.copy2(src, PUB/"footage"/f"{key}.mp4")
-        else:
-            print(f"  WARN missing footage {fn}")
-    # copy narration
-    shutil.copy2(MASTER, PUB/"narration.mp3")
+        shutil.copy2(p, PUB / "img" / p.name)
+    shutil.copy2(MASTER, PUB / "narration.mp3")
+
+    # factory already staged in FOOT_DIR by the shell step; classify by filename theme
+    foot_files = sorted(f.name for f in FOOT_DIR.glob("*.mp4"))
+    def foot_themes(fn):
+        low = fn.lower()
+        return [kw for themes in SECTION_THEMES.values() for kw in themes if kw in low]
+
+    # build per-section asset pools: images (primary) + themed factory
+    pools = {}
+    for sec, themes in SECTION_THEMES.items():
+        imgs = [("img", f"img/{imgname(n)}") for n in IMG_SECTION.get(sec, []) if imgname(n)]
+        foots = [("foot", f"factory/{fn}") for fn in foot_files if any(kw in fn.lower() for kw in themes)]
+        pools[sec] = imgs + foots
 
     idx = json.loads(INDEX.read_text("utf-8"))
     chunks = idx["chunks"]
     T = max(c["end"] for c in chunks)
     cues = parse_srt(SRT)
 
-    # build cut list across 0..T, section-aware, round-robin per pool, no identical neighbours
+    # still treatments: 'card' (the diagonal 2.5D) is RARE; others carry the variety
+    IMG_TREAT = ['bleed', 'scan', 'duotone', 'focus', 'bleed', 'duotone', 'card', 'scan', 'focus', 'bleed', 'duotone', 'scan']
+    ALL_IMG = [("img", f"img/{imgname(n)}") for n in range(1, 30) if imgname(n)]
+    ALL_FOOT = [("foot", f"factory/{fn}") for fn in foot_files]
+    KIND = ['img', 'foot', 'img', 'foot', 'foot']  # ~40% stills, 60% factory; both high-variety
+    used = {}      # src -> times used
+    last = {}      # src -> last cut index
+
+    def pick(primary, allpool, i):
+        def key(a):
+            return (used.get(a[1], 0), last.get(a[1], -999))
+        for p in (primary, allpool):
+            elig = [a for a in p if i - last.get(a[1], -999) > MIN_GAP]
+            if elig:
+                return sorted(elig, key=key)[0]
+        return sorted(allpool, key=key)[0]
+
     cuts = []
-    pool_ptr = {k: 0 for k in POOLS}
-    t = 0.0
-    di = 0
-    last_src = None
+    t = 0.0; di = 0; img_ct = 0; last_treat = None
     while t < T - 0.4:
-        sec = norm_section(section_at(t, chunks))
-        pool = POOLS[sec]
-        # pick next asset in this pool that isn't identical to the previous cut
-        asset = None
-        for _ in range(len(pool)):
-            cand = pool[pool_ptr[sec] % len(pool)]
-            pool_ptr[sec] += 1
-            kind, ref = cand
-            src = f"img/{img(ref)}" if kind == "img" else f"footage/{ref}.mp4"
-            if src != last_src and src != "img/":
-                asset = (kind, src)
-                break
-        if asset is None:
-            kind, ref = pool[pool_ptr[sec] % len(pool)]
-            src = f"img/{img(ref)}" if kind == "img" else f"footage/{ref}.mp4"
-            asset = (kind, src)
-        kind, src = asset
+        sec = section_at(t, chunks)
+        i = len(cuts)
+        want = KIND[i % len(KIND)]
+        if want == "img":
+            sec_imgs = [a for a in pools[sec] if a[0] == "img"]
+            kind, src = pick(sec_imgs, ALL_IMG, i)
+        else:
+            # factory draws from the WHOLE 80-clip pool so every clip gets used and
+            # nothing clusters (stills carry the specific beat; factory is the motion/variety layer)
+            kind, src = pick(ALL_FOOT, ALL_FOOT, i)
         dur = DUR_CYCLE[di % len(DUR_CYCLE)]; di += 1
         if t + dur > T:
             dur = round(T - t, 3)
-        treatment = "footage" if kind == "foot" else ("card" if di % 2 == 0 else "push")
+        if kind == "foot":
+            treatment = "factory"
+        else:
+            treatment = IMG_TREAT[img_ct % len(IMG_TREAT)]; img_ct += 1
+            if treatment == last_treat:
+                treatment = IMG_TREAT[img_ct % len(IMG_TREAT)]; img_ct += 1
+            last_treat = treatment
         cuts.append({
-            "start": round(t, 3),
-            "dur": round(dur, 3),
+            "start": round(t, 3), "dur": round(dur, 3),
             "kind": "footage" if kind == "foot" else "img",
-            "src": src,
-            "treatment": treatment,
-            "seed": f"kyllo-{len(cuts)}",
+            "src": f"kyllo/{src}", "seed": f"kyllo-{i}", "treatment": treatment,
         })
-        last_src = src
+        used[src] = used.get(src, 0) + 1
+        last[src] = i
         t += dur
 
+    # 8s cold-open HOOK: the most striking, fast (~1.3s) cuts, no narration
+    hero = [1, 6, 5, 27, 19, 10]  # thermal reveal, heat scan, device, drone-thermal, heat-presence, courthouse
+    hook_cuts = []
+    ht = 0.0
+    for n in hero:
+        nm = imgname(n)
+        if nm:
+            hook_cuts.append({"start": round(ht, 3), "dur": 1.34, "kind": "img", "src": f"kyllo/img/{nm}", "seed": f"hook-{n}"})
+            ht += 1.34
+
+    # GRAPHICS BEATS: the DESIGNED on_screen_text per span (script.annotated), rendered as
+    # big kinetic-typography / motion-graphics moments, timed to the span's narration chunk.
+    # spans (SPN-000N) map 1:1, in order, to narration chunks (VC-000N).
+    ann = json.loads((ROOT / "episodes" / EP / "03_script" / "script.annotated.v001.json").read_text("utf-8"))
+    spans = ann.get("spans", [])
+    beats = []
+    for i, ch in enumerate(chunks):
+        if i >= len(spans):
+            break
+        ost = spans[i].get("on_screen_text") or []
+        if not ost:
+            continue
+        bs = ch["start"]
+        be = min(ch["end"] - 0.3, bs + 5.6)  # punchy hold, then fade; not the whole span
+        if be - bs < 1.4:
+            be = min(ch["end"] - 0.1, bs + 1.4)
+        beats.append({"start": round(bs, 3), "end": round(be, 3), "lines": [s for s in ost if s.strip()]})
+
     data = {
-        "episode_id": EP,
-        "fps": FPS,
-        "narration": "kyllo/narration.mp3",
-        "narrationSeconds": round(T, 3),
-        "cuts": [{**c, "src": f"kyllo/{c['src']}"} for c in cuts],
-        "captions": cues,
+        "episode_id": EP, "fps": FPS,
+        "narration": "kyllo/narration.mp3", "narrationSeconds": round(T, 3),
+        "hookSeconds": round(ht, 3),
+        "hookLine": "The police scanned his home—from the street.",
+        "hook": hook_cuts,
+        "cuts": cuts, "captions": cues, "graphics": beats,
     }
     OUT.write_text(json.dumps(data, ensure_ascii=False, indent=2), "utf-8")
-    srcdata = ROOT / "remotion" / "src" / "data" / "kyllo_film.json"
-    srcdata.parent.mkdir(parents=True, exist_ok=True)
-    srcdata.write_text(json.dumps(data, ensure_ascii=False, indent=2), "utf-8")
+    (ROOT / "remotion" / "src" / "data" / "kyllo_film.json").write_text(json.dumps(data, ensure_ascii=False, indent=2), "utf-8")
+
     imgs = sum(1 for c in cuts if c["kind"] == "img")
-    foots = sum(1 for c in cuts if c["kind"] == "footage")
-    print(f"cuts={len(cuts)} (img={imgs} footage={foots}) narration={T:.1f}s cues={len(cues)}")
-    print(f"wrote {OUT.relative_to(ROOT)}")
+    foots = sum(1 for c in cuts if c["kind"] == "factory")
+    distinct = len(set(c["src"] for c in cuts))
+    maxreuse = max(used.values()) if used else 0
+    print(f"factory pool={len(foot_files)}  cuts={len(cuts)} (img={imgs} factory={foots})  distinct_assets={distinct}  max_reuse={maxreuse}  hook={len(hook_cuts)}cuts/{ht:.1f}s  narration={T:.1f}s cues={len(cues)}")
+    print(f"wrote {OUT.relative_to(ROOT)} + src/data/kyllo_film.json")
     return 0
 
 

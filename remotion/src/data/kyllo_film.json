@@ -3,1342 +3,1492 @@
   "fps": 30,
   "narration": "kyllo/narration.mp3",
   "narrationSeconds": 599.696,
+  "hookSeconds": 8.04,
+  "hookLine": "The police scanned his home—from the street.",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "kyllo/img/COD-S001-thermal-house-reveal.png",
+      "seed": "hook-1"
+    },
+    {
+      "start": 1.34,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
+      "seed": "hook-6"
+    },
+    {
+      "start": 2.68,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
+      "seed": "hook-5"
+    },
+    {
+      "start": 4.02,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "kyllo/img/COD-S027-drone-thermal-neighborhood.png",
+      "seed": "hook-27"
+    },
+    {
+      "start": 5.36,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "kyllo/img/COD-S019-heat-reveals-presence.png",
+      "seed": "hook-19"
+    },
+    {
+      "start": 6.7,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "kyllo/img/COD-S010-courthouse-colonnade.png",
+      "seed": "hook-10"
+    }
+  ],
   "cuts": [
     {
       "start": 0.0,
-      "dur": 3.2,
+      "dur": 3.0,
       "kind": "img",
       "src": "kyllo/img/COD-S001-thermal-house-reveal.png",
-      "treatment": "push",
-      "seed": "kyllo-0"
+      "seed": "kyllo-0",
+      "treatment": "bleed"
     },
     {
-      "start": 3.2,
-      "dur": 3.8,
-      "kind": "footage",
-      "src": "kyllo/footage/house_night.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-1"
-    },
-    {
-      "start": 7.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S002-your-home-night.png",
-      "treatment": "push",
-      "seed": "kyllo-2"
-    },
-    {
-      "start": 10.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "card",
-      "seed": "kyllo-3"
-    },
-    {
-      "start": 14.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S001-thermal-house-reveal.png",
-      "treatment": "push",
-      "seed": "kyllo-4"
-    },
-    {
-      "start": 18.0,
-      "dur": 3.2,
-      "kind": "footage",
-      "src": "kyllo/footage/house_night.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-5"
-    },
-    {
-      "start": 21.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S002-your-home-night.png",
-      "treatment": "push",
-      "seed": "kyllo-6"
-    },
-    {
-      "start": 25.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "card",
-      "seed": "kyllo-7"
-    },
-    {
-      "start": 28.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S001-thermal-house-reveal.png",
-      "treatment": "push",
-      "seed": "kyllo-8"
-    },
-    {
-      "start": 32.4,
+      "start": 3.0,
       "dur": 3.6,
       "kind": "footage",
-      "src": "kyllo/footage/house_night.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-9"
+      "src": "kyllo/factory/AF-BG-0365__blurred_city_night_bokeh.mp4",
+      "seed": "kyllo-1",
+      "treatment": "factory"
     },
     {
-      "start": 36.0,
+      "start": 6.6,
       "dur": 3.2,
       "kind": "img",
       "src": "kyllo/img/COD-S002-your-home-night.png",
-      "treatment": "push",
-      "seed": "kyllo-10"
+      "seed": "kyllo-2",
+      "treatment": "scan"
     },
     {
-      "start": 39.2,
-      "dur": 3.8,
+      "start": 9.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0366__blurred_city_night_bokeh.mp4",
+      "seed": "kyllo-3",
+      "treatment": "factory"
+    },
+    {
+      "start": 13.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0510__courtroom_interior.mp4",
+      "seed": "kyllo-4",
+      "treatment": "factory"
+    },
+    {
+      "start": 17.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "kyllo/img/COD-S003-street-1992-cold.png",
+      "seed": "kyllo-5",
+      "treatment": "duotone"
+    },
+    {
+      "start": 20.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0511__courtroom_interior.mp4",
+      "seed": "kyllo-6",
+      "treatment": "factory"
+    },
+    {
+      "start": 23.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
+      "seed": "kyllo-7",
+      "treatment": "focus"
+    },
+    {
+      "start": 26.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0745__american_flag_waving.mp4",
+      "seed": "kyllo-8",
+      "treatment": "factory"
+    },
+    {
+      "start": 29.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0746__american_flag_waving.mp4",
+      "seed": "kyllo-9",
+      "treatment": "factory"
+    },
+    {
+      "start": 33.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
+      "seed": "kyllo-10",
+      "treatment": "bleed"
+    },
+    {
+      "start": 37.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0979__server_room_blue.mp4",
+      "seed": "kyllo-11",
+      "treatment": "factory"
+    },
+    {
+      "start": 40.0,
+      "dur": 3.0,
       "kind": "img",
       "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-11"
+      "seed": "kyllo-12",
+      "treatment": "duotone"
     },
     {
       "start": 43.0,
-      "dur": 3.4,
+      "dur": 3.6,
       "kind": "footage",
-      "src": "kyllo/footage/snowy_street.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-12"
+      "src": "kyllo/factory/AF-BG-0980__server_room_blue.mp4",
+      "seed": "kyllo-13",
+      "treatment": "factory"
     },
     {
-      "start": 46.4,
+      "start": 46.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10137__old_library_archive.mp4",
+      "seed": "kyllo-14",
+      "treatment": "factory"
+    },
+    {
+      "start": 49.8,
       "dur": 4.0,
       "kind": "img",
-      "src": "kyllo/img/COD-S008-threshold-doorway.png",
-      "treatment": "card",
-      "seed": "kyllo-13"
+      "src": "kyllo/img/COD-S017-frosted-window-glow.png",
+      "seed": "kyllo-15",
+      "treatment": "card"
     },
     {
-      "start": 50.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S002-your-home-night.png",
-      "treatment": "push",
-      "seed": "kyllo-14"
-    },
-    {
-      "start": 54.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-15"
+      "start": 53.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10138__old_library_archive.mp4",
+      "seed": "kyllo-16",
+      "treatment": "factory"
     },
     {
       "start": 57.2,
-      "dur": 3.8,
-      "kind": "footage",
-      "src": "kyllo/footage/snowy_street.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-16"
+      "dur": 2.8,
+      "kind": "img",
+      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
+      "seed": "kyllo-17",
+      "treatment": "scan"
     },
     {
-      "start": 61.0,
+      "start": 60.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10218__stacked_legal_documents.mp4",
+      "seed": "kyllo-18",
+      "treatment": "factory"
+    },
+    {
+      "start": 63.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10219__stacked_legal_documents.mp4",
+      "seed": "kyllo-19",
+      "treatment": "factory"
+    },
+    {
+      "start": 66.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
+      "seed": "kyllo-20",
+      "treatment": "focus"
+    },
+    {
+      "start": 69.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10313__newspaper_printing_press.mp4",
+      "seed": "kyllo-21",
+      "treatment": "factory"
+    },
+    {
+      "start": 73.8,
       "dur": 3.4,
+      "kind": "img",
+      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
+      "seed": "kyllo-22",
+      "treatment": "bleed"
+    },
+    {
+      "start": 77.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10314__newspaper_printing_press.mp4",
+      "seed": "kyllo-23",
+      "treatment": "factory"
+    },
+    {
+      "start": 80.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1042__data_center.mp4",
+      "seed": "kyllo-24",
+      "treatment": "factory"
+    },
+    {
+      "start": 83.0,
+      "dur": 3.6,
       "kind": "img",
       "src": "kyllo/img/COD-S008-threshold-doorway.png",
-      "treatment": "card",
-      "seed": "kyllo-17"
+      "seed": "kyllo-25",
+      "treatment": "duotone"
     },
     {
-      "start": 64.4,
+      "start": 86.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1043__data_center.mp4",
+      "seed": "kyllo-26",
+      "treatment": "factory"
+    },
+    {
+      "start": 89.8,
       "dur": 4.0,
       "kind": "img",
-      "src": "kyllo/img/COD-S002-your-home-night.png",
-      "treatment": "push",
-      "seed": "kyllo-18"
+      "src": "kyllo/img/COD-S009-warrant-absence.png",
+      "seed": "kyllo-27",
+      "treatment": "scan"
     },
     {
-      "start": 68.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-19"
+      "start": 93.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10712__snowy_street_night.mp4",
+      "seed": "kyllo-28",
+      "treatment": "factory"
     },
     {
-      "start": 72.0,
-      "dur": 3.2,
+      "start": 97.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10713__snowy_street_night.mp4",
+      "seed": "kyllo-29",
+      "treatment": "factory"
+    },
+    {
+      "start": 100.0,
+      "dur": 3.0,
       "kind": "img",
       "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "push",
-      "seed": "kyllo-20"
+      "seed": "kyllo-30",
+      "treatment": "bleed"
     },
     {
-      "start": 75.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "card",
-      "seed": "kyllo-21"
-    },
-    {
-      "start": 79.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "push",
-      "seed": "kyllo-22"
-    },
-    {
-      "start": 82.4,
-      "dur": 4.0,
-      "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-23"
-    },
-    {
-      "start": 86.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "push",
-      "seed": "kyllo-24"
-    },
-    {
-      "start": 90.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "card",
-      "seed": "kyllo-25"
-    },
-    {
-      "start": 93.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "push",
-      "seed": "kyllo-26"
-    },
-    {
-      "start": 97.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "card",
-      "seed": "kyllo-27"
-    },
-    {
-      "start": 100.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "push",
-      "seed": "kyllo-28"
-    },
-    {
-      "start": 104.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "card",
-      "seed": "kyllo-29"
-    },
-    {
-      "start": 108.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "push",
-      "seed": "kyllo-30"
-    },
-    {
-      "start": 111.2,
-      "dur": 3.8,
-      "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-31"
-    },
-    {
-      "start": 115.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "push",
-      "seed": "kyllo-32"
-    },
-    {
-      "start": 118.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "card",
-      "seed": "kyllo-33"
-    },
-    {
-      "start": 122.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "push",
-      "seed": "kyllo-34"
-    },
-    {
-      "start": 126.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "card",
-      "seed": "kyllo-35"
-    },
-    {
-      "start": 129.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "push",
-      "seed": "kyllo-36"
-    },
-    {
-      "start": 133.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "card",
-      "seed": "kyllo-37"
-    },
-    {
-      "start": 136.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "push",
-      "seed": "kyllo-38"
-    },
-    {
-      "start": 140.4,
+      "start": 103.0,
       "dur": 3.6,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-39"
+      "src": "kyllo/factory/AF-BG-1196__circuit_board_macro.mp4",
+      "seed": "kyllo-31",
+      "treatment": "factory"
     },
     {
-      "start": 144.0,
+      "start": 106.6,
       "dur": 3.2,
       "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "push",
-      "seed": "kyllo-40"
+      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
+      "seed": "kyllo-32",
+      "treatment": "scan"
     },
     {
-      "start": 147.2,
-      "dur": 3.8,
+      "start": 109.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1197__circuit_board_macro.mp4",
+      "seed": "kyllo-33",
+      "treatment": "factory"
+    },
+    {
+      "start": 113.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-12140__padlock_and_chain.mp4",
+      "seed": "kyllo-34",
+      "treatment": "factory"
+    },
+    {
+      "start": 117.2,
+      "dur": 2.8,
       "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "card",
-      "seed": "kyllo-41"
+      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
+      "seed": "kyllo-35",
+      "treatment": "duotone"
     },
     {
-      "start": 151.0,
+      "start": 120.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-12141__padlock_and_chain.mp4",
+      "seed": "kyllo-36",
+      "treatment": "factory"
+    },
+    {
+      "start": 123.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "kyllo/img/COD-S010-courthouse-colonnade.png",
+      "seed": "kyllo-37",
+      "treatment": "focus"
+    },
+    {
+      "start": 126.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-13249__satellite_earth_at_night.mp4",
+      "seed": "kyllo-38",
+      "treatment": "factory"
+    },
+    {
+      "start": 129.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-13250__satellite_earth_at_night.mp4",
+      "seed": "kyllo-39",
+      "treatment": "factory"
+    },
+    {
+      "start": 133.8,
       "dur": 3.4,
       "kind": "img",
       "src": "kyllo/img/COD-S014-retreat-into-home.png",
-      "treatment": "push",
-      "seed": "kyllo-42"
+      "seed": "kyllo-40",
+      "treatment": "bleed"
     },
     {
-      "start": 154.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-43"
-    },
-    {
-      "start": 158.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-44"
-    },
-    {
-      "start": 162.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-45"
-    },
-    {
-      "start": 165.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-46"
-    },
-    {
-      "start": 169.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-47"
-    },
-    {
-      "start": 172.4,
-      "dur": 4.0,
+      "start": 137.2,
+      "dur": 2.8,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-48"
+      "src": "kyllo/factory/AF-BG-13400__drone_city_aerial_night.mp4",
+      "seed": "kyllo-41",
+      "treatment": "factory"
     },
     {
-      "start": 176.4,
-      "dur": 3.6,
+      "start": 140.0,
+      "dur": 3.0,
       "kind": "img",
       "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-49"
+      "seed": "kyllo-42",
+      "treatment": "duotone"
+    },
+    {
+      "start": 143.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-13401__drone_city_aerial_night.mp4",
+      "seed": "kyllo-43",
+      "treatment": "factory"
+    },
+    {
+      "start": 146.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1428__rain_on_window_night.mp4",
+      "seed": "kyllo-44",
+      "treatment": "factory"
+    },
+    {
+      "start": 149.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
+      "seed": "kyllo-45",
+      "treatment": "card"
+    },
+    {
+      "start": 153.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1429__rain_on_window_night.mp4",
+      "seed": "kyllo-46",
+      "treatment": "factory"
+    },
+    {
+      "start": 157.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "kyllo/img/COD-S011-five-four-division.png",
+      "seed": "kyllo-47",
+      "treatment": "scan"
+    },
+    {
+      "start": 160.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1508__city_skyline_dusk.mp4",
+      "seed": "kyllo-48",
+      "treatment": "factory"
+    },
+    {
+      "start": 163.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1509__city_skyline_dusk.mp4",
+      "seed": "kyllo-49",
+      "treatment": "factory"
+    },
+    {
+      "start": 166.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "kyllo/img/COD-S012-hand-on-opinion.png",
+      "seed": "kyllo-50",
+      "treatment": "focus"
+    },
+    {
+      "start": 169.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1587__highway_night_long_exposure.mp4",
+      "seed": "kyllo-51",
+      "treatment": "factory"
+    },
+    {
+      "start": 173.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "kyllo/img/COD-S013-modern-surveillance-tie.png",
+      "seed": "kyllo-52",
+      "treatment": "bleed"
+    },
+    {
+      "start": 177.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1588__highway_night_long_exposure.mp4",
+      "seed": "kyllo-53",
+      "treatment": "factory"
     },
     {
       "start": 180.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-50"
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-16347__capitol_dome_dusk.mp4",
+      "seed": "kyllo-54",
+      "treatment": "factory"
     },
     {
-      "start": 183.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-51"
-    },
-    {
-      "start": 187.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-52"
-    },
-    {
-      "start": 190.4,
-      "dur": 4.0,
+      "start": 183.0,
+      "dur": 3.6,
       "kind": "img",
       "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-53"
+      "seed": "kyllo-55",
+      "treatment": "duotone"
     },
     {
-      "start": 194.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-54"
-    },
-    {
-      "start": 198.0,
+      "start": 186.6,
       "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-55"
-    },
-    {
-      "start": 201.2,
-      "dur": 3.8,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-56"
+      "src": "kyllo/factory/AF-BG-16348__capitol_dome_dusk.mp4",
+      "seed": "kyllo-56",
+      "treatment": "factory"
     },
     {
-      "start": 205.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-57"
-    },
-    {
-      "start": 208.4,
+      "start": 189.8,
       "dur": 4.0,
       "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-58"
+      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
+      "seed": "kyllo-57",
+      "treatment": "scan"
     },
     {
-      "start": 212.4,
+      "start": 193.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1667__suburban_house_exterior_night.mp4",
+      "seed": "kyllo-58",
+      "treatment": "factory"
+    },
+    {
+      "start": 197.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17221__front_door_house.mp4",
+      "seed": "kyllo-59",
+      "treatment": "factory"
+    },
+    {
+      "start": 200.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
+      "seed": "kyllo-60",
+      "treatment": "bleed"
+    },
+    {
+      "start": 203.0,
       "dur": 3.6,
       "kind": "footage",
-      "src": "kyllo/footage/house_night.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-59"
+      "src": "kyllo/factory/AF-BG-17222__front_door_house.mp4",
+      "seed": "kyllo-61",
+      "treatment": "factory"
     },
     {
-      "start": 216.0,
+      "start": 206.6,
       "dur": 3.2,
       "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "push",
-      "seed": "kyllo-60"
+      "src": "kyllo/img/COD-S015-next-episode-phonebooth.png",
+      "seed": "kyllo-62",
+      "treatment": "scan"
     },
     {
-      "start": 219.2,
-      "dur": 3.8,
+      "start": 209.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17282__police_car_lights_night.mp4",
+      "seed": "kyllo-63",
+      "treatment": "factory"
+    },
+    {
+      "start": 213.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17928__courthouse_steps.mp4",
+      "seed": "kyllo-64",
+      "treatment": "factory"
+    },
+    {
+      "start": 217.2,
+      "dur": 2.8,
       "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "card",
-      "seed": "kyllo-61"
+      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
+      "seed": "kyllo-65",
+      "treatment": "duotone"
+    },
+    {
+      "start": 220.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17929__courthouse_steps.mp4",
+      "seed": "kyllo-66",
+      "treatment": "factory"
     },
     {
       "start": 223.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "push",
-      "seed": "kyllo-62"
-    },
-    {
-      "start": 226.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "card",
-      "seed": "kyllo-63"
-    },
-    {
-      "start": 230.4,
       "dur": 3.6,
       "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "push",
-      "seed": "kyllo-64"
+      "src": "kyllo/img/COD-S019-heat-reveals-presence.png",
+      "seed": "kyllo-67",
+      "treatment": "focus"
     },
     {
-      "start": 234.0,
+      "start": 226.6,
       "dur": 3.2,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-65"
+      "src": "kyllo/factory/AF-BG-17958__judge_gavel_wooden.mp4",
+      "seed": "kyllo-68",
+      "treatment": "factory"
+    },
+    {
+      "start": 229.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17959__judge_gavel_wooden.mp4",
+      "seed": "kyllo-69",
+      "treatment": "factory"
+    },
+    {
+      "start": 233.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
+      "seed": "kyllo-70",
+      "treatment": "bleed"
     },
     {
       "start": 237.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "push",
-      "seed": "kyllo-66"
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17987__surveillance_camera_city.mp4",
+      "seed": "kyllo-71",
+      "treatment": "factory"
     },
     {
-      "start": 241.0,
-      "dur": 3.4,
+      "start": 240.0,
+      "dur": 3.0,
       "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "card",
-      "seed": "kyllo-67"
+      "src": "kyllo/img/COD-S020-scanline-facade.png",
+      "seed": "kyllo-72",
+      "treatment": "duotone"
     },
     {
-      "start": 244.4,
+      "start": 243.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17988__surveillance_camera_city.mp4",
+      "seed": "kyllo-73",
+      "treatment": "factory"
+    },
+    {
+      "start": 246.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-18060__supreme_court_building.mp4",
+      "seed": "kyllo-74",
+      "treatment": "factory"
+    },
+    {
+      "start": 249.8,
       "dur": 4.0,
       "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "push",
-      "seed": "kyllo-68"
+      "src": "kyllo/img/COD-S021-property-line-aerial.png",
+      "seed": "kyllo-75",
+      "treatment": "card"
     },
     {
-      "start": 248.4,
-      "dur": 3.6,
+      "start": 253.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-18061__supreme_court_building.mp4",
+      "seed": "kyllo-76",
+      "treatment": "factory"
+    },
+    {
+      "start": 257.2,
+      "dur": 2.8,
       "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "card",
-      "seed": "kyllo-69"
+      "src": "kyllo/img/COD-S022-curtain-backlit-heat.png",
+      "seed": "kyllo-77",
+      "treatment": "scan"
     },
     {
-      "start": 252.0,
+      "start": 260.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-18570__fingerprint_scan_blue.mp4",
+      "seed": "kyllo-78",
+      "treatment": "factory"
+    },
+    {
+      "start": 263.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-18571__fingerprint_scan_blue.mp4",
+      "seed": "kyllo-79",
+      "treatment": "factory"
+    },
+    {
+      "start": 266.6,
       "dur": 3.2,
       "kind": "img",
       "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "push",
-      "seed": "kyllo-70"
+      "seed": "kyllo-80",
+      "treatment": "focus"
     },
     {
-      "start": 255.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S008-threshold-doorway.png",
-      "treatment": "card",
-      "seed": "kyllo-71"
+      "start": 269.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-18844__storm_clouds_dramatic.mp4",
+      "seed": "kyllo-81",
+      "treatment": "factory"
     },
     {
-      "start": 259.0,
+      "start": 273.8,
       "dur": 3.4,
       "kind": "img",
       "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-72"
+      "seed": "kyllo-82",
+      "treatment": "bleed"
     },
     {
-      "start": 262.4,
-      "dur": 4.0,
+      "start": 277.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-18845__storm_clouds_dramatic.mp4",
+      "seed": "kyllo-83",
+      "treatment": "factory"
+    },
+    {
+      "start": 280.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1899__police_car_lights_night.mp4",
+      "seed": "kyllo-84",
+      "treatment": "factory"
+    },
+    {
+      "start": 283.0,
+      "dur": 3.6,
       "kind": "img",
       "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-73"
+      "seed": "kyllo-85",
+      "treatment": "duotone"
     },
     {
-      "start": 266.4,
-      "dur": 3.6,
-      "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-74"
-    },
-    {
-      "start": 270.0,
+      "start": 286.6,
       "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-21733__cctv_monitor_grid_wall.mp4",
+      "seed": "kyllo-86",
+      "treatment": "factory"
+    },
+    {
+      "start": 289.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "kyllo/img/COD-S023-deadbolt-closeup.png",
+      "seed": "kyllo-87",
+      "treatment": "scan"
+    },
+    {
+      "start": 293.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-21734__cctv_monitor_grid_wall.mp4",
+      "seed": "kyllo-88",
+      "treatment": "factory"
+    },
+    {
+      "start": 297.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-27507__voting_booth_curtain.mp4",
+      "seed": "kyllo-89",
+      "treatment": "factory"
+    },
+    {
+      "start": 300.0,
+      "dur": 3.0,
       "kind": "img",
       "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-75"
+      "seed": "kyllo-90",
+      "treatment": "bleed"
     },
     {
-      "start": 273.2,
-      "dur": 3.8,
+      "start": 303.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-27508__voting_booth_curtain.mp4",
+      "seed": "kyllo-91",
+      "treatment": "factory"
+    },
+    {
+      "start": 306.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "kyllo/img/COD-S024-courtroom-interior.png",
+      "seed": "kyllo-92",
+      "treatment": "scan"
+    },
+    {
+      "start": 309.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-28102__desert_highway_heat_haze.mp4",
+      "seed": "kyllo-93",
+      "treatment": "factory"
+    },
+    {
+      "start": 313.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-28103__desert_highway_heat_haze.mp4",
+      "seed": "kyllo-94",
+      "treatment": "factory"
+    },
+    {
+      "start": 317.2,
+      "dur": 2.8,
       "kind": "img",
       "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-76"
+      "seed": "kyllo-95",
+      "treatment": "duotone"
     },
     {
-      "start": 277.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-77"
-    },
-    {
-      "start": 280.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-78"
-    },
-    {
-      "start": 284.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-79"
-    },
-    {
-      "start": 288.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-80"
-    },
-    {
-      "start": 291.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-81"
-    },
-    {
-      "start": 295.0,
-      "dur": 3.4,
+      "start": 320.0,
+      "dur": 3.0,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-82"
+      "src": "kyllo/factory/AF-BG-51080__key_turning_in_lock.mp4",
+      "seed": "kyllo-96",
+      "treatment": "factory"
     },
     {
-      "start": 298.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-83"
-    },
-    {
-      "start": 302.4,
+      "start": 323.0,
       "dur": 3.6,
       "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-84"
+      "src": "kyllo/img/COD-S025-majority-dissent-books.png",
+      "seed": "kyllo-97",
+      "treatment": "focus"
     },
     {
-      "start": 306.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-85"
-    },
-    {
-      "start": 309.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-86"
-    },
-    {
-      "start": 313.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-87"
-    },
-    {
-      "start": 316.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-88"
-    },
-    {
-      "start": 320.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-89"
-    },
-    {
-      "start": 324.0,
+      "start": 326.6,
       "dur": 3.2,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-90"
+      "src": "kyllo/factory/AF-BG-51081__key_turning_in_lock.mp4",
+      "seed": "kyllo-98",
+      "treatment": "factory"
     },
     {
-      "start": 327.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-91"
-    },
-    {
-      "start": 331.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-92"
-    },
-    {
-      "start": 334.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-93"
-    },
-    {
-      "start": 338.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-94"
-    },
-    {
-      "start": 342.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-95"
-    },
-    {
-      "start": 345.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-96"
-    },
-    {
-      "start": 349.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-97"
-    },
-    {
-      "start": 352.4,
+      "start": 329.8,
       "dur": 4.0,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-98"
+      "src": "kyllo/factory/AF-BG-63059__old_ledger_book.mp4",
+      "seed": "kyllo-99",
+      "treatment": "factory"
     },
     {
-      "start": 356.4,
-      "dur": 3.6,
+      "start": 333.8,
+      "dur": 3.4,
       "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-99"
+      "src": "kyllo/img/COD-S026-scales-privacy-power.png",
+      "seed": "kyllo-100",
+      "treatment": "bleed"
+    },
+    {
+      "start": 337.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-63060__old_ledger_book.mp4",
+      "seed": "kyllo-101",
+      "treatment": "factory"
+    },
+    {
+      "start": 340.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "kyllo/img/COD-S027-drone-thermal-neighborhood.png",
+      "seed": "kyllo-102",
+      "treatment": "duotone"
+    },
+    {
+      "start": 343.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0365__blurred_city_night_bokeh.mp4",
+      "seed": "kyllo-103",
+      "treatment": "factory"
+    },
+    {
+      "start": 346.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0366__blurred_city_night_bokeh.mp4",
+      "seed": "kyllo-104",
+      "treatment": "factory"
+    },
+    {
+      "start": 349.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "kyllo/img/COD-S003-street-1992-cold.png",
+      "seed": "kyllo-105",
+      "treatment": "card"
+    },
+    {
+      "start": 353.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0510__courtroom_interior.mp4",
+      "seed": "kyllo-106",
+      "treatment": "factory"
+    },
+    {
+      "start": 357.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
+      "seed": "kyllo-107",
+      "treatment": "scan"
     },
     {
       "start": 360.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-100"
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0511__courtroom_interior.mp4",
+      "seed": "kyllo-108",
+      "treatment": "factory"
     },
     {
-      "start": 363.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-101"
-    },
-    {
-      "start": 367.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-102"
-    },
-    {
-      "start": 370.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-103"
-    },
-    {
-      "start": 374.4,
+      "start": 363.0,
       "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-104"
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0745__american_flag_waving.mp4",
+      "seed": "kyllo-109",
+      "treatment": "factory"
     },
     {
-      "start": 378.0,
+      "start": 366.6,
       "dur": 3.2,
       "kind": "img",
       "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-105"
+      "seed": "kyllo-110",
+      "treatment": "focus"
     },
     {
-      "start": 381.2,
-      "dur": 3.8,
+      "start": 369.8,
+      "dur": 4.0,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-106"
+      "src": "kyllo/factory/AF-BG-0746__american_flag_waving.mp4",
+      "seed": "kyllo-111",
+      "treatment": "factory"
     },
     {
-      "start": 385.0,
+      "start": 373.8,
       "dur": 3.4,
       "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-107"
+      "src": "kyllo/img/COD-S028-sensor-wall-glint.png",
+      "seed": "kyllo-112",
+      "treatment": "bleed"
     },
     {
-      "start": 388.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-108"
+      "start": 377.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0979__server_room_blue.mp4",
+      "seed": "kyllo-113",
+      "treatment": "factory"
     },
     {
-      "start": 392.4,
+      "start": 380.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-0980__server_room_blue.mp4",
+      "seed": "kyllo-114",
+      "treatment": "factory"
+    },
+    {
+      "start": 383.0,
       "dur": 3.6,
       "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-109"
+      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
+      "seed": "kyllo-115",
+      "treatment": "duotone"
     },
     {
-      "start": 396.0,
+      "start": 386.6,
       "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-110"
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10137__old_library_archive.mp4",
+      "seed": "kyllo-116",
+      "treatment": "factory"
     },
     {
-      "start": 399.2,
-      "dur": 3.8,
+      "start": 389.8,
+      "dur": 4.0,
       "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-111"
+      "src": "kyllo/img/COD-S029-phone-nightstand-privacy.png",
+      "seed": "kyllo-117",
+      "treatment": "scan"
+    },
+    {
+      "start": 393.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10138__old_library_archive.mp4",
+      "seed": "kyllo-118",
+      "treatment": "factory"
+    },
+    {
+      "start": 397.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10218__stacked_legal_documents.mp4",
+      "seed": "kyllo-119",
+      "treatment": "factory"
+    },
+    {
+      "start": 400.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
+      "seed": "kyllo-120",
+      "treatment": "bleed"
     },
     {
       "start": 403.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-112"
-    },
-    {
-      "start": 406.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-113"
-    },
-    {
-      "start": 410.4,
       "dur": 3.6,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-114"
+      "src": "kyllo/factory/AF-BG-10219__stacked_legal_documents.mp4",
+      "seed": "kyllo-121",
+      "treatment": "factory"
     },
     {
-      "start": 414.0,
+      "start": 406.6,
       "dur": 3.2,
       "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-115"
+      "src": "kyllo/img/COD-S001-thermal-house-reveal.png",
+      "seed": "kyllo-122",
+      "treatment": "scan"
+    },
+    {
+      "start": 409.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10313__newspaper_printing_press.mp4",
+      "seed": "kyllo-123",
+      "treatment": "factory"
+    },
+    {
+      "start": 413.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10314__newspaper_printing_press.mp4",
+      "seed": "kyllo-124",
+      "treatment": "factory"
     },
     {
       "start": 417.2,
-      "dur": 3.8,
+      "dur": 2.8,
       "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-116"
+      "src": "kyllo/img/COD-S002-your-home-night.png",
+      "seed": "kyllo-125",
+      "treatment": "duotone"
     },
     {
-      "start": 421.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-117"
+      "start": 420.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1042__data_center.mp4",
+      "seed": "kyllo-126",
+      "treatment": "factory"
     },
     {
-      "start": 424.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-118"
-    },
-    {
-      "start": 428.4,
+      "start": 423.0,
       "dur": 3.6,
       "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-119"
+      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
+      "seed": "kyllo-127",
+      "treatment": "focus"
     },
     {
-      "start": 432.0,
+      "start": 426.6,
       "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1043__data_center.mp4",
+      "seed": "kyllo-128",
+      "treatment": "factory"
+    },
+    {
+      "start": 429.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10712__snowy_street_night.mp4",
+      "seed": "kyllo-129",
+      "treatment": "factory"
+    },
+    {
+      "start": 433.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "kyllo/img/COD-S003-street-1992-cold.png",
+      "seed": "kyllo-130",
+      "treatment": "bleed"
+    },
+    {
+      "start": 437.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-10713__snowy_street_night.mp4",
+      "seed": "kyllo-131",
+      "treatment": "factory"
+    },
+    {
+      "start": 440.0,
+      "dur": 3.0,
       "kind": "img",
       "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-120"
+      "seed": "kyllo-132",
+      "treatment": "duotone"
     },
     {
-      "start": 435.2,
-      "dur": 3.8,
+      "start": 443.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1196__circuit_board_macro.mp4",
+      "seed": "kyllo-133",
+      "treatment": "factory"
+    },
+    {
+      "start": 446.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1197__circuit_board_macro.mp4",
+      "seed": "kyllo-134",
+      "treatment": "factory"
+    },
+    {
+      "start": 449.8,
+      "dur": 4.0,
       "kind": "img",
       "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-121"
+      "seed": "kyllo-135",
+      "treatment": "card"
     },
     {
-      "start": 439.0,
+      "start": 453.8,
       "dur": 3.4,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-122"
+      "src": "kyllo/factory/AF-BG-12140__padlock_and_chain.mp4",
+      "seed": "kyllo-136",
+      "treatment": "factory"
     },
     {
-      "start": 442.4,
-      "dur": 4.0,
+      "start": 457.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "kyllo/img/COD-S017-frosted-window-glow.png",
+      "seed": "kyllo-137",
+      "treatment": "scan"
+    },
+    {
+      "start": 460.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-12141__padlock_and_chain.mp4",
+      "seed": "kyllo-138",
+      "treatment": "factory"
+    },
+    {
+      "start": 463.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-13249__satellite_earth_at_night.mp4",
+      "seed": "kyllo-139",
+      "treatment": "factory"
+    },
+    {
+      "start": 466.6,
+      "dur": 3.2,
       "kind": "img",
       "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-123"
+      "seed": "kyllo-140",
+      "treatment": "focus"
     },
     {
-      "start": 446.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-124"
-    },
-    {
-      "start": 450.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-125"
-    },
-    {
-      "start": 453.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-126"
-    },
-    {
-      "start": 457.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-127"
-    },
-    {
-      "start": 460.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-128"
-    },
-    {
-      "start": 464.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-129"
-    },
-    {
-      "start": 468.0,
-      "dur": 3.2,
-      "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-130"
-    },
-    {
-      "start": 471.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-131"
-    },
-    {
-      "start": 475.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-132"
-    },
-    {
-      "start": 478.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-133"
-    },
-    {
-      "start": 482.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-134"
-    },
-    {
-      "start": 486.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-135"
-    },
-    {
-      "start": 489.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-136"
-    },
-    {
-      "start": 493.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-137"
-    },
-    {
-      "start": 496.4,
+      "start": 469.8,
       "dur": 4.0,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-138"
+      "src": "kyllo/factory/AF-BG-13250__satellite_earth_at_night.mp4",
+      "seed": "kyllo-141",
+      "treatment": "factory"
     },
     {
-      "start": 500.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S006-thermal-scan-house.png",
-      "treatment": "card",
-      "seed": "kyllo-139"
-    },
-    {
-      "start": 504.0,
-      "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
-      "treatment": "push",
-      "seed": "kyllo-140"
-    },
-    {
-      "start": 507.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S016-winter-suburb-aerial.png",
-      "treatment": "card",
-      "seed": "kyllo-141"
-    },
-    {
-      "start": 511.0,
+      "start": 473.8,
       "dur": 3.4,
       "kind": "img",
       "src": "kyllo/img/COD-S007-heat-leak-wall.png",
-      "treatment": "push",
-      "seed": "kyllo-142"
+      "seed": "kyllo-142",
+      "treatment": "bleed"
     },
     {
-      "start": 514.4,
+      "start": 477.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-13400__drone_city_aerial_night.mp4",
+      "seed": "kyllo-143",
+      "treatment": "factory"
+    },
+    {
+      "start": 480.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-13401__drone_city_aerial_night.mp4",
+      "seed": "kyllo-144",
+      "treatment": "factory"
+    },
+    {
+      "start": 483.0,
+      "dur": 3.6,
+      "kind": "img",
+      "src": "kyllo/img/COD-S018-thermal-through-windshield.png",
+      "seed": "kyllo-145",
+      "treatment": "duotone"
+    },
+    {
+      "start": 486.6,
+      "dur": 3.2,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1428__rain_on_window_night.mp4",
+      "seed": "kyllo-146",
+      "treatment": "factory"
+    },
+    {
+      "start": 489.8,
       "dur": 4.0,
       "kind": "img",
-      "src": "kyllo/img/COD-S003-street-1992-cold.png",
-      "treatment": "card",
-      "seed": "kyllo-143"
+      "src": "kyllo/img/COD-S008-threshold-doorway.png",
+      "seed": "kyllo-147",
+      "treatment": "scan"
     },
     {
-      "start": 518.4,
+      "start": 493.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1429__rain_on_window_night.mp4",
+      "seed": "kyllo-148",
+      "treatment": "factory"
+    },
+    {
+      "start": 497.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1508__city_skyline_dusk.mp4",
+      "seed": "kyllo-149",
+      "treatment": "factory"
+    },
+    {
+      "start": 500.0,
+      "dur": 3.0,
+      "kind": "img",
+      "src": "kyllo/img/COD-S009-warrant-absence.png",
+      "seed": "kyllo-150",
+      "treatment": "bleed"
+    },
+    {
+      "start": 503.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1509__city_skyline_dusk.mp4",
+      "seed": "kyllo-151",
+      "treatment": "factory"
+    },
+    {
+      "start": 506.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "kyllo/img/COD-S010-courthouse-colonnade.png",
+      "seed": "kyllo-152",
+      "treatment": "scan"
+    },
+    {
+      "start": 509.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1587__highway_night_long_exposure.mp4",
+      "seed": "kyllo-153",
+      "treatment": "factory"
+    },
+    {
+      "start": 513.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1588__highway_night_long_exposure.mp4",
+      "seed": "kyllo-154",
+      "treatment": "factory"
+    },
+    {
+      "start": 517.2,
+      "dur": 2.8,
+      "kind": "img",
+      "src": "kyllo/img/COD-S003-street-1992-cold.png",
+      "seed": "kyllo-155",
+      "treatment": "duotone"
+    },
+    {
+      "start": 520.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-16347__capitol_dome_dusk.mp4",
+      "seed": "kyllo-156",
+      "treatment": "factory"
+    },
+    {
+      "start": 523.0,
       "dur": 3.6,
       "kind": "img",
       "src": "kyllo/img/COD-S004-surveillance-car-pov.png",
-      "treatment": "push",
-      "seed": "kyllo-144"
+      "seed": "kyllo-157",
+      "treatment": "focus"
     },
     {
-      "start": 522.0,
+      "start": 526.6,
       "dur": 3.2,
-      "kind": "img",
-      "src": "kyllo/img/COD-S005-thermal-device-closeup.png",
-      "treatment": "card",
-      "seed": "kyllo-145"
-    },
-    {
-      "start": 525.2,
-      "dur": 3.8,
       "kind": "footage",
-      "src": "kyllo/footage/surveillance.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-146"
+      "src": "kyllo/factory/AF-BG-16348__capitol_dome_dusk.mp4",
+      "seed": "kyllo-158",
+      "treatment": "factory"
     },
     {
-      "start": 529.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S001-thermal-house-reveal.png",
-      "treatment": "card",
-      "seed": "kyllo-147"
-    },
-    {
-      "start": 532.4,
+      "start": 529.8,
       "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S015-next-episode-phonebooth.png",
-      "treatment": "push",
-      "seed": "kyllo-148"
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-1667__suburban_house_exterior_night.mp4",
+      "seed": "kyllo-159",
+      "treatment": "factory"
     },
     {
-      "start": 536.4,
-      "dur": 3.6,
+      "start": 533.8,
+      "dur": 3.4,
       "kind": "img",
       "src": "kyllo/img/COD-S014-retreat-into-home.png",
-      "treatment": "card",
-      "seed": "kyllo-149"
+      "seed": "kyllo-160",
+      "treatment": "bleed"
+    },
+    {
+      "start": 537.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17221__front_door_house.mp4",
+      "seed": "kyllo-161",
+      "treatment": "factory"
     },
     {
       "start": 540.0,
-      "dur": 3.2,
-      "kind": "footage",
-      "src": "kyllo/footage/house_night.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-150"
-    },
-    {
-      "start": 543.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S008-threshold-doorway.png",
-      "treatment": "card",
-      "seed": "kyllo-151"
-    },
-    {
-      "start": 547.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S001-thermal-house-reveal.png",
-      "treatment": "push",
-      "seed": "kyllo-152"
-    },
-    {
-      "start": 550.4,
-      "dur": 4.0,
+      "dur": 3.0,
       "kind": "img",
       "src": "kyllo/img/COD-S015-next-episode-phonebooth.png",
-      "treatment": "card",
-      "seed": "kyllo-153"
+      "seed": "kyllo-162",
+      "treatment": "duotone"
     },
     {
-      "start": 554.4,
+      "start": 543.0,
       "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S014-retreat-into-home.png",
-      "treatment": "push",
-      "seed": "kyllo-154"
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17222__front_door_house.mp4",
+      "seed": "kyllo-163",
+      "treatment": "factory"
     },
     {
-      "start": 558.0,
+      "start": 546.6,
       "dur": 3.2,
       "kind": "footage",
-      "src": "kyllo/footage/house_night.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-155"
+      "src": "kyllo/factory/AF-BG-17282__police_car_lights_night.mp4",
+      "seed": "kyllo-164",
+      "treatment": "factory"
     },
     {
-      "start": 561.2,
-      "dur": 3.8,
-      "kind": "img",
-      "src": "kyllo/img/COD-S008-threshold-doorway.png",
-      "treatment": "push",
-      "seed": "kyllo-156"
-    },
-    {
-      "start": 565.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S001-thermal-house-reveal.png",
-      "treatment": "card",
-      "seed": "kyllo-157"
-    },
-    {
-      "start": 568.4,
+      "start": 549.8,
       "dur": 4.0,
       "kind": "img",
-      "src": "kyllo/img/COD-S015-next-episode-phonebooth.png",
-      "treatment": "push",
-      "seed": "kyllo-158"
+      "src": "kyllo/img/COD-S011-five-four-division.png",
+      "seed": "kyllo-165",
+      "treatment": "card"
     },
     {
-      "start": 572.4,
-      "dur": 3.6,
-      "kind": "img",
-      "src": "kyllo/img/COD-S014-retreat-into-home.png",
-      "treatment": "card",
-      "seed": "kyllo-159"
-    },
-    {
-      "start": 576.0,
-      "dur": 3.2,
+      "start": 553.8,
+      "dur": 3.4,
       "kind": "footage",
-      "src": "kyllo/footage/house_night.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-160"
+      "src": "kyllo/factory/AF-BG-17928__courthouse_steps.mp4",
+      "seed": "kyllo-166",
+      "treatment": "factory"
     },
     {
-      "start": 579.2,
-      "dur": 3.8,
+      "start": 557.2,
+      "dur": 2.8,
       "kind": "img",
-      "src": "kyllo/img/COD-S008-threshold-doorway.png",
-      "treatment": "card",
-      "seed": "kyllo-161"
+      "src": "kyllo/img/COD-S012-hand-on-opinion.png",
+      "seed": "kyllo-167",
+      "treatment": "scan"
+    },
+    {
+      "start": 560.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17929__courthouse_steps.mp4",
+      "seed": "kyllo-168",
+      "treatment": "factory"
+    },
+    {
+      "start": 563.0,
+      "dur": 3.6,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17958__judge_gavel_wooden.mp4",
+      "seed": "kyllo-169",
+      "treatment": "factory"
+    },
+    {
+      "start": 566.6,
+      "dur": 3.2,
+      "kind": "img",
+      "src": "kyllo/img/COD-S013-modern-surveillance-tie.png",
+      "seed": "kyllo-170",
+      "treatment": "focus"
+    },
+    {
+      "start": 569.8,
+      "dur": 4.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17959__judge_gavel_wooden.mp4",
+      "seed": "kyllo-171",
+      "treatment": "factory"
+    },
+    {
+      "start": 573.8,
+      "dur": 3.4,
+      "kind": "img",
+      "src": "kyllo/img/COD-S019-heat-reveals-presence.png",
+      "seed": "kyllo-172",
+      "treatment": "bleed"
+    },
+    {
+      "start": 577.2,
+      "dur": 2.8,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17987__surveillance_camera_city.mp4",
+      "seed": "kyllo-173",
+      "treatment": "factory"
+    },
+    {
+      "start": 580.0,
+      "dur": 3.0,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-17988__surveillance_camera_city.mp4",
+      "seed": "kyllo-174",
+      "treatment": "factory"
     },
     {
       "start": 583.0,
-      "dur": 3.4,
-      "kind": "img",
-      "src": "kyllo/img/COD-S001-thermal-house-reveal.png",
-      "treatment": "push",
-      "seed": "kyllo-162"
-    },
-    {
-      "start": 586.4,
-      "dur": 4.0,
-      "kind": "img",
-      "src": "kyllo/img/COD-S015-next-episode-phonebooth.png",
-      "treatment": "card",
-      "seed": "kyllo-163"
-    },
-    {
-      "start": 590.4,
       "dur": 3.6,
       "kind": "img",
-      "src": "kyllo/img/COD-S014-retreat-into-home.png",
-      "treatment": "push",
-      "seed": "kyllo-164"
+      "src": "kyllo/img/COD-S020-scanline-facade.png",
+      "seed": "kyllo-175",
+      "treatment": "duotone"
     },
     {
-      "start": 594.0,
+      "start": 586.6,
       "dur": 3.2,
       "kind": "footage",
-      "src": "kyllo/footage/house_night.mp4",
-      "treatment": "footage",
-      "seed": "kyllo-165"
+      "src": "kyllo/factory/AF-BG-18060__supreme_court_building.mp4",
+      "seed": "kyllo-176",
+      "treatment": "factory"
+    },
+    {
+      "start": 589.8,
+      "dur": 4.0,
+      "kind": "img",
+      "src": "kyllo/img/COD-S021-property-line-aerial.png",
+      "seed": "kyllo-177",
+      "treatment": "scan"
+    },
+    {
+      "start": 593.8,
+      "dur": 3.4,
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-18061__supreme_court_building.mp4",
+      "seed": "kyllo-178",
+      "treatment": "factory"
     },
     {
       "start": 597.2,
       "dur": 2.496,
-      "kind": "img",
-      "src": "kyllo/img/COD-S008-threshold-doorway.png",
-      "treatment": "push",
-      "seed": "kyllo-166"
+      "kind": "footage",
+      "src": "kyllo/factory/AF-BG-18570__fingerprint_scan_blue.mp4",
+      "seed": "kyllo-179",
+      "treatment": "factory"
     }
   ],
   "captions": [
@@ -1349,7 +1499,7 @@
     },
     {
       "start": 2.26,
-      "end": 3.46,
+      "end": 3.99,
       "text": "a little after three in the morning."
     },
     {
@@ -1359,7 +1509,7 @@
     },
     {
       "start": 5.24,
-      "end": 6.18,
+      "end": 6.24,
       "text": "on a public street,"
     },
     {
@@ -1369,17 +1519,17 @@
     },
     {
       "start": 8.18,
-      "end": 8.64,
+      "end": 9.07,
       "text": "the road."
     },
     {
       "start": 9.1,
-      "end": 10.28,
+      "end": 10.574,
       "text": "He never knocks on the door."
     },
     {
       "start": 10.78,
-      "end": 12.06,
+      "end": 12.306,
       "text": "He never steps onto the lawn."
     },
     {
@@ -1394,7 +1544,7 @@
     },
     {
       "start": 15.24,
-      "end": 15.88,
+      "end": 16.14,
       "text": "it at the home,"
     },
     {
@@ -1404,7 +1554,7 @@
     },
     {
       "start": 17.72,
-      "end": 18.12,
+      "end": 18.62,
       "text": "the walls."
     },
     {
@@ -1424,13 +1574,8 @@
     },
     {
       "start": 24.492,
-      "end": 24.56,
-      "text": "No foot on the property."
-    },
-    {
-      "start": 25.22,
       "end": 26.92,
-      "text": "Just a machine, a wall,"
+      "text": "No foot on the property. Just a machine, a wall,"
     },
     {
       "start": 26.92,
@@ -1439,58 +1584,28 @@
     },
     {
       "start": 28.98,
-      "end": 29.44,
+      "end": 29.88,
       "text": "life."
     },
     {
       "start": 30.38,
-      "end": 31.92,
-      "text": "Nine years later, the Supreme Court had"
-    },
-    {
-      "start": 31.92,
-      "end": 33.8,
-      "text": "to answer one question about that quiet"
-    },
-    {
-      "start": 33.8,
-      "end": 34.18,
-      "text": "moment:"
+      "end": 34.7,
+      "text": "Nine years later, the Supreme Court had to answer one question about that quiet moment:"
     },
     {
       "start": 34.94,
-      "end": 35.56,
+      "end": 35.84,
       "text": "was it a search?"
     },
     {
       "start": 36.54,
-      "end": 37.66,
-      "text": "We treat the home as the one"
-    },
-    {
-      "start": 37.66,
-      "end": 39.32,
-      "text": "place the government cannot reach without"
-    },
-    {
-      "start": 39.32,
-      "end": 39.66,
-      "text": "a warrant."
+      "end": 40.22,
+      "text": "We treat the home as the one place the government cannot reach without a warrant."
     },
     {
       "start": 40.34,
-      "end": 41.12,
-      "text": "Your walls are supposed"
-    },
-    {
-      "start": 41.12,
-      "end": 42.6,
-      "text": "to be the edge of your private"
-    },
-    {
-      "start": 42.6,
-      "end": 43.0,
-      "text": "world."
+      "end": 43.45,
+      "text": "Your walls are supposed to be the edge of your private world."
     },
     {
       "start": 43.48,
@@ -1534,13 +1649,8 @@
     },
     {
       "start": 58.941,
-      "end": 59.58,
-      "text": "Over the next twelve minutes:"
-    },
-    {
-      "start": 60.1,
       "end": 61.96,
-      "text": "the freezing night that started it,"
+      "text": "Over the next twelve minutes: the freezing night that started it,"
     },
     {
       "start": 62.28,
@@ -1554,13 +1664,8 @@
     },
     {
       "start": 66.9,
-      "end": 68.16,
-      "text": "at the front door of every home"
-    },
-    {
-      "start": 68.16,
       "end": 69.234,
-      "text": "in America."
+      "text": "at the front door of every home in America."
     },
     {
       "start": 69.32,
@@ -1574,7 +1679,7 @@
     },
     {
       "start": 72.999,
-      "end": 74.22,
+      "end": 74.262,
       "text": "part of a small triplex,"
     },
     {
@@ -1589,32 +1694,22 @@
     },
     {
       "start": 79.16,
-      "end": 79.8,
+      "end": 80.06,
       "text": "in one of them."
     },
     {
       "start": 80.88,
-      "end": 82.28,
-      "text": "Federal agents had come to suspect"
-    },
-    {
-      "start": 82.28,
-      "end": 83.96,
-      "text": "that he was growing marijuana inside,"
-    },
-    {
-      "start": 83.96,
       "end": 85.72,
-      "text": "under lights."
+      "text": "Federal agents had come to suspect that he was growing marijuana inside, under lights."
     },
     {
       "start": 86.24,
-      "end": 87.976,
+      "end": 88.293,
       "text": "Growing marijuana indoors takes light —"
     },
     {
       "start": 88.44,
-      "end": 89.36,
+      "end": 89.44,
       "text": "a great deal of it."
     },
     {
@@ -1639,7 +1734,7 @@
     },
     {
       "start": 96.442,
-      "end": 97.62,
+      "end": 97.758,
       "text": "And heat is hard to hide."
     },
     {
@@ -1684,7 +1779,7 @@
     },
     {
       "start": 111.5,
-      "end": 113.44,
+      "end": 113.605,
       "text": "the street with a thermal imaging device"
     },
     {
@@ -1699,17 +1794,12 @@
     },
     {
       "start": 117.066,
-      "end": 118.74,
-      "text": "A thermal imager does not see through"
-    },
-    {
-      "start": 118.74,
-      "end": 119.08,
-      "text": "walls."
+      "end": 119.57,
+      "text": "A thermal imager does not see through walls."
     },
     {
       "start": 119.6,
-      "end": 120.46,
+      "end": 120.5,
       "text": "It sees heat."
     },
     {
@@ -1744,13 +1834,8 @@
     },
     {
       "start": 133.94,
-      "end": 135.38,
-      "text": "The scan took only a few minutes,"
-    },
-    {
-      "start": 135.38,
-      "end": 136.74,
-      "text": "and the picture told a story."
+      "end": 136.906,
+      "text": "The scan took only a few minutes, and the picture told a story."
     },
     {
       "start": 137.44,
@@ -1764,52 +1849,37 @@
     },
     {
       "start": 141.1,
-      "end": 142.4,
+      "end": 142.83,
       "text": "hotter than the rest of the house,"
     },
     {
       "start": 142.86,
-      "end": 144.76,
-      "text": "and hotter than the neighboring units under"
-    },
-    {
-      "start": 144.76,
       "end": 147.127,
-      "text": "the same roof."
+      "text": "and hotter than the neighboring units under the same roof."
     },
     {
       "start": 147.128,
-      "end": 148.08,
-      "text": "To Elliott, that pattern meant one thing:"
-    },
-    {
-      "start": 148.52,
       "end": 150.884,
-      "text": "powerful grow lamps, running inside."
+      "text": "To Elliott, that pattern meant one thing: powerful grow lamps, running inside."
     },
     {
       "start": 151.06,
-      "end": 151.82,
+      "end": 151.96,
       "text": "He never went in."
     },
     {
       "start": 152.34,
-      "end": 153.36,
+      "end": 153.708,
       "text": "He never crossed the yard."
     },
     {
       "start": 153.92,
-      "end": 155.3,
-      "text": "He read the outside of the house,"
-    },
-    {
-      "start": 155.3,
       "end": 156.8,
-      "text": "in the dark, and drew a firm"
+      "text": "He read the outside of the house, in the dark, and drew a firm"
     },
     {
       "start": 156.8,
-      "end": 158.2,
+      "end": 158.274,
       "text": "conclusion about the inside."
     },
     {
@@ -1834,7 +1904,7 @@
     },
     {
       "start": 167.48,
-      "end": 168.96,
+      "end": 169.164,
       "text": "a judge to sign a search warrant"
     },
     {
@@ -1844,12 +1914,12 @@
     },
     {
       "start": 169.669,
-      "end": 171.1,
+      "end": 171.354,
       "text": "When agents finally went inside,"
     },
     {
       "start": 171.62,
-      "end": 172.7,
+      "end": 173.15,
       "text": "they found what they expected:"
     },
     {
@@ -1864,18 +1934,13 @@
     },
     {
       "start": 177.6,
-      "end": 179.5,
+      "end": 180.05,
       "text": "Kyllo was charged with manufacturing marijuana."
     },
     {
       "start": 180.08,
-      "end": 181.18,
-      "text": "He asked the court to throw"
-    },
-    {
-      "start": 181.18,
       "end": 183.2,
-      "text": "the evidence out, arguing that the thermal"
+      "text": "He asked the court to throw the evidence out, arguing that the thermal"
     },
     {
       "start": 183.2,
@@ -1884,12 +1949,12 @@
     },
     {
       "start": 185.48,
-      "end": 186.04,
+      "end": 186.38,
       "text": "of his home."
     },
     {
       "start": 186.6,
-      "end": 188.27,
+      "end": 188.547,
       "text": "When that failed, he pleaded guilty —"
     },
     {
@@ -1909,7 +1974,7 @@
     },
     {
       "start": 195.0,
-      "end": 196.92,
+      "end": 197.105,
       "text": "Think about what the agent actually did."
     },
     {
@@ -1924,27 +1989,17 @@
     },
     {
       "start": 201.12,
-      "end": 202.56,
-      "text": "He aimed a device at the outside"
-    },
-    {
-      "start": 202.56,
-      "end": 203.1,
-      "text": "of a house."
+      "end": 203.46,
+      "text": "He aimed a device at the outside of a house."
     },
     {
       "start": 203.64,
-      "end": 205.44,
-      "text": "He measured heat that was already leaking"
-    },
-    {
-      "start": 205.44,
       "end": 206.78,
-      "text": "out into the open air."
+      "text": "He measured heat that was already leaking out into the open air."
     },
     {
       "start": 207.44,
-      "end": 208.56,
+      "end": 208.808,
       "text": "He never touched the home,"
     },
     {
@@ -1964,17 +2019,17 @@
     },
     {
       "start": 213.6,
-      "end": 215.22,
+      "end": 215.389,
       "text": "that looked like no search at all."
     },
     {
       "start": 215.74,
-      "end": 216.86,
+      "end": 217.003,
       "text": "For most of its history,"
     },
     {
       "start": 217.18,
-      "end": 219.46,
+      "end": 219.706,
       "text": "the Fourth Amendment was about physical trespass"
     },
     {
@@ -1984,17 +2039,12 @@
     },
     {
       "start": 220.802,
-      "end": 221.7,
-      "text": "an officer breaking in,"
-    },
-    {
-      "start": 221.86,
-      "end": 223.16,
-      "text": "going through your drawers,"
+      "end": 223.281,
+      "text": "an officer breaking in, going through your drawers,"
     },
     {
       "start": 223.58,
-      "end": 224.62,
+      "end": 224.948,
       "text": "carrying your things away."
     },
     {
@@ -2004,22 +2054,17 @@
     },
     {
       "start": 227.12,
-      "end": 228.76,
-      "text": "He simply gathered heat that the house"
-    },
-    {
-      "start": 228.76,
       "end": 230.42,
-      "text": "was giving off on its own."
+      "text": "He simply gathered heat that the house was giving off on its own."
     },
     {
       "start": 231.0,
-      "end": 232.18,
+      "end": 232.316,
       "text": "But push a little harder,"
     },
     {
       "start": 232.52,
-      "end": 234.3,
+      "end": 234.467,
       "text": "and it starts to feel very different."
     },
     {
@@ -2044,7 +2089,7 @@
     },
     {
       "start": 241.48,
-      "end": 242.86,
+      "end": 243.269,
       "text": "with his own eyes from the street."
     },
     {
@@ -2059,53 +2104,33 @@
     },
     {
       "start": 246.52,
-      "end": 248.42,
+      "end": 248.467,
       "text": "the Constitution guards most closely."
     },
     {
       "start": 249.04,
-      "end": 250.62,
+      "end": 250.987,
       "text": "If the government can do that freely,"
     },
     {
       "start": 251.02,
-      "end": 252.26,
-      "text": "then the wall around your home"
-    },
-    {
-      "start": 252.26,
-      "end": 253.66,
-      "text": "is only as private as the next"
-    },
-    {
-      "start": 253.66,
       "end": 255.247,
-      "text": "new sensor allows."
+      "text": "then the wall around your home is only as private as the next new sensor allows."
     },
     {
       "start": 255.62,
-      "end": 256.24,
+      "end": 256.52,
       "text": "So which is it?"
     },
     {
       "start": 256.66,
-      "end": 257.82,
-      "text": "A harmless reading of heat"
-    },
-    {
-      "start": 257.82,
       "end": 259.202,
-      "text": "in the open air —"
+      "text": "A harmless reading of heat in the open air —"
     },
     {
       "start": 259.203,
-      "end": 260.2,
-      "text": "or a search of your home"
-    },
-    {
-      "start": 260.2,
-      "end": 260.9,
-      "text": "by another name?"
+      "end": 261.1,
+      "text": "or a search of your home by another name?"
     },
     {
       "start": 261.58,
@@ -2114,7 +2139,7 @@
     },
     {
       "start": 263.4,
-      "end": 264.62,
+      "end": 265.15,
       "text": "the Supreme Court gave its answer,"
     },
     {
@@ -2139,7 +2164,7 @@
     },
     {
       "start": 273.22,
-      "end": 275.6,
+      "end": 275.799,
       "text": "not follow the usual conservative-liberal script;"
     },
     {
@@ -2149,27 +2174,22 @@
     },
     {
       "start": 278.22,
-      "end": 278.822,
+      "end": 279.12,
       "text": "on the same side."
     },
     {
       "start": 279.62,
-      "end": 281.18,
+      "end": 281.252,
       "text": "This was not ordinary politics."
     },
     {
       "start": 281.55,
-      "end": 282.86,
-      "text": "It was a fight about the meaning"
-    },
-    {
-      "start": 282.86,
-      "end": 283.38,
-      "text": "of the home."
+      "end": 283.76,
+      "text": "It was a fight about the meaning of the home."
     },
     {
       "start": 284.52,
-      "end": 285.82,
+      "end": 286.362,
       "text": "Scalia began with first principles."
     },
     {
@@ -2204,7 +2224,7 @@
     },
     {
       "start": 299.46,
-      "end": 300.58,
+      "end": 300.723,
       "text": "the police might search."
     },
     {
@@ -2214,7 +2234,7 @@
     },
     {
       "start": 302.48,
-      "end": 303.48,
+      "end": 303.69,
       "text": "And the Fourth Amendment,"
     },
     {
@@ -2239,13 +2259,8 @@
     },
     {
       "start": 311.6,
-      "end": 312.84,
-      "text": "Then came the rule that made"
-    },
-    {
-      "start": 312.84,
-      "end": 313.64,
-      "text": "the case famous."
+      "end": 313.74,
+      "text": "Then came the rule that made the case famous."
     },
     {
       "start": 314.48,
@@ -2279,22 +2294,17 @@
     },
     {
       "start": 325.779,
-      "end": 326.4,
-      "text": "And a search of a home,"
-    },
-    {
-      "start": 326.4,
       "end": 329.36,
-      "text": "without a warrant, is presumptively unreasonable"
+      "text": "And a search of a home, without a warrant, is presumptively unreasonable"
     },
     {
       "start": 329.747,
-      "end": 330.047,
+      "end": 330.35,
       "text": "."
     },
     {
       "start": 330.38,
-      "end": 331.88,
+      "end": 332.222,
       "text": "Notice how carefully that is built."
     },
     {
@@ -2319,13 +2329,8 @@
     },
     {
       "start": 340.74,
-      "end": 341.8,
-      "text": "Scalia's worry looked forward,"
-    },
-    {
-      "start": 342.12,
-      "end": 342.78,
-      "text": "not back."
+      "end": 343.02,
+      "text": "Scalia's worry looked forward, not back."
     },
     {
       "start": 343.5,
@@ -2344,13 +2349,8 @@
     },
     {
       "start": 349.46,
-      "end": 350.78,
-      "text": "a little every time a better machine"
-    },
-    {
-      "start": 350.78,
-      "end": 351.28,
-      "text": "came along."
+      "end": 351.68,
+      "text": "a little every time a better machine came along."
     },
     {
       "start": 351.74,
@@ -2359,7 +2359,7 @@
     },
     {
       "start": 352.98,
-      "end": 353.78,
+      "end": 353.98,
       "text": "at the wall itself:"
     },
     {
@@ -2374,12 +2374,12 @@
     },
     {
       "start": 358.68,
-      "end": 360.34,
+      "end": 360.417,
       "text": "with a special device is a search"
     },
     {
       "start": 360.575,
-      "end": 360.875,
+      "end": 361.09,
       "text": "—"
     },
     {
@@ -2394,7 +2394,7 @@
     },
     {
       "start": 364.18,
-      "end": 365.045,
+      "end": 365.08,
       "text": "yet."
     },
     {
@@ -2414,7 +2414,7 @@
     },
     {
       "start": 372.501,
-      "end": 373.001,
+      "end": 373.25,
       "text": "."
     },
     {
@@ -2424,13 +2424,8 @@
     },
     {
       "start": 375.02,
-      "end": 375.82,
-      "text": "never went through the wall."
-    },
-    {
-      "start": 376.3,
       "end": 377.96,
-      "text": "He only measured heat that had already"
+      "text": "never went through the wall. He only measured heat that had already"
     },
     {
       "start": 377.96,
@@ -2444,7 +2439,7 @@
     },
     {
       "start": 381.14,
-      "end": 382.14,
+      "end": 382.193,
       "text": "into the public air."
     },
     {
@@ -2454,7 +2449,7 @@
     },
     {
       "start": 386.54,
-      "end": 387.14,
+      "end": 388.487,
       "text": "not \"through-the-wall\" surveillance —"
     },
     {
@@ -2469,12 +2464,12 @@
     },
     {
       "start": 392.88,
-      "end": 393.48,
+      "end": 393.78,
       "text": "inside a room."
     },
     {
       "start": 394.56,
-      "end": 395.6,
+      "end": 396.01,
       "text": "Heat that leaves your house,"
     },
     {
@@ -2494,43 +2489,28 @@
     },
     {
       "start": 401.94,
-      "end": 403.14,
+      "end": 403.256,
       "text": "It is a real distinction."
     },
     {
       "start": 403.7,
-      "end": 405.08,
-      "text": "But the majority would not rest"
-    },
-    {
-      "start": 405.08,
       "end": 406.7,
-      "text": "the privacy of the home on it."
+      "text": "But the majority would not rest the privacy of the home on it."
     },
     {
       "start": 407.24,
-      "end": 408.4,
+      "end": 408.661,
       "text": "Whatever you call the heat,"
     },
     {
       "start": 408.8,
-      "end": 409.82,
-      "text": "the purpose and the result"
-    },
-    {
-      "start": 409.82,
-      "end": 410.48,
-      "text": "were the same:"
+      "end": 410.72,
+      "text": "the purpose and the result were the same:"
     },
     {
       "start": 410.96,
-      "end": 412.5,
-      "text": "the government learned what was going"
-    },
-    {
-      "start": 412.5,
-      "end": 414.28,
-      "text": "on inside a house without a warrant."
+      "end": 414.395,
+      "text": "the government learned what was going on inside a house without a warrant."
     },
     {
       "start": 414.68,
@@ -2559,7 +2539,7 @@
     },
     {
       "start": 423.76,
-      "end": 424.26,
+      "end": 424.65,
       "text": "not do."
     },
     {
@@ -2574,7 +2554,7 @@
     },
     {
       "start": 429.02,
-      "end": 429.84,
+      "end": 429.92,
       "text": "Kyllo for good."
     },
     {
@@ -2584,7 +2564,7 @@
     },
     {
       "start": 431.72,
-      "end": 432.86,
+      "end": 433.194,
       "text": "with a narrower instruction:"
     },
     {
@@ -2619,22 +2599,17 @@
     },
     {
       "start": 443.691,
-      "end": 445.04,
-      "text": "The lesson was not \"you can never"
-    },
-    {
-      "start": 445.04,
       "end": 447.12,
-      "text": "do this.\" It was \"get a warrant"
+      "text": "The lesson was not \"you can never do this.\" It was \"get a warrant"
     },
     {
       "start": 447.12,
-      "end": 447.5,
+      "end": 448.01,
       "text": "first.\""
     },
     {
       "start": 448.04,
-      "end": 449.86,
+      "end": 449.882,
       "text": "That difference is the whole point."
     },
     {
@@ -2644,17 +2619,17 @@
     },
     {
       "start": 452.68,
-      "end": 453.96,
+      "end": 454.312,
       "text": "they can never learn something."
     },
     {
       "start": 454.76,
-      "end": 455.72,
+      "end": 455.865,
       "text": "Usually it just says:"
     },
     {
       "start": 456.24,
-      "end": 456.82,
+      "end": 457.14,
       "text": "go to a judge,"
     },
     {
@@ -2664,28 +2639,18 @@
     },
     {
       "start": 459.48,
-      "end": 461.02,
+      "end": 461.112,
       "text": "you reach into a private space."
     },
     {
       "start": 462.02,
-      "end": 463.76,
-      "text": "Kyllo pulled the home firmly back inside"
-    },
-    {
-      "start": 463.76,
       "end": 464.886,
-      "text": "that rule."
+      "text": "Kyllo pulled the home firmly back inside that rule."
     },
     {
       "start": 465.16,
-      "end": 466.74,
-      "text": "And the reason the case still matters"
-    },
-    {
-      "start": 466.74,
       "end": 468.62,
-      "text": "lies in the phrase Scalia chose:"
+      "text": "And the reason the case still matters lies in the phrase Scalia chose:"
     },
     {
       "start": 469.38,
@@ -2704,7 +2669,7 @@
     },
     {
       "start": 475.62,
-      "end": 476.3,
+      "end": 476.52,
       "text": "of a lunchbox."
     },
     {
@@ -2734,7 +2699,7 @@
     },
     {
       "start": 488.5,
-      "end": 489.71,
+      "end": 490.605,
       "text": "devices that read signals through walls."
     },
     {
@@ -2759,13 +2724,8 @@
     },
     {
       "start": 499.0,
-      "end": 500.2,
-      "text": "The strength of the ruling,"
-    },
-    {
-      "start": 500.2,
       "end": 502.78,
-      "text": "and its weakness, is that same phrase."
+      "text": "The strength of the ruling, and its weakness, is that same phrase."
     },
     {
       "start": 503.4,
@@ -2789,7 +2749,7 @@
     },
     {
       "start": 511.48,
-      "end": 513.74,
+      "end": 513.743,
       "text": "and the more ordinary a technology becomes,"
     },
     {
@@ -2814,12 +2774,12 @@
     },
     {
       "start": 522.78,
-      "end": 524.78,
+      "end": 524.885,
       "text": "to a standard the future keeps rewriting"
     },
     {
       "start": 525.138,
-      "end": 525.438,
+      "end": 525.59,
       "text": "."
     },
     {
@@ -2834,28 +2794,23 @@
     },
     {
       "start": 528.98,
-      "end": 530.86,
+      "end": 530.875,
       "text": "a little after three in the morning."
     },
     {
       "start": 531.28,
-      "end": 532.1,
+      "end": 532.18,
       "text": "He never knocked."
     },
     {
       "start": 532.5,
-      "end": 533.74,
+      "end": 533.868,
       "text": "He never crossed the lawn."
     },
     {
       "start": 534.34,
-      "end": 535.88,
-      "text": "He simply read the heat coming off"
-    },
-    {
-      "start": 535.88,
       "end": 537.94,
-      "text": "a stranger's walls and decided he knew"
+      "text": "He simply read the heat coming off a stranger's walls and decided he knew"
     },
     {
       "start": 537.94,
@@ -2864,17 +2819,12 @@
     },
     {
       "start": 540.403,
-      "end": 541.48,
-      "text": "The Supreme Court looked at that quiet,"
-    },
-    {
-      "start": 541.66,
       "end": 543.575,
-      "text": "no-contact search —"
+      "text": "The Supreme Court looked at that quiet, no-contact search —"
     },
     {
       "start": 543.62,
-      "end": 544.84,
+      "end": 544.936,
       "text": "a search with no break-in"
     },
     {
@@ -2894,17 +2844,17 @@
     },
     {
       "start": 551.46,
-      "end": 552.14,
+      "end": 552.29,
       "text": "it."
     },
     {
       "start": 552.32,
-      "end": 553.84,
+      "end": 554.215,
       "text": "But notice what saved the home here:"
     },
     {
       "start": 554.74,
-      "end": 555.34,
+      "end": 555.35,
       "text": "walls."
     },
     {
@@ -2939,23 +2889,13 @@
     },
     {
       "start": 568.42,
-      "end": 568.76,
+      "end": 569.32,
       "text": "on."
     },
     {
       "start": 569.48,
-      "end": 570.7,
-      "text": "So what happens when the thing"
-    },
-    {
-      "start": 570.7,
-      "end": 572.18,
-      "text": "the government wants to reach has"
-    },
-    {
-      "start": 572.18,
-      "end": 573.54,
-      "text": "no walls around it at all?"
+      "end": 573.548,
+      "text": "So what happens when the thing the government wants to reach has no walls around it at all?"
     },
     {
       "start": 574.12,
@@ -2964,13 +2904,8 @@
     },
     {
       "start": 575.94,
-      "end": 576.8,
-      "text": "through the open air,"
-    },
-    {
-      "start": 576.8,
       "end": 578.76,
-      "text": "or as a signal down a wire"
+      "text": "through the open air, or as a signal down a wire"
     },
     {
       "start": 581.079,
@@ -2979,18 +2914,8 @@
     },
     {
       "start": 581.38,
-      "end": 581.88,
-      "text": "into a glass phone booth"
-    },
-    {
-      "start": 581.881,
-      "end": 582.381,
-      "text": "on a public sidewalk,"
-    },
-    {
-      "start": 582.382,
-      "end": 583.7,
-      "text": "where anyone can see you,"
+      "end": 584.09,
+      "text": "into a glass phone booth on a public sidewalk, where anyone can see you,"
     },
     {
       "start": 583.74,
@@ -2999,7 +2924,7 @@
     },
     {
       "start": 584.74,
-      "end": 585.34,
+      "end": 585.64,
       "text": "to be listening?"
     },
     {
@@ -3019,23 +2944,167 @@
     },
     {
       "start": 591.88,
-      "end": 592.9,
+      "end": 593.143,
       "text": "and a hidden microphone."
     },
     {
       "start": 593.58,
-      "end": 595.0,
-      "text": "The answer moved the Fourth Amendment"
-    },
-    {
-      "start": 595.0,
       "end": 597.72,
-      "text": "from protecting places to protecting people."
+      "text": "The answer moved the Fourth Amendment from protecting places to protecting people."
     },
     {
       "start": 598.32,
       "end": 599.3,
       "text": "That is next time."
+    }
+  ],
+  "graphics": [
+    {
+      "start": 0.0,
+      "end": 5.6,
+      "lines": [
+        "No warrant. No trespass.",
+        "Was it a search?"
+      ]
+    },
+    {
+      "start": 36.434,
+      "end": 42.034,
+      "lines": [
+        "The walls of your home"
+      ]
+    },
+    {
+      "start": 69.431,
+      "end": 75.031,
+      "lines": [
+        "Florence, Oregon"
+      ]
+    },
+    {
+      "start": 85.942,
+      "end": 91.542,
+      "lines": [
+        "Heat leaks out"
+      ]
+    },
+    {
+      "start": 104.264,
+      "end": 109.864,
+      "lines": [
+        "Jan 16, 1992 — 3:20 a.m.",
+        "black = cool · white = hot"
+      ]
+    },
+    {
+      "start": 133.964,
+      "end": 139.564,
+      "lines": [
+        "Garage roof + side wall: hot"
+      ]
+    },
+    {
+      "start": 158.999,
+      "end": 164.599,
+      "lines": [
+        "Tip + power bills + thermal scan → warrant"
+      ]
+    },
+    {
+      "start": 192.161,
+      "end": 197.761,
+      "lines": [
+        "Public street",
+        "Private home"
+      ]
+    },
+    {
+      "start": 231.081,
+      "end": 236.681,
+      "lines": [
+        "As private as the next sensor allows"
+      ]
+    },
+    {
+      "start": 255.44,
+      "end": 261.038,
+      "lines": [
+        "Measurement — or search?"
+      ]
+    },
+    {
+      "start": 261.688,
+      "end": 267.288,
+      "lines": [
+        "2001 — 5–4",
+        "Kyllo v. United States, 533 U.S. 27"
+      ]
+    },
+    {
+      "start": 284.143,
+      "end": 289.743,
+      "lines": [
+        "“retreat into his own home”",
+        "firm — and bright"
+      ]
+    },
+    {
+      "start": 311.521,
+      "end": 317.121,
+      "lines": [
+        "Device 'not in general public use' + reveals the inside = SEARCH"
+      ]
+    },
+    {
+      "start": 330.261,
+      "end": 335.861,
+      "lines": [
+        "The line sits at the wall"
+      ]
+    },
+    {
+      "start": 365.255,
+      "end": 370.855,
+      "lines": [
+        "Dissent: Stevens, J.",
+        "'off-the-wall,' not 'through-the-wall'"
+      ]
+    },
+    {
+      "start": 420.568,
+      "end": 426.168,
+      "lines": [
+        "Not banned — warrant required"
+      ]
+    },
+    {
+      "start": 465.107,
+      "end": 470.707,
+      "lines": [
+        "'not in general public use'"
+      ]
+    },
+    {
+      "start": 499.079,
+      "end": 504.679,
+      "lines": [
+        "A moving line"
+      ]
+    },
+    {
+      "start": 525.668,
+      "end": 531.268,
+      "lines": [
+        "The line at your door"
+      ]
+    },
+    {
+      "start": 569.464,
+      "end": 575.064,
+      "lines": [
+        "Next: places, or people?",
+        "Subscribe"
+      ]
     }
   ]
 }
