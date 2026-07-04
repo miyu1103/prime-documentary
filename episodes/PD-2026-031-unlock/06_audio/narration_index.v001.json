@@ -5,219 +5,406 @@
   "provider": "ElevenLabs",
   "voice_id": "nPczCjzI2devNBz1zQrb",
   "model_id": "eleven_multilingual_v2",
-  "source_annotated": "episodes/_planning/EP31_unlock_script.annotated.v001.json",
+  "source": "adapted from narration_index.v002.json + annotated v002 (rich fields for captions/acceptance)",
   "gap_sec": 0.28,
-  "total_chars": 8095,
-  "master": "narration/raw/narration_master.v001.mp3",
-  "master_duration_sec": 505.486,
+  "master_duration_sec": 693.763,
+  "master": "06_voice/master/vc_master_v001.mp3",
   "chunks": [
     {
       "chunk_id": "VC-0001",
       "span_id": "SPN-0001",
+      "section": "HOOK",
       "chapter_id": "hook",
-      "file": "narration/raw/VC-0001.mp3",
-      "chars": 279,
-      "duration_sec": 17.926
+      "spoken_text": "It's night, and a police officer is standing at your car window, holding your phone. Everything you are is inside it. And he wants it open. He can press it to your thumb. He can hold it up to your face. The one thing he may not be able to force open — is what's inside your head.",
+      "start": 0.0,
+      "end": 17.926,
+      "seconds": 17.926,
+      "duration_sec": 17.926,
+      "file": "narration/raw/VC-0001.mp3"
     },
     {
       "chunk_id": "VC-0002",
       "span_id": "SPN-0002",
+      "section": "OPENING",
       "chapter_id": "opening",
-      "file": "narration/raw/VC-0002.mp3",
-      "chars": 256,
-      "duration_sec": 15.975
+      "spoken_text": "This is the story of a question the Supreme Court keeps refusing to answer: can the police force you to unlock your phone? And why the answer can turn on one strange detail — whether you used your face, your thumb, or a passcode you keep only in your mind.",
+      "start": 18.206,
+      "end": 34.181,
+      "seconds": 15.975,
+      "duration_sec": 15.975,
+      "file": "narration/raw/VC-0002.mp3"
     },
     {
       "chunk_id": "VC-0003",
       "span_id": "SPN-0003",
+      "section": "BODY",
       "chapter_id": "act1",
-      "file": "narration/raw/VC-0003.mp3",
-      "chars": 332,
-      "duration_sec": 21.641
+      "spoken_text": "Start with what's actually in your pocket. Not a phone — your whole life. Every place you've been, mapped by the minute. Every message you've sent, every photo you've taken, who you love, what you fear, what you searched at three in the morning. There has never been a record of a human being this complete. And it fits in one hand.",
+      "start": 34.461,
+      "end": 56.102,
+      "seconds": 21.641,
+      "duration_sec": 21.641,
+      "file": "narration/raw/VC-0003.mp3"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "span_id": "SPN-0028",
+      "section": "BODY",
+      "chapter_id": "act1",
+      "spoken_text": "Think about who else knows all of that. Not your closest friend. Not your doctor. Not even the person you share a bed with. Your phone has sat in rooms no one else was in. It knows what you look at when you can't sleep, the things you typed and deleted, the person you almost called. No human being alive knows you the way that glowing rectangle does — and it never forgets a single thing. That is what's really sitting in the officer's hand.",
+      "start": 56.382,
+      "end": 83.596,
+      "seconds": 27.214,
+      "duration_sec": 27.214,
+      "file": "narration/raw/VC-0028.mp3"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "span_id": "SPN-0032",
+      "section": "BODY",
+      "chapter_id": "act1",
+      "spoken_text": "And this is not some rare, dramatic event. Somewhere in this country, a driver is pulled over every few seconds. Almost all of those stops end quietly, forgotten by morning. But any one of them can end with an open hand and two flat words: unlock it. The one thing that holds your entire life can be demanded in the most ordinary moment there is.",
+      "start": 83.876,
+      "end": 104.681,
+      "seconds": 20.805,
+      "duration_sec": 20.805,
+      "file": "narration/raw/VC-0032.mp3"
     },
     {
       "chunk_id": "VC-0004",
       "span_id": "SPN-0004",
+      "section": "BODY",
       "chapter_id": "act1",
-      "file": "narration/raw/VC-0004.mp3",
-      "chars": 335,
-      "duration_sec": 21.548
+      "spoken_text": "The Supreme Court understood this. In 2014, in a case called Riley versus California, the justices ruled — unanimously — that a phone is not like anything else you carry. Before the police can search what's inside it, even after an arrest, they generally need a warrant. Chief Justice Roberts put it in four plain words: get a warrant.",
+      "start": 104.961,
+      "end": 126.509,
+      "seconds": 21.548,
+      "duration_sec": 21.548,
+      "file": "narration/raw/VC-0004.mp3"
     },
     {
       "chunk_id": "VC-0005",
       "span_id": "SPN-0005",
+      "section": "BODY",
       "chapter_id": "act1",
-      "file": "narration/raw/VC-0005.mp3",
-      "chars": 305,
-      "duration_sec": 16.765
+      "spoken_text": "So that's settled, right? They need a warrant. You're protected. But here is the trapdoor almost everyone falls through. A warrant gives the police permission to look inside your phone. It does not answer a completely different question — one that lives in a completely different part of the Constitution.",
+      "start": 126.789,
+      "end": 143.554,
+      "seconds": 16.765,
+      "duration_sec": 16.765,
+      "file": "narration/raw/VC-0005.mp3"
     },
     {
       "chunk_id": "VC-0006",
       "span_id": "SPN-0006",
+      "section": "BODY",
       "chapter_id": "act1",
-      "file": "narration/raw/VC-0006.mp3",
-      "chars": 256,
-      "duration_sec": 15.464
+      "spoken_text": "Because a warrant to search your phone is worthless if they can't get into it. And a modern phone, locked, is a very good safe. So the real fight was never really about searching. It was about this: can the government force you — you — to open it yourself?",
+      "start": 143.834,
+      "end": 159.298,
+      "seconds": 15.464,
+      "duration_sec": 15.464,
+      "file": "narration/raw/VC-0006.mp3"
     },
     {
       "chunk_id": "VC-0007",
       "span_id": "SPN-0007",
+      "section": "BODY",
       "chapter_id": "act1",
-      "file": "narration/raw/VC-0007.mp3",
-      "chars": 220,
-      "duration_sec": 12.771
+      "spoken_text": "And the moment you ask that, you leave the Fourth Amendment behind — the one about searches — and you walk into the Fifth. The one you already know from every movie: you cannot be forced to be a witness against yourself.",
+      "start": 159.578,
+      "end": 172.349,
+      "seconds": 12.771,
+      "duration_sec": 12.771,
+      "file": "narration/raw/VC-0007.mp3"
     },
     {
       "chunk_id": "VC-0008",
       "span_id": "SPN-0008",
+      "section": "BODY",
       "chapter_id": "act2",
-      "file": "narration/raw/VC-0008.mp3",
-      "chars": 345,
-      "duration_sec": 20.712
+      "spoken_text": "But the Fifth Amendment has a strange edge to it. It doesn't protect everything the government can pull out of you. It only protects what the courts call testimonial — words, or acts, that reveal the contents of your mind. What you know. What you're thinking. That distinction is about to decide whether your phone is a fortress or an open door.",
+      "start": 172.629,
+      "end": 193.341,
+      "seconds": 20.712,
+      "duration_sec": 20.712,
+      "file": "narration/raw/VC-0008.mp3"
     },
     {
       "chunk_id": "VC-0009",
       "span_id": "SPN-0009",
+      "section": "BODY",
       "chapter_id": "act2",
-      "file": "narration/raw/VC-0009.mp3",
-      "chars": 379,
-      "duration_sec": 23.406
+      "spoken_text": "The courts have a picture for this that's almost two hundred years old. Imagine the police have a warrant to open a safe. They can force you to hand over the key. A key is just a physical object; giving it up says nothing about what's in your head. But they cannot force you to tell them the combination — because the combination lives in your mind, and speaking it is testimony.",
+      "start": 193.621,
+      "end": 217.027,
+      "seconds": 23.406,
+      "duration_sec": 23.406,
+      "file": "narration/raw/VC-0009.mp3"
     },
     {
       "chunk_id": "VC-0010",
       "span_id": "SPN-0010",
+      "section": "BODY",
       "chapter_id": "act2",
-      "file": "narration/raw/VC-0010.mp3",
-      "chars": 271,
-      "duration_sec": 15.836
+      "spoken_text": "Now put your phone in that picture. A passcode is a combination. It's a string of numbers that exists nowhere but inside your memory. Force you to enter it, many courts have said, and you are being made to reveal the contents of your mind. So a passcode may be protected.",
+      "start": 217.307,
+      "end": 233.143,
+      "seconds": 15.836,
+      "duration_sec": 15.836,
+      "file": "narration/raw/VC-0010.mp3"
     },
     {
       "chunk_id": "VC-0011",
       "span_id": "SPN-0011",
+      "section": "BODY",
       "chapter_id": "act2",
-      "file": "narration/raw/VC-0011.mp3",
-      "chars": 349,
-      "duration_sec": 22.198
+      "spoken_text": "But your face? Your thumb? Those aren't in your mind. They're on your body. And the law treats your body very differently. The police can already take your fingerprints at booking. They can draw your blood. They can stand you in a lineup. None of that is testimony — it reveals nothing you know. It's just physical evidence you happen to be made of.",
+      "start": 233.423,
+      "end": 255.621,
+      "seconds": 22.198,
+      "duration_sec": 22.198,
+      "file": "narration/raw/VC-0011.mp3"
     },
     {
       "chunk_id": "VC-0012",
       "span_id": "SPN-0012",
+      "section": "BODY",
       "chapter_id": "act2",
-      "file": "narration/raw/VC-0012.mp3",
-      "chars": 422,
-      "duration_sec": 24.66
+      "spoken_text": "Which leads somewhere most people never see coming. In 2024, a federal appeals court — the Ninth Circuit — looked at a case where officers took a man's phone and simply pressed his own thumb to the sensor to unlock it. The court said that did not violate the Fifth Amendment. Pressing a thumb, they reasoned, takes no thought at all. His body opened the door against him — and the Constitution had nothing to say about it.",
+      "start": 255.901,
+      "end": 280.561,
+      "seconds": 24.66,
+      "duration_sec": 24.66,
+      "file": "narration/raw/VC-0012.mp3"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "span_id": "SPN-0029",
+      "section": "BODY",
+      "chapter_id": "act2",
+      "spoken_text": "But even that ruling came with a chilling little footnote. The court hinted the answer might have been different if the officers had made the man choose which finger to use — because choosing is a decision, and a decision happens in your mind. Sit with how thin that line is. A thumb they press to the sensor: no protection. The very same thumb, if you are the one who decides to use it: maybe protected. Whether the Fifth Amendment shields you can come down to a single flicker of choice — the hair's breadth between your body doing something, and your mind deciding it.",
+      "start": 280.841,
+      "end": 315.253,
+      "seconds": 34.412,
+      "duration_sec": 34.412,
+      "file": "narration/raw/VC-0029.mp3"
     },
     {
       "chunk_id": "VC-0013",
       "span_id": "SPN-0013",
+      "section": "BODY",
       "chapter_id": "act2",
-      "file": "narration/raw/VC-0013.mp3",
-      "chars": 280,
-      "duration_sec": 15.929
+      "spoken_text": "Sit with what that means. The passcode you can refuse to speak. But the fingerprint sensor you set up for convenience — the Face ID that unlocks your phone before you've even thought about it — those may hand the police everything, precisely because they ask nothing of your mind.",
+      "start": 315.533,
+      "end": 331.462,
+      "seconds": 15.929,
+      "duration_sec": 15.929,
+      "file": "narration/raw/VC-0013.mp3"
     },
     {
       "chunk_id": "VC-0014",
       "span_id": "SPN-0014",
+      "section": "BODY",
       "chapter_id": "act2",
-      "file": "narration/raw/VC-0014.mp3",
-      "chars": 233,
-      "duration_sec": 16.3
+      "spoken_text": "So it's settled. Your mind is a fortress; your body is an open door. Clean, simple, done. Except — it isn't. Because barely a year later, another federal court looked at almost the exact same act, and came to the opposite conclusion.",
+      "start": 331.742,
+      "end": 348.042,
+      "seconds": 16.3,
+      "duration_sec": 16.3,
+      "file": "narration/raw/VC-0014.mp3"
     },
     {
       "chunk_id": "VC-0015",
       "span_id": "SPN-0015",
+      "section": "BODY",
       "chapter_id": "act3",
-      "file": "narration/raw/VC-0015.mp3",
-      "chars": 303,
-      "duration_sec": 16.904
+      "spoken_text": "In 2025, the D.C. Circuit ruled that forcing a man to unlock his phone with his fingerprint did violate the Fifth Amendment — because obeying that command, the court said, quietly admits something you know: that it's your phone, and that you know how to open it. Same act. Same country. Opposite answer.",
+      "start": 348.322,
+      "end": 365.226,
+      "seconds": 16.904,
+      "duration_sec": 16.904,
+      "file": "narration/raw/VC-0015.mp3"
     },
     {
       "chunk_id": "VC-0016",
       "span_id": "SPN-0016",
+      "section": "BODY",
       "chapter_id": "act3",
-      "file": "narration/raw/VC-0016.mp3",
-      "chars": 399,
-      "duration_sec": 25.403
+      "spoken_text": "And it isn't just fingerprints. On the passcode — the thing that's supposed to be the safe part — the states can't agree either. In Pennsylvania, in Indiana, in Utah, top courts have ruled you cannot be forced to give it up. In New Jersey, in Illinois, courts have ruled you can. The same locked phone, the same Constitution — and your right depends on which side of a state line you're standing on.",
+      "start": 365.506,
+      "end": 390.909,
+      "seconds": 25.403,
+      "duration_sec": 25.403,
+      "file": "narration/raw/VC-0016.mp3"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "span_id": "SPN-0033",
+      "section": "BODY",
+      "chapter_id": "act3",
+      "spoken_text": "And this has already happened to real people. A man in New Jersey, ordered by a court to surrender his passcodes. A man in the Ninth Circuit, whose own thumb was pressed to his phone at the side of a road. Same country. Same Constitution. Opposite outcomes — decided not by what they did, but by which courthouse happened to be looking at them.",
+      "start": 391.189,
+      "end": 412.737,
+      "seconds": 21.548,
+      "duration_sec": 21.548,
+      "file": "narration/raw/VC-0033.mp3"
     },
     {
       "chunk_id": "VC-0017",
       "span_id": "SPN-0017",
+      "section": "BODY",
       "chapter_id": "act3",
-      "file": "narration/raw/VC-0017.mp3",
-      "chars": 272,
-      "duration_sec": 17.554
+      "spoken_text": "How can courts looking at the same words land so far apart? It comes down to a single, almost philosophical question the lawyers call the foregone conclusion. Roughly: the government can force you to hand something over if it already knows, for certain, what it's getting.",
+      "start": 413.017,
+      "end": 430.571,
+      "seconds": 17.554,
+      "duration_sec": 17.554,
+      "file": "narration/raw/VC-0017.mp3"
     },
     {
       "chunk_id": "VC-0018",
       "span_id": "SPN-0018",
+      "section": "BODY",
       "chapter_id": "act3",
-      "file": "narration/raw/VC-0018.mp3",
-      "chars": 500,
-      "duration_sec": 32.508
+      "spoken_text": "And here is the whole fight, in one sentence. Does the government already 'know' your passcode — the fact that it exists, that it's yours? Then handing it over reveals nothing new, and you can be forced. Or is the thing it really wants the ocean of secrets behind the passcode — which it obviously doesn't know? Then forcing you to open it is forcing you to testify. Courts split on which of those two things the question is even about. And on that hair-thin difference, your privacy stands or falls.",
+      "start": 430.851,
+      "end": 463.359,
+      "seconds": 32.508,
+      "duration_sec": 32.508,
+      "file": "narration/raw/VC-0018.mp3"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "span_id": "SPN-0021",
+      "section": "BODY",
+      "chapter_id": "act3",
+      "spoken_text": "And there is one place where even this fragile protection gets thinner still: the border. At an airport, or a crossing, the normal rules bend. For years the government has claimed it can search your phone there with no warrant at all — and the courts cannot agree on how far that power goes. Some say officers need at least a reason to suspect you. Others say they need nothing. In 2023, one federal judge became the first to rule that the government does need a warrant to search a phone at the border — a real crack in the wall. But that too is unsettled, and it binds almost no one yet. So the same device that is a fortress in your living room can become an open book the moment you land.",
+      "start": 463.639,
+      "end": 505.574,
+      "seconds": 41.935,
+      "duration_sec": 41.935,
+      "file": "narration/raw/VC-0021.mp3"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "span_id": "SPN-0031",
+      "section": "BODY",
+      "chapter_id": "act3",
+      "spoken_text": "Airports. Traffic stops. State lines. Every one of them a different answer. You would think, with this much confusion, someone at the very top would finally step in.",
+      "start": 505.854,
+      "end": 516.071,
+      "seconds": 10.217,
+      "duration_sec": 10.217,
+      "file": "narration/raw/VC-0031.mp3"
     },
     {
       "chunk_id": "VC-0019",
       "span_id": "SPN-0019",
+      "section": "BODY",
       "chapter_id": "act3",
-      "file": "narration/raw/VC-0019.mp3",
-      "chars": 366,
-      "duration_sec": 22.57
+      "spoken_text": "You would think, with the country this divided, the Supreme Court would step in and settle it. It hasn't. Case after case has climbed all the way up — Pennsylvania, New Jersey, Illinois — asking the justices to finally draw the line. And three times, the Court has quietly turned them away. It has never decided whether you can be forced to unlock your phone at all.",
+      "start": 516.351,
+      "end": 538.921,
+      "seconds": 22.57,
+      "duration_sec": 22.57,
+      "file": "narration/raw/VC-0019.mp3"
     },
     {
       "chunk_id": "VC-0020",
       "span_id": "SPN-0020",
+      "section": "BODY",
       "chapter_id": "act3",
-      "file": "narration/raw/VC-0020.mp3",
-      "chars": 280,
-      "duration_sec": 19.273
+      "spoken_text": "So there is no national rule. There is a patchwork — a map where the same phone, in the same hand, is protected in one state and pried open in the next. A right that changes when you cross a bridge isn't really a settled right at all. It's a coin flip you don't get to see coming.",
+      "start": 539.201,
+      "end": 558.474,
+      "seconds": 19.273,
+      "duration_sec": 19.273,
+      "file": "narration/raw/VC-0020.mp3"
     },
     {
       "chunk_id": "VC-0022",
       "span_id": "SPN-0022",
+      "section": "BODY",
       "chapter_id": "act4",
-      "file": "narration/raw/VC-0022.mp3",
-      "chars": 346,
-      "duration_sec": 20.991
+      "spoken_text": "So where does that leave you — tonight, at that car window? With one uncomfortable, defensible truth. In a lot of American courtrooms, the passcode you keep in your head is better protected than the face on the front of it or the thumb on your hand. Not everywhere. Not guaranteed. But as a rule of thumb, your mind is the strongest lock you own.",
+      "start": 558.754,
+      "end": 579.745,
+      "seconds": 20.991,
+      "duration_sec": 20.991,
+      "file": "narration/raw/VC-0022.mp3"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "span_id": "SPN-0030",
+      "section": "BODY",
+      "chapter_id": "act4",
+      "spoken_text": "And here is the part that puts a little of the power back in your hands. On most modern phones there is a simple line between the easy lock and the strong one. Power the phone all the way off. When it turns back on, it will not take your face, and it will not take your thumb — not until the passcode has been typed once. In that single moment, the convenience turns back into the combination. The lock moves back inside your mind — the one place that, for now, is the hardest for anyone to force open.",
+      "start": 580.025,
+      "end": 610.211,
+      "seconds": 30.186,
+      "duration_sec": 30.186,
+      "file": "narration/raw/VC-0030.mp3"
     },
     {
       "chunk_id": "VC-0023",
       "span_id": "SPN-0023",
+      "section": "BODY",
       "chapter_id": "act4",
-      "file": "narration/raw/VC-0023.mp3",
-      "chars": 322,
-      "duration_sec": 18.204
+      "spoken_text": "Which flips something you do every day on its head. That fingerprint, that face-scan you set up because it was fast and easy — in a courtroom, it may be the weakest lock on the phone. The convenience is the vulnerability. The thing that opens your phone without a thought may open it for someone else without your consent.",
+      "start": 610.491,
+      "end": 628.695,
+      "seconds": 18.204,
+      "duration_sec": 18.204,
+      "file": "narration/raw/VC-0023.mp3"
     },
     {
       "chunk_id": "VC-0024",
       "span_id": "SPN-0024",
+      "section": "BODY",
       "chapter_id": "act4",
-      "file": "narration/raw/VC-0024.mp3",
-      "chars": 292,
-      "duration_sec": 18.669
+      "spoken_text": "Remember how this started. An officer at your window, your whole life glowing in his hand. He can take your thumb. He can take your face. Your body, it turns out, can be turned against you. But your mind — the passcode you never say out loud — may be the last thing they can't force. For now.",
+      "start": 628.975,
+      "end": 647.644,
+      "seconds": 18.669,
+      "duration_sec": 18.669,
+      "file": "narration/raw/VC-0024.mp3"
     },
     {
       "chunk_id": "VC-0025",
       "span_id": "SPN-0025",
+      "section": "BODY",
       "chapter_id": "act4",
-      "file": "narration/raw/VC-0025.mp3",
-      "chars": 295,
-      "duration_sec": 18.808
+      "spoken_text": "For now — because the case that finally settles this hasn't been decided yet. Somewhere, right now, there's a traffic stop, a locked phone, a demand to open it. One of those ordinary moments will become the case that draws the line for everyone. And there is nothing that says it won't be yours.",
+      "start": 647.924,
+      "end": 666.732,
+      "seconds": 18.808,
+      "duration_sec": 18.808,
+      "file": "narration/raw/VC-0025.mp3"
     },
     {
       "chunk_id": "VC-0026",
       "span_id": "SPN-0026",
+      "section": "BODY",
       "chapter_id": "act4",
-      "file": "narration/raw/VC-0026.mp3",
-      "chars": 307,
-      "duration_sec": 18.344
+      "spoken_text": "We built machines that read our faces and our fingerprints to make our lives easier. We never quite decided what happens when someone else holds them up to the lock. Until we do — until a court finally says where the line is — the only key they may never be able to take from you is the one you never speak.",
+      "start": 667.012,
+      "end": 685.356,
+      "seconds": 18.344,
+      "duration_sec": 18.344,
+      "file": "narration/raw/VC-0026.mp3"
     },
     {
       "chunk_id": "VC-0027",
       "span_id": "SPN-0027",
+      "section": "ENDING",
       "chapter_id": "ending",
-      "file": "narration/raw/VC-0027.mp3",
-      "chars": 151,
-      "duration_sec": 8.127
+      "spoken_text": "If you just learned your passcode may protect you more than your face — hit like, so more people know it before an officer is ever holding their phone.",
+      "start": 685.636,
+      "end": 693.763,
+      "seconds": 8.127,
+      "duration_sec": 8.127,
+      "file": "narration/raw/VC-0027.mp3"
     }
   ]
 }
