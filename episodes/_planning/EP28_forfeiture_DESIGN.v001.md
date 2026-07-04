@@ -2,7 +2,7 @@
 
 **Episode ID:** `PD-2026-028-forfeiture`  ·  **slug:** `forfeiture`
 **Series arc:** *They Did Nothing Wrong*（普通の人 vs システムの暴走）1/3
-**Duration profile:** standard — target **12:00 (720s)**, band **690–750s**
+**Duration profile:** standard — target **12:00 (720s)**, band **690–750s** · **AS-BUILT (2026-07-05): 706.6s = 11.78min（band内）**
 **R-rating:** **R2**（実在・存命人物＋実際の刑事事件。fact_recheck と公開前法務ゲート必須）
 **Binding spec:** `docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md`（本設計書は§A表 rows 1–16 のインスタンス）
 
@@ -34,7 +34,9 @@
 
 ---
 
-## 2. 4部構成 — 秒割タイムライン（fps=60 / 全長 720s / 数値は定数）
+## 2. 4部構成 — 秒割タイムライン（**AS-BUILT: fps=30（CaseFilm／BRAND.video.fps）／全長 706.6s** ／ 数値は定数）
+
+> **AS-BUILT SYNC (2026-07-05)** — 真実源は `episodes/PD-2026-028-forfeiture/03_script/script.annotated.v001.json`（この .md は当初ドラフト）。実測: ナレ **686.1s**・**33 spans / 2,054語**・**28 の on_screen_text**（キネティックビート）・字幕 **348キュー / 最悪22cps**・factory **96本ステージ済**（6テーマ分散）・総尺 **706.6s**（hook8+OP3.5+686.1+ED9）。CaseFilmは **30fps**（旧記載の fps=60 は誤り。fps=60 はルートCLAUDE.mdのオープニング実演用で、長尺CaseFilmエンジンには適用されない）。組立=`CaseFilm-forfeiture`（プレミアム・エンジン＋別スレのAmbientMotion/派手Bookendsで統一予定）→ ship-gate 受領書緑まで（`docs/PD_SHIP_GATE.md`）。
 
 | Part | 区間(s) | 尺 | 役割 | ナレ語数(≈173wpm) |
 |---|---|---|---|---|
@@ -46,7 +48,7 @@
 | **ACT IV 決着+ペイオフ** | ~560–711 | ~2.5min | 2018同意判決／改革／**フック回収**（家は守られた）／稼いだ Like への CTA | ~430w |
 | **BrandEndcard** | 711–720 | 9.0s (`ENDCARD_SEC`) | `BrandEndcard`（CTA/cadence）。末尾 | 0 |
 
-**ナレ合計 ≈ 2,030w**（10.5–11分の実音声。kyllo=1,775wが基準、やや厚め）。実測後に語数を band 内へ微調整。
+**ナレ合計 ≈ 2,030w** → **AS-BUILT 2,054w**（ElevenLabsマスター実測 **686.1s**）。当初 kyllo=1,775w基準からやや厚め。**band 内へ調整済**（annotated を +約300語＝出典内で拡張し総尺706.6sで確定・声/字幕ゲート全PASS）。
 **リテンション（row16）**：フックの謎（家は奪われたのか？）を**ラストまで開いたまま保持**。オープンループ「だが、そうはならなかった…」を ACT III 末で。**再フックを ~2:30 ごと**（ACT境界＝新しい問い/転換）。20秒を超える平坦説明を作らない。
 
 ---
@@ -136,15 +138,20 @@
 ## 9. 通過必須ゲート（Done の定義・§D）
 
 `./.venv/Scripts/python.exe scripts/check_final_acceptance.py 28 --json` が **exit 0**。ハードゲート（実ファイル測定）：
-- `runtime_band` 690–750s / `render_resolution` ≥1920×1080 / `images_present`（黒過多なし）/ `motion_present`（freeze なし＝紙芝居検出）/ `bgm_present`（無音>25s なし・VO下も可聴フロア）
+- `runtime_band` 690–750s / `render_resolution` ≥1920×1080 / `images_present`（黒過多なし）/ `bgm_present`（無音>25s なし・VO下も可聴フロア）/ `bgm_ending`（終端が切りよく解決）
+- `motion_present`（freeze なし）＋ **`animation_density`**（near-still ≤10%／単一ホールド≤3s＝スロー・ケンバーンズ/紙芝居を検出。freezeだけでは抜けるやつ）
 - `voice_is_master`（ElevenLabs・SAPI不可）/ `captions_final`（≥90%カバー）/ `caption_format`
-- **【新規ゲート・本作から効く】**
-  - `caption_narration_match`：焼き込み字幕 ↔ narration `spoken_text` の**トークン一致 ≥90%**（字幕とナレ不一致を機械で阻止）
-  - `structure_4part`：narration 章立てが **HOOK→OPENING→body→ENDING**＋`forfeiture_film.json` に実フック（hookSeconds≥5・hookLine非空）
-  - `op_ed_bookends`：コンポジションが正典 `BrandOpening`+`BrandEndcard` を使用
+- `caption_narration_match`：焼き込み字幕 ↔ narration `spoken_text` の**トークン一致 ≥90%**（字幕とナレ不一致を機械で阻止）
+- `structure_4part`：narration 章立てが **HOOK→OPENING→body→ENDING**＋`forfeiture_film.json` に実フック（hookSeconds≥5・hookLine非空）
+- `op_ed_bookends`：コンポジションが正典 `BrandOpening`+`BrandEndcard` を使用
+- **【新規・素材/サムネもコード化(2026-07-04)】**
+  - `footage_diversity`：distinct/total ≥0.40・1クリップ再利用≤4・天秤等の汎用象徴≤2（**同じ素材の使い回し**を機械で阻止）
+  - `thumbnail_visibility`：selectedサムネの輝度 mean ≥33＋コントラスト下限（**暗い/しょぼい/CTR低下**を阻止）
 - `thumbnail_ready`（≥3×1280×720＋selected）/ `image_resolution`（長辺≥3840）/ `factory_used`（≥runtime/45 かつ参照）
 
-**手動実測（未コード化・飛ばさない）**：row5 画質/sharpness・row7 密度≥runtime/30・row12 サムネ派手/可読・row13 タイトル≤60/A-B・row15 film-bible クラフト・**目視で失敗1〜9が消えたか**（MotionSample と並べて見比べ／on_screen_text 全実装確認）。
+**Ship-gate（`docs/PD_SHIP_GATE.md`）**：`check_final_acceptance.py 28 --render <mp4> --emit-receipt` で**動画sha256に紐づく受領書**を発行 → `upload_schedule_case_v001.py --ep forfeiture` は**緑の受領書（sha一致・許容不合格はruntime_bandのみ）が無ければ物理的に投稿不可**。自己申告Done不可。
+
+**手動実測（未コード化・飛ばさない）**：row5 画質/sharpness・row13 タイトル≤60/A-B・row15 film-bible クラフト・**目視で失敗1〜9が消えたか**（MotionSample と並べて見比べ／on_screen_text 全実装確認）。
 
 ---
 
