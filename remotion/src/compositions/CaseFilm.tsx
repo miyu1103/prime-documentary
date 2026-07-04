@@ -92,9 +92,9 @@ const BleedStill: React.FC<{src: string; seed: string; dir: number}> = ({src, se
   const f = useCurrentFrame();
   const {durationInFrames} = useVideoConfig();
   const p = interpolate(f, [0, durationInFrames], [0, 1], {extrapolateRight: 'clamp'});
-  const bgX = interpolate(p, [0, 1], [-26 * dir, 26 * dir]);
-  const fgX = interpolate(p, [0, 1], [16 * dir, -16 * dir]);
-  const fgS = interpolate(p, [0, 1], [1.05, 1.1]);
+  const bgX = interpolate(p, [0, 1], [-38 * dir, 38 * dir]);
+  const fgX = interpolate(p, [0, 1], [24 * dir, -24 * dir]);
+  const fgS = interpolate(p, [0, 1], [1.05, 1.13]);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
       <AbsoluteFill style={{transform: `translateX(${bgX}px) scale(1.34)`, filter: 'blur(22px) brightness(0.62)'}}>
@@ -112,11 +112,11 @@ const BleedStill: React.FC<{src: string; seed: string; dir: number}> = ({src, se
 /** shared divergent-parallax base (bg blur + sharp fg drift opposite) — genuine depth motion,
  * never a flat zoom, and enough pixel movement that nothing reads as a frozen slide. */
 const parallax = (p: number, dir: number) => ({
-  bgX: interpolate(p, [0, 1], [-32 * dir, 32 * dir]),
-  bgY: interpolate(p, [0, 1], [-14, 14]),
-  fgX: interpolate(p, [0, 1], [20 * dir, -20 * dir]),
-  fgY: interpolate(p, [0, 1], [10, -10]),
-  fgS: interpolate(p, [0, 1], [1.05, 1.11]),
+  bgX: interpolate(p, [0, 1], [-46 * dir, 46 * dir]),
+  bgY: interpolate(p, [0, 1], [-20 * dir, 20 * dir]),
+  fgX: interpolate(p, [0, 1], [28 * dir, -28 * dir]),
+  fgY: interpolate(p, [0, 1], [14, -14]),
+  fgS: interpolate(p, [0, 1], [1.05, 1.14]),
 });
 
 /** scan: parallax base + a thermal light pool and a slow-drifting measurement grid. */
@@ -267,6 +267,10 @@ const Captions: React.FC<{cues: Caption[]}> = ({cues}) => {
   const t = f / fps;
   const cue = cues.find((c) => t >= c.start && t < c.end);
   if (!cue) return null;
+  // each caption springs up + fades in on its own cue — constant motion, never a static block
+  const enter = spring({frame: f - Math.round(cue.start * fps), fps, config: {damping: 200, stiffness: 140}});
+  const y = interpolate(enter, [0, 1], [22, 0]);
+  const op = Math.min(enter * 2, 1);
   return (
     <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center'}}>
       <div
@@ -279,6 +283,8 @@ const Captions: React.FC<{cues: Caption[]}> = ({cues}) => {
           fontSize: 44,
           fontWeight: 600,
           lineHeight: 1.25,
+          transform: `translateY(${y}px)`,
+          opacity: op,
           textShadow: '0 2px 10px rgba(0,0,0,0.85), 0 0 4px rgba(0,0,0,0.7)',
         }}
       >
@@ -329,6 +335,20 @@ const BeatText: React.FC<{lines: string[]}> = ({lines}) => {
             </div>
           );
         })}
+        {/* animated gold underline that draws in under the beat — a moving premium accent */}
+        <div
+          style={{
+            marginTop: 4,
+            height: 5,
+            width: '46%',
+            borderRadius: 3,
+            background: gold,
+            transformOrigin: 'center',
+            transform: `scaleX(${spring({frame: f - 6, fps, config: {damping: 18, stiffness: 90}})})`,
+            opacity: outOp * 0.9,
+            boxShadow: `0 0 18px ${gold}99`,
+          }}
+        />
       </div>
     </AbsoluteFill>
   );
