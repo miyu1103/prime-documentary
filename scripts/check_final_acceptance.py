@@ -116,6 +116,21 @@ BGM_END_MIN_DROP_DB = 10.0                       # OR final 0.3s >=10 dB below t
 MIN_VIDEO_W, MIN_VIDEO_H = 1920, 1080
 THUMB_W, THUMB_H = 1280, 720
 MIN_THUMB_VARIANTS = 3
+# thumbnail visibility (row 7b): the selected thumbnail must not be a dull, dark
+# panel -- the "しょぼい / 全く派手じゃない / CTRが下がる" reject class. Calibrated
+# 2026-07-04 on real thumbs: rejected v001 (dark navy) = luma mean 24.9-29.5;
+# approved v002 (bright hero + red tag + XL text) = 36.4-48.0. Floor sits between.
+THUMB_MIN_MEAN_LUMA = 33.0                       # mean brightness (0-255) -- too dark => dull/low-CTR
+THUMB_MIN_CONTRAST_STD = 40.0                    # luma stddev -- too flat => no punchy text/subject
+# footage diversity (row 7c): the downloaded shelf must be used with VARIETY, not
+# the same few clips (esp. generic symbols like the scales of justice) on repeat.
+# Owner 2026-07-04: "毎作品同じ素材が使われてる ... 天秤の動画は何度も見てきた".
+# Calibrated on real cutlists: kyllo reused a clip 7x (0.50 distinct); rodriguez
+# 0.33 distinct. A well-built episode staging a wide pool clears 0.55+ / <=3.
+FOOTAGE_MAX_USES_PER_CLIP = 4                    # any single clip cut in more than this => lazy reuse
+FOOTAGE_MIN_DISTINCT_FRACTION = 0.40            # distinct srcs / total cuts must be >= this
+FOOTAGE_GENERIC_PAT = r"scale|gavel|hourglass|clock|stopwatch|balance"  # over-familiar symbols
+FOOTAGE_GENERIC_MAX_USES = 2                     # a generic symbol may recur at most this often
 IMG_MIN_LONG_EDGE = 3840                         # spec row 5: hero stills upscaled to >=4K long edge
 FACTORY_SECONDS_PER_CLIP = 45                    # spec row 7: >=1 distinct factory clip per ~45s
 # caption<->narration identity + 4-part structure + canonical bookends
@@ -615,6 +630,72 @@ def check_factory_used(epdir: Path, render_dur: float | None) -> dict:
                       f"need >= {need} (1 per {FACTORY_SECONDS_PER_CLIP}s)"}
 
 
+def check_footage_diversity(epdir: Path) -> dict:
+    """HARD: the shelf must be used with VARIETY -- not the same few clips (esp.
+    generic symbols like the scales of justice) on repeat. Owner 2026-07-04:
+    "毎作品同じ素材が使われてる ... 天秤の動画は何度も見てきた". Reads the built
+    film-data cutlist and fails when any clip is reused too often, when a generic
+    symbol recurs, or when the distinct/total ratio is too low (lazy small pool)."""
+    slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
+    fdata = ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
+    d = _load(fdata) if fdata.is_file() else None
+    cuts = (d or {}).get("cuts") or []
+    if not cuts:
+        return {"check": "footage_diversity", "ok": True, "hard": False, "skipped": True,
+                "reason": "no film-data cutlist to check"}
+    from collections import Counter
+    c = Counter(x.get("src", "") for x in cuts)
+    total = len(cuts)
+    distinct = len(c)
+    frac = distinct / total if total else 0.0
+    top_src, top_n = c.most_common(1)[0]
+    over = [(s, n) for s, n in c.items() if n > FOOTAGE_MAX_USES_PER_CLIP]
+    generic = [(s, n) for s, n in c.items()
+               if re.search(FOOTAGE_GENERIC_PAT, s, re.I) and n > FOOTAGE_GENERIC_MAX_USES]
+    problems = []
+    if frac < FOOTAGE_MIN_DISTINCT_FRACTION:
+        problems.append(f"distinct {frac:.2f} < {FOOTAGE_MIN_DISTINCT_FRACTION:.2f}")
+    if over:
+        problems.append(f"{len(over)} clip(s) reused > {FOOTAGE_MAX_USES_PER_CLIP}x "
+                        f"(worst {top_src.split('/')[-1][:28]}={top_n})")
+    if generic:
+        problems.append(f"{len(generic)} generic symbol(s) reused > {FOOTAGE_GENERIC_MAX_USES}x: "
+                        f"{[s.split('/')[-1][:20] for s, _ in generic][:3]}")
+    ok = not problems
+    return {"check": "footage_diversity", "ok": ok, "hard": True,
+            "reason": (f"{distinct}/{total} distinct ({frac:.2f}), max reuse {top_n} -- varied"
+                       if ok else "; ".join(problems))}
+
+
+def check_thumbnail_visibility(epdir: Path) -> dict:
+    """HARD: the SELECTED thumbnail must be bright/punchy, not a dull dark panel --
+    the "しょぼい / 全く派手じゃない / CTRが下がる" reject class. Measures the newest
+    selected thumbnail's mean luma + contrast. Calibrated 2026-07-04: rejected dark
+    v001 = mean 24.9-29.5; approved bright v002 = 36.4-48.0."""
+    sel = sorted((epdir / "09_package").glob("thumbnail.selected*.png"))
+    if not sel:
+        return {"check": "thumbnail_visibility", "ok": True, "hard": False, "skipped": True,
+                "reason": "no selected thumbnail to measure"}
+    thumb = sel[-1]
+    try:
+        from PIL import Image, ImageStat
+        im = Image.open(thumb).convert("L")
+        st = ImageStat.Stat(im)
+        mean, std = st.mean[0], st.stddev[0]
+    except Exception as exc:  # noqa: BLE001
+        return {"check": "thumbnail_visibility", "ok": True, "hard": False, "skipped": True,
+                "reason": f"luma probe skipped ({exc})"}
+    problems = []
+    if mean < THUMB_MIN_MEAN_LUMA:
+        problems.append(f"mean luma {mean:.1f} < {THUMB_MIN_MEAN_LUMA:.0f} (too dark/dull)")
+    if std < THUMB_MIN_CONTRAST_STD:
+        problems.append(f"contrast {std:.1f} < {THUMB_MIN_CONTRAST_STD:.0f} (too flat)")
+    ok = not problems
+    return {"check": "thumbnail_visibility", "ok": ok, "hard": True,
+            "reason": (f"{thumb.name}: mean luma {mean:.1f}, contrast {std:.1f} -- bright/punchy"
+                       if ok else f"{thumb.name}: " + "; ".join(problems))}
+
+
 def resolve_render(epdir: Path, override: str | None) -> Path | None:
     if override:
         return Path(override)
@@ -632,6 +713,9 @@ def main() -> int:
     ap.add_argument("episode", help="episode number or id")
     ap.add_argument("--render", help="explicit path to the final .mp4 (else from final_delivery)")
     ap.add_argument("--json", action="store_true", help="emit JSON")
+    ap.add_argument("--emit-receipt", action="store_true",
+                    help="on completion write 09_package/acceptance_receipt.v001.json binding the "
+                         "PASS/FAIL to the exact render sha256 (the scheduler REQUIRES a green receipt)")
     args = ap.parse_args()
 
     ep = resolve_episode(args.episode)
@@ -670,8 +754,10 @@ def main() -> int:
     results.append(check_structure(epdir))
     results.append(check_bookends(epdir))
     results.append(check_thumbnail(epdir))
+    results.append(check_thumbnail_visibility(epdir))
     results.append(check_image_resolution(epdir))
     results.append(check_factory_used(epdir, render_dur))
+    results.append(check_footage_diversity(epdir))
 
     hard_fail = [r for r in results if r["hard"] and not r["ok"]]
     soft_fail = [r for r in results if not r["hard"] and not r["ok"]]
@@ -691,6 +777,31 @@ def main() -> int:
             tag = "[hard]" if r["hard"] else "[soft]"
             print(f"  {mark:4} {tag} {r['check']}: {r['reason']}")
         print(f"\nRESULT: {status}" + (f"  ({len(soft_fail)} soft warning(s))" if soft_fail else ""))
+
+    # Emit a receipt binding this PASS/FAIL to the EXACT render bytes. The scheduler
+    # refuses to upload without a green receipt whose video_sha256 matches the file --
+    # so a video that did not pass this gate physically cannot be scheduled.
+    if args.emit_receipt:
+        import hashlib
+        from datetime import datetime, timezone
+        vsha = None
+        if render and render.is_file():
+            h = hashlib.sha256()
+            with open(render, "rb") as fh:
+                for chunk in iter(lambda: fh.read(1 << 20), b""):
+                    h.update(chunk)
+            vsha = "sha256:" + h.hexdigest()
+        receipt = {
+            "schema_version": "1.0.0", "episode_id": ep, "gate": "check_final_acceptance",
+            "status": status, "video_path": str(render) if render else None,
+            "video_sha256": vsha, "hard_failures": [r["check"] for r in hard_fail],
+            "checks": {r["check"]: r["ok"] for r in results},
+            "generated_at": datetime.now(timezone.utc).isoformat(),
+        }
+        rp = epdir / "09_package" / "acceptance_receipt.v001.json"
+        rp.parent.mkdir(parents=True, exist_ok=True)
+        rp.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        print(f"RECEIPT {rp.relative_to(ROOT)}  status={status} sha={'set' if vsha else 'none'}")
     return 0 if status == "PASS" else 1
 
 

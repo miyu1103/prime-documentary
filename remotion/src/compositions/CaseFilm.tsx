@@ -11,6 +11,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
+import {Trail} from '@remotion/motion-blur';
 import {BRAND} from '../brand';
 import {Particles, LightSweep, Vignette} from '../components/Motion';
 import {Grain} from '../components/Grain';
@@ -249,16 +250,39 @@ const Still: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
   }
 };
 
+/** Designed, motion-blurred cut transition. Every cut ENTERS with one of three
+ * cinematic moves (push-in from depth / rise-up / dip-through), spring-eased, with a
+ * decaying blur that reads as real motion blur. Replaces the old flat 5-frame fade so
+ * every single cut has premium dynamic energy — never a hard slideshow snap. */
 const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
   const f = useCurrentFrame();
-  const opacity = interpolate(f, [0, 5], [0, 1], {extrapolateRight: 'clamp'});
+  const {fps} = useVideoConfig();
   const inner =
     cut.kind === 'footage' ? (
       <Footage src={cut.src} startFrom={(index * 47) % 160} dir={index % 2 === 0 ? 1 : -1} />
     ) : (
       <Still cut={cut} index={index} />
     );
-  return <AbsoluteFill style={{opacity}}>{inner}</AbsoluteFill>;
+  // spring entrance 0..1 over ~12 frames
+  const e = spring({frame: f, fps, config: {damping: 18, stiffness: 90, mass: 0.9}});
+  const mode = index % 3; // rotate the transition style so cuts never feel mechanical
+  const scale = mode === 0 ? interpolate(e, [0, 1], [1.14, 1.0]) : 1;
+  const ty = mode === 1 ? interpolate(e, [0, 1], [64, 0]) : 0;
+  const tx = mode === 2 ? interpolate(e, [0, 1], [(index % 2 ? -1 : 1) * 60, 0]) : 0;
+  // motion blur that decays as the shot settles (px of gaussian ~ speed)
+  const blur = interpolate(f, [0, 9], [14, 0], {extrapolateRight: 'clamp'});
+  const opacity = interpolate(f, [0, 6], [0, 1], {extrapolateRight: 'clamp'});
+  return (
+    <AbsoluteFill
+      style={{
+        opacity,
+        transform: `translate(${tx}px, ${ty}px) scale(${scale})`,
+        filter: blur > 0.4 ? `blur(${blur}px)` : undefined,
+      }}
+    >
+      {inner}
+    </AbsoluteFill>
+  );
 };
 
 const Captions: React.FC<{cues: Caption[]}> = ({cues}) => {
@@ -298,6 +322,35 @@ const Captions: React.FC<{cues: Caption[]}> = ({cues}) => {
  * typography with motion-blur entrances, timed to each span's narration. This is the dynamic
  * motion-graphics layer (dates, "5–4", the holding, the quotes) that makes it premium, not a
  * slideshow. Sits in the upper third so it never collides with the bottom captions. */
+const BeatLine: React.FC<{ln: string; i: number}> = ({ln, i}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  // mask reveal ("切り上がり"): the text rises from BELOW a clipping mask, staggered.
+  const enter = spring({frame: f - i * 7, fps, config: {damping: 18, stiffness: 110, mass: 0.9}});
+  const y = interpolate(enter, [0, 1], [118, 0]); // percentage of its own height
+  const short = ln.length <= 18;
+  const size = short ? 92 : 54;
+  return (
+    <div style={{overflow: 'hidden', padding: '0 6px', lineHeight: 1.06}}>
+      <div
+        style={{
+          transform: `translateY(${y}%)`,
+          color: i === 0 ? white : gold,
+          fontFamily: BRAND.font.display,
+          fontWeight: 900,
+          fontSize: size,
+          letterSpacing: -0.5,
+          textAlign: 'center',
+          whiteSpace: 'nowrap',
+          textShadow: `0 4px 24px rgba(0,0,0,0.92), 0 0 34px ${electric}55`,
+        }}
+      >
+        {ln}
+      </div>
+    </div>
+  );
+};
+
 const BeatText: React.FC<{lines: string[]}> = ({lines}) => {
   const f = useCurrentFrame();
   const {fps, durationInFrames} = useVideoConfig();
@@ -305,46 +358,41 @@ const BeatText: React.FC<{lines: string[]}> = ({lines}) => {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
+  const chip = spring({frame: f, fps, config: {damping: 16, stiffness: 130}});
+  const underline = spring({frame: f - 6, fps, config: {damping: 18, stiffness: 90}});
   return (
-    <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: '19%'}}>
-      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 18, opacity: outOp, maxWidth: '86%'}}>
-        {lines.map((ln, i) => {
-          const enter = spring({frame: f - i * 9, fps, config: {damping: 15, stiffness: 120, mass: 0.8}});
-          const x = interpolate(enter, [0, 1], [(i % 2 === 0 ? -1 : 1) * 70, 0]);
-          const y = interpolate(enter, [0, 1], [30, 0]);
-          const sc = interpolate(enter, [0, 1], [0.8, 1]);
-          const op = Math.min(enter * 1.6, 1);
-          const short = ln.length <= 18;
-          return (
-            <div
-              key={i}
-              style={{
-                transform: `translate(${x}px, ${y}px) scale(${sc})`,
-                opacity: op,
-                color: i === 0 ? white : gold,
-                fontFamily: BRAND.font.display,
-                fontWeight: 900,
-                fontSize: short ? 88 : 52,
-                lineHeight: 1.08,
-                letterSpacing: -0.5,
-                textAlign: 'center',
-                textShadow: `0 4px 24px rgba(0,0,0,0.92), 0 0 34px ${electric}55`,
-              }}
-            >
-              {ln}
-            </div>
-          );
-        })}
-        {/* animated gold underline that draws in under the beat — a moving premium accent */}
+    <AbsoluteFill style={{justifyContent: 'flex-start', alignItems: 'center', paddingTop: '17%'}}>
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 10, opacity: outOp, maxWidth: '90%'}}>
+        {/* kicker chip — a small gold bar that scales in above the headline (motion-graphics accent) */}
         <div
           style={{
-            marginTop: 4,
+            width: 54,
+            height: 6,
+            marginBottom: 8,
+            borderRadius: 3,
+            background: gold,
+            transform: `scaleX(${chip})`,
+            boxShadow: `0 0 16px ${gold}aa`,
+          }}
+        />
+        {/* Trail = true motion-blur streaks while the lines rise into place */}
+        <Trail layers={7} lagInFrames={1.1} trailOpacity={0.55}>
+          <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 6}}>
+            {lines.map((ln, i) => (
+              <BeatLine key={i} ln={ln} i={i} />
+            ))}
+          </div>
+        </Trail>
+        {/* animated gold underline that draws in under the beat */}
+        <div
+          style={{
+            marginTop: 8,
             height: 5,
             width: '46%',
             borderRadius: 3,
             background: gold,
             transformOrigin: 'center',
-            transform: `scaleX(${spring({frame: f - 6, fps, config: {damping: 18, stiffness: 90}})})`,
+            transform: `scaleX(${underline})`,
             opacity: outOp * 0.9,
             boxShadow: `0 0 18px ${gold}99`,
           }}
@@ -377,11 +425,18 @@ const PunchShot: React.FC<{src: string}> = ({src}) => {
   const f = useCurrentFrame();
   const {durationInFrames} = useVideoConfig();
   const p = interpolate(f, [0, durationInFrames], [0, 1], {extrapolateRight: 'clamp'});
-  const s = interpolate(p, [0, 1], [1.16, 1.04]);
+  const s = interpolate(p, [0, 1], [1.2, 1.06]);
   const op = interpolate(f, [0, 4], [0, 1], {extrapolateRight: 'clamp'});
+  // hard, fast punch-in with a decaying motion blur — the aggressive cold-open energy
+  const blur = interpolate(f, [0, 7], [20, 0], {extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden', opacity: op}}>
-      <AbsoluteFill style={{transform: `scale(${s})`, filter: 'brightness(0.62) contrast(1.15) saturate(0.85)'}}>
+      <AbsoluteFill
+        style={{
+          transform: `scale(${s})`,
+          filter: `brightness(0.62) contrast(1.15) saturate(0.85)${blur > 0.4 ? ` blur(${blur}px)` : ''}`,
+        }}
+      >
         <Cover src={src} />
       </AbsoluteFill>
       <Vignette strength={1.1} />
@@ -403,24 +458,26 @@ const Hook: React.FC<{hook: HookCut[]; line: string}> = ({hook, line}) => {
         </Sequence>
       ))}
       <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', padding: 120}}>
-        <div
-          style={{
-            transform: `translateY(${y}px)`,
-            opacity: lineOp,
-            color: white,
-            fontFamily: BRAND.font.display,
-            fontWeight: 900,
-            fontSize: 82,
-            lineHeight: 1.04,
-            letterSpacing: -1,
-            textAlign: 'center',
-            textTransform: 'uppercase',
-            textShadow: '0 6px 30px rgba(0,0,0,0.8)',
-            maxWidth: '86%',
-          }}
-        >
-          {line}
-        </div>
+        <Trail layers={6} lagInFrames={1.2} trailOpacity={0.5}>
+          <div
+            style={{
+              transform: `translateY(${y}px)`,
+              opacity: lineOp,
+              color: white,
+              fontFamily: BRAND.font.display,
+              fontWeight: 900,
+              fontSize: 82,
+              lineHeight: 1.04,
+              letterSpacing: -1,
+              textAlign: 'center',
+              textTransform: 'uppercase',
+              textShadow: '0 6px 30px rgba(0,0,0,0.8)',
+              maxWidth: '86%',
+            }}
+          >
+            {line}
+          </div>
+        </Trail>
       </AbsoluteFill>
       <Grain />
     </AbsoluteFill>

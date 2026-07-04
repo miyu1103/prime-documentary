@@ -210,6 +210,24 @@ def main(argv):
         raise RuntimeError(f"VIDEO hash != final_delivery canonical: {got} vs {want}")
     if THUMB.stat().st_size >= 2 * 1024 * 1024:
         raise RuntimeError("thumbnail >= 2MB")
+    # HARD LOCK: no upload without a green acceptance receipt bound to THIS render's bytes.
+    # A video that did not pass scripts/check_final_acceptance.py --emit-receipt physically
+    # cannot be scheduled. runtime_band is the one owner-accepted documented deviation.
+    ALLOWED_DEVIATIONS = {"runtime_band"}
+    receipt = PKG / "acceptance_receipt.v001.json"
+    if not receipt.exists():
+        raise RuntimeError(
+            f"no acceptance receipt {receipt} -- run "
+            f"`check_final_acceptance.py {EP} --render {VIDEO} --emit-receipt` first")
+    rc = json.loads(receipt.read_text("utf-8"))
+    if rc.get("video_sha256") != got:
+        raise RuntimeError(f"receipt is for a different render (receipt sha {rc.get('video_sha256')} "
+                           f"!= this video {got}); re-run the gate on THIS file")
+    bad = [c for c in rc.get("hard_failures", []) if c not in ALLOWED_DEVIATIONS]
+    if bad:
+        raise RuntimeError(f"acceptance gate NOT green: unresolved hard failures {bad}. "
+                           f"Fix them and re-emit the receipt before scheduling.")
+    print(f"OK acceptance receipt green (sha match; tolerated={sorted(set(rc.get('hard_failures', [])) & ALLOWED_DEVIATIONS)})")
     print(f"OK {EP}: title={cfg['title']!r}")
     print(f"OK video={VIDEO.name} {VIDEO.stat().st_size/1e6:.0f}MB sha_ok=True")
     print(f"OK thumb={THUMB.name} caps={CAPS.name}")
