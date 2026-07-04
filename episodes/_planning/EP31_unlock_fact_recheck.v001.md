@@ -51,7 +51,8 @@
 - **FR-FC** — foregone conclusion（Fisher 1976）：対象を「番号」か「中のデータ」かで結論反転。
 - **FR-SC** — 最高裁は未判断：Davis(2020/10/5)/Andrews(2021/5/17)/Sneed(2024/2/26) 上告不受理＋Valdez(2024/6/24) 不受理＝州境で権利が変わる。
 - **FR-FL** — フロリダ州内分裂：G.A.Q.L.(4th DCA 2018 守る) vs Stahl(2d DCA 2016 強制可)。（本編未使用・予備）
-- **FR-BORDER** — 国境例外は別枠・流動的：Smith(S.D.N.Y. 2023)ほか。（本編未使用・予備）
+- **FR-BORDER** — 国境例外は別枠・流動的（v002 SPN-0021で使用）：政府は国境で令状なし捜索を主張、巡回で必要な嫌疑水準が分裂（1st/4th/9th=reasonable suspicion、11th=不要）、Smith(S.D.N.Y. 2023, Rakoff)が令状要と判断した初例だが未確定。本編は「割れている/ほぼ誰も拘束しない」と表現。
+- **FR-BFU** — 技術的事実（判例でない・v002 SPN-0030で使用）：現代スマホは**電源を完全に切って再起動した最初の解除では生体認証が無効化され、パスコード入力が必須**（iOS の "Before First Unlock" 状態／Android も再起動後は生体無効でPIN要求）。widely-documented なデバイスセキュリティ挙動。**法的助言でなく端末仕様の事実**として提示。出典=Apple Platform Security Guide ほか一般的なセキュリティ文献。
 
 ## 出典（検証済URL）
 Riley: supreme.justia.com/cases/federal/us/573/373 ／ Fisher: supreme.justia.com/cases/federal/us/425/391 ／ Davis(Pa): law.justia.com/cases/pennsylvania/supreme-court/2019/56-map-2018 ＋ scotusblog Pennsylvania v. Davis ／ Seo(Ind): law.justia.com/cases/indiana/supreme-court/2020/18s-cr-595 ＋ eff.org 2020-06 ／ Andrews(NJ): law.justia.com/cases/new-jersey/supreme-court/2020/a-72-18 ＋ scotusblog ／ G.A.Q.L./Stahl(Fla): jolt.law.harvard.edu/digest/compelled-decryption-in-florida-a-foregone-conclusion ／ Payne(9th): cdn.ca9.uscourts.gov/datastore/opinions/2024/04/17/22-50262.pdf ／ Brown(D.C.): arnoldporter.com 2025-03 "When Your Fingers Do the Talking" ／ Valdez(Utah): law.justia.com/cases/utah/supreme-court/2023/20210175 ／ Sneed(Ill): law.justia.com/cases/illinois/supreme-court/2023/127968 ／ 国境: congress.gov/crs-product/LSB10387 ＋ eff.org 2023-05 ／ 生体まとめ: americanbar.org（compelled-biometrics-fifth-amendment-rights）。

@@ -1,7 +1,7 @@
-# EP31 `ai_prompts_READY.v001` — Codex貼り付け用（完成形40枚）
+# EP31 `ai_prompts_READY.v001` — Codex貼り付け用（完成形42枚＋サムネ5）
 
-**Episode:** `PD-2026-031-unlock`  ·  各プロンプトは STYLE + ≥3840px + NEGATIVE を結合済み。1枚ずつCodexへ。
-**保存ID:** `PD-2026-031-S###-IMG-001` 系。**匿名の人物のみ／実在本人・判事の肖像なし／実機ロゴ・OS UIなし**。
+**Episode:** `PD-2026-031-unlock`（台本v002対応）。各プロンプトは STYLE + ≥3840px + NEGATIVE を結合済み。1枚ずつCodexへ。
+**保存ID:** `PD-2026-031-S###-IMG-0##`。**匿名の人物のみ／実在本人・判事の肖像なし／実機ロゴ・OS UIなし**。IMG-41/42はv002の国境ビート用。
 
 ## IMG-01
 A phone lying face-up on a car passenger seat at night, glowing cold blue, red-and-blue emergency light bleeding through the windshield, driver anonymous in shadow. STYLE: cinematic documentary photography, photoreal, 16:9, 35mm, shallow depth of field, desaturated cold grade with deep navy shadows and a single cold blue screen-glow plus one warm practical light, subtle film grain, high dynamic range, restrained, moody, tense, long edge at least 3840px. NEGATIVE: no readable text or lettering, no numbers on screen, no brand logos, no smartphone brand marks, no recognizable phone OS interface, no watermark, no specific real person or celebrity or judge likeness, no recognizable identifiable face, no distorted hands, no extra fingers, no bad anatomy, no cartoon, no illustration, no 3d-render look, no oversaturation.
@@ -123,9 +123,15 @@ Macro of a thumb resting still beside (not on) a dark phone sensor — the choic
 ## IMG-40
 Wide calm shot of an ordinary street at golden hour, ordinary life, one lit window — the stakes are everyone's, quietly. STYLE: cinematic documentary photography, photoreal, 16:9, 35mm, shallow depth of field, desaturated cold grade with deep navy shadows and a single cold blue screen-glow plus one warm practical light, subtle film grain, high dynamic range, restrained, moody, tense, long edge at least 3840px. NEGATIVE: no readable text or lettering, no numbers on screen, no brand logos, no smartphone brand marks, no recognizable phone OS interface, no watermark, no specific real person or celebrity or judge likeness, no recognizable identifiable face, no distorted hands, no extra fingers, no bad anatomy, no cartoon, no illustration, no 3d-render look, no oversaturation.
 
+## IMG-41
+A phone lying alone on a cold steel border-inspection table at night beside a blank passport-like booklet, hard overhead light, an anonymous gloved hand at the frame edge, institutional and exposed. No readable text, no logos. STYLE: cinematic documentary photography, photoreal, 16:9, 35mm, shallow depth of field, desaturated cold grade with deep navy shadows and a single cold blue screen-glow plus one warm practical light, subtle film grain, high dynamic range, restrained, moody, tense, long edge at least 3840px. NEGATIVE: no readable text or lettering, no numbers on screen, no brand logos, no smartphone brand marks, no recognizable phone OS interface, no watermark, no specific real person or celebrity or judge likeness, no recognizable identifiable face, no distorted hands, no extra fingers, no bad anatomy, no cartoon, no illustration, no 3d-render look, no oversaturation.
+
+## IMG-42
+A deserted airport security checkpoint at night, empty inspection lanes and a hard line of light across the floor like a border, cold blue tones, a single phone glowing faintly on the belt. No people, no brand logos, no readable signage. STYLE: cinematic documentary photography, photoreal, 16:9, 35mm, shallow depth of field, desaturated cold grade with deep navy shadows and a single cold blue screen-glow plus one warm practical light, subtle film grain, high dynamic range, restrained, moody, tense, long edge at least 3840px. NEGATIVE: no readable text or lettering, no numbers on screen, no brand logos, no smartphone brand marks, no recognizable phone OS interface, no watermark, no specific real person or celebrity or judge likeness, no recognizable identifiable face, no distorted hands, no extra fingers, no bad anatomy, no cartoon, no illustration, no 3d-render look, no oversaturation.
+
 ---
 
-# サムネ背景アート（完成形5案・出力1280x720・文字は入れない）
+# サムネ背景アート（完成形5案・1280x720・文字なし）
 
 ## T1  （見出し: THEY CAN FORCE YOUR THUMB）
 Extreme close-up: an anonymous hand with a metal handcuff at the wrist, its thumb pressed hard onto a blank glowing phone sensor, cold **electric blue** unlock-glow exploding from the screen against a near-black background. Huge, high-contrast, menacing. Empty dark space top-left for a headline. No text, no faces, no logos. STYLE: 1280x720, huge central subject, extreme high contrast, black or deep navy background, ONE accent color only (gold #E5B53A OR electric blue #1F6BFF), cinematic, reads at 320px, leave clear negative space for a headline. NEGATIVE: no readable text, no lettering, no numbers, no brand logos, no phone OS interface, no watermark, no real person or celebrity or judge likeness, no identifiable face, no clutter, no low-contrast, bad anatomy.

@@ -58,3 +58,7 @@
 38. An anonymous person standing at a rain-cleared window at dawn, back to camera, phone in hand, contemplative.
 39. Macro of a thumb resting still beside (not on) a dark phone sensor — the choice not made, restraint. 
 40. Wide calm shot of an ordinary street at golden hour, ordinary life, one lit window — the stakes are everyone's, quietly.
+
+## 追加（v002・国境/空港ビート SPN-0021 用）（IMG-41〜42）
+41. A phone lying alone on a cold steel border-inspection table at night beside a blank passport-like booklet, hard overhead light, an anonymous gloved hand at the frame edge, institutional and exposed. No readable text, no logos.
+42. A deserted airport security checkpoint at night, empty inspection lanes and a hard line of light across the floor like a border, cold blue tones, a single phone glowing faintly on the belt. No people, no brand logos, no readable signage.
