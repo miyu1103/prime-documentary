@@ -17,6 +17,13 @@ FPS = 30
 MIN_GAP = 22
 DUR_CYCLE = [3.0, 3.6, 3.2, 4.0, 3.4, 2.8]
 KIND = ["img", "foot", "img", "foot", "foot"]
+# footage diversity (owner 2026-07-04 "毎作品同じ素材 ... 天秤の動画は何度も見てきた").
+# Cap reuse at build time so the acceptance gate's footage_diversity passes: aim stricter
+# than the gate (gate = max 4 / distinct 0.40 / generic 2).
+MAX_USES = 3                       # a clip may be cut at most this many times per film
+GENERIC_PAT = r"scale|gavel|hourglass|clock|stopwatch|balance"  # over-familiar symbols
+GENERIC_MAX = 1                    # a generic symbol may appear at most once
+DIVERSITY_TARGET = 0.55            # warn (loudly) if distinct/total falls below this
 IMG_TREAT = ["bleed","scan","duotone","focus","bleed","duotone","card","scan","focus","bleed","duotone","scan"]
 
 
@@ -64,9 +71,14 @@ def main():
 
     ALL_IMG=[("img",s) for s in imgs]; ALL_FOOT=[("foot",s) for s in foot]
     used={}; last={}
+    def cap_for(src): return GENERIC_MAX if re.search(GENERIC_PAT, src, re.I) else MAX_USES
     def pick(pool,i):
-        elig=[a for a in pool if i-last.get(a[1],-999)>MIN_GAP]
-        return sorted(elig or pool, key=lambda a:(used.get(a[1],0), last.get(a[1],-999)))[0]
+        # prefer clips still under their reuse cap AND past the min-gap; fall back only if the
+        # whole pool is exhausted (small staged pool -> the diversity warning fires below).
+        under=[a for a in pool if used.get(a[1],0) < cap_for(a[1])]
+        base=under or pool
+        elig=[a for a in base if i-last.get(a[1],-999)>MIN_GAP]
+        return sorted(elig or base, key=lambda a:(used.get(a[1],0), last.get(a[1],-999)))[0]
     cuts=[]; t=0.0; di=0; ict=0; lt=None
     while t < T-0.4:
         i=len(cuts); want=KIND[i%len(KIND)]
@@ -102,7 +114,17 @@ def main():
     (PUB/"film_data.v001.json").write_text(json.dumps(data,ensure_ascii=False,indent=2),"utf-8")
     (ROOT/"remotion"/"src"/"data"/f"{slug}_film.json").write_text(json.dumps(data,ensure_ascii=False,indent=2),"utf-8")
     ni=sum(1 for c in cuts if c["kind"]=="img"); nf=sum(1 for c in cuts if c["kind"]=="footage")
-    print(f"[{ep}] imgs={len(imgs)} factory={len(foot)} cuts={len(cuts)}(img{ni}/foot{nf}) distinct={len(set(c['src'] for c in cuts))} beats={len(beats)} hook={len(hook)} narr={T:.0f}s")
+    import collections
+    cnt=collections.Counter(c["src"] for c in cuts); distinct=len(cnt); total=len(cuts)
+    frac=distinct/total if total else 0.0; worst=cnt.most_common(1)[0]
+    print(f"[{ep}] imgs={len(imgs)} factory={len(foot)} cuts={total}(img{ni}/foot{nf}) "
+          f"distinct={distinct} distinct_frac={frac:.2f} max_reuse={worst[1]} beats={len(beats)} hook={len(hook)} narr={T:.0f}s")
+    if frac < DIVERSITY_TARGET:
+        need=int(-(-total*DIVERSITY_TARGET//1)) - distinct  # ceil(total*target) - distinct
+        print(f"  !! FOOTAGE DIVERSITY LOW: distinct_frac {frac:.2f} < {DIVERSITY_TARGET:.2f} "
+              f"(pool only {distinct} distinct for {total} cuts). Stage >= {need} MORE distinct clips "
+              f"(e.g. scripts/select_factory_assets.py --theme <legal|crime|police|finance>) into "
+              f"remotion/public/{slug}/factory and re-run, OR the acceptance gate footage_diversity WILL fail.")
     print(f"wrote remotion/public/{slug}/film_data.v001.json + src/data/{slug}_film.json")
     return 0
 
