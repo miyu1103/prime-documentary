@@ -7,38 +7,34 @@ Owner directive (2026-07-05)。**この文書はショート（縦9:16）制作�
 
 ショートのAI画像は、**商用利用OKなモデルだけ**を使い、下記のチューニング済みパイプラインで生成する。
 「生成できた」ではなく「品質ゲート通過」が使用可否（CLAUDE invariant 13）。
+**第一選択＝SD3.5 Large（1）／フォールバック＝SDXL gen_max.ps1（2）。** どちらも商用OK。
 
-### 1) 現時点で使う正典パイプライン（ready・商用OK）
+### 1) 第一選択：SD3.5 Large（商用OK・SDXL超え・2026-07-05 検証済み昇格）
 
-RTX4090ノードのローカルSDXLを、以下の**チューニング済みラッパー**経由で叩く。素の txt2img を直接呼ばない。
+`C:\Users\aab15\ComfyUI` の SD3.5 Large（fp8・全部入り14GB）を第一選択とする。
+ライセンス＝Stabilityコミュニティライセンス（年商$1M未満は商用可）。RTX4090で1枚~45秒。
 
-```
-C:\Users\aab15\stable-diffusion-webui\gen_max.ps1
-```
-
-固定で効く設定（微妙画像の主因を全部潰してある）:
-- clip_skip=1（SDXLの正。2は誤設定）
-- SDXL専用VAE `sdxl_vae_fp16fix.safetensors`
-- ADetailer 顔+目 2パス自動（人物の破綻を防ぐ決定打）
-- Hires.fix R-ESRGAN 4x+ 2x / DPM++ 2M SDE / Karras / steps32 / CFG5
-
-縦ショート生成コマンド例（9:16）:
+生成（プロンプト差し替えで量産・縦ショートはW768 H1344）:
 ```powershell
-& "C:\Users\aab15\stable-diffusion-webui\gen_max.ps1" `
-  -Prompt "<英語プロンプト>" -Orient short -Out "<出力先>.png"
-# 人物なしの図なら -NoADetailer / さらに高精細なら -Premium(DAT x4)
-# モデルは -Model juggernaut(既定) / realvis どちらも商用OK
+cd C:\Users\aab15\ComfyUI
+.\venv\Scripts\python.exe sd35_gen.py "<英語プロンプト>" "<出力先>.png" <seed> 768 1344 32 4.5
 ```
-起動前提: A1111 API(7860)が稼働していること。停止中なら
-`& ".\venv\Scripts\python.exe" launch.py --api --no-half-vae --xformers`（venv直起動。batは不可）。
+起動前提: ComfyUI API(8188)稼働。停止中なら
+`cd C:\Users\aab15\ComfyUI; .\venv\Scripts\python.exe main.py --port 8188`（venv直起動）。
 
-商用OKモデル（このノードに導入済み）: JuggernautXL Ragnarok / RealVisXL V5.0 フル版。
+**⚠️VRAM競合（必読）**: ComfyUI(SD3.5)とA1111(7860)は同じ4090・24GBを取り合う。両方フルロードするとサンプリングが0%で停止する。SD3.5で作るなら、A1111側のVRAMを先に解放してから回す:
+`Invoke-RestMethod -Method Post http://127.0.0.1:7860/sdapi/v1/unload-checkpoint`（A1111プロセスは維持・次回自動再ロード）。逆にA1111(gen_max)を使う番なら、ComfyUIを起動しっぱなしにしない。
 
-### 2) 近日昇格：SD3.5 Large（商用OK・SDXL超え・準備中）
+### 2) フォールバック：SDXL gen_max.ps1（商用OK・ready）
 
-`C:\Users\aab15\ComfyUI` に SD3.5 Large を導入中（Stabilityコミュニティライセンス＝年商$1M未満は商用可）。
-**検証で緑になり次第、ショートの第一選択をSD3.5 Largeに昇格する**。それまでは上記(1)を使う。
-（本文書は準備が整った時点で更新する。現時点で「SD3.5が使える」と仮定しない。）
+SD3.5が使えない時（ComfyUI未起動・A1111が別用途でVRAM占有中など）は、チューニング済みSDXLを使う。素の txt2img は直接呼ばない。
+```powershell
+& "C:\Users\aab15\stable-diffusion-webui\gen_max.ps1" -Prompt "<英語プロンプト>" -Orient short -Out "<出力先>.png"
+# -NoADetailer(人物なし) / -Premium(DAT x4高精細) / -Model juggernaut|realvis(どちらも商用OK)
+```
+固定設定: clip_skip1 / SDXL-VAE / ADetailer顔+目2パス / Hires R-ESRGAN 4x+ / DPM++ 2M SDE Karras / steps32 CFG5。
+起動: A1111 API(7860)。停止中なら `& ".\venv\Scripts\python.exe" launch.py --api --no-half-vae --xformers`（venv直・batは不可）。
+商用OKモデル: JuggernautXL Ragnarok / RealVisXL V5.0 フル版。
 
 ## 禁止（重要）
 
