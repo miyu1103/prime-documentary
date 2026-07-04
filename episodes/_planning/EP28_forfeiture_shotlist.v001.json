@@ -3,25 +3,24 @@
   "episode_id": "PD-2026-028-forfeiture",
   "revision": "v001",
   "generated_from": "EP28_forfeiture_script.annotated.v001.json",
-  "source_annotated_sha256": "d94dcc6bf12fca738735ab10b55bb1177894b7b73482f52de1cd862721886193",
+  "source_annotated_sha256": "2d61556afa2741a3ae22b8e15f68776a8b99049bcc73e403706471fb9148beb7",
   "note": "PLAN only. Build step (build_case_film assets) resolves real image filenames + audio-aligned per-cut start/dur into remotion/src/data/forfeiture_film.json. avg_cut<=~6s and freeze/animation_density gates apply at acceptance.",
   "shots": [
     {
       "span_id": "SPN-0001",
       "chapter_id": "hook",
       "narrative_function": "hook_cold_open",
-      "estimated_seconds": 13.4,
-      "cut_count": 5,
+      "estimated_seconds": 11.6,
+      "cut_count": 4,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 2,
-        "footage": 3,
+        "footage": 2,
         "treatments_rotation": [
           "bleed",
           "scan",
           "duotone",
-          "focus",
-          "bleed"
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -49,11 +48,11 @@
       "span_id": "SPN-0002",
       "chapter_id": "opening",
       "narrative_function": "thesis_and_promise",
-      "estimated_seconds": 19.1,
-      "cut_count": 7,
+      "estimated_seconds": 16.5,
+      "cut_count": 6,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
+        "stills": 2,
         "footage": 4,
         "treatments_rotation": [
           "scan",
@@ -61,8 +60,7 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -88,12 +86,12 @@
       "span_id": "SPN-0003",
       "chapter_id": "act1",
       "narrative_function": "event",
-      "estimated_seconds": 28.9,
-      "cut_count": 10,
+      "estimated_seconds": 24.9,
+      "cut_count": 9,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 4,
-        "footage": 6,
+        "footage": 5,
         "treatments_rotation": [
           "duotone",
           "focus",
@@ -103,8 +101,7 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -118,8 +115,7 @@
         "PD-2026-028-IMG-06",
         "PD-2026-028-IMG-07",
         "PD-2026-028-IMG-08",
-        "PD-2026-028-IMG-09",
-        "PD-2026-028-IMG-10"
+        "PD-2026-028-IMG-09"
       ],
       "footage_search_keywords": [
         "philadelphia row houses",
@@ -139,7 +135,7 @@
       "span_id": "SPN-0004",
       "chapter_id": "act1",
       "narrative_function": "thesis_reinforce",
-      "estimated_seconds": 15.1,
+      "estimated_seconds": 13.0,
       "cut_count": 5,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -156,11 +152,11 @@
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-10",
         "PD-2026-028-IMG-01",
         "PD-2026-028-IMG-02",
         "PD-2026-028-IMG-03",
-        "PD-2026-028-IMG-04",
-        "PD-2026-028-IMG-05"
+        "PD-2026-028-IMG-04"
       ],
       "footage_search_keywords": [
         "philadelphia row houses",
@@ -178,34 +174,30 @@
       "span_id": "SPN-0005",
       "chapter_id": "act1",
       "narrative_function": "event_trigger",
-      "estimated_seconds": 21.2,
-      "cut_count": 8,
+      "estimated_seconds": 18.2,
+      "cut_count": 6,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
-        "footage": 5,
+        "stills": 2,
+        "footage": 4,
         "treatments_rotation": [
           "bleed",
           "scan",
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone",
-          "focus"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-05",
         "PD-2026-028-IMG-06",
         "PD-2026-028-IMG-07",
         "PD-2026-028-IMG-08",
         "PD-2026-028-IMG-09",
-        "PD-2026-028-IMG-10",
-        "PD-2026-028-IMG-01",
-        "PD-2026-028-IMG-02",
-        "PD-2026-028-IMG-03"
+        "PD-2026-028-IMG-10"
       ],
       "footage_search_keywords": [
         "philadelphia row houses",
@@ -226,26 +218,24 @@
       "span_id": "SPN-0006",
       "chapter_id": "act1",
       "narrative_function": "human_beat",
-      "estimated_seconds": 11.0,
-      "cut_count": 4,
+      "estimated_seconds": 9.5,
+      "cut_count": 3,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 2,
+        "stills": 1,
         "footage": 2,
         "treatments_rotation": [
           "scan",
           "duotone",
-          "focus",
-          "bleed"
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-028-IMG-04",
-        "PD-2026-028-IMG-05",
-        "PD-2026-028-IMG-06",
-        "PD-2026-028-IMG-07"
+        "PD-2026-028-IMG-01",
+        "PD-2026-028-IMG-02",
+        "PD-2026-028-IMG-03"
       ],
       "footage_search_keywords": [
         "philadelphia row houses",
@@ -265,26 +255,24 @@
       "span_id": "SPN-0007",
       "chapter_id": "act1",
       "narrative_function": "misdirection",
-      "estimated_seconds": 11.0,
-      "cut_count": 4,
+      "estimated_seconds": 9.5,
+      "cut_count": 3,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 2,
+        "stills": 1,
         "footage": 2,
         "treatments_rotation": [
           "duotone",
           "focus",
-          "bleed",
-          "scan"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-028-IMG-08",
-        "PD-2026-028-IMG-09",
-        "PD-2026-028-IMG-10",
-        "PD-2026-028-IMG-01"
+        "PD-2026-028-IMG-04",
+        "PD-2026-028-IMG-05",
+        "PD-2026-028-IMG-06"
       ],
       "footage_search_keywords": [
         "philadelphia row houses",
@@ -302,30 +290,28 @@
       "span_id": "SPN-0008",
       "chapter_id": "act1",
       "narrative_function": "act1_turn_rehook",
-      "estimated_seconds": 15.5,
-      "cut_count": 6,
+      "estimated_seconds": 13.3,
+      "cut_count": 5,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 2,
-        "footage": 4,
+        "footage": 3,
         "treatments_rotation": [
           "focus",
           "bleed",
           "scan",
           "duotone",
-          "focus",
-          "bleed"
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-028-IMG-02",
-        "PD-2026-028-IMG-03",
-        "PD-2026-028-IMG-04",
-        "PD-2026-028-IMG-05",
-        "PD-2026-028-IMG-06",
-        "PD-2026-028-IMG-07"
+        "PD-2026-028-IMG-07",
+        "PD-2026-028-IMG-08",
+        "PD-2026-028-IMG-09",
+        "PD-2026-028-IMG-10",
+        "PD-2026-028-IMG-01"
       ],
       "footage_search_keywords": [
         "philadelphia row houses",
@@ -345,7 +331,7 @@
       "span_id": "SPN-0009",
       "chapter_id": "act2",
       "narrative_function": "mechanism_event",
-      "estimated_seconds": 12.2,
+      "estimated_seconds": 10.5,
       "cut_count": 4,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -388,11 +374,11 @@
       "span_id": "SPN-0010",
       "chapter_id": "act2",
       "narrative_function": "mechanism_event",
-      "estimated_seconds": 24.4,
-      "cut_count": 9,
+      "estimated_seconds": 21.0,
+      "cut_count": 8,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 4,
+        "stills": 3,
         "footage": 5,
         "treatments_rotation": [
           "scan",
@@ -402,8 +388,7 @@
           "scan",
           "duotone",
           "focus",
-          "bleed",
-          "scan"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -416,8 +401,7 @@
         "PD-2026-028-IMG-19",
         "PD-2026-028-IMG-20",
         "PD-2026-028-IMG-21",
-        "PD-2026-028-IMG-11",
-        "PD-2026-028-IMG-12"
+        "PD-2026-028-IMG-11"
       ],
       "footage_search_keywords": [
         "empty courtroom",
@@ -438,30 +422,28 @@
       "span_id": "SPN-0011",
       "chapter_id": "act2",
       "narrative_function": "central_question",
-      "estimated_seconds": 15.5,
-      "cut_count": 6,
+      "estimated_seconds": 13.3,
+      "cut_count": 5,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 2,
-        "footage": 4,
+        "footage": 3,
         "treatments_rotation": [
           "duotone",
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-12",
         "PD-2026-028-IMG-13",
         "PD-2026-028-IMG-14",
         "PD-2026-028-IMG-15",
-        "PD-2026-028-IMG-16",
-        "PD-2026-028-IMG-17",
-        "PD-2026-028-IMG-18"
+        "PD-2026-028-IMG-16"
       ],
       "footage_search_keywords": [
         "empty courtroom",
@@ -484,12 +466,12 @@
       "span_id": "SPN-0012",
       "chapter_id": "act2",
       "narrative_function": "mechanism_explainer",
-      "estimated_seconds": 39.9,
-      "cut_count": 14,
+      "estimated_seconds": 55.4,
+      "cut_count": 20,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 6,
-        "footage": 8,
+        "stills": 8,
+        "footage": 12,
         "treatments_rotation": [
           "focus",
           "bleed",
@@ -504,12 +486,20 @@
           "scan",
           "duotone",
           "focus",
-          "bleed"
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-17",
+        "PD-2026-028-IMG-18",
         "PD-2026-028-IMG-19",
         "PD-2026-028-IMG-20",
         "PD-2026-028-IMG-21",
@@ -518,9 +508,7 @@
         "PD-2026-028-IMG-13",
         "PD-2026-028-IMG-14",
         "PD-2026-028-IMG-15",
-        "PD-2026-028-IMG-16",
-        "PD-2026-028-IMG-17",
-        "PD-2026-028-IMG-18"
+        "PD-2026-028-IMG-16"
       ],
       "footage_search_keywords": [
         "empty courtroom",
@@ -543,11 +531,11 @@
       "span_id": "SPN-0013",
       "chapter_id": "act2",
       "narrative_function": "mechanism_vivid",
-      "estimated_seconds": 26.5,
-      "cut_count": 9,
+      "estimated_seconds": 22.8,
+      "cut_count": 8,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 4,
+        "stills": 3,
         "footage": 5,
         "treatments_rotation": [
           "bleed",
@@ -557,22 +545,20 @@
           "bleed",
           "scan",
           "duotone",
-          "focus",
-          "bleed"
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-17",
+        "PD-2026-028-IMG-18",
         "PD-2026-028-IMG-19",
         "PD-2026-028-IMG-20",
         "PD-2026-028-IMG-21",
         "PD-2026-028-IMG-11",
         "PD-2026-028-IMG-12",
-        "PD-2026-028-IMG-13",
-        "PD-2026-028-IMG-14",
-        "PD-2026-028-IMG-15",
-        "PD-2026-028-IMG-16"
+        "PD-2026-028-IMG-13"
       ],
       "footage_search_keywords": [
         "empty courtroom",
@@ -595,13 +581,17 @@
       "span_id": "SPN-0014",
       "chapter_id": "act2",
       "narrative_function": "human_beat",
-      "estimated_seconds": 15.9,
-      "cut_count": 6,
+      "estimated_seconds": 27.4,
+      "cut_count": 10,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 2,
-        "footage": 4,
+        "stills": 4,
+        "footage": 6,
         "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
           "scan",
           "duotone",
           "focus",
@@ -613,12 +603,16 @@
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-14",
+        "PD-2026-028-IMG-15",
+        "PD-2026-028-IMG-16",
         "PD-2026-028-IMG-17",
         "PD-2026-028-IMG-18",
         "PD-2026-028-IMG-19",
         "PD-2026-028-IMG-20",
         "PD-2026-028-IMG-21",
-        "PD-2026-028-IMG-11"
+        "PD-2026-028-IMG-11",
+        "PD-2026-028-IMG-12"
       ],
       "footage_search_keywords": [
         "empty courtroom",
@@ -641,7 +635,7 @@
       "span_id": "SPN-0015",
       "chapter_id": "act2",
       "narrative_function": "human_beat",
-      "estimated_seconds": 17.9,
+      "estimated_seconds": 15.4,
       "cut_count": 6,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -659,12 +653,12 @@
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-028-IMG-12",
         "PD-2026-028-IMG-13",
         "PD-2026-028-IMG-14",
         "PD-2026-028-IMG-15",
         "PD-2026-028-IMG-16",
-        "PD-2026-028-IMG-17"
+        "PD-2026-028-IMG-17",
+        "PD-2026-028-IMG-18"
       ],
       "footage_search_keywords": [
         "empty courtroom",
@@ -687,12 +681,12 @@
       "span_id": "SPN-0016",
       "chapter_id": "act2",
       "narrative_function": "mechanism_vivid",
-      "estimated_seconds": 48.5,
-      "cut_count": 17,
+      "estimated_seconds": 41.7,
+      "cut_count": 15,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 7,
-        "footage": 10,
+        "stills": 6,
+        "footage": 9,
         "treatments_rotation": [
           "focus",
           "bleed",
@@ -708,15 +702,12 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone",
-          "focus"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-028-IMG-18",
         "PD-2026-028-IMG-19",
         "PD-2026-028-IMG-20",
         "PD-2026-028-IMG-21",
@@ -726,7 +717,8 @@
         "PD-2026-028-IMG-14",
         "PD-2026-028-IMG-15",
         "PD-2026-028-IMG-16",
-        "PD-2026-028-IMG-17"
+        "PD-2026-028-IMG-17",
+        "PD-2026-028-IMG-18"
       ],
       "footage_search_keywords": [
         "empty courtroom",
@@ -750,7 +742,7 @@
       "span_id": "SPN-0017",
       "chapter_id": "act2",
       "narrative_function": "act2_button",
-      "estimated_seconds": 9.4,
+      "estimated_seconds": 8.1,
       "cut_count": 3,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -765,9 +757,9 @@
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-028-IMG-18",
         "PD-2026-028-IMG-19",
-        "PD-2026-028-IMG-20"
+        "PD-2026-028-IMG-20",
+        "PD-2026-028-IMG-21"
       ],
       "footage_search_keywords": [
         "empty courtroom",
@@ -788,13 +780,17 @@
       "span_id": "SPN-0018",
       "chapter_id": "act3",
       "narrative_function": "act3_rehook_second_person",
-      "estimated_seconds": 25.7,
-      "cut_count": 9,
+      "estimated_seconds": 36.1,
+      "cut_count": 13,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 4,
-        "footage": 5,
+        "stills": 5,
+        "footage": 8,
         "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
           "scan",
           "duotone",
           "focus",
@@ -817,7 +813,8 @@
         "PD-2026-028-IMG-27",
         "PD-2026-028-IMG-28",
         "PD-2026-028-IMG-29",
-        "PD-2026-028-IMG-30"
+        "PD-2026-028-IMG-30",
+        "PD-2026-028-IMG-31"
       ],
       "footage_search_keywords": [
         "case boxes wall",
@@ -839,12 +836,12 @@
       "span_id": "SPN-0019",
       "chapter_id": "act3",
       "narrative_function": "scale",
-      "estimated_seconds": 22.4,
-      "cut_count": 8,
+      "estimated_seconds": 19.3,
+      "cut_count": 7,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 3,
-        "footage": 5,
+        "footage": 4,
         "treatments_rotation": [
           "duotone",
           "focus",
@@ -852,14 +849,12 @@
           "scan",
           "duotone",
           "focus",
-          "bleed",
-          "scan"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-028-IMG-31",
         "PD-2026-028-IMG-22",
         "PD-2026-028-IMG-23",
         "PD-2026-028-IMG-24",
@@ -890,21 +885,19 @@
       "span_id": "SPN-0020",
       "chapter_id": "act3",
       "narrative_function": "analysis",
-      "estimated_seconds": 21.2,
-      "cut_count": 8,
+      "estimated_seconds": 18.2,
+      "cut_count": 6,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
-        "footage": 5,
+        "stills": 2,
+        "footage": 4,
         "treatments_rotation": [
           "focus",
           "bleed",
           "scan",
           "duotone",
           "focus",
-          "bleed",
-          "scan",
-          "duotone"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -915,9 +908,7 @@
         "PD-2026-028-IMG-31",
         "PD-2026-028-IMG-22",
         "PD-2026-028-IMG-23",
-        "PD-2026-028-IMG-24",
-        "PD-2026-028-IMG-25",
-        "PD-2026-028-IMG-26"
+        "PD-2026-028-IMG-24"
       ],
       "footage_search_keywords": [
         "case boxes wall",
@@ -939,26 +930,24 @@
       "span_id": "SPN-0021",
       "chapter_id": "act3",
       "narrative_function": "rehook_question",
-      "estimated_seconds": 9.8,
-      "cut_count": 4,
+      "estimated_seconds": 8.4,
+      "cut_count": 3,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 2,
+        "stills": 1,
         "footage": 2,
         "treatments_rotation": [
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-028-IMG-27",
-        "PD-2026-028-IMG-28",
-        "PD-2026-028-IMG-29",
-        "PD-2026-028-IMG-30"
+        "PD-2026-028-IMG-25",
+        "PD-2026-028-IMG-26",
+        "PD-2026-028-IMG-27"
       ],
       "footage_search_keywords": [
         "case boxes wall",
@@ -980,12 +969,12 @@
       "span_id": "SPN-0022",
       "chapter_id": "act3",
       "narrative_function": "mechanism_core",
-      "estimated_seconds": 33.4,
-      "cut_count": 12,
+      "estimated_seconds": 48.8,
+      "cut_count": 17,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 5,
-        "footage": 7,
+        "stills": 7,
+        "footage": 10,
         "treatments_rotation": [
           "scan",
           "duotone",
@@ -998,22 +987,27 @@
           "scan",
           "duotone",
           "focus",
-          "bleed"
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-28",
+        "PD-2026-028-IMG-29",
+        "PD-2026-028-IMG-30",
         "PD-2026-028-IMG-31",
         "PD-2026-028-IMG-22",
         "PD-2026-028-IMG-23",
         "PD-2026-028-IMG-24",
         "PD-2026-028-IMG-25",
         "PD-2026-028-IMG-26",
-        "PD-2026-028-IMG-27",
-        "PD-2026-028-IMG-28",
-        "PD-2026-028-IMG-29",
-        "PD-2026-028-IMG-30"
+        "PD-2026-028-IMG-27"
       ],
       "footage_search_keywords": [
         "case boxes wall",
@@ -1036,12 +1030,12 @@
       "span_id": "SPN-0023",
       "chapter_id": "act3",
       "narrative_function": "legal_backdrop",
-      "estimated_seconds": 41.1,
-      "cut_count": 15,
+      "estimated_seconds": 35.4,
+      "cut_count": 13,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 6,
-        "footage": 9,
+        "stills": 5,
+        "footage": 8,
         "treatments_rotation": [
           "duotone",
           "focus",
@@ -1055,24 +1049,22 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus",
-          "bleed"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-28",
+        "PD-2026-028-IMG-29",
+        "PD-2026-028-IMG-30",
         "PD-2026-028-IMG-31",
         "PD-2026-028-IMG-22",
         "PD-2026-028-IMG-23",
         "PD-2026-028-IMG-24",
         "PD-2026-028-IMG-25",
         "PD-2026-028-IMG-26",
-        "PD-2026-028-IMG-27",
-        "PD-2026-028-IMG-28",
-        "PD-2026-028-IMG-29",
-        "PD-2026-028-IMG-30"
+        "PD-2026-028-IMG-27"
       ],
       "footage_search_keywords": [
         "case boxes wall",
@@ -1095,12 +1087,12 @@
       "span_id": "SPN-0024",
       "chapter_id": "act3",
       "narrative_function": "turn_to_fight",
-      "estimated_seconds": 33.0,
-      "cut_count": 12,
+      "estimated_seconds": 28.4,
+      "cut_count": 10,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 5,
-        "footage": 7,
+        "stills": 4,
+        "footage": 6,
         "treatments_rotation": [
           "focus",
           "bleed",
@@ -1111,24 +1103,22 @@
           "scan",
           "duotone",
           "focus",
-          "bleed",
-          "scan",
-          "duotone"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-28",
+        "PD-2026-028-IMG-29",
+        "PD-2026-028-IMG-30",
         "PD-2026-028-IMG-31",
         "PD-2026-028-IMG-22",
         "PD-2026-028-IMG-23",
         "PD-2026-028-IMG-24",
         "PD-2026-028-IMG-25",
         "PD-2026-028-IMG-26",
-        "PD-2026-028-IMG-27",
-        "PD-2026-028-IMG-28",
-        "PD-2026-028-IMG-29",
-        "PD-2026-028-IMG-30"
+        "PD-2026-028-IMG-27"
       ],
       "footage_search_keywords": [
         "case boxes wall",
@@ -1150,11 +1140,11 @@
       "span_id": "SPN-0025",
       "chapter_id": "act3",
       "narrative_function": "act3_button_openloop",
-      "estimated_seconds": 20.0,
-      "cut_count": 7,
+      "estimated_seconds": 17.2,
+      "cut_count": 6,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
+        "stills": 2,
         "footage": 4,
         "treatments_rotation": [
           "bleed",
@@ -1162,20 +1152,18 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-28",
+        "PD-2026-028-IMG-29",
+        "PD-2026-028-IMG-30",
         "PD-2026-028-IMG-31",
         "PD-2026-028-IMG-22",
-        "PD-2026-028-IMG-23",
-        "PD-2026-028-IMG-24",
-        "PD-2026-028-IMG-25",
-        "PD-2026-028-IMG-26",
-        "PD-2026-028-IMG-27"
+        "PD-2026-028-IMG-23"
       ],
       "footage_search_keywords": [
         "case boxes wall",
@@ -1197,7 +1185,7 @@
       "span_id": "SPN-0026",
       "chapter_id": "act4",
       "narrative_function": "resolution_tension",
-      "estimated_seconds": 12.2,
+      "estimated_seconds": 10.5,
       "cut_count": 4,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -1237,11 +1225,11 @@
       "span_id": "SPN-0027",
       "chapter_id": "act4",
       "narrative_function": "resolution_turn",
-      "estimated_seconds": 18.3,
-      "cut_count": 7,
+      "estimated_seconds": 15.8,
+      "cut_count": 6,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
+        "stills": 2,
         "footage": 4,
         "treatments_rotation": [
           "duotone",
@@ -1249,8 +1237,7 @@
           "bleed",
           "scan",
           "duotone",
-          "focus",
-          "bleed"
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -1261,8 +1248,7 @@
         "PD-2026-028-IMG-38",
         "PD-2026-028-IMG-39",
         "PD-2026-028-IMG-40",
-        "PD-2026-028-IMG-32",
-        "PD-2026-028-IMG-33"
+        "PD-2026-028-IMG-32"
       ],
       "footage_search_keywords": [
         "key in door dawn",
@@ -1283,12 +1269,12 @@
       "span_id": "SPN-0028",
       "chapter_id": "act4",
       "narrative_function": "payoff_reform",
-      "estimated_seconds": 53.4,
-      "cut_count": 19,
+      "estimated_seconds": 60.3,
+      "cut_count": 22,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 8,
-        "footage": 11,
+        "stills": 9,
+        "footage": 13,
         "treatments_rotation": [
           "focus",
           "bleed",
@@ -1308,12 +1294,16 @@
           "duotone",
           "focus",
           "bleed",
-          "scan"
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-028-IMG-33",
         "PD-2026-028-IMG-34",
         "PD-2026-028-IMG-35",
         "PD-2026-028-IMG-36",
@@ -1321,8 +1311,7 @@
         "PD-2026-028-IMG-38",
         "PD-2026-028-IMG-39",
         "PD-2026-028-IMG-40",
-        "PD-2026-028-IMG-32",
-        "PD-2026-028-IMG-33"
+        "PD-2026-028-IMG-32"
       ],
       "footage_search_keywords": [
         "key in door dawn",
@@ -1344,7 +1333,7 @@
       "span_id": "SPN-0029",
       "chapter_id": "act4",
       "narrative_function": "act4_button",
-      "estimated_seconds": 4.9,
+      "estimated_seconds": 4.2,
       "cut_count": 2,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -1358,8 +1347,8 @@
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-028-IMG-34",
-        "PD-2026-028-IMG-35"
+        "PD-2026-028-IMG-33",
+        "PD-2026-028-IMG-34"
       ],
       "footage_search_keywords": [
         "key in door dawn",
@@ -1380,7 +1369,7 @@
       "span_id": "SPN-0030",
       "chapter_id": "ending",
       "narrative_function": "ending_callback",
-      "estimated_seconds": 12.2,
+      "estimated_seconds": 10.5,
       "cut_count": 4,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -1418,12 +1407,12 @@
       "span_id": "SPN-0031",
       "chapter_id": "ending",
       "narrative_function": "ending_theme",
-      "estimated_seconds": 28.9,
-      "cut_count": 10,
+      "estimated_seconds": 24.9,
+      "cut_count": 9,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 4,
-        "footage": 6,
+        "footage": 5,
         "treatments_rotation": [
           "duotone",
           "focus",
@@ -1433,8 +1422,7 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -1467,12 +1455,12 @@
       "span_id": "SPN-0032",
       "chapter_id": "ending",
       "narrative_function": "ending_human",
-      "estimated_seconds": 23.2,
-      "cut_count": 8,
+      "estimated_seconds": 35.8,
+      "cut_count": 13,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
-        "footage": 5,
+        "stills": 5,
+        "footage": 8,
         "treatments_rotation": [
           "focus",
           "bleed",
@@ -1481,7 +1469,12 @@
           "focus",
           "bleed",
           "scan",
-          "duotone"
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -1494,7 +1487,8 @@
         "PD-2026-028-IMG-40",
         "PD-2026-028-IMG-32",
         "PD-2026-028-IMG-33",
-        "PD-2026-028-IMG-34"
+        "PD-2026-028-IMG-34",
+        "PD-2026-028-IMG-35"
       ],
       "footage_search_keywords": [
         "sealed door removed",
@@ -1511,7 +1505,7 @@
       "span_id": "SPN-0033",
       "chapter_id": "ending",
       "narrative_function": "cta",
-      "estimated_seconds": 6.9,
+      "estimated_seconds": 6.0,
       "cut_count": 2,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -1525,8 +1519,8 @@
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-028-IMG-35",
-        "PD-2026-028-IMG-36"
+        "PD-2026-028-IMG-36",
+        "PD-2026-028-IMG-37"
       ],
       "footage_search_keywords": [
         "sealed door removed",
@@ -1545,9 +1539,9 @@
   ],
   "totals": {
     "span_count": 33,
-    "cut_count": 254,
-    "estimated_total_seconds": 712.0,
-    "avg_cut_seconds": 2.8,
+    "cut_count": 257,
+    "estimated_total_seconds": 711.9,
+    "avg_cut_seconds": 2.77,
     "image_footage_ratio_target": "≈4:6",
     "distinct_asset_target": ">= 23 (runtime/30)",
     "max_reuse_per_clip": 3,

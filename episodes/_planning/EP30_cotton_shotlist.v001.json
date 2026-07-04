@@ -3,19 +3,19 @@
   "episode_id": "PD-2026-030-cotton",
   "revision": "v001",
   "generated_from": "EP30_cotton_script.annotated.v001.json",
-  "source_annotated_sha256": "c8a5cc8ed8df757d7d76d267f6d2b41d1824524d8df1e55fa38bf7c05d26d8c8",
+  "source_annotated_sha256": "de54d6ead1c012afd978f25bf4106849453206f147bff4b7173c1974e17ec71c",
   "note": "PLAN only. Build step (build_case_film assets) resolves real image filenames + audio-aligned per-cut start/dur into remotion/src/data/cotton_film.json. avg_cut<=~6s and freeze/animation_density gates apply at acceptance.",
   "shots": [
     {
       "span_id": "SPN-0001",
       "chapter_id": "hook",
       "narrative_function": "hook_cold_open",
-      "estimated_seconds": 22.5,
-      "cut_count": 8,
+      "estimated_seconds": 19.6,
+      "cut_count": 7,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 3,
-        "footage": 5,
+        "footage": 4,
         "treatments_rotation": [
           "bleed",
           "scan",
@@ -23,8 +23,7 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -54,11 +53,11 @@
       "span_id": "SPN-0002",
       "chapter_id": "opening",
       "narrative_function": "thesis_and_promise",
-      "estimated_seconds": 20.5,
-      "cut_count": 7,
+      "estimated_seconds": 17.9,
+      "cut_count": 6,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
+        "stills": 2,
         "footage": 4,
         "treatments_rotation": [
           "scan",
@@ -66,8 +65,7 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -95,12 +93,12 @@
       "span_id": "SPN-0003",
       "chapter_id": "act1",
       "narrative_function": "event",
-      "estimated_seconds": 40.6,
-      "cut_count": 15,
+      "estimated_seconds": 50.1,
+      "cut_count": 18,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 6,
-        "footage": 9,
+        "stills": 7,
+        "footage": 11,
         "treatments_rotation": [
           "duotone",
           "focus",
@@ -116,7 +114,10 @@
           "scan",
           "duotone",
           "focus",
-          "bleed"
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -152,12 +153,12 @@
       "span_id": "SPN-0004",
       "chapter_id": "act1",
       "narrative_function": "event",
-      "estimated_seconds": 28.1,
-      "cut_count": 10,
+      "estimated_seconds": 24.5,
+      "cut_count": 9,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 4,
-        "footage": 6,
+        "footage": 5,
         "treatments_rotation": [
           "focus",
           "bleed",
@@ -167,8 +168,7 @@
           "bleed",
           "scan",
           "duotone",
-          "focus",
-          "bleed"
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -182,8 +182,7 @@
         "PD-2026-030-IMG-06",
         "PD-2026-030-IMG-07",
         "PD-2026-030-IMG-08",
-        "PD-2026-030-IMG-09",
-        "PD-2026-030-IMG-10"
+        "PD-2026-030-IMG-09"
       ],
       "footage_search_keywords": [
         "dark apartment window night",
@@ -204,7 +203,236 @@
       "span_id": "SPN-0005",
       "chapter_id": "act1",
       "narrative_function": "central_mechanism",
-      "estimated_seconds": 29.3,
+      "estimated_seconds": 25.6,
+      "cut_count": 9,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 4,
+        "footage": 5,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-10",
+        "PD-2026-030-IMG-01",
+        "PD-2026-030-IMG-02",
+        "PD-2026-030-IMG-03",
+        "PD-2026-030-IMG-04",
+        "PD-2026-030-IMG-05",
+        "PD-2026-030-IMG-06",
+        "PD-2026-030-IMG-07",
+        "PD-2026-030-IMG-08"
+      ],
+      "footage_search_keywords": [
+        "dark apartment window night",
+        "sketch artist pencil",
+        "photo lineup array",
+        "physical lineup room",
+        "detective desk night"
+      ],
+      "on_screen_text": [
+        "The only man in BOTH lineups"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A photo of one anonymous man lifting out of the array and reappearing in the live lineup — the same face in both. The structural flaw made visual."
+    },
+    {
+      "span_id": "SPN-0006",
+      "chapter_id": "act1",
+      "narrative_function": "explainer",
+      "estimated_seconds": 70.0,
+      "cut_count": 25,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 10,
+        "footage": 15,
+        "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-09",
+        "PD-2026-030-IMG-10",
+        "PD-2026-030-IMG-01",
+        "PD-2026-030-IMG-02",
+        "PD-2026-030-IMG-03",
+        "PD-2026-030-IMG-04",
+        "PD-2026-030-IMG-05",
+        "PD-2026-030-IMG-06",
+        "PD-2026-030-IMG-07",
+        "PD-2026-030-IMG-08"
+      ],
+      "footage_search_keywords": [
+        "dark apartment window night",
+        "sketch artist pencil",
+        "photo lineup array",
+        "physical lineup room",
+        "detective desk night"
+      ],
+      "on_screen_text": [
+        "Certainty is built, not remembered"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "Motion graphic of a face-sketch being edited/reinforced each time it's recalled; a tentative outline hardening into a bold one. Memory as a rebuilt story."
+    },
+    {
+      "span_id": "SPN-0007",
+      "chapter_id": "act2",
+      "narrative_function": "complication",
+      "estimated_seconds": 21.7,
+      "cut_count": 8,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 3,
+        "footage": 5,
+        "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-11",
+        "PD-2026-030-IMG-12",
+        "PD-2026-030-IMG-13",
+        "PD-2026-030-IMG-14",
+        "PD-2026-030-IMG-15",
+        "PD-2026-030-IMG-16",
+        "PD-2026-030-IMG-17",
+        "PD-2026-030-IMG-18"
+      ],
+      "footage_search_keywords": [
+        "witness stand light",
+        "jury box",
+        "prison cell door",
+        "two similar silhouettes",
+        "prison corridor"
+      ],
+      "on_screen_text": [
+        "1985 — convicted"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A witness stand under a shaft of light; a jury box; a cell door closing. The power of certain testimony."
+    },
+    {
+      "span_id": "SPN-0008",
+      "chapter_id": "act2",
+      "narrative_function": "complication",
+      "estimated_seconds": 62.3,
+      "cut_count": 22,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 9,
+        "footage": 13,
+        "treatments_rotation": [
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-030-IMG-19",
+        "PD-2026-030-IMG-20",
+        "PD-2026-030-IMG-11",
+        "PD-2026-030-IMG-12",
+        "PD-2026-030-IMG-13",
+        "PD-2026-030-IMG-14",
+        "PD-2026-030-IMG-15",
+        "PD-2026-030-IMG-16",
+        "PD-2026-030-IMG-17",
+        "PD-2026-030-IMG-18"
+      ],
+      "footage_search_keywords": [
+        "witness stand light",
+        "jury box",
+        "prison cell door",
+        "two similar silhouettes",
+        "prison corridor"
+      ],
+      "on_screen_text": [
+        "Tried twice. Convicted twice."
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An anonymous man in a cell, unheard; appeal papers; a second empty courtroom. The grind of not being believed."
+    },
+    {
+      "span_id": "SPN-0009",
+      "chapter_id": "act2",
+      "narrative_function": "turn",
+      "estimated_seconds": 29.1,
       "cut_count": 10,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -226,178 +454,7 @@
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-030-IMG-01",
-        "PD-2026-030-IMG-02",
-        "PD-2026-030-IMG-03",
-        "PD-2026-030-IMG-04",
-        "PD-2026-030-IMG-05",
-        "PD-2026-030-IMG-06",
-        "PD-2026-030-IMG-07",
-        "PD-2026-030-IMG-08",
-        "PD-2026-030-IMG-09",
-        "PD-2026-030-IMG-10"
-      ],
-      "footage_search_keywords": [
-        "dark apartment window night",
-        "sketch artist pencil",
-        "photo lineup array",
-        "physical lineup room",
-        "detective desk night"
-      ],
-      "on_screen_text": [
-        "The only man in BOTH lineups"
-      ],
-      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
-      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
-      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
-      "visual_intent": "A photo of one anonymous man lifting out of the array and reappearing in the live lineup — the same face in both. The structural flaw made visual."
-    },
-    {
-      "span_id": "SPN-0006",
-      "chapter_id": "act1",
-      "narrative_function": "explainer",
-      "estimated_seconds": 59.1,
-      "cut_count": 21,
-      "sec_per_cut": 2.8,
-      "cut_plan": {
-        "stills": 8,
-        "footage": 13,
-        "treatments_rotation": [
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan"
-        ],
-        "transition": "crossfade_0.35s",
-        "no_naked_hardcut": true
-      },
-      "hero_still_ids": [
-        "PD-2026-030-IMG-01",
-        "PD-2026-030-IMG-02",
-        "PD-2026-030-IMG-03",
-        "PD-2026-030-IMG-04",
-        "PD-2026-030-IMG-05",
-        "PD-2026-030-IMG-06",
-        "PD-2026-030-IMG-07",
-        "PD-2026-030-IMG-08",
-        "PD-2026-030-IMG-09",
-        "PD-2026-030-IMG-10"
-      ],
-      "footage_search_keywords": [
-        "dark apartment window night",
-        "sketch artist pencil",
-        "photo lineup array",
-        "physical lineup room",
-        "detective desk night"
-      ],
-      "on_screen_text": [
-        "Certainty is built, not remembered"
-      ],
-      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
-      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
-      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
-      "visual_intent": "Motion graphic of a face-sketch being edited/reinforced each time it's recalled; a tentative outline hardening into a bold one. Memory as a rebuilt story."
-    },
-    {
-      "span_id": "SPN-0007",
-      "chapter_id": "act2",
-      "narrative_function": "complication",
-      "estimated_seconds": 24.9,
-      "cut_count": 9,
-      "sec_per_cut": 2.8,
-      "cut_plan": {
-        "stills": 4,
-        "footage": 5,
-        "treatments_rotation": [
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone"
-        ],
-        "transition": "crossfade_0.35s",
-        "no_naked_hardcut": true
-      },
-      "hero_still_ids": [
-        "PD-2026-030-IMG-11",
-        "PD-2026-030-IMG-12",
-        "PD-2026-030-IMG-13",
-        "PD-2026-030-IMG-14",
-        "PD-2026-030-IMG-15",
-        "PD-2026-030-IMG-16",
-        "PD-2026-030-IMG-17",
-        "PD-2026-030-IMG-18",
-        "PD-2026-030-IMG-19"
-      ],
-      "footage_search_keywords": [
-        "witness stand light",
-        "jury box",
-        "prison cell door",
-        "two similar silhouettes",
-        "prison corridor"
-      ],
-      "on_screen_text": [
-        "1985 — convicted"
-      ],
-      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
-      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
-      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
-      "visual_intent": "A witness stand under a shaft of light; a jury box; a cell door closing. The power of certain testimony."
-    },
-    {
-      "span_id": "SPN-0008",
-      "chapter_id": "act2",
-      "narrative_function": "complication",
-      "estimated_seconds": 48.2,
-      "cut_count": 17,
-      "sec_per_cut": 2.8,
-      "cut_plan": {
-        "stills": 7,
-        "footage": 10,
-        "treatments_rotation": [
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus"
-        ],
-        "transition": "crossfade_0.35s",
-        "no_naked_hardcut": true
-      },
-      "hero_still_ids": [
+        "PD-2026-030-IMG-19",
         "PD-2026-030-IMG-20",
         "PD-2026-030-IMG-11",
         "PD-2026-030-IMG-12",
@@ -406,62 +463,7 @@
         "PD-2026-030-IMG-15",
         "PD-2026-030-IMG-16",
         "PD-2026-030-IMG-17",
-        "PD-2026-030-IMG-18",
-        "PD-2026-030-IMG-19"
-      ],
-      "footage_search_keywords": [
-        "witness stand light",
-        "jury box",
-        "prison cell door",
-        "two similar silhouettes",
-        "prison corridor"
-      ],
-      "on_screen_text": [
-        "Tried twice. Convicted twice."
-      ],
-      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
-      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
-      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
-      "visual_intent": "An anonymous man in a cell, unheard; appeal papers; a second empty courtroom. The grind of not being believed."
-    },
-    {
-      "span_id": "SPN-0009",
-      "chapter_id": "act2",
-      "narrative_function": "turn",
-      "estimated_seconds": 33.4,
-      "cut_count": 12,
-      "sec_per_cut": 2.8,
-      "cut_plan": {
-        "stills": 5,
-        "footage": 7,
-        "treatments_rotation": [
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus"
-        ],
-        "transition": "crossfade_0.35s",
-        "no_naked_hardcut": true
-      },
-      "hero_still_ids": [
-        "PD-2026-030-IMG-20",
-        "PD-2026-030-IMG-11",
-        "PD-2026-030-IMG-12",
-        "PD-2026-030-IMG-13",
-        "PD-2026-030-IMG-14",
-        "PD-2026-030-IMG-15",
-        "PD-2026-030-IMG-16",
-        "PD-2026-030-IMG-17",
-        "PD-2026-030-IMG-18",
-        "PD-2026-030-IMG-19"
+        "PD-2026-030-IMG-18"
       ],
       "footage_search_keywords": [
         "witness stand light",
@@ -482,12 +484,12 @@
       "span_id": "SPN-0010",
       "chapter_id": "act2",
       "narrative_function": "act2_button_openloop",
-      "estimated_seconds": 49.0,
-      "cut_count": 18,
+      "estimated_seconds": 64.1,
+      "cut_count": 23,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 7,
-        "footage": 11,
+        "stills": 9,
+        "footage": 14,
         "treatments_rotation": [
           "scan",
           "duotone",
@@ -506,12 +508,18 @@
           "focus",
           "bleed",
           "scan",
-          "duotone"
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-030-IMG-19",
         "PD-2026-030-IMG-20",
         "PD-2026-030-IMG-11",
         "PD-2026-030-IMG-12",
@@ -520,8 +528,7 @@
         "PD-2026-030-IMG-15",
         "PD-2026-030-IMG-16",
         "PD-2026-030-IMG-17",
-        "PD-2026-030-IMG-18",
-        "PD-2026-030-IMG-19"
+        "PD-2026-030-IMG-18"
       ],
       "footage_search_keywords": [
         "witness stand light",
@@ -542,12 +549,12 @@
       "span_id": "SPN-0011",
       "chapter_id": "act3",
       "narrative_function": "reveal_setup",
-      "estimated_seconds": 29.7,
-      "cut_count": 11,
+      "estimated_seconds": 25.9,
+      "cut_count": 9,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 4,
-        "footage": 7,
+        "footage": 5,
         "treatments_rotation": [
           "duotone",
           "focus",
@@ -557,9 +564,7 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus",
-          "bleed"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -573,9 +578,7 @@
         "PD-2026-030-IMG-26",
         "PD-2026-030-IMG-27",
         "PD-2026-030-IMG-28",
-        "PD-2026-030-IMG-29",
-        "PD-2026-030-IMG-30",
-        "PD-2026-030-IMG-31"
+        "PD-2026-030-IMG-29"
       ],
       "footage_search_keywords": [
         "forensic lab",
@@ -596,26 +599,24 @@
       "span_id": "SPN-0012",
       "chapter_id": "act3",
       "narrative_function": "reveal",
-      "estimated_seconds": 10.8,
-      "cut_count": 4,
+      "estimated_seconds": 9.5,
+      "cut_count": 3,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 2,
+        "stills": 1,
         "footage": 2,
         "treatments_rotation": [
           "focus",
           "bleed",
-          "scan",
-          "duotone"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-030-IMG-21",
-        "PD-2026-030-IMG-22",
-        "PD-2026-030-IMG-23",
-        "PD-2026-030-IMG-24"
+        "PD-2026-030-IMG-30",
+        "PD-2026-030-IMG-31",
+        "PD-2026-030-IMG-21"
       ],
       "footage_search_keywords": [
         "forensic lab",
@@ -636,12 +637,12 @@
       "span_id": "SPN-0013",
       "chapter_id": "act3",
       "narrative_function": "theme",
-      "estimated_seconds": 61.1,
-      "cut_count": 22,
+      "estimated_seconds": 53.2,
+      "cut_count": 19,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 9,
-        "footage": 13,
+        "stills": 8,
+        "footage": 11,
         "treatments_rotation": [
           "bleed",
           "scan",
@@ -661,15 +662,15 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-030-IMG-22",
+        "PD-2026-030-IMG-23",
+        "PD-2026-030-IMG-24",
         "PD-2026-030-IMG-25",
         "PD-2026-030-IMG-26",
         "PD-2026-030-IMG-27",
@@ -677,10 +678,7 @@
         "PD-2026-030-IMG-29",
         "PD-2026-030-IMG-30",
         "PD-2026-030-IMG-31",
-        "PD-2026-030-IMG-21",
-        "PD-2026-030-IMG-22",
-        "PD-2026-030-IMG-23",
-        "PD-2026-030-IMG-24"
+        "PD-2026-030-IMG-21"
       ],
       "footage_search_keywords": [
         "forensic lab",
@@ -701,12 +699,12 @@
       "span_id": "SPN-0014",
       "chapter_id": "act3",
       "narrative_function": "resolution_turn",
-      "estimated_seconds": 30.1,
-      "cut_count": 11,
+      "estimated_seconds": 26.3,
+      "cut_count": 9,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 4,
-        "footage": 7,
+        "footage": 5,
         "treatments_rotation": [
           "scan",
           "duotone",
@@ -716,25 +714,21 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone",
-          "focus"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-030-IMG-22",
+        "PD-2026-030-IMG-23",
+        "PD-2026-030-IMG-24",
         "PD-2026-030-IMG-25",
         "PD-2026-030-IMG-26",
         "PD-2026-030-IMG-27",
         "PD-2026-030-IMG-28",
         "PD-2026-030-IMG-29",
-        "PD-2026-030-IMG-30",
-        "PD-2026-030-IMG-31",
-        "PD-2026-030-IMG-21",
-        "PD-2026-030-IMG-22",
-        "PD-2026-030-IMG-23",
-        "PD-2026-030-IMG-24"
+        "PD-2026-030-IMG-30"
       ],
       "footage_search_keywords": [
         "forensic lab",
@@ -755,11 +749,11 @@
       "span_id": "SPN-0015",
       "chapter_id": "act3",
       "narrative_function": "act3_button_openloop",
-      "estimated_seconds": 24.1,
-      "cut_count": 9,
+      "estimated_seconds": 21.0,
+      "cut_count": 8,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 4,
+        "stills": 3,
         "footage": 5,
         "treatments_rotation": [
           "duotone",
@@ -769,22 +763,20 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-030-IMG-25",
-        "PD-2026-030-IMG-26",
-        "PD-2026-030-IMG-27",
-        "PD-2026-030-IMG-28",
-        "PD-2026-030-IMG-29",
-        "PD-2026-030-IMG-30",
         "PD-2026-030-IMG-31",
         "PD-2026-030-IMG-21",
-        "PD-2026-030-IMG-22"
+        "PD-2026-030-IMG-22",
+        "PD-2026-030-IMG-23",
+        "PD-2026-030-IMG-24",
+        "PD-2026-030-IMG-25",
+        "PD-2026-030-IMG-26",
+        "PD-2026-030-IMG-27"
       ],
       "footage_search_keywords": [
         "forensic lab",
@@ -805,11 +797,11 @@
       "span_id": "SPN-0016",
       "chapter_id": "act4",
       "narrative_function": "payoff_setup",
-      "estimated_seconds": 26.1,
-      "cut_count": 9,
+      "estimated_seconds": 22.8,
+      "cut_count": 8,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 4,
+        "stills": 3,
         "footage": 5,
         "treatments_rotation": [
           "focus",
@@ -819,8 +811,7 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -833,8 +824,7 @@
         "PD-2026-030-IMG-36",
         "PD-2026-030-IMG-37",
         "PD-2026-030-IMG-38",
-        "PD-2026-030-IMG-39",
-        "PD-2026-030-IMG-40"
+        "PD-2026-030-IMG-39"
       ],
       "footage_search_keywords": [
         "church office two chairs",
@@ -855,28 +845,37 @@
       "span_id": "SPN-0017",
       "chapter_id": "act4",
       "narrative_function": "payoff",
-      "estimated_seconds": 14.5,
-      "cut_count": 5,
+      "estimated_seconds": 28.4,
+      "cut_count": 10,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 2,
-        "footage": 3,
+        "stills": 4,
+        "footage": 6,
         "treatments_rotation": [
           "bleed",
           "scan",
           "duotone",
           "focus",
-          "bleed"
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-030-IMG-40",
         "PD-2026-030-IMG-32",
         "PD-2026-030-IMG-33",
         "PD-2026-030-IMG-34",
         "PD-2026-030-IMG-35",
-        "PD-2026-030-IMG-36"
+        "PD-2026-030-IMG-36",
+        "PD-2026-030-IMG-37",
+        "PD-2026-030-IMG-38",
+        "PD-2026-030-IMG-39"
       ],
       "footage_search_keywords": [
         "church office two chairs",
@@ -897,12 +896,12 @@
       "span_id": "SPN-0018",
       "chapter_id": "act4",
       "narrative_function": "impact",
-      "estimated_seconds": 62.7,
-      "cut_count": 22,
+      "estimated_seconds": 54.6,
+      "cut_count": 20,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 9,
-        "footage": 13,
+        "stills": 8,
+        "footage": 12,
         "treatments_rotation": [
           "scan",
           "duotone",
@@ -923,23 +922,21 @@
           "scan",
           "duotone",
           "focus",
-          "bleed",
-          "scan",
-          "duotone"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-030-IMG-37",
-        "PD-2026-030-IMG-38",
-        "PD-2026-030-IMG-39",
         "PD-2026-030-IMG-40",
         "PD-2026-030-IMG-32",
         "PD-2026-030-IMG-33",
         "PD-2026-030-IMG-34",
         "PD-2026-030-IMG-35",
-        "PD-2026-030-IMG-36"
+        "PD-2026-030-IMG-36",
+        "PD-2026-030-IMG-37",
+        "PD-2026-030-IMG-38",
+        "PD-2026-030-IMG-39"
       ],
       "footage_search_keywords": [
         "church office two chairs",
@@ -961,28 +958,26 @@
       "span_id": "SPN-0019",
       "chapter_id": "act4",
       "narrative_function": "act4_button",
-      "estimated_seconds": 13.3,
-      "cut_count": 5,
+      "estimated_seconds": 11.6,
+      "cut_count": 4,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 2,
-        "footage": 3,
+        "footage": 2,
         "treatments_rotation": [
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-030-IMG-37",
-        "PD-2026-030-IMG-38",
-        "PD-2026-030-IMG-39",
         "PD-2026-030-IMG-40",
-        "PD-2026-030-IMG-32"
+        "PD-2026-030-IMG-32",
+        "PD-2026-030-IMG-33",
+        "PD-2026-030-IMG-34"
       ],
       "footage_search_keywords": [
         "church office two chairs",
@@ -1003,11 +998,11 @@
       "span_id": "SPN-0020",
       "chapter_id": "ending",
       "narrative_function": "ending_callback",
-      "estimated_seconds": 19.7,
-      "cut_count": 7,
+      "estimated_seconds": 17.2,
+      "cut_count": 6,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
+        "stills": 2,
         "footage": 4,
         "treatments_rotation": [
           "focus",
@@ -1015,8 +1010,7 @@
           "scan",
           "duotone",
           "focus",
-          "bleed",
-          "scan"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -1027,8 +1021,7 @@
         "PD-2026-030-IMG-34",
         "PD-2026-030-IMG-35",
         "PD-2026-030-IMG-36",
-        "PD-2026-030-IMG-37",
-        "PD-2026-030-IMG-38"
+        "PD-2026-030-IMG-37"
       ],
       "footage_search_keywords": [
         "eyes lineup callback",
@@ -1046,12 +1039,12 @@
       "span_id": "SPN-0021",
       "chapter_id": "ending",
       "narrative_function": "ending_theme",
-      "estimated_seconds": 30.5,
-      "cut_count": 11,
+      "estimated_seconds": 26.6,
+      "cut_count": 10,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 4,
-        "footage": 7,
+        "footage": 6,
         "treatments_rotation": [
           "bleed",
           "scan",
@@ -1062,13 +1055,13 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-030-IMG-38",
         "PD-2026-030-IMG-39",
         "PD-2026-030-IMG-40",
         "PD-2026-030-IMG-32",
@@ -1076,8 +1069,7 @@
         "PD-2026-030-IMG-34",
         "PD-2026-030-IMG-35",
         "PD-2026-030-IMG-36",
-        "PD-2026-030-IMG-37",
-        "PD-2026-030-IMG-38"
+        "PD-2026-030-IMG-37"
       ],
       "footage_search_keywords": [
         "eyes lineup callback",
@@ -1095,12 +1087,12 @@
       "span_id": "SPN-0022",
       "chapter_id": "ending",
       "narrative_function": "cta",
-      "estimated_seconds": 27.7,
-      "cut_count": 10,
+      "estimated_seconds": 24.2,
+      "cut_count": 9,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 4,
-        "footage": 6,
+        "footage": 5,
         "treatments_rotation": [
           "scan",
           "duotone",
@@ -1110,13 +1102,13 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-030-IMG-38",
         "PD-2026-030-IMG-39",
         "PD-2026-030-IMG-40",
         "PD-2026-030-IMG-32",
@@ -1124,8 +1116,7 @@
         "PD-2026-030-IMG-34",
         "PD-2026-030-IMG-35",
         "PD-2026-030-IMG-36",
-        "PD-2026-030-IMG-37",
-        "PD-2026-030-IMG-38"
+        "PD-2026-030-IMG-37"
       ],
       "footage_search_keywords": [
         "eyes lineup callback",
@@ -1143,9 +1134,9 @@
   ],
   "totals": {
     "span_count": 22,
-    "cut_count": 253,
-    "estimated_total_seconds": 705.9,
-    "avg_cut_seconds": 2.79,
+    "cut_count": 252,
+    "estimated_total_seconds": 706.2,
+    "avg_cut_seconds": 2.8,
     "image_footage_ratio_target": "≈4:6",
     "distinct_asset_target": ">= 23 (runtime/30)",
     "max_reuse_per_clip": 3,

@@ -3,26 +3,25 @@
   "episode_id": "PD-2026-029-hinton",
   "revision": "v001",
   "generated_from": "EP29_hinton_script.annotated.v001.json",
-  "source_annotated_sha256": "426e063efe94412eaa038d3311286eea091fa23ec545dd07cb401b93fde192e7",
+  "source_annotated_sha256": "6615bf6b81f4dbad1b0a0e8126fdd792d55820179fb1590614aeee1513a583f9",
   "note": "PLAN only. Build step (build_case_film assets) resolves real image filenames + audio-aligned per-cut start/dur into remotion/src/data/hinton_film.json. avg_cut<=~6s and freeze/animation_density gates apply at acceptance.",
   "shots": [
     {
       "span_id": "SPN-0001",
       "chapter_id": "hook",
       "narrative_function": "hook_cold_open",
-      "estimated_seconds": 16.5,
-      "cut_count": 6,
+      "estimated_seconds": 14.1,
+      "cut_count": 5,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 2,
-        "footage": 4,
+        "footage": 3,
         "treatments_rotation": [
           "bleed",
           "scan",
           "duotone",
           "focus",
-          "bleed",
-          "scan"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -52,11 +51,11 @@
       "span_id": "SPN-0002",
       "chapter_id": "opening",
       "narrative_function": "thesis_and_promise",
-      "estimated_seconds": 18.9,
-      "cut_count": 7,
+      "estimated_seconds": 16.2,
+      "cut_count": 6,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
+        "stills": 2,
         "footage": 4,
         "treatments_rotation": [
           "scan",
@@ -64,8 +63,7 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -92,13 +90,17 @@
       "span_id": "SPN-0003",
       "chapter_id": "act1",
       "narrative_function": "event",
-      "estimated_seconds": 38.3,
-      "cut_count": 14,
+      "estimated_seconds": 50.0,
+      "cut_count": 18,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 6,
-        "footage": 8,
+        "stills": 7,
+        "footage": 11,
         "treatments_rotation": [
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
           "duotone",
           "focus",
           "bleed",
@@ -149,11 +151,11 @@
       "span_id": "SPN-0004",
       "chapter_id": "act1",
       "narrative_function": "event_turn",
-      "estimated_seconds": 34.6,
-      "cut_count": 12,
+      "estimated_seconds": 29.6,
+      "cut_count": 11,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 5,
+        "stills": 4,
         "footage": 7,
         "treatments_rotation": [
           "focus",
@@ -166,8 +168,7 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -204,11 +205,11 @@
       "span_id": "SPN-0005",
       "chapter_id": "act1",
       "narrative_function": "counterweight",
-      "estimated_seconds": 25.8,
-      "cut_count": 9,
+      "estimated_seconds": 22.1,
+      "cut_count": 8,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 4,
+        "stills": 3,
         "footage": 5,
         "treatments_rotation": [
           "bleed",
@@ -218,8 +219,7 @@
           "bleed",
           "scan",
           "duotone",
-          "focus",
-          "bleed"
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -232,8 +232,7 @@
         "PD-2026-029-IMG-05",
         "PD-2026-029-IMG-06",
         "PD-2026-029-IMG-07",
-        "PD-2026-029-IMG-08",
-        "PD-2026-029-IMG-09"
+        "PD-2026-029-IMG-08"
       ],
       "footage_search_keywords": [
         "closed restaurant night",
@@ -255,11 +254,11 @@
       "span_id": "SPN-0006",
       "chapter_id": "act1",
       "narrative_function": "act1_button",
-      "estimated_seconds": 20.5,
-      "cut_count": 7,
+      "estimated_seconds": 17.6,
+      "cut_count": 6,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
+        "stills": 2,
         "footage": 4,
         "treatments_rotation": [
           "scan",
@@ -267,20 +266,18 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-029-IMG-09",
         "PD-2026-029-IMG-10",
         "PD-2026-029-IMG-01",
         "PD-2026-029-IMG-02",
         "PD-2026-029-IMG-03",
-        "PD-2026-029-IMG-04",
-        "PD-2026-029-IMG-05",
-        "PD-2026-029-IMG-06"
+        "PD-2026-029-IMG-04"
       ],
       "footage_search_keywords": [
         "closed restaurant night",
@@ -300,7 +297,7 @@
       "span_id": "SPN-0007",
       "chapter_id": "act1",
       "narrative_function": "reveal",
-      "estimated_seconds": 2.0,
+      "estimated_seconds": 1.7,
       "cut_count": 1,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -313,7 +310,7 @@
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-029-IMG-07"
+        "PD-2026-029-IMG-05"
       ],
       "footage_search_keywords": [
         "closed restaurant night",
@@ -333,72 +330,13 @@
       "span_id": "SPN-0008",
       "chapter_id": "act2",
       "narrative_function": "mechanism",
-      "estimated_seconds": 37.1,
-      "cut_count": 13,
+      "estimated_seconds": 31.7,
+      "cut_count": 11,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 5,
-        "footage": 8,
+        "stills": 4,
+        "footage": 7,
         "treatments_rotation": [
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus"
-        ],
-        "transition": "crossfade_0.35s",
-        "no_naked_hardcut": true
-      },
-      "hero_still_ids": [
-        "PD-2026-029-IMG-11",
-        "PD-2026-029-IMG-12",
-        "PD-2026-029-IMG-13",
-        "PD-2026-029-IMG-14",
-        "PD-2026-029-IMG-15",
-        "PD-2026-029-IMG-16",
-        "PD-2026-029-IMG-17",
-        "PD-2026-029-IMG-18",
-        "PD-2026-029-IMG-19",
-        "PD-2026-029-IMG-20"
-      ],
-      "footage_search_keywords": [
-        "revolver evidence bag",
-        "comparison microscope",
-        "empty courtroom",
-        "jury box",
-        "gavel shadow",
-        "clock sweep"
-      ],
-      "on_screen_text": [
-        "The only evidence: the bullets"
-      ],
-      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
-      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
-      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
-      "visual_intent": "An old .38 revolver as evidence; a comparison microscope; scales tipping. The whole case balanced on one object."
-    },
-    {
-      "span_id": "SPN-0009",
-      "chapter_id": "act2",
-      "narrative_function": "mechanism_core",
-      "estimated_seconds": 39.5,
-      "cut_count": 14,
-      "sec_per_cut": 2.8,
-      "cut_plan": {
-        "stills": 6,
-        "footage": 8,
-        "treatments_rotation": [
-          "bleed",
-          "scan",
-          "duotone",
           "focus",
           "bleed",
           "scan",
@@ -435,6 +373,61 @@
         "clock sweep"
       ],
       "on_screen_text": [
+        "The only evidence: the bullets"
+      ],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "An old .38 revolver as evidence; a comparison microscope; scales tipping. The whole case balanced on one object."
+    },
+    {
+      "span_id": "SPN-0009",
+      "chapter_id": "act2",
+      "narrative_function": "mechanism_core",
+      "estimated_seconds": 33.8,
+      "cut_count": 12,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 5,
+        "footage": 7,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
+        "PD-2026-029-IMG-11",
+        "PD-2026-029-IMG-12",
+        "PD-2026-029-IMG-13",
+        "PD-2026-029-IMG-14",
+        "PD-2026-029-IMG-15",
+        "PD-2026-029-IMG-16",
+        "PD-2026-029-IMG-17",
+        "PD-2026-029-IMG-18",
+        "PD-2026-029-IMG-19",
+        "PD-2026-029-IMG-20"
+      ],
+      "footage_search_keywords": [
+        "revolver evidence bag",
+        "comparison microscope",
+        "empty courtroom",
+        "jury box",
+        "gavel shadow",
+        "clock sweep"
+      ],
+      "on_screen_text": [
         "A $1,000 cap that never existed"
       ],
       "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
@@ -446,13 +439,17 @@
       "span_id": "SPN-0010",
       "chapter_id": "act2",
       "narrative_function": "mechanism_vivid",
-      "estimated_seconds": 33.4,
-      "cut_count": 12,
+      "estimated_seconds": 45.5,
+      "cut_count": 16,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 5,
-        "footage": 7,
+        "stills": 6,
+        "footage": 10,
         "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
           "scan",
           "duotone",
           "focus",
@@ -501,11 +498,11 @@
       "span_id": "SPN-0011",
       "chapter_id": "act2",
       "narrative_function": "analysis",
-      "estimated_seconds": 25.4,
-      "cut_count": 9,
+      "estimated_seconds": 21.7,
+      "cut_count": 8,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 4,
+        "stills": 3,
         "footage": 5,
         "treatments_rotation": [
           "duotone",
@@ -515,8 +512,7 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -529,8 +525,7 @@
         "PD-2026-029-IMG-15",
         "PD-2026-029-IMG-16",
         "PD-2026-029-IMG-17",
-        "PD-2026-029-IMG-18",
-        "PD-2026-029-IMG-19"
+        "PD-2026-029-IMG-18"
       ],
       "footage_search_keywords": [
         "revolver evidence bag",
@@ -552,7 +547,7 @@
       "span_id": "SPN-0012",
       "chapter_id": "act2",
       "narrative_function": "turn",
-      "estimated_seconds": 8.9,
+      "estimated_seconds": 7.6,
       "cut_count": 3,
       "sec_per_cut": 2.8,
       "cut_plan": {
@@ -567,9 +562,9 @@
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-029-IMG-19",
         "PD-2026-029-IMG-20",
-        "PD-2026-029-IMG-11",
-        "PD-2026-029-IMG-12"
+        "PD-2026-029-IMG-11"
       ],
       "footage_search_keywords": [
         "revolver evidence bag",
@@ -591,12 +586,12 @@
       "span_id": "SPN-0013",
       "chapter_id": "act2",
       "narrative_function": "theme",
-      "estimated_seconds": 41.1,
-      "cut_count": 15,
+      "estimated_seconds": 51.0,
+      "cut_count": 18,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 6,
-        "footage": 9,
+        "stills": 7,
+        "footage": 11,
         "treatments_rotation": [
           "bleed",
           "scan",
@@ -612,12 +607,16 @@
           "focus",
           "bleed",
           "scan",
-          "duotone"
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-029-IMG-12",
         "PD-2026-029-IMG-13",
         "PD-2026-029-IMG-14",
         "PD-2026-029-IMG-15",
@@ -626,8 +625,7 @@
         "PD-2026-029-IMG-18",
         "PD-2026-029-IMG-19",
         "PD-2026-029-IMG-20",
-        "PD-2026-029-IMG-11",
-        "PD-2026-029-IMG-12"
+        "PD-2026-029-IMG-11"
       ],
       "footage_search_keywords": [
         "revolver evidence bag",
@@ -649,12 +647,12 @@
       "span_id": "SPN-0014",
       "chapter_id": "act3",
       "narrative_function": "endurance_setup",
-      "estimated_seconds": 31.4,
-      "cut_count": 11,
+      "estimated_seconds": 26.9,
+      "cut_count": 10,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 4,
-        "footage": 7,
+        "footage": 6,
         "treatments_rotation": [
           "scan",
           "duotone",
@@ -665,8 +663,7 @@
           "focus",
           "bleed",
           "scan",
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -681,8 +678,7 @@
         "PD-2026-029-IMG-27",
         "PD-2026-029-IMG-28",
         "PD-2026-029-IMG-29",
-        "PD-2026-029-IMG-30",
-        "PD-2026-029-IMG-31"
+        "PD-2026-029-IMG-30"
       ],
       "footage_search_keywords": [
         "death row corridor",
@@ -704,12 +700,12 @@
       "span_id": "SPN-0015",
       "chapter_id": "act3",
       "narrative_function": "human_beat",
-      "estimated_seconds": 29.0,
-      "cut_count": 10,
+      "estimated_seconds": 43.8,
+      "cut_count": 16,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 4,
-        "footage": 6,
+        "stills": 6,
+        "footage": 10,
         "treatments_rotation": [
           "duotone",
           "focus",
@@ -720,12 +716,19 @@
           "bleed",
           "scan",
           "duotone",
-          "focus"
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-029-IMG-31",
         "PD-2026-029-IMG-21",
         "PD-2026-029-IMG-22",
         "PD-2026-029-IMG-23",
@@ -757,69 +760,13 @@
       "span_id": "SPN-0016",
       "chapter_id": "act3",
       "narrative_function": "analysis",
-      "estimated_seconds": 30.6,
-      "cut_count": 11,
+      "estimated_seconds": 26.2,
+      "cut_count": 9,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 4,
-        "footage": 7,
+        "footage": 5,
         "treatments_rotation": [
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed",
-          "scan"
-        ],
-        "transition": "crossfade_0.35s",
-        "no_naked_hardcut": true
-      },
-      "hero_still_ids": [
-        "PD-2026-029-IMG-31",
-        "PD-2026-029-IMG-21",
-        "PD-2026-029-IMG-22",
-        "PD-2026-029-IMG-23",
-        "PD-2026-029-IMG-24",
-        "PD-2026-029-IMG-25",
-        "PD-2026-029-IMG-26",
-        "PD-2026-029-IMG-27",
-        "PD-2026-029-IMG-28",
-        "PD-2026-029-IMG-29",
-        "PD-2026-029-IMG-30"
-      ],
-      "footage_search_keywords": [
-        "death row corridor",
-        "prison cell bunk",
-        "tally marks wall",
-        "prison library books",
-        "barred window shaft light",
-        "execution chamber door"
-      ],
-      "on_screen_text": [],
-      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
-      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
-      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
-      "visual_intent": "A shaft of light through bars widening into an imagined horizon; the interior world as protected ground. Lyrical, restrained."
-    },
-    {
-      "span_id": "SPN-0017",
-      "chapter_id": "act3",
-      "narrative_function": "stakes",
-      "estimated_seconds": 32.6,
-      "cut_count": 12,
-      "sec_per_cut": 2.8,
-      "cut_plan": {
-        "stills": 5,
-        "footage": 7,
-        "treatments_rotation": [
-          "bleed",
-          "scan",
-          "duotone",
           "focus",
           "bleed",
           "scan",
@@ -842,9 +789,66 @@
         "PD-2026-029-IMG-25",
         "PD-2026-029-IMG-26",
         "PD-2026-029-IMG-27",
-        "PD-2026-029-IMG-28",
+        "PD-2026-029-IMG-28"
+      ],
+      "footage_search_keywords": [
+        "death row corridor",
+        "prison cell bunk",
+        "tally marks wall",
+        "prison library books",
+        "barred window shaft light",
+        "execution chamber door"
+      ],
+      "on_screen_text": [],
+      "graphics_note": "on_screen_text = large kinetic typography (spring+scale, motion-blur), upper 1/5, separate layer from bottom captions.",
+      "motion": "motionsample (2.5-3s cuts, bleed/scan/duotone/focus rotation; NO ken_burns, NO wipe, NO yellow wash)",
+      "rights_note": "Hero stills = Codex (no real-person likeness, inv.11, always animate). Footage = rights-cleared factory shelf. Darken + navy + vignette; drop featureless clips.",
+      "visual_intent": "A shaft of light through bars widening into an imagined horizon; the interior world as protected ground. Lyrical, restrained."
+    },
+    {
+      "span_id": "SPN-0017",
+      "chapter_id": "act3",
+      "narrative_function": "stakes",
+      "estimated_seconds": 46.2,
+      "cut_count": 17,
+      "sec_per_cut": 2.8,
+      "cut_plan": {
+        "stills": 7,
+        "footage": 10,
+        "treatments_rotation": [
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
+          "scan",
+          "duotone",
+          "focus",
+          "bleed"
+        ],
+        "transition": "crossfade_0.35s",
+        "no_naked_hardcut": true
+      },
+      "hero_still_ids": [
         "PD-2026-029-IMG-29",
-        "PD-2026-029-IMG-30"
+        "PD-2026-029-IMG-30",
+        "PD-2026-029-IMG-31",
+        "PD-2026-029-IMG-21",
+        "PD-2026-029-IMG-22",
+        "PD-2026-029-IMG-23",
+        "PD-2026-029-IMG-24",
+        "PD-2026-029-IMG-25",
+        "PD-2026-029-IMG-26",
+        "PD-2026-029-IMG-27",
+        "PD-2026-029-IMG-28"
       ],
       "footage_search_keywords": [
         "death row corridor",
@@ -866,12 +870,12 @@
       "span_id": "SPN-0018",
       "chapter_id": "act3",
       "narrative_function": "turn",
-      "estimated_seconds": 40.3,
-      "cut_count": 14,
+      "estimated_seconds": 34.5,
+      "cut_count": 12,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 6,
-        "footage": 8,
+        "stills": 5,
+        "footage": 7,
         "treatments_rotation": [
           "scan",
           "duotone",
@@ -884,14 +888,14 @@
           "scan",
           "duotone",
           "focus",
-          "bleed",
-          "scan",
-          "duotone"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-029-IMG-29",
+        "PD-2026-029-IMG-30",
         "PD-2026-029-IMG-31",
         "PD-2026-029-IMG-21",
         "PD-2026-029-IMG-22",
@@ -900,9 +904,7 @@
         "PD-2026-029-IMG-25",
         "PD-2026-029-IMG-26",
         "PD-2026-029-IMG-27",
-        "PD-2026-029-IMG-28",
-        "PD-2026-029-IMG-29",
-        "PD-2026-029-IMG-30"
+        "PD-2026-029-IMG-28"
       ],
       "footage_search_keywords": [
         "death row corridor",
@@ -924,12 +926,12 @@
       "span_id": "SPN-0019",
       "chapter_id": "act3",
       "narrative_function": "act3_button_openloop",
-      "estimated_seconds": 22.6,
-      "cut_count": 8,
+      "estimated_seconds": 19.3,
+      "cut_count": 7,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 3,
-        "footage": 5,
+        "footage": 4,
         "treatments_rotation": [
           "duotone",
           "focus",
@@ -937,21 +939,19 @@
           "scan",
           "duotone",
           "focus",
-          "bleed",
-          "scan"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-029-IMG-29",
+        "PD-2026-029-IMG-30",
         "PD-2026-029-IMG-31",
         "PD-2026-029-IMG-21",
         "PD-2026-029-IMG-22",
         "PD-2026-029-IMG-23",
-        "PD-2026-029-IMG-24",
-        "PD-2026-029-IMG-25",
-        "PD-2026-029-IMG-26",
-        "PD-2026-029-IMG-27"
+        "PD-2026-029-IMG-24"
       ],
       "footage_search_keywords": [
         "death row corridor",
@@ -973,12 +973,12 @@
       "span_id": "SPN-0020",
       "chapter_id": "act4",
       "narrative_function": "ruling",
-      "estimated_seconds": 50.0,
-      "cut_count": 18,
+      "estimated_seconds": 42.7,
+      "cut_count": 15,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 7,
-        "footage": 11,
+        "stills": 6,
+        "footage": 9,
         "treatments_rotation": [
           "focus",
           "bleed",
@@ -994,10 +994,7 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone",
-          "focus",
-          "bleed"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -1033,12 +1030,12 @@
       "span_id": "SPN-0021",
       "chapter_id": "act4",
       "narrative_function": "resolution",
-      "estimated_seconds": 31.0,
-      "cut_count": 11,
+      "estimated_seconds": 26.5,
+      "cut_count": 9,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 4,
-        "footage": 7,
+        "footage": 5,
         "treatments_rotation": [
           "bleed",
           "scan",
@@ -1048,9 +1045,7 @@
           "scan",
           "duotone",
           "focus",
-          "bleed",
-          "scan",
-          "duotone"
+          "bleed"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -1085,13 +1080,17 @@
       "span_id": "SPN-0022",
       "chapter_id": "act4",
       "narrative_function": "payoff",
-      "estimated_seconds": 23.4,
-      "cut_count": 8,
+      "estimated_seconds": 34.5,
+      "cut_count": 12,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 3,
-        "footage": 5,
+        "stills": 5,
+        "footage": 7,
         "treatments_rotation": [
+          "scan",
+          "duotone",
+          "focus",
+          "bleed",
           "scan",
           "duotone",
           "focus",
@@ -1112,7 +1111,8 @@
         "PD-2026-029-IMG-36",
         "PD-2026-029-IMG-37",
         "PD-2026-029-IMG-38",
-        "PD-2026-029-IMG-39"
+        "PD-2026-029-IMG-39",
+        "PD-2026-029-IMG-40"
       ],
       "footage_search_keywords": [
         "supreme court marble",
@@ -1134,21 +1134,19 @@
       "span_id": "SPN-0023",
       "chapter_id": "act4",
       "narrative_function": "act4_button",
-      "estimated_seconds": 4.8,
-      "cut_count": 2,
+      "estimated_seconds": 4.1,
+      "cut_count": 1,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 1,
-        "footage": 1,
+        "footage": 0,
         "treatments_rotation": [
-          "duotone",
-          "focus"
+          "duotone"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
-        "PD-2026-029-IMG-40",
         "PD-2026-029-IMG-32"
       ],
       "footage_search_keywords": [
@@ -1170,12 +1168,12 @@
       "span_id": "SPN-0024",
       "chapter_id": "ending",
       "narrative_function": "ending_theme",
-      "estimated_seconds": 21.8,
-      "cut_count": 8,
+      "estimated_seconds": 18.6,
+      "cut_count": 7,
       "sec_per_cut": 2.8,
       "cut_plan": {
         "stills": 3,
-        "footage": 5,
+        "footage": 4,
         "treatments_rotation": [
           "focus",
           "bleed",
@@ -1183,8 +1181,7 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
@@ -1196,8 +1193,7 @@
         "PD-2026-029-IMG-35",
         "PD-2026-029-IMG-36",
         "PD-2026-029-IMG-37",
-        "PD-2026-029-IMG-38",
-        "PD-2026-029-IMG-39"
+        "PD-2026-029-IMG-38"
       ],
       "footage_search_keywords": [
         "cold case files",
@@ -1215,12 +1211,12 @@
       "span_id": "SPN-0025",
       "chapter_id": "ending",
       "narrative_function": "ending_synthesis",
-      "estimated_seconds": 34.2,
-      "cut_count": 12,
+      "estimated_seconds": 29.3,
+      "cut_count": 10,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 5,
-        "footage": 7,
+        "stills": 4,
+        "footage": 6,
         "treatments_rotation": [
           "bleed",
           "scan",
@@ -1231,14 +1227,13 @@
           "duotone",
           "focus",
           "bleed",
-          "scan",
-          "duotone",
-          "focus"
+          "scan"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-029-IMG-39",
         "PD-2026-029-IMG-40",
         "PD-2026-029-IMG-32",
         "PD-2026-029-IMG-33",
@@ -1246,8 +1241,7 @@
         "PD-2026-029-IMG-35",
         "PD-2026-029-IMG-36",
         "PD-2026-029-IMG-37",
-        "PD-2026-029-IMG-38",
-        "PD-2026-029-IMG-39"
+        "PD-2026-029-IMG-38"
       ],
       "footage_search_keywords": [
         "cold case files",
@@ -1265,26 +1259,24 @@
       "span_id": "SPN-0026",
       "chapter_id": "ending",
       "narrative_function": "cta",
-      "estimated_seconds": 11.3,
-      "cut_count": 4,
+      "estimated_seconds": 9.7,
+      "cut_count": 3,
       "sec_per_cut": 2.8,
       "cut_plan": {
-        "stills": 2,
+        "stills": 1,
         "footage": 2,
         "treatments_rotation": [
           "scan",
           "duotone",
-          "focus",
-          "bleed"
+          "focus"
         ],
         "transition": "crossfade_0.35s",
         "no_naked_hardcut": true
       },
       "hero_still_ids": [
+        "PD-2026-029-IMG-39",
         "PD-2026-029-IMG-40",
-        "PD-2026-029-IMG-32",
-        "PD-2026-029-IMG-33",
-        "PD-2026-029-IMG-34"
+        "PD-2026-029-IMG-32"
       ],
       "footage_search_keywords": [
         "cold case files",
@@ -1303,7 +1295,7 @@
   "totals": {
     "span_count": 26,
     "cut_count": 251,
-    "estimated_total_seconds": 705.0,
+    "estimated_total_seconds": 704.9,
     "avg_cut_seconds": 2.81,
     "image_footage_ratio_target": "≈4:6",
     "distinct_asset_target": ">= 23 (runtime/30)",
