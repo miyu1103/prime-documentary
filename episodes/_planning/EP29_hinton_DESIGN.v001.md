@@ -91,7 +91,7 @@
 
 - **密度**：`distinct_factory_used ≥ runtime/30` → **≥ 24 distinct**。単一再利用 ≤ 3回。空スパン0。**画像:フッテージ ≒ 4:6**。no-repeat(MIN_GAP~22)。
 - **factory抽出テーマ**（`select_factory_assets.py --theme`）：`crime`(現場/警察)、`legal`(法廷/ガベル/書類/独房・刑務所)、`tech`/`dna`(弾道・鑑定・実験)、夜の街・時計/カレンダー。cf. `[[reference_factory_shelf]]`。
-- **Codex ヒーロー静止画**（1画像1プロンプト・長辺≥3840・**匿名人物OK/実在本人なし**）：房内で座る匿名の男／鉄扉／弾丸マクロ／古いリボルバー（証拠）／法廷の匿名の陪審／夜勤の倉庫／窓から差す一条の光。negative に `specific real person / celebrity likeness, on-image text, bad anatomy`。人物は自然な実写調・特定実在に似せない。
+- **Codex ヒーロー静止画**（`ai_prompts.v001`・**計40枚**・1画像1プロンプト・長辺≥3840・**匿名人物OK/実在本人なし**・使い回し単調回避）：房内で座る匿名の男／鉄扉／弾丸マクロ／古いリボルバー（証拠）／法廷の匿名の陪審／夜勤の倉庫／窓から差す一条の光。negative に `specific real person / celebrity likeness, on-image text, bad anatomy`。人物は自然な実写調・特定実在に似せない。
 
 ---
 

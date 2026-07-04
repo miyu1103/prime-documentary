@@ -89,7 +89,7 @@
 
 - **密度**：`distinct_factory_used ≥ runtime/30` → **≥ 24 distinct**。単一再利用 ≤ 3回。空スパン0。**画像:フッテージ ≒ 4:6**。no-repeat(MIN_GAP~22)。cf. `[[feedback_footage_diversity]]`（被り厳禁・意味ある反復のみ）。
 - **factory抽出テーマ**（`select_factory_assets.py --theme`）：`legal`(法廷/ラインナップ室/刑務所/書類)、`crime`(夜の街/警察)、`dna`/`medical`(鑑定/研究室/二重らせん)、目・顔・時計/カレンダー。cf. `[[reference_factory_shelf]]`。
-- **Codex ヒーロー静止画**（1画像1プロンプト・長辺≥3840・**匿名人物OK/実在本人なし**）：ラインナップの匿名の男たち／目のマクロ（匿名）／監房の匿名の男／DNAオートラジオグラフ／法廷の匿名の陪審／触れ合う二つの手／講演台の二つのマイク。negative に `specific real person / celebrity likeness, on-image text, bad anatomy, graphic violence`。人物は自然な実写調・特定実在に似せない。
+- **Codex ヒーロー静止画**（`ai_prompts.v001`・**計40枚**・1画像1プロンプト・長辺≥3840・**匿名人物OK/実在本人なし**・使い回し単調回避）：ラインナップの匿名の男たち／目のマクロ（匿名）／監房の匿名の男／DNAオートラジオグラフ／法廷の匿名の陪審／触れ合う二つの手／講演台の二つのマイク。negative に `specific real person / celebrity likeness, on-image text, bad anatomy, graphic violence`。人物は自然な実写調・特定実在に似せない。
 
 ---
 

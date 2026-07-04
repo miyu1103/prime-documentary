@@ -100,7 +100,7 @@
 - **密度**：`distinct_factory_used ≥ runtime/30` → **≥ 24 distinct クリップ**。単一クリップ再利用 **≤ 3回**。空スパン 0。
 - **画像:フッテージ ≒ 4:6**（kyllo v002 の学び）。全素材を no-repeat（MIN_GAP~22）で散らす。
 - **factory 抽出テーマ**（`select_factory_assets.py --theme`）：`property`（連棟住宅/玄関/鍵/引越し）, `crime`（パトランプ/夜の街/証拠袋）, `legal`（法廷/書類/ガベル/ファイル）, `finance`（現金/帳簿/数字）, Philadelphia の街。cf. `[[reference_factory_shelf]]`。
-- **Codex 生成ヒーロー静止画**（`ai_prompts.v001`・1画像=1プロンプト・長辺≥3840・**匿名人物OK/実在本人の肖像なし**）：敷居に立つ父親（匿名）／引越し箱を抱える家族（匿名）／令状フロアで待つ所有者たち（匿名群衆）／施錠告知の書類マクロ／夜の連棟住宅／空の法廷（Courtroom 478 の雰囲気）／敷居に置かれた鍵／没収書類の山／$の帳簿。各プロンプトに negative（**specific real person / celebrity likeness**, on-image text, bad anatomy…）と upscale≥3840 を明記。人物像は自然な実写調で、特定の実在人物に似せない。
+- **Codex 生成ヒーロー静止画**（`ai_prompts.v001`・**計40枚**・1画像=1プロンプト・長辺≥3840・**匿名人物OK/実在本人の肖像なし**・使い回し単調回避）：敷居に立つ父親（匿名）／引越し箱を抱える家族（匿名）／令状フロアで待つ所有者たち（匿名群衆）／施錠告知の書類マクロ／夜の連棟住宅／空の法廷（Courtroom 478 の雰囲気）／敷居に置かれた鍵／没収書類の山／$の帳簿。各プロンプトに negative（**specific real person / celebrity likeness**, on-image text, bad anatomy…）と upscale≥3840 を明記。人物像は自然な実写調で、特定の実在人物に似せない。
 
 ---
 
