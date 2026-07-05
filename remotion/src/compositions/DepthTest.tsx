@@ -9,6 +9,6 @@ import {DepthStill} from './CaseFilm';
  */
 export const DepthTest: React.FC = () => (
   <AbsoluteFill>
-    <DepthStill src="_motiontest/test.jpg" seed="depthtest" dir={1} />
+    <DepthStill src="_motiontest/test.jpg" seed="depthtest" dir={1} dur={90} />
   </AbsoluteFill>
 );

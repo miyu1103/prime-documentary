@@ -65,12 +65,14 @@ const Cover: React.FC<{src: string; style?: React.CSSProperties}> = ({src, style
 /** Footage: graded + navy-tinted + vignetted so bright/washed clips (fog, snow, white tech)
  * unify into the dark navy palette; a slow push (camera move on real footage — not a still zoom)
  * gives a motion floor so even near-locked clips never read as frozen. */
-const Footage: React.FC<{src: string; startFrom: number; dir: number}> = ({src, startFrom, dir}) => {
+const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: number}> = ({src, startFrom, dir, dur}) => {
   const f = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-  const p = interpolate(f, [0, durationInFrames], [0, 1], {extrapolateRight: 'clamp'});
-  const s = interpolate(p, [0, 1], [1.04, 1.1]);
-  const x = interpolate(p, [0, 1], [-14 * dir, 14 * dir]);
+  // progress over THIS cut's length (not the whole composition) so the Ken Burns
+  // actually travels — normalizing against useVideoConfig().durationInFrames (the full
+  // 20k-frame film) made p≈0 => footage read as near-still after the entrance settled.
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
+  const s = interpolate(p, [0, 1], [1.05, 1.16]);
+  const x = interpolate(p, [0, 1], [-26 * dir, 26 * dir]);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
       <OffthreadVideo
@@ -94,10 +96,9 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number}> = ({src, 
 };
 
 /** bleed: full-frame depth — a blurred enlarged layer and the sharp image drift opposite ways. No tilt. */
-const BleedStill: React.FC<{src: string; seed: string; dir: number}> = ({src, seed, dir}) => {
+const BleedStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-  const p = interpolate(f, [0, durationInFrames], [0, 1], {extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
   const bgX = interpolate(p, [0, 1], [-38 * dir, 38 * dir]);
   const fgX = interpolate(p, [0, 1], [24 * dir, -24 * dir]);
   const fgS = interpolate(p, [0, 1], [1.05, 1.13]);
@@ -126,10 +127,9 @@ const parallax = (p: number, dir: number) => ({
 });
 
 /** scan: parallax base + a thermal light pool and a slow-drifting measurement grid. */
-const ScanStill: React.FC<{src: string; seed: string; dir: number}> = ({src, seed, dir}) => {
+const ScanStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-  const p = interpolate(f, [0, durationInFrames], [0, 1], {extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   const gy = interpolate(p, [0, 1], [0, 80]);
   const lx = 50 + 26 * Math.sin(p * Math.PI * 2);
@@ -160,10 +160,9 @@ const ScanStill: React.FC<{src: string; seed: string; dir: number}> = ({src, see
 };
 
 /** duotone: parallax base + duotone grade + travelling light + drifting motes + vignette breath. */
-const DuotoneStill: React.FC<{src: string; seed: string; dir: number}> = ({src, seed, dir}) => {
+const DuotoneStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-  const p = interpolate(f, [0, durationInFrames], [0, 1], {extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   const vig = 0.9 + 0.1 * Math.sin(p * Math.PI * 2);
   return (
@@ -182,11 +181,10 @@ const DuotoneStill: React.FC<{src: string; seed: string; dir: number}> = ({src, 
 };
 
 /** focus: parallax base + rack-focus reveal on the sharp layer (soft -> sharp). */
-const FocusStill: React.FC<{src: string; seed: string; dir: number}> = ({src, seed, dir}) => {
+const FocusStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
   const blur = interpolate(f, [0, 22], [16, 0], {extrapolateRight: 'clamp'});
-  const p = interpolate(f, [0, durationInFrames], [0, 1], {extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
@@ -203,10 +201,9 @@ const FocusStill: React.FC<{src: string; seed: string; dir: number}> = ({src, se
 };
 
 /** card: the diagonal 2.5D floating photo card — RARE, for accent only. */
-const CardStill: React.FC<{src: string; seed: string; dir: number}> = ({src, seed, dir}) => {
+const CardStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-  const p = interpolate(f, [0, durationInFrames], [0, 1], {extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
   const bgX = interpolate(p, [0, 1], [-40 * dir, 40 * dir]);
   const cardX = interpolate(p, [0, 1], [30 * dir, -30 * dir]);
   const cardRot = interpolate(p, [0, 1], [-1.8 * dir, 1.8 * dir]);
@@ -265,10 +262,10 @@ const DepthPlane: React.FC<{src: string; displace: number}> = ({src, displace}) 
   );
 };
 
-export const DepthStill: React.FC<{src: string; seed: string; dir: number}> = ({src, seed, dir}) => {
+export const DepthStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const {width, height, durationInFrames} = useVideoConfig();
-  const dolly = interpolate(f, [0, durationInFrames], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
+  const {width, height} = useVideoConfig();
+  const dolly = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
       <AbsoluteFill style={{filter: GRADE}}>
@@ -292,20 +289,22 @@ export const DepthStill: React.FC<{src: string; seed: string; dir: number}> = ({
 
 const Still: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
   const dir = index % 2 === 0 ? 1 : -1;
+  const {fps} = useVideoConfig();
+  const dur = Math.max(1, Math.round(cut.dur * fps)); // motion spans THIS cut, not the whole film
   switch (cut.treatment) {
     case 'depth':
-      return <DepthStill src={cut.src} seed={cut.seed} dir={dir} />;
+      return <DepthStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
     case 'scan':
-      return <ScanStill src={cut.src} seed={cut.seed} dir={dir} />;
+      return <ScanStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
     case 'duotone':
-      return <DuotoneStill src={cut.src} seed={cut.seed} dir={dir} />;
+      return <DuotoneStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
     case 'focus':
-      return <FocusStill src={cut.src} seed={cut.seed} dir={dir} />;
+      return <FocusStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
     case 'card':
-      return <CardStill src={cut.src} seed={cut.seed} dir={dir} />;
+      return <CardStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
     case 'bleed':
     default:
-      return <BleedStill src={cut.src} seed={cut.seed} dir={dir} />;
+      return <BleedStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
   }
 };
 
@@ -318,7 +317,7 @@ const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
   const {fps} = useVideoConfig();
   const inner =
     cut.kind === 'footage' ? (
-      <Footage src={cut.src} startFrom={(index * 47) % 160} dir={index % 2 === 0 ? 1 : -1} />
+      <Footage src={cut.src} startFrom={(index * 47) % 160} dir={index % 2 === 0 ? 1 : -1} dur={Math.max(1, Math.round(cut.dur * fps))} />
     ) : (
       <Still cut={cut} index={index} />
     );
@@ -480,10 +479,9 @@ const GraphicsBeats: React.FC<{beats: Beat[]}> = ({beats}) => {
 };
 
 /** 8-second cold-open: fast punch cuts of the strongest shots + a bold hook line. BGM (post-mix) carries it. */
-const PunchShot: React.FC<{src: string}> = ({src}) => {
+const PunchShot: React.FC<{src: string; dur: number}> = ({src, dur}) => {
   const f = useCurrentFrame();
-  const {durationInFrames} = useVideoConfig();
-  const p = interpolate(f, [0, durationInFrames], [0, 1], {extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
   const s = interpolate(p, [0, 1], [1.2, 1.06]);
   const op = interpolate(f, [0, 4], [0, 1], {extrapolateRight: 'clamp'});
   // hard, fast punch-in with a decaying motion blur — the aggressive cold-open energy
@@ -513,7 +511,7 @@ const Hook: React.FC<{hook: HookCut[]; line: string}> = ({hook, line}) => {
     <AbsoluteFill style={{backgroundColor: ink}}>
       {hook.map((h, i) => (
         <Sequence key={i} from={Math.round(h.start * fps)} durationInFrames={Math.max(1, Math.round(h.dur * fps))}>
-          <PunchShot src={h.src} />
+          <PunchShot src={h.src} dur={Math.max(1, Math.round(h.dur * fps))} />
         </Sequence>
       ))}
       <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', padding: 120}}>
