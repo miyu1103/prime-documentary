@@ -161,6 +161,30 @@ export const BrightLine: React.FC<{mode?: BrightLineMode; dur?: number}> = ({
     easing: Easing.inOut(Easing.sin),
   });
 
+  // ---- リビール後に効く持続的二次モーション（settle後にランプイン・全編凍結禁止）----
+  // sustain: リビール完了後に 0→1 へ（イージング）。以降ずっと大振幅の動きを載せる。
+  const sustain = interpolate(frame, [sec(fps, 1.3), sec(fps, 2.0)], [0, 1], {
+    easing: Easing.out(Easing.cubic),
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  // 全体パララックス（正弦＝イージング内包・往復）: 画面幅/高さの約±1.4% / ±1.2%
+  const groupX =
+    sustain * Math.sin((frame / fps) * ((2 * Math.PI) / 6.2)) * (width * 0.014);
+  const groupY =
+    sustain *
+    Math.sin((frame / fps) * ((2 * Math.PI) / 4.8) + 1.1) *
+    (height * 0.012);
+  // ゆっくりしたスケール呼吸 1.00↔1.02（上方向のみ＝背景ギャップ無し）
+  const groupScale =
+    1 +
+    sustain *
+      0.02 *
+      (0.5 + 0.5 * Math.sin((frame / fps) * ((2 * Math.PI) / 5.4)));
+  const groupTransform = `translate(${groupX}px, ${groupY}px) scale(${groupScale})`;
+  // 継ぎ目を往復する走行グリント（0..1・正弦ping-pong＝イージング・常時移動）
+  const glintPos = 0.5 + 0.5 * Math.sin((frame / fps) * ((2 * Math.PI) / 2.6) - Math.PI / 2);
+
   // 継ぎ目本体（core + bloom）。scaleY で呼吸 / slam の落下は translateY。
   const Seam: React.FC = () => (
     <div
@@ -216,6 +240,21 @@ export const BrightLine: React.FC<{mode?: BrightLineMode; dur?: number}> = ({
           filter: 'blur(8px)',
         }}
       />
+      {/* 継ぎ目を往復する走行グリント（リビール後も止まらない持続モーション） */}
+      <div
+        style={{
+          position: 'absolute',
+          left: `calc(${(glintPos * 100).toFixed(3)}% - 46px)`,
+          top: -20,
+          width: 92,
+          height: seamThickness + 40,
+          background: `radial-gradient(50% 50% at 50% 50%, ${white} 0%, ${electric}88 34%, transparent 72%)`,
+          opacity: 0.6 * glow,
+          filter: 'blur(3px)',
+          mixBlendMode: 'screen',
+          pointerEvents: 'none',
+        }}
+      />
     </div>
   );
 
@@ -227,6 +266,8 @@ export const BrightLine: React.FC<{mode?: BrightLineMode; dur?: number}> = ({
         transform: `translateY(${sceneY}px)`,
       }}
     >
+      {/* 持続的二次モーション群（settle後にパララックス＋スケール呼吸） */}
+      <AbsoluteFill style={{transform: groupTransform}}>
       {/* Layer 2: パースグリッド地平（グラウンドプレーン） */}
       <AbsoluteFill
         style={{
@@ -289,6 +330,7 @@ export const BrightLine: React.FC<{mode?: BrightLineMode; dur?: number}> = ({
           }}
         />
       )}
+      </AbsoluteFill>
 
       {/* ビネット */}
       <AbsoluteFill

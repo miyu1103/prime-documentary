@@ -131,14 +131,50 @@ BOOKEND_ED_SEC = 9.0                             # BrandEndcard outro (trailing,
 # p10 45.2; a slideshow episode (EP-carsearch v004) = mean 3.5. The enforceable floor sits
 # well above the slideshow number. p10 (sustained-low 10th percentile) is a secondary floor
 # so a mostly-dynamic cut with long static holds (which drags p10 down) is still caught.
-MOTION_ENERGY_BODY_MEAN_MIN = 12.0               # body mean YAVG must clear this (slideshow=3.5, MotionSample=46.6)
-MOTION_ENERGY_P10_MIN = 4.0                       # sustained-low floor: body p10 must exceed a bare slideshow's average
+MOTION_ENERGY_BODY_MEAN_MIN = 12.0               # body (within-shot) mean YAVG must clear this (slideshow=3.5, MotionSample=46.6)
+# EP32 §M1 recalibration (2026-07-06): the old p10 floor of 4.0 sat almost ON the slideshow
+# BODY MEAN (3.5) -- a render that was a slideshow on average could still clear it, so the
+# sustained-low floor barely bit. Raised WELL above the slideshow average (3.5) into the 8-10
+# band so a render with long dead holds now fails on p10 alone. Strictly higher = stricter
+# (invariant 15). MotionSample body p10 = 45.2, so genuinely dynamic renders keep huge margin.
+MOTION_ENERGY_P10_MIN = 9.0                       # sustained-low floor, raised 4.0 -> 9.0 (>> slideshow 3.5; MotionSample 45.2)
+# EP32 §M1 within-shot + per-segment. The plain body mean is INFLATED by ~314 hard-cut YAVG
+# spikes (a cut = a huge one-frame inter-frame difference) + ForcefulCut transitions, so a
+# render frozen BETWEEN cuts still cleared 12. Fix: (a) mask +/-CUT_GUARD_FRAMES frames around
+# every cut boundary before averaging (WITHIN-SHOT mean, in measure_motion_energy.py), and
+# (b) require EACH ~12s body window's within-shot mean to clear a per-segment floor so a dead
+# 30s stretch fails even when the global mean passes. Cut boundaries come from the episode's
+# <slug>_film.json cuts[].start; if absent they are auto-detected as YAVG spikes.
+MOTION_ENERGY_SEGMENT_MEAN_MIN = 8.0             # per-~12s-window within-shot mean floor (dead-stretch catch; >> slideshow 3.5)
+MOTION_ENERGY_MAX_FAIL_SEGMENTS = 0              # zero tolerance: any body window below the segment floor fails
 # ending BGM must resolve, not get chopped mid-phrase at full volume. This is a
 # FLOOR only (a hard full-volume cut fails); whether it lands on a musical cadence
 # ("切りのいいところ") is an arrangement choice + a manual listen -- not amplitude.
 BGM_END_MIN_BODY_DB = -45.0                      # if the last seconds are quieter than this, no bed to resolve -> skip
 BGM_END_TAIL_SILENCE_DB = -45.0                  # final 0.3s ~silent => resolved/faded cleanly
 BGM_END_MIN_DROP_DB = 10.0                       # OR final 0.3s >=10 dB below the body => resolving, not chopped
+# EP32 §B5 check_sound_layers: prove the 4-LAYER mix (VO + music + ambience + SFX) actually
+# reached the RENDER's audio track, not a lone music bed (the "音が薄い/孤児" failure). Measured
+# directly on the render with ffmpeg -- no dependency on any plan file (a plan can be orphaned).
+# Two independent dimensions, BOTH required (AND):
+#   (a) SFX-like transients: per-50ms RMS windows on a >500Hz signal; an onset = a local rise of
+#       >= SOUND_TRANSIENT_RISE_DB above the trailing-window median. A bare music bed is smooth
+#       (few onsets); a real mix (VO word onsets + SFX hits) is dense. Calibrated 2026-07-06 on
+#       real 4-layer finals: unlock=52/min, miranda=62/min -> floor 12/min leaves large margin.
+#   (b) Ambience band energy: mean level in a 40-160Hz band must exceed a floor, i.e. a sustained
+#       low-frequency bed exists. Real finals measured -21.9 dB; an empty band sits near -70..-90.
+# Honest limit (documented, not hidden): speech alone also creates onsets, so this proves the mix
+# is NOT a bare/near-empty single bed; it cannot by itself prove a *distinct* SFX layer. It is a
+# HARD floor against the observed failure (orphaned sound plan -> music-only render), not a full
+# 4-layer attribution. Thresholds are conservative to avoid false-flagging a normal mix.
+SOUND_WINDOW_SAMPLES = 2400                       # 2400 samples @48kHz = 50ms RMS analysis window
+SOUND_TRANSIENT_RISE_DB = 9.0                     # a window this far above the local median = an onset
+SOUND_TRANSIENT_FLOOR_DB = -45.0                  # onset must also be above this absolute level (ignore noise floor)
+SOUND_TRANSIENT_BASELINE_WIN = 10                 # trailing windows (10 * 50ms = 500ms) for the local median
+SOUND_TRANSIENT_DEBOUNCE_WIN = 3                  # >=150ms between counted onsets (debounce)
+SOUND_MIN_TRANSIENTS_PER_MIN = 12.0              # body onset density floor (real mixes 52-62/min)
+SOUND_AMBIENCE_HP, SOUND_AMBIENCE_LP = 40, 160    # ambience band-pass (Hz)
+SOUND_AMBIENCE_MIN_DB = -45.0                     # ambience-band mean level floor (real finals ~ -21.9 dB)
 MIN_VIDEO_W, MIN_VIDEO_H = 1920, 1080
 THUMB_W, THUMB_H = 1280, 720
 MIN_THUMB_VARIANTS = 3
@@ -468,8 +504,10 @@ def check_render_resolution(path: Path) -> dict:
         st = json.loads(out.stdout)["streams"][0]
         w, h = int(st["width"]), int(st["height"])
     except Exception as exc:  # noqa: BLE001
-        return {"check": "render_resolution", "ok": True, "hard": True, "skipped": True,
-                "reason": f"probe skipped ({exc})"}
+        # EP32 §B1 FAIL-CLOSED: a render whose video stream cannot even be probed is broken,
+        # not "fine" -- must FAIL, never a silent pass (mirrors check_motion_energy).
+        return {"check": "render_resolution", "ok": False, "hard": True,
+                "reason": f"could not probe video stream ({exc}); treat as FAIL, not a silent pass"}
     ok = max(w, h) >= MIN_VIDEO_W and min(w, h) >= MIN_VIDEO_H
     return {"check": "render_resolution", "ok": ok, "hard": True,
             "reason": f"{w}x{h} codec={st.get('codec_name')} (need >= {MIN_VIDEO_W}x{MIN_VIDEO_H})"}
@@ -484,8 +522,9 @@ def check_freeze(path: Path) -> dict:
              "-vf", f"freezedetect=n=-60dB:d={MAX_FREEZE_S}", "-an", "-f", "null", os.devnull],
             capture_output=True, text=True, check=True, timeout=1200)
     except Exception as exc:  # noqa: BLE001
-        return {"check": "motion_present", "ok": True, "hard": True, "skipped": True,
-                "reason": f"freezedetect skipped ({exc})"}
+        # EP32 §B1 FAIL-CLOSED: an ffmpeg that cannot decode the render must FAIL, not pass.
+        return {"check": "motion_present", "ok": False, "hard": True,
+                "reason": f"freezedetect could not run ({exc}); treat as FAIL, not a silent pass"}
     durs = [float(x) for x in re.findall(r"freeze_duration:\s*(\d+(?:\.\d+)?)", out.stderr)]
     total, longest = sum(durs), (max(durs) if durs else 0.0)
     ok = longest <= MAX_FREEZE_LONGEST_S and total <= MAX_FREEZE_TOTAL_S
@@ -525,8 +564,9 @@ def check_black(path: Path) -> dict:
              "-vf", "blackdetect=d=0.5:pic_th=0.98", "-an", "-f", "null", os.devnull],
             capture_output=True, text=True, check=True, timeout=900)
     except Exception as exc:  # noqa: BLE001
-        return {"check": "images_present", "ok": True, "hard": True, "skipped": True,
-                "reason": f"blackdetect skipped ({exc})"}
+        # EP32 §B1 FAIL-CLOSED: an undecodable render must FAIL, not pass as "no black".
+        return {"check": "images_present", "ok": False, "hard": True,
+                "reason": f"blackdetect could not run ({exc}); treat as FAIL, not a silent pass"}
     spans = re.findall(r"black_duration:(\d+(?:\.\d+)?)", out.stderr)
     durs = [float(x) for x in spans]
     total, longest = sum(durs), (max(durs) if durs else 0.0)
@@ -546,8 +586,9 @@ def check_bgm(path: Path) -> dict:
              "-af", "silencedetect=n=-40dB:d=0.6", "-f", "null", os.devnull],
             capture_output=True, text=True, check=True, timeout=900)
     except Exception as exc:  # noqa: BLE001
-        return {"check": "bgm_present", "ok": True, "hard": True, "skipped": True,
-                "reason": f"silencedetect skipped ({exc})"}
+        # EP32 §B1 FAIL-CLOSED: if the audio cannot be decoded, we cannot assert a bed exists -> FAIL.
+        return {"check": "bgm_present", "ok": False, "hard": True,
+                "reason": f"silencedetect could not run ({exc}); treat as FAIL, not a silent pass"}
     sil = [float(x) for x in re.findall(r"silence_duration:\s*(\d+(?:\.\d+)?)", out.stderr)]
     total = sum(sil)
     ok = total <= MAX_TOTAL_SILENCE_S
@@ -576,8 +617,9 @@ def check_low_motion(path: Path, dur: float, epdir: Path) -> dict:
              "-map", "0:v", "-an", "-f", "null", os.devnull],
             capture_output=True, text=True, timeout=1800)
     except Exception as exc:  # noqa: BLE001
-        return {"check": "animation_density", "ok": True, "hard": False, "skipped": True,
-                "reason": f"freezedetect skipped ({exc})"}
+        # EP32 §B1 FAIL-CLOSED: an undecodable render must FAIL the animation floor, never pass.
+        return {"check": "animation_density", "ok": False, "hard": True,
+                "reason": f"freezedetect could not run ({exc}); treat as FAIL, not a silent pass"}
     starts = [float(x) for x in re.findall(r"freeze_start:\s*([0-9.]+)", out.stderr)]
     lens = [float(x) for x in re.findall(r"freeze_duration:\s*([0-9.]+)", out.stderr)]
     spans = list(zip(starts, lens))
@@ -666,27 +708,36 @@ def check_motion_energy(path: Path, dur: float, epdir: Path) -> dict:
     op_lo, op_hi = hook, hook + BOOKEND_OP_SEC
     ed_lo = max(op_hi, dur - BOOKEND_ED_SEC)
     body_regions = [(0.0, op_lo), (op_hi, ed_lo)]
-    n = len(y)
-    body_vals: list[float] = []
-    for blo, bhi in body_regions:
-        i0 = max(0, int(blo * fps))
-        i1 = min(n, int(bhi * fps))
-        if i1 > i0:
-            body_vals.extend(y[i0:i1])
-    st = mme.stats(body_vals) or mme.stats(y)   # fall back to full if body window empty
+
+    # EP32 §M1: cut boundaries from the episode's film-data (else auto-detect YAVG spikes), used to
+    # mask +/-CUT_GUARD_FRAMES frames around every hard cut so cut-difference spikes don't inflate
+    # the mean. Then compute the WITHIN-SHOT body stats + PER-SEGMENT floor.
+    cut_times = mme.cut_times_from_film(fd) or mme.detect_spike_times(y, fps)
+    ws_vals = mme.within_shot_values(y, fps, body_regions, cut_times)
+    st = mme.stats(ws_vals) or mme.stats(y)     # fall back to full if the within-shot window is empty
     mean, p10, p50 = st["mean"], st["p10"], st["p50"]
+    segs = mme.segment_means(y, fps, body_regions, cut_times)
+    fail_segs = [s for s in segs if s["mean"] < MOTION_ENERGY_SEGMENT_MEAN_MIN]
     problems = []
     if mean < MOTION_ENERGY_BODY_MEAN_MIN:
-        problems.append(f"mean {mean:.1f} < {MOTION_ENERGY_BODY_MEAN_MIN:.0f} (slideshow-flat)")
+        problems.append(f"within-shot mean {mean:.1f} < {MOTION_ENERGY_BODY_MEAN_MIN:.0f} (slideshow-flat)")
     if p10 < MOTION_ENERGY_P10_MIN:
         problems.append(f"p10 {p10:.1f} < {MOTION_ENERGY_P10_MIN:.0f} (sustained-low holds)")
+    if len(fail_segs) > MOTION_ENERGY_MAX_FAIL_SEGMENTS:
+        worst = min(fail_segs, key=lambda s: s["mean"])
+        problems.append(f"{len(fail_segs)} body window(s) < {MOTION_ENERGY_SEGMENT_MEAN_MIN:.0f} "
+                        f"(worst {worst['mean']:.1f} @ {worst['start']:.0f}s -- dead stretch)")
     ok = not problems
     return {"check": "motion_energy", "ok": ok, "hard": True,
             "body_mean": round(mean, 2), "body_p10": round(p10, 2), "body_p50": round(p50, 2),
             "min_mean": MOTION_ENERGY_BODY_MEAN_MIN, "min_p10": MOTION_ENERGY_P10_MIN,
-            "reason": (f"BODY motion energy mean {mean:.1f} / p10 {p10:.1f} / p50 {p50:.1f} "
-                       f"({st['n']} frames; floors mean >= {MOTION_ENERGY_BODY_MEAN_MIN:.0f}, "
-                       f"p10 >= {MOTION_ENERGY_P10_MIN:.0f}; MotionSample 46.6 vs slideshow 3.5)"
+            "segment_floor": MOTION_ENERGY_SEGMENT_MEAN_MIN, "segments": len(segs),
+            "fail_segments": len(fail_segs), "cut_boundaries": len(cut_times),
+            "reason": (f"WITHIN-SHOT motion mean {mean:.1f} / p10 {p10:.1f} / p50 {p50:.1f} "
+                       f"({st['n']} frames, {len(cut_times)} cuts masked +/-{mme.CUT_GUARD_FRAMES}f; "
+                       f"{len(segs)} body windows all >= {MOTION_ENERGY_SEGMENT_MEAN_MIN:.0f}; "
+                       f"floors mean >= {MOTION_ENERGY_BODY_MEAN_MIN:.0f}, p10 >= {MOTION_ENERGY_P10_MIN:.0f}; "
+                       f"MotionSample 46.6 vs slideshow 3.5)"
                        if ok else "BODY motion too low: " + "; ".join(problems) +
                        f" (MotionSample 46.6 vs slideshow 3.5)")}
 
@@ -753,8 +804,214 @@ def check_loudness(path: Path) -> dict:
         return {"check": "loudness", "ok": True, "hard": False, "skipped": True, "reason": "no LUFS parsed"}
     lufs = float(m[-1])
     ok = LUFS_LO <= lufs <= LUFS_HI
-    return {"check": "loudness", "ok": ok, "hard": False,
+    # EP32 MINOR: promoted soft -> HARD. A MEASURED loudness outside [-16,-12] LUFS is a real
+    # delivery defect (too quiet / too hot). Only a MEASURED value gates; the un-measurable
+    # branches above stay soft (cannot penalize what ffmpeg could not read).
+    return {"check": "loudness", "ok": ok, "hard": True,
             "reason": f"integrated {lufs:.1f} LUFS (target -14, band {LUFS_LO}..{LUFS_HI})"}
+
+
+def _sha256(path: Path) -> str:
+    """sha256:<hex> of a file, streamed (used by freshness + receipt)."""
+    import hashlib
+    h = hashlib.sha256()
+    with open(path, "rb") as fh:
+        for chunk in iter(lambda: fh.read(1 << 20), b""):
+            h.update(chunk)
+    return "sha256:" + h.hexdigest()
+
+
+def _prior_receipt_sha(epdir: Path) -> tuple[str | None, str | None]:
+    """(sha, filename) recorded by the most recent existing acceptance receipt, or (None, None).
+    Read BEFORE the new receipt is written, so it is genuinely the PRIOR render's sha."""
+    recs = sorted((epdir / "09_package").glob("acceptance_receipt.v*.json"))
+    for p in reversed(recs):
+        d = _load(p) or {}
+        sha = d.get("video_sha256")
+        if sha:
+            return sha, p.name
+    return None, None
+
+
+def check_freshness(epdir: Path, render: Path, cur_sha: str | None,
+                    render_started_at: float | None) -> dict:
+    """HARD (EP32 §B2): the render under test must be FRESH, not a stale good file the mixer
+    grabbed after a crash (the documented 'crash -> stale green' false-pass). Two signals:
+      - sha != prior: the new mp4's sha256 must differ from the last accepted render's sha
+        (byte-identical to a previously-graded file => not a real new render).
+      - mtime >= render start: if --render-started-at is supplied, the mp4 must have been
+        written at/after the render kickoff (authoritative; a stale file predates it).
+    With no prior receipt AND no timestamp there is nothing to compare, so it passes with a note
+    (still strictly additive -- there was NO freshness gate before)."""
+    prev_sha, prev_name = _prior_receipt_sha(epdir)
+    try:
+        mtime = render.stat().st_mtime
+    except Exception as exc:  # noqa: BLE001
+        return {"check": "render_freshness", "ok": False, "hard": True,
+                "reason": f"could not stat render for freshness ({exc}); treat as FAIL"}
+    problems = []
+    if render_started_at is not None:
+        if mtime < render_started_at:
+            problems.append(f"mp4 mtime {mtime:.0f} predates render start {render_started_at:.0f} "
+                            f"(stale file, not this render)")
+    if prev_sha and cur_sha and cur_sha == prev_sha:
+        problems.append(f"sha256 identical to prior receipt {prev_name} "
+                        f"(byte-identical to an already-graded render -> not fresh; re-render or "
+                        f"pass --render-started-at for a legitimate re-grade)")
+    ok = not problems
+    if ok:
+        bits = []
+        if render_started_at is not None:
+            bits.append(f"mtime {mtime:.0f} >= start {render_started_at:.0f}")
+        bits.append(f"sha {'differs from ' + prev_name if prev_sha else '(no prior receipt to compare)'}")
+        reason = "fresh render: " + "; ".join(bits)
+    else:
+        reason = "; ".join(problems)
+    return {"check": "render_freshness", "ok": ok, "hard": True, "reason": reason}
+
+
+def _astats_rms_windows(path: Path, ss: float, dur: float, extra_af: str = "") -> list[float]:
+    """Per-50ms RMS level (dB) windows over [ss, ss+dur] of the first audio stream.
+    `extra_af` is prepended (e.g. a highpass) before the windowing/astats chain."""
+    chain = (f"{extra_af}," if extra_af else "") + \
+        f"aresample=48000,asetnsamples=n={SOUND_WINDOW_SAMPLES}:p=0," \
+        "astats=metadata=1:reset=1,ametadata=print:key=lavfi.astats.Overall.RMS_level:file=-"
+    out = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-nostats", "-ss", f"{ss}", "-t", f"{dur}",
+         "-i", str(path), "-map", "0:a:0", "-af", chain, "-f", "null", os.devnull],
+        capture_output=True, text=True, timeout=1200)
+    return [float(x) for x in
+            re.findall(r"astats\.Overall\.RMS_level=(-?\d+(?:\.\d+)?)", out.stdout + out.stderr)]
+
+
+def _count_onsets(vals: list[float]) -> int:
+    """Onset = a window rising >= SOUND_TRANSIENT_RISE_DB above the trailing-window median and
+    above the absolute floor, debounced by SOUND_TRANSIENT_DEBOUNCE_WIN windows."""
+    n = len(vals)
+    cnt = 0
+    last = -10 ** 9
+    b = SOUND_TRANSIENT_BASELINE_WIN
+    for i in range(b, n):
+        window = vals[i - b:i]
+        med = sorted(window)[len(window) // 2]
+        if (vals[i] - med) >= SOUND_TRANSIENT_RISE_DB and vals[i] >= SOUND_TRANSIENT_FLOOR_DB \
+                and (i - last) >= SOUND_TRANSIENT_DEBOUNCE_WIN:
+            cnt += 1
+            last = i
+    return cnt
+
+
+def check_sound_layers(path: Path, dur: float) -> dict:
+    """HARD (EP32 §B5): inspect the FINAL RENDER's audio directly and prove it carries a real
+    multi-layer mix, not a lone music bed. Depends on NO external plan file (a sound plan can be
+    orphaned and never muxed). Requires BOTH: (a) SFX/VO-onset density over the body and (b)
+    ambience-band energy. See the SOUND_* constants for the calibration + honest limits."""
+    if not dur:
+        return {"check": "sound_layers", "ok": False, "hard": True, "reason": "no duration to analyze"}
+    body_hi = max(1.0, dur - BOOKEND_ED_SEC)      # analyze hook+body; drop only the calm endcard tail
+    body_dur = body_hi
+    try:
+        rms = _astats_rms_windows(path, 0.0, body_dur, extra_af="highpass=f=500")
+        amb = _mean_volume_af(path, 0.0, body_dur,
+                              f"highpass=f={SOUND_AMBIENCE_HP},lowpass=f={SOUND_AMBIENCE_LP}")
+    except Exception as exc:  # noqa: BLE001
+        # FAIL-CLOSED: an audio track we cannot analyze cannot be certified as a 4-layer mix.
+        return {"check": "sound_layers", "ok": False, "hard": True,
+                "reason": f"could not analyze render audio ({exc}); treat as FAIL, not a silent pass"}
+    if not rms:
+        return {"check": "sound_layers", "ok": False, "hard": True,
+                "reason": "no audio RMS windows parsed (render has no audio stream?); treat as FAIL"}
+    onsets = _count_onsets(rms)
+    per_min = onsets / (body_dur / 60.0) if body_dur else 0.0
+    problems = []
+    if per_min < SOUND_MIN_TRANSIENTS_PER_MIN:
+        problems.append(f"onset density {per_min:.1f}/min < {SOUND_MIN_TRANSIENTS_PER_MIN:.0f} "
+                        f"(smooth -> looks like a lone music bed, no VO/SFX transients)")
+    if amb is None or amb < SOUND_AMBIENCE_MIN_DB:
+        problems.append(f"ambience band {SOUND_AMBIENCE_HP}-{SOUND_AMBIENCE_LP}Hz "
+                        f"{('%.1f dB' % amb) if amb is not None else 'unmeasurable'} "
+                        f"< {SOUND_AMBIENCE_MIN_DB:.0f} dB (no sustained bed)")
+    ok = not problems
+    return {"check": "sound_layers", "ok": ok, "hard": True,
+            "onsets_per_min": round(per_min, 1),
+            "ambience_db": round(amb, 1) if amb is not None else None,
+            "reason": (f"multi-layer mix present: {per_min:.1f} onsets/min "
+                       f"(floor {SOUND_MIN_TRANSIENTS_PER_MIN:.0f}), ambience {amb:.1f} dB "
+                       f"(floor {SOUND_AMBIENCE_MIN_DB:.0f})" if ok
+                       else "render audio looks like a single music bed: " + "; ".join(problems))}
+
+
+def _mean_volume_af(path: Path, start: float, dur: float, af: str) -> float | None:
+    """mean_volume (dB) of [start, start+dur] after applying audio filter `af`, or None."""
+    out = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-nostats", "-ss", f"{start}", "-t", f"{dur}",
+         "-i", str(path), "-map", "0:a:0", "-af", f"{af},volumedetect", "-f", "null", os.devnull],
+        capture_output=True, text=True, timeout=1200)
+    m = re.search(r"mean_volume:\s*(-?\d+(?:\.\d+)?) dB", out.stderr)
+    return float(m.group(1)) if m else None
+
+
+def check_probe_receipt(epdir: Path) -> dict:
+    """HARD (EP32 §M6): a 60-90s PROBE receipt (motion_energy + black + freeze on a slice) must
+    exist and have PASSED, so the operator cannot skip the pre-flight probe from memory. Produce
+    it with `--probe <slice.mp4>` before the full acceptance run."""
+    recs = sorted((epdir / "09_package").glob("probe_receipt.v*.json"))
+    if not recs:
+        return {"check": "probe_receipt", "ok": False, "hard": True,
+                "reason": "no 09_package/probe_receipt.v*.json -- run "
+                          "`check_final_acceptance.py <ep> --probe <slice.mp4>` on a 60-90s slice first"}
+    d = _load(recs[-1]) or {}
+    ok = d.get("status") == "PASS"
+    return {"check": "probe_receipt", "ok": ok, "hard": True,
+            "reason": (f"{recs[-1].name} status={d.get('status')} "
+                       f"(motion/black/freeze on {d.get('slice_seconds', '?')}s slice)")}
+
+
+def run_probe(epdir: Path, slice_path: Path) -> int:
+    """--probe mode: run motion_energy + black + freeze on a short slice and write an immutable
+    probe receipt (EP32 §M6). Returns process exit code (0 = probe PASS)."""
+    if not slice_path.is_file():
+        raise SystemExit(f"probe slice not found: {slice_path}")
+    sdur = 0.0
+    try:
+        sdur = ffprobe_duration(slice_path)
+    except Exception:  # noqa: BLE001
+        pass
+    me = check_motion_energy(slice_path, sdur, epdir)
+    bk = check_black(slice_path)
+    fz = check_freeze(slice_path)
+    results = [me, bk, fz]
+    status = "PASS" if all(r["ok"] for r in results) else "FAIL"
+    from datetime import datetime, timezone
+    receipt = {
+        "schema_version": "1.0.0", "episode_id": epdir.name, "gate": "check_final_acceptance.probe",
+        "status": status, "slice_path": str(slice_path), "slice_seconds": round(sdur, 2),
+        "slice_sha256": _sha256(slice_path),
+        "results": {r["check"]: {"ok": r["ok"], "reason": r["reason"]} for r in results},
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+    }
+    outp = _next_version_path(epdir / "09_package", "probe_receipt", ".json")
+    outp.parent.mkdir(parents=True, exist_ok=True)
+    outp.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    try:
+        disp = outp.relative_to(ROOT)
+    except ValueError:
+        disp = outp
+    print(f"PROBE {disp}  status={status} ({sdur:.0f}s slice)")
+    for r in results:
+        print(f"  {'PASS' if r['ok'] else 'FAIL'} {r['check']}: {r['reason']}")
+    return 0 if status == "PASS" else 1
+
+
+def _next_version_path(dirp: Path, stem: str, ext: str) -> Path:
+    """Next free immutable path <dir>/<stem>.v{NNN}<ext> (EP32 MINOR: never overwrite v001)."""
+    existing = sorted(dirp.glob(f"{stem}.v*{ext}"))
+    nxt = 1
+    for p in existing:
+        m = re.search(rf"{re.escape(stem)}\.v(\d+){re.escape(ext)}$", p.name)
+        if m:
+            nxt = max(nxt, int(m.group(1)) + 1)
+    return dirp / f"{stem}.v{nxt:03d}{ext}"
 
 
 def check_image_resolution(epdir: Path) -> dict:
@@ -888,15 +1145,35 @@ def main() -> int:
     ap.add_argument("--render", help="explicit path to the final .mp4 (else from final_delivery)")
     ap.add_argument("--json", action="store_true", help="emit JSON")
     ap.add_argument("--emit-receipt", action="store_true",
-                    help="on completion write 09_package/acceptance_receipt.v001.json binding the "
-                         "PASS/FAIL to the exact render sha256 (the scheduler REQUIRES a green receipt)")
+                    help="on completion write 09_package/acceptance_receipt.v{NNN}.json (next free "
+                         "immutable version) binding PASS/FAIL to the exact render sha256 (the "
+                         "scheduler REQUIRES a green receipt)")
+    ap.add_argument("--probe", metavar="SLICE_MP4",
+                    help="EP32 §M6: run motion_energy+black+freeze on a 60-90s slice and write an "
+                         "immutable probe receipt, then exit (the full run REQUIRES a green probe)")
+    ap.add_argument("--render-started-at", type=float, default=None,
+                    help="EP32 §B2: epoch seconds of render kickoff; the mp4 mtime must be >= this "
+                         "(freshness -- rejects a stale good file grabbed after a crash)")
     args = ap.parse_args()
 
     ep = resolve_episode(args.episode)
     epdir = EPDIR / ep
+
+    # EP32 §M6 probe mode: measure a short slice, write the probe receipt, exit.
+    if args.probe:
+        return run_probe(epdir, Path(args.probe))
+
     render = resolve_render(epdir, args.render)
     render_dur = None
+    render_sha = None
     results: list[dict] = []
+
+    # sha256 of the render, computed ONCE (reused by freshness + the receipt).
+    if render and render.is_file():
+        try:
+            render_sha = _sha256(render)
+        except Exception:  # noqa: BLE001
+            render_sha = None
 
     # media checks (only if the render is reachable)
     if render and render.is_file():
@@ -905,14 +1182,17 @@ def main() -> int:
             lo, hi = runtime_band(epdir)
             results.append(check_runtime(render_dur, lo, hi))
             results.append(check_render_resolution(render))
+            results.append(check_freshness(epdir, render, render_sha, args.render_started_at))
             results.append(check_black(render))
             results.append(check_freeze(render))
             results.append(check_low_motion(render, render_dur, epdir))
             results.append(check_motion_energy(render, render_dur, epdir))
             results.append(check_bgm(render))
+            results.append(check_sound_layers(render, render_dur))
             results.append(check_bgm_ending(render, render_dur))
             results.append(check_hook(epdir, render_dur))
             results.append(check_loudness(render))
+            results.append(check_probe_receipt(epdir))
         except Exception as exc:  # noqa: BLE001
             results.append({"check": "render_probe", "ok": False, "hard": True,
                             "reason": f"could not probe render {render}: {exc}"})
@@ -958,15 +1238,8 @@ def main() -> int:
     # refuses to upload without a green receipt whose video_sha256 matches the file --
     # so a video that did not pass this gate physically cannot be scheduled.
     if args.emit_receipt:
-        import hashlib
         from datetime import datetime, timezone
-        vsha = None
-        if render and render.is_file():
-            h = hashlib.sha256()
-            with open(render, "rb") as fh:
-                for chunk in iter(lambda: fh.read(1 << 20), b""):
-                    h.update(chunk)
-            vsha = "sha256:" + h.hexdigest()
+        vsha = render_sha if (render and render.is_file()) else None
         receipt = {
             "schema_version": "1.0.0", "episode_id": ep, "gate": "check_final_acceptance",
             "status": status, "video_path": str(render) if render else None,
@@ -985,7 +1258,8 @@ def main() -> int:
                 "min_mean": me.get("min_mean", MOTION_ENERGY_BODY_MEAN_MIN),
                 "min_p10": me.get("min_p10", MOTION_ENERGY_P10_MIN),
             }
-        rp = epdir / "09_package" / "acceptance_receipt.v001.json"
+        # EP32 MINOR: immutable versioning -- never overwrite v001; write the next free v{NNN}.
+        rp = _next_version_path(epdir / "09_package", "acceptance_receipt", ".json")
         rp.parent.mkdir(parents=True, exist_ok=True)
         rp.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(f"RECEIPT {rp.relative_to(ROOT)}  status={status} sha={'set' if vsha else 'none'}")

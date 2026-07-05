@@ -127,6 +127,25 @@ export const CarKeyLock: React.FC<{dur?: number}> = ({dur}) => {
   const shimmer = interpolate(Math.sin(frame / 10), [-1, 1], [0.82, 1]);
   const metalPulse = interpolate(Math.sin(frame / 13 + 1), [-1, 1], [0.9, 1]);
 
+  // ---- click後に効く持続的二次モーション（hero ~34s を全編凍らせない）----
+  const sustain = interpolate(frame, [sec(fps, 2.6), sec(fps, 3.4)], [0, 1], {
+    easing: Easing.out(Easing.cubic),
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  // 鍵＋錠の微小で連続的な回転セトル（±1.6°・正弦＝速度可変のイージング）
+  const settleOsc =
+    sustain * 1.6 * Math.sin((frame / fps) * ((2 * Math.PI) / 3.6));
+  // 錠を周回し続けるライブ・オービット光（等角速度の円運動＝x/yは正弦のイージング）
+  const orbitTheta = (frame / fps) * ((2 * Math.PI) / 4.2);
+  const orbitR = 74;
+  const orbitX = lockX + orbitR * Math.cos(orbitTheta);
+  const orbitY = lockY + orbitR * Math.sin(orbitTheta);
+  // 全体パララックス（settle後・正弦＝イージング・total非依存）
+  const driftX = sustain * 18 * Math.sin((frame / fps) * ((2 * Math.PI) / 7.6));
+  const driftY =
+    sustain * 11 * Math.sin((frame / fps) * ((2 * Math.PI) / 6.2) + 0.5);
+
   // シーン出入り
   const inO = interpolate(frame, [0, 10], [0, 1], {extrapolateRight: 'clamp'});
   const outO = interpolate(frame, [D - 12, D], [1, 0], {extrapolateLeft: 'clamp'});
@@ -168,7 +187,12 @@ export const CarKeyLock: React.FC<{dur?: number}> = ({dur}) => {
         }}
       />
 
-      <AbsoluteFill style={{opacity: inO * outO, transform: `translateY(${inY}px)`}}>
+      <AbsoluteFill
+        style={{
+          opacity: inO * outO,
+          transform: `translate(${driftX}px, ${inY + driftY}px)`,
+        }}
+      >
         <svg width={width} height={height} style={{position: 'absolute', inset: 0}}>
           <defs>
             <linearGradient id="ckl-metal" x1="0" y1="0" x2="0" y2="1">
@@ -252,7 +276,7 @@ export const CarKeyLock: React.FC<{dur?: number}> = ({dur}) => {
               fill={ACCENT}
               opacity={0.1 * metalPulse + clickFlash * 0.4}
             />
-            <g transform={`rotate(${lockDeg})`}>
+            <g transform={`rotate(${lockDeg + settleOsc})`}>
               {/* リング */}
               <circle
                 r={44}
@@ -271,7 +295,7 @@ export const CarKeyLock: React.FC<{dur?: number}> = ({dur}) => {
 
           {/* ---- 鍵（車ヘッド）：keyhole を pivot に回転＋挿入スライド ---- */}
           <g
-            transform={`translate(${lockX + insertX},${lockY}) rotate(${turnDeg})`}
+            transform={`translate(${lockX + insertX},${lockY}) rotate(${turnDeg + settleOsc})`}
           >
             {/* 刃（keyhole から左へ） */}
             <g opacity={shimmer}>
@@ -359,6 +383,24 @@ export const CarKeyLock: React.FC<{dur?: number}> = ({dur}) => {
             }}
           />
         ) : null}
+
+        {/* 錠を周回し続けるライブ・オービット光（settle後も止まらない持続モーション） */}
+        <Trail layers={5} lagInFrames={1.1} trailOpacity={0.45}>
+          <div
+            style={{
+              position: 'absolute',
+              left: orbitX - 8,
+              top: orbitY - 8,
+              width: 16,
+              height: 16,
+              borderRadius: '50%',
+              background: BRAND.color.white,
+              boxShadow: `0 0 22px 6px ${ACCENT}, 0 0 8px 2px ${BRAND.color.white}`,
+              opacity: 0.35 + 0.5 * sustain,
+              pointerEvents: 'none',
+            }}
+          />
+        </Trail>
 
         {/* キャプション（マスク切れ上がり） */}
         <div

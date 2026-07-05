@@ -115,6 +115,22 @@ export const CaseTimeline: React.FC<{
     extrapolateRight: 'clamp',
   });
 
+  // ---- リビール後に効く持続的二次モーション（描画完了後にランプイン）----
+  const sustain = interpolate(frame, [sec(fps, 1.6), sec(fps, 2.2)], [0, 1], {
+    easing: Easing.out(Easing.cubic),
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  // 完成した線上をずっと往復し続けるプレイヘッド（正弦ping-pong＝イージング）
+  const playT =
+    0.5 + 0.5 * Math.sin((frame / fps) * ((2 * Math.PI) / 3.2) - Math.PI / 2);
+  const playX = x0 + span * playT;
+  const playDrift = Math.sin(frame / 6) * 2;
+  // 全体パララックス（settle後・正弦＝イージング・total非依存）
+  const driftX = sustain * 16 * Math.sin((frame / fps) * ((2 * Math.PI) / 6.8));
+  const driftY =
+    sustain * 9 * Math.sin((frame / fps) * ((2 * Math.PI) / 5.4) + 0.5);
+
   return (
     <AbsoluteFill style={{backgroundColor: BG}}>
       {/* L1 背景グラデ */}
@@ -139,7 +155,10 @@ export const CaseTimeline: React.FC<{
       />
 
       <AbsoluteFill
-        style={{opacity: inO * outO, transform: `translateY(${inY}px)`}}
+        style={{
+          opacity: inO * outO,
+          transform: `translate(${driftX}px, ${inY + driftY}px)`,
+        }}
       >
         {/* 見出し */}
         <div style={{position: 'absolute', top: cy - 260, left: x0}}>
@@ -308,6 +327,25 @@ export const CaseTimeline: React.FC<{
                 borderRadius: '50%',
                 background: BRAND.color.white,
                 boxShadow: `0 0 26px 8px ${BRAND.color.electric}, 0 0 10px 2px ${BRAND.color.white}`,
+              }}
+            />
+          </Trail>
+        ) : null}
+
+        {/* 描画完了後は線上を往復し続けるプレイヘッド（凍結防止の持続モーション） */}
+        {lineP >= 0.999 ? (
+          <Trail layers={6} lagInFrames={1.1} trailOpacity={0.5}>
+            <div
+              style={{
+                position: 'absolute',
+                left: playX - 10,
+                top: cy - 10 + playDrift,
+                width: 20,
+                height: 20,
+                borderRadius: '50%',
+                background: BRAND.color.white,
+                boxShadow: `0 0 24px 7px ${BRAND.color.electric}, 0 0 9px 2px ${BRAND.color.white}`,
+                opacity: 0.45 + 0.55 * sustain,
               }}
             />
           </Trail>

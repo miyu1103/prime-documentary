@@ -155,6 +155,24 @@ export const StateMap: React.FC<{label?: string; dur?: number}> = ({
   });
   const inY = interpolate(frame, [0, 12], [22, 0], {extrapolateRight: 'clamp'});
 
+  // ---- リビール後に効く持続的な"空間ドリフト"（セル明滅だけでなく地図自体が動く）----
+  const sustain = interpolate(frame, [sec(fps, 2.4), sec(fps, 3.1)], [0, 1], {
+    easing: Easing.out(Easing.cubic),
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  const mapDriftX = sustain * 30 * Math.sin((frame / fps) * ((2 * Math.PI) / 7.5));
+  const mapDriftY =
+    sustain * 20 * Math.sin((frame / fps) * ((2 * Math.PI) / 6.0) + 0.4);
+  const mapScale =
+    1 +
+    sustain *
+      0.02 *
+      (0.5 + 0.5 * Math.sin((frame / fps) * ((2 * Math.PI) / 5.2)));
+  const mapCX = startX + gridW / 2;
+  const mapCY = startY + (MAP.length * pitch) / 2;
+  const mapTransform = `translate(${mapDriftX} ${mapDriftY}) translate(${mapCX} ${mapCY}) scale(${mapScale}) translate(${-mapCX} ${-mapCY})`;
+
   return (
     <AbsoluteFill style={{backgroundColor: BG}}>
       <Backdrop accent={BRAND.color.electric} />
@@ -210,6 +228,7 @@ export const StateMap: React.FC<{label?: string; dur?: number}> = ({
               <feGaussianBlur stdDeviation="6" />
             </filter>
           </defs>
+          <g transform={mapTransform}>
           {cells.map((cl) => {
             const x = startX + cl.c * pitch;
             const y = startY + cl.r * pitch;
@@ -287,6 +306,7 @@ export const StateMap: React.FC<{label?: string; dur?: number}> = ({
               </g>
             );
           })}
+          </g>
         </svg>
 
         {/* 凡例（各色の意味・マスク切れ上がりで散らして出す） */}

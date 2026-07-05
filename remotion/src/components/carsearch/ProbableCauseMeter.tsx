@@ -185,6 +185,27 @@ export const ProbableCauseMeter: React.FC<{
   const fillH = fillFrac * trackH;
   const fillTopY = trackBottom - fillH;
 
+  // ---- リビール後に効く持続的二次モーション（settle後ランプイン・全編凍結禁止）----
+  const sustain = interpolate(frame, [sec(fps, 2.2), sec(fps, 2.9)], [0, 1], {
+    easing: Easing.out(Easing.cubic),
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  // 全体パララックス（正弦＝イージング・total非依存）
+  const driftX =
+    sustain * 16 * Math.sin((frame / fps) * ((2 * Math.PI) / 6.6));
+  const driftY =
+    sustain * 10 * Math.sin((frame / fps) * ((2 * Math.PI) / 5.2) + 0.6);
+  const breathScale =
+    1 +
+    sustain *
+      0.015 *
+      (0.5 + 0.5 * Math.sin((frame / fps) * ((2 * Math.PI) / 5.0)));
+  // フィル内を上下に走り続けるライブ・リップル明帯（正弦ping-pong＝イージング）
+  const rippleT =
+    0.5 + 0.5 * Math.sin((frame / fps) * ((2 * Math.PI) / 1.9) - Math.PI / 2);
+  const rippleY = fillTopY + rippleT * Math.max(0, fillH - 30);
+
   // 針(=fill top)に付くラベル
   const meterLabel = outcome === 'stall' ? 'A HUNCH' : 'PROBABLE CAUSE';
 
@@ -199,7 +220,10 @@ export const ProbableCauseMeter: React.FC<{
     <AbsoluteFill style={{backgroundColor: BG}}>
       <Backdrop accent={BRAND.color.electric} />
       <AbsoluteFill
-        style={{opacity: inO * outO, transform: `translateY(${inY}px)`}}
+        style={{
+          opacity: inO * outO,
+          transform: `translate(${driftX}px, ${inY + driftY}px) scale(${breathScale})`,
+        }}
       >
         {/* 見出し */}
         <div style={{position: 'absolute', top: 96, left: 300}}>
@@ -269,6 +293,19 @@ export const ProbableCauseMeter: React.FC<{
               })`,
             }}
           />
+          {/* フィル内を走り続けるライブ・リップル明帯（凍結防止の持続モーション） */}
+          {fillH > 40 ? (
+            <rect
+              x={trackX + 8}
+              y={rippleY}
+              width={trackW - 16}
+              height={26}
+              rx={13}
+              fill={BRAND.color.white}
+              opacity={(0.14 + 0.16 * sustain)}
+              style={{filter: `blur(4px)`}}
+            />
+          ) : null}
           {/* 針先ライン */}
           <rect
             x={trackX + 8}

@@ -6,7 +6,7 @@
   "status": "candidate_selection_ready",
   "generated_at": "2026-07-06T00:00:00+09:00",
   "title": "Can the Police Search Your Car?",
-  "selection_note": "Real-footage (Veritasium-style) b-roll PLAN only. No media copied, nothing rendered. Candidates are addressed by factory subtype + query; the actual clip FILE for each candidate is chosen during the mandatory visual-QC pass (see footage_qc_checklist.v001.md). Folder labels are NOT trusted -- every first frame is eyeballed before it enters the render.",
+  "selection_note": "Real-footage (Veritasium-style) b-roll PLAN + per-span visual binding. No media copied, nothing rendered. Factory candidates are addressed by subtype + query; the actual clip FILE for each candidate is chosen during the mandatory visual-QC pass (see footage_qc_checklist.v001.md). Folder labels are NOT trusted -- every first frame is eyeballed before it enters the render. UPDATE (M10 remediation): every one of the 22 spans (SPN-0001..0022 <-> scenes S001..S022) is now explicitly bound to its three layers -- Codex AI stills (codex_stills), factory footage (factory_candidates) and Remotion meaning-graphics (remotion_motion_surfaces) -- and an image_manifest records exactly which S0NN stills are REQUIRED, which EXIST on disk and which are MISSING, so no cut can fall back to a black/empty frame.",
   "shelf": {
     "reachable": true,
     "root": "H:/pd-media/assets/factory/",
@@ -20,7 +20,9 @@
     "kind_preference": "video (b-roll cutaways ~2.2s); image only as still fallback",
     "how_to_pull": "python scripts/select_factory_assets.py --subtype <subtype> --kind video --json  (or --theme <theme> --kind video)",
     "cut_target_seconds": 2.2,
-    "three_layer_rule": "factory b-roll (real) + AI hero/symbol (Codex) + Remotion meaning graphics (BrightLine/CarCutaway/timeline). See visual_intent per span."
+    "three_layer_rule": "factory b-roll (real) + AI hero/symbol (Codex codex_stills) + Remotion meaning graphics (BrightLine/CarCutaway/timeline). Every span binds all three so no layer is overworked and no cut is left visual-less. See visual_intent per span.",
+    "span_to_scene": "SPN-000N maps 1:1 to scene S0NN (SPN-0001->S001 ... SPN-0022->S022). codex_stills S0NN ids reference generated_images/codex_v001/PD-2026-032-S0NN-IMG-001.png.",
+    "binding_sources": "codex_stills derived from 04_scenes/scene_plan.v001.json required_assets (COD-S0NN) reconciled with 03_script/script.annotated.v001.json visual_intent and 04_scenes/remotion_plan.v001.json cut_plan."
   },
   "diversity_policy_ship_gate": {
     "distinct_over_total_min": 0.4,
@@ -38,8 +40,13 @@
   "scene_selection": [
     {
       "span_id": "SPN-0001",
+      "scene_id": "S001",
       "chapter": "hook",
       "need": "Night traffic stop w/ open trunk; quiet suburban driveway at dusk; car<->house BrightLine.",
+      "codex_stills": [
+        {"still_id": "S001", "file": "PD-2026-032-S001-IMG-001.png", "exists": true, "role": "night traffic stop, trunk open (punch cut 1)"},
+        {"still_id": "S002", "file": "PD-2026-032-S002-IMG-001.png", "exists": true, "role": "quiet suburban driveway at dusk (punch cut 2)"}
+      ],
       "factory_candidates": [
         {
           "subtype": "police_car_lights_night",
@@ -86,8 +93,11 @@
     },
     {
       "span_id": "SPN-0002",
+      "scene_id": "S002",
       "chapter": "opening",
       "need": "Gold BrandOpening title; timeline sweep 1925->2018 over stylized map.",
+      "codex_stills": [],
+      "stills_note": "Pure motion-graphic scene (BrandOpening + RouteMap + CaseTimeline) over factory motion b-roll; no AI still required. Bound via remotion_motion_surfaces + factory_candidates so the scene is never empty.",
       "factory_candidates": [
         {
           "subtype": "world_map_dark_glowing",
@@ -134,8 +144,12 @@
     },
     {
       "span_id": "SPN-0003",
+      "scene_id": "S003",
       "chapter": "act1",
       "need": "House=warrant vs Car=?; timeline snaps to 1925.",
+      "codex_stills": [
+        {"still_id": "S036", "file": "PD-2026-032-S036-IMG-001.png", "exists": true, "role": "the porch, intimate -- protected home / CurtilageShield hint"}
+      ],
       "factory_candidates": [
         {
           "subtype": "documents_on_desk",
@@ -182,8 +196,16 @@
     },
     {
       "span_id": "SPN-0004",
+      "scene_id": "S004",
       "chapter": "act1",
       "need": "1920s night highway, tail car, gloved hands tear seat, one bottle to light, 0->68.",
+      "codex_stills": [
+        {"still_id": "S004", "file": "PD-2026-032-S004-IMG-001.png", "exists": true, "role": "1920s night highway"},
+        {"still_id": "S027", "file": "PD-2026-032-S027-IMG-001.png", "exists": true, "role": "1920s highway, wide (isolation variant)"},
+        {"still_id": "S028", "file": "PD-2026-032-S028-IMG-001.png", "exists": true, "role": "the tail car (surveillance feel)"},
+        {"still_id": "S006", "file": "PD-2026-032-S006-IMG-001.png", "exists": true, "role": "gloved hands tearing the seat cushion"},
+        {"still_id": "S029", "file": "PD-2026-032-S029-IMG-001.png", "exists": true, "role": "one bottle held to the light"}
+      ],
       "factory_candidates": [
         {
           "subtype": "rural_road_america",
@@ -226,14 +248,20 @@
         "NumberTicker 0->68"
       ],
       "gaps_route_to_ai_or_remotion": [
-        "gloved hands ripping a seat cushion (period) -- NOT on shelf",
-        "single whisky/gin bottle held to the light -- NOT on shelf"
+        "gloved hands ripping a seat cushion (period) -- covered by AI still S006 (not on factory shelf)",
+        "single whisky/gin bottle held to the light -- covered by AI still S029 (not on factory shelf)"
       ]
     },
     {
       "span_id": "SPN-0005",
+      "scene_id": "S005",
       "chapter": "act1",
       "need": "1925 courthouse / gavel; HOUSE|CAR split forms.",
+      "codex_stills": [
+        {"still_id": "S008", "file": "PD-2026-032-S008-IMG-001.png", "exists": true, "role": "1925 courthouse exterior establishing"},
+        {"still_id": "S030", "file": "PD-2026-032-S030-IMG-001.png", "exists": true, "role": "gavel on the bench (ruling weight)"},
+        {"still_id": "S009", "file": "PD-2026-032-S009-IMG-001.png", "exists": true, "role": "house vs car split concept plate"}
+      ],
       "factory_candidates": [
         {
           "subtype": "courthouse_steps",
@@ -270,8 +298,12 @@
     },
     {
       "span_id": "SPN-0006",
+      "scene_id": "S006",
       "chapter": "act1",
       "need": "House holds still vs car accelerates off; Taft QuoteCard; automobile exception.",
+      "codex_stills": [
+        {"still_id": "S009", "file": "PD-2026-032-S009-IMG-001.png", "exists": true, "role": "house holds still vs car speeds away (permanence vs motion)"}
+      ],
       "factory_candidates": [
         {
           "subtype": "american_suburb_aerial",
@@ -300,8 +332,11 @@
     },
     {
       "span_id": "SPN-0007",
+      "scene_id": "S007",
       "chapter": "act1",
       "need": "One stop multiplies into a grid on a night map; PROBABLE CAUSE locks.",
+      "codex_stills": [],
+      "stills_note": "Pure motion-graphic scene (PinDropMap grid-multiply + kinetic PROBABLE CAUSE lock) over aerial-night factory b-roll; no AI still required.",
       "factory_candidates": [
         {
           "subtype": "drone_city_aerial_night",
@@ -339,8 +374,13 @@
     },
     {
       "span_id": "SPN-0008",
+      "scene_id": "S008",
       "chapter": "act2",
       "need": "Red NOT stamp over a routine stop; ProbableCauseMeter stalls; taillight ring.",
+      "codex_stills": [
+        {"still_id": "S010", "file": "PD-2026-032-S010-IMG-001.png", "exists": true, "role": "officer at the window (routine stop)"},
+        {"still_id": "S026", "file": "PD-2026-032-S026-IMG-001.png", "exists": true, "role": "driver's POV of approaching flashlight"}
+      ],
       "factory_candidates": [
         {
           "subtype": "police_car_lights_night",
@@ -378,8 +418,12 @@
     },
     {
       "span_id": "SPN-0009",
+      "scene_id": "S009",
       "chapter": "act2",
       "need": "Evidence chips (plain view / K-9 / admission) push fill across the line.",
+      "codex_stills": [
+        {"still_id": "S011", "file": "PD-2026-032-S011-IMG-001.png", "exists": true, "role": "glovebox / interior search -- articulable facts beat"}
+      ],
       "factory_candidates": [
         {
           "subtype": "police_interrogation_room_empty",
@@ -418,8 +462,13 @@
     },
     {
       "span_id": "SPN-0010",
+      "scene_id": "S010",
       "chapter": "act2",
       "need": "CarCutaway lights zones; real b-roll hand pulling a bag.",
+      "codex_stills": [
+        {"still_id": "S012", "file": "PD-2026-032-S012-IMG-001.png", "exists": true, "role": "open trunk with zipped bag + box (scope)"},
+        {"still_id": "S032", "file": "PD-2026-032-S032-IMG-001.png", "exists": true, "role": "gloved hand lifting a zipped duffel from the back seat"}
+      ],
       "factory_candidates": [
         {
           "subtype": "empty_parking_garage",
@@ -435,13 +484,17 @@
         "CarCutaway (mode=all): GLOVEBOX/TRUNK/BACK SEAT/BAG mask-reveal labels"
       ],
       "gaps_route_to_ai_or_remotion": [
-        "car interior: glovebox, open trunk, zipped bag on back seat, hand pulling a bag -- NOT on shelf"
+        "car interior: glovebox, open trunk, zipped bag on back seat, hand pulling a bag -- covered by AI stills S012/S032 (not on factory shelf)"
       ]
     },
     {
       "span_id": "SPN-0011",
+      "scene_id": "S011",
       "chapter": "act2",
       "need": "CarCutaway big vs small; permitted checklist, no extra emergency.",
+      "codex_stills": [
+        {"still_id": "S012", "file": "PD-2026-032-S012-IMG-001.png", "exists": true, "role": "trunk and bags (scope-vs-object reference); QC pulls a distinct framing from S010's use"}
+      ],
       "factory_candidates": [
         {
           "subtype": "highway_underpass",
@@ -470,8 +523,12 @@
     },
     {
       "span_id": "SPN-0012",
+      "scene_id": "S012",
       "chapter": "act2",
       "need": "Aerial night highway, thousands of lit cars; BrightLine flickers.",
+      "codex_stills": [
+        {"still_id": "S013", "file": "PD-2026-032-S013-IMG-001.png", "exists": true, "role": "night highway from above -- thousands of lit cars"}
+      ],
       "factory_candidates": [
         {
           "subtype": "highway_night_long_exposure",
@@ -508,8 +565,15 @@
     },
     {
       "span_id": "SPN-0013",
+      "scene_id": "S013",
       "chapter": "act3",
       "need": "Motorcycle blur past patrol; map pin on a residence; covered shape in a driveway.",
+      "codex_stills": [
+        {"still_id": "S014", "file": "PD-2026-032-S014-IMG-001.png", "exists": true, "role": "orange-and-black motorcycle, motion blur past patrol"},
+        {"still_id": "S033", "file": "PD-2026-032-S033-IMG-001.png", "exists": true, "role": "motorcycle tank detail (texture/menace)"},
+        {"still_id": "S015", "file": "PD-2026-032-S015-IMG-001.png", "exists": true, "role": "house with a covered shape (tarp) in the driveway"},
+        {"still_id": "S034", "file": "PD-2026-032-S034-IMG-001.png", "exists": true, "role": "the whole quiet residential street (establishing)"}
+      ],
       "factory_candidates": [
         {
           "subtype": "police_car_lights_night",
@@ -534,14 +598,20 @@
         "PinDropMap on residential address"
       ],
       "gaps_route_to_ai_or_remotion": [
-        "distinctive orange-and-black motorcycle blur -- NOT on shelf (AI, no real plate)",
-        "tarp-covered shape parked in a driveway -- NOT on shelf"
+        "distinctive orange-and-black motorcycle blur -- covered by AI stills S014/S033 (not on shelf, no real plate)",
+        "tarp-covered shape parked in a driveway -- covered by AI still S015 (not on shelf)"
       ]
     },
     {
       "span_id": "SPN-0014",
+      "scene_id": "S014",
       "chapter": "act3",
       "need": "Footsteps up the driveway; hand peels the tarp; STOLEN chip; replay legal on a curb.",
+      "codex_stills": [
+        {"still_id": "S017", "file": "PD-2026-032-S017-IMG-001.png", "exists": true, "role": "footsteps/boots up the driveway (crossing the threshold)"},
+        {"still_id": "S016", "file": "PD-2026-032-S016-IMG-001.png", "exists": true, "role": "a hand peeling back the tarp -- reveal moment"},
+        {"still_id": "S035", "file": "PD-2026-032-S035-IMG-001.png", "exists": true, "role": "tarp half-lifted, chrome glint (mid-motion variant)"}
+      ],
       "factory_candidates": [
         {
           "subtype": "front_door_house",
@@ -576,13 +646,17 @@
         "green LEGAL check on curb replay"
       ],
       "gaps_route_to_ai_or_remotion": [
-        "footsteps up a driveway; a hand peeling a tarp off a vehicle -- NOT on shelf"
+        "footsteps up a driveway; a hand peeling a tarp off a vehicle -- covered by AI stills S017/S016/S035 (not on shelf)"
       ]
     },
     {
       "span_id": "SPN-0015",
+      "scene_id": "S015",
       "chapter": "act3",
       "need": "Rule stretches up the driveway; car-shaped key turning in a house-door lock (HERO 2).",
+      "codex_stills": [
+        {"still_id": "S018", "file": "PD-2026-032-S018-IMG-001.png", "exists": true, "role": "the home's edge / curtilage concept plate (porch + driveway hugging the wall)"}
+      ],
       "factory_candidates": [
         {
           "subtype": "key_turning_in_lock",
@@ -610,8 +684,12 @@
     },
     {
       "span_id": "SPN-0016",
+      "scene_id": "S016",
       "chapter": "act3",
       "need": "BrightLine SLAM; VoteTally 8-1; CurtilageShield wraps driveway; 2018 dot.",
+      "codex_stills": [
+        {"still_id": "S018", "file": "PD-2026-032-S018-IMG-001.png", "exists": true, "role": "curtilage edge -- the ground the shield wraps; QC pulls a distinct framing from S015's use"}
+      ],
       "factory_candidates": [
         {
           "subtype": "supreme_court_building",
@@ -651,8 +729,12 @@
     },
     {
       "span_id": "SPN-0017",
+      "scene_id": "S017",
       "chapter": "act3",
       "need": "Sotomayor QuoteCard; glow stops at the line; warrant icon on house; lone dissent.",
+      "codex_stills": [
+        {"still_id": "S019", "file": "PD-2026-032-S019-IMG-001.png", "exists": true, "role": "empty supreme-court-style interior (weight of the ruling)"}
+      ],
       "factory_candidates": [
         {
           "subtype": "lady_justice_statue",
@@ -690,8 +772,12 @@
     },
     {
       "span_id": "SPN-0018",
+      "scene_id": "S018",
       "chapter": "act4",
       "need": "Clean summary diagram: STREET -> PC gate -> zoned car recap.",
+      "codex_stills": [
+        {"still_id": "S023", "file": "PD-2026-032-S023-IMG-001.png", "exists": true, "role": "car and home side by side -- summary/resolving image bed"}
+      ],
       "factory_candidates": [
         {
           "subtype": "rain_street_reflection_night",
@@ -729,8 +815,14 @@
     },
     {
       "span_id": "SPN-0019",
+      "scene_id": "S019",
       "chapter": "act4",
       "need": "Cuffed on a curb away from a closed car; rental agreement, unlisted name; Gant 2009.",
+      "codex_stills": [
+        {"still_id": "S020", "file": "PD-2026-032-S020-IMG-001.png", "exists": true, "role": "person cuffed on a curb, away from a closed car (Gant limit)"},
+        {"still_id": "S021", "file": "PD-2026-032-S021-IMG-001.png", "exists": true, "role": "rental keys on a rental agreement (Byrd beat)"},
+        {"still_id": "S038", "file": "PD-2026-032-S038-IMG-001.png", "exists": true, "role": "rental lot at dusk (neutral establishing)"}
+      ],
       "factory_candidates": [
         {
           "subtype": "contract_paperwork_signing",
@@ -765,14 +857,18 @@
         "shield settles over the car"
       ],
       "gaps_route_to_ai_or_remotion": [
-        "person handcuffed/cuffed on a curb -- NOT on shelf (AI, no real-person likeness)",
-        "rental car lot exterior -- NOT on shelf (parking garage substitute)"
+        "person handcuffed/cuffed on a curb -- covered by AI still S020 (not on shelf, no real-person likeness)",
+        "rental car lot exterior -- covered by AI still S038 (parking garage as factory substitute)"
       ]
     },
     {
       "span_id": "SPN-0020",
+      "scene_id": "S020",
       "chapter": "act4",
       "need": "US map lights states in varied colors under SMELL = PROBABLE CAUSE?.",
+      "codex_stills": [
+        {"still_id": "S022", "file": "PD-2026-032-S022-IMG-001.png", "exists": true, "role": "calm driver at a stop (human anchor under the caveat)"}
+      ],
       "factory_candidates": [
         {
           "subtype": "world_map_dark_glowing",
@@ -802,8 +898,14 @@
     },
     {
       "span_id": "SPN-0021",
+      "scene_id": "S021",
       "chapter": "act4",
       "need": "Calm driver at a window; car + home side by side; slow push into the line (resolving image).",
+      "codex_stills": [
+        {"still_id": "S022", "file": "PD-2026-032-S022-IMG-001.png", "exists": true, "role": "calm driver at the window; QC pulls a distinct framing from S020's use"},
+        {"still_id": "S023", "file": "PD-2026-032-S023-IMG-001.png", "exists": true, "role": "car and home side by side -- the film's resolving image"},
+        {"still_id": "S039", "file": "PD-2026-032-S039-IMG-001.png", "exists": true, "role": "family car, golden hour (the quiet stakes) -- resolving-image variant"}
+      ],
       "factory_candidates": [
         {
           "subtype": "rain_on_window_night",
@@ -850,8 +952,12 @@
     },
     {
       "span_id": "SPN-0022",
+      "scene_id": "S022",
       "chapter": "ending",
       "need": "BrandEndcard; BrightLine sign-off; like/subscribe; phone lock screen teaser.",
+      "codex_stills": [
+        {"still_id": "S024", "file": "PD-2026-032-S024-IMG-001.png", "exists": true, "role": "phone lock screen glow -- next-episode teaser"}
+      ],
       "factory_candidates": [
         {
           "subtype": "smartphone_in_dark",
@@ -888,6 +994,67 @@
       "gaps_route_to_ai_or_remotion": []
     }
   ],
+  "image_manifest": {
+    "note": "Reconciles the AI-still layer so no cut is left without a visual (black/empty-frame prevention, M10). REQUIRED = every S0NN still bound to a scene cut in scene_plan.v001.json (required_assets COD-S0NN) and named in script.annotated.v001.json visual_intent. EXISTS = PNGs actually present in the stills_dir right now (verified by directory listing + non-zero byte size). MISSING = REQUIRED minus EXISTS = the exact list Codex must still generate.",
+    "stills_dir": "episodes/PD-2026-032-carsearch/04_scenes/generated_images/codex_v001/",
+    "naming_pattern": "PD-2026-032-S0NN-IMG-001.png",
+    "spec_source": "episodes/_planning/EP32_carsearch_ai_prompts.v001.md (specifies 40 stills S001..S040)",
+    "binding_source": "04_scenes/scene_plan.v001.json required_assets (COD-S0NN) + 04_scenes/remotion_plan.v001.json cut_plan, reconciled with 03_script/script.annotated.v001.json visual_intent",
+    "specified_count": 40,
+    "required_count": 33,
+    "exists_on_disk_count": 40,
+    "required_exists_count": 33,
+    "missing_count": 0,
+    "reconciliation_of_40_vs_29": "The ai_prompts spec calls for 40 stills (S001..S040). Of those, 33 are actually BOUND to a scene cut (REQUIRED); the other 7 are extra angle/framing variants not tied to a specific cut. The EP32 remediation ledger (M10) was written when only 29 stills existed on disk; since then Codex generated the remainder. A live listing now shows all 40 PNGs (S001..S040) present with real (multi-MB) byte sizes. Therefore all 33 REQUIRED stills exist and MISSING = 0. The 40-vs-29 gap is closed; black-frame risk from absent stills is eliminated.",
+    "black_frame_risk": "eliminated -- every REQUIRED still exists on disk; every span also carries factory footage + Remotion graphics as independent fallback layers (three_layer_rule).",
+    "required_stills": [
+      {"still_id": "S001", "file": "PD-2026-032-S001-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0001"], "beat": "night traffic stop, trunk open"},
+      {"still_id": "S002", "file": "PD-2026-032-S002-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0001"], "beat": "suburban driveway at dusk"},
+      {"still_id": "S004", "file": "PD-2026-032-S004-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0004"], "beat": "1920s night highway"},
+      {"still_id": "S006", "file": "PD-2026-032-S006-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0004"], "beat": "tearing the seat (gloved hands)"},
+      {"still_id": "S008", "file": "PD-2026-032-S008-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0005"], "beat": "1925 courthouse exterior"},
+      {"still_id": "S009", "file": "PD-2026-032-S009-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0005", "SPN-0006"], "beat": "house vs car (permanence vs motion)"},
+      {"still_id": "S010", "file": "PD-2026-032-S010-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0008"], "beat": "officer at the window (routine stop)"},
+      {"still_id": "S011", "file": "PD-2026-032-S011-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0009"], "beat": "glovebox / interior search"},
+      {"still_id": "S012", "file": "PD-2026-032-S012-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0010", "SPN-0011"], "beat": "trunk and bags (scope)"},
+      {"still_id": "S013", "file": "PD-2026-032-S013-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0012"], "beat": "night highway from above (aerial)"},
+      {"still_id": "S014", "file": "PD-2026-032-S014-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0013"], "beat": "orange-and-black motorcycle, motion blur"},
+      {"still_id": "S015", "file": "PD-2026-032-S015-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0013"], "beat": "house with covered shape in driveway"},
+      {"still_id": "S016", "file": "PD-2026-032-S016-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0014"], "beat": "lifting the tarp"},
+      {"still_id": "S017", "file": "PD-2026-032-S017-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0014"], "beat": "footsteps up the driveway"},
+      {"still_id": "S018", "file": "PD-2026-032-S018-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0015", "SPN-0016"], "beat": "the home's edge (curtilage concept)"},
+      {"still_id": "S019", "file": "PD-2026-032-S019-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0017"], "beat": "supreme court interior, empty"},
+      {"still_id": "S020", "file": "PD-2026-032-S020-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0019"], "beat": "handcuffed away from the car (Gant)"},
+      {"still_id": "S021", "file": "PD-2026-032-S021-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0019"], "beat": "rental keys and agreement (Byrd)"},
+      {"still_id": "S022", "file": "PD-2026-032-S022-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0020", "SPN-0021"], "beat": "calm driver at a stop"},
+      {"still_id": "S023", "file": "PD-2026-032-S023-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0018", "SPN-0021"], "beat": "car and home, final image"},
+      {"still_id": "S024", "file": "PD-2026-032-S024-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0022"], "beat": "phone lock screen glow (teaser)"},
+      {"still_id": "S026", "file": "PD-2026-032-S026-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0008"], "beat": "driver's POV"},
+      {"still_id": "S027", "file": "PD-2026-032-S027-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0004"], "beat": "1920s highway, wide"},
+      {"still_id": "S028", "file": "PD-2026-032-S028-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0004"], "beat": "the tail car"},
+      {"still_id": "S029", "file": "PD-2026-032-S029-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0004"], "beat": "one bottle to the light"},
+      {"still_id": "S030", "file": "PD-2026-032-S030-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0005"], "beat": "gavel on the bench"},
+      {"still_id": "S032", "file": "PD-2026-032-S032-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0010"], "beat": "bag pulled from the back seat"},
+      {"still_id": "S033", "file": "PD-2026-032-S033-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0013"], "beat": "motorcycle tank detail"},
+      {"still_id": "S034", "file": "PD-2026-032-S034-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0013"], "beat": "the whole quiet street"},
+      {"still_id": "S035", "file": "PD-2026-032-S035-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0014"], "beat": "tarp half-lifted, chrome glint"},
+      {"still_id": "S036", "file": "PD-2026-032-S036-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0003"], "beat": "the porch, intimate (curtilage)"},
+      {"still_id": "S038", "file": "PD-2026-032-S038-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0019"], "beat": "rental lot at dusk"},
+      {"still_id": "S039", "file": "PD-2026-032-S039-IMG-001.png", "exists": true, "used_by_spans": ["SPN-0021"], "beat": "family car, golden hour (the stakes)"}
+    ],
+    "missing_stills": [],
+    "present_optional_variants": [
+      {"still_id": "S003", "file": "PD-2026-032-S003-IMG-001.png", "exists": true, "beat": "bright-line concept plate (motion-graphics animate their own line; not bound to a cut)"},
+      {"still_id": "S005", "file": "PD-2026-032-S005-IMG-001.png", "exists": true, "beat": "liquor in the back (unused Carroll variant / QC fallback)"},
+      {"still_id": "S007", "file": "PD-2026-032-S007-IMG-001.png", "exists": true, "beat": "bottles lined up as evidence (unused Carroll variant / QC fallback)"},
+      {"still_id": "S025", "file": "PD-2026-032-S025-IMG-001.png", "exists": true, "beat": "traffic stop, hand on window (unused stop variant / QC fallback)"},
+      {"still_id": "S031", "file": "PD-2026-032-S031-IMG-001.png", "exists": true, "beat": "trunk slammed shut (unused aftermath variant / QC fallback)"},
+      {"still_id": "S037", "file": "PD-2026-032-S037-IMG-001.png", "exists": true, "beat": "signing at the station (unused procedural variant / QC fallback)"},
+      {"still_id": "S040", "file": "PD-2026-032-S040-IMG-001.png", "exists": true, "beat": "house key + car key macro (unused thematic variant / QC fallback)"}
+    ],
+    "present_optional_variant_ids": ["S003", "S005", "S007", "S025", "S031", "S037", "S040"],
+    "integrity_check": "required_count(33) + present_optional_variant count(7) = 40 = specified_count and exists_on_disk_count; required_exists_count(33) == required_count(33); missing_count(0) == required_count - required_exists_count. Internally consistent and matches disk."
+  },
   "shared_overlay_palette": [
     {
       "subtype": "police_strobe_red_and_blue",
@@ -928,15 +1095,16 @@
   ],
   "note_overlays": "Overlay palette layers on top of cuts (screen/add); NOT counted in the b-roll candidate tally and NOT counted as generic symbols. Keep 1-2 layers per cut (VIDEO_RULES).",
   "gaps_summary": [
-    "Prohibition beats: gloved hands tearing a seat cushion; a whisky/gin bottle to the light (SPN-0004).",
-    "Car interior mechanics: glovebox, open trunk, zipped bag on back seat, a hand pulling a bag (SPN-0010).",
-    "Collins beats: orange-and-black motorcycle blur; tarp-covered shape in a driveway; a hand peeling the tarp; footsteps up a driveway (SPN-0013/0014).",
-    "Arrest beat: a person handcuffed on a curb (SPN-0019).",
-    "Rental lot exterior (SPN-0019) -- empty_parking_garage used as substitute.",
-    "True driveway/porch curtilage plate -- no driveway/porch subtype exists; front_door_house + white_picket_fence + suburban_house_exterior_night are the closest substitutes."
+    "Prohibition beats: gloved hands tearing a seat cushion (S006); a whisky/gin bottle to the light (S029) -- covered by AI stills (SPN-0004).",
+    "Car interior mechanics: glovebox (S011), open trunk / zipped bag (S012), a hand pulling a bag (S032) -- covered by AI stills (SPN-0009/0010).",
+    "Collins beats: orange-and-black motorcycle blur (S014/S033); tarp-covered shape in a driveway (S015); a hand peeling the tarp (S016/S035); footsteps up a driveway (S017) -- covered by AI stills (SPN-0013/0014).",
+    "Arrest beat: a person handcuffed on a curb (S020) -- covered by AI still (SPN-0019).",
+    "Rental lot exterior (S038) -- covered by AI still; empty_parking_garage used as factory substitute (SPN-0019).",
+    "True driveway/porch curtilage plate -- no driveway/porch subtype exists on the shelf; AI stills S018/S036 + front_door_house + white_picket_fence + suburban_house_exterior_night are the substitutes."
   ],
-  "gap_routing": "These beats are NOT on the factory shelf (verified: queries for motorcycle/handcuffs/tarp/glovebox/bottle/driveway/rental all return 0 despite the inventory doc implying otherwise). Route them to Codex AI stills (no real-person likeness, no real plates -- invariant 11) or to Remotion motifs (CarCutaway, BrightLine, CarKeyLock). Do NOT substitute a mislabeled shelf clip to fake these.",
+  "gap_routing": "These beats are NOT on the factory shelf (verified: queries for motorcycle/handcuffs/tarp/glovebox/bottle/driveway/rental all return 0 despite the inventory doc implying otherwise). They are routed to Codex AI stills (all already generated -- see image_manifest.required_stills; no real-person likeness, no real plates -- invariant 11) or to Remotion motifs (CarCutaway, BrightLine, CarKeyLock, RegionHighlightMap). Do NOT substitute a mislabeled shelf clip to fake these.",
   "diversity_tally": {
+    "scope": "factory b-roll (real footage) layer only; AI stills and Remotion graphics are separate layers and are not counted here.",
     "total_candidate_clips": 112,
     "distinct_subtypes": 39,
     "distinct_subtype_over_total": 0.348,
@@ -970,6 +1138,6 @@
   "rights": {
     "status": "clear_commercial",
     "usage": "illustrative/symbolic only; never presented as the actual event, vehicle, or real person; no real-person likeness (invariant 11).",
-    "provenance": "record source id (AF-*), path, and sha256 for every clip promoted into the cut."
+    "provenance": "record source id (AF-*), path, and sha256 for every clip promoted into the cut. AI stills carry their own provenance in generated_images/codex_v001/generation_manifest.json."
   }
 }

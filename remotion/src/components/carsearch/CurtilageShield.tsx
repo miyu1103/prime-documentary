@@ -123,8 +123,16 @@ export const CurtilageShield: React.FC<{dur?: number}> = ({dur}) => {
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const breath =
-    Math.sin((frame / fps) * Math.PI * 2 * 0.3) * 0.5 * settled; // ±0.5px
+  // 保護域が settle 後もはっきり息づく呼吸（±9px＝知覚可能な振幅・正弦＝イージング）
+  const breath = Math.sin((frame / fps) * Math.PI * 2 * 0.22) * 9 * settled;
+  // 境界を走り続けるダッシュ（正弦駆動＝速度可変のイージング・凍結防止）
+  const dashOffset =
+    settled * 40 * Math.sin((frame / fps) * ((2 * Math.PI) / 2.4));
+  // 全体パララックス（settle後・正弦＝イージング・total非依存）
+  const driftX =
+    settled * 14 * Math.sin((frame / fps) * ((2 * Math.PI) / 7.2));
+  const driftY =
+    settled * 9 * Math.sin((frame / fps) * ((2 * Math.PI) / 5.6) + 0.5);
 
   // 保護ゾーン（家に密着 -> ドライブウェイ＆ポーチを包む角丸矩形）
   // 家＝x 720..1040, 車＝ドライブウェイ右側
@@ -138,9 +146,9 @@ export const CurtilageShield: React.FC<{dur?: number}> = ({dur}) => {
   const zoneX1End = 1360; // ドライブウェイ端まで
   const zoneY1End = 880;
 
-  const zx0 = interpolate(expand, [0, 1], [zoneX0Start, zoneX0End]);
+  const zx0 = interpolate(expand, [0, 1], [zoneX0Start, zoneX0End]) - breath * 0.7;
   const zy0 = interpolate(expand, [0, 1], [zoneY0Start, zoneY0End]) - breath;
-  const zx1 = interpolate(expand, [0, 1], [zoneX1Start, zoneX1End]);
+  const zx1 = interpolate(expand, [0, 1], [zoneX1Start, zoneX1End]) + breath * 0.7;
   const zy1 = interpolate(expand, [0, 1], [zoneY1Start, zoneY1End]) + breath;
   const zw = zx1 - zx0;
   const zh = zy1 - zy0;
@@ -184,7 +192,12 @@ export const CurtilageShield: React.FC<{dur?: number}> = ({dur}) => {
   return (
     <AbsoluteFill style={{backgroundColor: BG}}>
       <Backdrop accent={GOLD} />
-      <AbsoluteFill style={{opacity: inO * outO}}>
+      <AbsoluteFill
+        style={{
+          opacity: inO * outO,
+          transform: `translate(${driftX}px, ${driftY}px)`,
+        }}
+      >
         {/* レイヤー1: 地面ライン */}
         <svg width={1920} height={1080} style={{position: 'absolute', inset: 0}}>
           <line
@@ -239,6 +252,7 @@ export const CurtilageShield: React.FC<{dur?: number}> = ({dur}) => {
             stroke={GOLD}
             strokeWidth={zoneStroke}
             strokeDasharray="10 8"
+            strokeDashoffset={dashOffset}
             style={{
               filter: `drop-shadow(0 0 ${glowStrength}px ${GOLD}${
                 expand > 0.4 ? 'aa' : '66'

@@ -127,12 +127,26 @@ export const CarCutaway: React.FC<{
   });
   const sceneOpacity = interpolate(sceneIn, [0, 1], [0, 1]) * sceneOut;
 
-  // 図全体の緩いパララックス・ドリフト（イージング付き・静止禁止）
-  const driftX = interpolate(frame, [0, total], [-14, 14], {
-    easing: Easing.inOut(Easing.sin),
-  });
-  const driftY = 6 * Math.sin(frame / (fps * 1.3));
+  // 図全体の持続パララックス・ドリフト（正弦＝イージング内包・total非依存＝30s保持でも止まらない）
+  const driftX = 20 * Math.sin((frame / fps) * ((2 * Math.PI) / 7.0));
+  const driftY = 12 * Math.sin((frame / fps) * ((2 * Math.PI) / 5.5) + 0.7);
   const introY = interpolate(sceneIn, [0, 1], [40, 0]);
+
+  // ---- リビール後に効く持続的二次モーション（settle後ランプイン）----
+  const sustain = interpolate(frame, [sec(fps, 1.6), sec(fps, 2.3)], [0, 1], {
+    easing: Easing.out(Easing.cubic),
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  // ゆっくりしたスケール呼吸 1.00↔1.022
+  const breathScale =
+    1 +
+    sustain *
+      0.022 *
+      (0.5 + 0.5 * Math.sin((frame / fps) * ((2 * Math.PI) / 4.6)));
+  // 車断面をゾーン横断でスキャンする明帯（0..1 ping-pong・正弦＝イージング・常時移動）
+  const scanPos =
+    0.5 + 0.5 * Math.sin((frame / fps) * ((2 * Math.PI) / 3.4) - Math.PI / 2);
 
   // SVG 配置: viewBox 1200x520 を画面中央に大きく
   const vbW = 1200;
@@ -167,13 +181,13 @@ export const CarCutaway: React.FC<{
         }}
       />
 
-      {/* 車図全体（パララックス） */}
+      {/* 車図全体（パララックス＋スケール呼吸） */}
       <div
         style={{
           position: 'relative',
           width: svgW,
           height: svgH,
-          transform: `translate(${driftX}px, ${driftY + introY}px)`,
+          transform: `translate(${driftX}px, ${driftY + introY}px) scale(${breathScale})`,
         }}
       >
         <svg
@@ -323,6 +337,22 @@ export const CarCutaway: React.FC<{
             </div>
           );
         })}
+
+        {/* スキャン明帯（車断面をゾーン横断で走り続ける持続モーション） */}
+        <div
+          style={{
+            position: 'absolute',
+            top: svgH * 0.12,
+            left: scanPos * svgW - 90,
+            width: 180,
+            height: svgH * 0.64,
+            background: `linear-gradient(90deg, ${electric}00 0%, ${electric}55 45%, ${white}66 50%, ${electric}55 55%, ${electric}00 100%)`,
+            opacity: 0.5 * sustain + 0.18,
+            filter: 'blur(6px)',
+            mixBlendMode: 'screen',
+            pointerEvents: 'none',
+          }}
+        />
       </div>
 
       {/* タイトル（マスク切れ上がり + Trail 残像で速い立ち上がり） */}
