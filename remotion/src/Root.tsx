@@ -67,6 +67,7 @@ import {SHORT24} from './data/short24';
 import {SHORT25} from './data/short25';
 import {SHORT26} from './data/short26';
 import {SHORT27} from './data/short27';
+import {SHORT23} from './data/short23';
 import {SHORT01} from './data/short01';
 import {SHORT02} from './data/short02';
 import {SHORT03} from './data/short03';
@@ -792,6 +793,53 @@ export const RemotionRoot: React.FC = () => {
           backgroundSrc: 'shorts/short27/short27_thumb.png',
         }}
       />
+      {/* Alternate thumbnail options (variant B) — different headline angle for A/B choice */}
+      <Still id="ShortThumb-short19-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT19, headline: 'BOUGHT\nA SPOT', badge: '$25M', backgroundSrc: 'shorts/short19/short19_thumb.png'}} />
+      <Still id="ShortThumb-short20-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT20, headline: '13 GONE\nNONE FOUND', badge: '$500M', backgroundSrc: 'shorts/short20/short20_thumb.png'}} />
+      <Still id="ShortThumb-short21-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT21, headline: 'JUMPED &\nGONE', badge: '$200K', backgroundSrc: 'shorts/short21/short21_thumb.png'}} />
+      <Still id="ShortThumb-short22-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT22, headline: 'PARDON ≠\nINNOCENT', badge: '98 → 6', backgroundSrc: 'shorts/short22/short22_thumb.png'}} />
+      <Still id="ShortThumb-short24-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT24, headline: 'CAUGHT ON\nWIRETAP', badge: '11 YEARS', backgroundSrc: 'shorts/short24/short24_thumb.png'}} />
+      <Still id="ShortThumb-short25-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT25, headline: 'SCANNED\nYOUR HOME', badge: '5–4', backgroundSrc: 'shorts/short25/short25_thumb.png'}} />
+      <Still id="ShortThumb-short26-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT26, headline: 'PEOPLE,\nNOT PLACES', badge: '1967', backgroundSrc: 'shorts/short26/short26_thumb.png'}} />
+      <Still id="ShortThumb-short27-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT27, headline: '7 MIN\nTOO LONG', badge: '6–3', backgroundSrc: 'shorts/short27/short27_thumb.png'}} />
+      <Composition
+        id="Short-short23-yt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT23, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT23, platform: 'yt' as const}}
+      />
+      <Composition
+        id="Short-short23-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT23, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT23, platform: 'tiktok' as const}}
+      />
+      <Still
+        id="ShortThumb-short23"
+        component={ShortThumb}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          data: SHORT23,
+          headline: 'THE VICTIM\nSAID NO',
+          badge: '13 CHARGES',
+          backgroundSrc: 'shorts/short23/short23_thumb.png',
+        }}
+      />
       <Composition
         id="Short-short01-yt"
         component={Short}
@@ -1176,6 +1224,30 @@ export const RemotionRoot: React.FC = () => {
           title: 'Thirty Years in the Dark',
           subtitle: 'Hinton v. Alabama (2014)',
         }}
+      />
+      {/* EP29 thumbnails (1280x720). backgroundSrc = Codex bespoke art staged to
+          remotion/public/hinton/thumb/bg{1,2,3}.png (see 10_thumbnail/CODEX_BACKGROUNDS.md).
+          Render + select via scripts/build_hinton_thumbnails.py once the art lands. */}
+      <Still
+        id="Thumb-hinton-A"
+        component={ThumbnailFrame}
+        width={1280}
+        height={720}
+        defaultProps={{title: '30 YEARS. INNOCENT.', backgroundSrc: 'hinton/thumb/bg1.png', variant: 'left'}}
+      />
+      <Still
+        id="Thumb-hinton-B"
+        component={ThumbnailFrame}
+        width={1280}
+        height={720}
+        defaultProps={{title: 'THE BULLETS LIED', backgroundSrc: 'hinton/thumb/bg2.png', variant: 'left'}}
+      />
+      <Still
+        id="Thumb-hinton-C"
+        component={ThumbnailFrame}
+        width={1280}
+        height={720}
+        defaultProps={{title: 'THEY WANTED HIM DEAD', backgroundSrc: 'hinton/thumb/bg3.png', variant: 'center'}}
       />
       <Composition
         id="CaseFilm-kyllo"
