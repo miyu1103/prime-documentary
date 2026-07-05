@@ -21,6 +21,30 @@ from pd_factory.providers.youtube import _access_token
 from upload_episode import CHANNEL_ALLOWLIST, get_channel_id, sha256_file, upload_chunks
 
 CONFIG = {
+    "forfeiture": {
+        "ep": "PD-2026-028-forfeiture",
+        "video": r"H:/pd-media/episodes/PD-2026-028-forfeiture/08_edit/final.v004.mp4",
+        "sched_local": "2026-07-13T12:00:00+09:00",
+        "sched_utc": "2026-07-13T03:00:00Z",
+        "title": "They Took Their House Over $40 — and Never Charged Anyone",
+        "description": (
+            "Their son sold about $40 of drugs near the family home in Philadelphia. Nobody in "
+            "the family was charged with a crime — and the city still moved to take the whole "
+            "house.\n\n"
+            "This is civil forfeiture. Under it, the government sues the PROPERTY itself — the "
+            "case is literally captioned against \"the house\" — so the usual protections that "
+            "come with being accused of a crime don't apply. In Philadelphia, owners were pushed "
+            "through \"Courtroom 478\" with no judge and often no lawyer, while the cash and homes "
+            "seized helped fund the very prosecutors and police who took them.\n\n"
+            "Christos and Markela Sourovelis were locked out of their own home. In 2014 the "
+            "Institute for Justice brought a federal class action; in 2018 the city settled with a "
+            "consent decree that ended the abusive program and set up a roughly $3 million fund to "
+            "compensate victims. The family kept their house.\n\n"
+            "#CivilForfeiture #Philadelphia #Sourovelis #PropertyRights #Law #Documentary"
+        ),
+        "tags": ["civil forfeiture", "Sourovelis", "Philadelphia", "Institute for Justice",
+                 "property rights", "policing for profit", "Courtroom 478", "law", "documentary", "true story"],
+    },
     "katz": {
         "ep": "PD-2026-026-katz",
         "video": r"H:/pd-media/episodes/PD-2026-026-katz/08_edit/final.v001.mp4",
@@ -193,9 +217,12 @@ def main(argv):
     EPDIR = ROOT / "episodes" / EP
     PKG = EPDIR / "09_package"
     VIDEO = Path(cfg["video"])
-    THUMB = PKG / "thumbnail.selected.v001.png"
+    # use the LATEST selected thumbnail + final_delivery revision (v003 thumb / v004+ delivery)
+    _thumbs = sorted(PKG.glob("thumbnail.selected.v*.png"))
+    THUMB = _thumbs[-1] if _thumbs else PKG / "thumbnail.selected.v001.png"
     CAPS = EPDIR / "08_edit" / "captions.final.v001.srt"
-    DELIVERY = PKG / "final_delivery.v001.json"
+    _dels = sorted(PKG.glob("final_delivery.v*.json"))
+    DELIVERY = _dels[-1] if _dels else PKG / "final_delivery.v001.json"
     RESULT = PKG / "youtube_schedule_result.v001.json"
 
     if RESULT.exists():
