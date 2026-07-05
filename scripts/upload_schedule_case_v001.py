@@ -21,6 +21,36 @@ from pd_factory.providers.youtube import _access_token
 from upload_episode import CHANNEL_ALLOWLIST, get_channel_id, sha256_file, upload_chunks
 
 CONFIG = {
+    "unlock": {
+        "ep": "PD-2026-031-unlock",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-031-unlock/08_edit/renders/unlock_final.v002.mp4",
+        "sched_local": "2026-07-16T12:00:00+09:00",
+        "sched_utc": "2026-07-16T03:00:00Z",
+        "title": "Police Can Force Your Thumb — But Maybe Not Your Mind",
+        "description": (
+            "Pulled over at night, an officer wants your phone unlocked. Your face and your thumb "
+            "can open it in a second — but the passcode you keep only in your mind may be the one "
+            "thing they can't force out of you. This is the unsettled fight over whether police "
+            "can make you unlock your phone.\n\n"
+            "In Riley v. California (2014), the Supreme Court ruled unanimously that police "
+            "generally need a warrant to SEARCH your phone. But searching it is a different "
+            "question from forcing YOU to open it — and that lands in the Fifth Amendment's "
+            "protection against self-incrimination. Courts widely treat a memorized passcode as "
+            "\"testimonial\" (the contents of your mind, often protected), while a fingerprint or "
+            "face scan is treated as a physical act that is frequently not protected. In United "
+            "States v. Payne (9th Cir., 2024) a forced thumbprint unlock was allowed; in United "
+            "States v. Brown (D.C. Cir., 2025) a forced fingerprint unlock was held to violate the "
+            "Fifth Amendment. States split on passcodes too — leaning protected in Pennsylvania, "
+            "Indiana, and Utah; compellable in New Jersey and Illinois. The Supreme Court has "
+            "repeatedly declined to settle it, so your right can change at a state line — and gets "
+            "weaker still at the border.\n\n"
+            "This is not legal advice; courts are genuinely split and the law is unsettled.\n\n"
+            "#FifthAmendment #FourthAmendment #Privacy #FaceID #Passcode #SupremeCourt #Law #Documentary"
+        ),
+        "tags": ["phone unlock", "Fifth Amendment", "Fourth Amendment", "Riley v California",
+                 "passcode", "Face ID", "biometrics", "compelled decryption", "digital privacy",
+                 "law", "documentary", "your rights"],
+    },
     "forfeiture": {
         "ep": "PD-2026-028-forfeiture",
         "video": r"H:/pd-media/episodes/PD-2026-028-forfeiture/08_edit/final.v004.mp4",
