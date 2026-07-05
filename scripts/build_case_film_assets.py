@@ -149,6 +149,199 @@ def parse_srt(path):
     return cues
 
 
+# ---------------------------------------------------------------------------
+# figures tier: map the episode Remotion plan's key_graphics (carsearch/motionkit
+# "moving diagram" components) into film_data.figures = FigureSpec[] so CaseFilm's
+# <FigureBeats> actually renders them. Generic: any episode with a remotion_plan
+# key_graphics list gets figures; without one it stays []. Pure mapping (no I/O)
+# so it is unit-testable. See remotion/src/components/FigureBeats.tsx FigureSpec.
+# ---------------------------------------------------------------------------
+
+def _brightline_mode(props: dict) -> str:
+    """BrightLine enum is 'draw'|'hold'|'slam'. The plan sometimes writes a
+    transition like 'draw->slam'; collapse it to the closest single valid enum
+    (the impact end-state), defaulting to 'draw'."""
+    m = str(props.get("mode", "draw")).strip().lower()
+    if m in ("draw", "hold", "slam"):
+        return m
+    if "slam" in m:
+        return "slam"
+    if "hold" in m:
+        return "hold"
+    return "draw"
+
+
+def key_graphic_to_figure(component: str, props: dict):
+    """Map one plan key_graphic (component name + props) to (kind, fields) for a
+    FigureSpec, or None to skip (BrandOpening/BrandEndcard bookends and any
+    component not wired into FigureBeats, e.g. PinDropMap/CitationLowerThird/ActTitle)."""
+    props = props or {}
+    c = (component or "").strip()
+    if c == "BrightLine":
+        return ("brightline", {"mode": _brightline_mode(props)})
+    if c == "CarCutaway":
+        f: dict = {"mode": str(props.get("mode", "all")).strip().lower()}
+        if props.get("zones"):
+            f["zones"] = [str(z) for z in props["zones"]]
+        return ("carcutaway", f)
+    if c == "ProbableCauseMeter":
+        return ("probablecause", {"outcome": str(props.get("outcome", "cross")).strip().lower()})
+    if c == "CurtilageShield":
+        return ("curtilage", {})
+    if c in ("StateMap", "RegionHighlightMap"):
+        f = {}
+        if props.get("label"):
+            f["label"] = str(props["label"])
+        return ("statemap", f)
+    if c == "CaseTimeline":
+        events = [
+            {"year": str(e.get("year", "")), "text": str(e.get("text", ""))}
+            for e in (props.get("events") or [])
+            if isinstance(e, dict)
+        ]
+        return ("casetimeline_c", {"events": events})
+    if c == "CarKeyLock":
+        return ("carkeylock", {})
+    if c == "NumberTicker":
+        f = {"value": props.get("value", 0)}
+        for k in ("prefix", "suffix", "decimals", "label", "topLabel"):
+            if props.get(k) is not None:
+                f[k] = props[k]
+        return ("numberticker", f)
+    if c == "VoteTally":
+        f = {"majority": props.get("majority", 0), "dissent": props.get("dissent", 0)}
+        if props.get("label"):
+            f["label"] = str(props["label"])
+        return ("votetally", f)
+    if c == "QuoteCard":
+        return ("quote", {"quote": str(props.get("quote", "")),
+                          "attribution": str(props.get("attribution", ""))})
+    return None
+
+
+# ---------------------------------------------------------------------------
+# SECTION-ALIGNED span -> narration TIME WINDOW (narration-timing fix).
+# The annotated script has 22 spans (SPN-00NN, one per scene S0NN); the narration
+# has 52 spoken chunks. The old builder mapped scene/span S0NN -> chunk index N (1:1),
+# but 22 != 52, so every figure/text beat landed ~30s off its content (e.g. the
+# NumberTicker(68) sat at chunk 4 = 38.3s, while "sixty-eight bottles" is actually
+# spoken at 74.2-89.8s). Fix: align by SECTION. Group the chunks into their sections
+# (HOOK/OPENING/ACT I..IV/ENDING) to get each section's contiguous time range, then
+# place a span at the equal sub-slice of its section's range corresponding to its
+# ordinal position among the spans of that section's chapter. This lands every figure
+# and kinetic-text beat inside the CORRECT section at roughly the right position.
+# ---------------------------------------------------------------------------
+
+_ROMAN = {"I": 1, "II": 2, "III": 3, "IV": 4, "V": 5, "VI": 6, "VII": 7}
+
+
+def _norm_section(s: str) -> str:
+    """Canonicalize a chapter_id/title OR a narration `section` string to one comparable
+    key so 'act1', 'Act I', 'ACT I' all collapse to 'ACT1' (and hook/opening/ending pass
+    through). Robust to case, spaces, punctuation and roman-vs-arabic act numbering."""
+    t = re.sub(r"[^a-z0-9]", "", (s or "").lower())   # 'act i' -> 'acti'; 'act1' -> 'act1'
+    if t.startswith("hook"):
+        return "HOOK"
+    if t.startswith("opening"):
+        return "OPENING"
+    if t.startswith("ending"):
+        return "ENDING"
+    m = re.match(r"act([ivx]+|\d+)$", t)
+    if m:
+        g = m.group(1)
+        n = int(g) if g.isdigit() else _ROMAN.get(g.upper(), 0)
+        return f"ACT{n}"
+    return t.upper()
+
+
+def build_span_time_windows(chunks: list, chapters: list) -> dict:
+    """Map every span_id -> (start, end) narration time window via SECTION alignment.
+
+    1. Group the narration chunks by their normalized `section` -> each section gets a
+       contiguous time range [min chunk start, max chunk end].
+    2. For each chapter, normalize chapter_id/title to a section key and take its ordered
+       span_ids. A span at ordinal p of P spans in section X gets the p-th equal sub-slice
+       of section X's time range: start = sec_start + (p/P)*range, end = start + (1/P)*range.
+
+    Pure function (no I/O) so it is unit-testable. Returns {} span_ids with no matching
+    section are simply omitted (callers skip them)."""
+    windows: dict = {}
+    # section time ranges (preserve nothing but min/max; sections are contiguous in the index)
+    sec_range: dict = {}
+    for ch in chunks:
+        key = _norm_section(ch.get("section", ""))
+        s = float(ch["start"]); e = float(ch["end"])
+        if key in sec_range:
+            lo, hi = sec_range[key]
+            sec_range[key] = (min(lo, s), max(hi, e))
+        else:
+            sec_range[key] = (s, e)
+    for chap in chapters or []:
+        key = _norm_section(chap.get("chapter_id") or chap.get("title") or "")
+        span_ids = chap.get("span_ids") or []
+        if key not in sec_range or not span_ids:
+            continue
+        s0, e0 = sec_range[key]
+        rng = e0 - s0
+        P = len(span_ids)
+        for p, sid in enumerate(span_ids):
+            ws = s0 + (p / P) * rng
+            we = ws + (1.0 / P) * rng
+            windows[str(sid)] = (ws, we)
+    return windows
+
+
+def _scene_id_to_span_id(scene_id: str) -> str | None:
+    """Scene 'S0NN' -> span id 'SPN-00NN' (both key the same ordinal in this pipeline)."""
+    m = re.match(r"S0*(\d+)", str(scene_id or ""))
+    return f"SPN-{int(m.group(1)):04d}" if m else None
+
+
+def build_figures(plan_path: Path, windows: dict) -> tuple:
+    """Read <ep>/04_scenes/remotion_plan.v001.json key_graphics and emit FigureSpec[].
+    scene 'S0NN' -> span 'SPN-00NN' -> its SECTION-ALIGNED narration window (see
+    build_span_time_windows); when several key_graphics share a scene, that span window
+    is split into equal sequential sub-slots so the full-screen figures never stack
+    destructively. Returns (figures, fig_span_ids) — fig_span_ids drives the text-beat
+    declutter (one clear graphic per moment)."""
+    figures: list = []
+    fig_span_ids: set = set()
+    try:
+        plan = json.loads(plan_path.read_text("utf-8")) if plan_path.exists() else {}
+    except (OSError, ValueError) as e:
+        print(f"WARN could not read plan {plan_path} for figures: {e}")
+        return figures, fig_span_ids
+    kgs = plan.get("key_graphics") or []
+    if not kgs:
+        return figures, fig_span_ids
+    # group mapped key_graphics by span id, preserving plan order
+    groups: "dict[str, list]" = {}
+    order: list = []
+    for kg in kgs:
+        mapped = key_graphic_to_figure(kg.get("component", ""), kg.get("props") or {})
+        if mapped is None:
+            continue
+        sid = _scene_id_to_span_id(kg.get("scene_id", ""))
+        if sid is None or sid not in windows:   # no section-aligned window to anchor to -> skip
+            continue
+        if sid not in groups:
+            groups[sid] = []
+            order.append(sid)
+        groups[sid].append(mapped)
+    for sid in order:
+        items = groups[sid]
+        ws, we = windows[sid]
+        k = len(items)
+        slot = (we - ws) / k if k else 0.0
+        for j, (kind, fields) in enumerate(items):
+            s = ws + slot * j
+            e = ws + slot * (j + 1)
+            figures.append({"start": round(s, 3), "end": round(e, 3), "kind": kind, **fields})
+        fig_span_ids.add(sid)
+    figures.sort(key=lambda f: f["start"])
+    return figures, fig_span_ids
+
+
 def main():
     sys.stdout.reconfigure(encoding="utf-8")
     ap=argparse.ArgumentParser(); ap.add_argument("--ep", required=True); ap.add_argument("--hookline", required=True)
@@ -243,15 +436,27 @@ def main():
         print(f"[{ep}] WARN proceeding with --allow-missing-depth-maps; you MUST run gen_depth.py and re-run "
               f"before the real render, or these depth cuts will render as flat.", file=sys.stderr)
 
-    # graphics beats from annotated on_screen_text (span N <-> chunk N)
-    ann=json.loads(ANN.read_text("utf-8")); spans=ann.get("spans",[])
+    ann=json.loads(ANN.read_text("utf-8")); spans=ann.get("spans",[]); chapters=ann.get("chapters",[])
+    # SECTION-ALIGNED span -> narration time windows (narration-timing fix): every span
+    # (SPN-00NN <-> scene S0NN) lands inside its own section (HOOK/OPENING/ACT I..IV/ENDING)
+    # at the right ordinal position, instead of the old broken span N -> chunk N (22 vs 52).
+    windows=build_span_time_windows(chunks, chapters)
+    # figures first (carsearch/motionkit moving diagrams from remotion_plan.key_graphics)
+    # so the overlapping kinetic-text beat on the same span can be suppressed ->
+    # ONE clear graphic per moment (the figure IS the graphic; no text/figure collision).
+    figures, fig_span_ids=build_figures(EPDIR/"04_scenes"/"remotion_plan.v001.json", windows)
+    # graphics text beats from annotated on_screen_text, placed at each span's
+    # section-aligned window, skipped on any span a figure already occupies (declutter).
     beats=[]
-    for i,ch in enumerate(chunks):
-        if i>=len(spans): break
-        ost=spans[i].get("on_screen_text") or []
+    for sp in spans:
+        sid=str(sp.get("span_id",""))
+        if sid not in windows: continue
+        if sid in fig_span_ids: continue
+        ost=sp.get("on_screen_text") or []
         if not ost: continue
-        bs=ch["start"]; be=min(ch["end"]-0.3, bs+5.6)
-        if be-bs<1.4: be=min(ch["end"]-0.1, bs+1.4)
+        ws,we=windows[sid]
+        bs=ws; be=min(we-0.3, bs+5.6)
+        if be-bs<1.4: be=min(we-0.1, bs+1.4)
         beats.append({"start":round(bs,3),"end":round(be,3),"lines":[s for s in ost if s.strip()]})
 
     hero=imgs[:6]
@@ -260,7 +465,8 @@ def main():
         hook.append({"start":round(ht,3),"dur":1.34,"kind":"img","src":s,"seed":f"hook-{ht}"}); ht+=1.34
 
     data={"episode_id":ep,"fps":FPS,"narration":f"{slug}/narration.mp3","narrationSeconds":round(T,3),
-          "hookSeconds":round(ht,3),"hookLine":args.hookline,"hook":hook,"cuts":cuts,"captions":cues,"graphics":beats}
+          "hookSeconds":round(ht,3),"hookLine":args.hookline,"hook":hook,"cuts":cuts,"captions":cues,
+          "graphics":beats,"figures":figures}
     (PUB/"film_data.v001.json").write_text(json.dumps(data,ensure_ascii=False,indent=2),"utf-8")
     (ROOT/"remotion"/"src"/"data"/f"{slug}_film.json").write_text(json.dumps(data,ensure_ascii=False,indent=2),"utf-8")
     ni=sum(1 for c in cuts if c["kind"]=="img"); nf=sum(1 for c in cuts if c["kind"]=="footage")
@@ -268,7 +474,8 @@ def main():
     cnt=collections.Counter(c["src"] for c in cuts); distinct=len(cnt); total=len(cuts)
     frac=distinct/total if total else 0.0; worst=cnt.most_common(1)[0]
     print(f"[{ep}] imgs={len(imgs)} factory={len(foot)} cuts={total}(img{ni}/foot{nf}) "
-          f"distinct={distinct} distinct_frac={frac:.2f} max_reuse={worst[1]} beats={len(beats)} hook={len(hook)} narr={T:.0f}s")
+          f"distinct={distinct} distinct_frac={frac:.2f} max_reuse={worst[1]} beats={len(beats)} "
+          f"figures={len(figures)} hook={len(hook)} narr={T:.0f}s")
     if frac < DIVERSITY_TARGET:
         need=int(-(-total*DIVERSITY_TARGET//1)) - distinct  # ceil(total*target) - distinct
         print(f"  !! FOOTAGE DIVERSITY LOW: distinct_frac {frac:.2f} < {DIVERSITY_TARGET:.2f} "

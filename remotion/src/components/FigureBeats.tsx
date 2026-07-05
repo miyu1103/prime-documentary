@@ -3,6 +3,17 @@ import {AbsoluteFill, interpolate, Sequence, useCurrentFrame, useVideoConfig} fr
 import {BRAND} from '../brand';
 import {AmbientMotion} from './AmbientMotion';
 import {StatCounter, Timeline, BarChart} from './Figures';
+// carsearch/motionkit "moving diagram" tier — wired here so film_data.figures can render them.
+import {BrightLine} from './carsearch/BrightLine';
+import {CarCutaway} from './carsearch/CarCutaway';
+import {ProbableCauseMeter} from './carsearch/ProbableCauseMeter';
+import {CurtilageShield} from './carsearch/CurtilageShield';
+import {StateMap} from './carsearch/StateMap';
+import {CaseTimeline} from './carsearch/CaseTimeline';
+import {CarKeyLock} from './carsearch/CarKeyLock';
+import {NumberTicker} from './motionkit/NumberTicker';
+import {VoteTally} from './motionkit/VoteTally';
+import {QuoteCard} from './motionkit/QuoteCard';
 
 /**
  * FigureBeats — the §5.6 "Figures tier": data beats rendered as full-screen ANIMATED figures
@@ -14,7 +25,19 @@ import {StatCounter, Timeline, BarChart} from './Figures';
 export type FigureSpec =
   | {start: number; end: number; kind: 'stat'; value: number; prefix?: string; suffix?: string; decimals?: number; label: string; topLabel?: string}
   | {start: number; end: number; kind: 'timeline'; events: {year: string; text: string}[]}
-  | {start: number; end: number; kind: 'bar'; data: {label: string; value: number}[]};
+  | {start: number; end: number; kind: 'bar'; data: {label: string; value: number}[]}
+  // --- carsearch / motionkit "moving diagram" tier (real components rendered full-screen) ---
+  | {start: number; end: number; kind: 'brightline'; mode?: 'draw' | 'hold' | 'slam'}
+  | {start: number; end: number; kind: 'carcutaway'; mode?: 'all' | 'big' | 'small'; zones?: string[]}
+  | {start: number; end: number; kind: 'probablecause'; outcome?: 'stall' | 'cross'}
+  | {start: number; end: number; kind: 'curtilage'}
+  | {start: number; end: number; kind: 'statemap'; label?: string}
+  // distinct from the existing flat 'timeline' — this is the carsearch CaseTimeline component
+  | {start: number; end: number; kind: 'casetimeline_c'; events: {year: string; text: string}[]}
+  | {start: number; end: number; kind: 'carkeylock'}
+  | {start: number; end: number; kind: 'numberticker'; value: number; prefix?: string; suffix?: string; decimals?: number; label?: string; topLabel?: string}
+  | {start: number; end: number; kind: 'votetally'; majority: number; dissent: number; label?: string}
+  | {start: number; end: number; kind: 'quote'; quote: string; attribution: string};
 
 const Backdrop: React.FC = () => (
   <AbsoluteFill
@@ -63,6 +86,29 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                 )}
                 {b.kind === 'timeline' && <Timeline accent={accent} events={b.events} dur={dur} />}
                 {b.kind === 'bar' && <BarChart accent={accent} data={b.data} dur={dur} />}
+                {/* carsearch / motionkit components: each self-contained full-screen scene, dur in frames */}
+                {b.kind === 'brightline' && <BrightLine mode={b.mode} dur={dur} />}
+                {b.kind === 'carcutaway' && <CarCutaway mode={b.mode} zones={b.zones} dur={dur} />}
+                {b.kind === 'probablecause' && <ProbableCauseMeter outcome={b.outcome} dur={dur} />}
+                {b.kind === 'curtilage' && <CurtilageShield dur={dur} />}
+                {b.kind === 'statemap' && <StateMap label={b.label} dur={dur} />}
+                {b.kind === 'casetimeline_c' && <CaseTimeline events={b.events} dur={dur} />}
+                {b.kind === 'carkeylock' && <CarKeyLock dur={dur} />}
+                {b.kind === 'numberticker' && (
+                  <NumberTicker
+                    value={b.value}
+                    prefix={b.prefix}
+                    suffix={b.suffix}
+                    decimals={b.decimals}
+                    label={b.label}
+                    topLabel={b.topLabel}
+                    dur={dur}
+                  />
+                )}
+                {b.kind === 'votetally' && (
+                  <VoteTally majority={b.majority} dissent={b.dissent} label={b.label} dur={dur} />
+                )}
+                {b.kind === 'quote' && <QuoteCard quote={b.quote} attribution={b.attribution} dur={dur} />}
               </Drift>
             </AbsoluteFill>
           </Sequence>

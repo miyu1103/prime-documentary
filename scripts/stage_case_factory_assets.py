@@ -37,6 +37,10 @@ PLANS = {
         "crime_police": 24, "legal_court": 22, "forensics_dna": 16, "medical_lab": 12,
         "documents_paper": 12, "urban_night": 10,
     },
+    "carsearch": {  # traffic stops / highways / suburban driveways / courthouse / warrants+rental / phone
+        "crime_police": 22, "urban_night": 20, "property_home": 18, "legal_court": 16,
+        "documents_paper": 12, "surveillance_tech": 8, "nature_landscape": 8,
+    },
 }
 
 

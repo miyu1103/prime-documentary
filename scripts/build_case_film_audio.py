@@ -386,7 +386,7 @@ def build_chunks(index: dict, media: Path, ep: str) -> list[Chunk]:
     for i, c in enumerate(index["chunks"]):
         vc = str(c.get("voice_chunk_id") or c.get("chunk_id") or f"VC-{i + 1:04d}")
         section = str(c.get("section", ""))
-        text = str(c.get("text", ""))
+        text = str(c.get("text", "") or c.get("spoken_text", ""))
         est = float(c.get("estimated_duration_seconds") or c.get("seconds") or 0.0)
         audio = find_chunk_audio(media, ep, vc)
         measured = ffprobe_duration(audio) if audio else None
