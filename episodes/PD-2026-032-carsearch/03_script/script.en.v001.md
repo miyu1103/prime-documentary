@@ -1,6 +1,6 @@
 # EP32 — "Can the Police Search Your Car?" (script.en.v001)
 
-**Episode:** PD-2026-032-carsearch · **Series:** us-court-cases · **Target:** ~11 min (~1,950–2,050 spoken words @ ~173–180 wpm)
+**Episode:** PD-2026-032-carsearch · **Series:** us-court-cases · **Target:** finished runtime 11.5–12.5 min (1,916 spoken words; ElevenLabs delivery + designed pauses/SFX/music fill to band — verify with check_runtime_band.py on the render, not word count alone)
 **Voice:** ElevenLabs master. `[VO:]` = spoken narration. Bracketed **(VIS:)** / **(SFX:)** notes are for the annotated/production layer, NOT spoken.
 **Craft rules baked in:** 8s cold-open hook (highlight of the payoff) → OPENING → 4 acts → ENDING/CTA. Second-person, self-relevant. Two open loops held to the end. Re-hook at each act turn (~every 2:15). No flat 20s explainer stretch — every idea is a visible, moving picture with a sound cue. First-class prose, not templated. Facts locked to `claims.v001.json` (CLM-####).
 
@@ -23,7 +23,7 @@
 ## ACT I — THE HUNDRED-YEAR RULE (≈0:24–3:05)
 [VO:] Start with the thing that surprises almost everyone. To search your house, the police usually need a warrant — a judge's signature, probable cause written down, a name for the place and the thing they're after. That is the Fourth Amendment at full strength.
 (VIS: a warrant document; a house wrapped in a glowing protective outline.)
-[VO:] Your car does not get that. And it hasn't since 1925 — before most of the roads it drives on even existed.
+[VO:] Your car does not get that. And it hasn't since 1925 — a hundred years ago.
 (VIS: timeline snaps back — "1925"; a Model-T era street.) (SFX: page turn; a soft stamp.)
 [VO:] It was Prohibition. Alcohol was illegal, and a whole underground economy ran it across state lines by car. A man named George Carroll was one of those runners, moving liquor along the highway between Detroit and Grand Rapids.
 (VIS: headlights on a dark 1920s highway; crates in a back seat. Anonymous figures.) (SFX: a low engine hum, ambient night road.)

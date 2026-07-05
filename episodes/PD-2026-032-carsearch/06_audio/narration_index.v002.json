@@ -8,14 +8,14 @@
   "voice_id": "nPczCjzI2devNBz1zQrb",
   "model_id": "eleven_multilingual_v2",
   "wpm_estimate": 173,
-  "source": "03_script/script.en.v001.md (final, post-remediation trim)",
-  "supersedes": "narration_index.v001.json (built on pre-remediation script)",
-  "note": "Chunked per spoken [VO:] beat, verbatim final spoken text (VIS/SFX + CLM stripped). Durations estimated @173wpm; captions force-align to the rendered ElevenLabs master, not these estimates.",
+  "source": "03_script/script.en.v001.md (final, post-remediation+trim)",
+  "supersedes": "narration_index.v001.json",
+  "note": "Chunked per spoken [VO:] beat, verbatim final spoken text (VIS/SFX + CLM + bold stripped). Durations estimated @173wpm; captions force-align to the rendered ElevenLabs master. Regenerated after L26+header edits to stay verbatim-consistent with the final script.",
   "totals": {
     "chunks": 52,
-    "words": 1916,
-    "estimated_seconds": 664.5,
-    "estimated_minutes": 11.08
+    "words": 1910,
+    "estimated_seconds": 662.4,
+    "estimated_minutes": 11.04
   },
   "chunks": [
     {
@@ -56,9 +56,9 @@
     {
       "voice_chunk_id": "VC-0006",
       "section": "ACT I",
-      "text": "Your car does not get that. And it hasn't since 1925 — before most of the roads it drives on even existed.",
-      "word_count": 20,
-      "estimated_duration_seconds": 6.936
+      "text": "Your car does not get that. And it hasn't since 1925 — a hundred years ago.",
+      "word_count": 14,
+      "estimated_duration_seconds": 4.855
     },
     {
       "voice_chunk_id": "VC-0007",

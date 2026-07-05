@@ -144,8 +144,18 @@ AMBIENCE_BEDS = (
     "amb_night_window.mp3",
     "amb_office_hum.mp3",
     "amb_tension_drone.mp3",
+    "amb_rain_street.mp3",
+    "amb_highway_traffic.mp3",
+    "amb_engine_idle.mp3",
+    "amb_light_wind.mp3",
+    "amb_road_rumble_1920s.mp3",
 )
 AMBIENCE_KEYWORDS: list[tuple[tuple[str, ...], str]] = [
+    (("prohibition", "1920s", "1925", "model-t", "period", "lazyback", "whisky", "gin"), "amb_road_rumble_1920s.mp3"),
+    (("highway", "traffic", "aerial", "thousands of cars", "multi-lane", "shoulder"), "amb_highway_traffic.mp3"),
+    (("rain", "wet asphalt", "rain-slick", "downpour", "storm"), "amb_rain_street.mp3"),
+    (("engine", "idle", "motor", "pull over", "pulled over", "ignition"), "amb_engine_idle.mp3"),
+    (("wind", "breeze", "rustling", "open road", "field", "outdoor"), "amb_light_wind.mp3"),
     (("courthouse", "supreme court", "courtroom", "bench", "marble", "verdict", "gavel", "justice"), "amb_courtroom_room_tone.mp3"),
     (("driveway", "porch", "home", "house", "suburban", "residential", "window", "curb", "dusk", "tarp"), "amb_night_window.mp3"),
     (("highway", "road", "street", "traffic", "shoulder", "stop", "sweep", "map"), "amb_tension_drone.mp3"),
@@ -155,13 +165,13 @@ AMBIENCE_KEYWORDS: list[tuple[tuple[str, ...], str]] = [
 ]
 # fallback default per chapter (used only if keyword scan is empty)
 CHAPTER_AMBIENCE_DEFAULT: dict[str, str] = {
-    "hook":    "amb_night_window.mp3",
-    "opening": "amb_tension_drone.mp3",
-    "act1":    "amb_office_hum.mp3",
-    "act2":    "amb_institutional_drone.mp3",
-    "act3":    "amb_night_window.mp3",
-    "act4":    "amb_courtroom_room_tone.mp3",
-    "ending":  "amb_empty_hallway.mp3",
+    "hook":    "amb_rain_street.mp3",         # night traffic stop on wet asphalt
+    "opening": "amb_highway_traffic.mp3",     # 1925->2018 highway sweep
+    "act1":    "amb_road_rumble_1920s.mp3",   # Prohibition night highway / Carroll
+    "act2":    "amb_institutional_drone.mp3", # probable-cause doctrine / diagrams
+    "act3":    "amb_night_window.mp3",         # suburban driveway / the tarp
+    "act4":    "amb_courtroom_room_tone.mp3", # map of rights / rulings
+    "ending":  "amb_light_wind.mp3",           # calm resolve at the curb
 }
 
 # ---- M4: one-shot SFX map (curated from build_case_sound_design) -----------
@@ -570,6 +580,26 @@ def map_oneshot(low: str) -> Optional[tuple[str, float, float]]:
     return None
 
 
+# Variant rotation (kills the "same one-shot repeats" cheap tell). Each base file
+# rotates deterministically through its synthesized variants by cue index, so
+# consecutive whoosh/tick/blip/etc. cues never fire the identical file.
+VARIANT_POOLS: dict[str, tuple[str, ...]] = {
+    "sfx_whoosh_short.mp3": ("sfx_whoosh_short.mp3", "sfx_whoosh_v2_short.mp3", "sfx_whoosh_v2_med.mp3", "sfx_whoosh_v2_long.mp3"),
+    "sfx_whoosh_medium.mp3": ("sfx_whoosh_medium.mp3", "sfx_whoosh_v2_med.mp3", "sfx_whoosh_v2_long.mp3"),
+    "sfx_ui_tick.mp3": ("sfx_ui_tick.mp3", "sfx_tick_v2_hi.mp3", "sfx_tick_v2_lo.mp3"),
+    "sfx_data_blip.mp3": ("sfx_data_blip.mp3", "sfx_blip_v2_hi.mp3", "sfx_blip_v2_lo.mp3"),
+    "sfx_sub_drop.mp3": ("sfx_sub_drop.mp3", "sfx_subdrop_v2_a.mp3", "sfx_subdrop_v2_b.mp3"),
+    "sfx_riser_2s.mp3": ("sfx_riser_2s.mp3", "sfx_riser_v2_1s.mp3", "sfx_riser_v2_3s.mp3"),
+    "sfx_soft_impact.mp3": ("sfx_soft_impact.mp3", "sfx_impact_v2_tight.mp3"),
+    "sfx_low_boom.mp3": ("sfx_low_boom.mp3", "sfx_boom_v2_deep.mp3"),
+}
+
+
+def variant_of(fname: str, idx: int) -> str:
+    pool = VARIANT_POOLS.get(fname)
+    return pool[idx % len(pool)] if pool else fname
+
+
 def quoted_trigger(fragment: str) -> str:
     m = re.search(r'["“]([^"”]+)["”]', fragment)
     return m.group(1).strip() if m else ""
@@ -633,6 +663,7 @@ def build_cues(beats: list[Beat], chunks: list[Chunk],
                 if hard or (oneshot is not None and not atmos):
                     fname, dur, vol = oneshot
                     n += 1
+                    fname = variant_of(fname, n)
                     sfx.append(SfxCue(
                         cue_id=f"L4-{n:03d}", file=f"sfx/{fname}", chapter_id=chunk.chapter_id,
                         time=t, dur=dur, volume=vol, gain_db=vol_to_db(vol),
@@ -644,6 +675,7 @@ def build_cues(beats: list[Beat], chunks: list[Chunk],
                 elif oneshot is not None:
                     fname, dur, vol = oneshot
                     n += 1
+                    fname = variant_of(fname, n)
                     sfx.append(SfxCue(
                         cue_id=f"L4-{n:03d}", file=f"sfx/{fname}", chapter_id=chunk.chapter_id,
                         time=t, dur=dur, volume=vol, gain_db=vol_to_db(vol),

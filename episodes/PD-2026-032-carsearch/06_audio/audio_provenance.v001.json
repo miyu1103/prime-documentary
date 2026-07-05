@@ -21,35 +21,35 @@
       "title": "Hook",
       "start": 0.0,
       "end": 14.22,
-      "ambience_bed": "amb_tension_drone.mp3"
+      "ambience_bed": "amb_night_window.mp3"
     },
     {
       "chapter_id": "opening",
       "title": "Opening",
       "start": 14.22,
       "end": 38.151,
-      "ambience_bed": "amb_night_window.mp3"
+      "ambience_bed": "amb_road_rumble_1920s.mp3"
     },
     {
       "chapter_id": "act1",
       "title": "ACT I",
       "start": 38.151,
       "end": 199.77,
-      "ambience_bed": "amb_office_hum.mp3"
+      "ambience_bed": "amb_tension_drone.mp3"
     },
     {
       "chapter_id": "act2",
       "title": "ACT II",
       "start": 199.77,
       "end": 342.661,
-      "ambience_bed": "amb_institutional_drone.mp3"
+      "ambience_bed": "amb_highway_traffic.mp3"
     },
     {
       "chapter_id": "act3",
       "title": "ACT III",
       "start": 342.661,
       "end": 522.661,
-      "ambience_bed": "amb_empty_hallway.mp3"
+      "ambience_bed": "amb_office_hum.mp3"
     },
     {
       "chapter_id": "act4",
@@ -63,7 +63,7 @@
       "title": "Ending / CTA",
       "start": 637.458,
       "end": 662.889,
-      "ambience_bed": "amb_tension_drone.mp3"
+      "ambience_bed": "amb_light_wind.mp3"
     }
   ],
   "layers": {
@@ -93,23 +93,24 @@
     "ambience": {
       "role": "distinct constant location bed per chapter (audible; NOT sidechained -> capped duck)",
       "bed_count": 7,
-      "distinct_beds": 6,
+      "distinct_beds": 7,
       "beds": [
         "amb_courtroom_room_tone.mp3",
-        "amb_empty_hallway.mp3",
-        "amb_institutional_drone.mp3",
+        "amb_highway_traffic.mp3",
+        "amb_light_wind.mp3",
         "amb_night_window.mp3",
         "amb_office_hum.mp3",
+        "amb_road_rumble_1920s.mp3",
         "amb_tension_drone.mp3"
       ],
       "beds_by_chapter": {
-        "hook": "amb_tension_drone.mp3",
-        "opening": "amb_night_window.mp3",
-        "act1": "amb_office_hum.mp3",
-        "act2": "amb_institutional_drone.mp3",
-        "act3": "amb_empty_hallway.mp3",
+        "hook": "amb_night_window.mp3",
+        "opening": "amb_road_rumble_1920s.mp3",
+        "act1": "amb_tension_drone.mp3",
+        "act2": "amb_highway_traffic.mp3",
+        "act3": "amb_office_hum.mp3",
         "act4": "amb_courtroom_room_tone.mp3",
-        "ending": "amb_tension_drone.mp3"
+        "ending": "amb_light_wind.mp3"
       },
       "floor_db": -18.0,
       "ducking_capped": true,
@@ -120,7 +121,7 @@
       "cue_count": 37,
       "cues_before_dedup": 37,
       "deduped": 0,
-      "distinct_files": 13,
+      "distinct_files": 20,
       "word_triggered": 1
     }
   },
@@ -153,7 +154,7 @@
     "sfx_count": 37,
     "sfx_per_min": 3.349,
     "ambience_coverage": 1.0,
-    "ambience_distinct_beds": 6,
+    "ambience_distinct_beds": 7,
     "floors": {
       "sfx_total": 20,
       "sfx_per_min": 2.0,
@@ -329,7 +330,7 @@
   "sfx_cues": [
     {
       "cue_id": "L4-001",
-      "file": "sfx/sfx_whoosh_short.mp3",
+      "file": "sfx/sfx_whoosh_v2_long.mp3",
       "chapter_id": "hook",
       "time": 0.97,
       "dur": 0.8,
@@ -391,7 +392,7 @@
       "cue_id": "L4-006",
       "file": "sfx/sfx_page_turn.mp3",
       "chapter_id": "act1",
-      "time": 54.053,
+      "time": 53.722,
       "dur": 0.9,
       "gain_db": -14.9,
       "source": "script_sfx",
@@ -403,7 +404,7 @@
       "cue_id": "L4-007",
       "file": "sfx/sfx_stamp_seal.mp3",
       "chapter_id": "act1",
-      "time": 54.716,
+      "time": 54.385,
       "dur": 0.9,
       "gain_db": -14.0,
       "source": "script_sfx",
@@ -425,7 +426,7 @@
     },
     {
       "cue_id": "L4-009",
-      "file": "sfx/sfx_ui_tick.mp3",
+      "file": "sfx/sfx_tick_v2_hi.mp3",
       "chapter_id": "act1",
       "time": 76.286,
       "dur": 0.4,
@@ -437,7 +438,7 @@
     },
     {
       "cue_id": "L4-010",
-      "file": "sfx/sfx_data_blip.mp3",
+      "file": "sfx/sfx_blip_v2_lo.mp3",
       "chapter_id": "act1",
       "time": 76.964,
       "dur": 0.8,
@@ -485,7 +486,7 @@
     },
     {
       "cue_id": "L4-014",
-      "file": "sfx/sfx_ui_tick.mp3",
+      "file": "sfx/sfx_tick_v2_lo.mp3",
       "chapter_id": "act1",
       "time": 163.829,
       "dur": 0.5,
@@ -533,7 +534,7 @@
     },
     {
       "cue_id": "L4-018",
-      "file": "sfx/sfx_riser_2s.mp3",
+      "file": "sfx/sfx_riser_v2_3s.mp3",
       "chapter_id": "act2",
       "time": 211.756,
       "dur": 2.0,
@@ -581,7 +582,7 @@
     },
     {
       "cue_id": "L4-022",
-      "file": "sfx/sfx_ui_tick.mp3",
+      "file": "sfx/sfx_tick_v2_hi.mp3",
       "chapter_id": "act2",
       "time": 299.308,
       "dur": 0.5,
@@ -605,7 +606,7 @@
     },
     {
       "cue_id": "L4-024",
-      "file": "sfx/sfx_whoosh_medium.mp3",
+      "file": "sfx/sfx_whoosh_v2_long.mp3",
       "chapter_id": "act3",
       "time": 343.336,
       "dur": 1.2,
@@ -617,7 +618,7 @@
     },
     {
       "cue_id": "L4-025",
-      "file": "sfx/sfx_soft_impact.mp3",
+      "file": "sfx/sfx_impact_v2_tight.mp3",
       "chapter_id": "act3",
       "time": 369.988,
       "dur": 0.8,
@@ -641,7 +642,7 @@
     },
     {
       "cue_id": "L4-027",
-      "file": "sfx/sfx_data_blip.mp3",
+      "file": "sfx/sfx_blip_v2_lo.mp3",
       "chapter_id": "act3",
       "time": 371.328,
       "dur": 0.8,
@@ -701,7 +702,7 @@
     },
     {
       "cue_id": "L4-032",
-      "file": "sfx/sfx_ui_tick.mp3",
+      "file": "sfx/sfx_tick_v2_hi.mp3",
       "chapter_id": "act3",
       "time": 487.966,
       "dur": 0.5,
@@ -725,7 +726,7 @@
     },
     {
       "cue_id": "L4-034",
-      "file": "sfx/sfx_ui_tick.mp3",
+      "file": "sfx/sfx_tick_v2_lo.mp3",
       "chapter_id": "act4",
       "time": 523.662,
       "dur": 0.5,
@@ -749,7 +750,7 @@
     },
     {
       "cue_id": "L4-036",
-      "file": "sfx/sfx_low_boom.mp3",
+      "file": "sfx/sfx_boom_v2_deep.mp3",
       "chapter_id": "act4",
       "time": 634.816,
       "dur": 1.6,
@@ -775,13 +776,13 @@
   "ffmpeg": {
     "mixing": "narration(front) + music(sidechain-ducked) + ambience(constant audible bed + swell automation) + sfx(one-shots), two-pass loudnorm I=-14",
     "output_expected": "H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_audio\\mix\\PD-2026-032-carsearch_film_audio_v001.wav",
-    "filter_complex": "[0:a]aresample=48000,volume=1.0,apad,atrim=0:662.889,asetpts=PTS-STARTPTS,asplit=2[vo][key];[1:a]atrim=0:14.220,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=13.520:d=0.7,adelay=0|0[m0];[2:a]atrim=0:23.931,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=23.231:d=0.7,adelay=14220|14220[m1];[3:a]atrim=0:161.619,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=160.919:d=0.7,adelay=38151|38151[m2];[4:a]atrim=0:142.891,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=142.191:d=0.7,adelay=199770|199770[m3];[5:a]atrim=0:180.000,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=179.300:d=0.7,adelay=342661|342661[m4];[6:a]atrim=0:114.797,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=114.097:d=0.7,adelay=522661|522661[m5];[7:a]atrim=0:25.431,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=24.731:d=0.7,adelay=637458|637458[m6];[m0][m1][m2][m3][m4][m5][m6]amix=inputs=7:normalize=0:dropout_transition=0[musraw];[musraw][key]sidechaincompress=threshold=0.03:ratio=8:attack=25:release=320[musd];[8:a]atrim=0:14.220,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=13.620:d=0.6,adelay=0|0[a0];[9:a]atrim=0:23.931,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=23.331:d=0.6,adelay=14220|14220[a1];[10:a]atrim=0:161.619,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=161.019:d=0.6,adelay=38151|38151[a2];[11:a]atrim=0:142.891,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=142.291:d=0.6,adelay=199770|199770[a3];[12:a]atrim=0:180.000,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=179.400:d=0.6,adelay=342661|342661[a4];[13:a]atrim=0:114.797,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=114.197:d=0.6,adelay=522661|522661[a5];[14:a]atrim=0:25.431,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=24.831:d=0.6,adelay=637458|637458[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0:dropout_transition=0[ambraw];[ambraw]volume=eval=frame:volume='1+0.600*between(t,62.383,65.183)+0.600*between(t,114.457,117.257)+0.600*between(t,299.955,302.755)+0.600*between(t,311.738,314.538)+0.600*between(t,335.865,338.665)+0.600*between(t,350.425,353.225)+0.600*between(t,361.228,364.028)+0.600*between(t,398.133,400.933)+0.600*between(t,446.626,449.426)+0.600*between(t,467.113,469.913)+0.600*between(t,488.653,491.453)+0.600*between(t,498.271,501.071)+0.600*between(t,575.593,578.393)+0.600*between(t,593.815,596.615)+0.600*between(t,598.813,601.613)'[ambd];[15:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=970|970[s0];[16:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.22,adelay=5171|5171[s1];[17:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.2,adelay=7110|7110[s2];[18:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=14220|14220[s3];[19:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=38151|38151[s4];[20:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=54053|54053[s5];[21:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=54716|54716[s6];[22:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=75608|75608[s7];[23:a]atrim=0:0.400,asetpts=PTS-STARTPTS,volume=0.12,adelay=76286|76286[s8];[24:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=76964|76964[s9];[25:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=128107|128107[s10];[26:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=128789|128789[s11];[27:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=137661|137661[s12];[28:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=163829|163829[s13];[29:a]atrim=0:1.400,asetpts=PTS-STARTPTS,volume=0.2,adelay=187006|187006[s14];[30:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=199770|199770[s15];[31:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=201102|201102[s16];[32:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.2,adelay=211756|211756[s17];[33:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=226429|226429[s18];[34:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=253422|253422[s19];[35:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=274059|274059[s20];[36:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=299308|299308[s21];[37:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=342661|342661[s22];[38:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=343336|343336[s23];[39:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.12,adelay=369988|369988[s24];[40:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=370658|370658[s25];[41:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=371328|371328[s26];[42:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=382713|382713[s27];[43:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=408003|408003[s28];[44:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.18,adelay=433864|433864[s29];[45:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=436551|436551[s30];[46:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=487966|487966[s31];[47:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=522661|522661[s32];[48:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=523662|523662[s33];[49:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=542946|542946[s34];[50:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.22,adelay=634816|634816[s35];[51:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=637458|637458[s36];[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21][s22][s23][s24][s25][s26][s27][s28][s29][s30][s31][s32][s33][s34][s35][s36]amix=inputs=37:normalize=0:dropout_transition=0[sfxraw];[vo][musd][ambd][sfxraw]amix=inputs=4:weights=1 0.90 0.80 0.95:normalize=0:duration=first,atrim=0:662.889,loudnorm=I=-14:TP=-1.5:LRA=11:linear=true,alimiter=level_in=1:level_out=1:limit=0.95[aout]",
-    "command": "ffmpeg -y -i \"H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_voice\\master\\vc_master_v001.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\hook\\mus_20260614_hook_glass_air_bed_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\opening\\mus_20260614_opening_measured_arpeggio_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\tension_build\\mus_20260614_tension_build_courtroom_horizon_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\explainer_bed\\mus_20260614_explainer_bed_soft_explainer_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\reveal\\mus_20260614_reveal_verdict_at_dawn_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\somber\\mus_20260614_somber_ledger_of_ash_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\outro\\mus_20260614_outro_last_frame_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_tension_drone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_night_window.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_office_hum.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_institutional_drone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_empty_hallway.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_courtroom_room_tone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_tension_drone.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_low_boom.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_2s.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_page_turn.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_ui_tick.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_data_blip.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_medium.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_ui_tick.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_sub_drop.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_2s.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_data_blip.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_data_blip.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_ui_tick.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_medium.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_soft_impact.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_data_blip.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_ui_tick.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_soft_impact.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_gavel_knock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_ui_tick.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_ui_tick.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_low_boom.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -filter_complex \"[0:a]aresample=48000,volume=1.0,apad,atrim=0:662.889,asetpts=PTS-STARTPTS,asplit=2[vo][key];[1:a]atrim=0:14.220,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=13.520:d=0.7,adelay=0|0[m0];[2:a]atrim=0:23.931,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=23.231:d=0.7,adelay=14220|14220[m1];[3:a]atrim=0:161.619,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=160.919:d=0.7,adelay=38151|38151[m2];[4:a]atrim=0:142.891,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=142.191:d=0.7,adelay=199770|199770[m3];[5:a]atrim=0:180.000,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=179.300:d=0.7,adelay=342661|342661[m4];[6:a]atrim=0:114.797,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=114.097:d=0.7,adelay=522661|522661[m5];[7:a]atrim=0:25.431,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=24.731:d=0.7,adelay=637458|637458[m6];[m0][m1][m2][m3][m4][m5][m6]amix=inputs=7:normalize=0:dropout_transition=0[musraw];[musraw][key]sidechaincompress=threshold=0.03:ratio=8:attack=25:release=320[musd];[8:a]atrim=0:14.220,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=13.620:d=0.6,adelay=0|0[a0];[9:a]atrim=0:23.931,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=23.331:d=0.6,adelay=14220|14220[a1];[10:a]atrim=0:161.619,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=161.019:d=0.6,adelay=38151|38151[a2];[11:a]atrim=0:142.891,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=142.291:d=0.6,adelay=199770|199770[a3];[12:a]atrim=0:180.000,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=179.400:d=0.6,adelay=342661|342661[a4];[13:a]atrim=0:114.797,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=114.197:d=0.6,adelay=522661|522661[a5];[14:a]atrim=0:25.431,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=24.831:d=0.6,adelay=637458|637458[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0:dropout_transition=0[ambraw];[ambraw]volume=eval=frame:volume='1+0.600*between(t,62.383,65.183)+0.600*between(t,114.457,117.257)+0.600*between(t,299.955,302.755)+0.600*between(t,311.738,314.538)+0.600*between(t,335.865,338.665)+0.600*between(t,350.425,353.225)+0.600*between(t,361.228,364.028)+0.600*between(t,398.133,400.933)+0.600*between(t,446.626,449.426)+0.600*between(t,467.113,469.913)+0.600*between(t,488.653,491.453)+0.600*between(t,498.271,501.071)+0.600*between(t,575.593,578.393)+0.600*between(t,593.815,596.615)+0.600*between(t,598.813,601.613)'[ambd];[15:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=970|970[s0];[16:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.22,adelay=5171|5171[s1];[17:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.2,adelay=7110|7110[s2];[18:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=14220|14220[s3];[19:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=38151|38151[s4];[20:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=54053|54053[s5];[21:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=54716|54716[s6];[22:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=75608|75608[s7];[23:a]atrim=0:0.400,asetpts=PTS-STARTPTS,volume=0.12,adelay=76286|76286[s8];[24:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=76964|76964[s9];[25:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=128107|128107[s10];[26:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=128789|128789[s11];[27:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=137661|137661[s12];[28:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=163829|163829[s13];[29:a]atrim=0:1.400,asetpts=PTS-STARTPTS,volume=0.2,adelay=187006|187006[s14];[30:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=199770|199770[s15];[31:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=201102|201102[s16];[32:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.2,adelay=211756|211756[s17];[33:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=226429|226429[s18];[34:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=253422|253422[s19];[35:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=274059|274059[s20];[36:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=299308|299308[s21];[37:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=342661|342661[s22];[38:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=343336|343336[s23];[39:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.12,adelay=369988|369988[s24];[40:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=370658|370658[s25];[41:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=371328|371328[s26];[42:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=382713|382713[s27];[43:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=408003|408003[s28];[44:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.18,adelay=433864|433864[s29];[45:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=436551|436551[s30];[46:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=487966|487966[s31];[47:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=522661|522661[s32];[48:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=523662|523662[s33];[49:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=542946|542946[s34];[50:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.22,adelay=634816|634816[s35];[51:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=637458|637458[s36];[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21][s22][s23][s24][s25][s26][s27][s28][s29][s30][s31][s32][s33][s34][s35][s36]amix=inputs=37:normalize=0:dropout_transition=0[sfxraw];[vo][musd][ambd][sfxraw]amix=inputs=4:weights=1 0.90 0.80 0.95:normalize=0:duration=first,atrim=0:662.889,loudnorm=I=-14:TP=-1.5:LRA=11:linear=true,alimiter=level_in=1:level_out=1:limit=0.95[aout]\" -map [aout] -t 662.889 -ar 48000 -ac 2 -c:a pcm_s16le \"H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_audio\\mix\\PD-2026-032-carsearch_film_audio_v001.wav\""
+    "filter_complex": "[0:a]aresample=48000,volume=1.0,apad,atrim=0:662.889,asetpts=PTS-STARTPTS,asplit=2[vo][key];[1:a]atrim=0:14.220,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=13.520:d=0.7,adelay=0|0[m0];[2:a]atrim=0:23.931,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=23.231:d=0.7,adelay=14220|14220[m1];[3:a]atrim=0:161.619,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=160.919:d=0.7,adelay=38151|38151[m2];[4:a]atrim=0:142.891,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=142.191:d=0.7,adelay=199770|199770[m3];[5:a]atrim=0:180.000,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=179.300:d=0.7,adelay=342661|342661[m4];[6:a]atrim=0:114.797,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=114.097:d=0.7,adelay=522661|522661[m5];[7:a]atrim=0:25.431,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=24.731:d=0.7,adelay=637458|637458[m6];[m0][m1][m2][m3][m4][m5][m6]amix=inputs=7:normalize=0:dropout_transition=0[musraw];[musraw][key]sidechaincompress=threshold=0.03:ratio=8:attack=25:release=320[musd];[8:a]atrim=0:14.220,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=13.620:d=0.6,adelay=0|0[a0];[9:a]atrim=0:23.931,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=23.331:d=0.6,adelay=14220|14220[a1];[10:a]atrim=0:161.619,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=161.019:d=0.6,adelay=38151|38151[a2];[11:a]atrim=0:142.891,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=142.291:d=0.6,adelay=199770|199770[a3];[12:a]atrim=0:180.000,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=179.400:d=0.6,adelay=342661|342661[a4];[13:a]atrim=0:114.797,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=114.197:d=0.6,adelay=522661|522661[a5];[14:a]atrim=0:25.431,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=24.831:d=0.6,adelay=637458|637458[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0:dropout_transition=0[ambraw];[ambraw]volume=eval=frame:volume='1+0.600*between(t,62.383,65.183)+0.600*between(t,114.457,117.257)+0.600*between(t,299.955,302.755)+0.600*between(t,311.738,314.538)+0.600*between(t,335.865,338.665)+0.600*between(t,350.425,353.225)+0.600*between(t,361.228,364.028)+0.600*between(t,398.133,400.933)+0.600*between(t,446.626,449.426)+0.600*between(t,467.113,469.913)+0.600*between(t,488.653,491.453)+0.600*between(t,498.271,501.071)+0.600*between(t,575.593,578.393)+0.600*between(t,593.815,596.615)+0.600*between(t,598.813,601.613)'[ambd];[15:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=970|970[s0];[16:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.22,adelay=5171|5171[s1];[17:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.2,adelay=7110|7110[s2];[18:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=14220|14220[s3];[19:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=38151|38151[s4];[20:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=53722|53722[s5];[21:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=54385|54385[s6];[22:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=75608|75608[s7];[23:a]atrim=0:0.400,asetpts=PTS-STARTPTS,volume=0.12,adelay=76286|76286[s8];[24:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=76964|76964[s9];[25:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=128107|128107[s10];[26:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=128789|128789[s11];[27:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=137661|137661[s12];[28:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=163829|163829[s13];[29:a]atrim=0:1.400,asetpts=PTS-STARTPTS,volume=0.2,adelay=187006|187006[s14];[30:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=199770|199770[s15];[31:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=201102|201102[s16];[32:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.2,adelay=211756|211756[s17];[33:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=226429|226429[s18];[34:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=253422|253422[s19];[35:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=274059|274059[s20];[36:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=299308|299308[s21];[37:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=342661|342661[s22];[38:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=343336|343336[s23];[39:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.12,adelay=369988|369988[s24];[40:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=370658|370658[s25];[41:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=371328|371328[s26];[42:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=382713|382713[s27];[43:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=408003|408003[s28];[44:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.18,adelay=433864|433864[s29];[45:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=436551|436551[s30];[46:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=487966|487966[s31];[47:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=522661|522661[s32];[48:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=523662|523662[s33];[49:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=542946|542946[s34];[50:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.22,adelay=634816|634816[s35];[51:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=637458|637458[s36];[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21][s22][s23][s24][s25][s26][s27][s28][s29][s30][s31][s32][s33][s34][s35][s36]amix=inputs=37:normalize=0:dropout_transition=0[sfxraw];[vo][musd][ambd][sfxraw]amix=inputs=4:weights=1 0.90 0.80 0.95:normalize=0:duration=first,atrim=0:662.889,loudnorm=I=-14:TP=-1.5:LRA=11:linear=true,alimiter=level_in=1:level_out=1:limit=0.95[aout]",
+    "command": "ffmpeg -y -i \"H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_voice\\master\\vc_master_v001.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\hook\\mus_20260614_hook_glass_air_bed_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\opening\\mus_20260614_opening_measured_arpeggio_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\tension_build\\mus_20260614_tension_build_courtroom_horizon_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\explainer_bed\\mus_20260614_explainer_bed_soft_explainer_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\reveal\\mus_20260614_reveal_verdict_at_dawn_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\somber\\mus_20260614_somber_ledger_of_ash_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\music\\outro\\mus_20260614_outro_last_frame_v2.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_night_window.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_road_rumble_1920s.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_tension_drone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_highway_traffic.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_office_hum.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_courtroom_room_tone.mp3\" -stream_loop -1 -i \"H:\\pd-media\\library\\ambience\\amb_light_wind.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_long.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_low_boom.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_2s.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_page_turn.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_tick_v2_hi.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_blip_v2_lo.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_medium.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_tick_v2_lo.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_sub_drop.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_stamp_seal.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_riser_v2_3s.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_data_blip.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_data_blip.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_tick_v2_hi.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_v2_long.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_impact_v2_tight.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_paper_rustle.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_blip_v2_lo.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_ui_tick.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_soft_impact.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_gavel_knock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_tick_v2_hi.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_tick_v2_lo.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_binder_lock.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_boom_v2_deep.mp3\" -i \"H:\\pd-media\\library\\sfx\\sfx_whoosh_short.mp3\" -filter_complex \"[0:a]aresample=48000,volume=1.0,apad,atrim=0:662.889,asetpts=PTS-STARTPTS,asplit=2[vo][key];[1:a]atrim=0:14.220,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=13.520:d=0.7,adelay=0|0[m0];[2:a]atrim=0:23.931,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=23.231:d=0.7,adelay=14220|14220[m1];[3:a]atrim=0:161.619,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=160.919:d=0.7,adelay=38151|38151[m2];[4:a]atrim=0:142.891,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=142.191:d=0.7,adelay=199770|199770[m3];[5:a]atrim=0:180.000,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=179.300:d=0.7,adelay=342661|342661[m4];[6:a]atrim=0:114.797,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=114.097:d=0.7,adelay=522661|522661[m5];[7:a]atrim=0:25.431,asetpts=PTS-STARTPTS,volume=0.22,afade=t=in:st=0:d=0.5,afade=t=out:st=24.731:d=0.7,adelay=637458|637458[m6];[m0][m1][m2][m3][m4][m5][m6]amix=inputs=7:normalize=0:dropout_transition=0[musraw];[musraw][key]sidechaincompress=threshold=0.03:ratio=8:attack=25:release=320[musd];[8:a]atrim=0:14.220,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=13.620:d=0.6,adelay=0|0[a0];[9:a]atrim=0:23.931,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=23.331:d=0.6,adelay=14220|14220[a1];[10:a]atrim=0:161.619,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=161.019:d=0.6,adelay=38151|38151[a2];[11:a]atrim=0:142.891,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=142.291:d=0.6,adelay=199770|199770[a3];[12:a]atrim=0:180.000,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=179.400:d=0.6,adelay=342661|342661[a4];[13:a]atrim=0:114.797,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=114.197:d=0.6,adelay=522661|522661[a5];[14:a]atrim=0:25.431,asetpts=PTS-STARTPTS,volume=0.12589,afade=t=in:st=0:d=0.6,afade=t=out:st=24.831:d=0.6,adelay=637458|637458[a6];[a0][a1][a2][a3][a4][a5][a6]amix=inputs=7:normalize=0:dropout_transition=0[ambraw];[ambraw]volume=eval=frame:volume='1+0.600*between(t,62.383,65.183)+0.600*between(t,114.457,117.257)+0.600*between(t,299.955,302.755)+0.600*between(t,311.738,314.538)+0.600*between(t,335.865,338.665)+0.600*between(t,350.425,353.225)+0.600*between(t,361.228,364.028)+0.600*between(t,398.133,400.933)+0.600*between(t,446.626,449.426)+0.600*between(t,467.113,469.913)+0.600*between(t,488.653,491.453)+0.600*between(t,498.271,501.071)+0.600*between(t,575.593,578.393)+0.600*between(t,593.815,596.615)+0.600*between(t,598.813,601.613)'[ambd];[15:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=970|970[s0];[16:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.22,adelay=5171|5171[s1];[17:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.2,adelay=7110|7110[s2];[18:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=14220|14220[s3];[19:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=38151|38151[s4];[20:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.18,adelay=53722|53722[s5];[21:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=54385|54385[s6];[22:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=75608|75608[s7];[23:a]atrim=0:0.400,asetpts=PTS-STARTPTS,volume=0.12,adelay=76286|76286[s8];[24:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=76964|76964[s9];[25:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=128107|128107[s10];[26:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.18,adelay=128789|128789[s11];[27:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=137661|137661[s12];[28:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=163829|163829[s13];[29:a]atrim=0:1.400,asetpts=PTS-STARTPTS,volume=0.2,adelay=187006|187006[s14];[30:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=199770|199770[s15];[31:a]atrim=0:0.900,asetpts=PTS-STARTPTS,volume=0.2,adelay=201102|201102[s16];[32:a]atrim=0:2.000,asetpts=PTS-STARTPTS,volume=0.2,adelay=211756|211756[s17];[33:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=226429|226429[s18];[34:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=253422|253422[s19];[35:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=274059|274059[s20];[36:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=299308|299308[s21];[37:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=342661|342661[s22];[38:a]atrim=0:1.200,asetpts=PTS-STARTPTS,volume=0.18,adelay=343336|343336[s23];[39:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.12,adelay=369988|369988[s24];[40:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.16,adelay=370658|370658[s25];[41:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.14,adelay=371328|371328[s26];[42:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=382713|382713[s27];[43:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=408003|408003[s28];[44:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.18,adelay=433864|433864[s29];[45:a]atrim=0:1.000,asetpts=PTS-STARTPTS,volume=0.22,adelay=436551|436551[s30];[46:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=487966|487966[s31];[47:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=522661|522661[s32];[48:a]atrim=0:0.500,asetpts=PTS-STARTPTS,volume=0.12,adelay=523662|523662[s33];[49:a]atrim=0:0.700,asetpts=PTS-STARTPTS,volume=0.16,adelay=542946|542946[s34];[50:a]atrim=0:1.600,asetpts=PTS-STARTPTS,volume=0.22,adelay=634816|634816[s35];[51:a]atrim=0:0.800,asetpts=PTS-STARTPTS,volume=0.16,adelay=637458|637458[s36];[s0][s1][s2][s3][s4][s5][s6][s7][s8][s9][s10][s11][s12][s13][s14][s15][s16][s17][s18][s19][s20][s21][s22][s23][s24][s25][s26][s27][s28][s29][s30][s31][s32][s33][s34][s35][s36]amix=inputs=37:normalize=0:dropout_transition=0[sfxraw];[vo][musd][ambd][sfxraw]amix=inputs=4:weights=1 0.90 0.80 0.95:normalize=0:duration=first,atrim=0:662.889,loudnorm=I=-14:TP=-1.5:LRA=11:linear=true,alimiter=level_in=1:level_out=1:limit=0.95[aout]\" -map [aout] -t 662.889 -ar 48000 -ac 2 -c:a pcm_s16le \"H:\\pd-media\\episodes\\PD-2026-032-carsearch\\06_audio\\mix\\PD-2026-032-carsearch_film_audio_v001.wav\""
   },
   "library_root": "H:\\pd-media\\library",
   "provenance": {
     "script_md": "episodes\\PD-2026-032-carsearch\\03_script\\script.en.v001.md",
-    "script_md_sha256": "5f9cf1d50baf169191f6325c40f0c331da2c27e3fcaf02634462e36a76eccd47",
+    "script_md_sha256": "00334cbfccb4d3d54f804e42cef72c94cc9685de4d686283c29712758b99a4e5",
     "narration_index": "episodes\\PD-2026-032-carsearch\\06_audio\\narration_index.v001.json",
     "narration_index_sha256": "ea4df00949df223c97de18129f3568f4ddf57ef274adfff1fcef6ba8bfe372d7",
     "deterministic": true

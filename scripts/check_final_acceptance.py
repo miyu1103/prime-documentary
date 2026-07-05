@@ -154,27 +154,37 @@ BGM_END_MIN_BODY_DB = -45.0                      # if the last seconds are quiet
 BGM_END_TAIL_SILENCE_DB = -45.0                  # final 0.3s ~silent => resolved/faded cleanly
 BGM_END_MIN_DROP_DB = 10.0                       # OR final 0.3s >=10 dB below the body => resolving, not chopped
 # EP32 §B5 check_sound_layers: prove the 4-LAYER mix (VO + music + ambience + SFX) actually
-# reached the RENDER's audio track, not a lone music bed (the "音が薄い/孤児" failure). Measured
-# directly on the render with ffmpeg -- no dependency on any plan file (a plan can be orphaned).
-# Two independent dimensions, BOTH required (AND):
-#   (a) SFX-like transients: per-50ms RMS windows on a >500Hz signal; an onset = a local rise of
-#       >= SOUND_TRANSIENT_RISE_DB above the trailing-window median. A bare music bed is smooth
-#       (few onsets); a real mix (VO word onsets + SFX hits) is dense. Calibrated 2026-07-06 on
-#       real 4-layer finals: unlock=52/min, miranda=62/min -> floor 12/min leaves large margin.
-#   (b) Ambience band energy: mean level in a 40-160Hz band must exceed a floor, i.e. a sustained
-#       low-frequency bed exists. Real finals measured -21.9 dB; an empty band sits near -70..-90.
-# Honest limit (documented, not hidden): speech alone also creates onsets, so this proves the mix
-# is NOT a bare/near-empty single bed; it cannot by itself prove a *distinct* SFX layer. It is a
-# HARD floor against the observed failure (orphaned sound plan -> music-only render), not a full
-# 4-layer attribution. Thresholds are conservative to avoid false-flagging a normal mix.
+# reached the RENDER's audio track, not a lone music bed (the "音が薄い/孤児" failure). TWO parts,
+# BOTH required (AND):
+#   PART 1 -- acoustic floors measured directly on the render with ffmpeg (no plan dependency):
+#     (a) SFX-like transients: per-50ms RMS windows on a >500Hz signal; an onset = a local rise of
+#         >= SOUND_TRANSIENT_RISE_DB above the trailing-window median. A bare music bed is smooth
+#         (few onsets); a real mix (VO word onsets + SFX hits) is dense.
+#     (b) Ambience band energy: mean level in a 40-160Hz band must exceed a floor, i.e. a sustained
+#         low-frequency bed exists; an empty band sits near -70..-90 dB.
+#   PART 2 -- BINDING to the built mix (EP32 §B5(b), see _sound_mix_binding): load the highest-rev
+#     06_audio/audio_provenance.v*.json, require its density_gate to pass with real SFX + distinct
+#     beds, and assert the RENDER carries a container tag `audio_mix_sha256` equal to the provenance
+#     mix sha (the mux stage stamps it). No tag => the mux stage was never run => the sound is
+#     orphaned => FAIL. Fail-closed on missing provenance / mix sha.
+# EP32 §B5(a) recalibration (2026-07-06): the OLD floors (onset 12/min, ambience -45 dB) sat far
+# below real finals, so a THIN VO+music render still cleared them. Raised toward the OBSERVED real
+# 4-layer mixes -- unlock=52/min, miranda=62/min & ambience -21.9 dB -- so a thin VO+music mix now
+# fails while a genuine rich mix keeps margin (35/min < 52-62/min; -33 dB < -21.9 dB). Strictly
+# higher floors = stricter (invariant 15). Honest limit (documented, not hidden): speech alone also
+# creates onsets, so PART 1 proves the mix is NOT a bare single bed but cannot by itself attribute a
+# *distinct* SFX layer -- PART 2's provenance binding is what proves the built 4-layer mix reached
+# the render.
 SOUND_WINDOW_SAMPLES = 2400                       # 2400 samples @48kHz = 50ms RMS analysis window
 SOUND_TRANSIENT_RISE_DB = 9.0                     # a window this far above the local median = an onset
 SOUND_TRANSIENT_FLOOR_DB = -45.0                  # onset must also be above this absolute level (ignore noise floor)
 SOUND_TRANSIENT_BASELINE_WIN = 10                 # trailing windows (10 * 50ms = 500ms) for the local median
 SOUND_TRANSIENT_DEBOUNCE_WIN = 3                  # >=150ms between counted onsets (debounce)
-SOUND_MIN_TRANSIENTS_PER_MIN = 12.0              # body onset density floor (real mixes 52-62/min)
+SOUND_MIN_TRANSIENTS_PER_MIN = 35.0              # body onset density floor, raised 12->35 (real mixes 52-62/min; thin VO+music fails)
 SOUND_AMBIENCE_HP, SOUND_AMBIENCE_LP = 40, 160    # ambience band-pass (Hz)
-SOUND_AMBIENCE_MIN_DB = -45.0                     # ambience-band mean level floor (real finals ~ -21.9 dB)
+SOUND_AMBIENCE_MIN_DB = -33.0                     # ambience-band mean floor, raised -45->-33 dB (real finals ~ -21.9 dB; thin mix fails)
+SOUND_PROV_MIN_SFX = 20                           # EP32 §B5(b): audio_provenance density_gate.sfx_count floor
+SOUND_PROV_MIN_BEDS = 4                           # EP32 §B5(b): audio_provenance distinct ambience beds floor
 MIN_VIDEO_W, MIN_VIDEO_H = 1920, 1080
 THUMB_W, THUMB_H = 1280, 720
 MIN_THUMB_VARIANTS = 3
@@ -615,14 +625,28 @@ def check_low_motion(path: Path, dur: float, epdir: Path) -> dict:
             ["ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
              "-vf", f"freezedetect=n={LOW_MOTION_NOISE_DB}dB:d={LOW_MOTION_MIN_SPAN_S}",
              "-map", "0:v", "-an", "-f", "null", os.devnull],
-            capture_output=True, text=True, timeout=1800)
+            capture_output=True, text=True, check=True, timeout=1800)
     except Exception as exc:  # noqa: BLE001
         # EP32 §B1 FAIL-CLOSED: an undecodable render must FAIL the animation floor, never pass.
+        # `check=True` (added to match check_freeze/check_black) turns a NON-ZERO ffmpeg exit -- a
+        # decodable-but-broken render whose freezedetect run aborts -- into an exception, so this
+        # branch fires instead of silently reading an empty span list as "fully animated".
         return {"check": "animation_density", "ok": False, "hard": True,
                 "reason": f"freezedetect could not run ({exc}); treat as FAIL, not a silent pass"}
     starts = [float(x) for x in re.findall(r"freeze_start:\s*([0-9.]+)", out.stderr)]
     lens = [float(x) for x in re.findall(r"freeze_duration:\s*([0-9.]+)", out.stderr)]
     spans = list(zip(starts, lens))
+    # EP32 §B1 belt-and-suspenders: at this SENSITIVE noise floor (-38 dB) over a multi-minute
+    # render, real content ALWAYS registers SOME near-still spans (held beats, slow Ken Burns,
+    # title cards; calibration: MotionSample 5.5%, slideshow 14.4% -- both non-zero). ZERO freeze
+    # output on a file that ffprobe independently reports as having real content (dur > 1s) means
+    # freezedetect exited 0 but never saw decodable frames -> the measurement is UNMEASURABLE, not
+    # "perfectly animated". Fail-closed rather than award a silent pass.
+    if not starts and not lens and dur and dur > 1.0:
+        return {"check": "animation_density", "ok": False, "hard": True,
+                "reason": f"freezedetect produced no spans/starts on a {dur:.0f}s render that ffprobe "
+                          f"reports as having content -> unmeasurable animation density; "
+                          f"treat as FAIL, not a silent pass"}
     # body = [0, op_lo] (hook) + [op_hi, ed_lo] (acts); OP title + ED outro excluded.
     slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
     fdata = ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
@@ -714,7 +738,17 @@ def check_motion_energy(path: Path, dur: float, epdir: Path) -> dict:
     # the mean. Then compute the WITHIN-SHOT body stats + PER-SEGMENT floor.
     cut_times = mme.cut_times_from_film(fd) or mme.detect_spike_times(y, fps)
     ws_vals = mme.within_shot_values(y, fps, body_regions, cut_times)
-    st = mme.stats(ws_vals) or mme.stats(y)     # fall back to full if the within-shot window is empty
+    # EP32 §M1: an EMPTY within-shot window means every body frame was masked as a cut -- a
+    # pathological hyper-cut that hides the whole body behind cut-difference spikes. The OLD code
+    # fell back to stats over the full, spike-INFLATED series and could PASS on that inflation.
+    # Fail-closed instead: we cannot verify SUSTAINED motion, so never re-inflate from the unmasked
+    # series. Strictly stricter than the former fallback (invariant 15).
+    if not ws_vals:
+        return {"check": "motion_energy", "ok": False, "hard": True,
+                "reason": "within-shot window empty -- cannot verify sustained motion "
+                          "(pathological hyper-cut masks the whole body); treat as FAIL, not a "
+                          "re-inflated pass from the unmasked series"}
+    st = mme.stats(ws_vals)
     mean, p10, p50 = st["mean"], st["p10"], st["p50"]
     segs = mme.segment_means(y, fps, body_regions, cut_times)
     fail_segs = [s for s in segs if s["mean"] < MOTION_ENERGY_SEGMENT_MEAN_MIN]
@@ -901,11 +935,83 @@ def _count_onsets(vals: list[float]) -> int:
     return cnt
 
 
-def check_sound_layers(path: Path, dur: float) -> dict:
-    """HARD (EP32 §B5): inspect the FINAL RENDER's audio directly and prove it carries a real
-    multi-layer mix, not a lone music bed. Depends on NO external plan file (a sound plan can be
-    orphaned and never muxed). Requires BOTH: (a) SFX/VO-onset density over the body and (b)
-    ambience-band energy. See the SOUND_* constants for the calibration + honest limits."""
+def _norm_sha(s) -> str:
+    """Normalize a sha for comparison: strip an optional 'sha256:' prefix, lowercase, trim."""
+    return re.sub(r"^sha256:", "", str(s).strip().lower())
+
+
+def _ffprobe_tag(path: Path, tag: str) -> str | None:
+    """Read a container metadata tag (format-level, then any stream-level) via ffprobe, or None."""
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries",
+             f"format_tags={tag}:stream_tags={tag}", "-of", "json", str(path)],
+            capture_output=True, text=True, check=True)
+        d = json.loads(out.stdout)
+    except Exception:  # noqa: BLE001
+        return None
+    fmt = (d.get("format") or {}).get("tags") or {}
+    if tag in fmt and str(fmt[tag]).strip():
+        return str(fmt[tag]).strip()
+    for st in d.get("streams") or []:
+        t = st.get("tags") or {}
+        if tag in t and str(t[tag]).strip():
+            return str(t[tag]).strip()
+    return None
+
+
+def _sound_mix_binding(epdir: Path, path: Path) -> tuple[list[str], dict]:
+    """HARD (EP32 §B5(b)): BIND the render's audio to the BUILT 4-layer mix so an orphaned sound
+    plan (mixed but never muxed into the video) cannot pass. Returns (problems, info); any missing
+    provenance / mix sha / density-gate / container tag is a fail-closed problem. Reads the
+    highest-rev 06_audio/audio_provenance.v*.json and compares its mix sha to a container tag
+    `audio_mix_sha256` that the mux stage (build_case_film_mux.py) stamps onto the render."""
+    problems: list[str] = []
+    info: dict = {}
+    provs = sorted((epdir / "06_audio").glob("audio_provenance.v*.json"))
+    if not provs:
+        problems.append("no 06_audio/audio_provenance.v*.json -- the 4-layer mix was never "
+                        "built/registered (build_case_film_audio.py not run); render audio unverifiable")
+        return problems, info
+    prov = _load(provs[-1]) or {}
+    info["provenance"] = provs[-1].name
+    # (i) the mix WAV must actually have been rendered and carry a sha to bind against
+    prov_sha = (prov.get("mux") or {}).get("audio_source_sha256") or (prov.get("mix") or {}).get("sha256")
+    info["provenance_mix_sha"] = prov_sha
+    if not prov_sha:
+        problems.append(f"{provs[-1].name} has no mux.audio_source_sha256 / mix.sha256 -- the mix WAV "
+                        f"was not actually rendered (ran_ffmpeg false); cannot bind the render's audio")
+    # (ii) the mix's own density gate must pass with real SFX + distinct ambience beds
+    dg = prov.get("density_gate") or {}
+    if dg.get("pass") is not True:
+        problems.append(f"audio_provenance density_gate.pass != true ({dg.get('pass')})")
+    sfx_count = dg.get("sfx_count")
+    if not isinstance(sfx_count, (int, float)) or sfx_count < SOUND_PROV_MIN_SFX:
+        problems.append(f"audio_provenance density_gate.sfx_count {sfx_count} < {SOUND_PROV_MIN_SFX}")
+    distinct_beds = dg.get("ambience_distinct_beds")
+    if distinct_beds is None:
+        distinct_beds = ((prov.get("layers") or {}).get("ambience") or {}).get("distinct_beds")
+    if not isinstance(distinct_beds, (int, float)) or distinct_beds < SOUND_PROV_MIN_BEDS:
+        problems.append(f"audio_provenance distinct ambience beds {distinct_beds} < {SOUND_PROV_MIN_BEDS}")
+    # (iii) the RENDER must actually carry THIS mix: a container tag written by the mux stage
+    tag = _ffprobe_tag(path, "audio_mix_sha256")
+    info["render_audio_mix_tag"] = tag
+    if tag is None:
+        problems.append("render carries no 'audio_mix_sha256' container tag -- the mux stage "
+                        "(build_case_film_mux.py) was NOT run, so the render's audio is not bound to "
+                        "the built 4-layer mix (the orphaned-sound-plan failure)")
+    elif prov_sha and _norm_sha(tag) != _norm_sha(prov_sha):
+        problems.append(f"render audio_mix_sha256 tag {_norm_sha(tag)[:16]}.. != provenance mix sha "
+                        f"{_norm_sha(prov_sha)[:16]}.. -- render carries a DIFFERENT/stale audio mix")
+    return problems, info
+
+
+def check_sound_layers(path: Path, dur: float, epdir: Path) -> dict:
+    """HARD (EP32 §B5): prove the FINAL RENDER carries the real 4-layer mix (VO + music + ambience
+    + SFX), not a lone music bed (the "音が薄い/孤児" failure). TWO parts, BOTH required (AND):
+    PART 1 measures the render's audio directly (onset density + ambience-band energy). PART 2
+    (_sound_mix_binding) binds the render to the BUILT mix via 06_audio/audio_provenance so an
+    orphaned/never-muxed sound plan cannot pass. See the SOUND_* constants for calibration."""
     if not dur:
         return {"check": "sound_layers", "ok": False, "hard": True, "reason": "no duration to analyze"}
     body_hi = max(1.0, dur - BOOKEND_ED_SEC)      # analyze hook+body; drop only the calm endcard tail
@@ -926,19 +1032,25 @@ def check_sound_layers(path: Path, dur: float) -> dict:
     problems = []
     if per_min < SOUND_MIN_TRANSIENTS_PER_MIN:
         problems.append(f"onset density {per_min:.1f}/min < {SOUND_MIN_TRANSIENTS_PER_MIN:.0f} "
-                        f"(smooth -> looks like a lone music bed, no VO/SFX transients)")
+                        f"(smooth -> looks like a lone music bed / thin VO+music, no dense VO/SFX transients)")
     if amb is None or amb < SOUND_AMBIENCE_MIN_DB:
         problems.append(f"ambience band {SOUND_AMBIENCE_HP}-{SOUND_AMBIENCE_LP}Hz "
                         f"{('%.1f dB' % amb) if amb is not None else 'unmeasurable'} "
                         f"< {SOUND_AMBIENCE_MIN_DB:.0f} dB (no sustained bed)")
+    # PART 2 -- bind to the built mix (fail-closed on missing provenance / tag / density gate).
+    bind_problems, bind_info = _sound_mix_binding(epdir, path)
+    problems.extend(bind_problems)
     ok = not problems
     return {"check": "sound_layers", "ok": ok, "hard": True,
             "onsets_per_min": round(per_min, 1),
             "ambience_db": round(amb, 1) if amb is not None else None,
-            "reason": (f"multi-layer mix present: {per_min:.1f} onsets/min "
+            "provenance": bind_info.get("provenance"),
+            "render_audio_mix_tag": bind_info.get("render_audio_mix_tag"),
+            "reason": (f"4-layer mix present & bound: {per_min:.1f} onsets/min "
                        f"(floor {SOUND_MIN_TRANSIENTS_PER_MIN:.0f}), ambience {amb:.1f} dB "
-                       f"(floor {SOUND_AMBIENCE_MIN_DB:.0f})" if ok
-                       else "render audio looks like a single music bed: " + "; ".join(problems))}
+                       f"(floor {SOUND_AMBIENCE_MIN_DB:.0f}); audio bound to {bind_info.get('provenance')} "
+                       f"via audio_mix_sha256 tag" if ok
+                       else "render audio not a verified 4-layer mix: " + "; ".join(problems))}
 
 
 def _mean_volume_af(path: Path, start: float, dur: float, af: str) -> float | None:
@@ -951,20 +1063,98 @@ def _mean_volume_af(path: Path, start: float, dur: float, af: str) -> float | No
     return float(m.group(1)) if m else None
 
 
-def check_probe_receipt(epdir: Path) -> dict:
+def _film_path(epdir: Path) -> Path:
+    """Path to the episode's render input <slug>_film.json (may not exist)."""
+    slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
+    return ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
+
+
+def _current_film_sha(epdir: Path) -> str | None:
+    """sha256 of the current <slug>_film.json render input, or None if it does not exist."""
+    fp = _film_path(epdir)
+    try:
+        return _sha256(fp) if fp.is_file() else None
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def _iso_to_epoch(s) -> float | None:
+    """Parse an ISO-8601 timestamp to epoch seconds, or None."""
+    if not s:
+        return None
+    try:
+        from datetime import datetime
+        return datetime.fromisoformat(str(s).replace("Z", "+00:00")).timestamp()
+    except Exception:  # noqa: BLE001
+        return None
+
+
+def check_preflight_receipt(epdir: Path) -> dict:
+    """HARD (EP32 §M5): a GREEN pre-render preflight receipt must exist -- acceptance must REFUSE a
+    render that was never preflighted. Reads the highest-rev 04_scenes/preflight_receipt.v*.json and
+    requires overall pass (render_allowed == true AND verdict == 'GREEN'), i.e. the motion budget /
+    asset existence / coverage floors were validated BEFORE the heavy render."""
+    recs = sorted((epdir / "04_scenes").glob("preflight_receipt.v*.json"))
+    if not recs:
+        return {"check": "preflight_receipt", "ok": False, "hard": True,
+                "reason": "no 04_scenes/preflight_receipt.v*.json -- run preflight_render_gate.py "
+                          "BEFORE rendering; a render that never passed preflight is not acceptable"}
+    d = _load(recs[-1]) or {}
+    allowed = d.get("render_allowed") is True
+    verdict = str(d.get("verdict", "")).upper()
+    ok = allowed and verdict == "GREEN"
+    return {"check": "preflight_receipt", "ok": ok, "hard": True,
+            "reason": (f"{recs[-1].name} verdict={verdict} render_allowed={allowed}"
+                       if ok else f"{recs[-1].name} preflight NOT green "
+                       f"(verdict={verdict or 'none'} render_allowed={allowed}) -- fix the preflight "
+                       f"BLOCK and re-run preflight_render_gate.py before acceptance")}
+
+
+def check_probe_receipt(epdir: Path, render_started_at: float | None = None,
+                        cur_film_sha: str | None = None) -> dict:
     """HARD (EP32 §M6): a 60-90s PROBE receipt (motion_energy + black + freeze on a slice) must
-    exist and have PASSED, so the operator cannot skip the pre-flight probe from memory. Produce
-    it with `--probe <slice.mp4>` before the full acceptance run."""
+    exist, have PASSED, and be BOUND to THIS render -- so the operator cannot skip the pre-flight
+    probe from memory AND a stale probe from an EARLIER render cannot satisfy the gate. Binding
+    (either signal proves freshness): the probe receipt's recorded film_sha256 equals the current
+    <slug>_film.json sha, OR (fallback) its generated_at is at/after --render-started-at. If neither
+    can be shown, FAIL (cannot prove the probe belongs to this render). Produce it with
+    `--probe <slice.mp4>` before the full acceptance run."""
     recs = sorted((epdir / "09_package").glob("probe_receipt.v*.json"))
     if not recs:
         return {"check": "probe_receipt", "ok": False, "hard": True,
                 "reason": "no 09_package/probe_receipt.v*.json -- run "
                           "`check_final_acceptance.py <ep> --probe <slice.mp4>` on a 60-90s slice first"}
     d = _load(recs[-1]) or {}
-    ok = d.get("status") == "PASS"
+    problems: list[str] = []
+    if d.get("status") != "PASS":
+        problems.append(f"status={d.get('status')} (probe did not pass)")
+    # Binding: prove this probe corresponds to THIS render, not a stale earlier one.
+    rec_film = d.get("film_sha256")
+    bound_by = None
+    if cur_film_sha and rec_film:
+        if _norm_sha(rec_film) == _norm_sha(cur_film_sha):
+            bound_by = "film_sha256"
+        else:
+            problems.append(f"probe film_sha256 {_norm_sha(rec_film)[:16]}.. != current film.json "
+                            f"{_norm_sha(cur_film_sha)[:16]}.. (stale probe from an earlier render)")
+    if bound_by is None and render_started_at is not None:
+        ts = _iso_to_epoch(d.get("generated_at"))
+        if ts is not None and ts >= render_started_at:
+            bound_by = "generated_at>=render_start"
+        else:
+            problems.append(f"probe generated_at {d.get('generated_at')} predates --render-started-at "
+                            f"{render_started_at:.0f} (stale probe, not this render)")
+    if bound_by is None and not problems:
+        # Passed + present, but nothing proves it belongs to THIS render -> fail-closed (the stale
+        # probe hole). Re-run --probe on the current render's slice (stamps film_sha256) or supply
+        # --render-started-at.
+        problems.append("cannot bind probe to this render: receipt has no film_sha256 and no "
+                        "--render-started-at supplied -- re-run --probe on the current render's slice")
+    ok = not problems
     return {"check": "probe_receipt", "ok": ok, "hard": True,
-            "reason": (f"{recs[-1].name} status={d.get('status')} "
-                       f"(motion/black/freeze on {d.get('slice_seconds', '?')}s slice)")}
+            "reason": (f"{recs[-1].name} status=PASS bound_by={bound_by} "
+                       f"(motion/black/freeze on {d.get('slice_seconds', '?')}s slice)"
+                       if ok else f"{recs[-1].name}: " + "; ".join(problems))}
 
 
 def run_probe(epdir: Path, slice_path: Path) -> int:
@@ -987,6 +1177,9 @@ def run_probe(epdir: Path, slice_path: Path) -> int:
         "schema_version": "1.0.0", "episode_id": epdir.name, "gate": "check_final_acceptance.probe",
         "status": status, "slice_path": str(slice_path), "slice_seconds": round(sdur, 2),
         "slice_sha256": _sha256(slice_path),
+        # EP32 §M6: bind this probe to the render's plan so a stale probe from an EARLIER render
+        # cannot satisfy check_probe_receipt -- record the current <slug>_film.json sha.
+        "film_sha256": _current_film_sha(epdir),
         "results": {r["check"]: {"ok": r["ok"], "reason": r["reason"]} for r in results},
         "generated_at": datetime.now(timezone.utc).isoformat(),
     }
@@ -1188,11 +1381,11 @@ def main() -> int:
             results.append(check_low_motion(render, render_dur, epdir))
             results.append(check_motion_energy(render, render_dur, epdir))
             results.append(check_bgm(render))
-            results.append(check_sound_layers(render, render_dur))
+            results.append(check_sound_layers(render, render_dur, epdir))
             results.append(check_bgm_ending(render, render_dur))
             results.append(check_hook(epdir, render_dur))
             results.append(check_loudness(render))
-            results.append(check_probe_receipt(epdir))
+            results.append(check_probe_receipt(epdir, args.render_started_at, _current_film_sha(epdir)))
         except Exception as exc:  # noqa: BLE001
             results.append({"check": "render_probe", "ok": False, "hard": True,
                             "reason": f"could not probe render {render}: {exc}"})
@@ -1209,6 +1402,7 @@ def main() -> int:
     results.append(check_structure(epdir))
     results.append(check_bookends(epdir))
     results.append(check_leveled_animation(epdir))
+    results.append(check_preflight_receipt(epdir))
     results.append(check_thumbnail(epdir))
     results.append(check_thumbnail_visibility(epdir))
     results.append(check_image_resolution(epdir))
