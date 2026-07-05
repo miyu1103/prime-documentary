@@ -71,8 +71,9 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: numbe
   // actually travels — normalizing against useVideoConfig().durationInFrames (the full
   // 20k-frame film) made p≈0 => footage read as near-still after the entrance settled.
   const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
-  const s = interpolate(p, [0, 1], [1.05, 1.16]);
-  const x = interpolate(p, [0, 1], [-26 * dir, 26 * dir]);
+  const s = interpolate(p, [0, 1], [1.05, 1.24]);
+  const x = interpolate(p, [0, 1], [-42 * dir, 42 * dir]);
+  const y = interpolate(p, [0, 1], [10 * dir, -10 * dir]);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
       <OffthreadVideo
@@ -83,7 +84,7 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: numbe
           width: '100%',
           height: '100%',
           objectFit: 'cover',
-          transform: `translateX(${x}px) scale(${s})`,
+          transform: `translate(${x}px, ${y}px) scale(${s})`,
           filter: 'brightness(0.8) contrast(1.12) saturate(0.7)',
         }}
       />
@@ -577,7 +578,7 @@ export const CaseFilm: React.FC<{data: FilmData; seriesLabel: string; title: str
         />
         {/* leveled-up animation (other-thread AmbientMotion): drifting bokeh + orbiting glows
             composited over the body so no frame is ever static — the "紙芝居" killer. */}
-        <AmbientMotion count={14} intensity={0.9} />
+        <AmbientMotion count={22} intensity={1.15} />
         <GraphicsBeats beats={data.graphics} />
         <Captions cues={data.captions} />
         <Grain opacity={0.11} />

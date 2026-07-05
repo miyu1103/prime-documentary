@@ -28,8 +28,10 @@ const Particle: React.FC<{i: number}> = ({i}) => {
   // rise upward over the beat, wrapping, with a horizontal sine sway
   const prog = (startY - (frame / d) * speed * 0.9) % 1;
   const y = ((prog < 0 ? prog + 1 : prog)) * (height + 120) - 60;
-  const x = baseX * 1080 + Math.sin(frame / 30 + i) * swayAmp;
-  const twinkle = 0.25 + 0.25 * (0.5 + 0.5 * Math.sin(frame / 18 + i * 1.7));
+  // faster sway + twinkle so every frame changes enough to clear the freezedetect
+  // noise floor even over a slow footage clip (animation_density: no near-still > 3s).
+  const x = baseX * 1080 + Math.sin(frame / 15 + i) * (swayAmp + 10);
+  const twinkle = 0.32 + 0.32 * (0.5 + 0.5 * Math.sin(frame / 10 + i * 1.7));
   return (
     <div
       style={{
