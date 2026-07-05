@@ -43,7 +43,15 @@ def main() -> int:
         out = THUMB / f"thumbnail_{k}.png"
         subprocess.run(["npx", "remotion", "still", comp, str(out)],
                        cwd=str(ROOT / "remotion"), check=True, shell=True)
-        print("rendered", out.name)
+        # noir Codex backgrounds render dark; lift brightness/contrast so the thumbnail
+        # clears the visibility gate (mean luma >= 33, std >= 40 = punchy/high-CTR at 320px).
+        from PIL import Image, ImageEnhance
+        im = Image.open(out).convert("RGB")
+        im = ImageEnhance.Brightness(im).enhance(1.55)
+        im = ImageEnhance.Contrast(im).enhance(1.22)
+        im = ImageEnhance.Color(im).enhance(1.12)
+        im.save(out)
+        print("rendered+graded", out.name)
     shutil.copy2(THUMB / f"thumbnail_{args.select}.png", PKG / "thumbnail.selected.png")
     print(f"selected {args.select} -> 09_package/thumbnail.selected.png")
     print("now: check_final_acceptance.py 29 --render <final.mp4> --emit-receipt  (expect GREEN)")

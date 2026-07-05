@@ -2,12 +2,10 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-029-hinton",
   "gate": "check_final_acceptance",
-  "status": "FAIL",
+  "status": "PASS",
   "video_path": "remotion\\out\\hinton_final.v001.bgm.mp4",
   "video_sha256": "sha256:f2af5460bc2197688febb9e7dd9dcc9a52a11d3c4ba41852b8990b5f1ece1247",
-  "hard_failures": [
-    "thumbnail_ready"
-  ],
+  "hard_failures": [],
   "checks": {
     "runtime_band": true,
     "render_resolution": true,
@@ -25,11 +23,11 @@
     "structure_4part": true,
     "op_ed_bookends": true,
     "leveled_animation": true,
-    "thumbnail_ready": false,
+    "thumbnail_ready": true,
     "thumbnail_visibility": true,
     "image_resolution": true,
     "factory_used": true,
     "footage_diversity": true
   },
-  "generated_at": "2026-07-05T05:07:20.773422+00:00"
+  "generated_at": "2026-07-05T09:06:43.790912+00:00"
 }
