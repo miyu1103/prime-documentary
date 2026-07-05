@@ -39,11 +39,30 @@ export type FigureSpec =
   | {start: number; end: number; kind: 'votetally'; majority: number; dissent: number; label?: string}
   | {start: number; end: number; kind: 'quote'; quote: string; attribution: string};
 
-/** SceneBed — a DESIGNED scene bed behind every figure so it never reads as text floating on flat
- * black. Layers a deep-navy radial ground + two large soft glows that slowly drift (deterministic,
- * frame-driven) + a faint vignette. All extra light is `screen`-blended (it only ADDS light, so it
- * can never wash out or lower contrast on the figure), and the vignette darkens the EDGES only,
- * seating the central figure. The figure itself renders on top (inside <Drift>) and is untouched. */
+/** SceneBed — the DESIGNED scene bed behind every figure.
+ *
+ * CRITICAL (freezedetect fix): this bed is NO LONGER an opaque fill. In CaseFilm the Body renders
+ * the photo/footage cuts CONTINUOUSLY underneath FigureBeats (Ken-Burns pan/zoom + depth parallax +
+ * footage — those cut frames already PASS freezedetect). The old opaque navy ground hid that moving
+ * cut, so during a figure the whole frame was static except the small central diagram → the freeze
+ * detector flagged ~7s figure stretches as near-still no matter how much the figure itself drifted.
+ *
+ * The fix: the DOMINANT background is now the moving cut, seen through a SEMI-TRANSPARENT dark scrim.
+ * A large peripheral portion of every frame therefore keeps changing (the cut moves), so per-frame
+ * pixel difference over a big area stays well above the freeze noise floor across the whole hold.
+ * Legibility is preserved by a STRONGER LOCAL panel behind the figure's text/number region only.
+ *
+ * Layer order (bottom→top), all deterministic / frame-driven / eased:
+ *  1. Base scrim: semi-transparent dark, alpha ~0.46–0.55 → ~45–54% of the moving cut shows through
+ *     across the whole frame (the reliable carrier of full-frame motion). A `backdropFilter` blur is
+ *     ALSO applied so the underlying cut reads as a soft moving bokeh field — but the semi-transparent
+ *     gradient alone already carries the motion, so we never depend on backdrop-filter rendering.
+ *  2. Local center panel: a stronger dark radial (center only, fades to transparent by ~74% radius)
+ *     that seats the figure so its text/number stays crisp and high-contrast, while the periphery
+ *     keeps showing the moving cut. This is effectively an INVERSE vignette (dark center, clear edges).
+ *  3. Two large soft glows on slow lissajous drifts, `screen`-blended (additive light only — never
+ *     darkens the figure) — extra ambient motion + volume.
+ *  4. A FAINT corner vignette only (soft, low alpha) so it barely trims the moving cut at the edges. */
 const SceneBed: React.FC = () => {
   const f = useCurrentFrame();
   const {durationInFrames: d} = useVideoConfig();
@@ -55,11 +74,30 @@ const SceneBed: React.FC = () => {
   const g2y = 64 + 10 * Math.sin(p * Math.PI * 2 + 1.5);
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
-      {/* deep navy radial ground */}
+      {/* 1. SEMI-TRANSPARENT base scrim — the moving cut underneath shows through (~45–54% visible).
+             backdropFilter blurs that moving cut into a soft bokeh field; if the Remotion/Chromium
+             pipeline ignores backdrop-filter, the semi-transparent gradient below still carries the
+             full-frame motion, so the freeze fix does NOT rely on backdrop-filter alone. */}
       <AbsoluteFill
-        style={{background: `radial-gradient(125% 108% at 50% 40%, ${BRAND.color.navy} 0%, #071019 58%, #05070d 100%)`}}
+        style={{
+          pointerEvents: 'none',
+          backdropFilter: 'blur(9px)',
+          WebkitBackdropFilter: 'blur(9px)',
+          background:
+            'linear-gradient(180deg, rgba(5,8,14,0.55) 0%, rgba(6,12,20,0.46) 55%, rgba(4,6,11,0.52) 100%)',
+        } as React.CSSProperties}
       />
-      {/* large soft drifting glows (screen = additive light only, never darkens the figure) */}
+      {/* 2. LOCAL center panel — stronger dark radial behind the figure's text/number only, fading to
+             transparent by ~74% radius so the periphery keeps showing the moving cut. Seats the figure
+             (crisp, high-contrast) without turning the whole frame static. */}
+      <AbsoluteFill
+        style={{
+          pointerEvents: 'none',
+          background:
+            'radial-gradient(60% 64% at 50% 48%, rgba(3,5,10,0.74) 0%, rgba(3,5,10,0.5) 40%, transparent 74%)',
+        }}
+      />
+      {/* 3. large soft drifting glows (screen = additive light only, never darkens the figure) */}
       <AbsoluteFill
         style={{
           pointerEvents: 'none',
@@ -74,11 +112,11 @@ const SceneBed: React.FC = () => {
           background: `radial-gradient(48% 54% at ${g2x}% ${g2y}%, ${BRAND.color.navy}66 0%, transparent 72%)`,
         }}
       />
-      {/* faint vignette — darkens edges only, seats the central figure */}
+      {/* 4. faint corner vignette — soft & low-alpha so it barely trims the moving cut at the edges */}
       <AbsoluteFill
         style={{
           pointerEvents: 'none',
-          background: `radial-gradient(120% 100% at 50% 46%, transparent 55%, #04060baa 100%)`,
+          background: `radial-gradient(122% 104% at 50% 46%, transparent 72%, #04060b47 100%)`,
         }}
       />
     </AbsoluteFill>

@@ -39,6 +39,8 @@ import cottonFilm from './data/cotton_film.json';
 import unlockFilm from './data/unlock_film.json';
 import forfeitureFilm from './data/forfeiture_film.json';
 import hintonFilm from './data/hinton_film.json';
+import carsearchFilm from './data/carsearch_film.json';
+import {CarsearchThumbnail, CARSEARCH_THUMBS} from './compositions/CarsearchThumbnails';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
@@ -68,6 +70,11 @@ import {SHORT25} from './data/short25';
 import {SHORT26} from './data/short26';
 import {SHORT27} from './data/short27';
 import {SHORT23} from './data/short23';
+import {SHORT28} from './data/short28';
+import {SHORT29} from './data/short29';
+import {SHORT30} from './data/short30';
+import {SHORT31} from './data/short31';
+import {SHORT32} from './data/short32';
 import {SHORT01} from './data/short01';
 import {SHORT02} from './data/short02';
 import {SHORT03} from './data/short03';
@@ -193,6 +200,9 @@ export const RemotionRoot: React.FC = () => {
           backgroundSrc: 'shorts/short06/short06_thumb.png',
         }}
       />
+      <Still id="Thumb-carsearch-01" component={CarsearchThumbnail} width={1280} height={720} defaultProps={{concept: CARSEARCH_THUMBS[0]}} />
+      <Still id="Thumb-carsearch-02" component={CarsearchThumbnail} width={1280} height={720} defaultProps={{concept: CARSEARCH_THUMBS[1]}} />
+      <Still id="Thumb-carsearch-03" component={CarsearchThumbnail} width={1280} height={720} defaultProps={{concept: CARSEARCH_THUMBS[2]}} />
       <Composition
         id="Short-short07-yt"
         component={Short}
@@ -841,6 +851,187 @@ export const RemotionRoot: React.FC = () => {
         }}
       />
       <Composition
+        id="Short-short28-yt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT28, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT28, platform: 'yt' as const}}
+      />
+      <Composition
+        id="Short-short28-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT28, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT28, platform: 'tiktok' as const}}
+      />
+      <Still
+        id="ShortThumb-short28"
+        component={ShortThumb}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          data: SHORT28,
+          headline: 'THE HOUSE\nON TRIAL',
+          badge: '$40',
+          backgroundSrc: 'shorts/short28/short28_thumb.png',
+        }}
+      />
+      {/* ---- SHORT #29 Hinton (30 years, one bullet) ---- */}
+      <Composition
+        id="Short-short29-yt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT29, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT29, platform: 'yt' as const}}
+      />
+      <Composition
+        id="Short-short29-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT29, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT29, platform: 'tiktok' as const}}
+      />
+      <Still
+        id="ShortThumb-short29"
+        component={ShortThumb}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          data: SHORT29,
+          headline: 'INNOCENT —\n30 YEARS',
+          badge: '9–0',
+          backgroundSrc: 'shorts/short29/short29_thumb.png',
+        }}
+      />
+      <Still id="ShortThumb-short29-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT29, headline: 'A BULLET\nMATCHED NOTHING', badge: 'DEATH ROW', backgroundSrc: 'shorts/short29/short29_thumb.png'}} />
+      {/* ---- SHORT #30 Cotton (sure but wrong) ---- */}
+      <Composition
+        id="Short-short30-yt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT30, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT30, platform: 'yt' as const}}
+      />
+      <Composition
+        id="Short-short30-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT30, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT30, platform: 'tiktok' as const}}
+      />
+      <Still
+        id="ShortThumb-short30"
+        component={ShortThumb}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          data: SHORT30,
+          headline: 'SURE —\nBUT WRONG',
+          badge: 'DNA',
+          backgroundSrc: 'shorts/short30/short30_thumb.png',
+        }}
+      />
+      <Still id="ShortThumb-short30-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT30, headline: 'SHE CHOSE\nHIM TWICE', badge: 'WRONG MAN', backgroundSrc: 'shorts/short30/short30_thumb.png'}} />
+      {/* ---- SHORT #31 Unlock (thumb vs passcode) ---- */}
+      <Composition
+        id="Short-short31-yt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT31, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT31, platform: 'yt' as const}}
+      />
+      <Composition
+        id="Short-short31-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT31, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT31, platform: 'tiktok' as const}}
+      />
+      <Still
+        id="ShortThumb-short31"
+        component={ShortThumb}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          data: SHORT31,
+          headline: 'YOUR THUMB\nOR YOUR MIND?',
+          badge: '5TH AMEND.',
+          backgroundSrc: 'shorts/short31/short31_thumb.png',
+        }}
+      />
+      <Still id="ShortThumb-short31-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT31, headline: 'THEY CAN\nFORCE YOUR FACE', badge: 'PHONE', backgroundSrc: 'shorts/short31/short31_thumb.png'}} />
+      {/* ---- SHORT #32 Car search (Carroll 1925 / Collins 2018 curtilage) ---- */}
+      <Composition
+        id="Short-short32-yt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT32, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT32, platform: 'yt' as const}}
+      />
+      <Composition
+        id="Short-short32-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT32, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT32, platform: 'tiktok' as const}}
+      />
+      <Still
+        id="ShortThumb-short32"
+        component={ShortThumb}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          data: SHORT32,
+          headline: 'SEARCH YOUR CAR?\nNOT HERE',
+          badge: '8–1',
+          backgroundSrc: 'shorts/short32/short32_thumb.png',
+        }}
+      />
+      <Still id="ShortThumb-short32-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT32, headline: 'NO WARRANT\nNEEDED', badge: 'YOUR CAR', backgroundSrc: 'shorts/short32/short32_thumb.png'}} />
+      {/* Real DPT depth-map parallax on every still (motion3d slice-1 ported to shorts). EP32 ships depth. */}
+      <Composition
+        id="Short-short32-depth"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT32, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT32, platform: 'yt' as const, depth: true}}
+      />
+      <Composition
+        id="Short-short32-depth-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT32, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT32, platform: 'tiktok' as const, depth: true}}
+      />
+      <Composition
         id="Short-short01-yt"
         component={Short}
         durationInFrames={shortDurationInFrames(SHORT01, BRAND.video.fps)}
@@ -1209,6 +1400,20 @@ export const RemotionRoot: React.FC = () => {
           seriesLabel: 'THEY DID NOTHING WRONG',
           title: 'They Took the House',
           subtitle: 'Sourovelis v. City of Philadelphia (2018)',
+        }}
+      />
+      <Composition
+        id="CaseFilm-carsearch"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(carsearchFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: carsearchFilm as unknown as FilmData,
+          seriesLabel: 'KNOW YOUR RIGHTS',
+          title: 'Can the Police Search Your Car?',
+          subtitle: 'Carroll (1925) · Collins v. Virginia (2018)',
         }}
       />
       <Composition

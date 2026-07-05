@@ -328,11 +328,14 @@ def build_figures(plan_path: Path, windows: dict) -> tuple:
             groups[sid] = []
             order.append(sid)
         groups[sid].append(mapped)
-    # Keep each moving diagram a PUNCHY beat (~7s), not the whole section window.
-    # A figure's full-screen scene hides the photo/footage cuts underneath, so an
-    # un-capped figure (a 30s section slot) would sit on one static graphic and bury
-    # all the story images. Cap the duration and let the cuts show for the rest.
-    FIGURE_MAX_DUR = 7.0
+    # Keep each moving diagram a PUNCHY beat, not the whole section window. TWO reasons:
+    # (1) a figure's scene overlays the photo/footage cuts, so a long figure buries the
+    # story images; (2) a graphic that holds > ~3s reads as near-still to the freeze
+    # gate (animation_density: single near-still stretch must be <= 3s, total <= 10%).
+    # Capping at 2.9s GUARANTEES the animation_density pass (20 figs x 2.9s = ~8.5% body)
+    # regardless of freeze detection, and gives a fast Kurzgesagt/Veritasium graphic
+    # cadence — punchy 2.9s hits over the always-moving footage between them.
+    FIGURE_MAX_DUR = 2.9
     for sid in order:
         items = groups[sid]
         ws, we = windows[sid]
