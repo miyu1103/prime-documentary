@@ -27,7 +27,9 @@ DIVERSITY_TARGET = 0.55            # warn (loudly) if distinct/total falls below
 # `depth` = real DPT depth-map 3D parallax (CaseFilm DepthStill); replaces the fake `bleed`
 # pseudo-2.5D as the anti-紙芝居 default, rotated ~1/4 with the CSS treatments for variety and
 # render feasibility. Requires <name>_depth.png beside each staged image (tools/depth/gen_depth.py).
-IMG_TREAT = ["depth","scan","duotone","focus","depth","duotone","card","scan","focus","depth","duotone","scan"]
+# all-moving rotation: the near-still 2.5D "card" is dropped (it rested long enough to trip
+# animation_density); every image cut now gets a parallax/depth treatment so nothing holds.
+IMG_TREAT = ["depth","scan","duotone","focus","depth","duotone","focus","scan","depth","duotone","scan","focus"]
 
 
 def parse_srt(path):
