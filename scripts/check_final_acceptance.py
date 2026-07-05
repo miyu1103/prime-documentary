@@ -48,6 +48,14 @@ Hard checks (block the final):
                          spans (pasted still / slow Ken Burns), fails if > 10% of
                          runtime is near-still or one hold > 3s. Catches the
                          '紙芝居 (slideshow)' that motion_present misses.
+  - motion_energy      : the BODY must carry real MOTION MAGNITUDE, not merely be
+                         'not frozen' -- mean inter-frame pixel change (ffmpeg
+                         tblend=difference -> signalstats YAVG, via
+                         measure_motion_energy.py) over the same body as
+                         animation_density. Fails if body mean YAVG < 12.0 (or the
+                         sustained-low p10 < 4.0). Calibrated: MotionSample 46.6 vs
+                         slideshow 3.5. Catches a slow Ken Burns / weak parallax that
+                         animation_density's fraction metric lets through (Goodhart).
   - bgm_present        : a continuous (ducked) music bed -- narration-only mixes
                          leave long silence between sentences (EP14 final = 109s).
   - thumbnail_ready    : >=3 thumbnail PNGs at 1280x720 + a selected one exist
@@ -114,6 +122,17 @@ LOW_MOTION_MAX_SPAN_S = 3.0                      # any single near-still hold be
 # are UNCHANGED (not weakened) -- they are simply applied to the body, where slideshow is the risk.
 BOOKEND_OP_SEC = 3.5                             # gold BrandOpening title (lands after the hook)
 BOOKEND_ED_SEC = 9.0                             # BrandEndcard outro (trailing, designed calm)
+# motion_energy (row: EP32 §5): animation_density only measures "not frozen %" -- a slow
+# Ken Burns / weak parallax passes it while still reading as a slideshow (Goodhart). This
+# measures the ACTUAL amount of frame movement: mean inter-frame pixel change (ffmpeg
+# tblend=difference -> signalstats YAVG, 0..255; via scripts/measure_motion_energy.py) over
+# the SAME body definition animation_density uses (OP title + ED outro bookends excluded).
+# Calibrated 2026-07-06: a genuinely dynamic reference (MotionSample) = body mean 46.6 /
+# p10 45.2; a slideshow episode (EP-carsearch v004) = mean 3.5. The enforceable floor sits
+# well above the slideshow number. p10 (sustained-low 10th percentile) is a secondary floor
+# so a mostly-dynamic cut with long static holds (which drags p10 down) is still caught.
+MOTION_ENERGY_BODY_MEAN_MIN = 12.0               # body mean YAVG must clear this (slideshow=3.5, MotionSample=46.6)
+MOTION_ENERGY_P10_MIN = 4.0                       # sustained-low floor: body p10 must exceed a bare slideshow's average
 # ending BGM must resolve, not get chopped mid-phrase at full volume. This is a
 # FLOOR only (a hard full-volume cut fails); whether it lands on a musical cadence
 # ("切りのいいところ") is an arrangement choice + a manual listen -- not amplitude.
@@ -588,6 +607,90 @@ def check_low_motion(path: Path, dur: float, epdir: Path) -> dict:
                       f"{LOW_MOTION_MAX_SPAN_S:.0f}s (OP/ED bookends excluded; MotionSample ~5.5%)"}
 
 
+def _ffprobe_fps(path: Path) -> float:
+    """Video stream frame rate (frames/sec) from r_frame_rate, defaulting to 30."""
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "v:0",
+             "-show_entries", "stream=r_frame_rate", "-of", "default=nw=1:nk=1", str(path)],
+            capture_output=True, text=True, check=True)
+        txt = out.stdout.strip()
+        if "/" in txt:
+            num, den = txt.split("/", 1)
+            return float(num) / float(den) if float(den) else 30.0
+        return float(txt) if txt else 30.0
+    except Exception:  # noqa: BLE001
+        return 30.0
+
+
+def check_motion_energy(path: Path, dur: float, epdir: Path) -> dict:
+    """HARD: the BODY must carry enough ACTUAL motion, not merely be 'not frozen'.
+
+    animation_density (check_low_motion) only scores the FRACTION of near-still time, so a
+    slow Ken Burns zoom / weak parallax that never fully freezes passes it while still reading
+    as a slideshow (Goodhart). This measures the real MAGNITUDE of frame movement: the mean
+    inter-frame pixel change (ffmpeg tblend=difference -> signalstats YAVG, 0..255) computed
+    by scripts/measure_motion_energy.py, over the SAME body definition animation_density uses
+    (the gold BrandOpening title region + the trailing BrandEndcard outro are excluded).
+
+    Fails if the body mean YAVG < MOTION_ENERGY_BODY_MEAN_MIN, or (secondary sustained-low
+    floor) the body p10 < MOTION_ENERGY_P10_MIN. Calibrated 2026-07-06: MotionSample body
+    mean 46.6 / p10 45.2 vs a slideshow episode mean 3.5.
+
+    If ffmpeg / the measurement cannot run, this is a HARD FAIL (a terminal error), never a
+    silent pass -- an unmeasurable render must not slip through the motion floor.
+    """
+    try:
+        import importlib.util
+        here = Path(__file__).resolve().parent
+        spec = importlib.util.spec_from_file_location(
+            "measure_motion_energy", str(here / "measure_motion_energy.py"))
+        mme = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(mme)
+        y = mme.per_frame_yavg(str(path))
+    except Exception as exc:  # noqa: BLE001
+        return {"check": "motion_energy", "ok": False, "hard": True,
+                "reason": f"could not measure motion energy ({exc}); "
+                          f"treat as FAIL, not a silent pass"}
+    if not y:
+        return {"check": "motion_energy", "ok": False, "hard": True,
+                "reason": "no per-frame YAVG parsed (ffmpeg tblend/signalstats unavailable?); "
+                          "treat as FAIL, not a silent pass"}
+    fps = _ffprobe_fps(path)
+    # BODY = [0, hook] (hook) + [hook+OP, dur-ED] (acts); OP title + ED outro excluded --
+    # the SAME body as check_low_motion / animation_density.
+    slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
+    fdata = ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
+    fd = _load(fdata) if fdata.is_file() else None
+    hook = float((fd or {}).get("hookSeconds") or 0.0)
+    op_lo, op_hi = hook, hook + BOOKEND_OP_SEC
+    ed_lo = max(op_hi, dur - BOOKEND_ED_SEC)
+    body_regions = [(0.0, op_lo), (op_hi, ed_lo)]
+    n = len(y)
+    body_vals: list[float] = []
+    for blo, bhi in body_regions:
+        i0 = max(0, int(blo * fps))
+        i1 = min(n, int(bhi * fps))
+        if i1 > i0:
+            body_vals.extend(y[i0:i1])
+    st = mme.stats(body_vals) or mme.stats(y)   # fall back to full if body window empty
+    mean, p10, p50 = st["mean"], st["p10"], st["p50"]
+    problems = []
+    if mean < MOTION_ENERGY_BODY_MEAN_MIN:
+        problems.append(f"mean {mean:.1f} < {MOTION_ENERGY_BODY_MEAN_MIN:.0f} (slideshow-flat)")
+    if p10 < MOTION_ENERGY_P10_MIN:
+        problems.append(f"p10 {p10:.1f} < {MOTION_ENERGY_P10_MIN:.0f} (sustained-low holds)")
+    ok = not problems
+    return {"check": "motion_energy", "ok": ok, "hard": True,
+            "body_mean": round(mean, 2), "body_p10": round(p10, 2), "body_p50": round(p50, 2),
+            "min_mean": MOTION_ENERGY_BODY_MEAN_MIN, "min_p10": MOTION_ENERGY_P10_MIN,
+            "reason": (f"BODY motion energy mean {mean:.1f} / p10 {p10:.1f} / p50 {p50:.1f} "
+                       f"({st['n']} frames; floors mean >= {MOTION_ENERGY_BODY_MEAN_MIN:.0f}, "
+                       f"p10 >= {MOTION_ENERGY_P10_MIN:.0f}; MotionSample 46.6 vs slideshow 3.5)"
+                       if ok else "BODY motion too low: " + "; ".join(problems) +
+                       f" (MotionSample 46.6 vs slideshow 3.5)")}
+
+
 def _mean_volume(path: Path, start: float, dur: float) -> float | None:
     """mean_volume (dB) of a [start, start+dur] audio window, or None."""
     out = subprocess.run(
@@ -805,6 +908,7 @@ def main() -> int:
             results.append(check_black(render))
             results.append(check_freeze(render))
             results.append(check_low_motion(render, render_dur, epdir))
+            results.append(check_motion_energy(render, render_dur, epdir))
             results.append(check_bgm(render))
             results.append(check_bgm_ending(render, render_dur))
             results.append(check_hook(epdir, render_dur))
@@ -870,6 +974,17 @@ def main() -> int:
             "checks": {r["check"]: r["ok"] for r in results},
             "generated_at": datetime.now(timezone.utc).isoformat(),
         }
+        # Record the MEASURED motion energy (not just pass/fail) so the receipt carries the
+        # actual dynamism numbers the gate decided on (EP32 §5 motion_energy floor).
+        me = next((r for r in results if r["check"] == "motion_energy"), None)
+        if me is not None:
+            receipt["motion_energy"] = {
+                "ok": me["ok"],
+                "body_mean": me.get("body_mean"), "body_p10": me.get("body_p10"),
+                "body_p50": me.get("body_p50"),
+                "min_mean": me.get("min_mean", MOTION_ENERGY_BODY_MEAN_MIN),
+                "min_p10": me.get("min_p10", MOTION_ENERGY_P10_MIN),
+            }
         rp = epdir / "09_package" / "acceptance_receipt.v001.json"
         rp.parent.mkdir(parents=True, exist_ok=True)
         rp.write_text(json.dumps(receipt, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -1,0 +1,975 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-032-carsearch",
+  "revision": "v001",
+  "artifact_type": "factory_broll_selection_plan",
+  "status": "candidate_selection_ready",
+  "generated_at": "2026-07-06T00:00:00+09:00",
+  "title": "Can the Police Search Your Car?",
+  "selection_note": "Real-footage (Veritasium-style) b-roll PLAN only. No media copied, nothing rendered. Candidates are addressed by factory subtype + query; the actual clip FILE for each candidate is chosen during the mandatory visual-QC pass (see footage_qc_checklist.v001.md). Folder labels are NOT trusted -- every first frame is eyeballed before it enters the render.",
+  "shelf": {
+    "reachable": true,
+    "root": "H:/pd-media/assets/factory/",
+    "manifest": "assets/asset_manifest.v001.json",
+    "total_assets": 88850,
+    "license": "Pexels License / Pixabay Content License (commercial-OK, illustrative/symbolic use only)",
+    "path_pattern": "H:/pd-media/assets/factory/<category>/AF-<CAT>-NNNN__<subtype>.<ext> (flat)",
+    "query_tool": "scripts/select_factory_assets.py (theme derived at query-time via factory_themes.theme_of; manifest stores no theme field)"
+  },
+  "conventions": {
+    "kind_preference": "video (b-roll cutaways ~2.2s); image only as still fallback",
+    "how_to_pull": "python scripts/select_factory_assets.py --subtype <subtype> --kind video --json  (or --theme <theme> --kind video)",
+    "cut_target_seconds": 2.2,
+    "three_layer_rule": "factory b-roll (real) + AI hero/symbol (Codex) + Remotion meaning graphics (BrightLine/CarCutaway/timeline). See visual_intent per span."
+  },
+  "diversity_policy_ship_gate": {
+    "distinct_over_total_min": 0.4,
+    "single_clip_reuse_max": 4,
+    "generic_symbol_max": 2,
+    "generic_symbol_set": [
+      "american_flag_waving",
+      "antique_brass_scales",
+      "balance_scale_brass",
+      "courtroom_gavel_block_macro",
+      "judge_gavel_wooden",
+      "lady_justice_statue"
+    ]
+  },
+  "scene_selection": [
+    {
+      "span_id": "SPN-0001",
+      "chapter": "hook",
+      "need": "Night traffic stop w/ open trunk; quiet suburban driveway at dusk; car<->house BrightLine.",
+      "factory_candidates": [
+        {
+          "subtype": "police_car_lights_night",
+          "theme": "crime_police",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype police_car_lights_night --kind video --json",
+          "shelf_video_count": 44,
+          "candidate_clips": 3,
+          "role": "night stop establishing"
+        },
+        {
+          "subtype": "rain_street_reflection_night",
+          "theme": "nature_landscape",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype rain_street_reflection_night --kind video --json",
+          "shelf_video_count": 47,
+          "candidate_clips": 2,
+          "role": "wet-asphalt punch cut"
+        },
+        {
+          "subtype": "suburban_house_exterior_night",
+          "theme": "property_home",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype suburban_house_exterior_night --kind video --json",
+          "shelf_video_count": 46,
+          "candidate_clips": 3,
+          "role": "driveway-at-dusk beat"
+        },
+        {
+          "subtype": "front_door_house",
+          "theme": "property_home",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype front_door_house --kind video --json",
+          "shelf_video_count": 57,
+          "candidate_clips": 2,
+          "role": "home edge, BrightLine target"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "BrightLine (mode=draw->slam preview)",
+        "kinetic title slams"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0002",
+      "chapter": "opening",
+      "need": "Gold BrandOpening title; timeline sweep 1925->2018 over stylized map.",
+      "factory_candidates": [
+        {
+          "subtype": "world_map_dark_glowing",
+          "theme": "surveillance_tech",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype world_map_dark_glowing --kind video --json",
+          "shelf_video_count": 54,
+          "candidate_clips": 2,
+          "role": "stylized route-map bed"
+        },
+        {
+          "subtype": "highway_night_long_exposure",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype highway_night_long_exposure --kind video --json",
+          "shelf_video_count": 52,
+          "candidate_clips": 3,
+          "role": "motion under title"
+        },
+        {
+          "subtype": "supreme_court_building",
+          "theme": "legal_court",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype supreme_court_building --kind video --json",
+          "shelf_video_count": 45,
+          "candidate_clips": 2,
+          "role": "2018 end anchor"
+        },
+        {
+          "subtype": "drone_flying_at_dusk",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype drone_flying_at_dusk --kind video --json",
+          "shelf_video_count": 50,
+          "candidate_clips": 2,
+          "role": "sweeping transition"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "BrandOpening (gold)",
+        "CaseTimeline / RouteMap 1925->2018"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0003",
+      "chapter": "act1",
+      "need": "House=warrant vs Car=?; timeline snaps to 1925.",
+      "factory_candidates": [
+        {
+          "subtype": "documents_on_desk",
+          "theme": "documents_paper",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype documents_on_desk --kind video --json",
+          "shelf_video_count": 52,
+          "candidate_clips": 2,
+          "role": "warrant paperwork"
+        },
+        {
+          "subtype": "stacked_legal_documents",
+          "theme": "documents_paper",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype stacked_legal_documents --kind video --json",
+          "shelf_video_count": 25,
+          "candidate_clips": 2,
+          "role": "4th Amendment strength"
+        },
+        {
+          "subtype": "white_picket_fence",
+          "theme": "property_home",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype white_picket_fence --kind video --json",
+          "shelf_video_count": 50,
+          "candidate_clips": 2,
+          "role": "protected-home glow"
+        },
+        {
+          "subtype": "us_constitution_document",
+          "theme": "legal_court",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype us_constitution_document --kind video --json",
+          "shelf_video_count": 50,
+          "candidate_clips": 1,
+          "role": "Fourth Amendment doc (context, not capped symbol)"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "CurtilageShield hint on house",
+        "CaseTimeline dot @1925"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0004",
+      "chapter": "act1",
+      "need": "1920s night highway, tail car, gloved hands tear seat, one bottle to light, 0->68.",
+      "factory_candidates": [
+        {
+          "subtype": "rural_road_america",
+          "theme": "property_home",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype rural_road_america --kind video --json",
+          "shelf_video_count": 56,
+          "candidate_clips": 3,
+          "role": "period night highway"
+        },
+        {
+          "subtype": "empty_road_sunset",
+          "theme": "nature_landscape",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype empty_road_sunset --kind video --json",
+          "shelf_video_count": 56,
+          "candidate_clips": 2,
+          "role": "Detroit->Grand Rapids road"
+        },
+        {
+          "subtype": "car_light_trails_long_exposure",
+          "theme": "misc_background",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype car_light_trails_long_exposure --kind video --json",
+          "shelf_video_count": 18,
+          "candidate_clips": 3,
+          "role": "tail car / period motion"
+        },
+        {
+          "subtype": "headlights_in_rain",
+          "theme": "misc_background",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype headlights_in_rain --kind video --json",
+          "shelf_video_count": 31,
+          "candidate_clips": 2,
+          "role": "agents' stop atmosphere"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "NumberTicker 0->68"
+      ],
+      "gaps_route_to_ai_or_remotion": [
+        "gloved hands ripping a seat cushion (period) -- NOT on shelf",
+        "single whisky/gin bottle held to the light -- NOT on shelf"
+      ]
+    },
+    {
+      "span_id": "SPN-0005",
+      "chapter": "act1",
+      "need": "1925 courthouse / gavel; HOUSE|CAR split forms.",
+      "factory_candidates": [
+        {
+          "subtype": "courthouse_steps",
+          "theme": "legal_court",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype courthouse_steps --kind video --json",
+          "shelf_video_count": 52,
+          "candidate_clips": 3,
+          "role": "1925 courthouse establishing"
+        },
+        {
+          "subtype": "courtroom_interior",
+          "theme": "legal_court",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype courtroom_interior --kind video --json",
+          "shelf_video_count": 44,
+          "candidate_clips": 2,
+          "role": "the Court hears it"
+        },
+        {
+          "subtype": "judge_gavel_wooden",
+          "theme": "legal_court",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype judge_gavel_wooden --kind video --json",
+          "shelf_video_count": 43,
+          "candidate_clips": 1,
+          "role": "ruling beat (GENERIC SYMBOL 1 of 2)"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "HOUSE|CAR split concept (S009)"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0006",
+      "chapter": "act1",
+      "need": "House holds still vs car accelerates off; Taft QuoteCard; automobile exception.",
+      "factory_candidates": [
+        {
+          "subtype": "american_suburb_aerial",
+          "theme": "property_home",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype american_suburb_aerial --kind video --json",
+          "shelf_video_count": 53,
+          "candidate_clips": 3,
+          "role": "the house that stays put"
+        },
+        {
+          "subtype": "highway_underpass",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype highway_underpass --kind video --json",
+          "shelf_video_count": 44,
+          "candidate_clips": 2,
+          "role": "the car built to move"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "QuoteCard (Taft)",
+        "car-shield thins motif"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0007",
+      "chapter": "act1",
+      "need": "One stop multiplies into a grid on a night map; PROBABLE CAUSE locks.",
+      "factory_candidates": [
+        {
+          "subtype": "drone_city_aerial_night",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype drone_city_aerial_night --kind video --json",
+          "shelf_video_count": 59,
+          "candidate_clips": 3,
+          "role": "grid of stops across a city"
+        },
+        {
+          "subtype": "police_strobe_red_and_blue",
+          "theme": "crime_police",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype police_strobe_red_and_blue --kind video --json",
+          "shelf_video_count": 34,
+          "candidate_clips": 2,
+          "role": "roadside-search energy"
+        },
+        {
+          "subtype": "world_map_dark_glowing",
+          "theme": "surveillance_tech",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype world_map_dark_glowing --kind video --json",
+          "shelf_video_count": 54,
+          "candidate_clips": 1,
+          "role": "PinDropMap bed"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "PinDropMap grid",
+        "open-loop marker 'PROBABLE CAUSE'"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0008",
+      "chapter": "act2",
+      "need": "Red NOT stamp over a routine stop; ProbableCauseMeter stalls; taillight ring.",
+      "factory_candidates": [
+        {
+          "subtype": "police_car_lights_night",
+          "theme": "crime_police",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype police_car_lights_night --kind video --json",
+          "shelf_video_count": 44,
+          "candidate_clips": 2,
+          "role": "routine stop"
+        },
+        {
+          "subtype": "police_badge_close_up",
+          "theme": "crime_police",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype police_badge_close_up --kind video --json",
+          "shelf_video_count": 55,
+          "candidate_clips": 2,
+          "role": "officer authority"
+        },
+        {
+          "subtype": "car_light_trails_long_exposure",
+          "theme": "misc_background",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype car_light_trails_long_exposure --kind video --json",
+          "shelf_video_count": 18,
+          "candidate_clips": 1,
+          "role": "stopped-car context"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "ProbableCauseMeter (stall)",
+        "HighlightRing on taillight"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0009",
+      "chapter": "act2",
+      "need": "Evidence chips (plain view / K-9 / admission) push fill across the line.",
+      "factory_candidates": [
+        {
+          "subtype": "police_interrogation_room_empty",
+          "theme": "crime_police",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype police_interrogation_room_empty --kind video --json",
+          "shelf_video_count": 37,
+          "candidate_clips": 2,
+          "role": "admission beat"
+        },
+        {
+          "subtype": "case_files_stack_desk",
+          "theme": "crime_police",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype case_files_stack_desk --kind video --json",
+          "shelf_video_count": 29,
+          "candidate_clips": 2,
+          "role": "facts that add up"
+        },
+        {
+          "subtype": "documents_on_desk",
+          "theme": "documents_paper",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype documents_on_desk --kind video --json",
+          "shelf_video_count": 52,
+          "candidate_clips": 1,
+          "role": "articulable facts"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "ProbableCauseMeter (cross, locks gold)"
+      ],
+      "gaps_route_to_ai_or_remotion": [
+        "trained K-9 alert at a car -- NOT on shelf (use Remotion chip + AI if needed)"
+      ]
+    },
+    {
+      "span_id": "SPN-0010",
+      "chapter": "act2",
+      "need": "CarCutaway lights zones; real b-roll hand pulling a bag.",
+      "factory_candidates": [
+        {
+          "subtype": "empty_parking_garage",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype empty_parking_garage --kind video --json",
+          "shelf_video_count": 40,
+          "candidate_clips": 2,
+          "role": "parked-car context"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "CarCutaway (mode=all): GLOVEBOX/TRUNK/BACK SEAT/BAG mask-reveal labels"
+      ],
+      "gaps_route_to_ai_or_remotion": [
+        "car interior: glovebox, open trunk, zipped bag on back seat, hand pulling a bag -- NOT on shelf"
+      ]
+    },
+    {
+      "span_id": "SPN-0011",
+      "chapter": "act2",
+      "need": "CarCutaway big vs small; permitted checklist, no extra emergency.",
+      "factory_candidates": [
+        {
+          "subtype": "highway_underpass",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype highway_underpass --kind video --json",
+          "shelf_video_count": 44,
+          "candidate_clips": 1,
+          "role": "drivable-vehicle context"
+        },
+        {
+          "subtype": "desert_highway_heat_haze",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype desert_highway_heat_haze --kind video --json",
+          "shelf_video_count": 45,
+          "candidate_clips": 1,
+          "role": "readily-mobile motif"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "CarCutaway (mode=big / mode=small)",
+        "permitted checklist"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0012",
+      "chapter": "act2",
+      "need": "Aerial night highway, thousands of lit cars; BrightLine flickers.",
+      "factory_candidates": [
+        {
+          "subtype": "highway_night_long_exposure",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype highway_night_long_exposure --kind video --json",
+          "shelf_video_count": 52,
+          "candidate_clips": 3,
+          "role": "thousands of lit cars"
+        },
+        {
+          "subtype": "drone_city_aerial_night",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype drone_city_aerial_night --kind video --json",
+          "shelf_video_count": 59,
+          "candidate_clips": 1,
+          "role": "aerial mass"
+        },
+        {
+          "subtype": "car_light_trails_long_exposure",
+          "theme": "misc_background",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype car_light_trails_long_exposure --kind video --json",
+          "shelf_video_count": 18,
+          "candidate_clips": 1,
+          "role": "private-life-in-motion"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "BrightLine flicker (loop tightens)"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0013",
+      "chapter": "act3",
+      "need": "Motorcycle blur past patrol; map pin on a residence; covered shape in a driveway.",
+      "factory_candidates": [
+        {
+          "subtype": "police_car_lights_night",
+          "theme": "crime_police",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype police_car_lights_night --kind video --json",
+          "shelf_video_count": 44,
+          "candidate_clips": 2,
+          "role": "patrol car outrun"
+        },
+        {
+          "subtype": "suburban_house_exterior_night",
+          "theme": "property_home",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype suburban_house_exterior_night --kind video --json",
+          "shelf_video_count": 46,
+          "candidate_clips": 2,
+          "role": "the quiet Virginia house"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "PinDropMap on residential address"
+      ],
+      "gaps_route_to_ai_or_remotion": [
+        "distinctive orange-and-black motorcycle blur -- NOT on shelf (AI, no real plate)",
+        "tarp-covered shape parked in a driveway -- NOT on shelf"
+      ]
+    },
+    {
+      "span_id": "SPN-0014",
+      "chapter": "act3",
+      "need": "Footsteps up the driveway; hand peels the tarp; STOLEN chip; replay legal on a curb.",
+      "factory_candidates": [
+        {
+          "subtype": "front_door_house",
+          "theme": "property_home",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype front_door_house --kind video --json",
+          "shelf_video_count": 57,
+          "candidate_clips": 2,
+          "role": "up-the-driveway approach"
+        },
+        {
+          "subtype": "white_picket_fence",
+          "theme": "property_home",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype white_picket_fence --kind video --json",
+          "shelf_video_count": 50,
+          "candidate_clips": 1,
+          "role": "property boundary"
+        },
+        {
+          "subtype": "rain_street_reflection_night",
+          "theme": "nature_landscape",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype rain_street_reflection_night --kind video --json",
+          "shelf_video_count": 47,
+          "candidate_clips": 1,
+          "role": "public-curb replay"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "'STOLEN - CONFIRMED' chip",
+        "green LEGAL check on curb replay"
+      ],
+      "gaps_route_to_ai_or_remotion": [
+        "footsteps up a driveway; a hand peeling a tarp off a vehicle -- NOT on shelf"
+      ]
+    },
+    {
+      "span_id": "SPN-0015",
+      "chapter": "act3",
+      "need": "Rule stretches up the driveway; car-shaped key turning in a house-door lock (HERO 2).",
+      "factory_candidates": [
+        {
+          "subtype": "key_turning_in_lock",
+          "theme": "misc_background",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype key_turning_in_lock --kind video --json",
+          "shelf_video_count": 28,
+          "candidate_clips": 3,
+          "role": "CarKeyLock hero macro reference"
+        },
+        {
+          "subtype": "open_door_bright_light",
+          "theme": "misc_background",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype open_door_bright_light --kind video --json",
+          "shelf_video_count": 31,
+          "candidate_clips": 2,
+          "role": "the home's threshold"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "CarKeyLock (HERO motion surface #2)"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0016",
+      "chapter": "act3",
+      "need": "BrightLine SLAM; VoteTally 8-1; CurtilageShield wraps driveway; 2018 dot.",
+      "factory_candidates": [
+        {
+          "subtype": "supreme_court_building",
+          "theme": "legal_court",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype supreme_court_building --kind video --json",
+          "shelf_video_count": 45,
+          "candidate_clips": 1,
+          "role": "the 2018 Court"
+        },
+        {
+          "subtype": "courtroom_interior",
+          "theme": "legal_court",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype courtroom_interior --kind video --json",
+          "shelf_video_count": 44,
+          "candidate_clips": 1,
+          "role": "the decision"
+        },
+        {
+          "subtype": "suburban_house_exterior_night",
+          "theme": "property_home",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype suburban_house_exterior_night --kind video --json",
+          "shelf_video_count": 46,
+          "candidate_clips": 1,
+          "role": "home glow expands to the driveway"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "BrightLine (mode=slam)",
+        "VoteTally 8 gold + 1 red",
+        "CurtilageShield reveal",
+        "CaseTimeline dot @2018"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0017",
+      "chapter": "act3",
+      "need": "Sotomayor QuoteCard; glow stops at the line; warrant icon on house; lone dissent.",
+      "factory_candidates": [
+        {
+          "subtype": "lady_justice_statue",
+          "theme": "legal_court",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype lady_justice_statue --kind video --json",
+          "shelf_video_count": 32,
+          "candidate_clips": 1,
+          "role": "quote-resolve beat (GENERIC SYMBOL 2 of 2)"
+        },
+        {
+          "subtype": "stacked_legal_documents",
+          "theme": "documents_paper",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype stacked_legal_documents --kind video --json",
+          "shelf_video_count": 25,
+          "candidate_clips": 1,
+          "role": "the holding, in writing"
+        },
+        {
+          "subtype": "courthouse_steps",
+          "theme": "legal_court",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype courthouse_steps --kind video --json",
+          "shelf_video_count": 52,
+          "candidate_clips": 1,
+          "role": "resolve establishing"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "QuoteCard (Sotomayor, attributed)",
+        "lone dissent card"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0018",
+      "chapter": "act4",
+      "need": "Clean summary diagram: STREET -> PC gate -> zoned car recap.",
+      "factory_candidates": [
+        {
+          "subtype": "rain_street_reflection_night",
+          "theme": "nature_landscape",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype rain_street_reflection_night --kind video --json",
+          "shelf_video_count": 47,
+          "candidate_clips": 1,
+          "role": "the road / street"
+        },
+        {
+          "subtype": "police_car_lights_night",
+          "theme": "crime_police",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype police_car_lights_night --kind video --json",
+          "shelf_video_count": 44,
+          "candidate_clips": 1,
+          "role": "the routine stop"
+        },
+        {
+          "subtype": "empty_road_sunset",
+          "theme": "nature_landscape",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype empty_road_sunset --kind video --json",
+          "shelf_video_count": 56,
+          "candidate_clips": 1,
+          "role": "public-street context"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "CarCutaway recap",
+        "ActTitle 'YOUR RIGHTS ON THE ROAD'"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0019",
+      "chapter": "act4",
+      "need": "Cuffed on a curb away from a closed car; rental agreement, unlisted name; Gant 2009.",
+      "factory_candidates": [
+        {
+          "subtype": "contract_paperwork_signing",
+          "theme": "documents_paper",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype contract_paperwork_signing --kind video --json",
+          "shelf_video_count": 47,
+          "candidate_clips": 3,
+          "role": "the rental agreement"
+        },
+        {
+          "subtype": "person_signing_document_hand",
+          "theme": "documents_paper",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype person_signing_document_hand --kind video --json",
+          "shelf_video_count": 17,
+          "candidate_clips": 2,
+          "role": "name-not-listed beat"
+        },
+        {
+          "subtype": "empty_parking_garage",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype empty_parking_garage --kind video --json",
+          "shelf_video_count": 40,
+          "candidate_clips": 1,
+          "role": "rental-lot substitute"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "CaseTimeline: 2009 Gant dot",
+        "shield settles over the car"
+      ],
+      "gaps_route_to_ai_or_remotion": [
+        "person handcuffed/cuffed on a curb -- NOT on shelf (AI, no real-person likeness)",
+        "rental car lot exterior -- NOT on shelf (parking garage substitute)"
+      ]
+    },
+    {
+      "span_id": "SPN-0020",
+      "chapter": "act4",
+      "need": "US map lights states in varied colors under SMELL = PROBABLE CAUSE?.",
+      "factory_candidates": [
+        {
+          "subtype": "world_map_dark_glowing",
+          "theme": "surveillance_tech",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype world_map_dark_glowing --kind video --json",
+          "shelf_video_count": 54,
+          "candidate_clips": 1,
+          "role": "map bed"
+        },
+        {
+          "subtype": "city_data_overlay_map",
+          "theme": "urban_night",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype city_data_overlay_map --kind video --json",
+          "shelf_video_count": 31,
+          "candidate_clips": 2,
+          "role": "data-overlay shimmer"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "RegionHighlightMap (pattern=varied, non-uniform)"
+      ],
+      "gaps_route_to_ai_or_remotion": [
+        "true US state-by-state choropleth -- Remotion RegionHighlightMap (data graphic, not b-roll)"
+      ]
+    },
+    {
+      "span_id": "SPN-0021",
+      "chapter": "act4",
+      "need": "Calm driver at a window; car + home side by side; slow push into the line (resolving image).",
+      "factory_candidates": [
+        {
+          "subtype": "rain_on_window_night",
+          "theme": "atmosphere_symbolic",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype rain_on_window_night --kind video --json",
+          "shelf_video_count": 49,
+          "candidate_clips": 2,
+          "role": "calm driver at the glass"
+        },
+        {
+          "subtype": "person_at_window_silhouette_night",
+          "theme": "atmosphere_symbolic",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype person_at_window_silhouette_night --kind video --json",
+          "shelf_video_count": 37,
+          "candidate_clips": 1,
+          "role": "private-life-in-motion"
+        },
+        {
+          "subtype": "suburban_house_exterior_night",
+          "theme": "property_home",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype suburban_house_exterior_night --kind video --json",
+          "shelf_video_count": 46,
+          "candidate_clips": 1,
+          "role": "the home half"
+        },
+        {
+          "subtype": "car_light_trails_long_exposure",
+          "theme": "misc_background",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype car_light_trails_long_exposure --kind video --json",
+          "shelf_video_count": 18,
+          "candidate_clips": 1,
+          "role": "the car half"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "BrightLine between car and home",
+        "slow push into the line"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    },
+    {
+      "span_id": "SPN-0022",
+      "chapter": "ending",
+      "need": "BrandEndcard; BrightLine sign-off; like/subscribe; phone lock screen teaser.",
+      "factory_candidates": [
+        {
+          "subtype": "smartphone_in_dark",
+          "theme": "surveillance_tech",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype smartphone_in_dark --kind video --json",
+          "shelf_video_count": 57,
+          "candidate_clips": 2,
+          "role": "phone lock-screen teaser"
+        },
+        {
+          "subtype": "smartphone_notification_glow",
+          "theme": "surveillance_tech",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype smartphone_notification_glow --kind video --json",
+          "shelf_video_count": 26,
+          "candidate_clips": 1,
+          "role": "glow accent"
+        },
+        {
+          "subtype": "mobile_phone_map_location",
+          "theme": "surveillance_tech",
+          "kind": "video",
+          "query": "python scripts/select_factory_assets.py --subtype mobile_phone_map_location --kind video --json",
+          "shelf_video_count": 48,
+          "candidate_clips": 1,
+          "role": "next-episode hook"
+        }
+      ],
+      "remotion_motion_surfaces": [
+        "BrandEndcard",
+        "BrightLine sign-off"
+      ],
+      "gaps_route_to_ai_or_remotion": []
+    }
+  ],
+  "shared_overlay_palette": [
+    {
+      "subtype": "police_strobe_red_and_blue",
+      "theme": "crime_police",
+      "kind": "video",
+      "role": "red/blue strobe on night stops (screen/add)"
+    },
+    {
+      "subtype": "headlights_in_rain",
+      "theme": "misc_background",
+      "kind": "video",
+      "role": "wet-night depth (screen/add)"
+    },
+    {
+      "subtype": "rain_particles_backlit",
+      "theme": "particle",
+      "kind": "video",
+      "role": "air/atmosphere (screen/add)"
+    },
+    {
+      "subtype": "fog_rolling",
+      "theme": "vfx",
+      "kind": "video",
+      "role": "transition/reveal (screen/add)"
+    },
+    {
+      "subtype": "long_shadow_of_a_person",
+      "theme": "atmosphere_symbolic",
+      "kind": "video",
+      "role": "'間'/tension beat"
+    },
+    {
+      "subtype": "lens_flare",
+      "theme": "light",
+      "kind": "video",
+      "role": "reveal accent on gold locks (screen/add)"
+    }
+  ],
+  "note_overlays": "Overlay palette layers on top of cuts (screen/add); NOT counted in the b-roll candidate tally and NOT counted as generic symbols. Keep 1-2 layers per cut (VIDEO_RULES).",
+  "gaps_summary": [
+    "Prohibition beats: gloved hands tearing a seat cushion; a whisky/gin bottle to the light (SPN-0004).",
+    "Car interior mechanics: glovebox, open trunk, zipped bag on back seat, a hand pulling a bag (SPN-0010).",
+    "Collins beats: orange-and-black motorcycle blur; tarp-covered shape in a driveway; a hand peeling the tarp; footsteps up a driveway (SPN-0013/0014).",
+    "Arrest beat: a person handcuffed on a curb (SPN-0019).",
+    "Rental lot exterior (SPN-0019) -- empty_parking_garage used as substitute.",
+    "True driveway/porch curtilage plate -- no driveway/porch subtype exists; front_door_house + white_picket_fence + suburban_house_exterior_night are the closest substitutes."
+  ],
+  "gap_routing": "These beats are NOT on the factory shelf (verified: queries for motorcycle/handcuffs/tarp/glovebox/bottle/driveway/rental all return 0 despite the inventory doc implying otherwise). Route them to Codex AI stills (no real-person likeness, no real plates -- invariant 11) or to Remotion motifs (CarCutaway, BrightLine, CarKeyLock). Do NOT substitute a mislabeled shelf clip to fake these.",
+  "diversity_tally": {
+    "total_candidate_clips": 112,
+    "distinct_subtypes": 39,
+    "distinct_subtype_over_total": 0.348,
+    "planned_distinct_file_ratio": 1.0,
+    "planned_distinct_file_ratio_note": "Each candidate_clips unit = one UNIQUE shelf file pulled fresh during QC; distinct files == total placements, so file-level distinct/total = 1.00 >= 0.40 gate.",
+    "max_placements_for_one_subtype": 8,
+    "max_placements_subtype": "police_car_lights_night",
+    "planned_single_file_reuse_max": 2,
+    "single_clip_reuse_gate": 4,
+    "generic_symbol_placements": 2,
+    "generic_symbol_gate": 2,
+    "generic_symbols_used": [
+      "judge_gavel_wooden x1 (SPN-0005)",
+      "lady_justice_statue x1 (SPN-0017)"
+    ],
+    "subtypes_reused_across_scenes": {
+      "car_light_trails_long_exposure": 6,
+      "courthouse_steps": 4,
+      "drone_city_aerial_night": 4,
+      "front_door_house": 4,
+      "highway_night_long_exposure": 6,
+      "police_car_lights_night": 8,
+      "rain_street_reflection_night": 4,
+      "suburban_house_exterior_night": 7,
+      "world_map_dark_glowing": 4
+    },
+    "cross_scene_reuse_note": "Where a subtype spans multiple scenes (e.g. police_car_lights_night, suburban_house_exterior_night, car_light_trails_long_exposure), QC MUST pull visually distinct framings/angles for each scene -- distinct FILES, not the same file recut. Enforces footage_diversity 'no repeats'.",
+    "gate_status": "PASS (planned): distinct/total=1.00>=0.40, reuse<=2<=4, generic=2<=2"
+  },
+  "qc_gate": "episodes/PD-2026-032-carsearch/05_visuals/footage_qc_checklist.v001.md (MANDATORY before any clip enters the render)",
+  "rights": {
+    "status": "clear_commercial",
+    "usage": "illustrative/symbolic only; never presented as the actual event, vehicle, or real person; no real-person likeness (invariant 11).",
+    "provenance": "record source id (AF-*), path, and sha256 for every clip promoted into the cut."
+  }
+}
