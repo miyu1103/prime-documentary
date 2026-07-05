@@ -43,5 +43,23 @@
 ### NEXT teaser
 24. **S024 — Phone lock screen glow.** A smartphone lying face-up in the dark, its lock screen glowing awake, a hand near it; clean, modern, ominous; sets up the next episode (phone privacy).
 
+### EXTRA / VARIANTS (S025–S040 — angle & framing variants of the key scenes for fast cutting without repeats, plus a few more reconstruction beats)
+25. **S025 — Traffic stop, hand on the window.** Extreme close-up of an officer's knuckles rapping a car window at night, flashlight glare, rain beads on the glass; tension, no face.
+26. **S026 — Driver's POV.** From inside a car at night looking out the windshield/side mirror at an approaching officer's flashlight and the red-blue glow; first-person, unsettling.
+27. **S027 — 1920s highway, wide.** A very wide, lonely night shot of a single 1920s car small in the frame on an empty highway, headlights cutting the dark; isolation.
+28. **S028 — The tail car.** Two 1920s cars on a dark road, one following the other at a distance, headlights; a surveillance feel; period-accurate.
+29. **S029 — One bottle to the light.** A single confiscated liquor bottle held up against a bare lamp at night, amber liquid glowing; detail still, evidentiary.
+30. **S030 — Gavel on the bench.** A wooden judge's gavel resting on a bench in an empty courtroom, a single shaft of cold light; the weight of a decision; no people.
+31. **S031 — Trunk slammed shut.** A car trunk being closed at night after a search, an officer's hand pulling it down, red-blue light; the aftermath, tense quiet.
+32. **S032 — Bag pulled from the back seat.** A gloved hand lifting a zipped duffel bag out of a car's back seat at night, flashlight beam; the "scope" reaching a container.
+33. **S033 — Motorcycle tank detail.** Extreme close-up of an orange-and-black motorcycle fuel tank, chrome and paint catching a moving light in a dark driveway; texture, menace.
+34. **S034 — The whole quiet street.** A wide establishing shot of a calm American residential street at blue hour, houses and driveways receding, one warm window lit; ordinary life.
+35. **S035 — Tarp half-lifted, chrome glint.** A grey tarp peeled halfway off a motorcycle in a driveway at dusk, a slice of chrome and orange revealed; the reveal mid-motion.
+36. **S036 — The porch, intimate.** A warm-lit front porch at blue hour — the door, a doormat, a porch lamp, a potted plant — the tender, protected edge of a home; no people.
+37. **S037 — Signing at the station.** Anonymous hands (from above) receiving and signing a document on a worn counter under fluorescent light; neutral procedural beat.
+38. **S038 — Rental lot at dusk.** Rows of clean rental cars parked in a lot under tall sodium lights at dusk, a company kiosk soft in the back; the Byrd beat, neutral.
+39. **S039 — Family car, golden hour (the stakes).** A family sedan parked in a suburban driveway beside a modest home at warm golden hour, kids' bikes nearby, no people — the quiet stakes of "your car, your home."
+40. **S040 — House key + car key (thematic macro).** A macro still of a house key and a car key lying together on a wooden table under warm light; the film's central tension in one object; shallow focus.
+
 ---
-**Notes for the generator:** Keep all people anonymous (no faces / silhouettes / from behind / hands only). Period pieces (S004–S008) 1920s-accurate. Modern pieces neutral, US suburban. Every image is illustration/reconstruction, never presented as authentic archival footage (invariant 11). Deliver 24 stills; the assembly will also cut in commercial factory b-roll + the code-built motion-graphics.
+**Notes for the generator:** Keep all people anonymous (no faces / silhouettes / from behind / hands only). Period pieces (S004–S008, S027–S029) 1920s-accurate. Modern pieces neutral, US suburban. Every image is illustration/reconstruction, never presented as authentic archival footage (invariant 11). **Deliver 40 stills (S001–S040).** The assembly also cuts in abundant commercial factory b-roll (real footage, ~100+ clips, visually QC'd) + the code-built motion-graphics (bright line, car cutaway, probable-cause meter, curtilage shield, US map, timeline, car-key lock, kinetic type) — so no single layer is overworked and cuts can run fast (~2.2s) without repeating a frame.
