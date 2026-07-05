@@ -1,6 +1,7 @@
 import React from 'react';
-import {AbsoluteFill, Sequence, useVideoConfig} from 'remotion';
+import {AbsoluteFill, interpolate, Sequence, useCurrentFrame, useVideoConfig} from 'remotion';
 import {BRAND} from '../brand';
+import {AmbientMotion} from './AmbientMotion';
 import {StatCounter, Timeline, BarChart} from './Figures';
 
 /**
@@ -21,6 +22,20 @@ const Backdrop: React.FC = () => (
   />
 );
 
+/** Continuous micro-drift so a figure that has finished counting still MOVES (a held stat is
+ * otherwise flagged near-still by animation_density). Slow parallax pan + breathing scale. */
+const Drift: React.FC<{children: React.ReactNode}> = ({children}) => {
+  const f = useCurrentFrame();
+  const {durationInFrames: d} = useVideoConfig();
+  const p = interpolate(f, [0, d], [0, 1], {extrapolateRight: 'clamp'});
+  const x = Math.sin(p * Math.PI * 2) * 14;
+  const y = Math.cos(p * Math.PI * 2) * 9;
+  const s = 1.015 + 0.02 * p; // gentle continuous push-in
+  return (
+    <AbsoluteFill style={{transform: `translate(${x}px, ${y}px) scale(${s})`}}>{children}</AbsoluteFill>
+  );
+};
+
 export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
   const {fps} = useVideoConfig();
   const accent = BRAND.color.gold;
@@ -32,20 +47,23 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
           <Sequence key={i} from={Math.round(b.start * fps)} durationInFrames={dur} name={`figure-${i}`}>
             <AbsoluteFill>
               <Backdrop />
-              {b.kind === 'stat' && (
-                <StatCounter
-                  accent={accent}
-                  value={b.value}
-                  prefix={b.prefix}
-                  suffix={b.suffix}
-                  decimals={b.decimals ?? 0}
-                  label={b.label}
-                  topLabel={b.topLabel}
-                  dur={dur}
-                />
-              )}
-              {b.kind === 'timeline' && <Timeline accent={accent} events={b.events} dur={dur} />}
-              {b.kind === 'bar' && <BarChart accent={accent} data={b.data} dur={dur} />}
+              <AmbientMotion count={16} intensity={1.0} />
+              <Drift>
+                {b.kind === 'stat' && (
+                  <StatCounter
+                    accent={accent}
+                    value={b.value}
+                    prefix={b.prefix}
+                    suffix={b.suffix}
+                    decimals={b.decimals ?? 0}
+                    label={b.label}
+                    topLabel={b.topLabel}
+                    dur={dur}
+                  />
+                )}
+                {b.kind === 'timeline' && <Timeline accent={accent} events={b.events} dur={dur} />}
+                {b.kind === 'bar' && <BarChart accent={accent} data={b.data} dur={dur} />}
+              </Drift>
             </AbsoluteFill>
           </Sequence>
         );
