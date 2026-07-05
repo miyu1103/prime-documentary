@@ -95,6 +95,37 @@ CONFIG = {
         "tags": ["Supreme Court", "Fourth Amendment", "Rodriguez", "Rodriguez v United States",
                  "Traffic Stop", "Dog Sniff", "K9", "Search and Seizure", "Law", "Documentary"],
     },
+    "cotton": {
+        "ep": "PD-2026-030-cotton",
+        "video": r"H:/pd-media/episodes/PD-2026-030-cotton/08_edit/renders/final.premium.v004.mp4",
+        "sched_local": "2026-07-15T12:00:00+09:00",
+        "sched_utc": "2026-07-15T03:00:00Z",
+        "title": "She Studied His Face to Be Certain. She Convicted the Wrong Man.",
+        "description": (
+            "In 1984, a college student was raped at knifepoint — and forced herself to memorize "
+            "every detail of her attacker's face so she could make sure he was caught. She picked "
+            "Ronald Cotton out of a photo array, then a live lineup, with total confidence. He was "
+            "tried twice and convicted twice, largely on the strength of that certain "
+            "identification.\n\n"
+            "Cotton spent more than ten years in prison. Behind bars he crossed paths with another "
+            "man, Bobby Poole, who looked strikingly like him and was said to have bragged about "
+            "the crime. For years the courts would not reopen the case.\n\n"
+            "In 1995, DNA testing did what memory could not: it proved Ronald Cotton was innocent "
+            "and matched Bobby Poole to the assault. Cotton was exonerated after eleven years for a "
+            "crime he did not commit.\n\n"
+            "What happened next is the part almost no one expects. Jennifer Thompson — the "
+            "eyewitness whose testimony sent him away — and Ronald Cotton became friends, wrote a "
+            "book together (\"Picking Cotton\"), and now speak out about how confident, honest "
+            "eyewitnesses can be completely wrong. Mistaken eyewitness identification is one of the "
+            "leading factors in wrongful convictions later overturned by DNA.\n\n"
+            "Certainty is not proof.\n\n"
+            "#WrongfulConviction #EyewitnessMisidentification #RonaldCotton #PickingCotton "
+            "#Innocence #DNA #Documentary #TrueStory"
+        ),
+        "tags": ["wrongful conviction", "eyewitness misidentification", "Ronald Cotton",
+                 "Jennifer Thompson", "Picking Cotton", "Innocence Project", "DNA exoneration",
+                 "criminal justice", "documentary", "true story"],
+    },
 }
 
 

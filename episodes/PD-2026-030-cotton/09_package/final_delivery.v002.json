@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-030-cotton",
+  "revision": "v002",
+  "title": "She Studied His Face to Be Certain. She Convicted the Wrong Man.",
+  "case": "Jennifer Thompson / Ronald Cotton — eyewitness misidentification (1984 assault; DNA exoneration 1995)",
+  "supersedes": "final_delivery.v001.json (stale FFmpeg slideshow render)",
+  "canonical_final": {
+    "path": "artifact://episodes/PD-2026-030-cotton/08_edit/renders/final.premium.v004.mp4",
+    "render_source": "remotion/out/cotton_final.v004.bgm.mp4",
+    "video_sha256": "sha256:e5f3a87bfb8b20c3f1e6ff828dcd151541197911685cfe318147eea826c32258",
+    "duration_seconds": 710.1,
+    "duration_min": 11.83,
+    "resolution": "1920x1080",
+    "codec": "h264",
+    "note": "THE single publish candidate for EP30 (Remotion CaseFilm-cotton). depth-parallax hero stills + visually-QC'd factory footage (36+ mislabeled clips removed), deeper BGM ducking. Do not upload any other cotton_*.mp4 / final.ffmpeg.*."
+  },
+  "audio": {
+    "voice": "ElevenLabs master (nPczCjzI2devNBz1zQrb / eleven_multilingual_v2)",
+    "narration_master": "artifact://episodes/PD-2026-030-cotton/06_voice/master/vc_master_v001.mp3",
+    "bgm": "continuous ducked bed (hook->explainer->tension->somber->reveal->outro), sidechain to VO, integrated -14.0 LUFS",
+    "silence_gt2s": 2
+  },
+  "captions": {
+    "path": "artifact://episodes/PD-2026-030-cotton/08_edit/captions.final.v001.srt",
+    "captions_sha256": "sha256:34ed2926329efb47d19c4a6eb51c0ad9610bc1a766b07a164bac6a18a3a56e31",
+    "method": "faster-whisper QA + proportional per-chunk timing; verbatim to narration (100% token match)"
+  },
+  "thumbnail": {
+    "selected": "artifact://episodes/PD-2026-030-cotton/09_package/thumbnail.selected.v002.png",
+    "thumbnail_sha256": "sha256:56b1ae9796db90776c79b876c6178b91d3ab1a3a99f265ef94ccf8dc87f606cf",
+    "note": "bold: intense eye + 'SHE WAS SURE.' / 'SHE WAS WRONG.' (red), gold rule; mean luma 49.9 / contrast 71.7"
+  },
+  "acceptance": {
+    "receipt": "artifact://episodes/PD-2026-030-cotton/09_package/acceptance_receipt.v001.json",
+    "status": "PASS",
+    "note": "20/20 hard gates green bound to this render's bytes + visual QC contact-sheet sign-off (factory shelf mislabeling caught + removed)"
+  }
+}
