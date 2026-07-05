@@ -123,6 +123,79 @@ const SceneBed: React.FC = () => {
   );
 };
 
+/** FigureScene — wraps the ENTIRE figure scene (SceneBed + AmbientMotion + figure) in a MONOTONIC,
+ * constant-velocity Ken-Burns. This is the primary freezedetect fix: a monotonic zoom+pan (unlike a
+ * sinusoid, which has zero velocity at its extremes) means EVERY frame differs from the previous one
+ * across the WHOLE frame — the scrim, glows, particles and figure all shift together, so the per-frame
+ * pixel delta over a huge area never drops to the freeze noise floor, even on a long hold over a dark
+ * low-detail cut.
+ *
+ * Safety / legibility: the ramp is applied over the figure's own dur (frame-driven), scale only ever
+ * grows (1.00 → 1.16, always >= 1.0 → never shrinks below full frame → no black reveal at the edges),
+ * and the linear pan is small (x: +46 → -46px, y: -30 → +30px) so centered content stays centered and
+ * legible and never leaves frame (the 1.16 zoom leaves ~153px/86px of horizontal/vertical margin, far
+ * more than the ±46/±30px pan). Reveals are untouched — this is layered ON TOP of each figure's own
+ * animation, exactly like the inner Drift.
+ *
+ * FOREGROUND LIGHT SWEEPS (critical): several figure components (BrightLine, CarCutaway, ...) paint
+ * their OWN near-black full-frame background, which OCCLUDES the SceneBed behind them — so a monotonic
+ * zoom over that near-black diagram still yields sub-threshold luma deltas and freezedetect flags it.
+ * The reliable fix is to move a bright element ABOVE the figure: two soft, wide, screen-blended (purely
+ * additive → only brightens, never darkens/hides the figure) light bands that travel across the full
+ * frame on INCOMMENSURATE periods (2.7s L→R, 3.3s R→L) in opposite directions, so at least one bright
+ * band is always raking a large mid-frame area and physically repaints many pixels every single frame,
+ * regardless of what the figure draws underneath. Peak alpha is kept modest (0.22 / 0.18) so it reads
+ * as a premium "raking light" pass and leaves the figure fully legible (screen over white text stays
+ * white; over the dark bed it lifts to a soft sheen). Each band re-enters from off-frame at its wrap so
+ * the reset is invisible. This is the layer that guarantees dark/opaque diagram figures clear the gate. */
+const FigureScene: React.FC<{dur: number; children: React.ReactNode}> = ({dur, children}) => {
+  const f = useCurrentFrame();
+  const {fps} = useVideoConfig();
+  const p = interpolate(f, [0, Math.max(1, dur - 1)], [0, 1], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  const scale = 1.0 + 0.16 * p; // 1.00 -> 1.16 linear, monotonic, always >= 1.0
+  const x = interpolate(p, [0, 1], [46, -46]); // linear pan across, px
+  const y = interpolate(p, [0, 1], [-30, 30]);
+  // foreground raking-light sweeps — continuous, constant-velocity, incommensurate periods, opposite
+  // directions (see note above). Time-based so velocity is constant on a long hold.
+  const t = f / fps;
+  const sweepA = interpolate((t % 2.7) / 2.7, [0, 1], [-24, 124]); // % pos, L->R
+  const sweepB = interpolate((t % 3.3) / 3.3, [0, 1], [124, -24]); // % pos, R->L
+  return (
+    <AbsoluteFill
+      style={{transformOrigin: '50% 50%', transform: `translate(${x}px, ${y}px) scale(${scale})`}}
+    >
+      {children}
+      <AbsoluteFill
+        style={{
+          pointerEvents: 'none',
+          mixBlendMode: 'screen',
+          background: `linear-gradient(100deg,
+            transparent ${sweepA - 26}%,
+            rgba(150,196,255,0.09) ${sweepA - 10}%,
+            rgba(206,228,255,0.22) ${sweepA}%,
+            rgba(150,196,255,0.09) ${sweepA + 10}%,
+            transparent ${sweepA + 26}%)`,
+        }}
+      />
+      <AbsoluteFill
+        style={{
+          pointerEvents: 'none',
+          mixBlendMode: 'screen',
+          background: `linear-gradient(80deg,
+            transparent ${sweepB - 24}%,
+            rgba(140,180,240,0.08) ${sweepB - 9}%,
+            rgba(190,214,250,0.18) ${sweepB}%,
+            rgba(140,180,240,0.08) ${sweepB + 9}%,
+            transparent ${sweepB + 24}%)`,
+        }}
+      />
+    </AbsoluteFill>
+  );
+};
+
 /** Continuous micro-drift so a figure that has finished counting/revealing still MOVES for its
  * ENTIRE on-screen span (a held stat/quote/tally is otherwise flagged near-still by the freeze
  * detector). This is a perpetual, eased Ken-Burns applied to the figure container (parent of the
@@ -167,9 +240,9 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
         const dur = Math.max(1, Math.round((b.end - b.start) * fps));
         return (
           <Sequence key={i} from={Math.round(b.start * fps)} durationInFrames={dur} name={`figure-${i}`}>
-            <AbsoluteFill>
+            <FigureScene dur={dur}>
               <SceneBed />
-              <AmbientMotion count={18} intensity={1.05} />
+              <AmbientMotion count={22} intensity={1.12} />
               <Drift>
                 {b.kind === 'stat' && (
                   <StatCounter
@@ -209,7 +282,7 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                 )}
                 {b.kind === 'quote' && <QuoteCard quote={b.quote} attribution={b.attribution} dur={dur} />}
               </Drift>
-            </AbsoluteFill>
+            </FigureScene>
           </Sequence>
         );
       })}
