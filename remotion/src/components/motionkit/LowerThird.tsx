@@ -1,0 +1,244 @@
+import React from 'react';
+import {
+  AbsoluteFill,
+  interpolate,
+  random,
+  spring,
+  useCurrentFrame,
+  useVideoConfig,
+} from 'remotion';
+import {Trail} from '@remotion/motion-blur';
+import {BRAND} from '../../brand';
+
+// =====================================================================
+// MOTIONKIT — LowerThird
+//   放送用ロワーサード。左からモーションブラー(Trail)付きでスライドイン、
+//   ゴールドのアクセントバーが scaleX で伸び、primary(太字)+secondary(抑え)が
+//   単語スタッガーのマスク切れ上がりで出現。終端で左へスライドアウト。
+//   透明オーバーレイ（全面バックドロップなし）。accent でバー色を上書き可能。
+//   品質ルール: 全モーションにイージング/spring（等速禁止）・opacity単独禁止・
+//   マスク切れ上がり・決定論的（useCurrentFrame + index + random('seed'+i)）。
+// =====================================================================
+
+// 秒→フレーム（fps基準、フレーム直書き禁止）
+const sec = (fps: number, s: number) => fps * s;
+
+// 単語単位のマスク切れ上がり（overflow:hidden + 内側translateYスライドアップ）
+const WordMask: React.FC<{
+  text: string;
+  fps: number;
+  startFrame: number;
+  color: string;
+  fontFamily: string;
+  fontSize: number;
+  fontWeight: number;
+  letterSpacing: number;
+  seed: string;
+}> = ({
+  text,
+  fps,
+  startFrame,
+  color,
+  fontFamily,
+  fontSize,
+  fontWeight,
+  letterSpacing,
+  seed,
+}) => {
+  const frame = useCurrentFrame();
+  const words = text.split(' ');
+  const stagger = Math.max(1, sec(fps, 0.05));
+  return (
+    <div
+      style={{
+        display: 'flex',
+        flexWrap: 'wrap',
+        color,
+        fontFamily,
+        fontSize,
+        fontWeight,
+        letterSpacing,
+        lineHeight: 1.02,
+      }}
+    >
+      {words.map((w, i) => {
+        // 決定論的な微ジッター（±0.6フレーム）
+        const jitter = (random(seed + i) - 0.5) * 1.2;
+        const cs = spring({
+          frame: frame - startFrame - i * stagger - jitter,
+          fps,
+          config: {damping: 16, mass: 0.9},
+        });
+        const y = interpolate(cs, [0, 1], [118, 0]);
+        return (
+          <span
+            key={i}
+            style={{
+              display: 'inline-block',
+              overflow: 'hidden',
+              paddingBottom: '0.14em',
+              marginRight: '0.32em',
+            }}
+          >
+            <span
+              style={{
+                display: 'inline-block',
+                transform: `translateY(${y}%)`,
+                whiteSpace: 'pre',
+              }}
+            >
+              {w}
+            </span>
+          </span>
+        );
+      })}
+    </div>
+  );
+};
+
+export const LowerThird: React.FC<{
+  primary: string;
+  secondary?: string;
+  accent?: string;
+  dur?: number;
+}> = ({primary, secondary, accent, dur}) => {
+  const frame = useCurrentFrame();
+  const {fps, durationInFrames} = useVideoConfig();
+  const total = dur ?? durationInFrames;
+  const barColor = accent ?? BRAND.color.gold;
+
+  // 入場：左から素早くスライドイン（イージング＝spring、等速禁止）
+  const enter = spring({
+    frame,
+    fps,
+    config: {damping: 20, mass: 1.05, stiffness: 140},
+  });
+  const enterX = interpolate(enter, [0, 1], [-960, 0]);
+
+  // 退場：終端で左へスライドアウト（spring）
+  const exitStart = total - sec(fps, 0.7);
+  const exit = spring({
+    frame: frame - exitStart,
+    fps,
+    config: {damping: 200, mass: 1},
+  });
+  const exitX = interpolate(exit, [0, 1], [0, -1020], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+
+  const slideX = enterX + exitX;
+
+  // アイドル：静止させない微ドリフト（sinイージング相当の連続運動）
+  const idleY = interpolate(
+    Math.sin((frame / fps) * 1.6),
+    [-1, 1],
+    [-2.2, 2.2],
+  );
+
+  // アクセントバー：scaleX で左origin から伸びる（少し遅延）
+  const barGrow = spring({
+    frame: frame - sec(fps, 0.12),
+    fps,
+    config: {damping: 22, mass: 1},
+  });
+  const barScaleX = interpolate(barGrow, [0, 1], [0, 1], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+  // バーのグロー脈動（発光の連続運動・静止回避）
+  const barGlow = interpolate(
+    Math.sin((frame / fps) * 2.4),
+    [-1, 1],
+    [0.45, 0.9],
+  );
+
+  // パネル背景の伸び上がり（開幅、opacity単独にしないため clip + translate と併用）
+  const panelGrow = spring({
+    frame: frame - sec(fps, 0.04),
+    fps,
+    config: {damping: 26, mass: 1},
+  });
+  const panelClip = interpolate(panelGrow, [0, 1], [100, 0], {
+    extrapolateLeft: 'clamp',
+    extrapolateRight: 'clamp',
+  });
+
+  const primaryStart = sec(fps, 0.22);
+  const secondaryStart = sec(fps, 0.42);
+
+  return (
+    <AbsoluteFill
+      style={{
+        justifyContent: 'flex-end',
+        alignItems: 'flex-start',
+        // オーバーレイ：全面バックドロップなし（透明）
+        backgroundColor: 'transparent',
+      }}
+    >
+      <Trail layers={6} lagInFrames={1.1} trailOpacity={0.5}>
+        <div
+          style={{
+            transform: `translate(${slideX}px, ${idleY}px)`,
+            margin: '0 0 96px 92px',
+            display: 'flex',
+            alignItems: 'stretch',
+          }}
+        >
+          {/* アクセントバー：左origin で scaleX 伸長＋発光脈動 */}
+          <div
+            style={{
+              width: 8,
+              alignSelf: 'stretch',
+              backgroundColor: barColor,
+              transform: `scaleX(${barScaleX})`,
+              transformOrigin: 'left center',
+              borderRadius: 2,
+              boxShadow: `0 0 ${18 + barGlow * 16}px ${barColor}`,
+              opacity: 0.4 + barGlow * 0.6,
+            }}
+          />
+          {/* パネル：ナビ→インクの半透明ストリップ（クリップで開く） */}
+          <div
+            style={{
+              position: 'relative',
+              overflow: 'hidden',
+              clipPath: `inset(0 ${panelClip}% 0 0)`,
+              background: `linear-gradient(100deg, ${BRAND.color.navy}E6 0%, ${BRAND.color.ink}D9 100%)`,
+              borderLeft: `1px solid ${barColor}55`,
+              backdropFilter: 'blur(3px)',
+              padding: '18px 30px 20px 26px',
+            }}
+          >
+            <WordMask
+              text={primary}
+              fps={fps}
+              startFrame={primaryStart}
+              color={BRAND.color.white}
+              fontFamily={BRAND.font.display}
+              fontSize={46}
+              fontWeight={900}
+              letterSpacing={0.5}
+              seed="lt-primary-"
+            />
+            {secondary ? (
+              <div style={{marginTop: 8}}>
+                <WordMask
+                  text={secondary}
+                  fps={fps}
+                  startFrame={secondaryStart}
+                  color={BRAND.color.silver}
+                  fontFamily={BRAND.font.body}
+                  fontSize={24}
+                  fontWeight={500}
+                  letterSpacing={1}
+                  seed="lt-secondary-"
+                />
+              </div>
+            ) : null}
+          </div>
+        </div>
+      </Trail>
+    </AbsoluteFill>
+  );
+};
