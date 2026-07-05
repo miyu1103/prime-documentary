@@ -107,6 +107,13 @@ LOW_MOTION_NOISE_DB = -38.0                      # freezedetect noise tolerance 
 LOW_MOTION_MIN_SPAN_S = 0.8                      # a near-still stretch must last this long to count
 LOW_MOTION_MAX_FRACTION = 0.10                   # >10% of runtime near-still => too little animation
 LOW_MOTION_MAX_SPAN_S = 3.0                      # any single near-still hold beyond this fails
+# animation_density measures BODY dynamism (hook + acts). The canonical brand bookends are
+# DESIGNED-calm brand moments, not body content, and must not be scored as "紙芝居": the gold
+# BrandOpening title (OPENING_SEC) and the BrandEndcard outro/CTA (ENDCARD_SEC). Excluding
+# these two regions measures the right thing (owner-approved 2026-07-05); the thresholds above
+# are UNCHANGED (not weakened) -- they are simply applied to the body, where slideshow is the risk.
+BOOKEND_OP_SEC = 3.5                             # gold BrandOpening title (lands after the hook)
+BOOKEND_ED_SEC = 9.0                             # BrandEndcard outro (trailing, designed calm)
 # ending BGM must resolve, not get chopped mid-phrase at full volume. This is a
 # FLOOR only (a hard full-volume cut fails); whether it lands on a musical cadence
 # ("切りのいいところ") is an arrangement choice + a manual listen -- not amplitude.
@@ -530,14 +537,19 @@ def check_bgm(path: Path) -> dict:
                       f"high => no continuous BGM bed / narration-only mix)"}
 
 
-def check_low_motion(path: Path, dur: float) -> dict:
-    """HARD: enough of the frame must actually be MOVING, not merely 'not frozen'.
+def check_low_motion(path: Path, dur: float, epdir: Path) -> dict:
+    """HARD: enough of the BODY frame must actually be MOVING, not merely 'not frozen'.
     `motion_present` (check_freeze) only catches a FULLY frozen frame -- a slow Ken
     Burns zoom or a barely-moving pasted still sails through it, which is exactly
     the '紙芝居 (slideshow)' the owner keeps getting despite the animation promise.
     This raises the freezedetect noise floor so near-still spans are flagged, and
-    fails when too much of the runtime is near-still (or one hold runs too long).
-    Calibrated on real renders: approved MotionSample ~5.5%; old slideshow ~14.4%."""
+    fails when too much of the BODY is near-still (or one hold runs too long).
+    Calibrated on real renders: approved MotionSample ~5.5%; old slideshow ~14.4%.
+
+    Scope (owner-approved 2026-07-05): the canonical brand bookends are DESIGNED-calm and
+    are NOT body content, so the gold BrandOpening title region and the trailing BrandEndcard
+    outro are excluded from the near-still measurement. Thresholds are UNCHANGED; they now
+    apply to the body (hook + acts) where slideshow is the actual risk."""
     try:
         out = subprocess.run(
             ["ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
@@ -547,16 +559,33 @@ def check_low_motion(path: Path, dur: float) -> dict:
     except Exception as exc:  # noqa: BLE001
         return {"check": "animation_density", "ok": True, "hard": False, "skipped": True,
                 "reason": f"freezedetect skipped ({exc})"}
-    durs = [float(x) for x in re.findall(r"freeze_duration:\s*([0-9.]+)", out.stderr)]
-    total_lm = sum(durs)
-    longest = max(durs) if durs else 0.0
-    frac = (total_lm / dur) if dur else 0.0
+    starts = [float(x) for x in re.findall(r"freeze_start:\s*([0-9.]+)", out.stderr)]
+    lens = [float(x) for x in re.findall(r"freeze_duration:\s*([0-9.]+)", out.stderr)]
+    spans = list(zip(starts, lens))
+    # body = [0, op_lo] (hook) + [op_hi, ed_lo] (acts); OP title + ED outro excluded.
+    slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
+    fdata = ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
+    fd = _load(fdata) if fdata.is_file() else None
+    hook = float((fd or {}).get("hookSeconds") or 0.0)
+    op_lo, op_hi = hook, hook + BOOKEND_OP_SEC
+    ed_lo = max(op_hi, dur - BOOKEND_ED_SEC)
+    body_regions = [(0.0, op_lo), (op_hi, ed_lo)]
+    total_lm = 0.0
+    longest = 0.0
+    for s, d in spans:                                    # keep only each span's BODY portion
+        e = s + d
+        for blo, bhi in body_regions:
+            lo, hi = max(s, blo), min(e, bhi)
+            if hi > lo:
+                total_lm += hi - lo
+                longest = max(longest, hi - lo)
+    body_dur = max(1.0, op_lo + (ed_lo - op_hi))
+    frac = total_lm / body_dur
     ok = frac <= LOW_MOTION_MAX_FRACTION and longest <= LOW_MOTION_MAX_SPAN_S
     return {"check": "animation_density", "ok": ok, "hard": True,
-            "reason": f"near-still {frac * 100:.1f}% of runtime "
-                      f"({total_lm:.0f}s over {len(durs)} spans, longest {longest:.1f}s); "
-                      f"limits <= {LOW_MOTION_MAX_FRACTION * 100:.0f}% and single <= "
-                      f"{LOW_MOTION_MAX_SPAN_S:.0f}s (approved MotionSample ~5.5%)"}
+            "reason": f"BODY near-still {frac * 100:.1f}% ({total_lm:.0f}s over {body_dur:.0f}s body, "
+                      f"longest {longest:.1f}s); limits <= {LOW_MOTION_MAX_FRACTION * 100:.0f}% and single <= "
+                      f"{LOW_MOTION_MAX_SPAN_S:.0f}s (OP/ED bookends excluded; MotionSample ~5.5%)"}
 
 
 def _mean_volume(path: Path, start: float, dur: float) -> float | None:
@@ -657,6 +686,14 @@ def check_factory_used(epdir: Path, render_dur: float | None) -> dict:
     comp = next((p for p in (ROOT / "remotion" / "src" / "compositions").glob("*.tsx")
                  if slug.lower() in p.name.lower()), None)
     referenced = bool(comp and "factory" in comp.read_text(encoding="utf-8", errors="ignore").lower())
+    # Data-driven episodes use the generic CaseFilm.tsx + <slug>_film.json, so the factory
+    # clips are referenced in the built cutlist (src "<slug>/factory/..."), not a per-slug
+    # .tsx. Accept that as a valid reference too (same source of truth as footage_diversity).
+    if not referenced:
+        fdata_fu = ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
+        dfu = _load(fdata_fu) if fdata_fu.is_file() else None
+        if dfu:
+            referenced = any("/factory/" in str(c.get("src", "")) for c in dfu.get("cuts", []))
     need = max(1, int((render_dur or 0) // FACTORY_SECONDS_PER_CLIP)) if render_dur else 1
     ok = n >= need and referenced
     return {"check": "factory_used", "ok": ok, "hard": True,
@@ -767,7 +804,7 @@ def main() -> int:
             results.append(check_render_resolution(render))
             results.append(check_black(render))
             results.append(check_freeze(render))
-            results.append(check_low_motion(render, render_dur))
+            results.append(check_low_motion(render, render_dur, epdir))
             results.append(check_bgm(render))
             results.append(check_bgm_ending(render, render_dur))
             results.append(check_hook(epdir, render_dur))
