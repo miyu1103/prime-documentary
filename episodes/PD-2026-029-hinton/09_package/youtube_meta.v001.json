@@ -1,35 +1,50 @@
 {
   "episode_id": "PD-2026-029-hinton",
   "revision": "v001",
-  "status": "draft_pending_legal_review_and_publish_approval",
-  "video_file": "remotion/out/hinton_final.v001.bgm.mp4",
-  "video_sha256": "sha256:69dc3efd39e4ed89136a755a...",
-  "thumbnail_candidates": [
-    "10_thumbnail/thumbnail_A.png",
-    "10_thumbnail/thumbnail_B.png",
-    "10_thumbnail/thumbnail_C.png"
+  "status": "scheduled",
+  "title": "Alabama Tried to Execute an Innocent Man for 30 Years",
+  "tags": [
+    "death row",
+    "wrongful conviction",
+    "Anthony Ray Hinton",
+    "Hinton v Alabama",
+    "Equal Justice Initiative",
+    "criminal justice",
+    "exoneration",
+    "Supreme Court",
+    "documentary",
+    "true story"
   ],
-  "thumbnail_selected": "09_package/thumbnail.selected.png (= A)",
-  "title_candidates": [
-    "Alabama Tried to Execute an Innocent Man for 30 Years",
-    "Thirty Years on Death Row — For a Crime He Never Committed"
-  ],
-  "title_selected": "Alabama Tried to Execute an Innocent Man for 30 Years",
-  "description": "For thirty years, the state of Alabama prepared to execute Anthony Ray Hinton for two murders he did not commit. His conviction rested on discredited ballistics testimony and a defense that could not afford a qualified expert. This is how an innocent man survived death row — and how the Equal Justice Initiative and a unanimous U.S. Supreme Court (Hinton v. Alabama, 2014) finally set him free.\n\nChapters: the arrest and the alibi · the collapse of the trial · thirty years in a cell · the reversal.\n\nPrime Documentary tells rigorously researched stories about justice and the law. This film includes AI-generated imagery used for illustration only; it is not authentic archival footage and depicts no real, identifiable individuals. Sources: U.S. Supreme Court opinion in Hinton v. Alabama (2014), the Equal Justice Initiative, court records, and public reporting.\n\nIf this changed how you see the justice system, subscribe.",
-  "tags": ["death row", "wrongful conviction", "Anthony Ray Hinton", "Hinton v Alabama", "Equal Justice Initiative", "criminal justice", "ballistics evidence", "exoneration", "Supreme Court", "documentary", "true story"],
-  "category": "Education",
-  "language": "en",
-  "privacy": "private",
-  "contains_synthetic_media": true,
+  "category_id": "27",
+  "default_language": "en",
+  "default_audio_language": "en",
   "made_for_kids": false,
-  "proposed_publish_at": "2026-07-14T12:00:00+09:00",
-  "publish_approved": false,
-  "gates_remaining": [
-    "R2 pre-publish legal / rights review signed off (see LEGAL_REVIEW_PACKET.v001.md)",
-    "owner first-cut approval",
-    "owner title + thumbnail approval",
-    "owner explicit publish approval (set publish_approved=true + approval id)"
+  "thumbnail_file": "episodes/PD-2026-029-hinton/09_package/thumbnail.selected.png",
+  "description_file": "episodes/PD-2026-029-hinton/09_package/description.v001.txt",
+  "video_sha256": "sha256:69dc3efd39e4ed89136a755a5a2f0a359872e2398c84cf21aca8554bff047dca",
+  "thumbnail_sha256": "sha256:608aecc5db06c36f6ba9e0405302d4f73eb2840cc538370a99c98886e5af1d22",
+  "intended_schedule_local": "2026-07-14T12:00:00+09:00",
+  "intended_schedule_utc": "2026-07-14T03:00:00Z",
+  "upload_performed": true,
+  "publish_performed": false,
+  "schedule_performed": true,
+  "contains_synthetic_media": true,
+  "privacy": "private",
+  "publish_approved": true,
+  "approval_ids": [
+    "APR-0001"
   ],
-  "acceptance_receipt": "09_package/acceptance_receipt.v001.json (STATUS PASS, sha-matched)",
-  "generated_at": "2026-07-05 (Claude prep; NOT yet uploaded or scheduled)"
+  "publish_gate": "owner_approved_scheduled_publication",
+  "video_id": "Qyad4FejCIc",
+  "video_url": "https://youtu.be/Qyad4FejCIc",
+  "studio_url": "https://studio.youtube.com/video/Qyad4FejCIc/edit",
+  "youtube_channel_id": "UCuQPtAz1rca9eJ4xhvX0yKA",
+  "scheduled_at_local": "2026-07-14T12:00:00+09:00",
+  "scheduled_at_utc": "2026-07-14T03:00:00Z",
+  "publish_at_platform": "2026-07-14T03:00:00Z",
+  "schedule_result": "episodes/PD-2026-029-hinton/09_package/youtube_schedule_result.v001.json",
+  "status_verify": "episodes/PD-2026-029-hinton/09_package/youtube_status_verify.v001.json",
+  "captions_uploaded": true,
+  "captions_result": "episodes/PD-2026-029-hinton/09_package/youtube_captions_result.v001.json",
+  "processing_status_verified_at": "2026-07-05T14:33:21.962586+00:00"
 }
