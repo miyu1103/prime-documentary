@@ -102,9 +102,9 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: numbe
 const BleedStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
   const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
-  const bgX = interpolate(p, [0, 1], [-38 * dir, 38 * dir]);
-  const fgX = interpolate(p, [0, 1], [24 * dir, -24 * dir]);
-  const fgS = interpolate(p, [0, 1], [1.05, 1.13]);
+  const bgX = interpolate(p, [0, 1], [-52 * dir, 52 * dir]);
+  const fgX = interpolate(p, [0, 1], [34 * dir, -34 * dir]);
+  const fgS = interpolate(p, [0, 1], [1.05, 1.18]);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
       <AbsoluteFill style={{transform: `translateX(${bgX}px) scale(1.34)`, filter: 'blur(22px) brightness(0.62)'}}>
@@ -122,11 +122,11 @@ const BleedStill: React.FC<{src: string; seed: string; dir: number; dur: number}
 /** shared divergent-parallax base (bg blur + sharp fg drift opposite) — genuine depth motion,
  * never a flat zoom, and enough pixel movement that nothing reads as a frozen slide. */
 const parallax = (p: number, dir: number) => ({
-  bgX: interpolate(p, [0, 1], [-46 * dir, 46 * dir]),
-  bgY: interpolate(p, [0, 1], [-20 * dir, 20 * dir]),
-  fgX: interpolate(p, [0, 1], [28 * dir, -28 * dir]),
-  fgY: interpolate(p, [0, 1], [14, -14]),
-  fgS: interpolate(p, [0, 1], [1.05, 1.14]),
+  bgX: interpolate(p, [0, 1], [-62 * dir, 62 * dir]),
+  bgY: interpolate(p, [0, 1], [-26 * dir, 26 * dir]),
+  fgX: interpolate(p, [0, 1], [40 * dir, -40 * dir]),
+  fgY: interpolate(p, [0, 1], [18, -18]),
+  fgS: interpolate(p, [0, 1], [1.05, 1.2]),
 });
 
 /** scan: parallax base + a thermal light pool and a slow-drifting measurement grid. */
