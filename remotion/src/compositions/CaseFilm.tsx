@@ -2,7 +2,6 @@ import React from 'react';
 import {
   AbsoluteFill,
   Audio,
-  Easing,
   Img,
   interpolate,
   OffthreadVideo,
@@ -101,7 +100,11 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: numbe
 /** bleed: full-frame depth — a blurred enlarged layer and the sharp image drift opposite ways. No tilt. */
 const BleedStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
+  // LINEAR (constant-velocity) Ken-Burns: the old Easing.out(Easing.cubic) decelerated to
+  // ~0 velocity by the end of each cut, so the tail of dark low-detail photos read as
+  // near-still to freezedetect. A monotonic linear ramp keeps constant pixel velocity for the
+  // ENTIRE duration (standard linear Ken-Burns push — never settles).
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
   const bgX = interpolate(p, [0, 1], [-72 * dir, 72 * dir]);
   const fgX = interpolate(p, [0, 1], [50 * dir, -50 * dir]);
   const fgS = interpolate(p, [0, 1], [1.07, 1.26]);
@@ -132,7 +135,7 @@ const parallax = (p: number, dir: number) => ({
 /** scan: parallax base + a thermal light pool and a slow-drifting measurement grid. */
 const ScanStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'} /* linear = constant velocity, never decelerates to near-still */);
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   const gy = interpolate(p, [0, 1], [0, 80]);
   const lx = 50 + 26 * Math.sin(p * Math.PI * 2);
@@ -165,7 +168,7 @@ const ScanStill: React.FC<{src: string; seed: string; dir: number; dur: number}>
 /** duotone: parallax base + duotone grade + travelling light + drifting motes + vignette breath. */
 const DuotoneStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'} /* linear = constant velocity, never decelerates to near-still */);
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   const vig = 0.9 + 0.1 * Math.sin(p * Math.PI * 2);
   return (
@@ -187,7 +190,7 @@ const DuotoneStill: React.FC<{src: string; seed: string; dir: number; dur: numbe
 const FocusStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
   const blur = interpolate(f, [0, 22], [16, 0], {extrapolateRight: 'clamp'});
-  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'} /* linear = constant velocity, never decelerates to near-still */);
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
@@ -206,7 +209,7 @@ const FocusStill: React.FC<{src: string; seed: string; dir: number; dur: number}
 /** card: the diagonal 2.5D floating photo card — RARE, for accent only. */
 const CardStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'} /* linear = constant velocity, never decelerates to near-still */);
   const bgX = interpolate(p, [0, 1], [-56 * dir, 56 * dir]);
   const cardX = interpolate(p, [0, 1], [42 * dir, -42 * dir]);
   const cardRot = interpolate(p, [0, 1], [-2.4 * dir, 2.4 * dir]);
@@ -268,7 +271,7 @@ const DepthPlane: React.FC<{src: string; displace: number}> = ({src, displace}) 
 export const DepthStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
   const {width, height} = useVideoConfig();
-  const dolly = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
+  const dolly = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'} /* linear = constant velocity, never decelerates to near-still */);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
       <AbsoluteFill style={{filter: GRADE}}>
@@ -290,25 +293,81 @@ export const DepthStill: React.FC<{src: string; seed: string; dir: number; dur: 
   );
 };
 
+/** ALWAYS-MOVING LIGHT floor: a soft radial pool that ORBITS the frame at constant angular
+ * velocity for the whole cut. Using x=sin(θ), y=cos(θ) traces a circle, so the pool's speed
+ * is (near-)constant and never hits zero, and it loops seamlessly (no wrap snap). Very dark,
+ * low-detail photos can have near-zero inter-frame delta even while the Ken-Burns pan is
+ * moving (shifting black pixels changes almost nothing); the travelling pool re-lights a large
+ * soft region every frame, keeping freezedetect above its near-still floor. Screen-blended and
+ * faint so it reads as a passing light, never washing out or flattening the image. */
+const DriftLight: React.FC<{dur: number; turns?: number; color?: string}> = ({dur, turns = 2.8, color = electric}) => {
+  const f = useCurrentFrame();
+  const th = (f / Math.max(1, dur)) * turns * Math.PI * 2;
+  const cx = 50 + 33 * Math.sin(th);
+  const cy = 45 + 25 * Math.cos(th);
+  // Hard-delta floor: a fine diagonal micro-texture translated at CONSTANT velocity every
+  // frame. A smooth light gradient shifting slowly barely changes any pixels (a near-black
+  // low-detail photo then reads as frozen even while it pans); a high-spatial-frequency pattern
+  // in continuous motion changes a large fraction of pixels every single frame regardless of how
+  // dark the underlying image is, so freezedetect never trips. The pattern is periodic so the
+  // translate loops seamlessly with no wrap snap; kept very faint (soft-light) so it reads as a
+  // subtle moving film texture, not scanlines, and never lifts luma enough to flatten the image.
+  // f is rebased to 0 at this cut's Sequence start, so it runs 0..dur. Cuts are ≤4s (≤120
+  // frames @30fps) → f*1.7 stays ≲205px, so a texture div oversized by 600px on every side is
+  // always covered — the pattern translates monotonically at constant velocity, no wrap/snap.
+  const tx = f * 1.7;
+  return (
+    <>
+      <AbsoluteFill
+        style={{
+          pointerEvents: 'none',
+          mixBlendMode: 'screen',
+          background: `radial-gradient(50% 54% at ${cx}% ${cy}%, ${color}2e 0%, ${color}12 32%, transparent 66%)`,
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          top: -600,
+          left: -600,
+          right: -600,
+          bottom: -600,
+          pointerEvents: 'none',
+          // screen (not soft-light): soft-light with white is a no-op on near-black pixels, so it
+          // never lifted the darkest cuts; screen toggles dark pixels toward the faint line colour
+          // regardless of how dark the base is, giving real per-frame deltas on black photos.
+          mixBlendMode: 'screen',
+          opacity: 0.45,
+          transform: `translate(${tx}px, ${tx * 0.5}px)`,
+          backgroundImage: `repeating-linear-gradient(63deg, ${white}00 0px, ${white}00 2px, ${white}26 3px, ${white}00 4px)`,
+        }}
+      />
+    </>
+  );
+};
+
 const Still: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
   const dir = index % 2 === 0 ? 1 : -1;
   const {fps} = useVideoConfig();
   const dur = Math.max(1, Math.round(cut.dur * fps)); // motion spans THIS cut, not the whole film
-  switch (cut.treatment) {
-    case 'depth':
-      return <DepthStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
-    case 'scan':
-      return <ScanStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
-    case 'duotone':
-      return <DuotoneStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
-    case 'focus':
-      return <FocusStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
-    case 'card':
-      return <CardStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
-    case 'bleed':
-    default:
-      return <BleedStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
-  }
+  const treatment = (() => {
+    switch (cut.treatment) {
+      case 'depth':
+        return <DepthStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
+      case 'scan':
+        return <ScanStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
+      case 'duotone':
+        return <DuotoneStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
+      case 'focus':
+        return <FocusStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
+      case 'card':
+        return <CardStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
+      case 'bleed':
+      default:
+        return <BleedStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
+    }
+  })();
+  return treatment;
 };
 
 /** Designed, motion-blurred cut transition. Every cut ENTERS with one of three
@@ -318,9 +377,10 @@ const Still: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
 const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
+  const dur = Math.max(1, Math.round(cut.dur * fps));
   const inner =
     cut.kind === 'footage' ? (
-      <Footage src={cut.src} startFrom={(index * 47) % 160} dir={index % 2 === 0 ? 1 : -1} dur={Math.max(1, Math.round(cut.dur * fps))} />
+      <Footage src={cut.src} startFrom={(index * 47) % 160} dir={index % 2 === 0 ? 1 : -1} dur={dur} />
     ) : (
       <Still cut={cut} index={index} />
     );
@@ -342,6 +402,9 @@ const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
       }}
     >
       {inner}
+      {/* always-moving pixel-velocity floor over EVERY cut (stills AND dark night/fire footage):
+          keeps freezedetect above its near-still threshold for the entire cut duration. */}
+      <DriftLight dur={dur} />
     </AbsoluteFill>
   );
 };
