@@ -444,14 +444,43 @@ def check_structure(epdir: Path) -> dict:
             "reason": (f"{' -> '.join(ordered)}" if ok else "; ".join(problems))}
 
 
+def _resolve_bookends_comp(epdir: Path, cdir: Path) -> Path | None:
+    """Resolve the composition .tsx whose OP/ED bookends must be inspected.
+
+    EP32 false-positive fix: a DATA-DRIVEN CaseFilm episode (a
+    `remotion/src/data/<slug>_film.json` exists) renders through the shared
+    `CaseFilm.tsx` renderer -- so inspect THAT actual renderer, not a slug-named
+    file that merely matches. EP32 (slug 'carsearch') added a THUMBNAIL still
+    component `CarsearchThumbnails.tsx` which the old slug-glob picked up and, being
+    a still, correctly carries no video bookends -> a wrong HARD FAIL.
+
+    Resolution order:
+      1. data-driven episode (`<slug>_film.json` present) -> `CaseFilm.tsx`.
+      2. else the slug-name heuristic, but EXCLUDING thumbnail still components
+         (files ending `Thumbnail.tsx` / `Thumbnails.tsx`) which are stills and
+         never carry video bookends, so they can never be mis-picked.
+    """
+    slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
+    fdata = ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
+    if fdata.is_file():
+        casefilm = cdir / "CaseFilm.tsx"
+        if casefilm.is_file():
+            return casefilm
+    return next((p for p in cdir.glob("*.tsx")
+                 if slug.lower() in p.name.lower()
+                 and not re.search(r"thumbnails?\.tsx$", p.name, re.IGNORECASE)), None)
+
+
 def check_bookends(epdir: Path) -> dict:
     """HARD: OP/ED must be the canonical channel bookends (BrandOpening +
     BrandEndcard from components/Bookends), not a per-episode reinvention.
-    Follows one import hop into the shared renderer (CaseFilm /
-    CasePremiumFromRoughCut) when the episode composition delegates to it."""
+    For a data-driven CaseFilm episode inspects the real shared renderer
+    (CaseFilm.tsx); otherwise resolves the slug-named composition (thumbnail
+    stills excluded) and follows one import hop into the shared renderer
+    (CaseFilm / CasePremiumFromRoughCut) when the composition delegates to it."""
     slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
     cdir = ROOT / "remotion" / "src" / "compositions"
-    comp = next((p for p in cdir.glob("*.tsx") if slug.lower() in p.name.lower()), None)
+    comp = _resolve_bookends_comp(epdir, cdir)
     if comp is None:
         return {"check": "op_ed_bookends", "ok": True, "hard": False, "skipped": True,
                 "reason": f"no composition matching slug '{slug}'"}

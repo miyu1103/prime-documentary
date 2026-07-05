@@ -85,17 +85,38 @@ const SceneBed: React.FC = () => {
   );
 };
 
-/** Continuous micro-drift so a figure that has finished counting still MOVES (a held stat is
- * otherwise flagged near-still by animation_density). Slow parallax pan + breathing scale. */
+/** Continuous micro-drift so a figure that has finished counting/revealing still MOVES for its
+ * ENTIRE on-screen span (a held stat/quote/tally is otherwise flagged near-still by the freeze
+ * detector). This is a perpetual, eased Ken-Burns applied to the figure container (parent of the
+ * diagram), layered ON TOP of the figure's own reveal so reveals are untouched.
+ *
+ * Why it never freezes, even on a 7s hold:
+ *  - Motion is TIME-based (t = frame/fps), NOT normalized to the clip duration, so a long hold does
+ *    not slow the motion down — velocity is identical on second 1 and second 7.
+ *  - Each axis is a SUM of sinusoids at DISTINCT, incommensurate periods (pan x: 7.3s+2.9s,
+ *    pan y: 6.1s+2.3s, scale: 9.0s). A single sinusoid has zero velocity at its extremes; summing
+ *    incommensurate periods means the three axes are never simultaneously at an extreme, so the
+ *    composited frame is always changing. The short ~2-3s micro terms keep per-frame pixel velocity
+ *    comfortably above the freezedetect floor across the whole hold.
+ *  - Sinusoids are inherently eased (smooth accel/decel) — no linear ramps, no rotation.
+ *
+ * Legibility / safety: scale stays >= 1.0 (only ever pushes IN, never shrinks -> no black reveal),
+ * amplitude is small (x <= +/-17px, y <= +/-11px, scale 1.001..1.035) so centered content stays
+ * centered and never leaves frame; the un-drifted SceneBed behind covers any sub-pixel edge. */
+const TAU = Math.PI * 2;
 const Drift: React.FC<{children: React.ReactNode}> = ({children}) => {
   const f = useCurrentFrame();
-  const {durationInFrames: d} = useVideoConfig();
-  const p = interpolate(f, [0, d], [0, 1], {extrapolateRight: 'clamp'});
-  const x = Math.sin(p * Math.PI * 2) * 14;
-  const y = Math.cos(p * Math.PI * 2) * 9;
-  const s = 1.015 + 0.02 * p; // gentle continuous push-in
+  const {fps} = useVideoConfig();
+  const t = f / fps; // seconds — continuous, independent of clip length -> never stops on a hold
+  // pan: slow primary sway + faster small micro-term (the micro-term guarantees per-frame velocity)
+  const x = 13 * Math.sin((TAU * t) / 7.3) + 4 * Math.sin((TAU * t) / 2.9 + 1.1);
+  const y = 8 * Math.cos((TAU * t) / 6.1) + 3 * Math.sin((TAU * t) / 2.3 + 0.6);
+  // breathing scale: 1.001 .. 1.035 (always >= 1.0 so the figure never shrinks below full frame)
+  const s = 1.018 + 0.017 * Math.sin((TAU * t) / 9.0);
   return (
-    <AbsoluteFill style={{transform: `translate(${x}px, ${y}px) scale(${s})`}}>{children}</AbsoluteFill>
+    <AbsoluteFill style={{transformOrigin: '50% 50%', transform: `translate(${x}px, ${y}px) scale(${s})`}}>
+      {children}
+    </AbsoluteFill>
   );
 };
 

@@ -27,6 +27,44 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_EP = "PD-2026-002-gideon"
 MAX_WORDS, MAX_CHARS = 8, 44  # ~7-8 words / ~42-44 chars per caption line
+# Reading-speed ceiling. The acceptance gate (scripts/check_final_acceptance.py
+# check_caption_format) hard-fails a cue whose chars/second exceeds MAX_CPS = 27.0,
+# measuring chars = sum(len(body line)). We target a stricter, standard-readability
+# ceiling (17 cps) so every cue clears the gate with margin; GATE_CPS is kept only for
+# reporting residuals against the actual hard limit. Cues too fast are held longer by
+# extending ONLY their END time into the gap before the next cue (never overlapping,
+# never shrinking, never moving a start) so the audio stays in sync. MIN_CUE_SECONDS is
+# an absolute on-screen floor so even a short cue does not flash.
+TARGET_CPS = 17.0        # readability ceiling we aim for (stricter than the gate)
+GATE_CPS = 27.0          # the hard gate limit (check_final_acceptance MAX_CPS); reporting only
+MIN_CUE_SECONDS = 0.8    # absolute minimum on-screen time per cue
+CUE_GAP = 0.001          # keep a hair of separation so cues never overlap (monotonic)
+# A cue's end may be extended at most this far past its forced-alignment end (and, via the
+# cascade, a cue's start may lag its aligned start by at most this much). This HARD-BOUNDS
+# desync: without it, a long contiguous run of mis-timed tiny cues would cascade an
+# ever-growing lag (observed ~28 s). Capped, drift can never exceed MAX_LAG_SECONDS and
+# self-resets at the next cue with slack; genuinely un-holdable dense runs stay as residual
+# cps violations rather than desyncing the whole track (the top priority is audio sync).
+# 1.0 s is within normal subtitle tolerance (a caption may trail its word by up to a second,
+# never lead it); larger budgets give diminishing returns (see the MAX_LAG sweep) and only add
+# desync, so this is the safe knee of the curve for the READABILITY target (17 cps). A second,
+# larger budget (HARD_MAX_LAG_SECONDS) is spent ONLY on the handful of cues that would otherwise
+# breach the gate ceiling (GATE_CPS) -- i.e. real unreadability -- so nearly all cues keep <=1 s
+# lag and only the few genuinely-cramped cues borrow more to clear the hard gate.
+MAX_LAG_SECONDS = 1.0
+HARD_MAX_LAG_SECONDS = 2.0  # extra budget used only to pull a cue under the GATE ceiling
+# A hair under GATE_CPS so an enforced cue lands strictly inside the gate (which fails on > MAX_CPS).
+ENFORCE_GATE_CPS = 26.0
+# align_general only lets a word MATCH AHEAD of the current whisper cursor (skip intervening
+# whisper words) when the token is distinctive (>= this many chars). Short/common words ("the",
+# "a", "of") were matching a *later* occurrence within the +6 lookahead and skipping real words,
+# so the whisper cursor drained ~260 words too fast and the whole outro was left unanchored --
+# collapsing ~40 caption cues onto the audio-end timestamp (the dominant cps-violation source).
+# Requiring distinctiveness for a forward skip keeps legitimate re-sync (after a whisper
+# insertion of a content word) while removing the spurious short-word jumps. A match at the
+# current cursor is always allowed; this only constrains skipping ahead. Verbatim text/order is
+# unchanged, so the 字幕=ナレ equality check is unaffected (it is timing-independent).
+SKIP_AHEAD_MIN_CHARS = 6
 
 
 def norm(w): return re.sub(r"[^a-z0-9]", "", w.lower())
@@ -238,7 +276,11 @@ def align_general(chunks, master):
         k = j; found = None
         while k < min(j+6, len(words)):
             wn = words[k]["n"]
-            if wn == tn or (len(tn) >= 4 and wn.startswith(tn[:4])) or (len(wn) >= 4 and tn.startswith(wn[:4])):
+            matches = (wn == tn or (len(tn) >= 4 and wn.startswith(tn[:4]))
+                       or (len(wn) >= 4 and tn.startswith(wn[:4])))
+            # allow a match at the cursor always; only allow SKIPPING ahead for a distinctive
+            # token, so short/common words cannot drain the whisper cursor early (drift fix)
+            if matches and (k == j or len(tn) >= SKIP_AHEAD_MIN_CHARS):
                 found = k; break
             k += 1
         if found is not None:
@@ -280,8 +322,77 @@ def segment_only(chunks):
     return [line for c in chunks for line, _a, _b in split_lines(glue_punct(c["text"].split()))]
 
 
+def _cps(ln, dur):
+    """Reading speed of a cue, measured exactly as the acceptance gate does: cue char
+    count (len of the on-screen text, spaces included) divided by on-screen seconds."""
+    return (len(ln) / dur) if dur > 0 else float("inf")
+
+
+def enforce_reading_speed(fixed):
+    """Hold too-fast cues on screen long enough to read, WITHOUT letting a caption lead its
+    audio or overlap a neighbour.
+
+    Two mechanisms, applied left-to-right in one pass:
+      1. GAP FILL (the safe, no-side-effect case): a too-fast cue's END is extended into any
+         silent gap before the next cue starts. This alone fixes cues that are followed by a
+         pause and never shifts anything.
+      2. BOUNDED FORWARD REFLOW (needed for contiguous dense speech, where there is no gap):
+         when a cue still cannot reach a readable speed / the MIN_CUE_SECONDS floor, it may
+         push the NEXT cue's START later -- but only LATER, never earlier, so a caption never
+         appears before its words are spoken (it can lag slightly, never lead). The push is
+         absorbed by the next cue's surplus reading time: because most cues run far longer
+         than they need (median ~1.9 s here), the lag self-resets to zero at the very next
+         slack cue (its original start is already past our end, so no push carries forward).
+         Drift is therefore bounded to a single dense burst, and every cue keeps its verbatim
+         text and breath-unit segmentation -- only its on-screen window moves, forward, a
+         fraction of a second.
+
+    A cue's START is only ever moved LATER (cascaded from the previous cue's end), never
+    earlier than the forced-alignment start, so sync to the audio is preserved (captions
+    never precede speech). Returns (new_list, residual_target, residual_gate, max_lag) where
+    the residuals count cues still over TARGET_CPS / GATE_CPS (should be ~0 for the gate),
+    and max_lag is the largest forward start shift introduced (seconds)."""
+    out = []
+    max_lag = 0.0
+    n = len(fixed)
+    prev_end = None            # running end of the previously emitted cue (may be pushed later)
+    for i, (s, e, ln) in enumerate(fixed):
+        orig_s = s
+        # cascade: this cue can only start at/after the previous (possibly-extended) cue's end,
+        # and never earlier than its own aligned start -> a caption never leads its audio. No
+        # explicit lag clamp is needed here: the END cap below bounds each cue's extension to
+        # MAX_LAG past the NEXT cue's start, which in turn bounds this start's lag to ~MAX_LAG
+        # and guarantees non-overlap without ever forcing s below the previous end.
+        if prev_end is not None and s < prev_end + CUE_GAP:
+            s = prev_end + CUE_GAP
+        max_lag = max(max_lag, s - orig_s)
+        next_start = fixed[i + 1][0] if i + 1 < n else e
+        # how long this cue WANTS to stay up: enough for TARGET_CPS AND the min on-screen floor
+        want_end = s + max(len(ln) / TARGET_CPS, MIN_CUE_SECONDS)
+        # extension ceiling: up to MAX_LAG_SECONDS past the NEXT cue's ORIGINAL start. When a
+        # silent gap follows, this consumes the whole gap first (that part shifts nothing -> zero
+        # desync); only the last MAX_LAG seconds ever borrow into the next cue, bounding how far
+        # its start is pushed. The last cue has no successor -> cap at its own end + MAX_LAG.
+        cap = next_start + MAX_LAG_SECONDS
+        new_e = min(max(e, want_end), cap)
+        # If the cue is STILL over the hard gate ceiling (genuinely unreadable), spend the larger
+        # HARD budget -- but only as much as needed to clear the gate -- so gate failures are
+        # eliminated while >1 s lag stays confined to these few cramped cues.
+        if _cps(ln, new_e - s) > GATE_CPS:
+            hard_cap = next_start + HARD_MAX_LAG_SECONDS
+            new_e = min(max(new_e, s + len(ln) / ENFORCE_GATE_CPS), hard_cap)
+        if new_e <= s:                       # degenerate aligned window: give it a readable floor
+            new_e = s + max(len(ln) / GATE_CPS, MIN_CUE_SECONDS)
+        out.append((s, new_e, ln))
+        prev_end = new_e
+    residual_target = sum(1 for s, e, ln in out if _cps(ln, e - s) > TARGET_CPS)
+    residual_gate = sum(1 for s, e, ln in out if _cps(ln, e - s) > GATE_CPS)
+    return out, residual_target, residual_gate, max_lag
+
+
 def write_srt(out_path, entries):
-    """entries: list of (start, end, line). Enforce monotonic, non-overlapping times; write SRT."""
+    """entries: list of (start, end, line). Enforce monotonic, non-overlapping times, then
+    a readable reading speed (hold too-fast cues longer into the following gap); write SRT."""
     fixed = []
     for s, e, ln in entries:
         if fixed and s < fixed[-1][1]:
@@ -289,6 +400,14 @@ def write_srt(out_path, entries):
         if e <= s:
             e = s+0.5
         fixed.append((s, e, ln))
+    before_gate = sum(1 for s, e, ln in fixed if _cps(ln, e - s) > GATE_CPS)
+    before_target = sum(1 for s, e, ln in fixed if _cps(ln, e - s) > TARGET_CPS)
+    fixed, residual_target, residual_gate, max_lag = enforce_reading_speed(fixed)
+    print(f"  cps: before {before_gate} over gate({GATE_CPS:.0f}) / "
+          f"{before_target} over target({TARGET_CPS:.0f})  ->  after "
+          f"{residual_gate} over gate / {residual_target} over target"
+          f"  (max forward lag {max_lag:.2f}s, self-resetting)"
+          + ("" if residual_gate == 0 else "  !! residual gate violations remain"))
     out_path.parent.mkdir(parents=True, exist_ok=True)
     out_path.write_text("\n".join(f"{i+1}\n{srt_ts(s)} --> {srt_ts(e)}\n{ln}\n"
                                   for i, (s, e, ln) in enumerate(fixed)), "utf-8")
