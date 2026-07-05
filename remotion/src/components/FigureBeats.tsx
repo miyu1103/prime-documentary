@@ -314,7 +314,11 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                 {b.kind === 'carcutaway' && <CarCutaway mode={b.mode} zones={b.zones} dur={dur} />}
                 {b.kind === 'probablecause' && <ProbableCauseMeter outcome={b.outcome} dur={dur} />}
                 {b.kind === 'curtilage' && <CurtilageShield dur={dur} />}
-                {b.kind === 'statemap' && <StateMap label={b.label} dur={dur} />}
+                {b.kind === 'statemap' && (
+                  <AbsoluteFill style={{transform: 'translateY(-72px)'}}>
+                    <StateMap label={b.label} dur={dur} />
+                  </AbsoluteFill>
+                )}
                 {b.kind === 'casetimeline_c' && <CaseTimeline events={b.events} dur={dur} />}
                 {b.kind === 'carkeylock' && <CarKeyLock dur={dur} />}
                 {b.kind === 'numberticker' && (
@@ -378,7 +382,9 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                 {b.kind === 'routemap' && <RouteMap pins={b.pins} dur={dur} />}
                 {b.kind === 'pindropmap' && <PinDropMap pins={b.pins} dur={dur} />}
                 {b.kind === 'regionmap' && (
-                  <RegionHighlightMap label={b.label} pattern={b.pattern} dur={dur} />
+                  <AbsoluteFill style={{transform: 'translateY(-72px)'}}>
+                    <RegionHighlightMap label={b.label} pattern={b.pattern} dur={dur} />
+                  </AbsoluteFill>
                 )}
                 {b.kind === 'compbars' && <ComparisonBars items={b.items} dur={dur} />}
                 {b.kind === 'mechanism' && <MechanismReveal kind={b.mechanism} dur={dur} />}
