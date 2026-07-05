@@ -26,7 +26,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_EP = "PD-2026-002-gideon"
-MAX_WORDS, MAX_CHARS = 8, 44  # ~7-8 words / ~42-44 chars per caption line
+MAX_WORDS, MAX_CHARS = 8, 44  # LEGACY caption caps (gideon split_lines / legacy QC). DO NOT CHANGE:
+                             # they define the shipped gideon segmentation and must stay byte-stable.
+# GENERAL-path caps (narration_index episodes, e.g. carsearch). Raised so a whole clause/short
+# sentence stays on ONE line instead of being sliced at an 8-word count boundary (the owner's
+# "warrant." orphan). 52-char intent is realised as 50 to stay inside the acceptance gate's
+# MAX_LINE_CHARS = 50 hard ceiling (single-line cues), while ~10 words keeps a clause whole.
+SEG_MAX_WORDS, SEG_MAX_CHARS = 10, 50
 # Reading-speed ceiling. The acceptance gate (scripts/check_final_acceptance.py
 # check_caption_format) hard-fails a cue whose chars/second exceeds MAX_CPS = 27.0,
 # measuring chars = sum(len(body line)). We target a stricter, standard-readability
@@ -38,6 +44,8 @@ MAX_WORDS, MAX_CHARS = 8, 44  # ~7-8 words / ~42-44 chars per caption line
 TARGET_CPS = 17.0        # readability ceiling we aim for (stricter than the gate)
 GATE_CPS = 27.0          # the hard gate limit (check_final_acceptance MAX_CPS); reporting only
 MIN_CUE_SECONDS = 0.8    # absolute minimum on-screen time per cue
+MERGE_MAX_SECONDS = 6.8  # general path: a dense cue may merge with a neighbour into a 2-line cue
+                         # only if the union window stays under this (< the gate's 7.0s ceiling)
 CUE_GAP = 0.001          # keep a hair of separation so cues never overlap (monotonic)
 # A cue's end may be extended at most this far past its forced-alignment end (and, via the
 # cascade, a cue's start may lag its aligned start by at most this much). This HARD-BOUNDS
@@ -126,6 +134,133 @@ def split_lines(tokens):
 
 
 # ---------------------------------------------------------------------------
+# clause-based segmentation (GENERAL path) — breaks ONLY at clean boundaries
+# ---------------------------------------------------------------------------
+# Owner rejection of EP32 captions: lines were cut mid-phrase and short tails were orphaned
+# (e.g. "...search your car without a" | "warrant.") because the old splitter flushed at a hard
+# 8-word / 44-char slice regardless of grammar. This segmenter instead breaks ONLY at clean
+# boundaries: PRIMARY at sentence / strong punctuation (. ? ! ; : and em-dash), SECONDARY at
+# clause commas, packing whole clauses up to SEG_MAX_WORDS / SEG_MAX_CHARS. A clause is never
+# sliced mid-phrase; a clause is sub-split (balanced, no 1-2 word tail) only when it ALONE
+# exceeds the caps (an unavoidable comma-less run). Verbatim word order is unchanged, so the
+# 字幕=ナレ equality gate is unaffected.
+
+_ABBREV = {"mr", "mrs", "ms", "dr", "st", "vs", "etc", "no", "inc", "co", "ltd", "jr", "sr",
+           "sgt", "lt", "gen", "sen", "rep", "gov", "col", "capt", "dept", "fig", "al"}
+_TRAIL = "\"')]}”’"  # trailing quotes/brackets to ignore when reading final punctuation
+
+
+def _strong_end(tok):
+    """True iff `tok` ends a sentence / hard break unit (. ? ! ; : or em-dash), NOT counting an
+    abbreviation period (U.S., Dr., etc.) which must not trigger a false sentence break."""
+    core = tok.rstrip(_TRAIL)
+    if not core:
+        return False
+    if core[-1] in "?!;:—":  # — = em-dash
+        return True
+    if core.endswith("."):
+        if re.fullmatch(r"(?:[A-Za-z]\.)+[A-Za-z]?", core):   # U.S., U.S.A., J.
+            return False
+        if norm(core[:-1]) in _ABBREV:                        # Dr. Mr. etc.
+            return False
+        return True
+    return False
+
+
+def _comma_end(tok):
+    """True iff `tok` ends a clause (comma), a soft/secondary break boundary."""
+    return tok.rstrip(_TRAIL).endswith(",")
+
+
+def _wc(idx_toks):
+    """Spoken-word count of [(token, idx), ...] (ignores glued pure-punctuation like a lone dash)."""
+    return sum(1 for t, _ in idx_toks if norm(t))
+
+
+def _line_of(idx_toks):
+    return " ".join(t for t, _ in idx_toks)
+
+
+def _balanced_split(seg):
+    """seg: [(token, idx), ...] for a single clause that ALONE exceeds the caps. Split at word
+    boundaries into the fewest, size-balanced pieces so each piece is within SEG caps and no
+    piece is a 1-2 word orphan (balanced pieces differ by <=1 word)."""
+    n = len(seg)
+    if n <= 1:
+        return [seg]
+    k = max((n + SEG_MAX_WORDS - 1) // SEG_MAX_WORDS,
+            (len(_line_of(seg)) + SEG_MAX_CHARS - 1) // SEG_MAX_CHARS, 1)
+    while True:
+        base, rem = divmod(n, k)
+        pieces = []
+        idx = 0
+        ok = True
+        for p in range(k):
+            size = base + (1 if p < rem else 0)
+            piece = seg[idx:idx + size]
+            idx += size
+            pieces.append(piece)
+            if len(_line_of(piece)) > SEG_MAX_CHARS:
+                ok = False
+        if ok or k >= n:
+            return pieces
+        k += 1
+
+
+def split_lines_clause(tokens):
+    """tokens: list of original-text words (with punctuation). -> [(line_str, idx_start, idx_end)].
+
+    Clean-boundary segmentation for the general path (see the block comment above)."""
+    idx_toks = [(tok, i) for i, tok in enumerate(tokens)]
+    # 1) split the stream into sentences at strong punctuation
+    sentences = []
+    cur = []
+    for tok, i in idx_toks:
+        cur.append((tok, i))
+        if _strong_end(tok):
+            sentences.append(cur)
+            cur = []
+    if cur:
+        sentences.append(cur)
+
+    lines = []
+    for sent in sentences:
+        # whole sentence fits on one line -> keep it whole (the "warrant." fix)
+        if _wc(sent) <= SEG_MAX_WORDS and len(_line_of(sent)) <= SEG_MAX_CHARS:
+            lines.append(sent)
+            continue
+        # 2) split the sentence into clause segments at commas
+        segs = []
+        cur = []
+        for tok, i in sent:
+            cur.append((tok, i))
+            if _comma_end(tok):
+                segs.append(cur)
+                cur = []
+        if cur:
+            segs.append(cur)
+        # 3) any clause too big on its own -> balanced sub-split (no mid-phrase orphan)
+        norm_segs = []
+        for seg in segs:
+            if _wc(seg) <= SEG_MAX_WORDS and len(_line_of(seg)) <= SEG_MAX_CHARS:
+                norm_segs.append(seg)
+            else:
+                norm_segs.extend(_balanced_split(seg))
+        # 4) greedily pack whole clauses into lines within caps (clauses stay whole)
+        buf = []
+        for seg in norm_segs:
+            trial = buf + seg
+            if buf and (_wc(trial) > SEG_MAX_WORDS or len(_line_of(trial)) > SEG_MAX_CHARS):
+                lines.append(buf)
+                buf = list(seg)
+            else:
+                buf = trial
+        if buf:
+            lines.append(buf)
+    return [(_line_of(l), l[0][1], l[-1][1]) for l in lines]
+
+
+# ---------------------------------------------------------------------------
 # text-source resolution (verbatim narration, never the annotated visual layer)
 # ---------------------------------------------------------------------------
 
@@ -179,11 +314,12 @@ def resolve_master(slug, override):
 # alignment QC — the "字幕=ナレ一致" gate
 # ---------------------------------------------------------------------------
 
-def alignment_qc(caption_lines, chunks):
+def alignment_qc(caption_lines, chunks, max_words=MAX_WORDS, max_chars=MAX_CHARS):
     """caption_lines: list of line strings. chunks: text-source chunks.
 
     (1) Verify the concatenated caption text equals the verbatim narration text word-for-word
-        (normalized). (2) Flag any line over the char/word cap. Returns True iff both pass.
+        (normalized) -- the 字幕=ナレ gate. (2) Flag any line over the char/word cap. Returns True
+        iff both pass. Caps default to the legacy limits; the general path passes SEG_* caps.
     """
     cap_words = [norm(w) for ln in caption_lines for w in ln.split() if norm(w)]
     nar_words = [norm(w) for c in chunks for w in c["text"].split() if norm(w)]
@@ -203,14 +339,14 @@ def alignment_qc(caption_lines, chunks):
     # count spoken words only (ignore glued trailing punctuation like '—', consistent with norm())
     def wc_of(ln): return sum(1 for w in ln.split() if norm(w))
     over = [(i+1, wc_of(ln), len(ln), ln) for i, ln in enumerate(caption_lines)
-            if wc_of(ln) > MAX_WORDS or len(ln) > MAX_CHARS]
+            if wc_of(ln) > max_words or len(ln) > max_chars]
     if over:
         ok = False
-        print(f"  !! QC line-cap: {len(over)} line(s) exceed {MAX_WORDS} words / {MAX_CHARS} chars:")
+        print(f"  !! QC line-cap: {len(over)} line(s) exceed {max_words} words / {max_chars} chars:")
         for ln_no, wc, cc, ln in over[:20]:
             print(f"     line {ln_no}: {wc}w {cc}c  {ln!r}")
     else:
-        print(f"  QC line-cap: PASS  (all lines <= {MAX_WORDS} words / {MAX_CHARS} chars)")
+        print(f"  QC line-cap: PASS  (all lines <= {max_words} words / {max_chars} chars)")
     return ok
 
 
@@ -305,10 +441,12 @@ def align_general(chunks, master):
         tail = times[last][1]
         for i in range(last+1, len(flat)):
             f = (i-last)/max(len(flat)-last, 1); t = tail+f*max(total-tail, 0.0); times[i] = (t, t+0.3)
-    # segment per chunk, mapping local token indices to the flat/global index
+    # segment per chunk (clean-boundary clause segmentation), mapping local token indices to the
+    # flat/global index. Each cue's start = first word's aligned start, end = last word's aligned
+    # end -> the caption tracks the spoken words (no forward hold; tight sync enforced in write_srt).
     out = []; base = 0
     for toks in chunk_toks:
-        for line, a, b in split_lines(toks):
+        for line, a, b in split_lines_clause(toks):
             s = times[base+a][0]; e = times[base+b][1]
             if e <= s:
                 e = s+0.6
@@ -317,9 +455,11 @@ def align_general(chunks, master):
     return out
 
 
-def segment_only(chunks):
-    """--dry-run: split the text source into caption lines with no audio. Returns list of line strings."""
-    return [line for c in chunks for line, _a, _b in split_lines(glue_punct(c["text"].split()))]
+def segment_only(chunks, clause=True):
+    """--dry-run: split the text source into caption lines with no audio. Returns list of line
+    strings. `clause` selects the general clean-boundary segmenter (default) vs the legacy one."""
+    seg = split_lines_clause if clause else split_lines
+    return [line for c in chunks for line, _a, _b in seg(glue_punct(c["text"].split()))]
 
 
 def _cps(ln, dur):
@@ -390,9 +530,124 @@ def enforce_reading_speed(fixed):
     return out, residual_target, residual_gate, max_lag
 
 
-def write_srt(out_path, entries):
-    """entries: list of (start, end, line). Enforce monotonic, non-overlapping times, then
-    a readable reading speed (hold too-fast cues longer into the following gap); write SRT."""
+def tight_sync(entries):
+    """TIGHT audio-video sync (general path). Each cue's START stays at its forced-alignment start
+    -- it is NEVER pushed later -- so a caption never lags the spoken word (fixes the owner's
+    "字幕が少し遅い"). This replaces the old forward hold/extend-and-cascade, which slowed reading by
+    delaying starts.
+
+    Rules, applied in order:
+      1. Guarantee e > s (degenerate/interpolated zero-length windows get a small floor).
+      2. Resolve any overlap by trimming the PREVIOUS cue's END back to the next start -- never by
+         delaying the next start. Starts are sacrosanct.
+      3. Extend a cue's END only into the SILENT gap before the next cue, and only as far as the
+         readability need (max of MIN_CUE_SECONDS and the TARGET_CPS duration), so a short cue does
+         not flash yet clears once its readable time is spent. This moves no start -> adds zero lag.
+
+    Returns (list, residual_gate, residual_target, max_lag). max_lag is the largest forward START
+    shift introduced; it is 0.0 by construction (starts are never moved forward)."""
+    ents = [[float(s), float(e), ln] for s, e, ln in entries]
+    n = len(ents)
+    orig_starts = [s for s, _e, _ln in ents]
+    for i in range(n):
+        if ents[i][1] <= ents[i][0]:
+            ents[i][1] = ents[i][0] + MIN_CUE_SECONDS
+    # non-overlap: trim previous END back to this start (keep starts tight)
+    for i in range(n - 1):
+        nxt_s = ents[i + 1][0]
+        if ents[i][1] > nxt_s - CUE_GAP:
+            ents[i][1] = max(ents[i][0] + CUE_GAP, nxt_s - CUE_GAP)
+    # gentle end-fill into following silence only (never past the next start -> never lags)
+    for i in range(n):
+        s, e, ln = ents[i]
+        want = s + max(len(ln) / TARGET_CPS, MIN_CUE_SECONDS)
+        if i + 1 < n:
+            ceil = ents[i + 1][0] - CUE_GAP
+            new_e = min(max(e, want), ceil) if ceil > e else e
+        else:
+            new_e = max(e, want)
+        ents[i][1] = new_e if new_e > s else s + MIN_CUE_SECONDS
+    fixed = [(s, e, ln) for s, e, ln in ents]
+    residual_gate = sum(1 for s, e, ln in fixed if _cps(ln, e - s) > GATE_CPS)
+    residual_target = sum(1 for s, e, ln in fixed if _cps(ln, e - s) > TARGET_CPS)
+    max_lag = max((fs - os for (fs, _e, _l), os in zip(fixed, orig_starts)), default=0.0)
+    return fixed, residual_gate, residual_target, max(max_lag, 0.0)
+
+
+def _cue_cps(lines, dur):
+    """Reading speed of a (possibly 2-line) cue, measured exactly as the acceptance gate does:
+    the SUM of on-screen line lengths (no inter-line newline counted) over the on-screen seconds."""
+    return (sum(len(x) for x in lines) / dur) if dur > 0 else float("inf")
+
+
+def merge_cps_pass(cues):
+    """cues: list of [start, end, [lines]]. Where a cue's reading speed still exceeds the gate
+    ceiling because its clause is spoken fast in a short window, MERGE it with an adjacent cue into
+    a standard 2-line caption. The merged window is the UNION of the two adjacent windows, so:
+      - no start is ever moved LATER (no lag; the top-priority audio sync is preserved), and
+      - the merged cue starts at its first line's first spoken word (no cue-start lead).
+    This buys reading time via SEGMENTATION (two clean clause lines stacked), never by delaying a
+    cue. A merge is allowed only if the result is <= 2 lines, each <= SEG_MAX_CHARS, the union is
+    <= MERGE_MAX_SECONDS, and it actually clears the gate. The NEXT neighbour is preferred (keeps
+    the fast clause's own words on time); the PREVIOUS one is used only if next cannot. Verbatim
+    word order is preserved, so the 字幕=ナレ equality gate is unaffected."""
+    cues = [[s, e, list(lines)] for s, e, lines in cues]
+
+    def cps(c):
+        return _cue_cps(c[2], c[1] - c[0])
+
+    def try_merge(a, b):
+        """a precedes b in spoken order. Return merged [s,e,lines] iff it is legal and clears gate."""
+        lines = a[2] + b[2]
+        if len(lines) > 2 or any(len(x) > SEG_MAX_CHARS for x in lines):
+            return None
+        s = min(a[0], b[0]); e = max(a[1], b[1])
+        if e - s > MERGE_MAX_SECONDS:
+            return None
+        m = [s, e, lines]
+        return m if cps(m) <= ENFORCE_GATE_CPS else None
+
+    i = 0
+    while i < len(cues):
+        if cps(cues[i]) > ENFORCE_GATE_CPS:
+            # prefer merging with the NEXT cue (fast clause stays on time), else the PREVIOUS
+            merged, lo = None, i
+            if i + 1 < len(cues):
+                m = try_merge(cues[i], cues[i + 1])
+                if m:
+                    merged, lo = m, i
+            if merged is None and i - 1 >= 0:
+                m = try_merge(cues[i - 1], cues[i])
+                if m:
+                    merged, lo = m, i - 1
+            if merged is not None:
+                cues[lo:lo + 2] = [merged]
+                i = max(lo - 1, 0)      # re-check around the merge (handles adjacent violators)
+                continue
+        i += 1
+    return cues
+
+
+def write_srt(out_path, entries, tight=False):
+    """entries: list of (start, end, line). `tight=True` (general path) keeps captions tightly
+    synced to the spoken words (starts never delayed). `tight=False` (legacy path) preserves the
+    original monotonic + reading-speed-hold behavior byte-for-byte."""
+    if tight:
+        before_gate = sum(1 for s, e, ln in entries if _cps(ln, (e - s) if e > s else 1e-9) > GATE_CPS)
+        synced, _rg, _rt, max_lag = tight_sync(entries)
+        cues = merge_cps_pass([[s, e, [ln]] for s, e, ln in synced])
+        residual_gate = sum(1 for s, e, lines in cues if _cue_cps(lines, e - s) > GATE_CPS)
+        residual_target = sum(1 for s, e, lines in cues if _cue_cps(lines, e - s) > TARGET_CPS)
+        print(f"  cps (tight-sync): before {before_gate} over gate({GATE_CPS:.0f})  ->  after "
+              f"{residual_gate} over gate / {residual_target} over target({TARGET_CPS:.0f})"
+              f"  (max caption lag behind narration {max_lag:.3f}s; starts kept at forced alignment; "
+              f"{len(synced) - len(cues)} dense cue(s) merged to 2-line)"
+              + ("" if residual_gate == 0 else "  !! residual gate violations remain"))
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        out_path.write_text(
+            "\n".join(f"{i+1}\n{srt_ts(s)} --> {srt_ts(e)}\n" + "\n".join(lines) + "\n"
+                      for i, (s, e, lines) in enumerate(cues)), "utf-8")
+        return [(s, e, "\n".join(lines)) for s, e, lines in cues]
     fixed = []
     for s, e, ln in entries:
         if fixed and s < fixed[-1][1]:
@@ -431,14 +686,21 @@ def main():
     chunks, source = resolve_text_source(ep_dir)
     out_path = Path(args.out) if args.out else ep_dir / "08_edit" / "captions.v002.srt"
     nwords = sum(len(c["text"].split()) for c in chunks)
-    print(f"ep={slug}  text-source={source}  chunks={len(chunks)}  words={nwords}")
+    # The legacy path (gideon: voice_plan source + per-chunk timing windows) keeps its original
+    # segmenter, caps, and reading-speed-hold timing untouched. Every other (narration_index)
+    # episode uses the clean-boundary clause segmenter + tight sync.
+    legacy = (source == "voice_plan.v001.json") and (ep_dir / "08_edit" / "timing.v001.json").exists()
+    is_general = not legacy
+    qc_words, qc_chars = (SEG_MAX_WORDS, SEG_MAX_CHARS) if is_general else (MAX_WORDS, MAX_CHARS)
+    print(f"ep={slug}  text-source={source}  chunks={len(chunks)}  words={nwords}  "
+          f"path={'general clause/tight-sync' if is_general else 'legacy'}")
 
     # segment (used for the dry-run preview and for the QC text-equality check)
-    lines = segment_only(chunks)
+    lines = segment_only(chunks, clause=is_general)
 
     if args.dry_run:
         print(f"[dry-run] would produce {len(lines)} caption lines (segment-only, no audio)")
-        alignment_qc(lines, chunks)
+        alignment_qc(lines, chunks, qc_words, qc_chars)
         print("first 15 caption lines:")
         for i, ln in enumerate(lines[:15], 1):
             print(f"  {i:>2}: {ln}")
@@ -450,12 +712,12 @@ def main():
         raise SystemExit(f"master audio not found: {master}\n"
                          f"(use --dry-run to preview segmentation before narration exists, "
                          f"or pass --master <path>)")
-    legacy = (source == "voice_plan.v001.json") and (ep_dir / "08_edit" / "timing.v001.json").exists()
     entries = align_legacy(ep_dir, chunks, master) if legacy else align_general(chunks, master)
-    fixed = write_srt(out_path, entries)
+    fixed = write_srt(out_path, entries, tight=is_general)
     print(f"wrote {out_path.relative_to(ROOT) if out_path.is_relative_to(ROOT) else out_path}  "
-          f"({len(fixed)} lines)  [{'legacy timing-window' if legacy else 'global'} alignment]")
-    alignment_qc([ln for _s, _e, ln in fixed], chunks)
+          f"({len(fixed)} cues)  [{'legacy timing-window' if legacy else 'global'} alignment]")
+    # QC on PHYSICAL lines (a general-path cue may be a 2-line caption after the cps merge)
+    alignment_qc([pl for _s, _e, ln in fixed for pl in ln.split("\n")], chunks, qc_words, qc_chars)
     return 0
 
 

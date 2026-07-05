@@ -15,15 +15,23 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 FPS = 30
 MIN_GAP = 22
-DUR_CYCLE = [3.0, 3.6, 3.2, 4.0, 3.4, 2.8]
-KIND = ["img", "foot", "img", "foot", "foot"]
-# footage diversity (owner 2026-07-04 "毎作品同じ素材 ... 天秤の動画は何度も見てきた").
-# Cap reuse at build time so the acceptance gate's footage_diversity passes: aim stricter
-# than the gate (gate = max 4 / distinct 0.40 / generic 2).
-MAX_USES = 3                       # a clip may be cut at most this many times per film
-GENERIC_PAT = r"scale|gavel|hourglass|clock|stopwatch|balance"  # over-familiar symbols
-GENERIC_MAX = 1                    # a generic symbol may appear at most once
-DIVERSITY_TARGET = 0.55            # warn (loudly) if distinct/total falls below this
+# CUT CADENCE (owner 2026-07-06 "毎回同じペースで画面が切替わるのは見ていて疲れる"): NOT a uniform
+# ~3s metronome. This cycle deliberately mixes QUICK bursts (~1.6-2.4s) with LONG holds (~4.2-6.5s)
+# so the underlying photo/footage bed alternates fast montage with calm held frames — the held
+# frames are where a figure/kinetic-text animation carries the scene over a steady background
+# (owner: "背景は同じで文字や図解のアニメーションでしばらく表現する瞬間があってもいい").
+DUR_CYCLE = [1.7, 2.1, 5.6, 1.8, 3.0, 6.5, 2.0, 1.6, 4.2, 2.4, 5.2, 1.9]
+# FOOTAGE NO-REUSE (owner 2026-07-06 "また天秤の動画素材" / "同じ素材が繰り返し使われる"): every
+# factory clip is cut AT MOST ONCE in the whole film (reuse <= 1). If the distinct pool is smaller
+# than the natural footage-cut count we emit FEWER footage cuts (filling with images) rather than
+# repeat, and warn how many more distinct clips are needed. FOOT_SHARE_DESIRED is the footage
+# fraction the old 3-of-5 cadence wanted; it only drives that shortfall warning now.
+FOOT_SHARE_DESIRED = 0.60
+# GENERIC SYMBOLS to DROP from the footage pool entirely (owner: over-familiar "天秤/木槌" stock).
+GENERIC_PAT = r"scales|lady_justice|justice_statue|gavel|hourglass|balance|scales_of_justice"
+# Overall (image-inclusive) diversity floor for the acceptance gate's footage_diversity; images
+# necessarily repeat (small still pool) so this is measured over ALL cuts, footage is reuse<=1.
+DIVERSITY_TARGET = 0.40
 # `depth` = real DPT depth-map 3D parallax (CaseFilm DepthStill); the only treatment that is
 # genuine spatial parallax. `scan`/`duotone`/`focus` are FLAT CSS color/filter looks (variety only,
 # NOT parallax). Design + scene_plan require depth on >= DEPTH_FLOOR of image cuts; the old table
@@ -171,10 +179,27 @@ def _brightline_mode(props: dict) -> str:
     return "draw"
 
 
+def _map_pins(mode: str):
+    """Default stylized-map pins (0..1 coords) for a PinDropMap/RouteMap whose plan props carry
+    only a `mode`, not explicit pin coordinates. FigureBeats' PinDropMap/RouteMap require pins."""
+    m = (mode or "").strip().lower()
+    if "resid" in m:                       # residential — a tight neighborhood cluster
+        return [{"x": 0.46, "y": 0.5, "label": "HOME"},
+                {"x": 0.52, "y": 0.56}, {"x": 0.49, "y": 0.45}]
+    if "route" in m or "path" in m:        # a route line across the plane
+        return [{"x": 0.22, "y": 0.62, "label": "STOP"}, {"x": 0.44, "y": 0.5},
+                {"x": 0.66, "y": 0.44}, {"x": 0.82, "y": 0.34, "label": "HOME"}]
+    # grid-multiply / nationwide default — spread across the map plane
+    return [{"x": 0.22, "y": 0.34}, {"x": 0.4, "y": 0.28}, {"x": 0.58, "y": 0.4},
+            {"x": 0.72, "y": 0.3}, {"x": 0.34, "y": 0.6}, {"x": 0.66, "y": 0.62},
+            {"x": 0.5, "y": 0.5}]
+
+
 def key_graphic_to_figure(component: str, props: dict):
     """Map one plan key_graphic (component name + props) to (kind, fields) for a
-    FigureSpec, or None to skip (BrandOpening/BrandEndcard bookends and any
-    component not wired into FigureBeats, e.g. PinDropMap/CitationLowerThird/ActTitle)."""
+    FigureSpec, or None to skip. Only the BrandOpening/BrandEndcard bookends are dropped;
+    every content graphic is wired (ActTitle->acttitle, CitationLowerThird->lowerthird,
+    PinDropMap->pindropmap, RouteMap->routemap, RegionHighlightMap->regionmap)."""
     props = props or {}
     c = (component or "").strip()
     if c == "BrightLine":
@@ -188,11 +213,19 @@ def key_graphic_to_figure(component: str, props: dict):
         return ("probablecause", {"outcome": str(props.get("outcome", "cross")).strip().lower()})
     if c == "CurtilageShield":
         return ("curtilage", {})
-    if c in ("StateMap", "RegionHighlightMap"):
+    if c == "StateMap":
         f = {}
         if props.get("label"):
             f["label"] = str(props["label"])
         return ("statemap", f)
+    if c == "RegionHighlightMap":
+        f = {}
+        if props.get("label"):
+            f["label"] = str(props["label"])
+        pat = str(props.get("pattern", "")).strip().lower()
+        if pat in ("uniform", "varied"):
+            f["pattern"] = pat
+        return ("regionmap", f)
     if c == "CaseTimeline":
         events = [
             {"year": str(e.get("year", "")), "text": str(e.get("text", ""))}
@@ -216,6 +249,26 @@ def key_graphic_to_figure(component: str, props: dict):
     if c == "QuoteCard":
         return ("quote", {"quote": str(props.get("quote", "")),
                           "attribution": str(props.get("attribution", ""))})
+    if c == "CitationLowerThird":
+        primary = str(props.get("case") or props.get("primary") or props.get("citation") or "")
+        secondary = props.get("year") or props.get("secondary") or props.get("court")
+        f = {"primary": primary}
+        if secondary:
+            f["secondary"] = str(secondary)
+        return ("lowerthird", f)
+    if c == "ActTitle":
+        f = {"title": str(props.get("title") or props.get("label") or "")}
+        if props.get("kicker"):
+            f["kicker"] = str(props["kicker"])
+        if props.get("index") is not None:
+            f["index"] = props["index"]
+        return ("acttitle", f)
+    if c == "PinDropMap":
+        pins = props.get("pins") or _map_pins(str(props.get("mode", "")))
+        return ("pindropmap", {"pins": pins})
+    if c == "RouteMap":
+        pins = props.get("pins") or props.get("stops") or _map_pins("route")
+        return ("routemap", {"pins": pins})
     return None
 
 
@@ -297,57 +350,113 @@ def _scene_id_to_span_id(scene_id: str) -> str | None:
     return f"SPN-{int(m.group(1)):04d}" if m else None
 
 
-def build_figures(plan_path: Path, windows: dict) -> tuple:
-    """Read <ep>/04_scenes/remotion_plan.v001.json key_graphics and emit FigureSpec[].
-    scene 'S0NN' -> span 'SPN-00NN' -> its SECTION-ALIGNED narration window (see
-    build_span_time_windows); when several key_graphics share a scene, that span window
-    is split into equal sequential sub-slots so the full-screen figures never stack
-    destructively. Returns (figures, fig_span_ids) — fig_span_ids drives the text-beat
-    declutter (one clear graphic per moment)."""
-    figures: list = []
-    fig_span_ids: set = set()
+# --- figure / kinetic-text durations (owner 2026-07-06) --------------------------------------
+# Moving diagrams are NO LONGER capped at a punchy 2.9s. FigureBeats' FigureScene applies a
+# MONOTONIC Ken-Burns + raking light sweeps + perpetual Drift, so a long hold NEVER reads as a
+# freeze — length is therefore safe, and the owner explicitly WANTS extended held moments where
+# "背景は同じで文字や図解のアニメーションでしばらく表現する". HERO diagrams (the slam, the key/lock,
+# the curtilage payoff, the Sotomayor quote, the car cutaway) run 7-10s where the animation is
+# the whole point; supporting graphics run ~5.5-7.5s. This is the primary lever that raises
+# moving-diagram coverage well past the old 8.6%.
+FIG_DUR = {
+    "brightline": 6.5,      # 'slam' promoted to a 9.0s hero hold below
+    "carcutaway": 8.0,      # hero — the glovebox/trunk cutaway carries the scene
+    "probablecause": 6.0,
+    "curtilage": 8.5,       # hero — the curtilage payoff
+    "statemap": 6.5,
+    "regionmap": 6.5,
+    "casetimeline_c": 7.5,
+    "carkeylock": 9.0,      # hero — key/lock mechanism
+    "numberticker": 6.5,
+    "votetally": 7.5,
+    "quote": 9.0,           # hero — the Sotomayor quote reads slowly
+    "lowerthird": 5.5,
+    "acttitle": 6.0,
+    "pindropmap": 7.5,
+    "routemap": 7.5,
+}
+FIG_DUR_DEFAULT = 6.0
+KIN_STYLES = ["maskslide", "wordpop", "emphasis"]   # rotate for variety across spans
+
+
+def _figure_dur(kind: str, fields: dict) -> float:
+    """Target on-screen seconds for a diagram figure (hero kinds run long)."""
+    if kind == "brightline" and str(fields.get("mode", "")).lower() == "slam":
+        return 9.0
+    return FIG_DUR.get(kind, FIG_DUR_DEFAULT)
+
+
+def _kinetic_dur(lines: list) -> float:
+    """Target on-screen seconds for a kinetic-caption block — scales with how much text there is
+    so 3-line cards get a longer, readable hold (owner wants text to carry the scene for a while)."""
+    n = len([l for l in lines if str(l).strip()])
+    return {0: 0.0, 1: 6.0, 2: 7.5}.get(n, 9.0)
+
+
+def _figure_groups(plan_path: Path, windows: dict) -> dict:
+    """{span_id -> [(kind, fields), ...]} for every plan key_graphic that maps to a FigureSpec and
+    anchors to a section-aligned window. Preserves plan order within each span."""
+    groups: "dict[str, list]" = {}
     try:
         plan = json.loads(plan_path.read_text("utf-8")) if plan_path.exists() else {}
     except (OSError, ValueError) as e:
         print(f"WARN could not read plan {plan_path} for figures: {e}")
-        return figures, fig_span_ids
-    kgs = plan.get("key_graphics") or []
-    if not kgs:
-        return figures, fig_span_ids
-    # group mapped key_graphics by span id, preserving plan order
-    groups: "dict[str, list]" = {}
-    order: list = []
-    for kg in kgs:
+        return groups
+    for kg in plan.get("key_graphics") or []:
         mapped = key_graphic_to_figure(kg.get("component", ""), kg.get("props") or {})
-        if mapped is None:
+        if mapped is None:                        # BrandOpening/BrandEndcard only
             continue
         sid = _scene_id_to_span_id(kg.get("scene_id", ""))
-        if sid is None or sid not in windows:   # no section-aligned window to anchor to -> skip
+        if sid is None or sid not in windows:     # no section-aligned window to anchor to -> skip
             continue
-        if sid not in groups:
-            groups[sid] = []
-            order.append(sid)
-        groups[sid].append(mapped)
-    # Keep each moving diagram a PUNCHY beat, not the whole section window. TWO reasons:
-    # (1) a figure's scene overlays the photo/footage cuts, so a long figure buries the
-    # story images; (2) a graphic that holds > ~3s reads as near-still to the freeze
-    # gate (animation_density: single near-still stretch must be <= 3s, total <= 10%).
-    # Capping at 2.9s GUARANTEES the animation_density pass (20 figs x 2.9s = ~8.5% body)
-    # regardless of freeze detection, and gives a fast Kurzgesagt/Veritasium graphic
-    # cadence — punchy 2.9s hits over the always-moving footage between them.
-    FIGURE_MAX_DUR = 2.9
-    for sid in order:
-        items = groups[sid]
+        groups.setdefault(sid, []).append(mapped)
+    return groups
+
+
+def build_animated(plan_path: Path, windows: dict, spans: list) -> list:
+    """Emit film_data.figures: the moving-diagram tier (plan key_graphics) AND a 'kinetic'
+    KineticCaptions block for EVERY span's on_screen_text, so animated diagrams + kinetic text
+    punctuate the WHOLE body instead of clustering.
+
+    Per span, the diagram figures then the span's kinetic-text block are laid out SEQUENTIALLY
+    inside that span's section-aligned window (a small footage breath between them), so no two
+    animated blocks overlap in time and each gets a real, readable hold. When the blocks would
+    overrun the window they are scaled down proportionally to fit. Returns FigureSpec dicts sorted
+    by start; kinetic blocks carry kind='kinetic' so callers can split diagram vs text coverage."""
+    groups = _figure_groups(plan_path, windows)
+    ost_by_span: dict = {}
+    for sp in spans:
+        sid = str(sp.get("span_id", ""))
+        lines = [str(s) for s in (sp.get("on_screen_text") or []) if str(s).strip()]
+        if lines:
+            ost_by_span[sid] = lines
+    figures: list = []
+    GAP = 0.3   # footage breath between two animated blocks in one window
+    ki = 0
+    for sid in sorted(windows.keys(), key=lambda s: windows[s][0]):
         ws, we = windows[sid]
-        k = len(items)
-        slot = (we - ws) / k if k else 0.0
-        for j, (kind, fields) in enumerate(items):
-            s = ws + slot * j
-            e = min(ws + slot * (j + 1), s + FIGURE_MAX_DUR)
+        blocks: list = []   # (dur, kind, fields)
+        for kind, fields in groups.get(sid, []):
+            blocks.append((_figure_dur(kind, fields), kind, fields))
+        if sid in ost_by_span:
+            blocks.append((_kinetic_dur(ost_by_span[sid]), "kinetic",
+                           {"lines": ost_by_span[sid], "style": KIN_STYLES[ki % len(KIN_STYLES)]}))
+            ki += 1
+        if not blocks:
+            continue
+        avail = we - ws
+        total = sum(d for d, _, _ in blocks) + GAP * (len(blocks) - 1)
+        scale = (avail / total) if (total > avail and total > 0) else 1.0
+        cur = ws
+        for d, kind, fields in blocks:
+            s = cur
+            e = min(cur + d * scale, we)
+            if e - s < 0.4:                       # never emit a sub-frame-flash block
+                e = min(cur + 0.4, we)
             figures.append({"start": round(s, 3), "end": round(e, 3), "kind": kind, **fields})
-        fig_span_ids.add(sid)
+            cur = e + GAP * scale
     figures.sort(key=lambda f: f["start"])
-    return figures, fig_span_ids
+    return figures
 
 
 def main():
@@ -383,28 +492,47 @@ def main():
     idx=json.loads(INDEX.read_text("utf-8")); chunks=idx["chunks"]; T=max(c["end"] for c in chunks)
     cues=parse_srt(SRT)
 
-    ALL_IMG=[("img",s) for s in imgs]; ALL_FOOT=[("foot",s) for s in foot]
-    used={}; last={}
-    def cap_for(src): return GENERIC_MAX if re.search(GENERIC_PAT, src, re.I) else MAX_USES
-    def pick(pool,i):
-        # prefer clips still under their reuse cap AND past the min-gap; fall back only if the
-        # whole pool is exhausted (small staged pool -> the diversity warning fires below).
-        under=[a for a in pool if used.get(a[1],0) < cap_for(a[1])]
-        base=under or pool
-        elig=[a for a in base if i-last.get(a[1],-999)>MIN_GAP]
-        return sorted(elig or base, key=lambda a:(used.get(a[1],0), last.get(a[1],-999)))[0]
-    cuts=[]; t=0.0; di=0
+    # --- footage pool: DROP generic symbols entirely (owner "また天秤の動画素材"), then NO-REUSE ---
+    foot_generic=[s for s in foot if re.search(GENERIC_PAT, s, re.I)]
+    foot_pool=[s for s in foot if not re.search(GENERIC_PAT, s, re.I)]
+    n_generic_removed=len(foot_generic)
+
+    # --- CUT TIME GRID first (varied cadence), THEN assign kinds so footage spreads evenly ---
+    grid=[]; t=0.0; di=0
     while t < T-0.4:
-        i=len(cuts); want=KIND[i%len(KIND)]
-        kind,src = pick(ALL_IMG,i) if (want=="img" or not ALL_FOOT) else pick(ALL_FOOT,i)
         dur=DUR_CYCLE[di%len(DUR_CYCLE)]; di+=1
         if t+dur>T: dur=round(T-t,3)
-        is_foot = (kind=="foot")
+        grid.append((round(t,3),round(dur,3))); t+=dur
+    n=len(grid)
+    # how many footage cuts the old 3-of-5 cadence WANTED, vs how many distinct clips we actually
+    # have. NO-REUSE: cap footage cuts at the distinct pool size and spread them evenly; the rest
+    # become image cuts (images may repeat — small still pool — but footage never does).
+    natural_foot=round(FOOT_SHARE_DESIRED*n)
+    n_foot=min(len(foot_pool), natural_foot) if imgs else min(len(foot_pool), n)
+    foot_short=max(0, natural_foot-len(foot_pool))
+    foot_positions=set(_even_positions(n, n_foot))       # evenly spaced footage indices
+    foot_seq=list(foot_pool[:n_foot])                    # each distinct clip used exactly once
+    # image round-robin: least-used first, honoring the min-gap when possible (reuse allowed)
+    img_used={}; img_last={}
+    def pick_img(i):
+        elig=[s for s in imgs if i-img_last.get(s,-999)>MIN_GAP] or imgs
+        s=sorted(elig,key=lambda s:(img_used.get(s,0), img_last.get(s,-999)))[0]
+        img_used[s]=img_used.get(s,0)+1; img_last[s]=i
+        return s
+    cuts=[]; fp=0
+    for i,(st,dur) in enumerate(grid):
+        if i in foot_positions and fp<len(foot_seq):
+            src=foot_seq[fp]; fp+=1; is_foot=True
+        elif imgs:
+            src=pick_img(i); is_foot=False
+        elif foot_pool:                                  # degenerate: no stills -> must reuse footage
+            src=foot_pool[i%len(foot_pool)]; is_foot=True
+        else:
+            continue
         # image treatments are assigned in a second pass (below) so the depth share can be
         # guaranteed against the plan target / DEPTH_FLOOR; footage keeps the fixed "footage" look.
-        cuts.append({"start":round(t,3),"dur":round(dur,3),"kind":"footage" if is_foot else "img",
+        cuts.append({"start":st,"dur":dur,"kind":"footage" if is_foot else "img",
                      "src":src,"seed":f"{slug}-{i}","treatment":"footage" if is_foot else None})
-        used[src]=used.get(src,0)+1; last[src]=i; t+=dur
 
     # --- image treatment assignment (defect M2: real depth >= 40% + read the plan) ---
     img_cuts=[c for c in cuts if c["kind"]=="img"]
@@ -449,23 +577,13 @@ def main():
     # (SPN-00NN <-> scene S0NN) lands inside its own section (HOOK/OPENING/ACT I..IV/ENDING)
     # at the right ordinal position, instead of the old broken span N -> chunk N (22 vs 52).
     windows=build_span_time_windows(chunks, chapters)
-    # figures first (carsearch/motionkit moving diagrams from remotion_plan.key_graphics)
-    # so the overlapping kinetic-text beat on the same span can be suppressed ->
-    # ONE clear graphic per moment (the figure IS the graphic; no text/figure collision).
-    figures, fig_span_ids=build_figures(EPDIR/"04_scenes"/"remotion_plan.v001.json", windows)
-    # graphics text beats from annotated on_screen_text, placed at each span's
-    # section-aligned window, skipped on any span a figure already occupies (declutter).
-    beats=[]
-    for sp in spans:
-        sid=str(sp.get("span_id",""))
-        if sid not in windows: continue
-        if sid in fig_span_ids: continue
-        ost=sp.get("on_screen_text") or []
-        if not ost: continue
-        ws,we=windows[sid]
-        bs=ws; be=min(we-0.3, bs+5.6)
-        if be-bs<1.4: be=min(we-0.1, bs+1.4)
-        beats.append({"start":round(bs,3),"end":round(be,3),"lines":[s for s in ost if s.strip()]})
+    # ANIMATED tier: moving diagrams (remotion_plan.key_graphics) + a 'kinetic' KineticCaptions
+    # block for EVERY span's on_screen_text, laid out sequentially inside each span window so
+    # animated diagrams + kinetic text punctuate the WHOLE body (not just 6 spans). The kinetic
+    # blocks live in film_data.figures (kind='kinetic') and render via FigureBeats -> KineticCaptions
+    # in the upper band, so `graphics` (the old GraphicsBeats path) is now empty (no double text).
+    figures=build_animated(EPDIR/"04_scenes"/"remotion_plan.v001.json", windows, spans)
+    beats=[]   # kinetic text now lives in figures[]; keep the graphics channel empty to avoid double-drawing
 
     hero=imgs[:6]
     hook=[]; ht=0.0
@@ -477,19 +595,64 @@ def main():
           "graphics":beats,"figures":figures}
     (PUB/"film_data.v001.json").write_text(json.dumps(data,ensure_ascii=False,indent=2),"utf-8")
     (ROOT/"remotion"/"src"/"data"/f"{slug}_film.json").write_text(json.dumps(data,ensure_ascii=False,indent=2),"utf-8")
-    ni=sum(1 for c in cuts if c["kind"]=="img"); nf=sum(1 for c in cuts if c["kind"]=="footage")
+
+    # ---------- coverage + pacing + footage-diversity report ----------
     import collections
-    cnt=collections.Counter(c["src"] for c in cuts); distinct=len(cnt); total=len(cuts)
-    frac=distinct/total if total else 0.0; worst=cnt.most_common(1)[0]
-    print(f"[{ep}] imgs={len(imgs)} factory={len(foot)} cuts={total}(img{ni}/foot{nf}) "
-          f"distinct={distinct} distinct_frac={frac:.2f} max_reuse={worst[1]} beats={len(beats)} "
-          f"figures={len(figures)} hook={len(hook)} narr={T:.0f}s")
-    if frac < DIVERSITY_TARGET:
-        need=int(-(-total*DIVERSITY_TARGET//1)) - distinct  # ceil(total*target) - distinct
-        print(f"  !! FOOTAGE DIVERSITY LOW: distinct_frac {frac:.2f} < {DIVERSITY_TARGET:.2f} "
-              f"(pool only {distinct} distinct for {total} cuts). Stage >= {need} MORE distinct clips "
-              f"(e.g. scripts/select_factory_assets.py --theme <legal|crime|police|finance>) into "
-              f"remotion/public/{slug}/factory and re-run, OR the acceptance gate footage_diversity WILL fail.")
+    ni=sum(1 for c in cuts if c["kind"]=="img"); nf=sum(1 for c in cuts if c["kind"]=="footage")
+    total=len(cuts)
+    # animated coverage (moving diagrams + kinetic text) as a share of the body T
+    diag=[f for f in figures if f["kind"]!="kinetic"]; kin=[f for f in figures if f["kind"]=="kinetic"]
+    fig_secs=sum(f["end"]-f["start"] for f in diag); kin_secs=sum(f["end"]-f["start"] for f in kin)
+    fig_pct=fig_secs/T*100 if T else 0.0; kin_pct=kin_secs/T*100 if T else 0.0
+    comb_pct=(fig_secs+kin_secs)/T*100 if T else 0.0
+    # cut-duration distribution (prove the cadence is VARIED, not metronomic)
+    durs=[c["dur"] for c in cuts]
+    buckets=collections.OrderedDict([("<2s",0),("2-3s",0),("3-4s",0),("4-5s",0),("5-7s",0),(">=7s",0)])
+    for d in durs:
+        if d<2: buckets["<2s"]+=1
+        elif d<3: buckets["2-3s"]+=1
+        elif d<4: buckets["3-4s"]+=1
+        elif d<5: buckets["4-5s"]+=1
+        elif d<7: buckets["5-7s"]+=1
+        else: buckets[">=7s"]+=1
+    dmin=min(durs) if durs else 0; dmax=max(durs) if durs else 0
+    dmean=sum(durs)/len(durs) if durs else 0
+    # footage no-reuse verification (measured over FOOTAGE cuts only)
+    foot_cuts=[c for c in cuts if c["kind"]=="footage"]
+    fcnt=collections.Counter(c["src"] for c in foot_cuts)
+    foot_max_reuse=max(fcnt.values()) if fcnt else 0
+    foot_distinct=len(fcnt)
+    foot_generic_in_cuts=sum(1 for c in foot_cuts if re.search(GENERIC_PAT, c["src"], re.I))
+    # overall (image-inclusive) diversity for the acceptance gate
+    allcnt=collections.Counter(c["src"] for c in cuts); all_distinct=len(allcnt)
+    all_frac=all_distinct/total if total else 0.0; all_max=allcnt.most_common(1)[0][1] if allcnt else 0
+    # longest animated moments
+    longest=sorted(figures, key=lambda f:f["end"]-f["start"], reverse=True)[:6]
+
+    print(f"[{ep}] cuts={total}(img{ni}/foot{nf}) imgs={len(imgs)} factory_pool={len(foot)}->"
+          f"{len(foot_pool)}(after -{n_generic_removed} generic)")
+    print(f"[{ep}] ANIMATED COVERAGE: diagrams {len(diag)}fig {fig_secs:.0f}s ({fig_pct:.1f}%) + "
+          f"kinetic-text {len(kin)} {kin_secs:.0f}s ({kin_pct:.1f}%) = COMBINED {comb_pct:.1f}% of body "
+          f"(target >=40%)  [{'PASS' if comb_pct>=40 else 'UNDER'}]")
+    print(f"[{ep}] CUT CADENCE: min={dmin:.1f}s max={dmax:.1f}s mean={dmean:.1f}s dist=" +
+          " ".join(f"{k}:{v}" for k,v in buckets.items()))
+    print(f"[{ep}] FOOTAGE: {nf} cuts, {foot_distinct} distinct, MAX REUSE={foot_max_reuse} "
+          f"(no-reuse={'OK' if foot_max_reuse<=1 else 'FAIL'}), generics_in_cuts={foot_generic_in_cuts} "
+          f"(removed {n_generic_removed} from pool)")
+    print(f"[{ep}] OVERALL diversity (img-inclusive, for acceptance gate): distinct_frac={all_frac:.2f} "
+          f"max_reuse={all_max} (gate needs distinct>=0.40 reuse<=4)")
+    print(f"[{ep}] longest animated moments: " +
+          " | ".join(f"{f['kind']}@{f['start']:.0f}s {f['end']-f['start']:.1f}s" for f in longest))
+    if foot_short>0:
+        print(f"  !! FOOTAGE POOL TOO SMALL for no-reuse: the cadence wanted ~{natural_foot} footage "
+              f"cuts but only {len(foot_pool)} distinct clips remain after dropping generics. Used "
+              f"{n_foot} footage cuts + more image cuts instead (no clip repeated). Stage >= {foot_short} "
+              f"MORE distinct clips (e.g. scripts/select_factory_assets.py --theme <legal|crime|police|"
+              f"finance>) into remotion/public/{slug}/factory and re-run to raise footage variety.")
+    if all_frac < DIVERSITY_TARGET:
+        need=int(-(-total*DIVERSITY_TARGET//1)) - all_distinct
+        print(f"  !! OVERALL DIVERSITY LOW: distinct_frac {all_frac:.2f} < {DIVERSITY_TARGET:.2f}; "
+              f"stage >= {need} more distinct clips or the acceptance gate footage_diversity may fail.")
     print(f"wrote remotion/public/{slug}/film_data.v001.json + src/data/{slug}_film.json")
     return 0
 

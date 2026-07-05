@@ -14,6 +14,19 @@ import {CarKeyLock} from './carsearch/CarKeyLock';
 import {NumberTicker} from './motionkit/NumberTicker';
 import {VoteTally} from './motionkit/VoteTally';
 import {QuoteCard} from './motionkit/QuoteCard';
+// motionkit tier — text/annotation/map/diagram components wired so film_data.figures can render them.
+import {KineticCaptions} from './motionkit/KineticCaptions';
+import {ActTitle} from './motionkit/ActTitle';
+import {LowerThird} from './motionkit/LowerThird';
+import {HighlightRing} from './motionkit/HighlightRing';
+import {AnnotationArrow} from './motionkit/AnnotationArrow';
+import {Spotlight} from './motionkit/Spotlight';
+import {DocHighlight} from './motionkit/DocHighlight';
+import {RouteMap} from './motionkit/RouteMap';
+import {PinDropMap} from './motionkit/PinDropMap';
+import {RegionHighlightMap} from './motionkit/RegionHighlightMap';
+import {ComparisonBars} from './motionkit/ComparisonBars';
+import {MechanismReveal} from './motionkit/MechanismReveal';
 
 /**
  * FigureBeats — the §5.6 "Figures tier": data beats rendered as full-screen ANIMATED figures
@@ -37,7 +50,45 @@ export type FigureSpec =
   | {start: number; end: number; kind: 'carkeylock'}
   | {start: number; end: number; kind: 'numberticker'; value: number; prefix?: string; suffix?: string; decimals?: number; label?: string; topLabel?: string}
   | {start: number; end: number; kind: 'votetally'; majority: number; dissent: number; label?: string}
-  | {start: number; end: number; kind: 'quote'; quote: string; attribution: string};
+  | {start: number; end: number; kind: 'quote'; quote: string; attribution: string}
+  // --- motionkit TEXT / annotation / map / diagram tier (real components rendered full-screen) ---
+  // kinetic: the big TEXT-animation kind — large animated captions (word-pop / mask-slide / emphasis).
+  // Rendered in the UPPER/MIDDLE band (translated up) so it never collides with the bottom caption track.
+  | {
+      start: number;
+      end: number;
+      kind: 'kinetic';
+      lines: string[];
+      style?: 'wordpop' | 'maskslide' | 'emphasis';
+      emphasisWords?: string[];
+    }
+  | {start: number; end: number; kind: 'acttitle'; title: string; kicker?: string; index?: number}
+  | {start: number; end: number; kind: 'lowerthird'; primary: string; secondary?: string; accent?: string}
+  // overlay pointers — cx/cy/r/from/to are 0..1 frame ratios; all optional with centered defaults
+  | {start: number; end: number; kind: 'highlightring'; cx?: number; cy?: number; r?: number; label?: string}
+  | {
+      start: number;
+      end: number;
+      kind: 'arrow';
+      from?: [number, number];
+      to?: [number, number];
+      label?: string;
+    }
+  | {start: number; end: number; kind: 'spotlight'; cx?: number; cy?: number; r?: number; dim?: number}
+  | {
+      start: number;
+      end: number;
+      kind: 'dochighlight';
+      rects: {x: number; y: number; w: number; h: number}[];
+      mode?: 'underline' | 'box' | 'redact';
+    }
+  | {start: number; end: number; kind: 'routemap'; pins: {x: number; y: number; label?: string}[]}
+  | {start: number; end: number; kind: 'pindropmap'; pins: {x: number; y: number; label?: string}[]}
+  | {start: number; end: number; kind: 'regionmap'; label?: string; pattern?: 'uniform' | 'varied'}
+  | {start: number; end: number; kind: 'compbars'; items: {label: string; value: number; accent?: string}[]}
+  // NOTE: MechanismReveal's own prop is named `kind`; the FigureSpec discriminant is also `kind`,
+  // so the variant is carried in `mechanism` and mapped to the component's `kind` prop at render.
+  | {start: number; end: number; kind: 'mechanism'; mechanism: 'closingdoor' | 'gears' | 'faultsplit'};
 
 /** SceneBed — the DESIGNED scene bed behind every figure.
  *
@@ -281,6 +332,56 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                   <VoteTally majority={b.majority} dissent={b.dissent} label={b.label} dur={dur} />
                 )}
                 {b.kind === 'quote' && <QuoteCard quote={b.quote} attribution={b.attribution} dur={dur} />}
+                {/* motionkit TEXT / annotation / map / diagram tier */}
+                {/* kinetic TEXT: KineticCaptions is bottom-anchored inside itself; lift it into the
+                    UPPER/MIDDLE band so the big animated text is prominent AND clears the bottom
+                    caption track that CaseFilm draws on top. */}
+                {b.kind === 'kinetic' && (
+                  <AbsoluteFill style={{transform: 'translateY(-320px)'}}>
+                    <KineticCaptions
+                      lines={b.lines}
+                      style={b.style}
+                      emphasisWords={b.emphasisWords}
+                      dur={dur}
+                    />
+                  </AbsoluteFill>
+                )}
+                {b.kind === 'acttitle' && (
+                  <ActTitle title={b.title} kicker={b.kicker} index={b.index} dur={dur} />
+                )}
+                {b.kind === 'lowerthird' && (
+                  <LowerThird primary={b.primary} secondary={b.secondary} accent={b.accent} dur={dur} />
+                )}
+                {b.kind === 'highlightring' && (
+                  <HighlightRing
+                    cx={b.cx ?? 0.5}
+                    cy={b.cy ?? 0.46}
+                    r={b.r ?? 0.18}
+                    label={b.label}
+                    dur={dur}
+                  />
+                )}
+                {b.kind === 'arrow' && (
+                  <AnnotationArrow
+                    from={b.from ?? [0.28, 0.72]}
+                    to={b.to ?? [0.52, 0.5]}
+                    label={b.label}
+                    dur={dur}
+                  />
+                )}
+                {b.kind === 'spotlight' && (
+                  <Spotlight cx={b.cx ?? 0.5} cy={b.cy ?? 0.48} r={b.r ?? 0.32} dim={b.dim} dur={dur} />
+                )}
+                {b.kind === 'dochighlight' && (
+                  <DocHighlight rects={b.rects} mode={b.mode} dur={dur} />
+                )}
+                {b.kind === 'routemap' && <RouteMap pins={b.pins} dur={dur} />}
+                {b.kind === 'pindropmap' && <PinDropMap pins={b.pins} dur={dur} />}
+                {b.kind === 'regionmap' && (
+                  <RegionHighlightMap label={b.label} pattern={b.pattern} dur={dur} />
+                )}
+                {b.kind === 'compbars' && <ComparisonBars items={b.items} dur={dur} />}
+                {b.kind === 'mechanism' && <MechanismReveal kind={b.mechanism} dur={dur} />}
               </Drift>
             </FigureScene>
           </Sequence>

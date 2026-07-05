@@ -38,8 +38,8 @@ PLANS = {
         "documents_paper": 12, "urban_night": 10,
     },
     "carsearch": {  # traffic stops / highways / suburban driveways / courthouse / warrants+rental / phone
-        "crime_police": 22, "urban_night": 20, "property_home": 18, "legal_court": 16,
-        "documents_paper": 12, "surveillance_tech": 8, "nature_landscape": 8,
+        "crime_police": 44, "urban_night": 38, "property_home": 32, "legal_court": 24,
+        "documents_paper": 20, "surveillance_tech": 14, "nature_landscape": 6,
     },
 }
 

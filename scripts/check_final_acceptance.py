@@ -163,28 +163,45 @@ BGM_END_MIN_DROP_DB = 10.0                       # OR final 0.3s >=10 dB below t
 #     (b) Ambience band energy: mean level in a 40-160Hz band must exceed a floor, i.e. a sustained
 #         low-frequency bed exists; an empty band sits near -70..-90 dB.
 #   PART 2 -- BINDING to the built mix (EP32 §B5(b), see _sound_mix_binding): load the highest-rev
-#     06_audio/audio_provenance.v*.json, require its density_gate to pass with real SFX + distinct
-#     beds, and assert the RENDER carries a container tag `audio_mix_sha256` equal to the provenance
-#     mix sha (the mux stage stamps it). No tag => the mux stage was never run => the sound is
-#     orphaned => FAIL. Fail-closed on missing provenance / mix sha.
-# EP32 §B5(a) recalibration (2026-07-06): the OLD floors (onset 12/min, ambience -45 dB) sat far
-# below real finals, so a THIN VO+music render still cleared them. Raised toward the OBSERVED real
-# 4-layer mixes -- unlock=52/min, miranda=62/min & ambience -21.9 dB -- so a thin VO+music mix now
-# fails while a genuine rich mix keeps margin (35/min < 52-62/min; -33 dB < -21.9 dB). Strictly
-# higher floors = stricter (invariant 15). Honest limit (documented, not hidden): speech alone also
-# creates onsets, so PART 1 proves the mix is NOT a bare single bed but cannot by itself attribute a
-# *distinct* SFX layer -- PART 2's provenance binding is what proves the built 4-layer mix reached
-# the render.
+#     06_audio/audio_provenance.v*.json, require its density_gate to pass, a CONTINUOUS music bed,
+#     >= SOUND_PROV_MIN_BEDS distinct ambience beds AND >= SOUND_PROV_MIN_SFX_FILES distinct
+#     MEANINGFUL SFX files (filler beds excluded), and assert the RENDER carries a container tag
+#     `audio_mix_sha256` equal to the provenance mix sha (the mux stage stamps it). No tag => the mux
+#     stage was never run => the sound is orphaned => FAIL. Fail-closed on missing provenance / mix sha.
+#
+# EP32 §B5(a) RECALIBRATION (2026-07-06, owner reject "意味のない効果音がうざい / ピコピコ鳴ってて
+# 耳障り / 種類も少なくてしょぼい"): the previous onset-density floor (35/min) REWARDED THE WRONG
+# PROXY -- the audio builder answered it by injecting a 326-hit tick/blip filler "transient bed"
+# placed on a fixed cadence PURELY to clear the floor (provenance literally: "to lift the render
+# onset density over the acceptance floor"). That gate-gaming made the audio WORSE (a machine-gun of
+# meaningless pips). We keep the REAL INTENT (a genuine, rich 4-layer mix, invariant 15) but stop
+# rewarding raw transients:
+#   * The high raw-onset floor is DROPPED to a low presence backstop (SOUND_MIN_ONSETS_PER_MIN=6):
+#     it only rejects a SMOOTH lone music bed (≈0 onsets). A tasteful meaningful mix at ~15-25/min
+#     PASSES; the gate no longer pressures anyone to pad transients. (Honest limit, documented not
+#     hidden: speech itself creates onsets, so this acoustic test alone cannot attribute a *distinct*
+#     SFX layer -- that is exactly why the meaningful-richness proof lives in PART 2's sha-bound
+#     provenance, not in a transient count.)
+#   * Richness is now proven STRUCTURALLY in PART 2: distinct MEANINGFUL SFX files + distinct
+#     ambience beds + a continuous music bed, all bound to the render by audio_mix_sha256. A thin
+#     VO-only / single-music-bed render still FAILS (no distinct SFX files / no bound mix), and a
+#     filler tick-bed no longer helps (excluded; distinct *files* is what counts, not hit count).
+# The ambience-band energy floor (a real sustained bed exists) is retained.
 SOUND_WINDOW_SAMPLES = 2400                       # 2400 samples @48kHz = 50ms RMS analysis window
 SOUND_TRANSIENT_RISE_DB = 9.0                     # a window this far above the local median = an onset
 SOUND_TRANSIENT_FLOOR_DB = -45.0                  # onset must also be above this absolute level (ignore noise floor)
 SOUND_TRANSIENT_BASELINE_WIN = 10                 # trailing windows (10 * 50ms = 500ms) for the local median
 SOUND_TRANSIENT_DEBOUNCE_WIN = 3                  # >=150ms between counted onsets (debounce)
-SOUND_MIN_TRANSIENTS_PER_MIN = 35.0              # body onset density floor, raised 12->35 (real mixes 52-62/min; thin VO+music fails)
+# Low presence BACKSTOP only (recalibrated 35 -> 6): a smooth lone music bed (~0 onsets) fails; any
+# VO/SFX mix clears it. Meaningful richness is proven in PART 2, NOT by this count (see header).
+SOUND_MIN_ONSETS_PER_MIN = 6.0
+SOUND_MIN_TRANSIENTS_PER_MIN = SOUND_MIN_ONSETS_PER_MIN  # back-compat alias
 SOUND_AMBIENCE_HP, SOUND_AMBIENCE_LP = 40, 160    # ambience band-pass (Hz)
-SOUND_AMBIENCE_MIN_DB = -33.0                     # ambience-band mean floor, raised -45->-33 dB (real finals ~ -21.9 dB; thin mix fails)
-SOUND_PROV_MIN_SFX = 20                           # EP32 §B5(b): audio_provenance density_gate.sfx_count floor
+SOUND_AMBIENCE_MIN_DB = -33.0                     # ambience-band mean floor (real finals ~ -21.9 dB; a bed must be present)
+SOUND_PROV_MIN_SFX = 20                           # EP32 §B5(b): audio_provenance density_gate.sfx_count floor (meaningful cues)
+SOUND_PROV_MIN_SFX_FILES = 8                      # §B5(b) recal: distinct MEANINGFUL sfx files (variety; filler excluded)
 SOUND_PROV_MIN_BEDS = 4                           # EP32 §B5(b): audio_provenance distinct ambience beds floor
+SOUND_PROV_MIN_MUSIC = 1                          # §B5(b) recal: continuous music bed must be present (>=1 track)
 MIN_VIDEO_W, MIN_VIDEO_H = 1920, 1080
 THUMB_W, THUMB_H = 1280, 720
 MIN_THUMB_VARIANTS = 3
@@ -1010,18 +1027,39 @@ def _sound_mix_binding(epdir: Path, path: Path) -> tuple[list[str], dict]:
     if not prov_sha:
         problems.append(f"{provs[-1].name} has no mux.audio_source_sha256 / mix.sha256 -- the mix WAV "
                         f"was not actually rendered (ran_ffmpeg false); cannot bind the render's audio")
-    # (ii) the mix's own density gate must pass with real SFX + distinct ambience beds
+    # (ii) the mix must be a GENUINE 4-layer mix: density gate passes, a continuous music bed, >= N
+    #      distinct ambience beds, and >= M distinct MEANINGFUL SFX *files* (variety, filler excluded).
+    #      Recalibrated (2026-07-06): richness is proven by DISTINCT FILES here, not by a raw onset
+    #      count in the render -- so a filler tick-bed can no longer earn a pass.
+    layers = prov.get("layers") or {}
     dg = prov.get("density_gate") or {}
     if dg.get("pass") is not True:
         problems.append(f"audio_provenance density_gate.pass != true ({dg.get('pass')})")
     sfx_count = dg.get("sfx_count")
     if not isinstance(sfx_count, (int, float)) or sfx_count < SOUND_PROV_MIN_SFX:
         problems.append(f"audio_provenance density_gate.sfx_count {sfx_count} < {SOUND_PROV_MIN_SFX}")
+    # distinct MEANINGFUL sfx files (layers.sfx.distinct_files counts discrete cue files only, NOT
+    # any filler transient_bed) -- the anti-"種類が少なくてしょぼい" variety floor.
+    sfx_layer = layers.get("sfx") or {}
+    sfx_files = sfx_layer.get("distinct_files")
+    info["distinct_sfx_files"] = sfx_files
+    if not isinstance(sfx_files, (int, float)) or sfx_files < SOUND_PROV_MIN_SFX_FILES:
+        problems.append(f"audio_provenance distinct MEANINGFUL sfx files {sfx_files} < "
+                        f"{SOUND_PROV_MIN_SFX_FILES} (too few distinct SFX -- しょぼい/種類が少ない)")
     distinct_beds = dg.get("ambience_distinct_beds")
     if distinct_beds is None:
-        distinct_beds = ((prov.get("layers") or {}).get("ambience") or {}).get("distinct_beds")
+        distinct_beds = ((layers.get("ambience")) or {}).get("distinct_beds")
     if not isinstance(distinct_beds, (int, float)) or distinct_beds < SOUND_PROV_MIN_BEDS:
         problems.append(f"audio_provenance distinct ambience beds {distinct_beds} < {SOUND_PROV_MIN_BEDS}")
+    # continuous music bed present (per-chapter ducked bed covering the body)
+    music_layer = layers.get("music") or {}
+    music_tracks = music_layer.get("cue_count")
+    if music_tracks is None:
+        music_tracks = music_layer.get("distinct_tracks")
+    info["music_tracks"] = music_tracks
+    if not isinstance(music_tracks, (int, float)) or music_tracks < SOUND_PROV_MIN_MUSIC:
+        problems.append(f"audio_provenance music bed tracks {music_tracks} < {SOUND_PROV_MIN_MUSIC} "
+                        f"(no continuous music layer)")
     # (iii) the RENDER must actually carry THIS mix: a container tag written by the mux stage
     tag = _ffprobe_tag(path, "audio_mix_sha256")
     info["render_audio_mix_tag"] = tag
@@ -1059,9 +1097,9 @@ def check_sound_layers(path: Path, dur: float, epdir: Path) -> dict:
     onsets = _count_onsets(rms)
     per_min = onsets / (body_dur / 60.0) if body_dur else 0.0
     problems = []
-    if per_min < SOUND_MIN_TRANSIENTS_PER_MIN:
-        problems.append(f"onset density {per_min:.1f}/min < {SOUND_MIN_TRANSIENTS_PER_MIN:.0f} "
-                        f"(smooth -> looks like a lone music bed / thin VO+music, no dense VO/SFX transients)")
+    if per_min < SOUND_MIN_ONSETS_PER_MIN:
+        problems.append(f"onset density {per_min:.1f}/min < {SOUND_MIN_ONSETS_PER_MIN:.0f} "
+                        f"(smooth -> a lone music bed with no VO/SFX transients at all)")
     if amb is None or amb < SOUND_AMBIENCE_MIN_DB:
         problems.append(f"ambience band {SOUND_AMBIENCE_HP}-{SOUND_AMBIENCE_LP}Hz "
                         f"{('%.1f dB' % amb) if amb is not None else 'unmeasurable'} "
@@ -1074,11 +1112,14 @@ def check_sound_layers(path: Path, dur: float, epdir: Path) -> dict:
             "onsets_per_min": round(per_min, 1),
             "ambience_db": round(amb, 1) if amb is not None else None,
             "provenance": bind_info.get("provenance"),
+            "distinct_sfx_files": bind_info.get("distinct_sfx_files"),
+            "music_tracks": bind_info.get("music_tracks"),
             "render_audio_mix_tag": bind_info.get("render_audio_mix_tag"),
-            "reason": (f"4-layer mix present & bound: {per_min:.1f} onsets/min "
-                       f"(floor {SOUND_MIN_TRANSIENTS_PER_MIN:.0f}), ambience {amb:.1f} dB "
-                       f"(floor {SOUND_AMBIENCE_MIN_DB:.0f}); audio bound to {bind_info.get('provenance')} "
-                       f"via audio_mix_sha256 tag" if ok
+            "reason": (f"genuine 4-layer mix present & bound: {per_min:.1f} onsets/min "
+                       f"(backstop {SOUND_MIN_ONSETS_PER_MIN:.0f}), ambience {amb:.1f} dB "
+                       f"(floor {SOUND_AMBIENCE_MIN_DB:.0f}); {bind_info.get('distinct_sfx_files')} distinct "
+                       f"SFX files, {bind_info.get('music_tracks')} music tracks; bound to "
+                       f"{bind_info.get('provenance')} via audio_mix_sha256 tag" if ok
                        else "render audio not a verified 4-layer mix: " + "; ".join(problems))}
 
 

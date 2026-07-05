@@ -210,10 +210,12 @@ CHAPTER_AMBIENCE_DEFAULT: dict[str, str] = {
 # ---- M4: one-shot SFX map (curated from build_case_sound_design) -----------
 # (keywords, filename, dur_hint_sec, linear_volume). First match wins; order matters.
 ONESHOT_MAP: list[tuple[tuple[str, ...], str, float, float]] = [
-    (("sub-drop", "sub drop"),                          "sfx_sub_drop.mp3",        1.4, 0.20),
-    (("riser", "rise"),                                 "sfx_riser_2s.mp3",        2.0, 0.20),
-    (("low boom", "boom"),                              "sfx_low_boom.mp3",        1.6, 0.22),
-    (("gavel", "knock"),                                "sfx_gavel_knock.mp3",     1.0, 0.22),
+    # emotional hero hits sit a touch louder so REVEALS / the Collins driveway slam /
+    # the ruling actually LAND (still well under the VO; ticks/blips stay subtle).
+    (("sub-drop", "sub drop"),                          "sfx_sub_drop.mp3",        1.4, 0.24),
+    (("riser", "rise"),                                 "sfx_riser_2s.mp3",        2.0, 0.22),
+    (("low boom", "boom"),                              "sfx_low_boom.mp3",        1.6, 0.26),
+    (("gavel", "knock"),                                "sfx_gavel_knock.mp3",     1.0, 0.24),
     (("page turn", "page-turn"),                        "sfx_page_turn.mp3",       0.9, 0.18),
     (("stamp", "seal"),                                 "sfx_stamp_seal.mp3",      0.9, 0.20),
     (("shutter", "camera", "photo"),                    "sfx_camera_shutter.mp3",  0.7, 0.16),
@@ -227,7 +229,7 @@ ONESHOT_MAP: list[tuple[tuple[str, ...], str, float, float]] = [
     (("tick", "check"),                                 "sfx_ui_tick.mp3",         0.5, 0.12),
     (("click", "mechanical", "metallic", "lock", "latch", "binder", "turn"), "sfx_binder_lock.mp3", 0.7, 0.16),
     (("footstep", "steps"),                             "sfx_soft_impact.mp3",     0.8, 0.12),
-    (("impact", "thud", "hit", "slam"),                 "sfx_soft_impact.mp3",     1.0, 0.18),
+    (("impact", "thud", "hit", "slam"),                 "sfx_soft_impact.mp3",     1.0, 0.24),
     (("clock", "spins", "spinning"),                    "sfx_clock_tick_loop.mp3", 1.0, 0.10),
 ]
 # hard transients keep their one-shot even if an atmospheric word is nearby.
@@ -247,49 +249,17 @@ STRONG_ATMOS = (
 # transition whoosh auto-placed at every chapter cut boundary (layer 4)
 CHAPTER_CUT_SFX = ("sfx_whoosh_short.mp3", 0.8, 0.16)
 
-# ---- transient-density bed (sound_layers onset-density HARD floor) ----------
-# check_final_acceptance.check_sound_layers measures the render's onset density on
-# 50ms high-passed RMS windows and HARD-fails below 35/min (real 4-layer mixes
-# measure 52-62/min). Narration word-onsets + the ~37 curated script/chapter SFX
-# alone measured only ~26/min -- the detector wants punctuated transients that
-# STAND OUT over smooth VO, and continuous speech supplies few. We add a TASTEFUL
-# soft-transient bed: one soft whoosh accent just after each narration chunk start
-# (a real scene/sentence beat) plus gentle tick/blip variants filling each chunk at
-# TRANSIENT_BED_SPACING (naturally denser under the long explainer chunks where the
-# moving-diagram figures animate). Every hit is LOW in the mix (VO stays clearly on
-# top), rotates through the synth variants so it never repeats, is de-duped
-# >=DEDUP_WINDOW_SEC from any discrete SFX cue, and is spacing-limited so it reads
-# as intentional data-texture, NOT a machine-gun of ticks. Rendered compactly (each
-# distinct file loaded once, asplit to its placements) so the ffmpeg graph stays
-# well within the Windows command-line limit.
-TRANSIENT_BED_VARIANTS = (
-    "sfx_ui_tick.mp3", "sfx_tick_v2_hi.mp3", "sfx_tick_v2_lo.mp3",
-    "sfx_data_blip.mp3", "sfx_blip_v2_hi.mp3", "sfx_blip_v2_lo.mp3",
-)
-TRANSIENT_BED_ACCENT = "sfx_whoosh_v2_short.mp3"  # soft whoosh on each chunk (scene) start
-# The raw library ticks/blips are low-level (>500Hz peaks -13..-19 dBFS) and at a
-# flat low gain they never rise the >=9 dB above the local median the detector
-# needs -- so we PEAK-NORMALISE each hit to a common level first (measured
-# >500Hz peaks below), THEN scale it under the VO with TRANSIENT_BED_VOL. This
-# makes every transient a real, detectable spike while still sitting clearly below
-# the narration (a tick ~-15 dBFS under a ~0 dBFS VO peak).
-TRANSIENT_PEAK_DB = {
-    "sfx_ui_tick.mp3": -13.1, "sfx_tick_v2_hi.mp3": -18.3, "sfx_tick_v2_lo.mp3": -18.7,
-    "sfx_data_blip.mp3": -11.8, "sfx_blip_v2_hi.mp3": -18.1, "sfx_blip_v2_lo.mp3": -19.2,
-    "sfx_whoosh_v2_short.mp3": -18.2,
-}
-TRANSIENT_NORM_TARGET_DB = -4.0  # peak-normalise each hit to this (>500Hz peak) before bed volume
-TRANSIENT_BED_VOL = 0.46         # then place the normalised hit ~7 dB under the VO (low, but a real spike)
-TRANSIENT_BED_DUR = 0.5
-TRANSIENT_BED_SPACING = 1.8      # sec between soft transients (tasteful cadence, not machine-gun)
-TRANSIENT_BED_EDGE = 0.5         # skip this much at each chunk edge (clean of the boundary word)
-
-
-def transient_gain(fname: str) -> float:
-    """Linear gain that peak-normalises a transient file to TRANSIENT_NORM_TARGET_DB
-    (from its measured >500Hz peak), then scales it under the VO by TRANSIENT_BED_VOL."""
-    norm_db = TRANSIENT_NORM_TARGET_DB - TRANSIENT_PEAK_DB.get(fname, TRANSIENT_NORM_TARGET_DB)
-    return round(db_to_vol(norm_db) * TRANSIENT_BED_VOL, 4)
+# NOTE (EP32 sound remediation, 2026-07-06 owner reject: "意味のない効果音がうざい / ピコピコ
+# 鳴ってて耳障り / 種類も少なくてしょぼい"):
+# The former "transient-density bed" (a 326-hit tick/blip/whoosh filler placed on a
+# fixed cadence PURELY to lift the render's measured onset density over an
+# acceptance floor of 35/min) has been REMOVED ENTIRELY. It was gate-gaming: it made
+# the audio WORSE (a machine-gun of meaningless pips) while satisfying a wrong
+# proxy. SFX now come ONLY from the script's DESIGNED (SFX:) cues + chapter-cut
+# transitions -- each placed at the real narrated word/beat -- rotated through the
+# library variants for variety (VARIANT_POOLS). The acceptance gate was recalibrated
+# to reward a genuine 4-layer mix (distinct SFX files + distinct ambience beds bound
+# by sha), NOT raw transient count -- see check_final_acceptance.check_sound_layers.
 
 CHAPTER_TITLES = {
     "hook": "Hook", "opening": "Opening", "act1": "ACT I", "act2": "ACT II",
@@ -834,39 +804,6 @@ def dedup_sfx(sfx: list[SfxCue]) -> tuple[list[SfxCue], int]:
     return kept, dropped
 
 
-def build_transient_bed(chunks: list[Chunk], sfx: list[SfxCue]) -> list[tuple[str, float]]:
-    """Return a deterministic list of (sfx filename, body-local time) soft transients
-    that lift the measured onset density toward the acceptance floor. A soft whoosh
-    accents each narration chunk start; gentle tick/blip variants fill each chunk at
-    TRANSIENT_BED_SPACING. De-duped >=DEDUP_WINDOW_SEC from any discrete SFX cue and
-    globally spacing-limited so it never machine-guns. VO stays on top (low volume)."""
-    discrete = sorted(c.time for c in sfx)
-
-    def near_discrete(t: float) -> bool:
-        return any(abs(t - dt) < DEDUP_WINDOW_SEC for dt in discrete)
-
-    bed: list[tuple[str, float]] = []
-    last_t = -1.0e9
-    vi = 0
-    for ch in chunks:
-        start = ch.start + TRANSIENT_BED_EDGE
-        end = ch.end - TRANSIENT_BED_EDGE
-        if end <= start:
-            continue
-        first_in_chunk = True
-        t = round3(start)
-        while t < end:
-            if (t - last_t) >= (TRANSIENT_BED_SPACING - 0.05) and not near_discrete(t):
-                fname = (TRANSIENT_BED_ACCENT if first_in_chunk
-                         else TRANSIENT_BED_VARIANTS[vi % len(TRANSIENT_BED_VARIANTS)])
-                bed.append((fname, round3(t)))
-                last_t = t
-                vi += 1
-                first_in_chunk = False
-            t = round3(t + TRANSIENT_BED_SPACING)
-    return bed
-
-
 # ============================================================================
 # density gate (M3 distinctness + SFX floor)
 # ============================================================================
@@ -926,8 +863,7 @@ def build_ffmpeg(narration_path: str, spans, beds: dict[str, str],
                  sfx: list[SfxCue], swells: list[SwellEvent],
                  lead: float, body_len: float, total: float,
                  lib: Path, out_wav: str,
-                 loudnorm: str,
-                 tbed: Optional[list[tuple[str, float]]] = None) -> tuple[str, list[str]]:
+                 loudnorm: str) -> tuple[str, list[str]]:
     """Assemble the 4-layer ducked filter_complex + full argv (string only), spanning
     the WHOLE video composition [0, total] with the body offset by `lead`.
 
@@ -983,18 +919,6 @@ def build_ffmpeg(narration_path: str, spans, beds: dict[str, str],
     if has_bookends:
         inputs += ["-i", str(lib / "sfx" / RISER_FILL[0])]
         riser_idx = cursor; cursor += 1
-
-    # transient-density bed: load each distinct file ONCE (asplit to its N uses in
-    # the filter graph) so hundreds of soft transients cost only a handful of inputs.
-    tbed = tbed or []
-    tbed_by_file: dict[str, list[float]] = {}
-    for fname, t in tbed:
-        tbed_by_file.setdefault(fname, []).append(t)
-    tbed_inputs: list[tuple[int, str, list[float]]] = []
-    for fname in sorted(tbed_by_file):
-        inputs += ["-i", str(lib / "sfx" / fname)]
-        tbed_inputs.append((cursor, fname, sorted(tbed_by_file[fname])))
-        cursor += 1
 
     filters: list[str] = []
     # narration -> placed at `lead`, padded to the full composition -> [vo] + [key]
@@ -1072,22 +996,6 @@ def build_ffmpeg(narration_path: str, spans, beds: dict[str, str],
             f"[{riser_idx}:a]atrim=0:{r_dur:.3f},asetpts=PTS-STARTPTS,volume={r_vol},"
             f"adelay={delay}|{delay}[sriser]")
         s_labels.append("[sriser]")
-    # transient-density bed (compact): trim+volume each file once, asplit to its
-    # placements, then a per-hit adelay-only line (keeps the graph small).
-    tb_n = 0
-    for idx, _fname, times in tbed_inputs:
-        k = len(times)
-        base = f"[{idx}:a]atrim=0:{TRANSIENT_BED_DUR:.3f},asetpts=PTS-STARTPTS,volume={transient_gain(_fname)}"
-        if k == 1:
-            filters.append(f"{base}[tb{idx}_0]")
-        else:
-            outs = "".join(f"[tb{idx}_{j}]" for j in range(k))
-            filters.append(f"{base},asplit={k}{outs}")
-        for j, t in enumerate(times):
-            delay = int(round((t + lead) * 1000))
-            filters.append(f"[tb{idx}_{j}]adelay={delay}|{delay}[sb{tb_n}]")
-            s_labels.append(f"[sb{tb_n}]")
-            tb_n += 1
     if s_labels:
         filters.append(f"{''.join(s_labels)}amix=inputs={len(s_labels)}:normalize=0:dropout_transition=0[sfxraw]")
     else:
@@ -1196,9 +1104,6 @@ def main() -> int:
     beds = assign_ambience(spans, chunks, beats)
     sfx_raw, swells, unmapped = build_cues(beats, chunks, spans, gtok, gtime)
     sfx, dropped = dedup_sfx(sfx_raw)
-    # soft transient-density bed (lifts the render's onset density over the gate floor)
-    tbed = build_transient_bed(chunks, sfx)
-    tbed_files = sorted({f for f, _t in tbed})
     density = compute_density(sfx, beds, spans, total)
 
     # ---- expected (not-yet-existing) narration master + outputs -------------
@@ -1209,8 +1114,7 @@ def main() -> int:
 
     loudnorm_apply = "loudnorm=I=-14:TP=-1.5:LRA=11:linear=true"
     graph, argv = build_ffmpeg(str(narration_master), spans, beds, sfx, swells,
-                               lead, body_len, total, lib, str(out_wav), loudnorm_apply,
-                               tbed=tbed)
+                               lead, body_len, total, lib, str(out_wav), loudnorm_apply)
     command_str = " ".join(quote_arg(a) for a in argv)
 
     # ---- optional render (two-pass loudnorm) --------------------------------
@@ -1224,8 +1128,7 @@ def main() -> int:
                     / CHAPTER_MUSIC.get(c, ("", "explainer_bed", "mus_20260614_explainer_bed_soft_explainer_v2.mp3"))[2]
                     for c, _s, _e, _m in spans],
                   *[lib / "ambience" / beds[c] for c, _s, _e, _m in spans],
-                  *[lib / c.file for c in sfx],
-                  *[lib / "sfx" / f for f in tbed_files]]
+                  *[lib / c.file for c in sfx]]
         if lead > 0.001:  # hook/opening intro + endcard outro + riser fills
             for key in ("hook", "opening", "ending"):
                 _r, folder, fname = CHAPTER_MUSIC[key]
@@ -1356,17 +1259,13 @@ def main() -> int:
                 "distinct_files": len(set(c.file for c in sfx)),
                 "word_triggered": sum(1 for c in sfx if c.timing == "word_trigger"),
                 "riser_fill": (RISER_FILL[0] if lead > 0.001 else None),
-                "transient_bed": {
-                    "role": "soft rotating tick/blip/whoosh texture on chunk (scene) beats to lift the render onset density over the acceptance floor; low in the mix, VO on top",
-                    "cue_count": len(tbed),
-                    "distinct_files": len(tbed_files),
-                    "files": tbed_files,
-                    "spacing_sec": TRANSIENT_BED_SPACING,
-                    "peak_normalized_to_db": TRANSIENT_NORM_TARGET_DB,
-                    "bed_gain_db": vol_to_db(TRANSIENT_BED_VOL),
-                    "effective_gain_db_by_file": {f: vol_to_db(transient_gain(f)) for f in tbed_files},
-                },
-                "transient_sources_total": len(sfx) + len(tbed),
+                "transient_bed": None,
+                "transient_bed_removed_note": (
+                    "The former onset-density filler bed (326 meaningless tick/blip/whoosh hits placed "
+                    "on a fixed cadence to game the acceptance onset floor) was REMOVED (EP32 owner "
+                    "reject 2026-07-06). SFX are now ONLY the script's designed (SFX:) cues + chapter "
+                    "cuts at real narrated beats; the gate rewards distinct SFX files + beds, not raw "
+                    "transient count."),
             },
         },
         "mix": {
@@ -1449,9 +1348,9 @@ def main() -> int:
           f"word-triggered={provenance['layers']['sfx']['word_triggered']}; "
           f"swells routed to L3={len(swells)}; unmapped={len(unmapped)}")
     _body_min = max(0.001, (total - ENDCARD_SEC) / 60.0)
-    print(f"transient bed: {len(tbed)} soft transients ({len(tbed_files)} distinct files) "
-          f"@~{TRANSIENT_BED_SPACING}s -> {len(sfx) + len(tbed)} total transient sources "
-          f"(~{(len(sfx) + len(tbed)) / _body_min:.1f} cues/min over the {_body_min:.1f}-min body)")
+    print(f"transient bed: REMOVED (no filler ticks) -> {len(sfx)} meaningful SFX "
+          f"({len(set(c.file for c in sfx))} distinct files) "
+          f"~{len(sfx) / _body_min:.1f} cues/min over the {_body_min:.1f}-min body")
     print(f"music cues: {len(music_tracks)} ({len(set(music_tracks))} distinct)")
     print(f"density: sfx/min={density['sfx_per_min']} (floor {SFX_PER_MIN_FLOOR}), "
           f"distinct_beds={density['ambience_distinct_beds']} (floor {AMBIENCE_DISTINCT_FLOOR}), "
