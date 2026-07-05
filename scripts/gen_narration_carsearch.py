@@ -96,9 +96,12 @@ def parse_chunks() -> list[dict[str, str]]:
 
 def concat_master(chunks: list[dict[str, str]], outdir: Path, master: Path) -> list[dict]:
     index: list[dict] = []
-    silence = outdir / "_silence_035.mp3"
-    subprocess.run(["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono",
-                    "-t", "0.35", "-c:a", "libmp3lame", "-b:a", "192k", str(silence)], check=True)
+    GAP_BEAT, GAP_SECTION = 0.6, 2.5   # breathing: within-section beat gap / ACT-boundary breath
+    sil_beat = outdir / "_silence_060.mp3"
+    sil_sec = outdir / "_silence_250.mp3"
+    for _p, _t in ((sil_beat, GAP_BEAT), (sil_sec, GAP_SECTION)):
+        subprocess.run(["ffmpeg", "-y", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono",
+                        "-t", f"{_t}", "-c:a", "libmp3lame", "-b:a", "192k", str(_p)], check=True)
     cursor = 0.0
     lines: list[str] = []
     for i, c in enumerate(chunks):
@@ -111,8 +114,10 @@ def concat_master(chunks: list[dict[str, str]], outdir: Path, master: Path) -> l
         lines.append(f"file '{path.as_posix()}'\n")
         cursor += d
         if i != len(chunks) - 1:
-            lines.append(f"file '{silence.as_posix()}'\n")
-            cursor += 0.35
+            boundary = c["section"] != chunks[i + 1]["section"]
+            gap = GAP_SECTION if boundary else GAP_BEAT
+            lines.append(f"file '{(sil_sec if boundary else sil_beat).as_posix()}'\n")
+            cursor += gap
     concat = outdir / "_concat.txt"
     concat.write_text("".join(lines), "utf-8")
     master.parent.mkdir(parents=True, exist_ok=True)
