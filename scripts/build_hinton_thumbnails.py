@@ -47,9 +47,10 @@ def main() -> int:
         # clears the visibility gate (mean luma >= 33, std >= 40 = punchy/high-CTR at 320px).
         from PIL import Image, ImageEnhance
         im = Image.open(out).convert("RGB")
-        im = ImageEnhance.Brightness(im).enhance(1.55)
-        im = ImageEnhance.Contrast(im).enhance(1.22)
-        im = ImageEnhance.Color(im).enhance(1.12)
+        im = ImageEnhance.Brightness(im).enhance(1.72)   # 派手: bright/loud
+        im = ImageEnhance.Contrast(im).enhance(1.34)     # punchy contrast
+        im = ImageEnhance.Color(im).enhance(1.5)         # vivid accent
+        im = ImageEnhance.Sharpness(im).enhance(1.3)     # crisp at 320px
         im.save(out)
         print("rendered+graded", out.name)
     shutil.copy2(THUMB / f"thumbnail_{args.select}.png", PKG / "thumbnail.selected.png")
