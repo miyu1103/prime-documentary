@@ -99,6 +99,27 @@ GENERATOR = "scripts/build_case_film_audio.py"
 REVISION_DEFAULT = "v001"
 FPS = 30
 
+# ---- video-timeline bookends (SYNC FIX) ------------------------------------
+# The CaseFilm render (remotion/src/compositions/CaseFilm.tsx) lays out:
+#   Hook[0, hookSeconds] -> Opening[hookSeconds, hookSeconds+OPENING_SEC]
+#   -> Body[lead, lead+narrationSeconds] -> Endcard[.., +ENDCARD_SEC]
+#   where lead = hookSeconds + OPENING_SEC.
+# The narration audio + burned captions + moving-diagram figures ALL live in the
+# Body, offset by `lead`. So this mix MUST place the whole 4-layer body at `lead`
+# and fill the hook/opening lead + endcard tail; otherwise the narration plays
+# ~lead seconds too early and drifts ahead of every caption/figure (the owner's
+# #1 failure: caption != narration).
+# OPENING_SEC / ENDCARD_SEC are exported from remotion/src/components/Bookends.tsx
+#   ("export const OPENING_SEC = 3.5;" / "export const ENDCARD_SEC = 9;").
+OPENING_SEC = 3.5
+ENDCARD_SEC = 9.0
+
+# hook/opening intro + endcard outro fills (no VO in these regions, so no ducking
+# needed and the bed can sit a touch louder than the ducked body bed).
+INTRO_MUSIC_VOL = 0.30       # hook->opening bed that builds into the body
+OUTRO_MUSIC_VOL = 0.26       # endcard bed, gently resolving
+RISER_FILL = ("sfx_riser_2s.mp3", 2.0, 0.24)  # optional riser landing on body start (lead)
+
 # ---- timeline model --------------------------------------------------------
 # Chunk starts are the CUMULATIVE narration-index durations (measured per-chunk
 # audio when it exists, else the index's estimated_duration_seconds). This
@@ -280,6 +301,43 @@ def ffprobe_duration(path: Path) -> Optional[float]:
         return None
 
 
+def find_film_data(ep: str, override: Optional[str]) -> Optional[Path]:
+    """Locate the CaseFilm data JSON that defines the render's video timeline
+    (hookSeconds / narrationSeconds). Tries the two canonical locations, then
+    scans remotion/public/*/film_data*.json for a matching episode_id."""
+    if override:
+        p = Path(override)
+        return p if p.exists() else None
+    slug = ep.rsplit("-", 1)[-1]  # PD-2026-032-carsearch -> carsearch
+    candidates = [
+        ROOT / "remotion" / "public" / slug / "film_data.v001.json",
+        ROOT / "remotion" / "src" / "data" / f"{slug}_film.json",
+    ]
+    for c in candidates:
+        if c.exists():
+            return c
+    for c in sorted((ROOT / "remotion" / "public").glob("*/film_data*.json")):
+        try:
+            if json.loads(c.read_text("utf-8")).get("episode_id") == ep:
+                return c
+        except Exception:
+            continue
+    return None
+
+
+def read_video_timeline(ep: str, override: Optional[str]) -> tuple[float, float, Optional[Path]]:
+    """Return (hookSeconds, narrationSeconds, film_data_path) from the CaseFilm data
+    so the mix can be offset by `lead` and span the whole composition. Falls back to
+    (0.0, 0.0, None) if no film_data is found (mix then stays body-only == legacy)."""
+    fd = find_film_data(ep, override)
+    if fd is None:
+        return 0.0, 0.0, None
+    data = json.loads(fd.read_text("utf-8"))
+    hook = float(data.get("hookSeconds") or 0.0)
+    narr = float(data.get("narrationSeconds") or 0.0)
+    return hook, narr, fd
+
+
 def normalize_section(section: str) -> str:
     h = (section or "").upper().strip()
     if h.startswith("HOOK"):
@@ -394,13 +452,26 @@ def build_chunks(index: dict, media: Path, ep: str) -> list[Chunk]:
             dur, src = measured, f"measured:{audio.name}"
         else:
             dur, src = est, "narration_index_estimate"
+        # Prefer the narration_index's OWN start/end — the AUTHORITATIVE master
+        # timeline WITH inter-chunk silences (the master mp3 the video plays). A
+        # bare cursor (no silence) sums ~16s short, drifting SFX cues off the
+        # spoken word by the end. Using the index times keeps every SFX aligned
+        # with the continuously-playing master (which is adelay'd by `lead`).
+        idx_start = c.get("start")
+        idx_end = c.get("end")
+        if idx_start is not None and idx_end is not None:
+            st = round3(float(idx_start))
+            en = round3(float(idx_end))
+        else:
+            st = round3(cursor)
+            en = round3(cursor + dur)
         ch = Chunk(
             i=i, vc_id=vc, section=section, chapter_id=normalize_section(section),
-            text=text, tokens=alnum_tokens(text), duration=round3(dur),
-            duration_source=src, start=round3(cursor), end=round3(cursor + dur),
+            text=text, tokens=alnum_tokens(text), duration=round3(en - st),
+            duration_source=src, start=st, end=en,
         )
         chunks.append(ch)
-        cursor += dur + INTER_CHUNK_GAP
+        cursor = en + INTER_CHUNK_GAP
     return chunks
 
 
@@ -750,80 +821,152 @@ def compute_density(sfx: list[SfxCue], beds: dict[str, str],
 # ============================================================================
 # ffmpeg 4-layer graph
 # ============================================================================
+def intro_segments_for(lead: float) -> list[tuple[str, float, float]]:
+    """Split the hook/opening lead [0, lead] into a hook bed then an opening bed
+    (hookSeconds == lead - OPENING_SEC). If there is no hook, one opening bed fills
+    the whole lead."""
+    if lead <= 0.001:
+        return []
+    hook_end = round3(max(0.0, lead - OPENING_SEC))  # == hookSeconds
+    if hook_end > 0.1:
+        return [("hook", 0.0, hook_end), ("opening", round3(hook_end), round3(lead))]
+    return [("opening", 0.0, round3(lead))]
+
+
 def build_ffmpeg(narration_path: str, spans, beds: dict[str, str],
-                 sfx: list[SfxCue], swells: list[SwellEvent], total: float,
+                 sfx: list[SfxCue], swells: list[SwellEvent],
+                 lead: float, body_len: float, total: float,
                  lib: Path, out_wav: str,
                  loudnorm: str) -> tuple[str, list[str]]:
-    """Assemble the 4-layer ducked filter_complex + full argv (string only).
+    """Assemble the 4-layer ducked filter_complex + full argv (string only), spanning
+    the WHOLE video composition [0, total] with the body offset by `lead`.
 
-    L1 narration front (splits a sidechain key), L2 music per-chapter ducked bed,
-    L3 ambience distinct constant bed + swell gain automation, L4 SFX one-shots.
+    L1 narration front (placed at `lead`, splits a sidechain key), L2 music
+    (hook/opening intro fill [0, lead] + per-chapter ducked body bed offset by
+    `lead` + outro fill over the endcard tail), L3 ambience distinct constant body
+    bed offset by `lead` + swell gain automation, L4 SFX one-shots offset by `lead`
+    (plus an optional riser landing on the body start). Nothing plays under the hook
+    narration's future energy; there is no VO in the lead so the intro is not ducked.
     """
     amb_floor = db_to_vol(AMBIENCE_FLOOR_DB)
+    lead_ms = int(round(lead * 1000))
+    has_bookends = lead > 0.001
 
     music_cues = [(cid, s, e) for (cid, s, e, _m) in spans]
     amb_cues = [(cid, s, e, beds[cid]) for (cid, s, e, _m) in spans]
+    intro_segs = intro_segments_for(lead)
 
+    # ---- inputs (order fixes the [idx:a] references below) -------------------
     inputs: list[str] = ["-i", narration_path]
-    music_idx0 = 1
-    for cid, _s, _e in music_cues:
-        role, folder, fname = CHAPTER_MUSIC.get(cid, ("bed", "explainer_bed",
-                                                      "mus_20260614_explainer_bed_soft_explainer_v2.mp3"))
+    cursor = 1
+
+    intro_idx: list[int] = []
+    for role_key, _s, _e in intro_segs:
+        _r, folder, fname = CHAPTER_MUSIC[role_key]
         inputs += ["-stream_loop", "-1", "-i", str(lib / "music" / folder / fname)]
-    amb_idx0 = music_idx0 + len(music_cues)
+        intro_idx.append(cursor); cursor += 1
+
+    music_idx0 = cursor
+    for cid, _s, _e in music_cues:
+        _r, folder, fname = CHAPTER_MUSIC.get(cid, ("bed", "explainer_bed",
+                                                    "mus_20260614_explainer_bed_soft_explainer_v2.mp3"))
+        inputs += ["-stream_loop", "-1", "-i", str(lib / "music" / folder / fname)]
+        cursor += 1
+
+    outro_idx: Optional[int] = None
+    if has_bookends:
+        _r, folder, fname = CHAPTER_MUSIC["ending"]  # ("outro","outro", outro track)
+        inputs += ["-stream_loop", "-1", "-i", str(lib / "music" / folder / fname)]
+        outro_idx = cursor; cursor += 1
+
+    amb_idx0 = cursor
     for _cid, _s, _e, bed in amb_cues:
         inputs += ["-stream_loop", "-1", "-i", str(lib / "ambience" / bed)]
-    sfx_idx0 = amb_idx0 + len(amb_cues)
+        cursor += 1
+
+    sfx_idx0 = cursor
     for c in sfx:
         inputs += ["-i", str(lib / c.file)]
+        cursor += 1
+
+    riser_idx: Optional[int] = None
+    if has_bookends:
+        inputs += ["-i", str(lib / "sfx" / RISER_FILL[0])]
+        riser_idx = cursor; cursor += 1
 
     filters: list[str] = []
-    # narration -> [vo] + sidechain key [key]
+    # narration -> placed at `lead`, padded to the full composition -> [vo] + [key]
     filters.append(
-        f"[0:a]aresample=48000,volume={NARRATION_VOL},apad,atrim=0:{total:.3f},"
+        f"[0:a]aresample=48000,volume={NARRATION_VOL},apad,atrim=0:{body_len:.3f},"
+        f"asetpts=PTS-STARTPTS,adelay={lead_ms}|{lead_ms},apad,atrim=0:{total:.3f},"
         f"asetpts=PTS-STARTPTS,asplit=2[vo][key]")
 
-    # music layer (per-chapter looped segments) -> ducked by VO
+    # music layer: intro fill [0,lead] + per-chapter body bed (+lead) + outro tail
     m_labels: list[str] = []
+    for k, (idx, (_role, s, e)) in enumerate(zip(intro_idx, intro_segs)):
+        seg = max(0.1, e - s)
+        delay = int(round(s * 1000))
+        filters.append(
+            f"[{idx}:a]atrim=0:{seg:.3f},asetpts=PTS-STARTPTS,volume={INTRO_MUSIC_VOL},"
+            f"afade=t=in:st=0:d=0.6,afade=t=out:st={max(0.0, seg - 0.8):.3f}:d=0.8,"
+            f"adelay={delay}|{delay}[mi{k}]")
+        m_labels.append(f"[mi{k}]")
     for i, (_cid, s, e) in enumerate(music_cues):
         idx = music_idx0 + i
         seg = max(0.1, e - s)
-        delay = int(round(s * 1000))
+        delay = int(round((s + lead) * 1000))
         filters.append(
             f"[{idx}:a]atrim=0:{seg:.3f},asetpts=PTS-STARTPTS,volume={MUSIC_VOL},"
             f"afade=t=in:st=0:d=0.5,afade=t=out:st={max(0.0, seg - 0.7):.3f}:d=0.7,"
             f"adelay={delay}|{delay}[m{i}]")
         m_labels.append(f"[m{i}]")
+    if outro_idx is not None:
+        o_s = round3(lead + body_len)
+        seg = max(0.1, total - o_s)
+        delay = int(round(o_s * 1000))
+        filters.append(
+            f"[{outro_idx}:a]atrim=0:{seg:.3f},asetpts=PTS-STARTPTS,volume={OUTRO_MUSIC_VOL},"
+            f"afade=t=in:st=0:d=0.8,afade=t=out:st={max(0.0, seg - 1.2):.3f}:d=1.2,"
+            f"adelay={delay}|{delay}[mo]")
+        m_labels.append("[mo]")
     filters.append(f"{''.join(m_labels)}amix=inputs={len(m_labels)}:normalize=0:dropout_transition=0[musraw]")
     filters.append("[musraw][key]sidechaincompress=threshold=0.03:ratio=8:attack=25:release=320[musd]")
 
-    # ambience layer (distinct per-chapter constant beds; NOT sidechained -> capped duck)
+    # ambience layer (distinct per-chapter constant beds, +lead; NOT sidechained -> capped duck)
     a_labels: list[str] = []
     for i, (_cid, s, e, _bed) in enumerate(amb_cues):
         idx = amb_idx0 + i
         seg = max(0.1, e - s)
-        delay = int(round(s * 1000))
+        delay = int(round((s + lead) * 1000))
         filters.append(
             f"[{idx}:a]atrim=0:{seg:.3f},asetpts=PTS-STARTPTS,volume={amb_floor},"
             f"afade=t=in:st=0:d=0.6,afade=t=out:st={max(0.0, seg - 0.6):.3f}:d=0.6,"
             f"adelay={delay}|{delay}[a{i}]")
         a_labels.append(f"[a{i}]")
     filters.append(f"{''.join(a_labels)}amix=inputs={len(a_labels)}:normalize=0:dropout_transition=0[ambraw]")
-    # L3 gain automation: multiplicative swell bumps (routed atmospheric cues)
+    # L3 gain automation: multiplicative swell bumps (routed atmospheric cues), +lead
     terms = "+".join(
-        f"{sw.bump:.3f}*between(t,{sw.time:.3f},{sw.time + sw.dur:.3f})" for sw in swells)
+        f"{sw.bump:.3f}*between(t,{sw.time + lead:.3f},{sw.time + sw.dur + lead:.3f})" for sw in swells)
     expr = f"1+{terms}" if terms else "1"
     filters.append(f"[ambraw]volume=eval=frame:volume='{expr}'[ambd]")
 
-    # sfx layer (one-shots)
+    # sfx layer (one-shots, +lead) + optional riser landing on the body start
     s_labels: list[str] = []
     for i, c in enumerate(sfx):
         idx = sfx_idx0 + i
-        delay = int(round(c.time * 1000))
+        delay = int(round((c.time + lead) * 1000))
         filters.append(
             f"[{idx}:a]atrim=0:{c.dur:.3f},asetpts=PTS-STARTPTS,volume={c.volume},"
             f"adelay={delay}|{delay}[s{i}]")
         s_labels.append(f"[s{i}]")
+    if riser_idx is not None:
+        r_dur, r_vol = RISER_FILL[1], RISER_FILL[2]
+        r_start = round3(max(0.0, lead - r_dur))  # climax lands on the body start
+        delay = int(round(r_start * 1000))
+        filters.append(
+            f"[{riser_idx}:a]atrim=0:{r_dur:.3f},asetpts=PTS-STARTPTS,volume={r_vol},"
+            f"adelay={delay}|{delay}[sriser]")
+        s_labels.append("[sriser]")
     if s_labels:
         filters.append(f"{''.join(s_labels)}amix=inputs={len(s_labels)}:normalize=0:dropout_transition=0[sfxraw]")
     else:
@@ -876,6 +1019,7 @@ def main() -> int:
     ap.add_argument("--script", help="script.en markdown (default: episodes/<ep>/03_script/script.en.v001.md)")
     ap.add_argument("--index", help="narration_index JSON (default: episodes/<ep>/06_audio/narration_index.v001.json)")
     ap.add_argument("--out", help="provenance JSON (default: episodes/<ep>/06_audio/audio_provenance.<rev>.json)")
+    ap.add_argument("--film-data", help="CaseFilm data JSON for the video timeline (default: remotion/public/<slug>/film_data.v001.json)")
     ap.add_argument("--revision", default=REVISION_DEFAULT)
     ap.add_argument("--dry-run", action="store_true", help="emit ffmpeg command + provenance only; never run ffmpeg")
     ap.add_argument("--render", action="store_true", help="run ffmpeg (only if not --dry-run and every input exists)")
@@ -900,7 +1044,23 @@ def main() -> int:
 
     index = load_index(index_path)
     chunks = build_chunks(index, media, ep)
-    total = round3(chunks[-1].end + TAIL_SEC)
+    # internal narration timeline (cue/token placement) = summed chunk durations + tail
+    body_internal = round3(chunks[-1].end + TAIL_SEC)
+
+    # SYNC FIX: read the render's video timeline so the body sits at `lead` and the
+    # mix spans the WHOLE composition (hook/opening lead + body + endcard tail).
+    hook_seconds, narration_seconds, film_data_path = read_video_timeline(ep, args.film_data)
+    if film_data_path is not None and narration_seconds > 0:
+        lead = round3(hook_seconds + OPENING_SEC)
+        # body_len == the render's Body length (narrationSeconds); guard so it always
+        # covers the internal narration timeline (no cue ever falls outside the body).
+        body_len = round3(max(body_internal, narration_seconds))
+        total = round3(lead + body_len + ENDCARD_SEC)
+    else:
+        # legacy / no film_data: body-only mix at t=0 (unchanged behaviour)
+        lead = 0.0
+        body_len = body_internal
+        total = body_internal
 
     beats = parse_script_md(script_md)
     if not beats:
@@ -909,7 +1069,9 @@ def main() -> int:
     gtok, gtime, gchunk = build_global_tokens(chunks)
     align_beats(beats, gtok, gchunk)
 
-    spans = chapter_spans(chunks, total)
+    # chapter spans stay body-local [0, body_len]; the last chapter extends to
+    # body_len so the ambience bed covers the full Body region.
+    spans = chapter_spans(chunks, body_len)
     beds = assign_ambience(spans, chunks, beats)
     sfx_raw, swells, unmapped = build_cues(beats, chunks, spans, gtok, gtime)
     sfx, dropped = dedup_sfx(sfx_raw)
@@ -923,7 +1085,7 @@ def main() -> int:
 
     loudnorm_apply = "loudnorm=I=-14:TP=-1.5:LRA=11:linear=true"
     graph, argv = build_ffmpeg(str(narration_master), spans, beds, sfx, swells,
-                               total, lib, str(out_wav), loudnorm_apply)
+                               lead, body_len, total, lib, str(out_wav), loudnorm_apply)
     command_str = " ".join(quote_arg(a) for a in argv)
 
     # ---- optional render (two-pass loudnorm) --------------------------------
@@ -938,6 +1100,11 @@ def main() -> int:
                     for c, _s, _e, _m in spans],
                   *[lib / "ambience" / beds[c] for c, _s, _e, _m in spans],
                   *[lib / c.file for c in sfx]]
+        if lead > 0.001:  # hook/opening intro + endcard outro + riser fills
+            for key in ("hook", "opening", "ending"):
+                _r, folder, fname = CHAPTER_MUSIC[key]
+                needed.append(lib / "music" / folder / fname)
+            needed.append(lib / "sfx" / RISER_FILL[0])
         missing = [p for p in needed if not Path(p).exists()]
         if missing:
             print(f"--render skipped: {len(missing)} input(s) missing (e.g. {missing[0]})")
@@ -980,6 +1147,18 @@ def main() -> int:
                                                       "mus_20260614_explainer_bed_soft_explainer_v2.mp3"))
         music_tracks.append(f"music/{folder}/{fname}")
 
+    # hook/opening intro + endcard outro fills that keep the lead + tail from being
+    # silent (premium intro that builds; outro gently resolving).
+    music_fills = []
+    if lead > 0.001:
+        for role_key, s, e in intro_segments_for(lead):
+            _r, folder, fname = CHAPTER_MUSIC[role_key]
+            music_fills.append({"role": role_key, "file": f"music/{folder}/{fname}",
+                                "start": round3(s), "end": round3(e), "vol": INTRO_MUSIC_VOL})
+        _r, folder, fname = CHAPTER_MUSIC["ending"]
+        music_fills.append({"role": "outro", "file": f"music/{folder}/{fname}",
+                            "start": round3(lead + body_len), "end": total, "vol": OUTRO_MUSIC_VOL})
+
     provenance = {
         "schema_version": SCHEMA_VERSION,
         "kind": "case_film_audio_provenance",
@@ -989,17 +1168,29 @@ def main() -> int:
         "fps": FPS,
         "timeline": {
             "total_sec": total,
-            "voice_end_sec": round3(chunks[-1].end),
+            "lead_sec": lead,
+            "body_len_sec": body_len,
+            "body_internal_sec": body_internal,
+            "narration_starts_at_sec": lead,
+            "voice_end_sec": round3(lead + chunks[-1].end),
             "tail_sec": TAIL_SEC,
             "chunks": len(chunks),
             "beats": len(beats),
-            "timing_source": "narration_index chunk durations (measured per-chunk audio when present, else estimate); SFX placed by token position within the owning chunk",
+            "video_timeline": {
+                "note": "mix spans the whole CaseFilm composition; body (narration+cues) offset by lead so it aligns with the burned captions + figures",
+                "hook_seconds": round3(hook_seconds),
+                "opening_sec": OPENING_SEC,
+                "endcard_sec": ENDCARD_SEC,
+                "narration_seconds": round3(narration_seconds),
+                "film_data": rel(film_data_path) if film_data_path else None,
+            },
+            "timing_source": "narration_index chunk durations (measured per-chunk audio when present, else estimate); SFX placed by token position within the owning chunk; whole body shifted by lead",
             "measured_chunks": sum(1 for c in chunks if c.duration_source.startswith("measured")),
             "estimated_chunks": sum(1 for c in chunks if c.duration_source == "narration_index_estimate"),
         },
         "chapters": [
             {"chapter_id": cid, "title": CHAPTER_TITLES.get(cid, cid),
-             "start": s, "end": e, "ambience_bed": beds[cid]}
+             "start": round3(s + lead), "end": round3(e + lead), "ambience_bed": beds[cid]}
             for cid, s, e, _m in spans
         ],
         # ---- LAYER INVENTORY that check_sound_layers verifies ----
@@ -1012,12 +1203,14 @@ def main() -> int:
                 "gain_db": 0.0,
             },
             "music": {
-                "role": "per-chapter ducked musical bed (sidechained by VO)",
+                "role": "per-chapter ducked musical bed (sidechained by VO) + hook/opening intro fill + endcard outro fill",
                 "cue_count": len(music_tracks),
                 "distinct_tracks": len(set(music_tracks)),
                 "tracks": music_tracks,
                 "gain_db": vol_to_db(MUSIC_VOL),
                 "ducked": True,
+                "fills": music_fills,
+                "fill_count": len(music_fills),
             },
             "ambience": {
                 "role": "distinct constant location bed per chapter (audible; NOT sidechained -> capped duck)",
@@ -1030,12 +1223,13 @@ def main() -> int:
                 "swell_automation_events": len(swells),
             },
             "sfx": {
-                "role": "narration-timed one-shots at real words + chapter cuts",
+                "role": "narration-timed one-shots at real words + chapter cuts (cue times are body-local; add timeline.lead_sec for absolute)",
                 "cue_count": len(sfx),
                 "cues_before_dedup": len(sfx_raw),
                 "deduped": dropped,
                 "distinct_files": len(set(c.file for c in sfx)),
                 "word_triggered": sum(1 for c in sfx if c.timing == "word_trigger"),
+                "riser_fill": (RISER_FILL[0] if lead > 0.001 else None),
             },
         },
         "mix": {
@@ -1107,6 +1301,9 @@ def main() -> int:
     print(f"provenance -> {out_path}")
     print(f"chapters={len(spans)} chunks={len(chunks)} beats={len(beats)} "
           f"total={total:.1f}s ({total / 60:.2f} min)")
+    print(f"video-sync: lead={lead:.3f}s (hook {hook_seconds:.2f}+opening {OPENING_SEC}) "
+          f"body_len={body_len:.3f}s endcard={ENDCARD_SEC}s -> narration starts at {lead:.3f}s"
+          + (f"  [film_data={rel(film_data_path)}]" if film_data_path else "  [no film_data -> legacy body-only]"))
     print(f"timing: measured_chunks={provenance['timeline']['measured_chunks']} "
           f"estimated_chunks={provenance['timeline']['estimated_chunks']}")
     print(f"ambience: {len(set(beds.values()))} distinct beds -> "
