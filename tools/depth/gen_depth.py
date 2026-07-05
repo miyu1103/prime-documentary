@@ -1,4 +1,4 @@
-"""Batch depth-map generator for the CaseFilm `depth` treatment.
+r"""Batch depth-map generator for the CaseFilm `depth` treatment.
 For every image in a folder, writes <name>_depth.png (near=white/far=black) beside it.
 Run with the ComfyUI venv python (torch+transformers, DPT cached in HF hub):
   C:\Users\aab15\ComfyUI\venv\Scripts\python.exe tools/depth/gen_depth.py remotion/public/forfeiture

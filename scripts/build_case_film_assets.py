@@ -24,7 +24,10 @@ MAX_USES = 3                       # a clip may be cut at most this many times p
 GENERIC_PAT = r"scale|gavel|hourglass|clock|stopwatch|balance"  # over-familiar symbols
 GENERIC_MAX = 1                    # a generic symbol may appear at most once
 DIVERSITY_TARGET = 0.55            # warn (loudly) if distinct/total falls below this
-IMG_TREAT = ["bleed","scan","duotone","focus","bleed","duotone","card","scan","focus","bleed","duotone","scan"]
+# `depth` = real DPT depth-map 3D parallax (CaseFilm DepthStill); replaces the fake `bleed`
+# pseudo-2.5D as the anti-紙芝居 default, rotated ~1/4 with the CSS treatments for variety and
+# render feasibility. Requires <name>_depth.png beside each staged image (tools/depth/gen_depth.py).
+IMG_TREAT = ["depth","scan","duotone","focus","depth","duotone","card","scan","focus","depth","duotone","scan"]
 
 
 def parse_srt(path):

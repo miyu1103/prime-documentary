@@ -38,6 +38,7 @@ import rodriguezFilm from './data/rodriguez_film.json';
 import cottonFilm from './data/cotton_film.json';
 import unlockFilm from './data/unlock_film.json';
 import forfeitureFilm from './data/forfeiture_film.json';
+import hintonFilm from './data/hinton_film.json';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
@@ -1160,6 +1161,20 @@ export const RemotionRoot: React.FC = () => {
           seriesLabel: 'THEY DID NOTHING WRONG',
           title: 'They Took the House',
           subtitle: 'Sourovelis v. City of Philadelphia (2018)',
+        }}
+      />
+      <Composition
+        id="CaseFilm-hinton"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(hintonFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: hintonFilm as unknown as FilmData,
+          seriesLabel: 'THEY DID NOTHING WRONG',
+          title: 'Thirty Years in the Dark',
+          subtitle: 'Hinton v. Alabama (2014)',
         }}
       />
       <Composition
