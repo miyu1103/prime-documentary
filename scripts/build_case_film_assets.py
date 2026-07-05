@@ -328,6 +328,11 @@ def build_figures(plan_path: Path, windows: dict) -> tuple:
             groups[sid] = []
             order.append(sid)
         groups[sid].append(mapped)
+    # Keep each moving diagram a PUNCHY beat (~7s), not the whole section window.
+    # A figure's full-screen scene hides the photo/footage cuts underneath, so an
+    # un-capped figure (a 30s section slot) would sit on one static graphic and bury
+    # all the story images. Cap the duration and let the cuts show for the rest.
+    FIGURE_MAX_DUR = 7.0
     for sid in order:
         items = groups[sid]
         ws, we = windows[sid]
@@ -335,7 +340,7 @@ def build_figures(plan_path: Path, windows: dict) -> tuple:
         slot = (we - ws) / k if k else 0.0
         for j, (kind, fields) in enumerate(items):
             s = ws + slot * j
-            e = ws + slot * (j + 1)
+            e = min(ws + slot * (j + 1), s + FIGURE_MAX_DUR)
             figures.append({"start": round(s, 3), "end": round(e, 3), "kind": kind, **fields})
         fig_span_ids.add(sid)
     figures.sort(key=lambda f: f["start"])

@@ -39,11 +39,51 @@ export type FigureSpec =
   | {start: number; end: number; kind: 'votetally'; majority: number; dissent: number; label?: string}
   | {start: number; end: number; kind: 'quote'; quote: string; attribution: string};
 
-const Backdrop: React.FC = () => (
-  <AbsoluteFill
-    style={{background: `radial-gradient(125% 105% at 50% 42%, ${BRAND.color.navy} 0%, #06080f 82%)`}}
-  />
-);
+/** SceneBed — a DESIGNED scene bed behind every figure so it never reads as text floating on flat
+ * black. Layers a deep-navy radial ground + two large soft glows that slowly drift (deterministic,
+ * frame-driven) + a faint vignette. All extra light is `screen`-blended (it only ADDS light, so it
+ * can never wash out or lower contrast on the figure), and the vignette darkens the EDGES only,
+ * seating the central figure. The figure itself renders on top (inside <Drift>) and is untouched. */
+const SceneBed: React.FC = () => {
+  const f = useCurrentFrame();
+  const {durationInFrames: d} = useVideoConfig();
+  const p = interpolate(f, [0, d], [0, 1], {extrapolateRight: 'clamp'});
+  // two large soft glows on slow lissajous drifts — volumetric, always-moving bed
+  const g1x = 34 + 11 * Math.sin(p * Math.PI * 2);
+  const g1y = 32 + 9 * Math.cos(p * Math.PI * 2);
+  const g2x = 68 + 12 * Math.cos(p * Math.PI * 2 + 1.5);
+  const g2y = 64 + 10 * Math.sin(p * Math.PI * 2 + 1.5);
+  return (
+    <AbsoluteFill style={{overflow: 'hidden'}}>
+      {/* deep navy radial ground */}
+      <AbsoluteFill
+        style={{background: `radial-gradient(125% 108% at 50% 40%, ${BRAND.color.navy} 0%, #071019 58%, #05070d 100%)`}}
+      />
+      {/* large soft drifting glows (screen = additive light only, never darkens the figure) */}
+      <AbsoluteFill
+        style={{
+          pointerEvents: 'none',
+          mixBlendMode: 'screen',
+          background: `radial-gradient(42% 48% at ${g1x}% ${g1y}%, ${BRAND.color.electric}22 0%, transparent 70%)`,
+        }}
+      />
+      <AbsoluteFill
+        style={{
+          pointerEvents: 'none',
+          mixBlendMode: 'screen',
+          background: `radial-gradient(48% 54% at ${g2x}% ${g2y}%, ${BRAND.color.navy}66 0%, transparent 72%)`,
+        }}
+      />
+      {/* faint vignette — darkens edges only, seats the central figure */}
+      <AbsoluteFill
+        style={{
+          pointerEvents: 'none',
+          background: `radial-gradient(120% 100% at 50% 46%, transparent 55%, #04060baa 100%)`,
+        }}
+      />
+    </AbsoluteFill>
+  );
+};
 
 /** Continuous micro-drift so a figure that has finished counting still MOVES (a held stat is
  * otherwise flagged near-still by animation_density). Slow parallax pan + breathing scale. */
@@ -69,8 +109,8 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
         return (
           <Sequence key={i} from={Math.round(b.start * fps)} durationInFrames={dur} name={`figure-${i}`}>
             <AbsoluteFill>
-              <Backdrop />
-              <AmbientMotion count={16} intensity={1.0} />
+              <SceneBed />
+              <AmbientMotion count={18} intensity={1.05} />
               <Drift>
                 {b.kind === 'stat' && (
                   <StatCounter

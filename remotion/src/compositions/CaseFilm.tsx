@@ -101,10 +101,10 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: numbe
 /** bleed: full-frame depth — a blurred enlarged layer and the sharp image drift opposite ways. No tilt. */
 const BleedStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
-  const bgX = interpolate(p, [0, 1], [-52 * dir, 52 * dir]);
-  const fgX = interpolate(p, [0, 1], [34 * dir, -34 * dir]);
-  const fgS = interpolate(p, [0, 1], [1.05, 1.18]);
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
+  const bgX = interpolate(p, [0, 1], [-72 * dir, 72 * dir]);
+  const fgX = interpolate(p, [0, 1], [50 * dir, -50 * dir]);
+  const fgS = interpolate(p, [0, 1], [1.07, 1.26]);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
       <AbsoluteFill style={{transform: `translateX(${bgX}px) scale(1.34)`, filter: 'blur(22px) brightness(0.62)'}}>
@@ -122,17 +122,17 @@ const BleedStill: React.FC<{src: string; seed: string; dir: number; dur: number}
 /** shared divergent-parallax base (bg blur + sharp fg drift opposite) — genuine depth motion,
  * never a flat zoom, and enough pixel movement that nothing reads as a frozen slide. */
 const parallax = (p: number, dir: number) => ({
-  bgX: interpolate(p, [0, 1], [-62 * dir, 62 * dir]),
-  bgY: interpolate(p, [0, 1], [-26 * dir, 26 * dir]),
-  fgX: interpolate(p, [0, 1], [40 * dir, -40 * dir]),
-  fgY: interpolate(p, [0, 1], [18, -18]),
-  fgS: interpolate(p, [0, 1], [1.05, 1.2]),
+  bgX: interpolate(p, [0, 1], [-80 * dir, 80 * dir]),
+  bgY: interpolate(p, [0, 1], [-34 * dir, 34 * dir]),
+  fgX: interpolate(p, [0, 1], [56 * dir, -56 * dir]),
+  fgY: interpolate(p, [0, 1], [26, -26]),
+  fgS: interpolate(p, [0, 1], [1.08, 1.3]),
 });
 
 /** scan: parallax base + a thermal light pool and a slow-drifting measurement grid. */
 const ScanStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   const gy = interpolate(p, [0, 1], [0, 80]);
   const lx = 50 + 26 * Math.sin(p * Math.PI * 2);
@@ -165,7 +165,7 @@ const ScanStill: React.FC<{src: string; seed: string; dir: number; dur: number}>
 /** duotone: parallax base + duotone grade + travelling light + drifting motes + vignette breath. */
 const DuotoneStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   const vig = 0.9 + 0.1 * Math.sin(p * Math.PI * 2);
   return (
@@ -187,7 +187,7 @@ const DuotoneStill: React.FC<{src: string; seed: string; dir: number; dur: numbe
 const FocusStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
   const blur = interpolate(f, [0, 22], [16, 0], {extrapolateRight: 'clamp'});
-  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
@@ -206,10 +206,10 @@ const FocusStill: React.FC<{src: string; seed: string; dir: number; dur: number}
 /** card: the diagonal 2.5D floating photo card — RARE, for accent only. */
 const CardStill: React.FC<{src: string; seed: string; dir: number; dur: number}> = ({src, seed, dir, dur}) => {
   const f = useCurrentFrame();
-  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
-  const bgX = interpolate(p, [0, 1], [-40 * dir, 40 * dir]);
-  const cardX = interpolate(p, [0, 1], [30 * dir, -30 * dir]);
-  const cardRot = interpolate(p, [0, 1], [-1.8 * dir, 1.8 * dir]);
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
+  const bgX = interpolate(p, [0, 1], [-56 * dir, 56 * dir]);
+  const cardX = interpolate(p, [0, 1], [42 * dir, -42 * dir]);
+  const cardRot = interpolate(p, [0, 1], [-2.4 * dir, 2.4 * dir]);
   const intro = interpolate(f, [0, 10], [26, 0], {extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
@@ -246,7 +246,7 @@ const depthSrcOf = (src: string) => src.replace(/\.[^.]+$/, '_depth.png');
 
 const DepthCam: React.FC<{dolly: number; dir: number}> = ({dolly, dir}) => {
   const camera = useThree((s) => s.camera);
-  camera.position.set(Math.sin(dolly * Math.PI) * 0.2 * dir, 0.05 - dolly * 0.1, 5.2 - dolly * 1.7);
+  camera.position.set(Math.sin(dolly * Math.PI) * 0.26 * dir, 0.05 - dolly * 0.12, 5.2 - dolly * 2.0);
   camera.lookAt(0, 0, 0.4);
   camera.updateProjectionMatrix();
   return null;
@@ -345,6 +345,34 @@ const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
     </AbsoluteFill>
   );
 };
+
+/** BODY GRADE — one consistent cinematic wash laid over the WHOLE body (stills, footage AND
+ * motion-graphics) so the three visual registers share a single noir-navy/teal world. Sits above
+ * every visual layer but BELOW the captions so text stays crisp. Two very-low-opacity layers:
+ *  (1) a soft-light navy/teal duotone-lean gradient — near luma-neutral (it lifts blues, faintly
+ *      deepens shadows) so it unifies colour without crushing the image or failing images_present;
+ *  (2) an overlay ring that is TRANSPARENT in the centre and only deepens the edges — a gentle
+ *      global vignette/contrast seat that never dims the bright middle where subjects/figures sit. */
+const BodyGrade: React.FC = () => (
+  <>
+    <AbsoluteFill
+      style={{
+        pointerEvents: 'none',
+        mixBlendMode: 'soft-light',
+        opacity: 0.17,
+        background: `linear-gradient(175deg, ${electric} 0%, ${navy} 46%, ${ink} 100%)`,
+      }}
+    />
+    <AbsoluteFill
+      style={{
+        pointerEvents: 'none',
+        mixBlendMode: 'overlay',
+        opacity: 0.1,
+        background: `radial-gradient(122% 94% at 50% 46%, ${navy}00 55%, ${ink} 100%)`,
+      }}
+    />
+  </>
+);
 
 const Captions: React.FC<{cues: Caption[]}> = ({cues}) => {
   const f = useCurrentFrame();
@@ -583,6 +611,8 @@ export const CaseFilm: React.FC<{data: FilmData; seriesLabel: string; title: str
         <AmbientMotion count={22} intensity={1.15} />
         <FigureBeats beats={(data.figures || []) as FigureSpec[]} />
         <GraphicsBeats beats={data.graphics} />
+        {/* unified cinematic grade over stills+footage+graphics (below captions so text stays crisp) */}
+        <BodyGrade />
         <Captions cues={data.captions} />
         <Grain opacity={0.11} />
       </Sequence>
