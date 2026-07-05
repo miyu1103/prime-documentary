@@ -81,14 +81,15 @@ def main() -> int:
     # glue drone looped to TARGET, faint, mixed under
     fc += f"[{G}]aloop=loop=-1:size=200000000,atrim=0:{TARGET:.2f},asetpts=N/SR/TB,volume={GLUE_VOL}[glue];"
     fc += f"[full0][glue]amix=inputs=2:normalize=0:duration=first[bed0];"
-    fc += f"[bed0]afade=t=out:st={TARGET-1.8:.2f}:d=1.8[bed];"
-    # VO from the rendered video, split for playback + sidechain key
-    fc += f"[{V}:a]aformat=sample_rates=48000:channel_layouts=stereo,asplit=2[vo][key];"
-    # duck the bed under the VO
-    fc += ("[bed][key]sidechaincompress=threshold=0.035:ratio=8:attack=15:release=350:"
-           "makeup=1:level_sc=1[duck];")
-    # mix ducked bed + VO, limit, normalize to -14 LUFS
-    fc += ("[vo][duck]amix=inputs=2:normalize=0:duration=first,"
+    # bed sits BELOW the VO: drop its base level so even in gaps it never fights the voice
+    fc += f"[bed0]afade=t=out:st={TARGET-1.8:.2f}:d=1.8,volume=0.42[bed];"
+    # VO from the rendered video, pushed FORWARD (+~5dB) and split for playback + sidechain key
+    fc += f"[{V}:a]aformat=sample_rates=48000:channel_layouts=stereo,volume=1.8,asplit=2[vo][key];"
+    # duck the bed HARD under the VO (deep floor, fast attack) so narration is always on top
+    fc += ("[bed][key]sidechaincompress=threshold=0.02:ratio=16:attack=5:release=260:"
+           "makeup=1:level_sc=1.2[duck];")
+    # VO first (dominant) + ducked bed, limit, normalize to -14 LUFS
+    fc += ("[vo][duck]amix=inputs=2:normalize=0:weights=1.0 0.7:duration=first,"
            "alimiter=limit=0.95,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
 
     cmd = [FFMPEG, "-y", *inputs, "-filter_complex", fc,
