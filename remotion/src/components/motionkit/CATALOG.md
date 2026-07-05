@@ -71,5 +71,15 @@ Legend: **SCENE** = full-screen, renders own dark backdrop · **OVERLAY** = tran
 | GridWarp | SCENE/BED | Tron data-space grid | (dur) |
 
 ---
-Verified: `npx tsc --noEmit` exit 0 · still-render smoke pass for all 40 (2 rounds).
-Next phase: preset catalog (ready-made prop fills per component) → hundreds of drop-in "素材" variations.
+## Presets (~926 ready-made "素材" variations)
+Every component has a preset catalog under `presets/` — ready-made prop fills tuned to the PD slate
+(legal cases, financial fraud, true crime, general explainer), each `satisfies ComponentProps<typeof X>`.
+```ts
+import {VoteTally} from '../components/motionkit';
+import {voteTallyPresets} from '../components/motionkit/presets';
+<VoteTally {...voteTallyPresets['5-4-landmark']} />
+```
+Barrel: `presets/index.ts` (all preset objects). Atmospherics exposes 4 (dust/glow/grain/vignette).
+
+Verified: `npx tsc --noEmit` exit 0 (all 40 components + ~926 presets type-check) ·
+still-render smoke pass for all 40 components + 17 preset-driven data components.
