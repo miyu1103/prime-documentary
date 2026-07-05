@@ -19,6 +19,7 @@ import {useThree, useLoader} from '@react-three/fiber';
 import {BRAND} from '../brand';
 import {Particles, LightSweep, Vignette} from '../components/Motion';
 import {AmbientMotion} from '../components/AmbientMotion';
+import {FigureBeats, FigureSpec} from '../components/FigureBeats';
 import {Grain} from '../components/Grain';
 import {BrandOpening, BrandEndcard, OPENING_SEC, ENDCARD_SEC} from '../components/Bookends';
 
@@ -50,6 +51,7 @@ export type FilmData = {
   cuts: Cut[];
   captions: Caption[];
   graphics: Beat[];
+  figures?: FigureSpec[];
 };
 
 export const caseFilmDurationInFrames = (data: FilmData, fps: number) =>
@@ -579,6 +581,7 @@ export const CaseFilm: React.FC<{data: FilmData; seriesLabel: string; title: str
         {/* leveled-up animation (other-thread AmbientMotion): drifting bokeh + orbiting glows
             composited over the body so no frame is ever static — the "紙芝居" killer. */}
         <AmbientMotion count={22} intensity={1.15} />
+        <FigureBeats beats={(data.figures || []) as FigureSpec[]} />
         <GraphicsBeats beats={data.graphics} />
         <Captions cues={data.captions} />
         <Grain opacity={0.11} />
