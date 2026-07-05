@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-032-carsearch",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 1911,
+    "sentences": 133,
+    "avg_sentence_words": 14.4,
+    "flesch_kincaid_grade": 6.4,
+    "est_duration_minutes": 12.7,
+    "em_dash_per_100w": 2.2,
+    "ai_filler_hits": {},
+    "claim_link_consistency": "pass"
+  },
+  "status": "pass",
+  "findings": [
+    "3-pass review complete (Pass 1 facts vs claims.v001.json; Pass 2 craft/prose; Pass 3 retention). Owner content sign-off 2026-07-06.",
+    "Script reformatted 2026-07-06 so [VO:] lines carry spoken narration only; (VIS:)/(SFX:) production notes moved to their own lines. No spoken word changed (true spoken count 1911 before and after) — approval carries forward.",
+    "Facts locked to CLM-0001..0010. Collins v. Virginia is 8-1 (Sotomayor majority, Alito sole dissent). Marijuana-odor beat flagged unsettled/state-dependent (CLM-0010, grade B) and written as 'it depends where you are.'"
+  ]
+}
