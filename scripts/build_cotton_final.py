@@ -42,14 +42,18 @@ def main() -> int:
             raise SystemExit(f"missing input: {p}")
     TARGET = dur(video)
     # inputs: 0 = bed (music), 1 = video (video + master VO)
+    # Deeper ducking than v003: the owner heard the bed swell over the VO mid-video, so drop
+    # the bed baseline ~5dB (volume=0.56) AND duck harder under the VO (lower threshold, higher
+    # ratio, faster attack) so narration always sits clearly on top; a light gate floor keeps
+    # the music present between phrases.
     fc = (
-        # bed trimmed to video length, gentle tail fade already in the bed
+        # bed trimmed to video length, dropped ~5dB baseline; gentle tail fade already in the bed
         f"[0:a]aformat=sample_rates=48000:channel_layouts=stereo,atrim=0:{TARGET:.2f},"
-        f"asetpts=N/SR/TB[bed];"
+        f"asetpts=N/SR/TB,volume=0.56[bed];"
         # VO from the render, split for playback + sidechain key
         f"[1:a]aformat=sample_rates=48000:channel_layouts=stereo,asplit=2[vo][key];"
-        # duck the bed under the VO
-        "[bed][key]sidechaincompress=threshold=0.035:ratio=8:attack=15:release=350:"
+        # duck the bed hard under the VO
+        "[bed][key]sidechaincompress=threshold=0.025:ratio=14:attack=8:release=320:"
         "makeup=1:level_sc=1[duck];"
         # mix ducked bed + VO, limit, normalize to -14 LUFS
         "[vo][duck]amix=inputs=2:normalize=0:duration=first,"
