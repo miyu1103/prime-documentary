@@ -33,11 +33,26 @@ PLANS = {
         "property_home": 20, "crime_police": 18, "legal_court": 20, "finance_money": 14,
         "documents_paper": 14, "urban_night": 10,
     },
-    "cotton": {  # eyewitness / lineup / DNA lab / courtroom / prison
-        "crime_police": 20, "legal_court": 20, "forensics_dna": 14, "medical_lab": 10,
-        "documents_paper": 12, "urban_night": 12, "atmosphere_symbolic": 6, "surveillance_tech": 2,
+    "cotton": {  # eyewitness / lineup / DNA lab / courtroom / prison — DYNAMIC only (no atmosphere/featureless)
+        "crime_police": 24, "legal_court": 22, "forensics_dna": 16, "medical_lab": 12,
+        "documents_paper": 12, "urban_night": 10,
     },
 }
+
+
+# design rule: exclude featureless / near-static b-roll (row 8 "featureless除去" + the
+# 紙芝居 promise). Drop clips whose subtype reads as a texture / empty room / still-life /
+# sky / fog / gradient — they register as near-still and violate "motion on every cut".
+FEATURELESS = ("texture", "wall", "empty", "still_life", "gradient", "pattern", "backdrop",
+               "fog", "haze", "sky", "clouds", "bokeh", "abstract", "aerial_static",
+               "ink_pot", "cubicle", "wallpaper", "surface", "blank", "dark_cinematic_background",
+               "moody_atmosphere", "atmosphere")
+
+
+def _dynamic(x) -> bool:
+    st = str(x.get("subtype", "")).lower()
+    name = str(x.get("path", "")).lower()
+    return not any(k in st or k in name for k in FEATURELESS)
 
 
 def even_sample(items: list, n: int) -> list:
@@ -59,6 +74,8 @@ def main() -> int:
     by_theme: dict[str, list] = {}
     for x in assets:
         if x.get("kind") != "video":
+            continue
+        if not _dynamic(x):   # design rule: drop featureless / near-static b-roll
             continue
         th = theme_of(x.get("subtype", ""))
         by_theme.setdefault(th, []).append(x)
