@@ -519,9 +519,15 @@ def main():
         s=sorted(elig,key=lambda s:(img_used.get(s,0), img_last.get(s,-999)))[0]
         img_used[s]=img_used.get(s,0)+1; img_last[s]=i
         return s
+    # FOOTAGE only on SHORT slots. A nearly-static footage clip (e.g. a locked-off library shot)
+    # held on a long slot reads as near-still to the freeze gate even with the drift overlay (which
+    # is weaker on bright footage). Long holds are reserved for IMAGE cuts (Ken-Burns depth parallax)
+    # and figure/kinetic-text moments (their own strong motion) — matching the owner's intent that
+    # the LONG held moments are where an animation carries the scene, not static footage.
+    FOOT_MAX_DUR = 3.0
     cuts=[]; fp=0
     for i,(st,dur) in enumerate(grid):
-        if i in foot_positions and fp<len(foot_seq):
+        if i in foot_positions and fp<len(foot_seq) and dur<=FOOT_MAX_DUR:
             src=foot_seq[fp]; fp+=1; is_foot=True
         elif imgs:
             src=pick_img(i); is_foot=False
