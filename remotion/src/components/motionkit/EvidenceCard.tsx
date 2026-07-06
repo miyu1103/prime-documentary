@@ -120,9 +120,9 @@ export const EvidenceCard: React.FC<{
   });
   const underlineX = interpolate(underlineS, [0, 1], [0, 1]);
 
-  // ---- カードの寸法
-  const CARD_W = 980;
-  const CARD_H = 620;
+  // ---- カードの寸法（セーフエリア確保：中央グループを下げてtagのクリップ回避）
+  const CARD_W = 900;
+  const CARD_H = 520;
 
   // 決定論的な浮遊ダスト（背景の奥行き・常時ドリフト）
   const DUST = 14;
@@ -249,58 +249,124 @@ export const EvidenceCard: React.FC<{
                     'radial-gradient(120% 120% at 50% 40%, black 40%, transparent 92%)',
                 }}
               />
-              {/* 抽象的な計測ライン（決定論・わずかにドリフト） */}
+              {/* 抽象的な計測ライン＋レティクル（決定論・わずかにドリフト） */}
               <svg
                 width="100%"
                 height="100%"
-                viewBox="0 0 940 580"
+                viewBox="0 0 860 480"
                 preserveAspectRatio="none"
-                style={{position: 'absolute', inset: 0, opacity: 0.55}}
+                style={{position: 'absolute', inset: 0, opacity: 0.6}}
               >
-                {new Array(5).fill(0).map((_, i) => {
-                  const y0 = 90 + i * 96;
+                {/* 水平計測ライン（ドリフト） */}
+                {new Array(6).fill(0).map((_, i) => {
+                  const y0 = 54 + i * 74;
                   const dphase = random('ec-line' + i) * Math.PI * 2;
-                  const dy = Math.sin((frame / fps) * 0.6 + dphase) * 8;
+                  const dy = Math.sin((frame / fps) * 0.6 + dphase) * 7;
                   return (
                     <line
-                      key={i}
+                      key={'h' + i}
                       x1={40}
                       y1={y0 + dy}
-                      x2={900}
+                      x2={820}
                       y2={y0 - dy}
                       stroke={BRAND.color.electric}
-                      strokeWidth={1.5}
+                      strokeWidth={1.4}
                       strokeDasharray="10 14"
-                      opacity={0.4}
+                      opacity={0.3}
                     />
                   );
                 })}
+                {/* 中央レティクル：同心円＋十字（証拠の照準） */}
                 <circle
-                  cx={470}
-                  cy={290}
-                  r={150}
+                  cx={430}
+                  cy={240}
+                  r={128}
                   fill="none"
                   stroke={BRAND.color.silver}
-                  strokeWidth={1.5}
+                  strokeWidth={1.4}
                   strokeDasharray="4 12"
-                  opacity={0.35}
+                  opacity={0.4}
+                />
+                <circle
+                  cx={430}
+                  cy={240}
+                  r={68}
+                  fill="none"
+                  stroke={BRAND.color.electric}
+                  strokeWidth={1.2}
+                  strokeDasharray="3 9"
+                  opacity={0.5}
+                />
+                <circle cx={430} cy={240} r={5} fill={BRAND.color.gold} opacity={0.55} />
+                {/* 十字の基準線（ゴールド） */}
+                <line
+                  x1={430}
+                  y1={24}
+                  x2={430}
+                  y2={456}
+                  stroke={BRAND.color.gold}
+                  strokeWidth={1.3}
+                  opacity={0.26}
                 />
                 <line
-                  x1={470}
-                  y1={40}
-                  x2={470}
-                  y2={540}
+                  x1={40}
+                  y1={240}
+                  x2={820}
+                  y2={240}
                   stroke={BRAND.color.gold}
-                  strokeWidth={1.5}
-                  opacity={0.28}
+                  strokeWidth={1.3}
+                  opacity={0.2}
                 />
+                {/* 左上コーナーの斜めハッチ（決定論） */}
+                {new Array(7).fill(0).map((_, i) => (
+                  <line
+                    key={'d' + i}
+                    x1={40 + i * 20}
+                    y1={40}
+                    x2={40}
+                    y2={40 + i * 20}
+                    stroke={BRAND.color.electric}
+                    strokeWidth={1}
+                    opacity={0.26}
+                  />
+                ))}
+                {/* 寸法コールアウト（右上・端点キャップ付き） */}
+                <path
+                  d="M600 58 L780 58 M600 52 L600 64 M780 52 L780 64"
+                  stroke={BRAND.color.electric}
+                  strokeWidth={1.2}
+                  opacity={0.4}
+                  fill="none"
+                />
+                {/* スケールバー＋目盛（下部） */}
+                <line
+                  x1={300}
+                  y1={430}
+                  x2={560}
+                  y2={430}
+                  stroke={BRAND.color.silver}
+                  strokeWidth={1.4}
+                  opacity={0.5}
+                />
+                {new Array(9).fill(0).map((_, i) => (
+                  <line
+                    key={'t' + i}
+                    x1={300 + i * 32.5}
+                    y1={422}
+                    x2={300 + i * 32.5}
+                    y2={430}
+                    stroke={BRAND.color.silver}
+                    strokeWidth={1.2}
+                    opacity={0.5}
+                  />
+                ))}
               </svg>
               {/* コーナーのレジストレーションマーク（4隅） */}
               {[
-                [26, 26, 1, 1],
-                [914, 26, -1, 1],
-                [26, 554, 1, -1],
-                [914, 554, -1, -1],
+                [24, 24, 1, 1],
+                [836, 24, -1, 1],
+                [24, 456, 1, -1],
+                [836, 456, -1, -1],
               ].map(([cx, cy, sx, sy], i) => (
                 <svg
                   key={i}
@@ -309,8 +375,8 @@ export const EvidenceCard: React.FC<{
                   viewBox="0 0 30 30"
                   style={{
                     position: 'absolute',
-                    left: `${((cx as number) / 940) * 100}%`,
-                    top: `${((cy as number) / 580) * 100}%`,
+                    left: `${((cx as number) / 860) * 100}%`,
+                    top: `${((cy as number) / 480) * 100}%`,
                     transform: `translate(-50%, -50%) scale(${sx}, ${sy})`,
                     opacity: 0.6,
                   }}
@@ -335,12 +401,12 @@ export const EvidenceCard: React.FC<{
               />
             </div>
 
-            {/* タグチップ（ゴールド・左上角・スタンプインパクト） */}
+            {/* タグチップ（ゴールド・左上角に重ねる・スタンプインパクト・セーフエリア内） */}
             <div
               style={{
                 position: 'absolute',
-                top: -26,
-                left: -22,
+                top: -22,
+                left: -18,
                 transform: `translateY(${tagY}px) scale(${tagScale}) rotate(-3deg)`,
                 opacity: tagO,
                 transformOrigin: 'left center',
@@ -369,8 +435,8 @@ export const EvidenceCard: React.FC<{
               viewBox="0 0 64 140"
               style={{
                 position: 'absolute',
-                top: -46,
-                right: 96,
+                top: -40,
+                right: 84,
                 transform: `translateY(${clipY}px) rotate(8deg)`,
                 opacity: clipO,
                 filter: 'drop-shadow(0 6px 10px rgba(0,0,0,0.55))',

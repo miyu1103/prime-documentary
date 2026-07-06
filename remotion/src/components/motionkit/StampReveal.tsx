@@ -49,7 +49,7 @@ export const StampReveal: React.FC<{
     config: {damping: 9, mass: 0.8, stiffness: 150},
   });
   const slamScale = interpolate(slamS, [0, 1], [5.2, 1]); // spring>1 で 1 を割り込み跳ねる
-  const slamRot = interpolate(slamS, [0, 1], [-14, -4]); // 着地時のわずかな傾き
+  const slamRot = interpolate(slamS, [0, 1], [-14, -2]); // 着地時のわずかな傾き（±2deg）
   const slamO = interpolate(
     frame,
     [slamStart, slamStart + sec(fps, 0.06)],
@@ -263,42 +263,58 @@ export const StampReveal: React.FC<{
             );
           })}
 
-          {/* スタンプ本体（落下中は Trail でモーションブラー） */}
+          {/* スタンプ本体（落下中は Trail でモーションブラー）
+              重要: <Trail> は children を AbsoluteFill（position:absolute・全画面・
+              flex column・既定 align-items:stretch / justify:flex-start）で包む。
+              そのため親フォアグラウンドの center 指定は届かず、かつスタンプ div が
+              stretch でフレーム全幅（1920px）へ伸び、inset:0 の枠が斜めの長い線に
+              なっていた（＝枠がフレーム大・テキストが上寄り）。対策として枠＋テキストの
+              グループを絶対配置＋translate(-50%,-50%) でフレーム中央（水平・垂直とも）に
+              固定し、width:fit-content で語幅に合わせた密着ボックスにする。 */}
           <Trail layers={6} lagInFrames={1.2} trailOpacity={0.45}>
             <div
               style={{
-                position: 'relative',
-                transform: `scale(${finalScale}) rotate(${finalRot}deg)`,
+                position: 'absolute',
+                left: '50%',
+                top: '50%',
+                width: 'fit-content',
+                transformOrigin: 'center center',
+                transform: `translate(-50%, -50%) scale(${finalScale}) rotate(${finalRot}deg)`,
                 opacity: slamO,
-                padding: '38px 74px',
-                display: 'flex',
+                padding: '20px 32px',
+                display: 'inline-flex',
                 alignItems: 'center',
                 justifyContent: 'center',
+                whiteSpace: 'nowrap',
               }}
             >
-              {/* 粗い二重アウトライン枠（インク欠けマスク・テキストとは別レイヤー） */}
+              {/* ラバースタンプ枠：四辺を完全に囲む二重アウトライン。
+                  以前は枠 div に roughMask を掛けていたため、細い左右（縦）の罫が
+                  斜めストライプの透明ギャップに一致して消え、上下2本の横線しか
+                  残らなかった（＝囲めていない不具合）。枠は実線（非マスク）で
+                  全周を必ず閉じ、内外をわずかに逆回転させて手押しの二重枠にする。
+                  テキストごと1つのスタンプ・ユニットとして叩き込まれる。 */}
+              {/* 外枠：太い実線＋外周グロー（全四辺を保証） */}
               <div
                 style={{
                   position: 'absolute',
                   inset: 0,
                   border: `7px solid ${color}`,
-                  borderRadius: 10,
-                  boxShadow: `inset 0 0 0 5px transparent, inset 0 0 0 8px ${color}`,
-                  maskImage: roughMask,
-                  WebkitMaskImage: roughMask,
-                  opacity: 0.92,
+                  borderRadius: 12,
+                  transform: 'rotate(-0.9deg)',
+                  boxShadow: `0 0 24px ${color}33`,
+                  opacity: 0.95,
                 }}
               />
-              {/* 二重枠の内側ライン（ギャップを空けた薄い罫） */}
+              {/* 内枠：細い実線をギャップを空けて重ね、逆方向へ微傾（二重アウトライン） */}
               <div
                 style={{
                   position: 'absolute',
-                  inset: 12,
-                  border: `2px solid ${color}`,
-                  borderRadius: 6,
-                  maskImage: roughMask,
-                  WebkitMaskImage: roughMask,
-                  opacity: 0.78,
+                  inset: 13,
+                  border: `2.5px solid ${color}`,
+                  borderRadius: 8,
+                  transform: 'rotate(0.8deg)',
+                  opacity: 0.82,
                 }}
               />
               {/* テキスト（色あせたインクのスタンプ字面） */}

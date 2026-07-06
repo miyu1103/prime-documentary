@@ -67,6 +67,8 @@ export const NumberTicker: React.FC<{
     extrapolateRight: 'clamp',
   });
   const shown = (value * p).toFixed(Math.max(0, decimals));
+  // 桁数が確定した「最終形」— 見えないサイザーに使い、数値ボックスの寸法を固定する
+  const numberFinal = value.toFixed(Math.max(0, decimals));
 
   // --- 着地後のブレス（決定論・useCurrentFrameのみ。静止させない） ---
   const settle = Math.max(0, frame - countEnd);
@@ -141,6 +143,45 @@ export const NumberTicker: React.FC<{
     );
   };
 
+  // --- ヒーロー数値の一行（prefix + 数値 + suffix）。サイザーと表示で共有 ---
+  const NumberRow: React.FC<{text: string; applyBreath: boolean}> = ({
+    text,
+    applyBreath,
+  }) => (
+    <div
+      style={{
+        display: 'flex',
+        alignItems: 'baseline',
+        whiteSpace: 'nowrap',
+        color: BRAND.color.white,
+        fontFamily: BRAND.font.display,
+        fontWeight: 800,
+        transform: applyBreath ? `scale(${breath})` : 'none',
+        transformOrigin: '50% 50%',
+      }}
+    >
+      {prefix ? (
+        <span style={{fontSize: 92, color: BRAND.color.gold}}>{prefix}</span>
+      ) : null}
+      <span
+        style={{
+          fontSize: 214,
+          letterSpacing: -6,
+          lineHeight: 0.9,
+          fontVariantNumeric: 'tabular-nums',
+          fontFeatureSettings: '"tnum" 1',
+        }}
+      >
+        {text}
+      </span>
+      {suffix ? (
+        <span style={{fontSize: 92, color: BRAND.color.gold, marginLeft: 10}}>
+          {suffix}
+        </span>
+      ) : null}
+    </div>
+  );
+
   return (
     <AbsoluteFill style={{backgroundColor: '#06080f'}}>
       {/* Depth 1 — フルスクリーン背景グラデ */}
@@ -202,48 +243,36 @@ export const NumberTicker: React.FC<{
           marginTop={0}
         />
 
-        {/* ヒーロー数値（motion-blur Trail＋着地後ブレス） */}
-        <div style={{marginTop: 20, marginBottom: 8}}>
+        {/* ヒーロー数値（motion-blur Trail＋着地後ブレス）
+            Trail の実体は AbsoluteFill（position:absolute）なので、必ず
+            「position:relative かつ実寸を持つ箱」の中に閉じ込める。さもないと
+            最寄りの配置済み祖先（前景 AbsoluteFill）＝画面全体に張り付き、
+            数値が左上隅に飛んで上端で見切れる。
+            → 不可視サイザー（最終形の桁数）で箱の実寸を確定し、その箱の中で
+              Trail を中央寄せに重ねる。 */}
+        <div
+          style={{
+            position: 'relative',
+            display: 'inline-flex',
+            marginTop: 20,
+            marginBottom: 8,
+          }}
+        >
+          {/* サイザー：通常フローで箱の幅・高さを与える（表示はしない） */}
+          <div style={{visibility: 'hidden'}} aria-hidden>
+            <NumberRow text={numberFinal} applyBreath={false} />
+          </div>
+          {/* 表示：Trail を箱いっぱいに重ね、中で数値を中央寄せ */}
           <Trail layers={4} lagInFrames={1} trailOpacity={0.32}>
-            <div
+            <AbsoluteFill
               style={{
                 display: 'flex',
-                alignItems: 'baseline',
-                color: BRAND.color.white,
-                fontFamily: BRAND.font.display,
-                fontWeight: 800,
-                transform: `scale(${breath})`,
-                transformOrigin: '50% 50%',
+                alignItems: 'center',
+                justifyContent: 'center',
               }}
             >
-              {prefix ? (
-                <span style={{fontSize: 92, color: BRAND.color.gold}}>
-                  {prefix}
-                </span>
-              ) : null}
-              <span
-                style={{
-                  fontSize: 214,
-                  letterSpacing: -6,
-                  lineHeight: 0.9,
-                  fontVariantNumeric: 'tabular-nums',
-                  fontFeatureSettings: '"tnum" 1',
-                }}
-              >
-                {shown}
-              </span>
-              {suffix ? (
-                <span
-                  style={{
-                    fontSize: 92,
-                    color: BRAND.color.gold,
-                    marginLeft: 10,
-                  }}
-                >
-                  {suffix}
-                </span>
-              ) : null}
-            </div>
+              <NumberRow text={shown} applyBreath />
+            </AbsoluteFill>
           </Trail>
         </div>
 

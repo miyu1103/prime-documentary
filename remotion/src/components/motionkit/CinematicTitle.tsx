@@ -266,6 +266,34 @@ export const CinematicTitle: React.FC<{
         }}
       >
         <div style={{position: 'relative'}}>
+          {/* In-flow SIZER — reserves the title's real box. <Trail> and the
+              glint overlay are both position:absolute (Trail's root is an
+              AbsoluteFill), so without an in-flow child this wrapper would
+              collapse to 0 height and the underline + subtitle would pack up
+              onto the title. Static, hidden, aria-hidden — layout only, not a
+              reveal. Mirrors the animated glyph structure exactly so the
+              reserved box matches (same font, padding, wrap). */}
+          <div style={{...titleRunStyle, visibility: 'hidden'}} aria-hidden>
+            {tokens.map((letters, wi) => (
+              <span key={wi} style={{display: 'inline-flex'}}>
+                {letters.map(({ch, idx}) => (
+                  <span
+                    key={idx}
+                    style={{
+                      display: 'inline-block',
+                      overflow: 'hidden',
+                      paddingBottom: '0.14em',
+                    }}
+                  >
+                    <span style={{display: 'inline-block', whiteSpace: 'pre'}}>
+                      {ch}
+                    </span>
+                  </span>
+                ))}
+              </span>
+            ))}
+          </div>
+
           {/* TITLE — fast entrance under motion blur */}
           <Trail layers={6} lagInFrames={1.1} trailOpacity={0.5}>
             <div style={{...titleRunStyle, color: WHITE, textShadow: `0 0 48px ${ELECTRIC}44, 0 4px 26px #000`}}>
@@ -345,7 +373,7 @@ export const CinematicTitle: React.FC<{
         </div>
 
         {/* Gold underline — draws in via scaleX spring, with a running spark */}
-        <div style={{position: 'relative', width: 620, height: 3, margin: '30px 0 24px'}}>
+        <div style={{position: 'relative', width: 620, height: 3, margin: '46px 0 34px'}}>
           <div
             style={{
               width: '100%',

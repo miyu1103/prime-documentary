@@ -98,7 +98,7 @@ export const VoteTally: React.FC<{
   dur?: number;
 }> = ({majority, dissent, label, dur}) => {
   const frame = useCurrentFrame();
-  const {fps, durationInFrames, width} = useVideoConfig();
+  const {fps, durationInFrames, width, height} = useVideoConfig();
   const total = dur ?? durationInFrames;
 
   // 席の総数（多数→反対の順に並べる）
@@ -140,8 +140,37 @@ export const VoteTally: React.FC<{
   const seatR = seatCount <= 9 ? 32 : Math.max(15, Math.round(300 / seatCount));
   const gap = Math.min(156, seatCount <= 1 ? 0 : 1220 / denom);
   const rowW = gap * denom;
-  const startX = width / 2 - rowW / 2;
-  const benchY = 452;
+
+  // 席バンド（アーチ）の寸法。席は band 内のローカル座標で絶対配置する。
+  const ARCH = 46; // アーチで中央席が持ち上がる量
+  const seatsBandH = seatR * 2 + ARCH; // 席バンドの縦の広がり
+  const bandW = rowW + seatR * 2; // 端の席の円まで含む幅
+
+  // グループ内の縦の間隔（席バンド→評決数→アンダーライン→ラベル）。
+  // グループ全体を flex で縦センタリングするため、順序と間隔だけを定義する。
+  const GROUP_GAP = 80; // 席バンドと評決数の間隔（席の“下”に評決数を置く）
+  const UNDERLINE_MT = 18; // 評決数→アンダーライン
+  const UNDERLINE_H = 4; // アンダーライン高さ
+  const LABEL_MT = 34; // アンダーライン→ラベル
+  const LABEL_H = 34; // ラベル文字高
+
+  // 評決数のフォントサイズ。基準300。グループ全体が画面高−上下マージン(各80px)に
+  // 収まらない場合のみ縮小し、全要素がフレーム内に収まりクリップしないことを保証する。
+  const NUM_FS_BASE = 300;
+  const EDGE_MARGIN = 80; // 全フレーム端からの最小クリアランス
+  const maxGroupH = height - EDGE_MARGIN * 2; // 1080 → 920
+  // 数字行の実効高さ ≒ fontSize×1.14（lineHeight1 + paddingBottom0.14em 相当）。
+  const fixedH =
+    seatsBandH +
+    GROUP_GAP +
+    UNDERLINE_MT +
+    UNDERLINE_H +
+    (label ? LABEL_MT + LABEL_H : 0);
+  const numFS =
+    fixedH + NUM_FS_BASE * 1.14 <= maxGroupH
+      ? NUM_FS_BASE
+      : Math.max(120, Math.floor((maxGroupH - fixedH) / 1.14));
+  const dashFS = Math.round(numFS * 0.7333); // ダッシュは数字より一回り小さく
 
   // 評決数の spring（多数→ダッシュ→反対の順にスタッガー）
   const majS = spring({
@@ -236,92 +265,96 @@ export const VoteTally: React.FC<{
         })}
       </AbsoluteFill>
 
-      {/* Layer 4: 席（スタッガー点灯・spring スケール＋色遷移） */}
-      <AbsoluteFill
-        style={{opacity: sceneO, transform: `translateY(${sceneY + breath}px)`}}
-      >
-        {new Array(seatCount).fill(0).map((_, i) => {
-          const isMajority = i < majCount;
-          const litColor = isMajority ? BRAND.color.gold : DISSENT_RED;
-
-          // 席位置（緩やかなアーチ：中央がわずかに持ち上がる）
-          const u = seatCount <= 1 ? 0.5 : i / denom;
-          const cx = startX + gap * i;
-          const cy = benchY - Math.sin(u * Math.PI) * 46;
-
-          // アイドルの微上下（決定論的・静止しない）
-          const bob =
-            Math.sin((frame / fps) * 1.5 + i * 0.6) * 2.4;
-
-          // 点灯 spring（overshoot でポップ）
-          const cs = spring({
-            frame: frame - seatStart - i * seatStagger,
-            fps,
-            config: {damping: 12, mass: 0.8, stiffness: 150},
-          });
-          const lit = interpolate(cs, [0, 1], [0, 1], {
-            extrapolateLeft: 'clamp',
-            extrapolateRight: 'clamp',
-          });
-          // スケールはポップ（overshoot 反映のため cs をそのまま写像）
-          const scale = interpolate(cs, [0, 1], [0.5, 1]);
-          // 色は「無点灯下地→点灯色」へ遷移（opacity単独ではない）
-          const fill = mixHex(SEAT_DARK, litColor, lit);
-          const glow = interpolate(cs, [0, 1], [0, seatR * 1.5], {
-            extrapolateLeft: 'clamp',
-            extrapolateRight: 'clamp',
-          });
-          const ringA = Math.round(60 + lit * 140); // 0x3c..0xdc 相当の16進不要、rgba使用
-
-          return (
-            <div
-              key={i}
-              style={{
-                position: 'absolute',
-                left: cx - seatR,
-                top: cy - seatR + bob,
-                width: seatR * 2,
-                height: seatR * 2,
-                transform: `scale(${scale})`,
-                transformOrigin: 'center center',
-              }}
-            >
-              {/* 下地リング（常時見える＝奥行き・静止させない微光） */}
-              <div
-                style={{
-                  position: 'absolute',
-                  inset: 0,
-                  borderRadius: '50%',
-                  border: `2px solid rgba(200, 205, 214, ${(ringA / 255).toFixed(3)})`,
-                }}
-              />
-              {/* 点灯ディスク（色遷移＋グロー） */}
-              <div
-                style={{
-                  position: 'absolute',
-                  inset: 4,
-                  borderRadius: '50%',
-                  backgroundColor: fill,
-                  boxShadow: `0 0 ${glow}px ${litColor}`,
-                }}
-              />
-            </div>
-          );
-        })}
-      </AbsoluteFill>
-
-      {/* Layer 5: 評決数＋ラベル（前面） */}
+      {/* Layer 4: 評決グループ（席バンド→評決数→アンダーライン→ラベル）を
+          1つの flex 列として画面中央に縦センタリング。DOM順で評決数は必ず
+          席の“下の独立行”になり、justifyContent:center でフレーム端クリップを防ぐ。 */}
       <AbsoluteFill
         style={{
-          justifyContent: 'flex-end',
+          justifyContent: 'center',
           alignItems: 'center',
-          paddingBottom: 168,
           opacity: sceneO,
           transform: `translateY(${sceneY + breath}px)`,
         }}
       >
-        <div style={{display: 'inline-block', textAlign: 'center'}}>
-          {/* 評決数 "M–D"（tabular-nums・マスク切り上がり） */}
+        <div
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+          }}
+        >
+          {/* 席バンド（スタッガー点灯・spring スケール＋色遷移）。band 内ローカル座標。 */}
+          <div style={{position: 'relative', width: bandW, height: seatsBandH}}>
+            {new Array(seatCount).fill(0).map((_, i) => {
+              const isMajority = i < majCount;
+              const litColor = isMajority ? BRAND.color.gold : DISSENT_RED;
+
+              // 席位置（緩やかなアーチ：中央がわずかに持ち上がる）
+              const u = seatCount <= 1 ? 0.5 : i / denom;
+              const cx = seatR + gap * i; // band 内ローカルX（左端の席円の中心=seatR）
+              const cy = ARCH + seatR - Math.sin(u * Math.PI) * ARCH; // band 内ローカルY
+
+              // アイドルの微上下（決定論的・静止しない）
+              const bob = Math.sin((frame / fps) * 1.5 + i * 0.6) * 2.4;
+
+              // 点灯 spring（overshoot でポップ）
+              const cs = spring({
+                frame: frame - seatStart - i * seatStagger,
+                fps,
+                config: {damping: 12, mass: 0.8, stiffness: 150},
+              });
+              const lit = interpolate(cs, [0, 1], [0, 1], {
+                extrapolateLeft: 'clamp',
+                extrapolateRight: 'clamp',
+              });
+              // スケールはポップ（overshoot 反映のため cs をそのまま写像）
+              const scale = interpolate(cs, [0, 1], [0.5, 1]);
+              // 色は「無点灯下地→点灯色」へ遷移（opacity単独ではない）
+              const fill = mixHex(SEAT_DARK, litColor, lit);
+              const glow = interpolate(cs, [0, 1], [0, seatR * 1.5], {
+                extrapolateLeft: 'clamp',
+                extrapolateRight: 'clamp',
+              });
+              const ringA = Math.round(60 + lit * 140);
+
+              return (
+                <div
+                  key={i}
+                  style={{
+                    position: 'absolute',
+                    left: cx - seatR,
+                    top: cy - seatR + bob,
+                    width: seatR * 2,
+                    height: seatR * 2,
+                    transform: `scale(${scale})`,
+                    transformOrigin: 'center center',
+                  }}
+                >
+                  {/* 下地リング（常時見える＝奥行き・静止させない微光） */}
+                  <div
+                    style={{
+                      position: 'absolute',
+                      inset: 0,
+                      borderRadius: '50%',
+                      border: `2px solid rgba(200, 205, 214, ${(ringA / 255).toFixed(3)})`,
+                    }}
+                  />
+                  {/* 点灯ディスク（色遷移＋グロー） */}
+                  <div
+                    style={{
+                      position: 'absolute',
+                      inset: 4,
+                      borderRadius: '50%',
+                      backgroundColor: fill,
+                      boxShadow: `0 0 ${glow}px ${litColor}`,
+                    }}
+                  />
+                </div>
+              );
+            })}
+          </div>
+
+          {/* 評決数 "M–D"（tabular-nums・マスク切り上がり）＝席バンドの下の独立行 */}
           <div
             style={{
               display: 'flex',
@@ -329,12 +362,13 @@ export const VoteTally: React.FC<{
               justifyContent: 'center',
               fontVariantNumeric: 'tabular-nums',
               lineHeight: 1,
+              marginTop: GROUP_GAP,
             }}
           >
             <MaskReveal
               active={majS}
               color={BRAND.color.gold}
-              fontSize={300}
+              fontSize={numFS}
               fontFamily={BRAND.font.display}
               weight={900}
               letter={-4}
@@ -344,7 +378,7 @@ export const VoteTally: React.FC<{
             <MaskReveal
               active={dashS}
               color={BRAND.color.silver}
-              fontSize={220}
+              fontSize={dashFS}
               fontFamily={BRAND.font.display}
               weight={900}
               letter={-2}
@@ -354,7 +388,7 @@ export const VoteTally: React.FC<{
             <MaskReveal
               active={disS}
               color={DISSENT_RED}
-              fontSize={300}
+              fontSize={numFS}
               fontFamily={BRAND.font.display}
               weight={900}
               letter={-4}
@@ -366,9 +400,9 @@ export const VoteTally: React.FC<{
           {/* アンダーライン：scaleX spring（中心origin）で描画 */}
           <div
             style={{
-              margin: '18px auto 0',
+              marginTop: UNDERLINE_MT,
               width: 420,
-              height: 4,
+              height: UNDERLINE_H,
               borderRadius: 2,
               background: `linear-gradient(90deg, ${BRAND.color.gold} 0%, ${BRAND.color.silver} 50%, ${DISSENT_RED} 100%)`,
               transform: `scaleX(${underlineX})`,
@@ -379,14 +413,20 @@ export const VoteTally: React.FC<{
 
           {/* 任意ラベル：マスク切り上がり */}
           {label ? (
-            <div style={{overflow: 'hidden', paddingBottom: '0.14em', marginTop: 34}}>
+            <div
+              style={{
+                overflow: 'hidden',
+                paddingBottom: '0.14em',
+                marginTop: LABEL_MT,
+              }}
+            >
               <div
                 style={{
                   transform: `translateY(${labelY}%)`,
                   opacity: labelO,
                   fontFamily: BRAND.font.body,
                   fontWeight: 600,
-                  fontSize: 34,
+                  fontSize: LABEL_H,
                   letterSpacing: 6,
                   textTransform: 'uppercase',
                   color: BRAND.color.silver,

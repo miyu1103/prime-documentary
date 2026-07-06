@@ -25,6 +25,18 @@ const sec = (fps: number, s: number) => Math.round(fps * s);
 
 const DROP = '0 6px 30px rgba(0,0,0,0.8), 0 2px 8px rgba(0,0,0,0.9)';
 
+// 大タイトル1単語の共通字形スタイル（サイズ確定用の透明サイザーと実描画で厳密一致させる）
+const WORD: React.CSSProperties = {
+  color: BRAND.color.white,
+  fontFamily: BRAND.font.display,
+  fontWeight: 900,
+  fontSize: 124,
+  lineHeight: 1.02,
+  letterSpacing: -1,
+  textTransform: 'uppercase',
+  whiteSpace: 'nowrap',
+};
+
 export const ActTitle: React.FC<{
   kicker?: string;
   title: string;
@@ -83,7 +95,8 @@ export const ActTitle: React.FC<{
     config: {damping: 26, mass: 1.2, stiffness: 90},
   });
   const ghostScale = interpolate(gs, [0, 1], [1.18, 1]);
-  const ghostO = interpolate(gs, [0, 0.5], [0, 0.14], {extrapolateRight: 'clamp'});
+  // 背景ゴーストは明確に従属：低opacity・小さめ・タイトルの裏に沈める
+  const ghostO = interpolate(gs, [0, 0.5], [0, 0.07], {extrapolateRight: 'clamp'});
   const ghostLabel =
     index === undefined ? '' : String(index).padStart(2, '0');
 
@@ -124,12 +137,12 @@ export const ActTitle: React.FC<{
         >
           <div
             style={{
-              transform: `scale(${ghostScale}) translateY(${breath * 1.6}px)`,
+              transform: `scale(${ghostScale}) translateY(${-40 + breath * 1.6}px)`,
               opacity: ghostO,
               color: BRAND.color.silver,
               fontFamily: BRAND.font.display,
               fontWeight: 900,
-              fontSize: 720,
+              fontSize: 560,
               lineHeight: 0.9,
               letterSpacing: -20,
               fontVariantNumeric: 'tabular-nums',
@@ -149,6 +162,14 @@ export const ActTitle: React.FC<{
         }}
       />
 
+      {/* 奥行き4: タイトル直下のダークスクリム（ゴーストを沈めて白タイトルを立たせる可読性コントラスト） */}
+      <AbsoluteFill
+        style={{
+          background: `radial-gradient(42% 34% at 50% 50%, ${BRAND.color.ink}d9 0%, ${BRAND.color.ink}82 46%, transparent 74%)`,
+          transform: `translateY(${breath * 0.4}px)`,
+        }}
+      />
+
       {/* 前景: kicker + タイトル + 下線 */}
       <AbsoluteFill
         style={{
@@ -159,31 +180,34 @@ export const ActTitle: React.FC<{
           transform: `translateY(${groupY + breath}px)`,
         }}
       >
-        {/* kicker チップ */}
+        {/* kicker チップ：内容にだけフィットする小さなピル（inline-flex / fit-content）。
+            Trail(=AbsoluteFill)で包むと全幅バーになるため、ここは直接描画で中央に置く。 */}
         {kicker !== undefined && kicker !== '' && (
-          <Trail layers={6} lagInFrames={1.1} trailOpacity={0.5}>
-            <div
-              style={{
-                transform: `translateY(${kickerY}px) scale(${kickerScale})`,
-                opacity: kickerO,
-                marginBottom: 34,
-                padding: '10px 26px',
-                border: `1px solid ${BRAND.color.gold}`,
-                borderRadius: 999,
-                background: `${BRAND.color.gold}14`,
-                color: BRAND.color.gold,
-                fontFamily: BRAND.font.body,
-                fontWeight: 700,
-                fontSize: 28,
-                letterSpacing: 8,
-                textTransform: 'uppercase',
-                whiteSpace: 'nowrap',
-                boxShadow: `0 0 24px ${BRAND.color.gold}33`,
-              }}
-            >
-              {kicker}
-            </div>
-          </Trail>
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              width: 'fit-content',
+              maxWidth: '100%',
+              transform: `translateY(${kickerY}px) scale(${kickerScale})`,
+              opacity: kickerO,
+              marginBottom: 40,
+              padding: '12px 30px',
+              border: `1.5px solid ${BRAND.color.gold}`,
+              borderRadius: 999,
+              background: `${BRAND.color.gold}24`,
+              color: BRAND.color.gold,
+              fontFamily: BRAND.font.body,
+              fontWeight: 700,
+              fontSize: 30,
+              letterSpacing: 9,
+              textTransform: 'uppercase',
+              whiteSpace: 'nowrap',
+              boxShadow: `0 0 26px ${BRAND.color.gold}44, 0 4px 18px rgba(0,0,0,0.6)`,
+            }}
+          >
+            {kicker}
+          </div>
         )}
 
         {/* タイトル：単語マスク切り上がり */}
@@ -210,20 +234,24 @@ export const ActTitle: React.FC<{
             return (
               <div
                 key={i}
-                style={{overflow: 'hidden', paddingBottom: '0.14em'}}
+                style={{
+                  position: 'relative',
+                  overflow: 'hidden',
+                  paddingBottom: '0.14em',
+                }}
               >
+                {/* サイズ確定用の透明サイザー：Trailは絶対配置なので、この単語の
+                    実寸(幅/行高)を親の箱に与えないと箱が0×0に潰れ左上へ寄る。 */}
+                <div aria-hidden style={{...WORD, visibility: 'hidden'}}>
+                  {w}
+                </div>
+                {/* 実描画：Trail(=AbsoluteFill)がこの単語の箱を満たし、マスク切り上がり */}
                 <Trail layers={6} lagInFrames={1.1} trailOpacity={0.5}>
                   <div
                     style={{
+                      ...WORD,
                       transform: `translateY(${yy}%)`,
                       opacity: o,
-                      color: BRAND.color.white,
-                      fontFamily: BRAND.font.display,
-                      fontWeight: 900,
-                      fontSize: 118,
-                      lineHeight: 1.02,
-                      letterSpacing: -2,
-                      textTransform: 'uppercase',
                       textShadow: DROP,
                     }}
                   >

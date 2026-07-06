@@ -164,7 +164,9 @@ const Badge: React.FC<{
   nextStart: number | null;
   isLast: boolean;
   fps: number;
-}> = ({index, start, nextStart, isLast, fps}) => {
+  size: number;
+  fontSize: number;
+}> = ({index, start, nextStart, isLast, fps, size, fontSize}) => {
   const frame = useCurrentFrame();
 
   // ポップ：低damping springでオーバーシュート
@@ -204,8 +206,8 @@ const Badge: React.FC<{
   return (
     <div
       style={{
-        width: 108,
-        height: 108,
+        width: size,
+        height: size,
         transform: `translateY(${popY}px) scale(${scale})`,
         opacity: o,
         borderRadius: '50%',
@@ -217,7 +219,7 @@ const Badge: React.FC<{
         boxShadow: `0 0 ${34 * glow}px ${BRAND.color.gold}${'88'}, inset 0 0 20px ${BRAND.color.gold}22`,
         color: BRAND.color.gold,
         fontFamily: BRAND.font.display,
-        fontSize: 46,
+        fontSize,
         letterSpacing: 1,
         textShadow: `0 0 18px ${BRAND.color.gold}aa`,
       }}
@@ -281,17 +283,35 @@ export const ProcessSteps: React.FC<{
   const D = dur ?? durationInFrames;
   const n = steps.length;
 
-  // レイアウト：ゆるいジグザグに配置
-  const padX = 268;
+  // -------------------------------------------------------------------
+  // ステップ数に応じてジオメトリ/タイポグラフィを適応させる（3〜5で破綻しない）
+  // ノードは中央線の上下に交互配置し、ラベルは「外側」（上ノード→上／下ノード→下）
+  // に置く。これで隣接ラベルが必ず別の縦バンドに分かれ、衝突しない。
+  // -------------------------------------------------------------------
+  const nc = Math.min(Math.max(n, 1), 5); // clamp for scaling only（型/props不変）
+  const scl = (a: number, b: number) =>
+    interpolate(nc, [3, 5], [a, b], {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+    });
+  const badgeSize = Math.round(scl(112, 84));
+  const badgeFont = Math.round(scl(48, 38));
+  const titleSize = Math.round(scl(36, 28));
+  const descSize = Math.round(scl(22, 18));
+  const amp = scl(78, 96); // ステップが増えるほど上下バンドを広げて分離
+  const gapBadge = 20; // バッジ端〜ラベルの隙間
+
+  // 横方向は端に余白を取り、端のラベル（幅textW）が画面外に出ないようにする
+  const padX = 300;
   const usableW = width - padX * 2;
-  const baseY = height * 0.5 + 34;
-  const amp = 66;
+  const baseY = height * 0.5;
   const pos = steps.map((_, i) => {
     const x = n === 1 ? width / 2 : padX + (usableW * i) / (n - 1);
-    const y = baseY + (i % 2 === 0 ? -amp : amp);
+    const above = i % 2 === 0; // 偶数=上ノード、奇数=下ノード
+    const y = baseY + (above ? -amp : amp);
     // 微小なフロートで常時わずかに動かす（決定論的）
     const fy = Math.sin(frame / 34 + i * 0.9) * 3;
-    return {x, y: y + fy};
+    return {x, y: y + fy, above};
   });
 
   // タイミング（全て fps から算出）
@@ -299,8 +319,10 @@ export const ProcessSteps: React.FC<{
   const perStep = n > 0 ? Math.max(sec(fps, 0.6), Math.floor((D - intro) / n)) : D;
   const startOf = (i: number) => intro + i * perStep;
 
+  // 各ラベルの横幅を境界付け：隣は上下逆バンドなので同バンド（i と i+2, 間隔2slot）
+  // にも触れない幅に収める。単語は自身の列内で折り返す。
   const slot = n > 1 ? usableW / (n - 1) : usableW;
-  const textW = Math.min(360, slot * 0.92);
+  const textW = Math.min(340, Math.max(230, slot * (n <= 3 ? 0.62 : 1.0)));
 
   return (
     <AbsoluteFill style={{backgroundColor: '#06080f'}}>
@@ -421,34 +443,53 @@ export const ProcessSteps: React.FC<{
                   nextStart={nextStart}
                   isLast={isLast}
                   fps={fps}
+                  size={badgeSize}
+                  fontSize={badgeFont}
                 />
               </Trail>
             </div>
 
-            {/* テキストブロック（ノード下） */}
+            {/* テキストブロック（ノードの外側：上ノードは上／下ノードは下）。
+                自前の縦ゾーンに収まり、隣接ラベルは必ず逆バンドで衝突しない。 */}
             <div
               style={{
                 position: 'absolute',
                 left: p.x,
-                top: p.y + 84,
+                top: p.above
+                  ? p.y - badgeSize / 2 - gapBadge
+                  : p.y + badgeSize / 2 + gapBadge,
                 width: textW,
-                transform: 'translateX(-50%)',
+                transform: p.above
+                  ? 'translate(-50%, -100%)'
+                  : 'translateX(-50%)',
                 textAlign: 'center',
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: p.above ? 'flex-end' : 'flex-start',
+                alignItems: 'center',
               }}
             >
-              <MaskTitle text={steps[i].title} start={s + sec(fps, 0.06)} fps={fps} size={34} />
+              <MaskTitle
+                text={steps[i].title}
+                start={s + sec(fps, 0.06)}
+                fps={fps}
+                size={titleSize}
+              />
               {steps[i].desc ? (
                 <div
                   style={{
                     marginTop: 12,
+                    maxWidth: textW,
                     transform: `translateY(${descY}px)`,
                     opacity: descO,
                     fontFamily: BRAND.font.body,
                     fontWeight: 500,
-                    fontSize: 21,
+                    fontSize: descSize,
                     lineHeight: 1.32,
                     letterSpacing: 0.2,
                     color: BRAND.color.silver,
+                    overflowWrap: 'break-word',
+                    wordBreak: 'normal',
                   }}
                 >
                   {steps[i].desc}

@@ -8,7 +8,6 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
-import {Trail} from '@remotion/motion-blur';
 import {BRAND} from '../../brand';
 
 // =====================================================================
@@ -35,18 +34,14 @@ export const QuoteCard: React.FC<{
   const {fps, durationInFrames, width, height} = useVideoConfig();
   const total = dur ?? durationInFrames;
 
-  // 語を3語ずつの語群にまとめて、群ごとにスタッガーでマスク切り上がり
+  // 語ごとに（インラインフローを保ったまま）スタッガーでマスク切り上がり
   const words = quote.trim().split(/\s+/).filter(Boolean);
-  const groups: string[] = [];
-  for (let i = 0; i < words.length; i += 3) {
-    groups.push(words.slice(i, i + 3).join(' '));
-  }
 
   // タイムライン（すべて fps 由来の定数）
   const glyphStart = sec(fps, 0.12); // 引用符グリフのスケールイン開始
   const quoteStart = sec(fps, 0.34); // 引用テキスト開始
-  const groupStagger = sec(fps, 0.14); // 語群ごとのディレイ
-  const attrStart = quoteStart + groups.length * groupStagger + sec(fps, 0.22);
+  const wordStagger = Math.max(1, sec(fps, 0.05)); // 語ごとのディレイ
+  const attrStart = quoteStart + words.length * wordStagger + sec(fps, 0.3);
   const outStart = total - sec(fps, 0.5); // シーン退出開始
 
   // シーン全体の出入り（opacity単独禁止 → 微translateYと必ず併用）
@@ -152,25 +147,24 @@ export const QuoteCard: React.FC<{
         })}
       </AbsoluteFill>
 
-      {/* Layer 4: 引用符グリフ（裏の発光ヒーロー・スケールイン） */}
+      {/* Layer 4: 引用符グリフ（引用の上に発光ヒーローとしてスケールイン） */}
       <AbsoluteFill
         style={{
           justifyContent: 'flex-start',
-          alignItems: 'flex-start',
-          paddingLeft: 240,
-          paddingTop: 150,
+          alignItems: 'center',
+          paddingTop: 96,
         }}
       >
         <div
           style={{
             fontFamily: SERIF,
             fontWeight: 700,
-            fontSize: 460,
+            fontSize: 300,
             lineHeight: 1,
             color: BRAND.color.gold,
-            opacity: glyphO * 0.24,
+            opacity: glyphO * 0.26,
             transform: `translateY(${glyphY + glyphDrift}px) scale(${glyphScale})`,
-            transformOrigin: 'left top',
+            transformOrigin: 'center top',
             textShadow: `0 0 80px ${BRAND.color.gold}55`,
             userSelect: 'none',
           }}
@@ -189,58 +183,56 @@ export const QuoteCard: React.FC<{
           transform: `translateY(${sceneY + breath}px)`,
         }}
       >
-        <div style={{maxWidth: 1360, width: '100%'}}>
-          {/* 引用本文：語群ごとにマスク切り上がり（overflow:hidden + 内側translateY） */}
+        <div style={{maxWidth: 1360, width: '100%', textAlign: 'center'}}>
+          {/* 引用本文：語ごとにマスク切り上がり（overflow:hidden + 内側translateY）。
+              各語は通常のインラインフローに置かれ、行を折り返して中央寄せで多段になる。 */}
           <div
             style={{
-              display: 'flex',
-              flexWrap: 'wrap',
-              gap: '0.08em 0.32em',
               fontFamily: SERIF,
               fontWeight: 500,
               fontSize: 78,
-              lineHeight: 1.28,
+              lineHeight: 1.32,
               letterSpacing: 0.2,
               color: BRAND.color.white,
+              textAlign: 'center',
             }}
           >
-            {groups.map((g, i) => {
-              const gs = spring({
-                frame: frame - quoteStart - i * groupStagger,
+            {words.map((w, i) => {
+              const ws = spring({
+                frame: frame - quoteStart - i * wordStagger,
                 fps,
                 config: {damping: 17, mass: 0.9, stiffness: 130},
               });
-              const gy = interpolate(gs, [0, 1], [118, 0]);
-              const go = interpolate(gs, [0, 0.26], [0, 1], {extrapolateRight: 'clamp'});
+              const wy = interpolate(ws, [0, 1], [118, 0]);
+              const wo = interpolate(ws, [0, 0.26], [0, 1], {extrapolateRight: 'clamp'});
               return (
                 <span
                   key={i}
                   style={{
                     display: 'inline-block',
                     overflow: 'hidden',
-                    paddingBottom: '0.16em',
                     verticalAlign: 'top',
+                    paddingBottom: '0.16em',
+                    marginRight: '0.28em',
                   }}
                 >
-                  <Trail layers={6} lagInFrames={1.1} trailOpacity={0.5}>
-                    <span
-                      style={{
-                        display: 'inline-block',
-                        transform: `translateY(${gy}%)`,
-                        opacity: go,
-                        whiteSpace: 'pre',
-                      }}
-                    >
-                      {g}
-                    </span>
-                  </Trail>
+                  <span
+                    style={{
+                      display: 'inline-block',
+                      transform: `translateY(${wy}%)`,
+                      opacity: wo,
+                      whiteSpace: 'pre',
+                    }}
+                  >
+                    {w}
+                  </span>
                 </span>
               );
             })}
           </div>
 
           {/* 帰属：マスク切り上がり＋描かれるゴールドのアンダーライン */}
-          <div style={{marginTop: 54, display: 'inline-block'}}>
+          <div style={{marginTop: 54, display: 'inline-block', textAlign: 'left'}}>
             <div style={{overflow: 'hidden', paddingBottom: '0.12em'}}>
               <div
                 style={{
