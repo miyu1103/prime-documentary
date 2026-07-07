@@ -27,6 +27,12 @@ import {PinDropMap} from './motionkit/PinDropMap';
 import {RegionHighlightMap} from './motionkit/RegionHighlightMap';
 import {ComparisonBars} from './motionkit/ComparisonBars';
 import {MechanismReveal} from './motionkit/MechanismReveal';
+// tyler (EP33 PD-2026-033) bespoke figures — §5 new components not in motionkit.
+import {EquityTheftTally} from './tyler/EquityTheftTally';
+import {GovtArgumentCard} from './tyler/GovtArgumentCard';
+import {HallEquityLadder} from './tyler/HallEquityLadder';
+import {SplitLadder} from './tyler/SplitLadder';
+import {OralArgQuestionTally} from './tyler/OralArgQuestionTally';
 
 /**
  * FigureBeats — the §5.6 "Figures tier": data beats rendered as full-screen ANIMATED figures
@@ -88,7 +94,13 @@ export type FigureSpec =
   | {start: number; end: number; kind: 'compbars'; items: {label: string; value: number; accent?: string}[]}
   // NOTE: MechanismReveal's own prop is named `kind`; the FigureSpec discriminant is also `kind`,
   // so the variant is carried in `mechanism` and mapped to the component's `kind` prop at render.
-  | {start: number; end: number; kind: 'mechanism'; mechanism: 'closingdoor' | 'gears' | 'faultsplit'};
+  | {start: number; end: number; kind: 'mechanism'; mechanism: 'closingdoor' | 'gears' | 'faultsplit'}
+  // --- tyler (EP33 PD-2026-033) bespoke figures — §5 new components not in motionkit ---
+  | {start: number; end: number; kind: 'equitytheft'}
+  | {start: number; end: number; kind: 'govtargument'; mode?: 'stack' | 'collapse'}
+  | {start: number; end: number; kind: 'hallladder'; showAmounts?: boolean}
+  | {start: number; end: number; kind: 'splitladder'}
+  | {start: number; end: number; kind: 'oralargtally'};
 
 /** SceneBed — the DESIGNED scene bed behind every figure.
  *
@@ -115,14 +127,14 @@ export type FigureSpec =
  *     darkens the figure) — extra ambient motion + volume.
  *  4. A FAINT corner vignette only (soft, low alpha) so it barely trims the moving cut at the edges. */
 const SceneBed: React.FC = () => {
-  const f = useCurrentFrame();
-  const {durationInFrames: d} = useVideoConfig();
-  const p = interpolate(f, [0, d], [0, 1], {extrapolateRight: 'clamp'});
-  // two large soft glows on slow lissajous drifts — volumetric, always-moving bed
-  const g1x = 34 + 11 * Math.sin(p * Math.PI * 2);
-  const g1y = 32 + 9 * Math.cos(p * Math.PI * 2);
-  const g2x = 68 + 12 * Math.cos(p * Math.PI * 2 + 1.5);
-  const g2y = 64 + 10 * Math.sin(p * Math.PI * 2 + 1.5);
+  // two large soft glows for volumetric depth — positions are now STATIC (no lissajous orbit).
+  // owner 2026-07-06 found the slow-circling faint light overused/annoying; the whole FigureScene
+  // is under a monotonic Ken-Burns, so these glows still travel with the frame — they just no
+  // longer circle on their own.
+  const g1x = 34;
+  const g1y = 32;
+  const g2x = 68;
+  const g2y = 64;
   return (
     <AbsoluteFill style={{overflow: 'hidden'}}>
       {/* 1. SEMI-TRANSPARENT base scrim — the moving cut underneath shows through (~45–54% visible).
@@ -135,7 +147,7 @@ const SceneBed: React.FC = () => {
           backdropFilter: 'blur(9px)',
           WebkitBackdropFilter: 'blur(9px)',
           background:
-            'linear-gradient(180deg, rgba(5,8,14,0.55) 0%, rgba(6,12,20,0.46) 55%, rgba(4,6,11,0.52) 100%)',
+            'linear-gradient(180deg, rgba(5,8,14,0.20) 0%, rgba(6,12,20,0.14) 55%, rgba(4,6,11,0.18) 100%)',
         } as React.CSSProperties}
       />
       {/* 2. LOCAL center panel — stronger dark radial behind the figure's text/number only, fading to
@@ -145,7 +157,7 @@ const SceneBed: React.FC = () => {
         style={{
           pointerEvents: 'none',
           background:
-            'radial-gradient(60% 64% at 50% 48%, rgba(3,5,10,0.74) 0%, rgba(3,5,10,0.5) 40%, transparent 74%)',
+            'radial-gradient(60% 64% at 50% 48%, rgba(3,5,10,0.36) 0%, rgba(3,5,10,0.20) 40%, transparent 74%)',
         }}
       />
       {/* 3. large soft drifting glows (screen = additive light only, never darkens the figure) */}
@@ -153,14 +165,14 @@ const SceneBed: React.FC = () => {
         style={{
           pointerEvents: 'none',
           mixBlendMode: 'screen',
-          background: `radial-gradient(42% 48% at ${g1x}% ${g1y}%, ${BRAND.color.electric}22 0%, transparent 70%)`,
+          background: `radial-gradient(42% 48% at ${g1x}% ${g1y}%, ${BRAND.color.electric}12 0%, transparent 70%)`,
         }}
       />
       <AbsoluteFill
         style={{
           pointerEvents: 'none',
           mixBlendMode: 'screen',
-          background: `radial-gradient(48% 54% at ${g2x}% ${g2y}%, ${BRAND.color.navy}66 0%, transparent 72%)`,
+          background: `radial-gradient(48% 54% at ${g2x}% ${g2y}%, ${BRAND.color.navy}33 0%, transparent 72%)`,
         }}
       />
       {/* 4. faint corner vignette — soft & low-alpha so it barely trims the moving cut at the edges */}
@@ -293,7 +305,7 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
           <Sequence key={i} from={Math.round(b.start * fps)} durationInFrames={dur} name={`figure-${i}`}>
             <FigureScene dur={dur}>
               <SceneBed />
-              <AmbientMotion count={22} intensity={1.12} />
+              <AmbientMotion count={12} intensity={0.4} />
               <Drift>
                 {b.kind === 'stat' && (
                   <StatCounter
@@ -388,6 +400,12 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                 )}
                 {b.kind === 'compbars' && <ComparisonBars items={b.items} dur={dur} />}
                 {b.kind === 'mechanism' && <MechanismReveal kind={b.mechanism} dur={dur} />}
+                {/* tyler (EP33) bespoke figures */}
+                {b.kind === 'equitytheft' && <EquityTheftTally dur={dur} />}
+                {b.kind === 'govtargument' && <GovtArgumentCard dur={dur} mode={b.mode} />}
+                {b.kind === 'hallladder' && <HallEquityLadder dur={dur} showAmounts={b.showAmounts} />}
+                {b.kind === 'splitladder' && <SplitLadder dur={dur} />}
+                {b.kind === 'oralargtally' && <OralArgQuestionTally dur={dur} />}
               </Drift>
             </FigureScene>
           </Sequence>

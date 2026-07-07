@@ -31,7 +31,10 @@ import {MirandaThumbnailFrame} from './compositions/MirandaThumbnailFrame';
 import {ClipProof} from './compositions/ClipProof';
 import {DepthTest} from './compositions/DepthTest';
 import {MotionSample, motionSampleDurationInFrames} from './compositions/MotionSample';
+import {TylerFigures, tylerFiguresDurationInFrames} from './compositions/TylerFigures';
 import {CaseFilm, caseFilmDurationInFrames, FilmData} from './compositions/CaseFilm';
+import {AircashFigTest, AIRCASH_FIG_TEST_FRAMES} from './compositions/AircashFigTest';
+import {HindersFigTest, HINDERS_FIG_TEST_FRAMES} from './compositions/HindersFigTest';
 import kylloFilm from './data/kyllo_film.json';
 import katzFilm from './data/katz_film.json';
 import rodriguezFilm from './data/rodriguez_film.json';
@@ -75,6 +78,8 @@ import {SHORT29} from './data/short29';
 import {SHORT30} from './data/short30';
 import {SHORT31} from './data/short31';
 import {SHORT32} from './data/short32';
+import {SHORT33} from './data/short33';
+import {SHORT34} from './data/short34';
 import {SHORT01} from './data/short01';
 import {SHORT02} from './data/short02';
 import {SHORT03} from './data/short03';
@@ -109,6 +114,24 @@ export const RemotionRoot: React.FC = () => {
         id="DepthTest"
         component={DepthTest}
         durationInFrames={90}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      {/* dev harness: EP34 rolin aircash 7図の smoke 検証（各6s・全図フルフレーム） */}
+      <Composition
+        id="AircashFigTest"
+        component={AircashFigTest}
+        durationInFrames={AIRCASH_FIG_TEST_FRAMES}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      {/* dev harness: EP35 hinders 27図の smoke 検証（各4s・全図フルフレーム） */}
+      <Composition
+        id="HindersFigTest"
+        component={HindersFigTest}
+        durationInFrames={HINDERS_FIG_TEST_FRAMES}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
@@ -1031,6 +1054,72 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         defaultProps={{data: SHORT32, platform: 'tiktok' as const, depth: true}}
       />
+      {/* ---- SHORT #33 Tyler v. Hennepin County — PREMIUM (depth + motionkit money/vote/quote scenes) ---- */}
+      <Composition
+        id="Short-short33-yt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT33, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT33, platform: 'yt' as const, depth: true}}
+      />
+      <Composition
+        id="Short-short33-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT33, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT33, platform: 'tiktok' as const, depth: true}}
+      />
+      <Still
+        id="ShortThumb-short33"
+        component={ShortThumb}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          data: SHORT33,
+          headline: 'THEY KEPT\n$25,000',
+          badge: '9–0',
+          backgroundSrc: 'shorts/short33/short33_thumb.png',
+        }}
+      />
+      <Still id="ShortThumb-short33-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT33, headline: 'A $15K DEBT.\nA $40K HOME.', badge: 'TAKEN', backgroundSrc: 'shorts/short33/short33_thumb.png'}} />
+      {/* ---- SHORT #34 Rolin (airport cash forfeiture) — PREMIUM ---- */}
+      <Composition
+        id="Short-short34-yt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT34, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT34, platform: 'yt' as const, depth: true}}
+      />
+      <Composition
+        id="Short-short34-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT34, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT34, platform: 'tiktok' as const, depth: true}}
+      />
+      <Still
+        id="ShortThumb-short34"
+        component={ShortThumb}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          data: SHORT34,
+          headline: 'CASH IS\nLEGAL',
+          badge: 'SEIZED',
+          backgroundSrc: 'shorts/short34/short34_thumb.png',
+        }}
+      />
+      <Still id="ShortThumb-short34-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT34, headline: 'NO CRIME.\nNO CASH BACK.', badge: 'AIRPORT', backgroundSrc: 'shorts/short34/short34_thumb.png'}} />
       <Composition
         id="Short-short01-yt"
         component={Short}
@@ -1528,6 +1617,14 @@ export const RemotionRoot: React.FC = () => {
         id="MotionSample"
         component={MotionSample}
         durationInFrames={motionSampleDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="TylerFigures"
+        component={TylerFigures}
+        durationInFrames={tylerFiguresDurationInFrames(BRAND.video.fps)}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
