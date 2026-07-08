@@ -231,7 +231,7 @@ tgt = bpy.data.objects.new('tgt', None); tgt.location = (-1.0, 3.0, 1.1); coll.o
 cd.dof.focus_object = tgt
 set_mblur_steps(cam)
 CAM_A = (0.4, ROOM_D - 0.6, 1.6)    # 店の奥
-CAM_B = (0.0, 1.0, 1.4)             # 手前（入口側）
+CAM_B = (0.2, 5.0, 1.55)            # カウンター手前で止める緩い寄り(空壁へ抜けない)
 def look_from(loc, look):
     d = Vector(look) - Vector(loc)
     return d.to_track_quat('-Z', 'Y').to_euler()
@@ -240,7 +240,7 @@ if FE > FS:
     kb = min(FS + 72, FE)   # 0–72f dolly
     cam.location = CAM_A; cam.rotation_euler = look_from(CAM_A, (-0.6, 3.0, 1.2))
     cam.keyframe_insert('location', frame=FS); cam.keyframe_insert('rotation_euler', frame=FS)
-    cam.location = CAM_B; cam.rotation_euler = look_from(CAM_B, (-0.8, 2.6, 1.2))
+    cam.location = CAM_B; cam.rotation_euler = look_from(CAM_B, (-0.9, 3.0, 1.2))
     cam.keyframe_insert('location', frame=kb); cam.keyframe_insert('rotation_euler', frame=kb)
 
 # ---- compositor bloom（Blender 5.x node group + socket API）----

@@ -1,0 +1,51 @@
+{
+  "schema": "pd.hero_render_receipt.v001",
+  "episode": "PD-2026-035-hinders",
+  "note": "Super-heavy Blender hero real-renders (offline). @remotion/three heroes (F3/F11/F14/F14b/F15) render real-time in the main film pass and are not offline mp4s. Numbers measured with ffprobe/sha256sum, not self-reported. F5/F20 were re-rendered after a QC pass caught defects (F5 blown-out exposure; F20 dolly overshoot into empty wall + an incomplete 33/80 run); scripts were fixed and verified at low-res before the 4K re-render.",
+  "render_settings": {
+    "engine": "Cycles",
+    "device": "OPTIX (RTX 4090)",
+    "samples": 200,
+    "render_resolution": "3840x2160 supersample",
+    "encode": "row-6: ffmpeg -framerate 30 scale=1920:1080 libx264 -crf 16 -pix_fmt yuv420p -colorspace bt709",
+    "output_fps": 30
+  },
+  "heroes": [
+    {
+      "id": "F2",
+      "name": "BSAOriginFlow",
+      "path": "remotion/public/hinders/hero_bsa_flow.mp4",
+      "technique": "Blender Mantaflow FLIP liquid sim (bake 4474s) -> Cycles ceiling",
+      "rendered_frames": 60,
+      "mp4": {"frames": 60, "width": 1920, "height": 1080, "codec": "h264", "pix_fmt": "yuv420p", "bytes": 845660},
+      "sha256": "4171d308b17747b2abdbc327b010e92a7cd51fc0ad4f3bf6a4882888a927e9c8",
+      "visual_qc": "real fluid droplet chute -> small-town till; non-black; reads dim (polish: could lift key light).",
+      "status": "present"
+    },
+    {
+      "id": "F5",
+      "name": "FrozenAccount",
+      "path": "remotion/public/hinders/hero_frozen_account.mp4",
+      "technique": "Blender rigid-body ice fracture (120 shards, RB baked) -> Cycles ceiling glass",
+      "rendered_frames": 60,
+      "mp4": {"frames": 60, "width": 1920, "height": 1080, "codec": "h264", "pix_fmt": "yuv420p", "bytes": 1772656},
+      "sha256": "4ca121cc817121a942804122753b6a2659e2b47097468eaa94a86863aaec3c99",
+      "visual_qc": "exposure fixed (was blown white): ice-fracture panel reads against dark bg. Polish: tail frames (~45+) go flat after shards fall away — film builder should favour the fracture window (f8-30).",
+      "status": "present"
+    },
+    {
+      "id": "F20",
+      "name": "CaroleAfterCard",
+      "path": "remotion/public/hinders/hero_carole_after.mp4",
+      "technique": "Blender Cycles ceiling empty-store interior, back->counter dolly + SOLD placard drop, window godrays",
+      "rendered_frames": 80,
+      "mp4": {"frames": 80, "width": 1920, "height": 1080, "codec": "h264", "pix_fmt": "yuv420p", "bytes": 1219447},
+      "sha256": "a0aeaf497ce562dd2be63ce0cd2d5ad9adf1500bea0da5b3fbd50f4595656fe5",
+      "visual_qc": "dolly overshoot fixed: store composition (counter/window/SOLD) framed throughout; SOLD placard lands on counter by f60.",
+      "status": "present"
+    }
+  ],
+  "realtime_three_heroes": ["F3 ThresholdMeter", "F11 PolicyReversalTimeline", "F14 McLellanParallel", "F14b McLellanLedger", "F15 TIGTADots"],
+  "hero_video_ready": true,
+  "fact_numbers_unchanged": ["$32,820.56", "$107,702.66", "301", "~$2M", "278", "91%", "231ct $17.1M"]
+}

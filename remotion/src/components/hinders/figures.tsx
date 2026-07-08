@@ -79,7 +79,7 @@ const EO = Easing.out(Easing.cubic);
 // 2D fallback below is ALWAYS laid down as the base layer.  Flip to true (or
 // gate per-key) once the encodes land.
 // ---------------------------------------------------------------------
-export const HERO_VIDEO_READY = false;
+export const HERO_VIDEO_READY = true;
 
 export const HERO_MP4 = {
   bsa: 'hinders/hero_bsa_flow.mp4',

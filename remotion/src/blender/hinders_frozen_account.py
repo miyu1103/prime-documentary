@@ -62,6 +62,7 @@ scene.render.fps = 30
 scene.frame_start, scene.frame_end = FS, FE
 try:
     scene.view_settings.view_transform = 'AgX'   # 映画的トーンマップ
+    scene.view_settings.exposure = -1.2          # 白飛び対策: 露出を引く(frost発光+glassで飽和していた)
 except Exception:
     pass
 
@@ -194,9 +195,9 @@ wind.keyframe_insert('field.strength', frame=FS + 13)
 fs.strength = 0.0; wind.keyframe_insert('field.strength', frame=FS + 17)
 
 # ---- frost 結晶パーティクル ~5k（hair＝静止画でも可視・決定論seed）----
-bpy.ops.mesh.primitive_plane_add(size=4.4, location=(0, 0.9, 0), rotation=(math.radians(90), 0, 0))
+bpy.ops.mesh.primitive_plane_add(size=2.6, location=(0, 0.9, 0), rotation=(math.radians(90), 0, 0))
 frost_emit = bpy.context.object; frost_emit.name = 'frost_emitter'
-mFrost, fb = new_mat('frost'); emissive(fb, (0.8, 0.92, 1.0), 3.0); set_in(fb, 'Base Color', (1, 1, 1, 1))
+mFrost, fb = new_mat('frost'); emissive(fb, (0.8, 0.92, 1.0), 0.3); set_in(fb, 'Base Color', (0.7, 0.8, 0.95, 1))
 frost_emit.data.materials.append(mFrost)
 try:
     psys_mod = frost_emit.modifiers.new('frost', 'PARTICLE_SYSTEM')
@@ -218,8 +219,8 @@ def area(name, loc, energy, color, size=6):
     ld = bpy.data.lights.new(name, 'AREA'); ld.energy = energy; ld.color = color; ld.size = size
     ob = bpy.data.objects.new(name, ld); ob.location = loc; coll.objects.link(ob)
     d = Vector((0, 0, 0)) - Vector(loc); ob.rotation_euler = d.to_track_quat('-Z', 'Y').to_euler()
-area('key', (5, -5, 6), 1800, (1, 1, 1), 6)
-area('fill', (-6, -3, 2), 800, ACC_HI, 7)
+area('key', (5, -5, 6), 1000, (1, 1, 1), 6)
+area('fill', (-6, -3, 2), 450, ACC_HI, 7)
 area('rim', (-2, 5, 5), 1500, COLD, 5)    # 冷色rim
 def softbox(loc, size, color, strength):
     bpy.ops.mesh.primitive_plane_add(size=size, location=loc)
