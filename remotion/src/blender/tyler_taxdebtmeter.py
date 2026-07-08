@@ -69,9 +69,14 @@ except Exception:
 scene.render.resolution_x = RX
 scene.render.resolution_y = RY
 scene.render.resolution_percentage = 100
-scene.render.fps = 60
+scene.render.fps = 30
 scene.frame_start, scene.frame_end = FS, FE
 scene.view_settings.view_transform = 'AgX'
+try:  # Blender 5.x: guarantee non-linear (bezier/auto-clamped) keyframes by default
+    _ep = bpy.context.preferences.edit
+    _ep.keyframe_new_interpolation_type = 'BEZIER'
+    _ep.keyframe_new_handle_type = 'AUTO_CLAMPED'
+except Exception: pass
 
 # ---- motion blur (shutter 0.5) ----
 scene.render.use_motion_blur = True
@@ -245,7 +250,7 @@ if FE > FS:
     for ob in (pivot, cam, cd):
         ad = ob.animation_data
         if ad and ad.action:
-            for fc in ad.action.fcurves:
+            for fc in getattr(ad.action, 'fcurves', []):
                 for kp in fc.keyframe_points:
                     kp.interpolation = 'BEZIER'; kp.handle_left_type = kp.handle_right_type = 'AUTO_CLAMPED'
 else:
