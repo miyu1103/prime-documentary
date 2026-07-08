@@ -27,12 +27,25 @@ import {PinDropMap} from './motionkit/PinDropMap';
 import {RegionHighlightMap} from './motionkit/RegionHighlightMap';
 import {ComparisonBars} from './motionkit/ComparisonBars';
 import {MechanismReveal} from './motionkit/MechanismReveal';
+// EP34 rolin (aircash) bespoke figures
+import {CashStack} from './aircash/CashStack';
+import {BurdenFlipScale} from './aircash/BurdenFlipScale';
+import {SignSwapMorph} from './aircash/SignSwapMorph';
+import {CarryOnXrayScan} from './aircash/CarryOnXrayScan';
+import {CheckpointConvergeMap} from './aircash/CheckpointConvergeMap';
+import {ReportThresholdMeter} from './aircash/ReportThresholdMeter';
+import {ReturnLedgerMotion} from './aircash/ReturnLedgerMotion';
 // tyler (EP33 PD-2026-033) bespoke figures — §5 new components not in motionkit.
 import {EquityTheftTally} from './tyler/EquityTheftTally';
 import {GovtArgumentCard} from './tyler/GovtArgumentCard';
 import {HallEquityLadder} from './tyler/HallEquityLadder';
 import {SplitLadder} from './tyler/SplitLadder';
 import {OralArgQuestionTally} from './tyler/OralArgQuestionTally';
+// hinders (EP35 PD-2026-035) — all 27 FigureBeats + 3 hero mp4s live in one registry keyed by
+// design F-id; a single 'hinders' kind renders any of them. These figures are self-contained
+// (own backdrop + sustained motion, manifest §5/§7 compliant) so they render WITHOUT the SceneBed/
+// Drift wrapper (whose sinusoidal drift the EP35 manifest bans) — see the branch in FigureBeats.
+import {FIGURE_REGISTRY, HinderLane} from './hinders';
 
 /**
  * FigureBeats — the §5.6 "Figures tier": data beats rendered as full-screen ANIMATED figures
@@ -100,7 +113,17 @@ export type FigureSpec =
   | {start: number; end: number; kind: 'govtargument'; mode?: 'stack' | 'collapse'}
   | {start: number; end: number; kind: 'hallladder'; showAmounts?: boolean}
   | {start: number; end: number; kind: 'splitladder'}
-  | {start: number; end: number; kind: 'oralargtally'};
+  | {start: number; end: number; kind: 'oralargtally'}
+  // EP34 rolin (aircash) bespoke figures — all data props optional (components self-default)
+  | {start: number; end: number; kind: 'cashstack'; amount?: number; caption?: string}
+  | {start: number; end: number; kind: 'burdenflip'; chipMain?: string; chipSub?: string}
+  | {start: number; end: number; kind: 'signswap'; fromLabel?: string; toLabel?: string; counterBase?: number; counterRate?: number}
+  | {start: number; end: number; kind: 'xrayscan'; caption?: string}
+  | {start: number; end: number; kind: 'convergemap'}
+  | {start: number; end: number; kind: 'thresholdmeter'}
+  | {start: number; end: number; kind: 'returnledger'; caption?: string}
+  // EP35 hinders — one kind for all 27 FigureBeats + 3 hero mp4s (addressed by design F-id).
+  | {start: number; end: number; kind: 'hinders'; fid: string; lane?: HinderLane};
 
 /** SceneBed — the DESIGNED scene bed behind every figure.
  *
@@ -301,6 +324,17 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
     <>
       {beats.map((b, i) => {
         const dur = Math.max(1, Math.round((b.end - b.start) * fps));
+        // EP35 hinders: self-contained figures render bare — NO SceneBed/FigureScene/Drift wrapper
+        // (its sinusoidal drift is banned by the EP35 manifest; these figures carry their own
+        // reveal + sustained motion + backdrop). Addressed by design F-id via FIGURE_REGISTRY.
+        if (b.kind === 'hinders') {
+          const Fig = FIGURE_REGISTRY[b.fid];
+          return (
+            <Sequence key={i} from={Math.round(b.start * fps)} durationInFrames={dur} name={`figure-${i}-${b.fid}`}>
+              {Fig ? <Fig lane={b.lane} dur={dur} /> : null}
+            </Sequence>
+          );
+        }
         return (
           <Sequence key={i} from={Math.round(b.start * fps)} durationInFrames={dur} name={`figure-${i}`}>
             <FigureScene dur={dur}>
@@ -406,6 +440,16 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                 {b.kind === 'hallladder' && <HallEquityLadder dur={dur} showAmounts={b.showAmounts} />}
                 {b.kind === 'splitladder' && <SplitLadder dur={dur} />}
                 {b.kind === 'oralargtally' && <OralArgQuestionTally dur={dur} />}
+                {/* EP34 rolin (aircash) bespoke figures */}
+                {b.kind === 'cashstack' && <CashStack dur={dur} amount={b.amount} caption={b.caption} />}
+                {b.kind === 'burdenflip' && <BurdenFlipScale dur={dur} chipMain={b.chipMain} chipSub={b.chipSub} />}
+                {b.kind === 'signswap' && (
+                  <SignSwapMorph dur={dur} fromLabel={b.fromLabel} toLabel={b.toLabel} counterBase={b.counterBase} counterRate={b.counterRate} />
+                )}
+                {b.kind === 'xrayscan' && <CarryOnXrayScan dur={dur} caption={b.caption} />}
+                {b.kind === 'convergemap' && <CheckpointConvergeMap dur={dur} />}
+                {b.kind === 'thresholdmeter' && <ReportThresholdMeter dur={dur} />}
+                {b.kind === 'returnledger' && <ReturnLedgerMotion dur={dur} caption={b.caption} />}
               </Drift>
             </FigureScene>
           </Sequence>
