@@ -27,21 +27,24 @@ random.seed(1234)
 bpy.ops.wm.read_factory_settings(use_empty=True)
 scene = bpy.context.scene; coll = scene.collection
 
-scene.render.engine = 'CYCLES'
-prefs = bpy.context.preferences.addons['cycles'].preferences
-picked = 'CPU'
-for dt in ['OPTIX', 'CUDA', 'HIP', 'ONEAPI']:
-    try:
-        prefs.compute_device_type = dt; prefs.get_devices()
-        if any(d.type != 'CPU' for d in prefs.devices):
-            for d in prefs.devices: d.use = True
-            scene.cycles.device = 'GPU'; picked = dt; break
-    except Exception as e:
-        print('gpu try', dt, e)
-print('CYCLES device =', picked)
-scene.cycles.samples = SAMPLES; scene.cycles.use_denoising = True
-try: scene.cycles.caustics_reflective = False; scene.cycles.caustics_refractive = False
-except Exception: pass
+# ---- engine: EEVEE Next (SUPER-HEAVY fallback per ANIMATION_ASSETS §2.2; logged) ----
+_engs = [e.identifier for e in bpy.types.RenderSettings.bl_rna.properties['engine'].enum_items]
+for _c in ['BLENDER_EEVEE_NEXT', 'BLENDER_EEVEE']:
+    if _c in _engs:
+        scene.render.engine = _c; break
+print('ENGINE =', scene.render.engine)
+ee = scene.eevee
+for _a, _v in [('taa_render_samples', SAMPLES), ('use_raytracing', True), ('use_ssr', True),
+               ('use_gtao', True), ('use_shadows', True), ('use_volumetric_shadows', True)]:
+    if hasattr(ee, _a):
+        try: setattr(ee, _a, _v)
+        except Exception as _e: print('eevee skip', _a, _e)
+if hasattr(ee, 'volumetric_samples'):
+    try: ee.volumetric_samples = 64
+    except Exception: pass
+if hasattr(ee, 'ray_tracing_options'):
+    try: ee.ray_tracing_options.use_denoise = True
+    except Exception: pass
 scene.render.resolution_x = RX; scene.render.resolution_y = RY; scene.render.resolution_percentage = 100
 scene.render.fps = 30; scene.frame_start, scene.frame_end = FS, FE
 scene.view_settings.view_transform = 'AgX'
@@ -90,23 +93,25 @@ SX, SY, SZ = 3.0, 0.9, 0.34
 slab_objs = []
 for i in range(SLABS):
     z = FLOOR_Z + SZ / 2 + i * (SZ + 0.02)
-    bpy.ops.mesh.primitive_cube_add(location=(0, 0, z))
+    lean = i * 0.13   # progressive lean -> top-heavy UNSTABLE stack (reliable topple)
+    bpy.ops.mesh.primitive_cube_add(location=(lean, (random.random() - 0.5) * 0.06, z))
     s = bpy.context.object; s.name = 'slab_%02d' % i
+    s.rotation_euler = (0, 0, (random.random() - 0.5) * 0.10)
     s.scale = (SX / 2, SY / 2, SZ / 2)
     bev = s.modifiers.new('bev', 'BEVEL'); bev.width = 0.02; bev.segments = 2
     m, b = new_mat('slab_%02d' % i)
     set_in(b, 'Base Color', (0.06, 0.12, 0.22, 1)); set_in(b, 'Metallic', 0.2); set_in(b, 'Roughness', 0.32)
     emissive(b, ACC_HI, 0.9)
     s.data.materials.append(m)
-    rb(s, 'ACTIVE', 'BOX', mass=1.2)
+    rb(s, 'ACTIVE', 'BOX', mass=1.2, friction=0.18)
     slab_objs.append(s)
 
-# ---- WIND force field that topples the stack (strength 95 -> 0) ------------
-bpy.ops.object.effector_add(type='WIND', location=(-6, 0, FLOOR_Z + 1.5))
+# ---- WIND force field that topples the stack (strong, hits high for torque) --
+bpy.ops.object.effector_add(type='WIND', location=(-5, 0, FLOOR_Z + 2.4))
 wind = bpy.context.object; wind.name = 'wind'
 wind.rotation_euler = (0, math.radians(90), 0)   # blow along +X toward the stack
-wind.field.strength = 95.0
-wind.field.flow = 0.4
+wind.field.strength = 170.0
+wind.field.flow = 0.2
 
 # ---- rigidbody world + BAKE ----
 rw = scene.rigidbody_world
@@ -114,10 +119,10 @@ rw.substeps_per_frame = 20; rw.solver_iterations = 20
 rw.point_cache.frame_start = 1; rw.point_cache.frame_end = max(FE, FS)
 if FE > FS:
     # keyframe wind strength 95 -> 0 across frames 1..18 (topple, then stop pushing)
-    wind.field.strength = 95.0
+    wind.field.strength = 170.0
     wind.field.keyframe_insert('strength', frame=1)
     wind.field.strength = 0.0
-    wind.field.keyframe_insert('strength', frame=18)
+    wind.field.keyframe_insert('strength', frame=22)
 scene.frame_set(FS)
 try:
     bpy.ops.ptcache.bake_all(bake=True); print('BAKED', rw.point_cache.frame_start, '..', rw.point_cache.frame_end)
@@ -149,10 +154,10 @@ vnt.links.new(pv.outputs['Volume'], vnt.nodes.get('Material Output').inputs['Vol
 vol.data.materials.append(vm)
 
 # ---- camera push-in on the collapse ----
-LOOK = Vector((0.5, 0, FLOOR_Z + 0.9))
-CAM_START = Vector((3.0, -9.0, 1.6)); CAM_END = Vector((2.2, -6.6, 1.2))
+LOOK = Vector((1.2, 0, FLOOR_Z + 0.6))
+CAM_START = Vector((3.6, -11.5, 2.4)); CAM_END = Vector((3.0, -9.0, 1.7))
 cd = bpy.data.cameras.new('cam'); cam = bpy.data.objects.new('cam', cd); coll.objects.link(cam); scene.camera = cam
-cd.lens = 50; cd.dof.use_dof = True; cd.dof.aperture_fstop = 2.6
+cd.lens = 40; cd.dof.use_dof = True; cd.dof.aperture_fstop = 3.0
 cam.location = CAM_START; cam.rotation_euler = (LOOK - CAM_START).to_track_quat('-Z', 'Y').to_euler()
 cd.dof.focus_distance = (CAM_START - LOOK).length
 if FE > FS:

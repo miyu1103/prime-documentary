@@ -28,21 +28,24 @@ random.seed(1234)
 bpy.ops.wm.read_factory_settings(use_empty=True)
 scene = bpy.context.scene; coll = scene.collection
 
-scene.render.engine = 'CYCLES'
-prefs = bpy.context.preferences.addons['cycles'].preferences
-picked = 'CPU'
-for dt in ['OPTIX', 'CUDA', 'HIP', 'ONEAPI']:
-    try:
-        prefs.compute_device_type = dt; prefs.get_devices()
-        if any(d.type != 'CPU' for d in prefs.devices):
-            for d in prefs.devices: d.use = True
-            scene.cycles.device = 'GPU'; picked = dt; break
-    except Exception as e:
-        print('gpu try', dt, e)
-print('CYCLES device =', picked)
-scene.cycles.samples = SAMPLES; scene.cycles.use_denoising = True
-try: scene.cycles.caustics_reflective = False; scene.cycles.caustics_refractive = False
-except Exception: pass
+# ---- engine: EEVEE Next (SUPER-HEAVY fallback per ANIMATION_ASSETS §2.2; logged) ----
+_engs = [e.identifier for e in bpy.types.RenderSettings.bl_rna.properties['engine'].enum_items]
+for _c in ['BLENDER_EEVEE_NEXT', 'BLENDER_EEVEE']:
+    if _c in _engs:
+        scene.render.engine = _c; break
+print('ENGINE =', scene.render.engine)
+ee = scene.eevee
+for _a, _v in [('taa_render_samples', SAMPLES), ('use_raytracing', True), ('use_ssr', True),
+               ('use_gtao', True), ('use_shadows', True), ('use_volumetric_shadows', True)]:
+    if hasattr(ee, _a):
+        try: setattr(ee, _a, _v)
+        except Exception as _e: print('eevee skip', _a, _e)
+if hasattr(ee, 'volumetric_samples'):
+    try: ee.volumetric_samples = 64
+    except Exception: pass
+if hasattr(ee, 'ray_tracing_options'):
+    try: ee.ray_tracing_options.use_denoise = True
+    except Exception: pass
 scene.render.resolution_x = RX; scene.render.resolution_y = RY; scene.render.resolution_percentage = 100
 scene.render.fps = 30; scene.frame_start, scene.frame_end = FS, FE
 scene.view_settings.view_transform = 'AgX'
