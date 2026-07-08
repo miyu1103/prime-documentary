@@ -28,9 +28,10 @@
       "path": "remotion/public/hinders/hero_frozen_account.mp4",
       "technique": "Blender rigid-body ice fracture (120 shards, RB baked) -> Cycles ceiling glass",
       "rendered_frames": 60,
-      "mp4": {"frames": 60, "width": 1920, "height": 1080, "codec": "h264", "pix_fmt": "yuv420p", "bytes": 1772656},
-      "sha256": "4ca121cc817121a942804122753b6a2659e2b47097468eaa94a86863aaec3c99",
-      "visual_qc": "exposure fixed (was blown white): ice-fracture panel reads against dark bg. Polish: tail frames (~45+) go flat after shards fall away — film builder should favour the fracture window (f8-30).",
+      "shipped_range": "f1-34 (trimmed to the active-fracture window; flat post-fall tail f45-60 dropped at encode, no re-render)",
+      "mp4": {"frames": 34, "width": 1920, "height": 1080, "codec": "h264", "pix_fmt": "yuv420p", "bytes": 1356392},
+      "sha256": "bcca4f6a00f8b1d24bcee61fca4f3553bbc8cc81d9f9282a187a304897aa4b76",
+      "visual_qc": "exposure fixed (was blown white); trimmed to the shatter action — glass shards break off the frozen-account panel with motion blur, edges catching light on dark bg. Strong throughout.",
       "status": "present"
     },
     {
