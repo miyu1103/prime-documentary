@@ -13,6 +13,7 @@ import {MadoffPremium, madoffPremiumDurationInFrames} from './compositions/Madof
 import {TimbsPremium, timbsPremiumDurationInFrames} from './compositions/TimbsPremium';
 import {KeloPremium, keloPremiumDurationInFrames} from './compositions/KeloPremium';
 import {KeloThumbnailFrame} from './compositions/KeloThumbnailFrame';
+import {TylerThumbnailFrame} from './compositions/TylerThumbnailFrame';
 import {MahanoyPremium, mahanoyPremiumDurationInFrames} from './compositions/MahanoyPremium';
 import {ArbitrationPremium, arbitrationPremiumDurationInFrames} from './compositions/ArbitrationPremium';
 import {KingPremium, kingPremiumDurationInFrames} from './compositions/KingPremium';
@@ -41,6 +42,7 @@ import rodriguezFilm from './data/rodriguez_film.json';
 import cottonFilm from './data/cotton_film.json';
 import unlockFilm from './data/unlock_film.json';
 import forfeitureFilm from './data/forfeiture_film.json';
+import hindersFilm from './data/hinders_film.json';
 import hintonFilm from './data/hinton_film.json';
 import carsearchFilm from './data/carsearch_film.json';
 import {CarsearchThumbnail, CARSEARCH_THUMBS} from './compositions/CarsearchThumbnails';
@@ -80,6 +82,7 @@ import {SHORT31} from './data/short31';
 import {SHORT32} from './data/short32';
 import {SHORT33} from './data/short33';
 import {SHORT34} from './data/short34';
+import {SHORT35} from './data/short35';
 import {SHORT01} from './data/short01';
 import {SHORT02} from './data/short02';
 import {SHORT03} from './data/short03';
@@ -1120,6 +1123,39 @@ export const RemotionRoot: React.FC = () => {
       />
       <Still id="ShortThumb-short34-B" component={ShortThumb} width={1080} height={1920}
         defaultProps={{data: SHORT34, headline: 'NO CRIME.\nNO CASH BACK.', badge: 'AIRPORT', backgroundSrc: 'shorts/short34/short34_thumb.png'}} />
+      {/* ---- SHORT #35 Hinders (IRS structuring seizure) — PREMIUM ---- */}
+      <Composition
+        id="Short-short35-yt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT35, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT35, platform: 'yt' as const, depth: true}}
+      />
+      <Composition
+        id="Short-short35-tt"
+        component={Short}
+        durationInFrames={shortDurationInFrames(SHORT35, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={1080}
+        height={1920}
+        defaultProps={{data: SHORT35, platform: 'tiktok' as const, depth: true}}
+      />
+      <Still
+        id="ShortThumb-short35"
+        component={ShortThumb}
+        width={1080}
+        height={1920}
+        defaultProps={{
+          data: SHORT35,
+          headline: 'HER ACCOUNT\nSEIZED',
+          badge: 'NO CRIME',
+          backgroundSrc: 'shorts/short35/short35_thumb.png',
+        }}
+      />
+      <Still id="ShortThumb-short35-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT35, headline: 'UNDER $10K\n= SUSPICIOUS?', badge: 'IRS', backgroundSrc: 'shorts/short35/short35_thumb.png'}} />
       <Composition
         id="Short-short01-yt"
         component={Short}
@@ -1477,6 +1513,22 @@ export const RemotionRoot: React.FC = () => {
           defaultProps={{option}}
         />
       ))}
+      {/* EP35 hinders — assembled from scene_plan (figures/heroes wired). Placeholder timing
+          until the audio thread's narration lands; re-run build_hinders_film.py to stamp seconds. */}
+      <Composition
+        id="Ep35Hinders"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(hindersFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: hindersFilm as unknown as FilmData,
+          seriesLabel: 'THEY FOLLOWED THE RULES',
+          title: 'Following the Rule',
+          subtitle: 'United States v. $32,820.56 (civil forfeiture / IRS structuring)',
+        }}
+      />
       <Composition
         id="CaseFilm-forfeiture"
         component={CaseFilm}
@@ -1778,6 +1830,27 @@ export const RemotionRoot: React.FC = () => {
           badge: 'FOR A DEVELOPER',
           variant: 'taken' as const,
         }}
+      />
+      <Still
+        id="TylerThumbnail-A-disproportion"
+        component={TylerThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{variant: 'disproportion' as const}}
+      />
+      <Still
+        id="TylerThumbnail-B-surplus"
+        component={TylerThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{variant: 'surplus' as const}}
+      />
+      <Still
+        id="TylerThumbnail-C-legal"
+        component={TylerThumbnailFrame}
+        width={BRAND.thumb.width}
+        height={BRAND.thumb.height}
+        defaultProps={{variant: 'legal' as const}}
       />
       <Still
         id="KingThumbnailFrame"
