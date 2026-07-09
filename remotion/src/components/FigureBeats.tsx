@@ -324,14 +324,18 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
     <>
       {beats.map((b, i) => {
         const dur = Math.max(1, Math.round((b.end - b.start) * fps));
-        // EP35 hinders: self-contained figures render bare — NO SceneBed/FigureScene/Drift wrapper
-        // (its sinusoidal drift is banned by the EP35 manifest; these figures carry their own
-        // reveal + sustained motion + backdrop). Addressed by design F-id via FIGURE_REGISTRY.
+        // EP35 hinders: bespoke figures (opaque, own backdrop). They go through the SAME
+        // FigureScene + Drift freeze-mitigation wrapper as every other figure — a whole-frame
+        // ken-burns + drift that keeps the frame moving across the (6-14s) beat so held hero
+        // frames + settled figures never trip the animation_density near-still gate. (SceneBed
+        // is skipped: these figures are opaque, so the moving-cut scrim would be hidden anyway.)
         if (b.kind === 'hinders') {
           const Fig = FIGURE_REGISTRY[b.fid];
           return (
             <Sequence key={i} from={Math.round(b.start * fps)} durationInFrames={dur} name={`figure-${i}-${b.fid}`}>
-              {Fig ? <Fig lane={b.lane} dur={dur} /> : null}
+              <FigureScene dur={dur}>
+                <Drift>{Fig ? <Fig lane={b.lane} dur={dur} /> : null}</Drift>
+              </FigureScene>
             </Sequence>
           );
         }
