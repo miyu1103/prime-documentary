@@ -202,6 +202,17 @@ def key_graphic_to_figure(component: str, props: dict):
     PinDropMap->pindropmap, RouteMap->routemap, RegionHighlightMap->regionmap)."""
     props = props or {}
     c = (component or "").strip()
+    # tyler (EP33) bespoke FigureBeats — §5 new components not in motionkit.
+    if c == "EquityTheftTally":
+        return ("equitytheft", {})
+    if c == "GovtArgumentCard":
+        return ("govtargument", {"mode": str(props.get("mode", "collapse")).strip().lower()})
+    if c == "HallEquityLadder":
+        return ("hallladder", {"showAmounts": bool(props.get("showAmounts", False))})
+    if c == "SplitLadder":
+        return ("splitladder", {})
+    if c == "OralArgQuestionTally":
+        return ("oralargtally", {})
     if c == "BrightLine":
         return ("brightline", {"mode": _brightline_mode(props)})
     if c == "CarCutaway":
@@ -341,6 +352,27 @@ def build_span_time_windows(chunks: list, chapters: list) -> dict:
             ws = s0 + (p / P) * rng
             we = ws + (1.0 / P) * rng
             windows[str(sid)] = (ws, we)
+    # Augment (rolin+): narration chunks may carry an explicit `span_id` whose `section` label uses
+    # a taxonomy that does NOT normalize to the annotated chapter_id/title (e.g. COLD_OPEN_STORY vs
+    # act1), so the section-alignment above places nothing. The chunk `span_id` is the authoritative
+    # per-span anchor, so derive an exact [min start, max end] window directly from the chunks for
+    # any span the section pass did not already place. Purely additive: setdefault never overrides a
+    # section-aligned window, so episodes whose sections DO match the chapters (carsearch: HOOK/ACT I
+    # ..IV/ENDING) are byte-for-byte unchanged; episodes whose sections diverge (rolin) get correct,
+    # tighter per-span windows straight from the voiced chunk boundaries.
+    by_span: dict = {}
+    for ch in chunks:
+        sid = str(ch.get("span_id") or "")
+        if not sid:
+            continue
+        s = float(ch["start"]); e = float(ch["end"])
+        if sid in by_span:
+            lo, hi = by_span[sid]
+            by_span[sid] = (min(lo, s), max(hi, e))
+        else:
+            by_span[sid] = (s, e)
+    for sid, (s, e) in by_span.items():
+        windows.setdefault(sid, (s, e))
     return windows
 
 
@@ -374,6 +406,12 @@ FIG_DUR = {
     "acttitle": 6.0,
     "pindropmap": 7.5,
     "routemap": 7.5,
+    # tyler (EP33) bespoke figures
+    "equitytheft": 8.0,     # hero-companion — national tally reads long
+    "govtargument": 8.0,    # hero-companion — the collapse payoff
+    "hallladder": 7.5,
+    "splitladder": 7.0,
+    "oralargtally": 7.0,
 }
 FIG_DUR_DEFAULT = 6.0
 KIN_STYLES = ["maskslide", "wordpop", "emphasis"]   # rotate for variety across spans
