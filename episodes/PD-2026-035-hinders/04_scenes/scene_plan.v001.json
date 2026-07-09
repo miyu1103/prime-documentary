@@ -5,7 +5,9 @@
   "source_script": "03_script/script.en.v001.md",
   "binding": [
     "EP35_hinders_ANIMATION_ASSETS.v001.md",
-    "claims.v001.json"
+    "claims.v001.json",
+    "remotion_plan.v001.json",
+    "hinders_film.json (render truth)"
   ],
   "timing_note": "ORDINAL plan. cut/caption seconds are narration-derived (voice_plan.v001 -> narration_index, audio thread's lane). The film builder fills exact seconds once narration_index lands; captions carry verbatim VO and are re-timed to the master.",
   "assets": {
@@ -91,7 +93,23 @@
       "image_hint": "deposit-slip close-up, pen under the ten-thousand line",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "depth_treatment: DepthImageV parallax ON (3 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S001-hinders-still",
+        "COD-S002-hinders-still",
+        "COD-S003-hinders-still",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-under-10-000",
+        "KIN-no-crime-no-charge"
+      ],
+      "script_span_ids": [
+        "SPN-0001"
+      ]
     },
     {
       "scene_id": "S002",
@@ -116,7 +134,27 @@
       "image_hint": "bank-ledger motif backdrop",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S004-hinders-still",
+        "COD-S005-hinders-still",
+        "COD-S006-hinders-still",
+        "COD-S007-hinders-still",
+        "COD-S008-hinders-still",
+        "COD-S009-hinders-still",
+        "COD-S010-hinders-still",
+        "COD-S011-hinders-still",
+        "COD-S012-hinders-still",
+        "KIN-following-the-rule"
+      ],
+      "script_span_ids": [
+        "SPN-0002"
+      ]
     },
     {
       "scene_id": "S003",
@@ -144,7 +182,31 @@
       "image_hint": "modest diner exterior off a lakes road; register; cash bag",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F1 NumberTicker — number-wheel decel + near-bills/far-kitchen parallax.",
+        "depth_treatment: DepthImageV parallax ON (9 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S013-hinders-still",
+        "COD-S014-hinders-still",
+        "COD-S015-hinders-still",
+        "COD-S016-hinders-still",
+        "COD-S017-hinders-still",
+        "COD-S018-hinders-still",
+        "COD-S019-hinders-still",
+        "COD-S020-hinders-still",
+        "COD-S021-hinders-still",
+        "GFX-F1-NumberTicker",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-38-years",
+        "KIN-mrs-lady-s"
+      ],
+      "script_span_ids": [
+        "SPN-0003"
+      ]
     },
     {
       "scene_id": "S004",
@@ -173,7 +235,29 @@
       "image_hint": "teller screen with a currency transaction report; 1970 ledger stamp",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "HERO motion surface #1 = F2 BSAOriginFlow money-flow (hero fluid)",
+        "FigureBeat: F2 RouteMap — fluid stream flows down and a branch drips toward the small store. HERO #1.",
+        "depth_treatment: DepthImageV parallax ON (5 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S022-hinders-still",
+        "COD-S023-hinders-still",
+        "COD-S024-hinders-still",
+        "COD-S025-hinders-still",
+        "COD-S026-hinders-still",
+        "GFX-F2-RouteMap",
+        "DEPTH-DepthImageV-parallax",
+        "FTG-hero_bsa_flow",
+        "KIN-the-bank-files-this-not-you",
+        "KIN-1970"
+      ],
+      "script_span_ids": [
+        "SPN-0004"
+      ]
     },
     {
       "scene_id": "S005",
@@ -202,7 +286,29 @@
       "image_hint": "statute splitting into two branches",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F2b CaseTimeline — deposit column repeats under the $10k line; 'staying small = the offense' fills in.",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S027-hinders-still",
+        "COD-S028-hinders-still",
+        "COD-S029-hinders-still",
+        "COD-S030-hinders-still",
+        "COD-S031-hinders-still",
+        "COD-S032-hinders-still",
+        "COD-S033-hinders-still",
+        "COD-S034-hinders-still",
+        "GFX-F2b-CaseTimeline",
+        "KIN-1970-1986",
+        "KIN-keeping-it-small-the-crime-5324"
+      ],
+      "script_span_ids": [
+        "SPN-0005"
+      ]
     },
     {
       "scene_id": "S006",
@@ -229,7 +335,30 @@
       "image_hint": "row of small deposits below a threshold line",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F2b CaseTimeline — deposit column repeats under the $10k line; 'staying small = the offense' fills in.",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S035-hinders-still",
+        "COD-S036-hinders-still",
+        "COD-S037-hinders-still",
+        "COD-S038-hinders-still",
+        "COD-S039-hinders-still",
+        "COD-S040-hinders-still",
+        "COD-S041-hinders-still",
+        "COD-S042-hinders-still",
+        "COD-S043-hinders-still",
+        "COD-S044-hinders-still",
+        "GFX-F2b-CaseTimeline",
+        "KIN-structuring"
+      ],
+      "script_span_ids": [
+        "SPN-0006"
+      ]
     },
     {
       "scene_id": "S007",
@@ -257,7 +386,35 @@
       "image_hint": "deposit-by-day bar chart circled in red",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "HERO motion surface #2 = F3 ThresholdMeter gauge glow travel",
+        "FigureBeat: F3 ProbableCauseMeter — deposit blocks stack toward the $10k line; gauge glow travels after completion. HERO #2.",
+        "depth_treatment: DepthImageV parallax ON (12 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S045-hinders-still",
+        "COD-S046-hinders-still",
+        "COD-S047-hinders-still",
+        "COD-S048-hinders-still",
+        "COD-S049-hinders-still",
+        "COD-S050-hinders-still",
+        "COD-S051-hinders-still",
+        "COD-S052-hinders-still",
+        "COD-S053-hinders-still",
+        "COD-S054-hinders-still",
+        "COD-S055-hinders-still",
+        "COD-S056-hinders-still",
+        "GFX-F3-ProbableCauseMeter",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-10-000-reporting-threshold",
+        "KIN-a-plan"
+      ],
+      "script_span_ids": [
+        "SPN-0007"
+      ]
     },
     {
       "scene_id": "S008",
@@ -285,7 +442,26 @@
       "image_hint": "old ledger in a mother's hand; faint statute scroll",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F4 ProbableCauseMeter — a crack propagates along the line then push-transitions within 0.5s.",
+        "depth_treatment: DepthImageV parallax ON (5 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S057-hinders-still",
+        "COD-S058-hinders-still",
+        "COD-S059-hinders-still",
+        "COD-S060-hinders-still",
+        "COD-S061-hinders-still",
+        "GFX-F4-ProbableCauseMeter",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-the-law-was-watching-the-entire-time"
+      ],
+      "script_span_ids": [
+        "SPN-0008"
+      ]
     },
     {
       "scene_id": "S009",
@@ -313,7 +489,29 @@
       "image_hint": "account balance draining to zero with SEIZED overlay",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "HERO motion surface #3 = F5 FrozenAccount ice-crack + count-up (hero)",
+        "FigureBeat: F5 NumberTicker — ice cracks propagate + near-passbook parallax; the exact seized balance counts up. HERO #3.",
+        "depth_treatment: DepthImageV parallax ON (5 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S062-hinders-still",
+        "COD-S063-hinders-still",
+        "COD-S064-hinders-still",
+        "COD-S065-hinders-still",
+        "COD-S066-hinders-still",
+        "GFX-F5-NumberTicker",
+        "DEPTH-DepthImageV-parallax",
+        "FTG-hero_frozen_account",
+        "KIN-32-820-56",
+        "KIN-seized"
+      ],
+      "script_span_ids": [
+        "SPN-0009"
+      ]
     },
     {
       "scene_id": "S010",
@@ -340,7 +538,23 @@
       "image_hint": "CHARGES: NONE card; padlocked account; unpaid invoices",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S001-hinders-still",
+        "COD-S002-hinders-still",
+        "COD-S003-hinders-still",
+        "COD-S067-hinders-still",
+        "COD-S068-hinders-still",
+        "KIN-charges-none"
+      ],
+      "script_span_ids": [
+        "SPN-0010"
+      ]
     },
     {
       "scene_id": "S011",
@@ -367,7 +581,34 @@
       "image_hint": "court caption with a dollar figure as defendant",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F6 CitationLowerThird — case name reveals one word at a time over an empty-defendant-seat parallax.",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S004-hinders-still",
+        "COD-S005-hinders-still",
+        "COD-S006-hinders-still",
+        "COD-S007-hinders-still",
+        "COD-S008-hinders-still",
+        "COD-S009-hinders-still",
+        "COD-S010-hinders-still",
+        "COD-S011-hinders-still",
+        "COD-S012-hinders-still",
+        "COD-S013-hinders-still",
+        "COD-S014-hinders-still",
+        "COD-S015-hinders-still",
+        "COD-S016-hinders-still",
+        "COD-S017-hinders-still",
+        "GFX-F6-CitationLowerThird",
+        "KIN-united-states-v-32-820-56-in-u-s-currenc"
+      ],
+      "script_span_ids": [
+        "SPN-0011"
+      ]
     },
     {
       "scene_id": "S012",
@@ -394,7 +635,28 @@
       "image_hint": "scales of justice flipping; owner vs federal seal",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F5b ProbableCauseMeter — the burden-of-proof scale rotates from government to citizen; 'PROVE IT INNOCENT' fills.",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S018-hinders-still",
+        "COD-S019-hinders-still",
+        "COD-S020-hinders-still",
+        "COD-S021-hinders-still",
+        "COD-S022-hinders-still",
+        "COD-S023-hinders-still",
+        "COD-S024-hinders-still",
+        "COD-S025-hinders-still",
+        "GFX-F5b-ProbableCauseMeter",
+        "KIN-prove-it-innocent"
+      ],
+      "script_span_ids": [
+        "SPN-0012"
+      ]
     },
     {
       "scene_id": "S013",
@@ -421,7 +683,24 @@
       "image_hint": "loop diagram; anonymous owner leaving",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F7 ActTitle — a row of owners greys out one by one (the quiet engine).",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S026-hinders-still",
+        "COD-S027-hinders-still",
+        "COD-S028-hinders-still",
+        "COD-S029-hinders-still",
+        "GFX-F7-ActTitle",
+        "KIN-seized-lawyer-costs-walk-away-permanent"
+      ],
+      "script_span_ids": [
+        "SPN-0013"
+      ]
     },
     {
       "scene_id": "S014",
@@ -449,7 +728,35 @@
       "image_hint": "Treasury seal; STRUCTURING SEIZURES file boxes",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F8 ProbableCauseMeter — bar rotates; an underline sweeps left to right (presumption inverted).",
+        "depth_treatment: — (scan scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S030-hinders-still",
+        "COD-S031-hinders-still",
+        "COD-S032-hinders-still",
+        "COD-S033-hinders-still",
+        "COD-S034-hinders-still",
+        "COD-S035-hinders-still",
+        "COD-S036-hinders-still",
+        "COD-S037-hinders-still",
+        "COD-S038-hinders-still",
+        "COD-S039-hinders-still",
+        "COD-S040-hinders-still",
+        "COD-S041-hinders-still",
+        "COD-S042-hinders-still",
+        "COD-S043-hinders-still",
+        "GFX-F8-ProbableCauseMeter",
+        "KIN-structuring-seizures",
+        "KIN-coming"
+      ],
+      "script_span_ids": [
+        "SPN-0014"
+      ]
     },
     {
       "scene_id": "S015",
@@ -476,7 +783,27 @@
       "image_hint": "bank statement with deposits ringed; silhouette beside a case number",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F9 ActTitle — coin lands, wobbles, then whip-transitions within 0.5s.",
+        "depth_treatment: DepthImageV parallax ON (6 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S044-hinders-still",
+        "COD-S045-hinders-still",
+        "COD-S046-hinders-still",
+        "COD-S047-hinders-still",
+        "COD-S048-hinders-still",
+        "COD-S049-hinders-still",
+        "GFX-F9-ActTitle",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-no-theft-no-drugs-no-victim"
+      ],
+      "script_span_ids": [
+        "SPN-0015"
+      ]
     },
     {
       "scene_id": "S016",
@@ -504,7 +831,28 @@
       "image_hint": "newspaper front page; newsstands; phone screens",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F10 QuoteCard — the NYT front-page headline reveals word by word, receding into the page.",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S050-hinders-still",
+        "COD-S051-hinders-still",
+        "COD-S052-hinders-still",
+        "COD-S053-hinders-still",
+        "COD-S054-hinders-still",
+        "COD-S055-hinders-still",
+        "COD-S056-hinders-still",
+        "GFX-F10-QuoteCard",
+        "KIN-law-lets-i-r-s-seize-accounts-on-suspici",
+        "KIN-oct-25-2014"
+      ],
+      "script_span_ids": [
+        "SPN-0016"
+      ]
     },
     {
       "scene_id": "S017",
@@ -535,7 +883,34 @@
       "image_hint": "IJ case file; policy-change memo; DISMISSED stamp",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "HERO motion surface #4 = F11 PolicyReversalTimeline playhead glide",
+        "FigureBeat: F11 CaseTimeline — playhead glides right; a 'WITHOUT PREJUDICE' node persists through Act4. HERO #4.",
+        "depth_treatment: DepthImageV parallax ON (10 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S057-hinders-still",
+        "COD-S058-hinders-still",
+        "COD-S059-hinders-still",
+        "COD-S060-hinders-still",
+        "COD-S061-hinders-still",
+        "COD-S062-hinders-still",
+        "COD-S063-hinders-still",
+        "COD-S064-hinders-still",
+        "COD-S065-hinders-still",
+        "COD-S066-hinders-still",
+        "GFX-F11-CaseTimeline",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-policy-change-legal-source-cases",
+        "KIN-dismissed-funds-returned",
+        "KIN-on-paper"
+      ],
+      "script_span_ids": [
+        "SPN-0017"
+      ]
     },
     {
       "scene_id": "S018",
@@ -562,7 +937,38 @@
       "image_hint": "dismissal order zooming to WITHOUT PREJUDICE",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F12 ProbableCauseMeter — two stacks slide in and collide; returned funds push back +/-10px.",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S001-hinders-still",
+        "COD-S002-hinders-still",
+        "COD-S003-hinders-still",
+        "COD-S004-hinders-still",
+        "COD-S005-hinders-still",
+        "COD-S006-hinders-still",
+        "COD-S007-hinders-still",
+        "COD-S008-hinders-still",
+        "COD-S009-hinders-still",
+        "COD-S010-hinders-still",
+        "COD-S011-hinders-still",
+        "COD-S012-hinders-still",
+        "COD-S013-hinders-still",
+        "COD-S014-hinders-still",
+        "COD-S015-hinders-still",
+        "COD-S016-hinders-still",
+        "COD-S067-hinders-still",
+        "COD-S068-hinders-still",
+        "GFX-F12-ProbableCauseMeter",
+        "KIN-without-prejudice"
+      ],
+      "script_span_ids": [
+        "SPN-0018"
+      ]
     },
     {
       "scene_id": "S019",
@@ -589,7 +995,22 @@
       "image_hint": "one lit front page among dark account icons; memo card",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F13 CitationLowerThird — two words land (zoompunch); underline sweeps left to right.",
+        "depth_treatment: — (scan scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S017-hinders-still",
+        "COD-S018-hinders-still",
+        "GFX-F13-CitationLowerThird",
+        "KIN-agency-policy-not-law"
+      ],
+      "script_span_ids": [
+        "SPN-0019"
+      ]
     },
     {
       "scene_id": "S020",
@@ -616,7 +1037,39 @@
       "image_hint": "cracked THE END card; memo blowing across a map",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S019-hinders-still",
+        "COD-S020-hinders-still",
+        "COD-S021-hinders-still",
+        "COD-S022-hinders-still",
+        "COD-S023-hinders-still",
+        "COD-S024-hinders-still",
+        "COD-S025-hinders-still",
+        "COD-S026-hinders-still",
+        "COD-S027-hinders-still",
+        "COD-S028-hinders-still",
+        "COD-S029-hinders-still",
+        "COD-S030-hinders-still",
+        "COD-S031-hinders-still",
+        "COD-S032-hinders-still",
+        "COD-S033-hinders-still",
+        "COD-S034-hinders-still",
+        "COD-S035-hinders-still",
+        "COD-S036-hinders-still",
+        "COD-S037-hinders-still",
+        "COD-S038-hinders-still",
+        "COD-S039-hinders-still",
+        "KIN-the-end"
+      ],
+      "script_span_ids": [
+        "SPN-0020"
+      ]
     },
     {
       "scene_id": "S021",
@@ -647,7 +1100,27 @@
       "image_hint": "rural NC convenience store; counter of small sales",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "HERO motion surface #5 = F14 McLellanParallel Iowa|NC 3D split",
+        "FigureBeat: F14 PinDropMap — left Iowa / right NC split open with dual parallax + red marker. HERO #5.",
+        "depth_treatment: DepthImageV parallax ON (3 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S040-hinders-still",
+        "COD-S041-hinders-still",
+        "COD-S042-hinders-still",
+        "GFX-F14-PinDropMap",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-107-702-66-seized",
+        "KIN-301-deposits",
+        "KIN-2m-3-yrs"
+      ],
+      "script_span_ids": [
+        "SPN-0021"
+      ]
     },
     {
       "scene_id": "S022",
@@ -676,7 +1149,30 @@
       "image_hint": "two case cards side by side; ledger grid",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "HERO motion surface #6 = F14b McLellanLedger 301-instanced ledger",
+        "FigureBeat: F14b NumberTicker — 301 deposits light up in sequence; ~$2M counts up; year labels scroll. HERO #6.",
+        "depth_treatment: DepthImageV parallax ON (7 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S043-hinders-still",
+        "COD-S044-hinders-still",
+        "COD-S045-hinders-still",
+        "COD-S046-hinders-still",
+        "COD-S047-hinders-still",
+        "COD-S048-hinders-still",
+        "COD-S049-hinders-still",
+        "GFX-F14b-NumberTicker",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-301-deposits",
+        "KIN-same-law-same-claim"
+      ],
+      "script_span_ids": [
+        "SPN-0022"
+      ]
     },
     {
       "scene_id": "S023",
@@ -703,7 +1199,35 @@
       "image_hint": "FOR SALE sign on the diner; shuttered storefront",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F14c ActTitle — dolly back-to-front, small-transaction register cells light up.",
+        "depth_treatment: DepthImageV parallax ON (14 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S050-hinders-still",
+        "COD-S051-hinders-still",
+        "COD-S052-hinders-still",
+        "COD-S053-hinders-still",
+        "COD-S054-hinders-still",
+        "COD-S055-hinders-still",
+        "COD-S056-hinders-still",
+        "COD-S057-hinders-still",
+        "COD-S058-hinders-still",
+        "COD-S059-hinders-still",
+        "COD-S060-hinders-still",
+        "COD-S061-hinders-still",
+        "COD-S062-hinders-still",
+        "COD-S063-hinders-still",
+        "GFX-F14c-ActTitle",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-for-sale"
+      ],
+      "script_span_ids": [
+        "SPN-0023"
+      ]
     },
     {
       "scene_id": "S024",
@@ -734,7 +1258,35 @@
       "image_hint": "data panel: 278 -> 91% legal source",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "HERO motion surface #7 = F15 TIGTA-Dots 278-point compose + 91% flip",
+        "FigureBeat: F15 NumberTicker — 278 dots assemble; 91% wave-flip to green; slow parallax after. HERO #7.",
+        "FigureBeat: F15b NumberTicker (secondary)",
+        "depth_treatment: DepthImageV parallax ON (9 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S001-hinders-still",
+        "COD-S002-hinders-still",
+        "COD-S003-hinders-still",
+        "COD-S004-hinders-still",
+        "COD-S064-hinders-still",
+        "COD-S065-hinders-still",
+        "COD-S066-hinders-still",
+        "COD-S067-hinders-still",
+        "COD-S068-hinders-still",
+        "GFX-F15-NumberTicker",
+        "GFX-F15b-NumberTicker",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-278-traceable-cases",
+        "KIN-91-legal-source",
+        "KIN-231-cases-17-1m"
+      ],
+      "script_span_ids": [
+        "SPN-0024"
+      ]
     },
     {
       "scene_id": "S025",
@@ -763,7 +1315,28 @@
       "image_hint": "2016 appeals ruling; red legal-bill total",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F16 CitationLowerThird — suspended card lands; half-green/half-grey boundary sweeps left to right.",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S005-hinders-still",
+        "COD-S006-hinders-still",
+        "COD-S007-hinders-still",
+        "COD-S008-hinders-still",
+        "COD-S009-hinders-still",
+        "COD-S010-hinders-still",
+        "COD-S011-hinders-still",
+        "GFX-F16-CitationLowerThird",
+        "KIN-not-substantially-prevailed-no-fees",
+        "KIN-2016"
+      ],
+      "script_span_ids": [
+        "SPN-0025"
+      ]
     },
     {
       "scene_id": "S026",
@@ -791,7 +1364,33 @@
       "image_hint": "split comparison card, two outcomes",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F17b ActTitle — McLellan 'FEES PAID' / Carole 'FEES DENIED' two-row contrast; fill bars extend (L5 payoff).",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S012-hinders-still",
+        "COD-S013-hinders-still",
+        "COD-S014-hinders-still",
+        "COD-S015-hinders-still",
+        "COD-S016-hinders-still",
+        "COD-S017-hinders-still",
+        "COD-S018-hinders-still",
+        "COD-S019-hinders-still",
+        "COD-S020-hinders-still",
+        "COD-S021-hinders-still",
+        "COD-S022-hinders-still",
+        "COD-S023-hinders-still",
+        "GFX-F17b-ActTitle",
+        "KIN-mclellan-fees-costs-interest",
+        "KIN-carole-nothing"
+      ],
+      "script_span_ids": [
+        "SPN-0026"
+      ]
     },
     {
       "scene_id": "S027",
@@ -821,7 +1420,42 @@
       "image_hint": "congressional hearing room; anonymous witnesses; clock icon",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F18 ActTitle — hearing room, witness table, empty silhouettes; papers turn.",
+        "FigureBeat: F17 ActTitle (secondary)",
+        "depth_treatment: DepthImageV parallax ON (18 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S024-hinders-still",
+        "COD-S025-hinders-still",
+        "COD-S026-hinders-still",
+        "COD-S027-hinders-still",
+        "COD-S028-hinders-still",
+        "COD-S029-hinders-still",
+        "COD-S030-hinders-still",
+        "COD-S031-hinders-still",
+        "COD-S032-hinders-still",
+        "COD-S033-hinders-still",
+        "COD-S034-hinders-still",
+        "COD-S035-hinders-still",
+        "COD-S036-hinders-still",
+        "COD-S037-hinders-still",
+        "COD-S038-hinders-still",
+        "COD-S039-hinders-still",
+        "COD-S040-hinders-still",
+        "COD-S041-hinders-still",
+        "GFX-F18-ActTitle",
+        "GFX-F17-ActTitle",
+        "DEPTH-DepthImageV-parallax",
+        "KIN-still-on-the-books",
+        "KIN-hearings-2015"
+      ],
+      "script_span_ids": [
+        "SPN-0027"
+      ]
     },
     {
       "scene_id": "S028",
@@ -852,7 +1486,27 @@
       "image_hint": "2019 reform act card; 30-day hearing chip; closing door",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F19 CaseTimeline — final timeline node lights gold; spine does one confirming left-to-right scan.",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S042-hinders-still",
+        "COD-S043-hinders-still",
+        "COD-S044-hinders-still",
+        "COD-S045-hinders-still",
+        "COD-S046-hinders-still",
+        "GFX-F19-CaseTimeline",
+        "KIN-2019-reform-signed-july",
+        "KIN-30-day-hearing",
+        "KIN-legal-source-accounts-protected"
+      ],
+      "script_span_ids": [
+        "SPN-0028"
+      ]
     },
     {
       "scene_id": "S029",
@@ -881,7 +1535,35 @@
       "image_hint": "empty store interior; SOLD sign; hallway of open doors",
       "image_pool": [],
       "depth_required": true,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "HERO motion surface #8 = F20 CaroleAfterCard SOLD placard dolly (hero)",
+        "FigureBeat: F20 CitationLowerThird — empty diner interior -> 'SOLD' sign (L4 close); dolly back-to-front. HERO #8.",
+        "depth_treatment: DepthImageV parallax ON (11 stills this scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S047-hinders-still",
+        "COD-S048-hinders-still",
+        "COD-S049-hinders-still",
+        "COD-S050-hinders-still",
+        "COD-S051-hinders-still",
+        "COD-S052-hinders-still",
+        "COD-S053-hinders-still",
+        "COD-S054-hinders-still",
+        "COD-S055-hinders-still",
+        "COD-S056-hinders-still",
+        "COD-S057-hinders-still",
+        "GFX-F20-CitationLowerThird",
+        "DEPTH-DepthImageV-parallax",
+        "FTG-hero_carole_after",
+        "KIN-sold",
+        "KIN-the-hallway-is-still-open"
+      ],
+      "script_span_ids": [
+        "SPN-0029"
+      ]
     },
     {
       "scene_id": "S030",
@@ -910,7 +1592,31 @@
       "image_hint": "deposit-slip motif returns; pen lifts; next-case courtroom teaser",
       "image_pool": [],
       "depth_required": false,
-      "needs_human_review": false
+      "needs_human_review": false,
+      "continuity_refs": [
+        "FigureBeat: F21 ActTitle — playhead scan to end-card; next-arc open loop.",
+        "depth_treatment: — (card scene)",
+        "cut_cadence: ~2.32s (ForcefulCut push|slide|zoompunch|whip)",
+        "brand: canonical Bookends; no real-person likeness; symbolic reconstruction"
+      ],
+      "required_assets": [
+        "COD-S058-hinders-still",
+        "COD-S059-hinders-still",
+        "COD-S060-hinders-still",
+        "COD-S061-hinders-still",
+        "COD-S062-hinders-still",
+        "COD-S063-hinders-still",
+        "COD-S064-hinders-still",
+        "COD-S065-hinders-still",
+        "COD-S066-hinders-still",
+        "COD-S067-hinders-still",
+        "GFX-F21-ActTitle",
+        "KIN-whose-rules",
+        "KIN-that-is-next"
+      ],
+      "script_span_ids": [
+        "SPN-0030"
+      ]
     }
   ]
 }
