@@ -188,7 +188,10 @@ AMBIENCE_KEYWORDS: list[tuple[tuple[str, ...], str]] = [
     (("highway", "traffic", "aerial", "thousands of cars", "multi-lane", "shoulder"), "amb_highway_traffic.mp3"),
     (("rain", "wet asphalt", "rain-slick", "downpour", "storm"), "amb_rain_street.mp3"),
     (("engine", "idle", "motor", "pull over", "pulled over", "ignition"), "amb_engine_idle.mp3"),
-    (("wind", "breeze", "rustling", "open road", "field", "outdoor"), "amb_light_wind.mp3"),
+    # RETIRED amb_light_wind.mp3 everywhere: its broadband roar reads as a jet/airplane
+    # (owner flagged twice — 2026-07-06 ending, 2026-07-10 EP33 opening). Route outdoor/wind
+    # cues to the calm night-window bed instead so no section ever gets the "飛行機の音" bed.
+    (("wind", "breeze", "rustling", "open road", "field", "outdoor"), "amb_night_window.mp3"),
     (("courthouse", "supreme court", "courtroom", "bench", "marble", "verdict", "gavel", "justice"), "amb_courtroom_room_tone.mp3"),
     (("driveway", "porch", "home", "house", "suburban", "residential", "window", "curb", "dusk", "tarp"), "amb_night_window.mp3"),
     (("highway", "road", "street", "traffic", "shoulder", "stop", "sweep", "map"), "amb_tension_drone.mp3"),
@@ -204,8 +207,16 @@ CHAPTER_AMBIENCE_DEFAULT: dict[str, str] = {
     "act2":    "amb_institutional_drone.mp3", # probable-cause doctrine / diagrams
     "act3":    "amb_night_window.mp3",         # suburban driveway / the tarp
     "act4":    "amb_courtroom_room_tone.mp3", # map of rights / rulings
-    "ending":  "amb_light_wind.mp3",           # calm resolve at the curb
+    "ending":  "amb_night_window.mp3",         # calm indoor resolve for the CTA (bookends the hook).
+                                               # NOT amb_light_wind: its broadband roar read as a
+                                               # "飛行機の音みたいな変な音" under the outro (owner 2026-07-06).
 }
+
+# Chapters whose ambience bed is LOCKED to CHAPTER_AMBIENCE_DEFAULT and never overridden by keyword
+# matching. The Ending is the CTA/outro: its VO says "open road", which would otherwise trigger the
+# outdoor/wind bed (amb_light_wind) whose roar sounds like a jet under the quiet outro. The CTA tone
+# must be controlled, not driven by an incidental word.
+FORCED_DEFAULT_CHAPTERS = {"ending"}
 
 # ---- M4: one-shot SFX map (curated from build_case_sound_design) -----------
 # (keywords, filename, dur_hint_sec, linear_volume). First match wins; order matters.
@@ -623,6 +634,12 @@ def assign_ambience(spans: list[tuple[str, float, float, list[int]]],
     used: set[str] = set()
     assigned: dict[str, str] = {}
     for cid, _s, _e, _m in spans:
+        # Locked chapters (e.g. Ending/CTA) always use their controlled default bed, regardless of
+        # keyword hits or distinctness -- so an incidental word can't inject a roaring outdoor bed.
+        if cid in FORCED_DEFAULT_CHAPTERS and CHAPTER_AMBIENCE_DEFAULT.get(cid):
+            assigned[cid] = CHAPTER_AMBIENCE_DEFAULT[cid]
+            used.add(assigned[cid])
+            continue
         ranked = rank_beds(cid, text_by_chapter.get(cid, ""))
         pick = next((f for f in ranked if f not in used), None)
         if pick is None:  # all beds used -> allow reuse of top-ranked
@@ -725,15 +742,20 @@ def build_cues(beats: list[Beat], chunks: list[Chunk],
     unmapped: list[dict] = []
     n = 0
 
-    # chapter-cut transition whooshes (skip the very first chapter start at t=0)
+    # chapter-cut transition whooshes (skip the very first chapter start at t=0).
+    # ROTATE through the whoosh variant pool so consecutive chapter transitions never fire the
+    # IDENTICAL file — previously every chapter cut used sfx_whoosh_short.mp3 (6x), which read as
+    # "same sound repeating / few types" (owner 2026-07-06: 効果音の種類が少ない・違和感). Now each
+    # act transition gets a distinct whoosh variant.
+    base_fname, base_dur, base_vol = CHAPTER_CUT_SFX
     for cid, s, _e, _m in spans:
         if s <= 0.001:
             continue
-        fname, dur, vol = CHAPTER_CUT_SFX
         n += 1
+        fname = variant_of(base_fname, n)
         sfx.append(SfxCue(
             cue_id=f"L4-{n:03d}", file=f"sfx/{fname}", chapter_id=cid,
-            time=round3(s), dur=dur, volume=vol, gain_db=vol_to_db(vol),
+            time=round3(s), dur=base_dur, volume=base_vol, gain_db=vol_to_db(base_vol),
             source="chapter_cut", phrase=f"cut into {CHAPTER_TITLES.get(cid, cid)}",
             trigger="", timing="chapter_start"))
 
