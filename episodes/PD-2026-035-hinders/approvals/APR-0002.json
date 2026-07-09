@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0002",
+  "episode_id": "PD-2026-035-hinders",
+  "target_type": "edit",
+  "target_id": "acceptance_receipt",
+  "target_revision": "v003",
+  "decision": "approved_with_conditions",
+  "requested_at": "2026-07-10T08:50:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-07-10T08:50:00+09:00",
+  "decided_by": "owner",
+  "notes": "First-cut / edit acceptance of the finished EP35 film. The independent ship gate (scripts/check_final_acceptance.py) graded the muxed render remotion/out/PD-2026-035-hinders_film.muxed.v002.mp4 (video_sha256 sha256:dba8c8ea43a6bbfbe379c1c45011e234390c55bab726f5fc3b4a17bd67a8b3cc; receipt 09_package/acceptance_receipt.v003.json) at 37/39 hard gates PASS. The owner reviewed and ACCEPTED the two remaining hard failures as deviations on 2026-07-10: (1) runtime_band -- finished runtime 19.26 min vs the 19.5-20.5 min band, ~15s short; narration is 18.9 min and the padding gate forbids padding with silence, so reaching the band would require script expansion + re-voice; owner accepted 19.26 min (rule 19 names runtime_band as the one owner-approvable ship deviation). (2) padding -- the anti-padding gate counts 5 overlapping 7-grams from the seized amount $32,820.56 spoken twice, but the second mention is the literal civil-forfeiture case caption United States v. $32,820.56 (an in rem action named after the money), a factually mandated restatement, not clock-padding; owner accepted it as a false positive. All other quality gates (caption_sync p50 -0.180s / 0 dangling breaks, thumb_subject_luma outline 28px, footage_utilization 100%, preflight GREEN, 4-layer audio -13.6 LUFS, motion_energy 47.7, animation_density 0.7%, structure_4part, onscreen_text_verified, arc_nonrepeat, caption_coverage) PASS. Facts unchanged ($32,820.56 / $107,702.66 / 301 / 278 / 91% / 231 @ $17.1M). This approval covers the EDIT/first-cut acceptance ONLY. PUBLISH/scheduling is a SEPARATE gate (target_type=publish) and is NOT granted here; no upload has been scheduled.",
+  "conditions": [
+    "PUBLISH is not authorized by this record -- title/thumbnail final choice and public scheduling each still require their own owner approval (rules/16).",
+    "The two accepted deviations (runtime_band, padding) are bound to acceptance_receipt.v003 / video_sha256 dba8c8ea; any re-render invalidates them and re-acceptance is required (rules/12).",
+    "Selected thumbnail thumbnail.selected.v001.png is a mechanical default that passes the gates; the owner's title/thumbnail pair approval is still pending."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-035-hinders/09_package/acceptance_receipt.v003.json"
+}

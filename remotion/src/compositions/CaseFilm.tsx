@@ -34,7 +34,7 @@ import {BrandOpening, BrandEndcard, OPENING_SEC, ENDCARD_SEC} from '../component
 const {ink, navy, electric, white, silver, gold} = BRAND.color;
 // lifted from v003 (acceptance images_present flagged 98%-black crush on the darkest shots):
 // keep the noir mood but never let a shot fall to near-total black.
-const GRADE = 'brightness(0.82) contrast(1.06) saturate(0.9)';
+const GRADE = 'brightness(1.16) contrast(1.0) saturate(0.95)';
 
 export type Cut = {start: number; dur: number; kind: 'img' | 'footage'; src: string; treatment: string; seed: string};
 export type Caption = {start: number; end: number; text: string};
@@ -51,6 +51,11 @@ export type FilmData = {
   captions: Caption[];
   graphics: Beat[];
   figures?: FigureSpec[];
+  // Pre-composed Blender/3D "hero" videos (e.g. EP34 rolin L3 Cycles heroes). Each plays FULL-FRAME
+  // over its body window (no Ken-Burns / no startFrom — the mp4 is already the finished shot),
+  // above the graded body and below the captions. OPTIONAL: episodes without heroCuts (carsearch
+  // etc.) are unaffected (the map runs over []).
+  heroCuts?: {start: number; dur: number; src: string}[];
 };
 
 export const caseFilmDurationInFrames = (data: FilmData, fps: number) =>
@@ -86,7 +91,7 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: numbe
           height: '100%',
           objectFit: 'cover',
           transform: `translate(${x}px, ${y}px) scale(${s})`,
-          filter: 'brightness(0.8) contrast(1.12) saturate(0.7)',
+          filter: 'brightness(1.13) contrast(1.03) saturate(0.8)',
         }}
       />
       <AbsoluteFill style={{pointerEvents: 'none', backgroundColor: navy, opacity: 0.14, mixBlendMode: 'multiply'}} />
@@ -110,7 +115,7 @@ const BleedStill: React.FC<{src: string; seed: string; dir: number; dur: number}
   const fgS = interpolate(p, [0, 1], [1.07, 1.26]);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
-      <AbsoluteFill style={{transform: `translateX(${bgX}px) scale(1.34)`, filter: 'blur(22px) brightness(0.62)'}}>
+      <AbsoluteFill style={{transform: `translateX(${bgX}px) scale(1.34)`, filter: 'blur(22px) brightness(0.9)'}}>
         <Cover src={src} />
       </AbsoluteFill>
       <AbsoluteFill style={{transform: `translateX(${fgX}px) scale(${fgS})`, filter: GRADE}}>
@@ -138,14 +143,16 @@ const ScanStill: React.FC<{src: string; seed: string; dir: number; dur: number}>
   const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'} /* linear = constant velocity, never decelerates to near-still */);
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   const gy = interpolate(p, [0, 1], [0, 80]);
-  const lx = 50 + 26 * Math.sin(p * Math.PI * 2);
-  const ly = 40 + 12 * Math.cos(p * Math.PI * 2);
+  // light pool now drifts once across on a MONOTONIC diagonal (was a sin/cos orbit — owner
+  // 2026-07-06 disliked circling faint light). Constant velocity also keeps it clear of freezedetect.
+  const lx = interpolate(p, [0, 1], [34, 64]);
+  const ly = interpolate(p, [0, 1], [34, 52]);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
-      <AbsoluteFill style={{transform: `translate(${bgX}px, ${bgY}px) scale(1.34)`, filter: 'blur(22px) brightness(0.62)'}}>
+      <AbsoluteFill style={{transform: `translate(${bgX}px, ${bgY}px) scale(1.34)`, filter: 'blur(22px) brightness(0.9)'}}>
         <Cover src={src} />
       </AbsoluteFill>
-      <AbsoluteFill style={{transform: `translate(${fgX}px, ${fgY}px) scale(${fgS})`, filter: 'brightness(0.76) contrast(1.1) saturate(0.82)'}}>
+      <AbsoluteFill style={{transform: `translate(${fgX}px, ${fgY}px) scale(${fgS})`, filter: 'brightness(1.1) contrast(1.01) saturate(0.88)'}}>
         <Cover src={src} />
       </AbsoluteFill>
       <AbsoluteFill
@@ -173,10 +180,10 @@ const DuotoneStill: React.FC<{src: string; seed: string; dir: number; dur: numbe
   const vig = 0.9 + 0.1 * Math.sin(p * Math.PI * 2);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
-      <AbsoluteFill style={{transform: `translate(${bgX}px, ${bgY}px) scale(1.34)`, filter: 'blur(22px) brightness(0.5)'}}>
+      <AbsoluteFill style={{transform: `translate(${bgX}px, ${bgY}px) scale(1.34)`, filter: 'blur(22px) brightness(0.82)'}}>
         <Cover src={src} />
       </AbsoluteFill>
-      <AbsoluteFill style={{transform: `translate(${fgX}px, ${fgY}px) scale(${fgS})`, filter: 'brightness(0.74) contrast(1.12) saturate(0.74) hue-rotate(-6deg)'}}>
+      <AbsoluteFill style={{transform: `translate(${fgX}px, ${fgY}px) scale(${fgS})`, filter: 'brightness(1.08) contrast(1.02) saturate(0.84) hue-rotate(-6deg)'}}>
         <Cover src={src} />
       </AbsoluteFill>
       <LightSweep seed={seed} color={silver} />
@@ -194,7 +201,7 @@ const FocusStill: React.FC<{src: string; seed: string; dir: number; dur: number}
   const {bgX, bgY, fgX, fgY, fgS} = parallax(p, dir);
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
-      <AbsoluteFill style={{transform: `translate(${bgX}px, ${bgY}px) scale(1.34)`, filter: 'blur(24px) brightness(0.62)'}}>
+      <AbsoluteFill style={{transform: `translate(${bgX}px, ${bgY}px) scale(1.34)`, filter: 'blur(24px) brightness(0.9)'}}>
         <Cover src={src} />
       </AbsoluteFill>
       <AbsoluteFill style={{transform: `translate(${fgX}px, ${fgY}px) scale(${fgS})`, filter: `blur(${blur}px) ${GRADE}`}}>
@@ -216,7 +223,7 @@ const CardStill: React.FC<{src: string; seed: string; dir: number; dur: number}>
   const intro = interpolate(f, [0, 10], [26, 0], {extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
-      <AbsoluteFill style={{transform: `translateX(${bgX}px) scale(1.4)`, filter: 'blur(20px) brightness(0.55)'}}>
+      <AbsoluteFill style={{transform: `translateX(${bgX}px) scale(1.4)`, filter: 'blur(20px) brightness(0.84)'}}>
         <Cover src={src} />
       </AbsoluteFill>
       <LightSweep seed={seed} color={electric} />
@@ -300,11 +307,12 @@ export const DepthStill: React.FC<{src: string; seed: string; dir: number; dur: 
  * moving (shifting black pixels changes almost nothing); the travelling pool re-lights a large
  * soft region every frame, keeping freezedetect above its near-still floor. Screen-blended and
  * faint so it reads as a passing light, never washing out or flattening the image. */
-const DriftLight: React.FC<{dur: number; turns?: number; color?: string}> = ({dur, turns = 2.8, color = electric}) => {
+const DriftLight: React.FC<{dur: number}> = ({dur: _dur}) => {
   const f = useCurrentFrame();
-  const th = (f / Math.max(1, dur)) * turns * Math.PI * 2;
-  const cx = 50 + 33 * Math.sin(th);
-  const cy = 45 + 25 * Math.cos(th);
+  // NOTE: the orbiting radial "spinning faint light" that used to sit here was removed — owner
+  // 2026-07-06 found it overused/annoying ("淡い光がくるくる回ってるエフェクトは使い過ぎ・うざい").
+  // Only the freeze-floor micro-texture below remains (it is what actually clears freezedetect on
+  // dark cuts; the orbit was decorative). It is a faint moving film grain, not a circling light.
   // Hard-delta floor: a fine diagonal micro-texture translated at CONSTANT velocity every
   // frame. A smooth light gradient shifting slowly barely changes any pixels (a near-black
   // low-detail photo then reads as frozen even while it pans); a high-spatial-frequency pattern
@@ -312,19 +320,12 @@ const DriftLight: React.FC<{dur: number; turns?: number; color?: string}> = ({du
   // dark the underlying image is, so freezedetect never trips. The pattern is periodic so the
   // translate loops seamlessly with no wrap snap; kept very faint (soft-light) so it reads as a
   // subtle moving film texture, not scanlines, and never lifts luma enough to flatten the image.
-  // f is rebased to 0 at this cut's Sequence start, so it runs 0..dur. Cuts are ≤4s (≤120
-  // frames @30fps) → f*1.7 stays ≲205px, so a texture div oversized by 600px on every side is
-  // always covered — the pattern translates monotonically at constant velocity, no wrap/snap.
+  // f is rebased to 0 at this cut's Sequence start, so it runs 0..dur. Image holds are ≤6.5s
+  // (≤195 frames @30fps) → f*1.7 stays ≲332px, so a texture div oversized by 600px on every side
+  // is always covered — the pattern translates monotonically at constant velocity, no wrap/snap.
   const tx = f * 1.7;
   return (
     <>
-      <AbsoluteFill
-        style={{
-          pointerEvents: 'none',
-          mixBlendMode: 'screen',
-          background: `radial-gradient(50% 54% at ${cx}% ${cy}%, ${color}2e 0%, ${color}12 32%, transparent 66%)`,
-        }}
-      />
       <div
         style={{
           position: 'absolute',
@@ -422,16 +423,20 @@ const BodyGrade: React.FC = () => (
       style={{
         pointerEvents: 'none',
         mixBlendMode: 'soft-light',
-        opacity: 0.17,
+        opacity: 0.1,
         background: `linear-gradient(175deg, ${electric} 0%, ${navy} 46%, ${ink} 100%)`,
       }}
     />
+    {/* SHADOW LIFT: a faint screen-blend wash raises the darkest regions (dark photos / navy figure
+        beds) so the body median brightness clears the body_luma gate and images stay readable —
+        owner "画面が暗くて画像が見えにくい". Screen only ever lightens; kept low so highlights survive
+        and the noir mood holds. Replaces the old overlay radial that DARKENED the edges. */}
     <AbsoluteFill
       style={{
         pointerEvents: 'none',
-        mixBlendMode: 'overlay',
-        opacity: 0.1,
-        background: `radial-gradient(122% 94% at 50% 46%, ${navy}00 55%, ${ink} 100%)`,
+        mixBlendMode: 'screen',
+        opacity: 0.18,
+        background: `linear-gradient(180deg, #2c3858 0%, #1d2842 100%)`,
       }}
     />
   </>
@@ -585,7 +590,7 @@ const PunchShot: React.FC<{src: string; dur: number}> = ({src, dur}) => {
       <AbsoluteFill
         style={{
           transform: `scale(${s})`,
-          filter: `brightness(0.62) contrast(1.15) saturate(0.85)${blur > 0.4 ? ` blur(${blur}px)` : ''}`,
+          filter: `brightness(0.9) contrast(1.06) saturate(0.9)${blur > 0.4 ? ` blur(${blur}px)` : ''}`,
         }}
       >
         <Cover src={src} />
@@ -671,11 +676,25 @@ export const CaseFilm: React.FC<{data: FilmData; seriesLabel: string; title: str
         />
         {/* leveled-up animation (other-thread AmbientMotion): drifting bokeh + orbiting glows
             composited over the body so no frame is ever static — the "紙芝居" killer. */}
-        <AmbientMotion count={22} intensity={1.15} />
+        <AmbientMotion count={12} intensity={0.4} />
         <FigureBeats beats={(data.figures || []) as FigureSpec[]} />
         <GraphicsBeats beats={data.graphics} />
         {/* unified cinematic grade over stills+footage+graphics (below captions so text stays crisp) */}
         <BodyGrade />
+        {/* pre-composed 3D hero videos play full-frame over their window (above the graded body,
+            below captions). No-op for episodes without heroCuts. */}
+        {(data.heroCuts || []).map((h, i) => (
+          <Sequence
+            key={`hero-${i}`}
+            from={Math.round(h.start * fps)}
+            durationInFrames={Math.max(1, Math.round(h.dur * fps))}
+            name={`hero-${i}`}
+          >
+            <AbsoluteFill style={{backgroundColor: ink}}>
+              <OffthreadVideo src={staticFile(h.src)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+            </AbsoluteFill>
+          </Sequence>
+        ))}
         <Captions cues={data.captions} />
         <Grain opacity={0.11} />
       </Sequence>

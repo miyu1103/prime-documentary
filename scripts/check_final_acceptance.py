@@ -199,7 +199,7 @@ SOUND_MIN_TRANSIENTS_PER_MIN = SOUND_MIN_ONSETS_PER_MIN  # back-compat alias
 SOUND_AMBIENCE_HP, SOUND_AMBIENCE_LP = 40, 160    # ambience band-pass (Hz)
 SOUND_AMBIENCE_MIN_DB = -33.0                     # ambience-band mean floor (real finals ~ -21.9 dB; a bed must be present)
 SOUND_PROV_MIN_SFX = 20                           # EP32 §B5(b): audio_provenance density_gate.sfx_count floor (meaningful cues)
-SOUND_PROV_MIN_SFX_FILES = 8                      # §B5(b) recal: distinct MEANINGFUL sfx files (variety; filler excluded)
+SOUND_PROV_MIN_SFX_FILES = 12                     # §B5(b) recal (owner 2026-07-07: 8->12, richer palette / Kurzgesagt-Veritasium level; filler excluded)
 SOUND_PROV_MIN_BEDS = 4                           # EP32 §B5(b): audio_provenance distinct ambience beds floor
 SOUND_PROV_MIN_MUSIC = 1                          # §B5(b) recal: continuous music bed must be present (>=1 track)
 MIN_VIDEO_W, MIN_VIDEO_H = 1920, 1080
@@ -218,6 +218,16 @@ THUMB_MIN_CONTRAST_STD = 40.0                    # luma stddev -- too flat => no
 # 0.33 distinct. A well-built episode staging a wide pool clears 0.55+ / <=3.
 FOOTAGE_MAX_USES_PER_CLIP = 4                    # any single clip cut in more than this => lazy reuse
 FOOTAGE_MIN_DISTINCT_FRACTION = 0.40            # distinct srcs / total cuts must be >= this
+
+# Body luminance (owner 2026-07-07: "画面が暗くて画像が見えない"). check_black only catches
+# NEAR-ZERO frames; a render can be uniformly murky (image unreadable) and still clear black.
+# This floors the render's overall brightness. Calibrated on the too-dark EP31 unlock render
+# (median YAVG 46, 39% of frames < 40, 16% < 30 -- the owner-flagged darkness): that render
+# FAILS. A properly brightened grade (EP32 postmortem GRADE 0.82->0.92 etc.) clears it.
+BODY_LUMA_SAMPLE_HZ = 0.5                        # sample one frame every 2s (signalstats YAVG)
+BODY_LUMA_MEDIAN_MIN = 48.0                      # median frame brightness (0-255) floor
+BODY_LUMA_DARK_YAVG = 30.0                       # a frame this dark = "hard to see"
+BODY_LUMA_DARK_FRAC_MAX = 0.22                   # at most this share of frames may be that dark
 FOOTAGE_GENERIC_PAT = r"scale|gavel|hourglass|clock|stopwatch|balance"  # over-familiar symbols
 FOOTAGE_GENERIC_MAX_USES = 2                     # a generic symbol may recur at most this often
 IMG_MIN_LONG_EDGE = 3840                         # spec row 5: hero stills upscaled to >=4K long edge
@@ -233,9 +243,21 @@ ENDING_MARKERS = ("ENDING", "OUTRO", "CTA", "CLOSE", "CONCLUSION", "CODA")
 def runtime_band(epdir: Path) -> tuple[float, float]:
     """Pick the finished-runtime band from the episode's duration profile.
 
-    Reads manifest.target_duration_minutes (standard if unset). Bands match
-    validate_episode.py: standard 11.5-12.5, mid 27-33, feature 55-65 min.
+    Prefers the episode's OWN design band -- 04_scenes/remotion_plan.v*.json
+    motion_budget.runtime_band_seconds -- which is the authoritative, per-episode
+    target the film was planned to (CLAUDE §5: an episode-specific plan outranks a
+    generic heuristic). Only when no plan band is recorded does it fall back to the
+    coarse manifest.target_duration_minutes buckets (standard 11.5-12.5 min, etc.).
+    The generic 'target>=20 -> 1620-1980s (27-33 min)' bucket badly mismatches a
+    20-min-target episode whose plan is 1225s, so the plan band wins when present.
     """
+    plans = sorted((epdir / "04_scenes").glob("remotion_plan.v*.json"))
+    if plans:
+        plan = _load(plans[-1]) or {}
+        band = (plan.get("motion_budget") or {}).get("runtime_band_seconds")
+        if (isinstance(band, (list, tuple)) and len(band) == 2
+                and all(isinstance(x, (int, float)) for x in band) and band[0] < band[1]):
+            return float(band[0]), float(band[1])
     m = _load(epdir / "manifest.json") or {}
     t = m.get("target_duration_minutes")
     if not t:
@@ -1390,6 +1412,93 @@ def check_thumbnail_visibility(epdir: Path) -> dict:
                        if ok else f"{thumb.name}: " + "; ".join(problems))}
 
 
+def check_body_luma(path: Path, dur: float, epdir: Path) -> dict:
+    """HARD: the render must be BRIGHT ENOUGH TO SEE. check_black only catches
+    near-zero frames; a uniformly murky render (owner: '画面が暗くて画像が見えない')
+    clears black yet is unwatchable. Samples YAVG (0-255) every ~2s and floors the
+    median brightness plus the share of too-dark frames."""
+    try:
+        proc = subprocess.run(
+            ["ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
+             "-vf", f"fps={BODY_LUMA_SAMPLE_HZ},signalstats,metadata=print:file=-",
+             "-f", "null", "-"],
+            capture_output=True, text=True, check=True)
+        out = proc.stdout + proc.stderr  # metadata=print:file=- writes to stdout
+    except Exception as exc:  # noqa: BLE001
+        # measurement failure is a HARD fail (fail-closed, EP32 §B1): do not pass what we cannot see.
+        return {"check": "body_luma", "ok": False, "hard": True,
+                "reason": f"could not measure body luma ({exc})"}
+    vals = [float(m) for m in re.findall(r"lavfi\.signalstats\.YAVG=([0-9.]+)", out)]
+    if len(vals) < 8:
+        return {"check": "body_luma", "ok": False, "hard": True,
+                "reason": f"only {len(vals)} luma samples parsed (signalstats unavailable?)"}
+    vals.sort()
+    median = vals[len(vals) // 2]
+    dark_frac = sum(1 for v in vals if v < BODY_LUMA_DARK_YAVG) / len(vals)
+    problems = []
+    if median < BODY_LUMA_MEDIAN_MIN:
+        problems.append(f"median brightness {median:.0f} < {BODY_LUMA_MEDIAN_MIN:.0f} (too dark to see)")
+    if dark_frac > BODY_LUMA_DARK_FRAC_MAX:
+        problems.append(f"{dark_frac*100:.0f}% of frames < YAVG {BODY_LUMA_DARK_YAVG:.0f} "
+                        f"(> {BODY_LUMA_DARK_FRAC_MAX*100:.0f}% dark)")
+    ok = not problems
+    return {"check": "body_luma", "ok": ok, "hard": True,
+            "reason": (f"median YAVG {median:.0f}, {dark_frac*100:.0f}% dark -- bright enough"
+                       if ok else "; ".join(problems))}
+
+
+def check_caption_sync(epdir: Path) -> dict:
+    """HARD (owner #1, 2026-07-07): burned captions must sit ON the spoken word, not
+    lag. Independent of the whisper aligner that produced the .srt (energy-based onset).
+    Delegates to verify_caption_sync.evaluate()."""
+    import importlib
+    _dir = str(Path(__file__).resolve().parent)
+    if _dir not in sys.path:
+        sys.path.insert(0, _dir)
+    try:
+        vcs = importlib.import_module("verify_caption_sync")
+    except Exception as exc:  # noqa: BLE001
+        return {"check": "caption_sync", "ok": True, "hard": False, "skipped": True,
+                "reason": f"verify_caption_sync unavailable: {exc}"}
+    r = vcs.evaluate(epdir)
+    if r.get("skipped"):
+        return {"check": "caption_sync", "ok": True, "hard": False, "skipped": True,
+                "reason": r.get("reason", "skipped")}
+    ok = bool(r.get("ok"))
+    if "lag_p50" in r:
+        detail = (f"p50 {r['lag_p50']:+.3f}s exact {r.get('exact_pct',0):.0f}% "
+                  f"late {r.get('late_pct',0):.0f}% drift {r.get('segment_drift',0):+.3f}s "
+                  f"fword-ends {r.get('function_word_line_ends',0)}")
+    else:
+        detail = r.get("reason", "")
+    if not ok and r.get("problems"):
+        detail += " | " + "; ".join(r["problems"])
+    return {"check": "caption_sync", "ok": ok, "hard": True, "reason": detail}
+
+
+def _ext_gate(module_name: str, epdir: Path, *args, **kwargs) -> dict:
+    """Load a sibling standalone gate module (scripts/<module_name>.py) and call its
+    evaluate(); never fatal. Each such gate owns its artifact discovery and returns a
+    check-dict; if its inputs are absent it returns skipped=True (honest, not fake green)."""
+    import importlib
+    _dir = str(Path(__file__).resolve().parent)
+    if _dir not in sys.path:
+        sys.path.insert(0, _dir)
+    try:
+        m = importlib.import_module(module_name)
+        r = m.evaluate(epdir, *args, **kwargs)
+        if not isinstance(r, dict):
+            return {"check": module_name, "ok": True, "hard": False, "skipped": True,
+                    "reason": f"{module_name}.evaluate returned non-dict"}
+        r.setdefault("check", module_name)
+        r.setdefault("ok", True)
+        r.setdefault("hard", True)
+        return r
+    except Exception as exc:  # noqa: BLE001
+        return {"check": module_name, "ok": True, "hard": False, "skipped": True,
+                "reason": f"{module_name} unavailable: {exc}"}
+
+
 def resolve_render(epdir: Path, override: str | None) -> Path | None:
     if override:
         return Path(override)
@@ -1450,6 +1559,8 @@ def main() -> int:
             results.append(check_freeze(render))
             results.append(check_low_motion(render, render_dur, epdir))
             results.append(check_motion_energy(render, render_dur, epdir))
+            results.append(check_body_luma(render, render_dur, epdir))
+            results.append(_ext_gate("check_image_cut_luma", epdir, str(render)))
             results.append(check_bgm(render))
             results.append(check_sound_layers(render, render_dur, epdir))
             results.append(check_bgm_ending(render, render_dur))
@@ -1469,6 +1580,12 @@ def main() -> int:
     results.append(check_captions(epdir, render_dur))
     results.append(check_caption_format(epdir))
     results.append(check_caption_narration_match(epdir))
+    results.append(check_caption_sync(epdir))
+    # standalone gates (2026-07-07): each owns its artifact discovery, skips honestly if absent
+    for _mod in ("check_arc_nonrepeat", "verify_caption_coverage", "check_footage_utilization",
+                 "verify_script_lint", "check_thumb_subject_luma", "check_padding",
+                 "verify_onscreen_text"):
+        results.append(_ext_gate(_mod, epdir))
     results.append(check_structure(epdir))
     results.append(check_bookends(epdir))
     results.append(check_leveled_animation(epdir))

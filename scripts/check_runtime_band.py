@@ -46,7 +46,22 @@ def infer_band_from_render_path(path: Path) -> tuple[float, float] | None:
     match = re.search(r"episodes/(PD-\d{4}-\d{3}-[^/]+)/", normalized)
     if not match:
         return None
-    manifest = EPDIR / match.group(1) / "manifest.json"
+    epdir = EPDIR / match.group(1)
+    # Prefer the episode's OWN planned band (04_scenes/remotion_plan.v*.json
+    # motion_budget.runtime_band_seconds) over the coarse target-minutes buckets, which
+    # mis-bucket a 20-min-target episode (plan 1225s) into 1620-1980s. Matches
+    # check_final_acceptance.runtime_band().
+    plans = sorted((epdir / "04_scenes").glob("remotion_plan.v*.json"))
+    if plans:
+        try:
+            plan = json.loads(plans[-1].read_text(encoding="utf-8"))
+            band = (plan.get("motion_budget") or {}).get("runtime_band_seconds")
+            if (isinstance(band, (list, tuple)) and len(band) == 2
+                    and all(isinstance(x, (int, float)) for x in band) and band[0] < band[1]):
+                return float(band[0]), float(band[1])
+        except Exception:
+            pass
+    manifest = epdir / "manifest.json"
     try:
         data = json.loads(manifest.read_text(encoding="utf-8"))
     except Exception:

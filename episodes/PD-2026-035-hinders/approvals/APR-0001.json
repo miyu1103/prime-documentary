@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-035-hinders",
+  "target_type": "topic",
+  "target_id": "topic",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-07-07T00:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-07-07T00:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner portfolio/topic sign-off. On 2026-07-07 the owner explicitly selected this topic from a ranked shortlist of 'obscure-in-the-US but broadly relatable' true stories, as one of a three-part arc (EP33 Tyler home-equity forfeiture / EP34 Rolin airport cash seizure / EP35 Hinders IRS structuring). This is an explicit selection, not inferred from tone (rules/16). Bound to topic content_hash sha256:6c319f9a393da14fcd3c756177b21316e0a3a9ded3a82955cf2f241b28f4c0d4; re-approval required if the topic revision/hash changes (rules/12). Approval covers the TOPIC only; research, script, visuals, package and publish each require their own gate.",
+  "conditions": [
+    "No real-person likeness; anonymous figures/reconstruction only; every generated visual is illustration, never presented as authentic record (invariant 11).",
+    "Protagonists are real, named private individuals — describe strictly and accurately per the public record; no embellishment, no defamation.",
+    "Keep government agencies (county/DEA/IRS) described neutrally and factually; systemic-law framing, not accusation of individuals.",
+    "Apply the EP32 postmortem mechanisms from the start (caption lead 0.60s, no paper-slideshow, brighter image grade, footage non-reuse across this arc)."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-035-hinders/00_topic/topic.v001.json"
+}

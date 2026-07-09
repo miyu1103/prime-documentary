@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-035-hinders",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 3194,
+    "sentences": 197,
+    "avg_sentence_words": 16.2,
+    "flesch_kincaid_grade": 7.4,
+    "est_duration_minutes": 21.3,
+    "est_duration_minutes_158wpm": 20.2,
+    "em_dash_per_100w": 0.4,
+    "ai_filler_hits": {},
+    "claim_link_consistency": "pass"
+  },
+  "status": "pass",
+  "findings": [
+    "4th independent adversarial review (facts/story/pacing, 18 findings; 2 BLOCKING + 8 MAJOR) applied to script.en.v001.md and re-synced into every affected span of script.annotated.v001.json. BLOCKING: removed the fabricated 'a second rule was bolted on years later' third-statute (§5324 is the single 1986 structuring offense) — SPN-0004 now carries the 1986 origin+definition, SPN-0005 only names 'structuring' non-temporally. MAJOR: (a) SPN-0011 re-hedged the CLM-0005 burden to the practical/financial burden (kept the sanctioned 'treated as guilty / on her to prove it innocent' line, deleted the legal 'burden falls the other way / prove a negative' allocation barred by the CAFRA counterevidence); (b) SPN-0030 ED de-asserted the CLM-0018 restaurant sale ('by her lawyers' account') and dropped the unhedged causal 'cost her the restaurant'; (c) SPN-0005 over-promise softened (no false 'breaks this case open'); (d) next-arc preview consolidated to the ED only (SPN-0028 is now a pure threat re-hook); (e) crutch-word cull — quiet/quietly 6->2, honest 7->2, machine/engine/mechanism unified to the single 'machinery' motif, 'this story' self-reference ->1, 'emptied in silence' ->1; (f) Act II 48/51 mid-sag compressed and the duplicate 'engine' metaphor removed; (g) Act III 70 trimmed ~20 words. MINOR also applied: McLellan chronology tightened (return-refusal, not a post-memo new seizure), 'year of hell' cliche removed, RESPECT-Act namesakes de-asserted (CLM-0016 keeps the act off-screen), L4 restaurant-sale duplication reduced, threat-refrain triple reduced.",
+    "3-pass review complete (Pass 1 facts vs claims.v001.json; Pass 2 craft/prose; Pass 3 20-min retention). All 20 spans link to CLM-0001..0020; every claim used at least once; zero dangling refs; chapter span_ids set == spans set (SPN-0001..0030).",
+    "Owner-mandated 20-min feature. Validator readability FK=7.3 (<=9.5 pass), avg sentence 15.7 words. No banned AI-filler phrase present (ai_filler_hits empty). em-dash density 0.3/100w (well under EP32's 2.2).",
+    "Length/timing: validator counts 3213 VO words; at fixed 150wpm that reads 21.4 narration-minutes, at ElevenLabs-realistic 158wpm ~20.3 min, at 165wpm ~19.5 min. Ship-gate remains check_runtime_band.py on the real TTS render (band 1,170-1,230s), not raw word count. estimated_duration_seconds in annotated = 1225.",
+    "Facts locked to CLM-0001..0020. Critical claims (CLM-0002/0004/0005/0007/0014/0016) rest on grade-A primary/official sources (8th Cir. 838 F.3d 930, 31 U.S.C. statutes, NYT front page 2014-10-25, TIGTA 2017-30-025, Pub. L. 116-25). Grade-B/conditional (CLM-0006/0013/0018/0019) hedged with attribution; CLM-0020 is a do-not-assert guardrail (Hinders congressional testimony / legislative authorship never claimed; testimony attributed to business owners generally, her influence to press coverage only).",
+    "R2 neutrality held: IRS / Treasury / TIGTA / Congress described as institutions; no defamatory framing. No real-person likeness asserted in narration (invariant 11); living private individuals Hinders and McLellan handled as record-only.",
+    "KNOWN validator QC-WARN (non-blocking, exit 0): narration-band warning is manifest-driven. manifest.target_duration_minutes is still 12 (standard band 10.0-12.8), but this episode is the owner-mandated 20-min feature (design v005, annotated estimated_duration_seconds=1225). Setting the manifest field to 20 selects the MID profile (16.0-21.6 narration-min) which the 21.4/150wpm figure sits inside. Manifest update is the parent's responsibility per task scope; reported, not silently changed (invariant 15)."
+  ]
+}

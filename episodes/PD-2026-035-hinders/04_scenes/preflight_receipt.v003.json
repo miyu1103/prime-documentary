@@ -1,0 +1,233 @@
+{
+  "artifact_type": "preflight_render_receipt",
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-035-hinders",
+  "generated_at": "2026-07-09T17:28:14.037964+00:00",
+  "gate": "preflight_render_gate.py",
+  "thresholds": {
+    "depth_floor_pct": 40.0,
+    "figure_beat_floor": 6,
+    "hero_surface_floor": 2,
+    "min_long_edge_px": 3840,
+    "cuts_per_graphic_max": 4
+  },
+  "inputs": {
+    "remotion_plan": "ok",
+    "scene_plan": "ok",
+    "script_annotated": "ok",
+    "asset_selection": "ok",
+    "image_dir_exists": true
+  },
+  "verdict": "GREEN",
+  "render_allowed": true,
+  "checks": [
+    {
+      "check": "motion_budget",
+      "status": "PASS",
+      "detail": "recomputed motion budget vs floors (hand-typed pass flags ignored)",
+      "subchecks": [
+        {
+          "check": "motion.depth_share",
+          "status": "PASS",
+          "detail": "depth-treated=239/324 still cuts = 73.8% (floor 40%)",
+          "value": 73.8,
+          "floor": 40.0
+        },
+        {
+          "check": "motion.figure_beats",
+          "status": "PASS",
+          "detail": "26 moving FigureBeats recomputed from continuity_refs (floor 6) scenes=['S003', 'S004', 'S005', 'S006', 'S007', 'S008', 'S009', 'S011', 'S012', 'S013', 'S014', 'S015', 'S016', 'S017', 'S018', 'S019', 'S021', 'S022', 'S023', 'S024', 'S025', 'S026', 'S027', 'S028', 'S029', 'S030']",
+          "value": 26,
+          "floor": 6
+        },
+        {
+          "check": "motion.hero_surfaces",
+          "status": "PASS",
+          "detail": "8 distinct hero motion surfaces recomputed (floor 2) scenes={'1': 'S004', '2': 'S007', '3': 'S009', '4': 'S017', '5': 'S021', '6': 'S022', '7': 'S024', '8': 'S029'}",
+          "value": 8,
+          "floor": 2
+        },
+        {
+          "check": "motion.graphic_backing",
+          "status": "PASS",
+          "detail": "all graphic-dominated scenes backed by >= ceil(graphic_cuts/4) distinct graphics",
+          "unbacked_scenes": []
+        }
+      ],
+      "recomputed": {
+        "still_cuts": 324,
+        "depth_cuts": 239,
+        "total_cuts": 528,
+        "depth_pct_of_still_cuts": 73.8,
+        "depth_pct_of_total_cuts": 45.3,
+        "moving_figure_beats": 26,
+        "moving_figure_beat_scenes": [
+          "S003",
+          "S004",
+          "S005",
+          "S006",
+          "S007",
+          "S008",
+          "S009",
+          "S011",
+          "S012",
+          "S013",
+          "S014",
+          "S015",
+          "S016",
+          "S017",
+          "S018",
+          "S019",
+          "S021",
+          "S022",
+          "S023",
+          "S024",
+          "S025",
+          "S026",
+          "S027",
+          "S028",
+          "S029",
+          "S030"
+        ],
+        "hero_motion_surfaces": 8,
+        "hero_motion_surface_scenes": {
+          "1": "S004",
+          "2": "S007",
+          "3": "S009",
+          "4": "S017",
+          "5": "S021",
+          "6": "S022",
+          "7": "S024",
+          "8": "S029"
+        },
+        "graphic_dominated_scenes": []
+      }
+    },
+    {
+      "check": "assets_exist",
+      "status": "PASS",
+      "detail": "referenced stills exist at 4K with depth maps for depth-treated scenes",
+      "subchecks": [
+        {
+          "check": "assets.stills",
+          "status": "PASS",
+          "detail": "68/68 referenced stills present & >= 3840px long edge; missing=none; under_res=none; unreadable=none"
+        },
+        {
+          "check": "assets.depth_maps",
+          "status": "PASS",
+          "detail": "0/0 depth maps present for depth-eligible stills; missing=0"
+        }
+      ],
+      "recomputed": {
+        "referenced_still_ids": [
+          "S001",
+          "S002",
+          "S003",
+          "S004",
+          "S005",
+          "S006",
+          "S007",
+          "S008",
+          "S009",
+          "S010",
+          "S011",
+          "S012",
+          "S013",
+          "S014",
+          "S015",
+          "S016",
+          "S017",
+          "S018",
+          "S019",
+          "S020",
+          "S021",
+          "S022",
+          "S023",
+          "S024",
+          "S025",
+          "S026",
+          "S027",
+          "S028",
+          "S029",
+          "S030",
+          "S031",
+          "S032",
+          "S033",
+          "S034",
+          "S035",
+          "S036",
+          "S037",
+          "S038",
+          "S039",
+          "S040",
+          "S041",
+          "S042",
+          "S043",
+          "S044",
+          "S045",
+          "S046",
+          "S047",
+          "S048",
+          "S049",
+          "S050",
+          "S051",
+          "S052",
+          "S053",
+          "S054",
+          "S055",
+          "S056",
+          "S057",
+          "S058",
+          "S059",
+          "S060",
+          "S061",
+          "S062",
+          "S063",
+          "S064",
+          "S065",
+          "S066",
+          "S067",
+          "S068"
+        ],
+        "referenced_still_count": 68,
+        "staged_still_files": 68,
+        "stills_present_ok": 68,
+        "stills_missing": [],
+        "stills_under_resolution": [],
+        "stills_unreadable": [],
+        "depth_eligible_still_count": 0,
+        "depth_maps_present": 0,
+        "depth_maps_missing": []
+      }
+    },
+    {
+      "check": "coverage",
+      "status": "PASS",
+      "detail": "30/30 spans bound to a still/graphic/footage",
+      "recomputed": {
+        "expected_span_count": 30,
+        "spans_in_asset_selection": 30,
+        "unbound_or_missing_spans": [],
+        "bound_span_count": 30
+      }
+    },
+    {
+      "check": "film_crosscheck",
+      "status": "WARN",
+      "detail": "film deviates from plan: film cut count 359 vs aspirational plan 528 (binding motion gate = motion_energy on the render)",
+      "recomputed": {
+        "film_path": "C:\\Users\\aab15\\Documents\\prime-documentary\\remotion\\src\\data\\hinders_film.json",
+        "film_cut_count": 359,
+        "film_kinds": {
+          "footage": 88,
+          "img": 271
+        },
+        "film_still_like_cuts": 271,
+        "film_depth_treated_cuts": 122,
+        "plan_total_cuts": 528,
+        "film_depth_pct_of_stills": 45.0
+      }
+    }
+  ]
+}

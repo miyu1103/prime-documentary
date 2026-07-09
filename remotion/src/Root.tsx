@@ -48,6 +48,7 @@ import hintonFilm from './data/hinton_film.json';
 import carsearchFilm from './data/carsearch_film.json';
 import rolinFilm from './data/rolin_film.json';
 import {CarsearchThumbnail, CARSEARCH_THUMBS} from './compositions/CarsearchThumbnails';
+import {RolinThumbnail, ROLIN_THUMBS} from './compositions/RolinThumbnails';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
@@ -231,6 +232,9 @@ export const RemotionRoot: React.FC = () => {
       <Still id="Thumb-carsearch-01" component={CarsearchThumbnail} width={1280} height={720} defaultProps={{concept: CARSEARCH_THUMBS[0]}} />
       <Still id="Thumb-carsearch-02" component={CarsearchThumbnail} width={1280} height={720} defaultProps={{concept: CARSEARCH_THUMBS[1]}} />
       <Still id="Thumb-carsearch-03" component={CarsearchThumbnail} width={1280} height={720} defaultProps={{concept: CARSEARCH_THUMBS[2]}} />
+      <Still id="Thumb-rolin-01" component={RolinThumbnail} width={1280} height={720} defaultProps={{concept: ROLIN_THUMBS[0]}} />
+      <Still id="Thumb-rolin-02" component={RolinThumbnail} width={1280} height={720} defaultProps={{concept: ROLIN_THUMBS[1]}} />
+      <Still id="Thumb-rolin-03" component={RolinThumbnail} width={1280} height={720} defaultProps={{concept: ROLIN_THUMBS[2]}} />
       <Composition
         id="Short-short07-yt"
         component={Short}
