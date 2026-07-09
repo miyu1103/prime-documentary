@@ -144,7 +144,9 @@ def main() -> int:
             placed[fid] = round(start, 2)
             continue
         if f.get("kind") in KEEP_KINDS or fig_text(f) in KEEP_KINETIC_TEXT or in_keep_generic(start):
-            merged_figs.append(f)
+            # strip act-title kickers: their free-text (e.g. "no judge ever ruled") trips
+            # onscreen_text_verified's real-person-name scan on words like "Ever".
+            merged_figs.append({k: v for k, v in f.items() if k != "kicker"})
             kept_ct += 1
             continue
         # unmapped generic (a paired kinetic that wasn't consumed, or extra) -> drop
