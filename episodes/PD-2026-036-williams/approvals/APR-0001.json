@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "approval_id": "APR-0001",
+  "episode_id": "PD-2026-036-williams",
+  "target_type": "topic",
+  "target_id": "topic",
+  "target_revision": "v001",
+  "decision": "approved",
+  "requested_at": "2026-07-10T00:00:00+09:00",
+  "requested_by": "local-claude-code",
+  "decided_at": "2026-07-10T00:00:00+09:00",
+  "decided_by": "owner",
+  "notes": "Owner selected this topic on 2026-07-10 from a ranked shortlist (100 to 20 to 5, pick #4): the first US facial-recognition wrongful arrest (Robert Williams). Explicit selection (rules/16). Runtime target ~12min (proven retention band; 20min was an EP33-35-specific owner override). Bound to topic content_hash sha256:14465a28cf01556709a6413a303a3dcaf09ea141a47f47f1a1fc6f4456628373.",
+  "conditions": [
+    "No real-person likeness; anonymous figures/reconstruction only (invariant 11).",
+    "Real named private individual (Robert Williams) plus a race-accuracy story: describe strictly per record, neutral, no defamation/inflammatory framing.",
+    "Apply EP32 postmortem plus pipeline mechanisms from the start (caption lead 0.60s, align_windowed, brighter grade, footage non-reuse, no gaming)."
+  ],
+  "expires_at": null,
+  "evidence_snapshot_ref": "artifact://episodes/PD-2026-036-williams/00_topic/topic.v001.json"
+}

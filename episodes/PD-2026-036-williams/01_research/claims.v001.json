@@ -1,0 +1,372 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-036-williams",
+  "revision": "v001",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "normalized_claim": "Robert Julian-Borchak Williams, an innocent Black man and father living in a Detroit suburb (Farmington Hills, Michigan), was arrested by Detroit police in January 2020 in his own driveway in front of his wife and young daughters and held for about thirty hours, over a store theft he did not commit.",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0004", "SRC-0005", "SRC-0006"],
+      "evidence_locations": [
+        "NYT (Hill, 2020-06-24): name, Farmington Hills residence, driveway arrest in front of family, ~30 hours",
+        "NPR (2020-06-24) and MIT Tech Review (2021-04-14): corroboration; MIT gives arrest date January 9, 2020"
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "They arrested him in his own driveway, in front of his wife and his two young daughters.",
+        "He spent about thirty hours in a cell for a crime he had nothing to do with."
+      ],
+      "prohibited_wording": [
+        "Depict Robert Williams' real likeness or a photorealistic portrait of him or his family (invariant 11).",
+        "State or imply he committed the theft.",
+        "Put his home street address on screen."
+      ],
+      "temporal_scope": "2020-01",
+      "geographic_scope": "Detroit metro, Michigan, United States",
+      "units": "~30 hours",
+      "status": "approved",
+      "notes": "Living private individual: role/record only, no likeness. On-screen may burn 'JANUARY 2020' and '~30 HOURS' (grade-A). Exact date Jan 9 2020 is grade-B (single strong secondary) — narration hedges to 'January 2020'."
+    },
+    {
+      "claim_id": "CLM-0002",
+      "normalized_claim": "The only thing linking Williams to the theft was a facial-recognition 'match'; police had no other evidence identifying him as the thief. He was released, the charges were dropped, and the Wayne County prosecutor's office publicly acknowledged the case should not have been brought on that basis.",
+      "importance": "critical",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0004", "SRC-0005"],
+      "evidence_locations": [
+        "NYT/NPR (2020-06-24): arrest rested on the face-match; charges dismissed; prosecutor apology",
+        "ACLU case page: no independent evidence tied Williams to the crime"
+      ],
+      "counterevidence": [
+        "Detectives also ran a photo lineup, but it was built FROM the face-match result and shown to a contractor who had only seen the video — not independent eyewitness identification (see CLM-0004)."
+      ],
+      "confidence": 0.94,
+      "allowed_wording": [
+        "The entire case against him was a match returned by a computer.",
+        "He was let go, the charges were dropped, and the prosecutor's office admitted it never should have happened."
+      ],
+      "prohibited_wording": [
+        "Say a human eyewitness independently identified him.",
+        "Name or accuse the individual detectives by name."
+      ],
+      "temporal_scope": "2020",
+      "geographic_scope": "Detroit, Michigan",
+      "units": "n/a",
+      "status": "approved",
+      "notes": "Core inversion: a probability, not proof, put him in a cell. Prosecutor apology corroborated across NYT/NPR."
+    },
+    {
+      "claim_id": "CLM-0003",
+      "normalized_claim": "The underlying crime was a 2018 shoplifting at a Shinola watch store in Detroit; reporting describes roughly five watches taken, worth about $3,800.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": ["SRC-0006", "SRC-0004"],
+      "evidence_locations": [
+        "MIT Tech Review (2021-04-14): October 2018, ~$3,800, five watches, Shinola",
+        "NYT (2020-06-24): Shinola store theft, 2018"
+      ],
+      "counterevidence": [],
+      "confidence": 0.75,
+      "allowed_wording": [
+        "It started with a shoplifting at a downtown watch store in 2018 — a few thousand dollars in merchandise walked out the door.",
+        "Someone had lifted several watches from a Detroit shop."
+      ],
+      "prohibited_wording": [
+        "Burn the exact figures '$3,800' or '5 watches' as on-screen text (grade-B; keep in narration, attributed to reporting).",
+        "State the precise month as hard fact on screen."
+      ],
+      "temporal_scope": "2018",
+      "geographic_scope": "Detroit, Michigan",
+      "units": "~$3,800 / ~5 watches (reported)",
+      "status": "conditional",
+      "notes": "Grade-B precise figures rest mainly on MIT Tech Review + wire copy. Narration hedges ('about', 'reported'); NOT eligible for on-screen number burn per verify_onscreen_text (grade-A floor)."
+    },
+    {
+      "claim_id": "CLM-0004",
+      "normalized_claim": "The match was produced by running a grainy surveillance still through facial-recognition software (sold by the vendor DataWorks Plus) against a Michigan state database of driver's-license and mug-shot photos; the software returned Williams' old driver's-license photo, and detectives then showed a photo lineup built from that result to a store loss-prevention contractor who had only watched the surveillance video and had not witnessed the theft in person.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0004", "SRC-0006"],
+      "evidence_locations": [
+        "NYT (2020-06-24): DataWorks Plus, driver's-license photo match, loss-prevention contractor identified from video via lineup",
+        "MIT Tech Review (2021-04-14): March 2019 search; state image database; evidence chain",
+        "ACLU case page: evidence chain summary"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "A blurry frame from the store's camera was fed into face-matching software and compared against millions of license and mug-shot photos.",
+        "The software handed police an old photo from his driver's license — and the detectives ran with it."
+      ],
+      "prohibited_wording": [
+        "Burn the vendor name or a real state-police seal on screen; refer to 'the software / the vendor' on screen (neutral, R2).",
+        "Present a generated surveillance still as the authentic evidence frame (invariant 11).",
+        "State the 'March 2019' search date as a burned on-screen fact (grade-B)."
+      ],
+      "temporal_scope": "2019-2020",
+      "geographic_scope": "Michigan, United States",
+      "units": "n/a",
+      "status": "approved",
+      "notes": "Evidence chain is grade-A across NYT/ACLU/MIT. The lineup was drawn FROM the match and shown to someone who never saw the crime — the documented weakness. Vendor named in narration only; kept off-screen for neutrality."
+    },
+    {
+      "claim_id": "CLM-0005",
+      "normalized_claim": "A December 2019 U.S. government study (NIST, NISTIR 8280) found that many face-recognition algorithms returned false positives at substantially higher rates for Asian and African American faces than for white faces — differentials often ranging from a factor of 10 to 100 — and in the one-to-many database searches police rely on, higher false-positive rates for African American women; NIST also found that algorithms developed in Asia did not show the same Asian-vs-white gap, indicating the effect is driven by training data rather than anything inherent.",
+      "importance": "major",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0007"],
+      "evidence_locations": [
+        "NIST NISTIR 8280 (2019-12-19): one-to-one false positives 10-100x higher for Asian/African American faces; one-to-many higher for African American females; Asia-developed algorithms did not show the gap"
+      ],
+      "counterevidence": [
+        "The gap is a property of specific algorithms and their training data, not a uniform law: Asia-developed algorithms did not show the Asian-vs-white differential. Present as measured differentials, not as 'the technology is racist.'"
+      ],
+      "confidence": 0.93,
+      "allowed_wording": [
+        "A federal study tested face-matching software and found it threw far more false matches on Black and Asian faces than on white ones — in some cases ten to a hundred times as many.",
+        "In the kind of database search police use, the highest false-match rates fell on Black women."
+      ],
+      "prohibited_wording": [
+        "State flatly that 'facial recognition is racist' (present measured false-positive differentials with the training-data counter-finding).",
+        "Drop the counter-finding that Asia-developed algorithms did not show the gap."
+      ],
+      "temporal_scope": "2019",
+      "geographic_scope": "United States (federal study)",
+      "units": "false-positive differential ~10x-100x",
+      "status": "approved",
+      "notes": "Grade-A federal primary. On-screen may burn a neutral 'FALSE MATCHES: 10-100x HIGHER' with 'NIST 2019'. Counter-finding is mandatory for neutrality (R2)."
+    },
+    {
+      "claim_id": "CLM-0006",
+      "normalized_claim": "A separate 2018 MIT study, 'Gender Shades', tested commercial gender-classification systems — labeling a face as male or female, a related but distinct task from identity matching — and found error rates up to 34.7% for darker-skinned women versus 0.8% for lighter-skinned men.",
+      "importance": "supporting",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0008"],
+      "evidence_locations": [
+        "Buolamwini & Gebru, Gender Shades (2018): darker-skinned females up to 34.7% error; lighter-skinned males 0.8%"
+      ],
+      "counterevidence": [
+        "This measures gender classification, NOT the identity-matching that produced Williams' arrest — it corroborates a demographic performance gap in commercial vision systems, a related but different task."
+      ],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "An earlier study of commercial face software found it misread the gender of darker-skinned women up to a third of the time, while it was almost never wrong about lighter-skinned men."
+      ],
+      "prohibited_wording": [
+        "Present the 34.7% / 0.8% figures as the error rate of the identity-matching system that arrested Williams (it is gender classification — a distinct task).",
+        "Conflate gender-classification error with a wrongful-match rate."
+      ],
+      "temporal_scope": "2018",
+      "geographic_scope": "United States",
+      "units": "34.7% vs 0.8% (gender-classification error)",
+      "status": "approved",
+      "notes": "Corroborating, task-distinct. If burned on screen, must be labeled 'gender classification'. Kept largely in narration."
+    },
+    {
+      "claim_id": "CLM-0007",
+      "normalized_claim": "A facial-recognition result is meant to be an investigative lead, not a positive identification — a limitation that the 2024 Detroit settlement later turned into an explicit rule barring arrests on a match alone.",
+      "importance": "major",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0002", "SRC-0001"],
+      "evidence_locations": [
+        "ACLU press release / case page (2024-06-28): settlement makes the match an investigative lead only; no arrest on a match alone"
+      ],
+      "counterevidence": [],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "A face-match was never supposed to be proof. It is a lead — a name to look into, not a name to arrest.",
+        "The software's own makers say a match is a starting point, not an identification."
+      ],
+      "prohibited_wording": [
+        "Imply the software 'confirmed' his identity."
+      ],
+      "temporal_scope": "2020-2024",
+      "geographic_scope": "United States",
+      "units": "n/a",
+      "status": "approved",
+      "notes": "Mechanism/should-be-a-lead beat; the settlement (CLM-0009) codifies it."
+    },
+    {
+      "claim_id": "CLM-0008",
+      "normalized_claim": "In April 2021 the ACLU, the ACLU of Michigan, and the University of Michigan Law School Civil Rights Litigation Initiative sued the City of Detroit on Williams' behalf in the U.S. District Court for the Eastern District of Michigan over the wrongful arrest.",
+      "importance": "major",
+      "sensitivity": "low",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0006"],
+      "evidence_locations": [
+        "ACLU case page: filing on Williams' behalf against the City of Detroit",
+        "MIT Tech Review (2021-04-14): April 2021 lawsuit, E.D. Mich."
+      ],
+      "counterevidence": [],
+      "confidence": 0.95,
+      "allowed_wording": [
+        "In twenty twenty-one, civil-rights lawyers sued the city on his behalf."
+      ],
+      "prohibited_wording": [],
+      "temporal_scope": "2021-04",
+      "geographic_scope": "E.D. Michigan, United States",
+      "units": "n/a",
+      "status": "approved",
+      "notes": "On-screen may burn 'APRIL 2021' (grade-A)."
+    },
+    {
+      "claim_id": "CLM-0009",
+      "normalized_claim": "In June 2024 the case settled, and as part of the settlement Detroit adopted new rules: police may not arrest anyone based on a facial-recognition match alone, nor run a photo lineup based only on a match without independent evidence; a match is treated as an investigative lead only; the department must audit every case since 2017 in which facial recognition was used to seek an arrest warrant; and a court oversees compliance for four years.",
+      "importance": "critical",
+      "sensitivity": "medium",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0002", "SRC-0003"],
+      "evidence_locations": [
+        "ACLU press release (2024-06-28): no arrest on FR alone; lead-only; disclosure; training; audit since 2017; four-year court jurisdiction",
+        "Settlement agreement PDF (E.D. Mich., June 2024): verbatim terms"
+      ],
+      "counterevidence": [
+        "These rules bind the Detroit Police Department only; they are not a nationwide law. 'Nation's strongest' is the ACLU's characterization, not a neutral fact."
+      ],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "Detroit agreed to new rules: no arrest on a face-match alone; the match is only a lead; and every past case that used the software to make an arrest would be reviewed.",
+        "A court would watch the department for four years to make sure it stuck."
+      ],
+      "prohibited_wording": [
+        "State 'the nation's strongest policy' as neutral fact (attribute it to the ACLU, or omit).",
+        "Say the rules apply nationwide or to all police."
+      ],
+      "temporal_scope": "2024-06",
+      "geographic_scope": "Detroit, Michigan",
+      "units": "audit since 2017; 4-year oversight",
+      "status": "approved",
+      "notes": "On-screen may burn 'JUNE 2024', 'SINCE 2017', '4 YEARS' (grade-A). Verbatim policy language to be locked against SRC-0003 before publish (non-blocking at script stage)."
+    },
+    {
+      "claim_id": "CLM-0010",
+      "normalized_claim": "Multiple independent outlets reported that the June 2024 settlement included a payment of about $300,000 to Williams, plus attorneys' fees.",
+      "importance": "supporting",
+      "sensitivity": "low",
+      "grade": "B",
+      "source_ids": ["SRC-0010"],
+      "evidence_locations": [
+        "Reason (2024), TechTimes (2024-06-29), AP-syndicated coverage: $300,000 payment"
+      ],
+      "counterevidence": [
+        "The $300,000 figure is not stated on the ACLU case page or press release; it rests on multiply-independent secondary reporting pending confirmation against the settlement PDF (SRC-0003)."
+      ],
+      "confidence": 0.7,
+      "allowed_wording": [
+        "The city, by news accounts, paid him around three hundred thousand dollars."
+      ],
+      "prohibited_wording": [
+        "Burn '$300,000' as on-screen text (grade-B).",
+        "State the figure without a 'reported' / 'by news accounts' hedge."
+      ],
+      "temporal_scope": "2024",
+      "geographic_scope": "Detroit, Michigan",
+      "units": "~$300,000 (reported)",
+      "status": "conditional",
+      "notes": "Grade-B, narration-only and hedged. fact_recheck [before publish]: confirm against SRC-0003."
+    },
+    {
+      "claim_id": "CLM-0011",
+      "normalized_claim": "Williams' case was the first publicly reported US wrongful arrest caused by a facial-recognition match — but not the first to occur: at least two other Black men (in Detroit and in New Jersey) had been arrested earlier on face-recognition matches, their cases coming to public attention later.",
+      "importance": "major",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0009"],
+      "evidence_locations": [
+        "ACLU case page: 'first publicly reported instance'",
+        "ACLU (2025) roster: Michael Oliver (Detroit, ~2019) and Nijeer Parks (New Jersey) arrested earlier, surfaced later"
+      ],
+      "counterevidence": [
+        "Chronologically, Oliver and Parks were arrested before Williams; the accurate claim is 'first publicly reported / first to reach national attention', not 'first ever'."
+      ],
+      "confidence": 0.9,
+      "allowed_wording": [
+        "His was the first case like it the country ever heard about.",
+        "It was the first to come to light — not, it turned out, the first to happen."
+      ],
+      "prohibited_wording": [
+        "Say he was 'the first person ever wrongly arrested by facial recognition.'",
+        "Burn 'FIRST EVER' on screen."
+      ],
+      "temporal_scope": "2019-2020",
+      "geographic_scope": "United States",
+      "units": "n/a",
+      "status": "approved",
+      "notes": "Framing caution: 'first publicly reported / first to reach national attention' only. On-screen may say 'FIRST CASE THE COUNTRY HEARD ABOUT'; never 'first ever'."
+    },
+    {
+      "claim_id": "CLM-0012",
+      "normalized_claim": "Williams' case was not the last: other Americans were later wrongly arrested on facial-recognition matches — including a woman who was eight months pregnant — and by the ACLU's count there are more than a dozen documented such cases, the identified ones overwhelmingly involving Black Americans.",
+      "importance": "major",
+      "sensitivity": "high",
+      "grade": "B",
+      "source_ids": ["SRC-0009"],
+      "evidence_locations": [
+        "ACLU (2025): roster including Porcha Woodruff (arrested while eight months pregnant), Nijeer Parks, Michael Oliver, and others; 'more than a dozen' aggregate"
+      ],
+      "counterevidence": [
+        "The 'more than a dozen' total is a single advocacy tally; individual later cases (Woodruff, Parks, Oliver) are corroborated by independent outlets, but the aggregate must be attributed."
+      ],
+      "confidence": 0.75,
+      "allowed_wording": [
+        "Others followed — including a woman arrested while she was eight months pregnant.",
+        "By the count of the group that represented him, there are now more than a dozen known cases like his."
+      ],
+      "prohibited_wording": [
+        "Burn 'MORE THAN A DOZEN' or a specific count as on-screen text (grade-B; attribute in narration).",
+        "State the aggregate as an official government figure."
+      ],
+      "temporal_scope": "2019-2025",
+      "geographic_scope": "United States",
+      "units": "'more than a dozen' (ACLU tally)",
+      "status": "conditional",
+      "notes": "Existence of later cases grade-A; aggregate grade-B and attributed. Woodruff (pregnant) is the sharp, corroborated human beat."
+    },
+    {
+      "claim_id": "CLM-0013",
+      "normalized_claim": "GUARDRAIL (do-not-assert): the episode must not depict Williams' or his family's likeness, must not present any generated surveillance still or booking image as authentic, must not name or accuse individual officers, must present the race-accuracy gap as measured false-positive differentials with the training-data counter-finding rather than an unqualified verdict, and must keep the $300,000 and 'more than a dozen' figures reporting-attributed.",
+      "importance": "context",
+      "sensitivity": "high",
+      "grade": "A",
+      "source_ids": ["SRC-0001", "SRC-0007", "SRC-0009"],
+      "evidence_locations": [
+        "CLAUDE.md invariant 11; topic risk_notes; NIST counter-finding (SRC-0007); ACLU roster caveats (SRC-0009)"
+      ],
+      "counterevidence": [],
+      "confidence": 0.99,
+      "allowed_wording": [],
+      "prohibited_wording": [
+        "Any real-person likeness of Williams, his family, or named officers.",
+        "Presenting a generated visual as authentic evidence or footage.",
+        "An unqualified 'the technology is racist' verdict without the measured framing and counter-finding."
+      ],
+      "temporal_scope": "n/a",
+      "geographic_scope": "n/a",
+      "units": "n/a",
+      "status": "conditional",
+      "notes": "Governing guardrail attached to the sensitive spans (hook, accuracy act, ending). Not a positive on-screen assertion."
+    }
+  ],
+  "qc": {
+    "critical_supported": true,
+    "e_claims_in_script_allowed": false,
+    "status": "warn",
+    "findings": [
+      "13 claims CLM-0001..0013 graded and source-linked. All critical claims (CLM-0001/0002/0004/0009) rest on grade-A primary or high-quality independent sources (ACLU case record, NYT/NPR contemporaneous reporting, court-filed settlement). Accuracy-gap claims (CLM-0005/0006) rest on grade-A primary studies (NIST NISTIR 8280; Gender Shades PMLR 2018).",
+      "Grade-B / conditional claims are narration-only and hedged, and are BARRED from on-screen number burns per verify_onscreen_text's grade-A floor: CLM-0003 (theft figures ~$3,800/~5 watches), CLM-0010 ($300,000 settlement amount), CLM-0012 ('more than a dozen' aggregate). The March 2019 search date and Jan 9 2020 arrest date are likewise held to narration hedges ('early 2019', 'January 2020').",
+      "Framing cautions locked: CLM-0011 is 'first PUBLICLY REPORTED', never 'first ever' (Oliver/Parks arrested earlier); CLM-0005 presents measured false-positive differentials WITH the Asia-developed-algorithm counter-finding, never an unqualified 'racist' verdict; CLM-0006 is labeled gender-classification, a task distinct from the identity-matching that arrested Williams; 'nation's strongest policy' (CLM-0009) is attributed to the ACLU, not stated as neutral fact.",
+      "R2 + invariant 11: Robert Williams and his family are living private individuals — role/record only, no likeness (CLM-0013 guardrail). Detroit PD and the software vendor (DataWorks Plus) described factually and neutrally; individual officers not named or accused; generated visuals are reconstruction, never authentic evidence.",
+      "Open rechecks (non-blocking at research stage; status 'warn'): confirm the $300,000 figure and verbatim settlement policy language against the court-filed settlement PDF (SRC-0003); confirm theft figures and the March 2019 search date against MIT Tech Review + wire copy; capture durable content hashes / re-confirm live URLs for SRC-0001..0010 before publish."
+    ]
+  }
+}

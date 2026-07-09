@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-036-williams",
+  "revision": "v001",
+  "stage": "script_qc",
+  "metrics": {
+    "narration_words": 1777,
+    "sentences": 120,
+    "avg_sentence_words": 14.8,
+    "flesch_kincaid_grade": 6.5,
+    "est_duration_minutes": 11.8,
+    "sentence_length_cv": 0.71,
+    "em_dash_per_100w": 0.9,
+    "ai_filler_hits": {},
+    "claim_link_consistency": "pass"
+  },
+  "status": "pass",
+  "findings": [
+    "Structure: 8s cold-open threat hook (19 words, under the 8.0s / 20-word ship-gate budget) -> OP title card (no VO) -> 4 body acts -> ENDING/CTA that opens the next-arc loop ('the case we take apart next'). Second-person by the first line of ACT I (well under the 5:30 gate). Re-hook / engagement label on every span (stake/tension/question/reveal/escalation/payoff/twist/rehook/cta), no gap over ~2:50.",
+    "Open loops all closed before the ending: umbrella loop 'how a machine could pick you' (SPN-0002) pays off across ACT II (the match) and ACT III (the measured pattern); 'how did they get his name?' (SPN-0004) pays off at SPN-0008; 'why his face?' (SPN-0008) pays off at SPN-0009/0010; hook promise pays off in ACT II.",
+    "Readability/lint: validator FK 6.4 (<= 9.5), avg sentence 14.6 words, sentence-length CV 0.69 (>= 0.45 robotic-cadence floor), em-dash density ~0.9/100w. Zero banned AI-filler phrases (standard 8 + extended ship-gate list). Proper nouns kept sparse in the VO (federal study / civil-rights lawyers / the software / the group that represented him instead of NIST / ACLU / DataWorks Plus) to stay under the 0.10 proper-noun ceiling; those names live in claims/sources, not the narration.",
+    "Length/timing: validator counts ~1,777 VO words; at 150 wpm that reads ~11.8 narration-minutes (inside the standard 10.0-12.8 band); the structure linter at 160wpm reads 11:02. Ship-gate remains check_runtime_band.py on the real TTS render (target 11.5-12.5 min); designed pauses + OP + SFX + ED ambience fill the band. annotated estimated_duration_seconds = 725.",
+    "Structure linter (verify_script_structure) PASS: skeleton hook -> opening -> 4 body acts -> ending; hook 7.1s (<= 8s); re-hook max gap 1:04 (<= 2:50); second-person at 0:00; all open loops closed. verify_script_lint PASS (cadence CV 0.71, proper-noun density 0.005, zero banned cliches). verify_onscreen_text skips at script stage (film json is a downstream artifact).",
+    "Fact discipline: 16 VO spans link to CLM-0001..0013; every claim referenced at least once; zero dangling refs; chapter span_ids set == spans set (SPN-0001..0016). Critical claims (CLM-0001/0002/0004/0009) rest on grade-A sources; accuracy-gap claims (CLM-0005/0006) on grade-A primary studies.",
+    "On-screen text discipline (verify_onscreen_text grade-A floor): every burned number/date traces to a grade-A claim — JANUARY 2020 & ~30 HOURS (CLM-0001), 2018 (CLM-0006), 10-100x & NIST 2019 (CLM-0005), APRIL 2021 (CLM-0008), JUNE 2024 & SINCE 2017 & 4 YEARS (CLM-0009). Grade-B figures are NARRATION-ONLY and hedged, never burned: theft ~$3,800/~5 watches ('a few thousand dollars'), settlement ~$300,000 ('by news accounts, around'), 'more than a dozen' ('by the count of the group that represented him'), and the 34.7%/0.8% gender-classification figures.",
+    "R2 + invariant 11 held: Robert Williams and his family are living private individuals — role/record only, no likeness; Detroit PD and the software vendor described neutrally; individual officers not named or accused; the race-accuracy gap is presented as measured false-positive differentials WITH the training-data counter-finding (never an unqualified 'racist' verdict); Gender Shades labeled gender-classification (a task distinct from the identity-matching that arrested Williams); 'first publicly reported' framing, never 'first ever'; 'one of the strictest limits' paraphrase rather than asserting the ACLU's 'nation's strongest' as neutral fact.",
+    "Open primary rechecks carried from research (non-blocking at script stage): confirm the $300,000 amount and verbatim settlement policy language against the court-filed settlement PDF (SRC-0003); confirm theft figures and the March 2019 search date against MIT Tech Review + wire copy. Narration is already hedged for each, so no re-lock of spans is required if figures shift."
+  ]
+}
