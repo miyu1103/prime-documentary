@@ -210,13 +210,18 @@ CHAPTER_AMBIENCE_DEFAULT: dict[str, str] = {
     "ending":  "amb_night_window.mp3",         # calm indoor resolve for the CTA (bookends the hook).
                                                # NOT amb_light_wind: its broadband roar read as a
                                                # "飛行機の音みたいな変な音" under the outro (owner 2026-07-06).
+    # Named-chapter defaults (data-driven CaseFilm episodes use descriptive ids, not act1..4).
+    # reckoning_and_limits = legal doctrine's boundaries -> institutional weight, NOT highway traffic.
+    # A ~4min legal-reckoning chapter under highway hum reads as an ambience mismatch (owner 2026-07-10:
+    # "変な効果音でミスマッチはないか気を付けて").
+    "reckoning_and_limits": "amb_institutional_drone.mp3",
 }
 
 # Chapters whose ambience bed is LOCKED to CHAPTER_AMBIENCE_DEFAULT and never overridden by keyword
 # matching. The Ending is the CTA/outro: its VO says "open road", which would otherwise trigger the
 # outdoor/wind bed (amb_light_wind) whose roar sounds like a jet under the quiet outro. The CTA tone
 # must be controlled, not driven by an incidental word.
-FORCED_DEFAULT_CHAPTERS = {"ending"}
+FORCED_DEFAULT_CHAPTERS = {"ending", "reckoning_and_limits"}
 
 # ---- M4: one-shot SFX map (curated from build_case_sound_design) -----------
 # (keywords, filename, dur_hint_sec, linear_volume). First match wins; order matters.
@@ -234,10 +239,15 @@ ONESHOT_MAP: list[tuple[tuple[str, ...], str, float, float]] = [
     (("pass-by", "pass by", "whip"),                    "sfx_whoosh_medium.mp3",   1.2, 0.18),
     (("engine pull", "pull"),                           "sfx_whoosh_medium.mp3",   1.2, 0.18),
     (("whoosh", "swoosh"),                              "sfx_whoosh_short.mp3",    0.8, 0.18),
-    (("data-blip", "data blip", "blip"),                "sfx_data_blip.mp3",       0.8, 0.14),
-    (("period-beat", "type tick", "type ticks", "ui-tick", "ui tick"), "sfx_ui_tick.mp3", 0.5, 0.12),
-    (("clink", "glass"),                                "sfx_ui_tick.mp3",         0.4, 0.12),
-    (("tick", "check"),                                 "sfx_ui_tick.mp3",         0.5, 0.12),
+    # Owner directive (2026-07-10, EP32 retro): retire the UI "pico-pico" blip/tick
+    # timbre. Data/ledger/typing beats now fire ORGANIC, meaningful textures
+    # (paper rustle for ledger data, page turn for typed captions, soft counter
+    # taps) instead of sfx_data_blip / sfx_ui_tick. The keywords still LAND a
+    # one-shot on the same word — only the sample changes to a non-UI sound.
+    (("data-blip", "data blip", "blip"),                "sfx_paper_rustle.mp3",    0.9, 0.16),
+    (("period-beat", "type tick", "type ticks", "ui-tick", "ui tick"), "sfx_page_turn.mp3", 0.9, 0.16),
+    (("clink", "glass"),                                "sfx_soft_impact.mp3",     0.6, 0.16),
+    (("tick", "check"),                                 "sfx_soft_impact.mp3",     0.6, 0.16),
     (("click", "mechanical", "metallic", "lock", "latch", "binder", "turn"), "sfx_binder_lock.mp3", 0.7, 0.16),
     (("footstep", "steps"),                             "sfx_soft_impact.mp3",     0.8, 0.12),
     (("impact", "thud", "hit", "slam"),                 "sfx_soft_impact.mp3",     1.0, 0.24),
@@ -465,7 +475,7 @@ def load_index(path: Path) -> dict:
 def find_chunk_audio(media: Path, ep: str, vc_id: str) -> Optional[Path]:
     """Prefer a per-chunk audio file (measured duration) if one exists."""
     voice = media / "episodes" / ep / "06_voice"
-    for sub in ("draft", "chunks", "master/chunks", "master"):
+    for sub in ("draft_nPcz", "draft", "chunks", "master/chunks", "master"):
         d = voice / sub
         if not d.exists():
             continue
@@ -700,8 +710,9 @@ def map_oneshot(low: str) -> Optional[tuple[str, float, float]]:
 VARIANT_POOLS: dict[str, tuple[str, ...]] = {
     "sfx_whoosh_short.mp3": ("sfx_whoosh_short.mp3", "sfx_whoosh_v2_short.mp3", "sfx_whoosh_v2_med.mp3", "sfx_whoosh_v2_long.mp3"),
     "sfx_whoosh_medium.mp3": ("sfx_whoosh_medium.mp3", "sfx_whoosh_v2_med.mp3", "sfx_whoosh_v2_long.mp3"),
-    "sfx_ui_tick.mp3": ("sfx_ui_tick.mp3", "sfx_tick_v2_hi.mp3", "sfx_tick_v2_lo.mp3"),
-    "sfx_data_blip.mp3": ("sfx_data_blip.mp3", "sfx_blip_v2_hi.mp3", "sfx_blip_v2_lo.mp3"),
+    # sfx_ui_tick / sfx_data_blip pools retired (2026-07-10): the UI blip/tick
+    # timbre is no longer mapped by ONESHOT_MAP, so these bases are never selected
+    # and their variant rotation would only reintroduce the "pico-pico" sound.
     "sfx_sub_drop.mp3": ("sfx_sub_drop.mp3", "sfx_subdrop_v2_a.mp3", "sfx_subdrop_v2_b.mp3"),
     "sfx_riser_2s.mp3": ("sfx_riser_2s.mp3", "sfx_riser_v2_1s.mp3", "sfx_riser_v2_3s.mp3"),
     "sfx_soft_impact.mp3": ("sfx_soft_impact.mp3", "sfx_impact_v2_tight.mp3"),
@@ -1071,6 +1082,7 @@ def main() -> int:
     ap.add_argument("--index", help="narration_index JSON (default: episodes/<ep>/06_audio/narration_index.v001.json)")
     ap.add_argument("--out", help="provenance JSON (default: episodes/<ep>/06_audio/audio_provenance.<rev>.json)")
     ap.add_argument("--film-data", help="CaseFilm data JSON for the video timeline (default: remotion/public/<slug>/film_data.v001.json)")
+    ap.add_argument("--narration-master", help="narration master audio path (default: media/episodes/<ep>/06_voice/master/vc_master_v001.mp3). Use to point at a re-voiced/time-fit master without renaming the v001 artifact.")
     ap.add_argument("--revision", default=REVISION_DEFAULT)
     ap.add_argument("--dry-run", action="store_true", help="emit ffmpeg command + provenance only; never run ffmpeg")
     ap.add_argument("--render", action="store_true", help="run ffmpeg (only if not --dry-run and every input exists)")
@@ -1129,7 +1141,8 @@ def main() -> int:
     density = compute_density(sfx, beds, spans, total)
 
     # ---- expected (not-yet-existing) narration master + outputs -------------
-    narration_master = media / "episodes" / ep / "06_voice" / "master" / "vc_master_v001.mp3"
+    narration_master = (Path(args.narration_master) if args.narration_master
+                        else media / "episodes" / ep / "06_voice" / "master" / "vc_master_v001.mp3")
     wav_name = f"{ep}_film_audio_{args.revision}.wav"
     out_wav = media / "episodes" / ep / "06_audio" / "mix" / wav_name
     render_audio_copy = media / "episodes" / ep / "08_edit" / "audio" / wav_name
@@ -1248,7 +1261,7 @@ def main() -> int:
         "layers": {
             "narration": {
                 "role": "front / sidechain-priority (VO wins)",
-                "master_uri": f"artifact://episodes/{ep}/06_voice/master/vc_master_v001.mp3",
+                "master_uri": f"artifact://episodes/{ep}/06_voice/master/{narration_master.name}",
                 "master_path_expected": str(narration_master),
                 "master_exists": narration_master.exists(),
                 "gain_db": 0.0,

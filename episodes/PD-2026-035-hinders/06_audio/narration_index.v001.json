@@ -5,7 +5,7 @@
   "language": "en",
   "mode": "chunked_verbatim",
   "provider": "elevenlabs",
-  "voice_id": "n8kTUi6dVrplENT9Un56",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
   "model_id": "eleven_multilingual_v2",
   "wpm_estimate": 150.0,
   "source": "03_script/script.annotated.v001.json (chapters->spans)",
@@ -2062,13 +2062,16 @@
   ],
   "generation": {
     "provider": "ElevenLabs",
-    "voice_id": "n8kTUi6dVrplENT9Un56",
+    "voice_id": "nPczCjzI2devNBz1zQrb",
     "model_id": "eleven_multilingual_v2",
-    "master": "artifact://episodes/PD-2026-035-hinders/06_voice/master/vc_master_v001.mp3",
+    "master": "artifact://episodes/PD-2026-035-hinders/06_voice/master/vc_master_v002.mp3",
     "estimated_cost_usd": 5.21,
     "generated_total_seconds": 1134.803,
     "generated_at": "2026-07-09T01:00:41+0900",
     "gap_beat_seconds": 0.6,
-    "gap_section_seconds": 2.5
+    "gap_section_seconds": 2.5,
+    "revoiced_at": "2026-07-10T01:11:34+0900",
+    "revoice_note": "re-voiced to channel voice nPczCjzI2devNBz1zQrb; per-chunk time-fit (atempo) into the fixed narration_index slots so start/end/seconds are unchanged (timeline contract preserved)",
+    "revoiced_master_seconds": 1134.803
   }
 }
