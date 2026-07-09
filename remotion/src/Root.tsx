@@ -37,6 +37,7 @@ import {CaseFilm, caseFilmDurationInFrames, FilmData} from './compositions/CaseF
 import {AircashFigTest, AIRCASH_FIG_TEST_FRAMES} from './compositions/AircashFigTest';
 import {HindersFigTest, HINDERS_FIG_TEST_FRAMES} from './compositions/HindersFigTest';
 import kylloFilm from './data/kyllo_film.json';
+import tylerFilm from './data/tyler_film.json';
 import katzFilm from './data/katz_film.json';
 import rodriguezFilm from './data/rodriguez_film.json';
 import cottonFilm from './data/cotton_film.json';
@@ -45,6 +46,7 @@ import forfeitureFilm from './data/forfeiture_film.json';
 import hindersFilm from './data/hinders_film.json';
 import hintonFilm from './data/hinton_film.json';
 import carsearchFilm from './data/carsearch_film.json';
+import rolinFilm from './data/rolin_film.json';
 import {CarsearchThumbnail, CARSEARCH_THUMBS} from './compositions/CarsearchThumbnails';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
@@ -1557,6 +1559,22 @@ export const RemotionRoot: React.FC = () => {
           subtitle: 'Carroll (1925) · Collins v. Virginia (2018)',
         }}
       />
+      {/* EP34 rolin — airport civil forfeiture. 60fps super-heavy (data.fps=60; CaseFilm reads
+          useVideoConfig().fps). Blender heroes composite via data.heroCuts. */}
+      <Composition
+        id="CaseFilm-rolin"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(rolinFilm as unknown as FilmData, 60)}
+        fps={60}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: rolinFilm as unknown as FilmData,
+          seriesLabel: 'KNOW YOUR RIGHTS',
+          title: 'They Took His Cash at the Airport',
+          subtitle: 'Civil Forfeiture · No Charge · No Crime',
+        }}
+      />
       <Composition
         id="CaseFilm-hinton"
         component={CaseFilm}
@@ -1607,6 +1625,20 @@ export const RemotionRoot: React.FC = () => {
           seriesLabel: 'LANDMARK RIGHTS',
           title: 'They Scanned His Home From the Street',
           subtitle: 'Kyllo v. United States (2001)',
+        }}
+      />
+      <Composition
+        id="CaseFilm-tyler"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(tylerFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: tylerFilm as unknown as FilmData,
+          seriesLabel: 'THEY DID NOTHING WRONG',
+          title: 'The $2,300 That Took a House',
+          subtitle: 'Tyler v. Hennepin County (2023)',
         }}
       />
       <Composition
