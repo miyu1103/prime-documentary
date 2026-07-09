@@ -17,6 +17,7 @@ placeholder is clearly flagged in the output (`timing: "placeholder_anchors"`).
 from __future__ import annotations
 
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -53,6 +54,37 @@ def available_images() -> list[str]:
     return [f"hinders/img/{n}" for n in imgs]
 
 
+OPENING_SEC = 3.5  # Bookends.tsx OPENING_SEC (CaseFilm lead = hookSeconds + OPENING_SEC)
+
+
+def _norm(t: str) -> str:
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9 ]", " ", t.lower())).strip()
+
+
+def map_chunks_to_scenes(body_chunks: list[dict], body_scenes: list[dict]) -> dict[str, list[dict]]:
+    """Assign each narration chunk to the scene whose verbatim caption contains it
+    (text match on a normalized prefix); unmatched chunks inherit the previous
+    chunk's scene so the timeline stays contiguous."""
+    norm_caps = {s["scene_id"]: _norm(s["caption_verbatim"]) for s in body_scenes}
+    order = [s["scene_id"] for s in body_scenes]
+    out: dict[str, list[dict]] = {sid: [] for sid in order}
+    last = order[0]
+    search_from = 0  # scenes are in narration order; only look forward
+    for c in body_chunks:
+        key = " ".join(_norm(c["text"]).split()[:7])
+        hit = None
+        for j in range(search_from, len(order)):
+            if key and key in norm_caps[order[j]]:
+                hit = order[j]
+                search_from = j
+                break
+        if hit is None:
+            hit = last
+        out[hit].append(c)
+        last = hit
+    return out
+
+
 def narration_has_durations() -> bool:
     if not NARR_INDEX.exists():
         return False
@@ -72,57 +104,88 @@ def main() -> int:
         print("no images in", IMG_DIR)
         return 1
 
-    # ---- placeholder timing from anchors (audio not ready) ----
     body_scenes = [s for s in scenes if s["act"] not in ("HOOK", "OP")]
-    body_start = anchor_sec(body_scenes[0]["script_anchor"])  # 0:19
-    # per-scene [start,end] within the BODY timeline (rebased to 0 at body start)
-    spans: dict[str, tuple[float, float]] = {}
-    for i, s in enumerate(body_scenes):
-        a = anchor_sec(s["script_anchor"]) - body_start
-        nxt = (anchor_sec(body_scenes[i + 1]["script_anchor"]) - body_start) if i + 1 < len(body_scenes) else (FILM_END_SEC - body_start)
-        spans[s["scene_id"]] = (round(a, 2), round(nxt, 2))
-    narration_seconds = round(FILM_END_SEC - body_start, 2)
+    hook_scene = next(s for s in scenes if s["act"] == "HOOK")
+    real = narration_has_durations()
 
-    cuts, figures, captions = [], [], []
+    # ---- per-scene BODY-relative [start,end] + captions ----
+    spans: dict[str, tuple[float, float]] = {}
+    captions: list[dict] = []
+    if real:
+        # REAL timing from narration_index (authoritative master timeline: chunk start/end).
+        narr = json.loads(NARR_INDEX.read_text(encoding="utf-8"))
+        chunks = narr["chunks"]
+        hook_chunks = [c for c in chunks if c["section"] == "COLD_OPEN_THREAT"]
+        body_chunks = [c for c in chunks if c["section"] != "COLD_OPEN_THREAT"]
+        abs_body = float(body_chunks[0]["start"])  # body starts here on the master timeline
+        # CaseFilm lead = hookSeconds + OPENING_SEC must equal abs_body so body aligns to the master.
+        hook_seconds = round(abs_body - OPENING_SEC, 2)
+        narration_seconds = round(float(body_chunks[-1]["end"]) - abs_body, 2)
+        mapping = map_chunks_to_scenes(body_chunks, body_scenes)
+        prev_end = 0.0
+        for s in body_scenes:
+            cs = mapping[s["scene_id"]]
+            if cs:
+                st = round(float(cs[0]["start"]) - abs_body, 2)
+                en = round(float(cs[-1]["end"]) - abs_body, 2)
+            else:
+                st = en = prev_end  # unmatched scene -> zero-length at the seam (no black gap)
+            spans[s["scene_id"]] = (st, en)
+            prev_end = max(prev_end, en)
+        # captions straight from the body chunks -> caption == narration (the #1-failure guard)
+        for c in body_chunks:
+            captions.append({"start": round(float(c["start"]) - abs_body, 2),
+                             "end": round(float(c["end"]) - abs_body, 2), "text": c["text"]})
+        hook_line = hook_chunks[0]["text"] if hook_chunks else ""
+        timing_label = "narration_index"
+    else:
+        # placeholder anchors (audio not ready)
+        body_start = anchor_sec(body_scenes[0]["script_anchor"])
+        for i, s in enumerate(body_scenes):
+            a = anchor_sec(s["script_anchor"]) - body_start
+            nxt = (anchor_sec(body_scenes[i + 1]["script_anchor"]) - body_start) if i + 1 < len(body_scenes) else (FILM_END_SEC - body_start)
+            spans[s["scene_id"]] = (round(a, 2), round(nxt, 2))
+            if s["caption_verbatim"]:
+                captions.append({"start": round(a, 2), "end": round(nxt, 2), "text": s["caption_verbatim"]})
+        narration_seconds = round(FILM_END_SEC - body_start, 2)
+        hook_seconds = HOOK_END
+        hook_line = hook_scene["caption_verbatim"].split(" — ")[0] if hook_scene["caption_verbatim"] else ""
+        timing_label = "placeholder_anchors"
+
+    # ---- cuts (CONTIGUOUS tiling so there is never a black gap) + figures ----
+    order = sorted(body_scenes, key=lambda s: spans[s["scene_id"]][0])
+    cuts, figures = [], []
     img_i = 0
-    for s in body_scenes:
+    for idx, s in enumerate(order):
         sid = s["scene_id"]
-        st, en = spans[sid]
+        st, _ = spans[sid]
+        nxt = spans[order[idx + 1]["scene_id"]][0] if idx + 1 < len(order) else narration_seconds
+        dur = round(max(0.0, nxt - st), 2)
         lane = LANE.get(sid, "federal")
-        # one image cut spanning the scene (real still, treatment from plan)
         src = imgs[img_i % len(imgs)]
         img_i += 1
-        cuts.append({"start": st, "dur": round(en - st, 2), "kind": "img", "src": src,
-                     "treatment": s["treatment"], "seed": f"{sid}-cut"})
-        # primary figure beat (overlays the cut)
+        if dur > 0:
+            cuts.append({"start": st, "dur": dur, "kind": "img", "src": src,
+                         "treatment": s["treatment"], "seed": f"{sid}-cut"})
+        sc_end = spans[sid][1] if spans[sid][1] > st else nxt
         if s["figure"]:
-            figures.append({"start": st, "end": en, "kind": "hinders", "fid": s["figure"], "lane": lane})
-        # secondary figure beats (offset into the scene so they don't fully overlap)
-        for k, fid in enumerate(s.get("secondary_figures", []), 1):
-            mid = round(st + (en - st) * 0.5, 2)
-            figures.append({"start": mid, "end": en, "kind": "hinders", "fid": fid, "lane": lane})
-        # caption (verbatim; re-timed to the master when audio lands)
-        if s["caption_verbatim"]:
-            captions.append({"start": st, "end": en, "text": s["caption_verbatim"]})
+            figures.append({"start": st, "end": max(sc_end, st + 0.5), "kind": "hinders", "fid": s["figure"], "lane": lane})
+        for fid in s.get("secondary_figures", []):
+            mid = round(st + (sc_end - st) * 0.5, 2)
+            figures.append({"start": mid, "end": max(sc_end, mid + 0.5), "kind": "hinders", "fid": fid, "lane": lane})
 
-    hook_scene = next(s for s in scenes if s["act"] == "HOOK")
-    hook_cuts = []
-    for j in range(4):
-        hook_cuts.append({"start": round(j * (HOOK_END / 4), 2), "dur": round(HOOK_END / 4, 2),
-                          "kind": "img", "src": imgs[j % len(imgs)], "seed": f"hook-{j}"})
+    hook_cuts = [{"start": round(j * (hook_seconds / 4), 2), "dur": round(hook_seconds / 4, 2),
+                  "kind": "img", "src": imgs[j % len(imgs)], "seed": f"hook-{j}"} for j in range(4)]
 
     film = {
         "episode_id": EP,
         "fps": 30,
-        # This scaffold ALWAYS uses anchor-derived placeholder timing. Consuming the audio thread's
-        # per-chunk durations (token-matching 170 chunks -> 30 scenes) is the film builder's next step,
-        # done once real narration exists. narration_index_ready flags when that data has landed.
-        "timing": "placeholder_anchors",
-        "narration_index_ready": narration_has_durations(),
+        "timing": timing_label,
+        "narration_index_ready": real,
         "narration": "hinders/audio/hinders_final_mix.v001.wav",
         "narrationSeconds": narration_seconds,
-        "hookSeconds": HOOK_END,
-        "hookLine": hook_scene["caption_verbatim"].split(" — ")[0] if hook_scene["caption_verbatim"] else "",
+        "hookSeconds": hook_seconds,
+        "hookLine": hook_line,
         "hook": hook_cuts,
         "cuts": cuts,
         "captions": captions,

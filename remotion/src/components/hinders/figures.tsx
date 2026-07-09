@@ -93,6 +93,7 @@ const HeroVideo: React.FC<{srcKey: string}> = ({srcKey}) =>
       <OffthreadVideo
         src={staticFile(srcKey)}
         muted
+        loop
         style={{width: '100%', height: '100%', objectFit: 'cover'}}
       />
     </AbsoluteFill>
