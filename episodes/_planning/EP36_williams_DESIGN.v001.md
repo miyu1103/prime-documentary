@@ -98,7 +98,7 @@
 ---
 
 ## §6. 素材プラン
-- **Codexヒーロー静止画 18枚（S001–S018）:** `episodes/_planning/codex_prompt_ep36.md` の SHOT INDEX（ドライブウェイ再現／防犯フレーム再現／顔グリッド素材／booking再現／DMV／裁判所／door-frames列／解像する顔 等）。**肖像禁止・文字/数値焼き込み禁止・本物のexport/mugshot/記録に見せない（invariant 11）。** 生成は Codex（rule 19・SDXL勝手起動禁止）。
+- **Codexヒーロー静止画 30枚（S001–S030・オーナー指定）:** `episodes/_planning/codex_prompt_ep36.md` の SHOT INDEX＋本文プロンプト `EP36_williams_ai_prompts.v001.md`（ドライブウェイ再現／防犯フレーム再現／顔グリッド素材／booking再現／DMV／裁判所内外／case board／妊婦シルエット／家族の家／CCTV／解像する顔 等＋非被りバリアント）。18→30に増やしてb-roll依存を下げ `footage_diversity` に余裕。**肖像禁止・文字/数値焼き込み禁止・本物のexport/mugshot/記録に見せない（invariant 11）。** 生成は Codex（rule 19・SDXL勝手起動禁止）。
 - **コミット済み棚のb-roll:** 商用OK factory（テーマ抽出）。**出荷前に必ず目視QC**（メモリ pd-factory-shelf-mislabeled：ラベル破損・場違い素材混入の実績）。
 - **モーショングラフィック（コード生成・Claude）:** 顔グリッド／類似度メーター／偏りバー／年表／地図ピン／キネティック字幕／引用・事件カード。**画面の数値焼き込みは grade-A のみ**：`JANUARY 2020` `≈30 HOURS` `APRIL 2021` `JUNE 2024` `SINCE 2017` `4 YEARS` `10–100× · NIST 2019` `2018`(年号のみ・NYT裏付けA級)。**焼き込み禁止**：`$300,000`／`$3,800`／`5 watches`／`a dozen`／`34.7% / 0.8%`。
 
@@ -149,6 +149,8 @@
 - [x] Codex引き継ぎ（18ショット）
 - [x] **本設計書 v001**
 - [x] **OPENINGアニメ（正典BrandOpening・EP36 props）を描画・検証済み** — `remotion/src/ep36_opening_preview.tsx`（共有Root.tsxを触らない独立エントリ）で3.5s/105fをレンダ（`out/ep36_opening.mp4`）。実フレーム目視QC：f09=モノグラム着地のみ／f42=単語スタッガーのマスク切り上がり進行中（THE ALGORITHM着地・SAID着地中・IT上昇中）＋光streak＋Trail残像／f72=全要素着地（PDモノグラム／YOUR RIGHTS VS. THE MACHINE／ゴールド線／THE ALGORITHM SAID IT WAS YOU／サブタイトル）。品質規則充足＝全モーションにイージング・opacity単独なし・スタッガー・Trailモーションブラー・裏3層以上・マスク切れ上がり・肖像なし。**invariant 14遵守（正典フォークなし）**。
-- [ ] Codex画像18枚（GateB停止）→ 目視QC
-- [ ] 深度マップ／モーショングラフィック／factory選定（Claude）
-- [ ] film.json → CaseFilm組み立て → 本レンダ → 受領書 → オーナー承認
+- [x] **重いモーショングラフィックを先行構築・描画検証済み**（画像非依存）— `remotion/src/components/williams/`（FaceMatchGrid／BiasBars／CaseTimeline＝EP36新規）＋流用（NumberTicker=30 HOURS／PinDropMap=ONE CITY）。独立プレビュー `ep36_motion_preview.tsx` で各シーンをレンダし実フレーム目視QC（顔一致グリッド/偏りバー[10–100×・NIST 2019のみ・捏造%なし]/年表[grade-Aマーカー]/カウンター/マップ）。全モーションにイージング・Trail・裏3層・マスク切れ上がり・肖像なし・共有Root.tsx不変。
+- [ ] Codex画像30枚（GateB停止）→ 目視QC
+- [ ] 深度マップ（画像到着後）／残りの合成／factory選定・目視QC（Claude）
+- [ ] film.json → CaseFilm組み立て（先行アニメを配線）→ 本レンダ → 受領書 → オーナー承認
+- **現状=「画像待ち＋組み立てだけ」に到達**：台本(3回レビュー済)＋OP＋重いMG＋設計書＋Codex30枚プロンプトが揃い、残りは画像生成→深度→組み立て→レンダ。

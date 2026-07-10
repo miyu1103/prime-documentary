@@ -182,8 +182,20 @@ footage.**
 | S016 | Driveway VARIANT — wider, from the street, the two cruisers' light on the house | ACT I (non-repeat cut) |
 | S017 | Holding-cell VARIANT — tight on an institutional clock and a bolted door | ACT I (non-repeat cut) |
 | S018 | Face-scan VARIANT — extreme macro of a single eye crossed by a scan line | ACT III (non-repeat cut) |
+| S019 | Charges dropped — an empty prosecutor's office at dawn, a closed case file | ACT I / the release |
+| S020 | Server node macro — a single blinking cyan LED, reflected face-scan light | ACT I→II / the quiet machine, close-up |
+| S021 | The renewed license — an anonymous hand sliding an ID card across a DMV counter | ACT II / the everyday origin of the photo |
+| S022 | Data-center wide (alt angle) — converging racks, a lone catwalk | ACT II (non-repeat cut) |
+| S023 | Detective's case board — pinned blurred photos + string under a cold lamp | ACT II / building the case on a guess |
+| S024 | The pregnant-woman door — a heavily-pregnant SILHOUETTE only in a doorway, police light | ACT IV / he was not the last |
+| S025 | Courtroom interior (empty, archetypal, no real seals) | ACT IV / settlement & oversight |
+| S026 | Wall of anonymous ID photos (blurred backing for "you're in the lineup") | ACT III (non-repeat cut) |
+| S027 | Family home, empty — warm living room at blue hour, children's shoes by the door | ACT I / the human stakes |
+| S028 | Booking hands macro — anonymous wrists in cuffs on steel under fluorescent light | ACT I (non-repeat cut) |
+| S029 | CCTV looking at you — a dusk street camera angled toward the lens | ENDING / walk past a camera |
+| S030 | Final resolve (golden hour) — the resolved frame, a person walking away, warm | ENDING (alt to S015) |
 
-**Count: 18 hero stills (S001–S018).** Deliver as `PD-2026-036-S0NN-IMG-001.png` per §5. This count may be
-refined by ±a few in the scene-planning pass; the prompt pack is authoritative for the final list. Every
-figure anonymous; every store-camera/booking beat a stylized reconstruction, never a real record
-(Invariant 11).
+**Count: 30 hero stills (S001–S030).** Deliver as `PD-2026-036-S0NN-IMG-001.png` per §5. Owner-set count
+(30) to reduce b-roll dependence and clear footage_diversity with margin; the prompt pack
+(`EP36_williams_ai_prompts.v001.md`) is authoritative for the final list. Every figure anonymous; every
+store-camera/booking beat a stylized reconstruction, never a real record (Invariant 11).

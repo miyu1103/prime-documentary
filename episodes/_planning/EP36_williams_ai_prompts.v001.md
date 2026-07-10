@@ -63,5 +63,41 @@ Cinematic still, the holding world of S004 but tighter and different: a macro on
 ## S018 — Face-scan VARIANT (ACT III / non-repeat cut)
 Cinematic extreme macro still, a single anonymous human eye and brow crossed by a thin horizontal cyan scan-line, the rest of the face falling into shadow / out of frame so no identity is legible — the machine's gaze, intimate and cold. Reflected grid light in the iris (abstract, no readable UI). Cold cyan key, deep shadow, volumetric haze, fine grain, shallow DOF. Distinct from all other shots for a sharp cutaway. No recognizable person. 16:9. [+global negative]
 
+## S019 — Charges dropped (ACT I / the release)
+Cinematic still, an empty prosecutor's office at dawn: a plain desk, a closed manila case file with a faint "closed" gesture (no readable text), a single cold window light, an empty chair — the quiet moment a case is abandoned. No people. Desaturated slate with a thin warm dawn accent, shallow DOF, volumetric haze, filmic grain. Negative space upper area for text. Archetypal, no real seals/logos. Reconstruction. 16:9. [+global negative]
+
+## S020 — Server node macro (ACT I→II / the quiet machine, close-up)
+Cinematic extreme macro still, a single server/blade node in deep shadow, one small blinking cyan indicator LED, faint reflected face-scan grid light across the metal, dust in the air — the intimate face of the machine that "watched." No people, no readable text/UI. Cold cyan key, deep blacks with detail, volumetric haze, fine grain, shallow DOF. Clean negative space for overlay. 16:9. [+global negative]
+
+## S021 — The renewed license (ACT II / the everyday origin)
+Cinematic still, a DMV counter moment: an anonymous hand sliding a plastic ID card across a worn counter under flat institutional light — hand only, no face, the card blurred/illegible (no readable text or photo). The mundane instant an ordinary photo entered a database. Desaturated slate, cool overhead light, shallow DOF, grain. Negative space above. No real logos/signage. Reconstruction. 16:9. [+global negative]
+
+## S022 — Data-center wide (ACT II / alt angle)
+Cinematic wide still, a different angle on a vast dark data center: long converging rows of racks under cold blue light, a thin haze, a lone catwalk, a sense of scale and indifference. No people, no text. Distinct framing from the other machine shots for non-repeating cuts. Cold blue-black, volumetric depth for parallax, cinematic grain, HDR. Central negative space for a grid/number overlay. 16:9. [+global negative]
+
+## S023 — Detective's case board (ACT II / building the case)
+Cinematic still, a dim reconstruction of a detective's case board / desk: pinned anonymous blurred photographs and a few connecting strings, a cold desk lamp pool, coffee ring, papers face-down (all illegible). No faces, no readable text, no real insignia. The machinery of a case built on a guess. Desaturated with warm lamp accent, shallow DOF, grain, haze. Negative space top-right for text. Reconstruction. 16:9. [+global negative]
+
+## S024 — The pregnant-woman door (ACT IV / he was not the last)
+Cinematic still, a dignified silhouette-only beat: a clearly heavily-pregnant woman's shadow/silhouette standing in a home doorway at dusk, cold police light washing in from outside, warm interior behind — rendered ONLY as a silhouette/shadow, no face, no identity, treated with gravity and respect (no criminalizing framing). Desaturated slate, cold-vs-warm contrast, volumetric haze, shallow DOF, grain. Negative space for a lower-third. Reconstruction, never a real record. 16:9. [+global negative]
+
+## S025 — Courtroom interior (ACT IV / settlement & oversight)
+Cinematic still, a neutral archetypal courtroom interior, empty, low warm light on rows of wooden benches and a distant bench, NO real seals/flags/insignia, no recognizable real room. A sense of a hard-won institutional check. Desaturated with a single warm accent, volumetric haze, shallow DOF, HDR, grain. Negative space center for a timeline/oversight overlay. Reconstruction. 16:9. [+global negative]
+
+## S026 — Wall of ID photos (ACT III / you're in the lineup, backing)
+Cinematic still, a vast wall/array of small anonymous ID-style photo panels receding in soft focus, every panel blurred beyond recognition (no real faces), lit by a cold cyan scan glow — a neutral backing plate suggesting "everyone is in the database." No readable text/numbers/UI. Cold cyan, depth for parallax, filmic grain. Generous clean negative space for overlay type. Abstract, not a real system. 16:9. [+global negative]
+
+## S027 — The family home, empty (ACT I / the human stakes)
+Cinematic still, a warm ordinary American family living room at blue hour, empty: soft lamp light, children's small shoes by the door, a couch, a window — the life that the cold intrusion touches. No people, no faces. Warm domestic amber against cool window light, shallow DOF, volumetric haze, filmic grain, HDR. Negative space for text. Archetypal, no real brands. Reconstruction. 16:9. [+global negative]
+
+## S028 — Booking hands macro (ACT I / cuffs, detail)
+Cinematic extreme macro still, cold institutional detail: anonymous wrists in handcuffs resting on a steel surface under green-white fluorescent light, skin and metal texture, shallow focus — hands/wrists only, no face, dignified, non-sensational. Desaturated green-white, deep shadow, fine grain. Distinct from the wider holding shots for a sharp cutaway. Reconstruction, not a real record. 16:9. [+global negative]
+
+## S029 — CCTV looking at you (ENDING / walk past a camera)
+Cinematic still, a dusk city street corner with a single security/CCTV camera mounted high, angled slightly toward the lens as if watching the viewer, faint cyan glow on its housing, blurred anonymous pedestrians far below. First-person "it's watching you" framing. Desaturated slate with cyan accent, volumetric haze, shallow DOF, grain, HDR. Negative space sky for end text. No real brand/landmark. 16:9. [+global negative]
+
+## S030 — Final resolve, golden hour (ENDING / alt to S015)
+Cinematic still, the hook's grainy frame fully resolved and at peace: an ordinary anonymous person seen three-quarter rear at golden hour, warm rim-light, face unseen, quietly walking away down a suburban street — from cold machine-noise to human warmth. Desaturated slate warming to gold, soft haze, shallow DOF, filmic grain. Centered subject with breathing room for the end-card. Reconstruction. 16:9. [+global negative]
+
 ---
-**18 stills, S001–S018.** After generating: one labeled contact sheet + full-res files → STOP at Gate B for owner/Claude review (per codex_prompt_ep36.md §6).
+**30 stills, S001–S030.** After generating: one labeled contact sheet + full-res files → STOP at Gate B for owner/Claude review (per codex_prompt_ep36.md §6).
