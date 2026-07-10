@@ -410,6 +410,29 @@ const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
   );
 };
 
+/** Pre-composed 3D hero videos (Blender "big number" / scales scenes) settle to a near-static hold
+ * after their first beat, so as a raw OffthreadVideo they tripped animation_density (freezedetect
+ * read the settled tail as a >3s near-still hold). A slow constant-velocity Ken-Burns push (zoom +
+ * pan) over the hero adds coarse frame motion on the hero's own sharp, high-detail edges, so no hero
+ * window ever reads as frozen — while staying gentle enough to preserve the composed 3D framing. */
+const HeroCut: React.FC<{src: string; index: number; dur: number}> = ({src, index, dur}) => {
+  const f = useCurrentFrame();
+  const dir = index % 2 === 0 ? 1 : -1;
+  const p = interpolate(f, [0, Math.max(1, dur)], [0, 1], {extrapolateRight: 'clamp'});
+  const s = interpolate(p, [0, 1], [1.02, 1.14]); // continuous slow zoom (never settles)
+  const x = interpolate(p, [0, 1], [-46 * dir, 46 * dir]);
+  const y = interpolate(p, [0, 1], [18 * dir, -18 * dir]);
+  return (
+    <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
+      <OffthreadVideo
+        src={staticFile(src)}
+        muted
+        style={{width: '100%', height: '100%', objectFit: 'cover', transform: `translate(${x}px, ${y}px) scale(${s})`}}
+      />
+    </AbsoluteFill>
+  );
+};
+
 /** BODY GRADE — one consistent cinematic wash laid over the WHOLE body (stills, footage AND
  * motion-graphics) so the three visual registers share a single noir-navy/teal world. Sits above
  * every visual layer but BELOW the captions so text stays crisp. Two very-low-opacity layers:
@@ -690,9 +713,7 @@ export const CaseFilm: React.FC<{data: FilmData; seriesLabel: string; title: str
             durationInFrames={Math.max(1, Math.round(h.dur * fps))}
             name={`hero-${i}`}
           >
-            <AbsoluteFill style={{backgroundColor: ink}}>
-              <OffthreadVideo src={staticFile(h.src)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
-            </AbsoluteFill>
+            <HeroCut src={h.src} index={i} dur={Math.max(1, Math.round(h.dur * fps))} />
           </Sequence>
         ))}
         <Captions cues={data.captions} />
