@@ -150,7 +150,11 @@
 - [x] **本設計書 v001**
 - [x] **OPENINGアニメ（正典BrandOpening・EP36 props）を描画・検証済み** — `remotion/src/ep36_opening_preview.tsx`（共有Root.tsxを触らない独立エントリ）で3.5s/105fをレンダ（`out/ep36_opening.mp4`）。実フレーム目視QC：f09=モノグラム着地のみ／f42=単語スタッガーのマスク切り上がり進行中（THE ALGORITHM着地・SAID着地中・IT上昇中）＋光streak＋Trail残像／f72=全要素着地（PDモノグラム／YOUR RIGHTS VS. THE MACHINE／ゴールド線／THE ALGORITHM SAID IT WAS YOU／サブタイトル）。品質規則充足＝全モーションにイージング・opacity単独なし・スタッガー・Trailモーションブラー・裏3層以上・マスク切れ上がり・肖像なし。**invariant 14遵守（正典フォークなし）**。
 - [x] **重いモーショングラフィックを先行構築・描画検証済み**（画像非依存）— `remotion/src/components/williams/`（FaceMatchGrid／BiasBars／CaseTimeline＝EP36新規）＋流用（NumberTicker=30 HOURS／PinDropMap=ONE CITY）。独立プレビュー `ep36_motion_preview.tsx` で各シーンをレンダし実フレーム目視QC（顔一致グリッド/偏りバー[10–100×・NIST 2019のみ・捏造%なし]/年表[grade-Aマーカー]/カウンター/マップ）。全モーションにイージング・Trail・裏3層・マスク切れ上がり・肖像なし・共有Root.tsx不変。
-- [ ] Codex画像30枚（GateB停止）→ 目視QC
-- [ ] 深度マップ（画像到着後）／残りの合成／factory選定・目視QC（Claude）
-- [ ] film.json → CaseFilm組み立て（先行アニメを配線）→ 本レンダ → 受領書 → オーナー承認
-- **現状=「画像待ち＋組み立てだけ」に到達**：台本(3回レビュー済)＋OP＋重いMG＋設計書＋Codex30枚プロンプトが揃い、残りは画像生成→深度→組み立て→レンダ。
+- [x] **モーショングラフィック10種を先行実装・描画検証**（自作5=FaceMatchGrid/BiasBars/CaseTimeline/LineupLoop/DatasetImbalance＋流用5=NumberTicker/PinDropMap/ActTitle/StampReveal/KineticCaptions）。`remotion/src/components/williams/`＋独立プレビュー。
+- [x] **組み立て青写真 `04_scenes/scene_plan.v001.json`**（全16 span↔S001–S030・各spanにMG配線・on-screenはgrade-A逐語・SFXアンカー・尺=ナレ待ちTBD）。tyler形状準拠・grade-B数値の画面焼き0を機械確認。
+- [x] **factory b-roll計画 `05_visuals/broll_plan.v001.json`**（テーマ/キーワード/被り回避・実ゲート footage_diversity 算数で ≥60 QC済クリップ目標・棚目視QC必須）。
+- [ ] **Codex画像30枚（GateB停止）→ 目視QC** ← ここがクリティカルパス
+- [ ] 深度マップ（画像到着後）／factory実選定＋コンタクトシート目視QC（Claude）
+- [ ] narration(ElevenLabs)＋字幕（**台本オーナー承認後**に生成＝有料/やり直し回避のため保留）
+- [ ] `williams_film.json` → CaseFilm組み立て（scene_planの配線を焼く）→ 本レンダ → 受領書 → オーナー承認
+- **現状=「画像待ち＋組み立てだけ」に到達**：台本(3回レビュー済・全ゲート緑)＋正典OP検証＋重いMG10種＋設計書＋Codex30枚プロンプト＋scene_plan＋broll計画が揃い、残るクリティカルパスはCodex画像→(深度/factory選定)→組み立て→レンダ。narrationは台本承認待ち。
