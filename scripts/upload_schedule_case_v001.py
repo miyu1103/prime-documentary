@@ -21,6 +21,40 @@ from pd_factory.providers.youtube import _access_token
 from upload_episode import CHANNEL_ALLOWLIST, get_channel_id, sha256_file, upload_chunks
 
 CONFIG = {
+    "rolin": {
+        "ep": "PD-2026-034-rolin",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/remotion/out/PD-2026-034-rolin_film.muxed.v003.mp4",
+        "sched_local": "2026-07-19T12:00:00+09:00",
+        "sched_utc": "2026-07-19T03:00:00Z",
+        "title": "They Took His Life Savings at the Airport — No Charges, No Crime",
+        "description": (
+            "You broke no law. You carried your own cash through an airport. By the gate, it was gone.\n\n"
+            "This is the true story of Terry Rolin, a retired railroad worker from near Pittsburgh who "
+            "kept his life savings — about $82,000 — in cash. In 2019 his daughter Rebecca Brown "
+            "carried the money through Pittsburgh International Airport to deposit it in a joint bank "
+            "account. A TSA X-ray flagged the cash; a state trooper and a federal DEA agent questioned "
+            "her; and the government seized every dollar. No drugs were found. No arrest was made. "
+            "Neither Terry nor Rebecca was ever charged with a crime.\n\n"
+            "Carrying cash on a domestic U.S. flight is legal — there is no limit and nothing to "
+            "declare. So how was any of this legal? The answer is civil asset forfeiture: the government "
+            "sues the property itself (the cash becomes the defendant) and does not have to charge, "
+            "convict, or even formally accuse the owner. This episode explains where that power comes "
+            "from, the 'preponderance of the evidence' standard set by the Civil Asset Forfeiture Reform "
+            "Act of 2000, and the federal equitable-sharing program the Institute for Justice argues "
+            "creates a financial incentive to seize (weigh that as one interested side's argument).\n\n"
+            "We also put the case in scale: a USA TODAY investigation reported the DEA seized more than "
+            "$209 million from over 5,000 travelers across 15 major airports in a single decade. With the "
+            "Institute for Justice, Terry and Rebecca fought back — and their savings came home.\n\n"
+            "This is a true story told with AI-generated illustrations (not authentic footage); figures "
+            "and quotes follow the public record. Government agencies are described neutrally.\n\n"
+            "#CivilForfeiture #KnowYourRights #AirportSeizure #DEA #InstituteForJustice #PropertyRights "
+            "#PolicingForProfit #FlyingWithCash #Law #Documentary"
+        ),
+        "tags": ["civil asset forfeiture", "civil forfeiture", "know your rights", "airport cash seizure",
+                 "DEA airport", "Terry Rolin", "Rebecca Brown", "Institute for Justice", "Brown v TSA",
+                 "policing for profit", "flying with cash", "traveling with cash legal", "CAFRA",
+                 "equitable sharing", "fourth amendment", "your rights", "true story", "Prime Documentary"],
+    },
     "tyler": {
         "ep": "PD-2026-033-tyler",
         "video": r"C:/Users/aab15/Documents/prime-documentary/remotion/out/PD-2026-033-tyler_film.muxed.v002.mp4",
