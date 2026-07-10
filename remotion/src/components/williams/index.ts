@@ -6,3 +6,5 @@
 export {FaceMatchGrid} from './FaceMatchGrid';
 export {BiasBars} from './BiasBars';
 export {CaseTimeline} from './CaseTimeline';
+export {LineupLoop} from './LineupLoop';
+export {DatasetImbalance} from './DatasetImbalance';
