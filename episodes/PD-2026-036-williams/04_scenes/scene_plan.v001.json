@@ -1,0 +1,504 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-036-williams",
+  "revision": "v001",
+  "status": "scene_planned",
+  "note": "EP36 per-span assembly blueprint (image-INDEPENDENT). Shape mirrors episodes/PD-2026-033-tyler/04_scenes/scene_plan.v001.json (the house longform scene_plan instance the CaseFilm assembly + remotion_plan consume), extended per-scene with the beat-level fields needed to wire the film mechanically once Codex hero stills arrive: hero_stills, motion_graphics, factory_broll_intent, on_screen_text, transitions, camera_motion, sfx. Design canon = episodes/_planning/EP36_williams_DESIGN.v001.md (sec5 motion system, sec6 asset plan, sec7 canonical Bookends). Motion grammar = docs/motion-design-language.md. One scene per span SPN-0001..0016; scene_id S0NN maps 1:1 to SPN-00NN. OP bookend = S002/SPN-0002 (BrandOpening), ED bookend = S016/SPN-0016 (BrandEndcard).",
+  "timing_note": "All duration_seconds and estimated_cuts here are ESTIMATES for density/coverage planning only. Final per-cut start/dur are TBD and are filled by the assembly step from the ElevenLabs master narration (whisper-aligned), NOT authored as frame timings here. Estimates derived from span word-count at ~150 wpm; target finished runtime 11.5-12.5 min. Frame math at build time uses f=(s)=>Math.round(s*fps), fps=30 (BRAND.video); frames are never hard-coded.",
+  "hero_still_id_note": "hero_stills[].id values (S001..S030) are the HERO IMAGE IDs from episodes/_planning/codex_prompt_ep36.md sec8 SHOT INDEX, and are a DIFFERENT namespace from scene_id (S001..S016). Delivered filename pattern = episodes/PD-2026-036-williams/04_scenes/generated_images/codex_v001/PD-2026-036-<hero_id>-IMG-001.png (e.g. hero S002 -> PD-2026-036-S002-IMG-001.png). Images do NOT yet exist; they are referenced by planned ID only. treatment values (depth/scan/duotone/focus/pixel) match the CaseFilm cut treatments used in tyler_film.json/hinders_film.json.",
+  "onscreen_text_policy": {
+    "rule": "On-screen burn-ins are grade-A vetted facts ONLY. on_screen_text below is copied VERBATIM from script.annotated.v001.json spans (already QC-passed). No new burn-in text may be authored at assembly time.",
+    "grade_a_burnable": ["JANUARY 2020", "A DETROIT SUBURB", "≈ 30 HOURS", "APRIL 2021", "JUNE 2024", "AUDIT SINCE 2017", "SINCE 2017", "COURT OVERSIGHT · 4 YEARS", "4 YEARS", "10–100×", "NIST · 2019", "2018", "2020", "2024"],
+    "grade_b_narration_only_NEVER_on_screen": ["$300,000", "$3,800", "5 watches", "a dozen", "34.7%", "0.8%"],
+    "invariants": ["No real-person face or likeness anywhere (Robert Williams is a living named individual). All figures anonymous.", "No AI still may read as an authentic surveillance export, mugshot, booking record, or court document (Invariant 11). All are stylized reconstructions.", "No real Detroit PD / vendor (DataWorks Plus) logo, seal, or UI; no real landmark. No officer named."]
+  },
+  "layers_default": [
+    "L0 SceneBed: AuroraField / cold-slate gradient + GridWarp (face-scan data grid), always drifting via Easing.inOut(Easing.sin) - never linear",
+    "L1 DepthParticles / LightRays: cyan glow (BRAND.color.electric #1F6BFF), volumetric haze",
+    "L2 subject: hero DepthStill (dpt-large depth parallax) / code motion-graphic / factory footage",
+    "L3 SoftGlow + FilmGrain(0.06) + Vignette + KineticCaptions(maskslide)"
+  ],
+  "accent_note": "Body accent = face-scan cyan (BRAND.color.electric #1F6BFF) x cold slate. OP/ED accent stays canonical BRAND gold (Bookends.tsx is NOT forked - invariant 14). Any cyan on the OP is an owner-gated screen-blend overlay at opacity<=0.12, off by default.",
+  "estimated_totals": {
+    "runtime_seconds_estimate": 700,
+    "runtime_target_band_seconds": [690, 750],
+    "scene_count": 16,
+    "estimated_cuts": 305,
+    "hero_stills_referenced": 30,
+    "cut_cadence_seconds_target": 2.2,
+    "motion_budget_floor": {
+      "near_still_max_percent": 10,
+      "single_hold_max_seconds": 3.0,
+      "motion_present_coverage_min_percent": 40,
+      "hero_motion_surfaces_per_act_min": 2,
+      "figure_beats_min": 6,
+      "depth_parallax_surface_min_percent": 40,
+      "footage_diversity_distinct_min": 0.40,
+      "footage_reuse_max": 4,
+      "generic_symbol_max": 2
+    }
+  },
+  "acts": [
+    { "chapter": "Hook", "chapter_id": "hook", "title": "Hook", "function": "cold_open_threat", "scenes": "S001-S001", "spans": "SPN-0001" },
+    { "chapter": "Opening", "chapter_id": "opening", "title": "Opening", "function": "op_title_card_and_thesis", "scenes": "S002-S002", "spans": "SPN-0002" },
+    { "chapter": "Act1", "chapter_id": "act1", "title": "Arrested In Your Own Driveway", "function": "arrest_and_umbrella_loop", "scenes": "S003-S005", "spans": "SPN-0003..SPN-0005" },
+    { "chapter": "Act2", "chapter_id": "act2", "title": "The Computer Picked Him", "function": "the_match_reveal", "scenes": "S006-S009", "spans": "SPN-0006..SPN-0009" },
+    { "chapter": "Act3", "chapter_id": "act3", "title": "Why It Reaches For The Wrong Face", "function": "the_pattern_and_threat", "scenes": "S010-S012", "spans": "SPN-0010..SPN-0012" },
+    { "chapter": "Act4", "chapter_id": "act4", "title": "One Man Got A Rule, You Got A Warning", "function": "rule_and_scale", "scenes": "S013-S015", "spans": "SPN-0013..SPN-0015" },
+    { "chapter": "Ending", "chapter_id": "ending", "title": "Ending", "function": "earned_cta_and_next_arc", "scenes": "S016-S016", "spans": "SPN-0016" }
+  ],
+  "scenes": [
+    {
+      "scene_id": "S001",
+      "span_id": "SPN-0001",
+      "chapter": "Hook",
+      "chapter_title": "Hook",
+      "narrative_function": "hook_cold_open_threat",
+      "duration_seconds_estimate": 8.0,
+      "duration_source": "hook block fixed <= HOOK_MAX_S 8.0 (19-word VO ~7.1s)",
+      "estimated_cuts": 4,
+      "transition_in": "hard_cut_from_black",
+      "transition_out": "whip",
+      "camera_motion": ["pixel_push", "slow_push_in"],
+      "hero_stills": [
+        { "id": "S001", "title": "Grainy store-camera reconstruction - dark-cap figure, illegible by design (NOT a real export)", "treatment": "pixel", "role": "primary_hook_frame_resolving_to_door" }
+      ],
+      "motion_graphics": [
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide", "note": "hook lines mask-slide up in overflow:hidden + translateY(110%->0)" }
+      ],
+      "factory_broll_intent": [],
+      "on_screen_text": ["A BLURRY PHOTO.", "A COMPUTER'S GUESS."],
+      "sfx": ["soft camera-shutter click", "two sharp knocks on a wooden door", "low sub-tone underneath"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 hero S001 pixel-push", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["BOOKEND-OPEN: this blurry frame returns and resolves in S016 (ending)"],
+      "notes": "Stills-only cold open; no factory footage. Promise = 'a machine's match alone can arrest you' -> paid off in Act2 (S008 lineup loop)."
+    },
+    {
+      "scene_id": "S002",
+      "span_id": "SPN-0002",
+      "chapter": "Opening",
+      "chapter_title": "Opening",
+      "narrative_function": "opening_thesis_and_promise",
+      "duration_seconds_estimate": 25.0,
+      "duration_source": "OPENING_SEC=3.5s title-card visual (fixed) + thesis VO ~21s continuing over body motif",
+      "estimated_cuts": 6,
+      "transition_in": "zoompunch",
+      "transition_out": "pixel_dissolve",
+      "camera_motion": ["slow_push_in"],
+      "hero_stills": [],
+      "motion_graphics": [
+        { "component": "BrandOpening", "source": "canonical Bookends.tsx (DO NOT FORK - invariant 14)", "props": { "seriesLabel": "YOUR RIGHTS VS. THE MACHINE", "title": "The Algorithm Said It Was You", "subtitle": "Facial recognition · a wrongful arrest · one city's new rules" }, "note": "Canonical gold OP. Title card dissolves into pixels as thesis lands. OPENING_SEC=3.5." },
+        { "component": "FaceMatchGrid", "source": "williams", "role": "ambient_backing_only", "note": "OPTIONAL owner-gated: faint cyan face-scan grid motif screen-blended behind OP at opacity<=0.12; OFF by default (gold stays canonical)." }
+      ],
+      "factory_broll_intent": [],
+      "on_screen_text": ["THE ALGORITHM SAID IT WAS YOU."],
+      "sfx": ["tight digital riser resolving into a held cold tone under the VO"],
+      "layers": ["L0 sunrise/gold bloom (canonical)", "L1 gold radial bloom", "L2 PD monogram + title word-stagger mask-rise (Trail layers=7)", "L3 particles+vignette+grain"],
+      "continuity_refs": ["Bookend pair with S016 BrandEndcard"],
+      "notes": "props-only reuse of canonical BrandOpening; already rendered+QC'd (ep36_opening_preview.tsx). accent/hasLogo props do NOT exist."
+    },
+    {
+      "scene_id": "S003",
+      "span_id": "SPN-0003",
+      "chapter": "Act1",
+      "chapter_title": "Arrested In Your Own Driveway",
+      "narrative_function": "character_setup_stake",
+      "duration_seconds_estimate": 47.0,
+      "duration_source": "narration_audio_TBD (~118 words)",
+      "estimated_cuts": 21,
+      "transition_in": "push",
+      "transition_out": "push",
+      "camera_motion": ["slow_push_in", "parallax_depth", "fast_push_in"],
+      "hero_stills": [
+        { "id": "S002", "title": "Suburban driveway at blue hour; warm porch light going cold as headlights sweep in; anonymous", "treatment": "depth", "role": "act1_establish" },
+        { "id": "S003", "title": "Anonymous figure walked off front lawn in handcuffs, from behind; family silhouettes in a lit window", "treatment": "focus", "role": "handcuff_beat_0.6s_fast_push+Trail" },
+        { "id": "S027", "title": "Family home, empty - warm living room at blue hour, children's shoes by the door", "treatment": "depth", "role": "human_stakes" },
+        { "id": "S016", "title": "Driveway VARIANT - wider, from the street, two cruisers' light on the house", "treatment": "scan", "role": "non_repeat_cut" }
+      ],
+      "motion_graphics": [
+        { "component": "ActTitle", "source": "motionkit", "props": { "kicker": "ACT I", "title": "ARRESTED IN YOUR OWN DRIVEWAY" }, "note": "title_slam at act head" },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide" }
+      ],
+      "factory_broll_intent": ["suburban street night", "porch light", "car headlights sweep", "residential driveway"],
+      "on_screen_text": ["JANUARY 2020", "A DETROIT SUBURB"],
+      "sfx": ["car doors thunk shut", "warm domestic room-tone snaps to cold exterior wind", "single low unease tone"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 hero depth-still / factory", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["HERO motion surface #1 (Act1) = color-temperature sweep warm porch->cold headlight, Easing.inOut(Easing.sin) 6s"],
+      "notes": "Color-temp sweep is the Act1 hero motion. Handcuff cut = 0.6s fast_push_in + Trail."
+    },
+    {
+      "scene_id": "S004",
+      "span_id": "SPN-0004",
+      "chapter": "Act1",
+      "chapter_title": "Arrested In Your Own Driveway",
+      "narrative_function": "arrest_tension_escalation",
+      "duration_seconds_estimate": 43.0,
+      "duration_source": "narration_audio_TBD (~108 words)",
+      "estimated_cuts": 19,
+      "transition_in": "push",
+      "transition_out": "push",
+      "camera_motion": ["slow_push_in", "cinematic_drift", "impact_zoom"],
+      "hero_stills": [
+        { "id": "S004", "title": "Cold-fluorescent holding/booking reconstruction; hands only; two blurred photographs on a steel table", "treatment": "depth", "role": "cell_primary" },
+        { "id": "S017", "title": "Holding-cell VARIANT - tight on an institutional clock and a bolted door", "treatment": "focus", "role": "time-held_non_repeat" },
+        { "id": "S028", "title": "Booking hands macro - anonymous wrists in cuffs on steel under fluorescent light", "treatment": "scan", "role": "booking_macro" }
+      ],
+      "motion_graphics": [
+        { "component": "NumberTicker", "source": "motionkit", "props": { "value": 30, "suffix": " HOURS", "topLabel": "TIME HELD" }, "note": "reused '30 HOURS' hero stat; damped count-up (spring), decorative-not-precise scoring elsewhere. Burns grade-A '≈ 30 HOURS'." },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "emphasis", "emphasisWords": ["A COMPUTER DID."] }
+      ],
+      "factory_broll_intent": ["fluorescent corridor", "institutional clock", "steel door latch"],
+      "on_screen_text": ["≈ 30 HOURS IN A CELL", "\"A COMPUTER DID.\""],
+      "sfx": ["heavy cell-door latch", "fluorescent hum bed", "flat low thud on 'A computer did.'"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 hero depth-still", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["FigureBeat: NumberTicker 30 HOURS (moving graphic)"],
+      "notes": "'A computer did.' lands on impact_zoom + low thud (SFX/frame synced)."
+    },
+    {
+      "scene_id": "S005",
+      "span_id": "SPN-0005",
+      "chapter": "Act1",
+      "chapter_title": "Arrested In Your Own Driveway",
+      "narrative_function": "open_loop_question_mystery",
+      "duration_seconds_estimate": 43.0,
+      "duration_source": "narration_audio_TBD (~108 words)",
+      "estimated_cuts": 19,
+      "transition_in": "push",
+      "transition_out": "glitch",
+      "camera_motion": ["slow_push_in", "parallax_depth", "depth_dolly"],
+      "hero_stills": [
+        { "id": "S019", "title": "Charges dropped - an empty prosecutor's office at dawn, a closed case file", "treatment": "depth", "role": "release_beat" },
+        { "id": "S005", "title": "A dark server room / face-database, aisles of racks under cyan glow - 'the quiet machine'", "treatment": "depth", "role": "turn_to_machine" },
+        { "id": "S020", "title": "Server node macro - a single blinking cyan LED, reflected face-scan light", "treatment": "scan", "role": "machine_closeup" }
+      ],
+      "motion_graphics": [
+        { "component": "StampReveal", "source": "motionkit", "props": { "text": "CHARGES DROPPED", "color": "silver" }, "note": "slam-in + Trail" },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide" }
+      ],
+      "factory_broll_intent": ["server racks", "data-center aisles", "blinking indicator LEDs"],
+      "on_screen_text": ["CHARGES DROPPED", "HOW DID THEY GET HIS NAME?"],
+      "sfx": ["soft exhale of room-tone", "rising data-hum as the scene turns toward the machine"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 hero depth-still", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["Open-loop 'HOW DID THEY GET HIS NAME?' answered across Act2"],
+      "notes": "transition_out=glitch bridges warm-human -> cold-machine (rising data-hum)."
+    },
+    {
+      "scene_id": "S006",
+      "span_id": "SPN-0006",
+      "chapter": "Act2",
+      "chapter_title": "The Computer Picked Him",
+      "narrative_function": "turn_the_theft",
+      "duration_seconds_estimate": 38.0,
+      "duration_source": "narration_audio_TBD (~96 words)",
+      "estimated_cuts": 17,
+      "transition_in": "push",
+      "transition_out": "push",
+      "camera_motion": ["pixel_push", "slow_push_in"],
+      "hero_stills": [
+        { "id": "S006", "title": "A downtown watch-shop interior at night, a wall of watches, one camera on the ceiling", "treatment": "depth", "role": "act2_establish_2018_theft" },
+        { "id": "S001", "title": "Grainy store-camera reconstruction (recall from hook) - pixel-zoom into scanner", "treatment": "pixel", "role": "evidence_frame_recall" }
+      ],
+      "motion_graphics": [
+        { "component": "ActTitle", "source": "motionkit", "props": { "kicker": "ACT II", "title": "THE COMPUTER PICKED HIM" } },
+        { "component": "EvidenceCard", "source": "motionkit", "props": { "tag": "STORE CAMERA", "caption": "one grainy frame" }, "note": "grainy frame slams in" },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide" }
+      ],
+      "factory_broll_intent": ["retail store interior at night", "ceiling security camera", "watch/jewelry display case"],
+      "on_screen_text": ["A GRAINY FRAME", "NO NAME ATTACHED"],
+      "sfx": ["camera-hiss", "digital ingest chirp as the frame loads into the scanner"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 hero + factory", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["theft = 2018 (grade-A year burnable via timeline S013); $3,800/5 watches are grade-B = NARRATION ONLY, never burned"],
+      "notes": "2018 theft; keep any $ amount and watch count out of on-screen text."
+    },
+    {
+      "scene_id": "S007",
+      "span_id": "SPN-0007",
+      "chapter": "Act2",
+      "chapter_title": "The Computer Picked Him",
+      "narrative_function": "mechanism_reveal",
+      "duration_seconds_estimate": 51.0,
+      "duration_source": "narration_audio_TBD (~128 words)",
+      "estimated_cuts": 23,
+      "transition_in": "push",
+      "transition_out": "push",
+      "camera_motion": ["slow_push_in", "parallax_depth"],
+      "hero_stills": [
+        { "id": "S007", "title": "Anonymous candidate-portrait plates (neutral backing the code-built face-match grid) - no real likeness, no UI", "treatment": "depth", "role": "grid_backing" },
+        { "id": "S021", "title": "The renewed license - an anonymous hand sliding an ID card across a DMV counter", "treatment": "focus", "role": "everyday_origin_of_the_photo" },
+        { "id": "S022", "title": "Data-center wide (alt angle) - converging racks, a lone catwalk", "treatment": "scan", "role": "non_repeat_cut" }
+      ],
+      "motion_graphics": [
+        { "component": "FaceMatchGrid", "source": "williams", "role": "HERO", "note": "grid assembles cell-by-cell (spring damping18, stagger 0.10s); one cell ringed (spring damping10 stiffness120)" },
+        { "component": "NumberTicker", "source": "motionkit", "role": "similarity_meter", "note": "0 -> score climb, decorative (NOT a real measured value)" },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide" }
+      ],
+      "factory_broll_intent": ["data-center racks", "monitor glow abstract", "network/database texture"],
+      "on_screen_text": ["A GUESS, RANKED BY A NUMBER", "MILLIONS OF PHOTOS"],
+      "sfx": ["rhythmic scanning blips building", "single confirming tone as one cell locks"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 FaceMatchGrid over hero backing", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["HERO motion surface #1 (Act2) = FaceMatchGrid assemble+ring", "FigureBeat: similarity NumberTicker"],
+      "notes": "Grid is anonymous portrait plates only; no readable UI, no real face."
+    },
+    {
+      "scene_id": "S008",
+      "span_id": "SPN-0008",
+      "chapter": "Act2",
+      "chapter_title": "The Computer Picked Him",
+      "narrative_function": "escalation_stake",
+      "duration_seconds_estimate": 47.0,
+      "duration_source": "narration_audio_TBD (~118 words)",
+      "estimated_cuts": 21,
+      "transition_in": "push",
+      "transition_out": "push",
+      "camera_motion": ["slow_push_in", "impact_zoom"],
+      "hero_stills": [
+        { "id": "S008", "title": "A physical six-photo lineup card on a detective's table, faces blurred/anonymous; a hand hovering", "treatment": "depth", "role": "lineup_primary" },
+        { "id": "S023", "title": "Detective's case board - pinned blurred photos + string under a cold lamp", "treatment": "focus", "role": "building_on_a_guess" }
+      ],
+      "motion_graphics": [
+        { "component": "LineupLoop", "source": "williams", "role": "HERO", "note": "six-photo lineup + loop-arrow diagram 'video -> software -> lineup -> same video' closing on itself (Easing.out(cubic) 0.8s)" },
+        { "component": "EvidenceCard", "source": "motionkit", "props": { "tag": "PROBABLE CAUSE", "caption": "a match is a lead, not proof" } },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "emphasis", "emphasisWords": ["A LEAD"] }
+      ],
+      "factory_broll_intent": ["detective desk paperwork", "cold desk lamp", "cork evidence board"],
+      "on_screen_text": ["A MATCH IS A LEAD — NOT A NAME TO ARREST"],
+      "sfx": ["paper slap of the lineup on the table", "closing-loop click", "ominous low swell"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 LineupLoop over hero", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["HERO motion surface #2 (Act2) = LineupLoop circularity close", "PAYS OFF hook promise (S001): the machine's match alone -> arrest"],
+      "notes": "Circular-lineup is the thematic core; loop visibly closes on itself."
+    },
+    {
+      "scene_id": "S009",
+      "span_id": "SPN-0009",
+      "chapter": "Act2",
+      "chapter_title": "The Computer Picked Him",
+      "narrative_function": "payoff_reveal_open_loop",
+      "duration_seconds_estimate": 37.0,
+      "duration_source": "narration_audio_TBD (~92 words)",
+      "estimated_cuts": 17,
+      "transition_in": "push",
+      "transition_out": "whip",
+      "camera_motion": ["pull_out", "parallax_depth"],
+      "hero_stills": [
+        { "id": "S026", "title": "Wall of anonymous ID photos (blurred backing for 'you're in the lineup' / wall of faces)", "treatment": "depth", "role": "wall_of_faces_pullback" },
+        { "id": "S023", "title": "Detective's case board (recall) - the guess dressed as an ID", "treatment": "duotone", "role": "recap" }
+      ],
+      "motion_graphics": [
+        { "component": "FaceMatchGrid", "source": "williams", "role": "pull_back_to_wall", "note": "ringed grid cell pulls back to reveal a wall of anonymous faces; highlight sweeps a subset" },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide" }
+      ],
+      "factory_broll_intent": ["server room wide", "wall of monitors"],
+      "on_screen_text": ["A PROBABILITY, NOT PROOF", "WHY A FACE LIKE HIS?"],
+      "sfx": ["suspended riser holding under 'measured'", "data-blips resolving to a single sustained tone"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 FaceMatchGrid pullback", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["Open-loop upgrade: 'why HIM' -> 'why a face LIKE his' -> answered in Act3 (BiasBars)"],
+      "notes": "transition_out=whip into the data-lab (Act3). UNCERTAIN hero: S026 is SHOT-INDEX-tagged Act III; using it here as the 'wall of faces' pullback backing (fits visually). Flagged in report."
+    },
+    {
+      "scene_id": "S010",
+      "span_id": "SPN-0010",
+      "chapter": "Act3",
+      "chapter_title": "Why It Reaches For The Wrong Face",
+      "narrative_function": "reveal_tension_threat",
+      "duration_seconds_estimate": 45.0,
+      "duration_source": "narration_audio_TBD (~112 words)",
+      "estimated_cuts": 20,
+      "transition_in": "whip",
+      "transition_out": "push",
+      "camera_motion": ["slow_push_in", "data_reveal"],
+      "hero_stills": [
+        { "id": "S009", "title": "A clean, neutral data-lab / standards-lab environment plate (backing for the bias chart)", "treatment": "depth", "role": "act3_establish_federal_study" }
+      ],
+      "motion_graphics": [
+        { "component": "ActTitle", "source": "motionkit", "props": { "kicker": "ACT III", "title": "WHY IT REACHES FOR THE WRONG FACE" } },
+        { "component": "BiasBars", "source": "williams", "role": "HERO", "note": "two bars, wide gap, spring damping20 extend; multiplier as clean kinetic type. ONLY grade-A burns: '10–100×' and 'NIST · 2019'. NO fabricated %." },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide" }
+      ],
+      "factory_broll_intent": ["research laboratory", "clean measurement instruments", "standards-lab interior"],
+      "on_screen_text": ["FALSE MATCHES: 10–100× HIGHER", "NIST · 2019"],
+      "sfx": ["data bars fill with soft ticks", "decisive low boom lands on the gap"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 BiasBars over data-lab backing", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["HERO motion surface #1 (Act3) = BiasBars gap", "R2 neutrality: measured value + rebuttal in S011"],
+      "notes": "Gender Shades 34.7%/0.8% are grade-A facts but per DESIGN sec6 are BURN-FORBIDDEN (different task) -> narration only. BiasBars burns only 10-100x/NIST 2019."
+    },
+    {
+      "scene_id": "S011",
+      "span_id": "SPN-0011",
+      "chapter": "Act3",
+      "chapter_title": "Why It Reaches For The Wrong Face",
+      "narrative_function": "stake_neutral_evidence",
+      "duration_seconds_estimate": 66.0,
+      "duration_source": "narration_audio_TBD (~165 words - longest span)",
+      "estimated_cuts": 30,
+      "transition_in": "push",
+      "transition_out": "push",
+      "camera_motion": ["slow_push_in", "parallax_depth"],
+      "hero_stills": [
+        { "id": "S010", "title": "A lopsided-dataset plate: rows of anonymous silhouettes, most one tone, a few others - dignified, neutral", "treatment": "depth", "role": "dataset_imbalance_backing" },
+        { "id": "S018", "title": "Face-scan VARIANT - extreme macro of a single eye crossed by a scan line", "treatment": "scan", "role": "rebuttal/scan_beat" }
+      ],
+      "motion_graphics": [
+        { "component": "DatasetImbalance", "source": "williams", "role": "HERO", "note": "'trained on these faces -> fails on those faces'; lopsided set as anonymous silhouettes; neutral, dignified" },
+        { "component": "EvidenceCard", "source": "motionkit", "props": { "tag": "REBUTTAL", "caption": "Asia-built systems: gap nearly vanishes" }, "note": "REQUIRED rebuttal beat (training-data, not the tech itself) - R2 neutrality" },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide" }
+      ],
+      "factory_broll_intent": ["abstract silhouette crowd", "portrait wall neutral", "data training texture"],
+      "on_screen_text": ["TRAINED ON TOO FEW OF US"],
+      "sfx": ["soft imbalance motif", "low sustained bed, no melodrama"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 DatasetImbalance", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["HERO motion surface #2 (Act3) = DatasetImbalance", "MANDATORY rebuttal (CLM-0013) = Asia-built systems close the gap"],
+      "notes": "Longest span; split into ~2 sub-movements (evidence, then rebuttal) to respect single-hold<=3s. Rebuttal must be present."
+    },
+    {
+      "scene_id": "S012",
+      "span_id": "SPN-0012",
+      "chapter": "Act3",
+      "chapter_title": "Why It Reaches For The Wrong Face",
+      "narrative_function": "rehook_threat_second_person",
+      "duration_seconds_estimate": 43.0,
+      "duration_source": "narration_audio_TBD (~108 words)",
+      "estimated_cuts": 19,
+      "transition_in": "push",
+      "transition_out": "zoompunch",
+      "camera_motion": ["slow_push_in", "pixel_push"],
+      "hero_stills": [
+        { "id": "S011", "title": "A DMV / license-photo setting; an ordinary anonymous face turned away under a cold scan line - viewer's-eye", "treatment": "depth", "role": "your_face_primary" },
+        { "id": "S026", "title": "Wall of anonymous ID photos - license dissolves into a grid of millions", "treatment": "duotone", "role": "grid_of_millions" }
+      ],
+      "motion_graphics": [
+        { "component": "FaceMatchGrid", "source": "williams", "role": "license_to_grid", "note": "a driver's-license photo dissolves into a grid of millions; one anonymous cell lights under a scan line" },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "emphasis", "emphasisWords": ["ALREADY"] }
+      ],
+      "factory_broll_intent": ["DMV counter", "ID card handoff", "scanning light sweep"],
+      "on_screen_text": ["YOUR FACE IS ALREADY IN THE LINEUP"],
+      "sfx": ["quiet scan sweep", "cold pulse", "held breath of a tone"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 FaceMatchGrid license->grid", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["Second-person re-hook: 'your face' -> personalizes before Act4"],
+      "notes": "transition_out=zoompunch snaps from 'you' into the legal turn (Act4)."
+    },
+    {
+      "scene_id": "S013",
+      "span_id": "SPN-0013",
+      "chapter": "Act4",
+      "chapter_title": "One Man Got A Rule, You Got A Warning",
+      "narrative_function": "turn_payoff_resolution",
+      "duration_seconds_estimate": 48.0,
+      "duration_source": "narration_audio_TBD (~120 words)",
+      "estimated_cuts": 22,
+      "transition_in": "zoompunch",
+      "transition_out": "push",
+      "camera_motion": ["slow_push_in", "timeline_flow", "parallax_depth"],
+      "hero_stills": [
+        { "id": "S012", "title": "A neutral courthouse/legal exterior at dusk (archetypal, NO real landmark)", "treatment": "depth", "role": "act4_establish_lawsuit" },
+        { "id": "S025", "title": "Courtroom interior (empty, archetypal, no real seals)", "treatment": "focus", "role": "settlement_oversight" }
+      ],
+      "motion_graphics": [
+        { "component": "ActTitle", "source": "motionkit", "props": { "kicker": "ACT IV", "title": "ONE MAN GOT A RULE, YOU GOT A WARNING" } },
+        { "component": "CaseTimeline", "source": "williams", "role": "HERO", "note": "2018 -> 2020 -> 2024 timeline snaps into place; markers stagger-land. Burns grade-A only: APRIL 2021 / JUNE 2024 / AUDIT SINCE 2017 / COURT OVERSIGHT · 4 YEARS / year markers 2018,2020,2024." },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide" }
+      ],
+      "factory_broll_intent": ["courthouse exterior steps", "stacked legal documents", "law library shelves"],
+      "on_screen_text": ["APRIL 2021 · LAWSUIT", "JUNE 2024 · SETTLEMENT", "AUDIT SINCE 2017", "COURT OVERSIGHT · 4 YEARS"],
+      "sfx": ["mechanical timeline clicks", "firmer, resolving tone as the rules lock in"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 CaseTimeline", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["HERO motion surface #1 (Act4) = CaseTimeline lock-in", "$300,000 settlement = grade-B NARRATION ONLY, never burned"],
+      "notes": "Keep settlement dollar figure out of burns; timeline uses only grade-A date/year markers. Generic 'scales/gavel' symbol usage capped (<=2 episode-wide)."
+    },
+    {
+      "scene_id": "S014",
+      "span_id": "SPN-0014",
+      "chapter": "Act4",
+      "chapter_title": "One Man Got A Rule, You Got A Warning",
+      "narrative_function": "twist",
+      "duration_seconds_estimate": 37.0,
+      "duration_source": "narration_audio_TBD (~92 words)",
+      "estimated_cuts": 17,
+      "transition_in": "push",
+      "transition_out": "push",
+      "camera_motion": ["map_focus", "parallax_depth"],
+      "hero_stills": [
+        { "id": "S013", "title": "A city-scale map/aerial plate at night (neutral backing for the timeline + single-pin motion-graphic)", "treatment": "depth", "role": "one_city_map_backing" }
+      ],
+      "motion_graphics": [
+        { "component": "PinDropMap", "source": "motionkit", "role": "HERO", "props": { "pins": "ONE CITY lit vs field of dark unprotected pins" }, "note": "reused 'ONE CITY' pin map; lit pin over one city, two faint earlier case-markers flicker in behind. WebGL map -> render --concurrency=4 --gl=angle." },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide" }
+      ],
+      "factory_broll_intent": ["city aerial at night", "skyline wide", "US map abstract"],
+      "on_screen_text": ["FIRST CASE THE COUNTRY HEARD ABOUT", "NOT THE FIRST TO HAPPEN"],
+      "sfx": ["single bright note against a field of muted ones", "low uneasy bed"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 PinDropMap over map backing", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["HERO motion surface #2 (Act4) = PinDropMap", "CLM-0011: 'first PUBLICLY REPORTED' not 'first ever' - Oliver/Parks earlier. 'first ever' FORBIDDEN."],
+      "notes": "Two faint earlier-case markers = the earlier men (one same city, one two states away)."
+    },
+    {
+      "scene_id": "S015",
+      "span_id": "SPN-0015",
+      "chapter": "Act4",
+      "chapter_title": "One Man Got A Rule, You Got A Warning",
+      "narrative_function": "escalation_stake",
+      "duration_seconds_estimate": 34.0,
+      "duration_source": "narration_audio_TBD (~84 words)",
+      "estimated_cuts": 15,
+      "transition_in": "push",
+      "transition_out": "clean_fade",
+      "camera_motion": ["slow_push_in", "parallax_depth"],
+      "hero_stills": [
+        { "id": "S014", "title": "A row of anonymous suburban door-frames at dusk, warm interiors snuffing to cold; no faces", "treatment": "depth", "role": "door_row_primary" },
+        { "id": "S024", "title": "The pregnant-woman door - a heavily-pregnant SILHOUETTE only in a doorway, police light", "treatment": "focus", "role": "pregnant_woman_beat_shadow_only" }
+      ],
+      "motion_graphics": [
+        { "component": "EvidenceCard", "source": "motionkit", "props": { "tag": "AND NOT THE LAST", "caption": "more wrongful arrests since" }, "note": "the 'a dozen' ACLU count is grade-B -> narration only, NOT burned" },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "maskslide" }
+      ],
+      "factory_broll_intent": ["suburban doorways at dusk", "porch lights extinguishing", "residential street row"],
+      "on_screen_text": ["HE WAS NOT THE LAST"],
+      "sfx": ["repeating soft door-latch motif, spaced", "hollow, accumulating low tone"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 door-row depth-still", "L3 SoftGlow+Grain+KineticCaptions"],
+      "continuity_refs": ["FigureBeat: door-latch/light-snuff repetition (>=6 door beats builds the accumulation)"],
+      "notes": "Pregnant-woman rendered ONLY as a shadow/silhouette - never a likeness. 'a dozen' stays in narration."
+    },
+    {
+      "scene_id": "S016",
+      "span_id": "SPN-0016",
+      "chapter": "Ending",
+      "chapter_title": "Ending",
+      "narrative_function": "earned_cta_payoff_resolution",
+      "duration_seconds_estimate": 66.0,
+      "duration_source": "coda VO ~57s + fixed BrandEndcard ENDCARD_SEC=9.0s (BGM ends cleanly)",
+      "estimated_cuts": 19,
+      "transition_in": "clean_fade",
+      "transition_out": "fade_to_black_endcard",
+      "camera_motion": ["pixel_push", "slow_push_in", "pull_out"],
+      "hero_stills": [
+        { "id": "S015", "title": "The hook's blurry frame finally resolving into an ordinary anonymous face turning away - release", "treatment": "pixel", "role": "bookend_resolve_PRIMARY" },
+        { "id": "S029", "title": "CCTV looking at you - a dusk street camera angled toward the lens", "treatment": "depth", "role": "walk_past_a_camera" },
+        { "id": "S030", "title": "Final resolve (golden hour) - the resolved frame, a person walking away, warm", "treatment": "focus", "role": "alt_resolve/teaser" }
+      ],
+      "motion_graphics": [
+        { "component": "BrandEndcard", "source": "canonical Bookends.tsx (DO NOT FORK - invariant 14)", "props": "defaults (channel/ctaLine/cadenceLine unchanged)", "note": "all-episodes-common. Subscribe CTA pulse + gold baseline growth. Ending ambience anchored to final word 'next'." },
+        { "component": "KineticCaptions", "source": "motionkit", "style": "emphasis", "emphasisWords": ["PASSWORD", "SUBSCRIBE"] }
+      ],
+      "factory_broll_intent": ["dusk street CCTV camera", "person walking away", "quiet street golden hour"],
+      "on_screen_text": ["YOUR FACE IS A PASSWORD YOU CAN'T CHANGE", "SUBSCRIBE"],
+      "sfx": ["the shutter from the hook returns and releases", "resolving tone anchored to the final word 'next', easing into ending ambience"],
+      "layers": ["L0 SceneBed", "L1 DepthParticles/LightRays", "L2 resolving hero frame", "L3 SoftGlow+Grain+KineticCaptions -> BrandEndcard"],
+      "continuity_refs": ["BOOKEND-CLOSE: S001 blurry frame resolves here", "Final word 'next' teases the next-arc case (trail-based, not face-based)"],
+      "notes": "PRIMARY resolve = S015; S030 is the alt/teaser (owner picks one as the held final frame - flagged). ED is canonical BrandEndcard, props unchanged."
+    }
+  ],
+  "coverage": {
+    "all_script_spans_mapped": true,
+    "spans_mapped": ["SPN-0001", "SPN-0002", "SPN-0003", "SPN-0004", "SPN-0005", "SPN-0006", "SPN-0007", "SPN-0008", "SPN-0009", "SPN-0010", "SPN-0011", "SPN-0012", "SPN-0013", "SPN-0014", "SPN-0015", "SPN-0016"],
+    "orphan_scenes": [],
+    "hero_stills_used": ["S001", "S002", "S003", "S004", "S005", "S006", "S007", "S008", "S009", "S010", "S011", "S012", "S013", "S014", "S015", "S016", "S017", "S018", "S019", "S020", "S021", "S022", "S023", "S024", "S025", "S026", "S027", "S028", "S029", "S030"],
+    "hero_stills_unused": [],
+    "note": "All 16 spans mapped 1:1 to S001..S016. All 30 SHOT-INDEX hero stills placed at least once (image-independent references). Depth maps (<hero>_depth.png) must exist before the strict CaseFilm build for every 'depth'/'scan'/'pixel' treatment cut."
+  },
+  "assembly_wiring_hint": {
+    "consumer": "remotion/src/CaseFilm via remotion/src/data/williams_film.json (to be generated post-images, mirroring hinders_film.json/tyler_film.json cut shape: start,dur,kind[img|footage],src,seed,treatment)",
+    "fps": 30,
+    "spine": "hook(data.hook[]) -> BrandOpening(OPENING_SEC=3.5) -> body(data.cuts[]) -> BrandEndcard(ENDCARD_SEC=9)",
+    "durations": "TBD from ElevenLabs narration (whisper-aligned); this plan supplies asset/graphic/transition/sfx wiring, not final frame times",
+    "gates_before_ship": ["validate_episode.py", "verify_onscreen_text (grade-A only)", "animation_density", "motion_present", "footage_diversity (distinct>=0.40, reuse<=4, generic symbol<=2)", "caption_sync", "mean-luma", "op_ed_bookends", "check_final_acceptance.py --emit-receipt", "factory contact-sheet visual QC"]
+  }
+}
