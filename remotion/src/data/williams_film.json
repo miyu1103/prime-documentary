@@ -1,0 +1,2592 @@
+{
+  "episode_id": "PD-2026-036-williams",
+  "fps": 30,
+  "_estimation_note": "SKELETON / IMAGE+AUDIO-INDEPENDENT. All start/dur values and narrationSeconds are ESTIMATED from span word-count (seconds = words / 2.75 ~= 165 wpm), NOT measured from audio. Body cuts are distributed ~2.2s each across each span's cuts and accumulated in script order. These MUST be re-fit to the real ElevenLabs master narration (whisper-aligned) at assembly, and 'captions' MUST be regenerated from that audio (left [] here on purpose). Image src paths reference PLANNED hero stills (williams/img/PD-2026-036-<heroId>-IMG-001.png under remotion/public/) that do not exist yet. Factory b-roll (kind:'footage') and additional per-scene image variants are injected at the image+factory step (that is why the tyler/hinders reference films carry 340-360 cuts vs the ~300 here); footage_diversity is enforced there, not in this skeleton.",
+  "narration": "williams/narration.mp3",
+  "narrationSeconds": 655.273,
+  "hookSeconds": 8.04,
+  "hookLine": "A blurry photo. A computer's guess. A knock at your door — arrested for a crime you did not commit.",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "hook-0.0"
+    },
+    {
+      "start": 1.34,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "hook-1.34"
+    },
+    {
+      "start": 2.68,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "hook-2.68"
+    },
+    {
+      "start": 4.02,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "hook-4.02"
+    },
+    {
+      "start": 5.36,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "hook-5.36"
+    },
+    {
+      "start": 6.7,
+      "dur": 1.34,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "hook-6.7"
+    }
+  ],
+  "cuts": [
+    {
+      "start": 0.0,
+      "dur": 2.424,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-0",
+      "treatment": "bleed"
+    },
+    {
+      "start": 2.424,
+      "dur": 2.424,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-1",
+      "treatment": "bleed"
+    },
+    {
+      "start": 4.848,
+      "dur": 2.424,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-2",
+      "treatment": "bleed"
+    },
+    {
+      "start": 7.273,
+      "dur": 2.255,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-3",
+      "treatment": "bleed"
+    },
+    {
+      "start": 9.527,
+      "dur": 2.255,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-4",
+      "treatment": "depth"
+    },
+    {
+      "start": 11.782,
+      "dur": 2.255,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-5",
+      "treatment": "bleed"
+    },
+    {
+      "start": 14.036,
+      "dur": 2.255,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-6",
+      "treatment": "depth"
+    },
+    {
+      "start": 16.291,
+      "dur": 2.255,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-7",
+      "treatment": "bleed"
+    },
+    {
+      "start": 18.545,
+      "dur": 2.255,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-8",
+      "treatment": "depth"
+    },
+    {
+      "start": 20.8,
+      "dur": 2.255,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-9",
+      "treatment": "bleed"
+    },
+    {
+      "start": 23.055,
+      "dur": 2.255,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-10",
+      "treatment": "depth"
+    },
+    {
+      "start": 25.309,
+      "dur": 2.255,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-11",
+      "treatment": "bleed"
+    },
+    {
+      "start": 27.564,
+      "dur": 2.255,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-12",
+      "treatment": "depth"
+    },
+    {
+      "start": 29.818,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-13",
+      "treatment": "depth"
+    },
+    {
+      "start": 32.035,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "williams-14",
+      "treatment": "focus"
+    },
+    {
+      "start": 34.251,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S027-IMG-001.png",
+      "seed": "williams-15",
+      "treatment": "depth"
+    },
+    {
+      "start": 36.468,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S016-IMG-001.png",
+      "seed": "williams-16",
+      "treatment": "scan"
+    },
+    {
+      "start": 38.684,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-17",
+      "treatment": "depth"
+    },
+    {
+      "start": 40.9,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "williams-18",
+      "treatment": "focus"
+    },
+    {
+      "start": 43.117,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S027-IMG-001.png",
+      "seed": "williams-19",
+      "treatment": "depth"
+    },
+    {
+      "start": 45.333,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S016-IMG-001.png",
+      "seed": "williams-20",
+      "treatment": "scan"
+    },
+    {
+      "start": 47.55,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-21",
+      "treatment": "depth"
+    },
+    {
+      "start": 49.766,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "williams-22",
+      "treatment": "focus"
+    },
+    {
+      "start": 51.983,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S027-IMG-001.png",
+      "seed": "williams-23",
+      "treatment": "depth"
+    },
+    {
+      "start": 54.199,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S016-IMG-001.png",
+      "seed": "williams-24",
+      "treatment": "scan"
+    },
+    {
+      "start": 56.416,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-25",
+      "treatment": "depth"
+    },
+    {
+      "start": 58.632,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "williams-26",
+      "treatment": "focus"
+    },
+    {
+      "start": 60.848,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S027-IMG-001.png",
+      "seed": "williams-27",
+      "treatment": "depth"
+    },
+    {
+      "start": 63.065,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S016-IMG-001.png",
+      "seed": "williams-28",
+      "treatment": "scan"
+    },
+    {
+      "start": 65.281,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-29",
+      "treatment": "depth"
+    },
+    {
+      "start": 67.498,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S003-IMG-001.png",
+      "seed": "williams-30",
+      "treatment": "focus"
+    },
+    {
+      "start": 69.714,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S027-IMG-001.png",
+      "seed": "williams-31",
+      "treatment": "depth"
+    },
+    {
+      "start": 71.931,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S016-IMG-001.png",
+      "seed": "williams-32",
+      "treatment": "scan"
+    },
+    {
+      "start": 74.147,
+      "dur": 2.216,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S002-IMG-001.png",
+      "seed": "williams-33",
+      "treatment": "depth"
+    },
+    {
+      "start": 76.364,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-34",
+      "treatment": "depth"
+    },
+    {
+      "start": 78.567,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-35",
+      "treatment": "focus"
+    },
+    {
+      "start": 80.77,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-36",
+      "treatment": "scan"
+    },
+    {
+      "start": 82.973,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-37",
+      "treatment": "depth"
+    },
+    {
+      "start": 85.176,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-38",
+      "treatment": "focus"
+    },
+    {
+      "start": 87.38,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-39",
+      "treatment": "scan"
+    },
+    {
+      "start": 89.583,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-40",
+      "treatment": "depth"
+    },
+    {
+      "start": 91.786,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-41",
+      "treatment": "focus"
+    },
+    {
+      "start": 93.989,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-42",
+      "treatment": "scan"
+    },
+    {
+      "start": 96.193,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-43",
+      "treatment": "depth"
+    },
+    {
+      "start": 98.396,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-44",
+      "treatment": "focus"
+    },
+    {
+      "start": 100.599,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-45",
+      "treatment": "scan"
+    },
+    {
+      "start": 102.802,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-46",
+      "treatment": "depth"
+    },
+    {
+      "start": 105.005,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-47",
+      "treatment": "focus"
+    },
+    {
+      "start": 107.209,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S028-IMG-001.png",
+      "seed": "williams-48",
+      "treatment": "scan"
+    },
+    {
+      "start": 109.412,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S004-IMG-001.png",
+      "seed": "williams-49",
+      "treatment": "depth"
+    },
+    {
+      "start": 111.615,
+      "dur": 2.203,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S017-IMG-001.png",
+      "seed": "williams-50",
+      "treatment": "focus"
+    },
+    {
+      "start": 113.818,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-51",
+      "treatment": "depth"
+    },
+    {
+      "start": 115.98,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-52",
+      "treatment": "depth"
+    },
+    {
+      "start": 118.141,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-53",
+      "treatment": "scan"
+    },
+    {
+      "start": 120.303,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-54",
+      "treatment": "depth"
+    },
+    {
+      "start": 122.465,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-55",
+      "treatment": "depth"
+    },
+    {
+      "start": 124.626,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-56",
+      "treatment": "scan"
+    },
+    {
+      "start": 126.788,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-57",
+      "treatment": "depth"
+    },
+    {
+      "start": 128.949,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-58",
+      "treatment": "depth"
+    },
+    {
+      "start": 131.111,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-59",
+      "treatment": "scan"
+    },
+    {
+      "start": 133.273,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-60",
+      "treatment": "depth"
+    },
+    {
+      "start": 135.434,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-61",
+      "treatment": "depth"
+    },
+    {
+      "start": 137.596,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-62",
+      "treatment": "scan"
+    },
+    {
+      "start": 139.758,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-63",
+      "treatment": "depth"
+    },
+    {
+      "start": 141.919,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-64",
+      "treatment": "depth"
+    },
+    {
+      "start": 144.081,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-65",
+      "treatment": "scan"
+    },
+    {
+      "start": 146.242,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S019-IMG-001.png",
+      "seed": "williams-66",
+      "treatment": "depth"
+    },
+    {
+      "start": 148.404,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S005-IMG-001.png",
+      "seed": "williams-67",
+      "treatment": "depth"
+    },
+    {
+      "start": 150.566,
+      "dur": 2.162,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S020-IMG-001.png",
+      "seed": "williams-68",
+      "treatment": "scan"
+    },
+    {
+      "start": 152.727,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-69",
+      "treatment": "depth"
+    },
+    {
+      "start": 154.973,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-70",
+      "treatment": "bleed"
+    },
+    {
+      "start": 157.219,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-71",
+      "treatment": "depth"
+    },
+    {
+      "start": 159.465,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-72",
+      "treatment": "bleed"
+    },
+    {
+      "start": 161.711,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-73",
+      "treatment": "depth"
+    },
+    {
+      "start": 163.957,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-74",
+      "treatment": "bleed"
+    },
+    {
+      "start": 166.203,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-75",
+      "treatment": "depth"
+    },
+    {
+      "start": 168.449,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-76",
+      "treatment": "bleed"
+    },
+    {
+      "start": 170.695,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-77",
+      "treatment": "depth"
+    },
+    {
+      "start": 172.941,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-78",
+      "treatment": "bleed"
+    },
+    {
+      "start": 175.187,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-79",
+      "treatment": "depth"
+    },
+    {
+      "start": 177.433,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-80",
+      "treatment": "bleed"
+    },
+    {
+      "start": 179.679,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-81",
+      "treatment": "depth"
+    },
+    {
+      "start": 181.925,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-82",
+      "treatment": "bleed"
+    },
+    {
+      "start": 184.171,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-83",
+      "treatment": "depth"
+    },
+    {
+      "start": 186.417,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S001-IMG-001.png",
+      "seed": "williams-84",
+      "treatment": "bleed"
+    },
+    {
+      "start": 188.663,
+      "dur": 2.246,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S006-IMG-001.png",
+      "seed": "williams-85",
+      "treatment": "depth"
+    },
+    {
+      "start": 190.909,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-86",
+      "treatment": "depth"
+    },
+    {
+      "start": 193.157,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-87",
+      "treatment": "focus"
+    },
+    {
+      "start": 195.405,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-88",
+      "treatment": "scan"
+    },
+    {
+      "start": 197.653,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-89",
+      "treatment": "depth"
+    },
+    {
+      "start": 199.901,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-90",
+      "treatment": "focus"
+    },
+    {
+      "start": 202.149,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-91",
+      "treatment": "scan"
+    },
+    {
+      "start": 204.397,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-92",
+      "treatment": "depth"
+    },
+    {
+      "start": 206.645,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-93",
+      "treatment": "focus"
+    },
+    {
+      "start": 208.893,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-94",
+      "treatment": "scan"
+    },
+    {
+      "start": 211.14,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-95",
+      "treatment": "depth"
+    },
+    {
+      "start": 213.388,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-96",
+      "treatment": "focus"
+    },
+    {
+      "start": 215.636,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-97",
+      "treatment": "scan"
+    },
+    {
+      "start": 217.884,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-98",
+      "treatment": "depth"
+    },
+    {
+      "start": 220.132,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-99",
+      "treatment": "focus"
+    },
+    {
+      "start": 222.38,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-100",
+      "treatment": "scan"
+    },
+    {
+      "start": 224.628,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-101",
+      "treatment": "depth"
+    },
+    {
+      "start": 226.876,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-102",
+      "treatment": "focus"
+    },
+    {
+      "start": 229.124,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-103",
+      "treatment": "scan"
+    },
+    {
+      "start": 231.372,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-104",
+      "treatment": "depth"
+    },
+    {
+      "start": 233.62,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S021-IMG-001.png",
+      "seed": "williams-105",
+      "treatment": "focus"
+    },
+    {
+      "start": 235.868,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S022-IMG-001.png",
+      "seed": "williams-106",
+      "treatment": "scan"
+    },
+    {
+      "start": 238.116,
+      "dur": 2.248,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S007-IMG-001.png",
+      "seed": "williams-107",
+      "treatment": "depth"
+    },
+    {
+      "start": 240.364,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-108",
+      "treatment": "depth"
+    },
+    {
+      "start": 242.528,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-109",
+      "treatment": "focus"
+    },
+    {
+      "start": 244.693,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-110",
+      "treatment": "depth"
+    },
+    {
+      "start": 246.857,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-111",
+      "treatment": "focus"
+    },
+    {
+      "start": 249.022,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-112",
+      "treatment": "depth"
+    },
+    {
+      "start": 251.186,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-113",
+      "treatment": "focus"
+    },
+    {
+      "start": 253.351,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-114",
+      "treatment": "depth"
+    },
+    {
+      "start": 255.515,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-115",
+      "treatment": "focus"
+    },
+    {
+      "start": 257.68,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-116",
+      "treatment": "depth"
+    },
+    {
+      "start": 259.844,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-117",
+      "treatment": "focus"
+    },
+    {
+      "start": 262.009,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-118",
+      "treatment": "depth"
+    },
+    {
+      "start": 264.173,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-119",
+      "treatment": "focus"
+    },
+    {
+      "start": 266.338,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-120",
+      "treatment": "depth"
+    },
+    {
+      "start": 268.502,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-121",
+      "treatment": "focus"
+    },
+    {
+      "start": 270.667,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-122",
+      "treatment": "depth"
+    },
+    {
+      "start": 272.831,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-123",
+      "treatment": "focus"
+    },
+    {
+      "start": 274.996,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-124",
+      "treatment": "depth"
+    },
+    {
+      "start": 277.16,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-125",
+      "treatment": "focus"
+    },
+    {
+      "start": 279.325,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-126",
+      "treatment": "depth"
+    },
+    {
+      "start": 281.489,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-127",
+      "treatment": "focus"
+    },
+    {
+      "start": 283.654,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S008-IMG-001.png",
+      "seed": "williams-128",
+      "treatment": "depth"
+    },
+    {
+      "start": 285.818,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-129",
+      "treatment": "depth"
+    },
+    {
+      "start": 287.957,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-130",
+      "treatment": "duotone"
+    },
+    {
+      "start": 290.096,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-131",
+      "treatment": "depth"
+    },
+    {
+      "start": 292.235,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-132",
+      "treatment": "duotone"
+    },
+    {
+      "start": 294.374,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-133",
+      "treatment": "depth"
+    },
+    {
+      "start": 296.513,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-134",
+      "treatment": "duotone"
+    },
+    {
+      "start": 298.652,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-135",
+      "treatment": "depth"
+    },
+    {
+      "start": 300.791,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-136",
+      "treatment": "duotone"
+    },
+    {
+      "start": 302.93,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-137",
+      "treatment": "depth"
+    },
+    {
+      "start": 305.07,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-138",
+      "treatment": "duotone"
+    },
+    {
+      "start": 307.209,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-139",
+      "treatment": "depth"
+    },
+    {
+      "start": 309.348,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-140",
+      "treatment": "duotone"
+    },
+    {
+      "start": 311.487,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-141",
+      "treatment": "depth"
+    },
+    {
+      "start": 313.626,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-142",
+      "treatment": "duotone"
+    },
+    {
+      "start": 315.765,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-143",
+      "treatment": "depth"
+    },
+    {
+      "start": 317.904,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S023-IMG-001.png",
+      "seed": "williams-144",
+      "treatment": "duotone"
+    },
+    {
+      "start": 320.043,
+      "dur": 2.139,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-145",
+      "treatment": "depth"
+    },
+    {
+      "start": 322.182,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-146",
+      "treatment": "depth"
+    },
+    {
+      "start": 324.4,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-147",
+      "treatment": "depth"
+    },
+    {
+      "start": 326.618,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-148",
+      "treatment": "depth"
+    },
+    {
+      "start": 328.836,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-149",
+      "treatment": "depth"
+    },
+    {
+      "start": 331.055,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-150",
+      "treatment": "depth"
+    },
+    {
+      "start": 333.273,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-151",
+      "treatment": "depth"
+    },
+    {
+      "start": 335.491,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-152",
+      "treatment": "depth"
+    },
+    {
+      "start": 337.709,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-153",
+      "treatment": "depth"
+    },
+    {
+      "start": 339.927,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-154",
+      "treatment": "depth"
+    },
+    {
+      "start": 342.145,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-155",
+      "treatment": "depth"
+    },
+    {
+      "start": 344.364,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-156",
+      "treatment": "depth"
+    },
+    {
+      "start": 346.582,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-157",
+      "treatment": "depth"
+    },
+    {
+      "start": 348.8,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-158",
+      "treatment": "depth"
+    },
+    {
+      "start": 351.018,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-159",
+      "treatment": "depth"
+    },
+    {
+      "start": 353.236,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-160",
+      "treatment": "depth"
+    },
+    {
+      "start": 355.455,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-161",
+      "treatment": "depth"
+    },
+    {
+      "start": 357.673,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-162",
+      "treatment": "depth"
+    },
+    {
+      "start": 359.891,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-163",
+      "treatment": "depth"
+    },
+    {
+      "start": 362.109,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-164",
+      "treatment": "depth"
+    },
+    {
+      "start": 364.327,
+      "dur": 2.218,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S009-IMG-001.png",
+      "seed": "williams-165",
+      "treatment": "depth"
+    },
+    {
+      "start": 366.545,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-166",
+      "treatment": "depth"
+    },
+    {
+      "start": 368.752,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-167",
+      "treatment": "scan"
+    },
+    {
+      "start": 370.959,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-168",
+      "treatment": "depth"
+    },
+    {
+      "start": 373.166,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-169",
+      "treatment": "scan"
+    },
+    {
+      "start": 375.373,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-170",
+      "treatment": "depth"
+    },
+    {
+      "start": 377.58,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-171",
+      "treatment": "scan"
+    },
+    {
+      "start": 379.787,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-172",
+      "treatment": "depth"
+    },
+    {
+      "start": 381.994,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-173",
+      "treatment": "scan"
+    },
+    {
+      "start": 384.201,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-174",
+      "treatment": "depth"
+    },
+    {
+      "start": 386.408,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-175",
+      "treatment": "scan"
+    },
+    {
+      "start": 388.614,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-176",
+      "treatment": "depth"
+    },
+    {
+      "start": 390.821,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-177",
+      "treatment": "scan"
+    },
+    {
+      "start": 393.028,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-178",
+      "treatment": "depth"
+    },
+    {
+      "start": 395.235,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-179",
+      "treatment": "scan"
+    },
+    {
+      "start": 397.442,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-180",
+      "treatment": "depth"
+    },
+    {
+      "start": 399.649,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-181",
+      "treatment": "scan"
+    },
+    {
+      "start": 401.856,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-182",
+      "treatment": "depth"
+    },
+    {
+      "start": 404.063,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-183",
+      "treatment": "scan"
+    },
+    {
+      "start": 406.27,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-184",
+      "treatment": "depth"
+    },
+    {
+      "start": 408.476,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-185",
+      "treatment": "scan"
+    },
+    {
+      "start": 410.683,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-186",
+      "treatment": "depth"
+    },
+    {
+      "start": 412.89,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-187",
+      "treatment": "scan"
+    },
+    {
+      "start": 415.097,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-188",
+      "treatment": "depth"
+    },
+    {
+      "start": 417.304,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-189",
+      "treatment": "scan"
+    },
+    {
+      "start": 419.511,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-190",
+      "treatment": "depth"
+    },
+    {
+      "start": 421.718,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-191",
+      "treatment": "scan"
+    },
+    {
+      "start": 423.925,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-192",
+      "treatment": "depth"
+    },
+    {
+      "start": 426.132,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S018-IMG-001.png",
+      "seed": "williams-193",
+      "treatment": "scan"
+    },
+    {
+      "start": 428.339,
+      "dur": 2.207,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S010-IMG-001.png",
+      "seed": "williams-194",
+      "treatment": "depth"
+    },
+    {
+      "start": 430.545,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-195",
+      "treatment": "depth"
+    },
+    {
+      "start": 432.747,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-196",
+      "treatment": "duotone"
+    },
+    {
+      "start": 434.949,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-197",
+      "treatment": "depth"
+    },
+    {
+      "start": 437.152,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-198",
+      "treatment": "duotone"
+    },
+    {
+      "start": 439.354,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-199",
+      "treatment": "depth"
+    },
+    {
+      "start": 441.556,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-200",
+      "treatment": "duotone"
+    },
+    {
+      "start": 443.758,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-201",
+      "treatment": "depth"
+    },
+    {
+      "start": 445.96,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-202",
+      "treatment": "duotone"
+    },
+    {
+      "start": 448.162,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-203",
+      "treatment": "depth"
+    },
+    {
+      "start": 450.364,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-204",
+      "treatment": "duotone"
+    },
+    {
+      "start": 452.566,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-205",
+      "treatment": "depth"
+    },
+    {
+      "start": 454.768,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-206",
+      "treatment": "duotone"
+    },
+    {
+      "start": 456.97,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-207",
+      "treatment": "depth"
+    },
+    {
+      "start": 459.172,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-208",
+      "treatment": "duotone"
+    },
+    {
+      "start": 461.374,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-209",
+      "treatment": "depth"
+    },
+    {
+      "start": 463.576,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-210",
+      "treatment": "duotone"
+    },
+    {
+      "start": 465.778,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S011-IMG-001.png",
+      "seed": "williams-211",
+      "treatment": "depth"
+    },
+    {
+      "start": 467.98,
+      "dur": 2.202,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S026-IMG-001.png",
+      "seed": "williams-212",
+      "treatment": "duotone"
+    },
+    {
+      "start": 470.182,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-213",
+      "treatment": "depth"
+    },
+    {
+      "start": 472.347,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-214",
+      "treatment": "focus"
+    },
+    {
+      "start": 474.512,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-215",
+      "treatment": "depth"
+    },
+    {
+      "start": 476.678,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-216",
+      "treatment": "focus"
+    },
+    {
+      "start": 478.843,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-217",
+      "treatment": "depth"
+    },
+    {
+      "start": 481.008,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-218",
+      "treatment": "focus"
+    },
+    {
+      "start": 483.174,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-219",
+      "treatment": "depth"
+    },
+    {
+      "start": 485.339,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-220",
+      "treatment": "focus"
+    },
+    {
+      "start": 487.504,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-221",
+      "treatment": "depth"
+    },
+    {
+      "start": 489.669,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-222",
+      "treatment": "focus"
+    },
+    {
+      "start": 491.835,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-223",
+      "treatment": "depth"
+    },
+    {
+      "start": 494.0,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-224",
+      "treatment": "focus"
+    },
+    {
+      "start": 496.165,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-225",
+      "treatment": "depth"
+    },
+    {
+      "start": 498.331,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-226",
+      "treatment": "focus"
+    },
+    {
+      "start": 500.496,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-227",
+      "treatment": "depth"
+    },
+    {
+      "start": 502.661,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-228",
+      "treatment": "focus"
+    },
+    {
+      "start": 504.826,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-229",
+      "treatment": "depth"
+    },
+    {
+      "start": 506.992,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-230",
+      "treatment": "focus"
+    },
+    {
+      "start": 509.157,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-231",
+      "treatment": "depth"
+    },
+    {
+      "start": 511.322,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-232",
+      "treatment": "focus"
+    },
+    {
+      "start": 513.488,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S012-IMG-001.png",
+      "seed": "williams-233",
+      "treatment": "depth"
+    },
+    {
+      "start": 515.653,
+      "dur": 2.165,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S025-IMG-001.png",
+      "seed": "williams-234",
+      "treatment": "focus"
+    },
+    {
+      "start": 517.818,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-235",
+      "treatment": "depth"
+    },
+    {
+      "start": 520.043,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-236",
+      "treatment": "depth"
+    },
+    {
+      "start": 522.267,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-237",
+      "treatment": "depth"
+    },
+    {
+      "start": 524.492,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-238",
+      "treatment": "depth"
+    },
+    {
+      "start": 526.717,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-239",
+      "treatment": "depth"
+    },
+    {
+      "start": 528.941,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-240",
+      "treatment": "depth"
+    },
+    {
+      "start": 531.166,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-241",
+      "treatment": "depth"
+    },
+    {
+      "start": 533.39,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-242",
+      "treatment": "depth"
+    },
+    {
+      "start": 535.615,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-243",
+      "treatment": "depth"
+    },
+    {
+      "start": 537.84,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-244",
+      "treatment": "depth"
+    },
+    {
+      "start": 540.064,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-245",
+      "treatment": "depth"
+    },
+    {
+      "start": 542.289,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-246",
+      "treatment": "depth"
+    },
+    {
+      "start": 544.513,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-247",
+      "treatment": "depth"
+    },
+    {
+      "start": 546.738,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-248",
+      "treatment": "depth"
+    },
+    {
+      "start": 548.963,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-249",
+      "treatment": "depth"
+    },
+    {
+      "start": 551.187,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-250",
+      "treatment": "depth"
+    },
+    {
+      "start": 553.412,
+      "dur": 2.225,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S013-IMG-001.png",
+      "seed": "williams-251",
+      "treatment": "depth"
+    },
+    {
+      "start": 555.636,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-252",
+      "treatment": "depth"
+    },
+    {
+      "start": 557.841,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-253",
+      "treatment": "focus"
+    },
+    {
+      "start": 560.045,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-254",
+      "treatment": "depth"
+    },
+    {
+      "start": 562.25,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-255",
+      "treatment": "focus"
+    },
+    {
+      "start": 564.455,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-256",
+      "treatment": "depth"
+    },
+    {
+      "start": 566.659,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-257",
+      "treatment": "focus"
+    },
+    {
+      "start": 568.864,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-258",
+      "treatment": "depth"
+    },
+    {
+      "start": 571.068,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-259",
+      "treatment": "focus"
+    },
+    {
+      "start": 573.273,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-260",
+      "treatment": "depth"
+    },
+    {
+      "start": 575.477,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-261",
+      "treatment": "focus"
+    },
+    {
+      "start": 577.682,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-262",
+      "treatment": "depth"
+    },
+    {
+      "start": 579.886,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-263",
+      "treatment": "focus"
+    },
+    {
+      "start": 582.091,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-264",
+      "treatment": "depth"
+    },
+    {
+      "start": 584.295,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-265",
+      "treatment": "focus"
+    },
+    {
+      "start": 586.5,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S014-IMG-001.png",
+      "seed": "williams-266",
+      "treatment": "depth"
+    },
+    {
+      "start": 588.705,
+      "dur": 2.205,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S024-IMG-001.png",
+      "seed": "williams-267",
+      "treatment": "focus"
+    },
+    {
+      "start": 590.909,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-268",
+      "treatment": "bleed"
+    },
+    {
+      "start": 593.129,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-269",
+      "treatment": "depth"
+    },
+    {
+      "start": 595.348,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-270",
+      "treatment": "focus"
+    },
+    {
+      "start": 597.567,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-271",
+      "treatment": "bleed"
+    },
+    {
+      "start": 599.787,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-272",
+      "treatment": "depth"
+    },
+    {
+      "start": 602.006,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-273",
+      "treatment": "focus"
+    },
+    {
+      "start": 604.226,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-274",
+      "treatment": "bleed"
+    },
+    {
+      "start": 606.445,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-275",
+      "treatment": "depth"
+    },
+    {
+      "start": 608.665,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-276",
+      "treatment": "focus"
+    },
+    {
+      "start": 610.884,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-277",
+      "treatment": "bleed"
+    },
+    {
+      "start": 613.103,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-278",
+      "treatment": "depth"
+    },
+    {
+      "start": 615.323,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-279",
+      "treatment": "focus"
+    },
+    {
+      "start": 617.542,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-280",
+      "treatment": "bleed"
+    },
+    {
+      "start": 619.762,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-281",
+      "treatment": "depth"
+    },
+    {
+      "start": 621.981,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-282",
+      "treatment": "focus"
+    },
+    {
+      "start": 624.201,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-283",
+      "treatment": "bleed"
+    },
+    {
+      "start": 626.42,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-284",
+      "treatment": "depth"
+    },
+    {
+      "start": 628.639,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-285",
+      "treatment": "focus"
+    },
+    {
+      "start": 630.859,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-286",
+      "treatment": "bleed"
+    },
+    {
+      "start": 633.078,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-287",
+      "treatment": "depth"
+    },
+    {
+      "start": 635.298,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-288",
+      "treatment": "focus"
+    },
+    {
+      "start": 637.517,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-289",
+      "treatment": "bleed"
+    },
+    {
+      "start": 639.737,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-290",
+      "treatment": "depth"
+    },
+    {
+      "start": 641.956,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-291",
+      "treatment": "focus"
+    },
+    {
+      "start": 644.176,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-292",
+      "treatment": "bleed"
+    },
+    {
+      "start": 646.395,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-293",
+      "treatment": "depth"
+    },
+    {
+      "start": 648.614,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S030-IMG-001.png",
+      "seed": "williams-294",
+      "treatment": "focus"
+    },
+    {
+      "start": 650.834,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S015-IMG-001.png",
+      "seed": "williams-295",
+      "treatment": "bleed"
+    },
+    {
+      "start": 653.053,
+      "dur": 2.219,
+      "kind": "img",
+      "src": "williams/img/PD-2026-036-S029-IMG-001.png",
+      "seed": "williams-296",
+      "treatment": "depth"
+    }
+  ],
+  "captions": [],
+  "graphics": [],
+  "figures": [
+    {
+      "start": 0.6,
+      "end": 6.6,
+      "kind": "kinetic",
+      "lines": [
+        "A BLURRY PHOTO.",
+        "A COMPUTER'S GUESS."
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 7.873,
+      "end": 13.873,
+      "kind": "kinetic",
+      "lines": [
+        "THE ALGORITHM SAID IT WAS YOU."
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 30.418,
+      "end": 36.418,
+      "kind": "kinetic",
+      "lines": [
+        "JANUARY 2020",
+        "A DETROIT SUBURB"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 76.964,
+      "end": 82.964,
+      "kind": "kinetic",
+      "lines": [
+        "≈ 30 HOURS IN A CELL",
+        "\"A COMPUTER DID.\""
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 114.418,
+      "end": 120.418,
+      "kind": "kinetic",
+      "lines": [
+        "CHARGES DROPPED",
+        "HOW DID THEY GET HIS NAME?"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 153.327,
+      "end": 159.327,
+      "kind": "kinetic",
+      "lines": [
+        "A GRAINY FRAME",
+        "NO NAME ATTACHED"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 191.509,
+      "end": 197.509,
+      "kind": "kinetic",
+      "lines": [
+        "A GUESS, RANKED BY A NUMBER",
+        "MILLIONS OF PHOTOS"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 240.964,
+      "end": 246.964,
+      "kind": "kinetic",
+      "lines": [
+        "A MATCH IS A LEAD — NOT A NAME TO ARREST"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 286.418,
+      "end": 292.418,
+      "kind": "kinetic",
+      "lines": [
+        "A PROBABILITY, NOT PROOF",
+        "WHY A FACE LIKE HIS?"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 322.782,
+      "end": 328.782,
+      "kind": "kinetic",
+      "lines": [
+        "FALSE MATCHES: 10–100× HIGHER",
+        "NIST · 2019"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 367.145,
+      "end": 373.145,
+      "kind": "kinetic",
+      "lines": [
+        "TRAINED ON TOO FEW OF US"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 431.145,
+      "end": 437.145,
+      "kind": "kinetic",
+      "lines": [
+        "YOUR FACE IS ALREADY IN THE LINEUP"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 470.782,
+      "end": 476.782,
+      "kind": "kinetic",
+      "lines": [
+        "APRIL 2021 · LAWSUIT",
+        "JUNE 2024 · SETTLEMENT",
+        "AUDIT SINCE 2017",
+        "COURT OVERSIGHT · 4 YEARS"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 518.418,
+      "end": 524.418,
+      "kind": "kinetic",
+      "lines": [
+        "FIRST CASE THE COUNTRY HEARD ABOUT",
+        "NOT THE FIRST TO HAPPEN"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 556.236,
+      "end": 562.236,
+      "kind": "kinetic",
+      "lines": [
+        "HE WAS NOT THE LAST"
+      ],
+      "style": "maskslide"
+    },
+    {
+      "start": 591.509,
+      "end": 597.509,
+      "kind": "kinetic",
+      "lines": [
+        "YOUR FACE IS A PASSWORD YOU CAN'T CHANGE",
+        "SUBSCRIBE"
+      ],
+      "style": "maskslide"
+    }
+  ]
+}

@@ -3,6 +3,8 @@
 // FaceMatchGrid / BiasBars / CaseTimeline are genuinely missing capabilities).
 // Reused motionkit parts (NumberTicker, PinDropMap, KineticCaptions, ActTitle,
 // EvidenceCard, StampReveal, beds/overlays) are imported directly where used.
+export {WilliamsScene} from './WilliamsScene';
+export type {Treatment} from './WilliamsScene';
 export {FaceMatchGrid} from './FaceMatchGrid';
 export {BiasBars} from './BiasBars';
 export {CaseTimeline} from './CaseTimeline';
