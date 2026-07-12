@@ -1,6 +1,27 @@
 import React from 'react';
 import {Composition, Still} from 'remotion';
 import {BRAND} from './brand';
+import {PDCore5Preview, core5PreviewDuration} from './components/core5/preview';
+import {TimbsB1, timbsB1DurationInFrames} from './compositions/TimbsB1';
+import {TimbsB2, timbsB2DurationInFrames} from './compositions/TimbsB2';
+import {TimbsDepthTest, timbsDepthTestDuration} from './compositions/TimbsDepthTest';
+import {TimbsParallax, timbsParallaxDuration} from './compositions/TimbsParallax';
+import {TimbsC3, timbsC3DurationInFrames} from './compositions/TimbsC3';
+import {PDTest60, pdTest60Duration} from './compositions/PDTest60';
+import {PDNewLook, pdNewLookDuration} from './compositions/PDNewLook';
+import {PD3DShowcase, pd3DShowcaseDuration} from './compositions/PD3DShowcase';
+import {PDAllTools, pdAllToolsDuration} from './compositions/PDAllTools';
+import {PDForfeiture60, pdForfeiture60Duration} from './compositions/PDForfeiture60';
+import {PDDepthFixed, pdDepthFixedDuration} from './compositions/PDDepthFixed';
+import {PDReel, pdReelDuration} from './compositions/PDReel';
+import {PDOriginal, pdOriginalDuration} from './compositions/PDOriginal';
+import {WarrantScreen, warrantScreenDuration} from './compositions/florence/WarrantScreen';
+import {RecordsDrawer, recordsDrawerDuration} from './compositions/florence/RecordsDrawer';
+import {ReceiptStamp, receiptStampDuration} from './compositions/florence/ReceiptStamp';
+import {VerdictSeam, verdictSeamDuration} from './compositions/florence/VerdictSeam';
+import {BodyLine, bodyLineDuration} from './compositions/florence/BodyLine';
+import {Florence, florenceDuration} from './compositions/Florence';
+import {PDAIHero, pdAIHeroDuration} from './compositions/PDAIHero';
 import {Opening} from './compositions/Opening';
 import {Episode, TEMPLATE_12MIN} from './compositions/Episode';
 import {StyleTest} from './compositions/StyleTest';
@@ -34,6 +55,7 @@ import {DepthTest} from './compositions/DepthTest';
 import {MotionSample, motionSampleDurationInFrames} from './compositions/MotionSample';
 import {TylerFigures, tylerFiguresDurationInFrames} from './compositions/TylerFigures';
 import {CaseFilm, caseFilmDurationInFrames, FilmData} from './compositions/CaseFilm';
+import {WilliamsFilm, williamsFilmDurationInFrames} from './compositions/WilliamsFilm';
 import {AircashFigTest, AIRCASH_FIG_TEST_FRAMES} from './compositions/AircashFigTest';
 import {HindersFigTest, HINDERS_FIG_TEST_FRAMES} from './compositions/HindersFigTest';
 import kylloFilm from './data/kyllo_film.json';
@@ -47,6 +69,7 @@ import hindersFilm from './data/hinders_film.json';
 import hintonFilm from './data/hinton_film.json';
 import carsearchFilm from './data/carsearch_film.json';
 import rolinFilm from './data/rolin_film.json';
+import williamsFilm from './data/williams_film.json';
 import {CarsearchThumbnail, CARSEARCH_THUMBS} from './compositions/CarsearchThumbnails';
 import {RolinThumbnail, ROLIN_THUMBS} from './compositions/RolinThumbnails';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
@@ -86,6 +109,8 @@ import {SHORT32} from './data/short32';
 import {SHORT33} from './data/short33';
 import {SHORT34} from './data/short34';
 import {SHORT35} from './data/short35';
+import {SHORT36} from './data/short36';
+import {SHORT37} from './data/short37';
 import {SHORT01} from './data/short01';
 import {SHORT02} from './data/short02';
 import {SHORT03} from './data/short03';
@@ -1162,6 +1187,30 @@ export const RemotionRoot: React.FC = () => {
       />
       <Still id="ShortThumb-short35-B" component={ShortThumb} width={1080} height={1920}
         defaultProps={{data: SHORT35, headline: 'UNDER $10K\n= SUSPICIOUS?', badge: 'IRS', backgroundSrc: 'shorts/short35/short35_thumb.png'}} />
+
+      {/* ---- SHORT #36 Riley (phone search at arrest) — loop-designed ---- */}
+      <Composition id="Short-short36-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT36, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT36, platform: 'yt' as const, depth: true}} />
+      <Composition id="Short-short36-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT36, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT36, platform: 'tiktok' as const, depth: true}} />
+      <Still id="ShortThumb-short36" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT36, headline: 'YOUR PHONE?', badge: 'NO WARRANT', backgroundSrc: 'shorts/short36/short36_01.png'}} />
+
+      {/* ---- SHORT #37 Mapp (illegal search, evidence excluded) — loop-designed ---- */}
+      <Composition id="Short-short37-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT37, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT37, platform: 'yt' as const, depth: true}} />
+      <Composition id="Short-short37-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT37, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT37, platform: 'tiktok' as const, depth: true}} />
+      <Still id="ShortThumb-short37" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT37, headline: 'FAKE\nWARRANT', badge: 'MAPP v. OHIO', backgroundSrc: 'shorts/short37/short37_01.png'}} />
       <Composition
         id="Short-short01-yt"
         component={Short}
@@ -1383,6 +1432,150 @@ export const RemotionRoot: React.FC = () => {
         id="TimbsPremium"
         component={TimbsPremium}
         durationInFrames={timbsPremiumDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="PDCore5"
+        component={PDCore5Preview}
+        durationInFrames={core5PreviewDuration(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="TimbsB1"
+        component={TimbsB1}
+        durationInFrames={timbsB1DurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="TimbsB2"
+        component={TimbsB2}
+        durationInFrames={timbsB2DurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="TimbsC3"
+        component={TimbsC3}
+        durationInFrames={timbsC3DurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="PDTest60"
+        component={PDTest60}
+        durationInFrames={pdTest60Duration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="PDNewLook"
+        component={PDNewLook}
+        durationInFrames={pdNewLookDuration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="PD3DShowcase"
+        component={PD3DShowcase}
+        durationInFrames={pd3DShowcaseDuration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="PDAllTools"
+        component={PDAllTools}
+        durationInFrames={pdAllToolsDuration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="PDForfeiture60"
+        component={PDForfeiture60}
+        durationInFrames={pdForfeiture60Duration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="PDDepthFixed"
+        component={PDDepthFixed}
+        durationInFrames={pdDepthFixedDuration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="PDReel"
+        component={PDReel}
+        durationInFrames={pdReelDuration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="PDOriginal"
+        component={PDOriginal}
+        durationInFrames={pdOriginalDuration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="FlorenceWarrantScreen"
+        component={WarrantScreen}
+        durationInFrames={warrantScreenDuration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition id="FlorenceRecordsDrawer" component={RecordsDrawer} durationInFrames={recordsDrawerDuration} fps={BRAND.video.fps} width={BRAND.video.width} height={BRAND.video.height} />
+      <Composition id="FlorenceReceiptStamp" component={ReceiptStamp} durationInFrames={receiptStampDuration} fps={BRAND.video.fps} width={BRAND.video.width} height={BRAND.video.height} />
+      <Composition id="FlorenceVerdictSeam" component={VerdictSeam} durationInFrames={verdictSeamDuration} fps={BRAND.video.fps} width={BRAND.video.width} height={BRAND.video.height} />
+      <Composition id="FlorenceBodyLine" component={BodyLine} durationInFrames={bodyLineDuration} fps={BRAND.video.fps} width={BRAND.video.width} height={BRAND.video.height} />
+      <Composition
+        id="PDAIHero"
+        component={PDAIHero}
+        durationInFrames={pdAIHeroDuration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      {/* EP37 Florence — DETERMINISTIC 106-cut assembly (04_scenes/assembly_spec.v001.md).
+          Cut durations are locked to the ElevenLabs master via florence_words.json
+          (Σ=16288f=542.93s≈9:03). WordBand captions are live. FINAL render uses --muted;
+          the narration + SFX + per-act BGM bed is muxed in ffmpeg (06_audio/mix_plan.v001.md). */}
+      <Composition
+        id="Florence"
+        component={Florence}
+        durationInFrames={florenceDuration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="TimbsDepthTest"
+        component={TimbsDepthTest}
+        durationInFrames={timbsDepthTestDuration}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="TimbsParallax"
+        component={TimbsParallax}
+        durationInFrames={timbsParallaxDuration}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
@@ -1644,6 +1837,33 @@ export const RemotionRoot: React.FC = () => {
           title: 'The $2,300 That Took a House',
           subtitle: 'Tyler v. Hennepin County (2023)',
         }}
+      />
+      {/* EP36 williams — first known US wrongful arrest from facial-recognition misidentification.
+          SKELETON timing (estimated seconds); hero stills under williams/img/ are generated
+          separately and are intentionally absent until the image+factory step lands. */}
+      <Composition
+        id="CaseFilm-williams"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(williamsFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: williamsFilm as unknown as FilmData,
+          seriesLabel: 'THEY DID NOTHING WRONG',
+          title: 'Arrested by an Algorithm',
+          subtitle: 'Williams v. City of Detroit (facial-recognition wrongful arrest)',
+        }}
+      />
+      {/* EP36 williams — PREMIUM ANIMATION cut (beatsheet-driven; replaces the still-heavy
+          CaseFilm-williams). 128 beats @30fps, ~11.89min. Duration read from the beatsheet meta. */}
+      <Composition
+        id="WilliamsFilm"
+        component={WilliamsFilm}
+        durationInFrames={williamsFilmDurationInFrames()}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
       />
       <Composition
         id="CaseFilm-katz"
