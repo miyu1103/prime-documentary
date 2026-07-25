@@ -159,3 +159,6 @@ PASS script_length: 4,814 words (need 3,973-5,309)
 2. CODEX_A（`EP55_burge_CODEX_A_ASSETS.v001.md`）で素材255枚+factory235+i2v42を発注。
 3. CODEX_B は未執筆 — DESIGN §3 の**18カード表（R3 で ×9 CENTER_STACK に確定）**・§5 のタイミングを B 契約表に落とすこと。
 4. `check_burge_facts.py` を EP52 の `check_morton_facts.py` から clone（R-BURGE-CONVICT / R-VICTIM-STATUS / R-CREW-NAME / R-TORTURE-DEPICT / R-RACE / R-NUM / R-FACE / R-READABLE / R-DOCHL / R-QUOTE / R-DATE）。
+
+### R3+++ (2026-07-26) — measured-VO re-lock (DESIGN §5's own procedure)
+ElevenLabs master measured 1,653.3s vs the 1,582.1s provisional (+71.2s; real pace ≈170.4 wpm on this text). Per DESIGN §5's built-in re-lock step: non-speech budget 199.9→179.7s, total 1,842.0s = 30:42 (band 29:00–31:00 ✓, speech ratio 1.114 ∈ 1.04–1.30 ✓), durationInFrames re-locked 53,730→55,260. No script edit, no re-TTS. EP53 (+9.1s) and EP54 (+29.2s) absorbed by their own gap budgets without re-lock.
