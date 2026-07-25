@@ -183,7 +183,7 @@ BANNED_ACCURACY = re.compile(
     r"guilty (four|sailors)|"
     r"(rape|assault|stabbing) (scene|re-?enactment|depicted)|raped woman|stabbed (body|woman|victim)|murder scene|dead body|corpse|the knife|blood on|"
     r"(glorified|heroic|admirable) ballard|lurid|"
-    r"legible (confession|letter|document|case file|report|newspaper|lab report|pardon)|readable (confession|letter|document|case file|report)|"
+    r"(?<!il)legible (confession|letter|document|case file|report|newspaper|lab report|pardon)|(?<!un)readable (confession|letter|document|case file|report)|"
     r"dochighlight",
     re.IGNORECASE)
 ```
@@ -1199,7 +1199,7 @@ A long prison corridor in perfect one-point perspective, doors dissolving into b
 
 ### ACT 4 — THE LONG UNDOING（45枚・S146–S190・climax・cascade・最密②）
 
-**years_seasons — 5 — S146–S150**
+**years_seasons — 5 — S146–S150**（★HP: S148・S150 の2行＝[HSTYLE]/[HNEG]・他3行は object）
 ```
 - `S146.png`
 A single cell window abstracted to a pale rectangle of cold light, the color temperature shifting from winter gray toward thin summer across it, seasons passing with no calendar and no person, no readable text [STYLE] Avoid: [NEG]
@@ -1281,7 +1281,7 @@ Letter-cream light flooding outward from a single bright gel lane, washing over 
 The tally wall washed in rising cream light from off frame, four chalk strokes beginning to pale inside it, the count losing its power, no letters, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
-**vacatur_2016 — 4 — S173–S176**（連邦地裁・actual innocence）
+**vacatur_2016 — 4 — S173–S176**（連邦地裁・actual innocence・★HP: S174 の1行のみ＝匿名 robed judge stand-in・実在判事に似せない）
 ```
 - `S173.png`
 A federal courthouse's granite columns rising into cold light, long shadows across wide steps, the building where the file was finally read, no people, no readable inscription [STYLE] Avoid: [NEG]
@@ -1293,7 +1293,7 @@ A thick legal opinion lying open on dark wood, its lines rendered as unreadable 
 A gavel at rest beside the smeared opinion in mixed slate and cream light, no strike needed, the quietest possible thunder, macro, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
-**absolute_pardons_cream — 4 — S177–S180**（完全赦免＝cream flood）
+**absolute_pardons_cream — 4 — S177–S180**（完全赦免＝cream flood・★HP: S177 の1行のみ＝four men from behind）
 ```
 - `S177.png`
 Four anonymized men seen only from behind, standing shoulder to shoulder before a pale classical capitol portico as the first warm cream of day breaks across its columns against a clearing slate sky, the state about to say the word innocent, all backs, no faces, no readable text [HSTYLE] Avoid: [HNEG]
@@ -1315,7 +1315,7 @@ A fountain pen resting on a settlement document rendered as an unreadable smear,
 An old brass balance scale with a small stack of paper on one pan and a pocket watch on the other, the pan with the watch sunk low, years outweighing money, dark backdrop, cream key light, no readable text, no people [STYLE] Avoid: [NEG]
 ```
 
-**★HP ford_mirror — 6 — S184–S189**（badge → cuffs・権力の鏡像・匿名・record の範囲）
+**★HP ford_mirror — 6 — S184–S189**（badge → cuffs・権力の鏡像・匿名・record の範囲・★HP は S186–S187 の2行のみ＝他4行は object）
 ```
 - `S184.png`
 A pair of steel handcuffs open on a dark federal-courtroom table beside an evidence bag rendered unreadable, cold light, the instruments turned around, macro, no people, no readable text [STYLE] Avoid: [NEG]
@@ -1396,7 +1396,8 @@ ACT4  : 5+4+5+3+4+3+3+4+4+3+6+1 = 45
 ACT5  : 4+4+3+4 = 15
 合計   : 15+45+45+40+45+15 = 205 ✓
 ★human-present(★HP) body: 12(ACT1: S036–S044, S051–S053)+12(ACT2: S071–S076, S096–S101)
-                          +10(ACT3: S112–S114, S136–S142)+21(ACT4: S151–S162, S167–S169, S186–S187 ほか) = 55 / 205 = 26.8%
+                          +10(ACT3: S112–S114, S136–S142)+21(ACT4: S148, S150, S151–S162, S167–S169, S174, S177, S186–S187) = 55 / 205 = 26.8%
+（R3 検証済み: [HSTYLE] 行の実数 = 12+12+10+21 = 55。旧版は ACT4 が17行しかなく「ほか」で誤魔化していた→S148/S150/S174/S177 を ★HP に転換して55を実体化）
 （残り150は object/symbolic。S057/S098/S101/S120/S151/S153/S192 等の hands-only は「backs and hands and objects only」の範囲＝レーン表記は各行の [STYLE]/[HSTYLE] 記載が正）
 ```
 > **S001..S205 の連番が穴なく205行**そろっていることを `--only S001` の `shots=250`（205 body + 42 i2v種 + 3 thumb_face）で確認する。**★HP 55枚は `[HSTYLE]`/`[HNEG]`、残り150枚は `[STYLE]`/`[NEG]` を全文連結。**

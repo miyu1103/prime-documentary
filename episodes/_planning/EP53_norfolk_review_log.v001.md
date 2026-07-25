@@ -70,7 +70,7 @@ Method: every load-bearing claim in narration order → ledger ID → verdict (O
 | 57 | Ending: Michelle "would be in her forties now"; parents "grieved twice" | NF-01/47 | OK (born ~1979 → 47 in 2026; family beat kept respectful) |
 | 58 | Ford ending line: "got to test, from the inside, how it feels when the government decides what your words are going to mean" | NF-44 | OK — rhetorical symmetry anchored to his false-statements conviction; no claims beyond the record. |
 
-**R1 outcome: 12 fixes applied (rows 6, 7, 8, 12, 15, 23, 26, 30, 33, 34, 35, 40, 42, 51, 56 — of which 8, 35 and 40 were substantive accuracy errors; the rest were unsupported texture or hedging).** Zero remaining claims without an NF anchor. Banned items verified absent: wound counts, ship name, complex name, prosecutor names, "criminal justice system failed" pseudo-quote, Ballard's "opened their mouths" line, parents' 2009 verbatim, any depiction language for the crime.
+**R1 outcome: 15 fixes applied (rows 6, 7, 8, 12, 15, 23, 26, 30, 33, 34, 35, 40, 42, 51, 56 — of which 8, 35 and 40 were substantive accuracy errors; the rest were unsupported texture or hedging).** *(R3 note: this line originally said "12 fixes" while listing 15 rows — count corrected.)* Zero remaining claims without an NF anchor. Banned items verified absent: wound counts, ship name, complex name, prosecutor names, "criminal justice system failed" pseudo-quote, Ballard's "opened their mouths" line, parents' 2009 verbatim, any depiction language for the crime.
 
 ---
 
@@ -114,12 +114,116 @@ Verdict: **PASS** (4,645 words; mandated band 4,600–4,750 ✓). RISK note = in
 
 ---
 
-## R3 (independent) — PLACEHOLDER
+## R3 (INDEPENDENT) — COMPLETED 2026-07-26
 
-To be performed by an independent reviewer before `script_verified`:
-- [ ] Re-verify the two VERBATIM quotes against a second source pull (NF-21 court rendering incl. spelling; NF-39 incl. punctuation variant note).
-- [ ] Spot-check 10 random claims against the ledger's cited URLs (fresh fetch).
-- [ ] Judge the two flagged editorial characterizations: "one of the worst false-confession disasters in American history" (R1 row 7) and the "middling house" settlement arithmetic (R1 row 51).
-- [ ] Sensitivity read: the one-clause crime statement, the family beat, the 14-year-old clause (NF-20) — confirm restraint holds at listening speed.
-- [ ] Cold read for retention: does the count device stay trackable audio-only?
-- Reviewer: ____ · Date: ____ · Verdict: ____
+**Reviewer:** independent R3 session (did not write this package; fresh-eyes adversarial pass with fix authority, per the owner's 台本3回 mandate). **Method:** owner-standard checklist recomputed from scratch · 15-claim adversarial fact spot-check re-verified via independent web research (two parallel research passes + targeted searches), hunting both script↔ledger drift and ledger errors · sensitivity hard-gates · cross-document consistency (script ↔ DESIGN ↔ CODEX_A) with a mechanical audit of the CODEX_A tables · all defects fixed directly in the five EP53 files. **Verdict: SHIP-READY for `script_verified` — 17 defects found (0 critical · 4 high · 7 medium · 6 low), ALL FIXED, word count held at exactly 4,645, all gates PASS.**
+
+### R3.1 Owner-standard checklist (recomputed, not trusted from R2)
+
+| Item | Verdict | Evidence (recomputed this round) |
+|---|---|---|
+| Hook lands ≤8s (~24 words) | **PASS (after R3 fix)** | Full hook proposition ("Four US Navy sailors confessed to the same rape and murder — one after another, facing the same detective, in Norfolk, Virginia") completes at word 24 ≈ 8.1s @178.1 wpm. R3 changed "in the same small interrogation room" → "facing the same detective": the same-room literal is nowhere in the record; the same-detective frame is (Ford obtained all four confessions — HARD FRAME/NF-08/13). Hook got MORE accurate and plants the Ford payoff earlier. |
+| Open loop by ~20s | PASS | "Here is the problem. None of them did it." lands ≈12–15s; the 26-minute count device ("five confessions… keep count") is armed by ~33s; Ford-in-prison promise ~37s. |
+| Structure | PASS | COLD OPEN (voice from 0:00) → OPENING (BrandOpening as ducked sting per DESIGN §2/§5 HOOK-AUDIO) → ACT I–IV → ENDING. Verified marker-by-marker (also gate F3). |
+| Payoffs stacked LAST | PASS | 2011 Tice → 2016 actual innocence + vacatur → 2017 absolute pardons → 2018 $8.4M → Ford's 12½ years held to the final tally ("I've kept one thing from you"). Ending is decisive: count resolved → thesis → present-day → CTA tied to the count device. No trailing whimper. |
+| Re-hook cadence ≤ ~90s | PASS | Recomputed independently: section word counts (raw tokens) CO 112 / OP 163 / ACT I 950 / ACT II 1,036 / ACT III 967 / ACT IV 1,233 / END 298 — matches R2's boundaries within tokenizer noise. Word-offset timing of 45 sampled tension devices @178.1 wpm: max gap in the SPARSE sample = 91s (Act II, 7:40–9:11), and that window contains two devices my sample skipped ("Confession number two. Mark the wall." / "Not him either."), so the true max gap is ≤ ~80s. R2's table was honest. |
+| Zero AI-smell | PASS | 22-pattern cliché grep over narration ("little did", "would prove to be", "in a shocking turn", "but fate", "needless to say", "delve", "tapestry", "testament to", "chilling reminder", "what happened next", "sent shockwaves", "against all odds", "unimaginable", etc.) = **0 hits**. Rhetorical questions: 5 total in ~26 min — no spam. No over-symmetric triads found on manual pass. |
+| Zero Japanese chars in narration | PASS | Scripted scan of narration body (OST markers excluded) = 0 CJK/full-width chars; gate F2 ok. |
+| US-audience clarity | PASS | Every actor located/titled on first mention; conditional vs absolute pardon each explained in one plain line; habeas compressed per ledger note; no unexplained legal terms of art. |
+| Register (first-rate author, not content mill) | PASS | Voice devices carry the film (the chalk-wall count, "the crime was used to repair the confession," "Physics testified in this case. Nobody called it to the stand.," "a confession is the sun," the bookkeeping-of-dates beat). Sentence-length variance confirmed across acts. |
+
+### R3.2 Adversarial fact spot-check — 15 load-bearing claims (script vs ledger vs fresh web pull)
+
+Sources used: PBS Frontline "The Confessions" case timeline + Ford articles (pbs.org) · Tice v. Johnson (4th Cir. 2011, FindLaw text) · Williams v. Brown, 208 F. Supp. 3d 713 (E.D. Va. 2016, vlex/casetext text) · DOJ/FBI press releases (Ford) · AP via Navy Times (Dec 4, 2018) · AP via Juneau Empire (Oct 31, 2016) · Time (Nov 2008) · NRE/exonerate.org · DPIC · WaPo (Aug 2009) · norfolkfour.com timeline (cross-check).
+
+1. **Crime & single-attacker forensics** (night of Jul 7–8, 1997; Billy Bosko finds her Jul 8 returning from a week at sea; no forced entry; wounds of uniform depth, closely bunched) — **CONFIRMED** (Frontline timeline; Tice v. Johnson; Williams v. Brown).
+2. **Williams: ~11h overnight, false polygraph claim, confessed before dawn Jul 9; first account wrong and corrected** — **CONFIRMED** (Frontline; NRE). "Before dawn" hour not pinnable to the minute in any primary source → stays, per ledger H + "roughly" hedges.
+3. **Dec 11, 1997 DNA excludes Williams → police pivot to Dick; Dick confesses Jan 12, 1998 despite USS Saipan duty records; Dick excluded Mar 26, 1998** — **CONFIRMED** (Frontline timeline). Script correctly aims the December knowledge at police (the defense-notification lag is the M-flagged separate fact, unused).
+4. **Wilson confessed Apr 8, 1998 (~9h), excluded Jun 10; Tice arrested Jun 18, 1998 in Florida** — **CONFIRMED**, but the script had the ORDER INVERTED ("By then Derek Tice had already been arrested" at the Jun 10 exclusion — arrest came 8 days AFTER). **FIXED** → "Eight days later, Derek Tice was arrested down in Florida" (computed from two H dates, same pattern as the verified "thirteen days" device).
+5. **Feb 18, 1999 all seven excluded; Pauley/Farris/Danser dropped May 14, 1999; Danser's Warminster PA records** — **CONFIRMED** (Frontline; Wikipedia consistent).
+6. **Ballard letter VERBATIM** ("And one last thing you Remember that night i went to Mommie's house and the Next morning Michelle got killed guess who did that, Me HA, HA.") — **CONFIRMED character-for-character** against the FindLaw rendering of Tice v. Johnson, broken spelling/caps intact; reached police Feb 1999 (Frontline: Feb 22).
+7. **Ballard: only DNA match (Mar 4, 1999), confessed saying he acted alone** — **CONFIRMED**; BUT his second confession was **March 11, 1999 — not "April"**: the ledger's "(and again in April 1999)" did not verify against Frontline (which records Mar 4 + Mar 11). **LEDGER ERROR — FIXED** in NF-22, and script line "twice, in March and again in April" → "twice, once in each statement he gave."
+8. **Ballard's crimes bracket the murder** (bat attack, same complex, days before; rape of a 14-year-old ~a mile away days after; in prison for the latter when he wrote) — **CONFIRMED** (Tice v. Johnson; hedged "days" per M dates). His custody START, however, is murky (one timeline: warrant Jul 8, 1997; another: "in prison since 1998") → the script's aside that he was "already sitting in a prison cell" by Dec 1997 is **UNVERIFIABLE — CUT**, replaced with a clean tease ("a name you will meet soon enough").
+9. **Plea/verdict sequence** (Williams pleads Jan 22, 1999 pre-letter; Dick pleads Apr 21, 1999 post-match + testified for the state; Wilson Jun 16, 1999 rape-only, 8.5 years; Tice convicted Feb 2000, reversed 2002, reconvicted 2003; Ballard pleads Mar 22, 2000) — **CONFIRMED** (Frontline timeline; Tice v. Johnson). Ballard's sentence: Frontline/court-adjacent say two life sentences; a tertiary strand says "100 years, 59 suspended" — conflict already documented in NF-24, "two life sentences" retained per source hierarchy, no number ever on screen.
+10. **Ford conviction Oct 27, 2010, thirteen days before Frontline's Nov 9, 2010 broadcast; UNRELATED cases; never criminally punished for the Norfolk Four** — **CONFIRMED** (Frontline; DOJ/FBI releases). Count breakdown was wrong in the ledger ("two counts of extortion + one count false statements"; actually **conspiracy to commit extortion + extortion + false statements**) — **LEDGER FIXED**; narration was already count-agnostic ("Extortion, under color of his badge… he lied to them") and needed no change.
+11. **Ford sentenced Feb 25, 2011 — 12 years 6 months federal** — **CONFIRMED** (Frontline sentencing article; FBI release). "Longer than Eric Wilson served" holds (12.5 > 8.5 sentenced > ~7.4 served).
+12. **Pardons: Kaine CONDITIONAL Aug 6, 2009** (3 released; convictions/registry stood; Kaine declined to declare innocence) **and McAuliffe ABSOLUTE Mar 21, 2017, all four** — **CONFIRMED** (Frontline; AP; WaPo; ABA Journal).
+13. **Gibney, Sept 2016, Williams v. Brown**: two-day hearing, actual-innocence finding; VERBATIM "By any measure, the evidence shows the defendants' innocence — by a preponderance of the evidence, by clear and convincing evidence, by evidence beyond a reasonable doubt, or even by conclusive evidence." + "no sane human being could find them guilty."; formal vacatur **Oct 31, 2016** after AG Herring stood down — **CONFIRMED against the opinion text** (vlex/casetext; AP). Note: the paraphrase "By any measure, extraordinary" floating in the topic brief is NOT a real quote — correctly absent from script/AE; the banned "criminal justice system failed" pseudo-quote is also confirmed absent.
+14. **Tice's path out** (federal habeas Sept 2009; 4th Cir. affirmance Apr 20, 2011 on counsel's failure to move to suppress; charges dropped Aug 2011) — **CONFIRMED**; drop date splits Aug 4 (DPIC) vs Aug 5 (other reports) → **LEDGER HEDGED** to "early August 2011"; script already says "that August."
+15. **Aftermath numbers** (served ~12 / ~11.5 / ~11 / ~7.4 years, >40 combined; Wilson's registry + stepson-adoption bar until 2017; $3.5M Commonwealth + $4.9M Norfolk = ~$8.4M in 2018, split undisclosed; 26 retired FBI agents signed the 2008 letter, supporters ~30 agents + 10 former AGs + 13 original jurors; "The Wrong Guys" by Wells & Leo, 2008) — **CONFIRMED** (AP/Navy Times; Time; counsel's release; Wikipedia consistent).
+
+**Also re-verified per the R2 handoff list:** both VERBATIM quotes re-pulled from second sources (item 6, 13) ✓ · the two flagged editorial characterizations judged: "one of the worst false-confession disasters in American history" — KEEP (hedged with "one of"; the case is routinely described in exactly these terms by Frontline/Leo-adjacent coverage; four coerced confessions to one crime is, verifiably, near the extreme of the phenomenon) · the "middling house" settlement arithmetic — KEEP ($8.4M ÷ 4 men ÷ ~42 stolen person-years ≈ $200k/year vs 2018 US median existing-home ≈ $260k; "roughly the cost of a middling house" is fair and hedged) · cold read for the count device — WORKS audio-only (each of the four false confessions gets an explicit numbered "Mark the wall" beat; the fifth is announced, delayed one act, then resolved in the Ending recount; a listener never needs the screen to keep count).
+
+### R3.3 Sensitivity audit (hard gates)
+
+- **Four sailors' innocence stated as fact** — PASS (vacated + absolutely pardoned + federal actual-innocence finding; zero hedging on innocence anywhere).
+- **Ford characterized ONLY by record** — PASS after one fix: "the decorated detective" (decoration is not in the record) → "the veteran detective" (his tenure is). Everything else: interrogation findings attributed to the court/Frontline; 1990 Lafayette Grill prior per investigative reporting; federal conviction stated as UNRELATED, plainly, twice; no mind-reading.
+- **Rape never depicted or dwelt on** — PASS. Exactly one restrained clause in Act I with an explicit dignity framing sentence; the 14-year-old victim gets one clause, never named or characterized (NF-20 guardrail); no wound counts; apartment as absence only.
+- **Michelle's family dignity** — PASS. One respectful beat, structural empathy ("it hands a grieving family a lie to build their grief on"), the aim-at-the-method directive embedded in narration; never quoted (their 2009 statement is M), never rebutted.
+- **No alternative-suspect insinuation beyond Ballard** — PASS. Tamika Taylor unnamed and framed as a grieving friend; prosecutors unnamed (NF-26); no third-party theories.
+
+### R3.4 Cross-document consistency + CODEX_A mechanical audit
+
+- **Script beats ↔ DESIGN acts**: aligned after fixing DESIGN §2's stale OPENING line ("Seven men will be charged. Six of them will be innocent." — a pre-R1 draft artifact contradicting the script, the OST card, and NF-16) → now "Eight men in all… Seven of them will be innocent." DESIGN §2's Michelle dignity card aligned to §3's CENTER_STACK #1 ("NORFOLK, VIRGINIA · 1997"). DESIGN §6's stale "PASS at 4,658 words" → 4,645.
+- **AE deck (DESIGN §3)**: 4+9+2+1+1 = 17 cards ✓; only the six proven layouts; VOTE_SPLIT correctly zeroed (no verified jury tally); the two QUOTE_CARDs match the ledger's only two VERIFIED-VERBATIM quotes; every numeric card carries the ledger hedge; year-grouping rule present.
+- **CODEX_A §3.3 checksum — recomputed from scratch, all 8 lines hold**: 536 = 220+232+84 ✓ · 1790.6/536 = 3.341s ✓ (≤7.0) · 220/536 = 41.04% ✓ (≤45%) · 316/536 = 58.96% ✓ (≥45%) · caps 1.073/1.0/2.0 ✓ · 479/536 = 0.8937 ✓ (≥0.70) · 536/479 = 1.119 ✓ (≤1.4) · 1790.6/30 = 59.7 → 232 ≥ 60 ✓. §2 arithmetic also holds (4,645 @178.1 → 1564.9s; ×1.150 = 1799.6s = 30:00; ×30fps = 53,988).
+- **Numbering gap-free at claimed counts (scripted check)**: S001–S205 = exactly 205 rows, no gaps/dupes ✓ · M01–M42 = 42 ✓ · F001–F232 = 232 distinct factory entries ✓ · overlay = exactly 30 entries in §4.6 ✓ · §5.7 motif sums re-added = 15/45/45/40/45/15 = 205 ✓ · also_thumb anchors S001/S060/S121/S170 exist with the §4.3a-described motifs ✓ · H↔M mapping (18 human i2v seeds) consistent ✓.
+- **20-row random sample of §5.6 prompts vs script beats** (seed 53: S008, S010, S015, S034, S044, S056, S067, S089, S093, S117, S124, S129, S134, S158, S183, S184, S187, S188, S191, S192): every prompt matches its act's narration beat; every sampled prompt respects the bans (no real-person likeness, no victim/violence/knife, no readable documents, silhouette/backs/hands discipline). Full 205+42-prompt sweep with the §1.3 regexes: **0 violations**.
+- **★HP arithmetic defect (MEDIUM, fixed)**: §5.2/§5.7 and DESIGN §1 promise **55 human-present body stills (26.8%), ACT4 = 21** — but only **51 rows (ACT4 = 17)** actually carried `[HSTYLE]` (the writer counted the ford_mirror motif's 6 rows wholesale though 4 are object shots, and papered the gap with "ほか"). Fixed by converting four ACT4 rows whose narration beats naturally carry people — **S148** (lone anonymized inmate in the yard — "Years, then."), **S150** (anonymized visitor's hand to the visiting-room glass — "the family that keeps coming"), **S174** (anonymized robed judge stand-in reading the nineteen-year file — the Gibney beat, generic figure, no real-judge likeness), **S177** (four anonymized men from behind before the capitol in cream — the absolute-pardon payoff) — to `[HSTYLE]`/`[HNEG]`, annotating the affected motif headers, and correcting §5.7's enumeration to the exact 21-row list. Machine-verified after fix: [HSTYLE] rows = 12+12+10+21 = **55** ✓. Asset counts unchanged (205/42/232/30/3).
+- **§1.3 gate-regex trap (MEDIUM, fixed)**: `BANNED_ACCURACY` matched the substrings "readable letter"/"legible …" inside the very phrasings the doc mandates ("**un**readable letter", "blurred to **il**legibility") — S156's prompt would have tripped the manifest gate. Fixed with negative lookbehinds `(?<!un)readable (…)` / `(?<!il)legible (…)` (still catches genuine violations — probe-tested both ways) and rewrote S156 to "a letter rendered as an unreadable smear" for belt-and-suspenders against B's independently-cloned checker.
+- **F-series (§5.13) additive faces**: matches the EP52 §5.13 owner-policy precedent verbatim (additive, not counted in distinct/cuts, B adjudicates) — consistent, not a defect. shots=250 contract untouched.
+
+### R3.5 Defects found & fixed (severity-ranked; all fixes applied in-place)
+
+| # | Sev | File | Defect | Fix |
+|---|---|---|---|---|
+| 1 | HIGH | script + ledger | Ballard's 2nd confession dated "April 1999" — contradicted (Frontline: Mar 4 + Mar 11) | Script → "twice, once in each statement he gave"; NF-22 corrected with R3 note |
+| 2 | HIGH | script | Tice arrest order inverted vs Wilson's Jun 10 exclusion (arrest was Jun 18 — AFTER) | → "Eight days later, Derek Tice was arrested down in Florida" |
+| 3 | HIGH | script | "already sitting in a prison cell by then" (Dec 1997) — Ballard's custody start unverifiable | Aside cut → "a name you will meet soon enough" (tease preserved, zero claim) |
+| 4 | HIGH | DESIGN | §2 OPENING stale "Seven charged / six innocent" contradicting script/OST/NF-16 | → "Eight men in all… Seven… innocent" + NF-16 cite |
+| 5 | MED | script | "same small interrogation room" (cold open) + "same room" (Dick) — same-room literal not in record | → "facing the same detective" / "went in to face the same detective" (record-anchored constant) |
+| 6 | MED | script ×3 | "eleven hours" generalized to all four confessions (Dick beat, Act III tally, Ending count) — Wilson ~9h, Dick's length not in ledger | → "a single night in that room" / "across hours of coercion" / "a marathon night apiece" |
+| 7 | MED | ledger | NF-44 mislabeled Ford's counts ("two counts of extortion + one false statements"; actually conspiracy + extortion + false statements) | NF-44 corrected (narration already count-agnostic — unaffected) |
+| 8 | MED | script | Wilson "had never even been able to appeal" — imprecise (the true bar: out of custody, no habeas path) | → "had no court left to turn to" |
+| 9 | MED | CODEX_A | ★HP human-presence contract short by 4 rows (51 vs promised 55 / ACT4 17 vs 21, masked by "ほか") | S148/S150/S174/S177 converted to [HSTYLE]/[HNEG]; §5.7 enumeration + motif headers corrected; re-verified = 55 |
+| 10 | MED | CODEX_A | §1.3 regex false-positives on mandated "unreadable/illegible" phrasing (would flag S156 et al. at manifest time) | Negative lookbehinds added; S156 reworded; probe-tested |
+| 11 | MED | script | Cold-open/room fix ripple: appendix fact-map lines stale vs narration | All five affected appendix map lines updated with R3 annotations |
+| 12 | LOW | script | "the decorated detective" — decoration not in record | → "the veteran detective" |
+| 13 | LOW | script | "gave the Navy their twenties and Virginia their thirties" — false for Wilson (out at ~28) | → "gave the Navy their youth; Virginia took the years that followed" |
+| 14 | LOW | DESIGN | §6 stale word count "4,658" | → 4,645 |
+| 15 | LOW | DESIGN | §2 Michelle card omitted "VIRGINIA" vs §3 CENTER_STACK #1 | Aligned |
+| 16 | LOW | log | R1 outcome line said "12 fixes" while listing 15 rows | Corrected to 15 |
+| 17 | LOW | ledger | NF-37 charge-drop day asserted as Aug 5 (DPIC: Aug 4) | Hedged to "early August 2011"; script already month-level |
+
+Plus one strengthening edit (not a defect): Danser beat now reads "He was charged with capital murder anyway." (NF-16-exact, restores the word-count balance). **Net word-count effect of all script edits: 0 — the gate still measures exactly 4,645.**
+
+Process note: `check_planning_package --require-r3` verifies an R3 section EXISTS, not its substance (it passed against the placeholder) — do not treat that flag alone as proof of a real third review.
+
+### R3.6 FINAL GATE OUTPUT (pasted verbatim, post-fix)
+
+```
+$ ./.venv/Scripts/python.exe scripts/check_script_length.py --lo 1740 --hi 1860 episodes/_planning/EP53_norfolk_script.en.v001.md
+PASS script_length: 4,645 words (need 3,973-5,309)
+  narration estimate  slow 28.4m | median 26.1m | fast 19.6m
+  target band         29.0-31.0 min
+  ! RISK: at the fast end of the measured pace (237.4 wpm, seen on williams/florence) this lands at 19.6 min -- under the floor. Either pin the voice speed or write to 6,885 words.
+
+$ ./.venv/Scripts/python.exe scripts/check_planning_package.py 53 norfolk --require-r3
+ok   F1 script_length gate PASS (1740-1860s)
+ok   F2 narration body is CJK-free
+ok   F3 hook->OP->acts structure markers present
+ok   F5 'dochighlight' absent or explicitly banned
+ok   F6 'DATE_STAMP' absent or explicitly banned
+ok   F7 DESIGN carries figure-beat density budget
+ok   F8 CODEX_A carries 1-scene-1-image / no-variants rule
+ok   F9 CODEX_A carries the real-person likeness ban
+ok   F10 review log has R1+R2
+ok   F10 review log has substantive R3
+ok   thumb: CODEX_A includes emotive-face thumbnail stills
+info word-ish count (latin tokens): 5765
+
+RESULT: PASS (0 warn)
+```
+(RISK note = informational, mitigated by DESIGN §5's pinned Brian voice settings; channel median 178.1 wpm is the sizing basis — unchanged from R2.)
+
+- Reviewer: **independent R3 (fresh-eyes session)** · Date: **2026-07-26** · Verdict: **SHIP-READY → advance to `script_verified`**
