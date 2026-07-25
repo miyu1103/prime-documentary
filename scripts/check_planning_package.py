@@ -159,10 +159,14 @@ def main() -> int:
     else:
         print("ok   F10 review log has R1+R2")
     if args.require_r3:
-        if r3_match and "placeholder" not in r3_match.group(1)[:200].lower():
+        # substantive = long enough to hold real audit evidence AND not self-labeled placeholder
+        r3_body = r3_match.group(1) if r3_match else ""
+        if (len(r3_body) >= 1500
+                and "placeholder" not in r3_body.lower()
+                and "プレースホルダ" not in r3_body):
             print("ok   F10 review log has substantive R3")
         else:
-            failures.append("F10 --require-r3: R3 section absent or still a placeholder")
+            failures.append("F10 --require-r3: R3 section absent, too thin (<1500 chars), or placeholder-labeled")
 
     # thumbnail faces present in CODEX_A (EP21-24 F7 'サムネ地味' upstream fix) ----
     if re.search(r"T0?1.{0,40}face|emotive", codex_text, re.I):

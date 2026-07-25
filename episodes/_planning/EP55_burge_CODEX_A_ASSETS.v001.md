@@ -745,7 +745,7 @@ API:   http://127.0.0.1:7860（ローカル AUTOMATIC1111・課金なし）
 210 の固有プロンプトを**幕×motifで体系化**する。各 motif に (a) **確定 distinct 枚数**、(b) **S番号レンジ**、(c) **literal 例プロンプト** を与える。**各 motif の例プロンプトを下敷きに、割り当てられた枚数ぶんの固有プロンプトを、被写体・角度・光・寄り引き・オブジェの状態を1枚ずつ変えて書き切る**（同一構図の量産＝禁止・1枚1固有）。**motif 合計が幕の確定 still 数（§3.2）に一致し、全幕合計 210 になることを最後に検算。**
 
 > ★**1シーン1枚・variants 0。** 各プロンプト末尾に §5.3 の `[STYLE]`（人物なし象徴 still）**または** §5.11 の `[HSTYLE]`（匿名人物 still）を**全文連結**、`Avoid:` の後に §5.4 `[NEG]`（象徴）**または** §5.11 `[HNEG]`（匿名人物）を**全文連結**。
-> **★2レーン構成: 210 body = object/symbolic 153枚（`[STYLE]`+`[NEG]`・人物なし）＋ ★human-present 57枚（27.1%・`[HSTYLE]`+`[HNEG]`・匿名/非識別・背向き/影/silhouette/hands・adults only）。** 該当 S-range は §5.6 で `★HP` と明記。
+> **★2レーン構成: 210 body = object/symbolic 125枚（`[STYLE]`+`[NEG]`・人物なし）＋ ★human-present 85枚（40.5%・`[HSTYLE]`+`[HNEG]`・匿名/非識別・背向き/影/silhouette/hands・adults only）。** 該当 S-range は §5.6 で `★HP` と明記。**（R3+ owner directive 2026-07-26「人間が映った画像は結構必要」: HP 57→85＝28行を object→★HP に純転換・EP52 と同型・locked counts 不変・additive しない。）**
 > **HARD BAN（不変・両レーン共通）: 拷問/拘束/装置と人体の同一フレームなし・苦悶顔なし・実在人物 likeness なし・可読テキストなし・識別可能な子供顔なし。黒人男性サバイバーの silhouette は尊厳第一（直立・静・逆光・うずくまり禁止）。**
 
 ## 5.3 共通スタイル `[STYLE]`（body 210 の象徴 still ＋ 抽象 i2v 種に連結・DESIGN §1 と一字一致）
@@ -766,7 +766,7 @@ text, words, letters, numbers, captions, watermark, logo, readable document, leg
 
 ## 5.5 プロンプトの絶対ルール（210本すべてに適用）
 
-- **body 210 は2レーン（§5.2）:** object/symbolic 153枚＝§5.3/§5.4（人物なし）、**human-present 57枚（27.1%）＝§5.11 `[HSTYLE]`/`[HNEG]`**。
+- **body 210 は2レーン（§5.2）:** object/symbolic 125枚＝§5.3/§5.4（人物なし）、**human-present 85枚（40.5%）＝§5.11 `[HSTYLE]`/`[HNEG]`**。
 - **可読文字なし。** letter/report/newspaper/判決/カルテ/小切手/日付/数値/ロゴを描かない。
 - **拷問・拘束・装置と人体の同一フレーム・傷・遺体・苦悶顔を一切描かない。** box は inert・radiator は空室・typewriter cover は畳まれた事務用品。取調室は**常に無人＝aftermath**。
 - **R-BURGE-CONVICT:** Burge を「拷問で有罪」に見せる絵・語を作らない（有罪は嘘＝perjury/obstruction）。
@@ -778,8 +778,14 @@ text, words, letters, numbers, captions, watermark, logo, readable document, leg
 
 ## 5.6 ★motif ライブラリ（幕別・distinct 数確定・S番号レンジ・literal 例プロンプト）
 
-> 各 motif ブロックは `motif名 — 枚数 — S番号レンジ`。**例で示した S番号は必ずその内容で作り、残りの枚数はその motif の変奏で埋める。**
-> **★`[STYLE]`/`[NEG]`＝人物なし象徴。`★HP`＝§5.11 `[HSTYLE]`/`[HNEG]`（匿名・非識別の人物）。** ★HP 合計 = **57枚（27.1%）**: ACT1 10（S031–S036, S054–S057）／ACT2 14（S079–S081, S085–S088, S092–S095, S103–S105）／ACT3 10（S121–S124, S129–S131, S138–S140）／ACT4 23（S150–S153, S160–S165, S169–S171, S178–S181, S182–S184, S189–S191）。ACT0/ACT5 は象徴のまま（0）。
+> 各 motif ブロックは `motif名 — 枚数 — S番号レンジ`。**★R3++ 2026-07-26（owner anti-samey directive）: S001–S210 の全210行を literal 化済み。Codex は各行をそのまま `ai_prompts.v001.md` に転記する（変奏を新たに書かない・行を増減しない・S番号を並べ替えない）。**
+> **★`[STYLE]`/`[NEG]`＝人物なし象徴。`★HP`＝§5.11 `[HSTYLE]`/`[HNEG]`（匿名・非識別の人物）。** ★HP 合計 = **85枚（40.5%・R3+ owner directive 2026-07-26: 57→85）**:
+> ACT1 **15**（S019–S020, S029–S030, S031–S036, S053, S054–S057）／ACT2 **20**（S059, S062, S070, S079–S081, S085–S088, S091, S092–S095, S099, S102, S103–S105）／ACT3 **17**（S108–S110, S117, S120, S121–S124, S129–S131, S132, S137, S138–S140）／ACT4 **30**（S150–S153, S155–S156, S160–S165, S168, S169–S171, S174, S177, S178–S181, S182–S184, S185, S189–S191, S194）／ACT5 **3**（S206–S207, S208）。**ACT0 は象徴のまま（0）。** 転換28行はすべて aftermath/waiting/witnessing/teaching＝**R-TORTURE-DEPICT に一切触れない**（拘束・装置＋人体・取調中の distress を28行のどれにも書かない）。spine-motif（letter/black box/drawer/radiator/clock）は1行も転換していない。
+>
+> **★HP anti-samey 変化マトリクス（owner: 似たような画像を作らない・新28＋既存57の85枚全体に適用）:**
+> - **軸を必ず散らす:** 距離（hands macro／medium／wide／far-wide）×角度（背後正対／後方斜め／low angle／over-the-shoulder）×年代 wardrobe（1960s／70s／80s／90s／2000s／2010s——era protest/vigil 線がこの多様性を内蔵）×光（cold fluorescent／winter daylight／night exterior sodium ambience／curriculum-morning）×setting（precinct／jail／courtroom／street／capitol／newsroom／infirmary／classroom／park）×人数（solo／2–4人／列／群衆）×姿勢（座って待つ／立つ／歩く／立ち上がる／作業する手元）。
+> - **HARD: どの2枚の ★HP も「被写体タイプ＋構図＋光」の3要素同時一致を禁止**（例:「座って待つ家族×背後 wide×fluorescent」は全85枚中1枚だけ）。85行を書き終えたら軸の表で自己監査してから生成に入る。
+> - **新クラスタは §6.1 Q4 phash watch-list に追加済み**（gallery 群衆・era protest/vigil 線・waiting/visiting 室・classroom 人物）。
 
 ### ACT 0 — HOOK + OPENING（15枚・S001–S015）
 - **typed_letter_fluorescent_edge — 4 — S001–S004**（S001 は also_thumb・**hook signature**・埋められた警報）
@@ -787,153 +793,698 @@ text, words, letters, numbers, captions, watermark, logo, readable document, leg
 - `S001.png`
 A typed letter and its envelope lying on a dark institutional desk, caught by a single cold fluorescent green-gray edge of light in near-black, every line of type blurred into an unreadable smear, the alarm that should have ended everything, no person, no readable text [STYLE] Avoid: [NEG]
 ```
+```
+- `S002.png`
+Top-down overhead macro of a manila envelope with a typed page half withdrawn, lying on a worn desk blotter in near-black, one thin fluorescent green-gray blade of light across the paper, the type dissolved into an unreadable smear, dread in a flat lay, no person, no readable text [STYLE] Avoid: [NEG]
+- `S003.png`
+Extreme macro of a single typewritten line on cheap 1982 bond paper, the strike marks pressed deep into the fiber, raked from the side by a dying fluorescent green-gray glow, every character melted into an unreadable smear, shallow focus falling off to black, no person, no readable text [STYLE] Avoid: [NEG]
+- `S004.png`
+A vast dark administrative office seen wide from the doorway, one small typed letter alone in a pool of cold fluorescent green-gray light on the far desk, oceans of shadow around it, the alarm nobody will pick up, no person, no readable text [STYLE] Avoid: [NEG]
+```
 - **sodium_night_foreshadow — 3 — S005–S007**（1982 シカゴの夜・sodium は遠景環境光のみ）
 ```
 - `S005.png`
 A wet South Side Chicago street at night in 1982, distant sodium-vapor lamps burning orange over dark brick two-flats, empty and silent, period-correct cars parked far away, cold green-gray shadow in the foreground, no people, no readable text [STYLE] Avoid: [NEG]
+- `S006.png`
+Steel girders of an elevated train line at night seen from below at a low angle, distant sodium-vapor lamps burning orange between the columns, wet pavement gleaming, 1982 Chicago, cold green-gray darkness pressing in overhead, no people, no readable text [STYLE] Avoid: [NEG]
+- `S007.png`
+Distant rooftops of South Side two-flats and church steeples at night viewed from high above, scattered sodium-vapor points of orange in a field of near-black, a thin winter haze, the city asleep while something happens inside one building, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 - **buried_records_drawer — 4 — S008–S011**（手紙/記録の上に閉まる引き出し＝they buried it）
 ```
 - `S008.png`
 A dark institutional file drawer sliding shut over a typed page whose words are an unreadable smear, cold fluorescent green-gray light, the truth being filed away, symbolic, no person, no readable text [STYLE] Avoid: [NEG]
+- `S009.png`
+A wall of dented gray filing cabinets in a dark records room, one drawer left an inch open with a faint seam of cold fluorescent green-gray light escaping, dust on the handles, secrets kept by furniture, no person, no readable text [STYLE] Avoid: [NEG]
+- `S010.png`
+A plain manila folder lying pressed flat shut on a dark counter, its tab label an unreadable smear, one cold fluorescent edge tracing the fold, paperwork as burial, macro, no person, no readable text [STYLE] Avoid: [NEG]
+- `S011.png`
+A long aisle of steel archive shelving receding into blackness, cartons stacked to the ceiling, one flickering fluorescent tube throwing green-gray light down the row, wide symmetrical one-point perspective, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 - **opening_title_abstract — 4 — S012–S015**（green-gray の abstract field・title 下地・遠いシカゴ夜景の予兆）
+```
+- `S012.png`
+An abstract near-black field with soft horizontal bands of institutional green-gray glow drifting like light through frosted wire glass, fine grain texture, a title bed of pure atmosphere, no objects, no people, no readable text [STYLE] Avoid: [NEG]
+- `S013.png`
+Out-of-focus night bokeh of the 1982 Chicago skyline, sodium-orange and cold white points swimming over ink black, heavy telephoto blur, ominous calm, no people, no readable text [STYLE] Avoid: [NEG]
+- `S014.png`
+Macro of aged institutional wall paint in deep green-gray, hairline cracks and decades of repaint layers catching one cold raking light, near-black falloff at the edges, texture as history, no people, no readable text [STYLE] Avoid: [NEG]
+- `S015.png`
+The 1980s Chicago skyline as a pure black silhouette under a low ceiling of night cloud lit faintly green-gray from below, a few pinprick windows, vast negative space above for type, no people, no readable text [STYLE] Avoid: [NEG]
+```
 
 ### ACT 1 — THE COMMANDER（42枚・S016–S057）
-- **south_deering_steel — 5 — S016–S020**（製鋼所の煙突・レンガ bungalow 街区・1950s-60s の面影・無人）
+- **south_deering_steel — 3 — S016–S018**（製鋼所の煙突・レンガ bungalow 街区・1950s-60s の面影・無人）
 ```
 - `S016.png`
 A quiet street of brick bungalows on Chicago's Southeast Side under a grey steel-mill sky, smokestacks on the horizon, 1960s period-correct and empty of people, cold documentary stillness, no readable text [STYLE] Avoid: [NEG]
+- `S017.png`
+Blast-furnace towers and smokestacks of a South Chicago steel mill at dusk, a faint industrial glow on the underside of the smoke, rail sidings and slag heaps in silhouette, 1960s, heavy and grey, no people, no readable text [STYLE] Avoid: [NEG]
+- `S018.png`
+A 1960s corner grocery with a canvas awning and parked period sedans on an empty Southeast Side street under flat overcast light, brick storefronts and bare elms, the quiet before everything, no people, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP south_deering_lives — 2 — S019–S020**（★converted 2026-07-26: 街の人間味。S019=夜明けの shift change・lunch pail を提げた工員たちの backs・1960s wardrobe・far-wide／S020=夏の夕方・bungalow の stoop に座る家族の遠景シルエット・1970s・no faces）
+```
+- `S019.png`
+A far-wide shot of anonymized steelworkers seen only from behind walking toward mill gates at first light, lunch pails in hand, 1960s canvas jackets and flat caps, smokestacks ahead in grey dawn haze, small figures in a big industrial frame, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S020.png`
+A distant summer-evening view of an anonymized family seated on the front stoop of a brick bungalow, seen from across the street at dusk in the 1970s, figures only as soft dark outlines against the doorway, unhurried neighborhood life, sky fading over the rooftops, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 - **vietnam_echo_field_phone — 4 — S021–S024**（軍用 field telephone を「無人の object」として・ジャングル黄昏の abstract・帰属は narration が担う）
 ```
 - `S021.png`
 An olive-drab military field telephone with a hand crank sitting alone on a wooden crate in humid dusk light, era of the late 1960s, shown only as an inert object, ominous restraint, no person, no wires attached to anything, no readable text [STYLE] Avoid: [NEG]
+- `S022.png`
+A military hand-crank field telephone resting in an open canvas signal kit on packed red earth, monsoon clouds stacked over a 1960s base camp in fading light, the kit lid throwing a hard shadow, inert equipment connected to nothing, no person, no readable text [STYLE] Avoid: [NEG]
+- `S023.png`
+Rain streaming down taut tent canvas at night in a 1960s forward camp, the dark silhouette of a crank field telephone on a footlocker inside, one dim lantern glow, humid air, the object that came home, connected to nothing, no person, no readable text [STYLE] Avoid: [NEG]
+- `S024.png`
+Extreme macro of a worn brass crank handle on an olive field telephone, jungle dusk light catching the polished grip, shallow depth of field into darkness, inert and silent, no person, no readable text [STYLE] Avoid: [NEG]
 ```
-- **rise_commander_precinct — 6 — S025–S030**（昇進の machine: 階級章/コメンデーションの smear・precinct 廊下・司令官室のドア・無人）
+- **rise_commander_precinct — 4 — S025–S028**（昇進の machine: 階級章/コメンデーションの smear・precinct 廊下・司令官室のドア・無人）
+```
+- `S025.png`
+A commander's office door with a frosted-glass pane at the end of a dark precinct corridor, cold fluorescent light burning inside, the stenciled name on the glass an unreadable smear, authority behind glass, no person, no readable text [STYLE] Avoid: [NEG]
+- `S026.png`
+A wall of framed police commendation certificates rising in tidy rows, every citation blurred to an unreadable smear, green-gray fluorescent sheen on the glass, achievement as wallpaper, frontal composition, no person, no readable text [STYLE] Avoid: [NEG]
+- `S027.png`
+Sergeant's chevrons and lieutenant's bars laid out in a row on a desk blotter beside a peaked service cap, macro from a low angle, cold institutional light, a vertical rise measured in metal and cloth, no person, no readable text [STYLE] Avoid: [NEG]
+- `S028.png`
+A precinct stairwell shot from the bottom looking up, worn treads climbing toward a landing flooded with green-gray fluorescent glare, handrail gleaming, ascent as menace, wide vertical composition, no people, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP precinct_waiting_room — 2 — S029–S030**（★converted 2026-07-26: 待つ側の人間。S029=木のベンチで身を寄せて待つ匿名の家族・backs・wide・1980s／S030=front desk の前に立つ匿名の母親の後ろ姿・コートと headscarf・medium・no faces・distress なし＝静かな待機）
+```
+- `S029.png`
+An anonymized Black family seated close together on a wooden bench in a 1980s Chicago precinct waiting room, seen only from behind in a wide shot, winter coats kept on, waiting under cold fluorescent green-gray light for news that does not come, quiet and composed, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S030.png`
+An anonymized mother in a long coat and headscarf standing at a tall precinct front desk, seen from behind at medium distance in the 1980s, the desk sergeant beyond only a dark shape, cold fluorescent light on her still shoulders, quiet persistence, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **★HP midnight_crew_squadroom — 6 — S031–S036**（深夜の squad room・匿名刑事たちの backs/silhouette・紙巻きの煙・adults only・no faces）
 ```
 - `S031.png`
 A 1980s Chicago detective squad room at midnight, three anonymized detectives seen only from behind as dark silhouettes against cold fluorescent green-gray light, cigarette smoke hanging, period-correct, no faces, no violence, no readable text [HSTYLE] Avoid: [HNEG]
+- `S032.png`
+Two anonymized detectives as black silhouettes in a squad-room doorway at midnight, seen from a low angle down the dark corridor, backlit hard by green-gray fluorescent tubes, cigarette smoke curling through the light, 1980s, no faces, no violence, no readable text [HSTYLE] Avoid: [HNEG]
+- `S033.png`
+An over-the-shoulder view from behind a seated anonymized detective at a cluttered 1980s squad-room desk at night, typewriter and stacked folders in shallow focus, venetian-blind shadows striping the wall, his face never in frame, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S034.png`
+A single anonymized detective standing at a squad-room window at night with his back to camera, medium-wide, slats of blind-filtered sodium glow from the street below crossing his shoulders, smoke hanging still in the air, 1980s, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S035.png`
+A rack of overcoats and hats by the squad-room door, an anonymized detective cropped to sleeve and hand pulling a coat down, close shot, cold tube light overhead, the midnight shift assembling, no face in frame, no readable text [HSTYLE] Avoid: [HNEG]
+- `S036.png`
+A far-wide midnight squad room, three anonymized detectives as small dark figures gathered at the lit end beneath one buzzing fluorescent fixture, rows of empty desks in deep shadow between them and the camera, 1980s, no faces, no violence, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 - **black_box_object — 3 — S037–S039**（★rust note 使用可・**inert・無人・何にも接続しない**）
 ```
 - `S037.png`
 A small dark hand-cranked wooden and metal device with two thin coiled wires, sitting alone and inert on the far edge of an empty steel table in a windowless room, one cold fluorescent edge and a faint rust tone, dread rendered as a still object, connected to nothing, no person, no readable text [STYLE] Avoid: [NEG]
+- `S038.png`
+The small dark hand-cranked device lying inside an open steel desk drawer among rubber bands and a stapler, shot top-down, its two thin wires coiled and attached to nothing, a faint rust tone under one cold light, the banal place where dread is kept, no person, no readable text [STYLE] Avoid: [NEG]
+- `S039.png`
+An equipment closet with its door ajar, a narrow blade of fluorescent green-gray light falling across a shelf where the small hand-cranked device sits alone in shadow, wires wound and connected to nothing, seen from the corridor at a distance, no person, no readable text [STYLE] Avoid: [NEG]
 ```
 - **typewriter_and_radiator — 6 — S040–S045**（S040–S042 typewriter＋畳まれた灰色カバー＝banal な事務用品／S043–S045 空室の cast-iron radiator・★rust note・无人）
 ```
+- `S040.png`
+A gray manual typewriter on a tidy 1980s precinct desk, its folded plastic dust cover lying beside it like any other piece of office equipment, flat fluorescent light, deliberately banal still life, no person, no readable text [STYLE] Avoid: [NEG]
+- `S041.png`
+Extreme macro of a folded gray plastic typewriter cover, the creases in the plastic catching a thin cold green-gray highlight against black, an ordinary office object given terrible weight by nothing the image shows, no person, no readable text [STYLE] Avoid: [NEG]
+- `S042.png`
+A wide night shot of an empty precinct office, a typewriter sleeping under its gray cover on the only lit desk, one fluorescent tube humming above, everything else black, no person, no readable text [STYLE] Avoid: [NEG]
 - `S043.png`
 A cast-iron radiator against the wall of a completely empty interview room, hissing steam faintly visible, one cold fluorescent green-gray light and a faint rust tone on the iron ribs, the room as aftermath, no person, no restraint, no readable text [STYLE] Avoid: [NEG]
+- `S044.png`
+Tight macro along the parallel iron ribs of a cast-iron radiator, a faint rust tone in the recesses and a whisper of steam rising, cold green-gray key light, geometry that leaves marks, the empty room beyond in blackness, no person, no readable text [STYLE] Avoid: [NEG]
+- `S045.png`
+A completely empty interview room seen wide from the door, bare table and two chairs, the cast-iron radiator squat beneath a painted-over window, green-gray fluorescent stillness, the room only ever shown as aftermath, no person, no readable text [STYLE] Avoid: [NEG]
 ```
 - **confession_machine_abstract — 4 — S046–S049**（gears/ベルトコンベアの abstract＝逮捕→部屋→署名→有罪の機械）
-- **tally_begins_abstract — 4 — S050–S053**（数えられていく無名の存在＝暗い壁に並ぶ空の椅子・光の列・数字は描かない）
+```
+- `S046.png`
+A macro of dark interlocking machine gears holding a sheet of paper at the bite point, the page's typed lines an unreadable smear, green-gray rim light on oiled teeth, the confession machine as pure mechanism, no person, no readable text [STYLE] Avoid: [NEG]
+- `S047.png`
+A row of worn rubber date stamps and a black ink pad lined up like a small assembly line on a dark counter, repetition and procedure, one cold overhead tube, shallow focus, no readable characters on any stamp, no person, no readable text [STYLE] Avoid: [NEG]
+- `S048.png`
+Identical manila case files queued in a long straight row down a dark table toward a single desk lamp, one-point perspective, each tab an unreadable smear, the output of a machine that never stops, no person, no readable text [STYLE] Avoid: [NEG]
+- `S049.png`
+A chain of objects laid left to right on dark wood — an ink pad, a fingerprint card blurred to a smear, a fountain pen, a rubber stamp — the assembly line of a signed confession in one still life, cold institutional light, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **tally_begins_abstract — 3 — S050–S052**（数えられていく無名の存在＝暗い壁に並ぶ空の椅子・光の列・数字は描かない）
+```
+- `S050.png`
+A row of empty wooden chairs set against a dark brick wall, each chair picked out by its own narrow strip of cold light, the count beginning, wide frontal symmetry, no people, no readable text [STYLE] Avoid: [NEG]
+- `S051.png`
+A shallow wooden card-catalog drawer pulled open, unmarked index cards packed in tight rows, every line on them an unreadable smear, one green-gray shaft from above, a tally kept by furniture, no person, no readable text [STYLE] Avoid: [NEG]
+- `S052.png`
+A vast dark hall with dozens of empty folding chairs fading into blackness, faint pools of cold light on the floor marking row after row, the arithmetic of the unheard, far-wide, no people, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP families_waiting — 1 — S053**（★converted 2026-07-26: 数字の裏の家族＝夜の precinct ロビーで一人待つ匿名の年配女性の後ろ姿・膝の上の handbag・1980s・solo・静かな待機・no face）
+```
+- `S053.png`
+An anonymized elderly woman seated alone at night in a 1980s precinct lobby, seen from behind in a medium-wide shot, coat buttoned and a handbag held on her lap, one strip of fluorescent light across the empty bench beside her, patient and unmoving, no face, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **★HP survivor_dignity_silhouette — 4 — S054–S057**（尊厳ある匿名黒人男性の silhouette・upright・backlit・static・adults only）
 ```
 - `S054.png`
 A dignified anonymized Black man standing upright and still, seen only as a backlit silhouette from behind in a narrow shaft of cold institutional light, composed and unbroken, documentary restraint, no face, no distress pose, no readable text [HSTYLE] Avoid: [HNEG]
+- `S055.png`
+A dignified anonymized Black man in profile lost to shadow, standing beside a tall window whose thin daylight draws only the line of his shoulder and jaw, everything else near-black, upright and still, medium close, no identifiable face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S056.png`
+A far-wide corridor in an institutional building, a single dignified anonymized Black man standing upright at its end, backlit to a clean silhouette by one green-gray tube, immense dark space around a composed figure, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S057.png`
+A close shot from directly behind of a dignified anonymized Black man's head and shoulders, a cold green-gray rim light tracing his collar, still as a monument, near-black surround, no face visible, no distress pose, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 
 ### ACT 2 — THE SCREAMS NOBODY HEARD（50枚・S058–S107・engine・最密）
-- **fahey_obrien_memorial — 2 — S058–S059**（殉職警官への dignity＝雪の中の花・折られた旗の abstract・no faces）
-- **manhunt_wilson_intake — 3 — S060–S062**（1982-02 の緊迫＝夜の police station 外観・jail intake 廊下・無人）
+- **fahey_obrien_memorial — 1 — S058**（殉職警官への dignity＝雪の中の花・折られた旗の abstract・無人）
+```
+- `S058.png`
+A police memorial wreath and banked white flowers against grey stone in falling snow, ribbons stiff with cold, February 1982, sober and without spectacle, no people, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP memorial_mourners — 1 — S059**（★converted 2026-07-26: 1982 の弔い＝降る雪の中に立つ制服の backs と黒傘の市民の列・far-wide・dignified grief・no faces）
+```
+- `S059.png`
+A funeral line in falling snow, anonymized police officers in dress uniform seen only as a row of backs beside citizens under black umbrellas, far-wide across a grey cemetery avenue, February 1982, dignified grief, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **manhunt_wilson_intake — 2 — S060–S061**（1982-02 の緊迫＝夜の police station 外観・jail intake 廊下・無人）
+```
+- `S060.png`
+A Chicago police station exterior on a February night in 1982, period squad cars angled at the curb, every window burning, breath-cold air and dirty snow banked at the steps, a citywide manhunt running inside, no people visible, no readable text [STYLE] Avoid: [NEG]
+- `S061.png`
+A county jail intake corridor, empty, a steel gate standing ajar under flickering fluorescent green-gray light, scuffed floor leading away into dark, the place where the injuries were first counted, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP witnesses_wait_outside — 1 — S062**（★converted 2026-07-26: 通りの向かい側から夜の署を見つめて立つ匿名の隣人たち・backs・遠景・witnessing のみ＝拘束/連行を描かない・no faces）
+```
+- `S062.png`
+Anonymized neighbors standing across the street from a lit police station at night, seen from behind at a distance, hunched in winter coats on the dark sidewalk, watching and saying nothing, sodium glow far up the block, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **wilson_room_aftermath — 3 — S063–S065**（**無人の取調室＝aftermath**・倒れた椅子なし・静かな空室・暴力なし）
+```
+- `S063.png`
+An empty interview room the morning after, two chairs left pushed back from the bare table at odd angles, green-gray fluorescent light steady and indifferent, the film shows the room and never the event, no person, no readable text [STYLE] Avoid: [NEG]
+- `S064.png`
+Extreme macro of an old interview-room tabletop, decades of scratches, ring stains and a cigarette scorch in the laminate, one cold raking light, the surface as silent witness, no person, no readable text [STYLE] Avoid: [NEG]
+- `S065.png`
+An interview-room door standing ajar seen from the dark corridor, a wedge of cold institutional light spilling out across the floor tiles, silence after procedure, no person, no readable text [STYLE] Avoid: [NEG]
+```
 - **black_box_anchor — 3 — S066–S068**（S066 は also_thumb・**inert の box が影の中・rust note**）
 ```
 - `S066.png`
 The small dark hand-cranked device with two thin wires resting inert in deep shadow on an empty table, a single cold fluorescent green-gray edge finding its crank handle, a faint rust tone, the object the courtroom would one day see, connected to nothing, no person, no readable text [STYLE] Avoid: [NEG]
+- `S067.png`
+The small hand-cranked device sitting in an open kraft evidence carton on a plain table, wires coiled beside it and attached to nothing, shot from a high angle under one flat cold light, an object about to become an exhibit, no person, no readable text [STYLE] Avoid: [NEG]
+- `S068.png`
+Extreme macro of the device's two bare wire terminals and worn crank shaft, dust in the threads, a cold green-gray edge against total black, clinical and inert, connected to nothing, no person, no readable text [STYLE] Avoid: [NEG]
 ```
-- **injuries_clinical_abstract — 2 — S069–S070**（診察の aftermath＝空の診察室・畳まれたガーゼとクリップボードの smear・**傷/人体を描かない**）
+- **injuries_clinical_abstract — 1 — S069**（診察の aftermath＝空の診察室・畳まれたガーゼとクリップボードの smear・**傷/人体を描かない**）
+```
+- `S069.png`
+An empty jail infirmary examination room, folded gauze and a kidney dish beside a clipboard whose form is an unreadable smear, white enamel and green-gray light, the injuries recorded and never shown, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP doctor_rounds — 1 — S070**（★converted 2026-07-26: 回診＝jail infirmary の廊下を歩き去る白衣の匿名医師 stand-in の後ろ姿・クリップボードを脇に・**患者を描かない**・medium・no face）
+```
+- `S070.png`
+An anonymized doctor stand-in in a white coat walking away down a jail infirmary corridor on morning rounds, seen from behind at medium distance, clipboard under one arm, pale institutional daylight from high windows, no face, no patient shown, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **raba_letter — 4 — S071–S074**（手紙 macro・封筒・タイプライターの上の一枚・全文 smear）
+```
+- `S071.png`
+A sheet of 1982 bond paper still rolled in a typewriter platen, the typed paragraphs an unreadable smear, a doctor's desk lamp the only light in the dark infirmary office, the letter being born, no person, no readable text [STYLE] Avoid: [NEG]
+- `S072.png`
+Macro of a sealed plain envelope lying square on a jail infirmary desk, its face turned to an unreadable smear, a stethoscope coiled at the frame's edge, cold morning light through wire glass, the demand ready to travel, no person, no readable text [STYLE] Avoid: [NEG]
+- `S073.png`
+A typed letter lying open beside a coiled stethoscope under a green desk lamp at night, its lines an unreadable smear, the one page that said everything in 1982, deep shadow around the pool of light, no person, no readable text [STYLE] Avoid: [NEG]
+- `S074.png`
+A typed letter resting in a steel out-tray on the corner of a desk, morning light through venetian blinds striping the paper, its text an unreadable smear, about to go up the chain, no person, no readable text [STYLE] Avoid: [NEG]
+```
 - **letter_up_chain_buried — 4 — S075–S078**（in-tray の手紙→大きな机→引き出しが閉まる＝procedure としての埋葬）
+```
+- `S075.png`
+A wire in-tray on a vast polished executive desk, the doctor's letter lying on top of a tall stack of routine paperwork, wide shot in a dim office of dark wood and cold window light, importance about to be processed into nothing, no person, no readable text [STYLE] Avoid: [NEG]
+- `S076.png`
+A single typed letter lying mid-slide across a gleaming mahogany desktop, its reflection doubled in the polish, every word an unreadable smear, dim green-gray office gloom beyond, procedure in motion, no person, no readable text [STYLE] Avoid: [NEG]
+- `S077.png`
+A heavy oak desk drawer half open, the typed letter lying inside atop hanging files, shot straight down, a cold seam of light across the paper, one push from oblivion, no person, no readable text [STYLE] Avoid: [NEG]
+- `S078.png`
+Macro of a small brass key turned in the lock of a dark wooden drawer, the drawer shut flush, a thin cold green-gray highlight on the key's bow, the burial completed by office hardware, no person, no readable text [STYLE] Avoid: [NEG]
+```
 - **★HP doctor_at_jail — 3 — S079–S081**（匿名の医師 stand-in・背向き/hands・記録を書く・白衣・no face）
 ```
 - `S079.png`
 An anonymized doctor stand-in in a white coat seen only from behind at a jail infirmary desk, hands writing into a record under one cold lamp, the page an unreadable smear, conscience at work, no face, no patient shown, no readable text [HSTYLE] Avoid: [HNEG]
+- `S080.png`
+An anonymized doctor stand-in in a white coat standing at a jail infirmary window with his back to camera, medium shot, grey daylight flattening on the wire-mesh glass, shoulders set, the man who reported it and heard nothing back, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S081.png`
+A close over-the-shoulder shot of an anonymized doctor's hands in white coat cuffs pressing an envelope seal flat on a desk under one lamp, the address a smear, conscience finishing its paperwork, no face in frame, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 - **courtroom_civil_trial — 3 — S082–S084**（1989 民事法廷＝無人の法廷・**evidence table の上の inert な box**・cold）
+```
+- `S082.png`
+A 1989 civil courtroom empty in morning haze, dark wood benches and rail, tall windows throwing pale cold light across the well, the room where the box will finally be shown, wide from the gallery, no people, no readable text [STYLE] Avoid: [NEG]
+- `S083.png`
+A courtroom evidence table under a single cold shaft of light, the small hand-cranked device sitting on it inert with wires coiled, an evidence tag trailing with its label a smear, the object at last in public, no person, no readable text [STYLE] Avoid: [NEG]
+- `S084.png`
+An empty jury box of twelve worn chairs, angled window light drawing long cold lines across the wood, 1989, the deciders' seats before anyone believed, no people, no readable text [STYLE] Avoid: [NEG]
+```
 - **★HP civil_trial_gallery — 4 — S085–S088**（匿名の陪審/傍聴の backs・soft-focus・no faces）
-- **deep_badge_letters — 3 — S089–S091**（夜の mailbox・匿名の封筒4通・投函の abstract・無人）
+```
+- `S085.png`
+A civil courtroom gallery seen from the last row, anonymized spectators as rows of coats and shoulders in soft focus facing the distant bench, 1989, cold high windows, the city beginning to watch, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S086.png`
+An over-the-shoulder view past two anonymized spectators' shoulders in a courtroom gallery toward the blurred well below, 1980s hats and wool collars in shallow focus, medium close, waiting for an answer, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S087.png`
+A courtroom side aisle at a low angle, anonymized seated silhouettes rimmed by tall windows of winter light, backs and shadowed profiles only, quiet endurance, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S088.png`
+Anonymized standing spectators packed at the rear doors of a courtroom, seen from behind at medium-far range, coats still on, leaning toward the proceedings beyond, cold light overhead, no room left to sit, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **deep_badge_letters — 2 — S089–S090**（夜の mailbox・匿名の封筒4通・投函の abstract・無人）
 ```
 - `S089.png`
 Four plain envelopes lying fanned on a dark surface beside a night-blue window, unsigned and unmarked, their contents an unreadable smear, an anonymous warning mailed out of the building, cold green-gray light, no person, no readable text [STYLE] Avoid: [NEG]
+- `S090.png`
+A corner mailbox on a dark residential street at night, one plain envelope poised at the lip of the slot, sodium lamps far down the block, a breath of winter fog, an insider's warning leaving the building's world, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP deep_badge_hands — 1 — S091**（★converted 2026-07-26: 良心の投函＝夜の street mailbox に封筒を落とす匿名の人物・影のコートの後ろ姿と手元のみ・over-the-shoulder・no face）
+```
+- `S091.png`
+An over-the-shoulder shot of an anonymized figure in a dark coat at a night street mailbox, only a gloved hand and shadowed sleeve visible dropping a plain envelope through the slot, sodium glow at a distance, conscience working in secret, no face, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 - **★HP conroy_typing — 4 — S092–S095**（匿名記者 stand-in・背向き・深夜のタイプライター/端末・誰も読まない原稿）
-- **goldston_systematic — 4 — S096–S099**（内部報告書の abstract＝分厚い綴じ・スタンプの smear・ロックされる引き出し）
-- **fired_not_charged — 3 — S100–S102**（Police Board の無人議場・机上の badge と空の椅子・「解雇≠起訴」の冷たさ）
+```
+- `S092.png`
+An anonymized reporter stand-in seen from behind typing at a manual typewriter in a dark 1990 newsroom, one desk lamp burning, drafts stacked in unreadable smears, everyone else gone home, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S093.png`
+Macro of an anonymized reporter's ink-stained fingers resting on typewriter keys mid-thought, a cooling cup of coffee and a spike of copy beside the machine, lamplight against newsroom dark, 1990, no face in frame, no readable text [HSTYLE] Avoid: [HNEG]
+- `S094.png`
+A far-wide empty newsroom at night, one desk lit at the center of the dark floor, an anonymized figure hunched over a typewriter beneath the lone lamp, a long shout into the void beginning, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S095.png`
+An anonymized reporter standing at a newsroom window at night holding a typed page, seen from behind, the city's lights blurred beyond the glass, the page's text a smear, medium shot, the story nobody would act on, no face, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **goldston_systematic — 3 — S096–S098**（内部報告書の abstract＝分厚い綴じ・スタンプの smear・ロックされる引き出し）
+```
+- `S096.png`
+A thick bound internal report lying on a dark table, its cover stamp and title blurred into an unreadable smear, one hard green-gray raking light across the binding, the department's own words about itself, no person, no readable text [STYLE] Avoid: [NEG]
+- `S097.png`
+A steel file cabinet drawer half closed on a thick bound report wedged among hanging folders, cold fluorescent gloom, the finding being put where findings go to die, no person, no readable text [STYLE] Avoid: [NEG]
+- `S098.png`
+A worn thick bound report emerging into pale daylight on a marble courthouse ledge, corners frayed, its lettering still an unreadable smear, ordered released after two years in a drawer, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP first_protest_line — 1 — S099**（★converted 2026-07-26: era protest 線①＝1990・石造りの police headquarters 前の雪の中に立つ匿名デモ隊の小さな列・backs・winter coats・signs は unreadable smear・no faces）
+```
+- `S099.png`
+A small line of anonymized demonstrators standing in falling snow outside a stone police headquarters in 1990, seen only from behind in a wide shot, heavy winter coats, their hand-held signs blurred into unreadable smears, quiet insistence in the cold, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **fired_not_charged — 2 — S100–S101**（Police Board の無人議場・机上の badge と空の椅子・「解雇≠起訴」の冷たさ）
+```
+- `S100.png`
+An empty Police Board hearing chamber, a long raised dais with microphones and vacant leather chairs, flags limp in the corners, cold civic light, the room where the only consequence was employment, no people, no readable text [STYLE] Avoid: [NEG]
+- `S101.png`
+A police star badge lying face up on a cleared desk beside an empty pushed-back chair, one cold shaft of light, the end of a career and the end of nothing else, macro from a shallow angle, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP board_room_witnesses — 1 — S102**（★converted 2026-07-26: 1993 聴聞の散会＝議場から大理石の廊下へ出て行く匿名の傍聴人たちの backs・low angle・冷たい石の光・no faces）
+```
+- `S102.png`
+Anonymized spectators leaving a hearing chamber into a marble corridor, seen from behind at a low angle, overcoats and hats moving away between stone columns, February 1993 cold light, it is over and it is not, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **★HP walks_away_florida — 3 — S103–S105**（匿名の大柄な男 stand-in・背向きで建物を出て行く→暖色の南へ・no face）
+```
+- `S103.png`
+A broad-shouldered anonymized man in civilian clothes carrying a cardboard box away from a stone institutional building, seen from far behind in flat grey daylight, wide shot, fired and free, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S104.png`
+An anonymized man seen from behind loading a suitcase into the open trunk of a 1990s sedan on an overcast Chicago street, medium-wide, bare trees and brown brick behind him, leaving town without a charge to his name, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S105.png`
+A far-wide shot of an anonymized man walking away down a palm-lined Florida street into bright warm haze, his dark northern coat over one arm, the cold green-gray world giving way to vacation light, back to camera, no face, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **vigilante_boat — 2 — S106–S107**（暖かい Florida の dock・cabin cruiser の遠景・**船名は描かない/可読文字なし**）
+```
+- `S106.png`
+A white cabin cruiser moored at a warm Florida dock at golden dusk, seen from a distance across glittering water, its stern lettering out of focus and unreadable, gulls overhead, untouchable ease, no people, no readable text [STYLE] Avoid: [NEG]
+- `S107.png`
+Macro of a dock cleat wrapped in worn rope in warm low sun, the white hull of a boat soft in the background bokeh, water light dancing on the planks, retirement light, no people, no readable text [STYLE] Avoid: [NEG]
+```
 
 ### ACT 3 — THE CLOCK RUNS OUT（42枚・S108–S149）
-- **prison_years_nonsensational — 5 — S108–S112**（塀・フェンス・独房窓の光＝非扇情・無人・gore なし）
-- **special_prosecutors_files — 5 — S113–S117**（148件の綴じ・箱の列・4年分の紙・法律図書室）
-- **zero_charges_abstract — 3 — S118–S120**（結論の空白＝空の起訴状 smear・閉じられる報告書・静かな机）
+- **★HP visiting_room_years — 2 — S108–S109**（★converted 2026-07-26: 面会室の歳月。S108=1980s・面会テーブルで一人待つ匿名の母親の後ろ姿・handbag／S109=2000s・同じ部屋・年老いた訪問者の far-wide・wardrobe と光の違いで年月を語る・no faces・距離/角度は S108 と変える）
+```
+- `S108.png`
+An anonymized older Black woman seen only from behind, seated alone at a bare table in a prison visiting room in the 1980s, coat still on and a handbag in her lap, waiting under flat institutional light, patient and composed across the years, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S109.png`
+A prison visiting room in the 2000s seen far-wide from a high corner, a single anonymized elderly visitor seated at one of many bare tables, fluorescent panels reflected on polished floor, the same room grown older with the decades, back to camera, no face, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **★HP vigil_line_candles — 1 — S110**（★converted 2026-07-26: era vigil 線②＝1990s 後半 Death Row 10 の夜の vigil・prison wall の外に並ぶ匿名支援者の backs・点々の蝋燭の灯・far-wide・signs は smear・no faces）
+```
+- `S110.png`
+A night vigil line outside a prison wall in the late 1990s, anonymized supporters standing shoulder to shoulder seen from far behind, small candle flames dotting the dark, hand-held signs blurred to smears, cold air and quiet resolve, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **prison_years_nonsensational — 2 — S111–S112**（塀・フェンス・独房窓の光＝非扇情・無人・gore なし）
+```
+- `S111.png`
+A high concrete prison wall topped with coiled wire against a flat white winter sky, shot from below at a distance, featureless and patient, the years passing outside the frame, no people, no readable text [STYLE] Avoid: [NEG]
+- `S112.png`
+A narrow cell window slit throwing one pale bar of daylight onto a concrete wall, abstract and non-sensational, dust in the beam, time kept in light, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **special_prosecutors_files — 4 — S113–S116**（148件の綴じ・箱の列・4年分の紙・法律図書室）
+```
+- `S113.png`
+Rows of banker's boxes on steel shelving under flat fluorescent light, every label an unreadable smear, aisle after aisle of a special investigation's paper, no people, no readable text [STYLE] Avoid: [NEG]
+- `S114.png`
+A long conference table buried in stacked case files at night, two green-shaded lamps burning at either end, chairs empty, a marathon of paper in a dim rented room, no people, no readable text [STYLE] Avoid: [NEG]
+- `S115.png`
+A law library table under green-gray light, legal pads and open volumes spread mid-research, annotations smeared unreadable, shelves of identical spines rising into dark, no people, no readable text [STYLE] Avoid: [NEG]
+- `S116.png`
+Macro of dozens of file-folder tabs fanned like a deck of cards, each tab a smear, a thin layer of dust on the oldest, one cold side light, claims finally believed too late, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP clerks_move_the_boxes — 1 — S117**（★converted 2026-07-26: 4年の調査を運ぶ人＝courthouse 廊下で file box のカートを押す匿名職員の後ろ姿・2002-06・medium・no face）
+```
+- `S117.png`
+An anonymized courthouse clerk pushing a wheeled cart stacked with file boxes down a long corridor, seen from behind at medium distance, 2000s, fluorescent panels reflecting off terrazzo floor, the investigation moving one load at a time, no face, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **zero_charges_abstract — 2 — S118–S119**（結論の空白＝空の起訴状 smear・閉じられる報告書・静かな机）
+```
+- `S118.png`
+A single blank legal form lying centered on an empty desk, its printed lines a faint unreadable smear, vast negative space of dark wood around it, the charge sheet that could never be filled in, cold light, no person, no readable text [STYLE] Avoid: [NEG]
+- `S119.png`
+A thick final report closed flat on a desk, an elastic band stretched around its bulk, the chair pushed in squarely behind it, everything proven and nothing to follow, green-gray stillness, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP journalist_through_years — 1 — S120**（★converted 2026-07-26: 17年後も書き続ける記者＝2000s の newsroom・白髪の匿名記者 stand-in の後ろ姿・古い机に新しい薄型モニタの era 差・原稿は smear・S092–S095（1990・タイプライター）との年代対比が狙い・no face）
+```
+- `S120.png`
+An anonymized silver-haired reporter stand-in seen from behind in a 2000s newsroom, an early flat monitor glowing on a scarred old wooden desk, printouts in unreadable smears taped to the partition, still writing the same story, no face, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **★HP death_row_10_organizing — 4 — S121–S124**（独房の匿名の手がタイプする leaflet・尊厳・no face・non-sensational）
 ```
 - `S121.png`
 Anonymized hands typing on a small manual typewriter on a prison cell desk under one weak lamp, pages of an unreadable smear stacking beside it, organizing from inside, dignified and quiet, no face, no bars in frame, no readable text [HSTYLE] Avoid: [HNEG]
+- `S122.png`
+Macro of anonymized hands squaring a stack of freshly typed leaflets on a cell desk, the top sheet a smear, a stub of pencil and a weak bulb overhead, organized defiance made of paper, no face in frame, no readable text [HSTYLE] Avoid: [HNEG]
+- `S123.png`
+A small figure of an anonymized man hunched writing at a cell desk under one weak lamp, seen from far behind through the doorway, upright at his work, dignity in the posture, near-black surround, no face, no bars in frame, no readable text [HSTYLE] Avoid: [HNEG]
+- `S124.png`
+Anonymized hands tying a bundle of folded letters with kitchen string on a grey blanket, close top-down shot, the envelopes' faces turned away into smears, mail as a movement, no face in frame, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 - **statute_clock_runs_out — 4 — S125–S128**（S128 は also_thumb・**institutional clock・針は影に溶ける・時間切れ**）
 ```
+- `S125.png`
+A courthouse clock tower in black silhouette against a cold dusk sky, its dial faces unlit and unreadable, birds scattering from the parapet, the deadline architecture of the law, no people, no readable text [STYLE] Avoid: [NEG]
+- `S126.png`
+Extreme macro inside a stopped clock mechanism, brass gears furred with dust, one cold green-gray edge light, the machinery of a deadline that has already passed, no person, no readable numerals [STYLE] Avoid: [NEG]
+- `S127.png`
+A plain institutional wall clock high on a dim office wall, its hands lost in shadow, long fluorescent reflections on the floor of the empty bureau below, wide symmetrical shot, time expiring over vacant desks, no people, no readable numerals [STYLE] Avoid: [NEG]
 - `S128.png`
 A large institutional wall clock in near-black, its hands dissolving into shadow so no time can be read, a cold fluorescent green-gray edge across the dial, the limitations clock that ran out, no person, no readable numerals [STYLE] Avoid: [NEG]
 ```
 - **★HP ryan_podium — 3 — S129–S131**（匿名の知事 stand-in・法学部講堂の演壇・背向き/逆光・NOT a likeness）
-- **pardons_gates_cold — 3 — S132–S134**（開く鉄扉と冬の冷光＝object レーン）
-- **capitol_moratorium — 3 — S135–S137**（州都 Springfield の dome・大理石・無人）
+```
+- `S129.png`
+An anonymized older statesman stand-in seen squarely from behind at a lectern in a law-school hall, audience ranks below as soft dark shapes, warm wood and cold winter window light mixing, a decision carried to a podium, no likeness of any real person, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S130.png`
+A side over-the-shoulder view of an anonymized statesman stand-in silhouetted against bright lectern light, medium shot, notes on the lectern an unreadable smear, profile swallowed by shadow, gravity without a face, no likeness of any real person, no readable text [HSTYLE] Avoid: [HNEG]
+- `S131.png`
+A far-wide view from the back of a gothic university hall, a tiny anonymized figure at the distant podium beneath tall winter windows, rows of listeners as dark soft shapes, stone and pale light, history being said out loud, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **★HP families_at_the_gate — 1 — S132**（★converted 2026-07-26: 2003-01 の朝＝開く鉄扉の外で待つ匿名の家族たちの backs・冬コート・白い吐息・抱擁の直前の静止・wide・no faces）
+```
+- `S132.png`
+Anonymized family members standing in a close knot outside an opening steel gate on a January morning, seen from behind at a wide distance, winter coats and white breath, the stillness just before an embrace, cold clean light, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **pardons_gates_cold — 2 — S133–S134**（開く鉄扉と冬の冷光＝object レーン）
+```
+- `S133.png`
+A prison steel gate rolled half open onto an empty road, a hard shaft of low January sun cutting through the gap and across the frost, nobody yet in frame, freedom as a geometry of light, no people, no readable text [STYLE] Avoid: [NEG]
+- `S134.png`
+Macro of a heavy prison door wicket standing unlocked, the hasp open and chain hanging slack, cold morning light grazing chipped paint, the hardware of release, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **capitol_moratorium — 2 — S135–S136**（州都 Springfield の dome・大理石・無人）
+```
+- `S135.png`
+The Illinois State Capitol dome in Springfield under thin winter sun, wide from below the steps, flags taut in a cold wind, civic mass against a pale sky, no people, no readable text [STYLE] Avoid: [NEG]
+- `S136.png`
+The capitol rotunda interior, shafts of cold daylight falling through the dome onto marble floor, empty balustrades circling upward, echoing stillness, no people, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP capitol_vigil_line — 1 — S137**（★converted 2026-07-26: era 集会線③＝モラトリアム期・Springfield capitol の石段に立つ匿名の人々の far-wide backs・2000s wardrobe・昼の冬光・signs は unreadable smear・no faces）
+```
+- `S137.png`
+Anonymized citizens standing in a long quiet line on the Illinois capitol steps in winter daylight, seen from far behind, 2000s coats and scarves, hand-lettered signs blurred into smears, a moratorium argued by presence, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **★HP pardoned_men_walk — 3 — S138–S140**（4人の匿名 silhouette が冬の冷光へ歩き出す・upright・dignified・no faces）
 ```
 - `S138.png`
 Four dignified anonymized Black men seen only from behind walking out of an opening prison gate into cold winter morning light, upright and unhurried, coats and breath in the cold air, freedom rendered with restraint, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S139.png`
+A low-angle shot from close behind two anonymized Black men stepping through a prison gate threshold into January light, coats square on their shoulders, breath bright in the cold, the first steps of pardoned men, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S140.png`
+A far-wide winter shot of four anonymized figures walking away down a long empty road, the prison small behind them, pale morning sun ahead, dignified silhouettes against enormous flat snowfields, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 - **florida_warm_impunity — 4 — S141–S144**（同時刻の対岸＝暖かい dock・boat の wake・split-screen の右半分）
+```
+- `S141.png`
+Warm gulf water glittering to the horizon in Florida afternoon sun, a long boat wake curling across the frame, brightness that belongs to another story than Chicago's winter, no people, no readable text [STYLE] Avoid: [NEG]
+- `S142.png`
+A Florida marina at golden hour, ranks of white hulls and bare masts, water burnished warm orange, humid ease, a world away from the cold, no people, no readable text [STYLE] Avoid: [NEG]
+- `S143.png`
+Fishing rods racked on the stern of a cabin cruiser in warm haze, tackle box shut, lines catching the sun, leisure documented like evidence, no people, no readable text [STYLE] Avoid: [NEG]
+- `S144.png`
+Late sun throwing palm-frond shadows across the weathered boards of a Florida dock, macro at deck level, warm honeyed light, water sparkle beyond, the texture of impunity, no people, no readable text [STYLE] Avoid: [NEG]
+```
 - **oath_page_pen — 5 — S145–S149**（interrogatory の smear・ペン先が紙に触れる直前・署名の運命）
 ```
 - `S145.png`
 A fountain pen poised a breath above a typed legal interrogatory page, all text an unreadable smear, one cold fluorescent green-gray light raking the paper, the only mistake the law could still reach, no person visible beyond an out-of-focus cuff, no readable text [STYLE] Avoid: [NEG]
+- `S146.png`
+A set of typed legal interrogatory pages fanned across a desk, staples glinting, every question smeared unreadable, cold fluorescent light from above, four sheets of paper aimed at a man in Florida, no person, no readable text [STYLE] Avoid: [NEG]
+- `S147.png`
+Extreme macro of a fountain pen nib a hair above paper, a bead of ink swelling at the tip, the typed line beneath a smear, cold light on steel, one small motion from history, no person, no readable text [STYLE] Avoid: [NEG]
+- `S148.png`
+An unsigned signature line on a typed page, a pen laid diagonally across the sheet, lamplight in a dim Florida study, the text above blurred to a smear, a choice resting on the paper, no person, no readable text [STYLE] Avoid: [NEG]
+- `S149.png`
+A sealed envelope of answered questions lying on a mail tray by a bright Florida window, palm shadow on the wall, the cold green-gray of Chicago waiting inside the paper, contrast of warm and cold light, no person, no readable text [STYLE] Avoid: [NEG]
 ```
 
 ### ACT 4 — LYING UNDER OATH（46枚・S150–S195・climax・cascade・最密②）
 - **★HP arrest_agents_backs — 4 — S150–S153**（Florida の朝・匿名 agents の backs が家のドライブを歩く・逮捕の phase・no faces・拘束具/手錠を描かない）
-- **federal_courthouse — 3 — S154–S156**（連邦裁判所の柱・plaza・報道の脚立と空のマイク）
+```
+- `S150.png`
+Anonymized federal agents in plain dark suits seen from behind walking up the driveway of a tidy Florida house in early morning light, wide shot, dew on the lawn, October 2008, quiet and procedural, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S151.png`
+A far shot from the street through palm trunks of anonymized agents' dark figures at a pale Florida front door, morning gold on the stucco, a sedan parked at the curb, backs and shoulders only, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S152.png`
+A close shot from behind one anonymized agent's plain dark jacket shoulder, his raised hand about to knock on a front door, morning light raking the wood grain, a knock decades in the making, no face, no insignia, no readable text [HSTYLE] Avoid: [HNEG]
+- `S153.png`
+Anonymized agents' silhouettes standing beside an unmarked sedan with its doors open on a bright Florida street, long early shadows reaching toward the camera, seen from behind at medium-far range, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **federal_courthouse — 1 — S154**（連邦裁判所の柱・plaza・報道の脚立と空のマイク・無人）
+```
+- `S154.png`
+A federal courthouse plaza in grey light, granite columns towering, press stepladders and an empty microphone stand clustered at the steps, the apparatus of a reckoning waiting, no people, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP courthouse_steps_2008 — 1 — S155**（★converted 2026-07-26: 2008-10 逮捕の日＝連邦裁判所の石段に集まる匿名の市民と記者の backs・灰色の秋光・カメラ機材は輪郭のみ・wide・no faces）
+```
+- `S155.png`
+Anonymized citizens and reporters gathered on federal courthouse steps in the grey autumn light of 2008, seen from far behind, camera rigs as dark outlines above the crowd's coats, expectation without a face, wide shot, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **★HP gallery_queue_2010 — 1 — S156**（★converted 2026-07-26: 数十年待った人々の列＝2010 公判・法廷ドア前の大理石廊下に並ぶ匿名の傍聴待ち・backs・low angle・no faces）
+```
+- `S156.png`
+A long queue of anonymized people waiting in a marble federal courthouse corridor in 2010, seen from behind at a low angle, coats folded over arms outside the tall courtroom doors, decades of waiting condensed into one quiet line, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **faultsplit_gambit_abstract — 3 — S157–S159**（時効の壁 vs 新しい嘘の道＝二又に割れる abstract 構造）
+```
+- `S157.png`
+An abstract near-black wall split by a jagged crack out of which cold light pours in two divergent beams, one beam dying against brick, one running clear off frame, the legal fault line rendered as geometry, no people, no readable text [STYLE] Avoid: [NEG]
+- `S158.png`
+Two institutional corridors diverging from a single junction, the left walled off in darkness, the right lit by a run of cold fluorescent tubes curving away, symbolic architecture of the one path still open, wide one-point shot, no people, no readable text [STYLE] Avoid: [NEG]
+- `S159.png`
+A ledger page torn in two on dark wood, the older half yellowed and crumbling at the tear, the newer half crisp and white, both sides' entries unreadable smears, old crimes and a fresh lie, macro, no person, no readable text [STYLE] Avoid: [NEG]
+```
 - **★HP survivors_testify — 6 — S160–S165**（証言台の匿名黒人男性 silhouette・upright・37年後にようやく聞かれる・no faces）
 ```
 - `S160.png`
 A dignified anonymized Black man standing at a federal witness stand, seen from behind and lost to a calm silhouette against tall cold windows, testifying at last after decades, still and composed, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S161.png`
+An anonymized Black man seated at a witness stand seen in dark side profile lost to shadow, a microphone a thin silhouette before him, tall cold windows beyond the bench, composed after a lifetime of waiting, medium shot, no identifiable face, no readable text [HSTYLE] Avoid: [HNEG]
+- `S162.png`
+A far-wide view across a federal courtroom from the public gallery, a small dignified anonymized figure upright at the witness stand under high coffered ceilings, the vastness of the room against one man's testimony, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S163.png`
+Macro of an anonymized witness's weathered hands resting calm and folded on the rail of the stand, white Sunday-suit cuffs, cold window light, steadiness where the story expects trembling, no face in frame, no readable text [HSTYLE] Avoid: [HNEG]
+- `S164.png`
+An anonymized Black man walking up the center aisle of a courtroom toward the witness stand, seen from directly behind at medium distance, benches of soft unfocused figures on either side, upright bearing, the walk of a man finally heard, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S165.png`
+A dignified anonymized older Black man standing straight beside tall courtroom windows, seen from behind and to the side, winter light burning the glass white around his dark outline, close-medium, stillness as strength, no face, no readable text [HSTYLE] Avoid: [HNEG]
 ```
-- **verdict_guilty — 3 — S166–S168**（評決＝法廷の doors が open into light・abstract）
+- **verdict_guilty — 2 — S166–S167**（評決＝法廷の doors が open into light・abstract）
+```
+- `S166.png`
+Tall courtroom double doors swinging open from a dark corridor into a blaze of pale light, floor gleam leading in, the verdict moment held as pure architecture, no people, no readable text [STYLE] Avoid: [NEG]
+- `S167.png`
+An emptied jury box the minute after, twelve chairs pushed back at honest angles, squared papers left on the rail with their print a smear, cold light settling, the decision already spoken, no people, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP verdict_crowd_summer — 1 — S168**（★converted 2026-07-26: 2010-06-28 評決の外＝夏光の courthouse plaza で抱き合い立ち尽くす匿名の人々の遠景・backs と輪郭のみ・S155（秋・grey）と季節/光で差別化・no faces）
+```
+- `S168.png`
+A summer courthouse plaza seen from across the street, anonymized people embracing in small knots, all backs and outlines in bright hard June light, a verdict spilling outdoors, far view, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **★HP gallery_rise — 3 — S169–S171**（傍聴席の backs が立ち上がる・抱き合う輪郭・no faces）
-- **sentencing_cold_bench — 3 — S172–S174**（判事席の空・cold・4.5年の重さと軽さ）
-- **pension_deadlock — 3 — S175–S177**（割れたテーブルの abstract・封筒が延々と届く drift・数字は描かない）
+```
+- `S169.png`
+A courtroom gallery seen from the last row as anonymized spectators rise to their feet in one motion, a tide of shoulders and coats, tall windows beyond, restrained jubilation, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S170.png`
+Two anonymized figures embracing in a courtroom aisle, rendered as dark outlines against high backlit windows, medium shot, relief without spectacle, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S171.png`
+A low-angle shot from behind a seated back row as the front rows of a gallery stand, layers of dark shoulders rising like a wave toward the lit bench beyond, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **sentencing_cold_bench — 2 — S172–S173**（判事席の空・cold・4.5年の重さと軽さ）
+```
+- `S172.png`
+A federal judge's bench empty and towering in dark wood, shot from low in the well of the court, cold light along its rail, gravity without an occupant, no people, no readable text [STYLE] Avoid: [NEG]
+- `S173.png`
+The defense table empty after sentencing, one chair squared, a name placard turned to an unreadable smear, papers gone, green-gray hush, what remains when the room empties, no people, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP sentencing_gallery_sparse — 1 — S174**（★converted 2026-07-26: 2011-01 量刑＝冬コートの匿名傍聴人が**まばらに**座る gallery を背後から・空席の多さが年月を語る・S085–S088/S169–S171 の満席系と密度で差別化・no faces）
+```
+- `S174.png`
+A sentencing-day gallery in January, anonymized spectators in heavy winter coats scattered sparsely among mostly empty benches, seen from behind at the rear doors, cold light, the long story's small final audience, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **pension_deadlock — 2 — S175–S176**（割れたテーブルの abstract・封筒が延々と届く drift・数字は描かない）
+```
+- `S175.png`
+A long boardroom table split down its center by a hard blade of cold light, four leather chairs squared on each side facing each other, symmetric and unresolved, deadlock as furniture, no people, no readable text [STYLE] Avoid: [NEG]
+- `S176.png`
+A stack of identical plain envelopes accumulating on a sideboard by a bright Florida window, macro, each face an unreadable smear, palm shadow trembling on the wall, the pension arriving on schedule, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP reparations_march — 1 — S177**（★converted 2026-07-26: era march 線④＝2014-15 のキャンペーン・灰色のシカゴの通りを渡る匿名マーチの列・年齢も装いも混ざる 2010s wardrobe・banners は unreadable smear・backs・no faces）
+```
+- `S177.png`
+A line of anonymized marchers of mixed ages crossing a grey Chicago street in 2015, seen from behind in a wide shot, winter jackets and hooded coats and church coats walking together, their banners and signs blurred into unreadable smears, momentum and quiet resolve, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **★HP council_apology — 4 — S178–S181**（市議会場・傍聴席のサバイバーの backs・議場の光・no faces）
+```
+- `S178.png`
+A city council chamber seen from high in the public gallery, anonymized survivors' backs in the foreground rows looking down on the lit floor, warm morning light beginning to thin the green-gray, the apology being said below, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S179.png`
+Two anonymized gray-haired men seated side by side in a council gallery, seen from close behind, hands quiet on the armrests, listening to words they had waited decades to hear, warm and cold light mixing on their shoulders, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S180.png`
+A council gallery rising in a standing ovation rendered only as dark standing outlines against the chamber's warm lit ceiling, wide from the back corner, the cold palette breaking open, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S181.png`
+A single anonymized older man remaining at the gallery rail after adjournment, seen from behind, one warm shaft of morning light across his shoulders in the emptied chamber, the word sorry still in the air, no face, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **★HP center_door_warm — 3 — S182–S184**（Englewood のセンターの入口・匿名の人々の backs が暖色の戸口へ・★curriculum-morning note 開始）
-- **curriculum_schoolbook — 4 — S185–S188**（S186 は also_thumb・**教室の机の上の開いた教科書・curriculum-morning light・頁は smear**）
+```
+- `S182.png`
+Anonymized people seen from behind entering the glass door of a storefront counseling center, warm interior light spilling out onto a cold South Side sidewalk at dusk, medium-wide, help with an address, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S183.png`
+A far shot down a dusk sidewalk of two anonymized figures walking toward the lit doorway of a community center, the warm rectangle of the entrance the only color in a blue-grey street, backs to camera, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S184.png`
+Inside a center vestibule, coats on wall hooks and two anonymized backs passing through an inner doorway into warm lamplight, shot from the dim entry, the threshold between the cold story and the warm room, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **★HP teacher_prepares_room — 1 — S185**（★converted 2026-07-26: 授業の朝の支度＝机に教科書を一冊ずつ置いていく匿名教師 stand-in の手元と後ろ姿・hands寄り・curriculum-morning light・no face）
+```
+- `S185.png`
+An anonymized teacher stand-in seen from behind laying a textbook on each desk of an empty classroom before school, close on hands and forearm with the room soft beyond, warm early-morning light, preparation as ceremony, no face, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **curriculum_schoolbook — 3 — S186–S188**（S186 は also_thumb・**教室の机の上の開いた教科書・curriculum-morning light・頁は smear**）
 ```
 - `S186.png`
 An open schoolbook on a wooden classroom desk in warm early-morning light, dust motes in the sunbeam, the pages a soft unreadable smear, the buried letter become a chapter, quiet triumph, no person, no readable text [STYLE] Avoid: [NEG]
+- `S187.png`
+A stack of brand-new textbooks squared on a teacher's desk by a bright window, spines and covers blurred to soft smears, warm morning sun across the topmost cover, the record bound and ready, no person, no readable text [STYLE] Avoid: [NEG]
+- `S188.png`
+Extreme macro of an open textbook page edge glowing gold in low morning sun, dust motes hanging over the paper, the print a soft unreadable smear, history warmed through, no person, no readable text [STYLE] Avoid: [NEG]
 ```
 - **★HP teacher_classroom — 3 — S189–S191**（教壇の匿名教師 stand-in・背向き・生徒は out-of-focus の輪郭のみ・**識別可能な子供の顔なし**・morning）
-- **memorial_groundbreaking — 3 — S192–S194**（Washington Park の緑・掘り返された土とシャベル・花）
+```
+- `S189.png`
+An anonymized teacher at a chalkboard seen from the back of the class, students only as soft out-of-focus shapes in the foreground rows, warm morning light through tall windows, the unit being taught at last, no identifiable child, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S190.png`
+An anonymized teacher standing at the window side of a morning classroom, silhouetted against bright glass, medium shot from behind the blurred rows of students, chalk at rest in one hand, no identifiable child, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S191.png`
+An over-the-shoulder shot past an anonymized teacher's shoulder toward a classroom of soft unfocused young shapes, an open textbook in the teacher's hands with its pages a smear, warm gold morning, the ears the city finally grew, no identifiable child, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **memorial_groundbreaking — 2 — S192–S193**（Washington Park の緑・掘り返された土とシャベル・花）
+```
+- `S192.png`
+Freshly turned black earth and a row of ceremonial shovels standing upright in a green Washington Park lawn, morning sun through big trees, a memorial beginning as soil, no people, no readable text [STYLE] Avoid: [NEG]
+- `S193.png`
+White and yellow flowers laid on fresh-dug earth at a park groundbreaking, macro low to the ground, soft daylight, grass bright at the frame's edge, remembrance taking root, no people, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP groundbreaking_crowd — 1 — S194**（★converted 2026-07-26: 記念碑起工の朝＝Washington Park の緑に半円で立つ匿名の人々・backs・シャベルと掘られた土・晴れた daylight・no faces）
+```
+- `S194.png`
+Anonymized people standing in a loose semicircle around a plot of turned earth in a sunlit green park, seen from far behind, summer daylight, shovels at rest, a city showing up at last, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
 - **burge_death_quiet — 1 — S195**（無人の dock・boat の不在・暮れる湾＝終わりは静かに）
+```
+- `S195.png`
+An empty Florida dock at dusk with no boat at its cleats, mooring ropes hanging slack into dark water, the gulf fading to slate, a quiet end offscreen, no people, no readable text [STYLE] Avoid: [NEG]
+```
 
 ### ACT 5 — ENDING（15枚・S196–S210・the truth lands last・strip to essentials）
 - **letter_unburied — 4 — S196–S199**（引き出しが開く・手紙が光の中へ・1982 の一枚が戻ってくる）
+```
+- `S196.png`
+A dark wooden drawer sliding open toward the camera, a typed 1982 letter inside catching its first strip of warm morning light after decades of green-gray, macro, the un-burial beginning, no person, no readable text [STYLE] Avoid: [NEG]
+- `S197.png`
+The typed letter lying on the open drawer's edge, half in cold shadow and half in gold dawn light, its lines an unreadable smear, dust drifting above the paper, no person, no readable text [STYLE] Avoid: [NEG]
+- `S198.png`
+The doctor's letter laid flat on a desk in full morning light, deep crease lines from decades folded, the text a soft smear, the page outliving everyone who ignored it, top-down macro, no person, no readable text [STYLE] Avoid: [NEG]
+- `S199.png`
+The typed letter beside its aged yellowed envelope on pale wood, warm daylight washing the last green-gray from the frame's edge, gentle and final, no person, no readable text [STYLE] Avoid: [NEG]
+```
 - **letter_becomes_chapter — 4 — S200–S203**（手紙のページが教科書の見開きへ dissolve する中間状態・smear のまま・morning light）
-- **classroom_morning — 4 — S204–S207**（無人の教室・朝陽の shaft・並んだ机・チョークボードの blur）
-- **final_breath_dawn — 3 — S208–S210**（湖の夜明け・都市の朝・green-gray が morning gold に解ける一筋）
+```
+- `S200.png`
+A 1982 typed letter and an open modern schoolbook lying side by side on one desk in morning sun, the letter's smear and the book's smear facing each other, two documents one truth apart, no person, no readable text [STYLE] Avoid: [NEG]
+- `S201.png`
+A textbook page backlit by morning sun so the ghost of a typed letter seems to show through the paper, macro, both layers unreadable smears, the chapter carrying the page inside it, no person, no readable text [STYLE] Avoid: [NEG]
+- `S202.png`
+A single book page caught mid-turn in a shaft of gold light, the silhouette of a folded letter pressed flat beneath it, dust motes suspended, macro, no person, no readable text [STYLE] Avoid: [NEG]
+- `S203.png`
+An open textbook on a classroom desk with an old envelope resting in the gutter as a bookmark, warm morning glow, the burial reversed into curriculum, no person, no readable text [STYLE] Avoid: [NEG]
+```
+- **classroom_morning — 2 — S204–S205**（無人の教室・朝陽の shaft・並んだ机・チョークボードの blur）
+```
+- `S204.png`
+An empty Chicago classroom in early morning, ranks of desks in a long sun shaft, a cleanly washed chalkboard soft in the background, dust hanging gold in the beam, the room before the lesson, no people, no readable text [STYLE] Avoid: [NEG]
+- `S205.png`
+The window side of an empty classroom at dawn, tall panes pouring gold across the floor tiles, chairs set down and squared at every desk, quiet expectancy, no people, no readable text [STYLE] Avoid: [NEG]
+```
+- **★HP teacher_and_students_morning — 2 — S206–S207**（★converted 2026-07-26: payoff の教室に人が戻る＝uplifting daylight beat。S206=教室最後方から・朝陽の中で開いた本に屈む**非識別の生徒たちの backs の列（遠距離・後方のみ・識別可能な子供顔なし）**・教壇の教師は out-of-focus の輪郭／S207=机越しに開いた教科書を手渡す匿名教師の手元と out-of-focus の受け手・hands寄り・warm morning）
+```
+- `S206.png`
+A Chicago classroom seen from the very back row in warm early-morning light, rows of unidentifiable students seen only from behind at a distance bending over open books, the teacher a soft out-of-focus shape at the board, dust motes in the sunbeam, the chapter finally being read, no identifiable child, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `S207.png`
+A close shot across a school desk of an anonymized teacher's hands passing an open textbook to a soft out-of-focus receiving figure, warm morning light on the pages' smear, the hand-off of the record, no identifiable child, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **★HP walk_to_school_dawn — 1 — S208**（★converted 2026-07-26: 夜明けの South Side の歩道を校舎の入口へ歩いて行く匿名の**大人たち**の far-wide backs・morning gold・adults only・no faces）
+```
+- `S208.png`
+A far-wide dawn shot of anonymized adults walking along a South Side sidewalk toward a school entrance, long gold light and long shadows, backs only, the city carrying its story to class, adults only, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+```
+- **final_breath_dawn — 2 — S209–S210**（湖の夜明け・都市の朝・green-gray が morning gold に解ける一筋）
+```
+- `S209.png`
+Lake Michigan at dawn, flat calm water and a first seam of gold breaking a green-gray horizon, immense sky, the film's cold system dissolving, no people, no readable text [STYLE] Avoid: [NEG]
+- `S210.png`
+The Chicago skyline at first light, towers still night-dark below a warming sky, one gold band along the horizon line, quiet and earned, no people, no readable text [STYLE] Avoid: [NEG]
+```
 
 ## 5.7 幕別 motif 枚数の検算（★Codex は書き終えたら足して確認）
 
 ```
 ACT0  : 4+3+4+4 = 15
-ACT1  : 5+4+6+6+3+6+4+4+4 = 42
-ACT2  : 2+3+3+3+2+4+4+3+3+4+3+4+4+3+3+2 = 50
-ACT3  : 5+5+3+4+4+3+3+3+3+4+5 = 42
-ACT4  : 4+3+3+6+3+3+3+3+4+3+4+3+3+1 = 46
-ACT5  : 4+4+4+3 = 15
+ACT1  : 3+2+4+4+2+6+3+6+4+3+1+4 = 42
+ACT2  : 1+1+2+1+3+3+1+1+4+4+3+3+4+2+1+4+3+1+2+1+3+2 = 50
+ACT3  : 2+1+2+4+1+2+1+4+4+3+1+2+2+1+3+4+5 = 42
+ACT4  : 4+1+1+1+3+6+2+1+3+2+1+2+1+4+3+1+3+3+2+1+1 = 46
+ACT5  : 4+4+2+2+1+2 = 15
 合計   : 15+42+50+42+46+15 = 210 ✓
-★human-present(★HP) body: 10(ACT1)+14(ACT2)+10(ACT3)+23(ACT4) = 57 / 210 = 27.1%（残り153は object/symbolic）
+★human-present(★HP) body: 15(ACT1)+20(ACT2)+17(ACT3)+30(ACT4)+3(ACT5) = 85 / 210 = 40.5%（残り125は object/symbolic）
+★転換28行（R3+ owner directive 2026-07-26・object→★HP・locked counts 不変）:
+  ACT1 +5 = S019, S020, S029, S030, S053
+  ACT2 +6 = S059, S062, S070, S091, S099, S102
+  ACT3 +7 = S108, S109, S110, S117, S120, S132, S137
+  ACT4 +7 = S155, S156, S168, S174, S177, S185, S194
+  ACT5 +3 = S206, S207, S208
+  spine-motif（letter/box/drawer/radiator/clock）と also_thumb 4枚（S001/S066/S128/S186）は転換ゼロ ✓
 ```
 > **S001..S210 の連番が穴なく210行**そろっていることを `--only S001` の `shots=255`（210 body + 42 i2v種 + 3 thumb_face）で確認する。
 
@@ -966,7 +1517,7 @@ ACT5  : 4+4+4+3 = 15
 ## 5.11 ★人物画像（匿名・ドラマ化スタンドイン）— HUMAN-FIGURE prompts（★18本・i2v 種の内数）＋ ★HP body still の style
 
 > **owner directive（EP48/49「空/寂しい」却下の恒久対策）: 匿名・非識別の人物を増やし、動かす。** 実在人物（Burge/Wilson/Holmes/Jones/恩赦4人/Raba/Daley/Fitzgerald/Lefkow/Ryan/Emanuel/刑事/判事）の **likeness を作らない**。顔は非識別（背向き/影の横顔/逆光 silhouette/目から下クロップ/浅い被写界深度・**adults only**）。**拷問・拘束・装置と人体の同一フレームを絶対に作らない（R-TORTURE-DEPICT 継続）。黒人男性サバイバーの silhouette は尊厳第一（upright・still・backlit）。識別可能な子供の顔なし（教室ビートは out-of-focus の輪郭のみ）。**
-> **★この `[HSTYLE]`/`[HNEG]` は (a) 18本の i2v 人物種、(b) §5.6 の ★HP body still 57枚、の両方に使う。**
+> **★この `[HSTYLE]`/`[HNEG]` は (a) 18本の i2v 人物種、(b) §5.6 の ★HP body still 85枚、の両方に使う。**
 
 ### ★lane 定義（人物は動かす＝紙芝居にしない → H は motion レーンへ・locked counts 不変）
 
@@ -975,7 +1526,7 @@ ACT5  : 4+4+4+3 = 15
 - **asset_id は既存の i2v 種 ID 空間（`^BUR-MS\d{2}$`）の 18本を占有**（H001–H018 は本書内のラベル）。種画像ファイルは `M<NN>_src.png`。`public_path==null`。
 - 各人物種は **Wan → RIFE（§8）で motion 化**され、**42本の motion のうち 18本**になり、**84 motion カットのうち最大 36カット**に出る＝**人物が動く**。
 - **QC フラグ:** `has_human_body:true`（許可）・`has_identifiable_real_person:false`（必須）・`has_readable_text:false`（必須）・`has_torture_or_restraint:false`（必須）。
-- **★locked counts は1つも変わらない:** still_body **210**（＝object 153 ＋ ★HP 57）/ still_i2v_source **42**（＝抽象 24 ＋ 人物 18）/ motion **42** / factory **235** / overlay **30** / thumb_face **3**；cuts **244/235/84 = 563**；still-share **0.4334**；first-use **0.8650**；avg-uses **1.156**。
+- **★locked counts は1つも変わらない:** still_body **210**（＝object 125 ＋ ★HP 85）/ still_i2v_source **42**（＝抽象 24 ＋ 人物 18）/ motion **42** / factory **235** / overlay **30** / thumb_face **3**；cuts **244/235/84 = 563**；still-share **0.4334**；first-use **0.8650**；avg-uses **1.156**。
 
 **共通スタイル `[HSTYLE]`（各 H プロンプト末尾に全文連結・匿名/非識別/photoreal/green-gray）:**
 ```
@@ -1078,6 +1629,34 @@ Files `F001.png … F012.png`. Act-mapped beats:
 - **F011** (a · ACT4) council-gallery faces as the apology lands — tears and stillness, generic adults.
 - **F012** (a · ACT4) a teacher's warm, serious face before a morning class — the lesson carried forward, generic; students never in identifiable focus.
 
+**★R3++ 2026-07-26: F001–F012 の literal 12行（上の act-mapped beats の確定版・そのまま `ai_prompts.v001.md` 末尾へ追記する。lane (a)=photoreal / (b)=clearly illustrative は各プロンプト本文に内蔵済み）:**
+```
+- `F001.png`
+A survivor everyman's face rendered clearly illustrative and semi-painterly, a middle-aged Black man in medium-close-up, eyes on the upper third meeting the camera with a steady wounded unbroken gaze, the man nobody believed, dramatic cold green-gray key and warm rim light against a dark blurred precinct background, not a likeness of any real survivor [FSTYLE] Avoid: [FNEG]
+- `F002.png`
+Photoreal medium-close-up of two generic anonymized detectives' hard closed faces side-lit by dying fluorescent light, 1980s collars and loosened ties, eyes flat and unreadable on the upper third, the machine's operators, dark squad-room bokeh behind them [FSTYLE] Avoid: [FNEG]
+- `F003.png`
+A clearly illustrative semi-painterly face of a generic middle-aged jail doctor, brow furrowed in grave troubled resolve over a letter he has just written, desk-lamp key light and a cold rim, dark infirmary background, not a likeness of any real physician [FSTYLE] Avoid: [FNEG]
+- `F004.png`
+Photoreal medium-close-up of a generic reporter's exhausted determined face lit by one desk lamp in a dark 1990 newsroom, smudged glasses and stubble, eyes fixed past the camera at the page, years of unheeded truth in the stare, dark bokeh of empty desks [FSTYLE] Avoid: [FNEG]
+- `F005.png`
+Photoreal faces of two generic uncertain jurors in a 1989 civil courtroom, medium-close three-quarter view, doubt and discomfort plainly written across both, cold window key light, dark wood bokeh, generic anonymized adults [FSTYLE] Avoid: [FNEG]
+- `F006.png`
+A clearly illustrative semi-painterly face of a generic Black man behind scuffed prison visiting glass, decades etched into composed features, quiet dignity and endurance rather than despair, green-gray key with a soft warm rim, reflections ghosting the glass, not a likeness of any real man [FSTYLE] Avoid: [FNEG]
+- `F007.png`
+Photoreal medium-close-up of a generic older statesman's grave lined face at a podium, the weight of an irreversible decision set in the jaw, warm lectern uplight against a cold dark hall, generic anonymized, not any real governor [FSTYLE] Avoid: [FNEG]
+- `F008.png`
+A clearly illustrative semi-painterly face of a generic Black man stepping into cold January light, disbelief and relief breaking together across his features, breath visible, icy rim light and a pale key, dark gate bokeh behind, not a likeness of any real exoneree [FSTYLE] Avoid: [FNEG]
+- `F009.png`
+A clearly illustrative semi-painterly face of the untouchable-commander archetype, a heavyset older white man in cold contemptuous three-quarter shadow, jaw set and eyes like a closed door, hard green-gray key and no warmth anywhere, dark background, no glorification, not a likeness of any real commander or any real person [FSTYLE] Avoid: [FNEG]
+- `F010.png`
+Photoreal medium-close-up of a generic survivor-witness's face on the stand, an older Black man calm and resolute, eyes steady on the upper third, finally being heard, cold window key with a warm rim, dark courtroom bokeh, generic anonymized adult [FSTYLE] Avoid: [FNEG]
+- `F011.png`
+Photoreal faces of a generic older Black woman and man in a council gallery as the apology lands, tears standing without falling, stillness more than celebration, mixed warm morning and cold chamber light, generic anonymized adults [FSTYLE] Avoid: [FNEG]
+- `F012.png`
+Photoreal medium-close-up of a generic teacher's warm serious face before a morning class, chalk dust drifting in a gold sunbeam, purpose and care in the eyes, students only as unfocused shapes far behind, generic anonymized adult [FSTYLE] Avoid: [FNEG]
+```
+
 Generate all 12; QC each visually (visible emotive face · non-real · no likeness/child/wounds/text) before manifest.
 
 > **★R3 clarifier（shots カウントとの整合）:** F001–F012 の12行は、**base 255 行（S001..S210 + M01_src..M42_src + T01_face..T03_face）の `shots=255` 検証が通った後に** `ai_prompts.v001.md` の末尾へ追記して生成する。**追記後の `shots=267`（255+12）が正**。§5.9/§5.10 の「255」は F-series 追記前の base セットの検算値であり、形式破損の判定はその時点で行う。F-series は distinct/cuts に数えない（§5.13 冒頭のとおり）。
@@ -1093,7 +1672,7 @@ Generate all 12; QC each visually (visible emotive face · non-real · no likene
 | Q1 | 解像度 | `max(w,h)>=3840` | reject |
 | Q2 | サイズ/開ける | `>1024 bytes` かつ PIL で開ける | reject |
 | Q3 | 平均輝度 | `18.0<=mean_luma<=225.0`（near-black ink・green-gray の低照度が多い→黒潰れ注意。ACT4後半/ACT5 の morning ビートは明側） | reject |
-| Q4 | 近似重複 | 全ペア phash。類似度 `>=0.90` は片方 reject。**衝突は letter(S001/S071系/S196系)・drawer(S008系/S075系)・box(S037系/S066系)・radiator(S043系)・clock(S125–S128)・courtroom(S082系/S160系)・prison(S108系)・classroom(S185系/S204系) の被りに注意** | 片方 reject＋プロンプト見直し |
+| Q4 | 近似重複 | 全ペア phash。類似度 `>=0.90` は片方 reject。**衝突は letter(S001/S071系/S196系)・drawer(S008系/S075系)・box(S037系/S066系)・radiator(S043系)・clock(S125–S128)・courtroom(S082系/S160系)・prison(S111系)・classroom(S185系/S204系)、★HP 新クラスタ＝gallery 群衆(S085系/S156/S168/S169系/S174)・era protest/vigil 線(S099/S110/S137/S177)・waiting/visiting 室(S029–S030/S053/S062/S108–S109/S132)・classroom 人物(S189系/S206–S207) の被りに注意** | 片方 reject＋プロンプト見直し |
 | Q5 | 文字の混入 | **目視。** 読める英字・数字・日付(1982/1990/1993/2003/2010/2015)・"Vigilante" の船名・件数(118/57)・金額($5.5M/$210M)・報告書/新聞/手紙のロゴ | `has_readable_text=true`→reject |
 | Q6 | **実在人物**の顔の混入 | **目視。** 実在人物として識別可能な顔（Burge/Wilson/Holmes/恩赦4人/Raba/Daley/Fitzgerald/Lefkow/Ryan/Emanuel に**似た**顔）。**匿名・非識別の顔（H/F/thumb_face）は OK。** | `has_identifiable_real_person=true`→reject |
 | Q7 | 拷問/拘束/傷/子供 | **目視。** 拷問・拘束・装置と人体の同一フレーム・手錠・傷/火傷/血・苦悶/泣き顔・うずくまるサバイバー・**識別可能な子供の顔**。**★匿名の人体は OK（`has_human_body=true` 単独では reject しない）。** | あれば reject |
@@ -1105,7 +1684,7 @@ Generate all 12; QC each visually (visible emotive face · non-real · no likene
 #   → runs/qc/burge_footage_contact_NN.png（20枚/シート・約13シート）。全シートを開いて1枚ずつ見る
 ```
 
-> **EP38/EP39-54 の教訓: ファイル名・プロンプトを信じるな。生成物を実際に見ろ。** 特に **S037/S066系(box)は「装置が何かに接続された絵・人の手が写る絵」になっていないこと、S043系(radiator)は無人であること、S054/S138/S160系(サバイバー silhouette)が尊厳ある upright で「哀れみポーズ」に転じていないこと、S150系(逮捕)に手錠/拘束が写らないこと、S189系(教室)に識別可能な子供の顔が無いこと、S106系(boat)に読める船名が無いこと、T01–T03/F009 が実在の Burge/サバイバーに似ていないこと、を必ず目で確認する。**
+> **EP38/EP39-54 の教訓: ファイル名・プロンプトを信じるな。生成物を実際に見ろ。** 特に **S037/S066系(box)は「装置が何かに接続された絵・人の手が写る絵」になっていないこと、S043系(radiator)は無人であること、S054/S138/S160系(サバイバー silhouette)が尊厳ある upright で「哀れみポーズ」に転じていないこと、S150系(逮捕)に手錠/拘束が写らないこと、S189系・S206–S207(教室)に識別可能な子供の顔が無いこと、★HP の crowd/gallery/march 行(S059/S085系/S099/S110/S137/S155–S156/S168/S174/S177/S194)に識別可能な顔・可読の signs/banners が無いこと、waiting/visiting 行(S029–S030/S053/S062/S108–S109/S132)が苦悶でなく静かな待機/witnessing であること、S106系(boat)に読める船名が無いこと、T01–T03/F009 が実在の Burge/サバイバーに似ていないこと、を必ず目で確認する。**
 
 ## 6.2 出力
 ```
@@ -1215,21 +1794,93 @@ episodes/PD-2026-055-burge/05_visuals/factory_clip_qc.v001.json   # ゲートが
 > **★このうち ★18本は §5.11 の匿名人物ビート（H001–H018）＝42本の内数**。**残り 24本が抽象/象徴種。**
 
 ### 8.1a i2v 種プロンプト（★`ai_prompts.v001.md` の末尾にこの42行を追加・各1枚・**poised-still の source**）
-> 各種プロンプトは §5.6/§4.5 の対応 tag の「動く直前の poised-still」版。**動きが意味を持つ絵**（drawer が手紙の上に閉じる直前・clock の針が影に溶ける直前・gate が開く直前・page がめくれる直前 等）。末尾に §5.3 `[STYLE]` ＋ `Avoid:` §5.4 `[NEG]`（人物種は `[HSTYLE]`/`[HNEG]`）を全文連結。**下記は代表6例。残り36行は §4.5 の各 storyboard/tags を「poised, still, about to move」で SDXL 化**（M01_src..M42_src を穴なく）。
+> 各種プロンプトは §5.6/§4.5 の対応 tag の「動く直前の poised-still」版。**動きが意味を持つ絵**（drawer が手紙の上に閉じる直前・clock の針が影に溶ける直前・gate が開く直前・page がめくれる直前 等）。末尾に §5.3 `[STYLE]` ＋ `Avoid:` §5.4 `[NEG]`（人物種は `[HSTYLE]`/`[HNEG]`）を全文連結。**★R3++ 2026-07-26: M01_src..M42_src の全42行を literal 化済み（穴なし）。★18本の人物種（M04/M06/M07/M09/M10/M13/M14/M16/M19/M20/M22/M23/M24/M25/M33/M34/M36/M37＝§5.11 H001–H018 の poised 版）は `[HSTYLE]`/`[HNEG]`、残り24本の抽象/象徴種は `[STYLE]`/`[NEG]`。そのまま転記する。**
 
 ```
 - `M01_src.png`
 A typed letter under a single cold fluorescent green-gray edge of light in near-black, held still and poised a moment before a shadow slides across it, every word an unreadable smear, restraint, no person, no readable text [STYLE] Avoid: [NEG]
 - `M02_src.png`
 A dark institutional file drawer poised just above a typed page, held motionless a breath before it slides shut and buries it, cold green-gray light, no person, no readable text [STYLE] Avoid: [NEG]
+- `M03_src.png`
+The South Side skyline at night seen from a high rooftop, sodium points and dark blocks under slow low cloud, the air poised as if the whole city is holding one breath, cold green-gray foreground, no people, no readable text [STYLE] Avoid: [NEG]
+- `M04_src.png`
+A single broad-shouldered anonymized commander stand-in seen only from behind at the head of a dark 1980s squad room, poised motionless as the fluorescent tubes flicker toward full brightness, back-lit green-gray so no face reads, institutional authority about to turn and never doing so, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 - `M05_src.png`
 The small dark hand-cranked device with two thin wires inert in deep shadow on an empty steel table, a faint rust tone, held poised as if the room itself is waiting, connected to nothing, no person, no readable text [STYLE] Avoid: [NEG]
+- `M06_src.png`
+Three anonymized detectives seen from behind at the mouth of a dim precinct corridor at midnight, mid-stride and about to pass under the last working light, coats swinging slightly, cigarette smoke trailing, 1980s, no faces, no violence, no readable text [HSTYLE] Avoid: [HNEG]
+- `M07_src.png`
+A young anonymized military policeman stand-in seen from behind at the edge of a 1960s base camp at dusk, helmet silhouette against a fading sky, poised in the moment before turning in, humid air thick with light, no face, no combat, no violence, no readable text [HSTYLE] Avoid: [HNEG]
+- `M08_src.png`
+Dark interlocking gears holding a sheet of typed paper at the bite point, poised a tooth's width from turning, green-gray rim light on oiled metal, the confession machine an instant before it moves, page a smear, no person, no readable text [STYLE] Avoid: [NEG]
+- `M09_src.png`
+A dignified anonymized Black man standing upright in a narrow shaft of cold institutional light, a backlit silhouette from behind, utterly still as dust begins to drift through the beam, composed and unbroken, no face, no distress pose, no readable text [HSTYLE] Avoid: [HNEG]
+- `M10_src.png`
+Anonymized detective's hands hovering over the keys of a manual typewriter under one cold desk lamp, seen over the shoulder, poised the instant before the strike, the page in the platen a smear, no face in frame, no readable text [HSTYLE] Avoid: [HNEG]
+- `M11_src.png`
+A cast-iron radiator in a completely empty interview room, a thin wisp of steam hanging almost motionless above it, one cold fluorescent edge and a faint shiver in the air, aftermath waiting to exhale, no person, no readable text [STYLE] Avoid: [NEG]
+- `M12_src.png`
+An empty jail intake corridor with a steel gate ajar, a fluorescent tube caught mid-flicker between dark and green-gray light, floor gleam poised to vanish, no person, no readable text [STYLE] Avoid: [NEG]
+- `M13_src.png`
+An anonymized doctor stand-in in a white coat seen from behind at a jail infirmary desk at night, pen poised above the letter's final line, the page a smear beneath the single lamp, conscience an instant from finishing, no face, no patient, no readable text [HSTYLE] Avoid: [HNEG]
+- `M14_src.png`
+A typed letter held mid-pass between two pairs of anonymized hands across a vast dark official desk, both figures cropped to sleeves and shadow, the page a smear trembling slightly in the exchange, procedure about to swallow an alarm, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `M15_src.png`
+A wide dim executive office, a heavy drawer on the far desk caught a finger's width from closed with the last white sliver of a letter still showing, cold window light, burial one breath from complete, no person, no readable text [STYLE] Avoid: [NEG]
+- `M16_src.png`
+An anonymized reporter stand-in seen from behind in a dark 1990 newsroom, hands lifted off the typewriter mid-sentence, the lamp buzzing, drafts in unreadable smears, poised between two words nobody will heed, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `M17_src.png`
+The pages of a thick bound internal report caught mid-riffle under a cold raking light, each leaf an unreadable smear frozen in the air, the department's own finding about to fall shut, no person, no readable text [STYLE] Avoid: [NEG]
+- `M18_src.png`
+The small dark hand-cranked device inert on a courtroom evidence table, dust hanging poised in the single shaft of light above it, wires coiled and attached to nothing, the room silent around an object about to be seen by jurors, no person, no readable text [STYLE] Avoid: [NEG]
+- `M19_src.png`
+A broad anonymized man in civilian clothes seen from behind mid-stride away from a stone institutional building, a cardboard box in his arms, grey daylight flat around him, the door still swinging faintly behind, fired and walking, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `M20_src.png`
+An anonymized man seen from far behind stepping onto a warm Florida dock toward a moored cabin cruiser at golden dusk, one foot lifted mid-step, water light flickering, impunity in motion, no face, no readable boat name, no readable text [HSTYLE] Avoid: [HNEG]
 - `M21_src.png`
 A large institutional wall clock in near-black, its hands a moment from dissolving into shadow, a cold fluorescent edge raking the dial, time about to run out, no readable numerals, no person [STYLE] Avoid: [NEG]
+- `M22_src.png`
+Dignified anonymized Black men standing far apart and upright in a bare prison yard in flat winter light, seen only from behind, a slow wind poised in their coats, still and composed across stolen decades, non-sensational, no faces, no gore, no readable text [HSTYLE] Avoid: [HNEG]
+- `M23_src.png`
+Anonymized hands poised above a tiny manual typewriter on a cell desk, a fresh leaflet page a smear in the platen, the weak lamp trembling, resistance about to strike its next line, dignified, no face, no bars in frame, no readable text [HSTYLE] Avoid: [HNEG]
+- `M24_src.png`
+An anonymized older statesman stand-in seen from behind at a law-school podium, notes a smear on the lectern, the hall of shadowed listeners holding its breath, poised at the top of the sentence history is waiting for, no likeness of any real person, no readable text [HSTYLE] Avoid: [HNEG]
+- `M25_src.png`
+Four dignified anonymized Black men seen from behind at the threshold of an opening steel gate, cold January light widening across them, poised in the first instant of freedom, breath bright, upright and unhurried, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `M26_src.png`
+A tall stack of bound investigation reports beside one blank charge form on a dark desk, cold light, a single page of the stack lifting slightly as if in a draft, everything proven and nothing about to happen, all text smears, no person, no readable text [STYLE] Avoid: [NEG]
+- `M27_src.png`
+The stern wake of a cabin cruiser beginning to bloom across warm glittering gulf water, low sun flaring, the boat itself a soft bright shape pulling away, ease in motion, no people, no readable name, no readable text [STYLE] Avoid: [NEG]
+- `M28_src.png`
+A fountain pen poised a breath above a typed interrogatory page in a dim Florida study, lamplight on the nib, the sheet's questions a smear, the last instant in which nothing has been signed, no person, no readable text [STYLE] Avoid: [NEG]
+- `M29_src.png`
+Extreme macro of a pen nib touching the signature line, a bead of dark ink swelling and about to spread into the paper's fibers, the surrounding type a smear, cold light, a signature becoming evidence, no person, no readable text [STYLE] Avoid: [NEG]
+- `M30_src.png`
+A federal courthouse plaza in grey light, an empty microphone stand at the steps, a burst of flashbulb glare blooming in from off-frame and hanging in the air, stone columns towering, no people, no readable text [STYLE] Avoid: [NEG]
+- `M31_src.png`
+A jagged crack caught mid-spread across a dark abstract wall, cold light just beginning to pour through in two divergent beams, one dying against brick and one running clear, the legal fault line opening, no people, no readable text [STYLE] Avoid: [NEG]
+- `M32_src.png`
+Tall courtroom double doors a hand's width apart and opening, a widening blade of pale light crossing the dark corridor floor toward the camera, the verdict an instant from public, no people, no readable text [STYLE] Avoid: [NEG]
+- `M33_src.png`
+A dignified anonymized Black man at a federal witness stand seen from behind, a calm silhouette against tall cold windows, poised in the breath before the first answer of his life that will be believed, still and composed, no face, no readable text [HSTYLE] Avoid: [HNEG]
+- `M34_src.png`
+A courtroom gallery of anonymized figures seen from the back caught in the first instant of rising, shoulders lifting as one, a long-awaited verdict landing, restrained emotion, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `M35_src.png`
+A single plain envelope frozen mid-drop through a brass mail slot into a bright Florida hallway, palm shadow on the wall, its face a smear, the pension arriving again, no person, no readable text [STYLE] Avoid: [NEG]
+- `M36_src.png`
+Rows of dignified anonymized figures seen from behind in a grand city-council gallery, leaning a breath forward as the word is said on the floor below, warm light beginning to break into the cold palette, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+- `M37_src.png`
+An anonymized teacher stand-in seen from behind at the front of a morning classroom, one hand lifting toward the board, students only as soft out-of-focus shapes, warm schoolroom-morning light poised across the desks, the lesson about to begin, no identifiable child, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `M38_src.png`
 An open schoolbook on a classroom desk in warm early-morning light, one page lifted and poised mid-turn, dust motes hanging, the record about to be read, pages a soft unreadable smear, no person, no readable text [STYLE] Avoid: [NEG]
+- `M39_src.png`
+A dark wooden drawer front sliding open toward the camera, warm dawn light entering the gap and finding the typed letter inside, cold green-gray retreating at the frame's edges, the un-burial in motion, no person, no readable text [STYLE] Avoid: [NEG]
 - `M40_src.png`
 A typed 1982 letter and an open modern schoolbook aligned on one dark surface, the letter's edge beginning to catch the same warm morning light as the book, two eras a breath from dissolving into each other, all text an unreadable smear, no person [STYLE] Avoid: [NEG]
+- `M41_src.png`
+An empty morning classroom, dust motes hanging poised in a long gold sun shaft between the desk rows, the chalkboard soft beyond, the stillness before the first bell, no people, no readable text [STYLE] Avoid: [NEG]
+- `M42_src.png`
+The Chicago skyline before sunrise, towers night-dark, a first gold seam swelling along the horizon and about to break, still air over the lake, a quiet close, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
 ## 8.2 Wan 2.2 A14B の設定（★Known-good・この値を変えるな。`comfy_wan_morton.py` を下敷きにパスと SHOTS だけ差し替え）
@@ -1358,12 +2009,13 @@ EP55 の設計値: still 244/210=1.162(≤2) / factory 235/235=1.0(≤1) / motio
 
 # 13. 完了報告に含めるもの
 ```
-1. accepted 静止画の枚数と内訳（body 210 [＝object 153 ＋ ★HP human-present 57 = 27.1%] / i2v_source 42 [＝抽象 24 ＋ ★人物 18] / thumb_face 3 / F-series 12 / also_thumb 4 [§4.3a] / reject N）
+1. accepted 静止画の枚数と内訳（body 210 [＝object 125 ＋ ★HP human-present 85 = 40.5%] / i2v_source 42 [＝抽象 24 ＋ ★人物 18] / thumb_face 3 / F-series 12 / also_thumb 4 [§4.3a] / reject N）
 2. factory 選定 235本のリスト（asset_id / subtype / origin / eyeballed_content）と、subtype と食い違って外した本数、
    box/radiator/prison/letter クリップの「no readable text / no logo / no face / no torture-or-restraint imagery」確認、stock 由来の本数
 3. EP39〜EP54 重複ゼロの確認結果
 4. i2v 42本の frames / duration_sec と、SHORT? の有無、★H001–H018（18本）の匿名・非識別・adults-only・no-torture/restraint 確認、
-   ★HP body 57枚が匿名・非識別・実在 likeness なし・識別可能子供顔なし・サバイバー尊厳 pose の確認
+   ★HP body 85枚が匿名・非識別・実在 likeness なし・識別可能子供顔なし・サバイバー尊厳 pose・拷問/拘束/装置+人体ゼロ・
+   可読 signs/banners なし・★変化マトリクス（§5.6・被写体+構図+光の3要素同時一致ゼロ）の確認
 5. 合成レイヤー30本のリスト
 6. §0.4 の [A-DONE-1]〜[A-DONE-5] の実行結果（exit code）＋ factory 235/motion 42/overlay 30 が非空で実体化した確認 ＋ depth_path をどこにも生成していない確認
 7. §3.3 の検算 [1]〜[8] を自分で再計算した結果（avg-uses/source 1.156≤1.4 を含む）

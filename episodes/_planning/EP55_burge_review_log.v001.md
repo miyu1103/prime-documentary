@@ -149,6 +149,11 @@ PASS script_length: 4,814 words (need 3,973-5,309)
 ```
 **R3 判定: PASS — script_verified 確定。** EP15 Theranos 同様、公開前法務レビュー推奨の但し書きは維持（存命サバイバー多数・ただし全主張 court record/公式報告書ソース）。
 
+### R3+ 追記（2026-07-26・オーナー指示による CODEX_A/DESIGN 更新）
+**R3+ owner directive 2026-07-26: HP 57→85（28 rows converted: ACT1 S019, S020, S029, S030, S053 ／ ACT2 S059, S062, S070, S091, S099, S102 ／ ACT3 S108, S109, S110, S117, S120, S132, S137 ／ ACT4 S155, S156, S168, S174, S177, S185, S194 ／ ACT5 S206, S207, S208）, locked counts unchanged（still 210 / i2v 42 / thumb 3 / F 12 / factory 235 / overlay 30 / cuts 563・§3.3 検算不変）, variety matrix + Q4 clusters added（gallery 群衆・era protest/vigil 線・waiting/visiting 室・classroom 人物）, torture-gate re-verified（転換28行はすべて aftermath/waiting/witnessing/teaching・拘束/装置+人体/取調 distress ゼロ・BANNED_ACCURACY regex 全プロンプト非ヒット・spine-motif letter/box/drawer/radiator/clock と also_thumb 4枚は転換ゼロ）。** 新 lane math: object 125 ＋ ★HP 85 = 210（40.5%）。EP52 morton の「object→human 転換のみ・additive しない」パターンと同型。`check_planning_package.py 55 burge --require-r3` 再実行 PASS。
+
+**R3++ 2026-07-26: §5.6 expanded from motif-blocks to full literal per-shot prompts (owner anti-samey directive); counts unchanged**（S001–S210 全210行＋M01–M42 全42行＋F001–F012 全12行を literal 化・`check_prompt_diversity.py` 267 prompts PASS・HP 85行/S番号 enumeration/§3.3 検算/checksums 不変）。
+
 ## 申し送り（次工程）
 1. ElevenLabs マスター生成（Brian 正典設定固定）→ 実測 forced-align → durationInFrames 再ロック（DESIGN §5）。※課金はオーナー承認フロー準拠（ElevenLabs は standing approval 済・cost 記録継続）。
 2. CODEX_A（`EP55_burge_CODEX_A_ASSETS.v001.md`）で素材255枚+factory235+i2v42を発注。

@@ -263,15 +263,16 @@ Act 語数配分（実測）: ACT1 ~1220 / ACT2 ~1180 / ACT3 ~1100 / ACT4 ~1120�
 | 区間(act) | still（S番号・確定） | 内訳（object/★HP/★F） | factory（目安） | i2v（確定合計44） | thumb anchor |
 |---|---|---|---|---|---|
 | HOOK+OPENING (0) | **15**（S001–S015） | 15/0/0 | 12 | 3（M01–M03） | S001 |
-| ACT1「The Crime and the Choosing」(1) | **45**（S016–S060） | 32/11/2 | 42 | 7（M04–M10） | S028 |
-| ACT2「Trial, Reverse, Repeat」(2)（engine・最密） | **50**（S061–S110） | 31/16/3 | 45 | 9（M11–M19） | — |
-| ACT3「The Hung Years and the Liar」(3) | **45**（S111–S155） | 30/12/3 | 45 | 11（M20–M30） | S117 |
-| ACT4「The Ninth Inning」(4)（climax・cascade・最密②） | **40**（S156–S195） | 18/18/4 | 42 | 10（M31–M40） | S170 |
-| ENDING (5) | **15**（S196–S210） | 15/0/0 | 15 | 4（M41–M44） | — |
+| ACT1「The Crime and the Choosing」(1) | **45**（S016–S060） | 22/21/2 | 42 | 7（M04–M10） | S028 |
+| ACT2「Trial, Reverse, Repeat」(2)（engine・最密） | **50**（S061–S110） | 23/24/3 | 45 | 9（M11–M19） | — |
+| ACT3「The Hung Years and the Liar」(3) | **45**（S111–S155） | 25/17/3 | 45 | 11（M20–M30） | S117 |
+| ACT4「The Ninth Inning」(4)（climax・cascade・最密②） | **40**（S156–S195） | 15/21/4 | 42 | 10（M31–M40） | S170 |
+| ENDING (5) | **15**（S196–S210） | 13/2/0 | 15 | 4（M41–M44） | — |
 | 繋ぎ（covers_scene_id:null・act 1〜4 に配分） | — | — | 35 | — | — |
-| **合計** | **210** | **141/57/12** | **236** | **44** | **4** |
+| **合計** | **210** | **113/85/12** | **236** | **44** | **4** |
 
-> **still の per-act 数（15/45/50/45/40/15＝210）は確定**（§5 の motif ライブラリがこの配分で組まれている）。ACT2（trial/reverse エンジン）が最厚50、ACT4（numbers cascade）は climax で40＋★HP 最多18。**幕別の factory/i2v 内訳は目安値**（合計 236 / 44 のみ確定）。★人物3レーン（EP52 §5.13 の owner directive を本作はネイティブ実装）: **object/symbolic 141（[STYLE]/[NEG]）・★HP 匿名人物 57＝27%（[HSTYLE]/[HNEG]）・★F 可視の感情顔 12（[FSTYLE]/[FNEG]・非実在）**。
+> **still の per-act 数（15/45/50/45/40/15＝210）は確定**（§5 の motif ライブラリがこの配分で組まれている）。ACT2（trial/reverse エンジン）が最厚50＋★HP 最多24、ACT4（numbers cascade）は climax で40＋★HP 21。**幕別の factory/i2v 内訳は目安値**（合計 236 / 44 のみ確定）。★人物3レーン（EP52 §5.13 の owner directive を本作はネイティブ実装）: **object/symbolic 113（[STYLE]/[NEG]）・★HP 匿名人物 85＝40%（[HSTYLE]/[HNEG]）・★F 可視の感情顔 12（[FSTYLE]/[FNEG]・非実在）**。
+> **★R3+ owner directive 2026-07-26（「人間が映った画像は結構必要」・EP52 morton 前例と同型＝object→HP 転換のみ・additive しない・locked counts 不変）:** object 28行を ★HP に転換（HP 57→85）。転換行＝ACT1: S017/S018/S020/S021/S033/S034/S035/S045/S046/S047・ACT2: S062/S066/S068/S069/S071/S076/S078/S089・ACT3: S112/S114/S115/S118/S129・ACT4: S157/S158/S159・ACT5: S204/S206。**背骨 motif（tally strokes I–VI・strike cards・courthouse facade キーショット・four chairs・storefront of absence・also_thumb 4枚）は object のまま維持。** still 210 / i2v 44 / thumb 3 / factory 236 / overlay 30 / cuts 554 / §3.3 の検算はすべて不変。
 
 ## 3.3 全体の検算（★Codex は自分で再計算して一致を確認）
 
@@ -754,13 +755,20 @@ API:   http://127.0.0.1:7860（ローカル AUTOMATIC1111・課金なし）
 
 ## 5.2 ★210本の構成＝3レーン（EP52 §5.13 の owner directive をネイティブ実装）
 
-- **object/symbolic レーン（141枚）＝ `[STYLE]`+`[NEG]`（人物なし）:** counter tally・jury chairs・strike card・storefront of absence・four chairs・courthouse/prison・docket・waveform 等。
-- **★HP 匿名人物レーン（57枚＝27%）＝ `[HSTYLE]`+`[HNEG]`:** 背向き/影/silhouette/hands・adults only・非識別。該当 S-range は §5.6 で `★HP` と明記。
+- **object/symbolic レーン（113枚）＝ `[STYLE]`+`[NEG]`（人物なし）:** counter tally・jury chairs・strike card・storefront of absence・four chairs・courthouse/prison・docket・waveform 等。
+- **★HP 匿名人物レーン（85枚＝40%・R3+ owner directive 2026-07-26 で 57→85）＝ `[HSTYLE]`+`[HNEG]`:** 背向き/影/silhouette/hands・adults only・非識別。該当 S-range は §5.6 で `★HP` と明記。
+  **★HP 85枚の全数（機械照合用・[HSTYLE] 行数と一致すること）:**
+  ACT1×21 = S017 S018 S020 S021 S033 S034 S035 S045 S046 S047 S048 S049 S050 S051 S052 S053 S054 S055 S056 S057 S058 ／
+  ACT2×24 = S062 S066 S068 S069 S071 S076 S078 S089 S092 S093 S094 S095 S096 S097 S098 S099 S100 S101 S102 S103 S104 S105 S106 S107 ／
+  ACT3×17 = S112 S114 S115 S118 S129 S141 S142 S143 S144 S145 S146 S147 S148 S149 S150 S151 S152 ／
+  ACT4×21 = S157 S158 S159 S174 S175 S176 S177 S178 S179 S180 S181 S182 S183 S184 S185 S186 S187 S188 S189 S190 S191 ／
+  ACT5×2 = S204 S206 → **合計 85**。
+  **★anti-samey variety matrix（owner: 似たような画像を作らない・全85枚に適用）:** ①ショット距離（macro hands／medium／full／wide crowd／extreme long を混在）②ポーズ（seated/standing/walking/filing/reaching/sweeping/robing/singing/waiting）③アングル（frontal-silhouette/behind/side/overhead/high-corner/low）④年齢（elderly sweeper・grandmother hands・young researchers・mixed gallery）⑤wardrobe（apron/Sunday suit/choir robe/shirtsleeves/uniform/coats+hats）⑥lighting-per-act（ACT1 dust-gold 昼/朝/dusk・ACT2 oak warm+slate・ACT3 slate・ACT4 lamp gold+slate→blue・ACT5 morning blue）⑦setting（street/church/courtroom/records/prison/polling/marble）。**同一の subject+composition+lighting の組を2枚作らない**（例: 「backs at a table」は S145=陪審団クラスタ／S157=overhead 両手×2 のように必ず2軸以上ずらす）。近似が出たら §6.3 でプロンプトを直して再生成。phash 監視クラスタは §6.1 Q4。
 - **★F 可視感情顔レーン（12枚）＝ `[FSTYLE]`+`[FNEG]`（owner 2026-07-25 directive・§5.13）:** 非実在の見える感情顔（medium close-up 30–45%・dark cinematic 背景）。該当 S-range は §5.6 で `★F` と明記。
 - **HARD BAN（3レーン共通・不変）: 実在人物 likeness ゼロ・被害者/暴行/遺体/現場ゼロ・識別可能な未成年ゼロ・可読テキストゼロ・別容疑者示唆ゼロ。**
 - ★counter motif の注意: 画像内は**抽象の tally 状ストローク（彫り込まれた光の縦画）**まで。**読める Roman numeral のタイポは B が Remotion/AE で重ねる**（R-READABLE 保護）。
 
-## 5.3 共通スタイル `[STYLE]`（object/symbolic 141 ＋ 抽象 i2v 種に連結・DESIGN §1 と一字一致）
+## 5.3 共通スタイル `[STYLE]`（object/symbolic 113 ＋ 抽象 i2v 種に連結・DESIGN §1 と一字一致）
 
 ```
 , cinematic still, somber documentary grade, Mississippi July heat rendered in dust-gold key light as the dominant note, warm near-black ink institutional gravity, death-row slate gray-blue as the cold counter-note, a single pale free-air morning blue reserved only for release and ending beats, courtroom oak and small-town brick textures, dust motes hanging in light shafts, a furniture storefront rendered as quiet absence never any crime, four straight-back chairs one smaller as the victims held in dignity, an empty twelve-chair jury box as the film's battleground, an unreadable smeared name card with a heavy strike line as the mechanism image, carved tally strokes of light accumulating like a count, restrained dignified symbolism, telephoto compression and frontal composition, shallow depth of field, low-key deep-shadow lighting, clear and high-contrast never milky, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no watermark, no logo, symbolic still-life, no people, no visible face, backs and hands and objects only
@@ -774,7 +782,7 @@ API:   http://127.0.0.1:7860（ローカル AUTOMATIC1111・課金なし）
 text, words, letters, numbers, roman numeral typography, captions, watermark, logo, readable document, legible indictment, legible jury list, legible name card, legible newspaper, legible ballistics report, legible tally board, legible date, license plate, real celebrity, recognizable real person, identifiable face, portrait, mugshot, likeness of a specific person, human face, front-facing person, Curtis Flowers, Doug Evans, Odell Hallmon, Bertha Tardy, Derrick Stewart, James Bibbs, victim, murder victim, dead body, corpse, shot person, wounded person, assault, murder scene, crime scene tape, chalk outline of a body, violence, blood, gore, injury, gun firing, muzzle flash, pistol in hand, identifiable child, teenager's face, child's belongings at a crime scene, sexual content, nudity, re-enactment, cartoon, illustration, anime, 3d render, low quality, blurry, jpeg artifacts, deformed, extra limbs, warped, melting, electric blue, sodium prison gold, porch amber, teal-green hospital, crimson kitchen, forest-green, civil-violet, somber-plum, steel-cyan, forensic evidence-blue drawer, green van, blue bandana, milky haze, foggy wash, scanline, CRT texture, vignette wash
 ```
 
-> 文字/紙面が必要な絵は「blurred into an unreadable smear」で判読不能に。**被害者・暴行・遺体・凶器・現場・可読の偽公文書・別容疑者示唆を NEG で明示抑制。** この `[NEG]` は object 141 ＋ 抽象 i2v 種にのみ使う。**人物ビート（§5.11 H・§5.13 F・§5.12 thumb）には使わない**（人物を弾くため）。H は `[HNEG]`・F は `[FNEG]`・thumb は `[TNEG]`。
+> 文字/紙面が必要な絵は「blurred into an unreadable smear」で判読不能に。**被害者・暴行・遺体・凶器・現場・可読の偽公文書・別容疑者示唆を NEG で明示抑制。** この `[NEG]` は object 113 ＋ 抽象 i2v 種にのみ使う。**人物ビート（§5.11 H・§5.13 F・§5.12 thumb）には使わない**（人物を弾くため）。H は `[HNEG]`・F は `[FNEG]`・thumb は `[TNEG]`。
 
 ## 5.5 プロンプトの絶対ルール（210本すべてに適用）
 
@@ -837,20 +845,20 @@ Warm near-black ink field with six faint carved strokes barely visible in the de
 ```
 
 ### ACT 1 — THE CRIME AND THE CHOOSING（45枚・S016–S060）
-**front_street_1996 — 6 — S016–S021**（object）
+**front_street_1996 — 6 — S016–S021**（object 2: S016/S019・★HP 4: S017/S018/S020/S021 — Winona town life・R3+ 2026-07-26 転換）
 ```
 - `S016.png`
 A quiet 1996 Mississippi small-town main street in July midday heat, brick storefronts and awnings, dust-gold light and long shadows, a period sedan parked far away, no people, no readable signage, no readable text [STYLE] Avoid: [NEG]
 - `S017.png`
-Low angle on sun-bleached brick storefronts of a small Southern town, heat shimmer rising from the asphalt, dust-gold glare, 1990s stillness, no people, no readable signage, no readable text [STYLE] Avoid: [NEG]
+Anonymized townspeople as small sun-struck figures crossing a 1996 Mississippi main street at midday, seen from far down the block, summer hats and dresses rendered as distant non-identifiable shapes, dust-gold glare and long shadows, all backs and distance, no faces, no readable signage, no readable text [HSTYLE] Avoid: [HNEG]
 - `S018.png`
-A small-town crossroads under a wide white-hot Mississippi sky, a water tower distant, telephone lines sagging in the heat, dust-gold and ink shadows, no people, no readable text [STYLE] Avoid: [NEG]
+An anonymized shopkeeper in an apron seen squarely from behind cranking open a striped storefront awning in early 1990s morning light, warm gold rim on the shoulders, a water tower distant down the street, no face, no readable signage, no readable text [HSTYLE] Avoid: [HNEG]
 - `S019.png`
 A furniture store's display window seen from the sidewalk at a distance, sofas and lamps behind sun-struck glass, ordinary July commerce a moment before history, no people, no readable signage, no readable text [STYLE] Avoid: [NEG]
 - `S020.png`
-Morning light raking down a small-town side street, brick and shade and a mail collection box, southern summer quiet, dust in the air, no people, no readable text [STYLE] Avoid: [NEG]
+An anonymized elderly resident seen in full figure from behind sweeping the brick sidewalk in front of a small-town shop at morning, broom mid-stroke, long shadow down the side street, dust hanging in the raked light, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S021.png`
-The same small-town main street at first dark, storefront glass glowing faint warm gold, streetlamp halos in humid air, no people, no readable signage, no readable text [STYLE] Avoid: [NEG]
+Two anonymized neighbors standing in quiet conversation under a storefront awning at first dark, warm window glow and streetlamp halos wrapping their silhouettes, seen from across the street in humid July air, unhurried town life, no faces, no readable signage, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 **storefront_absence — 6 — S022–S027**（object・被害者/現場を一切描かない）
 ```
@@ -878,16 +886,16 @@ Four empty chairs seen from above at a gentle angle, arranged close as if in con
 - `S031.png`
 The four chairs in silhouette against a tall bright doorway of July light, dignity and absence, dust drifting, no people, no readable text [STYLE] Avoid: [NEG]
 ```
-**gospel_pew_light — 4 — S032–S035**（object）
+**gospel_pew_light — 4 — S032–S035**（object 1: S032・★HP 3: S033–S035 — gospel-choir silhouettes・R3+ 2026-07-26 転換）
 ```
 - `S032.png`
 A small wooden Mississippi Baptist church exterior in morning light, white clapboard against a wide sky, modest steeple, dust-gold warmth, no people, no readable signage, no readable text [STYLE] Avoid: [NEG]
 - `S033.png`
-Church pews in long shafts of warm morning light, dust motes hanging like held notes, worn wood polished by generations, no people, no readable text [STYLE] Avoid: [NEG]
+A gospel choir seen from the side of the choir loft as a row of robed anonymized silhouettes mid-hymn, faces lost to shadow and backlight, long shafts of warm morning light crossing the risers, worn pews below, no faces, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 - `S034.png`
-An open hymnal resting on a pew, its pages blurred into unreadable smears, warm dust-gold light across the paper, no legible characters, no people, no readable text [STYLE] Avoid: [NEG]
+A pair of anonymized weathered adult hands holding an open hymnal in a pew, pages blurred into unreadable smears, warm dust-gold light across paper and knuckles, hands only, no face, no legible characters, no readable text [HSTYLE] Avoid: [HNEG]
 - `S035.png`
-Choir robes hanging on hooks in a dim church back room, deep red-brown fabric in dust-gold edge light, music implied by stillness, no people, no readable text [STYLE] Avoid: [NEG]
+An anonymized choir member seen from behind pulling a deep red-brown robe over Sunday clothes in a dim church back room, mid-gesture, dust-gold edge light on the fabric and shoulders, no face, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 **thin_case_objects — 8 — S036–S043**（object・「証拠の薄さ」を象徴で・銃も route も断定しない）
 ```
@@ -908,16 +916,16 @@ A dark garment-factory parking lot seen from far across the asphalt at early mor
 - `S043.png`
 A car's side window in deep shadow at a distance, nothing visible within, the question of what was taken left unanswered, cold slate reflections, no person, no license plate, no readable text [STYLE] Avoid: [NEG]
 ```
-**town_split_frame — 4 — S044–S047**（object）
+**town_split_frame — 4 — S044–S047**（object 1: S044・★HP 3: S045–S047 — 分断の町を人で・R3+ 2026-07-26 転換・dignity 必須/caricature 禁止）
 ```
 - `S044.png`
 Railroad tracks running straight through a small Mississippi town, one side in warm dust-gold light and the other fallen into cold slate shadow, a town divided by a line, no people, no readable text [STYLE] Avoid: [NEG]
 - `S045.png`
-A small-town street split down the middle of frame by hard light, warm brick on one side, cold gray on the other, July heat over both, no people, no readable text [STYLE] Avoid: [NEG]
+Two small groups of anonymized townspeople on opposite sidewalks of one small-town street, all backs and distant non-identifiable shapes, one sidewalk in warm dust-gold light and the other in cold slate shadow, the divide rendered in people and light with dignity, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S046.png`
-Two modest church steeples at opposite ends of a wide small-town skyline at dusk, the same sky over both, distance between them palpable, no people, no readable text [STYLE] Avoid: [NEG]
+Two small congregations of anonymized figures dispersing outside two modest churches at opposite ends of a wide small-town street at dusk, seen from very far as warm silhouette clusters under one shared sky, no faces, no readable signage, no readable text [HSTYLE] Avoid: [HNEG]
 - `S047.png`
-Heat shimmer over an empty main street at noon making the far end of town waver like a mirage, dust-gold glare, division rendered as distortion, no people, no readable text [STYLE] Avoid: [NEG]
+Distant anonymized figures on a small-town main street at noon wavering in rising heat shimmer like mirages, forms bent by hot air into unreadable shapes, dust-gold glare, division rendered as distortion, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 **★HP investigators_choosing — 4 — S048–S051**
 ```
@@ -959,12 +967,12 @@ F02: a photoreal generic investigator's hard, already-decided face in half shado
 ```
 
 ### ACT 2 — TRIAL, REVERSE, REPEAT（50枚・S061–S110・engine・最密）
-**courthouse_exteriors — 6 — S061–S066**（object）
+**courthouse_exteriors — 6 — S061–S066**（object 4: S061/S063–S065・★HP 2: S062/S066 — gallery crowds・R3+ 2026-07-26 転換。facade キーショット S061/S063/S065 は object のまま）
 ```
 - `S061.png`
 A Mississippi county courthouse with white columns under hard July light, oak trees and a still lawn, dust-gold and deep shade, institutional permanence, no people, no readable signage, no readable text [STYLE] Avoid: [NEG]
 - `S062.png`
-Courthouse steps rising toward heavy doors in raking afternoon light, every edge sharp, the climb rendered monumental, no people, no readable text [STYLE] Avoid: [NEG]
+A crowd of anonymized townspeople seen entirely from behind gathered on courthouse steps waiting for word, hats held in hands, raking afternoon light throwing their long shadows up the stairs, trial day as a town event, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S063.png`
 A different small-city courthouse facade at morning, flags limp in the heat, long shadows across concrete, venue changed but the architecture identical in spirit, no people, no readable signage, no readable text [STYLE] Avoid: [NEG]
 - `S064.png`
@@ -972,24 +980,24 @@ A courthouse clock tower against a bleached summer sky, hands readable as shapes
 - `S065.png`
 A Gulf Coast courthouse exterior with palms at frame edge, brighter flatter light, the road-show of venues, no people, no readable signage, no readable text [STYLE] Avoid: [NEG]
 - `S066.png`
-Heavy oak courtroom doors seen from a dim marble hallway, one door ajar on warm light within, threshold of the machine, no people, no readable text [STYLE] Avoid: [NEG]
+A quiet line of anonymized townspeople seen from behind queuing at heavy oak courtroom doors in a dim marble hallway, one door ajar on warm light within, the threshold of the machine with the town waiting at it, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 ```
-**courtroom_oak — 6 — S067–S072**（object）
+**courtroom_oak — 6 — S067–S072**（object 3: S067/S070/S072・★HP 3: S068/S069/S071 — 法廷ベンチと傍聴席・R3+ 2026-07-26 転換）
 ```
 - `S067.png`
 An empty 1990s Southern courtroom in warm oak and dust-gold window light, benches and rail and bar all silent, frontal symmetry, no people, no readable text [STYLE] Avoid: [NEG]
 - `S068.png`
-The witness stand empty in a single shaft of pale light, worn oak arm rails, the chair where the whole case will sit, no people, no readable text [STYLE] Avoid: [NEG]
+An anonymized witness stand-in seated small and distant in the witness chair, seen from the far end of the gallery, face lost entirely to distance and shadow, one pale shaft of light on the worn oak rails and dust hanging in it, the chair the whole case sits on, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 - `S069.png`
-A defense table with two empty chairs in cold slate light while the rest of the courtroom holds warm gold, isolation rendered in color, no people, no readable text [STYLE] Avoid: [NEG]
+Two anonymized figures seated side by side at the defense table seen squarely from behind, one suited and one in shirtsleeves, upright and motionless in a cold slate pool of light while the courtroom around them holds warm gold, isolation rendered in color, no faces, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 - `S070.png`
 The judge's bench looming empty in dim light, dark oak mass against a pale wall, authority as furniture, no people, no readable text [STYLE] Avoid: [NEG]
 - `S071.png`
-Rows of empty gallery benches receding in warm shadow, the town's seats, dust in the window light, no people, no readable text [STYLE] Avoid: [NEG]
+Gallery benches filled with anonymized spectators seen from a high rear corner of the courtroom, rows of hats, gray hair and Sunday collars receding into warm shadow, mixed ages rendered non-identifiable, dust in the window light, the town's seats taken, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S072.png`
 Extreme close on courtroom oak grain scarred by decades of use, one bright line of dust-gold light across it, texture as history, no people, no readable text [STYLE] Avoid: [NEG]
 ```
-**jury_box_maps — 6 — S073–S078**（object・陪審構成は台帳値のみ＝12-0/11-1）
+**jury_box_maps — 6 — S073–S078**（object 4: S073–S075/S077＝光の算術は不変・★HP 2: S076/S078 — anonymous jurors・R3+ 2026-07-26 転換。陪審構成は台帳値のみ＝12-0/11-1・人物側には数の配分を描かない）
 ```
 - `S073.png`
 Twelve empty jury chairs all lit the same flat pale white-gold, uniformity as an argument, frontal scoreboard composition, no people, no readable text [STYLE] Avoid: [NEG]
@@ -998,11 +1006,11 @@ Twelve empty jury chairs with exactly one chair fallen into cold slate shadow wh
 - `S075.png`
 Close on the single shadowed jury chair among lit ones, its emptiness heavier than the rest, slate against dust-gold, no people, no readable text [STYLE] Avoid: [NEG]
 - `S076.png`
-The jury box seen from the gallery at a low angle, rail and chairs in half light, the most contested twelve seats in Mississippi, no people, no readable text [STYLE] Avoid: [NEG]
+Twelve anonymized jurors seated in the jury box seen from the gallery at a low angle, still non-identifiable shapes of shoulders and hair behind the oak rail, varied postures under even dust-gold window light, the most contested twelve seats in Mississippi, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S077.png`
 The jury-box door standing narrowly ajar in dim oak shadow, light through the gap growing thinner, access itself as the image, no people, no readable text [STYLE] Avoid: [NEG]
 - `S078.png`
-Twelve chairs reflected and doubled in dark polished oak, seatings repeating like trials, abstract symmetry, no people, no readable text [STYLE] Avoid: [NEG]
+A line of anonymized Black and white jurors filing into the jury box, a dignified procession of backs and shoulders seen from behind the last chair, faint motion blur in the nearest figure, oak half-light, the seating that decides everything, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 **strike_mechanism — 5 — S079–S083**（object）
 ```
@@ -1028,12 +1036,12 @@ A third carved stroke shattering into slate shards that hang suspended, the stro
 - `S087.png`
 Fine gold dust falling from a cracked stroke of light onto dark oak below, a sentence reduced to residue, macro, abstract, no people, no readable text [STYLE] Avoid: [NEG]
 ```
-**reserve_counts — 4 — S088–S091**（object）
+**reserve_counts — 4 — S088–S091**（object 3: S088/S090/S091・★HP 1: S089・R3+ 2026-07-26 転換）
 ```
 - `S088.png`
 Four plain case folders in a dim drawer, one pulled halfway out into dust-gold light while three wait in shadow, the counts held in reserve, unreadable labels, no people, no readable text [STYLE] Avoid: [NEG]
 - `S089.png`
-A courthouse records room of tall shelves and boxed files in deep shadow, one aisle lit cold slate, decades of paper, no people, no readable text [STYLE] Avoid: [NEG]
+An anonymized courthouse clerk's back pushing a cart of boxed files down a tall records-room aisle, one cold slate strip of light overhead, decades of paper looming on either side, the machine's stagehand, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S090.png`
 A drawer of docket ledgers with spines blurred to unreadable smears, one thin band of warm light across them, no legible characters, no people, no readable text [STYLE] Avoid: [NEG]
 - `S091.png`
@@ -1088,33 +1096,33 @@ An anonymized man's back seated alone on a bench in a bare holding room, shoulde
 - `S108.png`
 F03: a photoreal generic Southern prosecutor-archetype face, stern and certain at a podium, cold eyes past camera, medium close-up about thirty-five percent of frame height, hard key light and rim against dark oak blur, resembling no real individual and explicitly not any real district attorney, adults only [FSTYLE] Avoid: [FNEG]
 - `S109.png`
-F04: a photoreal generic juror's uncertain face in the box, doubt held in the brow, eyes down and away, medium close-up about thirty percent of frame height, warm key against slate blur, resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
+F04: a photoreal generic middle-aged woman juror's uncertain face in three-quarter profile in the box, doubt held in the brow, eyes down and away, tight close-up about a quarter of frame height set off-center left, cool slate key with a faint warm fill, resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
 - `S110.png`
-F05: a clearly illustrative semi-painterly face of a generic wrongly accused everyman behind courtroom rail light, dread and endurance, medium close-up about forty percent of frame height, dramatic key and rim, unmistakably a painted illustration resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
+F05: a clearly illustrative semi-painterly face of a generic wrongly accused young everyman in his late twenties, frontal under a harsh top light behind the courtroom rail, dread held in the set of the jaw, large close-up about sixty percent of frame height, deep shadow pooled under the brow, unmistakably a painted illustration resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
 ```
 
 ### ACT 3 — THE HUNG YEARS AND THE LIAR（45枚・S111–S155）
-**parchman_slate — 7 — S111–S117**（object・S117 は also_thumb）
+**parchman_slate — 7 — S111–S117**（object 4: S111/S113/S116/S117・★HP 3: S112/S114/S115 — death-row corridor figures／visitation・family waiting・R3+ 2026-07-26 転換。S117 は also_thumb＝object 不変）
 ```
 - `S111.png`
 A flat Mississippi prison complex seen from far across bare farmland, low buildings under an enormous slate sky, non-sensational and still, no people, no gore, no readable text [STYLE] Avoid: [NEG]
 - `S112.png`
-Razor-wire fence line receding to the horizon in cold slate light, kept at distance, geometry not menace, no people, no readable text [STYLE] Avoid: [NEG]
+An anonymized corrections officer as a tiny distant silhouette walking the razor-wire fence line under an enormous slate sky, kept very far, geometry and scale over menace, non-sensational, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S113.png`
 A single cell window as a pale slate rectangle in a dark wall, light without view, the row rendered as an aperture, no people, no readable text [STYLE] Avoid: [NEG]
 - `S114.png`
-A long empty prison corridor in slate gray, doors repeating into dark, institutional infinity, non-sensational, no people, no readable text [STYLE] Avoid: [NEG]
+An anonymized guard seated motionless at a small desk at the far end of a long slate death-row corridor, a single caged bulb above him, doors repeating into dark toward the camera, stillness as the job, institutional infinity, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S115.png`
-An empty concrete prison yard at midday under white glare, one thin shadow line across it, stillness at scale, no people, no gore, no readable text [STYLE] Avoid: [NEG]
+Anonymized family members seated waiting on a bench in a bare prison visitation waiting room, a grandmother's folded hands and a man's bowed shoulders seen from behind, coats on laps, slate light through wired glass, patience measured in years, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S116.png`
 The same cell window rectangle with its light shifted from winter slate to thin summer gold, a year passing in color temperature alone, no calendar, no people, no readable text [STYLE] Avoid: [NEG]
 - `S117.png`
 A slate death-row cell window with the faint trace of many seasons crossing it at once, layered light like sediment, twenty-three years rendered as one quiet aperture, no person, no calendar, no readable text [STYLE] Avoid: [NEG]
 ```
-**deadlock_faultsplit — 5 — S118–S122**（object・7-5/9-3 は光の配分のみ）
+**deadlock_faultsplit — 5 — S118–S122**（object 4: S119–S122＝7-5/9-3 の光の算術は不変・★HP 1: S118 — family waiting・R3+ 2026-07-26 転換）
 ```
 - `S118.png`
-An empty jury deliberation room, a long oak table with chairs pushed back unevenly, half the room in warm gold and half in cold slate, a line of tension down the middle, no people, no readable text [STYLE] Avoid: [NEG]
+An anonymized family group standing close together at the far end of a marble courthouse hallway during deliberations, seen from very far as one tight warm silhouette cluster against a tall window, arms held, the wait rendered as distance, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S119.png`
 Twelve empty chairs around a table with seven caught in warm light and five in cold slate shadow, the deadlock rendered exactly, no people, no readable text [STYLE] Avoid: [NEG]
 - `S120.png`
@@ -1135,14 +1143,14 @@ The lone spotlit chair seen from high above, a small bright island in institutio
 - `S126.png`
 The chair returned to the jury box but left slightly out of line, its light gone slate, a message left in furniture, no people, no readable text [STYLE] Avoid: [NEG]
 ```
-**trial6_clock — 4 — S127–S130**（object）
+**trial6_clock — 4 — S127–S130**（object 3: S127/S128/S130・★HP 1: S129・R3+ 2026-07-26 転換）
 ```
 - `S127.png`
 A courtroom wall clock in dim oak shadow, its hands soft unreadable shapes barely moved, half an hour rendered as almost nothing, no numerals legible, no people, no readable text [STYLE] Avoid: [NEG]
 - `S128.png`
 A thin wedge of window light crossing a courtroom floor like a sundial's half-hour, oak and dust, time as the only witness, no people, no readable text [STYLE] Avoid: [NEG]
 - `S129.png`
-Heavy oak courtroom doors closing, the gap of warm light between them narrowing to a blade, finality in motion, no people, no readable text [STYLE] Avoid: [NEG]
+Two anonymized bailiffs' hands and forearms pushing the heavy oak courtroom doors closed from inside, the gap of warm light narrowing to a blade across their knuckles, finality as a gesture, hands only, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S130.png`
 A sixth carved stroke of dust-gold light searing in fast beside five older scarred ones, the count completed, abstract, no letterforms, no people, no readable text [STYLE] Avoid: [NEG]
 ```
@@ -1211,7 +1219,7 @@ Anonymized hands holding a small recorder toward ribbed glass, journalist's note
 **★F visible_faces_act3 — 3 — S153–S155**
 ```
 - `S153.png`
-F06: a clearly illustrative semi-painterly face of a generic man behind prison visitation glass, years etched into it, endurance and grief, medium close-up about forty percent of frame height, slate key with warm rim, unmistakably an illustration resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
+F06: a clearly illustrative semi-painterly face of a generic man in his fifties seen in forty-five-degree profile through prison visitation glass, years etched into it, grief without theater, a fluorescent strip reflected across the pane bisecting the composition, medium shot about a third of frame height right of center, cold green-gray key, unmistakably an illustration resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
 - `S154.png`
 F07: a clearly illustrative semi-painterly face of a generic lone holdout juror, frightened but resolute, chin lifted, medium close-up about thirty-five percent of frame height, one hard spotlight key against darkness, unmistakably an illustration resembling no real individual and not any real juror, adults only [FSTYLE] Avoid: [FNEG]
 - `S155.png`
@@ -1219,16 +1227,16 @@ F08: a photoreal generic radio journalist's intent listening face lit by a conso
 ```
 
 ### ACT 4 — THE NINTH INNING（40枚・S156–S195・climax・cascade）
-**docket_books — 4 — S156–S159**（object）
+**docket_books — 4 — S156–S159**（object 1: S156・★HP 3: S157–S159 — the count built by hands・R3+ 2026-07-26 転換）
 ```
 - `S156.png`
 A courthouse storeroom of tall shelves stacked with old docket books and boxes, dust hanging in one gold shaft, the raw material of the count, unreadable spines, no people, no readable text [STYLE] Avoid: [NEG]
 - `S157.png`
-An open docket ledger with columns blurred into unreadable smears, page edges browned, one warm light bar across it, no legible characters, no people, no readable text [STYLE] Avoid: [NEG]
+Two pairs of anonymized hands at opposite sides of a huge open docket ledger seen from directly above, one finger tracing a smeared column while the other pair steadies a small recorder, browned pages blurred unreadable, warm lamp light, no faces, no legible characters, no readable text [HSTYLE] Avoid: [HNEG]
 - `S158.png`
-Dozens of bankers boxes of juror records stacked in a dim aisle, labels smeared unreadable, a quarter-century of paper, dust-gold edge light, no people, no readable text [STYLE] Avoid: [NEG]
+An anonymized archivist's back carrying a heavy bankers box of juror records down a dim aisle of stacked boxes, dust swirling in one gold shaft ahead, labels smeared unreadable, a quarter-century of paper, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S159.png`
-Loose index cards fanned across a table in slate light, every one an unreadable smear, raw data before the count, no legible characters, no people, no readable text [STYLE] Avoid: [NEG]
+Anonymized researchers' hands with sleeves rolled sorting loose index cards into piles across a work table in slate lamplight, every card an unreadable smear, the count being built by hand, no faces, no legible characters, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 **data_ignites — 4 — S160–S163**（object・数字は描かない＝抽象バーのみ）
 ```
@@ -1321,16 +1329,16 @@ An empty small-town polling hall after closing, folded chairs and one unreadable
 **★F visible_faces_act4 — 4 — S192–S195**
 ```
 - `S192.png`
-F09: a clearly illustrative semi-painterly face of a generic freed man at a gate in thin morning-blue light, disbelief melting into relief, eyes wet and lifted, medium close-up about forty percent of frame height, unmistakably an illustration resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
+F09: a clearly illustrative semi-painterly face of a generic freed man with gray-streaked hair tilted up toward the open sky at a gate in thin morning-blue light, disbelief melting into relief, eyes wet and lifted, low-angle close-up about half of frame height, wind lifting the collar, unmistakably an illustration resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
 - `S193.png`
-F10: a photoreal generic courtroom spectator's face streaked with quiet tears of relief, hand at mouth, medium close-up about thirty percent of frame height, warm key against dark gallery blur, resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
+F10: a photoreal generic elderly woman spectator's tear-streaked face caught over a stranger's shoulder in the gallery, hand pressed to her mouth, small in the frame about a fifth of frame height and low, dim cool gallery with a single warm practical glow behind her, resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
 - `S194.png`
 F11: a photoreal generic small-town voter's face at dusk, quiet resolve after a long decision, weathered features, medium close-up about thirty percent of frame height, cool dusk key with warm porch rim, resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
 - `S195.png`
 F12: a photoreal generic young Black prospective juror's composed, dignified face in half light, the seat finally kept, calm direct gaze near camera, medium close-up about thirty-five percent of frame height, dust-gold key and clean rim against dark oak blur, resembling no real individual, adults only [FSTYLE] Avoid: [FNEG]
 ```
 
-### ACT 5 — ENDING（15枚・S196–S210・全て object・the count that never resolves）
+### ACT 5 — ENDING（15枚・S196–S210・object 13 ＋ ★HP 2（S204/S206・R3+ 2026-07-26 転換）・the count that never resolves）
 **four_chairs_return — 4 — S196–S199**
 ```
 - `S196.png`
@@ -1353,14 +1361,14 @@ The row of strokes fading at their edges but refusing to disappear, warm near-bl
 - `S203.png`
 One last single stroke of light remaining as the others sink into dark, the unanswered question as a lone mark, abstract, no people, no readable text [STYLE] Avoid: [NEG]
 ```
-**gospel_morning — 4 — S204–S207**
+**gospel_morning — 4 — S204–S207**（object 2: S205/S207・★HP 2: S204/S206 — singing again・R3+ 2026-07-26 転換）
 ```
 - `S204.png`
-A church window at dawn pouring pale morning-blue and thin gold light across empty pews, the thread the state could not take, no people, no readable text [STYLE] Avoid: [NEG]
+A gospel choir of anonymized robed figures standing in the choir loft at dawn rehearsal, seen from the empty pews below as dark warm silhouettes against a tall window pouring pale morning-blue and thin gold light, singing again, the thread the state could not take, no faces, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 - `S205.png`
 An open hymnal on a pew in morning light, pages stirring slightly as if breathed on, blurred unreadable, no legible characters, no people, no readable text [STYLE] Avoid: [NEG]
 - `S206.png`
-A small white church against a huge clean morning-blue Mississippi sky, dawn gold at its edge, quiet endurance, no people, no readable signage, no readable text [STYLE] Avoid: [NEG]
+A handful of anonymized churchgoers seen from far behind crossing a dirt churchyard toward a small white church at dawn, long coats and Sunday hats against a huge clean morning-blue sky, dawn gold at the treeline, quiet endurance, no faces, no readable signage, no readable text [HSTYLE] Avoid: [HNEG]
 - `S207.png`
 A dirt road running toward a soft blue morning horizon, mist low over the fields, a road that finally leads somewhere, no people, no readable text [STYLE] Avoid: [NEG]
 ```
@@ -1377,14 +1385,16 @@ Fine gold dust settling slowly through a last shaft of morning light onto dark o
 ## 5.7 幕別 motif 枚数の検算（★Codex は書き終えたら足して確認）
 
 ```
-ACT0  : 6+3+3+3 = 15
-ACT1  : 6+6+4+4+8+4 (object 32) + 4+3+4 (★HP 11) + 2 (★F) = 45
-ACT2  : 6+6+6+5+4+4 (object 31) + 4+5+3+4 (★HP 16) + 3 (★F) = 50
-ACT3  : 7+5+4+4+5+3+2 (object 30) + 4+4+4 (★HP 12) + 3 (★F) = 45
-ACT4  : 4+4+4+3+3 (object 18) + 4+3+4+7 (★HP 18) + 4 (★F) = 40
-ACT5  : 4+4+4+3 = 15
+（R3+ owner directive 2026-07-26: object→★HP 28行転換後の per-act 内訳）
+ACT0  : 6+3+3+3 = 15（all object）
+ACT1  : 2+6+4+1+8+1 (object 22) + [4+3+3 転換] + 4+3+4 (★HP 21) + 2 (★F) = 45
+ACT2  : 4+3+4+5+4+3 (object 23) + [2+3+2+1 転換] + 4+5+3+4 (★HP 24) + 3 (★F) = 50
+ACT3  : 4+4+4+3+5+3+2 (object 25) + [3+1+1 転換] + 4+4+4 (★HP 17) + 3 (★F) = 45
+ACT4  : 1+4+4+3+3 (object 15) + [3 転換] + 4+3+4+7 (★HP 21) + 4 (★F) = 40
+ACT5  : 4+4+2+3 (object 13) + 2 (★HP: S204/S206) = 15
 合計   : 15+45+50+45+40+15 = 210 ✓
-lane  : object 141 + ★HP 57 (27.1%) + ★F 12 = 210 ✓
+lane  : object 113 + ★HP 85 (40.5%) + ★F 12 = 210 ✓
+★HP 85 の全数リストは §5.2（[HSTYLE] の行数＝85 と一致すること）
 ```
 > **S001..S210 の連番が穴なく210行**そろっていることを `--only S001` の `shots=257`（210 body + 44 i2v種 + 3 thumb_face）で確認する。
 
@@ -1414,7 +1424,7 @@ lane  : object 141 + ★HP 57 (27.1%) + ★F 12 = 210 ✓
 ```
 > QC で落ちたシーンの再生成は `--only S###`（同じプロンプトで別シードを1枚）。**基準を下げない・水増ししない。**
 
-## 5.11 ★匿名人物 style（★HP body 57枚 ＋ 人物 i2v 種 18本 に共通）— `[HSTYLE]`/`[HNEG]`
+## 5.11 ★匿名人物 style（★HP body 85枚 ＋ 人物 i2v 種 18本 に共通）— `[HSTYLE]`/`[HNEG]`
 
 > **実在人物（Flowers/Evans/Hallmon/被害者/Bibbs/Baran/判事/州司法長官/候補者）の likeness を作らない。** 実在人物が示唆される所は顔を非識別（背向き/横顔を影に/逆光シルエット/目から下クロップ/浅い被写界深度・**adults only**）。**被害者・暴行・殺害・遺体を絶対に描かない。16歳 Derrick Stewart を人物として出さない（椅子の象徴のみ）。**
 > **★人物 i2v 種 18本（H001–H018）は「新規カット」ではなく §4.5 の M04/M06/M08/M10/M12/M14/M16/M18/M19/M21/M23/M26/M28/M30/M32/M35/M38/M40 の中身**（44 i2v の内数・additive しない・locked counts 不変）。各 H の内容は §4.5 の tags と §8.1a のプロンプトで確定済み。
@@ -1482,7 +1492,7 @@ Files = §5.6 の `★F` 行（S059/S060・S108–S110・S153–S155・S192–S1
 | Q1 | 解像度 | `max(w,h)>=3840` | reject |
 | Q2 | サイズ/開ける | `>1024 bytes` かつ PIL で開ける | reject |
 | Q3 | 平均輝度 | `18.0<=mean_luma<=225.0`（warm near-black ＋ slate の低照度が多い→黒潰れ注意） | reject |
-| Q4 | 近似重複 | 全ペア phash。類似度 `>=0.90` は片方 reject。**衝突は tally strokes(S001–S006/S084–S087/S130/S173/S200–S203)・jury chairs(S007–S009/S073–S078/S119/S122/S209)・strike cards(S010–S012/S079–S083/S168–S170)・four chairs(S028–S031/S196–S199)・courthouse(S061–S066)・cell window(S113/S116/S117) の被りに注意** | 片方 reject＋プロンプト見直し |
+| Q4 | 近似重複 | 全ペア phash。類似度 `>=0.90` は片方 reject。**衝突は tally strokes(S001–S006/S084–S087/S130/S173/S200–S203)・jury chairs(S007–S009/S073–S075/S077/S119/S122/S209)・strike cards(S010–S012/S079–S083/S168–S170)・four chairs(S028–S031/S196–S199)・courthouse(S061/S063–S065) の被りに注意。★HP クラスタ（R3+ 2026-07-26 追加・85枚の anti-samey 監視）: choir/congregation(S033/S035/S052–S054/S204/S206)・gallery/steps crowds(S062/S066/S071/S096/S097/S100/S179/S182)・jury figures(S076/S078/S145/S147)・corridor/institutional figures(S050/S056/S089/S102/S104/S114/S118)・waiting families(S115/S118/S176/S182)・town life(S017/S018/S020/S021/S045/S046/S047/S174)・hands closeups(S034/S049/S051/S095/S103/S129/S142/S146/S152/S157/S159/S175/S180/S183/S185/S187/S190)・cell window(S113/S116/S117)** | 片方 reject＋プロンプト見直し |
 | Q5 | 文字の混入 | **目視。** 読める英字・数字・日付(1996/2010/2019)・Roman numeral のタイポ・名前・新聞/文書のロゴが写っていないか | `has_readable_text=true`→reject |
 | Q6 | **実在人物**の顔の混入 | **目視。** 実在人物として識別可能な顔（Flowers/Evans/Hallmon/被害者/Bibbs/Baran/判事に**似た**顔）が写っていないか。**匿名・非識別・非実在の顔（HP/F/thumb_face）は OK。** | `has_identifiable_real_person=true`→reject |
 | Q7 | 被害者/暴行/遺体/未成年 | **目視。** 被害者の描写・暴行/殺害/injury/blood/凶器・現場・規制線・**識別可能な未成年**が写っていないか。**★匿名の成人人体は OK。** | 1つでもあれば reject |
@@ -1820,12 +1830,12 @@ EP54 の設計値: still 230/210=1.095(≤2) / factory 236/236=1.0(≤1) / motio
 
 # 13. 完了報告に含めるもの
 ```
-1. accepted 静止画の枚数と内訳（body 210 [＝object 141 ＋ ★HP 57 = 27% ＋ ★F 12] / i2v_source 44 [＝抽象 26 ＋ ★人物 18] / thumb_face 3 / also_thumb 4 [§4.3a] / reject N）
+1. accepted 静止画の枚数と内訳（body 210 [＝object 113 ＋ ★HP 85 = 40% ＋ ★F 12・R3+ 2026-07-26] / i2v_source 44 [＝抽象 26 ＋ ★人物 18] / thumb_face 3 / also_thumb 4 [§4.3a] / reject N）
 2. factory 選定 236本のリスト（asset_id / subtype / origin / eyeballed_content）と、subtype と食い違って外した本数、
    storefront/prison/church/polling クリップの「no readable text / no logo / no face / no victim / no gore / no crime tape」確認、stock 由来の本数
 3. EP39〜EP53 重複ゼロの確認結果
 4. i2v 44本の frames / duration_sec と、SHORT? の有無、★H001–H018（18本）の匿名・非識別・adults-only・no-victim 確認、
-   ★HP body 57枚・★F 12枚が実在 likeness なし・未成年顔なし・被害者/暴行なしの確認
+   ★HP body 85枚・★F 12枚が実在 likeness なし・未成年顔なし・被害者/暴行なしの確認、★HP 85枚の anti-samey（§5.2 variety matrix・同一 subject+composition+lighting の組ゼロ）確認
 5. 合成レイヤー30本のリスト
 6. §0.4 の [A-DONE-1]〜[A-DONE-5] の実行結果（exit code）＋ factory 236/motion 44/overlay 30 が非空で実体化した確認 ＋ depth_path をどこにも生成していない確認
 7. §3.3 の検算 [1]〜[8] を自分で再計算した結果（avg-uses/source 1.131≤1.4 を含む）

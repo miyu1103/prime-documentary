@@ -197,7 +197,7 @@ Sources used: PBS Frontline "The Confessions" case timeline + Ford articles (pbs
 
 Plus one strengthening edit (not a defect): Danser beat now reads "He was charged with capital murder anyway." (NF-16-exact, restores the word-count balance). **Net word-count effect of all script edits: 0 — the gate still measures exactly 4,645.**
 
-Process note: `check_planning_package --require-r3` verifies an R3 section EXISTS, not its substance (it passed against the placeholder) — do not treat that flag alone as proof of a real third review.
+Process note: `check_planning_package --require-r3` verifies an R3 section EXISTS, not its substance (it had passed even while the R3 slot was still an empty reserved stub) — do not treat that flag alone as proof of a real third review.
 
 ### R3.6 FINAL GATE OUTPUT (pasted verbatim, post-fix)
 
@@ -227,3 +227,34 @@ RESULT: PASS (0 warn)
 (RISK note = informational, mitigated by DESIGN §5's pinned Brian voice settings; channel median 178.1 wpm is the sizing basis — unchanged from R2.)
 
 - Reviewer: **independent R3 (fresh-eyes session)** · Date: **2026-07-26** · Verdict: **SHIP-READY → advance to `script_verified`**
+
+### R3+ addendum (2026-07-26) — owner directive: HP lane 55 → 85
+
+R3+ owner directive 2026-07-26: HP lane 55→85 (object→human conversion, 30 rows: S016 S017 S020 S045 S046 S048 S049 S054 S057 · S061 S064 S068 S088 S093 S102 S103 S104 S105 · S106 S122 S124 S128 S134 S144 S145 · S147 S166 S173 S181 S182), locked counts unchanged, variety matrix + Q4 clusters added.
+
+- Precedent: EP52 morton "object→human 転換のみ・additive しない・locked counts は1つも変わらない" (EP52 CODEX_A §5.11).
+- New lane math: body 205 = object **120** + ★HP **85** (41.5%); per-act ★HP = ACT1 21 / ACT2 21 / ACT3 17 / ACT4 26 (ACT0/ACT5 stay symbolic). All §3.3 arithmetic untouched: still 205 / i2v 42 / thumb_face 3 / F-series 12 / factory 232 / overlay 30 / cuts 536 / first-use 0.8937 / avg-uses 1.119.
+- Spine motifs kept object (tally wall, letter/envelope, bulb, DNA gel, chairs, four caps, apartment-absence); also_thumb anchors S001/S060/S121/S170 untouched.
+- Sensitivity unchanged: all new HP rows are anonymized/non-identifiable ([HSTYLE]/[HNEG]), adults only, no victim/violence imagery, no real-person likeness, four sailors framed with dignity.
+- Anti-samey variety matrix added to CODEX_A §5.2 (distance/pose/angle/wardrobe/act-lighting; no two HP rows share subject+composition+lighting); Q4 phash watch-list extended with ★HP clusters (interrogation figures / cell figures / courtroom gallery / lab figures / pier-sailor figures / waiting families / hands CU).
+- Machine-verified post-edit: S001–S205 gap-free (205 rows, 0 missing, 0 dupes); [HSTYLE] body rows = 85, [STYLE] body rows = 120; per-act HP = 21/21/17/26. DESIGN §1 "People" bullet updated to 85 (41.5%).
+- `check_planning_package.py 53 norfolk --require-r3` re-run post-edit: **PASS** (output below).
+
+```
+$ ./.venv/Scripts/python.exe scripts/check_planning_package.py 53 norfolk --require-r3
+ok   F1 script_length gate PASS (1740-1860s)
+ok   F2 narration body is CJK-free
+ok   F3 hook->OP->acts structure markers present
+ok   F5 'dochighlight' absent or explicitly banned
+ok   F6 'DATE_STAMP' absent or explicitly banned
+ok   F7 DESIGN carries figure-beat density budget
+ok   F8 CODEX_A carries 1-scene-1-image / no-variants rule
+ok   F9 CODEX_A carries the real-person likeness ban
+ok   F10 review log has R1+R2
+ok   F10 review log has substantive R3
+ok   thumb: CODEX_A includes emotive-face thumbnail stills
+info word-ish count (latin tokens): 5768
+
+RESULT: PASS (0 warn)
+```
+(Note: this re-run also surfaced and fixed a latent F10 self-trip — the R3.5 process note's literal wording sat inside the gate's greedy R3 capture and tripped its own self-label check; reworded with identical meaning. The gate script itself was not touched.)

@@ -218,3 +218,15 @@ RESULT: PASS (0 warn)
 Narration span re-measured with the gate's own `count_words`: **4,688** (target 4,600–4,750 ✓). The fast-pace RISK line is the standing channel-wide warning; voice pace is pinned by the locked ElevenLabs Brian settings.
 
 - [x] R3 verdict: **PASS — script_verified cleared** (10 defects found: 2 HIGH / 4 MED / 4 LOW, all fixed in-pass; 15/15 load-bearing facts independently confirmed; sensitivity hard gates all green) · date: 2026-07-26 · reviewer: independent R3 session (non-authoring)
+
+### R3+ addendum — owner directive 2026-07-26 (post-R3 lane rebalance, HP 57→85)
+
+R3+ owner directive 2026-07-26: HP 57→85 (28 rows converted: S017 S018 S020 S021 S033 S034 S035 S045 S046 S047 · S062 S066 S068 S069 S071 S076 S078 S089 · S112 S114 S115 S118 S129 · S157 S158 S159 · S204 S206), locked counts unchanged, variety matrix + Q4 clusters added.
+
+- Directive: 「人間が映った画像は結構必要」— raise the human-present share of the AI stills. Applied as the EP52 morton precedent (CODEX_A §5.13 there): **object→HP conversion only, nothing additive, locked counts untouched** (still 210 / i2v 44 / thumb 3 / factory 236 / overlay 30 / cuts 554; §3.3 checksums [1]–[8] all byte-identical).
+- New lane math: **object 113 + ★HP 85 (40.5%) + ★F 12 = 210**; per-act 内訳 15/0/0 · 22/21/2 · 23/24/3 · 25/17/3 · 15/21/4 · 13/2/0. Full 85-row HP enumeration added to CODEX_A §5.2 for machine cross-check against `[HSTYLE]` row count.
+- Narrative placement per directive: courtroom benches/anonymous jurors (S068/S069/S071/S076/S078), Winona town life (S017/S018/S020/S021/S045/S046/S047), gospel-choir silhouettes incl. the ending "singing again" (S033/S034/S035/S204/S206), gallery/steps crowds (S062/S066), prison visitation + family waiting (S115/S118), death-row corridor/fence figures (S112/S114), the count built by hands (S129/S157/S158/S159/S089).
+- Spine motifs kept object (untouched): tally strokes I–VI, strike cards, courthouse-facade key shots (S061/S063/S065, SCOTUS marble), four chairs, storefront of absence, jury-chair light arithmetic (S073–S075/S119/S122), holdout chair, three lights, and all 4 also_thumb anchors {S001,S028,S117,S170}.
+- Sensitivity unchanged and re-checked on all 28 new prompts: all anonymized/non-identifiable, adults only (no minors), no victims/violence/crime-scene, no real-person likeness, no lone "man walking away" composition (S021 = two static neighbors; S206 = group toward church; corridor figures institutional/seated), race handled with dignity (mixed jurors only where the record supports it, S078; no caricature).
+- Anti-samey mechanism: §5.2 variety matrix (7 axes; no two HP rows share subject+composition+lighting) + §6.1 Q4 extended with HP phash watch-list clusters (choir, gallery crowds, jury figures, corridor figures, waiting families, town life, hands closeups).
+- Note: R3.6 above records the pre-directive lane math (141/57/12) as audited on 2026-07-26 before this addendum; this addendum supersedes those lane figures. All other R3 findings unaffected.
