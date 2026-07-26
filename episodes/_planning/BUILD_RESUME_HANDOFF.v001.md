@@ -25,5 +25,17 @@ EP50 shipped-then-failed the owner watch-through (紙芝居/warp/no-faces/no-sto
 ### EP51 willingham (20-min) — stills only, rest pending Codex
 - narration ✅ (1208.8s, 218 chunks, all Brian). stills ✅ 150 real 4K. motion/factory: owner said Codex is generating them — **AUDIT by file-size/luma before trusting** (Codex ships black stubs). Then build with the fixed pipeline.
 
-## ORDER (GPU-serial, solo): EP50 (finish, proves pipeline) → EP52 (factory fix + build) → EP51 (audit Codex assets + build).
+## ORDER (GPU-serial, solo): EP50 (finish, proves pipeline) → EP51 (audit Codex motion/factory, then build) → EP52 (factory fix via real stock+i2v, then build) → EP53 → EP54 → EP55.
+## SCOPE EXTENDED (owner 2026-07-26): build through EP55. EP53-55 are GATED on scripts — themes are being picked in the theme-selection thread (THEME_SELECTION_HANDOFF.v001.md); a script thread should write their 3×-checked scripts. Build each Ep as soon as its script + narration + assets exist. Do NOT wait idle — EP50/51/52 are buildable now; 53-55 follow as scripts land.
 ## CONSTRAINTS: one GPU job at a time (4090; VRAM crash = silent no-output); another session runs GPU-free CTR/theme work — coordinate SDXL/render windows. Max quality always. Don't schedule/publish without owner approval.
+
+## ★ DEEP-RESEARCH GATES (2026-07-26, apply to EP50 opening + ALL of EP51-55)
+Canon: `DEEP_RESEARCH_FINDINGS.v001.md` + memories pd-retention-rules / pd-opening-formula / pd-structure-template / pd-craft-checklist / pd-distribution-actions / pd-audience-profile. Real curves: `scripts/_yt_retention_curves.json`.
+- OPENING (rules 1-3): cold-open, VO from frame 0, case-specific first frame, person+hard-specific+incongruity first sentence (never a question), name the human ≤0:15, crime+opposing-force ≤0:28, BUT-loop by ~0:32, THEN gold brand ≤5s audio-continuous fused with "This is the case of ___", post-brand = ONE escalating concrete. NO brand-first / thesis paragraph.
+- RETENTION: NO explanation block 60-180s (no ≥20s person-action-free exposition before first payoff; fold context 1 sentence at a time). New-info beat ≤45s in first 2 min; emotional core ≤90s. Mid decay ≤1.5pt/min; no 90s+ without a number/name/date.
+- REVEALS staircase: shock 0% → mid ~50% → MAIN reveal starts 65-85%, resolved by 92%; NO new facts after 92%.
+- NO emotional imperatives ("Sit with that", "Hold that name") — evoke via specifics.
+- AUDIENCE: 93% male, 91% 55+ → frame "man broken by the system / your rights", weighty not sensational; big captions (mobile 69% + older eyes); 97% first-time (zero brand trust).
+- TITLES: stakes-gap numbers (minor→7-15yrs) > time-jump; ban "Exonerated after N years" (write as ongoing injustice).
+- CODEX ONE-SHOT IMAGES (§5.5a): same motif ≤2/beat, reappearance needs visible state change, no mass similar variants, person ≥40%.
+- PROCESS: liveness = PID exists + CPU-time increment + StartTime (NOT agent-"done"/file-exists/RAM); on FAIL/anomaly suspect the instrument, read raw data; "broken/exists" in memory = dated hearsay, verify the real artifact before acting; verbatim quotes not written until primary-record-checked.
