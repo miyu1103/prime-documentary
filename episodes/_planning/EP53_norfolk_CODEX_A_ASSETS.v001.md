@@ -63,6 +63,11 @@ Composition id: Ep53Norfolk（B が Root.tsx に登録・A は staging まで）
 > **総生成画像 = still 205 + i2v 種 42 + thumb_face 3 = 250枚（各1回）。** factory 232本は生成でなく在庫からの選抜。
 > ★**`--only S001` のログで `shots=250` を確認**してから本番を回す（205 body + 42 i2v種 + 3 thumb_face = 250）。
 > ★i2v 42本は**複数日GPU**。**開始前にマシン状態を確認**（heavy-job preflight）。夜間・分割で回す。
+>
+> **★★ 反復の規律（owner directive 2026-07-26「似たシーンの機械的な繰り返し禁止」・1シーン1枚と同格の拘束）★★**
+> 1. **同一ストーリービート内の同一モチーフは最大2バリエーション。** 同じ被写体の3構図以上を同じビートに並べない（例: 取調室の椅子・タリー壁・手紙の接写を1ビートに3枚以上置かない）。
+> 2. **幕をまたぐ spine-motif の再登場は必ず「見える状態変化」を伴う**（タリー: 1本目→2本目→4本→拭われる→1本だけ残る／手紙: 白紙→書かれる→畳まれる→署の棚に届く→脇へ押される→擦り切れて保管／電球: 点灯→受刑の合間に待機→消灯→昼光の中で死んでいる／gel: 現像中→空レーン→唯一の一致→cream 点火）。**状態変化のない再登場は禁止。意味のある反復のみ可**（channel canon）。各再登場行のプロンプトに状態変化の語句を明記する。
+> 3. **Codex one-shot 原則:** Codex は各プロンプトを1発で当てる前提（SDXL 的な「量産して選ぶ」思考をしない）。再生成は QC 不合格時のみ（§6.3）。**「選ぶための near-variant」を作らない。**
 
 ## 0.2 スレッドB（実装）との境界＝接続点はただ1ファイル
 
@@ -394,7 +399,7 @@ Act 語数配分（provisional）: ACT1 ~950 / ACT2 ~1050（domino engine・最�
 { "public_path":"norfolk/factory/F012_harbor_night_lights_02.mp4", "act":0, "covers_scene_id":null, "subtype":"harbor_night_lights_02" }
 // ACT1 The First Confession (act 1) — 44
 { "public_path":"norfolk/factory/F013_norfolk_naval_harbor_day.mp4", "act":1, "covers_scene_id":"S016", "subtype":"norfolk_naval_harbor_day" }
-{ "public_path":"norfolk/factory/F014_gray_warship_hull_closeup.mp4", "act":1, "covers_scene_id":"S017", "subtype":"gray_warship_hull_closeup" }
+{ "public_path":"norfolk/factory/F014_gray_warship_hull_closeup.mp4", "act":1, "covers_scene_id":null, "subtype":"gray_warship_hull_closeup" }
 { "public_path":"norfolk/factory/F015_dockyard_cranes_dawn.mp4", "act":1, "covers_scene_id":"S018", "subtype":"dockyard_cranes_dawn" }
 { "public_path":"norfolk/factory/F016_navy_pier_morning.mp4", "act":1, "covers_scene_id":null, "subtype":"navy_pier_morning" }
 { "public_path":"norfolk/factory/F017_brick_apartment_complex_90s.mp4", "act":1, "covers_scene_id":"S022", "subtype":"brick_apartment_complex_90s" }
@@ -452,7 +457,7 @@ Act 語数配分（provisional）: ACT1 ~950 / ACT2 ~1050（domino engine・最�
 { "public_path":"norfolk/factory/F068_files_stack_desk_dim.mp4", "act":2, "covers_scene_id":null, "subtype":"files_stack_desk_dim" }
 { "public_path":"norfolk/factory/F069_phone_90s_office_desk.mp4", "act":2, "covers_scene_id":null, "subtype":"phone_90s_office_desk" }
 { "public_path":"norfolk/factory/F070_folder_drawer_closing_dim.mp4", "act":2, "covers_scene_id":"S067", "subtype":"folder_drawer_closing_dim" }
-{ "public_path":"norfolk/factory/F071_metal_chairs_row_dim.mp4", "act":2, "covers_scene_id":"S077", "subtype":"metal_chairs_row_dim" }
+{ "public_path":"norfolk/factory/F071_metal_chairs_row_dim.mp4", "act":2, "covers_scene_id":"S080", "subtype":"metal_chairs_row_dim" }
 { "public_path":"norfolk/factory/F072_city_street_norfolk_90s.mp4", "act":2, "covers_scene_id":null, "subtype":"city_street_norfolk_90s" }
 { "public_path":"norfolk/factory/F073_dna_lab_interior_cold_02.mp4", "act":2, "covers_scene_id":null, "subtype":"dna_lab_interior_cold_02" }
 { "public_path":"norfolk/factory/F074_gel_electrophoresis_equipment_02.mp4", "act":2, "covers_scene_id":null, "subtype":"gel_electrophoresis_equipment_02" }
@@ -765,28 +770,28 @@ text, words, letters, numbers, captions, watermark, logo, readable document, leg
 
 ### ACT 0 — HOOK + OPENING（15枚・S001–S015）
 
-**tally_wall_hook — 4 — S001–S004**（S001 = also_thumb・hook signature・keep count）
+**hook_signature_objects — 4 — S001–S004**（S001 = also_thumb・hook signature tally。反復規律によりタリーは S001 の1枚のみ・S002–S004 は COLD OPEN の別要素を担う新規 distinct）
 ```
 - `S001.png`
 Five chalk tally marks on a dark interrogation-room wall lit by one bare bulb, four of the strokes struck through with a hard diagonal line, chalk dust drifting in the cone of light, the confession count, no letters or numerals, no people, no readable text [STYLE] Avoid: [NEG]
 - `S002.png`
-Extreme close-up of a single rough chalk tally stroke on near-black painted brick, the chalk crumbling slightly at the stroke's end, harbor-slate rim light from the left, abstract and grave, no text, no people [STYLE] Avoid: [NEG]
+A street map of a gray harbor city rendered as an unreadable blur under a low desk lamp, four push-pins clustered tight around one small block and a fifth pin standing far alone at the map's edge, the men they chose and the man they missed, no legible names, no people [STYLE] Avoid: [NEG]
 - `S003.png`
-A dark institutional wall receding into blackness with four faint chalk tally marks catching a narrow blade of cold slate light, wide symmetrical composition with heavy negative space, no people, no readable text [STYLE] Avoid: [NEG]
+A detective's brass desk nameplate lying face-down beside a 1990s rotary telephone on a dim squad-room desk, its engraving pressed into the blotter, the man to keep your eye on introduced as an object, macro, cold slate light, no legible characters, no people [STYLE] Avoid: [NEG]
 - `S004.png`
-A worn piece of white chalk resting on the edge of a steel interrogation table beneath a harsh bulb, tiny drift of chalk dust, the instrument of the count, macro detail, no hands, no people, no readable text [STYLE] Avoid: [NEG]
+Four cheap ballpoint pens lined up on dark steel under a harsh bulb, caps chewed and clips bent, the instruments of four signed lies, macro still-life, no paper in frame, no hands, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
-**interrogation_bulb_cone — 4 — S005–S008**
+**the_room_and_the_town — 4 — S005–S008**（bulb/room は S005 の1枚のみ〔点灯・待機状態〕・S006–S008 は OPENING の Navy 町を担う新規 distinct）
 ```
 - `S005.png`
 A bare incandescent bulb hanging from a cord over an empty steel table and two metal chairs, a hard blown-white cone of light cutting near-black darkness, a small windowless room implied by shadow, no people, no readable text [STYLE] Avoid: [NEG]
 - `S006.png`
-Low angle looking up at a single bare bulb burning harsh white against blackness, the filament a violent point of light, faint smoke-like dust curling through the glow, oppressive and silent, no people, no text [STYLE] Avoid: [NEG]
+Eight steel lockers in a narrow Navy berthing passage, seven doors shut flush and one standing ajar into darkness, cold slate light down the row, eight names the case would claim, no legible stencils, no people [STYLE] Avoid: [NEG]
 - `S007.png`
-An empty metal interrogation chair pulled slightly back from a steel table, caught at the very edge of a bulb's white cone, the seat where the confessions were made, cold slate shadow around it, no people, no readable text [STYLE] Avoid: [NEG]
+An unmarked 1990s police sedan parked alone under a streetlight at night, rain beading on its hood and windshield, the watcher's car waiting outside ordinary lives, no people, no readable plates, no readable text [STYLE] Avoid: [NEG]
 - `S008.png`
-A closed, windowless interrogation-room door seen from inside the dark room, one thin line of cold light under it, the bulb's cone glowing behind camera onto the floor, claustrophobic stillness, no people, no readable text [STYLE] Avoid: [NEG]
+A warship's boarding gangway at night with a single chain hooked across its foot, wet steel steps rising into darkness, the husband gone to sea, quiet foreboding, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
 **navy_caps_harbor — 4 — S009–S012**
@@ -813,20 +818,20 @@ A slow gradient from ink black up into desaturated harbor-slate gray with a fain
 
 ### ACT 1 — THE FIRST CONFESSION（45枚・S016–S060）
 
-**norfolk_harbor_1997 — 6 — S016–S021**（★HP: S016–S017, S020 の3行＝Navy の日常・遠景/群像・他3行は object）
+**norfolk_navy_town_1997 — 6 — S016–S021**（★HP: S016–S017, S020 の3行。harbor-scape は S016/S018 の2枚に集約・S017/S019–S021 は「不在の町」の暮らしを担う新規 distinct）
 ```
 - `S016.png`
 A wide Norfolk naval harbor at gray dawn, rows of warship silhouettes and dock cranes under a low slate sky, a scatter of anonymized sailor figures walking the distant pier as small dark shapes, a Navy town waking, all figures far and non-identifiable, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S017.png`
-Seen from the wet pier below, three anonymized sailor stand-ins stand as small dark figures at a destroyer's high gray rail in flat morning light, the riveted hull towering like a wall beneath them, the institution and its young men, low angle, all far and non-identifiable, no faces, no readable markings [HSTYLE] Avoid: [HNEG]
+An anonymized young sailor stand-in seen only from behind at a bank of 1990s pay phones on a Navy pier at dusk, receiver pressed to his ear, shoulders hunched against the harbor wind, a town of absences calling home, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S018.png`
 Dockyard gantry cranes against a pale slate sky at first light, geometric black frames over still harbor water, industry asleep, no people, no readable text [STYLE] Avoid: [NEG]
 - `S019.png`
-Heavy mooring ropes wrapped around a rusted bollard on a Navy pier, mist over the gray water behind, close tactile detail in cold light, no people, no readable text [STYLE] Avoid: [NEG]
+A small naval base chapel interior, short rows of empty wooden pews in cold slate window light, a simple altar table with a model ship, where the young marriages of a Navy town begin, no people, no readable text [STYLE] Avoid: [NEG]
 - `S020.png`
-Two anonymized young sailor stand-ins seen from far behind walking a long pier toward anchored gray hulls in thin fog, seabags over their shoulders, wet planks reflecting a cold sky, the walk home from the sea, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+Two anonymized young women stand-ins seen from behind sitting close together on an exterior apartment stairwell at dusk, coffee mugs in hand, the neighbors who become your whole world when the ships are out, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S021.png`
-Chesapeake water in flat gray light stretching to a hard horizon, one distant warship hull-down at the edge, vast indifferent calm, no people, no readable text [STYLE] Avoid: [NEG]
+A small 1990s coin laundromat near the base at night, one machine's round window glowing mid-cycle, a basket of folded Navy whites on the counter, the town of absences after dark, no people, no readable signage [STYLE] Avoid: [NEG]
 ```
 
 **apartment_ordinary_life — 6 — S022–S027**
@@ -895,20 +900,20 @@ An anonymized young man stand-in in a plain t-shirt seen only from behind, being
 Through a rain-flecked car window, an anonymized man's silhouette in the back seat looking toward a police station's cold entrance lights, all shapes and reflections, no face readable, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 
-**interrogation_room_night — 6 — S045–S050**（★HP: S045–S046, S048–S049 の4行＝取調室の圧力を人で・他2行は object）
+**interrogation_night_and_its_cost — 6 — S045–S050**（★HP: S045–S046, S048–S049 の4行。部屋そのものの絵は S046/S047/S049 に集約・S045/S048/S050 は同ビートの別要素を担う新規 distinct）
 ```
 - `S045.png`
-An anonymized detective stand-in seen from behind placing the single suspect's chair square to the steel table in a small windowless interrogation room, the bare bulb burning harsh white above him, the geometry of pressure being set by hand, standing, medium, no face, no readable text [HSTYLE] Avoid: [HNEG]
+An anonymized detective stand-in seen from behind at a cluttered 1990s squad-room desk deep in the night, one desk lamp burning over spread folders rendered unreadable, a telephone cord pulled taut, a case being decided within hours, seated, medium, no face, no legible text [HSTYLE] Avoid: [HNEG]
 - `S046.png`
 An anonymized observer's dark silhouette seen close from behind at a wide one-way observation mirror, his faint reflection hanging over the lit empty table and bulb cone beyond the glass, the watcher and the machine in one frame, over-shoulder, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S047.png`
 A round institutional wall clock with its hands and numerals thrown to a soft unreadable blur, high on a dark interrogation-room wall above the light cone, time made meaningless, no legible numbers, no people [STYLE] Avoid: [NEG]
 - `S048.png`
-An anonymized exhausted man's hands cupped around a crushed styrofoam coffee cup on a steel interrogation table, a full ashtray beside them under hard bulb light, hours rendered as debris, cropped to hands and worn sleeves of a plain shirt, no face, no readable text [HSTYLE] Avoid: [HNEG]
+An anonymized detective's hands threading a fresh microcassette into a tape recorder at the edge of the steel interrogation table, the suspect's slumped silhouette soft in the cone beyond, the statement about to be taken again until it fits, cropped to hands and dark cuffs, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S049.png`
 The interrogation table seen from directly above, an anonymized young man stand-in seated with his head bowed so only hair and shoulders read, hands flat on the steel, the bulb's cone pinning him like a specimen, high-angle crucible geometry, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S050.png`
-A dark interrogation-room corner where the bulb's cone fails, deep black shadow with the faintest slate edge on the wall, the place denial goes to die, abstract, no people, no readable text [STYLE] Avoid: [NEG]
+An empty county-jail visiting booth, a scratched plexiglass pane and a stool bolted to the floor, a telephone handset hanging dead on its cradle, the seat he could not leave while his wife was dying, cold fluorescent light, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
 **★HP eleven_hours — 3 — S051–S053**（消耗する被疑者と迫る取調官・匿名・dignity）
@@ -993,32 +998,32 @@ An anonymized young man stand-in seen from behind in a Navy work jacket, hands f
 An anonymized figure fingerprinted by anonymized hands at a booking counter, everything cropped to hands and dark sleeves, ink pad and card rendered unreadable, the machine stamping another innocent man, no faces, no legible text [HSTYLE] Avoid: [HNEG]
 ```
 
-**chairs_accumulate — 6 — S077–S082**（ドミノの mechanism image＝椅子が増えていく）
+**domino_engine_objects — 6 — S077–S082**（椅子は S080/S081 の2枚に集約〔7脚の act peak＋倒れた1脚＝証拠が言い続けた答え・DESIGN §1/§2 指定〕・増殖の過程は M15 モーションが担う・S077–S079/S082 は同ビートの新規 distinct）
 ```
 - `S077.png`
-Two empty metal chairs side by side under the interrogation bulb's cone where one chair stood before, the theory growing its second man, stark symbolic staging, no people, no readable text [STYLE] Avoid: [NEG]
+Two metal bunks in a small shared barracks room, one bed stripped to its bare frame and the other still made taut, a footlocker between them, the roommate the theory reached for next, cold slate light, no people, no readable text [STYLE] Avoid: [NEG]
 - `S078.png`
-Three empty metal chairs in a row under the harsh bulb, their shadows fanning across the dark floor like tally strokes, the story swelling, no people, no readable text [STYLE] Avoid: [NEG]
+A destroyer's long white wake stretching across black night water toward the horizon, seen from the stern rail, the alibi written on the sea itself, no people, no readable text [STYLE] Avoid: [NEG]
 - `S079.png`
-Four empty metal chairs crowded shoulder to shoulder inside a light cone meant for one, the absurdity becoming architecture, symmetrical frontal composition, no people, no readable text [STYLE] Avoid: [NEG]
+A witness-stand microphone in a dark 1990s courtroom, one hard shaft of cold light on its steel neck, borrowed words waiting to be spoken against innocent men, no people, no readable text [STYLE] Avoid: [NEG]
 - `S080.png`
 Seven empty metal chairs jammed into the small interrogation room, some outside the cone in half dark, the multi-attacker theory as furniture, wide claustrophobic composition, no people, no readable text [STYLE] Avoid: [NEG]
 - `S081.png`
 A single overturned metal chair lying on the dark floor at the edge of the bulb cone, the one chair the evidence ever needed, quiet accusation, no people, no readable text [STYLE] Avoid: [NEG]
 - `S082.png`
-Extreme close-up of chair legs multiplying in shadow across the interrogation-room floor, a thicket of thin dark lines under slate light, abstraction of a lie growing, no people, no readable text [STYLE] Avoid: [NEG]
+Black fingerprint powder dusted across an apartment doorframe and light switch, revealing nothing, the spent brush lying below, seven charged men and not one trace, forensic macro, cold light, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
-**tally_accumulate — 4 — S083–S086**
+**count_rises — 4 — S083–S086**（タリーは S083/S085 の2枚〔2本目が加わる→4本そろう＝状態変化〕・S084/S086 は同ビートの新規 distinct）
 ```
 - `S083.png`
 A second chalk tally stroke being added beside the first on the dark wall, rendered as the fresh stroke alone with drifting chalk dust, no hand visible, the count rising, no letters, no people [STYLE] Avoid: [NEG]
 - `S084.png`
-Three chalk tally marks on near-black brick, the third still bright, the older two already dulled by time, cold slate side light, no letters, no people, no readable text [STYLE] Avoid: [NEG]
+A brown accordion case file swollen to bursting, its elastic band straining, standing alone on a steel shelf, a theory growing heavier exactly as it grew more false, cold slate light, no legible labels, no people [STYLE] Avoid: [NEG]
 - `S085.png`
 Four hard chalk tally marks filling the wall's light patch, aggressive and clustered, the bulb cone shaking slightly off-axis, four false confessions counted, no letters, no people [STYLE] Avoid: [NEG]
 - `S086.png`
-The tally wall seen from across the dark room, four pale strokes tiny inside the black, the smallness of the lie against the size of the dark, wide negative-space composition, no people, no readable text [STYLE] Avoid: [NEG]
+A wall-mounted fire-alarm pull station on an institutional corridor wall, its paint dulled dark in cold slate light, a fine skin of dust on the handle no one ever pulled, each exclusion an alarm nobody answered, macro, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
 **theory_web — 5 — S087–S091**（膨張する「集団犯行」説・可読文字なし・★HP: S088 の1行＝説を育てる手・他4行は object）
@@ -1077,48 +1082,48 @@ An anonymized defense lawyer stand-in seated alone at the defense table, seen in
 
 ### ACT 3 — THE LETTER（40枚・S106–S145）
 
-**letter_cream_first — 6 — S106–S111**（cream の初出＝真実の色・★HP: S106 の1行＝面会日の訪問者・手紙 motif の他5行は object）
+**letter_cream_first — 6 — S106–S111**（cream の初出＝真実の色・★HP: S106 の1行＝面会日の訪問者。手紙そのものは S107 の1枚のみ〔白紙＝初期状態〕・S108–S111 は同ビートの新規 distinct〔待っていた物証/封じられた扉/こじ開けられていない錠/家族の vigil〕）
 ```
 - `S106.png`
 A state prison's long exterior wall and razor-wire crown under a gray winter sky, an anonymized woman stand-in seen from behind waiting small at the visitors' gate with a paper bag under her arm, the place the truth was living, wide, no face, no readable signage [HSTYLE] Avoid: [HNEG]
 - `S107.png`
 A bare prison cell interior with a steel desk shelf, a single sheet of cream paper on it glowing softly warm against the cold slate room, the first warm note in the film, no person, no readable text [STYLE] Avoid: [NEG]
 - `S108.png`
-A stub of pencil resting on a sheet of cream paper on a steel shelf, cell bars' shadow falling short of the page, the cheapest instrument of truth, macro, no person, no legible marks [STYLE] Avoid: [NEG]
+Three sealed forensic evidence bags laid side by side on a cold laboratory counter, their labels soft unreadable smears, the swabs and scrapings that had waited two years to be believed, clinical slate light, no person, no legible characters [STYLE] Avoid: [NEG]
 - `S109.png`
-A folded letter of cream paper standing in the dark of a cell like a small pale monument, one thin blade of window light touching its edge, no legible writing, no person [STYLE] Avoid: [NEG]
+A 1990s apartment door sealed with a sagging, weathered strip of barrier tape rendered as an unreadable blur, dust and dead leaves gathered at the threshold, seasons passing over a closed truth, no person, no legible text [STYLE] Avoid: [NEG]
 - `S110.png`
-Close on cream paper texture with handwriting rendered entirely as a soft unreadable smear, the fact of writing without its words, warm paper against slate shadow, no legible characters, no person [STYLE] Avoid: [NEG]
+An intact apartment deadbolt and strike plate in extreme close-up, brass worn but unscratched, no splinter in the frame, the door that was opened from the inside, macro, cold slate light, no person, no readable text [STYLE] Avoid: [NEG]
 - `S111.png`
-A prison cell's tiny window as a pale gray rectangle above the shelf where a cream page waits, snow light, patience and menace together, no person, no readable text [STYLE] Avoid: [NEG]
+A single small candle flame in a dark apartment window at dusk, the room behind it lost to shadow, a family's vigil kept with dignity, restrained and quiet, no person, no readable text [STYLE] Avoid: [NEG]
 ```
 
-**★HP hand_writes — 3 — S112–S114**（書く手・匿名・no face）
+**★HP hand_writes_and_receives — 3 — S112–S114**（書く手 S112 →畳む手 S114＝状態変化の2枚のみ・S113 は受け取った女性＝新規 distinct・匿名・no face）
 ```
 - `S112.png`
 An anonymized inmate's hand gripping a pencil stub, mid-stroke across cream paper on a steel cell shelf, every written line blurred to an unreadable smear, cropped tight to hand and sleeve, no face, no legible words [HSTYLE] Avoid: [HNEG]
 - `S113.png`
-Over the shoulder of an anonymized seated figure in prison grays writing at a cell shelf, back filling the frame, the cream page bright past his arm, the confession no one asked for, no face, no legible writing [HSTYLE] Avoid: [HNEG]
+An anonymized woman stand-in seen only from behind at a small Norfolk kitchen table, holding a just-opened cream envelope very still, the taunt that became the truth arriving in her hands, warm paper against slate gloom, no face, no legible words [HSTYLE] Avoid: [HNEG]
 - `S114.png`
 An anonymized hand folding the finished cream letter in thirds with a slow careful crease, cell gloom around the warm paper, cropped to hands, the taunt sealed, no face, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 
-**envelope_travels — 4 — S115–S118**（郵便で届く真実）
+**the_letter_enters_the_system — 4 — S115–S118**（郵便で届く真実。封筒の close は S116 の1枚のみ〔署に届いた状態〕・投函は M22/H010 モーションが担う・開封は M23 が担う・S115/S117/S118 は同ビートの新規 distinct）
 ```
 - `S115.png`
-A plain envelope dropping through the slot of a dented prison mail bin, caught mid-fall, its face an unreadable smear, cold institutional light, the truth entering the postal system, no people, no legible address [STYLE] Avoid: [NEG]
+A prison mailroom seen wide, canvas carts heaped with white mail under twin fluorescent tubes, a long steel sorting table, the ordinary room the truth had to pass through, no people, no readable addresses [STYLE] Avoid: [NEG]
 - `S116.png`
-One cream envelope lying on a heap of white mail in a canvas sorting cart, warm against the gray, easy to miss forever, high angle, no people, no readable addresses [STYLE] Avoid: [NEG]
+A wall of wooden mail pigeonholes in a 1990s police department, one cream envelope corner protruding from a single slot among ranks of gray, easy to miss forever, wide frontal composition, no people, no readable labels [STYLE] Avoid: [NEG]
 - `S117.png`
-An envelope sliding under an office door across worn linoleum, shot from floor level, pale rectangle in a dark corridor's edge light, arrival without ceremony, no people, no readable text [STYLE] Avoid: [NEG]
+An empty press-briefing podium crowded with 1990s microphones in a bare municipal room, the seal on its front a soft unreadable blur, the machine that would announce an eighth man instead of an error, no people, no legible text [STYLE] Avoid: [NEG]
 - `S118.png`
-An opened envelope with its cream letter half withdrawn on a dark government desk, the writing a soft unreadable smear, a desk lamp burning low, the moment before everything should have changed, no people, no legible words [STYLE] Avoid: [NEG]
+A closed office door with a frosted glass pane at the end of a dark corridor, no light behind the glass, a thin gleam dying on the linoleum, the room where nothing happened, no people, no legible characters [STYLE] Avoid: [NEG]
 ```
 
-**letter_ignored — 3 — S119–S121**（S121 = also_thumb・置き去りの真実）
+**letter_ignored — 3 — S119–S121**（S121 = also_thumb・置き去りの真実。手紙の close は S120/S121 の2枚〔押しやられる→独り残る＝状態変化〕・S119 は新規 distinct・埋葬は M24 が担う）
 ```
 - `S119.png`
-The cream letter lying open in a desk lamp's small circle while dark stacks of case files crowd around it, truth surrounded and outnumbered, cold office night, no people, no legible writing [STYLE] Avoid: [NEG]
+A wide 1990s government office floor at night, ranks of dark desks and dead terminals, one desk lamp burning far at the back over a pale page, a building asleep on the truth, no people, no legible writing [STYLE] Avoid: [NEG]
 - `S120.png`
 An anonymized hand pushing the cream letter to the far corner of a dark desk, fingers flat on the page mid-shove, the physical gesture of nothing happens, cropped to hand and sleeve only, no face, no person beyond the hand, no legible words [STYLE] Avoid: [NEG]
 - `S121.png`
@@ -1137,18 +1142,18 @@ An anonymized silhouette seated alone at a steel table in an empty prison visiti
 A cell door's small observation hatch glowing faint slate in a dark corridor, the occupant unseen, threat contained and waiting, no person visible, no readable text [STYLE] Avoid: [NEG]
 ```
 
-**dna_match_one — 5 — S126–S130**（唯一の一致・★HP: S128 の1行＝深夜の分析者・gel ladder 行は object のまま）
+**the_match — 5 — S126–S130**（唯一の一致。gel ladder は S126 の1枚のみ〔一致＝状態変化・S063 現像中→S067 空レーン→S126 一致→S170 点火の evolving chain〕・★HP: S128 の1行＝深夜の分析者・S127/S129/S130 は同ビートの新規 distinct・一致の瞬間は M25 が担う）
 ```
 - `S126.png`
 A DNA gel ladder in a dark lab where one single lane aligns into a bright column while four neighboring lanes stay empty, the only match the case ever had, abstract slate glow, no readable numerals, no people [STYLE] Avoid: [NEG]
 - `S127.png`
-Extreme close-up of two matching gel bands snapping into alignment, rendered as pale bars of light meeting across darkness, the instant of identification, abstract macro, no numerals, no people [STYLE] Avoid: [NEG]
+A dot-matrix printer in a dark laboratory, a long accordion-folded report spilling into its out-tray, every line a soft unreadable smear, the answer arriving as ordinary paperwork, cold slate light, no people, no legible characters [STYLE] Avoid: [NEG]
 - `S128.png`
 An anonymized lab analyst stand-in hunched at a workstation lamp over a sealed vial and a gel plate at night, seen from behind with the coat collar high, everything else dark, the machine that never lied working late in human hands, seated, medium, no face, no readable labels [HSTYLE] Avoid: [HNEG]
 - `S129.png`
-One evidence vial standing alone in a rack built for eight, seven slots empty, the arithmetic of the case in glass, cold slate light, no readable labels, no people [STYLE] Avoid: [NEG]
+A laboratory cold-storage door standing open at last, a single sealed sample box carried off, its slot dark among the racked rows, evidence waking after two years asleep, no readable labels, no people [STYLE] Avoid: [NEG]
 - `S130.png`
-A gel ladder projected large across a dark wall like a cathedral window of pale slate bars, one lane burning brighter than all others, science as verdict, abstract, no numerals, no people [STYLE] Avoid: [NEG]
+A small interview room with its door standing wide open, two paper coffee cups still steaming on the table beside a small tape machine, the confession that needed no eleven hours, calm cold light, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
 **nothing_happens — 5 — S131–S135**（システムは手放さない・★HP: S134 の1行＝承認を押す人間の手・他4行は object）
@@ -1168,7 +1173,7 @@ The cream letter re-filed edge-on between hundreds of gray folders in a records 
 **★HP plea_under_threat — 4 — S136–S139**（死刑の影の下の答弁・匿名）
 ```
 - `S136.png`
-An anonymized young man stand-in seen from behind at a defense table, head bowed, hands flat, a shaft of cold courtroom light falling across his shoulders like a blade, the plea-or-death arithmetic, no face, no readable text [HSTYLE] Avoid: [HNEG]
+An anonymized young defendant stand-in at a defense table viewed from the gallery, chin dropped to his chest, palms pressed to the tabletop, one cold shaft crossing his shoulders, the surrender learned under the bulb now repeated before a judge, the plea-or-death arithmetic, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S137.png`
 An anonymized defendant's hands clasped so tight the knuckles pale, cropped at the defense table's edge under courtroom light, choosing life over truth, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S138.png`
@@ -1187,14 +1192,14 @@ An anonymized jury forewoman's silhouette rising in the box, paper in hand rende
 An anonymized defendant stand-in seen from behind being turned by anonymized deputies toward a side door of the courtroom, the second trial ending like the first, all backs and shadow, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 
-**four_doors — 3 — S143–S145**（4人とも収監・★HP: S144–S145 の2行＝独房の中の男/廊下の看守・S143 は object）
+**four_doors_and_the_years — 3 — S143–S145**（4人とも収監・★HP: S144–S145 の2行。prison motif は S143/S144 の2枚〔4枚の扉→ハッチ越しの男〕・S145 は新規 distinct〔作業場の歳月〕）
 ```
 - `S143.png`
 Four identical steel cell doors in a row down a dark prison corridor, each with its small hatch shut, cold slate light pooling before them, four innocent men filed away, no people, no readable numbers [STYLE] Avoid: [NEG]
 - `S144.png`
 Seen through a cell door's small open food hatch, the blurred shoulder and clasped hands of an anonymized inmate stand-in seated deep in the cell's gloom, one of four men filed away behind identical steel, framed tight by the hatch, dignified and non-sensational, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S145.png`
-A long prison corridor in perfect one-point perspective with a lone anonymized guard stand-in walking away far down its center, doors dissolving into black around him, a thin cream glow dying at the far end, hope under escort, walking, wide, no face, no readable text [HSTYLE] Avoid: [HNEG]
+An anonymized inmate stand-in seen from behind at an industrial sewing machine in a prison workshop, rows of empty stations receding into gloom, years measured out in piecework, seated, wide, no face, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 
 ### ACT 4 — THE LONG UNDOING（45枚・S146–S190・climax・cascade・最密②）
@@ -1271,12 +1276,12 @@ An anonymized man stand-in from behind stopping on wet asphalt outside a prison 
 Anonymized family figures seen from behind embracing a just-released man at a chain-link gate in gray light, all backs and shoulders, joy with a condition attached, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 
-**dna_truth_ignites — 3 — S170–S172**（S170 = also_thumb・ladder が cream へ点火）
+**dna_truth_ignites — 3 — S170–S172**（S170 = also_thumb・ladder が cream へ点火。gel は S170 の1枚のみ〔点火＝最終状態変化・flood は M35 が担う〕・S171 は新規 distinct〔one name clean〕・S172 はタリーの状態変化〔cream に洗われ色あせ始める〕）
 ```
 - `S170.png`
 A DNA gel ladder igniting across a near-black frame, one lane blazing into warm letter-cream light while four lanes stand cold, clear, and empty, the whole case in one image, abstract, no readable numerals, no people [STYLE] Avoid: [NEG]
 - `S171.png`
-Letter-cream light flooding outward from a single bright gel lane, washing over the slate bands around it, truth finally louder than the file, abstract macro, no numerals, no people [STYLE] Avoid: [NEG]
+One of four worn court-record jackets withdrawn from a steel shelf rack and lying flat on the counter below, a clean gap of pale light where it stood, the first name coming clean, mixed slate and early cream, no legible labels, no people [STYLE] Avoid: [NEG]
 - `S172.png`
 The tally wall washed in rising cream light from off frame, four chalk strokes beginning to pale inside it, the count losing its power, no letters, no people, no readable text [STYLE] Avoid: [NEG]
 ```
@@ -1339,36 +1344,36 @@ The interrogation room with the bulb switched off, gray daylight leaking under t
 
 ### ACT 5 — ENDING（15枚・S191–S205・the count resolved・strip to essentials）
 
-**back_to_tallies — 4 — S191–S194**
+**the_count_resolved — 4 — S191–S194**（タリーは S192/S194 の2枚〔拭われていく→1本だけ残る＝最終状態変化・洗い流しは M39 が担う〕・S191/S193 は同ビートの新規 distinct）
 ```
 - `S191.png`
-The tally wall at dawn, five chalk marks, four of them faded almost to shadow while the fifth stands sharp, the true count at last, mixed slate and cream light, no letters, no people [STYLE] Avoid: [NEG]
+A small bunch of fresh flowers laid at the foot of a brick apartment building wall in soft morning light, dew on the paper wrapping, remembrance without spectacle, no people, no readable text [STYLE] Avoid: [NEG]
 - `S192.png`
 An anonymized hand with a damp cloth mid-wipe across chalk tally marks, the strokes dissolving into pale streaks, cropped to hand only, the false count coming off the wall, no face, no readable text [STYLE] Avoid: [NEG]
 - `S193.png`
-Chalk dust drifting through a warm shaft of morning light in the dark room, the residue of nineteen years airborne and settling, abstract macro, no people, no readable text [STYLE] Avoid: [NEG]
+One worn pencil stub lying apart from a tight cluster of cheap ballpoint pens on dark wood, the one true instrument separated from the false, mixed slate and cream key light, still-life of the resolved count, no paper, no people, no readable text [STYLE] Avoid: [NEG]
 - `S194.png`
 The wall bare except for one remaining chalk stroke inside a soft cream glow, singular and quiet, the only confession that was ever true, no letters, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
-**four_caps_free — 4 — S195–S198**
+**harbor_absolved — 4 — S195–S198**（harbor/caps は S195/S196 の2枚〔灰色だった港が cream で赦される＝S010/S016 からの状態変化〕・S197/S198 は同ビートの新規 distinct）
 ```
 - `S195.png`
 A wide Norfolk harbor sunrise, cream light flooding across calm water and softening the gray hulls, the town seen kindly for the first time, no people, no readable text [STYLE] Avoid: [NEG]
 - `S196.png`
 Four white Navy sailor caps set side by side on weathered pier planks in warm dawn light, the harbor breathing behind them, four names clean, no insignia readable, no people [STYLE] Avoid: [NEG]
 - `S197.png`
-A pier bollard with a loosened mooring rope slipping free, dawn light gilding the fibers, release rendered in dockyard grammar, macro, no people, no readable text [STYLE] Avoid: [NEG]
+A Navy seabag set down upright inside an open front door full of warm morning light, keys resting on top, the homecoming finally completed, quiet wide composition, no people, no readable text [STYLE] Avoid: [NEG]
 - `S198.png`
-An empty pier stretching into cream morning haze where fog had stood in the film's first act, the same geography absolved, wide and calm, no people, no readable text [STYLE] Avoid: [NEG]
+A battered street-corner mail collection box on a quiet Norfolk sidewalk at dawn, its paint gone gray with age, one long band of cream light laid across it, the humble machine that carried the truth, no people, no readable text [STYLE] Avoid: [NEG]
 ```
 
-**letter_kept — 3 — S199–S201**
+**letter_kept — 3 — S199–S201**（手紙は S199/S201 の2枚〔擦り切れて保管＝最終状態→チョークと並ぶ全編の still-life〕・S200 は新規 distinct〔vigil の朝＝S111 からの状態変化〕）
 ```
 - `S199.png`
 The cream letter folded closed on dark wood, its creases worn soft with handling, kept as the exhibit that mattered, warm key light against slate shadow, no legible writing, no people [STYLE] Avoid: [NEG]
 - `S200.png`
-Extreme close-up of the letter's worn fold line catching warm light, paper fibers raised like scar tissue, truth that survived its filing, macro, no legible characters, no people [STYLE] Avoid: [NEG]
+The apartment window at first light, the vigil candle burned down to a low steady stub on the sill, morning finally arriving on a long grief, quiet macro, no people, no readable text [STYLE] Avoid: [NEG]
 - `S201.png`
 The letter resting beside the piece of white chalk on a dark table, the two instruments of the count together at rest, still-life of the whole film, cream key light, no readable text, no people [STYLE] Avoid: [NEG]
 ```
@@ -1560,7 +1565,7 @@ Generate all 12; QC each visually (visible emotive face · non-real · no likene
 | Q1 | 解像度 | `max(w,h)>=3840` | reject |
 | Q2 | サイズ/開ける | `>1024 bytes` かつ PIL で開ける | reject |
 | Q3 | 平均輝度 | `18.0<=mean_luma<=225.0`（near-black ink・低照度が多い→黒潰れ注意。cream ビートは白飛び注意） | reject |
-| Q4 | 近似重複 | 全ペア phash。類似度 `>=0.90` は片方 reject。**衝突は bulb/room(S005–S008/S045–S050/S060)・tally(S001–S004/S059/S083–S086/S191–S194)・chairs(S077–S082)・gel(S063/S067/S126–S130/S170–S171)・letter(S107–S121/S199–S201)・harbor(S010/S016–S021/S195–S198)・prison(S106/S143–S145) の被りに注意。★HP figure クラスタも監視: interrogation figures(S045–S046/S049/S051–S053/S073–S075)・cell figures(S122/S124/S144/S148)・courtroom gallery(S102–S105/S136–S142)・lab figures(S061/S064/S128)・pier/sailor figures(S016–S017/S020/S100)・waiting families(S102/S106/S150/S166/S169)・hands CU(S048/S054/S057/S064/S068/S088/S098/S101/S112/S114/S134/S137/S151/S153/S156/S158/S182/S192)＝subject+composition+lighting が同じ2枚を出さない（§5.2 anti-samey）** | 片方 reject＋プロンプト見直し |
+| Q4 | 近似重複 | 全ペア phash。類似度 `>=0.90` は片方 reject。**★反復規律（§0.1・2026-07-26）適用後の縮小 spine クラスタを重点監視（各行は状態変化つきの意図的再登場のみ・同ビート内最大2）: bulb/room(S005/S046–S047/S049/S060 ＋消灯状態の S190/S203)・tally(S001/S059/S083/S085/S192/S194 ＋cream に洗われる S172)・chairs(S080–S081)・gel(S063/S067/S126/S170)・letter(S107/S112–S114/S116/S120–S121/S199/S201)・harbor(S010/S016/S018/S195–S196)・prison(S106/S143–S144)。★HP figure クラスタも監視: police/interrogation figures(S045–S046/S049/S051–S053/S073–S075)・cell figures(S122/S124/S144–S145/S148)・courtroom gallery(S102–S105/S136–S142)・lab figures(S061/S064/S128)・pier/sailor/town figures(S016–S017/S020/S100)・waiting families(S102/S106/S113/S150/S166/S169)・hands CU(S048/S054/S057/S064/S068/S088/S098/S101/S112/S114/S134/S137/S151/S153/S156/S158/S182/S192)＝subject+composition+lighting が同じ2枚を出さない（§5.2 anti-samey）** | 片方 reject＋プロンプト見直し |
 | Q5 | 文字の混入 | **目視。** 読める英字・数字・日付(1997/1999/2009/2016/2017)・年齢(18)・金額・住所・自白調書/手紙/新聞のロゴが写っていないか（**チョークのタリー線は文字ではない＝可。ただし線が文字に化けていないか見る**） | `has_readable_text=true`→reject |
 | Q6 | **実在人物**の顔の混入 | **目視。** 実在人物として識別可能な顔（Williams/Dick/Tice/Wilson/Ford/Ballard/Michelle/Billy/Taylor/判事/知事に**似た**顔）が写っていないか。**匿名・非識別の顔（★HP/H/thumb_face/F）は OK。** | `has_identifiable_real_person=true`→reject |
 | Q7 | 被害者/暴行/遺体/凶器 | **目視。** 被害者の描写・レイプ/暴行/殺害の再現・遺体・血・ナイフ/凶器・泣き叫ぶ女性が写っていないか。**★匿名の人体は OK（`has_human_body=true` 単独では reject しない）。** | あれば reject |
@@ -1572,7 +1577,7 @@ Generate all 12; QC each visually (visible emotive face · non-real · no likene
 #   → runs/qc/norfolk_footage_contact_NN.png（20枚/シート・約13シート）。全シートを開いて1枚ずつ見る
 ```
 
-> **EP38/EP39-52 の教訓: ファイル名・プロンプトを信じるな。生成物を実際に見ろ。** 特に **S032–S035/S094(apartment absence)に被害者/血/遺体が写らないこと、S054–S056(polygraph)/S110/S175(手紙・判決文)に読める文字が無いこと、S001系のタリーが文字化けしていないこと、S122–S124(Ballard 影)/S052/S186–S187(detective 影)が実在 likeness に転じないこと、T01–T03/F001–F012 が illustrative で実在人物に似ていないこと、を必ず目で確認する。**
+> **EP38/EP39-52 の教訓: ファイル名・プロンプトを信じるな。生成物を実際に見ろ。** 特に **S032–S035/S094(apartment absence)に被害者/血/遺体が写らないこと、S054–S056(polygraph)/S107・S121・S199(手紙)/S175(判決文)に読める文字が無いこと、S001系のタリーが文字化けしていないこと、S122–S124(Ballard 影)/S052/S186–S187(detective 影)が実在 likeness に転じないこと、T01–T03/F001–F012 が illustrative で実在人物に似ていないこと、を必ず目で確認する。**
 
 ## 6.2 出力
 ```
@@ -1732,8 +1737,8 @@ A police corkboard of blank silhouette cards and taut red string, one new string
 - `M18_src.png`  (= H008 · §5.11 の全文を使う)
   →Wan: the three figures step apart and walk out of the cold light toward the gray doorway.
 - `M19_src.png`
-Three chalk tally marks on near-black brick with a fourth stroke poised half-begun, chalk dust suspended, the count still rising, no letters, no people, no readable text [STYLE] Avoid: [NEG]
-  →Wan: the fourth stroke completes; dust drifts; the wall breathes in the cone light.
+Three tally strokes of chalk on near-black brick, a fourth just begun and frozen mid-line, loose powder hanging in the beam, the count still rising toward four false confessions, no letters, no people, no readable text [STYLE] Avoid: [NEG]
+  →Wan: the fourth stroke completes; powder falls; the wall holds its silence.
 - `M20_src.png`
 A bare forensic examination table under one cold lamp with nothing on it, the lamp poised mid-flicker, symbolic emptiness about to be swept by light, no people, no readable text [STYLE] Avoid: [NEG]
   →Wan: the lamp's beam sweeps slowly across the empty surface and finds nothing.
