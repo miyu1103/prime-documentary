@@ -13,6 +13,13 @@ verification on 40 items: the raw shelf label is visually correct 52.5% of the
 time; the corrected browse view is correct 70%. Builders must stop selecting from
 the raw shelf folders / `select_factory_assets.py --theme`.**
 
+> **2026-07-28 — the selection path has since been fixed (see §9).**
+> `select_factory_assets.py --theme` and `stage_case_factory_assets.py` now read this
+> audit's verdicts out of `factory.jsonl` instead of parsing filenames, the §5
+> substring bug is fixed (2,150 files change theme), and every selection is forced to
+> emit a labeled contact sheet. The 70% figure has not moved — **the eyeball step is
+> still mandatory**, it is just no longer skippable.
+
 ---
 
 ## 1. Why this was unmeasurable until now
@@ -149,6 +156,10 @@ requires anchoring the rules at `_` boundaries in `scripts/factory_themes.py` �
 **not done here** (it changes `select_factory_assets.py --theme` results for every
 episode and needs its own regression pass).
 
+> **UPDATE 2026-07-28 — done.** Fixed with word-boundary matching and a regression
+> test; **2,150 files change theme** (the 1,968 above plus 182 `red_rotary_telephone`
+> that `phone` had also stolen). See §9.
+
 ## 6. Eyeball verification — do the pixels agree?
 
 Channel rule: eyeball, don't trust filenames or metadata. 40 items were sampled
@@ -254,10 +265,13 @@ narration" and "why is there a Christmas market in the surveillance episode".
 
 Binding guidance until the shelf is re-derived:
 
-1. **Do not use `select_factory_assets.py --theme <t>`** as a selection source for a
+1. ~~**Do not use `select_factory_assets.py --theme <t>`** as a selection source for a
    shipped episode. It derives the theme from the filename via
    `factory_themes.theme_of()` — the exact label this audit measured at 40% wrong,
-   and it additionally carries the substring bug in §5.
+   and it additionally carries the substring bug in §5.~~
+   **SUPERSEDED 2026-07-28 (§9): `--theme` now reads this audit's ledger verdicts and
+   is the recommended path again.** The eyeball step in item 3 is unchanged and is now
+   automatic.
 2. **Use `search_archive.py`**, which matches the *recovered title*, and/or browse
    `D:\pd-media-browse\factory_browse\<theme>\` whose filenames are now
    `<source>__<id>__<real-title>` on the corrected theme.
@@ -271,10 +285,140 @@ Binding guidance until the shelf is re-derived:
 
 Follow-ups worth doing (not done here):
 
-- Fix the `factory_themes.RULES` substring matching (§5) with `_`-anchored rules and
-  re-run this audit; ~1,968 files are misfiled for that reason alone.
-- Re-point `select_factory_assets.py --theme` at the ledger's `theme` field instead
-  of `theme_of(subtype)`, so one corrected taxonomy serves every consumer.
+- ~~Fix the `factory_themes.RULES` substring matching (§5)~~ **done 2026-07-28, §9.**
+- ~~Re-point `select_factory_assets.py --theme` at the ledger's `theme` field~~
+  **done 2026-07-28, §9.**
 - `retrofit_factory_ledger.py link` now produces the same tree as this tool (both
   read `theme`), so nightly resume will not undo the correction — verify after the
   next nightly run.
+
+---
+
+# 9. SELECTION PATH FIXED (2026-07-28)
+
+The audit above only *measured* the shelf. This section is what changed in the code
+so a build can no longer pick footage by a 40%-wrong label. **Nothing under
+`H:\pd-media\assets\factory\` was touched, no ledger row was written, and no
+already-shipped episode's manifest or staged footage was rewritten.**
+
+## 9.1 Blast radius (who selected by theme)
+
+| consumer | role | status |
+|---|---|---|
+| `scripts/select_factory_assets.py` | the only **generic, live** theme selector; `--theme` was `theme_of(filename)` | **FIXED** — ledger-backed |
+| `scripts/stage_case_factory_assets.py` | generic staging engine (per-episode `PLANS`), indexed clips by `theme_of()` | **FIXED** — ledger-backed |
+| `scripts/build_ep19..24_*_final.py` (6 files) | one-shot legacy per-episode builders (varsityblues, gardner, dbcooper, milken, swartz, rajaratnam) | **left alone** — episodes are shipped; rewriting them would change shipped manifests |
+| `select_tlo_factory.py`, `stage_strieff_factory_assets.py`, `stage_frazier_reviewed_factory.py`, `build_frazier_asset_manifest.py` | one-shot, hardcoded to EP46/49/39; select by explicit **subtype list**, theme is only a written label | **left alone** — contaminates their `theme` field only, not which clips were copied |
+| `build_kidsforcash_factory_qc.py` | one-shot EP38 with its **own** duplicate `theme_of(name)` | **left alone** — legacy, would not be fixed by patching the shared taxonomy anyway |
+| `scripts/retrofit_factory_ledger.py` | shelf-wide, writes the ledger; `theme_from_text()` still substring-matches | **left alone** — owned by the running ingest agents this session; carries a residual of the §5 bug on free text |
+| `scripts/build_case_film_assets.py` | **not** a theme consumer — it reads whatever `.mp4` is already staged | unchanged |
+| `scripts/check_visual_asset_qc.py` | the human-QC gate; consumes the reviewed `on_theme` verdicts | unchanged (still the firewall) |
+
+Episodes with staged factory footage picked *through the theme path*: `hinton`,
+`forfeiture`, `cotton`, `carsearch`, `frazier` (via `stage_case_factory_assets.PLANS`)
+and `varsityblues`, `gardner`, `dbcooper`, `milken`, `swartz`, `rajaratnam` (via the
+`build_ep19..24` one-shots). All shipped or built; **not rewritten** (constraint).
+The label never reaches the render layer — no `remotion/src/data/*_film.json` has a
+`theme` field — so the damage was always *which files got copied*, not the cut list.
+
+**Unbuilt episodes protected by this fix:** EP53 `norfolk` (no `remotion/public/norfolk/`
+at all), EP55 `burge` (img only, no factory dir), EP56 `postoffice` (235 factory rows
+declared `"origin": "unselected"`, factory dir empty). EP54 `flowers` already has 236
+clips staged, but they are 100% `light_assets`/`particle_assets` chosen by exact
+subtype — fx categories bypass the rule table entirely, so EP54 was never exposed to
+this bug (it has a different problem: zero real-world b-roll).
+
+## 9.2 The fix
+
+**New: `scripts/factory_ledger_themes.py`** — reads `factory.jsonl` (`theme_recovered`
++ `label_verdict` + `label_verdict_kind`) and ranks candidates for a theme:
+
+| tier | meaning | default |
+|---:|---|---|
+| 0 | `match` | selected |
+| 1 | `match:dual_subject` | selected |
+| 2 | `contradiction:cross_theme` **re-homed INTO this theme** | selected |
+| 3 | `weak` (generic title / filename-only / unclaimed label) | selected |
+| 4 | `contradiction:off_label` | **excluded** — `--allow-off-label` only |
+| 5 | no ledger row (110 manifest assets) | **excluded** — `--allow-off-label` only |
+
+A `cross_theme` item is **invisible under the wrong theme it used to sit in** and only
+appears under the theme the audit re-homed it to — the exact asymmetry requested. Tier
+2 outranks tier 3 because a re-home required score ≥ 30 with a ≥ 25 margin (positive
+evidence) where `weak` is an absence of evidence; eyeball says those moves were right
+69% of the time. If the ledger is missing the tools print a full-width banner and fall
+back to filename themes with every item marked `no_ledger_row`.
+
+Usable pool per theme after the policy (`--themes`): `legal_court` 3,092 → 2,056 usable
+(1,036 off_label withheld), `crime_police` 2,717 → 1,948, `forensics_dna` 980 → 509,
+`nature_landscape` 11,659 → 11,205.
+
+**`factory_themes.theme_of()` — word-boundary matching (§5 bug).** A rule token now
+matches a subtype token only as the same token, its regular plural, or a prefix of
+≥ 4 characters. Suffix and infix hits — the entire failure class — are impossible.
+Short rules (`atm`, `dna`, `ekg`, `law`) require an exact token, which is what stops
+`atm` claiming `atmosphere`. Legitimate compounds are preserved by the prefix rule
+(`court`→`courthouse`/`courtroom`, `document`→`documents`, `snow`→`snowy`,
+`gold_bar`→`gold_bars`) — a naive "exact token only" fix broke 4,423 files and was
+rejected. Three rules were added because the fix correctly stopped the bad matches
+that were also doing useful work: `microphone`→`documents_paper`,
+`telephone`→`atmosphere_symbolic`, `street`→`urban_night` (ordered after the specific
+`main_street`/`wall_street`/`rain_street` rules), plus `laboratory`→`medical_lab`.
+
+**2,150 files change theme** (9 subtypes), verified against the pre-change function:
+
+    461  nature_landscape -> urban_night        (snowy_street_night, homeless_person_on_street_night)
+    452  property_home    -> urban_night        (warehouse_interior_dark, warehouse_loading_dock)
+    310  surveillance_tech-> documents_paper    (vintage_radio_microphone)
+    288  property_home    -> nature_landscape   (lighthouse_in_storm)
+    236  finance_money    -> atmosphere_symbolic(moody_atmosphere_fog)
+    221  nature_landscape -> atmosphere_symbolic(rain_street_reflection_night)
+    182  surveillance_tech-> atmosphere_symbolic(red_rotary_telephone)
+
+= the 1,968 predicted in §5, plus 182 `red_rotary_telephone` that `phone` had also
+stolen and §5 missed. Locked by `scripts/tests/test_factory_themes.py` (42 cases +
+159 rule self-matches, runs without pytest).
+
+## 9.3 The eyeball step is now unavoidable
+
+Every selection writes `runs/qc/factory_selection/<stamp>__<label>/` containing
+`selection.v001.json` (schema `pd.factory_selection.v001`, with `tier`, `verdict`,
+`theme_local`, `recovered_title` per item and an empty `review.rejected_ids` to fill
+in) **and labeled contact sheets**. `build_footage_contact_sheet.py` gained
+`--from-json` / `--out-dir`, so a sheet tiles exactly what the picker chose, in its
+order, with a second label line per tile: `tier | theme | real provider title`, in
+amber when the tier is `cross_theme->here` / `off_label` / `no_ledger_row`.
+If the sheet cannot be produced the selection **exits 3** and says the pick is
+unreviewed. `--no-sheet` exists for plumbing and prints an UNREVIEWED banner.
+`stage_case_factory_assets.py` does the same for the pool it copies.
+
+## 9.4 Proof in pixels — `legal_court`, video, top 20
+
+Same theme, same limit, one command apart (`--no-ledger` reproduces the old path):
+
+    python scripts/select_factory_assets.py --theme legal_court --kind video --limit 20 --no-ledger  # BEFORE
+    python scripts/select_factory_assets.py --theme legal_court --kind video --limit 20              # AFTER
+
+Both sheets were looked at, not just generated.
+
+- **BEFORE (filename theme, manifest order): 10 of 20 are not legal footage.** Tiles
+  1–10 are genuinely courtroom-ish (scales, gavels, a judge, a law library). Tiles
+  11–20 are a car dashboard at night, a restaurant table with a wine glass, a gilded
+  cathedral interior, a hand drawing on a chalkboard, a car tail light, a hotel
+  breakfast tray, a cosy bedroom with a fireplace, a café interior, a CG moonlit
+  window and a **Christmas dinner table** — every one of them filed under
+  `courtroom_interior`. 50% correct, which lands on the 52.5% this audit predicted.
+- **AFTER (ledger tiers, match first): 20 of 20 are legal/judicial.** Scales of
+  justice, gavels in use, a judge at the bench, a law library, government and
+  parliament buildings, a state capitol, the US Supreme Court, courthouse steps, Lady
+  Justice, a judge signing a document. Every tile carries its real title
+  (*"female judge hitting the auction hammer"*, *"supreme court building in
+  washington"*), so a reviewer can check the claim without opening the file.
+- **Honest residual:** 2 of the 20 are *foreign* government buildings (an illuminated
+  parliament, an Azerbaijani flag over a ministry). The theme label is truthful; the
+  *context* is wrong for a US case film. The machine cannot see that — which is
+  exactly why §9.3 forces the sheet and why the eyeball step stays MANUAL.
+
+Verdict: on this theme the fix moved the top-20 from **half junk to zero junk**, and
+the remaining errors changed character — from "this is a Christmas dinner" to "this
+courthouse is in the wrong country".

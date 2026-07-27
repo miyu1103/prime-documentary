@@ -3,6 +3,7 @@
 - 対象: EP53 Norfolk Four / EP54 Curtis Flowers / EP55 Jon Burge（全話30分尺・オーナー指示）
 - 現在地: 台本+音声=done、Codex画像生成中。以降 build→mix→render→package→ship が本書に拘束される。
 - 作成: 2026-07-26。ソースは各項目末尾に `[...]` で明記（docs/、episodes/_planning/、memory 2系統）。
+- 追記: 2026-07-28 — 新規失敗 **#53a（棚ラベル40%誤りのまま theme で素材選択）** を F節に追加し、STEP 3 を対応版に更新。実測ソース = `episodes/_planning/measurements/FACTORY_LABEL_AUDIT.v001.md`。
 - 正典の親: `docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md`（rows 1-16）＋ `docs/PD_EP32_POSTMORTEM_AND_ONE_PASS_PREVENTION.md` ＋ `docs/PD_SHIP_GATE.md` ＋ `.claude/rules/19-ship-gate.md`。本書はそれらの「EP53-55実行版」であり、緩和はしない（invariant 15）。
 
 ## STATUS 凡例
@@ -85,6 +86,7 @@
 51. **実ストック0本**（EP50: H:/pd-media/assets/stock 74本を1本も未使用→紙芝居の一因） → stock-first: 実ストック＋i2v人物モーションを織り込む（inject/weaveスクリプト系） → **MANUAL**（Claude、film build時にstock使用数を数えて報告） [pd-footage-quality-fixes #4 / feedback-thread-retro-20260725]
 52. 映像とナレの意味不一致（汎用B-roll流し込み） → scene_planで1文ごとに割当・語同期で接着・脈絡ない転換禁止 → **PASSED**（DESIGN_ARCHITECTURE段階）＋**MANUAL**（build時にscene_plan↔film.json対応を確認） [feedback_visual_narration_meaning_match]
 53. arc_nonrepeatの偽陽性（共有 sNN.png 名で26枚を誤検出） → 画像はエピソードprefix命名 → **MANUAL手順**（build時） [feedback-ep38-retro #4/#5]
+53a. **40%誤りのラベルで素材を選ぶ**（#47の上流・実測 FACTORY_LABEL_AUDIT.v001: claim付きラベルの **40.0%** が当該ファイル自身の復元プロバイダタイトルと矛盾・**17.5%** は確定誤り。目視40件で棚ラベルの的中は **52.5%**＝ブラインド選択はほぼ半分ハズレ。`select_factory_assets.py --theme` はファイル名から `theme_of()` でテーマを導いており、その40%そのもの＋substringバグ（`tree`⊂s**tree**t等で1,968件誤配）を抱えていた。実例: `evidence_bag`=革財布 / `courtroom_interior`=ベトナムのバス / `prison_corridor`=ハンブルクのエルベトンネル / `server_room_red_alert`=猫。※採番は末尾追番、節はF） → ①theme選択を監査済み台帳（`factory.jsonl` の `theme_recovered`＋`label_verdict`）へ切替＝新モジュール `scripts/factory_ledger_themes.py`（match優先→cross_theme復元分→weak、`cross_theme`は誤テーマ側から**不可視**化、`off_label`は `--allow-off-label` 時のみ最終手段、台帳欠落時は大警告付きでファイル名にフォールバック）②`factory_themes.theme_of()` を語境界一致に修正＋回帰テスト `scripts/tests/test_factory_themes.py`（street/lighthouse/warehouse/atmosphere/microphone）③選択・stagingは**必ず**ラベル付きコンタクトシートを出力し、生成失敗は exit 3 で選択自体を失敗させる → **ARMED**（台帳選択＋シート強制。`select_factory_assets.py` / `stage_case_factory_assets.py`）＋**MANUAL**（復元ラベルでも的中70%＝#47の全クリップ目視は今まで通り必須。tierが `cross_theme->here` / `off_label` のタイルは特に疑う） [FACTORY_LABEL_AUDIT.v001 / pd-factory-shelf-mislabeled]
 
 ## G. ANIMATION / MOTION（アニメ・動き）
 
@@ -237,7 +239,8 @@
 - narration_index総語数 vs 台本語数 diff（欠落パッセージ検出 #10）／予測尺が27-33分帯に入るか。
 
 **STEP 3. 実写素材 staging＋目視QC**
-- `select_factory_assets.py --theme` で広く staging → `build_footage_contact_sheet.py` → **全クリップ目視**・場違いをBLOCK_IDS（#47）／featureless除去（#50）。
+- `select_factory_assets.py --theme <t> --kind video`（**台帳ベース**。`--allow-off-label` は原則使わない。#53a）で広く staging。コンタクトシートは選択・staging時に**自動生成**され `runs/qc/factory_selection/<stamp>__<theme>-video/` に出る（`--no-sheet` は配管用途のみ・使ったら未レビュー扱い） → **全クリップ目視**・場違いをBLOCK_IDS（#47）／featureless除去（#50）。外したIDは `selection.v001.json` の `review.rejected_ids` に記録。
+- タイル下段の `tier | theme | 実タイトル` を必ず読む。`cross_theme->here` と `off_label` は誤りの当たりが高い。theme名で狙わずサブタイプ語で狙う場合は `--query` でよいが、その結果にも同じ台帳注記が付く。
 - 実ストック（H:/pd-media/assets/stock）とi2v人物モーションを織り込み、stock使用数を記録（#51, #56）。
 - `check_arc_nonrepeat.py` を EP1-52＋EP53-55相互で（#49）。
 
