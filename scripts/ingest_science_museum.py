@@ -71,6 +71,18 @@ from datetime import datetime, timezone
 
 import requests
 
+# --- framework v5 primitives (CONTRACT.md 4-v3/v5, 2, 5) -------------------
+# Imported, NOT forked: term_hits/sense_ok/validate_media/atomic_append are the
+# shared reference implementations, so future fixes to the boundary rule, sense
+# guards and source-aware floors land here automatically. Only the QUERY-based
+# scorer below is local (this adapter scores query->item, while the framework's
+# relevance() scores theme-table->item).
+os.environ.setdefault("PD_INGEST_LANE", "sci")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ingest_archive_sources import (  # noqa: E402
+    WEAK_TERMS, SENSE_GUARDS, ARCHIVAL_SOURCES, term_hits, sense_ok,
+    validate_media, atomic_append, reject_log as fw_reject_log)
+
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
@@ -89,6 +101,7 @@ REJECTS_PATH = os.path.join(LEDGER_DIR, "rejects.jsonl")
 EXISTING_INDEX = os.path.join(H_ROOT, "existing_index.json")
 
 MY_SOURCES = ["nasa", "noaa", "met", "smithsonian", "nypl", "rawpixel"]
+LANE = os.environ.get("PD_INGEST_LANE", "sci")
 
 UA = "PrimeDocumentaryIngest/1.0 (archival research; contact: aab153792@gmail.com)"
 MAX_ITEM_BYTES = 2 * GB
@@ -111,8 +124,12 @@ STOPWORDS = set(
     "the a an of in on and or for with to at from by over under into is are was "
     "were view views image photo photograph new old".split())
 KW_POINTS = 15
-THRESHOLD = {"nasa": 15, "noaa": 30, "met": 15, "smithsonian": 15, "nypl": 30,
-             "rawpixel": 15}
+# CONTRACT §4.1: metadata-rich archives >= 30. Every source in this lane is a
+# metadata-rich archive. 30 is also what makes the weak-only cap (4-v5-j) bite:
+# weak common words cap at 15 and can therefore never clear the gate, while ONE
+# strong domain term (+30, 4-v3-e) still passes without lowering the threshold.
+THRESHOLD = {"nasa": 30, "noaa": 30, "met": 30, "smithsonian": 30, "nypl": 30,
+             "rawpixel": 30}
 
 # ---------------------------------------------------------------------------
 # themed query plans: (theme, query, extra) per source
@@ -346,26 +363,25 @@ def ffprobe(path: str) -> dict | None:
         return None
 
 
-def probe_floors(path: str, kind: str) -> tuple[bool, str]:
-    """Validate decode + technical floors. kind: image|video."""
+def probe_floors(path: str, kind: str, theme: str,
+                 source: str) -> tuple[str, str]:
+    """SOURCE-AWARE technical floors (CONTRACT §2). Returns (verdict, detail)
+    where verdict is "ok" | "reject" | "quarantine".
+
+    Every source in this lane is archival (NASA/NOAA/Met/Smithsonian/NYPL), so
+    sub-SD historical footage is QUARANTINED for owner review, never deleted —
+    a technical floor must not destroy what the relevance gate just approved.
+    Delegates to the shared validate_media() so floor policy stays in one place.
+    """
+    verdict, reason = validate_media(path, kind, theme, source)
     info = ffprobe(path)
-    if not info or not info.get("streams"):
-        return False, "ffprobe_failed"
-    vstreams = [s for s in info["streams"] if s.get("codec_type") == "video"]
-    if not vstreams:
-        return False, "no_video_stream"
-    w = max(int(s.get("width") or 0) for s in vstreams)
-    h = max(int(s.get("height") or 0) for s in vstreams)
-    if kind == "image":
-        if max(w, h) < MIN_IMAGE_LONG_SIDE:
-            return False, f"image_below_floor_{w}x{h}"
-    else:
-        if h < MIN_VIDEO_HEIGHT:
-            return False, f"video_below_floor_{w}x{h}"
-        dur = float(info.get("format", {}).get("duration") or 0)
-        if dur <= 0.5:
-            return False, "video_no_duration"
-    return True, f"{w}x{h}"
+    dims = ""
+    if info:
+        vs = [s for s in info.get("streams", []) if s.get("codec_type") == "video"]
+        if vs:
+            dims = (f"{max(int(s.get('width') or 0) for s in vs)}x"
+                    f"{max(int(s.get('height') or 0) for s in vs)}")
+    return verdict, (dims if verdict == "ok" and dims else reason)
 
 
 def download(url: str, dest: str, max_bytes=MAX_ITEM_BYTES) -> int | None:
@@ -405,6 +421,7 @@ class State:
     def __init__(self):
         self.known_ids: set[tuple[str, str]] = set()
         self.known_sha: set[str] = set()
+        self.session_skip: set[tuple[str, str]] = set()  # relevance rejects, this run
         os.makedirs(LEDGER_DIR, exist_ok=True)
         for fn in os.listdir(LEDGER_DIR):
             if not fn.endswith(".jsonl"):
@@ -434,7 +451,8 @@ class State:
         log(f"state: {len(self.known_ids)} known ids, {len(self.known_sha)} known sha")
 
     def has(self, source: str, item_id: str) -> bool:
-        return (source, str(item_id)) in self.known_ids
+        key = (source, str(item_id))
+        return key in self.known_ids or key in self.session_skip
 
     def add(self, source: str, item_id: str, sha: str | None):
         self.known_ids.add((source, str(item_id)))
@@ -446,29 +464,140 @@ class State:
         with open(path, "a", encoding="utf-8") as f:
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
-    def reject(self, source: str, item_id: str, reason: str, extra: dict | None = None):
-        rec = {"id": item_id, "source": source, "reason": reason,
-               "fetched_at": utcnow()}
-        if extra:
-            rec.update(extra)
-        with open(REJECTS_PATH, "a", encoding="utf-8") as f:
-            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
-        self.known_ids.add((source, str(item_id)))  # don't retry within/between runs
+    # Terminal reasons blacklist an id permanently; a RELEVANCE reject must not,
+    # or a future gate improvement can never re-admit it (CONTRACT 4-v3-h: the
+    # resumable run is what re-evaluates false negatives organically).
+    RELEVANCE_REASONS = ("title-irrelevant", "relevance<", "negative")
+
+    def reject(self, source: str, item_id: str, reason: str, extra: dict | None = None,
+               *, title: str = "", theme: str = "", score: int = -1,
+               matched=None, negs=None):
+        """Per-lane, atomically-appended reject row (CONTRACT §5).
+
+        TITLE IS REQUIRED: without reject titles the false-negative direction of
+        the gate is invisible — that is what hid prime material until 4-v3-g.
+        """
+        fw_reject_log(source, item_id, theme, reason, score=score,
+                      matched=matched, negs=negs, title=title)
+        if extra:  # keep lane-specific diagnostics (urls, dims) alongside
+            atomic_append(os.path.join(LEDGER_DIR, f"rejects_{LANE}_detail.jsonl"),
+                          json.dumps({"ts": utcnow(), "source": source,
+                                      "id": str(item_id)[:200], "title": title[:300],
+                                      "reason": reason, **extra}, ensure_ascii=False))
+        if any(reason.startswith(r) for r in self.RELEVANCE_REASONS):
+            self.session_skip.add((source, str(item_id)))  # this run only
+        else:
+            self.known_ids.add((source, str(item_id)))  # terminal: never retry
 
 
 # ---------------------------------------------------------------------------
 # relevance scoring (precision-first)
 # ---------------------------------------------------------------------------
-def score_item(source: str, query: str, title: str, desc: str) -> tuple[int, list[str]]:
-    text = f"{title} {desc}".lower()
+# Latin plurals the shared suffix rule does not cover (nebula->nebulae). Kept as
+# explicit aliases rather than a blanket optional "e", which would let "car"
+# match "care". Alias hits count as the base term.
+LATIN_PLURAL = {"nebula": "nebulae", "aurora": "aurorae", "supernova": "supernovae",
+                "larva": "larvae", "alga": "algae", "formula": "formulae",
+                "antenna": "antennae"}
+
+# STRONG bigrams / unmistakable domain terms for THIS lane's themes (CONTRACT
+# 4-v5-k: ambiguity is per-WORD — "ocean"/"storm"/"space" are weak alone, but
+# "coral reef"/"solar flare"/"space shuttle" are unmistakable subject matter).
+STRONG_EXTRA_SCI: dict[str, list[str]] = {
+    "space_nasa": ["nebula", "galaxy", "spacewalk", "spacecraft", "orbiter",
+                   "apollo", "gemini", "cosmonaut", "launchpad", "space shuttle",
+                   "space station", "rocket launch", "solar flare", "lunar surface",
+                   "mars surface", "saturn rings", "earth from space", "satellite orbit",
+                   "international space station", "aurora", "moon surface"],
+    "weather_disasters": ["hurricane", "typhoon", "tornado", "waterspout", "cyclone",
+                          "wildfire", "blizzard", "lightning", "dust storm",
+                          "storm system", "storm clouds", "hurricane damage"],
+    # single words that are unmistakable SUBJECT matter for this shelf even though
+    # the framework's generic WEAK_TERMS marks them weak (4-v3-e allows per-theme
+    # STRONG_EXTRA): a bare "reef"/"coral" photo is exactly what ocean_nature is.
+    "ocean_nature": ["coral reef", "phytoplankton", "hydrothermal vent", "kelp forest",
+                     "submersible", "deep sea", "sea ice", "research vessel",
+                     "ocean waves", "seascape", "coral", "reef", "atoll", "lagoon"],
+    "wildlife_animals": ["whale", "dolphin", "seabird", "sea turtle", "shark",
+                         "butterfly", "kelp", "seal", "fish school", "bird study",
+                         "animal study", "bird specimen"],
+    "science_tech": ["wind tunnel", "mission control", "supercomputer", "telescope",
+                     "clean room", "robotics", "microscope", "telegraph", "sundial",
+                     "celestial globe", "scientific instrument", "weather balloon",
+                     "radar dome", "laboratory research", "rocket engine"],
+    "laboratory_forensics": ["forensic", "spectrometer", "centrifuge", "petri",
+                             "microscope", "chemistry laboratory", "crime lab"],
+    "landscapes_timelapse": ["glacier", "arctic ice", "river delta", "time lapse",
+                             "coastline", "lighthouse", "city lights", "hudson river",
+                             "mountain landscape", "landscape painting"],
+    "textures_backgrounds": ["marbled paper", "textile fragment", "wallpaper design",
+                             "ornament pattern", "embroidery", "gold decorative"],
+    "americana_1930s_1970s": ["american city", "main street", "courthouse", "courtroom",
+                              "allegory of justice", "new york street", "wall street"],
+}
+
+
+def query_terms(query: str) -> list[str]:
+    """Query split into scoreable terms: the full phrase (strong, per 4-v5-k)
+    plus its individual words minus stopwords."""
+    words = [t for t in dict.fromkeys(re.split(r"[^a-z0-9]+", query.lower()))
+             if t and t not in STOPWORDS]
+    phrase = " ".join(w for w in re.split(r"[^a-z0-9]+", query.lower())
+                      if w and w not in STOPWORDS)
+    terms = list(words)
+    if " " in phrase and phrase not in terms:
+        terms.insert(0, phrase)
+    return terms
+
+
+def term_weight_sci(theme: str, term: str) -> int:
+    """+30 unambiguous domain term (ONE clears the threshold), +15 weak common word.
+
+    CONTRACT 4-v3-e / 4-v5-j-k. Multi-word terms are strong by construction.
+    """
+    t = term.lower()
+    if " " in t or t in STRONG_EXTRA_SCI.get(theme, []):
+        return 30
+    # WEAK_TERMS lists singulars; a plural query word ("lights", "clouds") is the
+    # same weak common word and must not score 30 by escaping the lookup.
+    variants = {t, t[:-1] if t.endswith("s") else t + "s"}
+    if t.endswith("es"):
+        variants.add(t[:-2])
+    return 15 if variants & WEAK_TERMS else 30
+
+
+def _hits(term: str, text: str) -> bool:
+    """Framework both-end boundary + sense guards, plus this lane's Latin plurals."""
+    if term_hits(term, text) and sense_ok(term, text):
+        return True
+    alt = LATIN_PLURAL.get(term)
+    return bool(alt) and term_hits(alt, text) and sense_ok(term, text)
+
+
+def score_item(source: str, query: str, title: str, desc: str,
+               theme: str = "") -> tuple[int, list[str], str | None]:
+    """Returns (score, matched_keywords, reject_reason|None).
+
+    CONTRACT 4-v3/v5 applied to this lane's query-based matching:
+      * both-end word boundaries + sense guards (imported term_hits/sense_ok)
+      * TITLE-relevance gate: >=1 positive term must appear in the TITLE
+      * strong-term weighting (+30) so one unambiguous term clears the threshold
+      * WEAK-ONLY CAP at 15: weak common words alone can never clear the gate
+    """
+    title = title or ""
+    text = f"{title} {desc or ''}"
+    low, t_low = text.lower(), title.lower()
     if NEG_RE.search(text):
-        return -100, ["<negative>"]
-    matched = []
-    for tok in {t for t in re.split(r"[^a-z0-9]+", query.lower())
-                if t and t not in STOPWORDS}:
-        if tok in text or (tok.endswith("s") and tok[:-1] in text) or (tok + "s") in text:
-            matched.append(tok)
-    return KW_POINTS * len(matched), matched
+        return -100, ["<negative>"], "negative"
+    matched = [t for t in query_terms(query) if _hits(t, low)]
+    title_hits = [t for t in matched if _hits(t, t_low)]
+    score = min(60, sum(term_weight_sci(theme, t) for t in matched))
+    # weak-only cap (4-v5-j): without >=1 strong term, weak words cannot reach 30
+    if matched and not any(term_weight_sci(theme, t) >= 30 for t in matched):
+        score = min(score, 15)
+    if score >= THRESHOLD[source] and not title_hits:
+        return score, matched, "title-irrelevant"
+    return score, matched, None
 
 
 def accept(source: str, score: int) -> bool:
@@ -482,7 +611,7 @@ def take_item(st: State, *, source: str, item_id: str, title: str, url: str,
               kind: str, theme: str, source_url: str, license_raw: str,
               license_decision: str, score: int, matched: list[str],
               est_bytes: int = 30 * 1024 * 1024, dry_run=False,
-              file_id: str | None = None) -> bool:
+              file_id: str | None = None, force_ext: str | None = None) -> bool:
     """Returns True if the item landed on the shelf."""
     if dry_run:
         log(f"    DRY {source}/{item_id} score={score} -> {theme} :: {title[:60]}")
@@ -493,7 +622,7 @@ def take_item(st: State, *, source: str, item_id: str, title: str, url: str,
         root = pick_root(est_bytes)
         if root is None:
             raise StorageFull()
-    ext = os.path.splitext(urllib.parse.urlparse(url).path)[1].lower() or \
+    ext = force_ext or os.path.splitext(urllib.parse.urlparse(url).path)[1].lower() or \
         (".jpg" if kind == "image" else ".mp4")
     tdir = os.path.join(root, theme)
     os.makedirs(tdir, exist_ok=True)
@@ -508,23 +637,37 @@ def take_item(st: State, *, source: str, item_id: str, title: str, url: str,
     if n is None or n < MIN_ITEM_BYTES:
         if os.path.exists(dest):
             os.remove(dest)
-        st.reject(source, item_id, "download_failed_or_tiny", {"url": url})
+        st.reject(source, item_id, "download-fail:empty-or-tiny", {"url": url},
+                  title=title, theme=theme, score=score, matched=matched)
         return False
-    ok, detail = probe_floors(dest, kind)
-    if not ok:
+    verdict, detail = probe_floors(dest, kind, theme, source)
+    if verdict == "quarantine":
+        # CONTRACT §2: a technical floor must NEVER destroy what the relevance
+        # gate approved. Sub-SD archival material goes to owner review instead.
+        qdir = os.path.join(QUARANTINE, theme)
+        os.makedirs(qdir, exist_ok=True)
+        qdest = os.path.join(qdir, os.path.basename(dest))
+        os.replace(dest, qdest)
+        dest, license_decision = qdest, "review_required"
+        log(f"    QUAR {source}/{item_id} {detail} -> {qdest}")
+    elif verdict != "ok":
         os.remove(dest)
-        st.reject(source, item_id, detail, {"url": url, "bytes": n})
+        st.reject(source, item_id, f"tech:{detail}", {"url": url, "bytes": n},
+                  title=title, theme=theme, score=score, matched=matched)
         return False
     sha = sha256_file(dest)
     if sha in st.known_sha:
         os.remove(dest)
-        st.reject(source, item_id, "sha_dup", {"sha256": sha})
+        st.reject(source, item_id, "dup-sha256", {"sha256": sha},
+                  title=title, theme=theme, score=score, matched=matched)
         return False
     rec = {"id": str(item_id), "source": source, "source_url": source_url,
            "title": title, "license_field_raw": license_raw,
            "license_decision": license_decision, "theme": theme,
            "file_path": dest, "bytes": n, "sha256": sha, "fetched_at": utcnow(),
            "relevance_score": score, "matched_keywords": matched}
+    if verdict == "quarantine":
+        rec["quarantine_reason"] = detail
     st.ledger(source, rec)
     st.add(source, item_id, sha)
     log(f"    OK  {source}/{item_id} {n/1e6:.1f}MB {detail} -> {dest}")
@@ -566,10 +709,14 @@ def run_nasa(st: State, limit: int, dry_run: bool) -> int:
                     desc = (meta.get("description") or "") + " " + \
                         " ".join(meta.get("keywords") or [])
                     if "copyright" in desc.lower():
-                        st.reject("nasa", nid, "copyright_notice_in_description")
+                        st.reject("nasa", nid, "license:copyright-notice",
+                              title=title, theme=theme)
                         continue
-                    score, matched = score_item("nasa", query, title, desc)
-                    if not accept("nasa", score):
+                    score, matched, why = score_item("nasa", query, title, desc,
+                                                     theme)
+                    if why or not accept("nasa", score):
+                        st.reject("nasa", nid, why or "relevance<30", title=title,
+                                  theme=theme, score=score, matched=matched)
                         st.known_ids.add(("nasa", nid))  # session-only skip
                         continue
                     coll = get_json(
@@ -666,17 +813,27 @@ def run_noaa(st: State, limit: int, dry_run: bool) -> int:
                     if "noaa" not in (credit + " " + ftitle + " " + desc).lower():
                         st.known_ids.add(("noaa", ftitle))
                         continue  # source purity: NOAA-credited only
-                    score, matched = score_item("noaa", query, ftitle, desc)
-                    if not accept("noaa", score):
+                    score, matched, why = score_item("noaa", query, ftitle, desc,
+                                                     theme)
+                    if why or not accept("noaa", score):
+                        st.reject("noaa", ftitle, why or "relevance<30", title=ftitle,
+                                  theme=theme, score=score, matched=matched)
                         st.known_ids.add(("noaa", ftitle))
                         continue
                     kind = "video" if ii.get("mime", "").startswith("video") \
                         else "image"
-                    if kind == "image" and \
-                            max(ii.get("width", 0), ii.get("height", 0)) < \
-                            MIN_IMAGE_LONG_SIDE:
-                        st.known_ids.add(("noaa", ftitle))
-                        continue
+                    iw, ih = ii.get("width", 0), ii.get("height", 0)
+                    if kind == "image":
+                        # pre-download floor (saves the fetch); archival images keep
+                        # the 1200px floor per CONTRACT §2, 1920 for textures.
+                        floor = 1920 if theme == "textures_backgrounds" else \
+                            MIN_IMAGE_LONG_SIDE
+                        if max(iw, ih) < floor:
+                            st.reject("noaa", ftitle,
+                                      f"tech:image-below-{floor}px({max(iw, ih)})",
+                                      title=ftitle, theme=theme, score=score,
+                                      matched=matched)
+                            continue
                     dec = "cc0" if re.search(r"cc0", lic, re.I) else "pd"
                     if take_item(
                             st, source="noaa", item_id=ftitle,
@@ -724,8 +881,10 @@ def run_met(st: State, limit: int, dry_run: bool) -> int:
                             ("objectName", "medium", "culture", "period",
                              "artistDisplayName", "classification")) + " " + \
                 " ".join(t.get("term", "") for t in (obj.get("tags") or []))
-            score, matched = score_item("met", query, title, desc)
-            if not accept("met", score):
+            score, matched, why = score_item("met", query, title, desc, theme)
+            if why or not accept("met", score):
+                st.reject("met", oid, why or "relevance<30", title=title,
+                          theme=theme, score=score, matched=matched)
                 st.known_ids.add(("met", str(oid)))
                 continue
             if take_item(
@@ -782,8 +941,11 @@ def run_smithsonian(st: State, limit: int, dry_run: bool) -> int:
                     continue
                 title = row.get("title") or rid
                 desc = json.dumps(content.get("freetext", {}))[:2000]
-                score, matched = score_item("smithsonian", query, title, desc)
-                if not accept("smithsonian", score):
+                score, matched, why = score_item("smithsonian", query, title, desc,
+                                                 theme)
+                if why or not accept("smithsonian", score):
+                    st.reject("smithsonian", rid, why or "relevance<30", title=title,
+                              theme=theme, score=score, matched=matched)
                     st.known_ids.add(("smithsonian", rid))
                     continue
                 if take_item(
@@ -832,17 +994,43 @@ def run_nypl(st: State, limit: int, dry_run: bool) -> int:
                 if not uuid or st.has("nypl", uuid):
                     continue
                 title = res.get("title") or uuid
-                score, matched = score_item("nypl", query, title, "")
-                if not accept("nypl", score):
+                score, matched, why = score_item("nypl", query, title, "", theme)
+                if why or not accept("nypl", score):
+                    st.reject("nypl", uuid, why or "relevance<30", title=title,
+                              theme=theme, score=score, matched=matched)
                     st.known_ids.add(("nypl", uuid))
                     continue
                 img_id = res.get("imageID")
                 if not img_id:
                     continue
-                url = (f"https://images.nypl.org/index.php?id={img_id}&t=g")
+                # IIIF pre-check: read the TRUE master size before downloading.
+                # images.nypl.org?t=g 404s whenever the master is small, which
+                # burned a slow request per item; info.json is ~0.3s and also
+                # lets us reject below-floor scans without any download. We take
+                # full/full (native size) — NYPL's IIIF supports sizeAboveFull
+                # but that is upscaling, never real detail, so we never use it.
+                info = get_json(
+                    f"https://iiif.nypl.org/iiif/2/{urllib.parse.quote(str(img_id))}"
+                    f"/info.json", tries=1, timeout=30)
+                time.sleep(RATE["nypl"])
+                if not info:
+                    st.reject("nypl", uuid, "download-fail:iiif-info-unavailable",
+                              {"image_id": img_id}, title=title, theme=theme,
+                              score=score, matched=matched)
+                    continue
+                iw, ih = int(info.get("width") or 0), int(info.get("height") or 0)
+                if max(iw, ih) < MIN_IMAGE_LONG_SIDE:
+                    st.reject("nypl", uuid,
+                              f"tech:image-below-{MIN_IMAGE_LONG_SIDE}px"
+                              f"({max(iw, ih)})", {"image_id": img_id},
+                              title=title, theme=theme, score=score,
+                              matched=matched)
+                    continue
+                url = (f"https://iiif.nypl.org/iiif/2/"
+                       f"{urllib.parse.quote(str(img_id))}/full/full/0/default.jpg")
                 if take_item(
                         st, source="nypl", item_id=uuid, title=title, url=url,
-                        kind="image", theme=theme,
+                        kind="image", theme=theme, force_ext=".jpg",
                         source_url=res.get("itemLink", ""),
                         license_raw="publicDomainOnly=true (NYPL)",
                         license_decision="pd", score=score, matched=matched,
@@ -889,8 +1077,10 @@ def run_rawpixel(st: State, limit: int, dry_run: bool) -> int:
                 if not url:
                     continue
                 title = res.get("image_title") or res.get("name") or rid
-                score, matched = score_item("rawpixel", query, title, "")
-                if not accept("rawpixel", score):
+                score, matched, why = score_item("rawpixel", query, title, "", theme)
+                if why or not accept("rawpixel", score):
+                    st.reject("rawpixel", rid, why or "relevance<30", title=title,
+                              theme=theme, score=score, matched=matched)
                     continue
                 if take_item(
                         st, source="rawpixel", item_id=rid, title=title,

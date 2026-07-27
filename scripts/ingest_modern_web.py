@@ -94,6 +94,10 @@ sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, SCRIPTS_DIR)
 
+# CONTRACT §5 append safety: the lane name is read at framework import time and
+# selects `rejects_web.jsonl`, so it must be set BEFORE the import below.
+os.environ.setdefault("PD_INGEST_LANE", "web")
+
 import ingest_archive_sources as base  # noqa: E402  shared plumbing (see docstring)
 
 REPO = base.REPO
@@ -102,6 +106,45 @@ LEDGER_DIR = base.LEDGER_DIR
 QUARANTINE = base.QUARANTINE
 NET = base.NET
 log = base.log
+
+# Lane-local network policy: the shared Net.download waits up to 300s on a
+# silent socket (cdn.freesound.org stalls mid-stream were measured costing
+# 5min/item). This lane uses (30s connect, 90s read) and ONE retry instead.
+# Patched on base.Net for THIS process only — sibling lanes are separate
+# interpreters and keep their own policy.
+def _download_with_retry(self, url: str, dest: str, *,
+                         headers: dict | None = None) -> tuple[int, str]:
+    last_err: Exception | None = None
+    for attempt in (1, 2):
+        self._wait(url)
+        h = hashlib.sha256()
+        n = 0
+        try:
+            with self.s.get(url, stream=True, timeout=(30, 90),
+                            headers=headers or {}) as r:
+                r.raise_for_status()
+                tmp = dest + ".part"
+                with open(tmp, "wb") as f:
+                    for chunk in r.iter_content(1024 * 512):
+                        f.write(chunk)
+                        h.update(chunk)
+                        n += len(chunk)
+                        if n > base.MAX_ITEM_BYTES:
+                            raise ValueError(f"file exceeds MAX_ITEM_BYTES: {url}")
+            os.replace(tmp, dest)
+            return n, h.hexdigest()
+        except ValueError:
+            raise                       # size cap: no point retrying
+        except Exception as e:  # noqa: BLE001
+            last_err = e
+            if attempt == 1:
+                log(f"  dl-retry after {e.__class__.__name__}: {url[:80]}")
+    raise last_err  # type: ignore[misc]
+
+
+base.Net.download = _download_with_retry
+
+RULE_VERSION = "relevance-v5+floors-source-aware (CONTRACT 2026-07-28)"
 
 D_ROOT = r"D:\pd-archive"
 D_DRIVE = "D:\\"
@@ -157,8 +200,88 @@ USAGE_TAG = {"sfx_environment": "sfx", "sfx_mechanical": "sfx",
              "bgm_general": "bgm"}
 AUDIO_ONLY_SOURCES = {"pixabay_extra", "freesound"}   # owner: audio via these only
 
+# ---- STRONG terms for THIS lane's themes (CONTRACT §4 relevance-v5-j/k) ----
+# The weak-only cap requires >=1 STRONG term or a full query phrase. The
+# framework's WEAK_TERMS list (built for archival titles) contains almost the
+# whole modern-stock and SFX vocabulary — "ocean", "waves", "city", "rain",
+# "wind", "door", "ambience" are all weak — so WITHOUT these entries every
+# legitimate stock clip and CC0 field recording in this lane caps at 15 and is
+# discarded. Ambiguity is domain-relative (contract §4-v5-k): for `ocean_nature`
+# "ocean waves" IS the subject matter, and for `sfx_environment` so is "rain".
+# Kept lane-local (merged into base.STRONG_EXTRA at import) rather than edited
+# into the shared file, which sibling lanes are actively rewriting.
+LANE_STRONG: dict[str, list[str]] = {
+    "ocean_nature": ["ocean", "ocean waves", "sea waves", "crashing waves",
+                     "breaking waves", "coral reef", "underwater", "coastline",
+                     "shoreline", "seascape", "surf", "tide", "lagoon", "atoll",
+                     "kelp", "sea cliffs", "aerial coast"],
+    "wildlife_animals": ["wildlife", "deer", "elephant", "lion", "savanna",
+                         "flock", "herd", "wolf", "birdsong", "eagle", "fox",
+                         "bison", "zebra", "giraffe", "antelope", "safari",
+                         "bear", "owl", "whale", "dolphin"],
+    # "city" is the DOMAIN term here (contract §4-v5-k: ambiguity is per-word and
+    # domain-relative), and city PROPER NOUNS are unmistakable. Bare "street" is
+    # deliberately NOT promoted — that is the v5-j trap ("Street Fighter Mix").
+    "world_cities": ["city", "urban", "skyline", "cityscape", "downtown",
+                     "metropolis", "city skyline", "city street", "city lights",
+                     "city at night", "city traffic", "aerial city", "old town",
+                     "subway", "traffic", "boulevard", "plaza", "timelapse",
+                     "rooftops", "crosswalk", "intersection", "street traffic",
+                     "tokyo", "london", "paris", "new york", "mexico city",
+                     "berlin", "rome", "madrid", "istanbul", "shanghai",
+                     "hong kong", "dubai", "singapore", "bangkok"],
+    "japan": ["japan", "japanese", "tokyo", "kyoto", "osaka", "mount fuji",
+              "torii", "shrine", "pagoda", "shinto", "shinkansen", "ryokan",
+              "tokyo street", "kyoto temple", "neon street", "temple"],
+    "landscapes_timelapse": ["timelapse", "time-lapse", "canyon", "dunes",
+                             "waterfall", "glacier", "valley", "summit",
+                             "peaks", "plateau", "fjord", "alpine", "sunrise",
+                             "sunset", "mountain landscape", "desert canyon"],
+    "textures_backgrounds": ["bokeh", "grunge", "marble", "parchment",
+                             "ink in water", "paper texture", "wall texture",
+                             "stone texture", "marble texture", "smoke background",
+                             "gradient", "concrete", "canvas", "film grain"],
+    "science_tech": ["circuit board", "circuitry", "microchip", "semiconductor",
+                     "mainframe", "observatory", "telescope", "robot", "robotic",
+                     "laboratory", "server rack", "data center", "electronics",
+                     "microscope", "vintage computer"],
+    "small_town": ["storefront", "clapboard", "rural road", "diner",
+                   "grain silo", "church steeple"],
+    "money_banking": ["banknote", "dollar bills", "currency", "coins",
+                      "safe deposit", "ticker", "gold bars", "money counting"],
+    "police_modern": ["police", "patrol", "siren", "crime scene", "police car",
+                      "police tape", "squad car", "emergency lights", "bodycam"],
+    # ---- AUDIO themes: terse SFX titles live or die on these ----
+    "sfx_environment": ["rain", "rainfall", "thunder", "thunderstorm", "downpour",
+                        "drizzle", "wind", "gust", "campfire", "crackling",
+                        "fireplace", "bonfire", "stream", "creek", "brook",
+                        "waterfall", "surf", "crickets", "birdsong",
+                        "dawn chorus", "cicadas", "seagulls", "leaves rustling"],
+    "sfx_mechanical": ["door", "doorknob", "creak", "hinge", "latch", "clank",
+                       "clatter", "typewriter", "shutter", "ratchet", "engine",
+                       "motor", "gears", "switch", "lever", "keyboard", "typing",
+                       "telephone", "dial", "clock", "ticking", "mechanism",
+                       "metal impact", "door slam", "train horn"],
+    "sfx_human_movement": ["footsteps", "footstep", "walking", "gravel",
+                           "stairs", "staircase", "page turn", "paper rustle",
+                           "crumple", "knock", "cloth", "fabric", "rustle",
+                           "shuffle", "boots", "writing"],
+    "ambience_beds": ["room tone", "roomtone", "ambience", "atmosphere", "drone",
+                      "ambient bed", "tunnel", "underground", "suspense",
+                      "air conditioning", "refrigerator hum", "background ambience"],
+    "bgm_general": ["cinematic", "underscore", "instrumental", "piano",
+                    "orchestral", "soundtrack", "melancholic", "suspenseful",
+                    "documentary music", "background music", "ambient music",
+                    "tension"],
+}
+
 for _t, _q in AUDIO_THEMES.items():
     base.THEMES.setdefault(_t, {"video": [], "image": [], "audio": _q["audio"]})
+for _t, _terms in LANE_STRONG.items():
+    base.STRONG_EXTRA.setdefault(_t, [])
+    base.STRONG_EXTRA[_t] += [t for t in _terms
+                              if t not in base.STRONG_EXTRA[_t]]
+base._theme_pos_cache.clear()      # STRONG_EXTRA feeds theme_terms(); drop cache
 base.SRC_THRESHOLD.setdefault("pixabay_extra", 20)
 base.HOST_INTERVAL.setdefault("pixabay.com", 1.0)
 base.HOST_INTERVAL.setdefault("api.unsplash.com", 1.0)
@@ -166,6 +289,23 @@ base.HOST_INTERVAL.setdefault("freesound.org", 1.0)
 
 ALL_THEMES = VIDEO_THEMES + list(AUDIO_THEMES)
 PASS = 1  # pass N == page N of each paginated source (set by main loop)
+
+
+# ------------------------------------------------------- relevance (shared) ----
+# Scoring lives in base.relevance() — since 2026-07-28 it anchors word
+# boundaries at BOTH ends (so "court" no longer matches "courtesy"/"courtyard")
+# and enforces a TITLE gate (>=1 positive term in the TITLE, not merely the
+# description). This lane DELEGATES to it (no second implementation) and adds
+# exactly one lane-specific nuance:
+#   AUDIO items are scored on terse filenames ("rumble.wav", "Foley_take_03"),
+#   where the subject matter lives in the TAG list. For audio we therefore feed
+#   `title + tags` as the title argument, so the tag list can satisfy the title
+#   gate. Video/image titles are descriptive and pass title-only, unchanged.
+def score_item(theme: str, title: str, desc: str = "",
+               tag_text: str = "") -> tuple[int, list[str], list[str], bool]:
+    """(score, matched, negative_hits, title_ok) via the shared scorer."""
+    title_text = f"{title} {tag_text}".strip() if tag_text else title
+    return base.relevance(theme, title_text, desc)
 
 
 # --------------------------------------------------- factory shelf dedup ----
@@ -273,7 +413,7 @@ def pick_root(theme: str, decision: str) -> str | None:
 def take_item(ledger: base.Ledger, *, source: str, item_id: str, title: str,
               source_url: str, download_url: str, kind: str, theme: str,
               license_raw: str, decision: str, default_ext: str, dry_run: bool,
-              usage_tag: str | None = None, desc: str = "",
+              usage_tag: str | None = None, desc: str = "", tag_text: str = "",
               dl_headers: dict | None = None) -> bool:
     """Vet -> download -> validate -> ledger (this lane's contract schema).
     Mirrors the sibling take() flow but writes matched_keywords/usage_tag and
@@ -281,13 +421,19 @@ def take_item(ledger: base.Ledger, *, source: str, item_id: str, title: str,
     if ledger.seen(source, item_id):
         return False
     if base.PERSON_RE.search(title or ""):
-        base.reject_log(source, item_id, theme, "person-filter")
+        base.reject_log(source, item_id, theme, "person-filter", title=title)
         return False
-    score, matched, negs = base.relevance(theme, f"{title} {desc}")
+    score, matched, negs, title_ok = score_item(theme, title, desc, tag_text)
     threshold = base.SRC_THRESHOLD.get(source, base.DEFAULT_THRESHOLD)
+    # CONTRACT §4-v3-g: reject rows MUST carry the title — without it the
+    # false-negative direction is invisible (it is what exposed v3 and v5).
+    if not title_ok:           # off-theme item riding on a long description
+        base.reject_log(source, item_id, theme, "title-irrelevant",
+                        score, matched, negs, title=title)
+        return False
     if score < threshold:
         base.reject_log(source, item_id, theme, f"relevance<{threshold}",
-                        score, matched, negs)
+                        score, matched, negs, title=title)
         return False
     root = pick_root(theme, decision)
     if root is None:
@@ -305,7 +451,8 @@ def take_item(ledger: base.Ledger, *, source: str, item_id: str, title: str,
     except Exception as e:  # noqa: BLE001
         log(f"  dl-fail: {e}")
         base.reject_log(source, item_id, theme,
-                        f"download-fail:{e.__class__.__name__}", score)
+                        f"download-fail:{e.__class__.__name__}", score,
+                        title=title)
         for p in (dest, dest + ".part"):
             if os.path.exists(p):
                 try:
@@ -316,14 +463,27 @@ def take_item(ledger: base.Ledger, *, source: str, item_id: str, title: str,
     if sha in ledger.shas:   # content dedup across both lanes AND factory shelf
         log(f"  dup-sha, removed: {fname[:70]}")
         os.remove(dest)
-        base.reject_log(source, item_id, theme, "dup-sha256", score)
+        base.reject_log(source, item_id, theme, "dup-sha256", score, title=title)
         return False
-    ok, why = base.validate_media(dest, kind, theme)
-    if not ok:
+    # CONTRACT §4.2: floors are SOURCE-AWARE and must never silently destroy what
+    # the relevance gate approved — a "quarantine" verdict moves the file to H:
+    # for owner review instead of deleting it.
+    verdict, why = base.validate_media(dest, kind, theme, source)
+    quarantine_reason = ""
+    if verdict == "reject":
         log(f"  reject ({why}), removed: {fname[:70]}")
         os.remove(dest)
-        base.reject_log(source, item_id, theme, f"tech:{why}", score)
+        base.reject_log(source, item_id, theme, f"tech:{why}", score, title=title)
         return False
+    if verdict == "quarantine":
+        q_root = os.path.join(QUARANTINE, theme)
+        os.makedirs(q_root, exist_ok=True)
+        q_dest = dest_path(q_root, source, item_id, title,
+                           os.path.splitext(dest)[1].lstrip("."))
+        os.replace(dest, q_dest)
+        dest, fname = q_dest, os.path.basename(q_dest)
+        decision, quarantine_reason = "review_required", why
+        log(f"  QUARANTINE ({why}): {fname[:70]}")
     rec = {
         "id": str(item_id), "source": source, "source_url": source_url,
         "title": title, "license_field_raw": license_raw[:500],
@@ -334,6 +494,8 @@ def take_item(ledger: base.Ledger, *, source: str, item_id: str, title: str,
     }
     if usage_tag:
         rec["usage_tag"] = usage_tag
+    if quarantine_reason:
+        rec["quarantine_reason"] = quarantine_reason
     ledger.record(rec)
     log(f"  OK {decision:>15} s={score:3d} {nbytes/1e6:7.1f}MB {fname[:74]}")
     if ledger.theme_items.get(theme, 0) % base.QC_SHEET_EVERY == 0:
@@ -420,7 +582,8 @@ def src_mixkit(ledger: base.Ledger, theme: str, limit: int, dry_run: bool) -> in
                 continue
             vid = m.group(1)
             if "#videoFree" not in lic:      # paid/other tier -> not ours
-                base.reject_log("mixkit", vid, theme, f"license-not-free:{lic[:80]}")
+                base.reject_log("mixkit", vid, theme,
+                                f"license-not-free:{lic[:80]}", title=title)
                 continue
             if take_item(ledger, source="mixkit", item_id=vid, title=title or vid,
                          source_url=page, download_url=url, kind="video",
@@ -561,7 +724,8 @@ def src_pixabay_extra(ledger: base.Ledger, theme: str, limit: int,
                 break
             vid = str(hit["id"])
             if pixabay_dup(ledger, "v", vid):
-                base.reject_log("pixabay_extra", f"v_{vid}", theme, "dup-source-id")
+                base.reject_log("pixabay_extra", f"v_{vid}", theme,
+                                "dup_existing_id", title=hit.get("tags", "")[:80])
                 continue
             files = hit.get("videos", {})
             best = files.get("large") or files.get("medium") or files.get("small") or {}
@@ -590,7 +754,8 @@ def src_pixabay_extra(ledger: base.Ledger, theme: str, limit: int,
                 break
             pid = str(hit["id"])
             if pixabay_dup(ledger, "i", pid):
-                base.reject_log("pixabay_extra", f"i_{pid}", theme, "dup-source-id")
+                base.reject_log("pixabay_extra", f"i_{pid}", theme,
+                                "dup_existing_id", title=hit.get("tags", "")[:80])
                 continue
             url = hit.get("fullHDURL") or hit.get("imageURL") or ""
             if not url:
@@ -704,13 +869,16 @@ def src_freesound(ledger: base.Ledger, theme: str, limit: int, dry_run: bool) ->
             url = (snd.get("previews") or {}).get("preview-hq-mp3", "")
             if not url:
                 continue
-            fs_desc = (f"{snd.get('description', '')} "
-                       f"{' '.join(snd.get('tags', []) or [])}")[:600]
+            # tags feed the TITLE gate (SFX names are terse: "rumble.wav");
+            # the prose description only feeds the score.
+            fs_tags = " ".join(snd.get("tags", []) or [])[:300]
+            fs_desc = str(snd.get("description", ""))[:600]
             if take_item(ledger, source="freesound", item_id=sid,
                          title=snd.get("name", ""), source_url=snd.get("url", ""),
                          download_url=url, kind="audio", theme=theme,
                          license_raw=lic, decision="cc0", default_ext="mp3",
-                         dry_run=dry_run, usage_tag=USAGE_TAG[theme], desc=fs_desc):
+                         dry_run=dry_run, usage_tag=USAGE_TAG[theme],
+                         desc=fs_desc, tag_text=fs_tags):
                 got += 1
     return got
 
@@ -718,7 +886,96 @@ def src_freesound(ledger: base.Ledger, theme: str, limit: int, dry_run: bool) ->
 ADAPTERS = {"mixkit": src_mixkit, "coverr": src_coverr,
             "pixabay_extra": src_pixabay_extra,
             "unsplash": src_unsplash, "freesound": src_freesound}
-SOURCE_ORDER = ["mixkit", "coverr", "pixabay_extra", "unsplash", "freesound"]
+# freesound first: the audio lane was the archive's blocker (owner priority);
+# unsplash next (small curated pulls finish fast), then the big video sources.
+SOURCE_ORDER = ["freesound", "unsplash", "mixkit", "coverr", "pixabay_extra"]
+
+
+def retro_audit(dry_run: bool) -> int:
+    """Re-score every item this lane has already shelved under the CORRECTED
+    gate (both-end boundaries + title gate) and purge the failures.
+
+    Fairness note: at ingest, mixkit/coverr/pixabay_extra/unsplash were scored
+    on the title alone (desc=""), so title-only re-scoring reproduces their
+    live gate exactly. Freesound alone also used tags/description, so its tags
+    are re-fetched from the API (1 req/item, polite) before judging — otherwise
+    terse SFX filenames would be purged unfairly.
+
+    Failures: file deleted, tombstone row written to rejects.jsonl, record
+    dropped from the ledger (ledger rewritten atomically)."""
+    key = os.environ.get("FREESOUND_API_KEY", "")
+    purged_items = purged_bytes = kept = 0
+    for source in SOURCE_ORDER:
+        path = os.path.join(LEDGER_DIR, f"{source}.jsonl")
+        if not os.path.exists(path):
+            continue
+        keep_lines: list[str] = []
+        s_purged = 0
+        with open(path, encoding="utf-8") as f:
+            records = [line for line in f if line.strip()]
+        for line in records:
+            try:
+                rec = json.loads(line)
+            except Exception:  # noqa: BLE001
+                keep_lines.append(line)
+                continue
+            theme = rec.get("theme", "")
+            title = rec.get("title", "")
+            if theme not in base.THEMES:
+                keep_lines.append(line)
+                continue
+            tag_text = ""
+            if source == "freesound" and key:
+                try:      # tags carried the meaning at ingest — refetch them
+                    d = NET.get_json(
+                        f"https://freesound.org/apiv2/sounds/{rec['id']}/",
+                        params={"token": key, "fields": "tags,description"})
+                    tag_text = " ".join(d.get("tags", []) or [])[:300]
+                except Exception:  # noqa: BLE001
+                    tag_text = ""
+            score, matched, negs, title_ok = score_item(theme, title, "", tag_text)
+            threshold = base.SRC_THRESHOLD.get(source, base.DEFAULT_THRESHOLD)
+            reason = ("title-irrelevant" if not title_ok
+                      else f"relevance<{threshold}" if score < threshold else "")
+            if not reason:
+                keep_lines.append(line)
+                kept += 1
+                continue
+            fp = rec.get("file_path", "")
+            nbytes = int(rec.get("bytes", 0) or 0)
+            log(f"  PURGE [{source}] s={score:3d} {theme:20} {title[:48]} "
+                f"({reason})")
+            if not dry_run:
+                try:
+                    if fp and os.path.exists(fp):
+                        os.remove(fp)
+                except OSError as e:
+                    log(f"    delete failed: {e}")
+                base.reject_log(source, rec.get("id", ""), theme,
+                                f"retro-audit:{reason}", score, matched, negs,
+                                title=title)
+                # CONTRACT §4-v3-d tombstone (full record + why it was removed)
+                base.atomic_append(
+                    os.path.join(LEDGER_DIR, f"{source}_dedup_removed.jsonl"),
+                    json.dumps(dict(rec,
+                                    removed_at=datetime.now(timezone.utc)
+                                    .isoformat(timespec="seconds"),
+                                    removal_reason=reason, rescore=score,
+                                    rescore_matched=matched,
+                                    rule_version=RULE_VERSION),
+                               ensure_ascii=False))
+            purged_items += 1
+            purged_bytes += nbytes
+            s_purged += 1
+        if s_purged and not dry_run:
+            tmp = path + ".part"
+            with open(tmp, "w", encoding="utf-8") as f:
+                f.writelines(keep_lines)
+            os.replace(tmp, path)
+        log(f"retro-audit [{source}]: {len(records)} records, {s_purged} purged")
+    log(f"RETRO-AUDIT {'(dry-run) ' if dry_run else ''}total: {purged_items} "
+        f"items purged, {purged_bytes/GB:.3f} GB reclaimed, {kept} kept")
+    return 0
 
 
 def robots_verdicts(sources: list[str]) -> dict[str, str]:
@@ -754,9 +1011,14 @@ def main() -> int:
     ap.add_argument("--passes", type=int, default=1000,
                     help="max passes (pass N reads page N of each source)")
     ap.add_argument("--dry-run", action="store_true", help="list, don't download")
+    ap.add_argument("--retro-audit", action="store_true",
+                    help="re-score already-shelved items under the corrected "
+                         "gate, delete+tombstone failures, then exit")
     args = ap.parse_args()
 
     base.load_env()
+    if args.retro_audit:
+        return retro_audit(args.dry_run)
     os.makedirs(LEDGER_DIR, exist_ok=True)
     if os.path.isdir(D_DRIVE):
         os.makedirs(D_ROOT, exist_ok=True)
