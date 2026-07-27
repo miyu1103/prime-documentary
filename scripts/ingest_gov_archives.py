@@ -180,8 +180,12 @@ THEMES: dict[str, dict[str, list[str]]] = {
     "courtroom_justice": {
         "video": ["courtroom", "courthouse", "trial court"],
         "image": ["courtroom interior", "courthouse building", "county courthouse"],
-        "kw": ["judge", "gavel", "justice", "judicial", "tribunal"],
-        "neg": ["tennis court", "basketball court", "squash court"],
+        "kw": ["judge", "gavel", "justice", "judicial", "tribunal", "verdict",
+               "sentencing", "jury", "prosecution", "defendant", "war crimes trial"],
+        # non-courtroom senses of the strong term "trial" / of "court"
+        "neg": ["tennis court", "basketball court", "squash court", "courtyard",
+                "trial run", "clinical trial", "field trial", "sea trial",
+                "trial flight", "test trial"],
     },
     "prison_jail": {
         "video": ["prison", "penitentiary", "jail"],
@@ -323,14 +327,49 @@ def theme_terms(theme: str) -> tuple[set[str], list[str]]:
     return _theme_terms_cache[theme]
 
 
+# Unambiguous, high-signal terms: ONE of these identifies the theme on its own
+# (an archival title reading "WAR CRIMES TRIALS, NUREMBERG" is courtroom footage
+# even though it matches a single keyword). Scored +30 instead of +15 so a lone
+# strong term reaches the contract's >=30 archive threshold without lowering it.
+# Measured need: 61 of 220 courtroom rejects were genuine trial footage at s=15.
+STRONG_TERMS: dict[str, set[str]] = {
+    "courtroom_justice": {"courtroom", "courthouse", "trial", "tribunal",
+                          "verdict", "jury", "judiciary"},
+    "prison_jail": {"prison", "penitentiary", "jail", "inmate", "reformatory",
+                    "cellblock", "correctional"},
+    "police_period": {"police", "patrolman", "constable", "precinct"},
+    "newspapers_printing": {"linotype", "printing", "newsroom", "pressroom",
+                            "newspaper"},
+    "government_buildings": {"capitol", "courthouse", "statehouse"},
+    "navy_harbor": {"shipyard", "harbor", "harbour", "drydock", "battleship",
+                    "destroyer"},
+    "period_telephone_tech": {"switchboard", "telegraph", "telephone"},
+    "money_banking": {"vault", "mint", "treasury", "currency"},
+    "chicago_city": {"chicago"},
+    "japan": {"japan", "japanese", "tokyo", "kyoto", "yokohama"},
+    "newspapers": set(),
+    "war_history": {"battlefield", "artillery", "infantry", "bombardment"},
+    "small_town": {"village"},
+    "americana_1930s_1970s": {"storefront", "diner"},
+    "uk_highstreet_postoffice": {"postbox", "high street", "post office"},
+    "uk_period": {"london", "britain", "england"},
+    "world_cities": {"skyline"},
+}
+
+
 def relevance(theme: str, text: str) -> tuple[int, list[str], list[str]]:
     """Score 0-100 from metadata text vs theme keywords (same formula as the
     shared framework: +15/distinct positive term cap 60, +25 full phrase,
     -25 per negative hit). Returns (score, matched_keywords, negative_hits)."""
     low = (text or "").lower()
     pos, phrases = theme_terms(theme)
-    matched = sorted({t for t in pos if re.search(rf"\b{re.escape(t)}", low)})
-    score = min(60, 15 * len(matched))
+    # NOTE: a leading-only \b (as in the shared framework) makes "court" match
+    # "courtesy"/"courtyard" and silently admits off-theme items at exactly the
+    # threshold. Anchor both ends, allowing plural/possessive suffixes.
+    strong = STRONG_TERMS.get(theme, set())
+    matched = sorted({t for t in pos | strong
+                      if re.search(rf"\b{re.escape(t)}(?:s|es|'s)?\b", low)})
+    score = min(60, sum(30 if t in strong else 15 for t in matched))
     if any(p in low for p in phrases):
         score += 25
     negs = [n for n in GLOBAL_NEG + THEMES[theme].get("neg", []) if n in low]
@@ -339,17 +378,20 @@ def relevance(theme: str, text: str) -> tuple[int, list[str], list[str]]:
 
 
 def reject_log(source: str, item_id: str, theme: str, reason: str,
-               score: int = -1, matched=None, negs=None) -> None:
-    """Compact per-item rejects log (skips never enter the media ledgers)."""
+               score: int = -1, matched=None, negs=None, title: str = "") -> None:
+    """Compact per-item rejects log (skips never enter the media ledgers).
+    CONTRACT §5 fields plus `title` — without it, tuning a threshold means
+    re-querying the APIs to find out what was actually thrown away."""
     try:
         os.makedirs(LEDGER_DIR, exist_ok=True)
+        rec = {"ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+               "source": source, "id": str(item_id)[:200], "theme": theme,
+               "reason": reason, "score": score,
+               "matched": matched or [], "neg": negs or []}
+        if title:
+            rec["title"] = title[:200]
         with open(os.path.join(LEDGER_DIR, "rejects.jsonl"), "a", encoding="utf-8") as f:
-            f.write(json.dumps({
-                "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                "source": source, "id": str(item_id)[:200], "theme": theme,
-                "reason": reason, "score": score,
-                "matched": matched or [], "neg": negs or []},
-                ensure_ascii=False) + "\n")
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
     except OSError:
         pass
 
@@ -748,15 +790,22 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
     if ledger.seen(source, item_id):
         return False
     if ledger.in_existing_index(source, item_id):   # CONTRACT §6.3 pre-download
-        reject_log(source, item_id, theme, "dup_existing_id")
+        reject_log(source, item_id, theme, "dup_existing_id", title=title)
         return False
     if PERSON_RE.search(title or ""):
-        reject_log(source, item_id, theme, "person-filter")
+        reject_log(source, item_id, theme, "person-filter", title=title)
         return False
     score, matched, negs = relevance(theme, f"{title} {desc}")
     if score < DEFAULT_THRESHOLD:
         reject_log(source, item_id, theme, f"relevance<{DEFAULT_THRESHOLD}",
-                   score, matched, negs)
+                   score, matched, negs, title=title)
+        return False
+    # The item must be ABOUT the theme, not merely mention it: at least one
+    # positive term has to appear in the TITLE. Without this, an incidental word
+    # in a long scope-and-content note is enough to clear the threshold (an
+    # unrelated film scored exactly 30 on two scope-note words alone).
+    if relevance(theme, title)[0] == 0:
+        reject_log(source, item_id, theme, "title-irrelevant", score, matched, negs, title=title)
         return False
     if decision == "review_required":
         if drive_free(QUAR_DRIVE) <= QUAR_FLOOR:
@@ -776,7 +825,7 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
         nbytes, sha = NET.download(download_url, dest)
     except Exception as e:  # noqa: BLE001
         log(f"  dl-fail: {e}")
-        reject_log(source, item_id, theme, f"download-fail:{e.__class__.__name__}", score)
+        reject_log(source, item_id, theme, f"download-fail:{e.__class__.__name__}", score, title=title)
         for p in (dest, dest + ".part"):
             if os.path.exists(p):
                 try:
@@ -788,13 +837,13 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
         reason = "dup_existing_sha" if sha in ledger.index_shas else "dup-sha256"
         log(f"  {reason}, removed: {os.path.basename(dest)[:70]}")
         os.remove(dest)
-        reject_log(source, item_id, theme, reason, score)
+        reject_log(source, item_id, theme, reason, score, title=title)
         return False
     ok, why = validate_media(dest, kind)
     if not ok:
         log(f"  reject ({why}), removed: {os.path.basename(dest)[:70]}")
         os.remove(dest)
-        reject_log(source, item_id, theme, f"tech:{why}", score)
+        reject_log(source, item_id, theme, f"tech:{why}", score, title=title)
         return False
     rec = {
         "id": str(item_id), "source": source, "source_url": source_url,
