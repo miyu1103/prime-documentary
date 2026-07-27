@@ -768,3 +768,18 @@ cleared by owner decision on production date. Two of them (92280, 91009) turned 
 to carry on-screen publication evidence and two (7403239, 90805) did not. Date-based
 PD still needs evidenced US publication, so the gov lane should keep returning
 `R3/donated-collection` for donated-collection items and let a human decide.
+
+---
+
+## §10 — Owner decision on the held item (2026-07-28)
+
+**naId 23816 "THE VERDICT, NUREMBERG TRIAL" (219 MB) — owner approved ("可"), promoted.**
+
+- Held in §9 because the head frames revealed `FILMVORFÜHRUNGSSCHEIN … Welt im Film Nr 71 … im Auftrag der Alliierten Behörden` — a released issue of the occupation newsreel co-produced by the US and British military governments, so the British co-author sits outside 17 U.S.C. §105 and the federal-creator rationale did not reach it on its own.
+- Owner decision 2026-07-28: **use it.** Recorded on the ledger row as `license_decision: pd_allied_coproduction_owner_approved` with `owner_approval`, `license_evidence`, `use_check_required: true`, and a `use_check_note` flagging the WELT IM FILM head leader (crop or avoid on-screen if the branding is unwanted).
+- Executed with the merge-safe pattern: sha256 verified identical before the quarantine copy was removed; ledger rewritten via snapshot → re-read → merge → `os.replace`.
+- New file path: `E:\pd-archive\courtroom_justice\nara__23816-159156701__the-verdict-nuremberg-trial.mp4`.
+
+**Standing rule this creates for future ingests:** Allied/occupation co-productions (WELT IM FILM, Welt im Bild and similar US/UK/joint military-government newsreels) are **owner-approved as a class**, subject to the same use-time check. Items whose co-author is a *commercial* producer remain held — that distinction is what naId 23674 (Paramount / March of Time / Pathé) still fails.
+
+**Quarantine after this decision:** 23 items (was 24) — donated-collection 8, third-party-content-language 2, undated-multiyear-compilation 2, plus untriaged arrivals from the live gov lane.
