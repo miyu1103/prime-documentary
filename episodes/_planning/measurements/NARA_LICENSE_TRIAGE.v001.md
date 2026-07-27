@@ -430,3 +430,341 @@ scripts (scratchpad, this session):
 Order of operations for the next sweep: `triage.py` (it prints the naIds it still
 needs) → `fetch_nara.py <those naIds>` → `triage.py` → eyeball the promotion
 candidates → `triage.py --apply`.
+
+---
+---
+
+# 9. OWNER UNLOCK — executed 2026-07-28 (rules version `nara-license-triage-v002`)
+
+Everything above (§1–§8) is the v001 sweep and is unchanged. This section records
+the owner decision on the two blocks §6 "Owner unlock" left open, the per-item
+verification that preceded promotion, and the new counts.
+
+## 9.1 The decision
+
+> **Owner, 2026-07-28, verbatim: 「両方使う」** — approve **both** flagged classes for use.
+>
+> * **Class A — RG 111 Signal Corps trial footage** (25 items / 3.89 GB, incl. the
+>   Nuremberg / Yokohama / Yamashita coverage). Rationale accepted: the
+>   "Restricted - Possibly" flag is series boilerplate (measured 223/223 in series
+>   13807, §2), the creator is a US federal agency, so 17 U.S.C. §105 PD applies.
+> * **Class B — the 4 pre-1930 Ford items** (production dates 1916–1920).
+
+The approval is recorded on every affected ledger row as
+`owner_approval: "2026-07-28 owner approved both flagged classes (両方使う)"`.
+
+## 9.2 What the owner decision does *not* cover — the one disqualifier tested per item
+
+The decision clears *federal creator* (class A) and *pre-1930 production* (class B).
+It does **not** clear an item that is a **commercial newsreel or carries a
+third-party commercial production credit** — the failure mode §2 named, evidenced by
+naId 23674 "QUISLING TRIAL", which sits in the very same RG 111 series and carries
+`Contributor: Producer, Paramount, March of Time & Pathe News`.
+
+So no row was flipped in bulk. Each of the 29 items was checked individually, on
+two independent channels:
+
+1. **Catalog record re-read** (cached full records, `nara_records.json`): `title`,
+   `scopeAndContentNote`, `generalNotes`, `contributors`, `donors`, `creators`,
+   `productionSeriesTitle`, `shotList`, `variantControlNumbers`, `ancestors`
+   scanned for `paramount`, `pathe/pathé`, `march of time`, `universal`,
+   `movietone`, `hearst`, `mgm`, `warner`, `rko`, `gaumont`, `telenews`,
+   `castle films`, `news of the day`, `cbs`, `nbc`, plus `newsreel`,
+   `produced by`, `released by`, `courtesy of`, `stock footage from`.
+   **Result: 0 hits across all 29.** (The same scan flags naId 23674 correctly, so
+   it is not a silent no-op.) All 25 class-A records are `editStatus: Unedited`
+   with `accessRestriction: Unrestricted` and no `generalNotes`/`contributors`.
+2. **Eyeball** — QC frames at 10 / 50 / 90 % per the §4 convention, **plus a 2 %
+   frame and head frames at 4–55 s**, because a newsreel credit lives in the head
+   leader where a 10 % sample lands well past it. 116 new frames + 10 labelled
+   contact sheets in `H:\pd-media\assets\archive\_qc\quarantine_triage\`
+   (`unlock_sheet_1..6.jpg`, `unlock_headA_1..3.jpg`, `unlock_headstrip.jpg`).
+   **This is what caught the one disqualified item** — see §9.4.
+
+## 9.3 Per-item outcome
+
+| naId | title | class | localId | MB | outcome | `license_decision` | rule |
+|---|---|:--:|---|---:|---|---|---|
+| 15131 | TRIAL OF NAZI SPIES, CHERBOURG, FRANCE ; … | A | 111-ADC-1324 | 194 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 16664 | FIRST SHOT INTO GERMANY, THEDING (?), FRANCE ; … | A | 111-ADC-2861 | 140 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 17647 | PRISON CAMP, BAD ORB, GERMANY | A | 111-ADC-3844 | 107 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19251 | YAMASHITA TRIAL, FOURTH DAY, MANILA | A | 111-ADC-5452 | 144 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19382 | YAMASHITA TRIAL, 32ND DAY, MANILA | A | 111-ADC-5583 | 101 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19383 | YAMASHITA TRIAL, 31ST DAY, MANILA | A | 111-ADC-5584 | 149 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19400 | PARIS. [No.] 460, WAR CRIMES TRIALS, NUREMBERG | A | 111-ADC-5601 | 266 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19413 | WAR CRIMES TRIAL, TATSUO TSUCHIYA, YOKOHAMA | A | 111-ADC-5614 | 99 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19463 | PARIS. [No.] 457, WAR CRIMES TRIAL, NUREMBERG | A | 111-ADC-5665 | 184 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19611 | MUNICH. [No.] 84, WAR CRIMES TRIALS, NUREMBERG | A | 111-ADC-5813 | 165 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19613 | MUNICH. [No.] 15, WAR CIRMES TRIALS, NUREMBERG | A | 111-ADC-5815 | 187 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19661 | MUNICH. [No.] 004, WAR CRIMES TRIALS, NUREMBERG | A | 111-ADC-5863 | 139 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19878 | MUNICH. [Nos.] 211-222, WAR CRIMES TRIALS | A | 111-ADC-6080 | 197 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19879 | MUNICH. [Nos.] 211-222, WAR CRIMES TRIALS | A | 111-ADC-6081 | 216 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 19941 | WAR CRIMES TRIALS, TOKYO, JAPAN | A | 111-ADC-6143 | 137 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 20223 | MUNICH. [No.] 522, WAR CRIMES TRIALS CASE NO. 1 | A | 111-ADC-6449 | 200 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 20262 | MUNICH. [No.] 544, SENTENCING OF GEN. MILCH | A | 111-ADC-6488 | 120 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 20264 | THE MARCH OF DIMES DRIVE … ; BUCHENWALD TRIAL | A | 111-ADC-6490 | 107 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 20795 | WAR CRIMES ATROCITY TRIALS, YOKOHAMA, JAPAN | A | 111-ADC-7023 | 179 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 21254 | DECISION BOARD TRIAL - FRITZ KUHN, MUNICH | A | 111-ADC-7482 | 159 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 21261 | ESPIONAGE TRIAL, MUNICH ; KOREAN CONSTABULARY | A | 111-ADC-7489 | 168 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 23559 | QUISLING TRIAL | A | 111-ADC-9794 | 97 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 23628 | TRIAL OF MARSHAL HENRI PETAIN | A | 111-ADC-9863 | 146 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| 23629 | TRIAL OF MARSHAL HENRI PETAIN | A | 111-ADC-9864 | 74 | **promoted** | `pd_us_gov` | R5/owner-unlock-rg111-federal |
+| **23816** | **THE VERDICT, NUREMBERG TRIAL** | A | 111-ADC-10054 | **219** | **HELD** | `review_required` | **R3/non-us-coproduction-credit** |
+| 7403239 | Indianapolis, Indiana / President Woodrow Wilson … | B | FC-FC-1 | 81 | **promoted** | `pd_expired_owner_approved` | R5/owner-unlock-pre1930-ford |
+| 90805 | [SCENES IN SOUTH WEST UNITED STATES] | B | FC-FC-204 | 174 | **promoted** | `pd_expired_owner_approved` | R5/owner-unlock-pre1930-ford |
+| 91009 | AT THE CROSS ROADS [LEAVENWORTH PRISON] | B | FC-FC-332 | 110 | **promoted** | `pd_expired_owner_approved` | R5/owner-unlock-pre1930-ford |
+| 92280 | LOS ANGELES | B | FC-FC-2434 | 141 | **promoted** | `pd_expired_owner_approved` | R5/owner-unlock-pre1930-ford |
+
+Every promoted row now carries: `license_decision`, new `file_path`,
+`owner_approval`, a per-item `license_evidence` (creator / record group / ancestors
+/ localId / production dates **plus** the series-boilerplate measurement for class A,
+or the 1916–1920 production dates for class B, **plus** the frames actually looked at),
+`use_check_required: true`, `use_check_note`, `qc_note`, `triage_rule`, and
+`prior_triage_rule` (what quarantined it in v001, kept for audit).
+
+## 9.4 The eyeball contradiction — naId 23816 stays in quarantine
+
+The metadata said promote. The pixels said no. **This is the second time in this
+corpus that the frames overruled a clean record** (the first was 87665/87666 in §4).
+
+naId 23816 "THE VERDICT, NUREMBERG TRIAL" — RG 111, `editStatus: Unedited`,
+`accessRestriction: Unrestricted`, no generalNotes, no contributors, and it passed
+the commercial-producer text scan clean. Its head frames:
+
+| t | frame |
+|---|---|
+| 4 s | NARA transfer card `111.ADC.10054 / Source: Digital Betacam (I Copy)` |
+| 10–18 s | `FILMVORFÜHRUNGSSCHEIN — Es wird hiermit bescheinigt dass **Welt im Film Nr 71** zur öffentlichen Vorführung zugelassen ist. Bescheinigung ausgestellt im Auftrag der **Alliierten Behörden**` |
+| 28 s | **WELT IM FILM** main title (animated globe logo) |
+| 40 s | `NÜRNBERGER PROZESS: DAS URTEIL` / *WELT IM FILM* |
+| 55 s | German narration card describing the Nuremberg judgment |
+
+This is a **finished, released issue of *Welt im Film*** — the occupation newsreel
+produced **jointly by the US and British military governments** in occupied Germany
+— not raw Signal Corps camera coverage. The catalog corroborates it and was
+half-read in v001: `productionSeriesTitle: "World in film"`,
+`productionSeriesNumber: "71"`. It also **mislabels** the reel `editStatus: Unedited`,
+which is plainly false against the picture.
+
+A British co-author is outside 17 U.S.C. §105, so the owner's federal-creator
+rationale does not reach this item. Held, **not rejected**, at 219 MB, with
+`hold_reason: non-us-coproduction-credit`.
+
+*Naming note:* it is filed as `non-us-coproduction-credit`, **not**
+`commercial-producer-credit`, because the release credit names the *Allied
+Authorities* — a governmental body, not a commercial producer. Writing
+"commercial" into the ledger would have been factually wrong. It needs its own
+one-line owner decision: *is a US/UK jointly produced occupation newsreel
+acceptable?*
+
+**Commercial-producer credits found: none.** No item among the 29 named Paramount,
+Pathé, March of Time, Universal, Fox Movietone or any other commercial producer,
+in metadata or on screen. naId 23674 — the item that proved the risk is real — was
+already held in v001 under `R3/third-party-content-language` and was not part of
+this promotion set.
+
+## 9.5 Evidence the eyeball found *for* the promotions
+
+Not just an absence of bad news. Several reels carry on-screen proof of the very
+authorship the owner's rationale asserts:
+
+* **naId 20262** — Army Pictorial Division slate: `ARMY PICTORIAL DIVISION / WAR
+  CRIMES TRIALS / NURNBERG / SENTENCE MILCH / CASE: NO.2 / CAM: 342 MAG: 2 /
+  CAMERAMAN: VILIM / SOUNDMAN: VILIM`.
+* **naId 20223** — same APD slate form, `ROLL 100 / CAM 342 MAG 3 / CAMERAMAN: TACEY`.
+* **naId 19383** — `SIG PHOTO / Tec 3 Al Bettcher / 31ST DAY / YAMASHITA TRIAL /
+  MANILA / 5 DEC / ROLL 1`.
+* **naId 19251** — `YAMASHITA 4TH DAY … SGT. McCLURE / LT. DETMERS`.
+* **naId 19941** — `WAR CRIMES TRIAL - TOKYO / ROLL 1 / CREW 3 / DATE 8/15/46`.
+* **naId 20264** — `A.P.S. PHOTOLAB 3 / CAMERA-TAYLOR / 6-2-47` (Army Pictorial Service).
+* **naId 17647** — Army film-library stencil `LIB 5064`.
+
+Class B gained the element §5 said was missing — **evidence of publication**:
+
+* **naId 92280** — main title `LOS ANGELES / A visit to American Cities with the
+  **Ford Educational Weekly** / Produced by the Ford Motor Company` + lettered
+  intertitles: a released theatrical series issue, published 1917.
+* **naId 91009** — `Produced & Distributed by **Ford MOTION PICTURE LABORATORIES** /
+  Copyrighted by Ford Motor Company` + narrative intertitles: a finished, released
+  1919 theatrical short. The 1919 copyright notice does **not** defeat the
+  clearance — it evidences publication, and a US work published in 1919 left
+  copyright at the 95-year maximum (2014). Do not put that card on screen.
+* **naId 7403239 and 90805 remain weaker**: NARA transfer cards (`FC.FC.1`,
+  `FC.FC.204`) straight to picture, **no release title card** — unedited Ford
+  outtakes. Their clearance rests on the owner's production-date approval alone,
+  with no independent on-screen publication evidence. Recorded as such in
+  `license_evidence`.
+
+## 9.6 Standing use-time check (now on every promoted row)
+
+`use_check_required: true` and:
+
+> `use_check_note`: "Before using in a published video, confirm this item's
+> on-screen and catalog credits name no commercial producer (Paramount/Pathé/March
+> of Time/Universal/Fox Movietone); crop burned-in timecode if present."
+
+This is not ceremony. Series 13807 demonstrably mixes agency-shot and
+third-party-produced film (naId 23674), and 23816 above proves the mix reaches
+items whose metadata looks clean. The check is cheap at edit time — the head
+leader and the first title card answer it.
+
+### QC notes carried forward so the build stage cannot be surprised
+
+Written into `qc_note` on every promoted row. The v001-promoted rows were
+back-filled with §4's findings in the same pass:
+
+| naId | qc_note (summary) |
+|---|---|
+| 76954 | Burned-in archival timecode `00:32:36.27 RTC` bottom-left for the whole reel — **crop** or frame out the lower left. 90 % frame is black tail leader. |
+| 80630 / 80631 | Colour stock **severely faded to magenta/blue** — grade before use; do not cut ungraded against clean B&W. |
+| 79817 | **Bundled** — camp footage runs into unrelated street scenes of Haikimo village; needs shot selection. |
+| 77646 | **Bundled** — opens on ~2 min of featureless open sea before the rescue material. |
+| 16664 | Heavy sepia/amber transfer cast — grade. Largely **off-theme** (artillery; only a short civil-court segment). |
+| 19613 / 19661 | Markedly **underexposed** Nuremberg interiors — lift before use. |
+| 20264 | **Bundled** — first part is a March-of-Dimes fundraising drive; Buchenwald/Dachau trial material comes later. Title says *March of **Dimes***, not *March of Time* — not a newsreel. |
+| 21261 | **Bundled** — Munich espionage tribunal + unrelated Korean Constabulary material. |
+| 23559 | **Bundled** — Quisling courtroom, then unrelated U-boat surrender / naval footage. |
+| 15131 / 19400 / 19878 / 19879 / 20795 | Head is SMPTE colour bars (picture starts late); several have black tail leader at 90 %. Trim heads/tails. |
+| 20262 | One sampled frame out of focus — check focus when selecting shots. |
+| 19463 | The 90 % frame is a large *"Position of Kaltenbrunner and the Gestapo and SD in the German Police System"* evidence chart — usable as a graphic. |
+| 90805 | Low-contrast/dark scenery — grade. No release title (see §9.5). |
+| 91009 | Do **not** show the "Copyrighted by Ford Motor Company" card on screen. |
+| 92280 | Avoid the Ford Educational Weekly credit card on screen. |
+
+## 9.7 New counts by verdict
+
+Promotion, measured after the move (sha256 of every shelf copy re-verified against
+the ledger hash **before** the quarantine source was removed):
+
+| | items | GB |
+|---|---:|---:|
+| **Promoted this pass** | **28** | **4.181** |
+| — class A → `pd_us_gov` | 24 | 3.675 |
+| — class B → `pd_expired_owner_approved` | 4 | 0.506 |
+| **Held this pass** | **1** | **0.219** |
+| **Rejected / deleted** | **0** | **0.00** |
+
+Whole-archive state after the pass:
+
+| location / verdict | items | GB |
+|---|---:|---:|
+| **Shelf `E:\pd-archive\` total** | **72** | **5.974** |
+| — `pd` (gov lane + v001 sweep) | 44 | 1.793 |
+| — `pd_us_gov` (this pass) | 24 | 3.675 |
+| — `pd_expired_owner_approved` (this pass) | 4 | 0.506 |
+| **Quarantine total** | **24** | **3.257** |
+| — `R3/donated-collection` | 8 | 0.961 |
+| — `R3/undated-multiyear-compilation` (87665/87666) | 2 | 0.461 |
+| — `R3/third-party-content-language` (12101, 23674) | 2 | 0.355 |
+| — `R3/non-us-coproduction-credit` (23816, new) | 1 | 0.219 |
+| — untriaged: ingested by the gov lane after the v001 sweep | 11 | 1.260 |
+
+The quarantine fell from 41 items / 6.18 GB to 13 triaged items / 2.00 GB
+(24 / 3.26 GB counting the 11 rows the gov lane has appended since — those need
+the next sweep, they were not in scope here).
+
+**naId 87665 / 87666 stay quarantined regardless** — captured foreign POW-camp film
+per §4, not touched by this decision.
+
+## 9.8 Verification actually performed
+
+* 29/29 ledger rows located, 0 missing source files, 0 destination collisions.
+* Copy → **sha256 re-verified against the ledger hash** → ledger rewritten → only
+  then the quarantine source removed. A mismatch would have aborted with nothing
+  deleted.
+* The gov lane held `ingest_gov.lock` and was appending during the pass, so the
+  ledger rewrite re-read the file immediately before `os.replace` and would have
+  retried on any change (§8 pattern).
+* Post-check: 96 ledger rows, **0 rows whose `file_path` does not exist**,
+  28 rows with `use_check_required`, 33 rows with a `qc_note`,
+  24 `pd_us_gov` / 4 `pd_expired_owner_approved`, 23816 still on disk in
+  `_quarantine\courtroom_justice\`, no `.part` leftovers on the shelf.
+
+---
+
+## 9.9 FOR THE GOV LANE — paste-ready rule change for FUTURE ingests
+
+`ingest_gov_archives.py` is owned by the gov-lane sibling and was **not** edited
+here. The block below is what this owner decision implies for new NARA items, ready
+to drop into `nara_license_decision()`. It changes the outcome only for federal
+records whose sole blocker was a series-boilerplate restriction flag.
+
+```python
+# ---------------------------------------------------------------------------
+# nara-license-triage-v002 — OWNER DECISION 2026-07-28 ("両方使う"):
+# RG 111 / federal-creator items whose only blocker is a SERIES-BOILERPLATE
+# restriction flag auto-classify as pd_us_gov WITH use_check_required=True,
+# EXCEPT when a commercial producer credit is present.
+#
+# Evidence: series 13807 carries "Restricted - Possibly / Copyright" on 223/223
+# items — a series-wide caution, not a per-item determination (v001 §2). The
+# creator is the Army Chief Signal Officer, a US federal agency, so 17 U.S.C. 105
+# applies. The residual risk is that the series MIXES agency-shot and
+# commercially-produced film (naId 23674 = Paramount / March of Time / Pathé News),
+# so the commercial-producer test stays hard and a use-time check is attached to
+# every row this rule clears.
+#
+# INSERT INTO nara_license_decision() immediately BEFORE the
+# "R3 — any surviving restriction flag" block, i.e. after the third-party-content
+# and undated-multiyear-compilation guards have already had their say.
+# Those guards MUST keep running first — they are what catches 23674 and 87665/6.
+
+BOILERPLATE_RG = {"111", "428"}          # series-wide flag measured, no per-item call
+BOILERPLATE_STATUS = {"restricted - possibly"}
+
+    rg_no = str(rgs[0].get("recordGroupNumber") or "")
+    if (status.lower() in BOILERPLATE_STATUS
+            and rg_no in BOILERPLATE_RG
+            and not tp                        # no third-party-content language (above)
+            and not (rec.get("generalNotes") or [])
+            and not (rec.get("contributors") or [])
+            and not (rec.get("donors") or [])
+            and str(use.get("note", "") or "") .strip().lower().startswith(
+                "some or all of this material may be restricted")):
+        return ("pd", "R5/owner-unlock-rg111-federal",
+                f'{ev}; RG {rg_no}; creator {creator_s}; localId '
+                f'{rec.get("localIdentifier","")}; status "{status}" is SERIES BOILERPLATE '
+                f'(223/223 in series 13807, nara-license-triage-v001 §2), no item-level '
+                f'determination, no generalNotes/contributors/donors, no third-party-content '
+                f'language — 17 U.S.C. 105. OWNER-APPROVED 2026-07-28 ("両方使う"). '
+                f'USE-CHECK REQUIRED.')
+# ---------------------------------------------------------------------------
+```
+
+Three wiring requirements that come with it — the rule is **not** safe without them:
+
+1. **Every row this rule clears must be written with**
+   `use_check_required = True` and
+   `use_check_note = "Before using in a published video, confirm this item's
+   on-screen and catalog credits name no commercial producer (Paramount/Pathé/March
+   of Time/Universal/Fox Movietone); crop burned-in timecode if present."`
+   plus `owner_approval = "2026-07-28 owner approved both flagged classes (両方使う)"`.
+   A `pd_us_gov` row from this rule without `use_check_required` is a defect.
+2. **Order is load-bearing.** `R3/third-party-content-language` and
+   `R3/undated-multiyear-compilation` must still be evaluated *before* this rule.
+   The `not tp` / `not generalNotes` / `not contributors` conditions are exactly
+   what keeps naId 23674 (Paramount / March of Time / Pathé) out.
+3. **Metadata alone is not sufficient — keep the eyeball gate.** naId 23816 passed
+   *every* condition above (RG 111, Unedited, Unrestricted, no notes, no
+   contributors, clean text scan) and is a released Anglo-American *Welt im Film*
+   newsreel. Recommended cheap machine guard, since the give-away was in the
+   catalog all along:
+
+   ```python
+   # A record that names a released production series is not raw agency coverage.
+   pst = str(rec.get("productionSeriesTitle", "")).strip().lower()
+   if pst and pst not in {"munich", "paris"}:      # ADC lab dailies, not releases
+       return ("review_required", "R3/released-production-series",
+               f'{ev}; productionSeriesTitle "{rec.get("productionSeriesTitle")}" '
+               f'no. {rec.get("productionSeriesNumber","?")} — a released series issue, '
+               f'not raw agency camera coverage; check the head title card')
+   ```
+
+   And keep sampling a **2 % / head frame**, not only 10/50/90 %: the release
+   credit is in the head leader, which a 10 % sample lands past.
+
+**Pre-1930 (class B) is deliberately NOT automated.** The four Ford items were
+cleared by owner decision on production date. Two of them (92280, 91009) turned out
+to carry on-screen publication evidence and two (7403239, 90805) did not. Date-based
+PD still needs evidenced US publication, so the gov lane should keep returning
+`R3/donated-collection` for donated-collection items and let a human decide.
