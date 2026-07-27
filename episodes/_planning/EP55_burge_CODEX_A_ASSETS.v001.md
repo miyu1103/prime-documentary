@@ -212,18 +212,25 @@ BANNED_ACCURACY = re.compile(
 # 2. 台本の語数と尺の確定値（Aが素材点数を積算する根拠）
 
 ```
-words_total          = 4,696（LOCKED script・fact-locked・R1/R2/R3済み・オーナー帯 4,600–4,750 内）
-narration_seconds    = 1,582.1（= 26.37分 @178.1wpm・provisional・FINAL は measured TTS forced-align で上書き）
-wpm_used             = 178.1
+★★ この節は 2026-07-28 監査で DESIGN §5 の RE-LOCK 済み値に整合させた（旧 provisional 値を残していたため
+    DESIGN と CODEX_A が矛盾していた。DESIGN §5 が正典・以下はその写し）。
+
+words_total          = 4,861 MEASURED（voice_plan 実測。ヘッダ表記 4,696 はゲート語数モデル側の値）
+narration_seconds    = 1,653.3 MEASURED（ffprobe・vc_master_v001.mp3・292 chunks・
+                       speech 1,653.264s + in-master gaps 96.297s → master 1,749.561s・実測 170.4 wpm）
+wpm_used             = 170.4（MEASURED。178.1 から何も再導出しないこと・provisional より +71.2s 遅かった）
 ★HOOK-AUDIO 標準（owner・EP52 継続）: Brian の声が 0:00 から鳴る（silent runway なし）。
-designed_gap_seconds = 199.9（幕転換の息・AEカード下の music hold・earned breaths ≤3・OST 着地。
-                       finished/speech 比 ≈1.13 ∈ 実測 1.04–1.30。check_padding を通る設計ギャップ＝dead air でない）
-total_seconds        = 1,791.0（narration 1582.1 + gaps 199.9 + endcard 9.0）= 29:51（band 1740–1860 内）
-durationInFrames     = 53,730（provisional・fps30 = 1791×30・VO onset 0.0）
-mean_shot            = 3.166秒/カット（picture 1782.0 / 563 cuts）
+designed_gap_seconds = 179.7（★RE-LOCKED。旧 199.9 から比例縮小。幕転換の息・AEカード下の music hold・
+                       earned breaths ≤3・OST 着地。check_padding を通る設計ギャップ＝dead air でない）
+total_seconds        = 1,842.0（narration 1653.3 + gaps 179.7 + endcard 9.0）= 30:42（band 1740–1860 内 ✓）
+speech ratio         = 1842.0 / 1653.3 = 1.114（実測帯 1.04–1.30 内 ✓）
+durationInFrames     = 55,260（★RE-LOCKED・fps30 = 1842×30・VO onset 0.0。旧 provisional 53,730 は使わない）
+mean_shot            = 3.256秒/カット（picture 1833.0 = total 1842.0 − endcard 9 / 563 cuts。旧 3.166 は 1782.0 基準）
 視覚 acts             = 4（+ HOOK/OPENING/ENDING は別区）
-Act 語数配分（provisional）: COLD+OPENING ~330 / ACT1 ~890 / ACT2 ~1,270（engine・最密）/
-                            ACT3 ~1,020 / ACT4 ~1,180（climax・cascade・最密②）/ ENDING ~300
+Act 語数配分（★2026-07-28 実測に更新）:
+  HOOK 163 / OP 178 / ACT1 836 / ACT2 1,234 / ACT3 945 / ACT4 1,251 / ENDING 254 = 4,861
+  （旧 provisional 330/890/1,270/1,020/1,180/300 = 4,990 とは +2.7% 以内。
+    ★実測の最密は ACT4（1,251語・423.7s）で ACT2（1,234語・418.9s）とほぼ同格＝「ACT2 が最密」は不正確）
 ```
 
 **Aにとっての意味は1つ:** > **総カット 563 / distinct 487 / 初出 86.50% = still 210 + factory 235 + motion 42。**（§3 で積算）
@@ -275,14 +282,16 @@ Act 語数配分（provisional）: COLD+OPENING ~330 / ACT1 ~890 / ACT2 ~1,270�
 
 ```
 [1] 総カット数 563 = still 244 + factory 235 + i2v 84
-[2] 平均ショット長 = picture 1782.0 / 563 = 3.166秒/カット  ✓ (≤7.0)
+[2] 平均ショット長 = picture 1833.0（RE-LOCKED total 1842.0 − endcard 9）/ 563 = 3.256秒/カット  ✓ (≤7.0)   ［旧 1782.0 → 3.166］
 [3] 静止画占有率(check_animation_mix) = 244/563 = 43.34%  ✓ ≤45%（余裕 1.66%pt）
 [4] motion coverage = (235+84)/563 = 319/563 = 56.66%     ✓ ≥45%
 [5] per-asset 上限: still 244/210=1.162(≤2) / factory 235/235=1.0(≤1) / motion 84/42=2.0(≤2)  ✓
 [6] first-use share = 487/563 = 0.8650                    ✓ ≥0.70
 [7] avg uses/source = 563/487 = 1.156                     ✓ ≤1.4（EP49 は 1.8 で flag された）
-[8] factory 下限 = 1782/30 = 59.4 → ≥60本。設計値 235本 ✓（still-share≤0.45 を守る）
+[8] factory 下限 = 1833.0（RE-LOCKED picture）/30 = 61.1 → ≥62本。設計値 235本 ✓（still-share≤0.45 を守る）
 ```
+
+> **★ RE-LOCK 再検算（2026-07-28）:** DESIGN §5 の measured-VO re-lock（total 1791.0 → **1842.0**・53,730 → **55,260f**）に合わせ [2][8] を再導出。[1][3][4][5][6][7] は「点数の比」なので不変（still-share 43.34% ≤45 / first-use 0.8650 ≥0.70 / avg-uses 1.156 ≤1.4 は全て不変）。
 
 > **[3] の余裕は 1.66%pt。** still が210本を割ったら §6.3 の再生成で回復させ、**still-cut 244 を増やさない**（B側の shotlist が244で固定）。
 

@@ -231,7 +231,13 @@ total_seconds        = 1783.3（body 1774.3 + endcard 9.0）= 29:43
 durationInFrames     = 53,499（provisional・fps30 = ceil(1774.3*30)=53229 + 270・VO onset 0.0）
 mean_shot            = 1774.3 / 554 = 3.203秒/カット
 視覚 acts             = 4（+ HOOK/OPENING/ENDING は別区）
-Act 語数配分（実測）: ACT1 ~1220 / ACT2 ~1180 / ACT3 ~1100 / ACT4 ~1120（+ COLD/OPEN/ENDING ~1050 相当は区間 0/5）
+Act 語数配分（★2026-07-28 修正・voice_plan 実測）:
+  HOOK 146 / OP 184 / ACT1 1,081 / ACT2 975 / ACT3 1,012 / ACT4 1,102 / ENDING 321 = 4,821
+  （旧記載「実測: ACT1 ~1220 / ACT2 ~1180 / ACT3 ~1100 / ACT4 ~1120 + COLD/OPEN/ENDING ~1050」= 5,670 は
+    "実測" と書いてあるが実測ではなく、本文 4,821語に対し +849語(+17.6%) 過大。全幕を過大評価しており、
+    特に ACT2 は +205語。この表から素材密度を割り付けた箇所は再配分すること）
+★TTS 実測（2026-07-28）: master 1,711.093s・speech 1,608.485s・313 chunks・179.8 wpm。
+  designed_pause_budget 195.0 → 165.8 に吸収。total_seconds 1783.3 / durationInFrames 53,499 は不変（再ロック不要）。
 ```
 
 **Aにとっての意味は1つ:** > **総カット 554 / distinct 490 / 初出 88.45% = still 210 + factory 236 + motion 44。**（§3 で積算）

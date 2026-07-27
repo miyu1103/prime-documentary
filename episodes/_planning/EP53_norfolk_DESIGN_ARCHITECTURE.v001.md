@@ -111,6 +111,12 @@ Rendered inside the Remotion film via the real `FigureBeats.tsx` union. **Valida
 - **Captions:** breath-group cues, ≤2 lines, ≤42 chars/line, 1.0–6.0s, forced-aligned to the rendered ElevenLabs audio (canonical name `captions.final.v001.srt`), 0.60s lead + `_smart_split` grammar splits per channel standard.
 - **Chaptered YouTube timestamps** (retention de-risk): one per act, named to tease (`The First Confession` / `The Domino` / `The Letter` / `The Long Undoing`), published in the description.
 
+### ★ MEASURED-VO CHECK (audit 2026-07-28) — no re-lock required, but the measured numbers are now on record
+- Master `H:\pd-media\episodes\PD-2026-053-norfolk\06_voice\master\vc_master_v001.mp3` = **1,673.888 s** (304 chunks · 4,762 narration words · **1,573.99 s speech** + 99.898 s in-master gaps · measured pace **181.5 wpm** — Brian ran slightly FASTER than the 178.1 model on this text).
+- Measured speech **1,573.99 s** vs the 1,564.9 s provisional = **+9.1 s only**. The designed ×1.150 breath budget absorbs it: **total stays 1,799.6 s (30:00)** and **durationInFrames stays 53,988**; the realised ratio becomes 1799.6 / 1573.99 = **1.1434** ∈ 1.04–1.30 ✓, total ∈ 1740–1860 ✓. **No re-lock, no re-TTS, no script edit.**
+- §4's density figure re-checked: 84 beats / (1799.6/60 = 30.0 min) = **2.80/min** ✓ as written. §3.3 checksums are unaffected (they key off film-body 1790.6 s, which is unchanged).
+- Measured per-section words for asset/beat allocation: HOOK 110 · OP 163 · ACT_1 950 · ACT_2 1,038 · ACT_3 968 · ACT_4 1,233 · ENDING 300 = **4,762**. CODEX_A §2's provisional act table (950/1050/950/1100 + 300 + 300 = 4,650) is accurate to within 2.4 %; only ACT IV was understated (1,100 planned vs 1,233 actual).
+
 ---
 
 ## 6. GATES (nothing ships until all PASS — lessons are gates, not promises)

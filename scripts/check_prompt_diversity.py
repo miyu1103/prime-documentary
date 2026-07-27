@@ -81,6 +81,8 @@ def main() -> int:
                     help="drop tokens appearing in more than this fraction of prompts")
     ap.add_argument("--strict", action="store_true", help="generic prompts fail, not warn")
     ap.add_argument("--top", type=int, default=15, help="show worst N pairs")
+    ap.add_argument("--min-coverage", type=float, default=0.80,
+                    help="fail if literal prompts cover less than this fraction of referenced asset ids")
     args = ap.parse_args()
 
     text = Path(args.file).read_text(encoding="utf-8")
@@ -112,6 +114,29 @@ def main() -> int:
             (pairs if a[0] == b[0] else cross_pairs).append(rec)
     pairs.sort(reverse=True)
     cross_pairs.sort(reverse=True)
+
+    # --- COVERAGE GATE (added 2026-07-28) -----------------------------------
+    # A file with only 30 literal prompts out of 261 declared assets used to
+    # print "RESULT: PASS" -- a vacuous green, because the tool only ever
+    # compared the prompts that EXIST. EP51 (36/180) and EP52 (30/261) both
+    # passed that way, meaning Codex would have improvised ~87% of the imagery.
+    # Coverage is now measured against every asset id the document references.
+    ID_REF = re.compile(r"\b([SMTF])(\d{2,3})\b")
+    referenced: dict[str, set[str]] = {}
+    for pre, num in ID_REF.findall(text):
+        referenced.setdefault(pre, set()).add(num)
+    ref_total = sum(len(v) for v in referenced.values())
+    coverage = (n / ref_total) if ref_total else 1.0
+    if ref_total >= 20 and coverage < args.min_coverage:
+        missing = ref_total - n
+        print(f"FAIL prompt coverage {coverage:.0%}: {n} literal prompts for "
+              f"{ref_total} referenced asset ids ({missing} would be improvised). "
+              f"Per-asset literal prompts are mandatory -- a diversity PASS over a "
+              f"fraction of the assets is a vacuous green.")
+        print(f"\nRESULT: FAIL (coverage {coverage:.0%} < {args.min_coverage:.0%})")
+        return 1
+    if ref_total:
+        print(f"ok   prompt coverage {coverage:.0%} ({n}/{ref_total} referenced asset ids)")
 
     print(f"info prompts extracted: {n} | boilerplate tokens dropped: {len(boiler)} "
           f"(df>{args.boilerplate_df:.0%})")

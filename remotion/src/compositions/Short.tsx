@@ -120,6 +120,13 @@ export type ShortData = {
   sfx?: {atSec: number; src: string; gainDb?: number}[];
   ctaTextYT?: string; // YouTube CTA (e.g. "続きはYouTubeで")
   ctaTextTT?: string; // TikTok CTA (no external platform name, e.g. "フル版はプロフィールから")
+  // --- Long-form funnel end-card (SHORTS_CONVERSION_v001 §4-2). ALL THREE OPTIONAL. ---
+  // Supply any one of them and the closing beat renders the long-form card (thumbnail + title +
+  // headline) instead of the legacy `SUBSCRIBE` end-card. Supply none and the closing beat is
+  // byte-identical to what it was before — already-scheduled Shorts must not move.
+  ctaLongThumbSrc?: string; // matching long-form's thumbnail, staticFile-relative, 16:9 (1280x720)
+  ctaLongTitle?: string; // shortened long-form title. ONE line, <= 36 ASCII chars.
+  ctaHeadline?: string; // default 'FULL CASE'. UPPERCASE, <= 2 words, <= 12 ASCII chars.
   beats: ShortBeat[];
 };
 
@@ -418,6 +425,276 @@ const CtaLayer: React.FC<{text: string}> = ({text}) => {
   );
 };
 
+/* ---------------------------------------------------------------------------------------------
+ * Long-form funnel end-card — SHORTS_CONVERSION_v001 §4.
+ *
+ * WHY: 22 published Shorts ended on a bare `SUBSCRIBE` pill and converted 0 subscribers
+ * (§1, measured). The fix is not a louder ask, it is a *destination*: show the exact long-form
+ * this Short is a trailer for — its thumbnail, its title, and a headline that matches the spoken
+ * close. The string `SUBSCRIBE` never appears in this layer (§4-4).
+ *
+ * OPT-IN: rendered only when the data file supplies ctaLongThumbSrc / ctaLongTitle / ctaHeadline.
+ * Without them BeatView falls through to the legacy `CtaLayer` above, unchanged.
+ *
+ * SAFE AREA (§4-4): the Shorts UI covers x > 840 and y > 1500, so every element here lives inside
+ * x 80–1000 / y 300–1400. Legibility floor for a phone-sized 1080x1920 frame: headline 88px,
+ * title >= 34px on a 6px gold-bordered card, pill 40px, all on a 0.72 ink scrim.
+ * ------------------------------------------------------------------------------------------- */
+
+const CTA_HEADLINE_DEFAULT = 'FULL CASE';
+/** §4-4 geometry, in frame px. Kept as named constants — no magic numbers inside the JSX. */
+const CTA_LAYOUT = {
+  headTop: 430,
+  headHeight: 110,
+  headSize: 88,
+  cardLeft: 180,
+  cardTop: 570,
+  cardW: 720,
+  cardH: 405, // 16:9
+  titleTop: 1030,
+  titleLeft: 120,
+  titleW: 840,
+  titleSize: 46,
+  pillTop: 1130,
+  pillHeight: 76,
+  pillSize: 40,
+  brandTop: 1250,
+  brandSize: 36,
+} as const;
+
+/** Text that rises out of a clipped box (overflow:hidden + translateY) — the channel's standard
+ * reveal. `enter` is a 0..1 spring value; never a bare opacity fade. */
+const CtaMaskRise: React.FC<{enter: number; height: number; children: React.ReactNode}> = ({
+  enter,
+  height,
+  children,
+}) => (
+  <div style={{overflow: 'hidden', height, display: 'flex', alignItems: 'flex-end', justifyContent: 'center'}}>
+    <div style={{transform: `translateY(${interpolate(enter, [0, 1], [110, 0])}%)`, width: '100%'}}>{children}</div>
+  </div>
+);
+
+const CtaFunnelLayer: React.FC<{
+  thumbSrc?: string;
+  title?: string;
+  headline: string;
+  platform: ShortPlatform;
+}> = ({thumbSrc, title, headline, platform}) => {
+  const frame = useCurrentFrame();
+  const {fps, durationInFrames} = useVideoConfig();
+  // Every timing below is authored in SECONDS and converted here — no hard-coded frame numbers.
+  const F = (s: number) => Math.round(s * fps);
+  const easeOut = {
+    extrapolateLeft: 'clamp' as const,
+    extrapolateRight: 'clamp' as const,
+    easing: Easing.out(Easing.cubic),
+  };
+
+  // L1 — ink scrim over the outgoing beat. Never opacity-only: the plate pushes in as it darkens
+  // (1.00 -> 1.04 by 0.13 s) and keeps creeping to 1.08 so no frame of the hold is static (§4-3).
+  const scrim = interpolate(frame, [0, F(0.13)], [0, 0.72], easeOut);
+  const bgScale = interpolate(
+    frame,
+    [0, F(0.13), F(1.1), Math.max(F(1.1) + 1, durationInFrames)],
+    [1, 1.04, 1.04, 1.08],
+    easeOut
+  );
+
+  // Staggered entries (§4-3): card 0.13 s, headline 0.20 s, title 0.40 s, pill 0.67 s, brand 0.87 s.
+  const cardEnter = spring({frame: frame - F(0.13), fps, config: {damping: 18, stiffness: 130, mass: 0.8}});
+  const headEnter = spring({frame: frame - F(0.2), fps, config: {damping: 20, stiffness: 130, mass: 0.7}});
+  const titleEnter = spring({frame: frame - F(0.4), fps, config: {damping: 20, stiffness: 130, mass: 0.7}});
+  const pillEnter = spring({frame: frame - F(0.67), fps, config: {damping: 16, stiffness: 120}});
+  const brandEnter = spring({frame: frame - F(0.87), fps, config: {damping: 16, stiffness: 120}});
+
+  // Continuous micro-float on the whole block so the hold never freezes (§4-3, f33+).
+  const float = Math.sin(frame / 22) * 3;
+
+  // The card's entry (0.13–0.60 s) is the only motion-blurred element — Trail on text kills
+  // legibility (§4-3). After the entry the Trail is dropped so the hold renders sharp and cheap.
+  const cardMoving = frame < F(0.62);
+
+  // One line, always. 0.47 em/char is Oswald-700 measured off a rendered still (a 36-char title
+  // occupied ~600 of the 840px column at 40px), with headroom. A title longer than the §4-2 cap
+  // scales down to a 34px floor instead of clipping or spilling past the safe area.
+  const titleText = title ?? '';
+  const titleSize = Math.max(
+    34,
+    Math.min(CTA_LAYOUT.titleSize, Math.floor(CTA_LAYOUT.titleW / (Math.max(1, titleText.length) * 0.47)))
+  );
+
+  const card = thumbSrc ? (
+    <div
+      style={{
+        position: 'absolute',
+        left: CTA_LAYOUT.cardLeft,
+        top: CTA_LAYOUT.cardTop,
+        width: CTA_LAYOUT.cardW,
+        height: CTA_LAYOUT.cardH,
+        borderRadius: 18,
+        border: `6px solid ${BRAND.color.gold}`,
+        boxShadow: `0 24px 64px ${BRAND.color.ink}`,
+        overflow: 'hidden',
+        backgroundColor: BRAND.color.ink,
+        transform: `translateY(${interpolate(cardEnter, [0, 1], [52, 0])}px) scale(${interpolate(
+          cardEnter,
+          [0, 1],
+          [0.86, 1]
+        )})`,
+      }}
+    >
+      <Img src={staticFile(thumbSrc)} style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+    </div>
+  ) : null;
+
+  return (
+    <AbsoluteFill style={{pointerEvents: 'none'}}>
+      {/* L1 — darkening + pushing-in scrim over the outgoing beat */}
+      <AbsoluteFill
+        style={{
+          backgroundColor: BRAND.color.ink,
+          opacity: scrim,
+          transform: `scale(${bgScale})`,
+          transformOrigin: '50% 45%',
+        }}
+      />
+      {/* L2 — radial navy glow behind the card */}
+      <AbsoluteFill
+        style={{
+          background: `radial-gradient(70% 44% at 50% 41%, ${BRAND.color.navy} 0%, transparent 72%)`,
+          opacity: interpolate(frame, [0, F(0.3)], [0, 0.95], easeOut),
+          transform: `scale(${bgScale})`,
+        }}
+      />
+      {/* L3–L7 — the block itself, floating as one so nothing drifts apart */}
+      <AbsoluteFill style={{transform: `translateY(${float}px)`}}>
+        {/* L3 — headline (mask rise) */}
+        <div style={{position: 'absolute', left: CTA_LAYOUT.cardLeft, top: CTA_LAYOUT.headTop, width: CTA_LAYOUT.cardW}}>
+          <CtaMaskRise enter={headEnter} height={CTA_LAYOUT.headHeight}>
+            <div
+              style={{
+                color: BRAND.color.gold,
+                fontFamily: BRAND.font.display,
+                fontSize: CTA_LAYOUT.headSize,
+                lineHeight: 1.1,
+                letterSpacing: 6,
+                textAlign: 'center',
+                textTransform: 'uppercase',
+                textShadow: `0 6px 30px ${BRAND.color.ink}`,
+              }}
+            >
+              {headline}
+            </div>
+          </CtaMaskRise>
+        </div>
+
+        {/* L4 — the long-form thumbnail card (motion-blurred on entry only) */}
+        {cardMoving ? (
+          <Trail layers={4} lagInFrames={1.0} trailOpacity={0.35}>
+            {card}
+          </Trail>
+        ) : (
+          card
+        )}
+
+        {/* L5 — long-form title, one line (mask rise, 6f staggered behind the headline) */}
+        {titleText ? (
+          <div
+            style={{
+              position: 'absolute',
+              left: CTA_LAYOUT.titleLeft,
+              top: CTA_LAYOUT.titleTop,
+              width: CTA_LAYOUT.titleW,
+            }}
+          >
+            <CtaMaskRise enter={titleEnter} height={Math.round(titleSize * 1.5)}>
+              <div
+                style={{
+                  color: BRAND.color.white,
+                  fontFamily: BRAND.font.body,
+                  fontWeight: 700,
+                  fontSize: titleSize,
+                  lineHeight: 1.15,
+                  whiteSpace: 'nowrap',
+                  textAlign: 'center',
+                  textShadow: `0 4px 22px ${BRAND.color.ink}`,
+                }}
+              >
+                {titleText}
+              </div>
+            </CtaMaskRise>
+          </div>
+        ) : null}
+
+        {/* L6 — destination pill. TikTok never names an external platform (§4-5). */}
+        <div
+          style={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: CTA_LAYOUT.pillTop,
+            display: 'flex',
+            justifyContent: 'center',
+          }}
+        >
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 14,
+              height: CTA_LAYOUT.pillHeight,
+              padding: '0 30px',
+              borderRadius: 999,
+              background: BRAND.color.gold,
+              color: BRAND.color.ink,
+              fontFamily: BRAND.font.display,
+              fontSize: CTA_LAYOUT.pillSize,
+              letterSpacing: 2,
+              transform: `translateY(${interpolate(pillEnter, [0, 1], [24, 0])}px) scale(${interpolate(
+                pillEnter,
+                [0, 1],
+                [0.9, 1]
+              )})`,
+              opacity: pillEnter,
+            }}
+          >
+            <span style={{fontSize: 30}}>▶</span>
+            {/* §4-5 literally specifies '▶ FULL CASE' for TikTok, but the default headline is also
+                'FULL CASE' — rendered, the pill just repeated the headline verbatim. 'ON OUR
+                PROFILE' matches the spec's own TikTok narration swap ("…is on our profile") and
+                still names no external platform, which is the actual rule. */}
+            {platform === 'tiktok' ? 'ON OUR PROFILE' : 'ON THE CHANNEL'}
+          </div>
+        </div>
+
+        {/* L7 — brand line */}
+        <div
+          style={{
+            position: 'absolute',
+            left: 0,
+            right: 0,
+            top: CTA_LAYOUT.brandTop,
+            textAlign: 'center',
+            color: BRAND.color.gold,
+            opacity: 0.7 * brandEnter,
+            fontFamily: BRAND.font.body,
+            fontWeight: 700,
+            fontSize: CTA_LAYOUT.brandSize,
+            letterSpacing: 4,
+            transform: `translateY(${interpolate(brandEnter, [0, 1], [18, 0])}px)`,
+          }}
+        >
+          PRIME DOCUMENTARY
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+};
+
+/** True when the data file opted into the long-form funnel end-card (§4-2). */
+const hasFunnelCta = (data: ShortData): boolean =>
+  Boolean(data.ctaLongThumbSrc || data.ctaLongTitle || data.ctaHeadline);
+
 const ArtLayer: React.FC<{art: ShortArt; durFrames: number}> = ({art, durFrames}) => {
   switch (art.kind) {
     case 'bignum':
@@ -533,13 +810,55 @@ const BeatView: React.FC<{beat: ShortBeat; platform: ShortPlatform; data: ShortD
           {beat.art && !sceneArt ? <ArtLayer art={beat.art} durFrames={durFrames} /> : null}
         </>
       )}
-      {isCta ? <CtaLayer text={ctaText} /> : beat.telop ? <TelopTop text={beat.telop} /> : null}
+      {isCta ? (
+        hasFunnelCta(data) ? (
+          <CtaFunnelLayer
+            thumbSrc={data.ctaLongThumbSrc}
+            title={data.ctaLongTitle}
+            headline={data.ctaHeadline ?? CTA_HEADLINE_DEFAULT}
+            platform={platform}
+          />
+        ) : (
+          <CtaLayer text={ctaText} />
+        )
+      ) : beat.telop ? (
+        <TelopTop text={beat.telop} />
+      ) : null}
     </AbsoluteFill>
   );
 };
 
-/** Bottom-zone captions (y1280–1560), word-synced to narration. Strictly below the telop zone. */
-const CaptionLayer: React.FC<{captions: ShortCaption[] | null}> = ({captions}) => {
+/** SHORTS_METHOD persona signature — a fixed wordmark, top-center inside the UI-safe band, on every
+ * frame so the channel is instantly recognizable across the muted feed (rule 9b/10). */
+const PersonaMark: React.FC = () => (
+  <div style={{position: 'absolute', top: 96, left: 0, right: 0, display: 'flex', justifyContent: 'center', pointerEvents: 'none'}}>
+    <div
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        gap: 12,
+        padding: '10px 24px',
+        borderRadius: 999,
+        background: `${BRAND.color.ink}cc`,
+        border: `2px solid ${BRAND.color.gold}`,
+        color: BRAND.color.gold,
+        fontFamily: BRAND.font.body,
+        fontWeight: 800,
+        fontSize: 30,
+        letterSpacing: 4,
+        textShadow: `0 2px 10px ${BRAND.color.ink}`,
+      }}
+    >
+      <span style={{fontSize: 24}}>▶</span> PRIME DOCUMENTARY
+    </div>
+  </div>
+);
+
+/** Word-synced captions. Default = lower band (y1280). METHOD mode raises them into the vertical
+ * CENTER-safe band (y1000–1320) so they clear the YouTube/TikTok/Reels bottom title + right
+ * action-rail UI (rule 11), with a fixed kinetic pop + gold keyline (reusable persona caption style,
+ * rule 10). Strictly below the telop zone either way. */
+const CaptionLayer: React.FC<{captions: ShortCaption[] | null; method?: boolean}> = ({captions, method}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   if (!captions || captions.length === 0) return null;
@@ -549,33 +868,42 @@ const CaptionLayer: React.FC<{captions: ShortCaption[] | null}> = ({captions}) =
   const line = cue?.word ?? '';
   if (!line) return null;
   const mostlyAscii = /^[\u0000-\u007f\s.,!?'"-]+$/.test(line);
+  const popScale = method
+    ? interpolate(
+        spring({frame: frame - Math.round((cue?.startSec ?? 0) * fps), fps, config: {damping: 14, stiffness: 200, mass: 0.6}}),
+        [0, 1],
+        [0.86, 1]
+      )
+    : 1;
   return (
     <div
       style={{
         position: 'absolute',
         left: 0,
         right: 0,
-        top: 1280,
-        height: 280,
+        top: method ? 1000 : 1280,
+        height: method ? 320 : 280,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: '0 90px',
+        padding: method ? '0 110px' : '0 90px',
         pointerEvents: 'none',
       }}
     >
       <div
         style={{
           color: BRAND.color.white,
-          background: `${BRAND.color.ink}a8`,
-          borderRadius: 14,
-          padding: '14px 26px',
+          background: `${BRAND.color.ink}${method ? 'c2' : 'a8'}`,
+          borderRadius: 16,
+          border: method ? `3px solid ${BRAND.color.gold}` : undefined,
+          padding: method ? '18px 30px' : '14px 26px',
           fontFamily: BRAND.font.body,
           fontWeight: 800,
-          fontSize: mostlyAscii ? 50 : 62,
-          lineHeight: mostlyAscii ? 1.1 : 1.18,
+          fontSize: method ? (mostlyAscii ? 58 : 66) : mostlyAscii ? 50 : 62,
+          lineHeight: mostlyAscii ? 1.12 : 1.18,
           textAlign: 'center',
           maxWidth: '100%',
+          transform: `scale(${popScale})`,
           textShadow: `0 3px 12px ${BRAND.color.ink}`,
           letterSpacing: 0,
         }}
@@ -586,12 +914,21 @@ const CaptionLayer: React.FC<{captions: ShortCaption[] | null}> = ({captions}) =
   );
 };
 
-export const Short: React.FC<{data: ShortData; platform: ShortPlatform; depth?: boolean}> = ({
+export const Short: React.FC<{data: ShortData; platform: ShortPlatform; depth?: boolean; method?: boolean}> = ({
   data,
   platform,
   depth,
+  method,
 }) => {
   const {fps} = useVideoConfig();
+  // §4-4: the funnel end-card occupies y430–1290, which is exactly where the caption band sits.
+  // Any cue inside the CTA beat would cover the long-form title and the pill, so cues in that
+  // window are dropped. Only applies to the opt-in funnel CTA — the legacy path keeps every cue.
+  const ctaBeat = hasFunnelCta(data) ? data.beats.find((b) => b.id === 'cta') : undefined;
+  const captions =
+    ctaBeat && data.captions
+      ? data.captions.filter((c) => c.startSec < ctaBeat.startSec || c.startSec >= ctaBeat.startSec + ctaBeat.durSec)
+      : data.captions;
   return (
     <AbsoluteFill style={{backgroundColor: BRAND.color.ink}}>
       <Series>
@@ -601,7 +938,8 @@ export const Short: React.FC<{data: ShortData; platform: ShortPlatform; depth?: 
           </Series.Sequence>
         ))}
       </Series>
-      <CaptionLayer captions={data.captions} />
+      {method ? <PersonaMark /> : null}
+      <CaptionLayer captions={captions} method={method} />
       {data.narrationSrc ? <Audio src={staticFile(data.narrationSrc)} /> : null}
       {data.bgmSrc ? <Audio src={staticFile(data.bgmSrc)} volume={0.16} /> : null}
       {data.ambienceSrc ? <Audio src={staticFile(data.ambienceSrc)} volume={0.06} /> : null}

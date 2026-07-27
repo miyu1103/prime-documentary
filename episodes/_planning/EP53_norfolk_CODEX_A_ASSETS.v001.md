@@ -216,8 +216,12 @@ total_seconds        = 1799.6（narration 1564.9 × 1.150 ≈ 1799.6・endcard 9
 durationInFrames     = 53,988（provisional・fps30 = round(1799.6×30)・VO onset 0.0）
 mean_shot            = 1790.6 / 536 = 3.341秒/カット（film body = total 1799.6 − endcard 9）
 視覚 acts             = 4（+ HOOK/OPENING/ENDING は別区）
-Act 語数配分（provisional）: ACT1 ~950 / ACT2 ~1050（domino engine・最密）/ ACT3 ~950 /
-                            ACT4 ~1100（climax・cascade・最密②）＋ COLD OPEN/OPENING ~300 ＋ ENDING ~300
+Act 語数配分（★2026-07-28 実測に更新）:
+  HOOK 110 / OP 163 / ACT1 950 / ACT2 1,038 / ACT3 968 / ACT4 1,233 / ENDING 300 = 4,762
+  （旧 provisional 950/1050/950/1100+300+300 = 4,650 とは 2.4% 以内で一致。★実測の最密は ACT4（1,233語））
+★TTS 実測（2026-07-28）: master 1,673.888s・speech 1,573.99s・304 chunks・181.5 wpm。
+  provisional 1,564.9s に対し +9.1s のみ。×1.150 の設計 gap が吸収し、
+  total_seconds 1799.6 / durationInFrames 53,988 / mean_shot 3.341 は全て不変（再ロック不要）。
 ```
 
 **Aにとっての意味は1つ:** > **総カット 536 / distinct 479 / 初出 89.37% = still 205 + factory 232 + motion 42。**（§3 で積算）

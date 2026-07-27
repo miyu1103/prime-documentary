@@ -103,6 +103,12 @@ Rendered via the real `FigureBeats.tsx` union — validate EVERY beat against th
 - **Captions:** 1 cue per breath group, lead 0.60 s, `_smart_split` grammar splits, ≤2 lines / ≤42 chars, forced-aligned to the rendered VO (channel canon).
 - **Chaptered YouTube timestamps**: one per act, named to tease (e.g., "The Choosing" / "Trial, Reverse, Repeat" / "The Liar" / "The Numbers Speak").
 
+### ★ MEASURED-VO CHECK (audit 2026-07-28) — no re-lock required, but the gap budget shrinks and the act-word table was WRONG
+- Master `H:\pd-media\episodes\PD-2026-054-flowers\06_voice\master\vc_master_v001.mp3` = **1,711.093 s** (313 chunks · 4,821 narration words · **1,608.485 s speech** + 102.608 s in-master gaps · measured pace **179.8 wpm**).
+- Measured speech **1,608.485 s** vs 1,579.3 s provisional = **+29.2 s**. Absorbed by the designed pause budget: **195.0 s → 165.8 s**. **total stays 1,783.3 s (29:43)** and **durationInFrames stays 53,499**; realised ratio 1783.3 / 1608.485 = **1.1087** ∈ 1.04–1.30 ✓, total ∈ 1740–1860 ✓. **No re-lock, no re-TTS, no script edit.** ★ The pause map must be re-cut to 165.8 s of designed silence — the 29.2 s comes OFF the distributed micro-pauses (~57 s → ~28 s), NOT off the act-turn breaths or the ending ambience.
+- §4's density figure re-checked: 84 beats / (1783.3/60 = 29.72 min) = **2.83/min** (§4 says 2.85 — cosmetic, still ≥2.5 and ≥84 beats ✓). §3.3 checksums key off body 1774.3 s and are unaffected.
+- ★ **CORRECTION — the per-act word table in CODEX_A §2 is labelled 実測 (MEASURED) and is NOT.** It reads `ACT1 ~1220 / ACT2 ~1180 / ACT3 ~1100 / ACT4 ~1120 (+ COLD/OPEN/ENDING ~1050)` = **5,670**, against a real body of **4,821** — over by **+849 words (+17.6 %)**. Real measured distribution: HOOK 146 · OP 184 · ACT_1 1,081 · ACT_2 975 · ACT_3 1,012 · ACT_4 1,102 · ENDING 321. Every act was over-stated (ACT II by +205). Any asset density derived from that table over-provisions ACT II and the hook/opening/ending block.
+
 ---
 
 ## 6. GATES (nothing ships until all PASS — lessons are gates, not promises)

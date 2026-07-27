@@ -50,7 +50,7 @@ Each of the 13 shorts below is built to these, and the per-short build checklist
    - **F-A "The machine that manufactures agreement"** — interrogation/confession mechanics (EP53).
    - **F-B "The number that convicted him"** — arithmetic as the villain (EP54, EP56).
    - **F-C "They knew, and nothing happened"** — a written warning that was buried (EP55, EP56).
-9. **Sub-conversion.** Spoken + on-screen CTA, funnel line, pinned comment, Related-video. `SUBSCRIBE` never appears (see §6 gap G2).
+9. **Sub-conversion.** Spoken + on-screen CTA, funnel line, pinned comment, Related-video. `SUBSCRIBE` never appears — the long-form end-card is live in `Short.tsx` since 2026-07-28 and every short must set its props (§7 step 7b; gap G2 closed).
 10. **Persona.** Same channel voice `nPczCjzI2devNBz1zQrb`, `eleven_multilingual_v2`, same kinetic-caption style, same spoken close: *"Follow for the cases they don't teach you."*
 11. **Cross-platform.** `-yt` and `-tt` exports per short (TikTok never says "YouTube"/"link"). Reels export reuses the `-tt` cut (`short52`/`short53` already produced `_reels.mp4`).
 12. **Retention iteration.** Log each short's swipe-away point post-publish; the biggest drop is the next short's target.
@@ -529,6 +529,35 @@ Run from repo root unless noted. `NN` = short number, `EP` = episode slug.
    ```
    Every `short<NN>_XX.png` needs a `short<NN>_XX_depth.png` beside it or the render crashes.
 7. Write `remotion/src/data/short<NN>.ts` on the `short57.ts` pattern: a doc-comment carrying the sensitivity frame and the accuracy locks, `const ACCENT`, `const img`, and a `CUTS: Cut[]` array with `{line,id,src,kind,motion,telop,fast,art}` — including the trailing `{line:'L5', id:'loop', …}` beat that repeats the hook image and hook telop (METHOD rule 5).
+
+7b. **Set the long-form funnel end-CTA props — MANDATORY for all 13 shorts in this slate.** Implemented in
+   `Short.tsx` on 2026-07-28 (`SHORTS_CONVERSION_v001.md` §4, gap G2 closed). Three optional fields on the
+   `SHORT<NN>: ShortData` object; supplying **any one** of them replaces the bare `SUBSCRIBE` end-card with
+   the long-form card. Omit all three and the Short renders exactly as it did before — so `short57`/`58`/`59`
+   are unaffected until someone adds them.
+
+   | prop | required here | rule |
+   |---|---|---|
+   | `ctaLongThumbSrc` | ✅ | matching long-form's thumbnail, path under `remotion/public`, **16:9 (1280×720)**. Convention: `shorts/short<NN>/short<NN>_ctathumb.png` |
+   | `ctaLongTitle` | ✅ | shortened long-form title, **one line, ≤ 36 ASCII chars** (auto-shrinks to a 34 px floor if longer) |
+   | `ctaHeadline` | optional | defaults to `'FULL CASE'`. UPPERCASE, ≤ 2 words, ≤ 12 chars |
+
+   ```ts
+   export const SHORT60: ShortData = {
+     shortId: 'short60',
+     // …existing fields unchanged…
+     ctaLongThumbSrc: 'shorts/short60/short60_ctathumb.png',
+     ctaLongTitle: 'They Fixed the Confession',
+     ctaHeadline: 'FULL CASE',
+     beats: buildBeats(),
+   };
+   ```
+
+   Notes: the component drops any caption cue that falls inside the `cta` beat (the card occupies the caption
+   band), so no `short<NN>_timing.ts` surgery is needed; the loop-tail cue survives. The `-tt` cut swaps the
+   pill to `▶ ON OUR PROFILE` automatically. The CTA beat length still comes from `LINE_WINDOWS` — the spec's
+   fixed `CTA_SEC = 3.0` was **not** implemented (it would desync the narration); shape the CTA line's length
+   in step 3 instead. `ctaTextYT` / `ctaTextTT` stay in the data file but are unused once these props are set.
 8. Register three compositions in `remotion/src/Root.tsx` next to the `short59` block: `Short-short<NN>-yt`, `Short-short<NN>-tt`, and `Still ShortThumb-short<NN>` (1080×1920) with `headline` / `badge` / `backgroundSrc` from the cover concept.
 
 **C. Render / package**
@@ -558,7 +587,7 @@ Run from repo root unless noted. `NN` = short number, `EP` = episode slug.
 | # | Gap | Impact | Fix |
 |---|---|---|---|
 | **G1** | **EP53 `F001`–`F012` emotive faces were never generated** (specified in `EP53_norfolk_CODEX_A_ASSETS.v001.md` §5.13; 0 files on disk). | METHOD rule 7 (faces + emotion in hook and payoff) is only partly met for `short60`/`short61`/`short62`. EP54 has 15 face plates, EP55 has 15; EP53 has 3 (thumb-only, face pushed to a horizontal third, poor 9:16 centre crop). | Codex-generate the 12 `F###.png` from the existing prompt block. Not a hard blocker — the three EP53 shorts are buildable without them. |
-| **G2** | **`Short.tsx` still renders `SUBSCRIBE`** (line 414) and `ShortData` has no `ctaLongThumbSrc` / `ctaLongTitle` / `ctaHeadline`. The `SHORTS_CONVERSION_v001.md` §4 end-CTA spec was written but **never implemented**. | Every short in this slate would ship the CTA that measurably converted **0 subscribers** across 22 published shorts, and there would be no on-screen long-form card. | Implement §4-2/§4-3/§4-4 in `Short.tsx` **once, before short60**. It is a single component change that all 13 shorts inherit. This is the highest-leverage item in the slate. |
+| **G2** | ~~**`Short.tsx` still renders `SUBSCRIBE`** and `ShortData` has no `ctaLongThumbSrc` / `ctaLongTitle` / `ctaHeadline`.~~ **✅ CLOSED 2026-07-28.** | — | **Implemented** in `remotion/src/compositions/Short.tsx`: §4-2 props + §4-3 timeline + §4-4 layout, `SUBSCRIBE` gone from the new path, backward-compatible (byte-identical stills when the props are absent, `tsc` 0 errors). Deviations recorded in `SHORTS_CONVERSION_v001.md` §4 "✅ IMPLEMENTED". **All 13 shorts must now set the props per §7 step 7b** — the component does not funnel by itself. |
 | **G3** | **EP56 has no VO master and no narration index.** TTS was gated to the 2026-07-28 18:08 quota reset. | All four EP56 shorts are 100 % re-record (~474 words). No line can be cut from a master that does not exist. | Run the EP56 long-form TTS, or accept the four shorts as standalone recordings (~474 w ≈ 2,700 chars ≈ $0.81 — trivial, and it unblocks 8/29–9/01 without waiting for the episode). |
 | **G4** | **EP56 stills stop at `S067`** — 200 of 267 missing, including all 12 `F###` faces, all 3 `T##_face` thumb plates and all 42 `M##_src` motion seeds. | `short72`'s true payoff plate (Fenny Compton village hall, ACT 4 `S129`–`S166`) does not exist — substituted. No face-forward plate exists for any EP56 short or its cover. | Resume the Codex generation run. `short69`/`short70`/`short71` are buildable from `S001`–`S067` as listed; only `short72` carries a substitution. |
 | **G5** | **`build_shorts_hero_cards.py` and `composite_shorts_hero.py` — referenced in `SHORTS_METHOD.v001.md` §BUILD INTEGRATION — do not exist in `scripts/`.** | The method document points at AE hero-beat tooling that was never committed. Following it literally will fail. | The working path is the `short57`–`short59` one documented in §7 (`gen_newshort_narration.py` → `build_short_mix.py` → `short<NN>.ts` → Root.tsx → render → `coverfirst.sh`). Correct `SHORTS_METHOD.v001.md` §BUILD INTEGRATION to match. |
