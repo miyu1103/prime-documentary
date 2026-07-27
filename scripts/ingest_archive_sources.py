@@ -115,9 +115,99 @@ PERSON_RE = re.compile(
 # negative keywords: talking-head/junk formats we never want as b-roll
 GLOBAL_NEG = ["lecture", "slideshow", "seminar", "webinar", "powerpoint", "sermon",
               "podcast", "gameplay", "tutorial", "unboxing", "vlog", "selfie",
-              "portrait", "interview", "mugshot", "headshot", "zoom meeting"]
+              "portrait", "interview", "mugshot", "headshot", "zoom meeting",
+              # live-reject finding 2026-07-28: a video-game stream ("SoulCalibur
+              # Street Fighter Mix ... Season 19 Episode 21", 428MB) cleared the
+              # gate on weak terms alone
+              "video game", "street fighter", "soulcalibur", "twitch", "speedrun",
+              "let's play", "esports", "walkthrough", "emulator", "rom hack"]
 STOPWORDS = set("the a an of in on and or for with to at from by 1930s 1940s 1950s "
                 "1960s 1970s old new".split())
+
+# ---- relevance-v3 (2026-07-28): FALSE-NEGATIVE fix from the gov lane ----
+# A single unambiguous domain term scored only 15 and silently discarded prime
+# material (Nuremberg / Yokohama / Yamashita / Milch trial footage). Unambiguous
+# terms now weigh +30 so ONE strong term clears the >=30 threshold WITHOUT
+# lowering the threshold. Weak terms (common English words that appear in any
+# archival title) stay at +15 and still need corroboration.
+WEAK_TERMS = set("""
+high street post office red door bell shop village city town main new old film movie
+home water night light day world land sea air house building room car train station
+machine music band hall book paper wall stone block cell bar line board box american
+british england britain london chicago japan tokyo kyoto rural urban aerial night
+close macro dark abstract background texture wind rain storm clouds birds forest
+mountain desert river ocean waves coast reef island bridge tower park square market
+school church fair county state federal national public private modern vintage retro
+period silent western feature classic scene view interior exterior street-level
+production process assembly equipment technology science research industrial
+performance recording concert orchestra jazz band commercial advertisement poster
+label product picture image photo video audio sound ambience noise hum rumble echo
+""".split())
+# extra unambiguous domain terms per theme (not present in the query table but
+# unmistakable subject matter — the gov lane's recovered material lives here)
+STRONG_EXTRA: dict[str, list[str]] = {
+    "courtroom_justice": ["nuremberg", "tribunal", "courtroom", "courthouse", "judiciary",
+                          "defendant", "prosecution", "verdict", "testimony", "arraignment",
+                          "yamashita", "milch", "indictment", "adjudication",
+                          # recovered from live reject titles (2026-07-28): prime
+                          # courtroom material whose titles use trade vocabulary
+                          "cross-examination", "perjury", "subpoena", "acquittal",
+                          "mistrial", "habeas", "litigation", "deposition", "plaintiff",
+                          "appellate", "prosecutor", "attorney", "jury", "juror"],
+    "prison_jail": ["penitentiary", "incarceration", "inmate", "alcatraz", "sing-sing",
+                    "reformatory", "cellblock", "warden"],
+    "police_period": ["constabulary", "gendarmerie", "patrolman", "squad-car"],
+    "police_modern": ["swat", "dispatcher", "cruiser"],
+    "newspapers_printing": ["linotype", "letterpress", "typesetting", "pressroom", "newsroom"],
+    "uk_highstreet_postoffice": ["postbox", "sub-postmaster", "royal-mail", "greengrocer",
+                                 "haberdashery", "pillar-box"],
+    "navy_harbor": ["shipyard", "drydock", "quayside", "stevedore", "battleship", "frigate"],
+    "laboratory_forensics": ["forensic", "spectrometer", "centrifuge", "petri", "microscope"],
+    "government_buildings": ["capitol", "statehouse", "parliament", "chancery"],
+    "period_telephone_tech": ["switchboard", "telegraph", "teletype", "rotary-dial"],
+    "money_banking": ["bullion", "mint", "vault", "bourse", "clearinghouse"],
+    "war_history": ["newsreel", "artillery", "regiment", "battalion", "armistice"],
+    "space_nasa": ["apollo", "gemini", "nebula", "orbiter", "cosmonaut", "launchpad"],
+    # BIGRAMS: ambiguity is per-WORD, not per-phrase. "city"/"street"/"american"
+    # are weak alone, but "american city"/"main street" are unmistakable subject
+    # matter. Without these the weak-only cap discarded genuine period material
+    # ("Dynamic American City", Prelinger 1956). term_hits() matches across
+    # hyphen or space, so "high-street" and "high street" both hit.
+    "americana_1930s_1970s": ["american city", "main street", "small town", "drive-in",
+                              "soda fountain", "five-and-dime", "streetcar", "trolley",
+                              "steam locomotive", "assembly line", "roadside"],
+    "small_town": ["small town", "main street", "town square", "water tower",
+                   "county fair", "village green"],
+    "chicago_city": ["elevated train", "elevated railway", "chicago river", "skyline"],
+    "uk_period": ["high street", "british railway", "steam railway"],
+}
+STRONG_EXTRA["uk_highstreet_postoffice"] += ["high street", "post office", "royal mail",
+                                            "corner shop", "village shop"]
+STRONG_EXTRA["navy_harbor"] += ["naval shipyard", "harbor docks", "dry dock"]
+STRONG_EXTRA["newspapers_printing"] += ["printing press", "printing house", "front page"]
+STRONG_EXTRA["money_banking"] += ["bank vault", "stock exchange", "trading floor",
+                                  "cash register"]
+STRONG_EXTRA["government_buildings"] += ["city hall", "supreme court", "capitol dome"]
+STRONG_EXTRA["period_telephone_tech"] += ["telephone switchboard", "rotary telephone",
+                                          "telephone booth"]
+STRONG_EXTRA["laboratory_forensics"] += ["crime lab", "chemistry lab", "test tube"]
+# sense guards: a term match is CANCELLED when the surrounding phrase is a different
+# sense (the both-end boundary alone cannot catch these multi-word senses)
+SENSE_GUARDS: dict[str, list[str]] = {
+    "trial": [r"trial run", r"clinical trial", r"sea trial", r"field trial",
+              r"trial and error", r"time trial", r"trial by fire"],
+    "court": [r"tennis court", r"basketball court", r"food court", r"courting",
+              r"court(?:s|ing)? (?:her|him|a lady)", r"courtesy", r"courtyard"],
+    "cell": [r"cell (?:phone|biology|division|culture)", r"blood cell", r"stem cell",
+             r"fuel cell", r"solar cell"],
+    "bar": [r"bar (?:graph|chart)", r"crow ?bar", r"candy bar", r"sand ?bar"],
+    "mint": [r"mint (?:leaf|leaves|tea|condition|green)", r"peppermint", r"spearmint"],
+    "vault": [r"pole vault", r"vaulted ceiling"],
+    "block": [r"block (?:party|chain)", r"engine block", r"building blocks"],
+    "post": [r"post ?war", r"post ?production", r"fence post", r"post ?script",
+             r"post ?graduate", r"lamp ?post", r"goal ?post"],
+    "mail": [r"mail ?order", r"chain ?mail", r"e-?mail"],
+}
 # minimum relevance score to download (precision over recall; archives need >=2
 # distinct topical terms, curated stock search is already fairly relevant)
 SRC_THRESHOLD = {"mixkit": 20, "coverr": 20, "pixabay": 20, "unsplash": 20,
@@ -146,37 +236,101 @@ def theme_terms(theme: str) -> tuple[set[str], list[str]]:
                 phrases.append(q.lower())
                 terms |= {w for w in re.findall(r"[a-z]+", q.lower())
                           if w not in STOPWORDS and len(w) > 2}
+        terms |= {t.lower() for t in STRONG_EXTRA.get(theme, [])}
         _theme_pos_cache[theme] = (terms, phrases)
     return _theme_pos_cache[theme]
 
 
-def relevance(theme: str, text: str) -> tuple[int, list[str], list[str]]:
-    """Score 0-100 from metadata text vs theme keywords. Returns (score, matched, neg_hits).
+def term_weight(theme: str, term: str) -> int:
+    """+30 for unambiguous domain terms (ONE clears the >=30 threshold), +15 for weak
+    common-English terms that need corroboration. relevance-v3, gov-lane finding."""
+    if term in STRONG_EXTRA.get(theme, []):
+        return 30
+    return 15 if term in WEAK_TERMS else 30
+
+
+def sense_ok(term: str, text: str) -> bool:
+    """False when the match is a different sense of the word (guard phrases)."""
+    return not any(re.search(p, text) for p in SENSE_GUARDS.get(term, []))
+
+
+def term_hits(term: str, text: str) -> bool:
+    """Whole-word match anchored at BOTH ends, allowing plural/possessive suffixes.
+
+    CRITICAL (bug found by the gov lane 2026-07-28): a leading-only boundary
+    (`\\bcourt`) matches "courtesy"/"courtyard" in archival boilerplate and admitted
+    clearly off-theme items at exactly the threshold. Both ends must be anchored.
+    "courts"/"trials"/"prison's" pass; "courtesy"/"courtyard" do not.
+
+    Multi-word terms match across hyphen OR space ("cross-examination" finds
+    "Cross Examination" — a live reject title that was prime courtroom material)."""
+    core = r"[-\s]+".join(re.escape(p) for p in re.split(r"[-\s]+", term) if p)
+    return re.search(rf"\b{core}(?:s|es|'s|s')?\b", text) is not None
+
+
+def relevance(theme: str, title: str, desc: str = "") -> tuple[int, list[str], list[str], bool]:
+    """Score 0-100 from item metadata vs theme keywords.
+    Returns (score, matched, neg_hits, title_ok).
+
     +15 per distinct positive term (cap 60), +25 if a full query phrase appears,
-    -25 per negative keyword."""
-    low = (text or "").lower()
+    -25 per negative keyword. `title_ok` is the TITLE-RELEVANCE GATE: an item must
+    carry >=1 positive term in its TITLE, not merely somewhere in the description —
+    description-only matches are archival boilerplate, not subject matter."""
+    t_low = (title or "").lower()
+    low = f"{title} {desc}".lower()
     pos, phrases = theme_terms(theme)
-    matched = sorted({t for t in pos if re.search(rf"\b{re.escape(t)}", low)})
-    score = min(60, 15 * len(matched))
-    if any(p in low for p in phrases):
+    matched = sorted({t for t in pos if term_hits(t, low) and sense_ok(t, low)})
+    title_matched = [t for t in matched if term_hits(t, t_low) and sense_ok(t, t_low)]
+    score = min(60, sum(term_weight(theme, t) for t in matched))
+    phrase_ok = any(p in low for p in phrases)
+    if phrase_ok:
         score += 25
+    # WEAK-ONLY CAP (live-reject finding 2026-07-28): two weak common words summed to
+    # exactly the threshold and admitted a 428MB video-game stream ("SoulCalibur
+    # Street Fighter Mix...") into uk_highstreet_postoffice. An item must carry >=1
+    # STRONG domain term or a full query phrase; weak words alone can never clear 30.
+    # Encoded in the score (not a 5th return value) to keep this function's signature
+    # stable for the sibling lanes that import it.
+    if not phrase_ok and not any(term_weight(theme, t) >= 30 for t in matched):
+        score = min(score, 15)
     negs = [n for n in GLOBAL_NEG if n in low]
     score -= 25 * len(negs)
-    return max(0, min(100, score)), matched, negs
+    return max(0, min(100, score)), matched, negs, bool(title_matched)
+
+
+LANE = os.environ.get("PD_INGEST_LANE", "ia")  # per-lane reject file (append safety)
+
+
+def atomic_append(path: str, line: str) -> None:
+    """Concurrency-safe append for files shared across parallel lanes.
+
+    4 lanes appending to one handle produced torn/interleaved JSON lines. Opening
+    with os.O_APPEND and issuing ONE write() of a single <4KB line is atomic on
+    Windows and POSIX; combined with per-lane reject files (merged on read) there
+    is no interleaving window left."""
+    data = (line.rstrip("\n") + "\n").encode("utf-8")
+    fd = os.open(path, os.O_WRONLY | os.O_CREAT | os.O_APPEND, 0o644)
+    try:
+        os.write(fd, data)
+    finally:
+        os.close(fd)
 
 
 def reject_log(source: str, item_id: str, theme: str, reason: str,
-               score: int = -1, matched=None, negs=None) -> None:
-    """Compact per-item rejects log (skipped items do NOT enter the main ledger)."""
+               score: int = -1, matched=None, negs=None, title: str = "") -> None:
+    """Per-item rejects log (skipped items do NOT enter the main ledger).
+
+    Writes to a PER-LANE file `rejects_<lane>.jsonl` (merged on read) via an
+    atomic append. `title` is REQUIRED in practice: without reject titles,
+    false negatives are invisible — the failure direction that silently discarded
+    prime material (gov lane, 2026-07-28)."""
     try:
         os.makedirs(LEDGER_DIR, exist_ok=True)
-        with open(os.path.join(LEDGER_DIR, "rejects.jsonl"), "a", encoding="utf-8") as f:
-            f.write(json.dumps({
-                "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
-                "source": source, "id": str(item_id)[:200], "theme": theme,
-                "reason": reason, "score": score,
-                "matched": matched or [], "neg": negs or []},
-                ensure_ascii=False) + "\n")
+        atomic_append(os.path.join(LEDGER_DIR, f"rejects_{LANE}.jsonl"), json.dumps({
+            "ts": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "source": source, "id": str(item_id)[:200], "title": str(title)[:300],
+            "theme": theme, "reason": reason, "score": score,
+            "matched": matched or [], "neg": negs or []}, ensure_ascii=False))
     except OSError:
         pass
 
@@ -455,14 +609,29 @@ def ffprobe_json(path: str) -> dict:
     return json.loads(out.stdout or "{}")
 
 
-def validate_media(path: str, kind: str, theme: str) -> tuple[bool, str]:
-    """Technical floors (owner vetting layer). Returns (ok, reason).
-    video: decodes, height>=480, 5s..30min (pd_feature_films exempt from the max)
-    audio: decodes, >=1s, >=128kbps or lossless codec
-    image: decodes, long edge >=1200px (>=1920px for textures_backgrounds)"""
+# Archival sources hold irreplaceable material that modern-stock floors would delete:
+# 1940s telecine derivatives are often 240-360p and PD features run past 30 minutes.
+# Their floors are looser, and sub-SD-but-unique footage is QUARANTINED for owner
+# review rather than destroyed (live finding: the 480p floor deleted "NUREMBERG AND
+# MAUTHAUSEN" at 240p, the 30-min cap deleted "Cross Examination" (1932) at 62 min).
+ARCHIVAL_SOURCES = {"ia", "loc", "nara", "nasa", "wikimedia", "noaa", "nypl",
+                    "smithsonian", "met"}
+
+
+def validate_media(path: str, kind: str, theme: str,
+                   source: str = "") -> tuple[str, str]:
+    """Technical floors (owner vetting layer). Returns (verdict, reason) where
+    verdict is "ok" | "reject" | "quarantine".
+
+    video  : decodes, >=5s; height >=480 (stock) / >=360 (archival), 240-359p
+             archival -> quarantine; max 30min (stock) / 120min (archival),
+             `pd_feature_films` exempt from the maximum entirely
+    audio  : decodes, >=1s, >=128kbps or lossless codec
+    image  : decodes, long edge >=1200px (>=1920px for textures_backgrounds)"""
+    archival = source in ARCHIVAL_SOURCES
     try:
         if os.path.getsize(path) < MIN_ITEM_BYTES:
-            return False, "too-small-file"
+            return "reject", "too-small-file"
         if kind in ("video", "audio"):
             info = ffprobe_json(path)
             fmt = info.get("format", {})
@@ -470,22 +639,27 @@ def validate_media(path: str, kind: str, theme: str) -> tuple[bool, str]:
             if kind == "video":
                 heights = [int(s.get("height", 0) or 0) for s in info.get("streams", [])
                            if s.get("codec_type") == "video"]
-                if not heights or max(heights) < 480:
-                    return False, f"video-below-480p({max(heights) if heights else 0})"
+                h = max(heights) if heights else 0
+                floor = 360 if archival else 480
+                if h < floor:
+                    return "reject", f"video-below-{floor}p({h})"
+                if archival and h < 480:
+                    return "quarantine", f"archival-sub-sd({h}p)"
                 if dur < 5:
-                    return False, f"video-too-short({dur:.1f}s)"
-                if dur > 1800 and theme != "pd_feature_films":
-                    return False, f"video-too-long({dur/60:.0f}min)"
+                    return "reject", f"video-too-short({dur:.1f}s)"
+                max_s = 7200 if theme == "pd_feature_films" else (7200 if archival else 1800)
+                if dur > max_s:
+                    return "reject", f"video-too-long({dur/60:.0f}min)"
             else:
                 if dur < 1:
-                    return False, "audio-too-short"
+                    return "reject", "audio-too-short"
                 br = int(fmt.get("bit_rate", 0) or 0)
                 codecs = [s.get("codec_name", "") for s in info.get("streams", [])
                           if s.get("codec_type") == "audio"]
                 lossless = any(c.startswith(("pcm", "flac", "alac")) for c in codecs)
                 if not lossless and br and br < 128000:
-                    return False, f"audio-below-128k({br})"
-            return True, "ok"
+                    return "reject", f"audio-below-128k({br})"
+            return "ok", "ok"
         if kind == "image":
             from PIL import Image
             with Image.open(path) as im:
@@ -494,11 +668,11 @@ def validate_media(path: str, kind: str, theme: str) -> tuple[bool, str]:
                 long_edge = max(im.size)
             floor = 1920 if theme == "textures_backgrounds" else 1200
             if long_edge < floor:
-                return False, f"image-below-{floor}px({long_edge})"
-            return True, "ok"
-        return True, "ok"
+                return "reject", f"image-below-{floor}px({long_edge})"
+            return "ok", "ok"
+        return "ok", "ok"
     except Exception as e:  # noqa: BLE001
-        return False, f"decode-fail:{e.__class__.__name__}"
+        return "reject", f"decode-fail:{e.__class__.__name__}"
 
 
 def build_contact_sheet(theme: str, files: list[str], count: int) -> None:
@@ -551,6 +725,7 @@ class Ledger:
         os.makedirs(LEDGER_DIR, exist_ok=True)
         self.done: set[tuple[str, str]] = set()
         self.shas: set[str] = set()          # content-level dedup across ALL tiers
+        self.shelf_shas: set[str] = set()    # only items physically on the archive shelf
         self.existing_shas: set[str] = set()  # dedup vs EXISTING holdings (factory/stock)
         self.existing_ids: set[str] = set()   # "<source>:<id>" of existing holdings
         self._existing_mtime = 0.0
@@ -563,7 +738,8 @@ class Ledger:
         self.run_items = 0
         self.cap_bytes = int(cap_gb * GB) if cap_gb > 0 else (1 << 62)  # 0 = unlimited
         for fn in os.listdir(LEDGER_DIR):
-            if not fn.endswith(".jsonl") or fn == "rejects.jsonl":
+            if not fn.endswith(".jsonl") or fn.startswith("rejects") or fn.endswith(
+                    ("_dedup_removed.jsonl", "_candidates.jsonl")):
                 continue
             with open(os.path.join(LEDGER_DIR, fn), encoding="utf-8") as f:
                 for line in f:
@@ -574,12 +750,21 @@ class Ledger:
                     self.done.add((rec["source"], str(rec["id"])))
                     if rec.get("sha256"):
                         self.shas.add(rec["sha256"])
+                    # budgets/themes/retro-sweep count ONLY items that live on the
+                    # archive shelf itself — catalog ledgers of PRE-EXISTING holdings
+                    # (e.g. factory.jsonl written by the dedup-index agent) still feed
+                    # the dedup sets above but must not pollute accounting.
+                    fp = str(rec.get("file_path", ""))
+                    roots = [t["root"] for t in TIERS] + [QUARANTINE]
+                    if not any(fp.lower().startswith(r.lower()) for r in roots):
+                        continue
+                    if rec.get("sha256"):
+                        self.shelf_shas.add(rec["sha256"])
                     b = int(rec.get("bytes", 0))
                     t = rec.get("theme", "?")
                     self.theme_bytes[t] = self.theme_bytes.get(t, 0) + b
                     self.theme_items[t] = self.theme_items.get(t, 0) + 1
                     self.total_bytes += b
-                    fp = str(rec.get("file_path", ""))
                     for tier in TIERS:
                         if fp.upper().startswith(tier["drive"].upper()[0] + ":"):
                             self.tier_bytes[tier["name"]] += b
@@ -607,16 +792,22 @@ class Ledger:
             return
         sha = idx.get("sha256", {})
         self.existing_shas = set(sha if isinstance(sha, list) else sha.keys())
+        # source IDs: flat "source_ids" ({"src:id": path} / list) OR nested
+        # "ids" ({"pexels": [id,...] | {id: path}}) — the dedup-index agent uses "ids"
         sid = idx.get("source_ids", {})
         self.existing_ids = {k.lower() for k in (sid if isinstance(sid, list) else sid.keys())}
+        for src, ids in (idx.get("ids", {}) or {}).items():
+            ids = ids if isinstance(ids, (list, set)) else ids.keys()
+            self.existing_ids |= {f"{src}:{i}".lower() for i in ids}
         log(f"existing-holdings index loaded: {len(self.existing_shas)} shas, "
             f"{len(self.existing_ids)} source-ids")
-        retro = self.shas & self.existing_shas
+        retro = self.shelf_shas & self.existing_shas
         if retro:
-            log(f"RETRO SWEEP: {len(retro)} already-ingested items collide with existing "
-                f"holdings (logged to rejects.jsonl; files kept for owner decision)")
-            for s in retro:
-                reject_log("retro", s, "-", "dup_existing_retro_sha")
+            log(f"RETRO SWEEP: {len(retro)} already-ingested shelf items collide with "
+                f"existing holdings (summary + sample in rejects.jsonl; files kept)")
+            reject_log("retro", f"{len(retro)}-collisions", "-",
+                       "dup_existing_retro_sha_summary",
+                       matched=sorted(retro)[:20])  # sample, never 10k+ spam lines
 
     def theme_full(self, theme: str) -> bool:  # owner final directive: no per-theme caps
         return False
@@ -640,6 +831,7 @@ class Ledger:
     def record(self, rec: dict) -> None:
         self.done.add((rec["source"], str(rec["id"])))
         self.shas.add(rec["sha256"])
+        self.shelf_shas.add(rec["sha256"])
         t = rec["theme"]
         b = rec["bytes"]
         self.theme_bytes[t] = self.theme_bytes.get(t, 0) + b
@@ -672,16 +864,21 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
         return False
     ACTIVITY += 1
     if f"{source}:{item_id}".lower() in ledger.existing_ids:
-        reject_log(source, item_id, theme, "dup_existing_id")  # no bandwidth wasted
+        reject_log(source, item_id, theme, "dup_existing_id", title=title)
         return False
     if PERSON_RE.search(title or ""):
-        reject_log(source, item_id, theme, "person-filter")
+        reject_log(source, item_id, theme, "person-filter", title=title)
         return False
     # per-item metadata relevance gate (owner: no blind query-dumps)
-    score, matched, negs = relevance(theme, f"{title} {desc}")
+    score, matched, negs, title_ok = relevance(theme, title, desc)
     threshold = SRC_THRESHOLD.get(source, DEFAULT_THRESHOLD)
     if score < threshold:
-        reject_log(source, item_id, theme, f"relevance<{threshold}", score, matched, negs)
+        reject_log(source, item_id, theme, f"relevance<{threshold}", score, matched, negs,
+                   title=title)
+        return False
+    if not title_ok:  # title-relevance gate — description-only matches are boilerplate
+        reject_log(source, item_id, theme, "title-irrelevant", score, matched, negs,
+                   title=title)
         return False
     if decision == "review_required":
         # quarantine lives on H: only; respect the H: floor even for quarantine
@@ -712,7 +909,8 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
         nbytes, sha = NET.download(download_url, dest, headers=dl_headers)
     except Exception as e:  # noqa: BLE001
         log(f"  dl-fail: {e}")
-        reject_log(source, item_id, theme, f"download-fail:{e.__class__.__name__}", score)
+        reject_log(source, item_id, theme, f"download-fail:{e.__class__.__name__}", score,
+                   title=title)
         for p in (dest, dest + ".part"):
             if os.path.exists(p):
                 try:
@@ -723,25 +921,36 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
     if sha in ledger.shas:  # content-level dedup across all tiers/sources
         log(f"  dup-sha, removed: {fname[:70]}")
         os.remove(dest)
-        reject_log(source, item_id, theme, "dup-sha256", score)
+        reject_log(source, item_id, theme, "dup-sha256", score, title=title)
         return False
     if sha in ledger.existing_shas:  # content already in factory/stock holdings
         log(f"  dup-existing-sha, removed: {fname[:70]}")
         os.remove(dest)
-        reject_log(source, item_id, theme, "dup_existing_sha", score)
+        reject_log(source, item_id, theme, "dup_existing_sha", score, title=title)
         return False
-    ok, why = validate_media(dest, kind, theme)
-    if not ok:
+    verdict, why = validate_media(dest, kind, theme, source)
+    if verdict == "reject":
         log(f"  reject ({why}), removed: {fname[:70]}")
         os.remove(dest)
-        reject_log(source, item_id, theme, f"tech:{why}", score)
+        reject_log(source, item_id, theme, f"tech:{why}", score, title=title)
         return False
+    quarantine_reason = ""
+    if verdict == "quarantine":
+        # irreplaceable archival material below the modern floor: keep it, but for
+        # owner review only — never silently into the main shelf, never deleted
+        qroot = os.path.join(QUARANTINE, theme)
+        os.makedirs(qroot, exist_ok=True)
+        qdest = os.path.join(qroot, os.path.basename(dest))
+        os.replace(dest, qdest)
+        dest, decision, quarantine_reason = qdest, "review_required", why
+        log(f"  quarantined ({why}): {fname[:66]}")
     ledger.record({
         "id": str(item_id), "source": source, "source_url": source_url, "title": title,
         "license_field_raw": license_raw[:500], "license_decision": decision,
         "theme": theme, "file_path": dest, "bytes": nbytes, "sha256": sha,
         "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "relevance_score": score, "matched_keywords": matched[:12],
+        **({"quarantine_reason": quarantine_reason} if quarantine_reason else {}),
     })
     log(f"  OK {decision:>15} s={score:3d} {nbytes/1e6:7.1f}MB {fname[:74]}")
     if ledger.theme_items.get(theme, 0) % QC_SHEET_EVERY == 0:
@@ -803,7 +1012,8 @@ def src_ia(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
             year = str(meta.get("year", "") or meta.get("date", "") or "")
             prel = any("prelinger" in c.lower() for c in colls)
             if theme in PERIOD_THEMES and not year and not prel:
-                reject_log("ia", ident, theme, "period-no-date-provenance")
+                reject_log("ia", ident, theme, "period-no-date-provenance",
+                           title=str(meta.get("title", ident)))
                 continue
             # choose an h.264 mp4 derivative, not the master
             cands = []
