@@ -842,6 +842,27 @@ class Ledger:
     def run_full(self) -> bool:
         return self.total_bytes >= self.cap_bytes or self.pick_tier() is None
 
+    def claimed_by_other_process(self, source: str, sha: str, item_id: str) -> bool:
+        """Re-read THIS source's ledger right before recording, to catch an item a
+        CONCURRENT process ingested since we loaded ours.
+
+        Each process holds its own in-memory dedup sets, so two lanes running the
+        same source both pass the sha check and both write (2026-07-28: two recovery
+        processes each downloaded "Big Picture: Military Justice", 122MB twice).
+        Re-reading only the source's own ledger is cheap and closes the window."""
+        path = os.path.join(LEDGER_DIR, f"{source}.jsonl")
+        try:
+            for line in open(path, encoding="utf-8", errors="replace"):
+                try:
+                    other = json.loads(line)
+                except Exception:
+                    continue
+                if other.get("sha256") == sha or str(other.get("id")) == str(item_id):
+                    return True
+        except OSError:
+            return False
+        return False
+
     def record(self, rec: dict) -> None:
         self.done.add((rec["source"], str(rec["id"])))
         self.shas.add(rec["sha256"])
@@ -942,6 +963,11 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
         log(f"  dup-existing-sha, removed: {fname[:70]}")
         os.remove(dest)
         reject_log(source, item_id, theme, "dup_existing_sha", score, title=title)
+        return False
+    if ledger.claimed_by_other_process(source, sha, item_id):
+        log(f"  dup-concurrent-process, removed: {fname[:70]}")
+        os.remove(dest)
+        reject_log(source, item_id, theme, "dup_concurrent_process", score, title=title)
         return False
     verdict, why = validate_media(dest, kind, theme, source)
     if verdict == "reject":
