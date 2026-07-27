@@ -607,10 +607,58 @@ def build_contact_sheet(theme: str, files: list[str], count: int) -> None:
         log(f"  QC sheet fail ({theme}): {e}")
 
 
+_SWEEP_HOOK = None   # test seam: called after the snapshot, before the merge re-read
+
+
+def rewrite_ledger_merged(path: str, keep_lines: list[str], snapshot_keys: set,
+                          drop_shas: set[str], retries: int = 5) -> int:
+    """Rewrite a shared ledger WITHOUT clobbering another agent's concurrent
+    appends. Between taking a snapshot and replacing the file, other agents (the
+    NARA triage agent, sibling lanes) may append rows; a naive rewrite would drop
+    them. So immediately before os.replace we re-read the file and merge back any
+    row whose (source, id) was not in our snapshot, then retry on failure.
+    Returns the number of lines written."""
+    last: Exception | None = None
+    for attempt in range(retries + 1):
+        try:
+            merged = list(keep_lines)
+            seen = set(snapshot_keys)
+            recovered = 0
+            if os.path.exists(path):
+                with open(path, encoding="utf-8", errors="replace") as f:
+                    for line in f:
+                        try:
+                            rec = json.loads(line)
+                        except Exception:
+                            continue
+                        key = (rec.get("source"), str(rec.get("id")))
+                        if key in seen:
+                            continue
+                        seen.add(key)
+                        if rec.get("sha256") in drop_shas:
+                            continue          # newcomer is itself a dup: sweep it too
+                        merged.append(json.dumps(rec, ensure_ascii=False) + "\n")
+                        recovered += 1
+            tmp = f"{path}.tmp{os.getpid()}"
+            with open(tmp, "w", encoding="utf-8") as f:
+                f.writelines(merged)
+            os.replace(tmp, path)
+            if recovered:
+                log(f"  merge-on-rewrite: preserved {recovered} row(s) appended by "
+                    f"another writer during the sweep of {os.path.basename(path)}")
+            return len(merged)
+        except OSError as e:
+            last = e
+            time.sleep(0.5 * (attempt + 1))
+    raise last if last else RuntimeError(f"could not rewrite {path}")
+
+
 def retro_sha_sweep(index_shas: set[str]) -> int:
     """CONTRACT §6.3 retroactive sweep: delete this lane's already-kept files
     whose sha256 is in existing_index.json; tombstone in gov_dedup_removed.jsonl,
-    log reason dup_existing_retro_sha, rewrite the ledgers atomically."""
+    log reason dup_existing_retro_sha, rewrite the ledgers atomically.
+    The rewrite merges concurrent appends (see rewrite_ledger_merged) because
+    nara.jsonl is also written by the dedicated NARA triage agent."""
     removed = 0
     if not index_shas:
         return 0
@@ -619,6 +667,7 @@ def retro_sha_sweep(index_shas: set[str]) -> int:
         if not os.path.exists(path):
             continue
         keep: list[str] = []
+        snapshot_keys: set = set()
         hit = False
         with open(path, encoding="utf-8", errors="replace") as f:
             for line in f:
@@ -627,6 +676,7 @@ def retro_sha_sweep(index_shas: set[str]) -> int:
                 except Exception:
                     keep.append(line)
                     continue
+                snapshot_keys.add((rec.get("source"), str(rec.get("id"))))
                 if rec.get("sha256") in index_shas:
                     fp = rec.get("file_path") or ""
                     if fp and os.path.exists(fp):
@@ -647,10 +697,9 @@ def retro_sha_sweep(index_shas: set[str]) -> int:
                 else:
                     keep.append(line)
         if hit:
-            tmp = path + ".tmp"
-            with open(tmp, "w", encoding="utf-8") as f:
-                f.writelines(keep)
-            os.replace(tmp, path)
+            if _SWEEP_HOOK is not None:      # tests exercise the concurrent-append path
+                _SWEEP_HOOK(path)
+            rewrite_ledger_merged(path, keep, snapshot_keys, index_shas)
     return removed
 
 
