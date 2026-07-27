@@ -61,15 +61,23 @@ SETTINGS = {
 }
 DELIVERY_BY_SECTION = {
     "HOOK": "intense", "OP": "building", "ACT_1": "building", "ACT_2": "building",
-    "ACT_3": "building", "ACT_4": "building", "ENDING": "calm",
+    "ACT_3": "building", "ACT_4": "building", "ACT_5": "building", "ENDING": "calm",
 }
+# Canon 4-act order (EP52-55). Episodes with a different act count declare their own
+# `sections` in the registry below (EP56 is the first 5-act case film).
 SECTION_ORDER = ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ENDING"]
+SECTION_ORDER_5ACT = ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ACT_5", "ENDING"]
 # EP52/53/54/55 headings: `## COLD OPEN ...`, `## OPENING ...`, `## ACT I — ...`
 # ... `## ACT IV — ...`, `## ENDING ...` (Roman numerals). Longer numerals FIRST.
+# EP56 adds `## ACT V — ...` and a narration-free `## BRAND STING ...` card heading
+# (the sting is a build element; it carries no spoken line — mapped to None so any
+# text that ever lands under it is caught by the section-coverage gate, not silently
+# absorbed into the neighbouring act).
 SECTION_HEADINGS = [
     ("HOOK", re.compile(r"^COLD\s+OPEN\b", re.IGNORECASE)),
     ("OP", re.compile(r"^OPENING\b", re.IGNORECASE)),
     ("ACT_4", re.compile(r"^ACT\s+IV\b", re.IGNORECASE)),
+    ("ACT_5", re.compile(r"^ACT\s+V\b", re.IGNORECASE)),
     ("ACT_3", re.compile(r"^ACT\s+III\b", re.IGNORECASE)),
     ("ACT_2", re.compile(r"^ACT\s+II\b", re.IGNORECASE)),
     ("ACT_1", re.compile(r"^ACT\s+I\b", re.IGNORECASE)),
@@ -101,6 +109,14 @@ EPISODES = {
     "PD-2026-055-burge": {
         "planning": "EP55_burge_script.en.v001.md",
         "design_speech_seconds": 1582.1,   # DESIGN §5: 4,696 w @178.1wpm
+    },
+    "PD-2026-056-postoffice": {
+        "planning": "EP56_postoffice_script.en.v001.md",
+        # DESIGN §5: 4,750 w @178.1wpm = 1600.2s provisional; gap budget 181.8s +
+        # endcard 9s -> 1791.0s (29:51) provisional inside the 1740-1860 band.
+        "design_speech_seconds": 1600.2,
+        # FIRST five-act case film (ACT I..ACT V) + a narration-free `## BRAND STING`.
+        "sections": SECTION_ORDER_5ACT,
     },
 }
 
@@ -137,10 +153,16 @@ def section_for_heading(head: str) -> tuple[str | None, bool]:
     return None, False
 
 
-def extract_events(md: str) -> list[tuple]:
-    """-> ordered events: ("para", section, text) | ("silence", section, seconds)."""
+def extract_events(md: str, orphans: list[str] | None = None) -> list[tuple]:
+    """-> ordered events: ("para", section, text) | ("silence", section, seconds).
+
+    `orphans` (optional) collects prose lines that sit under a heading with NO section
+    mapping AFTER narration has started (e.g. EP56's `## BRAND STING` card). Such lines
+    would otherwise be dropped silently; build_chunks refuses to spend money on them.
+    """
     out: list[tuple] = []
     section: str | None = None
+    started = False
     for raw in md.splitlines():
         line = raw.strip()
         hm = re.match(r"^(#{1,6})\s+(.*)$", line)
@@ -149,8 +171,14 @@ def extract_events(md: str) -> list[tuple]:
             if is_stop:
                 break
             section = sec
+            started = started or sec is not None
             continue
         if section is None or not line:
+            if (orphans is not None and started and line
+                    and not CJK.search(line)
+                    and not line.startswith(("|", "#", ">", "- ", "* ", "---", "**["))
+                    and len(re.sub(r"[^A-Za-z]", "", line)) >= 20):
+                orphans.append(line)
             continue
         sm = SILENCE_LINE.search(line)
         if sm:
@@ -199,8 +227,9 @@ def idempotency_key(ep: str, text: str, chunk_id: str) -> str:
 
 def build_chunks(ep: str, md: str) -> list[dict]:
     chunks: list[dict] = []
+    orphans: list[str] = []
     n = 0
-    for ev in extract_events(md):
+    for ev in extract_events(md, orphans):
         if ev[0] == "silence":
             if chunks:
                 chunks[-1]["silence_after_seconds"] = ev[2]
@@ -218,10 +247,14 @@ def build_chunks(ep: str, md: str) -> list[dict]:
                 "idempotency_key": idempotency_key(ep, sent, cid),
                 "silence_after_seconds": None,
             })
+    if orphans:
+        raise SystemExit(
+            "REFUSING TO GENERATE -- prose found under an unmapped heading (would be "
+            "dropped silently):\n  " + "\n  ".join(o[:120] for o in orphans))
     return chunks
 
 
-def assert_clean(chunks: list[dict]) -> None:
+def assert_clean(chunks: list[dict], expected: list[str] | None = None) -> None:
     """Hard gate: refuse to spend money if any production marker leaked into TTS text."""
     bad: list[str] = []
     for c in chunks:
@@ -236,9 +269,11 @@ def assert_clean(chunks: list[dict]) -> None:
             bad.append(f"{c['chunk_id']}: too short -> {t!r}")
     if bad:
         raise SystemExit("REFUSING TO GENERATE -- unclean chunks:\n  " + "\n  ".join(bad))
-    got = [s for s in SECTION_ORDER if any(c["section"] == s for c in chunks)]
-    if got != SECTION_ORDER:
-        raise SystemExit(f"REFUSING TO GENERATE -- section coverage {got} != {SECTION_ORDER}")
+    order = expected or SECTION_ORDER
+    got = [s for s in order if any(c["section"] == s for c in chunks)]
+    unknown = sorted({c["section"] for c in chunks} - set(order))
+    if got != order or unknown:
+        raise SystemExit(f"REFUSING TO GENERATE -- section coverage {got}{unknown} != {order}")
 
 
 # ---------------------------------------------------------------- helpers
@@ -426,7 +461,7 @@ def main(argv: list[str]) -> int:
     index_path = out_dir / "narration_index.v001.json"
 
     chunks = build_chunks(ep, script_src.read_text("utf-8"))
-    assert_clean(chunks)
+    assert_clean(chunks, cfg.get("sections"))
     chars = sum(len(c["spoken_text"]) for c in chunks)
     words = sum(len(c["spoken_text"].split()) for c in chunks)
     est = round(chars / 1000 * COST_PER_1K_CHARS_USD, 2)
