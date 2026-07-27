@@ -674,7 +674,9 @@ class Ledger:
         self.recent: dict[str, list[str]] = {}   # recent kept files/theme (QC sheets)
         self._last_refresh = 0.0
         self._index_mtime = -1.0
+        self._tomb_offset = 0
         self.refresh(force=True)
+        self.load_tombstones()
         self.load_existing_index()
 
     def _absorb(self, rec: dict) -> None:
@@ -715,6 +717,43 @@ class Ledger:
                     self.offsets[name] = f.tell()
             except OSError:
                 continue
+        if not force:   # tombstones can be appended mid-run by the retro sweep
+            self.load_tombstones()
+
+    # NOTE: an in-run retro-upgrade of already-ingested rows was implemented here
+    # and REMOVED deliberately. A dedicated triage agent owns retro-triage of the
+    # stored corpus and writes the same nara.jsonl in _ledger (it has already
+    # recorded 50 rows incl. owner-unlock rules R5/*). Any whole-file rewrite from
+    # this process would clobber that agent's concurrent writes, so this lane only
+    # ever APPENDS to the ledger. New items get their triage rule at ingest time.
+
+    def load_tombstones(self) -> int:
+        """Deleted+tombstoned items must STAY deleted. Without this, resume/dedup
+        reads only <source>.jsonl, so a purged item is re-downloaded on the next
+        pass (measured: naId 16664 purged 16:24:48, re-fetched 16:29:59)."""
+        path = os.path.join(LEDGER_DIR, "gov_dedup_removed.jsonl")
+        if not os.path.exists(path):
+            return 0
+        n = 0
+        try:
+            with open(path, encoding="utf-8", errors="replace") as f:
+                f.seek(self._tomb_offset)
+                for line in f:
+                    try:
+                        rec = json.loads(line)
+                    except Exception:
+                        continue
+                    if rec.get("source"):
+                        self.done.add((rec["source"], str(rec.get("id"))))
+                        n += 1
+                    if rec.get("sha256"):
+                        self.shas.add(rec["sha256"])
+                self._tomb_offset = f.tell()
+        except OSError:
+            return 0
+        if n:
+            log(f"tombstones loaded: {n} removed ids added to the skip set")
+        return n
 
     def load_existing_index(self) -> None:
         """CONTRACT §6.3: consume existing_index.json — shape
@@ -783,7 +822,7 @@ class Ledger:
 def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: str,
          download_url: str, kind: str, theme: str, license_raw: str, decision: str,
          default_ext: str, dry_run: bool, desc: str = "",
-         attribution_text: str = "") -> bool:
+         attribution_text: str = "", extra: dict | None = None) -> bool:
     """Vet -> download -> validate -> ledger. Returns True if ingested."""
     ledger.refresh()
     ledger.load_existing_index()
@@ -855,9 +894,125 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
     }
     if attribution_text:
         rec["attribution_text"] = attribution_text
+    if extra:   # e.g. triage_rule + license_evidence: a decision never ships alone
+        rec.update(extra)
     ledger.record(rec)
     log(f"  OK {decision:>15} s={score:3d} {nbytes/1e6:7.1f}MB {os.path.basename(dest)[:74]}")
     return True
+
+
+# ------------------------------------------------- NARA rights triage ----
+# Adopted from episodes/_planning/measurements/NARA_LICENSE_TRIAGE.v001.md §6
+# (rules version nara-license-triage-v001). Measured basis: over 445 unique NARA
+# moving-image records the "Restricted - Possibly / Copyright" flag is applied to
+# 223/223 items of RG-111 series 13807 — a series-wide caution, NOT an item
+# determination. ancestors[] is what actually carries provenance. Needs no extra
+# API call: every field used already ships inside hits[]._source.record.
+
+US_FEDERAL_CREATOR = (
+    "department of defense", "department of the navy", "department of the army",
+    "department of the air force", "office of the chief signal officer",
+    "naval photographic center", "army pictorial", "signal corps",
+    "united states marine corps", "marine corps", "coast guard",
+    "department of justice", "federal bureau of investigation",
+    "office of war information", "united states information agency",
+    "department of state", "department of the interior", "department of agriculture",
+    "national aeronautics and space administration", "works progress administration",
+    "office of strategic services", "war department", "atomic energy commission",
+    "environmental protection agency", "bureau of ",
+)
+THIRD_PARTY_LANG = (
+    "newsreel", "courtesy of", "obtained from other sources", "proprietary rights",
+    "copyright", "universal", "pathe", "pathé", "movietone", "hearst",
+    "march of time", "paramount news", "cbs", "nbc", "abc news",
+    "gift of", "donated by", "captured german", "captured enemy", "captured japanese",
+    "licensed", "stock footage from",
+)
+SHOTLIST_LANG = (
+    "newsreel", "captured enemy", "captured german", "captured japanese",
+    "courtesy of", "stock shot from", "copyright",
+)
+HARD_CLAIM = (
+    "is copyrighted", "copyright is retained", "copyright retained by",
+    "may not be used for commercial", "not for commercial use",
+    "commercial use is prohibited", "permission of the copyright owner is required",
+    "written permission of the donor",
+)
+OK_STATUS = {"unrestricted", "undetermined", ""}
+TRIAGE_VERSION = "nara-license-triage-v001"
+
+
+def nara_license_decision(rec: dict) -> tuple[str, str, str]:
+    """Returns (decision, rule_id, evidence). decision in {pd, review_required, reject}."""
+    use = rec.get("useRestriction") or {}
+    status = str(use.get("status", "")).strip()
+    note = str(use.get("note", "") or "")
+    spec = [str(s) for s in (use.get("specificUseRestrictions") or [])]
+    anc = rec.get("ancestors") or []
+    rgs = [a for a in anc if a.get("levelOfDescription") == "recordGroup"]
+    colls = [a for a in anc if a.get("levelOfDescription") == "collection"]
+    creators = [str(c.get("heading", "")) for a in anc for c in (a.get("creators") or [])]
+    creators += [str(c.get("heading", "")) for c in (rec.get("creators") or [])]
+    creator_s = " | ".join(creators)
+    ev = "useRestriction=" + json.dumps(use, ensure_ascii=False)
+
+    blob = " ".join([str(rec.get("title", "")), str(rec.get("scopeAndContentNote", "")),
+                     " ".join(str(x) for x in (rec.get("generalNotes") or [])),
+                     json.dumps(rec.get("contributors") or [], ensure_ascii=False),
+                     json.dumps(rec.get("donors") or [], ensure_ascii=False),
+                     str(rec.get("productionSeriesTitle", ""))]).lower()
+
+    # R0 — affirmative claim or commercial bar anywhere in the rights fields.
+    hay = (note + " " + " ".join(spec) + " " + blob).lower()
+    for p in HARD_CLAIM:
+        if p in hay:
+            return "reject", "R0/explicit-claim", f'{ev}; hard-claim phrase "{p}"'
+    if status.lower() == "restricted":
+        return "reject", "R0/status-restricted", ev
+
+    # R3 — provenance gates (a collection ancestor means DONATED third-party film).
+    if colls:
+        why = ", ".join(f'{c.get("collectionIdentifier")}: {c.get("title")}' for c in colls)
+        return ("review_required", "R3/donated-collection",
+                f"{ev}; donated collection ancestor [{why}]; creator {creator_s or '?'}")
+    if not rgs:
+        return "review_required", "R3/no-record-group", f"{ev}; no federal recordGroup ancestor"
+    if not any(k in creator_s.lower() for k in US_FEDERAL_CREATOR):
+        return ("review_required", "R3/creator-not-federal",
+                f"{ev}; RG {rgs[0].get('recordGroupNumber')} but creator {creator_s or '?'}")
+
+    tp = [k for k in THIRD_PARTY_LANG if k in blob]
+    tp += [k for k in SHOTLIST_LANG if k in str(rec.get("shotList", "")).lower()]
+    if tp:
+        return ("review_required", "R3/third-party-content-language",
+                f"{ev}; RG {rgs[0].get('recordGroupNumber')} but record describes "
+                f"third-party material {tp} — agency-collected, not agency-created")
+
+    # R3 — official-duty / custody guard: 17 U.S.C. 105 clears a work only if a US
+    # federal employee MADE it. No production date + multi-year coverage span = an
+    # accessioned compilation the agency merely collected (caught captured foreign
+    # film that the metadata alone would have cleared).
+    cs, ce = rec.get("coverageStartDate") or {}, rec.get("coverageEndDate") or {}
+    span = (int(ce.get("year", 0)) - int(cs.get("year", 0))) if (cs and ce) else 0
+    if not (rec.get("productionDates") or []) and span >= 1:
+        return ("review_required", "R3/undated-multiyear-compilation",
+                f"{ev}; RG {rgs[0].get('recordGroupNumber')}, no productionDate, "
+                f"{span}-year coverage span {cs.get('year')}-{ce.get('year')}")
+
+    # R3 — any surviving restriction flag (the RG-111 blanket case lands here).
+    if status.lower() not in OK_STATUS:
+        return ("review_required", "R3/restriction-flagged",
+                f'{ev}; NARA flags status "{status}" spec={spec}')
+    if spec:
+        return "review_required", "R3/specific-use-restriction", f"{ev}; spec={spec}"
+    if note:
+        return "review_required", "R3/restriction-note", ev
+
+    # R1 — US Government work.
+    return ("pd", "R1/us-federal-record",
+            f'{ev}; RG {rgs[0].get("recordGroupNumber")} "{rgs[0].get("title")}"; '
+            f'creator {creator_s}; localId {rec.get("localIdentifier","")}; no donor or '
+            f"collection ancestor; no third-party-content language — 17 U.S.C. 105")
 
 
 # ------------------------------------------------------------- adapters ----
@@ -897,9 +1052,15 @@ def src_nara(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
                     continue
                 use = rec.get("useRestriction", {})
                 use_s = use if isinstance(use, str) else json.dumps(use)
-                decision = "pd" if "unrestricted" in use_s.lower() else "review_required"
+                # evidence-based triage (nara-license-triage-v001): the
+                # useRestriction flag is series boilerplate, ancestors[] carry
+                # the actual provenance.
+                decision, rule_id, evidence = nara_license_decision(rec)
                 raw = f"useRestriction={use_s[:300]}; US federal record (NARA)"
                 title = str(rec.get("title", "") or naid)
+                if decision == "reject":
+                    reject_log("nara", naid, theme, f"license:{rule_id}", title=title)
+                    continue
                 desc = str(rec.get("scopeAndContentNote", ""))[:900]
                 exts = (".mp4", ".mov") if kind == "video" else (".jpg", ".jpeg", ".png")
                 cands = []
@@ -926,7 +1087,10 @@ def src_nara(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
                             source_url=f"https://catalog.archives.gov/id/{naid}",
                             download_url=u, kind=kind, theme=theme,
                             license_raw=raw, decision=decision,
-                            default_ext=dext, dry_run=dry_run, desc=desc):
+                            default_ext=dext, dry_run=dry_run, desc=desc,
+                            extra={"triage_rule": rule_id,
+                                   "license_evidence": f"{evidence} [{rule_id}; "
+                                                       f"{TRIAGE_VERSION}]"}):
                         got += 1
     return got
 
@@ -1134,6 +1298,24 @@ def src_ukna(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
 ADAPTERS = {"nara": src_nara, "loc": src_loc, "ukna": src_ukna}
 
 
+def retriage_nara(dry_run: bool = False) -> int:
+    """DISABLED — kept as documentation of a measured dead end.
+
+    A standalone re-triage pass would have to re-fetch each stored naId, but
+    catalog.archives.gov answers per-naId lookups (`q=<naId>` and `naIds=<naId>`)
+    with the SPA HTML rather than JSON: 30/30 failures over a 36-minute run,
+    while the PAGED search used by src_nara keeps working. So the retro-upgrade
+    Retro-triage of the STORED corpus is owned by the dedicated NARA triage
+    agent, which writes the same nara.jsonl; this lane stays append-only so it
+    can never clobber that agent's concurrent writes. New items are triaged at
+    ingest time by src_nara.
+    """
+    log("retriage: not available in this lane. Per-naId lookups return SPA HTML "
+        "(30/30 measured), and retro-triage of stored rows belongs to the "
+        "dedicated NARA triage agent — this lane only appends.")
+    return 0
+
+
 # ----------------------------------------------------------------- main ----
 
 
@@ -1181,6 +1363,9 @@ def main() -> int:
                     help=r"append log copy here (long run: _ledger\ingest_gov.log)")
     ap.add_argument("--sweep-existing-index", action="store_true",
                     help="retroactive sha sweep against existing_index.json, then exit")
+    ap.add_argument("--retriage-nara", action="store_true",
+                    help="re-decide existing NARA rows with nara-license-triage-v001, "
+                         "moving cleared items out of quarantine, then exit")
     args = ap.parse_args()
     LOG_FILE = args.log_file
 
@@ -1188,6 +1373,13 @@ def main() -> int:
         led = Ledger()   # loads existing_index.json and runs the retro sweep
         if not led.index_shas:
             log("sweep: existing_index.json absent or empty — nothing swept")
+        return 0
+
+    if args.retriage_nara:
+        if not acquire_lock():
+            log("retriage needs the lock (a run is live) — stop the worker first")
+            return 1
+        retriage_nara(dry_run=args.dry_run)
         return 0
 
     if not acquire_lock():
