@@ -640,15 +640,29 @@ def validate_media(path: str, kind: str, theme: str,
                 heights = [int(s.get("height", 0) or 0) for s in info.get("streams", [])
                            if s.get("codec_type") == "video"]
                 h = max(heights) if heights else 0
-                floor = 360 if archival else 480
-                if h < floor:
-                    return "reject", f"video-below-{floor}p({h})"
-                if archival and h < 480:
-                    return "quarantine", f"archival-sub-sd({h}p)"
+                if h <= 0:
+                    return "reject", "no-video-stream"
+                # ARCHIVAL: an item that already passed the relevance gate is
+                # irreplaceable -- it is NEVER deleted for a quality floor, only
+                # quarantined for owner review. (2026-07-28 regression: this was
+                # first written as a 360-479p quarantine BAND, so <360p fell through
+                # to the reject above and destroyed 7 items incl. the Nuremberg /
+                # Mauthausen reel and the German doctors' trial. A band is not a
+                # floor -- there must be no delete path below the quarantine range.)
+                if archival:
+                    if h < 480:
+                        return "quarantine", f"archival-sub-sd({h}p)"
+                    if dur < 5:
+                        return "quarantine", f"archival-very-short({dur:.1f}s)"
+                    max_s = 7200 if theme != "pd_feature_films" else 0
+                    if max_s and dur > max_s:
+                        return "quarantine", f"archival-very-long({dur/60:.0f}min)"
+                    return "ok", "ok"
+                if h < 480:
+                    return "reject", f"video-below-480p({h})"
                 if dur < 5:
                     return "reject", f"video-too-short({dur:.1f}s)"
-                max_s = 7200 if theme == "pd_feature_films" else (7200 if archival else 1800)
-                if dur > max_s:
+                if dur > 1800:
                     return "reject", f"video-too-long({dur/60:.0f}min)"
             else:
                 if dur < 1:
@@ -846,9 +860,10 @@ class Ledger:
             if fp.upper().startswith(tier["drive"].upper()[0] + ":"):
                 self.tier_bytes[tier["name"]] += b
                 break
-        path = os.path.join(LEDGER_DIR, f"{rec['source']}.jsonl")
-        with open(path, "a", encoding="utf-8") as f:
-            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+        # atomic single-write append: ledgers are shared across concurrently
+        # running lanes/processes, same torn-line risk that hit rejects.jsonl
+        atomic_append(os.path.join(LEDGER_DIR, f"{rec['source']}.jsonl"),
+                      json.dumps(rec, ensure_ascii=False))
 
 
 def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: str,
@@ -1634,6 +1649,57 @@ def load_env() -> None:
             os.environ.setdefault(k.strip(), v.strip().strip('"').strip("'"))
 
 
+def selftest_floors() -> int:
+    """Prove the technical-floor policy from the code itself. Run before/after any
+    floor edit: `--selftest`. Exists because the archival quarantine was first
+    written as a 360-479p BAND while <360p still deleted -- the spec and the code
+    disagreed and 7 irreplaceable items were destroyed before anyone measured it."""
+    cases = [  # (name, height, dur_s, source, expected_verdict)
+        ("archival 144p", 144, 600, "ia", "quarantine"),
+        ("archival 240p", 240, 600, "ia", "quarantine"),
+        ("archival 360p", 360, 600, "ia", "quarantine"),
+        ("archival 480p", 480, 600, "ia", "ok"),
+        ("archival 62min", 480, 3720, "ia", "ok"),
+        ("archival 3h", 480, 10800, "ia", "quarantine"),
+        ("archival 2s", 480, 2, "ia", "quarantine"),
+        ("stock 240p", 240, 600, "mixkit", "reject"),
+        ("stock 480p", 480, 600, "mixkit", "ok"),
+        ("stock 45min", 480, 2700, "mixkit", "reject"),
+    ]
+    global ffprobe_json
+    orig_probe, orig_size = ffprobe_json, os.path.getsize
+    fails = 0
+    for name, h, d, src, want in cases:
+        ffprobe_json = (lambda p, _h=h, _d=d: {
+            "streams": [{"codec_type": "video", "height": _h}],
+            "format": {"duration": _d}})
+        os.path.getsize = lambda p: 10 ** 7  # type: ignore[assignment]
+        got, why = validate_media("x.mp4", "video", "courtroom_justice", src)
+        ok = got == want
+        fails += not ok
+        log(f"  {'PASS' if ok else 'FAIL'} {name:16} -> {got:10} ({why})")
+    ffprobe_json = orig_probe
+    os.path.getsize = orig_size  # type: ignore[assignment]
+    # the invariant that actually matters: archival video never has a delete path
+    log("SELFTEST: " + ("ALL PASS" if not fails else f"{fails} FAILED"))
+    return 1 if fails else 0
+
+
+def code_fingerprint() -> str:
+    """mtime + hash of this file, logged at startup so a STALE PROCESS running
+    pre-fix code is detectable from its own log (2026-07-28: a run launched before
+    a floor fix kept deleting archival items for 40 minutes while the fixed code
+    sat on disk -- nothing in its log revealed which version it was executing)."""
+    path = os.path.abspath(__file__)
+    try:
+        raw = open(path, "rb").read()
+        return (f"{os.path.basename(path)} mtime="
+                f"{datetime.fromtimestamp(os.path.getmtime(path)).strftime('%m-%d %H:%M:%S')} "
+                f"sha1={hashlib.sha1(raw).hexdigest()[:12]}")
+    except OSError:
+        return "unknown"
+
+
 def main() -> int:
     global PASS
     ap = argparse.ArgumentParser(description="PD themed free-asset ingest (tiered H:/D:/E:)")
@@ -1650,7 +1716,11 @@ def main() -> int:
     ap.add_argument("--tiers", default="H,D,E,F",
                     help="tier affinity, e.g. 'H,D' (IA/Prelinger runner uses H,D)")
     ap.add_argument("--dry-run", action="store_true", help="list, don't download")
+    ap.add_argument("--selftest", action="store_true",
+                    help="prove the technical-floor policy and exit")
     args = ap.parse_args()
+    if args.selftest:
+        return selftest_floors()
     global ACTIVE_TIERS
     ACTIVE_TIERS = {t.strip().upper() for t in args.tiers.split(",") if t.strip()}
 
@@ -1667,6 +1737,7 @@ def main() -> int:
         return 2
 
     ledger = Ledger(args.cap_gb)
+    log(f"CODE: {code_fingerprint()}")   # stale-process detector
     log(f"run start: sources={sources} themes={len(themes)} cap={args.cap_gb}GB "
         f"limit={args.limit}/src/theme/pass passes<={args.passes} dry_run={args.dry_run}")
     tier_state = " ".join(f"{t['name']}:{ledger.tier_bytes[t['name']]/GB:.1f}" for t in TIERS)
