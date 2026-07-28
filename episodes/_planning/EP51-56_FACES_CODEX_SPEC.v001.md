@@ -147,6 +147,25 @@
 
 ---
 
+## ★ Codexにそのまま貼るプロンプト（コピペ用）
+```
+このリポジトリ内の設計書ファイルを読み、指示どおりに顔画像を生成して保存してください。
+
+設計書: C:\Users\aab15\Documents\prime-documentary\episodes\_planning\EP51-56_FACES_CODEX_SPEC.v001.md
+
+厳守ルール:
+1. 上記ファイルの各エピソードの表にある P## の行を、1行につき画像を1枚だけ生成する（one-shot。同じ絵の複数バリアントを作って選ぶことは禁止）。
+2. 各プロンプトは、その話の「共通スタイル／共通品質／共通フレーミング／共通の禁止／法的フレーム」ブロックを必ず前後に連結して使う（肌クリーン・シャープ・匿名の一般人・16:9）。
+3. 生成物は 3840x2160 か 1920x1080 の16:9 PNG。
+4. 保存先は各 P## につき必ず次の「2箇所だけ」に同じファイル名で保存する（他の場所・他の名前・サフィックス追加は禁止）:
+   - C:\Users\aab15\pd-media 相当の H:\pd-media\assets\ai\<slug>\P<NN>.png
+   - C:\Users\aab15\Documents\prime-documentary\remotion\public\<slug>\img\P<NN>.png
+   <slug> と採番は設計書の表のとおり（willingham=P25〜P32 / morton・norfolk・flowers・burge・postoffice=P01〜P16）。
+   例: morton の P03 → H:\pd-media\assets\ai\morton\P03.png と ...\remotion\public\morton\img\P03.png
+5. 保存先フォルダが無ければ作成する。norfolk の public 側は remotion\public\norfolk\img\ を作ってから保存。
+6. 全部終わったら、話ごとに「生成した P## のファイル名一覧」を報告する。黒い画像・真っ黒・ぼやけた顔になったものは作り直す。
+```
+
 ## 生成後に私(Claude)がやること
 - 各 `P##` を i2v（Wan）で軽く動かして人物モーションクリップ化 → `H:/pd-media/assets/ai_video/<slug>/` に追加（顔が静止＝紙芝居を避ける）。
 - 静止インサートは `remotion/public/<slug>/img/` から直接使用。

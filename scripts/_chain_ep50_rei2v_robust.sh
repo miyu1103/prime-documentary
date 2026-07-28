@@ -1,6 +1,14 @@
 #!/bin/bash
 # Robust EP50 face-clean re-i2v: auto-restart ComfyUI on crash, resume batch (skips done), assemble.
 cd /c/Users/aab15/Documents/prime-documentary
+# --- single-instance lock: refuse to start if another chain is alive (prevents the
+#     double-launch that garbled the log + double-queued clips on 2026-07-28) ---
+LOCK="out_rei2v_robust.lock"
+if [ -f "$LOCK" ] && kill -0 "$(cat "$LOCK" 2>/dev/null)" 2>/dev/null; then
+  echo "[robust] another chain (pid $(cat "$LOCK")) is running -- refusing to double-launch"; exit 0
+fi
+echo $$ > "$LOCK"
+trap 'rm -f "$LOCK"' EXIT
 LOG=out_rei2v_robust.log
 CVENV="/c/Users/aab15/ComfyUI/venv/Scripts/python.exe"
 echo "[robust] START $(date)" >> $LOG
