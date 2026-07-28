@@ -10,7 +10,7 @@ OUT.mkdir(parents=True,exist_ok=True); PUB.mkdir(parents=True,exist_ok=True)
 GRADE=("cinematic documentary film still, 1989 New York City, moody low-key lighting, "
        "muted cool teal-and-amber grade, 35mm film grain, shallow depth of field, photoreal, "
        "candid, natural skin, high detail")
-NEG=("cartoon, illustration, cgi, plastic skin, deformed, extra fingers, mutated hands, "
+NEG=("skin blemishes, scars, facial scars, spots, moles, acne, blotchy skin, wrinkled leathery skin, skin lesions, red marks, over-detailed pores, cartoon, illustration, cgi, plastic skin, deformed, extra fingers, mutated hands, "
      "bad anatomy, text, watermark, logo, modern smartphone, modern car, bright saturated")
 # diverse people: role, setting, framing -- NONE resembling the real Central Park Five (generic adults / era crowd)
 PEOPLE=[

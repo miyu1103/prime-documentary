@@ -1,0 +1,1 @@
+export const LANGE_BODY_AUDIO_SEC = 544.870;

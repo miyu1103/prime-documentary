@@ -6,2763 +6,2338 @@ export type FlashCrashCaptionCue = {
 
 export const FLASHCRASH_CAPTIONS: FlashCrashCaptionCue[] = [
   {
-    "start": 0.0,
-    "end": 1.748,
+    "start": 0.16,
+    "end": 2.16,
     "text": "Two thirty-two in the afternoon."
   },
   {
-    "start": 1.783,
-    "end": 3.147,
-    "text": "May the sixth, twenty-ten."
+    "start": 2.24,
+    "end": 3.803,
+    "text": "May the sixth twenty-ten."
   },
   {
-    "start": 3.182,
-    "end": 4.895,
-    "text": "For most of the world,"
+    "start": 4.22,
+    "end": 6.87,
+    "text": "For most of the world\nnothing is happening."
   },
   {
-    "start": 4.93,
-    "end": 5.944,
-    "text": "nothing is happening."
+    "start": 6.9,
+    "end": 9.92,
+    "text": "And then in the space of a\nfew minutes the largest market"
   },
   {
-    "start": 5.979,
-    "end": 9.091,
-    "text": "And then, in the space of a few minutes,"
+    "start": 9.96,
+    "end": 11.398,
+    "text": "on earth begins to fall"
   },
   {
-    "start": 9.126,
-    "end": 12.238,
-    "text": "the largest market on\nearth begins to fall —"
+    "start": 11.94,
+    "end": 13.46,
+    "text": "not drift not slide"
   },
   {
-    "start": 12.273,
-    "end": 14.336,
-    "text": "not drift, not slide — fall,"
+    "start": 14.2,
+    "end": 17.44,
+    "text": "fall as if the floor underneath\nit has been taken away."
   },
   {
-    "start": 14.371,
-    "end": 17.483,
-    "text": "as if the floor underneath\nit has been taken"
+    "start": 19.04,
+    "end": 20.915,
+    "text": "Nearly a thousand points gone."
   },
   {
-    "start": 17.518,
-    "end": 18.238,
-    "text": "away."
+    "start": 21.56,
+    "end": 23.685,
+    "text": "Around a trillion dollars in value"
   },
   {
-    "start": 31.711,
-    "end": 33.444,
-    "text": "Nearly a thousand points, gone."
+    "start": 23.94,
+    "end": 27.72,
+    "text": "gone. Shares in some of the most\nfamous companies in America trade"
   },
   {
-    "start": 33.479,
-    "end": 35.524,
-    "text": "Around a trillion dollars in value,"
+    "start": 27.76,
+    "end": 30.16,
+    "text": "for a heartbeat at a single penny."
   },
   {
-    "start": 35.559,
-    "end": 38.643,
-    "text": "gone. Shares in some of\nthe most famous companies"
+    "start": 30.88,
+    "end": 33.005,
+    "text": "And then almost as fast as it fell"
   },
   {
-    "start": 38.678,
-    "end": 40.723,
-    "text": "in America trade, for a heartbeat,"
+    "start": 33.5,
+    "end": 34.5,
+    "text": "it comes back."
   },
   {
-    "start": 40.758,
-    "end": 42.11,
-    "text": "at a single penny."
-  },
-  {
-    "start": 42.145,
-    "end": 45.229,
-    "text": "And then — almost as fast as it fell"
-  },
-  {
-    "start": 45.264,
-    "end": 46.616,
-    "text": "— it comes back."
-  },
-  {
-    "start": 46.651,
-    "end": 49.042,
+    "start": 35.18,
+    "end": 37.98,
     "text": "The whole thing lasts\nabout thirty-six minutes."
   },
   {
-    "start": 49.077,
-    "end": 51.122,
-    "text": "By the end of the day,"
+    "start": 38.06,
+    "end": 40.116,
+    "text": "By the end of the day\nthe experts will tell you"
   },
   {
-    "start": 51.157,
-    "end": 54.242,
-    "text": "the experts will tell\nyou the market is fine."
+    "start": 40.144,
+    "end": 41.331,
+    "text": "the market is fine."
   },
   {
-    "start": 54.277,
-    "end": 55.628,
+    "start": 41.42,
+    "end": 43.233,
     "text": "The machine corrected itself."
   },
   {
-    "start": 61.411,
-    "end": 64.089,
-    "text": "But a question has been\nlet loose that will"
+    "start": 43.56,
+    "end": 46.05,
+    "text": "But a question has been let\nloose that will take years"
   },
   {
-    "start": 64.124,
-    "end": 65.28,
-    "text": "take years to answer."
+    "start": 46.08,
+    "end": 48.92,
+    "text": "to answer. Because\nsomething moved that market."
   },
   {
-    "start": 65.315,
-    "end": 66.768,
-    "text": "Because something moved that market."
+    "start": 49.54,
+    "end": 52.09,
+    "text": "And when they finally go looking for what"
   },
   {
-    "start": 66.803,
-    "end": 69.446,
-    "text": "And when they finally\ngo looking for what —"
+    "start": 52.12,
+    "end": 54.79,
+    "text": "they will find a man in\na bedroom in a suburb"
   },
   {
-    "start": 69.481,
-    "end": 70.934,
-    "text": "they will find a man,"
+    "start": 54.82,
+    "end": 57.64,
+    "text": "of London who did not even\nlike to leave the house."
   },
   {
-    "start": 70.969,
-    "end": 73.315,
-    "text": "in a bedroom, in a suburb of London,"
+    "start": 59.56,
+    "end": 62.7,
+    "text": "This is the story of the most\nmysterious crash in market history"
   },
   {
-    "start": 73.35,
-    "end": 75.993,
-    "text": "who did not even like to leave the house."
+    "start": 62.74,
+    "end": 66.0,
+    "text": "and of the lonely young man\nwhose name would end up attached"
   },
   {
-    "start": 91.605,
-    "end": 94.332,
-    "text": "This is the story of the\nmost mysterious crash"
+    "start": 66.04,
+    "end": 68.5,
+    "text": "to it. It is a story about money"
   },
   {
-    "start": 94.367,
-    "end": 97.06,
-    "text": "in market history —\nand of the lonely young"
-  },
-  {
-    "start": 97.095,
-    "end": 99.787,
-    "text": "man whose name would\nend up attached to it."
-  },
-  {
-    "start": 99.822,
-    "end": 101.606,
-    "text": "It is a story about money,"
-  },
-  {
-    "start": 101.641,
-    "end": 103.727,
+    "start": 68.96,
+    "end": 71.022,
     "text": "but it is not really about greed."
   },
   {
-    "start": 103.762,
-    "end": 106.455,
-    "text": "It is about a machine so fast and so"
+    "start": 71.38,
+    "end": 74.8,
+    "text": "It is about a machine so fast\nand so clever that almost"
   },
   {
-    "start": 106.49,
-    "end": 109.182,
-    "text": "clever that almost no\none fully understood it —"
+    "start": 74.84,
+    "end": 76.465,
+    "text": "no one fully understood it"
   },
   {
-    "start": 109.217,
-    "end": 111.909,
-    "text": "and how close that machine\ncame to falling apart,"
+    "start": 76.74,
+    "end": 79.94,
+    "text": "and how close that machine\ncame to falling apart in front"
   },
   {
-    "start": 111.944,
-    "end": 114.334,
-    "text": "in front of everyone, in the middle of"
+    "start": 79.98,
+    "end": 82.78,
+    "text": "of everyone in the middle\nof an ordinary afternoon."
   },
   {
-    "start": 114.369,
-    "end": 115.243,
-    "text": "an ordinary afternoon."
+    "start": 83.38,
+    "end": 86.32,
+    "text": "Over the next half hour we\nare going to do three things."
   },
   {
-    "start": 121.026,
-    "end": 122.477,
-    "text": "Over the next half hour,"
+    "start": 87.16,
+    "end": 90.0,
+    "text": "We are going to show you how\na market this powerful could"
   },
   {
-    "start": 122.512,
-    "end": 124.507,
-    "text": "we are going to do three things."
+    "start": 90.04,
+    "end": 91.04,
+    "text": "be this fragile."
   },
   {
-    "start": 124.542,
-    "end": 127.119,
-    "text": "We are going to show you how a market"
+    "start": 91.52,
+    "end": 94.84,
+    "text": "We are going to show you\nstep by step exactly what one"
   },
   {
-    "start": 127.154,
-    "end": 128.859,
-    "text": "this powerful could be this fragile."
+    "start": 94.88,
+    "end": 97.58,
+    "text": "trader did a trick with a strange name"
   },
   {
-    "start": 128.894,
-    "end": 130.6,
-    "text": "We are going to show you,"
-  },
-  {
-    "start": 130.635,
-    "end": 133.211,
-    "text": "step by step, exactly\nwhat one trader did —"
-  },
-  {
-    "start": 133.246,
-    "end": 134.952,
-    "text": "a trick with a strange name,"
-  },
-  {
-    "start": 134.987,
-    "end": 137.273,
+    "start": 98.02,
+    "end": 100.82,
     "text": "that you will understand\ncompletely by the end."
   },
   {
-    "start": 137.308,
-    "end": 139.884,
-    "text": "And then we are going to ask the question"
+    "start": 101.06,
+    "end": 103.56,
+    "text": "And then we are going to ask\nthe question the whole case"
   },
   {
-    "start": 139.919,
-    "end": 141.625,
-    "text": "the whole case really turns on."
+    "start": 103.588,
+    "end": 104.588,
+    "text": "really turns on."
   },
   {
-    "start": 141.66,
-    "end": 143.656,
-    "text": "Did one man break the stock market?"
+    "start": 104.68,
+    "end": 107.6,
+    "text": "Did one man break the stock\nmarket Or did he only show"
   },
   {
-    "start": 143.691,
-    "end": 146.267,
-    "text": "Or did he only show us how easily it"
+    "start": 107.64,
+    "end": 109.39,
+    "text": "us how easily it could break"
   },
   {
-    "start": 146.302,
-    "end": 147.022,
-    "text": "could break?."
+    "start": 110.92,
+    "end": 113.78,
+    "text": "To understand what happened\nin those thirty-six minutes"
   },
   {
-    "start": 167.664,
-    "end": 170.497,
-    "text": "To understand what happened\nin those thirty-six minutes,"
+    "start": 114.42,
+    "end": 117.22,
+    "text": "you have to forget what you\nthink a stock market looks like."
   },
   {
-    "start": 170.532,
-    "end": 173.685,
-    "text": "you have to forget what you think a stock"
+    "start": 117.72,
+    "end": 121.08,
+    "text": "There are no men in coloured\njackets shouting and waving paper."
   },
   {
-    "start": 173.72,
-    "end": 174.747,
-    "text": "market looks like."
+    "start": 121.72,
+    "end": 124.43,
+    "text": "There haven't been not\nreally for a long time."
   },
   {
-    "start": 174.782,
-    "end": 177.581,
-    "text": "There are no men in\ncoloured jackets shouting"
-  },
-  {
-    "start": 177.616,
-    "end": 178.643,
-    "text": "and waving paper."
-  },
-  {
-    "start": 178.678,
-    "end": 180.414,
-    "text": "There haven't been, not really,"
-  },
-  {
-    "start": 180.449,
-    "end": 181.831,
-    "text": "for a long time."
-  },
-  {
-    "start": 181.866,
-    "end": 184.31,
+    "start": 124.46,
+    "end": 126.522,
     "text": "The modern market is not a place."
   },
   {
-    "start": 184.345,
-    "end": 186.435,
-    "text": "It is a network of machines,"
+    "start": 126.74,
+    "end": 128.428,
+    "text": "It is a network of machines"
   },
   {
-    "start": 186.47,
-    "end": 189.622,
-    "text": "in locked, climate-controlled\nrooms, trading with other machines —"
+    "start": 128.68,
+    "end": 132.64,
+    "text": "in locked climate-controlled\nrooms trading with other machines"
   },
   {
-    "start": 189.657,
-    "end": 191.747,
-    "text": "buying and selling not in seconds,"
+    "start": 133.4,
+    "end": 135.463,
+    "text": "buying and selling not in seconds"
   },
   {
-    "start": 191.782,
-    "end": 193.872,
-    "text": "but in millionths of a second,"
+    "start": 135.72,
+    "end": 137.532,
+    "text": "but in millionths of a second"
   },
   {
-    "start": 193.907,
-    "end": 197.06,
+    "start": 137.8,
+    "end": 140.6,
     "text": "far faster than any human\neye could ever follow."
   },
   {
-    "start": 202.843,
-    "end": 204.597,
+    "start": 141.4,
+    "end": 143.47,
     "text": "They are called high-frequency traders."
   },
   {
-    "start": 204.632,
-    "end": 207.753,
-    "text": "Algorithms. Programs. And in\nthe years before our story,"
+    "start": 143.5,
+    "end": 148.14,
+    "text": "Algorithms. Programs. And in the\nyears before our story an arms race"
   },
   {
-    "start": 207.788,
-    "end": 210.91,
-    "text": "an arms race had broken out among them —"
+    "start": 148.18,
+    "end": 149.743,
+    "text": "had broken out among them"
   },
   {
-    "start": 210.945,
-    "end": 212.663,
-    "text": "not over who was smartest,"
+    "start": 149.88,
+    "end": 151.442,
+    "text": "not over who was smartest"
   },
   {
-    "start": 212.698,
-    "end": 214.417,
+    "start": 151.58,
+    "end": 153.143,
     "text": "but over who was fastest."
   },
   {
-    "start": 214.452,
-    "end": 217.574,
-    "text": "Firms paid fortunes to place\ntheir computers physically closer"
+    "start": 153.8,
+    "end": 157.08,
+    "text": "Firms paid fortunes to place their\ncomputers physically closer to"
   },
   {
-    "start": 217.609,
-    "end": 220.38,
-    "text": "to the exchange, so\ntheir orders would arrive"
+    "start": 157.12,
+    "end": 160.28,
+    "text": "the exchange so their orders\nwould arrive a few millionths of"
   },
   {
-    "start": 220.415,
-    "end": 222.835,
-    "text": "a few millionths of a second sooner."
+    "start": 160.32,
+    "end": 161.32,
+    "text": "a second sooner."
   },
   {
-    "start": 222.87,
-    "end": 225.991,
-    "text": "In this market, that\nhead start is the whole"
+    "start": 161.8,
+    "end": 164.6,
+    "text": "In this market that head\nstart is the whole game."
   },
   {
-    "start": 226.026,
-    "end": 226.746,
-    "text": "game."
+    "start": 164.92,
+    "end": 166.2,
+    "text": "And most of the time"
   },
   {
-    "start": 232.124,
-    "end": 233.762,
-    "text": "And most of the time,"
-  },
-  {
-    "start": 233.797,
-    "end": 235.729,
+    "start": 166.62,
+    "end": 169.42,
     "text": "these machines do\nsomething genuinely useful."
   },
   {
-    "start": 235.764,
-    "end": 238.35,
-    "text": "They stand ready to buy when you want"
+    "start": 169.6,
+    "end": 171.93,
+    "text": "They stand ready to buy\nwhen you want to sell"
   },
   {
-    "start": 238.385,
-    "end": 240.972,
-    "text": "to sell, and to sell when you want"
+    "start": 171.96,
+    "end": 174.023,
+    "text": "and to sell when you want to buy."
   },
   {
-    "start": 241.007,
-    "end": 243.921,
-    "text": "to buy. They are the\nwater the market floats"
+    "start": 174.38,
+    "end": 176.88,
+    "text": "They are the water the market floats on."
   },
   {
-    "start": 243.956,
-    "end": 246.87,
-    "text": "on. Economists have a gentle word for it —"
+    "start": 177.3,
+    "end": 179.55,
+    "text": "Economists have a gentle word for it"
   },
   {
-    "start": 246.905,
-    "end": 249.819,
-    "text": "liquidity. The quiet promise\nthat there is always someone"
+    "start": 180.12,
+    "end": 184.46,
+    "text": "liquidity. The quiet promise that\nthere is always someone on the other"
   },
   {
-    "start": 249.854,
-    "end": 252.113,
-    "text": "on the other side of your trade,"
+    "start": 184.5,
+    "end": 185.625,
+    "text": "side of your trade"
   },
   {
-    "start": 252.148,
-    "end": 254.735,
-    "text": "so that whenever you need to get out,"
+    "start": 185.78,
+    "end": 188.58,
+    "text": "so that whenever you\nneed to get out you can."
   },
   {
-    "start": 254.77,
-    "end": 255.49,
-    "text": "you can."
+    "start": 189.04,
+    "end": 191.83,
+    "text": "But here is the truth\nunderneath that promise"
   },
   {
-    "start": 261.173,
-    "end": 263.71,
-    "text": "But here is the truth\nunderneath that promise,"
-  },
-  {
-    "start": 263.745,
-    "end": 266.565,
+    "start": 191.86,
+    "end": 194.61,
     "text": "the one almost nobody\nlikes to say out loud."
   },
   {
-    "start": 266.6,
-    "end": 268.151,
+    "start": 195.08,
+    "end": 196.79,
     "text": "These machines are not loyal."
   },
   {
-    "start": 268.186,
-    "end": 270.371,
+    "start": 196.82,
+    "end": 198.695,
     "text": "They feel no duty to be there."
   },
   {
-    "start": 270.406,
-    "end": 273.225,
-    "text": "They are not investors;\nthey do not care what"
+    "start": 198.82,
+    "end": 200.195,
+    "text": "They are not investors"
   },
   {
-    "start": 273.26,
-    "end": 274.494,
-    "text": "a company is worth."
+    "start": 200.48,
+    "end": 202.89,
+    "text": "they do not care what a company is worth."
   },
   {
-    "start": 274.529,
-    "end": 277.349,
-    "text": "They are reading one\nthing — the order book,"
+    "start": 202.92,
+    "end": 204.545,
+    "text": "They are reading one thing"
   },
   {
-    "start": 277.384,
-    "end": 280.203,
-    "text": "the live, scrolling\nlist of who wants to buy"
+    "start": 204.72,
+    "end": 205.595,
+    "text": "the order book"
   },
   {
-    "start": 280.238,
-    "end": 283.058,
-    "text": "and sell, and at what price — and they"
+    "start": 205.98,
+    "end": 208.78,
+    "text": "the live scrolling list of\nwho wants to buy and sell"
   },
   {
-    "start": 283.093,
-    "end": 284.644,
-    "text": "are reacting to it, instantly,"
+    "start": 209.16,
+    "end": 210.222,
+    "text": "and at what price"
   },
   {
-    "start": 284.679,
-    "end": 287.181,
-    "text": "automatically. Feed them\na picture of the market,"
+    "start": 210.78,
+    "end": 213.093,
+    "text": "and they are reacting to it instantly"
   },
   {
-    "start": 287.216,
-    "end": 290.035,
-    "text": "and they will move on it before a human"
+    "start": 213.18,
+    "end": 216.7,
+    "text": "automatically. Feed them a picture\nof the market and they will move"
   },
   {
-    "start": 290.07,
-    "end": 290.987,
-    "text": "could even blink."
+    "start": 216.74,
+    "end": 219.09,
+    "text": "on it before a human could even blink."
   },
   {
-    "start": 296.769,
-    "end": 299.662,
-    "text": "And that is the quiet\nmiracle the whole market"
+    "start": 219.12,
+    "end": 222.38,
+    "text": "And that is the quiet miracle\nthe whole market rests on"
   },
   {
-    "start": 299.697,
-    "end": 301.912,
-    "text": "rests on — and its hidden weakness."
+    "start": 222.42,
+    "end": 224.18,
+    "text": "and its hidden weakness."
   },
   {
-    "start": 301.947,
-    "end": 304.162,
+    "start": 224.96,
+    "end": 226.96,
     "text": "The order book is not just data."
   },
   {
-    "start": 304.197,
-    "end": 306.412,
-    "text": "It is a kind of collective belief,"
+    "start": 227.16,
+    "end": 229.222,
+    "text": "It is a kind of collective belief"
   },
   {
-    "start": 306.447,
-    "end": 309.305,
-    "text": "a shared picture of what\neveryone else is about"
+    "start": 229.48,
+    "end": 232.54,
+    "text": "a shared picture of what everyone\nelse is about to do next."
   },
   {
-    "start": 309.34,
-    "end": 310.269,
-    "text": "to do next."
+    "start": 233.3,
+    "end": 237.36,
+    "text": "The machines trust that picture\ncompletely because trusting it instantly"
   },
   {
-    "start": 310.304,
-    "end": 312.197,
-    "text": "The machines trust that\npicture completely,"
+    "start": 237.4,
+    "end": 239.38,
+    "text": "is the only way to stay fast."
   },
   {
-    "start": 312.232,
-    "end": 314.769,
-    "text": "because trusting it\ninstantly is the only way"
-  },
-  {
-    "start": 314.804,
-    "end": 315.733,
-    "text": "to stay fast."
-  },
-  {
-    "start": 315.768,
-    "end": 317.662,
+    "start": 239.88,
+    "end": 241.67,
     "text": "But a picture can be painted."
   },
   {
-    "start": 317.697,
-    "end": 320.233,
-    "text": "And a market that runs at the speed"
+    "start": 241.7,
+    "end": 244.76,
+    "text": "And a market that runs at\nthe speed of light on trust"
   },
   {
-    "start": 320.268,
-    "end": 322.483,
-    "text": "of light, on trust in a picture,"
+    "start": 244.8,
+    "end": 247.6,
+    "text": "in a picture can be fooled\nat the speed of light too."
   },
   {
-    "start": 322.518,
-    "end": 325.376,
-    "text": "can be fooled at the speed of light too."
+    "start": 248.32,
+    "end": 250.382,
+    "text": "Which raises a dangerous question"
   },
   {
-    "start": 331.159,
-    "end": 332.788,
-    "text": "Which raises a dangerous question,"
+    "start": 250.66,
+    "end": 252.377,
+    "text": "one that in twenty-ten"
   },
   {
-    "start": 332.823,
-    "end": 335.72,
-    "text": "one that, in twenty-ten,\nalmost no one was asking"
+    "start": 252.88,
+    "end": 255.005,
+    "text": "almost no one was asking out loud."
   },
   {
-    "start": 335.755,
-    "end": 338.653,
-    "text": "out loud. What if the picture were a lie?"
+    "start": 255.54,
+    "end": 257.37,
+    "text": "What if the picture were a lie"
   },
   {
-    "start": 338.688,
-    "end": 341.259,
-    "text": "What if you could show\nthe machines something"
+    "start": 257.4,
+    "end": 260.289,
+    "text": "What if you could show the\nmachines something that wasn't true"
   },
   {
-    "start": 341.294,
-    "end": 343.866,
-    "text": "that wasn't true — a flood of buyers"
+    "start": 260.62,
+    "end": 262.808,
+    "text": "a flood of buyers that didn't exist"
   },
   {
-    "start": 343.901,
-    "end": 346.798,
-    "text": "that didn't exist, a\nwall of sellers who were"
+    "start": 262.86,
+    "end": 266.56,
+    "text": "a wall of sellers who were never\nreally there and simply let"
   },
   {
-    "start": 346.833,
-    "end": 349.73,
-    "text": "never really there —\nand simply let their own"
+    "start": 266.6,
+    "end": 268.913,
+    "text": "their own speed and logic do the rest"
   },
   {
-    "start": 349.765,
-    "end": 351.685,
-    "text": "speed and logic do the rest?."
+    "start": 269.38,
+    "end": 272.56,
+    "text": "In a small bedroom in west\nLondon one man was not asking"
   },
   {
-    "start": 357.467,
-    "end": 359.816,
-    "text": "In a small bedroom in west London,"
+    "start": 272.6,
+    "end": 275.5,
+    "text": "the question. He had stopped\nasking it years before."
   },
   {
-    "start": 359.851,
-    "end": 362.165,
-    "text": "one man was not asking the question."
+    "start": 276.02,
+    "end": 279.48,
+    "text": "He was already living every\nsingle day inside the answer."
   },
   {
-    "start": 362.2,
-    "end": 364.514,
-    "text": "He had stopped asking it years before."
-  },
-  {
-    "start": 364.549,
-    "end": 366.863,
-    "text": "He was already living, every single day,"
-  },
-  {
-    "start": 366.898,
-    "end": 367.87,
-    "text": "inside the answer."
-  },
-  {
-    "start": 373.653,
-    "end": 375.803,
+    "start": 280.12,
+    "end": 282.46,
     "text": "His name is Navinder Singh Sarao."
   },
   {
-    "start": 375.838,
-    "end": 377.594,
-    "text": "He grows up in Hounslow,"
+    "start": 283.12,
+    "end": 286.62,
+    "text": "He grows up in Hounslow on the\nwestern edge of London directly"
   },
   {
-    "start": 377.629,
-    "end": 379.743,
-    "text": "on the western edge of London,"
+    "start": 286.66,
+    "end": 288.848,
+    "text": "under the flight path into Heathrow"
   },
   {
-    "start": 379.778,
-    "end": 382.251,
-    "text": "directly under the flight\npath into Heathrow,"
+    "start": 288.88,
+    "end": 292.0,
+    "text": "where the planes pass overhead\nevery ninety seconds or so"
   },
   {
-    "start": 382.286,
-    "end": 385.117,
-    "text": "where the planes pass\noverhead every ninety seconds"
+    "start": 292.52,
+    "end": 295.52,
+    "text": "close enough to rattle the\nwindows regular as a heartbeat."
   },
   {
-    "start": 385.152,
-    "end": 388.341,
-    "text": "or so — close enough\nto rattle the windows,"
+    "start": 296.28,
+    "end": 299.08,
+    "text": "He is brilliant with numbers\nand uneasy with people."
   },
   {
-    "start": 388.376,
-    "end": 389.774,
-    "text": "regular as a heartbeat."
+    "start": 299.54,
+    "end": 302.56,
+    "text": "Years later doctors will\ndiagnose him with severe autism."
   },
   {
-    "start": 389.809,
-    "end": 391.566,
-    "text": "He is brilliant with numbers,"
+    "start": 303.88,
+    "end": 306.43,
+    "text": "He does not learn to\ntrade in a bank or a glass"
   },
   {
-    "start": 391.601,
-    "end": 392.999,
-    "text": "and uneasy with people."
+    "start": 306.46,
+    "end": 307.585,
+    "text": "tower in the city."
   },
   {
-    "start": 393.034,
-    "end": 396.223,
-    "text": "Years later, doctors will\ndiagnose him with severe autism."
+    "start": 307.78,
+    "end": 309.28,
+    "text": "He learns it on a screen"
   },
   {
-    "start": 407.21,
-    "end": 409.985,
-    "text": "He does not learn to trade in a bank,"
+    "start": 309.7,
+    "end": 311.762,
+    "text": "in a back office and then at home"
   },
   {
-    "start": 410.02,
-    "end": 412.143,
-    "text": "or a glass tower in the city."
+    "start": 312.16,
+    "end": 314.96,
+    "text": "and he turns out to be\nastonishingly good at it"
   },
   {
-    "start": 412.178,
-    "end": 413.992,
-    "text": "He learns it on a screen,"
+    "start": 315.38,
+    "end": 319.26,
+    "text": "fast fearless able to feel\nthe flow of the market the way"
   },
   {
-    "start": 414.027,
-    "end": 416.459,
-    "text": "in a back office and then at home,"
+    "start": 319.3,
+    "end": 320.74,
+    "text": "a kayaker feels a river"
   },
   {
-    "start": 416.494,
-    "end": 419.233,
-    "text": "and he turns out to be\nastonishingly good at"
+    "start": 321.18,
+    "end": 322.368,
+    "text": "reading the current"
   },
   {
-    "start": 419.268,
-    "end": 422.008,
-    "text": "it — fast, fearless, able to feel the flow"
+    "start": 322.46,
+    "end": 325.48,
+    "text": "the pull the places where\nit is about to turn."
   },
   {
-    "start": 422.043,
-    "end": 424.474,
-    "text": "of the market the way a kayaker feels"
+    "start": 326.12,
+    "end": 329.0,
+    "text": "People who traded near him\ndescribe it as a kind of genius."
   },
   {
-    "start": 424.509,
-    "end": 426.016,
-    "text": "a river, reading the current,"
+    "start": 329.9,
+    "end": 331.837,
+    "text": "And he could have had all of it"
   },
   {
-    "start": 426.051,
-    "end": 428.482,
-    "text": "the pull, the places where it is about"
+    "start": 331.98,
+    "end": 333.34,
+    "text": "the office the salary"
   },
   {
-    "start": 428.517,
-    "end": 431.257,
-    "text": "to turn. People who traded\nnear him describe it"
+    "start": 333.86,
+    "end": 335.048,
+    "text": "the city the noise."
   },
   {
-    "start": 431.292,
-    "end": 432.798,
-    "text": "as a kind of genius."
+    "start": 335.52,
+    "end": 336.895,
+    "text": "He does not want them."
   },
   {
-    "start": 438.58,
-    "end": 441.679,
-    "text": "And he could have had all of it —"
-  },
-  {
-    "start": 441.714,
-    "end": 443.745,
-    "text": "the office, the salary, the city,"
-  },
-  {
-    "start": 443.78,
-    "end": 446.155,
-    "text": "the noise. He does not want them."
-  },
-  {
-    "start": 446.19,
-    "end": 447.533,
+    "start": 336.98,
+    "end": 338.105,
     "text": "He wants the room."
   },
   {
-    "start": 447.568,
-    "end": 449.254,
-    "text": "So he trades from home,"
+    "start": 338.48,
+    "end": 339.855,
+    "text": "So he trades from home"
   },
   {
-    "start": 449.289,
-    "end": 451.665,
-    "text": "from the bedroom in his parents' house,"
+    "start": 340.14,
+    "end": 342.11,
+    "text": "from the bedroom in his parents' house"
   },
   {
-    "start": 451.7,
-    "end": 454.419,
-    "text": "in a tracksuit, the\ncurtains often drawn against"
+    "start": 342.14,
+    "end": 343.1,
+    "text": "in a tracksuit"
   },
   {
-    "start": 454.454,
-    "end": 457.518,
-    "text": "the afternoon. And there is\nsomething almost unbearable about"
+    "start": 343.54,
+    "end": 346.21,
+    "text": "the curtains often drawn\nagainst the afternoon."
   },
   {
-    "start": 457.553,
-    "end": 460.273,
-    "text": "the picture: downstairs,\nhis mother is making dinner;"
+    "start": 346.24,
+    "end": 349.04,
+    "text": "And there is something almost\nunbearable about the picture"
   },
   {
-    "start": 460.308,
-    "end": 463.027,
-    "text": "upstairs, her son is moving more money in"
+    "start": 349.96,
+    "end": 352.335,
+    "text": "downstairs his mother is making dinner"
   },
   {
-    "start": 463.062,
-    "end": 465.782,
-    "text": "a single afternoon than\nmost people will see"
+    "start": 352.76,
+    "end": 356.36,
+    "text": "upstairs her son is moving more\nmoney in a single afternoon than"
   },
   {
-    "start": 465.817,
-    "end": 466.815,
-    "text": "in a lifetime."
+    "start": 356.4,
+    "end": 358.587,
+    "text": "most people will see in a lifetime."
   },
   {
-    "start": 472.598,
-    "end": 475.263,
-    "text": "And here is the detail\nthat everyone who meets"
+    "start": 358.74,
+    "end": 361.68,
+    "text": "And here is the detail that\neveryone who meets him remembers"
   },
   {
-    "start": 475.298,
-    "end": 477.632,
-    "text": "him remembers — the detail that makes this"
+    "start": 362.1,
+    "end": 366.28,
+    "text": "the detail that makes this a\ntragedy and not just a crime."
   },
   {
-    "start": 477.667,
-    "end": 479.704,
-    "text": "a tragedy and not just a crime."
-  },
-  {
-    "start": 479.739,
-    "end": 482.369,
+    "start": 367.24,
+    "end": 369.53,
     "text": "He does not seem to care about the money."
   },
   {
-    "start": 482.404,
-    "end": 484.738,
-    "text": "Not as a pose, not as false modesty."
+    "start": 369.56,
+    "end": 370.373,
+    "text": "Not as a pose"
   },
   {
-    "start": 484.773,
-    "end": 486.219,
-    "text": "He doesn't buy the cars,"
+    "start": 370.94,
+    "end": 372.252,
+    "text": "not as false modesty."
   },
   {
-    "start": 486.254,
-    "end": 488.884,
-    "text": "or the house, or the life the money could"
+    "start": 372.7,
+    "end": 374.81,
+    "text": "He doesn't buy the cars or the house"
   },
   {
-    "start": 488.919,
-    "end": 491.549,
-    "text": "have bought. People who\nknew him describe a man"
+    "start": 374.84,
+    "end": 376.87,
+    "text": "or the life the money could have bought."
   },
   {
-    "start": 491.584,
-    "end": 494.214,
-    "text": "trading the way a child\nplays an arcade game"
+    "start": 376.9,
+    "end": 379.57,
+    "text": "People who knew him describe\na man trading the way a child"
   },
   {
-    "start": 494.249,
-    "end": 495.694,
-    "text": "— locked onto the screen,"
+    "start": 379.6,
+    "end": 380.85,
+    "text": "plays an arcade game"
   },
   {
-    "start": 495.729,
-    "end": 497.767,
-    "text": "hour after hour, trying, over and over,"
+    "start": 381.4,
+    "end": 384.86,
+    "text": "locked onto the screen hour\nafter hour trying over and over"
   },
   {
-    "start": 497.802,
-    "end": 499.543,
+    "start": 384.9,
+    "end": 386.587,
     "text": "to beat his own high score."
   },
   {
-    "start": 499.578,
-    "end": 502.208,
-    "text": "An autism specialist will\nlater put it as plainly"
+    "start": 386.62,
+    "end": 389.72,
+    "text": "An autism specialist will later\nput it as plainly as it can"
   },
   {
-    "start": 502.243,
-    "end": 503.689,
-    "text": "as it can be put:"
+    "start": 389.76,
+    "end": 392.78,
+    "text": "be put his lack of any\ninterest in the money he earned"
   },
   {
-    "start": 503.724,
-    "end": 506.354,
-    "text": "his lack of any interest in the money he"
+    "start": 392.82,
+    "end": 393.69,
+    "text": "was not an act."
   },
   {
-    "start": 506.389,
-    "end": 507.834,
-    "text": "earned was not an act."
-  },
-  {
-    "start": 507.869,
-    "end": 509.611,
+    "start": 393.72,
+    "end": 395.46,
     "text": "It was simply who he was."
   },
   {
-    "start": 515.393,
-    "end": 517.399,
-    "text": "But to beat the high score,"
+    "start": 396.5,
+    "end": 398.07,
+    "text": "But to beat the high score"
   },
   {
-    "start": 517.434,
-    "end": 518.737,
+    "start": 398.1,
+    "end": 399.163,
     "text": "he wants an edge."
   },
   {
-    "start": 518.772,
-    "end": 521.746,
-    "text": "And he has become convinced\nthat the market is"
+    "start": 399.66,
+    "end": 402.46,
+    "text": "And he has become convinced\nthat the market is rigged"
   },
   {
-    "start": 521.781,
-    "end": 523.752,
-    "text": "rigged — not against him personally,"
+    "start": 402.62,
+    "end": 404.245,
+    "text": "not against him personally"
   },
   {
-    "start": 523.787,
-    "end": 525.424,
-    "text": "but by the fastest machines,"
+    "start": 404.28,
+    "end": 405.967,
+    "text": "but by the fastest machines"
   },
   {
-    "start": 525.459,
-    "end": 528.433,
-    "text": "the ones that always\nseem to get there first,"
+    "start": 406.38,
+    "end": 409.05,
+    "text": "the ones that always\nseem to get there first"
   },
   {
-    "start": 528.468,
-    "end": 530.105,
-    "text": "the ones that, to him,"
+    "start": 409.08,
+    "end": 412.92,
+    "text": "the ones that to him are skimming\na little from everyone all"
   },
   {
-    "start": 530.14,
-    "end": 532.112,
-    "text": "are skimming a little from everyone,"
+    "start": 412.96,
+    "end": 415.522,
+    "text": "day long simply because they are quicker."
   },
   {
-    "start": 532.147,
-    "end": 534.787,
-    "text": "all day long, simply\nbecause they are quicker."
-  },
-  {
-    "start": 534.822,
-    "end": 536.793,
+    "start": 416.02,
+    "end": 417.69,
     "text": "He doesn't want to join them."
   },
   {
-    "start": 536.828,
-    "end": 538.465,
+    "start": 417.72,
+    "end": 419.09,
     "text": "He wants to beat them."
   },
   {
-    "start": 538.5,
-    "end": 541.474,
-    "text": "So he decides to fight\nthe machines on their"
+    "start": 419.12,
+    "end": 421.92,
+    "text": "So he decides to fight the\nmachines on their own ground"
   },
   {
-    "start": 541.509,
-    "end": 543.48,
-    "text": "own ground, with their own weapon:"
+    "start": 422.1,
+    "end": 423.94,
+    "text": "with their own weapon speed."
   },
   {
-    "start": 543.515,
-    "end": 545.821,
-    "text": "speed. He takes a piece of ordinary,"
+    "start": 424.8,
+    "end": 427.6,
+    "text": "He takes a piece of ordinary\ncommercial trading software"
   },
   {
-    "start": 545.856,
-    "end": 548.496,
-    "text": "commercial trading software,\nthe kind anyone could buy,"
+    "start": 427.92,
+    "end": 431.3,
+    "text": "the kind anyone could buy\nand he begins to rewrite it."
   },
   {
-    "start": 548.531,
-    "end": 550.502,
-    "text": "and he begins to rewrite it."
+    "start": 432.06,
+    "end": 435.74,
+    "text": "What he builds is simple to\ndescribe and devastating to watch."
   },
   {
-    "start": 556.285,
-    "end": 559.559,
-    "text": "What he builds is simple\nto describe and devastating"
+    "start": 436.28,
+    "end": 438.78,
+    "text": "A program that can place enormous orders"
   },
   {
-    "start": 559.594,
-    "end": 562.833,
-    "text": "to watch. A program that\ncan place enormous orders"
+    "start": 439.16,
+    "end": 443.78,
+    "text": "and then pull them back automatically\nin an instant before any human"
   },
   {
-    "start": 562.868,
-    "end": 565.016,
-    "text": "— and then pull them back,"
+    "start": 443.82,
+    "end": 446.132,
+    "text": "and almost any machine can take them."
   },
   {
-    "start": 565.051,
-    "end": 568.29,
-    "text": "automatically, in an instant,\nbefore any human and almost"
+    "start": 446.84,
+    "end": 450.34,
+    "text": "Orders that look for a fraction\nof a second completely real."
   },
   {
-    "start": 568.325,
-    "end": 570.109,
-    "text": "any machine can take them."
+    "start": 451.1,
+    "end": 453.94,
+    "text": "Orders that were never for\none moment meant to be filled."
   },
   {
-    "start": 570.144,
-    "end": 573.383,
-    "text": "Orders that look, for\na fraction of a second,"
+    "start": 454.94,
+    "end": 457.55,
+    "text": "There is a name for this a\nname the law will eventually"
   },
   {
-    "start": 573.418,
-    "end": 575.565,
-    "text": "completely real. Orders that were never,"
+    "start": 457.58,
+    "end": 460.06,
+    "text": "use. They will call it spoofing."
   },
   {
-    "start": 575.6,
-    "end": 578.112,
-    "text": "for one moment, meant to be filled."
-  },
-  {
-    "start": 578.147,
-    "end": 580.295,
-    "text": "There is a name for this,"
-  },
-  {
-    "start": 580.33,
-    "end": 582.841,
-    "text": "a name the law will eventually use."
-  },
-  {
-    "start": 582.876,
-    "end": 584.66,
-    "text": "They will call it spoofing."
-  },
-  {
-    "start": 590.442,
-    "end": 591.907,
+    "start": 460.88,
+    "end": 462.192,
     "text": "Here is how it works."
   },
   {
-    "start": 591.942,
-    "end": 594.252,
-    "text": "And the genius of it — the cruelty"
+    "start": 462.38,
+    "end": 465.6,
+    "text": "And the genius of it the\ncruelty of it is that once"
   },
   {
-    "start": 594.287,
-    "end": 596.89,
-    "text": "of it — is that once you see it,"
+    "start": 465.64,
+    "end": 467.6,
+    "text": "you see it you cannot unsee it."
   },
   {
-    "start": 596.925,
-    "end": 598.062,
-    "text": "you cannot unsee it."
-  },
-  {
-    "start": 598.097,
-    "end": 598.941,
+    "start": 468.06,
+    "end": 469.123,
     "text": "So watch closely."
   },
   {
-    "start": 604.724,
-    "end": 606.453,
+    "start": 470.02,
+    "end": 471.832,
     "text": "Picture the order book again."
   },
   {
-    "start": 606.488,
-    "end": 609.218,
-    "text": "On one side, everyone who wants to buy,"
+    "start": 472.16,
+    "end": 475.54,
+    "text": "On one side everyone who wants\nto buy and the prices they"
   },
   {
-    "start": 609.253,
-    "end": 611.293,
-    "text": "and the prices they will pay."
+    "start": 475.58,
+    "end": 477.24,
+    "text": "will pay. On the other"
   },
   {
-    "start": 611.328,
-    "end": 614.059,
-    "text": "On the other, everyone who wants to sell,"
+    "start": 477.66,
+    "end": 480.76,
+    "text": "everyone who wants to sell and\nthe prices they will accept."
   },
   {
-    "start": 614.094,
-    "end": 616.133,
-    "text": "and the prices they will accept."
+    "start": 481.54,
+    "end": 484.03,
+    "text": "The machines are watching\nthis book constantly"
   },
   {
-    "start": 616.168,
-    "end": 618.553,
-    "text": "The machines are watching\nthis book constantly,"
+    "start": 484.06,
+    "end": 485.998,
+    "text": "and they reason quite logically"
   },
   {
-    "start": 618.588,
-    "end": 620.282,
-    "text": "and they reason, quite logically:"
+    "start": 486.5,
+    "end": 490.46,
+    "text": "if a huge new wall of sellers\nsuddenly appears far bigger than"
   },
   {
-    "start": 620.317,
-    "end": 623.393,
-    "text": "if a huge new wall of\nsellers suddenly appears,"
+    "start": 490.5,
+    "end": 493.3,
+    "text": "everything around it then\nthe price is about to drop."
   },
   {
-    "start": 623.428,
-    "end": 625.467,
-    "text": "far bigger than everything around it,"
+    "start": 493.76,
+    "end": 494.66,
+    "text": "The smart move"
   },
   {
-    "start": 625.502,
-    "end": 627.887,
-    "text": "then the price is about to drop."
+    "start": 495.2,
+    "end": 498.668,
+    "text": "the safe move is to sell\nnow to get out a half-second"
   },
   {
-    "start": 627.922,
-    "end": 629.962,
-    "text": "The smart move, the safe move,"
+    "start": 498.84,
+    "end": 501.277,
+    "text": "ahead of everyone else before the fall."
   },
   {
-    "start": 629.997,
-    "end": 632.728,
-    "text": "is to sell now — to get out"
-  },
-  {
-    "start": 632.763,
-    "end": 634.802,
-    "text": "a half-second ahead of everyone else,"
-  },
-  {
-    "start": 634.837,
-    "end": 635.839,
-    "text": "before the fall."
-  },
-  {
-    "start": 641.621,
-    "end": 643.676,
+    "start": 501.66,
+    "end": 503.348,
     "text": "So Sarao shows them a wall."
   },
   {
-    "start": 643.711,
-    "end": 646.759,
-    "text": "Using his program, he\nplaces sell orders so large"
+    "start": 503.78,
+    "end": 507.76,
+    "text": "Using his program he places sell\norders so large they dwarf everything"
   },
   {
-    "start": 646.794,
-    "end": 649.842,
-    "text": "they dwarf everything\nelse in the book — tens"
+    "start": 507.8,
+    "end": 508.8,
+    "text": "else in the book"
   },
   {
-    "start": 649.877,
-    "end": 651.555,
-    "text": "of millions of dollars' worth,"
+    "start": 509.4,
+    "end": 512.025,
+    "text": "tens of millions of dollars' worth stacked"
   },
   {
-    "start": 651.59,
-    "end": 653.953,
-    "text": "stacked, layered, just\nabove the current price."
+    "start": 512.22,
+    "end": 514.533,
+    "text": "layered just above the current price."
   },
   {
-    "start": 653.988,
-    "end": 655.666,
+    "start": 514.88,
+    "end": 516.505,
     "text": "The machines see the wall."
   },
   {
-    "start": 655.701,
-    "end": 658.749,
-    "text": "They believe it, because\nthey have no way not"
+    "start": 516.54,
+    "end": 519.34,
+    "text": "They believe it because\nthey have no way not to."
   },
   {
-    "start": 658.784,
-    "end": 661.832,
-    "text": "to. And they do exactly\nwhat their logic demands."
+    "start": 519.46,
+    "end": 522.26,
+    "text": "And they do exactly what\ntheir logic demands."
   },
   {
-    "start": 661.867,
-    "end": 663.545,
-    "text": "They begin to sell, fast,"
+    "start": 522.32,
+    "end": 525.36,
+    "text": "They begin to sell fast\nto get ahead of the drop."
   },
   {
-    "start": 663.58,
-    "end": 665.6,
-    "text": "to get ahead of the drop."
+    "start": 525.9,
+    "end": 527.65,
+    "text": "And the price begins to fall"
   },
   {
-    "start": 665.635,
-    "end": 668.683,
-    "text": "And the price begins to fall — pushed down"
+    "start": 527.96,
+    "end": 530.585,
+    "text": "pushed down not by anyone actually selling"
   },
   {
-    "start": 668.718,
-    "end": 670.396,
-    "text": "not by anyone actually selling,"
-  },
-  {
-    "start": 670.431,
-    "end": 673.479,
+    "start": 530.64,
+    "end": 533.44,
     "text": "but by the simple fear\nthat selling is coming."
   },
   {
-    "start": 684.466,
-    "end": 686.048,
+    "start": 534.14,
+    "end": 535.577,
     "text": "And that is the moment."
   },
   {
-    "start": 686.083,
-    "end": 688.896,
-    "text": "As the price slides\ntoward the level where he"
+    "start": 535.82,
+    "end": 538.64,
+    "text": "As the price slides toward the\nlevel where he secretly wants"
   },
   {
-    "start": 688.931,
-    "end": 691.428,
-    "text": "secretly wants to buy,\nSarao cancels the wall."
+    "start": 538.68,
+    "end": 541.16,
+    "text": "to buy Sarao cancels the wall."
   },
   {
-    "start": 691.463,
-    "end": 693.327,
-    "text": "In the blink of an eye,"
+    "start": 541.94,
+    "end": 544.607,
+    "text": "In the blink of an eye the\norders that frightened the whole"
   },
   {
-    "start": 693.362,
-    "end": 696.175,
-    "text": "the orders that frightened\nthe whole market simply vanish"
+    "start": 544.635,
+    "end": 545.885,
+    "text": "market simply vanish"
   },
   {
-    "start": 696.21,
-    "end": 699.023,
-    "text": "— because they were\nnever meant to be filled."
+    "start": 546.12,
+    "end": 548.23,
+    "text": "because they were never\nmeant to be filled."
   },
   {
-    "start": 699.058,
-    "end": 700.289,
+    "start": 548.26,
+    "end": 549.385,
     "text": "They were a ghost."
   },
   {
-    "start": 700.324,
-    "end": 702.821,
-    "text": "And in the empty space they leave behind,"
+    "start": 549.68,
+    "end": 552.92,
+    "text": "And in the empty space they\nleave behind at the low price"
   },
   {
-    "start": 702.856,
-    "end": 705.352,
-    "text": "at the low price his own ghost created,"
+    "start": 552.96,
+    "end": 554.84,
+    "text": "his own ghost created he buys."
   },
   {
-    "start": 705.387,
-    "end": 706.618,
-    "text": "he buys. For real."
+    "start": 554.88,
+    "end": 559.44,
+    "text": "For real. Then he turns the\nentire thing upside down to sell."
   },
   {
-    "start": 712.401,
-    "end": 715.31,
-    "text": "Then he turns the entire thing upside down"
+    "start": 559.88,
+    "end": 562.16,
+    "text": "Show a wall of buyers lift the price"
   },
   {
-    "start": 715.345,
-    "end": 717.856,
-    "text": "to sell. Show a wall of buyers,"
+    "start": 562.68,
+    "end": 563.492,
+    "text": "pull the wall"
   },
   {
-    "start": 717.891,
-    "end": 720.038,
-    "text": "lift the price, pull the wall,"
+    "start": 564.0,
+    "end": 567.6,
+    "text": "sell high. Show a wall\nof sellers drop the price"
   },
   {
-    "start": 720.073,
-    "end": 722.584,
-    "text": "sell high. Show a wall of sellers,"
+    "start": 568.08,
+    "end": 569.82,
+    "text": "pull the wall buy low."
   },
   {
-    "start": 722.619,
-    "end": 724.766,
-    "text": "drop the price, pull the wall,"
+    "start": 570.72,
+    "end": 571.86,
+    "text": "Again. And again."
   },
   {
-    "start": 724.801,
-    "end": 725.857,
-    "text": "buy low. Again."
+    "start": 572.44,
+    "end": 575.54,
+    "text": "And again not for a day but for years."
   },
   {
-    "start": 725.892,
-    "end": 729.13,
-    "text": "And again. And again — not for a day,"
+    "start": 576.34,
+    "end": 579.229,
+    "text": "By his own later admission this\nearns him at least twelve point"
   },
   {
-    "start": 729.165,
-    "end": 730.221,
-    "text": "but for years."
+    "start": 579.257,
+    "end": 583.58,
+    "text": "eight million dollars. Regulators will\nsay the true figure across all his"
   },
   {
-    "start": 730.256,
-    "end": 732.039,
-    "text": "By his own later admission,"
+    "start": 583.62,
+    "end": 585.058,
+    "text": "trading was far higher."
   },
   {
-    "start": 732.074,
-    "end": 735.313,
-    "text": "this earns him at least\ntwelve point eight million"
-  },
-  {
-    "start": 735.348,
-    "end": 737.858,
-    "text": "dollars. Regulators will\nsay the true figure,"
-  },
-  {
-    "start": 737.893,
-    "end": 740.404,
-    "text": "across all his trading, was far higher."
-  },
-  {
-    "start": 746.186,
-    "end": 748.13,
+    "start": 585.58,
+    "end": 587.29,
     "text": "Think about what that means."
   },
   {
-    "start": 748.165,
-    "end": 751.629,
-    "text": "He is, in effect, lying to the market —"
+    "start": 587.32,
+    "end": 589.74,
+    "text": "He is in effect lying to the market"
   },
   {
-    "start": 751.664,
-    "end": 753.962,
-    "text": "not in words, but in orders."
+    "start": 590.32,
+    "end": 592.008,
+    "text": "not in words but in orders."
   },
   {
-    "start": 753.997,
-    "end": 756.295,
-    "text": "And the market — that vast,"
+    "start": 592.22,
+    "end": 593.095,
+    "text": "And the market"
   },
   {
-    "start": 756.33,
-    "end": 759.794,
-    "text": "rational, lightning-fast machine\nthat holds the savings of millions"
+    "start": 593.64,
+    "end": 597.92,
+    "text": "that vast rational lightning-fast\nmachine that holds the savings"
   },
   {
-    "start": 759.829,
-    "end": 761.738,
-    "text": "of people — believes him."
+    "start": 597.96,
+    "end": 599.273,
+    "text": "of millions of people"
   },
   {
-    "start": 761.773,
-    "end": 762.904,
-    "text": "Every single time."
+    "start": 599.6,
+    "end": 601.9,
+    "text": "believes him. Every single time."
   },
   {
-    "start": 768.687,
-    "end": 771.734,
-    "text": "And the strangest part\nis how invisible it all"
+    "start": 602.86,
+    "end": 605.59,
+    "text": "And the strangest part is\nhow invisible it all is."
   },
   {
-    "start": 771.769,
-    "end": 773.765,
-    "text": "is. There is no broken window,"
+    "start": 605.62,
+    "end": 608.76,
+    "text": "There is no broken\nwindow no alarm no smoke"
   },
   {
-    "start": 773.8,
-    "end": 776.135,
-    "text": "no alarm, no smoke — just numbers,"
+    "start": 609.26,
+    "end": 613.84,
+    "text": "just numbers appearing and vanishing\nfaster than thought on screens"
   },
   {
-    "start": 776.17,
-    "end": 778.166,
-    "text": "appearing and vanishing\nfaster than thought,"
+    "start": 613.88,
+    "end": 614.88,
+    "text": "in locked rooms."
   },
   {
-    "start": 778.201,
-    "end": 779.859,
-    "text": "on screens in locked rooms."
+    "start": 615.4,
+    "end": 618.2,
+    "text": "To almost everyone watching\nthe market in those years"
   },
   {
-    "start": 779.894,
-    "end": 782.906,
-    "text": "To almost everyone watching\nthe market in those years,"
-  },
-  {
-    "start": 782.941,
-    "end": 784.598,
+    "start": 618.68,
+    "end": 619.958,
     "text": "nothing looks wrong at all."
   },
   {
-    "start": 784.633,
-    "end": 787.306,
-    "text": "The wall goes up, the wall comes down,"
+    "start": 619.986,
+    "end": 621.04,
+    "text": "The wall goes up"
   },
   {
-    "start": 787.341,
-    "end": 790.353,
-    "text": "and only the man who built it ever knows"
+    "start": 621.5,
+    "end": 622.688,
+    "text": "the wall comes down"
   },
   {
-    "start": 790.388,
-    "end": 792.046,
-    "text": "it was never really there."
+    "start": 622.78,
+    "end": 625.17,
+    "text": "and only the man who built\nit ever knows it was never"
   },
   {
-    "start": 797.828,
-    "end": 799.508,
-    "text": "For most of those years,"
+    "start": 625.2,
+    "end": 628.82,
+    "text": "really there. For most of those\nyears almost no one even notices."
   },
   {
-    "start": 799.543,
-    "end": 801.188,
-    "text": "almost no one even notices."
+    "start": 629.5,
+    "end": 632.96,
+    "text": "A single man in a single bedroom\nis quietly leaning his whole"
   },
   {
-    "start": 801.223,
-    "end": 803.541,
-    "text": "A single man, in a single bedroom,"
+    "start": 633.0,
+    "end": 636.7,
+    "text": "weight against the most sophisticated\nfinancial system ever built."
   },
   {
-    "start": 803.576,
-    "end": 806.565,
-    "text": "is quietly leaning his whole\nweight against the most"
+    "start": 637.14,
+    "end": 639.265,
+    "text": "And the system it turns out leans."
   },
   {
-    "start": 806.6,
-    "end": 808.245,
-    "text": "sophisticated financial system ever built."
+    "start": 639.6,
+    "end": 641.538,
+    "text": "It bends right where he pushes."
   },
   {
-    "start": 808.28,
-    "end": 810.262,
-    "text": "And the system, it turns out,"
+    "start": 641.86,
+    "end": 643.235,
+    "text": "The only question left"
   },
   {
-    "start": 810.297,
-    "end": 812.614,
-    "text": "leans. It bends right where he pushes."
+    "start": 643.66,
+    "end": 647.48,
+    "text": "the one nobody has thought\nto ask is what happens if one"
   },
   {
-    "start": 812.649,
-    "end": 815.638,
-    "text": "The only question left\n— the one nobody has"
+    "start": 647.52,
+    "end": 650.44,
+    "text": "day he leans on it at\nexactly the wrong moment."
   },
   {
-    "start": 815.673,
-    "end": 818.327,
-    "text": "thought to ask — is what happens if,"
+    "start": 651.52,
+    "end": 654.74,
+    "text": "May the sixth twenty-ten does\nnot begin as a catastrophe."
   },
   {
-    "start": 818.362,
-    "end": 821.015,
-    "text": "one day, he leans on it at exactly"
+    "start": 655.5,
+    "end": 657.188,
+    "text": "It begins as a nervous day."
   },
   {
-    "start": 821.05,
-    "end": 822.023,
-    "text": "the wrong moment."
+    "start": 657.8,
+    "end": 660.8,
+    "text": "On the other side of the world\nGreece is sliding toward financial"
   },
   {
-    "start": 827.806,
-    "end": 830.529,
-    "text": "May the sixth, twenty-ten,\ndoes not begin as"
+    "start": 660.828,
+    "end": 664.04,
+    "text": "collapse there are riots in the\nstreets of Athens on the evening"
   },
   {
-    "start": 830.564,
-    "end": 833.251,
-    "text": "a catastrophe. It begins as a nervous day."
+    "start": 664.08,
+    "end": 666.9,
+    "text": "news and the markets\neverywhere are jittery"
   },
   {
-    "start": 833.286,
-    "end": 835.634,
-    "text": "On the other side of the world,"
+    "start": 667.32,
+    "end": 669.945,
+    "text": "on edge looking for a reason to be afraid."
   },
   {
-    "start": 835.669,
-    "end": 837.676,
-    "text": "Greece is sliding toward\nfinancial collapse;"
-  },
-  {
-    "start": 837.711,
-    "end": 840.738,
-    "text": "there are riots in the\nstreets of Athens on"
-  },
-  {
-    "start": 840.773,
-    "end": 843.801,
-    "text": "the evening news; and the\nmarkets everywhere are jittery,"
-  },
-  {
-    "start": 843.836,
-    "end": 846.864,
-    "text": "on edge, looking for\na reason to be afraid."
-  },
-  {
-    "start": 846.899,
-    "end": 848.906,
+    "start": 670.92,
+    "end": 672.67,
     "text": "Fear is already in the room."
   },
   {
-    "start": 848.941,
-    "end": 850.608,
+    "start": 672.72,
+    "end": 674.033,
     "text": "It only needs a push."
   },
   {
-    "start": 856.39,
-    "end": 858.406,
-    "text": "Into that fear, that morning,"
+    "start": 674.74,
+    "end": 675.615,
+    "text": "Into that fear"
   },
   {
-    "start": 858.441,
-    "end": 860.825,
-    "text": "Navinder Sarao switches on his program."
+    "start": 676.04,
+    "end": 679.28,
+    "text": "that morning Navinder Sarao\nswitches on his program."
   },
   {
-    "start": 860.86,
-    "end": 864.454,
-    "text": "Investigators will later\nsay that on this single day,"
+    "start": 680.62,
+    "end": 684.36,
+    "text": "Investigators will later say that on\nthis single day he places modifies"
   },
   {
-    "start": 864.489,
-    "end": 867.679,
-    "text": "he places, modifies, and\ncancels orders worth billions"
+    "start": 684.66,
+    "end": 687.41,
+    "text": "and cancels orders worth\nbillions of dollars"
   },
   {
-    "start": 867.714,
-    "end": 870.501,
-    "text": "of dollars — a vast ghost wall,"
+    "start": 687.68,
+    "end": 688.94,
+    "text": "a vast ghost wall"
   },
   {
-    "start": 870.536,
-    "end": 873.324,
-    "text": "leaning on the market, on and off,"
+    "start": 689.4,
+    "end": 692.087,
+    "text": "leaning on the market\non and off for hours."
   },
   {
-    "start": 873.359,
-    "end": 874.13,
-    "text": "for hours."
-  },
-  {
-    "start": 879.913,
-    "end": 881.695,
+    "start": 692.7,
+    "end": 693.95,
     "text": "But he is not alone."
   },
   {
-    "start": 881.73,
-    "end": 884.547,
-    "text": "And this is the part the simple version"
+    "start": 694.44,
+    "end": 697.13,
+    "text": "And this is the part the simple\nversion of the story always"
   },
   {
-    "start": 884.582,
-    "end": 886.686,
-    "text": "of the story always leaves out."
+    "start": 697.16,
+    "end": 699.54,
+    "text": "leaves out. Somewhere else entirely"
   },
   {
-    "start": 886.721,
-    "end": 889.894,
-    "text": "Somewhere else entirely, for\nreasons that are completely ordinary"
+    "start": 699.96,
+    "end": 702.904,
+    "text": "for reasons that are completely\nordinary and completely legal"
   },
   {
-    "start": 889.929,
-    "end": 892.746,
-    "text": "and completely legal, a\nlarge investment firm decides"
+    "start": 703.28,
+    "end": 705.717,
+    "text": "a large investment firm decides to sell"
   },
   {
-    "start": 892.781,
-    "end": 895.241,
-    "text": "to sell — to hedge a position,"
+    "start": 706.06,
+    "end": 707.247,
+    "text": "to hedge a position"
   },
   {
-    "start": 895.276,
-    "end": 896.311,
+    "start": 707.82,
+    "end": 708.945,
     "text": "to protect itself."
   },
   {
-    "start": 896.346,
-    "end": 898.093,
-    "text": "It is an enormous order:"
+    "start": 709.78,
+    "end": 712.58,
+    "text": "It is an enormous order\nseventy-five thousand"
   },
   {
-    "start": 898.128,
-    "end": 901.301,
-    "text": "seventy-five thousand futures contracts,\nmore than four billion dollars'"
+    "start": 712.76,
+    "end": 716.06,
+    "text": "futures contracts more than\nfour billion dollars' worth"
   },
   {
-    "start": 901.336,
-    "end": 904.51,
-    "text": "worth, and it is fed into the market not"
+    "start": 716.68,
+    "end": 719.45,
+    "text": "and it is fed into the\nmarket not by a person"
   },
   {
-    "start": 904.545,
-    "end": 907.718,
-    "text": "by a person, but by an algorithm of its"
+    "start": 719.48,
+    "end": 721.418,
+    "text": "but by an algorithm of its own."
   },
   {
-    "start": 907.753,
-    "end": 910.57,
-    "text": "own. An algorithm given\none instruction — sell,"
+    "start": 722.14,
+    "end": 724.265,
+    "text": "An algorithm given one instruction"
   },
   {
-    "start": 910.605,
-    "end": 913.421,
-    "text": "and sell quickly — without much regard for"
+    "start": 724.92,
+    "end": 726.232,
+    "text": "sell and sell quickly"
   },
   {
-    "start": 913.456,
-    "end": 916.63,
-    "text": "the price it gets, or the damage it might"
+    "start": 726.62,
+    "end": 729.82,
+    "text": "without much regard for the\nprice it gets or the damage"
   },
   {
-    "start": 916.665,
-    "end": 918.412,
-    "text": "do on the way down."
+    "start": 729.86,
+    "end": 731.61,
+    "text": "it might do on the way down."
   },
   {
-    "start": 924.195,
-    "end": 927.373,
-    "text": "So now there are two\ngreat weights pressing on"
+    "start": 731.76,
+    "end": 734.72,
+    "text": "So now there are two great weights\npressing on the same fragile"
   },
   {
-    "start": 927.408,
-    "end": 930.197,
-    "text": "the same fragile market\nat the same moment."
+    "start": 734.76,
+    "end": 736.385,
+    "text": "market at the same moment."
   },
   {
-    "start": 930.232,
-    "end": 933.022,
-    "text": "One a careless giant,\nselling four billion dollars"
+    "start": 736.7,
+    "end": 739.88,
+    "text": "One a careless giant selling\nfour billion dollars as fast as"
   },
   {
-    "start": 933.057,
-    "end": 934.787,
-    "text": "as fast as it can."
+    "start": 739.92,
+    "end": 743.42,
+    "text": "it can. One a deliberate\nghost leaning and lying."
   },
   {
-    "start": 934.822,
-    "end": 937.259,
-    "text": "One a deliberate ghost, leaning and lying."
+    "start": 744.08,
+    "end": 746.9,
+    "text": "And all around them the\nhigh-frequency machines"
   },
   {
-    "start": 937.294,
-    "end": 940.083,
-    "text": "And all around them, the\nhigh-frequency machines —"
+    "start": 747.38,
+    "end": 749.255,
+    "text": "the water the market floats on"
   },
   {
-    "start": 940.118,
-    "end": 943.261,
-    "text": "the water the market\nfloats on — are watching"
+    "start": 749.34,
+    "end": 751.965,
+    "text": "are watching the order book fill with sell"
   },
   {
-    "start": 943.296,
-    "end": 945.379,
-    "text": "the order book fill with sell,"
+    "start": 752.08,
+    "end": 755.56,
+    "text": "sell sell and they are\nbeginning to flinch."
   },
   {
-    "start": 945.414,
-    "end": 948.204,
-    "text": "sell, sell, and they\nare beginning to flinch."
+    "start": 756.78,
+    "end": 758.905,
+    "text": "At two thirty-two in the afternoon"
   },
   {
-    "start": 959.19,
-    "end": 961.453,
-    "text": "At two thirty-two in the afternoon,"
+    "start": 759.06,
+    "end": 763.62,
+    "text": "something gives. The machines that\npromised to always be there do"
   },
   {
-    "start": 961.488,
-    "end": 964.847,
-    "text": "something gives. The machines\nthat promised to always be"
+    "start": 763.66,
+    "end": 765.91,
+    "text": "the one thing no one had planned for"
   },
   {
-    "start": 964.882,
-    "end": 968.241,
-    "text": "there do the one thing no one had planned"
+    "start": 766.1,
+    "end": 769.54,
+    "text": "the one thing the whole system\nquietly depended on them never doing."
   },
   {
-    "start": 968.276,
-    "end": 971.635,
-    "text": "for, the one thing the whole\nsystem quietly depended"
+    "start": 770.4,
+    "end": 772.66,
+    "text": "They step back. All at once."
   },
   {
-    "start": 971.67,
-    "end": 973.143,
-    "text": "on them never doing."
+    "start": 773.18,
+    "end": 776.62,
+    "text": "To protect themselves from a falling\nmarket they simply stop buying."
   },
   {
-    "start": 973.178,
-    "end": 974.275,
-    "text": "They step back."
-  },
-  {
-    "start": 974.31,
-    "end": 975.406,
-    "text": "All at once."
-  },
-  {
-    "start": 975.441,
-    "end": 978.046,
-    "text": "To protect themselves\nfrom a falling market,"
-  },
-  {
-    "start": 978.081,
-    "end": 979.555,
-    "text": "they simply stop buying."
-  },
-  {
-    "start": 979.59,
-    "end": 981.063,
+    "start": 777.06,
+    "end": 778.622,
     "text": "And the floor disappears."
   },
   {
-    "start": 986.846,
-    "end": 988.485,
+    "start": 779.44,
+    "end": 780.878,
     "text": "Now prices do not fall."
   },
   {
-    "start": 988.52,
-    "end": 990.123,
-    "text": "They collapse, into a vacuum."
+    "start": 781.16,
+    "end": 782.91,
+    "text": "They collapse into a vacuum."
   },
   {
-    "start": 990.158,
-    "end": 993.073,
-    "text": "With almost no machines\nleft willing to catch them,"
+    "start": 783.46,
+    "end": 787.08,
+    "text": "With almost no machines left willing\nto catch them shares in giant"
   },
   {
-    "start": 993.108,
-    "end": 996.022,
-    "text": "shares in giant, healthy, world-famous\ncompanies plunge toward nothing."
+    "start": 787.34,
+    "end": 790.18,
+    "text": "healthy world-famous companies\nplunge toward nothing."
   },
   {
-    "start": 996.057,
-    "end": 997.661,
-    "text": "For a few astonishing seconds,"
+    "start": 790.72,
+    "end": 793.76,
+    "text": "For a few astonishing seconds\nyou could have bought a share"
   },
   {
-    "start": 997.696,
-    "end": 1000.61,
-    "text": "you could have bought a share of a company"
+    "start": 793.8,
+    "end": 796.53,
+    "text": "of a company worth tens of\nbillions of dollars for a single"
   },
   {
-    "start": 1000.645,
-    "end": 1003.56,
-    "text": "worth tens of billions\nof dollars for a single"
+    "start": 796.56,
+    "end": 801.66,
+    "text": "penny not because anything real had\nchanged about that company not because"
   },
   {
-    "start": 1003.595,
-    "end": 1006.509,
-    "text": "penny — not because anything\nreal had changed about"
+    "start": 801.7,
+    "end": 804.88,
+    "text": "of any news but because for\na few minutes on the whole"
   },
   {
-    "start": 1006.544,
-    "end": 1008.803,
-    "text": "that company, not because of any news,"
+    "start": 804.92,
+    "end": 807.76,
+    "text": "of the market there was simply\nno one on the other side."
   },
   {
-    "start": 1008.838,
-    "end": 1010.769,
-    "text": "but because, for a few minutes,"
-  },
-  {
-    "start": 1010.804,
-    "end": 1012.736,
-    "text": "on the whole of the market,"
-  },
-  {
-    "start": 1012.771,
-    "end": 1015.685,
-    "text": "there was simply no one on the other side."
-  },
-  {
-    "start": 1021.467,
-    "end": 1024.733,
+    "start": 808.68,
+    "end": 811.117,
     "text": "And it is not only numbers on a screen."
   },
   {
-    "start": 1024.768,
-    "end": 1027.999,
-    "text": "All over the country, ordinary\npeople have left standing"
+    "start": 811.36,
+    "end": 814.78,
+    "text": "All over the country ordinary people\nhave left standing instructions"
   },
   {
-    "start": 1028.034,
-    "end": 1030.177,
-    "text": "instructions with their brokers — sell,"
+    "start": 814.82,
+    "end": 815.945,
+    "text": "with their brokers"
   },
   {
-    "start": 1030.212,
-    "end": 1033.443,
-    "text": "automatically, if my stock\never falls below this price"
+    "start": 816.9,
+    "end": 820.1,
+    "text": "sell automatically if my stock\never falls below this price"
   },
   {
-    "start": 1033.478,
-    "end": 1036.709,
-    "text": "— small, sensible safety\nnets meant to protect them."
+    "start": 820.74,
+    "end": 823.88,
+    "text": "small sensible safety nets\nmeant to protect them."
   },
   {
-    "start": 1036.744,
-    "end": 1039.612,
-    "text": "In those thirty-six minutes,\nas prices fall through"
+    "start": 824.66,
+    "end": 827.9,
+    "text": "In those thirty-six minutes as\nprices fall through the floor"
   },
   {
-    "start": 1039.647,
-    "end": 1041.426,
-    "text": "the floor, those instructions fire,"
+    "start": 828.42,
+    "end": 833.2,
+    "text": "those instructions fire all at once\nselling people's savings into the very"
   },
   {
-    "start": 1041.461,
-    "end": 1044.692,
-    "text": "all at once, selling people's\nsavings into the very"
+    "start": 833.24,
+    "end": 834.428,
+    "text": "bottom of the crash"
   },
   {
-    "start": 1044.727,
-    "end": 1047.596,
-    "text": "bottom of the crash, at the worst prices"
+    "start": 834.5,
+    "end": 836.438,
+    "text": "at the worst prices of the day."
   },
   {
-    "start": 1047.631,
-    "end": 1048.684,
-    "text": "of the day."
+    "start": 836.94,
+    "end": 840.4,
+    "text": "The panic of the machines becomes\nfor a few minutes the real"
   },
   {
-    "start": 1048.719,
-    "end": 1050.862,
-    "text": "The panic of the machines becomes,"
+    "start": 840.44,
+    "end": 843.4,
+    "text": "and lasting loss of people\nwho were not even watching."
   },
   {
-    "start": 1050.897,
-    "end": 1054.128,
-    "text": "for a few minutes, the\nreal and lasting loss"
-  },
-  {
-    "start": 1054.163,
-    "end": 1056.668,
-    "text": "of people who were not even watching."
-  },
-  {
-    "start": 1062.451,
-    "end": 1064.198,
+    "start": 844.36,
+    "end": 846.048,
     "text": "And then the safeties trip."
   },
   {
-    "start": 1064.233,
-    "end": 1066.643,
-    "text": "Automatic circuit breakers,\nbuilt for exactly this,"
+    "start": 846.12,
+    "end": 849.74,
+    "text": "Automatic circuit breakers built\nfor exactly this begin to fire"
   },
   {
-    "start": 1066.678,
-    "end": 1068.39,
-    "text": "begin to fire; exchanges pause;"
+    "start": 850.38,
+    "end": 853.067,
+    "text": "exchanges pause the\npanic runs out of room."
   },
   {
-    "start": 1068.425,
-    "end": 1070.486,
-    "text": "the panic runs out of room."
+    "start": 853.56,
+    "end": 855.51,
+    "text": "Cautiously the machines come back."
   },
   {
-    "start": 1070.521,
-    "end": 1072.233,
-    "text": "Cautiously, the machines come back."
-  },
-  {
-    "start": 1072.268,
-    "end": 1073.281,
+    "start": 855.54,
+    "end": 856.665,
     "text": "The water returns."
   },
   {
-    "start": 1073.316,
-    "end": 1076.425,
-    "text": "And the market floats\nagain — climbing back out"
+    "start": 856.92,
+    "end": 858.607,
+    "text": "And the market floats again"
   },
   {
-    "start": 1076.46,
-    "end": 1079.569,
-    "text": "of the hole almost as violently as it fell"
+    "start": 858.84,
+    "end": 861.74,
+    "text": "climbing back out of the hole\nalmost as violently as it fell"
   },
   {
-    "start": 1079.604,
-    "end": 1080.967,
+    "start": 861.78,
+    "end": 863.3,
     "text": "in. It is over."
   },
   {
-    "start": 1081.002,
-    "end": 1083.063,
-    "text": "A trillion dollars has been lost,"
+    "start": 863.88,
+    "end": 867.8,
+    "text": "A trillion dollars has been lost\nand found inside a single hour."
   },
   {
-    "start": 1083.098,
-    "end": 1085.159,
-    "text": "and found, inside a single hour."
+    "start": 868.22,
+    "end": 871.78,
+    "text": "And the most powerful financial system\non earth has just learned something"
   },
   {
-    "start": 1085.194,
-    "end": 1088.303,
-    "text": "And the most powerful\nfinancial system on earth has"
+    "start": 871.82,
+    "end": 874.92,
+    "text": "about itself that it would\nvery much prefer not to know."
   },
   {
-    "start": 1088.338,
-    "end": 1091.447,
-    "text": "just learned something about\nitself that it would very"
-  },
-  {
-    "start": 1091.482,
-    "end": 1093.194,
-    "text": "much prefer not to know."
-  },
-  {
-    "start": 1098.976,
-    "end": 1100.257,
+    "start": 875.6,
+    "end": 877.35,
     "text": "Afterward comes the autopsy."
   },
   {
-    "start": 1100.292,
-    "end": 1103.138,
-    "text": "And this is where the story refuses to be"
+    "start": 877.82,
+    "end": 880.57,
+    "text": "And this is where the\nstory refuses to be simple"
   },
   {
-    "start": 1103.173,
-    "end": 1105.38,
-    "text": "simple — where you have to resist,"
+    "start": 880.6,
+    "end": 883.82,
+    "text": "where you have to resist with\nboth hands the ending you want."
   },
   {
-    "start": 1105.415,
-    "end": 1107.621,
-    "text": "with both hands, the ending you want."
-  },
-  {
-    "start": 1107.656,
-    "end": 1109.222,
+    "start": 884.38,
+    "end": 885.95,
     "text": "Because we want a villain."
   },
   {
-    "start": 1109.257,
-    "end": 1111.143,
+    "start": 885.98,
+    "end": 887.73,
     "text": "A villain would be a relief."
   },
   {
-    "start": 1116.926,
-    "end": 1119.189,
-    "text": "The first official report, months later,"
+    "start": 888.28,
+    "end": 892.26,
+    "text": "The first official report months later\npoints mostly at the careless giant"
   },
   {
-    "start": 1119.224,
-    "end": 1121.452,
-    "text": "points mostly at the careless giant:"
+    "start": 892.76,
+    "end": 897.3,
+    "text": "that four-billion-dollar sell program\ndumped by an unthinking algorithm"
   },
   {
-    "start": 1121.487,
-    "end": 1124.847,
-    "text": "that four-billion-dollar sell program,\ndumped by an unthinking algorithm"
+    "start": 897.34,
+    "end": 900.16,
+    "text": "into a market that had\ngrown too thin to absorb it."
   },
   {
-    "start": 1124.882,
-    "end": 1127.864,
-    "text": "into a market that had grown too thin"
-  },
-  {
-    "start": 1127.899,
-    "end": 1128.996,
-    "text": "to absorb it."
-  },
-  {
-    "start": 1129.031,
-    "end": 1132.39,
+    "start": 900.7,
+    "end": 903.5,
     "text": "It barely mentions a\ntrader in London at all."
   },
   {
-    "start": 1132.426,
-    "end": 1135.785,
-    "text": "Then other studies look harder\nat the high-frequency machines,"
+    "start": 903.66,
+    "end": 907.52,
+    "text": "Then other studies look harder at\nthe high-frequency machines and reach"
   },
   {
-    "start": 1135.82,
-    "end": 1138.048,
-    "text": "and reach a careful, important conclusion:"
+    "start": 907.56,
+    "end": 909.46,
+    "text": "a careful important conclusion"
   },
   {
-    "start": 1138.083,
-    "end": 1141.443,
-    "text": "the machines did not cause the crash — but"
+    "start": 910.4,
+    "end": 912.65,
+    "text": "the machines did not cause the crash"
   },
   {
-    "start": 1141.478,
-    "end": 1144.838,
-    "text": "they deepened it, by\nall racing for the exit"
+    "start": 912.78,
+    "end": 916.54,
+    "text": "but they deepened it by all\nracing for the exit at once"
   },
   {
-    "start": 1144.873,
-    "end": 1147.855,
-    "text": "at once, by demanding to get out first."
+    "start": 917.02,
+    "end": 918.895,
+    "text": "by demanding to get out first."
   },
   {
-    "start": 1160.577,
-    "end": 1162.656,
-    "text": "And then, almost five years later,"
+    "start": 920.4,
+    "end": 924.32,
+    "text": "And then almost five years later\ninvestigators trace the ghost back"
   },
   {
-    "start": 1162.691,
-    "end": 1165.775,
-    "text": "investigators trace the\nghost back to its source —"
+    "start": 924.36,
+    "end": 925.173,
+    "text": "to its source"
   },
   {
-    "start": 1165.81,
-    "end": 1167.507,
+    "start": 925.54,
+    "end": 927.227,
     "text": "to the bedroom in Hounslow."
   },
   {
-    "start": 1167.542,
-    "end": 1169.586,
-    "text": "They say his wall, that morning,"
+    "start": 927.8,
+    "end": 930.88,
+    "text": "They say his wall that morning\nwas part of the imbalance"
   },
   {
-    "start": 1169.621,
-    "end": 1172.705,
-    "text": "was part of the imbalance\nthat tipped the market"
+    "start": 930.92,
+    "end": 932.54,
+    "text": "that tipped the market over."
   },
   {
-    "start": 1172.74,
-    "end": 1175.477,
-    "text": "over. In their words, he was\nsignificantly responsible"
+    "start": 932.57,
+    "end": 935.37,
+    "text": "In their words he was\nsignificantly responsible"
   },
   {
-    "start": 1175.512,
-    "end": 1178.596,
+    "start": 935.49,
+    "end": 938.29,
     "text": "for the order imbalances\nthat helped trigger the fall."
   },
   {
-    "start": 1191.317,
-    "end": 1194.493,
-    "text": "How they found him at all is its own"
+    "start": 939.66,
+    "end": 942.66,
+    "text": "How they found him at all\nis its own quiet story."
   },
   {
-    "start": 1194.528,
-    "end": 1197.668,
-    "text": "quiet story. The ghost had\nleft almost no fingerprints;"
+    "start": 943.32,
+    "end": 945.883,
+    "text": "The ghost had left almost no fingerprints"
   },
   {
-    "start": 1197.703,
-    "end": 1200.844,
-    "text": "his orders had simply\nvanished the instant they did"
+    "start": 946.12,
+    "end": 949.064,
+    "text": "his orders had simply vanished\nthe instant they did their work."
   },
   {
-    "start": 1200.879,
-    "end": 1204.019,
-    "text": "their work. It took\nyears of patient effort —"
+    "start": 949.76,
+    "end": 953.64,
+    "text": "It took years of patient effort\nsifting back through the raw data"
   },
   {
-    "start": 1204.054,
-    "end": 1207.195,
-    "text": "sifting back through the\nraw data of that single"
+    "start": 953.68,
+    "end": 957.82,
+    "text": "of that single afternoon through\nbillions of messages to trace"
   },
   {
-    "start": 1207.23,
-    "end": 1210.017,
-    "text": "afternoon, through billions\nof messages — to trace"
+    "start": 957.86,
+    "end": 961.7,
+    "text": "the vanished orders through the\nnoise to one account and one house"
   },
   {
-    "start": 1210.052,
-    "end": 1213.193,
-    "text": "the vanished orders through\nthe noise to one account,"
+    "start": 961.74,
+    "end": 966.74,
+    "text": "in Hounslow. The most mysterious\ncrash in market history was unraveled"
   },
   {
-    "start": 1213.228,
-    "end": 1214.957,
-    "text": "and one house, in Hounslow."
+    "start": 966.78,
+    "end": 968.3,
+    "text": "in the end not by speed"
   },
   {
-    "start": 1214.992,
-    "end": 1218.133,
-    "text": "The most mysterious crash in\nmarket history was unraveled,"
+    "start": 968.86,
+    "end": 971.66,
+    "text": "but by someone slow and\nstubborn enough to keep looking."
   },
   {
-    "start": 1218.168,
-    "end": 1220.25,
-    "text": "in the end, not by speed,"
-  },
-  {
-    "start": 1220.285,
-    "end": 1223.425,
-    "text": "but by someone slow and\nstubborn enough to keep"
-  },
-  {
-    "start": 1223.46,
-    "end": 1224.18,
-    "text": "looking."
-  },
-  {
-    "start": 1241.704,
-    "end": 1244.63,
+    "start": 973.42,
+    "end": 975.857,
     "text": "But notice the words they actually use."
   },
   {
-    "start": 1244.665,
-    "end": 1246.302,
+    "start": 976.24,
+    "end": 978.12,
     "text": "Part of. Contributed to."
   },
   {
-    "start": 1246.337,
-    "end": 1247.555,
+    "start": 978.54,
+    "end": 979.415,
     "text": "Helped to tip."
   },
   {
-    "start": 1247.59,
-    "end": 1249.645,
+    "start": 980.66,
+    "end": 983.11,
     "text": "Significantly responsible\nfor the imbalance."
   },
   {
-    "start": 1249.68,
-    "end": 1252.153,
-    "text": "Not, anywhere, in any serious account:"
+    "start": 983.14,
+    "end": 986.92,
+    "text": "Not anywhere in any serious\naccount caused it alone."
   },
   {
-    "start": 1252.188,
-    "end": 1253.407,
-    "text": "caused it, alone."
+    "start": 987.5,
+    "end": 991.12,
+    "text": "Because the honest answer is harder\nthan a single villain and far"
   },
   {
-    "start": 1253.442,
-    "end": 1257.169,
-    "text": "Because the honest answer\nis harder than a single"
+    "start": 991.16,
+    "end": 994.84,
+    "text": "more frightening. A careless\nfour-billion-dollar sell order."
   },
   {
-    "start": 1257.204,
-    "end": 1259.258,
-    "text": "villain, and far more frightening."
+    "start": 995.32,
+    "end": 998.68,
+    "text": "A swarm of machines all protecting\nthemselves at the same instant."
   },
   {
-    "start": 1259.293,
-    "end": 1261.348,
-    "text": "A careless four-billion-dollar sell order."
-  },
-  {
-    "start": 1261.383,
-    "end": 1264.692,
-    "text": "A swarm of machines all\nprotecting themselves at"
-  },
-  {
-    "start": 1264.727,
-    "end": 1265.946,
-    "text": "the same instant."
-  },
-  {
-    "start": 1265.981,
-    "end": 1269.29,
+    "start": 999.26,
+    "end": 1001.947,
     "text": "A world already sick\nwith fear over Greece."
   },
   {
-    "start": 1269.325,
-    "end": 1273.051,
-    "text": "And yes — a ghost in the order book,"
+    "start": 1002.26,
+    "end": 1006.14,
+    "text": "And yes a ghost in the order\nbook pushing at exactly"
   },
   {
-    "start": 1273.086,
-    "end": 1275.559,
-    "text": "pushing at exactly the wrong moment."
+    "start": 1006.18,
+    "end": 1007.242,
+    "text": "the wrong moment."
   },
   {
-    "start": 1275.594,
-    "end": 1278.067,
-    "text": "All of it, together, at once,"
+    "start": 1007.56,
+    "end": 1011.46,
+    "text": "All of it together at once\non a market that had quietly"
   },
   {
-    "start": 1278.102,
-    "end": 1280.574,
-    "text": "on a market that had quietly,"
+    "start": 1011.72,
+    "end": 1015.3,
+    "text": "invisibly become too fast\nand too fragile for anyone"
   },
   {
-    "start": 1280.609,
-    "end": 1284.336,
-    "text": "invisibly, become too fast\nand too fragile for anyone,"
+    "start": 1015.78,
+    "end": 1017.46,
+    "text": "anywhere to fully see."
   },
   {
-    "start": 1284.371,
-    "end": 1286.008,
-    "text": "anywhere, to fully see."
+    "start": 1018.12,
+    "end": 1021.64,
+    "text": "Which leaves us with the question\nthis whole story has been circling"
   },
   {
-    "start": 1291.791,
-    "end": 1294.499,
-    "text": "Which leaves us with the\nquestion this whole story"
+    "start": 1021.68,
+    "end": 1023.367,
+    "text": "from the very first second."
   },
   {
-    "start": 1294.534,
-    "end": 1296.906,
-    "text": "has been circling from\nthe very first second."
+    "start": 1024.02,
+    "end": 1026.292,
+    "text": "If a system this powerful\ncan be pushed to the edge"
   },
   {
-    "start": 1296.941,
-    "end": 1299.312,
-    "text": "If a system this powerful can be pushed"
+    "start": 1026.32,
+    "end": 1029.58,
+    "text": "of collapse by a lie told in\norders that were never even"
   },
   {
-    "start": 1299.347,
-    "end": 1302.02,
-    "text": "to the edge of collapse by a lie told"
+    "start": 1029.62,
+    "end": 1032.76,
+    "text": "real then what exactly broke that day"
   },
   {
-    "start": 1302.055,
-    "end": 1304.728,
-    "text": "in orders that were never even real — then"
+    "start": 1033.5,
+    "end": 1035.0,
+    "text": "The man who told the lie"
   },
   {
-    "start": 1304.763,
-    "end": 1306.232,
-    "text": "what, exactly, broke that day?"
+    "start": 1035.24,
+    "end": 1038.351,
+    "text": "Or the machine that could not tell\nthe difference between a phantom"
   },
   {
-    "start": 1306.267,
-    "end": 1308.037,
-    "text": "The man who told the lie?"
+    "start": 1038.379,
+    "end": 1039.191,
+    "text": "and the truth"
   },
   {
-    "start": 1308.072,
-    "end": 1310.745,
-    "text": "Or the machine that could\nnot tell the difference"
+    "start": 1039.42,
+    "end": 1042.13,
+    "text": "The law in the end does\nnot get to answer that"
   },
   {
-    "start": 1310.78,
-    "end": 1312.55,
-    "text": "between a phantom and the truth?."
+    "start": 1042.16,
+    "end": 1042.973,
+    "text": "with a shrug."
   },
   {
-    "start": 1318.332,
-    "end": 1319.757,
-    "text": "The law, in the end,"
-  },
-  {
-    "start": 1319.792,
-    "end": 1322.322,
-    "text": "does not get to answer that with a shrug."
-  },
-  {
-    "start": 1322.357,
-    "end": 1324.601,
+    "start": 1043.28,
+    "end": 1045.53,
     "text": "The law has to choose someone to hold."
   },
   {
-    "start": 1324.636,
-    "end": 1327.166,
-    "text": "And of all the forces in that market on"
+    "start": 1045.56,
+    "end": 1048.36,
+    "text": "And of all the forces in\nthat market on that afternoon"
   },
   {
-    "start": 1327.201,
-    "end": 1328.591,
-    "text": "that afternoon — the algorithms,"
+    "start": 1048.58,
+    "end": 1050.642,
+    "text": "the algorithms the firms the fear"
   },
   {
-    "start": 1328.626,
-    "end": 1331.156,
-    "text": "the firms, the fear — only one of them"
+    "start": 1051.26,
+    "end": 1054.08,
+    "text": "only one of them was a\nperson who had made a choice"
   },
   {
-    "start": 1331.191,
-    "end": 1333.435,
-    "text": "was a person, who had made a choice,"
+    "start": 1054.12,
+    "end": 1055.932,
+    "text": "and broken a rule on purpose."
   },
   {
-    "start": 1333.47,
-    "end": 1335.145,
-    "text": "and broken a rule, on purpose."
-  },
-  {
-    "start": 1335.18,
-    "end": 1337.14,
+    "start": 1056.5,
+    "end": 1058.438,
     "text": "And so the law chooses the man."
   },
   {
-    "start": 1342.923,
-    "end": 1345.465,
-    "text": "In twenty-fifteen, five\nyears after the crash,"
+    "start": 1059.1,
+    "end": 1061.85,
+    "text": "In twenty-fifteen five\nyears after the crash"
   },
   {
-    "start": 1345.5,
-    "end": 1347.28,
+    "start": 1062.2,
+    "end": 1063.825,
     "text": "they finally come for him."
   },
   {
-    "start": 1347.315,
-    "end": 1350.548,
+    "start": 1064.14,
+    "end": 1066.87,
     "text": "He is arrested at his\nparents' house in London"
   },
   {
-    "start": 1350.583,
-    "end": 1353.452,
-    "text": "— the same house, the same street under"
+    "start": 1066.9,
+    "end": 1069.7,
+    "text": "the same house the same\nstreet under the flight path"
   },
   {
-    "start": 1353.487,
-    "end": 1356.72,
-    "text": "the flight path — and\nthe United States asks"
+    "start": 1070.1,
+    "end": 1072.74,
+    "text": "and the United States asks for him by name"
   },
   {
-    "start": 1356.755,
-    "end": 1359.261,
-    "text": "for him by name: the Hounslow day-trader,"
+    "start": 1073.22,
+    "end": 1077.3,
+    "text": "the Hounslow day-trader the\nheadlines now say who helped trigger"
   },
   {
-    "start": 1359.296,
-    "end": 1362.529,
-    "text": "the headlines now say, who\nhelped trigger a trillion-dollar"
+    "start": 1077.34,
+    "end": 1079.902,
+    "text": "a trillion-dollar crash from his bedroom."
   },
   {
-    "start": 1362.564,
-    "end": 1363.981,
-    "text": "crash from his bedroom."
-  },
-  {
-    "start": 1364.016,
-    "end": 1366.16,
+    "start": 1080.04,
+    "end": 1081.95,
     "text": "He fights the extradition for months."
   },
   {
-    "start": 1366.195,
-    "end": 1366.915,
-    "text": "He loses."
+    "start": 1081.98,
+    "end": 1086.7,
+    "text": "He loses. And when investigators\nfinally open up his life and look"
   },
   {
-    "start": 1372.668,
-    "end": 1375.415,
-    "text": "And when investigators\nfinally open up his life"
+    "start": 1086.74,
+    "end": 1088.303,
+    "text": "at what is actually there"
   },
   {
-    "start": 1375.45,
-    "end": 1377.819,
-    "text": "and look at what is actually there,"
-  },
-  {
-    "start": 1377.854,
-    "end": 1379.536,
+    "start": 1088.5,
+    "end": 1090.875,
     "text": "they find something almost unbearable."
   },
   {
-    "start": 1379.571,
-    "end": 1382.627,
-    "text": "The fortune — the tens of millions he had"
+    "start": 1090.92,
+    "end": 1094.52,
+    "text": "The fortune the tens of millions\nhe had won from the fastest"
   },
   {
-    "start": 1382.662,
-    "end": 1385.717,
-    "text": "won from the fastest\nmachines on earth — is"
+    "start": 1094.56,
+    "end": 1095.622,
+    "text": "machines on earth"
   },
   {
-    "start": 1385.752,
-    "end": 1387.091,
-    "text": "mostly gone. Not spent."
+    "start": 1095.96,
+    "end": 1097.04,
+    "text": "is mostly gone."
   },
   {
-    "start": 1387.126,
-    "end": 1390.182,
-    "text": "Taken. The man who could\nfool the most sophisticated"
+    "start": 1097.64,
+    "end": 1099.34,
+    "text": "Not spent. Taken."
   },
   {
-    "start": 1390.217,
-    "end": 1393.272,
-    "text": "market ever built had\nhimself turned out to be"
+    "start": 1100.14,
+    "end": 1103.62,
+    "text": "The man who could fool the most\nsophisticated market ever built had"
   },
   {
-    "start": 1393.307,
-    "end": 1396.019,
-    "text": "an easy mark: he had handed his money,"
+    "start": 1103.66,
+    "end": 1105.87,
+    "text": "himself turned out to be an easy mark"
   },
   {
-    "start": 1396.054,
-    "end": 1398.423,
-    "text": "almost all of it, to con men,"
+    "start": 1105.9,
+    "end": 1109.52,
+    "text": "he had handed his money\nalmost all of it to con men"
   },
   {
-    "start": 1398.458,
-    "end": 1401.171,
-    "text": "to bogus investments, to\nan outright fraud built"
+    "start": 1110.04,
+    "end": 1111.29,
+    "text": "to bogus investments"
   },
   {
-    "start": 1401.206,
-    "end": 1403.574,
-    "text": "to part trusting people\nfrom their savings."
+    "start": 1111.64,
+    "end": 1114.96,
+    "text": "to an outright fraud built to part\ntrusting people from their savings."
   },
   {
-    "start": 1403.609,
-    "end": 1405.635,
-    "text": "He had beaten the high score,"
+    "start": 1115.7,
+    "end": 1118.5,
+    "text": "He had beaten the high score\nover and over for years"
   },
   {
-    "start": 1405.67,
-    "end": 1408.725,
-    "text": "over and over, for years — and kept almost"
+    "start": 1118.84,
+    "end": 1121.027,
+    "text": "and kept almost none of the points."
   },
   {
-    "start": 1408.76,
-    "end": 1410.099,
-    "text": "none of the points."
+    "start": 1121.42,
+    "end": 1123.608,
+    "text": "In twenty-sixteen he pleads guilty."
   },
   {
-    "start": 1415.882,
-    "end": 1417.693,
-    "text": "In twenty-sixteen, he pleads guilty."
+    "start": 1124.1,
+    "end": 1125.6,
+    "text": "Not to causing the crash"
   },
   {
-    "start": 1417.728,
-    "end": 1420.952,
-    "text": "Not to causing the crash — to two specific"
+    "start": 1125.86,
+    "end": 1127.42,
+    "text": "to two specific crimes"
   },
   {
-    "start": 1420.987,
-    "end": 1423.124,
-    "text": "crimes: one count of wire fraud,"
+    "start": 1128.14,
+    "end": 1129.578,
+    "text": "one count of wire fraud"
   },
   {
-    "start": 1423.159,
-    "end": 1424.935,
+    "start": 1129.78,
+    "end": 1131.405,
     "text": "and one count of spoofing."
   },
   {
-    "start": 1424.97,
-    "end": 1428.194,
+    "start": 1131.6,
+    "end": 1134.4,
     "text": "He agrees to hand back nearly\nthirteen million dollars."
   },
   {
-    "start": 1428.229,
-    "end": 1431.453,
-    "text": "And then he does something\nthe authorities did not"
+    "start": 1134.54,
+    "end": 1137.72,
+    "text": "And then he does something the\nauthorities did not have to ask"
   },
   {
-    "start": 1431.488,
-    "end": 1433.263,
-    "text": "have to ask twice for."
+    "start": 1137.76,
+    "end": 1140.12,
+    "text": "twice for. He cooperates completely"
   },
   {
-    "start": 1433.298,
-    "end": 1435.798,
-    "text": "He cooperates, completely\n— sitting with them,"
+    "start": 1140.88,
+    "end": 1143.27,
+    "text": "sitting with them\nexplaining his own methods"
   },
   {
-    "start": 1435.833,
-    "end": 1439.057,
-    "text": "explaining his own methods,\nhelping the people who caught"
+    "start": 1143.3,
+    "end": 1146.68,
+    "text": "helping the people who caught him\nunderstand the very thing he had"
   },
   {
-    "start": 1439.092,
-    "end": 1442.316,
-    "text": "him understand the very\nthing he had spent years"
+    "start": 1146.72,
+    "end": 1148.158,
+    "text": "spent years perfecting."
   },
   {
-    "start": 1442.351,
-    "end": 1443.071,
-    "text": "perfecting."
+    "start": 1148.74,
+    "end": 1152.06,
+    "text": "There is a temptation telling\nthis to turn him into a folk"
   },
   {
-    "start": 1448.46,
-    "end": 1450.465,
-    "text": "There is a temptation, telling this,"
+    "start": 1152.1,
+    "end": 1155.8,
+    "text": "hero the lone genius who beat\nthe machines at their own game."
   },
   {
-    "start": 1450.5,
-    "end": 1453.137,
-    "text": "to turn him into a folk hero —"
+    "start": 1156.42,
+    "end": 1159.96,
+    "text": "Resist that. What he did broke\nthe law and he admitted it"
   },
   {
-    "start": 1453.172,
-    "end": 1456.144,
-    "text": "the lone genius who beat\nthe machines at their"
+    "start": 1160.48,
+    "end": 1164.44,
+    "text": "real money moved and real people\nsomewhere were on the other side"
   },
   {
-    "start": 1456.179,
-    "end": 1457.481,
-    "text": "own game. Resist that."
+    "start": 1164.48,
+    "end": 1167.66,
+    "text": "of it. But there is no honesty\nin making him a monster"
   },
   {
-    "start": 1457.516,
-    "end": 1459.485,
-    "text": "What he did broke the law,"
+    "start": 1167.7,
+    "end": 1172.8,
+    "text": "either. The truth is smaller and\nsadder a brilliant lonely man"
   },
   {
-    "start": 1459.52,
-    "end": 1461.824,
-    "text": "and he admitted it; real money moved,"
+    "start": 1172.84,
+    "end": 1176.68,
+    "text": "chasing a number on a screen\nwho understood the rule he broke"
   },
   {
-    "start": 1461.859,
-    "end": 1464.831,
-    "text": "and real people, somewhere,\nwere on the other side"
+    "start": 1176.72,
+    "end": 1178.283,
+    "text": "better than almost anyone"
   },
   {
-    "start": 1464.866,
-    "end": 1467.838,
-    "text": "of it. But there is no honesty in making"
+    "start": 1178.52,
+    "end": 1181.84,
+    "text": "and never seemed to grasp or\nto care what the number was"
   },
   {
-    "start": 1467.873,
-    "end": 1469.174,
-    "text": "him a monster either."
+    "start": 1181.88,
+    "end": 1184.74,
+    "text": "actually worth. And at his sentencing"
   },
   {
-    "start": 1469.209,
-    "end": 1471.179,
-    "text": "The truth is smaller, and sadder:"
+    "start": 1185.18,
+    "end": 1187.93,
+    "text": "the prosecutors do\nsomething genuinely rare."
   },
   {
-    "start": 1471.214,
-    "end": 1473.851,
-    "text": "a brilliant, lonely\nman, chasing a number on"
+    "start": 1188.18,
+    "end": 1189.99,
+    "text": "They ask the judge for mercy."
   },
   {
-    "start": 1473.886,
-    "end": 1476.858,
-    "text": "a screen, who understood\nthe rule he broke better"
-  },
-  {
-    "start": 1476.893,
-    "end": 1479.865,
-    "text": "than almost anyone — and\nnever seemed to grasp,"
-  },
-  {
-    "start": 1479.9,
-    "end": 1482.872,
-    "text": "or to care, what the\nnumber was actually worth."
-  },
-  {
-    "start": 1488.655,
-    "end": 1491.825,
-    "text": "And at his sentencing, the\nprosecutors do something genuinely"
-  },
-  {
-    "start": 1491.86,
-    "end": 1494.291,
-    "text": "rare. They ask the judge for mercy."
-  },
-  {
-    "start": 1494.326,
-    "end": 1496.052,
+    "start": 1190.02,
+    "end": 1191.895,
     "text": "They point to his cooperation."
   },
   {
-    "start": 1496.087,
-    "end": 1499.223,
-    "text": "And they point to the\ndiagnosis — the severe"
+    "start": 1192.0,
+    "end": 1193.938,
+    "text": "And they point to the diagnosis"
   },
   {
-    "start": 1499.258,
-    "end": 1500.984,
-    "text": "autism that, an expert testifies,"
+    "start": 1194.28,
+    "end": 1198.6,
+    "text": "the severe autism that an expert\ntestifies was woven through the whole"
   },
   {
-    "start": 1501.019,
-    "end": 1503.097,
-    "text": "was woven through the whole story:"
+    "start": 1198.64,
+    "end": 1203.34,
+    "text": "story that made the money meaningless\nto him and the game everything"
   },
   {
-    "start": 1503.132,
-    "end": 1505.563,
-    "text": "that made the money meaningless to him,"
+    "start": 1203.92,
+    "end": 1206.78,
+    "text": "that helps explain a man who\ncould read a global market like"
   },
   {
-    "start": 1505.598,
-    "end": 1508.734,
-    "text": "and the game everything;\nthat helps explain a man"
+    "start": 1206.82,
+    "end": 1210.14,
+    "text": "a book and yet could be robbed\nblind by the oldest tricks"
   },
   {
-    "start": 1508.769,
-    "end": 1511.904,
-    "text": "who could read a global\nmarket like a book,"
+    "start": 1210.18,
+    "end": 1210.993,
+    "text": "in the world."
   },
   {
-    "start": 1511.939,
-    "end": 1515.074,
-    "text": "and yet could be robbed\nblind by the oldest"
+    "start": 1211.28,
+    "end": 1213.905,
+    "text": "He had faced the real possibility of years"
   },
   {
-    "start": 1515.109,
-    "end": 1516.483,
-    "text": "tricks in the world."
+    "start": 1214.24,
+    "end": 1216.49,
+    "text": "even a decade in an American prison."
   },
   {
-    "start": 1516.518,
-    "end": 1519.301,
-    "text": "He had faced the real\npossibility of years,"
+    "start": 1217.24,
+    "end": 1221.22,
+    "text": "In twenty-twenty the judge sentences\nhim to no further prison at all."
   },
   {
-    "start": 1519.336,
-    "end": 1521.767,
-    "text": "even a decade, in an American prison."
+    "start": 1221.84,
+    "end": 1223.652,
+    "text": "A single year served at home."
   },
   {
-    "start": 1527.549,
-    "end": 1530.433,
-    "text": "In twenty-twenty, the judge\nsentences him to no further"
+    "start": 1223.78,
+    "end": 1226.58,
+    "text": "In the bedroom more or less\nwhere the whole thing began."
   },
   {
-    "start": 1530.468,
-    "end": 1531.394,
-    "text": "prison at all."
-  },
-  {
-    "start": 1531.429,
-    "end": 1533.637,
-    "text": "A single year — served at home."
-  },
-  {
-    "start": 1533.672,
-    "end": 1535.56,
-    "text": "In the bedroom, more or less,"
-  },
-  {
-    "start": 1535.595,
-    "end": 1537.162,
-    "text": "where the whole thing began."
-  },
-  {
-    "start": 1557.979,
-    "end": 1559.367,
+    "start": 1228.82,
+    "end": 1229.945,
     "text": "The money is gone."
   },
   {
-    "start": 1559.402,
-    "end": 1560.755,
+    "start": 1230.16,
+    "end": 1231.41,
     "text": "The program is gone."
   },
   {
-    "start": 1560.79,
-    "end": 1563.877,
-    "text": "And the man goes quietly\nback to an ordinary"
+    "start": 1231.66,
+    "end": 1234.29,
+    "text": "And the man goes quietly back\nto an ordinary house under"
   },
   {
-    "start": 1563.912,
-    "end": 1565.612,
-    "text": "house under the flight path,"
+    "start": 1234.32,
+    "end": 1235.257,
+    "text": "the flight path"
   },
   {
-    "start": 1565.647,
-    "end": 1567.346,
-    "text": "the planes still passing overhead,"
+    "start": 1235.5,
+    "end": 1237.562,
+    "text": "the planes still passing overhead"
   },
   {
-    "start": 1567.381,
-    "end": 1569.775,
-    "text": "every ninety seconds,\nregular as a heartbeat."
+    "start": 1237.7,
+    "end": 1238.95,
+    "text": "every ninety seconds"
   },
   {
-    "start": 1575.558,
-    "end": 1577.983,
-    "text": "We wanted this story to have a villain,"
+    "start": 1239.12,
+    "end": 1240.557,
+    "text": "regular as a heartbeat."
   },
   {
-    "start": 1578.018,
-    "end": 1579.499,
-    "text": "because a villain is comforting."
+    "start": 1241.0,
+    "end": 1244.02,
+    "text": "We wanted this story to have\na villain because a villain is"
   },
   {
-    "start": 1579.534,
-    "end": 1581.621,
-    "text": "A villain means the system was sound,"
+    "start": 1244.06,
+    "end": 1248.14,
+    "text": "comforting. A villain means the\nsystem was sound and one bad man"
   },
   {
-    "start": 1581.656,
-    "end": 1583.44,
-    "text": "and one bad man broke it,"
+    "start": 1248.18,
+    "end": 1251.24,
+    "text": "broke it and now the bad\nman has been caught and so"
   },
   {
-    "start": 1583.475,
-    "end": 1585.865,
-    "text": "and now the bad man has been caught,"
+    "start": 1251.28,
+    "end": 1252.03,
+    "text": "we are safe."
   },
   {
-    "start": 1585.9,
-    "end": 1587.381,
-    "text": "and so we are safe."
-  },
-  {
-    "start": 1587.416,
-    "end": 1589.806,
+    "start": 1252.52,
+    "end": 1255.01,
     "text": "But that is not quite what happened here."
   },
   {
-    "start": 1589.841,
-    "end": 1592.534,
-    "text": "What happened is that a lonely man who did"
+    "start": 1255.04,
+    "end": 1257.98,
+    "text": "What happened is that a lonely\nman who did not care about"
   },
   {
-    "start": 1592.569,
-    "end": 1595.263,
-    "text": "not care about money,\nplaying a game in his"
+    "start": 1258.02,
+    "end": 1260.207,
+    "text": "money playing a game in his bedroom"
   },
   {
-    "start": 1595.298,
-    "end": 1597.991,
-    "text": "bedroom, reached out one\nfinger and touched the great"
+    "start": 1260.32,
+    "end": 1263.52,
+    "text": "reached out one finger and touched\nthe great machine of the market"
   },
   {
-    "start": 1598.026,
-    "end": 1600.416,
-    "text": "machine of the market — and the machine,"
+    "start": 1264.38,
+    "end": 1267.18,
+    "text": "and the machine for\nthirty-six minutes shook."
   },
   {
-    "start": 1600.451,
-    "end": 1601.629,
-    "text": "for thirty-six minutes, shook."
-  },
-  {
-    "start": 1601.664,
-    "end": 1603.448,
+    "start": 1267.62,
+    "end": 1269.057,
     "text": "He did not do it alone."
   },
   {
-    "start": 1603.483,
-    "end": 1606.176,
-    "text": "But he showed us, more\nclearly than any report"
+    "start": 1269.32,
+    "end": 1272.52,
+    "text": "But he showed us more clearly\nthan any report ever could how"
   },
   {
-    "start": 1606.211,
-    "end": 1608.298,
-    "text": "ever could, how little it might take."
+    "start": 1272.56,
+    "end": 1273.872,
+    "text": "little it might take."
   },
   {
-    "start": 1614.08,
-    "end": 1617.095,
-    "text": "And the market is faster now than it was"
+    "start": 1274.26,
+    "end": 1277.06,
+    "text": "And the market is faster\nnow than it was that day."
   },
   {
-    "start": 1617.13,
-    "end": 1619.104,
-    "text": "that day. Faster, and more automatic,"
+    "start": 1277.38,
+    "end": 1281.38,
+    "text": "Faster and more automatic and\nmore sure of itself than ever"
   },
   {
-    "start": 1619.139,
-    "end": 1622.119,
-    "text": "and more sure of itself than ever — more"
+    "start": 1282.04,
+    "end": 1283.56,
+    "text": "more machines more speed"
   },
   {
-    "start": 1622.154,
-    "end": 1625.133,
-    "text": "machines, more speed, more\nweight resting on the quiet"
+    "start": 1284.12,
+    "end": 1287.231,
+    "text": "more weight resting on the quiet\npromise that the water will always"
   },
   {
-    "start": 1625.168,
-    "end": 1627.813,
-    "text": "promise that the water\nwill always be there."
+    "start": 1287.259,
+    "end": 1289.572,
+    "text": "be there. We are told it is rational."
   },
   {
-    "start": 1627.848,
-    "end": 1629.823,
-    "text": "We are told it is rational."
-  },
-  {
-    "start": 1629.858,
-    "end": 1631.832,
+    "start": 1290.08,
+    "end": 1291.517,
     "text": "We are told it is safe."
   },
   {
-    "start": 1631.867,
-    "end": 1633.507,
-    "text": "But somewhere inside it, still,"
+    "start": 1291.92,
+    "end": 1295.98,
+    "text": "But somewhere inside it still is\nthe memory of a single afternoon"
   },
   {
-    "start": 1633.542,
-    "end": 1635.852,
-    "text": "is the memory of a single afternoon,"
+    "start": 1296.34,
+    "end": 1299.46,
+    "text": "when the most rational machine\never built looked at a ghost"
   },
   {
-    "start": 1635.887,
-    "end": 1638.866,
-    "text": "when the most rational\nmachine ever built looked at"
+    "start": 1299.5,
+    "end": 1300.84,
+    "text": "and believed it."
   },
   {
-    "start": 1638.901,
-    "end": 1640.876,
-    "text": "a ghost — and believed it."
+    "start": 1301.6,
+    "end": 1303.99,
+    "text": "So here is the question\nwe will leave you with."
   },
   {
-    "start": 1646.659,
-    "end": 1649.312,
-    "text": "So here is the question we will leave you"
+    "start": 1304.02,
+    "end": 1306.145,
+    "text": "The next time the floor disappears"
   },
   {
-    "start": 1649.347,
-    "end": 1651.671,
-    "text": "with. The next time the floor disappears —"
+    "start": 1306.2,
+    "end": 1307.48,
+    "text": "and one day it will"
   },
   {
-    "start": 1651.706,
-    "end": 1654.324,
-    "text": "and one day, it will — who do you"
+    "start": 1308.34,
+    "end": 1310.85,
+    "text": "who do you think will be holding the ghost"
   },
   {
-    "start": 1654.359,
-    "end": 1656.093,
-    "text": "think will be holding the ghost?"
-  },
-  {
-    "start": 1656.128,
-    "end": 1657.272,
+    "start": 1310.88,
+    "end": 1312.19,
     "text": "Thank you for watching."
   },
   {
-    "start": 1657.307,
-    "end": 1659.925,
-    "text": "If you want more stories\nabout the hidden machinery"
+    "start": 1312.22,
+    "end": 1315.94,
+    "text": "If you want more stories about the\nhidden machinery that quietly runs"
   },
   {
-    "start": 1659.96,
-    "end": 1661.399,
-    "text": "that quietly runs our money,"
+    "start": 1315.98,
+    "end": 1318.78,
+    "text": "our money and our lives this\nis what this channel does."
   },
   {
-    "start": 1661.434,
-    "end": 1664.052,
-    "text": "and our lives, this is\nwhat this channel does."
-  },
-  {
-    "start": 1664.087,
-    "end": 1666.705,
-    "text": "Subscribe, and we will see you in the next"
-  },
-  {
-    "start": 1666.74,
-    "end": 1667.46,
-    "text": "one."
+    "start": 1319.84,
+    "end": 1321.896,
+    "text": "Subscribe and we will\nsee you in the next one."
   }
 ];

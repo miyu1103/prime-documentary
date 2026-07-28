@@ -54,7 +54,7 @@
       "start": 0.0,
       "dur": 1.7,
       "kind": "footage",
-      "src": "tyler/factory/AF-BG-0367__blurred_city_night_bokeh.mp4",
+      "src": "tyler/factory/AF-BG-0373__blurred_city_night_bokeh.mp4",
       "seed": "tyler-0",
       "treatment": "footage"
     },
@@ -198,7 +198,7 @@
       "start": 58.7,
       "dur": 2.0,
       "kind": "footage",
-      "src": "tyler/factory/AF-BG-0831__money_cash_counting.mp4",
+      "src": "tyler/factory/AF-BG-4132__money_cash_counting.mp4",
       "seed": "tyler-18",
       "treatment": "footage"
     },
@@ -238,7 +238,7 @@
       "start": 74.1,
       "dur": 1.9,
       "kind": "footage",
-      "src": "tyler/factory/AF-BG-0840__money_cash_counting.mp4",
+      "src": "tyler/factory/AF-BG-4133__money_cash_counting.mp4",
       "seed": "tyler-23",
       "treatment": "footage"
     },
@@ -278,7 +278,7 @@
       "start": 87.2,
       "dur": 3.0,
       "kind": "footage",
-      "src": "tyler/factory/AF-BG-10138__old_library_archive.mp4",
+      "src": "tyler/factory/AF-BG-6469__us_constitution_document.mp4",
       "seed": "tyler-28",
       "treatment": "footage"
     },
@@ -1142,7 +1142,7 @@
       "start": 429.2,
       "dur": 3.0,
       "kind": "footage",
-      "src": "tyler/factory/AF-BG-1428__rain_on_window_night.mp4",
+      "src": "tyler/factory/AF-BG-1436__rain_on_window_night.mp4",
       "seed": "tyler-136",
       "treatment": "footage"
     },
@@ -1518,7 +1518,7 @@
       "start": 579.4,
       "dur": 1.8,
       "kind": "footage",
-      "src": "tyler/factory/AF-BG-16352__capitol_dome_dusk.mp4",
+      "src": "tyler/factory/AF-BG-0679__government_building_exterior.mp4",
       "seed": "tyler-183",
       "treatment": "footage"
     },
@@ -2166,7 +2166,7 @@
       "start": 836.0,
       "dur": 1.7,
       "kind": "footage",
-      "src": "tyler/factory/AF-BG-21904__american_suburb_aerial.mp4",
+      "src": "tyler/factory/AF-BG-11098__city_rooftop_dusk.mp4",
       "seed": "tyler-264",
       "treatment": "footage"
     },
@@ -2542,7 +2542,7 @@
       "start": 986.1,
       "dur": 1.9,
       "kind": "footage",
-      "src": "tyler/factory/AF-BG-26941__empty_playground_at_dusk.mp4",
+      "src": "tyler/factory/AF-BG-1516__city_skyline_dusk.mp4",
       "seed": "tyler-311",
       "treatment": "footage"
     },
@@ -2670,7 +2670,7 @@
       "start": 1035.4,
       "dur": 1.8,
       "kind": "footage",
-      "src": "tyler/factory/AF-BG-30671__front_door_house.mp4",
+      "src": "tyler/factory/AF-BG-3285__courthouse_steps.mp4",
       "seed": "tyler-327",
       "treatment": "footage"
     },
@@ -5516,19 +5516,24 @@
     {
       "start": 400.068,
       "end": 406.568,
-      "kind": "numberticker",
-      "value": 780000000,
-      "prefix": "$",
-      "suffix": "+",
-      "topLabel": "Est. — PLF: HOME EQUITY LOST"
+      "kind": "kinetic",
+      "lines": [
+        "HOMES LOST",
+        "ACROSS AMERICA",
+        "Est. — PLF"
+      ],
+      "style": "maskslide"
     },
     {
       "start": 411.764,
       "end": 418.264,
-      "kind": "numberticker",
-      "value": 92,
-      "suffix": "% PAID",
-      "topLabel": "Est. — PLF"
+      "kind": "kinetic",
+      "lines": [
+        "MOST HAD PAID",
+        "FOR YEARS",
+        "Est. — PLF"
+      ],
+      "style": "wordpop"
     },
     {
       "start": 460.45,
@@ -5719,7 +5724,7 @@
       "end": 823.128,
       "kind": "kinetic",
       "lines": [
-        "$100 DEBT -> WHOLE HOUSE?"
+        "A TINY DEBT -> WHOLE HOUSE?"
       ],
       "style": "maskslide"
     },

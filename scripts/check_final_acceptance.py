@@ -56,6 +56,14 @@ Hard checks (block the final):
                          sustained-low p10 < 4.0). Calibrated: MotionSample 46.6 vs
                          slideshow 3.5. Catches a slow Ken Burns / weak parallax that
                          animation_density's fraction metric lets through (Goodhart).
+  - motion_density     : (EP36 williams) enforces genuine PREMIUM KINETIC animation from the film
+                         COMPOSITION DATA, not pixel motion -- animation_density/motion_energy all
+                         PASSED EP36's stills-heavy cut because a slow Ken-Burns pan over a static
+                         photo IS pixel motion. Reads remotion/src/data/<slug>_film.json and floors
+                         the motion-graphics beat DENSITY (graphics+figures+heroCuts per body-min),
+                         COVERAGE (union of beat windows / body) and VARIETY (distinct animated
+                         forms; "avoid one MG repeated"). Data-driven so it fails CHEAPLY before the
+                         render. See scripts/check_motion_density.py for the calibration table.
   - bgm_present        : a continuous (ducked) music bed -- narration-only mixes
                          leave long silence between sentences (EP14 final = 109s).
   - thumbnail_ready    : >=3 thumbnail PNGs at 1280x720 + a selected one exist
@@ -1512,6 +1520,13 @@ def resolve_render(epdir: Path, override: str | None) -> Path | None:
 
 
 def main() -> int:
+    # Windows console defaults to cp932 -> em dashes / unicode in a gate reason crash the print
+    # loop (and skip the receipt write). Force utf-8 (known PD gotcha).
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
     ap = argparse.ArgumentParser(description="Independently verify a final render is publish-grade.")
     ap.add_argument("episode", help="episode number or id")
     ap.add_argument("--render", help="explicit path to the final .mp4 (else from final_delivery)")
@@ -1584,7 +1599,18 @@ def main() -> int:
     # standalone gates (2026-07-07): each owns its artifact discovery, skips honestly if absent
     for _mod in ("check_arc_nonrepeat", "verify_caption_coverage", "check_footage_utilization",
                  "verify_script_lint", "check_thumb_subject_luma", "check_padding",
-                 "verify_onscreen_text"):
+                 "verify_onscreen_text", "check_motion_density",
+                 "check_animation_mix", "check_caption_integrity", "check_visual_asset_qc",
+                 # 2026-07-19: three SPEC v2 rows that had no gate anywhere.
+                 # script_length/asset_reuse/caption_breaks/retention_cadence also run at
+                 # PREFLIGHT (before spend); packaging_qc + encoder_settings are
+                 # ship-shaped -- their inputs (final metadata, final render) only exist
+                 # here, and the irreversible step they guard is UPLOAD, not render.
+                 # EP30 cotton shipped h264_nvenc / yuvj420p / bt470bg / 2703kbps past
+                 # every existing check because acceptance ffprobed the codec name and
+                 # then compared nothing but resolution.
+                 "check_script_length", "check_asset_reuse", "check_caption_breaks",
+                 "check_retention_cadence", "check_packaging_qc", "check_encoder_settings"):
         results.append(_ext_gate(_mod, epdir))
     results.append(check_structure(epdir))
     results.append(check_bookends(epdir))

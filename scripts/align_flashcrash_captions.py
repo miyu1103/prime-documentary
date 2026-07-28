@@ -1,4 +1,4 @@
-"""Forced-align Kelo captions to the fitted narration and write v002 captions.
+"""Forced-align Flash Crash captions to the actual render mix.
 
 The locked script text is preserved. Only cue timing and line wrapping change.
 """
@@ -18,11 +18,22 @@ ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-018-flashcrash"
 EPDIR = ROOT / "episodes" / EP
 SCRIPT = EPDIR / "03_script" / "script.en.v001.md"
-VOICE = Path(r"H:\pd-media\episodes\PD-2026-018-flashcrash\06_voice\master\vc_master_v001.mp3")
+VOICE_MASTER = Path(r"H:\pd-media\episodes\PD-2026-018-flashcrash\06_voice\master\vc_master_v001.mp3")
+FINAL_MIX = ROOT / "remotion" / "public" / "flashcrash" / "audio" / "flashcrash_mix_v001.wav"
+VOICE = FINAL_MIX if FINAL_MIX.exists() else VOICE_MASTER
 OUT_SRT = EPDIR / "08_edit" / "captions.v001.srt"
 OUT_JSON = EPDIR / "08_edit" / "captions.v001.json"
 OUT_META = EPDIR / "06_audio" / "caption_alignment.v001.json"
 OUT_TS = ROOT / "remotion" / "src" / "data" / "flashcrash_captions.ts"
+BREATHE_GAP_SEC = 0.42
+MIN_BREATHE_WORDS = 3
+MAX_CUE_WORDS = 12
+MAX_CUE_CHARS = 74
+MAX_CUE_DURATION = 5.4
+MIN_CUE_DURATION = 0.72
+MIN_CUE_GAP = 0.04
+MAX_CPS = 24.0
+WEAK_TRAILING_WORDS = {"and", "or", "of", "the", "a", "an", "to", "in", "with", "for", "as", "that", "this", "it"}
 
 
 @dataclass
@@ -177,89 +188,135 @@ def wrap_two_lines(text: str) -> str:
     return " ".join(words[:i]) + "\n" + " ".join(words[i:])
 
 
+def should_breath_break(prev: Token, token: Token) -> bool:
+    if prev.end is None or token.start is None:
+        return False
+    return float(token.start) - float(prev.end) >= BREATHE_GAP_SEC
+
+
+def is_sentence_end(raw: str) -> bool:
+    return bool(re.search(r"[.!?]$", raw))
+
+
+def is_soft_end(raw: str) -> bool:
+    return bool(re.search(r"[,;:]$", raw))
+
+
+def emit_cue(cur: list[Token], cues: list[dict[str, float | str]]) -> None:
+    if not cur:
+        return
+    text = wrap_two_lines(cue_plain(cur))
+    text = re.sub(r"\s+", " ", text).strip()
+    if not text:
+        cur.clear()
+        return
+    start = float(cur[0].start or 0.0)
+    end = float(cur[-1].end or (start + 0.8))
+    duration = end - start
+    if duration < MIN_CUE_DURATION:
+        end = start + MIN_CUE_DURATION
+    if duration > MAX_CUE_DURATION and len(cur) >= 2:
+        mid = max(1, len(cur) // 2)
+        emit_cue(cur[:mid], cues)
+        emit_cue(cur[mid:], cues)
+        cur.clear()
+        return
+    cues.append({"start": round(start, 3), "end": round(end, 3), "text": text})
+    cur.clear()
+
+
 def build_cues(tokens: list[Token]) -> list[dict[str, float | str]]:
     cues: list[dict[str, float | str]] = []
     cur: list[Token] = []
 
-    def flush() -> None:
+    def emit_current(carry_weak: bool = False) -> None:
         nonlocal cur
-        if not cur:
-            return
-        text = wrap_two_lines(cue_plain(cur))
-        start = float(cur[0].start or 0.0)
-        end = float(cur[-1].end or start + 0.8)
-        if end - start < 0.72:
-            end = start + 0.72
-        cues.append({"start": round(start, 3), "end": round(end, 3), "text": text})
-        cur = []
+        if carry_weak and len(cur) > 3 and norm_word(cur[-1].raw) in WEAK_TRAILING_WORDS:
+            carry = [cur.pop()]
+            emit_cue(cur, cues)
+            cur = carry
+        else:
+            emit_cue(cur, cues)
 
-    for token in tokens:
+    def duration_of(items: list[Token]) -> float:
+        if not items:
+            return 0.0
+        return float(items[-1].end or 0.0) - float(items[0].start or 0.0)
+
+    for index, token in enumerate(tokens):
+        if cur:
+            prev = cur[-1]
+            if should_breath_break(prev, token) and len(cur) >= MIN_BREATHE_WORDS:
+                emit_current()
+
         trial = cur + [token]
         trial_text = cue_plain(trial)
-        duration = (float(trial[-1].end or 0.0) - float(trial[0].start or 0.0)) if trial else 0.0
-        ends_clause = bool(re.search(r"[,.;:?!]$", token.raw))
-        if cur and (len(trial_text) > 74 or len(trial) > 12 or (duration > 3.35 and not ends_clause)):
-            flush()
+        duration = duration_of(trial)
+        if cur and (
+            len(trial_text) > MAX_CUE_CHARS
+            or len(trial) > MAX_CUE_WORDS
+            or duration > MAX_CUE_DURATION
+        ):
+            emit_current(carry_weak=True)
+
         cur.append(token)
         plain = cue_plain(cur)
-        dur = float(cur[-1].end or 0.0) - float(cur[0].start or 0.0)
-        punct = bool(re.search(r"[.?!]$", token.raw))
-        soft = bool(re.search(r"[,;:]$", token.raw))
-        if (punct and dur >= 0.9) or (soft and len(cur) >= 5 and dur >= 1.15) or (len(plain) >= 62 and len(cur) >= 5):
-            flush()
-    flush()
+        dur = duration_of(cur)
+        next_token = tokens[index + 1] if index + 1 < len(tokens) else None
+        next_gap = (float(next_token.start) - float(token.end)) if next_token and next_token.start is not None and token.end is not None else 0.0
+        if is_sentence_end(token.raw) and len(cur) >= 4 and dur >= 0.72:
+            emit_current()
+        elif is_soft_end(token.raw) and len(cur) >= 5 and dur >= 1.2 and next_gap >= 0.16:
+            emit_current()
+        elif next_gap >= BREATHE_GAP_SEC and len(cur) >= MIN_BREATHE_WORDS:
+            emit_current()
+        elif (len(plain) >= MAX_CUE_CHARS and len(cur) >= 5) or len(cur) >= MAX_CUE_WORDS or dur >= MAX_CUE_DURATION:
+            emit_current(carry_weak=True)
+
+    emit_current()
 
     for i in range(len(cues) - 1):
-        cues[i]["end"] = min(float(cues[i]["end"]), max(float(cues[i]["start"]) + 0.55, float(cues[i + 1]["start"]) - 0.035))
-    return polish_cues(cues)
+        body = str(cues[i]["text"]).replace("\n", " ").replace(" ", "")
+        readable_min = max(MIN_CUE_DURATION, len(body) / MAX_CPS)
+        cues[i]["end"] = round(max(float(cues[i]["start"]) + readable_min, float(cues[i]["end"])), 3)
 
+    polished: list[dict[str, float | str]] = []
+    for cue in cues:
+        cue["text"] = wrap_two_lines(" ".join(str(cue["text"]).replace("\n", " ").split()))
+        if str(cue["text"]).strip():
+            polished.append(cue)
 
-def polish_cues(cues: list[dict[str, float | str]]) -> list[dict[str, float | str]]:
-    weak_endings = {"a", "an", "and", "as", "at", "by", "for", "from", "in", "of", "or", "that", "the", "to", "with"}
-    for i in range(len(cues) - 1):
-        text = str(cues[i]["text"]).replace("\n", " ")
-        next_text = str(cues[i + 1]["text"]).replace("\n", " ")
-        words = text.split()
-        next_words = next_text.split()
-        if not words or not next_words:
-            continue
-        end_norm = norm_word(words[-1])
-        if end_norm not in weak_endings and not (len(next_words) <= 3 and len(words) + len(next_words) <= 13):
-            continue
-        merged = words + next_words
-        if len(" ".join(merged)) > 84 or len(merged) > 14:
-            continue
-        best = max(1, min(len(merged) - 1, len(merged) // 2))
-        for j in range(1, len(merged)):
-            left = merged[:j]
-            right = merged[j:]
-            if not right or norm_word(left[-1]) in weak_endings:
+    merged: list[dict[str, float | str]] = []
+    for cue in polished:
+        words = str(cue["text"]).replace("\n", " ").split()
+        if merged and len(words) <= 2:
+            prev = merged[-1]
+            gap = float(cue["start"]) - float(prev["end"])
+            combined_text = f"{str(prev['text']).replace(chr(10), ' ')} {' '.join(words)}"
+            combined_words = combined_text.split()
+            combined_duration = float(cue["end"]) - float(prev["start"])
+            if gap <= 0.22 and len(combined_words) <= 14 and len(combined_text) <= 86 and combined_duration <= 6.8:
+                prev["text"] = wrap_two_lines(combined_text)
+                prev["end"] = cue["end"]
                 continue
-            if len(" ".join(left)) > 42 or len(" ".join(right)) > 42:
-                continue
-            if abs(len(" ".join(left)) - len(" ".join(right))) < abs(len(" ".join(merged[:best])) - len(" ".join(merged[best:]))):
-                best = j
-        old_end = float(cues[i]["end"])
-        total_start = float(cues[i]["start"])
-        total_end = float(cues[i + 1]["end"])
-        boundary = total_start + (total_end - total_start) * best / len(merged)
-        cues[i]["text"] = wrap_two_lines(" ".join(merged[:best]))
-        cues[i]["end"] = round(max(float(cues[i]["start"]) + 0.55, min(boundary, total_end - 0.55)), 3)
-        cues[i + 1]["text"] = wrap_two_lines(" ".join(merged[best:]))
-        cues[i + 1]["start"] = round(max(float(cues[i]["end"]) + 0.035, min(old_end, total_end - 0.55)), 3)
-    for i in range(len(cues) - 1):
-        words = str(cues[i]["text"]).replace("\n", " ").split()
-        next_words = str(cues[i + 1]["text"]).replace("\n", " ").split()
-        if not words or not next_words:
-            continue
-        if "-" not in words[-1] or len(" ".join([words[-1], *next_words])) > 92:
-            continue
-        cues[i]["text"] = wrap_two_lines(" ".join(words[:-1]))
-        cues[i + 1]["text"] = wrap_two_lines(" ".join([words[-1], *next_words]))
-        shift = min(0.42, max(0.16, (float(cues[i]["end"]) - float(cues[i]["start"])) / max(len(words), 1)))
-        cues[i]["end"] = round(max(float(cues[i]["start"]) + 0.55, float(cues[i]["end"]) - shift), 3)
-        cues[i + 1]["start"] = round(float(cues[i]["end"]) + 0.035, 3)
-    return cues
+        merged.append(cue)
+    polished = merged
+
+    for cue in polished:
+        body = str(cue["text"]).replace("\n", " ")
+        readable_min = max(MIN_CUE_DURATION, len(body) / MAX_CPS)
+        cue["end"] = round(max(float(cue["end"]), float(cue["start"]) + readable_min), 3)
+
+    for i in range(len(polished) - 1):
+        i_end = float(polished[i]["end"])
+        n_start = float(polished[i + 1]["start"])
+        min_next = i_end + MIN_CUE_GAP
+        if n_start < min_next:
+            polished[i + 1]["start"] = min_next
+            if float(polished[i + 1]["end"]) <= float(polished[i + 1]["start"]):
+                polished[i + 1]["end"] = round(min_next + MIN_CUE_DURATION, 3)
+
+    return polished
 
 
 def ts_srt(t: float) -> str:
@@ -275,11 +332,26 @@ def ts_srt(t: float) -> str:
 
 def write_outputs(cues: list[dict[str, float | str]], stats: dict[str, int | float]) -> None:
     OUT_SRT.parent.mkdir(parents=True, exist_ok=True)
+    cues = [cue for cue in cues if str(cue["text"]).strip()]
     blocks = []
     for i, cue in enumerate(cues, start=1):
         blocks.append(f"{i}\n{ts_srt(float(cue['start']))} --> {ts_srt(float(cue['end']))}\n{cue['text']}\n")
     OUT_SRT.write_text("\n".join(blocks), encoding="utf-8")
-    OUT_JSON.write_text(json.dumps({"episode_id": EP, "method": "faster-whisper-small.en-word-timestamps", "cues": cues}, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    OUT_JSON.write_text(
+        json.dumps(
+            {
+                "episode_id": EP,
+                "method": "faster-whisper-small.en-final-mix-word-timestamps",
+                "timeline": "final_mix",
+                "voice": str(VOICE),
+                "cues": cues,
+            },
+            indent=2,
+            ensure_ascii=False,
+        )
+        + "\n",
+        encoding="utf-8",
+    )
     OUT_TS.write_text(
         "export type FlashCrashCaptionCue = {\n"
         "  start: number;\n"
@@ -295,6 +367,7 @@ def write_outputs(cues: list[dict[str, float | str]], stats: dict[str, int | flo
                 "episode_id": EP,
                 "created_at": datetime.now(timezone.utc).isoformat(),
                 "voice": str(VOICE),
+                "timeline": "final_mix" if VOICE == FINAL_MIX else "voice_master",
                 "outputs": {
                     "srt": str(OUT_SRT.relative_to(ROOT)).replace("\\", "/"),
                     "json": str(OUT_JSON.relative_to(ROOT)).replace("\\", "/"),

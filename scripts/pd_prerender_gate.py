@@ -115,6 +115,31 @@ def main():
         if not np_.exists() and not Path(nar).exists():
             warns.append(f"NARRATION file not under public ({nar}) — ensure the render bundles audio")
 
+    # 7) BUNDLE-REACHABLE: Remotion COPIES the public dir into its bundle and does NOT
+    #    follow junctions/symlinks, so anything behind a reparse point is a 404 at render
+    #    time even though every check above (which does follow them) says it exists.
+    #    EP54 lost two render attempts to exactly this. Materialise with hardlinks instead.
+    import os as _os
+    reparse = []
+    for root_, dirs_, _files in _os.walk(pub):
+        for d in dirs_:
+            fp = Path(root_) / d
+            try:
+                if _os.path.islink(fp) or bool(getattr(_os.stat(fp, follow_symlinks=False),
+                                                       "st_file_attributes", 0) & 0x400):
+                    reparse.append(str(fp))
+            except OSError:
+                continue
+    if reparse:
+        fails.append(f"PUBLIC DIR: {len(reparse)} junction/symlink dir(s) under {pub} — Remotion "
+                     f"will NOT copy them into the bundle (404 at render). Use hardlinks. "
+                     f"e.g. {reparse[:3]}")
+
+    # 8) BRAND/STATIC assets the compositions request by literal name must be present too.
+    for must in ("banner_sunrise.png", "fonts/Anton.ttf", "fonts/Archivo.ttf", "fonts/Oswald.ttf"):
+        if not (pub / must).is_file():
+            fails.append(f"STATIC ASSET MISSING: {must} not under {pub} (staticFile 404 at render)")
+
     # ---- report ----
     print("="*70); print(f"PD PRE-RENDER GATE  {a.film}")
     print(f"cuts={n} motion_share={motion_share:.3f} distinct={ratio:.3f} caps={len(caps)}")

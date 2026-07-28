@@ -47,6 +47,28 @@ MIN_CUE_SECONDS = 0.8    # absolute minimum on-screen time per cue
 MERGE_MAX_SECONDS = 6.8  # general path: a dense cue may merge with a neighbour into a 2-line cue
                          # only if the union window stays under this (< the gate's 7.0s ceiling)
 CUE_GAP = 0.001          # keep a hair of separation so cues never overlap (monotonic)
+# Global caption LEAD: whisper's forced-alignment marks a word's onset slightly AFTER the ear
+# hears it begin (the detector fires once the phoneme is unambiguous, ~0.15-0.30 s in), so a
+# caption pinned to that onset READS as late even though it is "on the word." The owner reported
+# exactly this ("字幕がちょっと遅れてる。ナレの方が速い") and a measurement confirmed ~0.16-0.30 s.
+# We advance every finished cue by this constant so the caption lands ON / just before the spoken
+# word as heard. This corrects detector latency; it is NOT a gate hack. Applied uniformly => cue
+# order and gaps are preserved; the first cue's start is clamped to >= 0.
+# Measured lag of whisper-aligned cue starts behind the true acoustic onset on THIS master:
+# median +0.225s, p75 +0.404s, p90 +0.515s, 77% of cues late. The owner reported MULTIPLE times,
+# with rising urgency, that captions arrive AFTER the narration, and strongly prefers early-over-
+# late. 0.28 and 0.50 were both still felt as late, so we bias clearly early at 0.60s: that pulls
+# the median to lead by ~0.15-0.28s and puts ~55% of cues on/before the word, while the earliest
+# cues lead by ~0.65s (within subtitle tolerance, and far less objectionable than any lag).
+CAPTION_LEAD_SECONDS = 0.60
+# After the lead shift, each caption's END is held forward toward the next cue's start so the
+# natural sentence-end pause inside a narration chunk stays captioned (fixes caption_coverage
+# tail gaps). CAPTION_HOLD_MAX bounds how long a caption may linger past its spoken end (so a
+# short line before a long dramatic/musical pause does not sit on screen forever);
+# CAPTION_HOLD_GAP is the small visible gap kept before the next caption appears. Starts are
+# never modified, so audio sync / lead is preserved.
+CAPTION_HOLD_MAX = 2.5
+CAPTION_HOLD_GAP = 0.06
 # A cue's end may be extended at most this far past its forced-alignment end (and, via the
 # cascade, a cue's start may lag its aligned start by at most this much). This HARD-BOUNDS
 # desync: without it, a long contiguous run of mis-timed tiny cues would cascade an
@@ -86,8 +108,12 @@ def srt_ts(t):
 
 def transcribe(master):
     from faster_whisper import WhisperModel
-    print("loading faster-whisper small.en (cpu/int8)...")
-    model = WhisperModel("small.en", device="cpu", compute_type="int8")
+    # medium.en (was small.en): small.en dropped ~32 of 1947 words and its word timestamps drifted
+    # in the fast, dense outro/CTA (owner 2026-07-06: "8:45以降 字幕がずれてる、ナレの方が速い").
+    # medium.en catches more words and tightens word timing there, so the alignment stays locked to
+    # the narration through the end. Slower on CPU but sync accuracy is the priority.
+    print("loading faster-whisper medium.en (cpu/int8)...")
+    model = WhisperModel("medium.en", device="cpu", compute_type="int8")
     segs, _ = model.transcribe(str(master), word_timestamps=True, vad_filter=False,
                                beam_size=5, language="en")
     words = []
@@ -95,6 +121,44 @@ def transcribe(master):
         for w in (s.words or []):
             words.append({"w": w.word.strip(), "n": norm(w.word), "start": w.start, "end": w.end})
     print(f"  whisper words: {len(words)}")
+    return words
+
+
+def transcribe_windowed(master, windows):
+    """Transcribe the master in the KNOWN per-chunk windows (narration_index start/end) SEPARATELY,
+    offsetting each window's word times by its start. This is the drift fix: faster-whisper's word
+    timestamps DRIFT LATE over a long (11-min) file — the same word "out" lands at 505.0s when its
+    ~5s chunk is transcribed alone but at ~507.2s in the full-file run, and the error GROWS toward
+    the end (owner 2026-07-06: "8:45以降 字幕がめちゃくちゃ遅い"). Transcribing each short window in
+    isolation keeps every word time locally accurate, so no cross-chunk drift accumulates.
+
+    windows: list of (start_sec, end_sec) in master time, in spoken order. Returns the same word
+    dict list as transcribe(), with absolute (offset) times."""
+    import subprocess
+    import numpy as np
+    from faster_whisper import WhisperModel
+    # decode the whole master once to 16 kHz mono float32, then slice per window (no temp files,
+    # no 52 ffmpeg spawns)
+    raw = subprocess.run(
+        ["ffmpeg", "-nostdin", "-loglevel", "error", "-i", str(master),
+         "-ar", "16000", "-ac", "1", "-f", "f32le", "-"],
+        capture_output=True, check=True).stdout
+    audio = np.frombuffer(raw, dtype=np.float32)
+    sr = 16000
+    print(f"loading faster-whisper medium.en (cpu/int8) for {len(windows)} windowed segments...")
+    model = WhisperModel("medium.en", device="cpu", compute_type="int8")
+    words = []
+    for (ws, we) in windows:
+        a = audio[max(0, int(ws * sr)):int(we * sr)]
+        if a.size < sr // 8:  # < 0.125 s of audio -> skip (silence-only window)
+            continue
+        segs, _ = model.transcribe(a, word_timestamps=True, vad_filter=False,
+                                   beam_size=5, language="en")
+        for s in segs:
+            for w in (s.words or []):
+                words.append({"w": w.word.strip(), "n": norm(w.word),
+                              "start": ws + w.start, "end": ws + w.end})
+    print(f"  whisper words (windowed): {len(words)}")
     return words
 
 
@@ -207,6 +271,80 @@ def _balanced_split(seg):
         k += 1
 
 
+# Words a caption line must NOT end on (they leave the phrase dangling and read as a "weird
+# mid-phrase cut" -- the owner's "変な所で途切れてる"): articles, prepositions, conjunctions,
+# auxiliaries/copulas, possessives, determiners/relatives, infinitive "to", subordinators.
+_NO_DANGLE_END = {
+    "a", "an", "the",
+    "of", "to", "in", "on", "at", "for", "with", "from", "by", "as", "into", "onto",
+    "over", "under", "than", "up", "out", "off", "about", "against", "between", "through",
+    "and", "or", "but", "nor", "so", "yet",
+    "is", "are", "was", "were", "be", "been", "being", "am",
+    "has", "have", "had", "do", "does", "did",
+    "will", "would", "can", "could", "shall", "should", "may", "might", "must",
+    "my", "your", "his", "her", "its", "our", "their",
+    "that", "this", "these", "those", "who", "which", "whose", "whom",
+    "if", "when", "because", "while", "after", "before", "since", "until", "unless",
+    "although", "though", "whether", "no", "not",
+}
+# Words that naturally START a phrase -> breaking BEFORE them is a good, clean break point.
+_PHRASE_START = {
+    "of", "to", "in", "on", "at", "for", "with", "from", "by", "as", "into", "onto",
+    "over", "under", "than", "about", "against", "between", "through",
+    "and", "or", "but", "nor", "so", "yet",
+    "that", "this", "these", "those", "who", "which", "whose", "whom",
+    "if", "when", "because", "while", "after", "before", "since", "until", "unless",
+    "although", "though", "whether", "the", "a", "an",
+}
+
+
+def _end_norm(tok):
+    return norm(tok.rstrip(_TRAIL))
+
+
+def _smart_split(seg):
+    """seg: [(token, idx), ...] for a single comma-less clause that ALONE exceeds the caps. Pack
+    into the fewest lines within the SEG caps, breaking only at GRAMMATICALLY clean points: a line
+    never ends on a dangling function word (_NO_DANGLE_END), and breaks are preferred right after
+    punctuation or right before a phrase-starting word (_PHRASE_START). This replaces the old pure
+    size-balanced split, which cut mid-phrase ('...torn his car apart on the' / 'floorboards')."""
+    n = len(seg)
+    if n <= 1:
+        return [seg]
+    lines = []
+    start = 0
+    while start < n:
+        # widest window [start..e] that still fits the caps
+        e = start
+        while e + 1 < n:
+            trial = seg[start:e + 2]
+            if _wc(trial) <= SEG_MAX_WORDS and len(_line_of(trial)) <= SEG_MAX_CHARS:
+                e += 1
+            else:
+                break
+        if e >= n - 1:
+            lines.append(seg[start:])
+            break
+        # pick the best break position j in [start..e]: scan back from the cap, prefer
+        # punctuation end (score 2), then "next word starts a phrase" (score 1); never end on a
+        # dangling function word. Closest-to-cap among equal scores => longest clean line.
+        best = None
+        for j in range(e, start - 1, -1):
+            if _end_norm(seg[j][0]) in _NO_DANGLE_END:
+                continue
+            ends_punct = seg[j][0].rstrip(_TRAIL)[-1:] in ",;:—.-"
+            nxt = _end_norm(seg[j + 1][0]) if j + 1 < n else ""
+            score = 2 if ends_punct else (1 if nxt in _PHRASE_START else 0)
+            if best is None or score > best[0]:
+                best = (score, j)
+            if score == 2:
+                break
+        j = best[1] if best is not None else e  # all-dangling window -> forced cap break
+        lines.append(seg[start:j + 1])
+        start = j + 1
+    return lines
+
+
 def split_lines_clause(tokens):
     """tokens: list of original-text words (with punctuation). -> [(line_str, idx_start, idx_end)].
 
@@ -245,7 +383,7 @@ def split_lines_clause(tokens):
             if _wc(seg) <= SEG_MAX_WORDS and len(_line_of(seg)) <= SEG_MAX_CHARS:
                 norm_segs.append(seg)
             else:
-                norm_segs.extend(_balanced_split(seg))
+                norm_segs.extend(_smart_split(seg))
         # 4) greedily pack whole clauses into lines within caps (clauses stay whole)
         buf = []
         for seg in norm_segs:
@@ -396,10 +534,90 @@ def align_legacy(ep_dir, chunks, master):
 # general alignment (narration_index, no timing file): global sequential match
 # ---------------------------------------------------------------------------
 
-def align_general(chunks, master):
+def align_windowed(chunks, master, windows):
+    """Per-chunk forced alignment — the DEFINITIVE drift fix (owner 2026-07-06: 8:45以降字幕がめちゃ
+    くちゃ遅い). Each narration_index chunk has a KNOWN [start,end] window in the master; we transcribe
+    ONLY that window's audio (accurate local word times) and align the chunk's verbatim words to it,
+    interpolating unmatched words WITHIN the window. Because every chunk is bounded by its own window,
+    timing error CANNOT accumulate across chunks — the global flat matcher (align_general) drifted the
+    cursor and mis-placed later words by 1-3s; this cannot.
+
+    chunks: v002 chunks ({text}); windows: v001 (start,end) per chunk, paired 1:1 by index."""
+    import subprocess
+    import numpy as np
+    from faster_whisper import WhisperModel
+    raw = subprocess.run(
+        ["ffmpeg", "-nostdin", "-loglevel", "error", "-i", str(master),
+         "-ar", "16000", "-ac", "1", "-f", "f32le", "-"],
+        capture_output=True, check=True).stdout
+    audio = np.frombuffer(raw, dtype=np.float32)
+    sr = 16000
+    print(f"loading faster-whisper medium.en (cpu/int8) for {len(windows)} per-chunk alignments...")
+    model = WhisperModel("medium.en", device="cpu", compute_type="int8")
+    out = []
+    for chunk, (ws, we) in zip(chunks, windows):
+        toks = glue_punct(chunk["text"].split())
+        seg = audio[max(0, int(ws * sr)):int(we * sr)]
+        cw = []
+        if seg.size >= sr // 8:
+            segs, _ = model.transcribe(seg, word_timestamps=True, vad_filter=False,
+                                       beam_size=5, language="en")
+            for s in segs:
+                for w in (s.words or []):
+                    cw.append({"n": norm(w.word), "start": ws + w.start, "end": ws + w.end})
+        # sequential local match: verbatim token -> nearest forward whisper word (small window),
+        # never skipping more than a few; unmatched tokens fall through to interpolation.
+        times = [None] * len(toks); j = 0
+        for ti, tk in enumerate(toks):
+            tn = norm(tk)
+            if not tn:
+                continue
+            k = j; found = None
+            while k < min(j + 4, len(cw)):
+                wn = cw[k]["n"]
+                if wn == tn or (len(tn) >= 4 and wn.startswith(tn[:4])) or (len(wn) >= 4 and tn.startswith(wn[:4])):
+                    found = k; break
+                k += 1
+            if found is not None:
+                times[ti] = (cw[found]["start"], cw[found]["end"]); j = found + 1
+            elif j < len(cw):
+                times[ti] = (cw[j]["start"], cw[j]["end"]); j += 1
+        # interpolate unmatched tokens strictly WITHIN this chunk's window (monotonic, bounded)
+        known = [i for i, t in enumerate(times) if t is not None]
+        if not known:
+            for ti in range(len(toks)):
+                frac = (ti + 0.5) / max(len(toks), 1)
+                t = ws + frac * (we - ws); times[ti] = (t, t + 0.3)
+        else:
+            f0, fl = known[0], known[-1]
+            for i in range(f0):
+                frac = i / max(f0, 1); t = ws + frac * (times[f0][0] - ws); times[i] = (t, t)
+            for a, b in zip(known, known[1:]):
+                if b - a <= 1:
+                    continue
+                sa, sb = times[a][1], times[b][0]
+                for i in range(a + 1, b):
+                    fr = (i - a) / (b - a); t = sa + fr * (sb - sa); times[i] = (t, t)
+            tail = times[fl][1]
+            for i in range(fl + 1, len(toks)):
+                fr = (i - fl) / max(len(toks) - fl, 1); t = tail + fr * max(we - tail, 0.0); times[i] = (t, t + 0.2)
+        for line, a, b in split_lines_clause(toks):
+            s = times[a][0]; e = times[b][1]
+            if e <= s:
+                e = s + 0.6
+            out.append((s, e, line))
+    print(f"  windowed per-chunk alignment: {len(out)} lines over {len(windows)} chunks")
+    return out
+
+
+def align_general(chunks, master, words=None):
     """Flatten all chunk tokens in spoken order, align globally against the whisper word stream,
-    interpolate gaps between anchors, then segment each chunk. Returns list of (start, end, line)."""
-    words = transcribe(master)
+    interpolate gaps between anchors, then segment each chunk. Returns list of (start, end, line).
+
+    If `words` (a pre-transcribed word stream) is supplied, use it instead of transcribing the whole
+    file — this lets main() pass the DRIFT-FREE windowed transcription (transcribe_windowed)."""
+    if words is None:
+        words = transcribe(master)
     total = words[-1]["end"] if words else 0.0
     # flat token list with chunk membership
     chunk_toks = [glue_punct(c["text"].split()) for c in chunks]
@@ -636,6 +854,28 @@ def write_srt(out_path, entries, tight=False):
         before_gate = sum(1 for s, e, ln in entries if _cps(ln, (e - s) if e > s else 1e-9) > GATE_CPS)
         synced, _rg, _rt, max_lag = tight_sync(entries)
         cues = merge_cps_pass([[s, e, [ln]] for s, e, ln in synced])
+        # advance every cue by the constant detector-latency lead (see CAPTION_LEAD_SECONDS).
+        # uniform shift => order/gaps preserved; clamp the first start to >= 0.
+        if CAPTION_LEAD_SECONDS:
+            cues = [[max(0.0, s - CAPTION_LEAD_SECONDS), max(0.0, e - CAPTION_LEAD_SECONDS), lines]
+                    for s, e, lines in cues]
+            print(f"  applied caption lead -{CAPTION_LEAD_SECONDS:.2f}s (corrects whisper onset-detection latency)")
+        # hold each caption on-screen until just before the next one begins (bounded), so the
+        # natural sentence-end pause inside a narration chunk stays captioned. The lead shift above
+        # pulls every cue END earlier, which otherwise leaves each chunk's tail (~0.6s of pause)
+        # uncovered -> verify_caption_coverage FAILs (63/167 chunks < 80%). Starts are NOT touched,
+        # so the forced-alignment sync / "captions lead the audio" the owner signed off on is
+        # preserved; only ends extend forward. Also lowers cps (longer on-screen time to read).
+        if cues:
+            for i in range(len(cues) - 1):
+                nxt_start = cues[i + 1][0]
+                hold_cap = min(nxt_start - CAPTION_HOLD_GAP, cues[i][1] + CAPTION_HOLD_MAX)
+                if hold_cap > cues[i][1]:
+                    cues[i][1] = hold_cap
+            # last cue: extend a touch past its spoken end to cover the final chunk tail
+            cues[-1][1] = cues[-1][1] + min(CAPTION_HOLD_MAX, CAPTION_LEAD_SECONDS)
+            print(f"  held caption ends to next cue (cap +{CAPTION_HOLD_MAX:.1f}s, gap {CAPTION_HOLD_GAP:.2f}s) "
+                  f"to close chunk-tail coverage gaps without moving starts")
         residual_gate = sum(1 for s, e, lines in cues if _cue_cps(lines, e - s) > GATE_CPS)
         residual_target = sum(1 for s, e, lines in cues if _cue_cps(lines, e - s) > TARGET_CPS)
         print(f"  cps (tight-sync): before {before_gate} over gate({GATE_CPS:.0f})  ->  after "
@@ -667,6 +907,25 @@ def write_srt(out_path, entries, tight=False):
     out_path.write_text("\n".join(f"{i+1}\n{srt_ts(s)} --> {srt_ts(e)}\n{ln}\n"
                                   for i, (s, e, ln) in enumerate(fixed)), "utf-8")
     return fixed
+
+
+def _load_index_windows(ep_dir):
+    """Per-chunk (start, end) windows in the master, in spoken order, from narration_index.v001
+    (the authoritative master timeline WITH inter-chunk silences). Used to transcribe each chunk in
+    isolation so faster-whisper's long-file timestamp drift never accumulates. Returns [] if absent."""
+    p = ep_dir / "06_audio" / "narration_index.v001.json"
+    if not p.exists():
+        return []
+    try:
+        chunks = (json.loads(p.read_text("utf-8")) or {}).get("chunks", [])
+    except Exception:  # noqa: BLE001
+        return []
+    wins = []
+    for c in chunks:
+        s, e = c.get("start"), c.get("end")
+        if isinstance(s, (int, float)) and isinstance(e, (int, float)) and e > s:
+            wins.append((float(s), float(e)))
+    return wins
 
 
 def main():
@@ -712,7 +971,20 @@ def main():
         raise SystemExit(f"master audio not found: {master}\n"
                          f"(use --dry-run to preview segmentation before narration exists, "
                          f"or pass --master <path>)")
-    entries = align_legacy(ep_dir, chunks, master) if legacy else align_general(chunks, master)
+    if legacy:
+        entries = align_legacy(ep_dir, chunks, master)
+    else:
+        # DRIFT FIX: per-chunk windowed alignment (align_windowed) when narration_index.v001 gives a
+        # 1:1 window per text chunk — bounds every word's time to its own chunk window so faster-
+        # whisper's long-file drift + the global matcher's cursor drift can't push later captions
+        # 1-3s late. Falls back to the whole-file global matcher only if windows are unavailable.
+        windows = _load_index_windows(ep_dir)
+        if windows and len(windows) == len(chunks):
+            entries = align_windowed(chunks, master, windows)
+        else:
+            print(f"  (narration_index.v001 windows unusable: {len(windows)} vs {len(chunks)} chunks "
+                  f"-> whole-file global alignment; drift risk)")
+            entries = align_general(chunks, master)
     fixed = write_srt(out_path, entries, tight=is_general)
     print(f"wrote {out_path.relative_to(ROOT) if out_path.is_relative_to(ROOT) else out_path}  "
           f"({len(fixed)} cues)  [{'legacy timing-window' if legacy else 'global'} alignment]")

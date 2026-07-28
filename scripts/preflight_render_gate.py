@@ -537,6 +537,53 @@ def check_film_crosscheck(repo_root, slug, remotion_plan):
 
 
 # --------------------------------------------------------------------------- #
+# CHECK 5 -- Premium motion density (BLOCKS render if the film plan is stills-heavy)
+# --------------------------------------------------------------------------- #
+def check_premium_motion(repo_root, ep_slug):
+    """Premium-animation density floor, measured from the film DATA (kinetic MG beats:
+    graphics/figures/heroCuts) -- NOT Ken-Burns pixel motion. This is the SAME gate the
+    acceptance suite runs (scripts/check_motion_density.py), pulled forward to PREFLIGHT so a
+    stills-heavy plan can never reach the expensive render/spend. If the film json is not built
+    yet the gate SKIPs (WARN, non-blocking); if it is built and below the floors it FAILs (BLOCK)."""
+    try:
+        import importlib
+        mod = importlib.import_module("check_motion_density")
+    except Exception as exc:  # module missing / import error -> don't crash preflight
+        return check_result("motion_density", "WARN", f"gate module unavailable: {exc}")
+    try:
+        r = mod.evaluate(repo_root / "episodes" / ep_slug)
+    except Exception as exc:
+        return check_result("motion_density", "WARN", f"evaluate error: {exc}")
+    if r.get("skipped"):
+        return check_result("motion_density", "WARN",
+                            r.get("reason", "film json not built yet -- re-run preflight after build"))
+    status = "PASS" if r.get("ok") else "FAIL"
+    return check_result("motion_density", status, r.get("reason", ""),
+                        density_per_min=r.get("density_per_min"),
+                        coverage=r.get("coverage"), variety=r.get("variety"))
+
+
+def _run_ext_gate(mod_name, check_name, repo_root, ep_slug):
+    """Generic PREFLIGHT runner for a standalone quality gate module (scripts/<mod>.py with
+    evaluate(epdir)->{ok,hard,reason,skipped}). Pulls the acceptance-grade check FORWARD to
+    preflight so a defective PLAN is blocked before the expensive render/spend. A skipped/absent
+    artifact -> WARN (non-blocking); ok -> PASS; not-ok -> FAIL (blocks)."""
+    try:
+        import importlib
+        mod = importlib.import_module(mod_name)
+    except Exception as exc:  # module missing / import error -> don't crash preflight
+        return check_result(check_name, "WARN", f"gate module unavailable: {exc}")
+    try:
+        r = mod.evaluate(repo_root / "episodes" / ep_slug)
+    except Exception as exc:
+        return check_result(check_name, "WARN", f"evaluate error: {exc}")
+    if r.get("skipped"):
+        return check_result(check_name, "WARN", r.get("reason", "inputs not present yet"))
+    status = "PASS" if r.get("ok") else "FAIL"
+    return check_result(check_name, status, r.get("reason", ""))
+
+
+# --------------------------------------------------------------------------- #
 # Receipt
 # --------------------------------------------------------------------------- #
 def next_receipt_path(scenes_dir):
@@ -587,10 +634,37 @@ def run(ep_slug, repo_root, emit_receipt):
     }
 
     checks = [
+        # Cheapest + earliest: a script that cannot fill the runtime band must be
+        # caught BEFORE ElevenLabs TTS and the render (EP14/15/34/38 all shipped
+        # short because runtime was only measurable on the finished file).
+        _run_ext_gate("check_script_length", "script_length", repo_root, ep_slug),
         check_motion_budget(remotion_plan, remotion_err, scene_plan, scene_err),
         check_assets_exist(image_dir, annotated, scene_plan, remotion_plan),
         check_coverage(asset_selection, asset_err, annotated, scene_plan),
         check_film_crosscheck(repo_root, ep_slug, remotion_plan),
+        check_premium_motion(repo_root, ep_slug),
+        _run_ext_gate("check_animation_mix", "animation_mix", repo_root, ep_slug),
+        # Owner 2026-07-19: same picture must not keep coming back inside one video.
+        _run_ext_gate("check_asset_reuse", "asset_reuse", repo_root, ep_slug),
+        _run_ext_gate("check_caption_integrity", "caption_integrity", repo_root, ep_slug),
+        # Owner, repeatedly: captions break mid-phrase. caption_integrity only checks the
+        # captions EXIST and are burned; this checks WHERE they break.
+        _run_ext_gate("check_caption_breaks", "caption_breaks", repo_root, ep_slug),
+        _run_ext_gate("check_visual_asset_qc", "visual_asset_qc", repo_root, ep_slug),
+        # SPEC v2 row 16 -- the ONLY contract row that had no gate at all. Measured from
+        # the film.json captions, so it fires at PREFLIGHT (the film data exists here),
+        # before the render/TTS spend. Audit 2026-07-19: 10 PASS / 3 FAIL / 25 SKIP;
+        # hinton poses ZERO questions across 11.3 min.
+        _run_ext_gate("check_retention_cadence", "retention_cadence", repo_root, ep_slug),
+        # SPEC v2 row 13 -- the spec's own "Still manual" list. SKIPs until packaging
+        # metadata is authored, so it is harmless pre-render and bites on a re-run
+        # before ship. Audit: 11 PASS / 15 FAIL / 12 SKIP.
+        _run_ext_gate("check_packaging_qc", "packaging_qc", repo_root, ep_slug),
+        # SPEC v2 row 6 -- "crf/preset/pix_fmt asserted from render log" was never
+        # implemented; acceptance asserts resolution ONLY. SKIPs until a long-form final
+        # exists. Audit: 13 PASS / 12 FAIL / 13 SKIP; EP30 cotton shipped h264_nvenc,
+        # which spec row 6 bans outright.
+        _run_ext_gate("check_encoder_settings", "encoder_settings", repo_root, ep_slug),
     ]
 
     # Hard verdict: any FAIL among the hard checks blocks the render.
@@ -672,6 +746,13 @@ def print_report(receipt, receipt_path):
 
 
 def main(argv=None):
+    # Windows console defaults to cp932, which cannot encode em dashes / unicode in
+    # check details -> print_report would crash. Force utf-8 (known PD gotcha).
+    try:
+        sys.stdout.reconfigure(encoding="utf-8")
+        sys.stderr.reconfigure(encoding="utf-8")
+    except Exception:
+        pass
     parser = argparse.ArgumentParser(
         description="Pre-render preflight gate for a PD episode.")
     parser.add_argument("--ep", required=True,

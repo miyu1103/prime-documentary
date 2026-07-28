@@ -14,6 +14,7 @@ file is skipped. Local A1111 API on 127.0.0.1:7860 (no paid API, no upload).
 Usage:
   .venv/Scripts/python.exe scripts/generate_sdxl_4k.py PD-2026-018-flashcrash --variants 3
   .venv/Scripts/python.exe scripts/generate_sdxl_4k.py 18 --variants 3 --only S07
+  .venv/Scripts/python.exe scripts/generate_sdxl_4k.py PD-2026-056-postoffice --only S001
 """
 from __future__ import annotations
 
@@ -129,13 +130,19 @@ def png_long_edge(p: Path) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("episode")
-    ap.add_argument("--variants", type=int, default=3)
+    ap.add_argument("--variants", type=int, default=None)
     ap.add_argument("--only", help="only this shot stem, e.g. S07")
     args = ap.parse_args()
 
     ep = resolve_ep(args.episode)
+    variants = args.variants
+    if variants is None:
+        variants = 1 if ep == "PD-2026-056-postoffice" else 3
+    if ep == "PD-2026-056-postoffice" and variants != 1:
+        raise SystemExit("EP56 postoffice is locked to variants=1; do not create _02/_03 variants")
     slug = re.sub(r"^PD-\d{4}-\d{3}-", "", ep)
     prompts = read_prompts(ROOT / "episodes" / ep / "04_scenes" / "ai_prompts.v001.md")
+    base_shots = len(prompts)
     if args.only:
         prompts = [p for p in prompts if Path(p["file"]).stem == args.only]
     media_dir = media_root() / "assets" / "ai" / slug
@@ -145,13 +152,13 @@ def main() -> int:
 
     set_model()
     made = skipped = failed = 0
-    total = len(prompts) * args.variants
-    print(f"episode={ep} slug={slug} shots={len(prompts)} variants={args.variants} "
+    total = len(prompts) * variants
+    print(f"episode={ep} slug={slug} base_shots={base_shots} shots={len(prompts)} variants={variants} "
           f"target={FINAL_W}x{FINAL_H} model={MODEL_HINT} -> {total} images", flush=True)
 
     for p in prompts:
         stem = Path(p["file"]).stem
-        for v in range(args.variants):
+        for v in range(variants):
             name = f"{stem}.png" if v == 0 else f"{stem}_{v+1:02d}.png"
             out = media_dir / name
             if png_long_edge(out) >= FINAL_W:

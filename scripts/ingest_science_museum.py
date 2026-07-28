@@ -1126,6 +1126,21 @@ def main():
     st = State()
     log(f"=== ingest_science_museum start sources={sources} "
         f"limit={args.limit or 'NONE'} dry_run={args.dry_run} ===")
+    # CODE FINGERPRINT: a running process does not announce its code version, so a
+    # worker launched before a fix keeps executing stale code invisibly (the IA
+    # lane burned 40 minutes that way). Log file mtime+sha1 for THIS module AND the
+    # imported framework so any log line can be tied to the code that produced it.
+    import hashlib
+    for tag, path in (("lane", os.path.abspath(__file__)),
+                      ("framework", os.path.join(REPO, "scripts",
+                                                 "ingest_archive_sources.py"))):
+        try:
+            raw = open(path, "rb").read()
+            log(f"CODE: {tag}={os.path.basename(path)} "
+                f"mtime={datetime.fromtimestamp(os.path.getmtime(path)).isoformat(timespec='seconds')} "
+                f"sha1={hashlib.sha1(raw).hexdigest()[:12]} bytes={len(raw)}")
+        except OSError as e:
+            log(f"CODE: {tag} fingerprint unavailable ({e})")
     for t in TIERS:
         log(f"tier {t['name']}: free={free_bytes(t['drive'])/GB:.0f}GB "
             f"floor={t['floor']/GB:.0f}GB")

@@ -39,7 +39,9 @@ py -3.11 scripts/pd_preflight.py --slug flowers # 1話だけ
 | **F-15** | **P##顔がpublicにあるのにマニフェストに無く、映像に一度も出ない** | 静止画スキャンがP##接頭辞を拾っていなかった | マニフェスト生成が `img/P*`,`img/F*` を people ロールへ ＋ `pd_preflight.py` C | BLOCK | **EP52/EP54（各16枚が未参照）** |
 | **F-16** | **UTF-8のJSONがcp932で読めずクラッシュ** | Windows既定エンコーディング | 全スクリプトが `encoding="utf-8"` 明示＋`sys.stdout.reconfigure` | 誤った exit 0 を防ぐ | 本日・過去にゲートで偽PASSの実績 |
 | **F-17** | **引継ぎ文書の記述がディスクの実態と食い違う** | 文書を検証せず着手 | `pd_preflight.py` を**着手前に**実行して実測で上書き | 前提の誤りを初手で検出 | **本日（EP51-56のナレーション「未整備」は誤り＝実際は全話完成）** |
-| **F-18** | **レンダー開始時にpublicディレクトリ56GBをコピーし続けて進まない** | `--public-dir` に共有の `remotion/public` を渡した。Remotionはその**全体**をバンドルへコピーするので、他話の素材も落選素材（flowersの`rejected/`37GB）も巻き込む | レンダーは**話専用のスリムdir**（`remotion/public_ep<NN>/`、実体はジャンクション）に対してのみ行う | コピー量 56GB→約9GB | **本日 EP54（1回中止）**。EP50が`public_slim`を使っていたのはこの為 |
+| **F-18a** | **レンダー開始時にpublicディレクトリ56GBをコピーし続けて進まない** | `--public-dir` に共有の `remotion/public` を渡した。Remotionはその**全体**をバンドルへコピーするので、他話の素材も落選素材（flowersの`rejected/`37GB）も巻き込む | レンダーは**話専用のスリムdir** `remotion/public_ep<NN>/` に対してのみ行う | コピー量 56GB→約8GB | **本日 EP54（1回中止）**。EP50が`public_slim`を使っていたのはこの為 |
+| **F-18b** | **スリムdirを作ったのに全画像が `EncodingError: source image cannot be decoded`** | スリムdirを**ジャンクション/シンボリックリンク**で作った。Pythonのチェックはリンクを辿るので「存在する」と言うが、**Remotionのpublicコピーは辿らない**→バンドルに入らず404。ゲートが通ってレンダーが死ぬ最悪の組み合わせ | スリムdirは**ハードリンク**で作る（実体複製なし・コピーからは実ファイルに見える）。`pd_prerender_gate.py` 検査7がreparse pointを検出してFAIL | exit 1 | **本日 EP54（2回目の中止）** |
+| **F-18c** | **240フレームまでレンダーしてから `banner_sunrise.png` 404 で落ちる** | film.jsonに現れない**リテラル参照のブランド資産**（banner・フォント3種）をスリムdirに入れ忘れた。film.jsonのsrcだけ検査しても捕まらない | `pd_prerender_gate.py` 検査8が `banner_sunrise.png` とフォント3種の実在を必須化 | exit 1 | **本日 EP54（3回目の中止）** |
 
 ## 2. 唯一の正規レンダー手順（これ以外でレンダーしない）
 

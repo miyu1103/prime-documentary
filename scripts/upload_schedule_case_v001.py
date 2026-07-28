@@ -21,6 +21,58 @@ from pd_factory.providers.youtube import _access_token
 from upload_episode import CHANNEL_ALLOWLIST, get_channel_id, sha256_file, upload_chunks
 
 CONFIG = {
+    "florence": {
+        "ep": "PD-2026-037-florence",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-037-florence/08_edit/florence_v005.mp4",
+        "sched_local": "2026-07-22T12:00:00+09:00",
+        "sched_utc": "2026-07-22T03:00:00Z",
+        "title": "He Paid the Fine — and Was Strip-Searched Twice. The Supreme Court Said It Was Legal.",
+        "description": "He had the receipt. The fine was already paid. He was arrested anyway — and then strip-searched, twice.\n\nThis is the true story of Albert Florence. In 2005 in New Jersey, a state trooper pulled over the car his wife was driving, ran his name, and found a bench warrant for an unpaid fine. But Florence had already paid that fine; a clerical error in a state database had left the warrant on the system. He was carrying a document proving the payment. It did not matter. He was arrested and held for six days across two county jails — and at each one he was subjected to a strip search, even though no one suspected him of hiding anything and the underlying matter was a fine he had already cleared.\n\nFlorence sued, arguing that a person arrested for a minor matter should not be strip-searched with no reason to suspect contraband. A federal district court agreed in 2009; a federal appeals court reversed in 2010; and in 2012, in Florence v. Board of Chosen Freeholders, the Supreme Court ruled 5–4 that the searches did not violate the Fourth Amendment. Writing for the majority, Justice Kennedy reasoned that jails may adopt reasonable search policies for everyone entering the general population, because officers cannot know who is walking in. In dissent, Justice Breyer argued that a strip search is a serious invasion of privacy and that the state should have some reason before it strips a person bare. Two justices in the majority wrote separately to narrow the ruling.\n\nThis episode walks through how a paperwork error became a constitutional question about the Fourth Amendment and the limits of what can happen to you at a jailhouse door.\n\nThis is general history, not legal advice. Some imagery is AI-assisted and symbolic, not authentic footage of real people or events; all strip-search references are non-graphic and symbolic, and no real-person likeness is depicted.\n\nSources: Florence v. Board of Chosen Freeholders, 566 U.S. 318 (2012) — https://www.oyez.org/cases/2011/10-945 ; Supreme Court opinion (PDF) — https://www.supremecourt.gov/opinions/11pdf/10-945.pdf\n\n#SupremeCourt #FourthAmendment #StripSearch #KnowYourRights #CivilRights #Florence #Documentary #TrueStory",
+        "tags": ["florence v board of chosen freeholders", "strip search", "supreme court", "fourth amendment", "albert florence", "jail strip search", "know your rights", "civil rights", "5-4 decision", "justice kennedy", "justice breyer", "wrongful arrest", "paid fine warrant", "true story", "prime documentary"],
+    },
+    "williams": {
+        "ep": "PD-2026-036-williams",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/remotion/out/PD-2026-036-williams_film.muxed.v004.mp4",
+        "sched_local": "2026-07-21T12:00:00+09:00",
+        "sched_utc": "2026-07-21T03:00:00Z",
+        "title": "Police Arrested Him Because Software Said His Face Matched. It Was Wrong.",
+        "description": (
+            "A blurry store-camera photo. A computer's guess. A knock at the door — and an "
+            "innocent father is arrested in his own driveway, in front of his family, for a "
+            "crime he did not commit. This is the story of Robert Williams, and of the first "
+            "known wrongful arrest in the United States caused by facial-recognition "
+            "misidentification.\n\n"
+            "In 2018 someone stole several thousand dollars of watches from a Detroit shop. The "
+            "only lead was a grainy surveillance still. Police ran it through facial-recognition "
+            "software, which pointed to Robert Williams' old driver's-license photo. On that "
+            "match — and little else — he was arrested in January 2020 and held for about thirty "
+            "hours. The charges were dropped, and the prosecutor's office later acknowledged the "
+            "case should never have been built the way it was.\n\n"
+            "A facial-recognition 'match' is a probability, not proof — it is supposed to be a "
+            "lead, nothing more. And the technology has been measured as less accurate on darker "
+            "skin: federal testing (NIST) and independent research (the 'Gender Shades' study) "
+            "found far higher error rates for Black faces. In 2021 civil-rights lawyers sued the "
+            "city; the case settled in 2024 (Williams was paid roughly three hundred thousand "
+            "dollars), and Detroit adopted among the strictest police facial-recognition rules in "
+            "the country: a match may be treated only as a lead, past cases must be reviewed, and "
+            "a court oversees the department.\n\n"
+            "This is general history, not legal advice. Some imagery is AI-assisted symbolic "
+            "reconstruction, not documentary footage of real people or events; anonymous figures "
+            "only, no real-person likeness.\n\n"
+            "Sources: ACLU, Williams v. City of Detroit — "
+            "https://www.aclu.org/cases/williams-v-city-of-detroit-face-recognition-false-arrest ; "
+            "Final Settlement Agreement (2024) — "
+            "https://assets.aclu.org/live/uploads/2024/06/Final-Order-of-Dismissal-and-Settlement-Agreement.pdf ; "
+            "NIST FRVT Part 3: Demographic Effects — "
+            "https://pages.nist.gov/frvt/reports/demographics/nistir_8280.pdf ; "
+            "Gender Shades (Buolamwini & Gebru, 2018) — "
+            "https://proceedings.mlr.press/v81/buolamwini18a.html\n\n"
+            "#FacialRecognition #WrongfulArrest #CivilRights #Surveillance #KnowYourRights #Documentary"
+        ),
+        "tags": ["facial recognition", "wrongful arrest", "robert williams", "williams v detroit",
+                 "face recognition false arrest", "algorithmic bias", "surveillance",
+                 "civil rights", "detroit police", "know your rights", "aclu", "documentary"],
+    },
     "rolin": {
         "ep": "PD-2026-034-rolin",
         "video": r"C:/Users/aab15/Documents/prime-documentary/remotion/out/PD-2026-034-rolin_film.muxed.v003.mp4",

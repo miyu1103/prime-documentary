@@ -59,7 +59,8 @@ def main() -> int:
     hits = []
     stats: dict[str, int] = {}
     for fn in sorted(os.listdir(LEDGER_DIR)):
-        if not fn.endswith(".jsonl") or fn == "rejects.jsonl":
+        if not fn.endswith(".jsonl") or fn.startswith("rejects") or fn.endswith(
+                ("_dedup_removed.jsonl", "_candidates.jsonl")):
             continue
         if args.source and fn != f"{args.source.lower()}.jsonl":
             continue

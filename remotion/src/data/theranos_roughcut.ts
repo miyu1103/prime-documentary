@@ -15,18 +15,18 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 33.2,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "theranos/pexels_i_6823512.jpg",
+      "src": "theranos/SPN-0002_02.png",
       "telop": [
         "When does selling a dream become a crime?"
       ],
       "priority": "A",
       "images": [
-        "theranos/pexels_i_6823512.jpg",
-        "theranos/pexels_i_12326657.jpg",
-        "theranos/pexels_i_6823478.jpg",
-        "theranos/pixabay_i_7589539.jpg",
-        "theranos/pixabay_i_921067.jpg",
-        "theranos/pixabay_i_7525744.jpg"
+        "theranos/SPN-0002_02.png",
+        "theranos/SPN-0003_03.png",
+        "theranos/SPN-0020_02.png",
+        "theranos/SPN-0003.png",
+        "theranos/SPN-0008_03.png",
+        "theranos/SPN-0016_04.png"
       ]
     },
     {
@@ -35,19 +35,21 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 39.6,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/us_dollar_bill.jpg",
+      "src": "theranos/SPN-0002.png",
       "telop": [
         "Finale: one person vs. everyone"
       ],
       "priority": "A",
       "images": [
-        "theranos/us_dollar_bill.jpg",
-        "theranos/pexels_i_6823512.jpg",
-        "theranos/pexels_i_12326657.jpg",
-        "theranos/pexels_i_6823478.jpg",
-        "theranos/pixabay_i_7589539.jpg",
-        "theranos/pixabay_i_921067.jpg",
-        "theranos/pixabay_i_7525744.jpg"
+        "theranos/SPN-0002.png",
+        "theranos/SPN-0002_02.png",
+        "theranos/SPN-0002_03.png",
+        "theranos/SPN-0002_04.png",
+        "theranos/SPN-0002_05.png",
+        "theranos/SPN-0002_06.png",
+        "theranos/SPN-0002_07.png",
+        "theranos/SPN-0002_08.png",
+        "theranos/SPN-0002_09.png"
       ]
     },
     {
@@ -56,14 +58,15 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 11.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/scotus_gavel.jpg",
+      "src": "theranos/SPN-0003.png",
       "telop": [
         "2003 — a Stanford dropout's startup"
       ],
       "priority": "B",
       "images": [
-        "theranos/scotus_gavel.jpg",
-        "theranos/us_constitution_p1.jpg"
+        "theranos/SPN-0003.png",
+        "theranos/SPN-0003_02.png",
+        "theranos/SPN-0003_03.png"
       ]
     },
     {
@@ -72,19 +75,19 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 27.6,
       "assetType": "stock_video",
       "motion": "video_native",
-      "src": "theranos/pexels_v_7580017.mp4",
+      "src": "theranos/pexels_v_30899864.mp4",
       "telop": [
         "The Edison: hundreds of tests, one drop"
       ],
       "priority": "B",
       "clips": [
         {
-          "src": "theranos/pexels_v_7580017.mp4",
-          "clipSeconds": 16.48
-        },
-        {
           "src": "theranos/pexels_v_30899864.mp4",
           "clipSeconds": 11.54
+        },
+        {
+          "src": "theranos/pexels_v_7580017.mp4",
+          "clipSeconds": 16.48
         },
         {
           "src": "theranos/pexels_v_7580023.mp4",
@@ -95,8 +98,8 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
           "clipSeconds": 59.6
         },
         {
-          "src": "theranos/pixabay_v_28236.mp4",
-          "clipSeconds": 15.0
+          "src": "theranos/pixabay_v_229254.mp4",
+          "clipSeconds": 13.67
         }
       ]
     },
@@ -106,17 +109,17 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 26.0,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "theranos/bill_of_rights.jpg",
+      "src": "theranos/SPN-0014.png",
       "telop": [
         "~$9 billion · prominent board · Walgreens (limited)"
       ],
       "priority": "B",
       "images": [
-        "theranos/bill_of_rights.jpg",
-        "theranos/us_dollar_bill.jpg",
-        "theranos/rbg_scotus_portrait.jpg",
-        "theranos/roberts_scotus_portrait.jpg",
-        "theranos/pexels_smartphone_hand.jpg"
+        "theranos/SPN-0014.png",
+        "theranos/SPN-0023_02.png",
+        "theranos/SPN-0002.png",
+        "theranos/SPN-0002_02.png",
+        "theranos/SPN-0002_03.png"
       ]
     },
     {
@@ -125,19 +128,19 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 26.4,
       "assetType": "stock_video",
       "motion": "video_native",
-      "src": "theranos/pexels_v_7580017.mp4",
+      "src": "theranos/pexels_v_30899864.mp4",
       "telop": [
         "A story powerful enough to stop the questions"
       ],
       "priority": "C",
       "clips": [
         {
-          "src": "theranos/pexels_v_7580017.mp4",
-          "clipSeconds": 16.48
-        },
-        {
           "src": "theranos/pexels_v_30899864.mp4",
           "clipSeconds": 11.54
+        },
+        {
+          "src": "theranos/pexels_v_7580017.mp4",
+          "clipSeconds": 16.48
         }
       ]
     },
@@ -147,14 +150,14 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 9.2,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "theranos/pexels_police_car.jpg",
+      "src": "theranos/SPN-0002.png",
       "telop": [
         "2015: The Wall Street Journal investigates"
       ],
       "priority": "C",
       "images": [
-        "theranos/pexels_police_car.jpg",
-        "theranos/pexels_i_3890028.jpg"
+        "theranos/SPN-0002.png",
+        "theranos/SPN-0002_04.png"
       ]
     },
     {
@@ -163,17 +166,18 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 25.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/pexels_money_handover.jpg",
+      "src": "theranos/SPN-0008.png",
       "telop": [
         "Tests run on other companies' machines"
       ],
       "priority": "A",
       "images": [
-        "theranos/pexels_money_handover.jpg",
-        "theranos/pexels_tow_truck.jpg",
-        "theranos/pexels_house_for_sale.jpg",
-        "theranos/pexels_signing_contract.jpg",
-        "theranos/pexels_police_car.jpg"
+        "theranos/SPN-0008.png",
+        "theranos/SPN-0008_02.png",
+        "theranos/SPN-0008_03.png",
+        "theranos/SPN-0008_04.png",
+        "theranos/SPN-0008_05.png",
+        "theranos/SPN-0008_06.png"
       ]
     },
     {
@@ -182,12 +186,13 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 12.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/pexels_i_14766052.jpg",
+      "src": "theranos/SPN-0009.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "theranos/pexels_i_14766052.jpg",
-        "theranos/pexels_i_37730973.jpg"
+        "theranos/SPN-0009.png",
+        "theranos/SPN-0009_02.png",
+        "theranos/SPN-0009_03.png"
       ]
     },
     {
@@ -196,16 +201,16 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 23.6,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "theranos/pixabay_i_3194994.jpg",
+      "src": "theranos/SPN-0002_06.png",
       "telop": [
         "2018: SEC fraud charge (settled, no admission); company dissolves"
       ],
       "priority": "C",
       "images": [
-        "theranos/pixabay_i_3194994.jpg",
-        "theranos/pixabay_i_565914.jpg",
-        "theranos/pexels_i_6077447.jpg",
-        "theranos/pexels_i_37732186.jpg"
+        "theranos/SPN-0002_06.png",
+        "theranos/SPN-0002_07.png",
+        "theranos/SPN-0002_04.png",
+        "theranos/SPN-0002_05.png"
       ]
     },
     {
@@ -236,20 +241,23 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 45.2,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/pixabay_i_2492011.jpg",
+      "src": "theranos/SPN-0012.png",
       "telop": [
         "Fraud = intent to deceive (not just failure)"
       ],
       "priority": "C",
       "images": [
-        "theranos/pixabay_i_2492011.jpg",
-        "theranos/pixabay_i_6808677.jpg",
-        "theranos/pexels_i_36984943.jpg",
-        "theranos/pexels_i_36984938.jpg",
-        "theranos/pixabay_i_2225765.jpg",
-        "theranos/pixabay_i_2225766.jpg",
-        "theranos/pexels_i_159720.jpg",
-        "theranos/pexels_i_37726703.jpg"
+        "theranos/SPN-0012.png",
+        "theranos/SPN-0012_02.png",
+        "theranos/SPN-0012_03.png",
+        "theranos/SPN-0012_04.png",
+        "theranos/SPN-0012_05.png",
+        "theranos/SPN-0012_06.png",
+        "theranos/SPN-0012_07.png",
+        "theranos/SPN-0012_08.png",
+        "theranos/SPN-0012_09.png",
+        "theranos/SPN-0012_10.png",
+        "theranos/SPN-0012_11.png"
       ]
     },
     {
@@ -258,17 +266,17 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 26.4,
       "assetType": "motion_graphic",
       "motion": "graphic_anim",
-      "src": "theranos/pixabay_i_923898.jpg",
+      "src": "theranos/SPN-0014_02.png",
       "telop": [
         "2022 — GUILTY: 4 counts (investor fraud)"
       ],
       "priority": "A",
       "images": [
-        "theranos/pixabay_i_923898.jpg",
-        "theranos/pixabay_i_3324024.jpg",
-        "theranos/pexels_i_6077797.jpg",
-        "theranos/pexels_i_30483132.jpg",
-        "theranos/pixabay_i_677940.jpg"
+        "theranos/SPN-0014_02.png",
+        "theranos/SPN-0019_05.png",
+        "theranos/SPN-0002_06.png",
+        "theranos/SPN-0002_07.png",
+        "theranos/SPN-0002_08.png"
       ]
     },
     {
@@ -277,16 +285,17 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 18.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/pixabay_i_677945.jpg",
+      "src": "theranos/SPN-0014.png",
       "telop": [
         "ACQUITTED: patient counts · NO VERDICT: 3 counts"
       ],
       "priority": "A",
       "images": [
-        "theranos/pixabay_i_677945.jpg",
-        "theranos/pexels_i_7483195.jpg",
-        "theranos/pexels_i_7649100.jpg",
-        "theranos/pixabay_i_2636065.jpg"
+        "theranos/SPN-0014.png",
+        "theranos/SPN-0014_02.png",
+        "theranos/SPN-0014_03.png",
+        "theranos/SPN-0014_04.png",
+        "theranos/SPN-0014_05.png"
       ]
     },
     {
@@ -295,19 +304,19 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 43.2,
       "assetType": "stock_video",
       "motion": "video_native",
-      "src": "theranos/pixabay_v_28236.mp4",
+      "src": "theranos/pixabay_v_229254.mp4",
       "telop": [
         "Acquittal ≠ exoneration. Balwani: convicted on all 12."
       ],
       "priority": "A",
       "clips": [
         {
-          "src": "theranos/pixabay_v_28236.mp4",
-          "clipSeconds": 15.0
-        },
-        {
           "src": "theranos/pixabay_v_229254.mp4",
           "clipSeconds": 13.67
+        },
+        {
+          "src": "theranos/pixabay_v_28236.mp4",
+          "clipSeconds": 15.0
         }
       ]
     },
@@ -317,15 +326,16 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 18.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/pixabay_i_2578873.jpg",
+      "src": "theranos/SPN-0016.png",
       "telop": [
         "Sentenced: ~11 years, 3 months"
       ],
       "priority": "A",
       "images": [
-        "theranos/pixabay_i_2578873.jpg",
-        "theranos/pexels_i_20417783.jpg",
-        "theranos/pexels_i_19574309.jpg"
+        "theranos/SPN-0016.png",
+        "theranos/SPN-0016_02.png",
+        "theranos/SPN-0016_03.png",
+        "theranos/SPN-0016_04.png"
       ]
     },
     {
@@ -334,17 +344,18 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 26.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/pixabay_i_826993.jpg",
+      "src": "theranos/SPN-0017.png",
       "telop": [
         "\"Fake it till you make it\" — usually legal"
       ],
       "priority": "C",
       "images": [
-        "theranos/pixabay_i_826993.jpg",
-        "theranos/pixabay_i_477987.jpg",
-        "theranos/pexels_i_8850753.jpg",
-        "theranos/pexels_i_51343.jpg",
-        "theranos/pixabay_i_3212015.jpg"
+        "theranos/SPN-0017.png",
+        "theranos/SPN-0017_02.png",
+        "theranos/SPN-0017_03.png",
+        "theranos/SPN-0017_04.png",
+        "theranos/SPN-0017_05.png",
+        "theranos/SPN-0017_06.png"
       ]
     },
     {
@@ -375,15 +386,16 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 26.8,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/pixabay_i_623167.jpg",
+      "src": "theranos/SPN-0019.png",
       "telop": [],
       "priority": "C",
       "images": [
-        "theranos/pixabay_i_623167.jpg",
-        "theranos/pexels_i_9364799.jpg",
-        "theranos/pexels_i_12727666.jpg",
-        "theranos/pixabay_i_1701179.jpg",
-        "theranos/pixabay_i_2672054.jpg"
+        "theranos/SPN-0019.png",
+        "theranos/SPN-0019_02.png",
+        "theranos/SPN-0019_03.png",
+        "theranos/SPN-0019_04.png",
+        "theranos/SPN-0019_05.png",
+        "theranos/SPN-0019_06.png"
       ]
     },
     {
@@ -392,19 +404,21 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 36.4,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/pexels_i_10466471.jpg",
+      "src": "theranos/SPN-0020.png",
       "telop": [
         "One question, many costumes: where is the line?"
       ],
       "priority": "C",
       "images": [
-        "theranos/pexels_i_10466471.jpg",
-        "theranos/pixabay_i_986047.jpg",
-        "theranos/pixabay_i_4988448.jpg",
-        "theranos/pexels_i_37730971.jpg",
-        "theranos/pexels_i_7773262.jpg",
-        "theranos/pixabay_i_7790176.jpg",
-        "theranos/pixabay_i_1078870.jpg"
+        "theranos/SPN-0020.png",
+        "theranos/SPN-0020_02.png",
+        "theranos/SPN-0020_03.png",
+        "theranos/SPN-0020_04.png",
+        "theranos/SPN-0020_05.png",
+        "theranos/SPN-0020_06.png",
+        "theranos/SPN-0020_07.png",
+        "theranos/SPN-0020_08.png",
+        "theranos/SPN-0020_09.png"
       ]
     },
     {
@@ -433,15 +447,16 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 14.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/pexels_i_17155842.jpg",
+      "src": "theranos/SPN-0022.png",
       "telop": [
         "Subscribe — one line at a time"
       ],
       "priority": "C",
       "images": [
-        "theranos/pexels_i_17155842.jpg",
-        "theranos/pexels_i_37538043.jpg",
-        "theranos/pixabay_i_319668.jpg"
+        "theranos/SPN-0022.png",
+        "theranos/SPN-0022_02.png",
+        "theranos/SPN-0022_03.png",
+        "theranos/SPN-0022_04.png"
       ]
     },
     {
@@ -450,16 +465,17 @@ export const THERANOS_ROUGHCUT: RoughCutData = {
       "seconds": 22.0,
       "assetType": "ai_image",
       "motion": "ken_burns",
-      "src": "theranos/pexels_house_for_sale.jpg",
+      "src": "theranos/SPN-0023.png",
       "telop": [
         "Prestige became a substitute for scrutiny"
       ],
       "priority": "C",
       "images": [
-        "theranos/pexels_house_for_sale.jpg",
-        "theranos/pixabay_i_6841384.jpg",
-        "theranos/pexels_i_19782580.jpg",
-        "theranos/pexels_i_36852946.jpg"
+        "theranos/SPN-0023.png",
+        "theranos/SPN-0023_02.png",
+        "theranos/SPN-0023_03.png",
+        "theranos/SPN-0023_04.png",
+        "theranos/SPN-0023_05.png"
       ]
     },
     {
