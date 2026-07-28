@@ -162,7 +162,20 @@ clone して作る: `qc_fieldtest_stills.py`（← `qc_burge_stills.py`）· `bu
 
 ## 1.3 機械ゲート（`build_fieldtest_asset_manifest.py --verify` の内部）
 
+> **★★ R3（2026-07-29）BLOCKING 訂正。v001 の正規表現は、本書自身の 267本のプロンプトを 100% 落とす。** 実測した: 全プロンプトが `no readable text` で終わるので `readable` に必ず当たり、`no likeness` / `unreadable as a portrait` を含む行は `likeness` `portrait` にも当たる。**このまま実装すると `--verify` が全件 reject するか、実装者がゲートを緩めることになる（CLAUDE invariant 15 違反）。** 正しい形は「**許容フレーズを先に消してから禁止語を探す**」であり、以下が確定仕様である。
+
 ```python
+# ① 先に「許容フレーズ」を消す。ここを消さずに ② を当ててはならない。
+PERMITTED = re.compile(
+    r"no readable text|no legible [a-z ]+|unreadable(?: smear| as a portrait)?|illegible|"
+    r"no likeness|not a likeness of [^,]*|resembl\w+ no real individual|no visible face|"
+    r"no identifiable face|no face|anonymized|anonymised|non-identifiable|silhouette|"
+    r"back of head|hands only|out of focus face|generic unmarked uniform|"
+    r"no insignia|no badge number|no precinct number|no agency seal|no department seal|"
+    r"no drug use|no restraint|never near skin|no blood|no wound|no corpse|no violence",
+    re.I)
+
+# ② 残った文字列にだけ当てる。
 BANNED_PORTRAIT = re.compile(
     r"albritton|mcclelland|acevedo|velasquez|richardson|barker|munier|chandler|"
     r"devon anderson|l\.?\s?j\.?\s?scott|likeness|portrait|mugshot|celebrity|deepfake",
@@ -173,7 +186,17 @@ BANNED_ACCURACY = re.compile(
     r"blood|wound|corpse|badge number|precinct number|agency seal|department seal|"
     r"texas ban|kits banned|effective date|readable|legible",
     re.I)
+
+def scan(s: str) -> list[str]:
+    """s = プロンプト本文 / tags / caption_hint / covers / subtype のいずれか1本。"""
+    stripped = PERMITTED.sub(" ", s)
+    hits = []
+    if BANNED_PORTRAIT.search(stripped): hits.append("BANNED_PORTRAIT")
+    if BANNED_ACCURACY.search(stripped): hits.append("BANNED_ACCURACY")
+    return hits
 ```
+> **検算（R3 実施済み）:** `scan()` を本書の 267本全部に通すと **hits = 0**。①を外すと **267/267 が hit する**。実装したら必ずこの2通りを走らせて、0 と 267 が出ることを確認してから本番に使うこと。
+> **① の [HNEG]/[NEG] 側について:** ネガティブプロンプト（`Avoid:` 以降）は「作らせないものの列挙」なので、**scan の対象外**。`Avoid:` で split した**前半だけ**を渡す。
 > 許容: `anonymized`, `non-identifiable`, `silhouette`, `back of head`, `hands only`, `out of focus face`, `unreadable smear`, `generic unmarked uniform`, `food debris perhaps (attributed)` — ただし最後のものはプロンプト本文では使わず、`caption_hint` にのみ書く。
 
 ---
@@ -181,19 +204,20 @@ BANNED_ACCURACY = re.compile(
 # 2. 台本の語数と尺の確定値（Aが素材点数を積算する根拠）
 
 ```
-narration words (measured, check_script_length PASS)     = 4,750
+narration words (measured, check_script_length PASS)     = 4,673   ★R3 更新（旧 4,750）
 provisional wpm (★178.1 ではなく 172.0 — EP55/EP56 で
   実測 +71.2s / +71.8s のドリフトが2話連続で出たため)      = 172.0
-narration provisional                                    = 1,657.0 s
-designed gap budget (幕転換の息継ぎ・AEカード下の保持)      =   172.0 s
+narration provisional                                    = 1,630.1 s
+designed gap budget (幕転換の息継ぎ・AEカード下の保持)      =   198.9 s  ★R3（旧 172.0）
 endcard                                                  =     9.0 s
-TOTAL provisional                                        = 1,838.0 s = 30:38
-picture (TOTAL - endcard)                                = 1,829.0 s
-durationInFrames                                         = 55,140
-speech ratio 1838.0/1657.0                               = 1.109  (1.04–1.30 内)
-幕別語数: HOOK 117 / OPENING 50 / ACT1 591 / ACT2 720 /
-          ACT3 773 / ACT4 1,014 / ACT5 1,118 / ENDING 367 = 4,750
+TOTAL provisional                                        = 1,838.0 s = 30:38  ★不変
+picture (TOTAL - endcard)                                = 1,829.0 s          ★不変
+durationInFrames                                         = 55,140             ★不変
+speech ratio 1838.0/1630.1                               = 1.128  (1.04–1.30 内)
+幕別語数: HOOK 114 / OPENING 50 / ACT1 582 / ACT2 667 /
+          ACT3 774 / ACT4 1,014 / ACT5 1,105 / ENDING 367 = 4,673
 ```
+> **★R3（2026-07-29・独立レビュー）:** 台本を事実訂正で 77語 削ったが、**TOTAL・picture・durationInFrames は動かしていない**（差分は gap budget に吸収）。したがって **§3 の点数・§3.3 の [1]〜[13] は1つも変わらない。A は従来どおりの本数で調達してよい。**
 > ★TTS 実測後に B が `durationInFrames` を再ロックする（DESIGN §5 の手順）。**A の点数は「比」で決まるので再ロックの影響を受けない**（§3.3 の [2] と [8] だけ再導出）。
 
 ---
@@ -202,17 +226,19 @@ speech ratio 1838.0/1657.0                               = 1.109  (1.04–1.30 �
 
 ## 3.1 内訳（★勝手に変えない・★四層ドクトリン適用済み）
 
-| 層 | 種別 | distinct | cuts | uses上限 | 調達 |
-|---|---|---:|---:|---:|---|
-| **1** | **実写アーカイブ**（archive + factory 棚） | **252** | **252** | 1 | `search_archive.py` → `select_factory_assets.py` → 全点目視 |
-| **2** | AE ヒーローカード 17枚 ≈95s | — | *(overlay・cut に数えない)* | — | B が合成 |
-| **3** | Codex 静止画 body | **210** | **227** | 2 | SDXL 210本×1枚 |
-| **4** | i2v モーション | **42** | **84** | 2 | 種42枚 → Wan 2.2 → RIFE |
-| — | 合成レイヤー（distinct に数えない） | 30 | — | — | 在庫 |
-| — | i2v 種画像（body には回さない） | 42 | 0 | — | SDXL 42本×1枚 |
-| — | thumb_face | 3 | 0 | — | SDXL 3本×1枚 |
-| — | F系 emotive face | 12 | *(採否は B)* | — | SDXL 12本×1枚 |
-| | **合計 distinct** | **504** | **563** | | |
+| 層 | 種別 | distinct | cuts | **% of 563** | uses上限 | 調達 |
+|---|---|---:|---:|---:|---:|---|
+| **1** | **実写アーカイブ**（archive + factory 棚） | **252** | **252** | **44.8 %** | 1 | `search_archive.py` → `select_factory_assets.py` → 全点目視 |
+| **2** | AE ヒーローカード 17枚 **= 100.5s**（★R3 訂正・旧「≈95s」） | — | *(overlay・cut に数えない)* | *(runtime の 5.5 %)* | — | B が合成 |
+| **3** | Codex 静止画 body | **210** | **227** | **40.3 %** | 2 | SDXL 210本×1枚 |
+| **4** | i2v モーション | **42** | **84** | **14.9 %** | 2 | 種42枚 → Wan 2.2 → RIFE |
+| — | 合成レイヤー（distinct に数えない） | 30 | — | — | — | 在庫 |
+| — | i2v 種画像（body には回さない） | 42 | 0 | — | — | SDXL 42本×1枚 |
+| — | thumb_face | 3 | 0 | — | — | SDXL 3本×1枚 |
+| — | F系 emotive face | 12 | *(採否は B)* | — | — | SDXL 12本×1枚 |
+| | **合計 distinct** | **504** | **563** | **100 %** | | |
+
+> **★R3 追記（四層予算のパーセンテージ・DESIGN §1.5 と一字一致）:** 252/563 = **44.76 %**、227/563 = **40.32 %**、84/563 = **14.92 %**、合計 **100 %**。**第一層（実写）が最大層である**という設計の核心が、この表だけで検算できるようにしてある。`archive share ≥ 40 % of cuts` はオーナー指示 2026-07-29 の機械フロア。
 
 ## 3.2 幕別配分（★still は確定・archive/i2v は目安。合計だけが確定）
 
@@ -237,7 +263,7 @@ speech ratio 1838.0/1657.0                               = 1.109  (1.04–1.30 �
 [5] per-asset 上限: still 227/210=1.081(≤2) / archive 252/252=1.000(≤1) / motion 84/42=2.000(≤2)  ✓
 [6] first-use share = 504/563 = 0.8952                              ✓ ≥0.70
 [7] avg uses/source = 563/504 = 1.1171                              ✓ ≤1.4（EP49 は 1.8 で flag された）
-[8] archive 下限 = picture 1829.0/30 = 61.0 → ≥62本。設計値 252本    ✓
+[8] archive 下限 = picture 1829.0/30 = 60.97 → ≥61本。設計値 252本   ✓ ★R3訂正（旧「61.0→≥62」）
 [9] ★HP 比率 = 85/210 = 40.48%                                      ✓ ≥40%（オーナー指示）
 [10] 幕別 still 合計 = 15+40+38+34+46+27+10 = 210                    ✓
 [11] 幕別 ★HP 合計 = 4+16+18+8+22+13+4 = 85                          ✓
@@ -480,7 +506,7 @@ A woman's shape walking away from camera along an outdoor apartment-complex walk
 - `S016.png`
 A two-storey red-brick apartment complex in a small Louisiana town photographed in flat overcast morning light, exterior stairwells, window air-conditioning units, a mown strip of grass, entirely ordinary and well kept, no person, no readable text [STYLE] Avoid: [NEG]
 - `S017.png`
-A cluttered on-site letting office with a laminate counter, a ring binder open on a desk, a wall board hung with numbered key fobs, a desk fan and a half-drunk coffee, morning light through vertical blinds, no person, no readable text [STYLE] Avoid: [NEG]
+A woman seen from behind over her own shoulder at the counter of a cluttered on-site letting office, a ring binder open in front of her and a wall board of numbered key fobs beyond, a desk fan turning and a half-drunk coffee at her elbow, morning light striped across her back through vertical blinds, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S018.png`
 A woman's hands sorting a fan of brass apartment keys on a counter, sleeves pushed to the elbow, a spiral notebook open beside them, warm daylight from a window out of frame, hands only, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S019.png`
@@ -532,7 +558,7 @@ A woman standing at the kerb with her back to camera and her arms folded, seen p
 - `S039.png`
 A car's glove compartment hanging open with an owner's manual, a tyre gauge and a wad of paper napkins spilling toward the footwell, torch light from outside grazing the contents, no person, no readable text [STYLE] Avoid: [NEG]
 ```
-- **what_the_search_found — 7 — S040–S046**（対象物 3点の抽象化）
+- **what_the_search_found — 7 — S040–S046**（★HP 1・対象物 3点の抽象化）
 ```
 - `S040.png`
 A small unbranded paper sachet of headache powder lying creased on a car seat, the printing on it reduced to an unreadable blur, a corner already torn and re-folded, ordinary drugstore ephemera, no person, no readable text [STYLE] Avoid: [NEG]
@@ -549,12 +575,12 @@ Macro of a printed colour comparison strip on a test pouch, a graded band runnin
 - `S046.png`
 A discarded pouch wrapper and a snapped glass tip lying together on wet asphalt beside a kerb, orange lamplight reflected in the puddle around them, the aftermath of a ninety-second procedure, no person, no readable text [STYLE] Avoid: [NEG]
 ```
-- **the_verdict_moment — 9 — S047–S055**（★HP 5・青が決めた後）
+- **the_verdict_moment — 9 — S047–S055**（★HP 4・青が決めた後）
 ```
 - `S047.png`
 A wide shot of a parking lot at night from a raised angle, two vehicles small in the frame and the vast empty asphalt around them, one pool of orange light containing everything that mattered, no person, no readable text [STYLE] Avoid: [NEG]
 - `S048.png`
-A woman's wrists held together low behind her back, framed tightly from the mid-forearm down so no restraint hardware, wound or distress is visible, sleeves plain, orange light on skin, dignified and still, no face, no readable text [HSTYLE] Avoid: [HNEG]
+A woman's wrists held together low behind her back, framed tightly from the mid-forearm down so that no restraint hardware, no injury and no distress is visible, sleeves plain, orange light on skin, dignified and still, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S049.png`
 The open rear door of a plain sedan with a moulded bench seat inside, seen from the kerb, a dark cavity waiting, the vehicle stripped of all markings, no person, no readable text [STYLE] Avoid: [NEG]
 - `S050.png`
@@ -573,7 +599,7 @@ The same passenger seat photographed empty in flat daylight inside a fenced impo
 
 ### ACT 2 — THE FASTEST WAY OUT（38枚・S056–S093・★HP 18）
 
-- **booking_night — 8 — S056–S063**（★HP 4・vial 状態4を含む）
+- **booking_night — 8 — S056–S063**（★HP 3・vial 状態4を含む）
 ```
 - `S056.png`
 A long county booking corridor at night lit by unshaded fluorescent tubes, painted cinder-block walls, a bench bolted to one side, the far end dissolving into glare, empty, no person, no readable text [STYLE] Avoid: [NEG]
@@ -592,14 +618,14 @@ A row of narrow personal-effects lockers with numbered doors in an intake area, 
 - `S063.png`
 Several seated figures spaced along a wall bench in a night intake area, all seen from behind as dark shoulder shapes against pale tile, none identifiable, an ordinary queue of an ordinary night, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 ```
-- **the_lawyer_and_the_offer — 8 — S064–S071**（★HP 4）
+- **the_lawyer_and_the_offer — 8 — S064–S071**（★HP 5）
 ```
 - `S064.png`
 A courthouse corridor in the early morning, terrazzo floor, wooden benches along one wall, tall sash windows throwing long parallelograms of light, entirely empty before the day begins, no person, no readable text [STYLE] Avoid: [NEG]
 - `S065.png`
 A man's hands resting on a thin manila case file balanced on his knee in a corridor, one thumb holding the folder shut, a wristwatch at the cuff, the tab label an unreadable smear, hands only, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S066.png`
-A trolley stacked with dozens of identical thin case folders parked against a corridor wall, each spine bearing an illegible label, the stack taller than the trolley rail, an ordinary morning's caseload, no person, no readable text [STYLE] Avoid: [NEG]
+A clerk's shape pushing a trolley stacked with dozens of identical thin case folders along a corridor wall, seen from a low angle from behind so only the back and the working forearms read, each spine bearing an illegible label, the stack taller than the trolley rail, an ordinary morning's caseload, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S067.png`
 Two figures standing close together in a corridor alcove, one leaning in to speak, both seen from behind and slightly below so neither face is visible, midday window light behind them, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 - `S068.png`
@@ -632,7 +658,7 @@ A wooden gallery pew photographed empty from the side, hymn-board-shaped notice 
 - `S080.png`
 A woman's shape walking away down the centre aisle of a courtroom toward a set of doors, seen from behind at some distance, a bailiff-shaped figure standing motionless to one side, neither identifiable, no readable text [HSTYLE] Avoid: [HNEG]
 ```
-- **twenty_one_days — 6 — S081–S086**（★HP 3・服役の抽象化）
+- **twenty_one_days — 6 — S081–S086**（★HP 4・服役の抽象化）
 ```
 - `S081.png`
 A narrow institutional dormitory corridor with painted breeze-block walls and a strip of skylight, bunk frames visible through an open doorway, everything scrubbed and colourless, empty, no person, no readable text [STYLE] Avoid: [NEG]
@@ -641,13 +667,13 @@ A stack of folded county-issue clothing and a pair of canvas slip-on shoes on a 
 - `S083.png`
 A woman's shape standing at a narrow reinforced window looking out at a car park, seen from behind and slightly to one side, daylight flattening her into a silhouette, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S084.png`
-A wall calendar page in an institutional day room with the grid of dates deliberately unreadable, three days scored through with a biro, the paper curling at one corner, no person, no readable text [STYLE] Avoid: [NEG]
+A woman's hand drawing a biro through one more square on a wall calendar page in an institutional day room, the grid of dates deliberately unreadable, two squares already scored through, the paper curling at one corner, flat day-room light, hand and cuff only, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S085.png`
 Several figures queueing along a painted line on a polished floor, seen from behind as a receding row of shoulders under identical overhead lights, none identifiable, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S086.png`
 A woman's hands returning a plastic property tray across a counter, a wristwatch and a purse inside it, the counter's laminate worn through to chipboard at the edge, hands only, no face, no readable text [HSTYLE] Avoid: [HNEG]
 ```
-- **what_was_waiting — 7 — S087–S093**（★HP 3・出所後の喪失）
+- **what_was_waiting — 7 — S087–S093**（★HP 2・出所後の喪失）
 ```
 - `S087.png`
 A pile of household furniture stacked at a kerb outside an apartment block in flat daylight, a sofa on its end, a lamp with a bent shade, cardboard boxes going soft in the damp, no person, no readable text [STYLE] Avoid: [NEG]
@@ -764,7 +790,7 @@ Macro of a fine capillary column coiled inside a heated oven compartment, the me
 - `S131.png`
 A gloved hand loading a small glass vial into an autosampler tray of numbered wells, the numerals deliberately illegible, laboratory white light, hand and cuff only, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S132.png`
-A laboratory monitor displaying an abstract spectral trace of peaks against a pale grid, all axis labelling reduced to unreadable marks, the room reflected faintly in the screen, no person, no readable text [STYLE] Avoid: [NEG]
+An analyst's shoulder and tied-back hair thrown soft in the near foreground, a laboratory monitor beyond her in focus displaying an abstract spectral trace of peaks against a pale grid, all axis labelling reduced to unreadable marks, over-the-shoulder, cold room light, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S133.png`
 A single small glass tube of pale liquid standing on a laboratory bench beside the housing of a bench instrument, isolated in a pool of cold white light, the object at the centre of everything finally in the right room, no person, no readable text [STYLE] Avoid: [NEG]
 - `S134.png`
@@ -811,7 +837,7 @@ A figure walking away down a long records aisle between towering shelving units,
 - **her_working_years — 8 — S151–S158**（★HP 6・唯一の tonal reset）
 ```
 - `S151.png`
-The interior of an all-night convenience store seen from behind the counter at three in the morning, aisles of packaged goods under hard white light, the door chime unit above the entrance, no person, no readable text [STYLE] Avoid: [NEG]
+A woman in a shop tabard standing far down the aisle of an all-night convenience store at three in the morning, small in a very wide frame under hard white ceiling light, shelves of packaged goods running away on both sides and the door chime unit above the entrance behind her, back turned, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S152.png`
 A woman's hands counting a shallow drawer of banknotes and coins into stacks on a shop counter, the notes worn soft, a fluorescent tube reflected in the glass top, hands only, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S153.png`
@@ -941,7 +967,7 @@ A courthouse door photographed closed from the outside in flat evening light, it
 - `S202.png`
 A woman's shape standing at a bus stop at dusk with a shoulder bag, seen from across the road and slightly behind, traffic passing between camera and subject, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S203.png`
-A residential background-check letter lying unopened on a kitchen table beside a set of keys, the envelope's printed panel blurred beyond reading, evening light going blue at the window, no person, no readable text [STYLE] Avoid: [NEG]
+A woman seated at a kitchen table in the evening with an unopened residential background-check letter and a set of keys in front of her, seen from behind and slightly above so nothing of her face reads, the envelope's printed panel blurred beyond reading, the window beyond her already gone blue, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S204.png`
 A woman's hands folding a work tabard into a bag on a bed at the end of a shift, the movements economical, low bedside light, hands only, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S205.png`
@@ -973,16 +999,40 @@ ENDING: 10
 （残り125は object/symbolic レーン）
 ```
 
+> **★★ R3（2026-07-29）で実測して直した最大の欠陥。** v001 は「★HP 85枚 / 40.5%」と3か所（§3.2・§3.3 [9][11]・本節）で宣言していたが、**§5.6 の 210行を機械で数えると `[HSTYLE]` は 79行しかなく、実測は 79/210 = 37.62%** だった。**オーナーの常設指示は「誕生時から ★HP ≥40%」であり、37.62% は不合格。** 宣言と実体がずれたまま生成に入っていたら、210枚焼き終わってから発覚し、GPU 5〜8時間の焼き直しになっていた。
+> **6行を object レーンから ★HP レーンへ転換して 85 に合わせた（総枚数・幕別枚数・cuts 563 は1つも動かしていない）:**
+> **S017**（ACT1・letting office → 肩越しの女性）· **S066**（ACT2・書類台車 → ローアングル背後の事務員）· **S084**（ACT2・壁掛けカレンダー → 日付を消す手）· **S132**（ACT4・スペクトル画面 → 分析官の肩越し）· **S151**（ACT4・コンビニ内観 → 遠景の店員）· **S203**（ENDING・封筒 → 食卓に座る女性の後ろ姿）。
+> 転換先はすべて **§5.6 冒頭の anti-samey 変化マトリクス**（距離×角度×光×setting×姿勢）で既存85枚と衝突しない軸を選んである（S017=肩越し/朝ブラインド, S066=ローアングル/歩行, S084=手/day-room光, S132=over-the-shoulder, S151=far-wide, S203=座位/背後やや上）。
+> **加えて S048 の本文の "wound" を "injury" に変えた** — §1.3 の `BANNED_ACCURACY` に `wound` があり、許容フレーズを剥がしたあとも唯一残る誤検知だったため。
+> **ブロック見出しの ★HP 数も実体に合わせて訂正した**（what_the_search_found 0→1 / the_verdict_moment 5→4 / booking_night 4→3 / the_lawyer_and_the_offer 4→5 / twenty_one_days 3→4 / what_was_waiting 3→2）。**幕別合計は 4/16/18/8/22/13/4 = 85 で §3.2 と一致する。**
+
+## 5.7a ★R3 REGEN LIST（Codex が既に生成を始めている場合、この7枚だけ焼き直す）
+
+| ファイル | 旧レーン | 新レーン | 理由 |
+|---|---|---|---|
+| `S017.png` | object | **★HP** | ★HP 85枚に合わせる（ACT1 +1） |
+| `S048.png` | ★HP | ★HP（本文のみ変更） | `wound` → `injury`（§1.3 誤検知の解消） |
+| `S066.png` | object | **★HP** | ★HP 85枚に合わせる（ACT2 +1） |
+| `S084.png` | object | **★HP** | ★HP 85枚に合わせる（ACT2 +1） |
+| `S132.png` | object | **★HP** | ★HP 85枚に合わせる（ACT4 +1） |
+| `S151.png` | object | **★HP** | ★HP 85枚に合わせる（ACT4 +1） |
+| `S203.png` | object | **★HP** | ★HP 85枚に合わせる（ENDING +1） |
+
+> **他の 203 枚のプロンプトは1文字も変えていない。** 焼き直しはこの7枚だけでよい。`[STYLE]/[NEG]` から `[HSTYLE]/[HNEG]` へレーンが変わる6枚は、**必ず新しいレーンのスタイル文字列で焼く**（§5.5-1 のレーン厳守）。QC フラグは `has_human_body:true` になるが、それ単独では reject しない（§4.1a）。
+
 ## 5.8 メタJSON
 画像ごとの meta JSON は作らない。`qc_fieldtest_stills.py` が sha256 / phash / mean_luma を `still_qc.v001.json` に記録する。
 
 ## 5.9 パーサ契約（`read_prompts()` はこの2行形式しか読まない）
 
 ```
-- `S001.png`
-<positive prompt> Avoid: <negative>
+- `S###.png`
+<positive prompt を1行で> Avoid: <negative を同じ行に>
 ```
 1行目はバッククォートで囲んだファイル名のみ。2行目に本文を1行で書く（改行しない）。**この形式を崩すと `check_prompt_diversity.py` がプロンプトを抽出できず、coverage ゲートで FAIL する。**
+
+> **★R3（2026-07-29）BLOCKING な罠を1つ潰した。** v001 のこの見本は実在IDの **`S001.png`** を使っていた。`generate_sdxl_4k.py` の `read_prompts()` は「バッククォートのファイル名行 → 次の `Avoid:` を含む行」をそのまま拾い、**同名IDを2件目として append する**（重複排除しない）。本書を丸ごとパーサに通すと **S001 が `<positive prompt>` という中身で二重登録され、`shots=255` の確認も 256 になる**。ID を `S###` に変えたので `^-\s*`?[SMTF]\d{2,3}` にも `\b[SMTF]\d{2,3}\b` にも当たらない。
+> **さらに:** **§5.9 のこの見本行は書式説明であって素材ではない。`04_scenes/ai_prompts.v001.md` に転記しない。** 転記するのは §5.6（S001–S210）・§8.1a（M01–M42）・§5.12（T01–T03）・§5.13（F001–F012）の合計 **267行だけ**。
 
 ## 5.10 生成コマンド（★variants 指定なし。`--variants 3` は使わない）
 
