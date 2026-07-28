@@ -39,6 +39,16 @@ MIN_LUMA = 8.0
 OVERSELECT = 2.0            # ask for more than needed; dark/dup/missing ones are dropped
 OVERLAY_CLASS_PREFIXES = ("AF-LIGHT", "AF-PART", "AF-VFX")   # screen-blend plates, not b-roll
 
+# Ledger tiers worth staging. `weak` means the ledger could NOT recover a real provider title
+# for the file, so its theme is still just the download QUERY -- and the download query is the
+# thing that is 40% wrong. Measured on legal_court (2026-07-29): every tier=match item was
+# genuinely on-theme ("scale of justice", "lady justice statue", "a serious lawyer"), while the
+# tier=weak items all carried recovered_title "id" and turned out to be a BMW dashboard, a wine
+# glass, a Byzantine church, a bedroom, a ski lodge and a Christmas dinner table -- all labelled
+# `courtroom_interior`. Ten of ten were wrong. Never stage `weak`.
+GOOD_TIERS = ("match", "match:dual_subject", "cross_theme->here")
+UNKNOWN_TITLES = {"", "id", "none", "null"}
+
 
 def sample_times(path: Path) -> list[float]:
     try:
@@ -101,6 +111,9 @@ def main() -> int:
                     help="theme:count,theme:count,... e.g. legal_court:60,crime_police:45")
     ap.add_argument("--exclude-used", action="store_true",
                     help="skip clips already used by other episodes (footage diversity)")
+    ap.add_argument("--allow-weak", action="store_true",
+                    help="also stage tier=weak items (their theme is the unverified download "
+                         "query; 10/10 sampled were off-topic). Not recommended.")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -117,11 +130,17 @@ def main() -> int:
         plan.append((theme.strip(), int(n)))
 
     already = {p.name for p in dest.iterdir()} if dest.is_dir() else set()
-    staged_total = dark = missing = dup = overlay_class = 0
+    staged_total = dark = missing = dup = overlay_class = weak_dropped = 0
     per_theme: dict[str, int] = {}
 
     for theme, want in plan:
-        rows = select(theme, int(want * OVERSELECT) + 10, ep, a.exclude_used)
+        rows = select(theme, int(want * OVERSELECT * 3) + 20, ep, a.exclude_used)
+        n_raw = len(rows)
+        if not a.allow_weak:
+            rows = [r for r in rows
+                    if r.get("tier") in GOOD_TIERS
+                    and str(r.get("recovered_title") or "").strip().lower() not in UNKNOWN_TITLES]
+            weak_dropped += n_raw - len(rows)
         got = 0
         for row in rows:
             if got >= want:
@@ -161,7 +180,8 @@ def main() -> int:
         print(f"  {theme:<22} staged {got}/{want}  (candidates {len(rows)})")
 
     print(f"[{a.slug}] factory staged={staged_total} "
-          f"(skipped: dark/stub={dark} overlay-class={overlay_class} missing={missing} already-present={dup})")
+          f"(skipped: weak-tier={weak_dropped} dark/stub={dark} overlay-class={overlay_class} "
+          f"missing={missing} already-present={dup})")
     print(f"[{a.slug}] per-theme: {per_theme}")
     if a.dry_run:
         print("(dry-run) nothing copied")
