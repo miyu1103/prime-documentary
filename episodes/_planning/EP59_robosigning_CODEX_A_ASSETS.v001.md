@@ -133,6 +133,15 @@ cd C:\Users\aab15\Documents\prime-documentary
 # [A-DONE-3] 静止画の解像度ゲート（長辺 >=3840）
 ./.venv/Scripts/python.exe scripts/qc_robosigning_stills.py --check-resolution
 
+# ★★ [A-DONE-6] 可読テキスト / 可読署名ゲート（R3 BLOCKER FIX 2026-07-29）
+#   v001 にはこの行がなかった——つまり本作最大のリスクである「読める署名」に対する赤/緑判定が
+#   完了条件のどこにも存在しなかった（§6.1 Q5/Q6 は定義されていたがどのゲートにも繋がっていない）。
+#   依存導入をここで明示的に許可する（§0.3 の「これ以外を新規に作らない」の明示例外）:
+#     pip install opencv-python-headless imagehash pillow
+./.venv/Scripts/python.exe scripts/qc_robosigning_stills.py --check-text --check-signature
+#   → Q5 fail=0 / Q6 fail=0。267枚すべてで exit 0 でなければ未完了。
+#   → 加えて **署名モチーフを含む全行の 100% 目視**を必須とする。機械検査だけでは筆記体を捕まえられない。
+
 # [A-DONE-4] factory の視覚QCゲート（★全235本を目で見た記録があること）
 ./.venv/Scripts/python.exe scripts/check_visual_asset_qc.py --ep PD-2026-059-robosigning
 
@@ -151,6 +160,7 @@ cd C:\Users\aab15\Documents\prime-documentary
 ## 1.1 R1/R2（生成ビジュアル全般）
 
 1. **★R-FACE: 匿名・非識別の人物は可／実在人物の likeness は不可。** 匿名の一般人（実在の誰にも似せない・非識別のドラマ化スタンドイン）＝顔・身体を出してよい（§5.11 H シリーズ・`[HSTYLE]`/`[HNEG]`・§5.12 thumb_face・§5.13 F シリーズ）。ただし **実在人物の顔・likeness・肖像は作らない**＝本件の住宅所有者夫妻・Jeffrey Stephan・Linda Green・Lorraine Brown・Chris Pendley・実在の判事/州司法長官/連邦規制当局者/銀行 CEO を**似せて描かない**。実在人物が示唆される所（署名者・公証人・サービサー幹部・弁護士・判事・被害世帯）は非識別（背向き/影/逆光/目から下でクロップ/hands-only）を既定に保つ。
+   > ★★ **R3 MAJOR FIX 2026-07-29 — v001 はここで §5.12 / §5.13 と真っ向から衝突しており、解決規則がなかった。** §5.13 は owner 承認（2026-07-25）を根拠に F系12枚の「見える顔」を要求するが、本行を修正していないので、上から順に読むオペレータは矛盾にぶつかる。**例外をここに明記する:** §5.12 thumb_face 3枚 と §5.13 F系 12枚 は、**【非実在・誰にも似せない】を前提に見える顔を作ってよい**。ただし **中心的実在人物に隣接する役（署名者・公証人・幹部・被害世帯）は §5.13(b) の semi-painterly illustrative レーンに限る**。★**これにより F007（generic notary の photoreal medium-close-up）は (a) photoreal レーンから (b) illustrative レーンへ移すこと** — 公証人は本作で実在人物（Shawanna Crite）が直接対応する役であり、F系の中で最も露出が大きい行だった。
 2. **★R-SIGNATURE-ILLEGIBLE（本作の最重要禁止）: 署名・書類の文字を一切判読可能に描かない。** 署名は常に **abstract ink mark / illegible looping stroke / a wet dark stroke with no letterforms**。**実在・架空を問わず、人名として読める署名を1枚も作らない。** 人名の綴りをプロンプトに書かない。affidavit・deed・mortgage assignment・notice of default・小切手・判決文・銀行明細は**全て "blurred into an unreadable smear"**。金額・件数（$139,000 / $25 billion / $300 / 10,000 / one per minute 等）を**画像に描かない**（AE/figures のタイポで出す＝B の担当）。
 3. **★R-NO-LOGO: 実在の銀行・サービサー・政府機関のロゴ、名称、州章、連邦印章、通貨の可読の額面を描かない。** 建物は generic。封筒・書類は無地。
 4. **★R-NO-DISTRESS-PORN: 立ち退きの扇情的描写を作らない。** 手錠・保安官の強制排除・泣き崩れる家族・路上に投げ出された家財を作らない。**家は常に aftermath＝無人・静か・鍵が掛かっている。** 人物ビートは待つ・見る・数える・運ぶ・鍵を握る等の抑制された行為に限る。
@@ -158,7 +168,7 @@ cd C:\Users\aab15\Documents\prime-documentary
 
 ## 1.2 ★正確性制約（Aが書く全文字列＝プロンプト・`tags`・`caption_hint`・`eyeballed_content`・`notes`・ファイル名に適用。違反はBLOCKER）
 
-1. **R-SIGN-ILLEGIBLE:** "legible signature", "readable signature", "signature reading", "readable name on the document" を書かない。署名は `an abstract illegible ink stroke` 系のみ。実在人物名の綴りを署名の内容として書かない。
+1. **R-SIGN-ILLEGIBLE:** "legible signature", "readable signature", "signature reading", "readable name on the document" を**正プロンプトと manifest の文字列値に**書かない。★ **R3 BLOCKER FIX 2026-07-29 — ネガティブプロンプト（`Avoid:` 以降）は本ルールの適用外。** 本ルールは v001 で無スコープだったが、`legible signature` は `[NEG]`/`[HNEG]`/`[TNEG]`/`[FNEG]` に合計8回登場する（禁止語をわざと列挙するのがネガの仕事だから）。上の BLOCKER FIX でマクロを展開した瞬間、スコープなしだと **267行全部が `check_robosigning_facts.py` で確実に落ちる**。だからスコープは必須。署名は `an abstract illegible ink stroke` 系のみ。実在人物名の綴りを署名の内容として書かない。
 2. **R-READABLE:** "legible affidavit / readable deed / readable notice / readable cheque / legible court record / legible bank statement / readable dollar figure" を正プロンプトに書かない。全て `unreadable smear`。
 3. **R-GREEN-VICTIM:** 名前を使われた実在従業員を "forger / fraudster / criminal" と書かない。署名モチーフの注記は常に「a name used by other hands」枠。
 4. **R-STEPHAN-EMPLOYEE:** 署名担当の従業員を "mastermind / architect / crime boss" と書かない。彼は **evidence**（自分の宣誓証言）であって設計者ではない。
@@ -175,6 +185,10 @@ cd C:\Users\aab15\Documents\prime-documentary
 ## 1.3 機械ゲート（`build_robosigning_asset_manifest.py --verify` の内部）
 
 A が書いた全JSONの全文字列値に対し、1件でもヒットで exit 1:
+
+> ★★ **R3 2026-07-29 — 適用範囲を二つ直す。**
+> **(a) ネガティブは除外する。** `BANNED_ACCURACY` / `check_robosigning_facts.py` は **正プロンプト側と manifest の文字列値にのみ**適用する。`Avoid:` 以降のネガティブプロンプトは禁止語を意図的に列挙するため、除外しないと全行が偽陰性で落ちる（§1.2-1 と同じ fix）。実装例：`pos, _, neg = row.partition("Avoid:")` して `pos` だけを検査する。
+> **(b) 正プロンプト本文を manifest に入れる。** v001 の §4.1a エントリは `prompt_id` / `tags` / `caption_hint` / `eyeballed_content` / `notes` しか持たないので、この正規表現は **画像を生んだ指示文を一度も見ていない**（メタデータだけを監査していた）。§4.1a の stills エントリに `"prompt": "<正プロンプト全文（マクロ展開後）>"` を追加し、§4.2 不変条件6 の適用範囲に含めること。
 
 ```python
 import re
@@ -214,7 +228,7 @@ speech ratio         = 1783.0 / 1575.0 = 1.132（実測帯 1.04–1.30 内）
 durationInFrames     = 53,490（fps30 = 1783 x 30・VO onset 0.0）★PROVISIONAL
 ★★ measured-VO re-lock 後の値が正典（DESIGN §5 の手順）。A は素材点数の積算にしか使わないので、
    re-lock で total が動いても【素材の点数（210/42/235/30/3/12）は変えない】。
-mean_shot            = 3.152秒/カット（picture 1774.0 = total 1783.0 - endcard 9 / 563 cuts）
+mean_shot            = 3.151秒/カット（picture 1774.0 = total 1783.0 - endcard 9 / 563 cuts）
 視覚 acts             = 5（+ HOOK/OPENING と ENDING は別区）
 Act 語数配分（★MEASURED・script.en.v001 を機械集計）:
   HOOK 159 / OP 60 / ACT1 491 / ACT2 547 / ACT3 822 / ACT4 930 / ACT5 1,200 / ENDING 466 = 4,675
@@ -275,7 +289,7 @@ Act 語数配分（★MEASURED・script.en.v001 を機械集計）:
 
 ```
 [1] 総カット数 563 = still 244 + factory 235 + i2v 84
-[2] 平均ショット長 = picture 1774.0（total 1783.0 - endcard 9）/ 563 = 3.152秒/カット  OK (<=7.0)
+[2] 平均ショット長 = picture 1774.0（total 1783.0 - endcard 9）/ 563 = 3.151秒/カット  OK (<=7.0)
 [3] 静止画占有率(check_animation_mix) = 244/563 = 43.34%  OK <=45%（余裕 1.66%pt）
 [4] motion coverage = (235+84)/563 = 319/563 = 56.66%     OK >=45%
 [5] per-asset 上限: still 244/210=1.162(<=2) / factory 235/235=1.0(<=1) / motion 84/42=2.0(<=2)  OK
@@ -300,7 +314,7 @@ Act 語数配分（★MEASURED・script.en.v001 を機械集計）:
 **パス:** `episodes/PD-2026-059-robosigning/05_visuals/asset_manifest.v001.json`
 **スキーマ版:** `robosigning_assets.v1`（固定文字列）
 **生産者:** `scripts/build_robosigning_asset_manifest.py`（**A が実装。他の誰もこのファイルを書かない**）
-**★A(producer)とB(consumer/validator)で counts / role enum / overlay枚数 / also_thumb集合 / thumb_face枚数 を一字一致。** role enum は **`body | i2v_source | thumb_face | reject` のみ**。also_thumb は body still **ちょうど4枚**。thumb_face は **ちょうど3枚**。overlay は **ちょうど30本**。
+**★A(producer)とB(consumer/validator)で counts / role enum / overlay枚数 / also_thumb集合 / thumb_face枚数 を一字一致。** role enum は **`body | i2v_source | thumb_face | emotive_face | reject`**。★**R3 MAJOR FIX 2026-07-29: `emotive_face` を追加した。** v001 の enum に F系の値がなく、`stills` は 255 固定、`counts` に F フィールドがなく、§10.1 のステージング一覧に `F*.png` がなかったので、**B は構造的に F001–F012 を見られなかった**——生成し QC もした12枚が死に素材になる、§4.4 が防ぐために書かれた EP45 の失敗クラスそのものだった。**あわせて: `stills` 配列長 = 267、`counts` に `"emotive_face": 12` を追加、§10.1 に `remotion/public/robosigning/face/F001.png .. F012.png（12）` を追加すること。**also_thumb は body still **ちょうど4枚**。thumb_face は **ちょうど3枚**。overlay は **ちょうど30本**。
 
 ## 4.1 スキーマ（`robosigning_assets.v1`）
 
@@ -321,7 +335,7 @@ Act 語数配分（★MEASURED・script.en.v001 を機械集計）:
     "thumb_face": 3,          // ==3
     "also_thumb": 4           // ==4
   },
-  "stills":  [ /* 210 body + 42 i2v_source + 3 thumb_face = 255 entries */ ],
+  "stills":  [ /* 210 body + 42 i2v_source + 3 thumb_face + 12 emotive_face = 267 entries ★R3 */ ],
   "factory": [ /* 235 entries — SECTION 4.4 — public_path 非空 */ ],
   "motion":  [ /* 42 entries  — SECTION 4.5 — public_path 非空 */ ],
   "overlay": [ /* 30 entries  — SECTION 4.6 */ ]
@@ -333,7 +347,7 @@ Act 語数配分（★MEASURED・script.en.v001 を機械集計）:
 ```jsonc
 {
   "asset_id": "ROB-S001",
-  "role": "body",                       // body | i2v_source | thumb_face | reject
+  "role": "body",                       // body | i2v_source | thumb_face | emotive_face | reject  ★R3
   "act": 0,
   "src_path": "H:/pd-media/assets/ai/robosigning/S001.png",
   "public_path": "robosigning/img/S001.png",
@@ -348,6 +362,7 @@ Act 語数配分（★MEASURED・script.en.v001 を機械集計）:
   "has_identifiable_real_person": false,// 必ず false
   "has_readable_text": false,           // 必ず false
   "has_legible_signature": false,       // ★本作固有・必ず false
+  "prompt": "<★R3必須: 正プロンプト全文（マクロ展開後・Avoid: 以前）>",
   "tags": ["hook","lockbox","house"],
   "caption_hint": "<= 60 chars, section 1.2 準拠",
   "eyeballed_content": "<A が実際に見たものを一文で>",
@@ -361,7 +376,7 @@ Act 語数配分（★MEASURED・script.en.v001 を機械集計）:
 2. `stills` 配列長 == 255、`factory` == 235、`motion` == 42、`overlay` == 30。**空配列は即 FAIL**（EP45 事故）。
 3. 全 `src_path` / `public_path` が**実在**（`Path.exists()`）。`i2v_source` と `thumb_face` の `public_path` は `null`。
 4. `sha256` の**重複ゼロ**（全レーン横断）。
-5. `role` は enum 4値のみ。`also_thumb:true` は body ちょうど4枚（§4.3a と一致）。
+5. `role` は enum **5値**のみ（★R3: `emotive_face` 追加）。`also_thumb:true` は body ちょうど4枚（§4.3a と一致）。
 6. **全文字列値に §1.3 の `BANNED_PORTRAIT` / `BANNED_ACCURACY` を適用して 0 hit。**
 7. 全 still の `has_identifiable_real_person == false` かつ `has_readable_text == false` かつ `has_legible_signature == false`。
 8. `long_edge >= 3840`（body/i2v_source）。thumb_face は 1280x720 で可。
@@ -764,7 +779,13 @@ API:   http://127.0.0.1:7860（ローカル AUTOMATIC1111・課金なし）
 
 ## 5.2 ★210本の作り方＝「motif ライブラリ」テンプレート方式
 
-210 の固有プロンプトを**幕×motifで体系化**する。各 motif に (a) **確定 distinct 枚数**、(b) **S番号レンジ**、(c) **literal プロンプト** を与える。**§5.6 は S001–S210 の全210行を literal 化済み。Codex は各行をそのまま `ai_prompts.v001.md` に転記する（変奏を新たに書かない・行を増減しない・S番号を並べ替えない）。**
+210 の固有プロンプトを**幕×motifで体系化**する。各 motif に (a) **確定 distinct 枚数**、(b) **S番号レンジ**、(c) **literal プロンプト** を与える。**§5.6 は S001–S210 の全210行を literal 化済み。Codex は各行の**創作部分をそのまま**`ai_prompts.v001.md` に転記する（変奏を新たに書かない・行を増減しない・S番号を並べ替えない）。**
+> ★★ **R3 BLOCKER FIX 2026-07-29 — マクロは必ず展開する。** 行末の `[STYLE]`/`[HSTYLE]`/`[TSTYLE]`/`[FSTYLE]` と `Avoid:` 直後の `[NEG]`/`[HNEG]`/`[TNEG]`/`[FNEG]` は、**§5.3 / §5.4 / §5.11 / §5.12 / §5.13 の全文に展開して書く**こと。`scripts/generate_sdxl_4k.py` はマクロ置換を一切行わない（L74–87 で `Avoid:` を分割してそのまま渡すだけ）ので、トークンのまま転記すると **267枚全部で「判読不能化」指示と 155語の禁止リストが丸ごと消える**（残るのはスクリプト内の `DEFAULT_NEG` だけで、`letters` / `numerals` / `legible affidavit` / `government seal` / `handcuffs` / `child` を含まない）。§5.10 の smoke test（`--only S001` → `shots=255`）は **展開してもしなくても同じく通る**ので、これを捕まえるゲートは下の grep しかない。
+> ```
+> # 展開確認（必須・§5.10 と [A-DONE-3] の直前に実行）
+> grep -c '\[STYLE\]\|\[NEG\]\|\[HSTYLE\]\|\[HNEG\]\|\[TSTYLE\]\|\[TNEG\]\|\[FSTYLE\]\|\[FNEG\]' episodes/PD-2026-059-robosigning/04_scenes/ai_prompts.v001.md
+> #   → **0 以外なら形式が壊れている。生成を開始してはいけない。**
+> ```
 
 > ★**1シーン1枚・variants 0。** 各プロンプト末尾に §5.3 の `[STYLE]`（人物なし象徴 still）**または** §5.11 の `[HSTYLE]`（匿名人物 still）を**全文連結**、`Avoid:` の後に §5.4 `[NEG]`（象徴）**または** §5.11 `[HNEG]`（匿名人物）を**全文連結**。
 > **★2レーン構成: 210 body = object/symbolic 122枚（`[STYLE]`+`[NEG]`・人物なし）＋ ★human-present 88枚（41.9%・`[HSTYLE]`+`[HNEG]`・匿名/非識別・背向き/影/silhouette/hands・adults only）。** 該当 S-range は §5.6 で `★HP` と明記。
@@ -791,6 +812,8 @@ text, words, letters, numbers, numerals, captions, watermark, logo, brand mark, 
 
 - **body 210 は2レーン（§5.2）:** object/symbolic 122枚＝§5.3/§5.4（人物なし）、**human-present 88枚（41.9%）＝§5.11 `[HSTYLE]`/`[HNEG]`**。
 - **可読文字・可読数字なし。** affidavit/deed/notice/小切手/判決/明細/ロゴ/印章/金額を描かない。
+- ★★ **R3 2026-07-29 — 末尾の `no readable text` だけに依存しないこと（生成前の必須スイープ）。** 監査で、ページの表面が画面に入るのに本文側の判読不能化指示がなく、末尾の `no readable text` だけで受けている行が **約15行**見つかった（S042 / S046 / S069 / S071 / S111 / S123 / S128 / S129 / S162 / S174 / S181 / S204 / M14_src / M17_src / M34_src。うち S071・S162 は R3 で修正済み、S181 は `also_thumb` アンカーで特に危険）。**残りの行は生成前に本文へ `, every page an unreadable smear`（単一の紙なら `, its printed surface an unreadable smear`）を挿入すること。** 判読不能化を `[STYLE]`/`[HSTYLE]` サフィックスの末尾句に任せると、CLIP のチャンク3以降に落ちて先頭の `page` / `sheet` 名詞への結合が弱くなる。
+- ★ **`DEFAULT_NEG` の罠。** `scripts/generate_sdxl_4k.py` は全行のネガに無条件でトークン `signature` を追加する。**インクのストロークそのものが主題の行（S007 / S127 / S130 / S138 / S159 / S165 / M01_src / M23_src / M25_src）ではこれが主題を押し潰す。** だから正プロンプト側では `signature` という語を使わず、`wet abstract ink stroke` / `looping ink mark with no letterforms` で書くこと（既存行はこの形になっている——崩さない）。
 - **★署名は常に抽象。** "an abstract illegible ink stroke", "a looping wet ink mark with no letterforms" 等のみ。**人名として読める形を作らない。**
 - **強制退去・手錠・泣き崩れる家族・路上の家財を描かない。** 家は常に aftermath（無人・施錠・静か）。
 - **recorder's-stamp teal `#0F6E68` 基調。notice-orange `#D4692A` は掲示物モチーフのみ（≤8枚）。paid-in-full morning `#F0DFB4` は ACT1 の現金購入ビートと ENDING のみ**（§5.6 の per-act motif で指定）。
@@ -802,24 +825,26 @@ text, words, letters, numbers, numerals, captions, watermark, logo, brand mark, 
 ## 5.5a ★反復禁止ルール（owner directive「似たシーンの機械的繰り返しをやめる」・BINDING・**誕生時から適用**）
 
 1. **1ビート内は同一 motif のバリエーション最大2枚。** 3枚以上の同一被写体ブロックを作らない。§5.6 は最初からこの制約で組んである（EP55 のように後から61行を差し替える事態を起こさない）。
-2. **幕をまたぐ motif の再登場は「目に見える状態変化」必須。同状態の撮り直しは禁止。** spine motif の状態連鎖（各状態1–2枚まで・状態語を各プロンプト本文に内蔵済み）:
-   - **the lockbox** = hanging on the door of a house that is not empty(S003) -> on the door of the same house now dark and bare(S009) -> cut open and lying on the mat(S196)。**この3状態以外の lockbox 行を作らない。**
-   - **the signature** = one wet mark alone on a blank line(S007) -> a page of marks that do not match each other(S130) -> a wall of mismatched marks(S138) -> one mark under an exhibit sticker(S165)。**4状態のみ。**
-   - **the stack** = a thin file in a hand(S045) -> a tray overflowing(S064) -> a trolley of boxes in a corridor(S128) -> a pallet on a loading dock(S141) -> one box carried out of a courthouse(S190)。**5状態のみ。**
-   - **the paid-in-full deed** = signed at a closing table in warm light(S021) -> folded into a drawer at home(S026) -> pulled out again under a kitchen lamp(S073) -> laid flat on an exhibit table(S168) -> back in the drawer at the end(S203)。**5状態のみ。**
-   - **the empty house** = lit and lived-in(S016) -> dark with the lockbox(S009 / S086) -> boarded and overgrown(S174) -> lights back on at dawn(S199)。**4状態のみ。**
-   - **the clock / the minute** = a second hand crossing(S011) -> an office wall clock at 2 a.m.(S066) -> a stopwatch face(S135) -> a calendar page(S177)。**4状態のみ。**
+2. **幕をまたぐ motif の再登場は「目に見える状態変化」必須。同状態の撮り直しは禁止。**
+   > ★★ **R3 MAJOR FIX 2026-07-29 — この連鎖表は v001 で 6本中 4本が間違っていた。** 実行を 1行ずつ読んで照合した結果、§5.7 の連鎖が正しく、ここの記述が誤りだった（S064 は「overflowing tray」でなく **台車**、overflowing tray は **S113**、S128 はトロリーでなく **署名する手**、S086 は家でなく **郡の窓口**、S174 は家でなく **道端の郵便受け**、S066 は壁時計でなく **卓上カレンダー**、S135 はストップウォッチでなく **2脚の椅子と署名済みの1枚**）。この節は BINDING で「この状態以外の行を作らない」と書いてあるため、直訳するオペレータは **正当な行（S002 / S180 / S113 / S115 / S136 / S182）を削除してしまう**。下の表が正典であり、**行は1つも削らない**。
+   - **the lockbox（6状態）** = 夜のドアハンドルに掛かる・オレンジのタグ付き(S002・hook) -> 同じロックボック・日中・周りの家は明らかに人が住んでいる(S003) -> 同じ家が日沒後に真っ暗でロックボックだけが光る(S009) -> 施錠されたドアに手をついた後ろ姿の人物の指の横(S180) -> 切断されてマットに落ちている(S196) -> 消えて塗装に2つの痕だけが残る(S197)。
+   - **the signature（4状態）** = one wet mark alone on a blank line(S007) -> 九つの同形の書類角に互いに一致しないストローク(S130) -> a wall of mismatched marks(S138) -> one mark under an exhibit sticker(S165)。
+   - **the stack（5状態・フィルム順）** = a thin file in a hand(S045) -> 廊下に放置された台車一台(S064) -> 縁を越えて崩れかけた入レ(S113) -> a pallet on a loading dock(S141) -> one box carried out of a courthouse(S190)。⚠ **S064（台車）が S113（入レ）より前に来るので、量のエスカレーションが一度だけ逆行する。再生成ではなく CODEX_B の配置で吸収すること（両方とも良い絵で、どちらも別のビートに使える）。**
+   - **the paid-in-full deed（5状態）** = signed at a closing table in warm light(S021) -> folded into a drawer at home(S026) -> pulled out again under a kitchen lamp(S073) -> laid flat on an exhibit table(S168) -> back in the drawer at the end(S203)。
+   - **the empty house（4状態）** = lit and lived-in(S016) -> dark with the lockbox(S009) -> 窓越しに見える家具の痕だけの居間(S182) -> lights back on at dawn(S199)。
+   - **the clock / the minute（5状態）** = a second hand crossing(S011) -> 日付を消し込んだ卓上カレンダー(S066) -> 夜の事務所の白い壁時計(S115) -> 手元の機械式カウンター(S136) -> a calendar page(S177)。
 3. **Codex one-shot 原則:** 各行1枚・一発で決める。再生成は §6 の QC fail 時のみ（同一プロンプト・別シード1枚・§6.3）。**「複数枚から選ぶ」ためのバリエーション生成は禁止**（variants 0・§5.10 と同義）。
-4. **★HP anti-samey 変化マトリクス（87枚全体に適用）:**
+4. **★HP anti-samey 変化マトリクス（88枚全体に適用）:**
    - **軸を必ず散らす:** 距離（hands macro／medium／wide／far-wide）×角度（背後正対／後方斜め／low angle／over-the-shoulder）×年代 wardrobe（1990s／2000s／2010s／2020s）×光（cold office fluorescent／flat Florida daylight／night porch／paid-in-full morning）×setting（house／kitchen／records office／call floor／signing floor／courthouse／hearing room／loading dock／mailroom／street）×人数（solo／2–4人／列／群衆）×姿勢（座って待つ／立つ／歩く／署名する手元／箱を運ぶ／鍵を握る）。
-   - **HARD: どの2枚の ★HP も「被写体タイプ＋構図＋光」の3要素同時一致を禁止**（例:「机で署名する手元×over-the-shoulder×office fluorescent」は全87枚中1枚だけ）。87行を書き終えたら軸の表で自己監査してから生成に入る。
-   - **クラスタは §6.1 Q4 phash watch-list に反映済み**（lockbox 3状態・signature 4状態・stack 5状態・deed 5状態・house 4状態・clock 4状態・hands-macro 群・queue/waiting 群・corridor 群・mailbox 群・suburban-exterior 群）。**同状態ペアが phash で衝突したら「削る」でなく §5.5a のルールで作り直す。**
+   - **HARD: どの2枚の ★HP も「被写体タイプ＋構図＋光」の3要素同時一致を禁止**（例:「机で署名する手元×over-the-shoulder×office fluorescent」は全88枚中1枚だけ）。88行を書き終えたら軸の表で自己監査してから生成に入る。
+   - **クラスタは §6.1 Q4 phash watch-list に反映済み**（**R3修正:** lockbox 6状態・signature 4状態・stack 5状態・deed 5状態・house 4状態・clock 5状態・hands-macro 群・queue/waiting 群・corridor 群・mailbox 群・suburban-exterior 群）。**同状態ペアが phash で衝突したら「削る」でなく §5.5a のルールで作り直す。**
 
 ---
 
 ## 5.6 ★motif ライブラリ（幕別・distinct 数確定・S番号レンジ・**全210行 literal**）
 
-> 各 motif ブロックは `motif名 — 枚数 — S番号レンジ`。**S001–S210 の全210行を literal 化済み。Codex は各行をそのまま `ai_prompts.v001.md` に転記する（変奏を新たに書かない・行を増減しない・S番号を並べ替えない）。**
+> 各 motif ブロックは `motif名 — 枚数 — S番号レンジ`。**S001–S210 の全210行を literal 化済み。Codex は各行の**創作部分をそのまま**転記する（変奏を新たに書かない・行を増減しない・S番号を並べ替えない）。**
+> ★★ **行末の `[HSTYLE]` と `Avoid:` 直後の `[HNEG]` はトークンのまま書かず、必ず §5.11 の全文に展開する（R3 BLOCKER FIX — §5.2 参照）。**
 > **★`[STYLE]`/`[NEG]`＝人物なし象徴。`★HP`＝§5.11 `[HSTYLE]`/`[HNEG]`（匿名・非識別の人物）。** ★HP 合計 = **88枚（41.9%・実測）**。S番号集合は §5.7 に列挙。
 > **★全210行に共通する不変条件:** 判読可能な文字・数字ゼロ／**判読可能な署名ゼロ**（署名は常に `an abstract ink stroke ... no letterforms`）／実在ロゴ・州章・連邦印章ゼロ／実在人物 likeness ゼロ／手錠・強制退去・泣き崩れる人物ゼロ／識別可能な子供の顔ゼロ／gavel・天秤・Lady Justice ゼロ（実写側で1本のみ）。
 
@@ -1078,7 +1103,7 @@ A photocopier output tray with a stepped stack of finished pages fanning out of 
 - **★HP the_kitchen_table — 3 — S071–S073**（★deed 状態③: 家で紙を広げる）
 ```
 - `S071.png`
-An anonymized pair of forearms spread across a kitchen table covered edge to edge in loose paperwork, hands flat on two separate sheets, the figure cropped at the elbows, one lamp low and warm over the mess, no face, no readable text [HSTYLE] Avoid: [HNEG]
+An anonymized pair of forearms spread across a kitchen table covered edge to edge in loose paperwork, every page an unreadable smear, hands flat on two separate sheets, the figure cropped at the elbows, one lamp low and warm over the mess, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S072.png`
 An anonymized figure seen from behind seated at a kitchen table late at night, head slightly bowed over spread papers, a mug at the elbow, the window behind them black, quiet endurance rather than despair, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S073.png`
@@ -1295,7 +1320,7 @@ A tray of a dozen small rubber stamps standing in ranks on a desk, each mounted 
 - **★HP the_notary_who_was_not_there — 2 — S134–S135**（立ち会いのない公証）
 ```
 - `S134.png`
-An anonymized hand stamping a notary block on a page that is already signed, the signer's chair empty and visible in the background out of focus, the hand cropped at the cuff, certification happening in an absence, no face, no readable text [HSTYLE] Avoid: [HNEG]
+An anonymized hand stamping a notary block onto a page that already carries one abstract illegible ink stroke with no letterforms, the impression forming as a blurred teal ring with no characters inside it, the signer's chair empty and visible in the background out of focus, the hand cropped at the cuff, certification happening in an absence, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S135.png`
 Two office chairs at one desk, one pushed in and one turned away, a single page between them carrying an abstract ink stroke and an empty stamped block, dust in the ceiling light, the presence that never happened, no people, no readable text [STYLE] Avoid: [NEG]
 ```
@@ -1389,7 +1414,7 @@ A single strapped brick of banknotes photographed from directly above on a plain
 - **★HP the_review_that_was_bought — 3 — S162–S164**（独立審査という名の外注）
 ```
 - `S162.png`
-Two anonymized consultants in shirtsleeves seen from behind at a glass partition, one pointing at a wall of pinned pages while the other holds a clipboard, both cropped above the shoulders, an open-plan floor beyond, no faces, no readable text [HSTYLE] Avoid: [HNEG]
+Two anonymized consultants in shirtsleeves seen from behind at a glass partition, one pointing at a wall of pinned pages whose every sheet is an unreadable smear with no letterforms, while the other holds a clipboard, both cropped above the shoulders, an open-plan floor beyond, no faces, no readable text [HSTYLE] Avoid: [HNEG]
 - `S163.png`
 An anonymized figure seated alone at a desk stacked with identical ring binders, seen from behind and slightly above, one binder open and unread in front of them, late-evening office light, no face, no readable text [HSTYLE] Avoid: [HNEG]
 - `S164.png`
@@ -1618,7 +1643,7 @@ ACT6  : 2+2+2+2+2+2+2+1 = 15           (S196-S210)
 ## 5.11 ★人物画像（匿名・ドラマ化スタンドイン）— `[HSTYLE]` / `[HNEG]`
 
 > **owner directive（EP48/49「空/寂しい」却下の恒久対策）: 匿名・非識別の人物を増やし、動かす。** 実在人物（住宅所有者夫妻・署名担当従業員・名前を使われた従業員・有罪判決を受けた経営者・判事・州司法長官・銀行幹部）の **likeness を作らない**。顔は非識別（背向き/影の横顔/逆光 silhouette/目から下クロップ/浅い被写界深度・**adults only**）。**手錠・強制退去・泣き崩れる家族・路上の家財を絶対に作らない。可読の署名を絶対に作らない。**
-> **★この `[HSTYLE]`/`[HNEG]` は (a) §8.1a の18本の人物 i2v 種、(b) §5.6 の ★HP body still 86枚、の両方に使う。**
+> **★この `[HSTYLE]`/`[HNEG]` は (a) §8.1a の18本の人物 i2v 種、(b) §5.6 の ★HP body still 88枚、の両方に使う。**
 
 **共通スタイル `[HSTYLE]`（各 H プロンプト末尾に全文連結）:**
 ```
@@ -1712,8 +1737,8 @@ Generate all 12; QC each visually (visible emotive face · non-real · no likene
 | Q2 | `mean_luma` が 0.06–0.62（暗すぎ/白飛び検出） | 範囲外=flag | 目視で判定 |
 | Q3 | sha256 重複ゼロ（全レーン横断・EP39〜58 とも） | 重複=reject | 再生成 |
 | Q4 | **phash クラスタ watch-list**（下記）で近接ペアを列挙 | 近接=目視必須 | §5.5a のルールで**作り直す**（削らない） |
-| Q5 | **可読テキスト検出**（OCR で3文字以上の英字が読めたら fail） | 検出=reject | プロンプトの `unreadable smear` を強めて再生成 |
-| Q6 | **★署名の可読性検査**（OCR ＋ 目視: 署名部分に letterform が読めたら fail） | 検出=reject | `abstract illegible ink stroke` へ書き換えて再生成 |
+| Q5 | **可読テキスト検出** — ★**R3 BLOCKER FIX 2026-07-29: OCR ではなくテキスト*領域*検出（EAST / CRAFT）を使う**。文字を読む必要がなく「文字らしい領域が立ったか」だけを見るので、小さい活字を見逃さず、紙の繊維で偽陽性を出しにくい。スコア >=0.5 のテキスト領域が1つでも立てば fail | 検出=reject | プロンプトの `unreadable smear` / `no letterforms` を強めて再生成 |
+| Q6 | **★署名の可読性検査** — ★**R3 BLOCKER FIX 2026-07-29: 「OCR ＋ 目視」という v001 の規定を廃止する。Tesseract 系の OCR は筆記体を読めない**ので、本作が唯一恐れている失敗モード（読める筆記体の偽名が署名線に乗る）を**原理上捕まえられない**。代替: （a）署名帯に Q5 のテキスト領域検出をかける、（b）**署名モチーフを含む全行を 100% 目視**（サンプリング禁止・小さくても筆記体に見えたら fail）。どちらかで引っかかったら fail | 検出=reject | `abstract illegible ink stroke` へ書き換えて再生成 |
 | Q7 | ロゴ/印章検出（目視） | 検出=reject | 再生成 |
 | Q8 | ★HP レーンの人物が非識別か（背向き/影/逆光/目下クロップ/浅い被写界深度のいずれか） | 顔が識別可能=reject | 再生成 |
 | Q9 | 識別可能な子供の顔ゼロ | 検出=reject | 再生成 |
@@ -2048,6 +2073,6 @@ remotion/public/robosigning/thumb/                             （B がサムネ
 5. `select_robosigning_factory.py --verify-no-prior-overlap` の**実出力**（重複 sha256 = 0）。
 6. **コンタクトシートのファイル一覧**（画像14枚分＋実写12枚分）と、**全点目視した旨**。
 7. **Q5/Q6（可読テキスト・可読署名）で reject した枚数と、再生成後の結果。**
-8. **★HP 87枚の変化マトリクス自己監査結果**（3要素同時一致がゼロであること）。
+8. **★HP 88枚の変化マトリクス自己監査結果**（3要素同時一致がゼロであること）。
 9. 実写235本のうち **`search_archive.py` 経由で選んだ本数** と、**`real title` と `subtype` が食い違って差し替えた本数**。
 10. 未達・妥協した点があれば**正直に列挙**（「全部できました」だけの報告は不可）。
