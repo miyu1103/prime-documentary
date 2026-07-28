@@ -1,0 +1,945 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-07-28T01:16:33.456426+00:00",
+  "generator": "scripts/plan_series_playlists.py",
+  "executed": true,
+  "design_revision": "v001",
+  "design_status": "approved",
+  "measured_state": "episodes/_planning/measurements/DISTRIBUTION_STATE.v001.json",
+  "validation": {
+    "errors": [],
+    "warnings": [],
+    "passed": true
+  },
+  "total_calls": 46,
+  "total_quota_units": 2300,
+  "calls": [
+    {
+      "step": 1,
+      "playlist_key": "police_power",
+      "op": "playlists.update",
+      "method": "PUT",
+      "url": "https://www.googleapis.com/youtube/v3/playlists?part=snippet,status",
+      "body": {
+        "id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+        "snippet": {
+          "title": "Police Power: What They Can Actually Do to You",
+          "description": "A traffic stop. A phone in your pocket. A knock at the wrong door. Every film here is one real case that decided how far the police can go before they need a warrant - and what happens to the person who found out the hard way. Watch in order: the cases build from the roadside to your front door to the interrogation room.\n\nNew case every week.",
+          "defaultLanguage": "en"
+        },
+        "status": {
+          "privacyStatus": "public"
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - re-PUT the previous title/description, captured in this plan as was_title='Landmark Rights Cases'",
+      "was_title": "Landmark Rights Cases",
+      "was_description": "Cinematic documentaries on Supreme Court cases that shaped everyday rights: Miranda, Gideon, Mapp, and more. Watch in order for the full arc."
+    },
+    {
+      "step": 2,
+      "playlist_key": "police_power",
+      "op": "playlistItems.delete",
+      "method": "DELETE",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?id=<playlistItemId for PjGEqW6F9WM - re-read at execution time>",
+      "body": null,
+      "quota": 50,
+      "reversible": "no - the item cannot be restored, but it points at a deleted video so there is nothing to restore",
+      "note": "position 0: 'Deleted video' is unviewable and currently occupies the slot the playlist link lands on"
+    },
+    {
+      "step": 3,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 0,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "tpAKfHKuwqY"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "APV 38.98% - best on channel; everyday scenario"
+    },
+    {
+      "step": 4,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 1,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "bXATF9ZnKLE"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "same lane, 2nd highest views in cluster"
+    },
+    {
+      "step": 5,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 2,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "Sz8zPUoBANM"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "escalates from roadside to the doorway"
+    },
+    {
+      "step": 6,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 4,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "XWYWAgkExH4"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "pivot to the phone"
+    },
+    {
+      "step": 7,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 5,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "YQIhk2dKZHU"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "thumb vs passcode - direct sequel to Riley"
+    },
+    {
+      "step": 8,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 6,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "zE3nCUlUmLY"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "APV 23.88%; location history"
+    },
+    {
+      "step": 9,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 7,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "rrftLmSVivk"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "sensors pointed at the home"
+    },
+    {
+      "step": 10,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 8,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "68oWZRiOnB8"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "APV 21.58%; the doctrine Kyllo rests on"
+    },
+    {
+      "step": 11,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 10,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "Enok7A7wGBA"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "wrong house - the sharpest stakes gap in the cluster"
+    },
+    {
+      "step": 12,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 11,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "g5yFmDt48oU"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "pivot from the home to the body"
+    },
+    {
+      "step": 13,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 12,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "gR_nzXIyIlk"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "facial recognition; 30 hours in jail"
+    },
+    {
+      "step": 14,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 13,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "SOu4Y1NkGGY"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "strip search over a paid fine"
+    },
+    {
+      "step": 15,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 14,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "X40EbUw5kzQ"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "pivot to the interrogation room"
+    },
+    {
+      "step": 16,
+      "playlist_key": "police_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 17,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "cSfe3iGnBBM"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "weakest thematic fit (student speech, not police) - last"
+    },
+    {
+      "step": 17,
+      "playlist_key": "police_power",
+      "op": "playlistItems.update",
+      "method": "PUT",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "id": "<playlistItemId - re-read at execution time>",
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 9,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "An0to4U0hJQ"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - re-PUT position 2",
+      "was_position": 2,
+      "note": "move An0to4U0hJQ from 2 to 9"
+    },
+    {
+      "step": 18,
+      "playlist_key": "police_power",
+      "op": "playlistItems.update",
+      "method": "PUT",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "id": "<playlistItemId - re-read at execution time>",
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 15,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "cQFql7tT1fE"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - re-PUT position 4",
+      "was_position": 4,
+      "note": "move cQFql7tT1fE from 4 to 15"
+    },
+    {
+      "step": 19,
+      "playlist_key": "police_power",
+      "op": "playlistItems.update",
+      "method": "PUT",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "id": "<playlistItemId - re-read at execution time>",
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+          "position": 16,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "ch2hQ5jhDmQ"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - re-PUT position 1",
+      "was_position": 1,
+      "note": "move ch2hQ5jhDmQ from 1 to 16"
+    },
+    {
+      "step": 20,
+      "playlist_key": "forfeiture_files",
+      "op": "playlists.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlists?part=snippet,status",
+      "body": {
+        "snippet": {
+          "title": "The Forfeiture Files: When the Government Takes What's Yours",
+          "description": "Nobody was convicted of anything. The house, the car, the savings, the surplus from the sale - taken anyway, legally. These are the real cases behind civil forfeiture, tax-sale windfalls and eminent domain, and the ordinary people who spent years getting their own property back.\n\nWatch in order - the amounts get smaller and the injustice gets sharper.",
+          "defaultLanguage": "en"
+        },
+        "status": {
+          "privacyStatus": "public"
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlists.delete removes it; no viewer-visible history",
+      "note": "The new playlist id must be captured and written back into config/distribution/series_clusters.v001.json before the description batch runs, or the WATCH NEXT links will 404."
+    },
+    {
+      "step": 21,
+      "playlist_key": "forfeiture_files",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 0,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "Xc_PxdC_75c"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "top-viewed long-form on the channel"
+    },
+    {
+      "step": 22,
+      "playlist_key": "forfeiture_files",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 1,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "6ozsIfwqrP0"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "airport cash seizure - direct sibling"
+    },
+    {
+      "step": 23,
+      "playlist_key": "forfeiture_files",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 2,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "rU2vk9XL4vY"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "completes the announced property trilogy"
+    },
+    {
+      "step": 24,
+      "playlist_key": "forfeiture_files",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 3,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "YhEJHK279f8"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "APV 24.37% - strongest watch-through in cluster"
+    },
+    {
+      "step": 25,
+      "playlist_key": "forfeiture_files",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 4,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "m-uWzgWHGPg"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "the Supreme Court answer to 1-4"
+    },
+    {
+      "step": 26,
+      "playlist_key": "forfeiture_files",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 5,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "4uuY6G0LmHo"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "destroyed home, no compensation"
+    },
+    {
+      "step": 27,
+      "playlist_key": "forfeiture_files",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 6,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "89SQoRgAD7U"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "eminent domain - the widest frame, closes the arc"
+    },
+    {
+      "step": 28,
+      "playlist_key": "fraud_finance_power",
+      "op": "playlists.update",
+      "method": "PUT",
+      "url": "https://www.googleapis.com/youtube/v3/playlists?part=snippet,status",
+      "body": {
+        "id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+        "snippet": {
+          "title": "Fraud, Finance & Power",
+          "description": "Nine real collapses: the money that was never there, the warnings nobody acted on, and the people who were paid enormously to look away. Ponzi schemes, fake technology, a trillion dollars that vanished in 36 minutes, and the fine print that quietly took your right to sue.\n\nWatch in order - each film explains the machinery the next one runs on.",
+          "defaultLanguage": "en"
+        },
+        "status": {
+          "privacyStatus": "public"
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - re-PUT the previous title/description, captured in this plan as was_title='Fraud, Finance & Power'",
+      "was_title": "Fraud, Finance & Power",
+      "was_description": "Premium documentaries on financial crime, institutional power, technology, and the systems behind modern money."
+    },
+    {
+      "step": 29,
+      "playlist_key": "fraud_finance_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+          "position": 1,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "vikfOBHullI"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "26 views; same 'money was never there' premise"
+    },
+    {
+      "step": 30,
+      "playlist_key": "fraud_finance_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+          "position": 2,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "LXFjJqE6vKU"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "0 views - strongest premise in the cluster, needs the playlist's traffic"
+    },
+    {
+      "step": 31,
+      "playlist_key": "fraud_finance_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+          "position": 3,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "mj9qEKPRatE"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "APV 21.14%, 350s AVD - pivot from fraud to legal power"
+    },
+    {
+      "step": 32,
+      "playlist_key": "fraud_finance_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+          "position": 4,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "j8U8c4BB_GQ"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "buying access"
+    },
+    {
+      "step": 33,
+      "playlist_key": "fraud_finance_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+          "position": 5,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "5Jap-0h43A4"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "machinery, not people"
+    },
+    {
+      "step": 34,
+      "playlist_key": "fraud_finance_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+          "position": 6,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "1pox44KsaV8"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "the power that reaches the viewer directly"
+    },
+    {
+      "step": 35,
+      "playlist_key": "fraud_finance_power",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+          "position": 8,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "rYV4rxtQCV0"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "APV 3.64% - weakest on channel, last"
+    },
+    {
+      "step": 36,
+      "playlist_key": "fraud_finance_power",
+      "op": "playlistItems.update",
+      "method": "PUT",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "id": "<playlistItemId - re-read at execution time>",
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+          "position": 0,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "sphERPA4gAc"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - re-PUT position 1",
+      "was_position": 1,
+      "note": "move sphERPA4gAc from 1 to 0"
+    },
+    {
+      "step": 37,
+      "playlist_key": "fraud_finance_power",
+      "op": "playlistItems.update",
+      "method": "PUT",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "id": "<playlistItemId - re-read at execution time>",
+        "snippet": {
+          "playlistId": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+          "position": 7,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "waA4XJ9bYcE"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - re-PUT position 0",
+      "was_position": 0,
+      "note": "move waA4XJ9bYcE from 0 to 7"
+    },
+    {
+      "step": 38,
+      "playlist_key": "system_got_it_wrong",
+      "op": "playlists.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlists?part=snippet,status",
+      "body": {
+        "snippet": {
+          "title": "The System Got It Wrong",
+          "description": "Eight cases the system never answered for: men who spent decades in prison for crimes they did not commit, a judge who was paid by the jail he sent children to, evidence that stayed buried, and disappearances still open after fifty years.\n\nWatch in order - the wrongful convictions first, then the cases nobody ever closed.",
+          "defaultLanguage": "en"
+        },
+        "status": {
+          "privacyStatus": "public"
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlists.delete removes it; no viewer-visible history",
+      "note": "The new playlist id must be captured and written back into config/distribution/series_clusters.v001.json before the description batch runs, or the WATCH NEXT links will 404."
+    },
+    {
+      "step": 39,
+      "playlist_key": "system_got_it_wrong",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 0,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "marQjsCagh0"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "158 views, 495s AVD - deepest watch on the channel"
+    },
+    {
+      "step": 40,
+      "playlist_key": "system_got_it_wrong",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 1,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "Qyad4FejCIc"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "30 years on death row - strongest injustice premise"
+    },
+    {
+      "step": 41,
+      "playlist_key": "system_got_it_wrong",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 2,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "5L_HCGJxX_U"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "APV 23.08%; eyewitness certainty"
+    },
+    {
+      "step": 42,
+      "playlist_key": "system_got_it_wrong",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 3,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "tYZuE76Hwdc"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "buried evidence - direct sequel to Cotton"
+    },
+    {
+      "step": 43,
+      "playlist_key": "system_got_it_wrong",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 4,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "Pmh6h5SfWw4"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "pivot from error to corruption"
+    },
+    {
+      "step": 44,
+      "playlist_key": "system_got_it_wrong",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 5,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "tt7U1XgjCU4"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "56 views, APV 19.41% - pivot to unclosed cases"
+    },
+    {
+      "step": 45,
+      "playlist_key": "system_got_it_wrong",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 6,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "1h267U6PY0I"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "APV 24.09%, 396s AVD"
+    },
+    {
+      "step": 46,
+      "playlist_key": "system_got_it_wrong",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "url": "https://www.googleapis.com/youtube/v3/playlistItems?part=snippet",
+      "body": {
+        "snippet": {
+          "playlistId": "<id returned by the playlists.insert above>",
+          "position": 7,
+          "resourceId": {
+            "kind": "youtube#video",
+            "videoId": "FTm1icKgycU"
+          }
+        }
+      },
+      "quota": 50,
+      "reversible": "yes - playlistItems.delete",
+      "note": "APV 3.97% - weakest, last"
+    }
+  ],
+  "executed_at": "2026-07-28T01:17:09.712298+00:00",
+  "executed_under_approval": "APR-0006"
+}

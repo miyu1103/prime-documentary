@@ -1,0 +1,1068 @@
+{
+  "schema_version": "1.0.0",
+  "generator": "scripts/yt_playlist_executor.py",
+  "approval_record": "APR-0006",
+  "design_revision": "v001",
+  "plan_total_calls": 46,
+  "plan_total_quota_units": 2300,
+  "runs": [
+    {
+      "started_at": "2026-07-28T01:12:38.123587+00:00",
+      "approval": "APR-0006"
+    },
+    {
+      "started_at": "2026-07-28T01:16:35.797658+00:00",
+      "approval": "APR-0006"
+    }
+  ],
+  "status": "completed",
+  "abort_reason": null,
+  "channel_id": "UCuQPtAz1rca9eJ4xhvX0yKA",
+  "playlist_ids": {
+    "police_power": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+    "forfeiture_files": "PLd04glUie5rg",
+    "fraud_finance_power": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+    "system_got_it_wrong": "PLfPI0t-nSRxw"
+  },
+  "completed_steps": {
+    "police_power:playlists.update": {
+      "at": "2026-07-28T01:12:48.861211+00:00",
+      "op": "playlists.update",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "was_title": "Landmark Rights Cases",
+      "was_description": "Cinematic documentaries on Supreme Court cases that shaped everyday rights: Miranda, Gideon, Mapp, and more. Watch in order for the full arc.",
+      "now_title": "Police Power: What They Can Actually Do to You"
+    },
+    "police_power:playlistItems.delete:PjGEqW6F9WM": {
+      "at": "2026-07-28T01:12:58.062298+00:00",
+      "op": "playlistItems.delete",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS41NkI0NEY2RDEwNTU3Q0M2",
+      "video_id": "PjGEqW6F9WM",
+      "was_title": "Deleted video",
+      "was_position": 0
+    },
+    "police_power:playlistItems.insert:tpAKfHKuwqY": {
+      "at": "2026-07-28T01:13:05.070287+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "tpAKfHKuwqY",
+      "index": 0,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS4xMkVGQjNCMUM1N0RFNEUx",
+      "requested_position": 0
+    },
+    "police_power:playlistItems.insert:bXATF9ZnKLE": {
+      "at": "2026-07-28T01:13:09.359188+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "bXATF9ZnKLE",
+      "index": 1,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS41MzJCQjBCNDIyRkJDN0VD",
+      "requested_position": 1
+    },
+    "police_power:playlistItems.insert:Sz8zPUoBANM": {
+      "at": "2026-07-28T01:13:12.514883+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "Sz8zPUoBANM",
+      "index": 2,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS5DQUNERDQ2NkIzRUQxNTY1",
+      "requested_position": 2
+    },
+    "police_power:playlistItems.update:bYcqabvvxak:3": {
+      "at": "2026-07-28T01:13:20.019593+00:00",
+      "op": "playlistItems.update",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "bYcqabvvxak",
+      "index": 3,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS41MjE1MkI0OTQ2QzJGNzNG",
+      "was_position": 5
+    },
+    "police_power:playlistItems.insert:XWYWAgkExH4": {
+      "at": "2026-07-28T01:13:23.184673+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "XWYWAgkExH4",
+      "index": 4,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS45NDk1REZENzhEMzU5MDQz",
+      "requested_position": 4
+    },
+    "police_power:playlistItems.insert:YQIhk2dKZHU": {
+      "at": "2026-07-28T01:13:26.222034+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "YQIhk2dKZHU",
+      "index": 5,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS5GNjNDRDREMDQxOThCMDQ2",
+      "requested_position": 5
+    },
+    "police_power:playlistItems.insert:zE3nCUlUmLY": {
+      "at": "2026-07-28T01:13:28.723225+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "zE3nCUlUmLY",
+      "index": 6,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS40NzZCMERDMjVEN0RFRThB",
+      "requested_position": 6
+    },
+    "police_power:playlistItems.insert:rrftLmSVivk": {
+      "at": "2026-07-28T01:13:31.565113+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "rrftLmSVivk",
+      "index": 7,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS5EMEEwRUY5M0RDRTU3NDJC",
+      "requested_position": 7
+    },
+    "police_power:playlistItems.insert:68oWZRiOnB8": {
+      "at": "2026-07-28T01:13:34.072363+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "68oWZRiOnB8",
+      "index": 8,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS45ODRDNTg0QjA4NkFBNkQy",
+      "requested_position": 8
+    },
+    "police_power:playlistItems.update:An0to4U0hJQ:9": {
+      "at": "2026-07-28T01:13:36.271563+00:00",
+      "op": "playlistItems.update",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "An0to4U0hJQ",
+      "index": 9,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS4wMTcyMDhGQUE4NTIzM0Y5",
+      "was_position": 10
+    },
+    "police_power:playlistItems.insert:Enok7A7wGBA": {
+      "at": "2026-07-28T01:13:38.420121+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "Enok7A7wGBA",
+      "index": 10,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS4zMDg5MkQ5MEVDMEM1NTg2",
+      "requested_position": 10
+    },
+    "police_power:playlistItems.insert:g5yFmDt48oU": {
+      "at": "2026-07-28T01:13:40.623513+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "g5yFmDt48oU",
+      "index": 11,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS41Mzk2QTAxMTkzNDk4MDhF",
+      "requested_position": 11
+    },
+    "police_power:playlistItems.insert:gR_nzXIyIlk": {
+      "at": "2026-07-28T01:13:42.791759+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "gR_nzXIyIlk",
+      "index": 12,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS5EQUE1NTFDRjcwMDg0NEMz",
+      "requested_position": 12
+    },
+    "police_power:playlistItems.insert:SOu4Y1NkGGY": {
+      "at": "2026-07-28T01:13:44.874941+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "SOu4Y1NkGGY",
+      "index": 13,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS41QTY1Q0UxMTVCODczNThE",
+      "requested_position": 13
+    },
+    "police_power:playlistItems.insert:X40EbUw5kzQ": {
+      "at": "2026-07-28T01:13:46.819488+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "X40EbUw5kzQ",
+      "index": 14,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS4yMUQyQTQzMjRDNzMyQTMy",
+      "requested_position": 14
+    },
+    "police_power:playlistItems.update:cQFql7tT1fE:15": {
+      "at": "2026-07-28T01:13:49.268500+00:00",
+      "op": "playlistItems.update",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "cQFql7tT1fE",
+      "index": 15,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS4wOTA3OTZBNzVEMTUzOTMy",
+      "was_position": 16
+    },
+    "police_power:playlistItems.insert:cSfe3iGnBBM": {
+      "at": "2026-07-28T01:13:51.719141+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "video_id": "cSfe3iGnBBM",
+      "index": 17,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS45RTgxNDRBMzUwRjQ0MDhC",
+      "requested_position": 17
+    },
+    "forfeiture_files:playlist": {
+      "at": "2026-07-28T01:13:57.296777+00:00",
+      "op": "playlists.insert",
+      "playlist_id": "PLd04glUie5rg",
+      "title": "The Forfeiture Files: When the Government Takes What's Yours"
+    },
+    "forfeiture_files:playlists.update": {
+      "at": "2026-07-28T01:13:57.714613+00:00",
+      "op": "playlists.update",
+      "skipped": "already matching",
+      "playlist_id": "PLd04glUie5rg"
+    },
+    "forfeiture_files:playlistItems.insert:Xc_PxdC_75c": {
+      "at": "2026-07-28T01:14:00.266795+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLd04glUie5rg",
+      "video_id": "Xc_PxdC_75c",
+      "index": 0,
+      "playlist_item_id": "UExkMDRnbFVpZTVyZy41NkI0NEY2RDEwNTU3Q0M2",
+      "requested_position": 0
+    },
+    "forfeiture_files:playlistItems.insert:6ozsIfwqrP0": {
+      "at": "2026-07-28T01:14:02.629478+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLd04glUie5rg",
+      "video_id": "6ozsIfwqrP0",
+      "index": 1,
+      "playlist_item_id": "UExkMDRnbFVpZTVyZy4yODlGNEE0NkRGMEEzMEQy",
+      "requested_position": 1
+    },
+    "forfeiture_files:playlistItems.insert:rU2vk9XL4vY": {
+      "at": "2026-07-28T01:14:06.388346+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLd04glUie5rg",
+      "video_id": "rU2vk9XL4vY",
+      "index": 2,
+      "playlist_item_id": "UExkMDRnbFVpZTVyZy4wMTcyMDhGQUE4NTIzM0Y5",
+      "requested_position": 2
+    },
+    "forfeiture_files:playlistItems.insert:YhEJHK279f8": {
+      "at": "2026-07-28T01:14:09.070365+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLd04glUie5rg",
+      "video_id": "YhEJHK279f8",
+      "index": 3,
+      "playlist_item_id": "UExkMDRnbFVpZTVyZy41MjE1MkI0OTQ2QzJGNzNG",
+      "requested_position": 3
+    },
+    "forfeiture_files:playlistItems.insert:m-uWzgWHGPg": {
+      "at": "2026-07-28T01:14:12.098675+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLd04glUie5rg",
+      "video_id": "m-uWzgWHGPg",
+      "index": 4,
+      "playlist_item_id": "UExkMDRnbFVpZTVyZy4wOTA3OTZBNzVEMTUzOTMy",
+      "requested_position": 4
+    },
+    "forfeiture_files:playlistItems.insert:4uuY6G0LmHo": {
+      "at": "2026-07-28T01:14:21.237708+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLd04glUie5rg",
+      "video_id": "4uuY6G0LmHo",
+      "index": 5,
+      "playlist_item_id": "UExkMDRnbFVpZTVyZy4xMkVGQjNCMUM1N0RFNEUx",
+      "requested_position": 5
+    },
+    "forfeiture_files:playlistItems.insert:89SQoRgAD7U": {
+      "at": "2026-07-28T01:14:24.943580+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLd04glUie5rg",
+      "video_id": "89SQoRgAD7U",
+      "index": 6,
+      "playlist_item_id": "UExkMDRnbFVpZTVyZy41MzJCQjBCNDIyRkJDN0VD",
+      "requested_position": 6
+    },
+    "fraud_finance_power:playlists.update": {
+      "at": "2026-07-28T01:14:32.988389+00:00",
+      "op": "playlists.update",
+      "playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "was_title": "Fraud, Finance & Power",
+      "was_description": "Premium documentaries on financial crime, institutional power, technology, and the systems behind modern money.",
+      "now_title": "Fraud, Finance & Power"
+    },
+    "fraud_finance_power:playlistItems.update:sphERPA4gAc:0": {
+      "at": "2026-07-28T01:14:37.365800+00:00",
+      "op": "playlistItems.update",
+      "playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "video_id": "sphERPA4gAc",
+      "index": 0,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC4yODlGNEE0NkRGMEEzMEQy",
+      "was_position": 1
+    },
+    "fraud_finance_power:playlistItems.insert:vikfOBHullI": {
+      "at": "2026-07-28T01:14:40.324714+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "video_id": "vikfOBHullI",
+      "index": 1,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC4wMTcyMDhGQUE4NTIzM0Y5",
+      "requested_position": 1
+    },
+    "fraud_finance_power:playlistItems.insert:LXFjJqE6vKU": {
+      "at": "2026-07-28T01:14:43.108934+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "video_id": "LXFjJqE6vKU",
+      "index": 2,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC41MjE1MkI0OTQ2QzJGNzNG",
+      "requested_position": 2
+    },
+    "fraud_finance_power:playlistItems.insert:mj9qEKPRatE": {
+      "at": "2026-07-28T01:14:46.182070+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "video_id": "mj9qEKPRatE",
+      "index": 3,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC4wOTA3OTZBNzVEMTUzOTMy",
+      "requested_position": 3
+    },
+    "fraud_finance_power:playlistItems.insert:j8U8c4BB_GQ": {
+      "at": "2026-07-28T01:14:49.915997+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "video_id": "j8U8c4BB_GQ",
+      "index": 4,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC4xMkVGQjNCMUM1N0RFNEUx",
+      "requested_position": 4
+    },
+    "fraud_finance_power:playlistItems.insert:5Jap-0h43A4": {
+      "at": "2026-07-28T01:14:54.261714+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "video_id": "5Jap-0h43A4",
+      "index": 5,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC41MzJCQjBCNDIyRkJDN0VD",
+      "requested_position": 5
+    },
+    "fraud_finance_power:playlistItems.insert:1pox44KsaV8": {
+      "at": "2026-07-28T01:14:57.823139+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "video_id": "1pox44KsaV8",
+      "index": 6,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC5DQUNERDQ2NkIzRUQxNTY1",
+      "requested_position": 6
+    },
+    "fraud_finance_power:playlistItems.insert:rYV4rxtQCV0": {
+      "at": "2026-07-28T01:15:01.502038+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "video_id": "rYV4rxtQCV0",
+      "index": 8,
+      "playlist_item_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC45NDk1REZENzhEMzU5MDQz",
+      "requested_position": 8
+    },
+    "system_got_it_wrong:playlist": {
+      "at": "2026-07-28T01:15:08.265290+00:00",
+      "op": "playlists.insert",
+      "playlist_id": "PLfPI0t-nSRxw",
+      "title": "The System Got It Wrong"
+    },
+    "system_got_it_wrong:playlists.update": {
+      "at": "2026-07-28T01:15:08.635409+00:00",
+      "op": "playlists.update",
+      "skipped": "already matching",
+      "playlist_id": "PLfPI0t-nSRxw"
+    },
+    "system_got_it_wrong:playlistItems.insert:marQjsCagh0": {
+      "at": "2026-07-28T01:15:10.710521+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLfPI0t-nSRxw",
+      "video_id": "marQjsCagh0",
+      "index": 0,
+      "playlist_item_id": "UExmUEkwdC1uU1J4dy41NkI0NEY2RDEwNTU3Q0M2",
+      "requested_position": 0
+    },
+    "system_got_it_wrong:playlistItems.insert:Qyad4FejCIc": {
+      "at": "2026-07-28T01:15:12.542656+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLfPI0t-nSRxw",
+      "video_id": "Qyad4FejCIc",
+      "index": 1,
+      "playlist_item_id": "UExmUEkwdC1uU1J4dy4yODlGNEE0NkRGMEEzMEQy",
+      "requested_position": 1
+    },
+    "system_got_it_wrong:playlistItems.insert:5L_HCGJxX_U": {
+      "at": "2026-07-28T01:15:14.589233+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLfPI0t-nSRxw",
+      "video_id": "5L_HCGJxX_U",
+      "index": 2,
+      "playlist_item_id": "UExmUEkwdC1uU1J4dy4wMTcyMDhGQUE4NTIzM0Y5",
+      "requested_position": 2
+    },
+    "system_got_it_wrong:playlistItems.insert:tYZuE76Hwdc": {
+      "at": "2026-07-28T01:15:16.984022+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLfPI0t-nSRxw",
+      "video_id": "tYZuE76Hwdc",
+      "index": 3,
+      "playlist_item_id": "UExmUEkwdC1uU1J4dy41MjE1MkI0OTQ2QzJGNzNG",
+      "requested_position": 3
+    },
+    "system_got_it_wrong:playlistItems.insert:Pmh6h5SfWw4": {
+      "at": "2026-07-28T01:15:18.744915+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLfPI0t-nSRxw",
+      "video_id": "Pmh6h5SfWw4",
+      "index": 4,
+      "playlist_item_id": "UExmUEkwdC1uU1J4dy4wOTA3OTZBNzVEMTUzOTMy",
+      "requested_position": 4
+    },
+    "system_got_it_wrong:playlistItems.insert:tt7U1XgjCU4": {
+      "at": "2026-07-28T01:15:20.684752+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLfPI0t-nSRxw",
+      "video_id": "tt7U1XgjCU4",
+      "index": 5,
+      "playlist_item_id": "UExmUEkwdC1uU1J4dy4xMkVGQjNCMUM1N0RFNEUx",
+      "requested_position": 5
+    },
+    "system_got_it_wrong:playlistItems.insert:1h267U6PY0I": {
+      "at": "2026-07-28T01:15:22.505056+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLfPI0t-nSRxw",
+      "video_id": "1h267U6PY0I",
+      "index": 6,
+      "playlist_item_id": "UExmUEkwdC1uU1J4dy41MzJCQjBCNDIyRkJDN0VD",
+      "requested_position": 6
+    },
+    "system_got_it_wrong:playlistItems.insert:FTm1icKgycU": {
+      "at": "2026-07-28T01:15:24.868172+00:00",
+      "op": "playlistItems.insert",
+      "playlist_id": "PLfPI0t-nSRxw",
+      "video_id": "FTm1icKgycU",
+      "index": 7,
+      "playlist_item_id": "UExmUEkwdC1uU1J4dy5DQUNERDQ2NkIzRUQxNTY1",
+      "requested_position": 7
+    }
+  },
+  "call_log": [
+    {
+      "request_no": 4,
+      "at": "2026-07-28T01:12:46.437395+00:00",
+      "op": "playlists.update",
+      "method": "PUT",
+      "endpoint": "playlists",
+      "http_status": 200,
+      "response_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "response_etag": "nV5-dsdpA5X_yLx5965kKoAJS98",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 8,
+      "at": "2026-07-28T01:12:55.721905+00:00",
+      "op": "playlistItems.delete",
+      "method": "DELETE",
+      "endpoint": "playlistItems",
+      "http_status": 204,
+      "response_id": null,
+      "response_etag": null,
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 11,
+      "at": "2026-07-28T01:13:02.786049+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS4xMkVGQjNCMUM1N0RFNEUx",
+      "response_etag": "s2VPejqsJKs9q0z8s0BWNBqxPow",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 13,
+      "at": "2026-07-28T01:13:07.659274+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS41MzJCQjBCNDIyRkJDN0VD",
+      "response_etag": "q0yTFEH941QnDem0uaysdTrsFGE",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 15,
+      "at": "2026-07-28T01:13:10.954829+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS5DQUNERDQ2NkIzRUQxNTY1",
+      "response_etag": "tf4v9ZOxpRLswXTThIqTfd9jmo0",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 17,
+      "at": "2026-07-28T01:13:13.903353+00:00",
+      "op": "playlistItems.update",
+      "method": "PUT",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS41MjE1MkI0OTQ2QzJGNzNG",
+      "response_etag": "b4ni3wUHQ8D1aDJvWUD57ZWJ-GA",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 19,
+      "at": "2026-07-28T01:13:21.666384+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS45NDk1REZENzhEMzU5MDQz",
+      "response_etag": "_WrijHFGtqUD465ANt66iwij0jY",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 21,
+      "at": "2026-07-28T01:13:24.819784+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS5GNjNDRDREMDQxOThCMDQ2",
+      "response_etag": "6yDEwXQaf_6m0ocNL6P2IAFEJTE",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 23,
+      "at": "2026-07-28T01:13:27.487533+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS40NzZCMERDMjVEN0RFRThB",
+      "response_etag": "4J3MG44Jc54-DxhRNvDt-xuMKRE",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 25,
+      "at": "2026-07-28T01:13:30.002177+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS5EMEEwRUY5M0RDRTU3NDJC",
+      "response_etag": "rffGZMhxPT4zabpwLqEfhw_xJVY",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 27,
+      "at": "2026-07-28T01:13:32.774701+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS45ODRDNTg0QjA4NkFBNkQy",
+      "response_etag": "7cA5j9fFn4e6QUVJ5bTwgAuOzaI",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 29,
+      "at": "2026-07-28T01:13:35.224055+00:00",
+      "op": "playlistItems.update",
+      "method": "PUT",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS4wMTcyMDhGQUE4NTIzM0Y5",
+      "response_etag": "dF5B7hpnTRlENp6ZYcNMbDjN3qs",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 31,
+      "at": "2026-07-28T01:13:37.215818+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS4zMDg5MkQ5MEVDMEM1NTg2",
+      "response_etag": "kfBZw7M9XXv1go1RG6GvNJC2FqI",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 33,
+      "at": "2026-07-28T01:13:39.604044+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS41Mzk2QTAxMTkzNDk4MDhF",
+      "response_etag": "Wj8YHeIp9I6gxnCfxwxLiqrblw8",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 35,
+      "at": "2026-07-28T01:13:41.673844+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS5EQUE1NTFDRjcwMDg0NEMz",
+      "response_etag": "a8q4P5eydyX6TQlZ4anwb5edLbg",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 37,
+      "at": "2026-07-28T01:13:43.800494+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS41QTY1Q0UxMTVCODczNThE",
+      "response_etag": "3tMRTGeK9iQUlM1JP0-vDdZwmvQ",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 39,
+      "at": "2026-07-28T01:13:45.681140+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS4yMUQyQTQzMjRDNzMyQTMy",
+      "response_etag": "O2ft41BjzOW9wtUiD9zL3BWWNsY",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 41,
+      "at": "2026-07-28T01:13:47.914969+00:00",
+      "op": "playlistItems.update",
+      "method": "PUT",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS4wOTA3OTZBNzVEMTUzOTMy",
+      "response_etag": "XrnVAD73SxsTnwmxYcMsudWjUuw",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 43,
+      "at": "2026-07-28T01:13:50.530356+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOXVCNF9QREpRTlVFWDJvTlVtQVpaOS45RTgxNDRBMzUwRjQ0MDhC",
+      "response_etag": "LmF8WnFnAPwvZF3tcYn-LCpRDE4",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 49,
+      "at": "2026-07-28T01:13:56.241673+00:00",
+      "op": "playlists.insert",
+      "method": "POST",
+      "endpoint": "playlists",
+      "http_status": 200,
+      "response_id": "PLd04glUie5rg",
+      "response_etag": "mNWG832kAHCDM24-bV5i4xWAgOg",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 53,
+      "at": "2026-07-28T01:13:59.096000+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExkMDRnbFVpZTVyZy41NkI0NEY2RDEwNTU3Q0M2",
+      "response_etag": "NHRBWGZs3plFpc-IHUAOiWVJDnU",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 55,
+      "at": "2026-07-28T01:14:01.269906+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExkMDRnbFVpZTVyZy4yODlGNEE0NkRGMEEzMEQy",
+      "response_etag": "v_3gBXoWHwKzERY-e9fuMRWKXj4",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 57,
+      "at": "2026-07-28T01:14:03.837409+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExkMDRnbFVpZTVyZy4wMTcyMDhGQUE4NTIzM0Y5",
+      "response_etag": "oGgJh1vK8kUFyM-6L-2S02DlCZ4",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 59,
+      "at": "2026-07-28T01:14:07.665569+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExkMDRnbFVpZTVyZy41MjE1MkI0OTQ2QzJGNzNG",
+      "response_etag": "ZSlae_xRd26ayPY-hj5r5RT1ljQ",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 61,
+      "at": "2026-07-28T01:14:10.146468+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExkMDRnbFVpZTVyZy4wOTA3OTZBNzVEMTUzOTMy",
+      "response_etag": "QIUSdL4_TliGPskAj-GOyKoJ-0Y",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 63,
+      "at": "2026-07-28T01:14:14.672207+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExkMDRnbFVpZTVyZy4xMkVGQjNCMUM1N0RFNEUx",
+      "response_etag": "oe5nFkLIh055AOvrBo6H2a96s9o",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 65,
+      "at": "2026-07-28T01:14:23.126840+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExkMDRnbFVpZTVyZy41MzJCQjBCNDIyRkJDN0VD",
+      "response_etag": "BCBmF_v0LZXDEWwc5MzmZ6fyexk",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 72,
+      "at": "2026-07-28T01:14:31.330643+00:00",
+      "op": "playlists.update",
+      "method": "PUT",
+      "endpoint": "playlists",
+      "http_status": 200,
+      "response_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "response_etag": "gnjP3rgywrisr2vnNxH8P5qaZVM",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 75,
+      "at": "2026-07-28T01:14:35.872640+00:00",
+      "op": "playlistItems.update",
+      "method": "PUT",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC4yODlGNEE0NkRGMEEzMEQy",
+      "response_etag": "OEoVERzXz3vTwja9_xEWBgsJ2Xk",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 77,
+      "at": "2026-07-28T01:14:38.767669+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC4wMTcyMDhGQUE4NTIzM0Y5",
+      "response_etag": "mBS2xzoY8WCzrnWhDDhdHveuS9M",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 79,
+      "at": "2026-07-28T01:14:41.669325+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC41MjE1MkI0OTQ2QzJGNzNG",
+      "response_etag": "KaMHj1xHtJeWjy2DCdgG5d34BwA",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 81,
+      "at": "2026-07-28T01:14:44.340095+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC4wOTA3OTZBNzVEMTUzOTMy",
+      "response_etag": "eUMIFB3hIZcRh2GG4hixHJi3l7I",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 83,
+      "at": "2026-07-28T01:14:47.834439+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC4xMkVGQjNCMUM1N0RFNEUx",
+      "response_etag": "5lo2qG_xpuCpyPRu2SJFHr4mH5Y",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 85,
+      "at": "2026-07-28T01:14:52.619998+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC41MzJCQjBCNDIyRkJDN0VD",
+      "response_etag": "pfdl5tCZMfk0rV_tBlhfGEU8DNo",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 87,
+      "at": "2026-07-28T01:14:56.307532+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC5DQUNERDQ2NkIzRUQxNTY1",
+      "response_etag": "44-edd3Qisl9f1I0x7BdIkWwJGM",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 89,
+      "at": "2026-07-28T01:14:59.581028+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExLY3JNM3g0ZzFoOGY0QTRQTkpMbnI4Wnk4VWMzYXMzUC45NDk1REZENzhEMzU5MDQz",
+      "response_etag": "-zki3pvAgbQvFRBr0uCmNGPY69g",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 95,
+      "at": "2026-07-28T01:15:07.260369+00:00",
+      "op": "playlists.insert",
+      "method": "POST",
+      "endpoint": "playlists",
+      "http_status": 200,
+      "response_id": "PLfPI0t-nSRxw",
+      "response_etag": "_0fti4axEFEkGNsy-aiXLoGldQI",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 99,
+      "at": "2026-07-28T01:15:09.759157+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExmUEkwdC1uU1J4dy41NkI0NEY2RDEwNTU3Q0M2",
+      "response_etag": "lY6j0DI6iX_qwmE-WIoqsvKuYm8",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 101,
+      "at": "2026-07-28T01:15:11.567034+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExmUEkwdC1uU1J4dy4yODlGNEE0NkRGMEEzMEQy",
+      "response_etag": "S8LLMbzGz-kvsj4WdeNUF6BfvdI",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 103,
+      "at": "2026-07-28T01:15:13.428955+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExmUEkwdC1uU1J4dy4wMTcyMDhGQUE4NTIzM0Y5",
+      "response_etag": "RkEBpCcetV_4AVlskwvLv6GVpf4",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 105,
+      "at": "2026-07-28T01:15:15.976756+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExmUEkwdC1uU1J4dy41MjE1MkI0OTQ2QzJGNzNG",
+      "response_etag": "e4bUEZSaprAhs9LDVauuKdudA84",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 107,
+      "at": "2026-07-28T01:15:17.716758+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExmUEkwdC1uU1J4dy4wOTA3OTZBNzVEMTUzOTMy",
+      "response_etag": "wi9n2ObKEDsRWoG6vZNf62g9OSQ",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 109,
+      "at": "2026-07-28T01:15:19.652173+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExmUEkwdC1uU1J4dy4xMkVGQjNCMUM1N0RFNEUx",
+      "response_etag": "UselFItzbZREFRgiJCftJx-YvoQ",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 111,
+      "at": "2026-07-28T01:15:21.469015+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExmUEkwdC1uU1J4dy41MzJCQjBCNDIyRkJDN0VD",
+      "response_etag": "1DGrwoaTyaIPuFnSM1zTLjqOdPY",
+      "is_write": true,
+      "retries": 0
+    },
+    {
+      "request_no": 113,
+      "at": "2026-07-28T01:15:23.433275+00:00",
+      "op": "playlistItems.insert",
+      "method": "POST",
+      "endpoint": "playlistItems",
+      "http_status": 200,
+      "response_id": "UExmUEkwdC1uU1J4dy5DQUNERDQ2NkIzRUQxNTY1",
+      "response_etag": "evcu9th4Bq4w4AJF2ued3KJoIgk",
+      "is_write": true,
+      "retries": 0
+    }
+  ],
+  "write_calls": 45,
+  "read_calls": 93,
+  "quota_used": 2343,
+  "completed_at": "2026-07-28T01:17:09.711298+00:00",
+  "result": [
+    {
+      "playlist_key": "police_power",
+      "playlist_id": "PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9",
+      "title": "Police Power: What They Can Actually Do to You",
+      "item_count": 18,
+      "entry_point": "tpAKfHKuwqY",
+      "order": [
+        "tpAKfHKuwqY",
+        "bXATF9ZnKLE",
+        "Sz8zPUoBANM",
+        "bYcqabvvxak",
+        "XWYWAgkExH4",
+        "YQIhk2dKZHU",
+        "zE3nCUlUmLY",
+        "rrftLmSVivk",
+        "68oWZRiOnB8",
+        "An0to4U0hJQ",
+        "Enok7A7wGBA",
+        "g5yFmDt48oU",
+        "gR_nzXIyIlk",
+        "SOu4Y1NkGGY",
+        "X40EbUw5kzQ",
+        "cQFql7tT1fE",
+        "ch2hQ5jhDmQ",
+        "cSfe3iGnBBM"
+      ],
+      "url": "https://www.youtube.com/playlist?list=PLKcrM3x4g1h9uB4_PDJQNUEX2oNUmAZZ9"
+    },
+    {
+      "playlist_key": "forfeiture_files",
+      "playlist_id": "PLd04glUie5rg",
+      "title": "The Forfeiture Files: When the Government Takes What's Yours",
+      "item_count": 7,
+      "entry_point": "Xc_PxdC_75c",
+      "order": [
+        "Xc_PxdC_75c",
+        "6ozsIfwqrP0",
+        "rU2vk9XL4vY",
+        "YhEJHK279f8",
+        "m-uWzgWHGPg",
+        "4uuY6G0LmHo",
+        "89SQoRgAD7U"
+      ],
+      "url": "https://www.youtube.com/playlist?list=PLd04glUie5rg"
+    },
+    {
+      "playlist_key": "fraud_finance_power",
+      "playlist_id": "PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P",
+      "title": "Fraud, Finance & Power",
+      "item_count": 9,
+      "entry_point": "sphERPA4gAc",
+      "order": [
+        "sphERPA4gAc",
+        "vikfOBHullI",
+        "LXFjJqE6vKU",
+        "mj9qEKPRatE",
+        "j8U8c4BB_GQ",
+        "5Jap-0h43A4",
+        "1pox44KsaV8",
+        "waA4XJ9bYcE",
+        "rYV4rxtQCV0"
+      ],
+      "url": "https://www.youtube.com/playlist?list=PLKcrM3x4g1h8f4A4PNJLnr8Zy8Uc3as3P"
+    },
+    {
+      "playlist_key": "system_got_it_wrong",
+      "playlist_id": "PLfPI0t-nSRxw",
+      "title": "The System Got It Wrong",
+      "item_count": 8,
+      "entry_point": "marQjsCagh0",
+      "order": [
+        "marQjsCagh0",
+        "Qyad4FejCIc",
+        "5L_HCGJxX_U",
+        "tYZuE76Hwdc",
+        "Pmh6h5SfWw4",
+        "tt7U1XgjCU4",
+        "1h267U6PY0I",
+        "FTm1icKgycU"
+      ],
+      "url": "https://www.youtube.com/playlist?list=PLfPI0t-nSRxw"
+    }
+  ]
+}

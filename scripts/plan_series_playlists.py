@@ -448,11 +448,24 @@ def main(argv: list[str]) -> int:
               f"{APPROVALS.relative_to(ROOT).as_posix()}.")
         return 4
 
-    print("REFUSED: the write path is intentionally not implemented in this revision.")
-    print("This script's job is to produce the reviewed plan. Implement the executor "
-          "only after the owner has approved PLAYLIST_PLAN.v001.md, and have it read "
-          "back and verify each call's result before proceeding to the next.")
-    return 4
+    # ---- execution -----------------------------------------------------------
+    # Every guard above has passed: validation is clean, the design revision is
+    # owner-approved, the confirm phrase is exact, and an approval record exists
+    # on disk. The executor lives in its own module (one script, one job) and
+    # reads back + verifies each call's result before issuing the next.
+    print(f"guard passed: approval {matches[0].name}")
+    from yt_playlist_executor import execute  # noqa: E402  - import only past the guard
+
+    print(f"executing {len(calls)} planned calls "
+          f"({plan['total_quota_units']} quota units, playlists/playlistItems only)...")
+    code = execute(config, plan, args.owner_approval)
+    if code == 0:
+        plan["executed"] = True
+        plan["executed_at"] = datetime.now(timezone.utc).isoformat()
+        plan["executed_under_approval"] = args.owner_approval
+        OUT_JSON.write_text(json.dumps(plan, ensure_ascii=False, indent=2) + "\n",
+                            encoding="utf-8")
+    return code
 
 
 if __name__ == "__main__":
