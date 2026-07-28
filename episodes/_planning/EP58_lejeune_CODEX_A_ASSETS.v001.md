@@ -163,7 +163,7 @@ cd C:\Users\aab15\Documents\prime-documentary
 
 1. **★R-FACE: 匿名・非識別の人物は可／実在人物の likeness は不可。** 匿名の一般人（実在の誰にも似せない・非識別のドラマ化スタンドイン）＝顔・身体を出してよい（§5.11 H シリーズ・`[HSTYLE]`/`[HNEG]`・§5.12 thumb_face・§5.13 F シリーズ）。ただし **実在人物の顔・likeness・肖像は作らない**＝Jerry Ensminger・Janey Ensminger・Mike Partain・その家族・実在の議員・将官・基地司令官・ATSDR/CDC の職員・実在の弁護士・実在の判事を**似せて描かない**。実在人物が示唆される所（父・娘・生存者・証人・司令官・医師・研究者）は非識別（背向き/影/逆光/目から下でクロップ/hands-only）を既定に保つ。
 2. **★R-CHILD-HARM（本作の最重要禁止）: 病気の子ども・死にゆく子どもを一切描かない。** 「病院のベッドの子ども」「点滴/カテーテル/機械につながれた子ども」「脱毛した子ども」「痩せた子ども」「泣く子ども」「子どもの棺・遺体・墓・墓石の名前」「墓前で泣く大人」を**正プロンプトにもネガにも構図にも作らない**。子どもの存在は **不在の痕跡のみ**＝使われない三輪車、片付いたベッド、閉じたカーテン、玄関に残る小さな長靴、キッチンの空いた椅子。**遠景・非識別・後ろ姿の健康な子どもも本作では作らない**（誤読リスクが高すぎる）。
-3. **★R-MEDICAL: 医療行為・医療機器・診療の描写を作らない。** 診察室・処置室・点滴スタンド・注射器・手術灯・カルテ・スキャン画像・病室のベッド（成人でも）を描かない。医療の気配が必要な場所は「無人の待合の椅子列」「消灯した廊下の遠景」「窓の外の朝」までに留める。
+3. **★R-MEDICAL: 医療行為・医療機器・診療の描写を作らない。** 診察室・処置室・点滴スタンド・注射器・手術灯・カルテ・スキャン画像・病室のベッド（成人でも）を描かない。医療の気配が必要な場所は「無人の、または匿名の成人が1人だけ座る待合の椅子列（S127 がこれ・医療機器も処置も写さない）」「消灯した廊下の遠景」「病院棟の遠景外観（S126・看板/紋章なし）」「窓の外の朝」までに留める。★R3: この上限は S126/S127 の実プロンプトと一致させた（旧表記「無人の」だけでは S127 と矛盾していた）。
 4. **可読の偽公文書を再現しない。** 分析票・ラボ報告・情報公開の開示紙・議事録・法案・訴状・和解通知・小切手の**可読文字を再現しない**（"blurred into an unreadable smear"）。日付・数値・署名・宛名を**画像に描かない**（AE/figures のタイポで出す＝B の担当）。
 5. **★R-INSIGNIA: 実在の軍の部隊章・エンブレム・旗・階級章・基地名の看板・実在企業ロゴを描かない。** 制服が要る所は「無地の作業服/ユーティリティ」「肩から下でクロップ」「後ろ姿」で処理する。
 6. AI画像は概要欄でAI生成を開示 → マニフェストの `ai_disclosure_required: true` を全静止画・全i2vに立てる。全生成ビジュアル表示中は右下に `AI-assisted visualization` を常時表示（オーバーレイは B が付与）。
@@ -181,6 +181,15 @@ cd C:\Users\aab15\Documents\prime-documentary
 9. **R-NUM:** 数値（年・件数・金額・濃度）を画像に可読で描かない。AE/figures（B）へ。
 10. **R-DOCHL:** `dochighlight` という figure は**存在しない・作らない・言及しない**（BANNED・grep で 0 件）。
 11. **R-DATESTAMP:** `DATE_STAMP` レイアウトは AE に**存在しない＝使用禁止**（BANNED・ビルドがクラッシュする）。日付カードは `CENTER_STACK` で作る。
+12. **★R-TVMEDIUM（R3 で追加・2026-07-29）: テレビ／ニュース放送の絵は `act` が 4 または 5 の素材にしか置けない。** 一次記録でテレビが結びつくのは **Partain のみ**（CL-25 verbatim）で、**Ensminger の発見の媒体は記録に無い**（CL-15・§W「he saw it on the evening news」＝禁止表現）。したがって **act 0（HOOK）と act 2（AUGUST 1997＝Ensminger の発見）にテレビ・ブラウン管・受像機・放送・ニュース・リモコンを一切置かない**。許可されるのは **act 4 の S133 / F136（Partain の発見）** と **act 5 の F181 / M36（2022年の法律事務所テレビ広告 CL-46）** だけ。機械チェック:
+```python
+# build_lejeune_asset_manifest.py --verify に追加
+TV = re.compile(r"televis|\bTV\b|CRT|cathode|broadcast|newscast|news report|remote control|受像機", re.I)
+for e in stills + motion + factory:                    # prompt / subtype / tags / caption_hint / eyeballed_content
+    if TV.search(blob(e)) and e["act"] not in (4, 5):
+        fail(f"R-TVMEDIUM: television imagery at act={e['act']} ({e['asset_id']}) — "
+             f"the record puts the broadcast with Partain (act 4) and with the 2022 ad blitz (act 5) only")
+```
 
 ## 1.3 機械ゲート（`build_lejeune_asset_manifest.py --verify` の内部）
 
@@ -217,20 +226,22 @@ BANNED_ACCURACY = re.compile(
 # 2. 台本の語数と尺の確定値（Aが素材点数を積算する根拠）
 
 ```
-words_total          = 4,737（narration・確定。ゲート出力は review_log に貼付）
-wpm_provisional      = 178.1（チャンネル中央値モデル）→ narration 1,595.9 s
+words_total          = 4,738（narration・★R3 で再ロック 2026-07-29。旧 4,737。ゲート出力は review_log に貼付）
+wpm_provisional      = 178.1（チャンネル中央値モデル）→ narration 1,596.2 s
 wpm_expected_measured= ~175（EP55 実測 170.4 / EP56 実測 175.1。★178.1 をそのまま信じない）
 ★HOOK-AUDIO 標準（owner・EP52 から継続）: Brian の声が 0:00 から鳴る（silent runway なし）。
-designed_gap_seconds = 185.1（PROVISIONAL。幕転換の息・AEカード下の music hold・
+designed_gap_seconds = 184.8（PROVISIONAL。幕転換の息・AEカード下の music hold・
                        earned breaths ≤3・OST 着地。check_padding を通る設計ギャップ＝dead air でない）
 endcard              = 9.0
-total_seconds        = 1,790.0（1,595.9 + 185.1 + 9.0）= 29:50（band 1740–1860 内 ✓）
-speech ratio         = 1790.0 / 1595.9 = 1.122（実測帯 1.04–1.30 内 ✓）
+total_seconds        = 1,790.0（1,596.2 + 184.8 + 9.0）= 29:50（band 1740–1860 内 ✓）
+speech ratio         = 1790.0 / 1593.8 = 1.121（実測帯 1.04–1.30 内 ✓）
 durationInFrames     = 53,700（PROVISIONAL・fps30 = 1790×30・VO onset 0.0）
-mean_shot            = 3.164秒/カット（picture 1781.0 = total 1790.0 − endcard 9 / 563 cuts）
+mean_shot            = 3.163秒/カット（picture 1781.0 = total 1790.0 − endcard 9 / 563 cuts）
 視覚 act              = 7区（0=HOOK+OPENING / 1..5=ACT I..V / 6=ENDING）
 Act 語数配分（PROVISIONAL）:
-  HOOK 150 / OP 57 / ACT1 800 / ACT2 745 / ACT3 905 / ACT4 915 / ACT5 900 / ENDING 265 = 4,737
+  HOOK 122 / OP 49 / ACT1 701 / ACT2 648 / ACT3 843 / ACT4 866 / ACT5 1,113 / ENDING 389 = 4,738
+  （★R3 実測。旧行は概算で ACT5 を 900 と書いていたが実測は 1,113＝23.5%。ACT5 が最長なのは設計どおり
+   〈payoff cascade〉で、内部に3つのリバーサルを持つため R-15 の 21% 制約に抵触しない）
 ```
 
 > **★★ measured-VO re-lock（A も必ず理解しておくこと・DESIGN §5 が正典）:** ElevenLabs マスターを実測したら
@@ -376,7 +387,7 @@ Act 語数配分（PROVISIONAL）:
 
 ```
 { LEJ-S001 (the kitchen tap filling a glass at night, an adult turned away at the counter — the hook signature),
-  LEJ-S058 (a television's cold light thrown across a dark kitchen wall, screen unreadable — the broadcast),
+  LEJ-S058 (a single lit kitchen window seen from a dark yard, the only light in the house — the man who stayed up),
   LEJ-S104 (a carbon-copy analytical form on a clipboard under one desk lamp, every mark an unreadable smear — the record),
   LEJ-S186 (a thick tabbed binder standing on a hearing-room table beside a glass of water — the archive) }
 ```
@@ -392,7 +403,7 @@ Act 語数配分（PROVISIONAL）:
 { "public_path":"lejeune/factory/F001_kitchen_tap_running_close.mp4", "act":0, "covers_scene_id":"S001", "subtype":"kitchen_tap_running_close" }
 { "public_path":"lejeune/factory/F002_glass_filling_backlit.mp4", "act":0, "covers_scene_id":"S002", "subtype":"glass_filling_backlit" }
 { "public_path":"lejeune/factory/F003_dark_kitchen_window_night.mp4", "act":0, "covers_scene_id":"S003", "subtype":"dark_kitchen_window_night" }
-{ "public_path":"lejeune/factory/F004_television_glow_on_wall.mp4", "act":0, "covers_scene_id":null, "subtype":"television_glow_on_wall" }
+{ "public_path":"lejeune/factory/F004_kitchen_lamp_over_sink_night.mp4", "act":0, "covers_scene_id":null, "subtype":"kitchen_lamp_over_sink_night" }
 { "public_path":"lejeune/factory/F005_pine_treeline_dusk_wind.mp4", "act":0, "covers_scene_id":"S006", "subtype":"pine_treeline_dusk_wind" }
 { "public_path":"lejeune/factory/F006_coastal_marsh_fog_still.mp4", "act":0, "covers_scene_id":"S007", "subtype":"coastal_marsh_fog_still" }
 { "public_path":"lejeune/factory/F007_water_surface_black_slow.mp4", "act":0, "covers_scene_id":null, "subtype":"water_surface_black_slow" }
@@ -445,8 +456,8 @@ Act 語数配分（PROVISIONAL）:
 { "public_path":"lejeune/factory/F052_lawn_sprinkler_evening.mp4", "act":1, "covers_scene_id":null, "subtype":"lawn_sprinkler_evening" }
 
 // ACT II — AUGUST 1997 (act 2) — 34
-{ "public_path":"lejeune/factory/F053_crt_television_static_dark.mp4", "act":2, "covers_scene_id":"S052", "subtype":"crt_television_static_dark" }
-{ "public_path":"lejeune/factory/F054_television_glow_on_wall_02.mp4", "act":2, "covers_scene_id":"S058", "subtype":"television_glow_on_wall_02" }
+{ "public_path":"lejeune/factory/F053_empty_armchair_lamp_night.mp4", "act":2, "covers_scene_id":"S052", "subtype":"empty_armchair_lamp_night" }
+{ "public_path":"lejeune/factory/F054_lit_window_from_dark_yard.mp4", "act":2, "covers_scene_id":"S058", "subtype":"lit_window_from_dark_yard" }
 { "public_path":"lejeune/factory/F055_kitchen_night_single_bulb.mp4", "act":2, "covers_scene_id":"S059", "subtype":"kitchen_night_single_bulb" }
 { "public_path":"lejeune/factory/F056_plate_set_down_on_table.mp4", "act":2, "covers_scene_id":"S060", "subtype":"plate_set_down_on_table" }
 { "public_path":"lejeune/factory/F057_telephone_handset_lifted.mp4", "act":2, "covers_scene_id":"S062", "subtype":"telephone_handset_lifted" }
@@ -532,7 +543,7 @@ Act 語数配分（PROVISIONAL）:
 { "public_path":"lejeune/factory/F133_suburban_street_afternoon.mp4", "act":4, "covers_scene_id":"S130", "subtype":"suburban_street_afternoon" }
 { "public_path":"lejeune/factory/F134_home_office_desk_evening.mp4", "act":4, "covers_scene_id":"S131", "subtype":"home_office_desk_evening" }
 { "public_path":"lejeune/factory/F135_crt_monitor_cursor_blink.mp4", "act":4, "covers_scene_id":"S132", "subtype":"crt_monitor_cursor_blink" }
-{ "public_path":"lejeune/factory/F136_dial_up_modem_lights.mp4", "act":4, "covers_scene_id":null, "subtype":"dial_up_modem_lights" }
+{ "public_path":"lejeune/factory/F136_television_glow_dim_room.mp4", "act":4, "covers_scene_id":"S133", "subtype":"television_glow_dim_room" }
 { "public_path":"lejeune/factory/F137_map_pins_corkboard_close.mp4", "act":4, "covers_scene_id":"S134", "subtype":"map_pins_corkboard_close" }
 { "public_path":"lejeune/factory/F138_index_cards_spread_table.mp4", "act":4, "covers_scene_id":"S135", "subtype":"index_cards_spread_table" }
 { "public_path":"lejeune/factory/F139_ring_binder_pages_flip_02.mp4", "act":4, "covers_scene_id":"S136", "subtype":"ring_binder_pages_flip_02" }
@@ -648,7 +659,7 @@ Act 語数配分（PROVISIONAL）:
 
 ```jsonc
 { "asset_id":"LEJ-M01", "source_scene_id":"MS01", "source_still":"H:/pd-media/assets/ai/lejeune/M01_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M01_rife.mp4", "public_path":"lejeune/motion/M01_rife.mp4", "act":0, "storyboard":"hook", "tags":["tap_about_to_run_over_a_glass","H001_anon"] }
-{ "asset_id":"LEJ-M02", "source_scene_id":"MS02", "source_still":"H:/pd-media/assets/ai/lejeune/M02_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M02_rife.mp4", "public_path":"lejeune/motion/M02_rife.mp4", "act":0, "storyboard":"A0-02", "tags":["television_light_about_to_change"] }
+{ "asset_id":"LEJ-M02", "source_scene_id":"MS02", "source_still":"H:/pd-media/assets/ai/lejeune/M02_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M02_rife.mp4", "public_path":"lejeune/motion/M02_rife.mp4", "act":0, "storyboard":"A0-02", "tags":["dark_window_before_the_pines_move"] }
 { "asset_id":"LEJ-M03", "source_scene_id":"MS03", "source_still":"H:/pd-media/assets/ai/lejeune/M03_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M03_rife.mp4", "public_path":"lejeune/motion/M03_rife.mp4", "act":0, "storyboard":"A0-03", "tags":["pine_treeline_breathing_dusk"] }
 { "asset_id":"LEJ-M04", "source_scene_id":"MS04", "source_still":"H:/pd-media/assets/ai/lejeune/M04_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M04_rife.mp4", "public_path":"lejeune/motion/M04_rife.mp4", "act":1, "storyboard":"A1-01", "tags":["family_walking_to_base_quarters","H002_anon"] }
 { "asset_id":"LEJ-M05", "source_scene_id":"MS05", "source_still":"H:/pd-media/assets/ai/lejeune/M05_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M05_rife.mp4", "public_path":"lejeune/motion/M05_rife.mp4", "act":1, "storyboard":"A1-02", "tags":["sheets_on_a_line_before_the_gust"] }
@@ -657,7 +668,7 @@ Act 語数配分（PROVISIONAL）:
 { "asset_id":"LEJ-M08", "source_scene_id":"MS08", "source_still":"H:/pd-media/assets/ai/lejeune/M08_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M08_rife.mp4", "public_path":"lejeune/motion/M08_rife.mp4", "act":1, "storyboard":"A1-05", "tags":["water_tower_against_a_moving_sky"] }
 { "asset_id":"LEJ-M09", "source_scene_id":"MS09", "source_still":"H:/pd-media/assets/ai/lejeune/M09_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M09_rife.mp4", "public_path":"lejeune/motion/M09_rife.mp4", "act":1, "storyboard":"A1-06", "tags":["tricycle_still_the_walkway_empty"] }
 { "asset_id":"LEJ-M10", "source_scene_id":"MS10", "source_still":"H:/pd-media/assets/ai/lejeune/M10_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M10_rife.mp4", "public_path":"lejeune/motion/M10_rife.mp4", "act":1, "storyboard":"A1-07", "tags":["adult_sitting_alone_at_a_table","H005_anon"] }
-{ "asset_id":"LEJ-M11", "source_scene_id":"MS11", "source_still":"H:/pd-media/assets/ai/lejeune/M11_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M11_rife.mp4", "public_path":"lejeune/motion/M11_rife.mp4", "act":2, "storyboard":"A2-01", "tags":["a_man_standing_still_before_a_screen","H006_anon"] }
+{ "asset_id":"LEJ-M11", "source_scene_id":"MS11", "source_still":"H:/pd-media/assets/ai/lejeune/M11_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M11_rife.mp4", "public_path":"lejeune/motion/M11_rife.mp4", "act":2, "storyboard":"A2-01", "tags":["a_man_standing_still_in_an_unlit_room","H006_anon"] }
 { "asset_id":"LEJ-M12", "source_scene_id":"MS12", "source_still":"H:/pd-media/assets/ai/lejeune/M12_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M12_rife.mp4", "public_path":"lejeune/motion/M12_rife.mp4", "act":2, "storyboard":"A2-02", "tags":["a_plate_set_down_and_not_picked_up"] }
 { "asset_id":"LEJ-M13", "source_scene_id":"MS13", "source_still":"H:/pd-media/assets/ai/lejeune/M13_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M13_rife.mp4", "public_path":"lejeune/motion/M13_rife.mp4", "act":2, "storyboard":"A2-03", "tags":["hands_typing_a_records_request","H007_anon"] }
 { "asset_id":"LEJ-M14", "source_scene_id":"MS14", "source_still":"H:/pd-media/assets/ai/lejeune/M14_src.png", "path":"H:/pd-media/assets/ai_video/lejeune/M14_rife.mp4", "public_path":"lejeune/motion/M14_rife.mp4", "act":2, "storyboard":"A2-04", "tags":["an_envelope_poised_over_a_post_slot"] }
@@ -714,7 +725,7 @@ Act 語数配分（PROVISIONAL）:
 { "public_path":"lejeune/overlay/L01_kitchen_window_light_bar.mp4", "type":"light_assets", "subtype":"kitchen_window_light_bar", "blend_hint":"screen" }
 { "public_path":"lejeune/overlay/L02_fluorescent_office_wash.mp4", "type":"light_assets", "subtype":"fluorescent_office_wash", "blend_hint":"screen" }
 { "public_path":"lejeune/overlay/L03_single_desk_lamp_glow.mp4", "type":"light_assets", "subtype":"single_desk_lamp_glow", "blend_hint":"screen" }
-{ "public_path":"lejeune/overlay/L04_television_flicker_cold.mp4", "type":"light_assets", "subtype":"television_flicker_cold", "blend_hint":"screen" }
+{ "public_path":"lejeune/overlay/L04_television_flicker_cold.mp4", "type":"light_assets", "subtype":"television_flicker_cold", "blend_hint":"screen", "act_restriction":[4,5], "note":"★R3: R-TVMEDIUM. This overlay may ONLY be laid over act-4 (S133/F136, Partain) and act-5 (S177/S178/F181/M36, the 2022 ad blitz) cuts. NEVER over act 0 or act 2." }
 { "public_path":"lejeune/overlay/L05_record_daylight_pale.mp4", "type":"light_assets", "subtype":"record_daylight_pale", "blend_hint":"screen" }
 { "public_path":"lejeune/overlay/L06_water_reflected_ceiling.mp4", "type":"light_assets", "subtype":"water_reflected_ceiling", "blend_hint":"screen" }
 { "public_path":"lejeune/overlay/L07_headlight_sweep_night.mp4", "type":"light_assets", "subtype":"headlight_sweep_night", "blend_hint":"screen" }
@@ -836,7 +847,7 @@ A dinner plate set down on a laminate table and left untouched, the food gone ma
 - **★HP the_man_who_stopped — 2 — S004, S010**
 ```
 - `S004.png`
-An anonymised adult man standing motionless in a doorway, shoulders squared and head slightly turned, the cold flicker of a television washing across his back and the wall beside him, his face lost entirely to shadow, the corridor behind him dark, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
+An anonymised adult man standing motionless in a doorway, shoulders squared and head slightly turned, one hand still on the frame, a single kitchen lamp beyond him throwing his shadow back down the hall, his face lost entirely to shadow, the corridor behind him dark, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 ```
 - **treeline_and_marsh — 2 — S006–S007**
 ```
@@ -1008,19 +1019,19 @@ A scattering of anonymised adults in dark coats standing apart on wet winter gra
 ```
 
 ### ACT 2 — AUGUST 1997（34枚・S052–S085）
-- **the_news_that_travelled — 3 — S052, S056, S058**（S058 は also_thumb）
+- **the_room_that_was_not_told — 3 — S052, S056, S058**（S058 は also_thumb）★**R3-fix: この motif は元「the_news_that_travelled」でテレビ3点だった。CL-15 / §W「Ensminger にテレビ場面を演出しない」に違反していたため媒体を消した。テレビは ACT 4（Partain・S133）に移設済み。**
 ```
 - `S052.png`
-A wood-veneer console television standing in a dark 1990s living room, the screen a featureless blue-white glow with nothing readable on it, a doily and a lamp on top, the carpet lit only by what the tube throws, no person, no readable text [STYLE] Avoid: [NEG]
+An empty armchair square to a dark 1990s living room with one table lamp left burning in the corner, the curtains drawn, a folded blanket over the arm and a cold cup on the side table, nothing switched on and nobody present, no readable text [STYLE] Avoid: [NEG]
 - `S056.png`
-A narrow domestic hallway photographed from its dark end, a doorway at the far side pulsing with the cold changing light of a television in another room, coats on hooks in silhouette, nobody in the corridor, no readable text [STYLE] Avoid: [NEG]
+A narrow domestic hallway photographed from its dark end, one closed door at the far side edged by a thin hard line of light from the room beyond, coats on hooks in silhouette, the runner rug pale down the middle, nobody in the corridor, no readable text [STYLE] Avoid: [NEG]
 - `S058.png`
-The cold moving light of a television thrown across the wall and cabinets of a dark kitchen, the set itself out of frame, the light finding a kettle and a row of mugs and the edge of a doorframe, an ordinary room receiving news, no person, no readable text [STYLE] Avoid: [NEG]
+A single lit kitchen window seen from far out in a dark yard, the only light anywhere in a low brick house, the sill line and one cabinet edge just readable as shapes inside, pine woods closing the frame on both sides, deep night, no person, no readable text [STYLE] Avoid: [NEG]
 ```
 - **★HP the_stillness — 2 — S053, S059**
 ```
 - `S053.png`
-An anonymised adult standing dead still in a dim room with the changing light of a television washing over one shoulder and the side of a jaw, the head turned so no face resolves, one arm hanging, the room otherwise unlit, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
+An anonymised adult standing dead still in a dim room with a single low lamp raking across one shoulder and the side of a jaw, the head turned so no face resolves, one arm hanging, the room otherwise unlit, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 - `S059.png`
 An anonymised adult sitting on the very edge of an armchair with elbows on knees and hands clasped, photographed squarely from behind so only the back and the set of the shoulders read, a lamp burning low beyond, absolute stillness, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 ```
@@ -1029,7 +1040,7 @@ An anonymised adult sitting on the very edge of an armchair with elbows on knees
 - `S054.png`
 A plate of food congealing on a side table beside an armchair, a fork abandoned across it, a folded newspaper under the plate with all print reduced to grey noise, one lamp low and warm, nobody in the room, no readable text [STYLE] Avoid: [NEG]
 - `S055.png`
-A television remote control lying on the worn upholstered arm of a chair, buttons rubbed blank, the fabric nap catching a single hard sidelight, the room around it entirely black, an object of ordinary evenings, no person, no readable text [STYLE] Avoid: [NEG]
+A pair of reading glasses folded on the worn upholstered arm of a chair, the lenses catching a single hard sidelight, the fabric nap raised around them, the room otherwise entirely black, an object of ordinary evenings, no person, no readable text [STYLE] Avoid: [NEG]
 - `S060.png`
 A small kitchen at night lit by one bare bulb, two chairs pulled out from a table, a dish towel over the oven rail, everything ordinary and everything paused, deep shadow in the corners, no people, no readable text [STYLE] Avoid: [NEG]
 ```
@@ -1265,9 +1276,9 @@ An anonymised adult sitting alone at one end of a long row of moulded plastic wa
 - `S128.png`
 A long institutional corridor seen from its dark end with morning light coming in through one distant window and lying in a pale rectangle on the floor, doors closed all the way along, absolutely nothing else in the frame, no people, no readable text [STYLE] Avoid: [NEG]
 - `S129.png`
-A shelf of heavy bound ledgers with cracked spines and no legible lettering, packed tight and pushed to the back of a wooden case, a gap where one volume has been taken out, dust along the top edge, no people, no readable text [STYLE] Avoid: [NEG]
+A shelf of heavy bound ledgers with cracked spines and every gilt title dissolved into an unreadable smear, packed tight and pushed to the back of a wooden case, a gap where one volume has been taken out, dust along the top edge, no people, no readable text [STYLE] Avoid: [NEG]
 ```
-- **the_ordinary_life — 1 — S130 ／ ★HP the_night_desk — 1 — S131 ／ the_screen — 2 — S132, S133**
+- **the_ordinary_life — 1 — S130 ／ ★HP the_night_desk — 1 — S131 ／ the_screen_and_the_broadcast — 2 — S132, S133**（★**R3-fix: S133 が本作で唯一のテレビ。記録上テレビは Partain のもの（CL-25「after viewing a television report about Camp Lejeune while he was treating his breast cancer」）＝ACT 4 にのみ置く。ACT 0 / ACT 2 のテレビは全て撤去済み。**）
 ```
 - `S130.png`
 A quiet residential street of low ranch houses in the early 2000s, sprinklers off, a basketball hoop over a garage, the asphalt pale in flat afternoon sun, palms and live oak at the ends of the drives, no people, no readable text [STYLE] Avoid: [NEG]
@@ -1276,7 +1287,7 @@ An anonymised adult seated at a cluttered home-office desk at night with his bac
 - `S132.png`
 A boxy computer monitor alone in a dark room showing a single blinking cursor in the corner of an otherwise empty field of light, the phosphor glow spilling onto a desk edge and a coffee mug, nothing readable anywhere on the screen, no person, no readable text [STYLE] Avoid: [NEG]
 - `S133.png`
-The status lamps of a desktop modem blinking in near-darkness, macro, the plastic case reflecting nothing else, a tangle of cable running out of focus behind, the only light in a sleeping house, no person, no readable text [STYLE] Avoid: [NEG]
+The cold changing light of a television washing across a dim living room in the late 2000s, the set itself out of frame and nothing on it readable, the glow finding a recliner, a folded throw and a glass of water on a side table, nobody in the room, no readable text [STYLE] Avoid: [NEG]
 ```
 - **the_list_being_built — 2 — S134, S136 ／ ★HP the_cards — 1 — S135**
 ```
@@ -1666,7 +1677,7 @@ Generate all 12; QC each visually (visible emotive face · non-real · no likene
 | Q1 | 解像度 | `max(w,h)>=3840` | reject |
 | Q2 | サイズ/開ける | `>1024 bytes` かつ PIL で開ける | reject |
 | Q3 | 平均輝度 | `18.0<=mean_luma<=225.0`（夜/低照度が多い→黒潰れ注意。ACT4 後半の公聴会・ACT5 の署名・ENDING の dawn は明側） | reject |
-| Q4 | 近似重複 | 全ペア phash。類似度 `>=0.90` は片方 reject。**watch-list（§5.5a の状態連鎖が正）: tap & glass 連鎖(S001–S002 / S027–S028 / S110–S111 / S186 / S197–S198 / S207)・form 7状態(S086 / S104–S106 / S112 / S116 / S150 / S188)・binder 5状態(S072–S073 / S136 / S186 / S195 / S199 / S204)・quarters 3状態(S016 / S045 / S203)・well 3状態(S097–S098 / S109)・treeline/marsh 対(S006–S007 / S201–S202)・corridor 群(S067 / S118 / S128 / S146)・archive 群(S009 / S081 / S116 / S164)・★HP waiting/gallery 群(S079 / S127 / S143 / S157 / S171–S172 / S187 / S190–S191)・★HP hands-macro 群(S010 / S028 / S057 / S062 / S082 / S105 / S135 / S137 / S144 / S161 / S163 / S176 / S181 / S185 / S195 / S204)・far-figure 群(S049 / S119 / S123 / S179 / S209) の被りに注意** | 片方 reject＋プロンプト見直し（削るのではなく §5.5a のルールで作り直す） |
+| Q4 | 近似重複 | 全ペア phash。類似度 `>=0.90` は片方 reject。**watch-list（§5.5a の状態連鎖が正）: tap & glass 連鎖(S001–S002 / S027–S028 / S110–S111 / S186 / S197–S198 / S207)・form 7状態(S086 / S104–S106 / S112 / S116 / S150 / S188)・binder 5状態(S072–S073 / S136 / S186 / S195 / S199 / S204)・quarters 3状態(S016 / S045 / S203)・well 3状態(S097–S098 / S109)・treeline/marsh 対(S006–S007 / S201–S202)・corridor 群(S067 / S118 / S128 / S146)・archive 群(S009 / S081 / S116 / S164)・★HP waiting/gallery 群(S079 / S127 / S143 / S157 / S171–S172 / S187 / S190–S191)・★HP hands-macro 群(S010 / S028 / S057 / S062 / S082 / S105 / S135 / S137 / S144 / S161 / S163 / S176 / S181 / S185 / S195 / S204)・far-figure 群(S049 / S119 / S123 / S179 / S209)・★**R3 追加: 夜の窓/夜の家 群(S003 内から見た暗い窓 / S058 外の闇から見た唯一の灯った窓 / S060 裸電球の台所 / S085 夜のポーチ / S203 夜明けの兵舎)** — S058 は R3 でテレビ像から差し替えた ACT2 の also_thumb であり、**この5枚が互いに似たら S058 を最優先で作り直す**（サムネの背景アンカーだから） の被りに注意** | 片方 reject＋プロンプト見直し（削るのではなく §5.5a のルールで作り直す） |
 | Q5 | 文字の混入 | **目視。** 読める英字・数字・年（1953/1980/1981/1985/1987/2012/2022/2026）・濃度・件数・金額・様式名・部隊名・企業名 | `has_readable_text=true`→reject |
 | Q6 | **実在人物**の顔の混入 | **目視。** 実在人物として識別可能な顔（Ensminger / Partain / 議員 / 将官 / 判事 に**似た**顔）。**匿名・非識別の顔（★HP/F/thumb_face）は OK。** | `has_identifiable_real_person=true`→reject |
 | Q7 | **子ども / 医療 / 墓 / 部隊章** | **目視。★本作の最重要検査。** 子どもの姿（健康な子どもも不可）・病室/点滴/注射器/カルテ・棺/墓石/葬列・実在の部隊章/エンブレム/階級章。**★匿名の成人の身体は OK。** | あれば **即 reject** |
@@ -1701,7 +1712,7 @@ footage/still treatment は `bleed`/`parallax`/`duotone`/`focus` のみ・`depth
 
 ## 7.0 ★★★ 選定は `search_archive.py` を通す。生フォルダ名で選ばない ★★★
 
-**在庫は 111,821点の権利処理済みアーカイブ（`H:\pd-media\assets\archive\_ledger\*.jsonl`）＋ factory 棚 88,740点。** 検索窓口は**一つだけ**:
+**在庫＝`search_archive.py` が引ける単一インデックスで ★実測 113,460点**（R3 再計測 2026-07-29・`search_archive.py --stats`。内訳 image 93,403 / video 17,871 / audio 2,186。license: free_commercial 91,464 / pd 18,547 / cc0 2,618 / pd_us_gov 24 / **review_required 802 = 使用不可**。source: nara 1,319 / loc 615 / ia 384 / nasa 6,411 / noaa 1,128 ほか）。★**旧記載「111,821点のアーカイブ＋factory棚 88,740点」は誤り**（合計 200,561 になり、実在する検索可能インデックス 113,460 と一致しない）。**アーカイブと factory 棚は別勘定ではなく、この1本のインデックスに同居している。** 検索窓口は**一つだけ**:
 
 ```bash
 ./.venv/Scripts/python.exe scripts/search_archive.py <keywords> [--theme X] [--source Y] [--kind video] [--license pd|cc0|free_commercial] [--limit N]
@@ -1787,7 +1798,7 @@ episodes/PD-2026-058-lejeune/05_visuals/factory_clip_qc.v001.json   # ★235本�
 - `M01_src.png`
 An anonymised adult's hand on a kitchen tap handle at night with a plain glass waiting in the sink beneath, held absolutely still in the half-second before the tap turns, one overhead fixture, the glass empty and clear, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 - `M02_src.png`
-A dark living-room wall carrying the cold light of an unseen television, the light held motionless at the instant before the picture cuts and everything in the room changes value, a doorframe and a lamp base catching the edge of it, no person, no readable text [STYLE] Avoid: [NEG]
+A dark kitchen window seen from inside with the yard black beyond it, the pane held absolutely still in the instant before the wind moves the pine line outside and everything in the glass changes value, a sill and one cabinet edge catching the room's single lamp, no person, no readable text [STYLE] Avoid: [NEG]
 - `M03_src.png`
 A loblolly pine treeline at dusk photographed dead still in the moment before a gust reaches it, every needle and branch frozen, the sky behind holding one last band of pine-and-clay light, no people, no readable text [STYLE] Avoid: [NEG]
 - `M04_src.png`
@@ -1805,7 +1816,7 @@ A small tricycle standing motionless on a concrete walkway with one pedal at the
 - `M10_src.png`
 An anonymised adult sitting alone at a kitchen table with hands flat either side of a closed folder, held completely still in the beat before the hands move, photographed from behind and slightly above so no face reads, one pendant lamp, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 - `M11_src.png`
-An anonymised adult standing rigid in front of an unseen television, the cold light on one shoulder held at the instant before it changes, the head turned away entirely, the room otherwise unlit, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
+An anonymised adult standing rigid in an unlit room with one hand still on the back of a chair, held at the instant before the weight shifts, a single low lamp catching one shoulder, the head turned away entirely, no likeness, no readable text [HSTYLE] Avoid: [HNEG]
 - `M12_src.png`
 A plate of food set down on a table and framed from directly above, the steam already gone, a fork laid across it, held in the stillness of a meal that will not be eaten, a chair back at the frame edge, no person, no readable text [STYLE] Avoid: [NEG]
 - `M13_src.png`

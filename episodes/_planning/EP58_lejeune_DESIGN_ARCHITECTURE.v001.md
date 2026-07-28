@@ -2,7 +2,7 @@
 ### The creative + quality + guardrail spine for EP58 (30-min case film). This is the SOURCE OF INTENT that CODEX_A and CODEX_B both inherit. Where a later doc conflicts with this one on VISUAL INTENT or QUALITY BAR, this wins.
 
 > episode_id `PD-2026-058-lejeune` · slug `lejeune` · EP58 · fps 30 · 1920×1080 · id `Ep58Lejeune` · target **30:00** (band 29.0–31.0 min = 1740–1860 s)
-> Companions: `EP58_lejeune_script.en.v001.md` (LOCKED voice, **4,737 spoken words**), `EP58_lejeune_FACTS_LEDGER.v001.md` (the ONLY fact source; CL-numbers), `EP58_lejeune_CODEX_A_ASSETS.v001.md` (asset generation), `EP58_lejeune_CODEX_B_BUILD.v001.md` (build/render — to be written). CTR packaging = CTR_PLAYBOOK §4A.
+> Companions: `EP58_lejeune_script.en.v001.md` (LOCKED voice, **4,738 spoken words** — R3-relocked 2026-07-29), `EP58_lejeune_FACTS_LEDGER.v001.md` (the ONLY fact source; CL-numbers), `EP58_lejeune_CODEX_A_ASSETS.v001.md` (asset generation), `EP58_lejeune_CODEX_B_BUILD.v001.md` (build/render — to be written). CTR packaging = CTR_PLAYBOOK §4A.
 > **HARD FRAME (from the ledger):** **Jerry Ensminger and Mike Partain are LIVING public advocates who have testified before Congress under oath** — their existence, positions, actions and sworn words are statable and quotable, and both were confirmed alive and active in July 2026 (CL-18 / CL-26b; the 2021 Find A Grave decedent of the same name is a different man). **NO LIKENESS of either man, of Janey Ensminger, or of any officer, official, judge or legislator.** **Janey Ensminger died at nine on 24 September 1985: ONE narration passage, her father's own sworn wording as the ceiling, never sentimentalised — and NEVER DEPICTED. No sick or dying child anywhere in this film, and no healthy child either; grief is carried by objects, absence and adult figures. No medical imagery of any kind (no bed, no drip, no chart, no procedure), no coffin, no memorial marker in close-up.** **The villain is institutional.** **No individual has ever been charged, disciplined or reprimanded** — a federal criminal investigation was completed and declined in 2007 (CL-44) — so no officer or official is named as a wrongdoer, and the dry-cleaner's private proprietors are never named (CL-45). **No court has ever found the United States liable.** **Causation is the fatal-defect risk: "associated with," never "caused"** — ledger §W is binding on narration, on-screen text, AE copy and every CODEX prompt.
 
 ---
@@ -50,7 +50,7 @@ This film is **not** mainly AI stills. It is built from four layers, and the bud
 | Layer | What it is | Cuts | **% of 563 cuts** | Sourcing route |
 |---|---|---|---|---|
 | **L1 — real archival / factory footage** | 235 rights-cleared clips selected from the 111,821-item archive (`H:\pd-media\assets\archive\_ledger\*.jsonl`) + the 88,740-item factory shelf | **235** | **41.7%** | `search_archive.py` **only** + a labelled contact sheet before locking (CODEX_A §7.0) |
-| **L2 — After Effects hero cards** | **17 cards**, six proven layouts only, each carrying a real ledger fact as *designed motion*, not a static plate | overlaid (≈100 s of screen time; not counted as cuts) | on top | §3 below |
+| **L2 — After Effects hero cards** | **17 cards**, six proven layouts only, each carrying a real ledger fact as *designed motion*, not a static plate | overlaid (**82.5 s** of card time — recomputed R3 from the §3 duration column; not counted as cuts) | on top | §3 below |
 | **L3 — Codex AI stills** | **210** stills (**85 human-present = 40.5%**), full literal prompts, **filling only what L1 cannot legally or ethically cover** | **244** | **43.3%** | CODEX_A §5 |
 | **L4 — i2v motion + overlays** | **42** Wan/RIFE motion clips (18 of them human) + 30 particle/light/vfx overlays | **84** | **14.9%** | CODEX_A §8, §9 |
 
@@ -65,11 +65,11 @@ This film is **not** mainly AI stills. It is built from four layers, and the bud
 
 | Section | L1 (archive/factory) carries | L2 (AE cards) carries | L3 (Codex stills) carries | L4 (i2v) carries |
 |---|---|---|---|---|
-| **HOOK / OPENING** | the running tap, the glass filling, a dark kitchen window, a pine treeline, a marsh | `ACT_TITLE`-class opening card + `CENTER_STACK` 408,000 / 3,759 | the man turned away at the counter; the buried form in a drawer; the title beds | tap poised to run; TV light about to change; treeline before the gust |
+| **HOOK / OPENING** | the running tap, the glass filling, a dark kitchen window, a pine treeline, a marsh | `ACT_TITLE`-class opening card + `CENTER_STACK` 408,000 / 3,759 | the man turned away at the counter; the buried form in a drawer; the title beds | tap poised to run; dark window before the pines move; treeline before the gust |
 | **ACT I — the quarters** | base-housing environment: clothesline, screen door, walkway, water tower, sink, bathtub, hose, rain | `ACT_TITLE_CARD I` + `CENTER_STACK` PCE 215 vs 5 / TCE 1,400 vs 5 | the family arriving; the formation cropped below the waist; the tricycle; the empty chair; the laid table | family mid-step; sheets before the gust; hands filling a glass |
 | **ACT II — August 1997** | typewriter, envelope, post slot, filing drawer, photocopier, microfilm, corridors, mailbox | `ACT_TITLE_CARD II` + `QUOTE_CARD #1` (the 1981 remark, held for III) | the stillness; the first blank notepad; the binder born; the tabs; the night porch | hand lifting a handset; envelope over a slot; drawer poised to shut |
 | **ACT III — what the lab wrote** | glassware, sample bottles, pipette, chart recorder, valve, pipework, pump house, drums, dry-cleaner shopfront, drain | `ACT_TITLE_CARD III` + **`QUOTE_CARD #1`** (CLW 0443, the mid reveal) + `CENTER_STACK` 1980 · 1981 · 1982 · WELLS OFF 1984–85 | **the form's seven states** (blank → written → carbon → filed → boxed); the untouched glass; the tap shut | pen poised in the margin; chart needle before the kick; tap closing |
-| **ACT IV — the man born on the base** | hospital exterior (far), waiting chairs, record ledgers, corkboard, index cards, conference table, capitol, printout, hearing hall | `ACT_TITLE_CARD IV` + **`QUOTE_CARD #2`** (Partain's opening line) + `CENTER_STACK` ATSDR WITHDREW ITS OWN ASSESSMENT + `SPLIT_COMPARE` 64 MEN (2010) ↔ 125+ (2026) | the home desk at night; the wall of names; the reflection; the hearing gallery | index cards laid one by one; map pins; a report pushed back onto a shelf |
+| **ACT IV — the man born on the base** | hospital exterior (far), waiting chairs, record ledgers, **the television's light in a dim room (the film's ONLY television outside the Act V advertising beat — the record puts the broadcast with Partain, CL-25)**, corkboard, index cards, conference table, capitol, printout, hearing hall | `ACT_TITLE_CARD IV` + **`QUOTE_CARD #2`** (Partain's opening line) + `CENTER_STACK` ATSDR WITHDREW ITS OWN ASSESSMENT + `SPLIT_COMPARE` 64 MEN (2010) ↔ 125+ (2026) | the home desk at night; the wall of names; the reflection; the hearing gallery | index cards laid one by one; map pins; a report pushed back onto a shelf |
 | **ACT V — the two-year window** | capitol steps, signing pen, courthouse, empty courtroom, docket, claim forms, mail trays, late-night TV, corridor benches | `ACT_TITLE_CARD V` + `CENTER_STACK` "AT LEAST AS LIKELY AS NOT" + `CENTER_STACK` NO JURY · 6 FEB 2024 + **`MONEY_STACK`** $10,000 / $24,000 / $405 | the queue; the clerk's stack; the binder on the hearing table; the deposition room; the closed binder | claim forms stacking; docket page turning; pen above a signing line |
 | **ENDING** | dawn kitchen, empty glass, dripping tap, binder shelf, treeline at first light, courthouse door | `CENTER_STACK` 30 OCTOBER 2026 (falling action; the fact is planted at 0:40) | the empty chair at dawn; the walkway; still water | binder closing; one drop gathering; dawn on the quarters |
 
@@ -78,8 +78,8 @@ This film is **not** mainly AI stills. It is built from four layers, and the bud
 ## 2. ANIMATION INTENT PER ACT (motion as dramaturgy)
 Density stays high throughout; its CHARACTER tracks the story. The **biggest payoffs are stacked LATE** (the Act that removed every barrier → what it actually paid → the deadline), so retention runs to completion.
 
-- **HOOK (~33s · VOICE LEADS FROM 0:00 — HOOK-AUDIO standard):** Brian's cold-open line plays from frame 0. Visual: a tap running into a plain glass under one hard kitchen light; a hand not taking it. Ambience UNDER the voice (water, a fridge hum, cicadas beyond the screen door) — no music-only runway. One mask-lift line: **"THEY WROTE IT DOWN."** Branded opening = a ≤5.0s overlapping sting placed AFTER the BUT-loop, music ducked ≥12 dB under Brian.
-- **OPENING (post-brand, ~12s):** ONE escalating sentence over the claim-count card, then the anchor "Camp Lejeune, North Carolina" and a cut to a well head. No thesis paragraph.
+- **HOOK (★R3-measured **43.5 s** at 178.1 wpm / 45.4 s at 170.4 — NOT the ~33 s this document previously claimed · VOICE LEADS FROM 0:00 — HOOK-AUDIO standard):** Brian's cold-open line plays from frame 0. Visual: a tap running into a plain glass under one hard kitchen light; a hand not taking it. Ambience UNDER the voice (water, a fridge hum, cicadas beyond the screen door) — no music-only runway. One mask-lift line: **"THEY WROTE IT DOWN."** Branded opening = a ≤5.0s overlapping sting placed AFTER the BUT-loop **at ~0:44–0:49**, music ducked ≥12 dB under Brian. ★R3: the loop is *planted* at 23.3 s and its *core* lands at 31.7 s, so R-10 (loop by ~0:32) and R-11 (sting only after the loop exists) are both satisfied; what was wrong was the arithmetic, not the structure.
+- **OPENING (post-brand, ~0:49–1:06, 16.8 s at 178.1 wpm):** ONE escalating sentence over the claim-count card, then the anchor "Camp Lejeune, North Carolina" and a cut to a well head. No thesis paragraph.
 - **ACT I — THE QUARTERS:** warm, humid, slow — the only warmth the film has. Sheets moving, a hose arc, ice in a glass, a walkway with a tricycle on it. The chemistry is folded in over *objects in the ground*, not over a diagram. The act turns cold in two cuts at the Janey passage: motion drops to near-still for exactly one earned breath (≤2.5s) on the empty chair, then resumes.
 - **ACT II — AUGUST 1997 (the machine of paper):** the densest cutting in the first half. Every ignored request is a glimpse → a drawer closing → a photocopier bar → a stack growing. The binder motif is born and starts multiplying. `mechanism gears` runs under the FOIA sequence.
 - **ACT III — WHAT THE LABORATORY WROTE (the engine · mid reveal):** motion slows and tightens onto paper. Macro on a pen, on carbon, on a clipboard. The 1981 remark lands on the film's only true held beat: `QUOTE_CARD #1`, mask-lift, ~5.5s, over a near-black frame. Then the arithmetic accelerates — 1980, 1981, 1982, wells off 1984–85 — and the act ends on the tap shutting over a dry sink.
@@ -106,20 +106,20 @@ Density stays high throughout; its CHARACTER tracks the story. The **biggest pay
 | 3 | `CENTER_STACK` | TARAWA TERRACE · PCE 215 µg/L · LIMIT 5 | CL-04 | 5.0 s | ~11% |
 | 4 | `CENTER_STACK` | HADNOT POINT · TCE 1,400 µg/L · 280× THE LIMIT | CL-04 | 5.0 s | ~12% |
 | 5 | `ACT_TITLE_CARD` | II · AUGUST 1997 | — | 3.0 s | 18.8% |
-| 6 | `CENTER_STACK` | DIAGNOSED 1983 · DIED 1985 · TOLD 1997 | CL-13/14/15 | 5.5 s | ~20% |
+| 6 | `CENTER_STACK` | DIAGNOSED 1983 · DIED 1985 · TOLD 1997 | **CL-14b** (the 1983 derivation, R3-added) + CL-14/15 | 5.5 s | ~20% |
 | 7 | `ACT_TITLE_CARD` | III · WHAT THE LABORATORY WROTE | — | 3.0 s | 36% |
-| 8 | `CENTER_STACK` | 30 OCT 1980 · "HIGHLY CONTAMINATED" | CL-21a | 4.5 s | ~37% |
+| 8 | `CENTER_STACK` | FOUR NOTES ON FOUR FORMS · 30 OCT 1980 · 29 DEC 1980 · 30 JAN 1981 · 9 MAR 1981 | CL-21a/b/**d**/c | **5.5 s** | ~37% |
 | 9 | **`QUOTE_CARD` #1** | **"Water highly contaminated with other chlorinated hydrocarbons (solvents)!"** — U.S. Army laboratory analytical result form, samples 9 March 1981, Hadnot Point · CLW 0443 | CL-21c | **7.0 s** | **38.9% — MID REVEAL** |
 | 10 | `CENTER_STACK` | WELLS OFF: NOV–DEC 1984 · FEB 1985 · PLANT CLOSED 1987 | CL-24 | 5.5 s | ~42% |
 | 11 | `ACT_TITLE_CARD` | IV · THE MAN BORN ON THE BASE | — | 3.0 s | 51% |
-| 12 | **`QUOTE_CARD` #2** | **"'You have male breast cancer' were the words which greeted me and my wife on our 18th wedding anniversary."** — Mike Partain, sworn testimony, House Veterans' Affairs Committee, 16 September 2010 | CL-26 | **6.5 s** | 51.4% |
+| 12 | **`QUOTE_CARD` #2** | **"'You have male breast cancer' were the words which greeted me and my wife on our 18th wedding anniversary."** — Mike Partain, sworn testimony to Congress, 16 September 2010 | CL-26 | **6.5 s** | 51.4% |
 | 13 | `SPLIT_COMPARE` | THE REGISTRY HE BUILT: 64 MEN (2010) ↔ 125+ (2026) | CL-26c | 5.0 s | ~56% |
 | 14 | `CENTER_STACK` | 28 APRIL 2009 · ATSDR WITHDRAWS ITS OWN ASSESSMENT | CL-29 | 5.5 s | 60.9% |
 | 15 | `ACT_TITLE_CARD` | V · THE TWO-YEAR WINDOW | — | 3.0 s | 69% |
 | 16 | `CENTER_STACK` | THE STANDARD CONGRESS SET · "AT LEAST AS LIKELY AS NOT" | CL-34 | 5.0 s | ~75% |
 | 17 | **`MONEY_STACK`** | THREE OF THE TWENTY-FIVE · $10,000 · $24,000 · $405 | CL-40 | **7.5 s** | **91.8% — PRIMARY PEAK** |
 
-Deck total ≈ **81 s** of card time. A second `CENTER_STACK` for the ENDING ("30 OCTOBER 2026") is rendered by the **film's own OST layer, not by AE**, because it must remain re-cuttable up to the day of publication (§6 re-check).
+Deck total = **82.5 s** of card time (R3: 4.5+3+5+5+3+5.5+3+**5.5**+7+5.5+3+6.5+5+5.5+3+5+7.5 — card 8 went 4.5→5.5 s when R3 gave it the four-form sequence). A second `CENTER_STACK` for the ENDING ("30 OCTOBER 2026") is rendered by the **film's own OST layer, not by AE**, because it must remain re-cuttable up to the day of publication (§6 re-check).
 
 ### Rules for the WHOLE AE program
 - **ACCENT tuple** `[0.310, 0.639, 0.706]` (#4FA3B4 tap-water aqua) — RGB tuple, not just a hex comment. INK `[0.035, 0.043, 0.047]`. **Record-daylight `[0.839, 0.878, 0.894]` (#D6E0E4) ONLY on cards 12, 14, 16 and 17.** Solvent ochre is an IMAGE note, never an AE colour.
@@ -155,19 +155,27 @@ Rendered inside the Remotion film via the real `FigureBeats.tsx` union. **Valida
 
 ## 5. COMPOSITION & TIMING (30-min) — ★VOICE-LEADS-FROM-0 model, with the measured-VO re-lock written in
 - `id="Ep58Lejeune"`, 1920×1080, fps 30, ENDCARD_SEC 9.
-- Script `EP58_lejeune_script.en.v001.md` = **4,737 spoken words** (gate: `check_script_length.py --lo 1740 --hi 1860` = **PASS**; owner band 4,600–4,750 ✓).
+- Script `EP58_lejeune_script.en.v001.md` = **4,738 spoken words** (gate: `check_script_length.py --lo 1740 --hi 1860` = **PASS**; owner band 4,600–4,750 ✓ — 12 words of headroom left, do not spend it).
 
 ### 5.1 PROVISIONAL model (used until the ElevenLabs master exists — do not treat as final)
 ```
-words_total          = 4,737
-wpm_provisional      = 178.1        -> narration 1,595.9 s
-designed_gap_seconds = 185.1        (act turns, music holds under AE cards, 3 earned breaths, OST landings)
+words_total          = 4,738        (★R3 re-locked 2026-07-29; was 4,737 before the R3 fact/craft fixes)
+wpm_provisional      = 178.1        -> narration 1,596.2 s
+designed_gap_seconds = 184.8        (act turns, music holds under AE cards, 3 earned breaths, OST landings)
 endcard              = 9.0
 total_seconds        = 1,790.0      = 29:50   (band 1740-1860 ✓)
-speech ratio         = 1790.0 / 1595.9 = 1.122   (measured band 1.04-1.30 ✓)
+speech ratio         = 1790.0 / 1593.8 = 1.121   (measured band 1.04-1.30 ✓)
 durationInFrames     = 53,700       (1790 x 30)
-mean_shot            = (1790.0 - 9) / 563 = 3.164 s/cut   (<= 7.0 ✓)
+mean_shot            = (1790.0 - 9) / 563 = 3.163 s/cut   (<= 7.0 ✓)
 ```
+★**R3 re-check of the whole ladder at 4,738 words** (this is the table §5.3 step 3 must reproduce):
+| measured wpm | narration s | designed_gap s | ratio | verdict |
+|---|---|---|---|---|
+| 178.1 (channel median / provisional) | 1,596.2 | **184.8** | 1.121 | ✓ |
+| 175.0 (the planning expectation, §5.2) | 1,624.5 | **156.5** | 1.104 | ✓ |
+| 172.0 | 1,652.8 | **128.2** | 1.085 | ✓ |
+| 170.4 (the EP55 pace, the realistic slow end) | 1,668.3 | **115.2** | 1.075 | ✓ |
+| **165.2** | **1,721.0** | **60.0** | 1.040 | ⚠ gap floor exactly — below this, §5.3 step 3's escape hatch fires |
 
 ### 5.2 ★ EXPECT ~175 wpm, NOT 178.1 — and absorb the drift in the gap budget, never by re-TTS
 The 178.1 wpm figure is a **channel-wide median from 31 episodes**, and Brian's real pace on this kind of prose has been slower on **both** recent long-forms: **EP55 measured 170.4 wpm (+71.2 s vs provisional)** and **EP56 measured 175.1 wpm (+71.8 s)**. Plan for **~175 wpm**, i.e. narration ≈ **1,624 s**, i.e. **+28 s** on the provisional. Do not re-write the script to hit a number, and **do not re-run TTS to speed the voice** — the voice is a canon setting (ElevenLabs "Brian", `nPczCjzI2devNBz1zQrb`, stability ≈0.35 / similarity ≈0.80), and re-generating it to chase a runtime is exactly the failure mode this section exists to prevent.
@@ -176,17 +184,18 @@ The 178.1 wpm figure is a **channel-wide median from 31 episodes**, and Brian's 
 1. Generate the master. Measure it with ffprobe: record **speech seconds** (sum of the narration clips) and **in-master gap seconds** separately. Do not use the mp3's total duration as `narrationSeconds`.
 2. Recompute the gap budget: **`designed_gap = 1790.0 − measured_speech − 9.0`**. Keep the total at **1,790.0 s** unless the gap would fall outside its own band.
 3. **Gap band for this film:** `designed_gap` must land in **[1740 − 9 − measured_speech, 1860 − 9 − measured_speech]** and must not go below **~60 s** (below that, act turns and card holds start eating each other and `check_padding` will flag dead-air compression). Worked examples:
-   - measured 1,624 s (175.0 wpm) → gap **157.0 s**, total 1,790.0, ratio 1.102 ✓
-   - measured 1,668 s (170.4 wpm, the EP55 pace) → gap **113.0 s**, total 1,790.0, ratio 1.073 ✓
-   - measured 1,596 s (178.1 wpm, the provisional) → gap **185.0 s**, total 1,790.0, ratio 1.122 ✓
-   - **If measured speech exceeds 1,791 s**, the gap floor is breached — then and only then raise the total toward the 1,860 s ceiling (e.g. speech 1,800 → gap 51 → total 1,860, ratio 1.033 ⚠ below 1.04, so trim card holds rather than the script). **Never cut narration to fit; never re-TTS.**
+   - measured 1,624 s (175.0 wpm) → gap **156.0 s**, total 1,790.0, ratio 1.104 ✓
+   - measured 1,653 s (172.0 wpm) → gap **128.0 s**, total 1,790.0, ratio 1.085 ✓
+   - measured 1,668 s (170.4 wpm, the EP55 pace) → gap **113.0 s**, total 1,790.0, ratio 1.075 ✓
+   - measured 1,596 s (178.1 wpm, the provisional) → gap **185.0 s**, total 1,790.0, ratio 1.121 ✓
+   - ★**R3 ARITHMETIC CORRECTION.** The trigger is **1,721 s**, not 1,791 s: `designed_gap = 1790.0 − speech − 9.0`, so the ~60 s gap floor is breached the moment `speech > 1790 − 9 − 60 = 1,721.0 s` (= 165.1 wpm on 4,737 words — reachable, since EP55 came in at 170.4). At speech 1,791 s the gap would already be **−10 s**, i.e. arithmetically impossible, so 1,791 could never have been the trigger. **If measured speech exceeds 1,721 s**, the gap floor is breached — then and only then raise the total toward the 1,860 s ceiling (e.g. speech 1,800 → gap 51 → total 1,860, ratio 1.033 ⚠ below 1.04, so trim card holds rather than the script). **Never cut narration to fit; never re-TTS.**
 4. Re-lock `durationInFrames = round(total_seconds × 30)` and set `narrationSeconds = measured_speech`.
 5. Re-derive **only** §3.3 items [2] `mean_shot` and [8] `factory floor` in CODEX_A. **The asset counts are ratios and do not move** — still 210 / factory 235 / i2v 42 / cuts 563 / still-share 0.4334 / first-use 0.8650 / avg-uses 1.156 are all unchanged by any re-lock.
 6. Re-run `check_padding`, `check_animation_mix`, `check_motion_density`. Record the measured wpm in the review log so the next episode plans against three data points, not two.
 7. **A drift >45 s is not an error to hide — it is the expected case.** The narration runner should FAIL_STOP on it and hand the re-lock to the parent, exactly as it did on EP56.
 
 ### 5.4 Other locks
-- **VO onset / captions / BGM / AE film_offset all anchor at `BODY_START_SEC = 0.0`** (HOOK-AUDIO). Brian's cold-open line is the narration index's FIRST chunk at `start: 0.0`. No silent runway; the branded sting overlaps ducked at ~0:33–0:38 and must measure **≤5.0 s**.
+- **VO onset / captions / BGM / AE film_offset all anchor at `BODY_START_SEC = 0.0`** (HOOK-AUDIO). Brian's cold-open line is the narration index's FIRST chunk at `start: 0.0`. No silent runway; the branded sting overlaps ducked at **~0:44–0:49** (★R3-corrected from ~0:33–0:38) and must measure **≤5.0 s**. **The final frame numbers come from the measured VO, not from these estimates — §5.3.**
 - **Narration voice = ElevenLabs "Brian" (`nPczCjzI2devNBz1zQrb`), NEVER SAPI.**
 - **Real-audio constraint (HARD):** Brian + dramatized SFX/ambience ONLY. No real-person audio (no archival Ensminger or Partain, no hearing-room tape, no news anchors). No hospital audio of any kind.
 - **Captions:** breath-unit splitting with a 0.60 s lead, `_smart_split` grammar-aware breaks, `medium.en`. The three long verbatim quotes (cards 9, 12 and the 88% line) are the highest-risk caption spans and must be eyeballed individually.
@@ -195,7 +204,7 @@ The 178.1 wpm figure is a **channel-wide median from 31 episodes**, and Brian's 
 ---
 
 ## 6. GATES (nothing ships until all PASS — lessons are gates, not promises)
-**Preflight (before spend):** `check_script_length --lo 1740 --hi 1860` · `check_planning_package.py 58 lejeune` · `check_prompt_diversity.py <CODEX_A>` (**including the coverage gate**) · `check_lejeune_facts.py` (B clones it; rules **R-CAUSATION** [associated with, never caused; never chemical-to-person], **R-CHILD-HARM** [no child depicted, sick or healthy; no medical imagery; no coffin or close marker], **R-LIVING** [Ensminger and Partain living, self-public, sworn words only], **R-JANEY** [one passage, her father's sworn wording as ceiling, no depiction], **R-NOBODY-CHARGED** [no individual named as wrongdoer; "publicly disciplined or prosecuted" wording], **R-LIABILITY** [no court has found the US liable], **R-NUM** [only PCE 215 and TCE 1,400 quantified; no total-exposed figure; 408,000 = claims and 3,759 = suits kept apart], **R-INSIGNIA**, **R-READABLE**, **R-DOCHL**, **R-DATESTAMP**, **R-QUOTE** [ledger §VERIFIED-VERBATIM only], **R-ADadjacent** [no dollar sign, claim-hotline register or advertisement layout in packaging]) · `validate_lejeune_beats` · `check_lejeune_asset_manifest` · `check_AE_layouts` [6 implemented only] · `check_year_grouping`.
+**Preflight (before spend):** `check_script_length --lo 1740 --hi 1860` · `check_planning_package.py 58 lejeune` · `check_prompt_diversity.py <CODEX_A>` (**including the coverage gate**) · `check_lejeune_facts.py` (B clones it; rules **R-CAUSATION** [associated with, never caused; never chemical-to-person], **R-CHILD-HARM** [no child depicted, sick or healthy; no medical imagery; no coffin or close marker], **R-LIVING** [Ensminger and Partain living, self-public, sworn words only], **R-JANEY** [one passage, her father's sworn wording as ceiling, no depiction], **R-NOBODY-CHARGED** [no individual named as wrongdoer; "publicly disciplined or prosecuted" wording], **R-LIABILITY** [no court has found the US liable], **R-NUM** [only PCE 215 and TCE 1,400 quantified; no total-exposed figure; 408,000 = claims and 3,759 = suits kept apart], **R-TVMEDIUM** [★R3-added: television/broadcast imagery only at act 4 (Partain, CL-25) and act 5 (the 2022 ad blitz, CL-46) — NEVER at act 0 or act 2, because the medium of Ensminger's 1997 discovery is not in the record (CL-15)], **R-INSIGNIA**, **R-READABLE**, **R-DOCHL**, **R-DATESTAMP**, **R-QUOTE** [ledger §VERIFIED-VERBATIM only], **R-ADadjacent** [no dollar sign, claim-hotline register or advertisement layout in packaging]) · `validate_lejeune_beats` · `check_lejeune_asset_manifest` · `check_AE_layouts` [6 implemented only] · `check_year_grouping`.
 **Post-build (before final):** `check_motion_density --ep PD-2026-058-lejeune` · `check_animation_mix` · `check_caption_breaks` · `check_caption_integrity` · `check_visual_asset_qc` · `check_asset_reuse` · `check_padding` · `preflight_render_gate`.
 **Post-render (before "done"):** **FULL ~30-MINUTE eyeball, 3×** (structure / caption-text / audio-sync — across the WHOLE runtime, not sampled), plus a dedicated **child-and-medical sweep** of every frame carrying a human figure. Then `check_final_acceptance 58`.
 **Pre-publish re-check (ledger §RE-CHECK):** the 30 October deadline, DOJ's payout totals, the claim and suit counts, whether any Track 1 trial date exists, and both advocates' status. **The final 60 seconds are written to be re-cuttable and must be re-verified in the publication week.**
