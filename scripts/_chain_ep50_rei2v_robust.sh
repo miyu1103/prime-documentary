@@ -32,12 +32,18 @@ ensure_comfy(){
 }
 
 attempt=0
-while [ "$(count_people)" -lt 76 ] && [ $attempt -lt 12 ]; do
+while [ "$(count_people)" -lt 76 ] && [ $attempt -lt 40 ]; do
   attempt=$((attempt+1))
   echo "[robust] attempt $attempt people=$(count_people)/76 $(date)" >> $LOG
+  # CHUNK MODE: if I2V_MAX set, force a FRESH ComfyUI before each chunk so Wan's
+  # VRAM leak never accumulates to the ~8-30-clip hard crash.
+  if [ -n "${I2V_MAX:-}" ] && comfy_up; then
+    for pid in $(netstat -ano 2>/dev/null | grep ':8188' | grep LISTENING | grep -oE '[0-9]+$' | head -1); do taskkill //F //PID $pid >/dev/null 2>&1; done
+    sleep 3
+  fi
   ensure_comfy || { sleep 15; continue; }
   py -3.11 scripts/i2v_centralpark_batch.py >> out_i2v_reclean2.log 2>&1
-  echo "[robust] batch returned people=$(count_people)/76" >> $LOG
+  echo "[robust] batch/chunk returned people=$(count_people)/76" >> $LOG
   sleep 4
 done
 

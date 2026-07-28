@@ -40,7 +40,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-050-centralpark"
 SLUG = "centralpark"
 FPS = 30
-DEFAULT_ASSETS = ROOT / "episodes" / EP / "05_visuals" / "asset_manifest.v001.json"
+DEFAULT_ASSETS = ROOT / "episodes" / EP / "05_visuals" / "asset_manifest.v003.json"
 DEFAULT_NARR = ROOT / "episodes" / EP / "06_audio" / "narration_index.v001.json"
 DEFAULT_OUT = ROOT / "remotion" / "src" / "data" / "centralpark_film.json"
 PUB_FILM = ROOT / "remotion" / "public" / "centralpark" / "film_data.v001.json"
@@ -58,16 +58,19 @@ ENDCARD_SEC = 9.0
 
 # per-section (factory, motion_CUTS, still): totals 485 / 170 / 505 = 1,160 cuts.
 # ACT_2 and ACT_5 are the densest (interrogation engine; confession/DNA climax).
+# MOTION-FIRST REBUILD (owner 2026-07-26: "紙芝居/反復/無音チカチカ"). (footage, motion, still):
+# footage+motion are REAL video (stock + i2v); still is drastically reduced. LONGER cuts (~5s)
+# => far fewer total cuts (~720 vs 1160) => less reuse. HOOK/OP tiny + calm => cold-open, NO flicker.
 SECTION_TARGETS = {
-    "HOOK":  (8, 4, 10),
-    "OP":    (5, 3, 12),
-    "ACT_1": (60, 20, 60),
-    "ACT_2": (95, 34, 95),
-    "ACT_3": (62, 22, 66),
-    "ACT_4": (58, 20, 64),
-    "ACT_5": (70, 26, 74),
-    "ACT_6": (72, 26, 74),
-    "ACT_7": (55, 15, 50),
+    "HOOK":  (2, 1, 1),
+    "OP":    (1, 1, 0),
+    "ACT_1": (28, 24, 21),
+    "ACT_2": (46, 39, 34),
+    "ACT_3": (35, 29, 26),
+    "ACT_4": (32, 27, 24),
+    "ACT_5": (31, 26, 24),
+    "ACT_6": (40, 33, 30),
+    "ACT_7": (17, 14, 13),
 }
 SECTION_ORDER = ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ACT_5", "ACT_6", "ACT_7"]
 
@@ -203,12 +206,17 @@ def repeated(pool: list[str], n: int, cap: int, label: str) -> list[str]:
 
 def make_cuts(windows: dict[str, tuple[float, float]], manifest: dict) -> list[dict]:
     stills = public_items(manifest, "stills", "body")
-    factory_q = deque(public_items(manifest, "factory"))
+    factory_pool = public_items(manifest, "factory")
     motion_pool = public_items(manifest, "motion")
     still_need = sum(ns for nf, nm, ns in SECTION_TARGETS.values())
     motion_need = sum(nm for nf, nm, ns in SECTION_TARGETS.values())
-    still_pool = repeated(stills, still_need, 2, "still")
+    factory_need = sum(nf for nf, nm, ns in SECTION_TARGETS.values())
+    # MOTION-FIRST: factory is now REAL video (stock+i2v), small pool -> allow cap-2 reuse
+    # (spread FAR apart across 60 min), like motion. stills used at most once (no reuse).
+    still_pool = repeated(stills, still_need, 1, "still")
     motion_items = repeated(motion_pool, motion_need, 2, "motion")
+    factory_items = repeated(factory_pool, factory_need, 2, "factory")
+    factory_q = deque(factory_items)
     still_q = deque(still_pool)
     motion_q = deque(motion_items)
     cuts: list[dict] = []
@@ -230,7 +238,8 @@ def make_cuts(windows: dict[str, tuple[float, float]], manifest: dict) -> list[d
         mot = take(motion_q, nm, "motion")
         sti = take(still_q, ns, "still")
         fi = mi = si = 0
-        pattern = ["F", "S", "M", "F", "S", "F"]
+        # MOTION-FIRST: F(footage=stock/i2v) + M(motion=i2v) dominate; S(still) is rare.
+        pattern = ["F", "M", "F", "M", "F", "S"]
         while fi < len(fac) or mi < len(mot) or si < len(sti):
             slot = pattern[len(seq) % len(pattern)]
             if slot == "F" and fi < len(fac):
@@ -568,10 +577,12 @@ def main() -> int:
     # ANTI-KAMISHIBAI ASSERT (EP45 death cause): factory 485, motion 85 -- non-zero, exact.
     factory_paths = public_items(manifest, "factory")
     motion_paths = public_items(manifest, "motion")
-    if len(factory_paths) != 485:
-        raise SystemExit(f"factory count {len(factory_paths)} != 485 -- send back to thread A (kamishibai guard)")
-    if len(motion_paths) != 85:
-        raise SystemExit(f"motion count {len(motion_paths)} != 85 -- send back to thread A (kamishibai guard)")
+    # MOTION-FIRST rebuild: pools are REAL video (stock + i2v). Guard = enough real footage
+    # exists (non-zero, healthy), not the old exact 485/85 Ken-Burns counts.
+    if len(factory_paths) < 30:
+        raise SystemExit(f"factory(real-motion) count {len(factory_paths)} < 30 -- kamishibai guard")
+    if len(motion_paths) < 30:
+        raise SystemExit(f"motion(i2v) count {len(motion_paths)} < 30 -- kamishibai guard")
 
     narr = load_json(args.narr)
     if narr.get("is_stub") is True:
@@ -596,9 +607,12 @@ def main() -> int:
         "motion": sum(1 for c in cuts if c["kind"] == "footage" and "/factory/" not in c["src"].replace("\\", "/")),
         "stills": sum(1 for c in cuts if c["kind"] == "img"),
     }
-    expected = {"factory": 485, "motion": 170, "stills": 505}
-    if counts != expected or len(cuts) != 1160:
-        raise SystemExit(f"cut allocation mismatch: cuts={len(cuts)} counts={counts} expected={expected}")
+    # MOTION-FIRST validation (old exact 485/170/505 retired): must be video-dominant + healthy.
+    footage = len(cuts) - counts["stills"]
+    if footage <= counts["stills"]:
+        raise SystemExit(f"NOT motion-first: footage {footage} <= stills {counts['stills']} (counts={counts})")
+    if len(cuts) < 400:
+        raise SystemExit(f"too few cuts {len(cuts)} (counts={counts})")
     if len(figures) != 165:
         raise SystemExit(f"figure count {len(figures)} != 165")
     if any((f.get("kind") == "dochighlight") for f in figures):
