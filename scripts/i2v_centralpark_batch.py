@@ -14,7 +14,11 @@ def mprompt(name):
 imgs=sorted(glob.glob(str(AI/"P*.png")))+sorted(glob.glob(str(AI/"V*.png")))
 only=sys.argv[1] if len(sys.argv)>1 else None
 if only: imgs=[x for x in imgs if only in x]
-print(f"i2v batch: {len(imgs)} images", flush=True)
+# I2V_MAX: do at most N NON-SKIPPED clips then exit, so the driving chain can
+# restart ComfyUI FRESH between chunks (Wan leaks VRAM -> hard crash ~every 20-30
+# clips). Chunking + fresh comfy per chunk = no leak-crash. Default: all.
+I2V_MAX=int(os.environ.get("I2V_MAX","0")) or None
+print(f"i2v batch: {len(imgs)} images"+(f" (max {I2V_MAX}/run)" if I2V_MAX else ""), flush=True)
 done=0
 for i,img in enumerate(imgs):
     name=Path(img).stem
@@ -32,4 +36,6 @@ for i,img in enumerate(imgs):
     ok="prompt_id" in (r.stdout+r.stderr)
     done+=1
     print(f"[{done}/{len(imgs)}] {name} {'ok' if ok else 'FAIL: '+(r.stdout+r.stderr)[-200:]}",flush=True)
+    if I2V_MAX and done>=I2V_MAX:
+        print(f"CHUNK done ({done}) -- exiting so chain can restart ComfyUI fresh",flush=True); break
 print(f"DONE queued {done}",flush=True)
