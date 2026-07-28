@@ -47,6 +47,8 @@ ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "remotion" / "public"
 MIN_OK_BYTES = 50_000          # same floor as pd_prerender_gate.py MIN_IMG_BYTES
 MIN_LUMA = 8.0                 # same floor as pd_prerender_gate.py MIN_LUMA
+# Library families authored to be SCREENED over a picture, never to be the picture itself.
+OVERLAY_CLASS_PREFIXES = ("AF-LIGHT", "AF-PART", "AF-VFX")
 
 EPISODE_DIRS = {p.name.split("-", 3)[-1]: p.name for p in (ROOT / "episodes").glob("PD-*")}
 
@@ -55,6 +57,23 @@ def scan(dirpath: Path, exts: tuple[str, ...]) -> list[Path]:
     if not dirpath.is_dir():
         return []
     return sorted(p for p in dirpath.iterdir() if p.suffix.lower() in exts and p.is_file())
+
+
+def video_duration(path: Path) -> float:
+    try:
+        r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                            "-of", "csv=p=0", str(path)], capture_output=True, text=True, timeout=30)
+        return float(r.stdout.strip() or 0)
+    except Exception:
+        return 0.0
+
+
+def video_sample_times(path: Path) -> list[float]:
+    """Head / mid / tail. A single mid sample misses clips that fade in and out of black."""
+    d = video_duration(path)
+    if d <= 0:
+        return [0.5]
+    return [min(0.15, d * 0.05), d * 0.5, max(0.0, d - 0.15)]
 
 
 def mean_luma(path: Path, at: float | None = None) -> float:
@@ -135,24 +154,41 @@ def main() -> int:
                                 role="body", scene_id=p.stem))
 
     def videos(paths, kind, sub, allow_dark: bool = False):
-        """Returns (kept, demoted). Near-black clips are DEMOTED to overlay, never dropped
-        silently: particle/light-leak assets are legitimately dark and belong on the screen
-        blend layer, while black stubs are simply unusable. Both leave the cut pool."""
+        """Returns (kept, demoted). Anything unfit as a full-frame CUT is demoted to the
+        overlay pool rather than dropped, so it stays available on the screen-blend layer.
+
+        Two rules, both learned the hard way on EP54 (2026-07-29):
+        * OVERLAY CLASS BY NAME. AF-LIGHT / AF-PART / AF-VFX are light leaks, particles and
+          effect plates -- they are authored to be screened over a picture, never to BE the
+          picture. EP54's entire 218-clip "factory" pool was these, so 68% of the film's
+          video was abstract effects rather than documentary b-roll. Counts looked healthy;
+          content was not.
+        * MINIMUM luma across head/mid/tail, not one sample. AF-LIGHT-0498 measured 31.8 at
+          the 0.5s sample and passed, but it fades from 8.2 to 2.2 at its ends -- on screen
+          that is a 4.7s black hole, which is exactly what the post-render gate caught.
+        """
         kept, demoted = [], []
         for p in paths:
             rel = f"{slug}/{sub}/{p.name}"
             if p.stat().st_size < MIN_OK_BYTES:
                 rejected.append({"public_path": rel, "reason": f"stub {p.stat().st_size}B"})
                 continue
+            if not allow_dark and any(k in p.name for k in OVERLAY_CLASS_PREFIXES):
+                demoted.append(entry(slug, "O", len(demoted) + 1, p, rel,
+                                     kind_="video", blend_hint="screen",
+                                     demoted_from=sub, reason="overlay-class asset"))
+                continue
             if check_content and not allow_dark:
-                lum = mean_luma(p, at=0.5)
-                if lum < 0:
+                lums = [mean_luma(p, at=t) for t in video_sample_times(p)]
+                usable = [x for x in lums if x >= 0]
+                if not usable:
                     rejected.append({"public_path": rel, "reason": "undecodable"})
                     continue
-                if lum < MIN_LUMA:
+                if min(usable) < MIN_LUMA:
                     demoted.append(entry(slug, "O", len(demoted) + 1, p, rel,
                                          kind_="video", blend_hint="screen",
-                                         demoted_from=sub, mean_luma=round(lum, 2)))
+                                         demoted_from=sub, min_luma=round(min(usable), 2),
+                                         reason="fades to black at an end"))
                     continue
             kept.append(entry(slug, kind, len(kept) + 1, p, rel, kind_="video"))
         return kept, demoted

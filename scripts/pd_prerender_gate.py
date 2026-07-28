@@ -44,6 +44,19 @@ def img_luma(p):
     except Exception:
         return -1.0
 
+def vid_luma(p, t):
+    """Mean luma of one decoded video frame at time t (-1 if it cannot be decoded)."""
+    try:
+        import io
+        from PIL import Image
+        r = subprocess.run(["ffmpeg","-v","error","-ss",f"{t:.2f}","-i",str(p),"-frames:v","1",
+                            "-f","image2pipe","-vcodec","png","-"], capture_output=True, timeout=60)
+        if not r.stdout: return -1.0
+        b = Image.open(io.BytesIO(r.stdout)).convert("L").resize((64,36)).tobytes()
+        return sum(b)/len(b)
+    except Exception:
+        return -1.0
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("film"); ap.add_argument("public")
@@ -103,7 +116,15 @@ def main():
             if 0 <= l < MIN_LUMA: dark.append(f"{s}(luma{l:.1f})")
         elif fp.suffix.lower() in (".mp4",".mov",".webm"):
             if sz < MIN_IMG_BYTES: stub.append(f"{s}({sz}B)"); continue
-            if ffprobe_dur(fp) <= 0: stub.append(f"{s}(0dur)")
+            d = ffprobe_dur(fp)
+            if d <= 0: stub.append(f"{s}(0dur)"); continue
+            # A cut fills the frame for its whole duration, so sample HEAD/MID/TAIL and judge
+            # by the MINIMUM. EP54 shipped a 4.7s black hole from AF-LIGHT-0498, which reads
+            # 31.8 at mid but fades to 2.2 at its tail -- one mid sample cannot see that.
+            lums = [vid_luma(fp, t) for t in (min(0.15, d*0.05), d*0.5, max(0.0, d-0.15))]
+            ok = [x for x in lums if x >= 0]
+            if ok and min(ok) < MIN_LUMA:
+                dark.append(f"{s}(min luma {min(ok):.1f} of {[round(x,1) for x in ok]})")
     if missing: fails.append(f"ASSET MISSING: {len(missing)} referenced srcs absent under {pub} e.g. {missing[:3]}")
     if stub:    fails.append(f"ASSET STUB: {len(stub)} black-stub/empty assets e.g. {stub[:3]}")
     if dark:    fails.append(f"ASSET DARK: {len(dark)} near-black images e.g. {dark[:3]}")

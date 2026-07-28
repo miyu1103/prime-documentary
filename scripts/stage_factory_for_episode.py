@@ -37,6 +37,19 @@ SELECTOR = ROOT / "scripts" / "select_factory_assets.py"
 MIN_OK_BYTES = 50_000
 MIN_LUMA = 8.0
 OVERSELECT = 2.0            # ask for more than needed; dark/dup/missing ones are dropped
+OVERLAY_CLASS_PREFIXES = ("AF-LIGHT", "AF-PART", "AF-VFX")   # screen-blend plates, not b-roll
+
+
+def sample_times(path: Path) -> list[float]:
+    try:
+        r = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                            "-of", "csv=p=0", str(path)], capture_output=True, text=True, timeout=30)
+        d = float(r.stdout.strip() or 0)
+    except Exception:
+        d = 0.0
+    if d <= 0:
+        return [0.5]
+    return [min(0.15, d * 0.05), d * 0.5, max(0.0, d - 0.15)]
 
 EPISODES = {p.name.split("-", 3)[-1]: p.name for p in sorted((ROOT / "episodes").glob("PD-*"))}
 
@@ -104,7 +117,7 @@ def main() -> int:
         plan.append((theme.strip(), int(n)))
 
     already = {p.name for p in dest.iterdir()} if dest.is_dir() else set()
-    staged_total = dark = missing = dup = 0
+    staged_total = dark = missing = dup = overlay_class = 0
     per_theme: dict[str, int] = {}
 
     for theme, want in plan:
@@ -122,11 +135,18 @@ def main() -> int:
             if name in already:
                 dup += 1
                 continue
+            # AF-LIGHT / AF-PART / AF-VFX are screen-blend plates, not b-roll. EP54's whole
+            # 218-clip cut pool was these, so most of the film's "video" was abstract light
+            # effects. Never stage them as footage.
+            if any(k in name for k in OVERLAY_CLASS_PREFIXES):
+                overlay_class += 1
+                continue
             if src.stat().st_size < MIN_OK_BYTES:
                 dark += 1
                 continue
-            lum = mean_luma(src)
-            if lum < MIN_LUMA:
+            # head/mid/tail: a clip that fades to black at an end is a black hole as a cut
+            lums = [x for x in (mean_luma(src, t) for t in sample_times(src)) if x >= 0]
+            if not lums or min(lums) < MIN_LUMA:
                 dark += 1
                 continue
             if a.dry_run:
@@ -141,7 +161,7 @@ def main() -> int:
         print(f"  {theme:<22} staged {got}/{want}  (candidates {len(rows)})")
 
     print(f"[{a.slug}] factory staged={staged_total} "
-          f"(skipped: dark/stub={dark} missing={missing} already-present={dup})")
+          f"(skipped: dark/stub={dark} overlay-class={overlay_class} missing={missing} already-present={dup})")
     print(f"[{a.slug}] per-theme: {per_theme}")
     if a.dry_run:
         print("(dry-run) nothing copied")
