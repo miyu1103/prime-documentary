@@ -9,7 +9,9 @@
 ## 1. EP50 は完成（触らない）
 - **`episodes/PD-2026-050-centralpark/08_edit/EP50_FINAL.mp4` = v006**（肌クリーン・BGM・pre/postゲート通過・視覚QC済み）。61分/3663.8s。
 - 経緯：肌の傷/シミ再作業→人物76枚肌クリーン再生成→**73/76 i2v**（最後3人はクラッシュ多発で打ち切り＝完成品に影響なし）→motion-first film.json（v003マニフェスト）→レンダー→BGM(v006)。
-- **未解決（任意・品質up）**：AE合成版 `centralpark_final_bgm.v006_ae.mp4` が **黒6秒（video 131.5–138.5s）** を含みFAIL。原因ビート＝**B8（layout=HERO_TIMELINE, start=120, cp=CP03）**。AEビート素材 `08_edit/ae_hero/render/B1..B12.mp4` は生成済み・beats.json は `08_edit/ae_hero/beats.json`（36ビート）。B8合成が黒を入れている→ここだけ直せばAE版が復活。**やるなら品質重視で直す；不要ならv006で確定でよい。**
+- **★決定(オーナー 2026-07-29)=(B) AEを直して戻す。** 新スレの**第一タスク**：AE合成版 `centralpark_final_bgm.v006_ae.mp4` の **黒6秒（video 131.5–138.5s）** を根本修正し、v006_ae を完成→post-gate通過→`EP50_FINAL.mp4` を v006_ae に差し替え。その後にEP51〜へ。
+  - 原因ビート＝**B8（layout=HERO_TIMELINE, start=120, cp=CP03）**。AEビート素材 `08_edit/ae_hero/render/B1..B12.mp4` 生成済み・beats.json `08_edit/ae_hero/beats.json`（36ビート）・合成script `scripts/ae/composite_centralpark_hero.py`（offset=11.5）。
+  - **診断手順**：まず `B8.mp4` 自体に黒フレームがないか `ffmpeg blackdetect` で確認（黒ければAE再レンダーが必要／beats.jsonのB8定義を疑う）。黒くなければ合成ロジックのB8(HERO_TIMELINE)重ねが黒を入れている→その配置/不透明度/長さを修正。**憶測せず B8.mp4 とcomposite出力を実測してから直す**（[[feedback-verify-dont-assume]]）。修正後は必ず `pd_postrender_gate.py` で黒/フリーズ再検査。
 - 旧AE版 v005_ae（傷あり顔）は retired。
 
 ## 2. EP51–56 の素材状況（実測・2026-07-29）
