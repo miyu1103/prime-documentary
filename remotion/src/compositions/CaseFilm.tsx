@@ -4,6 +4,7 @@ import {
   Audio,
   Img,
   interpolate,
+  Loop,
   OffthreadVideo,
   Sequence,
   spring,
@@ -16,7 +17,7 @@ import {ThreeCanvas} from '@remotion/three';
 import * as THREE from 'three';
 import {useThree, useLoader} from '@react-three/fiber';
 import {BRAND} from '../brand';
-import {Particles, LightSweep, Vignette} from '../components/Motion';
+import {Particles, Vignette} from '../components/Motion';
 import {AmbientMotion} from '../components/AmbientMotion';
 import {FigureBeats, FigureSpec} from '../components/FigureBeats';
 import {Grain} from '../components/Grain';
@@ -34,9 +35,29 @@ import {BrandOpening, BrandEndcard, OPENING_SEC, ENDCARD_SEC} from '../component
 const {ink, navy, electric, white, silver, gold} = BRAND.color;
 // lifted from v003 (acceptance images_present flagged 98%-black crush on the darkest shots):
 // keep the noir mood but never let a shot fall to near-total black.
-const GRADE = 'brightness(1.16) contrast(1.0) saturate(0.95)';
+// EP49 clarity fix (owner 2026-07-24: "全体的に画像に曇りがかかってる" — image reads milky/
+// low-contrast). The old grade was a flat brightness lift with NEUTRAL contrast, which — stacked
+// with the screen-blend washes below — flattened the picture into a haze. Restore real contrast
+// and a touch of saturation so blacks sit down and the image reads CLEAR; brightness stays high
+// enough that dark hero stills still clear the per-cut luma gate (contrast preserves mid-tone Y).
+const GRADE = 'brightness(1.12) contrast(1.14) saturate(1.03)';
 
-export type Cut = {start: number; dur: number; kind: 'img' | 'footage'; src: string; treatment: string; seed: string};
+export type Cut = {
+  start: number;
+  dur: number;
+  kind: 'img' | 'footage';
+  src: string;
+  treatment: string;
+  seed: string;
+  overlay?: string | null;
+  blendHint?: 'add' | 'screen' | 'overlay' | null;
+  overlayDuration?: number | null;
+  // EP49: real-stock cutaways injected via inject_strieff_stock.py set startFrom=0 so short
+  // graded stock clips (some ~7-10s) always start at their first frame instead of the
+  // index-derived in-point (which could seek past a short clip's end). Optional; when absent the
+  // Footage component keeps its original index-based startFrom (unchanged for every other episode).
+  startFrom?: number | null;
+};
 export type Caption = {start: number; end: number; text: string};
 export type HookCut = {start: number; dur: number; kind: string; src: string; seed: string};
 export type Beat = {start: number; end: number; lines: string[]};
@@ -186,7 +207,6 @@ const DuotoneStill: React.FC<{src: string; seed: string; dir: number; dur: numbe
       <AbsoluteFill style={{transform: `translate(${fgX}px, ${fgY}px) scale(${fgS})`, filter: 'brightness(1.08) contrast(1.02) saturate(0.84) hue-rotate(-6deg)'}}>
         <Cover src={src} />
       </AbsoluteFill>
-      <LightSweep seed={seed} color={silver} />
       <Particles seed={seed} count={20} color={silver} />
       <Vignette strength={vig} />
     </AbsoluteFill>
@@ -226,7 +246,6 @@ const CardStill: React.FC<{src: string; seed: string; dir: number; dur: number}>
       <AbsoluteFill style={{transform: `translateX(${bgX}px) scale(1.4)`, filter: 'blur(20px) brightness(0.84)'}}>
         <Cover src={src} />
       </AbsoluteFill>
-      <LightSweep seed={seed} color={electric} />
       <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
         <div
           style={{
@@ -320,31 +339,16 @@ const DriftLight: React.FC<{dur: number}> = ({dur: _dur}) => {
   // dark the underlying image is, so freezedetect never trips. The pattern is periodic so the
   // translate loops seamlessly with no wrap snap; kept very faint (soft-light) so it reads as a
   // subtle moving film texture, not scanlines, and never lifts luma enough to flatten the image.
-  // f is rebased to 0 at this cut's Sequence start, so it runs 0..dur. Image holds are ≤6.5s
-  // (≤195 frames @30fps) → f*1.7 stays ≲332px, so a texture div oversized by 600px on every side
-  // is always covered — the pattern translates monotonically at constant velocity, no wrap/snap.
-  const tx = f * 1.7;
-  return (
-    <>
-      <div
-        style={{
-          position: 'absolute',
-          top: -600,
-          left: -600,
-          right: -600,
-          bottom: -600,
-          pointerEvents: 'none',
-          // screen (not soft-light): soft-light with white is a no-op on near-black pixels, so it
-          // never lifted the darkest cuts; screen toggles dark pixels toward the faint line colour
-          // regardless of how dark the base is, giving real per-frame deltas on black photos.
-          mixBlendMode: 'screen',
-          opacity: 0.45,
-          transform: `translate(${tx}px, ${tx * 0.5}px)`,
-          backgroundImage: `repeating-linear-gradient(63deg, ${white}00 0px, ${white}00 2px, ${white}26 3px, ${white}00 4px)`,
-        }}
-      />
-    </>
-  );
+  // EP49 haze/scanline fix (owner 2026-07-24: "全体的に画像に曇りがかかってる" + a visible
+  // DIAGONAL SCANLINE crosshatch over every frame). This layer WAS a 63° white
+  // repeating-linear-gradient at 0.62 screen — that is exactly the diagonal scanline
+  // texture + the milky screen-lift the owner flagged. It is REMOVED. Its only real job
+  // was a per-frame pixel-delta floor for freezedetect on dark near-still photos; the
+  // full-frame per-frame <Grain> (unique seed every frame) already guarantees that delta
+  // across the whole frame, and AmbientMotion + per-cut parallax add coarse motion, so no
+  // cut reads as frozen without this. Kept as a no-op so call sites are untouched.
+  void _dur;
+  return null;
 };
 
 const Still: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
@@ -381,7 +385,12 @@ const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
   const dur = Math.max(1, Math.round(cut.dur * fps));
   const inner =
     cut.kind === 'footage' ? (
-      <Footage src={cut.src} startFrom={(index * 47) % 160} dir={index % 2 === 0 ? 1 : -1} dur={dur} />
+      <Footage
+        src={cut.src}
+        startFrom={cut.startFrom != null ? Math.round(cut.startFrom * fps) : (index * 47) % 160}
+        dir={index % 2 === 0 ? 1 : -1}
+        dur={dur}
+      />
     ) : (
       <Still cut={cut} index={index} />
     );
@@ -394,6 +403,9 @@ const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
   // motion blur that decays as the shot settles (px of gaussian ~ speed)
   const blur = interpolate(f, [0, 9], [14, 0], {extrapolateRight: 'clamp'});
   const opacity = interpolate(f, [0, 6], [0, 1], {extrapolateRight: 'clamp'});
+  const overlay = cut.overlay ?? null;
+  const overlayBlend: React.CSSProperties['mixBlendMode'] =
+    cut.blendHint === 'overlay' ? 'overlay' : cut.blendHint === 'screen' ? 'screen' : 'plus-lighter';
   return (
     <AbsoluteFill
       style={{
@@ -403,6 +415,21 @@ const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
       }}
     >
       {inner}
+      {overlay ? (
+        <Loop durationInFrames={Math.max(1, Math.round((cut.overlayDuration ?? cut.dur) * fps))}>
+          <OffthreadVideo
+            src={staticFile(overlay)}
+            muted
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              mixBlendMode: overlayBlend,
+              opacity: 0.28,
+            }}
+          />
+        </Loop>
+      ) : null}
       {/* always-moving pixel-velocity floor over EVERY cut (stills AND dark night/fire footage):
           keeps freezedetect above its near-still threshold for the entire cut duration. */}
       <DriftLight dur={dur} />
@@ -450,15 +477,17 @@ const BodyGrade: React.FC = () => (
         background: `linear-gradient(175deg, ${electric} 0%, ${navy} 46%, ${ink} 100%)`,
       }}
     />
-    {/* SHADOW LIFT: a faint screen-blend wash raises the darkest regions (dark photos / navy figure
-        beds) so the body median brightness clears the body_luma gate and images stay readable —
-        owner "画面が暗くて画像が見えにくい". Screen only ever lightens; kept low so highlights survive
-        and the noir mood holds. Replaces the old overlay radial that DARKENED the edges. */}
+    {/* SHADOW LIFT: a faint screen-blend wash raises the darkest regions so dark hero stills clear
+        the per-cut luma gate. EP49 (owner 2026-07-24): opacity 0.18 was a big part of the milky
+        low-contrast "曇り" wash — screen-blend lifts blacks across the WHOLE frame, killing contrast.
+        Cut to 0.07 (just enough shadow seat for the darkest photos) so the picture reads clear and
+        punchy; the higher-contrast GRADE above now carries mid-tone brightness instead of a flat
+        screen veil. */}
     <AbsoluteFill
       style={{
         pointerEvents: 'none',
         mixBlendMode: 'screen',
-        opacity: 0.18,
+        opacity: 0.07,
         background: `linear-gradient(180deg, #2c3858 0%, #1d2842 100%)`,
       }}
     />
@@ -618,6 +647,7 @@ const PunchShot: React.FC<{src: string; dur: number}> = ({src, dur}) => {
       >
         <Cover src={src} />
       </AbsoluteFill>
+      <DriftLight dur={dur} />
       <Vignette strength={1.1} />
     </AbsoluteFill>
   );
@@ -636,27 +666,25 @@ const Hook: React.FC<{hook: HookCut[]; line: string}> = ({hook, line}) => {
           <PunchShot src={h.src} dur={Math.max(1, Math.round(h.dur * fps))} />
         </Sequence>
       ))}
-      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', padding: 120}}>
-        <Trail layers={6} lagInFrames={1.2} trailOpacity={0.5}>
-          <div
-            style={{
-              transform: `translateY(${y}px)`,
-              opacity: lineOp,
-              color: white,
-              fontFamily: BRAND.font.display,
-              fontWeight: 900,
-              fontSize: 82,
-              lineHeight: 1.04,
-              letterSpacing: -1,
-              textAlign: 'center',
-              textTransform: 'uppercase',
-              textShadow: '0 6px 30px rgba(0,0,0,0.8)',
-              maxWidth: '86%',
-            }}
-          >
-            {line}
-          </div>
-        </Trail>
+      <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center', padding: 150}}>
+        <div
+          style={{
+            transform: `translateY(${y}px)`,
+            opacity: lineOp,
+            color: white,
+            fontFamily: BRAND.font.display,
+            fontWeight: 900,
+            fontSize: line.length > 92 ? 56 : 72,
+            lineHeight: 1.08,
+            letterSpacing: 0,
+            textAlign: 'center',
+            textTransform: 'uppercase',
+            textShadow: '0 6px 30px rgba(0,0,0,0.8)',
+            maxWidth: '80%',
+          }}
+        >
+          {line}
+        </div>
       </AbsoluteFill>
       <Grain />
     </AbsoluteFill>
@@ -717,7 +745,10 @@ export const CaseFilm: React.FC<{data: FilmData; seriesLabel: string; title: str
           </Sequence>
         ))}
         <Captions cues={data.captions} />
-        <Grain opacity={0.11} />
+        {/* EP49: grain 0.11 -> 0.06 (its default). At 0.11 it added to the milky veil; 0.06 still
+            gives a unique-per-frame full-frame delta (freezedetect floor now that DriftLight's
+            scanline texture is gone) without hazing the image. */}
+        <Grain opacity={0.06} />
       </Sequence>
 
       <Sequence from={hook + op + body} durationInFrames={ed} name="Endcard">

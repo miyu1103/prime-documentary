@@ -76,6 +76,11 @@ import {StrieffThumbnail, STRIEFF_THUMBS} from './compositions/StrieffThumbnails
 import {OpeningCentralpark, openingCentralparkDurationInFrames} from './compositions/OpeningCentralpark';
 import {CentralparkFilm, centralparkFilmDurationInFrames} from './compositions/CentralparkFilm';
 import {FlowersFilm, flowersFilmDurationInFrames} from './compositions/FlowersFilm';
+import {WillinghamFilm, willinghamFilmDurationInFrames} from './compositions/WillinghamFilm';
+import {MortonFilm, mortonFilmDurationInFrames} from './compositions/MortonFilm';
+import {NorfolkFilm, norfolkFilmDurationInFrames} from './compositions/NorfolkFilm';
+import {BurgeFilm, burgeFilmDurationInFrames} from './compositions/BurgeFilm';
+import {PostofficeFilm, postofficeFilmDurationInFrames} from './compositions/PostofficeFilm';
 import {CentralparkThumbnail, CENTRALPARK_THUMBS} from './compositions/CentralparkThumbnails';
 import {Frazier39Opening, frazier39OpeningDurationInFrames} from './compositions/Frazier39Opening';
 import {FrazierThumbnail, FRAZIER_THUMBS} from './compositions/FrazierThumbnails';
@@ -532,6 +537,46 @@ export const RemotionRoot: React.FC = () => {
         id="Ep54Flowers"
         component={FlowersFilm}
         durationInFrames={flowersFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep51Willingham"
+        component={WillinghamFilm}
+        durationInFrames={willinghamFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep52Morton"
+        component={MortonFilm}
+        durationInFrames={mortonFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep53Norfolk"
+        component={NorfolkFilm}
+        durationInFrames={norfolkFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep55Burge"
+        component={BurgeFilm}
+        durationInFrames={burgeFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep56Postoffice"
+        component={PostofficeFilm}
+        durationInFrames={postofficeFilmDurationInFrames}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
