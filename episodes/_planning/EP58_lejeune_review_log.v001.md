@@ -555,7 +555,7 @@ info word-ish count (latin tokens): 7620
 
 RESULT: PASS (0 warn)
 ```
-> `--require-r3` **PASS**。★このゲートは R3 実施中に一度 **FAIL** した — R3 節を書いた後も、**文書タイトル行と Reviewer 行に「R3 プレースホルダ」「未実施」が残っていた**ため、`re.search` が最初の `R3` 見出し（＝タイトル行）を掴み、本文に「プレースホルダ」が含まれると判定した。**ゲートは正しく、こちらが古い文言を消し忘れていた。**両行を実施済みに書き換えて PASS。
+> `--require-r3` **PASS**。★このゲートは R3 実施中に **2度 FAIL し、2度ともゲートの方が正しかった**。① R3 節を書き上げた後も、**文書タイトル行と Reviewer 行に古い「未実施」表記が残っていた** — `re.search` は最初の `R3` 見出し（＝タイトル行）を掋み、そこから末尾までを本文として見るので、**古い表記が1行残っているだけで節全体が未実施扱いになる**。② その顕末をこの注釈に書いたところ、**注釈自体が禁語を含んで再び FAIL**。**どちらも実装のバグではなくこちらの書き残しであり、ゲートを緩めずに文書側を直して PASS させた。**
 
 ```
 $ ./.venv/Scripts/python.exe scripts/check_prompt_diversity.py episodes/_planning/EP58_lejeune_CODEX_A_ASSETS.v001.md
