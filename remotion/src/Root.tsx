@@ -1,5 +1,6 @@
 import React from 'react';
 import {Composition, Still} from 'remotion';
+import './load-fonts'; // register brand premium fonts (Oswald/Anton/Archivo) for the render
 import {BRAND} from './brand';
 import {PDCore5Preview, core5PreviewDuration} from './components/core5/preview';
 import {TimbsB1, timbsB1DurationInFrames} from './compositions/TimbsB1';
@@ -55,6 +56,29 @@ import {DepthTest} from './compositions/DepthTest';
 import {MotionSample, motionSampleDurationInFrames} from './compositions/MotionSample';
 import {TylerFigures, tylerFiguresDurationInFrames} from './compositions/TylerFigures';
 import {CaseFilm, caseFilmDurationInFrames, FilmData} from './compositions/CaseFilm';
+import {OpeningLech, openingLechDurationInFrames} from './compositions/OpeningLech';
+import {LechThumbnail, LECH_THUMBS} from './compositions/LechThumbnails';
+import {OpeningYoung, openingYoungDurationInFrames} from './compositions/OpeningYoung';
+import {YoungFilm, youngFilmDurationInFrames} from './compositions/YoungFilm';
+import {YoungThumbnail, YOUNG_THUMBS} from './compositions/YoungThumbnails';
+import {OpeningCaniglia, openingCanigliaDurationInFrames} from './compositions/OpeningCaniglia';
+import {CanigliaThumbnail, CANIGLIA_THUMBS} from './compositions/CanigliaThumbnails';
+import {OpeningTekoh, openingTekohDurationInFrames} from './compositions/OpeningTekoh';
+import {TekohThumbnail, TEKOH_THUMBS} from './compositions/TekohThumbnails';
+import {OpeningCleveland, openingClevelandDurationInFrames} from './compositions/OpeningCleveland';
+import {ClevelandThumbnail, CLEV_THUMBS} from './compositions/ClevelandThumbnails';
+import {TloThumbnail, TLO_THUMBS} from './compositions/TloThumbnails';
+import {AtwaterThumbnail, ATWATER_THUMBS} from './compositions/AtwaterThumbnails';
+import {OpeningGlover, openingGloverDurationInFrames} from './compositions/OpeningGlover';
+import {GloverThumbnail, GLOVER_THUMBS} from './compositions/GloverThumbnails';
+import {OpeningStrieff, openingStrieffDurationInFrames} from './compositions/OpeningStrieff';
+import {StrieffThumbnail, STRIEFF_THUMBS} from './compositions/StrieffThumbnails';
+import {OpeningCentralpark, openingCentralparkDurationInFrames} from './compositions/OpeningCentralpark';
+import {CentralparkFilm, centralparkFilmDurationInFrames} from './compositions/CentralparkFilm';
+import {FlowersFilm, flowersFilmDurationInFrames} from './compositions/FlowersFilm';
+import {CentralparkThumbnail, CENTRALPARK_THUMBS} from './compositions/CentralparkThumbnails';
+import {Frazier39Opening, frazier39OpeningDurationInFrames} from './compositions/Frazier39Opening';
+import {FrazierThumbnail, FRAZIER_THUMBS} from './compositions/FrazierThumbnails';
 import {WilliamsFilm, williamsFilmDurationInFrames} from './compositions/WilliamsFilm';
 import {AircashFigTest, AIRCASH_FIG_TEST_FRAMES} from './compositions/AircashFigTest';
 import {HindersFigTest, HINDERS_FIG_TEST_FRAMES} from './compositions/HindersFigTest';
@@ -66,19 +90,33 @@ import cottonFilm from './data/cotton_film.json';
 import unlockFilm from './data/unlock_film.json';
 import forfeitureFilm from './data/forfeiture_film.json';
 import hindersFilm from './data/hinders_film.json';
+import kidsforcashFilm from './data/kidsforcash_film.json';
+import lechFilm from './data/lech_film.json';
+import thompsonFilm from './data/thompson_film.json';
+import canigliaFilm from './data/caniglia_film.json';
+import tekohFilm from './data/tekoh_film.json';
+import clevelandFilm from './data/cleveland_film.json';
+import tloFilm from './data/tlo_film.json';
+import atwaterFilm from './data/atwater_film.json';
+import gloverFilm from './data/glover_film.json';
+import strieffFilm from './data/strieff_film.json';
+import frazierFilm from './data/frazier_film.json';
 import hintonFilm from './data/hinton_film.json';
 import carsearchFilm from './data/carsearch_film.json';
 import rolinFilm from './data/rolin_film.json';
 import williamsFilm from './data/williams_film.json';
 import {CarsearchThumbnail, CARSEARCH_THUMBS} from './compositions/CarsearchThumbnails';
 import {RolinThumbnail, ROLIN_THUMBS} from './compositions/RolinThumbnails';
+import {KidsForCashThumbnail, KIDSFORCASH_THUMBS} from './compositions/KidsForCashThumbnails';
 import {ColdOpen, MIRANDA_HOOK, hookDurationInFrames} from './compositions/ColdOpen';
 import {ThumbConcept} from './compositions/ThumbConcept';
 import {ThumbnailFrame} from './components/ThumbnailFrame';
+import {NumberTicker} from './components/motionkit/NumberTicker';
 import {RoughCut, roughCutDurationInFrames} from './compositions/RoughCut';
 import {BumperBrushupPreview, BrandOpeningOriginalPreview, OneCoinBrandOpeningPreview, bumperBrushupDurationInFrames} from './compositions/OpeningBumperBrushup';
 import {EndingBrushupPreview, endingBrushupDurationInFrames} from './compositions/EndingBrushup';
 import {Short, ShortThumb, shortDurationInFrames} from './compositions/Short';
+import {ShortThumbYT} from './compositions/ShortThumbYT';
 import {SHORT06} from './data/short06';
 import {SHORT07} from './data/short07';
 import {SHORT08} from './data/short08';
@@ -111,6 +149,27 @@ import {SHORT34} from './data/short34';
 import {SHORT35} from './data/short35';
 import {SHORT36} from './data/short36';
 import {SHORT37} from './data/short37';
+import {SHORT38} from './data/short38';
+import {SHORT39} from './data/short39';
+import {SHORT40} from './data/short40';
+import {SHORT40M} from './data/short40m';
+import {SHORT41} from './data/short41';
+import {SHORT42} from './data/short42';
+import {SHORT43} from './data/short43';
+import {SHORT46} from './data/short46';
+import {SHORT47} from './data/short47';
+import {SHORT48} from './data/short48';
+import {SHORT49} from './data/short49';
+import {SHORT50} from './data/short50';
+import {SHORT51} from './data/short51';
+import {SHORT52} from './data/short52';
+import {SHORT53} from './data/short53';
+import {SHORT54} from './data/short54';
+import {SHORT55} from './data/short55';
+import {SHORT56} from './data/short56';
+import {SHORT57} from './data/short57';
+import {SHORT58} from './data/short58';
+import {SHORT59} from './data/short59';
 import {SHORT01} from './data/short01';
 import {SHORT02} from './data/short02';
 import {SHORT03} from './data/short03';
@@ -125,6 +184,10 @@ import {LANGE_ROUGHCUT} from './data/lange_roughcut';
 import {THERANOS_ROUGHCUT} from './data/theranos_roughcut';
 import {TITAN_ROUGHCUT} from './data/titan_roughcut';
 import {ONECOIN_ROUGHCUT} from './data/onecoin_roughcut';
+import lechOpeningProps from '../props/lech.json';
+import youngOpeningProps from '../props/young.json';
+import canigliaOpeningProps from '../props/caniglia.json';
+import tekohOpeningProps from '../props/tekoh.json';
 
 const ROUGHCUTS = [
   ['RoughCut-timbs', TIMBS_ROUGHCUT],
@@ -242,6 +305,438 @@ export const RemotionRoot: React.FC = () => {
         height={1920}
         defaultProps={{data: SHORT06, platform: 'tiktok' as const}}
       />
+      <Composition
+        id="Ep39Frazier"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(frazierFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: frazierFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: 'They Can Lie',
+          subtitle: 'Frazier v. Cupp and police deception',
+        }}
+      />
+      <Composition
+        id="Frazier39Opening"
+        component={Frazier39Opening}
+        durationInFrames={frazier39OpeningDurationInFrames(60)}
+        fps={60}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          title: 'THEY CAN LIE',
+          subtitle: 'FRAZIER V. CUPP - 1969',
+          accent: '#E5B53A',
+          hasLogo: true,
+        }}
+      />
+      {FRAZIER_THUMBS.map((concept) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-frazier-${concept.id}`}
+          component={FrazierThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
+      <Still
+        id="Thumb-frazier-selected"
+        component={FrazierThumbnail}
+        width={1280}
+        height={720}
+        defaultProps={{concept: FRAZIER_THUMBS[0]}}
+      />
+      <Composition
+        id="Ep40Lech"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(lechFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: lechFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: 'They Destroyed Their House',
+          subtitle: 'A stranger ran inside. The family paid for it.',
+        }}
+      />
+      <Composition
+        id="Ep41Thompson"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(thompsonFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: thompsonFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: 'The Paper That Could Not Save Him',
+          subtitle: 'Connick v. Thompson and the price of a buried page',
+        }}
+      />
+      <Composition
+        id="Ep42Young"
+        component={YoungFilm}
+        durationInFrames={youngFilmDurationInFrames(BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep43Caniglia"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(canigliaFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: canigliaFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: 'Police Came for a Welfare Check. They Left With His Guns.',
+          subtitle: 'Caniglia v. Strom and the line at the door.',
+        }}
+      />
+      <Composition
+        id="Ep44Tekoh"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(tekohFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: tekohFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: 'They Never Read Him His Rights. Then the Court Closed One Door.',
+          subtitle: 'Vega v. Tekoh and the difference between a right and a remedy.',
+        }}
+      />
+      <Composition
+        id="Ep45Cleveland"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(clevelandFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: clevelandFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: "Jailed for Being Too Poor to Pay a Fine. It's Unconstitutional.",
+          subtitle: "Bearden v. Georgia and the debtors' prison that never ended.",
+        }}
+      />
+      <Composition
+        id="Ep46Tlo"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(tloFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: tloFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: 'A Teacher Searched Her Purse. The Supreme Court Said It Was Fine.',
+          subtitle: 'The Fourth Amendment applies at school - but the bar is reasonable suspicion, not probable cause. 6-3, 1985.',
+        }}
+      />
+
+      {/* EP46 fix: corrected numberticker for the decision-year figure. The baked base
+          render shows the YEAR as "1,985" (NumberTicker always comma-grouped). This standalone
+          composition re-renders the SAME figure with group disabled -> "1985", to be overlaid on
+          just that figure's window on the final (identical component/props/dur/fps -> seamless).
+          174 frames = 5.8s * 30fps, matching FigureBeats dur for the tlo numberticker (497.11-502.91). */}
+      <Composition
+        id="TloTickerFix"
+        component={NumberTicker}
+        durationInFrames={174}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          value: 1985,
+          topLabel: 'BY THE NUMBERS',
+          label: 'decided January 15, 1985',
+          decimals: 0,
+          group: false,
+          dur: 174,
+        }}
+      />
+      <Composition
+        id="Ep47Atwater"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(atwaterFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: atwaterFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: 'A Teacher Searched Her Purse. The Supreme Court Said It Was Fine.',
+          subtitle: 'The Fourth Amendment applies at school - but the bar is reasonable suspicion, not probable cause. 6-3, 1985.',
+        }}
+      />
+      <Composition
+        id="Ep48Glover"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(gloverFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: gloverFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: 'A Cop Ran Your Plate and Pulled You Over. He Never Saw You Break a Law.',
+          subtitle: 'Kansas v. Glover: the stop stood, but the rule stayed narrow.',
+        }}
+      />
+      <Composition
+        id="Ep49Strieff"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(strieffFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: strieffFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: 'The Stop Was Illegal. The Evidence Still Stayed.',
+          subtitle: 'Utah v. Strieff: attenuation, warrants, and the narrowed exclusionary rule.',
+        }}
+      />
+      <Composition
+        id="OpeningStrieff"
+        component={OpeningStrieff}
+        width={1920}
+        height={1080}
+        fps={60}
+        durationInFrames={openingStrieffDurationInFrames(60)}
+        defaultProps={{
+          title: 'THE WARRANT',
+          subtitle: 'UTAH v. STRIEFF - 2016',
+          accent: '#9C6BAA',
+          hasLogo: true,
+        }}
+      />
+      <Composition
+        id="Ep50Centralpark"
+        component={CentralparkFilm}
+        durationInFrames={centralparkFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep54Flowers"
+        component={FlowersFilm}
+        durationInFrames={flowersFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+
+      {/* EP47 fix: corrected numberticker for the decision-year figure. The baked base render
+          shows the YEAR as "2,001" (NumberTicker comma-grouped). This standalone composition
+          re-renders the SAME figure with group disabled -> "2001", region-overlaid on just that
+          figure's window on the final (identical component/props/dur/fps -> seamless). 174 frames
+          = 5.8s * 30fps, matching FigureBeats dur for the atwater numberticker (524.326-530.126).
+          topLabel/label/decimals match the atwater_film.json figure exactly. */}
+      <Composition
+        id="AtwaterTickerFix"
+        component={NumberTicker}
+        durationInFrames={174}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          value: 2001,
+          topLabel: 'BY THE NUMBERS',
+          label: 'decided - the Supreme Court',
+          decimals: 0,
+          group: false,
+          dur: 174,
+        }}
+      />
+      <Composition
+        id="OpeningLech"
+        component={OpeningLech}
+        width={1920}
+        height={1080}
+        fps={60}
+        durationInFrames={openingLechDurationInFrames(60)}
+        defaultProps={lechOpeningProps}
+      />
+      <Composition
+        id="OpeningYoung"
+        component={OpeningYoung}
+        width={1920}
+        height={1080}
+        fps={60}
+        durationInFrames={openingYoungDurationInFrames(60)}
+        defaultProps={youngOpeningProps}
+      />
+      <Composition
+        id="OpeningCaniglia"
+        component={OpeningCaniglia}
+        width={1920}
+        height={1080}
+        fps={60}
+        durationInFrames={openingCanigliaDurationInFrames(60)}
+        defaultProps={canigliaOpeningProps}
+      />
+      <Composition
+        id="OpeningTekoh"
+        component={OpeningTekoh}
+        width={1920}
+        height={1080}
+        fps={60}
+        durationInFrames={openingTekohDurationInFrames(60)}
+        defaultProps={tekohOpeningProps}
+      />
+      <Composition
+        id="OpeningCleveland"
+        component={OpeningCleveland}
+        width={1920}
+        height={1080}
+        fps={60}
+        durationInFrames={openingClevelandDurationInFrames(60)}
+        defaultProps={{
+          title: 'POVERTY TO PRISON',
+          subtitle: 'BEARDEN V. GEORGIA - 1983',
+          accent: '#B43A3A',
+          hasLogo: true,
+        }}
+      />
+      <Composition
+        id="OpeningGlover"
+        component={OpeningGlover}
+        width={1920}
+        height={1080}
+        fps={60}
+        durationInFrames={openingGloverDurationInFrames(60)}
+        defaultProps={{
+          title: 'THE NAME ON THE PLATE',
+          subtitle: 'KANSAS v. GLOVER',
+          accent: '#5B8DB8',
+          hasLogo: true,
+        }}
+      />
+      <Composition
+        id="OpeningCentralpark"
+        component={OpeningCentralpark}
+        width={1920}
+        height={1080}
+        fps={60}
+        durationInFrames={openingCentralparkDurationInFrames(60)}
+        defaultProps={{
+          title: 'THE EXONERATED FIVE',
+          subtitle: 'CENTRAL PARK - 1989 TO 2002',
+          accent: '#2F9FC4',
+          hasLogo: true,
+        }}
+      />
+      {CLEV_THUMBS.map((concept, index) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-cleveland-0${index + 1}`}
+          component={ClevelandThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
+      {GLOVER_THUMBS.map((concept, index) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-glover-0${index + 1}`}
+          component={GloverThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
+      {STRIEFF_THUMBS.map((concept, index) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-strieff-0${index + 1}`}
+          component={StrieffThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
+      {CENTRALPARK_THUMBS.map((concept, index) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-centralpark-0${index + 1}`}
+          component={CentralparkThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
+      {TEKOH_THUMBS.map((concept, index) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-tekoh-0${index + 1}`}
+          component={TekohThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
+      {TLO_THUMBS.map((concept, index) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-tlo-0${index + 1}`}
+          component={TloThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
+      {ATWATER_THUMBS.map((concept, index) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-atwater-0${index + 1}`}
+          component={AtwaterThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
+      {CANIGLIA_THUMBS.map((concept, index) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-caniglia-0${index + 1}`}
+          component={CanigliaThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
+      {YOUNG_THUMBS.map((concept, index) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-young-0${index + 1}`}
+          component={YoungThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
+      {LECH_THUMBS.map((concept, index) => (
+        <Still
+          key={concept.id}
+          id={`Thumb-lech-0${index + 1}`}
+          component={LechThumbnail}
+          width={1280}
+          height={720}
+          defaultProps={{concept}}
+        />
+      ))}
       <Still
         id="ShortThumb-short06"
         component={ShortThumb}
@@ -254,12 +749,31 @@ export const RemotionRoot: React.FC = () => {
           backgroundSrc: 'shorts/short06/short06_thumb.png',
         }}
       />
+      {/* 16:9 CTR thumbnail for a Short's dedicated YouTube custom thumbnail.
+          Render per-short via --props JSON (runs/shorts_thumbs/props/<short>.json). */}
+      <Still
+        id="ShortThumbYT"
+        component={ShortThumbYT}
+        width={1280}
+        height={720}
+        defaultProps={{
+          headline: 'STILL\nUNSOLVED',
+          subhead: 'THE GARDNER HEIST - 1990',
+          heroImage: 'shorts/short20/short20_01.png',
+          accent: '#E5B53A',
+          badge: 'UNSOLVED',
+          focusY: 26,
+        }}
+      />
       <Still id="Thumb-carsearch-01" component={CarsearchThumbnail} width={1280} height={720} defaultProps={{concept: CARSEARCH_THUMBS[0]}} />
       <Still id="Thumb-carsearch-02" component={CarsearchThumbnail} width={1280} height={720} defaultProps={{concept: CARSEARCH_THUMBS[1]}} />
       <Still id="Thumb-carsearch-03" component={CarsearchThumbnail} width={1280} height={720} defaultProps={{concept: CARSEARCH_THUMBS[2]}} />
       <Still id="Thumb-rolin-01" component={RolinThumbnail} width={1280} height={720} defaultProps={{concept: ROLIN_THUMBS[0]}} />
       <Still id="Thumb-rolin-02" component={RolinThumbnail} width={1280} height={720} defaultProps={{concept: ROLIN_THUMBS[1]}} />
       <Still id="Thumb-rolin-03" component={RolinThumbnail} width={1280} height={720} defaultProps={{concept: ROLIN_THUMBS[2]}} />
+      <Still id="Thumb-kidsforcash-01" component={KidsForCashThumbnail} width={1280} height={720} defaultProps={{concept: KIDSFORCASH_THUMBS[0]}} />
+      <Still id="Thumb-kidsforcash-02" component={KidsForCashThumbnail} width={1280} height={720} defaultProps={{concept: KIDSFORCASH_THUMBS[1]}} />
+      <Still id="Thumb-kidsforcash-03" component={KidsForCashThumbnail} width={1280} height={720} defaultProps={{concept: KIDSFORCASH_THUMBS[2]}} />
       <Composition
         id="Short-short07-yt"
         component={Short}
@@ -1211,6 +1725,245 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{data: SHORT37, platform: 'tiktok' as const, depth: true}} />
       <Still id="ShortThumb-short37" component={ShortThumb} width={1080} height={1920}
         defaultProps={{data: SHORT37, headline: 'FAKE\nWARRANT', badge: 'MAPP v. OHIO', backgroundSrc: 'shorts/short37/short37_01.png'}} />
+      {/* ---- SHORT #38 Williams (facial-recognition wrongful arrest) — PREMIUM (new-shorts batch) ---- */}
+      <Composition id="Short-short38-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT38, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT38, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short38-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT38, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT38, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short38" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT38, headline: 'WRONG\nFACE', badge: 'A.I. MATCH', backgroundSrc: 'shorts/short38/short38_01.png'}} />
+      {/* ---- SHORT #39 Florence (strip-search after a minor offense) — PREMIUM (new-shorts batch) ---- */}
+      <Composition id="Short-short39-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT39, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT39, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short39-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT39, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT39, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short39" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT39, headline: 'STRIPPED\nOVER A FINE', badge: '5–4', backgroundSrc: 'shorts/short39/short39_01.png'}} />
+      {/* ---- SHORT #40 Kids for Cash (judges paid to jail children) — PREMIUM (new-shorts batch) ---- */}
+      <Composition id="Short-short40-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT40, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT40, platform: 'yt' as const, depth: true}} />
+      <Composition id="Short-short40-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT40, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT40, platform: 'tiktok' as const, depth: true}} />
+      <Still id="ShortThumb-short40" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT40, headline: 'KIDS FOR\nCASH', badge: '28 YEARS', backgroundSrc: 'shorts/short40/short40_01.png'}} />
+      {/* ---- SHORT #40m Kids for Cash — SHORTS_METHOD v001 REFERENCE (does NOT touch scheduled short40) ---- */}
+      <Composition id="Short-short40m-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT40M, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT40M, platform: 'yt' as const, depth: false, method: true}} />
+      <Composition id="Short-short40m-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT40M, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT40M, platform: 'tiktok' as const, depth: false, method: true}} />
+      <Still id="ShortThumb-short40m" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT40M, headline: 'KIDS FOR\nCASH', badge: '28 YEARS', backgroundSrc: 'shorts/short40m/short40m_judge.png'}} />
+      {/* ---- SHORT #41 Frazier (police deception, false confession) — PREMIUM (new-shorts batch) ---- */}
+      <Composition id="Short-short41-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT41, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT41, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short41-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT41, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT41, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short41" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT41, headline: 'THE PRINTS\nWERE FAKE', badge: '16 YEARS', backgroundSrc: 'shorts/short41/short41_01.png'}} />
+      {/* ---- SHORT #42 Lech (police destroyed a family's house) — PREMIUM (new-shorts batch) ---- */}
+      <Composition id="Short-short42-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT42, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT42, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short42-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT42, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT42, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short42" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT42, headline: 'POLICE BROKE\nHIS HOUSE', badge: 'NOTHING OWED', backgroundSrc: 'shorts/short42/short42_01.png'}} />
+      {/* ---- SHORT #43 Thompson (Connick v. Thompson, hidden blood evidence) — PREMIUM (new-shorts batch) ---- */}
+      <Composition id="Short-short43-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT43, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT43, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short43-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT43, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT43, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short43" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT43, headline: '14 YEARS\nON A LIE', badge: '5–4', backgroundSrc: 'shorts/short43/short43_01.png'}} />
+      {/* ---- SHORT #46 Tekoh (Vega v. Tekoh, a Miranda warning never read) — PREMIUM (EP44) ---- */}
+      <Composition id="Short-short46-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT46, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT46, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short46-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT46, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT46, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short46" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT46, headline: 'NO WARNING\nNO PAYOUT', badge: '6–3', backgroundSrc: 'shorts/short46/short46_03.png'}} />
+      {/* ---- SHORT #47 Cleveland (Bearden v. Georgia, jailed for being too poor) — PREMIUM (EP45) ---- */}
+      <Composition id="Short-short47-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT47, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT47, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short47-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT47, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT47, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short47" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT47, headline: 'JAILED FOR\nBEING POOR', badge: '1983', backgroundSrc: 'shorts/short47/short47_04.png'}} />
+      {/* ---- SHORT #48 T.L.O. (New Jersey v. T.L.O., the schoolhouse 4th Amendment) — PREMIUM (EP46) ---- */}
+      <Composition id="Short-short48-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT48, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT48, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short48-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT48, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT48, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short48" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT48, headline: 'SEARCHED\nAT SCHOOL', badge: '6–3', backgroundSrc: 'shorts/short48/short48_01.png'}} />
+      <Still id="ShortThumb-short48-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT48, headline: 'A LOWER\nBAR', badge: '6–3', backgroundSrc: 'shorts/short48/short48_01.png'}} />
+      {/* ---- SHORT #49 Atwater (Atwater v. Lago Vista, arrest for a fine-only offense) — PREMIUM (EP47) ---- */}
+      <Composition id="Short-short49-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT49, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT49, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short49-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT49, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT49, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short49" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT49, headline: 'JAILED OVER\nA SEATBELT', badge: '5–4', backgroundSrc: 'shorts/short49/short49_01.png'}} />
+      <Still id="ShortThumb-short49-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT49, headline: 'A $50\nARREST', badge: '5–4', backgroundSrc: 'shorts/short49/short49_01.png'}} />
+      {/* ---- SHORT #50 Glover (Kansas v. Glover, plate-check traffic stop) — PREMIUM (EP48) ---- */}
+      <Composition id="Short-short50-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT50, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT50, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short50-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT50, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT50, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short50" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT50, headline: 'A NAME ON\nA PLATE', badge: '8–1', backgroundSrc: 'shorts/short50/short50_01.png'}} />
+      <Still id="ShortThumb-short50-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT50, headline: 'STOPPED\nON A GUESS', badge: '8–1', backgroundSrc: 'shorts/short50/short50_04.png'}} />
+      {/* ---- SHORT #51 Strieff (Utah v. Strieff, illegal stop + attenuation) — PREMIUM (EP49) ---- */}
+      <Composition id="Short-short51-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT51, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT51, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short51-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT51, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT51, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short51" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT51, headline: 'AN ILLEGAL\nSTOP. LEGAL.', badge: '5–3', backgroundSrc: 'shorts/short51/short51_01.png'}} />
+      <Still id="ShortThumb-short51-B" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT51, headline: 'THE WARRANT\nIN YOUR POCKET', badge: '5–3', backgroundSrc: 'shorts/short51/short51_04.png'}} />
+      {/* ---- SHORT #52 Young (wrong-house raid) — PREMIUM (EP42) ---- */}
+      <Composition id="Short-short52-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT52, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT52, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short52-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT52, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT52, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short52" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT52, headline: 'WRONG\nHOUSE?', badge: '$2.9M', backgroundSrc: 'shorts/short52/short52_02.png'}} />
+      {/* ---- SHORT #53 Caniglia (community caretaking, 9-0) — PREMIUM (EP43) ---- */}
+      <Composition id="Short-short53-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT53, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT53, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short53-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT53, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT53, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short53" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT53, headline: 'JUST TO\nHELP?', badge: '9–0', backgroundSrc: 'shorts/short53/short53_01.png'}} />
+      {/* ---- SHORT #54 Central Park Five (false confessions) — PREMIUM (EP50) ---- */}
+      <Composition id="Short-short54-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT54, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT54, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short54-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT54, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT54, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short54" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT54, headline: 'THEY ALL\nCONFESSED', badge: 'VACATED', backgroundSrc: 'shorts/short54/short54_02.png'}} />
+      {/* ---- SHORT #55 Willingham (arson science) — PREMIUM (EP51) ---- */}
+      <Composition id="Short-short55-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT55, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT55, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short55-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT55, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT55, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short55" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT55, headline: 'NO\nCRIME?', badge: '2004', backgroundSrc: 'shorts/short55/short55_01.png'}} />
+      {/* ---- SHORT #56 Morton (Brady violation) — PREMIUM (EP52) ---- */}
+      <Composition id="Short-short56-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT56, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT56, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short56-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT56, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT56, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short56" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT56, headline: 'THE MONSTER\nWAS REAL', badge: 'EXONERATED', backgroundSrc: 'shorts/short56/short56_01.png'}} />
+      {/* ---- SHORT #57 Norfolk Four (serial false confessions) — PREMIUM (EP53) ---- */}
+      <Composition id="Short-short57-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT57, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT57, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short57-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT57, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT57, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short57" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT57, headline: '4 CONFESSIONS.\n0 KILLERS.', badge: 'INNOCENT', backgroundSrc: 'shorts/short57/short57_02.png'}} />
+      {/* ---- SHORT #58 Flowers (tried six times, 7-2) — PREMIUM (EP54) ---- */}
+      <Composition id="Short-short58-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT58, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT58, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short58-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT58, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT58, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short58" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT58, headline: 'TRIED\n6 TIMES', badge: '7–2', backgroundSrc: 'shorts/short58/short58_01.png'}} />
+      {/* ---- SHORT #59 Burge (the Midnight Crew) — PREMIUM (EP55) ---- */}
+      <Composition id="Short-short59-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT59, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT59, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short59-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT59, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT59, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short59" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT59, headline: 'TAUGHT IN\nSCHOOLS', badge: 'REPARATIONS', backgroundSrc: 'shorts/short59/short59_03.png'}} />
       <Composition
         id="Short-short01-yt"
         component={Short}
@@ -1714,6 +2467,22 @@ export const RemotionRoot: React.FC = () => {
       ))}
       {/* EP35 hinders — assembled from scene_plan (figures/heroes wired). Placeholder timing
           until the audio thread's narration lands; re-run build_hinders_film.py to stamp seconds. */}
+      {/* EP38 kids-for-cash — canonical CaseFilm (Bookends + 8s highlight hook + depth
+          parallax + kinetic type + AmbientMotion + no-repeat footage). */}
+      <Composition
+        id="Ep38KidsForCash"
+        component={CaseFilm}
+        durationInFrames={caseFilmDurationInFrames(kidsforcashFilm as unknown as FilmData, BRAND.video.fps)}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+        defaultProps={{
+          data: kidsforcashFilm as unknown as FilmData,
+          seriesLabel: 'PRIME DOCUMENTARY',
+          title: 'Kids for Cash',
+          subtitle: 'Two judges. A private jail. Thousands of children.',
+        }}
+      />
       <Composition
         id="Ep35Hinders"
         component={CaseFilm}

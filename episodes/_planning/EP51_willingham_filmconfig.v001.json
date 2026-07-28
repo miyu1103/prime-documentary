@@ -1,0 +1,494 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "willingham",
+  "episode_id": "PD-2026-051-willingham",
+  "assets": "episodes/PD-2026-051-willingham/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-051-willingham/06_audio/narration_index.v001.json",
+  "narration": "willingham/narration.mp3",
+  "hookSeconds": 8.0,
+  "hookLine": "Texas executed Cameron Todd Willingham on February 17th, 2004 for an arson that the state's own hired fire scientist later found could not be sustained by the evidence.",
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "CORSICANA, TEXAS",
+        "secondary": "December 23, 1991 - the day before Christmas Eve"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THERE MAY HAVE BEEN",
+          "NO CRIME AT ALL."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NO",
+          "CRIME"
+        ]
+      }
+    ],
+    "OP": [
+      {
+        "kind": "lowerthird",
+        "primary": "CAMERON TODD WILLINGHAM",
+        "secondary": "1968-2004"
+      },
+      {
+        "kind": "numberticker",
+        "value": 23,
+        "label": "His age when his three daughters died",
+        "group": false
+      }
+    ],
+    "ACT_1": [
+      {
+        "kind": "acttitle",
+        "title": "THE MONSTER",
+        "kicker": "ACT ONE",
+        "index": 1
+      },
+      {
+        "kind": "numberticker",
+        "value": 1991,
+        "label": "December 23 - the morning of the fire",
+        "group": false
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "WEST 11TH STREET",
+        "secondary": "Corsicana, Texas - the little frame house"
+      },
+      {
+        "kind": "stat",
+        "value": 3,
+        "label": "Daughters in the house: Amber, Karmon and Kameron"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HE GOT OUT.",
+          "HIS DAUGHTERS DID NOT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "DID",
+          "NOT"
+        ]
+      },
+      {
+        "kind": "spotlight",
+        "cx": 0.5,
+        "cy": 0.52,
+        "r": 0.22,
+        "dim": 0.7
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THE FIRE, THEY SAID,",
+          "COULD BE READ."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "COULD",
+          "BE",
+          "READ"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "IRON MAIDEN. LED ZEPPELIN.",
+        "secondary": "Posters on his wall, read as proof of something evil"
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.26,
+          0.7
+        ],
+        "to": [
+          0.52,
+          0.46
+        ],
+        "label": "a blocked escape"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "DECIDE HE IS A MONSTER,",
+          "AND YOU STOP CHECKING THE SCIENCE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "STOP",
+          "CHECKING"
+        ]
+      }
+    ],
+    "ACT_2": [
+      {
+        "kind": "acttitle",
+        "title": "THE TRIAL",
+        "kicker": "ACT TWO",
+        "index": 2
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "TWO PILLARS:",
+          "THE FIRE, AND THE INFORMANT."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "TWO",
+          "PILLARS"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "VASQUEZ AND FOGG",
+        "secondary": "Texas deputy state fire marshal - Corsicana assistant fire chief"
+      },
+      {
+        "kind": "numberticker",
+        "value": 20,
+        "label": "Arson indicators the investigators listed",
+        "group": false
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "POUR PATTERNS",
+        "secondary": "Puddle-shaped burns on the floor, read as poured accelerant"
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.5,
+        "cy": 0.4,
+        "r": 0.13,
+        "label": "Crazed glass - spider-web cracks in the windows"
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.3,
+          0.74
+        ],
+        "to": [
+          0.58,
+          0.44
+        ],
+        "label": "multiple origins"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "JOHNNY WEBB",
+        "secondary": "Jailhouse informant - Navarro County jail"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "TAKE THE PLEA AND YOU LIVE.",
+          "HE SAID NO."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "HE",
+          "SAID",
+          "NO"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "FUTURE DANGEROUSNESS",
+        "secondary": "A psychiatrist told the jury he would kill again"
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "gears"
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          {
+            "year": "Dec 1991",
+            "text": "The fire on West 11th Street"
+          },
+          {
+            "year": "Jan 1992",
+            "text": "Charged with capital murder"
+          },
+          {
+            "year": "Aug 1992",
+            "text": "Convicted of capital murder by arson"
+          },
+          {
+            "year": "Oct 1992",
+            "text": "Sentenced to death"
+          }
+        ]
+      }
+    ],
+    "ACT_3": [
+      {
+        "kind": "acttitle",
+        "title": "THE UNRAVELING",
+        "kicker": "ACT THREE",
+        "index": 3
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "ELIZABETH GILBERT",
+        "secondary": "A playwright who started writing to death-row prisoners"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NO CLIENT. NO CAREER.",
+          "NOTHING TO WIN."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOTHING",
+          "TO",
+          "WIN"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "GERALD HURST",
+        "secondary": "Cambridge-trained chemist - fire and explosives expert"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "A PHENOMENON CALLED",
+          "FLASHOVER"
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "FLASHOVER"
+        ]
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.28,
+          0.26
+        ],
+        "to": [
+          0.52,
+          0.6
+        ],
+        "label": "flashover, not arson"
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.5,
+        "cy": 0.4,
+        "r": 0.13,
+        "label": "Crazing: cold water hitting hot glass"
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.76,
+          0.7
+        ],
+        "to": [
+          0.5,
+          0.42
+        ],
+        "label": "water, not heat"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "A GRILL ON THE PORCH",
+        "secondary": "Lighter fluid explains the trace by the front door"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NO VALID EVIDENCE",
+          "THAT THIS FIRE WAS ARSON."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NO",
+          "VALID",
+          "EVIDENCE"
+        ]
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.2,
+          0.52
+        ],
+        "to": [
+          0.78,
+          0.4
+        ],
+        "label": "the warning, in writing"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "THERE WAS NO STAY.",
+          "CLEMENCY WAS DENIED."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NO",
+          "STAY"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "FEBRUARY 17, 2004",
+        "secondary": "Put to death by lethal injection - Huntsville Unit"
+      },
+      {
+        "kind": "mechanism",
+        "mechanism": "closingdoor"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "CRAIG BEYLER",
+        "secondary": "Fire scientist hired by the Texas Forensic Science Commission"
+      },
+      {
+        "kind": "quote",
+        "attribution": "Craig Beyler, report for the Texas Forensic Science Commission, 2009",
+        "quote": "a finding of arson could not be sustained"
+      },
+      {
+        "kind": "spotlight",
+        "cx": 0.5,
+        "cy": 0.48,
+        "r": 0.2,
+        "dim": 0.72
+      },
+      {
+        "kind": "quote",
+        "attribution": "Craig Beyler, on the fire marshal's testimony",
+        "quote": "hardly consistent with a scientific mind-set and is more characteristic of mystics or psychics"
+      },
+      {
+        "kind": "stat",
+        "value": 3,
+        "label": "Commissioners Perry replaced two days before the meeting, including chairman Sam Bassett"
+      },
+      {
+        "kind": "quote",
+        "attribution": "Gov. Rick Perry, on Cameron Todd Willingham",
+        "quote": "a monster"
+      },
+      {
+        "kind": "numberticker",
+        "value": 48,
+        "label": "Pages in the Innocence Project fire experts' report",
+        "group": false
+      },
+      {
+        "kind": "quote",
+        "attribution": "Five fire experts assembled by the Innocence Project",
+        "quote": "none of the scientific analysis used to convict Mr. Willingham was valid"
+      },
+      {
+        "kind": "arrow",
+        "from": [
+          0.26,
+          0.68
+        ],
+        "to": [
+          0.72,
+          0.38
+        ],
+        "label": "the charge, reduced"
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "TWO PILLARS, BOTH FALLEN -",
+          "AFTER THE EXECUTION, NOT BEFORE."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NOT",
+          "BEFORE"
+        ]
+      }
+    ],
+    "ENDING": [
+      {
+        "kind": "kinetic",
+        "lines": [
+          "NEVER EXONERATED.",
+          "NO COURT HAS THROWN OUT THE CONVICTION."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "NEVER",
+          "EXONERATED"
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "STACY, HIS EX-WIFE",
+        "secondary": "At one point said she believed he was guilty"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          {
+            "label": "Arson indicators the state presented",
+            "value": 20
+          },
+          {
+            "label": "That survived modern fire science",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "kind": "stat",
+        "value": 5,
+        "label": "Independent fire experts who said none of it held"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "A HOUSE FIRE",
+        "secondary": "The most ordinary phrase in the world"
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          {
+            "year": "Feb 2004",
+            "text": "A qualified scientist warns the state in writing"
+          },
+          {
+            "year": "Feb 17, 2004",
+            "text": "Willingham is executed anyway"
+          },
+          {
+            "year": "2009",
+            "text": "A state-commissioned expert: arson could not be sustained"
+          }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": [
+          "HE SAID IT FROM THE FIRST MINUTE",
+          "TO THE LAST."
+        ],
+        "style": "emphasis",
+        "emphasisWords": [
+          "TO",
+          "LAST"
+        ]
+      }
+    ]
+  }
+}

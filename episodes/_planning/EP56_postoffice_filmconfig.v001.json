@@ -1,0 +1,507 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "postoffice",
+  "episode_id": "PD-2026-056-postoffice",
+  "assets": "episodes/PD-2026-056-postoffice/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-056-postoffice/06_audio/narration_index.v001.json",
+  "narration": "postoffice/narration.mp3",
+  "hookSeconds": 8.0,
+  "hookLine": "In 2003, in a Hampshire village shop, sub-postmistress Jo Hamilton watched her computer invent a debt in front of her.",
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "compbars",
+        "items": [
+          { "label": "On the screen when she called the helpline", "value": 2000 },
+          { "label": "After she followed its instructions", "value": 4000 }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["THE MONEY", "NEVER EXISTED"],
+        "style": "emphasis",
+        "emphasisWords": ["NEVER"]
+      }
+    ],
+    "OP": [
+      {
+        "kind": "numberticker",
+        "value": 1000,
+        "label": "Prosecuted and convicted on the word of one machine",
+        "group": true
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "ENGLAND, 1999",
+        "secondary": "It begins with an upgrade"
+      }
+    ],
+    "ACT_1": [
+      { "kind": "acttitle", "title": "THE TILL THAT LIED", "kicker": "ACT ONE", "index": 1 },
+      {
+        "kind": "lowerthird",
+        "primary": "THE SUB-POSTMASTER",
+        "secondary": "A private citizen serving the state from a village shop"
+      },
+      {
+        "kind": "pindropmap",
+        "pins": [{ "x": 0.31, "y": 0.34, "label": "CRAIG-Y-DON, LLANDUDNO" }]
+      },
+      {
+        "kind": "numberticker",
+        "value": 65000,
+        "label": "Alan Bates and Suzanne Sercombe's own money, May 1998",
+        "group": true,
+        "prefix": "£"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "HORIZON",
+        "secondary": "Built by ICL under its owner Fujitsu, rolled out from 1999"
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "1999", "text": "The Post Office begins rolling Horizon out to every branch counter" },
+          { "year": "2000", "text": "October: Horizon arrives in Craig-y-Don" },
+          { "year": "2001", "text": "By late 2001 the paper ledgers are gone everywhere" }
+        ]
+      },
+      { "kind": "mechanism", "mechanism": "gears" },
+      {
+        "kind": "numberticker",
+        "value": 6000,
+        "label": "Unexplained hole on Alan Bates's screen by December 2000",
+        "group": true,
+        "prefix": "£"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["YOU ARE", "THE ONLY ONE"],
+        "style": "emphasis",
+        "emphasisWords": ["ONLY"]
+      },
+      {
+        "kind": "quote",
+        "quote": "There was no facility within the Horizon system for SPMs to dispute Horizon's figures",
+        "attribution": "Court of Appeal, Hamilton & Others, 23 April 2021"
+      },
+      { "kind": "mechanism", "mechanism": "closingdoor" },
+      {
+        "kind": "arrow",
+        "from": "THE SCREEN SAYS MONEY IS MISSING",
+        "to": "THE SHORTFALL IS PERSONALLY YOURS",
+        "label": "The sub-postmaster's contract"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "FALSE ACCOUNTING",
+        "secondary": "Pressing the button that says the accounts balance — a criminal offence"
+      },
+      {
+        "kind": "numberticker",
+        "value": 2003,
+        "label": "The Post Office terminates Alan Bates's contract in November, giving no reason",
+        "group": false
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["NO WAY TO DISPUTE", "THE MACHINE'S OWN FIGURES"],
+        "style": "emphasis",
+        "emphasisWords": ["NO WAY"]
+      }
+    ],
+    "ACT_2": [
+      { "kind": "acttitle", "title": "HER EMPLOYER, HER PROSECUTOR", "kicker": "ACT TWO", "index": 2 },
+      {
+        "kind": "kinetic",
+        "lines": ["VICTIM, DETECTIVE,", "AND PROSECUTOR"],
+        "style": "emphasis",
+        "emphasisWords": ["PROSECUTOR"]
+      },
+      {
+        "kind": "numberticker",
+        "value": 700,
+        "label": "Sub-postmasters prosecuted by the Post Office itself, 1999 to 2015",
+        "group": true
+      },
+      {
+        "kind": "arrow",
+        "from": "1999",
+        "to": "2015",
+        "label": "About one prosecution a week for a decade and a half"
+      },
+      {
+        "kind": "numberticker",
+        "value": 0,
+        "label": "Post Office or Fujitsu employees convicted of anything",
+        "group": false
+      },
+      {
+        "kind": "arrow",
+        "from": "CHARGED WITH THEFT",
+        "to": "PLEAD GUILTY TO FALSE ACCOUNTING",
+        "label": "Repay the shortfall and the theft count goes away"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "JO HAMILTON",
+        "secondary": "Sub-postmistress, South Warnborough, Hampshire"
+      },
+      {
+        "kind": "numberticker",
+        "value": 36644,
+        "label": "Repaid by Jo Hamilton — she remortgaged her house",
+        "group": true,
+        "prefix": "£"
+      },
+      {
+        "kind": "quote",
+        "quote": "on the basis that the loss was due to the computer not working properly will not be accepted",
+        "attribution": "The Post Office's plea condition, recorded by the Court of Appeal"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "NOEL THOMAS",
+        "secondary": "Gaerwen, Anglesey — forty-two years in the postal service"
+      },
+      {
+        "kind": "numberticker",
+        "value": 48000,
+        "label": "The Gaerwen shortfall that never existed",
+        "group": true,
+        "prefix": "£"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "LEE CASTLETON",
+        "secondary": "Bridlington, East Yorkshire — he represented himself"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          { "label": "Shortfall Horizon claimed", "value": 25000 },
+          { "label": "Post Office costs he was ordered to pay", "value": 321000 }
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "SEEMA MISRA",
+        "secondary": "Sub-postmistress, West Byfleet, Surrey"
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "2008", "text": "January audit: the branch is £79,000 short on Horizon's ledger" },
+          { "year": "2010", "text": "October: convicted of theft at Guildford Crown Court" },
+          { "year": "2010", "text": "11 November: fifteen months, on her son's tenth birthday" }
+        ]
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["A PREGNANT WOMAN WENT TO PRISON", "ON THE WORD OF A COMPUTER"],
+        "style": "emphasis",
+        "emphasisWords": ["ON THE WORD OF A COMPUTER"]
+      }
+    ],
+    "ACT_3": [
+      { "kind": "acttitle", "title": "THEY KNEW", "kicker": "ACT THREE", "index": 3 },
+      {
+        "kind": "quote",
+        "quote": "any perception that POL doubts its own systems would mean that all criminal prosecutions would have to be stayed. It would also beg a question for the Court of Appeal over past prosecutions and imprisonments.",
+        "attribution": "Internal Post Office report, August 2010"
+      },
+      {
+        "kind": "arrow",
+        "from": "AUGUST 2010: THE REPORT",
+        "to": "OCTOBER 2010: SEEMA MISRA CONVICTED",
+        "label": "Eleven weeks"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "GARETH JENKINS",
+        "secondary": "Fujitsu engineer, expert witness for the Post Office"
+      },
+      {
+        "kind": "quote",
+        "quote": "will accurately record all data that is submitted to it and correctly account for it",
+        "attribution": "Gareth Jenkins's standard assurance, quoted by the Court of Appeal"
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "2005", "text": "The Callendar Square bug surfaces — duplicated entries" },
+          { "year": "2010", "text": "The receipts and payments mismatch bug — around forty branches" },
+          { "year": "2015", "text": "The Dalmellington bug — duplicated transactions again" }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "but will still show within the back end branch account",
+        "attribution": "Internal Fujitsu and Post Office note, 2010"
+      },
+      {
+        "kind": "pindropmap",
+        "pins": [{ "x": 0.47, "y": 0.62, "label": "BRACKNELL — FUJITSU SUPPORT CENTRE" }]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "REMOTE ACCESS",
+        "secondary": "Engineers could reach into a branch's live accounts"
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "2012", "text": "Second Sight appointed after pressure from MPs led by James Arbuthnot" },
+          { "year": "2013", "text": "July: the interim report confirms two live defects" },
+          { "year": "2015", "text": "March: the Post Office sacks Second Sight" }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "should be, and have been, destroyed: the word 'shredded' was conveyed to me",
+        "attribution": "Simon Clarke, legal advice to the Post Office, 2 August 2013"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "MARTIN GRIFFITHS",
+        "secondary": "Hope Farm Road, Ellesmere Port — sub-postmaster since 1995"
+      },
+      {
+        "kind": "numberticker",
+        "value": 62000,
+        "label": "His elderly parents' life savings, put toward the repayments",
+        "group": true,
+        "prefix": "£"
+      },
+      {
+        "kind": "stat",
+        "value": 13,
+        "label": "People at least, dead by their own hand in connection with the scandal — the inquiry says the number may be higher"
+      },
+      {
+        "kind": "bar",
+        "items": [
+          { "label": "2012/13", "value": 42 },
+          { "label": "2013/14", "value": 2 },
+          { "label": "2014/15", "value": 0 }
+        ]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "JANUARY 2015",
+        "secondary": "The chief executive prepares to face MPs on remote access"
+      },
+      {
+        "kind": "quote",
+        "quote": "I need to say no it is not possible",
+        "attribution": "Email from the Post Office chief executive, disclosed to the public inquiry"
+      }
+    ],
+    "ACT_4": [
+      { "kind": "acttitle", "title": "THE SUB-POSTMASTERS' ARMY", "kicker": "ACT FOUR", "index": 4 },
+      {
+        "kind": "lowerthird",
+        "primary": "COMPUTER WEEKLY, 11 MAY 2009",
+        "secondary": "The first story anyone dared to print, by Rebecca Thomson"
+      },
+      {
+        "kind": "pindropmap",
+        "pins": [{ "x": 0.5, "y": 0.5, "label": "FENNY COMPTON, WARWICKSHIRE" }]
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["A ROOM FULL", "OF ONLY-ONES"],
+        "style": "emphasis",
+        "emphasisWords": ["ONLY-ONES"]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "JUSTICE FOR SUBPOSTMASTERS ALLIANCE",
+        "secondary": "Named in a village hall in November 2009"
+      },
+      {
+        "kind": "numberticker",
+        "value": 555,
+        "label": "Sub-postmasters who sued the Post Office in the High Court, 2017",
+        "group": false
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "BATES v POST OFFICE",
+        "secondary": "One group action, funded by litigation funders"
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "2019", "text": "March: the first judgment savages the sub-postmaster contracts" },
+          { "year": "2019", "text": "April: the Post Office applies mid-trial to remove the judge, and fails" },
+          { "year": "2019", "text": "December: the Horizon Issues judgment is handed down" }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "It amounts to the 21st century equivalent of maintaining that the earth is flat.",
+        "attribution": "Mr Justice Fraser, High Court, December 2019"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          { "label": "Bugs alleged at trial", "value": 29 },
+          { "label": "Accepted by the Post Office's own expert", "value": 11 }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "such remote access to branch accounts does exist; such remote access is possible by employees within Fujitsu; it does exist specifically by design; and it has been used in the past",
+        "attribution": "Bates v Post Office (No 6), 16 December 2019"
+      },
+      {
+        "kind": "highlightring",
+        "cx": 0.5,
+        "cy": 0.46,
+        "r": 0.16,
+        "label": "SPECIFICALLY WRONG IN FACT"
+      },
+      {
+        "kind": "compbars",
+        "items": [
+          { "label": "Settlement paid by the Post Office", "value": 57750000 },
+          { "label": "Left for the 555 after costs", "value": 12000000 }
+        ]
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "2020", "text": "December: the first six convictions fall at Southwark Crown Court" },
+          { "year": "2021", "text": "23 April: the Court of Appeal quashes thirty-nine more" },
+          { "year": "2023", "text": "About a hundred quashed in all — roughly nine hundred still standing" }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "the failures of investigation and disclosure were in our judgment so egregious as to make the prosecution of any of the 'Horizon cases' an affront to the conscience of the court.",
+        "attribution": "Court of Appeal, Hamilton & Others, 23 April 2021"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["POL KNEW.", "POL KNEW.", "POL KNEW."],
+        "style": "emphasis",
+        "emphasisWords": ["KNEW"]
+      }
+    ],
+    "ACT_5": [
+      { "kind": "acttitle", "title": "THE DRAMA THAT MOVED A PARLIAMENT", "kicker": "ACT FIVE", "index": 5 },
+      {
+        "kind": "lowerthird",
+        "primary": "1–4 JANUARY 2024",
+        "secondary": "A four-night drama, containing nothing new"
+      },
+      {
+        "kind": "numberticker",
+        "value": 13500000,
+        "label": "Viewers by spring 2024",
+        "group": true
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "2024", "text": "9 January: 1.2 million sign the petition; the CBE is returned" },
+          { "year": "2024", "text": "10 January: the Prime Minister promises a law without precedent" },
+          { "year": "2024", "text": "24 May: the Offences Act receives royal assent" }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "I return my CBE with immediate effect",
+        "attribution": "Paula Vennells, 9 January 2024"
+      },
+      {
+        "kind": "numberticker",
+        "value": 0,
+        "label": "Post Office or Fujitsu employees convicted, the night the drama aired",
+        "group": false
+      },
+      {
+        "kind": "quote",
+        "quote": "Every conviction to which this Act applies is quashed on the coming into force of this Act.",
+        "attribution": "Post Office (Horizon System) Offences Act 2024, section 1(1)"
+      },
+      {
+        "kind": "numberticker",
+        "value": 619,
+        "label": "People in England and Wales so far identified as cleared by the Act",
+        "group": false
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "£600,000, FULL AND FINAL",
+        "secondary": "Offered to each person the Act cleared"
+      },
+      {
+        "kind": "quote",
+        "quote": "Parliament does not quash convictions; that is a matter for the courts.",
+        "attribution": "Lord Burnett of Maldon, House of Lords, 13 May 2024"
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "22–24 MAY 2024",
+        "secondary": "Three days of evidence to the public inquiry"
+      },
+      {
+        "kind": "quote",
+        "quote": "cancelled and annulled",
+        "attribution": "The Gazette, 23 February 2024 — the erasure of the CBE"
+      },
+      {
+        "kind": "numberticker",
+        "value": 1628000000,
+        "label": "Paid in redress by the summer of 2026",
+        "group": true,
+        "prefix": "£"
+      }
+    ],
+    "ENDING": [
+      {
+        "kind": "stat",
+        "value": 236,
+        "label": "Sent to prison — by the BBC's count"
+      },
+      {
+        "kind": "numberticker",
+        "value": 0,
+        "label": "Convicted of any crime for doing this to them",
+        "group": false
+      },
+      {
+        "kind": "timeline",
+        "events": [
+          { "year": "2026", "text": "More than a hundred officers; fifty-three people under examination" },
+          { "year": "2027", "text": "No files expected before prosecutors until late in the year" }
+        ]
+      },
+      {
+        "kind": "quote",
+        "quote": "we do not have the luxury of time",
+        "attribution": "Commander Stephen Clayman, National Police Chiefs' Council, May 2026"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["THERE TURNED OUT TO BE", "TEN THOUSAND OF THEM"],
+        "style": "emphasis",
+        "emphasisWords": ["TEN THOUSAND"]
+      },
+      {
+        "kind": "lowerthird",
+        "primary": "HORIZON",
+        "secondary": "Still on the counters, on a contract extended to 2027"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["THE COMPUTER LIED.", "PEOPLE WENT TO PRISON.", "NO ONE HAS."],
+        "style": "emphasis",
+        "emphasisWords": ["NO ONE"]
+      }
+    ]
+  }
+}
