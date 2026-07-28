@@ -81,8 +81,9 @@ def mean_luma(path: Path, at: float = 0.5) -> float:
         return -1.0
 
 
-def select(theme: str, limit: int, ep: str, exclude_used: bool) -> list[dict]:
-    cmd = [sys.executable, str(SELECTOR), "--theme", theme, "--kind", "video",
+def select(theme: str, limit: int, ep: str, exclude_used: bool, by_subtype: bool = False) -> list[dict]:
+    flag = "--subtype" if by_subtype else "--theme"
+    cmd = [sys.executable, str(SELECTOR), flag, theme, "--kind", "video",
            "--limit", str(limit), "--json", "--no-sheet"]
     if ep:
         cmd += ["--ep", ep]
@@ -108,7 +109,13 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--slug", required=True)
     ap.add_argument("--plan", required=True,
-                    help="theme:count,theme:count,... e.g. legal_court:60,crime_police:45")
+                    help="name:count,... of THEMES, or of SUBTYPES with --by-subtype")
+    ap.add_argument("--by-subtype", action="store_true",
+                    help="--plan names are subtypes (e.g. police_interrogation_room_empty:20). "
+                         "Themes are too coarse to match a case: on EP54 they returned big-city "
+                         "skylines and 18th-century quills for a 1996 small-town Mississippi "
+                         "story. Curate subtypes from FACTORY_SUBTYPE_INVENTORY.v001.md, which "
+                         "lists each subtype's match-verdict count and its REAL sample titles.")
     ap.add_argument("--exclude-used", action="store_true",
                     help="skip clips already used by other episodes (footage diversity)")
     ap.add_argument("--allow-weak", action="store_true",
@@ -134,7 +141,7 @@ def main() -> int:
     per_theme: dict[str, int] = {}
 
     for theme, want in plan:
-        rows = select(theme, int(want * OVERSELECT * 3) + 20, ep, a.exclude_used)
+        rows = select(theme, int(want * OVERSELECT * 3) + 20, ep, a.exclude_used, a.by_subtype)
         n_raw = len(rows)
         if not a.allow_weak:
             rows = [r for r in rows
