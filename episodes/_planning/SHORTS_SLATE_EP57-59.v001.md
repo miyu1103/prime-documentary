@@ -223,7 +223,11 @@ Format lane **F-A** ("the machine that manufactures agreement"). Locks from `EP5
 
 ## 5. Schedule (one short per day, 12:00 JST)
 
-Audited live with `python scripts/yt_schedule_audit.py` on 2026-07-30 (read-only; the channel API is the source of truth — do **not** re-derive this from local manifests). 25 uploads carry a future `publishAt`; the last is **2026-08-21**. `SHORTS_SLATE_EP53-56.v001.md` §6 then claims 8/14, 8/15 and 8/22 → 9/01. This slate starts at 9/02.
+Audited live with `python scripts/yt_schedule_audit.py` on 2026-07-30 (read-only; the channel API is the source of truth — do **not** re-derive this from local manifests). After that day's bookings, 28 uploads carry a future `publishAt` and the last is **2026-08-24** (`short60`/`short63`/`short66`). **8/14 and 8/15 are open** — a two-day hole left when those three were moved to consecutive days — and the ten unbuilt shorts of `SHORTS_SLATE_EP53-56.v001.md` come before this slate.
+
+> **Rule the owner set on 2026-07-30, and it binds this slate too: a batch runs on CONSECUTIVE days in NUMBER order.** Do not scatter a batch across a backfilled hole. Fill holes with a separate, earlier batch.
+
+The table below is therefore a shape, not a booking: **re-derive the actual dates from a live audit at build time**, keeping the interleave and the one-per-day cadence.
 
 | Date (JST) | Day | Short | Episode | Working title |
 |---|---|---|---|---|

@@ -462,12 +462,22 @@ L5: *"They found each other in a village hall in 2009. The full case is on the c
 
 Audited live against the channel on 2026-07-28 with `python scripts/yt_schedule_audit.py` (read-only). **Do not re-derive this from local manifests** — the channel API is the source of truth.
 
+> ⚠ **SUPERSEDED for the first three — owner instruction 2026-07-30.** `short60`, `short63` and
+> `short66` were built and booked, then moved: the owner requires a batch to run on **consecutive
+> days in number order**, not split across a backfilled gap. Actual bookings are
+> **8/22 `short60` (9r2CrlG5IlU) · 8/23 `short63` (qvjB7RvpuUc) · 8/24 `short66` (xhoGSk8JA5c)**,
+> verified live. That re-opened **8/14 and 8/15**, which are once again the only hole in the daily
+> cadence and should be filled first by the next two shorts built from this slate. The rows below
+> are the original plan and the remaining ten still need slots re-derived from a live audit.
+
 | Date (JST) | Day | Short | Episode | Working title | Build status |
 |---|---|---|---|---|---|
-| 2026-08-14 | Fri | `short60` | EP53 | They fixed the confession | ✅ ready |
-| 2026-08-15 | Sat | `short66` | EP55 | They buried the letter | ✅ ready |
+| ~~2026-08-14~~ **open** | Fri | ~~`short60`~~ | — | *(hole — fill first)* | — |
+| ~~2026-08-15~~ **open** | Sat | ~~`short66`~~ | — | *(hole — fill first)* | — |
 | *8/16 – 8/21* | | *occupied* | | *(existing shorts incl. short56/57/58/59)* | — |
-| 2026-08-22 | Sat | `short63` | EP54 | He voted not guilty | ✅ ready |
+| 2026-08-22 | Sat | `short60` | EP53 | They fixed the confession | ✅ **BOOKED** |
+| 2026-08-23 | Sun | `short63` | EP54 | He voted not guilty | ✅ **BOOKED** |
+| 2026-08-24 | Mon | `short66` | EP55 | They buried the letter | ✅ **BOOKED** |
 | 2026-08-23 | Sun | `short61` | EP53 | The Navy said he wasn't there | ✅ ready |
 | 2026-08-24 | Mon | `short67` | EP55 | Proven. Uncharged. | ✅ ready |
 | 2026-08-25 | Tue | `short64` | EP54 | 41 of 42 | ✅ ready |
