@@ -175,6 +175,9 @@ import {SHORT56} from './data/short56';
 import {SHORT57} from './data/short57';
 import {SHORT58} from './data/short58';
 import {SHORT59} from './data/short59';
+import {SHORT60} from './data/short60';
+import {SHORT63} from './data/short63';
+import {SHORT66} from './data/short66';
 import {SHORT01} from './data/short01';
 import {SHORT02} from './data/short02';
 import {SHORT03} from './data/short03';
@@ -2009,6 +2012,39 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{data: SHORT59, platform: 'tiktok' as const, depth: true, method: true}} />
       <Still id="ShortThumb-short59" component={ShortThumb} width={1080} height={1920}
         defaultProps={{data: SHORT59, headline: 'TAUGHT IN\nSCHOOLS', badge: 'REPARATIONS', backgroundSrc: 'shorts/short59/short59_03.png'}} />
+      {/* ---- SHORT #60 Norfolk Four (they fixed the confession) — PREMIUM (EP53) ---- */}
+      <Composition id="Short-short60-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT60, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT60, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short60-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT60, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT60, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short60" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT60, headline: 'THEY FIXED\nTHE CONFESSION', badge: 'INNOCENT', backgroundSrc: 'shorts/short60/short60_10.png'}} />
+      {/* ---- SHORT #63 Flowers (the juror who voted not guilty) — PREMIUM (EP54) ---- */}
+      <Composition id="Short-short63-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT63, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT63, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short63-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT63, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT63, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short63" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT63, headline: 'HE VOTED\nNOT GUILTY', badge: 'HANDCUFFED', backgroundSrc: 'shorts/short63/short63_09.png'}} />
+      {/* ---- SHORT #66 Burge (the letter that was buried) — PREMIUM (EP55) ---- */}
+      <Composition id="Short-short66-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT66, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT66, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short66-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT66, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT66, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short66" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT66, headline: 'THEY BURIED\nTHE LETTER', badge: '1982', backgroundSrc: 'shorts/short66/short66_04.png'}} />
       <Composition
         id="Short-short01-yt"
         component={Short}

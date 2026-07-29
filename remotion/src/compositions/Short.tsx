@@ -4,6 +4,7 @@ import {
   Audio,
   Easing,
   Img,
+  OffthreadVideo,
   Series,
   Video,
   interpolate,
@@ -270,10 +271,17 @@ const MovingVideoV: React.FC<{src: string; plate?: boolean}> = ({src, plate}) =>
   return (
     <AbsoluteFill style={{overflow: 'hidden', backgroundColor: BRAND.color.ink}}>
       <AbsoluteFill style={{transform: `scale(${scale})`, transformOrigin: '50% 46%'}}>
-        <Video
+        {/* OffthreadVideo, not Video: the hero clip is decoded by ffmpeg instead of by Chrome.
+            Chrome's decoder threw MEDIA_ERR code 3 (PIPELINE_ERROR_DISCONNECTED, "video decode
+            error") partway through every render of the Wan-i2v clips, at a different frame each
+            time. Re-encoding the clips (30 fps, Main profile, faststart, closed GOP) did not fix
+            it; taking the decode out of the browser did. */}
+        {/* No loop prop on OffthreadVideo in this Remotion version: every clip in use (~3.5 s) is
+            longer than any beat that shows it (<=2.3 s), so it never needs to wrap. A future beat
+            longer than its clip must trim the beat, not re-introduce <Video>. */}
+        <OffthreadVideo
           src={staticFile(src)}
           muted
-          loop
           style={{width: '100%', height: '100%', objectFit: 'cover', filter: plate ? 'brightness(0.7)' : 'none'}}
         />
       </AbsoluteFill>
