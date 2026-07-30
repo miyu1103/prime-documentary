@@ -225,7 +225,9 @@ Format lane **F-A** ("the machine that manufactures agreement"). Locks from `EP5
 
 Audited live with `python scripts/yt_schedule_audit.py` on 2026-07-30 (read-only; the channel API is the source of truth — do **not** re-derive this from local manifests). After that day's bookings, 28 uploads carry a future `publishAt` and the last is **2026-08-24** (`short60`/`short63`/`short66`). **8/14 and 8/15 are open** — a two-day hole left when those three were moved to consecutive days — and the ten unbuilt shorts of `SHORTS_SLATE_EP53-56.v001.md` come before this slate.
 
-> **Rule the owner set on 2026-07-30, and it binds this slate too: a batch runs on CONSECUTIVE days in NUMBER order.** Do not scatter a batch across a backfilled hole. Fill holes with a separate, earlier batch.
+> **Two rules the owner set on 2026-07-30, and they bind this slate too.**
+> 1. **A batch runs on CONSECUTIVE days in NUMBER order.** Do not scatter a batch across a backfilled hole.
+> 2. **A Short is paired with its OWN episode — it publishes 1–3 days AFTER that episode's long-form, never before it, and never weeks later.** The whole Shorts calendar was re-packed at 2/day on 2026-07-30 (`scripts/reschedule_shorts_v002.py`) because the queue had drifted 2–4 weeks behind. After that repack the booked Shorts end **2026-08-11**, and from 8/12 the cadence is 1 long-form + 1 Short per day. So EP57–59's Shorts are due the week their own episodes publish — do not queue them behind a backlog.
 
 The table below is therefore a shape, not a booking: **re-derive the actual dates from a live audit at build time**, keeping the interleave and the one-per-day cadence.
 
