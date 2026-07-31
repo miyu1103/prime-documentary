@@ -216,14 +216,36 @@ for gx in GRID:
         columns[(gx, gy)] = c
         col_bsdf[(gx, gy)] = b
 
-# capitals: a short flare at each column head, so the connection reads as a connection
+# drop panels: the square thickening of the slab over each column head. This is what a
+# flat-plate garage actually looks like from below. Cone capitals read as mushroom caps and
+# became the loudest shape in frame, which is why the first four previews did not read as a
+# building at all.
+panels = {}
 for (gx, gy), c in columns.items():
-    bpy.ops.mesh.primitive_cone_add(radius1=COL_R * 1.05, radius2=COL_R * 1.9, depth=0.42,
-                                    vertices=32,
-                                    location=(gx * PITCH, gy * PITCH, SLAB_Z - SLAB_T / 2 - 0.21))
+    bpy.ops.mesh.primitive_cube_add(size=1,
+                                    location=(gx * PITCH, gy * PITCH, SLAB_Z - SLAB_T / 2 - 0.13))
     cap = bpy.context.object
-    cap.name = 'cap_%d_%d' % (gx, gy)
+    cap.name = 'droppanel_%d_%d' % (gx, gy)
+    cap.scale = (COL_R * 3.0, COL_R * 3.0, 0.26)
     cap.data.materials.append(slab_mat)
+    _b = cap.modifiers.new('bev', 'BEVEL'); _b.width = 0.018; _b.segments = 2
+    panels[(gx, gy)] = cap
+
+# soffit ribs: a shallow grid on the underside. A bare plane has no scale — these give the
+# deck a size and let the eye read it as a ceiling rather than as background.
+rib_mat, rib_b = new_mat('rib')
+set_in(rib_b, 'Base Color', (0.062, 0.067, 0.075, 1))
+set_in(rib_b, 'Roughness', 0.85)
+SPAN = PITCH * 3.2
+for i in (-2, -1, 0, 1, 2):
+    for axis in (0, 1):
+        off = i * PITCH * 0.62
+        loc = (off, 0, SLAB_Z - SLAB_T / 2 - 0.035) if axis == 0 else (0, off, SLAB_Z - SLAB_T / 2 - 0.035)
+        bpy.ops.mesh.primitive_cube_add(size=1, location=loc)
+        rib = bpy.context.object
+        rib.name = 'rib_%d_%d' % (axis, i)
+        rib.scale = (0.075, SPAN, 0.07) if axis == 0 else (SPAN, 0.075, 0.07)
+        rib.data.materials.append(rib_mat)
 
 # ---- the punch: a shear cone per failing connection ------------------------
 # A truncated cone of slab, wider at the top, that drops away as the column head rises
@@ -231,7 +253,7 @@ for (gx, gy), c in columns.items():
 cones = []
 for (gx, gy) in FAIL:
     x, y = gx * PITCH, gy * PITCH
-    bpy.ops.mesh.primitive_cone_add(radius1=COL_R * 1.15, radius2=COL_R * 3.4,
+    bpy.ops.mesh.primitive_cone_add(radius1=COL_R * 1.15, radius2=COL_R * 2.25,
                                     depth=SLAB_T * 1.02, vertices=40,
                                     location=(x, y, SLAB_Z))
     cone = bpy.context.object
@@ -249,11 +271,11 @@ for (gx, gy) in FAIL:
     x, y = gx * PITCH, gy * PITCH
     for i in range(8):
         a = i * math.pi / 4
-        r = COL_R * 3.1
+        r = COL_R * 2.35
         bpy.ops.mesh.primitive_cube_add(size=1, location=(x + math.cos(a) * r, y + math.sin(a) * r, SLAB_Z))
         w = bpy.context.object
         w.name = 'frag_%d_%d_%02d' % (gx, gy, i)
-        w.scale = (0.34, 0.20, SLAB_T / 2 * 0.96)
+        w.scale = (0.26, 0.15, SLAB_T / 2 * 0.94)
         w.rotation_euler = (0, 0, a)
         w.data.materials.append(slab_mat)
         ring_parts.append((w, Vector((math.cos(a), math.sin(a), 0.0))))
@@ -276,18 +298,29 @@ if True:
         c.keyframe_insert('location', frame=F_HOLD)
         ease(c)
 
-    # 2. the shear cones drop out of the slab
+    # 2a. the drop panel over each failing column falls away with its shear cone
+    for (gx, gy) in FAIL:
+        pnl = panels[(gx, gy)]
+        p0 = pnl.location.copy()
+        pnl.location = p0; pnl.keyframe_insert('location', frame=F_PUNCH)
+        pnl.location = p0 + Vector((0, 0, -1.05)); pnl.keyframe_insert('location', frame=F_PUNCH_END)
+        pnl.rotation_euler = (0.12 if gx >= 0 else -0.12, 0.09, 0.0)
+        pnl.keyframe_insert('rotation_euler', frame=F_PUNCH_END)
+        pnl.location = p0 + Vector((0, 0, -1.22)); pnl.keyframe_insert('location', frame=F_HOLD)
+        ease(pnl)
+
+    # 2b. the shear cones drop out of the slab
     for cone, b, base in cones:
         cone.location = base
         cone.keyframe_insert('location', frame=F_PUNCH)
-        cone.location = Vector((base.x, base.y, base.z - 1.15))
+        cone.location = Vector((base.x, base.y, base.z - 0.80))
         cone.keyframe_insert('location', frame=F_PUNCH_END)
-        cone.location = Vector((base.x, base.y, base.z - 1.35))
+        cone.location = Vector((base.x, base.y, base.z - 0.96))
         cone.keyframe_insert('location', frame=F_HOLD)
         # the fracture surface flares as it separates, then cools
         key_emit(b, F_PUNCH, 0.0)
-        key_emit(b, F_PUNCH + 8, 1.1)
-        key_emit(b, F_PUNCH_END, 0.12)
+        key_emit(b, F_PUNCH + 8, 0.30)
+        key_emit(b, F_PUNCH_END, 0.05)
         ease(cone)
         ease(cone.data.materials[0].node_tree)
 
@@ -298,7 +331,7 @@ if True:
         w.keyframe_insert('location', frame=F_PUNCH)
         w.rotation_euler = w.rotation_euler.copy()
         w.keyframe_insert('rotation_euler', frame=F_PUNCH)
-        w.location = p0 + outward * 0.22 + Vector((0, 0, -0.16))
+        w.location = p0 + outward * 0.13 + Vector((0, 0, -0.10))
         w.keyframe_insert('location', frame=F_PUNCH_END)
         w.rotation_euler = (w.rotation_euler.x + 0.14, w.rotation_euler.y - 0.10, w.rotation_euler.z)
         w.keyframe_insert('rotation_euler', frame=F_PUNCH_END)
@@ -358,9 +391,9 @@ vnt.links.new(pv.outputs['Volume'], vnt.nodes.get('Material Output').inputs['Vol
 vol.data.materials.append(vm)
 
 # ---- camera: low, under the deck, drifting in on the failing pair ----------
-LOOK = Vector((PITCH * 0.28, -PITCH * 0.05, SLAB_Z - 0.50))
-CAM_START = Vector((PITCH * 1.75, -PITCH * 3.35, SLAB_Z - COL_H * 0.80))
-CAM_END = Vector((PITCH * 1.35, -PITCH * 2.60, SLAB_Z - COL_H * 0.66))
+LOOK = Vector((PITCH * 0.22, PITCH * 0.10, SLAB_Z - 0.02))
+CAM_START = Vector((PITCH * 1.50, -PITCH * 2.95, SLAB_Z - COL_H * 0.88))
+CAM_END = Vector((PITCH * 1.10, -PITCH * 2.25, SLAB_Z - COL_H * 0.74))
 cd = bpy.data.cameras.new('cam')
 cam = bpy.data.objects.new('cam', cd)
 coll.objects.link(cam)
