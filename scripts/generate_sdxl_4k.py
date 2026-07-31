@@ -130,16 +130,28 @@ def png_long_edge(p: Path) -> int:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("episode")
-    ap.add_argument("--variants", type=int, default=None)
+    ap.add_argument("--variants", type=int, default=1,
+                    help="images per prompt. ONE PROMPT = ONE IMAGE is the standing owner rule "
+                         "(2026-07-31); values >1 require --allow-variants and a written reason.")
+    ap.add_argument("--allow-variants", action="store_true",
+                    help="explicitly opt in to more than one image per prompt (owner rule override)")
     ap.add_argument("--only", help="only this shot stem, e.g. S07")
     args = ap.parse_args()
 
     ep = resolve_ep(args.episode)
+    # ONE PROMPT = ONE IMAGE (owner directive 2026-07-31). This default used to be 3 for every
+    # episode except EP56, while every planning doc claimed "variants 指定なし（＝1枚）" — so the
+    # documented production command silently produced 3x the specified images (measured: flowers
+    # wrote 628 images against a 257-image spec, 355 of them into rejected/). The prose rule and
+    # the code now agree, and picking from a candidate pool is no longer reachable by accident.
     variants = args.variants
-    if variants is None:
-        variants = 1 if ep == "PD-2026-056-postoffice" else 3
-    if ep == "PD-2026-056-postoffice" and variants != 1:
-        raise SystemExit("EP56 postoffice is locked to variants=1; do not create _02/_03 variants")
+    if variants != 1 and not args.allow_variants:
+        raise SystemExit(
+            f"--variants {variants} refused: one prompt = one image (owner directive 2026-07-31). "
+            "If a shot genuinely needs a second attempt, fix the PROMPT and re-run that one shot; "
+            "do not re-roll the same prompt. Pass --allow-variants only with a written reason.")
+    if variants < 1:
+        raise SystemExit("--variants must be >= 1")
     slug = re.sub(r"^PD-\d{4}-\d{3}-", "", ep)
     prompts = read_prompts(ROOT / "episodes" / ep / "04_scenes" / "ai_prompts.v001.md")
     base_shots = len(prompts)
