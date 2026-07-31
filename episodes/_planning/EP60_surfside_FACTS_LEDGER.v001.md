@@ -28,6 +28,7 @@
 | CT-01 | Champlain Towers South, a 12-floor condominium in Surfside, Florida, **partially collapsed on 24 June 2021 at approximately 1:30 a.m. EDT**. | ✓ | [NIST, Champlain Towers South Collapse](https://www.nist.gov/disaster-and-failure-studies/champlain-towers-south-collapse) — NIST's own wording |
 | CT-02 | **98 people died.** | ✓✓ | [NIST press release, 22 June 2026](https://www.nist.gov/news-events/news/2026/06/nist-releases-technical-findings-what-caused-2021-partial-collapse) · [NPR](https://www.npr.org/2021/12/15/1064647589/surfside-condo-collapse-grand-jury) |
 | CT-03 | The building contained **136 units**. | ✓ | [NBC News, settlement approval](https://www.nbcnews.com/news/us-news/1-billion-settlement-florida-condo-collapse-approved-judge-rcna34992) |
+| CT-22 | Champlain Towers South was **built in 1981**, twelve storeys plus a penthouse, on Surfside's Atlantic coast. | ✓ | [AMPP, on the NIST technical findings](https://content.ampp.org/materials-performance/magazine-article/15984/NIST-Releases-Technical-Findings-on-Champlain) |
 | ○-01 | The collapse itself lasted about 13 seconds. | ○ | Widely reported; **not** established by this pass. Do not state a duration until timed from the surveillance record or NIST. |
 
 ## 2. WHAT NIST FOUND (published 22 June 2026)
@@ -41,6 +42,8 @@
 | CT-08 | ✓ **VERBATIM — Glenn Bell:** *"The low margins against failure were primarily caused by two factors… First, severe and widespread deviations in the building's original structural design from the codes and standards of the day, but also some limitations in those codes and standards. And second, deviations in the building's construction from the design drawings."* | ✓ VERBATIM | NIST press release |
 | CT-09 | Contributing factors: **understrength structural design and misplaced steel reinforcement in the pool deck**, plus **added load** (heavy planters, added sand, pavers) and **long-term corrosion** of steel reinforcement. | ✓ | NIST technical findings as summarised in NIST/press coverage read this pass |
 | ⛔-01 | "Some areas of the pool deck and street-level slab provided **less than half** the required strength." | ⛔ | Reported by *Engineering News-Record*, whose page returned **HTTP 403** to this pass. **Not read. Do not use** until read from the NIST document. |
+| ⛔-02 | "twenty-two minutes past one" — any collapse time more precise than NIST's own wording. | ⛔ | NIST states **"approximately 1:30 a.m. EDT"** (CT-01). A precise minute is not established by this pass. |
+| ⛔-03 | "thirteen seconds" — any stated duration for the collapse itself. | ⛔ | Widely reported, established by nobody in this pass (see ○-01). Do not state a duration. |
 
 ## 3. THE WARNINGS — the film's spine
 
