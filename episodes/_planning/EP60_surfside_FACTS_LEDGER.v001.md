@@ -57,6 +57,7 @@
 | CT-15 | **9 April 2021**: board president **Jean Wodnicki** wrote to residents that observable damage, including in the underground garage, **"has gotten significantly worse since the initial inspection"**, that deterioration was **"accelerating"**, and that it **"would begin to multiply exponentially"** in coming years. | ✓✓ | [Washington Post](https://www.washingtonpost.com/national/months-before-building-collapse-condo-board-president-warned-damage-to-building-was-accelerating/2021/06/29/e68d28e2-d8f6-11eb-bb9e-70fda8c37057_story.html) · [NPR](https://www.npr.org/sections/live-updates-miami-area-condo-collapse/2021/06/29/1011280545/letter-from-condo-board-warned-buildings-damage-has-gotten-significantly-worse) |
 | CT-16 | The April 2021 letter explained an assessment of **more than $15 million**. | ✓✓ | WaPo · NPR |
 | ○-02 | The Morabito report **as a document** (page cites, full sentences, figures, photographs). | ○ | Town of Surfside public-records library. **Blocked locally:** the retrieved PDF is a scan and this machine has no renderer/OCR. Fix by installing poppler, or obtain a text-layer copy. |
+| ○-05 | Whether the >$15M assessment had been **formally approved** by 9 April 2021, and on what date. | ○ | CT-15/CT-16 establish only that the letter **explained** the assessment. v002 originally said it had passed; corrected. Needed before the script locks — it changes Act III's turn. |
 | ○-03 | The Wodnicki letter **in full**. | ○ | Currently two news transcriptions of the same document. |
 
 ## 4. THE AFTERMATH
