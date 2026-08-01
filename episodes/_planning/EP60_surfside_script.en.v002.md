@@ -72,9 +72,11 @@ His name was Frank Morabito. His firm had been asked for a structural field surv
 
 The work is more physical than the phrase suggests. He walked the deck. He went down the ramp into the garage. And he did the thing that tells you most about concrete, which is to hit it.
 
-Sound concrete rings. Concrete that has come away from the steel inside it gives back a flat, dead knock, because there is a void behind the surface. A man with a hammer and a trained ear can map a defect through a wall that looks perfectly good, and he can do it faster than any instrument.
+Sound concrete rings. Concrete that has come away from the steel inside it gives back a flat, dead knock, because there is a void behind the surface where the two used to be joined. A man with a hammer and a trained ear can map a defect through a wall that looks perfectly good, and he can do it faster than any instrument, and for the price of an afternoon.
 
-Here is what that dead knock means, and it is the whole physics of this film.
+It is the oldest test there is, and on a coast it is the one that matters, because the failure that kills a slab of this kind happens behind a surface that stays smooth right up until the end.
+
+Here is what that dead knock means, because the whole of what happened later is in it.
 
 Concrete is not solid the way a stone is. It is a hard sponge, threaded with pores. Inside it there is steel, and the steel is what actually holds a floor up — the concrete's job is to grip it and to keep water away from it. In a healthy slab the chemistry of the cement keeps that steel passive, coated in a film a few molecules thick that stops it rusting at all.
 
@@ -104,9 +106,9 @@ Major, in an engineer's writing, is not decoration. It is a category. Structural
 
 He described the concrete itself as showing "abundant concrete cracking and spalling."
 
-Spalling is what it sounds like: concrete coming off in pieces, pushed away from behind by steel that has swollen. On the underside of a slab it is not cosmetic. It is the visible end of a process that has been running invisibly for years, above reinforcement that is no longer the size the drawings called for.
+Spalling is what it sounds like: concrete coming off in pieces, pushed away from behind by steel that has swollen. On the underside of a slab it is the visible end of a process that has been running invisibly for years, above reinforcement no longer the size the drawings called for.
 
-Consider the position he was writing from. A structural field survey is not addressed to the world. It is addressed to the people who own the building, and they are the people who will have to pay for whatever it says. An engineer who overstates costs his clients money they did not need to spend. An engineer who understates leaves them standing under it.
+Consider the position he was writing from. A structural field survey is addressed to the people who own the building — and they are the people who will have to pay for whatever it says. An engineer who overstates costs his clients money they did not need to spend. An engineer who understates leaves them standing under it.
 
 There is only one way out of that, which is to write down what is there and price it honestly, and let the people who own the building decide.
 
@@ -125,7 +127,7 @@ He came to the board meeting.
 【OST: NOVEMBER 2018】
 
 ⟨HELD⟩
-Picture the room, because it is the only room in this film. A condominium board meeting on a weeknight. Folding chairs. A jug of water. Seven or eight people on the board and a scattering of residents who came. Somewhere on that table, two days old, is a report saying that the slab under their swimming pool has major structural damage and that repairing it will cost nine point one million dollars.
+There is only one room in this story, and this is it. A condominium board meeting on a weeknight. Folding chairs. A jug of water. Seven or eight people on the board and a scattering of residents who came. Somewhere on that table, two days old, is a report saying that the slab under their swimming pool has major structural damage and that repairing it will cost nine point one million dollars.
 
 The town's building official is there.
 
@@ -141,7 +143,7 @@ And it did exactly what a sentence like that does. It forbade nothing. It ordere
 
 The work did not begin. The report went into the association's files and the town's files, and stayed there.
 
-That is a quieter fact than it sounds. A document in two filing systems is not lost. It can be produced on request. It was produced on request, later, by both of them — which is the only reason this film can quote it.
+That is a quieter fact than it sounds. A document in two filing systems is not lost. It can be produced on request. It was produced on request, later, by both of them — which is the only reason it can be quoted here.
 
 But a document that is filed is a document that is no longer moving. Nobody has to read it again. Nobody is required to act on it. It goes on being true, in a drawer, at the exact rate the concrete goes on getting worse.
 
@@ -194,7 +196,7 @@ More than fifteen million dollars, to be raised from the owners of a hundred and
 
 To explain it, the board president, Jean Wodnicki, wrote to the residents on the ninth of April. It is the plainest document in this story, and it was written to be persuasive, because it had to be.
 
-That letter is the second warning, and it is the harder of the two to read, because it is not written by a consultant. It is a neighbour writing to neighbours about their own home, and she is asking them for money.
+That letter is the second warning, and the harder of the two to read, because a consultant did not write it. A neighbour wrote it, to neighbours, about their own home, while asking them for money.
 
 She told them what had happened since the engineer's visit. The observable damage, including in the garage, "has gotten significantly worse since the initial inspection."
 
@@ -270,7 +272,7 @@ Try to hold the shape of it.
 
 In the first week of June, two connections stop working, and the deck they were holding is now held by their neighbours. Those neighbours were not built for that. They are carrying their own bay and a share of somebody else's, and from that moment they are working past what they were designed for — not failing, but with nothing left over.
 
-That condition can last a while. A structure with no surplus is not the same thing as a structure coming down. It is a structure with nothing to absorb whatever happens next. And what happens next does not have to be dramatic. It can be a few more days of the same corrosion that has been running since the 1980s, in a slab that is now being asked for more than it was ever asked for before.
+That condition can last a while. A structure with no surplus has not begun to come down. It has simply lost whatever would have absorbed the next thing. And what happens next does not have to be dramatic. It can be a few more days of the same corrosion that has been running since the 1980s, in a slab that is now being asked for more than it was ever asked for before.
 
 Then another connection goes, and the arithmetic gets worse again, and the load moves again, and the next one is carrying more than the last one was.
 
@@ -280,7 +282,7 @@ Nothing in the record shows anybody knew it had started.
 
 【OST: PUNCHING SHEAR】
 
-Which leaves the question this film has carried since its first minute. Why was there no surplus left?
+Which leaves the question that has been open since the first minute. Why was there no surplus left?
 
 The answer comes in two parts, and the second is worse.
 
@@ -317,13 +319,13 @@ Both are worth understanding, because they fail in different directions.
 
 A design that does not meet the code of its day is a drawing problem. Somebody calculated something, or did not, and what was drawn was thinner or lighter or less reinforced than the rules of 1979 or 1980 called for. It is fixed on paper, before anything is built, by somebody checking.
 
-A building that deviates from its own drawings is a site problem. The drawing may be perfect; what gets poured is what the steel fixers put in the formwork on the day. Reinforcement in the wrong position is not visible once the concrete is in. It is entombed, and it stays wrong for the life of the structure, and nothing that anybody does afterwards will move it.
+A building that deviates from its own drawings is a site problem. The drawing may be perfect; what gets poured is what the steel fixers put in the formwork on the day. Reinforcement in the wrong position disappears the moment the concrete goes in. It is entombed there, wrong for the life of the structure, and nothing anybody does afterwards will move it.
 
 The federal finding is that Champlain Towers South had both.
 
 Neither is visible to a resident. Neither can be found by walking a garage with a hammer, because a hammer tells you the state of the concrete, not whether the drawing it was built from was ever good enough. And neither is fixed by approving an assessment.
 
-One boundary belongs here, and then this act is finished. The finding establishes that the structure had less in reserve than the standards of its own day required, that the pool deck's connections were where that was worst, and that the failure began there in the first week of June. It does not establish that anybody understood the shortfall when the building went up. It does not establish that the 2018 repairs would have stopped what happened — the investigation does not say so. Nobody in this film is accused of anything, because the record does not accuse them.
+One boundary belongs here, and then this act is finished. The finding establishes that the structure had less in reserve than the standards of its own day required, that the pool deck's connections were where that was worst, and that the failure began there in the first week of June. It does not establish that anybody understood the shortfall when the building went up. It does not establish that the 2018 repairs would have stopped what happened — the investigation does not say so. Nobody here is accused of anything, because the record does not accuse them.
 
 【OST: "TOO NARROW FROM THE START"】
 
