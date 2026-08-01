@@ -116,7 +116,7 @@ A generic non-real man in his seventies at a meeting, elbow on the table and fin
 - `F006.png`
 A generic non-real woman in her seventies on a coastal balcony at dusk, looking out at the water, composed, holding a folded page down at her side [FSTYLE] Avoid: [NEG]
 - `F007.png`
-A generic non-real man in his sixties at a desk with a chequebook open in front of him, pen in hand and not yet writing, deciding [FSTYLE] Avoid: [NEG]
+At a desk with a chequebook open in front of him, a generic non-real man in his sixties, pen in hand and not yet writing, deciding [FSTYLE] Avoid: [NEG]
 - `F008.png`
 A generic non-real couple in their seventies seen close at a kitchen table, both looking at the same page between them, neither speaking, warm lamp, cool window behind [FSTYLE] Avoid: [NEG]
 - `F009.png`
@@ -176,7 +176,7 @@ A generic non-real man in his seventies seen close in a dim meeting room, hand a
 [C-1] H:\pd-media\assets\ai\surfside\ に F001..F024 (24枚) + T03..T05 (3枚) = 27枚
 [C-2] _02 / _03 が0件
 [C-3] F001..F024 の長辺 >= 3840px / T03..T05 が 1920x1080
-[C-4] §1.5 の Q1–Q8 を全13枚で目視。1枚も該当なし
+[C-4] §1.5 の Q1–Q8 を全27枚で目視。1枚も該当なし
 [C-5] とくに Q2・Q3 は1枚ずつ声に出して確認する
       （「これは実在の誰かに見えないか」「技師・理事・建築主任・理事長に見えないか」）
 [C-6] sha256 重複ゼロ
