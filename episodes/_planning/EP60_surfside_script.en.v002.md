@@ -165,6 +165,10 @@ There are two ways to find that money. Save it in advance, in a reserve, which m
 
 Reserves are the responsible answer and they are politically miserable. A board that raises them is charging today's owners for tomorrow's concrete. A board that does not is quietly popular. Boards are elected.
 
+At the start of 2021, the reserve fund at Champlain Towers South held about seven hundred and six thousand dollars. A study of what a building like that ought to have set aside put the figure at around ten point three million.
+
+Seven per cent. That is what forty years of monthly contributions had put in the account against the work the building was going to need — and the shortfall was not an accident or a theft. It was a series of ordinary, popular decisions, taken one year at a time, by people who were charging themselves.
+
 So the second route is the ordinary one, and it moves at the speed of persuasion.
 
 And persuasion, in a condominium, is a strange currency. Every owner has a vote and a bill, and the two arrive together. Saying yes means writing a cheque for something invisible. Saying no costs nothing today, and the thing you are refusing to pay for makes no complaint. There is no meter running where anyone can see it.
@@ -173,9 +177,13 @@ A board can put the engineer's report in front of every owner — and this one d
 
 Estimates age while it moves. Construction costs climb, and corroding steel does not pause for a vote — every month of discussion is another month of the same process running underneath the discussion. By early 2021 the work had been repriced.
 
-The assessment put to the residents of Champlain Towers South was more than fifteen million dollars. Across a hundred and thirty-six apartments that is an average of over a hundred and ten thousand each.
+In April 2021 the association approved an assessment of fifteen million dollars, ahead of the building's forty-year recertification.
 
-Two and a half years had turned nine point one million into more than fifteen. Some of that is simply what building work costs after two and a half years. Some of it is scope — the longer a repair waits, the more of the structure it has to include, because the damage does not hold still while the money is discussed. A crack that needed sealing in 2018 needs cutting out and rebuilding later.
+It was apportioned by apartment, and the range is the part worth hearing. The owner of a one-bedroom would pay eighty thousand, one hundred and ninety dollars. The owner of the four-bedroom penthouse would pay three hundred and thirty-six thousand, one hundred and thirty-five.
+
+You could pay it in one sum, or monthly across fifteen years.
+
+Two and a half years had turned nine point one million into fifteen. Some of that is simply what building work costs after two and a half years. Some of it is scope — the longer a repair waits, the more of the structure it has to include, because the damage does not hold still while the money is discussed. A crack that needed sealing in 2018 needs cutting out and rebuilding later.
 
 That is the ordinary tax on delay, and it is the reason the number in a structural report is a perishable number. The estimate was not wrong. It had simply expired.
 
@@ -190,11 +198,11 @@ And underneath all of it sat a problem that was not financial and was never real
 Any two of those are manageable. All three at once is a very good reason to wait for more information.
 
 ⟨HELD⟩
-And then, in April 2021, the number was put to them.
+And then, after three years, they voted for it.
 
-More than fifteen million dollars, to be raised from the owners of a hundred and thirty-six apartments, for structural repairs to a building most of them had never thought of as damaged. After three years of estimates and meetings, this was the bill arriving.
+The board approved the assessment. The money was going to be raised, the work was going to be done, and every household in that building now knew exactly what its share came to.
 
-To explain it, the board president, Jean Wodnicki, wrote to the residents on the ninth of April. It is the plainest document in this story, and it was written to be persuasive, because it had to be.
+To explain the decision, the board president, Jean Wodnicki, wrote to the residents on the ninth of April. It is the plainest document in this story, and it was written to be persuasive, because it had to be.
 
 That letter is the second warning, and the harder of the two to read, because a consultant did not write it. A neighbour wrote it, to neighbours, about their own home, while asking them for money.
 
@@ -208,9 +216,9 @@ And she told them where that led: the damage would "begin to multiply exponentia
 
 Read the sequence, because it is short. October 2018: an engineer writes that the slab under the pool deck has major structural damage. April 2021: the president of the board writes to every resident that it has got significantly worse, that it is speeding up, and that it is going to multiply.
 
-Nobody in that building was uninformed.
+Nobody in that building was uninformed. And the money had been voted.
 
-That is the last thing the record shows anybody doing about the concrete before the first week of June: writing it down again, more urgently than the first time, and asking three hundred neighbours to pay for it.
+There was a date on it. Owners had until the first of July to pay the sum in full or commit to the fifteen-year plan.
 
 ---
 
@@ -218,7 +226,7 @@ That is the last thing the record shows anybody doing about the concrete before 
 
 Then people went on living there.
 
-There is nothing to report from April, May and the first three weeks of June except ordinary life in a building where the paperwork had finally started to move. The damage had been surveyed. The work had a price. The bill had been put to the people who would pay it.
+There is nothing to report from April, May and the first three weeks of June except ordinary life in a building where the paperwork had finally started to move. The damage had been surveyed. The work had a price. The money had been voted, and the first of July was coming.
 
 This is the answer to the question people ask afterwards, which is why nobody left.
 
@@ -230,7 +238,11 @@ The damage was also in the two places in a residential building that nobody look
 
 So the spring passed the way springs pass. Cars went down the ramp and parked under the slab that two people had now put in writing. Towels were left on loungers. After heavy rain, water stood in a shallow sheet across the deck the way it had for years, and then went, the way it always had.
 
-The repairs were being organised. That is the thing to hold on to about those weeks, because it is what makes them ordinary rather than ominous. A building that had argued with itself for three years had a report, a price and a letter from its own president explaining why the work could not wait. The residents of Champlain Towers South had every reason to believe that the worst part of this was going to be the bill.
+The repairs were being organised. That is the thing to hold on to about those weeks, because it is what makes them ordinary rather than ominous. A building that had argued with itself for three years had stopped arguing. There was a report, a price, a vote, and a date. The residents of Champlain Towers South had every reason to believe that the worst part of this was going to be the bill.
+
+The building came down on the twenty-fourth of June. The money was due on the first of July.
+
+Nobody in that building ever paid the assessment.
 
 Nobody was waiting for anything to happen. They were waiting for work to start.
 

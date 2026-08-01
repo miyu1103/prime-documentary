@@ -57,13 +57,17 @@
 | CT-15 | **9 April 2021**: board president **Jean Wodnicki** wrote to residents that observable damage, including in the underground garage, **"has gotten significantly worse since the initial inspection"**, that deterioration was **"accelerating"**, and that it **"would begin to multiply exponentially"** in coming years. | ✓✓ | [Washington Post](https://www.washingtonpost.com/national/months-before-building-collapse-condo-board-president-warned-damage-to-building-was-accelerating/2021/06/29/e68d28e2-d8f6-11eb-bb9e-70fda8c37057_story.html) · [NPR](https://www.npr.org/sections/live-updates-miami-area-condo-collapse/2021/06/29/1011280545/letter-from-condo-board-warned-buildings-damage-has-gotten-significantly-worse) |
 | CT-16 | The April 2021 letter explained an assessment of **more than $15 million**. | ✓✓ | WaPo · NPR |
 | ○-02 | The Morabito report **as a document** (page cites, full sentences, figures, photographs). | ○ | Town of Surfside public-records library. **Blocked locally:** the retrieved PDF is a scan and this machine has no renderer/OCR. Fix by installing poppler, or obtain a text-layer copy. |
-| ○-05 | Whether the >$15M assessment had been **formally approved** by 9 April 2021, and on what date. | ○ | CT-15/CT-16 establish only that the letter **explained** the assessment. v002 originally said it had passed; corrected. Needed before the script locks — it changes Act III's turn. |
+| ~~○-05~~ | **CLOSED 2026-08-01.** The assessment **was** approved, in April 2021 — see CT-23. The v002 correction that removed the approval was over-cautious and has been reversed. | ✓ | CNN investigation |
 | ○-03 | The Wodnicki letter **in full**. | ○ | Currently two news transcriptions of the same document. |
 
 ## 4. THE AFTERMATH
 
 | ID | Claim | Grade | Source |
 |---|---|---|---|
+| CT-23 | **April 2021**: the association **approved** a **$15 million** assessment, ahead of the building's 40-year recertification. | ✓✓ | [CNN investigation, 28 June 2021](https://www.cnn.com/2021/06/28/us/surfside-condo-owners-assessments-invs) · [local3news syndication](https://www.local3news.com/condo-owners-in-surfside-building-were-facing-assessments-for-15-million-worth-of-repairs/article_514a2a39-2034-5c1f-b320-7016a4fe9082.html) |
+| CT-24 | Per-unit assessment ran from **$80,190 for a one-bedroom** to **$336,135 for the four-bedroom penthouse**. | ✓✓ | ibid. |
+| CT-25 | Owners could pay **upfront or monthly over fifteen years**. The deadline to choose was **1 July 2021** — **seven days after the building came down**. | ✓✓ | ibid. |
+| CT-26 | The association held roughly **$706,000 in reserves** against a projected capital need of about **$10.3 million** — funded at roughly **7%**. | ✓✓ | ibid. · [CNN, 8 July 2021](https://www.cnn.com/2021/07/08/us/surfside-collapse-condo-finances-invs) |
 | CT-17 | **23 June 2022**: Miami-Dade Circuit Judge **Michael Hanzman** gave final approval to a settlement of **$1,021,199,000** involving more than 24 defendants. | ✓ | [NBC News](https://www.nbcnews.com/news/us-news/1-billion-settlement-florida-condo-collapse-approved-judge-rcna34992) |
 | CT-18 | ✓ **VERBATIM — Judge Hanzman:** *"It will never be enough to compensate them for the tragic loss they have suffered. This settlement is the best we can do. It's a remarkable result. It is extraordinary."* | ✓ VERBATIM | ibid. |
 | CT-19 | About **$96 million** of the settlement was set aside for owners who lost one of the 136 units; about **$100 million** for legal fees. | ✓ | ibid. |
