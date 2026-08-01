@@ -1,0 +1,53 @@
+{
+  "schema_version": "pd_manifest.v001",
+  "episode_id": "PD-2026-060-surfside",
+  "slug": "surfside",
+  "title_working": "The Building Was Already Falling",
+  "state": "assets_ready",
+  "runtime_target_sec": 2400,
+  "created": "2026-08-01",
+  "planning": {
+    "topic": "episodes/_planning/TOPIC_PIPELINE.v005.md",
+    "facts_ledger": "episodes/_planning/EP60_surfside_FACTS_LEDGER.v001.md",
+    "film_bible": "episodes/_planning/EP60_surfside_FILM_BIBLE.v001.md",
+    "script": "episodes/_planning/EP60_surfside_script.en.v003.md",
+    "asset_design": "episodes/_planning/EP60_surfside_ASSET_DESIGN.v001.md",
+    "filmconfig": "episodes/_planning/EP60_surfside_filmconfig.v001.json",
+    "codex_batches": [
+      "episodes/_planning/EP60_surfside_CODEX_A_BATCH_A.v001.md",
+      "episodes/_planning/EP60_surfside_CODEX_A_BATCH_B.v001.md"
+    ]
+  },
+  "assets": {
+    "ai_stills": {
+      "count": 112,
+      "root": "H:/pd-media/assets/ai/surfside",
+      "staged": "remotion/public/surfside/img",
+      "variants": 0,
+      "regenerations": 0
+    },
+    "hero_blender": {
+      "built": 1,
+      "planned": 6,
+      "script": "remotion/src/blender/surfside_section.py"
+    },
+    "footage": {
+      "selected": 0,
+      "target": 330
+    },
+    "ae_cards": {
+      "built": 0,
+      "planned": "12-16"
+    }
+  },
+  "open_gates": [
+    "NIST technical-findings document itself (releases or confirms quarantine ⛔-01)",
+    "October 2018 Morabito report as a document (○-02; the public-records PDF is a scan and this machine has no OCR)",
+    "9 April 2021 Wodnicki letter in full (○-03)",
+    "criminal-charge status re-confirmed the week the script locks (○-04)"
+  ],
+  "policy": {
+    "faces": "NO identifiable face and none of the 98 named. People appear as hands, backs and silhouettes only.",
+    "note": "check_episode_inputs.py requires P### people stills. That requirement conflicts with this episode's dignity policy and needs an owner ruling before it is satisfied or waived."
+  }
+}
