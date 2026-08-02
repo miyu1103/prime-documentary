@@ -1,0 +1,407 @@
+{
+  "episode_id": "PD-2026-001-miranda",
+  "slug": "miranda",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "cQFql7tT1fE",
+    "title": "Read Rights or It's Out | Miranda v. Arizona",
+    "url": "https://www.youtube.com/watch?v=cQFql7tT1fE",
+    "privacy": "public",
+    "views": 3
+  },
+  "shorts_existing": [
+    "short01",
+    "short82"
+  ],
+  "shorts_to_author": 1,
+  "existing_angles_do_not_repeat": {
+    "short01": [
+      "Police read you your rights, and it isn't out of politeness.",
+      "Decades ago, you could be questioned alone for hours, with no warning at all.",
+      "Cornered, some people confessed to things they never did.",
+      "In 1966, the Supreme Court drew a line: warn people before questioning them in custody.",
+      "It isn't a courtesy.",
+      "It's a fix built into the system.",
+      "Without the warning, a confession can be thrown out.",
+      "A few seconds changed every arrest in America.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ],
+    "short82": [
+      "His confession was thrown out by the",
+      "Supreme Court of the United States.",
+      "He went back to prison anyway.",
+      "Phoenix 1963.",
+      "Ernesto Miranda is taken into",
+      "a room and questioned. He confesses.",
+      "Nobody had told him",
+      "he could stay silent.",
+      "Nobody had told him he",
+      "could have a lawyer.",
+      "His case climbed all the way up.",
+      "In 1966",
+      "by five votes to four",
+      "the Court agreed.",
+      "That confession should never have counted.",
+      "So the state tried him again.",
+      "A new trial",
+      "on other evidence.",
+      "Convicted a second time.",
+      "The most famous name in American",
+      "law belongs to a man who",
+      "was still found guilty.",
+      "He never won his freedom.",
+      "He won something that outlived him.",
+      "Why the rule survived",
+      "when he did not:",
+      "the full case is on the channel."
+    ]
+  },
+  "script": "episodes\\PD-2026-001-miranda\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "\"You have the right to remain silent.\" You have heard it in a thousand movies, and maybe once in real life.",
+    "But the law had started to ask a harder question — not \"did he say it?\" but \"did he know he had a choice?\" Because a confession only means what we think it means if the person giving it understood that silence was an option.",
+    "The justices were not asking, \"was this one confession unfair?\" They were asking, \"what should have to be true, every time, before any of these confessions can be used at all?\" So the stakes quietly expand.",
+    "That is the hidden system behind \"you have the right to remain silent\": not a courtesy, but a rule that quietly rebalances every arrest in America.",
+    "In 1966, the Supreme Court decided that the real problem was not any single officer or any single suspect.",
+    "He is never told that he does not have to say anything.",
+    "He is never told that he could have a lawyer sitting beside him .",
+    "In that Phoenix interrogation room, no one had told Ernesto Miranda that it was .",
+    "The argument on appeal is narrow and sharp: that the confession should never have counted, because Miranda was never told the rights that might have changed whether he spoke at all .",
+    "And here is the detail most people never learn.",
+    "It is a repair the Supreme Court bolted onto the Fifth Amendment in 1966 — built out of four plain sentences — because the room where confessions are made was tilted against the person inside it .",
+    "And the man who gave it its name never got the ending you would expect.",
+    "The warning outlived his case, because it was never really his.",
+    "≈ 1,733 narration words (within the 1,700–1,900 target); est."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short110",
+      "angle": "Miranda was never one man's case: three other appeals were folded in before it reached the Court, which is why it produced a rule for everyone instead of relief for one defendant.",
+      "type": "B — a number/stakes gap (four cases, four rooms, one name)",
+      "avoids": "The existing Shorts cover why the warning exists and how Ernesto Miranda personally ended up back in prison; neither one says his case was consolidated with three others, or that this is what turned a single appeal into a nationwide rule.",
+      "funnel_question_left_for_longform": "What the four warnings actually have to cover, and why two justices said the majority reached beyond what the Constitution required.",
+      "era": "1966 Washington, D.C., with 1963 Phoenix interrogation-room texture",
+      "loop": true,
+      "loop_join": "L5 sets up the count and L1 gives the number on the restart, so the instruction and the answer read as one sentence.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "You think Miranda was one man's case. It was four.",
+          "source_lines": [
+            "Miranda's case did not travel to the Supreme Court alone."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "Ernesto Miranda's appeal did not travel to the Supreme Court alone. Three other cases were folded in. Four defendants. Four interrogation rooms. One shared problem.",
+          "source_lines": [
+            "Miranda's case did not travel to the Supreme Court alone.",
+            "Four defendants. Four different interrogation rooms. One shared problem."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "That combination is a signal. When the Court pulls four cases under a single name, it is not fixing one man's bad day. It is looking at a pattern.",
+          "source_lines": [
+            "That combination is a signal.",
+            "When the Supreme Court pulls four separate cases together under a single name, it is not trying to fix one man's bad day. It is looking at a pattern"
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "So the question changed. Not, was this one confession unfair. But what has to be true, every time, before any confession can be used at all.",
+          "source_lines": [
+            "The justices were not asking, \"was this one confession unfair?\" They were asking, \"what should have to be true, every time, before any of these confessions can be used at all?\""
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "The name on the case belongs to one man. Count the interrogation rooms the Court was actually looking at.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R03",
+          "subject": "one bare interrogation table under a single hanging lamp",
+          "source": "GENERATE",
+          "prompt": "a bare metal interrogation table and two empty chairs under a single conical lamp hanging low over it, tall bare walls falling away into black, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty interrogation room table"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U07",
+          "subject": "four identical case folders laid out in a row",
+          "source": "GENERATE",
+          "prompt": "four identical worn case folders laid side by side in a single row on a dark wooden desk, every label worn completely blank, no hands and no figure in frame, lit ONLY by one desk lamp which is switched on beside them, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stack of case files folders"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R02",
+          "subject": "steel handcuffs closing on a pair of wrists",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "handcuffs closing on wrists",
+          "bound_file": "D:\\pd-archive\\ocean_nature\\coverr__coverr-solitary-silhouette-on-the-rocky-shore__solitary-silhouette-on-the-rocky-shore.mp4",
+          "bound_title": "solitary silhouette on the rocky shore",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.3819,
+          "motion": 3.998,
+          "luma": 149.7
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R05",
+          "subject": "marble courthouse columns seen from directly below",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "marble courthouse columns low angle",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1430__rain_on_window_night.mp4",
+          "bound_title": "raindrops flowing on glass",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.394,
+          "motion": 2.772,
+          "luma": 43.8
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "R01",
+          "subject": "the roof beacon of a 1963 patrol cruiser at a Phoenix kerb",
+          "source": "GENERATE",
+          "prompt": "tight low angle on the rear fender and single roof beacon of a 1963 patrol cruiser parked at a desert town kerb at night, chrome and dark paint filling the frame, lit ONLY by that beacon which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "vintage police car beacon night"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U04",
+          "subject": "a long station corridor receding to one lit doorway",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "dim corridor receding lit doorway",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2213__warehouse_interior_dark.mp4",
+          "bound_title": "young people walking to manifest equality concept",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4393,
+          "motion": 10.95,
+          "luma": 71.3
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "R04",
+          "subject": "two silhouettes facing each other across a bare table",
+          "source": "GENERATE",
+          "prompt": "two dark silhouettes facing each other across a small bare table, faces not visible, one conical lamp hanging between them, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "police interrogation two men table"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "R10",
+          "subject": "four identical closed doors, a blade of light under each",
+          "source": "GENERATE",
+          "prompt": "four identical closed doors set along one dark institutional wall, a hard blade of light escaping under each of them, all nameplates worn blank, lit ONLY by that escaping light, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "row of closed doors corridor"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U10",
+          "subject": "two hands laid flat on a scarred table",
+          "source": "GENERATE",
+          "prompt": "macro of two weathered hands laid flat on a scarred wooden table, nothing visible above the wrists, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hands resting on wooden table"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "Y05",
+          "subject": "three more files sliding onto one and bound with a band",
+          "source": "GENERATE",
+          "prompt": "three worn case files sliding across a dark desk onto a fourth and being bound together with a single cloth band, every cover worn completely blank, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "bundle of tied files desk"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a typewriter carriage stopped mid-line on a blank sheet",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "typewriter keys close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0830__money_cash_counting.mp4",
+          "bound_title": "counting polish zloty banknotes hand close up",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6148,
+          "motion": 23.845,
+          "luma": 78.3
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "R06",
+          "subject": "an empty lectern facing a long dark bench",
+          "source": "GENERATE",
+          "prompt": "a plain wooden lectern standing alone facing a long empty judicial bench in a vast dark chamber, no inscriptions anywhere, lit ONLY by one shaft of high window light which falls across the lectern, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty courtroom lectern bench"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "I05",
+          "subject": "a records room aisle stacked with unlabelled boxes",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "archive records room shelves aisle",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3533__abstract_dark_background.mp4",
+          "bound_title": "a dark blurry image of a person in a dark room",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4001,
+          "motion": 8.192,
+          "luma": 64.0
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U15",
+          "subject": "a dark map of the United States with four unnamed marks",
+          "source": "GENERATE",
+          "prompt": "a dark relief map of the United States showing state borders as thin glowing seams and four small bright marks scattered across it, absolutely no place names or lettering anywhere, lit ONLY by that internal glow which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "united states map dark relief"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U07",
+          "subject": "four thin files bound into one thick docket",
+          "source": "GENERATE",
+          "prompt": "one thick bound docket standing on a judicial bench where four thin files have been sewn into a single spine, cover and spine worn completely blank, lit ONLY by one brass bench lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "thick bound legal volume desk"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "R08",
+          "subject": "an empty judge's bench seen from the floor",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, the chair behind it empty, lit ONLY by one shaft of window light falling across its face from a fixture switched on above, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "judge bench empty courtroom"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "a single empty wooden chair in a cone of light",
+          "source": "GENERATE",
+          "prompt": "a single empty wooden chair standing in a hard cone of light in a large dark empty room, dust motes drifting through the beam, lit ONLY by the fixture switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "single chair empty room light"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "rows of identical empty chairs receding into darkness",
+          "source": "GENERATE",
+          "prompt": "rows of identical plain chairs receding away from camera into a vast dark hall, every one of them empty, lit ONLY by one bank of fixtures switched on above the nearest row, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rows of empty chairs hall"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a plain blank card held between two fingers",
+          "source": "GENERATE",
+          "prompt": "macro of a small plain card held up between two fingers, both faces of the card completely blank and unprinted, nothing visible above the knuckles, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "small card held in hand macro"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U05",
+          "subject": "an institutional wall clock with a blank face",
+          "source": "GENERATE",
+          "prompt": "an institutional wall clock with a blank face, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R07",
+          "subject": "a judge's gavel caught mid-strike",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "judge gavel striking block",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3352__judge_gavel_wooden.mp4",
+          "bound_title": "judge writing on a document",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.403,
+          "motion": 1.789,
+          "luma": 62.8
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U12",
+          "subject": "a row of interrogation doors all standing open",
+          "source": "GENERATE",
+          "prompt": "a row of identical heavy doors along one dark corridor all standing wide open onto the same hard lit hallway beyond, nobody in frame, lit ONLY by that hallway light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1966 Washington, D.C., with 1963 Phoenix interrogation-room texture, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open doors corridor light"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: one bare interrogation table under a single hanging lamp",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "empty interrogation room table"
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

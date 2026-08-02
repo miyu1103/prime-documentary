@@ -1,0 +1,34 @@
+{
+ "_placeholder": true,
+ "_note": "PLACEHOLDER, written 2026-08-02 so Root.tsx can carry the Ep60Surfside composition before narration exists. scripts/build_case_film_generic.py OVERWRITES this file with the real cut list once episodes/PD-2026-060-surfside/06_audio/narration_index.v001.json and remotion/public/surfside/narration.mp3 are in place. Do not render this file.",
+ "episode_id": "PD-2026-060-surfside",
+ "fps": 30,
+ "narration": "surfside/narration.mp3",
+ "narrationSeconds": 6.0,
+ "hookSeconds": 2.0,
+ "hookLine": "Placeholder hook line -- replaced when the film is built.",
+ "hook": [
+  {
+   "start": 0.0,
+   "dur": 2.0,
+   "kind": "img",
+   "src": "surfside/img/P001.png",
+   "seed": "surfside-hook-00"
+  }
+ ],
+ "cuts": [
+  {
+   "id": "cut-0000",
+   "start": 0.0,
+   "dur": 6.0,
+   "kind": "img",
+   "src": "surfside/img/P001.png",
+   "seed": "surfside-0000",
+   "act": "ACT1",
+   "treatment": "still"
+  }
+ ],
+ "captions": [],
+ "graphics": [],
+ "figures": []
+}

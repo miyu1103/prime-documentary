@@ -58,7 +58,6 @@ def main():
                  "?part=contentDetails,brandingSettings,snippet&mine=true", headers=auth)
     chitem = ch["items"][0]
     cid = chitem["id"]
-    uploads = chitem["contentDetails"]["relatedPlaylists"]["uploads"]
 
     # channel structure
     _, secs = http("GET", f"https://www.googleapis.com/youtube/v3/channelSections?part=snippet&channelId={cid}", headers=auth)
@@ -69,20 +68,14 @@ def main():
     for p in pls.get("items", []):
         print(f"  - {p['snippet']['title']} ({p['contentDetails']['itemCount']} items)")
 
-    # all uploads
-    ids = []
-    page = ""
-    while True:
-        _, pl = http("GET", "https://www.googleapis.com/youtube/v3/playlistItems"
-                     f"?part=contentDetails&maxResults=50&playlistId={uploads}{page}", headers=auth)
-        ids += [v["contentDetails"]["videoId"] for v in pl.get("items", [])]
-        tok = pl.get("nextPageToken")
-        if not tok:
-            break
-        page = f"&pageToken={tok}"
+    # all videos, from the shared index (the uploads playlist alone omits some — see
+    # scripts/yt_channel_index.py for the 2026-08-03 measurement)
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from yt_channel_index import fetch_videos, list_video_ids
+    ids = list_video_ids(auth)
 
-    _, vd = http("GET", "https://www.googleapis.com/youtube/v3/videos"
-                 f"?part=snippet,status,statistics&id={','.join(ids)}", headers=auth)
+    # videos.list caps `id` at 50; fetch_videos chunks and fails loudly rather than returning {}
+    vd = {"items": list(fetch_videos(auth, ids, part="snippet,status,statistics").values())}
 
     dump = []
     for v in vd.get("items", []):

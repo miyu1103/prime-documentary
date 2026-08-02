@@ -1,0 +1,716 @@
+{
+  "episode_id": "PD-2026-031-unlock",
+  "slug": "unlock",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "YQIhk2dKZHU",
+    "title": "Police Can Force Your Thumb — But Maybe Not Your Mind",
+    "url": "https://www.youtube.com/watch?v=YQIhk2dKZHU",
+    "privacy": "public",
+    "views": 5
+  },
+  "shorts_existing": [
+    "short31"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short31": [
+      "An officer at your window wants your phone open.",
+      "He can take your face.",
+      "He can take your thumb.",
+      "But your mind may be the one lock he can't force.",
+      "Your phone isn't a phone — it's your whole life.",
+      "In 2014, Riley versus California said police generally need a warrant to search it.",
+      "But a warrant is worthless if they can't get in — so the real fight is whether they can force you to open it.",
+      "That jumps to the Fifth Amendment, which shields the contents of your mind.",
+      "A passcode lives in your head, so many courts say it may be protected.",
+      "But your face and thumb are on your body — no thought required — and the law often treats them like a booking fingerprint.",
+      "So in 2024, one federal court let officers press a man's own thumb to unlock.",
+      "A year later, another called almost the same act unconstitutional.",
+      "States split on passcodes too — and the Supreme Court has refused to settle it.",
+      "Your right can change at a state line.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-031-unlock\\03_script\\script.en.v002.md",
+  "candidate_payload_lines": [
+    "There has never been a record of a human being this complete.",
+    "Your phone has sat in rooms no one else was in.",
+    "No human being alive knows you the way that glowing rectangle does — and it never forgets a single thing.",
+    "In 2014, in a case called Riley versus California, the justices ruled — unanimously — that a phone is not like anything else you carry.",
+    "So the real fight was never really about searching.",
+    "None of that is testimony — it reveals nothing you know.",
+    "Which leads somewhere most people never see coming.",
+    "In 2024, a federal appeals court — the Ninth Circuit — looked at a case where officers took a man's phone and simply pressed his own thumb to the sensor to unlock it.",
+    "For years the government has claimed it can search your phone there with no warrant at all — and the courts cannot agree on how far that power goes.",
+    "In 2023, one federal judge became the first to rule that the government does need a warrant to search a phone at the border — a real crack in the wall.",
+    "But that too is unsettled, and it binds almost no one yet.",
+    "It has never decided whether you can be forced to unlock your phone at all.",
+    "But your mind — the passcode you never say out loud — may be the last thing they can't force.",
+    "We never quite decided what happens when someone else holds them up to the lock.",
+    "Until we do — until a court finally says where the line is — the only key they may never be able to take from you is the one you never speak."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short138",
+      "angle": "The phone that is a fortress in your living room becomes an open book at the border, where the government claims it needs no warrant at all.",
+      "type": "A",
+      "avoids": "The existing Short maps the split between face, thumb and passcode inside the country; this cut is the one place where even that fragile protection thins out.",
+      "funnel_question_left_for_longform": "Does the one judge who ruled a warrant is required at the border bind anyone yet?",
+      "era": "present-day United States border crossings",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "Everything the courts are fighting over about your phone gets thinner in one place. The border.",
+          "source_lines": [
+            "And there is one place where even this fragile protection gets thinner still: the border."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "At an airport, or a crossing, the normal rules bend. For years the government has claimed it can search your phone there with no warrant at all.",
+          "source_lines": [
+            "At an airport, or a crossing, the normal rules bend. For years the government has claimed it can search your phone there with no warrant at all"
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "And the courts cannot agree how far that power goes. Some say officers need at least a reason to suspect you. Others say they need nothing.",
+          "source_lines": [
+            "the courts cannot agree on how far that power goes. Some say officers need at least a reason to suspect you. Others say they need nothing."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "In 2023, one federal judge became the first to rule the government does need a warrant to search a phone at the border. A real crack in the wall.",
+          "source_lines": [
+            "In 2023, one federal judge became the first to rule that the government does need a warrant to search a phone at the border — a real crack in the wall."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "That ruling binds almost no one yet. So the same device that is a fortress in your living room can become an open book the moment you land.",
+          "source_lines": [
+            "So the same device that is a fortress in your living room can become an open book the moment you land."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a dark phone lying in an inspection tray",
+          "source": "GENERATE",
+          "prompt": "a smartphone lying face down and dark in a grey plastic security tray on a steel inspection counter with its screen not visible and no lettering anywhere, lit ONLY by one hard overhead inspection lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone in security tray"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R12",
+          "subject": "trays moving along an inspection belt",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "airport security tray conveyor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3288__courthouse_steps.mp4",
+          "bound_title": "a stirring portrayal of justice and patriotism standing tall and resolute in the background is a magnificent gold statue of lady justice embodying the principles of fairness and impartia",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4841,
+          "motion": 10.156,
+          "luma": 84.1
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I04",
+          "subject": "an empty booth and a lowered barrier arm",
+          "source": "GENERATE",
+          "prompt": "an empty inspection booth with dark glass at a night border crossing and a striped barrier arm lowered across the lane beyond, no lettering or signage anywhere, lit ONLY by one sodium lamp which is switched on above the lane, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "border checkpoint barrier night"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a cable pushed into a phone's port",
+          "source": "GENERATE",
+          "prompt": "macro of a grey cable being pushed into the charging port of a phone lying on a steel counter with the screen dark and blank, no face or body above the wrists, lit ONLY by one task lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "cable into phone port macro"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "U09",
+          "subject": "travellers passing as silhouettes",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "airport terminal at night silhouettes",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1044__data_center.mp4",
+          "bound_title": "a computer component in operation",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3909,
+          "motion": 0.978,
+          "luma": 99.3
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U04",
+          "subject": "an arrivals corridor receding to one lit door",
+          "source": "GENERATE",
+          "prompt": "a long empty arrivals corridor receding toward one brightly lit doorway at the far end with all floor markings worn blank and no signage anywhere, lit ONLY by one fixture which is switched on in that doorway, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty arrivals corridor"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "I03",
+          "subject": "empty queue barriers under one lamp",
+          "source": "GENERATE",
+          "prompt": "a run of steel queue posts with retractable tapes standing empty in a dark hall, no signage anywhere, lit ONLY by one lamp which is switched on above the head of the line, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "queue barriers empty hall"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U04",
+          "subject": "an empty escalator running in a dark hall",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "escalator moving empty terminal",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2827__stormy_sky_time_lapse.mp4",
+          "bound_title": "time lapse of moving clouds",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3934,
+          "motion": 12.318,
+          "luma": 71.5
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "R03",
+          "subject": "a secondary inspection room, nobody in it",
+          "source": "GENERATE",
+          "prompt": "a grey steel secondary inspection room with a bare table, two chairs and one closed door, nobody present and no signage anywhere, lit ONLY by one ceiling fixture which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "bare inspection room table"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "R12",
+          "subject": "an opened case with a dark phone on top",
+          "source": "GENERATE",
+          "prompt": "an open suitcase on a steel counter with the clothing folded back and a dark phone resting on top of it, screen blank, no face or body in frame, lit ONLY by one overhead inspection lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open suitcase on counter"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "R12",
+          "subject": "luggage riding a conveyor",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "luggage on conveyor belt",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0593__law_library_books.mp4",
+          "bound_title": "a person walking through a library with books",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3914,
+          "motion": 15.124,
+          "luma": 100.6
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "R05",
+          "subject": "courthouse columns against a dark sky",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courthouse columns exterior",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31121__bank_building_columns.mp4",
+          "bound_title": "bank exterior with logo",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4462,
+          "motion": 10.338,
+          "luma": 114.3
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U02",
+          "subject": "two doors, one open and one shut",
+          "source": "GENERATE",
+          "prompt": "two identical steel doors side by side in a dim wall, one standing open onto hard light and the other closed flat, nobody in frame, lit ONLY by one fixture which is switched on beyond the open door, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "two doors one open"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U08",
+          "subject": "fluorescent tubes flickering over a bare ceiling",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "fluorescent lights flickering ceiling",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0063__light_leak_overlay.mp4",
+          "bound_title": "flashing yellow lights",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3906,
+          "motion": 85.706,
+          "luma": 75.6
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U15",
+          "subject": "a border drawn as one glowing seam",
+          "source": "GENERATE",
+          "prompt": "a dark relief map of the United States with the borders and coastlines drawn as thin glowing seams and absolutely no place names anywhere, a band of harder light lying along the outer edge, lit ONLY by one small lamp which is switched on behind the panel, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "map glowing border line"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "I02",
+          "subject": "a corridor of identical closed doors",
+          "source": "GENERATE",
+          "prompt": "a long government corridor of identical closed doors with every nameplate blank, nobody in it, lit ONLY by a row of ceiling fixtures which are switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "government corridor closed doors"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R08",
+          "subject": "the high bench from the floor, empty",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, no inscriptions anywhere, lit ONLY by one brass bench lamp which is switched on at the end of the bench, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty judges bench low angle"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U03",
+          "subject": "a pen pressed to a blank order",
+          "source": "GENERATE",
+          "prompt": "macro of one hand pressing a pen to a completely blank unreadable order on a dark desk, no face or body above the wrist, lit ONLY by one green shaded desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand signing document desk"
+        },
+        {
+          "n": 19,
+          "role": "body",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a hairline crack running up a concrete wall",
+          "source": "GENERATE",
+          "prompt": "a single hairline crack running up a smooth grey concrete wall with hard raking light across it and no lettering anywhere, lit ONLY by one work lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "crack in concrete wall"
+        },
+        {
+          "n": 20,
+          "role": "body",
+          "line": "L4",
+          "motif": "U16",
+          "subject": "a crack spreading across glass",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "cracked glass macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4738__suburban_house_exterior_night.mp4",
+          "bound_title": "a person standing behind a glass wall",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4258,
+          "motion": 2.492,
+          "luma": 37.7
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U12",
+          "subject": "a barrier arm lifting on a dark lane",
+          "source": "GENERATE",
+          "prompt": "a striped barrier arm lifting at a border lane seen from behind at night with the empty road beyond running into darkness, no signage anywhere, lit ONLY by one sodium lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "barrier arm lifting night"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "I06",
+          "subject": "one blank sheet on an empty hall floor",
+          "source": "GENERATE",
+          "prompt": "one completely blank sheet of paper lying alone on the scuffed floor of an empty inspection hall, lit ONLY by a hard shaft of light falling across it from one fixture which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, present-day United States border crossings, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "paper on floor light shaft"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: a dark phone lying in an inspection tray",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 ends on the phone flipping from fortress to open book at the border, which is exactly the thinning L1 announces from the top."
+    },
+    {
+      "short_id": "short139",
+      "angle": "The 2024 ruling that let officers press a man's thumb came with a hint that the answer flips if he had been made to choose which finger.",
+      "type": "C",
+      "avoids": "The existing Short reports that one court allowed the thumb and another later called almost the same act unconstitutional; this cut is the reasoning inside the first ruling and how thin the line it draws is.",
+      "funnel_question_left_for_longform": "If a flicker of choice is what the Fifth Amendment protects, where does that leave the face scan you set up for convenience?",
+      "era": "2024, the Ninth Circuit",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "A federal court let officers press a man's own thumb to his phone. Then it added a line that undoes almost everything.",
+          "source_lines": [
+            "In 2024, a federal appeals court — the Ninth Circuit — looked at a case where officers took a man's phone and simply pressed his own thumb to the sensor to unlock it."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "In 2024 the Ninth Circuit said pressing a thumb takes no thought at all. His body opened the door against him, and the Constitution had nothing to say about it.",
+          "source_lines": [
+            "The court said that did not violate the Fifth Amendment. Pressing a thumb, they reasoned, takes no thought at all. His body opened the door against him — and the Constitution had nothing to say about it."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "But the court hinted the answer might have been different if the officers had made the man choose which finger to use.",
+          "source_lines": [
+            "The court hinted the answer might have been different if the officers had made the man choose which finger to use"
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "Because choosing is a decision, and a decision happens in your mind. Same thumb. No protection if they press it. Maybe protected if you decide.",
+          "source_lines": [
+            "because choosing is a decision, and a decision happens in your mind",
+            "A thumb they press to the sensor: no protection. The very same thumb, if you are the one who decides to use it: maybe protected."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "So what protects you is not the lock on the phone. It is whether the choice to open it was ever yours.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a thumb pressed down onto a phone sensor",
+          "source": "GENERATE",
+          "prompt": "extreme macro of one thumb being pressed down onto the small dark fingerprint sensor of a phone by a second gloved hand, the screen not visible and completely dark, no face or body above the wrists, lit ONLY by one hard task lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "thumb on fingerprint sensor"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a fingertip on a scanner in macro",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "thumb fingerprint scanner macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-3247__match_strike_flame.mp4",
+          "bound_title": "a macro shot of a matchstick burning",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5693,
+          "motion": 19.909,
+          "luma": 102.7
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R02",
+          "subject": "handcuffs closing on a pair of wrists",
+          "source": "GENERATE",
+          "prompt": "macro of steel handcuffs closing on a pair of wrists with no face or body above the forearms, lit ONLY by one hard raking light which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "handcuffed wrists macro"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R05",
+          "subject": "courthouse columns from below",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courthouse columns low angle",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0500__glowing_light_particles.mp4",
+          "bound_title": "glowing purple particle cluster animation",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.7049,
+          "motion": 10.392,
+          "luma": 64.6
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "U10",
+          "subject": "two hands laid flat and still on a table",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "two hands flat on table",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0751__american_flag_waving.mp4",
+          "bound_title": "american flag on flagpole waving in wind",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6549,
+          "motion": 18.508,
+          "luma": 174.7
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "R11",
+          "subject": "a dark phone between two pairs of gloved hands",
+          "source": "GENERATE",
+          "prompt": "a phone lying dark and face up on a steel table with its screen completely blank and a pair of gloved hands resting on the metal beside it, no face or body above the wrists, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "gloved hands phone table"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "R02",
+          "subject": "wrists in cuffs, close",
+          "source": "GENERATE",
+          "prompt": "wrists in cuffs, close, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "R10",
+          "subject": "a front door swinging inward on hard light",
+          "source": "GENERATE",
+          "prompt": "a heavy front door swinging inward from a dark hallway with a blade of hard light widening across the floorboards, nobody in frame, lit ONLY by that light beyond which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door swinging open light"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "I04",
+          "subject": "a lock cylinder turning, pins lifting",
+          "source": "GENERATE",
+          "prompt": "macro cutaway of a brass lock cylinder turning with its pins lifting one by one, no lettering anywhere, lit ONLY by one hard task lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "lock cylinder pins macro"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I04",
+          "subject": "a lock mechanism working in macro",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "door lock mechanism macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9718__clock_ticking_macro.mp4",
+          "bound_title": "ticking clock",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4644,
+          "motion": 2.037,
+          "luma": 151.8
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "R03",
+          "subject": "a dark phone alone on an interrogation table",
+          "source": "GENERATE",
+          "prompt": "a bare metal interrogation table with one dark phone lying at its centre and two empty chairs, tall bare walls beyond, lit ONLY by one conical lamp which is switched on low above the table, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "interrogation table hanging lamp"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U10",
+          "subject": "an open hand with five fingers spread",
+          "source": "GENERATE",
+          "prompt": "one hand held open above a dark table with all five fingers spread and a single fingertip catching a hard edge of light, no face or body above the wrist, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open hand fingers spread"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U10",
+          "subject": "fingers moving in slow macro",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "fingers moving slow motion macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0493__glowing_light_particles.mp4",
+          "bound_title": "vibrant pink particle burst in motion",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4389,
+          "motion": 30.233,
+          "luma": 108.7
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "I04",
+          "subject": "five blank keys on dark felt, one lifted",
+          "source": "GENERATE",
+          "prompt": "a row of five identical unmarked keys laid out on dark felt with one key lifted slightly clear of the row, no lettering anywhere, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "keys on dark felt"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a pen hovering above a blank page",
+          "source": "GENERATE",
+          "prompt": "macro of one hand holding a pen suspended just above a completely blank page and not yet touching it, no face or body above the wrist, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "pen hovering over paper"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "R08",
+          "subject": "the high bench from the floor, empty",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, no inscriptions anywhere, lit ONLY by one brass bench lamp which is switched on at the end of the bench, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty judges bench low angle"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "U09",
+          "subject": "one lit window high in a black building",
+          "source": "GENERATE",
+          "prompt": "one single lit window high in the face of a dark building at night with every other window black, no lettering anywhere, lit ONLY by that room's own lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "single lit window building night"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "R11",
+          "subject": "a finger hovering over a keypad of blank keys",
+          "source": "GENERATE",
+          "prompt": "a steel door keypad of completely blank unmarked keys with no numerals anywhere and one finger hovering above it without touching, no face or body above the wrist, lit ONLY by one corridor lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "keypad blank keys macro"
+        },
+        {
+          "n": 19,
+          "role": "body",
+          "line": "L4",
+          "motif": "R11",
+          "subject": "keypad buttons in close up",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "keypad buttons close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1202__circuit_board_macro.mp4",
+          "bound_title": "close up shot of printed circuit board",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4413,
+          "motion": 10.776,
+          "luma": 97.6
+        },
+        {
+          "n": 20,
+          "role": "body",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "a microphone hanging still in a dark room",
+          "source": "GENERATE",
+          "prompt": "a single microphone hanging still on its cable in a large dark empty room with dust drifting past it and nobody present, lit ONLY by one fixture which is switched on above it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "microphone hanging dark room"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R12",
+          "subject": "a property tray holding a dark phone",
+          "source": "GENERATE",
+          "prompt": "a steel booking tray holding a belt, laces, a few coins and one dark phone with its screen blank, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "property tray with phone"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "I06",
+          "subject": "a light switch caught mid flick",
+          "source": "GENERATE",
+          "prompt": "macro of a single light switch on a bare wall caught mid flick with motion blur on the rocker and hard raking light across the plate, no lettering anywhere, lit ONLY by one work lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024, the Ninth Circuit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "light switch macro wall"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: a thumb pressed down onto a phone sensor",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 lands on choice as the thing that decides it, so L1's 'a line that undoes almost everything' is heard again already knowing what that line was."
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

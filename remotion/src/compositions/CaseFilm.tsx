@@ -48,6 +48,8 @@ export type Cut = {
   kind: 'img' | 'footage';
   src: string;
   treatment: string;
+  /** per-still exposure multiplier measured at build time (1 = leave the image alone) */
+  lift?: number;
   seed: string;
   overlay?: string | null;
   blendHint?: 'add' | 'screen' | 'overlay' | null;
@@ -57,6 +59,8 @@ export type Cut = {
   // index-derived in-point (which could seek past a short clip's end). Optional; when absent the
   // Footage component keeps its original index-based startFrom (unchanged for every other episode).
   startFrom?: number | null;
+  /** measured length of the source clip, written by the builder so the in-point can be clamped */
+  srcSeconds?: number | null;
 };
 export type Caption = {start: number; end: number; text: string};
 export type HookCut = {start: number; dur: number; kind: string; src: string; seed: string};
@@ -92,8 +96,16 @@ const Cover: React.FC<{src: string; style?: React.CSSProperties}> = ({src, style
 /** Footage: graded + navy-tinted + vignetted so bright/washed clips (fog, snow, white tech)
  * unify into the dark navy palette; a slow push (camera move on real footage — not a still zoom)
  * gives a motion floor so even near-locked clips never read as frozen. */
-const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: number}> = ({src, startFrom, dir, dur}) => {
+const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: number; srcSeconds?: number | null}> = ({src, startFrom, dir, dur, srcSeconds}) => {
   const f = useCurrentFrame();
+  const {fps: _fps} = useVideoConfig();
+  // CLAMP THE IN-POINT. startFrom is derived from the cut index, which knows nothing about how
+  // long the clip actually is: on EP55, 26 of 259 footage cuts started so late that the clip ran
+  // out mid-cut and the frame went BLACK (measured 1.43s of black at 911s, luma 5). Never seek
+  // past (source length - cut length).
+  const _maxStart = srcSeconds ? Math.max(0, Math.round((srcSeconds - dur / _fps) * _fps)) : null;
+  // a clip shorter than the cut loops instead of running out (build marks it loopSource)
+  const _from = _maxStart == null || _maxStart <= 0 ? 0 : Math.min(startFrom, _maxStart);
   // progress over THIS cut's length (not the whole composition) so the Ken Burns
   // actually travels — normalizing against useVideoConfig().durationInFrames (the full
   // 20k-frame film) made p≈0 => footage read as near-still after the entrance settled.
@@ -101,12 +113,16 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: numbe
   const s = interpolate(p, [0, 1], [1.05, 1.24]);
   const x = interpolate(p, [0, 1], [-42 * dir, 42 * dir]);
   const y = interpolate(p, [0, 1], [10 * dir, -10 * dir]);
-  return (
-    <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
+  // A clip shorter than the cut must REPEAT, not run out: OffthreadVideo has no loop prop, so
+  // the shot is wrapped in <Loop> at the clip's own length. Without this the video ends mid-cut
+  // and the frame goes black (EP55/EP57 both failed the gate on exactly that).
+  const _srcFrames = srcSeconds ? Math.max(1, Math.floor(srcSeconds * _fps) - 1) : null;
+  const _needsLoop = _srcFrames != null && _srcFrames < dur;
+  const _video = (
       <OffthreadVideo
         src={staticFile(src)}
         muted
-        startFrom={startFrom}
+        startFrom={_from}
         style={{
           width: '100%',
           height: '100%',
@@ -115,6 +131,10 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: numbe
           filter: 'brightness(1.13) contrast(1.03) saturate(0.8)',
         }}
       />
+  );
+  return (
+    <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
+      {_needsLoop && _srcFrames ? <Loop durationInFrames={_srcFrames}>{_video}</Loop> : _video}
       <AbsoluteFill style={{pointerEvents: 'none', backgroundColor: navy, opacity: 0.14, mixBlendMode: 'multiply'}} />
       <AbsoluteFill
         style={{pointerEvents: 'none', background: `radial-gradient(135% 108% at 50% 44%, transparent 60%, ${ink}55 100%)`}}
@@ -372,7 +392,18 @@ const Still: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
         return <BleedStill src={cut.src} seed={cut.seed} dir={dir} dur={dur} />;
     }
   })();
-  return treatment;
+  // PER-STILL EXPOSURE LIFT. EP51 measured 93.4% of its stills below the readable luma floor
+  // (median 45) and 29% of hero image cuts too dark to read -- the recurring 「画像が暗くて
+  // 見えにくい」. A global screen wash was tried on EP49 and killed contrast, so the lift is
+  // computed PER IMAGE at build time (cut.lift, 1.0 = leave alone) and applied only to stills:
+  // a dark photo is opened up, an already-bright one is untouched.
+  const lift = typeof cut.lift === 'number' ? cut.lift : 1;
+  if (lift <= 1.001) return treatment;
+  return (
+    <AbsoluteFill style={{filter: `brightness(${lift.toFixed(3)}) contrast(${(1 + (lift - 1) * 0.25).toFixed(3)})`}}>
+      {treatment}
+    </AbsoluteFill>
+  );
 };
 
 /** Designed, motion-blurred cut transition. Every cut ENTERS with one of three
@@ -388,6 +419,7 @@ const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
       <Footage
         src={cut.src}
         startFrom={cut.startFrom != null ? Math.round(cut.startFrom * fps) : (index * 47) % 160}
+        srcSeconds={cut.srcSeconds ?? null}
         dir={index % 2 === 0 ? 1 : -1}
         dur={dur}
       />
@@ -516,6 +548,9 @@ const Captions: React.FC<{cues: Caption[]}> = ({cues}) => {
           fontSize: 44,
           fontWeight: 600,
           lineHeight: 1.25,
+          // cues carry their own grammatical line breaks (build_*_film.py splits on phrase
+          // boundaries); honour them instead of letting the box wrap mid-phrase
+          whiteSpace: 'pre-line',
           transform: `translateY(${y}px)`,
           opacity: op,
           textShadow: '0 2px 10px rgba(0,0,0,0.85), 0 0 4px rgba(0,0,0,0.7)',

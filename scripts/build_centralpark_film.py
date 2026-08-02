@@ -61,16 +61,22 @@ ENDCARD_SEC = 9.0
 # MOTION-FIRST REBUILD (owner 2026-07-26: "紙芝居/反復/無音チカチカ"). (footage, motion, still):
 # footage+motion are REAL video (stock + i2v); still is drastically reduced. LONGER cuts (~5s)
 # => far fewer total cuts (~720 vs 1160) => less reuse. HOOK/OP tiny + calm => cold-open, NO flicker.
+# ★2026-07-30 REBALANCE (acceptance FAIL on the 599-cut build): mean cut was 6.1s, which is
+# what animation_mix measured as "172 hero stills linger > 5s" and what the owner calls 紙芝居
+# (the standing rule is 2-3s cuts). With the F-loops back in the factory pool the material
+# exists to cut properly: factory 519 (cap 1) + motion 414 (207 x cap 2) + stills 380 of 430
+# (cap 1) = 1,313 cuts = 2.79s mean, first-use share 82% (was 69%), and every staged clip is
+# referenced at least once (footage_utilization was 17%).
 SECTION_TARGETS = {
     "HOOK":  (2, 1, 1),
     "OP":    (1, 1, 0),
-    "ACT_1": (28, 24, 21),
-    "ACT_2": (46, 39, 34),
-    "ACT_3": (35, 29, 26),
-    "ACT_4": (32, 27, 24),
-    "ACT_5": (31, 26, 24),
-    "ACT_6": (40, 33, 30),
-    "ACT_7": (17, 14, 13),
+    "ACT_1": (63, 51, 46),
+    "ACT_2": (102, 83, 75),
+    "ACT_3": (79, 62, 57),
+    "ACT_4": (72, 58, 53),
+    "ACT_5": (70, 56, 53),
+    "ACT_6": (90, 70, 66),
+    "ACT_7": (38, 30, 29),
 }
 SECTION_ORDER = ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ACT_5", "ACT_6", "ACT_7"]
 
@@ -96,29 +102,70 @@ def srt_ts(t: float) -> str:
 
 
 # 2-LINE CAPTION FIX (owner 2026-07-25 "字幕の4行はさすがに醜い。2行ぐらい"). At fontSize 44 /
-# maxWidth 78% the body font fits ~42 chars/line, so a caption stays <=2 lines at <=~84 chars.
-# Longer chunks are split into consecutive sub-cues at word boundaries, time apportioned by
-# character length, so no caption ever wraps past 2 lines.
-CAPTION_MAX_CHARS = 84
+# maxWidth 78% the body font fits ~50 chars/line, so a caption stays <=2 lines at <=~100 chars.
+#
+# ★2026-07-30: the old splitter packed words to a pure character budget, which is exactly the
+# recurring "字幕が変なところで途切れる" complaint -- acceptance measured 185 mid-phrase splits,
+# 54 orphan cues and 613 over-long lines on the 599-cut build. Line breaking now goes through
+# the CANON splitter (gen_captions_forced.split_lines_clause: never ends a line on a dangling
+# function word, prefers a break after punctuation or before a phrase start) instead of a
+# second local implementation (invariant 14). Cues carry a real "\n" so the burned-in caption
+# breaks where the SRT breaks.
+CAPTION_MAX_LINES = 2          # lines per cue
+CAPTION_LEAD_SECONDS = 0.20    # cues lead the voice slightly; acceptance had 19% late cues
+CAPTION_MIN_TAIL_CHARS = 16    # shorter trailing fragment is merged back (orphan cues)
+
+sys.path.insert(0, str(ROOT / "scripts"))
+import gen_captions_forced as _gcf           # noqa: E402  (canon line splitter)
+
+_gcf.SEG_MAX_WORDS, _gcf.SEG_MAX_CHARS = 9, 50   # gate: <=2 lines, <=50 chars/line
 
 
-def _split_caption_text(text: str, limit: int = CAPTION_MAX_CHARS) -> list[str]:
-    if len(text) <= limit:
-        return [text]
-    words = text.split()
-    segs, cur = [], ""
-    for w in words:
-        if cur and len(cur) + 1 + len(w) > limit:
-            segs.append(cur); cur = w
-        else:
-            cur = f"{cur} {w}".strip()
-    if cur:
-        segs.append(cur)
-    return segs
+def _lines_at(text: str, cap: int) -> list[str]:
+    saved = _gcf.SEG_MAX_CHARS
+    _gcf.SEG_MAX_CHARS = cap
+    try:
+        return [ln for ln, _i0, _i1 in _gcf.split_lines_clause(text.split()) if ln.strip()]
+    finally:
+        _gcf.SEG_MAX_CHARS = saved
+
+
+def _clean_lines(text: str) -> list[str]:
+    """Grammatically clean, LENGTH-BALANCED caption lines for one narration chunk.
+
+    Splitting at the hard 50-char cap leaves a short tail ("described." / "from."), which
+    becomes an orphan cue -- the exact thing check_caption_breaks fails on. So the cap is
+    first relaxed to the balanced width for the number of lines the text actually needs,
+    and a still-short tail is merged back when it fits.
+    """
+    hard = _gcf.SEG_MAX_CHARS
+    n = max(1, -(-len(text) // hard))                     # lines needed at the hard cap
+    cap = min(hard, max(28, -(-len(text) // n) + 6))      # balanced width for n lines
+    lines = _lines_at(text, cap)
+    if len(lines) > n:                                    # balancing overshot; fall back
+        lines = _lines_at(text, hard)
+    if len(lines) > 1 and len(lines[-1]) < CAPTION_MIN_TAIL_CHARS:
+        merged = f"{lines[-2]} {lines[-1]}"
+        if len(merged) <= hard:
+            lines[-2:] = [merged]
+    return lines or [text]
+
+
+def _split_caption_text(text: str) -> list[str]:
+    """-> cue texts, each at most CAPTION_MAX_LINES physical lines joined by '\\n'."""
+    lines = _clean_lines(text)
+    cues = ["\n".join(lines[i:i + CAPTION_MAX_LINES])
+            for i in range(0, len(lines), CAPTION_MAX_LINES)]
+    # a 1-line last cue that is short reads as an orphan; fold it into the previous cue
+    # when the previous cue is a single line and the pair still fits two lines.
+    if len(cues) > 1 and "\n" not in cues[-1] and len(cues[-1]) < CAPTION_MIN_TAIL_CHARS * 2:
+        if "\n" not in cues[-2]:
+            cues[-2:] = ["\n".join(cues[-2:])]
+    return cues
 
 
 def build_captions(narr: dict) -> tuple[list[dict], float]:
-    cues = []
+    cues: list[dict] = []
     for c in narr["chunks"]:
         text = str(c.get("text") or c.get("spoken_text") or "").strip()
         if not text:
@@ -126,7 +173,7 @@ def build_captions(narr: dict) -> tuple[list[dict], float]:
         start, end = round(float(c["start"]), 3), round(float(c["end"]), 3)
         segs = _split_caption_text(text)
         if len(segs) == 1:
-            cues.append({"start": start, "end": end, "text": text})
+            cues.append({"start": start, "end": end, "text": segs[0]})
             continue
         # apportion the chunk's time across sub-cues by character length
         total_chars = sum(len(s) for s in segs)
@@ -136,6 +183,11 @@ def build_captions(narr: dict) -> tuple[list[dict], float]:
             seg_end = end if i == len(segs) - 1 else round(t + (end - start) * frac, 3)
             cues.append({"start": round(t, 3), "end": seg_end, "text": s})
             t = seg_end
+    # lead the voice slightly, never crossing into the previous cue (caption_sync: late cues)
+    prev_end = 0.0
+    for cue in cues:
+        cue["start"] = round(max(prev_end, min(cue["start"], cue["start"] - CAPTION_LEAD_SECONDS)), 3)
+        prev_end = cue["end"]
     return cues, max(c["end"] for c in cues)
 
 

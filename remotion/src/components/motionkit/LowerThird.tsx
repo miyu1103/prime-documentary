@@ -107,27 +107,35 @@ export const LowerThird: React.FC<{
   const total = dur ?? durationInFrames;
   const barColor = accent ?? BRAND.color.gold;
 
-  // 入場：左から素早くスライドイン（イージング＝spring、等速禁止）
+  // 入場：左から素早くスライドイン（イージング＝spring、等速禁止）。
+  // 移動量は SHORT（-200px）に抑える：以前は -960px から入っていたため、入場の
+  // 0.3-0.5秒ものあいだ本文が画面左端で見切れていた（owner 2026-07-06「左端で文字が
+  // 見切れる」）。パネルのクリップ開き＋単語マスクの切り上がりで入場感は十分あるので、
+  // 大きな横スライドは不要。短い距離なら本文が常に画面内に収まり見切れない。
   const enter = spring({
     frame,
     fps,
     config: {damping: 20, mass: 1.05, stiffness: 140},
   });
-  const enterX = interpolate(enter, [0, 1], [-960, 0]);
+  // NO horizontal slide any more: even a -200px slide-in still pushed the left-aligned text past
+  // the frame's left edge during entrance, so the first characters were clipped ("OT A BLANK CHECK"
+  // instead of "NOT..."). The entrance is now purely the panel wipe-open (clipPath) + the per-word
+  // mask rise + a small VERTICAL rise below — none of which ever move the text left of its resting
+  // margin, so nothing is ever clipped at the left edge. (owner 2026-07-06/07)
+  const enterY = interpolate(enter, [0, 1], [40, 0]);
 
-  // 退場：終端で左へスライドアウト（spring）
-  const exitStart = total - sec(fps, 0.7);
+  // 退場：終端で下へ微ドリフト＋フェード（横に飛ばさない＝切れ目で半分見切れない）。
+  // opacity単独を避けるため translateY と併用。
+  const exitStart = total - sec(fps, 0.55);
   const exit = spring({
     frame: frame - exitStart,
     fps,
     config: {damping: 200, mass: 1},
   });
-  const exitX = interpolate(exit, [0, 1], [0, -1020], {
-    extrapolateLeft: 'clamp',
-    extrapolateRight: 'clamp',
-  });
+  const exitY = interpolate(exit, [0, 1], [0, 46], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const exitO = interpolate(exit, [0, 1], [1, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
 
-  const slideX = enterX + exitX;
+  const slideX = 0;
 
   // アイドル：静止させない微ドリフト（sinイージング相当の連続運動）
   const idleY = interpolate(
@@ -170,8 +178,7 @@ export const LowerThird: React.FC<{
   return (
     <AbsoluteFill
       style={{
-        justifyContent: 'flex-end',
-        alignItems: 'flex-start',
+        pointerEvents: 'none',
         // オーバーレイ：全面バックドロップなし（透明）
         backgroundColor: 'transparent',
       }}
@@ -179,8 +186,11 @@ export const LowerThird: React.FC<{
       <Trail layers={6} lagInFrames={1.1} trailOpacity={0.5}>
         <div
           style={{
-            transform: `translate(${slideX}px, ${idleY}px)`,
-            margin: '0 0 96px 92px',
+            position: 'absolute',
+            left: 92,
+            top: 92,
+            transform: `translate(${slideX}px, ${idleY + exitY + enterY}px)`,
+            opacity: exitO * interpolate(enter, [0, 0.35], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
             display: 'flex',
             alignItems: 'stretch',
           }}

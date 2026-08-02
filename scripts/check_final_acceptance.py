@@ -959,21 +959,33 @@ def check_freshness(epdir: Path, render: Path, cur_sha: str | None,
     except Exception as exc:  # noqa: BLE001
         return {"check": "render_freshness", "ok": False, "hard": True,
                 "reason": f"could not stat render for freshness ({exc}); treat as FAIL"}
-    problems = []
+    problems: list[str] = []
+    notes: list[str] = []
     if render_started_at is not None:
         if mtime < render_started_at:
             problems.append(f"mp4 mtime {mtime:.0f} predates render start {render_started_at:.0f} "
                             f"(stale file, not this render)")
     if prev_sha and cur_sha and cur_sha == prev_sha:
-        problems.append(f"sha256 identical to prior receipt {prev_name} "
-                        f"(byte-identical to an already-graded render -> not fresh; re-render or "
-                        f"pass --render-started-at for a legitimate re-grade)")
+        # The failure text has always told the operator to "pass --render-started-at for a
+        # legitimate re-grade", but the identical-sha branch fired regardless, so that escape
+        # hatch did not exist (found on EP50 2026-07-30: the render was unchanged and correct;
+        # what changed was a MISSING probe receipt, and re-grading was the only way to clear it).
+        # The intent of this gate is "do not grade a stale file", which the mtime check above
+        # already enforces -- so an explicit, satisfied render_started_at makes an identical sha
+        # a NOTE, not a failure. Without the flag the strict behaviour is unchanged.
+        if render_started_at is None:
+            problems.append(f"sha256 identical to prior receipt {prev_name} "
+                            f"(byte-identical to an already-graded render -> not fresh; re-render "
+                            f"or pass --render-started-at for a legitimate re-grade)")
+        else:
+            notes.append(f"same bytes as {prev_name}; re-grade authorised by --render-started-at")
     ok = not problems
     if ok:
         bits = []
         if render_started_at is not None:
             bits.append(f"mtime {mtime:.0f} >= start {render_started_at:.0f}")
         bits.append(f"sha {'differs from ' + prev_name if prev_sha else '(no prior receipt to compare)'}")
+        bits += notes
         reason = "fresh render: " + "; ".join(bits)
     else:
         reason = "; ".join(problems)

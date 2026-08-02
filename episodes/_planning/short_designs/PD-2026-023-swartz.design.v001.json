@@ -1,0 +1,666 @@
+{
+  "episode_id": "PD-2026-023-swartz",
+  "slug": "swartz",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "FTm1icKgycU",
+    "title": "The website he took from never wanted him charged",
+    "url": "https://www.youtube.com/watch?v=FTm1icKgycU",
+    "privacy": "public",
+    "views": 23
+  },
+  "shorts_existing": [
+    "short23"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short23": [
+      "The website he took from didn't even want him charged.",
+      "Aaron Swartz was a programming prodigy.",
+      "As a teenager he co-authored the RSS specification and helped build Creative Commons, believing knowledge paid for by the public should belong to the public.",
+      "Over MIT's open network, he downloaded about four point eight million scholarly articles — most of the JSTOR archive.",
+      "JSTOR settled and said it did not want him prosecuted.",
+      "MIT stayed neutral.",
+      "Prosecutors charged him anyway — four counts, then thirteen.",
+      "On paper the charges stacked to a theoretical maximum of thirty-five years; but prosecutors signaled a plea of about six months, and legal scholars said that headline wildly overstated what he really faced.",
+      "Aaron Swartz died by suicide on January 11, 2013, at age 26.",
+      "His family said the prosecution's overreach contributed to his death.",
+      "If you're struggling, you can call or text 988, the Suicide and Crisis Lifeline.",
+      "Watch the full story on the channel."
+    ]
+  },
+  "script": "episodes\\PD-2026-023-swartz\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "There is a real chance you have never heard it.",
+    "Aaron Swartz was born in 1986, just outside Chicago, into a world that was only beginning to come online.",
+    "He arrived there through that merger rather than starting the site himself, so the title is genuinely disputed, and honestly, he never seemed to care about it one way or the other.",
+    "Because money, for Aaron, was never really the point.",
+    "In 2008, he wrote that belief down, in a short and fierce little document he called the Guerilla Open Access Manifesto.",
+    "Around 2010, though, his attention started to turn toward something much bigger than any single tool.",
+    "The actual rules that govern every one of us, written in a dense language that most ordinary people are never taught to read.",
+    "At first, almost nobody outside Washington was paying any attention at all.",
+    "On January the 18th, 2012, the internet itself went dark in protest.",
+    "It remains, to this day, one of the largest coordinated online protests in human history, and Aaron Swartz was one of its central organizers.",
+    "In the autumn of 2010, he carried a laptop onto the campus of MIT, the Massachusetts Institute of Technology, one of the most famous universities on earth.",
+    "And to this very day, after everything that followed, no one has ever actually proven what he meant to do with all of it.",
+    "He never told anyone, and now he never will.",
+    "A brilliant young man, alone in a wiring closet, quietly and patiently copying most of a library that he believed should never have been locked in the first place.",
+    "In January 2011, Aaron was identified, tracked, and arrested.",
+    "The downloading stopped completely and was never resumed.",
+    "In July 2011, federal prosecutors charged Aaron Swartz with four felonies, under two separate laws.",
+    "Then, a full year later, in September 2012, the prosecutors did something that turned the heat up very sharply indeed."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short108",
+      "angle": "On 18 January 2012 the internet went dark. He was one of the people who made it happen.",
+      "type": "B — the thing he actually won",
+      "avoids": "short23 is about the JSTOR download and the prosecution. SOPA is not in it at all.",
+      "funnel_question_left_for_longform": "He beat a bill the whole industry expected to pass. How?",
+      "era": "2010-2012, Washington / the web",
+      "sensitivity": "Aaron Swartz died by suicide. This cut is about the SOPA protest and does not depict or discuss his death; the description still carries the 988 line.",
+      "loop": true,
+      "loop_join": "L5 ends on the question of what it takes to darken the internet, and L1 answers with the day it happened, the eighteenth of January, 2012.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "On the eighteenth of January, 2012, the internet itself went dark in protest.",
+          "source_lines": [
+            "On January the 18th, 2012, the internet itself went dark in protest."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "It remains, to this day, one of the largest coordinated online protests in human history.",
+          "source_lines": [
+            "It remains, to this day, one of the largest coordinated online protests in human history, and Aaron Swartz was one of its centra"
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "Aaron Swartz was one of its central figures. At first, almost nobody outside Washington was paying any attention at all.",
+          "source_lines": [
+            "At first, almost nobody outside Washington was paying any attention at all."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "What he was fighting for was the actual rules that govern every one of us, written in a language most people are never taught to read.",
+          "source_lines": [
+            "The actual rules that govern every one of us, written in a dense language that most ordinary people are never taught to read."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "There is a real chance you have never heard his name. So what does it take to make the whole internet go dark?",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M03",
+          "subject": "a bank of monitors all gone completely black",
+          "source": "GENERATE",
+          "prompt": "a bank of computer monitors ranged across a dark desk with every screen gone completely black and blank, cables trailing behind them, lit ONLY by one desk lamp which is switched on beside them, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "monitors dark office desks"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I08",
+          "subject": "an office tower at night with every window unlit but one",
+          "source": "GENERATE",
+          "prompt": "a tall office tower at night seen from street level with every window unlit except a single one high up, no lettering anywhere on the building, lit ONLY by that one lit window which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "office tower night windows"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "a heavy door swinging shut on a narrowing blade of light",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "door closing dark",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4817__front_door_house.mp4",
+          "bound_title": "a person sticking a key in a doorknob",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4084,
+          "motion": 4.758,
+          "luma": 180.9
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a phone lying face down on a dark table",
+          "source": "GENERATE",
+          "prompt": "a phone lying face down on a dark table, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "a server rack with one row of status lights burning",
+          "source": "GENERATE",
+          "prompt": "a server rack in a dark data hall with a single row of status lights burning and cables dressed in disciplined bundles, no labels legible anywhere, lit ONLY by those status lights which are switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "server rack data center"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "an aisle between server cabinets receding into darkness",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "server room racks aisle",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8915__moving_boxes_empty_room.mp4",
+          "bound_title": "a room with many boxes stacked on top of each other",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3882,
+          "motion": 18.646,
+          "luma": 52.9
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "a fibre patch panel, hundreds of cables, labels blank",
+          "source": "GENERATE",
+          "prompt": "a fibre patch panel filling frame with hundreds of cables looping away from it, every port label worn completely blank, lit ONLY by one rack lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "network cables patch panel"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U15",
+          "subject": "the United States with borders as glowing seams",
+          "source": "GENERATE",
+          "prompt": "a dark relief map of the United States showing state borders as thin glowing seams and absolutely no place names or lettering, lit ONLY by that internal glow which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "united states map dark"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "R11",
+          "subject": "a dark room lit by an open laptop seen from behind, hands on the keys",
+          "source": "GENERATE",
+          "prompt": "a dark room with an open laptop seen from behind so its screen is not visible, only its glow washing the desk, two hands resting on the keys with no face or body above the wrists, lit ONLY by that screen glow which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "laptop glow dark hands"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I07",
+          "subject": "an empty tiered committee chamber, nameplates blank",
+          "source": "GENERATE",
+          "prompt": "an empty tiered committee chamber with rows of vacant seats and a long curved bench, all nameplates completely blank, lit ONLY by one bank of overhead lights which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty committee chamber"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U04",
+          "subject": "a corridor receding toward one lit doorway",
+          "source": "GENERATE",
+          "prompt": "a corridor receding toward one lit doorway, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U09",
+          "subject": "a lone silhouette high in a vertical shaft of light",
+          "source": "GENERATE",
+          "prompt": "a lone dark silhouette standing in a single vertical shaft of light in a vast dark hall, the figure placed HIGH in frame with its head in the upper third and a long empty floor below it, face not visible, lit ONLY by that shaft which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouette shaft of light"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "I02",
+          "subject": "a marble government corridor of identical closed doors",
+          "source": "GENERATE",
+          "prompt": "a long marble government corridor of identical closed doors receding into shadow, all nameplates completely blank, lit ONLY by a row of ceiling fixtures which are switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "government corridor doors marble"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "R05",
+          "subject": "tall capitol columns photographed from directly below",
+          "source": "GENERATE",
+          "prompt": "tall marble capitol columns photographed from directly below against a dark sky, no inscriptions anywhere, lit ONLY by hard uplights switched on at their bases, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "capitol columns exterior"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "M07",
+          "subject": "a single microphone on a stand in a dark empty room",
+          "source": "GENERATE",
+          "prompt": "a single microphone on a straight stand in a dark empty room, nobody near it, the floor bare, lit ONLY by one hard overhead lamp which is switched on above it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "microphone stand dark room"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U05",
+          "subject": "a wall clock with a blank featureless face",
+          "source": "GENERATE",
+          "prompt": "a wall clock with a blank featureless face, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "U08",
+          "subject": "a wall of shelves packed with unlabelled bound volumes",
+          "source": "GENERATE",
+          "prompt": "a wall of grey steel shelves packed with unlabelled bound volumes shot straight on, spines completely blank, lit ONLY by one flickering fluorescent tube which is switched on overhead, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "shelves bound volumes wall"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "Y05",
+          "subject": "a heavy bound volume open on a lectern, both pages blank",
+          "source": "GENERATE",
+          "prompt": "a heavy bound volume lying open on a reading lectern with both facing pages completely blank and unprinted, lit ONLY by one brass reading lamp which is switched on above it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open book lectern lamp"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R06",
+          "subject": "a public gallery above an empty chamber",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courtroom interior benches",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14093__church_interior_light_beam.mp4",
+          "bound_title": "an abandoned building interior",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5043,
+          "motion": 29.782,
+          "luma": 101.7
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U03",
+          "subject": "a hand pressing a pen to a blank sheet",
+          "source": "GENERATE",
+          "prompt": "a hand pressing a pen to a blank sheet, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "Y05",
+          "subject": "a thick case file closed and tied with a band",
+          "source": "GENERATE",
+          "prompt": "a thick case file closed and tied with a cloth band on a dark desk, the cover worn completely blank, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "closed case file desk"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U12",
+          "subject": "heavy doors swinging open onto blinding daylight",
+          "source": "GENERATE",
+          "prompt": "heavy doors swinging open onto blinding daylight, seen from inside a dark hall, lit ONLY by that daylight which is switched on beyond, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2012, Washington / the web, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door opening bright daylight"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the hook plate — identical framing to plate 01",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ]
+    },
+    {
+      "short_id": "short109",
+      "angle": "Nobody ever proved what he meant to do with the four point eight million files.",
+      "type": "C — the question that was never answered",
+      "avoids": "short23 states the download and the charges. It never says that the purpose was never proven.",
+      "funnel_question_left_for_longform": "If the intent was never proven, what were the thirteen counts actually built on?",
+      "era": "2010-2013, MIT",
+      "sensitivity": "Aaron Swartz died by suicide. Handled as a single factual line at most; the description carries the 988 line.",
+      "loop": true,
+      "loop_join": "L5 states the count and the hole in it, then sends the viewer back to the act itself, which is exactly what L1 opens with, so the download and the unproven purpose read as one sentence across the restart.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "He carried a laptop onto the MIT campus and downloaded millions of scholarly articles. To this day, no one has proven what he meant to do with them.",
+          "source_lines": [
+            "In the autumn of 2010, he carried a laptop onto the campus of MIT, the Massachusetts Institute of Technology, one of the most fa",
+            "And to this very day, after everything that followed, no one has ever actually proven what he meant to do with all of it."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "He never told anyone, and now he never will.",
+          "source_lines": [
+            "He never told anyone, and now he never will."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "In 2008 he had written his belief down, in a short and fierce little document he called the Guerilla Open Access Manifesto.",
+          "source_lines": [
+            "In 2008, he wrote that belief down, in a short and fierce little document he called the Guerilla Open Access Manifesto."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "Money, for Aaron, was never really the point. That is what makes the charge sheet so strange to read.",
+          "source_lines": [
+            "Because money, for Aaron, was never really the point."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "Thirteen federal felony counts, and still nobody proved what the download was for. So look again at what he actually did.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M03",
+          "subject": "a laptop open on the floor of a cramped wiring closet",
+          "source": "GENERATE",
+          "prompt": "a laptop sitting open on the floor of a cramped wiring closet, its screen completely dark and unreadable, one network cable running from it up into a switch, no labels legible anywhere, lit ONLY by one caged bulb which is switched on overhead, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "laptop floor server closet"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I04",
+          "subject": "a steel utility door standing ajar in a basement corridor",
+          "source": "GENERATE",
+          "prompt": "a heavy steel utility door standing ajar in a bare basement corridor, all notices on it worn completely blank, pipework overhead, lit ONLY by one caged bulb which is switched on beside it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "basement utility door corridor"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U04",
+          "subject": "a corridor receding toward one lit doorway",
+          "source": "GENERATE",
+          "prompt": "a corridor receding toward one lit doorway, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I05",
+          "subject": "library stacks receding into darkness, volumes unlabelled",
+          "source": "GENERATE",
+          "prompt": "looking down an aisle of library stacks receding into darkness, shelves packed to the ceiling with bound volumes whose spines are completely blank, lit ONLY by one bulb switched on at the far end, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "library stacks aisle dark"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "U06",
+          "subject": "a single empty wooden chair in a cone of light",
+          "source": "GENERATE",
+          "prompt": "a single empty wooden chair standing in a cone of light in a large dark empty room, dust motes drifting, lit ONLY by the fixture switched on above it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty chair spotlight"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "Y05",
+          "subject": "a thick case file closed and tied with a band",
+          "source": "GENERATE",
+          "prompt": "a thick case file closed and tied with a cloth band on a dark desk, the cover worn completely blank, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "closed case file desk"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "I07",
+          "subject": "an empty tiered lecture hall, one lamp at the podium",
+          "source": "GENERATE",
+          "prompt": "an empty tiered lecture hall seen from the back with every seat vacant and every desk bare, one lamp burning at the podium far below, lit ONLY by that podium lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty lecture hall seats"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "R11",
+          "subject": "a phone lying face down on a dark table",
+          "source": "GENERATE",
+          "prompt": "a phone lying face down on a dark table, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "an unplugged network cable lying loose on a dark floor",
+          "source": "GENERATE",
+          "prompt": "macro of a single unplugged network cable lying loose on a dark floor, its connector catching one hard light, the socket above it empty, lit ONLY by one caged bulb which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "network cable floor macro"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "a shaft of light crossing an empty room, thick with dust",
+          "source": "GENERATE",
+          "prompt": "a shaft of light crossing an empty room thick with slowly drifting dust, nothing else in frame, lit ONLY by that shaft which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "light shaft dust room"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U05",
+          "subject": "a wall clock with a blank featureless face",
+          "source": "GENERATE",
+          "prompt": "a wall clock with a blank featureless face, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "I06",
+          "subject": "a printed sheet alone on a dark desk, every line worn blank",
+          "source": "GENERATE",
+          "prompt": "a single printed sheet lying alone at the centre of a dark desk, every line of type worn completely blank and unreadable, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "document on desk lamp"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a hand pressing a pen to a blank sheet",
+          "source": "GENERATE",
+          "prompt": "a hand pressing a pen to a blank sheet, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "R11",
+          "subject": "a keyboard in the dark, one key catching a hard rim light",
+          "source": "GENERATE",
+          "prompt": "macro of a keyboard in the dark with one key catching a hard rim light, no screen and no hands visible, lit ONLY by that single rim light which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "keyboard macro dark"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "W05",
+          "subject": "a photocopier platen glowing under a closed lid",
+          "source": "GENERATE",
+          "prompt": "a photocopier in a dark room with its glass platen glowing bright under the closed lid, a seam of light escaping around the edge, no lettering or panel readouts visible, lit ONLY by that platen which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "photocopier glass light"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U02",
+          "subject": "a heavy door swinging shut on a narrowing blade of light",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "door closing dark",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1743__front_door_house.mp4",
+          "bound_title": "boy picking up mail at the door",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4882,
+          "motion": 32.879,
+          "luma": 110.9
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "M02",
+          "subject": "banded stacks of cash under one lamp",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "cash stacks money",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7991__cash_stacks_money.mp4",
+          "bound_title": "person counting money",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.447,
+          "motion": 13.776,
+          "luma": 109.5
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "R12",
+          "subject": "a booking tray holding a belt, keys and a few coins",
+          "source": "GENERATE",
+          "prompt": "a steel booking tray on a counter holding a belt, a set of keys and a few coins, every form beneath it worn blank, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "property tray counter"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U07",
+          "subject": "a leaning stack of thirteen thin documents, every cover blank",
+          "source": "GENERATE",
+          "prompt": "a leaning stack of thirteen thin bound documents on a dark desk, every cover worn completely blank and unreadable, lit ONLY by one desk lamp which is switched on beside them, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stack of documents desk"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R06",
+          "subject": "rows of empty courtroom gallery benches",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courtroom interior benches",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1374__warm_window_light_rays.mp4",
+          "bound_title": "sunlit coffee mug on window sill interior scene",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3964,
+          "motion": 21.469,
+          "luma": 159.3
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I04",
+          "subject": "a padlock closed on a steel gate across a library aisle",
+          "source": "GENERATE",
+          "prompt": "a heavy padlock hanging closed on a steel gate drawn across a library aisle, shelves of blank-spined volumes beyond it, lit ONLY by one bulb which is switched on past the gate, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "padlock gate library"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U12",
+          "subject": "heavy doors swinging open onto blinding daylight",
+          "source": "GENERATE",
+          "prompt": "heavy doors swinging open onto blinding daylight, seen from inside a dark hall, lit ONLY by that daylight which is switched on beyond, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2010-2013, MIT, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door opening bright daylight"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the hook plate — identical framing to plate 01",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

@@ -160,16 +160,38 @@ def _cache_key(master: Path, windows: list[tuple[float, float]], model: str) -> 
     return hashlib.sha256(sig.encode("utf-8")).hexdigest()[:32]
 
 
+def _load_whisper(model_name: str, what: str):
+    """CUDA when the box has it, CPU otherwise. The ground truth is the same either way --
+    only the wall clock changes (a 61-min master is ~2.5h on cpu/int8, minutes on the 4090).
+    Set PD_WHISPER_DEVICE=cpu to force the old path."""
+    from faster_whisper import WhisperModel
+    import os
+    want = os.environ.get("PD_WHISPER_DEVICE", "auto").lower()
+    if want in ("auto", "cuda"):
+        try:
+            m = WhisperModel(model_name, device="cuda", compute_type="float16")
+            # Constructing the model does NOT touch cuBLAS -- the missing-DLL error surfaces on
+            # the first encode, i.e. 20 minutes into a gate run (EP51, 2026-07-30). Smoke-test
+            # one second of silence here so the fallback happens before any real work.
+            import numpy as _np
+            list(m.transcribe(_np.zeros(16000, dtype=_np.float32), beam_size=1)[0])
+            print(f"loading faster-whisper {model_name} (cuda/float16) for {what}...")
+            return m
+        except Exception as e:
+            if want == "cuda":
+                raise
+            print(f"  cuda unavailable ({str(e)[:80]}); falling back to cpu/int8")
+    print(f"loading faster-whisper {model_name} (cpu/int8) for {what}...")
+    return WhisperModel(model_name, device="cpu", compute_type="int8")
+
+
 def transcribe_windowed(master: Path, windows: list[tuple[float, float]],
                         model_name: str) -> list[dict[str, Any]]:
     """Transcribe each master window IN ISOLATION (drift-free) and return absolute word times:
     [{'n': normalized, 'start': abs_sec, 'end': abs_sec}, ...] in spoken order. Mirrors
     gen_captions_forced.transcribe_windowed."""
-    from faster_whisper import WhisperModel
-
     audio = _decode_master(master)
-    print(f"loading faster-whisper {model_name} (cpu/int8) for {len(windows)} windowed segments...")
-    fw = WhisperModel(model_name, device="cpu", compute_type="int8")
+    fw = _load_whisper(model_name, f"{len(windows)} windowed segments")
     words: list[dict[str, Any]] = []
     for (ws, we) in windows:
         a = audio[max(0, int(ws * SAMPLE_RATE)):int(we * SAMPLE_RATE)]
@@ -187,10 +209,7 @@ def transcribe_windowed(master: Path, windows: list[tuple[float, float]],
 def transcribe_wholefile(master: Path, model_name: str) -> list[dict[str, Any]]:
     """Fallback: transcribe the WHOLE master at once. faster-whisper's word timestamps DRIFT LATE
     over a long file, so onset lags measured this way are LESS reliable (the caller warns)."""
-    from faster_whisper import WhisperModel
-
-    print(f"loading faster-whisper {model_name} (cpu/int8) for WHOLE-FILE transcription (fallback)...")
-    fw = WhisperModel(model_name, device="cpu", compute_type="int8")
+    fw = _load_whisper(model_name, "WHOLE-FILE transcription (fallback)")
     segs, _ = fw.transcribe(str(master), word_timestamps=True, vad_filter=False,
                             beam_size=5, language="en")
     words: list[dict[str, Any]] = []

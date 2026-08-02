@@ -12,7 +12,8 @@ import {
 import {BRAND} from '../brand';
 import {BrandEndcard, BrandOpening, OPENING_SEC} from '../components/Bookends';
 import {Grain} from '../components/Grain';
-import {LightSweep, Particles, Vignette} from '../components/Motion';
+import {Vignette} from '../components/Motion';
+import {rileyV004PlateCount, rileyV004Plates} from '../data/riley_v004_plates';
 
 const TOTAL_SEC = 646;
 const INK = BRAND.color.ink;
@@ -57,33 +58,33 @@ type Scene = {
 };
 
 const scenes: Scene[] = [
-  {id: 'S001', start: 0, dur: 28, mode: 'hook', title: 'Can they search your phone?', kicker: 'HOOK', image: 'riley/PD-2026-007-S001-IMG-001.v001.png', text: ['Can they search your phone?'], recon: true},
-  {id: 'S002', start: 28, dur: 44, mode: 'still', title: "A phone is not an object. It's a window.", kicker: 'OPENING', image: 'riley/PD-2026-007-S002-IMG-001.v001.png', text: ['photos', 'messages', 'maps', 'searches', 'cloud']},
-  {id: 'S003', start: 72, dur: 22, mode: 'still', title: 'San Diego - 2009', kicker: 'ACT I', image: 'riley/PD-2026-007-S003-IMG-001.v001.png', citation: 'CLM-0006', recon: true},
-  {id: 'S004', start: 94, dur: 22, mode: 'still', title: 'Phone taken from pocket', subtitle: 'Car search. Firearms. Arrest.', kicker: 'ACT I', image: 'riley/PD-2026-007-S004-IMG-001.v001.png', citation: 'CLM-0006', recon: true},
-  {id: 'S005', start: 116, dur: 32, mode: 'stamp', title: 'Searched twice. No warrant.', kicker: 'ACT I', image: 'riley/PD-2026-007-S005-IMG-001.v001.png', citation: 'CLM-0006', text: ['PHONE SEARCH', 'NO WARRANT'], recon: true},
+  {id: 'S001', start: 0, dur: 28, mode: 'hook', title: 'Can they search your phone?', kicker: 'HOOK', image: 'riley/PD-2026-007-S001-IMG-001.v003.png', text: ['Can they search your phone?'], recon: true},
+  {id: 'S002', start: 28, dur: 44, mode: 'still', title: "A phone is not an object. It's a window.", kicker: 'OPENING', image: 'riley/PD-2026-007-S002-IMG-001.v003.png', text: ['photos', 'messages', 'maps', 'searches', 'cloud']},
+  {id: 'S003', start: 72, dur: 22, mode: 'still', title: 'San Diego - 2009', kicker: 'ACT I', image: 'riley/PD-2026-007-S003-IMG-001.v003.png', citation: 'CLM-0006', recon: true},
+  {id: 'S004', start: 94, dur: 22, mode: 'still', title: 'Phone taken from pocket', subtitle: 'Car search. Firearms. Arrest.', kicker: 'ACT I', image: 'riley/PD-2026-007-S001-IMG-001.v003.png', citation: 'CLM-0006', recon: true},
+  {id: 'S005', start: 116, dur: 32, mode: 'stamp', title: 'Searched twice. No warrant.', kicker: 'ACT I', image: 'riley/PD-2026-007-S017-IMG-001.v003.png', citation: 'CLM-0006', text: ['PHONE SEARCH', 'NO WARRANT'], recon: true},
   {id: 'S006', start: 148, dur: 18, mode: 'type', title: 'Traffic stop -> shooting case', kicker: 'ACT I'},
-  {id: 'S007', start: 166, dur: 28, mode: 'still', title: 'Riley v. California + United States v. Wurie', kicker: 'ACT I', image: 'riley/PD-2026-007-S007-IMG-001.v001.png', citation: 'CLM-0001 / CLM-0007', text: ['Riley', 'Wurie']},
+  {id: 'S007', start: 166, dur: 28, mode: 'still', title: 'Riley v. California + United States v. Wurie', kicker: 'ACT I', image: 'riley/PD-2026-007-S017-IMG-001.v003.png', citation: 'CLM-0001 / CLM-0007', text: ['Riley', 'Wurie']},
   {id: 'S008', start: 194, dur: 12, mode: 'type', title: 'Search incident to arrest', kicker: 'ACT II'},
   {id: 'S009', start: 206, dur: 32, mode: 'logic', title: '1) Officer safety  2) Preserve evidence', kicker: 'ACT II', text: ['officer safety', 'preserve evidence']},
-  {id: 'S010', start: 238, dur: 23, mode: 'still', title: 'If a wallet, why not a phone?', kicker: 'ACT II', image: 'riley/PD-2026-007-S010-IMG-001.v001.png', text: ['wallet', 'phone']},
-  {id: 'S011', start: 261, dur: 30, mode: 'still', title: 'Wallet vs. smartphone', kicker: 'ACT II', image: 'riley/PD-2026-007-S011-IMG-001.v001.png', text: ['wallet', 'smartphone']},
-  {id: 'S012', start: 291, dur: 24, mode: 'still', title: 'Half in your pocket, half in the cloud', kicker: 'ACT II', image: 'riley/PD-2026-007-S012-IMG-001.v001.png'},
+  {id: 'S010', start: 238, dur: 23, mode: 'still', title: 'If a wallet, why not a phone?', kicker: 'ACT II', image: 'riley/PD-2026-007-S002-IMG-001.v003.png', text: ['wallet', 'phone']},
+  {id: 'S011', start: 261, dur: 30, mode: 'still', title: 'Wallet vs. smartphone', kicker: 'ACT II', image: 'riley/PD-2026-007-S002-IMG-001.v003.png', text: ['wallet', 'smartphone']},
+  {id: 'S012', start: 291, dur: 24, mode: 'still', title: 'Half in your pocket, half in the cloud', kicker: 'ACT II', image: 'riley/PD-2026-007-S002-IMG-001.v003.png'},
   {id: 'S013', start: 315, dur: 26, mode: 'secure', title: 'Data is not a weapon', subtitle: 'Secure the device', kicker: 'ACT II'},
-  {id: 'S014', start: 341, dur: 26, mode: 'still', title: '2014 / 9-0 result', subtitle: 'Riley v. California, 573 U.S. 373', kicker: 'ACT III', image: 'riley/PD-2026-007-S014-IMG-001.v001.png', citation: 'CLM-0002'},
-  {id: 'S015', start: 367, dur: 25, mode: 'quote', title: '"the privacies of life"', kicker: 'ACT III', image: 'riley/PD-2026-007-S015-IMG-001.v001.png', citation: 'CLM-0003'},
+  {id: 'S014', start: 341, dur: 26, mode: 'still', title: '2014 / 9-0 result', subtitle: 'Riley v. California, 573 U.S. 373', kicker: 'ACT III', image: 'riley/PD-2026-007-S017-IMG-001.v003.png', citation: 'CLM-0002'},
+  {id: 'S015', start: 367, dur: 25, mode: 'quote', title: '"the privacies of life"', kicker: 'ACT III', image: 'riley/PD-2026-007-S022-IMG-001.v003.png', citation: 'CLM-0003'},
   {id: 'S016', start: 392, dur: 24, mode: 'logic', title: 'More revealing than a house', kicker: 'ACT III', text: ['home', 'phone']},
-  {id: 'S017', start: 416, dur: 20, mode: 'quote', title: '"Get a warrant."', kicker: 'ACT III', citation: 'CLM-0001'},
+  {id: 'S017', start: 416, dur: 20, mode: 'quote', title: '"Get a warrant."', kicker: 'ACT III', image: 'riley/PD-2026-007-S017-IMG-001.v003.png', citation: 'CLM-0001'},
   {id: 'S018', start: 436, dur: 27, mode: 'still', title: 'Katz v. United States (1967): people, not places', kicker: 'ACT III', image: 'riley/PD-2026-007-S018-IMG-001.v001.png'},
   {id: 'S019', start: 463, dur: 18, mode: 'phone', title: 'One rule for the phone category', kicker: 'ACT III'},
   {id: 'S020', start: 481, dur: 10, mode: 'type', title: 'Exception: true emergencies', kicker: 'ACT III'},
   {id: 'S021', start: 491, dur: 26, mode: 'secure', title: 'Contents protected', subtitle: 'Warrant, consent, emergency', kicker: 'ACT III'},
-  {id: 'S022', start: 517, dur: 28, mode: 'apps', title: 'A phone can reveal a life', kicker: 'ACT IV', text: ['calendar', 'photos', 'banking', 'health', 'messages', 'search']},
-  {id: 'S023', start: 545, dur: 24, mode: 'still', title: 'Automatic records', kicker: 'ACT IV', image: 'riley/PD-2026-007-S023-IMG-001.v001.png'},
+  {id: 'S022', start: 517, dur: 28, mode: 'apps', title: 'A phone can reveal a life', kicker: 'ACT IV', image: 'riley/PD-2026-007-S022-IMG-001.v003.png', text: ['calendar', 'photos', 'banking', 'health', 'messages', 'search']},
+  {id: 'S023', start: 545, dur: 24, mode: 'still', title: 'Automatic records', kicker: 'ACT IV', image: 'riley/PD-2026-007-S022-IMG-001.v003.png'},
   {id: 'S024', start: 569, dur: 12, mode: 'split', title: 'Inside the phone vs. the trail it leaves', kicker: 'ACT IV', text: ['inside', 'trail']},
-  {id: 'S025', start: 581, dur: 22, mode: 'quote', title: 'For that, police need a warrant.', kicker: 'ACT IV', image: 'riley/PD-2026-007-S025-IMG-001.v001.png'},
+  {id: 'S025', start: 581, dur: 22, mode: 'quote', title: 'For that, police need a warrant.', kicker: 'ACT IV', image: 'riley/PD-2026-007-S017-IMG-001.v003.png'},
   {id: 'S026', start: 603, dur: 18, mode: 'split', title: 'Chosen contents | Automatic records', kicker: 'ENDING', text: ['chosen contents', 'automatic records']},
-  {id: 'S027', start: 621, dur: 16, mode: 'still', title: "Next: your phone is tracking you", kicker: 'NEXT', image: 'riley/PD-2026-007-S027-IMG-001.v001.png'},
+  {id: 'S027', start: 621, dur: 16, mode: 'still', title: "Next: your phone is tracking you", kicker: 'NEXT', image: 'riley/PD-2026-007-S027-IMG-001.v003.png'},
   {id: 'S028', start: 637, dur: 9, mode: 'end', title: 'Prime Documentary', subtitle: 'Subscribe', kicker: 'END'},
 ];
 
@@ -94,7 +95,11 @@ const sceneNumber = (id: string): number => {
   return match ? Number(match[0]) : 1;
 };
 
-const clamp01 = (value: number): number => Math.max(0, Math.min(1, value));
+const plateImagesFor = (scene: Scene): string[] => {
+  const plates = rileyV004Plates[scene.id] ?? [];
+  if (plates.length > 0) return plates;
+  return scene.image ? [scene.image] : [];
+};
 
 const ReconstructionLabel: React.FC = () => (
   <div style={{
@@ -122,16 +127,18 @@ const LowerThird: React.FC<{scene: Scene}> = ({scene}) => {
     <div style={{position: 'absolute', left: 58, top: 48, opacity: Math.min(1, enter), maxWidth: 1340}}>
       <div style={{fontFamily: BRAND.font.body, fontSize: 18, color: GOLD, fontWeight: 800, letterSpacing: 0}}>{scene.kicker}</div>
       <div style={{width: 310, height: 2, background: GOLD, marginTop: 9, marginBottom: 21}} />
-      <div style={{
-        fontFamily: BRAND.font.display,
-        fontSize: fitTitle(scene.title),
-        color: WHITE,
-        textTransform: 'uppercase',
-        lineHeight: 0.95,
-        textShadow: '0 5px 30px #000',
-        letterSpacing: 0,
-      }}>{scene.title}</div>
-      {scene.subtitle ? <div style={{fontFamily: BRAND.font.body, fontSize: 28, color: SILVER, marginTop: 12, maxWidth: 1080, letterSpacing: 0}}>{scene.subtitle}</div> : null}
+      {scene.mode !== 'quote' ? (
+        <div style={{
+          fontFamily: BRAND.font.display,
+          fontSize: fitTitle(scene.title),
+          color: WHITE,
+          textTransform: 'uppercase',
+          lineHeight: 0.95,
+          textShadow: '0 5px 30px #000',
+          letterSpacing: 0,
+        }}>{scene.title}</div>
+      ) : null}
+      {scene.subtitle && scene.mode !== 'quote' ? <div style={{fontFamily: BRAND.font.body, fontSize: 28, color: SILVER, marginTop: 12, maxWidth: 1080, letterSpacing: 0}}>{scene.subtitle}</div> : null}
       {scene.id === 'S014' ? (
         <div style={{fontFamily: BRAND.font.body, fontSize: 20, color: SILVER, marginTop: 12, maxWidth: 1080, letterSpacing: 0}}>
           Result unanimous; Alito concurred in part and in the judgment.
@@ -150,147 +157,67 @@ const Shell: React.FC<{scene: Scene; children: React.ReactNode}> = ({scene, chil
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const sceneFrames = Math.max(1, Math.round(scene.dur * fps));
-  const p = interpolate(frame, [0, sceneFrames], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   const seed = sceneNumber(scene.id);
-  const panX = Math.sin(seed * 1.63) * 74;
-  const panY = Math.cos(seed * 1.21) * 46;
-  const scale = 1.08 + p * (0.14 + (seed % 4) * 0.012);
-  const rotate = Math.sin((frame + seed * 19) / 155) * 0.45;
+  const panX = Math.sin(seed * 1.63) * 28;
+  const panY = Math.cos(seed * 1.21) * 18;
+  const rotate = Math.sin((frame + seed * 19) / 180) * 0.16;
+  const images = plateImagesFor(scene);
+  const slotFrames = images.length > 0 ? Math.max(14, sceneFrames / images.length) : sceneFrames;
+  const imageIndex = images.length > 0 ? Math.min(images.length - 1, Math.floor(frame / slotFrames)) : 0;
+  const nextIndex = images.length > 0 ? Math.min(images.length - 1, imageIndex + 1) : 0;
+  const slotProgress = images.length > 0 ? (frame - imageIndex * slotFrames) / slotFrames : 0;
+  const crossfade = interpolate(slotProgress, [0.58, 0.92], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const hideLowerThird =
+    (scene.id === 'S001' && frame < Math.round(3.25 * fps)) ||
+    (scene.id === 'S002' && frame < Math.round(OPENING_SEC * fps)) ||
+    (scene.id === 'S003' && frame < Math.round(2.55 * fps)) ||
+    (scene.id === 'S026' && frame < Math.round(2.65 * fps));
+  const renderPlate = (src: string, index: number, opacity: number, extraScale: number) => {
+    const local = frame - index * slotFrames;
+    const lp = interpolate(local, [0, slotFrames], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+    const localSeed = seed * 19 + index * 7;
+    const dir = index % 2 === 0 ? 1 : -1;
+    const driftX = interpolate(lp, [0, 1], [-46 * dir, 46 * dir]);
+    const driftY = interpolate(lp, [0, 1], [22 * dir, -22 * dir]);
+    const localScale = 1.045 + extraScale + lp * (0.062 + (index % 3) * 0.012);
+    return (
+      <Img
+        src={staticFile(src)}
+        style={{
+          position: 'absolute',
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+          objectPosition: `${50 + Math.sin(localSeed) * 9}% ${50 + Math.cos(localSeed) * 7}%`,
+          transform: `scale(${localScale}) translate(${driftX + panX * 0.2}px, ${driftY + panY * 0.2}px) rotate(${rotate}deg)`,
+          filter: 'brightness(0.95) contrast(1.08) saturate(1.12)',
+          opacity,
+        }}
+      />
+    );
+  };
   return (
     <AbsoluteFill style={{backgroundColor: INK, overflow: 'hidden'}}>
-      {scene.image ? (
+      {images.length > 0 ? (
         <AbsoluteFill style={{overflow: 'hidden'}}>
-          <Img
-            src={staticFile(scene.image)}
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              objectPosition: `${50 + Math.sin(seed) * 8}% ${50 + Math.cos(seed) * 6}%`,
-              transform: `scale(${scale}) translate(${interpolate(p, [0, 1], [-panX, panX])}px, ${interpolate(p, [0, 1], [-panY, panY])}px) rotate(${rotate}deg)`,
-              filter: 'brightness(0.62) contrast(1.22) saturate(1.03)',
-            }}
-          />
-          <Img
-            src={staticFile(scene.image)}
-            style={{
-              position: 'absolute',
-              left: `${seed % 2 ? 58 : -3}%`,
-              top: `${seed % 3 === 0 ? 11 : 40}%`,
-              width: '52%',
-              height: '52%',
-              objectFit: 'cover',
-              transform: `scale(${1.16 + p * 0.18}) translate(${Math.sin(frame / 90 + seed) * 34}px, ${Math.cos(frame / 110 + seed) * 22}px)`,
-              opacity: 0.18,
-              filter: 'brightness(1.1) contrast(1.45) saturate(0.9) blur(1px)',
-              mixBlendMode: 'screen',
-              clipPath: seed % 2 ? 'polygon(14% 0, 100% 0, 82% 100%, 0 100%)' : 'polygon(0 0, 86% 0, 100% 100%, 18% 100%)',
-            }}
-          />
+          {renderPlate(images[imageIndex], imageIndex, 1, 0)}
+          {nextIndex !== imageIndex ? renderPlate(images[nextIndex], nextIndex, crossfade, 0.025) : null}
         </AbsoluteFill>
       ) : (
         <AbsoluteFill style={{background: `radial-gradient(90% 70% at 64% 34%, #14345f 0%, ${NAVY} 35%, ${INK} 84%)`}} />
       )}
-      <AbsoluteFill style={{background: `linear-gradient(180deg, ${INK}D8 0%, #00000008 42%, ${INK}E8 100%)`}} />
-      <SceneMotionOverlay scene={scene} progress={p} seed={seed} />
-      <LightSweep seed={scene.id} color={scene.mode === 'court' || scene.mode === 'quote' ? GOLD : BLUE} />
-      <Particles seed={scene.id} count={scene.image ? 18 : 28} color={scene.mode === 'court' ? GOLD : BLUE} />
+      <AbsoluteFill style={{background: `linear-gradient(180deg, ${INK}A8 0%, #00000000 43%, ${INK}B8 100%)`}} />
       {children}
-      <LowerThird scene={scene} />
+      {hideLowerThird ? null : <LowerThird scene={scene} />}
       {scene.recon ? <ReconstructionLabel /> : null}
-      <Vignette strength={1} />
+      {rileyV004PlateCount >= 180 ? (
+        <div style={{position: 'absolute', right: 54, bottom: 42, fontFamily: BRAND.font.body, fontSize: 15, color: `${SILVER}AA`, letterSpacing: 0}}>
+          180 symbolic visual plates
+        </div>
+      ) : null}
+      <Vignette strength={images.length > 0 ? 0.72 : 1} />
       <Grain opacity={0.05} />
     </AbsoluteFill>
-  );
-};
-
-const SceneMotionOverlay: React.FC<{scene: Scene; progress: number; seed: number}> = ({scene, progress, seed}) => {
-  const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
-  const scanPeriod = Math.round(fps * (3.3 + (seed % 4) * 0.35));
-  const scanP = (frame % scanPeriod) / scanPeriod;
-  const scanX = interpolate(scanP, [0, 1], [-260, 2160]);
-  const pulse = 0.55 + Math.sin(frame / 14 + seed) * 0.25;
-  const chips = (scene.text ?? []).slice(0, 5);
-  const routeOpacity = scene.mode === 'still' || scene.mode === 'stamp' ? 0.58 : 0.32;
-  return (
-    <>
-      <svg width="1920" height="1080" style={{position: 'absolute', inset: 0, opacity: 0.88}}>
-        <defs>
-          <linearGradient id={`scan-${scene.id}`} x1="0" x2="1" y1="0" y2="0">
-            <stop offset="0%" stopColor={BLUE} stopOpacity="0" />
-            <stop offset="48%" stopColor={scene.mode === 'quote' ? GOLD : BLUE} stopOpacity="0.74" />
-            <stop offset="100%" stopColor={BLUE} stopOpacity="0" />
-          </linearGradient>
-        </defs>
-        <rect x={scanX} y="0" width="185" height="1080" fill={`url(#scan-${scene.id})`} opacity={0.25 + pulse * 0.25} />
-        {Array.from({length: 7}, (_, i) => {
-          const y = 210 + i * 96 + Math.sin(frame / 55 + i + seed) * 16;
-          const x1 = 220 + ((i * 173 + seed * 31) % 560);
-          const x2 = 1160 + ((i * 127 + seed * 47) % 470);
-          return (
-            <path
-              key={i}
-              d={`M${x1} ${y} C${x1 + 190} ${y - 70}, ${x2 - 230} ${y + 84}, ${x2} ${y + Math.sin(i + seed) * 58}`}
-              fill="none"
-              stroke={i % 2 ? GOLD : BLUE}
-              strokeWidth={i % 2 ? 4 : 5}
-              strokeLinecap="round"
-              strokeDasharray="18 22"
-              strokeDashoffset={-(frame * (1.2 + i * 0.18))}
-              opacity={routeOpacity * (0.5 + i / 12)}
-            />
-          );
-        })}
-        <circle cx={1480 + Math.sin(frame / 80 + seed) * 70} cy={240 + Math.cos(frame / 70 + seed) * 42} r={42 + pulse * 22} fill="none" stroke={GOLD} strokeWidth="5" opacity="0.32" />
-        <circle cx={1480 + Math.sin(frame / 80 + seed) * 70} cy={240 + Math.cos(frame / 70 + seed) * 42} r="9" fill={GOLD} opacity="0.8" />
-      </svg>
-      {chips.map((label, i) => {
-        const enter = clamp01((progress * 1.45) - i * 0.12);
-        return (
-          <div
-            key={`${scene.id}-${label}`}
-            style={{
-              position: 'absolute',
-              left: 1260 + Math.sin(seed + i) * 95,
-              top: 430 + i * 76 + Math.cos(seed * 0.4 + i) * 22,
-              width: 250,
-              height: 54,
-              border: `2px solid ${i % 2 ? GOLD : BLUE}`,
-              background: '#000000A8',
-              color: i % 2 ? GOLD : WHITE,
-              fontFamily: BRAND.font.body,
-              fontSize: 22,
-              fontWeight: 800,
-              textTransform: 'uppercase',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              opacity: enter * 0.82,
-              transform: `translateX(${(1 - enter) * 80 + Math.sin(frame / 45 + i) * 8}px)`,
-              boxShadow: `0 0 22px ${i % 2 ? GOLD : BLUE}55`,
-              letterSpacing: 0,
-            }}
-          >
-            {label}
-          </div>
-        );
-      })}
-      <div
-        style={{
-          position: 'absolute',
-          left: 92,
-          bottom: 54,
-          width: 410,
-          height: 7,
-          background: `linear-gradient(90deg, ${GOLD}, ${BLUE})`,
-          transformOrigin: 'left center',
-          transform: `scaleX(${Math.max(0.08, progress)})`,
-          opacity: 0.72,
-          boxShadow: `0 0 22px ${BLUE}`,
-        }}
-      />
-    </>
   );
 };
 
@@ -303,8 +230,6 @@ const SectionBumper: React.FC<{label: string; title: string; subtitle?: string; 
   const rule = interpolate(frame, [8, 28], [0, 620], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{background: `radial-gradient(95% 85% at 52% 42%, ${tone === 'gold' ? '#3A2A08' : '#0F356B'} 0%, ${NAVY} 39%, ${INK} 86%)`, opacity: Math.min(inS, out), overflow: 'hidden'}}>
-      <LightSweep seed={`section-${label}`} color={color} />
-      <Particles seed={`section-${label}`} count={24} color={color} />
       <AbsoluteFill style={{justifyContent: 'center', alignItems: 'center'}}>
         <div style={{fontFamily: BRAND.font.body, color: SILVER, fontSize: 25, fontWeight: 800, textTransform: 'uppercase', letterSpacing: 0, opacity: inS}}>
           {label}
@@ -556,7 +481,7 @@ const TrailGraphic: React.FC = () => {
   const dots = Math.min(10, Math.floor(interpolate(frame, [0, 220], [1, 10], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})));
   return (
     <svg width="1920" height="1080" style={{position: 'absolute'}}>
-      <path d="M430 745 C610 575 730 645 875 500 C1030 345 1170 530 1430 330" fill="none" stroke={BLUE} strokeWidth="10" strokeLinecap="round" strokeDasharray="18 22" opacity="0.78" />
+      <path d="M430 745 L650 635 L875 500 L1110 435 L1430 330" fill="none" stroke={BLUE} strokeWidth="8" strokeLinecap="round" opacity="0.62" />
       {Array.from({length: dots}, (_, i) => {
         const x = 430 + i * 110;
         const y = 745 - (i % 3) * 95 - i * 18;
@@ -572,25 +497,32 @@ const EndGraphic: React.FC = () => (
 );
 
 const SceneBody: React.FC<{scene: Scene}> = ({scene}) => {
-  if (scene.mode === 'end') return <EndGraphic />;
+  const useGeneratedPlates = plateImagesFor(scene).length > 0;
+  if (scene.mode === 'end') {
+    return (
+      <Shell scene={scene}>
+        <EndGraphic />
+      </Shell>
+    );
+  }
   return (
     <Shell scene={scene}>
-      {scene.mode === 'hook' ? <HookGraphic /> : null}
-      {scene.mode === 'phone' ? <PhoneWindow scene={scene} /> : null}
-      {scene.mode === 'map' ? <MapGraphic /> : null}
-      {scene.mode === 'evidence' ? <EvidenceGraphic /> : null}
-      {scene.mode === 'stamp' ? <StampGraphic scene={scene} /> : null}
-      {scene.mode === 'type' ? <TypeWall scene={scene} /> : null}
-      {scene.mode === 'split' ? <SplitGraphic scene={scene} /> : null}
-      {scene.mode === 'logic' ? <LogicGraphic scene={scene} /> : null}
-      {scene.mode === 'wallet' ? <WalletGraphic scene={scene} /> : null}
-      {scene.mode === 'cloud' ? <CloudGraphic /> : null}
-      {scene.mode === 'secure' ? <SecureGraphic /> : null}
-      {scene.mode === 'court' ? <CourtGraphic /> : null}
+      {!useGeneratedPlates && scene.mode === 'hook' ? <HookGraphic /> : null}
+      {!useGeneratedPlates && scene.mode === 'phone' ? <PhoneWindow scene={scene} /> : null}
+      {!useGeneratedPlates && scene.mode === 'map' ? <MapGraphic /> : null}
+      {!useGeneratedPlates && scene.mode === 'evidence' ? <EvidenceGraphic /> : null}
+      {!useGeneratedPlates && scene.mode === 'stamp' ? <StampGraphic scene={scene} /> : null}
+      {!useGeneratedPlates && scene.mode === 'type' ? <TypeWall scene={scene} /> : null}
+      {!useGeneratedPlates && scene.mode === 'split' ? <SplitGraphic scene={scene} /> : null}
+      {!useGeneratedPlates && scene.mode === 'logic' ? <LogicGraphic scene={scene} /> : null}
+      {!useGeneratedPlates && scene.mode === 'wallet' ? <WalletGraphic scene={scene} /> : null}
+      {!useGeneratedPlates && scene.mode === 'cloud' ? <CloudGraphic /> : null}
+      {!useGeneratedPlates && scene.mode === 'secure' ? <SecureGraphic /> : null}
+      {!useGeneratedPlates && scene.mode === 'court' ? <CourtGraphic /> : null}
       {scene.mode === 'quote' ? <QuoteGraphic scene={scene} /> : null}
-      {scene.mode === 'booth' ? <BoothGraphic /> : null}
-      {scene.mode === 'apps' ? <AppsGraphic scene={scene} /> : null}
-      {scene.mode === 'trail' ? <TrailGraphic /> : null}
+      {!useGeneratedPlates && scene.mode === 'booth' ? <BoothGraphic /> : null}
+      {!useGeneratedPlates && scene.mode === 'apps' ? <AppsGraphic scene={scene} /> : null}
+      {!useGeneratedPlates && scene.mode === 'trail' ? <TrailGraphic /> : null}
     </Shell>
   );
 };

@@ -203,7 +203,7 @@ const TimeAxis: React.FC<{
   axisY: number;
 }> = ({year, width, axisY}) => {
   const frame = useCurrentFrame();
-  const {fps} = useVideoConfig();
+  const {fps, height} = useVideoConfig();
   const centerX = width / 2;
   const pxPerYear = 148;
   const span = Math.ceil(width / 2 / pxPerYear) + 3;
@@ -302,7 +302,7 @@ const TimeAxis: React.FC<{
     >
       <svg
         width={width}
-        height={1080}
+        height={height}
         style={{position: 'absolute', inset: 0}}
       >
         {/* 軸ベースライン */}

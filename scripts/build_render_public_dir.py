@@ -35,7 +35,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "remotion" / "public"
 SLIM = ROOT / "remotion" / "public_slim"
-POOL_DIRS = ("img", "motion", "factory", "overlay")
+# EP50 has two i2v generations (motion + motion2) and a real-stock pool; a pool that is not
+# listed here is silently absent from the bundle and 404s mid-render.
+POOL_DIRS = ("img", "motion", "motion2", "factory", "overlay", "stock")
 # referenced by literal name inside the compositions -> absent from film.json's src list
 STATIC_ASSETS = ("banner_sunrise.png",)
 FONT_FILES = ("Anton.ttf", "Archivo.ttf", "Oswald.ttf", "LICENSE_FONTS.md")

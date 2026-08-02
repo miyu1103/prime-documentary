@@ -1,0 +1,1137 @@
+{
+  "episode_id": "PD-2026-029-hinton",
+  "slug": "hinton",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "Qyad4FejCIc",
+    "title": "Alabama kept a date to kill him for 30 years",
+    "url": "https://www.youtube.com/watch?v=Qyad4FejCIc",
+    "privacy": "public",
+    "views": 52
+  },
+  "shorts_existing": [
+    "short29"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short29": [
+      "For thirty years, Alabama planned to execute Anthony Ray Hinton — for two murders he did not commit.",
+      "The whole case rested on one claim: that bullets from the crime scenes matched an old .",
+      "38 revolver from his mother's home.",
+      "No eyewitness.",
+      "No fingerprints.",
+      "No confession.",
+      "Only that match.",
+      "To fight it he needed a real forensic expert.",
+      "But his lawyer wrongly believed the state capped that money at a thousand dollars.",
+      "There was no cap.",
+      "The expert he could afford was blind in one eye and couldn't work the microscope.",
+      "A jury convicted him in 1986 — in about an hour.",
+      "For nearly thirty years on death row, he kept his mind free — a book club, imagined travels.",
+      "Then Bryan Stevenson's Equal Justice Initiative proved the bullets matched nothing, and in 2014 a unanimous Supreme Court threw out his conviction.",
+      "He walked free in 2015 — the 152nd person cleared from death row.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-029-hinton\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "In 2002, Stevenson did the one thing Hinton's first defense never could.",
+    "This is the story of how one piece of \"science\" and a broke defense sent an innocent man to death row for nearly three decades — how the system almost killed him for it — and how it never managed to take the one thing that kept him alive.",
+    "In 1985, around Birmingham, Alabama, two fast-food managers were murdered in separate late-night robberies — John Davidson in February, Thomas Wayne Vason in July.",
+    "His lawyer, wrongly believing it wasn't, never asked.",
+    "In September of 1986, they convicted him of both murders, and he was sentenced to die.",
+    "And in Alabama, in 1986, that was enough.",
+    "The one thread the entire death sentence hung from had never actually held.",
+    "The evidence that had sent him to death row simply could not be reproduced — because it had never been true.",
+    "It had taken sixteen years of Bryan Stevenson's fight, and thirty years of Anthony Ray Hinton's life, to undo a one-hour verdict built on a bullet that never matched.",
+    "On April 3rd, 2015, Anthony Ray Hinton walked out of prison a free man, after nearly thirty years — the hundred-and-fifty-second person freed from death row in America after being wrongly condemned to die.",
+    "The two murders he spent thirty years condemned for were never solved.",
+    "And almost no one with the power to stop it ever checked whether it was actually true."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short96",
+      "angle": "In 2002 someone finally did the one thing his first defence never did: test the bullets.",
+      "type": "B — the test nobody ran",
+      "avoids": "short29 covers the wrongly-believed funding cap and the expert blind in one eye. It stops before 2002, and never says what the retest found.",
+      "funnel_question_left_for_longform": "The evidence failed in 2002. Why did Alabama keep him for thirteen more years?",
+      "era": "1985-2015 Alabama",
+      "loop": true,
+      "loop_join": "L5 states what the testing actually achieved, which was nothing for thirteen years, so L1 returns to the single thread the whole death sentence hung from.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "The entire death sentence hung from one thread: that bullets from two crime scenes matched an old revolver.",
+          "delivery": "intense",
+          "source_lines": [
+            "The one thread the entire death sentence hung from had never actually held."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "In 2002, Bryan Stevenson did the one thing Anthony Ray Hinton's first defence never could. He had the bullets examined by real experts.",
+          "delivery": "building",
+          "source_lines": [
+            "In 2002, Stevenson did the one thing Hinton's first defense never could."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "The evidence that had sent him to death row simply could not be reproduced. Because it had never been true.",
+          "delivery": "building",
+          "source_lines": [
+            "The evidence that had sent him to death row simply could not be reproduced — because it had never been true."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "It took sixteen years of that fight, and thirty years of his life, to undo a verdict a jury had reached in about an hour.",
+          "delivery": "intense",
+          "source_lines": [
+            "It had taken sixteen years of Bryan Stevenson's fight, and thirty years of Anthony Ray Hinton's life, to undo a one-hour verdict"
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "The experts could not even be certain the bullets had come from a single gun. It was not a loophole. It was the evidence.",
+          "delivery": "building",
+          "source_lines": [
+            "They could not even be certain the bullets had come from a single gun.",
+            "This was not a loophole or a clever defense."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "He was sent to a cell the size of a bathroom on Alabama's death row. He stayed there the better part of thirty years.",
+          "delivery": "building",
+          "source_lines": [
+            "He was sent to a cell the size of a bathroom on Alabama's death row.",
+            "And he would stay there for the better part of thirty years."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "By his own count, fifty-four men were taken from that row to the electric chair, close enough for him to know each one.",
+          "delivery": "intense",
+          "source_lines": [
+            "Over his decades on the row, Hinton says he counted **fifty-four men** taken to the electric chair, close enough to know each one.",
+            "Any year, it could be his door."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "Three of the country's top firearms experts testified in 2002. He stayed on death row for thirteen more years.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W07",
+          "subject": "one deformed bullet standing on steel",
+          "source": "GENERATE",
+          "prompt": "extreme macro of a single deformed lead revolver bullet standing upright on a dark steel bench, its nose flattened and its surface scarred, nothing else in frame, lit ONLY by one hard rim light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "the old revolver lying open in a drawer",
+          "source": "GENERATE",
+          "prompt": "an old .38 revolver lying with its cylinder swung open on a folded cloth inside a shallow wooden drawer, no lettering or markings anywhere on it, nobody in frame, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W07",
+          "subject": "a spent cartridge case, macro",
+          "source": "FOOTAGE",
+          "footage_query": "bullet casing close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33912__vintage_typewriter.mp4",
+          "bound_title": "close up shot of a printed circuit board",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.49,
+          "motion": 8.541,
+          "luma": 39.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "one taut wire thread across the dark",
+          "source": "GENERATE",
+          "prompt": "extreme macro of one single taut steel wire stretched across total blackness and catching a hard highlight along its length, nothing else in frame, lit ONLY by one hard rim light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "the comparison microscope on the bench",
+          "source": "GENERATE",
+          "prompt": "a heavy forensic comparison microscope standing on a laboratory bench with all of its displays dark and unreadable, nobody present, lit ONLY by one task lamp which is switched on beside it, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "a microscope on a laboratory bench",
+          "source": "GENERATE",
+          "converted_from_footage": true,
+          "prompt": "a microscope on a laboratory bench, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "tweezers lifting a bullet into the light",
+          "source": "GENERATE",
+          "prompt": "macro of two gloved hands lifting a deformed lead bullet with fine tweezers into a hard beam above a steel bench, no face or body visible above the wrists, lit ONLY by one task lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "W06",
+          "subject": "gloved hands working over an evidence tray",
+          "source": "FOOTAGE",
+          "footage_query": "gloved hands tweezers evidence",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11656__operating_room.mp4",
+          "bound_title": "police officer and technician inspecting evidence next to buildings",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4058,
+          "motion": 6.218,
+          "luma": 28.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "W06",
+          "subject": "the sealed evidence envelope, writing gone",
+          "source": "GENERATE",
+          "prompt": "a sealed paper evidence envelope lying on a steel counter with every written surface worn completely blank and unreadable, nobody in frame, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "the locker shelf where it had been sitting",
+          "source": "FOOTAGE",
+          "footage_query": "evidence locker shelves",
+          "bound_title": "technician inspecting evidence on ground",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4008,
+          "motion": 12.042,
+          "luma": 53.6
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U07",
+          "subject": "the lawyer's desk at midnight",
+          "source": "GENERATE",
+          "prompt": "a lawyer's desk buried under leaning stacks of worn case folders with every label worn completely blank and the chair pushed back and empty, lit ONLY by one green banker's lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "two bullet surfaces that will not line up",
+          "source": "GENERATE",
+          "prompt": "the split circular field of a comparison microscope showing two magnified lead bullet surfaces whose striation patterns clearly fail to line up across the dividing line, no numerals or lettering anywhere, lit ONLY by one task lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "W07",
+          "subject": "the bullet beside its mismatched twin",
+          "source": "GENERATE",
+          "prompt": "macro of two deformed lead bullets standing side by side on a dark steel bench, visibly different from one another, nothing else in frame, lit ONLY by one hard rim light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "W05",
+          "subject": "a lab notebook open on blank pages",
+          "source": "FOOTAGE",
+          "footage_query": "open notebook blank pages",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15136__magnifying_glass_on_document.mp4",
+          "bound_title": "drone video of a communication tower in an open field",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4114,
+          "motion": 6.842,
+          "luma": 144.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "the state's own bench, tools untouched",
+          "source": "GENERATE",
+          "prompt": "a forensic laboratory workbench with tools laid out in a neat untouched row and a set of empty specimen trays beside them, nobody present, no lettering anywhere, lit ONLY by one task lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "W11",
+          "subject": "the empty witness chair beside the bench",
+          "source": "GENERATE",
+          "prompt": "one plain wooden witness chair standing empty inside its low rail beside a dark courtroom bench, nobody present, all nameplates blank, lit ONLY by one shaft of window light falling across the seat, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "U05",
+          "subject": "the courtroom clock, face blank",
+          "source": "GENERATE",
+          "prompt": "a plain round institutional courtroom wall clock with a completely blank featureless face and no numerals or hands markings, hard side light across it, lit ONLY by one fixture which is switched on beside it, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U05",
+          "subject": "clock hands turning, close",
+          "source": "GENERATE",
+          "converted_from_footage": true,
+          "prompt": "clock hands turning, close, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W09",
+          "subject": "thirty years of pages, all blank",
+          "source": "GENERATE",
+          "prompt": "a thick stack of wall calendar pages caught mid-turn on a dark desk with every date worn completely blank and unreadable, lit ONLY by one angled desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W09",
+          "subject": "calendar pages turning over",
+          "source": "FOOTAGE",
+          "footage_query": "calendar pages turning",
+          "bound_title": "time lapse of a clock turning clockwise",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6072,
+          "motion": 1.114,
+          "luma": 111.6
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I07",
+          "subject": "the jury box, twelve chairs empty",
+          "source": "GENERATE",
+          "prompt": "twelve empty wooden jury chairs standing in two rows inside a railed jury box in a dark courtroom, nobody in them, lit ONLY by one bank of overhead lights which are switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W03",
+          "subject": "the death row cell and its one shaft of light",
+          "source": "GENERATE",
+          "prompt": "the interior of a bare death row cell with a steel bunk and a small high barred window throwing one hard shaft onto the concrete floor, nobody present, lit ONLY by that window, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1985-2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the bullet standing on steel",
+          "source": "REUSE_01"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "the hands that finally examined the bullets",
+          "source": "FOOTAGE",
+          "footage_query": "gloved hands resting on a laboratory bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23407__police_interrogation_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U01",
+          "subject": "the task lamp over the examination bench",
+          "source": "FOOTAGE",
+          "footage_query": "task lamp switched on over a workbench",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I03",
+          "subject": "the sealed envelopes waiting to be opened",
+          "source": "FOOTAGE",
+          "footage_query": "small envelopes stacked in a tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8923__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U06",
+          "subject": "the stool at the bench nobody had used",
+          "source": "FOOTAGE",
+          "footage_query": "empty stool beside a workbench",
+          "prompt": null
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "M01",
+          "subject": "two traces that never lined up",
+          "source": "FOOTAGE",
+          "footage_query": "two glowing lines that do not meet",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51283__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W01",
+          "subject": "the bars of the cell he was sent to",
+          "source": "FOOTAGE",
+          "footage_query": "close up of iron prison bars",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-4403__heavy_rain_backlit.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W04",
+          "subject": "the tier of doors he lived on",
+          "source": "FOOTAGE",
+          "footage_query": "narrow cell block walkway with railings",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51259__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U16",
+          "subject": "a cell the size of a bathroom",
+          "source": "FOOTAGE",
+          "footage_query": "shaft of light across a concrete floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1832__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "the one window that marked the days",
+          "source": "FOOTAGE",
+          "footage_query": "small barred window with pale light",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46108__person_crying_silhouette_window.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "the bolt on the outside of his door",
+          "source": "FOOTAGE",
+          "footage_query": "bolt sliding across a steel door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51480__window_blinds_shadow_stripes.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U04",
+          "subject": "the corridor the men were walked down",
+          "source": "FOOTAGE",
+          "footage_query": "narrow corridor receding into darkness",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31066__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U02",
+          "subject": "a door closing at the far end of it",
+          "source": "FOOTAGE",
+          "footage_query": "door closing at the end of a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2671__lone_person_silhouette_walking.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U08",
+          "subject": "the bunks of the men who were gone",
+          "source": "FOOTAGE",
+          "footage_query": "row of empty metal bunks",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53891__retro_diner_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y01",
+          "subject": "what one of the fifty-four left behind",
+          "source": "FOOTAGE",
+          "footage_query": "coat left over the back of a chair",
+          "prompt": null
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W10",
+          "subject": "the gate at the end of the row",
+          "source": "FOOTAGE",
+          "footage_query": "heavy metal gate in a prison corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-50864__broken_chain_link_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        }
+      ]
+    },
+    {
+      "short_id": "short97",
+      "angle": "He walked out in 2015. The two murders he was condemned for were never solved.",
+      "type": "B — the cost nobody counts",
+      "avoids": "short29 ends on the flawed evidence. The release date, his place in the exoneration count, and the unsolved murders are all absent.",
+      "funnel_question_left_for_longform": "Nobody with the power to stop it ever checked. How was that possible for thirty years?",
+      "era": "2015 Alabama",
+      "loop": true,
+      "loop_join": "L5 ends by asking what that day looks like, and L1 answers with the date he walked out, the third of April, 2015.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "On the third of April, 2015, Anthony Ray Hinton walked out of prison a free man, after nearly thirty years.",
+          "delivery": "intense",
+          "source_lines": [
+            "On April 3rd, 2015, Anthony Ray Hinton walked out of prison a free man, after nearly thirty years"
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "He had been convicted in September 1986 and sentenced to die. In Alabama, at that time, the bullet claim was enough.",
+          "delivery": "building",
+          "source_lines": [
+            "In September of 1986, they convicted him of both murders, and he was sentenced to die.",
+            "And in Alabama, in 1986, that was enough."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "Almost no one with the power to stop it ever checked whether that claim was actually true.",
+          "delivery": "building",
+          "source_lines": [
+            "And almost no one with the power to stop it ever checked whether it was actually true."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "And the two murders he spent thirty years condemned for were never solved.",
+          "delivery": "intense",
+          "source_lines": [
+            "The two murders he spent thirty years condemned for were never solved."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "In 1985, around Birmingham, Alabama, two fast-food managers were murdered in separate late-night robberies, months apart. John Davidson in February. Thomas Wayne Vason in July.",
+          "delivery": "building",
+          "source_lines": [
+            "In 1985, around Birmingham, Alabama, two fast-food managers were murdered in separate late-night robberies — John Davidson in February, Thomas Wayne Vason in July."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "There were no eyewitnesses to either killing. There were no fingerprints. For months the cases went nowhere, and a police department needed to close them.",
+          "delivery": "building",
+          "source_lines": [
+            "There were no eyewitnesses to either killing. There were no fingerprints.",
+            "For months, the cases went nowhere — and an unsolved murder of a working man is exactly the kind of case a police department badly needs to close."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "At the moment of the robbery that put his face in a lineup, Hinton was fifteen miles away, clocked in inside a locked supermarket warehouse.",
+          "delivery": "intense",
+          "source_lines": [
+            "At the moment of that third robbery, Anthony Ray Hinton was fifteen miles away, locked inside a supermarket warehouse, working a night shift.",
+            "He was clocked in."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "That is what the state was holding on to. So what does the day it finally lets go look like?",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W10",
+          "subject": "the prison gate standing open on daylight",
+          "source": "GENERATE",
+          "prompt": "a heavy prison gate standing wide open onto flat daylight seen from inside a dark sally port, nobody in frame, no lettering anywhere, lit ONLY by that daylight beyond, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U13",
+          "subject": "a man walking out into the light",
+          "source": "GENERATE",
+          "prompt": "one lone silhouette walking away from camera through an open prison gate into hard daylight, face not visible, the figure placed high in frame with empty ground below, lit ONLY by the daylight ahead, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U13",
+          "subject": "a silhouette walking into daylight",
+          "source": "FOOTAGE",
+          "footage_query": "silhouette walking into daylight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31279__lone_person_silhouette_walking.mp4",
+          "bound_title": "silhouettes on a busy city street",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4199,
+          "motion": 28.993,
+          "luma": 77.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U12",
+          "subject": "a hand pushing the last door open",
+          "source": "GENERATE",
+          "prompt": "macro of one hand pushing a heavy steel door outward into blinding daylight, the edge of the door flaring, no face or body visible above the wrist, lit ONLY by that daylight beyond, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "R06",
+          "subject": "the 1986 courtroom gallery, empty",
+          "source": "GENERATE",
+          "prompt": "rows of empty polished wooden gallery benches receding into shadow in an old southern courtroom, nobody present, all nameplates blank, lit ONLY by one shaft of light from a high window, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "R06",
+          "subject": "an empty courtroom interior",
+          "source": "FOOTAGE",
+          "footage_query": "empty courtroom interior",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14605__jury_box_empty.mp4",
+          "bound_title": "a dark empty hallway with a light on the wall",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.8035,
+          "motion": 1.075,
+          "luma": 42.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "I07",
+          "subject": "twelve chairs that took about an hour",
+          "source": "GENERATE",
+          "prompt": "twelve empty wooden jury chairs in two rows inside a railed jury box in a dark 1980s courtroom, nobody in them, lit ONLY by one bank of overhead lights which are switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "W07",
+          "subject": "the bullet the whole case hung on",
+          "source": "GENERATE",
+          "prompt": "extreme macro of one deformed lead bullet lying on a steel evidence tray with nothing else in frame and no lettering anywhere, lit ONLY by one hard rim light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "W07",
+          "subject": "a bullet on a metal tray",
+          "source": "GENERATE",
+          "converted_from_footage": true,
+          "prompt": "a bullet on a metal tray, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "U09",
+          "subject": "a bailiff standing at the courtroom door",
+          "source": "GENERATE",
+          "prompt": "the silhouette of a uniformed bailiff standing still at a closed courtroom door with his head high in the upper third of frame and empty floor below him, face not visible, lit ONLY by one shaft of light falling across the door, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "W02",
+          "subject": "a figure behind vertical bars, backlit",
+          "source": "GENERATE",
+          "prompt": "the silhouette of a man standing behind thick vertical iron bars with hard corridor light behind him, face not visible, strong vertical rhythm across the frame, lit ONLY by that corridor light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U08",
+          "subject": "the wall of folders nobody opened",
+          "source": "GENERATE",
+          "prompt": "a wall of grey steel filing shelves packed with unlabelled folders shot straight on, nobody present, lit ONLY by one flickering fluorescent tube which is switched on overhead, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U08",
+          "subject": "shelves of files in an office",
+          "source": "FOOTAGE",
+          "footage_query": "filing cabinets shelves office",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1834__prison_corridor.mp4",
+          "bound_title": "a police officer talking to a detainee",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4787,
+          "motion": 14.6,
+          "luma": 82.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "I01",
+          "subject": "the stamp that kept the claim alive",
+          "source": "GENERATE",
+          "prompt": "macro of a wooden-handled rubber stamp resting on a dried ink pad with the die face worn completely smooth and unreadable, nobody in frame, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U11",
+          "subject": "a state office window at first light",
+          "source": "GENERATE",
+          "prompt": "an office window at first light with a desk buried in blank unlabelled folders silhouetted against it, the chair empty, lit ONLY by the pale dawn beyond the glass, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U06",
+          "subject": "the chair nobody ever sat down in",
+          "source": "GENERATE",
+          "converted_from_footage": true,
+          "prompt": "the chair nobody ever sat down in, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "Y05",
+          "subject": "two case files tied shut, side by side",
+          "source": "GENERATE",
+          "prompt": "two thick case files closed and tied with cloth bands lying side by side on a dark desk with both covers worn completely blank, nobody in frame, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "Y05",
+          "subject": "a closed case file on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "closed case file folder",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23692__case_files_stack_desk.mp4",
+          "bound_title": "lawyer putting documents in briefcase",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5227,
+          "motion": 13.06,
+          "luma": 147.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "a late-night service counter, shutter half down",
+          "source": "GENERATE",
+          "prompt": "the service counter of a closed roadside restaurant at night with the shutter pulled half down over it and the stools empty, no signage or lettering anywhere, nobody present, lit ONLY by one interior light still switched on behind the counter, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "an empty counter after closing",
+          "source": "FOOTAGE",
+          "footage_query": "empty diner counter at night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54033__motel_neon_sign_night.mp4",
+          "bound_title": "video of a money counter machine",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.481,
+          "motion": 23.18,
+          "luma": 100.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "the car park behind the closed restaurant",
+          "source": "GENERATE",
+          "prompt": "an empty asphalt car park behind a closed roadside restaurant at night, wet ground and a bare kerb, nobody in frame, no lettering anywhere, lit ONLY by one security lamp which is switched on above the back door, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "one blank sheet on the corridor floor",
+          "source": "GENERATE",
+          "prompt": "one completely blank sheet of paper lying alone on a scuffed institutional corridor floor, nobody in frame, lit ONLY by a hard shaft of light from one fixture which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2015 Alabama, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the open prison gate",
+          "source": "REUSE_01"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "M06",
+          "subject": "a robbery at a fast-food counter",
+          "source": "FOOTAGE",
+          "footage_query": "open cash drawer on a counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14677__witness_stand_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "I04",
+          "subject": "the back door of a restaurant after hours",
+          "source": "FOOTAGE",
+          "footage_query": "metal back door with a padlock at night",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38939__atm_machine_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U01",
+          "subject": "the one lamp burning over that back door",
+          "source": "FOOTAGE",
+          "footage_query": "security lamp glowing above a doorway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1373__warm_window_light_rays.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U02",
+          "subject": "the second restaurant, months later, closing up",
+          "source": "FOOTAGE",
+          "footage_query": "glass door closing at night",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30795__police_car_lights_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R09",
+          "subject": "a manager's car left at the kerb",
+          "source": "FOOTAGE",
+          "footage_query": "empty car interior at night",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-3674__headlights_in_rain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W06",
+          "subject": "no fingerprints, nothing to hold",
+          "source": "FOOTAGE",
+          "footage_query": "empty steel tray on a counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11414__airport_terminal_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "I03",
+          "subject": "two cases going nowhere for months",
+          "source": "FOOTAGE",
+          "footage_query": "papers piled high in an office tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22602__law_books_spines_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U16",
+          "subject": "a street with nobody on it to see",
+          "source": "FOOTAGE",
+          "footage_query": "empty street at night under a streetlight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36774__empty_boardroom_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "R03",
+          "subject": "a department that badly needed to close them",
+          "source": "FOOTAGE",
+          "footage_query": "empty interrogation room with a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23408__police_interrogation_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.336
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "R01",
+          "subject": "the pressure that kept coming back",
+          "source": "FOOTAGE",
+          "footage_query": "police car lights flashing at night",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39982__ambulance_lights_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "the warehouse he was locked inside",
+          "source": "FOOTAGE",
+          "footage_query": "aisle between tall warehouse shelves",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5385__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U05",
+          "subject": "he was clocked in at the time",
+          "source": "FOOTAGE",
+          "footage_query": "industrial wall clock in a warehouse",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9728__clock_ticking_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U10",
+          "subject": "the night shift he was working",
+          "source": "FOOTAGE",
+          "footage_query": "hands lifting a cardboard box",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-48483__homeless_person_on_street_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R10",
+          "subject": "the shutter locked from the inside",
+          "source": "FOOTAGE",
+          "footage_query": "closed roller shutter seen from inside",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62553__police_lineup_wall.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W08",
+          "subject": "the room where his face was picked out",
+          "source": "FOOTAGE",
+          "footage_query": "empty lineup room with a plain wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26007__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

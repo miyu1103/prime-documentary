@@ -81,6 +81,10 @@ import {MortonFilm, mortonFilmDurationInFrames} from './compositions/MortonFilm'
 import {NorfolkFilm, norfolkFilmDurationInFrames} from './compositions/NorfolkFilm';
 import {BurgeFilm, burgeFilmDurationInFrames} from './compositions/BurgeFilm';
 import {PostofficeFilm, postofficeFilmDurationInFrames} from './compositions/PostofficeFilm';
+import {RobosigningFilm, robosigningFilmDurationInFrames} from './compositions/RobosigningFilm';
+import {LejeuneFilm, lejeuneFilmDurationInFrames} from './compositions/LejeuneFilm';
+import {SurfsideFilm, surfsideFilmDurationInFrames} from './compositions/SurfsideFilm';
+import {FieldtestFilm, fieldtestFilmDurationInFrames} from './compositions/FieldtestFilm';
 import {CentralparkThumbnail, CENTRALPARK_THUMBS} from './compositions/CentralparkThumbnails';
 import {Frazier39Opening, frazier39OpeningDurationInFrames} from './compositions/Frazier39Opening';
 import {FrazierThumbnail, FRAZIER_THUMBS} from './compositions/FrazierThumbnails';
@@ -178,6 +182,21 @@ import {SHORT59} from './data/short59';
 import {SHORT60} from './data/short60';
 import {SHORT63} from './data/short63';
 import {SHORT66} from './data/short66';
+import {SHORT82} from './data/short82';
+import {SHORT86} from './data/short86';
+import {SHORT87} from './data/short87';
+import {SHORT88} from './data/short88';
+import {SHORT89} from './data/short89';
+import {SHORT90} from './data/short90';
+import {SHORT91} from './data/short91';
+import {SHORT92} from './data/short92';
+import {SHORT93} from './data/short93';
+import {SHORT94} from './data/short94';
+import {SHORT95} from './data/short95';
+import {SHORT96} from './data/short96';
+import {SHORT97} from './data/short97';
+import {SHORT98} from './data/short98';
+import {SHORT99} from './data/short99';
 import {SHORT01} from './data/short01';
 import {SHORT02} from './data/short02';
 import {SHORT03} from './data/short03';
@@ -580,6 +599,38 @@ export const RemotionRoot: React.FC = () => {
         id="Ep56Postoffice"
         component={PostofficeFilm}
         durationInFrames={postofficeFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep60Surfside"
+        component={SurfsideFilm}
+        durationInFrames={surfsideFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep59Robosigning"
+        component={RobosigningFilm}
+        durationInFrames={robosigningFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep58Lejeune"
+        component={LejeuneFilm}
+        durationInFrames={lejeuneFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep57Fieldtest"
+        component={FieldtestFilm}
+        durationInFrames={fieldtestFilmDurationInFrames}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}
@@ -2045,6 +2096,174 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{data: SHORT66, platform: 'tiktok' as const, depth: true, method: true}} />
       <Still id="ShortThumb-short66" component={ShortThumb} width={1080} height={1920}
         defaultProps={{data: SHORT66, headline: 'THEY BURIED\nTHE LETTER', badge: '1982', backgroundSrc: 'shorts/short66/short66_04.png'}} />
+      {/* ---- SHORT #82 Miranda (he won at the Supreme Court and went to prison anyway) — EP01 ----
+           Second angle on EP01: short01 already took "why police read you your rights". This one
+           takes the ACT IV twist short01 never touches. Numbered 82 because short60-81 are
+           reserved by SHORTS_SLATE_EP53-56 / EP57-59. */}
+      <Composition id="Short-short82-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT82, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT82, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short82-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT82, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT82, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short82" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT82, headline: 'HE WON.\nHE WENT\nTO PRISON.', badge: '5-4', backgroundSrc: 'shorts/short82/short82_04.png'}} />
+      {/* ---- SHORT #86 Titan (the letter three dozen professionals signed) — EP16 ---- */}
+      <Composition id="Short-short86-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT86, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT86, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short86-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT86, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT86, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short86" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT86, headline: 'THEY WARNED\nHIM IN 2018', badge: '36 SIGNED', backgroundSrc: 'shorts/short86/short86_01.png'}} />
+      {/* ---- SHORT #87 Titan (the seam between everyone's rules and no one's) — EP16 ---- */}
+      <Composition id="Short-short87-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT87, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT87, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short87-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT87, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT87, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short87" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT87, headline: 'NO RULES\nOUT THERE', badge: 'NO FLAG', backgroundSrc: 'shorts/short87/short87_01.png'}} />
+      {/* ---- SHORT #88 — Terry — a frisk is not a search ---- */}
+      <Composition id="Short-short88-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT88, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT88, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short88-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT88, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT88, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short88" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT88, headline: 'A FRISK IS NOT\nA SEARCH', badge: 'TERRY', backgroundSrc: 'shorts/short88/short88_01.png'}} />
+      {/* ---- SHORT #89 — Terry — the argument that won ---- */}
+      <Composition id="Short-short89-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT89, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT89, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short89-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT89, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT89, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short89" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT89, headline: 'IT WAS NEVER\nABOUT YOU', badge: '8–1', backgroundSrc: 'shorts/short89/short89_01.png'}} />
+      {/* ---- SHORT #90 — Florence — he was the passenger ---- */}
+      <Composition id="Short-short90-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT90, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT90, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short90-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT90, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT90, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short90" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT90, headline: 'HE WASN’T\nEVEN DRIVING', badge: 'STRIP SEARCH', backgroundSrc: 'shorts/short90/short90_01.png'}} />
+      {/* ---- SHORT #91 — Florence — scared, petrified, humiliated ---- */}
+      <Composition id="Short-short91-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT91, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT91, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short91-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT91, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT91, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short91" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT91, headline: 'SCARED.\nHUMILIATED.', badge: '5–4', backgroundSrc: 'shorts/short91/short91_01.png'}} />
+      {/* ---- SHORT #92 — Cooper — the name was never his ---- */}
+      <Composition id="Short-short92-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT92, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT92, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short92-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT92, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT92, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short92" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT92, headline: 'THAT WAS NEVER\nHIS NAME', badge: 'UNSOLVED', backgroundSrc: 'shorts/short92/short92_01.png'}} />
+      {/* ---- SHORT #93 — Cooper — the door in the tail ---- */}
+      <Composition id="Short-short93-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT93, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT93, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short93-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT93, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT93, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short93" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT93, headline: 'HE PICKED THAT\nPLANE', badge: 'A DOOR IN THE TAIL', backgroundSrc: 'shorts/short93/short93_01.png'}} />
+      {/* ---- SHORT #94 — Madoff — nobody ran the warnings down ---- */}
+      <Composition id="Short-short94-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT94, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT94, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short94-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT94, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT94, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short94" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT94, headline: 'HE DID THE MATH\nIN 2000', badge: 'NOBODY CHECKED', backgroundSrc: 'shorts/short94/short94_01.png'}} />
+      {/* ---- SHORT #95 — Madoff — one big lie ---- */}
+      <Composition id="Short-short95-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT95, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT95, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short95-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT95, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT95, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short95" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT95, headline: 'HE TOLD HIS\nOWN SONS', badge: 'ONE BIG LIE', backgroundSrc: 'shorts/short95/short95_01.png'}} />
+      {/* ---- SHORT #96 — Hinton — the test nobody ran ---- */}
+      <Composition id="Short-short96-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT96, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT96, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short96-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT96, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT96, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short96" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT96, headline: 'NOBODY TESTED\nTHE BULLETS', badge: '30 YEARS', backgroundSrc: 'shorts/short96/short96_01.png'}} />
+      {/* ---- SHORT #97 — Hinton — never solved ---- */}
+      <Composition id="Short-short97-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT97, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT97, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short97-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT97, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT97, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short97" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT97, headline: 'HE WALKED OUT\nIN 2015', badge: 'STILL UNSOLVED', backgroundSrc: 'shorts/short97/short97_01.png'}} />
+      {/* ---- SHORT #98 — Lange — not never, just not automatically ---- */}
+      <Composition id="Short-short98-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT98, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT98, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short98-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT98, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT98, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short98" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT98, headline: 'THERE IS NO\nAUTOMATIC YES', badge: 'LANGE', backgroundSrc: 'shorts/short98/short98_01.png'}} />
+      {/* ---- SHORT #99 — Lange — the baseline nobody states ---- */}
+      <Composition id="Short-short99-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT99, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT99, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short99-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT99, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT99, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short99" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT99, headline: 'YOUR DOOR\nSTAYS SHUT', badge: 'BASELINE', backgroundSrc: 'shorts/short99/short99_01.png'}} />
       <Composition
         id="Short-short01-yt"
         component={Short}

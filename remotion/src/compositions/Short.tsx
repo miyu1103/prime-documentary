@@ -106,6 +106,8 @@ export type ShortBeat = {
   bg?: string | null; // background plate behind the hero (factory b-roll / image); cinematic depth
   bgKind?: 'video' | 'image'; // default 'video'
   overlays?: ShortLayer[]; // light/particle/vfx composited above the hero (below grade/telop)
+  /** Run this beat's camera backwards so it ends on the opening framing (loop seam). */
+  rewind?: boolean;
 };
 
 export type ShortCaption = {word: string; startSec: number; endSec: number};
@@ -128,6 +130,14 @@ export type ShortData = {
   ctaLongThumbSrc?: string; // matching long-form's thumbnail, staticFile-relative, 16:9 (1280x720)
   ctaLongTitle?: string; // shortened long-form title. ONE line, <= 36 ASCII chars.
   ctaHeadline?: string; // default 'FULL CASE'. UPPERCASE, <= 2 words, <= 12 ASCII chars.
+  /** Optional y for the caption band (px, 1080x1920). Omit to keep the METHOD default of
+   *  1000, which sits at 52-69% of the frame. Set ~1270 to drop captions to the lower
+   *  third, clear of the subject and still above the Shorts bottom overlay. */
+  captionTop?: number;
+  /** Seconds of fade at the END of the CTA beat. The card's backdrop is the hook plate, so
+   *  fading only the card away leaves the opening image as the final frame and the Short loops
+   *  without a visible seam - the destination still holds for everything before the fade. */
+  ctaFadeOutSec?: number;
   beats: ShortBeat[];
 };
 
@@ -160,22 +170,27 @@ const BLEND: Record<NonNullable<ShortLayer['blend']>, string> = {
  * the sharp hero and drifts the opposite way, so a flat still reads as depth (foreground + background
  * parallax). The hero always moves on scale + X + Y + a hair of rotation (eased), so no frame sits still.
  * `fast` (hook) wraps the hero in a motion-blur Trail for a punchy, produced feel. */
-const MovingImageV: React.FC<{src: string; motion: ShortBeat['motion']; fast?: boolean}> = ({
+const MovingImageV: React.FC<{src: string; motion: ShortBeat['motion']; fast?: boolean; rewind?: boolean}> = ({
   src,
   motion,
   fast,
+  rewind,
 }) => {
   const f = useCurrentFrame();
   const {durationInFrames: d} = useVideoConfig();
   const ease = {extrapolateRight: 'clamp' as const, easing: Easing.inOut(Easing.cubic)};
+  // `rewind` runs the camera backwards so the beat ENDS where the opening beat BEGAN. Without it
+  // the closing plate is the same picture at a different focal length, and the loop seam measured
+  // 41.6/255 - visibly a cut. The motion is still continuous; it just travels the other way.
   const range: [number, number] =
     motion === 'pushin' ? [1.08, fast ? 1.34 : 1.24] : motion === 'parallax' ? [1.1, 1.22] : [1.08, 1.2];
-  const scale = interpolate(f, [0, d], range, ease);
+  const span: [number, number] = rewind ? [range[1], range[0]] : range;
+  const scale = interpolate(f, [0, d], span, ease);
   // continuous multi-axis camera (always moving, direction varies by motion type)
-  const dir = motion === 'parallax' ? 1 : motion === 'kenburns' ? -1 : 0.5;
+  const dir = (motion === 'parallax' ? 1 : motion === 'kenburns' ? -1 : 0.5) * (rewind ? -1 : 1);
   const driftX = interpolate(f, [0, d], [-30 * dir, 30 * dir], ease);
-  const driftY = interpolate(f, [0, d], [30, -30], ease) * (motion === 'pushin' ? 0.4 : 1);
-  const rot = interpolate(f, [0, d], [-0.6, 0.6], ease) * (motion === 'parallax' ? 1 : 0.5);
+  const driftY = interpolate(f, [0, d], rewind ? [-30, 30] : [30, -30], ease) * (motion === 'pushin' ? 0.4 : 1);
+  const rot = interpolate(f, [0, d], rewind ? [0.6, -0.6] : [-0.6, 0.6], ease) * (motion === 'parallax' ? 1 : 0.5);
   // background depth plate: same image, blurred & larger, drifting opposite the hero
   const bgScale = interpolate(f, [0, d], [1.28, 1.42], ease);
   const hero = (
@@ -237,11 +252,14 @@ const DepthPlaneV: React.FC<{src: string; displace: number}> = ({src, displace})
   );
 };
 
-const DepthImageV: React.FC<{src: string; motion: ShortBeat['motion']; fast?: boolean}> = ({src, motion, fast}) => {
+const DepthImageV: React.FC<{src: string; motion: ShortBeat['motion']; fast?: boolean; rewind?: boolean}> = ({src, motion, fast, rewind}) => {
   const f = useCurrentFrame();
   const {durationInFrames: d, width, height} = useVideoConfig();
-  const dir = motion === 'kenburns' ? -1 : 1;
-  const dolly = interpolate(f, [0, Math.max(1, d)], [0, 1], {
+  const dir = (motion === 'kenburns' ? -1 : 1) * (rewind ? -1 : 1);
+  // With `depth` on, THIS is the renderer - not MovingImageV. The first attempt at a loop seam
+  // added rewind only to MovingImageV and the measured seam did not move at all (0.464 structural
+  // match, before and after), because every plate in these Shorts goes through the depth path.
+  const dolly = interpolate(f, [0, Math.max(1, d)], rewind ? [1, 0] : [0, 1], {
     easing: Easing.out(Easing.cubic),
     extrapolateRight: 'clamp',
   });
@@ -487,9 +505,18 @@ const CtaFunnelLayer: React.FC<{
   title?: string;
   headline: string;
   platform: ShortPlatform;
-}> = ({thumbSrc, title, headline, platform}) => {
+  fadeOutSec?: number;
+}> = ({thumbSrc, title, headline, platform, fadeOutSec}) => {
   const frame = useCurrentFrame();
   const {fps, durationInFrames} = useVideoConfig();
+  // Owner 2026-08-02: make the Short loop. The backdrop of this beat is already the hook plate,
+  // so fading the CARD out at the end - not the picture - returns the frame to exactly what the
+  // viewer saw at t=0. Everything before the fade still holds the destination on screen.
+  const fadeF = Math.round((fadeOutSec ?? 0) * fps);
+  const exit = fadeF > 0
+    ? interpolate(frame, [durationInFrames - fadeF, durationInFrames - 1], [1, 0],
+                  {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'})
+    : 1;
   // Every timing below is authored in SECONDS and converted here — no hard-coded frame numbers.
   const F = (s: number) => Math.round(s * fps);
   const easeOut = {
@@ -500,7 +527,10 @@ const CtaFunnelLayer: React.FC<{
 
   // L1 — ink scrim over the outgoing beat. Never opacity-only: the plate pushes in as it darkens
   // (1.00 -> 1.04 by 0.13 s) and keeps creeping to 1.08 so no frame of the hold is static (§4-3).
-  const scrim = interpolate(frame, [0, F(0.13)], [0, 0.72], easeOut);
+  // 0.72 buried the backdrop: the closing 8.6 s of short89 measured a mean luma of 11.8/255,
+  // unreadable on a phone outdoors, even though the card itself was legible. The card sits on
+  // its own gold-bordered panel and does not need the whole frame darkened to be read.
+  const scrim = interpolate(frame, [0, F(0.13)], [0, 0.46], easeOut);
   const bgScale = interpolate(
     frame,
     [0, F(0.13), F(1.1), Math.max(F(1.1) + 1, durationInFrames)],
@@ -556,7 +586,7 @@ const CtaFunnelLayer: React.FC<{
   ) : null;
 
   return (
-    <AbsoluteFill style={{pointerEvents: 'none'}}>
+    <AbsoluteFill style={{pointerEvents: 'none', opacity: exit}}>
       {/* L1 — darkening + pushing-in scrim over the outgoing beat */}
       <AbsoluteFill
         style={{
@@ -666,12 +696,15 @@ const CtaFunnelLayer: React.FC<{
               opacity: pillEnter,
             }}
           >
-            <span style={{fontSize: 30}}>▶</span>
-            {/* §4-5 literally specifies '▶ FULL CASE' for TikTok, but the default headline is also
-                'FULL CASE' — rendered, the pill just repeated the headline verbatim. 'ON OUR
-                PROFILE' matches the spec's own TikTok narration swap ("…is on our profile") and
-                still names no external platform, which is the actual rule. */}
-            {platform === 'tiktok' ? 'ON OUR PROFILE' : 'ON THE CHANNEL'}
+            {/* Owner 2026-08-02: "ボタンを押したらそこに飛ぶ仕様になってる？" - it never did.
+                A pill burned into the frame looks tappable and is not, which is worse than no
+                pill: the viewer taps, nothing happens, and the one real link goes unused.
+                The only 1-tap native path out of a Short is the Studio 'Related video' link,
+                which YouTube renders BELOW the player. So this element stops imitating a button
+                and starts pointing at the real one. TikTok has no such link, so it keeps the
+                profile wording (and still names no external platform). */}
+            <span style={{fontSize: 30}}>{platform === 'tiktok' ? '▶' : '▼'}</span>
+            {platform === 'tiktok' ? 'ON OUR PROFILE' : 'LINK BELOW'}
           </div>
         </div>
 
@@ -798,9 +831,9 @@ const BeatView: React.FC<{beat: ShortBeat; platform: ShortPlatform; data: ShortD
             <MovingVideoV src={beat.src} />
           ) : beat.src ? (
             depth ? (
-              <DepthImageV src={beat.src} motion={beat.motion} fast={beat.fast} />
+              <DepthImageV src={beat.src} motion={beat.motion} fast={beat.fast} rewind={beat.rewind} />
             ) : (
-              <MovingImageV src={beat.src} motion={beat.motion} fast={beat.fast} />
+              <MovingImageV src={beat.src} motion={beat.motion} fast={beat.fast} rewind={beat.rewind} />
             )
           ) : !beat.bg ? (
             <BrandCard />
@@ -825,6 +858,7 @@ const BeatView: React.FC<{beat: ShortBeat; platform: ShortPlatform; data: ShortD
             title={data.ctaLongTitle}
             headline={data.ctaHeadline ?? CTA_HEADLINE_DEFAULT}
             platform={platform}
+            fadeOutSec={data.ctaFadeOutSec}
           />
         ) : (
           <CtaLayer text={ctaText} />
@@ -866,7 +900,11 @@ const PersonaMark: React.FC = () => (
  * CENTER-safe band (y1000–1320) so they clear the YouTube/TikTok/Reels bottom title + right
  * action-rail UI (rule 11), with a fixed kinetic pop + gold keyline (reusable persona caption style,
  * rule 10). Strictly below the telop zone either way. */
-const CaptionLayer: React.FC<{captions: ShortCaption[] | null; method?: boolean}> = ({captions, method}) => {
+const CaptionLayer: React.FC<{captions: ShortCaption[] | null; method?: boolean; topOverride?: number}> = ({
+  captions,
+  method,
+  topOverride,
+}) => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   if (!captions || captions.length === 0) return null;
@@ -889,8 +927,12 @@ const CaptionLayer: React.FC<{captions: ShortCaption[] | null; method?: boolean}
         position: 'absolute',
         left: 0,
         right: 0,
-        top: method ? 1000 : 1280,
-        height: method ? 320 : 280,
+        // METHOD's default band is y1000-1320, i.e. 52-69% of the frame - dead centre, over the
+        // subject. `captionTop` lets one Short drop the band toward the lower third without
+        // moving any already-published cut. y1270 + 250 ends at 1520, still clear of the Shorts
+        // bottom overlay (measured/estimated at y1500+ for a one-line title).
+        top: topOverride ?? (method ? 1000 : 1280),
+        height: topOverride ? 220 : method ? 320 : 280,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -947,7 +989,7 @@ export const Short: React.FC<{data: ShortData; platform: ShortPlatform; depth?: 
         ))}
       </Series>
       {method ? <PersonaMark /> : null}
-      <CaptionLayer captions={captions} method={method} />
+      <CaptionLayer captions={captions} method={method} topOverride={data.captionTop} />
       {data.narrationSrc ? <Audio src={staticFile(data.narrationSrc)} /> : null}
       {data.bgmSrc ? <Audio src={staticFile(data.bgmSrc)} volume={0.16} /> : null}
       {data.ambienceSrc ? <Audio src={staticFile(data.ambienceSrc)} volume={0.06} /> : null}

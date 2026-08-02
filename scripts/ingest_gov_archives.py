@@ -108,7 +108,8 @@ MAX_ITEM_BYTES = 2 * GB
 MIN_ITEM_BYTES = 20 * 1024
 DEFAULT_THRESHOLD = 30                      # relevance gate (tuned for precision)
 LEDGER_REFRESH_S = 120                      # re-read sibling ledgers this often
-EMPTY_PASS_STOP = 4                         # consecutive empty passes = exhausted
+EMPTY_PASS_STOP = 4
+_LOC_429 = [0]   # consecutive 429s from loc.gov; see the breaker in the loc adapter                         # consecutive empty passes = exhausted
 QC_SHEET_EVERY = 500                        # CONTRACT §7: contact sheet cadence
 QC_SHEET_TILES = 60
 QC_DIR = os.path.join(H_ARCHIVE, "_qc")
@@ -259,7 +260,74 @@ THEMES: dict[str, dict[str, list[str]]] = {
         "image": ["bank building", "bank vault door", "printing currency",
                   "treasury building"],
         "kw": ["currency", "mint", "teller", "vault", "treasury", "dollar"],
-        "neg": ["river bank", "banks of the"],
+        # Measured 2026-08-02: 191 nara rows under this theme and the visible majority are
+        # NASA Lewis engineering photographs - LOAD BANK, CAPACITOR BANK, ROADWAY AND BANK,
+        # ACTON AIR CONVEYING BANK AND PIPING. Two words of negatives let every engineering
+        # sense of "bank" walk straight through the gate.
+        "neg": ["river bank", "banks of the", "left bank", "right bank", "sand bank",
+                "snow bank", "embankment", "load bank", "capacitor bank", "resistor bank",
+                "battery bank", "air conveying bank", "bank of cylinders", "bank of tubes",
+                "bank of lights", "bank of engines", "roadway and bank", "test bank",
+                "blood bank", "bank angle", "banked turn", "seed bank", "cloud bank",
+                "grand banks", "fishing bank", "light bank", "mint julep", "peppermint",
+                "spearmint", "mint condition", "vaulted ceiling", "pole vault"],
+    },
+    "depression_hardship": {
+        "video": ["bread line", "relief station unemployed", "civilian conservation corps camp",
+                  "works progress administration project", "migrant camp"],
+        "image": ["bread line unemployed men", "soup kitchen relief", "men waiting relief office",
+                  "hooverville shacks", "migrant family roadside", "sharecropper cabin",
+                  "evicted family belongings sidewalk", "unemployed men street corner"],
+        "kw": ["bread line", "breadline", "soup kitchen", "relief", "unemployed", "destitute",
+               "migrant", "transient camp", "hooverville", "wpa", "works progress",
+               "civilian conservation corps", "farm security administration", "dust bowl",
+               "drought refugee", "eviction", "poor relief"],
+        "neg": ["barometric", "atmospheric depression", "tropical depression", "relief map",
+                "relief carving", "bas relief", "relief valve", "relief pitcher",
+                "relief column", "surface depression", "crater depression"],
+    },
+    "factory_manufacturing": {
+        "video": ["assembly line automobile plant", "steel mill open hearth", "textile mill weaving",
+                  "aircraft factory production", "foundry pouring molten metal",
+                  "cannery production line", "shipyard construction ways"],
+        "image": ["automobile assembly line workers", "steel mill blast furnace",
+                  "textile mill spinning frames", "factory machine shop lathes",
+                  "foundry ladle pouring", "canning factory women workers",
+                  "factory smokestacks exterior", "conveyor belt production line"],
+        "kw": ["assembly line", "production line", "factory", "mill", "foundry",
+               "blast furnace", "open hearth", "rolling mill", "machine shop", "lathe",
+               "conveyor", "manufacturing", "spinning frame", "loom", "cannery", "shop floor"],
+        "neg": ["mill pond", "grist mill", "windmill", "sawmill scenery", "run of the mill",
+                "treadmill", "mill creek", "mill street", "millinery", "plant life",
+                "plant specimen", "botanical", "sewage plant", "plant a tree"],
+    },
+    "retail_commerce": {
+        "video": ["department store", "supermarket shoppers", "shopping district christmas"],
+        "image": ["department store interior counters", "department store window display",
+                  "grocery store interior shelves", "supermarket checkout counters",
+                  "five and ten cent store interior", "shopping crowd christmas street",
+                  "shop window display mannequins", "chain store front"],
+        "kw": ["department store", "dry goods", "grocery", "supermarket", "chain store",
+               "five and ten", "merchandise", "window display", "shoppers", "cash register",
+               "retail", "showroom", "mail order", "storefront", "shopping district"],
+        "neg": ["store room", "storage", "cold storage", "storehouse", "ammunition store",
+                "commissary ship", "store ship", "supply depot", "counterattack",
+                "counter battery", "counterweight", "geiger counter"],
+    },
+    "stock_market_exchange": {
+        "video": ["stock exchange trading floor", "commodity exchange pit", "stock ticker tape",
+                  "brokerage office customers"],
+        "image": ["new york stock exchange floor", "stock exchange building exterior",
+                  "curb market brokers", "stock ticker machine",
+                  "brokerage board room quotations", "chicago board of trade pit",
+                  "cotton exchange trading floor"],
+        "kw": ["stock exchange", "brokerage", "broker", "ticker", "quotation board",
+               "trading floor", "curb market", "board of trade", "commodity exchange",
+               "securities", "stock certificate", "speculation", "wall street"],
+        "neg": ["exchange student", "telephone exchange", "exchange of prisoners",
+                "exchange of fire", "heat exchanger", "ion exchange", "post exchange",
+                "px exchange", "prisoner exchange", "stock car", "stock pond", "livestock",
+                "rolling stock", "gun stock", "stock pile", "stockade"],
     },
     "world_cities": {
         "video": ["city street traffic", "aerial view city", "harbor city skyline"],
@@ -341,6 +409,17 @@ STRONG_TERMS: dict[str, set[str]] = {
     "newspapers_printing": {"linotype", "printing", "newsroom", "pressroom",
                             "newspaper"},
     "government_buildings": {"capitol", "courthouse", "statehouse"},
+    # For the finance/business channels (2026-08-02). Without a STRONG_TERMS entry a new
+    # theme needs two ordinary term hits to clear the gate of 30, so most real matches
+    # would be discarded silently.
+    "depression_hardship": {"breadline", "bread line", "hooverville", "sharecropper",
+                            "soup kitchen", "relief station", "migrant camp"},
+    "factory_manufacturing": {"foundry", "blast furnace", "assembly line", "rolling mill",
+                              "open hearth", "textile mill", "machine shop"},
+    "retail_commerce": {"department store", "five and ten", "dry goods", "supermarket",
+                        "chain store"},
+    "stock_market_exchange": {"stock exchange", "brokerage", "ticker", "curb market",
+                              "board of trade"},
     "navy_harbor": {"shipyard", "harbor", "harbour", "drydock", "battleship",
                     "destroyer"},
     "period_telephone_tech": {"switchboard", "telegraph", "telephone"},
@@ -1208,6 +1287,20 @@ def src_loc(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
                     "c": 40, "sp": PASS})
             except Exception as e:  # noqa: BLE001
                 log(f"  loc search fail ({q!r}): {e}")
+                # 429 circuit breaker. Measured 2026-08-02: fifty failures to one success
+                # in sixty log lines, every one HTTP 429 — the lane was asking loc.gov
+                # four times per query, query after query, while loc.gov was already
+                # refusing. That is the impoliteness CONTRACT 8 forbids, and it turns a
+                # soft limit into a hard one. Drop the source for this run; nara keeps
+                # working and the next launch starts loc clean.
+                if "429" in str(e) or "Too Many Requests" in str(e):
+                    _LOC_429[0] += 1
+                    if _LOC_429[0] >= 5:
+                        log("  loc: 5 consecutive 429s - backing off for the rest of this "
+                            "run (nara continues; relaunch to retry loc)")
+                        return got
+                else:
+                    _LOC_429[0] = 0
                 continue
             for res in data.get("results", []) or []:
                 if got >= limit or not ledger.shelf_ok():

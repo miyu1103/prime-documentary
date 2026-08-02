@@ -16,7 +16,7 @@ type ThumbVariant = {
   headline: string;
   kicker: string;
   image: string;
-  motif: 'search' | 'warrant' | 'police' | 'life' | 'locked';
+  motif: 'search' | 'warrant' | 'police' | 'life' | 'locked' | 'premium';
   accent: 'blue' | 'gold';
 };
 
@@ -60,6 +60,14 @@ export const rileyThumbnailVariants: ThumbVariant[] = [
     image: 'riley/PD-2026-007-S005-IMG-001.v001.png',
     motif: 'locked',
     accent: 'blue',
+  },
+  {
+    id: 'thumb06',
+    headline: 'GET A WARRANT',
+    kicker: 'PHONE SEARCH',
+    image: 'riley/v004_180/S017/S017_002.png',
+    motif: 'premium',
+    accent: 'gold',
   },
 ];
 
@@ -146,7 +154,43 @@ const LockedPhone: React.FC<{accent: string}> = ({accent}) => (
   </svg>
 );
 
+const PremiumWarrant: React.FC<{accent: string}> = ({accent}) => (
+  <svg width="1280" height="720" style={{position: 'absolute', inset: 0}}>
+    <defs>
+      <filter id="rileyPremiumGlow" x="-80%" y="-80%" width="260%" height="260%">
+        <feGaussianBlur stdDeviation="14" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+    </defs>
+    <rect x="748" y="56" width="188" height="620" fill={BLUE} opacity="0.12" transform="skewX(-13)" />
+    <rect x="842" y="56" width="42" height="620" fill={accent} opacity="0.42" transform="skewX(-13)" />
+    {Array.from({length: 6}, (_, i) => {
+      const x = 715 + (i % 2) * 205;
+      const y = 176 + Math.floor(i / 2) * 92;
+      return (
+        <g key={i} opacity={0.74 - i * 0.06}>
+          <rect x={x} y={y} width="172" height="52" rx="10" fill="#000000B8" stroke={i % 2 ? accent : BLUE} strokeWidth="3" />
+          <line x1={x + 22} x2={x + 150} y1={y + 26} y2={y + 26} stroke={i % 2 ? accent : BLUE} strokeWidth="5" opacity="0.75" />
+        </g>
+      );
+    })}
+    <g transform="translate(740 454) rotate(-9)" filter="url(#rileyPremiumGlow)">
+      <rect x="0" y="0" width="420" height="100" fill="#000000CC" stroke={accent} strokeWidth="7" />
+      <text x="210" y="69" textAnchor="middle" fill={accent} fontFamily={BRAND.font.display} fontSize="56">WARRANT</text>
+    </g>
+    <g transform="translate(910 128) rotate(7)">
+      <rect x="0" y="0" width="142" height="228" rx="28" fill="#02050B" stroke={SILVER} strokeWidth="5" />
+      <rect x="29" y="104" width="84" height="62" rx="9" fill="#000000" stroke={accent} strokeWidth="5" />
+      <path d="M47 104 L47 82 C47 55 95 55 95 82 L95 104" fill="none" stroke={accent} strokeWidth="8" strokeLinecap="round" />
+    </g>
+  </svg>
+);
+
 const Motif: React.FC<{variant: ThumbVariant; accent: string}> = ({variant, accent}) => {
+  if (variant.motif === 'premium') return <PremiumWarrant accent={accent} />;
   if (variant.motif === 'warrant') return <WarrantStamp accent={accent} />;
   if (variant.motif === 'police') return <PoliceBeam accent={accent} />;
   if (variant.motif === 'life') return <LifeGrid accent={accent} />;
@@ -158,7 +202,7 @@ export const RileyThumbnail: React.FC<{variantIndex?: number}> = ({variantIndex 
   const variant = rileyThumbnailVariants[variantIndex] ?? rileyThumbnailVariants[0];
   const accent = variant.accent === 'gold' ? GOLD : BLUE;
   const lines = splitHeadline(variant.headline);
-  const primarySize = lines.some((line) => line.length > 15) ? 78 : 106;
+  const primarySize = variant.id === 'thumb06' ? 88 : lines.some((line) => line.length > 15) ? 78 : 106;
   return (
     <AbsoluteFill style={{backgroundColor: INK, overflow: 'hidden'}}>
       <Img

@@ -63,6 +63,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import subprocess
 import sys
 import time
@@ -100,7 +101,7 @@ QUARANTINE = os.path.join(H_ROOT, "_quarantine")
 REJECTS_PATH = os.path.join(LEDGER_DIR, "rejects.jsonl")
 EXISTING_INDEX = os.path.join(H_ROOT, "existing_index.json")
 
-MY_SOURCES = ["nasa", "noaa", "met", "smithsonian", "nypl", "rawpixel"]
+MY_SOURCES = ["nasa", "noaa", "met", "smithsonian", "nypl", "rawpixel", "wikimedia"]
 LANE = os.environ.get("PD_INGEST_LANE", "sci")
 
 UA = "PrimeDocumentaryIngest/1.0 (archival research; contact: aab153792@gmail.com)"
@@ -109,7 +110,7 @@ MIN_ITEM_BYTES = 15 * 1024
 MIN_IMAGE_LONG_SIDE = 1200
 MIN_VIDEO_HEIGHT = 480
 
-RATE = {"nasa": 0.8, "noaa": 1.0, "met": 0.4, "smithsonian": 1.0,
+RATE = {"nasa": 0.8, "noaa": 1.0, "met": 0.4, "smithsonian": 1.0, "wikimedia": 1.0,
         "nypl": 1.0, "rawpixel": 3.0}
 
 # soft bias away from identifiable-individual portraits / people-centric shots
@@ -128,47 +129,68 @@ KW_POINTS = 15
 # metadata-rich archive. 30 is also what makes the weak-only cap (4-v5-j) bite:
 # weak common words cap at 15 and can therefore never clear the gate, while ONE
 # strong domain term (+30, 4-v3-e) still passes without lowering the threshold.
-THRESHOLD = {"nasa": 30, "noaa": 30, "met": 30, "smithsonian": 30, "nypl": 30,
+THRESHOLD = {"nasa": 30, "noaa": 30, "met": 30, "smithsonian": 30, "nypl": 30, "wikimedia": 30,
              "rawpixel": 30}
 
 # ---------------------------------------------------------------------------
 # themed query plans: (theme, query, extra) per source
 # ---------------------------------------------------------------------------
+# Theme gating (2026-08-01). The owner's directive is to download material that is
+# actually usable, and the contact-sheet review measured what is not: noaa's
+# weather_disasters slice is 4,856 items / ~360 GB of straight-down flood-survey plates
+# that are 85-90% dead weight as b-roll, while the SAME source's ocean_nature and
+# wildlife_animals slices graded good. So the filter is per-theme, not per-source.
+ONLY_THEMES: set[str] = set()
+SKIP_THEMES: set[str] = set()
+
+
+def theme_allowed(theme: str) -> bool:
+    if ONLY_THEMES and theme not in ONLY_THEMES:
+        return False
+    return theme not in SKIP_THEMES
+
+
+# NASA video is switched off (2026-08-01). Measured: 626 clips = 318 GB = 90% of
+# everything nasa has fetched, and the clips are launch broadcasts, ISO b-roll strings,
+# crew training in Kazakhstan and "Space to Ground" news episodes, averaging 508 MB.
+# None of that cuts into an episode about a wrongful conviction. The 6,681 stills cost
+# 36.7 GB total and DO earn their place — Earth from orbit, city lights at night and
+# launch frames work as establishing and transition beats. So: stills yes, video no.
 NASA_QUERIES = [
     # (theme, query, media_types)
     ("space_nasa", "nebula", "image"),
     ("space_nasa", "galaxy", "image"),
-    ("space_nasa", "earth from space", "image,video"),
-    ("space_nasa", "rocket launch", "image,video"),
-    ("space_nasa", "international space station", "image,video"),
-    ("space_nasa", "moon surface", "image,video"),
-    ("space_nasa", "mars surface", "image,video"),
-    ("space_nasa", "solar flare", "image,video"),
-    ("space_nasa", "aurora", "image,video"),
-    ("space_nasa", "spacewalk", "image,video"),
+    ("space_nasa", "earth from space", "image"),
+    ("space_nasa", "rocket launch", "image"),
+    ("space_nasa", "international space station", "image"),
+    ("space_nasa", "moon surface", "image"),
+    ("space_nasa", "mars surface", "image"),
+    ("space_nasa", "solar flare", "image"),
+    ("space_nasa", "aurora", "image"),
+    ("space_nasa", "spacewalk", "image"),
     ("space_nasa", "saturn rings", "image"),
     ("space_nasa", "jupiter", "image"),
-    ("space_nasa", "apollo lunar surface", "image,video"),
-    ("space_nasa", "satellite orbit", "image,video"),
-    ("space_nasa", "space shuttle launch", "image,video"),
-    ("weather_disasters", "hurricane from space", "image,video"),
+    ("space_nasa", "apollo lunar surface", "image"),
+    ("space_nasa", "satellite orbit", "image"),
+    ("space_nasa", "space shuttle launch", "image"),
+    ("weather_disasters", "hurricane from space", "image"),
     ("weather_disasters", "typhoon satellite", "image"),
     ("weather_disasters", "wildfire smoke satellite", "image"),
-    ("weather_disasters", "storm system", "image,video"),
+    ("weather_disasters", "storm system", "image"),
     ("weather_disasters", "dust storm satellite", "image"),
-    ("ocean_nature", "ocean from space", "image,video"),
+    ("ocean_nature", "ocean from space", "image"),
     ("ocean_nature", "phytoplankton bloom", "image"),
     ("ocean_nature", "coral reef", "image"),
-    ("ocean_nature", "sea ice", "image,video"),
-    ("science_tech", "wind tunnel", "image,video"),
+    ("ocean_nature", "sea ice", "image"),
+    ("science_tech", "wind tunnel", "image"),
     ("science_tech", "laboratory research", "image"),
-    ("science_tech", "robotics", "image,video"),
-    ("science_tech", "mission control", "image,video"),
+    ("science_tech", "robotics", "image"),
+    ("science_tech", "mission control", "image"),
     ("science_tech", "supercomputer", "image"),
-    ("science_tech", "clean room spacecraft", "image,video"),
-    ("science_tech", "telescope", "image,video"),
-    ("landscapes_timelapse", "earth time lapse", "image,video"),
-    ("landscapes_timelapse", "city lights at night", "image,video"),
+    ("science_tech", "clean room spacecraft", "image"),
+    ("science_tech", "telescope", "image"),
+    ("landscapes_timelapse", "earth time lapse", "image"),
+    ("landscapes_timelapse", "city lights at night", "image"),
     ("landscapes_timelapse", "glacier", "image"),
     ("landscapes_timelapse", "desert from space", "image"),
     ("landscapes_timelapse", "river delta satellite", "image"),
@@ -647,7 +669,11 @@ def take_item(st: State, *, source: str, item_id: str, title: str, url: str,
         qdir = os.path.join(QUARANTINE, theme)
         os.makedirs(qdir, exist_ok=True)
         qdest = os.path.join(qdir, os.path.basename(dest))
-        os.replace(dest, qdest)
+        # Cross-device move: the shelf lives on D:/E:/F: but quarantine is ALWAYS on H:
+        # (CONTRACT 1), and os.replace cannot cross a Windows volume — it raises
+        # OSError 18 (EXDEV). That killed the whole source: the noaa lane died on its
+        # first sub-floor TIF and stayed dead for 18 hours while its siblings ran on.
+        shutil.move(dest, qdest)
         dest, license_decision = qdest, "review_required"
         log(f"    QUAR {source}/{item_id} {detail} -> {qdest}")
     elif verdict != "ok":
@@ -684,6 +710,8 @@ class StorageFull(Exception):
 def run_nasa(st: State, limit: int, dry_run: bool) -> int:
     taken = 0
     for theme, query, media_types in NASA_QUERIES:
+        if not theme_allowed(theme):
+            continue
         for media_type in media_types.split(","):
             page = 1
             while True:
@@ -764,6 +792,8 @@ PD_LIC_RE = re.compile(r"\b(public domain|pd-|cc0|no restrictions)\b", re.I)
 def run_noaa(st: State, limit: int, dry_run: bool) -> int:
     taken = 0
     for theme, query, ftype in NOAA_QUERIES:
+        if not theme_allowed(theme):
+            continue
         offset = 0
         while True:
             if limit and taken >= limit:
@@ -860,6 +890,8 @@ def run_met(st: State, limit: int, dry_run: bool) -> int:
     taken = 0
     base = "https://collectionapi.metmuseum.org/public/collection/v1"
     for theme, query in MET_QUERIES:
+        if not theme_allowed(theme):
+            continue
         data = get_json(f"{base}/search",
                         params={"q": query, "hasImages": "true"})
         time.sleep(RATE["met"])
@@ -910,6 +942,8 @@ def run_smithsonian(st: State, limit: int, dry_run: bool) -> int:
     taken = 0
     base = "https://api.si.edu/openaccess/api/v1.0/search"
     for theme, query in SMITHSONIAN_QUERIES:
+        if not theme_allowed(theme):
+            continue
         start = 0
         while True:
             if limit and taken >= limit:
@@ -972,6 +1006,8 @@ def run_nypl(st: State, limit: int, dry_run: bool) -> int:
     taken = 0
     hdrs = {"Authorization": f'Token token="{token}"'}
     for theme, query in NYPL_QUERIES:
+        if not theme_allowed(theme):
+            continue
         page = 1
         while True:
             if limit and taken >= limit:
@@ -1058,6 +1094,8 @@ def run_rawpixel(st: State, limit: int, dry_run: bool) -> int:
     taken = 0
     try:
         for theme, query in RAWPIXEL_QUERIES:
+            if not theme_allowed(theme):
+                continue
             data = get_json("https://www.rawpixel.com/api/v1/search",
                             params={"freecc0": 1, "query": query,
                                     "page": 1, "pagesize": 20})
@@ -1094,7 +1132,175 @@ def run_rawpixel(st: State, limit: int, dry_run: bool) -> int:
     return taken
 
 
+# Wikimedia Commons (added 2026-08-03 for Prime Finance / Prime Business).
+# Measured before building: Openverse caps anonymous use at 200 requests a day, which is
+# 4,000 items and seven days to fill one channel, and its shelf-eligible slice is only the
+# cc0/pdm licences. Commons has no such cap and its finance/industry holdings are deep.
+# What it does NOT have is video - "filetype:video stock exchange" returns 45 files, mostly
+# foreign listing ceremonies - so this adapter asks for bitmaps only and the video shortfall
+# stays with the stock lanes.
+# Licence policy is stricter than the API's: CONTRACT 3 puts CC-BY in quarantine, so rather
+# than fetch and quarantine at volume, only extmetadata License in {pd, cc0} is downloaded.
+WIKIMEDIA_QUERIES = [
+    ("depression_hardship", "bread line unemployed"),
+    ("depression_hardship", "soup kitchen depression"),
+    ("depression_hardship", "hooverville shacks"),
+    ("depression_hardship", "migrant worker family farm security"),
+    ("depression_hardship", "sharecropper cabin"),
+    ("depression_hardship", "unemployed men street"),
+    ("depression_hardship", "dust bowl farm abandoned"),
+    ("depression_hardship", "works progress administration workers"),
+    ("stock_market_exchange", "stock exchange trading floor"),
+    ("stock_market_exchange", "new york stock exchange interior"),
+    ("stock_market_exchange", "stock ticker machine"),
+    ("stock_market_exchange", "board of trade pit"),
+    ("stock_market_exchange", "brokerage office customers"),
+    ("stock_market_exchange", "stock certificate"),
+    ("bank_and_branch", "bank teller window"),
+    ("bank_and_branch", "bank interior counter"),
+    ("bank_and_branch", "bank vault door"),
+    ("bank_and_branch", "bank run depositors crowd"),
+    ("bank_and_branch", "savings bank passbook"),
+    ("money_banking", "banknote printing press"),
+    ("money_banking", "coin minting press"),
+    ("money_banking", "gold bullion bars"),
+    ("money_banking", "treasury building exterior"),
+    ("factory_manufacturing", "assembly line automobile factory"),
+    ("factory_manufacturing", "steel mill blast furnace"),
+    ("factory_manufacturing", "textile mill spinning"),
+    ("factory_manufacturing", "foundry molten metal pouring"),
+    ("factory_manufacturing", "machine shop lathe workers"),
+    ("factory_manufacturing", "cannery production line women"),
+    ("factory_manufacturing", "factory smokestacks industrial"),
+    ("factory_manufacturing", "shipyard workers welding"),
+    ("factory_manufacturing", "coal miners underground"),
+    ("retail_commerce", "department store interior"),
+    ("retail_commerce", "grocery store shelves interior"),
+    ("retail_commerce", "shop window display"),
+    ("retail_commerce", "market stall vendor"),
+    ("retail_commerce", "five and ten cent store"),
+    ("retail_commerce", "supermarket checkout"),
+    ("goods_in_motion", "longshoremen loading cargo"),
+    ("goods_in_motion", "railroad freight yard"),
+    ("goods_in_motion", "warehouse goods stacked"),
+    ("goods_in_motion", "cargo ship dock crane"),
+    ("goods_in_motion", "truck loading dock freight"),
+    ("decision_rooms", "boardroom meeting table"),
+    ("decision_rooms", "labor strike picket line"),
+    ("decision_rooms", "shareholders meeting hall"),
+    ("decision_rooms", "employment office men waiting"),
+    ("business_corporate", "office clerks typing pool"),
+    ("business_corporate", "adding machine bookkeeping"),
+    ("business_corporate", "punch card tabulating machine"),
+    ("business_corporate", "office building interior desks"),
+    ("economy_crisis", "closed factory abandoned"),
+    ("economy_crisis", "farm foreclosure auction"),
+    ("economy_crisis", "eviction furniture sidewalk"),
+    ("economy_crisis", "boarded storefront closed"),
+]
+WM_API = "https://commons.wikimedia.org/w/api.php"
+# Painting / print / sculpture markers. Kept narrow: "portrait" and "collection" are
+# deliberately absent because they appear on genuine press photography too.
+ARTWORK_RE = re.compile(
+    r"\b(oil on canvas|painting|painted by|lithograph|engraving|etching|watercolou?r|"
+    r"drawing|sketch|woodcut|aquatint|mezzotint|sculpture|statue|art institute|"
+    r"kunstmuseum|mnar|national gallery|museum of art|art museum|"
+    r"\bmet dp\d|artwork|illustration by)\b", re.I)
+WM_MAX_PER_QUERY = 1000         # 55 queries x 1000 = 55,000 candidates before filtering
+
+
+def run_wikimedia(st: State, limit: int, dry_run: bool) -> int:
+    taken = 0
+    for theme, query in WIKIMEDIA_QUERIES:
+        if not theme_allowed(theme):
+            continue
+        offset, seen_titles = 0, []
+        while offset < WM_MAX_PER_QUERY:
+            # Search on the first two words, score on the full phrase. Commons ANDs every
+            # term, so the precise phrasing that makes a good relevance query makes a
+            # terrible search: "bread line unemployed" finds 7 files, "bread line" finds
+            # 2,648; "assembly line automobile factory" 41 against 18,245. Cast wide here
+            # and let score_item's title gate do the discriminating.
+            broad = " ".join(query.split()[:2])
+            data = get_json(WM_API, params={
+                "action": "query", "format": "json", "list": "search",
+                "srsearch": f"filetype:bitmap {broad}", "srlimit": 50,
+                "sroffset": offset, "srnamespace": 6})
+            time.sleep(RATE["wikimedia"])
+            hits = ((data or {}).get("query") or {}).get("search") or []
+            if not hits:
+                break
+            seen_titles += [h["title"] for h in hits]
+            offset += 50
+        # imageinfo takes up to 50 titles at once - one request per 25 keeps URLs short
+        for i in range(0, len(seen_titles), 25):
+            batch = [t for t in seen_titles[i:i + 25] if not st.has("wikimedia", t)]
+            if not batch:
+                continue
+            info = get_json(WM_API, params={
+                "action": "query", "format": "json", "prop": "imageinfo",
+                "iiprop": "url|size|extmetadata", "titles": "|".join(batch)})
+            time.sleep(RATE["wikimedia"])
+            pages = ((info or {}).get("query") or {}).get("pages") or {}
+            for page in pages.values():
+                if limit and taken >= limit:
+                    return taken
+                title = page.get("title", "")
+                ii = (page.get("imageinfo") or [{}])[0]
+                url = ii.get("url")
+                if not url:
+                    continue
+                em = ii.get("extmetadata") or {}
+                lic = str((em.get("License") or {}).get("value", "")).lower().strip()
+                lic_name = str((em.get("LicenseShortName") or {}).get("value", ""))
+                if lic not in ("pd", "cc0"):
+                    st.reject("wikimedia", title, f"license-not-shelf-eligible:{lic or 'unknown'}",
+                              title=title, theme=theme, score=-1, matched=[])
+                    st.known_ids.add(("wikimedia", title))
+                    continue
+                desc = re.sub(r"<[^>]+>", " ",
+                              str((em.get("ImageDescription") or {}).get("value", "")))
+                cats = str((em.get("Categories") or {}).get("value", ""))
+                hay = f"{title} {desc} {cats}".lower()
+                # The phrase we actually searched for has to be IN the file. Searching two
+                # words to get volume let "Bread-rolls.jpg" in on the word "bread" alone;
+                # requiring "bread line" keeps the Bowery photographs and drops the bakery.
+                if broad.lower() not in hay.replace("-", " "):
+                    st.reject("wikimedia", title, f"phrase-absent:{broad}", title=title,
+                              theme=theme, score=-1, matched=[])
+                    st.known_ids.add(("wikimedia", title))
+                    continue
+                # Commons is half museum. A painting OF a bread line is not a record of
+                # one, and the owner's earlier verdict on met was explicit: artwork scans
+                # are unusable for these channels.
+                if ARTWORK_RE.search(hay):
+                    st.reject("wikimedia", title, "artwork-not-photograph", title=title,
+                              theme=theme, score=-1, matched=[])
+                    st.known_ids.add(("wikimedia", title))
+                    continue
+                score, matched, why = score_item("wikimedia", query, title,
+                                                 f"{desc} {cats}", theme)
+                if why or not accept("wikimedia", score):
+                    st.reject("wikimedia", title, why or "relevance<30", title=title,
+                              theme=theme, score=score, matched=matched)
+                    st.known_ids.add(("wikimedia", title))
+                    continue
+                if take_item(
+                        st, source="wikimedia", item_id=title, title=title,
+                        url=url, kind="image", theme=theme,
+                        source_url=f"https://commons.wikimedia.org/wiki/{title.replace(' ', '_')}",
+                        license_raw=f"{lic_name} (extmetadata License={lic})",
+                        license_decision="cc0" if lic == "cc0" else "pd",
+                        score=score, matched=matched,
+                        est_bytes=ii.get("size") or (12 << 20), dry_run=dry_run):
+                    taken += 1
+        log(f"  wikimedia [{theme}] '{query}' ({len(seen_titles)} candidates) "
+            f"cumulative taken={taken}")
+    return taken
+
+
 ADAPTERS = {"nasa": run_nasa, "noaa": run_noaa, "met": run_met,
+            "wikimedia": run_wikimedia,
             "smithsonian": run_smithsonian, "nypl": run_nypl,
             "rawpixel": run_rawpixel}
 
@@ -1116,8 +1322,17 @@ def main():
                     help=f"comma list or 'all' ({','.join(MY_SOURCES)})")
     ap.add_argument("--limit", type=int, default=0,
                     help="max NEW shelf items per source (0 = unlimited)")
+    ap.add_argument("--theme", default="",
+                    help="comma list: ingest ONLY these themes")
+    ap.add_argument("--skip-theme", default="",
+                    help="comma list: skip these themes (e.g. weather_disasters)")
     ap.add_argument("--dry-run", action="store_true")
     args = ap.parse_args()
+    global ONLY_THEMES, SKIP_THEMES
+    ONLY_THEMES = {t.strip() for t in args.theme.split(",") if t.strip()}
+    SKIP_THEMES = {t.strip() for t in args.skip_theme.split(",") if t.strip()}
+    if ONLY_THEMES or SKIP_THEMES:
+        log(f"theme gate: only={sorted(ONLY_THEMES) or 'all'} skip={sorted(SKIP_THEMES) or 'none'}")
 
     load_env()
     os.makedirs(QUARANTINE, exist_ok=True)

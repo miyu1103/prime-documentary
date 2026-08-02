@@ -1,0 +1,672 @@
+{
+  "episode_id": "PD-2026-018-flashcrash",
+  "slug": "flashcrash",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "5Jap-0h43A4",
+    "title": "The Day $1 Trillion Vanished in 36 Minutes",
+    "url": "https://www.youtube.com/watch?v=5Jap-0h43A4",
+    "privacy": "public",
+    "views": 11
+  },
+  "shorts_existing": [
+    "short18"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short18": [
+      "In thirty-six minutes, almost a trillion dollars vanished from the U.S.",
+      "stock market.",
+      "Then it came back.",
+      "May 6, 2010.",
+      "The market fell nearly a thousand points in minutes, and famous shares briefly traded for a penny.",
+      "Investigators traced part of the imbalance to a trader in a London bedroom, flashing giant orders he meant to cancel.",
+      "The law calls it spoofing.",
+      "He pleaded guilty to spoofing and wire fraud, but not to causing the crash.",
+      "No account blames one man alone: a four-billion-dollar sell order and panicking machines were part of it too.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-018-flashcrash\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "It is about a machine so fast and so clever that almost no one fully understood it — and how close that machine came to falling apart, in front of everyone, in the middle of an ordinary afternoon.",
+    "But here is the truth underneath that promise, the one almost nobody likes to say out loud.",
+    "Which raises a dangerous question, one that, in twenty-ten, almost no one was asking out loud.",
+    "What if you could show the machines something that wasn't true — a flood of buyers that didn't exist, a wall of sellers who were never really there — and simply let their own speed and logic do the rest?",
+    "Orders that were never, for one moment, meant to be filled.",
+    "In the blink of an eye, the orders that frightened the whole market simply vanish — because they were never meant to be filled.",
+    "The wall goes up, the wall comes down, and only the man who built it ever knows it was never really there.",
+    "For most of those years, almost no one even notices.",
+    "The only question left — the one nobody has thought to ask — is what happens if, one day, he leans on it at exactly the wrong moment.",
+    "The machines that promised to always be there do the one thing no one had planned for, the one thing the whole system quietly depended on them never doing.",
+    "If a system this powerful can be pushed to the edge of collapse by a lie told in orders that were never even real — then what, exactly, broke that day?",
+    "He had beaten the high score, over and over, for years — and kept almost none of the points.",
+    "The truth is smaller, and sadder: a brilliant, lonely man, chasing a number on a screen, who understood the rule he broke better than almost anyone — and never seemed to grasp, or to care, what the number was actually worth."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short156",
+      "angle": "The safety net ordinary people had set up to protect their savings is what sold those savings at the bottom.",
+      "type": "A - the detail that makes it about the viewer",
+      "avoids": "short18 covers the trillion dollars, the spoofing and the guilty plea. It never reaches the moment the machines stepped back, or what that did to people who were not even watching.",
+      "funnel_question_left_for_longform": "The market came back inside an hour. So why did it take five years to work out what had pushed it?",
+      "era": "May 2010, Chicago and New York",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "Two thirty-two in the afternoon. The machines that promised to always be there did the one thing no one had planned for. They stepped back. All at once.",
+          "source_lines": [
+            "The machines that promised to always be there do the one thing no one had planned for, the one thing the whole system quietly depended on them never doing.",
+            "They step back. All at once."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "To protect themselves from a falling market, they simply stopped buying. And the floor disappeared.",
+          "source_lines": [
+            "To protect themselves from a falling market, they simply stop buying. And the floor disappears."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "All over the country, ordinary people had left standing instructions with their brokers. Sell automatically if my stock falls below this price. Small, sensible safety nets meant to protect them.",
+          "source_lines": [
+            "All over the country, ordinary people have left standing instructions with their brokers — sell, automatically, if my stock ever falls below this price — small, sensible safety nets meant to protect them."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "In those thirty-six minutes those instructions fired, all at once, selling people's savings into the very bottom of the crash, at the worst prices of the day.",
+          "source_lines": [
+            "In those thirty-six minutes, as prices fall through the floor, those instructions fire, all at once, selling people's savings into the very bottom of the crash, at the worst prices of the day."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "The safety net people set up to protect their savings is what sold those savings at the bottom. It took thirty-six minutes.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U05",
+          "subject": "a blank clock face, second hand mid-sweep",
+          "source": "GENERATE",
+          "prompt": "a plain round institutional wall clock with a completely blank featureless face and no numerals or markings at all, its second hand caught mid sweep with motion blur, lit ONLY by one fixture which is switched on beside it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "clock face wall"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "clock hands, macro",
+          "source": "GENERATE",
+          "prompt": "clock hands, macro, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M03",
+          "subject": "the floor, from high above, at night",
+          "source": "GENERATE",
+          "prompt": "a deserted trading floor seen from high above at night, rows of dark terminals with every screen unreadable and showing no charts numerals or lettering, all chairs empty, lit ONLY by the residual glow of those screens which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "trading floor"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "a trading floor",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "trading floor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4205__stock_market_screen.mp4",
+          "bound_title": "analyzing stock market trading charts",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5456,
+          "motion": 2.537,
+          "luma": 168.8
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "M01",
+          "subject": "the line falling off the bottom of the glass",
+          "source": "GENERATE",
+          "prompt": "a single pale line drawn across dark glass falling away vertically off the bottom of the frame, entirely abstract and unlabelled with no numerals grid or lettering anywhere, lit ONLY by its own glow which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "glowing line dark screen"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "an abstract market display",
+          "source": "GENERATE",
+          "prompt": "an abstract market display, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U04",
+          "subject": "stone steps that end in void",
+          "source": "GENERATE",
+          "prompt": "a wide flight of stone steps in a dark hall where the bottom steps simply end in black void with nothing beneath them, no railing or signage anywhere, lit ONLY by one hard uplight which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stone steps dark hall"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U08",
+          "subject": "a rack where every light but one has gone out",
+          "source": "GENERATE",
+          "prompt": "a bank of dark server racks in a machine room with every status light gone out except a single one still burning, no labels or lettering anywhere, lit ONLY by that one indicator which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "server rack"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "a rack of servers",
+          "source": "GENERATE",
+          "prompt": "a rack of servers, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "the pit, empty, paper on the floor",
+          "source": "GENERATE",
+          "prompt": "an empty exchange pit at night, terraced steps and steel railings, loose paper slips scattered across the floor with every slip completely blank and unprinted, nobody present, lit ONLY by one overhead fixture which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty pit steps railing"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U10",
+          "subject": "two hands resting still on an unlit keyboard",
+          "source": "GENERATE",
+          "prompt": "macro of two hands resting completely still on an unlit keyboard in the dark, no face or body visible above the wrists, the key faces worn blank with no letters or numerals, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hands typing keyboard"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a standing instruction written on a blank slip",
+          "source": "GENERATE",
+          "prompt": "macro of one hand printing a single short line onto a completely blank ruled order slip with a ballpoint pen, the writing nothing but an illegible grey scrawl with no readable letters or numerals, no face or body visible, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "pencil on paper"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "a pencil moving on paper",
+          "source": "GENERATE",
+          "prompt": "a pencil moving on paper, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U11",
+          "subject": "a kitchen table at first light",
+          "source": "GENERATE",
+          "prompt": "a suburban kitchen table at first light with a stack of unopened statements and a cold cup silhouetted against the window, every sheet completely blank with no printing or figures, nobody present, lit ONLY by the pale dawn beyond the glass which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "kitchen table window dawn"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "a suburban street of houses",
+          "source": "GENERATE",
+          "prompt": "a suburban street of houses, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "I02",
+          "subject": "a wall of small closed mailbox doors",
+          "source": "GENERATE",
+          "prompt": "a wall of small brass mailbox doors in a dim lobby, every one of them closed and every number plate worn completely blank, nobody present, lit ONLY by one caged bulb which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "mailbox letters"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U08",
+          "subject": "a row of relays snapping over at once",
+          "source": "GENERATE",
+          "prompt": "a long row of identical small relays on a dark rack all snapped over to the same position at the same instant, motion blur on the last of them, every marking worn blank with no lettering or numerals, lit ONLY by one work lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "electrical relays rack"
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "an abstract trading display",
+          "source": "GENERATE",
+          "prompt": "an abstract trading display, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M04",
+          "subject": "statements fanned on a kitchen table",
+          "source": "GENERATE",
+          "prompt": "printed statements fanned across a dark kitchen table, every figure heading and line worn completely blank and unreadable, lit ONLY by one lamp which is switched on above the table and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "papers fanned on desk"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "an envelope and letter",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "envelope letter",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24687__credit_card_macro_chip.mp4",
+          "bound_title": "white envelope of credit card letter",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4092,
+          "motion": 19.585,
+          "luma": 152.6
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M04",
+          "subject": "a household ledger, both pages blank",
+          "source": "GENERATE",
+          "prompt": "a household ledger book lying open on a dark table with both pages completely blank and ruled but unwritten, no figures headings or lettering anywhere, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open ledger book desk"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "U06",
+          "subject": "an armchair, a dark screen, nobody watching",
+          "source": "GENERATE",
+          "prompt": "a single empty armchair in a dark living room with a blank dark television screen facing it, nobody present, no lettering anywhere, lit ONLY by one standard lamp which is switched on beside the chair and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, May 2010, Chicago and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "armchair dark living room"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the hook plate: a blank clock face, second hand mid-sweep",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 closes on the thirty-six minutes, and L1 restarts the clock at two thirty-two, so the loop replays the same window."
+    },
+    {
+      "short_id": "short157",
+      "angle": "He took tens of millions off the fastest machines on earth, and by the time they arrested him almost all of it had been taken from him.",
+      "type": "B - what the money actually bought, which was nothing",
+      "avoids": "short18 explains spoofing and the guilty plea. It never touches what happened to the money, why prosecutors asked for mercy, or the sentence he actually received.",
+      "funnel_question_left_for_longform": "How does one man in a bedroom lean hard enough on the largest market on earth to make it bend?",
+      "era": "2009-2020 Hounslow, west London",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "When investigators finally opened up his life, the fortune was mostly gone. Not spent. Taken.",
+          "source_lines": [
+            "is mostly gone. Not spent. Taken."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "He had handed his money, almost all of it, to con men, to bogus investments, to an outright fraud built to part trusting people from their savings.",
+          "source_lines": [
+            "he had handed his money, almost all of it, to con men, to bogus investments, to an outright fraud built to part trusting people from their savings"
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "People who knew him describe a man trading the way a child plays an arcade game. Locked onto the screen, hour after hour, trying to beat his own high score.",
+          "source_lines": [
+            "People who knew him describe a man trading the way a child plays an arcade game — locked onto the screen, hour after hour, trying, over and over, to beat his own high score."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "He had beaten the high score, over and over, for years, and kept almost none of the points.",
+          "source_lines": [
+            "He had beaten the high score, over and over, for years — and kept almost none of the points."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "At his sentencing the prosecutors did something rare. They asked the judge for mercy. He served no further prison at all, a single year at home.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M06",
+          "subject": "an empty drawer pulled from a wall of them",
+          "source": "GENERATE",
+          "prompt": "one steel safe deposit drawer pulled all the way out and completely empty, set in a wall of closed identical drawers whose number plates are worn blank, lit ONLY by one overhead fixture which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "safe deposit box"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "a safe deposit box",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "safe deposit box",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6980__evidence_bag.mp4",
+          "bound_title": "technician looking at tool box",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4327,
+          "motion": 16.002,
+          "luma": 63.1
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U11",
+          "subject": "the back bedroom he traded from",
+          "source": "GENERATE",
+          "prompt": "a small back bedroom in a modest terraced house with a single bed pushed against the wall and a desk of dark blank monitors at the window, nobody present, no lettering anywhere, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "bedroom window"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "a bedroom window",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "bedroom window",
+          "bound_file": "D:\\pd-archive\\prison_jail\\pixabay_extra__v_261682__ai-generated-room-cozy-bedroom-interior-design-windows-home.mp4",
+          "bound_title": "ai generated, room, cozy bedroom, interior design, windows, home",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.3948,
+          "motion": 1.906,
+          "luma": 51.5
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a pen pressed to a blank transfer form",
+          "source": "GENERATE",
+          "prompt": "macro of one hand pressing a pen to a completely blank unreadable transfer form on a dark table, the form empty with no printing boxes figures or headings, no face or body visible, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand pen blank paper"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "M02",
+          "subject": "banded cash sliding across a desk",
+          "source": "GENERATE",
+          "prompt": "banded stacks of cash being slid across a dark desk, the notes plain with their denominations completely illegible and no numerals or portraits, no face visible, lit ONLY by one green banker's lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "banknotes stack"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "hands counting money",
+          "source": "GENERATE",
+          "prompt": "hands counting money, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "Y01",
+          "subject": "a blank envelope propped in an empty bar",
+          "source": "GENERATE",
+          "prompt": "a plain white envelope propped against a glass on a dark hotel bar, its face completely blank with no address writing or printing, nobody present, lit ONLY by one small bar lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "envelope letter"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "an envelope and letter",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "envelope letter",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53397__stack_of_letters_with_ribbon.mp4",
+          "bound_title": "a pink envelope and happy birthday letters on a table",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5567,
+          "motion": 3.153,
+          "luma": 199.3
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I04",
+          "subject": "a frosted door with a blank nameplate",
+          "source": "GENERATE",
+          "prompt": "an office door of frosted glass with a completely blank nameplate standing closed at the end of a dim corridor, no signage or lettering anywhere, lit ONLY by one caged bulb which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "frosted glass office door"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "a padlocked door",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "locked door padlock",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2364__school_hallway_empty.mp4",
+          "bound_title": "locker with padlock",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5109,
+          "motion": 2.66,
+          "luma": 144.6
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U09",
+          "subject": "a back hunched at a wall of arcade glow",
+          "source": "GENERATE",
+          "prompt": "the back of one lone hunched figure sitting very close to a wall of glowing arcade cabinet screens in a dark room, face not visible at all, every screen nothing but abstract coloured light with no images words or numerals, lit ONLY by those screens which are switched on and are the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "arcade machines dark room"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "hands on a keyboard",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands typing keyboard",
+          "bound_file": "D:\\pd-archive\\newspapers_printing\\pixabay_extra__v_72880__computer-keyboard-hands-typing-input-technology.mp4",
+          "bound_title": "computer keyboard, hands, typing, input, technology",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.4089,
+          "motion": 18.56,
+          "luma": 99.2
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "M03",
+          "subject": "three dark monitors from behind",
+          "source": "GENERATE",
+          "prompt": "a desk of three dark blank monitors seen from directly behind with cables trailing to the floor, nobody present, no lettering anywhere, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "computer monitors from behind"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U06",
+          "subject": "a worn chair pulled up too close to the desk",
+          "source": "GENERATE",
+          "prompt": "one office chair with worn armrests pulled up very close to a bare dark desk in a small room, nobody in it, the desk surface completely empty, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "office chair empty desk"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U16",
+          "subject": "a cold mug and a carton left in the dark",
+          "source": "GENERATE",
+          "prompt": "macro of a cold mug and a takeaway carton left on the edge of a desk in the dark beside a dark blank monitor, no printing or lettering on the carton, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "mug on desk dark"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M01",
+          "subject": "a line climbing in long steps",
+          "source": "GENERATE",
+          "prompt": "a single pale line climbing across dark glass in a long staircase of steps, entirely abstract and unlabelled with no numerals grid or lettering anywhere, lit ONLY by its own glow which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "glowing line dark screen"
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "an abstract market display",
+          "source": "GENERATE",
+          "prompt": "an abstract market display, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M06",
+          "subject": "the coin tray, empty",
+          "source": "GENERATE",
+          "prompt": "extreme macro of the coin return tray of an arcade cabinet, completely empty, the metal scratched and every marking worn away with no lettering or numerals, lit ONLY by one small lamp which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "coin slot machine macro"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R05",
+          "subject": "court columns from below",
+          "source": "GENERATE",
+          "prompt": "tall stone court columns photographed from directly below against a dark storm sky, absolutely no inscriptions or lettering anywhere on the stone, lit ONLY by hard uplights which are switched on at their bases and are the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "marble columns low angle"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "stone columns from below",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courthouse columns",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2436__bank_building_columns.mp4",
+          "bound_title": "columns in a building",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6078,
+          "motion": 5.218,
+          "luma": 118.1
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a front door with the chain on",
+          "source": "GENERATE",
+          "prompt": "a residential front door seen from inside a dark hallway with the security chain across it, one hard blade of light under the door, no signage or lettering anywhere, nobody present, lit ONLY by that blade of light which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2009-2020 Hounslow, west London, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "front door hallway dark"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the hook plate: an empty drawer pulled from a wall of them",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 ends on prosecutors asking for mercy, and L1 supplies the reason at once: by then his fortune had already been taken from him."
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

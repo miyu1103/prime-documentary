@@ -1,0 +1,711 @@
+{
+  "episode_id": "PD-2026-036-williams",
+  "slug": "williams",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "gR_nzXIyIlk",
+    "title": "Thirty hours in jail because an algorithm chose his photo",
+    "url": "https://www.youtube.com/watch?v=gR_nzXIyIlk",
+    "privacy": "public",
+    "views": 10
+  },
+  "shorts_existing": [
+    "short38"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short38": [
+      "A blurry photo.",
+      "A computer's guess.",
+      "An innocent father jailed for a crime",
+      "he never came near no witness no fingerprint",
+      "no tip from anyone.",
+      "So how did police get his name?",
+      "They cuffed him on his own lawn",
+      "before his wife and daughters",
+      "thirty hours held. Not me he said.",
+      "A witness picked me? No.",
+      "A computer did.",
+      "In 2018",
+      "someone stole watches from a downtown shop.",
+      "Police fed one grainy frame to face-matching software;",
+      "it surfaced his license photo. A lead not proof",
+      "but they built a lineup and called",
+      "it probable cause.",
+      "The machine misses in a pattern.",
+      "A federal lab found far more false",
+      "matches on Black and Asian faces",
+      "a gap that tracks the training data",
+      "not the tech. Charges dropped. He sued.",
+      "In 2024 the city settled:",
+      "no arrest on a face-match alone.",
+      "Full story on the channel.",
+      "Follow for the cases they don't teach you."
+    ]
+  },
+  "script": "episodes\\PD-2026-036-williams\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "This is the story of a face — and how a machine looking at one put an innocent father in a jail cell for something he never did.",
+    "Then a cell, and the better part of two days inside it — about thirty hours — for a crime he had never heard a word about.",
+    "The charges were dropped, and the prosecutor's office later admitted the case should never have been built the way it was.",
+    "His picture had never sat in some lineup a witness pointed to.",
+    "The answer is a quiet machine that most people have never once thought about — and that has almost certainly already looked at you.",
+    "It takes one image and compares it against a vast state database — millions of driver's-license photos and mug shots, ordinary people who have never been accused of anything in their lives.",
+    "A guess, ranked by a number, pulled out of a database he never knew he was in.",
+    "And in test after test, if your face was Black or Asian, the very tool the police were leaning on was far more likely to write your name onto a crime that was never yours.",
+    "An earlier study had looked at a related but different job — software guessing whether a face is a man or a woman — and found the same shape: it misread darker-skinned women up to a third of the time, while almost never erring on a lighter-skinned man.",
+    "If you hold a driver's license, you are in the lineup — a permanent one you never volunteered for and can never step out of."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short172",
+      "angle": "Your driver's license photo already sits in a lineup that runs every time a camera catches a face somebody wants named.",
+      "funnel_question_left_for_longform": "What happened to the man the software picked, and how a ranked guess became probable cause.",
+      "loop": true,
+      "loop_join": "L5 ends on him being in the lineup, and L1 opens by telling the viewer they are already in the same one.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "If you hold a driver's license, your face is already in a police lineup. You never volunteered for it, and you cannot step out of it.",
+          "source_lines": [
+            "If you hold a driver's license, you are in the lineup — a permanent one you never volunteered for and can never step out of."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "The software takes one image and compares it against millions of driver's license photos and mug shots. People never accused of anything.",
+          "source_lines": [
+            "It takes one image and compares it against a vast state database — millions of driver's-license photos and mug shots, ordinary people who have never been accused of anything in their lives."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "It does not know who anyone is. It returns a ranked list of look-alikes, each scored by a probability. Feed it a blurry photo and it still hands back somebody.",
+          "source_lines": [
+            "The software does not know who anyone is. It produces a ranked list of faces that look statistically similar, each one scored by a probability.",
+            "Feed it a blurry one, and it will still hand back somebody."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "You do not have to break a law, know a criminal, or go near a crime scene. To software, you only have to look a little like somebody else.",
+          "source_lines": [
+            "You do not have to break a law, know a criminal, or go anywhere near a crime scene. To a piece of software, you only have to look a little like somebody else."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "In a Detroit suburb, one father was matched to a crime he never heard of. About thirty hours in a cell. He was only in the lineup.",
+          "source_lines": [
+            "It happened to a father in a quiet Detroit suburb in the winter of twenty twenty.",
+            "Then a cell, and the better part of two days inside it — about thirty hours — for a crime he had never heard a word about."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W08",
+          "subject": "the licence camera pointed at an empty stool",
+          "source": "GENERATE",
+          "prompt": "a plain blue photographic backdrop in a public office with a height strip beside it worn completely blank, a camera on a tripod aimed at an empty stool, nobody present, lit ONLY by one softbox which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "photo studio backdrop tripod"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "the lens that took it",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "camera lens close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52524__vintage_film_camera.mp4",
+          "bound_title": "close up footage of a camera lens",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5006,
+          "motion": 4.387,
+          "luma": 80.7
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I01",
+          "subject": "a fan of blank plastic licence cards",
+          "source": "GENERATE",
+          "prompt": "macro of a fan of blank white plastic identity cards spread across a dark counter, every photograph panel and every line of text left completely blank and unreadable, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "plastic cards on counter"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U08",
+          "subject": "a wall of card slots like a lineup",
+          "source": "GENERATE",
+          "prompt": "a wall of small empty card slots in a grey steel rack shot straight on, each slot holding one blank unmarked card, lit ONLY by one flickering fluorescent tube switched on overhead, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "card index rack wall"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "a server aisle holding millions of faces",
+          "source": "GENERATE",
+          "prompt": "a narrow aisle between two walls of dark server racks at night, every display panel blank and unreadable, one indicator lamp burning at the far end, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "server racks dark aisle"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "the machine room",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "server room data center",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1046__data_center.mp4",
+          "bound_title": "male call center agent taking notes",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3862,
+          "motion": 21.505,
+          "luma": 118.6
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U08",
+          "subject": "a grid of empty portrait tiles",
+          "source": "GENERATE",
+          "prompt": "a dark wall filled edge to edge with small empty portrait-shaped tiles, every one of them blank with no image and no lettering, lit ONLY by one raking light switched on from the left, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "grid of empty frames wall"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U08",
+          "subject": "envelopes of photographs nobody consented to",
+          "source": "GENERATE",
+          "prompt": "a wall of grey steel shelving packed with unlabelled photographic envelopes shot straight on, all writing worn completely blank, lit ONLY by one fluorescent tube switched on overhead, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "shelves of archive envelopes"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "M01",
+          "subject": "the wire the query travels down",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "fiber optic cables close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0982__server_room_blue.mp4",
+          "bound_title": "man checking the computer cables",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4203,
+          "motion": 17.226,
+          "luma": 45.4
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "W08",
+          "subject": "a booking counter and a blank height strip",
+          "source": "GENERATE",
+          "prompt": "an empty booking counter with a measuring strip on the wall behind it worn completely blank and no numerals anywhere, nobody standing at it, lit ONLY by one harsh fixture switched on above, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "police booking counter empty"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "M05",
+          "subject": "the platter the photographs live on",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hard drive platter close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1203__circuit_board_macro.mp4",
+          "bound_title": "a close up shot of a person soldering",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4078,
+          "motion": 5.664,
+          "luma": 95.4
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "M03",
+          "subject": "an analyst's desk of blank monitors",
+          "source": "GENERATE",
+          "prompt": "a bank of four monitors standing dark and completely blank on an analyst's desk in a night office, keyboard pushed aside, nobody present, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "dark computer monitors desk"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "R11",
+          "subject": "the camera that gave them the blurry frame",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "security camera on ceiling",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0753__american_flag_waving.mp4",
+          "bound_title": "american flag waving on the flagpole",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4238,
+          "motion": 29.542,
+          "luma": 99.5
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U07",
+          "subject": "a contact sheet of empty portrait frames",
+          "source": "GENERATE",
+          "prompt": "a printed contact sheet pinned to a dark corkboard whose every portrait frame is completely empty and unmarked, one pin loose at the corner, lit ONLY by one angled task lamp switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "contact sheet pinned board"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "I01",
+          "subject": "the ranked list as a stack of identical cards",
+          "source": "GENERATE",
+          "prompt": "macro of a squared stack of identical blank white cards on a dark desk with the top card lifted a few millimetres proud of the rest, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stack of blank cards"
+        },
+        {
+          "n": 16,
+          "role": "payoff",
+          "line": "L3",
+          "motif": "I06",
+          "subject": "one card the machine hands back",
+          "source": "GENERATE",
+          "prompt": "a single blank white identity card lying alone in a hard cone of light on a wide empty desk, its photograph panel and all its lines completely blank, lit ONLY by the lamp switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "single card on desk"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R02",
+          "subject": "steel closing on a wrist",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "handcuffs close up macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1205__circuit_board_macro.mp4",
+          "bound_title": "close up shot of electronic chip",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.7011,
+          "motion": 4.953,
+          "luma": 34.1
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R09",
+          "subject": "an ordinary front lawn and an open car door",
+          "source": "GENERATE",
+          "prompt": "a plain suburban front lawn at dusk with a car standing at the kerb and its rear door hanging open, the house behind it of no distinguishing architecture, nobody in frame, lit ONLY by one street lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "car door open at kerb"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W03",
+          "subject": "a holding bench for thirty hours",
+          "source": "GENERATE",
+          "prompt": "a bare steel holding-cell bench bolted to a tiled wall with a folded paper blanket at one end and nobody on it, lit ONLY by one caged bulb switched on in the corridor beyond the bars, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "holding cell bench empty"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W03",
+          "subject": "the cell itself",
+          "source": "GENERATE",
+          "prompt": "the cell itself, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U05",
+          "subject": "the clock that counted the thirty hours",
+          "source": "GENERATE",
+          "prompt": "a plain round institutional wall clock above a holding-area door with a completely blank featureless face and no numerals or hands markings, lit ONLY by one fixture switched on beside it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "wall clock institutional"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "two blank cards that cannot be told apart",
+          "source": "GENERATE",
+          "prompt": "two identical blank white identity cards laid side by side on a steel counter, both photograph panels empty, nothing to separate one from the other, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2020 Detroit, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "two cards side by side"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the licence camera",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "photo studio backdrop tripod"
+        }
+      ],
+      "type": "A — second-person threat",
+      "avoids": "Short 38 followed one man from the blurry frame to the settlement; this cut turns the same database on the viewer, who is inside it without ever having been accused of anything.",
+      "era": "2020 Detroit"
+    },
+    {
+      "short_id": "short173",
+      "angle": "The settlement that banned face-match arrests binds one police department, and people keep being arrested this way everywhere else.",
+      "funnel_question_left_for_longform": "How the software picked his face out of millions in the first place.",
+      "loop": true,
+      "loop_join": "L5 ends on how fragile that single rule is, and L1 opens by stating the rule and the town line where it stops.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "He won. Police in that city can no longer arrest on a face match alone. One town over, the rule does not exist.",
+          "source_lines": [
+            "Police there can no longer arrest anyone on a face-match alone.",
+            "Those rules bind one police department, in one city. Everywhere else, this same power still works the way it always has."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "He was not the first. Before his story broke, at least two other men had already been arrested this exact way, one in the same city, one two states away.",
+          "source_lines": [
+            "Before his story ever broke, at least two other men — one in the same city, one two states away — had already been arrested this exact way, their cases only surfacing later."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "And he was not the last. One woman was eight months pregnant, held in a cell over a crime a computer had tied to her face.",
+          "source_lines": [
+            "One of them was eight months pregnant — held in a cell over a crime a computer had tied to her face."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "The group that represented him counts more than a dozen known wrongful arrests like his. Nearly every person named in them has been Black.",
+          "source_lines": [
+            "By the count of the group that represented him, there are now more than a dozen known wrongful arrests like his in this country, and nearly every person named in them has been Black."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "One man got a rule. Everyone else got a warning. And the rule only exists because his story got loud enough.",
+          "source_lines": [
+            "He was only the first whose story got loud enough to force anyone to change a single rule."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U15",
+          "subject": "one city glowing inside a dark country",
+          "source": "GENERATE",
+          "prompt": "a dark relief map of the United States with state borders drawn as thin glowing seams and absolutely no place names or lettering, one small city outline burning brighter than everything around it, lit ONLY by that internal glow, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "dark map united states glowing"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U13",
+          "subject": "the road out of the city that made the rule",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty road at dusk",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1119__technology_abstract_blue.mp4",
+          "bound_title": "3d animation of a futuristic dynamic pattern",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4374,
+          "motion": 31.816,
+          "luma": 111.0
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U15",
+          "subject": "the painted line where the rule stops",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "road marking line asphalt",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3053__empty_road_sunset.mp4",
+          "bound_title": "aerial footage of truck on the road",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.392,
+          "motion": 1.338,
+          "luma": 110.9
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "Y05",
+          "subject": "the settlement, closed and tied",
+          "source": "GENERATE",
+          "prompt": "a thick document closed and tied with a flat cotton band on a dark desk, its cover worn completely blank with no lettering anywhere, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "tied document bundle desk"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "R12",
+          "subject": "three booking trays, two of them used",
+          "source": "GENERATE",
+          "prompt": "three identical steel booking trays lined up on a counter, two holding a belt and laces and the third standing empty, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "steel property tray counter"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "W04",
+          "subject": "the block those men were held on",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "prison corridor doors",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11523__hospital_corridor_night.mp4",
+          "bound_title": "walking along a creepy hotel corridor",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5317,
+          "motion": 17.489,
+          "luma": 58.3
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "W04",
+          "subject": "three identical closed doors",
+          "source": "GENERATE",
+          "prompt": "three identical iron cell doors closed in a row along a bare block wall, each with a shut observation hatch, lit ONLY by one caged ceiling bulb which is switched on between them, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "iron cell doors row"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U15",
+          "subject": "two states, one seam between them",
+          "source": "GENERATE",
+          "prompt": "a dark relief map showing only two adjoining states with the border between them as a single thin glowing seam and absolutely no place names or lettering, lit ONLY by that glow, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "map two states border glow"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "R01",
+          "subject": "a cruiser working a street somewhere else",
+          "source": "GENERATE",
+          "prompt": "a cruiser working a street somewhere else, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "R03",
+          "subject": "the same bare interview table in another city",
+          "source": "GENERATE",
+          "prompt": "a bare metal interview table with one chair either side standing in an otherwise empty room with tall bare walls, nobody present, lit ONLY by one conical lamp hanging low above it which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "interview room table chairs"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "Y01",
+          "subject": "a coat left on a holding-room hook",
+          "source": "GENERATE",
+          "prompt": "a row of three steel coat hooks on a tiled holding-room wall with one dark coat still hanging from the middle hook, lit ONLY by one caged bulb switched on above, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "coat hanging on hook"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "W03",
+          "subject": "a cell bench with a folded blanket",
+          "source": "GENERATE",
+          "prompt": "a bare concrete cell bench with one thin blanket folded square at its end and nobody on it, the floor bare, lit ONLY by one high barred window throwing a hard shaft across it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "cell bench folded blanket"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U05",
+          "subject": "the hours counted in a cell",
+          "source": "GENERATE",
+          "prompt": "the hours counted in a cell, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "W06",
+          "subject": "a hospital band left on a steel bench",
+          "source": "GENERATE",
+          "prompt": "macro of one soft plastic hospital wristband lying open and empty on a steel bench, its printed panel worn completely blank and unreadable, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "plastic wristband on metal"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "W01",
+          "subject": "a closed food slot in a cell door",
+          "source": "GENERATE",
+          "prompt": "macro of the closed steel food slot in a heavy cell door, its hinge worn bright by use, the corridor beyond in darkness, lit ONLY by one caged bulb switched on above the frame, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "cell door hatch close up"
+        },
+        {
+          "n": 16,
+          "role": "payoff",
+          "line": "L3",
+          "motif": "W03",
+          "subject": "a cell and its one high window",
+          "source": "GENERATE",
+          "prompt": "the interior of a bare cell with a small high barred window throwing one hard shaft down onto the concrete floor, nothing else in frame, lit ONLY by that window, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty cell high window"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U07",
+          "subject": "a dozen identical case folders",
+          "source": "GENERATE",
+          "prompt": "twelve identical worn case folders standing upright in a steel rack, every label worn completely blank, lit ONLY by one desk lamp switched on beside the rack, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "row of case folders rack"
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U07",
+          "subject": "the paperwork of a dozen arrests",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stack of paper files",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0752__american_flag_waving.mp4",
+          "bound_title": "flag of usa",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6118,
+          "motion": 11.918,
+          "luma": 116.1
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "a dozen empty chairs in one row",
+          "source": "GENERATE",
+          "prompt": "twelve plain wooden chairs set out in a single long row across a dark empty hall, every one of them vacant, dust drifting, lit ONLY by one fixture switched on above the middle of the row, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "row of empty chairs hall"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M07",
+          "subject": "a long table of lamps with one still burning",
+          "source": "GENERATE",
+          "prompt": "a long dark table carrying a row of identical brass desk lamps, every one of them dark except a single lamp at the near end which is switched on and is the only light in frame, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "desk lamps on long table"
+        },
+        {
+          "n": 21,
+          "role": "body",
+          "line": "L4",
+          "motif": "I02",
+          "subject": "the corridor the rule does not reach",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "long office corridor doors",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6732__police_badge_close_up.mp4",
+          "bound_title": "police officer wearing sunglasses",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4566,
+          "motion": 11.449,
+          "luma": 91.0
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "one sheet on an institutional floor",
+          "source": "GENERATE",
+          "prompt": "one completely blank sheet of paper lying alone on a scuffed institutional floor, lit ONLY by a hard shaft of corridor light falling across it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2024 United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "paper on the floor"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the glowing city on the dark map",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "dark map united states glowing"
+        }
+      ],
+      "type": "B — a number/stakes gap",
+      "avoids": "Short 38 ended on the 2024 settlement as the resolution; this cut starts where that one stopped and measures how little ground the new rule actually covers.",
+      "era": "2024 United States"
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

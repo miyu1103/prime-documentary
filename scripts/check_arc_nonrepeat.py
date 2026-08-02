@@ -96,7 +96,11 @@ def fingerprint(src: str) -> Optional[str]:
     # stock identifiers; comparing only the basename makes every episode look
     # like a reuse. Keep the folder for those slot-style generated assets, while
     # preserving basename matching for real shared stock clips (AF-BG-..., etc.).
-    if re.match(r"^(s\d{2,3}|m\d{1,3}_rife|f\d{3}.*)\.(png|jpg|jpeg|webp|mp4|mov|webm|m4v)$", base):
+    # P01.png..P## are the per-episode PEOPLE plates and belong in this list too. They were
+    # missing, so every episode that had them looked like it reused six assets from the three
+    # episodes before it. Verified on 2026-08-02: burge/willingham/morton/norfolk P01.png have
+    # four different sha256 and four different byte sizes -- same slot name, different pictures.
+    if re.match(r"^(s\d{2,3}|p\d{2,3}|m\d{1,3}_rife|f\d{3}.*)\.(png|jpg|jpeg|webp|mp4|mov|webm|m4v)$", base):
         return norm
     return base
 

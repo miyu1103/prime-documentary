@@ -14,9 +14,15 @@ tick; NOT digital silence); ACT_5 = the single raise at the DNA hinge; ACT_6 ope
 REC-ON/dawn reversal. Longest silence < 25s (bgm_present). No caption cue in HOOK silence.
 
 Usage: python scripts/build_centralpark_bgm_real.py <render_in.mp4> <final_out.mp4>
+              [--hook-preroll-vol V] [--hook-vol V] [--preroll-fade-in S]
+
+Owner note 2026-07-30: the CODEX_B "near-silent hook" scored the first 11.5s at 0.14 with a
+1.5s fade -- on the finished film that reads as "the opening has no music at all". The three
+flags above raise the cold open without touching any other section; defaults keep the old
+behaviour so previous revisions stay reproducible.
 """
 from __future__ import annotations
-import json, subprocess, sys
+import argparse, json, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
@@ -64,7 +70,17 @@ def probe(f):
 
 
 def main() -> int:
-    render = Path(sys.argv[1]); out = Path(sys.argv[2])
+    ap = argparse.ArgumentParser(description=__doc__)
+    ap.add_argument("render_in")
+    ap.add_argument("final_out")
+    ap.add_argument("--hook-preroll-vol", type=float, default=0.14,
+                    help="music level over the cold open (0 -> first VO section)")
+    ap.add_argument("--hook-vol", type=float, default=0.14,
+                    help="music level for the HOOK narration section")
+    ap.add_argument("--preroll-fade-in", type=float, default=1.5,
+                    help="fade-in seconds for the cold-open bed")
+    a = ap.parse_args()
+    render = Path(a.render_in); out = Path(a.final_out)
     if not render.exists():
         print(f"MISSING render {render}", file=sys.stderr); return 2
     if out.resolve() == render.resolve() or out.exists():
@@ -86,9 +102,13 @@ def main() -> int:
         hi = (starts[present[i + 1]] + OFF) if i + 1 < len(present) else vo_end
         return lo, hi
 
-    bgm = [(SECTION_SCORE[sec][0], *win(sec), SECTION_SCORE[sec][1]) for sec in present]
+    def vol(sec: str) -> float:
+        return a.hook_vol if sec == "HOOK" else SECTION_SCORE[sec][1]
+
+    bgm = [(SECTION_SCORE[sec][0], *win(sec), vol(sec)) for sec in present]
     # pre-roll bed under the hook/opening (0 -> first section start) + tail after VO
-    bgm.insert(0, (MUS / "hook/mus_20260614_hook_glass_air_bed_v1.mp3", 0.0, starts[present[0]] + OFF, 0.14))
+    bgm.insert(0, (MUS / "hook/mus_20260614_hook_glass_air_bed_v1.mp3", 0.0,
+                   starts[present[0]] + OFF, a.hook_preroll_vol))
     bgm.append((MUS / "outro/mus_20260614_outro_last_frame_v2.mp3", vo_end, total, 0.22))
     amb = [(SECTION_AMB[sec], *win(sec)) for sec in present]
     amb.insert(0, (AMB / "amb_night_window.mp3", 0.0, starts[present[0]] + OFF))
@@ -105,9 +125,10 @@ def main() -> int:
     idx = 1; mlabels = []
     for k, (p, s, e, v) in enumerate(bgm):
         dur = max(0.1, e - s); lab = f"m{k}"; inputs += ["-i", str(p)]
+        fin = a.preroll_fade_in if k == 0 else 1.5   # k=0 is the cold-open bed
         parts.append(f"[{idx}:a]aformat=sample_rates=48000:channel_layouts=stereo,"
                      f"aloop=loop=-1:size=2000000000,atrim=0:{dur:.3f},"
-                     f"afade=t=in:st=0:d=1.5,afade=t=out:st={max(0, dur-2):.3f}:d=2.0,"
+                     f"afade=t=in:st=0:d={fin:.2f},afade=t=out:st={max(0, dur-2):.3f}:d=2.0,"
                      f"volume={v:.3f},adelay={int(s*1000)}|{int(s*1000)}[{lab}]")
         mlabels.append(f"[{lab}]"); idx += 1
     parts.append("".join(mlabels) + f"amix=inputs={len(mlabels)}:normalize=0:dropout_transition=0[music_raw]")

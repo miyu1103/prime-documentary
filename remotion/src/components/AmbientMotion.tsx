@@ -7,9 +7,9 @@ import {BRAND} from '../brand';
  * static (kills the "still slideshow" look). No external stock: everything is drawn and animated here,
  * fully deterministic (index + frame only, no Math.random), screen-blended, tasteful and subtle.
  *
- * Two layers:
+ * One layer (the orbiting glows were removed 2026-07-06 — owner found the slow-circling
+ * faint light overused/annoying):
  *  - drifting bokeh particles (navy/cyan/pale-gold), rising with a gentle horizontal sway
- *  - two large soft glows slowly orbiting for volumetric depth
  * Palette stays navy / electric-blue / restrained gold — never a yellow wash or a vertical gold sweep.
  */
 
@@ -50,33 +50,6 @@ const Particle: React.FC<{i: number}> = ({i}) => {
   );
 };
 
-const Glow: React.FC<{i: number; color: string; size: number; opacity: number}> = ({
-  i,
-  color,
-  size,
-  opacity,
-}) => {
-  const frame = useCurrentFrame();
-  // slow lissajous orbit
-  const cx = 540 + Math.sin(frame / 90 + i * 2) * 320;
-  const cy = 900 + Math.cos(frame / 70 + i * 3) * 520;
-  return (
-    <div
-      style={{
-        position: 'absolute',
-        left: cx - size / 2,
-        top: cy - size / 2,
-        width: size,
-        height: size,
-        borderRadius: '50%',
-        background: `radial-gradient(circle, ${color} 0%, transparent 70%)`,
-        opacity,
-        pointerEvents: 'none',
-      }}
-    />
-  );
-};
-
 export const AmbientMotion: React.FC<{count?: number; intensity?: number}> = ({
   count = 16,
   intensity = 1,
@@ -88,8 +61,9 @@ export const AmbientMotion: React.FC<{count?: number; intensity?: number}> = ({
   const out = interpolate(frame, [d - 8, d], [1, 0.8], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
   return (
     <AbsoluteFill style={{mixBlendMode: 'screen', pointerEvents: 'none', opacity: fade * out * intensity}}>
-      <Glow i={0} color={BRAND.color.electric} size={1100} opacity={0.1} />
-      <Glow i={1} color={BRAND.color.navy} size={1300} opacity={0.14} />
+      {/* The two large orbiting glows that used to sit here were removed — owner 2026-07-06
+          found the "淡い光がくるくる回ってる" (slow-orbiting faint light) overused/annoying.
+          Only the rising bokeh particles remain: they travel vertically, never circle. */}
       {Array.from({length: count}).map((_, i) => (
         <Particle key={i} i={i} />
       ))}

@@ -32,6 +32,8 @@ OUT = ROOT / "remotion" / "out"
 
 CONFIG: dict[str, dict] = {
     "01": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "cQFql7tT1fE",
         "ep": "PD-2026-001-miranda",
         "rev": "v001",
         "title": "Why Do Police Read You Your Rights? #Shorts",
@@ -51,6 +53,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "3aca2e766115d5fc76cbe84e016c48e5790ddaae0bcf3f4cb0e75117404f6798",
     },
     "02": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "ch2hQ5jhDmQ",
         "ep": "PD-2026-002-gideon",
         "rev": "v001",
         "title": "Can't Afford a Lawyer? A Pencil Letter Changed Everything #Shorts",
@@ -70,6 +74,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "c805540a7cabc2970b7bcb88b81163512a08073a4594b601b8218aaa14d76a60",
     },
     "03": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "An0to4U0hJQ",
         "ep": "PD-2026-003-mapp",
         "rev": "v001",
         "title": "Police Searched Illegally — Can They Still Use It? #Shorts",
@@ -89,6 +95,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "68edf414849082144aca476fd3bee245f63bd33a68812ebcc1b0d5b4e99e990b",
     },
     "04": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "waA4XJ9bYcE",
         "ep": "PD-2026-004-ftx",
         "rev": "v001",
         "title": "$8 Billion Vanished From a Crypto Exchange — Where Did It Go? #Shorts",
@@ -109,6 +117,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "1d281f6d11114efc15c68b9b81c28355b02c12b48094fb8bbd2867a067974848",
     },
     "05": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "sphERPA4gAc",
         "ep": "PD-2026-005-madoff",
         "rev": "v001",
         "title": "Steady Returns for Decades — and Almost Zero Real Trades #Shorts",
@@ -127,6 +137,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "93ba3bebc30d9d515dafd0b53eafdb69a9d8f0f5a9c2b7fb84ad718e8a65be99",
     },
     "09": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "m-uWzgWHGPg",
         "ep": "PD-2026-009-timbs",
         "rev": "v001",
         "title": "Can Police Take Your Property Without a Conviction? #Shorts",
@@ -145,6 +157,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "7f59ce5f3afb958655d55ac765bc5e8bbf95d6344569196d891587f23b2697cd",
     },
     "10": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "89SQoRgAD7U",
         "ep": "PD-2026-010-kelo",
         "rev": "v001",
         "title": "Can the Government Take Your Home for a Private Company? #Shorts",
@@ -164,6 +178,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "676e6ca434773d6d68993ef4828ddf6fc7a984ae66bf6d5154438ac7dbe2d90d",
     },
     "11": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "cSfe3iGnBBM",
         "ep": "PD-2026-011-mahanoy",
         "rev": "v001",
         "title": "Can Your School Punish You for a Post Made at Home? #Shorts",
@@ -181,6 +197,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "3a795b0cd661b5abd84405921ffce390c9199d2ae6d0952ff1d4637bccf90370",
     },
     "12": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "1pox44KsaV8",
         "ep": "PD-2026-012-arbitration",
         "rev": "v001",
         "title": "Did You Sign Away Your Right to Sue? #Shorts",
@@ -199,6 +217,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "61a3a086298bc96f5b5433b749e29057bdc7086f00e9f3866572d8561c591a1d",
     },
     "13": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "g5yFmDt48oU",
         "ep": "PD-2026-013-king",
         "rev": "v001",
         "title": "Arrested? Police Can Take Your DNA — and Keep It #Shorts",
@@ -218,6 +238,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "5c988bb5dda1dec2b9da1ca0eb32050bdf2c7e43efbc898c6f061b7b16d3ab9d",
     },
     "14": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Sz8zPUoBANM",
         "ep": "PD-2026-014-lange",
         "rev": "v001",
         "title": "Can Police Chase You Into Your Own Home? #Shorts",
@@ -238,6 +260,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "1c2819b03f2c7cbd110e109597222762dc7f2dce279a10c243aa9e3942ae75b8",
     },
     "15": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "LXFjJqE6vKU",
         "ep": "PD-2026-015-theranos",
         "rev": "v001",
         "title": "When Does a Bold Promise Become a Crime? #Shorts",
@@ -258,6 +282,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "7b1266d39723981a7b234e376733c48afa2a3987c0af5595a4017ec4eb152ae6",
     },
     "16": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "marQjsCagh0",
         "ep": "PD-2026-016-titan",
         "rev": "v001",
         "title": "The World Counted Down 4 Days. They Were Already Gone. #Shorts",
@@ -277,6 +303,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "ca526482ae9117237646f22b442873107fb9e952e20853aa05eb7e0f7d41c52a",
     },
     "17": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "vikfOBHullI",
         "ep": "PD-2026-017-onecoin",
         "rev": "v001",
         "title": "She Sold a Crypto That Prosecutors Say Never Existed #Shorts",
@@ -297,6 +325,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "7fe59a8a5cb072ada5083ac6339c1b01dda3379a044f6510b2017b06b9c10b08",
     },
     "18": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "5Jap-0h43A4",
         "ep": "PD-2026-018-flashcrash",
         "rev": "v001",
         "title": "$1 Trillion Vanished in 36 Minutes — Then Came Back #Shorts",
@@ -319,6 +349,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "7ba736c62a48f6553f9d49575a9e656655e64542f607d6f455412500495a5dc5",
     },
     "19": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "j8U8c4BB_GQ",
         "ep": "PD-2026-019-varsityblues",
         "rev": "v001",
         "title": "How Did Wealthy Parents Sneak Their Kids Into Elite Colleges? #Shorts",
@@ -342,6 +374,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "fcc6f8bbb1746e06b2bbbd228b39c98e6f3bc4b8efa2be94b855ab6539fd42a0",
     },
     "20": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "1h267U6PY0I",
         "ep": "PD-2026-020-gardner",
         "rev": "v001",
         "title": "The Biggest Art Heist in History Is Still Unsolved #Shorts",
@@ -364,6 +398,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "0f28a60589ca60d4b86cc3746426db78c5f960db77fb188b7faedf673ed97ef7",
     },
     "21": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "tt7U1XgjCU4",
         "ep": "PD-2026-021-dbcooper",
         "rev": "v001",
         "title": "He Jumped From a Plane With $200,000 and Vanished #Shorts",
@@ -386,6 +422,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "f95dc1390ca4bdde799ec19d868f5a29ffb9fb35afe5b4476a7e802ec1bfb730",
     },
     "22": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "mj9qEKPRatE",
         "ep": "PD-2026-022-milken",
         "rev": "v001",
         "title": "Charged With 98 Counts, He Pleaded Guilty to Just 6 #Shorts",
@@ -409,6 +447,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "257c916886d0b0ff37bd1e6c41cfd26523fe9f952befdc43799e631fb34c0c2d",
     },
     "24": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "rYV4rxtQCV0",
         "ep": "PD-2026-024-rajaratnam",
         "rev": "v001",
         "title": "The FBI Caught a Billionaire Trader With the Mob's Favorite Tool #Shorts",
@@ -432,6 +472,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "b925d25786380901425e23b8afb338f61fc8fdb742fa0c1afd1e048e987dde12",
     },
     "25": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "rrftLmSVivk",
         "ep": "PD-2026-025-kyllo",
         "rev": "v001",
         "title": "He Never Set Foot on the Property — So Why Did the Supreme Court Call It a \"Search\"? #Shorts",
@@ -456,6 +498,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "a442516b5b26ea52c16224eec3bb87944b49bf9f7446a0cca13e1b454a4bc9fb",
     },
     "26": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "68oWZRiOnB8",
         "ep": "PD-2026-026-katz",
         "rev": "v001",
         "title": "How Did the FBI Record Him Without Ever Touching the Phone Booth? #Shorts",
@@ -479,6 +523,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "9844dda73784c6bc59ee64d17e15865312119af4dd5fac535c2df30deec892dd",
     },
     "27": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "tpAKfHKuwqY",
         "ep": "PD-2026-027-rodriguez",
         "rev": "v001",
         "title": "The Traffic Stop Was Already Over — So How Was It Unconstitutional? #Shorts",
@@ -502,6 +548,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "f78dbd2d5b6572d565aa8aaaaea9fa02cd4fe9a51dc89db90a803b0c6f7fb5cc",
     },
     "23": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "FTm1icKgycU",
         "ep": "PD-2026-023-swartz",
         "rev": "v001",
         "title": "The Website He Took From Didn't Even Want Him Charged #Shorts",
@@ -525,6 +573,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "960e5747ee74c6b95eba00db639cc46406092f2282ab7d327df07fcaf918d989",
     },
     "28": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "YhEJHK279f8",
         "ep": "PD-2026-028-forfeiture",
         "rev": "v001",
         "title": "His Son Sold $40 of Drugs — So the City Tried to Take His Parents' House #Shorts",
@@ -551,6 +601,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "0d0ff6e22c1075245b45ec70a37cd67c3504542ae8d49d7ee2ca9a2dd9e1d5ac",
     },
     "29": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Qyad4FejCIc",
         "ep": "PD-2026-029-hinton",
         "rev": "v001",
         "title": "He Spent 30 Years on Death Row for a Bullet That Matched Nothing #Shorts",
@@ -576,6 +628,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "d9df1a51af9e47a927aad6f4c6bf472dc07c2c81f0691383eff48323ae895ea9",
     },
     "30": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "5L_HCGJxX_U",
         "ep": "PD-2026-030-cotton",
         "rev": "v001",
         "title": "She Was Certain He Attacked Her — Then DNA Proved She'd Named the Wrong Man #Shorts",
@@ -601,6 +655,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "e4156b61d9d2b66e177d69b9b4854caf40ed7622fe582936b5daa52d7f6312ef",
     },
     "31": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "YQIhk2dKZHU",
         "ep": "PD-2026-031-unlock",
         "rev": "v001",
         "title": "Police Can Force Your Thumb to Unlock a Phone — But Maybe Not Your Passcode #Shorts",
@@ -625,6 +681,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "7a6f146d81bd0fa2148313e47177d6e0c9edd0e565e4772eda246837b84b2249",
     },
     "32": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "bXATF9ZnKLE",
         "ep": "PD-2026-032-carsearch",
         "rev": "v001",
         "title": "Police Can Search Your Car Without a Warrant — But Not the One Spot Touching Your House #Shorts",
@@ -653,6 +711,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "6b76ae5cf8aadf3028eb02296a95e8e1655234d9761a238cc0d63f21eea43da4",
     },
     "33": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "rU2vk9XL4vY",
         "ep": "PD-2026-033-tyler",
         "rev": "v001",
         "title": "The County Took Her Home Over a $15,000 Debt — Then Kept an Extra $25,000 #Shorts",
@@ -679,6 +739,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "c342283431c2ac532ceb329d6385c70b73c443c032c739b121af71be80a86b51",
     },
     "34": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "6ozsIfwqrP0",
         "ep": "PD-2026-034-rolin",
         "rev": "v001",
         "title": "You Can Legally Fly With Cash — But the Airport Can Take It and Charge You With Nothing #Shorts",
@@ -703,6 +765,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "f196069750610d79f3620eb2840089773885d9dfbd107b033422e23039558a72",
     },
     "35": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Xc_PxdC_75c",
         "ep": "PD-2026-035-hinders",
         "rev": "v001",
         "title": "She Ran a Cash Restaurant and Broke No Law — So Why Did the IRS Empty Her Bank Account? #Shorts",
@@ -727,6 +791,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "df98c3cd93b6b7ff2f37c5976cd6b0e504797f69927b0ad82b8fa6765890a983",
     },
     "36": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "XWYWAgkExH4",
         "ep": "PD-2026-007-riley",
         "rev": "v001",
         "title": "Police Wanted to Search Your Entire Phone — Legally? #Shorts",
@@ -746,6 +812,8 @@ CONFIG: dict[str, dict] = {
         "thumb_sha256": "cc5d805ddf0abec2a1d8723f7ab008baba329bf7dd57214d8f5ec4168462484f",
     },
     "37": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "An0to4U0hJQ",
         "ep": "PD-2026-003-mapp",
         "rev": "v001",
         "title": "Police Broke In With a Warrant That Didn't Exist — Then What? #Shorts",
@@ -764,6 +832,160 @@ CONFIG: dict[str, dict] = {
         "video_sha256": "b4c7a74d54d2e36ae8766d342f8d18664c310535ae04fab312a72d21ba7cd3e9",
         "thumb_sha256": "2cf9701b3d1b80eed4d72ed2c455479d8f5841f094cf4ee26e2280cbe544e114",
     },
+    "86": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "marQjsCagh0",
+        "ep": "PD-2026-016-titan",
+        "rev": "v001",
+        "title": "More than three dozen professionals signed one letter in 2018. The dives went on #Shorts",
+        "description": "More than three dozen professionals signed one letter in 2018. The dives went on.\n\nWhat did the letter actually say — and what happened after it was sent?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Titan #OceanGate #Submersible #Safety #Documentary",
+        "tags": ["Shorts", "Titan", "OceanGate", "Submersible", "Safety", "Law", "Documentary"],
+        "video_sha256": "f52877cf93e8bd301e3e1921fab7cd669076a3650c05ac7ec00cbaef0261289b",
+        "thumb_sha256": "1f1bd46f7c31afca08777c6c0f633bb8a56441f35e48923a5cbff37d8dcb4ef3",
+    },
+    "87": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "marQjsCagh0",
+        "ep": "PD-2026-016-titan",
+        "rev": "v001",
+        "title": "It happened in the seam between everyone's rules and no one's #Shorts",
+        "description": "It happened in the seam between everyone's rules and no one's.\n\nIf no regulator had authority, who was ever supposed to say no?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Titan #OceanGate #Submersible #Safety #Documentary",
+        "tags": ["Shorts", "Titan", "OceanGate", "Submersible", "Safety", "Law", "Documentary"],
+        "video_sha256": "6d00193a22073878a89db49cef5198ea003bcf9bbabeb34a0ef6e48b4551f31a",
+        "thumb_sha256": "47e326d4d3f66909e536adc8d3ffe26bebff49d88f566e97c8f66bcdcfcfd3f0",
+    },
+    "88": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "bYcqabvvxak",
+        "ep": "PD-2026-006-terry",
+        "rev": "v001",
+        "title": "A frisk is not a search. That difference is the entire rule #Shorts",
+        "description": "A frisk is not a search. That difference is the entire rule.\n\nWhat happens to something an officer finds after he has gone past that line?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #TerryvOhio #StopandFrisk #SupremeCourt #FourthAmendment #Documentary",
+        "tags": ["Shorts", "Terry v Ohio", "Stop and Frisk", "Supreme Court", "Fourth Amendment", "Law", "Documentary"],
+        "video_sha256": "875e772fe6b8d089dceba8c392be1bc50bbf6e79ccd8caec58855d427cd4f904",
+        "thumb_sha256": "65687f2564852e8a75a372aec5744767c19db19cde64eb81a7398a7a10bd77cb",
+    },
+    "89": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "bYcqabvvxak",
+        "ep": "PD-2026-006-terry",
+        "rev": "v001",
+        "title": "The argument that won was about the officer, not the suspect #Shorts",
+        "description": "The argument that won was about the officer, not the suspect.\n\nThe Court held both truths at once — so which one wins when they collide?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #TerryvOhio #StopandFrisk #SupremeCourt #FourthAmendment #Documentary",
+        "tags": ["Shorts", "Terry v Ohio", "Stop and Frisk", "Supreme Court", "Fourth Amendment", "Law", "Documentary"],
+        "video_sha256": "6d4adb634d41a66f40c35bfc488eb7f6d6f8ab78ce7edb1a451d3af599d816b2",
+        "thumb_sha256": "3342e93f1262bf7c1469d467ab503c31e1ea1e2ea18b7e1889f0d9052384d868",
+    },
+    "90": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "SOu4Y1NkGGY",
+        "ep": "PD-2026-037-florence",
+        "rev": "v001",
+        "title": "He was not even driving. He was the passenger #Shorts",
+        "description": "He was not even driving. He was the passenger.\n\nOnce the record was wrong, was there anything he could have done to stop it?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #FlorencevBurlington #StripSearch #SupremeCourt #CivilRights #Documentary",
+        "tags": ["Shorts", "Florence v Burlington", "Strip Search", "Supreme Court", "Civil Rights", "Law", "Documentary"],
+        "video_sha256": "28ad66f6cea6f1a4d2c8c67abb26027b13f365017ae8468d5e1074cd49ac2ad7",
+        "thumb_sha256": "15bf881e83c0dcabb566a4f08a3c044f40a5c5c9bbd99001db3838ad59f67a04",
+    },
+    "91": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "SOu4Y1NkGGY",
+        "ep": "PD-2026-037-florence",
+        "rev": "v001",
+        "title": "His own words for it: scared, petrified, humiliated #Shorts",
+        "description": "His own words for it: scared, petrified, humiliated.\n\nHe could have let it go. Why did he spend seven years on it instead?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #FlorencevBurlington #StripSearch #SupremeCourt #CivilRights #Documentary",
+        "tags": ["Shorts", "Florence v Burlington", "Strip Search", "Supreme Court", "Civil Rights", "Law", "Documentary"],
+        "video_sha256": "43bc798a665f9fbbd879635954f49d45aee58b1fa6261478290496af090ef03b",
+        "thumb_sha256": "6fd61c3f96408e88c10e649f4133577d046fd287e8bfd705ed9b14917dc625e0",
+    },
+    "92": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "tt7U1XgjCU4",
+        "ep": "PD-2026-021-dbcooper",
+        "rev": "v001",
+        "title": "The name the world knows him by was never even his #Shorts",
+        "description": "The name the world knows him by was never even his.\n\nIf the FBI never had a name, what did fifty years of investigation actually produce?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #DBCooper #Hijacking #FBI #Unsolved #Documentary",
+        "tags": ["Shorts", "D B Cooper", "Hijacking", "FBI", "Unsolved", "Law", "Documentary"],
+        "video_sha256": "e6da795a3f83a26beeffa864d37b51271a890760f980952a11ddb72d0b81c5e6",
+        "thumb_sha256": "962292b81419a3917312db2d55ed849c1338df002d43a1a2307ee8871425652c",
+    },
+    "93": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "tt7U1XgjCU4",
+        "ep": "PD-2026-021-dbcooper",
+        "rev": "v001",
+        "title": "He did not pick that plane by accident. He picked the one with a door in its tail #Shorts",
+        "description": "He did not pick that plane by accident. He picked the one with a door in its tail.\n\nHow much else was planned — and what did that planning tell investigators about him?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #DBCooper #Hijacking #FBI #Unsolved #Documentary",
+        "tags": ["Shorts", "D B Cooper", "Hijacking", "FBI", "Unsolved", "Law", "Documentary"],
+        "video_sha256": "0994a30ae3b0a91600ee465ef5dd905b74d88dd17327b66147a65b4eb05c6a6d",
+        "thumb_sha256": "8f7377f58ecbea4d828a4cd7f5efab450d70782fd2c288ca10b7d3477bd1a5f5",
+    },
+    "94": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "sphERPA4gAc",
+        "ep": "PD-2026-005-madoff",
+        "rev": "v001",
+        "title": "One man handed regulators the arithmetic. For nearly ten years, nobody ran it down #Shorts",
+        "description": "One man handed regulators the arithmetic. For nearly ten years, nobody ran it down.\n\nHe was right for a decade and it changed nothing. Why did nobody act?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Madoff #Ponzi #SEC #Fraud #Documentary",
+        "tags": ["Shorts", "Madoff", "Ponzi", "SEC", "Fraud", "Law", "Documentary"],
+        "video_sha256": "5f0599bd0abf769cd3e97248db25da9fa7bdba4dd55fe1128e2bd299f9ce3dec",
+        "thumb_sha256": "6cccc35ebe2ce4eb52fe28388a44a69fa7a36bf3b74c17905974c2727c2948b2",
+    },
+    "95": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "sphERPA4gAc",
+        "ep": "PD-2026-005-madoff",
+        "rev": "v001",
+        "title": "In December 2008 he told his own sons the business was one big lie #Shorts",
+        "description": "In December 2008 he told his own sons the business was one big lie.\n\nThe money was gone long before 2008. Where did it actually go?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Madoff #Ponzi #SEC #Fraud #Documentary",
+        "tags": ["Shorts", "Madoff", "Ponzi", "SEC", "Fraud", "Law", "Documentary"],
+        "video_sha256": "8c89c4df33c54608eac53ae0f56a3ea1db4f1783a4148cc801e479f4f7fa025c",
+        "thumb_sha256": "b1d455c696abbb346761257c9be5032006be422db98f6442b1969ccc79c9b37b",
+    },
+    "96": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Qyad4FejCIc",
+        "ep": "PD-2026-029-hinton",
+        "rev": "v001",
+        "title": "In 2002 someone finally did the one thing his first defence never did: test the bullets #Shorts",
+        "description": "In 2002 someone finally did the one thing his first defence never did: test the bullets.\n\nThe evidence failed in 2002. Why did Alabama keep him for thirteen more years?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #AnthonyRayHinton #DeathRow #WrongfulConviction #Alabama #Documentary",
+        "tags": ["Shorts", "Anthony Ray Hinton", "Death Row", "Wrongful Conviction", "Alabama", "Law", "Documentary"],
+        "video_sha256": "9c3592f4f00d5829bfb959c8adcf578d8e423c10f47f6cfec8dedaa9ddde8fc4",
+        "thumb_sha256": "d911c06195823e37cd275a424baa94a03c99233da4a59bbd7bcf0403d9324690",
+    },
+    "97": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Qyad4FejCIc",
+        "ep": "PD-2026-029-hinton",
+        "rev": "v001",
+        "title": "He walked out in 2015. The two murders he was condemned for were never solved #Shorts",
+        "description": "He walked out in 2015. The two murders he was condemned for were never solved.\n\nNobody with the power to stop it ever checked. How was that possible for thirty years?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #AnthonyRayHinton #DeathRow #WrongfulConviction #Alabama #Documentary",
+        "tags": ["Shorts", "Anthony Ray Hinton", "Death Row", "Wrongful Conviction", "Alabama", "Law", "Documentary"],
+        "video_sha256": "fc2d28e0fa5b3296c0ccc8f4b97b826706fe36f9c2c2aad16ef886b20e60aa0f",
+        "thumb_sha256": "096551b3e93f3c283758514ad01728537d81378fa75a1f752c77b9c53fe98c7e",
+    },
+    "98": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Sz8zPUoBANM",
+        "ep": "PD-2026-014-lange",
+        "rev": "v001",
+        "title": "The Court did not say police can never follow you in. It said there is no automatic yes #Shorts",
+        "description": "The Court did not say police can never follow you in. It said there is no automatic yes.\n\nIf it is not automatic, what does an officer have to show instead?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #LangevCalifornia #HotPursuit #SupremeCourt #FourthAmendment #Documentary",
+        "tags": ["Shorts", "Lange v California", "Hot Pursuit", "Supreme Court", "Fourth Amendment", "Law", "Documentary"],
+        "video_sha256": "dcb86cd978cd64667fc6da0ac608ab8e637e07105b196a0f621b174f70f3f818",
+        "thumb_sha256": "f3b4a2990f46c2ec1143ff561a098909441d841e31d61dd539f28e0690d26366",
+    },
+    "99": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Sz8zPUoBANM",
+        "ep": "PD-2026-014-lange",
+        "rev": "v001",
+        "title": "The baseline nobody states out loud: without a warrant, your door stays shut #Shorts",
+        "description": "The baseline nobody states out loud: without a warrant, your door stays shut.\n\nHow narrow is narrow — what actually counts as an emergency?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #LangevCalifornia #HotPursuit #SupremeCourt #FourthAmendment #Documentary",
+        "tags": ["Shorts", "Lange v California", "Hot Pursuit", "Supreme Court", "Fourth Amendment", "Law", "Documentary"],
+        "video_sha256": "78d7651ff94f1fb4ec373660bffcdf809ff6beff16bfca31804e6d2f88e2412b",
+        "thumb_sha256": "9dc63f309fe7cf728a93280d5a7d0b7f5fae1a6cd50efd1512925047b98cadf4",
+    },
 }
 
 
@@ -772,10 +994,58 @@ def write_json(path: Path, data: dict) -> None:
     path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def ensure_funnel_description(token: str, cfg: dict) -> str:
+    """Return the description with a live long-form link on line one, or refuse to upload.
+
+    A Short that ships without a route to its long-form is a dead end, and we shipped 46 of them:
+    an audit on 2026-08-02 found 0 of 46 public Shorts carried a link, with 4,391 views sitting
+    behind them. Long-form converts ~3.67 subscribers per 1,000 views against 0.77 on Shorts, so
+    that gap is the most expensive thing on the channel. Backfilling afterwards is not a fix,
+    because the next upload reopens the hole. This closes it at the source.
+
+    On Shorts the description sits behind a tap, so the URL goes on the FIRST line; anything
+    further down is invisible in practice.
+
+    Refuses when the destination is missing, not public, or is itself a Short. A link to a private
+    video is worse than no link: it looks like a route and is not one.
+    """
+    vid = cfg.get("longform")
+    if not vid:
+        raise SystemExit("this Short's CONFIG has no 'longform' video id. Every Short must name "
+                         "the long-form it feeds before it can be uploaded.")
+    req = urllib.request.Request(
+        "https://www.googleapis.com/youtube/v3/videos"
+        f"?part=snippet,status,contentDetails&id={vid}",
+        headers={"Authorization": f"Bearer {token}"},
+    )
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        body = json.loads(resp.read().decode())
+    items = body.get("items", [])
+    if not items:
+        raise SystemExit(f"long-form {vid} not found on the channel — refusing to upload")
+    v = items[0]
+    privacy = v["status"].get("privacyStatus")
+    if privacy != "public":
+        raise SystemExit(
+            f"long-form {vid} is '{privacy}'. A Short must not point at a destination the viewer "
+            f"cannot open. Publish the long-form first, or schedule this Short after it."
+        )
+    dur = v["contentDetails"].get("duration", "")
+    mins = re.search(r"(\d+)M", dur)
+    if "H" not in dur and (not mins or int(mins.group(1)) < 4):
+        raise SystemExit(f"'long-form' {vid} has duration {dur} — that is a Short, not a destination")
+
+    url = f"https://www.youtube.com/watch?v={vid}"
+    desc = cfg["description"]
+    if url in "\n".join(desc.splitlines()[:3]):
+        return desc
+    return f"▶ FULL CASE: {v['snippet']['title']}\n{url}\n\n{desc}"
+
+
 def initiate_upload(token: str, file_size: int, cfg: dict, publish_at: str) -> str:
     snippet = {
         "title": cfg["title"],
-        "description": cfg["description"],
+        "description": ensure_funnel_description(token, cfg),
         "tags": cfg["tags"],
         "categoryId": "27",
         "defaultLanguage": "en",
@@ -905,16 +1175,26 @@ def main(argv: list[str]) -> int:
             result_path.replace(bak)
             print(f"OK archived old result -> {bak.name}")
 
+    # An upload costs 1600 of the 10,000 daily units, so six is the hard ceiling per Pacific day.
+    # Check before sending a hundred megabytes: on 2026-08-03 the allowance ran out mid-session
+    # and the failure arrived as an opaque 403 after the bytes were already on the wire.
+    from yt_quota import UNITS, assert_budget, record, remaining
+    assert_budget(UNITS["videos.insert"] + UNITS["thumbnails.set"],
+                  what=f"scheduling {args.short}")
+
     upload_url = initiate_upload(token, video.stat().st_size, cfg, args.publish_at)
     print(f"OK upload started ({video.stat().st_size/1e6:.1f} MB)")
     video_id = upload_chunks(upload_url, token, video)
+    record("videos.insert")
     if not video_id:
         raise RuntimeError("Upload returned no video_id")
-    print(f"OK uploaded (private, scheduled) video_id={video_id}")
+    print(f"OK uploaded (private, scheduled) video_id={video_id} "
+          f"[quota left today ~{remaining()}]")
 
     thumb_status = thumb_error = None
     try:
         thumb_status = set_thumbnail(token, video_id, thumb)
+        record("thumbnails.set")
         print("OK thumbnail set via API")
     except urllib.error.HTTPError as e:
         thumb_error = {"code": e.code, "reason": str(e.reason), "body": e.read().decode("utf-8", errors="replace")}

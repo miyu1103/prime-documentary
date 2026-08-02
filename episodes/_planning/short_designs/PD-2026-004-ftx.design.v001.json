@@ -1,0 +1,694 @@
+{
+  "episode_id": "PD-2026-004-ftx",
+  "slug": "ftx",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "waA4XJ9bYcE",
+    "title": "The Hidden Code Door Behind the $8 Billion FTX Fraud",
+    "url": "https://www.youtube.com/watch?v=waA4XJ9bYcE",
+    "privacy": "public",
+    "views": 5
+  },
+  "shorts_existing": [
+    "short04"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short04": [
+      "A crypto exchange was holding billions of its customers' dollars.",
+      "Then about eight billion of it went missing.",
+      "FTX was one of the biggest crypto exchanges in the world, and its founder was its most trusted face.",
+      "But hidden in the code was a secret exception.",
+      "A private trading firm could pull customer deposits almost without limit.",
+      "When everyone asked for their money back, it wasn't there.",
+      "In 2023, a jury found the founder guilty in one of the largest frauds in U.S.",
+      "history.",
+      "Even in crypto, spending customers' money is theft.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-004-ftx\\03_script\\script.en.v002.md",
+  "candidate_payload_lines": [
+    "concrete shareable details (shorts + video games, Super Bowl ad, arena, $26B→0); a clearly illustrative victim beat; quotable hard lines (\"It isn't 'crypto.' It's theft.\"); stronger emotional verdict payoff.",
+    "The wall between \"money we're holding for customers\" and \"money we're gambling with\" — that wall *was* the promise.",
+    "But \"you'll get most of it back, years later, if you fight through a court\" is not what the ad promised.",
+    "Endorsers/non-defendants never implied to be part of the fraud.",
+    "To understand how eight billion dollars walks out the door, you have to understand why nobody was watching it.",
+    "To keep pulling money out after it hit zero.",
+    "As long as everyone didn't ask for their money back at the same time, no one would ever see the door.",
+    "Another 1.3 billion to Alameda's lenders.",
+    "On November 2nd, 2023, the jury went out.",
+    "On March 28th, 2024, the judge sentenced him to twenty-five years in federal prison and ordered him to forfeit more than eleven billion dollars."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short152",
+      "angle": "The week a million people asked for their money back at the same time, and the exchange could not hand it over.",
+      "type": "B - the run, and the size of the hole it exposed",
+      "avoids": "short04 explains the hidden code exception and the guilty verdict. It never covers the run itself, how fast the fortune evaporated, or the exact shape of what was owed.",
+      "funnel_question_left_for_longform": "The money was not set on fire. So where did eight billion dollars actually go?",
+      "era": "November 2022, Bahamas and New York",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "November 2022. Customers start doing the one thing the hidden door cannot survive. They ask for their money back. All of them. At once.",
+          "source_lines": [
+            "a rival pulls its support, and customers start doing the one thing the hidden door cannot survive",
+            "They ask for their money back. All of them. At once."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "In days, customers try to yank billions off the exchange. A healthy company just hands it over. It is your money. It is right there.",
+          "source_lines": [
+            "In days, customers try to yank billions off the exchange.",
+            "A healthy company just hands it over. It's your money. It's right there."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "FTX couldn't. Most of what customers thought was sitting safely on the exchange wasn't there anymore.",
+          "source_lines": [
+            "FTX couldn't. Because most of what customers thought was sitting safely on the exchange wasn't there anymore."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "By some estimates his wealth fell from around sixteen billion dollars to under one billion in a single day. Within days, effectively zero.",
+          "source_lines": [
+            "By some estimates, Bankman-Fried's wealth fell from around sixteen billion dollars to under one billion — in a single day.",
+            "Within days, effectively zero."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "Roughly eight billion owed to customers. It was not burned. It was moved, bet and spent, long before anyone asked for it back.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a thumb over a blank phone screen",
+          "source": "GENERATE",
+          "prompt": "macro of one thumb hovering over the completely blank unlit glass screen of a phone held in a dark room, absolutely no icons figures or lettering on the glass, no face or body visible, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone screen dark hand"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "hands on a keyboard in the dark",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands typing keyboard",
+          "bound_file": "D:\\pd-archive\\courtroom_justice\\pixabay_extra__v_159030__hands-typing-keyboard-laptop-writing-pen-study-studying-univ.mp4",
+          "bound_title": "hands, typing, keyboard, laptop, writing, pen, study, studying, university, coll",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.3814,
+          "motion": 7.067,
+          "luma": 115.7
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M03",
+          "subject": "the desks after everyone asked at once",
+          "source": "GENERATE",
+          "prompt": "a deserted trading desk of dark terminals seen from high above at night, every screen blank and unreadable with no charts numerals or lettering, all chairs empty, lit ONLY by the residual glow of those screens which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "dark computer monitors office"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "the door closing on the withdrawals",
+          "source": "GENERATE",
+          "prompt": "a heavy steel door swinging shut on a narrowing blade of light, seen from inside a dark room, no signage or lettering on the door, lit ONLY by that closing blade which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "steel door closing dark"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "M02",
+          "subject": "banded cash, denominations illegible",
+          "source": "GENERATE",
+          "prompt": "banded stacks of cash standing on a dark desk, the notes plain and their denominations completely illegible with no numerals or portraits, lit ONLY by one green banker's lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "banknotes stack"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "hands counting money",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "counting money hands",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4130__money_cash_counting.mp4",
+          "bound_title": "counting money close up of hands handling bills",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.527,
+          "motion": 8.005,
+          "luma": 63.0
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U09",
+          "subject": "a queue of silhouettes along a wall",
+          "source": "GENERATE",
+          "prompt": "a line of dark silhouettes standing single file along a bare wall, all faces turned away and not visible, the figures placed high in frame with a long empty floor below them, lit ONLY by one strip of light which is switched on above them and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouettes standing in line"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "M05",
+          "subject": "the vault door, closed",
+          "source": "GENERATE",
+          "prompt": "a heavy steel vault door standing closed in a dark chamber, its dial and every marking worn smooth and unreadable with no numerals, lit ONLY by one hard uplight which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "steel vault door"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "a bank vault door",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "bank vault door",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0825__money_cash_counting.mp4",
+          "bound_title": "a person counting bank notes",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6826,
+          "motion": 1.655,
+          "luma": 106.8
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "M07",
+          "subject": "the arena screen, blank and enormous",
+          "source": "GENERATE",
+          "prompt": "an enormous stadium screen glowing pure empty white high above rows of empty seats in a dark arena, absolutely no logos images lettering or numerals anywhere on the screen, nobody present, lit ONLY by that screen which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stadium screen dark arena"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "empty stadium seating",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty stadium seats",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5314__empty_stadium_seats.mp4",
+          "bound_title": "empty seats in a stadium with a red carpet",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4287,
+          "motion": 12.795,
+          "luma": 50.6
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "M06",
+          "subject": "the drawer that should not have been empty",
+          "source": "GENERATE",
+          "prompt": "one steel safe deposit drawer pulled all the way out and completely empty, set in a wall of closed identical drawers whose number plates are worn blank, lit ONLY by one overhead fixture which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "safe deposit box"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "M01",
+          "subject": "one hidden line glowing on black glass",
+          "source": "GENERATE",
+          "prompt": "extreme macro of a single line of pale monospaced characters glowing on black glass, the characters completely illegible and abstract forming no readable words or numerals, the rest of the screen empty black, lit ONLY by the glow of that one line which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "glowing text on screen"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "a rack of servers",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "server rack",
+          "bound_file": "D:\\pd-archive\\science_tech\\mixkit__23215__close-up-of-server-racks-lights.mp4",
+          "bound_title": "Close up of server racks lights",
+          "bound_license": "free_commercial",
+          "bound_source": "mixkit",
+          "centre_energy": 0.4186,
+          "motion": 1.5,
+          "luma": 34.5
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U08",
+          "subject": "a rack door open on an empty gap",
+          "source": "GENERATE",
+          "prompt": "a server aisle at night with one cabinet door standing open on an empty gap where the hardware should be, loose cabling hanging down, no labels or lettering anywhere, lit ONLY by one work lamp which is switched on inside the open cabinet and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "server cabinet open"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "M04",
+          "subject": "statements fanned across a desk, blank",
+          "source": "GENERATE",
+          "prompt": "printed statements fanned across a dark desk, every figure heading and line worn completely blank and unreadable, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "papers fanned on desk"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M01",
+          "subject": "the line that falls off the bottom of the glass",
+          "source": "GENERATE",
+          "prompt": "a single pale line drawn across dark glass rising gently then dropping away vertically off the bottom of the frame, entirely abstract and unlabelled with no numerals grid or lettering anywhere, lit ONLY by its own glow which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "glowing line dark screen"
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "an abstract market display",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stock market screen",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0909__stock_market_screen.mp4",
+          "bound_title": "analyzing stock market trends on interactive screen",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4199,
+          "motion": 6.606,
+          "luma": 195.8
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I08",
+          "subject": "one lit window in a dark tower",
+          "source": "GENERATE",
+          "prompt": "a tall glass tower seen from the street at night with every window dark except a single lit one near the top, no signage or lettering on the building, lit ONLY by that one window which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "office building night"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "a chair spun away from a bare desk",
+          "source": "GENERATE",
+          "prompt": "a single office chair spun away from a completely bare desk in a cone of light in a large dark empty office, nobody present, dust drifting, lit ONLY by the fixture which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "office chair empty desk"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "an empty office at night",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty office night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0138__abstract_dark_background.mp4",
+          "bound_title": "defocused urban night traffic bokeh lights",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5445,
+          "motion": 4.0,
+          "luma": 33.9
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "the claims table, sealed cartons",
+          "source": "GENERATE",
+          "prompt": "a long bare claims table stacked end to end with sealed unlabelled cartons in a dim courtroom annexe, every carton face completely blank with no printing or numbering, nobody present, lit ONLY by one pendant lamp which is switched on above the table and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, November 2022, Bahamas and New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "cardboard moving boxes"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the hook plate: a thumb over a blank phone screen",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 stops on the money being gone before anyone asked for it, and L1 picks up with the asking: they all want it back at once."
+    },
+    {
+      "short_id": "short153",
+      "angle": "The witnesses who ended him were not investigators. They were the people who built the thing with him.",
+      "type": "C - the testimony, and the sentence that followed",
+      "avoids": "short04 states that a jury found him guilty and stops there. It never says who testified, what they said, or what the sentence and forfeiture actually were.",
+      "funnel_question_left_for_longform": "Twenty-five years for an eight-billion-dollar fraud. Too much, too little, or exactly right?",
+      "era": "2023-2024 New York",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "His defense, boiled down: mistakes were made, but not crimes.",
+          "source_lines": [
+            "His defense, boiled down: mistakes were made — but not crimes."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "The problem was who sat in the witness chair. Not outside investigators. His own inner circle.",
+          "source_lines": [
+            "The problem was who sat in the witness chair. Not outside investigators — his own inner circle."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "The co-founder who built the code with him described, out loud, the secret setting that let the money move. They testified the use of customer money was no accident.",
+          "source_lines": [
+            "The co-founder who built the code with him and described, out loud, the secret setting that let the money move.",
+            "They testified the use of customer money was no accident."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "On November 2nd, 2023, the jury went out. It was back in a few hours. Guilty on all seven counts. Wire fraud, conspiracy, money laundering.",
+          "source_lines": [
+            "On November 2nd, 2023, the jury went out. It was back in a few hours.",
+            "On all seven counts — wire fraud, conspiracy, money laundering."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "The jury did not buy it. Twenty-five years in federal prison, and an order to forfeit more than eleven billion dollars.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U06",
+          "subject": "the witness chair, empty",
+          "source": "GENERATE",
+          "prompt": "one empty wooden chair inside a plain witness box in a dark courtroom, standing in a hard cone of light, nobody present, no lettering or nameplate anywhere, lit ONLY by the single fixture which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty wooden chair"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "a bare chair in a dim room",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty wooden chair",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0585__law_library_books.mp4",
+          "bound_title": "woman sitting on a chair reading documents",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4681,
+          "motion": 2.736,
+          "luma": 52.5
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R05",
+          "subject": "the federal courthouse from below",
+          "source": "GENERATE",
+          "prompt": "tall stone courthouse columns photographed from directly below against a dark storm sky, absolutely no inscriptions or lettering anywhere on the stone, lit ONLY by hard uplights which are switched on at their bases and are the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "marble columns low angle"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "a pen held over a blank legal pad",
+          "source": "GENERATE",
+          "prompt": "macro of one hand pressing a pen to a completely blank ruled legal pad on a defence table, the page empty with no writing figures or headings, no face or body visible, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand pen blank paper"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "Y01",
+          "subject": "a corridor bench with one coat left on it",
+          "source": "GENERATE",
+          "prompt": "a long bench against a courthouse corridor wall, every seat empty except one holding a folded dark coat, nobody present, no signage anywhere, lit ONLY by one overhead fixture which is switched on above the bench and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "coat on bench corridor"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U09",
+          "subject": "three silhouettes on a bench, faces away",
+          "source": "GENERATE",
+          "prompt": "three dark silhouettes seated in a row on a bench, all faces turned away and not visible, the figures placed high in frame with a long empty floor below them, lit ONLY by one hard lamp which is switched on above them and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouettes seated row"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "a conference table with chairs",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "conference table chairs",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0833__money_cash_counting.mp4",
+          "bound_title": "a person counting bank notes on the table",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4826,
+          "motion": 2.517,
+          "luma": 159.0
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "M07",
+          "subject": "the room where they built it, empty",
+          "source": "GENERATE",
+          "prompt": "a long polished conference table with chairs pushed in and a dark blank projection wall behind it, nobody present, no lettering anywhere in the room, lit ONLY by one pendant which is switched on above the table and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "long conference table"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "one hand raised into the light",
+          "source": "GENERATE",
+          "prompt": "a single right hand and forearm raised palm forward into a hard shaft of light against total black, no face body or shoulders visible at all, lit ONLY by that shaft which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "raised hand dark"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "courthouse steps",
+          "source": "GENERATE",
+          "prompt": "courthouse steps, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "R06",
+          "subject": "the gallery filled up, then emptied",
+          "source": "GENERATE",
+          "prompt": "rows of empty polished courtroom gallery benches receding into shadow, no lettering or numbering anywhere, lit ONLY by one hard shaft from a high window which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "wooden benches rows"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "I01",
+          "subject": "the setting that was left switched on",
+          "source": "GENERATE",
+          "prompt": "extreme macro of one small toggle switch set to the on position on an otherwise blank dark panel, every marking around it worn completely away with no lettering or numerals, lit ONLY by one pinpoint indicator lamp which is switched on beside it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "toggle switch panel macro"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "a server rack",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "server rack",
+          "bound_file": "D:\\pd-archive\\science_tech\\mixkit__23215__close-up-of-server-racks-lights.mp4",
+          "bound_title": "Close up of server racks lights",
+          "bound_license": "free_commercial",
+          "bound_source": "mixkit",
+          "centre_energy": 0.4186,
+          "motion": 1.5,
+          "luma": 34.5
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "M02",
+          "subject": "a snapped band, notes fanning out",
+          "source": "GENERATE",
+          "prompt": "macro of a banded block of cash on a dark desk with its paper band snapped and the notes fanning loose, the denominations completely illegible with no numerals or portraits, lit ONLY by one green banker's lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "banknotes stack"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "stacked banknotes",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "banknotes stack",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4124__money_cash_counting.mp4",
+          "bound_title": "close up of argentine peso banknotes",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4476,
+          "motion": 10.709,
+          "luma": 67.6
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "I01",
+          "subject": "a stamp used again and again",
+          "source": "GENERATE",
+          "prompt": "macro of a wooden-handled rubber stamp standing on a dark desk beside a column of identical ink impressions, every impression a featureless smudge with no readable characters, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rubber stamp ink pad"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U05",
+          "subject": "a blank clock, hours only",
+          "source": "GENERATE",
+          "prompt": "a plain round institutional wall clock with a completely blank featureless face and no numerals or markings at all, hard side light raking across it, lit ONLY by one fixture which is switched on beside it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "clock face wall"
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "clock hands turning",
+          "source": "GENERATE",
+          "prompt": "clock hands turning, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I07",
+          "subject": "the jury box, back in a few hours",
+          "source": "GENERATE",
+          "prompt": "an empty jury box of twelve worn wooden seats in two tiers behind a low rail, every seat vacant and every nameplate blank, lit ONLY by one bank of overhead lights which are switched on and are the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty jury box seats"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R07",
+          "subject": "the gavel, mid-strike",
+          "source": "GENERATE",
+          "prompt": "a wooden judge's gavel caught mid-strike above its round block, motion blur on the head, no engraving or lettering anywhere, lit ONLY by one brass bench lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "wooden gavel"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "a gavel on a desk",
+          "source": "GENERATE",
+          "prompt": "a gavel on a desk, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "I06",
+          "subject": "the name taken off the building",
+          "source": "GENERATE",
+          "prompt": "a clean rectangular patch on a weathered concrete stadium facade where large letters have been removed, only the anchor holes and the pale ghost of the shape remaining with absolutely no readable characters anywhere, lit ONLY by one floodlight which is switched on below it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2023-2024 New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "concrete facade floodlight"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the hook plate: the witness chair, empty",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 gives the sentence, so L1's 'mistakes were made, but not crimes' is heard again knowing exactly how that defense landed."
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

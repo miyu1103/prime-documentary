@@ -1,0 +1,679 @@
+{
+  "episode_id": "PD-2026-025-kyllo",
+  "slug": "kyllo",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "rrftLmSVivk",
+    "title": "Can the Police Scan Your Home From the Street?",
+    "url": "https://www.youtube.com/watch?v=rrftLmSVivk",
+    "privacy": "public",
+    "views": 1
+  },
+  "shorts_existing": [
+    "short25"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short25": [
+      "He never knocked.",
+      "He never crossed the lawn.",
+      "The Supreme Court still called it a search of the home.",
+      "On a freezing night in January 1992, a federal agent sat in a car on a public street in Florence, Oregon.",
+      "He pointed a thermal-imaging device at Danny Kyllo's home and read the heat leaking off the walls.",
+      "The garage roof and one wall glowed hot — to the agent, the sign of grow lamps.",
+      "That helped win a warrant, and inside were over a hundred marijuana plants.",
+      "But the device never saw through the wall.",
+      "It only read heat already drifting into open air.",
+      "On June 11, 2001, the Court split five to four.",
+      "Justice Scalia wrote that using a device not in general public use to learn what's inside a home is a search that needs a warrant.",
+      "The dissent called it just reading heat off the outside.",
+      "But the majority drew a line at the front door it called firm, and bright.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-025-kyllo\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "And the reason the case still matters lies in the phrase Scalia chose: technology \"not in general public use.\" In 1992, the fight was over a heat camera the size of a lunchbox.",
+    "\"At the very core\" of the Fourth Amendment, he wrote, \"stands the right of a man to retreat into his own home and there be free from unreasonable governmental intrusion.\" The home is not just another place the police might search.",
+    "And the Fourth Amendment, the Court said, draws a firm line at its entrance — a line that must be \"not only firm but also bright.\" Then came the rule that made the case famous.",
+    "\"Not in general public use\" is a moving line.",
+    "It is a winter night in 1992, a little after three in the morning.",
+    "We treat the home as the one place the government cannot reach without a warrant.",
+    "So on January 16, 1992, a little after three in the morning, an agent named William Elliott sat in a car across the street with a thermal imaging device — an Agema Thermovision 210 .",
+    "He never touched the home, never entered it, never even set foot on the property .",
+    "On June 11, 2001, the Supreme Court gave its answer, and it was close — five justices to four .",
+    "And a search of a home, without a warrant, is presumptively unreasonable .",
+    "So the Court fixed the line at the wall itself: what the inside of your home holds is presumptively yours, and pulling it out with a special device is a search — whether that device reads heat, or something no one has invented yet .",
+    "The agent, he said, never went through the wall.",
+    "Whatever you call the heat, the purpose and the result were the same: the government learned what was going on inside a house without a warrant.",
+    "The lesson was not \"you can never do this.\" It was \"get a warrant first.\" That difference is the whole point.",
+    "The Constitution rarely tells the police they can never learn something.",
+    "When your private words travel as sound through the open air, or as a signal down a wire — into a glass phone booth on a public sidewalk, where anyone can see you, but no one is supposed to be listening?"
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short132",
+      "angle": "The rule protecting your home from a heat scan is tied to how rare the device is, so the protection weakens as the technology becomes ordinary.",
+      "type": "A",
+      "avoids": "The existing Short delivers the 2001 holding and the bright line at the front door; this cut is about the expiry date built into the phrase that holding depends on.",
+      "funnel_question_left_for_longform": "Which of today's ordinary sensors has already crossed from exotic into general public use?",
+      "era": "1992 Florence, Oregon, into the present",
+      "loop": true,
+      "loop_join": "L5 reframes the question as a matter of time, and L1 answers with the expiry the rule already carries.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "The rule that keeps a heat camera off your house has an expiration date written into it.",
+          "source_lines": [
+            "And the reason the case still matters lies in the phrase Scalia chose: technology \"not in general public use.\""
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "Scalia's rule turns on one phrase. Technology not in general public use. In 1992 that meant a heat camera the size of a lunchbox.",
+          "source_lines": [
+            "In 1992, the fight was over a heat camera the size of a lunchbox."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "But not in general public use is a moving line. A device that is exotic today can sit in everyone's pocket tomorrow.",
+          "source_lines": [
+            "\"Not in general public use\" is a moving line. A device that is exotic today can sit in everyone's pocket tomorrow"
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "And the more ordinary a technology becomes, the weaker your claim that using it invades your privacy. The Court protected the home against the future.",
+          "source_lines": [
+            "the more ordinary a technology becomes, the weaker your claim that using it invades your privacy",
+            "The Court protected the home against the future, but it tied that protection to a standard the future keeps rewriting"
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "So the question is not whether your home is protected. It is how long the device that watches it stays unusual.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R09",
+          "subject": "a dark house seen through a windscreen, one wall warm",
+          "source": "GENERATE",
+          "prompt": "the dark exterior of a single storey house seen at three in the morning through a car windscreen from across the street, one wall and the garage roof faintly glowing warm, every window black, lit ONLY by one street lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "house at night from car"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a boxed thermal imager on a car dashboard",
+          "source": "GENERATE",
+          "prompt": "macro of a boxy handheld thermal imaging device resting on a car dashboard, its small viewfinder screen dark and blank with no markings, frost creeping across the windscreen beyond, lit ONLY by one street lamp which is switched on through the glass, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "device on car dashboard night"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U16",
+          "subject": "frost creeping across glass",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "frost on window glass macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0444__office_interior_dark.mp4",
+          "bound_title": "woman working at a office alone",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4547,
+          "motion": 2.055,
+          "luma": 40.3
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W09",
+          "subject": "calendar pages caught mid turn, dates blank",
+          "source": "GENERATE",
+          "prompt": "a stack of wall calendar pages caught mid turn with every date worn completely blank and unreadable, motion blur on the lifting page, lit ONLY by one angled desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "calendar pages turning"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "R05",
+          "subject": "courthouse columns from directly below",
+          "source": "GENERATE",
+          "prompt": "tall marble courthouse columns photographed from directly below against a dark storm sky, no inscriptions anywhere, lit ONLY by hard uplights which are switched on at their bases, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "courthouse columns low angle"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a pen underlining one blank line",
+          "source": "GENERATE",
+          "prompt": "macro of a fountain pen drawing a single straight underline beneath one otherwise blank line on an empty page, no face or body above the wrist, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "pen underlining paper macro"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "the imager alone on a workbench, dials blank",
+          "source": "GENERATE",
+          "prompt": "a heavy boxed thermal imaging unit the size of a lunchbox standing alone on a steel workbench with its cables coiled beside it, every dial worn completely blank, lit ONLY by one workbench lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "old equipment on workbench"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "hands turning a lens ring",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands adjusting camera lens macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0134__lens_flare.mp4",
+          "bound_title": "abstract sunset highway scene with lens flare",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4389,
+          "motion": 15.942,
+          "luma": 110.6
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "R09",
+          "subject": "a gloved hand clearing condensation from a car window",
+          "source": "GENERATE",
+          "prompt": "a gloved hand wiping a clear arc through condensation on the inside of a car window to open a view of a dark empty street, no face or body above the wrist, lit ONLY by one street lamp which is switched on beyond the glass, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand wiping fogged window"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "heat rippling above a dark roof ridge",
+          "source": "GENERATE",
+          "prompt": "warm air rippling visibly above a dark shingled roof ridge on a freezing night, the distortion sharp against a black sky, no lettering anywhere, lit ONLY by one porch bulb which is switched on beneath the eaves, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "heat haze rising roof"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "steam lifting in freezing air",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "steam rising cold night macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3428__surveillance_camera_city.mp4",
+          "bound_title": "surreal nighttime city reflection videography",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3908,
+          "motion": 12.227,
+          "luma": 61.3
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "I06",
+          "subject": "a string line lifted to a new position",
+          "source": "GENERATE",
+          "prompt": "a taut surveyor's string line stretched across a dark concrete floor with one hand lifting it sideways to a new position, no lettering anywhere, no face or body above the wrist, lit ONLY by one work lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "string line across floor"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "R11",
+          "subject": "a phone face down, camera cluster catching light",
+          "source": "GENERATE",
+          "prompt": "a modern smartphone lying face down on a dark table with its camera cluster catching one hard edge of light, the screen not visible, lit ONLY by a single desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone face down on table"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "R11",
+          "subject": "a phone held in the dark",
+          "source": "GENERATE",
+          "prompt": "a phone held in the dark, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U08",
+          "subject": "a shelf of identical boxed gadgets in a closed store",
+          "source": "GENERATE",
+          "prompt": "a shop shelf stacked with identical boxed consumer devices in a dark closed store, every carton blank and unprinted, lit ONLY by one security light which is switched on above the aisle, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "store shelves dark night"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U04",
+          "subject": "an empty suburban street down its centre line",
+          "source": "GENERATE",
+          "prompt": "an empty suburban street at night photographed straight down its centre line with parked cars along both kerbs and every house dark, lit ONLY by one street lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty suburban street night"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R10",
+          "subject": "a front door from inside, chain across it",
+          "source": "GENERATE",
+          "prompt": "a residential front door seen from inside a dark hallway with the security chain drawn across it and one hard blade of light under the door, lit ONLY by one porch lamp which is switched on beyond it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "front door chain dark hallway"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U09",
+          "subject": "a curtain drawn across a lit window",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "curtain drawn across window",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0637__soft_golden_light.mp4",
+          "bound_title": "a smiling woman climbing onto a window sill",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4043,
+          "motion": 8.203,
+          "luma": 177.7
+        },
+        {
+          "n": 19,
+          "role": "body",
+          "line": "L4",
+          "motif": "U04",
+          "subject": "a house hallway receding to one lit doorway",
+          "source": "GENERATE",
+          "prompt": "a narrow domestic hallway inside a dark house receding toward one brightly lit doorway at the far end, coats hanging blank on hooks, lit ONLY by one fixture which is switched on in that doorway, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hallway to lit doorway"
+        },
+        {
+          "n": 20,
+          "role": "body",
+          "line": "L4",
+          "motif": "U15",
+          "subject": "a roofline glowing from above at night",
+          "source": "GENERATE",
+          "prompt": "a single house seen from directly above at night with its roof rendered as a faint glowing outline of heat and the surrounding yards completely black, no lettering anywhere, lit ONLY by one street lamp which is switched on at the kerb, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "aerial house at night"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R08",
+          "subject": "the high bench from the floor, empty",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, no inscriptions anywhere, lit ONLY by one brass bench lamp which is switched on at the end of the bench, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty judges bench low angle"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "R11",
+          "subject": "a quadcopter hovering low over a dark yard",
+          "source": "GENERATE",
+          "prompt": "a small quadcopter hovering low above a dark back yard at night with its rotors motion blurred and its own indicator lights dark, no lettering anywhere, lit ONLY by one porch lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1992 Florence, Oregon, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "drone hovering at night"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: a dark house seen through a windscreen, one wall warm",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ]
+    },
+    {
+      "short_id": "short133",
+      "angle": "Kyllo never banned thermal imaging and never freed Danny Kyllo; it sent the case back with a narrower instruction than people remember.",
+      "type": "C",
+      "avoids": "The existing Short ends on the bright line at the front door as though the scan were simply forbidden; this cut is the limited order the Court actually issued.",
+      "funnel_question_left_for_longform": "Once the thermal evidence was set aside, did the warrant against Kyllo still stand?",
+      "era": "2001 Washington, D.C.",
+      "loop": true,
+      "loop_join": "L5 states the general shape, and L1 returns as the concrete example of it: a search, yes, but no ban on the device.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "The Supreme Court called a heat scan of a house a search. It did not ban the device that did it.",
+          "source_lines": [
+            "So the Court fixed the line at the wall itself: what the inside of your home holds is presumptively yours, and pulling it out with a special device is a search"
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "It did not ban thermal imaging. It did not erase the evidence against Kyllo for good.",
+          "source_lines": [
+            "It did not ban thermal imaging. It did not erase the evidence against Kyllo for good."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "It sent the case back down with a narrower instruction. This kind of scan is a search, so it needs a warrant.",
+          "source_lines": [
+            "It sent the case back down with a narrower instruction: this kind of scan is a search, so it needs a warrant"
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "The lesson was not you can never do this. It was get a warrant first. That difference is the whole point.",
+          "source_lines": [
+            "The lesson was not \"you can never do this.\" It was \"get a warrant first.\" That difference is the whole point."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "The Fourth Amendment mostly sets a procedure, not a prohibition. Which is why rulings like this one sound bigger than they are.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W06",
+          "subject": "the imager lowered into an evidence carton",
+          "source": "GENERATE",
+          "prompt": "a gloved hand lowering a boxed thermal imaging unit into an open cardboard evidence carton on a steel counter, every label worn completely blank, no face or body above the wrists, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hands packing box counter"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R05",
+          "subject": "courthouse columns and steps",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courthouse columns exterior",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23029__federal_building_columns_night.mp4",
+          "bound_title": "architectural design of a building exterior",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.405,
+          "motion": 1.259,
+          "luma": 109.5
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R08",
+          "subject": "the high bench from the floor, empty",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, no inscriptions anywhere, lit ONLY by one brass bench lamp which is switched on at the end of the bench, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty judges bench low angle"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "a heavy door left standing half open",
+          "source": "GENERATE",
+          "prompt": "a heavy panelled door standing half open into a dark room with a blade of hard light falling through the gap onto the floor, nobody in frame, lit ONLY by that light beyond which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door ajar light through gap"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "the imager back on a laboratory shelf",
+          "source": "GENERATE",
+          "prompt": "a boxed thermal imaging unit standing on a laboratory shelf among other heavy instruments with every display dark and unreadable, lit ONLY by one task lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "instruments on laboratory shelf"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a lens aperture opening and closing",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "camera lens aperture macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15017__crime_scene_tape_night.mp4",
+          "bound_title": "man with camera by car at night",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3929,
+          "motion": 19.665,
+          "luma": 69.0
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "W06",
+          "subject": "a sealed evidence envelope, seal intact",
+          "source": "GENERATE",
+          "prompt": "a sealed paper evidence envelope lying on a steel counter with its seal intact and all writing worn completely blank, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "sealed evidence envelope"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U07",
+          "subject": "a tower of case folders that did not go away",
+          "source": "GENERATE",
+          "prompt": "a leaning tower of worn case folders on a small desk with every label worn completely blank, lit ONLY by one desk lamp which is switched on beside them, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stacked case files desk"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "I05",
+          "subject": "a hand drawing a file from a drawer",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand pulling file from drawer",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2516__spotlight_on_dark_stage.mp4",
+          "bound_title": "beam of light from a spotlight",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4826,
+          "motion": 3.623,
+          "luma": 80.7
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "U06",
+          "subject": "a dark garage under one hanging lamp",
+          "source": "GENERATE",
+          "prompt": "the interior of a dark garage with empty potting benches, coiled hoses and bare gravel underfoot, nobody present, lit ONLY by one low hanging lamp which is switched on above the benches, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty garage interior dark"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "I05",
+          "subject": "a records aisle of unlabelled boxes",
+          "source": "GENERATE",
+          "prompt": "looking down the aisle of a deep records room with shelving stacked to the ceiling with unlabelled boxes, lit ONLY by one bulb which is switched on at the far end, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "archive boxes shelves aisle"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U04",
+          "subject": "a marble stairwell descending into shadow",
+          "source": "GENERATE",
+          "prompt": "a marble courthouse stairwell descending into shadow with one landing struck by light from a high window, no inscriptions anywhere, nobody on the stairs, lit ONLY by one wall fixture which is switched on at the landing, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stairwell descending shadow"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a pen pressed to a blank warrant form",
+          "source": "GENERATE",
+          "prompt": "macro of one hand pressing a pen to a completely blank unreadable form on a dark desk, no face or body above the wrist, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand writing on form"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a document signed at close range",
+          "source": "GENERATE",
+          "prompt": "a document signed at close range, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "I01",
+          "subject": "a stamp pressed down on a blank sheet",
+          "source": "GENERATE",
+          "prompt": "macro of a wooden handled rubber stamp pressed down onto a completely blank sheet, the die face worn smooth and unreadable, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rubber stamp on paper"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U11",
+          "subject": "a bench lamp burning over an open blank register",
+          "source": "GENERATE",
+          "prompt": "a brass shaded lamp burning over an open register with completely blank pages on a dark chamber desk at night, chair empty, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "desk lamp open book night"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R10",
+          "subject": "a front door from inside, chain across it",
+          "source": "GENERATE",
+          "prompt": "a residential front door seen from inside a dark hallway with a security chain across it and one hard blade of light under the door, lit ONLY by one porch lamp which is switched on beyond it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "front door chain hallway"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U02",
+          "subject": "a knuckle rapping on a door",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand knocking on door",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0446__office_interior_dark.mp4",
+          "bound_title": "monitor on desk in home office",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3909,
+          "motion": 7.527,
+          "luma": 77.2
+        },
+        {
+          "n": 19,
+          "role": "body",
+          "line": "L4",
+          "motif": "U02",
+          "subject": "two steel doors, one open and one shut",
+          "source": "GENERATE",
+          "prompt": "two identical steel doors side by side in a dark corridor, one closed flat and one standing open onto hard light, nobody in frame, lit ONLY by one fixture which is switched on beyond the open door, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "two doors corridor dark"
+        },
+        {
+          "n": 20,
+          "role": "body",
+          "line": "L4",
+          "motif": "U05",
+          "subject": "a wall clock with a blank face",
+          "source": "GENERATE",
+          "prompt": "a plain round institutional wall clock with a completely blank featureless face and no numerals, hard side light across it, lit ONLY by one fixture which is switched on beside it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "wall clock blank face"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R09",
+          "subject": "the imager on a passenger seat, screen dark",
+          "source": "GENERATE",
+          "prompt": "the interior of a parked car at night seen from the passenger side with empty seats and a boxed thermal imager lying on the seat with its screen dark and blank, the street beyond black, lit ONLY by one street lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "car interior at night empty"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "R07",
+          "subject": "a gavel caught mid strike",
+          "source": "GENERATE",
+          "prompt": "a wooden judge's gavel caught mid strike above its round block with motion blur on the head, lit ONLY by one brass bench lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2001 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "judge using a gavel"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: the imager lowered into an evidence carton",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

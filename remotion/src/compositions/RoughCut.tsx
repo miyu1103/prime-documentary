@@ -35,6 +35,9 @@ export type RoughShot = {
   clipSeconds?: number; // real length of a single fallback video clip
   clips?: {src: string; clipSeconds: number}[]; // several clips to CUT between across a long shot
   images?: string[]; // several photos to CUT between (Ken Burns) so a long shot never dwells
+  assetRef?: string;
+  searchKeywords?: string[];
+  claimIds?: string[];
   telop: string[];
   priority: 'A' | 'B' | 'C';
 };
@@ -54,6 +57,7 @@ export type RoughCutData = {
   fps: number;
   narrationSrc: string | null;
   bgmSrc: string | null;
+  timelineMode?: 'fixed30' | 'editorial';
   captions?: CaptionCue[];
   shots: RoughShot[];
 };

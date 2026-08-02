@@ -1,0 +1,694 @@
+{
+  "episode_id": "PD-2026-013-king",
+  "slug": "king",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "g5yFmDt48oU",
+    "title": "The Supreme Court Let Police Take Your DNA at Arrest",
+    "url": "https://www.youtube.com/watch?v=g5yFmDt48oU",
+    "privacy": "public",
+    "views": 1
+  },
+  "shorts_existing": [
+    "short13"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short13": [
+      "Get arrested, even by mistake, and police can take your DNA, and keep it.",
+      "In 2009, a man was arrested for assault.",
+      "At booking, they swabbed the inside of his cheek.",
+      "That sample matched an unsolved case from years earlier.",
+      "He was convicted of it.",
+      "It looks like justice, but here's the catch.",
+      "In 2013, the Supreme Court called it legal, just like fingerprints.",
+      "But four justices, left and right, dissented: it's a search of your body for crimes you're not even suspected of.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-013-king\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "In 2013, by a single vote, the Supreme Court said they are allowed to do that.",
+    "The question in this case was whether a DNA swab belongs in that box — a routine way to identify you — or whether it is something else: a search of your body for evidence of crimes no one has accused you of.",
+    "In 2009, a man named Alonzo King is arrested in Maryland.",
+    "And there, it matches genetic evidence left at the scene of a rape from 2003 — a case that had gone unsolved for years .",
+    "In 2013, the Supreme Court upheld the swab.",
+    "Each time, a power that began small is stretched to fit a world the founders never saw — and each time, a court has to decide how far is too far.",
+    "Can they come in after you, without a warrant?"
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short130",
+      "angle": "The majority's whole case rests on one word, identification, and Justice Kennedy defined it far more broadly than your name.",
+      "type": "C",
+      "avoids": "The existing Short states the outcome, that the Court called the swab legal just like fingerprints; this cut opens the majority's reasoning and shows what the word doing that work actually meant.",
+      "funnel_question_left_for_longform": "Why did the Court's most conservative justice and three of its most liberal justices end up on the same side against that definition?",
+      "era": "2013 Washington, D.C.",
+      "loop": true,
+      "loop_join": "L5 leaves the majority's definition in force, so L1 returns as current practice, which is why that one word carries the whole thing.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "Police can swab your DNA at booking because the Supreme Court called it identification. That word does not mean what you think it means.",
+          "source_lines": [
+            "In 2013, by a single vote, the Supreme Court said they are allowed to do that."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "Fingerprints are allowed at booking for one reason. Their purpose is confirming that the person in the cell is who they say they are.",
+          "source_lines": [
+            "Courts have long allowed this, because its purpose is identification — confirming that the person in the cell is who they say they are, and checking whether they are wanted elsewhere"
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "Justice Kennedy said identification meant more than a name. Knowing an arrestee's full history helps officers judge how dangerous he might be.",
+          "source_lines": [
+            "Kennedy also spelled out what \"identification\" meant to the majority, and it was broader than a name.",
+            "Knowing an arrestee's full history, the Court said, helps officers judge how dangerous he might be, whether he is a flight risk, and whether he threatens the people around him."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "Whether he is a flight risk. Whether he threatens the people around him. On that reading the swab was not a fishing expedition. It was processing.",
+          "source_lines": [
+            "DNA, in that view, was not a fishing expedition — it was part of safely processing a person already in the state's custody"
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "The four in dissent lost, which means the definition in the majority opinion is the one police work from today.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R02",
+          "subject": "a sealed cheek swab held over the booking counter",
+          "source": "GENERATE",
+          "prompt": "macro of a sealed sterile cheek swab in its blank paper tube held in a gloved hand above a steel booking counter, no lettering on the tube, no face or body above the wrists, lit ONLY by one hard overhead booking lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "police badge close up night"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R01",
+          "subject": "a cruiser beacon turning over a dark kerb",
+          "source": "GENERATE",
+          "prompt": "a cruiser beacon turning over a dark kerb, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "a thumb rolled across a blank print card",
+          "source": "GENERATE",
+          "prompt": "macro of one thumb being rolled across a completely blank unmarked fingerprint card on a steel counter, ink glossy on the ridges, no face or body above the wrist, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "fingerprint ink roller macro"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R12",
+          "subject": "a booking tray with a swab tube among the effects",
+          "source": "GENERATE",
+          "prompt": "a steel booking tray holding a belt, a pair of laces, a few coins and one sealed unmarked swab tube laid among them on a dark counter, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "personal effects tray counter"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "W08",
+          "subject": "an empty booking wall with a blank height strip",
+          "source": "GENERATE",
+          "prompt": "an empty booking room wall with a painted height strip worn completely blank and no numerals anywhere, scuffed floor below, nobody present, lit ONLY by one harsh fixture which is switched on above it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty police room wall"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "ink pressed onto a glass plate",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "ink roller on glass macro",
+          "bound_file": "D:\\pd-archive\\ocean_nature\\coverr__coverr-solitary-silhouette-on-the-rocky-shore__solitary-silhouette-on-the-rocky-shore.mp4",
+          "bound_title": "solitary silhouette on the rocky shore",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.3819,
+          "motion": 3.998,
+          "luma": 149.7
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U08",
+          "subject": "a wall of blank print card drawers",
+          "source": "GENERATE",
+          "prompt": "a wall of grey steel card index drawers stacked floor to ceiling, every drawer face worn completely blank, one drawer standing half open, lit ONLY by one flickering fluorescent tube which is switched on overhead, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "filing cabinet drawers wall"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "W02",
+          "subject": "a silhouette behind bars, backlit",
+          "source": "GENERATE",
+          "prompt": "silhouette of a figure standing behind vertical iron bars with bright corridor light behind, face not visible, strong vertical rhythm across the frame, lit ONLY by that corridor light which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouette behind bars"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "W03",
+          "subject": "an empty holding cell",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "an empty cell of a prison",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8133__bank_vault_door.mp4",
+          "bound_title": "an empty cell of a prison",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4611,
+          "motion": 25.044,
+          "luma": 57.0
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I05",
+          "subject": "a records aisle of unlabelled identity boxes",
+          "source": "GENERATE",
+          "prompt": "looking down the aisle of a deep records room, shelving stacked to the ceiling with unlabelled grey boxes, nobody present, lit ONLY by one bulb which is switched on at the far end, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "archive shelves records room"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U05",
+          "subject": "a blank clock over the booking desk",
+          "source": "GENERATE",
+          "prompt": "a blank clock over the booking desk, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "R05",
+          "subject": "courthouse columns from directly below",
+          "source": "GENERATE",
+          "prompt": "tall marble courthouse columns photographed from directly below against a dark storm sky, no inscriptions anywhere, lit ONLY by hard uplights which are switched on at their bases, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "courthouse columns low angle"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U07",
+          "subject": "a tower of worn case folders, labels blank",
+          "source": "GENERATE",
+          "prompt": "a leaning tower of worn case folders on a small desk, every label worn completely blank, dust along their edges, lit ONLY by one desk lamp which is switched on beside them, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stacked files on desk"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U15",
+          "subject": "a national index drawn across a dark map",
+          "source": "GENERATE",
+          "prompt": "a dark relief map of the United States with state borders as thin glowing seams and absolutely no place names, hundreds of tiny pale points scattered across it joined by faint threads, lit ONLY by one small lamp which is switched on behind the panel, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "glowing map of united states"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "M03",
+          "subject": "server racks holding the index",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "server room racks blue light",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0750__american_flag_waving.mp4",
+          "bound_title": "american flag waving against blue sky",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5766,
+          "motion": 4.25,
+          "luma": 119.6
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "W05",
+          "subject": "a rack of unlabelled sample vials on a lab bench",
+          "source": "GENERATE",
+          "prompt": "a steel rack of small sealed sample vials on a forensic laboratory bench, every label worn completely blank and all instrument displays dark, lit ONLY by one task lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "laboratory vials rack macro"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R10",
+          "subject": "a front door from inside, chain across it",
+          "source": "GENERATE",
+          "prompt": "a residential front door seen from inside a dark hallway with the security chain drawn across it and one hard blade of light under the door, lit ONLY by one porch lamp which is switched on beyond it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "front door chain dark hallway"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U04",
+          "subject": "a corridor receding to one lit doorway",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "silhouette walking in dim corridor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-17624__lone_person_silhouette_walking.mp4",
+          "bound_title": "mysterious silhouette walking in dim corridor",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4567,
+          "motion": 1.178,
+          "luma": 31.6
+        },
+        {
+          "n": 19,
+          "role": "body",
+          "line": "L4",
+          "motif": "U02",
+          "subject": "a heavy steel door swinging shut",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "heavy metal door closing",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2590__crowd_silhouette.mp4",
+          "bound_title": "mysterious indoor crowd with dramatic lighting",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3828,
+          "motion": 6.769,
+          "luma": 88.1
+        },
+        {
+          "n": 20,
+          "role": "body",
+          "line": "L4",
+          "motif": "I01",
+          "subject": "a stamp resting on its ink pad, die worn smooth",
+          "source": "GENERATE",
+          "prompt": "macro of a wooden handled rubber stamp resting on an open ink pad on a grey desk, the die face worn completely smooth and unreadable, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rubber stamp ink pad"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W06",
+          "subject": "the swab sealed into an evidence envelope",
+          "source": "GENERATE",
+          "prompt": "a sealed paper evidence envelope lying on a steel counter with the outline of a slim tube pressing through the paper, all writing worn completely blank, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "sealed envelope steel counter"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "R08",
+          "subject": "nine empty seats, four of them in shadow",
+          "source": "GENERATE",
+          "prompt": "a long empty judicial bench of nine high backed chairs photographed from the floor looking up, five of the chairs caught in light and four left in deep shadow, nobody present, lit ONLY by one brass bench lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty judges bench courtroom"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: a sealed cheek swab held over the booking counter",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ]
+    },
+    {
+      "short_id": "short131",
+      "angle": "A fingerprint reveals a pattern, while a DNA sample is a blueprint of your relatives and your health, and the state keeps the sample itself.",
+      "type": "B",
+      "avoids": "The existing Short accepts the Court's fingerprint comparison and moves straight to the vote; this cut measures the distance between the two things being compared.",
+      "funnel_question_left_for_longform": "If the law reads only a narrow set of markers today, who decides when that limit moves?",
+      "era": "2013 Washington, D.C.",
+      "loop": true,
+      "loop_join": "L5 makes everything turn on what a swab takes, and L1 hands back the Court's own answer, the fingerprint comparison, for a second look.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "The Supreme Court compared a DNA swab to a fingerprint. Look at how far apart those two things actually are.",
+          "source_lines": [
+            "In 2013, the Supreme Court upheld the swab.",
+            "It is, in the Court's words, like fingerprinting and photographing — a legitimate booking procedure"
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "A fingerprint reveals almost nothing about you except its own pattern. DNA is a blueprint that can expose your relatives, your health, your most private traits.",
+          "source_lines": [
+            "A fingerprint reveals almost nothing about you except its own pattern. DNA is different — it is a blueprint that can expose your relatives, your health, your most private traits."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "The majority answered that the law reads only a narrow set of identifying markers, not your whole genome. That was the promise.",
+          "source_lines": [
+            "The majority stressed that the law used only a narrow set of identifying markers, not your whole genome."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "But critics answered that the physical sample itself is kept. And that the line the state draws today, it can quietly move tomorrow.",
+          "source_lines": [
+            "Critics answered that the physical sample itself is kept, and that the line the state draws today, it can quietly move tomorrow"
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "The Court weighed that risk against a public interest and called the swab reasonable. Whether that holds depends on what you think a swab actually takes.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W06",
+          "subject": "a print card and a swab tube laid side by side",
+          "source": "GENERATE",
+          "prompt": "a completely blank unmarked fingerprint card and one sealed swab tube laid side by side on a dark steel counter, both surfaces bare of any lettering, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "objects on steel counter macro"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "fingerprint ridges in extreme macro",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "fingerprint ink macro close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1670__suburban_house_exterior_night.mp4",
+          "bound_title": "couple dancing in front of window",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5161,
+          "motion": 9.132,
+          "luma": 54.6
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R05",
+          "subject": "courthouse columns against a storm sky",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courthouse columns exterior",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22484__moving_truck_loading.mp4",
+          "bound_title": "white truck parked at modern warehouse exterior",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4174,
+          "motion": 6.794,
+          "luma": 115.6
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R12",
+          "subject": "the swab tube dropped into the property tray",
+          "source": "GENERATE",
+          "prompt": "a steel booking tray on a dark counter holding a belt, laces and coins with one sealed unmarked swab tube dropped in among them, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "property tray belt laces coins"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "a sequencer on a lab bench, displays dark",
+          "source": "GENERATE",
+          "prompt": "a heavy analytical sequencer standing on a forensic laboratory bench with every display dark and unreadable, cables coiled behind it, lit ONLY by one task lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "laboratory instrument bench"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "M01",
+          "subject": "a double helix of pale light in a dark room",
+          "source": "GENERATE",
+          "prompt": "a fine double helix drawn in threads of pale light suspended in a dark laboratory, abstract and unlabelled with no numerals anywhere, lit ONLY by one small fibre lamp which is switched on beneath it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "abstract dna helix light"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "W11",
+          "subject": "empty kitchen chairs around a family table",
+          "source": "GENERATE",
+          "prompt": "four empty wooden chairs standing around a kitchen table in a dark house, nobody present, plates cleared away, lit ONLY by one shaded lamp which is switched on above the table, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty kitchen table chairs"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U04",
+          "subject": "a hospital corridor at night",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hospital corridor at night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1044__data_center.mp4",
+          "bound_title": "a computer component in operation",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3909,
+          "motion": 0.978,
+          "luma": 99.3
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "a chest film clipped to a glowing light box",
+          "source": "GENERATE",
+          "prompt": "a single chest radiograph clipped to a wall mounted light box in a dark room, the image a pale featureless blur with no markings or lettering anywhere, lit ONLY by that light box which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "x ray light box dark"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "test tubes standing in a rack",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "test tubes in laboratory rack",
+          "bound_file": "D:\\pd-archive\\ocean_nature\\coverr__4214__surfing-through-the-ocean-waves.mp4",
+          "bound_title": "surfing through the ocean waves",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.4176,
+          "motion": 28.48,
+          "luma": 116.1
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "W07",
+          "subject": "one hair held in tweezers, macro",
+          "source": "GENERATE",
+          "prompt": "macro of a single strand of hair held in fine steel tweezers above a dark surface, the strand catching one hard edge of light, no face or body in frame, lit ONLY by one hard rim light which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "tweezers holding hair macro"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "R08",
+          "subject": "the high bench from the floor",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, no inscriptions anywhere, lit ONLY by one brass bench lamp which is switched on at the end of the bench, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty judges bench low angle"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "M01",
+          "subject": "a narrow band of marks on dark glass",
+          "source": "GENERATE",
+          "prompt": "a narrow band of pale vertical marks printed across a strip of dark glass, abstract and unlabelled with no numerals or lettering anywhere, the rest of the panel black, lit ONLY by one small lamp which is switched on behind the strip, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "abstract data strip glowing"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U16",
+          "subject": "narrow slats of light across a dark wall",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "venetian blind shadows on wall",
+          "bound_file": "D:\\pd-archive\\government_buildings\\coverr__7878__flags-on-a-skyscraper.mp4",
+          "bound_title": "flags on a skyscraper",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.4056,
+          "motion": 0.881,
+          "luma": 144.6
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a hand signing the promise into law",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "person signing a contract",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8251__contract_paperwork_signing.mp4",
+          "bound_title": "a person signing a contract",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4223,
+          "motion": 17.825,
+          "luma": 157.8
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "I01",
+          "subject": "a stamp pressed onto a blank sheet",
+          "source": "GENERATE",
+          "prompt": "macro of a wooden handled rubber stamp pressed down onto a completely blank sheet on a dark desk, the die face worn smooth and unreadable, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rubber stamp pressing paper"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "M06",
+          "subject": "a freezer drawer of sealed vials, labels blank",
+          "source": "GENERATE",
+          "prompt": "one steel freezer drawer pulled out from a wall of closed ones holding rows of small sealed vials, every label worn completely blank, cold vapour spilling over the lip, lit ONLY by one drawer lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "freezer drawer vials vapour"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "I05",
+          "subject": "an aisle of freezer cabinets to the ceiling",
+          "source": "GENERATE",
+          "prompt": "looking down the aisle of a deep cold store, steel freezer cabinets stacked to the ceiling with every door blank and unmarked, lit ONLY by one bulb which is switched on at the far end, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "cold storage aisle cabinets"
+        },
+        {
+          "n": 19,
+          "role": "body",
+          "line": "L4",
+          "motif": "M03",
+          "subject": "data racks holding the record",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "server racks data centre lights",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2514__spotlight_on_dark_stage.mp4",
+          "bound_title": "handheld shot of spotlights",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4793,
+          "motion": 10.645,
+          "luma": 79.0
+        },
+        {
+          "n": 20,
+          "role": "body",
+          "line": "L4",
+          "motif": "U15",
+          "subject": "state borders as glowing seams",
+          "source": "GENERATE",
+          "prompt": "a dark relief map of the United States showing state borders as thin glowing seams and absolutely no place names or lettering anywhere, lit ONLY by one small lamp which is switched on behind the panel, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "united states map glowing borders"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a chalk line smudged sideways",
+          "source": "GENERATE",
+          "prompt": "a single chalk line drawn across a dark concrete floor with one bare hand smudging it sideways to a new position, no lettering anywhere, no face or body above the wrist, lit ONLY by one work lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "chalk line concrete floor"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "R07",
+          "subject": "a gavel caught mid strike",
+          "source": "GENERATE",
+          "prompt": "a wooden judge's gavel caught mid strike above its round block, motion blur on the head, lit ONLY by one brass bench lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2013 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "judge using a gavel"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: a print card and a swab tube laid side by side",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

@@ -1,0 +1,709 @@
+{
+  "episode_id": "PD-2026-022-milken",
+  "slug": "milken",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "mj9qEKPRatE",
+    "title": "One banker was paid $550 million in a single year",
+    "url": "https://www.youtube.com/watch?v=mj9qEKPRatE",
+    "privacy": "public",
+    "views": 19
+  },
+  "shorts_existing": [
+    "short22"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short22": [
+      "He was charged with ninety-eight counts — and pleaded guilty to six.",
+      "Michael Milken built the high-yield, or junk, bond market, financing companies the big banks shut out.",
+      "In 1987 his pay was reported near five hundred fifty million dollars — called the largest single-year pay in America.",
+      "After a cooperating witness pointed investigators his way, a 1989 indictment charged him with ninety-eight counts, including RICO racketeering.",
+      "But those were accusations — the case never went to trial.",
+      "In 1990 he pleaded guilty to six felony counts; the RICO charge and the other ninety-two were dropped.",
+      "He paid about six hundred million dollars and was barred from the industry for life.",
+      "In 2020 a presidential pardon forgave the punishment — but it did not erase the guilty plea, and did not lift that lifetime ban.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-022-milken\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "There are a handful of people the world can never quite make up its mind about.",
+    "This is the story of how a kid from the suburbs of Los Angeles, working at a desk most Americans had never heard of, turned himself into the most powerful financier in the country.",
+    "And it is the story of a question that has never really been settled.",
+    "That was simply how the system worked, and almost nobody thought to ask whether it had to work that way.",
+    "Milken studied this same despised corner of the market as a young man, and he noticed something everyone else had filed away as obvious and never bothered to question.",
+    "If these bonds were a good deal for the people buying them, he could do something nobody else was willing to do.",
+    "Companies that could never have gotten a loan suddenly could.",
+    "In one single year, 1987, his pay was reported at around five hundred and fifty million dollars.",
+    "Almost nobody outside his own operation truly understood how it all fit together.",
+    "Wall Street had never watched anyone gather this much control over the flow of money this fast.",
+    "When you are the one who designed the game, and you are winning it by margins nobody has ever posted before, people stop asking how you got so good.",
+    "In 1986, the government found exactly that.",
+    "In 1986, Boesky was caught in a securities-fraud scandal of his own.",
+    "These were never going to be simple cases to make.",
+    "Then, in 1989, it landed with full force.",
+    "It had proven none of it, because the case never reached a jury.",
+    "In April of 1990, Michael Milken made a choice.",
+    "To one side, two years was a slap on the wrist, more proof that the powerful never really pay."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short162",
+      "angle": "One sheet of paper from his firm could put any company in America into play overnight.",
+      "type": "C - the document that terrified every boardroom in the country",
+      "avoids": "short22 covers the ninety-eight counts, the six-count plea and the pardon. It never explains the takeover machine, or the single letter that made a small raider dangerous to a giant.",
+      "funnel_question_left_for_longform": "Where in all of that did he stop bending the rules and start breaking them?",
+      "loop": true,
+      "loop_join": "L5 ends on the old rule being gone, and L1 opens by stating what that old rule was: to swallow a giant you had to already be one.",
+      "era": "1980s Beverly Hills",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "In the old world, to swallow a giant company you had to already be a giant yourself. Milken changed the arithmetic.",
+          "source_lines": [
+            "In the old world, if you wanted to swallow a giant company, you had to already be a giant yourself.",
+            "Milken changed the arithmetic."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "His firm perfected a single sheet of paper that could chill any boardroom in America. A letter saying Drexel was, in its own words, highly confident it could raise the money.",
+          "source_lines": [
+            "His firm even perfected a single sheet of paper that could put a chill through any boardroom in America.",
+            "It was a letter stating that Drexel was, in its own words, \"highly confident\" it could raise the money for a given takeover."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "Not a guarantee. Just confidence. Yet coming from Milken, the market treated that letter as good as cash in hand.",
+          "source_lines": [
+            "Not a guarantee. Just confidence. Yet coming from Milken, the market treated that letter as good as cash in hand."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "A corporate raider could wave it at a sleeping giant, and suddenly no company in the country felt too big to become a target.",
+          "source_lines": [
+            "A corporate raider could wave it at a sleeping giant, and suddenly no company in the country felt too big to become a target."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "Supporters called it shaking the dust off lazy, bloated companies. Critics saw raids that buried companies under debt and cost ordinary people their jobs. Either way, the old rule was gone.",
+          "source_lines": [
+            "Shaking the dust off lazy, bloated companies.",
+            "A wave of debt-fueled raids that buried great companies under mountains of borrowing, broke some of them apart for scrap, and cost ordinary people their jobs, all to enrich a handful of financiers standing in the middle."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "one blank sheet alone on a vast desk",
+          "source": "GENERATE",
+          "prompt": "a single sheet of heavy cream paper lying alone in the middle of a vast dark polished desk, the sheet completely blank with no letterhead printing signature or lettering anywhere, lit ONLY by one green banker's lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "sheet of paper desk"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "a stack of documents on a desk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stack of documents desk",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0066__dark_cinematic_background.mp4",
+          "bound_title": "time lapse video of the sky",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4172,
+          "motion": 6.087,
+          "luma": 62.5
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M07",
+          "subject": "the boardroom it would be waved at",
+          "source": "GENERATE",
+          "prompt": "a long polished boardroom table with high-backed chairs pushed in and a dark panelled wall behind it, nobody present, no plaques crests or lettering anywhere, lit ONLY by one pendant which is switched on above the table and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "long conference table"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "a conference table and chairs",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "conference table chairs",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10007__balance_scale_brass.mp4",
+          "bound_title": "scale of justice in the table of a lawyer",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3866,
+          "motion": 6.163,
+          "luma": 77.0
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "the X-shaped desk, every chair empty",
+          "source": "GENERATE",
+          "prompt": "an X-shaped trading desk in a dark room ringed with telephone consoles and dead blank screens, every chair empty and nobody present, no lettering or numerals anywhere, lit ONLY by one overhead fixture which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "trading desk empty office"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "a console of lit line buttons",
+          "source": "GENERATE",
+          "prompt": "macro of a bank of illuminated telephone line buttons on a dark console with every button lit at once, absolutely no lettering numbering or labels anywhere on the panel, lit ONLY by those buttons which are switched on and are the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "telephone console buttons"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "a rotary telephone",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "rotary telephone",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15714__rotary_phone_close_up.mp4",
+          "bound_title": "a woman making a call on a rotary telephone",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3985,
+          "motion": 20.715,
+          "luma": 99.2
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a fountain pen at the foot of a blank sheet",
+          "source": "GENERATE",
+          "prompt": "macro of one hand pressing a fountain pen to the foot of a completely blank sheet of heavy paper, no writing signature or printing anywhere on it, no face or body visible, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand pen blank paper"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "R11",
+          "subject": "a handset lifted from its cradle in the dark",
+          "source": "GENERATE",
+          "prompt": "macro of one hand lifting a heavy black telephone handset from its cradle in the dark, no face or body visible above the wrist, no dial markings or numerals showing, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "telephone handset hand"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I01",
+          "subject": "sealing wax and a seal worn smooth",
+          "source": "GENERATE",
+          "prompt": "macro of a stick of dark red sealing wax and a brass seal lying beside a folded blank sheet on a dark desk, the seal face worn completely smooth with no crest letters or device on it, lit ONLY by one desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "sealing wax brass seal"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "an envelope and a letter",
+          "source": "GENERATE",
+          "prompt": "an envelope and a letter, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "M05",
+          "subject": "the vault door, closed and unreadable",
+          "source": "GENERATE",
+          "prompt": "a heavy steel vault door standing closed in a dark chamber, its dial and every marking worn smooth and unreadable with no numerals at all, lit ONLY by one hard uplight which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "steel vault door"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "a bank vault door",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "bank vault door",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4127__money_cash_counting.mp4",
+          "bound_title": "a person counting bank notes",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3845,
+          "motion": 35.013,
+          "luma": 134.0
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "M02",
+          "subject": "banded cash under a banker's lamp",
+          "source": "GENERATE",
+          "prompt": "banded stacks of cash standing on a dark desk, the notes plain and their denominations completely illegible with no numerals or portraits, lit ONLY by one green banker's lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "banknotes stack"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "stacked banknotes",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "banknotes stack",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7990__cash_stacks_money.mp4",
+          "bound_title": "close up of euro banknotes",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5412,
+          "motion": 7.685,
+          "luma": 39.1
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "M05",
+          "subject": "one blank sheet propped against the vault",
+          "source": "GENERATE",
+          "prompt": "a single blank sheet of paper propped upright against a closed steel vault door, the sheet completely empty with no printing or writing, the vault dial worn smooth with no numerals, lit ONLY by one hard uplight which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "paper against metal door"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I08",
+          "subject": "towers dark except one lit floor",
+          "source": "GENERATE",
+          "prompt": "a row of glass office towers seen from below at night with every window dark except a single lit floor near the top, no signage or lettering on any of the buildings, lit ONLY by that one lit floor which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "office building night"
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "an office building at night",
+          "source": "GENERATE",
+          "prompt": "an office building at night, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "the head of the table, chair turned away",
+          "source": "GENERATE",
+          "prompt": "a single empty high-backed leather chair at the head of a long dark boardroom table, turned away from the table, nobody present, no lettering anywhere, lit ONLY by one pendant which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "leather chair boardroom"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "tower windows at night",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "skyscraper night lights",
+          "bound_file": "D:\\pd-archive\\government_buildings\\pixabay_extra__v_94__city-nights-party-view-lights-skyscrapers-high-rises-houses.mp4",
+          "bound_title": "city, nights, party, view, lights, skyscrapers, high-rises, houses, buildings",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.3847,
+          "motion": 1.313,
+          "luma": 50.5
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I05",
+          "subject": "a records room aisle of unlabelled boxes",
+          "source": "GENERATE",
+          "prompt": "looking down the aisle of a deep records room with shelving stacked to the ceiling with unlabelled boxes, every box face worn completely blank, lit ONLY by one bulb which is switched on at the far end and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "records room shelves boxes"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "I04",
+          "subject": "a factory gate chained shut",
+          "source": "GENERATE",
+          "prompt": "a factory gate secured with a heavy chain and padlock, every notice wired to it worn completely blank with no printing or lettering, nobody present, lit ONLY by one bulkhead lamp which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1980s Beverly Hills, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "locked door padlock"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the hook plate: one blank sheet alone on a vast desk",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ]
+    },
+    {
+      "short_id": "short163",
+      "angle": "Weeks out of prison he was told he had months to live, and he is still here decades later.",
+      "type": "B - the second act that made the verdict on him impossible",
+      "avoids": "short22 runs from the indictment to the 2020 pardon. It never mentions the cancer diagnosis or the foundation, which is the whole reason people cannot agree about him.",
+      "funnel_question_left_for_longform": "A record fine, a lifetime ban, and a presidential pardon. Which of those actually stuck?",
+      "loop": true,
+      "loop_join": "L5 points to a diagnosis as the start of the second answer, and L1 opens with that diagnosis, so the loop plays as the cause arriving right after the claim.",
+      "era": "1993-2020 Los Angeles",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "Soon after his release, Milken was diagnosed with advanced prostate cancer. It had already spread. The prognosis he was reportedly given was measured in months.",
+          "source_lines": [
+            "Soon after his release, Milken was diagnosed with advanced prostate cancer.",
+            "It had already spread.",
+            "The prognosis he was reportedly given was measured not in years, but in months."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "He founded what became the Prostate Cancer Foundation, the largest private funder of prostate cancer research in the world.",
+          "source_lines": [
+            "He founded what became the Prostate Cancer Foundation, which grew into the largest private funder of prostate cancer research in the world."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "In a strange way it was the junk bond insight again. Find what the establishment has written off, and pour everything in.",
+          "source_lines": [
+            "In a strange way, it was the junk-bond insight all over again.",
+            "Find the thing the establishment has written off, and pour everything into it."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "This time the payoff was measured not in money, but in years of human life. The cancer that was supposed to kill him in a year? Decades later, he is still alive.",
+          "source_lines": [
+            "Only this time, the payoff was measured not in money, but in years of human life.",
+            "And the cancer that was supposed to kill him inside a year? Decades later, he is still alive."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "So which is the real Michael Milken? The felon who paid a record fine, or the philanthropist whose money extended countless lives? The second answer begins with a diagnosis.",
+          "source_lines": [
+            "So which one is the real Michael Milken?",
+            "The felon who paid a record fine, or the philanthropist whose money has helped extend countless lives?",
+            "He is both, at the same time."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W10",
+          "subject": "the gate open onto daylight behind him",
+          "source": "GENERATE",
+          "prompt": "a heavy prison gate standing wide open onto flat daylight, seen from inside the dark sally port, nobody in frame, no signage anywhere, lit ONLY by that daylight beyond which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "prison gate open"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "a prison corridor",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "prison corridor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5384__school_hallway_empty.mp4",
+          "bound_title": "corridor with window at the end",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4535,
+          "motion": 2.532,
+          "luma": 127.7
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W05",
+          "subject": "an examination room, the lightbox blank",
+          "source": "GENERATE",
+          "prompt": "an empty examination room with a vinyl chair, a rolled paper sheet across the couch and a wall lightbox switched on showing a completely blank white panel with no image film or lettering, nobody present, lit ONLY by that lightbox which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "examination room lightbox"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": null,
+          "subject": "a hospital corridor",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hospital corridor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-34478__hospital_corridor_night.mp4",
+          "bound_title": "healthcare workers talking on hospital corridor",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4747,
+          "motion": 13.776,
+          "luma": 109.1
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "a bench instrument, displays dark",
+          "source": "GENERATE",
+          "prompt": "a laboratory bench carrying one heavy analytical instrument with all of its displays dark and unreadable and no numerals or lettering on the casing, lit ONLY by one task lamp which is switched on beside it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "laboratory instrument bench"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "a microscope in a laboratory",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "microscope laboratory",
+          "bound_file": "D:\\pd-archive\\science_tech\\pixabay_extra__v_86259__laboratory-microscope-science-experiment-equipment-chemistry.mp4",
+          "bound_title": "laboratory, microscope, science, experiment, equipment, chemistry, research, ana",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.3981,
+          "motion": 1.079,
+          "luma": 115.0
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "a frosted rack of sample vials",
+          "source": "GENERATE",
+          "prompt": "a rack of small sample vials standing in a cold store with frost across the glass, every label completely blank with no printing or numerals, lit ONLY by one interior lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "vials in rack laboratory"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "W05",
+          "subject": "one covered dish on a dark bench",
+          "source": "GENERATE",
+          "prompt": "macro of a single covered dish standing on a dark laboratory bench, the medium inside cloudy and the lid completely unmarked with no lettering or numerals, lit ONLY by one task lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "petri dish"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "I02",
+          "subject": "one lit bay in a dark laboratory corridor",
+          "source": "GENERATE",
+          "prompt": "a long laboratory corridor of glass-walled bays at night, every bay dark except one with its light switched on, nobody present, all nameplates blank, lit ONLY by that single lit bay which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "laboratory corridor night"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I03",
+          "subject": "a research noticeboard of blank pinned sheets",
+          "source": "GENERATE",
+          "prompt": "a cork noticeboard in a research corridor covered edge to edge with pinned sheets that are every one of them completely blank with no printing writing or lettering, lit ONLY by one strip light which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "noticeboard pinned papers"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": null,
+          "subject": "laboratory gloves",
+          "source": "GENERATE",
+          "prompt": "laboratory gloves, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U07",
+          "subject": "a leaning tower of discarded folders",
+          "source": "GENERATE",
+          "prompt": "a leaning tower of worn discarded folders on a small desk, every label and tab worn completely blank, lit ONLY by one desk lamp which is switched on beside it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stack of folders"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "a metal filing cabinet",
+          "source": "GENERATE",
+          "prompt": "a metal filing cabinet, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a chequebook open beside a microscope",
+          "source": "GENERATE",
+          "prompt": "a heavy chequebook lying open on a dark bench beside a microscope, every cheque face completely blank with no printing figures or lettering anywhere, lit ONLY by one task lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "cheque book on desk"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": null,
+          "subject": "hands counting money",
+          "source": "GENERATE",
+          "prompt": "hands counting money, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "I04",
+          "subject": "a skip of written-off equipment at night",
+          "source": "GENERATE",
+          "prompt": "a steel skip of discarded laboratory equipment standing behind a research building at night, everything in it dead and unmarked with no lettering, nobody present, lit ONLY by one bulkhead lamp which is switched on above it and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "skip discarded equipment night"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W09",
+          "subject": "calendar pages caught mid-turn, dates worn blank",
+          "source": "GENERATE",
+          "prompt": "a stack of wall calendar pages caught mid-turn with motion blur, every date and month worn completely blank and unreadable with no numerals, lit ONLY by one angled desk lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "calendar pages turning"
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "a wall clock face",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "clock face wall",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3640__concrete_wall_texture_dark.mp4",
+          "bound_title": "person painting a wall",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4612,
+          "motion": 3.683,
+          "luma": 100.1
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U11",
+          "subject": "a made bed against a window at first light",
+          "source": "GENERATE",
+          "prompt": "a hospital room window at first light with an empty neatly made bed silhouetted against it, nobody present, no signage or lettering anywhere, lit ONLY by the pale dawn beyond the glass which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "bedroom window"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": null,
+          "subject": "a bedroom window",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "bedroom window",
+          "bound_file": "D:\\pd-archive\\prison_jail\\pixabay_extra__v_261682__ai-generated-room-cozy-bedroom-interior-design-windows-home.mp4",
+          "bound_title": "ai generated, room, cozy bedroom, interior design, windows, home",
+          "bound_license": "free_commercial",
+          "bound_source": "pixabay_extra",
+          "centre_energy": 0.3948,
+          "motion": 1.906,
+          "luma": 51.5
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U12",
+          "subject": "doors opening onto blinding daylight",
+          "source": "GENERATE",
+          "prompt": "heavy doors swinging open onto blinding daylight, seen from inside a dark room, nobody in frame, no signage anywhere, lit ONLY by that daylight beyond which is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "doors opening daylight"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "U09",
+          "subject": "a figure standing on the edge of the light",
+          "source": "GENERATE",
+          "prompt": "a lone dark silhouette standing exactly on the edge between a hard pool of light and deep black so that half the body is lit and half is swallowed, face not visible, the figure placed high in frame with a long empty floor below, lit ONLY by one hard lamp which is switched on and is the only light in frame, the subject held between y560 and y1180 of the 1080x1920 frame with the top band y0-560 and the caption band y1210-1430 kept empty and quiet, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1993-2020 Los Angeles, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouette in shaft of light"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the hook plate: the gate open onto daylight behind him",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

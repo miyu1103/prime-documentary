@@ -57,7 +57,7 @@ import {FIGURE_REGISTRY, HinderLane} from './hinders';
 export type FigureSpec =
   | {start: number; end: number; kind: 'stat'; value: number; prefix?: string; suffix?: string; decimals?: number; label: string; topLabel?: string}
   | {start: number; end: number; kind: 'timeline'; events: {year: string; text: string}[]}
-  | {start: number; end: number; kind: 'bar'; data: {label: string; value: number}[]}
+  | {start: number; end: number; kind: 'bar'; data?: {label: string; value: number}[]; items?: {label: string; value: number}[]}
   // --- carsearch / motionkit "moving diagram" tier (real components rendered full-screen) ---
   | {start: number; end: number; kind: 'brightline'; mode?: 'draw' | 'hold' | 'slam'}
   | {start: number; end: number; kind: 'carcutaway'; mode?: 'all' | 'big' | 'small'; zones?: string[]}
@@ -67,7 +67,7 @@ export type FigureSpec =
   // distinct from the existing flat 'timeline' — this is the carsearch CaseTimeline component
   | {start: number; end: number; kind: 'casetimeline_c'; events: {year: string; text: string}[]}
   | {start: number; end: number; kind: 'carkeylock'}
-  | {start: number; end: number; kind: 'numberticker'; value: number; prefix?: string; suffix?: string; decimals?: number; label?: string; topLabel?: string}
+  | {start: number; end: number; kind: 'numberticker'; value: number; prefix?: string; suffix?: string; decimals?: number; label?: string; topLabel?: string; group?: boolean}
   | {start: number; end: number; kind: 'votetally'; majority: number; dissent: number; label?: string}
   | {start: number; end: number; kind: 'quote'; quote: string; attribution: string}
   // --- motionkit TEXT / annotation / map / diagram tier (real components rendered full-screen) ---
@@ -101,7 +101,7 @@ export type FigureSpec =
       rects: {x: number; y: number; w: number; h: number}[];
       mode?: 'underline' | 'box' | 'redact';
     }
-  | {start: number; end: number; kind: 'routemap'; pins: {x: number; y: number; label?: string}[]}
+  | {start: number; end: number; kind: 'routemap'; pins?: {x: number; y: number; label?: string}[]; label?: string}
   | {start: number; end: number; kind: 'pindropmap'; pins: {x: number; y: number; label?: string}[]}
   | {start: number; end: number; kind: 'regionmap'; label?: string; pattern?: 'uniform' | 'varied'}
   | {start: number; end: number; kind: 'compbars'; items: {label: string; value: number; accent?: string}[]}
@@ -358,7 +358,7 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                   />
                 )}
                 {b.kind === 'timeline' && <Timeline accent={accent} events={b.events} dur={dur} />}
-                {b.kind === 'bar' && <BarChart accent={accent} data={b.data} dur={dur} />}
+                {b.kind === 'bar' && <BarChart accent={accent} data={b.data ?? b.items ?? []} dur={dur} />}
                 {/* carsearch / motionkit components: each self-contained full-screen scene, dur in frames */}
                 {b.kind === 'brightline' && <BrightLine mode={b.mode} dur={dur} />}
                 {b.kind === 'carcutaway' && <CarCutaway mode={b.mode} zones={b.zones} dur={dur} />}
@@ -379,6 +379,7 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                     decimals={b.decimals}
                     label={b.label}
                     topLabel={b.topLabel}
+                    group={b.group}
                     dur={dur}
                   />
                 )}
@@ -429,7 +430,16 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                 {b.kind === 'dochighlight' && (
                   <DocHighlight rects={b.rects} mode={b.mode} dur={dur} />
                 )}
-                {b.kind === 'routemap' && <RouteMap pins={b.pins} dur={dur} />}
+                {b.kind === 'routemap' && (
+                  <RouteMap
+                    pins={b.pins ?? [
+                      {x: 0.24, y: 0.62, label: 'license suspended'},
+                      {x: 0.48, y: 0.46, label: b.label ?? 'order'},
+                      {x: 0.72, y: 0.58, label: 'intake'},
+                    ]}
+                    dur={dur}
+                  />
+                )}
                 {b.kind === 'pindropmap' && <PinDropMap pins={b.pins} dur={dur} />}
                 {b.kind === 'regionmap' && (
                   <AbsoluteFill style={{transform: 'translateY(-72px)'}}>

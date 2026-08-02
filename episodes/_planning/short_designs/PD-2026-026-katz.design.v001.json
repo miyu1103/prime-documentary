@@ -1,0 +1,685 @@
+{
+  "episode_id": "PD-2026-026-katz",
+  "slug": "katz",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "68oWZRiOnB8",
+    "title": "The FBI taped a microphone to a phone booth roof",
+    "url": "https://www.youtube.com/watch?v=68oWZRiOnB8",
+    "privacy": "public",
+    "views": 11
+  },
+  "shorts_existing": [
+    "short26"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short26": [
+      "The FBI recorded every word he said — and never opened the door.",
+      "The Court still called it an illegal search.",
+      "Los Angeles, 1965.",
+      "Charles Katz stepped into a glass phone booth to place illegal betting calls.",
+      "To catch him, agents taped a hidden microphone to the outside of the glass, and never set foot inside.",
+      "For nearly forty years, the rule was simple: no physical trespass, no search.",
+      "But Katz had shut the door and paid the toll — to keep his words private, not his face.",
+      "December eighteenth, 1967 — seven to one.",
+      "The Fourth Amendment protects people, not places.",
+      "Recording him without a warrant was unconstitutional — not a ban on wiretaps, just a judge's permission first.",
+      "Justice Harlan's concurrence gave the reasonable-expectation-of-privacy test that still governs surveillance today.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-026-katz\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "Harlan's phrase — a \"reasonable expectation of privacy\" — was only one justice's gloss in 1967.",
+    "\"The Fourth Amendment protects people, not places.\" What a person knowingly exposes to the public, even in his own home, is not protected.",
+    "The Fourth Amendment, he pointed out, protects \"persons, houses, papers, and effects\" against search and seizure — tangible things you can point to and carry away .",
+    "Your home, your papers, your property — the government could not come in and search them without a warrant.",
+    "In Los Angeles, in 1965, he was running a betting operation — taking wagers and passing gambling information over the phone .",
+    "So they tried something the law had never squarely tested.",
+    "The rule came from a 1928 case called Olmstead.",
+    "If the government can record you there simply because it never touched the walls, then your privacy hangs on a technicality — on where a microphone sits, not on what you reasonably expected .",
+    "Yet what Katz wanted to keep private was never how he looked.",
+    "A clever piece of surveillance that broke no rule because nobody trespassed — or a search of a private conversation, dressed up as something else ?",
+    "On December 18, 1967, the Supreme Court gave its answer — seven justices to one .",
+    "It no longer mattered that the agents had never physically entered the booth.",
+    "They never carried their evidence to a judge and asked permission before they began to listen .",
+    "It did not tell the government it could never record a suspect .",
+    "The agents outside never touched him, never stepped in, never broke a single thing ."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short134",
+      "angle": "The one justice who dissented argued that a spoken sentence cannot be seized, and that rewriting the Fourth Amendment was Congress's job.",
+      "type": "C",
+      "avoids": "The existing Short names the seven to one vote and Harlan's concurrence but never says what the single dissenter thought; this cut is his argument.",
+      "funnel_question_left_for_longform": "If the Constitution's words never mention conversations, where did the Court find the authority to protect them?",
+      "era": "1967 Washington, D.C.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "One justice dissented in the case that gave you a right to privacy. His argument was the plain words on the page.",
+          "source_lines": [
+            "One justice was not persuaded."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "Justice Hugo Black dissented alone. The Fourth Amendment, he pointed out, protects persons, houses, papers, and effects against search and seizure.",
+          "source_lines": [
+            "Justice Hugo Black dissented, alone",
+            "The Fourth Amendment, he pointed out, protects \"persons, houses, papers, and effects\" against search and seizure"
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "Tangible things you can point to and carry away. A spoken conversation is none of those. You cannot seize a sentence.",
+          "source_lines": [
+            "tangible things you can point to and carry away",
+            "A spoken conversation is none of those. You cannot seize a sentence."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "To Black, the majority was not so much reading the Constitution as quietly rewriting it. And rewriting it was Congress's job, not the Court's.",
+          "source_lines": [
+            "To Black, the majority was not so much reading the Constitution as quietly rewriting it — and rewriting it was Congress's job, not the Court's"
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "Seven justices went the other way. The trespass rule that had stood for nearly forty years was gone, and Black's plain words lost.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "Y01",
+          "subject": "one lit chair at the end of a dark bench",
+          "source": "GENERATE",
+          "prompt": "one empty high backed leather chair at the far end of a long judicial bench with every other seat swallowed in shadow, nobody present, lit ONLY by one brass bench lamp which is switched on above it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty chair dark room"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "a pen resting on a blank legal pad",
+          "source": "GENERATE",
+          "prompt": "macro of a fountain pen resting across a blank ruled page with the ink still wet on the nib, no face or body in frame, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "fountain pen on paper macro"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "a hand writing in close up",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "close up of pen writing paper",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0449__office_interior_dark.mp4",
+          "bound_title": "an empty office",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4105,
+          "motion": 5.08,
+          "luma": 139.3
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U07",
+          "subject": "an open volume with blank pages on a lectern",
+          "source": "GENERATE",
+          "prompt": "a heavy leather bound volume lying open on a wooden lectern with completely blank pages and no lettering anywhere, one shaft of light falling across the paper, lit ONLY by one reading lamp which is switched on above it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open book on lectern"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "R08",
+          "subject": "the high bench from the floor, empty",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, no inscriptions anywhere, lit ONLY by one brass bench lamp which is switched on at the end of the bench, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty judges bench low angle"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U09",
+          "subject": "a silhouette high in a shaft of light",
+          "source": "GENERATE",
+          "prompt": "a lone dark silhouette standing in a single vertical shaft of light in a vast dark hall with its head high in the frame and a long empty floor below it, face not visible, lit ONLY by one high fixture which is switched on above it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouette in light shaft"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U02",
+          "subject": "a clapboard house with one porch bulb burning",
+          "source": "GENERATE",
+          "prompt": "a single clapboard house seen from the street at night with every window dark and no lettering anywhere, lit ONLY by one porch bulb which is switched on beside the door, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "house at night porch light"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "M04",
+          "subject": "blank pages squared on a dark desk",
+          "source": "GENERATE",
+          "prompt": "a squared stack of typed pages on a dark desk with every line worn completely blank and unreadable, the paper edges catching a hard light, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "stack of papers on desk"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "R12",
+          "subject": "a suitcase and a folded coat on a bare table",
+          "source": "GENERATE",
+          "prompt": "a worn leather suitcase and a folded dark coat laid on a bare wooden table, catches and buckles catching the light, no face or body in frame, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "suitcase on table dark"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "typewriter keys striking",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "typewriter keys close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3139__old_keys_on_table.mp4",
+          "bound_title": "person using typewriter",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6235,
+          "motion": 20.433,
+          "luma": 100.9
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "dust drifting through a beam",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "dust motes in light beam",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0138__abstract_dark_background.mp4",
+          "bound_title": "defocused urban night traffic bokeh lights",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5445,
+          "motion": 4.0,
+          "luma": 33.9
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "W06",
+          "subject": "hands lifting a sealed evidence box",
+          "source": "GENERATE",
+          "prompt": "two gloved hands lifting a sealed cardboard evidence box off a steel counter, every label worn completely blank, no face or body above the wrists, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hands lifting box counter"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "R11",
+          "subject": "an empty glass phone booth on a dark pavement",
+          "source": "GENERATE",
+          "prompt": "an empty glass telephone booth standing alone on a dark pavement at night with its folding door shut and the handset on its hook, no lettering anywhere on the glass, lit ONLY by the single bulb inside the booth which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone booth at night"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "R11",
+          "subject": "a microphone taped to the booth roof",
+          "source": "GENERATE",
+          "prompt": "macro of a small microphone and a coil of wire taped to the flat metal roof of a public telephone booth, the adhesive tape catching the light, no lettering anywhere, lit ONLY by one street lamp which is switched on above it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "microphone and wire macro"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "M03",
+          "subject": "reels turning on a tape machine",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "reel to reel tape recorder spinning",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0907__stock_market_screen.mp4",
+          "bound_title": "dynamic cryptocurrency market analysis",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4371,
+          "motion": 4.3,
+          "luma": 37.3
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U02",
+          "subject": "a hand folding the booth door shut",
+          "source": "GENERATE",
+          "prompt": "one hand pulling a folding glass booth door closed from the inside with the dark pavement beyond, no face or body above the wrist, lit ONLY by the booth bulb which is switched on overhead, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand closing glass door"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "U03",
+          "subject": "a hand erasing a line from a page",
+          "source": "GENERATE",
+          "prompt": "macro of one hand rubbing an eraser across a line on an otherwise blank page with eraser dust scattered on the paper, no face or body above the wrist, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "eraser rubbing paper macro"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "I07",
+          "subject": "an empty tiered committee chamber",
+          "source": "GENERATE",
+          "prompt": "an empty tiered committee chamber with rows of vacant seats facing a long bench and every nameplate blank, nobody present, lit ONLY by one bank of overhead lights which are switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty chamber tiered seats"
+        },
+        {
+          "n": 19,
+          "role": "body",
+          "line": "L4",
+          "motif": "R06",
+          "subject": "rows of empty seats in a dim hall",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty auditorium seats rows",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10148__old_library_archive.mp4",
+          "bound_title": "a person browsing through card catalogs",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3874,
+          "motion": 16.081,
+          "luma": 96.3
+        },
+        {
+          "n": 20,
+          "role": "body",
+          "line": "L4",
+          "motif": "R05",
+          "subject": "courthouse columns from directly below",
+          "source": "GENERATE",
+          "prompt": "tall marble courthouse columns photographed from directly below against a dark storm sky, no inscriptions anywhere, lit ONLY by hard uplights which are switched on at their bases, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "courthouse columns low angle"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "one blank sheet on a marble floor",
+          "source": "GENERATE",
+          "prompt": "one completely blank sheet of paper lying alone on a polished marble floor, lit ONLY by a hard shaft of corridor light falling across it from a fixture which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "paper on floor light shaft"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "I04",
+          "subject": "a door lock being unscrewed from its plate",
+          "source": "GENERATE",
+          "prompt": "macro of a heavy brass door lock and its plate being unscrewed from an old panelled door with the loose screws lying on the floorboards, no face or body above the wrists, lit ONLY by one work lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door lock brass macro"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: one lit chair at the end of a dark bench",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 gives the outcome, Black beaten seven to one, so L1's 'one justice dissented' is heard again already knowing he was overruled."
+    },
+    {
+      "short_id": "short135",
+      "angle": "Katz anchored your privacy to what society is still prepared to accept as reasonable, so it shrinks every time being watched becomes more normal.",
+      "type": "A",
+      "avoids": "The existing Short presents Harlan's test as the settled standard that governs surveillance today; this cut is the weakness built into that standard.",
+      "funnel_question_left_for_longform": "Whose expectations does a judge actually measure when he decides what society finds reasonable?",
+      "era": "1967 Los Angeles, into the present",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "The test that decides whether police need a warrant to track you is not fixed. It moves. And it has been moving.",
+          "source_lines": [
+            "By anchoring privacy to what society thinks is reasonable, the Court made the Fourth Amendment flexible enough to follow new technology."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "Harlan's phrase, a reasonable expectation of privacy, was only one justice's gloss in 1967. Courts reached for it until it became the standard.",
+          "source_lines": [
+            "Harlan's phrase — a \"reasonable expectation of privacy\" — was only one justice's gloss in 1967.",
+            "But in the years that followed, courts reached for it again and again, until it became the standard test for what even counts as a search"
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "When judges today ask whether police need a warrant to track your phone, read your messages, or follow your car, they are asking Harlan's question.",
+          "source_lines": [
+            "When judges today ask whether the police need a warrant to track your phone, read your messages, or follow your car, they are usually asking Harlan's question"
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "But reasonable is a moving target. The more ordinary it becomes to be watched, the weaker anyone's claim that a given expectation still holds.",
+          "source_lines": [
+            "But \"reasonable\" is a moving target. The more ordinary it becomes to be watched, the weaker anyone's claim that a given expectation still holds"
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "So the privacy you have tomorrow depends on how much watching we get used to today. Which way is that going?",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a camera housing turning on a bare wall",
+          "source": "GENERATE",
+          "prompt": "a single dark surveillance camera housing mounted on a bare concrete wall caught turning toward camera with motion blur on the body, no lettering anywhere, lit ONLY by one security lamp which is switched on beside it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "surveillance camera turning wall"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a camera watching an empty street",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "surveillance camera on wall",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0293__concrete_wall_texture_dark.mp4",
+          "bound_title": "shadow a man over a wall",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4321,
+          "motion": 14.486,
+          "luma": 67.1
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I06",
+          "subject": "a string line moved sideways across a floor",
+          "source": "GENERATE",
+          "prompt": "a taut string line stretched across a dark floor with one hand lifting it sideways to a new position, no lettering anywhere, no face or body above the wrist, lit ONLY by one work lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "string line dark floor"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a phone face down on a dark table",
+          "source": "GENERATE",
+          "prompt": "a smartphone lying face down on a dark table with its edge catching one hard light and the screen not visible, lit ONLY by a single desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone face down table"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "R08",
+          "subject": "the high bench from the floor, empty",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, no inscriptions anywhere, lit ONLY by one brass bench lamp which is switched on at the end of the bench, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty judges bench low angle"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a pen finishing the last blank line",
+          "source": "GENERATE",
+          "prompt": "macro of one hand pressing a pen to the last blank line of an otherwise empty page, no face or body above the wrist, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand writing last line"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U07",
+          "subject": "one thin sheet slipped into a thick volume",
+          "source": "GENERATE",
+          "prompt": "one thin loose sheet slipped between the pages of a thick bound volume open on a lectern, every page completely blank, lit ONLY by one reading lamp which is switched on above it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "loose page in open book"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U07",
+          "subject": "hands turning pages",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands turning pages book",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3899__law_library_books.mp4",
+          "bound_title": "a woman getting book from the library",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3947,
+          "motion": 5.719,
+          "luma": 61.3
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U08",
+          "subject": "a wall of unlabelled bound volumes",
+          "source": "GENERATE",
+          "prompt": "a wall of grey steel shelves packed with identical unlabelled bound volumes shot straight on, lit ONLY by one flickering fluorescent tube which is switched on overhead, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "shelves of bound volumes"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "U04",
+          "subject": "a handrail polished bright by decades of hands",
+          "source": "GENERATE",
+          "prompt": "a worn brass handrail curving down a dark courthouse stairwell, the metal polished bright where hands have held it, nobody on the stairs, lit ONLY by one wall fixture which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "brass handrail stairwell"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "R06",
+          "subject": "empty benches in a courtroom",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courtroom interior benches",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30241__circuit_board_macro.mp4",
+          "bound_title": "close up shot of a smartphone interior",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4178,
+          "motion": 19.072,
+          "luma": 120.6
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U15",
+          "subject": "one point of light moving across a dark city grid",
+          "source": "GENERATE",
+          "prompt": "a dark city street grid rendered as thin glowing seams with one pale point of light moving along it, absolutely no place names or lettering anywhere, lit ONLY by one small lamp which is switched on behind the panel, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "glowing city map abstract"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "R11",
+          "subject": "a dark phone lying on a car seat",
+          "source": "GENERATE",
+          "prompt": "macro of a phone lying dark and face up on a car passenger seat with its screen completely blank and black, the seat belt buckle beside it, lit ONLY by one street lamp which is switched on through the windscreen, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone on car seat night"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "R09",
+          "subject": "headlights crossing wet asphalt",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "car headlights wet road night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2066__laboratory_glassware.mp4",
+          "bound_title": "pharmaceutical experiment carried out in laboratory",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.411,
+          "motion": 15.972,
+          "luma": 57.3
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "R09",
+          "subject": "a car interior washed red and blue",
+          "source": "GENERATE",
+          "prompt": "the interior of a parked car at night seen from the passenger side with empty seats and a red and blue wash crossing the dashboard from behind, lit ONLY by those beacons which are switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "car interior police lights"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U04",
+          "subject": "an apartment corridor of identical doors",
+          "source": "GENERATE",
+          "prompt": "a long apartment corridor of identical closed doors receding into darkness toward one lit doorway at the far end, every number plate blank, lit ONLY by one fixture which is switched on in that doorway, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "apartment corridor doors"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "M03",
+          "subject": "a bank of dark monitors stacked in a dim room",
+          "source": "GENERATE",
+          "prompt": "a bank of a dozen identical monitors stacked in a dim control room with every screen completely blank and black, nobody present, lit ONLY by one desk lamp which is switched on beneath them, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "wall of monitors dark room"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U09",
+          "subject": "a crowd passing as silhouettes",
+          "source": "GENERATE",
+          "prompt": "a crowd passing as silhouettes, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 19,
+          "role": "body",
+          "line": "L4",
+          "motif": "U08",
+          "subject": "rows of dome cameras across a ceiling grid",
+          "source": "GENERATE",
+          "prompt": "a ceiling grid of identical small dome cameras receding in rows across a wide dark hall, no lettering anywhere, lit ONLY by one fixture which is switched on among them, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "ceiling dome cameras rows"
+        },
+        {
+          "n": 20,
+          "role": "body",
+          "line": "L4",
+          "motif": "R10",
+          "subject": "a doorbell lens beside a dark front door",
+          "source": "GENERATE",
+          "prompt": "macro of a small camera lens set in a doorbell beside a dark residential front door, its indicator dark, no lettering anywhere, lit ONLY by one porch bulb which is switched on above, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "doorbell camera front door"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U09",
+          "subject": "a curtain drawn across a lit window from the street",
+          "source": "GENERATE",
+          "prompt": "a lit upstairs window seen from a dark street with a curtain being drawn across it and one figure behind the fabric in silhouette, face not visible, lit ONLY by that room's own lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouette behind curtain window"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "I08",
+          "subject": "the last standing section of a demolished wall",
+          "source": "GENERATE",
+          "prompt": "the last standing section of a demolished brick wall in a dark empty lot with rubble spread around its base, no lettering anywhere, lit ONLY by one work floodlight which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1967 Los Angeles, into the present, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "demolished wall rubble night"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: a camera housing turning on a bare wall",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 asks which direction the standard is drifting, and L1 answers it in the first breath: it moves, and it has been moving."
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

@@ -1,0 +1,712 @@
+{
+  "episode_id": "PD-2026-011-mahanoy",
+  "slug": "mahanoy",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "cSfe3iGnBBM",
+    "title": "Can Your School Punish You for a Post You Made Off Campus?",
+    "url": "https://www.youtube.com/watch?v=cSfe3iGnBBM",
+    "privacy": "public",
+    "views": 3
+  },
+  "shorts_existing": [
+    "short11"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short11": [
+      "A post you made on the weekend, from home.",
+      "Can your school punish you for it?",
+      "A fourteen-year-old didn't make the varsity cheer team, and vented on Snapchat, a post meant to disappear.",
+      "But disappearing is a myth.",
+      "A screenshot reached the coach, and the school suspended her from cheer for a year.",
+      "In 2021, the Supreme Court ruled eight to one: schools usually can't punish ordinary off-campus speech.",
+      "Threats and bullying are different.",
+      "The line between home and school was redrawn.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-011-mahanoy\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "A famous 1969 case said so: young people do not \"shed their constitutional rights at the schoolhouse gate\" .",
+    "In 2021, a fourteen-year-old's disappearing Snapchat reached the Supreme Court of the United States, and the answer it gave shapes the rights of every student — and every parent — in the age of the phone .",
+    "In 2017 she is fourteen, a student at Mahanoy Area High School in Pennsylvania, and a cheerleader — on the junior varsity squad .",
+    "To understand the stakes, you have to go back to that 1969 case, Tinker v.",
+    "Those students had worn the armbands in 1965 to mourn the dead of the Vietnam War, after the school banned that specific protest in advance.",
+    "Follow it far enough, and a student never really leaves school at all.",
+    "In 2021, the Supreme Court ruled for Brandi Levy.",
+    "It pointedly did not say that schools can never reach off-campus speech.",
+    "But it points at the real difficulty: nobody, including the Court, drew a clean line — because in the age of the phone, a clean line may not exist."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short119",
+      "angle": "The school's entire case rested on disruption, and the disruption turned out to be a few minutes of talk in one class, which is why Breyer answered with a line about what schools are for.",
+      "type": "C — a quotation from the opinion",
+      "avoids": "The existing Short gives the outcome and the exception for threats and bullying. It never gives the Court's reasoning, the actual size of the disruption the school claimed, or the sentence the ruling turns on.",
+      "funnel_question_left_for_longform": "The one justice who dissented, and the history he said the majority was discarding.",
+      "era": "2021 Washington, D.C.",
+      "loop": true,
+      "loop_join": "L5 points at the word without naming what it hid, and L1 names it and promises the answer: the school said disruption, here is what that was.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "The school said the post disrupted the school. Here is what that disruption was.",
+          "source_lines": [
+            "The Court also looked at what had actually happened, and found almost nothing."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "A few minutes of discussion in one class. That is all. The school had punished frustration, not chaos.",
+          "source_lines": [
+            "Brandi's post had caused, at most, a few minutes of discussion in one class.",
+            "The school had punished frustration, not chaos."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "Justice Stephen Breyer wrote the opinion. A school's authority over what students say, he explained, is weaker off campus than on. There, a student is in the care of her parents.",
+          "source_lines": [
+            "Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special authority over what students say, he explained, is weaker off campus than on. Off campus, a student is normally in the care of her parents, not the school."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "Then came the line the ruling turns on. America's public schools, he wrote, are the nurseries of democracy. The place a free society teaches the next generation to tolerate the speech it dislikes. A school that punishes every unpopular word teaches the opposite.",
+          "source_lines": [
+            "America's public schools, he wrote, are the \"nurseries of democracy\" — the place a free society teaches the next generation to tolerate the speech it dislikes. A school that punishes every unpopular off-campus word does not model that lesson; it teaches the opposite."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "Everything the school did rested on one word, and it is worth knowing what that word was actually covering.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U06",
+          "subject": "an empty classroom of desks with one tube burning",
+          "source": "GENERATE",
+          "prompt": "an empty high school classroom at dusk with rows of vacant desks and a wiped blank board at the front, lit ONLY by one fluorescent tube which is switched on above the middle row, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty classroom desks school"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a phone face down on a school desk",
+          "source": "GENERATE",
+          "prompt": "a smartphone lying face down on a scratched wooden school desk, its edge catching hard light and the screen not visible, nobody at the desk, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone on desk face down"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U06",
+          "subject": "rows of empty school desks",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty classroom desks chairs",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7857__boardroom_table_dark.mp4",
+          "bound_title": "a conference room with a large screen and chairs",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4057,
+          "motion": 1.205,
+          "luma": 79.6
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U05",
+          "subject": "a classroom clock with a blank dial and blurred hands",
+          "source": "GENERATE",
+          "prompt": "a plain round classroom clock with a completely blank featureless dial and its minute hand smeared by a few minutes of motion blur, no numerals anywhere, lit ONLY by one fixture which is switched on beside it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "classroom wall clock close"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "a rolled practice mat against a dark gym wall",
+          "source": "GENERATE",
+          "prompt": "a heavy rolled practice mat standing on end against the cinder block wall of a dark school gymnasium, nobody in the hall, lit ONLY by one work light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rolled gym mat wall"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "I07",
+          "subject": "empty gymnasium bleachers",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty gymnasium bleachers school",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8928__moving_boxes_empty_room.mp4",
+          "bound_title": "kids playing with empty boxes",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4544,
+          "motion": 16.651,
+          "luma": 143.5
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U11",
+          "subject": "a convenience store aisle seen from the door at night",
+          "source": "GENERATE",
+          "prompt": "a narrow convenience store aisle seen from just inside the door on a weekend night, shelves stocked with unlabelled packages, nobody in the store, lit ONLY by one cooler light which is switched on at the back, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "convenience store aisle night"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "R11",
+          "subject": "two hands holding a phone up outside at night",
+          "source": "GENERATE",
+          "prompt": "two hands holding a smartphone up at arm's length outside at night with the screen turned away and not visible, nothing above the wrists, lit ONLY by one storefront light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hands holding phone outside night"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "R11",
+          "subject": "hands working a phone in the dark",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands holding smartphone night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1672__suburban_house_exterior_night.mp4",
+          "bound_title": "mystery night scene with vintage car in driveway",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4069,
+          "motion": 2.648,
+          "luma": 51.5
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "W11",
+          "subject": "two chairs facing a desk in a dark school office",
+          "source": "GENERATE",
+          "prompt": "two plain chairs turned to face an empty desk in a small dark school office, nobody in the room, every certificate on the wall worn blank, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "office chairs facing desk"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "I04",
+          "subject": "an open empty locker in a dark school corridor",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "school lockers metal row",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2363__school_hallway_empty.mp4",
+          "bound_title": "narrow corridor under lights",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4636,
+          "motion": 2.35,
+          "luma": 108.5
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "I04",
+          "subject": "a school gate at the property line at dusk",
+          "source": "GENERATE",
+          "prompt": "an open school gate standing at the property line at dusk with the footpath continuing past it into an empty street, nobody in frame, lit ONLY by one lamp which is switched on above the gate, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "school gate fence entrance"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "Y02",
+          "subject": "a dark schoolyard seen through the fence after hours",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "school yard fence night empty",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1904__police_car_lights_night.mp4",
+          "bound_title": "men talking by car at night",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.407,
+          "motion": 17.773,
+          "luma": 49.9
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U11",
+          "subject": "a kitchen table at night with a school bag on the chair",
+          "source": "GENERATE",
+          "prompt": "a family kitchen table at night with a school bag slumped on one chair and the rest of the room in shadow, nobody present, lit ONLY by one pendant lamp which is switched on above the table, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "kitchen table night home interior"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "R10",
+          "subject": "a home hallway at night with one door ajar",
+          "source": "GENERATE",
+          "prompt": "the hallway of a family home at night with one bedroom door standing ajar and light falling out of it across the floor, nobody in frame, lit ONLY by that bedroom lamp which is switched on beyond the door, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "home hallway door ajar night"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U06",
+          "subject": "an empty leather chair pulled back from a chambers desk",
+          "source": "GENERATE",
+          "prompt": "a high backed leather chair pulled back from a writing desk in dark chambers, the desk carrying one completely blank sheet, nobody in the room, lit ONLY by one banker's lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "leather chair desk chambers"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "I08",
+          "subject": "seedling trays under one grow lamp at night",
+          "source": "GENERATE",
+          "prompt": "long trays of young seedlings in a dark glasshouse at night, leaves catching the light, nobody present, lit ONLY by one grow lamp which is switched on above them, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "greenhouse seedlings growing plants"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "I08",
+          "subject": "rows of young plants in a nursery",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "greenhouse plants nursery rows",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5035__smartphone_in_dark.mp4",
+          "bound_title": "people browsing images in the internet",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6566,
+          "motion": 6.115,
+          "luma": 79.6
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I08",
+          "subject": "a school flagpole at dawn with the rope slack",
+          "source": "GENERATE",
+          "prompt": "a school flagpole standing against a pale dawn sky with its rope hanging slack and no flag raised, the yard behind it empty, lit ONLY by that dawn light with every yard fixture switched on out of frame, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "flagpole dawn sky empty"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I07",
+          "subject": "rows of empty auditorium seats facing a dark stage",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty auditorium seats theater",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9436__rain_street_reflection_night.mp4",
+          "bound_title": "two woman with umbrella standing on the middle of an empty street on a rainy night",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4009,
+          "motion": 12.443,
+          "luma": 95.2
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "one microphone stand alone on a dark stage",
+          "source": "GENERATE",
+          "prompt": "a single microphone stand standing alone at the centre of a dark stage with nobody at it, the hall beyond in total black, lit ONLY by one work light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "microphone stand empty stage"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U12",
+          "subject": "a classroom door open onto a bright corridor",
+          "source": "GENERATE",
+          "prompt": "a classroom door standing wide open onto a hard lit corridor with the room itself in darkness, nobody in frame, lit ONLY by that corridor light which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "classroom door open corridor"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: an empty classroom of desks with one tube burning",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "empty classroom desks school"
+        }
+      ]
+    },
+    {
+      "short_id": "short120",
+      "angle": "The Court protected the student and then deliberately refused to say where the line is, leaving every student and parent in a gray zone decided one post at a time.",
+      "type": "A — second-person threat ('this can reach you')",
+      "avoids": "The existing Short states the eight to one outcome and names threats and bullying as exceptions. It does not say the Court refused on purpose to draw a bright line, or that the speech it protected was petty by design.",
+      "funnel_question_left_for_longform": "The 1969 case that set the old test, and why the phone made that test stop working.",
+      "era": "2021 Pennsylvania, smartphone era",
+      "loop": true,
+      "loop_join": "L5 says the vagueness was chosen, so L1 returns as a deliberate decision rather than a gap the Court forgot to close.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "The Court protected the student and refused to tell you where the line is.",
+          "source_lines": [
+            "It pointedly did not say that schools can never reach off-campus speech."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "It pointedly did not say that schools can never reach off campus speech. It listed what might still justify stepping in. Serious bullying or harassment. Threats. Cheating.",
+          "source_lines": [
+            "It pointedly did not say that schools can never reach off-campus speech.",
+            "It listed the kinds of things that might still justify a school stepping in, even off campus: serious bullying or harassment aimed at other students, threats, cheating, breaking real rules."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "Then it declined to draw one bright line. The result is a gray zone every student and parent now lives in, decided post by post.",
+          "source_lines": [
+            "It declined to draw one bright line, leaving the hard cases for later",
+            "The result is a gray zone that every student and parent now lives in, decided post by post, case by case."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "And notice what the Court protected. Not a noble political statement. A crude, throwaway post that vanished in seconds. On purpose. Free speech is tested by the speech we find petty.",
+          "source_lines": [
+            "And notice what the Court actually protected. Not a noble political statement, but a crude, throwaway Snapchat that vanished in seconds. That was on purpose.",
+            "free speech is tested not by the speech we admire, but by the speech we find petty, or rude, or pointless"
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "So the gray zone is not an accident. It is what eight justices decided they could live with.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I06",
+          "subject": "a painted corridor line that fades out halfway along",
+          "source": "GENERATE",
+          "prompt": "a hard painted line running down the middle of a dark school corridor floor and fading out into nothing halfway along its length, nobody in frame, lit ONLY by one ceiling fixture which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "painted line corridor floor"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a phone lying screen down on a bedspread",
+          "source": "GENERATE",
+          "prompt": "a smartphone lying screen down on a rumpled bedspread in a dark bedroom, its edge catching light, nobody in the room, lit ONLY by one bedside lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone on bed dark room"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R11",
+          "subject": "a phone glowing on a dark surface",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "smartphone screen glowing dark room",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1983__smartphone_in_dark.mp4",
+          "bound_title": "person holding a smartphone",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4677,
+          "motion": 4.755,
+          "luma": 85.2
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I06",
+          "subject": "a chalk line on asphalt half rubbed away",
+          "source": "GENERATE",
+          "prompt": "a chalk line drawn across dark asphalt with half of it already rubbed away and the chalk stub lying beside it, nobody in frame, lit ONLY by one lamp which is switched on above, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "chalk line asphalt ground"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "U02",
+          "subject": "light spilling from a school door past the property line",
+          "source": "GENERATE",
+          "prompt": "a school side door standing open at night with hard light spilling out past the kerb line onto the public pavement beyond, nobody in frame, lit ONLY by that corridor fixture which is switched on inside the door, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door light spilling pavement night"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "I04",
+          "subject": "an empty locker bay with one door dented inward",
+          "source": "GENERATE",
+          "prompt": "a bay of steel school lockers in a dark corridor with one door dented sharply inward, all of them shut, lit ONLY by one ceiling fixture which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "dented locker door corridor"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "I04",
+          "subject": "a chain link fence around a dark schoolyard",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "chain link fence schoolyard",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8125__bank_vault_door.mp4",
+          "bound_title": "a closed gate with a chain and a padlock",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5157,
+          "motion": 10.842,
+          "luma": 55.7
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U07",
+          "subject": "a phone beside a blank answer sheet on an exam desk",
+          "source": "GENERATE",
+          "prompt": "a smartphone lying face down on an exam desk beside one completely blank answer sheet and a sharpened pencil, nobody at the desk, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "exam desk paper pencil"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "I06",
+          "subject": "a blank envelope pushed under a classroom door",
+          "source": "GENERATE",
+          "prompt": "a plain unaddressed envelope pushed halfway under a closed classroom door in a dark corridor, completely blank on both faces, lit ONLY by the blade of light from the fixture switched on beyond the door, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "envelope under door corridor"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "R11",
+          "subject": "thumbs working a phone keyboard",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands typing on phone keyboard",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0751__american_flag_waving.mp4",
+          "bound_title": "american flag on flagpole waving in wind",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6549,
+          "motion": 18.508,
+          "luma": 174.7
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "a blackboard wiped completely blank with chalk dust in the light",
+          "source": "GENERATE",
+          "prompt": "a classroom blackboard wiped completely blank with chalk dust hanging in the beam in front of it, no lettering anywhere, nobody in the room, lit ONLY by one lamp which is switched on above the board, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "blackboard chalk dust classroom"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "Y02",
+          "subject": "a band of fog lying across a road between two lamps",
+          "source": "GENERATE",
+          "prompt": "a wide band of fog lying across a dark road at night between two street lamps of which only one is burning, nobody in frame, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "fog on road at night"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "Y02",
+          "subject": "fog drifting across a dark road",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "fog rolling road night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1980__smartphone_in_dark.mp4",
+          "bound_title": "woman scrolling social media",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.7024,
+          "motion": 16.811,
+          "luma": 130.6
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "I06",
+          "subject": "a threshold strip worn smooth between two floors",
+          "source": "GENERATE",
+          "prompt": "a doorway threshold strip worn so smooth that the boundary between the two floor surfaces can no longer be found, seen from directly above, nobody in frame, lit ONLY by one ceiling fixture which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "worn threshold doorway floor"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "W11",
+          "subject": "two silhouettes standing apart in a dark kitchen doorway",
+          "source": "GENERATE",
+          "prompt": "two dark silhouettes standing apart on either side of a kitchen doorway at night, both faces turned away and not visible, lit ONLY by one lamp which is switched on in the room beyond, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "two silhouettes doorway night"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U09",
+          "subject": "a lone silhouette standing in a doorway of light",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "silhouette figure standing doorway",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2523__spotlight_on_dark_stage.mp4",
+          "bound_title": "silhouette hand shadows creative art",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.683,
+          "motion": 1.213,
+          "luma": 72.6
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "U05",
+          "subject": "an hourglass with almost all its sand run through",
+          "source": "GENERATE",
+          "prompt": "an hourglass standing on a dark desk with almost all of its sand already run through, the last grains falling, nothing else in frame, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hourglass sand running out"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U05",
+          "subject": "sand falling through a glass timer",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hourglass sand timer close",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1205__circuit_board_macro.mp4",
+          "bound_title": "close up shot of electronic chip",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.7011,
+          "motion": 4.953,
+          "luma": 34.1
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a scrap of blank paper on a wet pavement",
+          "source": "GENERATE",
+          "prompt": "one torn scrap of completely blank paper lying on wet pavement under a street lamp at night, nobody in frame, lit ONLY by that street lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "torn paper wet pavement night"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "a lectern standing alone in a vast dark hall",
+          "source": "GENERATE",
+          "prompt": "a plain lectern standing alone in a vast dark hall with nobody at it and no inscriptions anywhere on it, lit ONLY by one lamp which is switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "lectern alone dark hall"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "an empty podium in a dark hall",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty podium lectern hall",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2671__lone_person_silhouette_walking.mp4",
+          "bound_title": "a person walking down a hallway",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.6732,
+          "motion": 3.566,
+          "luma": 69.6
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R11",
+          "subject": "a phone left face down on a bench in an empty corridor",
+          "source": "GENERATE",
+          "prompt": "a smartphone left face down on a bare wooden bench in an empty institutional corridor, nobody in frame, lit ONLY by one ceiling fixture which is switched on above the bench, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2021 Pennsylvania, smartphone era, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone on bench corridor empty"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: a painted corridor line that fades out halfway along",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "painted line corridor floor"
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

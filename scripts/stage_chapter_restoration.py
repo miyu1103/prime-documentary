@@ -205,6 +205,54 @@ def load_markdown_chapters(episode: Path, episode_number: int) -> tuple[list[dic
     return None, None
 
 
+LABEL_OVERRIDES = ROOT / "config" / "distribution" / "chapter_label_overrides.v001.json"
+
+
+def apply_label_overrides(episode_id: str | None, repair: dict) -> dict:
+    """Swap production-internal chapter names for viewer-facing ones authored per episode.
+
+    "Hook" / "Ending" / "Subscribe" are act markers the writer uses; on a progress bar they
+    say nothing. Every replacement in chapter_label_overrides.v001.json was written from
+    that episode own opening or closing narration, so this is a rename, not an invention.
+    Chapters listed under "drop" are removed outright: an endcard row is dead space on the
+    bar and there is nothing to seek to.
+    """
+    if not episode_id or not LABEL_OVERRIDES.is_file():
+        return repair
+    spec = json.loads(LABEL_OVERRIDES.read_text(encoding="utf-8"))
+    renames = spec.get("overrides", {}).get(episode_id, {})
+    drops = set(spec.get("drop", {}).get(episode_id, []))
+    if not renames and not drops:
+        return repair
+
+    chapters, notes = [], list(repair.get("notes", []))
+    for chapter in repair.get("chapters", []):
+        title = (chapter.get("title") or "").strip()
+        if title in drops:
+            notes.append(f"dropped {title!r} - endcard row, nothing for a viewer to seek to")
+            continue
+        if title in renames:
+            entry = dict(chapter)
+            entry["title"] = renames[title]
+            entry.pop("needs_authoring", None)
+            notes.append(f"authored {title!r} -> {renames[title]!r}")
+            chapters.append(entry)
+            continue
+        chapters.append(chapter)
+
+    out = dict(repair)
+    out["chapters"] = chapters
+    out["notes"] = notes
+    out["labels_needing_authoring"] = [
+        t for t in repair.get("labels_needing_authoring", [])
+        if t not in renames and t not in drops
+    ]
+    if not out["labels_needing_authoring"]:
+        review = str(out.get("needs_owner_review") or "")
+        out["needs_owner_review"] = review.split(" + ")[0] if " + " in review else review
+    return out
+
+
 def clean_labels(chapters: list[dict]) -> tuple[list[dict], list[str], list[str]]:
     """Strip production-internal naming. Returns (chapters, notes, needs_authoring)."""
     notes: list[str] = []
@@ -537,6 +585,8 @@ def main(argv: list[str]) -> int:
                 "labels_needing_authoring": [],
                 "needs_owner_review": "BLOCKED - no repo source",
             }
+
+        repair = apply_label_overrides(episode_id, repair)
 
         chapters = repair["chapters"]
         seconds = [c["seconds"] for c in chapters if c["seconds"] is not None]

@@ -5,6 +5,7 @@
 // EvidenceCard, StampReveal, beds/overlays) are imported directly where used.
 export {WilliamsScene} from './WilliamsScene';
 export type {Treatment} from './WilliamsScene';
+export {WilliamsFactoryCut} from './WilliamsFactoryCut';
 export {FaceMatchGrid} from './FaceMatchGrid';
 export {BiasBars} from './BiasBars';
 export {CaseTimeline} from './CaseTimeline';

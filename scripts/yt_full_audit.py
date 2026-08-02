@@ -76,7 +76,6 @@ def main() -> int:
         headers=auth,
     )
     item = ch["items"][0]
-    uploads = item["contentDetails"]["relatedPlaylists"]["uploads"]
     print("=== CHANNEL ===")
     print(f"title       : {item['snippet'].get('title')}")
     print(f"desc set    : {bool(item['snippet'].get('description'))}")
@@ -88,30 +87,32 @@ def main() -> int:
     kw = item.get("brandingSettings", {}).get("channel", {}).get("keywords")
     print(f"channel kw  : {kw}")
 
-    # collect all uploads (paginate)
-    ids: list[str] = []
-    page = ""
-    while True:
-        _, pl = http(
+    # Collect every video from the shared, unioned index. The uploads playlist by itself returned
+    # 115 rows holding only 106 unique ids on 2026-08-03 — nine videos, three of them published
+    # long-forms, were simply absent, and an audit that cannot see a video cannot audit it.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from yt_channel_index import list_video_ids
+    ids: list[str] = list_video_ids(auth)
+
+    # videos.list caps `id` at 50. Passing all 86 uploads in one call returned a response with
+    # no "items", so this silently printed "=== VIDEOS (0) ===", exited 0, and wrote an empty
+    # _yt_audit.json (measured 2026-08-01). Chunk it, and fail loudly instead of reporting zero.
+    videos = []
+    for n in range(0, len(ids), 50):
+        chunk = ids[n:n + 50]
+        st_v, vd = http(
             "GET",
-            "https://www.googleapis.com/youtube/v3/playlistItems"
-            f"?part=contentDetails&maxResults=50&playlistId={uploads}{page}",
+            "https://www.googleapis.com/youtube/v3/videos"
+            "?part=snippet,status,statistics,contentDetails,processingDetails,topicDetails"
+            f"&id={','.join(chunk)}",
             headers=auth,
         )
-        ids += [v["contentDetails"]["videoId"] for v in pl.get("items", [])]
-        tok = pl.get("nextPageToken")
-        if not tok:
-            break
-        page = f"&pageToken={tok}"
-
-    _, vd = http(
-        "GET",
-        "https://www.googleapis.com/youtube/v3/videos"
-        "?part=snippet,status,statistics,contentDetails,processingDetails,topicDetails"
-        f"&id={','.join(ids)}",
-        headers=auth,
-    )
-    videos = vd.get("items", [])
+        if st_v != 200:
+            print(f"VIDEOS FAILED HTTP {st_v} {vd.get('error', {}).get('message')}")
+            return 4
+        videos += vd.get("items", [])
+    if len(videos) != len(ids):
+        print(f"  note: {len(ids)} uploads listed, {len(videos)} returned")
     dump = []
     print(f"\n=== VIDEOS ({len(videos)}) ===")
     for v in videos:

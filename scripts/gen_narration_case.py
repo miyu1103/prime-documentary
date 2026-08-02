@@ -62,11 +62,22 @@ SETTINGS = {
 DELIVERY_BY_SECTION = {
     "HOOK": "intense", "OP": "building", "ACT_1": "building", "ACT_2": "building",
     "ACT_3": "building", "ACT_4": "building", "ACT_5": "building", "ENDING": "calm",
+    # EP60 (surfside) only: THE NIGHT is its own section because it is the only part of
+    # that film in a different tense -- 1:22 a.m. itself, not "what had been happening".
+    # Read intense, like the cold open, not "building".
+    "THE_NIGHT": "intense",
 }
 # Canon 4-act order (EP52-55). Episodes with a different act count declare their own
 # `sections` in the registry below (EP56 is the first 5-act case film).
 SECTION_ORDER = ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ENDING"]
 SECTION_ORDER_5ACT = ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ACT_5", "ENDING"]
+# EP60 (surfside) is the first film with a tense break. Ten script headings --
+# COLD OPEN / BRAND STING / OPENING / ACT I..ACT V / THE NIGHT / ENDING -- of which
+# BRAND STING is narration-free (as in EP56), so NINE sections carry speech. THE NIGHT
+# sits between ACT V and ENDING and is deliberately NOT folded into either: up to ACT V
+# the film says what had been happening; THE NIGHT is 1:22 a.m. itself (~2:15).
+SECTION_ORDER_5ACT_NIGHT = ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ACT_5",
+                            "THE_NIGHT", "ENDING"]
 # EP52/53/54/55 headings: `## COLD OPEN ...`, `## OPENING ...`, `## ACT I — ...`
 # ... `## ACT IV — ...`, `## ENDING ...` (Roman numerals). Longer numerals FIRST.
 # EP56 adds `## ACT V — ...` and a narration-free `## BRAND STING ...` card heading
@@ -81,6 +92,12 @@ SECTION_HEADINGS = [
     ("ACT_3", re.compile(r"^ACT\s+III\b", re.IGNORECASE)),
     ("ACT_2", re.compile(r"^ACT\s+II\b", re.IGNORECASE)),
     ("ACT_1", re.compile(r"^ACT\s+I\b", re.IGNORECASE)),
+    # THE NIGHT (EP60): no other heading in any script begins with "THE", and this
+    # pattern is anchored, so it can neither swallow nor be swallowed by the acts above.
+    # It stays BELOW the ACT patterns anyway, since this list is matched in order and
+    # the ACT entries are deliberately longest-numeral-first (ACT IV before ACT V before
+    # ACT III/II/I).
+    ("THE_NIGHT", re.compile(r"^THE\s+NIGHT\b", re.IGNORECASE)),
     ("ENDING", re.compile(r"^ENDING\b", re.IGNORECASE)),
 ]
 # post-ENDING appendix headings (EP53 `Fact Correspondence & Self-Checks`,
@@ -118,6 +135,41 @@ EPISODES = {
         # FIRST five-act case film (ACT I..ACT V) + a narration-free `## BRAND STING`.
         "sections": SECTION_ORDER_5ACT,
     },
+    # EP57-59: same five-act shape as EP56 (COLD OPEN / BRAND STING / OPENING / ACT I..V /
+    # ENDING). All three scripts are R3-locked; word counts are the MEASURED ones from each
+    # DESIGN §5, not estimates.
+    "PD-2026-057-fieldtest": {
+        "planning": "EP57_fieldtest_script.en.v001.md",
+        # DESIGN §5 (R3 re-locked): 4,673 w modelled at 172.0 wpm -- deliberately NOT 178.1,
+        # because EP55 and EP56 both measured ~+71s slower than the channel model.
+        "design_speech_seconds": 1630.1,
+        "sections": SECTION_ORDER_5ACT,
+    },
+    "PD-2026-058-lejeune": {
+        "planning": "EP58_lejeune_script.en.v001.md",
+        # DESIGN §5: 4,738 w @178.1wpm = 1596.1s; total held at 1790.0s via the gap budget.
+        "design_speech_seconds": 1596.1,
+        "sections": SECTION_ORDER_5ACT,
+    },
+    "PD-2026-059-robosigning": {
+        "planning": "EP59_robosigning_script.en.v001.md",
+        # DESIGN §5 (R3 re-derived): 4,670 w @178.1wpm = 1573.3s + gap 200.7 + endcard 9.
+        "design_speech_seconds": 1573.3,
+        "sections": SECTION_ORDER_5ACT,
+    },
+    "PD-2026-060-surfside": {
+        # LOCKED script is v004 ("v004, もう変えません" -- owner). v003 under
+        # episodes/PD-2026-060-surfside/03_script/ is stale and must not be used.
+        "planning": "EP60_surfside_script.en.v004.md",
+        # FILM BIBLE v001 (line 3): 40:00 film, narration approximately 36:00, band
+        # 6,150-6,350 words at the MEASURED 173 wpm -- deliberately NOT the 178.1 channel
+        # model. Extraction of the locked v004 script measures 6,302 narration words, so
+        # 6302 / 173 * 60 = 2185.7s (36:26): inside the bible band and on its 36:00 target.
+        "design_speech_seconds": 2185.7,
+        # Ten script headings; BRAND STING carries no narration (as in EP56), so NINE
+        # speech sections, with THE NIGHT standing alone between ACT V and ENDING.
+        "sections": SECTION_ORDER_5ACT_NIGHT,
+    },
 }
 
 GAP_BEAT, GAP_SECTION = 0.30, 1.8          # EP52-shipped defaults
@@ -126,7 +178,10 @@ COST_PER_1K_CHARS_USD = 0.30
 
 CJK = re.compile(r"[　-〿぀-ゟ゠-ヿ㐀-䶿一-鿿＀-￯]")
 SILENCE_LINE = re.compile(r"DESIGNED SILENCE\s+([0-9]+(?:\.[0-9]+)?)\s*s", re.IGNORECASE)
-BEAT_LINE = re.compile(r"^【\s*beat\b", re.IGNORECASE)
+# A held beat is a production direction, never narration: `【beat ...】` (EP52 lineage) or
+# EP60's `⟨HELD⟩`, which the EP60 film bible defines as the marker for "an isolated slow-read
+# line". Both become a BEAT_SECONDS pause after the preceding chunk instead of spoken text.
+BEAT_LINE = re.compile(r"^(?:【\s*beat\b|⟨\s*HELD\s*⟩)", re.IGNORECASE)
 BEAT_SECONDS = 0.6
 INLINE_MARKER = re.compile(r"【[^】]*】|〔[^〕]*〕|\[[^\]]*\]")
 ABBREV = re.compile(
@@ -261,7 +316,9 @@ def assert_clean(chunks: list[dict], expected: list[str] | None = None) -> None:
         t = c["spoken_text"]
         if CJK.search(t):
             bad.append(f"{c['chunk_id']}: CJK in spoken_text -> {t[:80]}")
-        if re.search(r"[\[\]【】〔〕`#*_]", t):
+        # ⟨⟩ added 2026-08-03: EP60 v004 marks held beats with ⟨HELD⟩, and this gate did
+        # not know that bracket pair, so eight "HELD" chunks would have been read aloud.
+        if re.search(r"[\[\]【】〔〕⟨⟩`#*_]", t):
             bad.append(f"{c['chunk_id']}: markup/marker in spoken_text -> {t[:80]}")
         if "OST" in t or "CARD:" in t or "SILENCE" in t or "SOUND:" in t or "VISUAL" in t:
             bad.append(f"{c['chunk_id']}: directive keyword -> {t[:80]}")

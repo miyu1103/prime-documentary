@@ -1,0 +1,688 @@
+{
+  "episode_id": "PD-2026-049-strieff",
+  "slug": "strieff",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "2pLWw_vhfI8",
+    "title": "The Stop Was Illegal — the Supreme Court Kept the Evidence Anyway",
+    "url": "https://www.youtube.com/watch?v=2pLWw_vhfI8",
+    "privacy": "public",
+    "views": 0
+  },
+  "shorts_existing": [
+    "short51"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short51": [
+      "An officer stops a man for no reason.",
+      "He runs his name and hits an",
+      "old traffic warrant.",
+      "A search then finds a small amount of drugs.",
+      "If the stop was illegal can that",
+      "evidence be used against you?",
+      "There's a rule for this:",
+      "the exclusionary rule.",
+      "Evidence from an illegal search is normally thrown out.",
+      "And everyone agreed this stop was illegal.",
+      "Utah conceded there was no reasonable suspicion.",
+      "So why did the drugs stay in?",
+      "Because that old warrant found mid-stop might",
+      "break the chain to the evidence.",
+      "Courts call it attenuation weighed by time",
+      "intervening events and police flagrancy.",
+      "In twenty sixteen five to three the",
+      "Court said the evidence stays.",
+      "The stop was still illegal but the",
+      "warrant attenuated the chain.",
+      "In dissent Justice Sotomayor warned it treats",
+      "you as the subject of a carceral",
+      "state just waiting to be cataloged.",
+      "The stop was never legal.",
+      "A warrant just made it pay off.",
+      "Watch the full case on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-049-strieff\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "The stop is stated as ILLEGAL in HOOK/ACT_1/ACT_2 (\"That stop was not legal\", \"the state of Utah admitted it\", \"the reasonable suspicion the law requires\"); it is NEVER called legal.",
+    "Sotomayor \"carceral state\" passage and \"anyone's dignity\" line quoted VERBATIM and attributed to the dissent (\"Speaking for the dissent\", \"still speaking in dissent\").",
+    "Across the lot a detective has been watching that house on and off for about a week, because a caller he never met left an anonymous tip that people were dealing drugs inside.",
+    "And the Supreme Court of the United States said that was the right result, even though everyone agreed the stop that started it should never have happened.",
+    "The case is called Utah versus Strieff, decided in 2016.",
+    "In June of 2016, the Court gave its answer, and it sided with the state of Utah.",
+    "After 2016, the honest answer is that it can, so long as the search that turns it up is tied to something like a warrant rather than to the stop itself.",
+    "Sits near the top of the 2,120-2,140 band (cap 2,141) so the ~5-8% fast TTS still lands inside the ~12-min runtime.",
+    "Methamphetamine named once, clinically, never dwelt on; Strieff (living person, R2) shown by symbol only, not glorified."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short144",
+      "angle": "If you are one of the many Americans carrying a small outstanding warrant, an unlawful stop becomes almost free for the officer who makes it.",
+      "type": "A",
+      "avoids": "The existing Short explains attenuation and quotes the dissent inside the Utah case; this cut is the ordinary unpaid fine or missed court date that makes the rule reach you.",
+      "funnel_question_left_for_longform": "Does anything in the ruling stop an officer from stopping people at random to go looking for that warrant?",
+      "era": "2016 to the present, United States",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "An unpaid fine sitting in a database can turn an unlawful police stop into a search that holds up in court.",
+          "source_lines": [
+            "The illegal stop becomes almost free."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "A very large number of Americans have some kind of outstanding warrant. Very often for something small. An unpaid fine, a missed court date, an old traffic ticket.",
+          "source_lines": [
+            "A very large number of Americans have some kind of outstanding warrant, very often for something small, an unpaid fine, a missed court date, an old traffic ticket."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "If you are one of them, an officer who stops you with no legal reason can run your name, find that warrant, arrest you, and search you.",
+          "source_lines": [
+            "If you are one of them, an officer who stops you with no legal reason can run your name, find that warrant, arrest you, and search you, and under this rule most of what he finds will hold up."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "And under this rule most of what he finds will hold up. The illegal stop becomes almost free.",
+          "source_lines": [
+            "and under this rule most of what he finds will hold up. The illegal stop becomes almost free."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "The stop was still illegal. The Court never pretended otherwise. It just stopped mattering to whether the drugs came into court.",
+          "source_lines": [
+            "The stop was still illegal. The Court never pretended otherwise.",
+            "It just stopped mattering to whether the drugs came into court."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I06",
+          "subject": "a blank court notice pinned under a fridge magnet",
+          "source": "GENERATE",
+          "prompt": "a blank paper notice held under a magnet on the door of a refrigerator in a dark kitchen with all of its printing worn completely away, no face or body in frame, lit ONLY by one lamp which is switched on above the counter, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "paper note on fridge"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R01",
+          "subject": "a beacon burning on a dark street",
+          "source": "GENERATE",
+          "prompt": "a beacon burning on a dark street, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R02",
+          "subject": "handcuffs closing on a pair of wrists",
+          "source": "GENERATE",
+          "prompt": "macro of steel handcuffs closing on a pair of wrists with no face or body above the forearms, lit ONLY by one hard raking light which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "handcuffs on wrists macro"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M03",
+          "subject": "a server aisle of small indicator lights",
+          "source": "GENERATE",
+          "prompt": "a server rack aisle in a dark room with rows of tiny indicator lights along the cabinets and every display screen dark, nobody present, lit ONLY by one maintenance lamp which is switched on at the end of the aisle, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "server racks dark aisle"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "I06",
+          "subject": "a blank ticket folded under a wiper blade",
+          "source": "GENERATE",
+          "prompt": "a blank paper ticket folded under a car's windscreen wiper at night with all printing worn away and rain beading across the glass, lit ONLY by one street lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "ticket under windshield wiper"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "I06",
+          "subject": "a slip left on a windscreen",
+          "source": "GENERATE",
+          "prompt": "a slip left on a windscreen, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U15",
+          "subject": "pale points scattered across a dark map",
+          "source": "GENERATE",
+          "prompt": "a dark relief map of the United States with borders as thin glowing seams, absolutely no place names anywhere, and hundreds of small pale points scattered across it, lit ONLY by one small lamp which is switched on behind the panel, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "map scattered glowing points"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U08",
+          "subject": "a wall of unlabelled index drawers, one half open",
+          "source": "GENERATE",
+          "prompt": "a wall of unlabelled index drawers in a dim records room with one drawer pulled half open and every drawer face worn blank, lit ONLY by one flickering fluorescent tube which is switched on overhead, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "index drawers records wall"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U08",
+          "subject": "cabinet drawers opening",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "filing cabinet drawers close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3137__old_keys_on_table.mp4",
+          "bound_title": "vintage typewriter typing paper close up",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5675,
+          "motion": 3.439,
+          "luma": 131.1
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I06",
+          "subject": "a blank slip left on a corridor bench",
+          "source": "GENERATE",
+          "prompt": "an empty wooden corridor bench outside a courtroom with one blank paper slip left lying on the seat, nobody present, lit ONLY by one shaft of corridor light from a fixture which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty bench courthouse corridor"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U05",
+          "subject": "a courthouse clock with a blank face",
+          "source": "GENERATE",
+          "prompt": "a plain round courthouse wall clock with a completely blank featureless face and no numerals, the hands at an unreadable angle, lit ONLY by one fixture which is switched on beside it, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "wall clock blank face"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "R11",
+          "subject": "a gloved hand typing on a dark terminal",
+          "source": "GENERATE",
+          "prompt": "a gloved hand typing on the keyboard of a patrol car terminal whose screen is completely blank and black, no face or body above the wrist, lit ONLY by one dashboard bulb which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand typing patrol terminal"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "R11",
+          "subject": "hands working a keyboard in the dark",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands typing keyboard dark",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2748__foggy_forest.mp4",
+          "bound_title": "dark fog mysterious halloween",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5689,
+          "motion": 11.235,
+          "luma": 102.6
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U16",
+          "subject": "a coat pocket pulled out under a torch beam",
+          "source": "GENERATE",
+          "prompt": "a torch beam sweeping across an emptied coat laid on a car bonnet at night with one pocket lining pulled inside out, no face or body in frame, lit ONLY by that torch which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "flashlight searching coat night"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "R12",
+          "subject": "a booking tray of belt, laces and coins",
+          "source": "GENERATE",
+          "prompt": "a steel booking tray holding a belt, a pair of laces and a few coins on a counter, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "property tray booking counter"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U09",
+          "subject": "shoes and a long shadow under a street lamp",
+          "source": "GENERATE",
+          "prompt": "a pavement seen from ground level with one pair of worn shoes standing still and a long shadow running away from them, no face or body above the ankles, lit ONLY by one street lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "shoes on pavement shadow"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "W06",
+          "subject": "a sealed evidence envelope, writing worn blank",
+          "source": "GENERATE",
+          "prompt": "a sealed paper evidence envelope on a steel counter with all writing worn completely blank, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "sealed evidence envelope counter"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "R06",
+          "subject": "empty gallery benches receding into shadow",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courtroom gallery benches empty",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8928__moving_boxes_empty_room.mp4",
+          "bound_title": "kids playing with empty boxes",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4544,
+          "motion": 16.651,
+          "luma": 143.5
+        },
+        {
+          "n": 19,
+          "role": "body",
+          "line": "L4",
+          "motif": "W06",
+          "subject": "an evidence bag lying on a table",
+          "source": "GENERATE",
+          "prompt": "an evidence bag lying on a table, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 20,
+          "role": "body",
+          "line": "L4",
+          "motif": "M06",
+          "subject": "an empty cash drawer standing open",
+          "source": "GENERATE",
+          "prompt": "an empty steel cash drawer standing open on a dark counter with no money in it at all, lit ONLY by one lamp which is switched on above the counter, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open empty cash drawer"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M02",
+          "subject": "coins spilling across a dark table",
+          "source": "GENERATE",
+          "prompt": "coins spilling across a dark table, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "R07",
+          "subject": "a gavel caught mid strike",
+          "source": "GENERATE",
+          "prompt": "a wooden judge's gavel caught mid strike above its round block with motion blur on the head, lit ONLY by one brass bench lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 to the present, United States, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "judge using a gavel"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: a blank court notice pinned under a fridge magnet",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 concedes the stop was illegal and simply stopped counting, so L1's unlawful stop that holds up in court reads as the same point continuing."
+    },
+    {
+      "short_id": "short145",
+      "angle": "A second dissent in the same case went after arithmetic, arguing the ruling raises an officer's incentive to make a stop he has no right to make.",
+      "type": "C",
+      "avoids": "The existing Short quotes Sotomayor's carceral state passage; this cut is the other dissent, which is about police incentives rather than dignity.",
+      "funnel_question_left_for_longform": "If the exclusionary rule exists to remove that temptation, what is left of it after this?",
+      "era": "2016 Washington, D.C.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "There were two dissents in this case. The second one is about arithmetic, and almost nobody quotes it.",
+          "source_lines": [
+            "Then came the dissents, and this is where the case became one of the most quoted of the decade."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "Before this ruling, an officer who made an illegal stop got nothing for it. That was the point.",
+          "source_lines": [
+            "Before this ruling, an officer who made an illegal stop got nothing for it, and that was the point."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "Justice Elena Kagan wrote separately, going after the incentive the majority had just handed the police. Now, she warned, the math changes.",
+          "source_lines": [
+            "Justice Elena Kagan wrote a second dissent, going after the incentive the majority had just handed the police.",
+            "Now, she warned, the math changes."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "The officer's incentive to violate the Constitution thus increases, she wrote in dissent. From here on, he sees potential advantage in stopping individuals without reasonable suspicion.",
+          "source_lines": [
+            "The officer's incentive to violate the Constitution thus increases, she wrote.",
+            "From here on, he sees potential advantage in stopping individuals without reasonable suspicion"
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "Her side lost. Three votes, not five. And of the two dissents, the one that did the math is the one nobody quotes.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M04",
+          "subject": "two stacks of blank paper, one far shorter",
+          "source": "GENERATE",
+          "prompt": "two thin stacks of blank paper standing side by side on a dark bench with one stack noticeably shorter than the other and hard raking light across their edges, no lettering anywhere, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "two stacks of paper macro"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M04",
+          "subject": "documents stacked in close up",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stacked paper documents macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6481__us_constitution_document.mp4",
+          "bound_title": "woman looking at the paper while thinking and a man using laptop",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3894,
+          "motion": 13.889,
+          "luma": 106.6
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "Y01",
+          "subject": "two empty chairs at the far end of a dark bench",
+          "source": "GENERATE",
+          "prompt": "two empty high backed leather chairs at the far end of a long judicial bench with the rest of the bench in shadow and nobody present, lit ONLY by one brass bench lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty chairs long bench"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I01",
+          "subject": "an adding machine with blank worn keys",
+          "source": "GENERATE",
+          "prompt": "an old mechanical adding machine on a dark desk with its paper roll completely blank, every key worn smooth and unmarked, and one key held down, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "adding machine paper roll"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "M06",
+          "subject": "an empty drawer pulled from a wall of closed ones",
+          "source": "GENERATE",
+          "prompt": "one empty steel drawer pulled out from a wall of closed drawers with absolutely nothing inside it, lit ONLY by a single overhead fixture which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty steel drawer wall"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U10",
+          "subject": "empty gloved palms held open over a bonnet",
+          "source": "GENERATE",
+          "prompt": "two empty gloved palms held open above a dark car bonnet at night with nothing at all in them and no face or body above the wrists, lit ONLY by one torch which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty gloved hands night"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U10",
+          "subject": "open empty hands in macro",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty open hands macro",
+          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-0276__smoke_wisp_dark.mp4",
+          "bound_title": "macro shot of the smoke on a gray background",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5026,
+          "motion": 12.346,
+          "luma": 119.7
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "W06",
+          "subject": "an evidence envelope dropped into a steel bin",
+          "source": "GENERATE",
+          "prompt": "a sealed paper evidence envelope falling into a steel waste bin with all writing on it worn completely blank and no face or body in frame, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "envelope dropped into bin"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "I06",
+          "subject": "paper crumpled and thrown away",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "crumpled paper thrown away",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7995__cash_stacks_money.mp4",
+          "bound_title": "paper bills inside a briefcase",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.509,
+          "motion": 10.504,
+          "luma": 58.7
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "R09",
+          "subject": "a patrol cabin washed red and blue",
+          "source": "GENERATE",
+          "prompt": "the interior of a parked patrol car at night seen from the passenger side with empty seats and a red and blue wash crossing the dashboard from behind, lit ONLY by those beacons which are switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "patrol car interior beacons"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "dust drifting in a shaft of light",
+          "source": "GENERATE",
+          "prompt": "dust drifting in a shaft of light, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a pen pressed to a blank page under a green lamp",
+          "source": "GENERATE",
+          "prompt": "macro of one hand pressing a pen to a completely blank page beneath a green shaded lamp, no face or body above the wrist, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "pen on blank page lamp"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "M01",
+          "subject": "a counter wheel turning over, digits worn blank",
+          "source": "GENERATE",
+          "prompt": "macro of a mechanical counter wheel turning over on a dark bench with every digit worn smooth and blank and motion blur across the drum, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "mechanical counter wheel macro"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U05",
+          "subject": "gears meshing in close up",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "gears turning macro close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3138__old_keys_on_table.mp4",
+          "bound_title": "close up view of a typewriter",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4362,
+          "motion": 10.079,
+          "luma": 83.8
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "M02",
+          "subject": "a coin pushed across a dark table by one fingertip",
+          "source": "GENERATE",
+          "prompt": "macro of a single coin being pushed across a dark table by one fingertip with no face or body above the wrist, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "coin pushed across table"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "R08",
+          "subject": "the high bench from the floor, empty",
+          "source": "GENERATE",
+          "prompt": "a judge's high wooden bench photographed from the floor looking up, empty, no inscriptions anywhere, lit ONLY by one brass bench lamp which is switched on at the end of the bench, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty judges bench low angle"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R01",
+          "subject": "a cruiser fender and roof beacon, tight",
+          "source": "GENERATE",
+          "prompt": "tight low angle on the front fender and single roof beacon of a patrol car parked at a kerb at night with chrome and dark paint filling frame, lit ONLY by that beacon which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "police car beacon close up"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U09",
+          "subject": "a lone silhouette passing a patrol car window",
+          "source": "GENERATE",
+          "prompt": "a lone figure in silhouette walking past on a dark pavement seen from inside a patrol car through the side window, face not visible, lit ONLY by one street lamp which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouette passing car window"
+        },
+        {
+          "n": 19,
+          "role": "body",
+          "line": "L4",
+          "motif": "U13",
+          "subject": "a figure walking a dark street",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "silhouette walking city street night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1512__city_skyline_dusk.mp4",
+          "bound_title": "aerial footage of a city",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3938,
+          "motion": 2.834,
+          "luma": 133.2
+        },
+        {
+          "n": 20,
+          "role": "body",
+          "line": "L4",
+          "motif": "M01",
+          "subject": "a pale line rising steadily across dark glass",
+          "source": "GENERATE",
+          "prompt": "a single pale line rising steadily across a panel of dark glass with no dips, abstract and unlabelled with no numerals anywhere, lit ONLY by one small lamp which is switched on behind the glass, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rising line dark glass"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R09",
+          "subject": "rain running down a patrol windscreen",
+          "source": "GENERATE",
+          "prompt": "rain running down a patrol windscreen, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L5",
+          "motif": "U02",
+          "subject": "a heavy door left standing ajar in a dark corridor",
+          "source": "GENERATE",
+          "prompt": "one heavy door left standing ajar in a dark corridor with a hard blade of light coming through the gap and nobody in frame, lit ONLY by that light beyond which is switched on, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2016 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door ajar dark corridor"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: two stacks of blank paper, one far shorter",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ],
+      "loop": true,
+      "loop_join": "L5 ends on the unquoted dissent, and L1 opens by naming it: there were two, and the second one is the arithmetic."
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

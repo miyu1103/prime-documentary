@@ -68,6 +68,24 @@ SUPERSEDED_PLAYLIST_RE = re.compile(
 )
 
 
+def executed_playlist_ids() -> dict[str, str]:
+    """Playlist ids the executor actually created, keyed by cluster.
+
+    Two clusters were `create_new`, so `series_clusters.v001.json` still carries
+    `existing_playlist_id: null` for them. The live ids live in the execution
+    state. Reading them here means the staged WATCH NEXT block links the real
+    playlist instead of a placeholder, and does not require editing an approved
+    config to record something the API already told us.
+    """
+    p = ROOT / "episodes" / "_planning" / "measurements" / "PLAYLIST_EXECUTION.v001.json"
+    if not p.is_file():
+        return {}
+    try:
+        return json.loads(p.read_text(encoding="utf-8")).get("playlist_ids", {}) or {}
+    except Exception:
+        return {}
+
+
 def playlist_url(playlist_id: str | None) -> str:
     if not playlist_id:
         return "<PLAYLIST URL - fill in after the playlist is created>"
@@ -189,9 +207,11 @@ def main(argv: list[str]) -> int:
 
     items: list[dict] = []
     unstaged: list[str] = []
+    executed = executed_playlist_ids()
     for playlist in config["playlists"]:
         copy = config["copy"]["per_cluster"][playlist["key"]]
-        list_url = playlist_url(playlist.get("existing_playlist_id"))
+        live_id = playlist.get("existing_playlist_id") or executed.get(playlist["key"])
+        list_url = playlist_url(live_id)
         for entry in playlist["order"]:
             video_id = entry["video_id"]
             if args.only and video_id not in set(args.only):
@@ -236,7 +256,7 @@ def main(argv: list[str]) -> int:
                     "chapter labels still production-internal: "
                     + ", ".join(staged["repair"]["labels_needing_authoring"])
                 )
-            if playlist.get("existing_playlist_id") is None:
+            if live_id is None:
                 blockers.append("playlist does not exist yet - the WATCH NEXT playlist "
                                 "URL is a placeholder and must be filled in after "
                                 "plan_series_playlists.py runs")

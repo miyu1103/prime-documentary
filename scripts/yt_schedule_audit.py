@@ -43,19 +43,11 @@ def main():
         print("TOKEN FAILED", st); return 3
     auth = {"Authorization": f"Bearer {b['access_token']}"}
 
-    # uploads playlist
-    st, ch = http("GET", "https://www.googleapis.com/youtube/v3/channels?part=contentDetails&mine=true", headers=auth)
-    up = ch["items"][0]["contentDetails"]["relatedPlaylists"]["uploads"]
-    ids, page = [], ""
-    while True:
-        u = f"https://www.googleapis.com/youtube/v3/playlistItems?part=contentDetails&maxResults=50&playlistId={up}"
-        if page:
-            u += f"&pageToken={page}"
-        st, pl = http("GET", u, headers=auth)
-        ids += [it["contentDetails"]["videoId"] for it in pl.get("items", [])]
-        page = pl.get("nextPageToken", "")
-        if not page:
-            break
+    # Every video, from the shared unioned index. A schedule audit that cannot see a video will
+    # report an empty slot on a day that is actually full (uploads playlist hid 9 on 2026-08-03).
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from yt_channel_index import list_video_ids
+    ids = list_video_ids(auth)
 
     rows = []
     for i in range(0, len(ids), 50):

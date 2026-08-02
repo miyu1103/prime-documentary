@@ -40,7 +40,10 @@ OUT_MD = ROOT / "episodes" / "_planning" / "END_SCREENS_WORK_ORDER.v001.md"
 OUT_JSON = ROOT / "episodes" / "_planning" / "measurements" / "END_SCREENS.v001.json"
 
 # An end screen element must sit inside the last 20 seconds and be at least 5s long.
-END_SCREEN_WINDOW_SECONDS = 20
+# PD chooses the last 9s: that is exactly the branded endcard (BrandEndcard, ENDCARD_SEC = 9.0).
+# 9s clears the 5s minimum, and confining the elements to the endcard means they never cover the
+# final narration visuals. Owner decision 2026-08-02, in preference to lengthening the endcard.
+END_SCREEN_WINDOW_SECONDS = 9
 MIN_ELEMENT_SECONDS = 5
 
 
@@ -138,10 +141,13 @@ def main(argv: list[str]) -> int:
     add("2. **Editor -> End screen -> Apply to video** (or *+ Element* if one already exists).")
     add("3. Element 1 = **Video -> Specific video** -> paste the slot-1 id.")
     add("4. Element 2 = **Playlist** -> pick the slot-2 playlist.")
-    add(f"5. Drag both elements into the last {END_SCREEN_WINDOW_SECONDS} seconds "
-        f"(YouTube requires each element to run at least {MIN_ELEMENT_SECONDS}s and to "
-        f"sit inside the final {END_SCREEN_WINDOW_SECONDS}s).")
-    add("6. **Save**.")
+    add(f"5. Drag both elements so they start at the endcard and run to the end - the last "
+        f"{END_SCREEN_WINDOW_SECONDS}s (YouTube requires each element to run at least "
+        f"{MIN_ELEMENT_SECONDS}s and to sit inside the final 20s; 9s satisfies both).")
+    add("6. **Position**: the PD endcard fills only the middle third (logo, wordmark, subscribe "
+        "line). Put element 1 in the LEFT third and element 2 in the RIGHT third - both areas are "
+        "empty dark sky, so nothing gets covered.")
+    add("7. **Save**.")
     add("")
     add("Do the first video, then use **Apply template from video** on the rest and "
         "only swap element 1 - it turns a ~3-minute job into ~45 seconds per video.")

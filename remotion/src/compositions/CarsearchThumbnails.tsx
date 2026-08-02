@@ -107,13 +107,13 @@ const UrgencyBurst: React.FC = () => (
         <stop offset="1" stopColor={URGENCY_RED} stopOpacity="0" />
       </radialGradient>
     </defs>
-    {/* radiating rays from the hero focal point (~78% x, 48% y) */}
-    <g transform="translate(998 346)" opacity="0.5">
+    {/* radiating rays from the hero focal point (~78% x, 48% y) — 派手 stronger */}
+    <g transform="translate(998 346)" opacity="0.72">
       {Array.from({length: 16}, (_, i) => {
         const a = (i * Math.PI * 2) / 16;
         const inner = 70;
-        const outer = 780;
-        const spread = 0.11;
+        const outer = 820;
+        const spread = 0.13;
         const x1 = Math.cos(a) * inner;
         const y1 = Math.sin(a) * inner;
         const x2 = Math.cos(a - spread) * outer;
@@ -212,7 +212,9 @@ export const CarsearchThumbnail: React.FC<{concept: ThumbConcept}> = ({concept})
           height: '100%',
           objectFit: 'cover',
           transform: 'scale(1.08)',
-          filter: 'brightness(0.86) contrast(1.16) saturate(1.12)',
+          // 派手 + brighter (owner: もっと派手に / 画像が暗い): lift the hero and push vivid
+          // saturation so it POPS in the feed instead of reading muddy-dark.
+          filter: 'brightness(1.04) contrast(1.14) saturate(1.4)',
         }}
       />
       {/* Navy grade + LEFT-only scrim for headline contrast (right/hero side stays bright). */}
@@ -222,6 +224,15 @@ export const CarsearchThumbnail: React.FC<{concept: ThumbConcept}> = ({concept})
       {/* Red urgency burst behind the hero, then the brand bright-line motif. */}
       <UrgencyBurst />
       <BrightLine accent={accent} hero={heroLine} />
+
+      {/* 派手 accent glow pooled behind the headline so the type reads as lit, not flat. */}
+      <AbsoluteFill
+        style={{
+          pointerEvents: 'none',
+          background: `radial-gradient(46% 42% at 26% 40%, ${accent}3a 0%, ${accent}12 40%, transparent 72%)`,
+          mixBlendMode: 'screen',
+        }}
+      />
 
       {/* Hook headline block, upper-left over the scrim. */}
       <div style={{position: 'absolute', left: 54, top: 58, width: 720}}>

@@ -103,28 +103,51 @@ const Word: React.FC<{
 
   const {exitY, exitOpacity} = exitAt(frame, fps, dur);
 
+  // FIX 2026-07-20 (owner caught NOBODY/CITY/ADDRESS clipping mid-word):
+  // the emphasis scale-punch (up to 1.2x) used to live INSIDE the overflow:hidden
+  // reveal mask, so a punched word overflowed the base-width mask and its left/right
+  // edges were clipped. Split into three layers: the ongoing punch+breath now scale the
+  // OUTER element (overflow visible → grows outward, never clipped); the mask keeps only
+  // the vertical reveal (translateY, baseScale 0.72→1 which never exceeds the box).
+  // The emphasis word settles PERMANENTLY at ~1.2x (punch spring lands at 1.2). Scaling
+  // from center bottom pushes each side out by ~10% of the word width, but the layout box
+  // stays at base width, so a punched word eats the gap on BOTH sides and collides with
+  // its neighbours ("NOBODYDID", "WHICHCITYYOU"). Reserve that overshoot as symmetric
+  // horizontal margin, scaled to the word length. Over-reserving only widens the gap
+  // (safe), unlike clipping which is binary — so err generous.
+  const overshoot = emphasis ? BODY_SIZE * 0.065 * word.length : 0;
   return (
     <span
       style={{
         display: 'inline-block',
-        overflow: 'hidden',
-        paddingBottom: '0.16em',
-        marginRight: BODY_SIZE * 0.26,
+        overflow: 'visible',
+        marginLeft: overshoot,
+        marginRight: BODY_SIZE * 0.26 + overshoot,
+        transform: `scale(${punch * breath})`,
+        transformOrigin: 'center bottom',
       }}
     >
       <span
         style={{
           display: 'inline-block',
-          transform:
-            `translateY(${y}%) translateY(${exitY}px) ` +
-            `scale(${baseScale * punch * breath}) rotate(${settleRot}deg)`,
-          opacity: op * exitOpacity,
-          color: emphasis ? BRAND.color.gold : BRAND.color.white,
-          whiteSpace: 'pre',
-          textShadow: emphasis ? goldShadow() : BODY_SHADOW,
+          overflow: 'hidden',
+          paddingBottom: '0.16em',
         }}
       >
-        {word}
+        <span
+          style={{
+            display: 'inline-block',
+            transform:
+              `translateY(${y}%) translateY(${exitY}px) ` +
+              `scale(${baseScale}) rotate(${settleRot}deg)`,
+            opacity: op * exitOpacity,
+            color: emphasis ? BRAND.color.gold : BRAND.color.white,
+            whiteSpace: 'pre',
+            textShadow: emphasis ? goldShadow() : BODY_SHADOW,
+          }}
+        >
+          {word}
+        </span>
       </span>
     </span>
   );
@@ -185,7 +208,8 @@ const Inner: React.FC<{
   style: 'wordpop' | 'maskslide' | 'emphasis';
   emphasisSet: Set<string>;
   dur: number;
-}> = ({lines, style, emphasisSet, dur}) => {
+  anchor: 'top' | 'bottom';
+}> = ({lines, style, emphasisSet, dur, anchor}) => {
   const {fps} = useVideoConfig();
   const base = secF(fps, 0.12);
 
@@ -193,6 +217,8 @@ const Inner: React.FC<{
     display: 'flex',
     flexWrap: 'wrap',
     alignItems: 'flex-end',
+    justifyContent: 'center', // center each wrapped row
+    textAlign: 'center',
     fontFamily: BRAND.font.display,
     fontWeight: 900,
     fontSize: BODY_SIZE,
@@ -202,14 +228,35 @@ const Inner: React.FC<{
     maxWidth: 1500,
   };
 
-  const container: React.CSSProperties = {
-    justifyContent: 'flex-end',
-    alignItems: 'flex-start',
-    paddingLeft: 120,
-    paddingRight: 120,
-    paddingBottom: 132,
-    gap: 6,
-  };
+  // HORIZONTALLY CENTERED (was left-anchored at paddingLeft 120). The whole FigureScene is under a
+  // monotonic Ken-Burns zoom (1.0→1.16) + left pan (+46→-46px); left-anchored text at x≈120 was
+  // pushed off the LEFT frame edge in the latter half of each figure (owner: "文字が左端で見切れる"
+  // — the kinetic block, e.g. "NOT A BLANK CHECK" rendered as "OT A BLANK CHECK"). Centered content
+  // keeps ~hundreds of px of margin on both sides, so the zoom/pan never clips it, and a big centered
+  // statement reads as a premium title beat.
+  // anchor='bottom' (default): bottom-third safe zone (背後映像に重ねる従来配置).
+  // anchor='top': UPPER-THIRD placement — house pattern (cf. CaseFilm GraphicsBeats
+  //   "Sits in the upper third so it never collides with the bottom captions"). Williams uses this
+  //   so kinetic emphasis lives up top and never overlaps the burned narration caption band that
+  //   sits at the very bottom (~180px). maskslide/wordpop animation itself is unchanged.
+  const container: React.CSSProperties =
+    anchor === 'top'
+      ? {
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          paddingLeft: 140,
+          paddingRight: 140,
+          paddingTop: 132,
+          gap: 6,
+        }
+      : {
+          justifyContent: 'flex-end',
+          alignItems: 'center',
+          paddingLeft: 140,
+          paddingRight: 140,
+          paddingBottom: 132,
+          gap: 6,
+        };
 
   if (style === 'maskslide') {
     const perLine = secF(fps, 0.14);
@@ -266,7 +313,10 @@ export const KineticCaptions: React.FC<{
   style?: 'wordpop' | 'maskslide' | 'emphasis';
   emphasisWords?: string[];
   dur?: number;
-}> = ({lines, style = 'wordpop', emphasisWords = [], dur}) => {
+  // 縦位置アンカー。既定は従来どおりボトム三分の一。'top' で上三分の一へ（ボトムの焼き込み字幕と
+  // 衝突しない house パターン）。maskslide 等のアニメーションは不変。
+  anchor?: 'top' | 'bottom';
+}> = ({lines, style = 'wordpop', emphasisWords = [], dur, anchor = 'bottom'}) => {
   const {durationInFrames} = useVideoConfig();
   const total = dur ?? durationInFrames;
   const emphasisSet = new Set(emphasisWords.map((w) => norm(w)));
@@ -275,7 +325,7 @@ export const KineticCaptions: React.FC<{
     <AbsoluteFill>
       {/* 速い登場にモーションブラーの尾。保持中の行は微ブレスのみで尾は無視できる。 */}
       <Trail layers={6} lagInFrames={1.1} trailOpacity={0.5}>
-        <Inner lines={lines} style={style} emphasisSet={emphasisSet} dur={total} />
+        <Inner lines={lines} style={style} emphasisSet={emphasisSet} dur={total} anchor={anchor} />
       </Trail>
     </AbsoluteFill>
   );

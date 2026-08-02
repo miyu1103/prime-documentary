@@ -79,7 +79,6 @@ def main() -> int:
     item = ch["items"][0]
     sn = item["snippet"]
     st = item["statistics"]
-    uploads = item["contentDetails"]["relatedPlaylists"]["uploads"]
 
     print("=== CHANNEL ===")
     print(f"title        : {sn.get('title')}")
@@ -89,34 +88,22 @@ def main() -> int:
     print(f"total views  : {st.get('viewCount')}")
     print(f"video count  : {st.get('videoCount')}")
 
-    status, pl = http(
-        "GET",
-        "https://www.googleapis.com/youtube/v3/playlistItems"
-        f"?part=snippet,contentDetails&maxResults=15&playlistId={uploads}",
-        headers=auth,
-    )
-    if status != 200:
-        print(f"PLAYLIST FAILED: HTTP {status} {pl}")
-        return 0
-    vids = pl.get("items", [])
-    ids = [v["contentDetails"]["videoId"] for v in vids]
-    stats_by_id: dict[str, dict] = {}
-    if ids:
-        status, vd = http(
-            "GET",
-            "https://www.googleapis.com/youtube/v3/videos"
-            f"?part=status,statistics&id={','.join(ids)}",
-            headers=auth,
-        )
-        if status == 200:
-            for v in vd.get("items", []):
-                stats_by_id[v["id"]] = v
+    # "Recent" used to mean "first 15 rows of the uploads playlist". That playlist is not a
+    # complete census — it omitted nine videos on 2026-08-03 — so a dashboard reading it could
+    # leave the newest upload off the screen entirely. Take the union and sort by publish time.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from yt_channel_index import fetch_videos, list_video_ids
+    all_videos = fetch_videos(auth, list_video_ids(auth), part="snippet,status,statistics")
+    recent = sorted(all_videos.values(),
+                    key=lambda v: v["snippet"].get("publishedAt", ""), reverse=True)[:15]
+    vids = recent
+    stats_by_id = {v["id"]: v for v in recent}
 
-    print(f"\n=== RECENT UPLOADS ({len(vids)}) ===")
+    print(f"\n=== RECENT UPLOADS ({len(vids)} of {len(all_videos)}) ===")
     for v in vids:
-        vid = v["contentDetails"]["videoId"]
+        vid = v["id"]
         title = v["snippet"]["title"]
-        pub = v["contentDetails"].get("videoPublishedAt", "-")
+        pub = v["snippet"].get("publishedAt", "-")
         meta = stats_by_id.get(vid, {})
         priv = meta.get("status", {}).get("privacyStatus", "?")
         views = meta.get("statistics", {}).get("viewCount", "?")

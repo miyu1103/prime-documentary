@@ -32,6 +32,9 @@ export const NumberTicker: React.FC<{
   topLabel?: string;
   label?: string;
   dur?: number;
+  // grouping (thousands separators). default true. Set false for values that must
+  // NOT be comma-grouped -- e.g. a YEAR (1985 must render "1985", never "1,985").
+  group?: boolean;
 }> = ({
   value,
   prefix = '',
@@ -40,6 +43,7 @@ export const NumberTicker: React.FC<{
   topLabel = 'By the numbers',
   label,
   dur,
+  group: doGroup = true,
 }) => {
   const frame = useCurrentFrame();
   const {fps, durationInFrames} = useVideoConfig();
@@ -66,9 +70,18 @@ export const NumberTicker: React.FC<{
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const shown = (value * p).toFixed(Math.max(0, decimals));
+  // thousands separators so large figures read as "$40,000" not "$40000"
+  const group = (s: string): string => {
+    if (!doGroup) return s;
+    const neg = s.startsWith('-');
+    const body = neg ? s.slice(1) : s;
+    const [intPart, decPart] = body.split('.');
+    const grouped = intPart.replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+    return (neg ? '-' : '') + grouped + (decPart != null ? '.' + decPart : '');
+  };
+  const shown = group((value * p).toFixed(Math.max(0, decimals)));
   // 桁数が確定した「最終形」— 見えないサイザーに使い、数値ボックスの寸法を固定する
-  const numberFinal = value.toFixed(Math.max(0, decimals));
+  const numberFinal = group(value.toFixed(Math.max(0, decimals)));
 
   // --- 着地後のブレス（決定論・useCurrentFrameのみ。静止させない） ---
   const settle = Math.max(0, frame - countEnd);

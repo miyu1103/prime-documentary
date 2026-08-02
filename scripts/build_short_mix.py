@@ -66,12 +66,20 @@ def split_caption_segments(text: str) -> list[str]:
         if len(words) <= MAX_WORDS:
             broken.append(s)
         else:
-            for i in range(0, len(words), MAX_WORDS):
-                broken.append(" ".join(words[i:i + MAX_WORDS]))
+            # Split into roughly EQUAL parts instead of MAX_WORDS-from-the-left. Chunking from
+            # the left leaves a stranded tail and breaks mid-phrase ("...is your | own state's
+            # law", short67 L5, measured 2026-08-01); equal parts land nearer a natural pause.
+            parts = -(-len(words) // MAX_WORDS)
+            size = -(-len(words) // parts)
+            for i in range(0, len(words), size):
+                broken.append(" ".join(words[i:i + size]))
     # 3) fold tiny fragments (≤2 words) into the previous cue so nothing flashes alone
     merged: list[str] = []
     for s in broken:
-        if merged and len(s.split()) <= 2:
+        # Fold only when the RESULT stays inside the breath-unit cap. Without this guard the
+        # fold cascades: a 7-word cue swallows every following short fragment and the caption
+        # becomes a 13-word wall sitting on screen for ~6 s (short67 L2, measured 2026-08-01).
+        if merged and len(s.split()) <= 2 and len(merged[-1].split()) + len(s.split()) <= MAX_WORDS:
             merged[-1] = merged[-1] + " " + s
         else:
             merged.append(s)
@@ -145,12 +153,17 @@ def build_mix(short: str, ep: str, narration: Path, total: float, lines: list[di
     # 3) loudnorm with a tighter LRA (=6) plus a final limiter keep the loudness constant over time.
     filters = [
         f"[0:a]speechnorm=p=0.95:e=6.25:r=0.0008:l=1,asplit=4[vmix][vk1][vk2][vk3]",
-        f"[1:a]volume=0.22,atrim=0:{total},asetpts=PTS-STARTPTS[bed0]",
-        f"[2:a]volume=0.10,atrim=0:{total},asetpts=PTS-STARTPTS[ten0]",
-        f"[3:a]volume=0.05,atrim=0:{total},asetpts=PTS-STARTPTS[amb0]",
-        "[bed0][vk1]sidechaincompress=threshold=0.02:ratio=7:attack=40:release=450[bedd]",
-        "[ten0][vk2]sidechaincompress=threshold=0.02:ratio=6:attack=40:release=500[tend]",
-        "[amb0][vk3]sidechaincompress=threshold=0.015:ratio=9:attack=50:release=600[ambd]",
+        # Owner 2026-08-02: "音量が地中で下がる。何の意味もなく。" Measured on short82 and
+        # short41: there is NO mid-video sag (thirds are -15.0 / -14.9 / -14.6 dBFS). What is
+        # audible is a ~10 dB HOLE every 8-10 s, landing exactly on the inter-line gaps, because
+        # the beds were ducked 7:1 and then took 450-600 ms to come back - so the 0.5 s gap was
+        # nearly silent. Shallower ratios and much faster release keep the floor up between lines.
+        f"[1:a]volume=0.30,atrim=0:{total},asetpts=PTS-STARTPTS[bed0]",
+        f"[2:a]volume=0.14,atrim=0:{total},asetpts=PTS-STARTPTS[ten0]",
+        f"[3:a]volume=0.07,atrim=0:{total},asetpts=PTS-STARTPTS[amb0]",
+        "[bed0][vk1]sidechaincompress=threshold=0.03:ratio=3.5:attack=25:release=180[bedd]",
+        "[ten0][vk2]sidechaincompress=threshold=0.03:ratio=3:attack=25:release=200[tend]",
+        "[amb0][vk3]sidechaincompress=threshold=0.02:ratio=4:attack=30:release=240[ambd]",
     ]
     labels = ["[vmix]", "[bedd]", "[tend]", "[ambd]"]
     for idx, (_, delay, vol) in enumerate(sfx, start=4):

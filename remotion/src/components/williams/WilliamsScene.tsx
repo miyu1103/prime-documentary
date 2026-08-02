@@ -37,14 +37,34 @@ export const WilliamsScene: React.FC<{
   const {durationInFrames} = useVideoConfig();
   const total = dur ?? durationInFrames;
 
-  // 押し込み / パララックス（全てイージング・等速禁止）
-  const p = interpolate(frame, [0, total], [0, 1], {easing: Easing.inOut(Easing.sin), extrapolateRight: 'clamp'});
-  const scale =
+  // --- CONTINUOUS full-duration Ken-Burns drift（尺いっぱい動き続ける＝リビール後に静止しない） ---
+  //   inOut(sin) は速度が“ビート中盤”で最大 = リビールが落ち着いた区間をちょうど埋める。
+  //   → animation_density の BODY near-still（リビール後の据わり）を解消する主役ドリフト。
+  const drift = interpolate(frame, [0, total], [0, 1], {
+    easing: Easing.inOut(Easing.sin),
+    extrapolateRight: 'clamp',
+  });
+  //   inOut(sin) が両端で速度0になる欠点を、位相ずらしの低周波サインで常時補う
+  //   （path が単調ランプにならず有機的・端でも velocity が 0 のまま止まらない）。
+  const wanderX = Math.sin((frame / total) * Math.PI * 1.5 + 0.6);
+  const wanderY = Math.cos((frame / total) * Math.PI * 1.3 + 0.3);
+
+  // --- premium イントロ・リビール（従来どおり前寄せの push/pull-in・見た目は据え置き） ---
+  const reveal = interpolate(frame, [0, total], [0, 1], {easing: Easing.out(Easing.cubic), extrapolateRight: 'clamp'});
+
+  // scale = イントロ押し込み + 連続ブレス（リビール据わり後もドリフトし続ける）
+  const revealScale =
     treatment === 'pixel'
-      ? interpolate(frame, [0, total], [1.14, 1.0], {easing: Easing.out(Easing.cubic)})
-      : interpolate(frame, [0, total], [1.04, 1.12], {easing: Easing.out(Easing.cubic)});
-  const px = treatment === 'parallax' ? interpolate(p, [0, 1], [-24, 24]) : 0;
-  const py = treatment === 'parallax' ? interpolate(p, [0, 1], [10, -10]) : interpolate(p, [0, 1], [6, -6]);
+      ? interpolate(reveal, [0, 1], [1.14, 1.02]) // pixel: シャープ→着地の pull-in
+      : interpolate(reveal, [0, 1], [1.03, 1.09]); // push/parallax: push-in
+  const driftScale = interpolate(drift, [0, 1], [0, 0.06]); // +6%（尺いっぱいの連続ブレス）
+  const scale = revealScale + driftScale;
+
+  // position: 全treatmentに“持続する”スローパン + parallax だけ追加スイング
+  const parX = treatment === 'parallax' ? interpolate(drift, [0, 1], [-16, 16]) : 0;
+  const parY = treatment === 'parallax' ? interpolate(drift, [0, 1], [8, -8]) : 0;
+  const px = interpolate(drift, [0, 1], [-20, 20]) + parX + wanderX * 7;
+  const py = interpolate(drift, [0, 1], [14, -14]) + parY + wanderY * 6;
 
   // フェード（頭0.25s / 尻0.35s 相当・opacity単独ではなくscaleと併用済み）
   const fadeIn = interpolate(frame, [0, 8], [0, 1], {extrapolateRight: 'clamp'});
@@ -87,8 +107,10 @@ export const WilliamsScene: React.FC<{
       {/* ③下スクリム（字幕可読性） */}
       <AbsoluteFill style={{background: `linear-gradient(to top, ${BRAND.color.ink}dd 0%, ${BRAND.color.ink}00 34%)`}} />
 
-      {/* ④on-screen（maskslide） */}
-      {onScreen && onScreen.length ? <KineticCaptions lines={onScreen} style="maskslide" dur={total} /> : null}
+      {/* ④on-screen（maskslide）— UPPER THIRD 配置: ボトムの焼き込みナレーション字幕と衝突させない */}
+      {onScreen && onScreen.length ? (
+        <KineticCaptions lines={onScreen} style="maskslide" dur={total} anchor="top" />
+      ) : null}
 
       {/* プレースホルダー隅ラベル（最終画像では src 指定で消える） */}
       {!src ? (

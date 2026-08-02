@@ -207,13 +207,25 @@ def _episode_band(epdir: Path) -> tuple[float, float]:
         except Exception:
             pass
     try:
-        target = json.loads((epdir / "manifest.json").read_text(encoding="utf-8")
-                            ).get("target_duration_minutes")
+        mf = json.loads((epdir / "manifest.json").read_text(encoding="utf-8"))
     except Exception:
-        target = None
+        mf = {}
+    # An explicit band beats bucket inference. The buckets are coarse by necessity --
+    # EP51 willingham narrates 20.1 min and fits NO bucket (the >=20 one is 27-33) --
+    # so an episode that knows its own shape may state it and be believed.
+    band = mf.get("runtime_band_minutes")
+    if (isinstance(band, (list, tuple)) and len(band) == 2
+            and all(isinstance(x, (int, float)) for x in band) and band[0] < band[1]):
+        return float(band[0]) * 60.0, float(band[1]) * 60.0
+    target = mf.get("target_duration_minutes")
     if target:
+        # Buckets, widest first. The table used to jump straight from >=20 to >=45,
+        # so a 40-minute episode was graded against the 27-33 min band -- a false RED
+        # that no amount of editing could clear. EP60 surfside (40 min) exposed it.
         if target >= 45:
             return 3300.0, 3900.0
+        if target >= 36:
+            return 2160.0, 2640.0      # 36-44 min -> 36:00-44:00
         if target >= 20:
             return 1620.0, 1980.0
     return DEFAULT_LO_SECONDS, DEFAULT_HI_SECONDS
@@ -234,8 +246,22 @@ def _find_script(epdir: Path) -> Path | None:
                   if p.suffix.lower() in (".md", ".json")]
     if not cands:
         return None
-    # the richest one wins (later drafts are longer; avoids grading a stub)
-    return max(cands, key=lambda p: count_words(narration_text(p)))
+    # "The richest one wins" assumed later drafts are always longer. They are not: EP60's
+    # v004 is 674 words TIGHTER than v002 because a revision pass cut padding, so the gate
+    # graded a superseded draft. Prefer the highest revision number, but only among
+    # candidates that are still substantial (>= 60% of the richest), so a stub named v009
+    # cannot win either.
+    scored = [(p, count_words(narration_text(p))) for p in cands]
+    richest = max(w for _, w in scored) or 1
+
+    def _rev(path: Path) -> int:
+        m = re.findall(r"[vV](\d{1,3})", path.stem)
+        return int(m[-1]) if m else -1
+
+    substantial = [(p, w) for p, w in scored if w >= 0.60 * richest]
+    if substantial and any(_rev(p) >= 0 for p, _ in substantial):
+        return max(substantial, key=lambda pw: (_rev(pw[0]), pw[1]))[0]
+    return max(scored, key=lambda pw: pw[1])[0]
 
 
 def evaluate(epdir: Path) -> dict:

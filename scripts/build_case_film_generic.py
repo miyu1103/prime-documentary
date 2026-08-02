@@ -32,6 +32,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import subprocess
 import sys
 from collections import Counter, deque
 from pathlib import Path
@@ -45,6 +46,7 @@ TARGET_CUT_SEC = 4.6        # average cut length; shorter than EP50's 6.1s for t
 MIN_VIDEO_SHARE = 0.68      # build target; the gate's hard floor is 0.62, so this leaves margin
 MAX_VIDEO_REUSE = 2         # gate allows 3; we stay at 2
 MAX_STILL_REUSE = 1         # stills are never repeated
+PINNED_HEAD = 0             # set by the caller: this many leading pool items must all be used
 TREATMENTS = ["bleed", "duotone", "focus"]
 BANNED_TREATMENTS = {"depth", "scan", "card"}
 HOOK_SEC = 8.0
@@ -216,6 +218,42 @@ def repeated(pool: list[str], n: int, cap: int, label: str) -> list[str]:
         return []
     if not pool:
         raise SystemExit(f"not enough {label}: need {n}, have 0")
+    if cap == 1 and n < len(pool):
+        # SURPLUS POOL: take an EVEN SPREAD, never the first n.
+        # The walk below starts at index 0, so when the pool is bigger than the requirement it
+        # silently kept the alphabetical head and dropped the tail. EP54 had 134 stills for 119
+        # image cuts, and the 15 it dropped were S210-S224 -- the fourteen courtroom stills that
+        # had just been generated precisely because the archive holds no courtroom footage at
+        # all. Losing exactly the newest, most deliberate assets is the worst possible failure
+        # mode for a rule nobody chose. An even stride keeps the whole pool in play.
+        # Anything the caller pinned to the front is taken verbatim first -- a stride can skip
+        # an index, and on EP54 it skipped exactly one of the fourteen pinned courtroom stills.
+        head = pool[:PINNED_HEAD] if PINNED_HEAD else []
+        head = head[:n]
+        rest = pool[len(head):]
+        need = n - len(head)
+        seen: set[str] = set(head)
+        out2 = list(head)
+        if need > 0 and rest:
+            step = len(rest) / need
+            for k in range(need):
+                cand = rest[min(len(rest) - 1, int(k * step))]
+                if cand not in seen:
+                    seen.add(cand); out2.append(cand)
+        i = 0
+        while len(out2) < n and i < len(pool):        # rounding can collide; backfill in order
+            if pool[i] not in seen:
+                seen.add(pool[i]); out2.append(pool[i])
+            i += 1
+        out2 = out2[:n]
+        dropped = [p for p in pool if p not in set(out2)]
+        if dropped:
+            # Never silent. A surplus pool still means some assets do not reach the film, and
+            # whoever made them is entitled to know which.
+            names = [d.split("/")[-1] for d in dropped]
+            print(f"  [{label}] pool {len(pool)} > need {n}; {len(dropped)} not used: "
+                  f"{', '.join(names[:12])}{' ...' if len(names) > 12 else ''}")
+        return out2
     out: list[str] = []
     uses: Counter[str] = Counter()
     i = guard = 0
@@ -236,6 +274,58 @@ def take(q: deque, n: int) -> list[str]:
 
 
 # ------------------------------------------------------------------ cuts
+# --- per-still exposure -------------------------------------------------------------------
+# EP51's acceptance run measured 93.4% of its stills below the readable luma floor and 29% of
+# hero image cuts too dark to read (the recurring 「画像が暗くて見えにくい」). A global wash was
+# tried on EP49 and flattened contrast, so each still is measured here and gets its OWN lift:
+# bright images are left alone, dark ones are opened to the target. CaseFilm applies cut.lift.
+_LIFT_CACHE: dict[str, float] = {}
+STILL_TARGET_LUMA = 78.0
+STILL_MAX_LIFT = 1.85
+
+
+def still_lift(public_src: str) -> float:
+    """brightness multiplier for one still (1.0 = leave it alone)."""
+    if public_src in _LIFT_CACHE:
+        return _LIFT_CACHE[public_src]
+    lift = 1.0
+    try:
+        from PIL import Image
+        p = ROOT / "remotion" / "public" / public_src
+        if p.is_file():
+            im = Image.open(p).convert("L").resize((64, 36))
+            px = list(im.getdata())
+            mean = sum(px) / len(px)
+            if mean > 1.0:
+                lift = min(STILL_MAX_LIFT, max(1.0, STILL_TARGET_LUMA / mean))
+    except Exception:
+        lift = 1.0
+    _LIFT_CACHE[public_src] = round(lift, 3)
+    return _LIFT_CACHE[public_src]
+
+
+
+_SRC_SECONDS: dict[str, float] = {}
+
+
+def source_seconds(public_src: str) -> float:
+    """Measured length of a staged clip (0.0 when unreadable)."""
+    if public_src in _SRC_SECONDS:
+        return _SRC_SECONDS[public_src]
+    path = ROOT / "remotion" / "public" / public_src
+    val = 0.0
+    if path.is_file():
+        r = subprocess.run(["ffprobe", "-v", "error", "-show_entries",
+                            "format=duration", "-of", "csv=p=0", str(path)],
+                           capture_output=True, text=True)
+        try:
+            val = float(r.stdout.strip())
+        except ValueError:
+            val = 0.0
+    _SRC_SECONDS[public_src] = val
+    return val
+
+
 def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifest: dict,
               slug: str) -> tuple[list[dict], dict]:
     stills = public_items(manifest, "stills", "body") or public_items(manifest, "stills")
@@ -246,6 +336,29 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
     # People are woven into the STILL rotation (faces recur through the film, not just thumbs).
     # Any person still already present in `stills` is not duplicated.
     still_pool_src = people + [s for s in stills if s not in set(people)]
+
+    # PIN WHAT THE LAST FILM DID NOT USE.
+    # A surplus pool means some stills are left out. Left to an even stride, the ones left out
+    # are arbitrary -- and on EP54 that arbitrarily excluded two of the fourteen courtroom
+    # stills that had just been generated because the archive has no courtroom footage at all.
+    # A still that is in the pool but was absent from the previous build is, by definition, the
+    # newest intent in the episode. It goes to the front, so the surplus is taken from material
+    # the film has already been carrying instead.
+    def _mtime(rel: str) -> float:
+        p = ROOT / "remotion" / "public" / rel
+        try:
+            return p.stat().st_mtime
+        except OSError:
+            return 0.0
+
+    newest = max((_mtime(s) for s in still_pool_src), default=0.0)
+    fresh = [s for s in still_pool_src if newest - _mtime(s) < 12 * 3600]
+    if fresh and len(fresh) < len(still_pool_src):
+        still_pool_src = fresh + [s for s in still_pool_src if s not in set(fresh)]
+        globals()["PINNED_HEAD"] = len(fresh)
+        print(f"  [still] {len(fresh)} still(s) delivered in the last 12h pinned to the front: "
+              + ", ".join(s.split('/')[-1] for s in sorted(fresh)[:14])
+              + (" ..." if len(fresh) > 14 else ""))
 
     total_sec = max(e for _, e in windows.values())
     nf, nm, ns = solve_totals(total_sec, len(factory_pool), len(motion_pool), len(still_pool_src))
@@ -291,9 +404,16 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
             dur = round((3.0 if kind == "img" else 3.343) * scale, 3)
             cut = {"id": f"cut-{len(cuts):04d}", "start": round(t, 3), "dur": dur,
                    "kind": kind, "src": src, "seed": f"{slug}-{len(cuts):04d}", "act": sec}
+            if kind == "footage":
+                # the renderer clamps the in-point against this; without it a cut can
+                # run past the end of its clip and go black (EP55: 26/259 cuts)
+                cut["srcSeconds"] = round(source_seconds(src), 3)
             cut["treatment"] = TREATMENTS[treat_i % len(TREATMENTS)] if kind == "img" else "footage"
             if kind == "img":
                 treat_i += 1
+                lift = still_lift(src)
+                if lift > 1.001:
+                    cut["lift"] = lift
             cuts.append(cut)
             t += dur
         if cuts:
@@ -301,6 +421,45 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
     plan = {"factory": nf, "motion": nm, "still": ns,
             "pools": {"factory": len(factory_pool), "motion": len(motion_pool),
                       "still": len(still_pool_src), "people": len(people)}}
+    # A clip shorter than its cut is not a planning error -- it just has to loop. Mark it so the
+    # renderer repeats it instead of running out of footage and going black. Only a clip that is
+    # unreadable (0s) is a real problem.
+    for c in cuts:
+        if c.get("kind") == "footage" and c.get("srcSeconds") and c["dur"] > c["srcSeconds"] + 0.05:
+            c["loopSource"] = True
+    impossible = [c for c in cuts if c.get("kind") == "footage"
+                  and not c.get("srcSeconds")]
+    if impossible:
+        for c in impossible[:6]:
+            print(f"  cut {c['id']}: {c['src'].split('/')[-1]} is unreadable "
+                  f"(0s) -- it cannot be rendered", file=sys.stderr)
+        raise SystemExit(f"{len(impossible)} cut(s) reference an unreadable clip")
+
+    # THE BLOCKLIST IS ENFORCED WHERE THE FILM IS MADE, not after it is rendered.
+    # An audit on 2026-08-02 found the EP58 plan carrying two third-party YouTube vlogger
+    # clips and a test tube legibly labelled "Coronavirus", and the EP59 plan carrying real
+    # Fox News footage of Jeffrey Epstein and news footage of Steve Bannon, both with network
+    # watermarks. Those are rights hazards and invariant-11 hazards, and nothing downstream
+    # was looking for them. A film that names a blocked clip is not emitted at all.
+    blocklist = ROOT / "config" / "footage_blocklist.v001.json"
+    if blocklist.is_file():
+        blocked: dict[str, str] = {}
+        for row in json.loads(blocklist.read_text(encoding="utf-8")).get("blocked", []):
+            for ident in row["ids"]:
+                blocked[ident] = f"{row['label']}: {row['reason']}"
+        hits = []
+        for c in cuts:
+            base = (c.get("src") or "").split("/")[-1]
+            ident = base.split("__")[0]
+            why = blocked.get(ident) or blocked.get(ident.replace("AF-BG-", ""))
+            if why:
+                hits.append((base, why))
+        if hits:
+            for base, why in hits[:8]:
+                print(f"  BLOCKED {base}\n          {why}", file=sys.stderr)
+            raise SystemExit(
+                f"{len(hits)} cut(s) reference a blocklisted clip. Prune the pool with "
+                f"scripts/prune_pool_by_blocklist.py --slug <slug> and rebuild.")
     return cuts, plan
 
 

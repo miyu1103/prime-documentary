@@ -1,0 +1,717 @@
+{
+  "episode_id": "PD-2026-028-forfeiture",
+  "slug": "forfeiture",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "YhEJHK279f8",
+    "title": "Their Son Was Charged. The City Came for His Parents' House.",
+    "url": "https://www.youtube.com/watch?v=YhEJHK279f8",
+    "privacy": "public",
+    "views": 5
+  },
+  "shorts_existing": [
+    "short28"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short28": [
+      "A court ordered a family's home seized — not because they broke the law, but because their house supposedly did.",
+      "Christos Sourovelis painted houses and earned a modest home in northeast Philadelphia.",
+      "In March 2014, his twenty-two-year-old son sold about forty dollars of heroin to a police informant.",
+      "So the city moved — not against the son, but against the house.",
+      "Using civil forfeiture, prosecutors won an order to seize and seal the home with no family member present.",
+      "The property itself becomes the defendant — the State versus one house — and innocent owners must prove their own home did nothing wrong.",
+      "And it wasn't unusual.",
+      "From 2002 to 2014, Philadelphia forfeiture took more than twelve hundred homes and over fifty million dollars in cash — the typical seizure just a hundred seventy-eight dollars — with millions a year flowing into police and prosecutor budgets.",
+      "The family and the Institute for Justice filed a class action, and in 2018 the city agreed to dismantle the machine.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\_planning\\EP28_forfeiture_script.en.v001.md",
+  "candidate_payload_lines": [
+    "But in 2014, none of that had happened yet.",
+    "And the family who owned it had never been charged with anything at all.",
+    "In March of 2014, their twenty-two-year-old son, Yianni, made a decision that would reach far past himself.",
+    "On the eighth of May, prosecutors walked into a courtroom with no one from the family present, and walked out with an order to **seize and seal** the Sourovelis home.",
+    "Read a civil-forfeiture docket and you will find the state suing an *object* — because an object cannot afford a lawyer, and an object can never say, \"but I did nothing wrong.\" So the Sourovelises did the only thing they could.",
+    "It was called **Courtroom 478**, on an upper floor of Philadelphia's City Hall.",
+    "And if you missed a date — if you couldn't get off work, if the letter never reached you, if you didn't understand — you could lose your home automatically, by default.",
+    "Between 2002 and 2014, the city of Philadelphia used civil forfeiture to take more than **twelve hundred homes**.",
+    "This machine was never built to bring down drug lords.",
+    "And in 2018, Philadelphia gave up the machine itself.",
+    "No more taking small amounts of cash from people who were never even arrested.",
+    "The city also created a **three-million-dollar fund** to pay back the people it had taken from — with those never convicted of anything able to recover the full value of what they'd lost.",
+    "And Courtroom 478 — the room with no judge — was closed for good.",
+    "Christos Sourovelis never set out to change the law."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short170",
+      "angle": "The room where Philadelphia decided who kept their house had no judge in it and no lawyer for the owner.",
+      "funnel_question_left_for_longform": "Who forced the city to shut Courtroom 478, and what it cost them to do it.",
+      "loop": true,
+      "loop_join": "L5 gives the ending and the scale first, so hearing L1 walk back into that room lands as one case out of twelve hundred.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "In Philadelphia, if you wanted to fight for your own house, you went to a room upstairs in City Hall. Courtroom 478. There was no judge in it.",
+          "source_lines": [
+            "It was called **Courtroom 478**, on an upper floor of Philadelphia's City Hall.",
+            "But calling it a courtroom is generous. There was no judge in Courtroom 478."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "The hearings were run by the same prosecutors trying to take your property. No court appointed lawyers. No right to counsel at all.",
+          "source_lines": [
+            "The proceedings were run by the very prosecutors trying to take your property. There were no court-appointed lawyers — no right to counsel at all."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "Owners were handed forms and quietly encouraged not to fight. Miss a date, because work would not let you off or the letter never reached you, and you could lose your home by default.",
+          "source_lines": [
+            "Owners were handed forms and, more often than not, encouraged simply not to fight.",
+            "And if you missed a date — if you couldn't get off work, if the letter never reached you, if you didn't understand — you could lose your home automatically, by default."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "This was not a place where justice was weighed. It was a collection department with the seal of the state on the door.",
+          "source_lines": [
+            "This was not a place where justice was weighed. It was a collection department with the seal of the state on the door."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "Courtroom 478 was closed for good in 2018. Between 2002 and 2014 the city had already taken more than twelve hundred homes.",
+          "source_lines": [
+            "And Courtroom 478 — the room with no judge — was closed for good.",
+            "Between 2002 and 2014, the city of Philadelphia used civil forfeiture to take more than **twelve hundred homes**."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R08",
+          "subject": "the empty judge's bench in the room with no judge",
+          "source": "GENERATE",
+          "prompt": "an ornate municipal hearing-room bench of dark wood photographed from the well of the room, the high seat behind it completely empty and the panelling above it bare of any crest or inscription, lit ONLY by one brass bench lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty courtroom judges bench"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U04",
+          "subject": "the upper-floor City Hall stair the owners climbed",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "marble staircase handrail interior",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31000__warehouse_interior_dark.mp4",
+          "bound_title": "industrial urea storage facility interior",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4414,
+          "motion": 3.489,
+          "luma": 70.5
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I02",
+          "subject": "a numbered hearing-room door with the number worn blank",
+          "source": "GENERATE",
+          "prompt": "a heavy varnished door at the end of a municipal corridor with its brass number plate worn completely smooth and unreadable, the frame chipped by decades of hands, lit ONLY by one ceiling fixture which is switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "old wooden office door handle"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R06",
+          "subject": "folding chairs where a courtroom gallery should be",
+          "source": "GENERATE",
+          "prompt": "four rows of grey metal folding chairs standing in a small panelled municipal room where courtroom benches should be, every chair empty and slightly out of line, lit ONLY by one high window shaft falling across them, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty folding chairs room"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "R04",
+          "subject": "two prosecutors' silhouettes running the room from a folding table",
+          "source": "GENERATE",
+          "prompt": "two dark suited silhouettes standing behind a cheap folding table set where a judge's bench should be, faces not visible, papers spread in front of them, lit ONLY by one desk lamp switched on at the table's edge, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "silhouettes standing at table"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U06",
+          "subject": "the owner's chair with no lawyer beside it",
+          "source": "GENERATE",
+          "prompt": "a single plain wooden chair standing alone on a scuffed floor with a second empty chair beside it pushed hard against the wall, a cone of light on the pair, lit ONLY by the fixture switched on above them, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "single empty chair spotlight"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U07",
+          "subject": "hands squaring a stack of hearing papers",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands sorting stack of papers",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0451__office_interior_dark.mp4",
+          "bound_title": "organized desk in office workspace",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4293,
+          "motion": 1.567,
+          "luma": 96.2
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U07",
+          "subject": "a prosecutor's briefcase open on the folding table",
+          "source": "GENERATE",
+          "prompt": "an open leather briefcase resting on a folding table, packed with worn folders whose labels are worn completely blank, lit ONLY by one desk lamp switched on beside it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open briefcase documents desk"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U09",
+          "subject": "an owner waiting alone in the corridor",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "silhouette standing in corridor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0514__courtroom_interior.mp4",
+          "bound_title": "a person holding a pen",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3997,
+          "motion": 21.599,
+          "luma": 138.7
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I02",
+          "subject": "a line of waiting chairs down a municipal corridor",
+          "source": "GENERATE",
+          "prompt": "a long line of empty moulded plastic chairs bolted along the wall of a municipal corridor running away from camera, every seat vacant, lit ONLY by one fluorescent tube switched on overhead, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "row of chairs corridor"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "I03",
+          "subject": "a wheeled cart of blank hearing forms",
+          "source": "GENERATE",
+          "prompt": "a steel wheeled cart stacked with loose blank unreadable forms parked against a marble corridor wall, the top sheets curling, lit ONLY by one caged bulb switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "trolley cart of papers"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a blank form pushed across the table to an owner",
+          "source": "GENERATE",
+          "prompt": "macro of a completely blank unreadable form being pushed across a scarred table toward a pair of waiting hands, no face or body above the wrists, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "blank form on desk"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a hand signing away a hearing right",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand signing document close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0519__courtroom_interior.mp4",
+          "bound_title": "woman reading documents",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4926,
+          "motion": 1.465,
+          "luma": 54.6
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "I06",
+          "subject": "the notice that never reached the house",
+          "source": "GENERATE",
+          "prompt": "one plain sealed envelope lying face down and unopened on the mat inside a dark residential hallway, its writing worn completely blank, lit ONLY by a hard blade of daylight under the front door, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "envelope on door mat"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U05",
+          "subject": "the hearing hour passing while the owner is at work",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "wall clock close up ticking",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0834__money_cash_counting.mp4",
+          "bound_title": "efficient indian rupee money counting machine in action",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4385,
+          "motion": 2.28,
+          "luma": 104.9
+        },
+        {
+          "n": 16,
+          "role": "payoff",
+          "line": "L3",
+          "motif": "I01",
+          "subject": "the default stamp coming down on a blank sheet",
+          "source": "GENERATE",
+          "prompt": "macro of a wooden-handled rubber stamp caught coming down on a completely blank sheet, the die face worn smooth and unreadable, ink pad open beside it, lit ONLY by one desk lamp switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "rubber stamp on paper"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M02",
+          "subject": "money being counted behind the bench",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "counting cash by hand",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0351__sun_flare_warm.mp4",
+          "bound_title": "tree branches backlit by the sun",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3857,
+          "motion": 16.534,
+          "luma": 112.5
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M06",
+          "subject": "a municipal cash window with nobody behind it",
+          "source": "GENERATE",
+          "prompt": "a municipal payment window of steel grille and thick glass set into a marble wall, a worn coin dish in its sill, the clerk's side dark and empty, lit ONLY by one fixture switched on above the counter, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "payment window counter glass"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I04",
+          "subject": "the seal of the state on a frosted office door",
+          "source": "GENERATE",
+          "prompt": "a frosted glass office door carrying one embossed circular seal whose device is worn completely smooth with no lettering anywhere, lit ONLY by a single lamp switched on in the dark corridor behind camera, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "frosted glass office door"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "M06",
+          "subject": "a steel payment drop box bolted to marble",
+          "source": "GENERATE",
+          "prompt": "a heavy steel payment drop box bolted to a marble wall, its slot mouth dark, its faceplate worn completely blank, lit ONLY by one hard uplight switched on at the skirting, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "metal drop box slot"
+        },
+        {
+          "n": 21,
+          "role": "body",
+          "line": "L4",
+          "motif": "R12",
+          "subject": "the house keys the city took",
+          "source": "GENERATE",
+          "prompt": "the house keys the city took, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I04",
+          "subject": "a rowhouse door padlocked shut by the city",
+          "source": "GENERATE",
+          "prompt": "the front door of a plain brick rowhouse of no distinguishing architecture, a steel hasp and padlock screwed across it and a notice card worn completely blank beside the frame, lit ONLY by one porch bulb switched on above, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "padlock chain on door"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the room with no judge",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "empty courtroom judges bench"
+        }
+      ],
+      "type": "C — a quotation or document",
+      "avoids": "Short 28 ran the seizure order and the citywide totals; this cut never leaves Courtroom 478, the room-level procedure that made losing a home automatic.",
+      "era": "2014 Philadelphia"
+    },
+    {
+      "short_id": "short171",
+      "angle": "To get back into the home the city had sealed, the parents had to sign an agreement barring their own son from it.",
+      "funnel_question_left_for_longform": "What they did after they got the house back, when they could simply have walked away.",
+      "loop": true,
+      "loop_join": "L5 ends on the knock still coming for other people, and L1 opens on that exact knock at the door.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "There was no warning and no hearing. Just a knock at the door, and an instruction: pack a bag, and get out. The family had been charged with nothing.",
+          "source_lines": [
+            "There was no warning. There was no hearing. There was a knock at the door, and an instruction that sounds impossible for a home someone actually owns: pack a bag, and get out.",
+            "And the family who owned it had never been charged with anything at all."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "For about a week they slept on a relative's couch, made homeless in their own city, while the government held the deed to their home.",
+          "source_lines": [
+            "For about a week, they slept on a relative's couch — a family made homeless in their own city, while the government held the deed to their home like a hostage."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "Then the city let them back in, on one condition. The father had to sign an agreement barring his own son from the house.",
+          "source_lines": [
+            "They were finally allowed back inside on a single condition. Christos had to sign an agreement promising to bar his own son from the house."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "To get their home back, these parents had to give up their son at the door. It could just as easily have been your address, not because you did anything, but because someone under your roof did.",
+          "source_lines": [
+            "Read that again. To get their home back, these parents had to give up their son at the door.",
+            "It could just as easily have been yours — not because you did anything, but because someone under your roof did, or because an officer decided the cash in your pocket looked suspicious."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "They kept the house. They did not drop the class action for everyone still facing that knock.",
+          "source_lines": [
+            "The Sourovelises got their own home free within about a year — the city quietly dropped its case against their house, and they kept it.",
+            "They didn't drop the class action."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R10",
+          "subject": "the front door from inside, the moment of the knock",
+          "source": "GENERATE",
+          "prompt": "a residential front door seen from inside a dark hallway with its security chain still across it and one hard blade of daylight cutting under the sill, the hall around it swallowed in black, lit ONLY by that light, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "front door from inside hallway"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "the handle turning from the outside",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "door handle turning close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1127__technology_abstract_blue.mp4",
+          "bound_title": "close up of a futuristic abstract pattern",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4474,
+          "motion": 20.263,
+          "luma": 53.6
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U07",
+          "subject": "a bag half packed on a bed",
+          "source": "GENERATE",
+          "prompt": "a canvas holdall lying half packed and open on a stripped bed in a dark bedroom, folded clothes spilling over its lip, nobody in frame, lit ONLY by one bedside lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "packing a bag on bed"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I04",
+          "subject": "a plain rowhouse porch, door shut",
+          "source": "GENERATE",
+          "prompt": "the porch of a plain brick suburban rowhouse of no distinguishing architecture at night, the storm door shut and the windows black, lit ONLY by one porch bulb switched on over the step, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "house porch at night"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "U06",
+          "subject": "a folded blanket on a relative's couch",
+          "source": "GENERATE",
+          "prompt": "a folded blanket and one pillow stacked on the arm of a worn living-room couch in a dark room, nobody present, lit ONLY by a single table lamp which is switched on beside it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "blanket folded on couch"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "U16",
+          "subject": "a borrowed room at night",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "living room lamp at night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0515__courtroom_interior.mp4",
+          "bound_title": "lady justice statue",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4156,
+          "motion": 6.426,
+          "luma": 154.2
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "R12",
+          "subject": "a family living out of a bag on a kitchen table",
+          "source": "GENERATE",
+          "prompt": "a kitchen table carrying a set of house keys, a folded wallet and a toothbrush in a glass, everything a family took with them, lit ONLY by one hanging kitchen lamp which is switched on above, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "keys wallet on table"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "I04",
+          "subject": "the city's hasp screwed across the door",
+          "source": "GENERATE",
+          "prompt": "a heavy steel hasp and padlock freshly screwed across the frame of a plain residential door, bright new screws against weathered paint, lit ONLY by one porch bulb switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "padlock on wooden door"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U11",
+          "subject": "rain on the window of the room they slept in",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "rain on window at night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0516__courtroom_interior.mp4",
+          "bound_title": "a serious lawyer wearing black coat",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4296,
+          "motion": 2.052,
+          "luma": 54.3
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "M05",
+          "subject": "the deed held in a government drawer",
+          "source": "GENERATE",
+          "prompt": "one steel filing drawer pulled open in a dark records room with a single folded property document lying inside it, every line of its writing worn completely blank, lit ONLY by one fixture switched on above the cabinet, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open filing cabinet drawer"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U02",
+          "subject": "the sealed house from the street",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "house exterior at night street",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0988__server_room_blue.mp4",
+          "bound_title": "futuristic grid animation with light effects",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4099,
+          "motion": 19.35,
+          "luma": 58.5
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "the agreement laid on the table with a pen",
+          "source": "GENERATE",
+          "prompt": "one completely blank unreadable sheet laid square on a dark kitchen table with a cheap ballpoint resting across it, nobody in frame, lit ONLY by one hanging lamp which is switched on above the table, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "blank paper and pen table"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a father's hand signing his son out of the house",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand signing contract pen",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3833__courtroom_interior.mp4",
+          "bound_title": "a woman holding a pen",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4487,
+          "motion": 8.968,
+          "luma": 40.6
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "R10",
+          "subject": "the chain across the door from inside",
+          "source": "GENERATE",
+          "prompt": "a heavy security chain drawn taut across a residential door seen from inside a dark hall, a closed bedroom door visible further down the corridor, lit ONLY by one hall fixture switched on overhead, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "security chain on door"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "U06",
+          "subject": "the son's bedroom, stripped",
+          "source": "GENERATE",
+          "prompt": "a small bedroom with the bed stripped to its mattress, a bare hook on the back of the open door and nothing on the shelves, lit ONLY by one uncovered ceiling bulb which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty bedroom bare mattress"
+        },
+        {
+          "n": 16,
+          "role": "payoff",
+          "line": "L3",
+          "motif": "R12",
+          "subject": "the house key handed back",
+          "source": "GENERATE",
+          "prompt": "macro of a single worn house key lying in an open upturned palm, no face or body above the wrist, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "house key in hand macro"
+        },
+        {
+          "n": 17,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "Y01",
+          "subject": "the empty place at the family table",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty chair at dining table",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0517__courtroom_interior.mp4",
+          "bound_title": "woman sitting on a chair talking",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3992,
+          "motion": 1.374,
+          "luma": 57.3
+        },
+        {
+          "n": 18,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U13",
+          "subject": "a son's shadow going down the porch steps",
+          "source": "GENERATE",
+          "prompt": "seen through a screen door from inside a dark hall, a long shadow stretching away down concrete porch steps with the figure itself out of frame, face never visible, lit ONLY by one porch bulb switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "shadow on porch steps"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I02",
+          "subject": "a street of identical front doors",
+          "source": "GENERATE",
+          "prompt": "a row of identical plain suburban front doors receding down a terrace at dusk, no numbers or lettering anywhere on them, lit ONLY by the porch bulbs switched on above each step, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "row of identical front doors"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "a house number worn to nothing",
+          "source": "GENERATE",
+          "prompt": "macro of a small metal house plate screwed to weathered brick with its digits worn completely smooth and unreadable, lit ONLY by one porch bulb switched on beside it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "house number plate brick"
+        },
+        {
+          "n": 21,
+          "role": "body",
+          "line": "L4",
+          "motif": "U11",
+          "subject": "a mailbox on an ordinary street",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "mailbox on suburban street",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0585__law_library_books.mp4",
+          "bound_title": "woman sitting on a chair reading documents",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4681,
+          "motion": 2.736,
+          "luma": 52.5
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U12",
+          "subject": "the hall light back on, a bag still by the door",
+          "source": "GENERATE",
+          "prompt": "a residential hallway with the bag still standing unopened by the skirting and the coats back on their hooks, the front door closed behind it, lit ONLY by one hall lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2014 Philadelphia, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hallway lamp interior night"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the front door from inside",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "front door from inside hallway"
+        }
+      ],
+      "type": "A — second-person threat",
+      "avoids": "Short 28 covered the seizure and the class action that ended it; this cut stays with the price the family paid to walk through their own front door again.",
+      "era": "2014 Philadelphia"
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

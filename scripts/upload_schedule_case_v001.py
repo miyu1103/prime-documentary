@@ -304,6 +304,124 @@ CONFIG = {
         "tags": ["Supreme Court", "Fourth Amendment", "Rodriguez", "Rodriguez v United States",
                  "Traffic Stop", "Dog Sniff", "K9", "Search and Seizure", "Law", "Documentary"],
     },
+    "morton": {
+        "ep": "PD-2026-052-morton",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-052-morton/08_edit/morton_final_bgm.v001.mp4",
+        "sched_local": "2026-08-06T12:00:00+09:00",
+        "sched_utc": "2026-08-06T03:00:00Z",
+        # R-38 present-tense injustice; the 3-year-old witness is the film's first 20s.
+        "title": "A 3-Year-Old Said His Father Wasn't Home. The State Buried It for 25 Years.",
+        "description": "On 13 August 1986, Michael Morton left for work before dawn. By the time he got home, his wife Christine had been beaten to death in their bed in Williamson County, Texas, and their three-year-old son Eric had been in the house.\n\nEric told his grandmother what he saw: a monster hurt his mother, and — asked directly — that his daddy was not home. A neighbour had seen a green van parked repeatedly behind the house. Christine's missing credit card surfaced in San Antonio, and a cheque with her forged signature was cashed. None of it reached the jury. The prosecution's theory was that Michael killed her because she had fallen asleep on his birthday, and he was convicted of murder and sentenced to life.\n\nHe served nearly twenty-five years. For six of them his own lawyers fought simply for the right to test a bloodied bandana found near the house. The state opposed it repeatedly.\n\nWhen the testing finally happened, the bandana carried Christine's blood and the DNA of another man: Mark Alan Norwood. He had, by then, been convicted of a second murder committed after Christine's — a killing that happened while the file that could have named him sat unexamined in a prosecutor's office.\n\nMichael Morton was released in October 2011 and formally exonerated. The lead prosecutor, who had become a sitting judge, faced a court of inquiry over the evidence that was never handed to the defence; he surrendered his law licence and served time in county jail. In 2013 Texas passed a disclosure law that carries Michael Morton's name.\n\nThis film is about what a file can hold, and how long a state will fight to keep it shut.\n\nSome imagery is AI-assisted and symbolic, not authentic footage of real people or events, and no real-person likeness is shown.\n\nSources include the Texas court of inquiry record, the Williamson County District Attorney's own case file as released in the civil proceedings, and the Michael Morton Act (2013).\n\n#MichaelMorton #WrongfulConviction #Brady #Texas #CriminalJustice #Documentary #TrueStory",
+        "tags": ["michael morton", "michael morton act", "brady violation", "wrongful conviction",
+                 "williamson county", "texas", "prosecutorial misconduct", "dna exoneration",
+                 "mark norwood", "christine morton", "criminal justice", "court of inquiry",
+                 "documentary", "true story", "prime documentary"],
+    },
+    "willingham": {
+        "ep": "PD-2026-051-willingham",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-051-willingham/08_edit/willingham_final_bgm.v001.mp4",
+        "sched_local": "2026-08-05T12:00:00+09:00",
+        "sched_utc": "2026-08-05T03:00:00Z",
+        # DEEP_RESEARCH R-38: present-tense injustice framing; a resolved "exonerated after
+        # N years" package is banned. R-6: the thumbnail line is spoken in the first 20s.
+        "title": "Texas Executed Him for an Arson. The Fire Science Was Wrong.",
+        "description": "On 23 December 1991, a house fire in Corsicana, Texas killed Cameron Todd Willingham's three daughters. Investigators looked at the burn patterns on the floor and concluded the fire had been set deliberately. He was convicted of capital murder and executed on 17 February 2004.\n\nThe problem is what happened to the science in between. The indicators the investigators relied on -- crazed glass, pour patterns, deep charring -- had been passed down as arson lore for decades, and by the 1990s laboratory work was showing that an accidental fire reaching flashover produces the same marks. In 2004, days before the execution, a fire scientist reviewed the evidence and told the state the finding could not be sustained. The execution went ahead.\n\nIn 2009 a report commissioned by the Texas Forensic Science Commission reached the same conclusion: the original determination was not supported by modern fire science. No court has vacated the conviction, and no official finding of innocence has ever been made -- which is precisely what makes the case hard to put down.\n\nThis is a film about how a discipline can be wrong for fifty years, how a courtroom treats an expert's certainty, and what a state does when the science changes after the sentence has been carried out.\n\nNo real-person likeness is shown; some imagery is AI-assisted and symbolic, not authentic footage of real people or events.\n\nSources include the Texas Forensic Science Commission record and the published fire-science review of the Corsicana investigation.\n\n#CameronToddWillingham #DeathPenalty #ForensicScience #Arson #WrongfulConviction #Texas #Documentary #TrueStory",
+        "tags": ["cameron todd willingham", "arson", "fire science", "death penalty",
+                 "texas", "wrongful conviction", "forensic science commission", "corsicana",
+                 "flashover", "criminal justice", "documentary", "true story",
+                 "prime documentary"],
+    },
+    "norfolk": {
+        "ep": "PD-2026-053-norfolk",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-053-norfolk/08_edit/norfolk_final_bgm.v001.mp4",
+        "sched_local": "2026-08-07T12:00:00+09:00",
+        "sched_utc": "2026-08-07T03:00:00Z",
+        "title": '4 Sailors Confess to One Murder. The DNA Clears Each One. The Detective Finds Another.',
+        "description": 'On July 8, 1997, a Navy sailor came home from a week at sea and found his 18-year-old wife, Michelle Moore-Bosko, dead in their apartment near the Norfolk, Virginia naval base. There was no sign of forced entry. The wounds, a medical examiner noted, were clustered and of uniform depth — the signature of a single attacker.\n\nWithin hours, a neighbor named Danial Williams was in an interrogation room. Roughly eleven hours later, before dawn, he confessed to a murder he did not commit, after being falsely told he had failed a polygraph and warned about the death penalty. His account did not match how Michelle died, so the statement was taken again, and corrected, until it agreed with the crime scene.\n\nIn December 1997 the DNA excluded him. Police did not question the confession; they questioned who else must have been there. The theory grew a man at a time: his roommate Joseph Dick, whose Navy duty records placed him aboard his ship; Eric Wilson, questioned about nine hours; Derek Tice, arrested in Florida; and three more sailors — Richard Pauley, Geoffrey Farris and John Danser — who never confessed at all. By February 1999, all seven charged men had been excluded by DNA.\n\nThat same month, a letter left a Virginia prison cell. Omar Ballard, who was a friend of Michelle\'s and had frequently been inside her apartment, wrote that he had killed her. In March 1999 his DNA matched, and he remains the only person whose DNA was ever found at that scene. He confessed voluntarily and said, in both statements and later under oath, that he acted alone. Prosecutors did not release the sailors. They recast Ballard as an eighth attacker. Joseph Dick, excluded by DNA, pleaded guilty in April 1999 — a month and a half after the state\'s own laboratory identified the real killer.\n\nThe undoing took years. Federal courts threw out Derek Tice\'s conviction and prosecutors dropped his charges in 2011. In September 2016, U.S. District Judge John A. Gibney Jr. ruled that Danial Williams and Joseph Dick were actually innocent, writing that "by any measure, the evidence shows the defendants\' innocence." In March 2017, Governor Terry McAuliffe granted absolute pardons to all four men, including Eric Wilson, who had finished his sentence years earlier. In 2018 the Commonwealth of Virginia paid $3.5 million and the City of Norfolk paid $4.9 million more — roughly $8.4 million in all.\n\nDetective Robert Glenn Ford, who obtained the confessions, was never criminally charged over this case. In 2010 a federal jury convicted him of extortion and of lying to the FBI in unrelated matters, and in February 2011 a federal judge sentenced him to 12 and a half years.\n\nSome imagery in this film is AI-assisted, symbolic and illustrative only. It is not authentic archival footage, and no real person\'s likeness is shown.\n\nSources include: Williams v. Brown (E.D. Va., 2016); Tice v. Johnson (Fourth Circuit); the PBS Frontline documentary The Confessions and its published case timeline; Associated Press reporting on the 2018 Virginia and Norfolk settlements; U.S. Department of Justice releases on the Ford prosecution; and the National Registry of Exonerations.\n\n#NorfolkFour #FalseConfession #WrongfulConviction',
+        "tags": ['Norfolk Four', 'false confession', 'coerced confession', 'wrongful conviction', 'police interrogation', 'DNA evidence', 'actual innocence', 'Danial Williams', 'Joseph Dick', 'Derek Tice', 'Eric Wilson', 'Omar Ballard', 'Navy sailors', 'Norfolk Virginia', 'criminal justice', 'documentary'],
+    },
+    "flowers": {
+        "ep": "PD-2026-054-flowers",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-054-flowers/08_edit/flowers_final_bgm.v001.mp4",
+        "sched_local": "2026-08-08T12:00:00+09:00",
+        "sched_utc": "2026-08-08T03:00:00Z",
+        "title": '6 Trials. 4 Death Sentences. 23 Years. The Same Prosecutor Every Time.',
+        "description": 'On the morning of July 16, 1996, four people were shot in the head inside Tardy Furniture in Winona, Mississippi: Bertha Tardy, 59, the owner; Carmen Rigby, 45, who kept the books; Robert Golden, 42; and Derrick "Bobo" Stewart, 16, hired days earlier, who fought for six days before he died. No murder weapon was ever found. There was no eyewitness to the crime, no fingerprint that answered the question, and no confession.\n\nWithin days, investigators fixed on Curtis Flowers — 26 years old, a gospel singer in his family\'s group, with no criminal record of any kind. He had briefly worked at the store and been let go about two weeks before the murders over roughly thirty dollars from his paycheck. He was arrested in January 1997, and he said from the first day that he had nothing to do with it.\n\nDistrict Attorney Doug Evans tried him six times for the same four murders. Trial one, in 1997, was heard by twelve white jurors in a case pulled from a county that is nearly half Black: conviction, death sentence, reversed in 2000 for prosecutorial misconduct. Trial two, in 1999: conviction, death sentence, reversed in 2003 for misconduct again. Trial three, in 2004: conviction, death sentence, reversed in 2007 because the Mississippi Supreme Court found Evans had used his strikes to remove Black citizens from the jury because they were Black — "as strong a prima facie case of racial discrimination as we have ever seen."\n\nTrials four and five hung. When trial five ended in a mistrial in 2008, the lone Black holdout juror, James Bibbs, was handcuffed in open court and charged with perjury by Evans\' office; the state attorney general\'s office took the case away and dropped it. Trial six, in June 2010, was heard by eleven white jurors and one Black juror, and produced a fourth death sentence.\n\nThe only direct evidence in any of it was Odell Hallmon, who testified in four trials that Flowers had confessed to him in jail. In 2016 Hallmon murdered three people and pleaded guilty about two weeks later. In 2018, on a recorded prison line with APM Reports\' In the Dark, he said of the jailhouse confession: "That was a lie." The same reporters pulled jury records from courthouse storerooms across Evans\' district — more than 6,700 jurors across 225 trials — and found his office struck Black prospective jurors at nearly 4.5 times the rate it struck white ones.\n\nOn June 21, 2019, the U.S. Supreme Court reversed the sixth conviction, 7 to 2. In the six trials combined, the Court wrote, the state used its strikes against "41 of the 42 black prospective jurors that it could have struck." "The numbers speak loudly." In December 2019 Flowers left jail on bail at 49, having entered custody at 26. Evans recused himself, and on September 4, 2020, Mississippi dropped every charge, with prejudice.\n\nMississippi\'s statute pays $50,000 for each lost year, capped at ten years; in March 2021 a judge awarded Flowers the maximum, $500,000, for nearly 23 years. Doug Evans was never charged and never disciplined. In November 2022 the district that had employed him for three decades refused, 70 to 30, to make him a judge. In March 2025 an attorney-discipline official petitioned the Mississippi Supreme Court to suspend his law license; that question is still open. The murders of Bertha Tardy, Carmen Rigby, Robert Golden and Derrick Stewart remain officially unsolved.\n\nSome imagery in this film is AI-assisted, symbolic and illustrative only. It is not authentic archival footage, and no real person\'s likeness is shown.\n\nSources include: Flowers v. Mississippi (U.S. Supreme Court, 2019); the Mississippi Supreme Court\'s reversal opinions of 2000, 2003 and 2007; APM Reports\' In the Dark, Season 2, and its 225-trial jury-strike study; Mississippi Today; Associated Press and NPR reporting; and the Death Penalty Information Center.\n\n#CurtisFlowers #JurySelection #WrongfulConviction',
+        "tags": ['Curtis Flowers', 'Flowers v Mississippi', 'Doug Evans', 'Batson v Kentucky', 'jury selection', 'peremptory strikes', 'In the Dark podcast', 'wrongful conviction', 'death row', 'Winona Mississippi', 'Mississippi Supreme Court', 'Odell Hallmon', 'six trials', 'prosecutorial misconduct', 'criminal justice', 'documentary'],
+    },
+    "postoffice": {
+        "ep": "PD-2026-056-postoffice",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-056-postoffice/08_edit/postoffice_final_bgm.v002.mp4",
+        "sched_local": "2026-08-10T12:00:00+09:00",
+        "sched_utc": "2026-08-10T03:00:00Z",
+        "title": 'A Computer Invents a £2,000 Debt. Her Own Employer Prosecutes Her. 236 Go to Prison.',
+        "description": 'In 2003, in a Hampshire village shop, sub-postmistress Jo Hamilton watched her computer invent a debt in front of her. The screen said two thousand pounds was missing from her post-office till — money she had never seen. She rang the helpline and followed its instructions, and while she was on the line the missing two thousand became four. She remortgaged her house to pay it. Her employer prosecuted her anyway.\n\nThe system was Horizon, built by the British firm ICL under its Japanese owner, Fujitsu, and rolled out to every branch counter in the country from 1999. Under their contracts, sub-postmasters were personally liable for the losses their accounts showed, and the court that later examined the system found it offered them no way to dispute Horizon\'s own figures. The helpline\'s answer never changed: no one else is having this problem, you are the only one. The public inquiry heard that same sentence described by sub-postmaster after sub-postmaster.\n\nIn England and Wales any company may bring a private prosecution, and the Post Office did so on an industrial scale — investigating, charging and prosecuting its own sub-postmasters, roughly 700 of them between 1999 and 2015, about one a week for a decade and a half. Jo Hamilton pleaded guilty to false accounting after the Post Office\'s own investigators had reported, in writing, that there was no evidence of theft. Noel Thomas, a Welsh postman with 42 years of service, went to prison over a shortfall that never existed and turned sixty inside. Lee Castleton, who refused to accept a phantom debt of around twenty-five thousand pounds, was taken to the High Court, represented himself, lost, and was bankrupted by a costs bill of £321,000. On 11 November 2010 — her son\'s tenth birthday — Seema Misra was sent to prison for fifteen months. She was eight weeks pregnant.\n\nEleven weeks before Misra\'s jury returned, an internal Post Office report had already set out the price of the truth: any independent investigation of Horizon would have to be disclosed in court, and "any perception that POL doubts its own systems would mean that all criminal prosecutions would have to be stayed." In July 2013 the Post Office\'s own barrister advised that the expert evidence underpinning years of prosecutions was unreliable, and weeks later recorded that minutes of the weekly Horizon-defect calls "should be, and have been, destroyed: the word \'shredded\' was conveyed to me."\n\nAlan Bates had put £65,000 into a branch on the North Wales coast in 1998, refused to sign for losses he could not verify, and kept every receipt. Sacked in 2003, he hired a village hall in Fenny Compton in November 2009 and invited whoever else was out there. A couple of dozen strangers walked in, each of them told for years that they were the only one. In 2017, 555 sub-postmasters sued in a group action. In December 2019 Mr Justice Fraser found Legacy Horizon "not remotely robust," described the Post Office\'s stance as "the 21st century equivalent of maintaining that the earth is flat," and found that remote access to branch accounts "does exist." The 555 settled for £57.75 million; after the litigation funders and lawyers were paid, roughly £12 million was left between them — about £20,000 each.\n\nOn 23 April 2021 the Court of Appeal quashed 39 convictions, finding that "POL knew that there were serious issues about the reliability of Horizon" and that its failures were "so egregious as to make the prosecution of any of the \'Horizon cases\' an affront to the conscience of the court." Roughly nine hundred convictions still stood. After an ITV drama in January 2024 was watched by close to ten million people in a week, Parliament passed the Post Office (Horizon System) Offences Act 2024: "Every conviction to which this Act applies is quashed on the coming into force of this Act." The inquiry\'s 2025 report found roughly a thousand people were prosecuted and convicted on Horizon evidence and about ten thousand are now eligible for redress; by the BBC\'s count, 236 of them went to prison; at least thirteen deaths have been linked to the scandal, a figure the inquiry says may be higher.\n\nAs of the summer of 2026, about £1.6 billion has been paid to more than 12,900 claimants, no one has been convicted of anything for doing this, and Horizon is still on the counters of Britain\'s post offices under a Fujitsu contract extended to 2027.\n\nSome imagery in this film is AI-assisted, symbolic and illustrative only. It is not authentic archival footage, and no real person\'s likeness is shown.\n\nSources include: the Post Office Horizon IT Inquiry\'s Final Report Volume 1 by Sir Wyn Williams; Bates and Others v Post Office Ltd (No 6) [2019] EWHC 3408 (QB); Hamilton and Others v Post Office Ltd [2021] EWCA Crim 577; the Post Office (Horizon System) Offences Act 2024; Hansard; Ministry of Justice quashed-conviction management information and gov.uk redress data; the Second Sight interim report of 2013; Computer Weekly; Private Eye; and BBC News.\n\n#PostOfficeScandal #HorizonScandal #MrBatesVsThePostOffice',
+        "tags": ['Post Office scandal', 'Horizon scandal', 'Post Office Horizon', 'sub-postmasters', 'Alan Bates', 'Fujitsu Horizon', 'Bates v Post Office', 'Post Office Inquiry', 'Jo Hamilton', 'Seema Misra', 'wrongful conviction', 'private prosecution', 'miscarriage of justice', 'Mr Bates vs the Post Office', 'criminal justice', 'documentary'],
+    },
+    "burge": {
+        "ep": "PD-2026-055-burge",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-055-burge/08_edit/burge_final_bgm.v001.mp4",
+        "sched_local": "2026-08-09T12:00:00+09:00",
+        "sched_utc": "2026-08-09T03:00:00Z",
+        "title": 'A Doctor Reports Police Torture in 1982. The Letter Is Buried for 33 Years.',
+        "description": 'In February 1982, a doctor at the Cook County Jail examined a prisoner delivered by Chicago detectives and found injuries he could not explain away: burns seared in neat parallel lines across the chest and thigh, and small scabbed wounds on the ears, nose and fingers — the marks of electrical clips. He wrote to the Superintendent of the Chicago Police Department demanding "a thorough investigation." The letter was forwarded to the Cook County State\'s Attorney\'s office. No answer came, and no investigation followed.\n\nThe prisoner was Andrew Wilson, and this film is straight about him: he murdered Chicago officers William Fahey and Richard O\'Brien, and a jury said so twice. He is in this story because of what happened inside Area 2, and because the rule against torturing prisoners is not a prize for the innocent.\n\nFor roughly two decades, Commander Jon Burge and the detectives known as the Midnight Crew tortured confessions out of more than one hundred men on Chicago\'s South Side, almost every one of them Black: electric shock from a hand-cranked box, suffocation with a plastic typewriter cover, mock executions, and a hot radiator. In 1990 the police department\'s own internal investigator, Michael Goldston, reported that the abuse was "systematic," spanned more than a decade, and "included psychological techniques and planned torture." The city fought for two years to keep that report sealed until a federal judge ordered it released in 1992.\n\nJon Burge was never charged with torture. Illinois gave prosecutors three years to bring charges for offenses of that kind, and every provable case expired while the city declined to believe the men it had broken. Special prosecutors Edward Egan and Robert Boyle worked four years, spent about seven million dollars, and examined 148 claims; in July 2006 they reported that torture had occurred in roughly half of them and that three cases — Andrew Wilson\'s among them — could be proven beyond a reasonable doubt. They filed no charges, because the clock had run. Burge had already been fired in February 1993 for the physical abuse of Wilson, and he moved to Florida with a police pension of roughly three thousand dollars a month.\n\nIn January 2003, Governor George Ryan pardoned four men on the grounds of innocence — Aaron Patterson, Madison Hobley, Leroy Orange and Stanley Howard — men tortured into confessing crimes the state now said they did not commit, and the next day he commuted 167 death sentences. In November 2003, answering written questions under oath in Hobley\'s civil suit, Burge denied ever using, seeing or knowing of torture. That denial was a brand-new federal crime with a fresh clock. FBI agents arrested him in October 2008; on June 28, 2010, a jury convicted him of perjury and obstruction of justice; and in January 2011 Judge Joan Lefkow sentenced him to four and a half years. It is the only criminal sentence anyone ever served for what happened at Area 2. Days later, a tied 4-4 vote of the police pension board let him keep his pension, and he collected it until he died in September 2018 at 70.\n\nOn May 6, 2015, the Chicago City Council passed the first municipal reparations for police violence in United States history: a $5.5 million fund for 57 living survivors of Area 2 and Area 3, a formal apology on the council floor, free city-college tuition for survivors and their children and grandchildren, and a counseling center on the South Side. The ordinance also ordered the story into the schools. Since 2018, every Chicago public-school student is taught a required history unit on what happened at Area 2, in the eighth grade and again in the tenth. It is called "Reparations Won."\n\nSome imagery in this film is AI-assisted, symbolic and illustrative only. It is not authentic archival footage, no real person\'s likeness is shown, and no act of torture is depicted.\n\nSources include: United States v. Burge (Seventh Circuit); Wilson v. City of Chicago (Seventh Circuit); the 1990 Goldston report of the Chicago Police Department\'s Office of Professional Standards; the 2006 Special State\'s Attorney report of Edward Egan and Robert Boyle; U.S. Department of Justice press releases from 2008 and 2011; John Conroy\'s reporting in the Chicago Reader, including "House of Screams"; the People\'s Law Office case archive; Amnesty International USA; the Chicago Torture Justice Center; the Illinois Torture Inquiry and Relief Commission; and the Chicago Public Schools Reparations Won curriculum.\n\n#JonBurge #ChicagoPoliceTorture #Area2',
+        "tags": ['Jon Burge', 'Chicago police torture', 'Midnight Crew', 'Area 2', 'Chicago reparations', 'police accountability', 'statute of limitations', 'perjury', 'obstruction of justice', 'false confession', 'coerced confession', 'death row pardons', 'George Ryan', 'Goldston report', 'criminal justice', 'documentary'],
+    },
+    "fieldtest": {
+        "ep": "PD-2026-057-fieldtest",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-057-fieldtest/08_edit/fieldtest_final_bgm.v001.mp4",
+        "sched_local": "2026-08-11T12:00:00+09:00",
+        "sched_utc": "2026-08-11T03:00:00Z",
+        "title": 'A $2 Test Turned Blue. She Served 21 Days. Police Still Carry the Kits.',
+        "description": 'In August 2010, in a strip-mall parking lot in Houston, a police officer dropped a small white crumb from Amy Albritton\'s car floor into a vial of pink liquid. If it stayed pink, everyone could go home. It turned blue. She was not driving — she was the passenger in her own car. Nine hours later she was booked into the Harris County jail.\n\nThe kit cost about $2 and had changed little since 1973. On the evidence submission form the officer wrote ".02 grms crack cocaine." Inside two days, with a court-appointed lawyer and an offer of 45 days instead of a two-year felony maximum, she pleaded guilty. She served 21 days.\n\nOn 23 February 2011 — roughly six months later — an analyst at the Houston Police Department crime laboratory put the evidence through a gas chromatograph-mass spectrometer. The remainder weighed 0.0134 grams, about the same, she noted, as a tiny pinch of salt. It matched nothing in the laboratory\'s database. It was not a drug. The examination sheet recorded "N.C.S. No controlled substance identified." Laboratories rarely notify officers when a false positive comes back, so nothing happened. Albritton had already lost her job, and the job was her apartment.\n\nShe was not alone. Reviewing its own files, the Harris County District Attorney\'s office found 416 uncorrected "variants" between January 2004 and June 2015, every one of them ending in a guilty plea; in 251 the laboratory result was simply "No Controlled Substance." Of 301 that began as Houston Police arrests, 212 rested on evidence the laboratory determined was not a controlled substance. All 212 pleaded guilty; 93 percent were sentenced to jail or prison; 50 had no prior drug conviction. Fifty-nine percent of the wrongfully convicted were Black, in a city whose Black population is 24 percent. The office that won those convictions is the office that found them: 119 struck from the record by the summer of 2016, more than 250 overturned in Houston by 2020.\n\nThe warnings were older than the cases. The National Bureau of Standards said in 1974 that the kits "should not be used as sole evidence for the identification of a narcotic or drug of abuse." By 1978 the Department of Justice had determined they "should not be used for evidential purposes." The chemical involved, cobalt thiocyanate, turns blue for cocaine and for more than 80 other compounds, "including methadone, certain acne medications and several common household cleaners." The results are inadmissible at trial in nearly every jurisdiction — but in Harris County in this period, 99.5 percent of felony convictions arrived by plea. Charles McClelland, who commanded the Houston Police Department, put it plainly: "Police officers aren\'t chemists. We shouldn\'t be doing field tests on the hood of patrol cars."\n\nWhat followed was narrower than it sounds. Texas House Bill 34 did not require laboratory confirmation; it ordered a study. Houston stopped using the kits in July 2017, and the stated rationale was officer safety from fentanyl exposure, not accuracy. A 2024 study by the Quattrone Center for the Fair Administration of Justice found that roughly 773,000 drug arrests a year in the United States involve colour-based field tests, that roughly 30,000 a year involve people who do not possess illegal substances, and that Black Americans experience these erroneous arrests at about three times the rate of white Americans. In March 2026 Colorado enacted House Bill 26-1020, passed 65-0 and 33-0 and signed on 26 March, barring arrest for misdemeanour drug possession where a colour-change field test is the sole basis; reporting on the bill describes it as the first state law in the country to do so.\n\nAlbritton\'s conviction was later set aside. Asked whether that ended it, she said: "No. You\'re not ever free and clear of it. It follows you everywhere you go."\n\nSome imagery in this film is AI-assisted and symbolic, and no real-person likeness is shown.\n\nSources include: ProPublica and The New York Times Magazine reporting by Ryan Gabrielson and Topher Sanders; the Houston Police Department crime laboratory examination record as quoted in that reporting; the Harris County District Attorney\'s office and its conviction integrity unit; the National Bureau of Standards; the United States Department of Justice; the Timothy Cole Exoneration Review Commission; Texas House Bill 34; the Quattrone Center for the Fair Administration of Justice at the University of Pennsylvania Carey Law School; and Colorado House Bill 26-1020 and the Colorado General Assembly\'s legislative record.\n\n#FieldDrugTest #WrongfulConviction #CriminalJustice #ForensicScience #PleaBargain #PrimeDocumentary',
+        "tags": ['field drug test', 'roadside drug test', 'false positive drug test', 'Amy Albritton', 'Harris County', 'Houston police', 'wrongful conviction', 'plea bargain', 'cobalt thiocyanate', 'criminal justice system', 'forensic science', 'drug possession charge', 'presumptive drug test', 'Colorado HB 26-1020', 'Prime Documentary', 'documentary'],
+    },
+    "centralpark": {
+        "ep": "PD-2026-050-centralpark",
+        # v009, NOT v009_ae: the AE hero-card composite put 36 full-frame title cards of 5-7s
+        # into the film (measured 132.9s frozen) and one of them, B8 at 132.5s, is 6.0s of pure
+        # black. The same measurement on v009 returns zero of both.
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-050-centralpark/08_edit/centralpark_final_bgm.v009.mp4",
+        "sched_local": "2026-08-04T12:00:00+09:00",
+        "sched_utc": "2026-08-04T03:00:00Z",
+        # DEEP_RESEARCH R-38: present-tense injustice framing; "exonerated after N years"
+        # resolved-form packaging is banned. R-6: the thumb line ("5 CONFESSIONS / NO EVIDENCE")
+        # is spoken inside the first 20 seconds of the film.
+        "title": "Five Children Confessed to a Crime They Didn't Commit. There Was No Evidence.",
+        "description": (
+            "Five boys, aged 14 to 16, sat in New York police stations in April 1989 and, after "
+            "hours no camera recorded, said they had attacked a woman in Central Park. Not one "
+            "of them had touched her.\n\n"
+            "This is the full story of Kevin Richardson, Raymond Santana, Antron McCray, Yusef "
+            "Salaam and Korey Wise — how a frightened city, a case with no physical evidence, "
+            "and an interrogation technique built to produce agreement turned five children into "
+            "a headline. Their videotaped statements contradicted each other and the crime scene. "
+            "The DNA recovered from the victim matched none of them. They were convicted anyway.\n\n"
+            "Four of them served roughly six to seven years. Korey Wise, the oldest at sixteen and "
+            "the only one tried as an adult, served about thirteen — in adult prisons, because a "
+            "friend asked him to come along to the precinct. In 2002 a man named Matias Reyes, "
+            "already serving a life sentence, said he had committed the attack alone; the DNA "
+            "matched him. The convictions were vacated that year. The City of New York settled "
+            "with the five for about forty-one million dollars in 2014, and the State of New York "
+            "for roughly three point nine million more, with no admission of wrongdoing.\n\n"
+            "This film is about the machinery, not the monsters: what a police station is to a "
+            "fourteen-year-old at three in the morning, why the oldest lie in interrogation — "
+            "'you can go home as soon as you tell us what happened' — has put more innocent "
+            "people in prison than any weapon, and why the tape started rolling only at the end.\n\n"
+            "Nothing here is graphic and no real-person likeness is shown. Some imagery is "
+            "AI-assisted and symbolic, not authentic footage of real people or events.\n\n"
+            "Sources include the New York County District Attorney's 2002 Affirmation in Response "
+            "to Motion to Vacate Judgment, the court record of the vacated convictions, and "
+            "contemporaneous reporting on the 2014 city settlement.\n\n"
+            "#CentralParkFive #ExoneratedFive #FalseConfession #WrongfulConviction #KoreyWise "
+            "#CriminalJustice #Documentary #TrueStory"
+        ),
+        "tags": ["central park five", "exonerated five", "korey wise", "yusef salaam",
+                 "raymond santana", "antron mccray", "kevin richardson", "false confession",
+                 "wrongful conviction", "interrogation", "reid technique", "matias reyes",
+                 "dna exoneration", "1989 new york", "criminal justice", "documentary",
+                 "true story", "prime documentary"],
+    },
     "cotton": {
         "ep": "PD-2026-030-cotton",
         "video": r"H:/pd-media/episodes/PD-2026-030-cotton/08_edit/renders/final.premium.v004.mp4",
@@ -373,6 +491,14 @@ def _query_position(url, token, size):
             rng = e.headers.get("Range")
             return ("inc", (int(rng.split("-")[1]) + 1) if rng else 0)
         raise
+
+
+def _fresh_token():
+    """A 2GB upload outlives a Google access token, so one token fetched at the start expires
+    mid-run: EP52 and EP53 both uploaded completely and then died 401 on the very next call,
+    leaving a scheduled video with an auto-generated thumbnail and, once, a duplicate upload.
+    Every phase now takes a new token."""
+    return _access_token(load_env())
 
 
 def resilient_upload(url, token, path, chunk=8 * 1024 * 1024, max_fail=12):
@@ -460,10 +586,52 @@ def main(argv):
     # use the LATEST selected thumbnail + final_delivery revision (v003 thumb / v004+ delivery)
     _thumbs = sorted(PKG.glob("thumbnail.selected.v*.png"))
     THUMB = _thumbs[-1] if _thumbs else PKG / "thumbnail.selected.v001.png"
-    CAPS = EPDIR / "08_edit" / "captions.final.v001.srt"
+    # The burned-in captions are drawn from film.json (film time), but captions.final.v001.srt
+    # is BODY time -- on an episode whose VO starts after a hook + title card, the sidecar YouTube
+    # track runs that many seconds early for every CC viewer. When a film-time sidecar exists
+    # (captions.youtube.v*.srt), it is the one that gets uploaded.
+    _yt_caps = sorted((EPDIR / "08_edit").glob("captions.youtube.v*.srt"))
+    CAPS = _yt_caps[-1] if _yt_caps else EPDIR / "08_edit" / "captions.final.v001.srt"
     _dels = sorted(PKG.glob("final_delivery.v*.json"))
     DELIVERY = _dels[-1] if _dels else PKG / "final_delivery.v001.json"
     RESULT = PKG / "youtube_schedule_result.v001.json"
+
+    # A 401 in the middle of the run used to leave the file uploaded but unfinished, and a
+    # re-run then uploaded a SECOND copy (EP53 shipped twice on 2026-08-01). Refuse to start
+    # when the channel already carries a private video with this exact title.
+    #
+    # This block was written against a helper that does not exist (`_http_get_json`) and an
+    # index expression using bare names (`_it[id][videoId]`), and the broad `except` turned
+    # both into a printed note -- so from the day it was added the guard never ran once.
+    # It now uses urllib directly, and a pre-check that CANNOT be completed stops the upload
+    # instead of waving it through: not knowing whether a duplicate exists is not the same as
+    # knowing there is none.
+    def _search_mine(tok: str) -> dict:
+        _req = urllib.request.Request(
+            "https://www.googleapis.com/youtube/v3/search?part=snippet&forMine=true"
+            "&type=video&maxResults=50&order=date",
+            headers={"Authorization": f"Bearer {tok}"})
+        with urllib.request.urlopen(_req, timeout=60) as _r:
+            return json.loads(_r.read().decode("utf-8"))
+
+    _mine, _last = None, None
+    for _attempt in range(3):
+        try:
+            _mine = _search_mine(_fresh_token())
+            break
+        except Exception as _e:
+            _last = _e
+            time.sleep(3 * (_attempt + 1))
+    if _mine is None:
+        raise SystemExit(
+            f"duplicate pre-check could not run ({str(_last)[:120]}). Refusing to upload -- "
+            f"re-run when the API is reachable, or check the channel by hand first.")
+    for _it in _mine.get("items", []):
+        if _it["snippet"]["title"].strip() == cfg["title"].strip():
+            raise SystemExit(
+                f"REFUSING duplicate: {_it['id']['videoId']} already carries this exact title. "
+                f"Finish it with scripts/finalize_uploaded_video.py instead of uploading again.")
+    print(f"OK duplicate pre-check: no existing video titled {cfg['title'][:48]!r}")
 
     if RESULT.exists():
         raise RuntimeError(f"Refusing duplicate: {RESULT} exists")
@@ -533,12 +701,14 @@ def main(argv):
     if not vid:
         raise RuntimeError("no video_id")
     print(f"OK uploaded private video_id={vid}")
+    token = _fresh_token()   # the upload just spent up to two hours; the old token is dead
     set_thumbnail(token, vid, THUMB); print("OK thumbnail set")
     cap_err = None
     try:
         upload_caption(token, vid, CAPS, slug); print("OK captions uploaded")
     except Exception as e:
         cap_err = str(e); print(f"WARN captions upload failed (burned-in remain): {cap_err}")
+    token = _fresh_token()
     st = get_state(token, vid); status = ((st.get("items") or [{}])[0].get("status") or {})
     if status.get("privacyStatus") != "private" or status.get("publishAt") != cfg["sched_utc"]:
         raise RuntimeError(f"verify failed privacy={status.get('privacyStatus')} publishAt={status.get('publishAt')}")

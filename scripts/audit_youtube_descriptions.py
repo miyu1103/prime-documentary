@@ -50,30 +50,22 @@ def request_json(url: str, token: str, data: bytes | None = None, method: str = 
 
 
 def channel_uploads_playlist(token: str) -> str:
-    data = request_json("https://www.googleapis.com/youtube/v3/channels?part=contentDetails&mine=true", token)
-    items = data.get("items") or []
-    if not items:
-        raise RuntimeError("No YouTube channel found for this token")
-    return items[0]["contentDetails"]["relatedPlaylists"]["uploads"]
+    """Kept only so existing callers keep their signature; the id it returns is no longer used
+    for enumeration. See list_upload_ids."""
+    return ""
 
 
 def list_upload_ids(token: str, playlist_id: str, limit: int | None) -> list[str]:
-    ids: list[str] = []
-    page = ""
-    while True:
-        params = {"part": "contentDetails", "playlistId": playlist_id, "maxResults": "50"}
-        if page:
-            params["pageToken"] = page
-        data = request_json("https://www.googleapis.com/youtube/v3/playlistItems?" + urllib.parse.urlencode(params), token)
-        for item in data.get("items") or []:
-            video_id = item.get("contentDetails", {}).get("videoId")
-            if video_id:
-                ids.append(video_id)
-                if limit and len(ids) >= limit:
-                    return ids
-        page = data.get("nextPageToken") or ""
-        if not page:
-            return ids
+    """Every video id on the channel, from the shared unioned index.
+
+    This used to walk the uploads playlist. On 2026-08-03 that playlist returned 115 rows holding
+    106 unique ids: nine videos were absent, so a description audit would have reported those nine
+    as having no problems simply by never looking at them.
+    """
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from yt_channel_index import list_video_ids
+    ids = list_video_ids({"Authorization": f"Bearer {token}"})
+    return ids[:limit] if limit else ids
 
 
 def get_videos(token: str, ids: list[str]) -> list[dict]:

@@ -18,13 +18,14 @@ import {Grain} from '../components/Grain';
 import {LightSweep, Particles, Vignette} from '../components/Motion';
 import {FLASHCRASH_CAPTIONS} from '../data/flashcrash_captions';
 import {FLASHCRASH_FACTORY_ASSETS} from '../data/flashcrash_factory_assets';
+import {FLASHCRASH_TIMELINE} from '../data/flashcrash_timeline';
 
 const FPS = BRAND.video.fps;
-const TOTAL_SEC = 28 * 60;
-const HOOK_SEC = 29;
-const OPENING_AT = HOOK_SEC;
-const MAIN_START = HOOK_SEC + OPENING_SEC;
-const MAIN_END = TOTAL_SEC - ENDCARD_SEC;
+const TOTAL_SEC = FLASHCRASH_TIMELINE.totalSec;
+const HOOK_SEC = FLASHCRASH_TIMELINE.hookSec;
+const OPENING_AT = FLASHCRASH_TIMELINE.openingAt;
+const MAIN_START = FLASHCRASH_TIMELINE.mainStart;
+const MAIN_END = FLASHCRASH_TIMELINE.mainEnd;
 const MIX_SRC = 'flashcrash/audio/flashcrash_mix_v001.wav';
 
 const INK = BRAND.color.ink;
@@ -61,34 +62,7 @@ type Scene = {
   act: string;
 };
 
-const SCENE_STARTS = [
-  MAIN_START,
-  61.411,
-  91.605,
-  167.664,
-  232.124,
-  331.159,
-  373.653,
-  438.58,
-  515.393,
-  590.442,
-  641.621,
-  712.401,
-  768.687,
-  827.806,
-  879.913,
-  959.19,
-  986.846,
-  1021.467,
-  1062.451,
-  1098.976,
-  1191.317,
-  1318.332,
-  1415.882,
-  1488.655,
-  1575.558,
-  1646.659,
-];
+const SCENE_STARTS = [...FLASHCRASH_TIMELINE.sceneStarts];
 
 const scenes: Scene[] = [
   {id: 'S01', kind: 'marketRoom', kicker: 'HOOK PAYOFF', act: 'opening', title: '2:32 PM', subtitle: 'The market begins to fall.', citation: 'CFTC-SEC report, May 6 2010'},
@@ -279,30 +253,63 @@ const CaptionBand: React.FC = () => {
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = frame / fps;
-  const cue = FLASHCRASH_CAPTIONS.find((c) => t >= c.start && t < c.end);
+  const cueIndex = FLASHCRASH_CAPTIONS.findIndex((c) => t >= c.start && t < c.end);
+  const cue = cueIndex >= 0 ? FLASHCRASH_CAPTIONS[cueIndex] : null;
   if (!cue) return null;
+  const lines = cue.text.split('\n');
+  const longest = Math.max(...lines.map((line) => line.length));
+  const duration = cue.end - cue.start;
+  const prevCue = cueIndex > 0 ? FLASHCRASH_CAPTIONS[cueIndex - 1] : null;
+  const nextCue = cueIndex + 1 < FLASHCRASH_CAPTIONS.length ? FLASHCRASH_CAPTIONS[cueIndex + 1] : null;
+  const pause = prevCue ? cue.start - prevCue.end : 0;
+  const forwardPause = nextCue ? nextCue.start - cue.end : 0;
+  const hasBreathPause = pause > 0.42 || forwardPause > 0.42;
+  const fontSize = lines.length > 1 ? 38 : longest > 54 ? 40 : 44;
+  const fadeIn = Math.max(0, Math.min(1, (t - cue.start) / 0.16));
+  const fadeOut = Math.max(0, Math.min(1, (cue.end - t) / (duration >= 1.5 ? 0.16 : Math.max(0.12, duration * 0.14))));
+  const visible = fadeIn * fadeOut;
+  const drift = interpolate(frame, [0, fps * 0.5], [4, 0], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'});
+  const breathing = 1 + Math.sin(((t - cue.start) / Math.max(0.25, duration)) * Math.PI) * (hasBreathPause ? 0.018 : 0.008);
   return (
     <div
       style={{
         position: 'absolute',
-        left: 160,
-        right: 160,
-        bottom: 34,
-        minHeight: 102,
-        padding: '16px 32px 18px',
-        background: '#000000D8',
-        borderTop: `3px solid ${GOLD}`,
-        color: WHITE,
-        fontFamily: BRAND.font.body,
-        fontWeight: 900,
-        fontSize: cue.text.length > 60 ? 38 : 46,
-        lineHeight: 1.12,
-        textAlign: 'center',
-        textShadow: '0 3px 14px #000',
-        whiteSpace: 'pre-line',
+        right: 120,
+        left: 120,
+        bottom: 42,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'flex-end',
+        margin: '0 auto',
+        pointerEvents: 'none',
+        opacity: Math.max(0, visible),
       }}
     >
-      {cue.text}
+      <span
+        style={{
+          display: 'inline-block',
+          maxWidth: lines.length > 1 ? 1080 : 1220,
+          padding: lines.length > 1 ? '13px 26px 15px' : '12px 24px 14px',
+          transform: `translateY(${drift}px) scale(${breathing})`,
+          background: hasBreathPause ? 'rgba(2, 10, 18, 0.74)' : 'rgba(2, 6, 13, 0.70)',
+          borderRadius: 10,
+          boxShadow: '0 14px 34px rgba(0,0,0,0.62)',
+          border: `1px solid ${hasBreathPause ? `${GOLD}80` : 'rgba(255,255,255,0.22)'}`,
+          color: WHITE,
+          fontFamily: BRAND.font.body,
+          fontWeight: 900,
+          fontSize,
+          lineHeight: 1.08,
+          letterSpacing: 0,
+          textAlign: 'center',
+          textShadow: '0 3px 12px rgba(0,0,0,0.98), 0 1px 4px #000',
+          WebkitTextStroke: '0.75px rgba(0,0,0,0.95)',
+          whiteSpace: 'pre-line',
+          transformOrigin: 'center',
+        }}
+      >
+        {cue.text}
+      </span>
     </div>
   );
 };

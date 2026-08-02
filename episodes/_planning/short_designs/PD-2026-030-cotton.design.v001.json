@@ -1,0 +1,675 @@
+{
+  "episode_id": "PD-2026-030-cotton",
+  "slug": "cotton",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "5L_HCGJxX_U",
+    "title": "She memorized her attacker's face to be certain",
+    "url": "https://www.youtube.com/watch?v=5L_HCGJxX_U",
+    "privacy": "public",
+    "views": 24
+  },
+  "shorts_existing": [
+    "short30"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short30": [
+      "In a courtroom she looked at the man who attacked her and swore she was certain.",
+      "She was completely wrong.",
+      "In 1984, in Burlington, North Carolina, a college student named Jennifer Thompson was attacked at knifepoint.",
+      "She forced herself to memorize her attacker's face.",
+      "Police showed her a photo lineup, then a live lineup, and both times she chose a man named Ronald Cotton.",
+      "But Cotton was the only person who appeared in both lineups.",
+      "By the live lineup, she may have been recognizing the police photo, not her attacker.",
+      "Detectives told her she'd done great — and that quiet reassurance hardened a careful guess into total certainty.",
+      "In 1985, it sent Cotton to prison.",
+      "He served more than a decade.",
+      "Then in 1995, DNA testing excluded Ronald Cotton and matched the real attacker — a lookalike inmate named Bobby Poole, who later pleaded guilty.",
+      "Cotton walked free.",
+      "Here is the part no one expects: he and Jennifer became close friends and advocates who helped reform how police run a lineup.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\_planning\\EP30_cotton_script.en.v001.md",
+  "candidate_payload_lines": [
+    "She had never been more certain of anything in her life.",
+    "In the summer of 1984, in Burlington, North Carolina, a twenty-two-year-old college student named Jennifer Thompson was attacked in her own apartment at knifepoint.",
+    "In the middle of the worst night of her life, she made a decision that most people never could.",
+    "None of this was a trick played on a foolish woman.",
+    "In 1985, it was enough to convict Ronald Cotton and to send him to prison for the rest of his life.",
+    "But inside the prison, something happened that stories like this almost never give you.",
+    "It would take a science that, in 1984, had barely been born.",
+    "The physical evidence from the case had been preserved, and in 1995 it was finally sent for testing to a lab in Burlington called **LabCorp**.",
+    "On June 30th, 1995, after more than a decade behind bars for a crime he did not commit, Ronald Cotton walked out of prison.",
+    "And in 1997, in a small church office, Jennifer Thompson finally sat down across from the man she had sent to prison.",
+    "She told him that even if she spent every remaining day of her life apologizing, it would never be enough.",
+    "The problem was never that Jennifer Thompson wasn't certain enough.",
+    "Jennifer Thompson has spent years now saying it out loud, so that no one can miss it: memory can be honest, and confident, and still be completely wrong."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short106",
+      "angle": "In 1997 she sat down across from the man she had sent to prison.",
+      "type": "C — the meeting",
+      "avoids": "short30 runs from the attack to the DNA exoneration. It stops there and never reaches 1997.",
+      "funnel_question_left_for_longform": "What did he say back to her?",
+      "era": "1997 North Carolina",
+      "loop": true,
+      "loop_join": "L5 poses the room without placing it, and L1 answers on the restart with the year, the church office and the two people in it.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "In 1997, in a small church office, Jennifer Thompson finally sat down across from the man she had sent to prison.",
+          "source_lines": [
+            "And in 1997, in a small church office, Jennifer Thompson finally sat down across from the man she had sent to prison."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "She had identified Ronald Cotton twice, and she had never been more certain of anything in her life.",
+          "source_lines": [
+            "She had never been more certain of anything in her life."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "DNA cleared him in 1995. On the thirtieth of June that year he walked out, after more than a decade for a crime he did not commit.",
+          "source_lines": [
+            "On June 30th, 1995, after more than a decade behind bars for a crime he did not commit, Ronald Cotton walked out of prison."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "She told him that even if she spent every remaining day of her life apologising, it would never be enough.",
+          "source_lines": [
+            "She told him that even if she spent every remaining day of her life apologizing, it would never be enough."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "There is a room, somewhere, where the person who was wrong and the person who paid for it finally sit down together.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W11",
+          "subject": "two plain chairs turned to face each other in a small church office",
+          "source": "GENERATE",
+          "prompt": "two plain wooden chairs turned to face each other across a bare wooden floor in a small church office, nobody in them, a plain unglazed window above, lit ONLY by one window shaft which is switched on across the boards, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "two empty chairs room"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U11",
+          "subject": "a church office window at first light over an empty desk",
+          "source": "GENERATE",
+          "prompt": "a small church office window at first light with an empty desk beneath it in silhouette, dust hanging in the air, lit ONLY by the pale dawn beyond the glass which is switched on with the day, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "office window dawn desk"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "a heavy door swinging shut on a narrowing blade of light",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "door closing dark",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1745__front_door_house.mp4",
+          "bound_title": "woman locking a door",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3903,
+          "motion": 9.045,
+          "luma": 181.2
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W10",
+          "subject": "a prison gate standing open onto flat daylight",
+          "source": "GENERATE",
+          "prompt": "a heavy prison gate standing open onto flat daylight, seen from inside the dark sally port, lit ONLY by that daylight which is switched on beyond, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "prison gate opening daylight"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "W08",
+          "subject": "an empty lineup room, bare wall, height strip worn blank",
+          "source": "GENERATE",
+          "prompt": "an empty police lineup room with a bare marked wall and a height strip worn completely blank of numerals, nobody standing on the platform, lit ONLY by one harsh fixture which is switched on above, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty lineup room wall"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "W08",
+          "subject": "six blank white cards laid out in two rows on a dark desk",
+          "source": "GENERATE",
+          "prompt": "six blank white card rectangles laid out in two rows on a dark desk, every card completely featureless with no images or lettering on them at all, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "cards laid on desk"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "W08",
+          "subject": "a one-way window from the dark side, the bright room beyond empty",
+          "source": "GENERATE",
+          "prompt": "a one-way viewing window seen from the dark observation side, the bright room beyond it completely empty, the glass reflecting nothing but blackness, lit ONLY by the fixture switched on in that far room, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "one way mirror room"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U05",
+          "subject": "a wall clock with a blank featureless face",
+          "source": "GENERATE",
+          "prompt": "a wall clock with a blank featureless face, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U10",
+          "subject": "two hands laid flat on a scarred wooden table",
+          "source": "GENERATE",
+          "prompt": "macro of two hands laid flat on a scarred wooden table, no face or body above the wrists, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hands on table macro"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "U06",
+          "subject": "a single empty wooden chair in a cone of light",
+          "source": "GENERATE",
+          "prompt": "a single empty wooden chair standing in a cone of light in a large dark empty room, dust motes drifting, lit ONLY by the fixture switched on above it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty chair spotlight"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "R06",
+          "subject": "rows of empty courtroom gallery benches",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courtroom interior benches",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-34060__snowy_street_night.mp4",
+          "bound_title": "park ground and benches covered in snow",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4652,
+          "motion": 10.345,
+          "luma": 61.0
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "W05",
+          "subject": "a lab bench with a heavy analyser, all displays dark",
+          "source": "GENERATE",
+          "prompt": "a forensic laboratory bench with a heavy analytical instrument and a centrifuge beside it, all displays dark and unreadable, lit ONLY by one task lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "forensic laboratory bench"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "W01",
+          "subject": "thick iron bars with a dark empty cell beyond",
+          "source": "GENERATE",
+          "prompt": "thick iron bars with a dark empty cell beyond, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "W06",
+          "subject": "a rack of sealed glass sample vials in a steel tray",
+          "source": "GENERATE",
+          "prompt": "macro of a rack of sealed glass sample vials standing in a steel tray, caps intact and every label worn completely blank, lit ONLY by one task lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "sample vials rack macro"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "W04",
+          "subject": "a cell block corridor of iron doors",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "prison corridor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6838__jail_cell_bars.mp4",
+          "bound_title": "a prison guard arguing with two convicts",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4516,
+          "motion": 17.066,
+          "luma": 50.6
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "U03",
+          "subject": "a hand pressing a pen to a blank release sheet",
+          "source": "GENERATE",
+          "prompt": "a hand pressing a pen to a blank release sheet, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "W09",
+          "subject": "calendar pages caught mid-turn, every date blank",
+          "source": "GENERATE",
+          "prompt": "a stack of wall calendar pages caught mid-turn in a draught, all dates worn completely blank and unreadable, lit ONLY by one angled desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "calendar pages turning"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U16",
+          "subject": "a shaft of light crossing the small office, thick with dust",
+          "source": "GENERATE",
+          "prompt": "a shaft of light crossing a small bare office thick with slowly drifting dust, nothing else in frame, lit ONLY by that shaft which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "light shaft dust room"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W11",
+          "subject": "a pew end and an empty hymn rack in one window shaft",
+          "source": "GENERATE",
+          "prompt": "the carved end of a plain wooden pew with an empty hymn rack on its back holding nothing at all, the nave beyond in shadow, lit ONLY by one window shaft which is switched on across it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "church pew wooden interior"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U13",
+          "subject": "a silhouette walking away into hard daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "silhouette walking away corridor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2665__lone_person_silhouette_walking.mp4",
+          "bound_title": "man walking on ground road",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.409,
+          "motion": 2.938,
+          "luma": 108.6
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W11",
+          "subject": "two cups left untouched on a low table between the chairs",
+          "source": "GENERATE",
+          "prompt": "two plain cups left untouched on a low table between two empty facing chairs in a small dim room, the surface of the liquid still, lit ONLY by one window shaft which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "two cups table still"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "one blank sheet folded once, lying on an empty chair seat",
+          "source": "GENERATE",
+          "prompt": "one completely blank sheet of paper folded once and left lying on the seat of an empty wooden chair, lit ONLY by a hard shaft of window light which is switched on and falls across it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1997 North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "paper on chair light"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the hook plate — identical framing to plate 01",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ]
+    },
+    {
+      "short_id": "short107",
+      "angle": "The problem was never that she was not certain enough.",
+      "type": "A — the thing that could happen to your memory",
+      "avoids": "short30 explains the lineup mechanics. It never states the conclusion she now repeats in public, which is the transferable lesson.",
+      "funnel_question_left_for_longform": "If certainty is not the test, what is?",
+      "era": "1984-present, North Carolina",
+      "loop": true,
+      "loop_join": "L5 asks the question and points at its cause, and L1 names that cause straight away: she memorised the face so she could be sure.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "She forced herself to memorise his face during the attack, so she could be sure. It is the reason she was wrong.",
+          "source_lines": [
+            "In the middle of the worst night of her life, she made a decision that most people never could."
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "None of this was a trick played on a foolish woman. She did everything a witness is supposed to do.",
+          "source_lines": [
+            "None of this was a trick played on a foolish woman."
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "The problem was never that Jennifer Thompson was not certain enough.",
+          "source_lines": [
+            "The problem was never that Jennifer Thompson wasn't certain enough."
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "She has spent years now saying it out loud so nobody can miss it. Memory can be honest, and confident, and still be wrong.",
+          "source_lines": [
+            "Jennifer Thompson has spent years now saying it out loud, so that no one can miss it: memory can be honest, and confident, and s"
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "So ask how an honest witness ends up wrong. The answer starts with the one thing she did to make sure she never would.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U01",
+          "subject": "a bare bedside lamp burning into camera in a dark empty room",
+          "source": "GENERATE",
+          "prompt": "low angle on a bare bedside lamp burning straight into camera in a dark empty room, the bulb blooming through a plain shade, everything beyond swallowed in black, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "bedside lamp dark room"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W08",
+          "subject": "a height strip on a bare wall, every mark worn blank",
+          "source": "GENERATE",
+          "prompt": "macro of a painted height strip on a bare marked wall with every graduation and numeral worn completely blank, scuffs and old tape marks around it, lit ONLY by one harsh fixture which is switched on above, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "height chart wall marks"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "a heavy door swinging shut on a narrowing blade of light",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "door closing dark",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1750__front_door_house.mp4",
+          "bound_title": "girl picking up mail at the door",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4138,
+          "motion": 17.878,
+          "luma": 106.5
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U10",
+          "subject": "a hand pressed flat against a dark window pane from inside",
+          "source": "GENERATE",
+          "prompt": "macro of one hand pressed flat against a dark window pane from inside, fingers spread on the cold glass, no face or body visible behind it, lit ONLY by one streetlight which is switched on beyond the glass, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hand on window glass"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "W08",
+          "subject": "one blank white card lying alone on a dark desk",
+          "source": "GENERATE",
+          "prompt": "a single blank white card lying alone at the centre of a dark desk, completely featureless with no image or lettering on it, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "card on desk macro"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "W08",
+          "subject": "a bare lineup platform seen from the dark viewing side",
+          "source": "GENERATE",
+          "prompt": "a bare police lineup platform with worn painted floor markings seen from the dark viewing side, nobody standing on it, lit ONLY by one harsh fixture which is switched on above the platform, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty lineup room wall"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U10",
+          "subject": "two hands laid flat on a scarred detective's desk",
+          "source": "GENERATE",
+          "prompt": "macro of two hands laid flat on a scarred wooden detective's desk beside a dead telephone, no face or body above the wrists, lit ONLY by one hard desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "hands on table macro"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a hand pressing a pen to a blank statement form",
+          "source": "GENERATE",
+          "prompt": "a hand pressing a pen to a blank statement form, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U05",
+          "subject": "a wall clock with a blank featureless face",
+          "source": "GENERATE",
+          "prompt": "a wall clock with a blank featureless face, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "I03",
+          "subject": "a desk lamp burning over a blank witness statement form",
+          "source": "GENERATE",
+          "prompt": "a desk lamp bent low over a single completely blank witness statement form on a grey metal desk, a pen laid across it, lit ONLY by that desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "desk lamp document night"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "R06",
+          "subject": "rows of empty courtroom gallery benches",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "courtroom interior benches",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51256__open_door_bright_light.mp4",
+          "bound_title": "bright and modern home interior design",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5177,
+          "motion": 3.226,
+          "luma": 131.8
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "U06",
+          "subject": "an empty witness chair in a cone of light beside a tall bench",
+          "source": "GENERATE",
+          "prompt": "a single empty wooden witness chair standing in a cone of light beside a tall panelled bench in a dark courtroom, lit ONLY by the fixture switched on above it, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty chair spotlight"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "U10",
+          "subject": "one hand raised palm-forward in the dark",
+          "source": "GENERATE",
+          "prompt": "macro of one hand raised palm-forward in the dark as if taking an oath, no face or body visible, lit ONLY by one hard side light which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "raised hand oath macro"
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "Y04",
+          "subject": "a photograph-sized rectangle of white light on a dark wall",
+          "source": "GENERATE",
+          "prompt": "a photograph-sized rectangle of pure white light burning on a dark wall with absolutely nothing in it, the wall around it in deep shadow, lit ONLY by that rectangle which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "white rectangle dark wall"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "W05",
+          "subject": "a darkroom print tray, the paper in it completely blank",
+          "source": "GENERATE",
+          "prompt": "a darkroom developing tray under a single red safelight with one sheet of photographic paper floating in it, the paper still completely blank with no image at all, lit ONLY by that safelight which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "darkroom developing tray"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "W01",
+          "subject": "thick iron bars with a dark empty cell beyond",
+          "source": "GENERATE",
+          "prompt": "thick iron bars with a dark empty cell beyond, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "converted_from_footage": true
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "M07",
+          "subject": "a plain lectern on a dark stage under one follow-spot",
+          "source": "GENERATE",
+          "prompt": "a plain lectern with a single microphone on a dark stage under one follow-spot, nobody at it, the hall beyond in blackness, lit ONLY by that follow-spot which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty stage lectern spotlight"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "I07",
+          "subject": "an empty tiered lecture hall, every seat vacant",
+          "source": "GENERATE",
+          "prompt": "an empty tiered lecture hall seen from the podium with every seat vacant and every desk bare, lit ONLY by one bank of overhead lights which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty lecture hall seats"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W04",
+          "subject": "a cell block corridor of iron doors",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "prison corridor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6841__jail_cell_bars.mp4",
+          "bound_title": "close up view of a man having deep thoughts inside a prison cell",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4223,
+          "motion": 21.467,
+          "luma": 70.2
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W09",
+          "subject": "calendar pages caught mid-turn, every date blank",
+          "source": "GENERATE",
+          "prompt": "a stack of wall calendar pages caught mid-turn, all dates worn completely blank and unreadable, lit ONLY by one angled desk lamp which is switched on, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "calendar pages turning"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "W10",
+          "subject": "a prison gate standing open onto flat daylight",
+          "source": "GENERATE",
+          "prompt": "a heavy prison gate standing open onto flat daylight, seen from inside the dark sally port, lit ONLY by that daylight which is switched on beyond, the subject held in the middle third of the tall frame with quiet empty darkness across the top quarter and across the lower caption band, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1984-present, North Carolina, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "prison gate opening daylight"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U13",
+          "subject": "a silhouette walking away into hard daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "silhouette walking away corridor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3641__concrete_wall_texture_dark.mp4",
+          "bound_title": "shadow play creates rabbit silhouette on wall",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4501,
+          "motion": 1.297,
+          "luma": 48.9
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to the hook plate — identical framing to plate 01",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": null
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

@@ -1,0 +1,1161 @@
+{
+  "episode_id": "PD-2026-005-madoff",
+  "slug": "madoff",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "sphERPA4gAc",
+    "title": "He warned regulators about Madoff for nearly ten years",
+    "url": "https://www.youtube.com/watch?v=sphERPA4gAc",
+    "privacy": "public",
+    "views": 57
+  },
+  "shorts_existing": [
+    "short05"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short05": [
+      "For decades, he paid steady profits.",
+      "In reality, he was barely investing the money at all.",
+      "His was one of the most trusted names on Wall Street, with smooth, steady returns year after year.",
+      "But investigators found there were almost no real trades.",
+      "The profits were just new investors' money handed to old ones.",
+      "It collapsed in 2008, and he was sentenced to a hundred and fifty years.",
+      "Returns that look too smooth can be the warning sign.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-005-madoff\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "And for nearly ten years, nobody listened to him.",
+    "And in return, he gave them a number that almost never went down.",
+    "Here's what almost nobody understood until it was too late: that steadiness wasn't a sign that the money was safe.",
+    "If Madoff almost never lost money, in markets that destroyed everyone else… *how?* The answer is that he wasn't really investing the money at all.",
+    "Trade confirmations for trades that never happened.",
+    "It went up in good times and up in bad times, with almost none of the dips that real markets force on real investors.",
+    "Like a player who never, ever loses — not because they're great, but because the game is rigged.",
+    "The man who'd solved it sat outside, watching the largest fraud in history continue in plain sight, because the people with the power to stop it never did the math.",
+    "Its finding was not that the agency was corrupt — there's no evidence anyone was paid off.",
+    "The finding was, in some ways, worse: they had received credible, specific warnings, for years, and simply never ran them down properly.",
+    "In December 2008, Madoff told his sons the truth — that the business was, in his own words, one big lie.",
+    "A few months later, in March 2009, Madoff stood in a federal courtroom in New York and pleaded guilty — not to one charge, but to eleven felonies."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short94",
+      "angle": "One man handed regulators the arithmetic. For nearly ten years, nobody ran it down.",
+      "type": "B — the warning that was ignored",
+      "avoids": "short05 explains the scheme and the sentence. The whistleblower and the regulator's own post-mortem are absent from it. This is also exactly what the destination long-form is about.",
+      "funnel_question_left_for_longform": "He was right for a decade and it changed nothing. Why did nobody act?",
+      "era": "1999-2009 New York / Boston",
+      "loop": true,
+      "loop_join": "L5 names the failure without naming who caused it, and L1 hands back the man who supplied those warnings and was ignored for nearly ten years.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "A financial analyst worked out that the numbers could not be real. He told the regulators. For nearly ten years, nobody listened to him.",
+          "delivery": "intense",
+          "source_lines": [
+            "And for nearly ten years, nobody listened to him."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "The fund went up in good times and up in bad times, with almost none of the dips that real markets force on real investors.",
+          "delivery": "building",
+          "source_lines": [
+            "It went up in good times and up in bad times, with almost none of the dips that real markets force on real investors."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "Like a player who never, ever loses. Not because they are great, but because the game is rigged.",
+          "delivery": "building",
+          "source_lines": [
+            "Like a player who never, ever loses — not because they're great, but because the game is rigged."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "The later finding was not that the agency was corrupt. There is no evidence anyone was paid off. It was worse than that.",
+          "delivery": "intense",
+          "source_lines": [
+            "Its finding was not that the agency was corrupt — there's no evidence anyone was paid off."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "He said it took him about five minutes to know something was wrong. He put the red flags in writing, step by step.",
+          "delivery": "building",
+          "source_lines": [
+            "He says it took him about five minutes to know something was deeply wrong.",
+            "Over roughly a decade, he brought his case to the SEC more than once, including a detailed written report laying out the red flags step by step."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The scheme kept running and the money kept flowing, because in a Ponzi scheme the new money is the only money.",
+          "delivery": "building",
+          "source_lines": [
+            "The scheme kept running. The money kept flowing.",
+            "Which Madoff needed — because in a Ponzi scheme, the new money is the only money."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Nothing happened. The largest fraud in history continued in plain sight, because the people with power to stop it never did the math.",
+          "delivery": "intense",
+          "source_lines": [
+            "And nothing happened.",
+            "The man who'd solved it sat outside, watching the largest fraud in history continue in plain sight, because the people with the power to stop it never did the math."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "They had credible, specific warnings for years, and simply never ran them down. That was the finding. Not corruption. Something worse.",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M01",
+          "subject": "a line that only ever rises",
+          "source": "GENERATE",
+          "prompt": "a single pale line rising smoothly across dark glass with no dips or breaks anywhere along it, entirely abstract with no axes, numerals or lettering of any kind, lit ONLY by its own glow which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "longhand arithmetic on a blank pad",
+          "source": "GENERATE",
+          "prompt": "macro of one hand working down a page of longhand arithmetic on a plain pad where every figure is an illegible scrawl and no printed word appears, no face or body visible, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U03",
+          "subject": "a hand writing down a calculation",
+          "source": "FOOTAGE",
+          "footage_query": "hand writing on a notepad",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16524__office_interior_dark.mp4",
+          "bound_title": "sunrise at the beach dock",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.3808,
+          "motion": 5.28,
+          "luma": 144.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.325
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "the submission pushed under a government door",
+          "source": "GENERATE",
+          "prompt": "a plain sealed envelope pushed halfway under a heavy office door into a dark government corridor, nobody present, no nameplate or lettering anywhere, lit ONLY by the strip of light coming from the room beyond, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "the trading floor after everyone has gone",
+          "source": "GENERATE",
+          "prompt": "a deserted trading floor seen from high above at night with rows of dark terminals and every screen an unreadable featureless glow, nobody present, lit ONLY by that residual screen glow, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "dark trading desks and screens",
+          "source": "FOOTAGE",
+          "footage_query": "trading floor screens dark",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12694__trading_floor_screens.mp4",
+          "bound_title": "a businessman working on a stock market trading platform",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.5593,
+          "motion": 11.766,
+          "luma": 90.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "M01",
+          "subject": "one jagged line and one that never dips",
+          "source": "GENERATE",
+          "prompt": "two pale lines drawn across the same panel of dark glass, one violently jagged and one perfectly smooth and rising, entirely abstract with no axes, numerals or lettering anywhere, lit ONLY by their own glow which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a wall of dark monitors in an empty office",
+          "source": "GENERATE",
+          "prompt": "a bank of eight dark flat monitors mounted above an empty desk in a night office with every screen black and unreadable, nobody present, lit ONLY by one desk lamp which is switched on beneath them, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "M04",
+          "subject": "client statements fanned out, every figure blank",
+          "source": "GENERATE",
+          "prompt": "printed investment statements fanned in an overlapping arc across a dark desk with every figure, heading and letterhead worn completely blank, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "M04",
+          "subject": "papers spread across a desk",
+          "source": "FOOTAGE",
+          "footage_query": "papers spread on a desk",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23695__case_files_stack_desk.mp4",
+          "bound_title": "timelapse of people near a cathedral",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.4202,
+          "motion": 4.601,
+          "luma": 130.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a banded stack of identical envelopes",
+          "source": "GENERATE",
+          "prompt": "a thick bundle of identical window envelopes bound with a rubber band on a dark desk with every address panel completely blank, nobody in frame, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "a roulette wheel stopped dead",
+          "source": "GENERATE",
+          "prompt": "a roulette wheel standing perfectly still under a low hanging lamp in an otherwise black room, its pockets unmarked and carrying no numerals, nobody at the table, lit ONLY by that lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "M02",
+          "subject": "chips stacked on dark felt",
+          "source": "FOOTAGE",
+          "footage_query": "casino chips stacked close up",
+          "bound_title": "efficient indian rupee money counting machine in action",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4385,
+          "motion": 2.28,
+          "luma": 104.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "one card dealt face down on the baize",
+          "source": "GENERATE",
+          "prompt": "macro of a dealer's hand laying one playing card face down on dark green baize, the card back a blank unpatterned surface, no face or body visible above the wrist, lit ONLY by one low hanging lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "custom",
+          "subject": "two dice showing the same face again",
+          "source": "GENERATE",
+          "prompt": "macro of two dice resting side by side on dark felt showing the identical face, the pips crisp and no lettering anywhere, nobody in frame, lit ONLY by one hard rim light which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "M02",
+          "subject": "banded cash under a banker's lamp",
+          "source": "FOOTAGE",
+          "footage_query": "stacks of cash money close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23981__money_counting_machine.mp4",
+          "bound_title": "view of the ocean from a cruise ship",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.3865,
+          "motion": 15.625,
+          "luma": 68.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "I03",
+          "subject": "the regulator's in-tray, still full",
+          "source": "GENERATE",
+          "prompt": "a metal in-tray overflowing with completely blank unreadable forms on a grey government desk, the chair behind it empty, lit ONLY by one fluorescent tube which is switched on above, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "I03",
+          "subject": "an overflowing paper tray on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "overflowing paper tray office",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38397__case_files_stack_desk.mp4",
+          "bound_title": "woman working at a office alone",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4547,
+          "motion": 2.055,
+          "luma": 40.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I02",
+          "subject": "a corridor of identical closed doors",
+          "source": "GENERATE",
+          "prompt": "a long government corridor of identical closed doors with every nameplate completely blank and nobody in it, lit ONLY by a row of ceiling fixtures which are switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I02",
+          "subject": "an office corridor of shut doors",
+          "source": "FOOTAGE",
+          "footage_query": "office corridor closed doors",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16522__office_interior_dark.mp4",
+          "bound_title": "monitor on desk in home office",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3909,
+          "motion": 7.527,
+          "luma": 77.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I05",
+          "subject": "the warning filed and slid shut",
+          "source": "GENERATE",
+          "prompt": "a steel filing drawer sliding closed on one thick unlabelled folder in a dark government records room, every label worn blank, nobody present, lit ONLY by one bulb which is switched on overhead, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I06",
+          "subject": "one blank sheet on a government floor",
+          "source": "GENERATE",
+          "prompt": "one completely blank sheet of paper lying alone on a scuffed government corridor floor, nobody in frame, lit ONLY by a hard shaft of corridor light from one fixture which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 1999-2009 New York / Boston, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the line that only rises",
+          "source": "REUSE_01"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "the arithmetic that took five minutes",
+          "source": "FOOTAGE",
+          "footage_query": "fingers pressing buttons on a calculator",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63213__tax_forms_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "the report written up step by step",
+          "source": "FOOTAGE",
+          "footage_query": "hands straightening a thick stack of papers",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36373__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I01",
+          "subject": "the submission going out",
+          "source": "FOOTAGE",
+          "footage_query": "a fax machine printing a page",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31702__old_keys_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "the work done alone at night",
+          "source": "FOOTAGE",
+          "footage_query": "man working alone at a desk at night",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12505__wooden_desk_lamp_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W06",
+          "subject": "the warning posted to the regulator",
+          "source": "FOOTAGE",
+          "footage_query": "hand posting a letter into a mailbox",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38940__atm_machine_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I08",
+          "subject": "the machine that kept running",
+          "source": "FOOTAGE",
+          "footage_query": "conveyor belt moving boxes in a factory",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54366__warehouse_loading_dock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "M07",
+          "subject": "the new investor brought in",
+          "source": "FOOTAGE",
+          "footage_query": "two people shaking hands in an office",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3215__handshake_business.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "money coming in over the counter",
+          "source": "FOOTAGE",
+          "footage_query": "people queuing at a bank counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4127__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "money in and money out, all day",
+          "source": "FOOTAGE",
+          "footage_query": "revolving door turning in an office lobby",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16693__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "more of them arriving every day",
+          "source": "FOOTAGE",
+          "footage_query": "people riding an escalator in a lobby",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21663__elevator_interior_steel.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R11",
+          "subject": "the call that was never returned",
+          "source": "FOOTAGE",
+          "footage_query": "telephone sitting on an empty desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24685__credit_card_macro_chip.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "the man who solved it, on the outside",
+          "source": "FOOTAGE",
+          "footage_query": "person standing alone at a window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46120__person_crying_silhouette_window.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "the fraud running in plain sight",
+          "source": "FOOTAGE",
+          "footage_query": "crowd walking past on a sidewalk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33226__small_town_main_street.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "the desk where nobody ran it down",
+          "source": "FOOTAGE",
+          "footage_query": "an empty desk in a dark office",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14686__witness_stand_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U02",
+          "subject": "the office going dark again",
+          "source": "FOOTAGE",
+          "footage_query": "office lights switching off at night",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-27833__radio_tower_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        }
+      ]
+    },
+    {
+      "short_id": "short95",
+      "angle": "In December 2008 he told his own sons the business was one big lie.",
+      "type": "C — the confession",
+      "avoids": "short05 ends at 'collapsed in 2008, sentenced to a hundred and fifty years'. It never reaches the night he told his sons, or the plea.",
+      "funnel_question_left_for_longform": "The money was gone long before 2008. Where did it actually go?",
+      "era": "December 2008 - March 2009, New York",
+      "loop": true,
+      "loop_join": "L5 ends on the question of who was finally told, and L1 answers it: his own sons, in December 2008.",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "In December 2008, Bernard Madoff told his sons the truth. The business was, in his own words, one big lie.",
+          "delivery": "intense",
+          "source_lines": [
+            "In December 2008, Madoff told his sons the truth — that the business was, in his own words, one big lie."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "For decades the statements had shown steady profits. Investigators found trade confirmations for trades that never happened.",
+          "delivery": "building",
+          "source_lines": [
+            "Trade confirmations for trades that never happened."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "The steadiness was never a sign that the money was safe. That is what almost nobody understood until it was too late.",
+          "delivery": "building",
+          "source_lines": [
+            "Here's what almost nobody understood until it was too late: that steadiness wasn't a sign that the money was safe."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "A few months later he stood in a federal courtroom in New York and pleaded guilty. Not to one charge. To eleven.",
+          "delivery": "intense",
+          "source_lines": [
+            "A few months later, in March 2009, Madoff stood in a federal courtroom in New York and pleaded guilty — not to one charge, but to"
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "When the crisis hit, clients wanted billions back at once. In a Ponzi scheme there is no vault to open. Nothing was left.",
+          "delivery": "building",
+          "source_lines": [
+            "Investors everywhere scrambled for cash, and Madoff's clients started asking for their money back — billions of it, all at once.",
+            "But in a Ponzi scheme there's no vault to open.",
+            "There was nothing left to pay with."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Sixty-five billion was only the number printed on customer statements. The cash real people actually lost came to about seventeen and a half billion.",
+          "delivery": "building",
+          "source_lines": [
+            "Sixty-five billion was the total that appeared on customer statements — the grand sum of everyone's balance, including all those years of fake profits.",
+            "The actual cash that real people actually put in and lost — the principal — was later estimated by the trustee at around seventeen and a half billion dollars."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The people who lost were not reckless. Individuals who handed over their life savings. Charities that gave him everything they had.",
+          "delivery": "intense",
+          "source_lines": [
+            "Madoff's victims weren't reckless.",
+            "From individuals who handed over their life savings.",
+            "Charities gave him everything they had."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "The steadiness everyone trusted was the clearest sign that none of it was real. So who did he finally tell, and when?",
+          "delivery": "calm",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "the corner office at night, chair turned away",
+          "source": "GENERATE",
+          "prompt": "a high corner office at night with a dark city beyond the glass and one leather chair turned fully away from camera behind a bare desk, nobody visible, no lettering anywhere, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "W11",
+          "subject": "three chairs pulled close in a dark room",
+          "source": "GENERATE",
+          "prompt": "three upholstered chairs pulled tightly together facing one another on a rug in an unlit apartment living room, nobody in them, lit ONLY by one floor lamp which is switched on beside them, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U06",
+          "subject": "empty chairs in a dim room",
+          "source": "FOOTAGE",
+          "footage_query": "empty chairs in a dim room",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29216__single_chair_empty_room.mp4",
+          "bound_title": "surfing through the ocean waves",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.4176,
+          "motion": 28.48,
+          "luma": 116.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "custom",
+          "subject": "a glass set down beside an untouched one",
+          "source": "GENERATE",
+          "prompt": "macro of one hand setting a heavy tumbler down on a polished table beside a second untouched tumbler, no face or body visible above the wrist, lit ONLY by one table lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "M04",
+          "subject": "decades of statements, every figure blank",
+          "source": "GENERATE",
+          "prompt": "monthly client statements fanned across a dark desk in a deep overlapping stack with every figure, heading and letterhead worn completely blank, lit ONLY by one green banker's lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "M04",
+          "subject": "printed statements lying on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "printed statements on a desk",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32024__us_constitution_document.mp4",
+          "bound_title": "ocean waves",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.3878,
+          "motion": 15.063,
+          "luma": 95.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a printer feeding confirmations for nothing",
+          "source": "GENERATE",
+          "prompt": "a continuous-feed office printer pushing fanfold paper into a growing pile on the floor with every printed line completely blank and unreadable, nobody present, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "a drawer packed with identical blank slips",
+          "source": "GENERATE",
+          "prompt": "a filing drawer pulled open on hundreds of identical tightly packed trade confirmation slips with every slip completely blank, nobody in frame, lit ONLY by one fluorescent tube which is switched on above, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "paper running out of a printer",
+          "source": "FOOTAGE",
+          "footage_query": "printer paper feeding close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33919__vintage_typewriter.mp4",
+          "bound_title": "close up shot of a printed circuit board",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.49,
+          "motion": 8.541,
+          "luma": 39.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.336
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "the firm's own floor of dark terminals",
+          "source": "GENERATE",
+          "prompt": "an entire office floor of dark trading terminals photographed at night from the far end with every screen unreadable and every chair empty, lit ONLY by one emergency fixture which is switched on at the end of the room, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "custom",
+          "subject": "one unplugged cable coiled on an empty desk",
+          "source": "GENERATE",
+          "prompt": "macro of a single unplugged data cable coiled on an otherwise completely bare desk, its connector catching the light, nobody in frame, lit ONLY by one desk lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "M01",
+          "subject": "the line that never dipped",
+          "source": "GENERATE",
+          "prompt": "one pale line rising smoothly across dark glass with no dips anywhere along its length, entirely abstract with no axes, numerals or lettering, lit ONLY by its own glow which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "M01",
+          "subject": "a glowing line traced on a dark screen",
+          "source": "FOOTAGE",
+          "footage_query": "glowing line on a dark screen",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51280__open_door_bright_light.mp4",
+          "bound_title": "ocean waves",
+          "bound_license": "free_commercial",
+          "bound_source": "coverr",
+          "centre_energy": 0.3953,
+          "motion": 28.92,
+          "luma": 83.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "M05",
+          "subject": "the vault door standing closed",
+          "source": "GENERATE",
+          "prompt": "a heavy steel vault door standing closed in a dark chamber with its dial and every marking worn smooth and unreadable, nobody present, lit ONLY by one hard uplight which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "M06",
+          "subject": "one safe deposit drawer pulled out empty",
+          "source": "GENERATE",
+          "prompt": "one empty steel safe deposit drawer pulled out from a wall of closed identical drawers with no numbers or lettering on any of them, lit ONLY by a single overhead fixture which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "M05",
+          "subject": "a closed bank vault door",
+          "source": "FOOTAGE",
+          "footage_query": "bank vault door closed",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8119__bank_vault_door.mp4",
+          "bound_title": "boy picking up mail at the door",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4882,
+          "motion": 32.879,
+          "luma": 110.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R06",
+          "subject": "the federal courtroom gallery, empty",
+          "source": "GENERATE",
+          "prompt": "rows of empty polished wooden courtroom gallery benches receding into shadow in a large federal courtroom, nobody present, lit ONLY by one shaft of light from a high window, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "R06",
+          "subject": "empty benches in a courtroom",
+          "source": "FOOTAGE",
+          "footage_query": "empty courtroom benches",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14600__jury_box_empty.mp4",
+          "bound_title": "empty seats in an arena with red seats",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3899,
+          "motion": 10.424,
+          "luma": 35.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "custom",
+          "subject": "the lectern standing alone before the bench",
+          "source": "GENERATE",
+          "prompt": "a plain wooden lectern standing alone on the floor of a dark federal courtroom facing an empty high bench, nobody at it, all nameplates blank, lit ONLY by one shaft of light falling across it, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R07",
+          "subject": "the gavel coming down on eleven counts",
+          "source": "GENERATE",
+          "converted_from_footage": true,
+          "prompt": "the gavel coming down on eleven counts, lit ONLY by one hard practical light source which is switched on and is the only light in frame, no lettering, no signage and no readable text anywhere, every document surface and dial blank, no face or likeness visible, the subject held in the middle third of the tall vertical frame with the top and the bottom of the frame left empty and dark, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "R12",
+          "subject": "a wristwatch and cufflinks in the property tray",
+          "source": "GENERATE",
+          "prompt": "a steel booking tray on a counter holding one gold wristwatch, a leather belt and a pair of cufflinks, no lettering on anything, lit ONLY by one hard overhead lamp which is switched on, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U13",
+          "subject": "a figure walking away down the corridor",
+          "source": "GENERATE",
+          "prompt": "one lone silhouette walking away from camera down a dark institutional corridor toward a single lit doorway at the far end, face not visible, lit ONLY by that doorway, every artificial fixture in the room switched off, the subject held in the middle band of the tall vertical frame between the upper telop area and the lower caption area, both of which are kept dark and empty, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, December 2008 - March 2009, New York, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the corner office at night",
+          "source": "REUSE_01"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I07",
+          "subject": "clients arriving to ask for their money",
+          "source": "FOOTAGE",
+          "footage_query": "crowd of people gathered outside a building",
+          "prompt": null
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "M02",
+          "subject": "the drawer they came to empty",
+          "source": "FOOTAGE",
+          "footage_query": "an empty cash drawer pulled open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23896__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I04",
+          "subject": "there was no vault to open",
+          "source": "FOOTAGE",
+          "footage_query": "an empty open safe in a dark room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6483__us_constitution_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "I06",
+          "subject": "what was left of the paperwork",
+          "source": "FOOTAGE",
+          "footage_query": "papers scattered across an empty floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-4596__paper_scraps_flying.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U02",
+          "subject": "the doors shut for the last time",
+          "source": "FOOTAGE",
+          "footage_query": "hands locking glass office doors",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62172__data_center_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "the number on paper against the money lost",
+          "source": "FOOTAGE",
+          "footage_query": "two uneven stacks of coins closeup",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63649__gold_coins_pile.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U10",
+          "subject": "the principal that real people put in",
+          "source": "FOOTAGE",
+          "footage_query": "hands holding an empty open wallet",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31938__judge_gavel_wooden.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "an ordinary household, doing the sums",
+          "source": "FOOTAGE",
+          "footage_query": "elderly person sitting at a kitchen table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26784__elderly_hands_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I08",
+          "subject": "a life's savings, in one house",
+          "source": "FOOTAGE",
+          "footage_query": "small house at dusk with lights on",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0507__glowing_light_particles.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U07",
+          "subject": "the statements filed away and believed",
+          "source": "FOOTAGE",
+          "footage_query": "hands putting papers into a drawer",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10147__old_library_archive.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "one of the people who lost everything",
+          "source": "FOOTAGE",
+          "footage_query": "person sitting alone on a park bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46769__empty_chair_in_spotlight_grief.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "I01",
+          "subject": "what the charities had given him",
+          "source": "FOOTAGE",
+          "footage_query": "coins dropped into a donation box",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30056__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "I02",
+          "subject": "the hall of a charity that closed",
+          "source": "FOOTAGE",
+          "footage_query": "empty hall with chairs stacked up",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29213__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R10",
+          "subject": "the doors that did not open again",
+          "source": "FOOTAGE",
+          "footage_query": "chain and padlock on a gate",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12147__padlock_and_chain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "M07",
+          "subject": "the work the money was meant to do",
+          "source": "FOOTAGE",
+          "footage_query": "volunteers packing boxes in a hall",
+          "prompt": null
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

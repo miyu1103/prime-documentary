@@ -349,150 +349,249 @@ PASS = 1  # current pass number == page number for paginated sources (set by mai
 # queries are deliberately environmental/period-scenery biased (no people terms)
 # priority order: uk_highstreet_postoffice (EP56) first, then the rest
 THEMES: dict[str, dict[str, list[str]]] = {
-    "uk_highstreet_postoffice": {
-        "video": ["british high street", "post office britain", "england village shops"],
-        "image": ["british high street shops", "royal mail post office", "red postbox england"],
-        "audio": ["british street ambience", "shop bell door"],
+    'uk_highstreet_postoffice': {
+        'video': ['british high street', 'post office britain', 'england village shops'],
+        'image': ['british high street shops', 'royal mail post office', 'red postbox england'],
+        'audio': ['british street ambience', 'shop bell door'],
     },
-    "courtroom_justice": {
-        "video": ["courtroom", "courthouse", "trial court judicial"],
-        "image": ["courtroom interior", "courthouse architecture", "scales of justice gavel"],
-        "audio": ["courtroom ambience", "gavel knock wood"],
+    'courtroom_justice': {
+        'video': ['gavel on wooden desk', 'empty jury box seats', 'judge in robe', 'attorney reading case files', 'court hearing room', 'stack of legal papers', 'signing document with pen', 'courtroom', 'courthouse', 'trial court judicial', 'judge gavel close up', 'empty jury box', 'witness stand courtroom', 'courthouse steps walking', 'lawyer walking with briefcase', 'law library shelves', 'signing legal document hands'],
+        'image': ['courtroom interior', 'courthouse architecture', 'scales of justice gavel', 'jury box empty seats', 'judge bench gavel', 'law books shelf', 'legal documents stack desk', 'courthouse steps columns'],
+        'audio': ['courtroom ambience', 'gavel knock wood'],
     },
-    "prison_jail": {
-        "video": ["prison", "penitentiary", "jail cell block"],
-        "image": ["prison corridor cells", "penitentiary building", "jail bars"],
-        "audio": ["prison door slam", "metal door clang echo"],
+    'prison_jail': {
+        'video': ['handcuffs on wrists', 'person being arrested', 'prison guard tower', 'inmate walking corridor', 'prison', 'penitentiary', 'jail cell block', 'prison razor wire fence', 'cell door closing', 'prison yard walking', 'handcuffs close up', 'prison visitation room', 'prison corridor walking'],
+        'image': ['prison corridor cells', 'penitentiary building', 'jail bars', 'razor wire prison fence', 'handcuffs on table', 'empty prison cell bunk', 'prison watchtower', 'barred window light'],
+        'audio': ['prison door slam', 'metal door clang echo'],
     },
-    "police_period": {
-        "video": ["police 1950s", "police patrol vintage", "law enforcement 1960s"],
-        "image": ["police station vintage", "patrol car 1950s", "police call box"],
-        "audio": ["vintage police siren", "police radio chatter"],
+    'police_period': {
+        'video': ['police 1950s', 'police patrol vintage', 'law enforcement 1960s'],
+        'image': ['police station vintage', 'patrol car 1950s', 'police call box'],
+        'audio': ['vintage police siren', 'police radio chatter'],
     },
-    "police_modern": {
-        "video": ["police car night lights", "police patrol city"],
-        "image": ["police car lights night", "police tape crime scene"],
-        "audio": ["police siren city", "radio dispatch static"],
+    'police_modern': {
+        'video': ['sheriff badge close up', 'sheriff patrol vehicle', 'sealed evidence bag', 'fingerprint card ink', 'police evidence room', 'seized property storage', 'police car night lights', 'police patrol city', 'traffic stop at night', 'police body camera view', 'evidence bag gloves', 'fingerprint scanning', 'patrol car dashboard driving', 'police interview room'],
+        'image': ['police car lights night', 'police tape crime scene', 'police badge close up', 'evidence bags table', 'interrogation room table', 'patrol car door emblem'],
+        'audio': ['police siren city', 'radio dispatch static'],
     },
-    "americana_1930s_1970s": {
-        "video": ["main street 1950s", "american factory 1940s", "trains railroad 1950s",
-                  "diner drive-in 1950s", "american city street 1930s"],
-        "image": ["main street storefronts 1950s", "railroad steam locomotive",
-                  "american diner neon sign", "factory assembly line 1940s"],
-        "audio": ["steam train whistle", "diner ambience 1950s"],
+    'americana_1930s_1970s': {
+        'video': ['main street 1950s', 'american factory 1940s', 'trains railroad 1950s', 'diner drive-in 1950s', 'american city street 1930s'],
+        'image': ['main street storefronts 1950s', 'railroad steam locomotive', 'american diner neon sign', 'factory assembly line 1940s'],
+        'audio': ['steam train whistle', 'diner ambience 1950s'],
     },
-    "small_town": {
-        "video": ["small town america", "rural town street", "county fair town"],
-        "image": ["small town main street", "water tower town", "rural church town square"],
-        "audio": ["small town ambience birds", "church bells distant"],
+    'small_town': {
+        'video': ['small town america', 'rural town street', 'county fair town', 'rural highway driving night', 'gas station at night', 'suburban street driving', 'mailbox rural road', 'porch of old house'],
+        'image': ['small town main street', 'water tower town', 'rural church town square', 'rural mailbox road', 'gas station sign dusk', 'modest suburban house'],
+        'audio': ['small town ambience birds', 'church bells distant'],
     },
-    "newspapers_printing": {
-        "video": ["newspaper printing press", "linotype newsroom", "newspaper production"],
-        "image": ["printing press machinery", "newspaper front page press", "linotype machine"],
-        "audio": ["printing press machine", "typewriter keys newsroom"],
+    'newspapers_printing': {
+        'video': ['newspaper printing press', 'linotype newsroom', 'newspaper production', 'printing press running', 'newspaper rolling off press', 'typing on typewriter', 'stack of newspapers'],
+        'image': ['printing press machinery', 'newspaper front page press', 'linotype machine', 'newspaper stack close up', 'typewriter keys'],
+        'audio': ['printing press machine', 'typewriter keys newsroom'],
     },
-    "uk_period": {
-        "video": ["london 1950s", "britain 1960s street", "england industrial 1940s"],
-        "image": ["london street 1950s", "british railway station period", "england town 1930s"],
-        "audio": ["big ben chimes", "steam railway station ambience"],
+    'uk_period': {
+        'video': ['london 1950s', 'britain 1960s street', 'england industrial 1940s'],
+        'image': ['london street 1950s', 'british railway station period', 'england town 1930s'],
+        'audio': ['big ben chimes', 'steam railway station ambience'],
     },
-    "chicago_city": {
-        "video": ["chicago city", "chicago elevated train", "chicago skyline street"],
-        "image": ["chicago skyline", "chicago elevated railway", "chicago river bridges"],
-        "audio": ["elevated train rumble", "city wind traffic"],
+    'chicago_city': {
+        'video': ['chicago city', 'chicago elevated train', 'chicago skyline street'],
+        'image': ['chicago skyline', 'chicago elevated railway', 'chicago river bridges'],
+        'audio': ['elevated train rumble', 'city wind traffic'],
     },
-    "navy_harbor": {
-        "video": ["navy ships harbor", "naval shipyard", "harbor docks cargo"],
-        "image": ["navy warship harbor", "shipyard cranes docks", "lighthouse harbor"],
-        "audio": ["ship horn harbor", "seagulls dock water"],
+    'navy_harbor': {
+        'video': ['navy ships harbor', 'naval shipyard', 'harbor docks cargo'],
+        'image': ['navy warship harbor', 'shipyard cranes docks', 'lighthouse harbor'],
+        'audio': ['ship horn harbor', 'seagulls dock water'],
     },
-    "laboratory_forensics": {
-        "video": ["laboratory science equipment", "chemistry lab research", "microscope lab"],
-        "image": ["laboratory glassware equipment", "microscope close up", "test tubes chemistry"],
-        "audio": ["laboratory equipment hum", "glass beaker clink"],
+    'laboratory_forensics': {
+        'video': ['laboratory science equipment', 'chemistry lab research', 'microscope lab'],
+        'image': ['laboratory glassware equipment', 'microscope close up', 'test tubes chemistry'],
+        'audio': ['laboratory equipment hum', 'glass beaker clink'],
     },
-    "government_buildings": {
-        "video": ["capitol government building", "washington dc buildings", "city hall architecture"],
-        "image": ["capitol dome architecture", "government building columns", "supreme court building"],
-        "audio": ["marble hall footsteps echo", "flag rope flagpole wind"],
+    'government_buildings': {
+        'video': ['public hearing room', 'city council meeting', 'notary stamp document', 'capitol government building', 'washington dc buildings', 'city hall architecture', 'state capitol exterior', 'federal building entrance', 'government office corridor', 'flag pole government building', 'city council chamber'],
+        'image': ['capitol dome architecture', 'government building columns', 'supreme court building', 'state capitol dome', 'federal courthouse facade', 'government office corridor', 'official seal wall'],
+        'audio': ['marble hall footsteps echo', 'flag rope flagpole wind'],
     },
-    "period_telephone_tech": {
-        "video": ["telephone switchboard", "rotary telephone", "telegraph communication vintage"],
-        "image": ["rotary telephone vintage", "switchboard operator equipment", "telephone booth old"],
-        "audio": ["rotary dial telephone", "telephone ring vintage bell"],
+    'period_telephone_tech': {
+        'video': ['telephone switchboard', 'rotary telephone', 'telegraph communication vintage'],
+        'image': ['rotary telephone vintage', 'switchboard operator equipment', 'telephone booth old'],
+        'audio': ['rotary dial telephone', 'telephone ring vintage bell'],
     },
-    "money_banking": {
-        "video": ["bank vault money", "printing money mint", "stock exchange trading floor"],
-        "image": ["bank vault door", "dollar bills currency", "bank building classical"],
-        "audio": ["coins counting cash register", "cash register bell vintage"],
+    # Added 2026-08-02 for the planned finance/business channel. Measured gap: the shelf
+    # holds 496 clips matching "money" and 233 matching "stock", but zero for bankruptcy,
+    # foreclosure, eviction, unemployment or a queue — the generic nouns are plentiful and
+    # the SCENES a finance story is actually told in are missing.
+    # Prime Finance / Prime Business, from two agents that measured the shelf before
+    # proposing (2026-08-02). Both reported the same structural hole: the shelf is rich in
+    # WIDE and AMBIENT - offices, towers, ports, highways - and near-empty on HANDS,
+    # TRANSACTIONS and close human action. Every "hands doing a task" probe came back zero.
+    # That is the register a company or money story needs to stop feeling like a stock reel,
+    # so those queries are listed first.
+    'hands_and_transactions': {
+        'video': ['hands assembling electronics parts', 'gloved hands quality inspection',
+                  'worker stocking shelves store', 'checkout scanning groceries',
+                  'receipt printing till closeup', 'hands calculator spreadsheet desk',
+                  'handheld scanner beeping box', 'badge tapped door reader',
+                  'hands flipping file pages', 'rubber stamp hitting paper',
+                  'shredder eating documents closeup', 'filing cabinet drawer opening',
+                  'cash drawer opening bills', 'hands opening cardboard parcel',
+                  'screwdriver assembling small device'],
+        'image': ['handwritten ledger page closeup', 'redacted memo black lines',
+                  'stacked bankers boxes room', 'hand written price tag'],
     },
-    # ---- BROAD themes (future channels; fill tiers 2-4: D->E->F) ----
-    "space_nasa": {
-        "video": ["earth from space", "rocket launch", "moon surface apollo"],
-        "image": ["nebula galaxy", "earth from orbit", "rocket launchpad"],
-        "audio": ["rocket launch rumble", "space radio static beep"],
+    'bank_and_branch': {
+        'video': ['bank teller window counter', 'queue outside bank doors',
+                  'closed shutters bank entrance', 'vault door wheel turning',
+                  'empty bank lobby chairs', 'armored truck loading cash',
+                  'night deposit slot wall', 'safe deposit box drawer'],
+        'image': ['bank teller window vintage', 'crowd outside bank doors',
+                  'vault door open interior', 'bank branch closed sign'],
     },
-    "ocean_nature": {
-        "video": ["ocean waves", "underwater coral reef", "coastline cliffs aerial"],
-        "image": ["ocean waves aerial", "coral reef underwater", "sea cliffs coast"],
-        "audio": ["ocean waves shore", "underwater ambience"],
+    'household_loss': {
+        'video': ['eviction notice taped door', 'foreclosure sign front lawn',
+                  'empty supermarket shelves aisle', 'price tag being replaced',
+                  'unpaid bills envelope stack', 'overflowing mailbox letters closeup',
+                  'car towed away street', 'keys handed over doorway',
+                  'boarded up shop window', 'empty living room moving',
+                  'pawn shop window display', 'fuel pump numbers spinning'],
+        'image': ['eviction notice on door', 'foreclosure sign suburban house',
+                  'bare supermarket shelves wide', 'pile of overdue bills'],
     },
-    "weather_disasters": {
-        "video": ["storm clouds timelapse", "hurricane storm", "lightning storm night"],
-        "image": ["storm supercell clouds", "lightning strike", "flood street aftermath"],
-        "audio": ["thunder storm rain", "wind howling storm"],
+    'market_machinery': {
+        'video': ['ticker tape scrolling board', 'wall of monitors charts',
+                  'trader desk six screens', 'empty trading desks dark',
+                  'phones ringing trading desk', 'printer spitting trade tickets',
+                  'crypto mining rigs rows', 'cooling fans data hall',
+                  'fiber optic cables closeup'],
+        'image': ['mechanical ticker board digits', 'trading pit crowd overhead',
+                  'dealing room desks screens', 'stock certificate engraved paper'],
     },
-    "wildlife_animals": {
-        "video": ["wildlife birds flock", "deer forest wildlife", "lions savanna wildlife"],
-        "image": ["birds wildlife nature", "deer forest", "elephant savanna"],
-        "audio": ["birdsong forest morning", "wolves howling night"],
+    'goods_in_motion': {
+        'video': ['pallet racking warehouse aisle', 'parcels sliding sorting chute',
+                  'warehouse worker scanning parcel', 'forklift lifting pallet',
+                  'wooden crate shipping stencil', 'truck reversing loading dock',
+                  'delivery driver knocking door', 'parcel left on doorstep',
+                  'courier bicycle city traffic', 'gantry crane lifting container night',
+                  'cargo ship anchored offshore', 'excavator open pit mine'],
+        'image': ['shipping manifest paperwork', 'stacked parcels sorting depot',
+                  'empty pallet stack yard', 'cargo bill of lading document'],
     },
-    "world_cities": {
-        "video": ["city skyline timelapse", "street traffic night city", "european old town street"],
-        "image": ["city skyline night", "old town europe street", "market street world"],
-        "audio": ["city traffic ambience", "subway station ambience"],
+    'selling_floor': {
+        'video': ['clearance sale clothing rack', 'shop window mannequin display',
+                  'department store escalator moving', 'shutter closing shop front',
+                  'shopkeeper opening shutters morning', 'chairs stacked closed restaurant',
+                  'queue of people outside shop', 'market stall vendor customer',
+                  'empty strip mall parking', 'auctioneer gavel warehouse sale'],
+        'image': ['vintage department store interior', 'closing down sale window sign',
+                  'empty shop interior fixtures removed', 'mail order catalog pages'],
     },
-    "japan": {
-        "video": ["japan street tokyo", "kyoto temple japan", "japan rural train"],
-        "image": ["kyoto temple", "tokyo neon street night", "mount fuji landscape"],
-        "audio": ["japanese temple bell", "tokyo street ambience"],
+    'decision_rooms': {
+        'video': ['empty boardroom chairs table', 'shareholder meeting seated hall',
+                  'microphones on press podium', 'photographers cameras flashing crowd',
+                  'audience applauding dark auditorium', 'projector slide dark room',
+                  'hand drawing whiteboard diagram', 'abandoned desks dusty office',
+                  'workers picket line placards', 'wrecking ball hitting building',
+                  'janitor cleaning empty office', 'office lights turning off'],
+        'image': ['bankruptcy court filing document', 'share certificate engraved paper',
+                  'internal memo typed letter', 'vintage billboard roadside'],
     },
-    "vintage_ads_cartoons": {
-        "video": ["television commercial", "animated cartoon", "advertising film"],
-        "image": ["vintage advertisement poster", "retro product label"],
-        "audio": ["vintage radio jingle", "old advertisement music"],
-        "ia_collections": ["classic_cartoons", "Classic_TV_Commercials", "prelinger"],
+    'bench_to_line': {
+        'video': ['garage workbench prototype tools', 'clay model prototype hands',
+                  'cleanroom worker white suit', 'bakery production line oven',
+                  'stainless steel brewery tanks', 'bottles moving fast conveyor',
+                  'robot arm spraying car body', 'barcode label printer machine'],
+        'image': ['workbench hand tools overhead', 'patent drawing technical diagram',
+                  'factory blueprint sheet closeup', 'product prototype foam model'],
     },
-    "pd_feature_films": {
-        "video": ["feature film", "film noir", "western film", "silent film"],
-        "image": ["movie poster vintage", "cinema theater marquee"],
-        "audio": ["film projector running"],
-        "ia_collections": ["feature_films", "film_noir", "silent_films"],
+    'business_corporate': {
+        'video': ['boardroom meeting table', 'business handshake deal', 'corporate headquarters lobby',
+                  'office workers walking corridor', 'presentation to investors', 'glass skyscraper low angle',
+                  'commuters business district morning', 'data center server aisle', 'server racks blinking',
+                  'earnings call phone desk', 'executive signing contract', 'open plan office night'],
+        'image': ['boardroom empty table', 'corporate headquarters facade', 'business district skyline',
+                  'server room racks', 'office desk documents'],
     },
-    "war_history": {
-        "video": ["world war newsreel", "military training film", "aircraft carrier wartime"],
-        "image": ["tanks military ww2", "warplanes formation", "battleship guns"],
-        "audio": ["artillery distant rumble", "air raid siren"],
+    'economy_crisis': {
+        'video': ['closed store shutter', 'boarded up storefront', 'foreclosure sign house',
+                  'eviction notice door', 'unemployment line queue', 'empty shopping mall',
+                  'abandoned factory interior', 'stock market crash screen', 'falling chart red screen',
+                  'bank queue people waiting', 'for sale sign yard', 'empty office cubicles'],
+        'image': ['boarded storefront', 'foreclosure sign', 'empty mall interior',
+                  'abandoned factory', 'unemployment queue'],
     },
-    "science_tech": {
-        "video": ["vintage computer technology", "electronics circuit assembly", "industrial robot machine"],
-        "image": ["circuit board macro", "vintage computer mainframe", "telescope observatory"],
-        "audio": ["computer beeps retro", "machine hum electronics"],
+    'money_banking': {
+        'video': ['stock ticker tape close up', 'trading floor shouting', 'candlestick chart screen', 'credit card payment terminal', 'atm withdrawal night', 'invoice paperwork desk', 'supermarket checkout scanner', 'retail store aisle', 'seized cash on table', 'auction gavel bidding', 'safe deposit box opened', 'bank teller counter', 'bank vault money', 'printing money mint', 'stock exchange trading floor', 'bank vault door opening', 'counting cash bundles', 'safe deposit boxes', 'cash in envelope hands', 'atm at night'],
+        'image': ['bank vault door', 'dollar bills currency', 'bank building classical', 'bundled cash stacks', 'safe deposit box wall'],
+        'audio': ['coins counting cash register', 'cash register bell vintage'],
     },
-    "landscapes_timelapse": {
-        "video": ["timelapse clouds mountains", "sunset timelapse", "desert canyon aerial"],
-        "image": ["mountain landscape peaks", "desert dunes", "waterfall forest"],
-        "audio": ["mountain wind ambience", "river stream flowing"],
+    'space_nasa': {
+        'video': ['earth from space', 'rocket launch', 'moon surface apollo'],
+        'image': ['nebula galaxy', 'earth from orbit', 'rocket launchpad'],
+        'audio': ['rocket launch rumble', 'space radio static beep'],
     },
-    "textures_backgrounds": {
-        "video": ["ink in water", "smoke background dark", "bokeh lights abstract"],
-        "image": ["old paper texture", "grunge wall texture", "marble stone texture"],
-        "audio": [],
+    'ocean_nature': {
+        'video': ['ocean waves', 'underwater coral reef', 'coastline cliffs aerial'],
+        'image': ['ocean waves aerial', 'coral reef underwater', 'sea cliffs coast'],
+        'audio': ['ocean waves shore', 'underwater ambience'],
     },
-    "music_performance_pd_era": {
-        "video": ["orchestra performance", "jazz band 1940s", "concert hall music"],
-        "image": ["orchestra vintage", "gramophone record player", "concert hall interior"],
-        "audio": ["vinyl crackle 78rpm", "vintage orchestra recording"],
+    'weather_disasters': {
+        'video': ['storm clouds timelapse', 'hurricane storm', 'lightning storm night'],
+        'image': ['storm supercell clouds', 'lightning strike', 'flood street aftermath'],
+        'audio': ['thunder storm rain', 'wind howling storm'],
+    },
+    'wildlife_animals': {
+        'video': ['wildlife birds flock', 'deer forest wildlife', 'lions savanna wildlife'],
+        'image': ['birds wildlife nature', 'deer forest', 'elephant savanna'],
+        'audio': ['birdsong forest morning', 'wolves howling night'],
+    },
+    'world_cities': {
+        'video': ['city skyline timelapse', 'street traffic night city', 'european old town street'],
+        'image': ['city skyline night', 'old town europe street', 'market street world'],
+        'audio': ['city traffic ambience', 'subway station ambience'],
+    },
+    'japan': {
+        'video': ['japan street tokyo', 'kyoto temple japan', 'japan rural train'],
+        'image': ['kyoto temple', 'tokyo neon street night', 'mount fuji landscape'],
+        'audio': ['japanese temple bell', 'tokyo street ambience'],
+    },
+    'vintage_ads_cartoons': {
+        'video': ['television commercial', 'animated cartoon', 'advertising film'],
+        'image': ['vintage advertisement poster', 'retro product label'],
+        'audio': ['vintage radio jingle', 'old advertisement music'],
+        'ia_collections': ['classic_cartoons', 'Classic_TV_Commercials', 'prelinger'],
+    },
+    'pd_feature_films': {
+        'video': ['feature film', 'film noir', 'western film', 'silent film'],
+        'image': ['movie poster vintage', 'cinema theater marquee'],
+        'audio': ['film projector running'],
+        'ia_collections': ['feature_films', 'film_noir', 'silent_films'],
+    },
+    'war_history': {
+        'video': ['world war newsreel', 'military training film', 'aircraft carrier wartime'],
+        'image': ['tanks military ww2', 'warplanes formation', 'battleship guns'],
+        'audio': ['artillery distant rumble', 'air raid siren'],
+    },
+    'science_tech': {
+        'video': ['data center corridor', 'server rack lights close up', 'network cables bundle', 'algorithm code screen scrolling', 'forensic technician gloves', 'dna test tubes rack', 'crime lab analysis', 'file cabinet drawer', 'vintage computer technology', 'electronics circuit assembly', 'industrial robot machine', 'forensic lab technician', 'microscope examination lab', 'dna sequencing machine', 'evidence testing laboratory'],
+        'image': ['circuit board macro', 'vintage computer mainframe', 'telescope observatory', 'forensic laboratory bench', 'microscope slide close up'],
+        'audio': ['computer beeps retro', 'machine hum electronics'],
+    },
+    'landscapes_timelapse': {
+        'video': ['timelapse clouds mountains', 'sunset timelapse', 'desert canyon aerial'],
+        'image': ['mountain landscape peaks', 'desert dunes', 'waterfall forest'],
+        'audio': ['mountain wind ambience', 'river stream flowing'],
+    },
+    'textures_backgrounds': {
+        'video': ['ink in water', 'smoke background dark', 'bokeh lights abstract'],
+        'image': ['old paper texture', 'grunge wall texture', 'marble stone texture'],
+        'audio': [],
+    },
+    'music_performance_pd_era': {
+        'video': ['orchestra performance', 'jazz band 1940s', 'concert hall music'],
+        'image': ['orchestra vintage', 'gramophone record player', 'concert hall interior'],
+        'audio': ['vinyl crackle 78rpm', 'vintage orchestra recording'],
     },
 }
 
@@ -982,7 +1081,11 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
         qroot = os.path.join(QUARANTINE, theme)
         os.makedirs(qroot, exist_ok=True)
         qdest = os.path.join(qroot, os.path.basename(dest))
-        os.replace(dest, qdest)
+        # Cross-device move: the shelf lives on D:/E:/F: but quarantine is ALWAYS on H:
+        # (CONTRACT 1), and os.replace cannot cross a Windows volume — it raises
+        # OSError 18 (EXDEV). That killed the whole source: the noaa lane died on its
+        # first sub-floor TIF and stayed dead for 18 hours while its siblings ran on.
+        shutil.move(dest, qdest)
         dest, decision, quarantine_reason = qdest, "review_required", why
         log(f"  quarantined ({why}): {fname[:66]}")
     ledger.record({

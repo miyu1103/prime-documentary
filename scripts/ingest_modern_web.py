@@ -84,6 +84,7 @@ import html as html_mod
 import json
 import os
 import re
+import shutil
 import sys
 import urllib.parse
 from datetime import datetime, timezone
@@ -160,9 +161,56 @@ FACTORY_MANIFESTS = [
 
 # ------------------------------------------------------------------ themes ----
 # Video/image themes reuse the sibling's curated query tables (base.THEMES).
-VIDEO_THEMES = ["ocean_nature", "wildlife_animals", "world_cities", "japan",
-                "landscapes_timelapse", "textures_backgrounds", "science_tech",
-                "small_town", "money_banking", "police_modern"]
+# 429 circuit breaker (2026-08-01). Three lane restarts inside ten minutes made this
+# lane replay page 1 of every mixkit query three times over, and mixkit started
+# answering 429. Retrying a host that is already refusing us, once per pass, is exactly
+# the impoliteness CONTRACT 8 forbids and risks turning a soft limit into a hard ban.
+# After RATE_LIMIT_TRIP consecutive 429s a source sits out the rest of the run; the
+# next launch starts it clean.
+RATE_LIMIT_TRIP = 5
+_rate_limited: dict[str, int] = {}
+
+
+def note_rate_limit(source: str, err: BaseException) -> None:
+    if "429" in str(err) or "Too Many Requests" in str(err):
+        _rate_limited[source] = _rate_limited.get(source, 0) + 1
+        if _rate_limited[source] == RATE_LIMIT_TRIP:
+            log(f"  {source}: {RATE_LIMIT_TRIP} consecutive 429s — backing off for the "
+                f"rest of this run (relaunch to retry)")
+    else:
+        _rate_limited.pop(source, None)
+
+
+def rate_limited(source: str) -> bool:
+    return _rate_limited.get(source, 0) >= RATE_LIMIT_TRIP
+
+
+VIDEO_THEMES = [
+    'hands_and_transactions',
+    'bank_and_branch',
+    'household_loss',
+    'market_machinery',
+    'goods_in_motion',
+    'selling_floor',
+    'decision_rooms',
+    'bench_to_line',
+    'business_corporate',
+    'economy_crisis',
+    'courtroom_justice',
+    'prison_jail',
+    'government_buildings',
+    'police_modern',
+    'money_banking',
+    'small_town',
+    'newspapers_printing',
+    'science_tech',
+    'ocean_nature',
+    'wildlife_animals',
+    'world_cities',
+    'japan',
+    'landscapes_timelapse',
+    'textures_backgrounds',
+]
 
 # Audio themes are new to this lane; registered into base.THEMES so the shared
 # relevance scorer works. usage_tag feeds the channel's SFX audit.
@@ -480,7 +528,11 @@ def take_item(ledger: base.Ledger, *, source: str, item_id: str, title: str,
         os.makedirs(q_root, exist_ok=True)
         q_dest = dest_path(q_root, source, item_id, title,
                            os.path.splitext(dest)[1].lstrip("."))
-        os.replace(dest, q_dest)
+        # Cross-device move: the shelf lives on D:/E:/F: but quarantine is ALWAYS on H:
+        # (CONTRACT 1), and os.replace cannot cross a Windows volume — it raises
+        # OSError 18 (EXDEV). That killed the whole source: the noaa lane died on its
+        # first sub-floor TIF and stayed dead for 18 hours while its siblings ran on.
+        shutil.move(dest, q_dest)
         dest, fname = q_dest, os.path.basename(q_dest)
         decision, quarantine_reason = "review_required", why
         log(f"  QUARANTINE ({why}): {fname[:70]}")
@@ -570,6 +622,9 @@ def src_mixkit(ledger: base.Ledger, theme: str, limit: int, dry_run: bool) -> in
             raise
         except Exception as e:  # noqa: BLE001
             log(f"  mixkit page fail ({page}): {e}")
+            note_rate_limit("mixkit", e)
+            if rate_limited("mixkit"):
+                return got
             continue
         for v in vids:
             if got >= limit or ledger.run_full():
@@ -615,6 +670,9 @@ def src_coverr(ledger: base.Ledger, theme: str, limit: int, dry_run: bool) -> in
             raise
         except Exception as e:  # noqa: BLE001
             log(f"  coverr page fail: {e}")
+            note_rate_limit("coverr", e)
+            if rate_limited("coverr"):
+                return got
             continue
         # Coverr embeds its own (non-partner) videos as
         #   "mp4":"https://cdn.coverr.co/videos/coverr-<title-slug>-<id>/1080p.mp4"

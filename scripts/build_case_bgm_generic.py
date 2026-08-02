@@ -67,9 +67,11 @@ def probe(f: Path) -> float:
         return -1.0
 
 
-def score_for(sections: list[str], starts: dict[str, float], vo_total: float
+def score_for(sections: list[str], starts: dict[str, float], vo_total: float,
+              hook_vol: float = 0.30
               ) -> tuple[dict[str, tuple[Path, float]], dict[str, Path]]:
     """Assign a cue + volume per section by role, with exactly one raise at the reveal.
+    hook_vol carries the cold-open level so the opening is audible (see --hook-vol).
 
     The raise goes to the act CONTAINING the 70% mark of the narration, not to a fixed
     act index: pd-structure-template puts the primary reveal at 65-85% of runtime, and on a
@@ -95,7 +97,7 @@ def score_for(sections: list[str], starts: dict[str, float], vo_total: float
     ai = 0
     for sec in sections:
         if sec == "HOOK":
-            music[sec] = (HOOK_BED, 0.14)
+            music[sec] = (HOOK_BED, hook_vol)
             ambience[sec] = AMB / "amb_night_window.mp3"
         elif sec == "OP":
             music[sec] = (OPEN_BED, 0.20)
@@ -124,6 +126,13 @@ def main() -> int:
     ap.add_argument("--render", type=Path, required=True)
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--hook-sec", type=float, default=8.0)
+    # Owner, on EP50 and again on EP51: 「最初BGMないね」. The CODEX score called the hook
+    # "near-silent restraint" and scored it at 0.14 with a 1.5s fade -- under a cold open that
+    # carries no narration either, that measures -33 dB and simply reads as a dead opening.
+    # Measured reference: the accepted EP48/EP49 openings sit at -14..-20 dB.
+    ap.add_argument("--hook-vol", type=float, default=0.30,
+                    help="music level over the cold open and the HOOK section")
+    ap.add_argument("--hook-fade-in", type=float, default=0.8)
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -153,7 +162,7 @@ def main() -> int:
             starts[c["section"]] = float(c["start"])
             order.append(c["section"])
     vo_end = float(d["chunks"][-1]["end"]) + off
-    music, ambience = score_for(order, starts, float(d["chunks"][-1]["end"]))
+    music, ambience = score_for(order, starts, float(d["chunks"][-1]["end"]), a.hook_vol)
 
     def win(sec: str) -> tuple[float, float]:
         i = order.index(sec)
@@ -162,7 +171,7 @@ def main() -> int:
         return lo, hi
 
     bgm = [(music[s][0], *win(s), music[s][1]) for s in order]
-    bgm.insert(0, (HOOK_BED, 0.0, starts[order[0]] + off, 0.14))
+    bgm.insert(0, (HOOK_BED, 0.0, starts[order[0]] + off, a.hook_vol))
     bgm.append((OUTRO_TAIL, vo_end, total, 0.22))
     amb = [(ambience[s], *win(s)) for s in order]
     amb.insert(0, (AMB / "amb_night_window.mp3", 0.0, starts[order[0]] + off))
@@ -192,7 +201,8 @@ def main() -> int:
         inputs += ["-i", str(p)]
         parts.append(f"[{i}:a]aformat=sample_rates=48000:channel_layouts=stereo,"
                      f"aloop=loop=-1:size=2000000000,atrim=0:{dur:.3f},"
-                     f"afade=t=in:st=0:d=1.5,afade=t=out:st={max(0, dur-2):.3f}:d=2.0,"
+                     f"afade=t=in:st=0:d={(a.hook_fade_in if k == 0 else 1.5):.2f},"
+                     f"afade=t=out:st={max(0, dur-2):.3f}:d=2.0,"
                      f"volume={v:.3f},adelay={int(s*1000)}|{int(s*1000)}[m{k}]")
         mlab.append(f"[m{k}]")
         i += 1

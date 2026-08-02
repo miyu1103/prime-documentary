@@ -1,0 +1,718 @@
+{
+  "episode_id": "PD-2026-008-carpenter",
+  "slug": "carpenter",
+  "status": "COMPLETE — spine + plates",
+  "destination": {
+    "video_id": "zE3nCUlUmLY",
+    "title": "The phone in his pocket testified against him for months",
+    "url": "https://www.youtube.com/watch?v=zE3nCUlUmLY",
+    "privacy": "public",
+    "views": 18
+  },
+  "shorts_existing": [
+    "short08"
+  ],
+  "shorts_to_author": 2,
+  "existing_angles_do_not_repeat": {
+    "short08": [
+      "Your phone keeps a record of everywhere you go.",
+      "Police wanted a hundred and twenty-seven days of it, without a warrant.",
+      "Every few minutes, a phone connects to a nearby cell tower and leaves a trace of where you are.",
+      "Police got months of that location history from the carrier, and placed a suspect near a string of robberies.",
+      "In 2018, the Supreme Court said no.",
+      "This much location data needs a warrant.",
+      "For the first time, your digital trail was protected.",
+      "Watch the full story on the channel.",
+      "Follow for more."
+    ]
+  },
+  "script": "episodes\\PD-2026-008-carpenter\\03_script\\script.en.v001.md",
+  "candidate_payload_lines": [
+    "In 2011, police used 127 days of one man's location records to place him near a string of robberies — and they got those records without a warrant .",
+    "And the police had gathered that 127-day map without a warrant .",
+    "In 2010 and 2011, a series of armed robberies hit stores around Detroit, Michigan — electronics shops and phone stores, hit by a rotating crew .",
+    "They went to his wireless carriers and asked for something most people in 2011 did not know existed: his cell-site location information .",
+    "The government obtained around 127 days of Carpenter's records — almost 13,000 location points, about 12,898 in all, tracing where his phone had been .",
+    "He was convicted and sentenced to 116 years in prison .",
+    "The reason they were allowed to do that came from a rule almost no one outside a courtroom had ever heard of.",
+    "The government could get it without a warrant, because, in the eyes of the law, it was no longer really yours .",
+    "In 1979, applied to a list of dialed phone numbers, that idea was already aggressive, but it was containable .",
+    "In 2018, by a vote of five to four, the Supreme Court ruled for Carpenter .",
+    "This was not a single trip or a single call.",
+    "A blurry line invites years of new cases just to find where it really falls — and until they are decided, no one is quite sure .",
+    "It did not say the government can never see your data."
+  ],
+  "era_note": "SET THIS. Modern stock footage is only usable if the case is modern; a 1960s case dressed in present-day footage reads wrong.",
+  "shorts": [
+    {
+      "short_id": "short113",
+      "angle": "The reason nobody needed a warrant for Timothy Carpenter's twelve thousand location points was a rule from the 1970s that said anything you hand to a company stops being yours.",
+      "type": "B — a number/stakes gap (12,898 points, 116 years, no warrant)",
+      "avoids": "The existing Short states the 127 days and the 2018 outcome. It never gives the size of the map, the sentence he was serving, or the name of the doctrine that made the whole thing legal in the first place.",
+      "funnel_question_left_for_longform": "What the third-party doctrine says about every other record a company holds about you, and whether the Court touched it.",
+      "era": "2011 Detroit, Michigan",
+      "loop": true,
+      "loop_join": "L5 ends on an instruction to count, and L1 supplies the number, so the doctrine and its price tag read as one continuous thought.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "Almost thirteen thousand points on a map. That is what the government pulled on one man without asking a judge.",
+          "source_lines": [
+            "The government obtained around 127 days of Carpenter's records — almost 13,000 location points, about 12,898 in all, tracing where his phone had been"
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "In 2011, investigators went to Timothy Carpenter's carriers and asked for his cell site location information. Twelve thousand eight hundred ninety-eight points, tracing where his phone had been.",
+          "source_lines": [
+            "They went to his wireless carriers and asked for something most people in 2011 did not know existed: his cell-site location information",
+            "The government obtained around 127 days of Carpenter's records — almost 13,000 location points, about 12,898 in all, tracing where his phone had been"
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "The data placed him near several of the robberies when they happened. He was sentenced to one hundred and sixteen years in prison.",
+          "source_lines": [
+            "The data placed him near several of the robberies when they happened. He was convicted and sentenced to 116 years in prison"
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "And they got that map without a warrant. They never convinced a judge there was probable cause. They used a federal law with a far weaker standard, under a rule almost no one had heard of.",
+          "source_lines": [
+            "And the police had gathered that 127-day map without a warrant",
+            "They had not convinced a judge that there was probable cause. They had used a federal law that let them get the records on a much weaker showing",
+            "The reason they were allowed to do that came from a rule almost no one outside a courtroom had ever heard of."
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "Hand something to a company and the old rule said it stops being yours. Now count what that let them collect.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M01",
+          "subject": "thousands of pale points scattered across dark glass",
+          "source": "GENERATE",
+          "prompt": "thousands of tiny pale points scattered in dense drifts across a sheet of dark glass, forming the ghost of a city without a single name or numeral anywhere, lit ONLY by their own glow which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "glowing points abstract dark map"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "I08",
+          "subject": "a lattice tower with one red beacon burning",
+          "source": "GENERATE",
+          "prompt": "a steel lattice communications tower rising against a black sky with one red beacon burning at its top, no lettering on the structure, lit ONLY by that beacon which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "radio tower red light night"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U11",
+          "subject": "a city skyline at night from above",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "city skyline night aerial",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-57083__rooftop_city_skyline_night.mp4",
+          "bound_title": "stunning aerial night view of city skyline",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4077,
+          "motion": 4.293,
+          "luma": 36.6
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "M04",
+          "subject": "a carrier bill fanned open with every figure blank",
+          "source": "GENERATE",
+          "prompt": "a printed carrier statement fanned open across a dark kitchen table, every figure column and heading worn completely blank, lit ONLY by one pendant lamp which is switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone bill paper on table"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "U11",
+          "subject": "a carrier records counter with blank printouts",
+          "source": "GENERATE",
+          "prompt": "a records counter in a carrier office at night carrying one thick stack of blank printouts and nothing else, nobody behind it, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "office counter documents night"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "an aisle of dark equipment racks",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "server racks data center aisle",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1045__data_center.mp4",
+          "bound_title": "a call center agent talking using headset",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3927,
+          "motion": 12.594,
+          "luma": 53.4
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "I03",
+          "subject": "a printer feeding fanfold paper onto the floor",
+          "source": "GENERATE",
+          "prompt": "a heavy line printer feeding a continuous fanfold sheet down onto a dark office floor, every printed row worn completely blank, lit ONLY by one fluorescent tube switched on above it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "printer feeding continuous paper"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "I03",
+          "subject": "fanfold paper coiled deep across a dark floor",
+          "source": "GENERATE",
+          "prompt": "a continuous fanfold printout coiled in deep loops across a dark office floor and running out of frame, every row worn completely blank, lit ONLY by one desk lamp which is switched on at the edge of the pile, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "pile of computer printout paper"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a printer head crossing a blank sheet",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "printer printing paper close",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1203__circuit_board_macro.mp4",
+          "bound_title": "a close up shot of a person soldering",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4078,
+          "motion": 5.664,
+          "luma": 95.4
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "R11",
+          "subject": "a phone in a coat pocket seen from above in a dark car",
+          "source": "GENERATE",
+          "prompt": "a smartphone sitting in the pocket of a coat thrown across a car seat, seen from directly above in a dark parked car, the screen dark and not visible, lit ONLY by one street lamp which is switched on beyond the windscreen, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "phone in pocket car seat"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "M01",
+          "subject": "faint points blooming along a route through a night city",
+          "source": "GENERATE",
+          "prompt": "a night city seen from a rooftop with a chain of faint pale points blooming one after another along the route a single vehicle has taken, no place names anywhere, lit ONLY by that chain of points which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "night city rooftop lights"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "W08",
+          "subject": "a shattered display case in a dark shop",
+          "source": "GENERATE",
+          "prompt": "a smashed glass display case in a dark retail shop, glass across the floor and the shelves inside emptied, nobody in frame, lit ONLY by one emergency light switched on above the door, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "broken shop display case"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "W07",
+          "subject": "broken glass across a dark floor",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "shattered glass on floor",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0450__office_interior_dark.mp4",
+          "bound_title": "a person sitting at a desk with a computer monitor",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5087,
+          "motion": 15.349,
+          "luma": 63.0
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "U06",
+          "subject": "an empty counsel table with one chair pushed back",
+          "source": "GENERATE",
+          "prompt": "a bare counsel table in a dark courtroom with one chair pushed back from it and nobody in the room, lit ONLY by one brass lamp which is switched on at the end of the table, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty table courtroom chair"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "W04",
+          "subject": "a cell block corridor of iron doors",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "prison corridor cell doors",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1981__smartphone_in_dark.mp4",
+          "bound_title": "girl lying on bed using a cellphone",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.7249,
+          "motion": 4.702,
+          "luma": 45.8
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "W09",
+          "subject": "a tower of blank calendar pages rising out of frame",
+          "source": "GENERATE",
+          "prompt": "a towering stack of loose wall calendar pages standing on a bare concrete floor and rising up out of the top of frame, every date worn completely blank, lit ONLY by one angled work lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "tall stack of paper floor"
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "I04",
+          "subject": "a closed chambers door with one blade of light beneath it",
+          "source": "GENERATE",
+          "prompt": "a heavy closed chambers door at the end of a dark panelled corridor with one hard blade of light escaping beneath it, the nameplate worn blank, lit ONLY by that escaping light from the lamp switched on inside, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "closed door light underneath"
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "U03",
+          "subject": "a blank warrant form lying unsigned beside a capped pen",
+          "source": "GENERATE",
+          "prompt": "a completely blank official form lying unsigned on a dark desk with a capped pen resting beside it, nobody at the desk, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "blank form unsigned desk"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I01",
+          "subject": "a rubber stamp coming down on a blank page",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "rubber stamp stamping document",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0519__courtroom_interior.mp4",
+          "bound_title": "woman reading documents",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4926,
+          "motion": 1.465,
+          "luma": 54.6
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "Y05",
+          "subject": "a heavy statute volume lying open to blank pages",
+          "source": "GENERATE",
+          "prompt": "a thick statute volume lying open on a dark desk with both pages completely blank and unprinted, a ribbon marker across the gutter, lit ONLY by one desk lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open law book blank pages"
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I05",
+          "subject": "a filing drawer sliding open on unlabelled folders",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "filing cabinet drawer opening",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4262__server_room_blue.mp4",
+          "bound_title": "cinematic horror door opening",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5379,
+          "motion": 7.998,
+          "luma": 72.2
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U02",
+          "subject": "a records office door closing on a bundle of printouts",
+          "source": "GENERATE",
+          "prompt": "a heavy records office door swinging shut on a narrowing blade of light with a bundle of blank printouts sitting on the counter inside, nobody in frame, lit ONLY by that closing light from one fixture switched on within, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2011 Detroit, Michigan, ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "office door closing papers counter"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: thousands of pale points scattered across dark glass",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "glowing points abstract dark map"
+        }
+      ]
+    },
+    {
+      "short_id": "short114",
+      "angle": "Carpenter was five to four, and the four who lost warned that the majority had swapped a clear rule for a blurry line nobody could locate, which the majority admitted and took anyway.",
+      "type": "C — the opinions themselves: what the dissent warned and what the majority refused to do",
+      "avoids": "The existing Short ends on 'for the first time, your digital trail was protected'. It never says the ruling was contested, that the Court refused to overturn the old doctrine rather than replacing it, or that four justices predicted years of uncertainty.",
+      "funnel_question_left_for_longform": "Which of your other trails — searches, purchases, messages — the same logic reaches, and which it leaves exposed.",
+      "era": "2018 Washington, D.C.",
+      "loop": true,
+      "loop_join": "L5 points at the margin without stating it, and L1 states it on the restart, five to four, with the four who lost.",
+      "lines": [
+        {
+          "id": "L1",
+          "delivery": "intense",
+          "text": "Carpenter won five to four. The four who lost thought the Court had just made everything worse.",
+          "source_lines": [
+            "In 2018, by a vote of five to four, the Supreme Court ruled for Carpenter",
+            "The four dissenting justices warned that the Court had opened a door it could not close"
+          ]
+        },
+        {
+          "id": "L2",
+          "delivery": "building",
+          "text": "The majority did not throw out the old rule. It refused to extend it. Location records were different, Roberts wrote. A comprehensive, effortless chronicle of a person's movements.",
+          "source_lines": [
+            "The Court did not throw out the third-party doctrine. It refused to extend it",
+            "Cell-site location information, Roberts wrote, was a new kind of record — a comprehensive, detailed, effortless chronicle of a person's movements"
+          ]
+        },
+        {
+          "id": "L3",
+          "delivery": "building",
+          "text": "The dissenters warned the Court had opened a door it could not close. How much data is too much? They said it had traded a clear rule for a vague one.",
+          "source_lines": [
+            "The four dissenting justices warned that the Court had opened a door it could not close",
+            "Where exactly is the line? How much data is too much?",
+            "They argued the Court had traded a clear rule for a vague one, and that drawing these lines was a job for legislatures, not judges"
+          ]
+        },
+        {
+          "id": "L4",
+          "delivery": "intense",
+          "text": "And they had a point. A clear rule tells police exactly what they may do. A blurry line invites years of new cases just to find where it falls.",
+          "source_lines": [
+            "A clear rule, even an uncomfortable one, tells the police exactly what they may do. A blurry line invites years of new cases just to find where it really falls"
+          ]
+        },
+        {
+          "id": "L5",
+          "delivery": "calm",
+          "text": "Nobody on that Court thought the answer was easy. The margin says so, and so does what the dissenters wrote.",
+          "source_lines": []
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "motif": "R08",
+          "subject": "nine empty chairs behind a long bench, five lit and four in shadow",
+          "source": "GENERATE",
+          "prompt": "nine identical empty high backed chairs standing behind one long dark judicial bench, the five on the left clearly lit and the four on the right falling into deep shadow, no inscriptions anywhere, lit ONLY by one bank of lamps switched on above the bench, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty judges bench chairs"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "a chamber door standing ajar with light spilling through the gap",
+          "source": "GENERATE",
+          "prompt": "a tall panelled chamber door standing ajar with hard light spilling through the vertical gap into a dark room, nobody in frame, lit ONLY by that light beyond the gap thrown by one fixture switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "door ajar light spilling dark"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U02",
+          "subject": "heavy wooden double doors swinging closed",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "heavy wooden doors closing",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2370__school_hallway_empty.mp4",
+          "bound_title": "two doors in a hospital isle are wide open",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4499,
+          "motion": 2.419,
+          "luma": 98.7
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L1",
+          "motif": "U06",
+          "subject": "four empty chairs pushed back from a long table",
+          "source": "GENERATE",
+          "prompt": "four plain chairs pushed back from the far end of a long polished table and left at angles, nobody in the room, lit ONLY by one pendant which is switched on above that end of the table, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "empty chairs pushed back table"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L2",
+          "motif": "Y05",
+          "subject": "a closed volume left on a dark library shelf",
+          "source": "GENERATE",
+          "prompt": "one heavy leather bound volume left closed on a dark library shelf among identical others, every spine worn completely blank, lit ONLY by one reading lamp which is switched on beside the shelf, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "leather books library shelf dark"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L2",
+          "motif": "I06",
+          "subject": "a shoe stopping just short of a line on a dark floor",
+          "source": "GENERATE",
+          "prompt": "a single worn shoe stopping just short of a hard painted line drawn across a dark concrete floor, nothing visible above the ankle, lit ONLY by one work lamp which is switched on overhead, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "painted line concrete floor"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a hand writing in a notebook under a lamp",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands writing notebook pen",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3208__handshake_business.mp4",
+          "bound_title": "group of people shaking hands",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4507,
+          "motion": 40.105,
+          "luma": 110.8
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L2",
+          "motif": "M01",
+          "subject": "an unbroken chain of pale points crossing dark glass",
+          "source": "GENERATE",
+          "prompt": "one unbroken chain of pale points running edge to edge across a sheet of dark glass in a single continuous path, no names or numerals anywhere, lit ONLY by their own glow which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "continuous glowing path abstract"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L2",
+          "motif": "U11",
+          "subject": "a night city with one route glowing faintly through it",
+          "source": "GENERATE",
+          "prompt": "a night city seen from above with one faint continuous route glowing through the grid of dark blocks, no place names anywhere, lit ONLY by that glowing route which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "aerial city grid night"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L2",
+          "motif": "M03",
+          "subject": "night traffic streaming through a dark junction",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "city traffic timelapse night aerial",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0369__blurred_city_night_bokeh.mp4",
+          "bound_title": "traffic",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3867,
+          "motion": 13.06,
+          "luma": 108.2
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L2",
+          "motif": "U03",
+          "subject": "a chambers desk with one blank sheet and a fountain pen",
+          "source": "GENERATE",
+          "prompt": "a writing desk in dark chambers at night carrying one completely blank sheet and an uncapped fountain pen, the chair behind it empty, lit ONLY by one green shaded lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "writing desk lamp night chambers"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L3",
+          "motif": "I04",
+          "subject": "an open door with its hinge pin lying on the floor",
+          "source": "GENERATE",
+          "prompt": "a heavy door standing open against a dark wall with its hinge pin lying on the floor beneath it, nobody in frame, lit ONLY by the hard corridor fixture which is switched on beyond the doorway, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "open door hinge dark hallway"
+        },
+        {
+          "n": 13,
+          "role": "body",
+          "line": "L3",
+          "motif": "M03",
+          "subject": "reels of magnetic tape turning in the dark",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "magnetic tape reels spinning",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9720__clock_ticking_macro.mp4",
+          "bound_title": "spinning clock",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.5229,
+          "motion": 5.689,
+          "luma": 178.0
+        },
+        {
+          "n": 14,
+          "role": "body",
+          "line": "L3",
+          "motif": "I03",
+          "subject": "unlabelled data cartridges spilling off a steel shelf",
+          "source": "GENERATE",
+          "prompt": "a heap of unlabelled data cartridges spilling off the edge of a steel shelf onto a dark floor, every label worn completely blank, lit ONLY by one fluorescent tube switched on above, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "data cartridges shelf storage"
+        },
+        {
+          "n": 15,
+          "role": "body",
+          "line": "L3",
+          "motif": "I06",
+          "subject": "two painted lines on concrete, one crisp and one smeared",
+          "source": "GENERATE",
+          "prompt": "two painted lines running side by side across a dark concrete floor, one of them crisp and hard edged and the other smeared into a wide blur, lit ONLY by one work lamp which is switched on above them, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "painted lines factory floor"
+        },
+        {
+          "n": 16,
+          "role": "body",
+          "line": "L3",
+          "motif": "R07",
+          "subject": "a gavel resting on its block",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "gavel resting wooden block",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9885__chess_board_dramatic.mp4",
+          "bound_title": "a wooden chess piece rolling",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4521,
+          "motion": 9.72,
+          "luma": 81.3
+        },
+        {
+          "n": 17,
+          "role": "body",
+          "line": "L4",
+          "motif": "R01",
+          "subject": "a hard edged beacon wash on a brick wall",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "police lights reflecting wall night",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0372__blurred_city_night_bokeh.mp4",
+          "bound_title": "bokeh effect night city traffic lights",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.4266,
+          "motion": 7.897,
+          "luma": 44.4
+        },
+        {
+          "n": 18,
+          "role": "body",
+          "line": "L4",
+          "motif": "R01",
+          "subject": "the same beacon smeared through heavy fog",
+          "source": "GENERATE",
+          "prompt": "the wash of a police beacon thrown onto a brick wall but smeared and diffused through heavy fog until its edge cannot be found, the vehicle out of frame, lit ONLY by that beacon which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "fog light diffuse night wall"
+        },
+        {
+          "n": 19,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I02",
+          "subject": "a corridor of identical closed chamber doors",
+          "source": "GENERATE",
+          "prompt": "a long panelled corridor of identical closed chamber doors receding into darkness, every nameplate worn blank, lit ONLY by one row of ceiling fixtures which are switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "corridor identical closed doors"
+        },
+        {
+          "n": 20,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U07",
+          "subject": "stacked bundles of documents on a desk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stack of legal documents desk",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0373__blurred_city_night_bokeh.mp4",
+          "bound_title": "vibrant bokeh of city traffic lights at night",
+          "bound_license": "free_commercial",
+          "bound_source": "pexels",
+          "centre_energy": 0.3865,
+          "motion": 1.0,
+          "luma": 40.6
+        },
+        {
+          "n": 21,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "I05",
+          "subject": "a loaded docket cart pushed down a dark corridor",
+          "source": "GENERATE",
+          "prompt": "a steel docket cart loaded with tied bundles of blank files being pushed away down a dark corridor with motion blur on the wheels, only a hand on the rail visible, lit ONLY by one ceiling fixture switched on ahead of it, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "cart trolley files corridor"
+        },
+        {
+          "n": 22,
+          "role": "payoff",
+          "line": "L4",
+          "motif": "U06",
+          "subject": "one lamp burning over an empty bench in a black chamber",
+          "source": "GENERATE",
+          "prompt": "a single brass lamp burning over one end of an empty judicial bench while the rest of the vast chamber falls into total black, lit ONLY by that lamp which is switched on, the subject held in the middle third of the tall frame between y560 and y1180 with quiet empty darkness above it and below it, no face or likeness visible, vertical 9:16 composition, cinematic film still, anamorphic, 35mm grain, 2018 Washington, D.C., ONE hard practical light source which is switched on and is the only light in frame, strong chiaroscuro, the subject clearly lit against deep shadow, smoke and volumetric light shafts, desaturated amber and steel blue, shallow depth of field, photorealistic, no lettering, no signage, no readable text",
+          "footage_query": "single lamp bench dark chamber"
+        },
+        {
+          "n": 23,
+          "role": "loop",
+          "line": "L5",
+          "motif": "U14",
+          "subject": "return to plate 01: nine empty chairs behind a long bench, five lit and four in shadow",
+          "source": "REUSE_01",
+          "prompt": null,
+          "footage_query": "empty judges bench chairs"
+        }
+      ]
+    }
+  ],
+  "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
+}

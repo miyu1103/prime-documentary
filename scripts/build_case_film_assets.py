@@ -552,9 +552,26 @@ def main():
     foot_seq=list(foot_pool[:n_foot])                    # each distinct clip used exactly once
     # image round-robin: least-used first, honoring the min-gap when possible (reuse allowed)
     img_used={}; img_last={}
+    # Tie-break by a CURSOR that walks the pool, not by list order.
+    #
+    # With more stills than image cuts (EP54: 133 stills, 119 image cuts) every still starts at
+    # use-count 0 and last-seen -999, so the old sort resolved every tie on the list order and
+    # took the first 119 names alphabetically. The tail of the pool was never reached -- and the
+    # tail is exactly where newly delivered stills land. EP54's 14 purpose-made courtroom images
+    # (S211-S224, generated because the archive has NO courtroom footage at all) were dropped
+    # this way and then retired to img_unused as "unreferenced". Silent, and the worst possible
+    # 14 to lose. The cursor makes selection sweep the whole pool instead.
+    img_cursor=[0]
     def pick_img(i):
         elig=[s for s in imgs if i-img_last.get(s,-999)>MIN_GAP] or imgs
-        s=sorted(elig,key=lambda s:(img_used.get(s,0), img_last.get(s,-999)))[0]
+        least=min(img_used.get(s,0) for s in elig)
+        tier=[s for s in elig if img_used.get(s,0)==least]
+        order={s:k for k,s in enumerate(imgs)}
+        start=img_cursor[0]%len(imgs)
+        # first candidate at or after the cursor, wrapping -- so consecutive picks advance
+        # through the pool rather than returning to its head
+        s=min(tier,key=lambda s:((order[s]-start)%len(imgs), img_last.get(s,-999)))
+        img_cursor[0]=order[s]+1
         img_used[s]=img_used.get(s,0)+1; img_last[s]=i
         return s
     # FOOTAGE only on SHORT slots. A nearly-static footage clip (e.g. a locked-off library shot)
