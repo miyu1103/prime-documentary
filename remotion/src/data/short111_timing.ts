@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT111_TOTAL_SEC = 41.354;
+export const SHORT111_TOTAL_SEC = 59.662;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 33.667,
     "end": 40.354
+  },
+  {
+    "id": "L6",
+    "start": 40.574,
+    "end": 45.497
+  },
+  {
+    "id": "L7",
+    "start": 45.717,
+    "end": 52.219
+  },
+  {
+    "id": "L8",
+    "start": 52.439,
+    "end": 58.662
   }
 ];
 
@@ -140,23 +155,78 @@ export const SHORT111_CAPTIONS: ShortCaption[] = [
     "endSec": 33.447
   },
   {
-    "word": "So the core of the rule survives",
+    "word": "Before 1961",
     "startSec": 33.667,
-    "endSec": 35.705
+    "endSec": 34.367
+  },
+  {
+    "word": "most states could use what",
+    "startSec": 34.367,
+    "endSec": 35.992
+  },
+  {
+    "word": "an illegal search turned up. Wolf v.",
+    "startSec": 35.992,
+    "endSec": 38.242
+  },
+  {
+    "word": "Colorado left them free to choose.",
+    "startSec": 38.242,
+    "endSec": 40.354
+  },
+  {
+    "word": "The Court answered with a principle.",
+    "startSec": 40.574,
+    "endSec": 42.588
+  },
+  {
+    "word": "A real right needs a real",
+    "startSec": 42.588,
+    "endSec": 43.987
+  },
+  {
+    "word": "remedy when it is violated.",
+    "startSec": 43.987,
+    "endSec": 45.497
+  },
+  {
+    "word": "Without one",
+    "startSec": 45.717,
+    "endSec": 46.432
+  },
+  {
+    "word": "the Court said",
+    "startSec": 46.432,
+    "endSec": 47.343
+  },
+  {
+    "word": "the protection becomes a form of words:",
+    "startSec": 47.343,
+    "endSec": 49.878
+  },
+  {
+    "word": "a guarantee nobody can actually use.",
+    "startSec": 49.878,
+    "endSec": 52.219
+  },
+  {
+    "word": "So the core of the rule survives",
+    "startSec": 52.439,
+    "endSec": 54.336
   },
   {
     "word": "exceptions and all",
-    "startSec": 35.705,
-    "endSec": 36.851
+    "startSec": 54.336,
+    "endSec": 55.402
   },
   {
     "word": "and it still ends cases.",
-    "startSec": 36.851,
-    "endSec": 38.38
+    "startSec": 55.402,
+    "endSec": 56.825
   },
   {
     "word": "Which means this happens again.",
-    "startSec": 38.38,
-    "endSec": 40.354
+    "startSec": 56.825,
+    "endSec": 58.662
   }
 ];

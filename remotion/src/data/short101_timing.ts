@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT101_TOTAL_SEC = 32.067;
+export const SHORT101_TOTAL_SEC = 50.514;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 26.237,
     "end": 31.067
+  },
+  {
+    "id": "L6",
+    "start": 31.287,
+    "end": 38.253
+  },
+  {
+    "id": "L7",
+    "start": 38.473,
+    "end": 44.65
+  },
+  {
+    "id": "L8",
+    "start": 44.87,
+    "end": 49.514
   }
 ];
 
@@ -115,23 +130,83 @@ export const SHORT101_CAPTIONS: ShortCaption[] = [
     "endSec": 26.017
   },
   {
-    "word": "Years later",
+    "word": "The State's own crime lab had",
     "startSec": 26.237,
-    "endSec": 26.937
+    "endSec": 27.477
+  },
+  {
+    "word": "already typed the blood on the",
+    "startSec": 27.477,
+    "endSec": 28.759
+  },
+  {
+    "word": "victim's clothes as type B.",
+    "startSec": 28.759,
+    "endSec": 29.913
+  },
+  {
+    "word": "Thompson's blood is type O.",
+    "startSec": 29.913,
+    "endSec": 31.067
+  },
+  {
+    "word": "In 1994 a dying prosecutor told",
+    "startSec": 31.287,
+    "endSec": 33.043
+  },
+  {
+    "word": "a colleague he had hidden the",
+    "startSec": 33.043,
+    "endSec": 34.685
+  },
+  {
+    "word": "blood evidence in the Thompson case.",
+    "startSec": 34.685,
+    "endSec": 36.724
+  },
+  {
+    "word": "And still nothing happened.",
+    "startSec": 36.724,
+    "endSec": 38.253
+  },
+  {
+    "word": "No call.",
+    "startSec": 38.473,
+    "endSec": 39.173
+  },
+  {
+    "word": "No motion filed.",
+    "startSec": 39.173,
+    "endSec": 40.224
+  },
+  {
+    "word": "The secret settled back into the dark",
+    "startSec": 40.224,
+    "endSec": 42.656
+  },
+  {
+    "word": "and Thompson kept waiting to die.",
+    "startSec": 42.656,
+    "endSec": 44.65
+  },
+  {
+    "word": "Years later",
+    "startSec": 44.87,
+    "endSec": 45.57
   },
   {
     "word": "the Supreme Court decided the",
-    "startSec": 26.937,
-    "endSec": 28.427
+    "startSec": 45.57,
+    "endSec": 47.003
   },
   {
     "word": "office that buried that report",
-    "startSec": 28.427,
-    "endSec": 29.969
+    "startSec": 47.003,
+    "endSec": 48.485
   },
   {
     "word": "owed him nothing at all.",
-    "startSec": 29.969,
-    "endSec": 31.067
+    "startSec": 48.485,
+    "endSec": 49.514
   }
 ];

@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT118_TOTAL_SEC = 45.394;
+export const SHORT118_TOTAL_SEC = 66.256;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 36.081,
     "end": 44.394
+  },
+  {
+    "id": "L6",
+    "start": 44.614,
+    "end": 51.162
+  },
+  {
+    "id": "L7",
+    "start": 51.382,
+    "end": 56.723
+  },
+  {
+    "id": "L8",
+    "start": 56.943,
+    "end": 65.256
   }
 ];
 
@@ -140,28 +155,83 @@ export const SHORT118_CAPTIONS: ShortCaption[] = [
     "endSec": 35.861
   },
   {
-    "word": "The houses were gone",
+    "word": "The city never claimed Fort",
     "startSec": 36.081,
-    "endSec": 37.38
+    "endSec": 38.326
+  },
+  {
+    "word": "Trumbull was a slum",
+    "startSec": 38.326,
+    "endSec": 39.905
+  },
+  {
+    "word": "and the Court did not say",
+    "startSec": 39.905,
+    "endSec": 41.983
+  },
+  {
+    "word": "the homes had to be blighted.",
+    "startSec": 41.983,
+    "endSec": 44.394
+  },
+  {
+    "word": "Some families had lived there for generations.",
+    "startSec": 44.614,
+    "endSec": 47.124
+  },
+  {
+    "word": "They were paid market value",
+    "startSec": 47.124,
+    "endSec": 48.597
+  },
+  {
+    "word": "which does not buy back",
+    "startSec": 48.597,
+    "endSec": 49.852
+  },
+  {
+    "word": "a lifetime in one place.",
+    "startSec": 49.852,
+    "endSec": 51.162
+  },
+  {
+    "word": "For a long time the most famous",
+    "startSec": 51.382,
+    "endSec": 53.182
+  },
+  {
+    "word": "use of the bulldozed land was as",
+    "startSec": 53.182,
+    "endSec": 55.039
+  },
+  {
+    "word": "a place to dump storm debris.",
+    "startSec": 55.039,
+    "endSec": 56.723
+  },
+  {
+    "word": "The houses were gone",
+    "startSec": 56.943,
+    "endSec": 58.242
   },
   {
     "word": "the company was gone",
-    "startSec": 37.38,
-    "endSec": 38.679
+    "startSec": 58.242,
+    "endSec": 59.541
   },
   {
     "word": "and the ruling still stood.",
-    "startSec": 38.679,
-    "endSec": 40.432
+    "startSec": 59.541,
+    "endSec": 61.294
   },
   {
     "word": "Which raises the obvious question of",
-    "startSec": 40.432,
-    "endSec": 42.77
+    "startSec": 61.294,
+    "endSec": 63.632
   },
   {
     "word": "what anyone did about it.",
-    "startSec": 42.77,
-    "endSec": 44.394
+    "startSec": 63.632,
+    "endSec": 65.256
   }
 ];

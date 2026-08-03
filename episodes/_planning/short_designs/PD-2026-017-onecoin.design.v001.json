@@ -62,40 +62,69 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "In 2016, Britain's financial regulator put out a public warning about OneCoin. It kept selling.",
+          "delivery": "intense",
           "source_lines": [
             "In 2016, Britain's financial regulator put out a public warning about OneCoin."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "In April 2017, Germany ordered the operation to dismantle its trading system and stop selling immediately.",
+          "delivery": "building",
           "source_lines": [
             "In April 2017, it ordered the OneCoin operation to dismantle its trading system and to stop selling in Germany immediately."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "None of it was secret, or hard, or expensive to discover.",
+          "delivery": "building",
           "source_lines": [
             "None of it was secret, or hard, or expensive to discover."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "And none of it stopped the thing. Because the desire for it to be true was simply stronger than the willingness to check.",
+          "delivery": "intense",
           "source_lines": [
             "And none of it stopped the thing — because the desire for it to be true was simply stronger than the willingness to check."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Less than a year later, that warning quietly came down. The BBC reported it was taken down after pressure from OneCoin's lawyers.",
+          "delivery": "building",
+          "source_lines": [
+            "And then, less than a year later, that warning quietly came down.",
+            "The BBC reported it was taken down after pressure from OneCoin's lawyers."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The engineers were saying there was no coin. One regulator had warned its citizens. Another had ordered the thing dismantled. And OneCoin kept growing.",
+          "delivery": "building",
+          "source_lines": [
+            "The engineers are saying there is no coin.",
+            "One national regulator has publicly warned its citizens.",
+            "Another has ordered the thing dismantled.",
+            "And through all of it, OneCoin keeps growing."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The believers were not bystanders to the warnings. They had been paid, in advance, to fight them. A warning was not evidence to consider.",
+          "delivery": "intense",
+          "source_lines": [
+            "The believers were not bystanders to the warnings",
+            "To a true believer, a regulator's warning was not evidence to consider."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Two countries' regulators said it out loud, in public, in plain language. So what is a warning worth, if nobody wants to hear it?",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -139,13 +168,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "cash stacks money",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4129__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7992__cash_stacks_money.mp4",
           "bound_title": "a person using a calculator and counting cash",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4457,
           "motion": 3.353,
-          "luma": 174.7
+          "luma": 174.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
         },
         {
           "n": 5,
@@ -186,13 +217,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "person signing a document",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8252__contract_paperwork_signing.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32810__contract_paperwork_signing.mp4",
           "bound_title": "person signing a documents",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4379,
           "motion": 3.92,
-          "luma": 127.6
+          "luma": 127.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.345
         },
         {
           "n": 9,
@@ -213,13 +246,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "door closing dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\loops\\AF-LOOP-0047__particle_loop_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8121__bank_vault_door.mp4",
           "bound_title": "vibrant particle explosion animation in dark space",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4817,
           "motion": 16.959,
-          "luma": 45.5
+          "luma": 45.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
         },
         {
           "n": 11,
@@ -340,23 +375,237 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "silhouette walking away corridor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2368__school_hallway_empty.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-49457__lone_businessman_walking_corridor.mp4",
           "bound_title": "corridor with tight walls and window in distance",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5916,
           "motion": 0.87,
-          "luma": 73.8
+          "luma": 73.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
         },
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate — identical framing to plate 01",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I03",
+          "subject": "a hand pulling the pin out of a corkboard, the notice removed",
+          "source": "FOOTAGE",
+          "footage_query": "a hand removing a pin from corkboard",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51098__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a leather briefcase set down on a polished floor",
+          "source": "FOOTAGE",
+          "footage_query": "a leather briefcase on a polished floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41348__open_briefcase_of_cash.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.326
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "R05",
+          "subject": "the stone columns of the regulator's own building",
+          "source": "FOOTAGE",
+          "footage_query": "stone columns of a government building",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5457__bank_building_columns.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.336
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "hands typing quickly on a computer keyboard",
+          "source": "FOOTAGE",
+          "footage_query": "hands typing on a computer keyboard",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12499__wooden_desk_lamp_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "M05",
+          "subject": "a television camera in a bright studio, the report going out",
+          "source": "FOOTAGE",
+          "footage_query": "a television camera in a bright studio",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21737__cctv_monitor_grid_wall.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W05",
+          "subject": "a technician holding a circuit board, the engineers' verdict",
+          "source": "FOOTAGE",
+          "footage_query": "a technician holding a circuit board",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16843__circuit_board_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "a metal shutter pulled down over a shopfront, ordered to stop",
+          "source": "FOOTAGE",
+          "footage_query": "a metal shutter pulled down over shopfront",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14519__courtroom_empty_wide.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "a screwdriver taking the screws out of a panel, dismantling",
+          "source": "FOOTAGE",
+          "footage_query": "a screwdriver removing screws from a panel",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16842__circuit_board_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U09",
+          "subject": "a crowd filling a bright convention hall, still growing",
+          "source": "FOOTAGE",
+          "footage_query": "a crowd filling a bright convention hall",
+          "prompt": null
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "people riding an escalator upward",
+          "source": "FOOTAGE",
+          "footage_query": "people riding an escalator upward",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21663__elevator_interior_steel.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.36
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I02",
+          "subject": "an audience clapping in a conference hall, not bystanders",
+          "source": "FOOTAGE",
+          "footage_query": "an audience clapping in a conference hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26007__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R12",
+          "subject": "an envelope of banknotes handed across a table, paid in advance",
+          "source": "FOOTAGE",
+          "footage_query": "an envelope of banknotes handed across a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63204__tax_forms_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "R04",
+          "subject": "people arguing around a meeting table",
+          "source": "FOOTAGE",
+          "footage_query": "people arguing around a meeting table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46946__lawyer_and_client_meeting_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y05",
+          "subject": "a hand sliding a folder away across a desk, not considered",
+          "source": "FOOTAGE",
+          "footage_query": "a hand sliding a folder across a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46653__person_reading_a_letter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.333
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "R10",
+          "subject": "glass office doors swinging shut",
+          "source": "FOOTAGE",
+          "footage_query": "glass office doors swinging shut",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26011__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
         }
       ]
     },
@@ -372,40 +621,66 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The people who lost everything were not fools. From the inside, none of it could be seen.",
+          "delivery": "intense",
           "source_lines": [
             "And from the inside, none of this could be seen, because OneCoin had built a world with no exits."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "OneCoin had built a world with no exits. Every question you asked was answered from inside the same building.",
+          "delivery": "building",
           "source_lines": [
             "And from the inside, none of this could be seen, because OneCoin had built a world with no exits."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "And the answer that came back, again and again, was never quite an answer.",
+          "delivery": "building",
           "source_lines": [
             "And the answer that came back, again and again, was never quite an answer."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "The polish quietly did the work that the proof never had to do.",
+          "delivery": "intense",
           "source_lines": [
             "The polish quietly does the work that the proof never had to do."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "You could watch your balance climb on a company screen, and the number only ever went up, because the company set the number.",
+          "delivery": "building",
+          "source_lines": [
+            "You could watch your balance climb on a company screen, and the number only ever went up"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "You could not really sell. You could not move your coins into an open market and learn what a stranger would actually pay.",
+          "delivery": "building",
+          "source_lines": [
+            "You could not really sell.",
+            "You could not move your coins out into an open market and discover what a stranger, with no stake in your hope, would actually pay for one."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "To the believer, that rising number was the proof. And it was, in fact, the single cheapest thing in the entire operation to produce.",
+          "delivery": "intense",
+          "source_lines": [
+            "To the believer, that rising number was the proof.",
+            "It was, in fact, the single cheapest thing in the entire operation to produce."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Every exit led back into the same building, and every answer came from the same people. So how would you have known?",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -439,13 +714,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "cash stacks money",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6472__us_constitution_document.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41350__open_briefcase_of_cash.mp4",
           "bound_title": "a stack of money on top of a newspaper",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3886,
           "motion": 14.822,
-          "luma": 174.4
+          "luma": 174.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
         },
         {
           "n": 4,
@@ -526,13 +803,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "door closing dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3531__abstract_dark_background.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2208__warehouse_interior_dark.mp4",
           "bound_title": "dynamic abstract light art on dark background",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3855,
           "motion": 48.047,
-          "luma": 85.8
+          "luma": 85.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
         },
         {
           "n": 12,
@@ -563,13 +842,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "person signing a document",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-49834__person_signing_document_hand.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32813__contract_paperwork_signing.mp4",
           "bound_title": "close up video of a person signing documents",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3852,
           "motion": 20.158,
-          "luma": 128.6
+          "luma": 128.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.349
         },
         {
           "n": 15,
@@ -650,23 +931,240 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "silhouette walking away corridor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2587__crowd_silhouette.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46103__person_crying_silhouette_window.mp4",
           "bound_title": "silhouettes of people walking in sunset light",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5199,
           "motion": 15.131,
-          "luma": 126.9
+          "luma": 126.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
         },
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate — identical framing to plate 01",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U08",
+          "subject": "a wall of screens all showing the same rising chart",
+          "source": "FOOTAGE",
+          "footage_query": "screens on a wall showing rising charts",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12692__trading_floor_screens.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "a person watching the balance climb on a company screen",
+          "source": "FOOTAGE",
+          "footage_query": "a person watching a screen in an office",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-18395__empty_office_cubicles.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.334
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "a hand turning a dial on a control panel, setting the number",
+          "source": "FOOTAGE",
+          "footage_query": "a hand turning a dial on a panel",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33918__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.336
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a printer feeding out a blank sheet",
+          "source": "FOOTAGE",
+          "footage_query": "a printer feeding out a blank sheet",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33919__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.339
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "M06",
+          "subject": "gold coins stacked on a wooden table",
+          "source": "FOOTAGE",
+          "footage_query": "gold coins stacked on a wooden table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12607__gold_bars_stacked.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "a busy outdoor market in daylight, the open market you never reached",
+          "source": "FOOTAGE",
+          "footage_query": "a busy outdoor market in daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30079__stock_market_screen.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "R02",
+          "subject": "coins passed from one hand to another",
+          "source": "FOOTAGE",
+          "footage_query": "coins passed from one hand to another",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-50348__wedding_ring_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "a locked turnstile in an empty hall, no way out",
+          "source": "FOOTAGE",
+          "footage_query": "a locked turnstile in an empty hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11244__subway_tunnel_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "R10",
+          "subject": "a cash machine on a city street",
+          "source": "FOOTAGE",
+          "footage_query": "a cash machine on a city street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24507__atm_machine_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "R07",
+          "subject": "an auction hammer resting on a block, what a stranger would pay",
+          "source": "FOOTAGE",
+          "footage_query": "an auction hammer resting on a block",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38236__prison_yard_fence.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "a believer looking down at the number on a phone",
+          "source": "FOOTAGE",
+          "footage_query": "a person looking down at a phone",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5037__smartphone_in_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U01",
+          "subject": "a finger pointing at a computer screen, that is the proof",
+          "source": "FOOTAGE",
+          "footage_query": "a finger pointing at a computer screen",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6169__handshake_business.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W05",
+          "subject": "a hand pressing the keys of a calculator",
+          "source": "FOOTAGE",
+          "footage_query": "a hand pressing keys on a calculator",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6466__us_constitution_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.338
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y05",
+          "subject": "a flat empty cardboard box on a table, cheap to produce",
+          "source": "FOOTAGE",
+          "footage_query": "a flat empty cardboard box on a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8913__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y01",
+          "subject": "empty metal shelving in a bright warehouse",
+          "source": "FOOTAGE",
+          "footage_query": "empty metal shelving in a bright warehouse",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2216__warehouse_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
         }
       ]
     }

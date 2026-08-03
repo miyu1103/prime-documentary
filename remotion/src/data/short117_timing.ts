@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT117_TOTAL_SEC = 40.983;
+export const SHORT117_TOTAL_SEC = 60.869;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 33.992,
     "end": 39.983
+  },
+  {
+    "id": "L6",
+    "start": 40.203,
+    "end": 48.376
+  },
+  {
+    "id": "L7",
+    "start": 48.596,
+    "end": 53.333
+  },
+  {
+    "id": "L8",
+    "start": 53.553,
+    "end": 59.869
   }
 ];
 
@@ -135,23 +150,73 @@ export const SHORT117_CAPTIONS: ShortCaption[] = [
     "endSec": 33.772
   },
   {
-    "word": "Her warning was a dissent",
+    "word": "Justice Thomas wrote a separate dissent",
     "startSec": 33.992,
-    "endSec": 35.405
+    "endSec": 36.078
+  },
+  {
+    "word": "arguing the Court had drifted far from",
+    "startSec": 36.078,
+    "endSec": 38.111
+  },
+  {
+    "word": "the original meaning of the clause.",
+    "startSec": 38.111,
+    "endSec": 39.983
+  },
+  {
+    "word": "One vote in the majority",
+    "startSec": 40.203,
+    "endSec": 41.614
+  },
+  {
+    "word": "came with a caveat.",
+    "startSec": 41.614,
+    "endSec": 42.731
+  },
+  {
+    "word": "Kennedy wrote separately that a merely pretextual",
+    "startSec": 42.731,
+    "endSec": 45.612
+  },
+  {
+    "word": "public purpose would still be unconstitutional.",
+    "startSec": 45.612,
+    "endSec": 48.376
+  },
+  {
+    "word": "It was five to four",
+    "startSec": 48.596,
+    "endSec": 49.667
+  },
+  {
+    "word": "and unlike many such splits it did",
+    "startSec": 49.667,
+    "endSec": 51.585
+  },
+  {
+    "word": "not fall along the usual lines.",
+    "startSec": 51.585,
+    "endSec": 53.333
+  },
+  {
+    "word": "Her warning was a dissent",
+    "startSec": 53.553,
+    "endSec": 55.043
   },
   {
     "word": "which means it never became the law.",
-    "startSec": 35.405,
-    "endSec": 37.44
+    "startSec": 55.043,
+    "endSec": 57.188
   },
   {
     "word": "The majority's rule is",
-    "startSec": 37.44,
-    "endSec": 38.683
+    "startSec": 57.188,
+    "endSec": 58.499
   },
   {
     "word": "the one still standing.",
-    "startSec": 38.683,
-    "endSec": 39.983
+    "startSec": 58.499,
+    "endSec": 59.869
   }
 ];

@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT105_TOTAL_SEC = 25.704;
+export const SHORT105_TOTAL_SEC = 46.751;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 18.527,
     "end": 24.704
+  },
+  {
+    "id": "L6",
+    "start": 24.924,
+    "end": 30.915
+  },
+  {
+    "id": "L7",
+    "start": 31.135,
+    "end": 38.983
+  },
+  {
+    "id": "L8",
+    "start": 39.203,
+    "end": 45.751
   }
 ];
 
@@ -100,28 +115,93 @@ export const SHORT105_CAPTIONS: ShortCaption[] = [
     "endSec": 18.307
   },
   {
-    "word": "Every exit led back",
+    "word": "You could watch your balance",
     "startSec": 18.527,
-    "endSec": 19.584
+    "endSec": 19.968
+  },
+  {
+    "word": "climb on a company screen",
+    "startSec": 19.968,
+    "endSec": 21.255
+  },
+  {
+    "word": "and the number only ever went up",
+    "startSec": 21.255,
+    "endSec": 22.902
+  },
+  {
+    "word": "because the company set the number.",
+    "startSec": 22.902,
+    "endSec": 24.704
+  },
+  {
+    "word": "You could not really sell.",
+    "startSec": 24.924,
+    "endSec": 26.233
+  },
+  {
+    "word": "You could not move your coins",
+    "startSec": 26.233,
+    "endSec": 27.693
+  },
+  {
+    "word": "into an open market and learn",
+    "startSec": 27.693,
+    "endSec": 29.153
+  },
+  {
+    "word": "what a stranger would actually pay.",
+    "startSec": 29.153,
+    "endSec": 30.915
+  },
+  {
+    "word": "To the believer",
+    "startSec": 31.135,
+    "endSec": 32.069
+  },
+  {
+    "word": "that rising number was the proof.",
+    "startSec": 32.069,
+    "endSec": 34.125
+  },
+  {
+    "word": "And it was in fact",
+    "startSec": 34.125,
+    "endSec": 35.246
+  },
+  {
+    "word": "the single cheapest thing in",
+    "startSec": 35.246,
+    "endSec": 36.99
+  },
+  {
+    "word": "the entire operation to produce.",
+    "startSec": 36.99,
+    "endSec": 38.983
+  },
+  {
+    "word": "Every exit led back",
+    "startSec": 39.203,
+    "endSec": 40.324
   },
   {
     "word": "into the same building",
-    "startSec": 19.584,
-    "endSec": 20.809
+    "startSec": 40.324,
+    "endSec": 41.622
   },
   {
     "word": "and every answer came",
-    "startSec": 20.809,
-    "endSec": 21.977
+    "startSec": 41.622,
+    "endSec": 42.86
   },
   {
     "word": "from the same people.",
-    "startSec": 21.977,
-    "endSec": 23.146
+    "startSec": 42.86,
+    "endSec": 44.099
   },
   {
     "word": "So how would you have known?",
-    "startSec": 23.146,
-    "endSec": 24.704
+    "startSec": 44.099,
+    "endSec": 45.751
   }
 ];

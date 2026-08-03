@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT122_TOTAL_SEC = 35.038;
+export const SHORT122_TOTAL_SEC = 55.482;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 29.44,
     "end": 34.038
+  },
+  {
+    "id": "L6",
+    "start": 34.258,
+    "end": 42.339
+  },
+  {
+    "id": "L7",
+    "start": 42.559,
+    "end": 49.664
+  },
+  {
+    "id": "L8",
+    "start": 49.884,
+    "end": 54.482
   }
 ];
 
@@ -140,23 +155,88 @@ export const SHORT122_CAPTIONS: ShortCaption[] = [
     "endSec": 29.22
   },
   {
-    "word": "So find the moment you",
+    "word": "Critics answer that it can",
     "startSec": 29.44,
-    "endSec": 30.644
+    "endSec": 30.306
+  },
+  {
+    "word": "quietly close the courthouse door",
+    "startSec": 30.306,
+    "endSec": 31.406
+  },
+  {
+    "word": "leaving widespread small harms with no",
+    "startSec": 31.406,
+    "endSec": 32.672
+  },
+  {
+    "word": "realistic remedy and no public precedent.",
+    "startSec": 32.672,
+    "endSec": 34.038
+  },
+  {
+    "word": "The claims about cost",
+    "startSec": 34.258,
+    "endSec": 35.672
+  },
+  {
+    "word": "speed and outcomes are genuinely disputed.",
+    "startSec": 35.672,
+    "endSec": 38.501
+  },
+  {
+    "word": "What the case settled was",
+    "startSec": 38.501,
+    "endSec": 40.184
+  },
+  {
+    "word": "not who is right",
+    "startSec": 40.184,
+    "endSec": 41.262
+  },
+  {
+    "word": "but who decides.",
+    "startSec": 41.262,
+    "endSec": 42.339
+  },
+  {
+    "word": "Nothing was seized and nobody was punished.",
+    "startSec": 42.559,
+    "endSec": 45.105
+  },
+  {
+    "word": "This power was handed over voluntarily",
+    "startSec": 45.105,
+    "endSec": 47.355
+  },
+  {
+    "word": "in the most ordinary",
+    "startSec": 47.355,
+    "endSec": 48.539
+  },
+  {
+    "word": "act of modern life.",
+    "startSec": 48.539,
+    "endSec": 49.664
+  },
+  {
+    "word": "So find the moment you",
+    "startSec": 49.884,
+    "endSec": 51.088
   },
   {
     "word": "agreed to any of it.",
-    "startSec": 30.644,
-    "endSec": 31.739
+    "startSec": 51.088,
+    "endSec": 52.183
   },
   {
     "word": "That is the part",
-    "startSec": 31.739,
-    "endSec": 32.615
+    "startSec": 52.183,
+    "endSec": 53.059
   },
   {
     "word": "most people cannot answer.",
-    "startSec": 32.615,
-    "endSec": 34.038
+    "startSec": 53.059,
+    "endSec": 54.482
   }
 ];

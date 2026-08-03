@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT116_TOTAL_SEC = 39.775;
+export const SHORT116_TOTAL_SEC = 61.101;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.809,
     "end": 38.775
+  },
+  {
+    "id": "L6",
+    "start": 38.995,
+    "end": 45.961
+  },
+  {
+    "id": "L7",
+    "start": 46.181,
+    "end": 52.683
+  },
+  {
+    "id": "L8",
+    "start": 52.903,
+    "end": 60.101
   }
 ];
 
@@ -130,23 +145,83 @@ export const SHORT116_CAPTIONS: ShortCaption[] = [
     "endSec": 31.589
   },
   {
-    "word": "A unanimous Supreme Court win can still",
+    "word": "The Bill of Rights once",
     "startSec": 31.809,
-    "endSec": 34.018
+    "endSec": 33.252
+  },
+  {
+    "word": "restrained only the federal government",
+    "startSec": 33.252,
+    "endSec": 35.637
+  },
+  {
+    "word": "and Indiana used that gap",
+    "startSec": 35.637,
+    "endSec": 37.206
+  },
+  {
+    "word": "to uphold taking the car.",
+    "startSec": 37.206,
+    "endSec": 38.775
+  },
+  {
+    "word": "The open question was whether the",
+    "startSec": 38.995,
+    "endSec": 40.927
+  },
+  {
+    "word": "ban on excessive fines had ever",
+    "startSec": 40.927,
+    "endSec": 42.741
+  },
+  {
+    "word": "been applied to the states.",
+    "startSec": 42.741,
+    "endSec": 44.322
+  },
+  {
+    "word": "In 2019 the Court closed it.",
+    "startSec": 44.322,
+    "endSec": 45.961
+  },
+  {
+    "word": "Back in Indiana",
+    "startSec": 46.181,
+    "endSec": 47.037
+  },
+  {
+    "word": "after years of litigation",
+    "startSec": 47.037,
+    "endSec": 48.462
+  },
+  {
+    "word": "the courts finally applied that principle and",
+    "startSec": 48.462,
+    "endSec": 51.029
+  },
+  {
+    "word": "let Tyson Timbs keep the car.",
+    "startSec": 51.029,
+    "endSec": 52.683
+  },
+  {
+    "word": "A unanimous Supreme Court win can still",
+    "startSec": 52.903,
+    "endSec": 55.185
   },
   {
     "word": "leave you roughly where you started",
-    "startSec": 34.018,
-    "endSec": 36.0
+    "startSec": 55.185,
+    "endSec": 57.234
   },
   {
     "word": "with a limit on paper",
-    "startSec": 36.0,
-    "endSec": 37.189
+    "startSec": 57.234,
+    "endSec": 58.462
   },
   {
     "word": "and years of fighting ahead.",
-    "startSec": 37.189,
-    "endSec": 38.775
+    "startSec": 58.462,
+    "endSec": 60.101
   }
 ];

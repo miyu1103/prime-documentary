@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT130_TOTAL_SEC = 38.01;
+export const SHORT130_TOTAL_SEC = 61.146;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 30.741,
     "end": 37.01
+  },
+  {
+    "id": "L6",
+    "start": 37.23,
+    "end": 46.564
+  },
+  {
+    "id": "L7",
+    "start": 46.784,
+    "end": 53.657
+  },
+  {
+    "id": "L8",
+    "start": 53.877,
+    "end": 60.146
   }
 ];
 
@@ -125,23 +140,83 @@ export const SHORT130_CAPTIONS: ShortCaption[] = [
     "endSec": 30.521
   },
   {
-    "word": "The four in dissent lost",
+    "word": "The database has a name CODIS",
     "startSec": 30.741,
-    "endSec": 32.147
+    "endSec": 32.058
+  },
+  {
+    "word": "the FBI's national DNA index.",
+    "startSec": 32.058,
+    "endSec": 33.376
+  },
+  {
+    "word": "The whole value of swabbing arrestees comes",
+    "startSec": 33.376,
+    "endSec": 35.329
+  },
+  {
+    "word": "from searching it against cold cases.",
+    "startSec": 35.329,
+    "endSec": 37.01
+  },
+  {
+    "word": "Scalia answered that the police",
+    "startSec": 37.23,
+    "endSec": 39.146
+  },
+  {
+    "word": "already knew who King was.",
+    "startSec": 39.146,
+    "endSec": 40.753
+  },
+  {
+    "word": "The purpose was investigating unsolved crimes",
+    "startSec": 40.753,
+    "endSec": 43.535
+  },
+  {
+    "word": "which the Constitution forbids without suspicion.",
+    "startSec": 43.535,
+    "endSec": 46.564
+  },
+  {
+    "word": "He warned that a person's DNA can",
+    "startSec": 46.784,
+    "endSec": 48.643
+  },
+  {
+    "word": "be taken and entered into a national",
+    "startSec": 48.643,
+    "endSec": 50.671
+  },
+  {
+    "word": "database if they are ever arrested",
+    "startSec": 50.671,
+    "endSec": 52.587
+  },
+  {
+    "word": "rightly or wrongly.",
+    "startSec": 52.587,
+    "endSec": 53.657
+  },
+  {
+    "word": "The four in dissent lost",
+    "startSec": 53.877,
+    "endSec": 55.283
   },
   {
     "word": "which means the definition in",
-    "startSec": 32.147,
-    "endSec": 33.846
+    "startSec": 55.283,
+    "endSec": 56.982
   },
   {
     "word": "the majority opinion is the",
-    "startSec": 33.846,
-    "endSec": 35.428
+    "startSec": 56.982,
+    "endSec": 58.564
   },
   {
     "word": "one police work from today.",
-    "startSec": 35.428,
-    "endSec": 37.01
+    "startSec": 58.564,
+    "endSec": 60.146
   }
 ];

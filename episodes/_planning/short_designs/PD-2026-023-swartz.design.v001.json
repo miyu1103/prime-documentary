@@ -65,40 +65,67 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "On the eighteenth of January, 2012, the internet itself went dark in protest.",
+          "delivery": "intense",
           "source_lines": [
             "On January the 18th, 2012, the internet itself went dark in protest."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "It remains, to this day, one of the largest coordinated online protests in human history.",
+          "delivery": "building",
           "source_lines": [
             "It remains, to this day, one of the largest coordinated online protests in human history, and Aaron Swartz was one of its centra"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Aaron Swartz was one of its central figures. At first, almost nobody outside Washington was paying any attention at all.",
+          "delivery": "building",
           "source_lines": [
             "At first, almost nobody outside Washington was paying any attention at all."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "What he was fighting for was the actual rules that govern every one of us, written in a language most people are never taught to read.",
+          "delivery": "intense",
           "source_lines": [
             "The actual rules that govern every one of us, written in a dense language that most ordinary people are never taught to read."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Two bills were moving quietly through Congress, known as SOPA and PIPA. On the surface, they were simply about stopping online piracy.",
+          "delivery": "building",
+          "source_lines": [
+            "Inside Congress, two bills were moving quietly and steadily toward becoming law.",
+            "They were known as SOPA and PIPA.",
+            "On the surface, they were simply about stopping online piracy, which sounds reasonable enough."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "In practice, critics warned, they would hand government and large corporations the power to quietly switch off entire pieces of the internet, with very little oversight.",
+          "delivery": "building",
+          "source_lines": [
+            "In practice, their critics warned, they would have handed the government and large corporations a frightening new power to quietly switch off entire pieces of the internet, with very little oversight."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "He had founded an advocacy group called Demand Progress. The bills still looked certain to pass, the way bills backed by powerful industries do.",
+          "delivery": "building",
+          "source_lines": [
+            "So he founded an advocacy group, and he called it Demand Progress.",
+            "The bills looked completely certain to pass, the way most bills backed by powerful industries do."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "There is a real chance you have never heard his name. So what does it take to make the whole internet go dark?",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -132,13 +159,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "door closing dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4817__front_door_house.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8121__bank_vault_door.mp4",
           "bound_title": "a person sticking a key in a doorknob",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4084,
           "motion": 4.758,
-          "luma": 180.9
+          "luma": 180.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
         },
         {
           "n": 4,
@@ -169,13 +198,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "server room racks aisle",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8915__moving_boxes_empty_room.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29775__courtroom_interior.mp4",
           "bound_title": "a room with many boxes stacked on top of each other",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3882,
           "motion": 18.646,
-          "luma": 52.9
+          "luma": 52.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
         },
         {
           "n": 7,
@@ -306,13 +337,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courtroom interior benches",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14093__church_interior_light_beam.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14605__jury_box_empty.mp4",
           "bound_title": "an abandoned building interior",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5043,
           "motion": 29.782,
-          "luma": 101.7
+          "luma": 101.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
         },
         {
           "n": 20,
@@ -347,12 +380,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate — identical framing to plate 01",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a hand carrying a stack of folders down a corridor",
+          "source": "FOOTAGE",
+          "footage_query": "hand carrying folders down a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62180__data_center_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.334
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "two hands shaking across a desk",
+          "source": "FOOTAGE",
+          "footage_query": "two hands shaking across a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30298__documents_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I01",
+          "subject": "a rubber stamp resting on an ink pad",
+          "source": "FOOTAGE",
+          "footage_query": "rubber stamp resting on an ink pad",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62940__ankle_monitor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U13",
+          "subject": "a person walking up a wide staircase",
+          "source": "FOOTAGE",
+          "footage_query": "person walking up a wide staircase",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3286__courthouse_steps.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "I04",
+          "subject": "a bolt sliding across a metal door",
+          "source": "FOOTAGE",
+          "footage_query": "bolt sliding across a metal door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54365__warehouse_loading_dock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W05",
+          "subject": "a hand on a wall panel of circuit breakers",
+          "source": "FOOTAGE",
+          "footage_query": "hand on a panel of circuit breakers",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33918__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U01",
+          "subject": "a hand on a light switch on a wall",
+          "source": "FOOTAGE",
+          "footage_query": "hand on a light switch on a wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51096__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "a closed steel vault door set in a wall",
+          "source": "FOOTAGE",
+          "footage_query": "closed steel vault door in a wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8119__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I06",
+          "subject": "a single sheet of paper lying on an empty office floor",
+          "source": "FOOTAGE",
+          "footage_query": "sheet of paper on an empty office floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-2594__paper_scraps_flying.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "R08",
+          "subject": "a raised hearing-room bench seen from the floor",
+          "source": "FOOTAGE",
+          "footage_query": "raised bench in a hearing room from below",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14510__courtroom_empty_wide.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R07",
+          "subject": "a gavel and its block resting on a committee table",
+          "source": "FOOTAGE",
+          "footage_query": "gavel and block on a committee table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8256__contract_paperwork_signing.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R03",
+          "subject": "an empty meeting room with a blank whiteboard",
+          "source": "FOOTAGE",
+          "footage_query": "empty meeting room with a blank whiteboard",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0451__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "R04",
+          "subject": "two people in suits talking in a corridor",
+          "source": "FOOTAGE",
+          "footage_query": "two people in suits talking in a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15462__empty_boardroom_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "W08",
+          "subject": "a large blank noticeboard on a wall",
+          "source": "FOOTAGE",
+          "footage_query": "large blank noticeboard on a wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23895__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W11",
+          "subject": "two desks pushed together in a small office",
+          "source": "FOOTAGE",
+          "footage_query": "two desks pushed together in a small office",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51998__vintage_globe_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
         }
       ]
     },
@@ -369,8 +617,8 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "He carried a laptop onto the MIT campus and downloaded millions of scholarly articles. To this day, no one has proven what he meant to do with them.",
+          "delivery": "intense",
           "source_lines": [
             "In the autumn of 2010, he carried a laptop onto the campus of MIT, the Massachusetts Institute of Technology, one of the most fa",
             "And to this very day, after everything that followed, no one has ever actually proven what he meant to do with all of it."
@@ -378,32 +626,59 @@
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "He never told anyone, and now he never will.",
+          "delivery": "building",
           "source_lines": [
             "He never told anyone, and now he never will."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "In 2008 he had written his belief down, in a short and fierce little document he called the Guerilla Open Access Manifesto.",
+          "delivery": "building",
           "source_lines": [
             "In 2008, he wrote that belief down, in a short and fierce little document he called the Guerilla Open Access Manifesto."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "Money, for Aaron, was never really the point. That is what makes the charge sheet so strange to read.",
+          "delivery": "intense",
           "source_lines": [
             "Because money, for Aaron, was never really the point."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "MIT was almost proud of how open its network was. He was not a student, and he broke no lock and cracked no password.",
+          "delivery": "building",
+          "source_lines": [
+            "MIT was well known, almost proud, of how open its network was.",
+            "Aaron was not a student there, and he did not need to break any lock or crack any password to connect."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Over several weeks the program he set running collected around four point eight million articles, by most accounts about eighty percent of JSTOR's entire archive.",
+          "delivery": "building",
+          "source_lines": [
+            "Over a span of several weeks, the program he had set running quietly collected somewhere around four point eight million separate articles.",
+            "By most reasonable accounts, that came to something like eighty percent of JSTOR's entire archive"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Maybe he planned to release it. Maybe he wanted to run one sweeping analysis across modern science, a real research method he had used before.",
+          "delivery": "building",
+          "source_lines": [
+            "Maybe he was planning to release the whole archive to the public, the way his manifesto seemed to call for.",
+            "Maybe he wanted to study it, to run a single sweeping analysis across the entire body of modern science at once, which was a real and respected research method that he had used before."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Thirteen federal felony counts, and still nobody proved what the download was for. So look again at what he actually did.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -567,13 +842,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "door closing dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1743__front_door_house.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0293__concrete_wall_texture_dark.mp4",
           "bound_title": "boy picking up mail at the door",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4882,
           "motion": 32.879,
-          "luma": 110.9
+          "luma": 110.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
         },
         {
           "n": 17,
@@ -584,13 +861,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "cash stacks money",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7991__cash_stacks_money.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7992__cash_stacks_money.mp4",
           "bound_title": "person counting money",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.447,
           "motion": 13.776,
-          "luma": 109.5
+          "luma": 109.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
         },
         {
           "n": 18,
@@ -621,7 +900,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courtroom interior benches",
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1374__warm_window_light_rays.mp4",
           "bound_title": "sunlit coffee mug on window sill interior scene",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -652,12 +930,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate — identical framing to plate 01",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U08",
+          "subject": "a wall of open pigeonholes in a hall",
+          "source": "FOOTAGE",
+          "footage_query": "wall of open pigeonholes in a hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23892__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a door standing ajar in a corridor",
+          "source": "FOOTAGE",
+          "footage_query": "door standing ajar in a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51259__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "a library window above a study desk",
+          "source": "FOOTAGE",
+          "footage_query": "library window above a study desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29133__broken_window_glass_shards.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U09",
+          "subject": "a student walking across a campus lawn",
+          "source": "FOOTAGE",
+          "footage_query": "student walking across a campus lawn",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5454__bank_building_columns.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W11",
+          "subject": "empty study desks in a library",
+          "source": "FOOTAGE",
+          "footage_query": "empty study desks in a library",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33698__old_library_archive.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W09",
+          "subject": "a hand turning the pages of a wall calendar",
+          "source": "FOOTAGE",
+          "footage_query": "hand turning pages of a wall calendar",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36373__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.335
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "M06",
+          "subject": "a wall of steel drawers with one pulled open",
+          "source": "FOOTAGE",
+          "footage_query": "wall of steel drawers with one pulled open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2364__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M04",
+          "subject": "a stack of external hard drives on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "stack of external hard drives on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53030__vinyl_record_spinning.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "M07",
+          "subject": "boxes stacked to the ceiling in a storeroom",
+          "source": "FOOTAGE",
+          "footage_query": "boxes stacked to the ceiling in a storeroom",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38541__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U13",
+          "subject": "a person pushing a trolley of boxes down a corridor",
+          "source": "FOOTAGE",
+          "footage_query": "person pushing a trolley of boxes",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-49455__lone_businessman_walking_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W07",
+          "subject": "hands adjusting a microscope in a laboratory",
+          "source": "FOOTAGE",
+          "footage_query": "hands adjusting a microscope in a laboratory",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7366__microscope_lab.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "I08",
+          "subject": "a large satellite dish against a pale sky",
+          "source": "FOOTAGE",
+          "footage_query": "large satellite dish against a pale sky",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36897__vintage_radio_microphone.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "R04",
+          "subject": "two researchers working together at a bench",
+          "source": "FOOTAGE",
+          "footage_query": "two researchers working together at a bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2071__laboratory_glassware.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U10",
+          "subject": "hands sorting index cards into rows",
+          "source": "FOOTAGE",
+          "footage_query": "hands sorting index cards into rows",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38307__police_interrogation_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "R03",
+          "subject": "an empty seminar room with chairs in a circle",
+          "source": "FOOTAGE",
+          "footage_query": "empty seminar room with chairs in a circle",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-27289__graduation_cap_toss.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
         }
       ]
     }

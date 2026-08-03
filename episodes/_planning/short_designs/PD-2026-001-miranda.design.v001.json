@@ -88,16 +88,16 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "You think Miranda was one man's case. It was four.",
+          "delivery": "intense",
           "source_lines": [
             "Miranda's case did not travel to the Supreme Court alone."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Ernesto Miranda's appeal did not travel to the Supreme Court alone. Three other cases were folded in. Four defendants. Four interrogation rooms. One shared problem.",
+          "delivery": "building",
           "source_lines": [
             "Miranda's case did not travel to the Supreme Court alone.",
             "Four defendants. Four different interrogation rooms. One shared problem."
@@ -105,8 +105,8 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "That combination is a signal. When the Court pulls four cases under a single name, it is not fixing one man's bad day. It is looking at a pattern.",
+          "delivery": "building",
           "source_lines": [
             "That combination is a signal.",
             "When the Supreme Court pulls four separate cases together under a single name, it is not trying to fix one man's bad day. It is looking at a pattern"
@@ -114,16 +114,43 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "So the question changed. Not, was this one confession unfair. But what has to be true, every time, before any confession can be used at all.",
+          "delivery": "intense",
           "source_lines": [
             "The justices were not asking, \"was this one confession unfair?\" They were asking, \"what should have to be true, every time, before any of these confessions can be used at all?\""
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The other three were Vignera v. New York, Westover v. United States, and California v. Stewart. All asking the very same question.",
+          "delivery": "building",
+          "source_lines": [
+            "it had been combined with three other cases asking the very same question: Vignera v. New York, Westover v. United States, and California v. Stewart"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "In that Phoenix room, Miranda was never told he did not have to say anything, or that he could have a lawyer beside him.",
+          "delivery": "building",
+          "source_lines": [
+            "He is never told that he does not have to say anything.",
+            "He is never told that he could have a lawyer sitting beside him"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "On June 13, 1966, by five votes to four, the Court ruled that a custodial confession cannot be used unless clear safeguards came first.",
+          "delivery": "building",
+          "source_lines": [
+            "On June 13, 1966, the Court answers.",
+            "five votes to four, with Chief Justice Earl Warren writing for the majority",
+            "it rules that the prosecution may not use statements from a custodial interrogation unless it can show the suspect was first protected by clear safeguards"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "The name on the case belongs to one man. Count the interrogation rooms the Court was actually looking at.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -157,13 +184,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "handcuffs closing on wrists",
-          "bound_file": "D:\\pd-archive\\ocean_nature\\coverr__coverr-solitary-silhouette-on-the-rocky-shore__solitary-silhouette-on-the-rocky-shore.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4891__prison_corridor.mp4",
           "bound_title": "solitary silhouette on the rocky shore",
           "bound_license": "free_commercial",
           "bound_source": "coverr",
           "centre_energy": 0.3819,
           "motion": 3.998,
-          "luma": 149.7
+          "luma": 149.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
         },
         {
           "n": 4,
@@ -174,13 +203,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "marble courthouse columns low angle",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1430__rain_on_window_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5457__bank_building_columns.mp4",
           "bound_title": "raindrops flowing on glass",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.394,
           "motion": 2.772,
-          "luma": 43.8
+          "luma": 43.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.357
         },
         {
           "n": 5,
@@ -201,13 +232,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "dim corridor receding lit doorway",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2213__warehouse_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2367__school_hallway_empty.mp4",
           "bound_title": "young people walking to manifest equality concept",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4393,
           "motion": 10.95,
-          "luma": 71.3
+          "luma": 71.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
         },
         {
           "n": 7,
@@ -258,13 +291,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "typewriter keys close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0830__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53384__stack_of_letters_with_ribbon.mp4",
           "bound_title": "counting polish zloty banknotes hand close up",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6148,
           "motion": 23.845,
-          "luma": 78.3
+          "luma": 78.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.363
         },
         {
           "n": 12,
@@ -285,13 +320,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "archive records room shelves aisle",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3533__abstract_dark_background.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10156__old_library_archive.mp4",
           "bound_title": "a dark blurry image of a person in a dark room",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4001,
           "motion": 8.192,
-          "luma": 64.0
+          "luma": 64.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.343
         },
         {
           "n": 14,
@@ -372,13 +409,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "judge gavel striking block",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3352__judge_gavel_wooden.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3354__judge_gavel_wooden.mp4",
           "bound_title": "judge writing on a document",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.403,
           "motion": 1.789,
-          "luma": 62.8
+          "luma": 62.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
         },
         {
           "n": 22,
@@ -393,12 +432,221 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: one bare interrogation table under a single hanging lamp",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": "empty interrogation room table"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U08",
+          "subject": "a wall of old wooden filing cabinets",
+          "source": "FOOTAGE",
+          "footage_query": "wall of old wooden filing cabinets",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10147__old_library_archive.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "M04",
+          "subject": "three envelopes laid side by side on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "three envelopes laid side by side on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32022__us_constitution_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U02",
+          "subject": "a heavy wooden door swinging closed in a hallway",
+          "source": "FOOTAGE",
+          "footage_query": "heavy wooden door swinging closed in a hallway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2366__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "I03",
+          "subject": "a wire office tray holding blank paper",
+          "source": "FOOTAGE",
+          "footage_query": "wire office tray holding blank paper",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23694__case_files_stack_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U09",
+          "subject": "a man in a hat waiting alone in a marble hall",
+          "source": "FOOTAGE",
+          "footage_query": "man in a hat waiting alone in a marble hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-17487__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U01",
+          "subject": "a bare bulb hanging in a plain room",
+          "source": "FOOTAGE",
+          "footage_query": "bare bulb hanging in a plain room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63653__gold_coins_pile.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "R11",
+          "subject": "a black rotary telephone on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "black rotary telephone on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15704__rotary_phone_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "a closed door with a small wired glass window",
+          "source": "FOOTAGE",
+          "footage_query": "closed door with a small wired glass window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14514__courtroom_empty_wide.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "W11",
+          "subject": "a hand gripping the back of a wooden chair",
+          "source": "FOOTAGE",
+          "footage_query": "hand gripping the back of a wooden chair",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63139__audit_documents_stack.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y01",
+          "subject": "a leather briefcase left beside an empty chair",
+          "source": "FOOTAGE",
+          "footage_query": "leather briefcase beside an empty chair",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41348__open_briefcase_of_cash.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "men in suits walking down stone steps",
+          "source": "FOOTAGE",
+          "footage_query": "men in suits walking down stone steps",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38150__lady_justice_statue.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "W09",
+          "subject": "a page torn from a desk calendar",
+          "source": "FOOTAGE",
+          "footage_query": "page torn from a desk calendar",
+          "prompt": null
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "M07",
+          "subject": "a long polished table in a panelled room",
+          "source": "FOOTAGE",
+          "footage_query": "long polished table in a panelled room",
+          "prompt": null
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U11",
+          "subject": "tall window light falling across a wooden floor",
+          "source": "FOOTAGE",
+          "footage_query": "tall window light falling on a wooden floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51483__window_blinds_shadow_stripes.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I08",
+          "subject": "a domed public building against a pale sky",
+          "source": "FOOTAGE",
+          "footage_query": "domed building against a pale sky",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16355__capitol_dome_dusk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
         }
       ]
     }

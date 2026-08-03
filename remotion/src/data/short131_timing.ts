@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT131_TOTAL_SEC = 39.031;
+export const SHORT131_TOTAL_SEC = 64.164;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 29.858,
     "end": 38.031
+  },
+  {
+    "id": "L6",
+    "start": 38.251,
+    "end": 45.774
+  },
+  {
+    "id": "L7",
+    "start": 45.994,
+    "end": 55.096
+  },
+  {
+    "id": "L8",
+    "start": 55.316,
+    "end": 63.164
   }
 ];
 
@@ -125,23 +140,88 @@ export const SHORT131_CAPTIONS: ShortCaption[] = [
     "endSec": 29.638
   },
   {
-    "word": "The Court weighed that risk against a",
+    "word": "In much of the country",
     "startSec": 29.858,
-    "endSec": 31.874
+    "endSec": 31.422
+  },
+  {
+    "word": "being arrested for a serious offense now",
+    "startSec": 31.422,
+    "endSec": 34.264
+  },
+  {
+    "word": "means giving a sample before any trial",
+    "startSec": 34.264,
+    "endSec": 36.965
+  },
+  {
+    "word": "and it is kept.",
+    "startSec": 36.965,
+    "endSec": 38.031
+  },
+  {
+    "word": "The people swept into those",
+    "startSec": 38.251,
+    "endSec": 39.712
+  },
+  {
+    "word": "databases include the merely arrested",
+    "startSec": 39.712,
+    "endSec": 41.715
+  },
+  {
+    "word": "whose genetic code is on file because",
+    "startSec": 41.715,
+    "endSec": 43.717
+  },
+  {
+    "word": "of a single encounter with the police.",
+    "startSec": 43.717,
+    "endSec": 45.774
+  },
+  {
+    "word": "The other side is real.",
+    "startSec": 45.994,
+    "endSec": 47.399
+  },
+  {
+    "word": "DNA databases have closed cold cases",
+    "startSec": 47.399,
+    "endSec": 49.598
+  },
+  {
+    "word": "freed innocent people",
+    "startSec": 49.598,
+    "endSec": 50.881
+  },
+  {
+    "word": "and identified violent offenders who",
+    "startSec": 50.881,
+    "endSec": 53.08
+  },
+  {
+    "word": "would otherwise have walked free.",
+    "startSec": 53.08,
+    "endSec": 55.096
+  },
+  {
+    "word": "The Court weighed that risk against a",
+    "startSec": 55.316,
+    "endSec": 57.252
   },
   {
     "word": "public interest and called the swab reasonable.",
-    "startSec": 31.874,
-    "endSec": 34.435
+    "startSec": 57.252,
+    "endSec": 59.711
   },
   {
     "word": "Whether that holds depends on what",
-    "startSec": 34.435,
-    "endSec": 36.287
+    "startSec": 59.711,
+    "endSec": 61.49
   },
   {
     "word": "you think a swab actually takes.",
-    "startSec": 36.287,
-    "endSec": 38.031
+    "startSec": 61.49,
+    "endSec": 63.164
   }
 ];

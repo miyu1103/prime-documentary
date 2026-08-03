@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT115_TOTAL_SEC = 35.642;
+export const SHORT115_TOTAL_SEC = 57.478;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 28.651,
     "end": 34.642
+  },
+  {
+    "id": "L6",
+    "start": 34.862,
+    "end": 41.828
+  },
+  {
+    "id": "L7",
+    "start": 42.048,
+    "end": 50.221
+  },
+  {
+    "id": "L8",
+    "start": 50.441,
+    "end": 56.478
   }
 ];
 
@@ -130,18 +145,78 @@ export const SHORT115_CAPTIONS: ShortCaption[] = [
     "endSec": 28.431
   },
   {
-    "word": "Ask yourself how a person keeps the",
+    "word": "There is a reason the power exists.",
     "startSec": 28.651,
-    "endSec": 30.557
+    "endSec": 30.342
+  },
+  {
+    "word": "Forfeiture grew as a tool to",
+    "startSec": 30.342,
+    "endSec": 31.695
+  },
+  {
+    "word": "strip the profits out of organized",
+    "startSec": 31.695,
+    "endSec": 33.338
+  },
+  {
+    "word": "crime and drug trafficking.",
+    "startSec": 33.338,
+    "endSec": 34.642
+  },
+  {
+    "word": "But in many state systems",
+    "startSec": 34.862,
+    "endSec": 36.35
+  },
+  {
+    "word": "and in a federal program",
+    "startSec": 36.35,
+    "endSec": 37.779
+  },
+  {
+    "word": "the proceeds flow back to the",
+    "startSec": 37.779,
+    "endSec": 39.506
+  },
+  {
+    "word": "very agencies that seized the property.",
+    "startSec": 39.506,
+    "endSec": 41.828
+  },
+  {
+    "word": "The Institute for Justice calls",
+    "startSec": 42.048,
+    "endSec": 43.939
+  },
+  {
+    "word": "that policing for profit",
+    "startSec": 43.939,
+    "endSec": 45.403
+  },
+  {
+    "word": "a built in incentive to seize.",
+    "startSec": 45.403,
+    "endSec": 47.232
+  },
+  {
+    "word": "The criticism runs across the political spectrum.",
+    "startSec": 47.232,
+    "endSec": 50.221
+  },
+  {
+    "word": "Ask yourself how a person keeps the",
+    "startSec": 50.441,
+    "endSec": 52.362
   },
   {
     "word": "presumption of innocence when the case is",
-    "startSec": 30.557,
-    "endSec": 32.79
+    "startSec": 52.362,
+    "endSec": 54.612
   },
   {
     "word": "not filed against a person at all.",
-    "startSec": 32.79,
-    "endSec": 34.642
+    "startSec": 54.612,
+    "endSec": 56.478
   }
 ];

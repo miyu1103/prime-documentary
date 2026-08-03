@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT133_TOTAL_SEC = 30.58;
+export const SHORT133_TOTAL_SEC = 53.206;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 22.614,
     "end": 29.58
+  },
+  {
+    "id": "L6",
+    "start": 29.8,
+    "end": 38.67
+  },
+  {
+    "id": "L7",
+    "start": 38.89,
+    "end": 45.02
+  },
+  {
+    "id": "L8",
+    "start": 45.24,
+    "end": 52.206
   }
 ];
 
@@ -110,23 +125,83 @@ export const SHORT133_CAPTIONS: ShortCaption[] = [
     "endSec": 22.394
   },
   {
-    "word": "The Fourth Amendment mostly sets a procedure",
+    "word": "The warrant that opened Kyllo's home did",
     "startSec": 22.614,
-    "endSec": 25.106
+    "endSec": 24.678
+  },
+  {
+    "word": "not rest on the scan alone.",
+    "startSec": 24.678,
+    "endSec": 26.071
+  },
+  {
+    "word": "An informant's tip and unusually high",
+    "startSec": 26.071,
+    "endSec": 27.98
+  },
+  {
+    "word": "electric bills stood beside it.",
+    "startSec": 27.98,
+    "endSec": 29.58
+  },
+  {
+    "word": "Inside",
+    "startSec": 29.8,
+    "endSec": 30.5
+  },
+  {
+    "word": "agents found what they expected:",
+    "startSec": 30.5,
+    "endSec": 32.343
+  },
+  {
+    "word": "an indoor growing operation with more",
+    "startSec": 32.343,
+    "endSec": 34.474
+  },
+  {
+    "word": "than a hundred marijuana plants.",
+    "startSec": 34.474,
+    "endSec": 36.317
+  },
+  {
+    "word": "Kyllo was charged with manufacturing marijuana.",
+    "startSec": 36.317,
+    "endSec": 38.67
+  },
+  {
+    "word": "He pleaded guilty but kept his appeal.",
+    "startSec": 38.89,
+    "endSec": 40.799
+  },
+  {
+    "word": "The lower court had to decide whether",
+    "startSec": 40.799,
+    "endSec": 42.658
+  },
+  {
+    "word": "the warrant stood without the thermal evidence.",
+    "startSec": 42.658,
+    "endSec": 45.02
+  },
+  {
+    "word": "The Fourth Amendment mostly sets a procedure",
+    "startSec": 45.24,
+    "endSec": 47.732
   },
   {
     "word": "not a prohibition.",
-    "startSec": 25.106,
-    "endSec": 26.125
+    "startSec": 47.732,
+    "endSec": 48.751
   },
   {
     "word": "Which is why rulings like this",
-    "startSec": 26.125,
-    "endSec": 27.824
+    "startSec": 48.751,
+    "endSec": 50.45
   },
   {
     "word": "one sound bigger than they are.",
-    "startSec": 27.824,
-    "endSec": 29.58
+    "startSec": 50.45,
+    "endSec": 52.206
   }
 ];

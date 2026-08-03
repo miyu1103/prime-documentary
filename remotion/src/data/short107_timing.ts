@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT107_TOTAL_SEC = 30.905;
+export const SHORT107_TOTAL_SEC = 53.206;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 23.311,
     "end": 29.905
+  },
+  {
+    "id": "L6",
+    "start": 30.125,
+    "end": 38.066
+  },
+  {
+    "id": "L7",
+    "start": 38.286,
+    "end": 45.624
+  },
+  {
+    "id": "L8",
+    "start": 45.844,
+    "end": 52.206
   }
 ];
 
@@ -105,28 +120,93 @@ export const SHORT107_CAPTIONS: ShortCaption[] = [
     "endSec": 23.091
   },
   {
-    "word": "So ask how an honest",
+    "word": "A face glimpsed in terror is",
     "startSec": 23.311,
-    "endSec": 24.468
+    "endSec": 24.931
+  },
+  {
+    "word": "not filed away like a photograph.",
+    "startSec": 24.931,
+    "endSec": 26.839
+  },
+  {
+    "word": "It is a rough sketch",
+    "startSec": 26.839,
+    "endSec": 27.996
+  },
+  {
+    "word": "and the mind fills in the blanks.",
+    "startSec": 27.996,
+    "endSec": 29.905
+  },
+  {
+    "word": "Reassurance from someone in authority",
+    "startSec": 30.125,
+    "endSec": 32.385
+  },
+  {
+    "word": "can harden a tentative guess",
+    "startSec": 32.385,
+    "endSec": 34.096
+  },
+  {
+    "word": "into a certainty that feels",
+    "startSec": 34.096,
+    "endSec": 35.745
+  },
+  {
+    "word": "from the inside",
+    "startSec": 35.745,
+    "endSec": 36.661
+  },
+  {
+    "word": "exactly like the truth.",
+    "startSec": 36.661,
+    "endSec": 38.066
+  },
+  {
+    "word": "A liar can be caught.",
+    "startSec": 38.286,
+    "endSec": 39.638
+  },
+  {
+    "word": "But an honest witness who is certain",
+    "startSec": 39.638,
+    "endSec": 41.955
+  },
+  {
+    "word": "and wrong carries no tell at all.",
+    "startSec": 41.955,
+    "endSec": 44.079
+  },
+  {
+    "word": "In court certainty wins.",
+    "startSec": 44.079,
+    "endSec": 45.624
+  },
+  {
+    "word": "So ask how an honest",
+    "startSec": 45.844,
+    "endSec": 46.96
   },
   {
     "word": "witness ends up wrong.",
-    "startSec": 24.468,
-    "endSec": 25.74
+    "startSec": 46.96,
+    "endSec": 48.188
   },
   {
     "word": "The answer starts with the",
-    "startSec": 25.74,
-    "endSec": 27.244
+    "startSec": 48.188,
+    "endSec": 49.639
   },
   {
     "word": "one thing she did to",
-    "startSec": 27.244,
-    "endSec": 28.401
+    "startSec": 49.639,
+    "endSec": 50.755
   },
   {
     "word": "make sure she never would.",
-    "startSec": 28.401,
-    "endSec": 29.905
+    "startSec": 50.755,
+    "endSec": 52.206
   }
 ];

@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT106_TOTAL_SEC = 33.738;
+export const SHORT106_TOTAL_SEC = 55.296;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 26.376,
     "end": 32.738
+  },
+  {
+    "id": "L6",
+    "start": 32.958,
+    "end": 40.946
+  },
+  {
+    "id": "L7",
+    "start": 41.166,
+    "end": 47.714
+  },
+  {
+    "id": "L8",
+    "start": 47.934,
+    "end": 54.296
   }
 ];
 
@@ -115,23 +130,93 @@ export const SHORT106_CAPTIONS: ShortCaption[] = [
     "endSec": 26.156
   },
   {
-    "word": "There is a room somewhere",
+    "word": "Long before that meeting",
     "startSec": 26.376,
-    "endSec": 27.809
+    "endSec": 27.67
+  },
+  {
+    "word": "at his second trial",
+    "startSec": 27.67,
+    "endSec": 28.694
+  },
+  {
+    "word": "the man Cotton believed had done",
+    "startSec": 28.694,
+    "endSec": 30.42
+  },
+  {
+    "word": "it stood in the courtroom.",
+    "startSec": 30.42,
+    "endSec": 31.821
+  },
+  {
+    "word": "She felt nothing.",
+    "startSec": 31.821,
+    "endSec": 32.738
+  },
+  {
+    "word": "He was pardoned.",
+    "startSec": 32.958,
+    "endSec": 33.926
+  },
+  {
+    "word": "The state paid him a little",
+    "startSec": 33.926,
+    "endSec": 35.56
+  },
+  {
+    "word": "over a hundred thousand dollars",
+    "startSec": 35.56,
+    "endSec": 37.436
+  },
+  {
+    "word": "set against eleven years.",
+    "startSec": 37.436,
+    "endSec": 38.949
+  },
+  {
+    "word": "Bobby Poole later pleaded guilty.",
+    "startSec": 38.949,
+    "endSec": 40.946
+  },
+  {
+    "word": "The meeting did not happen quickly.",
+    "startSec": 41.166,
+    "endSec": 43.06
+  },
+  {
+    "word": "Ronald Cotton wanted to see her",
+    "startSec": 43.06,
+    "endSec": 44.738
+  },
+  {
+    "word": "and then he waited nearly two years",
+    "startSec": 44.738,
+    "endSec": 46.632
+  },
+  {
+    "word": "until she was ready.",
+    "startSec": 46.632,
+    "endSec": 47.714
+  },
+  {
+    "word": "There is a room somewhere",
+    "startSec": 47.934,
+    "endSec": 49.367
   },
   {
     "word": "where the person who was wrong",
-    "startSec": 27.809,
-    "endSec": 29.528
+    "startSec": 49.367,
+    "endSec": 51.086
   },
   {
     "word": "and the person who paid for",
-    "startSec": 29.528,
-    "endSec": 31.076
+    "startSec": 51.086,
+    "endSec": 52.634
   },
   {
     "word": "it finally sit down together.",
-    "startSec": 31.076,
-    "endSec": 32.738
+    "startSec": 52.634,
+    "endSec": 54.296
   }
 ];

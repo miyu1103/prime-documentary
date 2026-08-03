@@ -57,16 +57,16 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Your house produces less tax revenue than a hotel. After 2005, that alone could justify taking it.",
+          "delivery": "intense",
           "source_lines": [
             "A modest house almost always produces less tax revenue than offices or luxury condos. Under the broad reading, that gap alone could justify taking it"
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "The Court read for public use as public purpose. A development plan aimed at jobs and revenue counts, and courts should defer to the city.",
+          "delivery": "building",
           "source_lines": [
             "It said that a carefully considered economic-development plan, aimed at public benefits like jobs and revenue, qualifies as a public purpose — and that courts should largely defer to a city's judgment about what its community needs",
             "\"Public use,\" in other words, would be read as \"public purpose.\""
@@ -74,8 +74,8 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Justice Sandra Day O'Connor wrote the main dissent. The government, she warned, could now take property from one private owner simply to give it to another who might use it more profitably.",
+          "delivery": "building",
           "source_lines": [
             "Justice Sandra Day O'Connor wrote the main dissent, and her warning was blunt.",
             "Under this ruling, she argued, the government could now take property from one private owner simply to give it to another who might use it more profitably."
@@ -83,16 +83,41 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "The specter, she wrote, was that any home could be taken for any other private use that promised more taxes. That for public use had, in effect, been erased from the Constitution.",
+          "delivery": "intense",
           "source_lines": [
             "The specter, she wrote, was that any home could be taken for any other private use that promised more taxes — and that the words \"for public use\" had, in effect, been erased from the Constitution"
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Justice Thomas wrote a separate dissent, arguing the Court had drifted far from the original meaning of the clause.",
+          "delivery": "building",
+          "source_lines": [
+            "Justice Thomas wrote a separate dissent arguing the Court had drifted far from the original meaning of the clause."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "One vote in the majority came with a caveat. Kennedy wrote separately that a merely pretextual public purpose would still be unconstitutional.",
+          "delivery": "building",
+          "source_lines": [
+            "One vote in the majority came with a caveat.",
+            "Justice Kennedy, who joined the Court's opinion, wrote separately to stress that a taking meant only to benefit a particular private party, with a merely pretextual public purpose, would still be unconstitutional"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "It was five to four, and unlike many such splits it did not fall along the usual lines.",
+          "delivery": "building",
+          "source_lines": [
+            "It was a 5-4 split, and unlike many such splits, it did not fall along the usual lines."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Her warning was a dissent, which means it never became the law. The majority's rule is the one still standing.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -126,13 +151,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty lot demolition rubble",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4128__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33050__broken_house_demolition.mp4",
           "bound_title": "hands counting polish zloty banknotes",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5981,
           "motion": 2.649,
-          "luma": 95.6
+          "luma": 95.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
         },
         {
           "n": 4,
@@ -163,13 +190,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty conference room chairs table",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2060__laboratory_glassware.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3772__office_interior_dark.mp4",
           "bound_title": "laboratory glasswares on the white table",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4235,
           "motion": 8.883,
-          "luma": 147.0
+          "luma": 147.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
         },
         {
           "n": 7,
@@ -200,13 +229,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "construction site cranes skyline",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11106__city_rooftop_dusk.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56292__construction_crane_against_sky.mp4",
           "bound_title": "toronto skyline at twilight with cn tower",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4055,
           "motion": 0.925,
-          "luma": 141.4
+          "luma": 141.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
         },
         {
           "n": 10,
@@ -227,13 +258,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "city hall building facade night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1512__city_skyline_dusk.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23027__federal_building_columns_night.mp4",
           "bound_title": "aerial footage of a city",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3938,
           "motion": 2.834,
-          "luma": 133.2
+          "luma": 133.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
         },
         {
           "n": 12,
@@ -254,13 +287,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hand writing with pen paper",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0988__server_room_blue.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53407__stack_of_letters_with_ribbon.mp4",
           "bound_title": "futuristic grid animation with light effects",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4099,
           "motion": 19.35,
-          "luma": 58.5
+          "luma": 58.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
         },
         {
           "n": 14,
@@ -291,13 +326,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "handshake across desk contract",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6168__handshake_business.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8244__contract_paperwork_signing.mp4",
           "bound_title": "businessman doing a handshake",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4198,
           "motion": 45.338,
-          "luma": 104.4
+          "luma": 104.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.327
         },
         {
           "n": 17,
@@ -338,13 +375,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "wrecking ball demolition building",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3978__government_building_exterior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-18688__broken_house_demolition.mp4",
           "bound_title": "a timelapse video of moving cars at night near the four courts building",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.459,
           "motion": 17.515,
-          "luma": 120.5
+          "luma": 120.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
         },
         {
           "n": 21,
@@ -369,12 +408,224 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a small clapboard cottage alone on a cleared lot at dusk",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": "small cottage cleared land dusk"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U05",
+          "subject": "a brass compass lying on a blank chart",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "brass compass resting on a blank chart",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-35986__antique_brass_scales.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y03",
+          "subject": "a small boat drifting away from a dock",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "small boat drifting away from a dock",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-42410__modern_medical_lab.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y05",
+          "subject": "a bundle of papers tied shut with string",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "bundle of papers tied with string",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41352__open_briefcase_of_cash.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U06",
+          "subject": "one chair turned away from a long table",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "single chair turned away from long table",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2293__empty_stadium_seats.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U15",
+          "subject": "a stone boundary marker set in a grass field",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stone boundary marker in a grass field",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23344__barbed_wire_fence_sky.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "R01",
+          "subject": "a red traffic light burning above an intersection",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "red traffic light above an intersection",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54174__gas_station_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U02",
+          "subject": "a wooden wedge holding a door open",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "wooden wedge holding a door open",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51096__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "a metal gate latch left half open",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "metal gate latch left half open",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10463__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "R05",
+          "subject": "scaffolding propping up a building facade from behind",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "scaffolding propping up a building facade"
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "a hand dropping a card into a ballot box",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand dropping a card into ballot box",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16213__ballot_box_voting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.322
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W07",
+          "subject": "stones set out in a group of five and a group of four",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stones grouped five and four on wood",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63935__bread_line_vintage_depression.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U04",
+          "subject": "a path splitting into two directions in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "path splitting in two directions daylight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62954__ankle_monitor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W11",
+          "subject": "a thick rope pulled taut from both ends",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "thick rope pulled taut from both ends",
+          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-3268__frost_forming_time_lapse.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "M03",
+          "subject": "a stack of five coins beside a stack of four",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "five coins stacked beside four coins",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23896__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "a long aisle between two tall rows of shelving",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "long aisle between two tall shelf rows",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2216__warehouse_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
         }
       ]
     },
@@ -390,8 +641,8 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Dozens of state legislatures rushed to fix this. Many of those laws were criticized as hollow.",
+          "delivery": "intense",
           "source_lines": [
             "In the years after Kelo, by the Institute for Justice's count, roughly forty or more states passed new laws or constitutional amendments restricting the use of eminent domain for economic development.",
             "many of these reforms were later criticized as weak, full of loopholes that left the core power largely intact"
@@ -399,8 +650,8 @@
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "The ruling set off one of the largest backlashes to any modern Supreme Court decision, and a rare bipartisan one. Legislatures responded fast.",
+          "delivery": "building",
           "source_lines": [
             "The ruling set off one of the largest popular backlashes to any modern Supreme Court decision — and a rare bipartisan one.",
             "And legislatures responded."
@@ -408,8 +659,8 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Roughly forty or more states passed new laws restricting eminent domain for economic development. But many were later criticized as weak, full of loopholes.",
+          "delivery": "building",
           "source_lines": [
             "In the years after Kelo, by the Institute for Justice's count, roughly forty or more states passed new laws or constitutional amendments restricting the use of eminent domain for economic development.",
             "many of these reforms were later criticized as weak, full of loopholes that left the core power largely intact"
@@ -417,8 +668,8 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "In 2009, Pfizer, the company whose arrival had justified the whole plan, closed its New London facility and left. A neighborhood erased for a development that never came, to serve a company that did not stay.",
+          "delivery": "intense",
           "source_lines": [
             "In 2009, Pfizer — the company whose arrival had justified the whole plan — closed its New London facility and left",
             "The neighborhood had been erased for a development that never came, to serve a company that did not stay."
@@ -426,8 +677,34 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The city never claimed Fort Trumbull was a slum, and the Court did not say the homes had to be blighted.",
+          "delivery": "building",
+          "source_lines": [
+            "The city was not claiming Fort Trumbull was a slum.",
+            "The Court did not say the homes had to be blighted."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Some families had lived there for generations. They were paid market value, which does not buy back a lifetime in one place.",
+          "delivery": "building",
+          "source_lines": [
+            "Some families had been in Fort Trumbull for generations.",
+            "They were paid the market value of their homes, as the Constitution requires — but market value does not buy back the place you have lived your whole life, or the neighbors who scatter once the bulldozers arrive."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "For a long time the most famous use of the bulldozed land was as a place to dump storm debris.",
+          "delivery": "building",
+          "source_lines": [
+            "For a long time, the most famous use of the bulldozed land was as a place to dump storm debris."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "The houses were gone, the company was gone, and the ruling still stood. Which raises the obvious question of what anyone did about it.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -461,13 +738,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "state capitol building dome",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6600__supreme_court_building.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16370__capitol_dome_dusk.mp4",
           "bound_title": "united states supreme court building in dc",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3816,
           "motion": 6.596,
-          "luma": 125.5
+          "luma": 125.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
         },
         {
           "n": 4,
@@ -488,13 +767,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "letters envelopes mail pile",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1750__front_door_house.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23698__case_files_stack_desk.mp4",
           "bound_title": "girl picking up mail at the door",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4138,
           "motion": 17.878,
-          "luma": 106.5
+          "luma": 106.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
         },
         {
           "n": 6,
@@ -505,13 +786,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "legislature chamber empty desks",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8133__bank_vault_door.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14510__courtroom_empty_wide.mp4",
           "bound_title": "an empty cell of a prison",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4611,
           "motion": 25.044,
-          "luma": 57.0
+          "luma": 57.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
         },
         {
           "n": 7,
@@ -542,13 +825,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stack of paper documents desk",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0828__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63076__old_ledger_book.mp4",
           "bound_title": "video of a money counter machine",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.481,
           "motion": 23.18,
-          "luma": 100.0
+          "luma": 100.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
         },
         {
           "n": 10,
@@ -589,13 +874,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "map of united states wall",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1047__data_center.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52104__world_map_with_pins_and_string.mp4",
           "bound_title": "men taking notes in front of a computer",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.388,
           "motion": 14.428,
-          "luma": 123.2
+          "luma": 123.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
         },
         {
           "n": 14,
@@ -626,13 +913,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "paper shredder shredding documents",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1285__documents_on_desk.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23796__shredded_documents_pile.mp4",
           "bound_title": "a person holding the documents",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4292,
           "motion": 19.945,
-          "luma": 158.5
+          "luma": 158.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.325
         },
         {
           "n": 17,
@@ -663,13 +952,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty parking lot night lights",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1592__highway_night_long_exposure.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21499__empty_parking_garage.mp4",
           "bound_title": "super fast footage of vehicle traveling at night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3931,
           "motion": 4.582,
-          "luma": 73.4
+          "luma": 73.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
         },
         {
           "n": 20,
@@ -704,12 +995,224 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a state capitol dome against a black sky",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": "capitol dome night uplight"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a painted front porch with a rocking chair",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "painted front porch with rocking chair",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32759__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "sunlight on the front of a clapboard house",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "sunlit clapboard house front daytime",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22906__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "a garden hose coiled beside stone steps",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "garden hose coiled beside stone steps",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6239__courthouse_steps.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "a screen door swinging open onto a bright porch",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "screen door opening onto bright porch",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4812__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W11",
+          "subject": "two lawn chairs standing on a mown lawn",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "two lawn chairs on a mown lawn",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-48274__farmer_in_field_at_dawn.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y01",
+          "subject": "a wooden swing hanging from a tree branch",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "wooden swing hanging from a tree",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56297__construction_crane_against_sky.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W06",
+          "subject": "hands wrapping plates into a cardboard box",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands packing plates into cardboard box",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8913__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M02",
+          "subject": "banknotes counted out into an open palm",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "banknotes counted into an open palm",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0831__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "R12",
+          "subject": "a doorframe marked with pencil height lines",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "doorframe with pencil height marks",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30678__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U13",
+          "subject": "a moving van standing with its ramp down",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "moving van with ramp down daylight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56933__highway_underpass.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "a heap of broken tree branches on bare ground",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "heap of broken tree branches on ground",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-3575__ash_falling.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R01",
+          "subject": "a dump truck tipping a load of rubble",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "dump truck tipping load of rubble",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8803__broken_house_demolition.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W05",
+          "subject": "an excavator arm pushing a pile of brush",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "excavator arm pushing pile of brush",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8809__broken_house_demolition.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y03",
+          "subject": "puddles standing across a rutted dirt lot",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "puddles across a rutted dirt lot"
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "a lone utility pole standing in an empty lot",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "lone utility pole standing in empty lot",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10716__snowy_street_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
         }
       ]
     }

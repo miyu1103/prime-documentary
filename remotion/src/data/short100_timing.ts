@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT100_TOTAL_SEC = 32.531;
+export const SHORT100_TOTAL_SEC = 55.482;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 25.122,
     "end": 31.531
+  },
+  {
+    "id": "L6",
+    "start": 31.751,
+    "end": 39.135
+  },
+  {
+    "id": "L7",
+    "start": 39.355,
+    "end": 47.528
+  },
+  {
+    "id": "L8",
+    "start": 47.748,
+    "end": 54.482
   }
 ];
 
@@ -120,23 +135,88 @@ export const SHORT100_CAPTIONS: ShortCaption[] = [
     "endSec": 24.902
   },
   {
-    "word": "A dissent frees no one",
+    "word": "A jury had already awarded him fourteen",
     "startSec": 25.122,
-    "endSec": 26.404
+    "endSec": 27.001
+  },
+  {
+    "word": "million dollars for eighteen stolen years.",
+    "startSec": 27.001,
+    "endSec": 29.025
+  },
+  {
+    "word": "Five to four",
+    "startSec": 29.025,
+    "endSec": 29.725
+  },
+  {
+    "word": "the Court reversed it.",
+    "startSec": 29.725,
+    "endSec": 30.785
+  },
+  {
+    "word": "Every dollar gone.",
+    "startSec": 30.785,
+    "endSec": 31.531
+  },
+  {
+    "word": "Justice Thomas wrote that prosecutors are",
+    "startSec": 31.751,
+    "endSec": 34.116
+  },
+  {
+    "word": "trained lawyers who know their duties.",
+    "startSec": 34.116,
+    "endSec": 36.308
+  },
+  {
+    "word": "One buried report however deadly",
+    "startSec": 36.308,
+    "endSec": 38.154
+  },
+  {
+    "word": "is not a pattern.",
+    "startSec": 38.154,
+    "endSec": 39.135
+  },
+  {
+    "word": "Ruth Bader Ginsburg read her dissent aloud.",
+    "startSec": 39.355,
+    "endSec": 41.902
+  },
+  {
+    "word": "Four prosecutors knew the",
+    "startSec": 41.902,
+    "endSec": 43.382
+  },
+  {
+    "word": "blood was not his.",
+    "startSec": 43.382,
+    "endSec": 44.448
+  },
+  {
+    "word": "She called the failure standard operating procedure.",
+    "startSec": 44.448,
+    "endSec": 47.528
+  },
+  {
+    "word": "A dissent frees no one",
+    "startSec": 47.748,
+    "endSec": 49.095
   },
   {
     "word": "and pays no one.",
-    "startSec": 26.404,
-    "endSec": 27.336
+    "startSec": 49.095,
+    "endSec": 50.074
   },
   {
     "word": "So what does a man actually get",
-    "startSec": 27.336,
-    "endSec": 29.142
+    "startSec": 50.074,
+    "endSec": 51.972
   },
   {
     "word": "after fourteen years under a buried page?",
-    "startSec": 29.142,
-    "endSec": 31.531
+    "startSec": 51.972,
+    "endSec": 54.482
   }
 ];

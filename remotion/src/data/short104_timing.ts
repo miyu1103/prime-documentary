@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT104_TOTAL_SEC = 29.837;
+export const SHORT104_TOTAL_SEC = 53.67;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 21.917,
     "end": 28.837
+  },
+  {
+    "id": "L6",
+    "start": 29.057,
+    "end": 37.648
+  },
+  {
+    "id": "L7",
+    "start": 37.868,
+    "end": 45.298
+  },
+  {
+    "id": "L8",
+    "start": 45.518,
+    "end": 52.67
   }
 ];
 
@@ -100,28 +115,98 @@ export const SHORT104_CAPTIONS: ShortCaption[] = [
     "endSec": 21.697
   },
   {
-    "word": "Two countries' regulators said it out loud",
+    "word": "Less than a year later",
     "startSec": 21.917,
-    "endSec": 24.299
+    "endSec": 23.135
+  },
+  {
+    "word": "that warning quietly came down.",
+    "startSec": 23.135,
+    "endSec": 24.851
+  },
+  {
+    "word": "The BBC reported it was taken",
+    "startSec": 24.851,
+    "endSec": 26.457
+  },
+  {
+    "word": "down after pressure from OneCoin's lawyers.",
+    "startSec": 26.457,
+    "endSec": 28.837
+  },
+  {
+    "word": "The engineers were saying",
+    "startSec": 29.057,
+    "endSec": 30.518
+  },
+  {
+    "word": "there was no coin.",
+    "startSec": 30.518,
+    "endSec": 31.57
+  },
+  {
+    "word": "One regulator had warned its citizens.",
+    "startSec": 31.57,
+    "endSec": 33.791
+  },
+  {
+    "word": "Another had ordered the thing dismantled.",
+    "startSec": 33.791,
+    "endSec": 36.187
+  },
+  {
+    "word": "And OneCoin kept growing.",
+    "startSec": 36.187,
+    "endSec": 37.648
+  },
+  {
+    "word": "The believers were not",
+    "startSec": 37.868,
+    "endSec": 39.116
+  },
+  {
+    "word": "bystanders to the warnings.",
+    "startSec": 39.116,
+    "endSec": 40.647
+  },
+  {
+    "word": "They had been paid in advance",
+    "startSec": 40.647,
+    "endSec": 42.292
+  },
+  {
+    "word": "to fight them.",
+    "startSec": 42.292,
+    "endSec": 43.086
+  },
+  {
+    "word": "A warning was not evidence to consider.",
+    "startSec": 43.086,
+    "endSec": 45.298
+  },
+  {
+    "word": "Two countries' regulators said it out loud",
+    "startSec": 45.518,
+    "endSec": 47.98
   },
   {
     "word": "in public",
-    "startSec": 24.299,
-    "endSec": 24.999
+    "startSec": 47.98,
+    "endSec": 48.68
   },
   {
     "word": "in plain language.",
-    "startSec": 24.999,
-    "endSec": 26.02
+    "startSec": 48.68,
+    "endSec": 49.735
   },
   {
     "word": "So what is a warning worth",
-    "startSec": 26.02,
-    "endSec": 27.495
+    "startSec": 49.735,
+    "endSec": 51.26
   },
   {
     "word": "if nobody wants to hear it?",
-    "startSec": 27.495,
-    "endSec": 28.837
+    "startSec": 51.26,
+    "endSec": 52.67
   }
 ];

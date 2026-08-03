@@ -82,32 +82,32 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Prosecutors buried the lab report that cleared him for fourteen years. He was freed. Then the Supreme Court said the office owed him nothing.",
+          "delivery": "intense",
           "source_lines": [
             "The Court said the office owed none of it."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "At the second trial, the jury heard everything the first one never did.",
+          "delivery": "building",
           "source_lines": [
             "This time the jury hears everything the first one never did."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "His claim was simple and enormous. That the office never trained its lawyers to follow the most basic rule of a fair trial.",
+          "delivery": "building",
           "source_lines": [
             "His claim is simple and enormous: this office never trained its lawyers to follow the most basic rule of a fair trial"
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "To win, he had to prove not one buried report but a pattern. The decision landed on the twenty-ninth of March, 2011.",
+          "delivery": "intense",
           "source_lines": [
             "To win, Thompson had to prove not a single buried report but a pattern",
             "The decision lands on the twenty-ninth of March, 2011."
@@ -115,8 +115,37 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "A jury had already awarded him fourteen million dollars for eighteen stolen years. Five to four, the Court reversed it. Every dollar gone.",
+          "delivery": "building",
+          "source_lines": [
+            "They award John Thompson fourteen million dollars, one figure standing in for eighteen stolen years.",
+            "Five to four. The Court reverses. Every dollar, gone."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Justice Thomas wrote that prosecutors are trained lawyers who know their duties. One buried report, however deadly, is not a pattern.",
+          "delivery": "intense",
+          "source_lines": [
+            "Prosecutors, he says, are trained lawyers.",
+            "They know their duties.",
+            "One buried report, however deadly, is not a pattern."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Ruth Bader Ginsburg read her dissent aloud. Four prosecutors knew the blood was not his. She called the failure standard operating procedure.",
+          "delivery": "building",
+          "source_lines": [
+            "Ruth Bader Ginsburg reads her dissent aloud from the bench.",
+            "Four prosecutors knew the blood was not his.",
+            "She calls the failure pervasive, standard operating procedure."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "A dissent frees no one and pays no one. So what does a man actually get, after fourteen years under a buried page?",
+          "delivery": "calm",
           "source_lines": [
             "And a dissent frees no one and pays no one."
           ]
@@ -172,13 +201,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courtroom interior benches",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53892__retro_diner_interior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14600__jury_box_empty.mp4",
           "bound_title": "close up of vintage car interior gear shift",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4246,
           "motion": 6.566,
-          "luma": 51.4
+          "luma": 51.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
         },
         {
           "n": 6,
@@ -299,13 +330,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "prison corridor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30757__prison_corridor.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2671__lone_person_silhouette_walking.mp4",
           "bound_title": "a prisoner arguing with the cop inside the jail",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4003,
           "motion": 18.154,
-          "luma": 90.6
+          "luma": 90.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.327
         },
         {
           "n": 18,
@@ -360,12 +393,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate — identical framing to plate 01",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "W11",
+          "subject": "the empty chairs of the jury that awarded him fourteen million",
+          "source": "FOOTAGE",
+          "footage_query": "empty chairs around a long wooden table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2293__empty_stadium_seats.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "M02",
+          "subject": "banded stacks of cash standing on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "stacks of banknotes on a wooden desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23984__money_counting_machine.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "W03",
+          "subject": "hard sunlight from a barred window across a cell floor",
+          "source": "FOOTAGE",
+          "footage_query": "sunlight through a barred window onto concrete",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15261__long_shadow_of_a_person.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "M05",
+          "subject": "a heavy steel vault door swinging closed on the award",
+          "source": "FOOTAGE",
+          "footage_query": "a heavy steel vault door swinging closed",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62985__prison_gate_closing.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "a handful of coins lying in a steel property tray",
+          "source": "FOOTAGE",
+          "footage_query": "a few coins lying in a metal tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23896__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "morning light across the desk where the opinion was written",
+          "source": "FOOTAGE",
+          "footage_query": "morning light falling across an office desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1383__warm_window_light_rays.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U06",
+          "subject": "an empty leather chair behind a lawyer's desk",
+          "source": "FOOTAGE",
+          "footage_query": "an empty leather chair behind a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0518__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y05",
+          "subject": "one closed case folder tied shut with string",
+          "source": "FOOTAGE",
+          "footage_query": "a closed brown folder tied with string",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14459__quill_and_ink_pot.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "a padlock holding a gate shut on what was buried",
+          "source": "FOOTAGE",
+          "footage_query": "a padlock hanging on a chain gate",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12147__padlock_and_chain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I06",
+          "subject": "a crumpled ball of paper on an office floor",
+          "source": "FOOTAGE",
+          "footage_query": "a crumpled paper ball on an office floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-2578__paper_scraps_flying.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.33
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "a lone figure standing in a shaft of light, speaking alone",
+          "source": "FOOTAGE",
+          "footage_query": "a figure standing in a bright light shaft",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4821__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y01",
+          "subject": "a heavy coat left hanging over an empty chair",
+          "source": "FOOTAGE",
+          "footage_query": "a heavy coat hanging over an empty chair",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46763__empty_chair_in_spotlight_grief.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W07",
+          "subject": "a gloved hand lifting the glass sample tube that held the answer",
+          "source": "FOOTAGE",
+          "footage_query": "gloved hand lifting a glass sample tube",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39686__laboratory_centrifuge.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I03",
+          "subject": "blank sheets sliding out of an office copier, routine work",
+          "source": "FOOTAGE",
+          "footage_query": "sheets sliding out of an office copier",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10333__newspaper_printing_press.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U02",
+          "subject": "a heavy wooden door swinging shut on the dissent",
+          "source": "FOOTAGE",
+          "footage_query": "a heavy wooden door swinging shut",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8129__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
         }
       ]
     },
@@ -381,40 +629,67 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "On the sixteenth of April, 1999, Louisiana set John Thompson's execution date and marked it for the twentieth of May.",
+          "delivery": "intense",
           "source_lines": [
             "On the sixteenth of April, 1999, Louisiana sets John Thompson's execution date, and marks it for the twentieth of May."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Beyond the walls, the paperwork of your own death keeps moving forward on a schedule, signed by people who will never meet you.",
+          "delivery": "building",
           "source_lines": [
             "And all the while, beyond the walls, the paperwork of your own death keeps moving forward on a schedule, signed by people who wi"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "In late April an investigator found it. The crime lab report. The blood type. The proof on paper that had been sitting in the system all along.",
+          "delivery": "building",
           "source_lines": [
             "And in late April, 1999, he finds it — the crime lab report, the blood type, the proof on paper that had been sitting in the sys"
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "Weeks. That is the distance between a filing cabinet and an execution chamber.",
+          "delivery": "intense",
           "source_lines": [
             "On the sixteenth of April, 1999, Louisiana sets John Thompson's execution date, and marks it for the twentieth of May."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The State's own crime lab had already typed the blood on the victim's clothes as type B. Thompson's blood is type O.",
+          "delivery": "building",
+          "source_lines": [
+            "The State's own crime lab had already typed it: type B.",
+            "John Thompson's blood is type O."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "In 1994 a dying prosecutor told a colleague he had hidden the blood evidence in the Thompson case. And still nothing happened.",
+          "delivery": "building",
+          "source_lines": [
+            "He tells a former colleague a secret he has carried for nine years: in the Thompson case, he hid the blood evidence that pointed away from the accused.",
+            "And still nothing happened."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "No call. No motion filed. The secret settled back into the dark, and Thompson kept waiting to die.",
+          "delivery": "intense",
+          "source_lines": [
+            "No call. No motion filed.",
+            "The secret settled back into the dark, and Thompson kept waiting to die."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Years later, the Supreme Court decided the office that buried that report owed him nothing at all.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -508,13 +783,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "prison corridor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31066__school_hallway_empty.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5384__school_hallway_empty.mp4",
           "bound_title": "point of view of a person walking along a creepy hotel corridor",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4992,
           "motion": 14.54,
-          "luma": 62.4
+          "luma": 62.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
         },
         {
           "n": 10,
@@ -535,13 +812,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "door closing dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2208__warehouse_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62993__prison_gate_closing.mp4",
           "bound_title": "a dark hallway with a light on the wall",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.7148,
           "motion": 1.809,
-          "luma": 45.2
+          "luma": 45.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
         },
         {
           "n": 12,
@@ -656,12 +935,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate — identical framing to plate 01",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "a microscope standing on the State's own laboratory bench",
+          "source": "FOOTAGE",
+          "footage_query": "a microscope under a bright lab lamp",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-2929__stage_spotlight_beams_haze.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "the victim's folded shirt laid out on a steel table",
+          "source": "FOOTAGE",
+          "footage_query": "a folded shirt lying on a steel table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-0297__floating_dust_in_light_beam.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "gloved hands filling a small glass vial with the sample",
+          "source": "FOOTAGE",
+          "footage_query": "gloved hands filling a small glass vial",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39805__microscope_slide_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "W11",
+          "subject": "two glass vials standing side by side, type B and type O",
+          "source": "FOOTAGE",
+          "footage_query": "two glass vials standing side by side",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11862__test_tubes_rack_lab.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.346
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y05",
+          "subject": "the plain manila folder that held the result, lying closed",
+          "source": "FOOTAGE",
+          "footage_query": "a manila folder lying closed on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23698__case_files_stack_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "R04",
+          "subject": "two men talking quietly across a small table",
+          "source": "FOOTAGE",
+          "footage_query": "two men talking quietly across a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46943__lawyer_and_client_meeting_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y01",
+          "subject": "an empty hospital bed beside a window",
+          "source": "FOOTAGE",
+          "footage_query": "an empty hospital bed beside a window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20993__abandoned_factory_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "R11",
+          "subject": "an old telephone handset resting on a desk, not lifted",
+          "source": "FOOTAGE",
+          "footage_query": "an old telephone handset on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36965__rotary_phone_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "R06",
+          "subject": "rows of empty benches where no motion was ever filed",
+          "source": "FOOTAGE",
+          "footage_query": "rows of empty benches in a waiting hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11397__airport_terminal_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "R10",
+          "subject": "a security chain drawn across a closed door",
+          "source": "FOOTAGE",
+          "footage_query": "a security chain across a closed door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8125__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U07",
+          "subject": "an old typewriter sitting unused on a writing desk",
+          "source": "FOOTAGE",
+          "footage_query": "an old typewriter on a writing desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6097__old_keys_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "M06",
+          "subject": "a metal drawer sliding shut on the secret again",
+          "source": "FOOTAGE",
+          "footage_query": "a metal drawer sliding shut",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30050__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W02",
+          "subject": "a figure standing behind prison bars, still waiting",
+          "source": "FOOTAGE",
+          "footage_query": "a figure standing behind prison bars",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23319__barbed_wire_fence_sky.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U01",
+          "subject": "a bare bulb burning on a corridor ceiling through the night",
+          "source": "FOOTAGE",
+          "footage_query": "a bare light bulb hanging from a ceiling",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-17248__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "a man walking away down a long corridor",
+          "source": "FOOTAGE",
+          "footage_query": "a man walking away down a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2368__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
         }
       ]
     }

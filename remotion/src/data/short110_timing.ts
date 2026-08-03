@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT110_TOTAL_SEC = 37.22;
+export const SHORT110_TOTAL_SEC = 58.638;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 30.787,
     "end": 36.22
+  },
+  {
+    "id": "L6",
+    "start": 36.44,
+    "end": 42.802
+  },
+  {
+    "id": "L7",
+    "start": 43.022,
+    "end": 51.938
+  },
+  {
+    "id": "L8",
+    "start": 52.158,
+    "end": 57.638
   }
 ];
 
@@ -135,23 +150,93 @@ export const SHORT110_CAPTIONS: ShortCaption[] = [
     "endSec": 30.567
   },
   {
-    "word": "The name on the case",
+    "word": "The other three were Vignera v.",
     "startSec": 30.787,
-    "endSec": 31.852
+    "endSec": 32.134
+  },
+  {
+    "word": "New York Westover v. United States",
+    "startSec": 32.134,
+    "endSec": 33.612
+  },
+  {
+    "word": "and California v. Stewart.",
+    "startSec": 33.612,
+    "endSec": 34.742
+  },
+  {
+    "word": "All asking the very same question.",
+    "startSec": 34.742,
+    "endSec": 36.22
+  },
+  {
+    "word": "In that Phoenix room",
+    "startSec": 36.44,
+    "endSec": 37.556
+  },
+  {
+    "word": "Miranda was never told he did",
+    "startSec": 37.556,
+    "endSec": 39.175
+  },
+  {
+    "word": "not have to say anything",
+    "startSec": 39.175,
+    "endSec": 40.514
+  },
+  {
+    "word": "or that he could have",
+    "startSec": 40.514,
+    "endSec": 41.686
+  },
+  {
+    "word": "a lawyer beside him.",
+    "startSec": 41.686,
+    "endSec": 42.802
+  },
+  {
+    "word": "On June 13 1966",
+    "startSec": 43.022,
+    "endSec": 44.067
+  },
+  {
+    "word": "by five votes to four",
+    "startSec": 44.067,
+    "endSec": 45.53
+  },
+  {
+    "word": "the Court ruled that a",
+    "startSec": 45.53,
+    "endSec": 47.062
+  },
+  {
+    "word": "custodial confession cannot be used",
+    "startSec": 47.062,
+    "endSec": 49.5
+  },
+  {
+    "word": "unless clear safeguards came first.",
+    "startSec": 49.5,
+    "endSec": 51.938
+  },
+  {
+    "word": "The name on the case",
+    "startSec": 52.158,
+    "endSec": 53.233
   },
   {
     "word": "belongs to one man.",
-    "startSec": 31.852,
-    "endSec": 32.864
+    "startSec": 53.233,
+    "endSec": 54.253
   },
   {
     "word": "Count the interrogation rooms the",
-    "startSec": 32.864,
-    "endSec": 34.622
+    "startSec": 54.253,
+    "endSec": 56.026
   },
   {
     "word": "Court was actually looking at.",
-    "startSec": 34.622,
-    "endSec": 36.22
+    "startSec": 56.026,
+    "endSec": 57.638
   }
 ];

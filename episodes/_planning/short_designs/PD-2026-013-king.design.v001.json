@@ -51,24 +51,24 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Police can swab your DNA at booking because the Supreme Court called it identification. That word does not mean what you think it means.",
+          "delivery": "intense",
           "source_lines": [
             "In 2013, by a single vote, the Supreme Court said they are allowed to do that."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Fingerprints are allowed at booking for one reason. Their purpose is confirming that the person in the cell is who they say they are.",
+          "delivery": "building",
           "source_lines": [
             "Courts have long allowed this, because its purpose is identification — confirming that the person in the cell is who they say they are, and checking whether they are wanted elsewhere"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Justice Kennedy said identification meant more than a name. Knowing an arrestee's full history helps officers judge how dangerous he might be.",
+          "delivery": "building",
           "source_lines": [
             "Kennedy also spelled out what \"identification\" meant to the majority, and it was broader than a name.",
             "Knowing an arrestee's full history, the Court said, helps officers judge how dangerous he might be, whether he is a flight risk, and whether he threatens the people around him."
@@ -76,16 +76,42 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "Whether he is a flight risk. Whether he threatens the people around him. On that reading the swab was not a fishing expedition. It was processing.",
+          "delivery": "intense",
           "source_lines": [
             "DNA, in that view, was not a fishing expedition — it was part of safely processing a person already in the state's custody"
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The database has a name, CODIS, the FBI's national DNA index. The whole value of swabbing arrestees comes from searching it against cold cases.",
+          "delivery": "building",
+          "source_lines": [
+            "CODIS, the FBI's national DNA index",
+            "and the whole value of swabbing arrestees comes from searching it against cold cases"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Scalia answered that the police already knew who King was. The purpose was investigating unsolved crimes, which the Constitution forbids without suspicion.",
+          "delivery": "building",
+          "source_lines": [
+            "The swab, he said, was not really about identifying Alonzo King",
+            "Its purpose was to investigate unsolved crimes, and the Constitution does not allow the government to search a person for evidence of crime without a reason to suspect them of it"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "He warned that a person's DNA can be taken and entered into a national database if they are ever arrested, rightly or wrongly.",
+          "delivery": "intense",
+          "source_lines": [
+            "as a consequence of this decision, he wrote, your DNA can be taken and entered into a national DNA database if you are ever arrested, rightly or wrongly, and for whatever reason"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "The four in dissent lost, which means the definition in the majority opinion is the one police work from today.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -348,7 +374,27 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a sealed cheek swab held over the booking counter",
           "source": "REUSE_01",
@@ -369,8 +415,8 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The Supreme Court compared a DNA swab to a fingerprint. Look at how far apart those two things actually are.",
+          "delivery": "intense",
           "source_lines": [
             "In 2013, the Supreme Court upheld the swab.",
             "It is, in the Court's words, like fingerprinting and photographing — a legitimate booking procedure"
@@ -378,32 +424,57 @@
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "A fingerprint reveals almost nothing about you except its own pattern. DNA is a blueprint that can expose your relatives, your health, your most private traits.",
+          "delivery": "building",
           "source_lines": [
             "A fingerprint reveals almost nothing about you except its own pattern. DNA is different — it is a blueprint that can expose your relatives, your health, your most private traits."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "The majority answered that the law reads only a narrow set of identifying markers, not your whole genome. That was the promise.",
+          "delivery": "building",
           "source_lines": [
             "The majority stressed that the law used only a narrow set of identifying markers, not your whole genome."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "But critics answered that the physical sample itself is kept. And that the line the state draws today, it can quietly move tomorrow.",
+          "delivery": "intense",
           "source_lines": [
             "Critics answered that the physical sample itself is kept, and that the line the state draws today, it can quietly move tomorrow"
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "In much of the country, being arrested for a serious offense now means giving a sample before any trial, and it is kept.",
+          "delivery": "building",
+          "source_lines": [
+            "In much of the country, being arrested for a serious offense now means giving a DNA sample"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The people swept into those databases include the merely arrested, whose genetic code is on file because of a single encounter with the police.",
+          "delivery": "intense",
+          "source_lines": [
+            "the people swept into those databases include the merely arrested",
+            "whose genetic code is now on file because of a single encounter with the police"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The other side is real. DNA databases have closed cold cases, freed innocent people, and identified violent offenders who would otherwise have walked free.",
+          "delivery": "building",
+          "source_lines": [
+            "The system genuinely works: DNA databases have closed cold cases, freed innocent people, and identified violent offenders who would otherwise have walked free"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "The Court weighed that risk against a public interest and called the swab reasonable. Whether that holds depends on what you think a swab actually takes.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -680,7 +751,27 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a print card and a swab tube laid side by side",
           "source": "REUSE_01",

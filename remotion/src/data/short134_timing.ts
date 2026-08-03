@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT134_TOTAL_SEC = 40.471;
+export const SHORT134_TOTAL_SEC = 63.794;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.437,
     "end": 39.471
+  },
+  {
+    "id": "L6",
+    "start": 39.691,
+    "end": 47.586
+  },
+  {
+    "id": "L7",
+    "start": 47.806,
+    "end": 54.447
+  },
+  {
+    "id": "L8",
+    "start": 54.667,
+    "end": 62.794
   }
 ];
 
@@ -120,23 +135,88 @@ export const SHORT134_CAPTIONS: ShortCaption[] = [
     "endSec": 31.217
   },
   {
-    "word": "Seven justices went the other way.",
+    "word": "The rule came from a",
     "startSec": 31.437,
-    "endSec": 33.605
+    "endSec": 32.577
+  },
+  {
+    "word": "1928 case called Olmstead.",
+    "startSec": 32.577,
+    "endSec": 34.058
+  },
+  {
+    "word": "Federal agents tapped a bootlegger's",
+    "startSec": 34.058,
+    "endSec": 36.109
+  },
+  {
+    "word": "phone lines from the street",
+    "startSec": 36.109,
+    "endSec": 37.648
+  },
+  {
+    "word": "without ever entering his house.",
+    "startSec": 37.648,
+    "endSec": 39.471
+  },
+  {
+    "word": "The Supreme Court said that was fine.",
+    "startSec": 39.691,
+    "endSec": 41.855
+  },
+  {
+    "word": "No trespass into a protected",
+    "startSec": 41.855,
+    "endSec": 43.492
+  },
+  {
+    "word": "place meant no search",
+    "startSec": 43.492,
+    "endSec": 44.72
+  },
+  {
+    "word": "and for decades the",
+    "startSec": 44.72,
+    "endSec": 45.832
+  },
+  {
+    "word": "test stayed almost mechanical.",
+    "startSec": 45.832,
+    "endSec": 47.586
+  },
+  {
+    "word": "The majority's move was to stop asking",
+    "startSec": 47.806,
+    "endSec": 49.841
+  },
+  {
+    "word": "where the government was standing and start",
+    "startSec": 49.841,
+    "endSec": 52.144
+  },
+  {
+    "word": "asking what the person reasonably expected.",
+    "startSec": 52.144,
+    "endSec": 54.447
+  },
+  {
+    "word": "Seven justices went the other way.",
+    "startSec": 54.667,
+    "endSec": 56.86
   },
   {
     "word": "The trespass rule that had stood",
-    "startSec": 33.605,
-    "endSec": 35.645
+    "startSec": 56.86,
+    "endSec": 58.924
   },
   {
     "word": "for nearly forty years was gone",
-    "startSec": 35.645,
-    "endSec": 37.622
+    "startSec": 58.924,
+    "endSec": 60.923
   },
   {
     "word": "and Black's plain words lost.",
-    "startSec": 37.622,
-    "endSec": 39.471
+    "startSec": 60.923,
+    "endSec": 62.794
   }
 ];

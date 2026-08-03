@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT132_TOTAL_SEC = 36.059;
+export const SHORT132_TOTAL_SEC = 59.614;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 28.79,
     "end": 35.059
+  },
+  {
+    "id": "L6",
+    "start": 35.279,
+    "end": 45.728
+  },
+  {
+    "id": "L7",
+    "start": 45.948,
+    "end": 51.985
+  },
+  {
+    "id": "L8",
+    "start": 52.205,
+    "end": 58.614
   }
 ];
 
@@ -115,23 +130,83 @@ export const SHORT132_CAPTIONS: ShortCaption[] = [
     "endSec": 28.57
   },
   {
-    "word": "So the question is not",
+    "word": "Scalia's worry looked forward not back.",
     "startSec": 28.79,
-    "endSec": 30.067
+    "endSec": 30.671
+  },
+  {
+    "word": "If the rule depended on how",
+    "startSec": 30.671,
+    "endSec": 31.973
+  },
+  {
+    "word": "good today's device happened to be",
+    "startSec": 31.973,
+    "endSec": 33.612
+  },
+  {
+    "word": "privacy would shrink steadily.",
+    "startSec": 33.612,
+    "endSec": 35.059
+  },
+  {
+    "word": "Every year the tools for sensing what",
+    "startSec": 35.279,
+    "endSec": 38.002
+  },
+  {
+    "word": "happens inside a home get cheaper smaller",
+    "startSec": 38.002,
+    "endSec": 41.019
+  },
+  {
+    "word": "sharper. Drones overhead cameras",
+    "startSec": 41.019,
+    "endSec": 43.373
+  },
+  {
+    "word": "devices that read through walls.",
+    "startSec": 43.373,
+    "endSec": 45.728
+  },
+  {
+    "word": "Kyllo is the case courts keep",
+    "startSec": 45.948,
+    "endSec": 47.36
+  },
+  {
+    "word": "returning to when they ask how",
+    "startSec": 47.36,
+    "endSec": 48.82
+  },
+  {
+    "word": "far the government can push those",
+    "startSec": 48.82,
+    "endSec": 50.427
+  },
+  {
+    "word": "tools before it needs a warrant.",
+    "startSec": 50.427,
+    "endSec": 51.985
+  },
+  {
+    "word": "So the question is not",
+    "startSec": 52.205,
+    "endSec": 53.511
   },
   {
     "word": "whether your home is protected.",
-    "startSec": 30.067,
-    "endSec": 31.866
+    "startSec": 53.511,
+    "endSec": 55.35
   },
   {
     "word": "It is how long the device",
-    "startSec": 31.866,
-    "endSec": 33.318
+    "startSec": 55.35,
+    "endSec": 56.834
   },
   {
     "word": "that watches it stays unusual.",
-    "startSec": 33.318,
-    "endSec": 35.059
+    "startSec": 56.834,
+    "endSec": 58.614
   }
 ];

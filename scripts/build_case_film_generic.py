@@ -53,7 +53,12 @@ HOOK_SEC = 8.0
 OPENING_SEC = 3.5
 ENDCARD_SEC = 9.0
 
-VALID_KINDS = {"numberticker", "stat", "votetally", "timeline", "quote", "kinetic",
+# casetimeline_c is a REAL renderer kind (FigureBeats.tsx, the carsearch CaseTimeline
+# component) with shipped use in EP34, and it was simply missing from this list. EP59 hit it
+# first and was worked around by rewriting the episode config; EP60 hit it in ACT_5 and the
+# build died. Fixing the list is the correct repair -- the config should not be bent to match
+# an incomplete allow-list.
+VALID_KINDS = {"numberticker", "stat", "votetally", "timeline", "casetimeline_c", "quote", "kinetic",
                "lowerthird", "acttitle", "compbars", "bar", "mechanism", "regionmap",
                "pindropmap", "routemap", "arrow", "highlightring", "spotlight"}
 BANNED_FIGURE_KINDS = {"dochighlight"}   # reads as a rendering bug (owner flagged 3x)

@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT103_TOTAL_SEC = 35.874;
+export const SHORT103_TOTAL_SEC = 57.293;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 28.605,
     "end": 34.874
+  },
+  {
+    "id": "L6",
+    "start": 35.094,
+    "end": 43.267
+  },
+  {
+    "id": "L7",
+    "start": 43.487,
+    "end": 50.732
+  },
+  {
+    "id": "L8",
+    "start": 50.952,
+    "end": 56.293
   }
 ];
 
@@ -120,23 +135,93 @@ export const SHORT103_CAPTIONS: ShortCaption[] = [
     "endSec": 28.385
   },
   {
-    "word": "Help and a search can begin with",
+    "word": "The doors that were",
     "startSec": 28.605,
-    "endSec": 30.534
+    "endSec": 29.589
+  },
+  {
+    "word": "already open stayed open.",
+    "startSec": 29.589,
+    "endSec": 30.885
+  },
+  {
+    "word": "A valid warrant. Your consent.",
+    "startSec": 30.885,
+    "endSec": 32.439
+  },
+  {
+    "word": "And exigent circumstances",
+    "startSec": 32.439,
+    "endSec": 33.734
+  },
+  {
+    "word": "the genuine emergency.",
+    "startSec": 33.734,
+    "endSec": 34.874
+  },
+  {
+    "word": "Change one detail and the answer flips.",
+    "startSec": 35.094,
+    "endSec": 37.491
+  },
+  {
+    "word": "The officers reach the porch",
+    "startSec": 37.491,
+    "endSec": 39.211
+  },
+  {
+    "word": "and hear a gunshot inside.",
+    "startSec": 39.211,
+    "endSec": 40.809
+  },
+  {
+    "word": "Nothing in this decision keeps them out.",
+    "startSec": 40.809,
+    "endSec": 43.267
+  },
+  {
+    "word": "A unanimous Supreme Court did",
+    "startSec": 43.487,
+    "endSec": 45.223
+  },
+  {
+    "word": "not end his case.",
+    "startSec": 45.223,
+    "endSec": 46.241
+  },
+  {
+    "word": "It vacated the decision against",
+    "startSec": 46.241,
+    "endSec": 48.097
+  },
+  {
+    "word": "him and sent it back",
+    "startSec": 48.097,
+    "endSec": 49.295
+  },
+  {
+    "word": "down to be judged again.",
+    "startSec": 49.295,
+    "endSec": 50.732
+  },
+  {
+    "word": "Help and a search can begin with",
+    "startSec": 50.952,
+    "endSec": 52.595
   },
   {
     "word": "exactly the same knock at the door.",
-    "startSec": 30.534,
-    "endSec": 32.644
+    "startSec": 52.595,
+    "endSec": 54.393
   },
   {
     "word": "So which one did",
-    "startSec": 32.644,
-    "endSec": 33.608
+    "startSec": 54.393,
+    "endSec": 55.215
   },
   {
     "word": "the Court leave open?",
-    "startSec": 33.608,
-    "endSec": 34.874
+    "startSec": 55.215,
+    "endSec": 56.293
   }
 ];

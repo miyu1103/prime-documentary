@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT121_TOTAL_SEC = 44.326;
+export const SHORT121_TOTAL_SEC = 62.865;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 37.893,
     "end": 43.326
+  },
+  {
+    "id": "L6",
+    "start": 43.546,
+    "end": 50.14
+  },
+  {
+    "id": "L7",
+    "start": 50.36,
+    "end": 55.886
+  },
+  {
+    "id": "L8",
+    "start": 56.106,
+    "end": 61.865
   }
 ];
 
@@ -150,23 +165,78 @@ export const SHORT121_CAPTIONS: ShortCaption[] = [
     "endSec": 37.673
   },
   {
-    "word": "Both rulings stand.",
+    "word": "She argued that facing an employer",
     "startSec": 37.893,
-    "endSec": 38.968
+    "endSec": 39.797
+  },
+  {
+    "word": "one at a time ignores why",
+    "startSec": 39.797,
+    "endSec": 41.198
+  },
+  {
+    "word": "federal law lets workers act together.",
+    "startSec": 41.198,
+    "endSec": 43.326
+  },
+  {
+    "word": "The waiver forces every claim to be",
+    "startSec": 43.546,
+    "endSec": 45.519
+  },
+  {
+    "word": "brought one person at a time",
+    "startSec": 45.519,
+    "endSec": 47.097
+  },
+  {
+    "word": "which for small scattered harms can",
+    "startSec": 47.097,
+    "endSec": 49.069
+  },
+  {
+    "word": "mean no one at all.",
+    "startSec": 49.069,
+    "endSec": 50.14
+  },
+  {
+    "word": "Those clauses are now standard",
+    "startSec": 50.36,
+    "endSec": 52.223
+  },
+  {
+    "word": "in contracts for a phone",
+    "startSec": 52.223,
+    "endSec": 53.713
+  },
+  {
+    "word": "a bank account",
+    "startSec": 53.713,
+    "endSec": 54.582
+  },
+  {
+    "word": "and very often a job.",
+    "startSec": 54.582,
+    "endSec": 55.886
+  },
+  {
+    "word": "Both rulings stand.",
+    "startSec": 56.106,
+    "endSec": 57.246
   },
   {
     "word": "The dissents are just dissents",
-    "startSec": 38.968,
-    "endSec": 40.666
+    "startSec": 57.246,
+    "endSec": 59.045
   },
   {
     "word": "and reading one aloud does",
-    "startSec": 40.666,
-    "endSec": 42.138
+    "startSec": 59.045,
+    "endSec": 60.605
   },
   {
     "word": "not change the count.",
-    "startSec": 42.138,
-    "endSec": 43.326
+    "startSec": 60.605,
+    "endSec": 61.865
   }
 ];

@@ -72,24 +72,24 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Get a warrant. Three words from the Supreme Court, and everyone stopped reading there.",
+          "delivery": "intense",
           "source_lines": [
             "The ruling came down to three words that are now quoted constantly: get a warrant"
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "The Court did not say police can never see what is on your phone. It said they have to go to a judge, show probable cause, and get one.",
+          "delivery": "building",
           "source_lines": [
             "The Court did not say the police can never see what is on your phone. It said they have to do what the Constitution normally requires for something this private: go to a judge, show probable cause, and get a warrant"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "And it left a door open. In a true emergency, a bomb, a kidnapping, a child in danger, police can still act without waiting. It protects your phone. It does not make it a shield.",
+          "delivery": "building",
           "source_lines": [
             "The Court left one important door open. In a true emergency — a bomb, a kidnapping, a child in danger — the police can still act without waiting for a warrant",
             "The rule protects your phone. It does not turn it into a shield."
@@ -97,8 +97,8 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "Then look at what it actually guarded. The messages, the photos, the files you put there on purpose. Not what your phone creates on its own and hands to your carrier.",
+          "delivery": "intense",
           "source_lines": [
             "It protects the contents of the phone — the messages, the photos, the files you can see when you unlock it. It assumes the private thing is the data you put there on purpose.",
             "Every few minutes, it tells the nearest tower where it is."
@@ -106,8 +106,35 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Not one justice dissented. Roberts wrote that phones hold, in digital form, the privacies of life.",
+          "delivery": "building",
+          "source_lines": [
+            "In 2014, the Supreme Court ruled, and not one justice dissented",
+            "Roberts wrote that modern phones are now such a pervasive and insistent part of daily life that they hold, in digital form, the privacies of life"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "A phone search, he wrote, can reveal more than a thorough search of a house.",
+          "delivery": "building",
+          "source_lines": [
+            "it can be more revealing than the most thorough search of a house",
+            "Your home does not carry a record of everywhere you have been, everything you have searched for, and every message you have ever sent."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The old justifications did not fit. Data cannot cut an officer or help a suspect escape.",
+          "delivery": "building",
+          "source_lines": [
+            "And the old justifications did not fit.",
+            "The data inside a phone cannot be used as a weapon; it cannot cut an officer or help a suspect escape"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "You never type that trail. You never see it. And almost nobody read far enough into the ruling to find out who owns it.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -201,13 +228,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hand signing document pen",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0514__courtroom_interior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14456__quill_and_ink_pot.mp4",
           "bound_title": "a person holding a pen",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3997,
           "motion": 21.599,
-          "luma": 138.7
+          "luma": 138.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
         },
         {
           "n": 10,
@@ -228,13 +257,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "office corridor night empty",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0371__blurred_city_night_bokeh.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16522__office_interior_dark.mp4",
           "bound_title": "vibrant cityscape at night with blurred lights",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4445,
           "motion": 3.635,
-          "luma": 45.3
+          "luma": 45.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
         },
         {
           "n": 12,
@@ -255,13 +286,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "emergency lights flashing street",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0366__blurred_city_night_bokeh.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-7395__street_lamp_in_fog.mp4",
           "bound_title": "blurred city lights",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3937,
           "motion": 5.419,
-          "luma": 42.1
+          "luma": 42.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
         },
         {
           "n": 14,
@@ -312,13 +345,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "finger tapping phone screen macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0906__stock_market_screen.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0141__lens_flare.mp4",
           "bound_title": "graphs on multiple screens",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3894,
           "motion": 20.76,
-          "luma": 59.4
+          "luma": 59.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
         },
         {
           "n": 19,
@@ -339,13 +374,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "cell tower antenna sky",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0746__american_flag_waving.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-27823__radio_tower_at_night.mp4",
           "bound_title": "american flag waving against blue sky",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.7782,
           "motion": 9.842,
-          "luma": 112.9
+          "luma": 112.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.342
         },
         {
           "n": 21,
@@ -370,12 +407,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a smartphone face down on a dark table, edge catching light",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": "smartphone face down table dark"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I05",
+          "subject": "a shelf of family photo albums and keepsake boxes",
+          "source": "FOOTAGE",
+          "footage_query": "shelf of photo albums and boxes",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0589__law_library_books.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "I06",
+          "subject": "a small wooden box of keepsakes opened on a table",
+          "source": "FOOTAGE",
+          "footage_query": "small wooden box of keepsakes opened on a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23797__shredded_documents_pile.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y05",
+          "subject": "a diary closed with a band on a bedside table",
+          "source": "FOOTAGE",
+          "footage_query": "closed diary on a bedside table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63954__bread_line_vintage_depression.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R08",
+          "subject": "a row of empty chairs behind a long bench",
+          "source": "FOOTAGE",
+          "footage_query": "row of empty chairs behind a long bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26916__empty_playground_at_dusk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "glass doors opening into a bright lobby",
+          "source": "FOOTAGE",
+          "footage_query": "glass doors opening into a bright lobby",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26011__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "a hand opening a kitchen cupboard door",
+          "source": "FOOTAGE",
+          "footage_query": "hand opening a kitchen cupboard door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30050__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "R12",
+          "subject": "a tray holding a wallet, keys and a phone",
+          "source": "FOOTAGE",
+          "footage_query": "tray holding a wallet keys and a phone",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37033__fingerprint_dust_lift.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "a small home safe standing open",
+          "source": "FOOTAGE",
+          "footage_query": "small home safe standing open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14679__witness_stand_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "a memory card held between finger and thumb",
+          "source": "FOOTAGE",
+          "footage_query": "memory card held between finger and thumb",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52530__vintage_film_camera.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I02",
+          "subject": "a row of front doors along an apartment landing",
+          "source": "FOOTAGE",
+          "footage_query": "row of front doors along an apartment landing",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1823__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R03",
+          "subject": "a metal table in a bare interview room",
+          "source": "FOOTAGE",
+          "footage_query": "metal table in a bare interview room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29216__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "W10",
+          "subject": "a metal gate sliding open in a fence",
+          "source": "FOOTAGE",
+          "footage_query": "metal gate sliding open in a fence",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6611__supreme_court_building.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W04",
+          "subject": "a corridor of holding cell doors",
+          "source": "FOOTAGE",
+          "footage_query": "corridor of holding cell doors",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5384__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.33
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U10",
+          "subject": "hands snapping on latex gloves",
+          "source": "FOOTAGE",
+          "footage_query": "hands snapping on latex gloves",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39751__blood_vials_in_rack.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "M04",
+          "subject": "car keys and a wallet on a kitchen counter",
+          "source": "FOOTAGE",
+          "footage_query": "car keys and wallet on a kitchen counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51098__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         }
       ]
     }

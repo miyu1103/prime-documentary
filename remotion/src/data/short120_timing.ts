@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT120_TOTAL_SEC = 39.774;
+export const SHORT120_TOTAL_SEC = 62.075;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 33.573,
     "end": 38.774
+  },
+  {
+    "id": "L6",
+    "start": 38.994,
+    "end": 47.214
+  },
+  {
+    "id": "L7",
+    "start": 47.434,
+    "end": 55.654
+  },
+  {
+    "id": "L8",
+    "start": 55.874,
+    "end": 61.075
   }
 ];
 
@@ -125,23 +140,93 @@ export const SHORT120_CAPTIONS: ShortCaption[] = [
     "endSec": 33.353
   },
   {
-    "word": "So the gray zone",
+    "word": "The post went out to about",
     "startSec": 33.573,
-    "endSec": 34.508
+    "endSec": 34.582
+  },
+  {
+    "word": "two hundred and fifty friends and",
+    "startSec": 34.582,
+    "endSec": 35.863
+  },
+  {
+    "word": "was supposed to vanish.",
+    "startSec": 35.863,
+    "endSec": 36.756
+  },
+  {
+    "word": "Someone took a screenshot",
+    "startSec": 36.756,
+    "endSec": 37.726
+  },
+  {
+    "word": "and it reached the coaches.",
+    "startSec": 37.726,
+    "endSec": 38.774
+  },
+  {
+    "word": "After Mahanoy",
+    "startSec": 38.994,
+    "endSec": 39.822
+  },
+  {
+    "word": "a public school cannot punish a",
+    "startSec": 39.822,
+    "endSec": 41.798
+  },
+  {
+    "word": "student simply for an ordinary off campus",
+    "startSec": 41.798,
+    "endSec": 44.41
+  },
+  {
+    "word": "online vent that does",
+    "startSec": 44.41,
+    "endSec": 45.748
+  },
+  {
+    "word": "not disrupt the school.",
+    "startSec": 45.748,
+    "endSec": 47.214
+  },
+  {
+    "word": "The alternative was a school reaching a",
+    "startSec": 47.434,
+    "endSec": 49.724
+  },
+  {
+    "word": "student's words twenty-four hours a day anywhere",
+    "startSec": 49.724,
+    "endSec": 52.542
+  },
+  {
+    "word": "because almost anything said",
+    "startSec": 52.542,
+    "endSec": 54.186
+  },
+  {
+    "word": "online could ripple back.",
+    "startSec": 54.186,
+    "endSec": 55.654
+  },
+  {
+    "word": "So the gray zone",
+    "startSec": 55.874,
+    "endSec": 56.809
   },
   {
     "word": "is not an accident.",
-    "startSec": 34.508,
-    "endSec": 35.618
+    "startSec": 56.809,
+    "endSec": 57.919
   },
   {
     "word": "It is what eight justices",
-    "startSec": 35.618,
-    "endSec": 37.079
+    "startSec": 57.919,
+    "endSec": 59.38
   },
   {
     "word": "decided they could live with.",
-    "startSec": 37.079,
-    "endSec": 38.774
+    "startSec": 59.38,
+    "endSec": 61.075
   }
 ];

@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT119_TOTAL_SEC = 43.816;
+export const SHORT119_TOTAL_SEC = 64.214;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 37.15,
     "end": 42.816
+  },
+  {
+    "id": "L6",
+    "start": 43.036,
+    "end": 49.863
+  },
+  {
+    "id": "L7",
+    "start": 50.083,
+    "end": 57.328
+  },
+  {
+    "id": "L8",
+    "start": 57.548,
+    "end": 63.214
   }
 ];
 
@@ -145,23 +160,78 @@ export const SHORT119_CAPTIONS: ShortCaption[] = [
     "endSec": 36.93
   },
   {
-    "word": "Everything the school did",
+    "word": "The punishment was not a warning.",
     "startSec": 37.15,
-    "endSec": 38.525
+    "endSec": 38.683
+  },
+  {
+    "word": "Brandi Levy was suspended from",
+    "startSec": 38.683,
+    "endSec": 40.076
+  },
+  {
+    "word": "the junior varsity cheer squad",
+    "startSec": 40.076,
+    "endSec": 41.469
+  },
+  {
+    "word": "for the entire upcoming year.",
+    "startSec": 41.469,
+    "endSec": 42.816
+  },
+  {
+    "word": "The 1969 Tinker rule lets a school",
+    "startSec": 43.036,
+    "endSec": 45.072
+  },
+  {
+    "word": "discipline speech that substantially disrupts it.",
+    "startSec": 45.072,
+    "endSec": 48.007
+  },
+  {
+    "word": "A few minutes of talk does not.",
+    "startSec": 48.007,
+    "endSec": 49.863
+  },
+  {
+    "word": "A school policing student",
+    "startSec": 50.083,
+    "endSec": 51.52
+  },
+  {
+    "word": "speech around the clock Breyer wrote",
+    "startSec": 51.52,
+    "endSec": 53.59
+  },
+  {
+    "word": "would reach so far into private",
+    "startSec": 53.59,
+    "endSec": 55.373
+  },
+  {
+    "word": "life it could swallow free speech.",
+    "startSec": 55.373,
+    "endSec": 57.328
+  },
+  {
+    "word": "Everything the school did",
+    "startSec": 57.548,
+    "endSec": 58.923
   },
   {
     "word": "rested on one word",
-    "startSec": 38.525,
-    "endSec": 39.515
+    "startSec": 58.923,
+    "endSec": 59.913
   },
   {
     "word": "and it is worth knowing what",
-    "startSec": 39.515,
-    "endSec": 41.056
+    "startSec": 59.913,
+    "endSec": 61.454
   },
   {
     "word": "that word was actually covering.",
-    "startSec": 41.056,
-    "endSec": 42.816
+    "startSec": 61.454,
+    "endSec": 63.214
   }
 ];

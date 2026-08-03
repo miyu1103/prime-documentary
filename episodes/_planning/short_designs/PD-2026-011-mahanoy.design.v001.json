@@ -53,16 +53,16 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The school said the post disrupted the school. Here is what that disruption was.",
+          "delivery": "intense",
           "source_lines": [
             "The Court also looked at what had actually happened, and found almost nothing."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "A few minutes of discussion in one class. That is all. The school had punished frustration, not chaos.",
+          "delivery": "building",
           "source_lines": [
             "Brandi's post had caused, at most, a few minutes of discussion in one class.",
             "The school had punished frustration, not chaos."
@@ -70,24 +70,49 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Justice Stephen Breyer wrote the opinion. A school's authority over what students say, he explained, is weaker off campus than on. There, a student is in the care of her parents.",
+          "delivery": "building",
           "source_lines": [
             "Justice Stephen Breyer wrote the opinion, and his reasoning was careful. A school's special authority over what students say, he explained, is weaker off campus than on. Off campus, a student is normally in the care of her parents, not the school."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "Then came the line the ruling turns on. America's public schools, he wrote, are the nurseries of democracy. The place a free society teaches the next generation to tolerate the speech it dislikes. A school that punishes every unpopular word teaches the opposite.",
+          "delivery": "intense",
           "source_lines": [
             "America's public schools, he wrote, are the \"nurseries of democracy\" — the place a free society teaches the next generation to tolerate the speech it dislikes. A school that punishes every unpopular off-campus word does not model that lesson; it teaches the opposite."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The punishment was not a warning. Brandi Levy was suspended from the junior varsity cheer squad for the entire upcoming year.",
+          "delivery": "building",
+          "source_lines": [
+            "Brandi is suspended from the junior varsity cheerleading team for the entire upcoming year"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The 1969 Tinker rule lets a school discipline speech that substantially disrupts it. A few minutes of talk does not.",
+          "delivery": "building",
+          "source_lines": [
+            "But a school can discipline speech that would \"substantially disrupt\" the school — that genuinely interferes with running it.",
+            "That is not the \"substantial disruption\" Tinker requires."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "A school policing student speech around the clock, Breyer wrote, would reach so far into private life it could swallow free speech.",
+          "delivery": "building",
+          "source_lines": [
+            "And if schools could police student speech around the clock, that power would reach so far into private life that it could swallow students' free speech entirely"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Everything the school did rested on one word, and it is worth knowing what that word was actually covering.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -121,13 +146,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty classroom desks chairs",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7857__boardroom_table_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-47425__teacher_in_empty_classroom.mp4",
           "bound_title": "a conference room with a large screen and chairs",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4057,
           "motion": 1.205,
-          "luma": 79.6
+          "luma": 79.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
         },
         {
           "n": 4,
@@ -158,7 +185,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty gymnasium bleachers school",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8928__moving_boxes_empty_room.mp4",
           "bound_title": "kids playing with empty boxes",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -195,13 +221,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands holding smartphone night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1672__suburban_house_exterior_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5032__smartphone_in_dark.mp4",
           "bound_title": "mystery night scene with vintage car in driveway",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4069,
           "motion": 2.648,
-          "luma": 51.5
+          "luma": 51.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
         },
         {
           "n": 10,
@@ -222,13 +250,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "school lockers metal row",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2363__school_hallway_empty.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2368__school_hallway_empty.mp4",
           "bound_title": "narrow corridor under lights",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4636,
           "motion": 2.35,
-          "luma": 108.5
+          "luma": 108.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
         },
         {
           "n": 12,
@@ -249,13 +279,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "school yard fence night empty",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1904__police_car_lights_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23311__barbed_wire_fence_sky.mp4",
           "bound_title": "men talking by car at night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.407,
           "motion": 17.773,
-          "luma": 49.9
+          "luma": 49.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
         },
         {
           "n": 14,
@@ -306,7 +338,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "greenhouse plants nursery rows",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5035__smartphone_in_dark.mp4",
           "bound_title": "people browsing images in the internet",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -333,13 +364,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty auditorium seats theater",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9436__rain_street_reflection_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29221__single_chair_empty_room.mp4",
           "bound_title": "two woman with umbrella standing on the middle of an empty street on a rainy night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4009,
           "motion": 12.443,
-          "luma": 95.2
+          "luma": 95.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
         },
         {
           "n": 21,
@@ -364,12 +397,220 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: an empty classroom of desks with one tube burning",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": "empty classroom desks school"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y01",
+          "subject": "pom poms left behind on a wooden bench",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "pom poms left on a wooden bench"
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "W06",
+          "subject": "a folded uniform on a locker room bench",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "folded uniform on locker room bench",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-50639__military_dog_tags.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "hands zipping a sports bag shut",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands zipping a sports bag closed"
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a whistle on a lanyard hanging from a hook",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "whistle on lanyard hanging from hook",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32758__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "M06",
+          "subject": "an open locker with one empty hanger",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "open locker with an empty hanger",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14898__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "a black armband worn on a coat sleeve",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "black armband worn on a coat sleeve",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6732__police_badge_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U03",
+          "subject": "a raised hand in a classroom seen from behind",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "raised hand in a classroom from behind",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51489__window_blinds_shadow_stripes.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I06",
+          "subject": "an empty school corridor between classroom doors",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty school corridor between classroom doors",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51259__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I03",
+          "subject": "hands passing a folded note across a desk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands passing a folded note across desk",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32025__us_constitution_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "W05",
+          "subject": "a stopwatch second hand sweeping round",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stopwatch second hand sweeping close up",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33520__clock_ticking_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U02",
+          "subject": "a hand drawing bedroom curtains closed in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand closing bedroom curtains in daylight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46108__person_crying_silhouette_window.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R01",
+          "subject": "a small security camera mounted on a wall",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "small security camera mounted on wall",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3434__surveillance_camera_city.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "a bicycle left lying on a front lawn",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "bicycle left on a front lawn",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I02",
+          "subject": "a suburban street of front yards in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "suburban street of front yards daylight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38804__wall_street_sign.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U08",
+          "subject": "a closed laptop on a desk beside a lamp",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "closed laptop on a desk with lamp",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-34894__wooden_desk_lamp_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
         }
       ]
     },
@@ -385,16 +626,16 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The Court protected the student and refused to tell you where the line is.",
+          "delivery": "intense",
           "source_lines": [
             "It pointedly did not say that schools can never reach off-campus speech."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "It pointedly did not say that schools can never reach off campus speech. It listed what might still justify stepping in. Serious bullying or harassment. Threats. Cheating.",
+          "delivery": "building",
           "source_lines": [
             "It pointedly did not say that schools can never reach off-campus speech.",
             "It listed the kinds of things that might still justify a school stepping in, even off campus: serious bullying or harassment aimed at other students, threats, cheating, breaking real rules."
@@ -402,8 +643,8 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Then it declined to draw one bright line. The result is a gray zone every student and parent now lives in, decided post by post.",
+          "delivery": "building",
           "source_lines": [
             "It declined to draw one bright line, leaving the hard cases for later",
             "The result is a gray zone that every student and parent now lives in, decided post by post, case by case."
@@ -411,8 +652,8 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "And notice what the Court protected. Not a noble political statement. A crude, throwaway post that vanished in seconds. On purpose. Free speech is tested by the speech we find petty.",
+          "delivery": "intense",
           "source_lines": [
             "And notice what the Court actually protected. Not a noble political statement, but a crude, throwaway Snapchat that vanished in seconds. That was on purpose.",
             "free speech is tested not by the speech we admire, but by the speech we find petty, or rude, or pointless"
@@ -420,8 +661,33 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The post went out to about two hundred and fifty friends and was supposed to vanish. Someone took a screenshot, and it reached the coaches.",
+          "delivery": "building",
+          "source_lines": [
+            "It goes out to her friends — about two hundred and fifty of them — and then it is gone",
+            "Someone takes a screenshot. The screenshot travels."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "After Mahanoy, a public school cannot punish a student simply for an ordinary, off campus, online vent that does not disrupt the school.",
+          "delivery": "building",
+          "source_lines": [
+            "After Mahanoy, a public school cannot punish a student simply for an ordinary, off-campus, online vent that does not disrupt the school"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The alternative was a school reaching a student's words twenty-four hours a day, anywhere, because almost anything said online could ripple back.",
+          "delivery": "building",
+          "source_lines": [
+            "then in principle it can reach a student's words twenty-four hours a day, anywhere — because almost anything a student says online could, in theory, ripple back to school"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "So the gray zone is not an accident. It is what eight justices decided they could live with.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -455,13 +721,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "smartphone screen glowing dark room",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1983__smartphone_in_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-25287__smartphone_notification_glow.mp4",
           "bound_title": "person holding a smartphone",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4677,
           "motion": 4.755,
-          "luma": 85.2
+          "luma": 85.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
         },
         {
           "n": 4,
@@ -502,13 +770,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "chain link fence schoolyard",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8125__bank_vault_door.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6611__supreme_court_building.mp4",
           "bound_title": "a closed gate with a chain and a padlock",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5157,
           "motion": 10.842,
-          "luma": 55.7
+          "luma": 55.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.343
         },
         {
           "n": 8,
@@ -539,13 +809,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands typing on phone keyboard",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0751__american_flag_waving.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39344__hacker_hoodie_keyboard_dark.mp4",
           "bound_title": "american flag on flagpole waving in wind",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6549,
           "motion": 18.508,
-          "luma": 174.7
+          "luma": 174.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
         },
         {
           "n": 11,
@@ -576,13 +848,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "fog rolling road night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1980__smartphone_in_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-28660__rain_on_city_street_neon.mp4",
           "bound_title": "woman scrolling social media",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.7024,
           "motion": 16.811,
-          "luma": 130.6
+          "luma": 130.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
         },
         {
           "n": 14,
@@ -613,13 +887,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "silhouette figure standing doorway",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2523__spotlight_on_dark_stage.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4821__front_door_house.mp4",
           "bound_title": "silhouette hand shadows creative art",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.683,
           "motion": 1.213,
-          "luma": 72.6
+          "luma": 72.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
         },
         {
           "n": 17,
@@ -640,13 +916,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hourglass sand timer close",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1205__circuit_board_macro.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51701__hourglass_sand_falling.mp4",
           "bound_title": "close up shot of electronic chip",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.7011,
           "motion": 4.953,
-          "luma": 34.1
+          "luma": 34.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.38
         },
         {
           "n": 19,
@@ -677,13 +955,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty podium lectern hall",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2671__lone_person_silhouette_walking.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36251__witness_stand_empty.mp4",
           "bound_title": "a person walking down a hallway",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6732,
           "motion": 3.566,
-          "luma": 69.6
+          "luma": 69.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
         },
         {
           "n": 22,
@@ -698,12 +978,221 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a painted corridor line that fades out halfway along",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": "painted line corridor floor"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "W05",
+          "subject": "a photocopier light bar sweeping under the lid",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "photocopier light sweeping under the lid",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33912__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "I03",
+          "subject": "a blank sheet sliding out of a printer",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "blank sheet sliding out of a printer",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10333__newspaper_printing_press.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.352
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U13",
+          "subject": "a crowd of people crossing a bright plaza",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "crowd of people walking through bright plaza",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5609__crowd_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "a hand pinning a folded note to a corkboard",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand pinning a note to corkboard",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36373__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "a clipboard lying face down on a bench",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "clipboard lying face down on bench",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46769__empty_chair_in_spotlight_grief.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "a school bus pulling away in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "school bus pulling away in daylight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9061__rural_road_america.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "R10",
+          "subject": "a backpack dropped on a front doorstep",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "backpack dropped on a front doorstep",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1749__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I02",
+          "subject": "a school entrance seen from the pavement outside",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "school entrance seen from the pavement outside"
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "a footpath leading away from a school gate",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "footpath leading away from a school gate"
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "M07",
+          "subject": "a park bench under a tree in afternoon light",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "park bench under a tree afternoon",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-13840__lone_tree_in_field.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y03",
+          "subject": "a stone dropped into still water, rings spreading",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stone dropped into still water rippling",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-58911__lava_flow_glowing.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U15",
+          "subject": "power lines running away over rooftops",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "power lines running away over rooftops",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31400__stormy_sky_time_lapse.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "I08",
+          "subject": "a communications mast against a bright sky",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "communications mast against a bright sky",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-27823__radio_tower_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U11",
+          "subject": "morning light falling across an unmade bed",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "morning light across an unmade bed",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0293__concrete_wall_texture_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I07",
+          "subject": "an empty classroom seen through a window from outside",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "empty classroom seen through window outside",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41643__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.342
         }
       ]
     }

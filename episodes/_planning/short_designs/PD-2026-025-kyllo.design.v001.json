@@ -65,32 +65,32 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The rule that keeps a heat camera off your house has an expiration date written into it.",
+          "delivery": "intense",
           "source_lines": [
             "And the reason the case still matters lies in the phrase Scalia chose: technology \"not in general public use.\""
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Scalia's rule turns on one phrase. Technology not in general public use. In 1992 that meant a heat camera the size of a lunchbox.",
+          "delivery": "building",
           "source_lines": [
             "In 1992, the fight was over a heat camera the size of a lunchbox."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "But not in general public use is a moving line. A device that is exotic today can sit in everyone's pocket tomorrow.",
+          "delivery": "building",
           "source_lines": [
             "\"Not in general public use\" is a moving line. A device that is exotic today can sit in everyone's pocket tomorrow"
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "And the more ordinary a technology becomes, the weaker your claim that using it invades your privacy. The Court protected the home against the future.",
+          "delivery": "intense",
           "source_lines": [
             "the more ordinary a technology becomes, the weaker your claim that using it invades your privacy",
             "The Court protected the home against the future, but it tied that protection to a standard the future keeps rewriting"
@@ -98,8 +98,33 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Scalia's worry looked forward, not back. If the rule depended on how good today's device happened to be, privacy would shrink steadily.",
+          "delivery": "building",
+          "source_lines": [
+            "Scalia's worry looked forward, not back.",
+            "then privacy in the home would shrink a little every time a better machine came along"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Every year the tools for sensing what happens inside a home get cheaper, smaller, sharper. Drones overhead, cameras, devices that read through walls.",
+          "delivery": "building",
+          "source_lines": [
+            "Every year, the tools for sensing what happens inside a home get cheaper, smaller, and sharper — drones overhead, better cameras, devices that read signals through walls"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Kyllo is the case courts keep returning to when they ask how far the government can push those tools before it needs a warrant.",
+          "delivery": "building",
+          "source_lines": [
+            "Kyllo is the case courts keep returning to when they ask how far the government can push those tools before it needs a warrant"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "So the question is not whether your home is protected. It is how long the device that watches it stays unusual.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -355,7 +380,27 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a dark house seen through a windscreen, one wall warm",
           "source": "REUSE_01",
@@ -376,40 +421,66 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The Supreme Court called a heat scan of a house a search. It did not ban the device that did it.",
+          "delivery": "intense",
           "source_lines": [
             "So the Court fixed the line at the wall itself: what the inside of your home holds is presumptively yours, and pulling it out with a special device is a search"
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "It did not ban thermal imaging. It did not erase the evidence against Kyllo for good.",
+          "delivery": "building",
           "source_lines": [
             "It did not ban thermal imaging. It did not erase the evidence against Kyllo for good."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "It sent the case back down with a narrower instruction. This kind of scan is a search, so it needs a warrant.",
+          "delivery": "building",
           "source_lines": [
             "It sent the case back down with a narrower instruction: this kind of scan is a search, so it needs a warrant"
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "The lesson was not you can never do this. It was get a warrant first. That difference is the whole point.",
+          "delivery": "intense",
           "source_lines": [
             "The lesson was not \"you can never do this.\" It was \"get a warrant first.\" That difference is the whole point."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The warrant that opened Kyllo's home did not rest on the scan alone. An informant's tip and unusually high electric bills stood beside it.",
+          "delivery": "building",
+          "source_lines": [
+            "Along with a tip from an informant and unusually high electric bills, the thermal scan helped Elliott convince a judge to sign a search warrant"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Inside, agents found what they expected: an indoor growing operation with more than a hundred marijuana plants. Kyllo was charged with manufacturing marijuana.",
+          "delivery": "building",
+          "source_lines": [
+            "When agents finally went inside, they found what they expected: an indoor growing operation with more than a hundred marijuana plants",
+            "Kyllo was charged with manufacturing marijuana."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "He pleaded guilty but kept his appeal. The lower court had to decide whether the warrant stood without the thermal evidence.",
+          "delivery": "building",
+          "source_lines": [
+            "he pleaded guilty — but kept the right to appeal the one question that mattered",
+            "the lower court now had to decide whether the warrant still stood up once you set the thermal evidence aside"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "The Fourth Amendment mostly sets a procedure, not a prohibition. Which is why rulings like this one sound bigger than they are.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -665,7 +736,27 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: the imager lowered into an evidence carton",
           "source": "REUSE_01",

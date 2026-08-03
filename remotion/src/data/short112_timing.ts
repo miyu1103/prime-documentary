@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT112_TOTAL_SEC = 39.404;
+export const SHORT112_TOTAL_SEC = 56.133;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.995,
     "end": 38.404
+  },
+  {
+    "id": "L6",
+    "start": 38.624,
+    "end": 42.804
+  },
+  {
+    "id": "L7",
+    "start": 43.024,
+    "end": 48.365
+  },
+  {
+    "id": "L8",
+    "start": 48.585,
+    "end": 55.133
   }
 ];
 
@@ -140,28 +155,78 @@ export const SHORT112_CAPTIONS: ShortCaption[] = [
     "endSec": 31.775
   },
   {
-    "word": "You never type that trail.",
+    "word": "Not one justice dissented.",
     "startSec": 31.995,
-    "endSec": 33.444
+    "endSec": 33.787
+  },
+  {
+    "word": "Roberts wrote that phones hold",
+    "startSec": 33.787,
+    "endSec": 35.854
+  },
+  {
+    "word": "in digital form",
+    "startSec": 35.854,
+    "endSec": 36.888
+  },
+  {
+    "word": "the privacies of life.",
+    "startSec": 36.888,
+    "endSec": 38.404
+  },
+  {
+    "word": "A phone search he wrote",
+    "startSec": 38.624,
+    "endSec": 39.959
+  },
+  {
+    "word": "can reveal more than a",
+    "startSec": 39.959,
+    "endSec": 41.236
+  },
+  {
+    "word": "thorough search of a house.",
+    "startSec": 41.236,
+    "endSec": 42.804
+  },
+  {
+    "word": "The old justifications did not fit.",
+    "startSec": 43.024,
+    "endSec": 45.198
+  },
+  {
+    "word": "Data cannot cut an officer",
+    "startSec": 45.198,
+    "endSec": 46.812
+  },
+  {
+    "word": "or help a suspect escape.",
+    "startSec": 46.812,
+    "endSec": 48.365
+  },
+  {
+    "word": "You never type that trail.",
+    "startSec": 48.585,
+    "endSec": 50.065
   },
   {
     "word": "You never see it.",
-    "startSec": 33.444,
-    "endSec": 34.391
+    "startSec": 50.065,
+    "endSec": 51.033
   },
   {
     "word": "And almost nobody read far",
-    "startSec": 34.391,
-    "endSec": 35.84
+    "startSec": 51.033,
+    "endSec": 52.514
   },
   {
     "word": "enough into the ruling to",
-    "startSec": 35.84,
-    "endSec": 37.234
+    "startSec": 52.514,
+    "endSec": 53.937
   },
   {
     "word": "find out who owns it.",
-    "startSec": 37.234,
-    "endSec": 38.404
+    "startSec": 53.937,
+    "endSec": 55.133
   }
 ];

@@ -49,40 +49,65 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The police do not have to charge you. They charge your car.",
+          "delivery": "intense",
           "source_lines": [
             "The police can take your car, your cash, even your house — and never charge you with a crime"
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Civil asset forfeiture works on a legal fiction. The case is not brought against the person. It is brought against the thing.",
+          "delivery": "building",
           "source_lines": [
             "Civil asset forfeiture works on a legal fiction that sounds almost absurd when you first hear it. The case is not brought against the person. It is brought against the thing"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "That is why these cases have such strange names. The government versus a car. Versus a house. The property itself is treated as the suspect.",
+          "delivery": "building",
           "source_lines": [
             "That is why forfeiture cases have such peculiar names — the government versus a car, versus a sum of cash, versus a house. In the eyes of the law, the property itself is treated as the suspect."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "And because the case targets the object, the protections you expect in a criminal trial do not all apply. In many places the owner never has to be convicted.",
+          "delivery": "intense",
           "source_lines": [
             "And because the case targets the object, not the owner, the protections you would expect in a criminal trial do not all apply. In many places, the owner does not have to be convicted of a crime to lose the property."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "There is a reason the power exists. Forfeiture grew as a tool to strip the profits out of organized crime and drug trafficking.",
+          "delivery": "building",
+          "source_lines": [
+            "Now, there is a reason this power exists. Forfeiture grew as a tool to strip the profits out of organized crime and drug trafficking — to take the boats, the planes, the cash that made the crime worth doing"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "But in many state systems, and in a federal program, the proceeds flow back to the very agencies that seized the property.",
+          "delivery": "building",
+          "source_lines": [
+            "In many state systems, and in a federal program, the proceeds flow back to the very agencies that seized the property"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The Institute for Justice calls that policing for profit, a built in incentive to seize. The criticism runs across the political spectrum.",
+          "delivery": "building",
+          "source_lines": [
+            "The Institute for Justice, the firm that took up Timbs's case, calls this \"policing for profit\" — a built-in incentive to seize, regardless of guilt",
+            "Criticism of civil forfeiture runs across the political spectrum, from civil-liberties groups to conservative reform groups, which is rare for any issue in American law"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Ask yourself how a person keeps the presumption of innocence when the case is not filed against a person at all.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -116,7 +141,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "tow truck loading car night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1434__rain_on_window_night.mp4",
           "bound_title": "cars passing through flood water on the side street caused by excessive rainfall",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -153,13 +177,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hand signing paperwork clipboard",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1280__documents_on_desk.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53222__fountain_pen_signature.mp4",
           "bound_title": "man signing the paper",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.468,
           "motion": 6.84,
-          "luma": 91.7
+          "luma": 91.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
         },
         {
           "n": 7,
@@ -200,13 +226,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "tow truck lifting car night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1590__highway_night_long_exposure.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39982__ambulance_lights_at_night.mp4",
           "bound_title": "drone shot of the highway at night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.7464,
           "motion": 5.423,
-          "luma": 39.3
+          "luma": 39.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
         },
         {
           "n": 11,
@@ -237,13 +265,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty courtroom judge bench wooden",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5316__empty_stadium_seats.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14605__jury_box_empty.mp4",
           "bound_title": "empty seats in a stadium",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3939,
           "motion": 7.677,
-          "luma": 29.1
+          "luma": 29.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
         },
         {
           "n": 14,
@@ -274,13 +304,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "rows of cars parking lot night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0451__office_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37600__empty_parking_garage.mp4",
           "bound_title": "organized desk in office workspace",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4293,
           "motion": 1.567,
-          "luma": 96.2
+          "luma": 96.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
         },
         {
           "n": 17,
@@ -311,13 +343,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "keys on table close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0593__law_library_books.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9713__clock_ticking_macro.mp4",
           "bound_title": "a person walking through a library with books",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3914,
           "motion": 15.124,
-          "luma": 100.6
+          "luma": 100.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
         },
         {
           "n": 20,
@@ -338,13 +372,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "unclaimed property storage shelves",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3902__law_library_books.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3771__office_interior_dark.mp4",
           "bound_title": "a woman getting a book in a bookshelves",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3977,
           "motion": 7.071,
-          "luma": 59.8
+          "luma": 59.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
         },
         {
           "n": 22,
@@ -359,12 +395,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a dark SUV standing alone in a floodlit impound lot",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": "impound lot car night fence"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "M02",
+          "subject": "an open duffel bag packed with bundled money",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "open duffel bag full of money",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41350__open_briefcase_of_cash.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "I05",
+          "subject": "shelves of stacked boxes in an evidence store",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "evidence room shelves stacked with boxes",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38541__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M05",
+          "subject": "a heavy steel security door with a throw bolt",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "heavy steel security door with bolt",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8119__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R01",
+          "subject": "a patrol car parked at a kerb in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "patrol car parked at kerb daytime street",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-5554__police_strobe_red_and_blue.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W05",
+          "subject": "a counting machine running banknotes through",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "banknote counting machine feeding bills",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0834__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "coins dropping one by one into a glass jar",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "coins dropping into a glass jar",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24879__physical_bitcoin_coin.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.342
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U10",
+          "subject": "hands laying banknotes into a cash drawer",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands placing banknotes into a cash drawer",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23984__money_counting_machine.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I02",
+          "subject": "the entrance doors of a police station by day",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "police station entrance doors in daytime",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8126__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "a garage door rolling up on a vehicle bay",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "garage door rolling up on vehicle bay",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21522__empty_parking_garage.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "M04",
+          "subject": "a steel cash box unlocked and opened on a desk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "steel cash box unlocked and opened",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63204__tax_forms_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R06",
+          "subject": "rows of empty seats in a public meeting hall",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "public meeting hall rows of empty seats",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26007__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R05",
+          "subject": "stone courthouse steps and columns in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "stone courthouse steps and columns daytime",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6618__supreme_court_building.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "M03",
+          "subject": "coins stacked into rising columns on a desk",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "coins stacked in rising columns desk",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12607__gold_bars_stacked.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "M07",
+          "subject": "two microphones set side by side on a table",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "two microphones side by side on table",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15604__vintage_radio_microphone.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I01",
+          "subject": "a hand pressing a stamp down onto blank paper",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand pressing a stamp onto blank paper",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46653__person_reading_a_letter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.326
         }
       ]
     },
@@ -380,8 +631,8 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Nine to nothing, and the Court still did not call the seizure unconstitutional.",
+          "delivery": "intense",
           "source_lines": [
             "By a unanimous vote — nine to nothing — it held that the Excessive Fines Clause does apply to the states, just like the rest",
             "It did not declare that taking Timbs's car was unconstitutional."
@@ -389,24 +640,24 @@
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Read the ruling carefully. It did not declare that taking Tyson Timbs's car was unconstitutional. It did not abolish civil forfeiture.",
+          "delivery": "building",
           "source_lines": [
             "But read the ruling carefully, because the Court was careful. It did not declare that taking Timbs's car was unconstitutional. It did not abolish civil forfeiture"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "It did something narrower. It sent the case back to Indiana, and made whether a forfeiture is an excessive fine a real constitutional question the states must answer.",
+          "delivery": "building",
           "source_lines": [
             "it sent the case back to Indiana and held that, from now on, the question of whether a forfeiture is an excessive fine is a real constitutional question the states have to answer"
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "So it is a limit, not an ending. Police can still seize property. There is now a ceiling, but you have to know it exists, and fight for years to reach it. Most people cannot.",
+          "delivery": "intense",
           "source_lines": [
             "So Timbs is a limit, not an ending. Civil forfeiture still exists. Police can still seize property.",
             "Timbs gave people a tool — a way to argue that a seizure is simply too much — but you have to know the tool exists, and you have to be able to fight for years to use it. Most people cannot."
@@ -414,8 +665,34 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The Bill of Rights once restrained only the federal government, and Indiana used that gap to uphold taking the car.",
+          "delivery": "building",
+          "source_lines": [
+            "For most of American history, the Bill of Rights restrained only the federal government.",
+            "Indiana's Supreme Court had said no — and used that gap to uphold taking the car"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The open question was whether the ban on excessive fines had ever been applied to the states. In 2019 the Court closed it.",
+          "delivery": "building",
+          "source_lines": [
+            "The question in Timbs was whether the ban on excessive fines had ever been formally applied to the states at all.",
+            "In 2019, the Supreme Court closed the gap."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Back in Indiana, after years of litigation, the courts finally applied that principle and let Tyson Timbs keep the car.",
+          "delivery": "building",
+          "source_lines": [
+            "Back in Indiana, after years of litigation, the courts finally applied that principle and let him keep his car"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "A unanimous Supreme Court win can still leave you roughly where you started, with a limit on paper and years of fighting ahead.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -449,13 +726,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stone building facade columns dusk",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1669__suburban_house_exterior_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23032__federal_building_columns_night.mp4",
           "bound_title": "the building where the apartment is located",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4295,
           "motion": 9.745,
-          "luma": 52.9
+          "luma": 52.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
         },
         {
           "n": 4,
@@ -486,13 +765,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "magnifying glass over document",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1283__documents_on_desk.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15136__magnifying_glass_on_document.mp4",
           "bound_title": "a woman give a document to a person",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3937,
           "motion": 52.775,
-          "luma": 100.9
+          "luma": 100.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.347
         },
         {
           "n": 7,
@@ -523,7 +804,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "car auction lot vehicles",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1591__highway_night_long_exposure.mp4",
           "bound_title": "vehicles passing by the expressway at night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -570,13 +850,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "highway at dusk empty road",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0515__courtroom_interior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6034__empty_road_sunset.mp4",
           "bound_title": "lady justice statue",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4156,
           "motion": 6.426,
-          "luma": 154.2
+          "luma": 154.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
         },
         {
           "n": 14,
@@ -607,13 +889,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stacks of cash money counting",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0752__american_flag_waving.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41347__open_briefcase_of_cash.mp4",
           "bound_title": "flag of usa",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6118,
           "motion": 11.918,
-          "luma": 116.1
+          "luma": 116.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
         },
         {
           "n": 17,
@@ -644,13 +928,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "clock hands moving time lapse",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2825__stormy_sky_time_lapse.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33523__clock_ticking_macro.mp4",
           "bound_title": "time lapse footage of a raining clouds",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4017,
           "motion": 4.847,
-          "luma": 138.6
+          "luma": 138.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.327
         },
         {
           "n": 20,
@@ -661,13 +947,14 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "calendar pages turning wall",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2208__warehouse_interior_dark.mp4",
           "bound_title": "a dark hallway with a light on the wall",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.7148,
           "motion": 1.809,
-          "luma": 45.2
+          "luma": 45.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
         },
         {
           "n": 21,
@@ -692,12 +979,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: nine brass lamps burning in a row along a long dark bench",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": "row of brass lamps bench"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "W08",
+          "subject": "a brick wall with one brick missing",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "plain brick wall with one brick missing",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0294__concrete_wall_texture_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a heavy closed book on a wooden stand",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "heavy closed book on a wooden stand",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63071__old_ledger_book.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I07",
+          "subject": "a flag hanging still on an indoor pole",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "flag hanging still on an indoor pole",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4060__american_flag_waving.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "a chain with one link opened",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "chain with one open link closeup",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12145__padlock_and_chain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.349
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a door chain hanging loose and unlatched",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "door chain hanging loose and unlatched",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8121__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "a steel bolt sliding shut on a door",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "steel bolt sliding shut on door",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51480__window_blinds_shadow_stripes.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W06",
+          "subject": "hands closing the cover of a thick book",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hands closing a thick book cover",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63063__old_ledger_book.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U02",
+          "subject": "a padlock snapped shut on a metal hasp",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "padlock snapped shut on a metal hasp",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12147__padlock_and_chain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "R07",
+          "subject": "a gavel coming down on its wooden block",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "gavel striking down on wooden block",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0518__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "wooden shutters latched closed over a window",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "wooden shutters latched closed over window",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51490__window_blinds_shadow_stripes.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R12",
+          "subject": "a hand lifting car keys off a hook",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "hand taking car keys from a hook",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38539__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.326
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U12",
+          "subject": "a car door swinging open in daylight",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "car door opening in bright daylight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7005__evidence_bag.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "a car driving away down a sunlit road",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "car driving away down a sunlit road",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6031__empty_road_sunset.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I03",
+          "subject": "a metal tray piled with blank forms",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "metal tray piled with blank forms",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23694__case_files_stack_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W10",
+          "subject": "a chain link gate swinging open on a yard",
+          "source": "FOOTAGE",
+          "prompt": null,
+          "footage_query": "chain link gate swinging open daylight",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36993__security_monitors_wall.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
         }
       ]
     }

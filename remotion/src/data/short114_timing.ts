@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT114_TOTAL_SEC = 41.168;
+export const SHORT114_TOTAL_SEC = 59.476;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 34.177,
     "end": 40.168
+  },
+  {
+    "id": "L6",
+    "start": 40.388,
+    "end": 46.472
+  },
+  {
+    "id": "L7",
+    "start": 46.692,
+    "end": 52.033
+  },
+  {
+    "id": "L8",
+    "start": 52.253,
+    "end": 58.476
   }
 ];
 
@@ -130,23 +145,83 @@ export const SHORT114_CAPTIONS: ShortCaption[] = [
     "endSec": 33.957
   },
   {
-    "word": "Nobody on that Court thought",
+    "word": "A blurry line in the right place",
     "startSec": 34.177,
-    "endSec": 35.79
+    "endSec": 36.153
+  },
+  {
+    "word": "the majority decided",
+    "startSec": 36.153,
+    "endSec": 37.389
+  },
+  {
+    "word": "was better than a clear",
+    "startSec": 37.389,
+    "endSec": 38.809
+  },
+  {
+    "word": "rule in the wrong one.",
+    "startSec": 38.809,
+    "endSec": 40.168
+  },
+  {
+    "word": "The ruling did not say the",
+    "startSec": 40.388,
+    "endSec": 41.788
+  },
+  {
+    "word": "government can never see this data",
+    "startSec": 41.788,
+    "endSec": 43.618
+  },
+  {
+    "word": "only that this kind of",
+    "startSec": 43.618,
+    "endSec": 44.803
+  },
+  {
+    "word": "record usually needs a warrant.",
+    "startSec": 44.803,
+    "endSec": 46.472
+  },
+  {
+    "word": "The Court limited the ruling",
+    "startSec": 46.692,
+    "endSec": 48.218
+  },
+  {
+    "word": "to these facts on purpose",
+    "startSec": 48.218,
+    "endSec": 49.581
+  },
+  {
+    "word": "and left dozens of",
+    "startSec": 49.581,
+    "endSec": 50.562
+  },
+  {
+    "word": "harder questions for later.",
+    "startSec": 50.562,
+    "endSec": 52.033
+  },
+  {
+    "word": "Nobody on that Court thought",
+    "startSec": 52.253,
+    "endSec": 53.928
   },
   {
     "word": "the answer was easy.",
-    "startSec": 35.79,
-    "endSec": 36.942
+    "startSec": 53.928,
+    "endSec": 55.125
   },
   {
     "word": "The margin says so",
-    "startSec": 36.942,
-    "endSec": 37.979
+    "startSec": 55.125,
+    "endSec": 56.202
   },
   {
     "word": "and so does what the dissenters wrote.",
-    "startSec": 37.979,
-    "endSec": 40.168
+    "startSec": 56.202,
+    "endSec": 58.476
   }
 ];

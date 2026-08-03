@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT109_TOTAL_SEC = 31.694;
+export const SHORT109_TOTAL_SEC = 56.132;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 23.96,
     "end": 30.694
+  },
+  {
+    "id": "L6",
+    "start": 30.914,
+    "end": 38.995
+  },
+  {
+    "id": "L7",
+    "start": 39.215,
+    "end": 48.178
+  },
+  {
+    "id": "L8",
+    "start": 48.398,
+    "end": 55.132
   }
 ];
 
@@ -110,28 +125,103 @@ export const SHORT109_CAPTIONS: ShortCaption[] = [
     "endSec": 23.74
   },
   {
-    "word": "Thirteen federal felony counts",
+    "word": "MIT was almost proud of",
     "startSec": 23.96,
-    "endSec": 25.702
+    "endSec": 25.343
+  },
+  {
+    "word": "how open its network was.",
+    "startSec": 25.343,
+    "endSec": 26.846
+  },
+  {
+    "word": "He was not a student",
+    "startSec": 26.846,
+    "endSec": 28.049
+  },
+  {
+    "word": "and he broke no lock",
+    "startSec": 28.049,
+    "endSec": 29.251
+  },
+  {
+    "word": "and cracked no password.",
+    "startSec": 29.251,
+    "endSec": 30.694
+  },
+  {
+    "word": "Over several weeks the program",
+    "startSec": 30.914,
+    "endSec": 32.458
+  },
+  {
+    "word": "he set running collected around",
+    "startSec": 32.458,
+    "endSec": 34.054
+  },
+  {
+    "word": "four point eight million articles",
+    "startSec": 34.054,
+    "endSec": 35.752
+  },
+  {
+    "word": "by most accounts about eighty",
+    "startSec": 35.752,
+    "endSec": 37.245
+  },
+  {
+    "word": "percent of JSTOR's entire archive.",
+    "startSec": 37.245,
+    "endSec": 38.995
+  },
+  {
+    "word": "Maybe he planned to release it.",
+    "startSec": 39.215,
+    "endSec": 41.243
+  },
+  {
+    "word": "Maybe he wanted to run one",
+    "startSec": 41.243,
+    "endSec": 42.944
+  },
+  {
+    "word": "sweeping analysis across modern science",
+    "startSec": 42.944,
+    "endSec": 45.496
+  },
+  {
+    "word": "a real research method",
+    "startSec": 45.496,
+    "endSec": 46.935
+  },
+  {
+    "word": "he had used before.",
+    "startSec": 46.935,
+    "endSec": 48.178
+  },
+  {
+    "word": "Thirteen federal felony counts",
+    "startSec": 48.398,
+    "endSec": 50.14
   },
   {
     "word": "and still nobody proved what",
-    "startSec": 25.702,
-    "endSec": 27.327
+    "startSec": 50.14,
+    "endSec": 51.765
   },
   {
     "word": "the download was for.",
-    "startSec": 27.327,
-    "endSec": 28.546
+    "startSec": 51.765,
+    "endSec": 52.984
   },
   {
     "word": "So look again at",
-    "startSec": 28.546,
-    "endSec": 29.475
+    "startSec": 52.984,
+    "endSec": 53.913
   },
   {
     "word": "what he actually did.",
-    "startSec": 29.475,
-    "endSec": 30.694
+    "startSec": 53.913,
+    "endSec": 55.132
   }
 ];

@@ -83,24 +83,24 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "A guilty person goes free. Not because the evidence was wrong. Because police made a mistake.",
+          "delivery": "intense",
           "source_lines": [
             "The guilty person walks not because the evidence was wrong, but because the process that produced it was"
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "That is the cost of the Mapp rule. Throw out an illegal search, and you sometimes throw out evidence that is true.",
+          "delivery": "building",
           "source_lines": [
             "It can require a court to throw out reliable evidence — evidence that is true, that demonstrates what happened — because of the way it was obtained"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "In 1926, a New York judge named Benjamin Cardozo put the objection as bluntly as it can be put. If the police bungle a search, he wrote, the criminal is to go free because the constable has blundered.",
+          "delivery": "building",
           "source_lines": [
             "In 1926, a New York judge named Benjamin Cardozo put the objection as bluntly as it can be put.",
             "If the police bungle a search, he wrote, \"the criminal is to go free because the constable has blundered\""
@@ -108,8 +108,8 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "That tension has never gone away. The Court has been carving exceptions into its own rule ever since. The rule today is narrower than it was in 1961.",
+          "delivery": "intense",
           "source_lines": [
             "That tension is real and it has never gone away.",
             "among them a good-faith exception, for cases where officers acted on a warrant they reasonably believed was valid, even if it turned out to be defective",
@@ -118,8 +118,35 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Before 1961, most states could use what an illegal search turned up. Wolf v. Colorado left them free to choose.",
+          "delivery": "building",
+          "source_lines": [
+            "Before 1961, in most states, the answer was yes.",
+            "And Ohio was one of the states that, under Wolf, was allowed to use what an illegal search turned up",
+            "States were free to handle the problem however they chose"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The Court answered with a principle. A real right needs a real remedy when it is violated.",
+          "delivery": "building",
+          "source_lines": [
+            "If the Fourth Amendment is a real right, there has to be a real remedy when it is violated"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Without one, the Court said, the protection becomes a form of words: a guarantee nobody can actually use.",
+          "delivery": "building",
+          "source_lines": [
+            "Without it, the Court says, the constitutional protection becomes",
+            "A guarantee that no one can actually use is not a guarantee."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "So the core of the rule survives, exceptions and all, and it still ends cases. Which means this happens again.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -163,13 +190,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stone courthouse columns facade",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2436__bank_building_columns.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31115__bank_building_columns.mp4",
           "bound_title": "columns in a building",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6078,
           "motion": 5.218,
-          "luma": 118.1
+          "luma": 118.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
         },
         {
           "n": 5,
@@ -200,13 +229,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "evidence locker shelves storage",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2210__warehouse_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5243__warehouse_interior_dark.mp4",
           "bound_title": "industrial warehouse with bulk material storage",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4375,
           "motion": 3.691,
-          "luma": 77.3
+          "luma": 77.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.325
         },
         {
           "n": 8,
@@ -237,7 +268,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty courtroom benches wooden",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2209__warehouse_interior_dark.mp4",
           "bound_title": "a dark empty hallway with a light on the wall",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -274,13 +304,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "fountain pen writing paper",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53210__fountain_pen_signature.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53212__fountain_pen_signature.mp4",
           "bound_title": "a person writing a letter on a paper using a fountain pen",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4105,
           "motion": 19.471,
-          "luma": 141.7
+          "luma": 141.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
         },
         {
           "n": 14,
@@ -311,13 +343,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "prison cell bars close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0832__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-4403__heavy_rain_backlit.mp4",
           "bound_title": "counting currency notes in hand close up",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6277,
           "motion": 13.822,
-          "luma": 80.1
+          "luma": 80.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
         },
         {
           "n": 17,
@@ -328,13 +362,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "chisel carving stone close",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1127__technology_abstract_blue.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-47993__construction_worker_silhouette.mp4",
           "bound_title": "close up of a futuristic abstract pattern",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4474,
           "motion": 20.263,
-          "luma": 53.6
+          "luma": 53.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.325
         },
         {
           "n": 18,
@@ -355,13 +391,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "judge gavel wooden block",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8129__bank_vault_door.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0518__courtroom_interior.mp4",
           "bound_title": "close up video of wooden doors",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4056,
           "motion": 0.906,
-          "luma": 63.5
+          "luma": 63.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
         },
         {
           "n": 20,
@@ -396,12 +434,224 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a heavy gate standing open onto flat daylight",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": "prison gate opening daylight"
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I08",
+          "subject": "an old two storey house seen from the street",
+          "source": "FOOTAGE",
+          "footage_query": "old two storey house seen from the street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22901__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R04",
+          "subject": "two men in hats standing at a front door",
+          "source": "FOOTAGE",
+          "footage_query": "two men in hats standing at a front door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32754__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "hands lifting clothes out of a wardrobe",
+          "source": "FOOTAGE",
+          "footage_query": "hands lifting clothes out of a wardrobe",
+          "prompt": null
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "I05",
+          "subject": "cellar shelves lined with jars and boxes",
+          "source": "FOOTAGE",
+          "footage_query": "cellar shelves with jars and boxes",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33695__old_library_archive.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "I02",
+          "subject": "a corridor of frosted glass office doors",
+          "source": "FOOTAGE",
+          "footage_query": "corridor of frosted glass office doors",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21650__elevator_interior_steel.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.33
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "a hand turning a key in a door lock",
+          "source": "FOOTAGE",
+          "footage_query": "hand turning a key in a lock",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51080__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.339
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U01",
+          "subject": "a brass desk lamp switched on in an office",
+          "source": "FOOTAGE",
+          "footage_query": "brass desk lamp switched on in an office",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-34894__wooden_desk_lamp_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "W05",
+          "subject": "a magnifier and a brush lying on an evidence bench",
+          "source": "FOOTAGE",
+          "footage_query": "magnifier and brush on an evidence bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15141__magnifying_glass_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "tall wooden doors opening into a bright room",
+          "source": "FOOTAGE",
+          "footage_query": "tall wooden doors opening into a bright room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51256__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "M07",
+          "subject": "a heavy wooden desk in an empty office",
+          "source": "FOOTAGE",
+          "footage_query": "heavy wooden desk in an empty office",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14686__witness_stand_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y04",
+          "subject": "an empty picture frame hanging on a wall",
+          "source": "FOOTAGE",
+          "footage_query": "empty picture frame hanging on a wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38345__one_way_mirror_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R02",
+          "subject": "handcuffs lying open on a wooden table",
+          "source": "FOOTAGE",
+          "footage_query": "handcuffs lying open on a wooden table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3351__judge_gavel_wooden.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U05",
+          "subject": "a large wall clock in a public hall",
+          "source": "FOOTAGE",
+          "footage_query": "large wall clock in a public hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9728__clock_ticking_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R11",
+          "subject": "an old telephone handset lying off the hook",
+          "source": "FOOTAGE",
+          "footage_query": "old telephone handset lying off the hook",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36965__rotary_phone_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W11",
+          "subject": "two empty wooden chairs against a bare wall",
+          "source": "FOOTAGE",
+          "footage_query": "two empty wooden chairs against a bare wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29220__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         }
       ]
     }

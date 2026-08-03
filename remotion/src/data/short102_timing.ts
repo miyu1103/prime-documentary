@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT102_TOTAL_SEC = 34.992;
+export const SHORT102_TOTAL_SEC = 56.132;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 26.422,
     "end": 33.992
+  },
+  {
+    "id": "L6",
+    "start": 34.212,
+    "end": 41.178
+  },
+  {
+    "id": "L7",
+    "start": 41.398,
+    "end": 47.667
+  },
+  {
+    "id": "L8",
+    "start": 47.887,
+    "end": 55.132
   }
 ];
 
@@ -110,28 +125,103 @@ export const SHORT102_CAPTIONS: ShortCaption[] = [
     "endSec": 26.202
   },
   {
-    "word": "After May 2021",
+    "word": "An off-duty officer had crashed.",
     "startSec": 26.422,
-    "endSec": 27.313
+    "endSec": 28.243
+  },
+  {
+    "word": "His car was towed",
+    "startSec": 28.243,
+    "endSec": 29.211
+  },
+  {
+    "word": "to a private lot",
+    "startSec": 29.211,
+    "endSec": 30.122
+  },
+  {
+    "word": "and other officers searched the trunk",
+    "startSec": 30.122,
+    "endSec": 32.228
+  },
+  {
+    "word": "looking for his service weapon.",
+    "startSec": 32.228,
+    "endSec": 33.992
+  },
+  {
+    "word": "Cady turned on a car",
+    "startSec": 34.212,
+    "endSec": 35.403
+  },
+  {
+    "word": "already in police custody.",
+    "startSec": 35.403,
+    "endSec": 36.951
+  },
+  {
+    "word": "The opinion itself said",
+    "startSec": 36.951,
+    "endSec": 38.32
+  },
+  {
+    "word": "it again and again",
+    "startSec": 38.32,
+    "endSec": 39.392
+  },
+  {
+    "word": "that a vehicle is not a house.",
+    "startSec": 39.392,
+    "endSec": 41.178
+  },
+  {
+    "word": "They argued for something bigger.",
+    "startSec": 41.398,
+    "endSec": 43.181
+  },
+  {
+    "word": "A general power to",
+    "startSec": 43.181,
+    "endSec": 44.154
+  },
+  {
+    "word": "look after the public",
+    "startSec": 44.154,
+    "endSec": 45.289
+  },
+  {
+    "word": "making 'for your own good'",
+    "startSec": 45.289,
+    "endSec": 46.694
+  },
+  {
+    "word": "a key to any door.",
+    "startSec": 46.694,
+    "endSec": 47.667
+  },
+  {
+    "word": "After May 2021",
+    "startSec": 47.887,
+    "endSec": 48.739
   },
   {
     "word": "the caretaking version of",
-    "startSec": 27.313,
-    "endSec": 28.903
+    "startSec": 48.739,
+    "endSec": 50.261
   },
   {
     "word": "that excuse is gone.",
-    "startSec": 28.903,
-    "endSec": 30.175
+    "startSec": 50.261,
+    "endSec": 51.479
   },
   {
     "word": "So where did an excuse that big",
-    "startSec": 30.175,
-    "endSec": 32.147
+    "startSec": 51.479,
+    "endSec": 53.366
   },
   {
     "word": "come from in the first place?",
-    "startSec": 32.147,
-    "endSec": 33.992
+    "startSec": 53.366,
+    "endSec": 55.132
   }
 ];

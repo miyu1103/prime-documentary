@@ -60,16 +60,16 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "One justice dissented in the case that gave you a right to privacy. His argument was the plain words on the page.",
+          "delivery": "intense",
           "source_lines": [
             "One justice was not persuaded."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Justice Hugo Black dissented alone. The Fourth Amendment, he pointed out, protects persons, houses, papers, and effects against search and seizure.",
+          "delivery": "building",
           "source_lines": [
             "Justice Hugo Black dissented, alone",
             "The Fourth Amendment, he pointed out, protects \"persons, houses, papers, and effects\" against search and seizure"
@@ -77,8 +77,8 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Tangible things you can point to and carry away. A spoken conversation is none of those. You cannot seize a sentence.",
+          "delivery": "building",
           "source_lines": [
             "tangible things you can point to and carry away",
             "A spoken conversation is none of those. You cannot seize a sentence."
@@ -86,16 +86,42 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "To Black, the majority was not so much reading the Constitution as quietly rewriting it. And rewriting it was Congress's job, not the Court's.",
+          "delivery": "intense",
           "source_lines": [
             "To Black, the majority was not so much reading the Constitution as quietly rewriting it — and rewriting it was Congress's job, not the Court's"
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The rule came from a 1928 case called Olmstead. Federal agents tapped a bootlegger's phone lines from the street, without ever entering his house.",
+          "delivery": "building",
+          "source_lines": [
+            "The rule came from a 1928 case called Olmstead.",
+            "Federal agents there had tapped a bootlegger's phone lines, but they did the tapping from wires out on the street, without ever entering his house."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The Supreme Court said that was fine. No trespass into a protected place meant no search, and for decades the test stayed almost mechanical.",
+          "delivery": "building",
+          "source_lines": [
+            "The Supreme Court said that was fine: no trespass into a protected place meant no search",
+            "For decades, the test stayed almost mechanical."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The majority's move was to stop asking where the government was standing and start asking what the person reasonably expected.",
+          "delivery": "building",
+          "source_lines": [
+            "Stop asking where the government was standing; start asking what the person reasonably expected."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Seven justices went the other way. The trespass rule that had stood for nearly forty years was gone, and Black's plain words lost.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -358,7 +384,27 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: one lit chair at the end of a dark bench",
           "source": "REUSE_01",

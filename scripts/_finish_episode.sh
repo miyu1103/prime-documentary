@@ -46,9 +46,27 @@ py -3.11 scripts/build_asset_manifest_motionfirst.py --slug "$SLUG" >> "$LOG" 2>
 grep -E "^\[${SLUG}\]|PROBLEM" "$LOG" | tail -4 | sed "s/^/[finish:$SLUG]   /"
 
 say "[4/7] build film.json"
-CFG=$(ls episodes/_planning/EP5*_${SLUG}_filmconfig.v001.json 2>/dev/null | head -1)
+# EP5* excluded EP60 entirely, and .v001 pinned the FIRST revision -- so surfside stopped
+# dead at "no filmconfig", and any episode whose designer shipped a v002/v003 would have been
+# built from the stale first draft. Match any episode number, take the LATEST revision.
+CFG=$(ls episodes/_planning/EP*_${SLUG}_filmconfig.v*.json 2>/dev/null | sort | tail -1)
 [ -n "$CFG" ] || die "no filmconfig for $SLUG"
 py -3.11 scripts/build_case_film_generic.py --config "$CFG" >> "$LOG" 2>&1 || die "film build failed"
+say "  built from $(basename "$CFG")"
+
+# [4a] THE FILM IS CHECKED AGAINST ITS OWN CONTRACT, BEFORE THE RENDER.
+# The pre-flight at [0/7] only sees inputs. This sees the PLAN: whether the stills that were
+# generated for this episode actually reached a cut, whether anything the episode forbids is
+# in it, and whether the distinct-asset floor is met. Every one of those has already shipped
+# a defect: EP54 lost fourteen purpose-made courtroom stills to a surplus-trimming rule and
+# EP58/EP59 carried the same loss unnoticed; EP56 rendered a red London bus into a film whose
+# highest constraint forbids bus imagery because a sub-postmaster died under one.
+py -3.11 scripts/check_spec_satisfied.py --slug "$SLUG" >> "$LOG" 2>&1
+_sat=$?
+grep -E "^\[satisfied\]" "$LOG" | tail -4 | sed "s/^/[finish:$SLUG]   /"
+if [ $_sat -ne 0 ] && grep -qE "mandatory_stills|forbidden_subjects" <(grep "^\[satisfied\]" "$LOG" | tail -4); then
+  die "the film violates its own spec (mandatory stills missing, or forbidden subject present)"
+fi
 
 # EP50's acceptance run measured what the size-based caption splitter does to a finished film:
 # 54 orphan cues, 185 mid-phrase splits, 613 over-long lines -- the owner's 「字幕が変な所で

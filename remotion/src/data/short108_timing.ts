@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT108_TOTAL_SEC = 29.883;
+export const SHORT108_TOTAL_SEC = 53.531;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 23.264,
     "end": 28.883
+  },
+  {
+    "id": "L6",
+    "start": 29.103,
+    "end": 37.973
+  },
+  {
+    "id": "L7",
+    "start": 38.193,
+    "end": 46.692
+  },
+  {
+    "id": "L8",
+    "start": 46.912,
+    "end": 52.531
   }
 ];
 
@@ -110,23 +125,93 @@ export const SHORT108_CAPTIONS: ShortCaption[] = [
     "endSec": 23.044
   },
   {
-    "word": "There is a real chance you",
+    "word": "Two bills were moving quietly through Congress",
     "startSec": 23.264,
-    "endSec": 24.629
+    "endSec": 25.268
+  },
+  {
+    "word": "known as SOPA and PIPA.",
+    "startSec": 25.268,
+    "endSec": 26.27
+  },
+  {
+    "word": "On the surface",
+    "startSec": 26.27,
+    "endSec": 26.97
+  },
+  {
+    "word": "they were simply about stopping online piracy.",
+    "startSec": 26.97,
+    "endSec": 28.883
+  },
+  {
+    "word": "In practice critics warned",
+    "startSec": 29.103,
+    "endSec": 30.527
+  },
+  {
+    "word": "they would hand government and large",
+    "startSec": 30.527,
+    "endSec": 32.498
+  },
+  {
+    "word": "corporations the power to quietly switch",
+    "startSec": 32.498,
+    "endSec": 34.688
+  },
+  {
+    "word": "off entire pieces of the internet",
+    "startSec": 34.688,
+    "endSec": 36.495
+  },
+  {
+    "word": "with very little oversight.",
+    "startSec": 36.495,
+    "endSec": 37.973
+  },
+  {
+    "word": "He had founded an advocacy",
+    "startSec": 38.193,
+    "endSec": 39.783
+  },
+  {
+    "word": "group called Demand Progress.",
+    "startSec": 39.783,
+    "endSec": 41.556
+  },
+  {
+    "word": "The bills still looked certain to pass",
+    "startSec": 41.556,
+    "endSec": 43.879
+  },
+  {
+    "word": "the way bills backed",
+    "startSec": 43.879,
+    "endSec": 45.102
+  },
+  {
+    "word": "by powerful industries do.",
+    "startSec": 45.102,
+    "endSec": 46.692
+  },
+  {
+    "word": "There is a real chance you",
+    "startSec": 46.912,
+    "endSec": 48.277
   },
   {
     "word": "have never heard his name.",
-    "startSec": 24.629,
-    "endSec": 25.995
+    "startSec": 48.277,
+    "endSec": 49.643
   },
   {
     "word": "So what does it take to",
-    "startSec": 25.995,
-    "endSec": 27.203
+    "startSec": 49.643,
+    "endSec": 50.851
   },
   {
     "word": "make the whole internet go dark?",
-    "startSec": 27.203,
-    "endSec": 28.883
+    "startSec": 50.851,
+    "endSec": 52.531
   }
 ];

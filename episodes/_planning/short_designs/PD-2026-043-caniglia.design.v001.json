@@ -77,40 +77,66 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The rule police used to walk into his house and take his guns came from a case about a car.",
+          "delivery": "intense",
           "source_lines": [
             "From a single Supreme Court case in 1973: Cady versus Dombrowski."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "1973. It called the work community caretaking. The routine, non-criminal business of clearing wrecks and securing hazards.",
+          "delivery": "building",
           "source_lines": [
             "It called the police work \"community caretaking functions\", the routine, non-criminal business of clearing wrecks and securing h"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "That was a car on a roadside. The question in 2021 was whether the same words reach your front door.",
+          "delivery": "building",
           "source_lines": [
             "Whether they can cross your threshold without a warrant for the gentlest reason there is, to look after you, and carry out what"
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "The Court answered in May 2021. There is no free-standing community-caretaking exception that lets police enter your home without a warrant.",
+          "delivery": "intense",
           "source_lines": [
             "There is no free-standing community-caretaking exception that lets the police enter your home without a warrant."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "An off-duty officer had crashed. His car was towed to a private lot, and other officers searched the trunk, looking for his service weapon.",
+          "delivery": "building",
+          "source_lines": [
+            "his car was towed to a private lot; and other officers searched the trunk, looking for his service weapon so it would not fall into the wrong hands."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Cady turned on a car already in police custody. The opinion itself said it again and again, that a vehicle is not a house.",
+          "delivery": "building",
+          "source_lines": [
+            "But Cady turned on something specific: a car, on a public highway, already in police custody.",
+            "The opinion itself said it again and again, that a vehicle is not a house."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "They argued for something bigger. A general power to look after the public, making 'for your own good' a key to any door.",
+          "delivery": "intense",
+          "source_lines": [
+            "They argued that officers carry a general, free-floating power to look after the public",
+            "\"for your own good\" becomes a key to any door, because almost any entry can be described that way."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "After May 2021, the caretaking version of that excuse is gone. So where did an excuse that big come from in the first place?",
+          "delivery": "calm",
           "source_lines": [
             "After May 2021, the caretaking version of that excuse is gone."
           ]
@@ -216,13 +242,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courtroom interior benches",
-          "bound_file": "D:\\pd-archive\\police_modern\\pixabay_extra__v_4053__car-interior-vehicle-automobile-transport-dashboard-speed-co.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14510__courtroom_empty_wide.mp4",
           "bound_title": "car, interior, vehicle, automobile, transport, dashboard, speed, control, transp",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.4468,
           "motion": 0.86,
-          "luma": 91.9
+          "luma": 91.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.28
         },
         {
           "n": 11,
@@ -273,13 +301,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "door closing dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2370__school_hallway_empty.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0293__concrete_wall_texture_dark.mp4",
           "bound_title": "two doors in a hospital isle are wide open",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4499,
           "motion": 2.419,
-          "luma": 98.7
+          "luma": 98.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
         },
         {
           "n": 16,
@@ -350,23 +380,237 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "silhouette walking away corridor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5387__school_hallway_empty.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12304__shattered_mirror.mp4",
           "bound_title": "students walking in a hallway",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4148,
           "motion": 15.401,
-          "luma": 137.7
+          "luma": 137.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
         },
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate — identical framing to plate 01",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "broken glass scattered across the road after the crash",
+          "source": "FOOTAGE",
+          "footage_query": "broken glass scattered on wet asphalt",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9437__rain_street_reflection_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R04",
+          "subject": "the officer's car being winched up onto a flatbed truck",
+          "source": "FOOTAGE",
+          "footage_query": "a car winched onto a flatbed truck",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38052__moving_truck_loading.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I02",
+          "subject": "rows of cars parked in the private lot it was taken to",
+          "source": "FOOTAGE",
+          "footage_query": "rows of cars parked in a gravel yard",
+          "prompt": null
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "hands searching under a car seat",
+          "source": "FOOTAGE",
+          "footage_query": "hands searching under a car seat",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51087__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "M06",
+          "subject": "an empty leather holster lying on a table",
+          "source": "FOOTAGE",
+          "footage_query": "an empty holster lying on a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-50326__wedding_ring_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "car keys hanging on a hook board in police custody",
+          "source": "FOOTAGE",
+          "footage_query": "car keys hanging on a metal hook",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51085__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "R11",
+          "subject": "a steering wheel and dashboard inside a parked car",
+          "source": "FOOTAGE",
+          "footage_query": "a steering wheel inside a parked car",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12288__shattered_mirror.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "a suburban house seen from its own front lawn",
+          "source": "FOOTAGE",
+          "footage_query": "a suburban house seen from the lawn",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22895__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I08",
+          "subject": "a brick chimney standing against the sky, a house not a car",
+          "source": "FOOTAGE",
+          "footage_query": "a brick chimney on a rooftop",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-19352__city_rooftop_dusk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "a front door opening onto a bright porch",
+          "source": "FOOTAGE",
+          "footage_query": "a front door opening onto a porch",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32759__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "M07",
+          "subject": "a wooden lectern where the bigger argument was made",
+          "source": "FOOTAGE",
+          "footage_query": "a wooden lectern in a lecture hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14605__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R02",
+          "subject": "a hand turning a key in a door lock",
+          "source": "FOOTAGE",
+          "footage_query": "a hand turning a key in a lock",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51080__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.334
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "a quiet residential street lined with houses",
+          "source": "FOOTAGE",
+          "footage_query": "a residential street lined with houses",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38804__wall_street_sign.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U04",
+          "subject": "a row of identical front doors along a walkway, any of them",
+          "source": "FOOTAGE",
+          "footage_query": "front doors along an apartment walkway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31117__bank_building_columns.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.334
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I07",
+          "subject": "the wide stone steps of a public building",
+          "source": "FOOTAGE",
+          "footage_query": "wide stone steps of a public building",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6239__courthouse_steps.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
         }
       ]
     },
@@ -382,40 +626,67 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "In 2021 the Supreme Court shut a door police had been walking through. It did not shut the one you might need.",
+          "delivery": "intense",
           "source_lines": [
             "The Court did not say the police can never enter your home without a warrant."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "The Chief Justice, joined by Justice Breyer, stressed that no warrant is needed to help a person who is seriously injured or threatened with injury.",
+          "delivery": "building",
           "source_lines": [
             "The Chief Justice, joined by Justice Breyer, stressed that no warrant is needed to help a person who is seriously injured or thr"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "What the Court removed was the general version. Looking after someone is not, by itself, a reason to cross the threshold.",
+          "delivery": "building",
           "source_lines": [
             "There is no free-standing community-caretaking exception that lets the police enter your home without a warrant."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "One phone call asking officers to check that a man was alive ended with his handguns in an evidence bag. No warrant. No crime.",
+          "delivery": "intense",
           "source_lines": [
             "So how did her phone call end with officers inside his house, his handguns in an evidence bag, no warrant, and no crime?"
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The doors that were already open stayed open. A valid warrant. Your consent. And exigent circumstances, the genuine emergency.",
+          "delivery": "building",
+          "source_lines": [
+            "The doors that were already open stayed open: a valid warrant; your consent; and exigent circumstances, the genuine emergency"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Change one detail and the answer flips. The officers reach the porch and hear a gunshot inside. Nothing in this decision keeps them out.",
+          "delivery": "building",
+          "source_lines": [
+            "Change one detail, and the answer flips.",
+            "But this time, when the officers reach the porch, they hear a gunshot inside.",
+            "Nothing in this decision keeps them out."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "A unanimous Supreme Court did not end his case. It vacated the decision against him and sent it back down to be judged again.",
+          "delivery": "intense",
+          "source_lines": [
+            "A unanimous Supreme Court did not end his case.",
+            "It vacated the decision against him and sent the case back down, to be judged again under the correct rule"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Help and a search can begin with exactly the same knock at the door. So which one did the Court leave open?",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -519,7 +790,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courtroom interior benches",
-          "bound_file": "D:\\pd-archive\\prison_jail\\pixabay_extra__v_131330__home-wind-furniture-interior-lifestyle-door-curtain-window-p.mp4",
           "bound_title": "home, wind, furniture, interior, lifestyle, door, curtain, window, plant",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
@@ -646,23 +916,239 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "silhouette walking away corridor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5674__lone_person_silhouette_walking.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15270__long_shadow_of_a_person.mp4",
           "bound_title": "a person walking down a dirt road at sunset",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4101,
           "motion": 7.264,
-          "luma": 77.6
+          "luma": 77.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
         },
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate — identical framing to plate 01",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I01",
+          "subject": "a fountain pen lying on a leather desk pad, the warrant route",
+          "source": "FOOTAGE",
+          "footage_query": "a fountain pen on a leather desk pad",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14317__wax_seal_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.336
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "a hand pushing a front door open from outside, consent given",
+          "source": "FOOTAGE",
+          "footage_query": "a hand pushing a front door open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51275__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I08",
+          "subject": "a fire engine pulling out of its station, a genuine emergency",
+          "source": "FOOTAGE",
+          "footage_query": "a fire engine pulling out of a station",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39979__ambulance_lights_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "I02",
+          "subject": "three wooden doors along a bright hallway, all still open",
+          "source": "FOOTAGE",
+          "footage_query": "three wooden doors along a bright hallway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1823__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R04",
+          "subject": "two people shaking hands in a doorway",
+          "source": "FOOTAGE",
+          "footage_query": "two people shaking hands in a doorway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4815__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.338
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U06",
+          "subject": "wooden porch steps leading up to the house",
+          "source": "FOOTAGE",
+          "footage_query": "wooden porch steps leading to a house",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22893__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "R02",
+          "subject": "a fist knocking on a wooden door",
+          "source": "FOOTAGE",
+          "footage_query": "a fist knocking on a wooden door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51261__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "birds scattering off a rooftop at a sudden sound",
+          "source": "FOOTAGE",
+          "footage_query": "birds scattering from a rooftop",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11097__city_rooftop_dusk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U09",
+          "subject": "boots running across a gravel driveway",
+          "source": "FOOTAGE",
+          "footage_query": "boots running across a gravel driveway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33049__broken_house_demolition.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "W10",
+          "subject": "an open door leading into a lit room, nothing keeping them out",
+          "source": "FOOTAGE",
+          "footage_query": "an open door into a lit room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2366__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I07",
+          "subject": "a marble hall with tall interior columns, all nine agreeing",
+          "source": "FOOTAGE",
+          "footage_query": "a marble hall with tall columns",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6618__supreme_court_building.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "a wide stone staircase running back down to the lower court",
+          "source": "FOOTAGE",
+          "footage_query": "a wide stone staircase descending",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22093__white_picket_fence.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U07",
+          "subject": "a cardboard box of folders carried away to be heard again",
+          "source": "FOOTAGE",
+          "footage_query": "a cardboard box of folders carried away",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33088__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "W09",
+          "subject": "the pages of a wall calendar flipping over, the case restarting",
+          "source": "FOOTAGE",
+          "footage_query": "pages of a wall calendar flipping",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "R12",
+          "subject": "a wristwatch and a wallet in a plastic tray",
+          "source": "FOOTAGE",
+          "footage_query": "a wristwatch and wallet in a tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37033__fingerprint_dust_lift.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
         }
       ]
     }
