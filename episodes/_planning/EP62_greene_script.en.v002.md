@@ -12,6 +12,12 @@ Spoken words only below the section headings. `【】` are direction and are not
 
 **Claim locks applied** (contract `forbidden_claims`): no present-day claim · no national number · no "the Court banned posting" · no "every State must now mail" · nothing about what became of Linnie Lindsey, Barbara Hodgens or Pamela Ray · "she never saw it" spoken only as their account · no landlord motive · Lindsey v. Normet is never mentioned in the same breath as the appellee Linnie Lindsey.
 
+> ⚠ **見出しの時間ラベル（`(mm:ss–mm:ss)`）は無効です。信用しないでください。**
+> 手で置いた数字に後から語が足され、区間によっては実測レートで到達不能になっています
+> （例: EP64 の ACT_5 は 1,422語 を 4:50 に置いており 294 wpm が必要）。
+> **正しい時間は、二周目と8秒HOOKの確定後に、実測語数から再導出します。**
+> それまで組み立て側は語数比だけを使ってください。
+
 ---
 
 ## HOOK (0:00–0:50 · voice from frame 0)

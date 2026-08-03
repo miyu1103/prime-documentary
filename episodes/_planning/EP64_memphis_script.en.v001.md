@@ -8,6 +8,12 @@
 
 **Claim locks** (§12/§14): both accounts of whose mistake it was stated, neither adopted · nobody said to have been overcharged · a hearing before a cutoff never told as the end of cutoffs · no vote count · no date, season, duration or figure for the five terminations · no national number · no present-day rule · no aftermath for the family.
 
+> ⚠ **見出しの時間ラベル（`(mm:ss–mm:ss)`）は無効です。信用しないでください。**
+> 手で置いた数字に後から語が足され、区間によっては実測レートで到達不能になっています
+> （例: EP64 の ACT_5 は 1,422語 を 4:50 に置いており 294 wpm が必要）。
+> **正しい時間は、二周目と8秒HOOKの確定後に、実測語数から再導出します。**
+> それまで組み立て側は語数比だけを使ってください。
+
 ---
 
 ## HOOK (0:00–0:58 · voice from frame 0)

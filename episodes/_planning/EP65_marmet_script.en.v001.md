@@ -4,6 +4,12 @@
 
 **Locks:** 8 keys as spelled · open ≤60s · mid reveal 45–60% · primary 65–85% · nothing new past 92% · callback 70–90% · reset 55–70% · loop = **the carve-out** · no held clause · per curiam only · families never merged · no numbers.
 
+> ⚠ **見出しの時間ラベル（`(mm:ss–mm:ss)`）は無効です。信用しないでください。**
+> 手で置いた数字に後から語が足され、区間によっては実測レートで到達不能になっています
+> （例: EP64 の ACT_5 は 1,422語 を 4:50 に置いており 294 wpm が必要）。
+> **正しい時間は、二周目と8秒HOOKの確定後に、実測語数から再導出します。**
+> それまで組み立て側は語数比だけを使ってください。
+
 ---
 
 ## HOOK (0:00-0:57 · voice from frame 0)
