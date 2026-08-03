@@ -53,16 +53,16 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Seven minutes. That was the whole argument the government took to the Supreme Court, and it lost.",
+          "delivery": "intense",
           "source_lines": [
             "The government's answer was, in essence: what's the harm? It was only seven or eight minutes."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Officers should have a little breathing room, it argued. A few extra minutes is such a small thing that the Constitution should not even count it.",
+          "delivery": "building",
           "source_lines": [
             "Officers, it argued, should have a little breathing room, a small buffer to run a dog around a car, especially with a second unit on the way for safety.",
             "A few extra minutes is such a small thing, the government said, that the Constitution shouldn't even count it."
@@ -70,8 +70,8 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Lawyers have a name for that. De minimis. Too slight to notice. And it has real force, because seven minutes is not long.",
+          "delivery": "building",
           "source_lines": [
             "In legal terms, it was \"de minimis\" — too slight to notice",
             "And that argument has real force. Seven minutes is not long."
@@ -79,8 +79,8 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "The Court refused to measure the intrusion by whether it felt big or small. An officer cannot bank the minutes he saves by working fast and then spend them on an unrelated investigation.",
+          "delivery": "intense",
           "source_lines": [
             "The Court refused to measure the intrusion by whether it felt big or small.",
             "An officer cannot bank the minutes he saves by working fast and then spend them on an unrelated investigation."
@@ -88,8 +88,33 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "A traffic stop is a seizure. For those minutes the government is holding you, justified only by its purpose.",
+          "delivery": "building",
+          "source_lines": [
+            "A traffic stop, she wrote, is a seizure — for those minutes, the government is holding you — and it is justified only by its purpose."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "A stop may last as long as its job takes, and no longer. When the traffic tasks are finished, the clock stops.",
+          "delivery": "building",
+          "source_lines": [
+            "A stop may last as long as its job takes, and no longer",
+            "The moment the mission is finished, the clock stops, and holding you any longer needs its own reason"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Sniffing for drugs has nothing to do with keeping a car safe on the road. It is ordinary crime detection.",
+          "delivery": "building",
+          "source_lines": [
+            "Sniffing for drugs, the Court noted, has nothing to do with keeping a car safe on the road; it is a different errand entirely — ordinary crime detection, aimed at finding evidence"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "The question was never how long the delay ran. It was whether he had any authority to impose it at all.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -163,13 +188,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands on steering wheel night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0368__blurred_city_night_bokeh.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51095__key_turning_in_lock.mp4",
           "bound_title": "colorful bokeh lights in urban nightscape",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3954,
           "motion": 2.733,
-          "luma": 41.6
+          "luma": 41.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
         },
         {
           "n": 8,
@@ -200,13 +227,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty road at night headlights",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0371__blurred_city_night_bokeh.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7603__city_traffic_night_long_exposure.mp4",
           "bound_title": "vibrant cityscape at night with blurred lights",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4445,
           "motion": 3.635,
-          "luma": 45.3
+          "luma": 45.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
         },
         {
           "n": 11,
@@ -287,13 +316,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "coins falling slow motion macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0427__light_streaks_motion.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24879__physical_bitcoin_coin.mp4",
           "bound_title": "dynamic abstract motion with vibrant colors",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5618,
           "motion": 8.974,
-          "luma": 45.0
+          "luma": 45.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.369
         },
         {
           "n": 19,
@@ -338,12 +369,218 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a dog circling the back of a stopped car",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a hand resting on the frame of an open car door",
+          "source": "FOOTAGE",
+          "footage_query": "hand resting on open car door frame",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51087__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U09",
+          "subject": "a person standing at the roadside beside a stopped car",
+          "source": "FOOTAGE",
+          "footage_query": "person standing beside a stopped car",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15007__crime_scene_tape_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "W10",
+          "subject": "a car halted on the hard shoulder with hazard lights blinking",
+          "source": "FOOTAGE",
+          "footage_query": "car on hard shoulder hazard lights blinking",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37055__open_safe_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "traffic streaming past a car stopped on the verge",
+          "source": "FOOTAGE",
+          "footage_query": "traffic passing a car stopped on verge",
+          "prompt": null
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "I04",
+          "subject": "a seat belt fastened across an empty passenger seat",
+          "source": "FOOTAGE",
+          "footage_query": "seat belt across an empty passenger seat",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10489__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "a hand closing a small notebook",
+          "source": "FOOTAGE",
+          "footage_query": "hand closing a small notebook",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23802__shredded_documents_pile.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W09",
+          "subject": "a hand turning the ignition key in a car",
+          "source": "FOOTAGE",
+          "footage_query": "hand turning a car ignition key",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51081__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U02",
+          "subject": "a car door swinging shut in daylight",
+          "source": "FOOTAGE",
+          "footage_query": "car door swinging shut in daylight",
+          "prompt": null
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U13",
+          "subject": "a car pulling away along an open road",
+          "source": "FOOTAGE",
+          "footage_query": "car pulling away along an open road",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16009__open_safe_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.325
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y03",
+          "subject": "an empty two lane road running to the horizon",
+          "source": "FOOTAGE",
+          "footage_query": "empty two lane road to the horizon",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-13818__lone_tree_in_field.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R03",
+          "subject": "a dog's nose sniffing along the ground",
+          "source": "FOOTAGE",
+          "footage_query": "dog nose sniffing along the ground",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-50660__military_dog_tags.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "W05",
+          "subject": "the tyre tread and wheel arch of a parked car",
+          "source": "FOOTAGE",
+          "footage_query": "tyre tread and wheel arch close up",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22491__moving_truck_loading.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "M05",
+          "subject": "a car boot lid opening on an empty load space",
+          "source": "FOOTAGE",
+          "footage_query": "car boot opening on empty load space",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38055__moving_truck_loading.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "gloved hands searching under a car seat",
+          "source": "FOOTAGE",
+          "footage_query": "gloved hands searching under a car seat",
+          "prompt": null
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "a traffic cone standing on asphalt",
+          "source": "FOOTAGE",
+          "footage_query": "traffic cone standing on asphalt",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26499__lone_figure_with_umbrella_in_rain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
         }
       ],
       "loop": true,
@@ -359,40 +596,66 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Three justices thought the driver held on that Nebraska shoulder had no case at all. Their reasoning is worth hearing.",
+          "delivery": "intense",
           "source_lines": [
             "The dissenters thought the answer was plainly yes."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Justice Clarence Thomas, joined by Justice Samuel Alito, argued the whole encounter, all twenty-nine minutes, was reasonable.",
+          "delivery": "building",
           "source_lines": [
             "Justice Clarence Thomas, joined by Justice Samuel Alito, argued that the whole encounter — all twenty-nine minutes — was reasonable, and that the officer had enough to justify the wait regardless."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Alito added that the majority's rule was strangely formal. An officer who paused to call for backup before running the dog would now be penalized for the timing.",
+          "delivery": "building",
           "source_lines": [
             "Alito added that the majority's rule was strangely formal: an officer who paused to call for backup before running the dog — a sensible safety step — would now be penalized for the timing"
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "Their point was not that time does not matter. It was that a short, careful delay by a lone officer at midnight was reasonable. Which is the very thing the Fourth Amendment asks.",
+          "delivery": "intense",
           "source_lines": [
             "Their point was not that time doesn't matter. It was that a short, careful delay by a lone officer at midnight was reasonable — which is the very thing the Fourth Amendment asks"
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The officer ordered him out of the car to wait by the road, then radioed for a second unit.",
+          "delivery": "building",
+          "source_lines": [
+            "Because Rodriguez would not consent, Struble ordered him to shut off the engine, step out, and wait by the road.",
+            "He radioed for a second officer."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The majority did not set Rodriguez free. It left a second door wide open and sent the case back down.",
+          "delivery": "building",
+          "source_lines": [
+            "And it did not set Rodriguez free",
+            "In fact, it left a second door wide open."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "If the officer had a real, specific reason to suspect something more, holding him for the dog might have been perfectly lawful.",
+          "delivery": "building",
+          "source_lines": [
+            "If Struble had a real, specific reason to suspect Rodriguez of something beyond the traffic violation — genuine reasonable suspicion — then holding him for the dog might have been perfectly lawful"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "So did the officer really cross a constitutional line by pausing to wait for backup at midnight on an empty road?",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -416,13 +679,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courtroom interior wooden benches",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15904__fingerprint_dust_lift.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14605__jury_box_empty.mp4",
           "bound_title": "hand spreading flour on wooden table surface",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4398,
           "motion": 26.428,
-          "luma": 117.5
+          "luma": 117.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
         },
         {
           "n": 3,
@@ -473,13 +738,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "close up of pen writing on paper",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0450__office_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14319__wax_seal_on_document.mp4",
           "bound_title": "a person sitting at a desk with a computer monitor",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5087,
           "motion": 15.349,
-          "luma": 63.0
+          "luma": 63.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
         },
         {
           "n": 8,
@@ -510,13 +777,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "silhouette at night headlights",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0372__blurred_city_night_bokeh.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-2897__flashlight_beam_fog.mp4",
           "bound_title": "bokeh effect night city traffic lights",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4266,
           "motion": 7.897,
-          "luma": 44.4
+          "luma": 44.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
         },
         {
           "n": 11,
@@ -547,13 +816,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "police radio close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0832__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15704__rotary_phone_close_up.mp4",
           "bound_title": "counting currency notes in hand close up",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6277,
           "motion": 13.822,
-          "luma": 80.1
+          "luma": 80.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
         },
         {
           "n": 14,
@@ -584,13 +855,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "gears turning close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-0364__sparks_slow_motion.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10009__balance_scale_brass.mp4",
           "bound_title": "close up shot of a fire",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.8168,
           "motion": 9.848,
-          "luma": 29.9
+          "luma": 29.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
         },
         {
           "n": 17,
@@ -621,13 +894,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "wet asphalt reflections night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-0176__embers_floating.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33401__rain_street_reflection_night.mp4",
           "bound_title": "cozy campfire with glowing embers at night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4127,
           "motion": 30.795,
-          "luma": 74.1
+          "luma": 74.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.322
         },
         {
           "n": 20,
@@ -662,12 +937,224 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: three lit chairs at the end of a dark bench",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a car door opening from inside onto the roadside",
+          "source": "FOOTAGE",
+          "footage_query": "car door opening onto the roadside",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10340__newspaper_printing_press.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "a person waiting at the edge of a road",
+          "source": "FOOTAGE",
+          "footage_query": "person waiting at the edge of a road",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-2760__sand_blowing_desert.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I08",
+          "subject": "a radio mast standing against a pale sky",
+          "source": "FOOTAGE",
+          "footage_query": "radio mast against a pale sky",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-27823__radio_tower_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.336
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y03",
+          "subject": "a gravel road shoulder and grass verge",
+          "source": "FOOTAGE",
+          "footage_query": "gravel road shoulder and grass verge",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9082__rural_road_america.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "a second patrol car arriving behind a stopped car",
+          "source": "FOOTAGE",
+          "footage_query": "second patrol car arriving behind a car",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4964__police_car_lights_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "a hand holding a heavy door open",
+          "source": "FOOTAGE",
+          "footage_query": "hand holding a heavy door open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51261__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.326
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W10",
+          "subject": "a gate standing open onto a yard",
+          "source": "FOOTAGE",
+          "footage_query": "gate standing open onto a yard",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41468__chains_and_padlock_rusty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "stone steps leading down outdoors",
+          "source": "FOOTAGE",
+          "footage_query": "stone steps leading down outdoors",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22893__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U07",
+          "subject": "a closed folder passed across a desk",
+          "source": "FOOTAGE",
+          "footage_query": "closed folder passed across a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30298__documents_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I05",
+          "subject": "cardboard archive boxes stacked on shelves",
+          "source": "FOOTAGE",
+          "footage_query": "cardboard archive boxes stacked on shelves",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38541__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W05",
+          "subject": "a magnifier lens held close over a car panel",
+          "source": "FOOTAGE",
+          "footage_query": "magnifier lens held close over a panel",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20470__magnifying_glass_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "M03",
+          "subject": "a dog sitting alert beside a car",
+          "source": "FOOTAGE",
+          "footage_query": "dog sitting alert beside a car",
+          "prompt": null
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "M01",
+          "subject": "a fingerprint left on a clean glass surface",
+          "source": "FOOTAGE",
+          "footage_query": "fingerprint on a clean glass surface",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1945__caustics_water_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I06",
+          "subject": "a single set of tyre tracks across dusty ground",
+          "source": "FOOTAGE",
+          "footage_query": "tyre tracks across dusty ground",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-59312__sand_dunes_desert.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y04",
+          "subject": "an empty dog crate in the back of a vehicle",
+          "source": "FOOTAGE",
+          "footage_query": "empty dog crate in a vehicle",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54374__warehouse_loading_dock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
         }
       ],
       "loop": true,

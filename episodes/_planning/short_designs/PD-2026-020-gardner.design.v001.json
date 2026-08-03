@@ -99,6 +99,34 @@
         },
         {
           "id": "L5",
+          "delivery": "building",
+          "text": "The list is strange. Five Degas sketches, a Manet, and a Chinese bronze beaker three thousand years old.",
+          "source_lines": [
+            "It is a strange, uneven list, and that strangeness is one of the great clues that has never quite been solved.",
+            "Alongside the Vermeer and the Rembrandts, the thieves took five works by Degas — small, delicate sketches and watercolors, not the artist's most famous or valuable pieces.",
+            "One was an ancient Chinese beaker — a bronze vessel called a Gu, some three thousand years old."
+          ]
+        },
+        {
+          "id": "L6",
+          "delivery": "building",
+          "text": "The crown of the haul was a Vermeer. Only about three dozen of his works are known to exist anywhere on earth.",
+          "source_lines": [
+            "The crown of it was a single painting by Johannes Vermeer",
+            "Only about three dozen of his works are known to exist anywhere on earth."
+          ]
+        },
+        {
+          "id": "L7",
+          "delivery": "building",
+          "text": "None of it can be sold. You cannot walk into an auction house with a cut-out Rembrandt.",
+          "source_lines": [
+            "You cannot walk into an auction house with a cut-out Rembrandt.",
+            "Which means their true value is almost philosophical — they are priceless precisely because they can never be sold."
+          ]
+        },
+        {
+          "id": "L8",
           "delivery": "calm",
           "text": "Which leaves one uncomfortable answer. Either the thieves did not understand what they were holding, or the art was never really the point. Look again at what they left.",
           "source_lines": [
@@ -126,13 +154,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty picture frame",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11245__subway_tunnel_empty.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38345__one_way_mirror_room.mp4",
           "bound_title": "empty pedestrian underpass",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4071,
           "motion": 9.457,
-          "luma": 45.7
+          "luma": 45.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
         },
         {
           "n": 3,
@@ -223,13 +253,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "staircase dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5605__crowd_silhouette.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31281__lone_person_silhouette_walking.mp4",
           "bound_title": "silhouettes walking through dark tunnel",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3881,
           "motion": 4.946,
-          "luma": 38.6
+          "luma": 38.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
         },
         {
           "n": 12,
@@ -250,13 +282,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "security camera ceiling",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8385__fingerprint_scan_blue.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3434__surveillance_camera_city.mp4",
           "bound_title": "a person checking out a phone s camera",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5416,
           "motion": 11.168,
-          "luma": 138.0
+          "luma": 138.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         },
         {
           "n": 14,
@@ -277,13 +311,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "candle flame dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9601__candle_in_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1695__candle_flame_macro.mp4",
           "bound_title": "soothing candle flame in dark room",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.8002,
           "motion": 1.159,
-          "luma": 36.4
+          "luma": 36.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
         },
         {
           "n": 16,
@@ -344,13 +380,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "rain on window night",
-          "bound_file": "D:\\pd-archive\\business_corporate\\coverr__645__a-glass-building-on-lisbon-street.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1435__rain_on_window_night.mp4",
           "bound_title": "a glass building on lisbon street",
           "bound_license": "free_commercial",
           "bound_source": "coverr",
           "centre_energy": 0.3951,
           "motion": 16.859,
-          "luma": 109.9
+          "luma": 109.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
         },
         {
           "n": 22,
@@ -365,12 +403,220 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: one empty gilded frame on a dark wall",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: one empty gilded frame on a dark wall",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: one empty gilded frame on a dark wall",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "charcoal sketch paper on a wooden table",
+          "source": "FOOTAGE",
+          "footage_query": "charcoal sketch paper on a wooden table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37032__fingerprint_dust_lift.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "M06",
+          "subject": "a bronze vessel inside a glass display case",
+          "source": "FOOTAGE",
+          "footage_query": "bronze vessel inside a glass display case",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "a wooden bench in the middle of a gallery",
+          "source": "FOOTAGE",
+          "footage_query": "a wooden bench in the middle of a gallery",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31001__warehouse_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "I05",
+          "subject": "artworks stored on racks in a storeroom",
+          "source": "FOOTAGE",
+          "footage_query": "artworks stored on racks in a storeroom",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5243__warehouse_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "watercolour brushes and a paint tray",
+          "source": "FOOTAGE",
+          "footage_query": "watercolour brushes and paint tray on a table",
+          "prompt": null
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U09",
+          "subject": "a visitor standing before a large painting",
+          "source": "FOOTAGE",
+          "footage_query": "a person standing before a large painting in a gallery",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16537__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "R05",
+          "subject": "a marble staircase in a grand hall",
+          "source": "FOOTAGE",
+          "footage_query": "marble staircase in a grand hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-35892__church_interior_light_beam.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "a locked wooden cabinet in a quiet room",
+          "source": "FOOTAGE",
+          "footage_query": "locked wooden cabinet in a quiet room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14894__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U01",
+          "subject": "sunlight falling through a tall gallery window",
+          "source": "FOOTAGE",
+          "footage_query": "sunlight falling through a tall gallery window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14086__church_interior_light_beam.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "W05",
+          "subject": "a magnifying glass held over a painted surface",
+          "source": "FOOTAGE",
+          "footage_query": "magnifying glass held over a painted surface",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15145__magnifying_glass_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.353
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R07",
+          "subject": "an auction gavel resting on a wooden block",
+          "source": "FOOTAGE",
+          "footage_query": "auction gavel resting on a wooden block",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0518__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "I07",
+          "subject": "rows of empty chairs in an auction room",
+          "source": "FOOTAGE",
+          "footage_query": "rows of empty chairs in an auction room",
+          "prompt": null
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "a velvet rope across a gallery doorway",
+          "source": "FOOTAGE",
+          "footage_query": "velvet rope across a gallery doorway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-27521__voting_booth_curtain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "M02",
+          "subject": "an empty display plinth in a bright room",
+          "source": "FOOTAGE",
+          "footage_query": "empty display plinth in a bright room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51491__window_blinds_shadow_stripes.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U12",
+          "subject": "glass entrance doors reflecting the street",
+          "source": "FOOTAGE",
+          "footage_query": "glass entrance doors reflecting the street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5456__bank_building_columns.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
         }
       ]
     },
@@ -421,6 +667,32 @@
         },
         {
           "id": "L5",
+          "delivery": "building",
+          "text": "The trail ran hot and useless at once. Thousands of tips. Psychics. Con men who wanted a price.",
+          "source_lines": [
+            "In the early years, the trail was hot and useless at the same time.",
+            "Thousands of tips. Psychics. Con men claiming they could get the paintings back — for a price."
+          ]
+        },
+        {
+          "id": "L6",
+          "delivery": "building",
+          "text": "Investigators went public with a website, images of every missing work, and billboards where the trail last ran warm.",
+          "source_lines": [
+            "To shake something loose, investigators went public in a way they rarely do.",
+            "They launched an appeal to the whole country — a dedicated website, images of every missing work, even billboards in the region where the trail had last been warm."
+          ]
+        },
+        {
+          "id": "L7",
+          "delivery": "building",
+          "text": "The art may sit in an attic, a storage unit, a basement, held by someone afraid of it.",
+          "source_lines": [
+            "The second is that the art is still out there — sitting in an attic, a storage unit, a basement — held by someone who inherited it, or is afraid of it, or simply does not know what they have."
+          ]
+        },
+        {
+          "id": "L8",
           "delivery": "calm",
           "text": "The offer is no longer aimed at the thieves. Prosecutors say they want the works back far more than they want anyone in a cell. So where did the art go?",
           "source_lines": [
@@ -518,13 +790,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "locked door padlock",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4813__front_door_house.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8121__bank_vault_door.mp4",
           "bound_title": "couple placing the welcome sign at the doorstep",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3893,
           "motion": 6.227,
-          "luma": 124.4
+          "luma": 124.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         },
         {
           "n": 10,
@@ -545,7 +819,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "staircase dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9305__storm_clouds_dramatic.mp4",
           "bound_title": "a dark storm cloud is seen in the sky",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -572,13 +845,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "rain on window night",
-          "bound_file": "D:\\pd-archive\\money_banking\\coverr__4862__a-businessman-working-on-a-stock-market-trading-platform.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1446__rain_on_window_night.mp4",
           "bound_title": "a businessman working on a stock market trading platform",
           "bound_license": "free_commercial",
           "bound_source": "coverr",
           "centre_energy": 0.5593,
           "motion": 11.766,
-          "luma": 90.6
+          "luma": 90.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
         },
         {
           "n": 14,
@@ -599,13 +874,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "candle flame dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-4908__candle_flame_macro.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9599__candle_in_dark.mp4",
           "bound_title": "a candle is lit in the dark with a flame",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4425,
           "motion": 5.044,
-          "luma": 40.9
+          "luma": 40.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
         },
         {
           "n": 16,
@@ -646,13 +923,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty picture frame",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11248__subway_tunnel_empty.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52729__film_reel_projector.mp4",
           "bound_title": "empty tunnel at night with curved roadway",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4286,
           "motion": 6.376,
-          "luma": 44.6
+          "luma": 44.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
         },
         {
           "n": 20,
@@ -687,12 +966,224 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: a coast drawn only as glowing seams",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: a coast drawn only as glowing seams",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: a coast drawn only as glowing seams",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I03",
+          "subject": "several telephones on an office desk",
+          "source": "FOOTAGE",
+          "footage_query": "several telephones on an office desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23693__case_files_stack_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a heap of opened mail piled on a table",
+          "source": "FOOTAGE",
+          "footage_query": "a heap of opened mail piled on a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8262__contract_paperwork_signing.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U05",
+          "subject": "a cassette tape recorder on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "cassette tape recorder on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12504__wooden_desk_lamp_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y01",
+          "subject": "tarot cards spread on a red cloth",
+          "source": "FOOTAGE",
+          "footage_query": "tarot cards spread on a red cloth",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20469__magnifying_glass_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "a hand passing banknotes across a table",
+          "source": "FOOTAGE",
+          "footage_query": "a hand passing banknotes across a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23984__money_counting_machine.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "M01",
+          "subject": "a computer monitor glowing on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "vintage computer monitor glowing on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21739__cctv_monitor_grid_wall.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "I08",
+          "subject": "a blank roadside billboard against the sky",
+          "source": "FOOTAGE",
+          "footage_query": "blank roadside billboard against the sky",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33131__rural_road_america.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.28
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "large paper sheets running through a press",
+          "source": "FOOTAGE",
+          "footage_query": "large paper sheets running through a printing press",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10319__newspaper_printing_press.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "traffic moving along an interstate in daylight",
+          "source": "FOOTAGE",
+          "footage_query": "traffic moving along an interstate in daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56935__highway_underpass.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "R06",
+          "subject": "a wooden lectern in front of press seating",
+          "source": "FOOTAGE",
+          "footage_query": "a wooden lectern in front of press seating",
+          "prompt": null
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U08",
+          "subject": "wooden trunks stored under loft rafters",
+          "source": "FOOTAGE",
+          "footage_query": "wooden trunks stored under loft rafters",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0452__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "plastic crates stacked in a lock up",
+          "source": "FOOTAGE",
+          "footage_query": "plastic crates stacked in a lock up",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2220__warehouse_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W03",
+          "subject": "basement stairs with the light switched on",
+          "source": "FOOTAGE",
+          "footage_query": "basement stairs with the light switched on",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22093__white_picket_fence.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R10",
+          "subject": "a house front door with the porch light on",
+          "source": "FOOTAGE",
+          "footage_query": "house front door with porch light on",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1670__suburban_house_exterior_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "a person carrying a large flat package",
+          "source": "FOOTAGE",
+          "footage_query": "a person carrying a large flat package",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62180__data_center_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
         }
       ]
     }

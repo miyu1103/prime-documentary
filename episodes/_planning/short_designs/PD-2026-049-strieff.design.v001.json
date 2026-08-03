@@ -68,40 +68,69 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "An unpaid fine sitting in a database can turn an unlawful police stop into a search that holds up in court.",
+          "delivery": "intense",
           "source_lines": [
             "The illegal stop becomes almost free."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "A very large number of Americans have some kind of outstanding warrant. Very often for something small. An unpaid fine, a missed court date, an old traffic ticket.",
+          "delivery": "building",
           "source_lines": [
             "A very large number of Americans have some kind of outstanding warrant, very often for something small, an unpaid fine, a missed court date, an old traffic ticket."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "If you are one of them, an officer who stops you with no legal reason can run your name, find that warrant, arrest you, and search you.",
+          "delivery": "building",
           "source_lines": [
             "If you are one of them, an officer who stops you with no legal reason can run your name, find that warrant, arrest you, and search you, and under this rule most of what he finds will hold up."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "And under this rule most of what he finds will hold up. The illegal stop becomes almost free.",
+          "delivery": "intense",
           "source_lines": [
             "and under this rule most of what he finds will hold up. The illegal stop becomes almost free."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Normally that evidence disappears. When police search illegally, whatever they turn up is thrown out of the case.",
+          "delivery": "building",
+          "source_lines": [
+            "If the police search you illegally, the evidence they turn up is normally thrown out.",
+            "Lawyers call it the exclusionary rule, and the idea is simple."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The rule has exceptions. One is attenuation, when the link is so thinned out the connection barely holds.",
+          "delivery": "building",
+          "source_lines": [
+            "But the rule has never been absolute.",
+            "The name for that idea is attenuation.",
+            "Attenuated just means thinned out, so far removed from the first mistake that the connection barely holds."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The warrant in Utah versus Strieff existed before the stop. It was valid and outstanding, so the search rode on it, not the stop.",
+          "delivery": "building",
+          "source_lines": [
+            "That warrant existed before the detective ever stopped Strieff.",
+            "It was valid, it was outstanding, and it commanded the detective to make an arrest the moment it surfaced.",
+            "That search is legal on its own terms, because it rides on the warrant, not on the stop."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "The stop was still illegal. The Court never pretended otherwise. It just stopped mattering to whether the drugs came into court.",
+          "delivery": "calm",
           "source_lines": [
             "The stop was still illegal. The Court never pretended otherwise.",
             "It just stopped mattering to whether the drugs came into court."
@@ -198,7 +227,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "filing cabinet drawers close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3137__old_keys_on_table.mp4",
           "bound_title": "vintage typewriter typing paper close up",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -245,13 +273,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands typing keyboard dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2748__foggy_forest.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10468__vintage_typewriter.mp4",
           "bound_title": "dark fog mysterious halloween",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5689,
           "motion": 11.235,
-          "luma": 102.6
+          "luma": 102.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
         },
         {
           "n": 14,
@@ -302,7 +332,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courtroom gallery benches empty",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8928__moving_boxes_empty_room.mp4",
           "bound_title": "kids playing with empty boxes",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -353,12 +382,224 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a blank court notice pinned under a fridge magnet",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "M04",
+          "subject": "a paper bag tipped out onto a table",
+          "source": "FOOTAGE",
+          "footage_query": "paper bag tipped out onto a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0826__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "I03",
+          "subject": "a metal waste bin beside a desk",
+          "source": "FOOTAGE",
+          "footage_query": "metal waste bin beside a desk",
+          "prompt": null
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "R08",
+          "subject": "an empty exhibit table in a courtroom",
+          "source": "FOOTAGE",
+          "footage_query": "empty exhibit table in a courtroom",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14607__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a folder lifted off a stack of folders",
+          "source": "FOOTAGE",
+          "footage_query": "folder lifted off a stack of folders",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10315__newspaper_printing_press.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "a blank sheet feeding into a shredder",
+          "source": "FOOTAGE",
+          "footage_query": "blank sheet feeding into a shredder",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23796__shredded_documents_pile.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.327
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W04",
+          "subject": "a chain stretched taut between two posts",
+          "source": "FOOTAGE",
+          "footage_query": "chain stretched taut between two posts",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12147__padlock_and_chain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W05",
+          "subject": "a frayed rope holding a hanging weight",
+          "source": "FOOTAGE",
+          "footage_query": "frayed rope holding a hanging weight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12148__padlock_and_chain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U10",
+          "subject": "a thin thread pulled between two hands",
+          "source": "FOOTAGE",
+          "footage_query": "thin thread pulled between two hands",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51716__hourglass_sand_falling.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "a hook holding a single loop of rope",
+          "source": "FOOTAGE",
+          "footage_query": "hook holding a single loop of rope",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54037__motel_neon_sign_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "a narrow plank bridge over a gap",
+          "source": "FOOTAGE",
+          "footage_query": "narrow plank bridge over a gap",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21670__elevator_interior_steel.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I01",
+          "subject": "a date stamp pressed onto a blank page",
+          "source": "FOOTAGE",
+          "footage_query": "date stamp pressed onto a blank page",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53218__fountain_pen_signature.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "W10",
+          "subject": "a closed ledger book on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "closed ledger book on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4524__documents_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "R09",
+          "subject": "a hand reaching into a jacket pocket",
+          "source": "FOOTAGE",
+          "footage_query": "hand reaching into a jacket pocket",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14677__witness_stand_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R04",
+          "subject": "two figures standing on a pavement",
+          "source": "FOOTAGE",
+          "footage_query": "two figures standing on a pavement",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36650__long_shadow_of_a_person.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "a car driving away down a residential street",
+          "source": "FOOTAGE",
+          "footage_query": "car driving away down a residential street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22900__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
         }
       ],
       "loop": true,
@@ -374,24 +615,24 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "There were two dissents in this case. The second one is about arithmetic, and almost nobody quotes it.",
+          "delivery": "intense",
           "source_lines": [
             "Then came the dissents, and this is where the case became one of the most quoted of the decade."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Before this ruling, an officer who made an illegal stop got nothing for it. That was the point.",
+          "delivery": "building",
           "source_lines": [
             "Before this ruling, an officer who made an illegal stop got nothing for it, and that was the point."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Justice Elena Kagan wrote separately, going after the incentive the majority had just handed the police. Now, she warned, the math changes.",
+          "delivery": "building",
           "source_lines": [
             "Justice Elena Kagan wrote a second dissent, going after the incentive the majority had just handed the police.",
             "Now, she warned, the math changes."
@@ -399,8 +640,8 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "The officer's incentive to violate the Constitution thus increases, she wrote in dissent. From here on, he sees potential advantage in stopping individuals without reasonable suspicion.",
+          "delivery": "intense",
           "source_lines": [
             "The officer's incentive to violate the Constitution thus increases, she wrote.",
             "From here on, he sees potential advantage in stopping individuals without reasonable suspicion"
@@ -408,8 +649,34 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The majority called the warrant a genuine intervening circumstance. It broke the chain, and the evidence from that search stayed in the case.",
+          "delivery": "building",
+          "source_lines": [
+            "That, the Court said, was a genuine intervening circumstance.",
+            "The warrant broke the chain. The evidence stays."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The Court also judged the officer's conduct at most negligent, not flagrant, which tipped the third factor toward letting the evidence in.",
+          "delivery": "building",
+          "source_lines": [
+            "On the third factor, the majority found the detective's conduct was at most negligent, not flagrant.",
+            "The more flagrant the misconduct, the more the Court wants to punish it by throwing the evidence out."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "She called that exactly the temptation the exclusionary rule is supposed to remove, and the majority had just restored it.",
+          "delivery": "building",
+          "source_lines": [
+            "which she called exactly the temptation the exclusionary rule is supposed to remove"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Her side lost. Three votes, not five. And of the two dissents, the one that did the math is the one nobody quotes.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -433,13 +700,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stacked paper documents macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6481__us_constitution_document.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22602__law_books_spines_macro.mp4",
           "bound_title": "woman looking at the paper while thinking and a man using laptop",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3894,
           "motion": 13.889,
-          "luma": 106.6
+          "luma": 106.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
         },
         {
           "n": 3,
@@ -490,7 +759,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty open hands macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-0276__smoke_wisp_dark.mp4",
           "bound_title": "macro shot of the smoke on a gray background",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -517,13 +785,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "crumpled paper thrown away",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7995__cash_stacks_money.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-2575__paper_scraps_flying.mp4",
           "bound_title": "paper bills inside a briefcase",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.509,
           "motion": 10.504,
-          "luma": 58.7
+          "luma": 58.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
         },
         {
           "n": 10,
@@ -574,13 +844,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "gears turning macro close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3138__old_keys_on_table.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\loops\\AF-LOOP-0266__slow_rotation_abstract.mp4",
           "bound_title": "close up view of a typewriter",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4362,
           "motion": 10.079,
-          "luma": 83.8
+          "luma": 83.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
         },
         {
           "n": 15,
@@ -631,13 +903,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "silhouette walking city street night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1512__city_skyline_dusk.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3599__moody_atmosphere_fog.mp4",
           "bound_title": "aerial footage of a city",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3938,
           "motion": 2.834,
-          "luma": 133.2
+          "luma": 133.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
         },
         {
           "n": 20,
@@ -672,12 +946,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: two stacks of blank paper, one far shorter",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "W04",
+          "subject": "bolt cutters resting on a workbench",
+          "source": "FOOTAGE",
+          "footage_query": "bolt cutters resting on a workbench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11652__operating_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "a coat and belt laid out on a counter",
+          "source": "FOOTAGE",
+          "footage_query": "coat and belt laid out on a counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20301__quill_and_ink_pot.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "R06",
+          "subject": "a wooden witness rail in an empty courtroom",
+          "source": "FOOTAGE",
+          "footage_query": "wooden witness rail in empty courtroom",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14600__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.338
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a box file slid into a shelf",
+          "source": "FOOTAGE",
+          "footage_query": "box file slid into a shelf",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33694__old_library_archive.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "a door held open by a wedge",
+          "source": "FOOTAGE",
+          "footage_query": "door held open by a wooden wedge",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8129__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "a tap left running over a sink",
+          "source": "FOOTAGE",
+          "footage_query": "tap left running over a sink",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-50058__old_faded_photograph_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "a key still hanging in a door lock",
+          "source": "FOOTAGE",
+          "footage_query": "key still hanging in a door lock",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51080__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "W03",
+          "subject": "a light left on in an empty room",
+          "source": "FOOTAGE",
+          "footage_query": "light left on in an empty room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-17248__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "crates left stacked in a doorway",
+          "source": "FOOTAGE",
+          "footage_query": "crates left stacked in a doorway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37969__for_sale_sign_yard.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "a leaning stack of books on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "leaning stack of books on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3901__law_library_books.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I03",
+          "subject": "a hand reaching for a jar on a shelf",
+          "source": "FOOTAGE",
+          "footage_query": "hand reaching for a jar on a shelf",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37050__open_safe_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "W08",
+          "subject": "a rope strung across an open doorway",
+          "source": "FOOTAGE",
+          "footage_query": "rope strung across an open doorway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32758__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "R10",
+          "subject": "a hand switching on a wall light",
+          "source": "FOOTAGE",
+          "footage_query": "hand switching on a wall light",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63653__gold_coins_pile.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R11",
+          "subject": "a hand pushing a package across a table",
+          "source": "FOOTAGE",
+          "footage_query": "hand pushing a package across a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8918__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.322
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "R05",
+          "subject": "stone courthouse steps in daylight",
+          "source": "FOOTAGE",
+          "footage_query": "stone courthouse steps in daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6237__courthouse_steps.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
         }
       ],
       "loop": true,

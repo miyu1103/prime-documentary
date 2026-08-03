@@ -63,40 +63,67 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Everything the courts are fighting over about your phone gets thinner in one place. The border.",
+          "delivery": "intense",
           "source_lines": [
             "And there is one place where even this fragile protection gets thinner still: the border."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "At an airport, or a crossing, the normal rules bend. For years the government has claimed it can search your phone there with no warrant at all.",
+          "delivery": "building",
           "source_lines": [
             "At an airport, or a crossing, the normal rules bend. For years the government has claimed it can search your phone there with no warrant at all"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "And the courts cannot agree how far that power goes. Some say officers need at least a reason to suspect you. Others say they need nothing.",
+          "delivery": "building",
           "source_lines": [
             "the courts cannot agree on how far that power goes. Some say officers need at least a reason to suspect you. Others say they need nothing."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "In 2023, one federal judge became the first to rule the government does need a warrant to search a phone at the border. A real crack in the wall.",
+          "delivery": "intense",
           "source_lines": [
             "In 2023, one federal judge became the first to rule that the government does need a warrant to search a phone at the border — a real crack in the wall."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Inside the country the rule looks settled. Riley versus California, 2014: police generally need a warrant to search a phone.",
+          "delivery": "building",
+          "source_lines": [
+            "In 2014, in a case called Riley versus California, the justices ruled — unanimously — that a phone is not like anything else you carry.",
+            "Before the police can search what's inside it, even after an arrest, they generally need a warrant."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "A phone holds every place you have been and every message you have sent, down to the minute.",
+          "delivery": "building",
+          "source_lines": [
+            "Every place you've been, mapped by the minute.",
+            "Every message you've sent, every photo you've taken, who you love, what you fear, what you searched at three in the morning."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "But one judge is not a national rule. There is no national rule, only a patchwork of courthouses.",
+          "delivery": "building",
+          "source_lines": [
+            "So there is no national rule.",
+            "decided not by what they did, but by which courthouse happened to be looking at them."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "That ruling binds almost no one yet. So the same device that is a fortress in your living room can become an open book the moment you land.",
+          "delivery": "calm",
           "source_lines": [
             "So the same device that is a fortress in your living room can become an open book the moment you land."
           ]
@@ -122,13 +149,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "airport security tray conveyor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3288__courthouse_steps.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54366__warehouse_loading_dock.mp4",
           "bound_title": "a stirring portrayal of justice and patriotism standing tall and resolute in the background is a magnificent gold statue of lady justice embodying the principles of fairness and impartia",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4841,
           "motion": 10.156,
-          "luma": 84.1
+          "luma": 84.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
         },
         {
           "n": 3,
@@ -159,13 +188,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "airport terminal at night silhouettes",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1044__data_center.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-34410__airport_terminal_empty.mp4",
           "bound_title": "a computer component in operation",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3909,
           "motion": 0.978,
-          "luma": 99.3
+          "luma": 99.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
         },
         {
           "n": 6,
@@ -196,13 +227,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "escalator moving empty terminal",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2827__stormy_sky_time_lapse.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8935__moving_boxes_empty_room.mp4",
           "bound_title": "time lapse of moving clouds",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3934,
           "motion": 12.318,
-          "luma": 71.5
+          "luma": 71.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.322
         },
         {
           "n": 9,
@@ -233,13 +266,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "luggage on conveyor belt",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0593__law_library_books.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21663__elevator_interior_steel.mp4",
           "bound_title": "a person walking through a library with books",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3914,
           "motion": 15.124,
-          "luma": 100.6
+          "luma": 100.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.333
         },
         {
           "n": 12,
@@ -250,13 +285,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courthouse columns exterior",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31121__bank_building_columns.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5457__bank_building_columns.mp4",
           "bound_title": "bank exterior with logo",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4462,
           "motion": 10.338,
-          "luma": 114.3
+          "luma": 114.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.346
         },
         {
           "n": 13,
@@ -277,13 +314,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "fluorescent lights flickering ceiling",
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0063__light_leak_overlay.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3771__office_interior_dark.mp4",
           "bound_title": "flashing yellow lights",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3906,
           "motion": 85.706,
-          "luma": 75.6
+          "luma": 75.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.326
         },
         {
           "n": 15,
@@ -344,13 +383,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "cracked glass macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4738__suburban_house_exterior_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-1843__floating_pollen_backlit.mp4",
           "bound_title": "a person standing behind a glass wall",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4258,
           "motion": 2.492,
-          "luma": 37.7
+          "luma": 37.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
         },
         {
           "n": 21,
@@ -375,12 +416,218 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a dark phone lying in an inspection tray",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R06",
+          "subject": "rows of polished wooden benches in a hall",
+          "source": "FOOTAGE",
+          "footage_query": "rows of polished wooden benches in a hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2368__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "a hand lying flat on a desk beside a phone",
+          "source": "FOOTAGE",
+          "footage_query": "hand flat on a desk beside a phone",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-25280__smartphone_notification_glow.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "W06",
+          "subject": "a phone sealed inside a clear plastic bag",
+          "source": "FOOTAGE",
+          "footage_query": "phone sealed in a clear plastic bag",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37054__open_safe_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "closed folders squared on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "closed folders squared on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6098__old_keys_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a security chain across a front door",
+          "source": "FOOTAGE",
+          "footage_query": "security chain across a front door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51480__window_blinds_shadow_stripes.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U13",
+          "subject": "a person walking through a city street seen from behind",
+          "source": "FOOTAGE",
+          "footage_query": "person walking through a city street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9228__small_town_main_street.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W09",
+          "subject": "a wall calendar hanging in a room",
+          "source": "FOOTAGE",
+          "footage_query": "wall calendar hanging in a room",
+          "prompt": null
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M03",
+          "subject": "rows of server racks in a bright data centre",
+          "source": "FOOTAGE",
+          "footage_query": "server racks in a bright data centre",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2216__warehouse_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "a phone charging on a bedside table",
+          "source": "FOOTAGE",
+          "footage_query": "phone charging on a bedside table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-25285__smartphone_notification_glow.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.33
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "a crowded railway platform seen from above",
+          "source": "FOOTAGE",
+          "footage_query": "crowded railway platform from above",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20986__abandoned_factory_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.326
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "one chair at a long empty table",
+          "source": "FOOTAGE",
+          "footage_query": "one chair at a long empty table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29213__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "W11",
+          "subject": "a row of identical stone buildings along a street",
+          "source": "FOOTAGE",
+          "footage_query": "row of identical stone buildings street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6623__supreme_court_building.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "a patchwork quilt laid out flat",
+          "source": "FOOTAGE",
+          "footage_query": "patchwork quilt laid out flat",
+          "prompt": null
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I08",
+          "subject": "wide stone steps up to a public building",
+          "source": "FOOTAGE",
+          "footage_query": "wide stone steps up to a public building",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6235__courthouse_steps.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y05",
+          "subject": "case files tied with string on a shelf",
+          "source": "FOOTAGE",
+          "footage_query": "case files tied with string on a shelf",
+          "prompt": null
         }
       ],
       "loop": true,
@@ -396,32 +643,32 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "A federal court let officers press a man's own thumb to his phone. Then it added a line that undoes almost everything.",
+          "delivery": "intense",
           "source_lines": [
             "In 2024, a federal appeals court — the Ninth Circuit — looked at a case where officers took a man's phone and simply pressed his own thumb to the sensor to unlock it."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "In 2024 the Ninth Circuit said pressing a thumb takes no thought at all. His body opened the door against him, and the Constitution had nothing to say about it.",
+          "delivery": "building",
           "source_lines": [
             "The court said that did not violate the Fifth Amendment. Pressing a thumb, they reasoned, takes no thought at all. His body opened the door against him — and the Constitution had nothing to say about it."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "But the court hinted the answer might have been different if the officers had made the man choose which finger to use.",
+          "delivery": "building",
           "source_lines": [
             "The court hinted the answer might have been different if the officers had made the man choose which finger to use"
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "Because choosing is a decision, and a decision happens in your mind. Same thumb. No protection if they press it. Maybe protected if you decide.",
+          "delivery": "intense",
           "source_lines": [
             "because choosing is a decision, and a decision happens in your mind",
             "A thumb they press to the sensor: no protection. The very same thumb, if you are the one who decides to use it: maybe protected."
@@ -429,8 +676,34 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The courts' picture is a safe. They can force you to hand over the key, but not to tell them the combination.",
+          "delivery": "building",
+          "source_lines": [
+            "They can force you to hand over the key.",
+            "But they cannot force you to tell them the combination — because the combination lives in your mind, and speaking it is testimony."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "A passcode is a combination, a string of numbers that exists nowhere but inside your memory. A thumb is not.",
+          "delivery": "building",
+          "source_lines": [
+            "A passcode is a combination.",
+            "It's a string of numbers that exists nowhere but inside your memory."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "In 2025 the D.C. Circuit ruled the opposite: obeying that command admits the phone is yours, and that you know how to open it.",
+          "delivery": "building",
+          "source_lines": [
+            "In 2025, the D.C. Circuit ruled that forcing a man to unlock his phone with his fingerprint did violate the Fifth Amendment — because obeying that command, the court said, quietly admits something you know: that it's your phone, and that you know how to open it."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "So what protects you is not the lock on the phone. It is whether the choice to open it was ever yours.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -454,13 +727,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "thumb fingerprint scanner macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-3247__match_strike_flame.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8380__fingerprint_scan_blue.mp4",
           "bound_title": "a macro shot of a matchstick burning",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5693,
           "motion": 19.909,
-          "luma": 102.7
+          "luma": 102.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
         },
         {
           "n": 3,
@@ -481,13 +756,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courthouse columns low angle",
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0500__glowing_light_particles.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31115__bank_building_columns.mp4",
           "bound_title": "glowing purple particle cluster animation",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.7049,
           "motion": 10.392,
-          "luma": 64.6
+          "luma": 64.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
         },
         {
           "n": 5,
@@ -498,13 +775,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "two hands flat on table",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0751__american_flag_waving.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63961__bread_line_vintage_depression.mp4",
           "bound_title": "american flag on flagpole waving in wind",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6549,
           "motion": 18.508,
-          "luma": 174.7
+          "luma": 174.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
         },
         {
           "n": 6,
@@ -555,13 +834,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "door lock mechanism macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9718__clock_ticking_macro.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52542__vintage_film_camera.mp4",
           "bound_title": "ticking clock",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4644,
           "motion": 2.037,
-          "luma": 151.8
+          "luma": 151.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
         },
         {
           "n": 11,
@@ -592,7 +873,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "fingers moving slow motion macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0493__glowing_light_particles.mp4",
           "bound_title": "vibrant pink particle burst in motion",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -659,13 +939,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "keypad buttons close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1202__circuit_board_macro.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32879__fingerprint_scan_blue.mp4",
           "bound_title": "close up shot of printed circuit board",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4413,
           "motion": 10.776,
-          "luma": 97.6
+          "luma": 97.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
         },
         {
           "n": 20,
@@ -700,12 +982,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a thumb pressed down onto a phone sensor",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "M05",
+          "subject": "a heavy steel safe door standing closed",
+          "source": "FOOTAGE",
+          "footage_query": "heavy steel safe door standing closed",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54365__warehouse_loading_dock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "M06",
+          "subject": "a small key held between two fingers",
+          "source": "FOOTAGE",
+          "footage_query": "small key held between two fingers",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38539__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.342
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M07",
+          "subject": "a hand turning the combination dial on a safe",
+          "source": "FOOTAGE",
+          "footage_query": "hand turning a combination dial safe",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15708__rotary_phone_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.341
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "a bank of small steel lockers",
+          "source": "FOOTAGE",
+          "footage_query": "bank of small steel lockers",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14908__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "M02",
+          "subject": "an open strongbox with an empty interior",
+          "source": "FOOTAGE",
+          "footage_query": "open strongbox with empty interior",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6483__us_constitution_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "a closed spiral notebook on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "closed spiral notebook on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15136__magnifying_glass_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U05",
+          "subject": "a thumb pressed flat on a bare tabletop",
+          "source": "FOOTAGE",
+          "footage_query": "thumb pressed flat on a tabletop",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-6039__molten_metal_pour.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I03",
+          "subject": "a padlock hasp with no lock fitted",
+          "source": "FOOTAGE",
+          "footage_query": "padlock hasp with no lock fitted",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12144__padlock_and_chain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "a bare hand resting on a windowsill",
+          "source": "FOOTAGE",
+          "footage_query": "bare hand resting on a windowsill",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51711__hourglass_sand_falling.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y01",
+          "subject": "a coat hanging over the back of a chair",
+          "source": "FOOTAGE",
+          "footage_query": "coat hanging over back of a chair",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6731__police_badge_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "R06",
+          "subject": "a raised open hand taking an oath",
+          "source": "FOOTAGE",
+          "footage_query": "raised open hand taking an oath",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2589__crowd_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R09",
+          "subject": "a phone passed from one hand to another",
+          "source": "FOOTAGE",
+          "footage_query": "phone passed from one hand to another",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8516__mobile_phone_map_location.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W08",
+          "subject": "a person standing facing a bare wall",
+          "source": "FOOTAGE",
+          "footage_query": "person standing facing a bare wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-49718__two_people_arguing_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I07",
+          "subject": "a wooden rail in front of an empty seat",
+          "source": "FOOTAGE",
+          "footage_query": "wooden rail in front of empty seat",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37540__train_platform_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I08",
+          "subject": "a hand pressing down a door handle",
+          "source": "FOOTAGE",
+          "footage_query": "hand pressing down a door handle",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51096__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.333
         }
       ],
       "loop": true,

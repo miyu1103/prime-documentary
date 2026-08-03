@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT141_TOTAL_SEC = 41.587;
+export const SHORT141_TOTAL_SEC = 61.752;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 33.11,
     "end": 40.587
+  },
+  {
+    "id": "L6",
+    "start": 40.807,
+    "end": 47.169
+  },
+  {
+    "id": "L7",
+    "start": 47.389,
+    "end": 53.891
+  },
+  {
+    "id": "L8",
+    "start": 54.111,
+    "end": 60.752
   }
 ];
 
@@ -135,28 +150,93 @@ export const SHORT141_CAPTIONS: ShortCaption[] = [
     "endSec": 32.89
   },
   {
-    "word": "The majority answered that keeping",
+    "word": "The Constitution",
     "startSec": 33.11,
-    "endSec": 35.128
+    "endSec": 34.41
+  },
+  {
+    "word": "in her reading",
+    "startSec": 34.41,
+    "endSec": 35.548
+  },
+  {
+    "word": "does not hand you a promise on",
+    "startSec": 35.548,
+    "endSec": 37.986
+  },
+  {
+    "word": "paper with no way to enforce it.",
+    "startSec": 37.986,
+    "endSec": 40.587
+  },
+  {
+    "word": "Dickerson",
+    "startSec": 40.807,
+    "endSec": 41.507
+  },
+  {
+    "word": "in the year 2000",
+    "startSec": 41.507,
+    "endSec": 42.476
+  },
+  {
+    "word": "called Miranda a constitutional rule",
+    "startSec": 42.476,
+    "endSec": 44.658
+  },
+  {
+    "word": "too deeply rooted for",
+    "startSec": 44.658,
+    "endSec": 45.93
+  },
+  {
+    "word": "Congress to sweep away.",
+    "startSec": 45.93,
+    "endSec": 47.169
+  },
+  {
+    "word": "Under all of that",
+    "startSec": 47.389,
+    "endSec": 48.494
+  },
+  {
+    "word": "doctrine sits one life.",
+    "startSec": 48.494,
+    "endSec": 49.99
+  },
+  {
+    "word": "The road paved with Section 1983",
+    "startSec": 49.99,
+    "endSec": 52.07
+  },
+  {
+    "word": "was closed to Terence Tekoh.",
+    "startSec": 52.07,
+    "endSec": 53.891
+  },
+  {
+    "word": "The majority answered that keeping",
+    "startSec": 54.111,
+    "endSec": 55.903
   },
   {
     "word": "your words out of your",
-    "startSec": 35.128,
-    "endSec": 36.433
+    "startSec": 55.903,
+    "endSec": 57.063
   },
   {
     "word": "own trial is remedy enough.",
-    "startSec": 36.433,
-    "endSec": 38.035
+    "startSec": 57.063,
+    "endSec": 58.486
   },
   {
     "word": "Is a right you cannot",
-    "startSec": 38.035,
-    "endSec": 39.281
+    "startSec": 58.486,
+    "endSec": 59.592
   },
   {
     "word": "enforce still a right?",
-    "startSec": 39.281,
-    "endSec": 40.587
+    "startSec": 59.592,
+    "endSec": 60.752
   }
 ];

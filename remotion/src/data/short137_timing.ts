@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT137_TOTAL_SEC = 39.218;
+export const SHORT137_TOTAL_SEC = 58.315;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.856,
     "end": 38.218
+  },
+  {
+    "id": "L6",
+    "start": 38.438,
+    "end": 44.15
+  },
+  {
+    "id": "L7",
+    "start": 44.37,
+    "end": 50.872
+  },
+  {
+    "id": "L8",
+    "start": 51.092,
+    "end": 57.315
   }
 ];
 
@@ -135,18 +150,68 @@ export const SHORT137_CAPTIONS: ShortCaption[] = [
     "endSec": 31.636
   },
   {
-    "word": "So did the officer really cross a",
+    "word": "The officer ordered him out of the",
     "startSec": 31.856,
-    "endSec": 33.747
+    "endSec": 34.314
+  },
+  {
+    "word": "car to wait by the road",
+    "startSec": 34.314,
+    "endSec": 35.977
+  },
+  {
+    "word": "then radioed for a second unit.",
+    "startSec": 35.977,
+    "endSec": 38.218
+  },
+  {
+    "word": "The majority did not set Rodriguez free.",
+    "startSec": 38.438,
+    "endSec": 40.746
+  },
+  {
+    "word": "It left a second door wide open",
+    "startSec": 40.746,
+    "endSec": 42.534
+  },
+  {
+    "word": "and sent the case back down.",
+    "startSec": 42.534,
+    "endSec": 44.15
+  },
+  {
+    "word": "If the officer had a real",
+    "startSec": 44.37,
+    "endSec": 45.702
+  },
+  {
+    "word": "specific reason to suspect something more",
+    "startSec": 45.702,
+    "endSec": 47.887
+  },
+  {
+    "word": "holding him for the dog",
+    "startSec": 47.887,
+    "endSec": 49.113
+  },
+  {
+    "word": "might have been perfectly lawful.",
+    "startSec": 49.113,
+    "endSec": 50.872
+  },
+  {
+    "word": "So did the officer really cross a",
+    "startSec": 51.092,
+    "endSec": 52.942
   },
   {
     "word": "constitutional line by pausing to wait for",
-    "startSec": 33.747,
-    "endSec": 36.155
+    "startSec": 52.942,
+    "endSec": 55.297
   },
   {
     "word": "backup at midnight on an empty road?",
-    "startSec": 36.155,
-    "endSec": 38.218
+    "startSec": 55.297,
+    "endSec": 57.315
   }
 ];

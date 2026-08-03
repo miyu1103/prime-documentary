@@ -155,13 +155,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "close up of pen writing paper",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0449__office_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36131__quill_and_ink_pot.mp4",
           "bound_title": "an empty office",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4105,
           "motion": 5.08,
-          "luma": 139.3
+          "luma": 139.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
         },
         {
           "n": 4,
@@ -232,13 +234,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "typewriter keys close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3139__old_keys_on_table.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53379__stack_of_letters_with_ribbon.mp4",
           "bound_title": "person using typewriter",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6235,
           "motion": 20.433,
-          "luma": 100.9
+          "luma": 100.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
         },
         {
           "n": 11,
@@ -249,13 +253,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "dust motes in light beam",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0138__abstract_dark_background.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29386__abstract_dark_background.mp4",
           "bound_title": "defocused urban night traffic bokeh lights",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5445,
           "motion": 4.0,
-          "luma": 33.9
+          "luma": 33.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
         },
         {
           "n": 12,
@@ -296,13 +302,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "reel to reel tape recorder spinning",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0907__stock_market_screen.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52716__film_reel_projector.mp4",
           "bound_title": "dynamic cryptocurrency market analysis",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4371,
           "motion": 4.3,
-          "luma": 37.3
+          "luma": 37.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
         },
         {
           "n": 16,
@@ -343,13 +351,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty auditorium seats rows",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10148__old_library_archive.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29221__single_chair_empty_room.mp4",
           "bound_title": "a person browsing through card catalogs",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3874,
           "motion": 16.081,
-          "luma": 96.3
+          "luma": 96.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
         },
         {
           "n": 20,
@@ -410,6 +420,198 @@
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I08",
+          "subject": "telephone wires strung between poles against a pale sky",
+          "source": "FOOTAGE",
+          "footage_query": "telephone wires between poles against sky",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23328__barbed_wire_fence_sky.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "two hands splicing a pair of wires with pliers",
+          "source": "FOOTAGE",
+          "footage_query": "hands splicing wires with pliers",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51095__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "R09",
+          "subject": "a vintage car parked at the kerb of a quiet street",
+          "source": "FOOTAGE",
+          "footage_query": "vintage car parked on a street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22900__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "the wooden porch and front steps of a house seen from the pavement",
+          "source": "FOOTAGE",
+          "footage_query": "wooden porch and front steps house",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22906__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "M02",
+          "subject": "wooden crates of glass bottles stacked in a store room",
+          "source": "FOOTAGE",
+          "footage_query": "wooden crates of glass bottles stacked",
+          "prompt": null
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "a marble corridor running toward one bright window",
+          "source": "FOOTAGE",
+          "footage_query": "marble corridor toward a bright window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-17487__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U05",
+          "subject": "the gears and escapement of a clock turning behind glass",
+          "source": "FOOTAGE",
+          "footage_query": "clock gears and escapement turning",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10009__balance_scale_brass.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "W08",
+          "subject": "a front doorstep and its worn threshold strip seen from above",
+          "source": "FOOTAGE",
+          "footage_query": "front doorstep threshold from above",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8131__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "a white picket fence running along the edge of a lawn",
+          "source": "FOOTAGE",
+          "footage_query": "white picket fence along a lawn",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22100__white_picket_fence.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "a hand pulling a heavy machine lever on a factory floor",
+          "source": "FOOTAGE",
+          "footage_query": "hand pulling a machine lever",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-6025__molten_metal_pour.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.339
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "a person seen from behind walking away along a bright pavement",
+          "source": "FOOTAGE",
+          "footage_query": "person walking away along a pavement",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-50672__military_dog_tags.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "a hand cupping a telephone handset close to the mouth",
+          "source": "FOOTAGE",
+          "footage_query": "hand holding a telephone handset close",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36968__rotary_phone_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "M06",
+          "subject": "a coin dropping into the slot of a payphone",
+          "source": "FOOTAGE",
+          "footage_query": "coin dropping into a payphone slot",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38941__atm_machine_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.34
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "W07",
+          "subject": "a pair of worn shoes standing at the edge of a kerb",
+          "source": "FOOTAGE",
+          "footage_query": "shoes at the edge of a kerb",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20512__long_shadow_of_a_person.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "M07",
+          "subject": "a pair of headphones lying on a bare table",
+          "source": "FOOTAGE",
+          "footage_query": "headphones lying on a bare table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7726__empty_office_cubicles.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
         }
       ],
       "loop": true,
@@ -425,16 +627,16 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The test that decides whether police need a warrant to track you is not fixed. It moves. And it has been moving.",
+          "delivery": "intense",
           "source_lines": [
             "By anchoring privacy to what society thinks is reasonable, the Court made the Fourth Amendment flexible enough to follow new technology."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Harlan's phrase, a reasonable expectation of privacy, was only one justice's gloss in 1967. Courts reached for it until it became the standard.",
+          "delivery": "building",
           "source_lines": [
             "Harlan's phrase — a \"reasonable expectation of privacy\" — was only one justice's gloss in 1967.",
             "But in the years that followed, courts reached for it again and again, until it became the standard test for what even counts as a search"
@@ -442,24 +644,49 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "When judges today ask whether police need a warrant to track your phone, read your messages, or follow your car, they are asking Harlan's question.",
+          "delivery": "building",
           "source_lines": [
             "When judges today ask whether the police need a warrant to track your phone, read your messages, or follow your car, they are usually asking Harlan's question"
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "But reasonable is a moving target. The more ordinary it becomes to be watched, the weaker anyone's claim that a given expectation still holds.",
+          "delivery": "intense",
           "source_lines": [
             "But \"reasonable\" is a moving target. The more ordinary it becomes to be watched, the weaker anyone's claim that a given expectation still holds"
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Harlan's test has two parts. A person must genuinely expect privacy, and that expectation must be one society is prepared to accept as reasonable.",
+          "delivery": "building",
+          "source_lines": [
+            "First, a person has to genuinely expect privacy.",
+            "Second, that expectation has to be one society is prepared to accept as reasonable"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The Court also drew a limit: what a person knowingly exposes to the public, even at home, is not protected.",
+          "delivery": "building",
+          "source_lines": [
+            "What a person knowingly exposes to the public, even in his own home, is not protected."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Katz freed privacy from the walls, and tied it instead to what we are still willing to expect.",
+          "delivery": "building",
+          "source_lines": [
+            "Katz freed privacy from the walls — and tied it, instead, to what we are still willing to expect"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "So the privacy you have tomorrow depends on how much watching we get used to today. Which way is that going?",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -483,13 +710,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "surveillance camera on wall",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0293__concrete_wall_texture_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15805__security_monitors_wall.mp4",
           "bound_title": "shadow a man over a wall",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4321,
           "motion": 14.486,
-          "luma": 67.1
+          "luma": 67.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
         },
         {
           "n": 3,
@@ -550,13 +779,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands turning pages book",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3899__law_library_books.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6748__police_badge_close_up.mp4",
           "bound_title": "a woman getting book from the library",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3947,
           "motion": 5.719,
-          "luma": 61.3
+          "luma": 61.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         },
         {
           "n": 9,
@@ -587,7 +818,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courtroom interior benches",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30241__circuit_board_macro.mp4",
           "bound_title": "close up shot of a smartphone interior",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -624,13 +854,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "car headlights wet road night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2066__laboratory_glassware.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9441__rain_street_reflection_night.mp4",
           "bound_title": "pharmaceutical experiment carried out in laboratory",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.411,
           "motion": 15.972,
-          "luma": 57.3
+          "luma": 57.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
         },
         {
           "n": 15,
@@ -715,12 +947,218 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a camera housing turning on a bare wall",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U02",
+          "subject": "a hand pushing a front door shut from inside",
+          "source": "FOOTAGE",
+          "footage_query": "hand pushing a front door shut",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30676__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "two hands shielding a phone screen from view",
+          "source": "FOOTAGE",
+          "footage_query": "hands shielding a phone screen",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30861__smartphone_in_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U13",
+          "subject": "pedestrians crossing a wide street in daylight",
+          "source": "FOOTAGE",
+          "footage_query": "pedestrians crossing a wide street daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15267__long_shadow_of_a_person.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "W11",
+          "subject": "two empty chairs facing each other in a bare room",
+          "source": "FOOTAGE",
+          "footage_query": "two empty chairs facing each other",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2293__empty_stadium_seats.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "daylight through a window falling across an empty desk",
+          "source": "FOOTAGE",
+          "footage_query": "daylight through window onto empty desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29219__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "a front door standing wide open onto daylight",
+          "source": "FOOTAGE",
+          "footage_query": "front door standing wide open daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51256__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "I02",
+          "subject": "a row of house windows along a residential street",
+          "source": "FOOTAGE",
+          "footage_query": "row of house windows residential street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22895__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y03",
+          "subject": "a back garden seen over a low fence",
+          "source": "FOOTAGE",
+          "footage_query": "back garden seen over a low fence",
+          "prompt": null
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I03",
+          "subject": "a mailbox standing at the end of a driveway",
+          "source": "FOOTAGE",
+          "footage_query": "mailbox at the end of a driveway",
+          "prompt": null
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U05",
+          "subject": "laundry hanging on a line in a back garden",
+          "source": "FOOTAGE",
+          "footage_query": "laundry hanging on a line outdoors",
+          "prompt": null
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I04",
+          "subject": "an empty glass telephone booth on a pavement",
+          "source": "FOOTAGE",
+          "footage_query": "glass telephone booth on a pavement",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38939__atm_machine_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R12",
+          "subject": "a hand hanging a telephone handset back on its hook",
+          "source": "FOOTAGE",
+          "footage_query": "hand hanging up a telephone handset",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53884__retro_diner_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W10",
+          "subject": "a doorway with no door left in a bare wall",
+          "source": "FOOTAGE",
+          "footage_query": "doorway with no door in a wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21011__abandoned_factory_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y05",
+          "subject": "a hand holding a phone to an ear outdoors",
+          "source": "FOOTAGE",
+          "footage_query": "hand holding a phone to an ear",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32930__mobile_phone_map_location.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "a single empty chair beside a bright window",
+          "source": "FOOTAGE",
+          "footage_query": "single empty chair beside a window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41643__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
         }
       ],
       "loop": true,

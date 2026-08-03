@@ -99,6 +99,35 @@
         },
         {
           "id": "L5",
+          "delivery": "building",
+          "text": "On paper the foundation helped disadvantaged children. Prosecutors called it a laundry dressing bribes as good deeds.",
+          "source_lines": [
+            "On paper, the foundation was a charity, built to help disadvantaged kids reach for college.",
+            "In reality, prosecutors said, it was a laundry — a way to take a bribe and dress it up as a good deed."
+          ]
+        },
+        {
+          "id": "L6",
+          "delivery": "building",
+          "text": "Singer ran it nationwide for most of a decade, with his own staff, paperwork, and prices.",
+          "source_lines": [
+            "And this was not a handful of quiet favors.",
+            "It was a business — nationwide, with a client list, running for the better part of a decade.",
+            "He had built an institution of his own — a shadow admissions office, operating in parallel to the real ones, with its own staff, its own paperwork, its own price structure."
+          ]
+        },
+        {
+          "id": "L7",
+          "delivery": "building",
+          "text": "Most of what he sold was technically legal. Real counseling, real essay help. That business was the camouflage.",
+          "source_lines": [
+            "Most of what Singer sold was, technically, legal.",
+            "Real counseling. Real essay help.",
+            "That ordinary business was the camouflage, and it is exactly why the fraud survived so long."
+          ]
+        },
+        {
+          "id": "L8",
           "delivery": "calm",
           "text": "The man who built it was ordered to pay the I.R.S. more than ten million dollars. The exact taxes his clients had dodged. So what did a bribe look like?",
           "source_lines": [
@@ -126,13 +155,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "envelope letter",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24687__credit_card_macro_chip.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32025__us_constitution_document.mp4",
           "bound_title": "white envelope of credit card letter",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4092,
           "motion": 19.585,
-          "luma": 152.6
+          "luma": 152.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         },
         {
           "n": 3,
@@ -223,13 +254,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "conference table chairs",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6099__old_keys_on_table.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14686__witness_stand_empty.mp4",
           "bound_title": "a vintage typewriter sits on a table with a book",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3874,
           "motion": 16.201,
-          "luma": 157.6
+          "luma": 157.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
         },
         {
           "n": 12,
@@ -250,13 +283,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stack of documents desk",
-          "bound_file": "D:\\pd-archive\\ocean_nature\\coverr__2381__view-of-the-ocean-from-a-cruise-ship.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-19098__stacked_legal_documents.mp4",
           "bound_title": "view of the ocean from a cruise ship",
           "bound_license": "free_commercial",
           "bound_source": "coverr",
           "centre_energy": 0.3865,
           "motion": 15.625,
-          "luma": 68.9
+          "luma": 68.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
         },
         {
           "n": 14,
@@ -307,13 +342,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "rowing boat river",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21160__foggy_harbor_dawn.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-2448__leaves_blowing_in_wind.mp4",
           "bound_title": "drone footage of a river under a gloomy sky",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4277,
           "motion": 1.192,
-          "luma": 134.3
+          "luma": 134.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
         },
         {
           "n": 19,
@@ -358,12 +395,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: a blank cheque torn from the book",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: a blank cheque torn from the book",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: a blank cheque torn from the book",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I06",
+          "subject": "an empty classroom of small desks",
+          "source": "FOOTAGE",
+          "footage_query": "empty classroom with rows of small desks",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-47425__teacher_in_empty_classroom.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "M02",
+          "subject": "coins dropping into a glass collection jar",
+          "source": "FOOTAGE",
+          "footage_query": "coins dropping into a glass collection jar",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24876__physical_bitcoin_coin.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M04",
+          "subject": "washing machines turning in a laundromat",
+          "source": "FOOTAGE",
+          "footage_query": "row of washing machines spinning in a laundromat",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2364__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "cardboard donation boxes stacked in a hall",
+          "source": "FOOTAGE",
+          "footage_query": "stacked cardboard donation boxes in a hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8915__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "hands folding donated clothes into a box",
+          "source": "FOOTAGE",
+          "footage_query": "hands folding clothes into a cardboard box",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33088__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U15",
+          "subject": "a paper road map spread across a table",
+          "source": "FOOTAGE",
+          "footage_query": "paper road map spread out on a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14316__wax_seal_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "office shelves filled with ring binders",
+          "source": "FOOTAGE",
+          "footage_query": "office shelves filled with ring binders",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1834__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "an open plan office of empty desks",
+          "source": "FOOTAGE",
+          "footage_query": "empty open plan office with rows of desks",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3777__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "R11",
+          "subject": "a desk telephone and headset on an office desk",
+          "source": "FOOTAGE",
+          "footage_query": "office desk telephone and headset",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7726__empty_office_cubicles.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.342
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I05",
+          "subject": "a printer feeding blank pages into a tray",
+          "source": "FOOTAGE",
+          "footage_query": "office printer feeding blank pages into a tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10320__newspaper_printing_press.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W11",
+          "subject": "two chairs facing each other by a window",
+          "source": "FOOTAGE",
+          "footage_query": "two chairs facing each other by a window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29224__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U01",
+          "subject": "a desk lamp switched on over an empty desk",
+          "source": "FOOTAGE",
+          "footage_query": "desk lamp switched on over an empty desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51998__vintage_globe_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U12",
+          "subject": "a school hallway lined with metal lockers",
+          "source": "FOOTAGE",
+          "footage_query": "school hallway lined with metal lockers",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2362__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.326
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y01",
+          "subject": "a backpack hanging on the back of a chair",
+          "source": "FOOTAGE",
+          "footage_query": "backpack hanging on the back of a chair",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14902__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "M06",
+          "subject": "a pen and a blank notepad beside a coffee cup",
+          "source": "FOOTAGE",
+          "footage_query": "pen and blank notepad beside a coffee cup",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16905__newspaper_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
         }
       ]
     },
@@ -413,6 +665,33 @@
         },
         {
           "id": "L5",
+          "delivery": "building",
+          "text": "For roughly eight years that side door stood open, walking children past the admissions officers and into schools they had not earned.",
+          "source_lines": [
+            "For roughly eight years, that side door stood open.",
+            "Wealthy parents paid Singer about twenty-five million dollars to walk their children through it — past the admissions officers, past the other applicants, straight into schools they had no business getting into."
+          ]
+        },
+        {
+          "id": "L6",
+          "delivery": "building",
+          "text": "Most of us are raised on one promise. Work hard, earn it, and the door opens. For some families it had a price.",
+          "source_lines": [
+            "Most of us are raised on a single promise: work hard, earn it, and the door will open.",
+            "Operation Varsity Blues showed millions of people, in black and white, that for some families the door had a price, the line was shorter, and the promise they had built their lives around carried an asterisk they were never shown."
+          ]
+        },
+        {
+          "id": "L7",
+          "delivery": "building",
+          "text": "Picture the student who never saw the side door, never knew it was there, and simply received a thinner envelope.",
+          "source_lines": [
+            "Picture that student. They never saw the side door. Never even knew it was there.",
+            "They just received a thinner envelope, and carried away a quiet, lifelong suspicion that they simply had not been good enough — when the truth was that someone with more money had been standing, invisibly, exactly where they were supposed to be."
+          ]
+        },
+        {
+          "id": "L8",
           "delivery": "calm",
           "text": "And they will almost never know it. There is no letter that says you were displaced by a bribe. There is only the number of seats.",
           "source_lines": [
@@ -441,13 +720,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty wooden chair",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10458__vintage_typewriter.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29209__single_chair_empty_room.mp4",
           "bound_title": "vintage typewriter typing on wooden desk top view",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5403,
           "motion": 0.907,
-          "luma": 66.0
+          "luma": 66.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
         },
         {
           "n": 3,
@@ -488,13 +769,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "locked door padlock",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4810__front_door_house.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8125__bank_vault_door.mp4",
           "bound_title": "ornate bronze door handle close up",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4955,
           "motion": 3.918,
-          "luma": 46.9
+          "luma": 46.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
         },
         {
           "n": 7,
@@ -525,13 +808,14 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "staircase dark",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5385__school_hallway_empty.mp4",
           "bound_title": "a dark hallway with a light on the ceiling",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.7897,
           "motion": 1.966,
-          "luma": 45.6
+          "luma": 45.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
         },
         {
           "n": 10,
@@ -552,13 +836,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty stadium seats",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5314__empty_stadium_seats.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2283__empty_stadium_seats.mp4",
           "bound_title": "empty seats in a stadium with a red carpet",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4287,
           "motion": 12.795,
-          "luma": 50.6
+          "luma": 50.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
         },
         {
           "n": 12,
@@ -579,13 +865,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "rowing boat river",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21166__foggy_harbor_dawn.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31943__judge_gavel_wooden.mp4",
           "bound_title": "a foggy morning at the river",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4204,
           "motion": 1.242,
-          "luma": 126.5
+          "luma": 126.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
         },
         {
           "n": 14,
@@ -636,13 +924,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "envelope letter",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53397__stack_of_letters_with_ribbon.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53406__stack_of_letters_with_ribbon.mp4",
           "bound_title": "a pink envelope and happy birthday letters on a table",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5567,
           "motion": 3.153,
-          "luma": 199.3
+          "luma": 199.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
         },
         {
           "n": 19,
@@ -687,12 +977,218 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: a brass tap over a dry basin, closed",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: a brass tap over a dry basin, closed",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: a brass tap over a dry basin, closed",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U02",
+          "subject": "an iron gate standing open in a stone wall",
+          "source": "FOOTAGE",
+          "footage_query": "an open iron gate in a stone wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62993__prison_gate_closing.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "stone steps leading up to a college building",
+          "source": "FOOTAGE",
+          "footage_query": "stone steps leading up to a college building",
+          "prompt": null
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "W09",
+          "subject": "wall calendar pages lifting",
+          "source": "FOOTAGE",
+          "footage_query": "wall calendar pages lifting in a breeze",
+          "prompt": null
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "I02",
+          "subject": "an empty reception counter in a lobby",
+          "source": "FOOTAGE",
+          "footage_query": "empty reception counter in a building lobby",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20317__courtroom_empty_wide.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U13",
+          "subject": "students walking across a campus lawn",
+          "source": "FOOTAGE",
+          "footage_query": "students walking across a campus lawn",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5454__bank_building_columns.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U10",
+          "subject": "hands writing in a notebook at a kitchen table",
+          "source": "FOOTAGE",
+          "footage_query": "hands writing in a notebook at a kitchen table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14456__quill_and_ink_pot.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "morning sunlight across an empty kitchen table",
+          "source": "FOOTAGE",
+          "footage_query": "morning sunlight across an empty kitchen table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1383__warm_window_light_rays.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M02",
+          "subject": "hands counting banknotes onto a counter",
+          "source": "FOOTAGE",
+          "footage_query": "hands counting banknotes onto a counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4126__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "a hand pressing a rubber stamp onto a page",
+          "source": "FOOTAGE",
+          "footage_query": "a hand pressing a rubber stamp onto a page",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14318__wax_seal_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "worn work boots left on a doorstep",
+          "source": "FOOTAGE",
+          "footage_query": "worn work boots on a doorstep",
+          "prompt": null
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "M04",
+          "subject": "a closed folder lying on a wooden desk",
+          "source": "FOOTAGE",
+          "footage_query": "closed folder lying on a wooden desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15141__magnifying_glass_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "W03",
+          "subject": "a small desk under a bedroom window",
+          "source": "FOOTAGE",
+          "footage_query": "small desk under a bedroom window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52718__film_reel_projector.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y03",
+          "subject": "a bicycle leaning against a wire fence",
+          "source": "FOOTAGE",
+          "footage_query": "bicycle leaning against a wire fence",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23319__barbed_wire_fence_sky.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R06",
+          "subject": "a library reading room of long wooden tables",
+          "source": "FOOTAGE",
+          "footage_query": "library reading room with long wooden tables",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14602__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I08",
+          "subject": "a quiet suburban street of houses in daylight",
+          "source": "FOOTAGE",
+          "footage_query": "quiet suburban street of houses in daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38804__wall_street_sign.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
         }
       ]
     }

@@ -69,16 +69,16 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "One justice voted against letting police stop a truck because of who owns it. Her warning was blunt.",
+          "delivery": "intense",
           "source_lines": [
             "One justice rejected the whole thing."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Justice Sonia Sotomayor was the lone dissenter. In dissent she wrote that the Court ignores key foundations of our reasonable suspicion jurisprudence.",
+          "delivery": "building",
           "source_lines": [
             "Justice Sonia Sotomayor was the lone dissenter, and her warning was blunt.",
             "Speaking in dissent, she wrote that in upholding routine stops of vehicles whose owners have revoked licenses, the Court ignores key foundations of our reasonable suspicion jurisprudence and impermissibly and unnecessarily reduces the State's burden of proof."
@@ -86,8 +86,8 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "And impermissibly and unnecessarily reduces the State's burden of proof. Her deeper worry was about effort.",
+          "delivery": "building",
           "source_lines": [
             "and impermissibly and unnecessarily reduces the State's burden of proof",
             "Her deeper worry was about effort."
@@ -95,16 +95,45 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "The consequence, she wrote, is to absolve officers from any responsibility to investigate the identity of a driver where feasible. In her view the deputy could often just look.",
+          "delivery": "intense",
           "source_lines": [
             "The consequence of the majority's approach, she wrote, is to absolve officers from any responsibility to investigate the identity of a driver where feasible. In her view the deputy could often just look, and should have to."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The deputy had never seen the driver's face. He did not pull up alongside to look, or confirm anything about the driver.",
+          "delivery": "building",
+          "source_lines": [
+            "The deputy has never seen the driver's face.",
+            "He did not pull up alongside to look.",
+            "He did not confirm the driver's age or anything else."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Reasonable suspicion is not a hunch and not proof. It needs specific facts, not a feeling, pointing toward something wrong.",
+          "delivery": "building",
+          "source_lines": [
+            "Reasonable suspicion is not a hunch, and it is not proof.",
+            "An officer needs specific facts, not a feeling, that point toward something wrong."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The Court leaned on plain common sense. Reasonable suspicion never requires certainty, and the owner's revoked license was reason enough to look closer.",
+          "delivery": "building",
+          "source_lines": [
+            "The Court leaned on plain common sense.",
+            "Reasonable suspicion never requires certainty, and the law did not pretend it was.",
+            "It requires a sensible, fact based reason to look closer, and the revoked license of the owner, the Court said, was exactly that kind of reason."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "In dissent she warned the majority had paved the road to finding reasonable suspicion based on nothing more than a demographic profile. One vote against eight.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -128,13 +157,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "police car headlights night road",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1590__highway_night_long_exposure.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11869__test_tubes_rack_lab.mp4",
           "bound_title": "drone shot of the highway at night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.7464,
           "motion": 5.423,
-          "luma": 39.3
+          "luma": 39.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
         },
         {
           "n": 3,
@@ -185,13 +216,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stone foundation wall texture",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3771__office_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-5475__sandstorm_wall_approaching.mp4",
           "bound_title": "a hallway with two lights and a wall",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4825,
           "motion": 5.389,
-          "luma": 30.7
+          "luma": 30.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
         },
         {
           "n": 8,
@@ -202,13 +235,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courthouse columns from below",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6987__evidence_bag.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31120__bank_building_columns.mp4",
           "bound_title": "journalist reporting from crime scene",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4045,
           "motion": 19.687,
-          "luma": 69.4
+          "luma": 69.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
         },
         {
           "n": 9,
@@ -353,12 +388,224 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a blank plate caught in a headlight beam",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a car windscreen streaked with rain",
+          "source": "FOOTAGE",
+          "footage_query": "car windscreen streaked with rain",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-3679__headlights_in_rain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "two vehicles travelling side by side on a highway",
+          "source": "FOOTAGE",
+          "footage_query": "two vehicles side by side on highway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-4404__heavy_rain_backlit.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U13",
+          "subject": "the rear of a pickup truck seen from behind",
+          "source": "FOOTAGE",
+          "footage_query": "rear of a pickup truck from behind",
+          "prompt": null
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "W08",
+          "subject": "an empty seat seen through a rear car window",
+          "source": "FOOTAGE",
+          "footage_query": "empty seat through a rear car window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-49315__crowd_of_commuters_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "a hand resting on a gear lever",
+          "source": "FOOTAGE",
+          "footage_query": "hand resting on a gear lever",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53892__retro_diner_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.327
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W05",
+          "subject": "calipers lying on a workbench",
+          "source": "FOOTAGE",
+          "footage_query": "calipers lying on a workbench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53387__stack_of_letters_with_ribbon.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U05",
+          "subject": "a needle on a plain gauge dial",
+          "source": "FOOTAGE",
+          "footage_query": "needle on a plain gauge dial",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33523__clock_ticking_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "a rubber stamp lying beside an ink pad",
+          "source": "FOOTAGE",
+          "footage_query": "rubber stamp lying beside an ink pad",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14458__quill_and_ink_pot.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U15",
+          "subject": "a pin pushed into a paper map",
+          "source": "FOOTAGE",
+          "footage_query": "pin pushed into a paper map",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51876__brass_compass_on_map.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "an arrow painted on a road surface",
+          "source": "FOOTAGE",
+          "footage_query": "arrow painted on a road surface",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15269__long_shadow_of_a_person.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "M06",
+          "subject": "an open empty wallet on a table",
+          "source": "FOOTAGE",
+          "footage_query": "open empty wallet on a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0829__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R12",
+          "subject": "folded glasses lying on a dashboard",
+          "source": "FOOTAGE",
+          "footage_query": "folded glasses lying on a dashboard",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-34786__shattered_mirror.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "binoculars resting on a car seat",
+          "source": "FOOTAGE",
+          "footage_query": "binoculars resting on a car seat",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5192__modern_medical_lab.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I04",
+          "subject": "a blank sign plate on a road post",
+          "source": "FOOTAGE",
+          "footage_query": "blank sign plate on a road post",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38796__wall_street_sign.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y05",
+          "subject": "a folded map on a car bonnet",
+          "source": "FOOTAGE",
+          "footage_query": "folded map on a car bonnet",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8508__mobile_phone_map_location.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
         }
       ],
       "loop": true,
@@ -374,40 +621,68 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The Supreme Court let a deputy stop a truck without ever looking at the driver. One word in the record is why.",
+          "delivery": "intense",
           "source_lines": [
             "When an officer lacks information negating an inference that the owner is driving the vehicle, the stop is reasonable."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Justice Elena Kagan wrote separately, joined by Justice Ruth Bader Ginsburg, to underline how little it takes to break the officer's inference.",
+          "delivery": "building",
           "source_lines": [
             "Justice Elena Kagan wrote separately to underline exactly that limit, joined by Justice Ruth Bader Ginsburg. Her point was how little it takes to break the inference."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "What made this stop reasonable, she stressed, was that the license was revoked. In Kansas that signals a driver who keeps ignoring the law.",
+          "delivery": "building",
           "source_lines": [
             "What made this stop reasonable, she stressed, was that Glover's license was revoked, which in Kansas signals a driver who keeps ignoring the law."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "If the license had merely been suspended, over something like an unpaid fee, the case for assuming he was still behind the wheel would be far weaker.",
+          "delivery": "intense",
           "source_lines": [
             "If his license had merely been suspended, over something like an unpaid fee, the case for assuming he was still behind the wheel would be far weaker."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "A deputy typed the truck's plate into his dashboard laptop, and the screen came back with a revoked license.",
+          "delivery": "building",
+          "source_lines": [
+            "The deputy types the truck's license plate into the laptop bolted to his dashboard.",
+            "And Charles Glover's driver's license has been revoked."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "A revoked license in Kansas follows a serious or repeated pattern. It is the state saying you cannot drive at all.",
+          "delivery": "building",
+          "source_lines": [
+            "In Kansas, a revoked license is not a small thing.",
+            "It is what happens after a serious or repeated pattern of breaking driving laws.",
+            "It is the state saying you have lost the privilege to drive at all."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Kansas argued the likeliest driver is the owner. Glover's side called that a stereotype about a name, not a fact.",
+          "delivery": "building",
+          "source_lines": [
+            "Common sense, the state argued, tells you the person most likely to be driving a truck is the person who owns it.",
+            "Glover's side said that is not evidence, it is a stereotype."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Revoked. That was the word. And a single glance showing the driver is not the owner is enough to wipe the suspicion away.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -431,13 +706,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands holding card macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6466__us_constitution_document.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41175__courtroom_gavel_block_macro.mp4",
           "bound_title": "a woman using a calculator and card terminal",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4164,
           "motion": 10.616,
-          "luma": 110.5
+          "luma": 110.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
         },
         {
           "n": 3,
@@ -488,13 +765,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "pen underlining paper macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6480__us_constitution_document.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53407__stack_of_letters_with_ribbon.mp4",
           "bound_title": "man holding a paper while working with his laptop",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4031,
           "motion": 25.659,
-          "luma": 93.2
+          "luma": 93.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
         },
         {
           "n": 8,
@@ -515,13 +794,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "chain links macro close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3135__old_keys_on_table.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12145__padlock_and_chain.mp4",
           "bound_title": "close up shot of typewriter typing",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5269,
           "motion": 3.341,
-          "luma": 83.6
+          "luma": 83.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
         },
         {
           "n": 10,
@@ -656,12 +937,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a blank licence card on a steel counter",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R11",
+          "subject": "fingers typing on a laptop inside a car",
+          "source": "FOOTAGE",
+          "footage_query": "fingers typing on a laptop in a car",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12499__wooden_desk_lamp_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U08",
+          "subject": "a blank glowing laptop screen in a car",
+          "source": "FOOTAGE",
+          "footage_query": "blank glowing laptop screen in a car",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-3009__police_strobe_red_and_blue.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "R10",
+          "subject": "a blank number plate on a truck bumper",
+          "source": "FOOTAGE",
+          "footage_query": "blank number plate on a truck bumper",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22479__moving_truck_loading.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "M07",
+          "subject": "a laptop mounted on a car dashboard",
+          "source": "FOOTAGE",
+          "footage_query": "laptop mounted on a car dashboard",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62945__ankle_monitor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "a car window rolling down in daylight",
+          "source": "FOOTAGE",
+          "footage_query": "car window rolling down in daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10602__rain_on_glass_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W09",
+          "subject": "a wiper blade sweeping across a windscreen",
+          "source": "FOOTAGE",
+          "footage_query": "wiper blade sweeping across a windscreen",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-3685__headlights_in_rain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.33
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W04",
+          "subject": "a row of cars in an impound yard",
+          "source": "FOOTAGE",
+          "footage_query": "row of cars in an impound yard",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54381__warehouse_loading_dock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "R02",
+          "subject": "a clamp fitted to a car wheel",
+          "source": "FOOTAGE",
+          "footage_query": "clamp fitted to a car wheel",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10470__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "a car door standing open in a car park",
+          "source": "FOOTAGE",
+          "footage_query": "car door standing open in car park",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21504__empty_parking_garage.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "car keys hanging on a hook board",
+          "source": "FOOTAGE",
+          "footage_query": "car keys hanging on a hook board",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51098__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U10",
+          "subject": "a hand pulling a truck door handle",
+          "source": "FOOTAGE",
+          "footage_query": "hand pulling a truck door handle",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51085__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "a figure seen through a rain blurred car window",
+          "source": "FOOTAGE",
+          "footage_query": "figure through a rain blurred car window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-4396__heavy_rain_backlit.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W08",
+          "subject": "a row of identical parked pickup trucks",
+          "source": "FOOTAGE",
+          "footage_query": "row of identical parked pickup trucks",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62555__police_lineup_wall.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "a bank of identical mailboxes with blank labels",
+          "source": "FOOTAGE",
+          "footage_query": "bank of identical mailboxes blank labels",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10145__old_library_archive.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U11",
+          "subject": "driving gloves lying on a car seat",
+          "source": "FOOTAGE",
+          "footage_query": "driving gloves lying on a car seat",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7005__evidence_bag.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
         }
       ],
       "loop": true,

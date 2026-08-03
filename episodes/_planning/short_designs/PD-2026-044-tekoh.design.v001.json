@@ -78,32 +78,32 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The Supreme Court took away the right to sue over a skipped Miranda warning using one metaphor.",
+          "delivery": "intense",
           "source_lines": [
             "Writing for six of the nine justices, Justice Samuel Alito drew a distinction that is careful, technical, and enormous for you."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Writing for six justices, Justice Samuel Alito called the warnings prophylactic rules. Picture a protective fence built around a deeper right.",
+          "delivery": "building",
           "source_lines": [
             "Miranda's warnings, he wrote, are what lawyers call prophylactic rules. Picture a protective fence built around a deeper right, the Fifth Amendment promise that no one can force you to incriminate yourself."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "The Fifth Amendment promise that no one can force you to incriminate yourself. The warnings guard that inner right. But they are not the right. A fence, not the ground it stands on.",
+          "delivery": "building",
           "source_lines": [
             "The warnings guard that inner right. But the warnings themselves, the majority reasoned, are not the constitutional right. A fence. Not the ground it stands on."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "From that one distinction the rest follows. Failing to give the warnings is not, on its own, a violation of the Constitution. So there is nothing to pay for.",
+          "delivery": "intense",
           "source_lines": [
             "From that one distinction, the rest follows.",
             "then failing to give them is not, on its own, a violation of the Constitution",
@@ -112,8 +112,35 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The majority insisted the warning still carries weight. A criminal court can still bar the prosecution from those words.",
+          "delivery": "building",
+          "source_lines": [
+            "The majority insisted the warning still carries real weight.",
+            "Skip it, and a criminal court can still refuse to let the prosecution build its case on your unwarned words."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "That protection at trial, Justice Alito wrote, is remedy enough. The door the Court closed was the later lawsuit.",
+          "delivery": "building",
+          "source_lines": [
+            "That protection at trial, Justice Alito wrote, is remedy enough.",
+            "What the Court closed was only the second door, the one that opens after the trial is over: the lawsuit that turns a missing warning into a bill the officer has to pay."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "A jury can clear you, and no civil court will make the officer pay for the warning he skipped.",
+          "delivery": "building",
+          "source_lines": [
+            "And even if a jury clears you, the way one cleared Terence Tekoh, this decision means you cannot later walk into a civil court and ask the officer to pay for the warning he skipped.",
+            "The safeguard you always assumed had a price tag behind it does not."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Three justices refused to accept that. A right nobody can enforce, they warned in dissent, slowly stops feeling like a right at all.",
+          "delivery": "calm",
           "source_lines": [
             "Three justices refused to accept that."
           ]
@@ -139,13 +166,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "police badge close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1899__police_car_lights_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6724__police_badge_close_up.mp4",
           "bound_title": "police officers getting into police car",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3956,
           "motion": 27.443,
-          "luma": 80.5
+          "luma": 80.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.326
         },
         {
           "n": 3,
@@ -156,13 +185,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "police interrogation room",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6728__police_badge_close_up.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29216__single_chair_empty_room.mp4",
           "bound_title": "video of a police car",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3877,
           "motion": 10.866,
-          "luma": 68.0
+          "luma": 68.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.33
         },
         {
           "n": 4,
@@ -173,13 +204,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courthouse columns low angle",
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0563__neon_glow_abstract.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2435__bank_building_columns.mp4",
           "bound_title": "abstract glowing neon lines motion",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4667,
           "motion": 29.588,
-          "luma": 28.4
+          "luma": 28.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
         },
         {
           "n": 5,
@@ -210,13 +243,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "chain link fence shadow",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5527__spotlight_on_dark_stage.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6611__supreme_court_building.mp4",
           "bound_title": "a dancing woman s shadow on a wall",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.429,
           "motion": 3.177,
-          "luma": 71.6
+          "luma": 71.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
         },
         {
           "n": 8,
@@ -247,13 +282,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hospital corridor at night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1434__rain_on_window_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2367__school_hallway_empty.mp4",
           "bound_title": "cars passing through flood water on the side street caused by excessive rainfall",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4458,
           "motion": 6.518,
-          "luma": 32.0
+          "luma": 32.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.34
         },
         {
           "n": 11,
@@ -294,13 +331,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "dry soil ground macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6975__evidence_bag.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3651__concrete_wall_texture_dark.mp4",
           "bound_title": "technician lifting keys from ground",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3884,
           "motion": 7.42,
-          "luma": 70.7
+          "luma": 70.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
         },
         {
           "n": 15,
@@ -385,12 +424,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: a blank card slipped back unread into a pocket",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R11",
+          "subject": "a blank white card held between two fingers",
+          "source": "FOOTAGE",
+          "footage_query": "blank white card held in fingers",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53386__stack_of_letters_with_ribbon.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "two hands folded together on a table",
+          "source": "FOOTAGE",
+          "footage_query": "two hands folded together on a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-40180__elderly_hands_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U02",
+          "subject": "a heavy wooden door swinging closed",
+          "source": "FOOTAGE",
+          "footage_query": "heavy wooden door swinging closed",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-5462__sandstorm_wall_approaching.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "M07",
+          "subject": "a long boardroom table with empty chairs",
+          "source": "FOOTAGE",
+          "footage_query": "long boardroom table with empty chairs",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3772__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R04",
+          "subject": "a microphone standing on a bare table",
+          "source": "FOOTAGE",
+          "footage_query": "microphone standing on a bare table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15593__vintage_radio_microphone.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W10",
+          "subject": "a heavy gate swinging shut across a driveway",
+          "source": "FOOTAGE",
+          "footage_query": "heavy gate swinging shut driveway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29456__moody_atmosphere_fog.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "I02",
+          "subject": "a corridor with a closed door at the end",
+          "source": "FOOTAGE",
+          "footage_query": "corridor with a closed door at the end",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16522__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.327
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "I05",
+          "subject": "a trolley of stacked boxes in a corridor",
+          "source": "FOOTAGE",
+          "footage_query": "trolley of stacked boxes in a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0600__law_library_books.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "double doors with a push bar held closed",
+          "source": "FOOTAGE",
+          "footage_query": "double doors with a push bar closed",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21333__train_platform_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "a wall of empty wooden pigeonholes",
+          "source": "FOOTAGE",
+          "footage_query": "wall of empty wooden pigeonholes",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12616__gold_bars_stacked.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W08",
+          "subject": "a row of empty chairs behind a wooden rail",
+          "source": "FOOTAGE",
+          "footage_query": "row of empty chairs behind a wooden rail",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46769__empty_chair_in_spotlight_grief.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "M03",
+          "subject": "an empty payment counter window",
+          "source": "FOOTAGE",
+          "footage_query": "empty payment counter window seen inside",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24507__atm_machine_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "M05",
+          "subject": "a hand turning out an empty pocket",
+          "source": "FOOTAGE",
+          "footage_query": "hand turning out an empty pocket",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46649__person_reading_a_letter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "a lone figure standing in a wide hall",
+          "source": "FOOTAGE",
+          "footage_query": "lone figure standing in a wide hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-34473__hospital_corridor_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.33
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "a person walking out through glass doors",
+          "source": "FOOTAGE",
+          "footage_query": "person walking out through glass doors",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23561__one_way_mirror_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
         }
       ],
       "loop": true,
@@ -406,32 +660,32 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Three justices said the ruling that closed the Miranda lawsuit was quietly hollowing out the warning itself.",
+          "delivery": "intense",
           "source_lines": [
             "Three justices refused to accept that."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "In dissent, Justice Elena Kagan, joined by Justices Breyer and Sotomayor, went back to an overlooked ruling from the year 2000.",
+          "delivery": "building",
           "source_lines": [
             "In dissent, Justice Elena Kagan, joined by Justices Breyer and Sotomayor, went straight back to that overlooked ruling from the year 2000."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "If Miranda truly is a constitutional rule, she argued, then it hands you a real and enforceable right. The power to keep an unwarned confession out of your own trial.",
+          "delivery": "building",
           "source_lines": [
             "If Miranda truly is a constitutional rule, she argued, then it hands you a real and enforceable right: the power to keep an unwarned confession out of your own trial."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "A right that no remedy can back up, she warned, slowly stops feeling like a right at all. Some people whose rights are genuinely broken will be left with nothing to collect.",
+          "delivery": "intense",
           "source_lines": [
             "A right that no remedy can back up, she warned, slowly stops feeling like a right at all.",
             "Take away the ability to sue, and some people whose rights are genuinely broken will be left standing there with nothing to collect, and no one to answer for it."
@@ -439,8 +693,34 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The Constitution, in her reading, does not hand you a promise on paper with no way to enforce it.",
+          "delivery": "building",
+          "source_lines": [
+            "The Constitution, in her reading, does not hand you a promise on paper and then leave you with no way to enforce the most personal one you own."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Dickerson, in the year 2000, called Miranda a constitutional rule, too deeply rooted for Congress to sweep away.",
+          "delivery": "building",
+          "source_lines": [
+            "In the year 2000, in a ruling called Dickerson, the Court confirmed that Miranda was not a suggestion or a courtesy.",
+            "It was a constitutional rule, rooted so deeply that Congress could not pass a law to sweep it away."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Under all of that doctrine sits one life. The road paved with Section 1983 was closed to Terence Tekoh.",
+          "delivery": "building",
+          "source_lines": [
+            "Under all of this doctrine there is one life.",
+            "And after the highest court in the country had finished speaking, that particular road, the one paved with Section 1983, was closed to him."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "The majority answered that keeping your words out of your own trial is remedy enough. Is a right you cannot enforce still a right?",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -464,13 +744,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "marble courthouse steps",
-          "bound_file": "D:\\pd-archive\\world_cities\\pixabay_extra__v_34309__france-paris-lion-statue-center-city-marble-metal-old-antiqu.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6239__courthouse_steps.mp4",
           "bound_title": "france, paris, lion, statue, center, city, marble, metal, old, antique, europe, ",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.4237,
           "motion": 5.85,
-          "luma": 135.7
+          "luma": 135.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
         },
         {
           "n": 3,
@@ -511,13 +793,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hand pulling book from shelf",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3900__law_library_books.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22608__law_books_spines_macro.mp4",
           "bound_title": "woman searching in a book",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4698,
           "motion": 12.196,
-          "luma": 117.1
+          "luma": 117.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.345
         },
         {
           "n": 7,
@@ -538,13 +822,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "sunrise through office window",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4668__rain_on_window_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38051__moving_truck_loading.mp4",
           "bound_title": "rainy night window with bokeh lights",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3958,
           "motion": 3.885,
-          "luma": 80.4
+          "luma": 80.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
         },
         {
           "n": 9,
@@ -595,13 +881,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courtroom interior empty",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2366__school_hallway_empty.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14510__courtroom_empty_wide.mp4",
           "bound_title": "interior of abandoned school in chernobyl",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5861,
           "motion": 14.758,
-          "luma": 56.5
+          "luma": 56.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
         },
         {
           "n": 14,
@@ -612,13 +900,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "paper being torn macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4594__newspaper_macro.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33919__vintage_typewriter.mp4",
           "bound_title": "man reading a newspaper",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4279,
           "motion": 8.96,
-          "luma": 136.8
+          "luma": 136.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.356
         },
         {
           "n": 15,
@@ -669,13 +959,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "open empty hands macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3208__handshake_business.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-6230__dandelion_seeds_wind.mp4",
           "bound_title": "group of people shaking hands",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4507,
           "motion": 40.105,
-          "luma": 110.8
+          "luma": 110.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
         },
         {
           "n": 20,
@@ -710,12 +1002,221 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to plate 01: three empty chairs at the end of a dark bench",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "M04",
+          "subject": "a blank sheet of paper held in two hands",
+          "source": "FOOTAGE",
+          "footage_query": "blank sheet of paper held in two hands",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36373__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.325
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "an empty metal tray on a bare counter",
+          "source": "FOOTAGE",
+          "footage_query": "empty metal tray on a bare counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14683__witness_stand_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M03",
+          "subject": "a service bell on an empty counter",
+          "source": "FOOTAGE",
+          "footage_query": "service bell on an empty counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39164__physical_bitcoin_coin.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "a locked glass door of a bright lobby",
+          "source": "FOOTAGE",
+          "footage_query": "locked glass door of a bright lobby",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26011__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W07",
+          "subject": "a pen lying beside a blank notepad",
+          "source": "FOOTAGE",
+          "footage_query": "pen lying beside a blank notepad",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22616__law_books_spines_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I08",
+          "subject": "thick tree roots gripping the ground",
+          "source": "FOOTAGE",
+          "footage_query": "thick tree roots gripping the ground",
+          "prompt": null
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y03",
+          "subject": "a large tree standing alone in a field",
+          "source": "FOOTAGE",
+          "footage_query": "large tree standing alone in a field",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-35744__lone_tree_in_field.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.344
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "old brickwork at the base of a wall",
+          "source": "FOOTAGE",
+          "footage_query": "old brickwork at the base of a wall",
+          "prompt": null
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "a hand sweeping dust from a stone step",
+          "source": "FOOTAGE",
+          "footage_query": "hand sweeping dust from a stone step",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26793__elderly_hands_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.341
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U15",
+          "subject": "a heavy stone block resting on grass",
+          "source": "FOOTAGE",
+          "footage_query": "heavy stone block resting on grass",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32756__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "a single figure walking along an empty pavement",
+          "source": "FOOTAGE",
+          "footage_query": "single figure walking along an empty pavement",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-50672__military_dog_tags.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U04",
+          "subject": "a barrier closed across a road lane",
+          "source": "FOOTAGE",
+          "footage_query": "barrier closed across a road lane",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56922__highway_underpass.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W03",
+          "subject": "a made hospital bed in an empty room",
+          "source": "FOOTAGE",
+          "footage_query": "made hospital bed in an empty room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26017__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R09",
+          "subject": "an empty road ending at a wall",
+          "source": "FOOTAGE",
+          "footage_query": "empty road ending at a wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24223__wall_street_sign.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "M07",
+          "subject": "a folded uniform lying on a bed",
+          "source": "FOOTAGE",
+          "footage_query": "folded uniform lying on a bed",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1822__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
         }
       ],
       "loop": true,

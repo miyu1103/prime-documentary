@@ -49,9 +49,17 @@ UNITS = {
     "playlistItems.insert": 50,
 }
 
-# Google resets quota at midnight Pacific. PST is UTC-8, PDT is UTC-7; using -8 makes the reset
-# look one hour later than it is, which errs toward spending less. That is the safe direction.
-PT = timezone(timedelta(hours=-8))
+# Google resets quota at midnight Pacific, which means the date must follow US daylight saving.
+# A fixed -8 was tried first as "the safe direction": it is not. In August, Pacific is -7, so a
+# fixed -8 kept the ledger on the PREVIOUS day for an hour after the real reset — long enough for
+# assert_budget to refuse uploads against a quota that had already refilled. Use the real zone.
+try:
+    from zoneinfo import ZoneInfo
+    PT = ZoneInfo("America/Los_Angeles")
+except Exception:                       # no tzdata: fall back, and say so rather than be silently wrong
+    PT = timezone(timedelta(hours=-7))
+    print("[yt_quota] zoneinfo unavailable; assuming Pacific is UTC-7 (correct Mar-Nov only)",
+          file=sys.stderr)
 
 
 def _today() -> str:

@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT136_TOTAL_SEC = 36.896;
+export const SHORT136_TOTAL_SEC = 54.832;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 30.509,
     "end": 35.896
+  },
+  {
+    "id": "L6",
+    "start": 36.116,
+    "end": 42.432
+  },
+  {
+    "id": "L7",
+    "start": 42.652,
+    "end": 48.55
+  },
+  {
+    "id": "L8",
+    "start": 48.77,
+    "end": 53.832
   }
 ];
 
@@ -130,23 +145,88 @@ export const SHORT136_CAPTIONS: ShortCaption[] = [
     "endSec": 30.289
   },
   {
-    "word": "The question was never how",
+    "word": "A traffic stop is a seizure.",
     "startSec": 30.509,
-    "endSec": 31.91
+    "endSec": 31.959
+  },
+  {
+    "word": "For those minutes the",
+    "startSec": 31.959,
+    "endSec": 33.047
+  },
+  {
+    "word": "government is holding you",
+    "startSec": 33.047,
+    "endSec": 34.342
+  },
+  {
+    "word": "justified only by its purpose.",
+    "startSec": 34.342,
+    "endSec": 35.896
+  },
+  {
+    "word": "A stop may last as",
+    "startSec": 36.116,
+    "endSec": 37.209
+  },
+  {
+    "word": "long as its job takes",
+    "startSec": 37.209,
+    "endSec": 38.484
+  },
+  {
+    "word": "and no longer.",
+    "startSec": 38.484,
+    "endSec": 39.335
+  },
+  {
+    "word": "When the traffic tasks are finished",
+    "startSec": 39.335,
+    "endSec": 41.46
+  },
+  {
+    "word": "the clock stops.",
+    "startSec": 41.46,
+    "endSec": 42.432
+  },
+  {
+    "word": "Sniffing for drugs has nothing",
+    "startSec": 42.652,
+    "endSec": 44.387
+  },
+  {
+    "word": "to do with keeping a",
+    "startSec": 44.387,
+    "endSec": 45.543
+  },
+  {
+    "word": "car safe on the road.",
+    "startSec": 45.543,
+    "endSec": 46.757
+  },
+  {
+    "word": "It is ordinary crime detection.",
+    "startSec": 46.757,
+    "endSec": 48.55
+  },
+  {
+    "word": "The question was never how",
+    "startSec": 48.77,
+    "endSec": 50.086
   },
   {
     "word": "long the delay ran.",
-    "startSec": 31.91,
-    "endSec": 32.933
+    "startSec": 50.086,
+    "endSec": 51.048
   },
   {
     "word": "It was whether he had any",
-    "startSec": 32.933,
-    "endSec": 34.28
+    "startSec": 51.048,
+    "endSec": 52.313
   },
   {
     "word": "authority to impose it at all.",
-    "startSec": 34.28,
-    "endSec": 35.896
+    "startSec": 52.313,
+    "endSec": 53.832
   }
 ];

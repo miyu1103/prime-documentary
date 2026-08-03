@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT139_TOTAL_SEC = 38.196;
+export const SHORT139_TOTAL_SEC = 59.753;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.066,
     "end": 37.196
+  },
+  {
+    "id": "L6",
+    "start": 37.416,
+    "end": 44.614
+  },
+  {
+    "id": "L7",
+    "start": 44.834,
+    "end": 52.589
+  },
+  {
+    "id": "L8",
+    "start": 52.809,
+    "end": 58.753
   }
 ];
 
@@ -125,23 +140,93 @@ export const SHORT139_CAPTIONS: ShortCaption[] = [
     "endSec": 30.846
   },
   {
-    "word": "So what protects you is not",
+    "word": "The courts' picture is a safe.",
     "startSec": 31.066,
-    "endSec": 32.738
+    "endSec": 32.817
+  },
+  {
+    "word": "They can force you to",
+    "startSec": 32.817,
+    "endSec": 34.043
+  },
+  {
+    "word": "hand over the key",
+    "startSec": 34.043,
+    "endSec": 35.036
+  },
+  {
+    "word": "but not to tell them the combination.",
+    "startSec": 35.036,
+    "endSec": 37.196
+  },
+  {
+    "word": "A passcode is a combination",
+    "startSec": 37.416,
+    "endSec": 39.285
+  },
+  {
+    "word": "a string of numbers that exists",
+    "startSec": 39.285,
+    "endSec": 41.43
+  },
+  {
+    "word": "nowhere but inside your memory.",
+    "startSec": 41.43,
+    "endSec": 43.576
+  },
+  {
+    "word": "A thumb is not.",
+    "startSec": 43.576,
+    "endSec": 44.614
+  },
+  {
+    "word": "In 2025 the D.C.",
+    "startSec": 44.834,
+    "endSec": 45.868
+  },
+  {
+    "word": "Circuit ruled the opposite:",
+    "startSec": 45.868,
+    "endSec": 47.613
+  },
+  {
+    "word": "obeying that command admits",
+    "startSec": 47.613,
+    "endSec": 49.358
+  },
+  {
+    "word": "the phone is yours",
+    "startSec": 49.358,
+    "endSec": 50.521
+  },
+  {
+    "word": "and that you know",
+    "startSec": 50.521,
+    "endSec": 51.62
+  },
+  {
+    "word": "how to open it.",
+    "startSec": 51.62,
+    "endSec": 52.589
+  },
+  {
+    "word": "So what protects you is not",
+    "startSec": 52.809,
+    "endSec": 54.43
   },
   {
     "word": "the lock on the phone.",
-    "startSec": 32.738,
-    "endSec": 34.1
+    "startSec": 54.43,
+    "endSec": 55.751
   },
   {
     "word": "It is whether the choice to",
-    "startSec": 34.1,
-    "endSec": 35.772
+    "startSec": 55.751,
+    "endSec": 57.372
   },
   {
     "word": "open it was ever yours.",
-    "startSec": 35.772,
-    "endSec": 37.196
+    "startSec": 57.372,
+    "endSec": 58.753
   }
 ];

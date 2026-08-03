@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT140_TOTAL_SEC = 41.307;
+export const SHORT140_TOTAL_SEC = 61.472;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 32.134,
     "end": 40.307
+  },
+  {
+    "id": "L6",
+    "start": 40.527,
+    "end": 46.704
+  },
+  {
+    "id": "L7",
+    "start": 46.924,
+    "end": 51.614
+  },
+  {
+    "id": "L8",
+    "start": 51.834,
+    "end": 60.472
   }
 ];
 
@@ -130,28 +145,88 @@ export const SHORT140_CAPTIONS: ShortCaption[] = [
     "endSec": 31.914
   },
   {
-    "word": "Three justices refused to accept that.",
+    "word": "The majority insisted the",
     "startSec": 32.134,
-    "endSec": 34.599
+    "endSec": 33.88
+  },
+  {
+    "word": "warning still carries weight.",
+    "startSec": 33.88,
+    "endSec": 35.906
+  },
+  {
+    "word": "A criminal court can still bar",
+    "startSec": 35.906,
+    "endSec": 38.002
+  },
+  {
+    "word": "the prosecution from those words.",
+    "startSec": 38.002,
+    "endSec": 40.307
+  },
+  {
+    "word": "That protection at trial",
+    "startSec": 40.527,
+    "endSec": 41.912
+  },
+  {
+    "word": "Justice Alito wrote",
+    "startSec": 41.912,
+    "endSec": 43.009
+  },
+  {
+    "word": "is remedy enough.",
+    "startSec": 43.009,
+    "endSec": 43.991
+  },
+  {
+    "word": "The door the Court closed",
+    "startSec": 43.991,
+    "endSec": 45.434
+  },
+  {
+    "word": "was the later lawsuit.",
+    "startSec": 45.434,
+    "endSec": 46.704
+  },
+  {
+    "word": "A jury can clear you",
+    "startSec": 46.924,
+    "endSec": 47.955
+  },
+  {
+    "word": "and no civil court will make the",
+    "startSec": 47.955,
+    "endSec": 49.604
+  },
+  {
+    "word": "officer pay for the warning he skipped.",
+    "startSec": 49.604,
+    "endSec": 51.614
+  },
+  {
+    "word": "Three justices refused to accept that.",
+    "startSec": 51.834,
+    "endSec": 54.439
   },
   {
     "word": "A right nobody can enforce",
-    "startSec": 34.599,
-    "endSec": 36.285
+    "startSec": 54.439,
+    "endSec": 56.222
   },
   {
     "word": "they warned in dissent",
-    "startSec": 36.285,
-    "endSec": 37.712
+    "startSec": 56.222,
+    "endSec": 57.73
   },
   {
     "word": "slowly stops feeling like",
-    "startSec": 37.712,
-    "endSec": 39.334
+    "startSec": 57.73,
+    "endSec": 59.444
   },
   {
     "word": "a right at all.",
-    "startSec": 39.334,
-    "endSec": 40.307
+    "startSec": 59.444,
+    "endSec": 60.472
   }
 ];

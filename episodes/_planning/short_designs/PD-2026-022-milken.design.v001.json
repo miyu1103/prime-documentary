@@ -96,6 +96,31 @@
         },
         {
           "id": "L5",
+          "delivery": "building",
+          "text": "Over the decade the high-yield market swelled past a hundred billion dollars, and Milken was its undisputed king.",
+          "source_lines": [
+            "Over the decade it swelled from a forgotten corner of finance into a market worth well over a hundred billion dollars, and Milken was its undisputed king."
+          ]
+        },
+        {
+          "id": "L6",
+          "delivery": "building",
+          "text": "To raise serious money outside the old club, one road ran through Beverly Hills, through him.",
+          "source_lines": [
+            "If you wanted to raise serious money outside the old club, there was one road, and it ran through Beverly Hills, through him."
+          ]
+        },
+        {
+          "id": "L7",
+          "delivery": "building",
+          "text": "Chief executives who had felt untouchable watched their own stock the way you watch a storm rolling in.",
+          "source_lines": [
+            "For generations, the largest corporations had seemed untouchable, too vast and too expensive for anyone to seriously threaten.",
+            "Chief executives watched their own stock the way you watch a storm rolling in."
+          ]
+        },
+        {
+          "id": "L8",
           "delivery": "calm",
           "text": "Supporters called it shaking the dust off lazy, bloated companies. Critics saw raids that buried companies under debt and cost ordinary people their jobs. Either way, the old rule was gone.",
           "source_lines": [
@@ -124,13 +149,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stack of documents desk",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0066__dark_cinematic_background.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63076__old_ledger_book.mp4",
           "bound_title": "time lapse video of the sky",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4172,
           "motion": 6.087,
-          "luma": 62.5
+          "luma": 62.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
         },
         {
           "n": 3,
@@ -151,13 +178,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "conference table chairs",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10007__balance_scale_brass.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29696__office_interior_dark.mp4",
           "bound_title": "scale of justice in the table of a lawyer",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3866,
           "motion": 6.163,
-          "luma": 77.0
+          "luma": 77.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
         },
         {
           "n": 5,
@@ -188,13 +217,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "rotary telephone",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15714__rotary_phone_close_up.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15707__rotary_phone_close_up.mp4",
           "bound_title": "a woman making a call on a rotary telephone",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3985,
           "motion": 20.715,
-          "luma": 99.2
+          "luma": 99.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
         },
         {
           "n": 8,
@@ -255,13 +286,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "bank vault door",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4127__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8119__bank_vault_door.mp4",
           "bound_title": "a person counting bank notes",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3845,
           "motion": 35.013,
-          "luma": 134.0
+          "luma": 134.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
         },
         {
           "n": 14,
@@ -282,13 +315,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "banknotes stack",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7990__cash_stacks_money.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-28818__stack_of_hundred_dollar_bills.mp4",
           "bound_title": "close up of euro banknotes",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5412,
           "motion": 7.685,
-          "luma": 39.1
+          "luma": 39.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
         },
         {
           "n": 16,
@@ -339,13 +374,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "skyscraper night lights",
-          "bound_file": "D:\\pd-archive\\government_buildings\\pixabay_extra__v_94__city-nights-party-view-lights-skyscrapers-high-rises-houses.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29632__blurred_city_night_bokeh.mp4",
           "bound_title": "city, nights, party, view, lights, skyscrapers, high-rises, houses, buildings",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.3847,
           "motion": 1.313,
-          "luma": 50.5
+          "luma": 50.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
         },
         {
           "n": 21,
@@ -370,12 +407,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: one blank sheet alone on a vast desk",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: one blank sheet alone on a vast desk",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: one blank sheet alone on a vast desk",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "M01",
+          "subject": "sunrise over a city of tall towers",
+          "source": "FOOTAGE",
+          "footage_query": "sunrise over a city of tall towers",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30469__city_skyline_dusk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.33
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "M04",
+          "subject": "ticker tape spilling from a machine",
+          "source": "FOOTAGE",
+          "footage_query": "ticker tape spilling from a machine",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10333__newspaper_printing_press.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M06",
+          "subject": "stacks of coins rising in a row",
+          "source": "FOOTAGE",
+          "footage_query": "stacks of coins rising in a row",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8009__cash_stacks_money.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U08",
+          "subject": "rows of leather ledgers on a wooden shelf",
+          "source": "FOOTAGE",
+          "footage_query": "rows of leather ledgers on a wooden shelf",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22609__law_books_spines_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U12",
+          "subject": "a revolving glass door in a building lobby",
+          "source": "FOOTAGE",
+          "footage_query": "revolving glass door in a building lobby",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31064__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "a marble lobby corridor with brass fittings",
+          "source": "FOOTAGE",
+          "footage_query": "marble lobby corridor with brass fittings",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21662__elevator_interior_steel.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U13",
+          "subject": "palm trees along a wide sunny boulevard",
+          "source": "FOOTAGE",
+          "footage_query": "palm trees along a wide sunny boulevard",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-27128__school_bus_yellow.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "R05",
+          "subject": "stone columns at a bank entrance",
+          "source": "FOOTAGE",
+          "footage_query": "stone columns at a bank entrance",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3357__judge_gavel_wooden.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U10",
+          "subject": "two hands shaking across a desk",
+          "source": "FOOTAGE",
+          "footage_query": "two hands shaking across a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6283__judge_gavel_wooden.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I02",
+          "subject": "a corridor of closed office doors",
+          "source": "FOOTAGE",
+          "footage_query": "corridor of closed office doors",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11520__hospital_corridor_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U11",
+          "subject": "rain running down an office window in daylight",
+          "source": "FOOTAGE",
+          "footage_query": "rain running down an office window in daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1596__neon_sign_reflection_wet.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y03",
+          "subject": "storm clouds gathering over a city",
+          "source": "FOOTAGE",
+          "footage_query": "storm clouds gathering over a city",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2826__stormy_sky_time_lapse.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "a lone silhouette against a bright window",
+          "source": "FOOTAGE",
+          "footage_query": "a lone silhouette against a bright window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46107__person_crying_silhouette_window.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I07",
+          "subject": "tiered seating in an empty auditorium",
+          "source": "FOOTAGE",
+          "footage_query": "tiered seating in an empty auditorium",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2288__empty_stadium_seats.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U01",
+          "subject": "a hand pressing keys on a desk calculator",
+          "source": "FOOTAGE",
+          "footage_query": "a hand pressing keys on a desk calculator",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63213__tax_forms_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.345
         }
       ]
     },

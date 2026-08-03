@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT138_TOTAL_SEC = 38.893;
+export const SHORT138_TOTAL_SEC = 59.058;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 29.998,
     "end": 37.893
+  },
+  {
+    "id": "L6",
+    "start": 38.113,
+    "end": 43.686
+  },
+  {
+    "id": "L7",
+    "start": 43.906,
+    "end": 49.85
+  },
+  {
+    "id": "L8",
+    "start": 50.07,
+    "end": 58.058
   }
 ];
 
@@ -130,23 +145,78 @@ export const SHORT138_CAPTIONS: ShortCaption[] = [
     "endSec": 29.778
   },
   {
-    "word": "That ruling binds almost no one yet.",
+    "word": "Inside the country the rule looks settled.",
     "startSec": 29.998,
-    "endSec": 32.088
+    "endSec": 32.761
+  },
+  {
+    "word": "Riley versus California 2014:",
+    "startSec": 32.761,
+    "endSec": 34.669
+  },
+  {
+    "word": "police generally need a warrant",
+    "startSec": 34.669,
+    "endSec": 36.709
+  },
+  {
+    "word": "to search a phone.",
+    "startSec": 36.709,
+    "endSec": 37.893
+  },
+  {
+    "word": "A phone holds every place you have",
+    "startSec": 38.113,
+    "endSec": 40.242
+  },
+  {
+    "word": "been and every message you have sent",
+    "startSec": 40.242,
+    "endSec": 42.496
+  },
+  {
+    "word": "down to the minute.",
+    "startSec": 42.496,
+    "endSec": 43.686
+  },
+  {
+    "word": "But one judge is",
+    "startSec": 43.906,
+    "endSec": 44.929
+  },
+  {
+    "word": "not a national rule.",
+    "startSec": 44.929,
+    "endSec": 46.207
+  },
+  {
+    "word": "There is no national rule",
+    "startSec": 46.207,
+    "endSec": 47.805
+  },
+  {
+    "word": "only a patchwork of courthouses.",
+    "startSec": 47.805,
+    "endSec": 49.85
+  },
+  {
+    "word": "That ruling binds almost no one yet.",
+    "startSec": 50.07,
+    "endSec": 52.184
   },
   {
     "word": "So the same device that is a",
-    "startSec": 32.088,
-    "endSec": 33.713
+    "startSec": 52.184,
+    "endSec": 53.829
   },
   {
     "word": "fortress in your living room can become",
-    "startSec": 33.713,
-    "endSec": 35.977
+    "startSec": 53.829,
+    "endSec": 56.12
   },
   {
     "word": "an open book the moment you land.",
-    "startSec": 35.977,
-    "endSec": 37.893
+    "startSec": 56.12,
+    "endSec": 58.058
   }
 ];

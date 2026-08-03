@@ -56,8 +56,8 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Two thirty-two in the afternoon. The machines that promised to always be there did the one thing no one had planned for. They stepped back. All at once.",
+          "delivery": "intense",
           "source_lines": [
             "The machines that promised to always be there do the one thing no one had planned for, the one thing the whole system quietly depended on them never doing.",
             "They step back. All at once."
@@ -65,32 +65,58 @@
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "To protect themselves from a falling market, they simply stopped buying. And the floor disappeared.",
+          "delivery": "building",
           "source_lines": [
             "To protect themselves from a falling market, they simply stop buying. And the floor disappears."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "All over the country, ordinary people had left standing instructions with their brokers. Sell automatically if my stock falls below this price. Small, sensible safety nets meant to protect them.",
+          "delivery": "building",
           "source_lines": [
             "All over the country, ordinary people have left standing instructions with their brokers — sell, automatically, if my stock ever falls below this price — small, sensible safety nets meant to protect them."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "In those thirty-six minutes those instructions fired, all at once, selling people's savings into the very bottom of the crash, at the worst prices of the day.",
+          "delivery": "intense",
           "source_lines": [
             "In those thirty-six minutes, as prices fall through the floor, those instructions fire, all at once, selling people's savings into the very bottom of the crash, at the worst prices of the day."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "With almost no machines left to catch them, shares in giant, healthy companies plunged toward nothing.",
+          "delivery": "building",
+          "source_lines": [
+            "With almost no machines left willing to catch them, shares in giant, healthy, world-famous companies plunge toward nothing."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "For a few seconds a share of a company worth tens of billions traded at a single penny.",
+          "delivery": "building",
+          "source_lines": [
+            "For a few astonishing seconds, you could have bought a share of a company worth tens of billions of dollars for a single penny",
+            "Shares in some of the most famous companies in America trade, for a heartbeat, at a single penny."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Nearly a thousand points and around a trillion dollars in value were gone, until circuit breakers fired and the market climbed back.",
+          "delivery": "building",
+          "source_lines": [
+            "Nearly a thousand points, gone. Around a trillion dollars in value, gone.",
+            "Automatic circuit breakers, built for exactly this, begin to fire; exchanges pause; the panic runs out of room."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "The safety net people set up to protect their savings is what sold those savings at the bottom. It took thirty-six minutes.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -134,13 +160,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "trading floor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4205__stock_market_screen.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12694__trading_floor_screens.mp4",
           "bound_title": "analyzing stock market trading charts",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5456,
           "motion": 2.537,
-          "luma": 168.8
+          "luma": 168.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
         },
         {
           "n": 5,
@@ -301,13 +329,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "envelope letter",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24687__credit_card_macro_chip.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53406__stack_of_letters_with_ribbon.mp4",
           "bound_title": "white envelope of credit card letter",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4092,
           "motion": 19.585,
-          "luma": 152.6
+          "luma": 152.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
         },
         {
           "n": 21,
@@ -332,12 +362,224 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: a blank clock face, second hand mid-sweep",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: a blank clock face, second hand mid-sweep",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: a blank clock face, second hand mid-sweep",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "M07",
+          "subject": "the boardroom of a giant company",
+          "source": "FOOTAGE",
+          "footage_query": "an empty boardroom with a long table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3772__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "I08",
+          "subject": "a corporate tower against the sky",
+          "source": "FOOTAGE",
+          "footage_query": "a tall glass office tower against the sky",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56554__skyscraper_looking_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U09",
+          "subject": "one person on a wide empty floor",
+          "source": "FOOTAGE",
+          "footage_query": "one person crossing a wide empty floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11393__airport_terminal_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "M05",
+          "subject": "the vault door in the bank lobby",
+          "source": "FOOTAGE",
+          "footage_query": "a round steel vault door in a wall",
+          "prompt": null
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "I05",
+          "subject": "the aisle of pallets the company actually is",
+          "source": "FOOTAGE",
+          "footage_query": "an aisle of pallets stacked in a warehouse",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2220__warehouse_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "M02",
+          "subject": "one coin on a counter",
+          "source": "FOOTAGE",
+          "footage_query": "a single coin lying on a wooden counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24891__physical_bitcoin_coin.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U13",
+          "subject": "a worker crossing a factory floor",
+          "source": "FOOTAGE",
+          "footage_query": "a worker walking across a factory floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31002__warehouse_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.335
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M06",
+          "subject": "a till drawer with a few coins in it",
+          "source": "FOOTAGE",
+          "footage_query": "an open till drawer with a few coins",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23896__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U02",
+          "subject": "a lift door closing on an empty lobby",
+          "source": "FOOTAGE",
+          "footage_query": "a lift door closing in an empty lobby",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21662__elevator_interior_steel.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y04",
+          "subject": "the glass case with nothing in it",
+          "source": "FOOTAGE",
+          "footage_query": "an empty glass display case",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11862__test_tubes_rack_lab.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I04",
+          "subject": "the shutter going back up",
+          "source": "FOOTAGE",
+          "footage_query": "a metal shutter rolling up over a shopfront",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1387__warm_window_light_rays.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R05",
+          "subject": "the exchange building from the pavement",
+          "source": "FOOTAGE",
+          "footage_query": "the stone facade of an exchange building",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4818__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "I01",
+          "subject": "the breaker thrown",
+          "source": "FOOTAGE",
+          "footage_query": "a hand throwing a large electrical lever switch",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51096__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U12",
+          "subject": "the climb back",
+          "source": "FOOTAGE",
+          "footage_query": "an escalator rising toward a bright ceiling",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37684__elevator_interior_steel.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.325
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U15",
+          "subject": "the country the loss ran across",
+          "source": "FOOTAGE",
+          "footage_query": "a wall map of the united states",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52112__world_map_with_pins_and_string.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
         }
       ],
       "loop": true,
@@ -353,40 +595,68 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "When investigators finally opened up his life, the fortune was mostly gone. Not spent. Taken.",
+          "delivery": "intense",
           "source_lines": [
             "is mostly gone. Not spent. Taken."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "He had handed his money, almost all of it, to con men, to bogus investments, to an outright fraud built to part trusting people from their savings.",
+          "delivery": "building",
           "source_lines": [
             "he had handed his money, almost all of it, to con men, to bogus investments, to an outright fraud built to part trusting people from their savings"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "People who knew him describe a man trading the way a child plays an arcade game. Locked onto the screen, hour after hour, trying to beat his own high score.",
+          "delivery": "building",
           "source_lines": [
             "People who knew him describe a man trading the way a child plays an arcade game — locked onto the screen, hour after hour, trying, over and over, to beat his own high score."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "He had beaten the high score, over and over, for years, and kept almost none of the points.",
+          "delivery": "intense",
           "source_lines": [
             "He had beaten the high score, over and over, for years — and kept almost none of the points."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "He never bought the cars, the house, or the life the money could buy. A specialist later testified this was not an act.",
+          "delivery": "building",
+          "source_lines": [
+            "He doesn't buy the cars, or the house, or the life the money could have bought.",
+            "An autism specialist will later put it as plainly as it can be put: his lack of any interest in the money he earned was not an act."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "In 2015 he was arrested at his parents' house in London. He fought the extradition for months and he lost.",
+          "delivery": "building",
+          "source_lines": [
+            "He is arrested at his parents' house in London",
+            "He fights the extradition for months. He loses."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "In 2016 he pleaded guilty to wire fraud and to spoofing, and agreed to hand back nearly thirteen million dollars.",
+          "delivery": "building",
+          "source_lines": [
+            "In twenty-sixteen, he pleads guilty.",
+            "one count of wire fraud, and one count of spoofing.",
+            "He agrees to hand back nearly thirteen million dollars."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "At his sentencing the prosecutors did something rare. They asked the judge for mercy. He served no further prison at all, a single year at home.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -410,13 +680,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "safe deposit box",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6980__evidence_bag.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10147__old_library_archive.mp4",
           "bound_title": "technician looking at tool box",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4327,
           "motion": 16.002,
-          "luma": 63.1
+          "luma": 63.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
         },
         {
           "n": 3,
@@ -437,13 +709,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "bedroom window",
-          "bound_file": "D:\\pd-archive\\prison_jail\\pixabay_extra__v_261682__ai-generated-room-cozy-bedroom-interior-design-windows-home.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46108__person_crying_silhouette_window.mp4",
           "bound_title": "ai generated, room, cozy bedroom, interior design, windows, home",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.3948,
           "motion": 1.906,
-          "luma": 51.5
+          "luma": 51.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
         },
         {
           "n": 5,
@@ -494,13 +768,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "envelope letter",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53397__stack_of_letters_with_ribbon.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53218__fountain_pen_signature.mp4",
           "bound_title": "a pink envelope and happy birthday letters on a table",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5567,
           "motion": 3.153,
-          "luma": 199.3
+          "luma": 199.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
         },
         {
           "n": 10,
@@ -521,13 +797,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "locked door padlock",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2364__school_hallway_empty.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8121__bank_vault_door.mp4",
           "bound_title": "locker with padlock",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5109,
           "motion": 2.66,
-          "luma": 144.6
+          "luma": 144.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         },
         {
           "n": 12,
@@ -548,13 +826,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands typing keyboard",
-          "bound_file": "D:\\pd-archive\\newspapers_printing\\pixabay_extra__v_72880__computer-keyboard-hands-typing-input-technology.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29700__office_interior_dark.mp4",
           "bound_title": "computer keyboard, hands, typing, input, technology",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.4089,
           "motion": 18.56,
-          "luma": 99.2
+          "luma": 99.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
         },
         {
           "n": 14,
@@ -635,13 +915,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courthouse columns",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2436__bank_building_columns.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31115__bank_building_columns.mp4",
           "bound_title": "columns in a building",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6078,
           "motion": 5.218,
-          "luma": 118.1
+          "luma": 118.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.335
         },
         {
           "n": 22,
@@ -656,12 +938,218 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: an empty drawer pulled from a wall of them",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: an empty drawer pulled from a wall of them",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: an empty drawer pulled from a wall of them",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R09",
+          "subject": "the car he never bought",
+          "source": "FOOTAGE",
+          "footage_query": "the empty interior of a parked car",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12288__shattered_mirror.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U04",
+          "subject": "the hallway of an ordinary house",
+          "source": "FOOTAGE",
+          "footage_query": "a narrow hallway inside a small house",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1823__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "Y05",
+          "subject": "a plain box, never unpacked",
+          "source": "FOOTAGE",
+          "footage_query": "a plain cardboard box under a bed",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8913__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R08",
+          "subject": "the stand the specialist spoke from",
+          "source": "FOOTAGE",
+          "footage_query": "an empty wooden witness stand",
+          "prompt": null
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R06",
+          "subject": "the court that listened to him",
+          "source": "FOOTAGE",
+          "footage_query": "a wooden courtroom gallery seen from the back",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14600__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "R02",
+          "subject": "handcuffs closing",
+          "source": "FOOTAGE",
+          "footage_query": "handcuffs closing around a pair of wrists",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4891__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "R12",
+          "subject": "his watch and keys in a tray",
+          "source": "FOOTAGE",
+          "footage_query": "a wristwatch and keys in a plastic tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41348__open_briefcase_of_cash.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "W04",
+          "subject": "a row of steel doors in a holding block",
+          "source": "FOOTAGE",
+          "footage_query": "a row of heavy steel cell doors",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14908__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U13",
+          "subject": "led away between two walls",
+          "source": "FOOTAGE",
+          "footage_query": "a figure walking away between two walls",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-19708__shattered_mirror.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "the room he fought the extradition in",
+          "source": "FOOTAGE",
+          "footage_query": "an empty hearing room with a long bench",
+          "prompt": null
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U10",
+          "subject": "empty palms",
+          "source": "FOOTAGE",
+          "footage_query": "two open empty palms held up",
+          "prompt": null
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "M05",
+          "subject": "the money handed back over a counter",
+          "source": "FOOTAGE",
+          "footage_query": "banknotes passed across a bank counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23981__money_counting_machine.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "R03",
+          "subject": "a bare table under one lamp",
+          "source": "FOOTAGE",
+          "footage_query": "a small bare table under a hanging lamp",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51986__vintage_globe_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "W02",
+          "subject": "a figure behind a glass panel",
+          "source": "FOOTAGE",
+          "footage_query": "a person standing behind a glass panel",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29695__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "I08",
+          "subject": "the rooftops of the street he lived on",
+          "source": "FOOTAGE",
+          "footage_query": "rooftops of a suburban street at dawn",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1593__highway_night_long_exposure.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
         }
       ],
       "loop": true,

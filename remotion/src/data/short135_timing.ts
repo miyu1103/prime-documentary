@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT135_TOTAL_SEC = 40.982;
+export const SHORT135_TOTAL_SEC = 59.429;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 33.945,
     "end": 39.982
+  },
+  {
+    "id": "L6",
+    "start": 40.202,
+    "end": 46.286
+  },
+  {
+    "id": "L7",
+    "start": 46.506,
+    "end": 52.311
+  },
+  {
+    "id": "L8",
+    "start": 52.531,
+    "end": 58.429
   }
 ];
 
@@ -130,23 +145,83 @@ export const SHORT135_CAPTIONS: ShortCaption[] = [
     "endSec": 33.725
   },
   {
-    "word": "So the privacy you have tomorrow",
+    "word": "Harlan's test has two parts.",
     "startSec": 33.945,
-    "endSec": 35.785
+    "endSec": 35.135
+  },
+  {
+    "word": "A person must genuinely expect privacy",
+    "startSec": 35.135,
+    "endSec": 36.751
+  },
+  {
+    "word": "and that expectation must be one society",
+    "startSec": 36.751,
+    "endSec": 38.451
+  },
+  {
+    "word": "is prepared to accept as reasonable.",
+    "startSec": 38.451,
+    "endSec": 39.982
+  },
+  {
+    "word": "The Court also drew a limit:",
+    "startSec": 40.202,
+    "endSec": 41.889
+  },
+  {
+    "word": "what a person knowingly",
+    "startSec": 41.889,
+    "endSec": 43.274
+  },
+  {
+    "word": "exposes to the public",
+    "startSec": 43.274,
+    "endSec": 44.539
+  },
+  {
+    "word": "even at home",
+    "startSec": 44.539,
+    "endSec": 45.262
+  },
+  {
+    "word": "is not protected.",
+    "startSec": 45.262,
+    "endSec": 46.286
+  },
+  {
+    "word": "Katz freed privacy from the walls",
+    "startSec": 46.506,
+    "endSec": 48.611
+  },
+  {
+    "word": "and tied it instead to what",
+    "startSec": 48.611,
+    "endSec": 50.333
+  },
+  {
+    "word": "we are still willing to expect.",
+    "startSec": 50.333,
+    "endSec": 52.311
+  },
+  {
+    "word": "So the privacy you have tomorrow",
+    "startSec": 52.531,
+    "endSec": 54.328
   },
   {
     "word": "depends on how much watching we",
-    "startSec": 35.785,
-    "endSec": 37.567
+    "startSec": 54.328,
+    "endSec": 56.07
   },
   {
     "word": "get used to today.",
-    "startSec": 37.567,
-    "endSec": 38.602
+    "startSec": 56.07,
+    "endSec": 57.081
   },
   {
     "word": "Which way is that going?",
-    "startSec": 38.602,
-    "endSec": 39.982
+    "startSec": 57.081,
+    "endSec": 58.429
   }
 ];

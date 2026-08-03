@@ -61,8 +61,29 @@ def main() -> int:
                          "views": d["destination"]["views"]})
     # highest-value destination first, so an interrupted run has finished the ones that matter
     jobs.sort(key=lambda j: -j["views"])
-    todo = [j for j in jobs if not j["mix"].exists()]
-    print(f"{len(jobs)} shorts authored | {len(jobs)-len(todo)} already mixed | {len(todo)} to build")
+    # "Already mixed" used to mean "the file exists", which is not the same as "the file matches
+    # the script". When the designs went from 5 narration lines to 8, every mix on disk was stale
+    # and this reported "14 ok" in zero minutes, leaving 33 s of audio under a 57 s design. It
+    # happened twice before anyone measured the mp3. A mix older than its own lines file is stale.
+    def stale(j: dict) -> bool:
+        if not j["mix"].exists():
+            return True
+        if not j["spec"].exists():
+            return False
+        return j["spec"].stat().st_mtime > j["mix"].stat().st_mtime
+
+    todo = [j for j in jobs if stale(j)]
+    rebuilt = [j for j in todo if j["mix"].exists()]
+    print(f"{len(jobs)} shorts authored | {len(jobs)-len(todo)} already mixed | {len(todo)} to build"
+          + (f" ({len(rebuilt)} of them STALE - lines file is newer than the mix)" if rebuilt else ""))
+    for j in rebuilt:
+        # rename rather than overwrite: an interrupted rebuild must not leave a half-written mix
+        # that a later run would treat as current
+        bak = j["mix"].with_suffix(j["mix"].suffix + ".stale")
+        if bak.exists():
+            bak.unlink()
+        j["mix"].rename(bak)
+        print(f"  short{j['nn']}: stale mix moved aside -> {bak.name}")
     if args.limit:
         todo = todo[:args.limit]
     if args.dry_run:

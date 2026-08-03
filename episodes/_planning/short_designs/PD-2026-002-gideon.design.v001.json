@@ -56,32 +56,32 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Twenty years before that letter, the Supreme Court had already looked at almost exactly his question. And it had ruled the other way.",
+          "delivery": "intense",
           "source_lines": [
             "Twenty years earlier, in a case called Betts v. Brady, the Supreme Court had already looked at almost this exact question — and had ruled the other way"
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Under that rule a free lawyer came only in special circumstances. If you were very young, or could not read, or the case was unusually complex.",
+          "delivery": "building",
           "source_lines": [
             "A free lawyer was required only in \"special circumstances\" — if you were very young, or could not read, or the case was unusually complex"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "An ordinary poor man, in an ordinary case, was expected to manage on his own.",
+          "delivery": "building",
           "source_lines": [
             "An ordinary poor man, in an ordinary case, was expected to manage on his own."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "So he was asking the most powerful court in the country to admit it had been wrong. Prisoners send it thousands of these petitions a year. Almost all are turned away.",
+          "delivery": "intense",
           "source_lines": [
             "He is asking the most powerful court in the country to admit it had been wrong — to overturn its own decision and rewrite the rule for every state at once.",
             "Prisoners send the Supreme Court thousands of these handwritten petitions every year.",
@@ -90,8 +90,35 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Gideon had asked the Florida judge for a lawyer and been told no. Free counsel came only in death penalty cases.",
+          "delivery": "building",
+          "source_lines": [
+            "So he asks the court to appoint a lawyer for him.",
+            "in Florida at that time, a free lawyer was provided only when a person's life was on the line, in a death-penalty case"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "He faced a prosecutor who knew every rule by heart, argued his own case, and was convicted. Five years.",
+          "delivery": "building",
+          "source_lines": [
+            "On one side stands a prosecutor who has done this hundreds of times, who knows every one of those rules by heart.",
+            "The verdict comes back guilty, and the court sends him to prison for five years."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "From his cell he filed as a pauper, too poor to pay, with no firm and no famous attorney behind him.",
+          "delivery": "building",
+          "source_lines": [
+            "He cannot pay the court's fees, so he files as what the law calls a pauper",
+            "No firm is behind him. No famous attorney is making calls."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "It did not turn away his. One handwritten letter from a Florida prison cell, and the justices agreed to hear the case.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -195,13 +222,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "filing cabinet",
-          "bound_file": "D:\\pd-archive\\science_tech\\pixabay_extra__v_145639__horseshoe-hoof-filing-hooves-horse-stables-farrier-nails-too.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23895__safe_deposit_boxes_vault.mp4",
           "bound_title": "horseshoe, hoof filing, hooves, horse, stables, farrier, nails, tools, file, lea",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.4024,
           "motion": 34.553,
-          "luma": 95.5
+          "luma": 95.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
         },
         {
           "n": 11,
@@ -212,13 +241,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "clock face wall",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0293__concrete_wall_texture_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9719__clock_ticking_macro.mp4",
           "bound_title": "shadow a man over a wall",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4321,
           "motion": 14.486,
-          "luma": 67.1
+          "luma": 67.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
         },
         {
           "n": 12,
@@ -259,13 +290,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty wooden chair",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0449__office_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41652__single_chair_empty_room.mp4",
           "bound_title": "an empty office",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4105,
           "motion": 5.08,
-          "luma": 139.3
+          "luma": 139.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
         },
         {
           "n": 16,
@@ -340,12 +373,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: the earlier ruling, closed on a desk",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "I04",
+          "subject": "the courthouse door that stayed shut to him",
+          "source": "FOOTAGE",
+          "footage_query": "a chain and padlock on a wooden door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8125__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R07",
+          "subject": "the gavel resting after the judge said no",
+          "source": "FOOTAGE",
+          "footage_query": "a wooden gavel resting on a round block",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0518__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "W01",
+          "subject": "the cell the refusal sent him back to",
+          "source": "FOOTAGE",
+          "footage_query": "iron bars of a jail cell door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62985__prison_gate_closing.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "W11",
+          "subject": "two chairs across a bare floor, nobody between them",
+          "source": "FOOTAGE",
+          "footage_query": "two wooden chairs facing each other",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2293__empty_stadium_seats.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "the coins and belt he had instead of a fee",
+          "source": "FOOTAGE",
+          "footage_query": "a belt and coins in a steel tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62757__vintage_wanted_poster.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "the walk from the courtroom to the cells",
+          "source": "FOOTAGE",
+          "footage_query": "a long empty corridor with a bright doorway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5384__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.322
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "the panelled room he argued in alone",
+          "source": "FOOTAGE",
+          "footage_query": "rows of empty seats in a panelled hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26007__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U05",
+          "subject": "the clock running through his own defence",
+          "source": "FOOTAGE",
+          "footage_query": "hands moving on a round wall clock",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9718__clock_ticking_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "W04",
+          "subject": "five years, door after door",
+          "source": "FOOTAGE",
+          "footage_query": "a long prison corridor lined with iron doors",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16012__open_safe_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y05",
+          "subject": "the state's file, closed and tied",
+          "source": "FOOTAGE",
+          "footage_query": "a thick file tied shut with a band",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10156__old_library_archive.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W02",
+          "subject": "him, behind the bars he wrote from",
+          "source": "FOOTAGE",
+          "footage_query": "a figure standing behind tall iron bars",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6846__jail_cell_bars.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U01",
+          "subject": "the bulb he wrote under",
+          "source": "FOOTAGE",
+          "footage_query": "a bare bulb burning above a small table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1674__candle_flame_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "M06",
+          "subject": "the drawer with nothing in it to pay with",
+          "source": "FOOTAGE",
+          "footage_query": "an empty steel drawer pulled open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30050__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I02",
+          "subject": "the offices whose doors never opened for him",
+          "source": "FOOTAGE",
+          "footage_query": "a corridor of identical closed office doors",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11520__hospital_corridor_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W06",
+          "subject": "the plain envelope his petition went out in",
+          "source": "FOOTAGE",
+          "footage_query": "a plain sealed envelope on a metal counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-49828__person_signing_document_hand.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
         }
       ],
       "loop": true,
@@ -361,8 +609,8 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Winning at the Supreme Court did not set Clarence Gideon free. It threw out his conviction and sent him back to Florida for a brand new trial.",
+          "delivery": "intense",
           "source_lines": [
             "Because winning at the Supreme Court did not set Gideon free.",
             "it threw out his conviction and sent him back to Florida for a brand-new trial"
@@ -370,24 +618,24 @@
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "The same charges. The same town. But this time, the empty chair was filled.",
+          "delivery": "building",
           "source_lines": [
             "The same charges. The same town. But this time, the empty chair was filled."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "A real defense attorney picked the case apart. Testing the witnesses, poking at the state's story, doing all the things Gideon had never known how to do alone.",
+          "delivery": "building",
           "source_lines": [
             "A real defense attorney picked the case apart — testing the witnesses, poking at the state's story, doing all the things Gideon had never known how to do alone."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "The very same man. The very same accusation. Alone, he was convicted and sent to prison. With a lawyer, he was acquitted and walked out free.",
+          "delivery": "intense",
           "source_lines": [
             "The very same man, facing the very same accusation.",
             "Alone, he was convicted and sent to prison.",
@@ -396,8 +644,36 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The ruling behind that second trial was unanimous. Every justice agreed that a lawyer is a necessity, not a frill.",
+          "delivery": "building",
+          "source_lines": [
+            "The decision was unanimous.",
+            "a lawyer is not a frill.",
+            "A lawyer is a necessity"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "It reached back and overruled its own precedent, leaving one plain rule. Too poor to hire a lawyer, the state appoints one.",
+          "delivery": "building",
+          "source_lines": [
+            "It reached back and overruled its own precedent.",
+            "The new rule was simple enough for anyone to understand: if you are too poor to hire a lawyer, the state must appoint one for you"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Through the Fourteenth Amendment it bound the states too, so the right could not stop at the federal courthouse door.",
+          "delivery": "building",
+          "source_lines": [
+            "Through the Fourteenth Amendment, it binds the states too",
+            "And because a fair trial is a basic right, the Court held, that right cannot stop at the federal courthouse door."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Nothing about him had changed. The only thing that changed was whether anyone in that room was standing on his side.",
+          "delivery": "calm",
           "source_lines": [
             "The only thing that changed was whether anyone in that room was standing on his side."
           ]
@@ -483,13 +759,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty wooden chair",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0517__courtroom_interior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46769__empty_chair_in_spotlight_grief.mp4",
           "bound_title": "woman sitting on a chair talking",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3992,
           "motion": 1.374,
-          "luma": 57.3
+          "luma": 57.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
         },
         {
           "n": 9,
@@ -520,7 +798,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "filing cabinet",
-          "bound_file": "D:\\pd-archive\\science_tech\\pixabay_extra__v_145639__horseshoe-hoof-filing-hooves-horse-stables-farrier-nails-too.mp4",
           "bound_title": "horseshoe, hoof filing, hooves, horse, stables, farrier, nails, tools, file, lea",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
@@ -567,13 +844,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stack of documents desk",
-          "bound_file": "D:\\pd-archive\\landscapes_timelapse\\coverr__6588__timelapse-of-a-sunset.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-19098__stacked_legal_documents.mp4",
           "bound_title": "timelapse of a sunset",
           "bound_license": "free_commercial",
           "bound_source": "coverr",
           "centre_energy": 0.3938,
           "motion": 9.049,
-          "luma": 136.4
+          "luma": 136.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.333
         },
         {
           "n": 16,
@@ -594,13 +873,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "prison corridor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1822__prison_corridor.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2368__school_hallway_empty.mp4",
           "bound_title": "prisoners talking from the bunk bed",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4234,
           "motion": 9.762,
-          "luma": 97.6
+          "luma": 97.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
         },
         {
           "n": 18,
@@ -655,12 +936,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: a gate opening onto another corridor, not daylight",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R05",
+          "subject": "the Court that answered with one voice",
+          "source": "FOOTAGE",
+          "footage_query": "stone columns of a large building from below",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2435__bank_building_columns.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U07",
+          "subject": "nine copies of one opinion, closed",
+          "source": "FOOTAGE",
+          "footage_query": "a stack of closed folders on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63076__old_ledger_book.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M07",
+          "subject": "the long bench where every one of them agreed",
+          "source": "FOOTAGE",
+          "footage_query": "a long polished table in a panelled room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41643__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U03",
+          "subject": "the signing of the judgment",
+          "source": "FOOTAGE",
+          "footage_query": "a hand signing with a fountain pen",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53222__fountain_pen_signature.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.326
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "I01",
+          "subject": "one plain rule, stamped",
+          "source": "FOOTAGE",
+          "footage_query": "a wooden stamp resting on an ink pad",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14317__wax_seal_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I06",
+          "subject": "the page the old rule left blank",
+          "source": "FOOTAGE",
+          "footage_query": "a blank sheet of paper on a floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-2594__paper_scraps_flying.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "the shelves the overruled case went back to",
+          "source": "FOOTAGE",
+          "footage_query": "a wall of steel filing shelves with folders",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1834__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M02",
+          "subject": "too poor to hire one",
+          "source": "FOOTAGE",
+          "footage_query": "a few coins in an open palm",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38941__atm_machine_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "the door the new rule left standing open",
+          "source": "FOOTAGE",
+          "footage_query": "a heavy steel door standing open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62993__prison_gate_closing.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I03",
+          "subject": "the appointments the clerk now had to make",
+          "source": "FOOTAGE",
+          "footage_query": "a hand placing papers into a metal tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31938__judge_gavel_wooden.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U15",
+          "subject": "the states the rule now reached",
+          "source": "FOOTAGE",
+          "footage_query": "an unfolded paper map of the united states",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52104__world_map_with_pins_and_string.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U12",
+          "subject": "courthouse doors, open in every state",
+          "source": "FOOTAGE",
+          "footage_query": "heavy doors opening onto bright daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32120__supreme_court_building.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.302
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "I08",
+          "subject": "the small towns it reached too",
+          "source": "FOOTAGE",
+          "footage_query": "a water tower against a pale morning sky",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32989__cell_tower_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "W03",
+          "subject": "a bare cell in any state at all",
+          "source": "FOOTAGE",
+          "footage_query": "the inside of an empty concrete cell",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-0760__dust_cloud.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "one man standing where the light reaches",
+          "source": "FOOTAGE",
+          "footage_query": "a person standing in a bright beam",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4821__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
         }
       ],
       "loop": true,

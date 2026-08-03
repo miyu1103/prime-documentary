@@ -49,24 +49,24 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "On January 3rd, 2022, the jury delivered a verdict. It was not a simple one.",
+          "delivery": "intense",
           "source_lines": [
             "On January 3rd, 2022, the jury delivered a verdict — and it was not a simple one."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "It convicted her on four counts of fraud against investors. One count of conspiracy, and three counts of wire fraud.",
+          "delivery": "building",
           "source_lines": [
             "It convicted Holmes on four counts of fraud against investors: one count of conspiracy, and three counts of wire fraud, for deceiving specific investors who had put in large sums"
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "But on the counts that accused her of defrauding patients, the jury found her not guilty. And on three more investor counts the jurors could not agree, so the judge declared a mistrial.",
+          "delivery": "building",
           "source_lines": [
             "But on the counts that accused her of defrauding patients, the jury found her not guilty.",
             "And on three more investor counts, the jurors could not agree at all, so the judge declared a mistrial on those"
@@ -74,8 +74,8 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "That is not a finding that the technology was fine, or that no one was hurt. It means only that the prosecution did not prove those charges beyond a reasonable doubt.",
+          "delivery": "intense",
           "source_lines": [
             "It is tempting to read the patient acquittals as a verdict that the technology was fine, or that no one was hurt.",
             "An acquittal means only that the prosecution did not prove those particular charges beyond a reasonable doubt — the highest bar in law — not that the underlying conduct was harmless"
@@ -83,8 +83,33 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Criminal fraud requires intent to deceive. Proof that someone knowingly made false statements to get something of value.",
+          "delivery": "building",
+          "source_lines": [
+            "Criminal fraud requires intent to deceive — proof that a person knowingly made false statements to get something of value from someone who relied on them."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Prosecutors said she knew about the device's failures and hid them. Her defense said she believed the technology would work.",
+          "delivery": "building",
+          "source_lines": [
+            "Prosecutors argued that Holmes knew about the device's failures and hid them, pointing to internal results and warnings she had received.",
+            "Her defense argued that she was a true believer who genuinely thought the technology would work, and that being wrong is not the same as lying."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "In November 2022, on those four counts, she was sentenced to about eleven years and three months in federal prison.",
+          "delivery": "building",
+          "source_lines": [
+            "in November 2022, she was sentenced to about eleven years and three months in federal prison"
+          ]
+        },
+        {
+          "id": "L8",
           "text": "The company's former president was tried separately and convicted on all twelve counts, including the patient counts. Same company. Two different verdicts.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -108,13 +133,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "blood drop finger",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2139__modern_medical_lab.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-17355__laboratory_glassware.mp4",
           "bound_title": "a person putting the blood samples in a machine",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4202,
           "motion": 4.069,
-          "luma": 84.0
+          "luma": 84.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
         },
         {
           "n": 3,
@@ -165,13 +192,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "vial of blood",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1119__technology_abstract_blue.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14315__wax_seal_on_document.mp4",
           "bound_title": "3d animation of a futuristic dynamic pattern",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4374,
           "motion": 31.816,
-          "luma": 111.0
+          "luma": 111.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
         },
         {
           "n": 8,
@@ -192,13 +221,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courthouse columns",
-          "bound_file": "D:\\pd-archive\\wildlife_animals\\pixabay_extra__v_30123__venice-statue-palace-arch-pillar-columns-italy-sculpture-lio.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5457__bank_building_columns.mp4",
           "bound_title": "venice, statue, palace, arch, pillar, columns, italy, sculpture, lion, architect",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.3927,
           "motion": 17.052,
-          "luma": 140.1
+          "luma": 140.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.346
         },
         {
           "n": 10,
@@ -219,13 +250,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "conference table chairs",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2062__laboratory_glassware.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36776__empty_boardroom_at_night.mp4",
           "bound_title": "laboratory equipment on a table",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4095,
           "motion": 4.731,
-          "luma": 137.0
+          "luma": 137.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
         },
         {
           "n": 12,
@@ -246,13 +279,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "microscope laboratory",
-          "bound_file": "D:\\pd-archive\\science_tech\\pixabay_extra__v_86260__laboratory-microscope-science-experiment-equipment-chemistry.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-25907__microscope_slide_macro.mp4",
           "bound_title": "laboratory, microscope, science, experiment, equipment, chemistry, research, ana",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.4644,
           "motion": 8.415,
-          "luma": 113.7
+          "luma": 113.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
         },
         {
           "n": 14,
@@ -273,13 +308,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hospital corridor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-34472__hospital_corridor_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11515__hospital_corridor_night.mp4",
           "bound_title": "senior man walking with cane in hospital corridor",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.48,
           "motion": 9.313,
-          "luma": 121.7
+          "luma": 121.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.333
         },
         {
           "n": 16,
@@ -310,13 +347,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "centrifuge laboratory",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-18251__blood_sample_vial.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-25743__laboratory_centrifuge.mp4",
           "bound_title": "laboratory centrifuge process with safety gloves",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4557,
           "motion": 4.835,
-          "luma": 59.1
+          "luma": 59.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
         },
         {
           "n": 19,
@@ -361,12 +400,224 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: one drop of blood on a fingertip",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: one drop of blood on a fingertip",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: one drop of blood on a fingertip",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U06",
+          "subject": "the empty chair the question circles",
+          "source": "FOOTAGE",
+          "footage_query": "a single empty chair under a ceiling light",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29216__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R04",
+          "subject": "two people across a small table",
+          "source": "FOOTAGE",
+          "footage_query": "two people seated across a small table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46948__lawyer_and_client_meeting_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.315
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M02",
+          "subject": "something of value, banded",
+          "source": "FOOTAGE",
+          "footage_query": "banded stacks of banknotes under a lamp",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32710__cash_stacks_money.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R07",
+          "subject": "the gavel that has to measure intent",
+          "source": "FOOTAGE",
+          "footage_query": "a gavel striking a wooden block",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14448__quill_and_ink_pot.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "the office window at dawn over a desk",
+          "source": "FOOTAGE",
+          "footage_query": "an office window at dawn above a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1383__warm_window_light_rays.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "W06",
+          "subject": "the sealed result nobody saw",
+          "source": "FOOTAGE",
+          "footage_query": "a sealed envelope resting on a laboratory bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6482__us_constitution_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "the laboratory door, locked",
+          "source": "FOOTAGE",
+          "footage_query": "a locked door in a white corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62175__data_center_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U09",
+          "subject": "one person alone in a bright hall",
+          "source": "FOOTAGE",
+          "footage_query": "a lone person in a large bright hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14510__courtroom_empty_wide.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "M01",
+          "subject": "the line they were all shown",
+          "source": "FOOTAGE",
+          "footage_query": "a rising line glowing on a screen",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51280__open_door_bright_light.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "U01",
+          "subject": "the lamp left on over the bench",
+          "source": "FOOTAGE",
+          "footage_query": "a lamp switched on above a work bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51996__vintage_globe_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W01",
+          "subject": "the bars at the end of it",
+          "source": "FOOTAGE",
+          "footage_query": "close up of iron prison bars",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-4403__heavy_rain_backlit.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "W10",
+          "subject": "the gate she went through",
+          "source": "FOOTAGE",
+          "footage_query": "a heavy gate at a prison entrance",
+          "prompt": null
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U05",
+          "subject": "the clock in the deliberation room",
+          "source": "FOOTAGE",
+          "footage_query": "a round clock on a plain wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9727__clock_ticking_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U02",
+          "subject": "a heavy door closing behind her",
+          "source": "FOOTAGE",
+          "footage_query": "a heavy door swinging closed in a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2366__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "walking away through a bright doorway",
+          "source": "FOOTAGE",
+          "footage_query": "a figure walking away through a bright doorway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1839__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
         }
       ],
       "loop": true,
@@ -382,16 +633,16 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "A beautiful enough story can make very smart people stop asking the most basic question. Does the thing actually work?",
+          "delivery": "intense",
           "source_lines": [
             "And a beautiful enough story can make very smart people stop asking the most basic question: does the thing actually work?"
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Its board filled with famous names. Former statesmen and military leaders. It struck a deal with a national pharmacy chain to put its testing in some stores.",
+          "delivery": "building",
           "source_lines": [
             "Its board filled with famous names — former statesmen and military leaders.",
             "It struck a deal with the pharmacy chain Walgreens to put its testing in some stores"
@@ -399,16 +650,16 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "A board of household names made the company look unimpeachable. A soaring valuation made skeptics look foolish for doubting.",
+          "delivery": "building",
           "source_lines": [
             "A board of household names made the company look unimpeachable; a soaring valuation made skeptics look foolish for doubting."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "Each famous believer became a reason for the next person not to look too closely. At its peak, around 2014, Theranos was valued at roughly nine billion dollars.",
+          "delivery": "intense",
           "source_lines": [
             "Each famous believer became a reason for the next person not to look too closely.",
             "At its peak, around 2014, Theranos was valued at roughly nine billion dollars"
@@ -416,8 +667,33 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "A blood test then meant a needle, a vial, a lab, a wait. Theranos promised to erase all of that.",
+          "delivery": "building",
+          "source_lines": [
+            "Today, a blood test means a needle, a vial, a lab, a wait.",
+            "Holmes promised to erase all of that."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Its device, the Edison, was said to run hundreds of tests from a single painless drop of blood.",
+          "delivery": "building",
+          "source_lines": [
+            "Her company, Theranos, said its device — called the Edison — could run hundreds of tests from a single, painless drop of blood from your finger, quickly and cheaply"
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "A failed app costs money. A blood test that gives the wrong answer can cost someone a diagnosis.",
+          "delivery": "building",
+          "source_lines": [
+            "A failed app costs you money. A blood test that gives the wrong answer can cost you a diagnosis."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "For years, with nine billion dollars riding on it, the question went unasked in public. In 2015 a reporter with internal documents asked it in print.",
+          "delivery": "calm",
           "source_lines": []
         }
       ],
@@ -441,13 +717,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "laboratory gloves",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-18251__blood_sample_vial.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7369__microscope_lab.mp4",
           "bound_title": "laboratory centrifuge process with safety gloves",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4557,
           "motion": 4.835,
-          "luma": 59.1
+          "luma": 59.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.34
         },
         {
           "n": 3,
@@ -488,13 +766,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "conference table chairs",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4307__data_center.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14686__witness_stand_empty.mp4",
           "bound_title": "analyzing stock market trends on a tablet",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3859,
           "motion": 10.05,
-          "luma": 59.7
+          "luma": 59.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
         },
         {
           "n": 7,
@@ -545,13 +825,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty office night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2592__crowd_silhouette.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20317__courtroom_empty_wide.mp4",
           "bound_title": "silhouetted crowd watching bonfire at night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5889,
           "motion": 9.069,
-          "luma": 40.7
+          "luma": 40.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
         },
         {
           "n": 12,
@@ -572,13 +854,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stock market screen",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0909__stock_market_screen.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0905__stock_market_screen.mp4",
           "bound_title": "analyzing stock market trends on interactive screen",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4199,
           "motion": 6.606,
-          "luma": 195.8
+          "luma": 195.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
         },
         {
           "n": 14,
@@ -599,13 +883,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "skyscraper night lights",
-          "bound_file": "D:\\pd-archive\\government_buildings\\pixabay_extra__v_94__city-nights-party-view-lights-skyscrapers-high-rises-houses.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29632__blurred_city_night_bokeh.mp4",
           "bound_title": "city, nights, party, view, lights, skyscrapers, high-rises, houses, buildings",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.3847,
           "motion": 1.313,
-          "luma": 50.5
+          "luma": 50.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
         },
         {
           "n": 16,
@@ -656,13 +942,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "counting money hands",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4130__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23894__safe_deposit_boxes_vault.mp4",
           "bound_title": "counting money close up of hands handling bills",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.527,
           "motion": 8.005,
-          "luma": 63.0
+          "luma": 63.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
         },
         {
           "n": 21,
@@ -687,12 +975,221 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hook plate: one tiny empty vial on black",
           "source": "REUSE_01",
           "prompt": null,
           "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: one tiny empty vial on black",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: one tiny empty vial on black",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U03",
+          "subject": "a gloved hand and a needle",
+          "source": "FOOTAGE",
+          "footage_query": "a gloved hand holding a syringe",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32427__blood_sample_vial.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "I03",
+          "subject": "the samples waiting their turn",
+          "source": "FOOTAGE",
+          "footage_query": "a tray of glass tubes on a bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-19583__test_tubes_rack_lab.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "I07",
+          "subject": "the hall where people wait their turn",
+          "source": "FOOTAGE",
+          "footage_query": "rows of seats in a waiting hall",
+          "prompt": null
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "the instruments laid out in a steel tray",
+          "source": "FOOTAGE",
+          "footage_query": "surgical instruments laid in a steel tray",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11652__operating_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "an arm laid on a rest, sleeve pushed up",
+          "source": "FOOTAGE",
+          "footage_query": "a bare arm resting on a chair armrest",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31704__old_keys_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "M05",
+          "subject": "the machine, a grey cabinet on a bench",
+          "source": "FOOTAGE",
+          "footage_query": "a closed grey machine cabinet on a bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-40293__empty_playground_at_dusk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W07",
+          "subject": "a fingertip under the lamp",
+          "source": "FOOTAGE",
+          "footage_query": "a fingertip held under a bright lamp",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-3421__lantern_in_fog.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.309
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "a rack of identical machines",
+          "source": "FOOTAGE",
+          "footage_query": "rows of identical machines in a laboratory",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2136__modern_medical_lab.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.327
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "the cartridge pushed into its slot",
+          "source": "FOOTAGE",
+          "footage_query": "a plastic cartridge pushed into a slot",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31699__old_keys_on_table.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "M03",
+          "subject": "the laboratory from above, bench after bench",
+          "source": "FOOTAGE",
+          "footage_query": "a laboratory seen from above with benches",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54378__warehouse_loading_dock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U12",
+          "subject": "the doors of a hospital, swinging",
+          "source": "FOOTAGE",
+          "footage_query": "double doors swinging open in a hospital",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39824__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "I06",
+          "subject": "a blank sheet left folded on the bed",
+          "source": "FOOTAGE",
+          "footage_query": "a folded blank sheet on a hospital bed",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-40184__elderly_hands_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "R10",
+          "subject": "a front door seen from the hallway",
+          "source": "FOOTAGE",
+          "footage_query": "a front door seen from inside a hallway",
+          "prompt": null
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "R11",
+          "subject": "the phone put face down",
+          "source": "FOOTAGE",
+          "footage_query": "a phone lying face down on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32931__mobile_phone_map_location.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "R03",
+          "subject": "the room where the answer gets given",
+          "source": "FOOTAGE",
+          "footage_query": "a small consulting room with a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39819__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.32
         }
       ],
       "loop": true,

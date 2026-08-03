@@ -471,8 +471,32 @@ def take_item(ledger: base.Ledger, *, source: str, item_id: str, title: str,
     if base.PERSON_RE.search(title or ""):
         base.reject_log(source, item_id, theme, "person-filter", title=title)
         return False
+    # PHRASE GATE (2026-08-03). Measured on a random 20 of the previous intake: 45% was
+    # unrelated - a cat desktop wallpaper filed under bank_and_branch, pancakes and bacon
+    # under household_loss, a pianist's hands under hands_and_transactions. Pixabay titles
+    # are comma-separated tag lists, so single-word agreement is almost free and the score
+    # alone cannot tell "hand, sign, point, cursor" from a hand stamping a document.
+    # Require that at least one of this theme's own query phrases is actually present.
+    # Precision over recall, per CONTRACT 4.
+    # A phrase gate was tried here on 2026-08-03 and REMOVED the same hour. Requiring one
+    # of the theme's own query phrases verbatim works on Wikimedia, whose titles are
+    # catalogue entries, and fails completely on stock sites, whose titles are natural
+    # language: it would have dropped "Men shake hands at business meeting" for lacking
+    # "business handshake", and the retroactive dry run scored 96% of 16,072 rows for
+    # deletion - 227 GB, most of it good. The real defect is narrower and handled below:
+    # pixabay titles are comma-separated tag lists, so one common word is nearly free.
     score, matched, negs, title_ok = score_item(theme, title, desc, tag_text)
     threshold = base.SRC_THRESHOLD.get(source, base.DEFAULT_THRESHOLD)
+    # Tag-list titles need two agreements, not one. A pixabay title is a comma-separated
+    # tag dump ("older woman, cat, desktop backgrounds, pet, windows wallpaper"), so a
+    # single common word costs nothing and that is how a cat wallpaper reached
+    # bank_and_branch and pancakes reached household_loss. Natural-language titles from
+    # mixkit/coverr/unsplash are left alone - one honest word there is real evidence.
+    if source == "pixabay_extra" and len((tag_text or "").split(",")) >= 6 \
+            and len(set(matched or [])) < 2:
+        base.reject_log(source, item_id, theme, "tag-list-single-term",
+                        score, matched, negs, title=title)
+        return False
     # CONTRACT §4-v3-g: reject rows MUST carry the title — without it the
     # false-negative direction is invisible (it is what exposed v3 and v5).
     if not title_ok:           # off-theme item riding on a long description

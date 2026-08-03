@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT142_TOTAL_SEC = 41.029;
+export const SHORT142_TOTAL_SEC = 66.488;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.159,
     "end": 40.029
+  },
+  {
+    "id": "L6",
+    "start": 40.249,
+    "end": 47.215
+  },
+  {
+    "id": "L7",
+    "start": 47.435,
+    "end": 56.305
+  },
+  {
+    "id": "L8",
+    "start": 56.525,
+    "end": 65.488
   }
 ];
 
@@ -115,28 +130,98 @@ export const SHORT142_CAPTIONS: ShortCaption[] = [
     "endSec": 30.939
   },
   {
-    "word": "In dissent she warned the majority",
+    "word": "The deputy had never",
     "startSec": 31.159,
-    "endSec": 33.105
+    "endSec": 32.702
+  },
+  {
+    "word": "seen the driver's face.",
+    "startSec": 32.702,
+    "endSec": 34.476
+  },
+  {
+    "word": "He did not pull",
+    "startSec": 34.476,
+    "endSec": 35.633
+  },
+  {
+    "word": "up alongside to look",
+    "startSec": 35.633,
+    "endSec": 37.175
+  },
+  {
+    "word": "or confirm anything about the driver.",
+    "startSec": 37.175,
+    "endSec": 40.029
+  },
+  {
+    "word": "Reasonable suspicion is not a",
+    "startSec": 40.249,
+    "endSec": 41.976
+  },
+  {
+    "word": "hunch and not proof.",
+    "startSec": 41.976,
+    "endSec": 43.166
+  },
+  {
+    "word": "It needs specific facts",
+    "startSec": 43.166,
+    "endSec": 44.536
+  },
+  {
+    "word": "not a feeling",
+    "startSec": 44.536,
+    "endSec": 45.31
+  },
+  {
+    "word": "pointing toward something wrong.",
+    "startSec": 45.31,
+    "endSec": 47.215
+  },
+  {
+    "word": "The Court leaned on plain common sense.",
+    "startSec": 47.435,
+    "endSec": 49.772
+  },
+  {
+    "word": "Reasonable suspicion never requires certainty",
+    "startSec": 49.772,
+    "endSec": 52.469
+  },
+  {
+    "word": "and the owner's revoked license was",
+    "startSec": 52.469,
+    "endSec": 54.567
+  },
+  {
+    "word": "reason enough to look closer.",
+    "startSec": 54.567,
+    "endSec": 56.305
+  },
+  {
+    "word": "In dissent she warned the majority",
+    "startSec": 56.525,
+    "endSec": 58.491
   },
   {
     "word": "had paved the road to finding",
-    "startSec": 33.105,
-    "endSec": 34.764
+    "startSec": 58.491,
+    "endSec": 60.168
   },
   {
     "word": "reasonable suspicion based on nothing more",
-    "startSec": 34.764,
-    "endSec": 37.168
+    "startSec": 60.168,
+    "endSec": 62.597
   },
   {
     "word": "than a demographic profile.",
-    "startSec": 37.168,
-    "endSec": 38.713
+    "startSec": 62.597,
+    "endSec": 64.158
   },
   {
     "word": "One vote against eight.",
-    "startSec": 38.713,
-    "endSec": 40.029
+    "startSec": 64.158,
+    "endSec": 65.488
   }
 ];

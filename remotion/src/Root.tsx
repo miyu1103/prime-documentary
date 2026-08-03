@@ -223,6 +223,9 @@ import {SHORT117} from './data/short117';
 import {SHORT118} from './data/short118';
 import {SHORT119} from './data/short119';
 import {SHORT120} from './data/short120';
+import {SHORT132} from './data/short132';
+import {SHORT133} from './data/short133';
+import {SHORT134} from './data/short134';
 import {MAHANOY_ROUGHCUT} from './data/mahanoy_roughcut';
 import {TIMBS_ROUGHCUT} from './data/timbs_roughcut';
 import {KELO_ROUGHCUT} from './data/kelo_roughcut';
@@ -2432,6 +2435,27 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{data: SHORT120, platform: 'yt' as const, depth: true, method: true}} />
       <Still id="ShortThumb-short120" component={ShortThumb} width={1080} height={1920}
         defaultProps={{data: SHORT120, headline: 'SCHOOL STOPS AT\nTHE GATE', badge: 'MAHANOY', backgroundSrc: 'shorts/short120/short120_01.png'}} />
+      {/* ---- SHORT #132 ---- */}
+      <Composition id="Short-short132-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT132, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT132, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short132" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT132, headline: 'THE RULE HAS\nAN EXPIRY DATE', badge: 'KYLLO', backgroundSrc: 'shorts/short132/short132_01.png'}} />
+      {/* ---- SHORT #133 ---- */}
+      <Composition id="Short-short133-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT133, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT133, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short133" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT133, headline: 'IT NEVER BANNED\nTHE SCAN', badge: 'NARROW', backgroundSrc: 'shorts/short133/short133_01.png'}} />
+      {/* ---- SHORT #134 ---- */}
+      <Composition id="Short-short134-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT134, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT134, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short134" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT134, headline: 'HE SAID YOU\nCANNOT SEIZE IT', badge: '1 DISSENT', backgroundSrc: 'shorts/short134/short134_01.png'}} />
       <Composition
         id="Short-short01-yt"
         component={Short}
