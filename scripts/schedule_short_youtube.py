@@ -1125,6 +1125,38 @@ def compact(state: dict) -> dict:
     }
 
 
+# Binding from short182 on (the EP62-65 slate). Shorts below this number were designed before
+# the funnel became a build requirement; they warn instead of failing so an in-flight batch is
+# not bricked. Measured 2026-08-02: 46 published shorts, 4,391 views, ZERO links to a long-form.
+FUNNEL_BINDING_FROM = 182
+
+
+def _funnel_gate(short_no: int) -> None:
+    """Refuse to schedule a Short whose corridor to the long-form is incomplete."""
+    import check_short_funnel as csf
+
+    rec_paths = csf._records([short_no])
+    if not rec_paths:
+        msg = (f"short{short_no}: no 09_package/short{short_no}_funnel.v001.json -- the five "
+               f"funnel layers are unrecorded, so nothing can prove this short leads anywhere")
+        if short_no >= FUNNEL_BINDING_FROM:
+            raise RuntimeError(msg)
+        print(f"WARN {msg} (pre-{FUNNEL_BINDING_FROM}, not blocking)")
+        return
+    rec = json.loads(rec_paths[0].read_text(encoding="utf-8"))
+    worklist = csf.WORKLIST.read_text(encoding="utf-8") if csf.WORKLIST.is_file() else ""
+    problems = csf.check_record(rec, csf._load_spoken(rec), worklist)
+    if not problems:
+        vid = rec.get("funnel_long_video_id")
+        print(f"OK funnel: short{short_no} loops and carries all five layers to {vid}")
+        return
+    detail = "\n    - ".join(problems)
+    msg = f"short{short_no}: funnel incomplete ({len(problems)})\n    - {detail}"
+    if short_no >= FUNNEL_BINDING_FROM:
+        raise RuntimeError(msg)
+    print(f"WARN {msg}")
+
+
 def main(argv: list[str]) -> int:
     try:
         sys.stdout.reconfigure(encoding="utf-8")
@@ -1156,6 +1188,7 @@ def main(argv: list[str]) -> int:
         raise RuntimeError(f"Video hash mismatch: expected {cfg['video_sha256']} actual {av}")
     if at != cfg["thumb_sha256"]:
         raise RuntimeError(f"Thumb hash mismatch: expected {cfg['thumb_sha256']} actual {at}")
+    _funnel_gate(int(args.short))
     print(f"OK {short_id}: scheduled publish at {args.publish_at} (12:00 JST)")
     print(f"OK title: {cfg['title']}")
     if args.dry_run:
