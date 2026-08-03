@@ -86,16 +86,19 @@ def main() -> int:
             if not img.exists():
                 problems.append(f"{sid}: plate {p['n']} has no delivered image ({img.name})")
                 continue
-            depth = img.with_name(img.stem + "_depth.png")
-            if not depth.exists():
+            if not img.with_name(img.stem + "_depth.png").exists():
                 problems.append(f"{sid}: {img.name} has no depth map - the WebGL plate will abort")
-            else:
-                m = MIRROR / sid / depth.name
-                if not m.exists() or m.stat().st_size != depth.stat().st_size:
-                    stale_mirror.append(depth)
-            mi = MIRROR / sid / img.name
-            if not mi.exists() or mi.stat().st_size != img.stat().st_size:
-                stale_mirror.append(img)
+
+        # Compare the WHOLE short directory, not a list of file kinds. Enumerating kinds was wrong
+        # twice in a row: first it missed the staged fx/*.mp4 clips (render 404'd on fx_03.mp4),
+        # then it missed short<NN>_ctathumb.jpg (404 again). The mirror is a derived copy, so the
+        # only correct test is "does it contain everything the real directory does".
+        for src in (PUB / sid).rglob("*"):
+            if not src.is_file():
+                continue
+            m = MIRROR / src.relative_to(PUB)
+            if not m.exists() or m.stat().st_size != src.stat().st_size:
+                stale_mirror.append(src)
 
         if not (DATA / f"{sid}.ts").exists():
             problems.append(f"{sid}: not assembled (remotion/src/data/{sid}.ts missing)")
@@ -107,7 +110,10 @@ def main() -> int:
     if stale_mirror:
         if a.fix_mirror:
             for src in stale_mirror:
-                dst = MIRROR / src.parent.name / src.name
+                # mirror the path RELATIVE to public/shorts so fx/ subdirectories survive; using
+                # src.parent.name alone would flatten fx clips into the short's root and the
+                # render would still 404 on them
+                dst = MIRROR / src.relative_to(PUB)
                 dst.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(src, dst)
             print(f"re-synced {len(stale_mirror)} files into the pruned mirror")
