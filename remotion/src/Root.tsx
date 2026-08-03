@@ -226,6 +226,49 @@ import {SHORT120} from './data/short120';
 import {SHORT132} from './data/short132';
 import {SHORT133} from './data/short133';
 import {SHORT134} from './data/short134';
+import {SHORT121} from './data/short121';
+import {SHORT122} from './data/short122';
+import {SHORT130} from './data/short130';
+import {SHORT131} from './data/short131';
+import {SHORT135} from './data/short135';
+import {SHORT136} from './data/short136';
+import {SHORT137} from './data/short137';
+import {SHORT138} from './data/short138';
+import {SHORT139} from './data/short139';
+import {SHORT140} from './data/short140';
+import {SHORT141} from './data/short141';
+import {SHORT142} from './data/short142';
+import {SHORT143} from './data/short143';
+import {SHORT144} from './data/short144';
+import {SHORT145} from './data/short145';
+import {SHORT150} from './data/short150';
+import {SHORT151} from './data/short151';
+import {SHORT152} from './data/short152';
+import {SHORT153} from './data/short153';
+import {SHORT154} from './data/short154';
+import {SHORT155} from './data/short155';
+import {SHORT156} from './data/short156';
+import {SHORT157} from './data/short157';
+import {SHORT158} from './data/short158';
+import {SHORT159} from './data/short159';
+import {SHORT160} from './data/short160';
+import {SHORT161} from './data/short161';
+import {SHORT162} from './data/short162';
+import {SHORT163} from './data/short163';
+import {SHORT164} from './data/short164';
+import {SHORT165} from './data/short165';
+import {SHORT170} from './data/short170';
+import {SHORT171} from './data/short171';
+import {SHORT172} from './data/short172';
+import {SHORT173} from './data/short173';
+import {SHORT174} from './data/short174';
+import {SHORT175} from './data/short175';
+import {SHORT176} from './data/short176';
+import {SHORT177} from './data/short177';
+import {SHORT178} from './data/short178';
+import {SHORT179} from './data/short179';
+import {SHORT180} from './data/short180';
+import {SHORT181} from './data/short181';
 import {MAHANOY_ROUGHCUT} from './data/mahanoy_roughcut';
 import {TIMBS_ROUGHCUT} from './data/timbs_roughcut';
 import {KELO_ROUGHCUT} from './data/kelo_roughcut';
@@ -2456,6 +2499,307 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{data: SHORT134, platform: 'yt' as const, depth: true, method: true}} />
       <Still id="ShortThumb-short134" component={ShortThumb} width={1080} height={1920}
         defaultProps={{data: SHORT134, headline: 'HE SAID YOU\nCANNOT SEIZE IT', badge: '1 DISSENT', backgroundSrc: 'shorts/short134/short134_01.png'}} />
+      {/* ---- SHORT #121 ---- */}
+      <Composition id="Short-short121-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT121, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT121, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short121" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT121, headline: 'ONE AT A TIME\nMEANS NO ONE', badge: '5–4', backgroundSrc: 'shorts/short121/short121_01.png'}} />
+      {/* ---- SHORT #122 ---- */}
+      <Composition id="Short-short122-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT122, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT122, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short122" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT122, headline: 'YOU NEVER\nSIGNED IT', badge: 'FINE PRINT', backgroundSrc: 'shorts/short122/short122_01.png'}} />
+      {/* ---- SHORT #130 ---- */}
+      <Composition id="Short-short130-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT130, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT130, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short130" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT130, headline: 'ONE WORD DID\nALL THE WORK', badge: '‘IDENTIFICATION’', backgroundSrc: 'shorts/short130/short130_01.png'}} />
+      {/* ---- SHORT #131 ---- */}
+      <Composition id="Short-short131-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT131, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT131, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short131" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT131, headline: 'A PATTERN\nOR A BLUEPRINT', badge: 'DNA AT ARREST', backgroundSrc: 'shorts/short131/short131_01.png'}} />
+      {/* ---- SHORT #135 ---- */}
+      <Composition id="Short-short135-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT135, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT135, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short135" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT135, headline: 'PLACES, OR\nPEOPLE', badge: 'KATZ', backgroundSrc: 'shorts/short135/short135_01.png'}} />
+      {/* ---- SHORT #136 ---- */}
+      <Composition id="Short-short136-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT136, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT136, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short136" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT136, headline: 'THE STOP WAS\nALREADY OVER', badge: '9–0', backgroundSrc: 'shorts/short136/short136_01.png'}} />
+      {/* ---- SHORT #137 ---- */}
+      <Composition id="Short-short137-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT137, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT137, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short137" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT137, headline: 'THEN THE DOG\nARRIVED', badge: '7 MINUTES', backgroundSrc: 'shorts/short137/short137_01.png'}} />
+      {/* ---- SHORT #138 ---- */}
+      <Composition id="Short-short138-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT138, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT138, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short138" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT138, headline: 'AT THE BORDER,\nA DIFFERENT RULE', badge: 'YOUR PHONE', backgroundSrc: 'shorts/short138/short138_01.png'}} />
+      {/* ---- SHORT #139 ---- */}
+      <Composition id="Short-short139-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT139, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT139, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short139" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT139, headline: 'YOUR THUMB.\nNOT YOUR MIND.', badge: 'SPLIT', backgroundSrc: 'shorts/short139/short139_01.png'}} />
+      {/* ---- SHORT #140 ---- */}
+      <Composition id="Short-short140-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT140, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT140, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short140" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT140, headline: 'NO WARNING.\nNO LAWSUIT.', badge: '6–3', backgroundSrc: 'shorts/short140/short140_01.png'}} />
+      {/* ---- SHORT #141 ---- */}
+      <Composition id="Short-short141-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT141, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT141, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short141" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT141, headline: 'A RIGHT WITH\nNO DOOR', badge: 'DISSENT', backgroundSrc: 'shorts/short141/short141_01.png'}} />
+      {/* ---- SHORT #142 ---- */}
+      <Composition id="Short-short142-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT142, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT142, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short142" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT142, headline: 'HE NEVER SAW\nTHE DRIVER', badge: '8–1', backgroundSrc: 'shorts/short142/short142_01.png'}} />
+      {/* ---- SHORT #143 ---- */}
+      <Composition id="Short-short143-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT143, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT143, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short143" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT143, headline: 'A NAME ON\nA PLATE', badge: 'REVOKED', backgroundSrc: 'shorts/short143/short143_01.png'}} />
+      {/* ---- SHORT #144 ---- */}
+      <Composition id="Short-short144-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT144, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT144, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short144" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT144, headline: 'THE STOP WAS\nILLEGAL', badge: 'EVIDENCE KEPT', backgroundSrc: 'shorts/short144/short144_01.png'}} />
+      {/* ---- SHORT #145 ---- */}
+      <Composition id="Short-short145-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT145, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT145, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short145" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT145, headline: 'A WARRANT\nERASED IT', badge: 'DISSENT', backgroundSrc: 'shorts/short145/short145_01.png'}} />
+      {/* ---- SHORT #150 ---- */}
+      <Composition id="Short-short150-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT150, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT150, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short150" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT150, headline: 'HE WROTE IN\nPENCIL', badge: '9–0', backgroundSrc: 'shorts/short150/short150_01.png'}} />
+      {/* ---- SHORT #151 ---- */}
+      <Composition id="Short-short151-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT151, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT151, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short151" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT151, headline: 'A LAWYER IS NOT\nA LUXURY', badge: 'GIDEON', backgroundSrc: 'shorts/short151/short151_01.png'}} />
+      {/* ---- SHORT #152 ---- */}
+      <Composition id="Short-short152-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT152, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT152, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short152" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT152, headline: 'THE WITHDRAWAL\nNEVER CAME', badge: 'FTX', backgroundSrc: 'shorts/short152/short152_01.png'}} />
+      {/* ---- SHORT #153 ---- */}
+      <Composition id="Short-short153-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT153, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT153, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short153" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT153, headline: 'THE BALANCE\nWAS A NUMBER', badge: '$8 BILLION', backgroundSrc: 'shorts/short153/short153_01.png'}} />
+      {/* ---- SHORT #154 ---- */}
+      <Composition id="Short-short154-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT154, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT154, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short154" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT154, headline: 'THE TEST NEVER\nWORKED', badge: 'THERANOS', backgroundSrc: 'shorts/short154/short154_01.png'}} />
+      {/* ---- SHORT #155 ---- */}
+      <Composition id="Short-short155-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT155, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT155, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short155" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT155, headline: 'ONE DROP\nOF BLOOD', badge: 'A PROMISE', backgroundSrc: 'shorts/short155/short155_01.png'}} />
+      {/* ---- SHORT #156 ---- */}
+      <Composition id="Short-short156-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT156, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT156, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short156" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT156, headline: '36 MINUTES.\n$1 TRILLION.', badge: 'FLASH CRASH', backgroundSrc: 'shorts/short156/short156_01.png'}} />
+      {/* ---- SHORT #157 ---- */}
+      <Composition id="Short-short157-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT157, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT157, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short157" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT157, headline: 'HE TRADED FROM\nHIS BEDROOM', badge: 'SARAO', backgroundSrc: 'shorts/short157/short157_01.png'}} />
+      {/* ---- SHORT #158 ---- */}
+      <Composition id="Short-short158-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT158, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT158, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short158" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT158, headline: 'THEY WROTE IT\nOFF ON TAX', badge: '$10M BACK', backgroundSrc: 'shorts/short158/short158_01.png'}} />
+      {/* ---- SHORT #159 ---- */}
+      <Composition id="Short-short159-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT159, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT159, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short159" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT159, headline: 'SOMEBODY GOT\nTHE THIN LETTER', badge: 'SIDE DOOR', backgroundSrc: 'shorts/short159/short159_01.png'}} />
+      {/* ---- SHORT #160 ---- */}
+      <Composition id="Short-short160-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT160, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT160, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short160" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT160, headline: 'NONE OF IT\nCAN BE SOLD', badge: 'STILL MISSING', backgroundSrc: 'shorts/short160/short160_01.png'}} />
+      {/* ---- SHORT #161 ---- */}
+      <Composition id="Short-short161-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT161, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT161, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short161" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT161, headline: 'PSYCHICS.\nBILLBOARDS.', badge: '35 YEARS', backgroundSrc: 'shorts/short161/short161_01.png'}} />
+      {/* ---- SHORT #162 ---- */}
+      <Composition id="Short-short162-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT162, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT162, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short162" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT162, headline: 'A LETTER THAT\nMOVED BILLIONS', badge: 'MILKEN', backgroundSrc: 'shorts/short162/short162_01.png'}} />
+      {/* ---- SHORT #163 ---- */}
+      <Composition id="Short-short163-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT163, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT163, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short163" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT163, headline: 'THE ROAD RAN\nTHROUGH ONE MAN', badge: 'JUNK BONDS', backgroundSrc: 'shorts/short163/short163_01.png'}} />
+      {/* ---- SHORT #164 ---- */}
+      <Composition id="Short-short164-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT164, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT164, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short164" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT164, headline: 'THE CALL WAS\nBEING RECORDED', badge: 'WIRETAP', backgroundSrc: 'shorts/short164/short164_01.png'}} />
+      {/* ---- SHORT #165 ---- */}
+      <Composition id="Short-short165-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT165, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT165, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short165" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT165, headline: 'YOUR PENSION\nWAS ON THE OTHER SIDE', badge: 'INSIDER', backgroundSrc: 'shorts/short165/short165_01.png'}} />
+      {/* ---- SHORT #170 ---- */}
+      <Composition id="Short-short170-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT170, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT170, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short170" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT170, headline: 'COURTROOM 478\nHAD NO JURY', badge: 'FORFEITURE', backgroundSrc: 'shorts/short170/short170_01.png'}} />
+      {/* ---- SHORT #171 ---- */}
+      <Composition id="Short-short171-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT171, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT171, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short171" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT171, headline: 'THEY PAINTED\nHOUSES', badge: 'NO CONVICTION', backgroundSrc: 'shorts/short171/short171_01.png'}} />
+      {/* ---- SHORT #172 ---- */}
+      <Composition id="Short-short172-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT172, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT172, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short172" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT172, headline: 'YOUR FACE IS A\nPASSWORD', badge: 'YOU CAN’T CHANGE', backgroundSrc: 'shorts/short172/short172_01.png'}} />
+      {/* ---- SHORT #173 ---- */}
+      <Composition id="Short-short173-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT173, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT173, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short173" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT173, headline: 'ONE RULE.\nONE CITY.', badge: 'SETTLEMENT', backgroundSrc: 'shorts/short173/short173_01.png'}} />
+      {/* ---- SHORT #174 ---- */}
+      <Composition id="Short-short174-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT174, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT174, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short174" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT174, headline: 'A FEW THOUSAND\nDOLLARS A HEAD', badge: 'KIDS FOR CASH', backgroundSrc: 'shorts/short174/short174_01.png'}} />
+      {/* ---- SHORT #175 ---- */}
+      <Composition id="Short-short175-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT175, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT175, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short175" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT175, headline: 'POLICE ARE\nALLOWED TO LIE', badge: 'FRAZIER', backgroundSrc: 'shorts/short175/short175_01.png'}} />
+      {/* ---- SHORT #176 ---- */}
+      <Composition id="Short-short176-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT176, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT176, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short176" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT176, headline: 'A CHILD IS NOT\nAN ADULT', badge: '4,102 YEARS', backgroundSrc: 'shorts/short176/short176_01.png'}} />
+      {/* ---- SHORT #177 ---- */}
+      <Composition id="Short-short177-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT177, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT177, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short177" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT177, headline: 'THEY WRECKED IT.\nTHEY OWED NOTHING.', badge: 'LECH', backgroundSrc: 'shorts/short177/short177_01.png'}} />
+      {/* ---- SHORT #178 ---- */}
+      <Composition id="Short-short178-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT178, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT178, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short178" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT178, headline: 'THE STATEMENT\nCARRIED NO WEIGHT', badge: 'SPLIT', backgroundSrc: 'shorts/short178/short178_01.png'}} />
+      {/* ---- SHORT #179 ---- */}
+      <Composition id="Short-short179-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT179, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT179, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short179" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT179, headline: 'THE REASONS HAD\nONLY FOUR VOTES', badge: 'HUDSON', backgroundSrc: 'shorts/short179/short179_01.png'}} />
+      {/* ---- SHORT #180 ---- */}
+      <Composition id="Short-short180-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT180, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT180, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short180" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT180, headline: 'RUIN AS\nREVENUE', badge: 'FINES & FEES', backgroundSrc: 'shorts/short180/short180_01.png'}} />
+      {/* ---- SHORT #181 ---- */}
+      <Composition id="Short-short181-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT181, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT181, platform: 'yt' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short181" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT181, headline: 'TOO POOR\nTO PAY', badge: 'BEARDEN', backgroundSrc: 'shorts/short181/short181_01.png'}} />
       <Composition
         id="Short-short01-yt"
         component={Short}

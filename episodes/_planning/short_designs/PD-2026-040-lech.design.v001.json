@@ -75,8 +75,8 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Police destroy your home chasing a stranger who broke in at random. You did nothing wrong. What you are owed depends on your city.",
+          "delivery": "intense",
           "source_lines": [
             "Nobody gets to choose which door the emergency comes through.",
             "Nobody in this story did the wrong thing that day."
@@ -84,8 +84,8 @@
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "Indiana, 2022. Police had a warrant, an internet address and the wrong home. Thirty canisters of tear gas went in. Nobody paid for it.",
+          "delivery": "building",
           "source_lines": [
             "They had a warrant, an IP address, and the wrong home.",
             "Thirty canisters of tear gas had already gone in through the broken windows.",
@@ -94,8 +94,8 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Texas. A federal jury said one woman was owed nearly sixty thousand dollars. A federal appeals court erased it. Nobody disputes the police acted lawfully.",
+          "delivery": "building",
           "source_lines": [
             "A federal jury said she was owed nearly sixty thousand dollars, and the Fifth Circuit erased it",
             "Nobody disputes the police acted lawfully."
@@ -103,16 +103,42 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "Then Las Vegas. The department denied the claim, then reversed itself after the story ran. Same damage, and the difference was not a rule. It was a news cycle.",
+          "delivery": "intense",
           "source_lines": [
             "The department denied the claim, and then, after the story ran, reversed itself and covered it. Same kind of emergency, same kind of damage, and the difference was not a rule. It was a news cycle."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Tennessee. Deputies put about thirty-five gas canisters into a house. Roughly seventy thousand dollars of damage.",
+          "delivery": "building",
+          "source_lines": [
+            "Deputies came for the Slaybaughs' son, who was staying with them, and put about thirty-five gas canisters into the house.",
+            "Roughly seventy thousand dollars of damage."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "An appeals court called that exception questionable, then dismissed the claim anyway.",
+          "delivery": "building",
+          "source_lines": [
+            "In 2024 the Sixth Circuit called a categorical police-power exception questionable, then dismissed the claim anyway on an old common-law privilege attached to searches and arrests."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Los Angeles. A fugitive locked a man out of his print shop. In 2025 a court ruled he gets nothing.",
+          "delivery": "intense",
+          "source_lines": [
+            "In November 2025 the Ninth Circuit ruled that Carlos Pena gets nothing.",
+            "Thirteen hours earlier, in August 2022, an armed fugitive had shoved Pena out of his own print shop in Los Angeles and locked the door behind him."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Whether you are made whole is not decided by the Constitution. It is decided by which city you live in. And nobody chooses which door the emergency comes through.",
+          "delivery": "calm",
           "source_lines": [
             "Whether you are made whole is not decided by the Constitution. It's decided by which city you happen to live in."
           ]
@@ -138,13 +164,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "rubble and debris close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0748__american_flag_waving.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8790__broken_house_demolition.mp4",
           "bound_title": "american flag waving in desert landscape",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4158,
           "motion": 14.001,
-          "luma": 102.5
+          "luma": 102.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
         },
         {
           "n": 3,
@@ -215,13 +243,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "broken glass on floor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0827__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21650__elevator_interior_steel.mp4",
           "bound_title": "a person counting money",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3993,
           "motion": 7.015,
-          "luma": 188.3
+          "luma": 188.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
         },
         {
           "n": 10,
@@ -242,13 +272,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "burnt wood texture close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-0172__embers_floating.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39158__physical_bitcoin_coin.mp4",
           "bound_title": "embers floating in the air from burning woods",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.782,
           "motion": 3.249,
-          "luma": 35.3
+          "luma": 35.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         },
         {
           "n": 12,
@@ -309,13 +341,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "microphone close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-15587__vintage_radio_microphone.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53384__stack_of_letters_with_ribbon.mp4",
           "bound_title": "close up of a microphone and a pop filter in a recording studio",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.39,
           "motion": 13.725,
-          "luma": 86.5
+          "luma": 86.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
         },
         {
           "n": 18,
@@ -356,13 +390,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "city skyline at night",
-          "bound_file": "D:\\pd-archive\\textures_backgrounds\\pixabay_extra__v_318786__cinematic-city-at-night-city-lights-reflection-neon-glow-urb.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-13430__drone_city_aerial_night.mp4",
           "bound_title": "cinematic city at night, city lights reflection, neon glow, urban skyline, night",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.4256,
           "motion": 19.832,
-          "luma": 90.3
+          "luma": 90.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
         },
         {
           "n": 22,
@@ -377,12 +413,214 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the hole punched through the wall",
           "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "the morning after the canisters",
+          "source": "FOOTAGE",
+          "footage_query": "morning light through a shattered window frame",
           "prompt": null,
-          "footage_query": "hole in wall damaged house"
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1754__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "W03",
+          "subject": "the room they cleared",
+          "source": "FOOTAGE",
+          "footage_query": "empty room with plaster dust on floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8782__broken_house_demolition.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "sorting what was left",
+          "source": "FOOTAGE",
+          "footage_query": "gloved hands sorting through debris",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-2591__paper_scraps_flying.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "the family's things, outside",
+          "source": "FOOTAGE",
+          "footage_query": "family belongings piled on a lawn",
+          "prompt": null
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U04",
+          "subject": "the hallway the gas went down",
+          "source": "FOOTAGE",
+          "footage_query": "house hallway lit by flat daylight",
+          "prompt": null
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "the law reports the exception lives in",
+          "source": "FOOTAGE",
+          "footage_query": "tall shelves of bound volumes in a library",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14922__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y05",
+          "subject": "the claim, closed",
+          "source": "FOOTAGE",
+          "footage_query": "closed file bound with an elastic band",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36063__wax_seal_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U06",
+          "subject": "the judge who called it questionable",
+          "source": "FOOTAGE",
+          "footage_query": "empty leather chair behind a large desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7867__boardroom_table_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "W06",
+          "subject": "the case boxed and put away",
+          "source": "FOOTAGE",
+          "footage_query": "sealed cardboard box taped shut on desk",
+          "prompt": null
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I05",
+          "subject": "where the file went",
+          "source": "FOOTAGE",
+          "footage_query": "long aisle of tall archive shelves",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33695__old_library_archive.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W10",
+          "subject": "the print shop he could not get into",
+          "source": "FOOTAGE",
+          "footage_query": "metal roller shutter pulled down over shopfront",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1751__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U01",
+          "subject": "the bench nobody worked at",
+          "source": "FOOTAGE",
+          "footage_query": "overhead light burning above a workshop bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31161__spotlight_on_dark_stage.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U12",
+          "subject": "the day it opened again",
+          "source": "FOOTAGE",
+          "footage_query": "shop door standing open to the street",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "W08",
+          "subject": "what he was left with",
+          "source": "FOOTAGE",
+          "footage_query": "bare brick wall beside an empty storefront",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3644__concrete_wall_texture_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y01",
+          "subject": "the work left hanging",
+          "source": "FOOTAGE",
+          "footage_query": "work apron left hanging on a hook",
+          "prompt": null
         }
       ],
       "type": "B — a number/stakes gap",
@@ -398,24 +636,24 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "Every side of this argument quotes the same sentence, from a 1960 case.",
+          "delivery": "intense",
           "source_lines": [
             "Justice Sotomayor and the parties on every side of this quote the same sentence, from a 1960 case called Armstrong."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "The Takings Clause was designed to bar Government from forcing some people alone to bear public burdens which, in all fairness and justice, should be borne by the public as a whole.",
+          "delivery": "building",
           "source_lines": [
             "The Takings Clause was designed to bar Government from forcing some people alone to bear public burdens which, in all fairness and justice, should be borne by the public as a whole."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Some people alone. In November 2024, when the Supreme Court declined one of these cases, Justice Sotomayor wrote a statement respecting that denial, joined by Justice Gorsuch.",
+          "delivery": "building",
           "source_lines": [
             "Some people alone.",
             "In November 2024, when the Supreme Court declined to hear Vicki Baker's case, Justice Sotomayor wrote a statement respecting that denial, joined by Justice Gorsuch. It carried no legal weight."
@@ -423,8 +661,8 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "She wrote that the question divides the courts of appeals, and that it would benefit from further percolation in the lower courts before the Court steps in. The denial expressed no view on the merits.",
+          "delivery": "intense",
           "source_lines": [
             "She wrote that the case raises an important question that divides the courts of appeals, whether the Takings Clause requires compensation when the government damages private property under its police power.",
             "And she said the question would benefit from further percolation in the lower courts before the Court steps in, adding that the denial expressed no view on the merits."
@@ -432,8 +670,32 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The statement carried no legal weight. It was not the Court's opinion, and not a dissent.",
+          "delivery": "building",
+          "source_lines": [
+            "It carried no legal weight. It wasn't the Court's opinion and it wasn't a dissent. It was filed alongside the refusal itself."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "She mapped the split, several circuits one way, and the Fourth holding police-power action is not automatically exempt.",
+          "delivery": "building",
+          "source_lines": [
+            "She mapped the split: the Seventh Circuit and the Federal Circuit on one side, the Sixth reaching the same result by another road, the Fourth Circuit holding that government action under the police power is not automatically exempt from the Takings Clause."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Two more petitions are pending now, distributed for conference on September the twenty-eighth.",
+          "delivery": "intense",
+          "source_lines": [
+            "Hadley's and Pena's, both filed on April 6, 2026, both distributed for conference on September 28. Both still pending."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "So the sentence stands, and so does the split. She cited one Colorado case by name, where a family alone bore the whole burden.",
+          "delivery": "calm",
           "source_lines": [
             "She cited Lech by name."
           ]
@@ -499,13 +761,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "courthouse exterior columns",
-          "bound_file": "D:\\pd-archive\\money_banking\\pixabay_extra__v_59039__cats-street-floor-game-fun-animals-play-exterior-patio-pair.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2435__bank_building_columns.mp4",
           "bound_title": "cats, street, floor, game, fun, animals, play, exterior, patio, pair",
           "bound_license": "free_commercial",
           "bound_source": "pixabay_extra",
           "centre_energy": 0.4009,
           "motion": 4.002,
-          "luma": 103.7
+          "luma": 103.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.332
         },
         {
           "n": 7,
@@ -536,13 +800,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "silhouette carrying heavy bag",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5680__lone_person_silhouette_walking.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39169__physical_bitcoin_coin.mp4",
           "bound_title": "a man carrying a torch while walking in a park on a foggy night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4782,
           "motion": 0.975,
-          "luma": 41.8
+          "luma": 41.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
         },
         {
           "n": 10,
@@ -583,13 +849,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands sorting papers desk",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4592__newspaper_macro.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23803__shredded_documents_pile.mp4",
           "bound_title": "burning newspapers in fireplace",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4489,
           "motion": 8.996,
-          "luma": 40.1
+          "luma": 40.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
         },
         {
           "n": 14,
@@ -610,13 +878,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "coffee brewing close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1742__front_door_house.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-2948__colored_powder_burst.mp4",
           "bound_title": "close up of a person s hand holding house keys",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6124,
           "motion": 9.193,
-          "luma": 150.4
+          "luma": 150.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         },
         {
           "n": 16,
@@ -637,13 +907,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "steam rising macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\vfx_overlays\\AF-VFX-0059__smoke_on_black_background.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0060__dark_cinematic_background.mp4",
           "bound_title": "white soft liquid nitrogen steam",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4134,
           "motion": 28.482,
-          "luma": 68.8
+          "luma": 68.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
         },
         {
           "n": 18,
@@ -684,13 +956,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "rain falling on steps",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0831__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-48709__person_in_wheelchair_silhouette.mp4",
           "bound_title": "woman counting money",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4174,
           "motion": 10.34,
-          "luma": 139.8
+          "luma": 139.8,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
         },
         {
           "n": 22,
@@ -705,12 +979,215 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the open reporter and its blank pages",
           "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U03",
+          "subject": "a statement nobody had to sign",
+          "source": "FOOTAGE",
+          "footage_query": "pen resting on an unsigned blank page",
           "prompt": null,
-          "footage_query": "open law book lectern lamp"
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53407__stack_of_letters_with_ribbon.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U06",
+          "subject": "an opinion standing on its own",
+          "source": "FOOTAGE",
+          "footage_query": "one chair standing apart from a row",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2293__empty_stadium_seats.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M04",
+          "subject": "words with no weight behind them",
+          "source": "FOOTAGE",
+          "footage_query": "blank pages held under a paperweight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30345__newspaper_macro.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "I02",
+          "subject": "the doors it did not open",
+          "source": "FOOTAGE",
+          "footage_query": "pair of tall panelled doors closed",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1823__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "R06",
+          "subject": "the room it was not read in",
+          "source": "FOOTAGE",
+          "footage_query": "rows of empty wooden pews in a hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29771__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U08",
+          "subject": "the circuits, side by side",
+          "source": "FOOTAGE",
+          "footage_query": "wall of numbered wooden pigeonholes",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23892__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U02",
+          "subject": "one of them going the other way",
+          "source": "FOOTAGE",
+          "footage_query": "one door of a pair standing open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4815__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "R04",
+          "subject": "the split, in one picture",
+          "source": "FOOTAGE",
+          "footage_query": "two people seated apart on long bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26916__empty_playground_at_dusk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "Y04",
+          "subject": "the Fourth, out of line",
+          "source": "FOOTAGE",
+          "footage_query": "framed pictures with one hanging crooked",
+          "prompt": null
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "M06",
+          "subject": "the cases she pulled together",
+          "source": "FOOTAGE",
+          "footage_query": "card index drawer pulled open",
+          "prompt": null
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "W06",
+          "subject": "two petitions waiting",
+          "source": "FOOTAGE",
+          "footage_query": "two sealed envelopes lying on a desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6482__us_constitution_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U01",
+          "subject": "the conference room they go to",
+          "source": "FOOTAGE",
+          "footage_query": "lamp lit over an empty meeting table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3772__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W09",
+          "subject": "the date they were set for",
+          "source": "FOOTAGE",
+          "footage_query": "desk calendar standing on an empty desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29225__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y05",
+          "subject": "the two files on the list",
+          "source": "FOOTAGE",
+          "footage_query": "two closed folders side by side",
+          "prompt": null
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "W11",
+          "subject": "the seats nobody has taken yet",
+          "source": "FOOTAGE",
+          "footage_query": "two empty chairs at a long table",
+          "prompt": null
         }
       ],
       "type": "C — a quotation or document",

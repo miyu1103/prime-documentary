@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT156_TOTAL_SEC = 42.33;
+export const SHORT156_TOTAL_SEC = 60.59;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 34.875,
     "end": 41.33
+  },
+  {
+    "id": "L6",
+    "start": 41.55,
+    "end": 45.915
+  },
+  {
+    "id": "L7",
+    "start": 46.135,
+    "end": 53.147
+  },
+  {
+    "id": "L8",
+    "start": 53.367,
+    "end": 59.59
   }
 ];
 
@@ -135,23 +150,78 @@ export const SHORT156_CAPTIONS: ShortCaption[] = [
     "endSec": 34.655
   },
   {
-    "word": "The safety net people set up",
+    "word": "With almost no machines",
     "startSec": 34.875,
-    "endSec": 36.381
+    "endSec": 36.406
+  },
+  {
+    "word": "left to catch them",
+    "startSec": 36.406,
+    "endSec": 37.603
+  },
+  {
+    "word": "shares in giant",
+    "startSec": 37.603,
+    "endSec": 38.602
+  },
+  {
+    "word": "healthy companies plunged toward nothing.",
+    "startSec": 38.602,
+    "endSec": 41.33
+  },
+  {
+    "word": "For a few seconds a share",
+    "startSec": 41.55,
+    "endSec": 42.834
+  },
+  {
+    "word": "of a company worth tens of",
+    "startSec": 42.834,
+    "endSec": 44.169
+  },
+  {
+    "word": "billions traded at a single penny.",
+    "startSec": 44.169,
+    "endSec": 45.915
+  },
+  {
+    "word": "Nearly a thousand points and around a",
+    "startSec": 46.135,
+    "endSec": 48.162
+  },
+  {
+    "word": "trillion dollars in value were gone",
+    "startSec": 48.162,
+    "endSec": 50.079
+  },
+  {
+    "word": "until circuit breakers fired and",
+    "startSec": 50.079,
+    "endSec": 51.832
+  },
+  {
+    "word": "the market climbed back.",
+    "startSec": 51.832,
+    "endSec": 53.147
+  },
+  {
+    "word": "The safety net people set up",
+    "startSec": 53.367,
+    "endSec": 54.819
   },
   {
     "word": "to protect their savings is what",
-    "startSec": 36.381,
-    "endSec": 38.102
+    "startSec": 54.819,
+    "endSec": 56.478
   },
   {
     "word": "sold those savings at the bottom.",
-    "startSec": 38.102,
-    "endSec": 39.878
+    "startSec": 56.478,
+    "endSec": 58.19
   },
   {
     "word": "It took thirty-six minutes.",
-    "startSec": 39.878,
-    "endSec": 41.33
+    "startSec": 58.19,
+    "endSec": 59.59
   }
 ];

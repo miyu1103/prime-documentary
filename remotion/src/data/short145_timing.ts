@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT145_TOTAL_SEC = 37.267;
+export const SHORT145_TOTAL_SEC = 59.289;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 29.394,
     "end": 36.267
+  },
+  {
+    "id": "L6",
+    "start": 36.487,
+    "end": 43.917
+  },
+  {
+    "id": "L7",
+    "start": 44.137,
+    "end": 50.871
+  },
+  {
+    "id": "L8",
+    "start": 51.091,
+    "end": 58.289
   }
 ];
 
@@ -125,23 +140,83 @@ export const SHORT145_CAPTIONS: ShortCaption[] = [
     "endSec": 29.174
   },
   {
-    "word": "Her side lost. Three votes not five.",
+    "word": "The majority called the warrant",
     "startSec": 29.394,
-    "endSec": 31.664
+    "endSec": 30.961
+  },
+  {
+    "word": "a genuine intervening circumstance.",
+    "startSec": 30.961,
+    "endSec": 32.729
+  },
+  {
+    "word": "It broke the chain",
+    "startSec": 32.729,
+    "endSec": 33.639
+  },
+  {
+    "word": "and the evidence from that",
+    "startSec": 33.639,
+    "endSec": 34.953
+  },
+  {
+    "word": "search stayed in the case.",
+    "startSec": 34.953,
+    "endSec": 36.267
+  },
+  {
+    "word": "The Court also judged the",
+    "startSec": 36.487,
+    "endSec": 37.884
+  },
+  {
+    "word": "officer's conduct at most negligent not flagrant",
+    "startSec": 37.884,
+    "endSec": 40.565
+  },
+  {
+    "word": "which tipped the third factor",
+    "startSec": 40.565,
+    "endSec": 42.185
+  },
+  {
+    "word": "toward letting the evidence in.",
+    "startSec": 42.185,
+    "endSec": 43.917
+  },
+  {
+    "word": "She called that exactly the temptation the",
+    "startSec": 44.137,
+    "endSec": 46.514
+  },
+  {
+    "word": "exclusionary rule is supposed to remove",
+    "startSec": 46.514,
+    "endSec": 48.721
+  },
+  {
+    "word": "and the majority had just restored it.",
+    "startSec": 48.721,
+    "endSec": 50.871
+  },
+  {
+    "word": "Her side lost. Three votes not five.",
+    "startSec": 51.091,
+    "endSec": 53.468
   },
   {
     "word": "And of the two dissents",
-    "startSec": 31.664,
-    "endSec": 33.114
+    "startSec": 53.468,
+    "endSec": 54.987
   },
   {
     "word": "the one that did the math",
-    "startSec": 33.114,
-    "endSec": 34.691
+    "startSec": 54.987,
+    "endSec": 56.638
   },
   {
     "word": "is the one nobody quotes.",
-    "startSec": 34.691,
-    "endSec": 36.267
+    "startSec": 56.638,
+    "endSec": 58.289
   }
 ];

@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT143_TOTAL_SEC = 39.635;
+export const SHORT143_TOTAL_SEC = 60.125;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.948,
     "end": 38.635
+  },
+  {
+    "id": "L6",
+    "start": 38.855,
+    "end": 45.589
+  },
+  {
+    "id": "L7",
+    "start": 45.809,
+    "end": 52.171
+  },
+  {
+    "id": "L8",
+    "start": 52.391,
+    "end": 59.125
   }
 ];
 
@@ -115,28 +130,93 @@ export const SHORT143_CAPTIONS: ShortCaption[] = [
     "endSec": 31.728
   },
   {
-    "word": "Revoked.",
+    "word": "A deputy typed the truck's",
     "startSec": 31.948,
-    "endSec": 32.648
+    "endSec": 33.62
+  },
+  {
+    "word": "plate into his dashboard laptop",
+    "startSec": 33.62,
+    "endSec": 35.613
+  },
+  {
+    "word": "and the screen came back",
+    "startSec": 35.613,
+    "endSec": 37.156
+  },
+  {
+    "word": "with a revoked license.",
+    "startSec": 37.156,
+    "endSec": 38.635
+  },
+  {
+    "word": "A revoked license in Kansas follows",
+    "startSec": 38.855,
+    "endSec": 40.978
+  },
+  {
+    "word": "a serious or repeated pattern.",
+    "startSec": 40.978,
+    "endSec": 42.798
+  },
+  {
+    "word": "It is the state saying",
+    "startSec": 42.798,
+    "endSec": 44.133
+  },
+  {
+    "word": "you cannot drive at all.",
+    "startSec": 44.133,
+    "endSec": 45.589
+  },
+  {
+    "word": "Kansas argued the likeliest",
+    "startSec": 45.809,
+    "endSec": 47.399
+  },
+  {
+    "word": "driver is the owner.",
+    "startSec": 47.399,
+    "endSec": 48.578
+  },
+  {
+    "word": "Glover's side called that a",
+    "startSec": 48.578,
+    "endSec": 50.168
+  },
+  {
+    "word": "stereotype about a name",
+    "startSec": 50.168,
+    "endSec": 51.523
+  },
+  {
+    "word": "not a fact.",
+    "startSec": 51.523,
+    "endSec": 52.171
+  },
+  {
+    "word": "Revoked.",
+    "startSec": 52.391,
+    "endSec": 53.091
   },
   {
     "word": "That was the word.",
-    "startSec": 32.648,
-    "endSec": 33.677
+    "startSec": 53.091,
+    "endSec": 54.127
   },
   {
     "word": "And a single glance showing the",
-    "startSec": 33.677,
-    "endSec": 35.449
+    "startSec": 54.127,
+    "endSec": 55.911
   },
   {
     "word": "driver is not the owner is",
-    "startSec": 35.449,
-    "endSec": 36.935
+    "startSec": 55.911,
+    "endSec": 57.408
   },
   {
     "word": "enough to wipe the suspicion away.",
-    "startSec": 36.935,
-    "endSec": 38.635
+    "startSec": 57.408,
+    "endSec": 59.125
   }
 ];

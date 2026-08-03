@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT172_TOTAL_SEC = 39.449;
+export const SHORT172_TOTAL_SEC = 55.666;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.39,
     "end": 38.449
+  },
+  {
+    "id": "L6",
+    "start": 38.669,
+    "end": 43.777
+  },
+  {
+    "id": "L7",
+    "start": 43.997,
+    "end": 47.341
+  },
+  {
+    "id": "L8",
+    "start": 47.561,
+    "end": 54.666
   }
 ];
 
@@ -140,28 +155,73 @@ export const SHORT172_CAPTIONS: ShortCaption[] = [
     "endSec": 31.17
   },
   {
-    "word": "In a Detroit suburb",
+    "word": "Police hand a blurry frame",
     "startSec": 31.39,
-    "endSec": 32.463
+    "endSec": 34.089
+  },
+  {
+    "word": "to software and ask it",
+    "startSec": 34.089,
+    "endSec": 36.373
+  },
+  {
+    "word": "to go find a person.",
+    "startSec": 36.373,
+    "endSec": 38.449
+  },
+  {
+    "word": "A face on a screen is",
+    "startSec": 38.669,
+    "endSec": 40.044
+  },
+  {
+    "word": "not supposed to be enough.",
+    "startSec": 40.044,
+    "endSec": 41.747
+  },
+  {
+    "word": "A match is a lead",
+    "startSec": 41.747,
+    "endSec": 42.86
+  },
+  {
+    "word": "not an arrest.",
+    "startSec": 42.86,
+    "endSec": 43.777
+  },
+  {
+    "word": "Your face has quietly become a",
+    "startSec": 43.997,
+    "endSec": 45.669
+  },
+  {
+    "word": "password you can never change.",
+    "startSec": 45.669,
+    "endSec": 47.341
+  },
+  {
+    "word": "In a Detroit suburb",
+    "startSec": 47.561,
+    "endSec": 48.641
   },
   {
     "word": "one father was matched to a",
-    "startSec": 32.463,
-    "endSec": 33.988
+    "startSec": 48.641,
+    "endSec": 50.176
   },
   {
     "word": "crime he never heard of.",
-    "startSec": 33.988,
-    "endSec": 35.343
+    "startSec": 50.176,
+    "endSec": 51.54
   },
   {
     "word": "About thirty hours in a cell.",
-    "startSec": 35.343,
-    "endSec": 36.981
+    "startSec": 51.54,
+    "endSec": 53.188
   },
   {
     "word": "He was only in the lineup.",
-    "startSec": 36.981,
-    "endSec": 38.449
+    "startSec": 53.188,
+    "endSec": 54.666
   }
 ];

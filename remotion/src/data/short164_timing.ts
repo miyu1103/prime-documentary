@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT164_TOTAL_SEC = 35.966;
+export const SHORT164_TOTAL_SEC = 55.991;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 28.279,
     "end": 34.966
+  },
+  {
+    "id": "L6",
+    "start": 35.186,
+    "end": 40.062
+  },
+  {
+    "id": "L7",
+    "start": 40.282,
+    "end": 48.223
+  },
+  {
+    "id": "L8",
+    "start": 48.443,
+    "end": 54.991
   }
 ];
 
@@ -130,23 +145,83 @@ export const SHORT164_CAPTIONS: ShortCaption[] = [
     "endSec": 28.059
   },
   {
-    "word": "You cannot tell a jury",
+    "word": "The deniable phone call",
     "startSec": 28.279,
-    "endSec": 29.667
+    "endSec": 29.393
+  },
+  {
+    "word": "had become a recording. Time-stamped",
+    "startSec": 29.393,
+    "endSec": 31.138
+  },
+  {
+    "word": "in the speaker's own unmistakable voice",
+    "startSec": 31.138,
+    "endSec": 33.028
+  },
+  {
+    "word": "sitting in a government evidence locker.",
+    "startSec": 33.028,
+    "endSec": 34.966
+  },
+  {
+    "word": "The trial opened in Manhattan in 2011",
+    "startSec": 35.186,
+    "endSec": 37.36
+  },
+  {
+    "word": "and more than anything else",
+    "startSec": 37.36,
+    "endSec": 38.946
+  },
+  {
+    "word": "it turned on sound.",
+    "startSec": 38.946,
+    "endSec": 40.062
+  },
+  {
+    "word": "Prosecutors did not describe the",
+    "startSec": 40.282,
+    "endSec": 42.11
+  },
+  {
+    "word": "scheme in their own words.",
+    "startSec": 42.11,
+    "endSec": 43.596
+  },
+  {
+    "word": "They sat twelve ordinary people down",
+    "startSec": 43.596,
+    "endSec": 45.652
+  },
+  {
+    "word": "and played the recorded calls",
+    "startSec": 45.652,
+    "endSec": 47.309
+  },
+  {
+    "word": "again and again.",
+    "startSec": 47.309,
+    "endSec": 48.223
+  },
+  {
+    "word": "You cannot tell a jury",
+    "startSec": 48.443,
+    "endSec": 49.802
   },
   {
     "word": "a recording is only guessing or jealous",
-    "startSec": 29.667,
-    "endSec": 32.127
+    "startSec": 49.802,
+    "endSec": 52.211
   },
   {
     "word": "or assembling a clever",
-    "startSec": 32.127,
-    "endSec": 33.515
+    "startSec": 52.211,
+    "endSec": 53.57
   },
   {
     "word": "mosaic of public facts.",
-    "startSec": 33.515,
-    "endSec": 34.966
+    "startSec": 53.57,
+    "endSec": 54.991
   }
 ];

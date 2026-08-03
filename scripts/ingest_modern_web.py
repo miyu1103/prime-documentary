@@ -492,7 +492,10 @@ def take_item(ledger: base.Ledger, *, source: str, item_id: str, title: str,
     # single common word costs nothing and that is how a cat wallpaper reached
     # bank_and_branch and pancakes reached household_loss. Natural-language titles from
     # mixkit/coverr/unsplash are left alone - one honest word there is real evidence.
-    if source == "pixabay_extra" and len((tag_text or "").split(",")) >= 6 \
+    # The tag dump arrives as the TITLE, not in tag_text - a pixabay ledger title reads
+    # "older woman, cat, desktop backgrounds, pet, windows wallpaper". Checking tag_text
+    # meant this gate never fired once and flowers, playgrounds and snow kept arriving.
+    if source == "pixabay_extra" and len((title or "").split(",")) >= 6 \
             and len(set(matched or [])) < 2:
         base.reject_log(source, item_id, theme, "tag-list-single-term",
                         score, matched, negs, title=title)

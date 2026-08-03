@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT170_TOTAL_SEC = 41.586;
+export const SHORT170_TOTAL_SEC = 60.497;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.762,
     "end": 40.586
+  },
+  {
+    "id": "L6",
+    "start": 40.806,
+    "end": 46.1
+  },
+  {
+    "id": "L7",
+    "start": 46.32,
+    "end": 50.175
+  },
+  {
+    "id": "L8",
+    "start": 50.395,
+    "end": 59.497
   }
 ];
 
@@ -140,23 +155,73 @@ export const SHORT170_CAPTIONS: ShortCaption[] = [
     "endSec": 31.542
   },
   {
-    "word": "Courtroom 478 was closed",
+    "word": "In an ordinary criminal case the",
     "startSec": 31.762,
-    "endSec": 33.527
+    "endSec": 34.703
+  },
+  {
+    "word": "government must prove a person's guilt",
+    "startSec": 34.703,
+    "endSec": 38.196
+  },
+  {
+    "word": "beyond a reasonable doubt.",
+    "startSec": 38.196,
+    "endSec": 40.586
+  },
+  {
+    "word": "In that room the promise ran backwards.",
+    "startSec": 40.806,
+    "endSec": 43.126
+  },
+  {
+    "word": "They took first",
+    "startSec": 43.126,
+    "endSec": 44.018
+  },
+  {
+    "word": "and left you to",
+    "startSec": 44.018,
+    "endSec": 44.91
+  },
+  {
+    "word": "prove your way home.",
+    "startSec": 44.91,
+    "endSec": 46.1
+  },
+  {
+    "word": "It was built to take small",
+    "startSec": 46.32,
+    "endSec": 47.589
+  },
+  {
+    "word": "amounts from the people least able",
+    "startSec": 47.589,
+    "endSec": 49.248
+  },
+  {
+    "word": "to fight City Hall.",
+    "startSec": 49.248,
+    "endSec": 50.175
+  },
+  {
+    "word": "Courtroom 478 was closed",
+    "startSec": 50.395,
+    "endSec": 52.215
   },
   {
     "word": "for good in 2018.",
-    "startSec": 33.527,
-    "endSec": 34.777
+    "startSec": 52.215,
+    "endSec": 53.505
   },
   {
     "word": "Between 2002 and 2014 the city had",
-    "startSec": 34.777,
-    "endSec": 37.277
+    "startSec": 53.505,
+    "endSec": 56.084
   },
   {
     "word": "already taken more than twelve hundred homes.",
-    "startSec": 37.277,
-    "endSec": 40.586
+    "startSec": 56.084,
+    "endSec": 59.497
   }
 ];

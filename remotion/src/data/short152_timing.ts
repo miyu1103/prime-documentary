@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT152_TOTAL_SEC = 38.427;
+export const SHORT152_TOTAL_SEC = 64.397;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 29.579,
     "end": 37.427
+  },
+  {
+    "id": "L6",
+    "start": 37.647,
+    "end": 47.539
+  },
+  {
+    "id": "L7",
+    "start": 47.759,
+    "end": 54.539
+  },
+  {
+    "id": "L8",
+    "start": 54.759,
+    "end": 63.397
   }
 ];
 
@@ -125,28 +140,103 @@ export const SHORT152_CAPTIONS: ShortCaption[] = [
     "endSec": 29.359
   },
   {
-    "word": "Roughly eight billion owed to customers.",
+    "word": "Three in the morning",
     "startSec": 29.579,
-    "endSec": 32.195
+    "endSec": 30.825
+  },
+  {
+    "word": "somewhere in America.",
+    "startSec": 30.825,
+    "endSec": 32.133
+  },
+  {
+    "word": "A customer opens the app",
+    "startSec": 32.133,
+    "endSec": 33.628
+  },
+  {
+    "word": "stares at his life savings",
+    "startSec": 33.628,
+    "endSec": 35.247
+  },
+  {
+    "word": "and taps withdraw. Nothing happens.",
+    "startSec": 35.247,
+    "endSec": 37.427
+  },
+  {
+    "word": "Beyond the customers",
+    "startSec": 37.647,
+    "endSec": 39.102
+  },
+  {
+    "word": "about 1.7 billion dollars was",
+    "startSec": 39.102,
+    "endSec": 41.211
+  },
+  {
+    "word": "owed to investors and another",
+    "startSec": 41.211,
+    "endSec": 43.32
+  },
+  {
+    "word": "1.3 billion to Alameda's lenders.",
+    "startSec": 43.32,
+    "endSec": 45.721
+  },
+  {
+    "word": "FTX filed for bankruptcy.",
+    "startSec": 45.721,
+    "endSec": 47.539
+  },
+  {
+    "word": "A run is the",
+    "startSec": 47.759,
+    "endSec": 48.459
+  },
+  {
+    "word": "oldest test there is.",
+    "startSec": 48.459,
+    "endSec": 49.58
+  },
+  {
+    "word": "The hidden door stayed invisible",
+    "startSec": 49.58,
+    "endSec": 51.288
+  },
+  {
+    "word": "only while the deposits sat",
+    "startSec": 51.288,
+    "endSec": 52.73
+  },
+  {
+    "word": "where customers believed they were.",
+    "startSec": 52.73,
+    "endSec": 54.539
+  },
+  {
+    "word": "Roughly eight billion owed to customers.",
+    "startSec": 54.759,
+    "endSec": 57.638
   },
   {
     "word": "It was not burned.",
-    "startSec": 32.195,
-    "endSec": 33.372
+    "startSec": 57.638,
+    "endSec": 58.934
   },
   {
     "word": "It was moved",
-    "startSec": 33.372,
-    "endSec": 34.157
+    "startSec": 58.934,
+    "endSec": 59.798
   },
   {
     "word": "bet and spent",
-    "startSec": 34.157,
-    "endSec": 35.007
+    "startSec": 59.798,
+    "endSec": 60.734
   },
   {
     "word": "long before anyone asked for it back.",
-    "startSec": 35.007,
-    "endSec": 37.427
+    "startSec": 60.734,
+    "endSec": 63.397
   }
 ];

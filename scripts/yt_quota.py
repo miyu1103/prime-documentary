@@ -47,6 +47,8 @@ UNITS = {
     "playlistItems.list": 1,
     "channels.list": 1,
     "playlistItems.insert": 50,
+    "commentThreads.insert": 50,
+    "commentThreads.list": 1,
 }
 
 # Google resets quota at midnight Pacific, which means the date must follow US daylight saving.

@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT163_TOTAL_SEC = 44.419;
+export const SHORT163_TOTAL_SEC = 66.349;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 32.784,
     "end": 43.419
+  },
+  {
+    "id": "L6",
+    "start": 43.639,
+    "end": 48.794
+  },
+  {
+    "id": "L7",
+    "start": 49.014,
+    "end": 55.144
+  },
+  {
+    "id": "L8",
+    "start": 55.364,
+    "end": 65.349
   }
 ];
 
@@ -130,28 +145,73 @@ export const SHORT163_CAPTIONS: ShortCaption[] = [
     "endSec": 32.564
   },
   {
-    "word": "So which is the real Michael Milken?",
+    "word": "The money went to cancer research",
     "startSec": 32.784,
-    "endSec": 35.063
+    "endSec": 36.727
+  },
+  {
+    "word": "and to scientists who could",
+    "startSec": 36.727,
+    "endSec": 39.954
+  },
+  {
+    "word": "not get funded anywhere else.",
+    "startSec": 39.954,
+    "endSec": 43.419
+  },
+  {
+    "word": "He had already created the Milken Institute",
+    "startSec": 43.639,
+    "endSec": 46.022
+  },
+  {
+    "word": "an economic think tank that",
+    "startSec": 46.022,
+    "endSec": 47.519
+  },
+  {
+    "word": "still carries his name.",
+    "startSec": 47.519,
+    "endSec": 48.794
+  },
+  {
+    "word": "The man the government had branded",
+    "startSec": 49.014,
+    "endSec": 50.811
+  },
+  {
+    "word": "the face of greed became one",
+    "startSec": 50.811,
+    "endSec": 52.29
+  },
+  {
+    "word": "of America's most significant medical philanthropists.",
+    "startSec": 52.29,
+    "endSec": 55.144
+  },
+  {
+    "word": "So which is the real Michael Milken?",
+    "startSec": 55.364,
+    "endSec": 57.504
   },
   {
     "word": "The felon who paid a record fine",
-    "startSec": 35.063,
-    "endSec": 37.089
+    "startSec": 57.504,
+    "endSec": 59.406
   },
   {
     "word": "or the philanthropist whose",
-    "startSec": 37.089,
-    "endSec": 38.798
+    "startSec": 59.406,
+    "endSec": 61.01
   },
   {
     "word": "money extended countless lives?",
-    "startSec": 38.798,
-    "endSec": 40.76
+    "startSec": 61.01,
+    "endSec": 62.853
   },
   {
     "word": "The second answer begins with a diagnosis.",
-    "startSec": 40.76,
-    "endSec": 43.419
+    "startSec": 62.853,
+    "endSec": 65.349
   }
 ];

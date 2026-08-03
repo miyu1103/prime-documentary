@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT175_TOTAL_SEC = 45.115;
+export const SHORT175_TOTAL_SEC = 66.208;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 35.663,
     "end": 44.115
+  },
+  {
+    "id": "L6",
+    "start": 44.335,
+    "end": 50.697
+  },
+  {
+    "id": "L7",
+    "start": 50.917,
+    "end": 57.233
+  },
+  {
+    "id": "L8",
+    "start": 57.453,
+    "end": 65.208
   }
 ];
 
@@ -145,23 +160,63 @@ export const SHORT175_CAPTIONS: ShortCaption[] = [
     "endSec": 35.443
   },
   {
-    "word": "Florida's Supreme Court declined review in 1990",
+    "word": "The document they handed him said his",
     "startSec": 35.663,
-    "endSec": 38.584
+    "endSec": 39.622
+  },
+  {
+    "word": "semen was found on the victim's underwear.",
+    "startSec": 39.622,
+    "endSec": 44.115
+  },
+  {
+    "word": "A 2025 review found that false",
+    "startSec": 44.335,
+    "endSec": 46.303
+  },
+  {
+    "word": "evidence in interrogation raises the risk",
+    "startSec": 46.303,
+    "endSec": 48.992
+  },
+  {
+    "word": "of an innocent confession.",
+    "startSec": 48.992,
+    "endSec": 50.697
+  },
+  {
+    "word": "In January 2019 a Bronx court",
+    "startSec": 50.917,
+    "endSec": 52.661
+  },
+  {
+    "word": "took that research as new evidence",
+    "startSec": 52.661,
+    "endSec": 54.707
+  },
+  {
+    "word": "and vacated a confession-based conviction.",
+    "startSec": 54.707,
+    "endSec": 57.233
+  },
+  {
+    "word": "Florida's Supreme Court declined review in 1990",
+    "startSec": 57.453,
+    "endSec": 60.133
   },
   {
     "word": "and never ruled on the merits.",
-    "startSec": 38.584,
-    "endSec": 40.448
+    "startSec": 60.133,
+    "endSec": 61.844
   },
   {
     "word": "Which leaves what an officer may",
-    "startSec": 40.448,
-    "endSec": 42.437
+    "startSec": 61.844,
+    "endSec": 63.668
   },
   {
     "word": "say to your face wide open.",
-    "startSec": 42.437,
-    "endSec": 44.115
+    "startSec": 63.668,
+    "endSec": 65.208
   }
 ];

@@ -94,6 +94,36 @@ LANES: dict[str, tuple[str, str]] = {
     "whistleblower": (
         "内部告発してつぶされた人",
         '(whistleblower OR "False Claims Act") AND (retaliation OR "qui tam")'),
+    "mine_safety": (
+        "鉱山災害 — 危険を知っていた",
+        '(mine OR mining OR "coal mine") AND (explosion OR collapse OR "safety violation" OR fatality)'),
+    "maritime": (
+        "海難 — 海で死んだ人",
+        '(vessel OR ship OR boat OR maritime OR "Jones Act") AND (sank OR sinking OR capsiz* OR "wrongful death" OR unseaworth*)'),
+    "industrial_death": (
+        "工場で死んだ — OSHAと企業",
+        '(OSHA OR "willful violation" OR refinery OR plant) AND (explosion OR fire OR fatality OR "wrongful death")'),
+    "infrastructure": (
+        "インフラの崩壊 — 橋・ダム・トンネル",
+        '(bridge OR dam OR tunnel OR levee OR "retaining wall") AND (collapse OR failure OR breach OR "wrongful death")'),
+    "farm_labor": (
+        "農場の労働 — 採む人",
+        '(farm OR agricultural OR "migrant worker" OR harvest) AND (pesticide OR heat OR "forced labor" OR trafficking OR wage)'),
+    "product_recall": (
+        "これを売り続けた — リコールされなかったもの",
+        '("failure to warn" OR "design defect" OR recall) AND ("punitive damages" OR "knew or should have known")'),
+    "eviction": (
+        "立ち退き — 家主はあなたを追い出せるのか",
+        '(eviction OR "unlawful detainer" OR "self-help" OR lockout) AND (tenant AND (habitability OR retaliat* OR notice OR "due process"))'),
+    "emergency_care": (
+        "診療拒否 — 病院は断れるのか",
+        '("EMTALA" OR "emergency medical treatment" OR "patient dumping" OR "refused treatment") AND (hospital OR "emergency room")'),
+    "utility_shutoff": (
+        "電気が止まった日",
+        '(utility OR electric OR gas OR water) AND (shutoff OR "termination of service" OR disconnect*) AND ("due process" OR notice OR hearing)'),
+    "nursing_home": (
+        "施設に預けた親",
+        '("nursing home" OR "long-term care" OR "assisted living") AND ("arbitration agreement" OR neglect OR "wrongful death")'),
     "building_safety": (
         "建物・製品の安全 — 誰も止めなかった",
         '(negligence OR "wrongful death") AND (collapse OR "structural" OR "code violation" OR inspection)'),

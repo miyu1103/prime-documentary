@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT162_TOTAL_SEC = 42.144;
+export const SHORT162_TOTAL_SEC = 64.445;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 29.766,
     "end": 41.144
+  },
+  {
+    "id": "L6",
+    "start": 41.364,
+    "end": 46.658
+  },
+  {
+    "id": "L7",
+    "start": 46.878,
+    "end": 52.079
+  },
+  {
+    "id": "L8",
+    "start": 52.299,
+    "end": 63.445
   }
 ];
 
@@ -125,33 +140,83 @@ export const SHORT162_CAPTIONS: ShortCaption[] = [
     "endSec": 29.546
   },
   {
-    "word": "Supporters called it shaking",
+    "word": "Over the decade the high-yield market",
     "startSec": 29.766,
-    "endSec": 31.516
+    "endSec": 33.593
+  },
+  {
+    "word": "swelled past a hundred billion dollars",
+    "startSec": 33.593,
+    "endSec": 37.524
+  },
+  {
+    "word": "and Milken was its undisputed king.",
+    "startSec": 37.524,
+    "endSec": 41.144
+  },
+  {
+    "word": "To raise serious money",
+    "startSec": 41.364,
+    "endSec": 42.688
+  },
+  {
+    "word": "outside the old club",
+    "startSec": 42.688,
+    "endSec": 43.891
+  },
+  {
+    "word": "one road ran through Beverly Hills",
+    "startSec": 43.891,
+    "endSec": 45.936
+  },
+  {
+    "word": "through him.",
+    "startSec": 45.936,
+    "endSec": 46.658
+  },
+  {
+    "word": "Chief executives who had felt untouchable",
+    "startSec": 46.878,
+    "endSec": 48.989
+  },
+  {
+    "word": "watched their own stock the way",
+    "startSec": 48.989,
+    "endSec": 50.586
+  },
+  {
+    "word": "you watch a storm rolling in.",
+    "startSec": 50.586,
+    "endSec": 52.079
+  },
+  {
+    "word": "Supporters called it shaking",
+    "startSec": 52.299,
+    "endSec": 54.014
   },
   {
     "word": "the dust off lazy bloated companies.",
-    "startSec": 31.516,
-    "endSec": 33.767
+    "startSec": 54.014,
+    "endSec": 56.218
   },
   {
     "word": "Critics saw raids that buried companies under",
-    "startSec": 33.767,
-    "endSec": 36.58
+    "startSec": 56.218,
+    "endSec": 58.974
   },
   {
     "word": "debt and cost ordinary people their jobs.",
-    "startSec": 36.58,
-    "endSec": 39.143
+    "startSec": 58.974,
+    "endSec": 61.485
   },
   {
     "word": "Either way",
-    "startSec": 39.143,
-    "endSec": 39.843
+    "startSec": 61.485,
+    "endSec": 62.185
   },
   {
     "word": "the old rule was gone.",
-    "startSec": 39.843,
-    "endSec": 41.144
+    "startSec": 62.185,
+    "endSec": 63.445
   }
 ];

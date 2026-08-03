@@ -163,7 +163,13 @@ def main() -> int:
     if not backup:
         raise SystemExit("run scripts/backup_short_metadata.py first")
     rows = json.loads(backup.read_text(encoding="utf-8"))
-    pub_long = [r for r in rows if r["duration_sec"] > 185 and r["privacy"] == "public"]
+    # Accept a long-form that is scheduled but not yet public. The Short can be built now and
+    # its funnel link attaches the day the destination goes live (daily_funnel_sync.py).
+    # schedule_short_youtube.py still refuses to UPLOAD against a non-public destination, so
+    # nothing can ship pointing at a video nobody can watch - that guard stays where it is.
+    pub_long = [r for r in rows
+                if r["duration_sec"] > 185
+                and (r["privacy"] == "public" or r.get("publishAt"))]
 
     shorts_by_ep = defaultdict(list)
     for f in sorted(DATA.glob("short*.ts")):
@@ -187,7 +193,7 @@ def main() -> int:
                     ep_of.setdefault(r["id"], ep_dir.name)
 
     OUT.mkdir(parents=True, exist_ok=True)
-    pool = footage_pool("")
+    pool = []   # obsolete: see bind_short_footage_semantic.py
     made = 0
     for r in sorted(pub_long, key=lambda a: -a["views"]):
         ep = ep_of.get(r["id"])
@@ -214,7 +220,7 @@ def main() -> int:
                         "1960s case dressed in present-day footage reads wrong.",
             "footage_candidates_crop_safe": [
                 {"title": p["title"], "file": p["file_path"], "centre_energy": p["centre_energy"],
-                 "motion": p["motion"], "luma": p["luma_crop"]} for p in pool],
+                 "motion": p["motion"], "luma": p.get("luma_crop")} for p in pool],
             "shorts": [{"short_id": None, "angle": None, "funnel_question_left_for_longform": None,
                         "lines": [{"id": f"L{i}", "delivery": d, "text": None, "claims": []}
                                   for i, d in enumerate(["intense", "building", "building",
@@ -228,7 +234,7 @@ def main() -> int:
             json.dumps(doc, ensure_ascii=False, indent=2), encoding="utf-8")
         made += 1
     print(f"wrote {made} design skeletons -> {OUT.relative_to(ROOT)}")
-    print(f"crop-safe footage candidates carried into each: {len(pool)}")
+    print("footage is bound at build time by bind_short_footage_semantic.py, not here")
     return 0
 
 

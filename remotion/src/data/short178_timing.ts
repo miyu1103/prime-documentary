@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT178_TOTAL_SEC = 43.955;
+export const SHORT178_TOTAL_SEC = 62.958;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 35.571,
     "end": 42.955
+  },
+  {
+    "id": "L6",
+    "start": 43.175,
+    "end": 49.862
+  },
+  {
+    "id": "L7",
+    "start": 50.082,
+    "end": 54.958
+  },
+  {
+    "id": "L8",
+    "start": 55.178,
+    "end": 61.958
   }
 ];
 
@@ -150,28 +165,73 @@ export const SHORT178_CAPTIONS: ShortCaption[] = [
     "endSec": 35.351
   },
   {
-    "word": "So the sentence stands",
+    "word": "The statement carried no legal weight.",
     "startSec": 35.571,
-    "endSec": 36.914
+    "endSec": 38.834
+  },
+  {
+    "word": "It was not the Court's opinion",
+    "startSec": 38.834,
+    "endSec": 41.41
+  },
+  {
+    "word": "and not a dissent.",
+    "startSec": 41.41,
+    "endSec": 42.955
+  },
+  {
+    "word": "She mapped the split",
+    "startSec": 43.175,
+    "endSec": 44.348
+  },
+  {
+    "word": "several circuits one way",
+    "startSec": 44.348,
+    "endSec": 45.756
+  },
+  {
+    "word": "and the Fourth holding police-power",
+    "startSec": 45.756,
+    "endSec": 47.809
+  },
+  {
+    "word": "action is not automatically exempt.",
+    "startSec": 47.809,
+    "endSec": 49.862
+  },
+  {
+    "word": "Two more petitions are pending now",
+    "startSec": 50.082,
+    "endSec": 51.884
+  },
+  {
+    "word": "distributed for conference on September the twenty-eighth.",
+    "startSec": 51.884,
+    "endSec": 54.958
+  },
+  {
+    "word": "So the sentence stands",
+    "startSec": 55.178,
+    "endSec": 56.411
   },
   {
     "word": "and so does the split.",
-    "startSec": 36.914,
-    "endSec": 38.256
+    "startSec": 56.411,
+    "endSec": 57.643
   },
   {
     "word": "She cited one Colorado case by name",
-    "startSec": 38.256,
-    "endSec": 40.392
+    "startSec": 57.643,
+    "endSec": 59.605
   },
   {
     "word": "where a family alone",
-    "startSec": 40.392,
-    "endSec": 41.612
+    "startSec": 59.605,
+    "endSec": 60.725
   },
   {
     "word": "bore the whole burden.",
-    "startSec": 41.612,
-    "endSec": 42.955
+    "startSec": 60.725,
+    "endSec": 61.958
   }
 ];

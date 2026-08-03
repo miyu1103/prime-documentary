@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT144_TOTAL_SEC = 37.036;
+export const SHORT144_TOTAL_SEC = 57.572;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 28.884,
     "end": 36.036
+  },
+  {
+    "id": "L6",
+    "start": 36.256,
+    "end": 42.572
+  },
+  {
+    "id": "L7",
+    "start": 42.792,
+    "end": 49.897
+  },
+  {
+    "id": "L8",
+    "start": 50.117,
+    "end": 56.572
   }
 ];
 
@@ -120,23 +135,88 @@ export const SHORT144_CAPTIONS: ShortCaption[] = [
     "endSec": 28.664
   },
   {
-    "word": "The stop was still illegal.",
+    "word": "Normally that evidence disappears.",
     "startSec": 28.884,
-    "endSec": 30.429
+    "endSec": 31.115
+  },
+  {
+    "word": "When police search illegally",
+    "startSec": 31.115,
+    "endSec": 32.952
+  },
+  {
+    "word": "whatever they turn up is",
+    "startSec": 32.952,
+    "endSec": 34.527
+  },
+  {
+    "word": "thrown out of the case.",
+    "startSec": 34.527,
+    "endSec": 36.036
+  },
+  {
+    "word": "The rule has exceptions.",
+    "startSec": 36.256,
+    "endSec": 37.757
+  },
+  {
+    "word": "One is attenuation",
+    "startSec": 37.757,
+    "endSec": 38.882
+  },
+  {
+    "word": "when the link is so thinned",
+    "startSec": 38.882,
+    "endSec": 40.571
+  },
+  {
+    "word": "out the connection barely holds.",
+    "startSec": 40.571,
+    "endSec": 42.572
+  },
+  {
+    "word": "The warrant in Utah versus",
+    "startSec": 42.792,
+    "endSec": 44.294
+  },
+  {
+    "word": "Strieff existed before the stop.",
+    "startSec": 44.294,
+    "endSec": 46.142
+  },
+  {
+    "word": "It was valid and outstanding",
+    "startSec": 46.142,
+    "endSec": 47.76
+  },
+  {
+    "word": "so the search rode on it",
+    "startSec": 47.76,
+    "endSec": 49.146
+  },
+  {
+    "word": "not the stop.",
+    "startSec": 49.146,
+    "endSec": 49.897
+  },
+  {
+    "word": "The stop was still illegal.",
+    "startSec": 50.117,
+    "endSec": 51.511
   },
   {
     "word": "The Court never pretended otherwise.",
-    "startSec": 30.429,
-    "endSec": 32.489
+    "startSec": 51.511,
+    "endSec": 53.37
   },
   {
     "word": "It just stopped mattering to whether",
-    "startSec": 32.489,
-    "endSec": 34.548
+    "startSec": 53.37,
+    "endSec": 55.229
   },
   {
     "word": "the drugs came into court.",
-    "startSec": 34.548,
-    "endSec": 36.036
+    "startSec": 55.229,
+    "endSec": 56.572
   }
 ];

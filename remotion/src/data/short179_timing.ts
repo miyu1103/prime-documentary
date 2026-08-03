@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT179_TOTAL_SEC = 42.33;
+export const SHORT179_TOTAL_SEC = 62.216;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 34.039,
     "end": 41.33
+  },
+  {
+    "id": "L6",
+    "start": 41.55,
+    "end": 47.68
+  },
+  {
+    "id": "L7",
+    "start": 47.9,
+    "end": 53.705
+  },
+  {
+    "id": "L8",
+    "start": 53.925,
+    "end": 61.216
   }
 ];
 
@@ -140,28 +155,78 @@ export const SHORT179_CAPTIONS: ShortCaption[] = [
     "endSec": 33.819
   },
   {
-    "word": "What is left is a",
+    "word": "The majority's reasons:",
     "startSec": 34.039,
-    "endSec": 35.007
+    "endSec": 35.967
+  },
+  {
+    "word": "police are more professional now",
+    "startSec": 35.967,
+    "endSec": 38.648
+  },
+  {
+    "word": "and the courthouse door is open.",
+    "startSec": 38.648,
+    "endSec": 41.33
+  },
+  {
+    "word": "Those reasons carried only four votes.",
+    "startSec": 41.55,
+    "endSec": 43.79
+  },
+  {
+    "word": "The fifth justice wrote separately that",
+    "startSec": 43.79,
+    "endSec": 46.089
+  },
+  {
+    "word": "exclusion was not in doubt.",
+    "startSec": 46.089,
+    "endSec": 47.68
+  },
+  {
+    "word": "The dissent answered with history.",
+    "startSec": 47.9,
+    "endSec": 49.78
+  },
+  {
+    "word": "Civil suits had sat on",
+    "startSec": 49.78,
+    "endSec": 50.996
+  },
+  {
+    "word": "the books for generations",
+    "startSec": 50.996,
+    "endSec": 52.378
+  },
+  {
+    "word": "changing almost nothing.",
+    "startSec": 52.378,
+    "endSec": 53.705
+  },
+  {
+    "word": "What is left is a",
+    "startSec": 53.925,
+    "endSec": 54.893
   },
   {
     "word": "civil lawsuit you bring yourself",
-    "startSec": 35.007,
-    "endSec": 36.83
+    "startSec": 54.893,
+    "endSec": 56.716
   },
   {
     "word": "years after the door is",
-    "startSec": 36.83,
-    "endSec": 38.14
+    "startSec": 56.716,
+    "endSec": 58.026
   },
   {
     "word": "already off its hinges.",
-    "startSec": 38.14,
-    "endSec": 39.45
+    "startSec": 58.026,
+    "endSec": 59.336
   },
   {
     "word": "The knocking rule is still there.",
-    "startSec": 39.45,
-    "endSec": 41.33
+    "startSec": 59.336,
+    "endSec": 61.216
   }
 ];

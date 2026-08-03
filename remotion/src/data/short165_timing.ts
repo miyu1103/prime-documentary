@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT165_TOTAL_SEC = 44.001;
+export const SHORT165_TOTAL_SEC = 63.794;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 32.924,
     "end": 43.001
+  },
+  {
+    "id": "L6",
+    "start": 43.221,
+    "end": 47.54
+  },
+  {
+    "id": "L7",
+    "start": 47.76,
+    "end": 52.868
+  },
+  {
+    "id": "L8",
+    "start": 53.088,
+    "end": 62.794
   }
 ];
 
@@ -135,28 +150,78 @@ export const SHORT165_CAPTIONS: ShortCaption[] = [
     "endSec": 32.704
   },
   {
-    "word": "Regulators could see the suspicious trade.",
+    "word": "An insider learns a company",
     "startSec": 32.924,
-    "endSec": 35.553
+    "endSec": 36.756
+  },
+  {
+    "word": "is about to be bought.",
+    "startSec": 36.756,
+    "endSec": 39.879
+  },
+  {
+    "word": "He picks up the phone.",
+    "startSec": 39.879,
+    "endSec": 43.001
+  },
+  {
+    "word": "Days later the deal is announced",
+    "startSec": 43.221,
+    "endSec": 44.927
+  },
+  {
+    "word": "the price jumps",
+    "startSec": 44.927,
+    "endSec": 45.727
+  },
+  {
+    "word": "and the whisper is worth millions.",
+    "startSec": 45.727,
+    "endSec": 47.54
+  },
+  {
+    "word": "The market becomes a private",
+    "startSec": 47.76,
+    "endSec": 49.385
+  },
+  {
+    "word": "club with a public entrance",
+    "startSec": 49.385,
+    "endSec": 50.953
+  },
+  {
+    "word": "and the rest of",
+    "startSec": 50.953,
+    "endSec": 51.823
+  },
+  {
+    "word": "us pay full price.",
+    "startSec": 51.823,
+    "endSec": 52.868
+  },
+  {
+    "word": "Regulators could see the suspicious trade.",
+    "startSec": 53.088,
+    "endSec": 55.62
   },
   {
     "word": "Proving a specific person knew a",
-    "startSec": 35.553,
-    "endSec": 37.556
+    "startSec": 55.62,
+    "endSec": 57.549
   },
   {
     "word": "specific secret is a different thing.",
-    "startSec": 37.556,
-    "endSec": 39.871
+    "startSec": 57.549,
+    "endSec": 59.78
   },
   {
     "word": "So who actually pays for a",
-    "startSec": 39.871,
-    "endSec": 41.499
+    "startSec": 59.78,
+    "endSec": 61.347
   },
   {
     "word": "market that is not fair?",
-    "startSec": 41.499,
-    "endSec": 43.001
+    "startSec": 61.347,
+    "endSec": 62.794
   }
 ];

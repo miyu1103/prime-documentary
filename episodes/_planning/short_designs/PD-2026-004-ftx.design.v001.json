@@ -385,7 +385,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty office night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3777__office_interior_dark.mp4",
           "bound_title": "defocused urban night traffic bokeh lights",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -393,7 +392,8 @@
           "motion": 4.0,
           "luma": 33.9,
           "bound_match": "semantic-clip",
-          "bound_score": 0.295
+          "bound_score": 0.295,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3777__office_interior_dark.mp4"
         },
         {
           "n": 22,
@@ -444,9 +444,9 @@
           "source": "FOOTAGE",
           "footage_query": "a bedside alarm clock on a table",
           "prompt": null,
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-61819__server_room_red_alert.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9715__clock_ticking_macro.mp4",
           "bound_match": "semantic-clip",
-          "bound_score": 0.289
+          "bound_score": 0.284
         },
         {
           "n": 27,
@@ -483,9 +483,9 @@
           "source": "FOOTAGE",
           "footage_query": "a finger tapping a lit phone screen",
           "prompt": null,
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-1946__caustics_water_light.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30866__smartphone_in_dark.mp4",
           "bound_match": "semantic-clip",
-          "bound_score": 0.304
+          "bound_score": 0.3
         },
         {
           "n": 30,
@@ -545,9 +545,9 @@
           "source": "FOOTAGE",
           "footage_query": "a metal shutter pulled down over an entrance",
           "prompt": null,
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54366__warehouse_loading_dock.mp4",
           "bound_match": "semantic-clip",
-          "bound_score": 0.282
+          "bound_score": 0.282,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-54366__warehouse_loading_dock.mp4"
         },
         {
           "n": 35,
@@ -558,9 +558,9 @@
           "source": "FOOTAGE",
           "footage_query": "empty wooden benches in a courtroom",
           "prompt": null,
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20356__witness_stand_empty.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14600__jury_box_empty.mp4",
           "bound_match": "semantic-clip",
-          "bound_score": 0.292
+          "bound_score": 0.296
         },
         {
           "n": 36,
@@ -584,9 +584,9 @@
           "source": "FOOTAGE",
           "footage_query": "a front door with a security chain",
           "prompt": null,
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8122__bank_vault_door.mp4",
           "bound_match": "semantic-clip",
-          "bound_score": 0.291
+          "bound_score": 0.291,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8122__bank_vault_door.mp4"
         },
         {
           "n": 38,
@@ -620,7 +620,6 @@
           "source": "FOOTAGE",
           "footage_query": "a rubber stamp lying beside an ink pad",
           "prompt": null,
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-2671__projector_beam_dust.mp4",
           "bound_match": "semantic-clip",
           "bound_score": 0.283
         }
@@ -785,7 +784,7 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "conference table chairs",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29696__office_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29216__single_chair_empty_room.mp4",
           "bound_title": "a person counting bank notes on the table",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -793,7 +792,7 @@
           "motion": 2.517,
           "luma": 159.0,
           "bound_match": "semantic-clip",
-          "bound_score": 0.297
+          "bound_score": 0.302
         },
         {
           "n": 8,
@@ -854,7 +853,7 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "server rack",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-61706__robot_arm_assembly_line.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0980__server_room_blue.mp4",
           "bound_title": "Close up of server racks lights",
           "bound_license": "free_commercial",
           "bound_source": "mixkit",
@@ -862,7 +861,7 @@
           "motion": 1.5,
           "luma": 34.5,
           "bound_match": "semantic-clip",
-          "bound_score": 0.284
+          "bound_score": 0.325
         },
         {
           "n": 14,
@@ -1012,9 +1011,9 @@
           "source": "FOOTAGE",
           "footage_query": "rows of empty seats in a large arena",
           "prompt": null,
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5314__empty_stadium_seats.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-2288__empty_stadium_seats.mp4",
           "bound_match": "semantic-clip",
-          "bound_score": 0.282
+          "bound_score": 0.286
         },
         {
           "n": 28,
@@ -1025,7 +1024,6 @@
           "source": "FOOTAGE",
           "footage_query": "a tall building facade seen from below",
           "prompt": null,
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56532__skyscraper_looking_up.mp4",
           "bound_match": "semantic-clip",
           "bound_score": 0.284
         },
@@ -1060,53 +1058,65 @@
           "role": "body",
           "line": "L6",
           "motif": "W09",
-          "subject": "the years the proceedings took",
+          "subject": "a hand signing a cheque at a counter",
           "source": "FOOTAGE",
-          "footage_query": "pages of a wall calendar turning",
-          "prompt": null
+          "footage_query": "a hand signing a cheque at a counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14321__wax_seal_on_document.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
         },
         {
           "n": 32,
           "role": "body",
           "line": "L6",
           "motif": "U07",
-          "subject": "the case folders stacked year on year",
+          "subject": "a queue of people at a bank counter",
           "source": "FOOTAGE",
-          "footage_query": "worn folders stacked in a leaning pile",
-          "prompt": null
+          "footage_query": "people waiting in line at a bank counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-49319__crowd_of_commuters_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
         },
         {
           "n": 33,
           "role": "body",
           "line": "L6",
           "motif": "R12",
-          "subject": "the effects handed back over a counter",
+          "subject": "a metal filing drawer sliding open",
           "source": "FOOTAGE",
-          "footage_query": "personal items handed back over a counter",
-          "prompt": null
+          "footage_query": "a metal filing drawer sliding open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1279__documents_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         },
         {
           "n": 34,
           "role": "body",
           "line": "L6",
           "motif": "M04",
-          "subject": "the paperwork that came years later",
+          "subject": "banknotes counted out onto a wooden counter",
           "source": "FOOTAGE",
-          "footage_query": "a stack of papers face down",
+          "footage_query": "banknotes counted onto a wooden counter",
           "prompt": null,
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23796__shredded_documents_pile.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23984__money_counting_machine.mp4",
           "bound_match": "semantic-clip",
-          "bound_score": 0.293
+          "bound_score": 0.309
         },
         {
           "n": 35,
           "role": "body",
           "line": "L6",
           "motif": "U01",
-          "subject": "the lamp left on through all of it",
+          "subject": "a wall clock above an office doorway",
           "source": "FOOTAGE",
-          "footage_query": "a desk lamp over an empty desk",
-          "prompt": null
+          "footage_query": "a wall clock above an office doorway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30678__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.298
         },
         {
           "n": 36,
@@ -1156,9 +1166,9 @@
           "source": "FOOTAGE",
           "footage_query": "an empty picture frame hanging on a wall",
           "prompt": null,
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52729__film_reel_projector.mp4",
           "bound_match": "semantic-clip",
-          "bound_score": 0.292
+          "bound_score": 0.292,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52729__film_reel_projector.mp4"
         },
         {
           "n": 40,

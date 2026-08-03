@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT176_TOTAL_SEC = 42.144;
+export const SHORT176_TOTAL_SEC = 61.659;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 33.528,
     "end": 41.144
+  },
+  {
+    "id": "L6",
+    "start": 41.364,
+    "end": 47.262
+  },
+  {
+    "id": "L7",
+    "start": 47.482,
+    "end": 52.776
+  },
+  {
+    "id": "L8",
+    "start": 52.996,
+    "end": 60.659
   }
 ];
 
@@ -130,23 +145,73 @@ export const SHORT176_CAPTIONS: ShortCaption[] = [
     "endSec": 33.308
   },
   {
-    "word": "The man in this story was twenty-four",
+    "word": "Oregon's law presumes a statement involuntary",
     "startSec": 33.528,
-    "endSec": 35.916
+    "endSec": 36.011
+  },
+  {
+    "word": "when it was taken from someone",
+    "startSec": 36.011,
+    "endSec": 37.667
+  },
+  {
+    "word": "under eighteen through information the officer",
+    "startSec": 37.667,
+    "endSec": 40.206
+  },
+  {
+    "word": "knew to be false.",
+    "startSec": 40.206,
+    "endSec": 41.144
+  },
+  {
+    "word": "Of the 257 cases the",
+    "startSec": 41.364,
+    "endSec": 42.752
+  },
+  {
+    "word": "Innocence Project has won",
+    "startSec": 42.752,
+    "endSec": 44.486
+  },
+  {
+    "word": "the average client served sixteen years.",
+    "startSec": 44.486,
+    "endSec": 47.262
+  },
+  {
+    "word": "Laid end to end",
+    "startSec": 47.482,
+    "endSec": 48.45
+  },
+  {
+    "word": "those 257 sentences come to four thousand",
+    "startSec": 48.45,
+    "endSec": 51.097
+  },
+  {
+    "word": "one hundred and two years.",
+    "startSec": 51.097,
+    "endSec": 52.776
+  },
+  {
+    "word": "The man in this story was twenty-four",
+    "startSec": 52.996,
+    "endSec": 55.399
   },
   {
     "word": "with an IQ of seventy.",
-    "startSec": 35.916,
-    "endSec": 37.336
+    "startSec": 55.399,
+    "endSec": 56.828
   },
   {
     "word": "The law counted him as an adult.",
-    "startSec": 37.336,
-    "endSec": 39.401
+    "startSec": 56.828,
+    "endSec": 58.906
   },
   {
     "word": "Nothing else about him did.",
-    "startSec": 39.401,
-    "endSec": 41.144
+    "startSec": 58.906,
+    "endSec": 60.659
   }
 ];

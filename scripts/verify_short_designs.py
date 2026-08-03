@@ -41,6 +41,14 @@ DELIVERY_VALUES = {"intense", "building", "calm"}
 # at this line length. The band is widened from 75-135 because the SPEC changed, not to let a
 # failing design through — a 100-word design is now genuinely too short to ship.
 MIN_LINES = 8
+# The opening line. 22 was tried first and was wrong: it came from the earlier batch's MEAN
+# hook length (18.5 words), and a mean makes a useless ceiling - it failed 38 designs
+# including ones already rendered and scheduled. There is no measurement showing a
+# 23-word hook performs worse than a 22-word one, so failing on it would have forced 42
+# re-renders on a guess. HOOK_WARN reports the drift; HOOK_MAX_WORDS fails only where
+# length is indefensible on its face.
+HOOK_WARN_WORDS = 24
+HOOK_MAX_WORDS = 32
 WORD_BAND = (150, 195)
 
 # Owner 2026-08-02: the Shorts are to loop. A spoken "watch the full case on the channel" ends the
@@ -100,6 +108,7 @@ def main() -> int:
 
     seen_ids: dict[str, str] = {}
     fails: list[str] = []
+    warns: list[str] = []
     checked = 0
 
     for f in sorted(DESIGNS.glob("*.json")):
@@ -169,6 +178,20 @@ def main() -> int:
             if len(lines) < MIN_LINES:
                 fails.append(f"{tag}: {len(lines)} lines, the spec is {MIN_LINES}")
 
+            # The hook is the only line that has to work before the viewer decides to stay, so it
+            # is the one line where length is a defect rather than a preference. Measured drift:
+            # shorts 86-120, written a couple of episodes at a time, average an 18.5-word hook;
+            # shorts 182-258, written 31 at once, average 22.2. Nothing else moved - fact density
+            # actually rose - but the opening got a fifth longer, and a long opening lands late.
+            if lines:
+                n_hook = len((lines[0].get("text") or "").split())
+                if n_hook > HOOK_MAX_WORDS:
+                    fails.append(f"{tag} {lines[0].get('id','L1')}: hook is {n_hook} words, "
+                                 f"max {HOOK_MAX_WORDS} - nobody stays for an opening that long")
+                elif n_hook > HOOK_WARN_WORDS:
+                    warns.append(f"{tag} {lines[0].get('id','L1')}: hook is {n_hook} words "
+                                 f"(>{HOOK_WARN_WORDS}) - lands late, but not a defect")
+
             words = sum(len((l.get("text") or "").split()) for l in lines)
             if not (WORD_BAND[0] <= words <= WORD_BAND[1]):
                 fails.append(f"{tag}: {words} spoken words, outside "
@@ -192,6 +215,12 @@ def main() -> int:
                 if ratio > 45:
                     fails.append(f"{tag}: angle overlaps the existing Short by {ratio} chars verbatim")
 
+    if warns:
+        print(f"\n{len(warns)} WARNINGS (not failures):")
+        for w in warns[:12]:
+            print(f"  {w}")
+        if len(warns) > 12:
+            print(f"  ... and {len(warns)-12} more")
     print(f"checked {checked} authored shorts across {len(list(DESIGNS.glob('*.json')))} episodes")
     if fails:
         print(f"\n{len(fails)} FAILURES:")

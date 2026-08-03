@@ -86,6 +86,15 @@ SECTION_ORDER_5ACT_NIGHT = ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "A
 # absorbed into the neighbouring act).
 SECTION_HEADINGS = [
     ("HOOK", re.compile(r"^COLD\s+OPEN\b", re.IGNORECASE)),
+    # EP61 (weimer) heads its cold open `## HOOK` instead of `## COLD OPEN`. Without this
+    # pattern the heading maps to no section, and because `started` is still False at that
+    # point the orphan guard cannot see the lines either -- the whole cold open would have
+    # been dropped in silence. No other registered script has a heading beginning "HOOK",
+    # so this anchored pattern cannot change any existing extraction.
+    ("HOOK", re.compile(r"^HOOK\b", re.IGNORECASE)),
+    # `## OPENING` -> the contract key `OP` (NOT "OPENING"): the figure beats for every
+    # episode are keyed to the spec section_vocabulary, so an index emitting "OPENING"
+    # would leave those beats attached to nothing.
     ("OP", re.compile(r"^OPENING\b", re.IGNORECASE)),
     ("ACT_4", re.compile(r"^ACT\s+IV\b", re.IGNORECASE)),
     ("ACT_5", re.compile(r"^ACT\s+V\b", re.IGNORECASE)),
@@ -160,7 +169,12 @@ EPISODES = {
     "PD-2026-060-surfside": {
         # LOCKED script is v004 ("v004, もう変えません" -- owner). v003 under
         # episodes/PD-2026-060-surfside/03_script/ is stale and must not be used.
-        "planning": "EP60_surfside_script.en.v004.md",
+        # v005 supersedes v004: four assertions that nobody had been criminally prosecuted
+        # were removed because no source held here supported them, and replaced with what the
+        # Miami-Dade State Attorney actually published -- a grand jury convened July 2021 and
+        # its December 2021 report, titled "Surfside Condo Collapse: Recommendations to Make
+        # Buildings Safer". Absence of reporting is not evidence of absence. Do not use v004.
+        "planning": "EP60_surfside_script.en.v005.md",
         # FILM BIBLE v001 (line 3): 40:00 film, narration approximately 36:00, band
         # 6,150-6,350 words at the MEASURED 173 wpm -- deliberately NOT the 178.1 channel
         # model. Extraction of the locked v004 script measures 6,302 narration words, so
@@ -169,6 +183,17 @@ EPISODES = {
         # Ten script headings; BRAND STING carries no narration (as in EP56), so NINE
         # speech sections, with THE NIGHT standing alone between ACT V and ENDING.
         "sections": SECTION_ORDER_5ACT_NIGHT,
+    },
+    "PD-2026-061-weimer": {
+        # LOCKED script is v003. v001 and v002 are stale and must not be used.
+        "planning": "EP61_weimer_script.en.v003.md",
+        # ASSEMBLY_HANDOFF v001 step 2: 4,401 narration words / 25.4 min speech.
+        "design_speech_seconds": 1524.0,
+        # Nine script headings -- HOOK / BRAND STING / OPENING / ACT I..ACT V / ENDING --
+        # of which BRAND STING carries no narration (as in EP56/EP60), so EIGHT speech
+        # sections, exactly matching episode_spec.v001.json section_vocabulary
+        # (HOOK, OP, ACT_1..ACT_5, ENDING) that the 99 figure beats are keyed to.
+        "sections": SECTION_ORDER_5ACT,
     },
 }
 
@@ -181,8 +206,14 @@ SILENCE_LINE = re.compile(r"DESIGNED SILENCE\s+([0-9]+(?:\.[0-9]+)?)\s*s", re.IG
 # A held beat is a production direction, never narration: `【beat ...】` (EP52 lineage) or
 # EP60's `⟨HELD⟩`, which the EP60 film bible defines as the marker for "an isolated slow-read
 # line". Both become a BEAT_SECONDS pause after the preceding chunk instead of spoken text.
-BEAT_LINE = re.compile(r"^(?:【\s*beat\b|⟨\s*HELD\s*⟩)", re.IGNORECASE)
+BEAT_LINE = re.compile(r"^(?:【\s*beat\b|⟨\s*(?:HELD|BEAT)\s*⟩)", re.IGNORECASE)
 BEAT_SECONDS = 0.6
+# A trailing italic revision footer, e.g. EP61 v003 line 519:
+#   *v001 · 2026-08-03 · facts locked to ... · hook to be rewritten last per SPEC v2 row 9.*
+# It sits UNDER the ENDING heading with no appendix heading above it, so STOP_HEADINGS cannot
+# reach it and it would be read aloud. Anchored on a leading `*vNNN` and a closing `*` so it
+# cannot match narration.
+REVISION_FOOTER = re.compile(r"^\*v\d{3}\b.*\*$")
 INLINE_MARKER = re.compile(r"【[^】]*】|〔[^〕]*〕|\[[^\]]*\]")
 ABBREV = re.compile(
     r"\b(?:[A-Z]|Inc|Ltd|Co|Corp|Mr|Mrs|Ms|Dr|Jr|Sr|St|No|Sen|Gov|Rep|Prof|Sgt|vs|v|al"
@@ -244,7 +275,7 @@ def extract_events(md: str, orphans: list[str] | None = None) -> list[tuple]:
             continue
         if line == "---":
             continue
-        if line.startswith("**[") or line.startswith("*("):
+        if line.startswith("**[") or line.startswith("*(") or REVISION_FOOTER.match(line):
             continue
         if CJK.search(line):        # 【OST: ...】 cards / JP production notes — never narration
             continue

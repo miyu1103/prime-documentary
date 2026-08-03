@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT153_TOTAL_SEC = 34.946;
+export const SHORT153_TOTAL_SEC = 55.25;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 27.491,
     "end": 33.946
+  },
+  {
+    "id": "L6",
+    "start": 34.166,
+    "end": 42.061
+  },
+  {
+    "id": "L7",
+    "start": 42.281,
+    "end": 47.807
+  },
+  {
+    "id": "L8",
+    "start": 48.027,
+    "end": 54.25
   }
 ];
 
@@ -125,23 +140,88 @@ export const SHORT153_CAPTIONS: ShortCaption[] = [
     "endSec": 27.271
   },
   {
-    "word": "The jury did not buy it.",
+    "word": "Prosecutors called it one of the",
     "startSec": 27.491,
-    "endSec": 28.838
+    "endSec": 28.956
+  },
+  {
+    "word": "biggest financial frauds in American history.",
+    "startSec": 28.956,
+    "endSec": 31.016
+  },
+  {
+    "word": "FTX was bankrupt",
+    "startSec": 31.016,
+    "endSec": 31.749
+  },
+  {
+    "word": "and the arena scrubbed its",
+    "startSec": 31.749,
+    "endSec": 32.939
+  },
+  {
+    "word": "name off the building.",
+    "startSec": 32.939,
+    "endSec": 33.946
+  },
+  {
+    "word": "Through years of bankruptcy proceedings",
+    "startSec": 34.166,
+    "endSec": 36.43
+  },
+  {
+    "word": "much of the money was",
+    "startSec": 36.43,
+    "endSec": 37.649
+  },
+  {
+    "word": "eventually clawed back for customers years later",
+    "startSec": 37.649,
+    "endSec": 40.436
+  },
+  {
+    "word": "by fighting through a court.",
+    "startSec": 40.436,
+    "endSec": 42.061
+  },
+  {
+    "word": "To the million customers",
+    "startSec": 42.281,
+    "endSec": 43.634
+  },
+  {
+    "word": "the balance on the screen was real.",
+    "startSec": 43.634,
+    "endSec": 45.608
+  },
+  {
+    "word": "On the night it mattered",
+    "startSec": 45.608,
+    "endSec": 46.961
+  },
+  {
+    "word": "it was a ghost.",
+    "startSec": 46.961,
+    "endSec": 47.807
+  },
+  {
+    "word": "The jury did not buy it.",
+    "startSec": 48.027,
+    "endSec": 49.326
   },
   {
     "word": "Twenty-five years in federal prison",
-    "startSec": 28.838,
-    "endSec": 30.803
+    "startSec": 49.326,
+    "endSec": 51.22
   },
   {
     "word": "and an order to forfeit",
-    "startSec": 30.803,
-    "endSec": 32.094
+    "startSec": 51.22,
+    "endSec": 52.464
   },
   {
     "word": "more than eleven billion dollars.",
-    "startSec": 32.094,
-    "endSec": 33.946
+    "startSec": 52.464,
+    "endSec": 54.25
   }
 ];

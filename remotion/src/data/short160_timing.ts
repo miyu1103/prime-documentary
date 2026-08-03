@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT160_TOTAL_SEC = 42.561;
+export const SHORT160_TOTAL_SEC = 62.679;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 32.412,
     "end": 41.561
+  },
+  {
+    "id": "L6",
+    "start": 41.781,
+    "end": 47.354
+  },
+  {
+    "id": "L7",
+    "start": 47.574,
+    "end": 52.264
+  },
+  {
+    "id": "L8",
+    "start": 52.484,
+    "end": 61.679
   }
 ];
 
@@ -115,33 +130,88 @@ export const SHORT160_CAPTIONS: ShortCaption[] = [
     "endSec": 32.192
   },
   {
-    "word": "Which leaves one uncomfortable answer.",
+    "word": "The list is strange.",
     "startSec": 32.412,
-    "endSec": 34.545
+    "endSec": 34.26
+  },
+  {
+    "word": "Five Degas sketches a Manet",
+    "startSec": 34.26,
+    "endSec": 36.755
+  },
+  {
+    "word": "and a Chinese bronze beaker",
+    "startSec": 36.755,
+    "endSec": 39.251
+  },
+  {
+    "word": "three thousand years old.",
+    "startSec": 39.251,
+    "endSec": 41.561
+  },
+  {
+    "word": "The crown of the",
+    "startSec": 41.781,
+    "endSec": 42.614
+  },
+  {
+    "word": "haul was a Vermeer.",
+    "startSec": 42.614,
+    "endSec": 43.604
+  },
+  {
+    "word": "Only about three dozen of his works",
+    "startSec": 43.604,
+    "endSec": 45.427
+  },
+  {
+    "word": "are known to exist anywhere on earth.",
+    "startSec": 45.427,
+    "endSec": 47.354
+  },
+  {
+    "word": "None of it can be sold.",
+    "startSec": 47.574,
+    "endSec": 48.843
+  },
+  {
+    "word": "You cannot walk into an auction",
+    "startSec": 48.843,
+    "endSec": 50.554
+  },
+  {
+    "word": "house with a cut-out Rembrandt.",
+    "startSec": 50.554,
+    "endSec": 52.264
+  },
+  {
+    "word": "Which leaves one uncomfortable answer.",
+    "startSec": 52.484,
+    "endSec": 54.628
   },
   {
     "word": "Either the thieves did not",
-    "startSec": 34.545,
-    "endSec": 36.004
+    "startSec": 54.628,
+    "endSec": 56.094
   },
   {
     "word": "understand what they were holding",
-    "startSec": 36.004,
-    "endSec": 37.856
+    "startSec": 56.094,
+    "endSec": 57.956
   },
   {
     "word": "or the art was",
-    "startSec": 37.856,
-    "endSec": 38.642
+    "startSec": 57.956,
+    "endSec": 58.746
   },
   {
     "word": "never really the point.",
-    "startSec": 38.642,
-    "endSec": 39.933
+    "startSec": 58.746,
+    "endSec": 60.043
   },
   {
     "word": "Look again at what they left.",
-    "startSec": 39.933,
-    "endSec": 41.561
+    "startSec": 60.043,
+    "endSec": 61.679
   }
 ];

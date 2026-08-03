@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT158_TOTAL_SEC = 40.75;
+export const SHORT158_TOTAL_SEC = 61.333;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.298,
     "end": 39.75
+  },
+  {
+    "id": "L6",
+    "start": 39.97,
+    "end": 45.636
+  },
+  {
+    "id": "L7",
+    "start": 45.856,
+    "end": 52.311
+  },
+  {
+    "id": "L8",
+    "start": 52.531,
+    "end": 60.333
   }
 ];
 
@@ -140,28 +155,78 @@ export const SHORT158_CAPTIONS: ShortCaption[] = [
     "endSec": 31.078
   },
   {
-    "word": "The man who built it was",
+    "word": "On paper the foundation helped disadvantaged children.",
     "startSec": 31.298,
-    "endSec": 32.669
+    "endSec": 35.267
+  },
+  {
+    "word": "Prosecutors called it a laundry",
+    "startSec": 35.267,
+    "endSec": 37.545
+  },
+  {
+    "word": "dressing bribes as good deeds.",
+    "startSec": 37.545,
+    "endSec": 39.75
+  },
+  {
+    "word": "Singer ran it nationwide for",
+    "startSec": 39.97,
+    "endSec": 41.859
+  },
+  {
+    "word": "most of a decade",
+    "startSec": 41.859,
+    "endSec": 42.938
+  },
+  {
+    "word": "with his own staff paperwork and prices.",
+    "startSec": 42.938,
+    "endSec": 45.636
+  },
+  {
+    "word": "Most of what he",
+    "startSec": 45.856,
+    "endSec": 46.761
+  },
+  {
+    "word": "sold was technically legal. Real counseling",
+    "startSec": 46.761,
+    "endSec": 49.355
+  },
+  {
+    "word": "real essay help.",
+    "startSec": 49.355,
+    "endSec": 50.32
+  },
+  {
+    "word": "That business was the camouflage.",
+    "startSec": 50.32,
+    "endSec": 52.311
+  },
+  {
+    "word": "The man who built it was",
+    "startSec": 52.531,
+    "endSec": 53.796
   },
   {
     "word": "ordered to pay the I.R.S.",
-    "startSec": 32.669,
-    "endSec": 34.096
+    "startSec": 53.796,
+    "endSec": 55.114
   },
   {
     "word": "more than ten million dollars.",
-    "startSec": 34.096,
-    "endSec": 35.81
+    "startSec": 55.114,
+    "endSec": 56.696
   },
   {
     "word": "The exact taxes his clients had dodged.",
-    "startSec": 35.81,
-    "endSec": 38.037
+    "startSec": 56.696,
+    "endSec": 58.752
   },
   {
     "word": "So what did a bribe look like?",
-    "startSec": 38.037,
-    "endSec": 39.75
+    "startSec": 58.752,
+    "endSec": 60.333
   }
 ];

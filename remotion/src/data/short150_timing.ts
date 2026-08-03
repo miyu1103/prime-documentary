@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT150_TOTAL_SEC = 35.642;
+export const SHORT150_TOTAL_SEC = 55.156;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 28.233,
     "end": 34.642
+  },
+  {
+    "id": "L6",
+    "start": 34.862,
+    "end": 41.224
+  },
+  {
+    "id": "L7",
+    "start": 41.444,
+    "end": 47.342
+  },
+  {
+    "id": "L8",
+    "start": 47.562,
+    "end": 54.156
   }
 ];
 
@@ -125,28 +140,93 @@ export const SHORT150_CAPTIONS: ShortCaption[] = [
     "endSec": 28.013
   },
   {
-    "word": "It did not turn away his.",
+    "word": "Gideon had asked the Florida judge for",
     "startSec": 28.233,
-    "endSec": 29.651
+    "endSec": 30.467
+  },
+  {
+    "word": "a lawyer and been told no.",
+    "startSec": 30.467,
+    "endSec": 31.996
+  },
+  {
+    "word": "Free counsel came only",
+    "startSec": 31.996,
+    "endSec": 33.29
+  },
+  {
+    "word": "in death penalty cases.",
+    "startSec": 33.29,
+    "endSec": 34.642
+  },
+  {
+    "word": "He faced a prosecutor who",
+    "startSec": 34.862,
+    "endSec": 36.485
+  },
+  {
+    "word": "knew every rule by heart",
+    "startSec": 36.485,
+    "endSec": 38.043
+  },
+  {
+    "word": "argued his own case",
+    "startSec": 38.043,
+    "endSec": 39.276
+  },
+  {
+    "word": "and was convicted. Five years.",
+    "startSec": 39.276,
+    "endSec": 41.224
+  },
+  {
+    "word": "From his cell he",
+    "startSec": 41.444,
+    "endSec": 42.448
+  },
+  {
+    "word": "filed as a pauper",
+    "startSec": 42.448,
+    "endSec": 43.515
+  },
+  {
+    "word": "too poor to pay",
+    "startSec": 43.515,
+    "endSec": 44.456
+  },
+  {
+    "word": "with no firm and no",
+    "startSec": 44.456,
+    "endSec": 45.648
+  },
+  {
+    "word": "famous attorney behind him.",
+    "startSec": 45.648,
+    "endSec": 47.342
+  },
+  {
+    "word": "It did not turn away his.",
+    "startSec": 47.562,
+    "endSec": 49.021
   },
   {
     "word": "One handwritten letter from",
-    "startSec": 29.651,
-    "endSec": 31.182
+    "startSec": 49.021,
+    "endSec": 50.596
   },
   {
     "word": "a Florida prison cell",
-    "startSec": 31.182,
-    "endSec": 32.373
+    "startSec": 50.596,
+    "endSec": 51.822
   },
   {
     "word": "and the justices agreed",
-    "startSec": 32.373,
-    "endSec": 33.678
+    "startSec": 51.822,
+    "endSec": 53.164
   },
   {
     "word": "to hear the case.",
-    "startSec": 33.678,
-    "endSec": 34.642
+    "startSec": 53.164,
+    "endSec": 54.156
   }
 ];

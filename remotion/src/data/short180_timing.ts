@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT180_TOTAL_SEC = 42.096;
+export const SHORT180_TOTAL_SEC = 61.24;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 34.223,
     "end": 41.096
+  },
+  {
+    "id": "L6",
+    "start": 41.316,
+    "end": 48.979
+  },
+  {
+    "id": "L7",
+    "start": 49.199,
+    "end": 53.379
+  },
+  {
+    "id": "L8",
+    "start": 53.599,
+    "end": 60.24
   }
 ];
 
@@ -130,23 +145,68 @@ export const SHORT180_CAPTIONS: ShortCaption[] = [
     "endSec": 34.003
   },
   {
-    "word": "That judge stopped it in one town.",
+    "word": "The more a person failed to pay",
     "startSec": 34.223,
-    "endSec": 36.138
+    "endSec": 36.7
+  },
+  {
+    "word": "the more the company earned.",
+    "startSec": 36.7,
+    "endSec": 38.938
+  },
+  {
+    "word": "Their ruin was its revenue.",
+    "startSec": 38.938,
+    "endSec": 41.096
+  },
+  {
+    "word": "Human Rights Watch documented courts handing",
+    "startSec": 41.316,
+    "endSec": 43.814
+  },
+  {
+    "word": "the ability-to-pay decision to probation-company employees",
+    "startSec": 43.814,
+    "endSec": 47.106
+  },
+  {
+    "word": "a conflict of interest by design.",
+    "startSec": 47.106,
+    "endSec": 48.979
+  },
+  {
+    "word": "In those proceedings",
+    "startSec": 49.199,
+    "endSec": 50.376
+  },
+  {
+    "word": "people were not told they had",
+    "startSec": 50.376,
+    "endSec": 52.084
+  },
+  {
+    "word": "any right to a lawyer.",
+    "startSec": 52.084,
+    "endSec": 53.379
+  },
+  {
+    "word": "That judge stopped it in one town.",
+    "startSec": 53.599,
+    "endSec": 55.45
   },
   {
     "word": "The practice went on next door",
-    "startSec": 36.138,
-    "endSec": 37.829
+    "startSec": 55.45,
+    "endSec": 57.083
   },
   {
     "word": "in a hundred courtrooms where nobody",
-    "startSec": 37.829,
-    "endSec": 39.857
+    "startSec": 57.083,
+    "endSec": 59.042
   },
   {
     "word": "used a word like that.",
-    "startSec": 39.857,
-    "endSec": 41.096
+    "startSec": 59.042,
+    "endSec": 60.24
   }
 ];

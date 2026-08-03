@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT157_TOTAL_SEC = 37.406;
+export const SHORT157_TOTAL_SEC = 59.336;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 28.233,
     "end": 36.406
+  },
+  {
+    "id": "L6",
+    "start": 36.626,
+    "end": 42.988
+  },
+  {
+    "id": "L7",
+    "start": 43.208,
+    "end": 49.71
+  },
+  {
+    "id": "L8",
+    "start": 49.93,
+    "end": 58.336
   }
 ];
 
@@ -125,28 +140,88 @@ export const SHORT157_CAPTIONS: ShortCaption[] = [
     "endSec": 28.013
   },
   {
-    "word": "At his sentencing the",
+    "word": "He never bought the cars the house",
     "startSec": 28.233,
-    "endSec": 29.468
+    "endSec": 30.671
+  },
+  {
+    "word": "or the life the money could buy.",
+    "startSec": 30.671,
+    "endSec": 32.965
+  },
+  {
+    "word": "A specialist later testified this",
+    "startSec": 32.965,
+    "endSec": 35.331
+  },
+  {
+    "word": "was not an act.",
+    "startSec": 35.331,
+    "endSec": 36.406
+  },
+  {
+    "word": "In 2015 he was arrested at",
+    "startSec": 36.626,
+    "endSec": 38.232
+  },
+  {
+    "word": "his parents' house in London.",
+    "startSec": 38.232,
+    "endSec": 40.023
+  },
+  {
+    "word": "He fought the extradition for",
+    "startSec": 40.023,
+    "endSec": 41.814
+  },
+  {
+    "word": "months and he lost.",
+    "startSec": 41.814,
+    "endSec": 42.988
+  },
+  {
+    "word": "In 2016 he pleaded guilty to",
+    "startSec": 43.208,
+    "endSec": 44.878
+  },
+  {
+    "word": "wire fraud and to spoofing",
+    "startSec": 44.878,
+    "endSec": 46.429
+  },
+  {
+    "word": "and agreed to hand back",
+    "startSec": 46.429,
+    "endSec": 47.801
+  },
+  {
+    "word": "nearly thirteen million dollars.",
+    "startSec": 47.801,
+    "endSec": 49.71
+  },
+  {
+    "word": "At his sentencing the",
+    "startSec": 49.93,
+    "endSec": 51.2
   },
   {
     "word": "prosecutors did something rare.",
-    "startSec": 29.468,
-    "endSec": 31.291
+    "startSec": 51.2,
+    "endSec": 53.075
   },
   {
     "word": "They asked the judge for mercy.",
-    "startSec": 31.291,
-    "endSec": 33.113
+    "startSec": 53.075,
+    "endSec": 54.949
   },
   {
     "word": "He served no further prison at all",
-    "startSec": 33.113,
-    "endSec": 35.112
+    "startSec": 54.949,
+    "endSec": 57.006
   },
   {
     "word": "a single year at home.",
-    "startSec": 35.112,
-    "endSec": 36.406
+    "startSec": 57.006,
+    "endSec": 58.336
   }
 ];

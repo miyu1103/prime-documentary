@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT155_TOTAL_SEC = 43.211;
+export const SHORT155_TOTAL_SEC = 64.583;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 33.202,
     "end": 42.211
+  },
+  {
+    "id": "L6",
+    "start": 42.431,
+    "end": 47.4
+  },
+  {
+    "id": "L7",
+    "start": 47.62,
+    "end": 53.239
+  },
+  {
+    "id": "L8",
+    "start": 53.459,
+    "end": 63.583
   }
 ];
 
@@ -130,28 +145,73 @@ export const SHORT155_CAPTIONS: ShortCaption[] = [
     "endSec": 32.982
   },
   {
-    "word": "For years",
+    "word": "A blood test then meant a needle",
     "startSec": 33.202,
-    "endSec": 33.902
+    "endSec": 36.37
+  },
+  {
+    "word": "a vial a lab a wait.",
+    "startSec": 36.37,
+    "endSec": 38.35
+  },
+  {
+    "word": "Theranos promised to erase all of that.",
+    "startSec": 38.35,
+    "endSec": 42.211
+  },
+  {
+    "word": "Its device the Edison",
+    "startSec": 42.431,
+    "endSec": 43.578
+  },
+  {
+    "word": "was said to run hundreds of tests",
+    "startSec": 43.578,
+    "endSec": 45.38
+  },
+  {
+    "word": "from a single painless drop of blood.",
+    "startSec": 45.38,
+    "endSec": 47.4
+  },
+  {
+    "word": "A failed app costs money.",
+    "startSec": 47.62,
+    "endSec": 49.114
+  },
+  {
+    "word": "A blood test that gives the wrong",
+    "startSec": 49.114,
+    "endSec": 51.087
+  },
+  {
+    "word": "answer can cost someone a diagnosis.",
+    "startSec": 51.087,
+    "endSec": 53.239
+  },
+  {
+    "word": "For years",
+    "startSec": 53.459,
+    "endSec": 54.159
   },
   {
     "word": "with nine billion dollars riding on it",
-    "startSec": 33.902,
-    "endSec": 36.296
+    "startSec": 54.159,
+    "endSec": 56.849
   },
   {
     "word": "the question went unasked in public.",
-    "startSec": 36.296,
-    "endSec": 38.564
+    "startSec": 56.849,
+    "endSec": 59.398
   },
   {
     "word": "In 2015 a reporter with internal",
-    "startSec": 38.564,
-    "endSec": 40.58
+    "startSec": 59.398,
+    "endSec": 61.664
   },
   {
     "word": "documents asked it in print.",
-    "startSec": 40.58,
-    "endSec": 42.211
+    "startSec": 61.664,
+    "endSec": 63.583
   }
 ];

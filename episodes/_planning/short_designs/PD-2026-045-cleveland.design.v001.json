@@ -76,24 +76,24 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "In 2012 an Alabama judge described how courts in his own state collected fines from people too poor to pay. He called it a judicially sanctioned extortion racket.",
+          "delivery": "intense",
           "source_lines": [
             "In 2012, an Alabama circuit judge named Hub Harrington moved to stop the company's practices in a town called Harpersville, and he did not reach for gentle language when he described what he had found. He called it a judicially sanctioned extortion racket."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "People who could not pay were put on probation, run not by the county but by a private company, in business to make a profit.",
+          "delivery": "building",
           "source_lines": [
             "She was placed on probation, and her probation was not run by the county. It was run by a private company, in business to make a profit."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "The model has a name. Offender funded probation. The person being punished pays for the machinery of their own punishment, and the company skims a fee.",
+          "delivery": "building",
           "source_lines": [
             "It is called offender-funded probation, and the premise is exactly as blunt as it sounds. The person being punished is made to pay for the machinery of their own punishment.",
             "The company collects the debt, and skims a fee for the service of collecting it."
@@ -101,16 +101,40 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "By 2013 that one company was working in at least a hundred Alabama courts, and roughly thirty-eight thousand people were on its rolls across four states.",
+          "delivery": "intense",
           "source_lines": [
             "By 2013, that one company was working in at least a hundred Alabama courts, and roughly thirty-eight thousand people were on that company's rolls across four states."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "The more a person failed to pay, the more the company earned. Their ruin was its revenue.",
+          "delivery": "building",
+          "source_lines": [
+            "The more she failed to pay, the more the company earned. Her ruin was its revenue."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Human Rights Watch documented courts handing the ability-to-pay decision to probation-company employees, a conflict of interest by design.",
+          "delivery": "building",
+          "source_lines": [
+            "Human Rights Watch documented precisely that pattern, courts delegating the ability-to-pay decision to probation-company employees, a conflict of interest wired straight into the design."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "In those proceedings, people were not told they had any right to a lawyer.",
+          "delivery": "intense",
+          "source_lines": [
+            "In the proceedings where the fines were tallied and the jail time was handed down, people in Cleveland's position were not told they had any right to a lawyer."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "That judge stopped it in one town. The practice went on next door, in a hundred courtrooms where nobody used a word like that.",
+          "delivery": "calm",
           "source_lines": [
             "One judge, in one hearing, put the word extortion into the permanent record. The practice went on in the towns next door."
           ]
@@ -136,13 +160,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "counting cash by hand",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1591__highway_night_long_exposure.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41312__stack_of_hundred_dollar_bills.mp4",
           "bound_title": "vehicles passing by the expressway at night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.9184,
           "motion": 3.345,
-          "luma": 34.2
+          "luma": 34.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
         },
         {
           "n": 3,
@@ -183,13 +209,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty waiting room chairs",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9434__rain_street_reflection_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26007__hospital_waiting_room_empty.mp4",
           "bound_title": "video of people waiting for a taxi on a rainy night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.401,
           "motion": 12.433,
-          "luma": 95.1
+          "luma": 95.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
         },
         {
           "n": 7,
@@ -220,13 +248,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands counting coins",
-          "bound_file": "D:\\pd-archive\\money_banking\\mixkit__18263__hands-of-a-man-counting-coins-close-up-view.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-39159__physical_bitcoin_coin.mp4",
           "bound_title": "Hands of a man counting coins close up view",
           "bound_license": "free_commercial",
           "bound_source": "mixkit",
           "centre_energy": 0.4773,
           "motion": 15.651,
-          "luma": 121.9
+          "luma": 121.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
         },
         {
           "n": 10,
@@ -247,13 +277,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "receipt paper printing close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1361__newspaper_macro.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33804__newspaper_printing_press.mp4",
           "bound_title": "a woman reading the newspaper",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4079,
           "motion": 9.222,
-          "luma": 60.5
+          "luma": 60.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.337
         },
         {
           "n": 12,
@@ -274,13 +306,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "cash money close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38627__money_counting_machine.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23894__safe_deposit_boxes_vault.mp4",
           "bound_title": "close up video of man holding a cash money",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5648,
           "motion": 16.32,
-          "luma": 85.1
+          "luma": 85.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
         },
         {
           "n": 14,
@@ -361,13 +395,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "highway at night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30497__highway_night_long_exposure.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1590__highway_night_long_exposure.mp4",
           "bound_title": "a long exposure photograph of cars driving on a highway at night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4212,
           "motion": 11.309,
-          "luma": 65.0
+          "luma": 65.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.322
         },
         {
           "n": 22,
@@ -382,12 +418,220 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the open cash drawer",
           "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U05",
+          "subject": "the charge that keeps running",
+          "source": "FOOTAGE",
+          "footage_query": "parking meter on a city street",
           "prompt": null,
-          "footage_query": "open cash drawer counter"
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-2057__bokeh_city_lights_blur.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "R12",
+          "subject": "what she had left to pay with",
+          "source": "FOOTAGE",
+          "footage_query": "empty wallet open on a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-4126__money_cash_counting.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M07",
+          "subject": "the company on the other end of it",
+          "source": "FOOTAGE",
+          "footage_query": "empty office desk with a telephone",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23686__case_files_stack_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U01",
+          "subject": "the office that billed by the month",
+          "source": "FOOTAGE",
+          "footage_query": "fluorescent lights on above an empty office",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20317__courtroom_empty_wide.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "I06",
+          "subject": "the letters that kept coming",
+          "source": "FOOTAGE",
+          "footage_query": "unopened envelopes piled on a doormat",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30671__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "R04",
+          "subject": "the employee who decided if you could pay",
+          "source": "FOOTAGE",
+          "footage_query": "two people talking across an office counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32618__empty_office_cubicles.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U04",
+          "subject": "the floor where that call was made",
+          "source": "FOOTAGE",
+          "footage_query": "row of cubicles in an open office",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3777__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "U11",
+          "subject": "the office, in ordinary daylight",
+          "source": "FOOTAGE",
+          "footage_query": "daylight through office window blinds",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29219__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I04",
+          "subject": "who was allowed in the room",
+          "source": "FOOTAGE",
+          "footage_query": "key card reader beside an office door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21659__elevator_interior_steel.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "R08",
+          "subject": "the decision the court handed away",
+          "source": "FOOTAGE",
+          "footage_query": "empty chair behind a raised bench",
+          "prompt": null
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "Y01",
+          "subject": "the lawyer who was never mentioned",
+          "source": "FOOTAGE",
+          "footage_query": "closed briefcase left on a bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0518__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "the place nobody spoke from",
+          "source": "FOOTAGE",
+          "footage_query": "empty wooden lectern facing a room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36251__witness_stand_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "R03",
+          "subject": "the room these hearings happened in",
+          "source": "FOOTAGE",
+          "footage_query": "plain table under a low hanging lamp",
+          "prompt": null
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "W08",
+          "subject": "the seat beside them, empty",
+          "source": "FOOTAGE",
+          "footage_query": "bare wall beside an empty bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1828__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.292
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "leaving with no idea what was owed",
+          "source": "FOOTAGE",
+          "footage_query": "person walking away along a sunlit sidewalk",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
         }
       ],
       "type": "C — a quotation or document",
@@ -403,16 +647,16 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "The rule that says a court cannot jail you for being too poor to pay was written for a man who could not read.",
+          "delivery": "intense",
           "source_lines": [
             "He had a ninth-grade education, he could not read, and with no work and no income, he could not pay the balance."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "He pleaded guilty to burglary and theft. The court fined him five hundred dollars and ordered restitution on a schedule. He borrowed money to make the first payments.",
+          "delivery": "building",
           "source_lines": [
             "He pleaded guilty to burglary and theft, and the court sentenced him to a five hundred dollar fine and two hundred and fifty dollars in restitution, on a schedule",
             "He borrowed the money to make the first two hundred."
@@ -420,8 +664,8 @@
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Then he was laid off. He could not pay the balance, and Georgia revoked his probation and sent him to prison for the shortfall.",
+          "delivery": "building",
           "source_lines": [
             "Then he was laid off.",
             "Georgia revoked his probation and sent him to prison for the shortfall."
@@ -429,8 +673,8 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "In 1983 the Supreme Court ruled in his favor. What the Constitution forbids is jailing a person for the sole reason that they cannot pay, without ever asking whether they could.",
+          "delivery": "intense",
           "source_lines": [
             "His case climbed all the way to the Supreme Court, and in the spring of 1983 the Court ruled in his favor.",
             "jailing a person for the sole reason that they cannot pay, without ever stopping to ask whether they could."
@@ -438,8 +682,34 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "A court cannot jail someone for unpaid fines unless it first finds they refused while able to pay.",
+          "delivery": "building",
+          "source_lines": [
+            "A court cannot revoke probation and jail a person for failing to pay a fine unless it first finds one of two things.",
+            "Either the person willfully refused to pay when he actually had the money to do it"
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Even where nonpayment is not willful, the court must still weigh a punishment short of a cell.",
+          "delivery": "building",
+          "source_lines": [
+            "And even where nonpayment is not willful, the court still has to ask whether some punishment short of a cell would serve."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Bearden did not abolish fines. Courts can still punish someone who has the money and simply refuses.",
+          "delivery": "intense",
+          "source_lines": [
+            "But Bearden did not abolish fines.",
+            "They can still punish a person who has the money and simply refuses to hand it over."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "That answer still stands. Thirty years later, in a Montgomery courtroom, nobody in the room said it out loud.",
+          "delivery": "calm",
           "source_lines": [
             "It simply never walked into the room where she was standing."
           ]
@@ -465,13 +735,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands holding paper",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3832__courtroom_interior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32025__us_constitution_document.mp4",
           "bound_title": "a person holding a statue",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4034,
           "motion": 14.138,
-          "luma": 62.9
+          "luma": 62.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.333
         },
         {
           "n": 3,
@@ -512,13 +784,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "wooden bench worn texture",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-17842__old_keys_on_table.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46769__empty_chair_in_spotlight_grief.mp4",
           "bound_title": "vintage typewriter in use on wooden desk",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4271,
           "motion": 3.413,
-          "luma": 58.4
+          "luma": 58.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
         },
         {
           "n": 7,
@@ -549,13 +823,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "old pickup truck rural",
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0636__soft_golden_light.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22497__moving_truck_loading.mp4",
           "bound_title": "golden grasses swaying in warm evening light",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4284,
           "motion": 14.897,
-          "luma": 74.5
+          "luma": 74.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
         },
         {
           "n": 10,
@@ -566,13 +842,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "kitchen table with cup",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1987__smartphone_in_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9885__chess_board_dramatic.mp4",
           "bound_title": "capturing urban scene with smartphone at night",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5976,
           "motion": 4.147,
-          "luma": 29.6
+          "luma": 29.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
         },
         {
           "n": 11,
@@ -603,13 +881,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty factory interior",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5316__empty_stadium_seats.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20982__abandoned_factory_interior.mp4",
           "bound_title": "empty seats in a stadium",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3939,
           "motion": 7.677,
-          "luma": 29.1
+          "luma": 29.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
         },
         {
           "n": 14,
@@ -650,13 +930,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "prison bars close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1822__prison_corridor.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\particle_assets\\AF-PART-4403__heavy_rain_backlit.mp4",
           "bound_title": "prisoners talking from the bunk bed",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4234,
           "motion": 9.762,
-          "luma": 97.6
+          "luma": 97.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         },
         {
           "n": 18,
@@ -711,12 +993,218 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (1)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing (2)",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the page he could not read",
           "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "W03",
+          "subject": "the cell the rule is about",
+          "source": "FOOTAGE",
+          "footage_query": "empty cell with a bare bunk frame",
           "prompt": null,
-          "footage_query": "printed page under lamp"
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1824__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "M06",
+          "subject": "what he had left when the work stopped",
+          "source": "FOOTAGE",
+          "footage_query": "empty drawer pulled out of a desk",
+          "prompt": null
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "W05",
+          "subject": "the job that paid the first instalments",
+          "source": "FOOTAGE",
+          "footage_query": "workbench with hand tools laid out",
+          "prompt": null
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U08",
+          "subject": "the bills that kept arriving",
+          "source": "FOOTAGE",
+          "footage_query": "wall of small mailboxes in a lobby",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23895__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U02",
+          "subject": "the door that closes if nobody asks",
+          "source": "FOOTAGE",
+          "footage_query": "heavy metal cell door pulled closed",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8126__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "the weighing the court has to do",
+          "source": "FOOTAGE",
+          "footage_query": "empty jury room with a long table",
+          "prompt": null
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "W08",
+          "subject": "the punishment short of a cell",
+          "source": "FOOTAGE",
+          "footage_query": "push broom leaning against a bare wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29774__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "R12",
+          "subject": "community work instead of prison",
+          "source": "FOOTAGE",
+          "footage_query": "work gloves left on a wooden bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26770__elderly_hands_close_up.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "W06",
+          "subject": "the notice that arrives at home",
+          "source": "FOOTAGE",
+          "footage_query": "brown envelope on a worn tabletop",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63209__tax_forms_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "R10",
+          "subject": "the home he could have stayed in",
+          "source": "FOOTAGE",
+          "footage_query": "screen door on a small house porch",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1748__front_door_house.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "M05",
+          "subject": "the money, where there is money",
+          "source": "FOOTAGE",
+          "footage_query": "steel cash box with the lid open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23984__money_counting_machine.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "I01",
+          "subject": "the order that still stands",
+          "source": "FOOTAGE",
+          "footage_query": "hand pressing a stamp onto a folder",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36373__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "I04",
+          "subject": "for the ones who simply refuse",
+          "source": "FOOTAGE",
+          "footage_query": "chain and padlock closed on a gate",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12147__padlock_and_chain.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "M07",
+          "subject": "the court that still decides it",
+          "source": "FOOTAGE",
+          "footage_query": "long polished table in an empty room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14600__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U06",
+          "subject": "the man the rule was written for",
+          "source": "FOOTAGE",
+          "footage_query": "single wooden chair against a bare wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-29209__single_chair_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
         }
       ],
       "type": "C — a quotation or document",

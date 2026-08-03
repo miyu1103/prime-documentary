@@ -67,24 +67,24 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "If you hold a driver's license, your face is already in a police lineup. You never volunteered for it, and you cannot step out of it.",
+          "delivery": "intense",
           "source_lines": [
             "If you hold a driver's license, you are in the lineup — a permanent one you never volunteered for and can never step out of."
           ]
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "The software takes one image and compares it against millions of driver's license photos and mug shots. People never accused of anything.",
+          "delivery": "building",
           "source_lines": [
             "It takes one image and compares it against a vast state database — millions of driver's-license photos and mug shots, ordinary people who have never been accused of anything in their lives."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "It does not know who anyone is. It returns a ranked list of look-alikes, each scored by a probability. Feed it a blurry photo and it still hands back somebody.",
+          "delivery": "building",
           "source_lines": [
             "The software does not know who anyone is. It produces a ranked list of faces that look statistically similar, each one scored by a probability.",
             "Feed it a blurry one, and it will still hand back somebody."
@@ -92,16 +92,41 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "You do not have to break a law, know a criminal, or go near a crime scene. To software, you only have to look a little like somebody else.",
+          "delivery": "intense",
           "source_lines": [
             "You do not have to break a law, know a criminal, or go anywhere near a crime scene. To a piece of software, you only have to look a little like somebody else."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Police hand a blurry frame to software and ask it to go find a person.",
+          "delivery": "building",
+          "source_lines": [
+            "So the police did what more and more departments now do by reflex. They handed the blur to software, and they asked it to go find a person."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "A face on a screen is not supposed to be enough. A match is a lead, not an arrest.",
+          "delivery": "building",
+          "source_lines": [
+            "And a face on a screen is not supposed to be enough. Everyone in that room knew it.",
+            "A match is a lead — a name to look into, not a name to arrest."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Your face has quietly become a password you can never change.",
+          "delivery": "building",
+          "source_lines": [
+            "remember what your face has quietly become — a password you can never change, that software somewhere is already comparing against the worst thing that happened in your city today."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "In a Detroit suburb, one father was matched to a crime he never heard of. About thirty hours in a cell. He was only in the lineup.",
+          "delivery": "calm",
           "source_lines": [
             "It happened to a father in a quiet Detroit suburb in the winter of twenty twenty.",
             "Then a cell, and the better part of two days inside it — about thirty hours — for a crime he had never heard a word about."
@@ -128,13 +153,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "camera lens close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52524__vintage_film_camera.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-52538__vintage_film_camera.mp4",
           "bound_title": "close up footage of a camera lens",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5006,
           "motion": 4.387,
-          "luma": 80.7
+          "luma": 80.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
         },
         {
           "n": 3,
@@ -175,13 +202,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "server room data center",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1046__data_center.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0980__server_room_blue.mp4",
           "bound_title": "male call center agent taking notes",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3862,
           "motion": 21.505,
-          "luma": 118.6
+          "luma": 118.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
         },
         {
           "n": 7,
@@ -212,13 +241,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "fiber optic cables close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0982__server_room_blue.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24995__fiber_optic_cables_glowing.mp4",
           "bound_title": "man checking the computer cables",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4203,
           "motion": 17.226,
-          "luma": 45.4
+          "luma": 45.4,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
         },
         {
           "n": 10,
@@ -239,7 +270,6 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hard drive platter close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1203__circuit_board_macro.mp4",
           "bound_title": "a close up shot of a person soldering",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
@@ -266,13 +296,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "security camera on ceiling",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0753__american_flag_waving.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-5638__tv_screen_glow_on_face.mp4",
           "bound_title": "american flag waving on the flagpole",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4238,
           "motion": 29.542,
-          "luma": 99.5
+          "luma": 99.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.306
         },
         {
           "n": 14,
@@ -313,13 +345,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "handcuffs close up macro",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1205__circuit_board_macro.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12145__padlock_and_chain.mp4",
           "bound_title": "close up shot of electronic chip",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.7011,
           "motion": 4.953,
-          "luma": 34.1
+          "luma": 34.1,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
         },
         {
           "n": 18,
@@ -374,12 +408,224 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the licence camera",
           "source": "REUSE_01",
           "prompt": null,
-          "footage_query": "photo studio backdrop tripod"
+          "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: return to the licence camera",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: return to the licence camera",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R01",
+          "subject": "a police car parked on a city street",
+          "source": "FOOTAGE",
+          "footage_query": "police car parked on a city street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14772__police_station_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "I05",
+          "subject": "a shop aisle seen from a high corner",
+          "source": "FOOTAGE",
+          "footage_query": "shop aisle seen from a high corner",
+          "prompt": null
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M02",
+          "subject": "a checkout counter in a small shop",
+          "source": "FOOTAGE",
+          "footage_query": "checkout counter in a small shop",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11397__airport_terminal_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R04",
+          "subject": "two officers working at an office desk",
+          "source": "FOOTAGE",
+          "footage_query": "two officers working at an office desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23686__case_files_stack_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "a hand moving a computer mouse on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "hand moving a computer mouse on desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30309__documents_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.34
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "a briefing room with a blank projector screen",
+          "source": "FOOTAGE",
+          "footage_query": "briefing room with a blank projector screen",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7849__boardroom_table_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "M04",
+          "subject": "blank sticky notes stuck on a whiteboard",
+          "source": "FOOTAGE",
+          "footage_query": "blank sticky notes stuck on a whiteboard",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0451__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "W06",
+          "subject": "a folder handed across an office counter",
+          "source": "FOOTAGE",
+          "footage_query": "folder handed across an office counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63204__tax_forms_on_desk.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "a door opening onto a bright office floor",
+          "source": "FOOTAGE",
+          "footage_query": "door opening onto a bright office floor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3774__office_interior_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.329
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "R05",
+          "subject": "the front steps of a police station in daylight",
+          "source": "FOOTAGE",
+          "footage_query": "front steps of a police station daylight",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22093__white_picket_fence.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.29
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "U09",
+          "subject": "a person holding a phone up to their face",
+          "source": "FOOTAGE",
+          "footage_query": "person holding a phone up to face",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8529__mobile_phone_map_location.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "I03",
+          "subject": "a keypad on a door entry panel",
+          "source": "FOOTAGE",
+          "footage_query": "keypad on a door entry panel",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-21666__elevator_interior_steel.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.318
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "U15",
+          "subject": "turnstile gates in a station hall",
+          "source": "FOOTAGE",
+          "footage_query": "turnstile gates in a station hall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11257__subway_tunnel_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "M06",
+          "subject": "a bunch of keys lying on a table",
+          "source": "FOOTAGE",
+          "footage_query": "bunch of keys lying on a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51098__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U13",
+          "subject": "people walking through a station concourse",
+          "source": "FOOTAGE",
+          "footage_query": "people walking through a station concourse",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-49310__crowd_of_commuters_silhouette.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
         }
       ],
       "type": "A — second-person threat",
@@ -395,8 +641,8 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "He won. Police in that city can no longer arrest on a face match alone. One town over, the rule does not exist.",
+          "delivery": "intense",
           "source_lines": [
             "Police there can no longer arrest anyone on a face-match alone.",
             "Those rules bind one police department, in one city. Everywhere else, this same power still works the way it always has."
@@ -404,32 +650,57 @@
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "He was not the first. Before his story broke, at least two other men had already been arrested this exact way, one in the same city, one two states away.",
+          "delivery": "building",
           "source_lines": [
             "Before his story ever broke, at least two other men — one in the same city, one two states away — had already been arrested this exact way, their cases only surfacing later."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "And he was not the last. One woman was eight months pregnant, held in a cell over a crime a computer had tied to her face.",
+          "delivery": "building",
           "source_lines": [
             "One of them was eight months pregnant — held in a cell over a crime a computer had tied to her face."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "The group that represented him counts more than a dozen known wrongful arrests like his. Nearly every person named in them has been Black.",
+          "delivery": "intense",
           "source_lines": [
             "By the count of the group that represented him, there are now more than a dozen known wrongful arrests like his in this country, and nearly every person named in them has been Black."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "Each of the others was an ordinary person, matched by a machine, believed over their own flat denial.",
+          "delivery": "building",
+          "source_lines": [
+            "Each one an ordinary person. Each one matched by a machine. And each one believed over their own flat denial."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The city he sued was forced to rewrite its rules. A match is now a lead and nothing more.",
+          "delivery": "building",
+          "source_lines": [
+            "As part of that deal, the city was forced to rewrite its rules.",
+            "The match is treated as a lead and nothing more."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Every earlier arrest made with the software has to be pulled and reviewed, going back years.",
+          "delivery": "building",
+          "source_lines": [
+            "Every earlier case where the software was used to make an arrest has to be pulled and reviewed, going back years."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "One man got a rule. Everyone else got a warning. And the rule only exists because his story got loud enough.",
+          "delivery": "calm",
           "source_lines": [
             "He was only the first whose story got loud enough to force anyone to change a single rule."
           ]
@@ -455,13 +726,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty road at dusk",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1119__technology_abstract_blue.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6034__empty_road_sunset.mp4",
           "bound_title": "3d animation of a futuristic dynamic pattern",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4374,
           "motion": 31.816,
-          "luma": 111.0
+          "luma": 111.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
         },
         {
           "n": 3,
@@ -472,13 +745,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "road marking line asphalt",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3053__empty_road_sunset.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36651__long_shadow_of_a_person.mp4",
           "bound_title": "aerial footage of truck on the road",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.392,
           "motion": 1.338,
-          "luma": 110.9
+          "luma": 110.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.297
         },
         {
           "n": 4,
@@ -509,13 +784,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "prison corridor doors",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-11523__hospital_corridor_night.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-37599__empty_parking_garage.mp4",
           "bound_title": "walking along a creepy hotel corridor",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.5317,
           "motion": 17.489,
-          "luma": 58.3
+          "luma": 58.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
         },
         {
           "n": 7,
@@ -636,13 +913,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "stack of paper files",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0752__american_flag_waving.mp4",
           "bound_title": "flag of usa",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.6118,
           "motion": 11.918,
-          "luma": 116.1
+          "luma": 116.1,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63076__old_ledger_book.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
         },
         {
           "n": 19,
@@ -673,13 +952,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "long office corridor doors",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6732__police_badge_close_up.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-16522__office_interior_dark.mp4",
           "bound_title": "police officer wearing sunglasses",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4566,
           "motion": 11.449,
-          "luma": 91.0
+          "luma": 91.0,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.299
         },
         {
           "n": 22,
@@ -694,12 +975,227 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the glowing city on the dark map",
           "source": "REUSE_01",
           "prompt": null,
-          "footage_query": "dark map united states glowing"
+          "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: return to the glowing city on the dark map",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: return to the glowing city on the dark map",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U11",
+          "subject": "the ordinary front door of a suburban house",
+          "source": "FOOTAGE",
+          "footage_query": "ordinary front door of a suburban house",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63425__vault_door_spinning_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.296
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "two hands gripping the edge of a table",
+          "source": "FOOTAGE",
+          "footage_query": "hands gripping the edge of a table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63139__audit_documents_stack.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U09",
+          "subject": "a person sitting alone on an outdoor bench",
+          "source": "FOOTAGE",
+          "footage_query": "person sitting alone on an outdoor bench",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46769__empty_chair_in_spotlight_grief.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "R09",
+          "subject": "a car parked in a suburban driveway",
+          "source": "FOOTAGE",
+          "footage_query": "car parked in a suburban driveway",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38174__white_house_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "W05",
+          "subject": "a scanner light moving across a glass plate",
+          "source": "FOOTAGE",
+          "footage_query": "scanner light moving across a glass plate",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10324__newspaper_printing_press.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.308
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "a council chamber with a curved bench and empty seats",
+          "source": "FOOTAGE",
+          "footage_query": "council chamber with curved bench and seats",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14510__courtroom_empty_wide.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.301
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U03",
+          "subject": "a hand crossing out a line on a blank page",
+          "source": "FOOTAGE",
+          "footage_query": "hand crossing out a line on paper",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53407__stack_of_letters_with_ribbon.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "M04",
+          "subject": "a page coming out of an office printer",
+          "source": "FOOTAGE",
+          "footage_query": "page coming out of an office printer",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33919__vintage_typewriter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.325
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I01",
+          "subject": "a hand closing a ring binder on a desk",
+          "source": "FOOTAGE",
+          "footage_query": "hand closing a ring binder on desk",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46653__person_reading_a_letter.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.322
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "R06",
+          "subject": "a public meeting room with a microphone on the table",
+          "source": "FOOTAGE",
+          "footage_query": "public meeting room with table microphone",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-32678__boardroom_table_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.293
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I05",
+          "subject": "a trolley of archive boxes in a corridor",
+          "source": "FOOTAGE",
+          "footage_query": "trolley of archive boxes in a corridor",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1834__prison_corridor.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U08",
+          "subject": "a wall of small filing drawers with handles",
+          "source": "FOOTAGE",
+          "footage_query": "wall of small filing drawers with handles",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23895__safe_deposit_boxes_vault.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W09",
+          "subject": "hands leafing through a stack of blank pages",
+          "source": "FOOTAGE",
+          "footage_query": "hands leafing through a stack of blank pages",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36373__evidence_locker_shelves.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.331
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U04",
+          "subject": "a long basement corridor lined with storage",
+          "source": "FOOTAGE",
+          "footage_query": "long basement corridor lined with storage",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-5384__school_hallway_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.314
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "U01",
+          "subject": "a desk lamp switched on over an open box of files",
+          "source": "FOOTAGE",
+          "footage_query": "desk lamp over an open box of files",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33088__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.307
         }
       ],
       "type": "B — a number/stakes gap",

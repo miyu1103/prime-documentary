@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT174_TOTAL_SEC = 39.496;
+export const SHORT174_TOTAL_SEC = 57.804;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 32.552,
     "end": 38.496
+  },
+  {
+    "id": "L6",
+    "start": 38.716,
+    "end": 44.475
+  },
+  {
+    "id": "L7",
+    "start": 44.695,
+    "end": 50.5
+  },
+  {
+    "id": "L8",
+    "start": 50.72,
+    "end": 56.804
   }
 ];
 
@@ -130,23 +145,78 @@ export const SHORT174_CAPTIONS: ShortCaption[] = [
     "endSec": 32.332
   },
   {
-    "word": "The men could be punished.",
+    "word": "The record followed them onto every",
     "startSec": 32.552,
-    "endSec": 34.082
+    "endSec": 34.478
+  },
+  {
+    "word": "job form and every college application",
+    "startSec": 34.478,
+    "endSec": 36.57
+  },
+  {
+    "word": "closing doors they never saw close.",
+    "startSec": 36.57,
+    "endSec": 38.496
+  },
+  {
+    "word": "Some came out and",
+    "startSec": 38.716,
+    "endSec": 39.623
+  },
+  {
+    "word": "never found their footing. Grown now",
+    "startSec": 39.623,
+    "endSec": 41.542
+  },
+  {
+    "word": "some of them still cannot",
+    "startSec": 41.542,
+    "endSec": 42.875
+  },
+  {
+    "word": "put that courtroom into words.",
+    "startSec": 42.875,
+    "endSec": 44.475
+  },
+  {
+    "word": "Money is supposed to",
+    "startSec": 44.695,
+    "endSec": 45.833
+  },
+  {
+    "word": "stay outside a courtroom.",
+    "startSec": 45.833,
+    "endSec": 47.256
+  },
+  {
+    "word": "Here that line had a price:",
+    "startSec": 47.256,
+    "endSec": 48.793
+  },
+  {
+    "word": "a few thousand dollars a head.",
+    "startSec": 48.793,
+    "endSec": 50.5
+  },
+  {
+    "word": "The men could be punished.",
+    "startSec": 50.72,
+    "endSec": 52.286
   },
   {
     "word": "The years still do not come back.",
-    "startSec": 34.082,
-    "endSec": 36.024
+    "startSec": 52.286,
+    "endSec": 54.274
   },
   {
     "word": "That is what a",
-    "startSec": 36.024,
-    "endSec": 36.848
+    "startSec": 54.274,
+    "endSec": 55.117
   },
   {
     "word": "cleared record cannot reach.",
-    "startSec": 36.848,
-    "endSec": 38.496
+    "startSec": 55.117,
+    "endSec": 56.804
   }
 ];

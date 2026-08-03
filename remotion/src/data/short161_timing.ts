@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT161_TOTAL_SEC = 39.543;
+export const SHORT161_TOTAL_SEC = 60.172;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 29.859,
     "end": 38.543
+  },
+  {
+    "id": "L6",
+    "start": 38.763,
+    "end": 45.729
+  },
+  {
+    "id": "L7",
+    "start": 45.949,
+    "end": 50.825
+  },
+  {
+    "id": "L8",
+    "start": 51.045,
+    "end": 59.172
   }
 ];
 
@@ -130,33 +145,88 @@ export const SHORT161_CAPTIONS: ShortCaption[] = [
     "endSec": 29.639
   },
   {
-    "word": "The offer is no longer",
+    "word": "The trail ran hot",
     "startSec": 29.859,
-    "endSec": 31.159
+    "endSec": 31.464
+  },
+  {
+    "word": "and useless at once.",
+    "startSec": 31.464,
+    "endSec": 33.351
+  },
+  {
+    "word": "Thousands of tips. Psychics.",
+    "startSec": 33.351,
+    "endSec": 35.994
+  },
+  {
+    "word": "Con men who wanted a price.",
+    "startSec": 35.994,
+    "endSec": 38.543
+  },
+  {
+    "word": "Investigators went public with a website",
+    "startSec": 38.763,
+    "endSec": 41.251
+  },
+  {
+    "word": "images of every missing work",
+    "startSec": 41.251,
+    "endSec": 42.992
+  },
+  {
+    "word": "and billboards where the",
+    "startSec": 42.992,
+    "endSec": 44.485
+  },
+  {
+    "word": "trail last ran warm.",
+    "startSec": 44.485,
+    "endSec": 45.729
+  },
+  {
+    "word": "The art may sit in an attic",
+    "startSec": 45.949,
+    "endSec": 47.574
+  },
+  {
+    "word": "a storage unit a basement",
+    "startSec": 47.574,
+    "endSec": 49.079
+  },
+  {
+    "word": "held by someone afraid of it.",
+    "startSec": 49.079,
+    "endSec": 50.825
+  },
+  {
+    "word": "The offer is no longer",
+    "startSec": 51.045,
+    "endSec": 52.261
   },
   {
     "word": "aimed at the thieves.",
-    "startSec": 31.159,
-    "endSec": 32.399
+    "startSec": 52.261,
+    "endSec": 53.422
   },
   {
     "word": "Prosecutors say they want the works",
-    "startSec": 32.399,
-    "endSec": 34.467
+    "startSec": 53.422,
+    "endSec": 55.357
   },
   {
     "word": "back far more than they want",
-    "startSec": 34.467,
-    "endSec": 36.121
+    "startSec": 55.357,
+    "endSec": 56.905
   },
   {
     "word": "anyone in a cell.",
-    "startSec": 36.121,
-    "endSec": 37.125
+    "startSec": 56.905,
+    "endSec": 57.845
   },
   {
     "word": "So where did the art go?",
-    "startSec": 37.125,
-    "endSec": 38.543
+    "startSec": 57.845,
+    "endSec": 59.172
   }
 ];

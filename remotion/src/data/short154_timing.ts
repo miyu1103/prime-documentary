@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT154_TOTAL_SEC = 41.028;
+export const SHORT154_TOTAL_SEC = 62.168;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 32.087,
     "end": 40.028
+  },
+  {
+    "id": "L6",
+    "start": 40.248,
+    "end": 46.378
+  },
+  {
+    "id": "L7",
+    "start": 46.598,
+    "end": 52.867
+  },
+  {
+    "id": "L8",
+    "start": 53.087,
+    "end": 61.168
   }
 ];
 
@@ -130,23 +145,78 @@ export const SHORT154_CAPTIONS: ShortCaption[] = [
     "endSec": 31.867
   },
   {
-    "word": "The company's former president was tried separately",
+    "word": "Criminal fraud requires intent to deceive.",
     "startSec": 32.087,
-    "endSec": 34.769
+    "endSec": 34.913
+  },
+  {
+    "word": "Proof that someone knowingly made false",
+    "startSec": 34.913,
+    "endSec": 37.538
+  },
+  {
+    "word": "statements to get something of value.",
+    "startSec": 37.538,
+    "endSec": 40.028
+  },
+  {
+    "word": "Prosecutors said she knew about the",
+    "startSec": 40.248,
+    "endSec": 42.021
+  },
+  {
+    "word": "device's failures and hid them.",
+    "startSec": 42.021,
+    "endSec": 43.592
+  },
+  {
+    "word": "Her defense said she believed",
+    "startSec": 43.592,
+    "endSec": 45.061
+  },
+  {
+    "word": "the technology would work.",
+    "startSec": 45.061,
+    "endSec": 46.378
+  },
+  {
+    "word": "In November 2022",
+    "startSec": 46.598,
+    "endSec": 47.51
+  },
+  {
+    "word": "on those four counts",
+    "startSec": 47.51,
+    "endSec": 48.65
+  },
+  {
+    "word": "she was sentenced to about eleven years",
+    "startSec": 48.65,
+    "endSec": 50.872
+  },
+  {
+    "word": "and three months in federal prison.",
+    "startSec": 50.872,
+    "endSec": 52.867
+  },
+  {
+    "word": "The company's former president was tried separately",
+    "startSec": 53.087,
+    "endSec": 55.816
   },
   {
     "word": "and convicted on all twelve counts",
-    "startSec": 34.769,
-    "endSec": 36.557
+    "startSec": 55.816,
+    "endSec": 57.636
   },
   {
     "word": "including the patient counts. Same company.",
-    "startSec": 36.557,
-    "endSec": 38.818
+    "startSec": 57.636,
+    "endSec": 59.937
   },
   {
     "word": "Two different verdicts.",
-    "startSec": 38.818,
-    "endSec": 40.028
+    "startSec": 59.937,
+    "endSec": 61.168
   }
 ];

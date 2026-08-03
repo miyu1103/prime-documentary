@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT159_TOTAL_SEC = 37.267;
+export const SHORT159_TOTAL_SEC = 58.453;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 29.533,
     "end": 36.267
+  },
+  {
+    "id": "L6",
+    "start": 36.487,
+    "end": 43.267
+  },
+  {
+    "id": "L7",
+    "start": 43.487,
+    "end": 49.617
+  },
+  {
+    "id": "L8",
+    "start": 49.837,
+    "end": 57.453
   }
 ];
 
@@ -125,23 +140,88 @@ export const SHORT159_CAPTIONS: ShortCaption[] = [
     "endSec": 29.313
   },
   {
-    "word": "And they will almost never know it.",
+    "word": "For roughly eight years that",
     "startSec": 29.533,
-    "endSec": 31.389
+    "endSec": 30.983
+  },
+  {
+    "word": "side door stood open",
+    "startSec": 30.983,
+    "endSec": 32.019
+  },
+  {
+    "word": "walking children past the admissions officers and",
+    "startSec": 32.019,
+    "endSec": 34.558
+  },
+  {
+    "word": "into schools they had not earned.",
+    "startSec": 34.558,
+    "endSec": 36.267
+  },
+  {
+    "word": "Most of us are",
+    "startSec": 36.487,
+    "endSec": 37.391
+  },
+  {
+    "word": "raised on one promise. Work hard",
+    "startSec": 37.391,
+    "endSec": 39.457
+  },
+  {
+    "word": "earn it",
+    "startSec": 39.457,
+    "endSec": 40.157
+  },
+  {
+    "word": "and the door opens.",
+    "startSec": 40.157,
+    "endSec": 41.384
+  },
+  {
+    "word": "For some families it had a price.",
+    "startSec": 41.384,
+    "endSec": 43.267
+  },
+  {
+    "word": "Picture the student who never",
+    "startSec": 43.487,
+    "endSec": 45.133
+  },
+  {
+    "word": "saw the side door",
+    "startSec": 45.133,
+    "endSec": 46.098
+  },
+  {
+    "word": "never knew it was there",
+    "startSec": 46.098,
+    "endSec": 47.403
+  },
+  {
+    "word": "and simply received a thinner envelope.",
+    "startSec": 47.403,
+    "endSec": 49.617
+  },
+  {
+    "word": "And they will almost never know it.",
+    "startSec": 49.837,
+    "endSec": 51.936
   },
   {
     "word": "There is no letter that says",
-    "startSec": 31.389,
-    "endSec": 32.873
+    "startSec": 51.936,
+    "endSec": 53.615
   },
   {
     "word": "you were displaced by a bribe.",
-    "startSec": 32.873,
-    "endSec": 34.464
+    "startSec": 53.615,
+    "endSec": 55.414
   },
   {
     "word": "There is only the number of seats.",
-    "startSec": 34.464,
-    "endSec": 36.267
+    "startSec": 55.414,
+    "endSec": 57.453
   }
 ];

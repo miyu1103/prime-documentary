@@ -56,8 +56,8 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "In Philadelphia, if you wanted to fight for your own house, you went to a room upstairs in City Hall. Courtroom 478. There was no judge in it.",
+          "delivery": "intense",
           "source_lines": [
             "It was called **Courtroom 478**, on an upper floor of Philadelphia's City Hall.",
             "But calling it a courtroom is generous. There was no judge in Courtroom 478."
@@ -65,16 +65,16 @@
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "The hearings were run by the same prosecutors trying to take your property. No court appointed lawyers. No right to counsel at all.",
+          "delivery": "building",
           "source_lines": [
             "The proceedings were run by the very prosecutors trying to take your property. There were no court-appointed lawyers — no right to counsel at all."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Owners were handed forms and quietly encouraged not to fight. Miss a date, because work would not let you off or the letter never reached you, and you could lose your home by default.",
+          "delivery": "building",
           "source_lines": [
             "Owners were handed forms and, more often than not, encouraged simply not to fight.",
             "And if you missed a date — if you couldn't get off work, if the letter never reached you, if you didn't understand — you could lose your home automatically, by default."
@@ -82,16 +82,40 @@
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "This was not a place where justice was weighed. It was a collection department with the seal of the state on the door.",
+          "delivery": "intense",
           "source_lines": [
             "This was not a place where justice was weighed. It was a collection department with the seal of the state on the door."
           ]
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "In an ordinary criminal case the government must prove a person's guilt beyond a reasonable doubt.",
+          "delivery": "building",
+          "source_lines": [
+            "In an ordinary criminal case, the government accuses a *person*, and it has to prove that person's guilt beyond a reasonable doubt."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "In that room the promise ran backwards. They took first, and left you to prove your way home.",
+          "delivery": "building",
+          "source_lines": [
+            "In Philadelphia, for years, that promise ran backwards. They took first, and left you to prove your way home."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "It was built to take small amounts from the people least able to fight City Hall.",
+          "delivery": "building",
+          "source_lines": [
+            "It was built to take small amounts, from ordinary people — the people with the least ability to hire a lawyer, take a day off work, and fight City Hall."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "Courtroom 478 was closed for good in 2018. Between 2002 and 2014 the city had already taken more than twelve hundred homes.",
+          "delivery": "calm",
           "source_lines": [
             "And Courtroom 478 — the room with no judge — was closed for good.",
             "Between 2002 and 2014, the city of Philadelphia used civil forfeiture to take more than **twelve hundred homes**."
@@ -118,13 +142,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "marble staircase handrail interior",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31000__warehouse_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31851__courthouse_steps.mp4",
           "bound_title": "industrial urea storage facility interior",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4414,
           "motion": 3.489,
-          "luma": 70.5
+          "luma": 70.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
         },
         {
           "n": 3,
@@ -175,13 +201,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hands sorting stack of papers",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0451__office_interior_dark.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-23803__shredded_documents_pile.mp4",
           "bound_title": "organized desk in office workspace",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4293,
           "motion": 1.567,
-          "luma": 96.2
+          "luma": 96.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
         },
         {
           "n": 8,
@@ -202,13 +230,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "silhouette standing in corridor",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0514__courtroom_interior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-46103__person_crying_silhouette_window.mp4",
           "bound_title": "a person holding a pen",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3997,
           "motion": 21.599,
-          "luma": 138.7
+          "luma": 138.7,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.311
         },
         {
           "n": 10,
@@ -249,13 +279,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hand signing document close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0519__courtroom_interior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6479__us_constitution_document.mp4",
           "bound_title": "woman reading documents",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4926,
           "motion": 1.465,
-          "luma": 54.6
+          "luma": 54.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
         },
         {
           "n": 14,
@@ -276,13 +308,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "wall clock close up ticking",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0834__money_cash_counting.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\loops\\AF-LOOP-0158__looping_gradient_navy.mp4",
           "bound_title": "efficient indian rupee money counting machine in action",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4385,
           "motion": 2.28,
-          "luma": 104.9
+          "luma": 104.9,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
         },
         {
           "n": 16,
@@ -303,13 +337,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "counting cash by hand",
-          "bound_file": "H:\\pd-media\\assets\\factory\\light_assets\\AF-LIGHT-0351__sun_flare_warm.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-41312__stack_of_hundred_dollar_bills.mp4",
           "bound_title": "tree branches backlit by the sun",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3857,
           "motion": 16.534,
-          "luma": 112.5
+          "luma": 112.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.289
         },
         {
           "n": 18,
@@ -364,12 +400,226 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the room with no judge",
           "source": "REUSE_01",
           "prompt": null,
-          "footage_query": "empty courtroom judges bench"
+          "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: return to the room with no judge",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: return to the room with no judge",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "R05",
+          "subject": "wide stone steps leading up to a courthouse",
+          "source": "FOOTAGE",
+          "footage_query": "wide stone steps leading to a courthouse",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-6239__courthouse_steps.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "W11",
+          "subject": "a witness stand and microphone in a courtroom",
+          "source": "FOOTAGE",
+          "footage_query": "witness stand and microphone in a courtroom",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-14605__jury_box_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.316
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "M07",
+          "subject": "a panelled hearing room with a long meeting table",
+          "source": "FOOTAGE",
+          "footage_query": "panelled room with a long meeting table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-26007__hospital_waiting_room_empty.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.313
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "two hands resting on a wooden courtroom rail",
+          "source": "FOOTAGE",
+          "footage_query": "hands resting on a wooden courtroom rail",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-30867__smartphone_in_dark.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U01",
+          "subject": "a black robe hanging on a hook",
+          "source": "FOOTAGE",
+          "footage_query": "black robe hanging on a hook",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-36659__long_shadow_of_a_person.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.284
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U12",
+          "subject": "cardboard boxes stacked in an emptied room",
+          "source": "FOOTAGE",
+          "footage_query": "cardboard boxes stacked in an empty room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8915__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.338
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "U13",
+          "subject": "a person carrying a cardboard box out of a house",
+          "source": "FOOTAGE",
+          "footage_query": "person carrying a cardboard box outside",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33080__moving_boxes_empty_room.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.31
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "R10",
+          "subject": "a hand pressing a doorbell button",
+          "source": "FOOTAGE",
+          "footage_query": "hand pressing a doorbell button",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51096__key_turning_in_lock.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.34
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "people queuing at a service window",
+          "source": "FOOTAGE",
+          "footage_query": "people queuing at a service window",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-7733__empty_office_cubicles.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.282
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I05",
+          "subject": "a hand taking a paper ticket from a dispenser",
+          "source": "FOOTAGE",
+          "footage_query": "hand taking paper ticket from a dispenser",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38941__atm_machine_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.38
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "M04",
+          "subject": "coins counted out onto a kitchen table",
+          "source": "FOOTAGE",
+          "footage_query": "coins counted out onto a kitchen table",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-24869__physical_bitcoin_coin.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.312
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "U11",
+          "subject": "a row of narrow brick rowhouses on a city street",
+          "source": "FOOTAGE",
+          "footage_query": "row of narrow brick rowhouses on street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-9212__small_town_main_street.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W03",
+          "subject": "a worn front step and a closed screen door",
+          "source": "FOOTAGE",
+          "footage_query": "worn front step and closed screen door",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-8131__bank_vault_door.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.295
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "U08",
+          "subject": "an empty bus stop shelter on a city street",
+          "source": "FOOTAGE",
+          "footage_query": "empty bus stop shelter on a street",
+          "prompt": null,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.283
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "R09",
+          "subject": "a municipal building facade seen from the street",
+          "source": "FOOTAGE",
+          "footage_query": "municipal building facade from the street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3979__government_building_exterior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.288
         }
       ],
       "type": "C — a quotation or document",
@@ -385,8 +635,8 @@
       "lines": [
         {
           "id": "L1",
-          "delivery": "intense",
           "text": "There was no warning and no hearing. Just a knock at the door, and an instruction: pack a bag, and get out. The family had been charged with nothing.",
+          "delivery": "intense",
           "source_lines": [
             "There was no warning. There was no hearing. There was a knock at the door, and an instruction that sounds impossible for a home someone actually owns: pack a bag, and get out.",
             "And the family who owned it had never been charged with anything at all."
@@ -394,24 +644,24 @@
         },
         {
           "id": "L2",
-          "delivery": "building",
           "text": "For about a week they slept on a relative's couch, made homeless in their own city, while the government held the deed to their home.",
+          "delivery": "building",
           "source_lines": [
             "For about a week, they slept on a relative's couch — a family made homeless in their own city, while the government held the deed to their home like a hostage."
           ]
         },
         {
           "id": "L3",
-          "delivery": "building",
           "text": "Then the city let them back in, on one condition. The father had to sign an agreement barring his own son from the house.",
+          "delivery": "building",
           "source_lines": [
             "They were finally allowed back inside on a single condition. Christos had to sign an agreement promising to bar his own son from the house."
           ]
         },
         {
           "id": "L4",
-          "delivery": "intense",
           "text": "To get their home back, these parents had to give up their son at the door. It could just as easily have been your address, not because you did anything, but because someone under your roof did.",
+          "delivery": "intense",
           "source_lines": [
             "Read that again. To get their home back, these parents had to give up their son at the door.",
             "It could just as easily have been yours — not because you did anything, but because someone under your roof did, or because an officer decided the cash in your pocket looked suspicious."
@@ -419,8 +669,33 @@
         },
         {
           "id": "L5",
-          "delivery": "calm",
+          "text": "He painted houses. He and his wife earned that home one wall at a time.",
+          "delivery": "building",
+          "source_lines": [
+            "Christos Sourovelis painted houses for a living.",
+            "He and his wife, Markela, had earned it one wall at a time."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "What happened to them was not built for criminals. It was built for people exactly like them.",
+          "delivery": "building",
+          "source_lines": [
+            "what happened to the Sourovelises was not built for criminals. It was built for people exactly like them."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The city that sealed his door was the city he paid his taxes to.",
+          "delivery": "building",
+          "source_lines": [
+            "The door Christos had paid for, in the neighborhood he'd chosen to grow old in, was sealed shut by the same city he paid his taxes to."
+          ]
+        },
+        {
+          "id": "L8",
           "text": "They kept the house. They did not drop the class action for everyone still facing that knock.",
+          "delivery": "calm",
           "source_lines": [
             "The Sourovelises got their own home free within about a year — the city quietly dropped its case against their house, and they kept it.",
             "They didn't drop the class action."
@@ -447,13 +722,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "door handle turning close up",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1127__technology_abstract_blue.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-51080__key_turning_in_lock.mp4",
           "bound_title": "close up of a futuristic abstract pattern",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4474,
           "motion": 20.263,
-          "luma": 53.6
+          "luma": 53.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.303
         },
         {
           "n": 3,
@@ -494,13 +771,14 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "living room lamp at night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0515__courtroom_interior.mp4",
           "bound_title": "lady justice statue",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4156,
           "motion": 6.426,
-          "luma": 154.2
+          "luma": 154.2,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
         },
         {
           "n": 7,
@@ -531,13 +809,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "rain on window at night",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0516__courtroom_interior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-10595__rain_on_glass_macro.mp4",
           "bound_title": "a serious lawyer wearing black coat",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4296,
           "motion": 2.052,
-          "luma": 54.3
+          "luma": 54.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.325
         },
         {
           "n": 10,
@@ -558,13 +838,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "house exterior at night street",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0988__server_room_blue.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-1682__suburban_house_exterior_night.mp4",
           "bound_title": "futuristic grid animation with light effects",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4099,
           "motion": 19.35,
-          "luma": 58.5
+          "luma": 58.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.291
         },
         {
           "n": 12,
@@ -585,13 +867,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "hand signing contract pen",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3833__courtroom_interior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-53222__fountain_pen_signature.mp4",
           "bound_title": "a woman holding a pen",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4487,
           "motion": 8.968,
-          "luma": 40.6
+          "luma": 40.6,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.321
         },
         {
           "n": 14,
@@ -632,13 +916,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "empty chair at dining table",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0517__courtroom_interior.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0529__courtroom_interior.mp4",
           "bound_title": "woman sitting on a chair talking",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.3992,
           "motion": 1.374,
-          "luma": 57.3
+          "luma": 57.3,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.287
         },
         {
           "n": 18,
@@ -679,13 +965,15 @@
           "source": "FOOTAGE",
           "prompt": null,
           "footage_query": "mailbox on suburban street",
-          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-0585__law_library_books.mp4",
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-38940__atm_machine_at_night.mp4",
           "bound_title": "woman sitting on a chair reading documents",
           "bound_license": "free_commercial",
           "bound_source": "pexels",
           "centre_energy": 0.4681,
           "motion": 2.736,
-          "luma": 52.5
+          "luma": 52.5,
+          "bound_match": "semantic-clip",
+          "bound_score": 0.305
         },
         {
           "n": 22,
@@ -700,12 +988,215 @@
         {
           "n": 23,
           "role": "loop",
-          "line": "L5",
+          "line": "L8",
           "motif": "U14",
           "subject": "return to the front door from inside",
           "source": "REUSE_01",
           "prompt": null,
-          "footage_query": "front door from inside hallway"
+          "footage_query": null
+        },
+        {
+          "n": 24,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to the hook - replay of the opening framing: return to the front door from inside",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 25,
+          "role": "loop",
+          "line": "L8",
+          "motif": "U14",
+          "subject": "return to plate 01 a second time: return to the front door from inside",
+          "source": "REUSE_01",
+          "footage_query": null,
+          "prompt": null
+        },
+        {
+          "n": 26,
+          "role": "body",
+          "line": "L5",
+          "motif": "U10",
+          "subject": "a hand rolling paint onto a wall",
+          "source": "FOOTAGE",
+          "footage_query": "hand rolling paint onto a wall",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-31941__judge_gavel_wooden.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.3
+        },
+        {
+          "n": 27,
+          "role": "body",
+          "line": "L5",
+          "motif": "U08",
+          "subject": "paint cans and brushes standing on a dust sheet",
+          "source": "FOOTAGE",
+          "footage_query": "paint cans and brushes on dust sheet",
+          "prompt": null
+        },
+        {
+          "n": 28,
+          "role": "body",
+          "line": "L5",
+          "motif": "U04",
+          "subject": "a stepladder standing in a half-painted room",
+          "source": "FOOTAGE",
+          "footage_query": "stepladder in a half painted room",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-3841__courtroom_interior.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.323
+        },
+        {
+          "n": 29,
+          "role": "body",
+          "line": "L5",
+          "motif": "W05",
+          "subject": "a work van parked at a kerb with its doors open",
+          "source": "FOOTAGE",
+          "footage_query": "work van parked at kerb doors open",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-20576__empty_boardroom_at_night.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.294
+        },
+        {
+          "n": 30,
+          "role": "body",
+          "line": "L5",
+          "motif": "U09",
+          "subject": "paint-stained overalls hanging on a door",
+          "source": "FOOTAGE",
+          "footage_query": "paint stained overalls hanging on a door",
+          "prompt": null
+        },
+        {
+          "n": 31,
+          "role": "body",
+          "line": "L6",
+          "motif": "U15",
+          "subject": "a street of ordinary houses seen from above",
+          "source": "FOOTAGE",
+          "footage_query": "street of ordinary houses seen from above",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-62286__city_data_overlay_map.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.317
+        },
+        {
+          "n": 32,
+          "role": "body",
+          "line": "L6",
+          "motif": "M07",
+          "subject": "a kitchen table set with breakfast things",
+          "source": "FOOTAGE",
+          "footage_query": "kitchen table set with breakfast things",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-63927__bread_line_vintage_depression.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.281
+        },
+        {
+          "n": 33,
+          "role": "body",
+          "line": "L6",
+          "motif": "R03",
+          "subject": "a child's bicycle leaning against a porch",
+          "source": "FOOTAGE",
+          "footage_query": "childs bicycle leaning against a porch",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-22096__white_picket_fence.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.285
+        },
+        {
+          "n": 34,
+          "role": "body",
+          "line": "L6",
+          "motif": "U05",
+          "subject": "washing hanging on a line in a small yard",
+          "source": "FOOTAGE",
+          "footage_query": "washing hanging on a line in yard",
+          "prompt": null
+        },
+        {
+          "n": 35,
+          "role": "body",
+          "line": "L6",
+          "motif": "I07",
+          "subject": "a corner shop front on a residential street",
+          "source": "FOOTAGE",
+          "footage_query": "corner shop front on a residential street",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-33217__small_town_main_street.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.286
+        },
+        {
+          "n": 36,
+          "role": "body",
+          "line": "L7",
+          "motif": "I08",
+          "subject": "a city hall dome standing above the rooftops",
+          "source": "FOOTAGE",
+          "footage_query": "city hall dome seen above rooftops",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-25524__city_surveillance_camera_dome.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.319
+        },
+        {
+          "n": 37,
+          "role": "body",
+          "line": "L7",
+          "motif": "R01",
+          "subject": "a street sweeper working along a city road",
+          "source": "FOOTAGE",
+          "footage_query": "street sweeper cleaning a city road",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-56946__highway_underpass.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.304
+        },
+        {
+          "n": 38,
+          "role": "body",
+          "line": "L7",
+          "motif": "W04",
+          "subject": "a public bus pulling into a street stop",
+          "source": "FOOTAGE",
+          "footage_query": "public bus pulling into a street stop",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-40348__school_bus_yellow.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.324
+        },
+        {
+          "n": 39,
+          "role": "body",
+          "line": "L7",
+          "motif": "I03",
+          "subject": "a fire hydrant on a residential sidewalk",
+          "source": "FOOTAGE",
+          "footage_query": "fire hydrant on a residential sidewalk",
+          "prompt": null
+        },
+        {
+          "n": 40,
+          "role": "body",
+          "line": "L7",
+          "motif": "M02",
+          "subject": "a hand pushing coins across a counter",
+          "source": "FOOTAGE",
+          "footage_query": "hand pushing coins across a counter",
+          "prompt": null,
+          "bound_file": "H:\\pd-media\\assets\\factory\\backgrounds\\AF-BG-12607__gold_bars_stacked.mp4",
+          "bound_match": "semantic-clip",
+          "bound_score": 0.328
         }
       ],
       "type": "A — second-person threat",

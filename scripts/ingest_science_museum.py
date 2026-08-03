@@ -1282,8 +1282,227 @@ ARTWORK_RE = re.compile(
 WM_MAX_PER_QUERY = 1000         # 55 queries x 1000 = 55,000 candidates before filtering
 
 
+# Category roots. Commons categories are curated by hand, so membership IS the relevance
+# evidence - a file sitting in "Category:Bank buildings in Ohio" is about a bank whether
+# or not its title says so. That is why the phrase gate used for SEARCH results is not
+# applied to category results; applying it would discard "First National Bank, Akron"
+# for lacking the two-word head "bank teller". Licence and artwork filters still apply.
+WM_CATEGORIES = [
+    ("bank_and_branch", "Category:Bank buildings in the United States"),
+    ("bank_and_branch", "Category:Bank interiors"),
+    ("bank_and_branch", "Category:Banks by country"),
+    ("stock_market_exchange", "Category:New York Stock Exchange"),
+    ("stock_market_exchange", "Category:Stock exchanges"),
+    ("stock_market_exchange", "Category:Stock certificates"),
+    ("depression_hardship", "Category:Great Depression in the United States"),
+    # "Category:Farm Security Administration photographs" was here and was removed:
+    # the FSA collection documents rural America in general, so it delivered farm
+    # landscapes and crop-dusting aircraft, not hardship. Narrow categories only.
+    ("depression_hardship", "Category:Hoovervilles"),
+    ("depression_hardship", "Category:Soup kitchens"),
+    ("depression_hardship", "Category:Unemployed people"),
+    ("depression_hardship", "Category:Bread lines"),
+    ("factory_manufacturing", "Category:Factories in the United States"),
+    ("factory_manufacturing", "Category:Assembly lines"),
+    ("factory_manufacturing", "Category:Steel mills"),
+    ("factory_manufacturing", "Category:Textile mills"),
+    ("factory_manufacturing", "Category:Industrial photographs"),
+    ("retail_commerce", "Category:Department stores in the United States"),
+    ("retail_commerce", "Category:Shop windows"),
+    ("retail_commerce", "Category:Grocery stores"),
+    ("retail_commerce", "Category:Markets by country"),
+    ("goods_in_motion", "Category:Cargo ships"),
+    ("goods_in_motion", "Category:Warehouses"),
+    ("goods_in_motion", "Category:Rail freight transport"),
+    ("goods_in_motion", "Category:Container terminals"),
+    ("money_banking", "Category:Banknotes by country"),
+    ("money_banking", "Category:Coins by country"),
+    ("decision_rooms", "Category:Labor strikes"),
+    ("decision_rooms", "Category:Trade unions"),
+    ("business_corporate", "Category:Office interiors"),
+    ("business_corporate", "Category:Typewriters in use"),
+    ("economy_crisis", "Category:Abandoned factories"),
+    ("economy_crisis", "Category:Closed retail stores"),
+]
+# One subject word per theme, checked against category-sourced titles. Deliberately
+# hand-written rather than derived from the query tables: deriving them would have
+# re-admitted the farm photographs, because "migrant worker family farm security" puts
+# "farm" in the depression vocabulary.
+CATEGORY_SUBJECT_TERMS = {
+    # Widened 2026-08-03 after the first pass deleted genuine material: real bread-line
+    # photographs are captioned "Line of men waiting in alley outside city mission" and
+    # "Men standing in line at the kitchen of the Municipal Lodging House". A subject list
+    # built from the obvious nouns misses how archivists actually wrote the captions.
+    "depression_hardship": {"bread line", "breadline", "soup kitchen", "hooverville",
+                            "unemploy", "relief station", "shanty", "destitute",
+                            "migrant camp", "eviction", "homeless", "waiting in line",
+                            "standing in line", "line of men", "food line", "lodging house",
+                            "city mission", "charity", "poor relief", "almshouse",
+                            "relief line", "queue", "breadlines", "jobless", "hunger march"},
+    "bank_and_branch": {"bank", "teller", "vault", "savings", "trust company"},
+    "stock_market_exchange": {"exchange", "stock", "broker", "ticker", "trading floor",
+                              "board of trade", "wall street"},
+    "money_banking": {"banknote", "coin", "currency", "mint", "bullion", "treasury",
+                      "dollar", "money"},
+    "factory_manufacturing": {"factory", "mill", "foundry", "works", "plant", "furnace",
+                              "assembly", "machine shop", "industrial", "workshop",
+                              "manufactur", "smelter", "refinery"},
+    "retail_commerce": {"store", "shop", "market", "grocer", "department store",
+                        "merchant", "window display", "counter"},
+    "goods_in_motion": {"cargo", "freight", "warehouse", "dock", "wharf", "container",
+                        "railway", "railroad", "port", "shipping", "loading"},
+    "decision_rooms": {"strike", "union", "picket", "meeting", "labor", "labour",
+                       "assembly hall", "conference"},
+    "business_corporate": {"office", "typewriter", "clerk", "desk", "bureau",
+                           "counting house", "boardroom"},
+    "economy_crisis": {"abandoned", "derelict", "closed", "ruin", "vacant", "demolish",
+                       "foreclos", "bankrupt"},
+}
+WM_CAT_DEPTH = 2                 # root -> subcategory -> sub-subcategory
+WM_CAT_MAX_FILES = 1500          # per root, before licence and technical filtering
+
+
+def wm_category_files(root: str, depth: int, cap: int) -> list[str]:
+    """Breadth-first walk of a category tree, returning file titles."""
+    seen_cats, files, frontier = {root}, [], [root]
+    for level in range(depth + 1):
+        nxt = []
+        for cat in frontier:
+            if len(files) >= cap:
+                return files[:cap]
+            cont = {}
+            while True:
+                params = {"action": "query", "format": "json",
+                          "list": "categorymembers", "cmtitle": cat,
+                          "cmtype": "file", "cmlimit": 500}
+                params.update(cont)
+                data = get_json(WM_API, params=params)
+                time.sleep(RATE["wikimedia"])
+                if not data:
+                    break
+                files += [m["title"] for m
+                          in (data.get("query") or {}).get("categorymembers", [])]
+                cont = data.get("continue") or {}
+                if not cont or len(files) >= cap:
+                    break
+            if level < depth:
+                data = get_json(WM_API, params={
+                    "action": "query", "format": "json", "list": "categorymembers",
+                    "cmtitle": cat, "cmtype": "subcat", "cmlimit": 500})
+                time.sleep(RATE["wikimedia"])
+                for m in ((data or {}).get("query") or {}).get("categorymembers", []):
+                    if m["title"] not in seen_cats:
+                        seen_cats.add(m["title"])
+                        nxt.append(m["title"])
+        frontier = nxt
+        if not frontier:
+            break
+    return files[:cap]
+
+
+def wm_ingest_titles(st: State, titles: list[str], theme: str, probe: str,
+                     limit: int, dry_run: bool, already: int,
+                     from_category: bool) -> int:
+    """Shared fetch/filter/ledger path for both phases.
+
+    `from_category` is the one behavioural difference: a file that a human filed under
+    "Category:Bank buildings in Ohio" has already been judged relevant by that filing, so
+    the search-only phrase test would just throw away correctly categorised material.
+    Licence, artwork and relevance-score checks apply in both phases.
+    """
+    taken = 0
+    broad = " ".join(probe.split()[:2])
+    # imageinfo takes up to 50 titles at once - one request per 25 keeps URLs short
+    for i in range(0, len(titles), 25):
+        batch = [t for t in titles[i:i + 25] if not st.has("wikimedia", t)]
+        if not batch:
+            continue
+        info = get_json(WM_API, params={
+            "action": "query", "format": "json", "prop": "imageinfo",
+            "iiprop": "url|size|extmetadata", "titles": "|".join(batch)})
+        time.sleep(RATE["wikimedia"])
+        pages = ((info or {}).get("query") or {}).get("pages") or {}
+        for page in pages.values():
+            if limit and (already + taken) >= limit:
+                return taken
+            title = page.get("title", "")
+            ii = (page.get("imageinfo") or [{}])[0]
+            url = ii.get("url")
+            if not url:
+                continue
+            em = ii.get("extmetadata") or {}
+            lic = str((em.get("License") or {}).get("value", "")).lower().strip()
+            lic_name = str((em.get("LicenseShortName") or {}).get("value", ""))
+            if lic not in ("pd", "cc0"):
+                st.reject("wikimedia", title, f"license-not-shelf-eligible:{lic or 'unknown'}",
+                          title=title, theme=theme, score=-1, matched=[])
+                st.known_ids.add(("wikimedia", title))
+                continue
+            desc = re.sub(r"<[^>]+>", " ",
+                          str((em.get("ImageDescription") or {}).get("value", "")))
+            cats = str((em.get("Categories") or {}).get("value", ""))
+            hay = f"{title} {desc} {cats}".lower()
+            # The phrase we actually searched for has to be IN the file. Searching two
+            # words to get volume let "Bread-rolls.jpg" in on the word "bread" alone;
+            # requiring "bread line" keeps the Bowery photographs and drops the bakery.
+            # Category membership is evidence, but it is not proof: a category can be
+            # broader than the theme that pointed at it. So category items still have to
+            # carry one of the theme's own subject words in the title - a far looser test
+            # than the two-word phrase demanded of search results, but enough to stop
+            # "Landscape on the Jackson farm" arriving as Depression hardship.
+            if from_category:
+                subj = CATEGORY_SUBJECT_TERMS.get(theme, set())
+                if subj and not any(w in hay for w in subj):
+                    st.reject("wikimedia", title, "category-subject-absent", title=title,
+                              theme=theme, score=-1, matched=[])
+                    st.known_ids.add(("wikimedia", title))
+                    continue
+            if not from_category and broad.lower() not in hay.replace("-", " "):
+                st.reject("wikimedia", title, f"phrase-absent:{broad}", title=title,
+                          theme=theme, score=-1, matched=[])
+                st.known_ids.add(("wikimedia", title))
+                continue
+            # Commons is half museum. A painting OF a bread line is not a record of
+            # one, and the owner's earlier verdict on met was explicit: artwork scans
+            # are unusable for these channels.
+            if ARTWORK_RE.search(hay):
+                st.reject("wikimedia", title, "artwork-not-photograph", title=title,
+                          theme=theme, score=-1, matched=[])
+                st.known_ids.add(("wikimedia", title))
+                continue
+            score, matched, why = score_item("wikimedia", probe, title,
+                                             f"{desc} {cats}", theme)
+            if why or not accept("wikimedia", score):
+                st.reject("wikimedia", title, why or "relevance<30", title=title,
+                          theme=theme, score=score, matched=matched)
+                st.known_ids.add(("wikimedia", title))
+                continue
+            if take_item(
+                    st, source="wikimedia", item_id=title, title=title,
+                    url=url, kind="image", theme=theme,
+                    source_url=f"https://commons.wikimedia.org/wiki/{title.replace(' ', '_')}",
+                    license_raw=f"{lic_name} (extmetadata License={lic})",
+                    license_decision="cc0" if lic == "cc0" else "pd",
+                    score=score, matched=matched,
+                    est_bytes=ii.get("size") or (12 << 20), dry_run=dry_run):
+                taken += 1
+    return taken
+
+
 def run_wikimedia(st: State, limit: int, dry_run: bool) -> int:
     taken = 0
+    # Phase 1: curated categories. Higher yield and higher precision than search, so it
+    # runs first; `from_category` tells the shared filter block to skip the phrase test.
+    for theme, root in WM_CATEGORIES:
+        if not theme_allowed(theme):
+            continue
+        titles = wm_category_files(root, WM_CAT_DEPTH, WM_CAT_MAX_FILES)
+        log(f"  wikimedia [{theme}] {root} -> {len(titles)} files in tree")
+        taken += wm_ingest_titles(st, titles, theme, root, limit, dry_run,
+                                  taken, from_category=True)
+        if limit and taken >= limit:
+            return taken
+    # Phase 2: free-text search for subjects no tidy category covers.
     for theme, query in WIKIMEDIA_QUERIES:
         if not theme_allowed(theme):
             continue
@@ -1305,68 +1524,8 @@ def run_wikimedia(st: State, limit: int, dry_run: bool) -> int:
                 break
             seen_titles += [h["title"] for h in hits]
             offset += 50
-        # imageinfo takes up to 50 titles at once - one request per 25 keeps URLs short
-        for i in range(0, len(seen_titles), 25):
-            batch = [t for t in seen_titles[i:i + 25] if not st.has("wikimedia", t)]
-            if not batch:
-                continue
-            info = get_json(WM_API, params={
-                "action": "query", "format": "json", "prop": "imageinfo",
-                "iiprop": "url|size|extmetadata", "titles": "|".join(batch)})
-            time.sleep(RATE["wikimedia"])
-            pages = ((info or {}).get("query") or {}).get("pages") or {}
-            for page in pages.values():
-                if limit and taken >= limit:
-                    return taken
-                title = page.get("title", "")
-                ii = (page.get("imageinfo") or [{}])[0]
-                url = ii.get("url")
-                if not url:
-                    continue
-                em = ii.get("extmetadata") or {}
-                lic = str((em.get("License") or {}).get("value", "")).lower().strip()
-                lic_name = str((em.get("LicenseShortName") or {}).get("value", ""))
-                if lic not in ("pd", "cc0"):
-                    st.reject("wikimedia", title, f"license-not-shelf-eligible:{lic or 'unknown'}",
-                              title=title, theme=theme, score=-1, matched=[])
-                    st.known_ids.add(("wikimedia", title))
-                    continue
-                desc = re.sub(r"<[^>]+>", " ",
-                              str((em.get("ImageDescription") or {}).get("value", "")))
-                cats = str((em.get("Categories") or {}).get("value", ""))
-                hay = f"{title} {desc} {cats}".lower()
-                # The phrase we actually searched for has to be IN the file. Searching two
-                # words to get volume let "Bread-rolls.jpg" in on the word "bread" alone;
-                # requiring "bread line" keeps the Bowery photographs and drops the bakery.
-                if broad.lower() not in hay.replace("-", " "):
-                    st.reject("wikimedia", title, f"phrase-absent:{broad}", title=title,
-                              theme=theme, score=-1, matched=[])
-                    st.known_ids.add(("wikimedia", title))
-                    continue
-                # Commons is half museum. A painting OF a bread line is not a record of
-                # one, and the owner's earlier verdict on met was explicit: artwork scans
-                # are unusable for these channels.
-                if ARTWORK_RE.search(hay):
-                    st.reject("wikimedia", title, "artwork-not-photograph", title=title,
-                              theme=theme, score=-1, matched=[])
-                    st.known_ids.add(("wikimedia", title))
-                    continue
-                score, matched, why = score_item("wikimedia", query, title,
-                                                 f"{desc} {cats}", theme)
-                if why or not accept("wikimedia", score):
-                    st.reject("wikimedia", title, why or "relevance<30", title=title,
-                              theme=theme, score=score, matched=matched)
-                    st.known_ids.add(("wikimedia", title))
-                    continue
-                if take_item(
-                        st, source="wikimedia", item_id=title, title=title,
-                        url=url, kind="image", theme=theme,
-                        source_url=f"https://commons.wikimedia.org/wiki/{title.replace(' ', '_')}",
-                        license_raw=f"{lic_name} (extmetadata License={lic})",
-                        license_decision="cc0" if lic == "cc0" else "pd",
-                        score=score, matched=matched,
-                        est_bytes=ii.get("size") or (12 << 20), dry_run=dry_run):
-                    taken += 1
+        taken += wm_ingest_titles(st, seen_titles, theme, query, limit, dry_run,
+                                  taken, from_category=False)
         log(f"  wikimedia [{theme}] '{query}' ({len(seen_titles)} candidates) "
             f"cumulative taken={taken}")
     return taken

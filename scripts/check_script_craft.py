@@ -35,6 +35,18 @@ EMOTION_CMD = re.compile(
     r"aim it at|imagine (for a moment|what)|picture (this|it)|consider for a moment|"
     r"take a moment|ask yourself|remember that feeling)\b", re.I)
 
+# --- Spoken CTA. Measured 2026-08-03: 46 published Shorts read a call to action aloud and
+# 45 of them converted zero subscribers. docs/PD_SHORTS_TO_LONGFORM_FUNNEL.v001.md makes the
+# rule explicit -- the ask lives in the description, the pinned comment and the end card.
+# Long-form inherits it: a narrator who asks for the subscription spends the payoff on the ask.
+SPOKEN_CTA = re.compile(
+    r"\b(subscribe|hit (the )?(bell|like)|smash (that )?like|like (and|&) subscribe|"
+    r"leave a comment|comment below|let me know (what|in the comments)|"
+    r"link (is )?in the (description|bio)|check out (the )?(link|description)|"
+    r"follow (us|me) (on|for)|ring the bell|turn on notifications|"
+    r"if you (enjoyed|liked) (this|the) video|don'?t forget to)\b", re.I)
+
+
 # --- R-24: AI-smell. Phrases that mark machine prose regardless of topic. ---------
 AI_SMELL = [
     "it's important to note", "it is important to note", "it's worth noting",
@@ -141,6 +153,14 @@ def main() -> int:
     print(f"AI-smell phrases      : {len(smell)}  (limit 0)" + (f"  {smell}" if smell else ""))
     if smell:
         fails.append(f"AI-smell phrases present: {smell}")
+
+    # Spoken CTA. The ask belongs in the description, the pinned comment and the end card.
+    cta = [m.group(0) for m in SPOKEN_CTA.finditer(body)]
+    print(f"spoken CTA            : {len(cta)}  (limit 0)" + (f"  {cta[:4]}" if cta else ""))
+    if cta:
+        fails.append(f"spoken call to action in narration: {cta[:3]} -- 45 of 46 Shorts that "
+                     f"read a CTA aloud converted zero subscribers "
+                     f"(docs/PD_SHORTS_TO_LONGFORM_FUNNEL.v001.md)")
 
     # R-24 second person and rhetorical questions
     sp = len(SECOND_PERSON.findall(body))

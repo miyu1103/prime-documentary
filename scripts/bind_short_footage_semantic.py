@@ -165,16 +165,26 @@ def main() -> int:
     Q = embed_queries(queries)
     scores = emb @ Q.T                      # [clips, plates]
 
-    used: set[str] = set(load_rejects())
-    if used:
-        print(f"{len(used)} clips permanently excluded by eye QC (runs/footage_semantic/rejected_clips.txt)")
+    rejected: set[str] = set(load_rejects())
+    used: set[str] = set(rejected)
+    if rejected:
+        print(f"{len(rejected)} clips permanently excluded by eye QC "
+              f"(runs/footage_semantic/rejected_clips.txt)")
+    # Which episode each Short belongs to: reuse is allowed ACROSS episodes but never inside one.
+    ep_of: dict[str, str] = {}
+    for _, dd, ss, _ in jobs:
+        ep_of[ss["short_id"]] = dd["episode_id"]
+    used_in_episode: dict[str, set[str]] = {}
     rows, unbound = [], []
     # hardest plates first: a plate with only one plausible clip should claim it before an easy one
     order = sorted(range(len(jobs)), key=lambda i: -float(scores[:, i].max()))
     for i in order:
         _, _, s, p = jobs[i]
         col = scores[:, i]
+        ep = ep_of.get(s["short_id"], "")
+        seen_here = used_in_episode.setdefault(ep, set())
         pick = None
+        # first choice: a clip nothing has claimed anywhere
         for idx in np.argsort(-col)[:400]:
             cand = paths[idx]
             if cand in used:
@@ -183,12 +193,30 @@ def main() -> int:
                 break
             pick = (cand, float(col[idx]))
             break
+        if pick is None:
+            # Fallback: reuse a clip already used by a DIFFERENT episode. Strict global uniqueness
+            # is the right default, but it is not worth an empty line window - short153's L6 lost
+            # all five plates to it and rendered 8.27 s of black. Popular subjects (a calendar, a
+            # desk lamp, a pile of folders) get claimed early and the shelf has no second one.
+            # Never reuse inside the same episode: that is the repetition a viewer actually notices.
+            for idx in np.argsort(-col)[:400]:
+                cand = paths[idx]
+                if cand in rejected or cand in seen_here:
+                    continue
+                if float(col[idx]) < a.floor:
+                    break
+                pick = (cand, float(col[idx]))
+                break
+            if pick:
+                print(f"  reused across episodes: {s['short_id']} p{p['n']:02d} "
+                      f"{p.get('footage_query')!r}")
         row = {"short": s["short_id"], "n": p["n"], "line": p.get("line"),
                "query": p.get("footage_query"), "subject": p.get("subject"),
                "bound_file": pick[0] if pick else None,
                "score": round(pick[1], 3) if pick else round(float(col.max()), 3)}
         if pick:
             used.add(pick[0])
+            seen_here.add(pick[0])
             rows.append(row)
         else:
             unbound.append(row)

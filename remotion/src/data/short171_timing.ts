@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT171_TOTAL_SEC = 37.778;
+export const SHORT171_TOTAL_SEC = 52.509;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 32.18,
     "end": 36.778
+  },
+  {
+    "id": "L6",
+    "start": 36.998,
+    "end": 42.199
+  },
+  {
+    "id": "L7",
+    "start": 42.419,
+    "end": 46.227
+  },
+  {
+    "id": "L8",
+    "start": 46.447,
+    "end": 51.509
   }
 ];
 
@@ -145,18 +160,63 @@ export const SHORT171_CAPTIONS: ShortCaption[] = [
     "endSec": 31.96
   },
   {
-    "word": "They kept the house.",
+    "word": "He painted houses.",
     "startSec": 32.18,
-    "endSec": 33.191
+    "endSec": 33.379
+  },
+  {
+    "word": "He and his wife earned that",
+    "startSec": 33.379,
+    "endSec": 35.179
+  },
+  {
+    "word": "home one wall at a time.",
+    "startSec": 35.179,
+    "endSec": 36.778
+  },
+  {
+    "word": "What happened to them was",
+    "startSec": 36.998,
+    "endSec": 38.443
+  },
+  {
+    "word": "not built for criminals.",
+    "startSec": 38.443,
+    "endSec": 39.83
+  },
+  {
+    "word": "It was built for",
+    "startSec": 39.83,
+    "endSec": 40.754
+  },
+  {
+    "word": "people exactly like them.",
+    "startSec": 40.754,
+    "endSec": 42.199
+  },
+  {
+    "word": "The city that sealed his door was",
+    "startSec": 42.419,
+    "endSec": 44.414
+  },
+  {
+    "word": "the city he paid his taxes to.",
+    "startSec": 44.414,
+    "endSec": 46.227
+  },
+  {
+    "word": "They kept the house.",
+    "startSec": 46.447,
+    "endSec": 47.56
   },
   {
     "word": "They did not drop the class action",
-    "startSec": 33.191,
-    "endSec": 34.908
+    "startSec": 47.56,
+    "endSec": 49.451
   },
   {
     "word": "for everyone still facing that knock.",
-    "startSec": 34.908,
-    "endSec": 36.778
+    "startSec": 49.451,
+    "endSec": 51.509
   }
 ];

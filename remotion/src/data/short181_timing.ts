@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT181_TOTAL_SEC = 38.103;
+export const SHORT181_TOTAL_SEC = 55.527;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.112,
     "end": 37.103
+  },
+  {
+    "id": "L6",
+    "start": 37.323,
+    "end": 42.756
+  },
+  {
+    "id": "L7",
+    "start": 42.976,
+    "end": 48.456
+  },
+  {
+    "id": "L8",
+    "start": 48.676,
+    "end": 54.527
   }
 ];
 
@@ -130,28 +145,73 @@ export const SHORT181_CAPTIONS: ShortCaption[] = [
     "endSec": 30.892
   },
   {
-    "word": "That answer still stands.",
+    "word": "A court cannot jail someone for",
     "startSec": 31.112,
-    "endSec": 32.566
+    "endSec": 33.047
+  },
+  {
+    "word": "unpaid fines unless it first finds",
+    "startSec": 33.047,
+    "endSec": 35.168
+  },
+  {
+    "word": "they refused while able to pay.",
+    "startSec": 35.168,
+    "endSec": 37.103
+  },
+  {
+    "word": "Even where nonpayment is not willful",
+    "startSec": 37.323,
+    "endSec": 39.472
+  },
+  {
+    "word": "the court must still weigh a",
+    "startSec": 39.472,
+    "endSec": 41.144
+  },
+  {
+    "word": "punishment short of a cell.",
+    "startSec": 41.144,
+    "endSec": 42.756
+  },
+  {
+    "word": "Bearden did not abolish fines.",
+    "startSec": 42.976,
+    "endSec": 44.654
+  },
+  {
+    "word": "Courts can still punish someone who",
+    "startSec": 44.654,
+    "endSec": 46.611
+  },
+  {
+    "word": "has the money and simply refuses.",
+    "startSec": 46.611,
+    "endSec": 48.456
+  },
+  {
+    "word": "That answer still stands.",
+    "startSec": 48.676,
+    "endSec": 50.096
   },
   {
     "word": "Thirty years later",
-    "startSec": 32.566,
-    "endSec": 33.613
+    "startSec": 50.096,
+    "endSec": 51.119
   },
   {
     "word": "in a Montgomery courtroom",
-    "startSec": 33.613,
-    "endSec": 35.067
+    "startSec": 51.119,
+    "endSec": 52.539
   },
   {
     "word": "nobody in the room",
-    "startSec": 35.067,
-    "endSec": 36.114
+    "startSec": 52.539,
+    "endSec": 53.561
   },
   {
     "word": "said it out loud.",
-    "startSec": 36.114,
-    "endSec": 37.103
+    "startSec": 53.561,
+    "endSec": 54.527
   }
 ];

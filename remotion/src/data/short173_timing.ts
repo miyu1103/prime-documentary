@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT173_TOTAL_SEC = 38.522;
+export const SHORT173_TOTAL_SEC = 54.925;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 31.438,
     "end": 37.522
+  },
+  {
+    "id": "L6",
+    "start": 37.742,
+    "end": 42.711
+  },
+  {
+    "id": "L7",
+    "start": 42.931,
+    "end": 47.993
+  },
+  {
+    "id": "L8",
+    "start": 48.213,
+    "end": 53.925
   }
 ];
 
@@ -135,23 +150,78 @@ export const SHORT173_CAPTIONS: ShortCaption[] = [
     "endSec": 31.218
   },
   {
-    "word": "One man got a rule.",
+    "word": "Each of the others",
     "startSec": 31.438,
-    "endSec": 32.539
+    "endSec": 32.579
+  },
+  {
+    "word": "was an ordinary person",
+    "startSec": 32.579,
+    "endSec": 33.973
+  },
+  {
+    "word": "matched by a machine",
+    "startSec": 33.973,
+    "endSec": 35.24
+  },
+  {
+    "word": "believed over their own flat denial.",
+    "startSec": 35.24,
+    "endSec": 37.522
+  },
+  {
+    "word": "The city he sued was",
+    "startSec": 37.742,
+    "endSec": 38.898
+  },
+  {
+    "word": "forced to rewrite its rules.",
+    "startSec": 38.898,
+    "endSec": 40.515
+  },
+  {
+    "word": "A match is now a",
+    "startSec": 40.515,
+    "endSec": 41.44
+  },
+  {
+    "word": "lead and nothing more.",
+    "startSec": 41.44,
+    "endSec": 42.711
+  },
+  {
+    "word": "Every earlier arrest made with the software",
+    "startSec": 42.931,
+    "endSec": 45.377
+  },
+  {
+    "word": "has to be pulled and reviewed",
+    "startSec": 45.377,
+    "endSec": 47.026
+  },
+  {
+    "word": "going back years.",
+    "startSec": 47.026,
+    "endSec": 47.993
+  },
+  {
+    "word": "One man got a rule.",
+    "startSec": 48.213,
+    "endSec": 49.247
   },
   {
     "word": "Everyone else got a warning.",
-    "startSec": 32.539,
-    "endSec": 34.161
+    "startSec": 49.247,
+    "endSec": 50.77
   },
   {
     "word": "And the rule only exists because",
-    "startSec": 34.161,
-    "endSec": 36.015
+    "startSec": 50.77,
+    "endSec": 52.511
   },
   {
     "word": "his story got loud enough.",
-    "startSec": 36.015,
-    "endSec": 37.522
+    "startSec": 52.511,
+    "endSec": 53.925
   }
 ];

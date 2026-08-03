@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT151_TOTAL_SEC = 37.22;
+export const SHORT151_TOTAL_SEC = 56.642;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 30.229,
     "end": 36.22
+  },
+  {
+    "id": "L6",
+    "start": 36.44,
+    "end": 43.452
+  },
+  {
+    "id": "L7",
+    "start": 43.672,
+    "end": 49.431
+  },
+  {
+    "id": "L8",
+    "start": 49.651,
+    "end": 55.642
   }
 ];
 
@@ -135,23 +150,93 @@ export const SHORT151_CAPTIONS: ShortCaption[] = [
     "endSec": 30.009
   },
   {
-    "word": "Nothing about him had changed.",
+    "word": "The ruling behind that",
     "startSec": 30.229,
-    "endSec": 31.82
+    "endSec": 31.438
+  },
+  {
+    "word": "second trial was unanimous.",
+    "startSec": 31.438,
+    "endSec": 32.922
+  },
+  {
+    "word": "Every justice agreed that a",
+    "startSec": 32.922,
+    "endSec": 34.406
+  },
+  {
+    "word": "lawyer is a necessity",
+    "startSec": 34.406,
+    "endSec": 35.56
+  },
+  {
+    "word": "not a frill.",
+    "startSec": 35.56,
+    "endSec": 36.22
+  },
+  {
+    "word": "It reached back and",
+    "startSec": 36.44,
+    "endSec": 37.579
+  },
+  {
+    "word": "overruled its own precedent",
+    "startSec": 37.579,
+    "endSec": 39.197
+  },
+  {
+    "word": "leaving one plain rule.",
+    "startSec": 39.197,
+    "endSec": 40.575
+  },
+  {
+    "word": "Too poor to hire a lawyer",
+    "startSec": 40.575,
+    "endSec": 42.074
+  },
+  {
+    "word": "the state appoints one.",
+    "startSec": 42.074,
+    "endSec": 43.452
+  },
+  {
+    "word": "Through the Fourteenth Amendment it",
+    "startSec": 43.672,
+    "endSec": 45.456
+  },
+  {
+    "word": "bound the states too",
+    "startSec": 45.456,
+    "endSec": 46.475
+  },
+  {
+    "word": "so the right could not stop",
+    "startSec": 46.475,
+    "endSec": 47.851
+  },
+  {
+    "word": "at the federal courthouse door.",
+    "startSec": 47.851,
+    "endSec": 49.431
+  },
+  {
+    "word": "Nothing about him had changed.",
+    "startSec": 49.651,
+    "endSec": 51.242
   },
   {
     "word": "The only thing that changed was",
-    "startSec": 31.82,
-    "endSec": 33.463
+    "startSec": 51.242,
+    "endSec": 52.885
   },
   {
     "word": "whether anyone in that room was",
-    "startSec": 33.463,
-    "endSec": 35.107
+    "startSec": 52.885,
+    "endSec": 54.529
   },
   {
     "word": "standing on his side.",
-    "startSec": 35.107,
-    "endSec": 36.22
+    "startSec": 54.529,
+    "endSec": 55.642
   }
 ];

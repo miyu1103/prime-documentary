@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT177_TOTAL_SEC = 46.648;
+export const SHORT177_TOTAL_SEC = 66.86;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -30,6 +30,21 @@ export const LINE_WINDOWS: LineWindow[] = [
     "id": "L5",
     "start": 36.732,
     "end": 45.648
+  },
+  {
+    "id": "L6",
+    "start": 45.868,
+    "end": 50.512
+  },
+  {
+    "id": "L7",
+    "start": 50.732,
+    "end": 56.398
+  },
+  {
+    "id": "L8",
+    "start": 56.618,
+    "end": 65.86
   }
 ];
 
@@ -140,33 +155,88 @@ export const SHORT177_CAPTIONS: ShortCaption[] = [
     "endSec": 36.512
   },
   {
-    "word": "Whether you are made whole is",
+    "word": "Tennessee.",
     "startSec": 36.732,
-    "endSec": 38.379
+    "endSec": 37.543
+  },
+  {
+    "word": "Deputies put about thirty-five gas",
+    "startSec": 37.543,
+    "endSec": 40.298
+  },
+  {
+    "word": "canisters into a house.",
+    "startSec": 40.298,
+    "endSec": 42.163
+  },
+  {
+    "word": "Roughly seventy thousand dollars of damage.",
+    "startSec": 42.163,
+    "endSec": 45.648
+  },
+  {
+    "word": "An appeals court called that exception questionable",
+    "startSec": 45.868,
+    "endSec": 48.722
+  },
+  {
+    "word": "then dismissed the claim anyway.",
+    "startSec": 48.722,
+    "endSec": 50.512
+  },
+  {
+    "word": "Los Angeles.",
+    "startSec": 50.732,
+    "endSec": 51.455
+  },
+  {
+    "word": "A fugitive locked a man",
+    "startSec": 51.455,
+    "endSec": 52.842
+  },
+  {
+    "word": "out of his print shop.",
+    "startSec": 52.842,
+    "endSec": 54.168
+  },
+  {
+    "word": "In 2025 a court",
+    "startSec": 54.168,
+    "endSec": 55.072
+  },
+  {
+    "word": "ruled he gets nothing.",
+    "startSec": 55.072,
+    "endSec": 56.398
+  },
+  {
+    "word": "Whether you are made whole is",
+    "startSec": 56.618,
+    "endSec": 58.325
   },
   {
     "word": "not decided by the Constitution.",
-    "startSec": 38.379,
-    "endSec": 40.196
+    "startSec": 58.325,
+    "endSec": 60.209
   },
   {
     "word": "It is decided by which",
-    "startSec": 40.196,
-    "endSec": 41.446
+    "startSec": 60.209,
+    "endSec": 61.504
   },
   {
     "word": "city you live in.",
-    "startSec": 41.446,
-    "endSec": 42.411
+    "startSec": 61.504,
+    "endSec": 62.505
   },
   {
     "word": "And nobody chooses which door",
-    "startSec": 42.411,
-    "endSec": 44.058
+    "startSec": 62.505,
+    "endSec": 64.212
   },
   {
     "word": "the emergency comes through.",
-    "startSec": 44.058,
-    "endSec": 45.648
+    "startSec": 64.212,
+    "endSec": 65.86
   }
 ];
