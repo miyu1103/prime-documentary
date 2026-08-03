@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-064-memphis",
+  "slug": "memphis",
+  "runtime_seconds": [
+    1620,
+    1920
+  ],
+  "script_words": [
+    4400,
+    4900
+  ],
+  "section_vocabulary": [
+    "HOOK",
+    "OP",
+    "ACT_1",
+    "ACT_2",
+    "ACT_3",
+    "ACT_4",
+    "ACT_5",
+    "ENDING"
+  ],
+  "figure_beats_per_act": [
+    13,
+    17
+  ],
+  "distinct_video_assets": 234,
+  "people_plates_min": 10,
+  "mandatory_stills": [],
+  "thumbnail_candidates_min": 3,
+  "footage_review_required": true,
+  "audio_layers": 2,
+  "forbidden_subjects": [
+    "any depiction of the Craft family",
+    "a house fire, a person freezing, a body, or any harm dramatised as a consequence",
+    "a utility worker characterised as a villain",
+    "any likeness of the real people named in the record",
+    "readable text, numerals, signage, logos, seals or emblems in any generated image",
+    "courtroom interiors, gavels, judges' benches — 23 of 24 archive courtroom clips are already used in earlier episodes and the look is spent",
+    "prison cells, bars, razor wire, handcuffs — 18-24 of 24 already used, and none of these episodes is about incarceration",
+    "any real building, hospital, courthouse or housing project identifiable by signage or architecture",
+    "stock-photo emotion: a hand on a shoulder, a tear, a clock ticking down, a gavel falling"
+  ],
+  "forbidden_claims": [
+    "Anything about the case that is not in the opinion text at measurements/EP64_memphis_RAW.md. The ledger has not been written yet; write it before the script.",
+    "Any statement about what utilities must do TODAY. The decision is from 1978 and the ledger will establish nothing about current tariffs or state rules.",
+    "Any national number — how many shutoffs, how many deaths, how many disputed bills.",
+    "That the Crafts won damages, or what happened to them afterwards, unless the opinion says so."
+  ],
+  "notes": "THREAT (second person, one case, one threat — PD_WINNING_PATTERN §3): 言い分を聞かれる前に、冬に電気を止められるのか\n\nCASE: Memphis Light, Gas & Water Division v. Craft, 436 U.S. 1 (1978)\nFACTS: episodes/_planning/EP64_memphis_FACTS_LEDGER.v001.md (WRITTEN 2026-08-04: 122 fact lines, 109 verbatim, 17 quarantined, all from measurements/EP64_memphis_RAW.md)\n\nRESOLVED 2026-08-04 (was: ledger not written). The ledger is written from the 61,774-character opinion at measurements/EP64_memphis_RAW.md (CourtListener cluster 109855; 436 U.S. 1, filed 1978-05-01). THREE FINDINGS FROM THAT LEDGER BIND THE SCRIPT: (1) the opinion CONTRADICTS ITSELF on who failed to merge the accounts -- the majority says a contractor the Crafts hired, a footnote citing respondents' brief says the utility -- and on the number of terminations (majority: five; dissent: 'several'). The Court never resolved either, so the script may not pick a side. (2) NOBODY EVER DECIDED WHETHER THE CRAFTS OWED THE MONEY, so 'they were overcharged' is not available. (3) the Court expressly preserved the utility's power to cut service after a hearing -- verbatim: the utility 'would retain the option to terminate service after affording the notice and hearing required' -- so 'a hearing before shutoff' must never be told as 'shutoff was stopped'. Stevens's dissent is strong and quotable; use it so the film is not one-sided.\n\nRETRIEVAL NOTE for anyone re-fetching: a plain search for 'Memphis Light' on the Supreme Court returns 408 results and NONE of them is this case — they are all later Tennessee workers-compensation matters. The query that works is the exact case name with the ampersand plus filed_after=1977 / filed_before=1979.\n\nCourtListener's copy has no syllabus. If the episode needs one it must come from elsewhere.\n\nFOOTAGE, measured 2026-08-04 before this contract was written (design manual step 1): heater 36 (burn 1/24) · curtain 149 (2/24) · elderly 104 (5/24) · candle 261 (11/24). The legal-genre shelf is spent after 61 episodes — courtroom 23/24, cell 20/24, prison 18/24, handcuffs 7/7 already used — so none of these four episodes uses it as a register.\n\nmandatory_stills IS DELIBERATELY EMPTY AND MUST NOT STAY THAT WAY. Fill it with every commissioned image ID the moment the Codex brief is written. An empty list disables check_spec_satisfied.py's only protection against the EP54 failure, where fourteen stills commissioned precisely because the archive had nothing were trimmed from the alphabetical tail and nobody noticed until the film was finished. EP61 shipped with this field empty and it had to be backfilled.\n\nsection_vocabulary is the 8-key standard. WRITE THE SCRIPT HEADINGS TO MATCH IT. EP61's script used OPENING where the contract said OP, and the mismatch had to be handed to the assembly thread as a warning."
+}
