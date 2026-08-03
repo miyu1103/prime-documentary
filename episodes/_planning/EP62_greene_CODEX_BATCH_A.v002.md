@@ -1,0 +1,806 @@
+# EP62 greene — Codex 画像生成 **1本で完結する発注** v002（222枚・1プロンプト1枚）
+
+> ## ✅ 今すぐ着手してよいファイルです。**追加バッチは出ません。**
+>
+> ### v001 との違い（読んでから着手すること）
+> **v001 は台本が存在しない時点で、事実台帳（FACTS LEDGER）と一般的な8区分の形だけから書かれました。**
+> つまり v001 のプレートは「たぶんこういうビートが来るはず」という**推測**です。オーナーがこれを指摘しました。
+> 台本 `EP62_greene_script.en.v002.md` は現在**実在します（実測5,318語・8区分）**。
+> **v002 はその台本の実ビートから再導出したものです。** 枚数配分も章ごとの実測語数から算出し直しました（§4）。
+> v001 はディスク上に残置します（削除・上書き禁止）。v001 のプロンプトのうち**実在のビートに当たるものだけ**を
+> 引き継ぎ、残りは捨てました。**着手するのは本ファイル v002 です。**
+>
+> ### さらに v002 で変わった2点（オーナー決定・2026-08-04）
+> 1. **HOOKは約8秒になりました**（従来の約50秒ではない）。`docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md` 行9の
+>    フラッシュフォワード方式：本編最強のビートを3〜4個、約2秒刻みで見せ、決め台詞1つと未解決の問いを置く。
+>    よって **HOOKの枚数は12枚→5枚**。浮いた7枚は各ACTへ配り直しました。
+>    **HOOKの5枚は本発注中で最も強い5枚**であり、かつ**全て本編の後段でもう一度使われます**（約束と回収）。
+> 2. **画づくりの水準はアカデミー／パルムドール級の脚本と同じ基準です。**「一般的なカバレッジ」を禁止します。
+>    各プロンプトは**視点を持つ**こと——**具体的な光・具体的な距離・具体的な瞬間**を必ず書く。
+>    ストックフォト調（誰の目でもない、いつでもない、どこからでもない絵）は不合格です。
+>    §5のプロンプトはすべてその形式で書いてあります。**距離・光・瞬間の指定を削らないでください。**
+
+**題材:** *Greene v. Lindsey*, 456 U.S. 444 (1982)。ケンタッキー州ルイビルの公営住宅で、立ち退きの
+通知が**ドアに貼られただけ**だった。住人は見ていないと主張し、欠席判決が確定した。
+
+**この映画は「強欲な家主」の話ではありません。**訴えられた側は**ルイビル住宅公社＝政府機関**です。
+主題は**誰も読まなかった一枚の紙**であり、立ち退きそのものではありません。
+
+**この話のマクロ・ループは「紙」、仕込み物は「テープ」です**（台本の構造ロック）。ACT_2 で置かれたテープが
+ENDING で回収されます。だから紙とテープのプレートは**同じドア・同じ画角・同じ光**で複数枚あります。
+これは被りではなく、**時間経過を見せるための同一画角の連番**です。指定どおり同じ画角で作ってください。
+
+枚数の根拠は `EP62_65_IMAGE_BUDGET.v001.md`：契約 `distinct_video_assets` 234 − 実写採用12 = **222**。
+
+---
+
+## 0. ★★★ 最重要：1プロンプト = 1枚 ★★★
+
+1. **各プロンプトから画像を1枚だけ作る。** 同じプロンプトで2枚目を作らない。
+2. **`_02` / `_03` を作らない。**
+3. **「良いのが出るまで回す」を禁止する。**
+4. 作り直してよいのは §1 の禁止に触れたときだけ。そのときも**文言を直してから1枚**。
+
+EP60はこの規則で **279枚・変種0・指定外0・sha256重複0・知覚的近似重複0** を達成済み。
+
+---
+
+## 1. ★絶対条件（触れた絵は使用不可）
+
+`episodes/PD-2026-062-greene/episode_spec.v001.json` の `forbidden_subjects` がこの節の正典です。
+
+- **立ち退きの最中を描かない。** 歩道に出された家具・追い出される家族・**ドアの前の保安官**。一切。
+- **制服の執行官・保安官・警官を描かない。** この映画に「来た人」は映りません。映るのは**紙**です。
+- **家主というキャラクターを描かない。** 被告は政府機関です。
+- **実在の3人（Linnie Lindsey / Barbara Hodgens / Pamela Ray）とその住居を描かない。** 人物は全員
+  「実在しない一般人」として描く。台本にある「三つのドア」は**匿名の一般的な集合住宅**として描くこと。
+- **法廷内観を描かない。** 木槌・判事席・傍聴席。棚の法廷映像は61話で使い切っています。
+  **裁判所は外観のみ可。**
+- **監獄を描かない。** 鉄格子・有刺鉄線・独房・手錠。この話は収監の話ではありません。
+- **読める文字・数字・署名・印章・ロゴを描かない。** 通知の紙も**文字が判別できない状態**で描く。
+  ★**この話で最大の事故源はここです。** ドアに貼られる紙は全222枚のうち約30枚に出ます。
+  1枚でも読める文字が乗ると、その絵は「実際の令状の偽造」になります。**紙は必ず白紙・または印字が
+  灰色の帯に溶けた状態**にしてください。プロンプト本文には一切の文字要素を書いていません。
+- **実在と特定できる建物を描かない。** 看板・紋章・特徴的な建築で場所が割れる絵は不可。
+- **子どもの顔を描かない。** 子どもは「痕跡」でのみ表す（自転車・チョーク・ボール・低い位置の手）。
+- **広告調にしない。** 黄金色の夕陽、絵葉書の風景、クリスマス、南国、砂漠、ドローンの映え、暖炉のくつろぎ。
+- **同情の演出を禁止する。** 肩に置かれた手、涙、時計のカウントダウン、寄り添う老夫婦。
+- **黒つぶれさせない。** スマホで見て何が写っているか分かること。
+
+### 生成後のチェック（1枚ずつ目視）
+
+| # | 不合格条件 |
+|---|---|
+| Q1 | 長辺が3840px未満 |
+| Q2 | 読める文字・数字・署名がある（**紙の上も含む**） |
+| Q3 | 印章・紋章・ロゴらしきものがある |
+| Q4 | 制服・バッジ・パトカー・法廷内観・鉄格子が写っている |
+| Q5 | 立ち退きの最中（歩道の家具・運び出される荷物・泣いている人）が写っている |
+| Q6 | 既存の他話の画像と実質同じ構図 |
+| Q7 | 広告調（黄金色の映え・絵葉書・くつろぎ暖炉）である |
+| Q8 | 画面全体が暗すぎる |
+| Q9 | 子どもの顔が判別できる |
+
+---
+
+## 2. スタイル（★必ず展開してから生成）
+
+**`[STYLE]`** ＝ 末尾にそのまま連結:
+
+> , cinematic still, muted natural colour, flat humid Ohio Valley light, low contrast, low-key but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, soft falloff toward the edges, shallow depth of field, restrained documentary framing, mid-1970s to early-1980s American public housing period detail, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+**`[NEG]`** ＝ `Avoid:` の後にそのまま連結:
+
+> text, lettering, numerals, handwriting, signatures, seals, emblems, logos, signage, house numbers, street signs, police uniform, sheriff badge, patrol car, courtroom interior, gavel, judge's bench, prison bars, razor wire, handcuffs, furniture on a pavement, people being evicted, crying, a hand on a shoulder, golden hour, sunset glow, postcard scenery, drone shot, cosy fireplace, Christmas, tropical, modern smartphones, modern cars, flat CGI, cartoon, illustration, oversaturated
+
+> **注意（v002で厳格化）。** §5 のプロンプト本文には、`text` / `lettering` / `sign` / `signage` / `numbers` /
+> `uniform` / `badge` / `gavel` / `courtroom` / `bars` / `handcuffs` を**一語も書いていません**。禁止語は
+> `[NEG]` 側にだけ置きます。拡散モデルは本文中の否定形（"no signage"）をしばしば無視して逆に描くためです。
+> v001 の本文には "no signage" "no lettering" "grey texture"（= `text` を含む）が散在していました。v002 では
+> すべて排除し、印字は `dissolved to soft grey banding` と表現しています。**この語を書き換えないでください。**
+
+---
+
+## 3. 命名と保存先
+
+- ファイル名 `G001.png` … `G222.png`。**欠番を作らない。重複させない。**
+- 保存先 `H:\pd-media\assets\ai\greene\`。
+- 長辺 3840px 以上・16:9・PNG。
+
+---
+
+## 4. 区分と枚数（合計222枚）— **台本の実測語数から導出**
+
+`EP62_greene_script.en.v002.md` を機械カウントした語数（ナレーション行のみ。`【】`ディレクション・
+`⟨HELD⟩`・見出し・注記を除外）：**合計 5,318語**。
+
+**HOOKは特例です。**オーナー決定により HOOK は**約8秒のフラッシュフォワード**になりました
+（`PD_ONE_PASS_PRODUCTION_SPEC.v2.md` 行9）。よって HOOK の枚数は語数比例では決めません。
+**本編最強のビートから5枚**を選び、それを冒頭に置きます（詳細は §5 HOOK 冒頭の回収表）。
+台本の HOOK 区分はコーディネーターが別途書き直します。**この発注は書き直しを待たずに着手できます。**
+
+まず 222 − PEOPLE 10 − THUMB 3 = **209枚**。そこから HOOK 5・OP 4・ENDING 14 を先に確定し、
+残り **186枚**を ACT_1–ACT_5 に語数比例（≒26語/枚）で配る。
+
+| 区分 | 台本語数 | 全体比 | 比例値 | **確定枚数** | 語/枚 | ID範囲 |
+|---|---:|---:|---:|---:|---:|---|
+| HOOK（約8秒・特例） | 142 | 2.67% | — | **5** | — | `G001`–`G005` |
+| OP | 51 | 0.96% | 2.0 | **4** | 12.8 | `G006`–`G009` |
+| ACT_1 | 1,006 | 18.92% | 38.7 | **39** | 25.8 | `G010`–`G048` |
+| ACT_2 | 664 | 12.49% | 25.6 | **27** | 24.6 | `G049`–`G075` |
+| ACT_3 | 836 | 15.72% | 32.2 | **32** | 26.1 | `G076`–`G107` |
+| ACT_4 | 871 | 16.38% | 33.5 | **33** | 26.4 | `G108`–`G140` |
+| ACT_5 | 1,456 | 27.38% | 56.0 | **55** | 26.5 | `G141`–`G195` |
+| ENDING | 292 | 5.49% | 11.5 | **14** | 20.9 | `G196`–`G209` |
+| — 小計 | 5,318 | 100% | — | **209** | | |
+| PEOPLE | — | — | — | **10** | | `G210`–`G219` |
+| THUMB | — | — | — | **3** | | `G220`–`G222` |
+| **合計** | | | | **222** | | `G001`–`G222` |
+
+配分の調整理由（比例値からのズレはここだけ）：
+
+- **HOOK 5**：8秒 ÷ 約2秒刻み ＝ 4カット。ループ末尾ぶんを足して5枚。v001 は12枚でした。
+  浮いた7枚は ACT_1 +2 / ACT_2 +1 / ACT_3 +1 / ACT_4 +1 / ACT_5 +2 に配り直し済み。
+- **OP 4**：15秒・51語。無地テクスチャのみで、意味のあるモチーフを消費しない。**最も薄い区分**。
+- **ACT_2 +1.4**：ここが「掲示という機構」そのものの章で、**仕込み物（テープ）が置かれる章**です。
+  画鋲・テープ・一度きりの訪問・リセットビートと、実物の点数が最も要ります。
+- **ACT_5 −1.0**：語数は最大ですが、内容の比重が長い引用と対比（多数意見 対 反対意見）に寄るため、
+  1枚あたりの持ち時間を長く取れます。
+- **ENDING +2.5**：最後の4枚（`G206`–`G209`）が**同一ドアの4段階**で、台本の
+  「その紙がまだそこにあるという、たった一つの仮定」を段階で見せるため。
+
+---
+
+## 5. プロンプト（各1枚）
+
+### HOOK（約8秒・5枚・`G001`–`G005`）— **本発注で最も強い5枚。手を抜かない。**
+
+これは最初の8秒に出る絵です。**視聴者がこの映画で最初に見る5枚であり、離脱の半分はここで決まります。**
+フラッシュフォワードなので、**5枚とも本編の後段でもう一度使われます**（約束と回収）。
+下の表の「回収先」は編集側の再カット指示です。**画像の生成は1プロンプト1枚のまま**で、
+同じ絵を2枚作る必要はありません。
+
+| プレート | 何を約束するか | 回収先（本編での再カット） |
+|---|---|---|
+| `G001` | ドアに貼られた紙そのもの＝マクロ・ループ | ACT_2 `G059` の直前／ENDING `G206` |
+| `G002` | 子どもの手が角にかかる＝事件の核心 | ACT_3 `G082` の直前 |
+| `G003` | 紙が消えテープと破れた角だけが残る＝結論 | ACT_3 `G084`／ENDING `G203` |
+| `G004` | 同じドアが延々続く通路＝これは3戸の話ではない | ACT_2 リセットビート `G067`／ACT_4 `G119` |
+| `G005` | 証言録取の部屋＝この事件を決めた場所 | ACT_3 冒頭 `G076` |
+
+- `G001.png`
+A blank sheet of plain paper taped square to a painted apartment door, shot dead on from one metre in flat overcast light, the lower left corner lifted a centimetre clear of the paint and holding there [STYLE] Avoid: [NEG]
+- `G002.png`
+A small hand entering from the bottom edge of frame and closing on the free corner of a taped blank sheet, shot from the side at thirty centimetres, the rest of the child outside the frame and the painted door filling everything else [STYLE] Avoid: [NEG]
+- `G003.png`
+The same painted door twenty minutes later, bare except for two strips of adhesive tape and the two torn white corners still held under them, shot dead on from one metre in the same flat overcast light [STYLE] Avoid: [NEG]
+- `G004.png`
+A hundred metres of open-air walkway on a two-storey brick block, shot from waist height at one end with a long lens so the identical closed doors stack and compress into one another, a single small pale rectangle of paper on a door far down the line, nobody on it, eleven in the morning [STYLE] Avoid: [NEG]
+- `G005.png`
+Two wooden chairs facing each other across a plain table in a bare room, one of them pushed back at an angle, a jug of water sweating between them, shot from the open doorway in cold north light [STYLE] Avoid: [NEG]
+
+### OP（15秒・4枚・`G006`–`G009`）— ブランド。無地。
+
+台本51語のみ。ここは**ブランド用の無地素材**で、意味のあるモチーフを消費しない。
+
+- `G006.png`
+A flat expanse of painted breeze-block wall filling the frame, shot square on in even overcast light, a single hairline crack running from the top edge to the bottom [STYLE] Avoid: [NEG]
+- `G007.png`
+The torn edge of a sheet of ordinary paper at extreme magnification, lit from one side so the raised fibres throw their own small shadows, plain grey ground behind [STYLE] Avoid: [NEG]
+- `G008.png`
+Weathered brick in hard raking side light at the end of the afternoon, the mortar joints picked out in relief, no window and no corner of the building in frame [STYLE] Avoid: [NEG]
+- `G009.png`
+A painted door surface filling the frame from twenty centimetres, the paint chipped through to the primer in two places, one dry rectangle of old adhesive residue still showing where something was held there for years [STYLE] Avoid: [NEG]
+
+### ACT_1（1:05–6:45・39枚・`G010`–`G048`）
+
+台本ビート：1975年・公社が3人に手続き開始 → 記録は名前と住所しか残していない（年齢も職も家族も無い）→
+FED（略式占有回復）は速さが目的 → 送達は保安官事務所 → 代執行者は記録上「名前が無い」 →
+一方は3人、他方は住宅公社・郡保安官・州法 → 全部を State がやった → ⟨HELD⟩ だから憲法問題になった →
+"as applied" → 略式立ち退きが人に要求するもの（日付・出廷・仕事を休む・子どもを預ける）→
+その前提が notice → Grannis 1914 / Mullane 1950 → 454.030 の三文 → 三段の梯子 →
+真ん中の段（16歳以上の家族・説明して手渡す＝玄関先の会話）→ 最後の一文（開廷の日時と場所）→
+上告人の説明する梯子 → 3人とも最下段まで行った・玄関先の会話はゼロ → 最高裁はその説明を採らなかった
+
+- `G010.png`
+A low-rise brick public housing development seen from across an open lawn on a flat grey morning, shot from ground level with a long lens so the blocks flatten into a single plane [STYLE] Avoid: [NEG]
+- `G011.png`
+Two parallel brick blocks with a strip of worn grass between them and washing lines strung across it, shot from the gap at one end so the lines run away from the camera, nobody about [STYLE] Avoid: [NEG]
+- `G012.png`
+A view down onto the same development from the rail of an upper walkway, plain cars of the period parked in rows below, morning shadow cutting the frame in half [STYLE] Avoid: [NEG]
+- `G013.png`
+A painted apartment door from three paces back with the open-air walkway running away empty on both sides of it, flat overcast light and no figure anywhere [STYLE] Avoid: [NEG]
+- `G014.png`
+A wire tray of blank forms on a plain municipal counter, shot from the public side at chest height, the room behind it bare and unbranded [STYLE] Avoid: [NEG]
+- `G015.png`
+A metal filing cabinet drawer pulled half open in a dim office, the folders inside plain and unmarked, one shaft of window light lying across the top edges [STYLE] Avoid: [NEG]
+- `G016.png`
+A card index standing open on a desk, shot from directly above, every ruled card in it entirely empty [STYLE] Avoid: [NEG]
+- `G017.png`
+An empty brass frame screwed beside a closed office door where a name plate would sit, nothing in it, shot close and slightly below eye level [STYLE] Avoid: [NEG]
+- `G018.png`
+A kitchen in a modest mid-1970s apartment at eight in the morning, enamel sink, a kettle on the stove, low sun coming through the window and nobody in the room [STYLE] Avoid: [NEG]
+- `G019.png`
+A living room with a worn sofa and drawn curtains, a table lamp on and the room still dim, shot from the doorway, nobody in frame [STYLE] Avoid: [NEG]
+- `G020.png`
+A concrete stoop of two steps with a metal handrail worn shiny by use, the door beyond it shut, shot from the walkway at knee height [STYLE] Avoid: [NEG]
+- `G021.png`
+A desk diary lying open on a plain office desk with both pages blank, half the block of pages turned over, shot from above in flat fluorescent light [STYLE] Avoid: [NEG]
+- `G022.png`
+A trolley of thin case folders standing in a plain corridor, every cover blank, shot from the far end so the corridor runs away behind it [STYLE] Avoid: [NEG]
+- `G023.png`
+A clipboard held at waist height with a blank form under the clip and a pen pushed through it, shot from just over the holder's shoulder, no face in frame [STYLE] Avoid: [NEG]
+- `G024.png`
+A plain sedan of the period at the kerb beside a brick block with the driver's door standing open, shot from the walkway above it, nobody visible [STYLE] Avoid: [NEG]
+- `G025.png`
+A stack of blank papers held flat under a rubber band on a worn vinyl car seat, shot from the open passenger door in hard midday light [STYLE] Avoid: [NEG]
+- `G026.png`
+A gloved hand holding a folded blank sheet flat against a painted door, plain dark sleeve, shot from the side at close range, no face and no cuff markings [STYLE] Avoid: [NEG]
+- `G027.png`
+The empty driver's seat of a period sedan seen through the open door, the vinyl split along one seam and the stuffing showing [STYLE] Avoid: [NEG]
+- `G028.png`
+A plain dark coat hanging alone on a hook in a bare municipal room, the wall behind it grubby at shoulder height, shot square on [STYLE] Avoid: [NEG]
+- `G029.png`
+A wide low view of the brick development with a plain civic office block rising beyond its rooflines, shot in the last flat light before dusk [STYLE] Avoid: [NEG]
+- `G030.png`
+A public counter of the period with its shutter pulled down and a worn wooden ledge in front of it, one overhead strip light still on, nobody there [STYLE] Avoid: [NEG]
+- `G031.png`
+A statute volume closed on a desk, the boards plain and the spine bare, shot at a low angle so the fore-edge fills the lower half of the frame [STYLE] Avoid: [NEG]
+- `G032.png`
+A civic corridor of the period with frosted glass doors down one side, shot straight down its length from the far end, nobody in it [STYLE] Avoid: [NEG]
+- `G033.png`
+A board of hooks holding four worn key rings with most of the hooks empty, shot square on in flat light [STYLE] Avoid: [NEG]
+- `G034.png`
+An outdoor stairwell of poured concrete seen from the bottom step looking up, the treads chipped and the daylight blowing out at the top [STYLE] Avoid: [NEG]
+- `G035.png`
+A communal stairwell landing of poured concrete with a low wall, one shaft of flat daylight crossing it at an angle, nobody on it [STYLE] Avoid: [NEG]
+- `G036.png`
+A heavy stone doorway of a public building shot from outside from six paces in flat winter daylight, the doors shut, the stonework plain and unmarked [STYLE] Avoid: [NEG]
+- `G037.png`
+An open book resting on a plain reading stand under a single lamp, the print dissolved to soft grey banding with no readable forms [STYLE] Avoid: [NEG]
+- `G038.png`
+A calendar on a kitchen wall with its grid blank and unreadable, low afternoon light crossing it from the left [STYLE] Avoid: [NEG]
+- `G039.png`
+A bus stop shelter on an ordinary city street at dawn, empty, the road wet and the sky still blue-grey [STYLE] Avoid: [NEG]
+- `G040.png`
+A time clock on a workplace wall with its face blank and a rack of plain cards beside it, shot square on under a bare bulb [STYLE] Avoid: [NEG]
+- `G041.png`
+A pair of very small shoes set side by side under a kitchen chair, shot from floor level with the room falling out of focus behind them [STYLE] Avoid: [NEG]
+- `G042.png`
+An empty chair drawn up to a plain table in a bare room with the table cleared, shot from the far side in flat window light [STYLE] Avoid: [NEG]
+- `G043.png`
+A single sheet of plain paper lying alone at the centre of a wide bare wooden floor, shot from standing height looking straight down [STYLE] Avoid: [NEG]
+- `G044.png`
+An old bound report open flat under a desk lamp late at night, the print dissolved to soft grey banding, the rest of the room dark [STYLE] Avoid: [NEG]
+- `G045.png`
+A single page held up at an angle in one hand against a window, the print reduced to three soft grey bands, the daylight coming through the sheet [STYLE] Avoid: [NEG]
+- `G046.png`
+An open front doorway seen from inside a modest apartment with flat daylight beyond it and nobody standing in it, shot from the dim end of the hall [STYLE] Avoid: [NEG]
+- `G047.png`
+A modest apartment interior in the middle of a working day, the kettle cold, the chairs pushed in, the curtains open, a hard slab of light on the floor and nobody there [STYLE] Avoid: [NEG]
+- `G048.png`
+A walkway of identical closed doors at midday with three of them carrying a small pale rectangle of paper, shot from waist height at a shallow angle so the three read as a run [STYLE] Avoid: [NEG]
+
+### ACT_2（6:45–10:30・27枚・`G049`–`G075`）
+
+台本ビート：脚注の定義（画鋲・粘着テープ・その他の手段）→ その機構で市民は告知された →
+上告人自身の順序 → 「留守なら、相当の割合でそうだが、掲示が直ちに続く」 → forthwith・同じ訪問 →
+「二度目の試みの定めが無い」 → 翌朝も5時以降も週末も無い → 「上告人の説明を採らない」 →
+⟨HELD⟩ 梯子には段が一つしか無かった → 【リセットビート：通路を4秒ホールド】 →
+"a good percentage" は上告人自身の見積もり → 火曜の午前11時にドアの向こうにいる人 →
+それでも掲示自体は違憲ではない（多くの場合むしろ singularly appropriate）→
+「所有者は自分の物件を見張るものだ」 → 問いは狭まる：この建物の、このドアで、紙は読まれるまで残ったか
+
+- `G049.png`
+Extreme close on a brass drawing pin driven through paper into painted wood, shot at ten centimetres, the head bright and the paint split in a star around it [STYLE] Avoid: [NEG]
+- `G050.png`
+A box of brass drawing pins tipped over on a car seat with the pins spilled across the worn vinyl, hard sun coming through the windscreen [STYLE] Avoid: [NEG]
+- `G051.png`
+A roll of adhesive tape standing on end on a car dashboard with its cut end lifted and curling, shot at twenty centimetres against a blown-out windscreen [STYLE] Avoid: [NEG]
+- `G052.png`
+A strip of adhesive tape pulled taut between two fingers and a thumb, shot at close range against a plain dark ground, no face in frame [STYLE] Avoid: [NEG]
+- `G053.png`
+A drawing pin, a short strip of tape and a bent wire laid side by side on a plain grey surface, shot from directly above in even light [STYLE] Avoid: [NEG]
+- `G054.png`
+A thumb pressing the corner of a blank sheet flat against a painted door, shot at fifteen centimetres, no face and nothing else in frame [STYLE] Avoid: [NEG]
+- `G055.png`
+A knuckle arrested a few centimetres from a painted door, shot from the side at close range, no face and no body beyond the forearm [STYLE] Avoid: [NEG]
+- `G056.png`
+A doorbell push worn smooth in its cracked plastic surround, shot at fifteen centimetres, nothing written beside it [STYLE] Avoid: [NEG]
+- `G057.png`
+The gap under a closed door seen from outside at floor level with the camera resting on the concrete, darkness beyond it [STYLE] Avoid: [NEG]
+- `G058.png`
+Two hands pressing tape onto the top corners of a blank sheet against a painted door, shot from just behind and above the hands, no face and no sleeve markings [STYLE] Avoid: [NEG]
+- `G059.png`
+The same door two seconds later with the hands gone and the blank sheet flat against the paint, shot dead on from one metre [STYLE] Avoid: [NEG]
+- `G060.png`
+A strip of adhesive tape peeling away from a painted door with half a blank sheet hanging from it, shot from the side so the paper reads as one curl of white against the flat paint [STYLE] Avoid: [NEG]
+- `G061.png`
+The rear of a plain period sedan pulling away along a kerb beside a brick block, shot from the walkway with a slow shutter so the car smears and the block stays sharp [STYLE] Avoid: [NEG]
+- `G062.png`
+A wristwatch on a forearm held over a steering wheel, the dial blank and unreadable, shot from the passenger seat in flat midday light [STYLE] Avoid: [NEG]
+- `G063.png`
+An open-air walkway at eleven in the morning with every door shut, hard overhead light and short black shadows under each threshold [STYLE] Avoid: [NEG]
+- `G064.png`
+The same painted door in the blue light twenty minutes before sunrise, the pale rectangle of paper already on it, everything else still dark [STYLE] Avoid: [NEG]
+- `G065.png`
+The same painted door after dark under a single walkway bulb, the paper a hard white shape in the pool of light, nobody on the walkway [STYLE] Avoid: [NEG]
+- `G066.png`
+A wooden stepladder standing against a bare wall with only one rung left in its frame, shot square on in flat light [STYLE] Avoid: [NEG]
+- `G067.png`
+A long open-air concrete walkway held straight on and centred from the middle of its width, everything still, flat overcast light, no figure anywhere in it [STYLE] Avoid: [NEG]
+- `G068.png`
+A page of a brief lying at an angle on a desk with one phrase underlined in pencil, the print dissolved to soft grey banding [STYLE] Avoid: [NEG]
+- `G069.png`
+An industrial laundry room with the machines tumbling and nobody attending them, shot from the doorway through the steam [STYLE] Avoid: [NEG]
+- `G070.png`
+A cleaner's trolley parked in an office corridor at night, shot from the far end with only the emergency lighting on [STYLE] Avoid: [NEG]
+- `G071.png`
+A queue rope threaded between posts in a plain civic waiting area with the chairs behind it empty, shot at the height of the rope [STYLE] Avoid: [NEG]
+- `G072.png`
+A bed with the covers thrown back in a curtained room in flat daylight, nobody in it, shot from the doorway [STYLE] Avoid: [NEG]
+- `G073.png`
+The front door of an ordinary suburban house with a blank sheet taped neatly to it and a clipped hedge beside the step, shot from the path in flat daylight [STYLE] Avoid: [NEG]
+- `G074.png`
+A hand turning a key in a plain cylinder lock, shot at twenty centimetres from the side, no face in frame [STYLE] Avoid: [NEG]
+- `G075.png`
+A painted door shot dead on in flat light and filling the frame with nothing at all on it, the paint sound and freshly washed [STYLE] Avoid: [NEG]
+
+### ACT_3（10:30–15:10・32枚・`G076`–`G107`）
+
+台本ビート：記録は送達人自身の**証言録取**でできている → 1人目「子どもが剥がす問題？ ああ、さんざん困った」 →
+「見たことは？ 剥がすのを見て、貼り直せと言った。あの子らは分かっていない」 → 「大半は Village West だった」 →
+2人目（Carter Bacon）「多くはない、一箇所で数回」 → 同じ開発名が別々の録取で出る →
+3人目「公社が剥がされると言うので、いつも高い位置に貼っていた」 → ⟨HELD⟩「公社がそう言った」 →
+剥がれると知らせた上で貼り続けた → 最高裁の要約「送達人はよく承知していた／稀ではない頻度で撤去された」 →
+「よく承知していた」の2語 → 割合は書かなかった（誰も数えていない）→
+反対側の証言もある：Gilbert Brutscher「6か月、一度も見ていない」 → 同じ仕事・同じドア・逆の答え →
+別の送達人「小さい子の手が届かない高さに貼っていた／苦情も見たことも無い」 →
+一握りの男たちが別々の建物で別々に見た → 住人側の主張は狭い（見ていない・占有令状で初めて知った・
+控訴期間は過ぎていた）→「claim」「stated」という動詞 → ⟨HELD⟩ 誰もその点を審理していない →
+サマリージャジメントで来た事件・確定しているのは慣行のほう
+
+- `G076.png`
+A deposition room: a plain table with two chairs facing each other across it and a jug of water between them, shot from the open doorway in cold north light, nobody in the room [STYLE] Avoid: [NEG]
+- `G077.png`
+A stenotype machine on its stand with a ribbon of blank paper folding into a wire basket, shot from above and behind the keys [STYLE] Avoid: [NEG]
+- `G078.png`
+A reel-to-reel tape recorder on a plain table with the reels turning and the spools unmarked, shot at close range in low tungsten light [STYLE] Avoid: [NEG]
+- `G079.png`
+A microphone on a short stand on a plain table pointing across at an empty chair, shot at the level of the tabletop [STYLE] Avoid: [NEG]
+- `G080.png`
+Two working hands folded together on a table in a plain room with the shirt cuffs pushed back, shot from directly across the table, no face in frame [STYLE] Avoid: [NEG]
+- `G081.png`
+A glass of water half drunk on a table beside a closed unmarked folder, shot at tabletop level with the room falling away out of focus behind [STYLE] Avoid: [NEG]
+- `G082.png`
+A small hand at the very edge of frame reaching up toward the bottom corner of a taped sheet, shot from the side at door height, no face and no body visible [STYLE] Avoid: [NEG]
+- `G083.png`
+A painted door shot at knee height so the taped sheet on it reads from a small child's eye level, the sheet centred and the ceiling of the walkway leaning in above [STYLE] Avoid: [NEG]
+- `G084.png`
+Two torn paper corners still held under strips of tape on an otherwise bare painted door, shot dead on at forty centimetres [STYLE] Avoid: [NEG]
+- `G085.png`
+A sheet of plain paper lying face down on a concrete step below a closed door with one edge dark with damp, shot from standing height [STYLE] Avoid: [NEG]
+- `G086.png`
+Torn scraps of white paper turning over on concrete in the wind, shot with a slow shutter so they smear against the sharp ground [STYLE] Avoid: [NEG]
+- `G087.png`
+A hand pressing a blank sheet back onto a door higher than before with the arm at full stretch, shot from below and behind, no face [STYLE] Avoid: [NEG]
+- `G088.png`
+A group of small bicycles left against a brick wall in late afternoon light, no children present [STYLE] Avoid: [NEG]
+- `G089.png`
+A ball at rest in the corner where two concrete surfaces meet, shot at ground level with the corner running away behind it [STYLE] Avoid: [NEG]
+- `G090.png`
+A skipping rope lying in a loose loop on a concrete walkway, shot from standing height looking straight down [STYLE] Avoid: [NEG]
+- `G091.png`
+Chalk marks faded almost to nothing on a concrete slab, a hopscotch grid half washed away by rain, shot from above in flat light [STYLE] Avoid: [NEG]
+- `G092.png`
+Faint small handprints on a painted wall at low height, shot at a raking angle so they catch the light and stand out from the flat paint [STYLE] Avoid: [NEG]
+- `G093.png`
+A second low brick housing block seen across a patch of open ground, identical to the first, under a flat white sky [STYLE] Avoid: [NEG]
+- `G094.png`
+The same second block from the opposite corner in different weather, the grass soaked and the light gone dull [STYLE] Avoid: [NEG]
+- `G095.png`
+A housing office of the period: a plain counter with a wooden gate set into it, shot from the public side, nobody behind it [STYLE] Avoid: [NEG]
+- `G096.png`
+A telephone handset lying off its cradle on a plain desk with the cord hanging straight down out of frame, shot close in tungsten light [STYLE] Avoid: [NEG]
+- `G097.png`
+The same painted door with the blank sheet placed unusually high on it, well above the handle, shot dead on from two metres [STYLE] Avoid: [NEG]
+- `G098.png`
+An arm at full stretch above head height with the flat of the hand against a painted door, shot from below so the reach fills the frame, no face [STYLE] Avoid: [NEG]
+- `G099.png`
+A bound transcript closed on a table, its cover plain, shot at a low angle so the block of pages fills the lower half of the frame [STYLE] Avoid: [NEG]
+- `G100.png`
+A stack of bound transcripts on a shelf with every spine plain, shot square on in flat library light [STYLE] Avoid: [NEG]
+- `G101.png`
+A single transcript page at an angle with one paragraph marked by a pencil line, the print dissolved to soft grey banding [STYLE] Avoid: [NEG]
+- `G102.png`
+Two identical unmarked folders lying side by side on a table, one open and one shut, shot from directly above in even light [STYLE] Avoid: [NEG]
+- `G103.png`
+Six blank pages fanned out across a plain desk, shot from above in flat window light [STYLE] Avoid: [NEG]
+- `G104.png`
+A doormat with nothing on it, shot from directly above at standing height [STYLE] Avoid: [NEG]
+- `G105.png`
+The inside face of an apartment door with nothing on it, the paint scratched in an arc near the handle, the hallway behind the camera dim [STYLE] Avoid: [NEG]
+- `G106.png`
+An interior hallway seen from the back of an empty apartment with the front door standing wide open onto flat daylight, nobody in frame [STYLE] Avoid: [NEG]
+- `G107.png`
+An empty chair pushed back from a table at an angle as if just left, the rest of the room bare, shot from the far side of the table [STYLE] Avoid: [NEG]
+
+### ACT_4（15:10–20:05・33枚・`G108`–`G140`）
+
+台本ビート：州裁判所で再開する手立てが無い（"thus without recourse"・叩くドアがもう無い）→
+連邦地裁へ・§1983 のクラスアクション（レコンストラクション期の法律）→ 求めたのは金でなく宣言的・差止的救済 →
+Mullane の最低基準 → クラスアクションである理由（同じやり方の全てのドア）→ **敗訴** →
+未公刊の判決 → 依拠したのは1909年の Weber（推定が全部の仕事をしていた）→
+それでも地裁は「状況は変わった／争いのない証言／しばしば撤去される」と認めた → それでも合憲とした →
+「最後の手段は本当に最後の手段だ」という同じ仮定 → 第6巡回区が破棄し Weber を覆した
+（「掲示が郵便より確実だった時代はあったかもしれない。その時代は過ぎた」）→
+差し戻し（決着ではない）→ 費用の算術「過度の負担にならない・費用は最小限」 →
+ニューヨークの対応規定（掲示のときは郵送も）→ 切手一枚の話・別の州はもう買っていた →
+1981年に管轄・1982年2月23日弁論・5月17日判決・第81-341号 → 弁論した人々と法廷助言者 →
+上告人の譲歩：滞納家賃なら人的送達が必要だった → 金なら人を探す・家ならそうしない →
+⟨HELD⟩ 州は、あなたの金を欲しいときのほうが、家を欲しいときより丁寧にあなたを探した
+
+- `G108.png`
+A heavy public-building door closed at the top of a flight of stone steps, shot from the pavement in flat daylight, the stonework plain and worn at the nosing [STYLE] Avoid: [NEG]
+- `G109.png`
+A stone stair rail and worn treads shot from the bottom step looking up, nobody on them, the light dropping away at the top [STYLE] Avoid: [NEG]
+- `G110.png`
+A wire out-tray on a desk with a single closed folder in it, the office beyond it empty and the overhead light off [STYLE] Avoid: [NEG]
+- `G111.png`
+A federal courthouse exterior in flat daylight with wide steps and plain columns, shot from across the street with a long lens, the stonework bare [STYLE] Avoid: [NEG]
+- `G112.png`
+A typewriter on a desk with a sheet in the platen, the typing dissolved to soft grey banding, shot at keyboard level so the keys run away to the paper [STYLE] Avoid: [NEG]
+- `G113.png`
+A carbon sheet lifted away from a typed page by two fingers, both dissolved to soft grey banding, shot from the reader's side [STYLE] Avoid: [NEG]
+- `G114.png`
+A nineteenth-century bound statute volume open flat with the pages foxed brown at the edges, the print dissolved to soft grey banding [STYLE] Avoid: [NEG]
+- `G115.png`
+A legal brief squared on a desk with a paperclip on one corner and the cover plain, shot from above in raking lamplight [STYLE] Avoid: [NEG]
+- `G116.png`
+A stack of briefs tied together with cotton tape, every cover plain, shot from the side so the string bites down into the paper [STYLE] Avoid: [NEG]
+- `G117.png`
+A row of law reports on a shelf with the spines identical and plain, shot square on and filling the frame edge to edge [STYLE] Avoid: [NEG]
+- `G118.png`
+A single volume pulled half out of a shelf of identical volumes, shot slightly below its level so it juts toward the camera [STYLE] Avoid: [NEG]
+- `G119.png`
+A long view down a whole facade of identical apartment doors receding to a vanishing point, shot with a long lens so the doors stack into one another [STYLE] Avoid: [NEG]
+- `G120.png`
+A high view over the rooflines of a housing development with the blocks repeating away under flat overcast, shot from an upper landing [STYLE] Avoid: [NEG]
+- `G121.png`
+A reading desk under a lamp in a library at night with one closed book on it, shot from six paces back so the dark surrounds the pool of light, nobody there [STYLE] Avoid: [NEG]
+- `G122.png`
+An unmarked folder closed on a desk with the lamp beside it switched off, shot in the last of the window light [STYLE] Avoid: [NEG]
+- `G123.png`
+A very old bound reporter lying closed on a table, the boards scuffed through at the corners and the spine plain, shot at a low angle [STYLE] Avoid: [NEG]
+- `G124.png`
+A brick tenement facade of the 1900s in flat light with plain windows, a sepia cast across the whole frame [STYLE] Avoid: [NEG]
+- `G125.png`
+A horse-drawn delivery cart of the 1900s stopped at a kerb, blurred with movement while the buildings behind stay sharp, sepia cast [STYLE] Avoid: [NEG]
+- `G126.png`
+Dust turning slowly in a shaft of light above a closed book on a library table, shot against the light [STYLE] Avoid: [NEG]
+- `G127.png`
+A page with one paragraph bracketed in pencil, the print reduced to soft grey banding, shot at twenty centimetres [STYLE] Avoid: [NEG]
+- `G128.png`
+Two pages of a bound volume held apart by a thumb, both dissolved to soft grey banding, shot from the reader's side under a lamp [STYLE] Avoid: [NEG]
+- `G129.png`
+A wooden stepladder lying on its side on a bare floor, shot from floor level down the length of it [STYLE] Avoid: [NEG]
+- `G130.png`
+An appellate courthouse exterior in plain mid-century stone, wet from rain, shot from the pavement opposite, the facade bare [STYLE] Avoid: [NEG]
+- `G131.png`
+A plain envelope and a taped blank sheet lying side by side on a plain table, shot from directly above in even light [STYLE] Avoid: [NEG]
+- `G132.png`
+A file being pushed back across a wooden counter by a hand, shot from the far side at counter height, no face in frame [STYLE] Avoid: [NEG]
+- `G133.png`
+A bench along the wall of a public corridor with one coat left on it, shot from the far end so the corridor runs to it, nobody waiting [STYLE] Avoid: [NEG]
+- `G134.png`
+A sheet of postage stamps on a desk with the printing dissolved to flat colour and no readable forms, shot at close range [STYLE] Avoid: [NEG]
+- `G135.png`
+A postal sorting frame of pigeonholes with most of the compartments empty, shot square on in flat overhead light [STYLE] Avoid: [NEG]
+- `G136.png`
+A mail sack open on a floor with plain envelopes spilling from it, none of them readable, shot from standing height [STYLE] Avoid: [NEG]
+- `G137.png`
+A plain white envelope resting on a doormat, shot from directly above with the daylight coming in from the door behind it [STYLE] Avoid: [NEG]
+- `G138.png`
+The marble steps of a great public building shot straight on from the bottom in flat winter light, empty and bare [STYLE] Avoid: [NEG]
+- `G139.png`
+An empty lectern in a plain wood-panelled room with no raised bench and no public seating, shot from exactly where a speaker would stand [STYLE] Avoid: [NEG]
+- `G140.png`
+Coins and folded currency counted out on a plain counter beside a closed unmarked ledger, the denominations not readable, shot from above [STYLE] Avoid: [NEG]
+
+### ACT_5（20:05–28:20・55枚・`G141`–`G195`）
+
+台本ビート：Brennan 判事の法廷意見・基準は1950年の信託受益者通知の事件から（"reasonably calculated,
+under all the circumstances"）→ 二つの条件・この事件は後者に生きる → 「重大な財産的利益＝住み続ける権利を
+奪われた」 → 十分性は「知らせる能力」で試される・「通常営まれている人の営みへの実際の適用」で判断する →
+転回：「このドアに貼るだけでは最低基準を満たさない／相当数の事案で実際の告知に失敗する」 →
+⟨HELD⟩「信頼できる手段とは言えない」 → 一度会えなかったことは放棄を示さない →
+郵便については比較的・慎重に（効率的で安価／目的物がそのまま宛先である）→ 取ろうとした部屋こそ手紙の届く場所 →
+「無効な手段への継続的・排他的依拠」 → 判示（最終命令の前に十分な告知を欠いた＝適正手続なしの財産剥奪）→
+誤解される部分：掲示を禁じていない（"we hold only that…"）→ 郵便を命じてもいない・
+「郵便が理想の手段からほど遠いことを認めてすら」 → 最も遠くまで行っても「掲示＋郵送のほうが憲法上好ましい」 →
+事件は終わっていない（差し戻しの是認・3人が鍵を持って出てきたわけではない・記録はそこで止まる）→
+反対意見（O'Connor・首席判事・Rehnquist／票数は書かれていない）→
+「今日、法廷は憲法が郵便を選好すると判示する／郵便の速度と信頼性についての証拠は皆無なのに」 →
+「唯一の根拠はケンタッキーの一握りの送達人の乏しく矛盾した証言／この脆弱な基礎で立法府の仕事を覆す」 →
+「下級審判決以外に一件も引用していない」 → 少なくとも11州 → 同じ三つの節を、一方は条文で、他方は録取で読んだ →
+「郵便受けが盗人に荒らされるのは周知の事実だ／掲示は少なくともドアまでは届いたことを保証する」 →
+多数意見は郵便が優れていることを証明していない・このドアが劣ることを証明した →
+反対意見の第二の攻撃（FED は迅速性が設計そのもの）→ 多数意見の答え「借主の視点からは、相当数の事案で
+実際の告知を与えない送達が適切とは考えにくい、その手続が何と呼ばれていようと」 →
+対人／対物の分類を決めることを拒んだ → ⟨HELD⟩ 分類は問いではない・紙が何をしたかが問い →
+反対意見の最後は制度論 → 多数意見の一行「反対意見は憲法上の基準を読み違えている」 →
+⟨HELD⟩ 二つの意見はそこで話すのをやめる
+
+- `G141.png`
+A marble corridor of a great public building, plain and empty, shot straight down its length in cold flat light, the walls bare [STYLE] Avoid: [NEG]
+- `G142.png`
+A bound volume of mid-century reports open flat under a lamp, the print dissolved to soft grey banding, the desk around it dark [STYLE] Avoid: [NEG]
+- `G143.png`
+A heavy vault door standing part open in a plain stone room, the wheel and dial plain and unreadable, shot from four paces in even light [STYLE] Avoid: [NEG]
+- `G144.png`
+A ruled ledger lying open on a desk with the columns empty and the entries dissolved to soft grey, shot from above [STYLE] Avoid: [NEG]
+- `G145.png`
+A plain brass balance at rest and dead level on a bare wooden surface with no ornament on it, shot at its own height so the beam runs across the frame [STYLE] Avoid: [NEG]
+- `G146.png`
+A set of house keys lying on a bare kitchen counter, shot at thirty centimetres in flat window light [STYLE] Avoid: [NEG]
+- `G147.png`
+A lit window of a brick block at dusk with the curtains drawn and a single shadow crossing them, shot from the ground with a long lens [STYLE] Avoid: [NEG]
+- `G148.png`
+The hallway of an occupied apartment with coats on hooks and shoes by the door and a warm lamp on, shot from just inside the front door, nobody in frame [STYLE] Avoid: [NEG]
+- `G149.png`
+An open-air walkway in the middle of the working day with every door shut, hard light and hard shadow, shot from one end at eye level [STYLE] Avoid: [NEG]
+- `G150.png`
+A blank sheet taped to a painted door shot dead on and centred from one metre, flat and unmarked, filling the frame [STYLE] Avoid: [NEG]
+- `G151.png`
+The same door with the sheet gone and two strips of tape left behind on the paint, identical framing and identical light [STYLE] Avoid: [NEG]
+- `G152.png`
+A single sheet of plain paper falling through still air against a dark neutral ground, caught halfway down with the edges just beginning to soften [STYLE] Avoid: [NEG]
+- `G153.png`
+An empty open-air walkway at first light with every door bare, everything still, shot from waist height at one end [STYLE] Avoid: [NEG]
+- `G154.png`
+A bed made up tight in a curtained room at midday, nobody in it, shot from the doorway with the light coming through the curtain [STYLE] Avoid: [NEG]
+- `G155.png`
+A kettle standing cold on a gas ring in a small kitchen with the window bright behind it, shot at counter height against the light [STYLE] Avoid: [NEG]
+- `G156.png`
+An adult hand lifting a coat down from a hook beside a front door, shot from the side at shoulder height, no face in frame [STYLE] Avoid: [NEG]
+- `G157.png`
+A bank of plain apartment mail boxes on a wall with every door shut and no readable markings on any of them, shot square on and close [STYLE] Avoid: [NEG]
+- `G158.png`
+An unbranded postal van of the period stopped at a kerb with its doors shut, shot from across the road in flat light [STYLE] Avoid: [NEG]
+- `G159.png`
+A hand posting a plain envelope into a public post box, shot from behind and to one side, no face in frame [STYLE] Avoid: [NEG]
+- `G160.png`
+A public post box on a street corner in the rain, shot from four paces with the road behind it going soft [STYLE] Avoid: [NEG]
+- `G161.png`
+A plain envelope halfway through a post slot in a door, shot from inside a dim hallway with the daylight cutting round the edges of it [STYLE] Avoid: [NEG]
+- `G162.png`
+A front door seen from inside with a plain envelope resting on the mat below it and daylight under the door, shot from halfway down the hall [STYLE] Avoid: [NEG]
+- `G163.png`
+A painted door carrying a blank taped sheet with an unopened plain envelope on the mat below it, shot from three paces in flat light [STYLE] Avoid: [NEG]
+- `G164.png`
+A single strip of adhesive tape alone on a bare painted door with nothing held under it, shot dead on at forty centimetres [STYLE] Avoid: [NEG]
+- `G165.png`
+An interior door standing open onto an empty room in flat daylight, shot from the dim side of the threshold [STYLE] Avoid: [NEG]
+- `G166.png`
+An empty room with pale rectangles on the wall where pictures used to hang, shot from a corner in flat afternoon light [STYLE] Avoid: [NEG]
+- `G167.png`
+A bare mattress on a bedstead in an otherwise empty room, shot from the doorway [STYLE] Avoid: [NEG]
+- `G168.png`
+A kitchen with the cupboard doors standing open and every shelf empty, shot square on from the middle of the room [STYLE] Avoid: [NEG]
+- `G169.png`
+A blank sheet of paper being folded in half by two hands with both faces of it plain, shot from directly above the hands [STYLE] Avoid: [NEG]
+- `G170.png`
+The same sheet unfolded and creased, lying flat on a plain table, shot from directly above [STYLE] Avoid: [NEG]
+- `G171.png`
+A pen held above a blank page and not touching it, shot from the side at close range, no face in frame [STYLE] Avoid: [NEG]
+- `G172.png`
+A wooden desk drawer pulled open to show plain unmarked stationery, shot from above and slightly in front [STYLE] Avoid: [NEG]
+- `G173.png`
+A plain envelope in one hand and a blank taped sheet in the other, held at the same height against a plain ground, no face in frame [STYLE] Avoid: [NEG]
+- `G174.png`
+A file being returned to a gap on an otherwise full shelf, shot from the side at shelf height [STYLE] Avoid: [NEG]
+- `G175.png`
+A front door seen from deep inside a dim apartment, the band of daylight beneath it the only bright thing in the frame [STYLE] Avoid: [NEG]
+- `G176.png`
+A single unmarked folder lying alone in the middle of a wide empty table, shot from one end so the tabletop runs away to it [STYLE] Avoid: [NEG]
+- `G177.png`
+Three empty chairs in a row against a plain panelled wall, shot square on in even light [STYLE] Avoid: [NEG]
+- `G178.png`
+A page with the lower third left blank below the print, the print dissolved to soft grey banding, shot from above [STYLE] Avoid: [NEG]
+- `G179.png`
+A plain white envelope alone on a wide dark surface, lit hard from one side so it throws a long shadow across the frame [STYLE] Avoid: [NEG]
+- `G180.png`
+An empty postal sorting hall at night with the frames of pigeonholes receding away, nobody working, shot down the middle aisle [STYLE] Avoid: [NEG]
+- `G181.png`
+A thin sheaf of loose pages held edge on between finger and thumb with very few leaves in it, shot against a plain dark ground [STYLE] Avoid: [NEG]
+- `G182.png`
+A single wooden chair alone in an empty plain room lit from one high window, shot from the far corner [STYLE] Avoid: [NEG]
+- `G183.png`
+An empty legislative chamber with the seats in curved rows and the walls bare, shot from the back of the highest row [STYLE] Avoid: [NEG]
+- `G184.png`
+A shelf of bound reporters with one gap in the row where no volume stands, shot square on and close [STYLE] Avoid: [NEG]
+- `G185.png`
+Eleven plain pebbles laid out in a line on a bare wooden surface, shot from directly above in even light [STYLE] Avoid: [NEG]
+- `G186.png`
+A plain outline map lying on a table with no borders drawn on it and nothing written, shot from above [STYLE] Avoid: [NEG]
+- `G187.png`
+A page of three clauses reduced to three soft grey bands, held at an angle in one hand against the light from a window [STYLE] Avoid: [NEG]
+- `G188.png`
+A mail box with its door forced and hanging open and nothing inside it, shot at close range from slightly below [STYLE] Avoid: [NEG]
+- `G189.png`
+Plain envelopes scattered loose on the ground beneath a bank of mail boxes, shot from standing height [STYLE] Avoid: [NEG]
+- `G190.png`
+A hand reaching into an empty mail box, shot from the side at its own height, no face in frame [STYLE] Avoid: [NEG]
+- `G191.png`
+A single sheet pinned flat against a painted door by a gust of wind with one corner torn free and standing out from the paint, shot dead on [STYLE] Avoid: [NEG]
+- `G192.png`
+An open-air walkway seen from the far end at dusk with one pale rectangle still on a door, shot with a long lens so the doors compress toward it [STYLE] Avoid: [NEG]
+- `G193.png`
+A trolley of thin case folders caught mid-movement in a plain corridor, shot with a slow shutter so the trolley smears and the corridor stays sharp [STYLE] Avoid: [NEG]
+- `G194.png`
+A sorting table with two empty wooden trays side by side and one plain sheet lying between them belonging to neither, shot from directly above [STYLE] Avoid: [NEG]
+- `G195.png`
+Two closed books lying face to face on a table and touching along their fore-edges, shot at tabletop level with bare wood behind each of them [STYLE] Avoid: [NEG]
+
+### ENDING（28:20–30:00・14枚・`G196`–`G209`）
+
+台本ビート：残ったのは評判より小さく救済より長持ちする「方法」 → 告知したと扱う前に、
+その伝え方が実際に機能するかを問え → 答えは証拠の問題・ここでは7〜8人の男の巡回と、公社の一言 →
+条文に対して置くには非常に小さな紙の山（反対意見はそう言った）→ それでも他に何も無かった →
+条文が書いた梯子は三段・登った男たちは一段と言った → 法廷は実際にドアまで歩いた者の記述を採った →
+【コールバック：テープの角】 → 1975年のどこかで、代執行者は塗装されたドアにテープを押しつけ、次の住所へ走った →
+紙は敷地上にあった・送達は完了した → その後のすべては、たった一つの仮定から正しく導かれた →
+その紙がまだそこにあるという仮定
+
+**`G206`–`G209` は同一のドア・同一の画角・同一のレンズで、光と時間だけを変えた4枚です。**
+`G209` は `G001`（HOOK冒頭）と同じ構図でなければなりません。ここでループが閉じます。
+
+- `G196.png`
+A wide flat evening sky over the rooflines of a low brick development with no sun visible, shot from the ground so the blocks sit along the bottom edge of the frame [STYLE] Avoid: [NEG]
+- `G197.png`
+An open-air walkway seen end-on with every door bare, flat morning light, shot from the middle of its width at eye level [STYLE] Avoid: [NEG]
+- `G198.png`
+A thin pile of loose pages beside a single thick bound volume on a plain table, the pile far the smaller of the two, shot at tabletop level so the difference in height reads [STYLE] Avoid: [NEG]
+- `G199.png`
+The same thin pile of loose pages alone on the table with the volume gone, identical framing and identical light [STYLE] Avoid: [NEG]
+- `G200.png`
+A wooden stepladder with three rungs standing against a bare wall, shot square on from four paces in flat light [STYLE] Avoid: [NEG]
+- `G201.png`
+The same stepladder close in with only the bottom rung left in place, shot at the height of that one rung [STYLE] Avoid: [NEG]
+- `G202.png`
+A pair of worn work boots at the foot of a concrete stairwell with nobody in them, shot from floor level [STYLE] Avoid: [NEG]
+- `G203.png`
+The torn top corner of a sheet still held under a strip of tape on an otherwise bare painted door, shot at fifteen centimetres in raking light [STYLE] Avoid: [NEG]
+- `G204.png`
+A thumb pressing a strip of adhesive tape flat onto a painted door, shot at fifteen centimetres from the side, no face in frame [STYLE] Avoid: [NEG]
+- `G205.png`
+The rear of a plain period sedan drawing away along a kerb beside a brick block, shot with a slow shutter so the car smears out of the frame [STYLE] Avoid: [NEG]
+- `G206.png`
+A blank sheet taped square and flat to a painted door, shot dead on and centred from one metre, the walkway behind the camera empty [STYLE] Avoid: [NEG]
+- `G207.png`
+The same door at dusk with the sheet still on it and one corner lifted by the wind, identical framing and lens [STYLE] Avoid: [NEG]
+- `G208.png`
+The same door the next morning with the sheet gone and two strips of tape left on the paint, identical framing and lens [STYLE] Avoid: [NEG]
+- `G209.png`
+The same door in full daylight, entirely bare with the tape gone too, framed exactly as the first image of the film [STYLE] Avoid: [NEG]
+
+### PEOPLE（10枚・`G210`–`G219`）— **全員実在しない一般人。顔が判別できてはならない。**
+
+`people_plates_min: 10`。背中・手・シルエットのみ。台本は Linnie Lindsey / Barbara Hodgens / Pamela Ray に
+ついて「三つの名前と共通の住所」以外を何も述べていないので、**特定の誰かに見えてはいけません**。
+
+- `G210.png`
+A woman in her thirties in a plain 1970s coat standing at an apartment door with her back to camera and one hand on the handle, shot from six paces down the walkway, her face not visible [STYLE] Avoid: [NEG]
+- `G211.png`
+The hands of a woman in her fifties holding a folded blank sheet at a kitchen table, shot from directly across the table at tabletop level, no face in frame [STYLE] Avoid: [NEG]
+- `G212.png`
+A man in his forties in plain work clothes seen from behind at the foot of a concrete stairwell, shot from the walkway above and behind him, his face not visible [STYLE] Avoid: [NEG]
+- `G213.png`
+A woman's silhouette against a net curtain seen from inside a dim room, her features not resolvable, shot from the far corner of the room [STYLE] Avoid: [NEG]
+- `G214.png`
+Two adults seated at a kitchen table seen from behind, shoulders and the backs of their heads only, shot from the doorway [STYLE] Avoid: [NEG]
+- `G215.png`
+A pair of working hands at rest on a formica table top, shot from directly above in flat light, no face and no jewellery [STYLE] Avoid: [NEG]
+- `G216.png`
+A woman in a plain dress standing at a window with her back to camera looking out at a brick block, shot from the middle of the room in low afternoon light [STYLE] Avoid: [NEG]
+- `G217.png`
+An adult hand and a child's hand held together at waist height, both cropped at the wrist, shot from the side at close range, no faces in frame [STYLE] Avoid: [NEG]
+- `G218.png`
+A person in an overcoat walking away down an empty open-air walkway, shot from far behind with a long lens so the figure sits small against the run of doors [STYLE] Avoid: [NEG]
+- `G219.png`
+The back of a woman's head and shoulders in a hallway facing an open front door, shot from behind at head height, her face not visible [STYLE] Avoid: [NEG]
+
+### THUMB（3枚・`G220`–`G222`）— サムネ候補。**縦横比は16:9のまま。文字は焼き込まない。**
+
+`thumbnail_candidates_min: 3`。見出しを後乗せするため**上1/3を空ける**こと。
+
+- `G220.png`
+A single blank sheet of paper taped to a plain painted door, shot dead centre and close under hard directional light from the left, the upper third of the frame left clear [STYLE] Avoid: [NEG]
+- `G221.png`
+A woman's silhouette on the inside of a drawn curtain with a pale rectangle of paper visible on the door beside the window, hard side light, the upper third of the frame left clear [STYLE] Avoid: [NEG]
+- `G222.png`
+A torn corner of paper still held under tape on an otherwise bare painted door, shot extreme close under strong contrast, the upper third of the frame left clear [STYLE] Avoid: [NEG]
+
+---
+
+## 5.5 ショート3本のプレートは、この222枚の**内数**です
+
+`SHORTS_SLATE_EP62-65.v001.md` の `short182` / `short183` / `short184` が要求するモチーフを、
+上のプロンプトに1つずつ突き合わせた表です。**ショート用の二度目の発注は出しません。**
+
+**★印のプレートはショートに使うため、主題を画面中央に置くこと。** ショートは 1080×1920 なので、
+16:9 の左右を切り落としても意味が壊れない構図でなければなりません。生成後の目視では、
+**9:16 に切ったサムネイルも並べて確認**してください。端に寄った構図（例：`G082` の画面端の小さな手）は
+ショートに使わず、長尺のみに使います。
+
+### short182「通知は剥がれた。貼っていた男たちは知っていた」
+
+| ショートのビート | プレート | 中央配置 |
+|---|---|---|
+| フック＝frame 0：角の浮いた紙がドアに貼られている | `G001` | ★ |
+| 掲示とは物理的に何か：画鋲 / テープの剥がれ | `G049` `G060` | ★ ★ |
+| 場所：低層レンガの集合住宅 / 同じドアが並ぶ通路 | `G010` `G004` | ★ ★ |
+| 子どもの手が角にかかる / 子どもの目線のドア | `G002` `G083` | ★ ★ |
+| 段の下に落ちた紙 / 風に舞う紙片 | `G085` `G086` | ★ ★ |
+| 手の届かない高さに貼り直す手 / 腕を伸ばしきった手 | `G087` `G098` | ★ ★ |
+| 階段室の踊り場 / 静止した通路 | `G035` `G067` | ★ ★ |
+| 灯った窓のカーテンを横切る影 / 網カーテンのシルエット | `G147` `G213` | ★ ★ |
+| 証言録取の部屋（椅子2脚） / テープで括られた記録の束 | `G076` `G116` | ★ ★ |
+| 落ち：何も貼られていないドア | `G075` | ★ |
+| **loop_join**：素のドア → 紙が戻り角が浮く＝frame 0 | `G209` → `G001` | ★ |
+
+distinct = 19（下限16をクリア）。`G209` と `G001` は**同一画角**で作ること。ループはここで閉じます。
+
+### short183「一度叩いて、留守。それで手続きは終わりだった」
+
+| ショートのビート | プレート | 中央配置 |
+|---|---|---|
+| フック＝frame 0：触れる直前の拳 | `G055` | ★ |
+| ドアから見た無人の通路 / 三歩下がったドア | `G063` `G013` | ★ ★ |
+| ドアの下の隙間（外から）/ 部屋の奥から見た光の帯 | `G057` `G175` | ★ ★ |
+| 真昼の腕時計 / 昼間の無人の部屋 | `G062` `G047` | ★ ★ |
+| 勤務中である痕跡：タイムレコーダー / 洗濯工場 / 清掃台車 | `G040` `G069` `G070` | ★ ★ ★ |
+| 夜勤明けの空のベッド / 夜明けのバス停 | `G072` `G039` | ★ ★ |
+| 空白のカレンダー / 手袋の手が押さえる白紙 | `G038` `G026` | ★ ★ |
+| 紙が貼られる / 記録の棚 / 閉じたドアの前の踏み段 | `G058` `G117` `G020` | ★ ★ ★ |
+| **loop_join**：ドアから見た無人の通路 → 拳が左から再入場 | `G063` → `G055` | ★ |
+
+distinct = 17。
+
+### short184「反対意見の答え＝郵便受けは荒らされる」
+
+| ショートのビート | プレート | 中央配置 |
+|---|---|---|
+| フック＝frame 0：へこんだ郵便受けの列 | `G157` | ★ |
+| こじ開けられた郵便受け / 空の郵便受けに伸びる手 / 散らばる封筒 | `G188` `G190` `G189` | ★ ★ ★ |
+| 玄関マットの封筒 / 郵便車 / 投函する手 / 雨の郵便ポスト | `G137` `G158` `G159` `G160` | ★ ★ ★ ★ |
+| 夜の無人の郵便区分室 / 暗い面に置かれた一通 | `G180` `G179` | ★ ★ |
+| ラベルの無い地図 / 11個の小石 / 無人の議場 | `G186` `G185` `G183` | ★ ★ ★ |
+| 「乏しい証言」＝薄い紙束 / 「一件も引用が無い」＝棚の欠番 | `G181` `G184` | ★ ★ |
+| 準備書面の束 / 紙の上に浮くペン | `G116` `G171` | ★ ★ |
+| 紙と封筒が両方あるドア（多数意見の到達点） | `G163` | ★ |
+| **loop_join**：マットの封筒を手が持ち上げ、背後に郵便受けの列 | `G137` → `G157` | ★ |
+
+distinct = 18。
+
+> **ショート間で共有するプレートは `G116` の1枚のみ**（short182 と short184）。公開は
+> `SHORTS_SLATE` §6 のとおり E+1 / E+4 / E+7 と離れているので `footage_diversity` 上の問題はありません。
+
+---
+
+## 6. 生成後にやること（発注者側）
+
+1. **全222枚をラベル付きコンタクトシートで目視**する。プロンプトIDで選ばない
+   （short60は3枚がプロンプト一覧どおりに選んで別の絵だった）。
+   特に **Q2（紙の上の読める文字）** を全枚数で確認する。紙が写るプレートは約30枚あります。
+2. **HOOKの5枚（`G001`–`G005`）は最初に目視する。** ここが弱ければ他が全部良くても映画は死にます。
+   5枚とも「これは誰の目で、いつ、どの距離から見た絵か」が一目で言えること。言えなければ作り直し。
+3. `episodes/PD-2026-062-greene/episode_spec.v001.json` の `mandatory_stills` は
+   **すでに G001〜G222 の222件で埋まっています**。ID体系を変えないでください。変えると
+   `check_spec_satisfied.py` の唯一の保護が外れます。
+4. 1枚 = 1モーションクリップとして `remotion/public/greene/motion/` に書き出す
+   （i2v または深度パララックス。**ズーム/パンだけは不可**＝紙芝居判定）。
+5. `python scripts/check_episode_inputs.py --slug greene` で
+   **accepted(12) + motion ≥ 234** をレンダー前に確認する。
+6. ショート3本は §5.5 の表のプレートを **9:16 に切って**から `remotion/public/shorts/short<NNN>/` へ
+   コピーし、`gen_depth_maps.py --dir …` を通す。**二度目の画像発注は出しません。**
