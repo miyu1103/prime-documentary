@@ -111,7 +111,7 @@ L5: *"This was 1982, and the Court decided only this case. The full story is on 
 **Plate motifs (≥16, pick off the contact sheet):** a slip of paper taped to a plain door, no readable text (hero) · a thumbtack close · adhesive tape peeling · a low-rise brick housing block in flat daylight · a walkway of identical doors · a doorframe at child height · a hand at the top of a door, out of a child's reach · a paper on the ground by a step · a stairwell landing · an empty walkway at dusk · a curtain moving in a lit window · a shadow crossing a curtain · a deposition room with two empty chairs · a court file tied with tape · a door with nothing on it · a key not turning.
 **Telops:** `TAPED TO\nTHE DOOR` · `"PLENTY OF\nTROUBLE"` · `NOT INFREQUENTLY\nREMOVED` · `LOST BY DEFAULT` · `NOT ENOUGH`.
 **Cover / ShortThumb:** background = the paper lifting off the door · headline `THE NOTICE\nCAME OFF` · badge `THEY KNEW`.
-**CTA props:** `ctaLongTitle: 'A Paper on the Door'` (20 ch) · `ctaHeadline: 'FULL CASE'` · `ctaLongThumbSrc: shorts/short259/short182_ctathumb.png`.
+**CTA props:** `ctaLongTitle: 'A Paper on the Door'` (20 ch) · `ctaHeadline: 'FULL CASE'` · `ctaLongThumbSrc: shorts/short259/short259_ctathumb.png`.
 **Funnel question left for the long-form:** *what does a State have to do instead — and did anyone ever tell these three women?*
 
 > **Lock:** never say the writs *were* torn off in these three cases. The record says servers saw it happen at Village West; it does not say it happened to Lindsey, Hodgens or Ray.
@@ -140,7 +140,7 @@ L5: *"This was 1982, and the Court decided only this case. The full story is on 
 
 - **Slot:** see §6 · **Format:** F-D · **Target 36–44 s** · ~120 w
 - **Hook:** *"When the Court said a letter would have been better than a paper on the door, one Justice wrote back: it is no secret that unattended mailboxes are subject to plunder by thieves."*
-- **Payoff:** eleven States allowed exactly this practice at the time — and the Court struck it down on the testimony of a handful of process servers.
+- **Payoff:** eleven States allowed exactly this practice at the time — and the Court held it constitutionally inadequate on this record, on the testimony of a handful of process servers.
 
 **Ledger source (verbatim, ALL labelled `DISSENT` on screen — R-C of `SHORTS_METHOD`):**
 > GL-73 — *"Today, the Court holds that the Constitution prefers the use of the Postal Service to posted notice."*
@@ -148,9 +148,9 @@ L5: *"This was 1982, and the Court decided only this case. The full story is on 
 > GL-74 — *"The sole ground for the Court's result is the scant and conflicting testimony of a handful of process servers in Kentucky."*
 > GL-75 — *"at least 11 States authorizing notice in summary eviction proceedings solely by posting."*
 
-**Telops:** `DISSENT` · `"PLUNDER\nBY THIEVES"` · `11 STATES` · `A HANDFUL OF\nWITNESSES` · `5–4? NOT IN\nTHE OPINION`.
+**Telops:** `DISSENT` · `"PLUNDER\nBY THIEVES"` · `11 STATES` · `A HANDFUL OF\nWITNESSES` · `NO VOTE IS\nPRINTED`.
 **Plate motifs:** a bank of dented mailboxes, no names legible · an open mailbox flap · a letter on a doormat · a post van at a kerb, unbranded · a State map with no labels · a bench of empty legislative seats · a stack of briefs · a pen held over a page, no letterforms · a door with paper, seen from far.
-**Cover:** headline `"MAILBOXES\nGET ROBBED"` · badge `THE DISSENT`.
+**Cover:** headline `"PLUNDER BY\nTHIEVES"` · badge `THE DISSENT`.
 **Funnel question:** *if neither the door nor the mail is reliable, what is?*
 
 > **Lock:** the vote count is **not in the document**. The final telop above exists to say so on screen, not to imply one. Never write "5–4" or "6–3" (§10 quarantine).
@@ -203,7 +203,7 @@ Ms Gonzalez is never depicted, and neither is her death.
 
 **Telops:** `"APPROPRIATE"` · `A WEASEL WORD` · `NOT SELF-\nDEFINING` · `SOME PROCEDURE` · `EVEN-HANDEDLY`.
 **Plate motifs:** a statute page with the type dissolved to grey (no readable text) · a dictionary open, words illegible · a pen resting on a blank form · a scale of two identical trays · two identical chairs side by side, one occupied by a coat · a queue of identical tickets · a corridor with two doors, one open · a clipboard hanging on a hook, blank · a stamp with no legend.
-**Cover:** headline `"A WONDERFUL\nWEASEL WORD"` · badge `WHO DECIDES?`.
+**Cover:** headline `"ONE OF THE MOST\nWONDERFUL\nWEASEL WORDS"` · badge `WHO DECIDES?`.
 **Funnel question:** *if the rule is only "treat everyone the same", what happens when a hospital treats everyone badly?*
 
 ---
@@ -223,7 +223,8 @@ Ms Gonzalez is never depicted, and neither is her death.
 
 **Telops:** `$200,000` · `$500,000` · `3 CHILDREN\n4 GRANDCHILDREN` · `"THE TRUNK OF\nTHE FAMILY TREE"` · `WAIVED`.
 **Plate motifs:** a kitchen table set for many, nobody there · a stack of plates · a doorway into an empty living room · four small chairs · a coat on a hook · a family gathering shot from behind, faces away · a barn door swinging (the court's own image) · an empty church pew · a hand closing a folder.
-**Cover:** headline `$700,000` · badge `NOT FOR THE DEATH`.
+**Cover:** headline `$700,000` · badge `THE WAIT, AND
+THE FAMILY`  ←（旧案 "NOT FOR THE DEATH" は$200,000には当たるが、遺族の悲嘆に対する$500,000には当たらない）.
 **Funnel question:** *what did the appeals court refuse to look at, and why does that matter?*
 
 > **Lock:** the $200,000 is described in the opinion as *on the decedent's account*, for what she suffered **while waiting**. Do not caption it as compensation for her life.
@@ -274,7 +275,7 @@ no house fire, nobody freezing, no utility worker as villain.
 
 **Telops:** `PAY OR\nWE STOP` · `NOTHING ELSE` · `WHERE` · `WHAT HOURS` · `BEFORE WHOM`.
 **Plate motifs:** a printed slip with the type reduced to grey texture · a bill folded in three · a letter slot from inside · a counter window with the shutter down · an office corridor after hours · a wall of pigeonholes · a chair facing a closed door · a queue rope with nobody in it · a telephone ringing on an empty desk · a street of houses at dusk with one dark.
-**Cover:** headline `"PAY OR\nWE CUT YOU OFF"` · badge `THAT WAS ALL`.
+**Cover:** headline ``PAY OR FACE\nTERMINATION`` · badge `THAT WAS ALL`.
 **Funnel question:** *the Court did not stop the shutoff. So what did it actually change?*
 
 ---
@@ -287,9 +288,9 @@ no house fire, nobody freezing, no utility worker as villain.
 
 **Ledger source (verbatim, ALL dissent rows labelled `DISSENT` on screen):**
 > ML-96 — *"Each month the Division terminates the service of about 2,000 customers."*
-> ML-97 — the notices carried the legend *"PHONE 523-0711 INFORMATION CENTER"*, answered by *"30 or 40 Division employees, all of whom are empowered to delay cutoff."*
+> ML-97 — the notices carried the legend *"PHONE 523-0711 INFORMATION CENTER"*, answered by *"30 or 40 Division employees, all of whom are empowered to delay cutoffs for three days based on representations made by customers over the phone."*
 > ML-93 — *"In my judgment, the Court's holding confuses and trivializes the principle that the State may not deprive any person of life, liberty, or property without due process of law."*
-> Majority, on what survives: the utility *"would retain the option to terminate service after affording the notice and hearing required."*
+> Majority, on what survives: the utility *"would retain the option to terminate service after affording this opportunity and concluding that the amount billed was justly due."*
 
 **Telops:** `2,000 A MONTH` · `DISSENT` · `"CONFUSES AND\nTRIVIALIZES"` · `A HEARING` · `THEN THEY CAN\nSTILL CUT IT`.
 **Plate motifs:** a switchboard of unlit indicators · rows of desks with handsets · a ledger of account cards, unreadable · a meter reader's satchel · a service van at a kerb, unbranded · a street at night with one house dark · a hearing-room table with two chairs · a door marked only by a blank plate.
@@ -364,7 +365,7 @@ never frame it as "your mother": the opinion never uses the word and records no 
 > MB-35 — *"When this Court has fulfilled its duty to interpret federal law, a state court may not contradict or fail to implement the rule so established."*
 > Brown II — the unconscionability doctrine is *"a general, state, common-law, contract-law principle that is not specific to arbitration."*
 
-**Telops:** `"TENDENTIOUS"` · `"CREATED FROM\nWHOLE CLOTH"` · `REVERSED` · `PER CURIAM` · `IT DID NOT\nBACK DOWN`.
+**Telops:** `"TENDENTIOUS"` · `"CREATED FROM\nWHOLE CLOTH"` · `VACATED` · `PER CURIAM` · `IT DID NOT\nBACK DOWN`.
 **Plate motifs:** a bolt of cloth being unrolled (the court's own metaphor) · scissors on a table · a shelf of unlabelled reporters · two law books facing each other · a lectern in an empty room · a stairwell between floors · a hand closing a book · a corridor with two doors facing.
 **Cover:** headline `"CREATED FROM\nWHOLE CLOTH"` · badge `A STATE COURT SAID IT`.
 **Funnel question:** *who wins when a state court and the Supreme Court disagree about contract law?*
@@ -407,7 +408,7 @@ Interleave 62 → 63 → 64 so no case runs two days straight and the plate load
 | 2026-08-20 | Thu | `short263` | EP63 | A wonderful weasel word |
 | 2026-08-21 | Fri | `short266` | EP64 | Pay or we cut you off |
 | 2026-08-22 | Sat | `short261` | EP62 | Mailboxes get robbed |
-| 2026-08-23 | Sun | `short264` | EP63 | $700,000, not for the death |
+| 2026-08-23 | Sun | `short264` | EP63 | $700,000 — the wait, and the family |
 | 2026-08-24 | Mon | `short267` | EP64 | 2,000 a month |
 | 2026-08-25 | Tue | `short268` | EP65 | Sign here |
 | 2026-08-26 | Wed | `short269` | EP65 | It never said they were valid |
@@ -429,7 +430,7 @@ Interleave 62 → 63 → 64 so no case runs two days straight and the plate load
 |---|---|---|---|
 | **Frame 0** | a slip of paper taped to a plain door, corner lifting | a knuckle about to touch a door | a bank of dented mailboxes |
 | **`loop_join`** | last beat is the same door **bare**; over the final 1.2 s the paper fades back onto it and the corner lifts — landing exactly on frame 0 | last beat is the empty walkway seen from the door; the camera settles and the knuckle re-enters frame from the left | last beat is a single letter on a doormat; a hand lifts it away and the mailbox bank is behind it |
-| **Second watch** | the telop `THEY KNEW` on beat 3 reads as *the process servers knew* on pass 1, and as *the State knew* on pass 2 | `ONE VISIT` is a description on pass 1 and a verdict on pass 2 | the last telop `5–4? NOT IN THE OPINION` looks like trivia on pass 1; on pass 2 it is the short telling you it refuses to invent a number |
+| **Second watch** | the telop `THEY KNEW` on beat 3 reads as *the process servers knew* on pass 1, and as *the State knew* on pass 2 | `ONE VISIT` is a description on pass 1 and a verdict on pass 2 | the last telop `NO VOTE IS PRINTED` looks like trivia on pass 1; on pass 2 it is the short telling you it refuses to invent a number the document does not contain |
 | **Standing question (pinned)** | *What does a State have to do instead — and did anyone ever tell these three women?* | *Why is the case named after the sheriff, when the landlord was the city's own housing authority?* | *If neither the door nor the mail is reliable, what is?* |
 
 ### EP63 `correa` — long-form working title **“Never Called”**
@@ -438,7 +439,7 @@ Interleave 62 → 63 → 64 so no case runs two days straight and the plate load
 |---|---|---|---|
 | **Frame 0** | a paper ticket in a hand, digits not legible | a statute page with the type dissolved to grey | a kitchen table set for many, nobody there |
 | **`loop_join`** | last beat is the empty waiting room in late light; the light lifts back to daylight and the ticket re-enters the bottom of frame | last beat is a blank clipboard on a hook; it turns and becomes the dissolved page | last beat is a hand closing a folder; the folder becomes the tabletop and the chairs are back |
-| **Second watch** | the empty chairs in beat 2 are the same chairs as the last beat — on pass 1 they are a room, on pass 2 they are the whole hour she sat there | `EVEN-HANDEDLY` reads as fairness on pass 1; on pass 2 it reads as *the same bad service for everybody is still legal* | `$200,000` reads as the value of a life on pass 1; the telop `NOT FOR THE DEATH` on pass 2 says it never was |
+| **Second watch** | the empty chairs in beat 2 are the same chairs as the last beat — on pass 1 they are a room, on pass 2 they are the whole hour she sat there | `EVEN-HANDEDLY` reads as fairness on pass 1; on pass 2 it reads as *the same bad service for everybody is still legal* | `$200,000` reads as the value of a life on pass 1; on pass 2, after the split is named, it reads as the price of the hours she sat there |
 | **Standing question (pinned)** | *What does the law actually require an emergency room to do — and what did the court refuse to decide?* | *If the rule is only “treat everyone the same”, what happens when a hospital treats everyone badly?* | *What did the appeals court refuse to look at, and why does that matter?* |
 
 ### EP64 `memphis` — long-form working title **“The Bill in the Wrong Name”**
