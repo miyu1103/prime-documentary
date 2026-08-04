@@ -919,3 +919,90 @@ ACT_3 853語 9:45–14:35 · ACT_4 842語 14:35–19:22 · ACT_5 1,645語 19:22�
 
 **(5) `mandatory_stills` はこの項では変更しない。**現在 223件（`G001`–`G219` ＋ `G223`–`G226`）で、
 ★追加2 の `G226` は登録済み。上の三件はいずれも**新規プレートを要求していない**。
+
+### ★再発注（2026-08-04・目視QCの結果、必須）
+
+226枚を全枚目視した（`runs/qc/greene_plate_verdicts_sheets1to6.v001.md` と `...7to12.v001.md`）。
+文字規則はほぼ守られていたが、**映画の骨格に関わる欠陥が出た**。
+
+**最重——一枚のドアの連鎖が作られていない。**
+この映画のモチーフは「**同じ一枚のドアの七つの状態**」である。しかし実物は：
+
+- `G001` = セージ色の木製パネルドア・**縦長**の紙・テープ**2箇所**・真鍮のノブ
+- `G206` = **青緑の平滑なドア**・**横長**の紙・テープ**四隅**（相関 0.741）
+- `G207` / `G208` / `G209` = さらに別のドア
+- `G226`（**映画の最後の画**）= ドアですらなく奥へ続く外廆下。褐せていない四角は無く、**中ほどのドアに紙がまだ貼られている**（「取り除かれたあと」と正反対）
+
+原因は発注側にある。`G206`以降の文言は「The same door」としか書いておらず、**1プロンプト＝1枚の規則では前の枚を参照できない**。以下はドアの特徴を**毎回全部書き下す**。
+
+| 新 | 置き換え | 内容 |
+|---|---|---|
+| `G227` | G206 の代替 | モチーフ1 の帰り（ループを閉じる）—— G206 の代替 |
+| `G228` | G207 の代替 | モチーフ3 風で持ち上がる —— G207 の代替 |
+| `G229` | G208 の代替 | モチーフ5 紙は無く、破れた角とテープだけ —— G208 の代替 |
+| `G230` | G209 の代替 | モチーフ6 何も無いドア —— G209 の代替 |
+| `G231` | G226 の代替・**映画の最後の画** | モチーフ7 褐せていない四角い跡 —— G226 の代替・**映画の最後の画** |
+| `G232` | — | G073 の代替（年代違いの一戸建て） |
+| `G233` | — | G140 の代替（紙幣に文字と紋章） |
+| `G234` | — | G183 の代替（議場が法廷に見える） |
+| `G235` | — | G125 の代替（1900〜1930年代に見える） |
+| `G236` | — | G178 の代替（ドローン調・下40%が白飛び） |
+| `G237` | — | G121 の代替（平均輝度 12.6・携帯で真っ黒） |
+| `G238` | — | G175 の代替（平均輝度 23.5） |
+| `G239` | — | G174 の代替（**完全に識別可能な女性の顔**） |
+
+- `G227.png`
+A single sheet of plain paper taped flat and square to the SAME door as G001 and no other: a sage-green painted wooden panelled door with a raised outer stile, the paint crazed and flaking to bare wood in two patches at the lock rail, a plain brass knob low at frame left, shot dead-on and square from about one metre in flat overcast daylight, the door filling the frame with a sliver of pale jamb at each side, the sheet PORTRAIT format with two short tabs of masking tape at its top corners only and its lower edge just beginning to curl away, the sheet blank and its surface bearing no printing of any kind [STYLE] Avoid: [NEG]
+
+- `G228.png`
+The same sheet on the SAME door as G001 and no other: a sage-green painted wooden panelled door with a raised outer stile, the paint crazed and flaking to bare wood in two patches at the lock rail, a plain brass knob low at frame left, shot dead-on and square from about one metre in flat overcast daylight, the door filling the frame with a sliver of pale jamb at each side, now lifted clear of the paint along its whole lower edge as if caught by a gust, the two top tabs still holding, dusk light, the sheet blank [STYLE] Avoid: [NEG]
+
+- `G229.png`
+the SAME door as G001 and no other: a sage-green painted wooden panelled door with a raised outer stile, the paint crazed and flaking to bare wood in two patches at the lock rail, a plain brass knob low at frame left, shot dead-on and square from about one metre in flat overcast daylight, the door filling the frame with a sliver of pale jamb at each side, the sheet gone, and only two short tabs of masking tape left on the paint with a small triangle of torn paper still trapped under each, morning light [STYLE] Avoid: [NEG]
+
+- `G230.png`
+the SAME door as G001 and no other: a sage-green painted wooden panelled door with a raised outer stile, the paint crazed and flaking to bare wood in two patches at the lock rail, a plain brass knob low at frame left, shot dead-on and square from about one metre in flat overcast daylight, the door filling the frame with a sliver of pale jamb at each side, entirely bare, the tape gone too and only a faint adhesive shadow where it had been, full daylight [STYLE] Avoid: [NEG]
+
+- `G231.png`
+the SAME door as G001 and no other: a sage-green painted wooden panelled door with a raised outer stile, the paint crazed and flaking to bare wood in two patches at the lock rail, a plain brass knob low at frame left, shot dead-on and square from about one metre in flat overcast daylight, the door filling the frame with a sliver of pale jamb at each side, entirely bare, and where the sheet used to be there is a rectangle of paint a clear shade greener and less chalked than the weathered paint all around it, its edges sharp, the fade differential itself being the subject of the picture, no paper and no tape anywhere in frame [STYLE] Avoid: [NEG]
+
+- `G232.png`
+A two-storey brick public housing block of the early 1970s seen from across a strip of worn communal grass in flat overcast light, plain steel doors on a concrete walkway, no vinyl siding, no storm doors, no modern window frames, nobody in frame [STYLE] Avoid: [NEG]
+
+- `G233.png`
+A folded rent book and a few worn coins lying on a formica kitchen table under a low lamp, shot close from above, every surface of the book blank and the coins turned edge-on so that no face, no lettering and no device is visible [STYLE] Avoid: [NEG]
+
+- `G234.png`
+An empty public meeting room of the period with rows of plain wooden chairs facing a bare front wall, no raised bench, no dais, no seal, no flag, no gallery, flat daylight through high windows [STYLE] Avoid: [NEG]
+
+- `G235.png`
+A plain panel van of the early 1970s parked at a kerb on a residential street, unbranded and unlettered, its rear doors shut, overcast light, no horses, no period earlier than 1970 [STYLE] Avoid: [NEG]
+
+- `G236.png`
+The same housing development seen from the ground at eye level in flat overcast light, the walkways receding to one side, exposure held so that no part of the frame is blown to white and the concrete keeps its detail [STYLE] Avoid: [NEG]
+
+- `G237.png`
+An interior hallway of a modest apartment at night with one door ajar and a light burning beyond it, exposed so the walls and the floor keep their detail and nothing in the frame reads as pure black [STYLE] Avoid: [NEG]
+
+- `G238.png`
+A concrete outdoor stairwell seen from the bottom step at dusk, the treads chipped, a bulb burning on the landing above, exposed so the concrete keeps its texture throughout and nothing reads as pure black [STYLE] Avoid: [NEG]
+
+- `G239.png`
+A records room of the period with a shelf of unlabelled box files, one person standing at the shelf seen entirely from behind with the back of the head to camera, no part of the face visible at any angle, plain overhead light [STYLE] Avoid: [NEG]
+
+合計 **239枚**（G001–G239）。**既存の G001–G226 は1枚も変更しない**。
+置き換えられた旧プレートは削除せず、**そのビートでは使わない**だけとする
+（`G206`–`G209` は景観カットとしてなら使える）。
+
+**`mandatory_stills` は再導出が必要**：G227–G239 を加え、カットに入らなくなった旧プレートを外すこと。
+
+### ★追加（2026-08-04・サムネ用の G240）
+
+`thumb_prompts.v001.md` の第4候補。既存の THUMB 3枚（`G220`–`G222`）は**3枚とも寄りで低照度**で、thumbnail_visibility（平均輝度33以上）を確実に満たす明るい引きの候補が1枚も無い。この1枚で埋める。
+
+**この1枚はパッケージング専用で、本編のカットには入らない。したがって `mandatory_stills` には追加しない**（check_spec_satisfied.py は「宣言された静止画がどのカットにも無い」で落ちる）。
+
+下の本文は **展開済みの完全形**。`[STYLE]` の low contrast / low-key をこの1枚に限って打ち消しているので、**`[STYLE]` トークンに戻さないこと**。
+
+- `G240.png`
+A long run of identical apartment doors along an open-air concrete walkway seen down its length under bright flat overcast daylight, one single pale rectangle of paper on one door far down the line, the concrete and the painted doors bright and clearly separated, the upper third of the frame left clear, bright even key light, the subject clearly separated from the ground, deep blacks kept but the subject held well above mid-grey, high micro-contrast, cinematic still, muted natural colour, flat humid Ohio Valley light, soft falloff toward the edges, shallow depth of field, restrained documentary framing, mid-1970s to early-1980s American public housing period detail, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage. Avoid: text, lettering, numerals, handwriting, signatures, seals, emblems, logos, signage, house numbers, street signs, police uniform, sheriff badge, patrol car, courtroom interior, gavel, judge's bench, prison bars, razor wire, handcuffs, furniture on a pavement, people being evicted, crying, a hand on a shoulder, golden hour, sunset glow, postcard scenery, drone shot, cosy fireplace, Christmas, tropical, modern smartphones, modern cars, flat CGI, cartoon, illustration, oversaturated.

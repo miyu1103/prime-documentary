@@ -741,3 +741,15 @@ A lift door standing fully open onto an empty car in a tiled lobby, the interior
 **この3枚にも §0〜§3 がそのまま適用されます。**1プロンプト1枚・`_02` を作らない・顔を出さない・
 読める文字と数字を出さない・長辺3840px以上・保存先 `H:\pd-media\assets\ai\correa\`。
 生成後は §1 の Q1–Q9 と §6-1 の目視を **C224–C226 にも**通してください。
+
+### ★追加（2026-08-04・サムネ用のC227）
+
+thumb_prompts.v001.md の THUMB-04。既存の THUMB 3枚（C221–C223）はこの話の低輝度な [STYLE] を継いでおり、thumbnail_visibility（平均輝度33以上）を割る危険がある。この1枚は明るい直射光で発注する。
+
+**この1枚はパッケージング専用で、本編のカットには入らない。したがって `mandatory_stills` には追加しない**（check_spec_satisfied.py は「宣言された静止画がどのカットにも無い」で落ちる）。
+
+- `C227.png`
+A shallow wooden filing drawer pulled fully open on a painted metal cabinet and completely empty inside, the bare board of its base showing, the runners and the dust line where files used to stand still visible, one hard shaft of daylight falling squarely into the open drawer so the inside of it is the brightest thing in the frame, the cabinet and the room around it a stop down but keeping their detail, no paper anywhere and nobody in the room, the upper third of the frame left clear [STYLE] Avoid: [NEG]
+
+合計 **227枚**（うち本編 223枚 + PEOPLE 10 + THUMB 4）。
+★ **サムネプレートだけは本編の低輝度指定を上書きし、平均輝度38以上・標準偏差45以上を狙うこと。**

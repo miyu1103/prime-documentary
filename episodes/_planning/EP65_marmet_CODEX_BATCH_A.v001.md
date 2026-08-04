@@ -773,3 +773,15 @@ The foot of an admission form lying on a counter, its ruled line bare and no pen
 
 `episodes/PD-2026-065-marmet/episode_spec.v001.json` の `mandatory_stills` は
 **R001〜R223（223件）**へ更新済みです。
+
+### ★追加（2026-08-04・サムネ用のR224）
+
+thumb_prompts.v001.md の THUMB-D。この話の [STYLE] は low contrast / low-key で、輝度ゲートと正面から衝突する。この1枚は硬いキーライトで発注し、**署名を一切描かずペンだけ**で主題を出す。
+
+**この1枚はパッケージング専用で、本編のカットには入らない。したがって `mandatory_stills` には追加しない**（check_spec_satisfied.py は「宣言された静止画がどのカットにも無い」で落ちる）。
+
+- `R224.png`
+A single ballpoint pen lying alone on a bare pale counter, nothing else anywhere in the frame, shot dead centre and close from just above the surface, one hard directional key light from the left throwing a long hard-edged shadow of the pen across the counter, the pen dark against the pale surface, the counter clean and empty, the upper third of the frame left clear [STYLE] Avoid: [NEG]
+
+合計 **224枚**（うち本編 220枚 + PEOPLE 10 + THUMB 4）。
+★ **サムネプレートだけは本編の低輝度指定を上書きし、平均輝度38以上・標準偏差45以上を狙うこと。**

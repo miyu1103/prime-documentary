@@ -8,7 +8,7 @@
 
 **Windows re-derived from this file at 176 wpm** after the third pass. v002 labels void.
 
-**Motif:** the paper, seven states in order, `【】` only. `G001` opens · `G206` returns it in the same framing · `G226` (state 7) is the last image. `【】` may show tape; **narration names no method for these doors** — n.1 says thumbtack, adhesive tape, or other means.
+**Motif:** the paper, seven states in order, `【】` only. `G001` opens · `G227` returns it in the same framing · `G231` (state 7) is the last image. `【】` may show tape; **narration names no method for these doors** — n.1 says thumbtack, adhesive tape, or other means.
 
 **Held beats: three, each after the heavy line** — after the recognition, after the limit, before the last image.
 
@@ -354,7 +354,7 @@ That is a very small pile of paper to set against a statute, and the three disse
 
 The statute described a ladder with three rungs. The men who climbed it did not describe it the same way as each other. Both descriptions were in the record, and the Court chose the one made by the men who said the paper came off.
 
-【callback: motif 1 again — G206, the paper taped flat and square, same framing and lens as G001 in the HOOK. The loop closes here, not on G209.】
+【callback: motif 1 again — G227, the paper taped flat and square, same framing and lens as G001 in the HOOK. The loop closes here, not on G230.】
 
 Somewhere in Louisville in 1975 an officer fixed a writ to a door — by thumbtack, or adhesive tape, or other means; the opinion does not say which. He did what the statute told him to do. The paper was on the premises. The service was complete. Everything after that — the date, the courtroom, the judgment, the order of possession — followed correctly from a single assumption.
 

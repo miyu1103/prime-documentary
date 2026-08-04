@@ -790,3 +790,15 @@ A street light on a plain concrete standard lit over a modest residential Memphi
 
 **⛔-08 オーナー裁定（2026-08-04）：名前は可・番地 1019 は不可。**
 narration・テロップ・プレート・ショートの全部に及ぶ。
+
+### ★追加（2026-08-04・サムネ用のM219）
+
+thumb_prompts.v001.md の THUMB-04。この映画の主役の画は「一文字だけ違う2通の請求書」だが、**読める文字は禁止**。文字でなく構図で解く——同じ折り・同じ折り痕の2枚を並べ、**片方の宛名欄にだけ硬い光の円**を落とす。光の中は空白のまま。「違いはここにある」とだけ言う。
+
+**この1枚はパッケージング専用で、本編のカットには入らない。したがって `mandatory_stills` には追加しない**（check_spec_satisfied.py は「宣言された静止画がどのカットにも無い」で落ちる）。
+
+- `M219.png`
+Two identical sheets of household correspondence lying side by side and slightly overlapped on a dark formica table, shot from directly above and close so the pair fills the frame, both sheets folded the same way with the same worn creases and the same grey unreadable print texture, a single hard circle of light from a low lamp falling on the address panel of the upper sheet alone while everything outside that circle sits a stop down and drained almost to grey with its detail intact, the lit panel itself empty, nothing written anywhere and nobody in the room [STYLE] Avoid: [NEG]
+
+合計 **219枚**（うち本編 215枚 + PEOPLE 10 + THUMB 4）。
+★ **サムネプレートだけは本編の低輝度指定を上書きし、平均輝度38以上・標準偏差45以上を狙うこと。**
