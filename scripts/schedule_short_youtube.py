@@ -994,6 +994,54 @@ CONFIG: dict[str, dict] = {
         "video_sha256": "b0dd96e2c810f0b5099dc0c882c3911828f84ebf184227fa87590946591a4fe0",
         "thumb_sha256": "9dc63f309fe7cf728a93280d5a7d0b7f5fae1a6cd50efd1512925047b98cadf4",
     },
+    "100": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "tYZuE76Hwdc",
+        "ep": "PD-2026-041-thompson",
+        "rev": "v001",
+        "title": "He won his freedom, then the Supreme Court took the money back #Shorts",
+        "description": "He won his freedom, then the Supreme Court took the money back.\n\nIf one buried report is not enough, what would ever be enough?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #ConnickvThompson #ProsecutorialMisconduct #Brady #DeathRow #Documentary",
+        "tags": ["Shorts", "Connick v Thompson", "Prosecutorial Misconduct", "Brady", "Death Row", "Law", "Documentary"],
+        # v001: this render already carries the mid-roll kinetic typography
+        "video_sha256": "dd99d8c647959ae5077010320550c9911e77e2ccf615da16ad43203fe13a57b5",
+        "thumb_sha256": "fe1bfba0da0c45dc900928474036d3f1cbcc958e782c0be2fba5dc9a16474574",
+    },
+    "101": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "tYZuE76Hwdc",
+        "ep": "PD-2026-041-thompson",
+        "rev": "v001",
+        "title": "Louisiana set his execution date while the proof sat in a drawer #Shorts",
+        "description": "Louisiana set his execution date while the proof sat in a drawer.\n\nThe report existed the whole time. Who decided it would never be handed over?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #ConnickvThompson #WrongfulConviction #Brady #DeathRow #Documentary",
+        "tags": ["Shorts", "Connick v Thompson", "Wrongful Conviction", "Brady", "Death Row", "Law", "Documentary"],
+        # v001: this render already carries the mid-roll kinetic typography
+        "video_sha256": "6bacdc9c8e2e5b66ccb52dfb7d9ba59d018f5877fd5f671b07bd29219add0ace",
+        "thumb_sha256": "c42c31d51205012e1d513a2f1ff33f5b16bb1e0b978ab7d178798e795006be70",
+    },
+    "102": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "yRwxBfrOY5o",
+        "ep": "PD-2026-043-caniglia",
+        "rev": "v001",
+        "title": "The excuse came from a 1973 case about a car. They used it on a house #Shorts",
+        "description": "The excuse came from a 1973 case about a car. They used it on a house.\n\nOnce the caretaking excuse is gone, what can officers still do at your door?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #CanigliavStrom #CommunityCaretaking #FourthAmendment #WelfareCheck #Documentary",
+        "tags": ["Shorts", "Caniglia v Strom", "Community Caretaking", "Fourth Amendment", "Welfare Check", "Law", "Documentary"],
+        # v001: this render already carries the mid-roll kinetic typography
+        "video_sha256": "2d80ff34dc1729b6ec9b58990d8cca735c2eeb94288d8041f8b13ffc808f33b9",
+        "thumb_sha256": "7313f36a712e6de660bd0facf99276506870551f88d7dfb0ab5d7502301c9dff",
+    },
+    "103": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "yRwxBfrOY5o",
+        "ep": "PD-2026-043-caniglia",
+        "rev": "v001",
+        "title": "The Court did not say police can never come in for your safety #Shorts",
+        "description": "The Court did not say police can never come in for your safety.\n\nSo where exactly is the line between help and a search?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #CanigliavStrom #ExigentCircumstances #FourthAmendment #WelfareCheck #Documentary",
+        "tags": ["Shorts", "Caniglia v Strom", "Exigent Circumstances", "Fourth Amendment", "Welfare Check", "Law", "Documentary"],
+        # v001: this render already carries the mid-roll kinetic typography
+        "video_sha256": "afb2f61b2b5ba1724fa45501776d745a269e994611ff8c8674edc6dbffb40a8e",
+        "thumb_sha256": "b030f601526dcea9b04d1e5cafe98a29294ed2b0fdbbee4471e1319d61e3c522",
+    },
 }
 
 

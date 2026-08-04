@@ -111,4 +111,11 @@ export const SHORT112: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short112.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short112/short112_kin_a.webm', atSec: 36.02, durSec: 2.3, phrase: "THE PRIVACIES OF LIFE"},
+    {src: 'shorts/short112/short112_kin_b.webm', atSec: 39.55, durSec: 2.3, phrase: "MORE THAN A HOUSE SEARCH"},
+  ],
 };

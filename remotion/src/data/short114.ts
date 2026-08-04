@@ -111,4 +111,11 @@ export const SHORT114: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short114.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short114/short114_kin_a.webm', atSec: 18.22, durSec: 2.3, phrase: "HOW MUCH IS TOO MUCH"},
+    {src: 'shorts/short114/short114_kin_b.webm', atSec: 34.23, durSec: 2.3, phrase: "A BLURRY LINE IN THE RIGHT PLACE"},
+  ],
 };

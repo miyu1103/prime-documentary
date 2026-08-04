@@ -1,0 +1,6891 @@
+{
+ "episode_id": "PD-2026-061-weimer",
+ "fps": 30,
+ "narration": "weimer/narration.mp3",
+ "narrationSeconds": 1803.272,
+ "hookSeconds": 8.0,
+ "hookLine": "On the morning of the twenty-seventh of January, two thousand and one, a young woman in Connellsville, Pennsylvania told police officers where she had been the night before.",
+ "hook": [
+  {
+   "start": 0.0,
+   "dur": 1.0,
+   "kind": "img",
+   "src": "weimer/img/W003.png",
+   "seed": "weimer-hook-00"
+  },
+  {
+   "start": 1.0,
+   "dur": 1.0,
+   "kind": "img",
+   "src": "weimer/img/W004.png",
+   "seed": "weimer-hook-01"
+  },
+  {
+   "start": 2.0,
+   "dur": 1.0,
+   "kind": "img",
+   "src": "weimer/img/W005.png",
+   "seed": "weimer-hook-02"
+  },
+  {
+   "start": 3.0,
+   "dur": 1.0,
+   "kind": "img",
+   "src": "weimer/img/W010.png",
+   "seed": "weimer-hook-03"
+  },
+  {
+   "start": 4.0,
+   "dur": 1.0,
+   "kind": "img",
+   "src": "weimer/img/W012.png",
+   "seed": "weimer-hook-04"
+  },
+  {
+   "start": 5.0,
+   "dur": 1.0,
+   "kind": "img",
+   "src": "weimer/img/W017.png",
+   "seed": "weimer-hook-05"
+  },
+  {
+   "start": 6.0,
+   "dur": 1.0,
+   "kind": "img",
+   "src": "weimer/img/W025.png",
+   "seed": "weimer-hook-06"
+  },
+  {
+   "start": 7.0,
+   "dur": 1.0,
+   "kind": "img",
+   "src": "weimer/img/W026.png",
+   "seed": "weimer-hook-07"
+  }
+ ],
+ "cuts": [
+  {
+   "id": "cut-0000",
+   "start": 0.0,
+   "dur": 6.445,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-12300__shattered_mirror.mp4",
+   "seed": "weimer-0000",
+   "act": "HOOK",
+   "srcSeconds": 22.72,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0001",
+   "start": 6.445,
+   "dur": 6.445,
+   "kind": "footage",
+   "src": "weimer/motion/W001.mp4",
+   "seed": "weimer-0001",
+   "act": "HOOK",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0002",
+   "start": 12.89,
+   "dur": 6.445,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-13816__lone_tree_in_field.mp4",
+   "seed": "weimer-0002",
+   "act": "HOOK",
+   "srcSeconds": 17.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0003",
+   "start": 19.335,
+   "dur": 6.445,
+   "kind": "footage",
+   "src": "weimer/motion/W002.mp4",
+   "seed": "weimer-0003",
+   "act": "HOOK",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0004",
+   "start": 25.78,
+   "dur": 6.445,
+   "kind": "footage",
+   "src": "weimer/motion/W006.mp4",
+   "seed": "weimer-0004",
+   "act": "HOOK",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0005",
+   "start": 32.225,
+   "dur": 5.784,
+   "kind": "img",
+   "src": "weimer/img/W003.png",
+   "seed": "weimer-0005",
+   "act": "HOOK",
+   "treatment": "bleed",
+   "lift": 1.459
+  },
+  {
+   "id": "cut-0006",
+   "start": 38.009,
+   "dur": 6.445,
+   "kind": "footage",
+   "src": "weimer/motion/W007.mp4",
+   "seed": "weimer-0006",
+   "act": "HOOK",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0007",
+   "start": 44.454,
+   "dur": 5.784,
+   "kind": "img",
+   "src": "weimer/img/W004.png",
+   "seed": "weimer-0007",
+   "act": "HOOK",
+   "treatment": "duotone",
+   "lift": 1.659
+  },
+  {
+   "id": "cut-0008",
+   "start": 50.238,
+   "dur": 5.783,
+   "kind": "img",
+   "src": "weimer/img/W005.png",
+   "seed": "weimer-0008",
+   "act": "HOOK",
+   "treatment": "focus",
+   "lift": 1.003
+  },
+  {
+   "id": "cut-0009",
+   "start": 56.021,
+   "dur": 6.093,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-13822__lone_tree_in_field.mp4",
+   "seed": "weimer-0009",
+   "act": "OP",
+   "srcSeconds": 15.96,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0010",
+   "start": 62.114,
+   "dur": 6.093,
+   "kind": "footage",
+   "src": "weimer/motion/W008.mp4",
+   "seed": "weimer-0010",
+   "act": "OP",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0011",
+   "start": 68.207,
+   "dur": 5.468,
+   "kind": "img",
+   "src": "weimer/img/W010.png",
+   "seed": "weimer-0011",
+   "act": "OP",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0012",
+   "start": 73.675,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-13825__lone_tree_in_field.mp4",
+   "seed": "weimer-0012",
+   "act": "ACT_1",
+   "srcSeconds": 31.832,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0013",
+   "start": 80.139,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W009.mp4",
+   "seed": "weimer-0013",
+   "act": "ACT_1",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0014",
+   "start": 86.603,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-14086__church_interior_light_beam.mp4",
+   "seed": "weimer-0014",
+   "act": "ACT_1",
+   "srcSeconds": 14.68,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0015",
+   "start": 93.067,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W011.mp4",
+   "seed": "weimer-0015",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0016",
+   "start": 99.531,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-14089__church_interior_light_beam.mp4",
+   "seed": "weimer-0016",
+   "act": "ACT_1",
+   "srcSeconds": 32.08,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0017",
+   "start": 105.995,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W012.png",
+   "seed": "weimer-0017",
+   "act": "ACT_1",
+   "treatment": "duotone",
+   "lift": 1.1
+  },
+  {
+   "id": "cut-0018",
+   "start": 111.795,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-14092__church_interior_light_beam.mp4",
+   "seed": "weimer-0018",
+   "act": "ACT_1",
+   "srcSeconds": 31.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0019",
+   "start": 118.259,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W013.mp4",
+   "seed": "weimer-0019",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0020",
+   "start": 124.723,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-14095__church_interior_light_beam.mp4",
+   "seed": "weimer-0020",
+   "act": "ACT_1",
+   "srcSeconds": 20.245,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0021",
+   "start": 131.187,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W014.mp4",
+   "seed": "weimer-0021",
+   "act": "ACT_1",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0022",
+   "start": 137.651,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1428__rain_on_window_night.mp4",
+   "seed": "weimer-0022",
+   "act": "ACT_1",
+   "srcSeconds": 9.94,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0023",
+   "start": 144.115,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W017.png",
+   "seed": "weimer-0023",
+   "act": "ACT_1",
+   "treatment": "focus",
+   "lift": 1.119
+  },
+  {
+   "id": "cut-0024",
+   "start": 149.915,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1432__rain_on_window_night.mp4",
+   "seed": "weimer-0024",
+   "act": "ACT_1",
+   "srcSeconds": 25.002,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0025",
+   "start": 156.379,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W015.mp4",
+   "seed": "weimer-0025",
+   "act": "ACT_1",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0026",
+   "start": 162.843,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1437__rain_on_window_night.mp4",
+   "seed": "weimer-0026",
+   "act": "ACT_1",
+   "srcSeconds": 14.8,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0027",
+   "start": 169.307,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W016.mp4",
+   "seed": "weimer-0027",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0028",
+   "start": 175.771,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1670__suburban_house_exterior_night.mp4",
+   "seed": "weimer-0028",
+   "act": "ACT_1",
+   "srcSeconds": 21.667,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0029",
+   "start": 182.235,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W025.png",
+   "seed": "weimer-0029",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0030",
+   "start": 188.035,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1671__suburban_house_exterior_night.mp4",
+   "seed": "weimer-0030",
+   "act": "ACT_1",
+   "srcSeconds": 36.672,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0031",
+   "start": 194.499,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W018.mp4",
+   "seed": "weimer-0031",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0032",
+   "start": 200.963,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1674__suburban_house_exterior_night.mp4",
+   "seed": "weimer-0032",
+   "act": "ACT_1",
+   "srcSeconds": 40.107,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0033",
+   "start": 207.427,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W019.mp4",
+   "seed": "weimer-0033",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0034",
+   "start": 213.891,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-21166__foggy_harbor_dawn.mp4",
+   "seed": "weimer-0034",
+   "act": "ACT_1",
+   "srcSeconds": 168.2,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0035",
+   "start": 220.355,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W026.png",
+   "seed": "weimer-0035",
+   "act": "ACT_1",
+   "treatment": "duotone",
+   "lift": 1.249
+  },
+  {
+   "id": "cut-0036",
+   "start": 226.155,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-22093__white_picket_fence.mp4",
+   "seed": "weimer-0036",
+   "act": "ACT_1",
+   "srcSeconds": 24.788,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0037",
+   "start": 232.619,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W020.mp4",
+   "seed": "weimer-0037",
+   "act": "ACT_1",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0038",
+   "start": 239.083,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-22104__white_picket_fence.mp4",
+   "seed": "weimer-0038",
+   "act": "ACT_1",
+   "srcSeconds": 10.88,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0039",
+   "start": 245.547,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W021.mp4",
+   "seed": "weimer-0039",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0040",
+   "start": 252.011,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-22106__white_picket_fence.mp4",
+   "seed": "weimer-0040",
+   "act": "ACT_1",
+   "srcSeconds": 77.993,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0041",
+   "start": 258.475,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W039.png",
+   "seed": "weimer-0041",
+   "act": "ACT_1",
+   "treatment": "focus",
+   "lift": 1.005
+  },
+  {
+   "id": "cut-0042",
+   "start": 264.275,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-22109__white_picket_fence.mp4",
+   "seed": "weimer-0042",
+   "act": "ACT_1",
+   "srcSeconds": 7.375,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0043",
+   "start": 270.739,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W022.mp4",
+   "seed": "weimer-0043",
+   "act": "ACT_1",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0044",
+   "start": 277.203,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W023.mp4",
+   "seed": "weimer-0044",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0045",
+   "start": 283.667,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W024.mp4",
+   "seed": "weimer-0045",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0046",
+   "start": 290.131,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W027.mp4",
+   "seed": "weimer-0046",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0047",
+   "start": 296.595,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W041.png",
+   "seed": "weimer-0047",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0048",
+   "start": 302.395,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W028.mp4",
+   "seed": "weimer-0048",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0049",
+   "start": 308.859,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W029.mp4",
+   "seed": "weimer-0049",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0050",
+   "start": 315.323,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W030.mp4",
+   "seed": "weimer-0050",
+   "act": "ACT_1",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0051",
+   "start": 321.787,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W031.mp4",
+   "seed": "weimer-0051",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0052",
+   "start": 328.251,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W032.mp4",
+   "seed": "weimer-0052",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0053",
+   "start": 334.715,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W042.png",
+   "seed": "weimer-0053",
+   "act": "ACT_1",
+   "treatment": "duotone",
+   "lift": 1.037
+  },
+  {
+   "id": "cut-0054",
+   "start": 340.515,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W033.mp4",
+   "seed": "weimer-0054",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0055",
+   "start": 346.979,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W034.mp4",
+   "seed": "weimer-0055",
+   "act": "ACT_1",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0056",
+   "start": 353.443,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W035.mp4",
+   "seed": "weimer-0056",
+   "act": "ACT_1",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0057",
+   "start": 359.907,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W036.mp4",
+   "seed": "weimer-0057",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0058",
+   "start": 366.371,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W037.mp4",
+   "seed": "weimer-0058",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0059",
+   "start": 372.835,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W053.png",
+   "seed": "weimer-0059",
+   "act": "ACT_1",
+   "treatment": "focus",
+   "lift": 1.139
+  },
+  {
+   "id": "cut-0060",
+   "start": 378.635,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W038.mp4",
+   "seed": "weimer-0060",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0061",
+   "start": 385.099,
+   "dur": 6.464,
+   "kind": "footage",
+   "src": "weimer/motion/W040.mp4",
+   "seed": "weimer-0061",
+   "act": "ACT_1",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0062",
+   "start": 391.563,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W054.png",
+   "seed": "weimer-0062",
+   "act": "ACT_1",
+   "treatment": "bleed",
+   "lift": 1.508
+  },
+  {
+   "id": "cut-0063",
+   "start": 397.363,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W059.png",
+   "seed": "weimer-0063",
+   "act": "ACT_1",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0064",
+   "start": 403.163,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W060.png",
+   "seed": "weimer-0064",
+   "act": "ACT_1",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0065",
+   "start": 408.963,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W063.png",
+   "seed": "weimer-0065",
+   "act": "ACT_1",
+   "treatment": "bleed",
+   "lift": 1.159
+  },
+  {
+   "id": "cut-0066",
+   "start": 414.763,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W064.png",
+   "seed": "weimer-0066",
+   "act": "ACT_1",
+   "treatment": "duotone",
+   "lift": 1.183
+  },
+  {
+   "id": "cut-0067",
+   "start": 420.563,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W070.png",
+   "seed": "weimer-0067",
+   "act": "ACT_1",
+   "treatment": "focus",
+   "lift": 1.229
+  },
+  {
+   "id": "cut-0068",
+   "start": 426.363,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W072.png",
+   "seed": "weimer-0068",
+   "act": "ACT_1",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0069",
+   "start": 432.163,
+   "dur": 5.8,
+   "kind": "img",
+   "src": "weimer/img/W075.png",
+   "seed": "weimer-0069",
+   "act": "ACT_1",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0070",
+   "start": 437.963,
+   "dur": 5.79,
+   "kind": "img",
+   "src": "weimer/img/W076.png",
+   "seed": "weimer-0070",
+   "act": "ACT_1",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0071",
+   "start": 443.753,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-2665__lone_person_silhouette_walking.mp4",
+   "seed": "weimer-0071",
+   "act": "ACT_2",
+   "srcSeconds": 9.513,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0072",
+   "start": 450.196,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W043.mp4",
+   "seed": "weimer-0072",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0073",
+   "start": 456.639,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-26916__empty_playground_at_dusk.mp4",
+   "seed": "weimer-0073",
+   "act": "ACT_2",
+   "srcSeconds": 8.682,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0074",
+   "start": 463.082,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W044.mp4",
+   "seed": "weimer-0074",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0075",
+   "start": 469.525,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-3061__empty_road_sunset.mp4",
+   "seed": "weimer-0075",
+   "act": "ACT_2",
+   "srcSeconds": 12.3,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0076",
+   "start": 475.968,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W077.png",
+   "seed": "weimer-0076",
+   "act": "ACT_2",
+   "treatment": "bleed",
+   "lift": 1.33
+  },
+  {
+   "id": "cut-0077",
+   "start": 481.75,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-31346__foggy_forest.mp4",
+   "seed": "weimer-0077",
+   "act": "ACT_2",
+   "srcSeconds": 48.315,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0078",
+   "start": 488.193,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W045.mp4",
+   "seed": "weimer-0078",
+   "act": "ACT_2",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0079",
+   "start": 494.636,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-37836__american_suburb_aerial.mp4",
+   "seed": "weimer-0079",
+   "act": "ACT_2",
+   "srcSeconds": 19.102,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0080",
+   "start": 501.079,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W046.mp4",
+   "seed": "weimer-0080",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0081",
+   "start": 507.522,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-5675__lone_person_silhouette_walking.mp4",
+   "seed": "weimer-0081",
+   "act": "ACT_2",
+   "srcSeconds": 90.538,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0082",
+   "start": 513.965,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W080.png",
+   "seed": "weimer-0082",
+   "act": "ACT_2",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0083",
+   "start": 519.747,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-6236__courthouse_steps.mp4",
+   "seed": "weimer-0083",
+   "act": "ACT_2",
+   "srcSeconds": 7.957,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0084",
+   "start": 526.19,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W047.mp4",
+   "seed": "weimer-0084",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0085",
+   "start": 532.633,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-8644__cell_tower_silhouette.mp4",
+   "seed": "weimer-0085",
+   "act": "ACT_2",
+   "srcSeconds": 32.533,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0086",
+   "start": 539.076,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W048.mp4",
+   "seed": "weimer-0086",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0087",
+   "start": 545.519,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9062__rural_road_america.mp4",
+   "seed": "weimer-0087",
+   "act": "ACT_2",
+   "srcSeconds": 105.45,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0088",
+   "start": 551.962,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W081.png",
+   "seed": "weimer-0088",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.211
+  },
+  {
+   "id": "cut-0089",
+   "start": 557.744,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9064__rural_road_america.mp4",
+   "seed": "weimer-0089",
+   "act": "ACT_2",
+   "srcSeconds": 117.851,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0090",
+   "start": 564.187,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W049.mp4",
+   "seed": "weimer-0090",
+   "act": "ACT_2",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0091",
+   "start": 570.63,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9208__small_town_main_street.mp4",
+   "seed": "weimer-0091",
+   "act": "ACT_2",
+   "srcSeconds": 7.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0092",
+   "start": 577.073,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W050.mp4",
+   "seed": "weimer-0092",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0093",
+   "start": 583.516,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9213__small_town_main_street.mp4",
+   "seed": "weimer-0093",
+   "act": "ACT_2",
+   "srcSeconds": 13.555,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0094",
+   "start": 589.959,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W082.png",
+   "seed": "weimer-0094",
+   "act": "ACT_2",
+   "treatment": "bleed",
+   "lift": 1.398
+  },
+  {
+   "id": "cut-0095",
+   "start": 595.741,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9218__small_town_main_street.mp4",
+   "seed": "weimer-0095",
+   "act": "ACT_2",
+   "srcSeconds": 12.75,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0096",
+   "start": 602.184,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W051.mp4",
+   "seed": "weimer-0096",
+   "act": "ACT_2",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0097",
+   "start": 608.627,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9226__small_town_main_street.mp4",
+   "seed": "weimer-0097",
+   "act": "ACT_2",
+   "srcSeconds": 15.9,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0098",
+   "start": 615.07,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W052.mp4",
+   "seed": "weimer-0098",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0099",
+   "start": 621.513,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9595__candle_in_dark.mp4",
+   "seed": "weimer-0099",
+   "act": "ACT_2",
+   "srcSeconds": 8.809,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0100",
+   "start": 627.956,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W083.png",
+   "seed": "weimer-0100",
+   "act": "ACT_2",
+   "treatment": "duotone",
+   "lift": 1.02
+  },
+  {
+   "id": "cut-0101",
+   "start": 633.738,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W055.mp4",
+   "seed": "weimer-0101",
+   "act": "ACT_2",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0102",
+   "start": 640.181,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W056.mp4",
+   "seed": "weimer-0102",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0103",
+   "start": 646.624,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W057.mp4",
+   "seed": "weimer-0103",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0104",
+   "start": 653.067,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W058.mp4",
+   "seed": "weimer-0104",
+   "act": "ACT_2",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0105",
+   "start": 659.51,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W061.mp4",
+   "seed": "weimer-0105",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0106",
+   "start": 665.953,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W085.png",
+   "seed": "weimer-0106",
+   "act": "ACT_2",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0107",
+   "start": 671.735,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W062.mp4",
+   "seed": "weimer-0107",
+   "act": "ACT_2",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0108",
+   "start": 678.178,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W065.mp4",
+   "seed": "weimer-0108",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0109",
+   "start": 684.621,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W066.mp4",
+   "seed": "weimer-0109",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0110",
+   "start": 691.064,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W067.mp4",
+   "seed": "weimer-0110",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0111",
+   "start": 697.507,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W068.mp4",
+   "seed": "weimer-0111",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0112",
+   "start": 703.95,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W086.png",
+   "seed": "weimer-0112",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0113",
+   "start": 709.732,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W069.mp4",
+   "seed": "weimer-0113",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0114",
+   "start": 716.175,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W071.mp4",
+   "seed": "weimer-0114",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0115",
+   "start": 722.618,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W073.mp4",
+   "seed": "weimer-0115",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0116",
+   "start": 729.061,
+   "dur": 6.443,
+   "kind": "footage",
+   "src": "weimer/motion/W074.mp4",
+   "seed": "weimer-0116",
+   "act": "ACT_2",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0117",
+   "start": 735.504,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W087.png",
+   "seed": "weimer-0117",
+   "act": "ACT_2",
+   "treatment": "duotone",
+   "lift": 1.208
+  },
+  {
+   "id": "cut-0118",
+   "start": 741.286,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W088.png",
+   "seed": "weimer-0118",
+   "act": "ACT_2",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0119",
+   "start": 747.068,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W089.png",
+   "seed": "weimer-0119",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0120",
+   "start": 752.85,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W090.png",
+   "seed": "weimer-0120",
+   "act": "ACT_2",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0121",
+   "start": 758.632,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W091.png",
+   "seed": "weimer-0121",
+   "act": "ACT_2",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0122",
+   "start": 764.414,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W092.png",
+   "seed": "weimer-0122",
+   "act": "ACT_2",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0123",
+   "start": 770.196,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W093.png",
+   "seed": "weimer-0123",
+   "act": "ACT_2",
+   "treatment": "duotone",
+   "lift": 1.283
+  },
+  {
+   "id": "cut-0124",
+   "start": 775.978,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W094.png",
+   "seed": "weimer-0124",
+   "act": "ACT_2",
+   "treatment": "focus",
+   "lift": 1.329
+  },
+  {
+   "id": "cut-0125",
+   "start": 781.76,
+   "dur": 5.782,
+   "kind": "img",
+   "src": "weimer/img/W095.png",
+   "seed": "weimer-0125",
+   "act": "ACT_2",
+   "treatment": "bleed",
+   "lift": 1.343
+  },
+  {
+   "id": "cut-0126",
+   "start": 787.542,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AFPART-0249__snow_falling_dark.mp4",
+   "seed": "weimer-0126",
+   "act": "ACT_3",
+   "srcSeconds": 38.72,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0127",
+   "start": 793.809,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W078.mp4",
+   "seed": "weimer-0127",
+   "act": "ACT_3",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0128",
+   "start": 800.076,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AFPART-0251__snow_falling_dark.mp4",
+   "seed": "weimer-0128",
+   "act": "ACT_3",
+   "srcSeconds": 60.117,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0129",
+   "start": 806.343,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W079.mp4",
+   "seed": "weimer-0129",
+   "act": "ACT_3",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0130",
+   "start": 812.61,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AFPART-0256__snow_falling_dark.mp4",
+   "seed": "weimer-0130",
+   "act": "ACT_3",
+   "srcSeconds": 76.5,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0131",
+   "start": 818.877,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W096.png",
+   "seed": "weimer-0131",
+   "act": "ACT_3",
+   "treatment": "duotone",
+   "lift": 1.316
+  },
+  {
+   "id": "cut-0132",
+   "start": 824.501,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AFPART-0266__snow_falling_dark.mp4",
+   "seed": "weimer-0132",
+   "act": "ACT_3",
+   "srcSeconds": 13.567,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0133",
+   "start": 830.768,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W084.mp4",
+   "seed": "weimer-0133",
+   "act": "ACT_3",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0134",
+   "start": 837.035,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AFPART-1247__fireflies_at_night.mp4",
+   "seed": "weimer-0134",
+   "act": "ACT_3",
+   "srcSeconds": 30.03,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0135",
+   "start": 843.302,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W141.mp4",
+   "seed": "weimer-0135",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0136",
+   "start": 849.569,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-12300__shattered_mirror.mp4",
+   "seed": "weimer-0136",
+   "act": "ACT_3",
+   "srcSeconds": 22.72,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0137",
+   "start": 855.836,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W097.png",
+   "seed": "weimer-0137",
+   "act": "ACT_3",
+   "treatment": "focus",
+   "lift": 1.356
+  },
+  {
+   "id": "cut-0138",
+   "start": 861.46,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-13816__lone_tree_in_field.mp4",
+   "seed": "weimer-0138",
+   "act": "ACT_3",
+   "srcSeconds": 17.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0139",
+   "start": 867.727,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W142.mp4",
+   "seed": "weimer-0139",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0140",
+   "start": 873.994,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-13822__lone_tree_in_field.mp4",
+   "seed": "weimer-0140",
+   "act": "ACT_3",
+   "srcSeconds": 15.96,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0141",
+   "start": 880.261,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W144.mp4",
+   "seed": "weimer-0141",
+   "act": "ACT_3",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0142",
+   "start": 886.528,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-13825__lone_tree_in_field.mp4",
+   "seed": "weimer-0142",
+   "act": "ACT_3",
+   "srcSeconds": 31.832,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0143",
+   "start": 892.795,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W098.png",
+   "seed": "weimer-0143",
+   "act": "ACT_3",
+   "treatment": "bleed",
+   "lift": 1.027
+  },
+  {
+   "id": "cut-0144",
+   "start": 898.419,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-14086__church_interior_light_beam.mp4",
+   "seed": "weimer-0144",
+   "act": "ACT_3",
+   "srcSeconds": 14.68,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0145",
+   "start": 904.686,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W145.mp4",
+   "seed": "weimer-0145",
+   "act": "ACT_3",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0146",
+   "start": 910.953,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-14089__church_interior_light_beam.mp4",
+   "seed": "weimer-0146",
+   "act": "ACT_3",
+   "srcSeconds": 32.08,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0147",
+   "start": 917.22,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W147.mp4",
+   "seed": "weimer-0147",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0148",
+   "start": 923.487,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-14092__church_interior_light_beam.mp4",
+   "seed": "weimer-0148",
+   "act": "ACT_3",
+   "srcSeconds": 31.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0149",
+   "start": 929.754,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W099.png",
+   "seed": "weimer-0149",
+   "act": "ACT_3",
+   "treatment": "duotone",
+   "lift": 1.714
+  },
+  {
+   "id": "cut-0150",
+   "start": 935.378,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-14095__church_interior_light_beam.mp4",
+   "seed": "weimer-0150",
+   "act": "ACT_3",
+   "srcSeconds": 20.245,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0151",
+   "start": 941.645,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W148.mp4",
+   "seed": "weimer-0151",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0152",
+   "start": 947.912,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W001.mp4",
+   "seed": "weimer-0152",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0153",
+   "start": 954.179,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W002.mp4",
+   "seed": "weimer-0153",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0154",
+   "start": 960.446,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W006.mp4",
+   "seed": "weimer-0154",
+   "act": "ACT_3",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0155",
+   "start": 966.713,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W100.png",
+   "seed": "weimer-0155",
+   "act": "ACT_3",
+   "treatment": "focus",
+   "lift": 1.404
+  },
+  {
+   "id": "cut-0156",
+   "start": 972.337,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W007.mp4",
+   "seed": "weimer-0156",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0157",
+   "start": 978.604,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W008.mp4",
+   "seed": "weimer-0157",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0158",
+   "start": 984.871,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W009.mp4",
+   "seed": "weimer-0158",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0159",
+   "start": 991.138,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W011.mp4",
+   "seed": "weimer-0159",
+   "act": "ACT_3",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0160",
+   "start": 997.405,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W013.mp4",
+   "seed": "weimer-0160",
+   "act": "ACT_3",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0161",
+   "start": 1003.672,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W101.png",
+   "seed": "weimer-0161",
+   "act": "ACT_3",
+   "treatment": "bleed",
+   "lift": 1.266
+  },
+  {
+   "id": "cut-0162",
+   "start": 1009.296,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W014.mp4",
+   "seed": "weimer-0162",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0163",
+   "start": 1015.563,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W015.mp4",
+   "seed": "weimer-0163",
+   "act": "ACT_3",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0164",
+   "start": 1021.83,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W016.mp4",
+   "seed": "weimer-0164",
+   "act": "ACT_3",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0165",
+   "start": 1028.097,
+   "dur": 6.267,
+   "kind": "footage",
+   "src": "weimer/motion/W018.mp4",
+   "seed": "weimer-0165",
+   "act": "ACT_3",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0166",
+   "start": 1034.364,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W102.png",
+   "seed": "weimer-0166",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0167",
+   "start": 1039.988,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W103.png",
+   "seed": "weimer-0167",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0168",
+   "start": 1045.612,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W104.png",
+   "seed": "weimer-0168",
+   "act": "ACT_3",
+   "treatment": "bleed",
+   "lift": 1.701
+  },
+  {
+   "id": "cut-0169",
+   "start": 1051.236,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W105.png",
+   "seed": "weimer-0169",
+   "act": "ACT_3",
+   "treatment": "duotone",
+   "lift": 1.37
+  },
+  {
+   "id": "cut-0170",
+   "start": 1056.86,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W106.png",
+   "seed": "weimer-0170",
+   "act": "ACT_3",
+   "treatment": "focus",
+   "lift": 1.482
+  },
+  {
+   "id": "cut-0171",
+   "start": 1062.484,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W107.png",
+   "seed": "weimer-0171",
+   "act": "ACT_3",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0172",
+   "start": 1068.108,
+   "dur": 5.624,
+   "kind": "img",
+   "src": "weimer/img/W108.png",
+   "seed": "weimer-0172",
+   "act": "ACT_3",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0173",
+   "start": 1073.732,
+   "dur": 5.614,
+   "kind": "img",
+   "src": "weimer/img/W109.png",
+   "seed": "weimer-0173",
+   "act": "ACT_3",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0174",
+   "start": 1079.346,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1428__rain_on_window_night.mp4",
+   "seed": "weimer-0174",
+   "act": "ACT_4",
+   "srcSeconds": 9.94,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0175",
+   "start": 1085.625,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W019.mp4",
+   "seed": "weimer-0175",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0176",
+   "start": 1091.904,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1432__rain_on_window_night.mp4",
+   "seed": "weimer-0176",
+   "act": "ACT_4",
+   "srcSeconds": 25.002,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0177",
+   "start": 1098.183,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W020.mp4",
+   "seed": "weimer-0177",
+   "act": "ACT_4",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0178",
+   "start": 1104.462,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1437__rain_on_window_night.mp4",
+   "seed": "weimer-0178",
+   "act": "ACT_4",
+   "srcSeconds": 14.8,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0179",
+   "start": 1110.741,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W110.png",
+   "seed": "weimer-0179",
+   "act": "ACT_4",
+   "treatment": "bleed",
+   "lift": 1.236
+  },
+  {
+   "id": "cut-0180",
+   "start": 1116.376,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1670__suburban_house_exterior_night.mp4",
+   "seed": "weimer-0180",
+   "act": "ACT_4",
+   "srcSeconds": 21.667,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0181",
+   "start": 1122.655,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W021.mp4",
+   "seed": "weimer-0181",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0182",
+   "start": 1128.934,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1671__suburban_house_exterior_night.mp4",
+   "seed": "weimer-0182",
+   "act": "ACT_4",
+   "srcSeconds": 36.672,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0183",
+   "start": 1135.213,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W022.mp4",
+   "seed": "weimer-0183",
+   "act": "ACT_4",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0184",
+   "start": 1141.492,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-1674__suburban_house_exterior_night.mp4",
+   "seed": "weimer-0184",
+   "act": "ACT_4",
+   "srcSeconds": 40.107,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0185",
+   "start": 1147.771,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W111.png",
+   "seed": "weimer-0185",
+   "act": "ACT_4",
+   "treatment": "duotone",
+   "lift": 1.08
+  },
+  {
+   "id": "cut-0186",
+   "start": 1153.406,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-21166__foggy_harbor_dawn.mp4",
+   "seed": "weimer-0186",
+   "act": "ACT_4",
+   "srcSeconds": 168.2,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0187",
+   "start": 1159.685,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W023.mp4",
+   "seed": "weimer-0187",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0188",
+   "start": 1165.964,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-22093__white_picket_fence.mp4",
+   "seed": "weimer-0188",
+   "act": "ACT_4",
+   "srcSeconds": 24.788,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0189",
+   "start": 1172.243,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W024.mp4",
+   "seed": "weimer-0189",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0190",
+   "start": 1178.522,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-22104__white_picket_fence.mp4",
+   "seed": "weimer-0190",
+   "act": "ACT_4",
+   "srcSeconds": 10.88,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0191",
+   "start": 1184.801,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W112.png",
+   "seed": "weimer-0191",
+   "act": "ACT_4",
+   "treatment": "focus",
+   "lift": 1.46
+  },
+  {
+   "id": "cut-0192",
+   "start": 1190.436,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-22106__white_picket_fence.mp4",
+   "seed": "weimer-0192",
+   "act": "ACT_4",
+   "srcSeconds": 77.993,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0193",
+   "start": 1196.715,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W027.mp4",
+   "seed": "weimer-0193",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0194",
+   "start": 1202.994,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-22109__white_picket_fence.mp4",
+   "seed": "weimer-0194",
+   "act": "ACT_4",
+   "srcSeconds": 7.375,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0195",
+   "start": 1209.273,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W028.mp4",
+   "seed": "weimer-0195",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0196",
+   "start": 1215.552,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-2665__lone_person_silhouette_walking.mp4",
+   "seed": "weimer-0196",
+   "act": "ACT_4",
+   "srcSeconds": 9.513,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0197",
+   "start": 1221.831,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W113.png",
+   "seed": "weimer-0197",
+   "act": "ACT_4",
+   "treatment": "bleed",
+   "lift": 1.543
+  },
+  {
+   "id": "cut-0198",
+   "start": 1227.466,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W029.mp4",
+   "seed": "weimer-0198",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0199",
+   "start": 1233.745,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W030.mp4",
+   "seed": "weimer-0199",
+   "act": "ACT_4",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0200",
+   "start": 1240.024,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W031.mp4",
+   "seed": "weimer-0200",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0201",
+   "start": 1246.303,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W032.mp4",
+   "seed": "weimer-0201",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0202",
+   "start": 1252.582,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W033.mp4",
+   "seed": "weimer-0202",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0203",
+   "start": 1258.861,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W114.png",
+   "seed": "weimer-0203",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0204",
+   "start": 1264.496,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W034.mp4",
+   "seed": "weimer-0204",
+   "act": "ACT_4",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0205",
+   "start": 1270.775,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W035.mp4",
+   "seed": "weimer-0205",
+   "act": "ACT_4",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0206",
+   "start": 1277.054,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W036.mp4",
+   "seed": "weimer-0206",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0207",
+   "start": 1283.333,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W037.mp4",
+   "seed": "weimer-0207",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0208",
+   "start": 1289.612,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W038.mp4",
+   "seed": "weimer-0208",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0209",
+   "start": 1295.891,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W115.png",
+   "seed": "weimer-0209",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0210",
+   "start": 1301.526,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W040.mp4",
+   "seed": "weimer-0210",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0211",
+   "start": 1307.805,
+   "dur": 6.279,
+   "kind": "footage",
+   "src": "weimer/motion/W043.mp4",
+   "seed": "weimer-0211",
+   "act": "ACT_4",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0212",
+   "start": 1314.084,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W116.png",
+   "seed": "weimer-0212",
+   "act": "ACT_4",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0213",
+   "start": 1319.719,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W117.png",
+   "seed": "weimer-0213",
+   "act": "ACT_4",
+   "treatment": "duotone",
+   "lift": 1.173
+  },
+  {
+   "id": "cut-0214",
+   "start": 1325.354,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W118.png",
+   "seed": "weimer-0214",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0215",
+   "start": 1330.989,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W119.png",
+   "seed": "weimer-0215",
+   "act": "ACT_4",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0216",
+   "start": 1336.624,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W120.png",
+   "seed": "weimer-0216",
+   "act": "ACT_4",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0217",
+   "start": 1342.259,
+   "dur": 5.635,
+   "kind": "img",
+   "src": "weimer/img/W121.png",
+   "seed": "weimer-0217",
+   "act": "ACT_4",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0218",
+   "start": 1347.894,
+   "dur": 5.621,
+   "kind": "img",
+   "src": "weimer/img/W122.png",
+   "seed": "weimer-0218",
+   "act": "ACT_4",
+   "treatment": "bleed",
+   "lift": 1.55
+  },
+  {
+   "id": "cut-0219",
+   "start": 1353.515,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-26916__empty_playground_at_dusk.mp4",
+   "seed": "weimer-0219",
+   "act": "ACT_5",
+   "srcSeconds": 8.682,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0220",
+   "start": 1359.92,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W044.mp4",
+   "seed": "weimer-0220",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0221",
+   "start": 1366.325,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-3061__empty_road_sunset.mp4",
+   "seed": "weimer-0221",
+   "act": "ACT_5",
+   "srcSeconds": 12.3,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0222",
+   "start": 1372.73,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W045.mp4",
+   "seed": "weimer-0222",
+   "act": "ACT_5",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0223",
+   "start": 1379.135,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-31346__foggy_forest.mp4",
+   "seed": "weimer-0223",
+   "act": "ACT_5",
+   "srcSeconds": 48.315,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0224",
+   "start": 1385.54,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W123.png",
+   "seed": "weimer-0224",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.188
+  },
+  {
+   "id": "cut-0225",
+   "start": 1391.288,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-37836__american_suburb_aerial.mp4",
+   "seed": "weimer-0225",
+   "act": "ACT_5",
+   "srcSeconds": 19.102,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0226",
+   "start": 1397.693,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W046.mp4",
+   "seed": "weimer-0226",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0227",
+   "start": 1404.098,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-5675__lone_person_silhouette_walking.mp4",
+   "seed": "weimer-0227",
+   "act": "ACT_5",
+   "srcSeconds": 90.538,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0228",
+   "start": 1410.503,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W047.mp4",
+   "seed": "weimer-0228",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0229",
+   "start": 1416.908,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-6236__courthouse_steps.mp4",
+   "seed": "weimer-0229",
+   "act": "ACT_5",
+   "srcSeconds": 7.957,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0230",
+   "start": 1423.313,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W124.png",
+   "seed": "weimer-0230",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0231",
+   "start": 1429.061,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-8644__cell_tower_silhouette.mp4",
+   "seed": "weimer-0231",
+   "act": "ACT_5",
+   "srcSeconds": 32.533,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0232",
+   "start": 1435.466,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W048.mp4",
+   "seed": "weimer-0232",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0233",
+   "start": 1441.871,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9062__rural_road_america.mp4",
+   "seed": "weimer-0233",
+   "act": "ACT_5",
+   "srcSeconds": 105.45,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0234",
+   "start": 1448.276,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W049.mp4",
+   "seed": "weimer-0234",
+   "act": "ACT_5",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0235",
+   "start": 1454.681,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9064__rural_road_america.mp4",
+   "seed": "weimer-0235",
+   "act": "ACT_5",
+   "srcSeconds": 117.851,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0236",
+   "start": 1461.086,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W125.png",
+   "seed": "weimer-0236",
+   "act": "ACT_5",
+   "treatment": "bleed",
+   "lift": 1.25
+  },
+  {
+   "id": "cut-0237",
+   "start": 1466.834,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9208__small_town_main_street.mp4",
+   "seed": "weimer-0237",
+   "act": "ACT_5",
+   "srcSeconds": 7.0,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0238",
+   "start": 1473.239,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W050.mp4",
+   "seed": "weimer-0238",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0239",
+   "start": 1479.644,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9213__small_town_main_street.mp4",
+   "seed": "weimer-0239",
+   "act": "ACT_5",
+   "srcSeconds": 13.555,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0240",
+   "start": 1486.049,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W051.mp4",
+   "seed": "weimer-0240",
+   "act": "ACT_5",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0241",
+   "start": 1492.454,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9218__small_town_main_street.mp4",
+   "seed": "weimer-0241",
+   "act": "ACT_5",
+   "srcSeconds": 12.75,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0242",
+   "start": 1498.859,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W126.png",
+   "seed": "weimer-0242",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.367
+  },
+  {
+   "id": "cut-0243",
+   "start": 1504.607,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9226__small_town_main_street.mp4",
+   "seed": "weimer-0243",
+   "act": "ACT_5",
+   "srcSeconds": 15.9,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0244",
+   "start": 1511.012,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W052.mp4",
+   "seed": "weimer-0244",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0245",
+   "start": 1517.417,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/factory/AF-BG-9595__candle_in_dark.mp4",
+   "seed": "weimer-0245",
+   "act": "ACT_5",
+   "srcSeconds": 8.809,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0246",
+   "start": 1523.822,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W055.mp4",
+   "seed": "weimer-0246",
+   "act": "ACT_5",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0247",
+   "start": 1530.227,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W056.mp4",
+   "seed": "weimer-0247",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0248",
+   "start": 1536.632,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W127.png",
+   "seed": "weimer-0248",
+   "act": "ACT_5",
+   "treatment": "focus",
+   "lift": 1.038
+  },
+  {
+   "id": "cut-0249",
+   "start": 1542.38,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W057.mp4",
+   "seed": "weimer-0249",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0250",
+   "start": 1548.785,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W058.mp4",
+   "seed": "weimer-0250",
+   "act": "ACT_5",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0251",
+   "start": 1555.19,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W061.mp4",
+   "seed": "weimer-0251",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0252",
+   "start": 1561.595,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W062.mp4",
+   "seed": "weimer-0252",
+   "act": "ACT_5",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0253",
+   "start": 1568.0,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W065.mp4",
+   "seed": "weimer-0253",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0254",
+   "start": 1574.405,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W128.png",
+   "seed": "weimer-0254",
+   "act": "ACT_5",
+   "treatment": "bleed",
+   "lift": 1.119
+  },
+  {
+   "id": "cut-0255",
+   "start": 1580.153,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W066.mp4",
+   "seed": "weimer-0255",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0256",
+   "start": 1586.558,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W067.mp4",
+   "seed": "weimer-0256",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0257",
+   "start": 1592.963,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W068.mp4",
+   "seed": "weimer-0257",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0258",
+   "start": 1599.368,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W069.mp4",
+   "seed": "weimer-0258",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0259",
+   "start": 1605.773,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W071.mp4",
+   "seed": "weimer-0259",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0260",
+   "start": 1612.178,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W129.png",
+   "seed": "weimer-0260",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.275
+  },
+  {
+   "id": "cut-0261",
+   "start": 1617.926,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W073.mp4",
+   "seed": "weimer-0261",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0262",
+   "start": 1624.331,
+   "dur": 6.405,
+   "kind": "footage",
+   "src": "weimer/motion/W074.mp4",
+   "seed": "weimer-0262",
+   "act": "ACT_5",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0263",
+   "start": 1630.736,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W130.png",
+   "seed": "weimer-0263",
+   "act": "ACT_5",
+   "treatment": "focus",
+   "lift": 1.066
+  },
+  {
+   "id": "cut-0264",
+   "start": 1636.484,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W131.png",
+   "seed": "weimer-0264",
+   "act": "ACT_5",
+   "treatment": "bleed",
+   "lift": 1.531
+  },
+  {
+   "id": "cut-0265",
+   "start": 1642.232,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W132.png",
+   "seed": "weimer-0265",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.199
+  },
+  {
+   "id": "cut-0266",
+   "start": 1647.98,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W133.png",
+   "seed": "weimer-0266",
+   "act": "ACT_5",
+   "treatment": "focus",
+   "lift": 1.238
+  },
+  {
+   "id": "cut-0267",
+   "start": 1653.728,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W134.png",
+   "seed": "weimer-0267",
+   "act": "ACT_5",
+   "treatment": "bleed"
+  },
+  {
+   "id": "cut-0268",
+   "start": 1659.476,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W135.png",
+   "seed": "weimer-0268",
+   "act": "ACT_5",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0269",
+   "start": 1665.224,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W136.png",
+   "seed": "weimer-0269",
+   "act": "ACT_5",
+   "treatment": "focus"
+  },
+  {
+   "id": "cut-0270",
+   "start": 1670.972,
+   "dur": 5.748,
+   "kind": "img",
+   "src": "weimer/img/W137.png",
+   "seed": "weimer-0270",
+   "act": "ACT_5",
+   "treatment": "bleed",
+   "lift": 1.496
+  },
+  {
+   "id": "cut-0271",
+   "start": 1676.72,
+   "dur": 5.746,
+   "kind": "img",
+   "src": "weimer/img/W138.png",
+   "seed": "weimer-0271",
+   "act": "ACT_5",
+   "treatment": "duotone",
+   "lift": 1.179
+  },
+  {
+   "id": "cut-0272",
+   "start": 1682.466,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/factory/AFPART-0249__snow_falling_dark.mp4",
+   "seed": "weimer-0272",
+   "act": "ENDING",
+   "srcSeconds": 38.72,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0273",
+   "start": 1688.698,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/motion/W078.mp4",
+   "seed": "weimer-0273",
+   "act": "ENDING",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0274",
+   "start": 1694.93,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/factory/AFPART-0251__snow_falling_dark.mp4",
+   "seed": "weimer-0274",
+   "act": "ENDING",
+   "srcSeconds": 60.117,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0275",
+   "start": 1701.162,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/motion/W079.mp4",
+   "seed": "weimer-0275",
+   "act": "ENDING",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0276",
+   "start": 1707.394,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/factory/AFPART-0256__snow_falling_dark.mp4",
+   "seed": "weimer-0276",
+   "act": "ENDING",
+   "srcSeconds": 76.5,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0277",
+   "start": 1713.626,
+   "dur": 5.593,
+   "kind": "img",
+   "src": "weimer/img/W139.png",
+   "seed": "weimer-0277",
+   "act": "ENDING",
+   "treatment": "focus",
+   "lift": 1.55
+  },
+  {
+   "id": "cut-0278",
+   "start": 1719.219,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/factory/AFPART-0266__snow_falling_dark.mp4",
+   "seed": "weimer-0278",
+   "act": "ENDING",
+   "srcSeconds": 13.567,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0279",
+   "start": 1725.451,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/motion/W084.mp4",
+   "seed": "weimer-0279",
+   "act": "ENDING",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0280",
+   "start": 1731.683,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/factory/AFPART-1247__fireflies_at_night.mp4",
+   "seed": "weimer-0280",
+   "act": "ENDING",
+   "srcSeconds": 30.03,
+   "treatment": "footage"
+  },
+  {
+   "id": "cut-0281",
+   "start": 1737.915,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/motion/W141.mp4",
+   "seed": "weimer-0281",
+   "act": "ENDING",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0282",
+   "start": 1744.147,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/motion/W142.mp4",
+   "seed": "weimer-0282",
+   "act": "ENDING",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0283",
+   "start": 1750.379,
+   "dur": 5.593,
+   "kind": "img",
+   "src": "weimer/img/W140.png",
+   "seed": "weimer-0283",
+   "act": "ENDING",
+   "treatment": "bleed",
+   "lift": 1.145
+  },
+  {
+   "id": "cut-0284",
+   "start": 1755.972,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/motion/W144.mp4",
+   "seed": "weimer-0284",
+   "act": "ENDING",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0285",
+   "start": 1762.204,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/motion/W145.mp4",
+   "seed": "weimer-0285",
+   "act": "ENDING",
+   "srcSeconds": 3.367,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0286",
+   "start": 1768.436,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/motion/W147.mp4",
+   "seed": "weimer-0286",
+   "act": "ENDING",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0287",
+   "start": 1774.668,
+   "dur": 6.232,
+   "kind": "footage",
+   "src": "weimer/motion/W148.mp4",
+   "seed": "weimer-0287",
+   "act": "ENDING",
+   "srcSeconds": 3.366,
+   "treatment": "footage",
+   "loopSource": true
+  },
+  {
+   "id": "cut-0288",
+   "start": 1780.9,
+   "dur": 5.593,
+   "kind": "img",
+   "src": "weimer/img/W143.png",
+   "seed": "weimer-0288",
+   "act": "ENDING",
+   "treatment": "duotone"
+  },
+  {
+   "id": "cut-0289",
+   "start": 1786.493,
+   "dur": 5.593,
+   "kind": "img",
+   "src": "weimer/img/W146.png",
+   "seed": "weimer-0289",
+   "act": "ENDING",
+   "treatment": "focus",
+   "lift": 1.231
+  },
+  {
+   "id": "cut-0290",
+   "start": 1792.086,
+   "dur": 5.593,
+   "kind": "img",
+   "src": "weimer/img/W149.png",
+   "seed": "weimer-0290",
+   "act": "ENDING",
+   "treatment": "bleed",
+   "lift": 1.196
+  },
+  {
+   "id": "cut-0291",
+   "start": 1797.679,
+   "dur": 5.593,
+   "kind": "img",
+   "src": "weimer/img/W150.png",
+   "seed": "weimer-0291",
+   "act": "ENDING",
+   "treatment": "duotone"
+  }
+ ],
+ "captions": [
+  {
+   "start": 0.0,
+   "end": 3.672,
+   "text": "On the morning of the twenty-seventh of January,\ntwo thousand and one,"
+  },
+  {
+   "start": 3.422,
+   "end": 5.319,
+   "text": "a young woman in Connellsville,"
+  },
+  {
+   "start": 5.069,
+   "end": 8.87,
+   "text": "Pennsylvania told police officers where she\nhad been the night before."
+  },
+  {
+   "start": 8.92,
+   "end": 12.699,
+   "text": "She told them how she had got the marks\non her face and on her foot."
+  },
+  {
+   "start": 12.749,
+   "end": 18.336,
+   "text": "Her cousin said the same. Her sisters said\nthe same. So did the man she was seeing."
+  },
+  {
+   "start": 18.386,
+   "end": 22.201,
+   "text": "Within weeks the laboratory said the same, twice\nover —"
+  },
+  {
+   "start": 21.951,
+   "end": 26.299,
+   "text": "the blood on her shirt was his, and nothing\nat the scene was hers."
+  },
+  {
+   "start": 26.349,
+   "end": 30.454,
+   "text": "Then a man came forward twenty months late\nand took it back on the stand."
+  },
+  {
+   "start": 30.504,
+   "end": 32.612,
+   "text": "A dentist said she could not tell."
+  },
+  {
+   "start": 32.662,
+   "end": 34.62,
+   "text": "A second expert said he could,"
+  },
+  {
+   "start": 34.37,
+   "end": 38.481,
+   "text": "and when the timing did not work he changed\nthe timing without looking"
+  },
+  {
+   "start": 38.231,
+   "end": 39.367,
+   "text": "at anything new."
+  },
+  {
+   "start": 39.417,
+   "end": 41.791,
+   "text": "Fifteen years after that first morning,"
+  },
+  {
+   "start": 41.541,
+   "end": 45.693,
+   "text": "another expert examined the photographs taken\nof her injuries that day,"
+  },
+  {
+   "start": 45.443,
+   "end": 48.398,
+   "text": "and reported that she had been telling the truth."
+  },
+  {
+   "start": 48.748,
+   "end": 52.388,
+   "text": "By then Crystal Weimer had been in prison for more\nthan eleven years."
+  },
+  {
+   "start": 52.438,
+   "end": 59.015,
+   "text": "Nobody ever found anything. This is what happened\nin between. Not the trial."
+  },
+  {
+   "start": 59.065,
+   "end": 63.959,
+   "text": "The trial takes four minutes to describe and it\nis the least surprising part of it."
+  },
+  {
+   "start": 64.009,
+   "end": 67.782,
+   "text": "What is worth the time is the seven years\nbefore the arrest,"
+  },
+  {
+   "start": 67.532,
+   "end": 71.875,
+   "text": "and the eleven years after it, and how little\neither of them required."
+  },
+  {
+   "start": 73.425,
+   "end": 77.815,
+   "text": "Connellsville sits in Fayette County,\nin the south-west corner of Pennsylvania,"
+  },
+  {
+   "start": 77.565,
+   "end": 81.034,
+   "text": "where the hills start to fold. It is a small\nplace."
+  },
+  {
+   "start": 81.084,
+   "end": 83.744,
+   "text": "Small enough that a case does not stay quiet,"
+  },
+  {
+   "start": 83.494,
+   "end": 86.35,
+   "text": "because the people in it already know each other."
+  },
+  {
+   "start": 86.4,
+   "end": 89.583,
+   "text": "In the early hours of the twenty-seventh\nof January,"
+  },
+  {
+   "start": 89.333,
+   "end": 93.766,
+   "text": "officers from the Connellsville Police Department\nwent to the apartment"
+  },
+  {
+   "start": 93.516,
+   "end": 97.584,
+   "text": "of a man named Curtis Haith. They found him\noutside on the pavement."
+  },
+  {
+   "start": 97.634,
+   "end": 103.361,
+   "text": "He had been beaten. He had been shot in the face.\nCurtis Haith was twenty-one."
+  },
+  {
+   "start": 103.411,
+   "end": 105.286,
+   "text": "He wanted to be a chef."
+  },
+  {
+   "start": 105.336,
+   "end": 109.673,
+   "text": "At the officers' request, the District Attorney\ncame to the apartment herself."
+  },
+  {
+   "start": 109.723,
+   "end": 111.189,
+   "text": "Her name was Nancy Vernon,"
+  },
+  {
+   "start": 110.939,
+   "end": 113.344,
+   "text": "and she had been the elected District Attorney"
+  },
+  {
+   "start": 113.094,
+   "end": 115.314,
+   "text": "of Fayette County since the early nineties."
+  },
+  {
+   "start": 115.364,
+   "end": 118.491,
+   "text": "She took part in the investigation and helped\ndirect it,"
+  },
+  {
+   "start": 118.241,
+   "end": 120.397,
+   "text": "that morning and for years afterwards."
+  },
+  {
+   "start": 120.447,
+   "end": 124.737,
+   "text": "That detail matters later, and not for the reason\nit might seem to."
+  },
+  {
+   "start": 124.787,
+   "end": 127.9,
+   "text": "A prosecutor who advocates in court is protected"
+  },
+  {
+   "start": 127.65,
+   "end": 131.873,
+   "text": "by something called absolute immunity — she cannot\nbe sued for it,"
+  },
+  {
+   "start": 131.623,
+   "end": 133.953,
+   "text": "however wrong she turns out to be."
+  },
+  {
+   "start": 134.003,
+   "end": 138.897,
+   "text": "A prosecutor who acts as an investigator\nis not protected in the same way."
+  },
+  {
+   "start": 138.947,
+   "end": 142.619,
+   "text": "Where the line between those two things falls,\nin this case,"
+  },
+  {
+   "start": 142.369,
+   "end": 145.513,
+   "text": "took a federal appeals court twenty years\nto reach."
+  },
+  {
+   "start": 145.563,
+   "end": 148.599,
+   "text": "Inside, the search recovered DNA samples."
+  },
+  {
+   "start": 148.649,
+   "end": 152.289,
+   "text": "It also recovered a significant amount\nof drug-related evidence."
+  },
+  {
+   "start": 152.339,
+   "end": 155.747,
+   "text": "That second finding gave the investigation\nits early shape."
+  },
+  {
+   "start": 155.797,
+   "end": 160.677,
+   "text": "A man beaten and shot outside an apartment\nwith drugs in it, in a small town,"
+  },
+  {
+   "start": 160.427,
+   "end": 163.802,
+   "text": "on a night when the apartment had been full\nof people."
+  },
+  {
+   "start": 163.852,
+   "end": 167.318,
+   "text": "The neighbours told police that Haith\nhad been out that night,"
+  },
+  {
+   "start": 167.068,
+   "end": 171.489,
+   "text": "and that a dozen or more people had passed\nthrough his apartment between the evening"
+  },
+  {
+   "start": 171.239,
+   "end": 174.412,
+   "text": "of the twenty-sixth and the morning\nof the twenty-seventh."
+  },
+  {
+   "start": 174.462,
+   "end": 177.266,
+   "text": "So the officers began working through the list."
+  },
+  {
+   "start": 177.316,
+   "end": 181.302,
+   "text": "Everyone who had been at those parties. One\nafter another."
+  },
+  {
+   "start": 181.352,
+   "end": 185.921,
+   "text": "Where they had been, who they had left with, what\ntime they got home."
+  },
+  {
+   "start": 185.971,
+   "end": 189.75,
+   "text": "That is ordinary police work and there is nothing\nwrong with it."
+  },
+  {
+   "start": 189.8,
+   "end": 194.436,
+   "text": "A dozen people is a dozen people. Some of them\nwill remember badly."
+  },
+  {
+   "start": 194.486,
+   "end": 198.498,
+   "text": "Some of them will have reasons of their own\nto be careful about what they say."
+  },
+  {
+   "start": 198.548,
+   "end": 203.117,
+   "text": "The job is to keep going until the accounts either\nfit together or they do not."
+  },
+  {
+   "start": 203.167,
+   "end": 207.364,
+   "text": "An investigation that begins with a dozen equal\nnames ends with one of them."
+  },
+  {
+   "start": 207.414,
+   "end": 213.094,
+   "text": "Something has to do the narrowing. Physical\nevidence can do it. A witness can do it."
+  },
+  {
+   "start": 213.144,
+   "end": 214.612,
+   "text": "So can nothing at all,"
+  },
+  {
+   "start": 214.362,
+   "end": 218.454,
+   "text": "if one name simply stays in the file longer\nthan the others and starts"
+  },
+  {
+   "start": 218.204,
+   "end": 219.71,
+   "text": "to look like an answer."
+  },
+  {
+   "start": 219.76,
+   "end": 223.354,
+   "text": "On the twenty-seventh of January nothing\nhad narrowed anything."
+  },
+  {
+   "start": 223.404,
+   "end": 228.32,
+   "text": "Everyone on that list had been somewhere the night\nbefore. Everyone had an account."
+  },
+  {
+   "start": 228.37,
+   "end": 232.521,
+   "text": "Not one of those accounts had yet been set\nagainst anything outside itself."
+  },
+  {
+   "start": 232.571,
+   "end": 235.886,
+   "text": "Where the narrowing came from is the whole\nof this story."
+  },
+  {
+   "start": 235.936,
+   "end": 239.39,
+   "text": "One of the people on that list was a woman called\nCrystal Weimer."
+  },
+  {
+   "start": 239.44,
+   "end": 243.452,
+   "text": "She had three young daughters, and she was raising\nthe three of them on her own."
+  },
+  {
+   "start": 243.802,
+   "end": 246.124,
+   "text": "When they arrived at her house that morning,"
+  },
+  {
+   "start": 245.874,
+   "end": 249.068,
+   "text": "she was still wearing the clothes she had worn\nthe night before."
+  },
+  {
+   "start": 249.118,
+   "end": 253.94,
+   "text": "She had a minor injury to her face. She\nhad a minor injury to her foot."
+  },
+  {
+   "start": 253.99,
+   "end": 258.002,
+   "text": "There was what looked like mud on her clothes,\nand what looked like blood."
+  },
+  {
+   "start": 258.052,
+   "end": 262.921,
+   "text": "She told them her account without being asked\ntwice. She had been at the party."
+  },
+  {
+   "start": 262.971,
+   "end": 266.054,
+   "text": "She had given Haith a ride and dropped him\nat another party."
+  },
+  {
+   "start": 266.104,
+   "end": 269.675,
+   "text": "After that she had gone to the housing community\nwhere her mother"
+  },
+  {
+   "start": 269.425,
+   "end": 273.435,
+   "text": "and her sisters lived, and stayed there.\nHer cousin confirmed it."
+  },
+  {
+   "start": 273.485,
+   "end": 278.354,
+   "text": "Her sisters confirmed it. Michael Gibson, the man\nshe was seeing, confirmed it."
+  },
+  {
+   "start": 278.404,
+   "end": 280.372,
+   "text": "She explained the injuries too."
+  },
+  {
+   "start": 280.422,
+   "end": 283.737,
+   "text": "The foot was from horseplaying with Gibson a few\ndays earlier."
+  },
+  {
+   "start": 283.787,
+   "end": 287.566,
+   "text": "The eye, and the blood on the shirt,\nwere from a fight with Gibson."
+  },
+  {
+   "start": 287.616,
+   "end": 290.91,
+   "text": "That was the account she gave\non the twenty-seventh of January,"
+  },
+  {
+   "start": 290.66,
+   "end": 296.8,
+   "text": "two thousand and one. Where she was. Who she\nwas with. How she got the marks."
+  },
+  {
+   "start": 296.85,
+   "end": 299.544,
+   "text": "It is worth being precise about what happened"
+  },
+  {
+   "start": 299.294,
+   "end": 303.834,
+   "text": "to that account over the following fifteen years,\nbecause the answer is nothing."
+  },
+  {
+   "start": 303.884,
+   "end": 305.574,
+   "text": "She did not revise it."
+  },
+  {
+   "start": 305.624,
+   "end": 309.478,
+   "text": "She did not offer a second version when the first\none stopped working,"
+  },
+  {
+   "start": 309.228,
+   "end": 313.697,
+   "text": "because it never stopped working. Every other\naccount in this case moves."
+  },
+  {
+   "start": 313.747,
+   "end": 318.034,
+   "text": "Hers does not. Then the laboratory results came\nback."
+  },
+  {
+   "start": 318.084,
+   "end": 321.724,
+   "text": "The blood on Crystal Weimer's clothes was Michael\nGibson's blood."
+  },
+  {
+   "start": 321.774,
+   "end": 327.014,
+   "text": "Exactly as she had said. None of the DNA collected\nfrom the crime scene matched her."
+  },
+  {
+   "start": 327.064,
+   "end": 332.351,
+   "text": "Not one sample. And the samples that were there\nsuggested something else."
+  },
+  {
+   "start": 332.401,
+   "end": 334.694,
+   "text": "They suggested a male profile."
+  },
+  {
+   "start": 335.044,
+   "end": 339.917,
+   "text": "That is the whole of the physical evidence,\non the twenty-seventh of January,"
+  },
+  {
+   "start": 339.667,
+   "end": 344.996,
+   "text": "two thousand and one. It points away from her. It\ndoes not point at her once."
+  },
+  {
+   "start": 345.046,
+   "end": 347.386,
+   "text": "And it corroborated her, twice over."
+  },
+  {
+   "start": 347.436,
+   "end": 350.705,
+   "text": "She had said the blood was Gibson's, and it\nwas Gibson's."
+  },
+  {
+   "start": 350.755,
+   "end": 353.88,
+   "text": "She had said she had not been there when Haith\nwas killed,"
+  },
+  {
+   "start": 353.63,
+   "end": 355.695,
+   "text": "and nothing at the scene carried her."
+  },
+  {
+   "start": 355.745,
+   "end": 359.85,
+   "text": "A laboratory result has a property that nothing\nelse in this case has."
+  },
+  {
+   "start": 359.9,
+   "end": 362.053,
+   "text": "It does not change with retelling,"
+  },
+  {
+   "start": 361.803,
+   "end": 365.212,
+   "text": "and it was produced before anybody had a theory\nto protect."
+  },
+  {
+   "start": 365.262,
+   "end": 368.577,
+   "text": "There are two findings inside it and they\ndo different work."
+  },
+  {
+   "start": 368.627,
+   "end": 370.549,
+   "text": "The first is an exclusion."
+  },
+  {
+   "start": 370.599,
+   "end": 373.415,
+   "text": "None of the crime-scene samples were hers,"
+  },
+  {
+   "start": 373.165,
+   "end": 375.957,
+   "text": "and what was there suggested a male profile."
+  },
+  {
+   "start": 376.007,
+   "end": 379.276,
+   "text": "An exclusion is not proof that a person\nwas somewhere else."
+  },
+  {
+   "start": 379.326,
+   "end": 382.084,
+   "text": "It does mean the scene carried nothing of her."
+  },
+  {
+   "start": 382.134,
+   "end": 385.867,
+   "text": "The second is a confirmation, and it is the rarer\nof the two."
+  },
+  {
+   "start": 385.917,
+   "end": 390.46,
+   "text": "She had named the source of the blood on her own\nshirt on the first morning,"
+  },
+  {
+   "start": 390.21,
+   "end": 393.804,
+   "text": "before any testing existed. The testing agreed\nwith her."
+  },
+  {
+   "start": 393.854,
+   "end": 397.596,
+   "text": "A false account does not usually hand\nthe laboratory the one thing"
+  },
+  {
+   "start": 397.346,
+   "end": 402.481,
+   "text": "that can break it. And then nothing happened.\nThe file stayed open."
+  },
+  {
+   "start": 402.531,
+   "end": 408.675,
+   "text": "The investigation did not close and it\ndid not move. Winter went. Spring came."
+  },
+  {
+   "start": 408.725,
+   "end": 412.433,
+   "text": "The town did what towns do. Nobody was charged."
+  },
+  {
+   "start": 412.483,
+   "end": 415.937,
+   "text": "Nobody was cleared either,\nand those are not the same thing."
+  },
+  {
+   "start": 415.987,
+   "end": 419.788,
+   "text": "Being uncharged is not a finding. It\nis an absence."
+  },
+  {
+   "start": 419.838,
+   "end": 423.645,
+   "text": "The people who had been interviewed that January\nstayed interviewed,"
+  },
+  {
+   "start": 423.395,
+   "end": 427.426,
+   "text": "and stayed in a small town where everyone knew\nwho the police had spoken to."
+  },
+  {
+   "start": 427.476,
+   "end": 429.444,
+   "text": "Curtis Haith's family waited."
+  },
+  {
+   "start": 429.494,
+   "end": 433.691,
+   "text": "That is the part of an unsolved killing\nthat does not get filmed."
+  },
+  {
+   "start": 433.741,
+   "end": 438.142,
+   "text": "Somebody's son had been shot in the face\non a pavement, and the months went past,"
+  },
+  {
+   "start": 437.892,
+   "end": 441.953,
+   "text": "and there was nothing to tell them. Twenty months\nwent by like that."
+  },
+  {
+   "start": 443.503,
+   "end": 448.258,
+   "text": "In October of two thousand and two, a man named\nThomas Beal went to the police."
+  },
+  {
+   "start": 448.308,
+   "end": 451.159,
+   "text": "Weimer had dated Beal before she was seeing\nGibson."
+  },
+  {
+   "start": 451.209,
+   "end": 455.406,
+   "text": "What he told officers was that Weimer and Gibson\nhad killed Curtis Haith."
+  },
+  {
+   "start": 455.456,
+   "end": 458.725,
+   "text": "According to Beal, Weimer had told him something\nspecific."
+  },
+  {
+   "start": 458.775,
+   "end": 461.858,
+   "text": "She had told him that the blood on her clothes\nwas Haith's."
+  },
+  {
+   "start": 461.908,
+   "end": 465.446,
+   "text": "The DNA had already established, twenty months\nearlier,"
+  },
+  {
+   "start": 465.196,
+   "end": 467.824,
+   "text": "that the blood on her clothes was Gibson's."
+  },
+  {
+   "start": 467.874,
+   "end": 470.816,
+   "text": "So the first statement against her contained\na fact"
+  },
+  {
+   "start": 470.566,
+   "end": 472.907,
+   "text": "that the evidence had already ruled out."
+  },
+  {
+   "start": 473.257,
+   "end": 475.859,
+   "text": "There was a second half to what Beal reported,"
+  },
+  {
+   "start": 475.609,
+   "end": 480.308,
+   "text": "and the two halves are not the same kind of claim.\nThe first half was the blood."
+  },
+  {
+   "start": 480.358,
+   "end": 484.509,
+   "text": "That is checkable, and it had been checked, twenty\nmonths before he said it."
+  },
+  {
+   "start": 484.559,
+   "end": 488.385,
+   "text": "The second half was that Weimer and Gibson\nhad killed Curtis Haith."
+  },
+  {
+   "start": 488.435,
+   "end": 490.589,
+   "text": "Nothing can be set beside that."
+  },
+  {
+   "start": 490.639,
+   "end": 493.414,
+   "text": "No sample answers it, and no record answers it,"
+  },
+  {
+   "start": 493.164,
+   "end": 497.969,
+   "text": "and no document answers it either way.\nSo the statement arrived in two pieces."
+  },
+  {
+   "start": 498.019,
+   "end": 500.498,
+   "text": "One of them failed on the day it was made."
+  },
+  {
+   "start": 500.548,
+   "end": 504.412,
+   "text": "The other could not be made to fail,\nbecause nothing could reach it —"
+  },
+  {
+   "start": 504.162,
+   "end": 508.693,
+   "text": "and that was the piece that stayed in the case\nfor the next three and a half years."
+  },
+  {
+   "start": 509.043,
+   "end": 513.148,
+   "text": "There is a straightforward test available\nat that moment, and it costs nothing."
+  },
+  {
+   "start": 513.198,
+   "end": 518.113,
+   "text": "A witness reports a confession. The confession\ncontains a checkable detail."
+  },
+  {
+   "start": 518.163,
+   "end": 519.342,
+   "text": "Check it."
+  },
+  {
+   "start": 519.392,
+   "end": 524.42,
+   "text": "If the detail is wrong, the witness either\nmisremembered, or was told wrong,"
+  },
+  {
+   "start": 524.17,
+   "end": 528.558,
+   "text": "or is making it up — and you find\nout which before you build on him."
+  },
+  {
+   "start": 528.608,
+   "end": 532.223,
+   "text": "The detail was wrong. Beal was not set aside."
+  },
+  {
+   "start": 532.273,
+   "end": 534.69,
+   "text": "The investigation now had a direction,"
+  },
+  {
+   "start": 534.44,
+   "end": 539.213,
+   "text": "and the direction was a woman whose physical\nevidence had cleared her twenty months"
+  },
+  {
+   "start": 538.963,
+   "end": 541.092,
+   "text": "earlier. Around the same time,"
+  },
+  {
+   "start": 540.842,
+   "end": 544.247,
+   "text": "the Pennsylvania State Police Cold Case Squad\nbegan to assist."
+  },
+  {
+   "start": 544.297,
+   "end": 548.959,
+   "text": "A cold case unit exists because old files go stale\nin a particular way."
+  },
+  {
+   "start": 549.009,
+   "end": 552.347,
+   "text": "The people who worked them move on, memories\nharden,"
+  },
+  {
+   "start": 552.097,
+   "end": 554.739,
+   "text": "and the evidence stops being re-examined."
+  },
+  {
+   "start": 554.789,
+   "end": 559.029,
+   "text": "So a new team comes in with fresh eyes and looks\nagain at what is already"
+  },
+  {
+   "start": 558.779,
+   "end": 561.608,
+   "text": "in the box. The strength of that is obvious."
+  },
+  {
+   "start": 561.658,
+   "end": 564.563,
+   "text": "The weakness is less obvious and it is this:"
+  },
+  {
+   "start": 564.313,
+   "end": 569.546,
+   "text": "a fresh look at old material is still a look\nat old material. Nothing arrives."
+  },
+  {
+   "start": 569.596,
+   "end": 574.65,
+   "text": "What changes is who is reading it, and what they\nare reading it for. New people."
+  },
+  {
+   "start": 574.7,
+   "end": 578.408,
+   "text": "The same file. And now a name to test it against."
+  },
+  {
+   "start": 578.458,
+   "end": 582.702,
+   "text": "One of them went back through the autopsy\nphotographs of Curtis Haith's body."
+  },
+  {
+   "start": 582.752,
+   "end": 586.439,
+   "text": "And on his hand, she saw something she believed\nwas a bite mark."
+  },
+  {
+   "start": 586.489,
+   "end": 588.736,
+   "text": "Those photographs were not new."
+  },
+  {
+   "start": 588.786,
+   "end": 592.199,
+   "text": "They were taken at the autopsy, at the start\nof the case,"
+  },
+  {
+   "start": 591.949,
+   "end": 594.377,
+   "text": "and they had been in the file ever since."
+  },
+  {
+   "start": 594.427,
+   "end": 598.114,
+   "text": "The bite mark enters this case in the autumn\nof two thousand and two."
+  },
+  {
+   "start": 598.164,
+   "end": 601.34,
+   "text": "Nothing about the photograph changed in between."
+  },
+  {
+   "start": 601.39,
+   "end": 603.623,
+   "text": "What changed was who was reading it,"
+  },
+  {
+   "start": 603.373,
+   "end": 606.563,
+   "text": "and what else was sitting in the file beside it\nby then."
+  },
+  {
+   "start": 606.613,
+   "end": 609.417,
+   "text": "That is not a criticism of looking again."
+  },
+  {
+   "start": 609.467,
+   "end": 612.485,
+   "text": "Looking again is what a cold case squad is for,"
+  },
+  {
+   "start": 612.235,
+   "end": 615.847,
+   "text": "and sometimes the second reader is the one\nwho is right."
+  },
+  {
+   "start": 615.897,
+   "end": 620.534,
+   "text": "It only fixes the order of events. The accusation\ncame first."
+  },
+  {
+   "start": 620.584,
+   "end": 625.199,
+   "text": "A bite mark is not a fingerprint, and it\nwas not treated as one even then."
+  },
+  {
+   "start": 625.249,
+   "end": 629.201,
+   "text": "The comparison works by taking impressions\nof a suspect's teeth"
+  },
+  {
+   "start": 628.951,
+   "end": 631.443,
+   "text": "and matching the pattern to the injury."
+  },
+  {
+   "start": 631.493,
+   "end": 636.108,
+   "text": "So it depends on how the mark was left, and on how\nthe skin behaved afterwards."
+  },
+  {
+   "start": 636.158,
+   "end": 639.659,
+   "text": "And it depends on the judgement of the person\ndoing the looking."
+  },
+  {
+   "start": 639.709,
+   "end": 642.002,
+   "text": "It is the judgement that carries it."
+  },
+  {
+   "start": 642.352,
+   "end": 647.268,
+   "text": "A dentist in Fayette County was asked to analyse\nthe injury. She looked at it."
+  },
+  {
+   "start": 647.318,
+   "end": 651.629,
+   "text": "She compared it against teeth impressions. And she\nreached a conclusion."
+  },
+  {
+   "start": 651.679,
+   "end": 655.133,
+   "text": "Her conclusion was that Michael Gibson had bitten\nCurtis Haith."
+  },
+  {
+   "start": 655.183,
+   "end": 658.644,
+   "text": "Then she was given impressions of Crystal Weimer's\nteeth as well,"
+  },
+  {
+   "start": 658.394,
+   "end": 659.752,
+   "text": "and asked to look again."
+  },
+  {
+   "start": 659.802,
+   "end": 661.307,
+   "text": "After that comparison,"
+  },
+  {
+   "start": 661.057,
+   "end": 665.439,
+   "text": "she reported that she could not identify which set\nof teeth had caused the mark."
+  },
+  {
+   "start": 665.489,
+   "end": 669.826,
+   "text": "Read that sequence slowly, because the order of it\nis the whole point."
+  },
+  {
+   "start": 669.876,
+   "end": 671.937,
+   "text": "The first look produced a name."
+  },
+  {
+   "start": 671.987,
+   "end": 676.695,
+   "text": "The second look, with more material, produced less\ncertainty rather than more."
+  },
+  {
+   "start": 676.745,
+   "end": 681.36,
+   "text": "The honest answer, and she gave it,\nwas that the mark did not tell her who made it."
+  },
+  {
+   "start": 681.41,
+   "end": 683.703,
+   "text": "That should have been the end of the bite mark."
+  },
+  {
+   "start": 683.753,
+   "end": 687.029,
+   "text": "An examiner looked at the physical evidence twice,"
+  },
+  {
+   "start": 686.779,
+   "end": 689.356,
+   "text": "with more information the second time,"
+  },
+  {
+   "start": 689.106,
+   "end": 692.13,
+   "text": "and reported that it did not identify anybody."
+  },
+  {
+   "start": 692.18,
+   "end": 693.491,
+   "text": "A piece of evidence"
+  },
+  {
+   "start": 693.241,
+   "end": 698.096,
+   "text": "that cannot distinguish between two people\nis not evidence against either of them."
+  },
+  {
+   "start": 698.446,
+   "end": 702.804,
+   "text": "That is where the dentist stopped. She said she\ncould not tell."
+  },
+  {
+   "start": 702.854,
+   "end": 705.147,
+   "text": "So a different expert was brought in."
+  },
+  {
+   "start": 705.497,
+   "end": 708.255,
+   "text": "Here is what that expert was given to work with."
+  },
+  {
+   "start": 708.305,
+   "end": 710.738,
+   "text": "Photographs of the injury to Haith's hand."
+  },
+  {
+   "start": 710.788,
+   "end": 715.889,
+   "text": "Teeth impressions from Gibson and from Weimer.\nAnd Thomas Beal's statement."
+  },
+  {
+   "start": 715.939,
+   "end": 719.347,
+   "text": "He read the accusation, and then he examined\nthe evidence."
+  },
+  {
+   "start": 719.397,
+   "end": 721.737,
+   "text": "That order is not a small thing."
+  },
+  {
+   "start": 721.787,
+   "end": 726.077,
+   "text": "The point of a physical comparison is that it\ncan disagree with the story."
+  },
+  {
+   "start": 726.127,
+   "end": 727.917,
+   "text": "If the story arrives first,"
+  },
+  {
+   "start": 727.667,
+   "end": 732.461,
+   "text": "the comparison has been given somewhere to land\nbefore it has looked at anything."
+  },
+  {
+   "start": 732.511,
+   "end": 735.222,
+   "text": "Set the two examinations beside each other."
+  },
+  {
+   "start": 735.272,
+   "end": 738.262,
+   "text": "The dentist had the injury and two sets\nof impressions."
+  },
+  {
+   "start": 738.312,
+   "end": 742.881,
+   "text": "She produced a name, then withdrew it, and ended\nwith no identification at all."
+  },
+  {
+   "start": 742.931,
+   "end": 747.266,
+   "text": "The second expert had photographs of the same\ninjury and the same two sets"
+  },
+  {
+   "start": 747.016,
+   "end": 750.725,
+   "text": "of impressions. One item in his materials\nwas not in hers."
+  },
+  {
+   "start": 750.775,
+   "end": 755.205,
+   "text": "It was Thomas Beal's statement, and a statement\nis not physical evidence."
+  },
+  {
+   "start": 755.255,
+   "end": 757.688,
+   "text": "It cannot be compared with anything."
+  },
+  {
+   "start": 757.738,
+   "end": 759.703,
+   "text": "What it can do is tell a reader"
+  },
+  {
+   "start": 759.453,
+   "end": 764.79,
+   "text": "which of the two available answers is the one\nbeing looked for. Same injury."
+  },
+  {
+   "start": 764.84,
+   "end": 769.199,
+   "text": "The same two sets of teeth. One extra document,\nand a different result."
+  },
+  {
+   "start": 769.249,
+   "end": 772.703,
+   "text": "His conclusion was that the bite mark matched\nCrystal Weimer."
+  },
+  {
+   "start": 773.053,
+   "end": 777.643,
+   "text": "One dentist had said Gibson. Then she had said she\ncould not tell."
+  },
+  {
+   "start": 777.693,
+   "end": 781.751,
+   "text": "The next expert said Weimer, and he had been given\nthe name first."
+  },
+  {
+   "start": 781.801,
+   "end": 785.742,
+   "text": "That is the physical case. There is nothing else\nin it."
+  },
+  {
+   "start": 787.292,
+   "end": 791.443,
+   "text": "A problem surfaced with the bite mark, and it\nwas a serious one."
+  },
+  {
+   "start": 791.493,
+   "end": 793.74,
+   "text": "Nobody could say when it had happened."
+  },
+  {
+   "start": 793.79,
+   "end": 797.569,
+   "text": "A bite on a hand could have been left hours\nbefore a man died."
+  },
+  {
+   "start": 797.619,
+   "end": 800.052,
+   "text": "It could have been left days before."
+  },
+  {
+   "start": 800.102,
+   "end": 804.95,
+   "text": "If it was days before, it proved nothing\nabout the night of the murder at all."
+  },
+  {
+   "start": 805.0,
+   "end": 808.315,
+   "text": "So the question of timing was put back\nto the investigation."
+  },
+  {
+   "start": 808.365,
+   "end": 810.921,
+   "text": "Vernon directed officers to look into it,"
+  },
+  {
+   "start": 810.671,
+   "end": 814.487,
+   "text": "and the expert was asked to update his opinion. He\ndid."
+  },
+  {
+   "start": 814.537,
+   "end": 817.879,
+   "text": "He determined that the bite had occurred seven\nto ten minutes"
+  },
+  {
+   "start": 817.629,
+   "end": 819.338,
+   "text": "before Curtis Haith's death."
+  },
+  {
+   "start": 819.688,
+   "end": 823.514,
+   "text": "He reached that conclusion without reviewing any\nadditional evidence."
+  },
+  {
+   "start": 823.864,
+   "end": 827.943,
+   "text": "Nothing new had been found. Nothing new\nhad been tested."
+  },
+  {
+   "start": 827.993,
+   "end": 832.005,
+   "text": "The same photographs, the same impressions,\nthe same man."
+  },
+  {
+   "start": 832.055,
+   "end": 836.181,
+   "text": "A question was asked, and the answer moved. Seven\nto ten minutes."
+  },
+  {
+   "start": 836.231,
+   "end": 839.267,
+   "text": "Close enough to put her there at the moment he\ndied."
+  },
+  {
+   "start": 839.317,
+   "end": 841.703,
+   "text": "Consider what that number would require."
+  },
+  {
+   "start": 841.753,
+   "end": 845.068,
+   "text": "Not that the bite happened around the same time\nas the killing."
+  },
+  {
+   "start": 845.118,
+   "end": 848.294,
+   "text": "That it happened inside a window of about three\nminutes."
+  },
+  {
+   "start": 848.344,
+   "end": 851.705,
+   "text": "Identified from a photograph of a mark on skin."
+  },
+  {
+   "start": 851.755,
+   "end": 854.586,
+   "text": "By a man who had already given his opinion once,"
+  },
+  {
+   "start": 854.336,
+   "end": 857.206,
+   "text": "and was being asked whether he could make it fit."
+  },
+  {
+   "start": 857.256,
+   "end": 860.757,
+   "text": "There is a version\nof this that would have been unremarkable."
+  },
+  {
+   "start": 860.807,
+   "end": 863.138,
+   "text": "An expert goes back to his materials,"
+  },
+  {
+   "start": 862.888,
+   "end": 866.365,
+   "text": "finds something in them he had not weighed\nthe first time,"
+  },
+  {
+   "start": 866.115,
+   "end": 870.484,
+   "text": "reports that it narrows the timing, and says what\nhe looked at to get there."
+  },
+  {
+   "start": 870.534,
+   "end": 876.074,
+   "text": "That happens. It is ordinary work. The record\ndoes not describe that."
+  },
+  {
+   "start": 876.124,
+   "end": 879.811,
+   "text": "It describes an opinion updated without additional\nevidence."
+  },
+  {
+   "start": 879.861,
+   "end": 883.594,
+   "text": "An opinion that can move without new material\ncan move again."
+  },
+  {
+   "start": 883.644,
+   "end": 887.158,
+   "text": "Whatever produced that number, it\nwas not the material,"
+  },
+  {
+   "start": 886.908,
+   "end": 890.21,
+   "text": "because the material was identical\nbefore and after."
+  },
+  {
+   "start": 890.56,
+   "end": 894.965,
+   "text": "Meanwhile investigators went back to Thomas Beal.\nHe had a new version."
+  },
+  {
+   "start": 895.015,
+   "end": 898.191,
+   "text": "He now said that a third person had taken part\nin the murder."
+  },
+  {
+   "start": 898.241,
+   "end": 900.116,
+   "text": "A man he called Lonnie."
+  },
+  {
+   "start": 900.166,
+   "end": 905.06,
+   "text": "Officers investigated the name, at the direction\nof the police and of Vernon."
+  },
+  {
+   "start": 905.11,
+   "end": 907.682,
+   "text": "They established what had happened to Lonnie."
+  },
+  {
+   "start": 907.732,
+   "end": 911.419,
+   "text": "At the time Curtis Haith was killed, Lonnie\nwas incarcerated."
+  },
+  {
+   "start": 911.769,
+   "end": 915.966,
+   "text": "That is one of the few things in a criminal case\nthat settles without argument."
+  },
+  {
+   "start": 916.016,
+   "end": 917.984,
+   "text": "Custody records are dated."
+  },
+  {
+   "start": 918.034,
+   "end": 920.333,
+   "text": "They do not rest on anybody's memory,"
+  },
+  {
+   "start": 920.083,
+   "end": 923.532,
+   "text": "or on anybody's reason for remembering it\na particular way."
+  },
+  {
+   "start": 923.582,
+   "end": 926.108,
+   "text": "Beal had added a third person to the murder."
+  },
+  {
+   "start": 926.158,
+   "end": 929.566,
+   "text": "The third person was locked up on the night it\nhappened."
+  },
+  {
+   "start": 929.616,
+   "end": 933.953,
+   "text": "The court that later reviewed all of this wrote\none sentence about what followed."
+  },
+  {
+   "start": 934.303,
+   "end": 937.411,
+   "text": "\"Despite these puzzling changes to his story,"
+  },
+  {
+   "start": 937.161,
+   "end": 942.026,
+   "text": "Beal remained a key witness.\" In August of two\nthousand and three —"
+  },
+  {
+   "start": 941.776,
+   "end": 944.5,
+   "text": "two and a half years after the murder now —"
+  },
+  {
+   "start": 944.25,
+   "end": 947.366,
+   "text": "a prisoner named Conrad Blair contacted\nthe police."
+  },
+  {
+   "start": 947.416,
+   "end": 950.459,
+   "text": "Blair said that a fellow inmate, Joseph Stenger,"
+  },
+  {
+   "start": 950.209,
+   "end": 953.239,
+   "text": "had confessed to being involved in Haith's death."
+  },
+  {
+   "start": 953.289,
+   "end": 956.325,
+   "text": "Vernon and a Connellsville officer went\nto interview him."
+  },
+  {
+   "start": 956.375,
+   "end": 960.805,
+   "text": "Blair told them that Stenger, Weimer and Beal\nhad killed Curtis Haith."
+  },
+  {
+   "start": 960.855,
+   "end": 965.445,
+   "text": "He also handed over a written statement. He said\nStenger had written it."
+  },
+  {
+   "start": 965.495,
+   "end": 968.764,
+   "text": "The statement did not say what Blair said it said."
+  },
+  {
+   "start": 968.814,
+   "end": 972.826,
+   "text": "In the statement, Stenger was not involved\nin the killing at all."
+  },
+  {
+   "start": 972.876,
+   "end": 975.959,
+   "text": "He had only helped dispose of evidence, in a pond."
+  },
+  {
+   "start": 976.309,
+   "end": 979.584,
+   "text": "On the strength of that, Vernon helped assemble\na dive team,"
+  },
+  {
+   "start": 979.334,
+   "end": 980.924,
+   "text": "and they searched the pond."
+  },
+  {
+   "start": 980.974,
+   "end": 984.243,
+   "text": "Vernon and several officers also met\nwith Stenger's attorney."
+  },
+  {
+   "start": 984.293,
+   "end": 987.701,
+   "text": "The attorney told them his client had not written\nthe statement."
+  },
+  {
+   "start": 987.751,
+   "end": 991.67,
+   "text": "The record of this case does not say what\nthe divers found in the pond."
+  },
+  {
+   "start": 991.72,
+   "end": 993.41,
+   "text": "It does not need to."
+  },
+  {
+   "start": 993.46,
+   "end": 995.567,
+   "text": "By the time they were in the water,"
+  },
+  {
+   "start": 995.317,
+   "end": 998.882,
+   "text": "the document that sent them there had already\nbeen disowned"
+  },
+  {
+   "start": 998.632,
+   "end": 1000.536,
+   "text": "by the man whose name was on it,"
+  },
+  {
+   "start": 1000.286,
+   "end": 1005.735,
+   "text": "and it had already contradicted the man\nwho produced it. Three accusations now."
+  },
+  {
+   "start": 1005.785,
+   "end": 1009.346,
+   "text": "Beal, who had described blood the DNA had already\nruled out,"
+  },
+  {
+   "start": 1009.096,
+   "end": 1013.998,
+   "text": "and then added a man who was in prison. Blair,\nwhose document contradicted him."
+  },
+  {
+   "start": 1014.048,
+   "end": 1017.131,
+   "text": "Stenger, who had not written what was attributed\nto him."
+  },
+  {
+   "start": 1017.181,
+   "end": 1019.428,
+   "text": "None of it agreed with any of the rest of it."
+  },
+  {
+   "start": 1019.478,
+   "end": 1021.911,
+   "text": "And it is worth saying what was not there."
+  },
+  {
+   "start": 1021.961,
+   "end": 1025.549,
+   "text": "No physical evidence tying Crystal Weimer\nto the scene —"
+  },
+  {
+   "start": 1025.299,
+   "end": 1031.217,
+   "text": "that had been settled in two thousand and one.\nNo confession from her. No weapon."
+  },
+  {
+   "start": 1031.267,
+   "end": 1034.582,
+   "text": "No witness who put her at the apartment when Haith\nwas killed."
+  },
+  {
+   "start": 1034.632,
+   "end": 1038.721,
+   "text": "What existed was three men who had come forward\nat different times"
+  },
+  {
+   "start": 1038.471,
+   "end": 1040.46,
+   "text": "with incompatible accounts,"
+  },
+  {
+   "start": 1040.21,
+   "end": 1044.263,
+   "text": "and one comparison whose timing had been adjusted\nafter the fact."
+  },
+  {
+   "start": 1044.313,
+   "end": 1048.139,
+   "text": "There is a pattern in where those men\nwere standing when they spoke."
+  },
+  {
+   "start": 1048.189,
+   "end": 1051.294,
+   "text": "Beal came in of his own accord, twenty months\nlate,"
+  },
+  {
+   "start": 1051.044,
+   "end": 1055.38,
+   "text": "with a detail that had already been disproved.\nBlair was in prison."
+  },
+  {
+   "start": 1055.43,
+   "end": 1057.073,
+   "text": "Stenger was in prison."
+  },
+  {
+   "start": 1057.123,
+   "end": 1061.289,
+   "text": "Everything that pointed at Crystal Weimer came\nfrom someone with a reason"
+  },
+  {
+   "start": 1061.039,
+   "end": 1065.5,
+   "text": "to be talking to the police, and nothing\nthat pointed at her came from the scene."
+  },
+  {
+   "start": 1065.55,
+   "end": 1070.93,
+   "text": "None of that makes any of them liars. People\nin custody tell the truth all the time."
+  },
+  {
+   "start": 1070.98,
+   "end": 1075.441,
+   "text": "It only means that each account needed checking\nagainst something outside itself —"
+  },
+  {
+   "start": 1075.191,
+   "end": 1077.546,
+   "text": "and each time one was checked, it failed."
+  },
+  {
+   "start": 1079.096,
+   "end": 1081.702,
+   "text": "In late December of two thousand and three,"
+  },
+  {
+   "start": 1081.452,
+   "end": 1086.143,
+   "text": "officers prepared a criminal complaint charging\nCrystal Weimer with the murder"
+  },
+  {
+   "start": 1085.893,
+   "end": 1087.055,
+   "text": "of Curtis Haith."
+  },
+  {
+   "start": 1087.105,
+   "end": 1090.931,
+   "text": "The court that later reviewed the case described\nthe moment in one clause."
+  },
+  {
+   "start": 1090.981,
+   "end": 1096.259,
+   "text": "The complaint was prepared \"despite\nthe conflicting statements from Beal, Blair,"
+  },
+  {
+   "start": 1096.009,
+   "end": 1098.869,
+   "text": "and Stenger\". Nancy Vernon approved it."
+  },
+  {
+   "start": 1098.919,
+   "end": 1103.183,
+   "text": "In January of two thousand and four, three years\nafter Haith died,"
+  },
+  {
+   "start": 1102.933,
+   "end": 1104.928,
+   "text": "Crystal Weimer was arrested."
+  },
+  {
+   "start": 1105.278,
+   "end": 1109.615,
+   "text": "The court that reviewed all of this described what\nhappened next in seven words."
+  },
+  {
+   "start": 1109.965,
+   "end": 1114.853,
+   "text": "\"The case against Weimer fell apart almost\nimmediately.\" A preliminary hearing"
+  },
+  {
+   "start": 1114.603,
+   "end": 1115.716,
+   "text": "is not a trial."
+  },
+  {
+   "start": 1115.766,
+   "end": 1117.937,
+   "text": "It is a low bar, deliberately:"
+  },
+  {
+   "start": 1117.687,
+   "end": 1122.965,
+   "text": "the Commonwealth has only to show that a crime\nhappened and that there is enough"
+  },
+  {
+   "start": 1122.715,
+   "end": 1127.648,
+   "text": "to believe this defendant did it. Cases\nare not supposed to end there."
+  },
+  {
+   "start": 1127.698,
+   "end": 1131.152,
+   "text": "She was defended by the Fayette County Public\nDefender's Office."
+  },
+  {
+   "start": 1131.202,
+   "end": 1135.038,
+   "text": "A private defence would have cost around fifty\nthousand dollars,"
+  },
+  {
+   "start": 1134.788,
+   "end": 1137.35,
+   "text": "and she did not have fifty thousand dollars."
+  },
+  {
+   "start": 1137.4,
+   "end": 1141.272,
+   "text": "That is not unusual and it is not a scandal\non its own."
+  },
+  {
+   "start": 1141.322,
+   "end": 1144.99,
+   "text": "It only means that everything that follows\nhappened to somebody"
+  },
+  {
+   "start": 1144.74,
+   "end": 1147.47,
+   "text": "who could not buy her way out of any part of it."
+  },
+  {
+   "start": 1147.52,
+   "end": 1148.748,
+   "text": "At that hearing,"
+  },
+  {
+   "start": 1148.498,
+   "end": 1152.739,
+   "text": "the Commonwealth called Thomas Beal to the stand\nas a witness of fact."
+  },
+  {
+   "start": 1152.789,
+   "end": 1154.943,
+   "text": "Under oath, Beal took it all back."
+  },
+  {
+   "start": 1155.293,
+   "end": 1158.796,
+   "text": "He testified that an officer had — his words —"
+  },
+  {
+   "start": 1158.546,
+   "end": 1164.156,
+   "text": "\"kind of like coaxed me along on how to do it.\"\nThe judge dismissed the charges."
+  },
+  {
+   "start": 1164.206,
+   "end": 1168.354,
+   "text": "Crystal Weimer went home. She was home for six\nmonths."
+  },
+  {
+   "start": 1168.704,
+   "end": 1173.404,
+   "text": "\"Nevertheless, investigators continued to focus\ntheir efforts on Weimer.\" In July"
+  },
+  {
+   "start": 1173.154,
+   "end": 1176.567,
+   "text": "of two thousand and four, Joseph Stenger made\nan offer."
+  },
+  {
+   "start": 1176.617,
+   "end": 1179.607,
+   "text": "He told police he would implicate Weimer\nin the murder."
+  },
+  {
+   "start": 1179.657,
+   "end": 1183.642,
+   "text": "In exchange, he wanted a lighter sentence\non convictions of his own,"
+  },
+  {
+   "start": 1183.392,
+   "end": 1184.876,
+   "text": "in an unrelated matter."
+  },
+  {
+   "start": 1184.926,
+   "end": 1187.071,
+   "text": "On the strength of that statement,"
+  },
+  {
+   "start": 1186.821,
+   "end": 1191.12,
+   "text": "officers arrested Crystal Weimer for a second time\nand charged her again."
+  },
+  {
+   "start": 1191.17,
+   "end": 1192.953,
+   "text": "This time it went to trial."
+  },
+  {
+   "start": 1193.303,
+   "end": 1197.129,
+   "text": "The trial ran in Fayette County in the spring\nof two thousand and six."
+  },
+  {
+   "start": 1197.179,
+   "end": 1200.448,
+   "text": "The Commonwealth's case was the case it had always\nbeen."
+  },
+  {
+   "start": 1200.498,
+   "end": 1203.974,
+   "text": "The bite mark, with its timing. And the witnesses."
+  },
+  {
+   "start": 1204.024,
+   "end": 1208.221,
+   "text": "Among the witnesses were men who were in custody\nat the time they came forward."
+  },
+  {
+   "start": 1208.271,
+   "end": 1209.775,
+   "text": "Jailhouse informants."
+  },
+  {
+   "start": 1209.825,
+   "end": 1213.471,
+   "text": "Juries are generally sceptical of them,\nfor the obvious reason,"
+  },
+  {
+   "start": 1213.221,
+   "end": 1217.04,
+   "text": "and the standard way to handle that is to put\nthe question directly:"
+  },
+  {
+   "start": 1216.79,
+   "end": 1220.221,
+   "text": "are you getting anything for this? They\nwere asked."
+  },
+  {
+   "start": 1220.271,
+   "end": 1224.329,
+   "text": "They told the jury they were not receiving deals\nin exchange for their testimony."
+  },
+  {
+   "start": 1224.679,
+   "end": 1227.713,
+   "text": "On the seventh of April, two thousand and six,"
+  },
+  {
+   "start": 1227.463,
+   "end": 1232.288,
+   "text": "the jury convicted Crystal Weimer of third-degree\nmurder and of conspiracy"
+  },
+  {
+   "start": 1232.038,
+   "end": 1233.335,
+   "text": "to commit murder."
+  },
+  {
+   "start": 1233.385,
+   "end": 1236.053,
+   "text": "Third-degree murder, in Pennsylvania,"
+  },
+  {
+   "start": 1235.803,
+   "end": 1239.997,
+   "text": "is a killing done with malice but without\na specific intent to kill."
+  },
+  {
+   "start": 1240.047,
+   "end": 1244.025,
+   "text": "Conspiracy means an agreement with somebody else\nto commit the crime —"
+  },
+  {
+   "start": 1243.775,
+   "end": 1248.006,
+   "text": "although in this case no other person was ever\nconvicted of any part of it."
+  },
+  {
+   "start": 1248.056,
+   "end": 1253.039,
+   "text": "She was sentenced to fifteen to thirty years. Two\nthousand and seven."
+  },
+  {
+   "start": 1253.089,
+   "end": 1262.708,
+   "text": "Two thousand and eight. Nine. Ten. Eleven. Twelve.\nThirteen. Fourteen."
+  },
+  {
+   "start": 1263.058,
+   "end": 1268.97,
+   "text": "In those years the appeals ran their course,\nthe way appeals do, mostly on paper,"
+  },
+  {
+   "start": 1268.72,
+   "end": 1272.896,
+   "text": "mostly slowly. A trial record is reviewed\nfor errors of law."
+  },
+  {
+   "start": 1272.946,
+   "end": 1276.261,
+   "text": "It is not a second look at whether the story\nwas true."
+  },
+  {
+   "start": 1276.311,
+   "end": 1280.776,
+   "text": "Nothing in the ordinary appellate process\nwas going to surface a letter"
+  },
+  {
+   "start": 1280.526,
+   "end": 1285.453,
+   "text": "in a prosecutor's file or a scientist's change\nof mind. The town went on."
+  },
+  {
+   "start": 1285.503,
+   "end": 1289.004,
+   "text": "The main street lost another two shopfronts\nand gained one."
+  },
+  {
+   "start": 1289.054,
+   "end": 1293.405,
+   "text": "Children who were at school in two thousand\nand six had jobs by two thousand"
+  },
+  {
+   "start": 1293.155,
+   "end": 1295.92,
+   "text": "and fourteen. The ovens stayed cold."
+  },
+  {
+   "start": 1295.97,
+   "end": 1298.563,
+   "text": "Curtis Haith had been dead for thirteen years,"
+  },
+  {
+   "start": 1298.313,
+   "end": 1301.514,
+   "text": "and the conviction on the books said the matter\nwas settled."
+  },
+  {
+   "start": 1301.864,
+   "end": 1304.993,
+   "text": "Nothing about the case changed in any\nof those years."
+  },
+  {
+   "start": 1305.043,
+   "end": 1307.522,
+   "text": "The file was what it had always been."
+  },
+  {
+   "start": 1307.572,
+   "end": 1309.903,
+   "text": "Three statements that did not agree,"
+  },
+  {
+   "start": 1309.653,
+   "end": 1312.559,
+   "text": "and a bite mark whose timing had moved on request."
+  },
+  {
+   "start": 1312.609,
+   "end": 1317.085,
+   "text": "The court that reviewed the case recorded\nthe sentence as fifteen to thirty years."
+  },
+  {
+   "start": 1317.135,
+   "end": 1321.821,
+   "text": "Whichever number is exact, the shape of it\nis the same: at least fifteen years,"
+  },
+  {
+   "start": 1321.571,
+   "end": 1323.144,
+   "text": "and possibly twice that."
+  },
+  {
+   "start": 1323.194,
+   "end": 1326.834,
+   "text": "That is what a person is handed at the end\nof an afternoon in April."
+  },
+  {
+   "start": 1326.884,
+   "end": 1331.081,
+   "text": "A sentence like that also settles a great many\nsmaller questions at once."
+  },
+  {
+   "start": 1331.131,
+   "end": 1335.7,
+   "text": "Where a person will be on every ordinary day\nfor at least fifteen years."
+  },
+  {
+   "start": 1335.75,
+   "end": 1340.18,
+   "text": "Which visits are possible and how far someone\nhas to drive to make them."
+  },
+  {
+   "start": 1340.23,
+   "end": 1343.316,
+   "text": "What happens to a home, and to the things in it,"
+  },
+  {
+   "start": 1343.066,
+   "end": 1347.7,
+   "text": "and to whoever was depending on her. None\nof that appears in a court record."
+  },
+  {
+   "start": 1347.75,
+   "end": 1351.715,
+   "text": "It is simply the shape the years take once\nthe number is read out."
+  },
+  {
+   "start": 1353.265,
+   "end": 1356.429,
+   "text": "On the first of October, two thousand and fifteen,"
+  },
+  {
+   "start": 1356.179,
+   "end": 1360.713,
+   "text": "a judge vacated Crystal Weimer's convictions\nand granted her a new trial."
+  },
+  {
+   "start": 1360.763,
+   "end": 1364.124,
+   "text": "Vacating a conviction does not declare anybody\ninnocent."
+  },
+  {
+   "start": 1364.174,
+   "end": 1368.743,
+   "text": "It sets the verdict aside and returns the case\nto where it was before the trial."
+  },
+  {
+   "start": 1368.793,
+   "end": 1371.69,
+   "text": "In principle the Commonwealth can simply try\nagain."
+  },
+  {
+   "start": 1371.74,
+   "end": 1375.249,
+   "text": "So on the first of October, two thousand\nand fifteen,"
+  },
+  {
+   "start": 1374.999,
+   "end": 1377.331,
+   "text": "Crystal Weimer was not exonerated."
+  },
+  {
+   "start": 1377.381,
+   "end": 1380.584,
+   "text": "She was back at the start, nine years older,"
+  },
+  {
+   "start": 1380.334,
+   "end": 1383.854,
+   "text": "with the case against her still notionally alive."
+  },
+  {
+   "start": 1383.904,
+   "end": 1388.473,
+   "text": "What that decision did do was open the file\nto people who had not seen it before."
+  },
+  {
+   "start": 1388.523,
+   "end": 1393.603,
+   "text": "And over the next nine months, one piece\nat a time, the case came apart in public."
+  },
+  {
+   "start": 1393.953,
+   "end": 1395.875,
+   "text": "Joseph Stenger recanted."
+  },
+  {
+   "start": 1395.925,
+   "end": 1399.472,
+   "text": "He conceded that he had known nothing about Curtis\nHaith's murder."
+  },
+  {
+   "start": 1399.522,
+   "end": 1402.791,
+   "text": "And he said that police had walked him\nthrough his testimony."
+  },
+  {
+   "start": 1403.141,
+   "end": 1406.27,
+   "text": "The bite-mark expert disavowed what he had told\nthe jury."
+  },
+  {
+   "start": 1406.32,
+   "end": 1408.228,
+   "text": "The opinion he had given —"
+  },
+  {
+   "start": 1407.978,
+   "end": 1412.098,
+   "text": "that the mark on Curtis Haith's hand was Crystal\nWeimer's —"
+  },
+  {
+   "start": 1411.848,
+   "end": 1418.429,
+   "text": "he now described in two words. \"Junk science.\nHis words, about his own evidence."
+  },
+  {
+   "start": 1418.779,
+   "end": 1421.165,
+   "text": "That is not this film's assessment."
+  },
+  {
+   "start": 1421.215,
+   "end": 1426.155,
+   "text": "That is the man who gave the evidence, describing\nthe evidence he gave."
+  },
+  {
+   "start": 1426.505,
+   "end": 1429.719,
+   "text": "Then Weimer's lawyers went through the District\nAttorney's files,"
+  },
+  {
+   "start": 1429.469,
+   "end": 1433.185,
+   "text": "and they found letters. The letters\nwere from jailhouse informants."
+  },
+  {
+   "start": 1433.235,
+   "end": 1436.736,
+   "text": "The same informants who had testified\nagainst her at trial."
+  },
+  {
+   "start": 1436.786,
+   "end": 1441.161,
+   "text": "At trial, those witnesses had told the jury\nthat they were not receiving anything"
+  },
+  {
+   "start": 1440.911,
+   "end": 1445.927,
+   "text": "in exchange for their testimony. The letters\nshowed that they had asked for deals."
+  },
+  {
+   "start": 1445.977,
+   "end": 1447.945,
+   "text": "And that they may have received them."
+  },
+  {
+   "start": 1447.995,
+   "end": 1452.471,
+   "text": "There is one question the law expects a jury\nto ask about a jailhouse witness."
+  },
+  {
+   "start": 1452.521,
+   "end": 1454.536,
+   "text": "Are you getting anything for this."
+  },
+  {
+   "start": 1454.586,
+   "end": 1457.618,
+   "text": "That jury asked it, and they were given an answer,"
+  },
+  {
+   "start": 1457.368,
+   "end": 1459.712,
+   "text": "and the answer was not the whole of it."
+  },
+  {
+   "start": 1460.062,
+   "end": 1461.831,
+   "text": "Set the withdrawals in order,"
+  },
+  {
+   "start": 1461.581,
+   "end": 1463.714,
+   "text": "because by the middle of two thousand"
+  },
+  {
+   "start": 1463.464,
+   "end": 1466.86,
+   "text": "and sixteen there was very little left holding\nthe verdict up."
+  },
+  {
+   "start": 1466.91,
+   "end": 1470.826,
+   "text": "Beal took his account back in two thousand\nand four, on the stand,"
+  },
+  {
+   "start": 1470.576,
+   "end": 1472.222,
+   "text": "before the trial existed."
+  },
+  {
+   "start": 1472.272,
+   "end": 1475.912,
+   "text": "Stenger took his back, and said he had known\nnothing at all."
+  },
+  {
+   "start": 1475.962,
+   "end": 1479.091,
+   "text": "The expert took back the opinion he had given\nthe jury."
+  },
+  {
+   "start": 1479.141,
+   "end": 1482.888,
+   "text": "And the men who told that jury they were getting\nnothing had written to ask"
+  },
+  {
+   "start": 1482.638,
+   "end": 1487.261,
+   "text": "for something. Every one of those was removed\nby the person who had supplied it."
+  },
+  {
+   "start": 1487.311,
+   "end": 1490.069,
+   "text": "Not by a defence lawyer finding a hole in it."
+  },
+  {
+   "start": 1490.119,
+   "end": 1493.248,
+   "text": "Not by a new discovery about the night\nof the murder."
+  },
+  {
+   "start": 1493.298,
+   "end": 1496.613,
+   "text": "By the source, in each case, saying it\nhad not been so."
+  },
+  {
+   "start": 1496.963,
+   "end": 1501.439,
+   "text": "And an expert was asked to do something nobody\nhad done since the beginning."
+  },
+  {
+   "start": 1501.489,
+   "end": 1504.107,
+   "text": "He read Curtis Haith's autopsy report."
+  },
+  {
+   "start": 1504.157,
+   "end": 1508.485,
+   "text": "Then he looked at the photographs taken of Crystal\nWeimer's injuries on the morning"
+  },
+  {
+   "start": 1508.235,
+   "end": 1511.187,
+   "text": "of the twenty-seventh of January, two thousand\nand one."
+  },
+  {
+   "start": 1511.237,
+   "end": 1515.434,
+   "text": "His conclusion was that her injuries\nwere consistent with her account."
+  },
+  {
+   "start": 1515.484,
+   "end": 1518.845,
+   "text": "The horseplaying with Gibson, a few days\nbefore the murder."
+  },
+  {
+   "start": 1519.195,
+   "end": 1522.505,
+   "text": "On the twenty-seventh of June, two thousand\nand sixteen,"
+  },
+  {
+   "start": 1522.255,
+   "end": 1525.947,
+   "text": "the charges against Crystal Weimer were dropped\nwith prejudice."
+  },
+  {
+   "start": 1525.997,
+   "end": 1529.312,
+   "text": "That is the strongest form the ending of a case\ncan take."
+  },
+  {
+   "start": 1529.362,
+   "end": 1534.488,
+   "text": "A case can be dropped and refiled later; a case\ndropped with prejudice cannot."
+  },
+  {
+   "start": 1534.538,
+   "end": 1538.503,
+   "text": "The Commonwealth gave up the right to bring\nthat charge against her again."
+  },
+  {
+   "start": 1538.853,
+   "end": 1541.478,
+   "text": "In September of two thousand and seventeen,"
+  },
+  {
+   "start": 1541.228,
+   "end": 1545.719,
+   "text": "Crystal Weimer filed a civil rights lawsuit. She\nnamed Fayette County."
+  },
+  {
+   "start": 1545.769,
+   "end": 1550.638,
+   "text": "The Office of the Fayette County District\nAttorney. The City of Connellsville."
+  },
+  {
+   "start": 1550.688,
+   "end": 1555.418,
+   "text": "Several Connellsville police officers. One\nPennsylvania State Police officer."
+  },
+  {
+   "start": 1555.468,
+   "end": 1557.251,
+   "text": "And Nancy Vernon."
+  },
+  {
+   "start": 1557.301,
+   "end": 1559.493,
+   "text": "That case has taken years of its own,"
+  },
+  {
+   "start": 1559.243,
+   "end": 1563.488,
+   "text": "and most of the years have gone on a question\nthat is not about what happened"
+  },
+  {
+   "start": 1563.238,
+   "end": 1566.489,
+   "text": "to her at all. It is about who can be sued."
+  },
+  {
+   "start": 1566.539,
+   "end": 1568.558,
+   "text": "In two thousand and twenty,"
+  },
+  {
+   "start": 1568.308,
+   "end": 1572.813,
+   "text": "a federal appeals court took up what it called\n\"only a narrow sliver"
+  },
+  {
+   "start": 1572.563,
+   "end": 1576.749,
+   "text": "of this sweeping case\".\nNot whether the allegations were true."
+  },
+  {
+   "start": 1576.799,
+   "end": 1579.975,
+   "text": "Whether Vernon could be required to answer them\nat all."
+  },
+  {
+   "start": 1580.025,
+   "end": 1582.597,
+   "text": "The court drew the line where the law draws it."
+  },
+  {
+   "start": 1582.647,
+   "end": 1586.013,
+   "text": "Approving the criminal complaint was prosecuting,"
+  },
+  {
+   "start": 1585.763,
+   "end": 1588.284,
+   "text": "and for that she was absolutely immune."
+  },
+  {
+   "start": 1588.334,
+   "end": 1593.142,
+   "text": "But where Weimer alleged that Vernon had acted\nas an investigator —"
+  },
+  {
+   "start": 1592.892,
+   "end": 1597.41,
+   "text": "going to the scene, directing officers, assembling\na dive team —"
+  },
+  {
+   "start": 1597.16,
+   "end": 1599.73,
+   "text": "absolute immunity did not cover it."
+  },
+  {
+   "start": 1599.78,
+   "end": 1602.804,
+   "text": "On two of the claims the court went the other way,"
+  },
+  {
+   "start": 1602.554,
+   "end": 1606.038,
+   "text": "and held that Vernon was entitled to qualified\nimmunity,"
+  },
+  {
+   "start": 1605.788,
+   "end": 1610.247,
+   "text": "including for directing officers to investigate\nthe timing of the bite mark."
+  },
+  {
+   "start": 1610.297,
+   "end": 1614.561,
+   "text": "Qualified immunity is a different instrument\nfrom the absolute kind,"
+  },
+  {
+   "start": 1614.311,
+   "end": 1619.206,
+   "text": "and the two are easy to run together. Absolute\nimmunity attaches to a function."
+  },
+  {
+   "start": 1619.256,
+   "end": 1623.778,
+   "text": "If the act was prosecuting, nothing about how it\nwas done comes into it."
+  },
+  {
+   "start": 1623.828,
+   "end": 1627.004,
+   "text": "Qualified immunity attaches to the state\nof the law."
+  },
+  {
+   "start": 1627.054,
+   "end": 1631.464,
+   "text": "An official is shielded from a damages claim\nunless the conduct broke a rule"
+  },
+  {
+   "start": 1631.214,
+   "end": 1634.131,
+   "text": "that was already clearly established at the time."
+  },
+  {
+   "start": 1634.181,
+   "end": 1637.403,
+   "text": "So that half of the ruling is narrower than it\nsounds."
+  },
+  {
+   "start": 1637.453,
+   "end": 1640.768,
+   "text": "It is not a finding that the conduct was proper."
+  },
+  {
+   "start": 1640.818,
+   "end": 1643.994,
+   "text": "It is a finding about what the law had settled\nby then."
+  },
+  {
+   "start": 1644.344,
+   "end": 1648.82,
+   "text": "One more thing about that decision, and it matters\nfor everything you have heard."
+  },
+  {
+   "start": 1648.87,
+   "end": 1652.51,
+   "text": "On an appeal at that stage a court does not decide\nwhat is true."
+  },
+  {
+   "start": 1652.56,
+   "end": 1657.245,
+   "text": "It takes the plaintiff's account as given and asks\nwhether, if it were all true,"
+  },
+  {
+   "start": 1656.995,
+   "end": 1660.633,
+   "text": "the case could go forward. The court said\nso directly."
+  },
+  {
+   "start": 1660.683,
+   "end": 1665.066,
+   "text": "It accepted the facts as pleaded and drew\nthe inferences in her favour."
+  },
+  {
+   "start": 1665.116,
+   "end": 1670.548,
+   "text": "So the account in this film is the account\na federal appeals court was working from,"
+  },
+  {
+   "start": 1670.298,
+   "end": 1675.668,
+   "text": "and the dates and the documents inside it —\nthe DNA, the recantations, the letters,"
+  },
+  {
+   "start": 1675.418,
+   "end": 1680.666,
+   "text": "the disavowal — are on the record. What\nis not settled is what anybody intended."
+  },
+  {
+   "start": 1682.216,
+   "end": 1686.017,
+   "text": "Go back to the first morning. She told them where\nshe had been."
+  },
+  {
+   "start": 1686.067,
+   "end": 1687.71,
+   "text": "Her family said the same."
+  },
+  {
+   "start": 1687.76,
+   "end": 1692.05,
+   "text": "The blood on her shirt was Gibson's,\nand the laboratory confirmed it within weeks."
+  },
+  {
+   "start": 1692.1,
+   "end": 1696.855,
+   "text": "Nothing at the scene was hers, and what was there\nsuggested a man."
+  },
+  {
+   "start": 1696.905,
+   "end": 1698.288,
+   "text": "Fifteen years later,"
+  },
+  {
+   "start": 1698.038,
+   "end": 1702.086,
+   "text": "an expert looked at the photographs\nfrom that morning and said the marks"
+  },
+  {
+   "start": 1701.836,
+   "end": 1704.585,
+   "text": "on her were what she had always said they were."
+  },
+  {
+   "start": 1704.935,
+   "end": 1709.479,
+   "text": "Everything in between happened anyway.\nNot because someone found something."
+  },
+  {
+   "start": 1709.529,
+   "end": 1711.358,
+   "text": "Nobody ever found anything."
+  },
+  {
+   "start": 1711.408,
+   "end": 1714.831,
+   "text": "A witness came forward twenty months late\nwith a detail"
+  },
+  {
+   "start": 1714.581,
+   "end": 1718.747,
+   "text": "that had already been disproved, and then changed\nhis story twice,"
+  },
+  {
+   "start": 1718.497,
+   "end": 1721.921,
+   "text": "and then took it back on the stand — and the case\nwent on."
+  },
+  {
+   "start": 1721.971,
+   "end": 1726.366,
+   "text": "A dentist said she could not tell, and a second\nexpert was asked instead,"
+  },
+  {
+   "start": 1726.116,
+   "end": 1730.75,
+   "text": "and when the timing did not work the timing\nwas revised without anyone looking"
+  },
+  {
+   "start": 1730.5,
+   "end": 1731.648,
+   "text": "at anything new."
+  },
+  {
+   "start": 1731.998,
+   "end": 1735.963,
+   "text": "Crystal Weimer spent more than eleven years\nof her life in a prison cell."
+  },
+  {
+   "start": 1736.013,
+   "end": 1740.046,
+   "text": "Arrested in two thousand and four. Home for six\nmonths."
+  },
+  {
+   "start": 1740.096,
+   "end": 1744.825,
+   "text": "Convicted in two thousand and six. Cleared in two\nthousand and sixteen."
+  },
+  {
+   "start": 1745.175,
+   "end": 1749.512,
+   "text": "Curtis Haith was killed on the twenty-seventh\nof January, two thousand and one."
+  },
+  {
+   "start": 1749.562,
+   "end": 1752.645,
+   "text": "He was twenty-one years old, and he wanted\nto be a chef."
+  },
+  {
+   "start": 1752.695,
+   "end": 1755.731,
+   "text": "None of what you have heard establishes\nwho did it."
+  },
+  {
+   "start": 1755.781,
+   "end": 1760.032,
+   "text": "The convictions being vacated, the charges\nbeing dropped —"
+  },
+  {
+   "start": 1759.782,
+   "end": 1765.458,
+   "text": "that resolves one thing only,\nwhich is that the case against her was not a case."
+  },
+  {
+   "start": 1765.508,
+   "end": 1770.61,
+   "text": "His killing has never been answered.\nThat is the second thing this case did."
+  },
+  {
+   "start": 1770.66,
+   "end": 1775.383,
+   "text": "The first was to take eleven years from a woman\nthe physical evidence had cleared"
+  },
+  {
+   "start": 1775.133,
+   "end": 1776.669,
+   "text": "in two thousand and one."
+  },
+  {
+   "start": 1776.719,
+   "end": 1782.713,
+   "text": "The second was that while all of it was going on —\nthe statements, the retractions,"
+  },
+  {
+   "start": 1782.463,
+   "end": 1787.708,
+   "text": "the revised timing, the trial, the appeal,\nthe nine years, the letters —"
+  },
+  {
+   "start": 1787.458,
+   "end": 1792.966,
+   "text": "nobody was looking for whoever shot Curtis Haith.\nThe file had an answer in it."
+  },
+  {
+   "start": 1793.016,
+   "end": 1795.734,
+   "text": "It had had one since two thousand and four,"
+  },
+  {
+   "start": 1795.484,
+   "end": 1798.885,
+   "text": "when a witness stood up in a courtroom and took it\nback."
+  },
+  {
+   "start": 1798.935,
+   "end": 1803.272,
+   "text": "Everything after that was spent defending\nthe answer rather than testing it."
+  }
+ ],
+ "graphics": [],
+ "figures": [
+  {
+   "start": 5.578,
+   "end": 8.578,
+   "kind": "lowerthird",
+   "primary": "AI-assisted visualization",
+   "secondary": "symbolic reconstruction, no real likenesses"
+  },
+  {
+   "start": 19.533,
+   "end": 22.533,
+   "kind": "kinetic",
+   "lines": [
+    "SHE TOLD THEM",
+    "WHERE SHE HAD BEEN."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "WHERE"
+   ]
+  },
+  {
+   "start": 33.488,
+   "end": 36.488,
+   "kind": "stat",
+   "value": 4,
+   "label": "People who confirmed her account that morning"
+  },
+  {
+   "start": 47.443,
+   "end": 50.443,
+   "kind": "kinetic",
+   "lines": [
+    "NOBODY EVER",
+    "FOUND ANYTHING."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "ANYTHING"
+   ]
+  },
+  {
+   "start": 57.53,
+   "end": 60.53,
+   "kind": "lowerthird",
+   "primary": "FAYETTE COUNTY",
+   "secondary": "South-west Pennsylvania"
+  },
+  {
+   "start": 63.348,
+   "end": 66.348,
+   "kind": "numberticker",
+   "value": 11,
+   "label": "Years she spent in prison",
+   "group": false
+  },
+  {
+   "start": 69.166,
+   "end": 72.166,
+   "kind": "kinetic",
+   "lines": [
+    "NOT THE TRIAL.",
+    "THE ELEVEN YEARS."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "ELEVEN YEARS"
+   ]
+  },
+  {
+   "start": 84.943,
+   "end": 90.943,
+   "kind": "acttitle",
+   "title": "THE FIRST MORNING",
+   "kicker": "ACT ONE",
+   "index": 1
+  },
+  {
+   "start": 107.479,
+   "end": 113.479,
+   "kind": "lowerthird",
+   "primary": "CONNELLSVILLE",
+   "secondary": "Population about nine thousand, and falling"
+  },
+  {
+   "start": 130.015,
+   "end": 136.015,
+   "kind": "numberticker",
+   "value": 21,
+   "label": "Curtis Haith's age",
+   "group": false
+  },
+  {
+   "start": 152.551,
+   "end": 158.551,
+   "kind": "lowerthird",
+   "primary": "27 JANUARY 2001",
+   "secondary": "Early hours"
+  },
+  {
+   "start": 175.088,
+   "end": 181.088,
+   "kind": "mechanism",
+   "mechanism": "gears"
+  },
+  {
+   "start": 197.624,
+   "end": 203.624,
+   "kind": "stat",
+   "value": 12,
+   "label": "People who passed through the apartment that night"
+  },
+  {
+   "start": 220.16,
+   "end": 226.16,
+   "kind": "lowerthird",
+   "primary": "NANCY VERNON",
+   "secondary": "District Attorney of Fayette County; came to the scene herself"
+  },
+  {
+   "start": 242.696,
+   "end": 248.696,
+   "kind": "kinetic",
+   "lines": [
+    "A PROSECUTOR WHO ADVOCATES",
+    "IS IMMUNE.",
+    "A PROSECUTOR WHO INVESTIGATES",
+    "IS NOT."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "IS NOT"
+   ]
+  },
+  {
+   "start": 265.232,
+   "end": 271.232,
+   "kind": "lowerthird",
+   "primary": "CRYSTAL WEIMER",
+   "secondary": "Twenty-three years old; one name on the list"
+  },
+  {
+   "start": 287.768,
+   "end": 293.768,
+   "kind": "kinetic",
+   "lines": [
+    "STILL IN LAST NIGHT'S",
+    "CLOTHES."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "LAST NIGHT'S"
+   ]
+  },
+  {
+   "start": 310.304,
+   "end": 316.304,
+   "kind": "highlightring",
+   "cx": 0.47,
+   "cy": 0.55,
+   "r": 0.12,
+   "label": "A minor injury to the face. A minor injury to the foot."
+  },
+  {
+   "start": 332.84,
+   "end": 338.84,
+   "kind": "stat",
+   "value": 4,
+   "label": "Her cousin. Her sisters. Michael Gibson. All confirmed it."
+  },
+  {
+   "start": 355.377,
+   "end": 361.377,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "Crime-scene DNA samples matching Weimer",
+     "value": 0
+    },
+    {
+     "label": "Samples suggesting a male profile",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "start": 377.913,
+   "end": 383.913,
+   "kind": "kinetic",
+   "lines": [
+    "THE BLOOD ON HER SHIRT",
+    "WAS HIS."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "WAS HIS"
+   ]
+  },
+  {
+   "start": 400.449,
+   "end": 406.449,
+   "kind": "arrow",
+   "from": [
+    0.62,
+    0.42
+   ],
+   "to": [
+    0.28,
+    0.62
+   ],
+   "label": "Every piece of it pointed away from her"
+  },
+  {
+   "start": 422.985,
+   "end": 428.985,
+   "kind": "numberticker",
+   "value": 20,
+   "label": "Months in which nothing happened",
+   "group": false
+  },
+  {
+   "start": 453.585,
+   "end": 459.585,
+   "kind": "acttitle",
+   "title": "TWENTY MONTHS",
+   "kicker": "ACT TWO",
+   "index": 2
+  },
+  {
+   "start": 473.249,
+   "end": 479.249,
+   "kind": "lowerthird",
+   "primary": "OCTOBER 2002",
+   "secondary": "Twenty months after the murder"
+  },
+  {
+   "start": 492.913,
+   "end": 498.913,
+   "kind": "lowerthird",
+   "primary": "THOMAS BEAL",
+   "secondary": "An ex-boyfriend, arriving of his own accord"
+  },
+  {
+   "start": 512.577,
+   "end": 518.577,
+   "kind": "kinetic",
+   "lines": [
+    "HE SAID SHE TOLD HIM",
+    "THE BLOOD WAS HAITH'S."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "HAITH'S"
+   ]
+  },
+  {
+   "start": 532.241,
+   "end": 538.241,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "What Beal said the blood was",
+     "value": 0
+    },
+    {
+     "label": "What the laboratory had established twenty months earlier",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "start": 551.905,
+   "end": 557.905,
+   "kind": "kinetic",
+   "lines": [
+    "THE FIRST STATEMENT",
+    "AGAINST HER CONTAINED",
+    "A FACT ALREADY DISPROVED."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "ALREADY DISPROVED"
+   ]
+  },
+  {
+   "start": 571.569,
+   "end": 577.569,
+   "kind": "lowerthird",
+   "primary": "PA STATE POLICE COLD CASE SQUAD",
+   "secondary": "New people. The same file."
+  },
+  {
+   "start": 591.233,
+   "end": 597.233,
+   "kind": "spotlight",
+   "cx": 0.5,
+   "cy": 0.5,
+   "r": 0.2,
+   "dim": 0.72
+  },
+  {
+   "start": 610.898,
+   "end": 616.898,
+   "kind": "lowerthird",
+   "primary": "THE AUTOPSY PHOTOGRAPHS",
+   "secondary": "On the hand, something believed to be a bite mark"
+  },
+  {
+   "start": 630.562,
+   "end": 636.562,
+   "kind": "mechanism",
+   "mechanism": "gears"
+  },
+  {
+   "start": 650.226,
+   "end": 656.226,
+   "kind": "lowerthird",
+   "primary": "THE FIRST DENTIST",
+   "secondary": "Fayette County"
+  },
+  {
+   "start": 669.89,
+   "end": 675.89,
+   "kind": "kinetic",
+   "lines": [
+    "FIRST SHE SAID",
+    "GIBSON."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "GIBSON"
+   ]
+  },
+  {
+   "start": 689.554,
+   "end": 695.554,
+   "kind": "kinetic",
+   "lines": [
+    "THEN SHE SAID",
+    "SHE COULD NOT TELL."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "COULD NOT TELL"
+   ]
+  },
+  {
+   "start": 709.218,
+   "end": 715.218,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "Certainty after the first examination",
+     "value": 100
+    },
+    {
+     "label": "Certainty after being given more material",
+     "value": 0
+    }
+   ]
+  },
+  {
+   "start": 728.882,
+   "end": 734.882,
+   "kind": "lowerthird",
+   "primary": "THE SECOND EXPERT",
+   "secondary": "Given the photographs, the impressions — and Beal's statement"
+  },
+  {
+   "start": 748.546,
+   "end": 754.546,
+   "kind": "arrow",
+   "from": [
+    0.24,
+    0.34
+   ],
+   "to": [
+    0.7,
+    0.6
+   ],
+   "label": "The accusation arrived before the examination"
+  },
+  {
+   "start": 768.21,
+   "end": 774.21,
+   "kind": "kinetic",
+   "lines": [
+    "HE SAID",
+    "WEIMER."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "WEIMER"
+   ]
+  },
+  {
+   "start": 795.845,
+   "end": 801.845,
+   "kind": "acttitle",
+   "title": "NOTHING NEW",
+   "kicker": "ACT THREE",
+   "index": 3
+  },
+  {
+   "start": 812.451,
+   "end": 818.451,
+   "kind": "lowerthird",
+   "primary": "THE PROBLEM WITH THE MARK",
+   "secondary": "Nobody could say when it happened"
+  },
+  {
+   "start": 829.057,
+   "end": 835.057,
+   "kind": "highlightring",
+   "cx": 0.5,
+   "cy": 0.48,
+   "r": 0.13,
+   "label": "Hours before? Days before?"
+  },
+  {
+   "start": 845.663,
+   "end": 851.663,
+   "kind": "lowerthird",
+   "primary": "VERNON DIRECTED OFFICERS",
+   "secondary": "To investigate the timing"
+  },
+  {
+   "start": 862.27,
+   "end": 868.27,
+   "kind": "kinetic",
+   "lines": [
+    "HE WAS ASKED",
+    "TO UPDATE HIS OPINION."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "UPDATE"
+   ]
+  },
+  {
+   "start": 878.876,
+   "end": 884.876,
+   "kind": "numberticker",
+   "value": 10,
+   "label": "Minutes before death, at the outside",
+   "group": false
+  },
+  {
+   "start": 895.482,
+   "end": 901.482,
+   "kind": "kinetic",
+   "lines": [
+    "SEVEN TO TEN",
+    "MINUTES."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "SEVEN TO TEN"
+   ]
+  },
+  {
+   "start": 912.088,
+   "end": 918.088,
+   "kind": "quote",
+   "quote": "Without reviewing additional evidence, he determined the bite occurred seven to ten minutes before Haith's death.",
+   "attribution": "Weimer v. County of Fayette, 972 F.3d 177 (3d Cir. 2020)"
+  },
+  {
+   "start": 928.694,
+   "end": 934.694,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "New evidence examined before the opinion changed",
+     "value": 0
+    },
+    {
+     "label": "Opinions given",
+     "value": 2
+    }
+   ]
+  },
+  {
+   "start": 945.3,
+   "end": 951.3,
+   "kind": "kinetic",
+   "lines": [
+    "A QUESTION WAS ASKED.",
+    "THE ANSWER MOVED."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "THE ANSWER MOVED"
+   ]
+  },
+  {
+   "start": 961.906,
+   "end": 967.906,
+   "kind": "lowerthird",
+   "primary": "BEAL, AGAIN",
+   "secondary": "Now a third man had taken part"
+  },
+  {
+   "start": 978.512,
+   "end": 984.512,
+   "kind": "kinetic",
+   "lines": [
+    "THE MAN HE NAMED",
+    "WAS IN PRISON",
+    "THAT NIGHT."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "IN PRISON"
+   ]
+  },
+  {
+   "start": 995.118,
+   "end": 1001.118,
+   "kind": "quote",
+   "quote": "Despite these puzzling changes to his story, Beal remained a key witness.",
+   "attribution": "Weimer v. County of Fayette (3d Cir. 2020)"
+  },
+  {
+   "start": 1011.725,
+   "end": 1017.725,
+   "kind": "lowerthird",
+   "primary": "AUGUST 2003",
+   "secondary": "Conrad Blair, from prison"
+  },
+  {
+   "start": 1028.331,
+   "end": 1034.331,
+   "kind": "kinetic",
+   "lines": [
+    "HIS DOCUMENT",
+    "CONTRADICTED HIM."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "CONTRADICTED"
+   ]
+  },
+  {
+   "start": 1044.937,
+   "end": 1050.937,
+   "kind": "lowerthird",
+   "primary": "STENGER'S ATTORNEY",
+   "secondary": "His client did not write it"
+  },
+  {
+   "start": 1061.543,
+   "end": 1067.543,
+   "kind": "stat",
+   "value": 3,
+   "label": "Accusations. None of them agreed with any other."
+  },
+  {
+   "start": 1087.13,
+   "end": 1093.13,
+   "kind": "acttitle",
+   "title": "ELEVEN SPRINGS",
+   "kicker": "ACT FOUR",
+   "index": 4
+  },
+  {
+   "start": 1102.699,
+   "end": 1108.699,
+   "kind": "lowerthird",
+   "primary": "DECEMBER 2003",
+   "secondary": "The complaint is prepared"
+  },
+  {
+   "start": 1118.268,
+   "end": 1124.268,
+   "kind": "quote",
+   "quote": "despite the conflicting statements",
+   "attribution": "Weimer v. County of Fayette (3d Cir. 2020), on the criminal complaint"
+  },
+  {
+   "start": 1133.837,
+   "end": 1139.837,
+   "kind": "lowerthird",
+   "primary": "JANUARY 2004",
+   "secondary": "Arrested — three years after the death"
+  },
+  {
+   "start": 1149.405,
+   "end": 1155.405,
+   "kind": "kinetic",
+   "lines": [
+    "THE CASE FELL APART",
+    "ALMOST IMMEDIATELY."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "IMMEDIATELY"
+   ]
+  },
+  {
+   "start": 1164.974,
+   "end": 1170.974,
+   "kind": "quote",
+   "quote": "kind of like coaxed me along on how to do it",
+   "attribution": "Thomas Beal, recanting under oath at the preliminary hearing"
+  },
+  {
+   "start": 1180.543,
+   "end": 1186.543,
+   "kind": "kinetic",
+   "lines": [
+    "THE CHARGES",
+    "WERE DISMISSED."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "DISMISSED"
+   ]
+  },
+  {
+   "start": 1196.112,
+   "end": 1202.112,
+   "kind": "numberticker",
+   "value": 6,
+   "label": "Months she was home",
+   "group": false
+  },
+  {
+   "start": 1211.68,
+   "end": 1217.68,
+   "kind": "quote",
+   "quote": "Nevertheless, investigators continued to focus their efforts on Weimer.",
+   "attribution": "Weimer v. County of Fayette (3d Cir. 2020)"
+  },
+  {
+   "start": 1227.249,
+   "end": 1233.249,
+   "kind": "lowerthird",
+   "primary": "JULY 2004",
+   "secondary": "A prisoner offers to implicate her for a lighter sentence"
+  },
+  {
+   "start": 1242.818,
+   "end": 1248.818,
+   "kind": "arrow",
+   "from": [
+    0.3,
+    0.66
+   ],
+   "to": [
+    0.68,
+    0.36
+   ],
+   "label": "Second arrest, on that statement"
+  },
+  {
+   "start": 1258.387,
+   "end": 1264.387,
+   "kind": "lowerthird",
+   "primary": "THE TRIAL",
+   "secondary": "Fayette County, spring 2006"
+  },
+  {
+   "start": 1273.956,
+   "end": 1279.956,
+   "kind": "kinetic",
+   "lines": [
+    "THE INFORMANTS TOLD",
+    "THE JURY THEY WERE",
+    "GETTING NOTHING."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NOTHING"
+   ]
+  },
+  {
+   "start": 1289.524,
+   "end": 1295.524,
+   "kind": "lowerthird",
+   "primary": "7 APRIL 2006",
+   "secondary": "Third-degree murder. Conspiracy."
+  },
+  {
+   "start": 1305.093,
+   "end": 1311.093,
+   "kind": "casetimeline_c",
+   "events": [
+    {
+     "year": "2007",
+     "text": ""
+    },
+    {
+     "year": "2009",
+     "text": ""
+    },
+    {
+     "year": "2011",
+     "text": ""
+    },
+    {
+     "year": "2013",
+     "text": ""
+    },
+    {
+     "year": "2014",
+     "text": "Nothing about the case changed"
+    }
+   ]
+  },
+  {
+   "start": 1320.662,
+   "end": 1326.662,
+   "kind": "stat",
+   "value": 28,
+   "label": "Her age when the jury came back"
+  },
+  {
+   "start": 1336.231,
+   "end": 1342.231,
+   "kind": "lowerthird",
+   "primary": "FIFTEEN TO THIRTY YEARS",
+   "secondary": "as recorded by the reviewing court"
+  },
+  {
+   "start": 1362.911,
+   "end": 1368.911,
+   "kind": "acttitle",
+   "title": "WHAT CAME OUT",
+   "kicker": "ACT FIVE",
+   "index": 5
+  },
+  {
+   "start": 1381.702,
+   "end": 1387.702,
+   "kind": "lowerthird",
+   "primary": "1 OCTOBER 2015",
+   "secondary": "The convictions are vacated"
+  },
+  {
+   "start": 1400.493,
+   "end": 1406.493,
+   "kind": "kinetic",
+   "lines": [
+    "VACATED IS NOT",
+    "EXONERATED."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NOT"
+   ]
+  },
+  {
+   "start": 1419.284,
+   "end": 1425.284,
+   "kind": "lowerthird",
+   "primary": "JOSEPH STENGER",
+   "secondary": "Recants"
+  },
+  {
+   "start": 1438.076,
+   "end": 1444.076,
+   "kind": "kinetic",
+   "lines": [
+    "HE KNEW NOTHING.",
+    "POLICE WALKED HIM",
+    "THROUGH IT."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NOTHING"
+   ]
+  },
+  {
+   "start": 1456.867,
+   "end": 1462.867,
+   "kind": "lowerthird",
+   "primary": "THE BITE-MARK EXPERT",
+   "secondary": "Disavows his own trial testimony"
+  },
+  {
+   "start": 1475.658,
+   "end": 1481.658,
+   "kind": "quote",
+   "quote": "junk science",
+   "attribution": "The bite-mark expert, describing the opinion he gave the jury"
+  },
+  {
+   "start": 1494.449,
+   "end": 1500.449,
+   "kind": "kinetic",
+   "lines": [
+    "THAT IS NOT",
+    "THIS FILM'S VERDICT.",
+    "IT IS HIS."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "IT IS HIS"
+   ]
+  },
+  {
+   "start": 1513.24,
+   "end": 1519.24,
+   "kind": "lowerthird",
+   "primary": "THE LETTERS IN THE FILE",
+   "secondary": "From the informants who testified they had no deals"
+  },
+  {
+   "start": 1532.032,
+   "end": 1538.032,
+   "kind": "compbars",
+   "items": [
+    {
+     "label": "What the jury was told",
+     "value": 0
+    },
+    {
+     "label": "Requests for deals found in the file",
+     "value": 1
+    }
+   ]
+  },
+  {
+   "start": 1550.823,
+   "end": 1556.823,
+   "kind": "lowerthird",
+   "primary": "2016",
+   "secondary": "An expert reads the autopsy report and the photographs from that first morning"
+  },
+  {
+   "start": 1569.614,
+   "end": 1575.614,
+   "kind": "kinetic",
+   "lines": [
+    "HER INJURIES MATCHED",
+    "WHAT SHE SAID",
+    "IN 2001."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "MATCHED"
+   ]
+  },
+  {
+   "start": 1588.405,
+   "end": 1594.405,
+   "kind": "lowerthird",
+   "primary": "27 JUNE 2016",
+   "secondary": "Charges dropped with prejudice"
+  },
+  {
+   "start": 1607.197,
+   "end": 1613.197,
+   "kind": "kinetic",
+   "lines": [
+    "THEY CANNOT",
+    "CHARGE HER AGAIN."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "CANNOT"
+   ]
+  },
+  {
+   "start": 1625.988,
+   "end": 1631.988,
+   "kind": "lowerthird",
+   "primary": "SEPTEMBER 2017",
+   "secondary": "She files a civil rights suit"
+  },
+  {
+   "start": 1644.779,
+   "end": 1650.779,
+   "kind": "quote",
+   "quote": "only a narrow sliver of this sweeping case",
+   "attribution": "The Third Circuit, 2020, on what its decision covered"
+  },
+  {
+   "start": 1663.57,
+   "end": 1669.57,
+   "kind": "kinetic",
+   "lines": [
+    "NOT WHETHER IT",
+    "WAS TRUE.",
+    "WHETHER SHE COULD",
+    "EVEN BE ASKED."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "EVEN BE ASKED"
+   ]
+  },
+  {
+   "start": 1689.423,
+   "end": 1695.423,
+   "kind": "casetimeline_c",
+   "events": [
+    {
+     "year": "27 Jan 2001",
+     "text": "She gives her account. The blood is Gibson's."
+    },
+    {
+     "year": "Oct 2002",
+     "text": "A witness arrives, twenty months late"
+    },
+    {
+     "year": "Jan 2004",
+     "text": "Arrested. He recants. Dismissed."
+    },
+    {
+     "year": "Apr 2006",
+     "text": "Convicted."
+    },
+    {
+     "year": "Oct 2015",
+     "text": "Vacated"
+    },
+    {
+     "year": "Jun 2016",
+     "text": "Dropped with prejudice"
+    }
+   ]
+  },
+  {
+   "start": 1703.336,
+   "end": 1709.336,
+   "kind": "kinetic",
+   "lines": [
+    "EVERYTHING IN BETWEEN",
+    "HAPPENED ANYWAY."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "ANYWAY"
+   ]
+  },
+  {
+   "start": 1717.249,
+   "end": 1723.249,
+   "kind": "numberticker",
+   "value": 11,
+   "label": "Years, more than",
+   "group": false
+  },
+  {
+   "start": 1731.162,
+   "end": 1737.162,
+   "kind": "stat",
+   "value": 0,
+   "label": "Times her account changed"
+  },
+  {
+   "start": 1745.076,
+   "end": 1751.076,
+   "kind": "kinetic",
+   "lines": [
+    "NOBODY EVER",
+    "FOUND ANYTHING."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "ANYTHING"
+   ]
+  },
+  {
+   "start": 1758.989,
+   "end": 1764.989,
+   "kind": "lowerthird",
+   "primary": "CURTIS HAITH",
+   "secondary": "Killed 27 January 2001. He was twenty-one."
+  },
+  {
+   "start": 1772.902,
+   "end": 1778.902,
+   "kind": "kinetic",
+   "lines": [
+    "HIS KILLING HAS",
+    "NEVER BEEN ANSWERED."
+   ],
+   "style": "emphasis",
+   "emphasisWords": [
+    "NEVER"
+   ]
+  },
+  {
+   "start": 1786.815,
+   "end": 1792.815,
+   "kind": "lowerthird",
+   "primary": "AI-assisted visualization",
+   "secondary": "symbolic reconstruction, no real likenesses"
+  }
+ ],
+ "overlays": []
+}
