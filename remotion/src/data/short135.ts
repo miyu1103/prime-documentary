@@ -55,7 +55,6 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p31', src: 'shorts/short135/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // a front door standing wide open onto daylight
   {line: 'L6', id: 'p32', src: 'shorts/short135/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a row of house windows along a residential street
   {line: 'L6', id: 'p34', src: 'shorts/short135/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // a mailbox standing at the end of a driveway
-  {line: 'L6', id: 'p35', src: 'shorts/short135/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // laundry hanging on a line in a back garden
   {line: 'L7', id: 'p37', src: 'shorts/short135/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // a hand hanging a telephone handset back on its hook
   {line: 'L7', id: 'p38', src: 'shorts/short135/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // a doorway with no door left in a bare wall
   {line: 'L7', id: 'p39', src: 'shorts/short135/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // a hand holding a phone to an ear outdoors
