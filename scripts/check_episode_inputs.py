@@ -185,7 +185,22 @@ def main() -> int:
     # courtroom plates went missing between here and the render; they are named now, so their
     # absence is a listed problem instead of a discovery.
     mandatory = list(spec.get("mandatory_stills") or [])
-    absent = [s for s in mandatory if not (pub / "img" / s).is_file()]
+    # MATCH ON THE STEM, THE SAME RULE check_spec_satisfied.py ALREADY USES.
+    # A commissioned plate can reach the film as img/W001.png or, once it has been given
+    # motion (i2v), as motion/W001.mp4 -- the same picture in a different container. EP61
+    # weimer converts 64 of its 150 plates precisely because a 43-clip footage pool cannot
+    # otherwise carry a 30-minute film above the 68% video floor. Demanding the PNG here while
+    # the post-build gate accepts either one made the two checks disagree about the same film,
+    # and the pre-flight was the one that was wrong. This does NOT weaken anything: a plate
+    # that exists in NO form is still listed.
+    def _staged(name: str) -> bool:
+        stem = name.rsplit(".", 1)[0]
+        if (pub / "img" / name).is_file():
+            return True
+        return any((pub / "motion" / f"{stem}{ext}").is_file()
+                   for ext in (".mp4", ".mov", ".webm"))
+
+    absent = [s for s in mandatory if not _staged(s)]
     if absent:
         problems.append(f"{len(absent)} of {len(mandatory)} mandatory_stills are not in "
                         f"remotion/public/{slug}/img: {', '.join(absent)}")

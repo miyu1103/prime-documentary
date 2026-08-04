@@ -16,6 +16,17 @@ SLUG="${1:?usage: _chain_i2v_robust.sh <slug> <target> [kinds] [chunk]}"
 TARGET="${2:?target clip count required}"
 KINDS="${3:-M}"
 CHUNK="${4:-12}"
+# Optional 5th arg: comma-separated substrings naming the ONLY source plates to convert.
+# EP61 weimer motion-converts a named 65 of its 150 commissioned stills; the rest must stay
+# stills. Empty = every plate matching KINDS, exactly as before.
+ONLY="${5:-}"
+# Optional 6th arg: Wan clip length in frames. 81 (the batch default) assembles to 3.4s, which
+# has to LOOP inside EP61 weimer's ~5.9s cuts; 121 is the 5B model's native length and covers it.
+LENGTH="${6:-}"
+# Optional env: constrain WHAT may move. See the --prompt/--neg note in i2v_episode_batch.py.
+I2V_PROMPT="${I2V_PROMPT:-}"
+I2V_NEG="${I2V_NEG:-}"
+I2V_SEED_BASE="${I2V_SEED_BASE:-}"
 MAX_ATTEMPTS=60
 
 LOCK="out_i2v_${SLUG}.lock"
@@ -70,7 +81,7 @@ while [ "$(count_done)" -lt "$TARGET" ] && [ $attempt -lt $MAX_ATTEMPTS ]; do
   kill_comfy
   sleep 3
   ensure_comfy || { sleep 15; continue; }
-  I2V_MAX="$CHUNK" py -3.11 scripts/i2v_episode_batch.py --slug "$SLUG" --kinds "$KINDS" >> "$LOG" 2>&1
+  I2V_MAX="$CHUNK" py -3.11 scripts/i2v_episode_batch.py --slug "$SLUG" --kinds "$KINDS" ${ONLY:+--only "$ONLY"} ${LENGTH:+--length "$LENGTH"} ${I2V_PROMPT:+--prompt "$I2V_PROMPT"} ${I2V_NEG:+--neg "$I2V_NEG"} ${I2V_SEED_BASE:+--seed-base "$I2V_SEED_BASE"} >> "$LOG" 2>&1
   after=$(count_done)
   echo "[chain:$SLUG] chunk end done=$after/$TARGET" >> "$LOG"
   # assemble what is finished so far (idempotent, safe while more are in flight)

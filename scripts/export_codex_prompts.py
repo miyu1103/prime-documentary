@@ -17,6 +17,7 @@ Usage: py -3.11 scripts/export_codex_prompts.py
 from __future__ import annotations
 
 import csv
+import argparse
 import json
 import re
 import sys
@@ -25,6 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DESIGNS = ROOT / "episodes" / "_planning" / "short_designs"
 OUT = ROOT / "episodes" / "_planning"
+VERSION = "v001"   # overridden by --tag
 VOCAB = json.loads((OUT / "SHORTS_MOTIF_VOCABULARY.v001.json").read_text(encoding="utf-8"))
 
 
@@ -33,6 +35,19 @@ def main() -> int:
         sys.stdout.reconfigure(encoding="utf-8")
     except Exception:
         pass
+
+    # Exporting all 2,037 prompts every time hands back 1,355 images that are already delivered.
+    # --undelivered emits only the plates with no PNG on disk, which is the pack somebody can
+    # actually work from; --tag names the output so an old pack is never overwritten or confused
+    # with the new one.
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--undelivered", action="store_true",
+                    help="only plates whose image file does not exist yet")
+    ap.add_argument("--tag", default="v001", help="output filename tag, e.g. v002-remaining")
+    args = ap.parse_args()
+    global VERSION
+    VERSION = args.tag
+    pub = ROOT / "remotion" / "public" / "shorts"
 
     records = []
     for f in sorted(DESIGNS.glob("*.json")):
@@ -44,6 +59,8 @@ def main() -> int:
                 if not p or p.get("source") != "GENERATE" or not p.get("prompt"):
                     continue
                 sid = s["short_id"]
+                if args.undelivered and (pub / sid / f"{sid}_{p['n']:02d}.png").exists():
+                    continue
                 nn = int(re.sub(r"\D", "", sid))
                 records.append({
                     "filename": f"{sid}_{p['n']:02d}.png",
@@ -62,12 +79,12 @@ def main() -> int:
                 })
     records.sort(key=lambda r: (int(re.sub(r"\D", "", r["short_id"])), r["plate"]))
 
-    jl = OUT / "SHORTS_CODEX_PROMPTS.v001.jsonl"
+    jl = OUT / f"SHORTS_CODEX_PROMPTS.{VERSION}.jsonl"
     with jl.open("w", encoding="utf-8") as fh:
         for r in records:
             fh.write(json.dumps(r, ensure_ascii=False) + "\n")
 
-    cs = OUT / "SHORTS_CODEX_PROMPTS.v001.csv"
+    cs = OUT / f"SHORTS_CODEX_PROMPTS.{VERSION}.csv"
     with cs.open("w", encoding="utf-8", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(["filename", "width", "height", "prompt", "negative"])
@@ -79,7 +96,7 @@ def main() -> int:
         by_short.setdefault(r["short_id"], []).append(r)
 
     L = [
-        "# Codex 縦型画像プロンプト v001",
+        f"# Codex 縦型画像プロンプト {VERSION}",
         "",
         f"**{len(records)} 枚** / {len(by_short)} 本のショート / {len({r['slug'] for r in records})} 話ぶん。",
         "",
@@ -120,12 +137,12 @@ def main() -> int:
         for r in rs:
             L += [f"### `{r['filename']}`  ({r['role']} / {r['line']})",
                   f"> {r['subject']}", "", "```", r["prompt"], "```", ""]
-    (OUT / "SHORTS_CODEX_PROMPTS.v001.md").write_text("\n".join(L), encoding="utf-8")
+    (OUT / f"SHORTS_CODEX_PROMPTS.{VERSION}.md").write_text("\n".join(L), encoding="utf-8")
 
     print(f"{len(records)} prompts across {len(by_short)} shorts")
     print(f"  {jl.relative_to(ROOT)}   {jl.stat().st_size//1024} kB")
     print(f"  {cs.relative_to(ROOT)}   {cs.stat().st_size//1024} kB")
-    md = OUT / 'SHORTS_CODEX_PROMPTS.v001.md'
+    md = OUT / f'SHORTS_CODEX_PROMPTS.{VERSION}.md'
     print(f"  {md.relative_to(ROOT)}   {md.stat().st_size//1024} kB")
     per = [len(v) for v in by_short.values()]
     print(f"  per short: min {min(per)} max {max(per)}")

@@ -902,88 +902,96 @@ CONFIG: dict[str, dict] = {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "tt7U1XgjCU4",
         "ep": "PD-2026-021-dbcooper",
-        "rev": "v001",
+        "rev": "v002",
         "title": "The name the world knows him by was never even his #Shorts",
         "description": "The name the world knows him by was never even his.\n\nIf the FBI never had a name, what did fifty years of investigation actually produce?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #DBCooper #Hijacking #FBI #Unsolved #Documentary",
         "tags": ["Shorts", "D B Cooper", "Hijacking", "FBI", "Unsolved", "Law", "Documentary"],
-        "video_sha256": "e6da795a3f83a26beeffa864d37b51271a890760f980952a11ddb72d0b81c5e6",
+        # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
+        "video_sha256": "7a981acd28ab6596fb0954c849fc7d324a967588db777804f2b8a3a38a4da568",
         "thumb_sha256": "962292b81419a3917312db2d55ed849c1338df002d43a1a2307ee8871425652c",
     },
     "93": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "tt7U1XgjCU4",
         "ep": "PD-2026-021-dbcooper",
-        "rev": "v001",
+        "rev": "v002",
         "title": "He did not pick that plane by accident. He picked the one with a door in its tail #Shorts",
         "description": "He did not pick that plane by accident. He picked the one with a door in its tail.\n\nHow much else was planned — and what did that planning tell investigators about him?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #DBCooper #Hijacking #FBI #Unsolved #Documentary",
         "tags": ["Shorts", "D B Cooper", "Hijacking", "FBI", "Unsolved", "Law", "Documentary"],
-        "video_sha256": "0994a30ae3b0a91600ee465ef5dd905b74d88dd17327b66147a65b4eb05c6a6d",
+        # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
+        "video_sha256": "20fd50976022da71ef5f979061b4bbf9b564f6d4276774d0392808b03d68a0ad",
         "thumb_sha256": "8f7377f58ecbea4d828a4cd7f5efab450d70782fd2c288ca10b7d3477bd1a5f5",
     },
     "94": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "sphERPA4gAc",
         "ep": "PD-2026-005-madoff",
-        "rev": "v001",
+        "rev": "v002",
         "title": "One man handed regulators the arithmetic. For nearly ten years, nobody ran it down #Shorts",
         "description": "One man handed regulators the arithmetic. For nearly ten years, nobody ran it down.\n\nHe was right for a decade and it changed nothing. Why did nobody act?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Madoff #Ponzi #SEC #Fraud #Documentary",
         "tags": ["Shorts", "Madoff", "Ponzi", "SEC", "Fraud", "Law", "Documentary"],
-        "video_sha256": "5f0599bd0abf769cd3e97248db25da9fa7bdba4dd55fe1128e2bd299f9ce3dec",
+        # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
+        "video_sha256": "76a30b9383fd6d4dac67704b51b4fba4cb53259f2293c17b03afa9f564e380ee",
         "thumb_sha256": "6cccc35ebe2ce4eb52fe28388a44a69fa7a36bf3b74c17905974c2727c2948b2",
     },
     "95": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "sphERPA4gAc",
         "ep": "PD-2026-005-madoff",
-        "rev": "v001",
+        "rev": "v002",
         "title": "In December 2008 he told his own sons the business was one big lie #Shorts",
         "description": "In December 2008 he told his own sons the business was one big lie.\n\nThe money was gone long before 2008. Where did it actually go?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Madoff #Ponzi #SEC #Fraud #Documentary",
         "tags": ["Shorts", "Madoff", "Ponzi", "SEC", "Fraud", "Law", "Documentary"],
-        "video_sha256": "8c89c4df33c54608eac53ae0f56a3ea1db4f1783a4148cc801e479f4f7fa025c",
+        # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
+        "video_sha256": "0f7d131c69d83c637f4f5a110f8e312da4f64bd496a5ea9626e9e5697c20bc6e",
         "thumb_sha256": "b1d455c696abbb346761257c9be5032006be422db98f6442b1969ccc79c9b37b",
     },
     "96": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "Qyad4FejCIc",
         "ep": "PD-2026-029-hinton",
-        "rev": "v001",
+        "rev": "v002",
         "title": "In 2002 someone finally did the one thing his first defence never did: test the bullets #Shorts",
         "description": "In 2002 someone finally did the one thing his first defence never did: test the bullets.\n\nThe evidence failed in 2002. Why did Alabama keep him for thirteen more years?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #AnthonyRayHinton #DeathRow #WrongfulConviction #Alabama #Documentary",
         "tags": ["Shorts", "Anthony Ray Hinton", "Death Row", "Wrongful Conviction", "Alabama", "Law", "Documentary"],
-        "video_sha256": "9c3592f4f00d5829bfb959c8adcf578d8e423c10f47f6cfec8dedaa9ddde8fc4",
+        # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
+        "video_sha256": "d19125ae801ae7429eca0f40f4b60670b11ced1a9483cb1e2cbf31ac058db14d",
         "thumb_sha256": "d911c06195823e37cd275a424baa94a03c99233da4a59bbd7bcf0403d9324690",
     },
     "97": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "Qyad4FejCIc",
         "ep": "PD-2026-029-hinton",
-        "rev": "v001",
+        "rev": "v002",
         "title": "He walked out in 2015. The two murders he was condemned for were never solved #Shorts",
         "description": "He walked out in 2015. The two murders he was condemned for were never solved.\n\nNobody with the power to stop it ever checked. How was that possible for thirty years?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #AnthonyRayHinton #DeathRow #WrongfulConviction #Alabama #Documentary",
         "tags": ["Shorts", "Anthony Ray Hinton", "Death Row", "Wrongful Conviction", "Alabama", "Law", "Documentary"],
-        "video_sha256": "fc2d28e0fa5b3296c0ccc8f4b97b826706fe36f9c2c2aad16ef886b20e60aa0f",
+        # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
+        "video_sha256": "1d3c09f7ffe79c51d6f0e0e67e27b6f9443b522050232251e0cf53eaa2a91937",
         "thumb_sha256": "096551b3e93f3c283758514ad01728537d81378fa75a1f752c77b9c53fe98c7e",
     },
     "98": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "Sz8zPUoBANM",
         "ep": "PD-2026-014-lange",
-        "rev": "v001",
+        "rev": "v002",
         "title": "The Court did not say police can never follow you in. It said there is no automatic yes #Shorts",
         "description": "The Court did not say police can never follow you in. It said there is no automatic yes.\n\nIf it is not automatic, what does an officer have to show instead?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #LangevCalifornia #HotPursuit #SupremeCourt #FourthAmendment #Documentary",
         "tags": ["Shorts", "Lange v California", "Hot Pursuit", "Supreme Court", "Fourth Amendment", "Law", "Documentary"],
-        "video_sha256": "dcb86cd978cd64667fc6da0ac608ab8e637e07105b196a0f621b174f70f3f818",
+        # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
+        "video_sha256": "c362d5c9c0b44efada2f2369db48924d717fa735136a43644f3137e732e4c58b",
         "thumb_sha256": "f3b4a2990f46c2ec1143ff561a098909441d841e31d61dd539f28e0690d26366",
     },
     "99": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "Sz8zPUoBANM",
         "ep": "PD-2026-014-lange",
-        "rev": "v001",
+        "rev": "v002",
         "title": "The baseline nobody states out loud: without a warrant, your door stays shut #Shorts",
         "description": "The baseline nobody states out loud: without a warrant, your door stays shut.\n\nHow narrow is narrow — what actually counts as an emergency?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #LangevCalifornia #HotPursuit #SupremeCourt #FourthAmendment #Documentary",
         "tags": ["Shorts", "Lange v California", "Hot Pursuit", "Supreme Court", "Fourth Amendment", "Law", "Documentary"],
-        "video_sha256": "78d7651ff94f1fb4ec373660bffcdf809ff6beff16bfca31804e6d2f88e2412b",
+        # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
+        "video_sha256": "b0dd96e2c810f0b5099dc0c882c3911828f84ebf184227fa87590946591a4fe0",
         "thumb_sha256": "9dc63f309fe7cf728a93280d5a7d0b7f5fae1a6cd50efd1512925047b98cadf4",
     },
 }

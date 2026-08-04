@@ -87,6 +87,20 @@ def main() -> int:
     # A clip measures ~206s on the 4090. Anything past 3x that means ComfyUI died underneath
     # us and comfy_wan is polling a corpse -- observed 2026-07-29, the batch hung forever and
     # the robust chain could never take its next turn (silent stall, failure F-03).
+    # PROMPT OVERRIDE. The built-in SCENE_PROMPT asks for an "atmospheric living
+    # environment" and comfy_wan negates "static, motionless" -- together they invite Wan to
+    # POPULATE the frame. Measured on EP61 weimer 2026-08-04: W012 ("cold water over stones,
+    # no bank, no sky") came back with a dog in a blue harness on a leash and a person walking;
+    # W045 ("a cassette recorder beside a notepad") grew a hand. An episode whose spec forbids
+    # 12 subject classes and 7 real likenesses cannot let the generator add subjects it was
+    # never shown. These let the episode say what may move.
+    ap.add_argument("--seed-base", type=int, default=1000,
+                    help="seed = seed_base + index; change it to RE-ROLL a clip that came back "
+                         "with invented content instead of re-running the same trajectory")
+    ap.add_argument("--prompt", default=None,
+                    help="override the built-in motion prompt for every clip in this run")
+    ap.add_argument("--neg", default=None,
+                    help="override comfy_wan negative prompt for every clip in this run")
     ap.add_argument("--clip-timeout", type=int, default=600,
                     help="seconds before a single clip is abandoned and the batch exits")
     ap.add_argument("--dry-run", action="store_true")
@@ -95,7 +109,12 @@ def main() -> int:
     kinds = [k.strip() for k in a.kinds.split(",") if k.strip()]
     imgs = collect_sources(a.slug, kinds)
     if a.only:
-        imgs = [p for p in imgs if a.only in p.name]
+        # Comma-separated list, not a single substring. EP61 weimer converts a NAMED subset of
+        # its commissioned stills to motion (65 of 150); one substring cannot express that, and
+        # a second driver script would be a duplicate implementation of this one. A value with
+        # no comma behaves exactly as before.
+        wants = [w.strip() for w in a.only.split(",") if w.strip()]
+        imgs = [p for p in imgs if any(w in p.name for w in wants)]
 
     todo = [p for p in imgs if not is_done(a.slug, p.stem)]
     done_already = len(imgs) - len(todo)
@@ -112,10 +131,12 @@ def main() -> int:
     for i, img in enumerate(todo):
         stem = img.stem
         prefix = f"{a.slug}_{stem}"
-        cmd = ["py", "-3.11", DRIVER, "--image", str(img), "--prompt", motion_prompt(stem),
+        cmd = ["py", "-3.11", DRIVER, "--image", str(img), "--prompt", a.prompt or motion_prompt(stem),
                "--prefix", prefix, "--w", str(a.width), "--h", str(a.height),
                "--length", str(a.length), "--steps", str(a.steps), "--shift", str(a.shift),
-               "--cfg", str(a.cfg), "--seed", str(1000 + i)]
+               "--cfg", str(a.cfg), "--seed", str(a.seed_base + i)]
+        if a.neg:
+            cmd += ["--neg", a.neg]
         try:
             r = subprocess.run(cmd, capture_output=True, text=True, timeout=a.clip_timeout)
             tail = (r.stdout + r.stderr)[-200:].replace("\n", " ")

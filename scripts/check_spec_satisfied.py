@@ -92,7 +92,16 @@ def main() -> int:
 
     # 1. Every purpose-made still is on screen. This is the EP54 failure, made impossible.
     mandatory = list(spec.get("mandatory_stills") or [])
-    missing = [s for s in mandatory if _basename(s) not in present]
+    # MATCH ON THE STEM, NOT THE EXTENSION.
+    # A commissioned still may reach the film as W001.png or, when it has been given motion
+    # (i2v, depth parallax), as W001.mp4. It is the same picture carried in a different
+    # container, and the rule this check enforces is "the picture the archive could not supply
+    # is on screen" -- not "it is on screen as a PNG". Comparing full basenames would fail
+    # every motion-converted plate and push the episode back to stills it cannot fit.
+    # This does NOT weaken the check: a plate that appears in NO form still fails.
+    _stems = {n.rsplit(".", 1)[0].lower() for n in present}
+    missing = [s for s in mandatory
+               if _basename(s).rsplit(".", 1)[0].lower() not in _stems]
     if missing:
         failures.append(
             f"mandatory_stills: {len(missing)} of {len(mandatory)} declared still(s) are in no "

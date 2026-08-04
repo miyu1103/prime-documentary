@@ -442,7 +442,7 @@ THEMES: dict[str, dict[str, list[str]]] = {
                   'stacked bankers boxes room', 'hand written price tag'],
     },
     'bank_and_branch': {
-        'video': ['coin sorting machine tray', 'cash register drawer bell', 'money changer booth window', 'currency exchange counter city', 'passbook stamped counter', 'security camera bank ceiling', 'bank teller window counter', 'queue outside bank doors',
+        'video': ['counting money machine bills', 'money counter machine banknotes', 'hands stacking banknotes', 'bank passbook stamped', 'coin sorting machine tray', 'cash register drawer bell', 'money changer booth window', 'currency exchange counter city', 'passbook stamped counter', 'security camera bank ceiling', 'bank teller window counter', 'queue outside bank doors',
                   'closed shutters bank entrance', 'vault door wheel turning',
                   'empty bank lobby chairs', 'armored truck loading cash',
                   'night deposit slot wall', 'safe deposit box drawer'],
@@ -450,7 +450,7 @@ THEMES: dict[str, dict[str, list[str]]] = {
                   'vault door open interior', 'bank branch closed sign'],
     },
     'household_loss': {
-        'video': ['rent notice envelope hand', 'utility meter dial spinning', 'thermostat dial cold house', 'ramen packet cheap meal', 'bus stop waiting rain', 'laundromat washing machines', 'second hand shop interior', 'garage sale front lawn', 'eviction notice taped door', 'foreclosure sign front lawn',
+        'video': ['eviction notice posted door', 'foreclosure sign lawn house', 'boarded window shop closed', 'repossession notice paper', 'rent notice envelope hand', 'utility meter dial spinning', 'thermostat dial cold house', 'ramen packet cheap meal', 'bus stop waiting rain', 'laundromat washing machines', 'second hand shop interior', 'garage sale front lawn', 'eviction notice taped door', 'foreclosure sign front lawn',
                   'empty supermarket shelves aisle', 'price tag being replaced',
                   'unpaid bills envelope stack', 'overflowing mailbox letters closeup',
                   'car towed away street', 'keys handed over doorway',
@@ -460,7 +460,12 @@ THEMES: dict[str, dict[str, list[str]]] = {
                   'bare supermarket shelves wide', 'pile of overdue bills'],
     },
     'market_machinery': {
-        'video': ['green numbers screen scrolling', 'graph line rising screen', 'graph line falling screen', 'telephone handset desk office', 'clock second hand macro', 'newspaper financial pages', 'calculator tape printing', 'ticker tape scrolling board', 'wall of monitors charts',
+        # 'stock chart crashing down' / 'red declining graph screen' / 'market index falling
+                  # display' were tried and removed within the hour: on pixabay the tag lists
+                  # carry 'wolf down' and 'to come down', so a chamois, a red panda, a goat and
+                  # a giraffe all entered market_machinery on the word 'down'. Direction words
+                  # are worthless as search terms here; name the object instead.
+                  'video': ['stock ticker board display', 'financial data screen closeup', 'trading terminal screens', 'green numbers screen scrolling', 'graph line rising screen', 'graph line falling screen', 'telephone handset desk office', 'clock second hand macro', 'newspaper financial pages', 'calculator tape printing', 'ticker tape scrolling board', 'wall of monitors charts',
                   'trader desk six screens', 'empty trading desks dark',
                   'phones ringing trading desk', 'printer spitting trade tickets',
                   'crypto mining rigs rows', 'cooling fans data hall',

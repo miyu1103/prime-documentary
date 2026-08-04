@@ -186,7 +186,11 @@ EPISODES = {
     },
     "PD-2026-061-weimer": {
         # LOCKED script is v003. v001 and v002 are stale and must not be used.
-        "planning": "EP61_weimer_script.en.v003.md",
+        # v004 supersedes v003: +72 lines of pure insertion, no deletion, 4,408 -> 5,435 words.
+        # The design model assumed 173 wpm; this voice measured 194.3 on EP61 and 191.4 on EP60,
+        # so a script inside the contract word band still landed 1.7 minutes under its own
+        # runtime floor. ACT IV, HOOK and ENDING are byte-identical to v003.
+        "planning": "EP61_weimer_script.en.v004.md",
         # ASSEMBLY_HANDOFF v001 step 2: 4,401 narration words / 25.4 min speech.
         "design_speech_seconds": 1524.0,
         # Nine script headings -- HOOK / BRAND STING / OPENING / ACT I..ACT V / ENDING --

@@ -60,5 +60,11 @@ for id in $ids; do
       fi
       ;;
   esac
+
+  # The AVI is an uncompressed intermediate - about 900 MB for two seconds. 89 of them had
+  # quietly reached 47 GB and taken the system drive to 98% full, which is how a render dies
+  # mid-copy with ENOSPC. The webm is the deliverable and it is already installed and verified
+  # above, so the intermediate goes now rather than "later".
+  rm -f "$AE_DIR/out/$id.avi"
 done
 echo "OK"

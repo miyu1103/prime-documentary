@@ -11,7 +11,14 @@ from pathlib import Path
 from PIL import Image
 
 
-def render(source: Path, destination: Path, width: int, height: int) -> dict[str, object]:
+def render(
+    source: Path,
+    destination: Path,
+    width: int,
+    height: int,
+    *,
+    fast_png: bool = False,
+) -> dict[str, object]:
     if destination.exists():
         raise SystemExit(f"refusing to overwrite existing asset: {destination}")
     destination.parent.mkdir(parents=True, exist_ok=True)
@@ -28,7 +35,12 @@ def render(source: Path, destination: Path, width: int, height: int) -> dict[str
             top = (image.height - crop_height) // 2
             image = image.crop((0, top, image.width, top + crop_height))
         image = image.resize((width, height), Image.Resampling.LANCZOS)
-        image.save(destination, "PNG", optimize=True)
+        if fast_png:
+            # Lossless PNG either way; this only trades file size for much faster
+            # batch writes. Pixel values and delivery dimensions are unchanged.
+            image.save(destination, "PNG", compress_level=1)
+        else:
+            image.save(destination, "PNG", optimize=True)
     return {
         "path": str(destination),
         "bytes": destination.stat().st_size,
@@ -43,13 +55,22 @@ def main() -> int:
     parser.add_argument("--destination", type=Path, action="append", required=True)
     parser.add_argument("--width", type=int, default=3840)
     parser.add_argument("--height", type=int, default=2160)
+    parser.add_argument("--fast-png", action="store_true")
     args = parser.parse_args()
 
     if not args.source.is_file():
         raise SystemExit(f"source image not found: {args.source}")
 
     primary, *copies = args.destination
-    result = [render(args.source, primary, args.width, args.height)]
+    result = [
+        render(
+            args.source,
+            primary,
+            args.width,
+            args.height,
+            fast_png=args.fast_png,
+        )
+    ]
     for destination in copies:
         if destination.exists():
             raise SystemExit(f"refusing to overwrite existing asset: {destination}")

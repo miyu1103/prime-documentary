@@ -366,7 +366,27 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
               + (" ..." if len(fresh) > 14 else ""))
 
     total_sec = max(e for _, e in windows.values())
-    nf, nm, ns = solve_totals(total_sec, len(factory_pool), len(motion_pool), len(still_pool_src))
+
+    # CUT LENGTH COMES FROM THE EPISODE, WHEN THE EPISODE SAYS SO.
+    # The constant fixes the cut count, and the cut count caps how many stills can appear.
+    # An episode that commissioned stills because the archive had nothing for its subject
+    # needs a say in that number. The video-share floor and every motion check are untouched.
+    _cut_sec = TARGET_CUT_SEC
+    _specs = sorted((ROOT / "episodes").glob(f"PD-*-{slug}/episode_spec.v001.json"))
+    if _specs:
+        try:
+            _declared = json.loads(_specs[0].read_text(encoding="utf-8")).get("target_cut_sec")
+            if isinstance(_declared, (int, float)) and 2.0 <= _declared <= 8.0:
+                _cut_sec = float(_declared)
+                print(f"  [cuts] {slug} declares {_cut_sec}s per cut "
+                      f"(builder default {TARGET_CUT_SEC}s)")
+        except Exception:  # noqa: BLE001
+            pass
+
+    # solve_totals derives its cut count as runtime / TARGET_CUT_SEC; scaling the runtime it
+    # is handed is how the declared cut length reaches it without touching the solver.
+    nf, nm, ns = solve_totals(total_sec * (TARGET_CUT_SEC / _cut_sec),
+                              len(factory_pool), len(motion_pool), len(still_pool_src))
 
     weights = {sec: (windows[sec][1] - windows[sec][0]) for sec in order}
     per_f = split_by_section(nf, weights)

@@ -1274,6 +1274,31 @@ WIKIMEDIA_QUERIES = [
 WM_API = "https://commons.wikimedia.org/w/api.php"
 # Painting / print / sculpture markers. Kept narrow: "portrait" and "collection" are
 # deliberately absent because they appear on genuine press photography too.
+# Technical drawings are records of a building, not pictures of one. Dutch terms are here
+# because the Nederlands archives are heavily represented in Commons bank categories and
+# arrived as "Opstand van de voorgevel" / "Plattegrond en doorsneden van het funderingsplan".
+DRAWING_RE = re.compile(
+    r"\b(plattegrond|opstand|doorsnede|bouwtekening|blueprint|floor ?plan|"
+    r"elevation of|section through|cross[- ]section|site plan|survey plan|"
+    r"technical drawing|architectural drawing|map of|plan of the|schematic)\b", re.I)
+
+# One archival object scanned page by page can bury a theme: nypl put 46,707 city-directory
+# pages on the shelf, and Category:Grocery stores delivered "Patterson's General Store
+# Ledger" once per page. Cap how many files may share a title so a single ledger cannot
+# stand in for a whole subject.
+WM_SAME_TITLE_CAP = 4
+_WM_TITLE_SEEN: dict = {}
+
+
+def wm_title_key(title: str) -> str:
+    """Title with trailing identifiers stripped, so page 3 and page 400 collapse together."""
+    t = re.sub(r"^File:", "", title, flags=re.I)
+    t = re.sub(r"\.[a-z0-9]{2,4}$", "", t, flags=re.I)
+    t = re.sub(r"[-–—,\s]*(DPLA|LCCN|NARA|LOC|HUA|BAnQ)?[-–—\s]*[0-9a-f]{4,}.*$", "", t, flags=re.I)
+    t = re.sub(r"[\s\-–—_]*\d{1,4}$", "", t)
+    return re.sub(r"\s+", " ", t).strip().lower()
+
+
 ARTWORK_RE = re.compile(
     r"\b(oil on canvas|painting|painted by|lithograph|engraving|etching|watercolou?r|"
     r"drawing|sketch|woodcut|aquatint|mezzotint|sculpture|statue|art institute|"
@@ -1322,6 +1347,46 @@ WM_CATEGORIES = [
     ("business_corporate", "Category:Office interiors"),
     ("business_corporate", "Category:Typewriters in use"),
     ("economy_crisis", "Category:Abandoned factories"),
+    # Added 2026-08-04 from a measured sweep of the category namespace, not from memory.
+    # Rejected despite good numbers, and why: "Home Office" is the UK government
+    # department; "Attack cargo ships" and "Camano class cargo ships" are naval;
+    # "Type foundries" casts printing type, not metal; "Congressional office buildings"
+    # is government estate. Names alone would have admitted all four.
+    # Gap-directed additions 2026-08-04. A coverage test against a real 20-shot finance
+    # episode served only 11; these are the categories that exist for the nine that failed.
+    # Small trees on purpose - the shortfall was never "20,000 more items", it was nine
+    # named shots, and a category with 22 files closes one of them.
+    ("stock_market_exchange", "Category:Bank runs"),
+    ("stock_market_exchange", "Category:Ticker tape"),
+    ("stock_market_exchange", "Category:Stock tickers"),
+    ("stock_market_exchange", "Category:2020 stock market crash"),
+    ("household_loss", "Category:Foreclosure"),
+    ("household_loss", "Category:Boarded doors"),
+    ("economy_crisis", "Category:Boarded doors"),
+    ("depression_hardship", "Category:Unemployment"),
+    ("depression_hardship", "Category:Slums"),
+    ("depression_hardship", "Category:Poverty"),
+    ("depression_hardship", "Category:Homelessness"),
+    ("bank_and_branch", "Category:Bank buildings"),
+    ("bank_and_branch", "Category:Bank interiors by country"),
+    ("bank_and_branch", "Category:Lloyds Banking Group"),
+    ("stock_market_exchange", "Category:Stock exchange buildings"),
+    ("stock_market_exchange", "Category:Financial districts"),
+    ("money_banking", "Category:Banknotes"),
+    ("money_banking", "Category:Mints (coins)"),
+    ("factory_manufacturing", "Category:Steel mills"),
+    ("factory_manufacturing", "Category:Industrial buildings"),
+    ("factory_manufacturing", "Category:Shipyards"),
+    ("factory_manufacturing", "Category:Foundries"),
+    ("retail_commerce", "Category:Grocery stores"),
+    ("retail_commerce", "Category:Shopping streets"),
+    ("retail_commerce", "Category:Market halls"),
+    ("goods_in_motion", "Category:Container terminals"),
+    ("goods_in_motion", "Category:West India Docks"),
+    ("goods_in_motion", "Category:Freight yards"),
+    ("business_corporate", "Category:Telephone operators"),
+    ("business_corporate", "Category:Office interiors by country"),
+    ("economy_crisis", "Category:Abandoned buildings"),
     ("economy_crisis", "Category:Closed retail stores"),
 ]
 # One subject word per theme, checked against category-sourced titles. Deliberately
@@ -1470,6 +1535,17 @@ def wm_ingest_titles(st: State, titles: list[str], theme: str, probe: str,
                           theme=theme, score=-1, matched=[])
                 st.known_ids.add(("wikimedia", title))
                 continue
+            if DRAWING_RE.search(hay):
+                st.reject("wikimedia", title, "technical-drawing", title=title,
+                          theme=theme, score=-1, matched=[])
+                st.known_ids.add(("wikimedia", title))
+                continue
+            tkey = wm_title_key(title)
+            if _WM_TITLE_SEEN.get(tkey, 0) >= WM_SAME_TITLE_CAP:
+                st.reject("wikimedia", title, f"same-title-cap:{tkey[:40]}", title=title,
+                          theme=theme, score=-1, matched=[])
+                st.known_ids.add(("wikimedia", title))
+                continue
             score, matched, why = score_item("wikimedia", probe, title,
                                              f"{desc} {cats}", theme)
             if why or not accept("wikimedia", score):
@@ -1485,6 +1561,7 @@ def wm_ingest_titles(st: State, titles: list[str], theme: str, probe: str,
                     license_decision="cc0" if lic == "cc0" else "pd",
                     score=score, matched=matched,
                     est_bytes=ii.get("size") or (12 << 20), dry_run=dry_run):
+                _WM_TITLE_SEEN[tkey] = _WM_TITLE_SEEN.get(tkey, 0) + 1
                 taken += 1
     return taken
 
