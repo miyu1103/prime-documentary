@@ -1,4 +1,14 @@
-# EP62 greene — Codex 画像生成 **1本で完結する発注** v002（222枚・1プロンプト1枚）
+# EP62 greene — Codex 画像生成 **1本で完結する発注** v002（**現在 241枚**・1プロンプト1枚）
+
+> # ★ このファイルの現在の真実（2026-08-04・ここだけが正）
+> 本文は修正を五層追記してある。**以下と矛盾する記述が本文中に残っているが、全部古い。**
+>
+> - **プレート 241枚**（`G001`–`G241`、欠番なし）。本文中の「222枚」「225枚」「226枚」「239枚」はすべて途中経過。
+> - **`mandatory_stills` 224件**。THUMB 4枚（`G220` `G221` `G222` `G240`）は除外する。
+> - **モチーフ（同じ一枚のドアの七つの状態）**：状態1 = `G241`（HOOK 1枚目・完全に平ら）・状態2 = `G001`（角が浮く）・状態1の帰り = `G227`・状態3 = `G228`・状態5 = `G229`・状態6 = `G230`・**状態7（映画の最後の画）= `G231`**。
+> - **廃止プレート（生成済みだがカットに使わない）**：`G206` `G207` `G208` `G209` `G226` `G073` `G121` `G125` `G140` `G174` `G175` `G178` `G183`。**景観カットとしても使わない。**（`G174` は識別可能な顔なのでテスト書き出しでも画に出さない。）
+> - **これから生成するのは末尾3ブロックの 15枚だけ**：`G227`–`G239`・`G240`・`G241`。`G001`–`G226` は再生成しない。
+> - 詳細は `EP62_greene_ASSEMBLY_ADDENDUM.v001.md`。
 
 > ⚠ **2026-08-04 追記：末尾に §7 として3枚(G223-G225)を追加しました。G001-G222 は変更ありません。**
 
@@ -855,7 +865,7 @@ An old embroidered curtain hanging at an apartment window seen from inside, the 
   **暗い／夜／雨**です。`G223` が埋めるのは**真昼の、代執行者が来る時刻の**在宅であり、そこは空白のままです。
   一方 **「風」と「時の経過」は残り9本に一本もありません**（雪の街灯・破れた網戸・廃屋・空室のパン・
   雨の窓×2・レンガ）。`G224` と `G225` はその二つを丸ごと引き受けます。
-- `mandatory_stills` は `G001`–`G225` の **225件**に更新済みです（`episode_spec.v001.json`）。
+- ~~`mandatory_stills` は `G001`–`G225` の **225件**~~ → **古い。現在は 224件**（冗長な内訳は冗頭の★ブロック）。
 - レンダー前の確認は **accepted(9) + motion ≥ 234** になります（§6-5 の 12 は 9 に読み替え）。
 
 ### ★追加2（2026-08-04・映画の最後の画にプレートが無かった）
@@ -895,7 +905,7 @@ ENDING `G203` で使う。**生成は従来どおり必要**（5枚とも作る�
 
 - ループは **`G206`**（紙が平らに貼られたドア）で閉じる。**`G206` を `G001` と同一画角・同一レンズで作る。**
 - 映画の**最後の画**は **`G226`**（モチーフ7・褪せていない四角）。★追加2のとおり。
-- `G209` はそのまま生成し、ENDING 内の一枚として使う（**ループ用ではない**）。
+- ※ **これも撤回（2026-08-04）。`G209` は廃止で、ENDING にも使わない。**代替は `G230`。
 - `G206`–`G209` が同一ドア・同一画角・同一レンズという条件は変更なし。
 
 **(3) §5 ENDING のビートブロックは古い台本の写しである。以下に読み替える。**
@@ -952,7 +962,7 @@ ACT_3 853語 9:45–14:35 · ACT_4 842語 14:35–19:22 · ACT_5 1,645語 19:22�
 | `G239` | — | G174 の代替（**完全に識別可能な女性の顔**） |
 
 - `G227.png`
-A single sheet of plain paper taped flat and square to the SAME door as G001 and no other: a sage-green painted wooden panelled door with a raised outer stile, the paint crazed and flaking to bare wood in two patches at the lock rail, a plain brass knob low at frame left, shot dead-on and square from about one metre in flat overcast daylight, the door filling the frame with a sliver of pale jamb at each side, the sheet PORTRAIT format with two short tabs of masking tape at its top corners only and its lower edge just beginning to curl away, the sheet blank and its surface bearing no printing of any kind [STYLE] Avoid: [NEG]
+A single sheet of plain paper taped flat and square to the SAME door as G001 and no other: a sage-green painted wooden panelled door with a raised outer stile, the paint crazed and flaking to bare wood in two patches at the lock rail, a plain brass knob low at frame left, shot dead-on and square from about one metre in flat overcast daylight, the door filling the frame with a sliver of pale jamb at each side, the sheet PORTRAIT format with two short tabs of masking tape at its top corners only and its whole lower edge lying dead flat against the paint with no curl and no lift anywhere, the sheet blank and its surface bearing no printing of any kind [STYLE] Avoid: [NEG]
 
 - `G228.png`
 The same sheet on the SAME door as G001 and no other: a sage-green painted wooden panelled door with a raised outer stile, the paint crazed and flaking to bare wood in two patches at the lock rail, a plain brass knob low at frame left, shot dead-on and square from about one metre in flat overcast daylight, the door filling the frame with a sliver of pale jamb at each side, now lifted clear of the paint along its whole lower edge as if caught by a gust, the two top tabs still holding, dusk light, the sheet blank [STYLE] Avoid: [NEG]
@@ -992,7 +1002,7 @@ A records room of the period with a shelf of unlabelled box files, one person st
 
 合計 **239枚**（G001–G239）。**既存の G001–G226 は1枚も変更しない**。
 置き換えられた旧プレートは削除せず、**そのビートでは使わない**だけとする
-（`G206`–`G209` は景観カットとしてなら使える）。
+（※ **これは撤回。`G206`–`G209` は景観カットとしても使わない。**同じドアに見えない別のドアが画面に出ること自体がモチーフを壊すからである。）
 
 **`mandatory_stills` は再導出が必要**：G227–G239 を加え、カットに入らなくなった旧プレートを外すこと。
 
@@ -1006,3 +1016,15 @@ A records room of the period with a shelf of unlabelled box files, one person st
 
 - `G240.png`
 A long run of identical apartment doors along an open-air concrete walkway seen down its length under bright flat overcast daylight, one single pale rectangle of paper on one door far down the line, the concrete and the painted doors bright and clearly separated, the upper third of the frame left clear, bright even key light, the subject clearly separated from the ground, deep blacks kept but the subject held well above mid-grey, high micro-contrast, cinematic still, muted natural colour, flat humid Ohio Valley light, soft falloff toward the edges, shallow depth of field, restrained documentary framing, mid-1970s to early-1980s American public housing period detail, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage. Avoid: text, lettering, numerals, handwriting, signatures, seals, emblems, logos, signage, house numbers, street signs, police uniform, sheriff badge, patrol car, courtroom interior, gavel, judge's bench, prison bars, razor wire, handcuffs, furniture on a pavement, people being evicted, crying, a hand on a shoulder, golden hour, sunset glow, postcard scenery, drone shot, cosy fireplace, Christmas, tropical, modern smartphones, modern cars, flat CGI, cartoon, illustration, oversaturated.
+
+### ★再発注 2（2026-08-04・状態1 が存在しない）
+
+再レビューで R6 が落ちた。`G001` の本文は *the lower left corner lifted a centimetre clear of the paint* で、**これは状態1（平らに貼られた直後）ではなく状態2 である**。
+つまりこの映画は **七つの状態の最初の一歩（平ら→浮き始める）を一度も映さない**まま進んでいた。
+紙が剥がれていくというこの映画の論旨そのものの出発点が欠けている。
+
+**`G241` は HOOK の1枚目であり、`G227` と**同じ構図・同じドア・同じ平らさ**でなければならない。** ループはこの2枚が重なって初めて閉じる。
+`G001`（角が浮いている）は廃棄せず、**状態2 として HOOK の2枚目に回る**。
+
+- `G241.png`
+A single sheet of plain paper taped flat and square to the SAME door as G001 and no other: a sage-green painted wooden panelled door with a raised outer stile, the paint crazed and flaking to bare wood in two patches at the lock rail, a plain brass knob low at frame left, shot dead-on and square from about one metre in flat overcast daylight, the door filling the frame with a sliver of pale jamb at each side, the sheet PORTRAIT format with two short tabs of masking tape at its top corners only, the paper lying dead flat against the paint across its whole surface with no curl, no lift and no shadow under any edge, the sheet blank and its surface bearing no printing of any kind [STYLE] Avoid: [NEG]

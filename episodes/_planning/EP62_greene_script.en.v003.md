@@ -8,7 +8,7 @@
 
 **Windows re-derived from this file at 176 wpm** after the third pass. v002 labels void.
 
-**Motif:** the paper, seven states in order, `【】` only. `G001` opens · `G227` returns it in the same framing · `G231` (state 7) is the last image. `【】` may show tape; **narration names no method for these doors** — n.1 says thumbtack, adhesive tape, or other means.
+**Motif:** the paper, seven states in order, `【】` only. `G241` opens (state 1, dead flat) · `G001` is state 2 · `G227` returns state 1 in the same framing as `G241` · `G231` (state 7) is the last image. `【】` may show tape; **narration names no method for these doors** — n.1 says thumbtack, adhesive tape, or other means.
 
 **Held beats: three, each after the heavy line** — after the recognition, after the limit, before the last image.
 
@@ -24,7 +24,7 @@ In Kentucky, a piece of paper fixed to a door was service. The question is wheth
 
 【motif 1: the paper taped flat, corners square】
 
-【HOOK cuts — four, about two seconds each. G001 the sheet taped square to the painted door, one corner lifted · G002 a small hand closing on the free corner · G004 the walkway of identical doors, one door far down the line with a paper still on it · G005 the deposition room, two chairs facing each other. Cut on the word read. G003 is not a HOOK plate: it is the answer, and it belongs to ACT_3.】
+【HOOK cuts — five, about 1.8 seconds each. G241 the sheet taped square to the painted door, lying dead flat, no corner lifted — this is motif 1 · G001 the same sheet on the same door, one corner now lifted clear of the paint — motif 2 · G002 a small hand closing on the free corner · G004 the walkway of identical doors, one door far down the line with a paper still on it · G005 the deposition room, two chairs facing each other. Cut on the word read. G003 is not a HOOK plate: it is the answer, and it belongs to ACT_3.】
 
 ---
 
