@@ -162,6 +162,25 @@ BEATS: dict[str, list[dict]] = {
     "short115": [punch("L3", "property itself is treated as the suspect", "THE PROPERTY",
                        "IS THE SUSPECT"),
                  punch("L7", "policing for profit", "POLICING", "FOR PROFIT")],
+
+    # Third batch. short118 already carries the pair the look was approved on.
+    "short116": [punch("L4", "fight for years to reach it", "A CEILING", "MOST NEVER REACH"),
+                 number("L6", "2019", "2019", "THE GAP CLOSED")],
+    "short117": [punch("L4", "erased from the Constitution", "PUBLIC USE", "ERASED"),
+                 number("L7", "five to four", "5-4", "NOT THE USUAL LINES")],
+    "short119": [punch("L4", "nurseries of democracy", "NURSERIES", "OF DEMOCRACY"),
+                 punch("L5", "for the entire upcoming year", "ONE POST", "ONE YEAR OUT")],
+    "short120": [punch("L4", "post that vanished in seconds", "A POST", "THAT VANISHED"),
+                 number("L5", "two hundred and fifty", "250", "FRIENDS")],
+    "short121": [punch("L4", "aloud from the bench", "READ ALOUD", "FROM THE BENCH"),
+                 punch("L6", "one person at a time", "ONE AT A TIME", "OR NO ONE")],
+    "short122": [punch("L3", "Take it or leave it", "TAKE IT", "OR LEAVE IT"),
+                 punch("L7", "handed over voluntarily", "HANDED OVER", "VOLUNTARILY")],
+    "short130": [punch("L5", "the FBI's national DNA index", "CODIS", "THE NATIONAL INDEX"),
+                 punch("L7", "rightly or wrongly", "ARRESTED", "RIGHTLY OR WRONGLY")],
+    "short131": [punch("L4", "quietly move tomorrow", "THE LINE", "CAN MOVE"),
+                 punch("L6", "a single encounter with the police", "ONE ENCOUNTER",
+                       "ON FILE FOREVER")],
 }
 
 

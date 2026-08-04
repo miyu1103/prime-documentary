@@ -122,6 +122,16 @@ def _eval_run(ws: list[str]) -> int | None:
     return total + cur if seen else None
 
 
+def _split_digit_hyphen(text: str) -> str:
+    """A hyphen between two DIGITS separates them; between two words it joins them.
+
+    "twenty-two" is one number and must stay joined. "5-4" is a split decision and is two, but the
+    joining rule read it as 5+4=9 and failed a correct card reading "5-4" over a line saying "five
+    to four". Digits get the separator the words already have.
+    """
+    return re.sub(r"(?<=\d)-(?=\d)", " to ", text)
+
+
 def _values(text: str) -> set[int]:
     """Every quantity the text states, including sub-phrases.
 
@@ -129,7 +139,8 @@ def _values(text: str) -> set[int]:
     type reading "209 MILLION" or "$209M", so the run's value AND the value of every contiguous
     part of it count as spoken.
     """
-    toks = re.findall(r"\d+(?:\.\d+)?|[a-z]+", text.lower().replace(",", "").replace("-", " "))
+    toks = re.findall(r"\d+(?:\.\d+)?|[a-z]+",
+                      _split_digit_hyphen(text.lower()).replace(",", "").replace("-", " "))
     vals: set[int] = set()
     run: list[str] = []
 
@@ -172,7 +183,8 @@ def numbers_not_spoken(phrase: "str | list[str]", line: str) -> list[str]:
     # on eight of thirty-one Shorts before this was split.
     segments = [phrase] if isinstance(phrase, str) else list(phrase)
     for seg in segments:
-        toks = re.findall(r"\d+(?:\.\d+)?|[A-Za-z]+", (seg or "").replace(",", "").replace("-", " "))
+        toks = re.findall(r"\d+(?:\.\d+)?|[A-Za-z]+",
+                          _split_digit_hyphen(seg or "").replace(",", "").replace("-", " "))
         run: list[str] = []
         for t in toks + [""]:
             low = t.lower()
