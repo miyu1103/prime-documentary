@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
 """Write the authored kinetic-typography beats into the Short designs.
 
-Two per Short, on a number or a turn in the middle. Every phrase below is lifted VERBATIM from the
-narration line it sits on, which is the only reason the type can be trusted to match the voice —
-assemble_short.py re-checks it and warns on any token the line does not contain.
+Two per Short, on a number or a turn in the middle.
+
+Wording is free (owner, 2026-08-04): the type sharpens what the line says rather than quoting it,
+so "THEY KEEP WHAT THEY TAKE" is allowed over a line that never uses those words. Quantities are
+not free — a figure on screen that the voice never says is indistinguishable from invention, so
+numbers_not_spoken() is a hard stop here, in the assembler and in the design verifier.
 
 Placement is by `anchor`, the phrase the voice is saying at that moment; the assembler works the
 cut out from its word position, so a re-timed line moves the overlay with it instead of stranding
@@ -23,6 +26,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from assemble_short import numbers_not_spoken  # noqa: E402
+
 DESIGNS = ROOT / "episodes" / "_planning" / "short_designs"
 
 
@@ -37,68 +43,68 @@ def number(line: str, anchor: str, big: str, label: str, sec: float = 2.0) -> di
 
 
 BEATS: dict[str, list[dict]] = {
-    "short190": [punch("L3", "built to move", "A CAR IS", "BUILT TO MOVE"),
-                 number("L6", "1925", "1925", "YOUR GLOVEBOX")],
-    "short191": [punch("L5", "the smell of marijuana alone", "THE SMELL", "ALONE"),
+    "short190": [punch("L3", "built to move", "A CAR", "CAN DRIVE OFF"),
+                 number("L6", "1925", "1925", "STILL THE RULE")],
+    "short191": [punch("L5", "the smell of marijuana alone", "THE SMELL", "WAS ENOUGH"),
                  punch("L6", "odor is not enough", "ODOR IS", "NOT ENOUGH")],
-    "short192": [number("L3", "1215", "1215", "MAGNA CARTA"),
-                 punch("L7", "forgotten the limit", "FORGOTTEN", "THE LIMIT")],
-    "short193": [punch("L3", "more than six times over", "MORE THAN", "SIX TIMES OVER"),
+    "short192": [number("L3", "1215", "1215", "EVEN THE KING"),
+                 punch("L7", "forgotten the limit", "THEY FORGOT", "THE LIMIT")],
+    "short193": [punch("L3", "more than six times over", "$2,300 BECAME", "$15,000"),
                  punch("L7", "two courts", "TWO COURTS", "TWO LOSSES")],
     "short194": [punch("L5", "more likely than not", "MORE LIKELY", "THAN NOT"),
-                 punch("L7", "emptied your bag", "EMPTIED", "YOUR BAG")],
-    "short195": [punch("L4", "five thousand travelers", "FIVE THOUSAND", "TRAVELERS"),
-                 punch("L7", "fifty-seven arrests", "FIFTY-SEVEN", "ARRESTS")],
-    "short196": [punch("L3", "three hundred one deposits", "THREE HUNDRED", "ONE DEPOSITS"),
-                 punch("L7", "not her legal fees", "NOT HER", "LEGAL FEES")],
-    "short197": [punch("L3", "nine in ten", "NINE", "IN TEN"),
-                 punch("L6", "is not a law", "A POLICY MEMO", "IS NOT A LAW")],
-    "short182": [punch("L4", "related in scope", "RELATED", "IN SCOPE"),
-                 punch("L6", "past what set it off", "PAST WHAT", "SET IT OFF")],
-    "short183": [punch("L4", "refused to sign", "THREE JUSTICES", "REFUSED"),
+                 punch("L7", "spend what it found", "THEY KEEP", "WHAT THEY TAKE")],
+    "short195": [punch("L4", "five thousand travelers", "$209 MILLION", "5,000 TRAVELERS"),
+                 punch("L7", "fifty-seven arrests", "$22 MILLION", "57 ARRESTS")],
+    "short196": [punch("L3", "three hundred one deposits", "$107,702", "301 DEPOSITS"),
+                 punch("L7", "not her legal fees", "WON THE CASE", "PAID THE LAWYERS")],
+    "short197": [punch("L3", "nine in ten", "9 IN 10", "NO CRIME"),
+                 punch("L6", "is not a law", "A MEMO", "IS NOT A LAW")],
+    "short182": [punch("L4", "how far it went", "HOW FAR", "IS TOO FAR"),
+                 punch("L6", "one cigarette", "ONE CIGARETTE", "IS NOT A LICENSE")],
+    "short183": [punch("L4", "refused to sign", "THREE JUSTICES", "SAID NO"),
                  punch("L7", "down to a hunch", "DOWN TO", "A HUNCH")],
     "short184": [punch("L6", "an hour alone in a cell", "AN HOUR", "IN A CELL"),
-                 punch("L7", "fifty dollars", "FIFTY", "DOLLARS")],
+                 punch("L7", "fifty dollars", "A $50 FINE", "ARRESTED ANYWAY")],
     "short185": [punch("L4", "administrative ease", "ADMINISTRATIVE", "EASE"),
                  punch("L5", "pointless indignity", "POINTLESS", "INDIGNITY")],
     "short186": [punch("L3", "flashover", "FLASHOVER"),
-                 punch("L6", "not caused by heat", "NOT CAUSED", "BY HEAT")],
+                 punch("L6", "not caused by heat", "NOT HEAT", "COLD WATER")],
     "short187": [punch("L3", "mystics or psychics", "MYSTICS", "OR PSYCHICS"),
-                 punch("L7", "nothing since has been undone", "NOTHING SINCE", "HAS BEEN UNDONE")],
-    "short188": [punch("L4", "since been discredited", "SINCE", "DISCREDITED"),
+                 punch("L7", "nothing since has been undone", "STILL", "NOT OVERTURNED")],
+    "short188": [punch("L4", "since been discredited", "JUNK", "SCIENCE"),
                  punch("L6", "no blood on him", "NO BLOOD", "NO WEAPON")],
-    "short189": [punch("L4", "for almost nothing", "FOR ALMOST", "NOTHING"),
-                 punch("L6", "ran out the clock", "RAN OUT", "THE CLOCK")],
+    "short189": [punch("L4", "for almost nothing", "ONE TEST", "ALMOST FREE"),
+                 punch("L6", "ran out the clock", "HE RAN OUT", "THE CLOCK")],
     "short200": [punch("L5", "all seven", "ALL SEVEN", "EXCLUDED"),
-                 punch("L7", "the eighth man", "THE EIGHTH", "MAN")],
-    "short201": [punch("L4", "two hundred twenty-five trials", "TWO HUNDRED", "TWENTY-FIVE TRIALS"),
-                 punch("L5", "four and a half times", "FOUR AND", "A HALF TIMES")],
-    "short202": [punch("L5", "one hundred and forty-eight", "ONE HUNDRED", "FORTY-EIGHT CLAIMS"),
-                 punch("L7", "decades past its clock", "DECADES PAST", "ITS CLOCK")],
-    "short203": [punch("L4", "load-bearing lie", "THE LOAD-BEARING", "LIE"),
+                 punch("L7", "the eighth man", "SO THEY MADE HIM", "THE EIGHTH MAN")],
+    "short201": [punch("L4", "two hundred twenty-five trials", "6,700 JURORS", "225 TRIALS"),
+                 punch("L5", "four and a half times", "FOUR AND A HALF", "TIMES MORE")],
+    "short202": [punch("L5", "one hundred and forty-eight", "148 CLAIMS", "HALF BELIEVED"),
+                 punch("L7", "decades past its clock", "EVERY CLOCK", "HAD RUN OUT")],
+    "short203": [punch("L4", "load-bearing lie", "THE LIE", "THAT HELD IT UP"),
                  number("L7", "2009", "2009", "THEY FINALLY MET")],
-    "short204": [punch("L3", "about one a week", "ABOUT ONE", "A WEEK"),
+    "short204": [punch("L3", "about one a week", "ABOUT ONE", "EVERY WEEK"),
                  punch("L5", "almost everyone took it", "ALMOST", "EVERYONE TOOK IT")],
-    "short205": [punch("L4", "fifteen months", "FIFTEEN", "MONTHS"),
+    "short205": [punch("L4", "sent to prison", "PREGNANT", "AND IMPRISONED"),
                  punch("L6", "not minuted", "NOT MINUTED", "NOT DISCLOSABLE")],
-    "short250": [punch("L5", "eighty other compounds", "EIGHTY OTHER", "COMPOUNDS"),
-                 number("L6", "1974", "1974", "NOT SOLE EVIDENCE")],
-    "short251": [punch("L3", "fifty-eight per cent", "FIFTY-EIGHT", "PER CENT"),
-                 punch("L7", "forty-five days", "FORTY-FIVE", "DAYS")],
-    "short252": [punch("L3", "no controlled substance", "NO CONTROLLED", "SUBSTANCE"),
-                 punch("L5", "ninety-three per cent", "NINETY-THREE", "PER CENT")],
+    "short250": [punch("L5", "eighty other compounds", "80+ COMPOUNDS", "TURN IT BLUE"),
+                 number("L6", "1974", "1974", "THEY KNEW")],
+    "short251": [punch("L3", "fifty-eight per cent", "58%", "PLEADED GUILTY"),
+                 punch("L6", "forty-five days for a plea", "45 DAYS", "OR 2 YEARS")],
+    "short252": [punch("L3", "no controlled substance", "251 CASES", "NO DRUGS"),
+                 punch("L5", "ninety-three per cent", "93%", "WENT TO JAIL")],
     "short253": [punch("L4", "nothing happened", "NOTHING", "HAPPENED"),
-                 number("L6", "1987", "1987", "THE PLANT CLOSED")],
-    "short254": [punch("L4", "no legal training", "NO LEGAL", "TRAINING"),
+                 number("L6", "1987", "1987", "THE LAST PLANT")],
+    "short254": [punch("L4", "no legal training", "NO LAWYER", "NO SCIENTIST"),
                  punch("L7", "kitchen table", "A KITCHEN", "TABLE")],
     "short255": [punch("L3", "fifty-fifty is enough", "FIFTY-FIFTY", "IS ENOUGH"),
-                 punch("L7", "four hundred and five dollars", "FOUR HUNDRED", "AND FIVE DOLLARS")],
-    "short256": [punch("L4", "nobody ever called back", "NOBODY EVER", "CALLED BACK"),
-                 punch("L5", "thirteen hundred miles", "THIRTEEN", "HUNDRED MILES")],
-    "short257": [punch("L4", "ten thousand a month", "TEN THOUSAND", "A MONTH"),
-                 punch("L7", "four hundred documents a day", "FOUR HUNDRED", "A DAY")],
-    "short258": [punch("L5", "three hundred and fifty signatures", "THREE HUNDRED FIFTY", "AN HOUR"),
-                 number("L7", "2013", "2013", "THE PAYMENT TABLE")],
+                 punch("L7", "four hundred and five dollars", "$405", "FOR CANCER")],
+    "short256": [punch("L4", "nobody ever called back", "NOBODY", "CALLED BACK"),
+                 punch("L5", "thirteen hundred miles", "1,300 MILES", "TO BE HEARD")],
+    "short257": [punch("L4", "ten thousand a month", "10,000", "A MONTH"),
+                 punch("L7", "four hundred documents a day", "400 A DAY", "HE READ NONE")],
+    "short258": [punch("L5", "three hundred and fifty signatures", "$10 AN HOUR", "350 SIGNATURES"),
+                 number("L7", "2013", "2013", "$300 EACH")],
 }
 
 
@@ -131,12 +137,12 @@ def main() -> int:
                     problems.append(f"{sid} {b['suffix']}: anchor {b['anchor']!r} not in "
                                     f"{b['line']}")
                     continue
-                phrase = " ".join(b.get("words") or [b.get("big", ""), b.get("label", "")])
-                low = text.lower().replace(",", "").replace(".", "")
-                for tok in re.findall(r"[A-Za-z0-9-]+", phrase):
-                    if len(tok) > 2 and tok.lower() not in low:
-                        problems.append(f"{sid} {b['suffix']}: {tok!r} is not spoken in "
-                                        f"{b['line']}")
+                # Wording is free (owner, 2026-08-04): the type may sharpen the line rather than
+                # quote it. Quantities are not - see numbers_not_spoken.
+                segs = b.get("words") or [b.get("big", ""), b.get("label", "")]
+                for bad in numbers_not_spoken(segs, text):
+                    problems.append(f"{sid} {b['suffix']}: shows {bad!r} but {b['line']} "
+                                    f"never says it")
                 out.append(b)
             if len(out) == len(spec):
                 s["kinetic_beats"] = out

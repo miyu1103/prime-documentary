@@ -84,6 +84,110 @@ def stage_footage(sid: str, plates: list[dict], force: bool) -> list[dict]:
     return rights
 
 
+_WORD_NUM = {
+    "one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7,
+    "eight": 8, "nine": 9, "ten": 10, "eleven": 11, "twelve": 12, "thirteen": 13,
+    "fourteen": 14, "fifteen": 15, "sixteen": 16, "seventeen": 17, "eighteen": 18,
+    "nineteen": 19, "twenty": 20, "thirty": 30, "forty": 40, "fifty": 50, "sixty": 60,
+    "seventy": 70, "eighty": 80, "ninety": 90, "hundred": 100, "thousand": 1000,
+    "million": 1000000, "billion": 1000000000,
+}
+
+
+def _eval_run(ws: list[str]) -> int | None:
+    """Value of one run of number words/digits: ['fifty','seven'] -> 57, ['209','million'] -> 209000000."""
+    total = cur = 0
+    seen = False
+    for w in ws:
+        if w.replace(".", "").isdigit():
+            f = float(w)
+            if f != int(f):
+                return None
+            cur += int(f)
+            seen = True
+            continue
+        if w == "and":
+            continue
+        v = _WORD_NUM.get(w)
+        if v is None:
+            return None
+        seen = True
+        if v == 100:
+            cur = (cur or 1) * 100
+        elif v >= 1000:
+            total += (cur or 1) * v
+            cur = 0
+        else:
+            cur += v
+    return total + cur if seen else None
+
+
+def _values(text: str) -> set[int]:
+    """Every quantity the text states, including sub-phrases.
+
+    Sub-phrases matter: a line that says "two hundred nine million dollars" legitimately supports
+    type reading "209 MILLION" or "$209M", so the run's value AND the value of every contiguous
+    part of it count as spoken.
+    """
+    toks = re.findall(r"\d+(?:\.\d+)?|[a-z]+", text.lower().replace(",", "").replace("-", " "))
+    vals: set[int] = set()
+    run: list[str] = []
+
+    def flush() -> None:
+        for i in range(len(run)):
+            for j in range(i + 1, len(run) + 1):
+                v = _eval_run(run[i:j])
+                if v is not None:
+                    vals.add(v)
+
+    for t in toks:
+        # "and" holds a number together rather than ending it: the scripts write "two hundred and
+        # fifty-one" and "four hundred and five dollars", and breaking there turned 251 and 405
+        # into unspoken figures that failed real, correct type.
+        if t.replace(".", "").isdigit() or t in _WORD_NUM or (t == "and" and run):
+            run.append(t)
+        else:
+            flush()
+            run = []
+    flush()
+    return vals
+
+
+def numbers_not_spoken(phrase: "str | list[str]", line: str) -> list[str]:
+    """Quantities on screen that the narration line never says, in either digits or words.
+
+    Wording is free (owner, 2026-08-04); numbers are not. A viewer reads a figure as a fact from
+    the documentary, so a figure the voice does not say is indistinguishable from invention. Both
+    sides are reduced to values first, because the script spells numbers out for the narrator
+    ("fifty-seven arrests") while the type shows digits ("57 ARRESTS") - the same fact.
+
+    Values under two are not enforced: "one" is nearly always rhetorical ("NOT ONE CHARGE") rather
+    than a count, and failing that would push writers back to quoting. A figure written in digits
+    is always enforced, however small.
+    """
+    spoken = _values(line)
+    missing = []
+    # One segment per line of type. Joining them first merged "$209 MILLION" with "5,000 TRAVELERS"
+    # into the single figure 209,005,000, which is spoken by nobody - the check failed correct type
+    # on eight of thirty-one Shorts before this was split.
+    segments = [phrase] if isinstance(phrase, str) else list(phrase)
+    for seg in segments:
+        toks = re.findall(r"\d+(?:\.\d+)?|[A-Za-z]+", (seg or "").replace(",", "").replace("-", " "))
+        run: list[str] = []
+        for t in toks + [""]:
+            low = t.lower()
+            if low.replace(".", "").isdigit() or low in _WORD_NUM or (low == "and" and run):
+                run.append(low)
+                continue
+            if run:
+                v = _eval_run(run)
+                digits = any(w.replace(".", "").isdigit() for w in run)
+                if v is not None and (digits or v >= 2) and v not in spoken:
+                    missing.append(" ".join(run))
+                run = []
+    return missing
+
+
 def plan_kinetic(sid: str, short: dict, cut_bounds: dict[str, list[tuple[float, float]]]):
     """Turn the design's `kinetic_beats` into a ShortData field plus an After Effects job list.
 
@@ -144,13 +248,14 @@ def plan_kinetic(sid: str, short: dict, cut_bounds: dict[str, list[tuple[float, 
 
         phrase = b.get("big") and f"{b['big']} / {b.get('label', '')}".strip(" /") or \
             " ".join(b.get("words") or [])
-        # The words must be in the narration this beat sits on. A number the voice does not say is
-        # the failure mode this check exists for.
-        spoken = lines.get(lid, "").lower()
-        for tok in re.findall(r"[A-Za-z0-9$,.]+", phrase):
-            t = tok.strip("$,.").lower()
-            if len(t) > 2 and t not in spoken.replace(",", ""):
-                print(f"  WARNING {sid} {sfx}: '{tok}' is not in the narration for {lid}")
+        # Wording is free (owner, 2026-08-04): the type may sharpen what the line says rather than
+        # quote it, so "THEY TOOK IT ALL" is allowed over a line that never uses those words.
+        # Quantities are NOT free. A figure on screen that the voice never says is the one error
+        # here that is indistinguishable from making something up, so it stays a hard stop.
+        bad = numbers_not_spoken(b.get("words") or [b.get("big", ""), b.get("label", "")],
+                                 lines.get(lid, ""))
+        if bad:
+            sys.exit(f"{sid} {sfx}: {', '.join(bad)} on screen, but {lid} does not say it")
         rows.append(f"    {{src: 'shorts/{sid}/{sid}_kin_{sfx}.webm', atSec: {at}, "
                     f"durSec: {dur}, phrase: {json.dumps(phrase)}}},")
         job = {"id": f"{sid}_{sfx}", "style": b.get("style", "number"), "seconds": dur}

@@ -30,6 +30,10 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+# One implementation of the number rule, shared with the assembler. Two copies would drift, and
+# the copy that drifted would be the one that stopped catching things.
+from assemble_short import numbers_not_spoken  # noqa: E402
 DESIGNS = ROOT / "episodes" / "_planning" / "short_designs"
 RESERVED = set(range(60, 82))
 DELIVERY_VALUES = {"intense", "building", "calm"}
@@ -201,11 +205,22 @@ def main() -> int:
             elif len(kb) > 2:
                 fails.append(f"{tag}: {len(kb)} kinetic beats, the approved density is one or two")
             else:
-                spoken = {l.get("id"): (l.get("text") or "").lower() for l in lines}
+                spoken = {l.get("id"): (l.get("text") or "") for l in lines}
                 for b in kb:
-                    if b.get("anchor", "").lower() not in spoken.get(b.get("line"), ""):
+                    text = spoken.get(b.get("line"), "")
+                    # The anchor is not copy, it is the placement handle: it must be in the line
+                    # or there is nothing to time the overlay against.
+                    if b.get("anchor", "").lower() not in text.lower():
                         fails.append(f"{tag}: kinetic anchor {b.get('anchor')!r} is not in "
-                                     f"{b.get('line')} - the type would not match the voice")
+                                     f"{b.get('line')} - nothing to place the overlay against")
+                    # Wording is free (owner, 2026-08-04) so the type can sharpen the line rather
+                    # than quote it. Quantities are not: a figure the voice never says reads as a
+                    # fact from the documentary and is indistinguishable from invention.
+                    segs = b.get("words") or [b.get("big", ""), b.get("label", "")]
+                    bad = numbers_not_spoken(segs, text)
+                    if bad:
+                        fails.append(f"{tag}: kinetic type shows {', '.join(bad)} but "
+                                     f"{b.get('line')} never says it")
 
             words = sum(len((l.get("text") or "").split()) for l in lines)
             if not (WORD_BAND[0] <= words <= WORD_BAND[1]):

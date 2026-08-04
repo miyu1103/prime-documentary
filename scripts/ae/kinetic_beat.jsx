@@ -179,11 +179,39 @@ function styleNumber(comp, job, dur) {
     exitAll(comp, dur);
 }
 
+function fitAll(comp, words, size) {
+    // One size for the whole phrase. Fitting each line on its own left "$209 MILLION" at 108 pt
+    // above "5,000 TRAVELERS" at 97 pt, which reads as a mistake rather than a hierarchy. Measure
+    // every line first, then apply the tightest line's size to all of them.
+    var worst = 1.0;
+    for (var i = 0; i < words.length; i++) {
+        var probe = comp.layers.addText(words[i]);
+        var td = probe.property("Source Text").value;
+        td.resetCharStyle();
+        td.fontSize = size;
+        try { td.font = "Arial-Black"; } catch (e) {}
+        td.tracking = size > 160 ? 10 : 0;
+        td.justification = ParagraphJustification.CENTER_JUSTIFY;
+        probe.property("Source Text").setValue(td);
+        var w = probe.sourceRectAtTime(0, false).width;
+        probe.remove();
+        if (w > MAX_TYPE_W) {
+            var r = MAX_TYPE_W / w;
+            if (r < worst) worst = r;
+        }
+    }
+    if (worst < 1.0) {
+        size = Math.floor(size * worst);
+        log("  refit phrase -> " + size + "pt (longest line set the size)");
+    }
+    return size;
+}
+
 function stylePunch(comp, job, dur) {
     // A turn in the story, not a number: the words hit one after another, each with a small
     // overshoot, so the phrase lands like it is being said rather than displayed.
     var words = job.words || [];
-    var size = job.bigSize || 150;
+    var size = fitAll(comp, words, job.bigSize || 150);
     var lineH = size * 1.18;
     var top = 700 - (words.length - 1) * lineH / 2;
     for (var i = 0; i < words.length; i++) {
