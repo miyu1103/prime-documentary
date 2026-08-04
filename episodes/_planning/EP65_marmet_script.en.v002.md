@@ -93,7 +93,7 @@ The state law they were all pointing at was one sentence. Section 15(c) of the W
 
 A waiver of the right to commence an action. Null and void.
 
-West Virginia's legislature had put that in the statute books years before any of these three admissions. Whether it survived contact with a federal statute passed in 1925 was now a question for the state's highest court.
+West Virginia's legislature had put that in the statute books in 1997. Whether it survived contact with a federal statute passed in 1925 was now a question for the state's highest court.
 
 ---
 
@@ -131,7 +131,7 @@ So the court had built two separate doors. One was a public policy against a who
 
 The court also said something about admission day that would matter a year later. The process of signing paperwork for medical care — specifically, a contract for admission to a nursing home — is often fraught with urgency, confusion, and stress. Nursing homes daily sign contracts with patients as a routine course of doing business. Most patients, the court wrote, do not view the admission process as an interstate commercial transaction with far-reaching legal consequences.
 
-One side of that desk does this every working day. The other side does it once.
+One side of that desk does this every working day. The other side does it a few times in a life.
 
 The doctrine the court was reaching for is old, and it is narrower than it sounds. Because of an overall and gross imbalance, one-sidedness or lop-sidedness in a contract, a court may be justified in refusing to enforce the contract as written. That is unconscionability. It is not a rule about arbitration. It is a rule about contracts.
 
@@ -193,7 +193,7 @@ Valid, irrevocable, and enforceable. Then a comma, and an exception that decides
 
 Keep the second half. It comes back.
 
-On the first half the Court was brief. The statute's text includes no exception for personal-injury or wrongful-death claims. The Act requires courts to enforce the bargain of the parties to arbitrate — a line from a 1985 decision, Dean Witter Reynolds against Byrd. It reflects an emphatic federal policy in favor of arbitral dispute resolution — a line from a per curiam the Court had issued weeks earlier, itself quoting a case from 1985.
+On the first half the Court was brief. The statute's text includes no exception for personal-injury or wrongful-death claims. The Act requires courts to enforce the bargain of the parties to arbitrate — a line from a 1985 decision, Dean Witter Reynolds against Byrd. It reflects an emphatic federal policy in favor of arbitral dispute resolution — a line from a per curiam the Court had issued that same Term, itself quoting a case from 1985.
 
 Then the precedent that made the answer mechanical. When state law prohibits outright the arbitration of a particular type of claim, the analysis is straightforward: the conflicting rule is displaced by the FAA. That was AT&T Mobility against Concepcion, decided the previous term.
 
@@ -253,7 +253,7 @@ It also left untouched a question the record does not answer: whether a relative
 
 【callback: the carve-out line, held on screen】
 
-And the opinion says nothing whatever about a contract that arbitrates a death claim while leaving a debt claim in a courthouse. That clause was in front of the Court. It is quoted in the Court's own recitation of the facts. It was not the question presented.
+And the opinion says nothing whatever about a contract that arbitrates a death claim while leaving a debt claim in a courthouse. That clause was in front of the Court. It is quoted in the Court's own recitation of the facts. It was not what the defendants had challenged.
 
 This was a per curiam opinion. Per curiam means by the court. There is no author, no reported vote, and no separate writing attached to the text. It is not a synonym for unanimous, and nobody should be told which Justices stood behind it, because the document does not say.
 
@@ -271,7 +271,7 @@ The cases were submitted on June 6, 2012. The opinion came down seven days later
 
 ## ACT_5 (21:05-27:05)
 
-June 13, 2012. Ketchum, Chief Justice, writing for the Supreme Court of Appeals of West Virginia, in the decision the reports call Brown Two.
+June 13, 2012. Ketchum, Chief Justice, writing for the Supreme Court of Appeals of West Virginia, in the decision that followed Brown I.
 
 The first move is obedience, and it is exact. In accordance with the Supreme Court's mandate, we overrule Syllabus Point 21 of Brown One.
 

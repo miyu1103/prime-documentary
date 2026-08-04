@@ -8,7 +8,7 @@
 
 **Locks:** both accounts of the mistake, neither adopted · no one overcharged · no cutoff said to have ended · no vote · no date, season, duration or sum for the five · no national number · no modern rule · no aftermath.
 
-> **尺の目標は 30:00**（オーナー指定 2026-08-04）。この稿の実測は **30:19**（実測レート176語/分・gap込み）。契約帯は 27:00–32:00、`manifest.json` の `target_duration_minutes` は 30。
+> **尺の目標は 30:00**（オーナー指定 2026-08-04）。この稿の実測は **30:23**（実測レート176語/分・gap込み）。契約帯は 27:00–32:00、`manifest.json` の `target_duration_minutes` は 30。
 
 ---
 
@@ -168,7 +168,7 @@ Behind the paper there was a real procedure. Credit counselors came first. If th
 
 Counselor, chief clerk, supervisor, commissioners. Four rungs, and the right to bring somebody with you.
 
-In March 1973 the utility began an extended payment plan, which the trial judge called a generous program. Customers able to demonstrate financial hardship could pay one-half of a past due bill,. The plaintiffs in this action were participants in the plan.
+In March 1973 the utility began an extended payment plan, which the trial judge called a generous program. Customers able to demonstrate financial hardship could pay one-half of a past due bill, with the balance in equal installments over the next three bills. The plaintiffs in this action were participants in the plan.
 
 Whatever else this case is, it is not a case about a utility that offered nothing.
 
