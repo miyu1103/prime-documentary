@@ -39,7 +39,25 @@ import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SHELF = Path(r"H:\pd-media\assets\factory")
+# factory is stock backgrounds, VFX, particles and light assets - 11,442 of its 15,683 clips are
+# literally in a folder called "backgrounds". Indexing only that is why 165 documentary queries
+# ("water spraying from a fire hose", "front porch of a small house") came back with a median score
+# of 0.298 and a best of 0.342: the pictures being searched were never of those things. archive/ and
+# stock/ are the real-footage shelves and belong in the same index.
+# ai_video/ is deliberately left out - it is generated material and must not enter documentary
+# b-roll through a search that cannot tell the difference.
+# The ingest contract (H:\pd-media\assets\archive\_ledger\CONTRACT.md) routes downloads to the
+# first storage tier above its free-space floor, so the library is spread over four drives. Only
+# H: was ever indexed, which left 15,527 rights-cleared clips - courtroom_justice,
+# government_buildings, decision_rooms, household_loss, bench_to_line - invisible to every search.
+# That, not the queries, is why 165 documentary lookups peaked at 0.342.
+SHELVES = [Path(r"H:\pd-media\assets\factory"),
+           Path(r"H:\pd-media\assets\archive"),
+           Path(r"H:\pd-media\assets\stock"),
+           Path(r"D:\pd-archive"),
+           Path(r"E:\pd-archive"),
+           Path(r"F:\pd-archive")]
+SHELF = SHELVES[0]   # kept for anything still importing the old name
 OUT = ROOT / "runs" / "footage_semantic"
 MODEL = "openai/clip-vit-base-patch32"
 BATCH = 32
@@ -59,7 +77,19 @@ def as_tensor(out):
 
 
 def clip_paths() -> list[str]:
-    return sorted(str(p) for p in SHELF.rglob("*.mp4"))
+    out: set[str] = set()
+    for shelf in SHELVES:
+        if not shelf.is_dir():
+            continue
+        for ext in ("*.mp4", "*.mov"):
+            for p in shelf.rglob(ext):
+                # _quarantine is where the ingest scripts put anything they could not clear:
+                # license_decision=review_required. An unreviewed clip must never become bindable,
+                # because binding is what puts it on screen. _ledger/_qc are bookkeeping, not media.
+                if any(part in ("_quarantine", "_ledger", "_qc") for part in p.parts):
+                    continue
+                out.add(str(p))
+    return sorted(out)
 
 
 def grab_frame(clip: str, dst: Path) -> bool:

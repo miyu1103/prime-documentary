@@ -1,243 +1,175 @@
-# EP60 surfside — Codex 画像生成 **バッチB** v001（56枚・1プロンプト1枚）
+# EP60 surfside - Codex image generation batch B v001
 
-> ## ✅ これも今すぐ着手してよいファイルです。
-> **バッチA（S001–S056）と合わせて、EP60の画像は合計112枚で完結します。**
-> バッチAは「実写に存在しないコンクリートの破壊」でした。バッチBは**台本 v003 が要求する、それ以外の絵**です。
-> 台本（`EP60_surfside_script.en.v003.md`・6,154語・35.6分）が確定したので、幕ごとに必要な絵を拾って積算しました。
->
-> **実写素材で撮れるものは、ここに入れていません。**夜の街・法廷・工事現場・救急車・夜明けの海・一般的な書類は棚にあります（実測: 夜の街314本・法廷144本・工事127本・書類747本・夜明け137本）。
-> AIが担うのは、**この事件のこの場面**であって、汎用の素材では代わりが利かないものだけです。
+Status: approved for execution from `EP60_surfside_script.en.v003.md`.
 
-**題材:** 2021年6月24日、フロリダ州サーフサイドのシャンプレンタワー南棟が部分崩落し98人が亡くなった件。
-**この映画は再現映像ではありません。崩落そのものは描きません。**
+This file replaces only the batch-B subset of the draft
+`EP60_surfside_CODEX_A_ASSETS.v001.md`. It does not change batch A. The 19
+draft prompts that duplicated `S001-S056` have been replaced with visuals for
+the design record, construction deviations, laboratory investigation, and the
+document trail in script v003.
 
----
+## Contract
 
-## 0. ★★★ 最重要：1プロンプト = 1枚 ★★★
+- Generate exactly one image per prompt. Do not create `_02` or `_03` variants.
+- Output `S057.png` through `S110.png` plus `T01.png` and `T02.png`.
+- Save to `H:\pd-media\assets\ai\surfside\`.
+- Deliver `S057-S110` as PNG at 3840x2160. Deliver `T01-T02` as PNG at 1920x1080.
+- Do not depict the collapse, rubble, rescue, victims, injuries, or bodies.
+- Do not reproduce Champlain Towers South or any identifiable real building.
+- Do not depict identifiable faces or real-person likenesses.
+- Do not create readable text, numerals, signatures, logos, seals, emblems, or
+  documents that could be mistaken for authentic reports or public records.
+- Regenerate only if an output violates a prohibition, and only after changing
+  the prompt wording.
 
-1. **各プロンプトから画像を1枚だけ作る。** 同じプロンプトで2枚目を作らない。
-2. **`_02` / `_03` を作らない。** 候補を並べて選ぶ工程は存在しない。
-3. **「良いのが出るまで回す」を禁止。**
-4. **作り直してよいのは §1 の禁止に触れたときだけ。** そのときも**文言を直してから1枚**。
+## Shared style
 
----
+`[STYLE]` expands to:
 
-## 1. ★絶対条件（触れた絵は使用不可）
+> cinematic still, cold institutional grey-blue concrete as the base palette, one warm amber note reserved strictly for morning light, corrosion stain, and warning - never flooding the frame, near-black falloff at the edges, telephoto compression, shallow depth of field, restrained documentary framing, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no seal, no emblem, no readable documents, no identifiable face
 
-- **崩落・瓦礫・救助・遺体を描かない。**
-- **実在の建物「シャンプレンタワー南棟」の肖像を作らない。** 建物は**1981年前後のフロリダ海岸の分譲高層住宅という類型**として描く。実物の写真と見紛うものを作らない。
-- **実在人物の顔を作らない。** 人は**手元・後ろ姿・シルエット・顔が判別できない距離**のみ。
-- **読める文字・数字を一切描かない。** 書類・図面・掲示物・カレンダーの文字は、線の連なりに潰れて読めない状態にする。
-- **印章・紋章・ロゴを描かない。**
-- **本物の報告書・公文書に見える画像を作らない。**
+`[NEG]` expands after `Avoid:` to:
 
-### 生成後のチェック（1枚ずつ目視）
+> readable text, letterforms, numerals, signage, captions, watermarks, logos, seals, emblems, crests, identifiable faces, portraits of real people, portraits of public officials, authentic government documents, collapsed buildings, rubble, debris fields, rescue scenes, injured people, bodies, gore, dramatic explosion, disaster movie lighting, cartoon, illustration, painterly, oversaturated, HDR halo
 
-| # | 不合格条件 |
-|---|---|
-| Q1 | 長辺が3840px未満（T01/T02は1280×720で可） |
-| Q2 | 読める文字・数字・署名がある |
-| Q3 | 印章・紋章・ロゴらしきものがある |
-| Q4 | 顔が判別できる人物がいる |
-| Q5 | 崩落・瓦礫・負傷者が写っている |
-| Q6 | 他の絵と実質同じ構図（バッチAの56枚とも照合すること） |
+## ACT III - The arithmetic (S057-S068)
 
----
-
-## 2. スタイル（★必ず展開してから生成）
-
-**`[STYLE]`** ＝ 末尾にそのまま連結:
-
-> , cinematic still, cold institutional grey-blue concrete as the base palette, one warm amber note reserved strictly for morning light, corrosion stain and warning — never flooding the frame, near-black falloff at the edges, telephoto compression, shallow depth of field, restrained documentary framing, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no seal, no emblem, no readable documents, no identifiable face
-
-**`[NEG]`** ＝ `Avoid:` の後にそのまま連結:
-
-> readable text, letterforms, numerals, signage, captions, watermarks, logos, seals, emblems, crests, identifiable faces, portraits of real people, collapsed buildings, rubble, debris fields, rescue scenes, injured people, bodies, gore, dramatic explosion, disaster movie lighting, cartoon, illustration, painterly, oversaturated, HDR halo
-
-1枚目で展開されているか必ず目視確認すること（過去に展開漏れで禁止事項155語が全画像から消えた事故あり）。
-
----
-
-## 3. 出力
-
-- 出力先: `H:\pd-media\assets\ai\surfside\`
-- **S057.png 〜 S110.png（54枚）＋ T01.png・T02.png（2枚）= 56枚**
-- 番号はバッチAの続き。S001–S056 は既存なので上書きしない。
-
----
-
-## 4. プロンプト（56行・各1枚）
-
-### 4.1 第1幕 — 建物と、共有されているもの（S057–S072 / 16枚）
-
-台本：*「その建物の人たちは所有者だった。借り手ではない。…共有されているもののうち、デッキは人が実際に使う場所だった」*
-
-```
 - `S057.png`
-A twelve-storey 1981-era beachfront residential tower seen from the sand at dusk as a generic type, stacked balconies in silhouette, sea grass in the foreground, no identifying features [STYLE] Avoid: [NEG]
+  A show of hands in a dim condominium meeting room seen from behind and above, every head cropped or turned away, no identifiable faces [STYLE] Avoid: [NEG]
 - `S058.png`
-The same order of tower seen from a quiet street at night, most windows dark, two lit, palms motionless [STYLE] Avoid: [NEG]
+  A generic ledger book open on a meeting table, its ruled columns reduced to a soft unreadable blur, an unbranded pen laid in the gutter [STYLE] Avoid: [NEG]
 - `S059.png`
-A row of identical balcony rails on a coastal apartment block photographed flat-on in hard morning light [STYLE] Avoid: [NEG]
+  An empty chairperson's seat at the head of a meeting table, blank papers squared in front of it, no marks visible [STYLE] Avoid: [NEG]
 - `S060.png`
-A residential corridor at night, identical doors receding, carpet worn along the centre line, one ceiling light out [STYLE] Avoid: [NEG]
+  An empty community meeting room set out with folding chairs in rows, a plain jug of water untouched on a side table [STYLE] Avoid: [NEG]
 - `S061.png`
-A lift lobby in a residential building, floor indicator dark, polished stone worn dull at the threshold [STYLE] Avoid: [NEG]
+  A stack of unopened envelopes fanned across a domestic desk, all completely blank and unaddressed [STYLE] Avoid: [NEG]
 - `S062.png`
-A bank of brass mailboxes in a residential lobby, every door shut, cold overhead light [STYLE] Avoid: [NEG]
+  A whiteboard wiped almost clean, only soft ghosts of erased non-letter marks remaining, no legible writing [STYLE] Avoid: [NEG]
 - `S063.png`
-A sliding glass balcony door seen from inside a dark apartment, curtain half drawn, the ocean a pale band beyond the rail [STYLE] Avoid: [NEG]
+  A contractor's empty site-sign frame standing at a coastal kerb, no panel or writing mounted in it [STYLE] Avoid: [NEG]
 - `S064.png`
-An empty swimming pool deck at first light, loungers stacked at one edge, the water perfectly still [STYLE] Avoid: [NEG]
+  Scaffold poles stacked and banded on a pavement, unused, an unmarked folded tarpaulin resting on top [STYLE] Avoid: [NEG]
 - `S065.png`
-A swimming pool at night lit only from within, the deck around it dark, no people [STYLE] Avoid: [NEG]
+  A plain repair-envelope prop lying face down on a hall table beneath house keys, no address, text, seal, or official markings [STYLE] Avoid: [NEG]
 - `S066.png`
-Sun umbrellas folded and tied on a pool deck at dawn, long shadows across the tiles [STYLE] Avoid: [NEG]
+  Three years of dust on a stored roll of generic construction drawings in a cupboard, seen close, no labels visible [STYLE] Avoid: [NEG]
 - `S067.png`
-A poolside gate standing open onto a deck, the tower rising behind it out of focus [STYLE] Avoid: [NEG]
+  A hand hovering above a blank chequebook without writing, cropped tightly at the cuff, no numbers or bank marks [STYLE] Avoid: [NEG]
 - `S068.png`
-A stack of folded pool towels on a shelf in a shaded alcove, nobody present [STYLE] Avoid: [NEG]
+  An office filing cabinet drawer closing on a row of plain hanging folders, cold fluorescent light, every tab blank [STYLE] Avoid: [NEG]
+
+## ACT IV - The last spring (S069-S084)
+
 - `S069.png`
-A residential building's plant room door in a corridor, painted shut-looking, a single caged bulb above it [STYLE] Avoid: [NEG]
+  A towel left folded on an empty pool lounger in warm morning light, nobody in frame [STYLE] Avoid: [NEG]
 - `S070.png`
-Looking straight up a coastal residential tower from its base, twelve floors of balconies converging, flat white sky [STYLE] Avoid: [NEG]
+  A generic unbranded bicycle chained to a garage rail, tyres slightly soft, no readable lock markings [STYLE] Avoid: [NEG]
 - `S071.png`
-A municipal counter in a small town hall, a bell on the surface, shutters closed behind it, flat institutional light [STYLE] Avoid: [NEG]
+  A balcony table with two empty chairs and an unmarked cup left out, the sea beyond in haze [STYLE] Avoid: [NEG]
 - `S072.png`
-A wall calendar in an office with its grid and numerals dissolved to unreadable marks, one page curled at the corner [STYLE] Avoid: [NEG]
-```
-
-### 4.2 第2幕 — 技師の仕事、報告書、そしてあの部屋（S073–S088 / 16枚）
-
-台本：*「彼はデッキを歩いた。ランプを降りてガレージに入った。そしてコンクリートについて最も多くを教えるもの — 叩くこと — をやった」* ／ *「議事録によれば、建物は非常に良い状態だと彼は言った」*
-
-```
+  Plain laundry drying on a balcony rail against a bright coastal sky, no people and no identifying building features [STYLE] Avoid: [NEG]
 - `S073.png`
-An anonymised engineer's hand swinging a small hammer against a concrete ceiling, cropped at the wrist, dust caught in a torch beam [STYLE] Avoid: [NEG]
+  A lit apartment window seen from a quiet street at night, curtains open, the ordinary room beyond empty [STYLE] Avoid: [NEG]
 - `S074.png`
-An engineer's boots and the base of a tripod on a garage floor beside a column, seen from behind at low level [STYLE] Avoid: [NEG]
+  A small pot plant on a residential windowsill catching late afternoon light, no people in frame [STYLE] Avoid: [NEG]
 - `S075.png`
-A hand-held work light lying on a garage floor, its beam thrown flat across the concrete towards a column [STYLE] Avoid: [NEG]
+  A quiet apartment hallway with a plain unmarked delivery box left outside a closed door [STYLE] Avoid: [NEG]
 - `S076.png`
-A clipboard resting on a car bonnet in a garage, its form filled with unreadable marks, a pen across it [STYLE] Avoid: [NEG]
+  A generic unbranded car reversing slowly from a garage bay, taillights bright, driver fully obscured, no visible plate [STYLE] Avoid: [NEG]
 - `S077.png`
-A folding measuring rule opened against a cracked concrete surface, the markings blurred to nothing [STYLE] Avoid: [NEG]
+  An empty pool deck at midday, the water surface broken by coastal wind, no identifying architecture [STYLE] Avoid: [NEG]
 - `S078.png`
-A bound engineering report lying closed on a desk under a lamp, plain cover, a paperclip at one corner [STYLE] Avoid: [NEG]
+  Plain contractor's barrier tape marking off one small area of a deck, the rest in ordinary use, no writing on the tape [STYLE] Avoid: [NEG]
 - `S079.png`
-The same report open, its typed lines dissolved into an unreadable grey band, a hand at the frame edge turning a page [STYLE] Avoid: [NEG]
+  An unbranded drill bit and a small bag of plain anchors on a folded dust sheet, repair work about to begin [STYLE] Avoid: [NEG]
 - `S080.png`
-Photographs laid out face down in a grid on a desk, only the blank backs showing [STYLE] Avoid: [NEG]
+  A plain extension lead running down a garage ramp and taped to the floor, no labels or safety writing [STYLE] Avoid: [NEG]
 - `S081.png`
-A manila envelope on a hall table with keys beside it, its face turned to an unreadable smear [STYLE] Avoid: [NEG]
+  A generic 1980s coastal residential tower seen from the beach at sunset as an architectural type, warm light on balconies, no identifying features [STYLE] Avoid: [NEG]
 - `S082.png`
-A wire out-tray on an office desk holding a single thick envelope, cold fluorescent light overhead [STYLE] Avoid: [NEG]
+  An open apartment door with a plain key still in the lock, the dim corridor beyond empty [STYLE] Avoid: [NEG]
 - `S083.png`
-An empty community meeting room set out with folding chairs in uneven rows, a jug of water and glasses on a side table [STYLE] Avoid: [NEG]
+  A bedroom at night with curtains open and the sea black beyond, bed made, nobody in frame [STYLE] Avoid: [NEG]
 - `S084.png`
-A long table in that meeting room with a bound report lying on it, chairs pushed back, nobody present [STYLE] Avoid: [NEG]
+  A minimalist kitchen clock on a wall, hands present but the face completely blank with no numerals or marks [STYLE] Avoid: [NEG]
+
+## ACT V - Design, construction, and investigation (S085-S099)
+
 - `S085.png`
-The same room after the meeting, chairs at angles, one folded flat on the floor, lights still on [STYLE] Avoid: [NEG]
+  A generic 1981-era Florida beachfront residential tower seen from low on the beach in flat morning light, stacked balconies as a type, no identifying features [STYLE] Avoid: [NEG]
 - `S086.png`
-A municipal filing cabinet drawer closing on a row of hanging folders, cold institutional light [STYLE] Avoid: [NEG]
+  Rolled generic structural drawings stored on an archive shelf, old rubber bands and dust on the ends, every label absent [STYLE] Avoid: [NEG]
 - `S087.png`
-A dark wooden drawer half open with a bound document lying inside face up, its type an unreadable smear [STYLE] Avoid: [NEG]
+  A generic structural floor-plan study viewed from directly above, only an abstract grid of thin lines on drafting paper, an unmarked scale rule across one edge, no text or dimensions [STYLE] Avoid: [NEG]
 - `S088.png`
-An office desk telephone sitting silent beside a closed folder, cord neatly coiled [STYLE] Avoid: [NEG]
-```
-
-### 4.3 第3幕 — 金額（S089–S098 / 10枚）
-
-台本：*「積立金は約70万6,000ドル。試算は1,030万ドル。…7%」* ／ *「1ベッドルームは80,190ドル。4ベッドルームのペントハウスは336,135ドル」*
-
-```
+  Two translucent generic structural grid drawings overlaid on a light table and visibly misaligned, lines only, no annotation or numbers [STYLE] Avoid: [NEG]
 - `S089.png`
-An accounts ledger open on a desk, its ruled columns a soft blur with no legible figures, a pen laid in the gutter [STYLE] Avoid: [NEG]
+  A period-neutral drafting desk with a mechanical pencil and parallel rule beside an abstract blank structural grid, no lettering or dimensions [STYLE] Avoid: [NEG]
 - `S090.png`
-A pocket calculator lying face up on a stack of papers, its display blank [STYLE] Avoid: [NEG]
+  Several corroded reinforcing-steel specimens arranged by decreasing thickness on a dark laboratory table, no labels, rulers, or evidence tags [STYLE] Avoid: [NEG]
 - `S091.png`
-A bank statement lying on a kitchen table with every line dissolved to unreadable, a mug at the frame edge [STYLE] Avoid: [NEG]
+  Concrete core cylinders resting in an unmarked foam laboratory tray under cold neutral light, no writing or labels [STYLE] Avoid: [NEG]
 - `S092.png`
-A residential letterbox with an envelope pushed halfway in, unaddressed, seen close [STYLE] Avoid: [NEG]
+  Two gloved hands comparing plain concrete core samples over a laboratory bench, arms cropped at the cuffs, no face or instruments with displays [STYLE] Avoid: [NEG]
 - `S093.png`
-A kitchen table at night with an opened envelope and the letter unfolded beside it, lines illegible, one lamp lit [STYLE] Avoid: [NEG]
+  Unmarked calipers encircling a heavily corroded reinforcing-bar specimen, the scale turned away and unreadable, macro laboratory view [STYLE] Avoid: [NEG]
 - `S094.png`
-A pair of reading glasses set down on a document, the page beneath them out of focus [STYLE] Avoid: [NEG]
+  A generic reinforcement-locator tool pressed against a concrete test slab, its display turned fully away, one gloved hand cropped at the cuff [STYLE] Avoid: [NEG]
 - `S095.png`
-A community notice board in a lobby with plain unmarked sheets pinned to it in a grid [STYLE] Avoid: [NEG]
+  A small generic physical scale model of a flat slab meeting a square column head on a neutral laboratory table, pure geometry, no labels [STYLE] Avoid: [NEG]
 - `S096.png`
-Raised hands seen from behind and above in a dim meeting room, faces out of frame, a vote in progress [STYLE] Avoid: [NEG]
+  A cutaway educational scale model of a concrete slab showing reinforcement sitting too low within the section, generic geometry, no annotation or text [STYLE] Avoid: [NEG]
 - `S097.png`
-An empty chairperson's seat at the head of a meeting table, papers squared in front of it [STYLE] Avoid: [NEG]
+  Plain unmarked archive boxes arranged on laboratory shelving, one box slightly open with blank folders inside [STYLE] Avoid: [NEG]
 - `S098.png`
-A chequebook lying open and unwritten on a table, a pen beside it untouched [STYLE] Avoid: [NEG]
-```
-
-### 4.4 第4幕 — 最後の春（S099–S106 / 8枚）
-
-台本：*「タオルはラウンジャーに置かれたままだった。…建物は6月24日に落ちた。金は7月1日が期限だった」*
-
-```
+  A stack of generic survey photograph prints lying face down on a desk, only blank white backs visible [STYLE] Avoid: [NEG]
 - `S099.png`
-A towel left folded on a poolside lounger in morning sun, nobody in frame [STYLE] Avoid: [NEG]
+  Two generic structural drawing sheets side by side under glass, one grid visibly offset from the other, all labels and dimensions absent [STYLE] Avoid: [NEG]
+
+## THE NIGHT - No recreation (S100-S104)
+
 - `S100.png`
-Laundry drying on a balcony rail against a bright coastal sky, gently moving [STYLE] Avoid: [NEG]
+  An empty concrete stairwell at night with a single caged emergency light casting one hard shadow, no signs or lettering [STYLE] Avoid: [NEG]
 - `S101.png`
-A balcony table with two chairs and a cup left out, the sea beyond in haze [STYLE] Avoid: [NEG]
+  A generic coastal residential tower at one in the morning seen from a great distance, almost all windows dark, no identifying features [STYLE] Avoid: [NEG]
 - `S102.png`
-A car reversing out of an underground bay, taillights bright, driver not visible [STYLE] Avoid: [NEG]
+  The sea at night from an empty beach, no horizon visible, only a faint line of foam and near-black water [STYLE] Avoid: [NEG]
 - `S103.png`
-A lit apartment window seen from the street at night, curtains open, the room beyond ordinary and empty [STYLE] Avoid: [NEG]
+  An empty interior corridor with the lights out, only a soft greenish emergency glow from an unseen source, no sign or letters visible [STYLE] Avoid: [NEG]
 - `S104.png`
-A potted plant on a windowsill catching late afternoon light, the sea out of focus behind [STYLE] Avoid: [NEG]
+  A sliding glass balcony door viewed from inside a dark empty apartment, curtain half drawn, the ocean a pale band beyond the rail [STYLE] Avoid: [NEG]
+
+## ENDING - The record (S105-S110)
+
 - `S105.png`
-A contractor's tape marking off a small area of pool deck while the rest of the deck stays in normal use [STYLE] Avoid: [NEG]
+  A generic document prop sealed inside a clear evidence sleeve on a table, all type reduced to unreadable grey bands, a plain blank tag tied at one corner, not an authentic report [STYLE] Avoid: [NEG]
 - `S106.png`
-A folded dust sheet and a bag of anchors set down beside a column in a garage, work not yet started [STYLE] Avoid: [NEG]
-```
-
-### 4.5 第5幕・その夜・結末（S107–S110 / 4枚）
-
-台本：*「連邦の研究所で」* ／ *「木曜日だった。中にいた人のほとんどは眠っていた」* ／ *「書類が揃ったまま、その建物は落ちた」*
-
-```
+  A generic courtroom bench and empty chairs photographed from the gallery in flat daylight, no seals, flags, crests, or signage [STYLE] Avoid: [NEG]
 - `S107.png`
-Gloved hands arranging aged technical drawings side by side on a glowing light table in a darkened laboratory, every line a smear [STYLE] Avoid: [NEG]
+  A plain closed settlement-folder prop on a table with an unbranded pen beside it, no title, text, seal, or official markings [STYLE] Avoid: [NEG]
 - `S108.png`
-A coastal residential tower seen from far down a dark empty street at one-thirty in the morning, almost every window unlit [STYLE] Avoid: [NEG]
+  A vacant generic coastal lot at dawn, fenced, sand blown across flat ground, nothing standing, no signs [STYLE] Avoid: [NEG]
 - `S109.png`
-A document sealed inside a clear evidence sleeve on a table, its type illegible, a plain tag tied at one corner [STYLE] Avoid: [NEG]
+  Sunrise over open water seen from an empty beach, the light low and level, restrained and unsentimental [STYLE] Avoid: [NEG]
 - `S110.png`
-A vacant coastal lot at dawn behind a plain fence, sand blown flat across bare ground, nothing standing [STYLE] Avoid: [NEG]
-```
+  A metal filing cabinet drawer closing on plain folders in a dark records room, every tab blank, the final sliver of light disappearing [STYLE] Avoid: [NEG]
 
-### 4.6 サムネイル（T01–T02 / 2枚）
+## Thumbnail sources (T01-T02)
 
-**顔は使いません**（本作は犠牲者を名指しせず描かない方針）。物と時間で引きます。
-
-```
 - `T01.png`
-A concrete deck slab seen from directly below at night with one deep crack running across it, a single hard light raking from below, vast negative space in the upper left for large text, 1280x720 composition [STYLE] Avoid: [NEG]
+  A generic concrete deck slab underside at night with one deep crack crossing it, a single hard light from below, vast negative space in the upper left for later editorial text, dread held in geometry alone, no text in the image [STYLE] Avoid: [NEG]
 - `T02.png`
-A still swimming pool at night viewed across the deck with the dark bulk of a residential tower rising behind it and one lit window, clean negative space on the right for large text, 1280x720 composition [STYLE] Avoid: [NEG]
-```
+  A still swimming pool at night viewed from the deck with the dark bulk of a generic coastal residential tower behind it, one lit window, clean negative space on the right for later editorial text, no text in the image [STYLE] Avoid: [NEG]
 
----
+## Completion checks
 
-## 5. 完了条件（全部緑で完了）
-
-```
-[B-1] H:\pd-media\assets\ai\surfside\ に S057..S110 (54枚) + T01,T02 (2枚) = 56枚
-[B-2] バッチAと合わせて S001..S110 + T01,T02 = 112枚
-[B-3] _02 / _03 が0件
-[B-4] S057..S110 の長辺 >= 3840px（T01/T02 は 1280x720 で可）
-[B-5] §1 の Q1–Q6 を全56枚で目視。1枚も該当なし。Q6はバッチAの56枚とも照合
-[B-6] sha256 重複ゼロ（112枚全体で）
-[B-7] 1枚目で [STYLE] / [NEG] が展開済みであることを確認した記録
-```
-
-**56枚に届かないまま先へ進まない。基準を下げない。水増ししない。**
-
----
-
-*2026-08-01 作成。台本 `EP60_surfside_script.en.v003.md`（6,154語・35.6分・全craftゲート緑）の幕構成から積算。実写素材で代替できるもの（夜の街314本・法廷144本・工事127本・書類747本・夜明け137本）は除外し、この事件のこの場面にしか使えない絵だけを残した。事実は `EP60_surfside_FACTS_LEDGER.v001.md`、配分の根拠は `EP60_surfside_ASSET_DESIGN.v001.md`。*
+- `S057-S110` exist: 54 files.
+- `T01-T02` exist: 2 files.
+- No `_02` or `_03` variants.
+- `S057-S110` are PNG 3840x2160; `T01-T02` are PNG 1920x1080.
+- Every output passes checks for readable text, logos/seals, identifiable faces,
+  collapse/rubble/injury imagery, misleading authentic-document appearance, and
+  substantial composition duplication against batch A and neighboring B shots.
+- SHA-256 duplicates: zero across all 112 Surfside deliverables.
+- The first B generation records that `[STYLE]` and `[NEG]` were expanded.

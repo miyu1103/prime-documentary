@@ -38,7 +38,9 @@ export type ShortData = {
   bgmSrc: string | null;
   ambienceSrc?: string | null;
   sfx?: { atSec: number; src: string; gainDb?: number }[];
-  ctaText?: string;           // 末尾CTA（例「本編はチャンネルへ」）
+  ctaTextYT?: string;         // YouTube版CTA（例「続きはYouTubeで」）
+  ctaTextTT?: string;         // TikTok版CTA（外部名なし・例「フル版はプロフィールから」）。§10参照
+
   beats: ShortBeat[];
 };
 export const shortDurationInFrames = (d: ShortData, fps: number) =>
@@ -98,8 +100,12 @@ export const shortDurationInFrames = (d: ShortData, fps: number) =>
 - `ShortThumb`（Still・1080×1920）：背景＝`shortNN_thumb.png`（文字なし）＋**大きな日本語文言**（`SHORTS_EP*.md`の「サムネ文言」）をImpactで重ねる。金/白・強コントラスト。
 - 文字は中央〜やや上、UI領域（下/右）を避ける。
 
-## 10. 書き出し
-- `npm run render Short-shortNN out/shortNN.mp4 --crf=16`（CPU/libx264・1080×1920・30fps・NVENC不可）。
+## 10. 書き出し（YouTube版／TikTok版の2本・CTAのみ差し替え）
+> 同一チャンネルIPの動画を **YouTube Shorts と TikTok の両方**に投稿する。**映像・音・尺は共通、末尾CTAの数秒だけ差し替えて2本書き出す**（オーナー決定 2026-06-23）。
+- **YouTube版**：`ctaText="続きはYouTubeで（チャンネルへ）"`。`npm run render Short-shortNN-yt out/shortNN_yt.mp4 --crf=16`。
+- **TikTok版**：**「YouTube」「リンク」等の外部プラットフォーム名・外部誘導語を出さない**（リーチ抑制/シャドウバン回避）。CTAは婉曲に＝`ctaText="フル版はプロフィールから"`。**導線＝link in bio に本編URL**（動画内では「プロフィールから」と促すのみ／URL自体は出さない）。`npm run render Short-shortNN-tt out/shortNN_tt.mp4 --crf=16`。
+- 実装：`shortNN.ts` の `ctaText` を版別に持つ（`ctaTextYT` / `ctaTextTT`）か、`Root.tsx` に `Short-shortNN-yt` / `Short-shortNN-tt` の2コンポジションを登録（CTAビートのみ分岐）。映像・音・他ビートは完全共有。
+- TikTok版のサムネ/カバーは縦`shortNN_thumb.png`を流用可（プラットフォーム名は入れない）。
 - サムネ：`npm run still ShortThumb-shortNN out/shortNN_thumb.png`。
 
 ## 11. 受け入れ基準（これを満たして“完成”）
@@ -109,7 +115,7 @@ export const shortDurationInFrames = (d: ShortData, fps: number) =>
 - [ ] **音4層（ナレ＋BGM＋環境音＋SFX）**が入り、ナレ中はBGM/環境音がダッキング。
 - [ ] 意味のあるアニメ（天秤/地図/票/年表/図解 等）が要所に入る。
 - [ ] **実在人物の肖像なし**・中立・広告安全・ブランド配色。
-- [ ] サムネ（縦・大文言）あり。CTAは本編リンク（URLはオーナー差し込み）。公開は6/24以降・各ゲートで停止。
+- [ ] サムネ（縦・大文言）あり。**YT版/TikTok版の2本**を書き出し（CTAのみ差し替え）。TikTok版は外部プラットフォーム名・誘導語を出さない（導線=link in bio）。本編URLはオーナー差し込み。公開は6/24以降・各ゲートで停止。
 
 ## 12. Codex実装ステップ
 > **指針**：意味のあるアニメはコード部品（`SceneArt`/`Motion`/`KineticType`/`DiagramFlow`）で出す。**MovingImage だけにしない。**各ショート・各ビートの演出割当と新規縦コンポ（`VoteVertical` 等・評決は話ごとに可変）は **`SHORTS_MOTION_DESIGN.md`** に詳細。

@@ -1,6 +1,6 @@
 # PLAYLIST PLAN v001 - DRY RUN, NOTHING EXECUTED
 
-- generated: `2026-07-28T01:16:33.456426+00:00`
+- generated: `2026-08-01T21:52:49.179488+00:00`
 - design: `config/distribution/series_clusters.v001.json` (status: `approved`)
 - measured against: `episodes/_planning/measurements/DISTRIBUTION_STATE.v001.json`
 - total API calls if approved: **46** (2300 quota units of a 10,000/day allowance)

@@ -53,6 +53,26 @@ SCORE_FLOOR = 0.28
 # Score alone cannot catch either: the lease clip scores 0.312, comfortably above any floor.
 REJECTS = INDEX / "rejected_clips.txt"
 
+# A clip that is wrong for ONE plate is usually fine for another: an aerial of a highway is not a
+# "front yard of a single storey house", but it is exactly right somewhere else. Banning it
+# globally throws away good material, so an eye QC verdict can be scoped to the plate that it
+# failed. One line per verdict: "short186 32 <full path>".
+PAIR_REJECTS = INDEX / "rejected_pairs.txt"
+
+
+def load_pair_rejects() -> set[tuple[str, int, str]]:
+    if not PAIR_REJECTS.exists():
+        return set()
+    out = set()
+    for ln in PAIR_REJECTS.read_text(encoding="utf-8").splitlines():
+        ln = ln.strip()
+        if not ln or ln.startswith("#"):
+            continue
+        parts = ln.split(None, 2)
+        if len(parts) == 3:
+            out.add((parts[0], int(parts[1]), parts[2].strip()))
+    return out
+
 
 def load_rejects() -> set[str]:
     if not REJECTS.exists():
@@ -166,6 +186,10 @@ def main() -> int:
     scores = emb @ Q.T                      # [clips, plates]
 
     rejected: set[str] = set(load_rejects())
+    pair_rejected = load_pair_rejects()
+    if pair_rejected:
+        print(f"{len(pair_rejected)} plate-specific exclusions from eye QC "
+              f"(runs/footage_semantic/rejected_pairs.txt)")
     used: set[str] = set(rejected)
     if rejected:
         print(f"{len(rejected)} clips permanently excluded by eye QC "
@@ -187,7 +211,7 @@ def main() -> int:
         # first choice: a clip nothing has claimed anywhere
         for idx in np.argsort(-col)[:400]:
             cand = paths[idx]
-            if cand in used:
+            if cand in used or (s["short_id"], p["n"], cand) in pair_rejected:
                 continue
             if float(col[idx]) < a.floor:
                 break
@@ -201,7 +225,8 @@ def main() -> int:
             # Never reuse inside the same episode: that is the repetition a viewer actually notices.
             for idx in np.argsort(-col)[:400]:
                 cand = paths[idx]
-                if cand in rejected or cand in seen_here:
+                if (cand in rejected or cand in seen_here
+                        or (s["short_id"], p["n"], cand) in pair_rejected):
                     continue
                 if float(col[idx]) < a.floor:
                     break
