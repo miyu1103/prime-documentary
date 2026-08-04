@@ -193,7 +193,7 @@ npx remotion still remotion/src/index.ts Thumb-correa-04 episodes/PD-2026-063-co
 ## 6. 下流への申し送り
 
 - **`C227` を発注書 §7 に追記する**（§3 の枠内に追記行の文面がある）。追記者はこの文書の作成者ではない。
-- `episode_spec.v001.json` の `mandatory_stills` は現在 `C001`–`C226`。**`C227` はサムネ専用で本編ビートを持たない**ため、`mandatory_stills` に足すと `check_spec_satisfied.py` が「カットに出てこない」と正しく落とす。**足さないこと。**発注書 §7 にだけ載せる。
+- `episode_spec.v001.json` の `mandatory_stills` は現在 **223件**（プレート227枚 − THUMB 4枚 `C221` `C222` `C223` `C227`）。**`C227` はサムネ専用で本編ビートを持たない**ため、`mandatory_stills` に足すと `check_spec_satisfied.py` が「カットに出てこない」と正しく落とす。**足さないこと。**発注書 §7 にだけ載せる。
 - タイトルとサムネの最終確定は**オーナーゲート**である（CLAUDE.md §3「title/thumbnail approval」・`.claude/rules/16-approval-boundaries.md`）。この文書は候補を出すところまでで止まる。
 
 *v001 · 2026-08-04 · 参照モデル `episodes/PD-2026-009-timbs/04_scenes/thumb_prompts.v001.md`*

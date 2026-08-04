@@ -248,11 +248,13 @@ The Court put it plainly. Respondents' claim for actual and punitive damages ari
 
 The first question is whether a city utility customer holds anything the Constitution recognises as property.
 
-State law creates the underlying interest. Federal constitutional law then decides whether it rises to the level of a legitimate claim of entitlement protected by the Due Process Clause.
+State law creates the interest. Federal constitutional law decides whether it rises to a legitimate claim of entitlement.
 
 So the answer was in Tennessee, and the Court went and got it. A company supplying electricity to the public has a right to cut off service to a customer for nonpayment of a just service bill and the company may adopt a rule to that effect. An exception to the general rule exists when the customer has a bona fide dispute concerning the correctness of the bill.
 
 The same decision put the risk of error on the utility. If the public utility discontinues service for nonpayment of a disputed amount it does so at its peril and if the public utility was wrong, for example if the customer was overcharged, it is liable for damages.
+
+It refused to let a rulebook override that. A public utility should not be able to coerce a customer to pay a disputed claim.
 
 State law does not permit a public utility to terminate service at will. A Tennessee utility is obliged to serve all of the inhabitants of the city of its location alike, without discrimination, and without denial, except for good and sufficient cause.
 

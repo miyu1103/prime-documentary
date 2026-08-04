@@ -5,7 +5,7 @@
 **Binding:** `docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md` 行11・12・13 ／ `episodes/PD-2026-065-marmet/episode_spec.v001.json`
 （`thumbnail_candidates_min: 3` · `forbidden_subjects` · `forbidden_claims`）
 **Art source:** `episodes/_planning/EP65_marmet_CODEX_BATCH_A.v001.md` §5 の **THUMB 3枚 = `R217` `R218` `R219`**（既発注）
-＋ 本書で追加する **`R224`**（§7 へ追記が必要・下の §6）
+＋ **`R224`**（§7 へ追記**済み**・下の §6）
 **保存先（生成物）:** `H:\pd-media\assets\ai\marmet\R217.png` … `R219.png` `R224.png`（長辺3840px以上・16:9・PNG）
 **保存先（合成物）:** `episodes/PD-2026-065-marmet/10_thumbnail/thumbnail.optionN.v001.png`（1280×720）
 選択1枚を `episodes/PD-2026-065-marmet/09_package/thumbnail.selected.v001.png` へコピー。
@@ -129,7 +129,9 @@ BATCH_A §2 の `[STYLE]` は本編の統一トーンとして *"flat overcast A
 `[STYLE]` と `[NEG]` は **`EP65_marmet_CODEX_BATCH_A.v001.md` §2 のものを逐語で展開する。**本書では再掲しない
 （再掲すると必ずドリフトする）。
 
-### 既発注の3枚 — **本文を1文字も変えない**（`mandatory_stills` 済み・byte-identical で機械検証済み）
+### 既発注の3枚 — **本文を1文字も変えない**（byte-identical で機械検証済み）
+
+> `R217` `R218` `R219` は **`mandatory_stills` には入っていない**。THUMB 4枚は四枚とも対象外である（本編のカットにならないため）。
 
 - `R217.png`
 The foot of a printed form with a plain pen resting across the ruled line, shot dead centre and close, hard directional light, the upper third of the frame left clear [STYLE] Avoid: [NEG]
@@ -200,17 +202,17 @@ py -3.11 scripts/check_final_acceptance.py 65 --render <mp4> --emit-receipt
 
 ---
 
-## 6. `R224` の登録（**これをやらないと `check_spec_satisfied.py` が落ちる**）
+## 6. `R224` の登録状態（2026-08-04 更新）
 
-`R224` は本書で新規に立てた ID である。**次の2つを必ず行う。**
+`R224` は本書で新規に立てた ID である。**発注側の作業は完了している。**
 
-1. `episodes/_planning/EP65_marmet_CODEX_BATCH_A.v001.md` の **§7 の末尾に `R224` を追記**する
-   （§7 は「後から足した4枚」の節であり、`R220`–`R223` の直後が正しい位置。**§5 は触らない**）。
-   追記時に §7 の合計行「合計は **223枚**になります」を **224枚** に直す。
-2. `episodes/PD-2026-065-marmet/episode_spec.v001.json` の `mandatory_stills` に `"R224.png"` を追加し、
-   `distinct_video_assets` との整合（実写採用11本 + プレート224 = 235）を `notes` に記録する。
-   **`mandatory_stills` を空や欠番のまま出荷しない**（EP54 でここが空だったため、棚に無いから作らせた14枚が
-   完成品から消えたのに誰も気づかなかった）。
+1. `episodes/_planning/EP65_marmet_CODEX_BATCH_A.v001.md` の **§7 の末尾に `R224` を追記済み**
+   （`R220`–`R223` の直後。**§5 は触っていない**）。§7 の合計行も **224枚** に修正済み。
+2. ⛔ **`mandatory_stills` には追加しない。** 旧版はここで「追加せよ」と書いていたが、それは誤りだった。
+   サムネは本編のカットにならないので、宣言すると `check_spec_satisfied.py` が
+   「宣言された静止画がどのカットにも無い」で**落ちる**。THUMB 4枚（`R217` `R218` `R219` `R224`）は四枚とも対象外。
+   現状は **220件**で正しい（プレート224 − THUMB 4）。変更しないこと。
+   （`mandatory_stills` を空や欠番のまま出荷しないという原則は生きている——EP54 でここが空だったため、14枚が完成品から消えたのに誰も気づかなかった。除外されるのは本編に入らない THUMB だけである。）
 
 > **`R224` はサムネ専用プレートであり、本編のカットには使わない。**
 > 本編に入れると `[STYLE]` を持たない1枚だけがトーンから浮く。

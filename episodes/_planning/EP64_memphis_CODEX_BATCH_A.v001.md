@@ -750,7 +750,7 @@ A wall telephone handset hanging off its cradle on the cord in a dark kitchen, c
 ファイル名は `M211.png` … `M218.png`、保存先・解像度・比率は §3 と同じです。
 
 > **★この8枚はアルファベット順で末尾に来ます。**EP54 で消えた14枚と同じ位置です。
-> `episode_spec.v001.json` の `mandatory_stills` は **M001〜M218** に更新済みなので、
+> `episode_spec.v001.json` の `mandatory_stills` は **215件**で確定済み（プレート219枚 − THUMB 4枚 `M208` `M209` `M210` `M219`）なので、
 > 抜けたら `check_spec_satisfied.py` が止めます。**納品先は `remotion/public/memphis/img` です。**
 
 ### プロンプト（各1枚・`_02` を作らない）

@@ -13,7 +13,7 @@
 |---|---|---|---|---|---|---|---|
 | EP62 | `greene` | ✅ 83 facts / 69 verbatim | ❌ none | ✅ valid | **0** | 47 | ✅ done — **12 accepted of 47** |
 | EP63 | `correa` | ✅ 177 / 105 | ❌ none | ✅ valid | **0** | 54 | ⏳ sheets built, not yet read |
-| EP64 | `memphis` | ✅ 122 / 109 | ❌ none | ✅ valid | **0** | 81 | ⏳ sheets built, not yet read |
+| EP64 | `memphis` | ✅ 123 / 110 | ❌ none | ✅ valid | **0** | 81 | ⏳ sheets built, not yet read |
 | EP65 | `marmet` | ✅ 54 / 38 (+ Brown II remand text) | ❌ none | ✅ valid | **0** | 57 | ⏳ sheets built, not yet read |
 
 **Four consequences that shape every short below.**
@@ -245,15 +245,15 @@ no house fire, nobody freezing, no utility worker as villain.
 
 - **Slot:** see §6 · **Format:** F-D · **Target 36–44 s** · ~120 w
 - **Hook:** *"A family moved into a house in Memphis and started getting two electricity bills. The second one was in the name Willie C. Craft. The man who lived there was Willie S. Craft."*
-- **Payoff:** one letter. The power went off five times, the Court said, and and the Supreme Court never decided whether they owed the money.
+- **Payoff:** one letter. The power went off five times, the Court said, and the Supreme Court never decided whether they owed the money.
 
 **Ledger source (verbatim):**
 > ML-17 — *"they noticed that there were two separate gas and electric meters and only one water meter serving the premises. The residence had been used previously as a duplex."*
 > ML-19 — *"In 1973, the Crafts began receiving two bills: their regular bill, and a second bill with an account number in the name of Willie C. Craft, as opposed to Willie S. Craft."*
 > ML-16 — *"Willie S. and Mary Craft, respondents here, reside … in Memphis."*（⛔-08オーナー裁定 2026-08-04：**名前は可・番地1019は不可**。引用は改変せず省略で短縮）
 
-**Telops:** `TWO METERS` · `TWO BILLS` · `WILLIE C.` · `WILLIE S.` · `NOBODY EVER\nDECIDED`.
-**Plate motifs:** two meter dials side by side on a wall (hero) · a hand tracing between them · an envelope on a mat, address dissolved · a kitchen counter with post stacked · a wall socket · a hallway light going out · a fuse panel · a house front in flat winter light · a doorbell · a phone handset on a wall cradle · a lamp with no bulb · a switch flipped with nothing happening.
+**Telops:** `TWO METER SETS` · `TWO BILLS` · `WILLIE C.` · `WILLIE S.` · `NOBODY EVER\nDECIDED`.
+**Plate motifs:** two gas meters and two electric meters serving one home (hero) · a hand tracing between them · an envelope on a mat, address dissolved · a kitchen counter with post stacked · a wall socket · a hallway light going out · a fuse panel · a house front in flat winter light · a doorbell · a phone handset on a wall cradle · a lamp with no bulb · a switch flipped with nothing happening.
 **Cover:** headline `ONE LETTER\nAPART` · badge `THE POWER WENT OFF`.
 **CTA props:** `ctaLongTitle: 'The Bill in the Wrong Name'` (26 ch) · `ctaHeadline: 'FULL CASE'`.
 **Funnel question:** *if you cannot tell which bill is yours, who do you even argue with?*

@@ -697,7 +697,10 @@ A dark blank display panel on a painted wall, dead centre, hard raking light acr
    **特に整理券・時計・カルテ・カレンダーの写った枚は、数字が出ていないか1枚ずつ拡大して見る。**
 2. **`C001`–`C005` を最初に見る。**8秒のフックはこの5枚で決まります。5枚のうち1枚でも凡庸なら、
    その枚だけ文言を強めて作り直す（§0の「回す」禁止はこれに優先されません — 作り直しは1回、1枚）。
-3. `episodes/PD-2026-063-correa/episode_spec.v001.json` の `mandatory_stills` に **C001〜C223 を全部書く**。
+3. `episodes/PD-2026-063-correa/episode_spec.v001.json` の `mandatory_stills` は **現在 223件で確定済み**。
+   プレートは全部で 227枚だが、**THUMB の4枚（`C221` `C222` `C223` `C227`）は意図的に外してある**。
+   サムネは本編のカットにならないので、宣言すると `check_spec_satisfied.py` が
+   「宣言された静止画がどのカットにも無い」で落ちる。**書き直さないこと。**
    空のままだと `check_spec_satisfied.py` の唯一の保護が無効になります（EP54はここが空で、
    棚に無いから作らせた14枚が完成品から消えました）。
 4. 1枚 = 1モーションクリップとして `remotion/public/correa/motion/` に書き出す

@@ -114,7 +114,7 @@ Aspect **16:9**. Art carries **no text**. Headline/kicker composited afterwards.
 | | |
 |---|---|
 | **Plate** | `M208.png` (already commissioned, §5 `THUMB` of the order, **unchanged**) |
-| **Kicker** | `TWO METERS` |
+| **Kicker** | `TWO METER SETS` |
 | **Headline** | `BOTH WERE` / `RUNNING` — **3 words** |
 | **Accent** | gold `#E5B53A` on line 2 |
 | **focus** | `(0.50, 0.55)` |
@@ -255,7 +255,7 @@ All ≤ 60 characters, hook first, honest against the body.
 | | **B** | `The Warning Arrived. The Way to Object Never Did` | 48 | THUMB-04 |
 | **3** | **A** | `She Called and Said She Had Paid. She Got No Satisfaction` | 57 | THUMB-03 |
 | | **B** | `Given No Satisfaction. Then It Reached the Supreme Court` | 56 | THUMB-03 |
-| **4** | **A** | `Two Meters on One Wall. Both of Them Were Running` | 49 | THUMB-01 |
+| **4** | **A** | `Two Sets of Meters. Both of Them Were Running` | 45 | THUMB-01 |
 | | **B** | `The Second Bill Had a Different Middle Initial` | 46 | THUMB-04 |
 
 **Promise → payoff, per pair.** 1 → ACT_1 (ML-19, ML-23). 2 → ACT_2, the Court of Appeals' own phrase
