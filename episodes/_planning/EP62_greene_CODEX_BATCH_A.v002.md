@@ -1028,3 +1028,15 @@ A long run of identical apartment doors along an open-air concrete walkway seen 
 
 - `G241.png`
 A single sheet of plain paper taped flat and square to the SAME door as G001 and no other: a sage-green painted wooden panelled door with a raised outer stile, the paint crazed and flaking to bare wood in two patches at the lock rail, a plain brass knob low at frame left, shot dead-on and square from about one metre in flat overcast daylight, the door filling the frame with a sliver of pale jamb at each side, the sheet PORTRAIT format with two short tabs of masking tape at its top corners only, the paper lying dead flat against the paint across its whole surface with no curl, no lift and no shadow under any edge, the sheet blank and its surface bearing no printing of any kind [STYLE] Avoid: [NEG]
+
+### ★再発注 3（2026-08-05・G240 は目視QC不合格）
+
+`G240` は **主題である「ドアに貼られた1枚の紙」が1枚も写っていない**。生成されたのは何も貼られていないドアの並びで、しかも1970年代の公営住宅ではなく**現代のトランクルームに見える**。
+見出しは `ONE KNOCK WAS ENOUGH` なのに、絵が事件を何も語っていない。
+輝度は合格だった（平均136.8・標準偏差80.4）ので、**明るさは維持しつつ紙を画の主題に戻す**。
+
+**`G240` は廃止。代替は `G242`。** 本編のカットには入らないので`mandatory_stills` には追加しない（224件のまま）。
+下の本文は展開済みの完全形。**`[STYLE]` トークンに戻さないこと**（低照度指定を打ち消している）。
+
+- `G242.png`
+A single sheet of plain pale paper taped to the door of a first-floor flat, the sheet placed at the centre of the frame and large enough to read as the subject of the picture, the door one of a run of identical painted doors along an open concrete walkway of a low-rise brick public housing block of the early 1970s, the further doors falling away behind it and out of focus, bright flat overcast daylight, the paper the brightest thing in the frame and clearly separated from the darker door behind it, the brick and concrete keeping their detail, the upper third of the frame left clear of any subject, nobody in frame, bright even key light, deep blacks kept but the subject held well above mid-grey, high micro-contrast, cinematic still, muted natural colour, flat humid Ohio Valley light, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage. Avoid: text, lettering, numerals, handwriting, signatures, seals, emblems, logos, signage, house numbers, street signs, self-storage units, roller shutters, garage doors, motel corridor, modern apartment block, glass balustrade, police uniform, sheriff badge, patrol car, courtroom interior, gavel, prison bars, handcuffs, furniture on a pavement, people being evicted, golden hour, sunset glow, postcard scenery, drone shot, modern cars, flat CGI, cartoon, illustration, oversaturated.

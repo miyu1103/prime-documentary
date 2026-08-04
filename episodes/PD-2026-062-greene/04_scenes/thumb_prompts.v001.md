@@ -1,9 +1,9 @@
 # サムネ ヒーローショット & タイトル — 第62話 greene（Codex生成用）
 
 **ステータス:** 設計。**アートは `EP62_greene_CODEX_BATCH_A.v002.md` の THUMB プレートで既に発注済み。新規に絵を起こさない。**
-Codex が `G220`–`G222`（＋本書で追加する `G240`）を生成 → オーナーが1枚選択 → Remotion `<Still>` で見出しを重ねて **1280×720** 書き出し。
+Codex が `G220`–`G222`（＋本書で追加する `G242`）を生成 → オーナーが1枚選択 → Remotion `<Still>` で見出しを重ねて **1280×720** 書き出し。
 
-**アート保存先:** `H:\pd-media\assets\ai\greene\` に `G220.png` `G221.png` `G222.png` `G240.png`（長辺3840px以上・16:9・PNG）。
+**アート保存先:** `H:\pd-media\assets\ai\greene\` に `G220.png` `G221.png` `G222.png` `G242.png`（長辺3840px以上・16:9・PNG）。
 **書き出し先:** `episodes/PD-2026-062-greene/09_package/thumbnail.v001.png` … `thumbnail.v004.png`、採用分を `thumbnail.selected.v001.png`。
 （`check_final_acceptance.py` の `thumbnail_ready` はこの2箇所しか見ない。`10_thumbnail/*.png` でも可。）
 
@@ -16,7 +16,7 @@ Codex が `G220`–`G222`（＋本書で追加する `G240`）を生成 → オ�
 
 | 行 | 要求 | 本書での満たし方 |
 |---|---|---|
-| 11 | **候補3枚以上**・**1280×720**・アートは **Codex が事前生成**・`selected` を1枚決める | 候補**4枚**（`G220` `G221` `G222` `G240`）。うち3枚は発注済み、`G240` のみ追加発注 |
+| 11 | **候補3枚以上**・**1280×720**・アートは **Codex が事前生成**・`selected` を1枚決める | 候補**4枚**（`G220` `G221` `G222` `G242`）。うち3枚は発注済み、`G242` のみ追加発注 |
 | 12 | 見出しは**大文字・3〜4語まで**・好奇心の芯は**一つ**・**主題は巨大**・**超高コントラスト**・地は黒/紺・アクセントは金 `#E5B53A` か電光青 `#1F6BFF`・文字は白/銀・**320pxで読める** | 見出し4案すべて4語。Remotion 側で合成（下記§2） |
 | 12 | **実在人物の肖像を使わない** | 人物は後ろ姿・シルエット・手のみ。3人の被上告人（Linnie Lindsey / Barbara Hodgens / Pamela Ray）およびその住居の描写は契約 `forbidden_subjects` で禁止 |
 | 11/12 | **生成アートの中に読める文字を入れない** | プロンプト本文に文字要素を一切書かない。見出しは **Remotion が合成する**。モデルには描かせない |
@@ -54,8 +54,8 @@ Codex が `G220`–`G222`（＋本書で追加する `G240`）を生成 → オ�
 | **1** | **B** | `They Taped It To The Door. It Did Not Stay There.` | 49 | `G222` / **THE PAPER CAME OFF** |
 | **2** | **A** | `A Paper Taped To A Door Counted As Legal Notice` | 47 | `G220` / **THIS COUNTED AS NOTICE** |
 | **2** | **B** | `Kentucky Called Tape On A Door Legal Service` | 44 | `G220` / **THIS COUNTED AS NOTICE** |
-| **3** | **A** | `One Knock. Nobody Home. The Paper Went Up.` | 42 | `G240` / **ONE KNOCK WAS ENOUGH** |
-| **3** | **B** | `The Deputy Knocked Once. That Was The Procedure.` | 48 | `G240` / **ONE KNOCK WAS ENOUGH** |
+| **3** | **A** | `One Knock. Nobody Home. The Paper Went Up.` | 42 | `G242` / **ONE KNOCK WAS ENOUGH** |
+| **3** | **B** | `The Deputy Knocked Once. That Was The Procedure.` | 48 | `G242` / **ONE KNOCK WAS ENOUGH** |
 
 **予備（`G221` 用・A/B相手なし）**
 
@@ -85,13 +85,13 @@ Codex が `G220`–`G222`（＋本書で追加する `G240`）を生成 → オ�
 | `G220` | **THIS COUNTED AS NOTICE** | 4 | 「これが？」 |
 | `G221` | **DID SHE EVER KNOW?** | 4 | 「中の人は知っていたのか」 |
 | `G222` | **THE PAPER CAME OFF** | 4 | 「剥がれたら、どうなる」 |
-| `G240` | **ONE KNOCK WAS ENOUGH** | 4 | 「一度だけ？」 |
+| `G242` | **ONE KNOCK WAS ENOUGH** | 4 | 「一度だけ？」 |
 
 **合成仕様（`BRAND.thumb` / Remotion `<Still>` 1280×720）**
 
 - 地：黒〜濃紺（`#080B12`〜`#0E1626`）。アートは画面下 2/3。**上 1/3 は各プレートで空けてある**（§3 プロンプト参照）。
 - 文字：白/銀（`#FFFFFF` / `#DCE3EC`）、太字、**320pxに縮小して読めること**。1行2〜3語で2行まで。
-- アクセント：金 `#E5B53A`（`G220` `G222` `G240`）／電光青 `#1F6BFF`（`G221`）。**1枚につき1色だけ**。
+- アクセント：金 `#E5B53A`（`G220` `G222` `G242`）／電光青 `#1F6BFF`（`G221`）。**1枚につき1色だけ**。
   アクセントは見出しの下線かキッカーチップのどちらか一方に限る。両方は使わない。
 - アートは主題が画面高の 60% 以上を占めること（行12「巨大な主題」）。
 
@@ -110,7 +110,7 @@ Codex が `G220`–`G222`（＋本書で追加する `G240`）を生成 → オ�
 
 ---
 
-- `G240.png` — **【新規・本書で追加】ONE KNOCK WAS ENOUGH**
+- `G242.png` — **【新規・本書で追加】ONE KNOCK WAS ENOUGH**
 
   A long run of identical apartment doors along an open-air concrete walkway seen down its length under bright flat overcast daylight, one single pale rectangle of paper on one door far down the line, the concrete and the painted doors bright and clearly separated, the upper third of the frame left clear, bright even key light, the subject clearly separated from the ground, deep blacks kept but the subject held well above mid-grey, high micro-contrast, cinematic still, muted natural colour, flat humid Ohio Valley light, soft falloff toward the edges, shallow depth of field, restrained documentary framing, mid-1970s to early-1980s American public housing period detail, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage. Avoid: text, lettering, numerals, handwriting, signatures, seals, emblems, logos, signage, house numbers, street signs, police uniform, sheriff badge, patrol car, courtroom interior, gavel, judge's bench, prison bars, razor wire, handcuffs, furniture on a pavement, people being evicted, crying, a hand on a shoulder, golden hour, sunset glow, postcard scenery, drone shot, cosy fireplace, Christmas, tropical, modern smartphones, modern cars, flat CGI, cartoon, illustration, oversaturated.
 
@@ -137,13 +137,16 @@ Codex が `G220`–`G222`（＋本書で追加する `G240`）を生成 → オ�
 
 ---
 
-## 4. `G240` の発注状態（2026-08-04 更新）
+## 4. `G242` の発注状態（2026-08-05 更新）
 
-`G240` は **`EP62_greene_CODEX_BATCH_A.v002.md` の末尾に追記済み**（見出し「★追加（2026-08-04・サムネ用の G240）」）。発注側の作業は残っていない。生成を回す人は次だけ確認する。
+> ⚠ **旧 `G240` は生成されたが目視QCで不合格。**主題の紙が1枚も写っておらず、現代のトランクルームに見える。
+> `G242` を発注ファイルの末尾に追記済み。**`G240.png` は使わない。**
+
+`G242` は **`EP62_greene_CODEX_BATCH_A.v002.md` の末尾に追記済み**（見出し「★追加（2026-08-04・サムネ用の G242）」）。発注側の作業は残っていない。生成を回す人は次だけ確認する。
 
 1. プロンプト本文は発注ファイル側も本書 §3 も**展開済みの全文**で、`[STYLE]` の低照度指定を打ち消している。**`[STYLE]` トークンに戻さない。**
 2. **`mandatory_stills` には追加しない。** サムネは本編のカットにならないので、宣言すると `check_spec_satisfied.py` が「宣言された静止画がどのカットにも無い」で落ちる。THUMB 4枚は四枚とも対象外。
-3. 保存先は他と同じ `H:\pd-media\assets\ai\greene\G240.png`。長辺3840px以上・16:9・PNG。
+3. 保存先は他と同じ `H:\pd-media\assets\ai\greene\G242.png`。長辺3840px以上・16:9・PNG。
 
 ※ 旧版はこの候補を `G226` と呼んでいたが、`G226` は**本編の最後の画に割り当てられていた番号**で衝突していた。（その最後の画自体も目視QCで作り直しになり、現在は `G231`。）
 
