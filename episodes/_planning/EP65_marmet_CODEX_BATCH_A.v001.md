@@ -635,11 +635,11 @@ An empty armchair beside a winter window with a closed folder on the seat, drama
 
 ## 5.5 ショート3本のプレートは、この219枚の**内数**です
 
-`SHORTS_SLATE_EP62-65.v001.md` の `short191` / `short192` / `short193` が要求するモチーフを、上のプロンプトに
+`SHORTS_SLATE_EP62-65.v001.md` の `short268` / `short269` / `short270` が要求するモチーフを、上のプロンプトに
 1つずつ突き合わせた表です。**ショート用の二度目の発注は出しません。**各ショートは **16枚以上の distinct plate**
 を要求します（`R-A`）。下の表はいずれもそれを満たしています。
 
-| short191「訴えられるのは、向こうが金を取り立てる話だけだった」 | 使うプレート |
+| short268「訴えられるのは、向こうが金を取り立てる話だけだった」 | 使うプレート |
 |---|---|
 | 署名欄＝ペンと読めない一筆（フック＝`frame 0`） | `R001` |
 | 無人の入所受付（＝机の向こうに誰もいない） | `R002` |
@@ -652,7 +652,7 @@ An empty armchair beside a winter window with a closed folder on the seat, drama
 | 盆の上の2つのカップ（＝落ち） | `R074` |
 | ループ結合＝1コマ目に戻る | `R074` → `R191` → `R001` |
 
-| short192「最高裁は一度も『有効だ』と言っていない」 | 使うプレート |
+| short269「最高裁は一度も『有効だ』と言っていない」 | 使うプレート |
 |---|---|
 | 戻ってくる封筒（フック＝`frame 0`） | `R121` |
 | 棚に戻される書類 / 戻り切った棚 | `R122` `R123` |
@@ -668,7 +668,7 @@ An empty armchair beside a winter window with a closed folder on the seat, drama
 | 廊下の突き当りの扉 | `R153` |
 | ループ結合 | `R122` → `R123` → `R121` |
 
-| short193「州の裁判所が『まるごと織り上げた』と書いた」 | 使うプレート |
+| short270「州の裁判所が『まるごと織り上げた』と書いた」 | 使うプレート |
 |---|---|
 | 広げられる布地（フック＝`frame 0`） | `R084` |
 | 広がった布地の織り目 | `R085` |

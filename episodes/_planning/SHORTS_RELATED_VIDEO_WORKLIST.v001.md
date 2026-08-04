@@ -62,19 +62,19 @@ py -3.11 scripts/short_funnel_gate.py --video <shortId> --longform <longId> --at
 
 関連動画リンクはAPIで読めないので、ゲートは申告として記録します。申告がなければ必ず FAIL します。
 検証できない工程を、黙って省略できないようにするためです。
-## EP62-65 (short182-193) -- added 2026-08-04, blocked until each long-form is uploaded
+## EP62-65 (short259-193) -- added 2026-08-04, blocked until each long-form is uploaded
 
 | short | episode | related video to set in Studio | done |
 |---|---|---|---|
-| short182 | PD-2026-062-greene | A Paper on the Door | [ ] |
-| short183 | PD-2026-062-greene | A Paper on the Door | [ ] |
-| short184 | PD-2026-062-greene | A Paper on the Door | [ ] |
-| short185 | PD-2026-063-correa | Never Called | [ ] |
-| short186 | PD-2026-063-correa | Never Called | [ ] |
-| short187 | PD-2026-063-correa | Never Called | [ ] |
-| short188 | PD-2026-064-memphis | The Bill in the Wrong Name | [ ] |
-| short189 | PD-2026-064-memphis | The Bill in the Wrong Name | [ ] |
-| short190 | PD-2026-064-memphis | The Bill in the Wrong Name | [ ] |
-| short191 | PD-2026-065-marmet | The Paper You Sign at the Door | [ ] |
-| short192 | PD-2026-065-marmet | The Paper You Sign at the Door | [ ] |
-| short193 | PD-2026-065-marmet | The Paper You Sign at the Door | [ ] |
+| short259 | PD-2026-062-greene | A Paper on the Door | [ ] |
+| short260 | PD-2026-062-greene | A Paper on the Door | [ ] |
+| short261 | PD-2026-062-greene | A Paper on the Door | [ ] |
+| short262 | PD-2026-063-correa | Never Called | [ ] |
+| short263 | PD-2026-063-correa | Never Called | [ ] |
+| short264 | PD-2026-063-correa | Never Called | [ ] |
+| short265 | PD-2026-064-memphis | The Bill in the Wrong Name | [ ] |
+| short266 | PD-2026-064-memphis | The Bill in the Wrong Name | [ ] |
+| short267 | PD-2026-064-memphis | The Bill in the Wrong Name | [ ] |
+| short268 | PD-2026-065-marmet | The Paper You Sign at the Door | [ ] |
+| short269 | PD-2026-065-marmet | The Paper You Sign at the Door | [ ] |
+| short270 | PD-2026-065-marmet | The Paper You Sign at the Door | [ ] |

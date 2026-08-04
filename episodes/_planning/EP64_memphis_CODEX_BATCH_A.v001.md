@@ -610,11 +610,11 @@ A wall telephone handset hanging off its cradle on the cord in a dark kitchen, c
 
 ## 5.5 ショート3本のプレートは、この210枚の**内数**です
 
-`SHORTS_SLATE_EP62-65.v001.md` の `short188` / `short189` / `short190` が要求するモチーフを、上の
+`SHORTS_SLATE_EP62-65.v001.md` の `short265` / `short266` / `short267` が要求するモチーフを、上の
 プロンプトに1つずつ突き合わせた表です。**ショート用の二度目の発注は出しません。**
 各ショートの `R-A` 要件は「≥16 distinct plates」で、下の3表はそれぞれ **18 / 19 / 21枚**あります。
 
-| `short188`「Two bills arrived. One was addressed to a person who did not exist.」 | 使うプレート |
+| `short265`「Two bills arrived. One was addressed to a person who did not exist.」 | 使うプレート |
 |---|---|
 | **frame 0** 壁に並んだ2つのメーター | `M001` |
 | 回っている電気メーターの円盤 | `M002` |
@@ -629,7 +629,7 @@ A wall telephone handset hanging off its cradle on the cord in a dark kitchen, c
 | 寄りのメーター（サムネ兼用・縦でも成立） | `M208` |
 | **loop_join** `M106`（切られたまま暗い）→ 同じ位置に `M001` が浮かび上がる | `M106` → `M001` |
 
-| `short189`「The notice said pay or we cut you off. That was all it said.」 | 使うプレート |
+| `short266`「The notice said pay or we cut you off. That was all it said.」 | 使うプレート |
 |---|---|
 | **frame 0** 活字が灰色に溶けた最終通知 | `M048` |
 | 三つ折りの請求書 | `M021` |
@@ -646,7 +646,7 @@ A wall telephone handset hanging off its cradle on the cord in a dark kitchen, c
 | 夕暮れの通りで一軒だけ暗い | `M171` |
 | **loop_join** `M171` の暗い窓が画面を埋め、そのまま `M048` の紙面になる | `M171` → `M048` |
 
-| `short190`「Two thousand customers a month. The dissent said the system worked.」 | 使うプレート |
+| `short267`「Two thousand customers a month. The dissent said the system worked.」 | 使うプレート |
 |---|---|
 | **frame 0** 灯の消えた交換台 | `M060` |
 | 受話器の並ぶ机の列（2枚） | `M061` `M150` |
@@ -671,7 +671,7 @@ A wall telephone handset hanging off its cradle on the cord in a dark kitchen, c
 > 端に寄った構図（例：`M163` の膝から下、`M121` のブラインドの光、`M139` の低い小径）は
 > ショートに使わず、長尺のみに使います。
 >
-> **`short190` の落ちは削れません。** `THEY CAN STILL CUT IT` のテロップに当てる絵（`M141` `M106`）は
+> **`short267` の落ちは削れません。** `THEY CAN STILL CUT IT` のテロップに当てる絵（`M141` `M106`）は
 > 必ず生成すること。この話で最も起きやすい誤読は「聴取が入った＝止まらなくなった」で、
 > スレートはそれを禁じています。
 

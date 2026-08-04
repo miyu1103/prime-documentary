@@ -725,7 +725,7 @@ A torn corner of paper still held under tape on an otherwise bare painted door, 
 
 ## 5.5 ショート3本のプレートは、この222枚の**内数**です
 
-`SHORTS_SLATE_EP62-65.v001.md` の `short182` / `short183` / `short184` が要求するモチーフを、
+`SHORTS_SLATE_EP62-65.v001.md` の `short259` / `short260` / `short261` が要求するモチーフを、
 上のプロンプトに1つずつ突き合わせた表です。**ショート用の二度目の発注は出しません。**
 
 **★印のプレートはショートに使うため、主題を画面中央に置くこと。** ショートは 1080×1920 なので、
@@ -733,7 +733,7 @@ A torn corner of paper still held under tape on an otherwise bare painted door, 
 **9:16 に切ったサムネイルも並べて確認**してください。端に寄った構図（例：`G082` の画面端の小さな手）は
 ショートに使わず、長尺のみに使います。
 
-### short182「通知は剥がれた。貼っていた男たちは知っていた」
+### short259「通知は剥がれた。貼っていた男たちは知っていた」
 
 | ショートのビート | プレート | 中央配置 |
 |---|---|---|
@@ -751,7 +751,7 @@ A torn corner of paper still held under tape on an otherwise bare painted door, 
 
 distinct = 19（下限16をクリア）。`G209` と `G001` は**同一画角**で作ること。ループはここで閉じます。
 
-### short183「一度叩いて、留守。それで手続きは終わりだった」
+### short260「一度叩いて、留守。それで手続きは終わりだった」
 
 | ショートのビート | プレート | 中央配置 |
 |---|---|---|
@@ -767,7 +767,7 @@ distinct = 19（下限16をクリア）。`G209` と `G001` は**同一画角**�
 
 distinct = 17。
 
-### short184「反対意見の答え＝郵便受けは荒らされる」
+### short261「反対意見の答え＝郵便受けは荒らされる」
 
 | ショートのビート | プレート | 中央配置 |
 |---|---|---|
@@ -783,7 +783,7 @@ distinct = 17。
 
 distinct = 18。
 
-> **ショート間で共有するプレートは `G116` の1枚のみ**（short182 と short184）。公開は
+> **ショート間で共有するプレートは `G116` の1枚のみ**（short259 と short261）。公開は
 > `SHORTS_SLATE` §6 のとおり E+1 / E+4 / E+7 と離れているので `footage_diversity` 上の問題はありません。
 
 ---

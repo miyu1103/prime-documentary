@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0.0",
-  "short": 183,
+  "short": 260,
   "episode_id": "PD-2026-062-greene",
   "slug": "greene",
   "loop": true,
@@ -13,10 +13,12 @@
   "cta": {
     "ctaHeadline": "FULL CASE",
     "ctaLongTitle": "A Paper on the Door",
-    "ctaLongThumbSrc": "shorts/short183/short183_ctathumb.png",
+    "ctaLongThumbSrc": "shorts/short260/short260_ctathumb.png",
     "scrim": 0.46,
     "fake_button": false
   },
   "pinned_comment": null,
-  "note": "funnel_long_video_id and pinned_comment stay null until the episode has at least a private upload. check_short_funnel.py fails until then, and that is the intended behaviour: a short cannot be scheduled before the corridor has somewhere to lead."
+  "note": "funnel_long_video_id and pinned_comment stay null until the episode has at least a private upload. check_short_funnel.py fails until then, and that is the intended behaviour: a short cannot be scheduled before the corridor has somewhere to lead.",
+  "renumbered_from": "short183",
+  "renumber_reason": "short182-193 were reserved on 2026-08-04 when the highest number on disk was 181. Another thread then wrote short182-193 for tlo, willingham, tyler and others at 06:32 the same day. The true high-water mark is 258, so this slate moved to 259-270."
 }

@@ -1,7 +1,7 @@
 # SHORTS_SLATE EP62–65 v001 — 12 Shorts for the four new episodes
 
 **Created:** 2026-08-04 · **Status:** PLAN ONLY. Nothing rendered, nothing scheduled, no GPU used, no paid API called.
-**Scope:** `short182`–`short193` (12 Shorts, 3 per episode) across EP62 greene / EP63 correa / EP64 memphis / EP65 marmet.
+**Scope:** `short259`–`short270` (12 Shorts, 3 per episode) across EP62 greene / EP63 correa / EP64 memphis / EP65 marmet.
 **Governing method (do NOT invent a new pipeline):** `SHORTS_METHOD.v001.md` (the 12 rules) + `SHORTS_REMOTION_SPEC.md` (Short.tsx data contract, safe areas) + `SHORTS_CONVERSION_v001.md` §4 (end CTA) + `docs/PD_SHORTS_TO_LONGFORM_FUNNEL.v001.md` (the 5-layer funnel, already implemented in code) + the build checklist in `SHORTS_SLATE_EP53-56.v001.md` §7.
 **Predecessor slate:** `SHORTS_SLATE_EP57-59.v001.md` (`short73`–`short81`). Numbers up to `short181` are taken; this slate reserves 182–193.
 
@@ -93,7 +93,7 @@ nothing is known about what happened to Lindsey, Hodgens or Ray afterwards (GL-2
 
 ---
 
-### short182 — "The children were pulling the notices off the doors. The men posting them knew."
+### short259 — "The children were pulling the notices off the doors. The men posting them knew."
 
 - **Slot:** see §6 · **Format:** F-D · **Target 36–44 s** · ~120 w, 100% re-record
 - **Hook (first 1 s):** *"The men whose job was to tape eviction notices to doors were asked, under oath, whether children pulled them off. One answered: we had plenty of trouble."* — frame 0 = a slip of paper on a door, corner lifting.
@@ -111,14 +111,14 @@ L5: *"This was 1982, and the Court decided only this case. The full story is on 
 **Plate motifs (≥16, pick off the contact sheet):** a slip of paper taped to a plain door, no readable text (hero) · a thumbtack close · adhesive tape peeling · a low-rise brick housing block in flat daylight · a walkway of identical doors · a doorframe at child height · a hand at the top of a door, out of a child's reach · a paper on the ground by a step · a stairwell landing · an empty walkway at dusk · a curtain moving in a lit window · a shadow crossing a curtain · a deposition room with two empty chairs · a court file tied with tape · a door with nothing on it · a key not turning.
 **Telops:** `TAPED TO\nTHE DOOR` · `"PLENTY OF\nTROUBLE"` · `NOT INFREQUENTLY\nREMOVED` · `LOST BY DEFAULT` · `NOT ENOUGH`.
 **Cover / ShortThumb:** background = the paper lifting off the door · headline `THE NOTICE\nCAME OFF` · badge `THEY KNEW`.
-**CTA props:** `ctaLongTitle: 'A Paper on the Door'` (20 ch) · `ctaHeadline: 'FULL CASE'` · `ctaLongThumbSrc: shorts/short182/short182_ctathumb.png`.
+**CTA props:** `ctaLongTitle: 'A Paper on the Door'` (20 ch) · `ctaHeadline: 'FULL CASE'` · `ctaLongThumbSrc: shorts/short259/short182_ctathumb.png`.
 **Funnel question left for the long-form:** *what does a State have to do instead — and did anyone ever tell these three women?*
 
 > **Lock:** never say the writs *were* torn off in these three cases. The record says servers saw it happen at Village West; it does not say it happened to Lindsey, Hodgens or Ray.
 
 ---
 
-### short183 — "One knock. Nobody home. That was the whole procedure."
+### short260 — "One knock. Nobody home. That was the whole procedure."
 
 - **Slot:** see §6 · **Format:** F-D · **Target 36–44 s** · ~120 w
 - **Hook:** *"An officer knocked once. Nobody answered. Under Kentucky law that was the end of the attempt — the paper went on the door and the clock started."*
@@ -136,7 +136,7 @@ L5: *"This was 1982, and the Court decided only this case. The full story is on 
 
 ---
 
-### short184 — "The dissent's answer: mailboxes get robbed."
+### short261 — "The dissent's answer: mailboxes get robbed."
 
 - **Slot:** see §6 · **Format:** F-D · **Target 36–44 s** · ~120 w
 - **Hook:** *"When the Court said a letter would have been better than a paper on the door, one Justice wrote back: it is no secret that unattended mailboxes are subject to plunder by thieves."*
@@ -168,7 +168,7 @@ Ms Gonzalez is never depicted, and neither is her death.
 
 ---
 
-### short185 — "The hospital never said no. It just never called her number."
+### short262 — "The hospital never said no. It just never called her number."
 
 - **Slot:** see §6 · **Format:** F-E · **Target 36–44 s** · ~120 w
 - **Hook:** *"A sixty-five-year-old woman walked into an emergency room with chest pains and was handed a number. Nobody ever refused her anything. Nobody ever called it either."*
@@ -189,7 +189,7 @@ Ms Gonzalez is never depicted, and neither is her death.
 
 ---
 
-### short186 — "'Appropriate' is one of the most wonderful weasel words in the dictionary."
+### short263 — "'Appropriate' is one of the most wonderful weasel words in the dictionary."
 
 - **Slot:** see §6 · **Format:** F-E · **Target 36–44 s** · ~120 w
 - **Hook:** *"Congress wrote that an emergency room must give you an appropriate medical screening. A federal judge called that word one of the most wonderful weasel words in the dictionary."*
@@ -208,7 +208,7 @@ Ms Gonzalez is never depicted, and neither is her death.
 
 ---
 
-### short187 — "The money was not for her death. It was for the wait."
+### short264 — "The money was not for her death. It was for the wait."
 
 - **Slot:** see §6 · **Format:** F-E · **Target 44–50 s** · ~145 w — *deviation from the 20–40 s canon band, justified: five figures / two verbatim quotes that cannot be cut without changing the meaning*
 - **Hook:** *"A jury awarded seven hundred thousand dollars. Almost none of it was about how she died — it was about the hours she spent sitting there, and about what her family lost."*
@@ -240,7 +240,7 @@ no house fire, nobody freezing, no utility worker as villain.
 
 ---
 
-### short188 — "Two bills arrived. One was addressed to a person who did not exist."
+### short265 — "Two bills arrived. One was addressed to a person who did not exist."
 
 - **Slot:** see §6 · **Format:** F-D · **Target 36–44 s** · ~120 w
 - **Hook:** *"A family moved into a house in Memphis and started getting two electricity bills. The second one was in the name Willie C. Craft. The man who lived there was Willie S. Craft."*
@@ -261,7 +261,7 @@ no house fire, nobody freezing, no utility worker as villain.
 
 ---
 
-### short189 — "The notice said pay or we cut you off. That was all it said."
+### short266 — "The notice said pay or we cut you off. That was all it said."
 
 - **Slot:** see §6 · **Format:** F-D · **Target 36–44 s** · ~120 w
 - **Hook:** *"The final notice told them exactly one thing: pay by this date or the service stops. It did not mention that a human being existed who could look at the bill."*
@@ -279,7 +279,7 @@ no house fire, nobody freezing, no utility worker as villain.
 
 ---
 
-### short190 — "Two thousand customers a month. The dissent said the system worked."
+### short267 — "Two thousand customers a month. The dissent said the system worked."
 
 - **Slot:** see §6 · **Format:** F-D · **Target 44–50 s** · ~145 w — *deviation from the 20–40 s canon band, justified: five figures / two verbatim quotes that cannot be cut without changing the meaning*
 - **Hook:** *"The utility cut off about two thousand customers every month. Three Justices thought that was fine — and one of them said the Court was being condescending."*
@@ -311,7 +311,7 @@ never frame it as "your mother": the opinion never uses the word and records no 
 
 ---
 
-### short191 — "The one thing you could still sue about was their right to collect from you."
+### short268 — "The one thing you could still sue about was their right to collect from you."
 
 - **Slot:** see §6 · **Format:** F-A · **Target 36–44 s** · ~120 w
 - **Hook:** *"The admission agreement said every dispute goes to arbitration. It carved out exactly one exception — claims to collect late payments owed by the patient."*
@@ -332,7 +332,7 @@ never frame it as "your mother": the opinion never uses the word and records no 
 
 ---
 
-### short192 — "The Supreme Court never said the clause was valid."
+### short269 — "The Supreme Court never said the clause was valid."
 
 - **Slot:** see §6 · **Format:** F-A · **Target 36–44 s** · ~120 w
 - **Hook:** *"Everyone remembers this case as the one where the Supreme Court forced three families into arbitration. It did not. It sent the question back and refused to answer it."*
@@ -352,7 +352,7 @@ never frame it as "your mother": the opinion never uses the word and records no 
 
 ---
 
-### short193 — "A state court called the Supreme Court's reasoning 'created from whole cloth'."
+### short270 — "A state court called the Supreme Court's reasoning 'created from whole cloth'."
 
 - **Slot:** see §6 · **Format:** F-A · **Target 36–44 s** · ~120 w
 - **Hook:** *"West Virginia's highest court read the Supreme Court's arbitration cases and wrote that they were tendentious, and created from whole cloth."*
@@ -389,10 +389,10 @@ never frame it as "your mother": the opinion never uses the word and records no 
 
 | Short | Publishes | Relative to |
 |---|---|---|
-| `short182` `short183` `short184` | E+1, E+4, E+7 | EP62 `greene` long-form public date |
-| `short185` `short186` `short187` | E+2, E+5, E+8 | EP63 `correa` |
-| `short188` `short189` `short190` | E+3, E+6, E+9 | EP64 `memphis` |
-| `short191` `short192` `short193` | E+1, E+4, E+7 | EP65 `marmet` |
+| `short259` `short260` `short261` | E+1, E+4, E+7 | EP62 `greene` long-form public date |
+| `short262` `short263` `short264` | E+2, E+5, E+8 | EP63 `correa` |
+| `short265` `short266` `short267` | E+3, E+6, E+9 | EP64 `memphis` |
+| `short268` `short269` `short270` | E+1, E+4, E+7 | EP65 `marmet` |
 
 Interleave 62 → 63 → 64 so no case runs two days straight and the plate load spreads across separate libraries (`footage_diversity` intent). EP65 follows as its own block.
 
@@ -400,18 +400,18 @@ Interleave 62 → 63 → 64 so no case runs two days straight and the plate load
 
 | Date (JST) | Day | Short | Episode | Working title |
 |---|---|---|---|---|
-| 2026-08-16 | Sun | `short182` | EP62 | The notice came off |
-| 2026-08-17 | Mon | `short185` | EP63 | They never called her |
-| 2026-08-18 | Tue | `short188` | EP64 | One letter apart |
-| 2026-08-19 | Wed | `short183` | EP62 | One knock, that was all |
-| 2026-08-20 | Thu | `short186` | EP63 | A wonderful weasel word |
-| 2026-08-21 | Fri | `short189` | EP64 | Pay or we cut you off |
-| 2026-08-22 | Sat | `short184` | EP62 | Mailboxes get robbed |
-| 2026-08-23 | Sun | `short187` | EP63 | $700,000, not for the death |
-| 2026-08-24 | Mon | `short190` | EP64 | 2,000 a month |
-| 2026-08-25 | Tue | `short191` | EP65 | Sign here |
-| 2026-08-26 | Wed | `short192` | EP65 | It never said they were valid |
-| 2026-08-27 | Thu | `short193` | EP65 | Created from whole cloth |
+| 2026-08-16 | Sun | `short259` | EP62 | The notice came off |
+| 2026-08-17 | Mon | `short262` | EP63 | They never called her |
+| 2026-08-18 | Tue | `short265` | EP64 | One letter apart |
+| 2026-08-19 | Wed | `short260` | EP62 | One knock, that was all |
+| 2026-08-20 | Thu | `short263` | EP63 | A wonderful weasel word |
+| 2026-08-21 | Fri | `short266` | EP64 | Pay or we cut you off |
+| 2026-08-22 | Sat | `short261` | EP62 | Mailboxes get robbed |
+| 2026-08-23 | Sun | `short264` | EP63 | $700,000, not for the death |
+| 2026-08-24 | Mon | `short267` | EP64 | 2,000 a month |
+| 2026-08-25 | Tue | `short268` | EP65 | Sign here |
+| 2026-08-26 | Wed | `short269` | EP65 | It never said they were valid |
+| 2026-08-27 | Thu | `short270` | EP65 | Created from whole cloth |
 
 > **Re-derive the actual dates from a live audit at build time.** The last reservation moves every day the other threads book something.
 
@@ -425,7 +425,7 @@ Interleave 62 → 63 → 64 so no case runs two days straight and the plate load
 
 ### EP62 `greene` — long-form working title **“A Paper on the Door”** (`funnel_long_title`)
 
-| | `short182` | `short183` | `short184` |
+| | `short259` | `short260` | `short261` |
 |---|---|---|---|
 | **Frame 0** | a slip of paper taped to a plain door, corner lifting | a knuckle about to touch a door | a bank of dented mailboxes |
 | **`loop_join`** | last beat is the same door **bare**; over the final 1.2 s the paper fades back onto it and the corner lifts — landing exactly on frame 0 | last beat is the empty walkway seen from the door; the camera settles and the knuckle re-enters frame from the left | last beat is a single letter on a doormat; a hand lifts it away and the mailbox bank is behind it |
@@ -434,7 +434,7 @@ Interleave 62 → 63 → 64 so no case runs two days straight and the plate load
 
 ### EP63 `correa` — long-form working title **“Never Called”**
 
-| | `short185` | `short186` | `short187` |
+| | `short262` | `short263` | `short264` |
 |---|---|---|---|
 | **Frame 0** | a paper ticket in a hand, digits not legible | a statute page with the type dissolved to grey | a kitchen table set for many, nobody there |
 | **`loop_join`** | last beat is the empty waiting room in late light; the light lifts back to daylight and the ticket re-enters the bottom of frame | last beat is a blank clipboard on a hook; it turns and becomes the dissolved page | last beat is a hand closing a folder; the folder becomes the tabletop and the chairs are back |
@@ -443,7 +443,7 @@ Interleave 62 → 63 → 64 so no case runs two days straight and the plate load
 
 ### EP64 `memphis` — long-form working title **“The Bill in the Wrong Name”**
 
-| | `short188` | `short189` | `short190` |
+| | `short265` | `short266` | `short267` |
 |---|---|---|---|
 | **Frame 0** | two meter dials side by side on a wall | a printed slip, type reduced to grey texture | a switchboard of unlit indicators |
 | **`loop_join`** | last beat is a switch flipped with nothing happening; the room stays dark and the two dials come up out of the dark in the same position as frame 0 | last beat is a street of houses at dusk with one dark; the dark window fills frame and becomes the slip | last beat is a street at night with one house dark; the window grid resolves into the switchboard's unlit indicators |
@@ -452,7 +452,7 @@ Interleave 62 → 63 → 64 so no case runs two days straight and the plate load
 
 ### EP65 `marmet` — long-form working title **“The Paper You Sign at the Door”**
 
-| | `short191` | `short192` | `short193` |
+| | `short268` | `short269` | `short270` |
 |---|---|---|---|
 | **Frame 0** | a signature line on a form, no letterforms | an envelope going back the way it came | a bolt of cloth being unrolled |
 | **`loop_join`** | last beat is two cups on a tray; the tray becomes the tabletop and the pen is laid back across the form | last beat is a file returned to a shelf; the shelf tilts and the envelope is on it, moving back | last beat is a hand closing a book; the closing page becomes the cloth, rolling back up |
@@ -483,7 +483,7 @@ Interleave 62 → 63 → 64 so no case runs two days straight and the plate load
 
 ## 8. Totals
 
-- **12 new shorts**, 3 per episode, `short182`–`short193`.
+- **12 new shorts**, 3 per episode, `short259`–`short270`.
 - **Audio: 100% re-record** — ≈1,800 words ≈ 10,400 characters ≈ **$3.12**. No dependency on the long-form VO.
 - **Images: 0 of the required plates exist today**, across all four episodes. The archive cannot substitute: greene's staged pool survived visual QC at 12 of 47, and the core motifs of all four episodes (`front door`, `mailbox`, `heater`, `radiator`, `armchair`, `power lines`) return zero hits in a 142,000-row archive.
 - **Every spoken line traces to a graded ledger row by ID.** No line in this slate rests on a summary, a memory or a search result.
