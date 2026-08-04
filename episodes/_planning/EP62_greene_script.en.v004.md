@@ -1,5 +1,8 @@
-# EP62 · GREENE v. LINDSEY — SCRIPT v003
+# EP62 · GREENE v. LINDSEY — SCRIPT v004
 
+> **v004（2026-08-04）** — v003 の本文をそのまま凍結した版。v003 は実際には **3回上書きされていた**（82箇所の修理バッチ・プレートIDの差し替え・92%規則の並べ替え）。
+> 以降の変更は v005 を立てること。**このファイルを上書きしない。**
+> レビュー文書（REREVIEW.v001 / v002・SECOND_OPINION）が指す v003 は**本ファイルと同じ本文**である。
 **30:00 目標（実測 29:50） · 5,250 narration words · band 5,100–5,600 · facts `EP62_greene_FACTS_LEDGER.v001.md` · contract `episodes/PD-2026-062-greene/episode_spec.v001.json`**
 
 **Spoken words only below the section headings.** `【】` is direction. `⟨HELD⟩` is a held beat. Section keys are the contract's eight, spelled as the contract spells them.

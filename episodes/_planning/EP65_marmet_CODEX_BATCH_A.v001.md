@@ -147,7 +147,7 @@ EP60はこの規則で **279枚・変種0・指定外0・sha256重複0・知覚�
 
 | HOOKプレート | 何を約束するか | 回収される場所 |
 |---|---|---|
-| `R001` ペンと読めない一筆 | 「受付で署名した紙」＝この映画の主題そのもの | ENDING `R191` `R192` `R205` `R206`（同一構図で閉じる）／ACT_1 `R035` |
+| `R001` ペンと読めない一筆 | 「受付で署名した紙」＝この映画の主題そのもの | ENDING `R191` `R192` `R205` `R206`／ACT_1 `R035`。**※ ループを閉じるのは `R001` ではなく `R222`→`R223`（2026-08-04 再レビュー）** |
 | `R002` 無人の入所受付 | 机の向こう側には誰もいない | ACT_2 `R059` `R060`（同じ机の朝と夕）／ENDING `R190` `R205` |
 | `R003` 一つだけ離れた行＝カーブアウト | 「延滞金の請求だけが例外」 | ACT_1 `R036` `R037`（2枚同一・1枚だけ違う紙）／ENDING `R193` `R194` |
 | `R004` 窓辺の空いた肘掛け椅子 | 署名しなかった人の不在 | ACT_2 `R075`／ACT_5 `R176`／ENDING `R201` |
@@ -655,7 +655,7 @@ An empty armchair beside a winter window with a closed folder on the seat, drama
 | 手すりのある廊下 / 窓辺の空いた肘掛け椅子 / 冬の窓 | `R005` `R004` `R178` |
 | 入所書類の束 / 誰もいない食卓 / 背後から押さえられた扉 | `R039` `R076` `R073` |
 | 盆の上の2つのカップ（＝落ち） | `R074` |
-| ループ結合＝1コマ目に戻る | `R074` → `R191` → `R001` |
+| ループ結合＝1コマ目に戻る | `R074` → `R191` → **`R222`** |
 
 | short269「最高裁は一度も『有効だ』と言っていない」 | 使うプレート |
 |---|---|
@@ -755,7 +755,7 @@ Two empty wheelchairs parked side by side against a corridor wall in a care faci
 - `R221.png`
 A person seated in a wheelchair seen from directly behind at a tall window, only the back of the chair and the shoulders in frame and the face not visible, the heavy curtain drawn back to one side, a grey winter hillside beyond the glass, nothing medical anywhere in the room [STYLE] Avoid: [NEG]
 - `R222.png`
-An admission desk seen from the visitor's side at waist height with two chairs in the frame, the near one drawn out and turned slightly away, the far one pushed in square and empty, one form squared on the counter between them, the light flat and grey [STYLE] Avoid: [NEG]
+An admission desk seen from the visitor's side at waist height with two chairs in the frame, the near one drawn out and turned slightly away, the far one pushed in square and empty, one form squared on the counter between them and a single ruled signature line running across that form, the line bare with nothing written on it and no pen anywhere in the frame, the light flat and grey [STYLE] Avoid: [NEG]
 - `R223.png`
 The foot of an admission form lying on a counter, its ruled line bare and no pen anywhere on it, and beyond the counter and slightly out of focus the far chair still pushed in square, the late afternoon light gone flat [STYLE] Avoid: [NEG]
 

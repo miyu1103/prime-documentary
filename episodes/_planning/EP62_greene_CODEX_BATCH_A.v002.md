@@ -835,7 +835,7 @@ distinct = 18。
 **ID は `G223`–`G225` ですが、置かれる区分は ACT_1 / ACT_2 / ACT_4 です**（既存IDを一つも
 動かさないため、番号だけが THUMB の後ろに続きます）。生成の順序も保存先も他の222枚と同じです。
 
-| 新ID | 入る区分 | 台本の実ビート（`EP62_greene_script.en.v003.md`） | 引き継ぐ register | 落ちた素材 |
+| 新ID | 入る区分 | 台本の実ビート（`EP62_greene_script.en.v004.md`） | 引き継ぐ register | 落ちた素材 |
 |---|---|---|---|---|
 | `G223` | **ACT_1** | 「A member of the defendant's family over sixteen years of age. **Somebody home.**」／「The statute is written for a household with somebody in it.」 | 中に人がいる | `AR-6944071` back view of a man opening the curtains |
 | `G224` | **ACT_2** | 【reset beat: motif 3 — wind lifts the sheet, nobody in frame, no narration, 4s】 | 風（誰の意思でもなく） | `AR-4333439` tree leaves dancing with the blowing wind |
@@ -870,7 +870,7 @@ An old embroidered curtain hanging at an apartment window seen from inside, the 
 
 ### ★追加2（2026-08-04・映画の最後の画にプレートが無かった）
 
-再レビューで判明：台本 `EP62_greene_script.en.v003.md` の ENDING 最終行が
+再レビューで判明：台本 `EP62_greene_script.en.v004.md` の ENDING 最終行が
 `【motif 7: an unfaded square where the paper was】` を指定しているのに、
 この発注書には該当プレートが**1枚も存在しない**（`unfaded` の語がファイル全体で0件）。
 `G209` は「テープごと消えた完全な無地」で、モチーフ7とは別の状態。
@@ -884,7 +884,7 @@ The same painted door in flat daylight, bare, but with a clean rectangle of unfa
 ### ★追加3（2026-08-04・台本 v003 第三パスの修理バッチで確定・**新規プレートは無し**）
 
 `EP62_greene_REREVIEW.v001.md` §8 と `EP62_greene_SECOND_OPINION.v001.md` が、この発注書と台本が
-**別々の絵を指している**箇所を三つ挙げた。台本 `EP62_greene_script.en.v003.md` を正典として、
+**別々の絵を指している**箇所を三つ挙げた。台本 `EP62_greene_script.en.v004.md` を正典として、
 ここで読み替えを確定する。**プロンプト本文は一行も変えない。生成枚数も 226枚のままである。**
 
 **(1) HOOK は 5カットではなく 4カット。**

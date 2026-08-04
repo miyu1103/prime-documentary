@@ -9,7 +9,7 @@
 
 **画像は「揃った」と書いたが、揃っていなかった。** 226枚を全枚目視した結果、
 **この映画のモチーフの連鎖（同じ一枚のドアの七つの状態）が作られておらず、最後の画が存在しない。**
-13枚を差し替え発注し、サムネ用に1枚を追加した。**合計14枚がまだ生成されていない。**
+13枚を差し替え発注し、サムネ用に1枚、さらに**存在していなかったモチーフ状態1** に1枚を追加した。**合計15枚がまだ生成されていない。**
 
 **組み立ては止めなくていい。** 止まるのは最後の数カットだけで、
 ナレーション・filmconfig・カット表・Remotion合成は今すぐ進められる（§4）。
@@ -88,9 +88,9 @@ Codex は**1プロンプト＝1枚**で走るので、**前の枚を参照でき
 
 | ファイル | 変更 |
 |---|---|
-| `episodes/PD-2026-062-greene/episode_spec.v001.json` | `mandatory_stills` の13件を新番号に差し替え。**総数は223のまま**（`check_episode_spec.py --slug greene` = valid） |
-| `episodes/_planning/EP62_greene_CODEX_BATCH_A.v002.md` | 末尾に「★再発注」13枚＋「★追加（サムネ用の G240）」= **240枚** |
-| `episodes/_planning/EP62_greene_script.en.v003.md` | L11 のモチーフ宣言と L357 の ENDING コールバックを `G227` / `G230` / `G231` に |
+| `episodes/PD-2026-062-greene/episode_spec.v001.json` | `mandatory_stills` の13件を新番号に差し替え、`G241` を追加して **224件**（`check_episode_spec.py --slug greene` = valid） |
+| `episodes/_planning/EP62_greene_CODEX_BATCH_A.v002.md` | 末尾に「★再発注」13枚＋`G240`（サムネ）＋`G241`（モチーフ状態1）= **241枚**。冗頭に現在の真実をまとめた★ブロックを立て、古い指示3件を撤回 |
+| `episodes/_planning/EP62_greene_script.en.v004.md` | L11 のモチーフ宣言と L357 の ENDING コールバックを `G227` / `G230` / `G231` に |
 | `episodes/_planning/EP62_greene_FILM_BIBLE.v001.md` | マクロ・ループの記述を `G227` → 状態7 `G231` に訂正（旧記述の `G208→G209` は状態5→6で、そもそも誤りだった） |
 | `episodes/PD-2026-062-greene/04_scenes/thumb_prompts.v001.md` | 第4候補を `G226` → `G240` に。§4 を「発注済み・`mandatory_stills` に入れるな」に書き換え |
 | `EP62_greene_ASSEMBLY_HANDOFF.v001.md` | §3-4 とファイル一覧を新番号に |
@@ -124,13 +124,14 @@ Codex は**1プロンプト＝1枚**で走るので、**前の枚を参照でき
 **`G001`–`G226` は一語も触らない**（226枚はそのまま残す。廃止13枚は使わないだけで、消さない＝
 `.claude/rules/05-episode-artifacts.md`「stale artifact を削除せず再計算対象として示す」）。
 
-- 出力先: `H:\pd-media\assets\ai\greene\G227.png` … `G240.png`
+- 出力先: `H:\pd-media\assets\ai\greene\G227.png` … `G241.png`（15枚）
 - 長辺3840px以上・16:9・PNG
-- 生成後に `remotion/public/greene/img/` へ配置（現在240ファイル = 旧226 + P001–P014。追加後 254）
+- 生成後に `remotion/public/greene/img/` へ配置（現在240ファイル = 旧226 + P001–P014。追加後 255）
 
 生成後の検査（1枚ずつ）:
 
-1. `G227`–`G231` の5枚が**互いに同じドアに見えるか**。`G001` と並べて見る。ここが今回の全部である。
+1. `G241` と `G227`–`G231` の6枚が**互いに同じドアに見えるか**。`G001` と並べて見る。ここが今回の全部である。
+   とくに **`G241` と `G227` は完全に平ら**（角も下端も浮いていない）であること。この2枚が重なって初めてループが閉じる。
 2. `G231` に**褪せていない四角い跡**があり、**紙もテープも画面のどこにも無い**か。
 3. 文字が1文字も無いか。`G233` は特に紙幣なので注意。
 4. 顔が判別できないか。`G239` は後頭部のみ。
@@ -141,7 +142,10 @@ Codex は**1プロンプト＝1枚**で走るので、**前の枚を参照でき
 ## 6. まだ残っている未解決（正直に）
 
 - **R15（音読）が4話とも未実施。** 下読みTTSを回してオーナーが聴く工程がまだ無い。
-- **EP62 の再レビューが、82箇所の修正のあとで一度も再実行されていない。**
+- 再レビューは **実行済み**（`EP62_greene_REREVIEW.v002.md`）。判定は **DOES NOT MEET IT**で、残るのは **R15（音読）未実施** のみ。
+  （R6 のモチーフ状態1 と §12 の92%規則違反は両方修正済み。）
+- **台本は v004 が正典**。v003 は3回上書きされていたので凍結した。
+- `EP62_greene_beats.v001.json` は **台本より古い**。ACT_5 の並びが変わったので組み立て前に作り直すこと。
 - 実写素材 9/47 accepted は契約の distinct_video 234 に対して薄い。画像を動かして稼ぐ前提のままである。
 - 目視QCの FLAG 41件のうち、上の13件以外は「使えるが弱い」判定で、差し替えていない。
 
@@ -161,4 +165,4 @@ cd C:/Users/aab15/Documents/prime-documentary
 .venv/Scripts/python.exe -c "import re,pathlib;t=pathlib.Path('episodes/_planning/EP62_greene_CODEX_BATCH_A.v002.md').read_text(encoding='utf-8');i=re.findall(r'^- .(G\d{3})\.png.\s*$',t,re.M);print(len(i),len(set(i)),i[-1])"
 ```
 
-期待値: `240 240 G240`
+期待値: `241 241 G241`

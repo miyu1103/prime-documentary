@@ -33,7 +33,7 @@ Five pages. Almost everything a person would want to know about these three fami
 
 ## ACT_1 (0:31-5:17)
 
-【motif state 1: a stack of admission forms just off the printer, the ruled line at the foot of the top sheet still empty. A hand comes in from the far side of the desk, presses the stack square and leaves the frame — plain cuff, no face, no badge (plate R152). FIRST of the four appearances of that hand. It is the film's only human thread: the side that has the paper signed, executing the form. It never gets a face, a name, a line or a characteristic, per spec forbidden_subjects.】
+【motif state 1, and the chair plant, in one frame. Held 3s, no narration: plate R222 — the admission desk seen from the visitor's side at waist height, two chairs in the frame, the near one drawn out and turned slightly away, the far one pushed in square and empty, one form squared on the counter between them and nothing written on it, the light flat and grey. This is the SAME eye, the same counter and the same far chair as the closing plate R223, which is what lets the loop close on one object instead of one lens. It is also the chair's ONLY appearance until that payoff, about 28 and a half minutes later: the chair is a plant, not a second motif, and R004 / R075 / R176 / R201 are ordinary cuts, not chair beats. NOTE for the batch order: R222's commissioned prompt names the form on the counter but does NOT name its ruled line. The ruled line must be legible in this frame or state 1 does not exist; add that clause to R222's prompt before generating. Then cut to plate R152 — a hand comes in from the far side of the desk, presses the stack of sheets square and leaves the frame, plain cuff, no face, no badge. FIRST of the four appearances of that hand. It is the film's only human thread: the side that has the paper signed, executing the form. It never gets a face, a name, a line or a characteristic, per spec forbidden_subjects.】
 
 This litigation involves three negligence suits against nursing homes in West Virginia. That is the opinion's own first line of fact. The suits were brought by Clayton Brown, Jeffrey Taylor, and Sharon Marchio.
 
@@ -59,7 +59,7 @@ Two dismissals and one question, all travelling to the Supreme Court of Appeals 
 
 Now the part where the record stops.
 
-【plant, no narration, held 3s: plate R222 — the admission desk from the visitor's side at waist height. Two chairs. The near one drawn out and turned slightly away, the one on the far side of the desk pushed in square and empty. This is the chair's ONLY appearance between here and its payoff in the ENDING (plate R223, about 26 minutes later). It is a plant, not a motif: the empty chair is not to be cut in anywhere else, and R004 / R075 / R176 / R201 are ordinary cuts, not chair beats.】
+【rest beat, no narration, held 3s: plate R151 — a ring binder open at a divider tab with nothing filed behind it. Already commissioned; no new plate. The chair is NOT here: it is planted once, at the head of ACT_1 on R222, and is not cut in anywhere between there and R223.】
 
 Here is everything the Supreme Court's opinion tells you about what happened to these three patients. It is two sentences. In each case, a family member of a patient requiring extensive nursing care had signed an agreement with a nursing home on behalf of the patient. In each of the three cases, a family member of a patient who had died sued the nursing home in state court, alleging that negligence caused injuries or harm resulting in death.
 
@@ -129,19 +129,23 @@ The third holding was about these particular papers. In two of the three cases, 
 
 So the court had built two separate doors. One was a public policy against a whole category of agreement. The other was the ordinary law of contracts, applied to specific pieces of paper.
 
-The court also said something about admission day that would matter a year later. The process of signing paperwork for medical care — specifically, a contract for admission to a nursing home — is often fraught with urgency, confusion, and stress. Nursing homes daily sign contracts with patients as a routine course of doing business. Most patients, the court wrote, do not view the admission process as an interstate commercial transaction with far-reaching legal consequences.
+Brown One also said something about admission day. The process of signing paperwork for medical care — specifically, a contract for admission to a nursing home — is often fraught with urgency, confusion, and stress. Most patients, it wrote, do not view the admission process as an interstate commercial transaction with far-reaching legal consequences.
 
-One side of that desk does this every working day — a routine course of doing business, in the court's own phrase. People, the court wrote, seek medical care in a nursing home for long-term treatment, and do so only a few times in life.
+A year later, in the opinion it wrote after Washington sent the cases back, it added two more sentences. Nursing homes daily sign contracts with patients as a routine course of doing business. People seek medical care in a nursing home for long-term treatment to heal, and do so only a few times in life.
 
-The doctrine the court was reaching for is old, and it is narrower than it sounds. Because of an overall and gross imbalance, one-sidedness or lop-sidedness in a contract, a court may be justified in refusing to enforce the contract as written. That is unconscionability. It is not a rule about arbitration. It is a rule about contracts.
+The doctrine underneath all that is old, and narrower than it sounds. Because of an overall and gross imbalance, one-sidedness or lop-sidedness in a contract, a court may be justified in refusing to enforce the contract as written. That is unconscionability — a rule about contracts. In Brown's paper and Taylor's, whoever filed paid to file, and the opinion names no sum.
 
 The court was careful about what it was not saying. The courts of this State, it wrote, are not hostile to arbitration or to adhesion contracts. We are hostile toward contracts of adhesion that are unconscionable and rely upon arbitration as an artifice to defraud a weaker party of rights clearly provided by the common law or statute.
 
-An adhesion contract has a definition, and it fits an admission form exactly. A contract of adhesion is one drafted and imposed by a party of superior strength that leaves the subscribing party little or no opportunity to alter the substantive terms, and only the opportunity to adhere to the contract or reject it.
+【callback, plates already commissioned: R036 — two identical printed forms laid side by side on a table, nothing at all to tell one from the other; then R037 — a third form laid well apart from those two, visibly shorter, in the same grey tone. This is the ACT_1 payoff the batch order promised for R003 (batch §4 recovery table): the carve-out line is in two of these papers and not in the third. No new plate.】
+
+The word is adhesion.
+
+A contract of adhesion is one drafted and imposed by a party of superior strength that leaves the subscribing party little or no opportunity to alter the substantive terms, and only the opportunity to adhere to the contract or reject it. Two of these three forms said the same thing. The third made no exceptions at all.
 
 Take it or leave it. The state court's finding, in Brown One: people being admitted to long-term care facilities and their families have to sign admission contracts without time to comparison shop or to negotiate the best service and price combination.
 
-But being a form is not a verdict, and the court said so. Finding that there is an adhesion contract is the beginning point for analysis, not the end of it. What courts aim at doing is distinguishing good adhesion contracts which should be enforced from bad adhesion contracts which should not.
+But being a form is not a verdict, and the court said so. Finding that there is an adhesion contract is the beginning point for analysis, not the end of it. What courts aim at doing is distinguishing good adhesion contracts which should be enforced, from bad adhesion contracts which should not.
 
 And then the sentence that gives the whole opinion its edge. It may be disingenuous for a nursing home to later assert that the patient or family member consciously, knowingly and deliberately accepted an arbitration clause in the contract, and understood the clause was intended to eliminate their access to the courts if the nursing home negligently injured or killed the patient.
 
@@ -358,7 +362,7 @@ Which leaves the story where the documents leave it. Three families sued. Three 
 
 Two questions were still standing when both opinions closed. Whether a paper that arbitrates a death and litigates a debt is lop-sided enough that a court should refuse to enforce it as written. And whether the family member who signed it had the authority to sign away anything at all.
 
-Neither had been answered. On the first question, the state court reversed the orders in Brown's case and Taylor's case and permitted the parties to raise and develop their arguments regarding unconscionability anew. In Marchio's case it said only that the issue may be raised by the parties on remand. On the second question, it declined to consider the argument, which should be considered by the trial court first.
+Neither had been answered. The first was sent back down to be argued on a record that did not exist yet. The second the court declined to reach at all.
 
 【callback: the carve-out】
 
