@@ -16,6 +16,8 @@
 
 【HELD BEATS · four, and they are the only four: the causal lock in ACT_1 · the limit in ACT_3 · the recognition in ACT_4 · the final image in ENDING. The fifth position the bible reserved (before the last HOOK cut) does not survive the owner's 8-second hook — 20 words leaves under seven seconds and no silence to spend.】
 
+> **尺の目標は 30:00**（オーナー指定 2026-08-04）。この稿の実測は **30:37**（実測レート176語/分・gap込み）。契約帯は 27:00–32:00、`manifest.json` の `target_duration_minutes` は 30。
+
 ---
 
 ## HOOK (0:00–0:07 · 20 w · 4 cuts × ~1.7s)

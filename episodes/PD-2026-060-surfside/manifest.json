@@ -41,13 +41,32 @@
     }
   },
   "open_gates": [
-    "NIST technical-findings document itself (releases or confirms quarantine ⛔-01)",
     "October 2018 Morabito report as a document (○-02; the public-records PDF is a scan and this machine has no OCR)",
     "9 April 2021 Wodnicki letter in full (○-03)",
-    "criminal-charge status re-confirmed the week the script locks (○-04)"
+    "criminal-charge status re-confirmed the week the script locks (○-04)",
+    "owner ruling on P### people stills vs the no-identifiable-face dignity policy"
   ],
   "policy": {
     "faces": "NO identifiable face and none of the 98 named. People appear as hands, backs and silhouettes only.",
     "note": "check_episode_inputs.py requires P### people stills. That requirement conflicts with this episode's dignity policy and needs an owner ruling before it is satisfied or waived."
-  }
+  },
+  "gate_history": [
+    {
+      "date": "2026-08-02",
+      "closed": "NIST technical-findings gate — NIST published no technical-findings document (June 2026 findings are a press release plus a briefing video). The nearest primary artefact, the investigators' NCSTAC deck of 9 Sep 2025, was downloaded and text-extracted; it supplies CT-23…CT-31.",
+      "quarantine_released": [
+        "⛔-02 -> CT-32 (collapse time may be stated as 1:22 a.m.)"
+      ],
+      "quarantine_hardened": [
+        "⛔-01 (the 'less than half' fraction appears in no readable source and in none of the 72 NIST slides)",
+        "⛔-03 (no single collapse duration exists: the pool deck fell more than four minutes before the tower)"
+      ]
+    }
+  ],
+  "artifacts": {
+    "facts_ledger": "episodes/_planning/EP60_surfside_FACTS_LEDGER.v002.md",
+    "script": "episodes/_planning/EP60_surfside_script.en.v004.md",
+    "asset_design": "episodes/_planning/EP60_surfside_ASSET_DESIGN.v002.md"
+  },
+  "target_duration_minutes": 40
 }

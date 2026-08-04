@@ -1,6 +1,6 @@
 # EP62 · GREENE v. LINDSEY — SCRIPT v003
 
-**29:41 · 5,224 narration words · band 5,100–5,600 · facts `EP62_greene_FACTS_LEDGER.v001.md` · contract `episodes/PD-2026-062-greene/episode_spec.v001.json`**
+**30:00 目標（実測 29:34） · 5,224 narration words · band 5,100–5,600 · facts `EP62_greene_FACTS_LEDGER.v001.md` · contract `episodes/PD-2026-062-greene/episode_spec.v001.json`**
 
 **Spoken words only below the section headings.** `【】` is direction. `⟨HELD⟩` is a held beat. Section keys are the contract's eight, spelled as the contract spells them.
 

@@ -8,6 +8,8 @@
 
 **Locks:** both accounts of the mistake, neither adopted · no one overcharged · no cutoff said to have ended · no vote · no date, season, duration or sum for the five · no national number · no modern rule · no aftermath.
 
+> **尺の目標は 30:00**（オーナー指定 2026-08-04）。この稿の実測は **30:19**（実測レート176語/分・gap込み）。契約帯は 27:00–32:00、`manifest.json` の `target_duration_minutes` は 30。
+
 ---
 
 ## HOOK (0:00–0:08)

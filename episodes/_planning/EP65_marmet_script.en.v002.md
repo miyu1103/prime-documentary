@@ -6,6 +6,8 @@
 
 **Windows are derived, not chosen.** Each `(mm:ss–mm:ss)` below is this section's measured narration word count at **176 words per finished minute** — the rate `episode_spec.v001.json` records from EP60 and EP61 clip durations including pipeline gaps — laid end to end from 0:00 after the fixed 8-second HOOK.
 
+> **尺の目標は 30:00**（オーナー指定 2026-08-04）。この稿の実測は **29:09**（実測レート176語/分・gap込み）。契約帯は 27:00–32:00、`manifest.json` の `target_duration_minutes` は 30。
+
 ---
 
 ## HOOK (0:00-0:08 · voice from frame 0)
