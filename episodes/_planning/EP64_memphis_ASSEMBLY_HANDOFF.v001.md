@@ -19,7 +19,7 @@
 | FILM_BIBLE | ✅ | 支配思想・モチーフ8状態・転回・認知・拒否事項 |
 | 台本 `script.en.v002.md` | ✅ **3ゲート全緑** | `check_script_length` **5,461語**（帯 3,699–5,480）· `check_script_craft` ナレ **5,390語** = 31.16分 @173wpm · `check_episode_spec` valid |
 | 台本の自前計測 | — | ナレーション **5,416語** / **398文** / 92%線は **L407**（ENDING冒頭）を通る |
-| 演出データ `beats.v001.json` | ✅ **100個** | HOOK 4 / OP 3 / **ACT_1〜ACT_5 各17** / ENDING 8。**各幕17は契約帯 13–17 の上限ちょうど**（余裕ゼロ） |
+| 演出データ `beats.**v002**.json` | ✅ **101個** | HOOK 3 / OP 4 / **ACT_1〜ACT_5 各17** / ENDING 9。**`beats.v001.json` は破棄（理由と全差分は §10）。組み立てでは参照しない。** |
 | 発注書 `CODEX_BATCH_A.v001.md` | ✅ | **`M001`〜`M219` の219枚**（欠番0・重複0）· うち `mandatory_stills` 215枚は全件が発注書に実在 |
 | **画像（生成物）** | ❌ **0枚** | `H:\pd-media\assets\ai\memphis\` は**存在しない** |
 | **画像の配置** | ❌ **未作成** | `remotion\public\memphis\img\` は**存在しない** |
@@ -53,7 +53,8 @@ episodes\_planning\EP64_memphis_script.en.v002.md             ✅ 36,676 B ★�
 episodes\_planning\EP64_memphis_FILM_BIBLE.v001.md            ✅ 68,453 B ← なぜこの順で語るか
 episodes\_planning\EP64_memphis_FACTS_LEDGER.v001.md          ✅ 65,932 B ← 事実の出所。✓/VERBATIM 以外は使用不可
 episodes\_planning\measurements\EP64_memphis_RAW.md           ✅ 62,075 B ← 判決文全文。引用の最終照合先はここ
-episodes\_planning\EP64_memphis_beats.v001.json               ✅ 21,594 B ← 演出データ100個
+episodes\_planning\EP64_memphis_beats.v002.json               ✅ ★正典。演出データ101個（§10）
+episodes\_planning\EP64_memphis_beats.v001.json               ✅ 21,594 B （残置・使わない・§10）
 episodes\_planning\EP64_memphis_script.en.v001.md             ✅ 34,844 B （残置・使わない）
 ```
 
@@ -133,10 +134,15 @@ py -3.11 scripts\build_case_film_generic.py --config episodes\_planning\EP64_mem
 ### ④ figure beats を書き込む
 
 ```
-.venv\Scripts\python.exe scripts\set_figure_beats.py --config <filmconfig> --beats episodes\_planning\EP64_memphis_beats.v001.json --min-per-act 13
+.venv\Scripts\python.exe scripts\set_figure_beats.py --config <filmconfig> --beats episodes\_planning\EP64_memphis_beats.v002.json --min-per-act 13
 ```
+**★ `v002` を使うこと。`v001` は使わない（理由と全差分は §10）。**
+実測: `--dry-run` **exit 0 / 101 beat valid**（HOOK 3 / OP 4 / ACT_1–ACT_5 各17 / ENDING 9）。
 **⚠ 各幕ちょうど17個＝契約帯 13–17 の上限。**ビートを1つでも落とすと下限側には余裕があるが、
 **1つでも足すと契約違反になる。**組み立て中にビートを追加しないこと。
+**⚠ `build_case_film_generic.py::build_figures` は `figures[0]` と `figures[-1]` を AI開示の下三分で
+上書きする。**v002 は HOOK 先頭と ENDING 末尾に開示カードを**明示的に置いてある**ので、
+両端のビートを並べ替えたり足したりすると、置いた文言が黙って消える。
 
 ### ⑤ Remotion 合成を登録
 
@@ -286,7 +292,14 @@ EP61 は VO 生成後に台本が伸びて作り直しになっている。**こ
 
 ## 6. 未解決（そちらの判断が要る／私が閉じられなかった）
 
-### 6-1. ★ `ML-60` が記録なしで消えている — **これは正直に書く**
+### 6-1. ~~★ `ML-60` が記録なしで消えている~~ → **解消済み（2026-08-05 実測）**
+
+**現在ディスク上の `script.en.v002.md` L257 に入っている**（`grep -c -i coerce` = **1**）。
+> *It refused to let a rulebook override that. A public utility should not be able to coerce a customer to pay a disputed claim.*
+
+本書 v001 が書かれた 19:50 時点の台本には無く、**22:07 の台本修正で復元された**ものと見られる。
+`beats.v002.json` の `ACT_4[2]` がこの一文を逐語の quote カードとして担っている（語位置 w158/1076 = 0.147・スロット 0.147 でぴったり乗る）。
+**以下は当時の記録として残す。**
 
 台帳 **L161 の `ML-60`** は ✓ VERBATIM の行である：
 
@@ -450,4 +463,250 @@ affording **the notice and procedure described above**."* という別の実在�
 
 ---
 
-*v001 · 2026-08-04 · 設計スレッドから。**この文書に書いていない数字は、私が測っていない数字。***
+## 10. figure beats を作り直した（2026-08-05）— v001 は使わない
+
+**正典: `episodes/_planning/EP64_memphis_beats.v002.json`（101個 / HOOK 3・OP 4・ACT_1〜ACT_5 各17・ENDING 9）。**
+契約 `figure_beats_per_act` 13–17 を全幕で満たす。`set_figure_beats.py --dry-run` **exit 0（101 beat valid）**。
+**`beats.v001.json` は上書きせず残す**（`.claude/rules/05` `12`）。**組み立てでは参照しない。**
+
+### 10-1. なぜ作り直したか（仕組みの話）
+
+`build_case_film_generic.py::build_figures` は beats に時刻を与えない。**区間の中で等間隔に置く**：
+
+```
+start = lo + span * (i + 0.5) / N      # N = その区間の beat 数
+```
+
+つまり **配列の何番目にあるかが、そのまま画面に出る秒**になる。
+v001 は「語りの順番」では正しかったが「語りの**語数の位置**」では合っていない。
+台本 v002 のナレーションを区間ごとに語数で実測した（HOOK 24 / OP 59 / ACT_1 686 / ACT_2 1,111 /
+ACT_3 697 / ACT_4 1,076 / ACT_5 1,295 / ENDING 440 語）ところ、**素材の密度が前半に極端に偏っていて、
+等間隔のスロットとまったく噛み合っていない**ことが分かった。ACT_1 は最初の 28% に9個ぶんの素材が
+あり、後半 35%（w447 以降・仕事を休んだ話から提訴まで）にはカードが**1枚しか置かれていなかった**。
+その結果、前半のカードは自分の一節より最大 **+0.28 区間ぶん（約66秒）遅れて**出ることになる。
+
+v002 は**全101個を語数位置で置き直し、必要な所ではカードを新設し、余った所では統合した。**
+
+### 10-2. 直した文字列（照合先は `measurements/EP64_memphis_RAW.md` のみ）
+
+RAW は**文の途中に星番ページ（`terminate *19 service`）と脚注番号（`computers,[20]`）が入っている**ので、
+照合の前に正規化した。v002 の**引用37本は全数が RAW と逐語一致**（正規化後の完全一致・0 失敗）。
+
+| 場所 | v001（画面に焼かれる予定だった） | v002（RAW 逐語） |
+|---|---|---|
+| ACT_5 反対意見の譲歩 | "…a legitimate claim of entitlement to continued utility services" で切る | "…continued utility services **as long as the undisputed portions of his utility bills are paid.**"（**条件節を落とすと譲歩の意味が変わる**） |
+| ACT_5 n.22 | "The public utility enjoys a broad discretion in the scheduling and structuring of this hearing"（原文の hearing を囲む引用符を削除・**保護条項を切り落とし**） | "…structuring of this "hearing," **provided that the customer is afforded adequate time for effective presentation of his complaint prior to termination.**" |
+| ACT_1 n.7 | "…failed to combine the two accounts properly**.**"（原文は `properly (A. 146-150), or that,…` と続く。**途中で切って句点を打ち、完結した文に見せていた**） | 句点を削除（EP62 と同じ家内規則＝途中で切った引用は終止符を打たない） |
+| ACT_2 控訴審 | "**The** MLG&W notice only **warned** the customer…"（**原文の編集括弧 `warn[ed]` を黙って解消し、文頭を大文字にしていた**） | "the MLG&W notice only **warn[ed]** the customer to pay or face termination."（原文どおり） |
+| ACT_3 出典 | "respondents had not been given adequate notice…" 出典＝**"The District Court's own finding, quoted by the Court"** | **地裁の言葉ではない。**RAW の引用符は次の `"[n]one…"` から始まる。この句は**最高裁自身が地裁を要約した地の文**。→ この位置は `compbars`（0 / 2・ML-48 の後半）に置き換え |
+| ACT_4 出典 | "some kind of hearing is required at some time…" 出典＝**"The Court, on what the hearing had to be"** | **_Wolff v. McDonnell_, 418 U. S. 539, 557-558 (1974) の言葉**を最高裁が引用したもの。→ 誤帰属のまま出せないので削除（語位置にも空きが無かった） |
+| ACT_4 出典 | Mullane の基準に出典名が無い（"The notice standard the Court applied"） | "**Mullane v. Central Hanover Trust Co., 339 U. S. 306, 314 (1950)** — notice to the beneficiaries of a trust fund, quoted in Craft"（RAW の表記は *Bank &* ではなく *Trust Co.*） |
+| ACT_4 出典 | bona fide dispute の例外に出典名が無い（"Tennessee law, as the Court found it"） | "**Trigg v. Middle Tennessee Electric Membership Corp. (Tenn. App. 1975)**, quoted in Craft" |
+| ACT_3 出典 | "terminations which should have been unnecessary…" 出典＝"in **the order** ruling for the utility" | 1974年12月30日の**命令**（n. 5）とは別の文書。→ "in **the same decision that gave judgment to the utility**" |
+
+**捏造文字列 `would retain the option to terminate service after affording the notice and hearing required` は
+v001 にも v002 にも 0件**（機械掃引で確認）。ACT_5／ENDING が持っているのは RAW L93 の逐語である。
+
+### 10-3. 事実として誤っていた図版（引用ではないもの）
+
+| 場所 | v001 | 直した理由 |
+|---|---|---|
+| ENDING `casetimeline_c` | 1972→1973→Feb 1974→Dec 1974→1977→1 May 1978 の年表 | **`PD_SCREENPLAY_STANDARD` §12「ENDING は要約ではなく再フレーム」に正面から違反**（出来事の年表は要約そのもの）。**その上で内容も誤り**：第六巡回区の判決は **1976年**（534 F. 2d 684 (1976)）で、1977年2月22日は**上告受理**の日である。→ 削除（年表は ACT_2 に手続きの時計として一つ残る） |
+| ACT_3 kinetic | "THE CRAFTS LOST. / THE COURT FOUND / **THE NOTICE INADEQUATE**." | 地裁が認めたのは「**異議を申し立てる手続きについての告知**が不十分だった」ことで、通知そのものではない。反対意見は ✓ *"The District Court did not find that the Division's notice was defective in any respect"*（ML-98）と**明示的に否定**している。→ 削除し、同じ位置を `compbars`（実質的剥奪 0 / 例外として名指しされた者 2・ML-48 逐語）に |
+| HOOK lowerthird | "MEMPHIS, TENNESSEE / Alaska Street · 1972" | **HOOK の24語はこれを一言も語らない**（ACT_1 の事実）。フックで本編の事実を先出ししない。しかも §10-6 の罠でどのみち画面に出ない |
+| HOOK kinetic | "…AND SAID SHE / HAD PAID **THE** BILL." | 台本 L19 と RAW は ✓ *"explained that she had paid **a** bill"*。定冠詞にすると「どの請求書か」を確定してしまい、**⛔-02（誰も支払義務を判断していない）**の線を越える。→ "HAD PAID **A** BILL." |
+| ACT_2 compbars | 「サービス復旧の案内を載せた紙 1 / 異議申立先を載せた紙 0」 | **記録の沈黙からの推論。**n. 4 は cutoff notice が復旧情報を「与える」と書いているだけで、争いについて**書いていないとは言っていない**。しかも第二のフライヤーは実際に異議申立先を書いている。→ 削除 |
+| ACT_2 compbars | 「フライヤーを送られた顧客の割合 **40** / この家に届いた保証 **0**」 | **単位の違う二つの数（パーセントと件数）を同じ棒グラフに並べていた。**→ `numberticker` 40 **suffix `%`** 一枚にまとめ、「どちらのフライヤーがアラスカ通りに届いたかは記録が確定していない」をラベルの二文目に |
+| ACT_2 numberticker | 40「…the dissent says 30 or 40」 | 数字を 40 に確定しておいてラベルで打ち消す形。→ ticker をやめ、`lowerthird`「PHONE 523-0711 · INFORMATION CENTER」の副文に *"30 or 40 employees"* を原文の幅のまま置いた |
+| ACT_2 casetimeline_c | "Day 4 / Day 20 / Day 24" | 原文は全部 ✓ *"Approximately"*。→ "About day 4 / About day 20 / About day 24 / Four days later / About five days on" |
+| ACT_4 arrow | "That gets them through the door. **It says nothing yet about what they were owed inside.**" | 二文目は台本に無い。台本 L269 は "That gets the Crafts through the door." の一文のみ。→ arrow ごと削除（語位置に空きが無く、Mullane 逐語を優先） |
+| ACT_3 lowerthird | "RECOMMENDED, NOT ORDERED / The utility **rewrote the notice** anyway" | 記録が言うのは ✓ *"instituted some new procedures"*（n. 5）と ✓ *"moved to clarify and regularize their notice procedure"*（n. 16）。→ 台本 L209 の言い方に統一した kinetic「RECOMMENDED. / NOT ORDERED. / THE UTILITY DID IT ANYWAY.」に |
+| ACT_5 lowerthird | "JUSTICE STEVENS, DISSENTING / with the Chief Justice and Justice Rehnquist" | 誤りではないが、語位置に単独の枠が取れなかった。→ ML-94 の逐語カードの `attribution` に畳んだ（"Stevens, J., dissenting, joined by the Chief Justice and Justice Rehnquist"）。**情報は一つも落ちていない** |
+
+### 10-4. 数字の裏づけ（台帳の行）
+
+| beat | 数 | 根拠 |
+|---|---|---|
+| ACT_1 stat | 2（メーターの**組**） | **ML-17 ＋ ML-21**。*"two separate gas and electric meters and only one water meter"* ＋ *"combine the meters into **one gas and one electric meter**"* ＝ ガス2・電気2・水道1。**「二つのメーター」ではなく「二組」**（§4 の訂正どおり） |
+| ACT_1 stat | 5（遮断回数） | **ML-23**。ラベルに ML-24（月・期間・季節・金額のいずれも無い）を併記 |
+| ACT_2 numberticker | 30（日） | **ML-35**（n. 22・Brief for Petitioners 28） |
+| ACT_2 numberticker | 11,216 | **ML-96**（反対意見 n. 1・App. 74） |
+| ACT_2 numberticker | 40**%** | **ML-42**（*"about 40% of the utility's customers"*）。**"about" をラベルに残した** |
+| ACT_2 / ENDING numberticker | 33,000 | **ML-38**（n. 14・Mullen 証言・App. 130） |
+| ACT_2 lowerthird 副文 | 30 or 40 | **ML-97**（反対意見）。**幅のまま** |
+| ACT_3 numberticker | $35 | **ML-49** |
+| ACT_3 numberticker | $2.50 | **ML-120**（反対意見 n. 5・この文書で唯一の反復する金額） |
+| ACT_3 compbars | 3 対 0 | **ML-86 / ML-119** ＋ 台本 L223（地裁・控訴審・最高裁の三つ） |
+| ACT_3 compbars | 0 対 2 | **ML-48** 逐語（*"[n]one of the individual plaintiffs… except in the possible instance of Mr. and Mrs. Craft"*） |
+| ACT_4 compbars | 1 対 0 | **ML-66** 逐語（告知としては足りるが、異議の機会を知らせるものではない） |
+| ACT_5 / ENDING stat | 0 | **ML-84 / ML-86 / ML-91** ＋ 台本 L337–341 |
+| ENDING compbars | 2 対 0 | **ML-117**（本文と n. 7 の二つの説明・裁判所はどちらも採らない） |
+| ACT_5 引用内 | 約2,000/月 | **ML-107**。数字は**反対意見の逐語カードの中**にあり、独立した ticker にはしていない |
+
+**支えられなかったので落とした数字は1件：ACT_2 の compbars「異議申立先を載せた紙 = 0」**（§10-3）。
+これは台帳のどの行でも支えられない**記録の沈黙からの推論**だった。他に台帳の裏づけを欠く数字は無かった。
+
+### 10-5. 並べ替え（語位置で置き直した結果）
+
+丸括弧内は**台本 v002 のナレーション語位置**（区間内の割合）。矢印の右はそのカードが実際に出る割合。
+
+**HOOK**（4 → 3）：v001 は 24語・8秒に4枚＝1枚あたり約1.5秒ずつ重なる。3枚なら重なりは約0.6秒。
+
+```
+v001: [場所テロップ] [2通の請求書 stat] [PAY OR FACE] [MARY CRAFT TELEPHONED]
+v002: [AI開示 §10-6] [PAY OR FACE (0.25)→0.31] [MARY CRAFT TELEPHONED (0.42)→0.64]
+```
+
+**OP**（3 → 4）：59語・約20秒。3枚だと POWELL のカードが「差し戻し」の文に落ちる。4枚で全部が自分の文に乗る。
+
+```
+v002: 事件名+引用 (0.00)→0.13 · JUSTICE POWELL (0.37)→0.38 · AFFIRMED/差し戻し (0.47)→0.63 · THREE JUSTICES DISSENTED (0.73)→0.88
+```
+
+**ACT_1**（17 → 17・中身は7枚入れ替え）
+
+```
+v001 の並び：幕題・アラスカ通り・1972年10月・stat2・売主・一年・1973年・WILLIE S/C・
+             ハイライトリング・1973年10月・faultsplit・引用(本文)・引用(脚注)・compbars・
+             「記録が一致しない」・stat5・「no satisfaction」
+             ← 最初の10枚が語位置 0.02–0.28 に固まり、後半 0.58–1.00 にはカードが1枚しか無い
+
+v002 の並び（右は語位置）：
+ 0 幕題 (—)                              1 アラスカ通り＋1972年10月＋duplex (0.073)
+ 2 stat 2（メーターの組・売主の一言を副文に統合）(0.104)
+ 3 WILLIE S. CRAFT / WILLIE C. CRAFT (0.197)
+ 4 1973年10月・検針員と自前の業者 (0.280) 5 「自分たちで払った」(0.337)
+ 6 引用・本文（業者の失敗）(0.362)        7 「脚注の中の第二の説明」(0.442)
+ 8 引用・n.7（会社の失敗）(0.462)         9 faultsplit (0.532)
+10 stat 5 ＋ 月も期間も金額も無い (0.579) 11 「仕事を休んだ」(0.652)
+12 引用・good faith の認定 (0.685)        13 引用「was given no satisfaction」(0.781)
+14 引用「手続きは十分に説明されなかった」(0.824)
+15 引用「権限の不確かな従業員」n.19 (0.892) 16 1974年2月・提訴 (0.968)
+```
+
+**新設5枚**（11–15）は、v001 が空にしていた後半 35% を埋めるためのもの。全部が台本の逐語である。
+**統合4枚**（売主・一年・1973年・ハイライトリング → 2 と 3 の副文へ）。
+**削除**：compbars（ENDING に同じものが残る）・kinetic「THE RECORD DOES NOT AGREE WITH ITSELF」
+（同じ位置で `faultsplit` の絵が同じことを言う）。
+
+**ACT_2**（17 → 17）：語位置 0.00–0.09 に4事実、0.40–0.63 に梯子と分割払い、0.70–0.87 にフライヤー2種。
+
+```
+ 0 幕題  1 「請求書を送っていたのは市だった」(0.038)  2 四段の手続き (0.146)
+ 3 casetimeline_c・約4日/約20日/約24日/4日後/約5日後 (0.237)  4 引用・段(iii) (0.230)
+ 5 numberticker 30日 (0.342)  6 numberticker 11,216 (0.392)
+ 7 PHONE 523-0711（30〜40人・3日止められる）(0.415)  8 「番号は通知に印刷されていた」(0.500)
+ 9 四つの段（相談員→主任→監督→委員会）(0.518)  10 分割払い制度 (0.576)
+11 引用・控訴審「pay or face termination」(0.679)  12 numberticker 40%（＋どちらが届いたか不明）(0.712)
+13 引用・第二のフライヤー (0.786)  14 numberticker 33,000 (0.849)
+15 「梯子はあった。書かれていなかった」(0.903)  16 適用されなかったテネシー州法 (0.954)
+```
+
+**削除**：MLG&W の身元テロップ（1 の主張と重複）・STEP THREE テロップ（4 の逐語と重複）・
+stat 2,000（**ACT_5 の反対意見の逐語カードが同じ数字を運ぶ**）・compbars 2件（§10-3）。
+**落とした素材**：*"depended on the vagaries of 'word of mouth referral'"*（語位置 0.925 だが
+スロットが 0.912 と 0.971 しかなく、0.971 は「適用されなかった州法」が正確に乗る）。ナレーションでは語られる。
+
+**ACT_3**（17 → 17）：v001 の順は語位置とほぼ合っていた区間で、入れ替えは3枚。
+
+```
+ 0 幕題  1 compbars 0/2 (0.080)  2 引用「hope」(0.146)  3 $35 (0.166–0.229)
+ 4 引用「不要だったはずの遮断」(0.230)  5 RECOMMENDED / NOT ORDERED / DID IT ANYWAY (0.323)
+ 6 1974年12月30日の命令 (0.334–0.394)  7 引用・n.8「possible gas overcharges」(0.461)
+ 8 「POSSIBLE / GAS OVERCHARGES」(0.506)  9 引用・反対意見 n.5「split billing」(0.527)
+10 $2.50 (0.581)  11 compbars 3/0 (0.671)  12 引用「損害賠償は下級審の判断事項」(0.699)
+13 THE CLASS STAYED DEAD (0.772)  14 第六巡回区の二つの柱＋上告受理 (0.795–0.869)
+15 引用「もう聴聞は望んでいない」(0.908)  16 引用「損害賠償請求がムート性から救う」(0.970)
+```
+
+**新設4枚**：9（反対意見の split billing・逐語）・15・16（**訴訟が消えかけた区間 0.88–0.97 に v001 は
+1枚も置いていなかった**）・6。**削除**：DISTRICT COURT テロップ（ACT_1 末尾の提訴テロップと重複）・
+kinetic「THE CRAFTS LOST…」（§10-3）・kinetic「NOBODY EVER DECIDED…」（同じ位置の compbars 3/0 が同じことを言う）。
+
+**ACT_4**（17 → 17）
+
+```
+ 0 幕題  1 引用・Trigg の例外 (0.075)  2 引用・ML-60「coerce してはならない」(0.147)
+ 3 NOT AT WILL / ONLY FOR CAUSE (0.201)  4 引用・Mullane (0.282)
+ 5 「起きると伝えよ / 異議を言えると伝えよ」(0.322)  6 compbars 1/0 (0.337–0.379)
+ 7 引用・n.15「where, during which hours, and before whom」(0.448)
+ 8 WHERE. / WHAT HOURS. / BEFORE WHOM.（maskslide・ENDING で回収）(0.472)
+ 9 A DESIGNATED EMPLOYEE (0.551–0.590)  10 引用「両下級審が認定した」(0.588)
+11 引用・Mathews の二要素（生活の必需＋コンピュータ依存）(0.667–0.707)
+12 電力会社の最後の主張 (0.743)  13 引用「uniquely final deprivation」(0.792)
+14 引用「弁護士を頼むには小さすぎる額」(0.835)  15 ハイライトリング・半額前払い (0.901)
+16 THE JUDGMENT … IS AFFIRMED (0.981)
+```
+
+**`ML-60` はここで初めてカードになる**（§6-1）。**削除**：TENNESSEE LAW テロップ（語位置 0.015 に
+スロットが無い）・「1950年の信託の事件」テロップ（**Mullane カードの attribution に畳んだ**）・
+arrow（§10-3）・stat 3（直後の maskslide が三行そのもので同じことを言う）・
+引用「some kind of hearing…」（**Wolff の言葉の誤帰属**・§10-2）。
+
+**ACT_5**（17 → 17・**ここが一番動いた**）。v001 は多数意見と反対意見の交替が語位置とずれていた。
+
+```
+ 0 幕題「RETAIN THE OPTION」(—・0.017 の反響の上に乗る)
+ 1 stat 0（復旧命令も差止も金も無し）(0.065–0.084)〔多数〕
+ 2 引用・n.22 broad discretion（**保護条項つき**）(0.132–0.157)〔多数〕
+ 3 POSSIBLE. / NOT HELD. (0.195)〔多数〕
+ 4 引用「I have no quarrel…」(0.237)〔反対・書き手の紹介を attribution に統合〕
+ 5 引用「二つの口座は独立していた」(0.310–0.342)〔反対〕
+ 6 引用「権限のある職員に会っていた」(0.378)〔反対〕
+ 7 引用「他方でも払えと言われた … 職員は解決した」(0.426–0.456)〔反対 n.7〕
+ 8 引用「反対意見は独自の読みを述べる」(0.489)〔**多数** n.19〕
+ 9 引用「家の持ち主に苦情の言い方を教える必要はない」(0.543)〔反対〕
+10 引用「paternalistic predicate」(0.591)〔反対〕
+11 SAME BUILDING / SAME STAFF / A DIFFERENT SIGN (0.659)〔反対の帰結〕
+12 引用「Lay consumers … should be informed clearly」(0.727)〔**多数** n.15〕
+13 引用「約2,000件/月・健康被害の実例は記録に無い」(0.750–0.781)〔反対〕
+14 SERIOUS ENOUGH TO SUE OVER, OR TOO SMALL TO BE CONSTITUTIONAL (0.821)〔反対〕
+15 引用「政策判断であって憲法解釈ではない」(0.867)〔反対〕
+16 引用「弁護士なしで誰もが動けるほど簡単な手続きを憲法は要求しない」(0.967)〔反対〕
+```
+
+**話者が入れ替わる 8 と 12 は、どちらも多数意見が反対意見に答える脚注**で、v002 はその2箇所を
+カードの側でも守っている（7 反対 → 8 多数 → 9 反対 / 11 反対 → 12 多数 → 13 反対）。
+**ACT_5 の逐語「And petitioners would retain the option…」は ENDING へ移した。**理由は §10-6。
+
+**ENDING**（8 → 9・**年表を落として最後の枠を開示カードに明け渡した**）
+
+```
+ 0 compbars 2/0（誰の過失か）(0.070–0.143)   1 faultsplit（同じ一文の二つの読み）(0.173–0.245)
+ 2 FIVE TERMINATIONS / SEVERAL OCCASIONS (0.286–0.318)
+ 3 stat 0（金額を判断した裁判所）(0.350–0.420)  4 numberticker 33,000 (0.505)
+ 5 WHERE. / WHAT HOURS. / BEFORE WHOM.（ACT_4 の回収）(0.655)
+ 6 引用「And petitioners would retain the option…」(0.748)  7 gears（時計がまた回る）(0.802–0.868)
+ 8 AI開示（§10-6 により強制的にここになる）
+```
+
+**ENDING に新事実は0件**（`PD_SCREENPLAY_STANDARD` §12）。8枚すべてが本編で既に出た事実で、
+**意味だけが変わっている。**削除した年表（§10-3）のほか、テロップ「NOTHING HERE SAYS THE BILL WAS
+WRONG」も落とした（内容は 3 の stat 0 と ENDING の地の文が担う）。
+
+### 10-6. 仕掛けの副作用（v001 が踏んでいた罠）
+
+`build_figures` は最後に **`figures[0]` と `figures[-1]` を AI開示の下三分で上書きする**：
+
+```python
+if figures:
+    figures[0]  = {**figures[0],  **disclosure}
+    figures[-1] = {**figures[-1], **disclosure}
+```
+
+つまり映画の**最初の1枚と最後の1枚は、何を書いても開示カードになる**。
+v001 は HOOK 先頭に「MEMPHIS, TENNESSEE / Alaska Street · 1972」を、ENDING 末尾に
+「NOTHING HERE SAYS THE BILL WAS WRONG」を置いていたので、**その2枚は画面に出ないはずだった。**
+v002 は両端に開示カードを**明示的に置き**、枠を無駄にしていない。
+その代わり ENDING の決め台詞の位置には、**ENDING で二度目に語られる ML-76 の逐語**（6番）を置いた。
+
+### 10-7. 検算コマンド
+
+```
+.venv\Scripts\python.exe scripts\set_figure_beats.py --config <filmconfig> --beats episodes\_planning\EP64_memphis_beats.v002.json --min-per-act 13 --dry-run
+  → [beats] 101 beat(s) valid: HOOK:3, OP:4, ACT_1:17, ACT_2:17, ACT_3:17, ACT_4:17, ACT_5:17, ENDING:9   exit 0
+```
+
+---
+
+*v001 · 2026-08-04 · 設計スレッドから（§10 のみ 2026-08-05 追記）。**この文書に書いていない数字は、私が測っていない数字。***
