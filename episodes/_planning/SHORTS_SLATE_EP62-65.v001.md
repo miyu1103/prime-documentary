@@ -127,7 +127,7 @@ L5: *"This was 1982, and the Court decided only this case. The full story is on 
 **Ledger source (verbatim):**
 > GL-20 — *"But if no one is at home at the time of that visit, as is apparently true in a 'good percentage' of cases, posting follows forthwith."*
 > GL-21 — *"Neither the statute, nor the practice of the process servers, makes provision for even a second attempt at personal service, perhaps at some time of day when the tenant is more likely to be at home."*
-> GL-58 — *"The failure to effect personal service on the first visit hardly suggests that the tenant has abandoned his interest in the apartment."*
+> GL-58 — *"The failure to effect personal service on the first visit hardly suggests that the tenant has abandoned his interest in the apartment such that mere pro forma notice might be held constitutionally adequate."*
 
 **Telops:** `ONE VISIT` · `NO SECOND\nATTEMPT` · `"A GOOD\nPERCENTAGE"` · `THE CLOCK STARTS` · `IT PROVES NOTHING`.
 **Plate motifs:** a knuckle about to touch a door (no face) · an empty walkway seen from a door · a hallway with light under one door · a wristwatch at midday · an office worker's empty flat mid-afternoon · a bus stop in daylight · a shift-work locker · a door viewed from inside, nobody coming · a paper going up · a calendar page with days crossed, unreadable · a court docket shelf · a writ of possession in a gloved hand, illegible.
@@ -140,13 +140,13 @@ L5: *"This was 1982, and the Court decided only this case. The full story is on 
 
 - **Slot:** see §6 · **Format:** F-D · **Target 36–44 s** · ~120 w
 - **Hook:** *"When the Court said a letter would have been better than a paper on the door, one Justice wrote back: it is no secret that unattended mailboxes are subject to plunder by thieves."*
-- **Payoff:** eleven States allowed exactly this practice at the time — and the Court held it constitutionally inadequate on this record, on the testimony of a handful of process servers.
+- **Payoff:** eleven States allowed notice by posting, or by leaving it at the residence, at the time — and the Court held it constitutionally inadequate on this record, on the testimony of a handful of process servers.
 
 **Ledger source (verbatim, ALL labelled `DISSENT` on screen — R-C of `SHORTS_METHOD`):**
 > GL-73 — *"Today, the Court holds that the Constitution prefers the use of the Postal Service to posted notice."*
 > GL-80 — *"It is no secret, after all, that unattended mailboxes are subject to plunder by thieves."*
 > GL-74 — *"The sole ground for the Court's result is the scant and conflicting testimony of a handful of process servers in Kentucky."*
-> GL-75 — *"at least 11 States authorizing notice in summary eviction proceedings solely by posting."*
+> GL-75 — *"at least 11 States authorizing notice in summary eviction proceedings solely by posting, or by leaving the notice at the tenant’s residence."*
 
 **Telops:** `DISSENT` · `"PLUNDER\nBY THIEVES"` · `11 STATES` · `A HANDFUL OF\nWITNESSES` · `NO VOTE IS\nPRINTED`.
 **Plate motifs:** a bank of dented mailboxes, no names legible · an open mailbox flap · a letter on a doormat · a post van at a kerb, unbranded · a State map with no labels · a bench of empty legislative seats · a stack of briefs · a pen held over a page, no letterforms · a door with paper, seen from far.
@@ -168,7 +168,7 @@ Ms Gonzalez is never depicted, and neither is her death.
 
 ---
 
-### short262 — "The hospital never said no. It just never called her number."
+### short262 — "The hospital never said no. Her number never came."
 
 - **Slot:** see §6 · **Format:** F-E · **Target 36–44 s** · ~120 w
 - **Hook:** *"A sixty-five-year-old woman walked into an emergency room with chest pains and was handed a number. Nobody ever refused her anything. Nobody ever called it either."*
@@ -181,7 +181,7 @@ Ms Gonzalez is never depicted, and neither is her death.
 
 **Telops:** `SHE WAS GIVEN\nA NUMBER` · `NOBODY SAID NO` · `"A HIGH NUMBER\nAND A COLD\nSHOULDER"` · `CONSTRUCTIVE\nDUMPING` · `SHE WAITED`.
 **Plate motifs:** a paper ticket in a hand, digits not legible (hero) · rows of linked waiting-room chairs, empty · a wall-mounted number display, blank · a reception counter with nobody behind it · a corridor of closed doors · a bench with one coat left on it · a wall clock, hands only · a door swinging shut · a strip light flickering · an empty triage bay seen from the doorway · a chair in a row, slightly out of line · the same room, later, darker.
-**Cover:** headline `THEY NEVER\nCALLED HER` · badge `1991`.
+**Cover:** headline `HER NUMBER\nNEVER CAME` · badge `1991`.
 **CTA props:** `ctaLongTitle: 'The Number That Was Never Called'` (33 ch → shorten to `'Never Called'`) · `ctaHeadline: 'FULL CASE'`.
 **Funnel question:** *what does the law actually require an emergency room to do — and what did the court refuse to decide?*
 
@@ -198,7 +198,7 @@ Ms Gonzalez is never depicted, and neither is her death.
 **Ledger source (verbatim):**
 > AS-01 — *"EMTALA requires an appropriate medical screening, but does not explain what constitutes one. The adjectival phrase is not self-defining."*
 > AS-02 — *"'Appropriate' is one of the most wonderful weasel words in the dictionary, and a great aid to the resolution of disputed issues in the drafting of legislation."*
-> AS-04 — the test: *"reasonably calculated to identify critical medical conditions that may be afflicting symptomatic patients."*
+> AS-04 — the test: *"reasonably calculated to identify critical medical conditions that may be afflicting symptomatic patients, and provides that level of screening uniformly to all those who present substantially similar complaints."*
 > AS-05 — *"The essence of this requirement is that there be some screening procedure, and that it be administered even-handedly."*
 
 **Telops:** `"APPROPRIATE"` · `A WEASEL WORD` · `NOT SELF-\nDEFINING` · `SOME PROCEDURE` · `EVEN-HANDEDLY`.
@@ -234,7 +234,7 @@ THE FAMILY`  ←（旧案 "NOT FOR THE DEATH" は$200,000には当たるが、�
 ## 4. EP64 — the bill in the wrong name (`memphis`) — 3 shorts
 
 Format lane **F-D**. Locks from `EP64_memphis_FACTS_LEDGER.v001`:
-the opinion **contradicts itself** on who failed to merge the accounts (majority: a contractor the Crafts hired; footnote citing respondents' brief: the utility) and on how many terminations there were (majority: five; dissent: "several") — **the script may not pick a side**;
+the opinion **contradicts itself** on who failed to merge the accounts (majority: a contractor the Crafts hired; footnote citing respondents' brief: the utility) and on how many terminations there were (majority: five; dissent: "several") — **the script may not pick a side, but it may state either count when it is attributed** (ML-118 permits "five" as the Court’s figure). A bare "five times" adopts the majority silently; "five times, the Court said" does not;
 **nobody ever decided whether the Crafts owed the money**, so "they were overcharged" is not available;
 the Court expressly preserved the utility's power to cut service **after** a hearing;
 no house fire, nobody freezing, no utility worker as villain.
@@ -245,7 +245,7 @@ no house fire, nobody freezing, no utility worker as villain.
 
 - **Slot:** see §6 · **Format:** F-D · **Target 36–44 s** · ~120 w
 - **Hook:** *"A family moved into a house in Memphis and started getting two electricity bills. The second one was in the name Willie C. Craft. The man who lived there was Willie S. Craft."*
-- **Payoff:** one letter. The power went off five times, and to this day no court has ever decided whether they owed the money.
+- **Payoff:** one letter. The power went off five times, the Court said, and and the Supreme Court never decided whether they owed the money.
 
 **Ledger source (verbatim):**
 > ML-17 — *"they noticed that there were two separate gas and electric meters and only one water meter serving the premises. The residence had been used previously as a duplex."*
@@ -292,12 +292,12 @@ no house fire, nobody freezing, no utility worker as villain.
 > ML-93 — *"In my judgment, the Court's holding confuses and trivializes the principle that the State may not deprive any person of life, liberty, or property without due process of law."*
 > Majority, on what survives: the utility *"would retain the option to terminate service after affording this opportunity and concluding that the amount billed was justly due."*
 
-**Telops:** `2,000 A MONTH` · `DISSENT` · `"CONFUSES AND\nTRIVIALIZES"` · `A HEARING` · `THEN THEY CAN\nSTILL CUT IT`.
+**Telops:** `2,000 A MONTH` · `DISSENT` · `"CONFUSES AND\nTRIVIALIZES"` · `A HEARING` · `THEY CAN STILL\nCUT IT`.
 **Plate motifs:** a switchboard of unlit indicators · rows of desks with handsets · a ledger of account cards, unreadable · a meter reader's satchel · a service van at a kerb, unbranded · a street at night with one house dark · a hearing-room table with two chairs · a door marked only by a blank plate.
 **Cover:** headline `2,000 A MONTH` · badge `AND IT KEPT GOING`.
 **Funnel question:** *what did the Court leave undecided — and did the Crafts ever get their money?*
 
-> **Lock, mandatory final content beat:** the telop `THEY CAN STILL CUT IT` exists so the short cannot be misread as "a hearing before shutoff means no shutoff". This is the episode's most likely misreading.
+> **Lock, mandatory final content beat:** the telop `THEY CAN STILL\nCUT IT` exists so the short cannot be misread as "a hearing before shutoff means no shutoff". This is the episode's most likely misreading.
 
 ---
 
@@ -337,7 +337,7 @@ never frame it as "your mother": the opinion never uses the word and records no 
 
 - **Slot:** see §6 · **Format:** F-A · **Target 36–44 s** · ~120 w
 - **Hook:** *"Everyone remembers this case as the one where the Supreme Court forced three families into arbitration. It did not. It sent the question back and refused to answer it."*
-- **Payoff:** four months later the state court gave up exactly one paragraph and kept everything else.
+- **Payoff:** less than four months later the state court gave up exactly one syllabus point and kept everything else.
 
 **Ledger source (verbatim):**
 > MB-34 — *"The decision of the State Supreme Court of Appeals must be vacated."*
@@ -448,7 +448,7 @@ Interleave 62 → 63 → 64 so no case runs two days straight and the plate load
 |---|---|---|---|
 | **Frame 0** | two meter dials side by side on a wall | a printed slip, type reduced to grey texture | a switchboard of unlit indicators |
 | **`loop_join`** | last beat is a switch flipped with nothing happening; the room stays dark and the two dials come up out of the dark in the same position as frame 0 | last beat is a street of houses at dusk with one dark; the dark window fills frame and becomes the slip | last beat is a street at night with one house dark; the window grid resolves into the switchboard's unlit indicators |
-| **Second watch** | `NOBODY EVER DECIDED` reads as an ending on pass 1; on pass 2 it reverses the opening — the two bills were never resolved either | `BEFORE WHOM` reads as a requirement on pass 1; on pass 2 you notice there is nobody behind any counter in the whole short | `2,000 A MONTH` reads as scale on pass 1; on pass 2, after `THEY CAN STILL CUT IT`, it reads as *and it did not stop* |
+| **Second watch** | `NOBODY EVER DECIDED` reads as an ending on pass 1; on pass 2 it reverses the opening — the two bills were never resolved either | `BEFORE WHOM` reads as a requirement on pass 1; on pass 2 you notice there is nobody behind any counter in the whole short | `2,000 A MONTH` reads as scale on pass 1; on pass 2, after `THEY CAN STILL\nCUT IT`, it reads as *and it did not stop* |
 | **Standing question (pinned)** | *If you cannot tell which bill is yours, who do you even argue with?* | *The Court did not stop the shutoff. So what did it actually change?* | *What did the Court leave undecided — and did the Crafts ever get their money?* |
 
 ### EP65 `marmet` — long-form working title **“The Paper You Sign at the Door”**
