@@ -1,6 +1,6 @@
 # EP62 · GREENE v. LINDSEY — SCRIPT v003
 
-**30:00 目標（実測 29:34） · 5,224 narration words · band 5,100–5,600 · facts `EP62_greene_FACTS_LEDGER.v001.md` · contract `episodes/PD-2026-062-greene/episode_spec.v001.json`**
+**30:00 目標（実測 29:41） · 5,225 narration words · band 5,100–5,600 · facts `EP62_greene_FACTS_LEDGER.v001.md` · contract `episodes/PD-2026-062-greene/episode_spec.v001.json`**
 
 **Spoken words only below the section headings.** `【】` is direction. `⟨HELD⟩` is a held beat. Section keys are the contract's eight, spelled as the contract spells them.
 
@@ -48,7 +48,7 @@ An officer went to an apartment door in Louisville and knocked. Nobody answered.
 
 Three tenants said that is exactly what happened to them. That they never saw the paper. That the first they knew of any of it was when officers arrived with an order to take the apartment back. That is their account.
 
-The proceeding was a forcible entry and detainer action — the summary process a landlord uses to get possession back quickly. Speed is the point of it. Kentucky, like most States, wanted these cases resolved in weeks rather than months, and built the procedure accordingly.
+The proceeding was a forcible entry and detainer action — the summary process a landlord uses to get possession back quickly. Speed is the point of it. Speed is the point of it, and the Commonwealth built the procedure accordingly.
 
 Service of the court's notice fell to the sheriff's office. Joseph Greene was the Jefferson County Sheriff. His deputies carried the writs. Also named in the suit were the Housing Authority itself and several public officials responsible for particular Louisville projects.
 
@@ -70,7 +70,7 @@ The Supreme Court put it in one line, borrowed from a 1914 case called *Grannis 
 
 Little reality or worth. Not a technicality. The whole substance of the thing.
 
-The Kentucky statute at issue was section 454.030. It is three sentences long and it is worth hearing in full, because almost everything in this case turns on the order of its clauses.
+The Kentucky statute at issue was section 454.030. It is two sentences long and it is worth hearing in full, because almost everything in this case turns on the order of its clauses.
 
 If the officer directed to serve notice on the defendant in forcible entry or detainer proceedings cannot find the defendant on the premises mentioned in the writ, he may explain and leave a copy of the notice with any member of the defendant's family thereon over sixteen years of age, and if no such person is found he may serve the notice by posting a copy thereof in a conspicuous place on the premises.
 
@@ -106,7 +106,7 @@ Now the sequence, in the words of the brief filed for the sheriff. First, the of
 
 And then the sentence that undoes it. If no one is at home at the time of that visit, as is apparently true in a good percentage of cases, posting follows forthwith.
 
-Forthwith. The same visit. The deputy knocks, nobody comes, and there is no household member standing behind the person who did not answer the door — because nobody answered the door. So step two evaporates, step three happens, and the officer is back in the car.
+Forthwith. The same visit. The deputy knocks, nobody comes, and there is no household member standing behind the person who did not answer the door — because nobody answered the door. So step two evaporates, step three happens, and the visit is over.
 
 The Court set this out plainly. Neither the statute, nor the practice of the process servers, makes provision for even a second attempt at personal service — perhaps at some time of day when the tenant is more likely to be at home.
 
@@ -202,9 +202,9 @@ The case arrived at the Supreme Court on summary judgment, which means the court
 
 ## ACT_4 (14:45–19:43 · 872 words)
 
-The three tenants had no way to reopen the evictions in the state courts. The Court's phrase for their position is four words long: thus without recourse in the state courts. The judgments were final. The appeal window had closed. In the system that had taken the apartments, there was no door left to knock on.
+The three tenants had no way to reopen the evictions in the state courts. The Court's phrase for their position is thus without recourse in the state courts. The judgments were final. The appeal window had closed. In the system that had taken the apartments, there was no door left to knock on.
 
-So they went to federal court, filing a class action in the Western District of Kentucky under section 1983 — the Reconstruction-era statute that lets a citizen sue a state official for violating a constitutional right. They asked for declaratory and injunctive relief: not money, but a ruling that the practice was unlawful and an order to stop it.
+So they went to federal court, filing a class action in the Western District of Kentucky under section 1983 — the statute that lets a citizen sue a state official for violating a constitutional right. They asked for declaratory and injunctive relief: not money, but a ruling that the practice was unlawful and an order to stop it.
 
 The notice procedure, they said, did not satisfy the minimum standards of constitutionally adequate notice described in *Mullane v. Central Hanover Bank and Trust*.
 
@@ -228,7 +228,7 @@ Hold those two things together, because they are the strangest page in the file.
 
 That is not a contradiction in the judge's logic. It is the same assumption the sheriff's side made and the same one the statute makes: that a step described as a last resort is in fact a last resort. Read the words of the law and it is. Read the depositions and it is not.
 
-The Sixth Circuit reversed, and overruled *Weber* to do it. Its own decision, seventy years old, pointing the other way — and the court of appeals said the ground underneath it had shifted. Its line is the sharpest sentence in the whole history of the case: there may have been a time when posting provided a surer means of giving notice than did mailing. That time has passed. The uncontradicted testimony by process servers themselves establishes it.
+The Sixth Circuit reversed, and overruled *Weber* to do it. Its own decision, seventy years old, pointing the other way — and the court of appeals said the ground underneath it had shifted. Its line is the sharpest sentence in the whole history of the case: there may have been a time when posting provided a surer means of giving notice than did mailing. That time has passed. The uncontradicted testimony by process servers themselves, that posted summonses are not infrequently removed by persons other than those served, constitutes effective confirmation of the conclusion that notice by posting is not reasonably calculated to reach those who could easily be informed by other means at hand.
 
 What it did with the case matters. It reversed the grant of summary judgment and remanded the case for further proceedings. Reversed and remanded. Not decided. Sent back.
 
@@ -252,7 +252,7 @@ Money got a person served. The apartment did not.
 
 ## ACT_5 (19:43–28:29 · 1,544 words)
 
-The opinion was delivered by Justice Brennan, and the standard he reached for was not new. It came from that 1950 case about notifying beneficiaries of a trust, and it has governed notice ever since: an elementary and fundamental requirement of due process in any proceeding which is to be accorded finality is notice reasonably calculated, under all the circumstances, to apprise interested parties of the pendency of the action.
+The opinion was delivered by Justice Brennan, and the standard he reached for was not new. It came from that 1950 case, Mullane, and it has governed notice ever since: an elementary and fundamental requirement of due process in any proceeding which is to be accorded finality is notice reasonably calculated, under all the circumstances, to apprise interested parties of the pendency of the action.
 
 Reasonably calculated. Under all the circumstances. Two conditions, and the second is where this case lives.
 
