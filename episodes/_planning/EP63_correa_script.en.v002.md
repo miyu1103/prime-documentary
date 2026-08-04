@@ -182,7 +182,7 @@ At trial the plaintiffs had introduced into evidence, without objection, HSF's p
 
 It had written a manual about complying with EMTALA. Its executive told a jury he had trained the staff on it. And then it argued that EMTALA did not apply.
 
-The court's reply runs nine words. This argument has the shrill ring of desperation.
+The court's reply runs eight words. This argument has the shrill ring of desperation.
 
 On appeal it added that the policy statement was inadmissible hearsay and that no proper foundation had been laid. Neither objection had been made at trial. Voiced for the first time on appeal, absent plain error, they were waived. The jury, the court held, had a rational basis on which to conclude that HSF is among the ninety-nine percent of American hospitals covered by EMTALA.
 

@@ -33,6 +33,29 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parents[1]
 TSX = ROOT / "remotion" / "src" / "components" / "FigureBeats.tsx"
+BUILDER = ROOT / "scripts" / "build_case_film_generic.py"
+
+
+def builder_kinds() -> set[str]:
+    """Kinds build_case_film_generic.py will actually accept.
+
+    The renderer's union is wider than the builder's VALID_KINDS, and the builder also bans
+    some kinds outright. Validating only against the renderer let EP63 and EP65 carry beats
+    (brightline, dochighlight) that pass here and then raise SystemExit inside build_figures.
+    Parsed from the builder rather than restated, so the two sets cannot drift apart again.
+    """
+    src = BUILDER.read_text(encoding="utf-8")
+
+    def literals(name: str) -> set[str]:
+        m = re.search(name + r"\s*=\s*\{(.*?)\}", src, re.S)
+        if not m:
+            return set()
+        return {a or b for a, b in re.findall(r"\"([a-z_]+)\"|'([a-z_]+)'", m.group(1))}
+
+    valid = literals("VALID_KINDS")
+    if not valid:
+        return set()          # builder changed shape; fall back to renderer-only checking
+    return valid - literals("BANNED_FIGURE_KINDS")
 
 # Fields every beat carries implicitly -- the builder assigns the timing, not the author.
 IMPLICIT = {"start", "end"}
@@ -103,7 +126,8 @@ def union_schema() -> dict[str, tuple[set[str], set[str]]]:
     return schema
 
 
-def validate(beats: dict, schema: dict[str, tuple[set[str], set[str]]]) -> list[str]:
+def validate(beats: dict, schema: dict[str, tuple[set[str], set[str]]],
+             buildable: set[str] | None = None) -> list[str]:
     problems: list[str] = []
     for section, rows in beats.items():
         if not isinstance(rows, list):
@@ -115,6 +139,11 @@ def validate(beats: dict, schema: dict[str, tuple[set[str], set[str]]]) -> list[
             if kind not in schema:
                 problems.append(f"{where}: unknown kind {kind!r} — "
                                 f"the renderer has no branch for it")
+                continue
+            if buildable and kind not in buildable:
+                problems.append(f"{where}: kind {kind!r} is in the renderer's union but the "
+                                f"builder will not accept it — build_figures raises SystemExit "
+                                f"on it. Allowed: {sorted(buildable)}")
                 continue
             req, opt = schema[kind]
             given = set(beat) - {"kind"}
@@ -140,9 +169,16 @@ def main() -> int:
     cfg_path, beats_path = Path(a.config), Path(a.beats)
     beats = json.loads(beats_path.read_text(encoding="utf-8"))
     schema = union_schema()
-    print(f"[beats] renderer exposes {len(schema)} figure kinds")
+    buildable = builder_kinds()
+    if buildable:
+        print(f"[beats] renderer exposes {len(schema)} figure kinds; "
+              f"the builder accepts {len(buildable)} of them")
+    else:
+        print(f"[beats] renderer exposes {len(schema)} figure kinds; "
+              f"WARNING: could not read the builder's VALID_KINDS, so builder-legality "
+              f"is NOT being checked", file=sys.stderr)
 
-    problems = validate(beats, schema)
+    problems = validate(beats, schema, buildable)
     thin = [s for s, rows in beats.items()
             if s.startswith("ACT_") and len(rows) < a.min_per_act]
     for s in thin:

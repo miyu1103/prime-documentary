@@ -19,7 +19,7 @@
 | 台本 `script.en.v002.md` | ✅ 3ゲート緑 | `check_script_length` **5,306語** PASS ／ `check_script_craft` ナレーション **5,281語 = 30.53分**（173.0 wpm）PASS ／ `check_episode_spec` valid |
 | 台本の重複 | ✅ 欠陥0 | 機械掃引で**修理バッチ由来の重複は1件も無い**（§2-1） |
 | 引用 | ⚠️ 欠陥1・台帳欠落3 | 帰属付き53文中40文が判決原文と6語以上一致。**出典不明はゼロ**。改変1件・台帳の穴3件（§2-2） |
-| figure beats | ✅ **98個** | HOOK 4 / OP 3 / ACT_1 16 / ACT_2 17 / ACT_3 17 / ACT_4 17 / ACT_5 16 / ENDING 8。**5幕すべて契約帯 13–17 の内側** |
+| figure beats | ✅ **100個（`beats.v002.json`）** | HOOK 3 / OP 3 / ACT_1 17 / ACT_2 17 / ACT_3 17 / ACT_4 17 / ACT_5 17 / ENDING 9。**5幕すべて契約帯 13–17 の内側**。**v001（98個）は使わない — `brightline` でビルダーが落ち、引用1件が改変で、両端2枠を罠に捨てていた（§9）** |
 | 発注書のプレート | ✅ **227枚** | `C001`–`C227` 連番・**欠番0・重複0** |
 | `mandatory_stills` | ✅ **223件** | 全件が発注書に存在・重複0。**除外4枚は `C221` `C222` `C223` `C227`＝THUMB**（§3-2） |
 | 画像の生成 | 🔄 **122 / 227** | `C001`–`C122` 連続・欠番0・**全枚 3840×2160**。**105枚が未生成で、いま約50〜55秒に1枚のペースで生成継続中**（`C122` 書き込み 21:57:38） |
@@ -46,7 +46,7 @@ episodes\_planning\EP63_correa_script.en.v002.md             ✅ ★確定版。
 episodes\_planning\EP63_correa_FILM_BIBLE.v001.md            ✅ 73,137 bytes。なぜこの順で語るか
 episodes\_planning\EP63_correa_FACTS_LEDGER.v001.md          ✅ 51,616 bytes。✓/VERBATIM 以外は使用不可
 episodes\_planning\measurements\EP63_correa_RAW.md           ✅ 判決文全文 8,359語。**引用の最終照合先はここ**
-episodes\_planning\EP63_correa_beats.v001.json               ✅ 演出データ98個
+episodes\_planning\EP63_correa_beats.v002.json               ✅ ★正典。演出データ100個。v001 は使わない（§9）
 episodes\_planning\EP63_correa_REREVIEW.v001.md              ✅ 30,821 bytes。再採点記録
 episodes\PD-2026-063-correa\01_research\fact_recheck.v001.md ✅
 ```
@@ -309,9 +309,12 @@ py -3.11 scripts\build_case_film_generic.py --config episodes\_planning\EP63_cor
 ### ④ figure beats を書き込む
 
 ```
-.venv\Scripts\python.exe scripts\set_figure_beats.py --config <filmconfig> --beats episodes\_planning\EP63_correa_beats.v001.json --min-per-act 13
+.venv\Scripts\python.exe scripts\set_figure_beats.py --config <filmconfig> --beats episodes\_planning\EP63_correa_beats.v002.json --min-per-act 13
 ```
-データは既に98個・5幕すべて 16–17 で契約帯 13–17 の内側。**config ができるまで書き込めないだけ。**
+データは既に100個・5幕すべて 17 で契約帯 13–17 の内側。**config ができるまで書き込めないだけ。**
+**必ず `beats.v002.json` を渡すこと。**`set_figure_beats.py` は v001 も「98 beat(s) valid」と言って通すが、
+実際に組み立てる `build_case_film_generic.py` は `ACT_3` の `brightline` で `SystemExit` する。二つのゲートの
+kind 集合が違う（renderer union 38種 対 builder `VALID_KINDS` 18種）。詳細は §9。
 
 ### ⑤ 画像を配置し、動かす
 
@@ -473,6 +476,128 @@ cd C:/Users/aab15/Documents/prime-documentary
 
 **受領書が緑になるまで予約も投稿もしない**（`.claude/rules/19-ship-gate.md`）。
 
+---
+
+## 9. figure beats を作り直した（2026-08-05）— v001 は使わない
+
+**正典: `episodes/_planning/EP63_correa_beats.v002.json`（100個 / HOOK 3・OP 3・ACT_1 17・ACT_2 17・ACT_3 17・ACT_4 17・ACT_5 17・ENDING 9）。**
+契約 `figure_beats_per_act` 13–17 を全幕で満たす。`set_figure_beats.py --dry-run` exit 0（100 beat valid）／
+`build_case_film_generic.py::build_figures` を直接呼んで **100 figures 生成成功**。
+**`beats.v001.json` は上書きせず残す**（`.claude/rules/05` `12`）。**組み立てでは参照しない。**
+
+### 9-1. v001 はそもそもビルドが通らなかった
+
+`ACT_3[10]` の `kind: "brightline"` は **`build_case_film_generic.py` の `VALID_KINDS`（18種）に無い**。
+実行すると `SystemExit: invalid figure kind 'brightline' in ACT_3` で止まる（実測済み）。
+ところが手前のゲート `set_figure_beats.py` は **renderer の TS union（38種・`FigureBeats.tsx` L62 に `brightline` がある）** を読むので
+`98 beat(s) valid` と言って通してしまう。**二つのゲートの kind 集合が違う。** v002 は `brightline` を使っていない。
+
+### 9-2. なぜ並べ直したか（仕組みの話）
+
+`build_case_film_generic.py::build_figures` は beats に時刻を与えない。**区間の中で等間隔に置く**：
+
+```
+start = lo + span * (i + 0.5) / N      # N = その区間の beat 数
+```
+
+つまり **配列の何番目にあるかが、そのまま画面に出る秒**になる。
+v001 は「語りの順番」では正しかったが「語りの**語数の位置**」では合っておらず、カードが自分の一節から外れていた。
+実測（台本 v002 の語位置で照合、区間内の割合）：
+
+| v001 の beat | カードが出る位置 | そこで語られていること |
+|---|---|---|
+| `ACT_4[3]` 引用「a high number and a cold shoulder」 | 0.206 | **本文では 0.669**。出る所は「証拠は矛盾していた」＝46ポイント先出し |
+| `ACT_2[14]` 下三分「TWO LINCHPIN PROVISIONS」 | 0.853 | 本文 0.647。出る所は n.5 の「no purchase」 |
+| `ACT_2[11]` 引用（冒頭の一文） | 0.676 | 本文 0.444。出る所は「Nobody is commanded」 |
+| `ACT_2[8]` 引用「seal of approval」 | 0.500 | 本文 0.356。出る所は議会の話 |
+| `ACT_3[15]` 引用「utter inability」 | 0.912 | 本文 0.830。しかも `ACT_3[14]`（本文 0.874）より**後ろ**に置かれていて順序が逆 |
+| `ACT_5[14]` 引用「Though generous」 | 0.906 | 本文 0.777。`ACT_5[12][13]`（0.820 / 0.878）より後ろで順序が逆 |
+| `ACT_5[9]` 下三分「TRUNK OF THE FAMILY TREE」 | 0.594 | 本文 0.740 |
+| `OP[1]` / `OP[2]` | — | 本文順は「NOBODY 0.448 → $700,000 0.655」。v001 は逆 |
+| `ACT_3[6]`→`ACT_3[7]` の間 | 0.382→0.441 | 本文 0.247→0.500 の**約250語（胸痛の証言・credibility choices・hypertensive diabetic）にカードが1枚も無かった** |
+| `ACT_2[5]`→`ACT_2[6]` の間 | — | 本文 0.204–0.250 の**脚注7＝移送認定は上訴審が審査しなかった**にカードが無かった（`forbidden_claims` の中心事実） |
+
+v002 は全 100 個を語数位置で置き直した。各幕の残差（カードが出る割合 − 本文の割合）は最大 0.051、
+ほとんどが 0.03 以下で、**すべてのカードが自分の一節の上に乗っている。**
+
+### 9-3. 直した文字列（照合先は `measurements/EP63_correa_RAW.md` のみ）
+
+| 場所 | v001（画面に焼かれる予定だった） | v002（RAW 逐語） |
+|---|---|---|
+| ACT_2 | 「**his** unconditional seal of approval」 | 「**the trial judge's** unconditional seal of approval」（n.10。`his` は原文に無い） |
+| ACT_2 | 「**this** appeal requires us to interpret…」 | 「**This** appeal requires us to interpret…」（判決の第一文。大文字が原文） |
+| ACT_4 | 「**Regardless** of motive, a complete failure…」 | 「**regardless** of motive, a complete failure…」（原文は `we think that regardless of motive` の途中。文頭化しない） |
+| ACT_4 | 出典＝「**The Hospital's argument**, as recorded in Correa」 | 出典＝「Correa (1st Cir. 1995) — **the Court's statement of the Hospital's point**」（この一文は裁判所自身の地の文で、病院の書面からの引用ではない） |
+| ACT_3 | 出典＝「**The Sixth Circuit**, quoted in Correa」 | 出典＝「**Cleland v. Bronson Health Care Group (6th Cir. 1990)**, quoted in Correa」（事件名まで書く） |
+| ACT_1 casetimeline | 「**~2:00 pm** 二十四番が呼ばれる」 | 「**~2:15 pm**」（**CR-11 / TL-06**＝RAW「At that very moment (roughly 2:15 p.m.)」） |
+
+**逐語照合の注意（次にやる人へ）:** この RAW は
+①ページ番号が文中に落ちている（`do not 18 always appear`）
+②脚注番号が語尾にくっついている（`card.2 After`）
+③**脚注の本文が文の途中に丸ごと割り込む**（`EMTALA.6 This` … 脚注6全文 … `argument has the shrill ring of desperation.`）
+④冒頭に OCR 重複（`this appeal requires us to selya, circuit judge. interpret,`）
+⑤引用符が語にくっつく（`` `Appropriate' ``）。
+**②〜⑤を正規化しないと、逐語の引用が「不一致」に見える。** 実際 `shrill ring of desperation` は③、
+`wonderful weasel words` は⑤で誤検出した。100個の照合スクリプトは
+`E:\UserTemp\...\scratchpad\ep63_beats_verify.py` にある（4通りの正規化版に当てる）。
+
+### 9-4. 事実として台本と合っていなかった図版（引用ではないもの）
+
+| 場所 | v001 | 直した理由 |
+|---|---|---|
+| HOOK 下三分 | 「PUERTO RICO / 6 September 1991」 | HOOK の20語はプエルトリコも日付も**言わない**。フックで本編の事実を先出ししない → ACT_1 の氏名下三分に統合 |
+| HOOK kinetic | 「NOBODY / TURNED HER AWAY.」 | 同上。この文は **OP** で語られ、`OP[1]` と丸被り → 削除 |
+| HOOK kinetic | 「TWO HOURS. / **NO PHYSICIAN SAW HER.**」 | 後半は ACT_1 の事実（本文 0.554）。フックは「二時間後に立って出た」としか言わない → 「TWO HOURS LATER, / SHE GOT UP AND LEFT.」 |
+| ACT_1 下三分 | 「Sixty-five. A widow. **Hypertensive, diabetic.**」 | 高血圧・糖尿は **ACT_3 の 0.430** で初めて出る（`Which Carmen Gonzalez was.`）。ACT_1 冒頭で先出しすると ACT_3 の反転が死ぬ → 「Sixty-five. A widow. Inside the emergency room no later than one o'clock.」 |
+| ACT_4 kinetic | 「NO REFUSAL REQUIRED. / NO WORDS REQUIRED.」 | ACT_4 の台本にこの文は無い（ENDING 0.90–0.97 の言い回し）→ 削除。代わりに台本 L294 のままの「ABSENT ANY / EXPLANATION.」 |
+| ACT_4 kinetic | 「CONSTRUCTIVE DUMPING / IS THE HOSPITAL THAT NEVER / TURNS ANYBODY AWAY.」 | 同上。映画自身の言い換えで、ACT_4 のどこにも無い → 削除（ENDING の「no villain」カードが担う） |
+| ENDING 下三分 | 「THE IMPROPER-TRANSFER FINDING / Never reviewed on appeal. **Footnote seven.**」 | 「脚注七」は **ACT_2** でしか語られない。`PD_SCREENPLAY_STANDARD §12`「ENDING に新事実を出さない」→ ENDING からは落とし、**ACT_2 に専用カードを新設**（v001 には無かった） |
+| ACT_2 | numberticker 7（原告数）／numberticker 700,000 | 7 は act title「SEVEN PLAINTIFFS」と重複、700,000 は `OP[2]` と重複し bar が内訳を出す → 語数位置に空きが無いので削除（事実としては **PF-02 / PR-12** で支持されている） |
+
+### 9-5. 仕掛けの副作用（v001 が踏んでいた罠）
+
+`build_figures` は最後に **`figures[0]` と `figures[-1]` を AI開示の下三分で上書きする**：
+
+```python
+figures[0]  = {**figures[0],  **disclosure}
+figures[-1] = {**figures[-1], **disclosure}
+```
+
+つまり映画の**最初の1枚と最後の1枚は、何を書いても開示カードになる**。
+v001 は `HOOK[0]`（PUERTO RICO 下三分）と `ENDING[7]`（**numberticker 47「Never called」＝この映画の決め台詞**）を
+そこに置いていたので、**どちらも画面に出ないはずだった**。
+v002 は両端に開示カードを明示的に置き、47 の払いは**ナレーションと motif 8（`C001` 再使用・`【OST: NUMBER FORTY-SEVEN】`）に任せる**。
+図版で払おうとしても構造上必ず消える。
+
+### 9-6. 数字の裏づけ（台帳の行）
+
+| beat | 数 | 根拠 |
+|---|---|---|
+| HOOK / ACT_1 numberticker | 47 | **CR-09**（RAW「assigned the patient a number (forty-seven)」） |
+| OP numberticker | $700,000 | **PR-12**／判決 ¶1「we affirm a $700,000 jury verdict」 |
+| ACT_1 stat | 24 | **CR-11 / TL-06** |
+| ACT_1 stat | 0（診た医師） | **CR-14**（「never seen by a physician at HSF」） |
+| ACT_1 casetimeline | 1:00 / ~2:15 / 3:00–3:30 / ~4:30 | **TL-02 / TL-06 / TL-08 / TL-11** |
+| ACT_2 bar | 200,000 / 500,000 | **PR-10 / PR-11** |
+| ACT_2 stat | 8 | **PR-15**（「assigns error in no fewer than eight iterations」） |
+| ACT_2 numberticker | $50,000 | **EM-19**（§ 1395dd(d)(1)(A)） |
+| ACT_3 stat | 99% | **HA-04**（出典なしの数字であることをラベルに明記） |
+| ACT_3 stat | 0（記録） | **AS-11 / CR-14** |
+| ACT_4 stat | 0（追い返した人） | **CR-15 / Q-01** |
+| ACT_4 compbars | 47 / 24 | **CR-09 / CR-11** |
+| ACT_5 stat | 5（か月） | **PF-06** |
+| ACT_5 numberticker | 5（年） | **PF-07** |
+| ENDING compbars | 4 / 0 | **AS-10**（四つの規則）＋ **AS-11 / CR-14**（記録ゼロ） |
+
+**台帳で支えられないので落とした数字はゼロ。** 落とした3件（原告7・総額700,000・ENDING の 24 と 47）は
+いずれも支持されているが、重複か、両端の罠か、語数位置に枠が無かったための削除である。
+
+### 9-7. 台本側に残っている欠陥（beats ではないので直していない）
+
+`script.en.v002.md` L185:「**The court's reply runs nine words.** This argument has the shrill ring of desperation.」
+— この文は **8語**（This / argument / has / the / shrill / ring / of / desperation）。
+`nine` は誤り。v002 の beats はこの数を一切主張していない（引用そのものだけを出す）が、**ナレーションは直す必要がある。**
+なお L274「The court's answer is four words. This contention is spurious.」は **4語で正しい**。
 ---
 
 *v001 · 2026-08-04 · 設計スレッドから。**この文書に書いていない数字は、私が測っていない数字。***

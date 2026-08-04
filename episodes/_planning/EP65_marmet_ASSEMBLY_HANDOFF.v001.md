@@ -19,7 +19,7 @@
 | 尺の3点測定 | ⚠ | **slow 32.2分 ／ median 29.6分 ／ fast 22.2分**（fast = 実測 237.4 wpm）→ **§3-1** |
 | 事実台帳 `FACTS_LEDGER.v001.md` | ✅ | 271行 ／ 主張ID `MB-01`–`MB-53`（53件）／ VERBATIM 表記 38 ／ 隔離 ⛔ 15 ／ 研究指示 ○ 22 |
 | FILM_BIBLE | ✅ | `EP65_marmet_FILM_BIBLE.v001.md`（50,427 bytes）支配思想・モチーフ7状態・拒否事項 |
-| figure beats | ✅ **97個** | HOOK 3 ／ OP 4 ／ ACT_1 16 ／ ACT_2 16 ／ ACT_3 17 ／ ACT_4 16 ／ ACT_5 17 ／ ENDING 8。**5幕すべて契約帯 13–17 内** |
+| figure beats | ✅ **102個（正典は `EP65_marmet_beats.v002.json`）** | HOOK 3 ／ OP 4 ／ ACT_1 17 ／ ACT_2 17 ／ ACT_3 17 ／ ACT_4 17 ／ ACT_5 17 ／ ENDING 10。**5幕すべて契約帯 13–17 内**。**v001（97個）は使わない — 理由と全変更点は §9** |
 | 発注書 `CODEX_BATCH_A.v001.md` | ✅ | **224枚 `R001`–`R224`・欠番0・重複0**（定義行を機械カウント） |
 | `mandatory_stills` | ✅ 整合 | **220件**＝224 − サムネ4枚（`R217` `R218` `R219` `R224`）。**220件すべてが発注書に実在**（欠落0） |
 | 画像（生成物） | ❌ **0枚** | `H:\pd-media\assets\ai\marmet\` は**ディレクトリごと存在しない** |
@@ -50,7 +50,8 @@ episodes\_planning\EP65_marmet_FILM_BIBLE.v001.md           ✅ なぜこの順�
 episodes\_planning\EP65_marmet_FACTS_LEDGER.v001.md         ✅ 事実の出所。✓/VERBATIM 以外は使用不可
 episodes\_planning\measurements\EP65_marmet_RAW.md          ✅ 判決文全文（CourtListener cluster 623142）
 episodes\_planning\measurements\EP65_brown_remand_RAW.md    ✅ Brown II 全文（差戻し後・引用照合先）
-episodes\_planning\EP65_marmet_beats.v001.json              ✅ 演出データ97個
+episodes\_planning\EP65_marmet_beats.v002.json              ✅ 演出データ102個（正典・§9）
+episodes\_planning\EP65_marmet_beats.v001.json              ⛔ 残置（使わない・§9）
 ```
 
 **画像**
@@ -131,9 +132,10 @@ py -3.11 scripts\build_case_film_generic.py --config episodes\_planning\EP65_mar
 ### ④ figure beats を書き込む
 
 ```
-.venv\Scripts\python.exe scripts\set_figure_beats.py --config <filmconfig> --beats episodes\_planning\EP65_marmet_beats.v001.json --min-per-act 13
+.venv\Scripts\python.exe scripts\set_figure_beats.py --config <filmconfig> --beats episodes\_planning\EP65_marmet_beats.v002.json --min-per-act 13
 ```
-97個・各幕16–17。**config ができるまで書き込めないだけ**で、データ側は揃っている。
+**必ず v002 を渡すこと。** 102個・各幕17。`--dry-run` exit 0 実測済み。**config ができるまで書き込めないだけ**で、データ側は揃っている。
+`v001` を渡すと `set_figure_beats.py` は通るが `build_case_film_generic.py` が `banned figure kind dochighlight` で即死する（§9-1）。
 
 ### ⑤ Remotion 合成を登録
 
@@ -405,6 +407,158 @@ PEOPLE 見出し配下                       → R207..R216（10枚・people_pla
 ```
 
 **受領書が緑になるまで予約も投稿もしない**（`.claude/rules/19-ship-gate.md`）。
+
+---
+
+
+---
+
+## 9. figure beats を作り直した（2026-08-05）— v001 は使わない
+
+**正典: `episodes/_planning/EP65_marmet_beats.v002.json`（102個 / HOOK 3・OP 4・ACT_1 17・ACT_2 17・ACT_3 17・ACT_4 17・ACT_5 17・ENDING 10）。**
+契約 `figure_beats_per_act` 13–17 を全幕で満たす。`set_figure_beats.py --min-per-act 13 --dry-run` exit 0（102 beat valid）。
+**`beats.v001.json` は上書きせず残す**（`.claude/rules/05` `12`）。**組み立てでは参照しない。**
+
+v001 は **12:21 に書かれ、台本 `script.en.v002.md` は 22:33 に大改修された**。v001 はその改修前の台本に合わせてあり、
+かつ**語りの順番**では正しいが**語数の位置**では合っていなかった。
+
+### 9-1. v001 はそもそもレンダーまで到達しない（仕組みの話・最重要）
+
+`set_figure_beats.py` は `remotion/src/components/FigureBeats.tsx` の union（38種）で検証する。
+`build_case_film_generic.py` が実際に受け付けるのは `VALID_KINDS`（18種）で、**そこには `dochighlight` も `brightline` も無い**。
+`dochighlight` は `BANNED_FIGURE_KINDS`（「レンダリングのバグに見える」とオーナーが3回指摘）。
+
+実測（この2つを同じ v001 に当てた出力）:
+
+```
+set_figure_beats.py --beats ...v001.json --dry-run   → exit 0 「97 beat(s) valid」
+build_case_film_generic の VALID_KINDS / BANNED       → 7件 REJECT
+    HOOK[0] dochighlight ・ ACT_1[13] dochighlight ・ ACT_3[8] dochighlight
+    ACT_4[9] dochighlight ・ ACT_4[10] brightline ・ ACT_5[12] dochighlight ・ ENDING[3] dochighlight
+```
+
+つまり **v001 は「検証済み」と記録されているが、検証したのは間違ったツールで、
+本番のビルダーは1本目の beat で `banned figure kind dochighlight` を投げて止まる。**
+v002 は 18種の `VALID_KINDS` だけを使う（`dochighlight`→`quote`/`lowerthird` に置換、`brightline` は削除）。
+
+### 9-2. 並べ直した理由（配列の添字＝画面に出る秒）
+
+`build_case_film_generic.py::build_figures` は beats に時刻を与えない。**区間の中で等間隔に置く**：
+
+```
+start = lo + span * (i + 0.5) / N      # N = その区間の beat 数
+```
+
+**配列の何番目にあるかが、そのまま画面に出る秒**になる。v002 は全102個を
+台本 v002 のナレーション語位置（`ACT_1` 838語 / `ACT_2` 1,033 / `ACT_3` 941 / `ACT_4` 811 / `ACT_5` 1,070 / `ENDING` 368）で置き直した。
+
+v001 の主なズレ（実測。左が v001 の並び、右が**実際に出る語位置とそこで語られていること**）:
+
+| v001 の beat | 実際に出る位置 | そこで語られていること |
+|---|---|---|
+| ACT_1[4] `25 AUGUST 2009` | w235/838 | **9月29日**のテイラー却下の段落 |
+| ACT_1[6] `29 SEPTEMBER 2009` | w340/838 | **2010年6月2日**のハリソン郡・付託 |
+| ACT_1[7] `2 JUNE 2010` | w392/838 | 「二文しかない」の段落 |
+| ACT_1[11] stat「二文」 | w602/838 | ブラウンとテイラーの契約が同一という段落 |
+| ACT_2[4] Syl.Pt.8 の引用 | w290/1033 | 「The load is on one word. Prior.」 |
+| ACT_2[8] `PRIOR` の kinetic | w548/1033 | **admission day**（入所日の記述） |
+| ACT_2[10] `ADMISSION DAY` | w677/1033 | unconscionability の定義 |
+| ACT_3[3] `21 FEBRUARY 2012` | w193/941 | 「Commercial entities. Nationwide enforcement.」 |
+| ACT_3[10] Concepcion 引用 | w581/941 | 「Keep the second half.」 |
+| ACT_4[8] `On remand…` 引用 | w430/811 | **処分**（certiorari granted / vacated） |
+| ACT_4[13] `PER CURIAM` | w684/811 | **2012年4月3日**の再弁論命令 |
+| ACT_5[2] overrule の引用 | w157/1070 | 「他の部分には触れていない」の段落 |
+| ACT_5[8] doctrine の引用 | w535/1070 | substantive unconscionability の段落 |
+| ACT_5[14] `at sea` 引用 | w912/1070 | AAA/NAF が受け付けなくなった話 |
+
+v002 は全区間で実測し直した。残る誤差は2件だけで、どちらも**同じ段落の直前後3秒以内**である：
+`ACT_1[10]`（ウィレット）は当該文の9語後、`ACT_1[11]`（「同じ四語」）は当該文の4語後。
+
+### 9-3. 直した文字列（照合先は2つの RAW のみ・36本すべて逐語一致を機械確認）
+
+`ep65v2_verify.py` / `ep65v2_strict.py`（句読点まで見る版）で **36本の quote 全部が MARMET か BROWNII の逐語**であることを確認した。
+正規化したのは OCR 誤り（`uneonscionability` `Brown 7` `pui'poses`）・**行末ハイフン分断**（`unenforce-able`）・
+**行内ページ番号**（`*388`）・引用符の字形だけで、語は1語も動かしていない。
+
+| 場所 | v001（画面に焼かれる予定だった） | v002（RAW 逐語） |
+|---|---|---|
+| ACT_3 | "State and federal courts must enforce the Federal Arbitration Act **with respect to**…" | "…the Federal Arbitration Act **(FAA), 9 U. S. C. §1 et seq.,** with respect to…"（**印なしで法文の引用符号を落としていた**） |
+| ACT_3 | "…the analysis is straightforward: **the** conflicting rule is displaced by the FAA." | "…straightforward: **The** conflicting rule…"（原文は大文字。冒頭も原文どおり `[w]hen`） |
+| ACT_2 | "**A** state statute, rule, or common-law doctrine **which** targets… ~~9 U.S.C. § 2~~ … is preempted." | "**[a]** state statute, rule, or common-law doctrine**,** which targets…of the Federal Arbitration Act **...** and is preempted."（原文は `doctrine` の後にコンマ、`and which` の前に無し。落とした `9 U.S.C. § 2,` は `...` で明示） |
+| ACT_2 | "Finding that there is an adhesion contract is the beginning point for analysis, not the end of it." 出典 **"Brown I (2011)"** | "[f]inding …not the end of it**; what courts aim at doing is distinguishing good adhesion contracts which should be enforced from bad adhesion contracts which should not.**" 出典 **State ex rel. Dunlap v. Berger (2002)**（Brown II n. 36）。**Brown I ではない別事件だった** |
+| ACT_2 | "It may be disingenuous…accepted an arbitration clause in the contract." 出典 **"Brown I (2011)"** | 文末まで復元（"…**and understood the clause was intended to eliminate their access to the courts if the nursing home negligently injured or killed the patient.**"）。出典 **Brown II (2012)・州裁自身の文**（RAW で引用符も脚注番号も付いていない地の文） |
+| ACT_4 | "It is unclear, however, …influenced by the invalid, categorical rule discussed above." | "…discussed above**, the rule against predispute arbitration agreements.**"（同格節を無印で落としていた） |
+| ACT_4 | "On remand,…are unenforceable under state common law principles that are not specific to arbitration." | "…not specific to arbitration **and pre-empted by the FAA.**"（この末尾が次の一行「最後の節は section 2 の savings clause」の指示先。無印で落ちていた） |
+| ACT_5 | "Substantive unconscionability may manifest itself…" 出典 "Brown II (2012)" | 差し替え。内側の引用は **Mercuro v. Superior Court**（n. 38）で、Brown II 自身の言葉ではない |
+| ACT_5 | "Agreements to arbitrate must contain at least a modicum of bilaterality…" 出典 "Brown II (2012)" | 出典 **Abramson v. Juniper Networks**（Brown II n. 40）。原文の内引用符 `'a modicum of bilaterality'` も復元 |
+| ACT_1 | （逐語カードなし） | **MB-23 を新規に立てた**："The contracts included a clause requiring the parties to arbitrate all disputes, other than claims to collect late payments owed by the patient."（映画の中心文が v001 では一度も画面に出ていなかった） |
+
+### 9-4. 事実として間違っていた図版（引用ではないもの）
+
+| 場所 | v001 | 直した理由 |
+|---|---|---|
+| HOOK kinetic | "A FAMILY MEMBER SIGNED / ONE LINE." | HOOK の25語は**署名の話をしていない**（「死の紛争は仲裁人へ／未払いの紛争は法廷へ」だけ）。フックで本編の事実を先出ししない → HOOK の2文そのものに置換 |
+| HOOK kinetic | "EVERYTHING WENT TO ARBITRATION / OTHER THAN…" | 同上。台本 L20 の `【OST: …】` は **figure beat ではない**（OST の実装は組み立て側の判断）→ beats からは外した |
+| ACT_2 compbars | 「desk の片側は毎営業日／もう片側は**一度**」= **100 対 1** | **100 に台帳の裏づけが無い**。しかも出典は "only a few times in life"（一度ではない）→ **削除**し、同じ位置に Brown II の逐語2文を置いた |
+| ACT_2 kinetic | "DISINGENUOUS. / **WRITTEN BEFORE / THE ARGUMENT ARRIVED.**" | この文は **Brown II（2012）＝差戻し後**に書かれている。「議論が来る前に書かれていた」は**時系列が逆**で、台本のどこにも無い → 削除 |
+| ACT_1 arrow | "…all travelling to **Charleston**" | 台本 L58 は "all travelling to **the Supreme Court of Appeals of West Virginia**"。Charleston は2つの RAW のどちらにも無い → 台本の語に統一 |
+| ACT_4 numberticker | "**Pages in Part Two** = 1" | 台帳に行が無く、RAW では Part II は **4ページ目の下半分から5ページ目**にまたがる → **削除** |
+| ACT_5 casetimeline_c | `year` 欄に `35494` `35546` `35636`（**ドケット番号が年に見える**） | `No. 35494` … と前置し、年と読めないようにした（文字列自体は RAW の処分行どおり） |
+| ACT_1 compbars | 1文まるごとをラベルにした 1 対 0 の棒 | 「Brown/Taylor の条項に書かれた例外＝1／Marchio の条項＝0」相当の内容は ACT_1 の逐語カード2本（MB-23 / MB-21）が担うので削除 |
+
+### 9-5. `PD_SCREENPLAY_STANDARD.v001.md` §12（ENDING）の点検
+
+**違反なし。** ENDING（27:05–29:23 = 全体の92.2%以降）の10個は、**すべて既出の事実の再フレーム**である：
+フォームと唯一の除外（ACT_1）・§2 と「覆われた」こと（ACT_3）・「有効とは言っていない」と署名権限の問題（ACT_4）・州裁が残したもの（ACT_5）。
+**新事実ゼロ。年表・出来事の要約は1つも置いていない**（EP62 で削除した `casetimeline_c` に相当するものは、そもそも v001 の ENDING にも無かった）。
+`casetimeline_c` は ACT_3（先例4件）と ACT_5（処分3件）にだけ残る。
+
+### 9-6. 仕掛けの副作用（v001 が踏んでいた罠）
+
+`build_figures` は最後に **`figures[0]` と `figures[-1]` を AI開示の下三分で上書きする**。
+つまり映画の**最初の1枚と最後の1枚は、何を書いても開示カードになる**。
+
+- v001 の `figures[0]` = `HOOK[0]` の `dochighlight` → どのみち出ない（かつ banned kind）。
+- v001 の `figures[-1]` = `ENDING[7]` の決め台詞 **"OTHER THAN."** → **画面に出ないはずだった**。
+  台本 L374 の `【OST: OTHER THAN】` は figure beat ではないので、そちらをどう実装するかは組み立て側の判断。
+
+v002 は両端に開示カードを**明示的に**置き、決め台詞の枠を無駄にしていない。
+
+### 9-7. 数字の裏づけ
+
+| beat | 数 | 根拠 |
+|---|---|---|
+| OP numberticker | 5 | 台帳「支配的な注意書き」＝five-page per curiam ＋ RAW のページ見出し 1–5 |
+| ACT_1 stat | 2 | **MB-07 ＋ MB-08**（三家族について語る文はこの2つだけ） |
+| ACT_1 numberticker | 1925 | **台帳に行は無い。** Brown II RAW「the congressional history at the time of its adoption in 1925」／台本 L96・L172 |
+| ACT_1 compbars | 3 / 2 / 1 | **MB-05**（Brown・Taylor・Marchio）＋ **MB-02 / MB-03**（Marmet と Clarksburg の2施設）＋ 州は West Virginia のみ（MB-04） |
+| ACT_4 compbars | 2 / 1 | **MB-45**（Brown・Taylor は二重に否定）＋ **MB-46**（Marchio は public policy 以外を検討されていない） |
+| ACT_4 compbars | 0 / 1 | **MB-43**（categorical rule は不可）＋ **MB-37**（savings clause は残る） |
+| ACT_4 numberticker | 7 | Brown II RAW ヘッダ「Submitted June 6, 2012 … decided June 13, 2012」／台本 L272 |
+| ENDING compbars | 1 / 0 | **MB-51**（どの主権の法が及ぶかは決まった）＋ **MB-52 / MB-53**（公正かどうかは決まっていない） |
+
+**裏づけが無くて落とした数字は1件**：ACT_4 の `Pages in Part Two = 1`（9-4）。
+**100 対 1 の compbars も落とした**（9-4）。
+
+### 9-8. UNVERIFIABLE（欠陥ではない・「検証済み」でもない）
+
+**Brown I（*Brown v. Genesis Healthcare Corp.*, 228 W. Va. 646 (2011)）の本文はこのリポジトリに無い。**
+v002 が Brown I に帰属させている引用は **4本**あり、いずれも **Brown II が Brown I として引用している文字列を Brown II の中で照合した**ものである
+（`ACT_2[1]` Syl.Pt.8 / n.12・`ACT_2[11]` Syl.Pt.12 / n.22・`ACT_2[13]` Syl.Pt.18 / n.35・`ACT_3[1]` n.14・`ACT_5[7]` Syl.Pt.20 / n.32 の5本）。
+**Brown I の原文に当たった照合ではない。** Brown I を入手したら再照合すること。
+
+`ACT_2[12]`（"the courts of this State are not hostile to arbitration…"）は Brown II の中に逐語で存在するが、
+**その脚注19が指すのは Richmond American Homes v. Sanders (2011) であって Brown I ではない**。
+どちらの court の文なのか OCR された脚注からは確定できないため、出典表記は
+「The Supreme Court of Appeals of West Virginia, quoted in Brown II (2012), n. 19」＝**確実に言えることだけ**にしてある。
+
+### 9-9. 検算（このスレッドで実行した実出力）
+
+```
+.venv\Scripts\python.exe scripts\set_figure_beats.py --config <any-json> \
+    --beats episodes\_planning\EP65_marmet_beats.v002.json --min-per-act 13 --dry-run
+→ [beats] 102 beat(s) valid: HOOK:3, OP:4, ACT_1:17, ACT_2:17, ACT_3:17, ACT_4:17, ACT_5:17, ENDING:10
+```
 
 ---
 
