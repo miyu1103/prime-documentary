@@ -5,6 +5,7 @@ import {
   Easing,
   Img,
   OffthreadVideo,
+  Sequence,
   Series,
   Video,
   interpolate,
@@ -112,6 +113,22 @@ export type ShortBeat = {
 
 export type ShortCaption = {word: string; startSec: number; endSec: number};
 
+/** One mid-roll kinetic-typography hit, built in After Effects and composited here.
+ *
+ *  Remotion does the depth moves and the cutting; what it does not do cheaply is per-character
+ *  typography with real motion blur, which is the thing the owner keeps describing as missing.
+ *  The overlay is rendered once as a VP9 WebM carrying a real alpha channel
+ *  (scripts/ae/render_beats.sh) and dropped in here, so no Short needs hand work in AE.
+ *
+ *  `atSec`/`durSec` must sit INSIDE the cut they land on. A hit that outlives its cut leaves the
+ *  rule and the scrim hanging over an unrelated shot — measured on the first short118 pass. */
+export type KineticBeat = {
+  src: string; // staticFile-relative, e.g. 'kinetic/short118_a.webm'
+  atSec: number;
+  durSec: number;
+  phrase?: string; // what it says, for the acceptance report — not read at render time
+};
+
 export type ShortData = {
   shortId: string; // 'short08'
   episodeId: string; // 'PD-2026-008-carpenter'
@@ -139,6 +156,9 @@ export type ShortData = {
    *  without a visible seam - the destination still holds for everything before the fade. */
   ctaFadeOutSec?: number;
   beats: ShortBeat[];
+  /** Optional. Omit and the Short renders byte-identical to before, so already-scheduled Shorts
+   *  do not move. One or two per Short — more reads as decoration rather than emphasis. */
+  kineticBeats?: KineticBeat[];
 };
 
 export type ShortPlatform = 'yt' | 'tiktok';
@@ -964,6 +984,31 @@ const CaptionLayer: React.FC<{captions: ShortCaption[] | null; method?: boolean;
   );
 };
 
+/** Composites the After Effects overlays over the cut, under the caption band.
+ *
+ *  `transparent` is not optional: without it Remotion's frame extractor decodes the WebM without
+ *  its alpha plane and the overlay arrives as type on a black card that hides the picture. The
+ *  alpha itself is verified upstream by render_beats.sh (alpha_mode=1). */
+const KineticBeatLayer: React.FC<{beats?: KineticBeat[]}> = ({beats}) => {
+  const {fps} = useVideoConfig();
+  if (!beats || beats.length === 0) return null;
+  return (
+    <>
+      {beats.map((b, i) => (
+        <Sequence
+          key={`${b.src}-${i}`}
+          from={Math.round(b.atSec * fps)}
+          durationInFrames={Math.max(1, Math.round(b.durSec * fps))}
+        >
+          <AbsoluteFill style={{pointerEvents: 'none'}}>
+            <OffthreadVideo src={staticFile(b.src)} transparent muted style={{width: '100%', height: '100%'}} />
+          </AbsoluteFill>
+        </Sequence>
+      ))}
+    </>
+  );
+};
+
 export const Short: React.FC<{data: ShortData; platform: ShortPlatform; depth?: boolean; method?: boolean}> = ({
   data,
   platform,
@@ -989,6 +1034,9 @@ export const Short: React.FC<{data: ShortData; platform: ShortPlatform; depth?: 
         ))}
       </Series>
       {method ? <PersonaMark /> : null}
+      {/* Under the captions on purpose: the type lives at y420–1050 and the band at ~y1305, but if
+          a Short ever moves its captions up, the spoken line must still win. */}
+      <KineticBeatLayer beats={data.kineticBeats} />
       <CaptionLayer captions={captions} method={method} topOverride={data.captionTop} />
       {data.narrationSrc ? <Audio src={staticFile(data.narrationSrc)} /> : null}
       {data.bgmSrc ? <Audio src={staticFile(data.bgmSrc)} volume={0.16} /> : null}

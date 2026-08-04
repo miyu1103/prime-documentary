@@ -192,6 +192,21 @@ def main() -> int:
                     warns.append(f"{tag} {lines[0].get('id','L1')}: hook is {n_hook} words "
                                  f"(>{HOOK_WARN_WORDS}) - lands late, but not a defect")
 
+            # Mid-roll kinetic type (approved 2026-08-04). A warning, not a failure: the Shorts
+            # already shipped without it and must not turn red retroactively. But a new design
+            # with none of it is the "紙芝居" complaint waiting to happen, so it says so.
+            kb = s.get("kinetic_beats") or []
+            if not kb:
+                warns.append(f"{tag}: no kinetic_beats - no mid-roll type on a number or a turn")
+            elif len(kb) > 2:
+                fails.append(f"{tag}: {len(kb)} kinetic beats, the approved density is one or two")
+            else:
+                spoken = {l.get("id"): (l.get("text") or "").lower() for l in lines}
+                for b in kb:
+                    if b.get("anchor", "").lower() not in spoken.get(b.get("line"), ""):
+                        fails.append(f"{tag}: kinetic anchor {b.get('anchor')!r} is not in "
+                                     f"{b.get('line')} - the type would not match the voice")
+
             words = sum(len((l.get("text") or "").split()) for l in lines)
             if not (WORD_BAND[0] <= words <= WORD_BAND[1]):
                 fails.append(f"{tag}: {words} spoken words, outside "

@@ -32,6 +32,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DESIGNS = ROOT / "episodes" / "_planning" / "short_designs"
 PUB = ROOT / "remotion" / "public" / "shorts"
 DATA = ROOT / "remotion" / "src" / "data"
+JOBS = ROOT / "runs" / "ae_jobs"          # After Effects job lists, one per Short
 
 
 def short_title(t: str, cap: int = 38) -> str:
@@ -81,6 +82,88 @@ def stage_footage(sid: str, plates: list[dict], force: bool) -> list[dict]:
                        "src_path": str(src)})
     (fx / "RIGHTS.json").write_text(json.dumps(rights, ensure_ascii=False, indent=2), encoding="utf-8")
     return rights
+
+
+def plan_kinetic(sid: str, short: dict, cut_bounds: dict[str, list[tuple[float, float]]]):
+    """Turn the design's `kinetic_beats` into a ShortData field plus an After Effects job list.
+
+    A beat names the line and the 1-based cut it lands on; this works out the absolute seconds and
+    refuses to let the overlay outlive the cut. That constraint is the whole point: on short118's
+    first pass the type left correctly but the rule and the scrim carried on over the next shot,
+    which reads as a graphic someone forgot to take off rather than an emphasis.
+
+    Owner approved the look on 2026-08-04. One or two beats per Short - more reads as decoration.
+    """
+    beats = short.get("kinetic_beats") or []
+    if not beats:
+        return "", []
+    if len(beats) > 2:
+        sys.exit(f"{sid}: {len(beats)} kinetic beats - the approved density is one or two")
+
+    lines = {l["id"]: l["text"] for l in short.get("lines", [])}
+    rows, jobs = [], []
+    for b in beats:
+        lid, sfx = b["line"], b["suffix"]
+        cuts = cut_bounds.get(lid)
+        if not cuts:
+            sys.exit(f"{sid}: kinetic beat on {lid}, which has no cuts")
+        # Where in the line the beat lands. `anchor` is the verbatim phrase the voice is saying at
+        # that moment; the cut is derived from its word position, so the type appears WITH the
+        # words instead of near them. A hand-picked cut number drifts the moment a line is re-timed.
+        if "anchor" in b:
+            text = lines.get(lid, "")
+            pos = text.lower().find(b["anchor"].lower())
+            if pos < 0:
+                sys.exit(f"{sid}: anchor {b['anchor']!r} is not in {lid}: {text!r}")
+            frac = len(text[:pos].split()) / max(1, len(text.split()))
+            ci = min(len(cuts) - 1, int(frac * len(cuts)))
+        else:
+            ci = int(b.get("cut", 1)) - 1
+        span = int(b.get("span_cuts", 1))
+        span = min(span, len(cuts) - ci)
+        # If the anchor lands late in its line there may be under a second left, and a 1.2 s flash
+        # is worse than arriving a beat early: the type animates in over ~0.5 s anyway. Extend
+        # BACKWARDS into earlier cuts of the same line rather than truncating.
+        want_sec = float(b.get("seconds", 2.2))
+        while ci > 0 and (cuts[ci + span - 1][1] - cuts[ci][0] - 0.10) < want_sec:
+            ci -= 1
+            span += 1
+        if ci < 0 or ci + span > len(cuts):
+            sys.exit(f"{sid}: kinetic beat wants cuts {ci + 1}..{ci + span} of {lid}, "
+                     f"which has {len(cuts)}")
+        start, end = cuts[ci][0], cuts[ci + span - 1][1]
+        at = round(start + 0.05, 2)
+        room = round(end - at - 0.05, 2)
+        want = float(b.get("seconds", 2.2))
+        dur = round(min(want, room), 2)
+        if dur < want - 0.01:
+            print(f"  {sid} {sfx}: {want:.2f}s trimmed to {dur:.2f}s to stay inside "
+                  f"{lid} cut {ci + 1}")
+        if dur < 1.2:
+            sys.exit(f"{sid}: {lid} cut {ci + 1} leaves only {dur:.2f}s - too short to read")
+
+        phrase = b.get("big") and f"{b['big']} / {b.get('label', '')}".strip(" /") or \
+            " ".join(b.get("words") or [])
+        # The words must be in the narration this beat sits on. A number the voice does not say is
+        # the failure mode this check exists for.
+        spoken = lines.get(lid, "").lower()
+        for tok in re.findall(r"[A-Za-z0-9$,.]+", phrase):
+            t = tok.strip("$,.").lower()
+            if len(t) > 2 and t not in spoken.replace(",", ""):
+                print(f"  WARNING {sid} {sfx}: '{tok}' is not in the narration for {lid}")
+        rows.append(f"    {{src: 'shorts/{sid}/{sid}_kin_{sfx}.webm', atSec: {at}, "
+                    f"durSec: {dur}, phrase: {json.dumps(phrase)}}},")
+        job = {"id": f"{sid}_{sfx}", "style": b.get("style", "number"), "seconds": dur}
+        for k in ("big", "bigSize", "label", "labelSize", "words"):
+            if k in b:
+                job[k] = b[k]
+        jobs.append(job)
+
+    src = ("  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/%s.json) and installed\n"
+           "  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken\n"
+           "  // verbatim from the narration line each beat sits on.\n"
+           "  kineticBeats: [\n%s\n  ],\n") % (sid, "\n".join(rows))
+    return src, jobs
 
 
 def emit_ts(sid: str, ep: str, design: dict, short: dict) -> Path:
@@ -206,7 +289,7 @@ export const {up}: ShortData = {{
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
-}};
+__KINETIC__}};
 '''
     # Refuse to emit a cut with a hole in it. Twice now a line window has ended up partly or
     # wholly uncovered and the render went black under the captions; both times it was caught by
@@ -218,6 +301,7 @@ export const {up}: ShortData = {{
         depth += (tim[k] == "[") - (tim[k] == "]")
         if depth == 0:
             wins = json.loads(tim[j:k + 1]); break
+    cut_bounds: dict[str, list[tuple[float, float]]] = {}
     for wi, w in enumerate(wins):
         a0 = w["start"]; a1 = wins[wi + 1]["start"] if wi + 1 < len(wins) else total
         mine = [c for c in cuts if f"line: '{w['id']}'" in c]
@@ -231,6 +315,24 @@ export const {up}: ShortData = {{
         covered = cta * n_cta + rest * (len(mine) - n_cta)
         if abs(covered - span) > 0.02:
             sys.exit(f"{sid}: line {w['id']} covers {covered:.2f}s of a {span:.2f}s window")
+        # Absolute [start, end] of every cut on this line, in the order buildBeats lays them out.
+        # The kinetic overlays are placed against these: an overlay that outlives its cut leaves
+        # the rule and the scrim hanging over an unrelated shot (measured on short118's first pass).
+        t = a0
+        for c in mine:
+            d = cta if "isCta: true" in c else rest
+            cut_bounds.setdefault(w["id"], []).append((t, t + d))
+            t += d
+
+    kinetic_ts, jobs = plan_kinetic(sid, short, cut_bounds)
+    ts = ts.replace("__KINETIC__", kinetic_ts)
+    if jobs:
+        JOBS.mkdir(parents=True, exist_ok=True)
+        (JOBS / f"{sid}.json").write_text(json.dumps(jobs, ensure_ascii=False, indent=2),
+                                          encoding="utf-8")
+        print(f"  {len(jobs)} kinetic beat(s) -> {(JOBS / f'{sid}.json')}")
+        print(f"    render them BEFORE the Short: bash scripts/ae/render_beats.sh "
+              f"runs/ae_jobs/{sid}.json")
 
     out = DATA / f"{sid}.ts"
     out.write_text(ts, encoding="utf-8")
