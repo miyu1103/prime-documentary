@@ -237,6 +237,28 @@ EPISODES = {
         # voice_plan.v001.json and the narration index provenance.
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
+    "PD-2026-063-correa": {
+        # LOCKED script is v002. v001 is stale and must not be used.
+        "planning": "EP63_correa_script.en.v002.md",
+        # FINISHED-RATE model, as EP62 -- not a raw speech rate. The script derives its own
+        # section windows from 176 words per FINISHED minute (script line 9; episode_spec
+        # notes 2026-08-04: EP60 191.4 wpm and EP61 194.3 wpm of raw speech become ~176 once
+        # gap_beat 0.30s and gap_section 1.80s are charged). 5,278 narration words / 176 wpm
+        # = 1799.3s (29:59), inside the contract band [1620, 1920].
+        "design_speech_seconds": 1799.3,
+        # Eight headings, spelled as episode_spec.v001.json section_vocabulary spells them:
+        # HOOK / OP / ACT_1..ACT_5 / ENDING -- each carrying a parenthetical window,
+        # e.g. `## ACT_1 (0:27-5:13 - 839 w)`. Every pattern in SECTION_HEADINGS is anchored
+        # on the key with a word boundary, so the parenthetical changes nothing. VERIFIED
+        # before spending: all eight sections extract non-empty (373 chunks / 5,315 tokens),
+        # and the per-section counts reconcile with the script's declared 20/58/839/1,096/
+        # 1,110/991/823/341 once the 36 standalone em-dash tokens are discounted.
+        "sections": SECTION_ORDER_5ACT,
+        # PINNED per-episode voice settings, identical to EP62 so the two ARE comparable.
+        # EP62 measured 169.8 words per finished minute at exactly these values. EP60 and
+        # EP61 recorded no settings at all, which is why neither can be compared to anything.
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
 }
 
 GAP_BEAT, GAP_SECTION = 0.30, 1.8          # EP52-shipped defaults
@@ -598,6 +620,11 @@ def main(argv: list[str]) -> int:
     ap.add_argument("--dry-run", action="store_true", help="no API call, no writes; print every chunk")
     ap.add_argument("--plan-only", action="store_true", help="write voice_plan only, no API call")
     ap.add_argument("--remaster", action="store_true", help="skip TTS; rebuild master + index from existing mp3s")
+    ap.add_argument("--measure-section", metavar="SECTION",
+                    help="generate ONLY this section (e.g. ACT_1), measure it with ffprobe, "
+                         "print the words-per-finished-minute it implies, and stop before "
+                         "the master and the index. Chunks land in the normal draft dir with "
+                         "the normal sha-256 sidecars, so the later full run skips them.")
     ap.add_argument("--gap-beat", type=float, default=GAP_BEAT, help="inter-sentence gap seconds")
     ap.add_argument("--gap-section", type=float, default=GAP_SECTION, help="section-boundary gap seconds")
     args = ap.parse_args(argv)
@@ -636,6 +663,21 @@ def main(argv: list[str]) -> int:
     if args.plan_only:
         return 0
 
+    # The subset to SPEND on. `chunks` stays whole: assert_clean has already proved the
+    # full script's section coverage above, and concat_master/write_index below still see
+    # every chunk. Only the generation loop is narrowed.
+    gen_chunks = chunks
+    if args.measure_section:
+        gen_chunks = [c for c in chunks if c["section"] == args.measure_section]
+        if not gen_chunks:
+            print(f"ERROR: no chunks in section {args.measure_section!r}; "
+                  f"sections present = {sorted({c['section'] for c in chunks})}")
+            return 1
+        sub_chars = sum(len(c["spoken_text"]) for c in gen_chunks)
+        print(f"MEASURE MODE: {args.measure_section} only -- {len(gen_chunks)} chunk(s), "
+              f"{sum(len(c['spoken_text'].split()) for c in gen_chunks)} words, "
+              f"{sub_chars} chars, est ${sub_chars / 1000 * COST_PER_1K_CHARS_USD:.2f}")
+
     outdir = media_root() / "episodes" / ep / "06_voice" / "draft"
     outdir.mkdir(parents=True, exist_ok=True)
     made = skipped = failed = 0
@@ -650,7 +692,7 @@ def main(argv: list[str]) -> int:
         if not key:
             print("ERROR: ELEVENLABS_API_KEY missing")
             return 1
-        for c in chunks:
+        for c in gen_chunks:
             out = outdir / f"{c['chunk_id']}.mp3"
             side = out.with_suffix(".json")
             # sha-256 idempotency: existing file + matching text hash -> never re-spend.
@@ -730,6 +772,25 @@ def main(argv: list[str]) -> int:
     if failed:
         print(f"made={made} skipped={skipped} failed={failed} -> NOT building master (fix failures first)")
         return 1
+
+    if args.measure_section:
+        secs = [dur(outdir / f"{c['chunk_id']}.mp3") for c in gen_chunks]
+        if not all(secs):
+            print("ERROR: at least one chunk measured 0.000s -- refusing to report a rate")
+            return 1
+        speech = round(sum(secs), 3)
+        sw = sum(len(c["spoken_text"].split()) for c in gen_chunks)
+        n_gaps = len(gen_chunks) - 1
+        gaps = args.gap_beat * n_gaps
+        finished = speech + gaps
+        print(f"MEASURED section={args.measure_section} chunks={len(gen_chunks)} words={sw}")
+        print(f"  speech          {speech:.3f}s  ({speech / 60:.2f} min)  "
+              f"raw {sw / (speech / 60):.1f} wpm")
+        print(f"  + {n_gaps} beat gap(s) @ {args.gap_beat}s = {gaps:.1f}s")
+        print(f"  finished        {finished:.3f}s  ({finished / 60:.2f} min)  "
+              f"{sw / (finished / 60):.1f} words per finished minute")
+        print("no master and no index written: --measure-section stops before both.")
+        return 0
 
     master = media_root() / "episodes" / ep / "06_voice" / "master" / "vc_master_v001.mp3"
     offsets = concat_master(chunks, outdir, master, args.gap_beat, args.gap_section)
