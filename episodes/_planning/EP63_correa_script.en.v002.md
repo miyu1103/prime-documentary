@@ -6,17 +6,17 @@
 
 【QUOTATION RULE · quotes may be SHORTENED, never altered. Where a quoted phrase will not speak, cut to the speakable part of the quote or stop quoting and say it in the narrator's own voice with clear attribution. No word of the narrator's goes inside a sentence of the court's. The court's inter alia in the four-rules passage is elided on this rule, not translated.】
 
-【SECTION WINDOWS · every heading below is DERIVED, not chosen: section words ÷ 176 words per finished minute, accumulated. 176 is the contract's own measured rate (episode_spec notes, 2026-08-04: EP60 191.4 wpm and EP61 194.3 wpm of raw speech, ~176 words per FINISHED minute once gap_beat 0.30s and gap_section 1.80s are included). Total 5,392 narration words = 1,838s = 30:38, inside the 27–32 min contract. v001's hand-placed labels are void and none of them survives here. Structural locks measured on this file: mid reveal 54.7%, reset beat 58.4%, primary reveal 71.3% resolved 72.4%, callback 72.6%.】
+【SECTION WINDOWS · every heading below is DERIVED, not chosen: section words ÷ 176 words per finished minute, accumulated. 176 is the contract's own measured rate (episode_spec notes, 2026-08-04: EP60 191.4 wpm and EP61 194.3 wpm of raw speech, ~176 words per FINISHED minute once gap_beat 0.30s and gap_section 1.80s are included). Total 5,278 narration words = 1,799s = 29:59, inside the 27–32 min contract. v001's hand-placed labels are void and none of them survives here. Every window above was re-derived from this file after the repair batch, not adjusted by hand. Structural locks re-measured on this file: mid reveal 55.8%, reset beat 59.2%, turn 63.9%, primary reveal 69.4% resolved 69.6%, callback 72.1%.】
 
 【STRUCTURAL LOCKS · hook 8s cut pre-resolution · re-hook ≤150s · mid reveal 45–60% (ACT_3, no record) · primary reveal 65–85% (ACT_4, constructive dumping) resolved by 92% · callback 70–90% · reset beat 55–70% · macro loop = the blank ticket, state 3 to state 8】
 
 【CLAIM LOCKS · the delay never killed her · no dramatised death · no turning-away · no motive · transfer finding unreviewed · no guaranteed treatment · grief question forfeited · ninety-nine stays ninety-nine】
 
-【MOTIF · one object, eight states: 1 dispenser C100 · 2 fan of identical blanks C099 · 3 in the hand C001 · 4 face-up on an empty seat C136 · 5 on the floor, curled C137 · 6 nowhere at all (empty drawer, unfilled shelf) · 7 the seat with the ticket gone C207→C208 · 8 back to state 3, C001 reused as the final image. The paper is blank in every state; the numbers exist only in the attendant's voice and in the type layer.】
+【MOTIF · one object, eight states: 1 dispenser C100 · 2 fan of identical blanks C099 · 3 in the hand C001 · 4 face-up on an empty seat C136 · 5 on the floor, curled C137 · 6 nowhere at all (empty drawer, unfilled shelf) · 7 the seat from directly above, first with the ticket (C207, just before the recognition in ACT_4) and then with it gone (C208, ENDING) · 8 back to state 3, C001 reused as the final image. The paper is blank in every state; the numbers exist only in the attendant's voice and in the type layer.】
 
-【HELD BEATS · four, and they are the only four: the causal lock in ACT_1 · the limit in ACT_3 · the recognition in ACT_4 · the final image in ENDING. The fifth position the bible reserved (before the last HOOK cut) does not survive the owner's 8-second hook — 20 words leaves under seven seconds and no silence to spend.】
+【HELD BEATS · four, and they are the only four: the causal denial in ACT_1 — after the denial, never after the death · the limit in ACT_3 · the recognition in ACT_4 · the final image in ENDING. The fifth position the bible reserved (before the last HOOK cut) does not survive the owner's 8-second hook — 20 words leaves under seven seconds and no silence to spend.】
 
-> **尺の目標は 30:00**（オーナー指定 2026-08-04）。この稿の実測は **30:30**（実測レート176語/分・gap込み）。契約帯は 27:00–32:00、`manifest.json` の `target_duration_minutes` は 30。
+> **尺の目標は 30:00**（オーナー指定 2026-08-04）。この稿の実測は **29:59**（実測レート176語/分・gap込み）。契約帯は 27:00–32:00、`manifest.json` の `target_duration_minutes` は 30。
 
 ---
 
@@ -41,11 +41,11 @@ Nobody at that hospital ever told Carmen Gonzalez no. Nobody discharged her. A j
 
 ---
 
-## ACT_1 (0:27–5:15 · 846 w)
+## ACT_1 (0:27–5:13 · 839 w)
 
 On the morning of the sixth of September, 1991, a sixty-five-year-old widow in Puerto Rico woke up feeling, in her son's words, real bad. Chills. Cold sweat. Dizziness. Chest pains.
 
-Her name was Carmen Gloria Gonzalez Figueroa. She asked her son Angel to drive her to the emergency room at Hospital San Francisco, where she had been treated before. She was inside no later than one o'clock in the afternoon.
+Her name was Carmen Gloria Gonzalez Figueroa. She asked her son Angel to drive her to the emergency room at Hospital San Francisco — HSF in the opinion — where she had been treated before. She was inside no later than one o'clock in the afternoon.
 
 Start with what was in dispute, because almost everything in this case runs through it.
 
@@ -53,7 +53,7 @@ The evidence is conflicted, the court wrote, as to whom she saw and what that pe
 
 Two accounts. One counter. No way, now, to stand between them.
 
-What follows is therefore not a set of appellate findings. When the losing side attacks the sufficiency of the evidence, the court of appeals is required to take the facts, and the reasonable inferences from them, in the light most hospitable to the jury's verdict. Judge Bruce Selya, writing for the panel, described what he was working with in one phrase: the thicket of conflicting testimony and the chasmal gaps in the direct evidence.
+What follows is therefore not a set of appellate findings. When the losing side attacks the sufficiency of the evidence, the court of appeals must, in the opinion's own words, take both the facts and the reasonable inferences therefrom in the light most hospitable to the jury's verdict. Judge Selya, writing for the panel, described what he was working with in one phrase: the thicket of conflicting testimony and the chasmal gaps in the direct evidence.
 
 So this is the version of that afternoon a jury was entitled to believe. It is not the only one offered.
 
@@ -79,22 +79,22 @@ Weary of waiting, the two women drove to the office of Dr. Acacia Rojas Davis, t
 
 The opinion does not describe anyone turning her away. It does not describe anyone discharging her. She left because she had been waiting.
 
-【motif 4 · C136 · the blank ticket face-up on an empty seat, nobody near it】
-
 At the clinic she told Dr. Rojas that she was nauseated and had taken a double dose of her high blood pressure medication. Her blood pressure was very low: ninety over sixty. When she began vomiting, the physician immediately started intravenous infusions of fluids. She also dispensed medicine to control the emesis.
 
 Despite these ministrations, the opinion continues, Ms. Gonzalez's condition steadily deteriorated. Dr. Rojas had to resuscitate her soon after her arrival. The doctor then attempted to transfer her to the Hato Rey Community Hospital, but could not commandeer an ambulance.
 
 As Dr. Rojas began preparations to transport Ms. Gonzalez by van, the patient expired. Her death, which occurred at around half past four, was attributed to hypovolemic shock.
 
-⟨HELD⟩
 That is the whole of what the record says about how she died.
 
 One thing about that death has to be said plainly, because the rest of this case depends on it.
 
 The opinion never says the hospital's delay killed her. It never says she would have lived. Her death was attributed to hypovolemic shock, it happened at another facility, and it happened under a physician's care. The federal case that follows is not about her death. It is about what happened while she was still sitting there.
 
-One more thing from that afternoon, and it is the loose thread the case eventually pulls.
+⟨HELD⟩
+【motif 4 · C136 · the blank ticket face-up on an empty seat, nobody near it. The death beat closes on the waiting room, not on the clinic】
+
+One more thing from that afternoon.
 
 Dr. Rojas testified that a nurse called from HSF to advise her that the patient would be coming to Hospmed for treatment. She said that this conversation probably occurred earlier that day, perhaps around one o'clock. The panel called that a datum suggesting that HSF tried to shunt Ms. Gonzalez to Hospmed as soon as it scrutinized her insurance card.
 
@@ -102,7 +102,7 @@ Probably. Perhaps. Suggesting. The court chose those words with care. Nobody eve
 
 ---
 
-## ACT_2 (5:15–11:29 · 1,097 w)
+## ACT_2 (5:13–11:26 · 1,096 w)
 
 Seven people sued.
 
@@ -124,7 +124,7 @@ Then the money. The jury assessed two hundred thousand dollars in damages on the
 
 Seven hundred thousand dollars in total.
 
-【motif 2 returns · C099 · the fan of identical blank tickets on the counter, three seconds, no narration. No line is added here: the money and the ticket are put side by side and nothing is said about the join】
+【motif 5 · C137 · the blank ticket on the floor under a chair, its edge curled by the humidity, three seconds, no narration. No line is added here: the money and the ticket are put side by side and nothing is said about the join】
 
 The district court denied the Hospital's post-trial motions for judgment as a matter of law, a new trial, and remission of damages. Judge Juan Perez-Gimenez, who had tried the case, gave the award what the appeals court later called his unconditional seal of approval.
 
@@ -172,7 +172,7 @@ So the statute applied — if the hospital did.
 
 ---
 
-## ACT_3 (11:29–17:50 · 1,118 w)
+## ACT_3 (11:26–17:45 · 1,110 w)
 
 The hospital's first argument on appeal was that EMTALA did not cover it at all.
 
@@ -236,15 +236,15 @@ Its rules, as explicated in its policy statement, required its emergency room pe
 
 Four rules. The hospital wrote them for itself. Now set them beside what the trial produced.
 
-【motif 5 · C137 · the blank ticket on the floor under a chair, its edge curled by the humidity. Time has passed and nobody has come】
+【C138 · the row of waiting chairs from ACT_1, empty, held two seconds. The room, not the ticket. Time has passed and nobody has come】
 
 From the evidence adduced at trial, the court wrote — especially Angel Correa's recollections, and the Hospital's utter inability to produce any records.
 
 【motif 6 · the state the film is built on · an empty drawer, an unfilled shelf, a rack with nothing in it. The ticket is not anywhere. Show the absence. Nothing is forged and nothing is captioned】
 
-There was no record. Not a thin record. None.
+The hospital could not produce a record. Not a thin one. None at all.
 
-A hospital whose own rules demanded a written record of every visit could not produce one for a patient who had been inside it for two hours.
+A hospital whose own rules demanded a written record of every visit came to trial with nothing for a patient who had been inside it for two hours.
 
 From that, the jury reasonably could have inferred that the Hospital did not measure up to the parameters it had established, and that the decedent was denied the screening — monitoring of vital signs, compilation of a written chart, immediate referral to an in-house physician — that HSF customarily afforded to persons complaining of chest pains.
 
@@ -253,33 +253,21 @@ The conclusion is one sentence and every clause of it is a limit. In this case, 
 In this case. So egregious. Lacking in justification. And then the door the panel deliberately left shut: thus, we need not decide whether mere negligence in failing to expedite screening would itself violate the federal statute.
 
 ⟨HELD⟩
-That ends the matter, the opinion says. The jury's finding that HSF denied Ms. Gonzalez an appropriate screening examination is unimpugnable.
+That ends the matter, the opinion says.
 
 ---
 
-## ACT_4 (17:50–24:02 · 1,090 w)
+## ACT_4 (17:45–23:23 · 991 w)
 
 【reset beat: hold on the empty waiting-room bench, no narration, 4s】
 
-Before the last of it, something the opinion says about itself.
+The hospital had one more argument. Put at its strongest, its case went like this.
 
-To be sure, the evidence in this case is not particularly precise. But facts at trial, as in life, do not always appear in black and white. Juries and judges frequently must distinguish between manifold shades of gray.
+Begin with what the court said about its own record. To be sure, the evidence in this case is not particularly precise. But facts at trial, as in life, do not always appear in black and white. Juries and judges frequently must distinguish between manifold shades of gray. The panel found that the grays predominate here, in a record it had already called the thicket of conflicting testimony and the chasmal gaps in the direct evidence.
 
-The panel found that the grays predominate here. That is a modest thing to write while affirming a seven-hundred-thousand-dollar verdict.
+The evidence, it said, was conflicted as to whom she saw and what that person was told about her condition. The Hospital maintained that its personnel were told only that Ms. Gonzalez felt dizzy and nauseated. Its own witness, Dr. Rojas — the physician who treated her that afternoon — testified that she did not develop chest pains until some time after she arrived at Hospmed. The malpractice claim, the one that asks whether her care was competent, had been dismissed and was not on appeal. And the court agreed, in the middle of its own holding, that an emergency room cannot serve everyone simultaneously.
 
-On the new-trial motion the court added two observations. Angel Correa's credibility emerged relatively unscathed from cross-examination, and we cannot fault the jury either for crediting his recollection or for concluding that the Hospital denied Ms. Gonzalez any vestige of an appropriate screening. And on coverage, it noticed a silence: the hospital, which could have supplied a foolproof answer from its own records, offered nothing to suggest that it did not welcome Medicare patients.
-
-The jury, the court summarized, heard testimony from which it could have concluded that Ms. Gonzalez went to the Hospital in critical condition and received only a high number and a cold shoulder.
-
-A high number and a cold shoulder.
-
-The hospital had one more argument, and it was the one that should have worked.
-
-The hospital's case, put at its strongest, went like this.
-
-The court itself described the record it was working from as the thicket of conflicting testimony and the chasmal gaps in the direct evidence. The evidence, it said, was conflicted as to whom she saw and what that person was told about her condition. The Hospital maintained that its personnel were told only that Ms. Gonzalez felt dizzy and nauseated. Its own witness, Dr. Rojas — the physician who treated her that afternoon — testified that she did not develop chest pains until some time after she arrived at Hospmed. The malpractice claim, the one that asks whether her care was competent, had been dismissed and was not on appeal. And the court agreed, in the middle of its own holding, that an emergency room cannot serve everyone simultaneously.
-
-Nobody sent her away. Nobody told her the department was full. She was given a number, and she left before it was called.
+Nobody sent her away. Nobody discharged her. She was given a number, and she left before it was called.
 
 The hospital said it had neither denied Ms. Gonzalez an initial screening nor refused her essential treatment. Its point was that it gave the patient a number, and would have ministered to her had she waited.
 
@@ -293,36 +281,42 @@ According to Dr. Rojas, HSF referred Ms. Gonzalez to Hospmed. And the panel adds
 
 If the jury believed the physician's testimony, the court wrote, it could well have found that HSF never intended to treat the decedent, or, at the least, was itself responsible for truncating her wait.
 
-That sentence has two halves and the second is the sharper one. If the hospital had arranged for her to be seen at Hospmed, then the hospital is the reason she got up and drove there. Then the wait it says she abandoned would be a wait it had already ended.
+That sentence has two halves and the second is the sharper one. If the jury believed that, the hospital was the reason she got up and drove there. Then the wait it says she abandoned would be a wait it had already ended.
 
 The second reason does not depend on the telephone call at all. It is the holding that made this case matter.
 
 Regardless of motive, the court wrote, a complete failure to attend a patient who presents a condition that practically everyone knows may indicate an immediate and acute threat to life can constitute a denial of an appropriate medical screening examination.
 
-No refusal required. No words required. Nothing has to be said to anybody.
-
 And immediately, the panel fenced its own holding, because it understood what it had just made possible.
 
 Much depends upon circumstances. The court was not saying that waiting is unlawful. It was saying that in this case, absent any explanation or mitigating circumstances, the jury could rationally conclude that the Hospital's inaction here amounted to a deliberate denial of screening.
 
-Absent any explanation. The hospital never offered one.
+Absent any explanation.
+
+【motif 7 · C207 · the blank ticket face-up on the empty seat, seen from directly above, two seconds, no narration】
 
 And then the sentence the whole case is built on.
 
 EMTALA should be read to proscribe both actual and constructive dumping of patients.
 
 ⟨HELD⟩
-Constructive. The word lawyers reach for when the law looks at effect instead of form.
+Constructive.
 
-Constructive dumping is the hospital that never turns anybody away.
+The jury's finding that HSF denied Ms. Gonzalez an appropriate screening examination is unimpugnable.
+
+On the new-trial motion the court added two observations. Angel Correa's credibility emerged relatively unscathed from cross-examination, and we cannot fault the jury either for crediting his recollection or for concluding that the Hospital denied Ms. Gonzalez any vestige of an appropriate screening. And on coverage, it noticed a silence: the hospital, which could have supplied a foolproof answer from its own records, offered nothing to suggest that it did not welcome Medicare patients.
+
+The jury, the court summarized, heard testimony from which it could have concluded that Ms. Gonzalez went to the Hospital in critical condition and received only a high number and a cold shoulder.
+
+A high number and a cold shoulder.
 
 【callback: the number】
 
 Forty-seven. Twenty-four. A number in a hand, an attendant calling a different one, and between them a distance nobody inside that building ever had to explain to anyone.
 
-One argument was left, and it was the hospital's most confident.
+One argument was left.
 
-Liability under EMTALA, it said, requires an economic motive — the suspicion that the patient will be unable adequately to pay her way. Ms. Gonzalez had insurance that permitted her hospital visit if an emergency existed. So no such motive could have existed.
+Liability under EMTALA, the hospital said, requires an economic motive — the suspicion that the patient will be unable adequately to pay her way. Ms. Gonzalez had insurance that permitted her hospital visit if an emergency existed. So no such motive could have existed.
 
 The court reviewed that de novo, as a pure question of law, and rejected it flatly. Every court of appeals that has considered this issue has concluded that a desire to shirk the burden of uncompensated care is not a necessary element of a cause of action under EMTALA.
 
@@ -338,7 +332,7 @@ The court decided none of this on motive. Under its own holding, it did not have
 
 ---
 
-## ACT_5 (24:02–28:41 · 820 w)
+## ACT_5 (23:23–28:03 · 823 w)
 
 That is liability. What is left is money, and the strangest part of the case happens here.
 
@@ -382,11 +376,11 @@ This case, the court added, in which the decedent's travails extended over a per
 
 Nothing was reversed. Nothing was vacated. No remittitur was ordered.
 
-We need go no further. HSF has not presented arguments capable of overcoming the formidable hurdles it faces in challenging either the liability determination or the damage assessment of a properly instructed jury. The judgment below must therefore be affirmed.
+We need go no further, the panel wrote. HSF has not presented arguments capable of overcoming the formidable hurdles it faces in challenging either the liability determination or the damage assessment of a properly instructed jury. The judgment below must therefore be affirmed.
 
 ---
 
-## ENDING (28:41–30:38 · 343 w)
+## ENDING (28:03–29:59 · 341 w)
 
 What this case gives is narrower than it sounds, and the court was careful to say so.
 
@@ -398,15 +392,15 @@ It does not find that the hospital dumped her. A jury found a screening violatio
 
 It does not hold that the transfer was unlawful. That finding was never reviewed.
 
-What is left is a method, and it is the most portable thing in the opinion. To find out whether an emergency room had screened someone, the court did not call a medical expert. It asked what the hospital's own rules required, and then asked what the hospital could produce. Vital signs. A written chart. A referral to an in-house physician. Four rules the hospital wrote for itself, and not one sheet of paper for a woman who had been inside it for two hours.
+What is left is a method, and it is the most portable thing in the opinion. To find out whether an emergency room had screened someone, the court did not call a medical expert. It asked what the hospital's own rules required, and then asked what the hospital could produce. Vital signs. A written chart. A referral to an in-house physician. Four rules the hospital wrote for itself, and nothing produced for a woman who had been inside it for two hours.
 
-【motif 7 · C207 the blank ticket face-up on the seat, then C208 the same seat with the ticket gone】
+【motif 7 completes · C208 · the same seat from directly above, the ticket gone】
 
 There is no villain in this record. No decision was ever testified to. Nobody was shown to have looked at an insurance card and formed a judgment about the person holding it.
 
 That is what the court's word is for. Constructive. It does not require anybody to decide anything.
 
-Somewhere in that building, on the sixth of September, 1991, an attendant called number twenty-four. Nothing was refused. Nothing was said.
+Somewhere in that building, while she was still sitting in it, an attendant called number twenty-four. Nothing was refused. Nothing was said.
 
 ⟨HELD⟩
 Forty-seven was never called.
