@@ -771,3 +771,20 @@ The shadow of a person standing outside a glazed front door thrown across the wa
 A single gas jet standing alight at extreme magnification in an unlit kitchen, the blue cone steady and no larger than a thumbnail, the enamelled lip of the burner beneath it catching just enough light to read, the whole rest of the frame quiet, empty and unlit [STYLE] Avoid: [NEG]
 - `M218.png`
 A street light on a plain concrete standard lit over a modest residential Memphis street at night, shot from the middle of the road looking up along the standard so the lamp head sits against a starless sky, the low houses beneath it keeping their porch lights and the road entirely empty [STYLE] Avoid: [NEG]
+
+### ★追加2（2026-08-04・§4のHOOK表の読み替え）
+
+台本の修理でHOOKが作り直された。**§4のHOOK表（M001/M002/M004）は古い。**プレートは1枚も増減していないので
+生成する枚数は218枚のままだが、**HOOKに実際に出るのは以下の3枚**である。
+
+| HOOKカット | プレート | 内容 |
+|---|---|---|
+| 1 |  | 一軒の家に届いた2通の請求書 |
+| 2 |  | 最終通知（状態4／状態8で回収） |
+| 3 |  | メアリー・クラフトの電話（ACT_5で回収） |
+
+（壁の2つのメーター）・・ は**HOOKから外れ、ACT_1 と ACT_5 の通常カットに戻る**。
+理由：旧HOOKの「一つの壁に二つのメーター」は事実として誤りだった（判決文は *two **sets** of meters*）。
+プレート自体は正しいので廃棄しない。**HOOKの1枚目はモチーフの内側に入り、物そのものではなくなった。**
+
+**⛔-08 オーナー裁定（2026-08-04）：名前は可・番地1019は不可。**narration・テロップ・プレート・ショートの全部に及ぶ。

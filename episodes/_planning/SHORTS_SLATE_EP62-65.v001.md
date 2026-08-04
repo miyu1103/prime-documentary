@@ -250,7 +250,7 @@ no house fire, nobody freezing, no utility worker as villain.
 **Ledger source (verbatim):**
 > ML-17 — *"they noticed that there were two separate gas and electric meters and only one water meter serving the premises. The residence had been used previously as a duplex."*
 > ML-19 — *"In 1973, the Crafts began receiving two bills: their regular bill, and a second bill with an account number in the name of Willie C. Craft, as opposed to Willie S. Craft."*
-> ML-16 — *"Willie S. and Mary Craft, respondents here, reside at 1019 Alaska Street in Memphis."*
+> ML-16 — *"Willie S. and Mary Craft, respondents here, reside … in Memphis."*（⛔-08オーナー裁定 2026-08-04：**名前は可・番地1019は不可**。引用は改変せず省略で短縮）
 
 **Telops:** `TWO METERS` · `TWO BILLS` · `WILLIE C.` · `WILLIE S.` · `NOBODY EVER\nDECIDED`.
 **Plate motifs:** two meter dials side by side on a wall (hero) · a hand tracing between them · an envelope on a mat, address dissolved · a kitchen counter with post stacked · a wall socket · a hallway light going out · a fuse panel · a house front in flat winter light · a doorbell · a phone handset on a wall cradle · a lamp with no bulb · a switch flipped with nothing happening.
