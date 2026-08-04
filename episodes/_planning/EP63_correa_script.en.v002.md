@@ -16,7 +16,7 @@
 
 【HELD BEATS · four, and they are the only four: the causal lock in ACT_1 · the limit in ACT_3 · the recognition in ACT_4 · the final image in ENDING. The fifth position the bible reserved (before the last HOOK cut) does not survive the owner's 8-second hook — 20 words leaves under seven seconds and no silence to spend.】
 
-> **尺の目標は 30:00**（オーナー指定 2026-08-04）。この稿の実測は **30:37**（実測レート176語/分・gap込み）。契約帯は 27:00–32:00、`manifest.json` の `target_duration_minutes` は 30。
+> **尺の目標は 30:00**（オーナー指定 2026-08-04）。この稿の実測は **30:30**（実測レート176語/分・gap込み）。契約帯は 27:00–32:00、`manifest.json` の `target_duration_minutes` は 30。
 
 ---
 
@@ -160,7 +160,7 @@ Element three has two doors. This case went through the first one.
 
 And then the panel decided something that was genuinely open at the time.
 
-The hospital argued that a screening claim requires proof that the patient actually had an emergency medical condition when she arrived. Several district courts had said so in passing. The First Circuit refused: this suggestion finds no purchase in the statute's text, and we reject it. The failure appropriately to screen, by itself, is sufficient to ground liability as long as the other elements of the cause of action are met.
+The hospital argued that a screening claim requires proof that the patient actually had an emergency medical condition when she arrived. Some courts had said so in dictum. The First Circuit refused: this suggestion finds no purchase in the statute's text, and we reject it. The failure appropriately to screen, by itself, is sufficient to ground liability as long as the other elements of the cause of action are met.
 
 The duty to look does not depend on what the looking would have found.
 
@@ -312,7 +312,7 @@ And then the sentence the whole case is built on.
 EMTALA should be read to proscribe both actual and constructive dumping of patients.
 
 ⟨HELD⟩
-Constructive. The word lawyers reach for when the law looks at effect instead of form. Constructive notice is notice you never received but are treated as having received. Constructive eviction is the landlord who never changes the locks and never has to.
+Constructive. The word lawyers reach for when the law looks at effect instead of form.
 
 Constructive dumping is the hospital that never turns anybody away.
 
@@ -328,7 +328,7 @@ The court reviewed that de novo, as a pure question of law, and rejected it flat
 
 Then the holding, in its own words. We hold, therefore, that EMTALA, by its terms, covers all patients who come to a hospital's emergency department, and requires that they be appropriately screened, regardless of insurance status or ability to pay.
 
-The panel thought the premise naive, and said so in a footnote. All insurance plans are not created equal. Given the bewildering array of coverage conditions, deductibles, reimbursement rates, and the like, sophisticated but esurient providers have ample provocation to discriminate not only between insured and uninsured patients but also among patients who are insured under different plans.
+The panel called the argument an oversimplification, and said so in a footnote, and said so in a footnote. All insurance plans are not created equal. Given the bewildering array of coverage conditions, deductibles, reimbursement rates, and the like, sophisticated but esurient providers have ample provocation to discriminate not only between insured and uninsured patients but also among patients who are insured under different plans.
 
 Esurient. Greedy. A judge picking a rare word rather than an ordinary one.
 
