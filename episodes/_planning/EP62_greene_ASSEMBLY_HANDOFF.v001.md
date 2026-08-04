@@ -23,7 +23,7 @@
 | 画像 | ✅ **226枚** | 全部 3840×2160・欠番0・重複0・変種0 |
 | 画像の配置 | ✅ | `remotion/public/greene/img/` に226枚＋顔登録 `P001–P014` |
 | 実写プール | ⚠ **9本** | 47本取り込み → 目視38本却下 → 形状/話またぎで3本追加却下 |
-| figure beats | ✅ 97個 | 各幕15–17（契約帯13–17）· `set_figure_beats --dry-run` exit 0 |
+| figure beats | ✅ 96個 **v002** | 各幕15–17（契約帯13–17）· `set_figure_beats --dry-run` exit 0 · **v001は破棄**（台本v004と不整合・引用5件が非逐語） |
 | thumb_prompts | ✅ 4案 | `G220/G221/G222` ＋ 新規 `G240` 案（旧 `G226` 案は廃止） |
 | fact_recheck | ✅ | 108主張（LOCKED 101 / 要出典5 / 隔離2）※その後の修理で全件処理 |
 | ショート | ✅ 3本 | `short259` / `short260` / `short261`（導線レコードあり・**video ID待ちで意図的に不合格**） |
@@ -45,7 +45,7 @@ episodes\_planning\EP62_greene_script.en.v004.md            ★ 確定版。v001
 episodes\_planning\EP62_greene_FILM_BIBLE.v001.md           ← なぜこの順で語るか
 episodes\_planning\EP62_greene_FACTS_LEDGER.v001.md         ← 事実の出所。✓/VERBATIM 以外は使用不可
 episodes\_planning\measurements\EP62_greene_RAW.md          ← 判決文の全文。引用の照合先はここ
-episodes\_planning\EP62_greene_beats.v001.json              ← 演出データ97個
+episodes\_planning\EP62_greene_beats.v002.json              ★ 演出データ96個（**これを使う**。v001は台本v004と不整合＝破棄）
 ```
 
 **画像**
@@ -120,7 +120,7 @@ py -3.11 scripts\build_case_film_generic.py --config episodes\_planning\EP62_gre
 ### ④ figure beats を書き込む
 
 ```
-.venv\Scripts\python.exe scripts\set_figure_beats.py --config <filmconfig> --beats episodes\_planning\EP62_greene_beats.v001.json --min-per-act 13
+.venv\Scripts\python.exe scripts\set_figure_beats.py --config <filmconfig> --beats episodes\_planning\EP62_greene_beats.v002.json --min-per-act 13
 ```
 `--dry-run` は既に exit 0（97個・各幕15–17）。**config ができるまで書き込めないだけ。**
 

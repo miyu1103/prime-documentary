@@ -106,6 +106,7 @@ Codex は**1プロンプト＝1枚**で走るので、**前の枚を参照でき
 1. **ナレーション生成**（ElevenLabs `nPczCjzI2devNBz1zQrb` / `eleven_multilingual_v2`）。
    台本は確定している。差し替えは**画像だけで、一語も台本を変えていない**。
 2. **filmconfig / 生成カット表 / beats**。プレートIDだけ新番号を使う（§2 の表）。
+   **beats は `EP62_greene_beats.v002.json` を使うこと（v001 は破棄・理由は §8）。**
 3. **Remotion 合成と字幕**。
 4. **素材（実写）**は9/47 accepted のまま。ここは今回の差し替えと無関係。
 
@@ -145,7 +146,7 @@ Codex は**1プロンプト＝1枚**で走るので、**前の枚を参照でき
 - 再レビューは **実行済み**（`EP62_greene_REREVIEW.v002.md`）。判定は **DOES NOT MEET IT**で、残るのは **R15（音読）未実施** のみ。
   （R6 のモチーフ状態1 と §12 の92%規則違反は両方修正済み。）
 - **台本は v004 が正典**。v003 は3回上書きされていたので凍結した。
-- `EP62_greene_beats.v001.json` は **台本より古い**。ACT_5 の並びが変わったので組み立て前に作り直すこと。
+- ~~`EP62_greene_beats.v001.json` は **台本より古い**~~ → **作り直した。正典は `EP62_greene_beats.v002.json`（96個）。** 詳細は §8。
 - 実写素材 9/47 accepted は契約の distinct_video 234 に対して薄い。画像を動かして稼ぐ前提のままである。
 - 目視QCの FLAG 41件のうち、上の13件以外は「使えるが弱い」判定で、差し替えていない。
 
@@ -166,3 +167,125 @@ cd C:/Users/aab15/Documents/prime-documentary
 ```
 
 期待値: `241 241 G241`
+
+---
+
+## 8. figure beats を作り直した（2026-08-05）— v001 は使わない
+
+**正典: `episodes/_planning/EP62_greene_beats.v002.json`（96個 / HOOK 3・OP 3・ACT_1 17・ACT_2 15・ACT_3 16・ACT_4 17・ACT_5 17・ENDING 8）。**
+契約 `figure_beats_per_act` 13–17 を全幕で満たす。`set_figure_beats.py --dry-run` exit 0（96 beat valid）。
+**`beats.v001.json` は上書きせず残す**（`.claude/rules/05` `12`）。**組み立てでは参照しない。**
+
+### 8-1. なぜ作り直したか（仕組みの話）
+
+`build_case_film_generic.py::build_figures` は beats に時刻を与えない。**区間の中で等間隔に置く**：
+
+```
+start = lo + span * (i + 0.5) / N      # N = その区間の beat 数
+```
+
+つまり **配列の何番目にあるかが、そのまま画面に出る秒**になる。
+v001 は「語りの順番」では正しかったが「語りの**語数の位置**」では合っておらず、
+ACT_1 以降でカードが 1〜5 スロット遅れて出ていた。実測（台本 v004 の語位置で照合）：
+
+| v001 の beat | 実際に出る位置 | そこで語られていること |
+|---|---|---|
+| ACT_5 [12] `JUSTICE O'CONNOR, DISSENTING` | w1211/1647 | **多数意見**が in rem / in personam を判断しないと言っている所 |
+| ACT_5 [14] 反対意見の「引用ゼロ」stat | w1405/1647 | 郵便受けの比喩の**後**・「それは本物の議論だ」 |
+| ACT_5 [15] 「11州」ticker | w1502/1647 | 反対意見の**第二の攻撃**（迅速性）の途中 |
+| ACT_5 [16] 郵便受けの引用（反対意見） | w1599/1647 | **多数意見**の脚注の反論（prompt or certain） |
+| ACT_5 [9] `THE HOLDING` | w920/1647 | 反対意見の書き手の紹介 |
+| ACT_1 [11] Grannis 引用 | w718/1062 | 条文を半速で読んでいる最中（音楽なしの指定箇所） |
+| ACT_1 [7] `JOSEPH GREENE` | w469/1062 | 「立ち退きが相手に何を要求するか」 |
+| ACT_4 [2] `WESTERN DISTRICT OF KENTUCKY` | w124/845 | Mullane 基準の主張 |
+
+v002 は全 96 個を語数位置で置き直した。上の8件はすべて自分の一節の上に乗っている。
+
+### 8-2. 直した文字列（照合先は `measurements/EP62_greene_RAW.md` のみ）
+
+| 場所 | v001（画面に焼かれる予定だった） | v002（RAW 逐語） |
+|---|---|---|
+| ACT_5 最終 | "It is no secret … by thieves. **Posting, at least, gives assurance** that the notice has gotten as far as the tenant's door." | "It is no secret … by thieves. **Moreover, unlike the use of the mails, posting notice at least gives assurance** that the notice has gotten as far as the tenant's door." |
+| ACT_5 | "**A procedure's** effect must be judged in the light of its practical application…" ／ 出典 "Greene v. Lindsey (1982), stating the test" | 削除（別スロットへ）。**"its effect must be judged…" は North Laramie Land Co. v. Hoffman (1925) の語**であり、Greene 自身の文ではない |
+| ACT_5 | "…deprived of a significant interest in property **—** indeed…" | "…in property**:** indeed…"（原文はコロン） |
+| ACT_5 | 反対意見の告発を "…the work of the Kentucky Legislature." で切る | "…the work of the Kentucky Legislature **and, by implication, that of at least 10 other States.**" |
+| ACT_5 | ticker 11 = "States, at least, **authorising notice by posting alone**" | "States, at least, authorizing notice in summary eviction proceedings **solely by posting or by leaving it at the tenant's residence** — the dissent's count"（原文は二択） |
+| ACT_2 | "If no one is at home…posting follows forthwith." 出典 = **"Brief for the appellants"** | 出典 = **Greene v. Lindsey (1982)・裁判所自身の文**（"good percentage" だけが n.8 の宣誓証言からの引用） |
+| ACT_2 | highlightring "a good percentage" — **the appellants' own estimate** | "quoted from a deposition, not the Court's own estimate"（台本 L128・n.8 = App. 76） |
+| ACT_2 | "**it is** reasonable to assume that a property owner…" | "**It is, of course,** reasonable to assume that a property owner…" |
+| ACT_2 | "…second attempt at personal service **—** perhaps at some time of day…" | "…personal service**,** perhaps at some time of day…"（原文はコンマ） |
+| ACT_3 | "I have seen them take them off of the door**,** and I would go back…" | "…off of the door and I would go back…"（原文にコンマなし） |
+| ACT_3 | "…no occasion where I saw anyone tear the **writs** off of the door" | "…tear the **Writs** off of the door"（原文の大文字） |
+| ACT_4 | "**conditions had changed since Weber, and there was** undisputed testimony…" | "**there is** undisputed testimony in this case that notices posted on the apartment doors of tenants are often removed by other tenants"（地裁の原文） |
+| ACT_4 | "**There may have been** a time when posting provided a surer means…" | "a time when posting provided a surer means of giving notice than did mailing. That time has passed."（"while there may have been" は最高裁の地の文） |
+
+### 8-3. 事実として間違っていた図版（引用ではないもの）
+
+| 場所 | v001 | 直した理由 |
+|---|---|---|
+| ACT_1 `SECTION 454.030` | "**Three sentences.**" | 条文は**二文**（台本 L78・RAW）。三は「節（clause）」の数 |
+| ACT_1 kinetic | "THREE NAMES AND **A SHARED ADDRESS**" | 判決文は "tenants in a Louisville housing project" としか言わない。同一住所は記録にない → "同じ housing project" として下三分に統合 |
+| ACT_1 kinetic | "USUALLY A DEPUTY. **NEVER A NAME.**" | 台本 L60 は「二人は後で、反対意見でだけ名前を取り戻す」。**NEVER は台本と矛盾** → "UNNAMED IN THE CAPTION." |
+| ACT_3 `VILLAGE WEST` | "The development **two servers** named, **deposed separately**" | 台本のロック「n.7 の3つの抜粋の背後にいる証言者を数えない」に違反。記録は別人とも別調書とも言っていない → "Named twice in the same footnote." |
+| ACT_3 `CARTER BACON` | "**The second server.**" | 同上（数えている）→ VILLAGE WEST の下三分に統合し「"probably a couple of times" と言った男に反対意見が名前を与える」 |
+| ACT_3 `GILBERT BRUTSCHER` | "Same job, **same doors**, opposite answer" | 台本 L186 は「**反対意見は同じ建物で働いたとは言っていない**」。真逆 → 台本の一文をそのまま採用 |
+| ACT_3 kinetic | "**CLAIMED. STATED.**" | 最高裁の動詞は現在形の claim / state（台本 L198「Not *did suffer*」）→ "CLAIM. STATE. / NOT DID SUFFER." |
+| ACT_3 stat | "Counts, surveys or studies anywhere in this opinion. **Nobody had counted.**" | 台本 L176 の範囲に合わせて "Studies, surveys or counts the majority weighed against the depositions" |
+| ACT_4 下三分 | "A class action under section 1983, the **Reconstruction-era statute**" | 台本にも台帳にも無い。1871年という属性はこの映画のどこにも出てこない → 台本 L212 の言い方に統一 |
+| ACT_4 下三分 | "Summary judgment for the sheriff and **the officials**" | 台本 L220 は "the sheriff and his deputies"（下三分ごと削除・語数位置に空きが無いため） |
+| HOOK stat | "Second attempts provided for … = 0" | HOOK の25語はこの事実を語らない（ACT_2 の事実）。**フックで本編の事実を先出ししない** → 削除（ACT_2 の逐語引用 GL-21 が担う） |
+| HOOK kinetic | "THE MEN WHO TAPED IT UP / WERE ASKED, UNDER OATH…" | 同上。宣誓証言は ACT_3 で初めて出る |
+| ENDING `casetimeline_c` | 1975→1981→1982→After の年表 | `PD_SCREENPLAY_STANDARD` §12「ENDING は要約ではなく再フレーム」。年表は要約そのもの → 削除（年表は ACT_4 に一つ残る） |
+| ENDING 下三分 | "LINNIE LINDSEY · BARBARA HODGENS · PAMELA RAY" | v004 の ENDING は三人の名を**呼ばない**（名は ACT_5 で終わっている）。語っていない所に名前を出さない → 削除 |
+| ENDING kinetic | "THE COURT CHOSE / THE MEN **WHO WALKED / TO THE DOOR.**" | 台本 L358 は「**紙が剥がれたと言った**男たちを選んだ」→ "THE MEN WHO SAID / THE PAPER CAME OFF." |
+
+### 8-4. 数字の裏づけ（台帳の行）
+
+| beat | 数 | 根拠 |
+|---|---|---|
+| ACT_4 numberticker | 1909 | **GL-31**（Weber, 169 F. 522 (1909)・"some 70 years earlier"） |
+| ACT_5 numberticker | 11 | **GL-75**（反対意見「at least 11 States」＋ n.1 の11州リスト） |
+| ACT_1 stat | 0（玄関先の会話） | **GL-19 / 台本 L96**「In each instance, notice took the form of posting…」＝三戸とも投函に至った |
+| ACT_3 stat | 0（調査・統計・計数） | **Q-04**（判決文に量的な数字は無い）＋台本 L176 |
+| ENDING stat | 0（同上・再フレーム） | 同上。**新事実ではない**（§12） |
+| ACT_2 / ACT_4 / ENDING compbars | 3 対 1 | 条文の三段（GL-18/19）と GL-20/21（一回の訪問で投函）。映画自身の読みであって判決文の数字ではない |
+
+**支えられなかったので落とした数字はゼロ。**（v001 の "0 second attempts" は事実としては GL-21 で支えられるが、置かれていた HOOK でその話を語っていないので落とした。）
+
+### 8-5. ACT_5 の並べ替え（92%規則で本文が動いたため）
+
+**v001 の順**（多数意見 11 → 反対意見 6。反対意見のカードが多数意見の上に落ちていた）
+
+```
+acttitle · BRENNAN · Mullane基準 · 財産的利益 · practical application · WHAT THE THING DOES ·
+転回 · IN A SIGNIFICANT NUMBER · continued exclusive reliance · THE HOLDING · hold only ·
+DID NOT BAN · O'CONNOR DISSENTING · sole ground · stat 0件 · ticker 11州 · 郵便受け
+```
+
+**v002 の順**（本文 v004 の語位置に合わせた。話者が入れ替わる箇所を守る）
+
+```
+ 0 acttitle
+ 1 財産的利益（多数）        2 secure posting（多数・反対側を最強の形で）
+ 3 転回（多数）              4 IN A SIGNIFICANT NUMBER（多数）
+ 5 郵便について（多数）      6 continued exclusive reliance（多数）
+ 7 hold only（多数 n.9）     8 IT DID NOT BAN POSTING / IT DID NOT ORDER THE MAIL
+ 9 O'CONNOR, DISSENTING     10 sole ground / flimsy basis（反対）
+11 ticker 11州（反対）       12 **in rem / in personam を判断しない（多数）** ← 動いた区画
+13 Ferguson v. Skrupa（反対・制度論）
+14 郵便受け（反対）          15 SPEED IS THE DESIGN（反対の第二の攻撃）
+16 prompt or certain（多数 n.4 の反論）
+```
+
+12 の「判断しない」区画が一つ上がったので、**その前後で話者が三回入れ替わる**。
+v002 はその三回をカードの側でも守っている（11 反対 → 12 多数 → 13 反対）。
+
+### 8-6. 仕掛けの副作用（v001 が踏んでいた罠）
+
+`build_figures` は最後に **`figures[0]` と `figures[-1]` を AI開示の下三分で上書きする**。
+つまり映画の**最初の1枚と最後の1枚は、何を書いても開示カードになる**。
+v001 は ENDING の最後に決め台詞 "THAT THE PAPER WOULD STILL BE THERE" を置いていたので、
+**それは画面に出ないはずだった**（台本 L372 の `【OST: STILL THERE】` は figure beat ではないので、そちらをどう実装するかは組み立て側の判断）。
+v002 は両端に開示カードを明示的に置き、決め台詞の枠を無駄にしていない。
+
+HOOK は 4 → 3。8.6秒の区間に3秒カードを4枚置くと約0.9秒ずつ重なる（3枚なら0.1秒）。
