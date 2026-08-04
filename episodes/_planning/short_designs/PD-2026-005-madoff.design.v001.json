@@ -603,6 +603,32 @@
           "bound_match": "semantic-clip",
           "bound_score": 0.302
         }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L5",
+          "anchor": "five minutes",
+          "style": "punch",
+          "words": [
+            "FIVE MINUTES",
+            "TO SEE IT"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L7",
+          "anchor": "Nothing happened",
+          "style": "punch",
+          "words": [
+            "NOTHING",
+            "HAPPENED"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
       ]
     },
     {
@@ -1153,6 +1179,31 @@
           "source": "FOOTAGE",
           "footage_query": "volunteers packing boxes in a hall",
           "prompt": null
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "To eleven",
+          "style": "number",
+          "big": "11",
+          "bigSize": 260,
+          "label": "GUILTY PLEAS",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "Sixty-five billion",
+          "style": "punch",
+          "words": [
+            "$65 BILLION",
+            "ON PAPER ONLY"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
         }
       ]
     }

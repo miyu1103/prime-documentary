@@ -588,6 +588,31 @@
           "bound_match": "semantic-clip",
           "bound_score": 0.318
         }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L5",
+          "anchor": "music played too loud",
+          "style": "punch",
+          "words": [
+            "MUSIC",
+            "TOO LOUD"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L7",
+          "anchor": "nine justices",
+          "style": "number",
+          "big": "9",
+          "bigSize": 260,
+          "label": "ALL AGREED",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "b"
+        }
       ]
     },
     {
@@ -1131,6 +1156,32 @@
           "prompt": null,
           "bound_match": "semantic-clip",
           "bound_score": 0.28
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L3",
+          "anchor": "foot under a descending garage door",
+          "style": "punch",
+          "words": [
+            "A FOOT",
+            "UNDER THE DOOR"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "Flight in, door open",
+          "style": "punch",
+          "words": [
+            "FLIGHT IN",
+            "DOOR OPEN"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
         }
       ]
     }

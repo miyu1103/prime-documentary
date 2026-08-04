@@ -229,8 +229,17 @@ def plan_kinetic(sid: str, short: dict, cut_bounds: dict[str, list[tuple[float, 
         # is worse than arriving a beat early: the type animates in over ~0.5 s anyway. Extend
         # BACKWARDS into earlier cuts of the same line rather than truncating.
         want_sec = float(b.get("seconds", 2.2))
-        while ci > 0 and (cuts[ci + span - 1][1] - cuts[ci][0] - 0.10) < want_sec:
+
+        def room() -> float:
+            return cuts[ci + span - 1][1] - cuts[ci][0] - 0.10
+
+        # Extend backwards first - arriving a beat early is better than a flash, and the type takes
+        # ~0.5 s to animate in anyway. Then forwards, for an anchor that lands on the FIRST cut of
+        # its line, where there is nothing behind it: short92's L4 opens on a 0.78 s cut.
+        while ci > 0 and room() < want_sec:
             ci -= 1
+            span += 1
+        while ci + span < len(cuts) and room() < want_sec:
             span += 1
         if ci < 0 or ci + span > len(cuts):
             sys.exit(f"{sid}: kinetic beat wants cuts {ci + 1}..{ci + span} of {lid}, "

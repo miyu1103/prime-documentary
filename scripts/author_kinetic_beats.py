@@ -105,6 +105,34 @@ BEATS: dict[str, list[dict]] = {
                  punch("L7", "four hundred documents a day", "400 A DAY", "HE READ NONE")],
     "short258": [punch("L5", "three hundred and fifty signatures", "$10 AN HOUR", "350 SIGNATURES"),
                  number("L7", "2013", "2013", "$300 EACH")],
+
+    # Shorts 92-181 are rendered but NOT uploaded - 63 local upload records were reconciled against
+    # the channel on 2026-08-04 and every one of the 63 is live, so anything without a record has
+    # not shipped and can still be improved. These are the first twelve, in schedule order.
+    "short92":  [punch("L4", "fifty years", "50 YEARS", "NO NAME"),
+                 number("L6", "1971", "1971", "NO CAMERA")],
+    "short93":  [punch("L4", "thirty-six passengers", "36 PASSENGERS", "NEVER KNEW"),
+                 punch("L6", "four parachutes", "FOUR CHUTES", "NOT ONE")],
+    "short94":  [punch("L5", "five minutes", "FIVE MINUTES", "TO SEE IT"),
+                 punch("L7", "Nothing happened", "NOTHING", "HAPPENED")],
+    "short95":  [number("L4", "To eleven", "11", "GUILTY PLEAS"),
+                 punch("L6", "Sixty-five billion", "$65 BILLION", "ON PAPER ONLY")],
+    "short96":  [punch("L4", "about an hour", "30 YEARS", "ONE HOUR"),
+                 number("L7", "fifty-four", "54", "TO THE CHAIR")],
+    "short97":  [punch("L4", "never solved", "NEVER", "SOLVED"),
+                 punch("L7", "fifteen miles away", "15 MILES AWAY", "CLOCKED IN")],
+    "short98":  [punch("L5", "music played too loud", "MUSIC", "TOO LOUD"),
+                 number("L7", "nine justices", "9", "ALL AGREED")],
+    "short99":  [punch("L3", "foot under a descending garage door", "A FOOT", "UNDER THE DOOR"),
+                 punch("L6", "Flight in, door open", "FLIGHT IN", "DOOR OPEN")],
+    "short100": [punch("L5", "fourteen million dollars", "$14 MILLION", "EVERY DOLLAR GONE"),
+                 punch("L7", "standard operating procedure", "STANDARD", "OPERATING PROCEDURE")],
+    "short101": [punch("L4", "filing cabinet", "A FILING CABINET", "AN EXECUTION CHAMBER"),
+                 punch("L5", "type B", "TYPE B", "TYPE O")],
+    "short102": [number("L4", "May 2021", "2021", "NO SUCH POWER"),
+                 punch("L7", "key to any door", "A KEY", "TO ANY DOOR")],
+    "short103": [punch("L4", "No warrant. No crime", "NO WARRANT", "NO CRIME"),
+                 punch("L6", "hear a gunshot inside", "ONE GUNSHOT", "CHANGES IT")],
 }
 
 
