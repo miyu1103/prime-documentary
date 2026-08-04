@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -34,6 +35,14 @@ PAIRS = INDEX / "rejected_pairs.txt"
 # Calibrated on the known-bad frames from the 2026-08-04 review and on 40 known-good ones.
 GREEN_FRAC = 0.25     # a keying plate is mostly green; a lawn or a lit exit sign is not
 FLAT_STD = 14.0       # luma standard deviation; a real scene is textured, a swatch is not
+
+# Clips whose own filename declares them synthetic. This channel documents real cases, and
+# CLAUDE.md invariant 11 forbids presenting generated visuals as authentic record. Nineteen were
+# already bound into finished Shorts before anyone looked - an AI police officer under a line about
+# a real arrest, an AI spaceship corridor, a generated red panda. A picture check cannot catch
+# these: they are competent images of things that never happened.
+SYNTHETIC = re.compile(r"ai[-_]generated|generated[-_]ai|ai[-_]art|midjourney|"
+                       r"stable[-_]diffusion|\bcgi\b|3d[-_]render", re.I)
 
 
 def probe(clip: str) -> tuple[float, float] | None:
@@ -76,7 +85,8 @@ def main() -> int:
             unreadable += 1
             continue
         green, std = m
-        why = ("chroma-key plate (%.0f%% green)" % (green * 100) if green >= GREEN_FRAC
+        why = ("declared synthetic in its own filename" if SYNTHETIC.search(Path(x["bound_file"]).name)
+               else "chroma-key plate (%.0f%% green)" % (green * 100) if green >= GREEN_FRAC
                else "near-flat frame (luma sd %.1f)" % std if std < FLAT_STD else None)
         if why:
             flagged.append((x, why))

@@ -33,6 +33,11 @@ OK_LICENSE = {"free_commercial", "pd", "cc0"}
 TITLE_BLOCK = re.compile(
     r"\b(cartoon|3d render|3d animation|animated character|christmas|halloween|santa|"
     r"emoji|meme|logo|template|mockup|game|anime|toy car|funny)\b", re.I)
+# Names left behind by YouTube-ripping sites. Hyphen, underscore and space all appear, because
+# the identifier is slugified at different points by different tools.
+RIP_SIGNATURE = re.compile(
+    r"y[-_ ]?2mate|ytmp3|savefrom|ss[-_ ]?youtube|9convert|yt1s|snaptube|x2mate|"
+    r"onlinevideoconverter|tubemate|4k[-_ ]?download|ytdlp|youtube[-_ ]?dl", re.I)
 
 
 def slugify(text: str, limit: int = 48) -> str:
@@ -98,6 +103,13 @@ def main() -> int:
                 break
             title = str(r.get("title", "")).strip()
             if not title or TITLE_BLOCK.search(title):
+                continue
+            # A RIPPED UPLOAD ANNOUNCES ITSELF IN ITS OWN NAME. The signature lives in the
+            # archive.org identifier, not the title, so TITLE_BLOCK never sees it -- and the
+            # licence filter cannot help, because the tag is whatever the uploader typed.
+            if RIP_SIGNATURE.search(f"{r.get('id', '')} {r.get('file_path', '')} {title}"):
+                print(f"  RIGHTS: refusing {title[:60]!r} -- its name says it was ripped from "
+                      f"YouTube; a CC0 tag on archive.org is the uploader's word, not proof")
                 continue
             if not all(t in title.lower() for t in terms):
                 continue
