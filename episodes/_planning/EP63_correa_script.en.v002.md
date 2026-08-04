@@ -328,7 +328,7 @@ The court reviewed that de novo, as a pure question of law, and rejected it flat
 
 Then the holding, in its own words. We hold, therefore, that EMTALA, by its terms, covers all patients who come to a hospital's emergency department, and requires that they be appropriately screened, regardless of insurance status or ability to pay.
 
-The panel called the argument an oversimplification, and said so in a footnote, and said so in a footnote. All insurance plans are not created equal. Given the bewildering array of coverage conditions, deductibles, reimbursement rates, and the like, sophisticated but esurient providers have ample provocation to discriminate not only between insured and uninsured patients but also among patients who are insured under different plans.
+The panel called the argument an oversimplification, and said so in a footnote. All insurance plans are not created equal. Given the bewildering array of coverage conditions, deductibles, reimbursement rates, and the like, sophisticated but esurient providers have ample provocation to discriminate not only between insured and uninsured patients but also among patients who are insured under different plans.
 
 Esurient. Greedy. A judge picking a rare word rather than an ordinary one.
 

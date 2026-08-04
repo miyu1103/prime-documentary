@@ -48,7 +48,7 @@ An officer went to an apartment door in Louisville and knocked. Nobody answered.
 
 Three tenants said that is exactly what happened to them. That they never saw the paper. That the first they knew of any of it was when officers arrived with an order to take the apartment back. That is their account.
 
-The proceeding was a forcible entry and detainer action — the summary process a landlord uses to get possession back quickly. Speed is the point of it. Speed is the point of it, and the Commonwealth built the procedure accordingly.
+The proceeding was a forcible entry and detainer action — the summary process a landlord uses to get possession back quickly. Speed is the point of it, and the Commonwealth built the procedure accordingly.
 
 Service of the court's notice fell to the sheriff's office. Joseph Greene was the Jefferson County Sheriff. His deputies carried the writs. Also named in the suit were the Housing Authority itself and several public officials responsible for particular Louisville projects.
 

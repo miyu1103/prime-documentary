@@ -857,3 +857,16 @@ An old embroidered curtain hanging at an apartment window seen from inside, the 
   雨の窓×2・レンガ）。`G224` と `G225` はその二つを丸ごと引き受けます。
 - `mandatory_stills` は `G001`–`G225` の **225件**に更新済みです（`episode_spec.v001.json`）。
 - レンダー前の確認は **accepted(9) + motion ≥ 234** になります（§6-5 の 12 は 9 に読み替え）。
+
+### ★追加2（2026-08-04・映画の最後の画にプレートが無かった）
+
+再レビューで判明：台本 `EP62_greene_script.en.v003.md` の ENDING 最終行が
+`【motif 7: an unfaded square where the paper was】` を指定しているのに、
+この発注書には該当プレートが**1枚も存在しない**（`unfaded` の語がファイル全体で0件）。
+`G209` は「テープごと消えた完全な無地」で、モチーフ7とは別の状態。
+**この1枚が無いと、映画は最後の画を持たないままレンダーされる。**
+
+- `G226.png`
+The same painted door in flat daylight, bare, but with a clean rectangle of unfaded paint where a sheet was fixed for a long time and then removed, the surrounding paint faded a shade lighter by weather and sun, framed exactly as the first image of the film, nobody in frame [STYLE] Avoid: [NEG]
+
+合計 **226枚**（G001–G226）。`mandatory_stills` は THUMB 3枚を除いた **223件**。
