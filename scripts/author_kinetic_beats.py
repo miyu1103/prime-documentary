@@ -115,6 +115,12 @@ def main() -> int:
         pass
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
+    # Overlays do not depend on the images or the mix, only on the copy, so they can be built and
+    # LOOKED AT before a Short is assembled. A phrase that overflows or refits to an unreadable
+    # size is far cheaper to find now than after the plates arrive.
+    ap.add_argument("--emit-jobs", metavar="PATH",
+                    help="write an After Effects job list for every authored beat and stop")
+    ap.add_argument("--from-short", type=int, default=0, help="with --emit-jobs: lowest short id")
     a = ap.parse_args()
 
     seen, problems, written = set(), [], 0
@@ -148,8 +154,27 @@ def main() -> int:
                 s["kinetic_beats"] = out
                 touched = True
                 written += 1
-        if touched and not a.dry_run:
+        if touched and not a.dry_run and not a.emit_jobs:
             f.write_text(json.dumps(d, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    if a.emit_jobs:
+        jobs = []
+        for sid, spec in BEATS.items():
+            if int(re.sub(r"\D", "", sid)) < a.from_short:
+                continue
+            for i, b in enumerate(spec):
+                job = {"id": f"{sid}_{'ab'[i]}", "style": b.get("style", "number"),
+                       "seconds": b.get("seconds", 2.2)}
+                for k in ("big", "bigSize", "label", "labelSize", "words"):
+                    if k in b:
+                        job[k] = b[k]
+                jobs.append(job)
+        Path(a.emit_jobs).write_text(json.dumps(jobs, ensure_ascii=False, indent=2),
+                                     encoding="utf-8")
+        print(f"{len(jobs)} AE jobs -> {a.emit_jobs}")
+        print("  these use the DESIGN's seconds; assemble_short may trim one to fit its cut, "
+              "and re-running render_beats.sh then is what makes the two agree")
+        return 0
 
     missing = sorted(set(BEATS) - seen)
     for m in missing:

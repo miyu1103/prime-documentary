@@ -214,10 +214,12 @@ function stylePunch(comp, job, dur) {
     var size = fitAll(comp, words, job.bigSize || 150);
     var lineH = size * 1.18;
     var top = 700 - (words.length - 1) * lineH / 2;
+    var last = null;
     for (var i = 0; i < words.length; i++) {
         var cy = top + i * lineH;
         if (cy < SAFE_TOP || cy > SAFE_BOT) log("WARN " + job.id + " line " + i + " y=" + cy);
         var tl = mkText(comp, words[i], size, W / 2, cy);
+        last = tl;
         var t0 = 0.16 * i;
         var sc = tl.property("Transform").property("Scale");
         sc.setValueAtTime(t0, [74, 74]);
@@ -228,8 +230,14 @@ function stylePunch(comp, job, dur) {
         o.setValueAtTime(t0, 0);
         o.setValueAtTime(t0 + 0.10, 100);
     }
+    // The rule sits under the MEASURED bottom of the last line, not a fraction of the font size,
+    // so a phrase that refit smaller keeps the same optical gap. Measured on the rendered alpha:
+    // 47 gives a 45 px clear gap, against the 49 px that separates the two lines of type - the
+    // rule reads as a rule rather than as an underline of the last word.
     var lastY = top + (words.length - 1) * lineH;
-    mkRule(comp, lastY + size * 0.74, 46, 0.16 * words.length, 0.16 * words.length + 0.30);
+    var lastRect = last ? last.__rect : {height: size};
+    mkRule(comp, lastY + lastRect.height / 2 + 47, 46,
+           0.16 * words.length, 0.16 * words.length + 0.30);
     mkScrim(comp, (top + lastY) / 2, (lastY - top) / 2 + size, 0.00).moveToEnd();
     exitAll(comp, dur);
 }
