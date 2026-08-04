@@ -48,7 +48,6 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p24', src: 'shorts/short102/short102_02.png', kind: 'image', motion: 'kenburns'},   // return to the hook - replay of the opening framing (2)
   {line: 'L8', id: 'p25', src: 'shorts/short102/short102_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to the hook plate — identical framing to plate 01
   {line: 'L5', id: 'p26', src: 'shorts/short102/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // broken glass scattered across the road after the crash
-  {line: 'L5', id: 'p27', src: 'shorts/short102/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // the officer's car being winched up onto a flatbed truck
   {line: 'L5', id: 'p29', src: 'shorts/short102/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // hands searching under a car seat
   {line: 'L5', id: 'p30', src: 'shorts/short102/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // an empty leather holster lying on a table
   {line: 'L6', id: 'p31', src: 'shorts/short102/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // car keys hanging on a hook board in police custody

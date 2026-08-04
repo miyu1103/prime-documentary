@@ -58,6 +58,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p34', src: 'shorts/short110/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // a hand gripping the back of a wooden chair
   {line: 'L6', id: 'p35', src: 'shorts/short110/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // a leather briefcase left beside an empty chair
   {line: 'L7', id: 'p36', src: 'shorts/short110/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // men in suits walking down stone steps
+  {line: 'L7', id: 'p38', src: 'shorts/short110/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // a long polished table in a panelled room
   {line: 'L7', id: 'p39', src: 'shorts/short110/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // tall window light falling across a wooden floor
   {line: 'L7', id: 'p40', src: 'shorts/short110/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // a domed public building against a pale sky
 ];

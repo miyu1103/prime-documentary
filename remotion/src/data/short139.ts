@@ -34,6 +34,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p10', src: 'shorts/short139/fx/fx_10.mp4', kind: 'video', motion: 'video'},   // a lock mechanism working in macro
   {line: 'L2', id: 'p11', src: 'shorts/short139/short139_11.png', kind: 'image', motion: 'kenburns'},   // a dark phone alone on an interrogation table
   {line: 'L3', id: 'p12', src: 'shorts/short139/short139_12.png', kind: 'image', motion: 'pushin'},   // an open hand with five fingers spread
+  {line: 'L3', id: 'p13', src: 'shorts/short139/fx/fx_13.mp4', kind: 'video', motion: 'video'},   // fingers moving in slow macro
   {line: 'L3', id: 'p14', src: 'shorts/short139/short139_14.png', kind: 'image', motion: 'kenburns'},   // five blank keys on dark felt, one lifted
   {line: 'L3', id: 'p15', src: 'shorts/short139/short139_15.png', kind: 'image', motion: 'pushin'},   // a pen hovering above a blank page
   {line: 'L3', id: 'p16', src: 'shorts/short139/short139_16.png', kind: 'image', motion: 'parallax'},   // the high bench from the floor, empty
@@ -53,6 +54,7 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p30', src: 'shorts/short139/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // an open strongbox with an empty interior
   {line: 'L6', id: 'p31', src: 'shorts/short139/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // a closed spiral notebook on a desk
   {line: 'L6', id: 'p32', src: 'shorts/short139/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a thumb pressed flat on a bare tabletop
+  {line: 'L6', id: 'p33', src: 'shorts/short139/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // a padlock hasp with no lock fitted
   {line: 'L6', id: 'p34', src: 'shorts/short139/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // a bare hand resting on a windowsill
   {line: 'L6', id: 'p35', src: 'shorts/short139/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // a coat hanging over the back of a chair
   {line: 'L7', id: 'p36', src: 'shorts/short139/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // a raised open hand taking an oath
@@ -109,4 +111,11 @@ export const SHORT139: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short139.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short139/short139_kin_a.webm', atSec: 32.17, durSec: 2.3, phrase: "THE KEY, YES THE COMBINATION, NO"},
+    {src: 'shorts/short139/short139_kin_b.webm', atSec: 44.88, durSec: 2.0, phrase: "2025 / THE OPPOSITE"},
+  ],
 };

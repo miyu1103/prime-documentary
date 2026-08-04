@@ -50,9 +50,11 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p26', src: 'shorts/short136/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // a hand resting on the frame of an open car door
   {line: 'L5', id: 'p27', src: 'shorts/short136/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // a person standing at the roadside beside a stopped car
   {line: 'L5', id: 'p28', src: 'shorts/short136/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // a car halted on the hard shoulder with hazard lights blink
+  {line: 'L5', id: 'p29', src: 'shorts/short136/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // traffic streaming past a car stopped on the verge
   {line: 'L5', id: 'p30', src: 'shorts/short136/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // a seat belt fastened across an empty passenger seat
   {line: 'L6', id: 'p31', src: 'shorts/short136/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // a hand closing a small notebook
   {line: 'L6', id: 'p32', src: 'shorts/short136/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a hand turning the ignition key in a car
+  {line: 'L6', id: 'p33', src: 'shorts/short136/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // a car door swinging shut in daylight
   {line: 'L6', id: 'p34', src: 'shorts/short136/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // a car pulling away along an open road
   {line: 'L6', id: 'p35', src: 'shorts/short136/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // an empty two lane road running to the horizon
   {line: 'L7', id: 'p36', src: 'shorts/short136/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // a dog's nose sniffing along the ground
@@ -108,4 +110,11 @@ export const SHORT136: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short136.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short136/short136_kin_a.webm', atSec: 15.75, durSec: 2.0, phrase: "7 / MINUTES"},
+    {src: 'shorts/short136/short136_kin_b.webm', atSec: 40.09, durSec: 2.3, phrase: "THE CLOCK STOPS"},
+  ],
 };

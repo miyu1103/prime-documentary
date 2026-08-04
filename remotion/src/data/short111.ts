@@ -31,6 +31,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p07', src: 'shorts/short111/fx/fx_07.mp4', kind: 'video', motion: 'video'},   // a wall of steel evidence shelves
   {line: 'L2', id: 'p08', src: 'shorts/short111/short111_08.png', kind: 'image', motion: 'kenburns'},   // a trunk forced open in a dark basement
   {line: 'L2', id: 'p09', src: 'shorts/short111/short111_09.png', kind: 'image', motion: 'pushin'},   // a bedroom drawer pulled out onto the floor
+  {line: 'L2', id: 'p10', src: 'shorts/short111/fx/fx_10.mp4', kind: 'video', motion: 'video'},   // empty courtroom gallery benches receding into shadow
   {line: 'L2', id: 'p11', src: 'shorts/short111/short111_11.png', kind: 'image', motion: 'kenburns'},   // an empty witness chair beside a dark bench
   {line: 'L3', id: 'p12', src: 'shorts/short111/short111_12.png', kind: 'image', motion: 'pushin'},   // a 1920s oak bench with a green-shaded lamp
   {line: 'L3', id: 'p13', src: 'shorts/short111/fx/fx_13.mp4', kind: 'video', motion: 'video'},   // a fountain pen writing on a blank page
@@ -48,6 +49,7 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p25', src: 'shorts/short111/short111_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to plate 01: a heavy gate standing open onto flat d
   {line: 'L5', id: 'p26', src: 'shorts/short111/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // an old two storey house seen from the street
   {line: 'L5', id: 'p27', src: 'shorts/short111/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // two men in hats standing at a front door
+  {line: 'L5', id: 'p28', src: 'shorts/short111/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // hands lifting clothes out of a wardrobe
   {line: 'L5', id: 'p29', src: 'shorts/short111/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // cellar shelves lined with jars and boxes
   {line: 'L5', id: 'p30', src: 'shorts/short111/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // a corridor of frosted glass office doors
   {line: 'L6', id: 'p31', src: 'shorts/short111/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // a hand turning a key in a door lock

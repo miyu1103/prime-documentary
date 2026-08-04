@@ -38,6 +38,7 @@ const CUTS: Cut[] = [
   {line: 'L3', id: 'p15', src: 'shorts/short119/short119_15.png', kind: 'image', motion: 'pushin'},   // a home hallway at night with one door ajar
   {line: 'L3', id: 'p16', src: 'shorts/short119/short119_16.png', kind: 'image', motion: 'parallax'},   // an empty leather chair pulled back from a chambers desk
   {line: 'L4', id: 'p17', src: 'shorts/short119/short119_17.png', kind: 'image', motion: 'kenburns'},   // seedling trays under one grow lamp at night
+  {line: 'L4', id: 'p18', src: 'shorts/short119/fx/fx_18.mp4', kind: 'video', motion: 'video'},   // rows of young plants in a nursery
   {line: 'L4', id: 'p19', src: 'shorts/short119/short119_19.png', kind: 'image', motion: 'parallax'},   // a school flagpole at dawn with the rope slack
   {line: 'L4', id: 'p20', src: 'shorts/short119/fx/fx_20.mp4', kind: 'video', motion: 'video'},   // rows of empty auditorium seats facing a dark stage
   {line: 'L4', id: 'p21', src: 'shorts/short119/short119_21.png', kind: 'image', motion: 'pushin'},   // one microphone stand alone on a dark stage
@@ -46,6 +47,7 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p24', src: 'shorts/short119/short119_02.png', kind: 'image', motion: 'kenburns'},   // return to the hook - replay of the opening framing (2)
   {line: 'L8', id: 'p25', src: 'shorts/short119/short119_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to plate 01: an empty classroom of desks with one t
   {line: 'L5', id: 'p27', src: 'shorts/short119/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // a folded uniform on a locker room bench
+  {line: 'L5', id: 'p28', src: 'shorts/short119/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // hands zipping a sports bag shut
   {line: 'L5', id: 'p29', src: 'shorts/short119/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // a whistle on a lanyard hanging from a hook
   {line: 'L5', id: 'p30', src: 'shorts/short119/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // an open locker with one empty hanger
   {line: 'L6', id: 'p31', src: 'shorts/short119/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // a black armband worn on a coat sleeve
@@ -110,7 +112,7 @@ export const SHORT119: ShortData = {
   // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
   // verbatim from the narration line each beat sits on.
   kineticBeats: [
-    {src: 'shorts/short119/short119_kin_a.webm', atSec: 24.62, durSec: 2.3, phrase: "NURSERIES OF DEMOCRACY"},
-    {src: 'shorts/short119/short119_kin_b.webm', atSec: 39.16, durSec: 2.3, phrase: "ONE POST ONE YEAR OUT"},
+    {src: 'shorts/short119/short119_kin_a.webm', atSec: 26.71, durSec: 2.3, phrase: "NURSERIES OF DEMOCRACY"},
+    {src: 'shorts/short119/short119_kin_b.webm', atSec: 40.14, durSec: 2.3, phrase: "ONE POST ONE YEAR OUT"},
   ],
 };

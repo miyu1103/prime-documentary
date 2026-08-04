@@ -30,6 +30,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p06', src: 'shorts/short144/short144_06.png', kind: 'image', motion: 'pushin'},   // a slip left on a windscreen
   {line: 'L2', id: 'p07', src: 'shorts/short144/short144_07.png', kind: 'image', motion: 'parallax'},   // pale points scattered across a dark map
   {line: 'L2', id: 'p08', src: 'shorts/short144/short144_08.png', kind: 'image', motion: 'kenburns'},   // a wall of unlabelled index drawers, one half open
+  {line: 'L2', id: 'p09', src: 'shorts/short144/fx/fx_09.mp4', kind: 'video', motion: 'video'},   // cabinet drawers opening
   {line: 'L2', id: 'p10', src: 'shorts/short144/short144_10.png', kind: 'image', motion: 'parallax'},   // a blank slip left on a corridor bench
   {line: 'L2', id: 'p11', src: 'shorts/short144/short144_11.png', kind: 'image', motion: 'kenburns'},   // a courthouse clock with a blank face
   {line: 'L3', id: 'p12', src: 'shorts/short144/short144_12.png', kind: 'image', motion: 'pushin'},   // a gloved hand typing on a dark terminal
@@ -38,6 +39,7 @@ const CUTS: Cut[] = [
   {line: 'L3', id: 'p15', src: 'shorts/short144/short144_15.png', kind: 'image', motion: 'pushin'},   // a booking tray of belt, laces and coins
   {line: 'L3', id: 'p16', src: 'shorts/short144/short144_16.png', kind: 'image', motion: 'parallax'},   // shoes and a long shadow under a street lamp
   {line: 'L4', id: 'p17', src: 'shorts/short144/short144_17.png', kind: 'image', motion: 'kenburns'},   // a sealed evidence envelope, writing worn blank
+  {line: 'L4', id: 'p18', src: 'shorts/short144/fx/fx_18.mp4', kind: 'video', motion: 'video'},   // empty gallery benches receding into shadow
   {line: 'L4', id: 'p19', src: 'shorts/short144/short144_19.png', kind: 'image', motion: 'parallax'},   // an evidence bag lying on a table
   {line: 'L4', id: 'p20', src: 'shorts/short144/short144_20.png', kind: 'image', motion: 'kenburns'},   // an empty cash drawer standing open
   {line: 'L4', id: 'p21', src: 'shorts/short144/short144_21.png', kind: 'image', motion: 'pushin'},   // coins spilling across a dark table
@@ -108,4 +110,11 @@ export const SHORT144: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short144.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short144/short144_kin_a.webm', atSec: 24.75, durSec: 2.3, phrase: "THE ILLEGAL STOP BECOMES FREE"},
+    {src: 'shorts/short144/short144_kin_b.webm', atSec: 31.88, durSec: 2.3, phrase: "NORMALLY IT IS THROWN OUT"},
+  ],
 };

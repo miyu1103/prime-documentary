@@ -54,6 +54,8 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p30', src: 'shorts/short120/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // a clipboard lying face down on a bench
   {line: 'L6', id: 'p31', src: 'shorts/short120/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // a school bus pulling away in daylight
   {line: 'L6', id: 'p32', src: 'shorts/short120/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a backpack dropped on a front doorstep
+  {line: 'L6', id: 'p33', src: 'shorts/short120/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // a school entrance seen from the pavement outside
+  {line: 'L6', id: 'p34', src: 'shorts/short120/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // a footpath leading away from a school gate
   {line: 'L6', id: 'p35', src: 'shorts/short120/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // a park bench under a tree in afternoon light
   {line: 'L7', id: 'p36', src: 'shorts/short120/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // a stone dropped into still water, rings spreading
   {line: 'L7', id: 'p37', src: 'shorts/short120/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // power lines running away over rooftops

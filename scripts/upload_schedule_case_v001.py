@@ -708,6 +708,34 @@ def main(argv):
             raise SystemExit(
                 "refusing to start an upload the day's quota cannot finish. Wait for the reset, "
                 "or upload through the browser -- that costs no quota at all.")
+
+    # NOTHING THIS EPISODE FORBIDS IS ACTUALLY ON SCREEN -- MEASURED ON THIS RENDER'S PIXELS.
+    # check_spec_satisfied.py already compares forbidden_subjects against cut FILENAMES, and
+    # the archive's filenames lie in both directions: EP56 shipped a red London bus at 9:25
+    # into a film whose highest constraint forbids bus imagery (a sub-postmaster died under
+    # one), and EP61's motorbike rider reached the finished master inside a clip named
+    # lone_tree_in_field. A filename check cannot see a bus, and a contact sheet built from one
+    # frame per clip is not a review of a clip -- EP62 measured every Wan invention in the last
+    # 1-3 seconds of its shot. check_shipped_frames.py samples several frames per cut OUT OF
+    # THIS FILE, weighted toward the end of each cut, tiles them into labelled sheets, and
+    # refuses to go green until somebody has read the sheets and recorded a verdict bound to
+    # these exact bytes. An unread sheet is not a pass.
+    _frames = ROOT / "scripts" / "check_shipped_frames.py"
+    if _frames.is_file():
+        _fr = subprocess.run([sys.executable, str(_frames), "--slug", slug,
+                              "--render", str(VIDEO)], capture_output=True, text=True)
+        _out = (_fr.stdout or "") + (_fr.stderr or "")
+        for _line in _out.splitlines():
+            if _line.startswith("[shipped-frames]") or _line.startswith("  - "):
+                print(_line)
+        if _fr.returncode != 0:
+            _named = [_l.strip() for _l in _out.splitlines()
+                      if "REJECTED at" in _l or _l.strip().startswith("- ")]
+            raise SystemExit(
+                "refusing to upload: the shipped-frame review of THIS render is not green. "
+                + (" | ".join(_named) if _named else _out.strip()[-500:])
+                + f"  Full record: runs/qc/{slug}_shipped_frames.v001.json")
+
     # HARD LOCK: no upload without a green acceptance receipt bound to THIS render's bytes.
     # A video that did not pass scripts/check_final_acceptance.py --emit-receipt physically
     # cannot be scheduled. runtime_band is the channel-wide owner-accepted documented deviation.

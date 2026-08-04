@@ -58,7 +58,9 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p35', src: 'shorts/short138/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // a crowded railway platform seen from above
   {line: 'L7', id: 'p36', src: 'shorts/short138/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // one chair at a long empty table
   {line: 'L7', id: 'p37', src: 'shorts/short138/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // a row of identical stone buildings along a street
+  {line: 'L7', id: 'p38', src: 'shorts/short138/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // a patchwork quilt laid out flat
   {line: 'L7', id: 'p39', src: 'shorts/short138/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // wide stone steps up to a public building
+  {line: 'L7', id: 'p40', src: 'shorts/short138/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // case files tied with string on a shelf
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -108,4 +110,11 @@ export const SHORT138: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short138.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short138/short138_kin_a.webm', atSec: 21.84, durSec: 2.0, phrase: "2023 / ONE JUDGE"},
+    {src: 'shorts/short138/short138_kin_b.webm', atSec: 45.19, durSec: 2.3, phrase: "NO NATIONAL RULE A PATCHWORK"},
+  ],
 };

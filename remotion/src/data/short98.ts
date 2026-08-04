@@ -27,6 +27,7 @@ const CUTS: Cut[] = [
   {line: 'L1', id: 'p03', src: 'shorts/short98/short98_03.png', kind: 'image', motion: 'pushin', fast: true},   // courthouse columns from directly below against a storm sky
   {line: 'L1', id: 'p04', src: 'shorts/short98/short98_04.png', kind: 'image', motion: 'parallax'},   // the single roof beacon of a cruiser at a suburban kerb
   {line: 'L2', id: 'p05', src: 'shorts/short98/short98_05.png', kind: 'image', motion: 'kenburns'},   // an empty judge's bench seen from the courtroom floor
+  {line: 'L2', id: 'p06', src: 'shorts/short98/fx/fx_06.mp4', kind: 'video', motion: 'video'},   // rows of empty courtroom gallery benches
   {line: 'L2', id: 'p07', src: 'shorts/short98/short98_07.png', kind: 'image', motion: 'parallax'},   // a rubber stamp resting beside a blank warrant form
   {line: 'L2', id: 'p08', src: 'shorts/short98/short98_08.png', kind: 'image', motion: 'kenburns'},   // a work boot wedged under the descending garage door
   {line: 'L2', id: 'p09', src: 'shorts/short98/short98_09.png', kind: 'image', motion: 'pushin'},   // a dark relief map of the United States, borders as glowing
@@ -52,10 +53,13 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p29', src: 'shorts/short98/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // the noise complaint came from a house like this
   {line: 'L5', id: 'p30', src: 'shorts/short98/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // and a violent assault is a misdemeanor too
   {line: 'L6', id: 'p31', src: 'shorts/short98/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // someone has to actually look
+  {line: 'L6', id: 'p32', src: 'shorts/short98/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // flight is a real fact an officer can weigh
   {line: 'L6', id: 'p33', src: 'shorts/short98/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // an officer deciding at somebody's door
+  {line: 'L6', id: 'p34', src: 'shorts/short98/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // the chamber the opinion was written for
   {line: 'L6', id: 'p35', src: 'shorts/short98/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // the emergency is not there every time
   {line: 'L7', id: 'p36', src: 'shorts/short98/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // all nine of them agreed on the result
   {line: 'L7', id: 'p37', src: 'shorts/short98/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // but two of them sat apart on the reasoning
+  {line: 'L7', id: 'p38', src: 'shorts/short98/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // two opinions written side by side
   {line: 'L7', id: 'p39', src: 'shorts/short98/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // the door a broader rule would have opened
   {line: 'L7', id: 'p40', src: 'shorts/short98/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // what a broader rule takes off the door
 ];

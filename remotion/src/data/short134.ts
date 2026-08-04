@@ -51,6 +51,7 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p27', src: 'shorts/short134/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // two hands splicing a pair of wires with pliers
   {line: 'L5', id: 'p28', src: 'shorts/short134/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // a vintage car parked at the kerb of a quiet street
   {line: 'L5', id: 'p29', src: 'shorts/short134/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // the wooden porch and front steps of a house seen from the 
+  {line: 'L5', id: 'p30', src: 'shorts/short134/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // wooden crates of glass bottles stacked in a store room
   {line: 'L6', id: 'p31', src: 'shorts/short134/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // a marble corridor running toward one bright window
   {line: 'L6', id: 'p32', src: 'shorts/short134/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // the gears and escapement of a clock turning behind glass
   {line: 'L6', id: 'p33', src: 'shorts/short134/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // a front doorstep and its worn threshold strip seen from ab
@@ -110,4 +111,11 @@ export const SHORT134: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short134.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short134/short134_kin_a.webm', atSec: 19.67, durSec: 2.3, phrase: "YOU CANNOT SEIZE A SENTENCE"},
+    {src: 'shorts/short134/short134_kin_b.webm', atSec: 31.49, durSec: 2.0, phrase: "1928 / THE OLD RULE"},
+  ],
 };

@@ -111,4 +111,11 @@ export const SHORT140: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short140.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short140/short140_kin_a.webm', atSec: 17.13, durSec: 2.3, phrase: "A FENCE NOT THE GROUND"},
+    {src: 'shorts/short140/short140_kin_b.webm', atSec: 47.96, durSec: 2.3, phrase: "NOBODY PAYS FOR THE WARNING"},
+  ],
 };

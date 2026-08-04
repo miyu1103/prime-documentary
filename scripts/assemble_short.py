@@ -74,7 +74,12 @@ def stage_footage(sid: str, plates: list[dict], force: bool) -> list[dict]:
             print(f"  plate {p['n']}: bound clip missing on disk -> {src}")
             continue
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(src),
-                        "-vf", "crop=ih*9/16:ih,scale=1080:1920:flags=lanczos,fps=30",
+                        # Clamp the crop to the frame. A source TALLER than 9:16 makes ih*9/16
+                        # wider than the picture and ffmpeg refuses outright: a 2160x3844 clip
+                        # asked for 2162 px of a 2160 px frame and took the whole assembly down.
+                        # Now that the archive drives are indexed there are vertical sources in
+                        # the pool, so this is not a rare case any more.
+                        "-vf", "crop='min(iw,ih*9/16)':ih,scale=1080:1920:flags=lanczos,fps=30",
                         "-an", "-c:v", "libx264", "-crf", "18", "-preset", "medium",
                         "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out)], check=True)
         rights.append({"file": out.name, "plate": p["n"], "ledger_title": p.get("bound_title"),

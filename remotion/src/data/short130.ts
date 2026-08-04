@@ -55,6 +55,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p31', src: 'shorts/short130/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // an interview room table and two chairs
   {line: 'L6', id: 'p32', src: 'shorts/short130/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a police radio handset on a dashboard
   {line: 'L6', id: 'p33', src: 'shorts/short130/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // a hand lifting a telephone receiver from its cradle
+  {line: 'L6', id: 'p34', src: 'shorts/short130/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // wall calendar pages turning in a breeze
   {line: 'L6', id: 'p35', src: 'shorts/short130/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // an empty park bench under trees in daylight
   {line: 'L7', id: 'p36', src: 'shorts/short130/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // a person's hands held together behind their back
   {line: 'L7', id: 'p38', src: 'shorts/short130/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // a robotic arm moving sample trays

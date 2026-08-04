@@ -32,6 +32,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p08', src: 'shorts/short107/short107_08.png', kind: 'image', motion: 'kenburns'},   // a hand pressing a pen to a blank statement form
   {line: 'L2', id: 'p09', src: 'shorts/short107/short107_09.png', kind: 'image', motion: 'pushin'},   // a wall clock with a blank featureless face
   {line: 'L2', id: 'p10', src: 'shorts/short107/short107_10.png', kind: 'image', motion: 'parallax'},   // a desk lamp burning over a blank witness statement form
+  {line: 'L2', id: 'p11', src: 'shorts/short107/fx/fx_11.mp4', kind: 'video', motion: 'video'},   // rows of empty courtroom gallery benches
   {line: 'L3', id: 'p12', src: 'shorts/short107/short107_12.png', kind: 'image', motion: 'pushin'},   // an empty witness chair in a cone of light beside a tall be
   {line: 'L3', id: 'p13', src: 'shorts/short107/short107_13.png', kind: 'image', motion: 'parallax'},   // one hand raised palm-forward in the dark
   {line: 'L3', id: 'p14', src: 'shorts/short107/short107_14.png', kind: 'image', motion: 'kenburns'},   // a photograph-sized rectangle of white light on a dark wall

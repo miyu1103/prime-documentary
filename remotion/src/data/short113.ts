@@ -51,6 +51,7 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p27', src: 'shorts/short113/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // a wall of safety deposit boxes with one drawer out
   {line: 'L5', id: 'p28', src: 'shorts/short113/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // fingers turning the dial of an old telephone
   {line: 'L5', id: 'p29', src: 'shorts/short113/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // courthouse columns seen from below in daylight
+  {line: 'L5', id: 'p30', src: 'shorts/short113/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // a telephone switchboard with rows of patch cables
   {line: 'L6', id: 'p31', src: 'shorts/short113/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // hands counting banknotes across a counter
   {line: 'L6', id: 'p32', src: 'shorts/short113/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a plain envelope pushed across a counter
   {line: 'L6', id: 'p33', src: 'shorts/short113/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // personal belongings dropped into a metal tray

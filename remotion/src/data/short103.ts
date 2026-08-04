@@ -31,6 +31,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p07', src: 'shorts/short103/short103_07.png', kind: 'image', motion: 'parallax'},   // one high-backed chair pulled forward from eight in shadow
   {line: 'L2', id: 'p08', src: 'shorts/short103/short103_08.png', kind: 'image', motion: 'kenburns'},   // a hand pressing a pen to a blank sheet
   {line: 'L2', id: 'p09', src: 'shorts/short103/short103_09.png', kind: 'image', motion: 'pushin'},   // two hands gripping a chrome stretcher rail
+  {line: 'L2', id: 'p10', src: 'shorts/short103/fx/fx_10.mp4', kind: 'video', motion: 'video'},   // rows of empty courtroom gallery benches
   {line: 'L2', id: 'p11', src: 'shorts/short103/short103_11.png', kind: 'image', motion: 'kenburns'},   // a shaft of light crossing an empty living room, thick with
   {line: 'L3', id: 'p12', src: 'shorts/short103/short103_12.png', kind: 'image', motion: 'pushin'},   // the threshold from inside: a doormat and boots stopped out
   {line: 'L3', id: 'p13', src: 'shorts/short103/short103_13.png', kind: 'image', motion: 'parallax'},   // the United States with borders as glowing seams
@@ -59,6 +60,7 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p36', src: 'shorts/short103/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // a marble hall with tall interior columns, all nine agreein
   {line: 'L7', id: 'p37', src: 'shorts/short103/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // a wide stone staircase running back down to the lower cour
   {line: 'L7', id: 'p38', src: 'shorts/short103/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // a cardboard box of folders carried away to be heard again
+  {line: 'L7', id: 'p39', src: 'shorts/short103/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // the pages of a wall calendar flipping over, the case resta
   {line: 'L7', id: 'p40', src: 'shorts/short103/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // a wristwatch and a wallet in a plastic tray
 ];
 

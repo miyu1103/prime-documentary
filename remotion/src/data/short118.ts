@@ -60,6 +60,7 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p36', src: 'shorts/short118/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // a heap of broken tree branches on bare ground
   {line: 'L7', id: 'p37', src: 'shorts/short118/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // a dump truck tipping a load of rubble
   {line: 'L7', id: 'p38', src: 'shorts/short118/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // an excavator arm pushing a pile of brush
+  {line: 'L7', id: 'p39', src: 'shorts/short118/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // puddles standing across a rutted dirt lot
   {line: 'L7', id: 'p40', src: 'shorts/short118/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // a lone utility pole standing in an empty lot
 ];
 
@@ -115,6 +116,6 @@ export const SHORT118: ShortData = {
   // verbatim from the narration line each beat sits on.
   kineticBeats: [
     {src: 'shorts/short118/short118_kin_a.webm', atSec: 23.84, durSec: 1.95, phrase: "2009 / PFIZER LEFT"},
-    {src: 'shorts/short118/short118_kin_b.webm', atSec: 54.21, durSec: 2.5, phrase: "A DUMP FOR STORM DEBRIS"},
+    {src: 'shorts/short118/short118_kin_b.webm', atSec: 53.66, durSec: 2.5, phrase: "A DUMP FOR STORM DEBRIS"},
   ],
 };

@@ -30,6 +30,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p06', src: 'shorts/short116/fx/fx_06.mp4', kind: 'video', motion: 'video'},   // a magnifying lens held over a blank page
   {line: 'L2', id: 'p07', src: 'shorts/short116/short116_07.png', kind: 'image', motion: 'parallax'},   // a lone vehicle on a road shoulder at dusk with hazards on
   {line: 'L2', id: 'p08', src: 'shorts/short116/short116_08.png', kind: 'image', motion: 'kenburns'},   // a vehicle at the top of an auction ramp in a dark warehous
+  {line: 'L2', id: 'p09', src: 'shorts/short116/fx/fx_09.mp4', kind: 'video', motion: 'video'},   // rows of vehicles waiting on an auction lot
   {line: 'L2', id: 'p10', src: 'shorts/short116/short116_10.png', kind: 'image', motion: 'parallax'},   // a rubber stamp pressed down on a blank page
   {line: 'L2', id: 'p11', src: 'shorts/short116/short116_11.png', kind: 'image', motion: 'kenburns'},   // a filing drawer sliding shut on unlabelled folders
   {line: 'L3', id: 'p12', src: 'shorts/short116/short116_12.png', kind: 'image', motion: 'pushin'},   // one midwestern state glowing as a bare outline on a dark m
@@ -40,6 +41,7 @@ const CUTS: Cut[] = [
   {line: 'L4', id: 'p17', src: 'shorts/short116/short116_17.png', kind: 'image', motion: 'kenburns'},   // a low concrete ceiling pressing down over one bulb
   {line: 'L4', id: 'p18', src: 'shorts/short116/short116_18.png', kind: 'image', motion: 'pushin'},   // a long stone stair rising into darkness toward one lamp
   {line: 'L4', id: 'p19', src: 'shorts/short116/fx/fx_19.mp4', kind: 'video', motion: 'video'},   // clock hands sweeping with motion blur
+  {line: 'L4', id: 'p20', src: 'shorts/short116/fx/fx_20.mp4', kind: 'video', motion: 'video'},   // calendar pages thinned to almost nothing
   {line: 'L4', id: 'p21', src: 'shorts/short116/short116_21.png', kind: 'image', motion: 'pushin'},   // a corridor of closed legal aid doors with one bulb burning
   {line: 'L4', id: 'p22', src: 'shorts/short116/short116_22.png', kind: 'image', motion: 'parallax'},   // one car key lying alone in the middle of a vast dark floor
   {line: 'L8', id: 'p23', src: 'shorts/short116/short116_04.png', kind: 'image', motion: 'parallax'},   // return to the hook - replay of the opening framing (1)
@@ -113,7 +115,7 @@ export const SHORT116: ShortData = {
   // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
   // verbatim from the narration line each beat sits on.
   kineticBeats: [
-    {src: 'shorts/short116/short116_kin_a.webm', atSec: 25.99, durSec: 2.3, phrase: "A CEILING MOST NEVER REACH"},
+    {src: 'shorts/short116/short116_kin_a.webm', atSec: 26.97, durSec: 2.3, phrase: "A CEILING MOST NEVER REACH"},
     {src: 'shorts/short116/short116_kin_b.webm', atSec: 41.92, durSec: 2.0, phrase: "2019 / THE GAP CLOSED"},
   ],
 };

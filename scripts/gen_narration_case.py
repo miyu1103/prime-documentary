@@ -101,6 +101,19 @@ SECTION_HEADINGS = [
     ("ACT_3", re.compile(r"^ACT\s+III\b", re.IGNORECASE)),
     ("ACT_2", re.compile(r"^ACT\s+II\b", re.IGNORECASE)),
     ("ACT_1", re.compile(r"^ACT\s+I\b", re.IGNORECASE)),
+    # EP62 (greene) heads its sections with the CONTRACT KEYS themselves -- `## OP`,
+    # `## ACT_1` ... `## ACT_5` -- because episode_spec.v001.json tells the writer to
+    # spell the headings the way section_vocabulary spells them (EP61 used `## OPENING`
+    # where the contract said `OP`, and the mismatch had to be handed on as a warning).
+    # None of these can collide with the prose forms above: `^OP\b` cannot match
+    # "OPENING" (no word boundary between P and E), and `^ACT_N\b` cannot match
+    # "ACT I"/"ACT IV" (underscore is a word character, `\s+` requires whitespace).
+    ("OP", re.compile(r"^OP\b", re.IGNORECASE)),
+    ("ACT_1", re.compile(r"^ACT_1\b", re.IGNORECASE)),
+    ("ACT_2", re.compile(r"^ACT_2\b", re.IGNORECASE)),
+    ("ACT_3", re.compile(r"^ACT_3\b", re.IGNORECASE)),
+    ("ACT_4", re.compile(r"^ACT_4\b", re.IGNORECASE)),
+    ("ACT_5", re.compile(r"^ACT_5\b", re.IGNORECASE)),
     # THE NIGHT (EP60): no other heading in any script begins with "THE", and this
     # pattern is anchored, so it can neither swallow nor be swallowed by the acts above.
     # It stays BELOW the ACT patterns anyway, since this list is matched in order and
@@ -198,6 +211,31 @@ EPISODES = {
         # sections, exactly matching episode_spec.v001.json section_vocabulary
         # (HOOK, OP, ACT_1..ACT_5, ENDING) that the 99 figure beats are keyed to.
         "sections": SECTION_ORDER_5ACT,
+    },
+    "PD-2026-062-greene": {
+        # LOCKED script is v003. v001, v002 and v004 are stale and must not be used.
+        # v003 is the verified pass: 77 verbatim runs re-checked against 456 U.S. 444 with
+        # zero fabrications and zero misattributions, all ten logged defects closed, and the
+        # amicus attribution at line 247 corrected to scope "urged the Court to affirm" to
+        # the Antioch School of Law alone (what the reporter supports).
+        "planning": "EP62_greene_script.en.v003.md",
+        # FINISHED-RATE model, not the raw speech rate. EP60 and EP61 measured 178.4 and
+        # 178.3 words per finished minute -- that figure already carries the pipeline's own
+        # inter-chunk gaps (143 s on EP60, 161 s on EP61). 5,250 narration words / 178.35
+        # = 1766 s (29:26), inside the contract band [1620, 1920]. The 191-195 wpm raw
+        # speech rate is NOT used here: it charges nothing for the gaps and would report
+        # this script as short.
+        "design_speech_seconds": 1766.0,
+        # Eight headings, spelled as episode_spec.v001.json section_vocabulary spells them:
+        # HOOK / OP / ACT_1..ACT_5 / ENDING. Every one carries narration (no BRAND STING).
+        "sections": SECTION_ORDER_5ACT,
+        # PINNED per-episode voice settings (owner instruction 2026-08-04). EP60 and EP61
+        # recorded only voice_id and model_id, so pace parity across episodes is unproven
+        # and check_script_length still carries a 237 wpm fast-end risk from two episodes
+        # whose settings had drifted. These override the per-delivery presets' stability
+        # and similarity_boost for EVERY chunk of this episode and are written into
+        # voice_plan.v001.json and the narration index provenance.
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
 }
 
@@ -407,12 +445,30 @@ def append_event(ep: str, event: dict) -> None:
 PLAN_KEYS = ("chunk_id", "section", "delivery", "spoken_text", "text_sha256", "idempotency_key")
 
 
-def write_voice_plan(ep: str, chunks: list[dict], out_dir: Path, plan_path: Path) -> None:
+def resolve_settings(cfg: dict) -> dict[str, dict]:
+    """Per-delivery voice settings, with the episode's own pins applied on top.
+
+    An episode may declare `voice_settings` in the registry to pin values across every
+    delivery (EP62 pins stability 0.35 / similarity_boost 0.80). Keys the episode does
+    not name keep the shipped per-delivery preset. Episodes that declare nothing get
+    exactly SETTINGS, unchanged.
+    """
+    override = cfg.get("voice_settings") or {}
+    return {d: {**preset, **override} for d, preset in SETTINGS.items()}
+
+
+def write_voice_plan(ep: str, chunks: list[dict], out_dir: Path, plan_path: Path,
+                     settings_by_delivery: dict[str, dict] | None = None) -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
+    settings_by_delivery = settings_by_delivery or SETTINGS
     plan_chunks = [{k: c[k] for k in PLAN_KEYS} for c in chunks]
     plan_path.write_text(json.dumps(
         {"episode_id": ep, "revision": SCRIPT_REVISION, "provider": "ElevenLabs",
-         "voice_id": VOICE_ID, "model_id": MODEL, "chunks": plan_chunks},
+         "voice_id": VOICE_ID, "model_id": MODEL,
+         # The exact settings sent to the provider, per delivery. Recorded so that a
+         # later episode can prove pace parity instead of assuming it.
+         "voice_settings": settings_by_delivery,
+         "chunks": plan_chunks},
         indent=2, ensure_ascii=False) + "\n", "utf-8")
 
 
@@ -470,7 +526,8 @@ def concat_master(chunks: list[dict], outdir: Path, master: Path,
 
 def write_index(ep: str, source_script_rel: str, chunks: list[dict], offsets: dict[str, dict],
                 master: Path, index_path: Path, est_cost: float,
-                gap_beat: float, gap_section: float) -> dict:
+                gap_beat: float, gap_section: float,
+                settings_by_delivery: dict[str, dict] | None = None) -> dict:
     total = round(dur(master), 3)
     speech = round(sum(o["seconds"] for o in offsets.values()), 3)
     words = sum(len(c["spoken_text"].split()) for c in chunks)
@@ -512,6 +569,7 @@ def write_index(ep: str, source_script_rel: str, chunks: list[dict], offsets: di
             "provider": "ElevenLabs",
             "voice_id": VOICE_ID,
             "model_id": MODEL,
+            "voice_settings": settings_by_delivery or SETTINGS,
             "estimated_cost_usd": est_cost,
             "gap_beat_seconds": gap_beat,
             "gap_section_seconds": gap_section,
@@ -572,7 +630,8 @@ def main(argv: list[str]) -> int:
         print(f"  section mix: {by}")
         return 0
 
-    write_voice_plan(ep, chunks, out_dir, voice_plan)
+    settings_by_delivery = resolve_settings(cfg)
+    write_voice_plan(ep, chunks, out_dir, voice_plan, settings_by_delivery)
     print(f"voice_plan -> {voice_plan.relative_to(ROOT)}")
     if args.plan_only:
         return 0
@@ -608,7 +667,7 @@ def main(argv: list[str]) -> int:
                     continue
                 print(f"  {c['chunk_id']} text changed (sha mismatch) -> regenerating")
             body = json.dumps({"text": c["spoken_text"], "model_id": MODEL,
-                               "voice_settings": SETTINGS[c["delivery"]]}).encode("utf-8")
+                               "voice_settings": settings_by_delivery[c["delivery"]]}).encode("utf-8")
             req = urllib.request.Request(TTS.format(vid=VOICE_ID), data=body,
                                          headers={"xi-api-key": key, "Content-Type": "application/json",
                                                   "Accept": "audio/mpeg"}, method="POST")
@@ -675,7 +734,7 @@ def main(argv: list[str]) -> int:
     master = media_root() / "episodes" / ep / "06_voice" / "master" / "vc_master_v001.mp3"
     offsets = concat_master(chunks, outdir, master, args.gap_beat, args.gap_section)
     index = write_index(ep, source_script_rel, chunks, offsets, master, index_path,
-                        est, args.gap_beat, args.gap_section)
+                        est, args.gap_beat, args.gap_section, settings_by_delivery)
     speech = index["totals"]["speech_seconds"]
     total = index["total_seconds"]
     append_event(ep, {

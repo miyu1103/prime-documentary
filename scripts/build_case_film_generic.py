@@ -342,6 +342,26 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
     # Any person still already present in `stills` is not duplicated.
     still_pool_src = people + [s for s in stills if s not in set(people)]
 
+    # THE SAME PICTURE MUST NOT APPEAR TWICE, ONCE FROZEN AND ONCE MOVING.
+    # i2v conversion keeps the stem: img/G045.png and motion/G045.mp4 are one picture. The
+    # manifest scans both directories, so without this both reach the cut list and the viewer
+    # sees the identical frame twice -- the reuse the owner has ruled out. The motion version
+    # wins: it is that picture with movement, which is the direction the video-share floor
+    # already pushes. check_spec_satisfied matches mandatory_stills by stem, so a mandatory
+    # plate stays satisfied by its .mp4.
+    def _stem(rel: str) -> str:
+        return rel.split("/")[-1].rsplit(".", 1)[0].lower()
+
+    _moving = {_stem(m) for m in motion_pool}
+    if _moving:
+        _superseded = [s for s in still_pool_src if _stem(s) in _moving]
+        if _superseded:
+            still_pool_src = [s for s in still_pool_src if _stem(s) not in _moving]
+            print(f"  [dedup] {len(_superseded)} still(s) dropped -- the same picture is in the "
+                  f"motion pool and will be used there instead: "
+                  + ", ".join(sorted(_stem(s) for s in _superseded)[:10])
+                  + (" ..." if len(_superseded) > 10 else ""))
+
     # PIN WHAT THE LAST FILM DID NOT USE.
     # A surplus pool means some stills are left out. Left to an even stride, the ones left out
     # are arbitrary -- and on EP54 that arbitrarily excluded two of the fourteen courtroom

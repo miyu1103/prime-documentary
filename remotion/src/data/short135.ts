@@ -32,6 +32,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p08', src: 'shorts/short135/fx/fx_08.mp4', kind: 'video', motion: 'video'},   // hands turning pages
   {line: 'L2', id: 'p09', src: 'shorts/short135/short135_09.png', kind: 'image', motion: 'pushin'},   // a wall of unlabelled bound volumes
   {line: 'L2', id: 'p10', src: 'shorts/short135/short135_10.png', kind: 'image', motion: 'parallax'},   // a handrail polished bright by decades of hands
+  {line: 'L2', id: 'p11', src: 'shorts/short135/fx/fx_11.mp4', kind: 'video', motion: 'video'},   // empty benches in a courtroom
   {line: 'L3', id: 'p12', src: 'shorts/short135/short135_12.png', kind: 'image', motion: 'pushin'},   // one point of light moving across a dark city grid
   {line: 'L3', id: 'p13', src: 'shorts/short135/short135_13.png', kind: 'image', motion: 'parallax'},   // a dark phone lying on a car seat
   {line: 'L3', id: 'p14', src: 'shorts/short135/fx/fx_14.mp4', kind: 'video', motion: 'video'},   // headlights crossing wet asphalt
@@ -53,6 +54,8 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p30', src: 'shorts/short135/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // daylight through a window falling across an empty desk
   {line: 'L6', id: 'p31', src: 'shorts/short135/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // a front door standing wide open onto daylight
   {line: 'L6', id: 'p32', src: 'shorts/short135/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a row of house windows along a residential street
+  {line: 'L6', id: 'p34', src: 'shorts/short135/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // a mailbox standing at the end of a driveway
+  {line: 'L6', id: 'p35', src: 'shorts/short135/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // laundry hanging on a line in a back garden
   {line: 'L7', id: 'p37', src: 'shorts/short135/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // a hand hanging a telephone handset back on its hook
   {line: 'L7', id: 'p38', src: 'shorts/short135/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // a doorway with no door left in a bare wall
   {line: 'L7', id: 'p39', src: 'shorts/short135/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // a hand holding a phone to an ear outdoors
@@ -106,4 +109,11 @@ export const SHORT135: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short135.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short135/short135_kin_a.webm', atSec: 25.32, durSec: 2.3, phrase: "THE MORE WATCHED THE LESS PRIVATE"},
+    {src: 'shorts/short135/short135_kin_b.webm', atSec: 46.56, durSec: 2.3, phrase: "PRIVACY LEFT THE WALLS"},
+  ],
 };

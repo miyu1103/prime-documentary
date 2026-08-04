@@ -41,6 +41,7 @@ const CUTS: Cut[] = [
   {line: 'L4', id: 'p17', src: 'shorts/short109/fx/fx_17.mp4', kind: 'video', motion: 'video'},   // banded stacks of cash under one lamp
   {line: 'L4', id: 'p18', src: 'shorts/short109/short109_18.png', kind: 'image', motion: 'pushin'},   // a booking tray holding a belt, keys and a few coins
   {line: 'L4', id: 'p19', src: 'shorts/short109/short109_19.png', kind: 'image', motion: 'parallax'},   // a leaning stack of thirteen thin documents, every cover bl
+  {line: 'L4', id: 'p20', src: 'shorts/short109/fx/fx_20.mp4', kind: 'video', motion: 'video'},   // rows of empty courtroom gallery benches
   {line: 'L4', id: 'p21', src: 'shorts/short109/short109_21.png', kind: 'image', motion: 'pushin'},   // a padlock closed on a steel gate across a library aisle
   {line: 'L4', id: 'p22', src: 'shorts/short109/short109_22.png', kind: 'image', motion: 'parallax'},   // heavy doors swinging open onto blinding daylight
   {line: 'L8', id: 'p23', src: 'shorts/short109/short109_03.png', kind: 'image', motion: 'pushin'},   // return to the hook - replay of the opening framing (1)

@@ -38,6 +38,7 @@ const CUTS: Cut[] = [
   {line: 'L3', id: 'p14', src: 'shorts/short99/short99_14.png', kind: 'image', motion: 'kenburns'},   // the dark garage past the rear bumper of a parked wagon
   {line: 'L3', id: 'p15', src: 'shorts/short99/short99_15.png', kind: 'image', motion: 'pushin'},   // two hands laid flat on the cold hood of the wagon
   {line: 'L3', id: 'p16', src: 'shorts/short99/short99_16.png', kind: 'image', motion: 'parallax'},   // a worn doormat and a single boot print, seen from above
+  {line: 'L4', id: 'p17', src: 'shorts/short99/fx/fx_17.mp4', kind: 'video', motion: 'video'},   // rows of empty courtroom gallery benches
   {line: 'L4', id: 'p18', src: 'shorts/short99/short99_18.png', kind: 'image', motion: 'pushin'},   // a single empty chair in a cone of light in the courtroom w
   {line: 'L4', id: 'p19', src: 'shorts/short99/short99_19.png', kind: 'image', motion: 'parallax'},   // a gavel caught mid-strike
   {line: 'L4', id: 'p20', src: 'shorts/short99/short99_20.png', kind: 'image', motion: 'kenburns'},   // the United States with borders as glowing seams
@@ -49,6 +50,7 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p26', src: 'shorts/short99/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // evidence about to be destroyed
   {line: 'L5', id: 'p27', src: 'shorts/short99/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // a person in danger inside
   {line: 'L5', id: 'p28', src: 'shorts/short99/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // a suspect actively getting away
+  {line: 'L5', id: 'p29', src: 'shorts/short99/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // what the law is willing to call an emergency
   {line: 'L5', id: 'p30', src: 'shorts/short99/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // the door those exceptions are about
   {line: 'L6', id: 'p31', src: 'shorts/short99/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // the state's answer was yes, automatically
   {line: 'L6', id: 'p32', src: 'shorts/short99/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // any flight at all, from anything
@@ -58,6 +60,8 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p36', src: 'shorts/short99/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // the protection switched off
   {line: 'L7', id: 'p37', src: 'shorts/short99/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // the house the Fourth Amendment is strongest in
   {line: 'L7', id: 'p38', src: 'shorts/short99/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // the trivial file the whole chase was over
+  {line: 'L7', id: 'p39', src: 'shorts/short99/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // the strongest protection, emptied out
+  {line: 'L7', id: 'p40', src: 'shorts/short99/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // a trivial chase over a trivial thing
 ];
 
 const buildBeats = (): ShortBeat[] => {

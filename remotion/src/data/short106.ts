@@ -32,6 +32,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p08', src: 'shorts/short106/short106_08.png', kind: 'image', motion: 'kenburns'},   // a wall clock with a blank featureless face
   {line: 'L2', id: 'p09', src: 'shorts/short106/short106_09.png', kind: 'image', motion: 'pushin'},   // two hands laid flat on a scarred wooden table
   {line: 'L2', id: 'p10', src: 'shorts/short106/short106_10.png', kind: 'image', motion: 'parallax'},   // a single empty wooden chair in a cone of light
+  {line: 'L2', id: 'p11', src: 'shorts/short106/fx/fx_11.mp4', kind: 'video', motion: 'video'},   // rows of empty courtroom gallery benches
   {line: 'L3', id: 'p12', src: 'shorts/short106/short106_12.png', kind: 'image', motion: 'pushin'},   // a lab bench with a heavy analyser, all displays dark
   {line: 'L3', id: 'p13', src: 'shorts/short106/short106_13.png', kind: 'image', motion: 'parallax'},   // thick iron bars with a dark empty cell beyond
   {line: 'L3', id: 'p14', src: 'shorts/short106/short106_14.png', kind: 'image', motion: 'kenburns'},   // a rack of sealed glass sample vials in a steel tray
@@ -51,6 +52,7 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p28', src: 'shorts/short106/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // a coat left over the back of an empty chair
   {line: 'L5', id: 'p29', src: 'shorts/short106/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // a long corridor running toward a lit doorway
   {line: 'L5', id: 'p30', src: 'shorts/short106/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // a man standing behind iron bars in a lit corridor
+  {line: 'L6', id: 'p31', src: 'shorts/short106/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // banded stacks of banknotes lying on a table
   {line: 'L6', id: 'p32', src: 'shorts/short106/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a closed folder sitting in a metal office tray
   {line: 'L6', id: 'p33', src: 'shorts/short106/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // an empty cell with a small barred window
   {line: 'L6', id: 'p34', src: 'shorts/short106/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // a steel booking tray holding a belt and loose coins
@@ -114,6 +116,6 @@ export const SHORT106: ShortData = {
   // verbatim from the narration line each beat sits on.
   kineticBeats: [
     {src: 'shorts/short106/short106_kin_a.webm', atSec: 15.47, durSec: 2.3, phrase: "A DECADE NOT HIS CRIME"},
-    {src: 'shorts/short106/short106_kin_b.webm', atSec: 33.01, durSec: 2.3, phrase: "$100,000 FOR 11 YEARS"},
+    {src: 'shorts/short106/short106_kin_b.webm', atSec: 34.65, durSec: 2.3, phrase: "$100,000 FOR 11 YEARS"},
   ],
 };
