@@ -756,3 +756,32 @@ A shallow wooden filing drawer pulled fully open on a painted metal cabinet and 
 
 合計 **227枚**（うち本編 223枚 + PEOPLE 10 + THUMB 4）。
 ★ **サムネプレートだけは本編の低輝度指定を上書きし、平均輝度38以上・標準偏差45以上を狙うこと。**
+
+### ★再発注（2026-08-05・目視QCの結果、必須）
+
+モチーフの連鎖（**一つの物の八つの状態**）を目視した。**状態4 と 状態7 の「同じ座席」が3脚とも別の椅子だった。**
+
+| プレート | 指定 | 生成されたもの |
+|---|---|---|
+| `C136` 状態4 | その座席 | 茶色レザーの胘なし椅子・目線 |
+| `C207` 状態7 | **同じ座席を真上から** | オリーブ色のプラ椅子。しかも切符が**切り込み入りの映画チケット**に変わっている |
+| `C208` 状態7完了 | **同じ座席を真上から・切符が消えている** | 緑のビニール胘掛け椅子・目線の引き。**真上ですらない** |
+
+つまり **状態7 が完成せず、ループの落ちが存在しない**。EP62 の `G226` と同じ失敗で、原因も同じ——発注文が「同じ座席」としか書いておらず、**1プロンプト＝1枚では前の枚を参照できない**。
+
+以下は **座席と切符の特徴を毎回全部書き下す**。`C136` は良いので残し、その椅子を正典とする。
+
+| 新 | 置き換え |
+|---|---|
+| `C228` | C207 の代替（状態7・切符あり） |
+| `C229` | C208 の代替（状態7完了・**映画の落ち**） |
+
+- `C228.png`
+Looking straight down from directly overhead onto the SAME seat as C136 and no other: a single mid-century waiting-room side chair with no arms, its seat and its low rounded back upholstered in dark reddish-brown leatherette scuffed pale along the front edge, carried on a slim black tubular steel frame with four splayed legs, standing on a grey terrazzo floor in a Puerto Rican municipal clinic with pale green dado paint on the wall behind, the chair filling the frame square to the camera, and lying face-up at the centre of the seat a small blank slip of pale cream paper, a plain rectangle with four straight cut edges, no notches, no perforations, no scalloped ends, no printing, no numerals and no writing of any kind on it, flat humid daylight from a window out of frame, nobody in the picture and no other chair in the picture [STYLE] Avoid: [NEG]
+
+- `C229.png`
+Looking straight down from directly overhead onto the SAME seat as C136 and no other: a single mid-century waiting-room side chair with no arms, its seat and its low rounded back upholstered in dark reddish-brown leatherette scuffed pale along the front edge, carried on a slim black tubular steel frame with four splayed legs, standing on a grey terrazzo floor in a Puerto Rican municipal clinic with pale green dado paint on the wall behind, the chair filling the frame square to the camera in exactly the same position and at exactly the same distance as before, the seat now completely empty with no paper and no slip anywhere in the frame, the worn pale patch on the leatherette where things are set down still showing, flat humid daylight from a window out of frame, nobody in the picture and no other chair in the picture [STYLE] Avoid: [NEG]
+
+**`C207` `C208` は廃止。カットに使わない**（削除はしない）。`mandatory_stills` は `C228` `C229` に差し替え済み。
+
+※ 目視QCのもう一件（差し替えなし・要確認）：`C099`（状態2・同じ切符が扇に広げられている）は、廃建物の廀下の引きの中で小さく放射状に並んでおり、**装飾模様に見える**。使えなくはないが弱い。

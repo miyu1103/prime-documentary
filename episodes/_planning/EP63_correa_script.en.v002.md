@@ -12,7 +12,7 @@
 
 【CLAIM LOCKS · the delay never killed her · no dramatised death · no turning-away · no motive · transfer finding unreviewed · no guaranteed treatment · grief question forfeited · ninety-nine stays ninety-nine】
 
-【MOTIF · one object, eight states: 1 dispenser C100 · 2 fan of identical blanks C099 · 3 in the hand C001 · 4 face-up on an empty seat C136 · 5 on the floor, curled C137 · 6 nowhere at all (empty drawer, unfilled shelf) · 7 the seat from directly above, first with the ticket (C207, just before the recognition in ACT_4) and then with it gone (C208, ENDING) · 8 back to state 3, C001 reused as the final image. The paper is blank in every state; the numbers exist only in the attendant's voice and in the type layer.】
+【MOTIF · one object, eight states: 1 dispenser C100 · 2 fan of identical blanks C099 · 3 in the hand C001 · 4 face-up on an empty seat C136 · 5 on the floor, curled C137 · 6 nowhere at all (empty drawer, unfilled shelf) · 7 the seat from directly above, first with the ticket (C228, just before the recognition in ACT_4) and then with it gone (C229, ENDING) · 8 back to state 3, C001 reused as the final image. The paper is blank in every state; the numbers exist only in the attendant's voice and in the type layer.】
 
 【HELD BEATS · four, and they are the only four: the causal denial in ACT_1 — after the denial, never after the death · the limit in ACT_3 · the recognition in ACT_4 · the final image in ENDING. The fifth position the bible reserved (before the last HOOK cut) does not survive the owner's 8-second hook — 20 words leaves under seven seconds and no silence to spend.】
 
@@ -293,7 +293,7 @@ Much depends upon circumstances. The court was not saying that waiting is unlawf
 
 Absent any explanation.
 
-【motif 7 · C207 · the blank ticket face-up on the empty seat, seen from directly above, two seconds, no narration】
+【motif 7 · C228 · the blank ticket face-up on the empty seat, seen from directly above, two seconds, no narration. The seat is the seat of C136 and no other】
 
 And then the sentence the whole case is built on.
 
@@ -394,7 +394,7 @@ It does not hold that the transfer was unlawful. That finding was never reviewed
 
 What is left is a method, and it is the most portable thing in the opinion. To find out whether an emergency room had screened someone, the court did not call a medical expert. It asked what the hospital's own rules required, and then asked what the hospital could produce. Vital signs. A written chart. A referral to an in-house physician. Four rules the hospital wrote for itself, and nothing produced for a woman who had been inside it for two hours.
 
-【motif 7 completes · C208 · the same seat from directly above, the ticket gone】
+【motif 7 completes · C229 · the same seat from directly above, in the same position and at the same distance as C228, the ticket gone】
 
 There is no villain in this record. No decision was ever testified to. Nobody was shown to have looked at an insurance card and formed a judgment about the person holding it.
 
