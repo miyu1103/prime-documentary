@@ -634,7 +634,33 @@
       ],
       "type": "C — a quotation or document",
       "avoids": "Short 41 established that a spoken lie about fingerprints is lawful; this cut finds the one place a court drew a line and would not move it.",
-      "era": "1989 Florida"
+      "era": "1989 Florida",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "they may not print it",
+          "style": "punch",
+          "words": [
+            "THEY MAY SAY IT",
+            "NOT PRINT IT"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L5",
+          "anchor": "The document they handed him",
+          "style": "punch",
+          "words": [
+            "A DOCUMENT",
+            "THAT WAS FALSE"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     },
     {
       "short_id": "short176",
@@ -1200,7 +1226,33 @@
       ],
       "type": "B — a number/stakes gap",
       "avoids": "Short 41 noted in one line that the lie is still legal for adults; this cut is the measured gap between what the law now gives children and what it still refuses everyone else.",
-      "era": "2021 United States"
+      "era": "2021 United States",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "no state has a law that generally forbids",
+          "style": "punch",
+          "words": [
+            "NO STATE",
+            "FORBIDS THE LIE"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "the average client served sixteen years",
+          "style": "punch",
+          "words": [
+            "257 CASES",
+            "16 YEARS EACH"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     }
   ],
   "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."

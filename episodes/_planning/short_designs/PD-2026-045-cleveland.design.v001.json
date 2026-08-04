@@ -643,7 +643,33 @@
       ],
       "type": "C — a quotation or document",
       "avoids": "Short 47 covered her sentence and the Bearden rule she should have had; this cut is the business operating behind the bench, named by a sitting judge and measured in courts and clients.",
-      "era": "2013 Alabama"
+      "era": "2013 Alabama",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "thirty-eight thousand people",
+          "style": "punch",
+          "words": [
+            "100 COURTS",
+            "38,000 PEOPLE"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L5",
+          "anchor": "Their ruin was its revenue",
+          "style": "punch",
+          "words": [
+            "THEIR RUIN",
+            "ITS REVENUE"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     },
     {
       "short_id": "short181",
@@ -1219,7 +1245,32 @@
       ],
       "type": "C — a quotation or document",
       "avoids": "Short 47 named Bearden only as the rule she should have been given; this cut is Bearden himself, the facts that produced the sentence and how narrow that sentence actually is.",
-      "era": "1983 Georgia"
+      "era": "1983 Georgia",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "1983",
+          "style": "number",
+          "big": "1983",
+          "bigSize": 260,
+          "label": "HE WON",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "a"
+        },
+        {
+          "line": "L5",
+          "anchor": "refused while able to pay",
+          "style": "punch",
+          "words": [
+            "REFUSED TO PAY",
+            "OR COULD NOT"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     }
   ],
   "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."

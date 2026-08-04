@@ -673,7 +673,32 @@
       ],
       "type": "C — a quotation or document",
       "avoids": "Shorts 44 and 52 both ran the raid, the video and the settlement; this cut is the 2006 ruling underneath all of it, the reason a right can survive with nothing behind it.",
-      "era": "2006 Washington, D.C."
+      "era": "2006 Washington, D.C.",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "Take away the remedy",
+          "style": "punch",
+          "words": [
+            "NO REMEDY",
+            "NO RULE"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "four votes",
+          "style": "number",
+          "big": "4",
+          "bigSize": 260,
+          "label": "VOTES ONLY",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "b"
+        }
+      ]
     }
   ],
   "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."

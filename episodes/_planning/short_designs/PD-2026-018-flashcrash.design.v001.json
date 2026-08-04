@@ -582,7 +582,32 @@
         }
       ],
       "loop": true,
-      "loop_join": "L5 closes on the thirty-six minutes, and L1 restarts the clock at two thirty-two, so the loop replays the same window."
+      "loop_join": "L5 closes on the thirty-six minutes, and L1 restarts the clock at two thirty-two, so the loop replays the same window.",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "thirty-six minutes",
+          "style": "number",
+          "big": "36",
+          "bigSize": 260,
+          "label": "MINUTES",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "traded at a single penny",
+          "style": "punch",
+          "words": [
+            "A GIANT COMPANY",
+            "ONE PENNY"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     },
     {
       "short_id": "short157",
@@ -1158,7 +1183,32 @@
         }
       ],
       "loop": true,
-      "loop_join": "L5 ends on prosecutors asking for mercy, and L1 supplies the reason at once: by then his fortune had already been taken from him."
+      "loop_join": "L5 ends on prosecutors asking for mercy, and L1 supplies the reason at once: by then his fortune had already been taken from him.",
+      "kinetic_beats": [
+        {
+          "line": "L5",
+          "anchor": "never bought the cars",
+          "style": "punch",
+          "words": [
+            "HE NEVER",
+            "SPENT IT"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "2015",
+          "style": "number",
+          "big": "2015",
+          "bigSize": 260,
+          "label": "HIS PARENTS' HOUSE",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "b"
+        }
+      ]
     }
   ],
   "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."

@@ -621,7 +621,33 @@
         }
       ],
       "loop": true,
-      "loop_join": "L5 sets her split verdict against her co-defendant's twelve convictions, so L1's 'it was not a simple one' reads as the answer to that mismatch."
+      "loop_join": "L5 sets her split verdict against her co-defendant's twelve convictions, so L1's 'it was not a simple one' reads as the answer to that mismatch.",
+      "kinetic_beats": [
+        {
+          "line": "L5",
+          "anchor": "requires intent to deceive",
+          "style": "punch",
+          "words": [
+            "FRAUD NEEDS",
+            "INTENT"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "she believed the technology would work",
+          "style": "punch",
+          "words": [
+            "SHE KNEW",
+            "OR SHE BELIEVED"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     },
     {
       "short_id": "short155",
@@ -1199,7 +1225,33 @@
         }
       ],
       "loop": true,
-      "loop_join": "L5 ends at the moment the question was finally asked out loud, and L1 names the question again from the top."
+      "loop_join": "L5 ends at the moment the question was finally asked out loud, and L1 names the question again from the top.",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "nine billion dollars",
+          "style": "punch",
+          "words": [
+            "$9 BILLION",
+            "AT ITS PEAK"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "hundreds of tests",
+          "style": "punch",
+          "words": [
+            "HUNDREDS OF TESTS",
+            "ONE DROP"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     }
   ],
   "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."

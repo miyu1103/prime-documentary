@@ -633,7 +633,33 @@
       ],
       "type": "A — second-person threat",
       "avoids": "Short 38 followed one man from the blurry frame to the settlement; this cut turns the same database on the viewer, who is inside it without ever having been accused of anything.",
-      "era": "2020 Detroit"
+      "era": "2020 Detroit",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "look a little like somebody else",
+          "style": "punch",
+          "words": [
+            "JUST LOOK",
+            "LIKE SOMEBODY ELSE"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "A match is a lead, not an arrest",
+          "style": "punch",
+          "words": [
+            "A MATCH IS A LEAD",
+            "NOT AN ARREST"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     },
     {
       "short_id": "short173",
@@ -1203,7 +1229,33 @@
       ],
       "type": "B — a number/stakes gap",
       "avoids": "Short 38 ended on the 2024 settlement as the resolution; this cut starts where that one stopped and measures how little ground the new rule actually covers.",
-      "era": "2024 United States"
+      "era": "2024 United States",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "more than a dozen known wrongful arrests",
+          "style": "punch",
+          "words": [
+            "A DOZEN KNOWN",
+            "NEARLY ALL BLACK"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L5",
+          "anchor": "matched by a machine",
+          "style": "punch",
+          "words": [
+            "THE MACHINE",
+            "WAS BELIEVED"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     }
   ],
   "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."

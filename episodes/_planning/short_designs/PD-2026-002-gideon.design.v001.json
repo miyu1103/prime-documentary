@@ -597,7 +597,33 @@
         }
       ],
       "loop": true,
-      "loop_join": "L5 ends on the handwritten letter the Court agreed to hear, which is the very letter L1 starts counting back twenty years from."
+      "loop_join": "L5 ends on the handwritten letter the Court agreed to hear, which is the very letter L1 starts counting back twenty years from.",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "almost all are turned away",
+          "style": "punch",
+          "words": [
+            "THOUSANDS SENT",
+            "ALMOST NONE HEARD"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "was convicted. Five years",
+          "style": "punch",
+          "words": [
+            "NO LAWYER",
+            "FIVE YEARS"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     },
     {
       "short_id": "short151",
@@ -1163,7 +1189,33 @@
         }
       ],
       "loop": true,
-      "loop_join": "L5 leaves the lawyer as the only variable, so L1's 'winning at the Supreme Court did not set him free' reads as the same sentence continuing."
+      "loop_join": "L5 leaves the lawyer as the only variable, so L1's 'winning at the Supreme Court did not set him free' reads as the same sentence continuing.",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "With a lawyer, he was acquitted",
+          "style": "punch",
+          "words": [
+            "ALONE: GUILTY",
+            "WITH A LAWYER: FREE"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L5",
+          "anchor": "a necessity, not a frill",
+          "style": "punch",
+          "words": [
+            "A NECESSITY",
+            "NOT A FRILL"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     }
   ],
   "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."

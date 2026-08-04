@@ -628,7 +628,33 @@
         }
       ],
       "loop": true,
-      "loop_join": "L5 stops on the money being gone before anyone asked for it, and L1 picks up with the asking: they all want it back at once."
+      "loop_join": "L5 stops on the money being gone before anyone asked for it, and L1 picks up with the asking: they all want it back at once.",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "sixteen billion dollars",
+          "style": "punch",
+          "words": [
+            "$16 BILLION",
+            "GONE IN A DAY"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "a"
+        },
+        {
+          "line": "L5",
+          "anchor": "taps withdraw. Nothing happens",
+          "style": "punch",
+          "words": [
+            "TAP WITHDRAW",
+            "NOTHING HAPPENS"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     },
     {
       "short_id": "short153",
@@ -1188,7 +1214,32 @@
         }
       ],
       "loop": true,
-      "loop_join": "L5 gives the sentence, so L1's 'mistakes were made, but not crimes' is heard again knowing exactly how that defense landed."
+      "loop_join": "L5 gives the sentence, so L1's 'mistakes were made, but not crimes' is heard again knowing exactly how that defense landed.",
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "seven counts",
+          "style": "number",
+          "big": "7",
+          "bigSize": 260,
+          "label": "GUILTY COUNTS",
+          "labelSize": 84,
+          "seconds": 2.0,
+          "suffix": "a"
+        },
+        {
+          "line": "L6",
+          "anchor": "clawed back for customers",
+          "style": "punch",
+          "words": [
+            "CLAWED BACK",
+            "YEARS LATER"
+          ],
+          "bigSize": 108,
+          "seconds": 2.3,
+          "suffix": "b"
+        }
+      ]
     }
   ],
   "footage_note": "Do NOT pre-seed footage candidates here. The auto-injected list was identical across all 43 designs and its filenames disagreed with the ledger titles. Bind footage per plate at build time via scripts/search_archive.py on the plate's own footage_query, then QC the frames by eye."
