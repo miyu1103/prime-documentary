@@ -1,5 +1,7 @@
 # EP63 correa — Codex 画像生成 **1本で完結する発注** v001（223枚・1プロンプト1枚）
 
+> ⚠ **2026-08-04 追記：末尾に §7 として3枚(C224-C226)を追加しました。C001-C223 は変更ありません。**
+
 > ## ✅ 今すぐ着手してよいファイルです。**追加バッチは出ません。**
 > EP60はバッチが5本に膨らみました。原因は3つとも同じで、**発注時点で構造が決まっていなかった**
 > ことです。今回は逆順にしました。**実写を先に測り（54本取り込み・全タイル目視・使えるのは11本）、
@@ -702,3 +704,40 @@ A dark blank display panel on a painted wall, dead centre, hard raking light acr
    （i2v または深度パララックス。**ズーム/パンだけは不可＝紙芝居**）。
 5. `python scripts/check_episode_inputs.py --slug correa` で
    **accepted(11) + motion ≥ 234** をレンダー前に確認する。
+
+---
+
+## 7. ★追加発注（2026-08-04・v001 に後から足した3枚）
+
+設計マニュアル §2① が名指しする二つのツール（`scan_video_shape` と `check_cross_episode_reuse`）を
+実写プールに通した結果、**コンタクトシートでは絶対に見えない理由で 3本が落ちました**。720p が2本
+（`AR-6997951` クリニック受付へ歩く二人 / `AR-9384` 待合室の水槽）と、縦位置が1本
+（`AR-v_171138` エレベーター扉の開き）です。**絵の良し悪しではなく画枠の問題**なので、目視 QC では
+検出できません。採用実写は **11本 → 8本**、したがって発注枚数は契約 `distinct_video_assets` 234 −
+実写採用8 = **223枚 → 226枚**になります。
+
+**失われた2つの register は、プール中で最も良い絵でした。**待合室の**水槽**はこのプール唯一の
+「待合室の中で動いている物」であり、**クリニックの受付**は受付の絵2本のうちの1本でした。
+以下の3枚は、**その register を作り直すための発注**です。C001–C223 は一枚も変わっていません。
+§5.5 のショート対応表にも入りません（`centred in the frame` を付けていないのはそのためです）。
+
+| ID | 置く場所（台本 v002 の実ビート） | どの実写 register の代わりか |
+|---|---|---|
+| `C224` | **ACT_1**「Then the waiting.」以降の待機帯（`C026`/`C027` の光の移動と同じ列） | `AR-9384` 待合室の水槽＝**部屋の中で唯一動いている物** |
+| `C225` | **ACT_1** 到着（"She was inside no later than one o'clock in the afternoon."） | `AR-6997951` **受付へ歩いていく二人**（受付 register の2本目） |
+| `C226` | **ACT_4**「No refusal required. No words required. Nothing has to be said to anybody.」 | `AR-v_171138` **開くエレベーター扉**（誰の決定も要らずに開く扉） |
+
+- `C224.png`
+A glass aquarium tank on a painted metal stand against the wall of a waiting room, the water lit from within and slightly clouded, one thread of bubbles and a frond of weed drifting in it, the rest of the room fallen away into green shadow with the empty chairs showing only as shapes in the glass, shot low from the height of a seat [STYLE] Avoid: [NEG]
+- `C225.png`
+Two figures seen from well behind crossing a wide terrazzo floor toward a reception counter at the far end of a room, both small in the frame and turned away, the second half a step behind the first, one shaft of doorway light lying across the floor between them and the counter, the counter itself unattended, faces not visible at all [STYLE] Avoid: [NEG]
+- `C226.png`
+A lift door standing fully open onto an empty car in a tiled lobby, the interior of the car lit and completely bare, the call plate beside it blank and unlit, nobody waiting on the landing and no hand anywhere near the button, the landing in shadow so the open car is the brightest thing in the frame, shot square on from a few paces back [STYLE] Avoid: [NEG]
+
+> ⚠ **§6-5 の読み替え（本文は直していません）。**`check_episode_inputs.py --slug correa` の合格条件は
+> **accepted(11) + motion ≥ 234** ではなく、**accepted(8) + motion(226) ≥ 234** です。§1〜§6 は
+> Codex が走っている最中なので一字も触っていません。**差分はこの §7 と冒頭1行だけです。**
+
+**この3枚にも §0〜§3 がそのまま適用されます。**1プロンプト1枚・`_02` を作らない・顔を出さない・
+読める文字と数字を出さない・長辺3840px以上・保存先 `H:\pd-media\assets\ai\correa\`。
+生成後は §1 の Q1–Q9 と §6-1 の目視を **C224–C226 にも**通してください。

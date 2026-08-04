@@ -1,5 +1,7 @@
 # EP65 marmet — Codex 画像生成 **1本で完結する発注** v001（219枚・1プロンプト1枚）
 
+> ⚠ **2026-08-04 追記：末尾に §7 として4枚(R220-R223)を追加しました。R001-R219 は変更ありません。**
+
 > ## ✅ 今すぐ着手してよいファイルです。**追加バッチは出ません。**
 > EP60はバッチが5本に膨らみました。原因は3つとも同じで、**発注時点で構造が決まっていなかった**
 > ことです。今回は逆順にしました。**実写を先に測り（57本取り込み・全タイル目視・使えるのは15本）、
@@ -709,3 +711,65 @@ An empty armchair beside a winter window with a closed folder on the seat, drama
    **accepted(15) + motion ≥ 234** をレンダー前に確認する。
 6. 組み立て時、**HOOKの5枚は §4 の回収表のとおり本編でもう一度カットインする**
    （`PD_ONE_PASS_PRODUCTION_SPEC.v2` 行9 の約束→回収）。
+
+---
+
+## 7. ★追加発注（2026-08-04・v001 に後から足した4枚）
+
+**R001–R219 は一枚も変わりません。**この §7 は**追加だけ**です。合計は **223枚**になります。
+
+設計マニュアル §2① が名指しする2つのツールを後から流したところ、**採用実写15本が11本に落ちました。**
+`scan_video_shape` が3本（`AR-22240__woman_opening_dark_curtains` 1280x720 /
+`AR-8132371__person_sitting_on_wheelchair` 1280x720 / `AR-8543191__people_riding_their_wheelchairs` 1366x720）を
+解像度で落とし、`check_cross_episode_reuse` が1本（`AR-2996079__a_dining_room_with_wooden_chairs_and_table`＝**lech で使用済み**）を
+話またぎの被りで落としました。**どちらの欠陥もコンタクトシートには写りません。**
+契約 `distinct_video_assets` 234 − 実写採用11 = **223**。
+
+**枚数より重いのは、消えた register です。**
+
+- **顔の写っていない車椅子3本のうち2本が消えました。** §4 は「棚がその register を持っているから
+  **車椅子のプレートは1枚も発注しない**」と明記しています。**その前提はもう成り立ちません。**
+  → `R220` `R221` で作ります。**車椅子には顔を写しません。**
+- **誰もいない食卓が消えました。**これは「**そこに誰も座らなかった**」の画でした。
+  → `R222`（ACT_1・約4:30 のプラント＝二脚目の椅子）と `R223`（ENDING 最終画＝その椅子の回収）で作ります。
+  台本 `EP65_marmet_script.en.v002.md` L60 と L367、`EP65_marmet_FILM_BIBLE.v001.md` §3 の
+  **プラント→ペイオフ（距離約26分）**がこの2枚に乗ります。
+- `AR-22240` の窓辺（重いカーテンを引いた窓の光）は `R221` が同時に引き受けます。
+
+**§1 の絶対条件は一字も変わりません。**患者を描かない・臨床の場面を作らない・実在と特定できる施設を出さない・
+読める文字を出さない。**罫線の上は「空の罫線」か「字に見えない一筆」だけ**であり、
+プロンプト本文にその語（署名を表す英単語）は **v001 と同じく一度も書いていません**。
+
+> ### ★`R220` `R221` だけ `[NEG]` を1語だけ外して展開する★
+> `[NEG]` には v001 の方針として `wheelchair,` が入っています。**この2枚に限り、その1語だけを削って**展開してください
+> （他の語は一切変えない）。**削り忘れると、指定した被写体を打ち消したまま生成されます。**
+> `R222` `R223` は `[NEG]` をそのまま使います。
+
+### プロンプト（各1枚・`_02` を作らない）
+
+- `R220.png`
+Two empty wheelchairs parked side by side against a corridor wall in a care facility, brakes on and nobody attending them, seen at seated height from a few feet away in flat grey afternoon light, the walls bare of any equipment [STYLE] Avoid: [NEG]
+- `R221.png`
+A person seated in a wheelchair seen from directly behind at a tall window, only the back of the chair and the shoulders in frame and the face not visible, the heavy curtain drawn back to one side, a grey winter hillside beyond the glass, nothing medical anywhere in the room [STYLE] Avoid: [NEG]
+- `R222.png`
+An admission desk seen from the visitor's side at waist height with two chairs in the frame, the near one drawn out and turned slightly away, the far one pushed in square and empty, one form squared on the counter between them, the light flat and grey [STYLE] Avoid: [NEG]
+- `R223.png`
+The foot of an admission form lying on a counter, its ruled line bare and no pen anywhere on it, and beyond the counter and slightly out of focus the far chair still pushed in square, the late afternoon light gone flat [STYLE] Avoid: [NEG]
+
+### この4枚が乗る拍（組み立て側への指定）
+
+| ID | 区分 | 台本の位置 | 役割 |
+|---|---|---|---|
+| `R220` | ACT_2 | L132「One side of that desk does this every working day. The other side does it once.」 | 施設は人がいなくても続く。**制度の反復** |
+| `R221` | ACT_5 | L313–321「There was no evidence to weigh, because nobody had been permitted to take any.」 | 誰も証拠を取らないまま待っている側 |
+| `R222` | ACT_1 | L60 のプラント（**ナレーションなし・3秒ホールド**） | 二脚目の椅子。片方は空 |
+| `R223` | ENDING | L367 の最終画（モチーフ状態7） | 空の罫線＋**まだ押し込まれたままの二脚目の椅子** |
+
+### 生成後のチェック（§1 の表に追加する1行）
+
+| # | 不合格条件 |
+|---|---|
+| Q10 | `R220` `R221` に**顔が写っている**／医療機器・点滴・モニタが写っている／車椅子が広告調に演出されている。`R222` `R223` で**二脚目の椅子が引き出されている**（押し込まれたまま・空でなければ不合格） |
+
+`episodes/PD-2026-065-marmet/episode_spec.v001.json` の `mandatory_stills` は
+**R001〜R223（223件）**へ更新済みです。

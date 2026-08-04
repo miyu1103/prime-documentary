@@ -1,5 +1,7 @@
 # EP64 memphis — Codex 画像生成 **1本で完結する発注** v001（210枚・1プロンプト1枚）
 
+> ⚠ **2026-08-04 追記：末尾に §7 として8枚(M211-M218)を追加しました。M001-M210 は変更ありません。**
+
 > ## ✅ 今すぐ着手してよいファイルです。**追加バッチは出ません。**
 > 順番は EP62 と同じで、**測ってから発注**しています。実写を先に測り（81本取り込み・
 > コンタクトシート5枚を全タイル目視・使えるのは **24本**）、**台本の実語数を区分ごとに数え**、
@@ -706,3 +708,66 @@ A wall telephone handset hanging off its cradle on the cord in a dark kitchen, c
 | Q7 | 法廷内観・木槌・判事席・鉄格子・独房が写っている |
 | Q8 | 1970年代でない物（デジタル表示・現代の家電・現代のメーター・80年代以降の車）が写っている |
 | Q9 | カタログ調である（光に方向がない／時間が止まっていない／構図に視点がない）、画面全体が暗すぎる、または既存の他話・本バッチ内の別プレートと実質同じ構図である |
+
+---
+
+## 7. ★追加発注（2026-08-04・v001 に後から足した8枚）
+
+**M001-M210 は1文字も変わっていません。**この節は追加だけです。§5.5 のショート表も変更していません。
+
+設計マニュアル §2① が名指ししている二つのツールを、実写プールに対して**後から**走らせました。
+`scan_video_shape.py` が2本を落とし（`AR-8334801__tattooed_woman_behind_a_see_through_curtain.mp4` は
+1366x720、`AR-v_141854__plate_gas_fire_kitchen_matches_burns_prepare.mp4` は **1080x1920 の縦動画**——
+コンタクトシートは全タイルを同じ大きさで描くので、ガスリングとして目視で通してしまいました）、
+`check_cross_episode_reuse.py` がさらに6本を落としました（**プールの25%**で、マニュアル自身の20%線を超えます）:
+`minimalist_vietnamese_interior_with_lamp` → lech ／ `soothing_candle_flame_in_dark_room` → flowers ／
+`a_lit_candle_in_the_dark` → flowers ／ `shadow_a_man_over_a_wall` → young ／
+`candle_in_the_dark` → **onecoin・thompson・titan** ／ `a_footage_of_a_lamppost` → lech。
+**採用実写 24本 → 16本。発注 210枚 → 218枚**（契約 `distinct_video_assets` 234 − 16）。
+
+皮肉はそのまま書いておきます。**v001 は「棚がろうそくに偏っているから」1枚もろうそくを発注しませんでした。
+ところが、その棚のろうそくも、もともと我々が使えるものではありませんでした**（他話で既に燃やしていた）。
+結果として供給が消えた register は4つ——**暗い部屋の炎・室内のランプ・壁に落ちた影・街灯**。
+どれも台本が実際に使います。**だから、いま作ります。**
+
+**★禁止は一切ゆるめていません。とくに「家の火事に見える絵」は不可。**この話が唯一生き残れない失敗です。
+だから追加の「炎」は**ろうそくでもマッチでもなく、この事件が扱っている当のもの＝ガスの火口**にしました。
+器具の内側に収まった小さな青い火で、部屋には他に灯りが無い。**煙・燃える家・暖炉調は不可のまま**です
+（`[NEG]` に `fire, flame, a burning building, smoke rising from a house, cosy fireplace` が入っています）。
+
+| ID | 失った実写 | 補う register | 台本上のビート |
+|---|---|---|---|
+| `M211` | curtain（1366x720で失格） | カーテン | ACT_5「one house dark in the middle of the frame」の家の内側 |
+| `M212` | gas ring（縦1080x1920で失格） | 点いているガスリング | ACT_4「Utility service is a necessity of modern life」 |
+| `M213` | lamp in interior（lech で使用済） | 室内のランプ | ACT_5「porch lights on along the row」＝隣家は点いている |
+| `M214` | candle in dark room（flowers） | 暗い部屋の炎 | ACT_4「the discontinuance of water or heating … may threaten health and safety」 |
+| `M215` | lit candle in the dark（flowers） | 暗い部屋の炎 | ACT_2 第4段階「the remaining services are terminated」＝ガスは最後に止まる |
+| `M216` | shadow on a wall（young） | 壁に落ちた影 | ACT_2 第3段階（戸口・制度が唯一「聞く」場所） |
+| `M217` | candle in the dark（onecoin/thompson/titan） | 暗い部屋の炎 | ACT_5 反対意見「the record does not reveal any actual case of harm」 |
+| `M218` | lamppost（lech） | 街灯 | ACT_5「the same street an hour later with the dark house still dark」 |
+
+区分別の枚数は ACT_2 36→**38**、ACT_4 39→**41**、ACT_5 52→**56**、合計 210→**218** になります。
+ファイル名は `M211.png` … `M218.png`、保存先・解像度・比率は §3 と同じです。
+
+> **★この8枚はアルファベット順で末尾に来ます。**EP54 で消えた14枚と同じ位置です。
+> `episode_spec.v001.json` の `mandatory_stills` は **M001〜M218** に更新済みなので、
+> 抜けたら `check_spec_satisfied.py` が止めます。**納品先は `remotion/public/memphis/img` です。**
+
+### プロンプト（各1枚・`_02` を作らない）
+
+- `M211.png`
+A thin net curtain hanging across the window of an unlit front room, shot from two paces inside the room so the fabric fills most of the frame and the street beyond it reads only as shapes, the last flat daylight standing in the weave while the room behind the camera has already gone dim, nothing moving and nobody there [STYLE] Avoid: [NEG]
+- `M212.png`
+A domestic gas ring alight under an empty kettle in an unlit 1970s kitchen, shot from directly above and close so the low blue crown standing on the burner ports is the only lit thing in the picture, the ring contained entirely within the hob and the enamel around it still holding its detail, no one in the room [STYLE] Avoid: [NEG]
+- `M213.png`
+A single table lamp lit in the front room of a neighbouring house at night, shot from the far corner of the room at seated height so the lamp lays one pool of light across the arm of a worn chair and the rest of the room keeps its detail in shadow, the chair empty [STYLE] Avoid: [NEG]
+- `M214.png`
+A parlour gas heater of the period alight in an otherwise unlit room, shot square on from two paces so the row of small blue jets along its burner bar is the only light in the frame, the pressed-metal case and the skirting board behind it still readable, nobody in the room and nothing else in it switched on [STYLE] Avoid: [NEG]
+- `M215.png`
+The pilot of a domestic gas water heater seen through the inspection slot in its casing in an unlit cupboard, shot close and slightly from below so the single blue point sits deep inside the metal, the shelf edge and the pipework beside it just holding their detail, the cupboard door standing open into a dark hallway [STYLE] Avoid: [NEG]
+- `M216.png`
+The shadow of a person standing outside a glazed front door thrown across the wall of a narrow hallway, shot from inside the hallway at head height with the doorway itself out of frame, the shadow small and soft-edged and level with the camera rather than towering, nobody visible anywhere in the picture [STYLE] Avoid: [NEG]
+- `M217.png`
+A single gas jet standing alight at extreme magnification in an unlit kitchen, the blue cone steady and no larger than a thumbnail, the enamelled lip of the burner beneath it catching just enough light to read, the whole rest of the frame quiet, empty and unlit [STYLE] Avoid: [NEG]
+- `M218.png`
+A street light on a plain concrete standard lit over a modest residential Memphis street at night, shot from the middle of the road looking up along the standard so the lamp head sits against a starless sky, the low houses beneath it keeping their porch lights and the road entirely empty [STYLE] Avoid: [NEG]

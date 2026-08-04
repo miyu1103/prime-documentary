@@ -1,5 +1,7 @@
 # EP62 greene — Codex 画像生成 **1本で完結する発注** v002（222枚・1プロンプト1枚）
 
+> ⚠ **2026-08-04 追記：末尾に §7 として3枚(G223-G225)を追加しました。G001-G222 は変更ありません。**
+
 > ## ✅ 今すぐ着手してよいファイルです。**追加バッチは出ません。**
 >
 > ### v001 との違い（読んでから着手すること）
@@ -804,3 +806,54 @@ distinct = 18。
    **accepted(12) + motion ≥ 234** をレンダー前に確認する。
 6. ショート3本は §5.5 の表のプレートを **9:16 に切って**から `remotion/public/shorts/short<NNN>/` へ
    コピーし、`gen_depth_maps.py --dir …` を通す。**二度目の画像発注は出しません。**
+
+---
+
+## 7. ★追加発注（2026-08-04・v002 に後から足した3枚）
+
+設計マニュアル `docs/PD_EPISODE_DESIGN_MANUAL.v001.md` §2① が名指ししている二つのツール
+`scan_video_shape.py` と `check_cross_episode_reuse.py` を、この発注書を書いた時点では通していませんでした。
+通した結果、greene の実写素材から3本が落ちました。**3本とも高さ720pxで、1080に満たない**ため
+コンタクトシートでは絶対に発見できません（`AR-4333439` 1280x720・`AR-5630871` 1126x720・
+`AR-6944071` 1366x720）。よって実写採用は **12本 → 9本**、生成枚数は
+`distinct_video_assets` 234 − 9 = **225枚**になります。§4 の表と §5.5 のショート対応表は
+**一行も変えていません**。`G001`–`G222` は既存のまま、下の3枚だけを足します。
+
+落ちた3本が運んでいたのは**「風」「時の経過」「中に人がいる」**の三つの register で、
+これは映画がまだ必要としているものです（`EP62_greene_FILM_BIBLE.v001.md` §3 の紙の七状態のうち
+状態3「風に持ち上がる」、および §10「窓の内側の影」）。3枚はその三つを1枚ずつ引き受けます。
+**ID は `G223`–`G225` ですが、置かれる区分は ACT_1 / ACT_2 / ACT_4 です**（既存IDを一つも
+動かさないため、番号だけが THUMB の後ろに続きます）。生成の順序も保存先も他の222枚と同じです。
+
+| 新ID | 入る区分 | 台本の実ビート（`EP62_greene_script.en.v003.md`） | 引き継ぐ register | 落ちた素材 |
+|---|---|---|---|---|
+| `G223` | **ACT_1** | 「A member of the defendant's family over sixteen years of age. **Somebody home.**」／「The statute is written for a household with somebody in it.」 | 中に人がいる | `AR-6944071` back view of a man opening the curtains |
+| `G224` | **ACT_2** | 【reset beat: motif 3 — wind lifts the sheet, nobody in frame, no narration, 4s】 | 風（誰の意思でもなく） | `AR-4333439` tree leaves dancing with the blowing wind |
+| `G225` | **ACT_4** | 「there may have been a time when posting provided a surer means of giving notice than did mailing. **That time has passed.**」 | 時の経過 | `AR-5630871` a curtain with embroidery edges |
+
+- `G223.png`
+A net curtain at a ground-floor window held back a hand's width from the inside, only the fingers of one hand at the fabric and no other part of the person in frame, the empty walkway beyond going soft, flat mid-morning light [STYLE] Avoid: [NEG]
+- `G224.png`
+A scrub tree at the edge of a housing project turned over by a single gust, every pale leaf underside showing at once, shot from below against a flat white sky with no building and no figure in frame [STYLE] Avoid: [NEG]
+- `G225.png`
+An old embroidered curtain hanging at an apartment window seen from inside, the outer fold bleached almost white by years of daylight and the colour still whole where the fabric has been folded back on itself, shot at close range in flat afternoon light [STYLE] Avoid: [NEG]
+
+**この3枚についての注記**
+
+- `G223` は §5 の `G213`（暗い部屋の奥から見た女性のシルエット）とは**別の絵**です。こちらは
+  真昼・手のみ・カーテンの隙間の向こうに無人の通路。ACT_1 の梯子の**真ん中の段**が前提にしている
+  「家に誰かいる」を1枚で言うためのものです。ACT_1 の既存プレート（`G018` `G019` `G046` `G047`）は
+  全部**無人の部屋**なので、この register は ACT_1 に一枚もありません。
+- `G224` はリセットビート専用です。ACT_2 には風のプレートが**一枚もありません**
+  （`G191` は ACT_5、`G207` は ENDING）。紙を出さないのは、その2枚と被らせないためです。
+  風だけの4秒——「誰も剥がしていないのに剥がれる」を台詞なしで言う画です。
+- `G225` は「時間そのものが写っている1枚」です。日に焼けて白く抜けた外側の折りと、
+  折り返しの内側に残った元の色。**褪せ方が経過時間を示す**——ENDING の motif 7
+  （貼られていた四角い跡が褪せていない）と同じ物理で、ACT_4 の「その時代は過ぎた」に当たります。
+- **正直な但し書き。** 残った実写9本のうち3本（`AR-6944084` カーテンを閉める男・`AR-8516592`
+  カーテンを横切る人影・`AR-8909763` 窓を見る人）は「中に人がいる」を今も運べます。ただし全て
+  **暗い／夜／雨**です。`G223` が埋めるのは**真昼の、代執行者が来る時刻の**在宅であり、そこは空白のままです。
+  一方 **「風」と「時の経過」は残り9本に一本もありません**（雪の街灯・破れた網戸・廃屋・空室のパン・
+  雨の窓×2・レンガ）。`G224` と `G225` はその二つを丸ごと引き受けます。
+- `mandatory_stills` は `G001`–`G225` の **225件**に更新済みです（`episode_spec.v001.json`）。
+- レンダー前の確認は **accepted(9) + motion ≥ 234** になります（§6-5 の 12 は 9 に読み替え）。
