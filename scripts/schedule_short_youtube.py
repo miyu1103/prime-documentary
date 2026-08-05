@@ -1042,6 +1042,990 @@ CONFIG: dict[str, dict] = {
         "video_sha256": "afb2f61b2b5ba1724fa45501776d745a269e994611ff8c8674edc6dbffb40a8e",
         "thumb_sha256": "b030f601526dcea9b04d1e5cafe98a29294ed2b0fdbbee4471e1319d61e3c522",
     },
+    "104": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "vikfOBHullI",
+        "ep": "PD-2026-017-onecoin",
+        "rev": "v001",
+        "title": "Regulators warned. Germany ordered it stopped. It kept selling #Shorts",
+        "description": "Regulators warned. Germany ordered it stopped. It kept selling.\n\nNone of it was hidden. So why did the warnings not stop it?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Onecoin #Law #Documentary",
+        "tags": ["Shorts", "Onecoin", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "f0528b0ccab4a62d0bf383de9261ade9edafa3df218724f4d34e1346bc55b8bb",
+        "thumb_sha256": "a05a17d468aa249d57800039fd03550090854ec175d454fa4c7b135a9e1a5143",
+    },
+    "105": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "vikfOBHullI",
+        "ep": "PD-2026-017-onecoin",
+        "rev": "v001",
+        "title": "From the inside it could not be seen. They had built a world with no exits #Shorts",
+        "description": "From the inside it could not be seen. They had built a world with no exits.\n\nIf the exits were closed, what did the first doubters actually hear back?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Onecoin #Law #Documentary",
+        "tags": ["Shorts", "Onecoin", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "36339feae2b948ef2d749ce1c024b491fb4966cf6123c4602a7e364014f30a87",
+        "thumb_sha256": "9e87cb863ec764ad9a47731f83173cf96397ed7ffb545261550db630e2079a2d",
+    },
+    "106": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "5L_HCGJxX_U",
+        "ep": "PD-2026-030-cotton",
+        "rev": "v001",
+        "title": "In 1997 she sat down across from the man she had sent to prison #Shorts",
+        "description": "In 1997 she sat down across from the man she had sent to prison.\n\nWhat did he say back to her?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Cotton #Law #Documentary",
+        "tags": ["Shorts", "Cotton", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "8b53ed19f4f38b0ffc5840fdd724d928978ab65a59c1356c2667dac679ae7c8b",
+        "thumb_sha256": "4030ca3c5d95369f1fb50ec9ed76d122a0ac16847d3aabf2c07c8907611ac8a0",
+    },
+    "107": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "5L_HCGJxX_U",
+        "ep": "PD-2026-030-cotton",
+        "rev": "v001",
+        "title": "The problem was never that she was not certain enough #Shorts",
+        "description": "The problem was never that she was not certain enough.\n\nIf certainty is not the test, what is?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Cotton #Law #Documentary",
+        "tags": ["Shorts", "Cotton", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "b6c7f355992a527c52d1d723652dd09565ea56e945d44c57566ba71a02cdc0d6",
+        "thumb_sha256": "f8be10ed890c14131247938f7bc906a0a1cef4a5738911de62e0402c6acc9867",
+    },
+    "108": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "FTm1icKgycU",
+        "ep": "PD-2026-023-swartz",
+        "rev": "v001",
+        "title": "On 18 January 2012 the internet went dark. He was one of the people who made it happen #Shorts",
+        "description": "On 18 January 2012 the internet went dark. He was one of the people who made it happen.\n\nHe beat a bill the whole industry expected to pass. How?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Swartz #Law #Documentary",
+        "tags": ["Shorts", "Swartz", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "c1e0a4ba16856ca6c8dc1a1cc06295bf77fc89e3ec00785a378c18786292f20d",
+        "thumb_sha256": "cb8d8fbfc53704b4cd6d8899ebf7f266d83687c41909643f04f32a3c95724195",
+    },
+    "109": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "FTm1icKgycU",
+        "ep": "PD-2026-023-swartz",
+        "rev": "v001",
+        "title": "Nobody ever proved what he meant to do with the four point eight million files #Shorts",
+        "description": "Nobody ever proved what he meant to do with the four point eight million files.\n\nIf the intent was never proven, what were the thirteen counts actually built on?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Swartz #Law #Documentary",
+        "tags": ["Shorts", "Swartz", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "4e20671e86199e8639118f9c522aede4be8477a2b46305ee244333e1a7af4436",
+        "thumb_sha256": "c3319b71331790e929a80a1d274b5a9df369b2967b625919895f594f1381aa93",
+    },
+    "110": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "cQFql7tT1fE",
+        "ep": "PD-2026-001-miranda",
+        "rev": "v001",
+        "title": "Miranda was never one man's case: three other appeals were folded in before it reached #Shorts",
+        "description": "Miranda was never one man's case: three other appeals were folded in before it reached.\n\nWhat the four warnings actually have to cover, and why two justices said the majority reached beyond what the Constitution required.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Miranda #Law #Documentary",
+        "tags": ["Shorts", "Miranda", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "1f74d3ebaa1c8e2ba009d02a8b0300d19bd8cea3d4f6acffa92ed2bb3a444054",
+        "thumb_sha256": "b5ca8f2fb5e8486bde09f5cf5571fedb59de5a3fe3f899198ac4d08281c3402a",
+    },
+    "111": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "An0to4U0hJQ",
+        "ep": "PD-2026-003-mapp",
+        "rev": "v001",
+        "title": "The most famous objection to the Mapp rule was written by a New York judge in 1926 #Shorts",
+        "description": "The most famous objection to the Mapp rule was written by a New York judge in 1926.\n\nWhich exceptions the justices carved out after 1961, and how much of the original rule is left.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Mapp #Law #Documentary",
+        "tags": ["Shorts", "Mapp", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "c7a257118d3be7e9e2f5fcbdb46141fd5ceeb4f199f1e203690b79bcc1b8a0ec",
+        "thumb_sha256": "9ac45d472f3349ef609cbde6b22d75c7ecbd0f585a257b3c2ed3b332c26ce790",
+    },
+    "112": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "XWYWAgkExH4",
+        "ep": "PD-2026-007-riley",
+        "rev": "v001",
+        "title": "Get a warrant came with an off switch and a hard edge: in a real emergency police still do #Shorts",
+        "description": "Get a warrant came with an off switch and a hard edge: in a real emergency police still do.\n\nWho owns the location trail the phone sends out by itself, and what the Court said about it four years later.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Riley #Law #Documentary",
+        "tags": ["Shorts", "Riley", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "16d29caffb6b52434fffefafa226f9677f686011611d5b4281fc5794654cf126",
+        "thumb_sha256": "f6cfbbc495752be044fe438dfbe3675e4d7a14dcae1a19a660a97ea2dc3c71b7",
+    },
+    "113": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "zE3nCUlUmLY",
+        "ep": "PD-2026-008-carpenter",
+        "rev": "v001",
+        "title": "The reason nobody needed a warrant for Timothy Carpenter's twelve thousand location points #Shorts",
+        "description": "The reason nobody needed a warrant for Timothy Carpenter's twelve thousand location points.\n\nWhat the third-party doctrine says about every other record a company holds about you, and whether the Court touched it.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Carpenter #Law #Documentary",
+        "tags": ["Shorts", "Carpenter", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "dcd6847b8cf8c4afdaaec04239368765398235aa6a741cfdc8ee46b68ee4413c",
+        "thumb_sha256": "1987470d329ce2a7f6ea52499953152173c1818e2f62647ed82d17020cefc220",
+    },
+    "114": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "zE3nCUlUmLY",
+        "ep": "PD-2026-008-carpenter",
+        "rev": "v001",
+        "title": "Carpenter was five to four, and the four who lost warned that the majority had swapped #Shorts",
+        "description": "Carpenter was five to four, and the four who lost warned that the majority had swapped.\n\nWhich of your other trails \u2014 searches, purchases, messages \u2014 the same logic reaches, and which it leaves exposed.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Carpenter #Law #Documentary",
+        "tags": ["Shorts", "Carpenter", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "889e722134f442d6a7fe1b34bb0604cbdb0326a8d1816f9b5ba6c0fb115e61e1",
+        "thumb_sha256": "7a916ba683def98bcdc872f76f91047e6fe343f219bc62e663705fa086dc53b2",
+    },
+    "115": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "m-uWzgWHGPg",
+        "ep": "PD-2026-009-timbs",
+        "rev": "v001",
+        "title": "Forfeiture works by filing the case against your property instead of against you #Shorts",
+        "description": "Forfeiture works by filing the case against your property instead of against you.\n\nWhere the limit on all of this finally came from, and why it is older than the country.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Timbs #Law #Documentary",
+        "tags": ["Shorts", "Timbs", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "4797940a11400fbb81bf81257d2e80a07ec8ee04edf05dff4161011f800fa127",
+        "thumb_sha256": "a5c02c971f6d8b242680b47a3e90ad6117c9e6a32e67e429a37400ad3d324604",
+    },
+    "116": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "m-uWzgWHGPg",
+        "ep": "PD-2026-009-timbs",
+        "rev": "v001",
+        "title": "The unanimous win did not abolish forfeiture and did not even declare the seizure of the car #Shorts",
+        "description": "The unanimous win did not abolish forfeiture and did not even declare the seizure of the car.\n\nWhy two justices agreed with the result but insisted the Court had taken the wrong route to get there.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Timbs #Law #Documentary",
+        "tags": ["Shorts", "Timbs", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "8011aab22b40e24de36168d0db71c31fa0ac2d37a86b6b3eb15dfd1129dbd012",
+        "thumb_sha256": "3eff1e72a8943d0ab61e15a5de402f9bfed2c7ad9076a871f2157d1c721f9831",
+    },
+    "117": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "89SQoRgAD7U",
+        "ep": "PD-2026-010-kelo",
+        "rev": "v001",
+        "title": "Justice O'Connor's dissent is the part nobody quotes: after Kelo, any home could be taken #Shorts",
+        "description": "Justice O'Connor's dissent is the part nobody quotes: after Kelo, any home could be taken.\n\nWhat the country did about the ruling afterward, and why forty state reforms changed less than people assume.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Kelo #Law #Documentary",
+        "tags": ["Shorts", "Kelo", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "b1a0ca3f1996a2320d7e4a8340688cab4b36c8968975e82e239504776f7cfe9d",
+        "thumb_sha256": "0a357b3bf049a8f3742a3b88500c489b5eafba9508c62ad388fbb54d93fe1935",
+    },
+    "118": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "89SQoRgAD7U",
+        "ep": "PD-2026-010-kelo",
+        "rev": "v001",
+        "title": "Roughly forty states rewrote their eminent domain laws after Kelo and many of those reforms #Shorts",
+        "description": "Roughly forty states rewrote their eminent domain laws after Kelo and many of those reforms.\n\nWhat happened to Susette Kelo's pink house itself.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Kelo #Law #Documentary",
+        "tags": ["Shorts", "Kelo", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "d0ff03b08e5b79da380520534d3f09d82babb8914538f66b699c3c0a46fdfa99",
+        "thumb_sha256": "2ec0b712e032b06e730f3fd5fc82a18e24268540a3f7fd85e0732c86c08f2f18",
+    },
+    "119": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "cSfe3iGnBBM",
+        "ep": "PD-2026-011-mahanoy",
+        "rev": "v001",
+        "title": "The school's entire case rested on disruption, and the disruption turned out to be a few #Shorts",
+        "description": "The school's entire case rested on disruption, and the disruption turned out to be a few.\n\nThe one justice who dissented, and the history he said the majority was discarding.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Mahanoy #Law #Documentary",
+        "tags": ["Shorts", "Mahanoy", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "b67e0dc883e882f07a74ae6fd4a29d824fdc180757830b15038de3832f193590",
+        "thumb_sha256": "112dff679c93bc766647cd2d956eb4470dbd1644d1e86f17f7542e6fac2274bb",
+    },
+    "120": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "cSfe3iGnBBM",
+        "ep": "PD-2026-011-mahanoy",
+        "rev": "v001",
+        "title": "The Court protected the student and then deliberately refused to say where the line #Shorts",
+        "description": "The Court protected the student and then deliberately refused to say where the line.\n\nThe 1969 case that set the old test, and why the phone made that test stop working.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Mahanoy #Law #Documentary",
+        "tags": ["Shorts", "Mahanoy", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "90877a6e68fb9b108172890de4f5bd9be49a43a4d3c0e602c7ac7b4e234c79bf",
+        "thumb_sha256": "c8e9fa1dad59bdef39259ecf606ebbbd2217f178b866bc05b3d9bd30e1af105c",
+    },
+    "121": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "1pox44KsaV8",
+        "ep": "PD-2026-012-arbitration",
+        "rev": "v001",
+        "title": "Both rulings were five to four, and the dissents said what the majorities would not #Shorts",
+        "description": "Both rulings were five to four, and the dissents said what the majorities would not.\n\nThe 1925 law that made all of this possible, and why it sat quiet for most of a century before companies found it.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Arbitration #Law #Documentary",
+        "tags": ["Shorts", "Arbitration", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "264c3fc624baf7dfe370da507ca855ae6103f395c98300be9feebf8133e44d98",
+        "thumb_sha256": "5da35564cb816523003837e7de5000fdb93dfadcc98976b8cd3ee9efd219ce66",
+    },
+    "122": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "1pox44KsaV8",
+        "ep": "PD-2026-012-arbitration",
+        "rev": "v001",
+        "title": "You never signed the clause at all: it attaches when you activate a phone, open an account #Shorts",
+        "description": "You never signed the clause at all: it attaches when you activate a phone, open an account.\n\nWhere lawmakers and regulators are still fighting to claw this back, and for which kinds of claims.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Arbitration #Law #Documentary",
+        "tags": ["Shorts", "Arbitration", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "a7830c47abb2d49b6096cd84aff1cff564a3c6d7dfb2ea4acc97a26e0cc3a032",
+        "thumb_sha256": "5ef1a3fa979271c06bc963c8ec10142a2b27ee8b44a5b9b463ddcd7ae2346f14",
+    },
+    "130": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "g5yFmDt48oU",
+        "ep": "PD-2026-013-king",
+        "rev": "v001",
+        "title": "The majority's whole case rests on one word, identification, and Justice Kennedy defined it #Shorts",
+        "description": "The majority's whole case rests on one word, identification, and Justice Kennedy defined it.\n\nWhy did the Court's most conservative justice and three of its most liberal justices end up on the same side against that definition?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #King #Law #Documentary",
+        "tags": ["Shorts", "King", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "e636400b1cb5d67742bb7c97d89f30f89db7e91061a26bfdb966f27fd9694882",
+        "thumb_sha256": "1c4bb2616dcbc4a453f3822b451d53c041cc38c6f3da5d1eebedef592916ce82",
+    },
+    "131": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "g5yFmDt48oU",
+        "ep": "PD-2026-013-king",
+        "rev": "v001",
+        "title": "A fingerprint reveals a pattern, while a DNA sample is a blueprint of your relatives #Shorts",
+        "description": "A fingerprint reveals a pattern, while a DNA sample is a blueprint of your relatives.\n\nIf the law reads only a narrow set of markers today, who decides when that limit moves?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #King #Law #Documentary",
+        "tags": ["Shorts", "King", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "b24cc81f6704225d9702cca7229559406bc2daa546a7cf86fcd26c1fcc882b2c",
+        "thumb_sha256": "f13c647a730e23e83d7a97a92ac7b47cfc7370e97a3689d9d2a69f6629540da3",
+    },
+    "132": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "rrftLmSVivk",
+        "ep": "PD-2026-025-kyllo",
+        "rev": "v001",
+        "title": "The rule protecting your home from a heat scan is tied to how rare the device is, so #Shorts",
+        "description": "The rule protecting your home from a heat scan is tied to how rare the device is, so.\n\nWhich of today's ordinary sensors has already crossed from exotic into general public use?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Kyllo #Law #Documentary",
+        "tags": ["Shorts", "Kyllo", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "d4ff990592acbdd5048aa5ade9d38deea30d34d50db8ac2071effb554854b628",
+        "thumb_sha256": "d64583525c72b194c621824648910279f107684291baf2c35902b2736a299114",
+    },
+    "133": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "rrftLmSVivk",
+        "ep": "PD-2026-025-kyllo",
+        "rev": "v001",
+        "title": "Kyllo never banned thermal imaging and never freed Danny Kyllo; it sent the case back #Shorts",
+        "description": "Kyllo never banned thermal imaging and never freed Danny Kyllo; it sent the case back.\n\nOnce the thermal evidence was set aside, did the warrant against Kyllo still stand?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Kyllo #Law #Documentary",
+        "tags": ["Shorts", "Kyllo", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "4d72b1ebe48529a240440690c8698ca46d1062b85edf9506af65affb2163a248",
+        "thumb_sha256": "57eff73d482994f01ad8c157555e4339ebe09234761e5df9d2798fcc91ac9c60",
+    },
+    "134": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "68oWZRiOnB8",
+        "ep": "PD-2026-026-katz",
+        "rev": "v001",
+        "title": "The one justice who dissented argued that a spoken sentence cannot be seized #Shorts",
+        "description": "The one justice who dissented argued that a spoken sentence cannot be seized.\n\nIf the Constitution's words never mention conversations, where did the Court find the authority to protect them?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Katz #Law #Documentary",
+        "tags": ["Shorts", "Katz", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "336ac3396c65fec06c66f3ff64835ad9006eee0237b90b46087795efc4d8600b",
+        "thumb_sha256": "d33e8ecde034f08ed0951eae07acfc621277d0ddd57520d5bbd7f9c26b379e8f",
+    },
+    "135": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "68oWZRiOnB8",
+        "ep": "PD-2026-026-katz",
+        "rev": "v001",
+        "title": "Katz anchored your privacy to what society is still prepared to accept as reasonable, so it #Shorts",
+        "description": "Katz anchored your privacy to what society is still prepared to accept as reasonable, so it.\n\nWhose expectations does a judge actually measure when he decides what society finds reasonable?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Katz #Law #Documentary",
+        "tags": ["Shorts", "Katz", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "b71a1073172c093fbc75a255429b12914f2f9cdb7d256315c6ecb0142c4796f0",
+        "thumb_sha256": "3dc4cc2725bbf929549c0153c5fcfd02a6dc62b44048ebacd1ea4a5958e00843",
+    },
+    "136": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "tpAKfHKuwqY",
+        "ep": "PD-2026-027-rodriguez",
+        "rev": "v001",
+        "title": "The government argued seven minutes was too slight for the Constitution to count #Shorts",
+        "description": "The government argued seven minutes was too slight for the Constitution to count.\n\nHad the dog walked the car before the warning instead of after it, would anything have changed?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Rodriguez #Law #Documentary",
+        "tags": ["Shorts", "Rodriguez", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "dbef8a2a63a8f6b92f11349a227790281f063241b078922e2e2224e825256ce6",
+        "thumb_sha256": "19a7bd2b877e0d2f9f6bfa254423593a1a1c067f4f356f2c1e9c08d3cb267218",
+    },
+    "137": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "tpAKfHKuwqY",
+        "ep": "PD-2026-027-rodriguez",
+        "rev": "v001",
+        "title": "Two justices dissented and argued the majority's timing rule punishes the officer who pauses #Shorts",
+        "description": "Two justices dissented and argued the majority's timing rule punishes the officer who pauses.\n\nDid the officer in fact have independent grounds to keep the driver waiting, which is the question the case was sent back to answer?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Rodriguez #Law #Documentary",
+        "tags": ["Shorts", "Rodriguez", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "8346ea651c661002c33a973d2850793a830b2ba8cd88cc0d4ad21b00a3eb5a32",
+        "thumb_sha256": "ae2e073e9d35587d494f9b783e2863337872fe72a8194ea1b56ded37a11e10b8",
+    },
+    "138": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "YQIhk2dKZHU",
+        "ep": "PD-2026-031-unlock",
+        "rev": "v001",
+        "title": "The phone that is a fortress in your living room becomes an open book at the border, where #Shorts",
+        "description": "The phone that is a fortress in your living room becomes an open book at the border, where.\n\nDoes the one judge who ruled a warrant is required at the border bind anyone yet?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Unlock #Law #Documentary",
+        "tags": ["Shorts", "Unlock", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "2f27e244f89f7d9dd205e28c16082ae81a4e8c3b81ed982166bc7c6714bc19e2",
+        "thumb_sha256": "feb78aa01cbbdb020d46b1dd9c1f037d400c3d67aed8c4faebe6a56e4127db83",
+    },
+    "139": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "YQIhk2dKZHU",
+        "ep": "PD-2026-031-unlock",
+        "rev": "v001",
+        "title": "The 2024 ruling that let officers press a man's thumb came with a hint that the answer flips #Shorts",
+        "description": "The 2024 ruling that let officers press a man's thumb came with a hint that the answer flips.\n\nIf a flicker of choice is what the Fifth Amendment protects, where does that leave the face scan you set up for convenience?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Unlock #Law #Documentary",
+        "tags": ["Shorts", "Unlock", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "b7aea484330e090841caad77ef8515d153c7bd2398216f9a02357e1461a5fc4a",
+        "thumb_sha256": "f93d4dd18a177646bf3f057e5dcec3b1e472ee968d543f4e698e31ca84c80113",
+    },
+    "140": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "GGW1SIAAgkY",
+        "ep": "PD-2026-044-tekoh",
+        "rev": "v001",
+        "title": "Justice Alito's majority called the Miranda warnings a protective fence around the Fifth #Shorts",
+        "description": "Justice Alito's majority called the Miranda warnings a protective fence around the Fifth.\n\nIf the warning is only a fence, what happens to the earlier ruling that called Miranda a constitutional rule?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Tekoh #Law #Documentary",
+        "tags": ["Shorts", "Tekoh", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "9c2948f3cbda8be8e3051c449ba92e9f540de06b7626c9fdaa01fed8522d81a7",
+        "thumb_sha256": "c3831bf7c9ae9ebe97c959bb37443cf8ea012fbd83fdbe57b47321cef84d7e54",
+    },
+    "141": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "GGW1SIAAgkY",
+        "ep": "PD-2026-044-tekoh",
+        "rev": "v001",
+        "title": "Justice Kagan's dissent warned that a right no remedy can back up slowly stops feeling like #Shorts",
+        "description": "Justice Kagan's dissent warned that a right no remedy can back up slowly stops feeling like.\n\nIs Miranda a constitutional rule or only a safeguard, which is the question the two sides never resolved?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Tekoh #Law #Documentary",
+        "tags": ["Shorts", "Tekoh", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "d5de783c3f50195369acb30eb71e3b36707a1481a637f5367bea9a21ac1e87d6",
+        "thumb_sha256": "0f5979550f5e9d8baee147916fabe631e71ab2af2cc26a64fb62ee6054cf09ac",
+    },
+    "142": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "bSnyfsulna8",
+        "ep": "PD-2026-048-glover",
+        "rev": "v001",
+        "title": "The lone dissenter wrote that the majority had paved the road to reasonable suspicion based #Shorts",
+        "description": "The lone dissenter wrote that the majority had paved the road to reasonable suspicion based.\n\nHow much would it have taken for the deputy to check who was actually driving?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Glover #Law #Documentary",
+        "tags": ["Shorts", "Glover", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "f58b32dfb5c21e27f5a6cdbab4ee53a37bd17fba0a4d6f02446e607f09785ffd",
+        "thumb_sha256": "256349b759f817a51234bd27364a0862320bb8311b775eb63e4c5362d2777371",
+    },
+    "143": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "bSnyfsulna8",
+        "ep": "PD-2026-048-glover",
+        "rev": "v001",
+        "title": "A concurrence turned the whole stop on one word in the record, revoked rather than #Shorts",
+        "description": "A concurrence turned the whole stop on one word in the record, revoked rather than.\n\nIf the record had said suspended over an unpaid fee, would the same stop have survived?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Glover #Law #Documentary",
+        "tags": ["Shorts", "Glover", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "2c63a8fc2ce9f088a85da17bf252de0b520af03228ac12f26f54e16b0072f833",
+        "thumb_sha256": "7bf417af623fd44ba3a0086666f64ecf2dbbac3ae812341c5791b76d1bf93e3e",
+    },
+    "144": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "2pLWw_vhfI8",
+        "ep": "PD-2026-049-strieff",
+        "rev": "v001",
+        "title": "If you are one of the many Americans carrying a small outstanding warrant, an unlawful stop #Shorts",
+        "description": "If you are one of the many Americans carrying a small outstanding warrant, an unlawful stop.\n\nDoes anything in the ruling stop an officer from stopping people at random to go looking for that warrant?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Strieff #Law #Documentary",
+        "tags": ["Shorts", "Strieff", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "b3c5b61dc99e17ab567eb1252eca775f8bedfb6117e2ef95efc84b677cc3470d",
+        "thumb_sha256": "5ece8a5be6c5dce8502b3c0d6cbd0117ecddfd6c0db58a749a00ffe02c8be118",
+    },
+    "145": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "2pLWw_vhfI8",
+        "ep": "PD-2026-049-strieff",
+        "rev": "v001",
+        "title": "A second dissent in the same case went after arithmetic, arguing the ruling raises #Shorts",
+        "description": "A second dissent in the same case went after arithmetic, arguing the ruling raises.\n\nIf the exclusionary rule exists to remove that temptation, what is left of it after this?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Strieff #Law #Documentary",
+        "tags": ["Shorts", "Strieff", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "e3c90e5665250b057bcef6d809dfe18ac95c58838e50bd8d60d145a4452ed091",
+        "thumb_sha256": "65b487826729562110a11bee12d385e9f88fdb209da860db91766a36fa70fece",
+    },
+    "150": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "ch2hQ5jhDmQ",
+        "ep": "PD-2026-002-gideon",
+        "rev": "v001",
+        "title": "Twenty years earlier the Supreme Court had already answered his exact question #Shorts",
+        "description": "Twenty years earlier the Supreme Court had already answered his exact question.\n\nThousands of prisoners write to the Supreme Court every year. Why did the justices take this one letter?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Gideon #Law #Documentary",
+        "tags": ["Shorts", "Gideon", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "c96828b867c6fc9a30909ce25251e1c38952faf6a24ba7595f65f45e6f6522ed",
+        "thumb_sha256": "0fa63fbabf7bce2ae027d6482e7d93e7ef83e7cddb60fc2e3264dd21d22a9f01",
+    },
+    "151": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "ch2hQ5jhDmQ",
+        "ep": "PD-2026-002-gideon",
+        "rev": "v001",
+        "title": "Winning at the Supreme Court did not set him free. It sent him back to the same courtroom #Shorts",
+        "description": "Winning at the Supreme Court did not set him free. It sent him back to the same courtroom.\n\nThe Court could create the right with a stroke of a pen. Who was ever going to pay for it?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Gideon #Law #Documentary",
+        "tags": ["Shorts", "Gideon", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "8956e4cadf2546f3273a0ea39ecace11ed3666dc1c195d859e3d58532a712e1e",
+        "thumb_sha256": "c5d1bd4e5cb0eeb3410c305857f489644e86f0b1cb14d52ab44332a6b86bdb4c",
+    },
+    "152": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "waA4XJ9bYcE",
+        "ep": "PD-2026-004-ftx",
+        "rev": "v001",
+        "title": "The week a million people asked for their money back at the same time, and the exchange #Shorts",
+        "description": "The week a million people asked for their money back at the same time, and the exchange.\n\nThe money was not set on fire. So where did eight billion dollars actually go?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Ftx #Law #Documentary",
+        "tags": ["Shorts", "Ftx", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "c4a08b2998889e5fbf82c8ba751c32f197b60a153e3b7d05ed60baca50eb4bf6",
+        "thumb_sha256": "9421d5f4b455ddc649d0e4c0c9cf57ce6440d1fb7c16f2da8b7bc2d57bb63154",
+    },
+    "153": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "waA4XJ9bYcE",
+        "ep": "PD-2026-004-ftx",
+        "rev": "v001",
+        "title": "The witnesses who ended him were not investigators. They were the people who built the thing #Shorts",
+        "description": "The witnesses who ended him were not investigators. They were the people who built the thing.\n\nTwenty-five years for an eight-billion-dollar fraud. Too much, too little, or exactly right?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Ftx #Law #Documentary",
+        "tags": ["Shorts", "Ftx", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "28247191c207e720ad4a88bb4266dba3f4592165003e13580751c8f19ef6f8c8",
+        "thumb_sha256": "9884d82372289d8a0cd9d3a2b000adf47f4c63fd0723d01d475cb6803dd12d03",
+    },
+    "154": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "LXFjJqE6vKU",
+        "ep": "PD-2026-015-theranos",
+        "rev": "v001",
+        "title": "The jury convicted her on four counts, acquitted her on the patient counts, and could not #Shorts",
+        "description": "The jury convicted her on four counts, acquitted her on the patient counts, and could not.\n\nIf the machine gave patients wrong answers, why did those charges not stick to her?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Theranos #Law #Documentary",
+        "tags": ["Shorts", "Theranos", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "cdb173f30a08f49b56c7ff1f0bee72084f0eab5c706a8f87812c90a457da7a1c",
+        "thumb_sha256": "a8552477cb865bdc5ee3b281f05ad6c0e52c9caf4bc528f3d0c26c303f630f10",
+    },
+    "155": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "LXFjJqE6vKU",
+        "ep": "PD-2026-015-theranos",
+        "rev": "v001",
+        "title": "The board of household names was not oversight. It was the reason nobody looked #Shorts",
+        "description": "The board of household names was not oversight. It was the reason nobody looked.\n\nWhen somebody finally did look, what did they find inside the machine?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Theranos #Law #Documentary",
+        "tags": ["Shorts", "Theranos", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "8c15ef7c91a841a300e42472815e4fe22a068df5f703c2af89b6eff33724510e",
+        "thumb_sha256": "76840ac6732141a8e17c253b0c6240e92197da5ed6bc5753677c702d94666a3f",
+    },
+    "156": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "5Jap-0h43A4",
+        "ep": "PD-2026-018-flashcrash",
+        "rev": "v001",
+        "title": "The safety net ordinary people had set up to protect their savings is what sold those #Shorts",
+        "description": "The safety net ordinary people had set up to protect their savings is what sold those.\n\nThe market came back inside an hour. So why did it take five years to work out what had pushed it?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Flashcrash #Law #Documentary",
+        "tags": ["Shorts", "Flashcrash", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "7f8cc11d2389d33a98fc325be55e946ae14853c886ef2b84cf42442484613af4",
+        "thumb_sha256": "3e5bcb304a14aa393e908855847f61503f549a6e13720a01a3e75af3e15d11f3",
+    },
+    "157": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "5Jap-0h43A4",
+        "ep": "PD-2026-018-flashcrash",
+        "rev": "v001",
+        "title": "He took tens of millions off the fastest machines on earth, and by the time they arrested #Shorts",
+        "description": "He took tens of millions off the fastest machines on earth, and by the time they arrested.\n\nHow does one man in a bedroom lean hard enough on the largest market on earth to make it bend?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Flashcrash #Law #Documentary",
+        "tags": ["Shorts", "Flashcrash", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "752af127658b067b78140383d86dd365bc3b051708f15023a7860cca5b7fa9c4",
+        "thumb_sha256": "9423b62bf1a4620ad4ab1a20e48581a8f196b9a53f54f46e9e64c98fe9e49fff",
+    },
+    "158": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "j8U8c4BB_GQ",
+        "ep": "PD-2026-019-varsityblues",
+        "rev": "v001",
+        "title": "They did not just buy the seat. They wrote the bribe off on their taxes #Shorts",
+        "description": "They did not just buy the seat. They wrote the bribe off on their taxes.\n\nParents paid roughly twenty-five million dollars. What exactly were they told they were guaranteed?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Varsityblues #Law #Documentary",
+        "tags": ["Shorts", "Varsityblues", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "4670a997c0bb622c1c44d6b7e55e02b8b50f31fc0ea0fad118180f922b140ce0",
+        "thumb_sha256": "89debfcaa1d8836a450fb76d240c711d93e895844b33d68196b08eff4eb47834",
+    },
+    "159": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "j8U8c4BB_GQ",
+        "ep": "PD-2026-019-varsityblues",
+        "rev": "v001",
+        "title": "For every child pushed through the side door, an honest student got a thinner envelope #Shorts",
+        "description": "For every child pushed through the side door, an honest student got a thinner envelope.\n\nSo how do you manufacture a recruited athlete out of a child who has never played the sport?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Varsityblues #Law #Documentary",
+        "tags": ["Shorts", "Varsityblues", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "4157088b821ffcac437471d1756b7737449db75d845fd0c9d9389244f224fc3b",
+        "thumb_sha256": "271cf8247783d814037978a2fe4058aa213de29a3a1c3756d948ddfff28af81a",
+    },
+    "160": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "1h267U6PY0I",
+        "ep": "PD-2026-020-gardner",
+        "rev": "v001",
+        "title": "What they left on the walls is stranger than what they took, and after thirty years nobody #Shorts",
+        "description": "What they left on the walls is stranger than what they took, and after thirty years nobody.\n\nSo who does the FBI actually believe walked into that museum?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Gardner #Law #Documentary",
+        "tags": ["Shorts", "Gardner", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "9952df260bf4d92ee2567ccede75e8fc281f3606997e1e3daf41ba49cb6eab95",
+        "thumb_sha256": "8c6844b47893abb4232618c669654e87f4cd687005993aa9ec60252011805f5d",
+    },
+    "161": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "1h267U6PY0I",
+        "ep": "PD-2026-020-gardner",
+        "rev": "v001",
+        "title": "The FBI followed the paintings out of Boston as far as Philadelphia, and then lost them #Shorts",
+        "description": "The FBI followed the paintings out of Boston as far as Philadelphia, and then lost them.\n\nTen million dollars has been sitting on the table for years. Why has nobody taken it?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Gardner #Law #Documentary",
+        "tags": ["Shorts", "Gardner", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "e29d7ffba3132162b482e43c71b6252a8dacc22394777032fb2974150baecfa8",
+        "thumb_sha256": "5e530d41f277c294c23922da2f245fce1d24618617a199c1a89642706d2ba9c2",
+    },
+    "162": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "mj9qEKPRatE",
+        "ep": "PD-2026-022-milken",
+        "rev": "v001",
+        "title": "One sheet of paper from his firm could put any company in America into play overnight #Shorts",
+        "description": "One sheet of paper from his firm could put any company in America into play overnight.\n\nWhere in all of that did he stop bending the rules and start breaking them?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Milken #Law #Documentary",
+        "tags": ["Shorts", "Milken", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "5f01f5acf7a4b467dccc0bfadf1d973e0a1234747fb3098c7e5e8d5b90ea08eb",
+        "thumb_sha256": "8559a51161a025a52122f2c082b0f95600f3057b2a14f35c9611c5aee00e5d97",
+    },
+    "163": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "mj9qEKPRatE",
+        "ep": "PD-2026-022-milken",
+        "rev": "v001",
+        "title": "Weeks out of prison he was told he had months to live, and he is still here decades later #Shorts",
+        "description": "Weeks out of prison he was told he had months to live, and he is still here decades later.\n\nA record fine, a lifetime ban, and a presidential pardon. Which of those actually stuck?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Milken #Law #Documentary",
+        "tags": ["Shorts", "Milken", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "1ec776cac93b8a230a466b4a2b930326eb38dce064f2b2ec09b799397c53d46d",
+        "thumb_sha256": "a51e05d3e83e97333ea87c342ea261048070db35cd47f57ea5db1c35e1d50b98",
+    },
+    "164": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "rYV4rxtQCV0",
+        "ep": "PD-2026-024-rajaratnam",
+        "rev": "v001",
+        "title": "The argument that had protected the top of Wall Street for a generation died the moment #Shorts",
+        "description": "The argument that had protected the top of Wall Street for a generation died the moment.\n\nA wiretap on a man in a good suit. How did a federal judge ever agree to that?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Rajaratnam #Law #Documentary",
+        "tags": ["Shorts", "Rajaratnam", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "68b37f05e06a92335db65368fa8764a4d363e55f750f8aae24da3879c547bff0",
+        "thumb_sha256": "ed3c8031a32ff9438c36f76903b67bc43d9246c1ddad71995c0a134ae7a176f4",
+    },
+    "165": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "rYV4rxtQCV0",
+        "ep": "PD-2026-024-rajaratnam",
+        "rev": "v001",
+        "title": "You do not have to own a single share for this one to have been taken out of your pocket #Shorts",
+        "description": "You do not have to own a single share for this one to have been taken out of your pocket.\n\nYou can see the suspicious trade on a chart. How do you ever prove a whisper?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Rajaratnam #Law #Documentary",
+        "tags": ["Shorts", "Rajaratnam", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "603e96429dd7a570725849b85ce3b9772f1849910882995afc7c8222e3401683",
+        "thumb_sha256": "454947c9ffe41840fd03b6fbdefdf900c8deca4fee4b29caaa05e15841a91009",
+    },
+    "170": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "YhEJHK279f8",
+        "ep": "PD-2026-028-forfeiture",
+        "rev": "v001",
+        "title": "The room where Philadelphia decided who kept their house had no judge in it and no lawyer #Shorts",
+        "description": "The room where Philadelphia decided who kept their house had no judge in it and no lawyer.\n\nWho forced the city to shut Courtroom 478, and what it cost them to do it.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Forfeiture #Law #Documentary",
+        "tags": ["Shorts", "Forfeiture", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "f93a388cb54e478797a5424fdbf13978f32c7b8f4caa09bbcb3d62ec9d7fec75",
+        "thumb_sha256": "9fd21b97aaf0f604ebad04a1355e94bb9fa73b1f15ab868285c75e78c6bcbf79",
+    },
+    "171": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "YhEJHK279f8",
+        "ep": "PD-2026-028-forfeiture",
+        "rev": "v001",
+        "title": "To get back into the home the city had sealed, the parents had to sign an agreement barring #Shorts",
+        "description": "To get back into the home the city had sealed, the parents had to sign an agreement barring.\n\nWhat they did after they got the house back, when they could simply have walked away.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Forfeiture #Law #Documentary",
+        "tags": ["Shorts", "Forfeiture", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "2eac6e156521c330a35633c5e56c24cde244f74204d6b294e242b486a8e7045a",
+        "thumb_sha256": "127dc50647324f9eccaf031b6f83794178f8aaca7d4a8633a3fc1027317afced",
+    },
+    "172": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "gR_nzXIyIlk",
+        "ep": "PD-2026-036-williams",
+        "rev": "v001",
+        "title": "Your driver's license photo already sits in a lineup that runs every time a camera catches #Shorts",
+        "description": "Your driver's license photo already sits in a lineup that runs every time a camera catches.\n\nWhat happened to the man the software picked, and how a ranked guess became probable cause.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Williams #Law #Documentary",
+        "tags": ["Shorts", "Williams", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "3ea7843842156f9880100cbc19f4f2208e2600c1cf2135dd8bf6d835225b2d41",
+        "thumb_sha256": "2196e3b38629dac22962c8fde42994043787ec7a509e1d6f01d9599ff4389913",
+    },
+    "173": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "gR_nzXIyIlk",
+        "ep": "PD-2026-036-williams",
+        "rev": "v001",
+        "title": "The settlement that banned face-match arrests binds one police department, and people keep #Shorts",
+        "description": "The settlement that banned face-match arrests binds one police department, and people keep.\n\nHow the software picked his face out of millions in the first place.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Williams #Law #Documentary",
+        "tags": ["Shorts", "Williams", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "51abe647c3cc450545792d8b0bc3114a8820df5066b2199ff6051ca6e0a364c5",
+        "thumb_sha256": "3fa3ac5e7048c49ca99e615c0caf127d1add7de6d1735f52a1a5bfdf2c7bd1b1",
+    },
+    "174": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Pmh6h5SfWw4",
+        "ep": "PD-2026-038-kidsforcash",
+        "rev": "v001",
+        "title": "Pennsylvania erased thousands of those convictions and could not give back one night any #Shorts",
+        "description": "Pennsylvania erased thousands of those convictions and could not give back one night any.\n\nWhy a judge was sending children away in the first place.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Kidsforcash #Law #Documentary",
+        "tags": ["Shorts", "Kidsforcash", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "583df7b37c106e8684b044e8e75a2d9e918d0e59c46721e4afa9f734f248dbad",
+        "thumb_sha256": "bac3cd6d60e2912cf73e9d408a63e5df2ae10c712318be071b1ece3c8222dcc1",
+    },
+    "175": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "X40EbUw5kzQ",
+        "ep": "PD-2026-039-frazier",
+        "rev": "v001",
+        "title": "Officers may speak a lie about the evidence, and one Florida court held they may not print #Shorts",
+        "description": "Officers may speak a lie about the evidence, and one Florida court held they may not print.\n\nWhat a spoken lie about a fingerprint took from a man with the comprehension of a ten-year-old.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Frazier #Law #Documentary",
+        "tags": ["Shorts", "Frazier", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "6d8511e48bd83542c0c5ba090d2097812683893c566fb44816d223323c38a3ca",
+        "thumb_sha256": "0c53e658d099dd58bd92be0a24ed84337d882f349f34ba000de53a9bce82b4ea",
+    },
+    "176": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "X40EbUw5kzQ",
+        "ep": "PD-2026-039-frazier",
+        "rev": "v001",
+        "title": "Roughly ten states now bar police from lying to a child in an interrogation, and not one #Shorts",
+        "description": "Roughly ten states now bar police from lying to a child in an interrogation, and not one.\n\nWhat that lie did to a twenty-four-year-old the law counted as an adult.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Frazier #Law #Documentary",
+        "tags": ["Shorts", "Frazier", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "7cefa3316f89a4531c526ea0d5210fa4f3fa4936dfa8da5846d6b74fbdbcebfa",
+        "thumb_sha256": "044f91367bfa4b2832365e851a984a51d824c83791662ab9507fa129c9d7b9d8",
+    },
+    "177": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "4uuY6G0LmHo",
+        "ep": "PD-2026-040-lech",
+        "rev": "v001",
+        "title": "Whether a family is paid for a house police lawfully destroyed turns on which city they #Shorts",
+        "description": "Whether a family is paid for a house police lawfully destroyed turns on which city they.\n\nWhat nineteen hours of police entry did to one house in Colorado, and what its owner was offered afterwards.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Lech #Law #Documentary",
+        "tags": ["Shorts", "Lech", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "c57288f2ae7c1392805430ecea66967d8f1e6c1070b18a306c9d256383da6552",
+        "thumb_sha256": "663ce0f5a535150fec680cf66226b2ec31d81486fdbf800522ef5521133f653b",
+    },
+    "178": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "4uuY6G0LmHo",
+        "ep": "PD-2026-040-lech",
+        "rev": "v001",
+        "title": "Two justices wrote that this question needs further percolation in the lower courts #Shorts",
+        "description": "Two justices wrote that this question needs further percolation in the lower courts.\n\nWhose house it was, and what nineteen hours of police entry left of it.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Lech #Law #Documentary",
+        "tags": ["Shorts", "Lech", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "f24012e97abe7776f478893d118397c76ef07f5befa9c9c262ff8d2746bb4517",
+        "thumb_sha256": "34d5929751ef3c79566542fccd37024df2046dca9bed3dc245ff0497693b1644",
+    },
+    "179": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Enok7A7wGBA",
+        "ep": "PD-2026-042-young",
+        "rev": "v001",
+        "title": "The Supreme Court kept the knock-and-announce rule and took away the only punishment #Shorts",
+        "description": "The Supreme Court kept the knock-and-announce rule and took away the only punishment.\n\nWhat that remaining remedy was actually worth to a woman whose door was the wrong one.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Young #Law #Documentary",
+        "tags": ["Shorts", "Young", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "c7151265ad3288a7a232ae2c39d0e034e94bf91a5d1dc30f18a7c59417ade958",
+        "thumb_sha256": "efde6b4db0205f991240c68175520772cba79715a5a6f93612c0094d19e8fe99",
+    },
+    "180": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "AxOlQ2NIaBU",
+        "ep": "PD-2026-045-cleveland",
+        "rev": "v001",
+        "title": "An Alabama judge looked at how his own state's courts collected fines from poor people #Shorts",
+        "description": "An Alabama judge looked at how his own state's courts collected fines from poor people.\n\nWhat that machine had already done to one woman in Montgomery before anyone moved to stop it.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Cleveland #Law #Documentary",
+        "tags": ["Shorts", "Cleveland", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "860c261207936b4e822a95bd3d980cf7502199642e217fa0c3fa2aadb922d623",
+        "thumb_sha256": "987eea7fe62802dd08f91fbdd6f4db6cea916b2f60373db42834dc9b5d4f7ca5",
+    },
+    "181": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "AxOlQ2NIaBU",
+        "ep": "PD-2026-045-cleveland",
+        "rev": "v001",
+        "title": "The 1983 rule against jailing people for being broke was written for a man who had been laid #Shorts",
+        "description": "The 1983 rule against jailing people for being broke was written for a man who had been laid.\n\nWhy that rule never reached a courtroom in Montgomery three decades later.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Cleveland #Law #Documentary",
+        "tags": ["Shorts", "Cleveland", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "6fe9ff7b2e7a7c493a69ffb9be860bea7fe9b2b079fd93594955d39590e69ac9",
+        "thumb_sha256": "b202f21eb7eeb8edb86a46f37ba7f26f3ad9ed2d028c5f1865d106426db0f08a",
+    },
+    "182": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "hC5KE6IqmhM",
+        "ep": "PD-2026-046-tlo",
+        "rev": "v001",
+        "title": "The two-part test means a lawful school search can become an unlawful one halfway through #Shorts",
+        "description": "The two-part test means a lawful school search can become an unlawful one halfway through.\n\nHow far did the search of that one purse actually go before anyone asked whether it was still lawful?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Tlo #Law #Documentary",
+        "tags": ["Shorts", "Tlo", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "4a9efd95f1bd034d804ec3fc9281c05452f63fb101a4c1fe1330cde2d4fdb6ed",
+        "thumb_sha256": "52c3eb2b91534d83c1f096c84bb5da15e71b10f087e1c6a453f7eecc89a70968",
+    },
+    "183": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "hC5KE6IqmhM",
+        "ep": "PD-2026-046-tlo",
+        "rev": "v001",
+        "title": "The lowered school standard was written for educators alone, and the Court kept a higher #Shorts",
+        "description": "The lowered school standard was written for educators alone, and the Court kept a higher.\n\nWhat did the Court say a school official may do on his own authority, and where exactly does that authority stop?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Tlo #Law #Documentary",
+        "tags": ["Shorts", "Tlo", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "cf517a490c2076716879660c055e37094e95e9f0663ef667fd7c7cc5792a39ce",
+        "thumb_sha256": "dc93b2e963d20513d333f578dd2b4230f6522466bb4d60337c21fc699fa5b6a5",
+    },
+    "184": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "i95peRcdtz4",
+        "ep": "PD-2026-047-atwater",
+        "rev": "v001",
+        "title": "Every heavy thing done to Gail Atwater that afternoon happened before any finding of guilt #Shorts",
+        "description": "Every heavy thing done to Gail Atwater that afternoon happened before any finding of guilt.\n\nIf a cell was never available as her punishment, what did the Supreme Court say the police were still permitted to do to her?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Atwater #Law #Documentary",
+        "tags": ["Shorts", "Atwater", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "8b55ae809d5db74fb2071f24bb44d117e82431dbbd19dc0e54f8d37ef25b60aa",
+        "thumb_sha256": "6b509ed56a1f418a8c814bef6c755509a8b77002a5934f9859fb1d1f8234019b",
+    },
+    "185": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "i95peRcdtz4",
+        "ep": "PD-2026-047-atwater",
+        "rev": "v001",
+        "title": "The majority handed the remedy to legislatures, so protection against an arrest like hers #Shorts",
+        "description": "The majority handed the remedy to legislatures, so protection against an arrest like hers.\n\nWhat did the majority itself call the arrest, in the same opinion in which it held that the Constitution permits it?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Atwater #Law #Documentary",
+        "tags": ["Shorts", "Atwater", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "95292579bed57299a13905c366caff1dc370c7681560e4c60d1980926cc80383",
+        "thumb_sha256": "e73b22de41f4220ec053d006f579d5e7104910f82130fc93822d149bfe5f3924",
+    },
+    "186": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "dueMY2lSu8w",
+        "ep": "PD-2026-051-willingham",
+        "rev": "v001",
+        "title": "Each of the arson indicators had an ordinary explanation: flashover makes the pour patterns #Shorts",
+        "description": "Each of the arson indicators had an ordinary explanation: flashover makes the pour patterns.\n\nIf the fire was never a crime, why did every court that reviewed the case let the execution go forward?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Willingham #Law #Documentary",
+        "tags": ["Shorts", "Willingham", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "19b1135d619b78baf90a73882412283afda37d3972870d9895af24731ca28b07",
+        "thumb_sha256": "a6f594a67ba6a9d32b7218a1c8f9186f19b0a15ac9eab9cbe0e7cb4ebd845d86",
+    },
+    "187": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "dueMY2lSu8w",
+        "ep": "PD-2026-051-willingham",
+        "rev": "v001",
+        "title": "Texas built a commission to ask whether the science was reliable, and the meeting where #Shorts",
+        "description": "Texas built a commission to ask whether the science was reliable, and the meeting where.\n\nWhat had the state's own expert found in the fire evidence that made a scheduled public meeting worth stopping?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Willingham #Law #Documentary",
+        "tags": ["Shorts", "Willingham", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "66ed05221d4f62eff5a5c9da428fa0a015f83934a40097cbfb458ff66023bd20",
+        "thumb_sha256": "8d088a46428f4803ad4d0b10753232ee3fc6d084e4b5a997f5f5c740452ce92a",
+    },
+    "188": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Gx_i5aMJWLM",
+        "ep": "PD-2026-052-morton",
+        "rev": "v001",
+        "title": "The alibi was not disproved, it was engineered away: a stomach-contents estimate moved #Shorts",
+        "description": "The alibi was not disproved, it was engineered away: a stomach-contents estimate moved.\n\nIf nothing in that house pointed to him, what was already sitting in the sheriff's own file that the jury never saw?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Morton #Law #Documentary",
+        "tags": ["Shorts", "Morton", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "e6b19cb0d80619ed2007af60471822ff4f001af5ff621538aa5f4bf84e2ae8f0",
+        "thumb_sha256": "52382c300f6aa473442a9ff1b8c2a29d93988dc7980ba706c14a8dc304b9a260",
+    },
+    "189": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Gx_i5aMJWLM",
+        "ep": "PD-2026-052-morton",
+        "rev": "v001",
+        "title": "The successor district attorney spent roughly six years fighting the DNA test itself, so #Shorts",
+        "description": "The successor district attorney spent roughly six years fighting the DNA test itself, so.\n\nWhat did the laboratory find on that bandana, and whose name came back with it?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Morton #Law #Documentary",
+        "tags": ["Shorts", "Morton", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "463315edd3e6d71d9a55dbce06f63477244bd3ee388f70cb28c376bc6747ac2e",
+        "thumb_sha256": "d028323647c1f90a8108b55328a79c1bb33894546f14673e13a14a7da66a9ecd",
+    },
+    "190": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "bXATF9ZnKLE",
+        "ep": "PD-2026-032-carsearch",
+        "rev": "v001",
+        "title": "The automobile exception no longer requires any emergency at all: the Court has held #Shorts",
+        "description": "The automobile exception no longer requires any emergency at all: the Court has held.\n\nIf the car being a car is emergency enough, is there any ground left where that power finally stops?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Carsearch #Law #Documentary",
+        "tags": ["Shorts", "Carsearch", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "6a168fc28af9b8509ff434adff0d0027c9d6abaeec679e57359c6415ef51974a",
+        "thumb_sha256": "3373779b54e67d8b2252c2f4fbd2a8cfb74661a6ee70264da972fc78e2d11758",
+    },
+    "191": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "bXATF9ZnKLE",
+        "ep": "PD-2026-032-carsearch",
+        "rev": "v001",
+        "title": "Three limits on the car-search power that sit on the public road itself: an arrest does not #Shorts",
+        "description": "Three limits on the car-search power that sit on the public road itself: an arrest does not.\n\nWhich of these limits an officer actually has to respect at your own window, and where the car-search power finally runs out of road.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Carsearch #Law #Documentary",
+        "tags": ["Shorts", "Carsearch", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "a395f6fc1806e4417233b36cffbb7bc436cd987890190280e8b2067b52ba7c4f",
+        "thumb_sha256": "46dc83c3833339d9aff8749a51d430c0e72ab6e94084cc9f866d915e29a4d4bf",
+    },
+    "192": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "rU2vk9XL4vY",
+        "ep": "PD-2026-033-tyler",
+        "rev": "v001",
+        "title": "Her lawyers stopped arguing about a Minnesota statute and argued eight hundred years of law #Shorts",
+        "description": "Her lawyers stopped arguing about a Minnesota statute and argued eight hundred years of law.\n\nWhat nine justices did when a county's modern statute was set against a rule that old.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Tyler #Law #Documentary",
+        "tags": ["Shorts", "Tyler", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "6e49d6c6ed1f76df65c03fc86b9254bcff10b4306f9384f9065b68dd66908e0d",
+        "thumb_sha256": "b1357bbecbd69390d905ccebb936f1dd7e1a9184c896abd94163161d248e3974",
+    },
+    "193": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "rU2vk9XL4vY",
+        "ep": "PD-2026-033-tyler",
+        "rev": "v001",
+        "title": "The debt began at about two thousand three hundred dollars and grew itself into roughly #Shorts",
+        "description": "The debt began at about two thousand three hundred dollars and grew itself into roughly.\n\nWhat the highest court in the country said about a debt that had multiplied itself six times over.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Tyler #Law #Documentary",
+        "tags": ["Shorts", "Tyler", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "3898bf8fd880abb0358b185b1e2899839242dd6ba13b70af8a0917df366e3b78",
+        "thumb_sha256": "5edcc4a1b9a25b9e253f83d8d233bd9bc5f1c4d8c42950f8f756c9c876652c60",
+    },
+    "194": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "6ozsIfwqrP0",
+        "ep": "PD-2026-034-rolin",
+        "rev": "v001",
+        "title": "The mechanics that make an airport seizure work: the case is filed against the money itself #Shorts",
+        "description": "The mechanics that make an airport seizure work: the case is filed against the money itself.\n\nWhat it took for one family to get their own savings back out of that machine.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Rolin #Law #Documentary",
+        "tags": ["Shorts", "Rolin", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "9f044edc1a51ee7a0f2a0e58a1a82b76961bfc4b0bd8bd07ba4bd940ed18d7b7",
+        "thumb_sha256": "aade7b528973b76fa023789af301fa9c84d87fa3584be117e50d9c576927f07b",
+    },
+    "195": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "6ozsIfwqrP0",
+        "ep": "PD-2026-034-rolin",
+        "rev": "v001",
+        "title": "The measured size of airport cash seizure, from a Justice Department watchdog's own count #Shorts",
+        "description": "The measured size of airport cash seizure, from a Justice Department watchdog's own count.\n\nWhat happened to the one traveler whose case put those numbers in front of a court.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Rolin #Law #Documentary",
+        "tags": ["Shorts", "Rolin", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "4405b63e725160db4f3dcb009cbec6924cd23a68910e2e36312c21813b555a96",
+        "thumb_sha256": "ba40f110bac874b435cc4359172aec9b384c69f3ef63e38f6412594b41d1f244",
+    },
+    "196": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Xc_PxdC_75c",
+        "ep": "PD-2026-035-hinders",
+        "rev": "v001",
+        "title": "Two owners caught by the same structuring theory ended opposite ways: a store owner in North #Shorts",
+        "description": "Two owners caught by the same structuring theory ended opposite ways: a store owner in North.\n\nWhy two words in a dismissal order decided which of them the law would make whole.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Hinders #Law #Documentary",
+        "tags": ["Shorts", "Hinders", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "77053c1a30a9314cbca218452073da9f48b67486a8b28b85ce178c0d6391a2d8",
+        "thumb_sha256": "a92d1be0e060ec5f601f21cbd9aa40639045c00325d5fb417902ca8ffaa8771e",
+    },
+    "197": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Xc_PxdC_75c",
+        "ep": "PD-2026-035-hinders",
+        "rev": "v001",
+        "title": "A Treasury watchdog measured these structuring seizures and found nine in ten #Shorts",
+        "description": "A Treasury watchdog measured these structuring seizures and found nine in ten.\n\nWhat it finally took to close the specific trap that number exposed, and how much of the power survived.\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Hinders #Law #Documentary",
+        "tags": ["Shorts", "Hinders", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "6c372a9c0927338717055f88393f8c09cb46f74c44eeae4c860ec8cefdcf13d6",
+        "thumb_sha256": "903f92563fa280f082a00f70037be726abc4acd0821c7ad8cc16e6c14e28af61",
+    },
+    "200": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "6VL_mA6OiS0",
+        "ep": "PD-2026-053-norfolk",
+        "rev": "v001",
+        "title": "Every DNA exclusion made the state's theory bigger instead of smaller, until it required #Shorts",
+        "description": "Every DNA exclusion made the state's theory bigger instead of smaller, until it required.\n\nWhy did Virginia accept a guilty plea from a DNA-excluded sailor six weeks after its own laboratory identified the real killer?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Norfolk #Law #Documentary",
+        "tags": ["Shorts", "Norfolk", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "504119b5114a1eebab0a6184ef476b7723055bd33433a69528f109be4aba71ea",
+        "thumb_sha256": "817ba759f4aa8e2be66034e72278e5c28a392e66d7395ac89e576d1ff1032c83",
+    },
+    "201": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "0iDUT0gzBiQ",
+        "ep": "PD-2026-054-flowers",
+        "rev": "v001",
+        "title": "Reporters walked into rural Mississippi courthouse storerooms and counted every juror #Shorts",
+        "description": "Reporters walked into rural Mississippi courthouse storerooms and counted every juror.\n\nIf those jury records were sitting in the storerooms the whole time, why did it take reporters rather than a court to add them up?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Flowers #Law #Documentary",
+        "tags": ["Shorts", "Flowers", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "e969fcc4130e284bb82715f815a7a41190876d067e78147c86195942d9d7580d",
+        "thumb_sha256": "681701a62635cb9a8572f64e2cb961d7b1b6f7f84aa84e460d40cda4ccc2f848",
+    },
+    "202": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Ew5bZNOk17E",
+        "ep": "PD-2026-055-burge",
+        "rev": "v001",
+        "title": "Illinois gave prosecutors three years to charge these crimes, so the clock on every provable #Shorts",
+        "description": "Illinois gave prosecutors three years to charge these crimes, so the clock on every provable.\n\nIf every provable crime had expired, what was the one thing left that a federal jury could still convict him of?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Burge #Law #Documentary",
+        "tags": ["Shorts", "Burge", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "670c1fac74d466a4229f32a88485dbdc643812620b00ec89f69907ba475968ae",
+        "thumb_sha256": "59e834f2c55127b67e9825a11eb10fb56c0ffaa223c1f482b64747cd5f0feac8",
+    },
 }
 
 
