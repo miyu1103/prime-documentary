@@ -103,7 +103,12 @@ EP60はこの規則で **279枚・変種0・指定外0・sha256重複0・知覚�
 
 **`[NEG]`** ＝ `Avoid:` の後にそのまま連結:
 
-> text, lettering, numerals, handwriting, signatures, seals, emblems, logos, signage, house numbers, street signs, police uniform, sheriff badge, patrol car, courtroom interior, gavel, judge's bench, prison bars, razor wire, handcuffs, furniture on a pavement, people being evicted, crying, a hand on a shoulder, golden hour, sunset glow, postcard scenery, drone shot, cosy fireplace, Christmas, tropical, modern smartphones, modern cars, flat CGI, cartoon, illustration, oversaturated
+> text, lettering, numerals, handwriting, signatures, seals, emblems, logos, signage, house numbers, street signs, police uniform, sheriff badge, patrol car, courtroom interior, gavel, judge's bench, prison bars, razor wire, handcuffs, furniture on a pavement, people being evicted, crying, a hand on a shoulder, golden hour, sunset glow, postcard scenery, drone shot, cosy fireplace, Christmas, tropical, modern smartphones, modern cars, flat CGI, cartoon, illustration, oversaturated, human face, face, facial features, eyes, eye contact, looking at the camera, portrait, headshot, close-up of a person, recognisable person, identifiable person, a person facing camera, profile of a face, smiling, expression
+>
+> **★ 2026-08-05 追加（ここから先の生成に適用）**：上の `[NEG]` には **顔を抑える語が1つも入っていなかった**。
+> 守っていたのは個々のプロンプト本文の「no face」だけで、**人を一言も書いていない発注には保護がゼロ**だった。
+> 実際に `G174`（発注＝記録室）が**完全に識別可能な女性の顔**で戻ってきた（invariant 11 違反）。
+> この追加は**今後生成する枚にのみ効く**。
 
 > **注意（v002で厳格化）。** §5 のプロンプト本文には、`text` / `lettering` / `sign` / `signage` / `numbers` /
 > `uniform` / `badge` / `gavel` / `courtroom` / `bars` / `handcuffs` を**一語も書いていません**。禁止語は

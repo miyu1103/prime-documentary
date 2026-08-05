@@ -96,7 +96,12 @@ EP60はこの規則で **279枚・変種0・指定外0・sha256重複0・知覚�
 
 **`[NEG]`** ＝ `Avoid:` の後にそのまま連結:
 
-> text, lettering, numerals, digits, readable dial figures, handwriting, signatures, seals, emblems, logos, signage, house numbers, street signs, fire, flame, a burning building, smoke rising from a house, a person shivering, a person wrapped in blankets against the cold, frost on skin, a body, an injured or unconscious person, a crying child, uniform, cap insignia, badge, patrol car, a figure looming in a doorway, courtroom interior, gavel, judge's bench, prison bars, razor wire, handcuffs, a hand on a shoulder, a tear, a clock counting down, candle, lit match, cosy fireplace, golden hour, sunset glow, postcard scenery, drone shot, Christmas, tropical, modern appliances, smart meter, digital display, LED, modern cars, catalogue product lighting, centred symmetrical stock composition, flat CGI, cartoon, illustration, oversaturated
+> text, lettering, numerals, digits, readable dial figures, handwriting, signatures, seals, emblems, logos, signage, house numbers, street signs, fire, flame, a burning building, smoke rising from a house, a person shivering, a person wrapped in blankets against the cold, frost on skin, a body, an injured or unconscious person, a crying child, uniform, cap insignia, badge, patrol car, a figure looming in a doorway, courtroom interior, gavel, judge's bench, prison bars, razor wire, handcuffs, a hand on a shoulder, a tear, a clock counting down, candle, lit match, cosy fireplace, golden hour, sunset glow, postcard scenery, drone shot, Christmas, tropical, modern appliances, smart meter, digital display, LED, modern cars, catalogue product lighting, centred symmetrical stock composition, flat CGI, cartoon, illustration, oversaturated, human face, face, facial features, eyes, eye contact, looking at the camera, portrait, headshot, close-up of a person, recognisable person, identifiable person, a person facing camera, profile of a face, smiling, expression
+>
+> **★ 2026-08-05 追加（ここから先の生成に適用）**：上の `[NEG]` には **顔を抑える語が1つも入っていなかった**。制服・バッジ・ロゴは禁じていたが、人を描かせない語は無かった。
+> 守っていたのは個々のプロンプト本文の「no face」だけで、**人を一言も書いていない発注には保護がゼロ**だった。
+> 実際に EP62 `G174`（発注＝記録室）と EP65 `R019`（発注＝紙）`R041`（発注＝法令集）が、**完全に識別可能な顔**で戻ってきた（invariant 11 違反）。
+> この追加は**今後生成する枚にのみ効く**。既存の枚は `runs/qc/` の目視記録で判定する。
 
 ---
 

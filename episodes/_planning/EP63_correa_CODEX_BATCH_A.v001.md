@@ -98,7 +98,12 @@ EP60はこの規則で **279枚・変種0・指定外0・sha256重複0・知覚�
 
 **`[NEG]`** ＝ `Avoid:` の後にそのまま連結:
 
-> text, lettering, numerals, digits, handwriting, signatures, seals, emblems, logos, signage, wayfinding arrows, room numbers, brand marks, a person collapsing, a patient on a gurney, a stretcher with a person on it, crash cart, defibrillator, CPR, chest compressions, flatline monitor, heart trace, ECG, blood, wounds, bandages, surgery, injections, a drip line in an arm, a body, a corpse, doctors or nurses treating a person, medical distress, courtroom interior, gavel, judge's bench, prison bars, razor wire, handcuffs, a hand on a shoulder, tears, crying, a clock counting down, modern smartphone, flat-screen monitor, LED lighting, modern cars, glossy modern hospital architecture, palm-fringed resort, beach, postcard scenery, golden hour, sunset glow, drone shot, oversaturated, flat CGI, cartoon, illustration, stock photography, catalogue lighting, evenly lit product shot, stock-photo smiling
+> text, lettering, numerals, digits, handwriting, signatures, seals, emblems, logos, signage, wayfinding arrows, room numbers, brand marks, a person collapsing, a patient on a gurney, a stretcher with a person on it, crash cart, defibrillator, CPR, chest compressions, flatline monitor, heart trace, ECG, blood, wounds, bandages, surgery, injections, a drip line in an arm, a body, a corpse, doctors or nurses treating a person, medical distress, courtroom interior, gavel, judge's bench, prison bars, razor wire, handcuffs, a hand on a shoulder, tears, crying, a clock counting down, modern smartphone, flat-screen monitor, LED lighting, modern cars, glossy modern hospital architecture, palm-fringed resort, beach, postcard scenery, golden hour, sunset glow, drone shot, oversaturated, flat CGI, cartoon, illustration, stock photography, catalogue lighting, evenly lit product shot, stock-photo smiling, human face, face, facial features, eyes, eye contact, looking at the camera, portrait, headshot, close-up of a person, recognisable person, identifiable person, a person facing camera, profile of a face, smiling, expression
+>
+> **★ 2026-08-05 追加（ここから先の生成に適用）**：上の `[NEG]` には **顔を抑える語が1つも入っていなかった**。制服・バッジ・ロゴは禁じていたが、人を描かせない語は無かった。
+> 守っていたのは個々のプロンプト本文の「no face」だけで、**人を一言も書いていない発注には保護がゼロ**だった。
+> 実際に EP62 `G174`（発注＝記録室）と EP65 `R019`（発注＝紙）`R041`（発注＝法令集）が、**完全に識別可能な顔**で戻ってきた（invariant 11 違反）。
+> この追加は**今後生成する枚にのみ効く**。既存の枚は `runs/qc/` の目視記録で判定する。
 
 ---
 
