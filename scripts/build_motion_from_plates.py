@@ -61,26 +61,35 @@ NEG = ("static, motionless, still image, frozen, blurry, low quality, distorted,
        "camera shake, zoom, pan, dolly, crane, whip pan")
 
 # What moves, keyed on what the plate's own prompt says is in the picture. First match wins.
+# The first pass asked for movement "very slightly" and "almost imperceptibly" and got a third
+# of the reference clip's amplitude. The complaint on this channel is always that there is not
+# enough animation, so these ask for movement that is unmistakably there while staying physical.
 MOTION = [
     (r"\bpaper|sheet|form|notice|bill|flyer|ticket|slip|envelope|document|page\b",
-     "the paper stirs very slightly in the air, one edge lifting a few millimetres and settling, "
-     "dust drifting through the light"),
+     "the paper lifts and flutters in a draught, its free edge curling up and falling back again "
+     "several times, the whole sheet flexing and rippling, dust turning through the shaft of light"),
     (r"\bhand|fingers|thumb|palm|wrist\b",
-     "the hand shifts its grip a little and settles, the fingers moving slowly"),
+     "the hand moves, the fingers opening and closing their grip and the wrist turning, the arm "
+     "shifting its weight"),
     (r"\bchair|seat|bench|desk|counter|table\b",
-     "the light shifts almost imperceptibly across the surface, dust moving slowly through the air"),
+     "the light sweeps across the surface as a cloud passes, shadows lengthening and contracting, "
+     "dust turning through the beam"),
     (r"\bcurtain|window|blind|glass\b",
-     "the curtain breathes very slightly, the light outside shifting slowly"),
+     "the curtain billows inward on a gust and falls back, the light beyond it swinging as the "
+     "cloud moves, the blind swaying on its cord"),
     (r"\bdoor|walkway|corridor|hallway|stairwell\b",
-     "the light changes slowly across the surface, dust drifting, a faint movement of air"),
+     "light and shadow sweep along the surface as a cloud passes overhead, dust turning in the air, "
+     "a draught moving through the space"),
     (r"\bmeter|dial|telephone|handset|cord|machine|printer\b",
-     "the cord sways a little and slows, the light shifting on the metal"),
+     "the cord swings on its own weight and slowly stills, the light travelling over the metal"),
     (r"\bstreet|road|yard|grass|tree|sky|cloud|field\b",
-     "the leaves and grass move a little in the wind, the cloud drifting slowly"),
+     "the branches and grass sway in the wind, the cloud moving visibly across the sky, light "
+     "sweeping over the ground"),
 ]
-DEFAULT_MOTION = ("a very slow, subtle drift of light and air through the frame, dust moving "
-                  "slowly, everything else still")
-COMMON = (", slow subtle documentary motion, the camera locked off and completely static, "
+DEFAULT_MOTION = ("light and shadow move visibly across the frame as a cloud passes, dust turning "
+                  "in the air, a draught moving through the space")
+COMMON = (", continuous visible movement throughout the shot, unhurried and physical, "
+          "the camera locked off and completely static on a tripod, "
           "no camera movement of any kind, no zoom, no pan, photoreal, cinematic")
 
 
@@ -230,9 +239,13 @@ def main() -> int:
         for i, f in enumerate(frames):
             shutil.copy(f, stage / f"f{i:04d}.png")
         mp4 = outdir / f"{pid}.mp4"
+        # 49 frames at 24 fps is 2.03s; a documentary cut needs about 5. setpts stretches the
+        # time base and minterpolate rebuilds the intermediate frames with motion compensation
+        # rather than duplicating, so it does not judder. About 36s of CPU, off the GPU.
         cmd = ["ffmpeg", "-v", "error", "-y", "-framerate", "24", "-i", str(stage / "f%04d.png"),
-               "-vf", "scale=1920:1080:flags=lanczos,fps=30", "-c:v", "libx264", "-crf", "18",
-               "-pix_fmt", "yuv420p", str(mp4)]
+               "-vf", "scale=1920:1080:flags=lanczos,"
+                       "setpts=2.45*PTS,minterpolate=fps=30:mi_mode=mci:mc_mode=aobmc:vsbmc=1",
+               "-c:v", "libx264", "-crf", "18", "-pix_fmt", "yuv420p", str(mp4)]
         subprocess.run(cmd, check=True)
         shutil.rmtree(stage, ignore_errors=True)
         for f in frames:
