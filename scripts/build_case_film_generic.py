@@ -37,6 +37,8 @@ import sys
 from collections import Counter, deque
 from pathlib import Path
 
+import pd_footage_blocklist
+
 ROOT = Path(__file__).resolve().parents[1]
 FPS = 30
 
@@ -486,25 +488,20 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
     # Fox News footage of Jeffrey Epstein and news footage of Steve Bannon, both with network
     # watermarks. Those are rights hazards and invariant-11 hazards, and nothing downstream
     # was looking for them. A film that names a blocked clip is not emitted at all.
-    blocklist = ROOT / "config" / "footage_blocklist.v001.json"
-    if blocklist.is_file():
-        blocked: dict[str, str] = {}
-        for row in json.loads(blocklist.read_text(encoding="utf-8")).get("blocked", []):
-            for ident in row["ids"]:
-                blocked[ident] = f"{row['label']}: {row['reason']}"
-        hits = []
-        for c in cuts:
-            base = (c.get("src") or "").split("/")[-1]
-            ident = base.split("__")[0]
-            why = blocked.get(ident) or blocked.get(ident.replace("AF-BG-", ""))
-            if why:
-                hits.append((base, why))
-        if hits:
-            for base, why in hits[:8]:
-                print(f"  BLOCKED {base}\n          {why}", file=sys.stderr)
-            raise SystemExit(
-                f"{len(hits)} cut(s) reference a blocklisted clip. Prune the pool with "
-                f"scripts/prune_pool_by_blocklist.py --slug <slug> and rebuild.")
+    #
+    # SCOPE (2026-08-05): the list now carries episode-scoped rows as well as global ones, so
+    # this is asked for THIS SLUG. 108 shipped-frame rejections across ten episodes split into
+    # material no documentary may use (readable IRS forms, a Tokyo patrol car, scraped news with
+    # a chyron) and material only one episode may not use (handcuffs in EP55, ruins in EP60, and
+    # the episode's own W###/P## plates, whose numbers name different pictures in other films).
+    # Both kinds have to stop a build; only the first kind may bind everywhere.
+    blocked_hits = pd_footage_blocklist.hits((c.get("src") for c in cuts), slug)
+    if blocked_hits:
+        for base, why in blocked_hits[:8]:
+            print(f"  BLOCKED {base}\n          {why}", file=sys.stderr)
+        raise SystemExit(
+            f"{len(blocked_hits)} cut(s) reference a clip blocked for {slug}. Prune the pool "
+            f"with scripts/prune_pool_by_blocklist.py --slug {slug} and rebuild.")
     return cuts, plan
 
 
@@ -605,6 +602,14 @@ def main() -> int:
     hook_sec = float(cfg.get("hookSeconds", HOOK_SEC))
     cuts, plan = make_cuts(order, windows, manifest, slug)
     hook = make_hook(manifest, slug, hook_sec)
+    # The hook is on screen too. EP51's rejected plates were people stills, and make_hook draws
+    # from exactly that pool, so a clip barred from the body must not slip in through the cold
+    # open -- which is the most-watched eight seconds of the film.
+    hook_hits = pd_footage_blocklist.hits((h.get("src") for h in hook), slug)
+    if hook_hits:
+        for base, why in hook_hits[:8]:
+            print(f"  BLOCKED (hook) {base}\n          {why}", file=sys.stderr)
+        raise SystemExit(f"{len(hook_hits)} hook shot(s) reference a clip blocked for {slug}.")
     figures = build_figures(cfg, order, windows, total)
 
     # ---- structural assertions (fail here, never after a multi-hour render) ----

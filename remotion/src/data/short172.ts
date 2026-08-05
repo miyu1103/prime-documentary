@@ -47,6 +47,7 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p24', src: 'shorts/short172/short172_03.png', kind: 'image', motion: 'pushin'},   // return to the hook - replay of the opening framing: return
   {line: 'L8', id: 'p25', src: 'shorts/short172/short172_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to plate 01 a second time: return to the licence ca
   {line: 'L5', id: 'p26', src: 'shorts/short172/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // a police car parked on a city street
+  {line: 'L5', id: 'p27', src: 'shorts/short172/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // a shop aisle seen from a high corner
   {line: 'L5', id: 'p28', src: 'shorts/short172/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // a checkout counter in a small shop
   {line: 'L5', id: 'p29', src: 'shorts/short172/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // two officers working at an office desk
   {line: 'L5', id: 'p30', src: 'shorts/short172/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // a hand moving a computer mouse on a desk
@@ -109,4 +110,11 @@ export const SHORT172: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short172.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short172/short172_kin_a.webm', atSec: 26.71, durSec: 2.3, phrase: "JUST LOOK LIKE SOMEBODY ELSE"},
+    {src: 'shorts/short172/short172_kin_b.webm', atSec: 38.72, durSec: 2.3, phrase: "A MATCH IS A LEAD NOT AN ARREST"},
+  ],
 };

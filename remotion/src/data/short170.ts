@@ -60,6 +60,7 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p36', src: 'shorts/short170/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // coins counted out onto a kitchen table
   {line: 'L7', id: 'p37', src: 'shorts/short170/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // a row of narrow brick rowhouses on a city street
   {line: 'L7', id: 'p38', src: 'shorts/short170/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // a worn front step and a closed screen door
+  {line: 'L7', id: 'p39', src: 'shorts/short170/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // an empty bus stop shelter on a city street
   {line: 'L7', id: 'p40', src: 'shorts/short170/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // a municipal building facade seen from the street
 ];
 
@@ -110,4 +111,11 @@ export const SHORT170: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short170.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short170/short170_kin_a.webm', atSec: 26.39, durSec: 2.3, phrase: "A COLLECTION DEPARTMENT"},
+    {src: 'shorts/short170/short170_kin_b.webm', atSec: 40.86, durSec: 2.3, phrase: "THEY TOOK FIRST YOU PROVE IT"},
+  ],
 };

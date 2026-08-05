@@ -962,84 +962,91 @@ CONFIG: dict[str, dict] = {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "Qyad4FejCIc",
         "ep": "PD-2026-029-hinton",
-        "rev": "v002",
+        "rev": "v003",
         "title": "He walked out in 2015. The two murders he was condemned for were never solved #Shorts",
         "description": "He walked out in 2015. The two murders he was condemned for were never solved.\n\nNobody with the power to stop it ever checked. How was that possible for thirty years?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #AnthonyRayHinton #DeathRow #WrongfulConviction #Alabama #Documentary",
         "tags": ["Shorts", "Anthony Ray Hinton", "Death Row", "Wrongful Conviction", "Alabama", "Law", "Documentary"],
         # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
-        "video_sha256": "1d3c09f7ffe79c51d6f0e0e67e27b6f9443b522050232251e0cf53eaa2a91937",
+        # v003: re-rendered - archive rebind across all four drives + AI-generated clips removed
+        "video_sha256": "ab7345b0e43024dd61e84080d72b759bb69eda3eab4e2f9907e41a6619c967e9",
         "thumb_sha256": "096551b3e93f3c283758514ad01728537d81378fa75a1f752c77b9c53fe98c7e",
     },
     "98": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "Sz8zPUoBANM",
         "ep": "PD-2026-014-lange",
-        "rev": "v002",
+        "rev": "v003",
         "title": "The Court did not say police can never follow you in. It said there is no automatic yes #Shorts",
         "description": "The Court did not say police can never follow you in. It said there is no automatic yes.\n\nIf it is not automatic, what does an officer have to show instead?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #LangevCalifornia #HotPursuit #SupremeCourt #FourthAmendment #Documentary",
         "tags": ["Shorts", "Lange v California", "Hot Pursuit", "Supreme Court", "Fourth Amendment", "Law", "Documentary"],
         # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
-        "video_sha256": "c362d5c9c0b44efada2f2369db48924d717fa735136a43644f3137e732e4c58b",
+        # v003: re-rendered - archive rebind across all four drives + AI-generated clips removed
+        "video_sha256": "1ae50283396a3573ecea23cc1bf284d649ca9927e457591aca4bf73011e33447",
         "thumb_sha256": "f3b4a2990f46c2ec1143ff561a098909441d841e31d61dd539f28e0690d26366",
     },
     "99": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "Sz8zPUoBANM",
         "ep": "PD-2026-014-lange",
-        "rev": "v002",
+        "rev": "v003",
         "title": "The baseline nobody states out loud: without a warrant, your door stays shut #Shorts",
         "description": "The baseline nobody states out loud: without a warrant, your door stays shut.\n\nHow narrow is narrow — what actually counts as an emergency?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #LangevCalifornia #HotPursuit #SupremeCourt #FourthAmendment #Documentary",
         "tags": ["Shorts", "Lange v California", "Hot Pursuit", "Supreme Court", "Fourth Amendment", "Law", "Documentary"],
         # v002: re-rendered - mid-roll kinetic typography (2 beats), look approved 2026-08-04
-        "video_sha256": "b0dd96e2c810f0b5099dc0c882c3911828f84ebf184227fa87590946591a4fe0",
+        # v003: re-rendered - archive rebind across all four drives + AI-generated clips removed
+        "video_sha256": "028bc3ea8b406e0a7952ea25b32061ff5cbb9e1313482d4e344cc512f3190e64",
         "thumb_sha256": "9dc63f309fe7cf728a93280d5a7d0b7f5fae1a6cd50efd1512925047b98cadf4",
     },
     "100": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "tYZuE76Hwdc",
         "ep": "PD-2026-041-thompson",
-        "rev": "v001",
+        "rev": "v002",
         "title": "He won his freedom, then the Supreme Court took the money back #Shorts",
         "description": "He won his freedom, then the Supreme Court took the money back.\n\nIf one buried report is not enough, what would ever be enough?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #ConnickvThompson #ProsecutorialMisconduct #Brady #DeathRow #Documentary",
         "tags": ["Shorts", "Connick v Thompson", "Prosecutorial Misconduct", "Brady", "Death Row", "Law", "Documentary"],
         # v001: this render already carries the mid-roll kinetic typography
-        "video_sha256": "dd99d8c647959ae5077010320550c9911e77e2ccf615da16ad43203fe13a57b5",
+        # v002: re-rendered - archive rebind across all four drives + AI-generated clips removed
+        "video_sha256": "8d25e810f6833cc4d9015385ca9a418fdbdb64c9435417db5544842d52cc48ec",
         "thumb_sha256": "fe1bfba0da0c45dc900928474036d3f1cbcc958e782c0be2fba5dc9a16474574",
     },
     "101": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "tYZuE76Hwdc",
         "ep": "PD-2026-041-thompson",
-        "rev": "v001",
+        "rev": "v002",
         "title": "Louisiana set his execution date while the proof sat in a drawer #Shorts",
         "description": "Louisiana set his execution date while the proof sat in a drawer.\n\nThe report existed the whole time. Who decided it would never be handed over?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #ConnickvThompson #WrongfulConviction #Brady #DeathRow #Documentary",
         "tags": ["Shorts", "Connick v Thompson", "Wrongful Conviction", "Brady", "Death Row", "Law", "Documentary"],
         # v001: this render already carries the mid-roll kinetic typography
-        "video_sha256": "6bacdc9c8e2e5b66ccb52dfb7d9ba59d018f5877fd5f671b07bd29219add0ace",
+        # v002: re-rendered - archive rebind across all four drives + AI-generated clips removed
+        "video_sha256": "5a8be3c5d3808df13716bda2bac6a4a38bf21c72e91d7affbdfaf786bc580296",
         "thumb_sha256": "c42c31d51205012e1d513a2f1ff33f5b16bb1e0b978ab7d178798e795006be70",
     },
     "102": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "yRwxBfrOY5o",
         "ep": "PD-2026-043-caniglia",
-        "rev": "v001",
+        "rev": "v002",
         "title": "The excuse came from a 1973 case about a car. They used it on a house #Shorts",
         "description": "The excuse came from a 1973 case about a car. They used it on a house.\n\nOnce the caretaking excuse is gone, what can officers still do at your door?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #CanigliavStrom #CommunityCaretaking #FourthAmendment #WelfareCheck #Documentary",
         "tags": ["Shorts", "Caniglia v Strom", "Community Caretaking", "Fourth Amendment", "Welfare Check", "Law", "Documentary"],
         # v001: this render already carries the mid-roll kinetic typography
-        "video_sha256": "2d80ff34dc1729b6ec9b58990d8cca735c2eeb94288d8041f8b13ffc808f33b9",
+        # v002: re-rendered - archive rebind across all four drives + AI-generated clips removed
+        "video_sha256": "97e1a050bedcf0e65fe4bc89aecd168e897394bb711cfd2c3b9e377222a37c7b",
         "thumb_sha256": "7313f36a712e6de660bd0facf99276506870551f88d7dfb0ab5d7502301c9dff",
     },
     "103": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
         "longform": "yRwxBfrOY5o",
         "ep": "PD-2026-043-caniglia",
-        "rev": "v001",
+        "rev": "v002",
         "title": "The Court did not say police can never come in for your safety #Shorts",
         "description": "The Court did not say police can never come in for your safety.\n\nSo where exactly is the line between help and a search?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #CanigliavStrom #ExigentCircumstances #FourthAmendment #WelfareCheck #Documentary",
         "tags": ["Shorts", "Caniglia v Strom", "Exigent Circumstances", "Fourth Amendment", "Welfare Check", "Law", "Documentary"],
         # v001: this render already carries the mid-roll kinetic typography
-        "video_sha256": "afb2f61b2b5ba1724fa45501776d745a269e994611ff8c8674edc6dbffb40a8e",
+        # v002: re-rendered - archive rebind across all four drives + AI-generated clips removed
+        "video_sha256": "cef830955a26a06f0d6d3f4471e52a9ad77fd78aa05e9bc5ec232ce2ce73478f",
         "thumb_sha256": "b030f601526dcea9b04d1e5cafe98a29294ed2b0fdbbee4471e1319d61e3c522",
     },
     "104": {

@@ -56,6 +56,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p32', src: 'shorts/short163/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a microphone standing on a lectern in a hall
   {line: 'L6', id: 'p33', src: 'shorts/short163/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // a glass atrium with escalators inside an office building
   {line: 'L6', id: 'p34', src: 'shorts/short163/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // a single empty chair on a lit stage
+  {line: 'L6', id: 'p35', src: 'shorts/short163/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // closed folders stacked on a wooden table
   {line: 'L7', id: 'p36', src: 'shorts/short163/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // banknotes fanned out in one hand
   {line: 'L7', id: 'p37', src: 'shorts/short163/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // an empty hospital bed beside a window
   {line: 'L7', id: 'p38', src: 'shorts/short163/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // someone walking away through a bright hospital ward
@@ -110,4 +111,11 @@ export const SHORT163: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short163.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short163/short163_kin_a.webm', atSec: 24.71, durSec: 2.3, phrase: "ONE YEAR TO LIVE STILL ALIVE"},
+    {src: 'shorts/short163/short163_kin_b.webm', atSec: 36.45, durSec: 2.3, phrase: "FUNDING NOBODY ELSE GAVE"},
+  ],
 };

@@ -32,6 +32,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p08', src: 'shorts/short160/short160_08.png', kind: 'image', motion: 'kenburns'},   // a blank clock face in a gallery corridor
   {line: 'L2', id: 'p09', src: 'shorts/short160/short160_09.png', kind: 'image', motion: 'pushin'},   // clock hands, macro
   {line: 'L2', id: 'p10', src: 'shorts/short160/short160_10.png', kind: 'image', motion: 'parallax'},   // a screwdriver and scattered brass screws
+  {line: 'L2', id: 'p11', src: 'shorts/short160/fx/fx_11.mp4', kind: 'video', motion: 'video'},   // a dark staircase
   {line: 'L3', id: 'p12', src: 'shorts/short160/short160_12.png', kind: 'image', motion: 'pushin'},   // a case of fine tools, every recess filled
   {line: 'L3', id: 'p13', src: 'shorts/short160/fx/fx_13.mp4', kind: 'video', motion: 'video'},   // a ceiling security camera
   {line: 'L3', id: 'p14', src: 'shorts/short160/short160_14.png', kind: 'image', motion: 'kenburns'},   // a small bronze left untouched on its plinth
@@ -47,7 +48,9 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p24', src: 'shorts/short160/short160_03.png', kind: 'image', motion: 'pushin'},   // return to the hook - replay of the opening framing: one em
   {line: 'L8', id: 'p25', src: 'shorts/short160/short160_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to plate 01 a second time: one empty gilded frame o
   {line: 'L5', id: 'p26', src: 'shorts/short160/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // charcoal sketch paper on a wooden table
+  {line: 'L5', id: 'p28', src: 'shorts/short160/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // a wooden bench in the middle of a gallery
   {line: 'L5', id: 'p29', src: 'shorts/short160/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // artworks stored on racks in a storeroom
+  {line: 'L5', id: 'p30', src: 'shorts/short160/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // watercolour brushes and a paint tray
   {line: 'L6', id: 'p31', src: 'shorts/short160/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // a visitor standing before a large painting
   {line: 'L6', id: 'p32', src: 'shorts/short160/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a marble staircase in a grand hall
   {line: 'L6', id: 'p33', src: 'shorts/short160/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // a locked wooden cabinet in a quiet room
@@ -106,4 +109,11 @@ export const SHORT160: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short160.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short160/short160_kin_a.webm', atSec: 36.21, durSec: 2.3, phrase: "A BRONZE BEAKER 3,000 YEARS OLD"},
+    {src: 'shorts/short160/short160_kin_b.webm', atSec: 41.83, durSec: 2.3, phrase: "A VERMEER THREE DOZEN EXIST"},
+  ],
 };

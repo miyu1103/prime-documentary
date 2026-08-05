@@ -629,12 +629,49 @@ def accept(source: str, score: int) -> bool:
 # ---------------------------------------------------------------------------
 # shelf write (download -> validate -> dedup -> ledger)
 # ---------------------------------------------------------------------------
+_VERDICTS: dict | None = None
+
+
+def theme_source_unusable(theme: str, source: str) -> bool:
+    """True when the owner has already looked at this theme/source and ruled it out.
+
+    Added 2026-08-06. 46,707 New York City directory scans were deleted as unusable on
+    2026-08-02 and a lane running `--source all` has been re-fetching the same collection
+    ever since, because nothing in the ingest path reads the verdict file. Deleting the
+    same material twice is not a workflow.
+    """
+    global _VERDICTS
+    if _VERDICTS is None:
+        _VERDICTS = {}
+        path = os.path.join(LEDGER_DIR, "..", "_qc", "archive_verdicts.jsonl")
+        try:
+            with open(os.path.normpath(path), encoding="utf-8", errors="replace") as fh:
+                for line in fh:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        r = json.loads(line)
+                    except Exception:
+                        continue
+                    if (r.get("verdict") or "").lower() == "unusable":
+                        _VERDICTS[(r.get("theme"), r.get("source"))] = True
+        except OSError:
+            pass
+    return (theme, source) in _VERDICTS
+
+
 def take_item(st: State, *, source: str, item_id: str, title: str, url: str,
               kind: str, theme: str, source_url: str, license_raw: str,
               license_decision: str, score: int, matched: list[str],
               est_bytes: int = 30 * 1024 * 1024, dry_run=False,
               file_id: str | None = None, force_ext: str | None = None) -> bool:
     """Returns True if the item landed on the shelf."""
+    if theme_source_unusable(theme, source):
+        st.reject(source, item_id, "owner-verdict-unusable", title=title,
+                  theme=theme, score=-1, matched=[])
+        st.known_ids.add((source, str(item_id)))
+        return False
     if dry_run:
         log(f"    DRY {source}/{item_id} score={score} -> {theme} :: {title[:60]}")
         return True

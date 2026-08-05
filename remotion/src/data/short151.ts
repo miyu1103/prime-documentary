@@ -29,8 +29,10 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p05', src: 'shorts/short151/short151_05.png', kind: 'image', motion: 'kenburns'},   // the same file, opened again
   {line: 'L2', id: 'p06', src: 'shorts/short151/short151_06.png', kind: 'image', motion: 'pushin'},   // the same empty chair at the defence table
   {line: 'L2', id: 'p07', src: 'shorts/short151/short151_07.png', kind: 'image', motion: 'parallax'},   // the chair filled: a jacket over its back, a case beside it
+  {line: 'L2', id: 'p08', src: 'shorts/short151/fx/fx_08.mp4', kind: 'video', motion: 'video'},   // a plain wooden chair, still
   {line: 'L2', id: 'p09', src: 'shorts/short151/short151_09.png', kind: 'image', motion: 'pushin'},   // the gallery of the same small courtroom
   {line: 'L2', id: 'p10', src: 'shorts/short151/short151_10.png', kind: 'image', motion: 'parallax'},   // a lawyer's window at first light
+  {line: 'L2', id: 'p11', src: 'shorts/short151/fx/fx_11.mp4', kind: 'video', motion: 'video'},   // a metal filing cabinet
   {line: 'L3', id: 'p12', src: 'shorts/short151/short151_12.png', kind: 'image', motion: 'pushin'},   // a lawyer's hands, flat and ready
   {line: 'L3', id: 'p13', src: 'shorts/short151/short151_13.png', kind: 'image', motion: 'parallax'},   // the witness box, empty and waiting
   {line: 'L3', id: 'p14', src: 'shorts/short151/short151_14.png', kind: 'image', motion: 'kenburns'},   // a sealed evidence envelope, writing worn away
@@ -47,11 +49,13 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p25', src: 'shorts/short151/short151_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to the hook plate: a gate opening onto another corr
   {line: 'L5', id: 'p26', src: 'shorts/short151/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // the Court that answered with one voice
   {line: 'L5', id: 'p27', src: 'shorts/short151/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // nine copies of one opinion, closed
+  {line: 'L5', id: 'p28', src: 'shorts/short151/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // the long bench where every one of them agreed
   {line: 'L5', id: 'p29', src: 'shorts/short151/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // the signing of the judgment
   {line: 'L5', id: 'p30', src: 'shorts/short151/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // one plain rule, stamped
   {line: 'L6', id: 'p31', src: 'shorts/short151/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // the page the old rule left blank
   {line: 'L6', id: 'p32', src: 'shorts/short151/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // the shelves the overruled case went back to
   {line: 'L6', id: 'p33', src: 'shorts/short151/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // too poor to hire one
+  {line: 'L6', id: 'p34', src: 'shorts/short151/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // the door the new rule left standing open
   {line: 'L6', id: 'p35', src: 'shorts/short151/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // the appointments the clerk now had to make
   {line: 'L7', id: 'p36', src: 'shorts/short151/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // the states the rule now reached
   {line: 'L7', id: 'p37', src: 'shorts/short151/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // courthouse doors, open in every state
@@ -107,4 +111,11 @@ export const SHORT151: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short151.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short151/short151_kin_a.webm', atSec: 24.56, durSec: 2.3, phrase: "ALONE: GUILTY WITH A LAWYER: FREE"},
+    {src: 'shorts/short151/short151_kin_b.webm', atSec: 32.76, durSec: 2.3, phrase: "A NECESSITY NOT A FRILL"},
+  ],
 };

@@ -27,6 +27,7 @@ const CUTS: Cut[] = [
   {line: 'L1', id: 'p03', src: 'shorts/short171/short171_03.png', kind: 'image', motion: 'pushin', fast: true},   // a bag half packed on a bed
   {line: 'L1', id: 'p04', src: 'shorts/short171/short171_04.png', kind: 'image', motion: 'parallax'},   // a plain rowhouse porch, door shut
   {line: 'L2', id: 'p05', src: 'shorts/short171/short171_05.png', kind: 'image', motion: 'kenburns'},   // a folded blanket on a relative's couch
+  {line: 'L2', id: 'p06', src: 'shorts/short171/fx/fx_06.mp4', kind: 'video', motion: 'video'},   // a borrowed room at night
   {line: 'L2', id: 'p07', src: 'shorts/short171/short171_07.png', kind: 'image', motion: 'parallax'},   // a family living out of a bag on a kitchen table
   {line: 'L2', id: 'p08', src: 'shorts/short171/short171_08.png', kind: 'image', motion: 'kenburns'},   // the city's hasp screwed across the door
   {line: 'L2', id: 'p09', src: 'shorts/short171/fx/fx_09.mp4', kind: 'video', motion: 'video'},   // rain on the window of the room they slept in
@@ -52,6 +53,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p31', src: 'shorts/short171/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // a street of ordinary houses seen from above
   {line: 'L6', id: 'p32', src: 'shorts/short171/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a kitchen table set with breakfast things
   {line: 'L6', id: 'p33', src: 'shorts/short171/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // a child's bicycle leaning against a porch
+  {line: 'L6', id: 'p34', src: 'shorts/short171/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // washing hanging on a line in a small yard
   {line: 'L6', id: 'p35', src: 'shorts/short171/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // a corner shop front on a residential street
   {line: 'L7', id: 'p36', src: 'shorts/short171/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // a city hall dome standing above the rooftops
   {line: 'L7', id: 'p37', src: 'shorts/short171/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // a street sweeper working along a city road
@@ -106,4 +108,11 @@ export const SHORT171: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short171.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short171/short171_kin_a.webm', atSec: 22.07, durSec: 2.3, phrase: "GIVE UP YOUR SON OR LOSE THE HOUSE"},
+    {src: 'shorts/short171/short171_kin_b.webm', atSec: 38.13, durSec: 2.3, phrase: "NOT FOR CRIMINALS FOR PEOPLE LIKE THEM"},
+  ],
 };

@@ -47,6 +47,7 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p24', src: 'shorts/short174/short174_02.png', kind: 'image', motion: 'kenburns'},   // return to the hook - replay of the opening framing (2)
   {line: 'L8', id: 'p25', src: 'shorts/short174/short174_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to the empty classroom chair
   {line: 'L5', id: 'p26', src: 'shorts/short174/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // the job form that asked about the record
+  {line: 'L5', id: 'p27', src: 'shorts/short174/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // the tray the applications landed in
   {line: 'L5', id: 'p28', src: 'shorts/short174/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // the offices that read it and said no
   {line: 'L5', id: 'p29', src: 'shorts/short174/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // a door closing before he reached it
   {line: 'L6', id: 'p31', src: 'shorts/short174/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // one of them, years later, with nowhere to be
@@ -58,6 +59,7 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p37', src: 'shorts/short174/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // the door money is meant to stay behind
   {line: 'L7', id: 'p38', src: 'shorts/short174/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // what the money bought, a bed at a time
   {line: 'L7', id: 'p39', src: 'shorts/short174/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // the county where it happened
+  {line: 'L7', id: 'p40', src: 'shorts/short174/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // the room that had a price
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -107,4 +109,11 @@ export const SHORT174: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short174.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short174/short174_kin_a.webm', atSec: 24.02, durSec: 2.3, phrase: "ONE SERVED ONE WALKED OUT"},
+    {src: 'shorts/short174/short174_kin_b.webm', atSec: 34.14, durSec: 2.3, phrase: "DOORS THEY NEVER SAW CLOSE"},
+  ],
 };

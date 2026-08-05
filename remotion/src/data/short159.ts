@@ -48,6 +48,7 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p24', src: 'shorts/short159/short159_03.png', kind: 'image', motion: 'pushin'},   // return to the hook - replay of the opening framing: a bras
   {line: 'L8', id: 'p25', src: 'shorts/short159/short159_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to plate 01 a second time: a brass tap over a dry b
   {line: 'L5', id: 'p26', src: 'shorts/short159/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // an iron gate standing open in a stone wall
+  {line: 'L5', id: 'p27', src: 'shorts/short159/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // stone steps leading up to a college building
   {line: 'L5', id: 'p29', src: 'shorts/short159/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // an empty reception counter in a lobby
   {line: 'L5', id: 'p30', src: 'shorts/short159/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // students walking across a campus lawn
   {line: 'L6', id: 'p31', src: 'shorts/short159/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // hands writing in a notebook at a kitchen table
@@ -108,4 +109,11 @@ export const SHORT159: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short159.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short159/short159_kin_a.webm', atSec: 24.66, durSec: 2.3, phrase: "ONE IN BY FRAUD ONE OUT ON MERIT"},
+    {src: 'shorts/short159/short159_kin_b.webm', atSec: 29.58, durSec: 2.0, phrase: "8 / YEARS OPEN"},
+  ],
 };

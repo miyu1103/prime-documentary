@@ -32,9 +32,11 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p08', src: 'shorts/short155/short155_08.png', kind: 'image', motion: 'kenburns'},   // a pharmacy aisle of blank cartons
   {line: 'L2', id: 'p09', src: 'shorts/short155/short155_09.png', kind: 'image', motion: 'pushin'},   // a blood test tube
   {line: 'L2', id: 'p10', src: 'shorts/short155/short155_10.png', kind: 'image', motion: 'parallax'},   // a counter booth with the blind drawn
+  {line: 'L2', id: 'p11', src: 'shorts/short155/fx/fx_11.mp4', kind: 'video', motion: 'video'},   // an empty office at night
   {line: 'L3', id: 'p12', src: 'shorts/short155/short155_12.png', kind: 'image', motion: 'pushin'},   // a line that only ever rises
   {line: 'L3', id: 'p13', src: 'shorts/short155/fx/fx_13.mp4', kind: 'video', motion: 'video'},   // an abstract market display
   {line: 'L3', id: 'p14', src: 'shorts/short155/short155_14.png', kind: 'image', motion: 'kenburns'},   // one silhouette in a vast atrium
+  {line: 'L3', id: 'p15', src: 'shorts/short155/fx/fx_15.mp4', kind: 'video', motion: 'video'},   // tower windows at night
   {line: 'L3', id: 'p16', src: 'shorts/short155/short155_16.png', kind: 'image', motion: 'parallax'},   // one raised hand in an auditorium of empty seats
   {line: 'L4', id: 'p17', src: 'shorts/short155/short155_17.png', kind: 'image', motion: 'kenburns'},   // a corridor of identical closed doors
   {line: 'L4', id: 'p18', src: 'shorts/short155/short155_18.png', kind: 'image', motion: 'pushin'},   // an office building at night
@@ -47,6 +49,7 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p25', src: 'shorts/short155/short155_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to plate 01 a second time: one tiny empty vial on b
   {line: 'L5', id: 'p26', src: 'shorts/short155/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // a gloved hand and a needle
   {line: 'L5', id: 'p27', src: 'shorts/short155/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // the samples waiting their turn
+  {line: 'L5', id: 'p28', src: 'shorts/short155/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // the hall where people wait their turn
   {line: 'L5', id: 'p29', src: 'shorts/short155/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // the instruments laid out in a steel tray
   {line: 'L5', id: 'p30', src: 'shorts/short155/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // an arm laid on a rest, sleeve pushed up
   {line: 'L6', id: 'p31', src: 'shorts/short155/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // the machine, a grey cabinet on a bench
@@ -56,6 +59,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p35', src: 'shorts/short155/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // the laboratory from above, bench after bench
   {line: 'L7', id: 'p36', src: 'shorts/short155/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // the doors of a hospital, swinging
   {line: 'L7', id: 'p37', src: 'shorts/short155/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // a blank sheet left folded on the bed
+  {line: 'L7', id: 'p38', src: 'shorts/short155/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // a front door seen from the hallway
   {line: 'L7', id: 'p39', src: 'shorts/short155/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // the phone put face down
   {line: 'L7', id: 'p40', src: 'shorts/short155/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // the room where the answer gets given
 ];
@@ -107,4 +111,11 @@ export const SHORT155: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short155.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short155/short155_kin_a.webm', atSec: 29.41, durSec: 2.3, phrase: "$9 BILLION AT ITS PEAK"},
+    {src: 'shorts/short155/short155_kin_b.webm', atSec: 42.48, durSec: 2.3, phrase: "HUNDREDS OF TESTS ONE DROP"},
+  ],
 };

@@ -47,6 +47,7 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p23', src: 'shorts/short156/short156_03.png', kind: 'image', motion: 'pushin'},   // return to the hook plate: a blank clock face, second hand 
   {line: 'L8', id: 'p24', src: 'shorts/short156/short156_02.png', kind: 'image', motion: 'kenburns'},   // return to the hook - replay of the opening framing: a blan
   {line: 'L8', id: 'p25', src: 'shorts/short156/short156_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to plate 01 a second time: a blank clock face, seco
+  {line: 'L5', id: 'p26', src: 'shorts/short156/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // the boardroom of a giant company
   {line: 'L5', id: 'p27', src: 'shorts/short156/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // a corporate tower against the sky
   {line: 'L5', id: 'p28', src: 'shorts/short156/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // one person on a wide empty floor
   {line: 'L5', id: 'p30', src: 'shorts/short156/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // the aisle of pallets the company actually is
@@ -108,4 +109,11 @@ export const SHORT156: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short156.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short156/short156_kin_a.webm', atSec: 25.74, durSec: 2.0, phrase: "36 / MINUTES"},
+    {src: 'shorts/short156/short156_kin_b.webm', atSec: 42.52, durSec: 2.3, phrase: "A GIANT COMPANY ONE PENNY"},
+  ],
 };

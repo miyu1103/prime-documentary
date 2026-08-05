@@ -22,8 +22,10 @@ try:
 except Exception:
     pass
 
+import pd_footage_blocklist
+
 ROOT = Path(__file__).resolve().parents[1]
-BLOCKLIST = ROOT / "config" / "footage_blocklist.v001.json"
+BLOCKLIST = pd_footage_blocklist.BLOCKLIST
 DATA = ROOT / "remotion" / "src" / "data"
 
 
@@ -31,10 +33,6 @@ def main() -> int:
     if not BLOCKLIST.is_file():
         print(f"no blocklist at {BLOCKLIST}")
         return 0
-    blocked: dict[str, str] = {}
-    for row in json.loads(BLOCKLIST.read_text(encoding="utf-8")).get("blocked", []):
-        for ident in row["ids"]:
-            blocked[ident] = f"{row['label']}: {row['reason']}"
 
     films = sorted(DATA.glob("*_film.json"))
     bad = 0
@@ -43,12 +41,20 @@ def main() -> int:
             d = json.loads(film.read_text(encoding="utf-8"))
         except Exception:
             continue
+        # The film's own slug decides which rows apply: global rows plus the ones scoped to this
+        # episode. Auditing every film against every episode's scoped rows would report EP55's
+        # handcuff ban against films that are entitled to use handcuffs.
+        slug = film.stem[: -len("_film")]
+        blocked = pd_footage_blocklist.load_blocked(slug)
         t = float(d.get("hookSeconds") or 0) + 3.5
         hits = []
+        for h in d.get("hook", []):
+            why = pd_footage_blocklist.reason_for(h.get("src"), blocked)
+            if why:
+                hits.append((float(h.get("start") or 0), (h.get("src") or "").split("/")[-1], why))
         for c in d.get("cuts", []):
             base = (c.get("src") or "").split("/")[-1]
-            ident = base.split("__")[0]
-            why = blocked.get(ident) or blocked.get(ident.replace("AF-BG-", ""))
+            why = pd_footage_blocklist.reason_for(c.get("src"), blocked)
             if why:
                 hits.append((t, base, why))
             t += float(c.get("dur") or 0)

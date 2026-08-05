@@ -404,6 +404,20 @@ def main() -> int:
     unread = sorted(produced - read)
     sha_bound = (not render_sha) or (review.get("render_sha256") == render_sha)
 
+    # A REJECTION IS A STATEMENT ABOUT ONE SET OF BYTES, AND ONLY THOSE.
+    # The first re-render proved why: fieldtest's three rejected clips were pruned and the film
+    # rebuilt, but the old review still named their timecodes, so the new master came back FAIL
+    # citing cut-0201 as a fingerprint card when cut-0201 is now a glass vial. Carried forward,
+    # a fixed episode can never go green. The reverse -- a stale PASS reaching a new render --
+    # is already handled below by sha_bound, and stays handled: dropping these does not turn an
+    # unreviewed render green, it makes it UNREVIEWED, which never passes.
+    if rejections and not sha_bound:
+        print(f"[shipped-frames] {len(rejections)} rejection(s) in the review name "
+              f"render_sha256={str(review.get('render_sha256'))[:16]!r}, not this render "
+              f"({str(render_sha)[:16]!r}). They describe bytes that no longer exist here and "
+              f"are NOT applied. Re-read the sheets for THESE bytes.")
+        rejections = []
+
     verdict = "PASS"
     reasons: list[str] = []
     if not sheets:

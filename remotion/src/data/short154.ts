@@ -32,6 +32,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p08', src: 'shorts/short154/short154_08.png', kind: 'image', motion: 'kenburns'},   // two hands flat on a polished table
   {line: 'L2', id: 'p09', src: 'shorts/short154/fx/fx_09.mp4', kind: 'video', motion: 'video'},   // stone columns from below
   {line: 'L2', id: 'p10', src: 'shorts/short154/short154_10.png', kind: 'image', motion: 'parallax'},   // the investors' room, chairs pushed in
+  {line: 'L2', id: 'p11', src: 'shorts/short154/fx/fx_11.mp4', kind: 'video', motion: 'video'},   // a conference table and chairs
   {line: 'L3', id: 'p12', src: 'shorts/short154/short154_12.png', kind: 'image', motion: 'pushin'},   // the analyser, every display dark
   {line: 'L3', id: 'p13', src: 'shorts/short154/fx/fx_13.mp4', kind: 'video', motion: 'video'},   // a microscope in a laboratory
   {line: 'L3', id: 'p14', src: 'shorts/short154/short154_14.png', kind: 'image', motion: 'kenburns'},   // a row of empty waiting-room chairs
@@ -46,10 +47,12 @@ const CUTS: Cut[] = [
   {line: 'L8', id: 'p23', src: 'shorts/short154/short154_04.png', kind: 'image', motion: 'parallax'},   // return to the hook plate: one drop of blood on a fingertip
   {line: 'L8', id: 'p24', src: 'shorts/short154/short154_03.png', kind: 'image', motion: 'pushin'},   // return to the hook - replay of the opening framing: one dr
   {line: 'L8', id: 'p25', src: 'shorts/short154/short154_01.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // return to plate 01 a second time: one drop of blood on a f
+  {line: 'L5', id: 'p26', src: 'shorts/short154/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // the empty chair the question circles
   {line: 'L5', id: 'p27', src: 'shorts/short154/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // two people across a small table
   {line: 'L5', id: 'p28', src: 'shorts/short154/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // something of value, banded
   {line: 'L5', id: 'p29', src: 'shorts/short154/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // the gavel that has to measure intent
   {line: 'L5', id: 'p30', src: 'shorts/short154/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // the office window at dawn over a desk
+  {line: 'L6', id: 'p31', src: 'shorts/short154/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // the sealed result nobody saw
   {line: 'L6', id: 'p32', src: 'shorts/short154/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // the laboratory door, locked
   {line: 'L6', id: 'p33', src: 'shorts/short154/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // one person alone in a bright hall
   {line: 'L6', id: 'p34', src: 'shorts/short154/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // the line they were all shown
@@ -107,4 +110,11 @@ export const SHORT154: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short154.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short154/short154_kin_a.webm', atSec: 32.14, durSec: 2.3, phrase: "FRAUD NEEDS INTENT"},
+    {src: 'shorts/short154/short154_kin_b.webm', atSec: 42.84, durSec: 2.3, phrase: "SHE KNEW OR SHE BELIEVED"},
+  ],
 };

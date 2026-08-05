@@ -32,6 +32,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p08', src: 'shorts/short161/short161_08.png', kind: 'image', motion: 'kenburns'},   // a loading bay shutter half raised
   {line: 'L2', id: 'p09', src: 'shorts/short161/fx/fx_09.mp4', kind: 'video', motion: 'video'},   // a padlocked door
   {line: 'L2', id: 'p10', src: 'shorts/short161/short161_10.png', kind: 'image', motion: 'parallax'},   // a door closing on a narrowing blade of light
+  {line: 'L2', id: 'p11', src: 'shorts/short161/fx/fx_11.mp4', kind: 'video', motion: 'video'},   // a dark staircase
   {line: 'L3', id: 'p12', src: 'shorts/short161/short161_12.png', kind: 'image', motion: 'pushin'},   // a row of identical storage unit doors
   {line: 'L3', id: 'p13', src: 'shorts/short161/fx/fx_13.mp4', kind: 'video', motion: 'video'},   // rain on a window at night
   {line: 'L3', id: 'p14', src: 'shorts/short161/short161_14.png', kind: 'image', motion: 'kenburns'},   // two silhouettes apart, a parcel between them
@@ -55,6 +56,9 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p32', src: 'shorts/short161/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // a blank roadside billboard against the sky
   {line: 'L6', id: 'p33', src: 'shorts/short161/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // large paper sheets running through a press
   {line: 'L6', id: 'p34', src: 'shorts/short161/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // traffic moving along an interstate in daylight
+  {line: 'L6', id: 'p35', src: 'shorts/short161/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // a wooden lectern in front of press seating
+  {line: 'L7', id: 'p36', src: 'shorts/short161/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // wooden trunks stored under loft rafters
+  {line: 'L7', id: 'p37', src: 'shorts/short161/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // plastic crates stacked in a lock up
   {line: 'L7', id: 'p38', src: 'shorts/short161/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // basement stairs with the light switched on
   {line: 'L7', id: 'p39', src: 'shorts/short161/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // a house front door with the porch light on
   {line: 'L7', id: 'p40', src: 'shorts/short161/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // a person carrying a large flat package
@@ -107,4 +111,11 @@ export const SHORT161: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short161.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short161/short161_kin_a.webm', atSec: 26.59, durSec: 2.3, phrase: "HIDDEN INSIDE ONE PERSON"},
+    {src: 'shorts/short161/short161_kin_b.webm', atSec: 31.39, durSec: 2.3, phrase: "THOUSANDS OF TIPS NOTHING"},
+  ],
 };

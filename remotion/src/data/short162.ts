@@ -25,6 +25,7 @@ const CUTS: Cut[] = [
   {line: 'L1', id: 'p01', src: 'shorts/short162/short162_01.png', kind: 'image', motion: 'parallax', fast: true},   // one blank sheet alone on a vast desk
   {line: 'L1', id: 'p02', src: 'shorts/short162/fx/fx_02.mp4', kind: 'video', motion: 'video', fast: true},   // a stack of documents on a desk
   {line: 'L1', id: 'p03', src: 'shorts/short162/short162_03.png', kind: 'image', motion: 'pushin', fast: true},   // the boardroom it would be waved at
+  {line: 'L1', id: 'p04', src: 'shorts/short162/fx/fx_04.mp4', kind: 'video', motion: 'video'},   // a conference table and chairs
   {line: 'L2', id: 'p05', src: 'shorts/short162/short162_05.png', kind: 'image', motion: 'kenburns'},   // the X-shaped desk, every chair empty
   {line: 'L2', id: 'p06', src: 'shorts/short162/short162_06.png', kind: 'image', motion: 'pushin'},   // a console of lit line buttons
   {line: 'L2', id: 'p07', src: 'shorts/short162/fx/fx_07.mp4', kind: 'video', motion: 'video'},   // a rotary telephone
@@ -33,6 +34,7 @@ const CUTS: Cut[] = [
   {line: 'L2', id: 'p10', src: 'shorts/short162/short162_10.png', kind: 'image', motion: 'parallax'},   // sealing wax and a seal worn smooth
   {line: 'L2', id: 'p11', src: 'shorts/short162/short162_11.png', kind: 'image', motion: 'kenburns'},   // an envelope and a letter
   {line: 'L3', id: 'p12', src: 'shorts/short162/short162_12.png', kind: 'image', motion: 'pushin'},   // the vault door, closed and unreadable
+  {line: 'L3', id: 'p13', src: 'shorts/short162/fx/fx_13.mp4', kind: 'video', motion: 'video'},   // a bank vault door
   {line: 'L3', id: 'p14', src: 'shorts/short162/short162_14.png', kind: 'image', motion: 'kenburns'},   // banded cash under a banker's lamp
   {line: 'L3', id: 'p15', src: 'shorts/short162/fx/fx_15.mp4', kind: 'video', motion: 'video'},   // stacked banknotes
   {line: 'L3', id: 'p16', src: 'shorts/short162/short162_16.png', kind: 'image', motion: 'parallax'},   // one blank sheet propped against the vault
@@ -109,4 +111,11 @@ export const SHORT162: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short162.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short162/short162_kin_a.webm', atSec: 26.01, durSec: 2.3, phrase: "NO COMPANY TOO BIG"},
+    {src: 'shorts/short162/short162_kin_b.webm', atSec: 31.75, durSec: 2.3, phrase: "$100 BILLION ONE MAN'S MARKET"},
+  ],
 };

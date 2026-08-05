@@ -42,6 +42,7 @@ const CUTS: Cut[] = [
   {line: 'L4', id: 'p18', src: 'shorts/short152/fx/fx_18.mp4', kind: 'video', motion: 'video'},   // an abstract market display
   {line: 'L4', id: 'p19', src: 'shorts/short152/short152_19.png', kind: 'image', motion: 'parallax'},   // one lit window in a dark tower
   {line: 'L4', id: 'p20', src: 'shorts/short152/short152_20.png', kind: 'image', motion: 'kenburns'},   // a chair spun away from a bare desk
+  {line: 'L4', id: 'p21', src: 'shorts/short152/fx/fx_21.mp4', kind: 'video', motion: 'video'},   // an empty office at night
   {line: 'L5', id: 'p22', src: 'shorts/short152/short152_22.png', kind: 'image', motion: 'parallax'},   // the claims table, sealed cartons
   {line: 'L8', id: 'p23', src: 'shorts/short152/short152_04.png', kind: 'image', motion: 'parallax'},   // return to the hook plate: a thumb over a blank phone scree
   {line: 'L8', id: 'p24', src: 'shorts/short152/short152_03.png', kind: 'image', motion: 'pushin'},   // return to the hook - replay of the opening framing: a thum
@@ -53,10 +54,12 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p30', src: 'shorts/short152/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // the hallway of an ordinary house at three
   {line: 'L6', id: 'p31', src: 'shorts/short152/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // the boxes the bankruptcy filled
   {line: 'L6', id: 'p32', src: 'shorts/short152/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // the creditors' chamber, empty
+  {line: 'L6', id: 'p33', src: 'shorts/short152/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // the claim, closed and tied
+  {line: 'L6', id: 'p34', src: 'shorts/short152/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // the office shut up behind a shutter
   {line: 'L6', id: 'p35', src: 'shorts/short152/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // the bankruptcy court, benches empty
   {line: 'L7', id: 'p36', src: 'shorts/short152/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // the envelope nobody opened
+  {line: 'L7', id: 'p37', src: 'shorts/short152/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // the door with the chain still on it
   {line: 'L7', id: 'p39', src: 'shorts/short152/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // walking away from the counter
-  {line: 'L7', id: 'p40', src: 'shorts/short152/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // the stamp that made it all look official
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -106,4 +109,11 @@ export const SHORT152: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short152.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short152/short152_kin_a.webm', atSec: 21.84, durSec: 2.3, phrase: "$16 BILLION GONE IN A DAY"},
+    {src: 'shorts/short152/short152_kin_b.webm', atSec: 33.66, durSec: 2.3, phrase: "TAP WITHDRAW NOTHING HAPPENS"},
+  ],
 };

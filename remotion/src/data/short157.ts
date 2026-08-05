@@ -50,10 +50,13 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p26', src: 'shorts/short157/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // the car he never bought
   {line: 'L5', id: 'p27', src: 'shorts/short157/fx/fx_27.mp4', kind: 'video', motion: 'video'},   // the hallway of an ordinary house
   {line: 'L5', id: 'p28', src: 'shorts/short157/fx/fx_28.mp4', kind: 'video', motion: 'video'},   // a plain box, never unpacked
+  {line: 'L5', id: 'p29', src: 'shorts/short157/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // the stand the specialist spoke from
   {line: 'L5', id: 'p30', src: 'shorts/short157/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // the court that listened to him
   {line: 'L6', id: 'p31', src: 'shorts/short157/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // handcuffs closing
+  {line: 'L6', id: 'p32', src: 'shorts/short157/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // his watch and keys in a tray
   {line: 'L6', id: 'p33', src: 'shorts/short157/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // a row of steel doors in a holding block
   {line: 'L6', id: 'p34', src: 'shorts/short157/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // led away between two walls
+  {line: 'L6', id: 'p35', src: 'shorts/short157/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // the room he fought the extradition in
   {line: 'L7', id: 'p37', src: 'shorts/short157/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // the money handed back over a counter
   {line: 'L7', id: 'p38', src: 'shorts/short157/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // a bare table under one lamp
   {line: 'L7', id: 'p39', src: 'shorts/short157/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // a figure behind a glass panel
@@ -107,4 +110,11 @@ export const SHORT157: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short157.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short157/short157_kin_a.webm', atSec: 28.28, durSec: 2.3, phrase: "HE NEVER SPENT IT"},
+    {src: 'shorts/short157/short157_kin_b.webm', atSec: 36.68, durSec: 2.0, phrase: "2015 / HIS PARENTS' HOUSE"},
+  ],
 };
