@@ -789,3 +789,29 @@ A single ballpoint pen lying alone on a bare pale counter, nothing else anywhere
 
 合計 **224枚**（うち本編 220枚 + PEOPLE 10 + THUMB 4）。
 ★ **サムネプレートだけは本編の低輝度指定を上書きし、平均輝度38以上・標準偏差45以上を狙うこと。**
+
+### ★再発注（2026-08-05・目視QCの結果、必須）
+
+この映画のループは `R222`（状態1）→ `R223`（状態7・最後の画）で閉じることになっている。目視と実測の結果：
+
+- **部屋も椅子も別物**だった（相関 **−0.233**）。台本が「奇に押し込まれたままの向こうの椅子」と言うのに、**見せられていない椅子**が戻ってくる。
+- `R222` は引きすぎ・暗すぎて、**この映画のモチーフである罫線が読めない**。モチーフの一枚目でモチーフが判別できない。
+
+`R223` 単体は良い画である（罫線が裸でペンが無い）。壊れているのは**対になっていないこと**だけである。
+
+原因は EP62 ・EP63 と同じ。**1プロンプト＝1枚では前の枚を参照できない**ので、「同じ椅子」は毎回書き下すしかない。以下は**カウンター・椅子・光・罫線を両方に全文書いている**。
+
+| 新 | 置き換え |
+|---|---|
+| `R225` | R222 の代替（状態1・ACT_1 冒頭） |
+| `R226` | R223 の代替（状態7・**映画の最後の画**） |
+
+- `R225.png`
+the SAME admission counter and the SAME two chairs and no others: a heavy dark-stained wooden counter running across the frame at waist height with a worn front edge, seen from the visitor's side of it, and beyond the counter two matching low armchairs of pale bent wood with flat oatmeal-coloured cushions, the near one drawn out and turned slightly away from the counter and the far one pushed in square and empty, a pale green-grey wall behind them with one window high at frame left, flat late-afternoon daylight with no lamp burning, nobody in the picture, the camera close in over the counter so the form fills the lower third of the frame and the two chairs sit behind it, and on the counter a single printed admission form lying squared on the counter, its printing dissolved to soft grey with no readable characters anywhere, and across the foot of it one ruled signature line, dark and unmistakable, long enough and near enough to camera to be read as a line at a glance, the ruled line completely bare with nothing written on it and no pen anywhere in the frame [STYLE] Avoid: [NEG]
+
+- `R226.png`
+the SAME admission counter and the SAME two chairs and no others: a heavy dark-stained wooden counter running across the frame at waist height with a worn front edge, seen from the visitor's side of it, and beyond the counter two matching low armchairs of pale bent wood with flat oatmeal-coloured cushions, the near one drawn out and turned slightly away from the counter and the far one pushed in square and empty, a pale green-grey wall behind them with one window high at frame left, flat late-afternoon daylight with no lamp burning, nobody in the picture, the camera in exactly the same place and at exactly the same height as before, and on the counter a single printed admission form lying squared on the counter, its printing dissolved to soft grey with no readable characters anywhere, and across the foot of it one ruled signature line, dark and unmistakable, long enough and near enough to camera to be read as a line at a glance, the ruled line still completely bare with nothing written on it and no pen anywhere in the frame, the far chair still pushed in square and slightly out of focus beyond the counter, the light gone flat [STYLE] Avoid: [NEG]
+
+**生成後に必ず並べて見ること**：`R225` と `R226` が**同じ部屋・同じカウンター・同じ二脚の椅子**に見えるか。両方で**罫線が一目で読める**か。ここが今回の全部である。
+
+**`R222` `R223` は廃止。カットに使わない**（削除はしない）。`mandatory_stills` は差し替え済み。
