@@ -790,3 +790,62 @@ Looking straight down from directly overhead onto the SAME seat as C136 and no o
 **`C207` `C208` は廃止。カットに使わない**（削除はしない）。`mandatory_stills` は `C228` `C229` に差し替え済み。
 
 ※ 目視QCのもう一件（差し替えなし・要確認）：`C099`（状態2・同じ切符が扇に広げられている）は、廃建物の廀下の引きの中で小さく放射状に並んでおり、**装飾模様に見える**。使えなくはないが弱い。
+
+### ★再発注 2（2026-08-05・全229枚目視QCの不合格10枚）
+
+全229枚を目視した（`runs/qc/correa_plate_verdicts.v001.md`）。**ACCEPT 192 / FLAG 25 / REJECT 10**。寸法不合格0枚、平均輝度25未満も0枚（最暗は `C050` の 48.4）。**10枚とも機械ゲートでは捕まらない。**
+
+- `C223`（サムネ候補）は**数値が全部緑**（平坧62.1・sd48.1）ながら、発注の「暗い無地の表示パネル」に対して**顔がはっきり分かる女性と幼児**で戻ってきた。顔禁止・胖像禁止・**死の演出禁止**を一枚で破っている。
+- `C169` `C189` `C191` は**病院の内部にひび割れた大地や倒木が入っている**合成不能の画。`C189` は ACT_5 で最も重い「家系図の幹」のビートである。
+- `C137`（モチーフ状態5）は `C207`/`C208` を廃止したのと**同じ欠陥**——胘付きの別の椅子で、切符も影の中の細片。
+- `C099`（状態2）は弱いだけでなく、拡大すると**切り込み入りの映画チケット**（`C207` を廃止したのと同じ物）が放射状に並んでいる。
+
+※ `C221` と `C223` を失うとサムネ候補が2枚になり、契約の `thumbnail_candidates_min: 3` を割る。**`C238` `C239` の生成は任意ではない。**
+
+| 新 | 廃止 | 却下理由 |
+|---|---|---|
+| `C230` | `C095` | ACT_3, the word *appropriate* |
+| `C231` | `C099` | ACT_1, motif state 2, the identical blanks |
+| `C232` | `C128` | ACT_4, the grey |
+| `C233` | `C137` | ACT_2, motif state 5, the ticket on the floor |
+| `C234` | `C169` | ACT_5, the barn-door group |
+| `C235` | `C189` | ACT_5, *the trunk of the family tree* |
+| `C236` | `C191` | ACT_5, the felled trunk |
+| `C237` | `C206` | ENDING, the number display, close |
+| `C238` | `C221` | THUMB, headline `NOBODY CALLED 47` |
+| `C239` | `C223` | THUMB, headline `NOBODY SAID NO` |
+
+本文の `[STYLE]` / `[NEG]` は §2 の定義を展開すること（§2 の `[NEG]` には 2026-08-05 に**顔の語を追加済み**）。
+
+- `C230.png`
+An extreme macro photograph of a single page of a printed dictionary, the paper filling the entire frame edge to edge with no desk, no room and no background visible at all, the columns of type reduced to soft grey fibrous bands with no letterform anywhere resolvable and no numeral and no word readable, the tooth and fibre of the cheap paper raised into relief by a hard light raking across the sheet from the left, the fold of the gutter running down one side into deep shadow, one corner of the sheet lifted very slightly by humidity, shot square on and so close that the depth of field falls away at the edges of the frame [STYLE] Avoid: [NEG]
+
+- `C231.png`
+A loose overlapping row of eight identical small paper slips spread across a chipped laminate counter top and shot close and low from the public side of the counter so the slips fill most of the frame, every slip a plain rectangle of pale cream paper with four straight cut edges and no notches, no perforations, no scalloped or serrated ends and no rounded corners, every slip completely blank and unprinted with no numeral, no letter and no mark of any kind on any of them, the slips fanned unevenly by hand rather than laid in any pattern and slightly curled at the corners by the humidity, one hard shaft of window light from the left raking across the paper so the edges throw small shadows onto the slips beneath, the waiting room behind the counter falling away out of focus into green shadow, nobody in the picture [STYLE] Avoid: [NEG]
+
+- `C232.png`
+A flat featureless expanse of grey humid tropical overcast filling the entire frame from edge to edge with no sun, no horizon, no ground, no building, no bird and no object of any kind anywhere in the picture, the cloud a single unbroken sheet with only the faintest tonal drift from very slightly brighter at the lower left to very slightly denser at the upper right, the air visibly heavy with moisture, no break and no edge and nothing to give the eye a scale, photographed straight up at a shallow angle with a long lens so the frame is entirely sky [STYLE] Avoid: [NEG]
+
+- `C233.png`
+Looking down at a steep angle from standing height onto the grey terrazzo floor directly beneath a single mid-century waiting-room side chair with no arms, its seat and its low rounded back upholstered in dark reddish-brown leatherette scuffed pale along the front edge, carried on a slim black tubular steel frame with four splayed legs, standing against a wall with pale green dado paint in a Puerto Rican municipal clinic, the chair's legs and the underside of its seat framing the top of the picture and the floor filling the lower two thirds, and lying on the terrazzo beneath the chair a small blank slip of pale cream paper, a plain rectangle with four straight cut edges and no notches, no perforations and no scalloped ends, no printing and no numeral and no writing of any kind on it, one long edge of the slip curled upward by the humidity so it stands slightly clear of the floor, the slip large enough in the frame to be unmistakably a slip of paper, one shaft of flat humid daylight from a window out of frame falling across it so it is the brightest thing in the picture, nobody in the picture and no other furniture in the picture [STYLE] Avoid: [NEG]
+
+- `C234.png`
+A worn iron horseshoe lying half buried in bare dry cracked earth in an open yard outdoors under flat white tropical cloud, the ground baked and split into a wide pattern of shallow cracks running out of the frame in every direction, no hoofprint and no track anywhere in the earth around it, a low weathered timber fence and rough dry grass just visible far behind at the top of the frame and nothing else, shot very low from ground level with a long lens so the cracked earth fills the picture and the background is soft, one hard directional light from the side throwing the horseshoe's shadow across the cracks, nobody in the picture and no building in the picture [STYLE] Avoid: [NEG]
+
+- `C235.png`
+A large tree stump cut clean through low to the ground outdoors in an open cleared yard of bare earth, the pale raw fresh-cut face of the stump broad and flat and turned toward the camera, its growth rings and the darker heartwood at the centre clearly visible, the dark fissured bark still on its edge and a scatter of pale sawdust and cut chips on the earth around it, the ground around the stump cleared and swept bare with no branches and no leaves left on it, low green scrub and a plain painted concrete boundary wall far behind under flat white tropical cloud, shot from a low kneeling height square on to the cut face with a single hard directional light from the left so the rings are raked and the far side of the stump falls away, nobody in the picture and no building interior in the picture [STYLE] Avoid: [NEG]
+
+- `C236.png`
+A long felled tree trunk lying across bare dry ground outdoors in an open yard, every branch already cut away so only the pale round scars where the limbs were remain along its length, the bark dark and fissured and beginning to lift in places, the trunk running diagonally across the frame from the near lower left into the distance and out of focus at the far end, dry cut grass and a few pale wood chips on the ground beside it, a low painted concrete boundary wall and green scrub far behind under flat white tropical cloud, shot from a low height with one hard directional light from the side so the trunk's shadow lies long across the ground, nobody in the picture and no building interior in the picture [STYLE] Avoid: [NEG]
+
+- `C237.png`
+A wall-mounted number display panel filling almost the whole frame, shot square on and very close from a few inches back so its steel surround runs off all four edges of the picture, the glass of the panel completely dead black and entirely unlit with no digit, no numeral, no letter, no segment and no glow of any kind anywhere on it, the black glass holding only a very faint dim reflection of an empty unlit corridor and a row of empty chairs, so soft and so dark that nothing in the reflection can be identified, the painted concrete wall around the surround worn and marked by hands at the edges of the frame, a single weak light from one side grazing the steel surround so the panel itself stays the darkest thing in the picture while the surround holds detail, nobody in the picture [STYLE] Avoid: [NEG]
+
+- `C238.png`
+A single small blank paper slip held upright between a thumb and a forefinger and raised into the lower middle of the frame, the slip a plain rectangle of pale cream paper with four straight cut edges and no notches, no perforations, no scalloped or serrated ends and no rounded corners, its face completely blank and unprinted with no numeral, no letter and no mark of any kind on it, the ragged fibres along its top edge catching the light, the hand an ordinary adult hand cropped at the wrist with no face and no watch and no ring anywhere in the picture, the slip and the hand together occupying only the lower two thirds of the frame and the entire upper third of the frame left completely clear and empty of any object, a waiting room of empty chairs falling away behind into deep soft shadow, hard directional light from one side striking the slip squarely, , the subject itself brightly and evenly lit and clearly the brightest thing in the frame, the background dark but never crushed and still holding visible detail, high local contrast between the subject and the ground, graded up for legibility on a phone screen at 320 pixels wide [STYLE] Avoid: [NEG]
+
+- `C239.png`
+A wall-mounted number display panel on a painted concrete wall, dead centre in the frame and large in it, its glass completely blank and unlit with no digit, no numeral, no letter, no segment and no glow of any kind anywhere on it and no reflection in which anything can be identified, its plain steel surround dented at one corner, the pale green and cream painted wall around it raked hard from one side by a single directional light so the trowel marks, the damp bloom and the flaking paint of the concrete stand out in relief, the panel sitting in the lower two thirds of the frame with the entire upper third of the frame left completely clear and empty of any object, no person anywhere in the picture, no hand, no face, no figure and no reflection of a figure, , the subject itself brightly and evenly lit and clearly the brightest thing in the frame, the background dark but never crushed and still holding visible detail, high local contrast between the subject and the ground, graded up for legibility on a phone screen at 320 pixels wide [STYLE] Avoid: [NEG]
+
+**廃止：`C095` `C099` `C128` `C137` `C169` `C189` `C191` `C206` `C221` `C223`。カットに使わない（削除はしない）。**
+※ **`C238` `C239` はサムネ専用なので `mandatory_stills` には追加しない。** 本編の 8枚は差し替え済み。

@@ -807,3 +807,95 @@ Two identical sheets of household correspondence lying side by side and slightly
 
 合計 **219枚**（うち本編 215枚 + PEOPLE 10 + THUMB 4）。
 ★ **サムネプレートだけは本編の低輝度指定を上書きし、平均輝度38以上・標準偏差45以上を狙うこと。**
+
+### ★再発注（2026-08-05・全219枚目視QC）
+
+全219枚を目視した（`runs/qc/memphis_plate_verdicts.v001.md`）。**ACCEPT 171 / FLAG 32 / REJECT 16**。番地 `1019` は**全枚0件**、法廷・房・制服・バッジも**0件**である。
+
+**目でしか捕まらなかったもの：**
+
+- `M159` に **生成器のウォーターマーク**が左下隅に入っている。四隅の探索でのみ見つかり、コンタクトシートでは見えない。
+- `M117` に**完全に識別可能な顔が2つ**。発注は「無人の部屋」である。
+- `M049` に**女性の横顔**。人を一言も発注していない枚で、**名前以外は Mary Craft の描写**になっている（invariant 11）。
+- `M202` の2人目が**子供**。ACT_1 は「年齢なし。職業なし。**子供なし**」と口に出して言っている。
+- `M079` にタイプライターの**字形が解像する**。
+
+**メーターの誤りは逆方向だった。**判決文の *two **sets*** はガス2・電気2であるから、同じ燃料の2個を写した枚（`M001` 等）は**正しい**。問題は `M013` で、**電気4・ガス3の計7個**が写っている。これを外すと **4つを同時に写した枚が1枚も無くなる**ので、必ず再生成すること。
+
+**`M048` は状態4も状態8も担えない。**40度の斜め・紙が画面の約3%で、「上半に日付・下半は白」の区別が付かない。**状態8（封筒が郵便受けに落ちる）を担えるプレートは219枚のどこにも無かった**ので、下の最後の1枚は**差し替えではなく新規**である。
+
+| 新 | 廃止 | 役割 |
+|---|---|---|
+| `M220` | `M013` | ACT_1 - *'two separate gas and electric meters and only one water meter serving the premises'*. This is the only plate in the film that can show all f |
+| `M221` | `M048` | HOOK cut 2 and motif state 4 - *'the final notice open on the kitchen table, the date in the upper half, the lower half white'*. It must be legible on |
+| `M222` | `M049` | ACT_2 - the notice held up to the light, *'the printing dissolved entirely and the ghost of the reverse side showing through'*. **No person of any kin |
+| `M223` | `M070` | ACT_2 - the utility's computer billing. This is the Division's machine room, **not the family's house**, and nobody is in it. |
+| `M224` | `M073` | ACT_3 - the federal courthouse steps. **A public building exterior, not an interior of any kind.** |
+| `M225` | `M079` | ACT_3 - a marked passage in the trial transcript. **The type must be a dissolved grey band. One resolvable character is a rejection, and this plate ha |
+| `M226` | `M094` | ACT_3 - the law reports. **A library shelf, not a house.** |
+| `M227` | `M117` | ACT_4 - the meeting the Court required, *'the presentation to a designated employee'*. The room must be waiting, not occupied. **No person, and above  |
+| `M228` | `M156` | ACT_5 - the second half of the two-cards match cut. It must sit on the **same desk at the same framing** as the two blank ledger cards laid apart, so  |
+| `M229` | `M159` | ACT_5 - the heap of complaint slips at the end of the working day. **No overlay mark of any kind may appear anywhere in the frame, in any corner.** |
+| `M230` | `M168` | ACT_2 / ACT_5 - the dark twin of the lit corridor door. It must sit at **exactly the same framing as the lit one** so that the only difference is the  |
+| `M231` | `M172` | ACT_5 - *'the same street an hour later with the dark house still dark'*. It must be **the same vantage, the same time of night and the same row of ho |
+| `M232` | `M181` | ACT_5 - one complaint slip lifted from the stack. It must be **paper, blank, and part of a stack of identical blank paper** - no image on it and no ph |
+| `M233` | `M191` | ENDING - the callback to the two bills. It must be **two windowed envelopes, overlapping**, one of them now opened, on the same counter surface as the |
+| `M234` | `M202` | PEOPLE - two adults at the kitchen table, seen from behind. **No child may appear. The opinion records no children and the script says so out loud.** |
+| `M235` | `M210` | THUMB-03, *'GIVEN NO SATISFACTION'*. The design document is explicit: the cord is the **highest**-contrast element and must be pushed, the handset mus |
+| `M236` | —（新規） | **Motif state 8**, the film's last image - *'the same envelope falls into the mailbox again, and the sheet inside it is the state 4 notice'*. **No pla |
+
+本文の `[STYLE]` / `[NEG]` は §2 の定義を展開する（§2 の `[NEG]` には 2026-08-05 に**顔の語を追加済み**）。
+
+- `M220.png`
+The side wall of a modest single-storey painted weatherboard house photographed square on from three metres away so the whole run of the wall fits the frame, carrying exactly four meters and no more: two round-domed electric meters mounted side by side on the upper part of the boards and two rectangular cast-iron gas meters mounted side by side directly beneath them, each pair identical to the other and spaced a hand's width apart, every dial cover a plain blank disc and every index window a smooth featureless rectangle with no scale and no figures anywhere on any of them, their service pipes running down to the ground in parallel, late morning sun skimming the wall from the left so each of the four instruments lays its own separate hard shadow across the weatherboard and the doubling is unmistakable, the yard beyond thrown soft, nobody anywhere in the picture [STYLE] Avoid: [NEG]
+
+- `M221.png`
+A single unfolded printed final notice lying flat and alone in the middle of a worn pale formica kitchen table, photographed from **directly overhead, dead square, lens parallel to the table**, close enough that the sheet fills roughly two thirds of the frame width and its four edges sit well inside the frame, one heavy horizontal rule crossing the sheet at its midpoint, the upper half above that rule carrying a dense even band of grey printed texture with no character resolving anywhere in it and the lower half beneath the rule left completely bare white paper with nothing on it at all, so that the difference between a filled top and an empty bottom is the entire subject, a bare hanging bulb out of frame above throwing one soft even pool of light across the whole sheet with the table darkening toward the corners, the paper still holding the memory of a single fold, nobody in the room [STYLE] Avoid: [NEG]
+
+- `M222.png`
+A single printed slip of thin paper held up flat against a small kitchen window pane so the flat overcast daylight passes straight through it, photographed square on from one metre away with the sheet filling most of the frame, the printing on the near face dissolved entirely to an even grey wash and the reverse side showing through as a faint mirrored ghost with no character resolving on either face, the sheet pinched at its two upper corners by nothing more than the window frame and a wooden clothes peg so that **no hand, no arm, no shoulder, no head and no person of any kind is anywhere in the picture**, the weave of a net curtain hanging just out of focus behind the glass, the kitchen behind the camera already dim [STYLE] Avoid: [NEG]
+
+- `M223.png`
+A concertina of wide continuous printer paper spilling from the throat of a line printer down into a wire floor basket in a municipal data processing room of the early 1970s, photographed from one metre away at the height of the printer's output slot and caught mid-fall so the topmost fold is still moving and slightly blurred while the machine stays sharp, every printed line on the paper reduced to an even featureless grey band with no character resolving anywhere, the room behind it a plain institutional space of steel cabinets, lifted floor tiles and strip lighting with no domestic furniture, no kitchen cabinet, no window curtain and **no person anywhere in the frame or in any doorway beyond it**, one overhead fluorescent throwing hard shadow down the fanfold pleats [STYLE] Avoid: [NEG]
+
+- `M224.png`
+The wide shallow stone entrance steps of a plain mid-century federal courthouse seen from the pavement at the very bottom of the flight, photographed from a crouch so the treads climb away from the camera and fill the lower two thirds of the frame and the plain stone facade closes the top, the stone still dark and wet from rain that stopped a minute ago with standing water lying in the hollows of the worn treads and reflecting the flat grey sky, no plate, no inscription and nothing at all cut into the stone anywhere, **no interior, no room, no furniture, no domestic detail of any kind in the frame**, the steps completely empty of people, a wet iron handrail running up one side [STYLE] Avoid: [NEG]
+
+- `M225.png`
+A single loose page of a trial transcript lying at a shallow angle on a plain desk beneath a metal desk lamp, photographed from forty centimetres away so the page fills the frame corner to corner, **the typed text rendered as continuous smooth horizontal bands of even grey tone with absolutely no letterforms, no word gaps, no ascenders and no descenders anywhere - the lines must read as ruled grey ribbons and never as characters**, one single paragraph block marked down its left margin by a hard vertical pencil line drawn firmly enough to dent and shine the paper fibre, the lamp raking from the left so the dent catches an edge of light, the rest of the desk falling away into darkness, nobody in the room [STYLE] Avoid: [NEG]
+
+- `M226.png`
+A single tall bound volume drawn half out of a long run of identical bound volumes on a dark wooden library shelf, photographed square on from one metre at the shelf's own height so the run of spines fills the frame edge to edge, every spine plain leather and cloth with **no lettering, no gilt, no label and no numbering anywhere on any of them**, the dark empty gap beside the drawn volume reading as the only interruption in the run, a low reading lamp from the left grazing across the spines so each one has its own vertical edge of light, **no kitchen, no window, no domestic furniture and no person in the frame** [STYLE] Avoid: [NEG]
+
+- `M227.png`
+Two plain wooden chairs facing each other across a small bare table in a windowless municipal interview room, photographed from the doorway at standing height from three metres so both chairs and the whole table read at once, nothing whatsoever on the table top, one bare overhead fitting directly above throwing hard short shadows beneath both chairs and the table legs onto worn linoleum, one chair pushed in square and the other pulled back a hand's width as though somebody has just stood up, the plaster walls entirely bare with nothing hung on them, **the room completely empty of people - no figure, no seated person, no face, no hands, nobody at all anywhere in the frame** [STYLE] Avoid: [NEG]
+
+- `M228.png`
+Two identical blank buff ledger cards lying on a plain dark wooden office desk with their long edges overlapping by a finger's width so that one card rides on top of the other, photographed from **directly overhead, dead square, lens parallel to the desk**, from about seventy centimetres so the pair fills the middle of the frame with an even margin of bare desk all round, both cards carrying nothing but faint printed ruling with **no writing, no figures and no marks of any kind in any column**, one flat lamp from the left laying a single narrow shadow under the raised card's edge so the overlap is unmistakable, **no kitchen, no formica, no domestic setting and no person anywhere in the picture** [STYLE] Avoid: [NEG]
+
+- `M229.png`
+A wire office basket heaped with folded paper slips standing on a windowsill beside the plain sash window of a low-rise municipal office at dusk, photographed from one metre at the basket's own height so the heap fills the left of the frame and the window the right, every slip blank with its printing reduced to an even featureless grey with no character resolving anywhere, the last flat daylight coming in almost level across the top of the heap so only the uppermost folds catch it and the mass beneath goes to shadow, **through the window nothing but low two-storey rooftops, telephone wires and bare trees against an overcast sky - no tower block, no high-rise, no city skyline, no distant spire**, the office behind the camera unlit and empty, **absolutely nothing overlaid in any corner of the frame** [STYLE] Avoid: [NEG]
+
+- `M230.png`
+A single closed office door with a frosted glass upper panel at the end of a long municipal corridor with a worn linoleum floor and plain painted plaster walls, photographed from the far dark end of the corridor at head height so the corridor recedes and the door sits small and centred at the vanishing point, **nothing at all lit behind the frosted glass so the panel is a flat dead grey rectangle**, no name plate and nothing lettered on the door or beside it, one weak ceiling fitting halfway down the corridor lighting only the floor near the camera, **no second door beside it, no domestic interior, no kitchen, no window and no person anywhere in the frame** [STYLE] Avoid: [NEG]
+
+- `M231.png`
+A modest street of single-storey painted weatherboard Memphis houses photographed **from the centre of the road at standing height looking straight down the row**, at full night an hour after dusk, the porch light burning above every doorway along the row except one house squarely in the middle of the frame which stands completely unlit with every window black, the sky above the roofline a deep even blue-black with no sun and no colour left in it, the road surface holding a faint sheen from the porch lights, **no figures anywhere on the street or on any porch**, no car moving, nothing but the one gap in the line of lights [STYLE] Avoid: [NEG]
+
+- `M232.png`
+A single blank printed paper slip lifted between a thumb and forefinger from the top of a tall square stack of identical blank paper slips on a plain office desk, photographed from the desk's own level from sixty centimetres so the stack fills the lower half of the frame and the lifted slip sits just above it, caught at the instant the slip clears the pile while the rest of the stack stays perfectly square, **every slip in the frame plain unmarked paper with faint printed ruling and nothing else - no photograph, no picture, no image, no halftone, no writing and no figures on any of them**, one desk lamp from the left so the lifted slip throws a hard shadow back down onto the stack, no face in the frame and only the one hand, cropped at the wrist [STYLE] Avoid: [NEG]
+
+- `M233.png`
+Two identical windowed envelopes lying overlapped on a pale worn formica counter top, photographed from **directly overhead, dead square**, from about seventy centimetres so the pair fills the centre of the frame with an even margin of counter all round, both envelopes exactly the same size, the same shape and the same fold with a clear rectangular address window cut in each and **nothing at all visible inside either window and no printing resolving anywhere on either envelope**, the upper envelope slit open along its top edge with the flap standing slightly proud while the lower one remains sealed, the last flat daylight from a window to the left so both envelopes cast one shared soft shadow to the right, nobody in the room [STYLE] Avoid: [NEG]
+
+- `M234.png`
+Two adults seated at a formica kitchen table in a modest 1970s Memphis house seen from directly behind at seated height from three metres, **both of them plainly grown adults of similar full adult build and shoulder width, no child, no young person and no smaller figure anywhere in the frame**, only the backs of their heads and their shoulders in view with no face, no profile and no reflection of a face visible anywhere, one of them leaning back and the other forward on their elbows, two mugs standing untouched between them, flat grey morning light from the window beyond the table, the room otherwise still [STYLE] Avoid: [NEG]
+
+- `M235.png`
+A black bakelite wall telephone handset hanging off its cradle on its coiled cord in an otherwise dark 1970s kitchen, photographed square on from one and a half metres with the handset **dead centre in the frame and large enough to fill more than half the frame height**, one hard directional light from the right side only picking out the coiled cord as a single continuous bright line running down through the middle of the picture against a wall that falls away to near black on both sides, the handset itself catching a hard specular edge along its length so it separates cleanly from the ground, **the entire upper third of the frame an empty unlit flat dark wall with nothing in it - no shelf, no cabinet, no window, no doorway and no second room**, no lit kitchen anywhere in the frame, the cord's last swing already stopped, nobody in the picture [STYLE] Avoid: [NEG]
+
+- `M236.png`
+A plain windowed envelope caught in mid-air a hand's width above the open mouth of a domestic kerbside mailbox on a painted wooden post outside a modest single-storey weatherboard house, photographed from one metre at the mailbox's own height with the box filling the right of the frame and the falling envelope sharp against the soft grey of the yard beyond, the envelope tilted as it drops with a single folded printed sheet just visible through its opened flap carrying one heavy horizontal rule across it, a band of even grey printed texture above that rule and bare white paper below it and **no character resolving anywhere on the sheet or on the envelope**, flat late daylight with no sun in it, the mailbox door hanging open on its hinge, **no house number, no name and no marking of any kind on the box, the post or the envelope**, nobody anywhere in the picture [STYLE] Avoid: [NEG]
+
+**廃止：`M013` `M048` `M049` `M070` `M073` `M079` `M094` `M117` `M156` `M159` `M168` `M172` `M181` `M191` `M202` `M210`。カットに使わない（削除はしない）。**
+※ サムネ専用の差し替えと新規の状態8プレートは `mandatory_stills` に**追加しない**（サムネはカットにならない）。本編の 15枚は差し替え済み。
