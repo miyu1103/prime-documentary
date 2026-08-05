@@ -503,15 +503,37 @@ def main() -> int:
     # empty box, which is worse than no card - it reads as a broken element
     thumb = PUB / sid / f"{sid}_ctathumb.jpg"
     if not thumb.exists():
+        got = False
         vid = design["destination"]["video_id"]
-        for q in ("maxresdefault", "hqdefault"):
-            try:
-                urllib.request.urlretrieve(f"https://i.ytimg.com/vi/{vid}/{q}.jpg", thumb)
-                if thumb.stat().st_size > 3000:
-                    break
-            except Exception:
-                pass
-        print(f"  fetched destination thumbnail -> {thumb.name}")
+        # The local package thumbnail first. i.ytimg serves nothing for a video that is still
+        # private, and every long-form is private until its scheduled date - so nineteen Shorts
+        # fetched a 1 kB 404 body, were told "fetched", and died at render time on
+        # "Error loading image". The bytes we uploaded are on disk anyway.
+        pkg = ROOT / "episodes" / design["episode_id"] / "09_package"
+        local = sorted(list(pkg.glob("thumbnail.ctr*.png")) + list(pkg.glob("thumbnail.auto*.png"))
+                       + list(pkg.glob("thumbnail*.jpg")))
+        if local:
+            subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(local[0]),
+                            "-vf", "scale=1280:720", "-q:v", "3", str(thumb)], check=True)
+            got = thumb.exists() and thumb.stat().st_size > 3000
+            if got:
+                print(f"  destination thumbnail from {local[0].name}")
+        if not got:
+            for q in ("maxresdefault", "hqdefault"):
+                try:
+                    urllib.request.urlretrieve(f"https://i.ytimg.com/vi/{vid}/{q}.jpg", thumb)
+                    if thumb.exists() and thumb.stat().st_size > 3000:
+                        got = True
+                        print(f"  fetched destination thumbnail from YouTube ({q})")
+                        break
+                except Exception:
+                    pass
+        # Loud, not silent: the funnel card renders this image, and a missing one does not degrade
+        # the card, it aborts the whole render.
+        if not got:
+            thumb.unlink(missing_ok=True)
+            sys.exit(f"{sid}: no destination thumbnail. {vid} serves none (private?) and "
+                     f"{pkg.relative_to(ROOT)} has no thumbnail*.png")
 
     rights = stage_footage(sid, short["plates"], args.force)
     print(f"{sid}: {len(have)} generated plates, {len(rights)} archive clips staged")
