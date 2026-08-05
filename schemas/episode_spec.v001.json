@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "episode_spec.v001.json",
+  "title": "PD episode machine contract",
+  "description": "The numbers an episode commits to, in the one place every tool reads. Prose design documents stay as they are -- this is the layer a machine can check. Every field here exists because its absence caused a measured production failure; the failure is named in each description so nobody deletes a field without knowing what it cost.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "episode_id",
+    "slug",
+    "runtime_seconds",
+    "script_words",
+    "section_vocabulary",
+    "figure_beats_per_act",
+    "distinct_video_assets",
+    "people_plates_min",
+    "thumbnail_candidates_min",
+    "footage_review_required",
+    "audio_layers"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "episode_id": {
+      "type": "string",
+      "pattern": "^PD-\\d{4}-\\d{3}-[a-z0-9]+$"
+    },
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+$"
+    },
+    "runtime_seconds": {
+      "type": "array",
+      "items": {
+        "type": "number",
+        "minimum": 1
+      },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "Finished-film band, low then high. WHY: EP50-59 declared nothing, so check_final_acceptance fell back to its 690-750s default and every 28-30 minute episode failed runtime_band. Eight of nine receipts carried that failure and it became background noise that hid real defects."
+    },
+    "script_words": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "Narration word-count band. WHY: same fallback, same result -- 4,700-word scripts measured against a 1,575-2,141 band."
+    },
+    "section_vocabulary": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 3,
+      "description": "The section names this episode's script actually uses, in order. WHY: structure_4part failed on 9 of 9 because it looked for an 'OPENING' section in scripts written to a five-act vocabulary."
+    },
+    "figure_beats_per_act": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "minItems": 2,
+      "maxItems": 2,
+      "description": "Min and max on-screen motion-graphic beats per act. WHY: EP57 shipped 10 beats total and EP58/EP59 8, against 78-91 on their siblings; EP57 rendered at 0.37 kinetic beats per minute against a floor of 2.5 and the gate called it kamishibai. EP58 rendered for an hour on that empty data before anyone counted."
+    },
+    "distinct_video_assets": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Distinct footage + motion assets required so no clip repeats. WHY: EP54 had 253 footage cuts and 188 distinct assets, so 65 clips ran twice and asset_reuse failed AFTER a two-hour render. Compute it as footage cuts, not as cuts divided by the reuse cap."
+    },
+    "people_plates_min": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Minimum P### human plates. WHY: EP57 carried 2 where its siblings carry 7-16, in a film about one person's twenty-one days; EP60 carried 0."
+    },
+    "mandatory_stills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Stills that MUST appear in the film, by basename. WHY: EP54's fourteen purpose-made courtroom stills -- generated because the archive holds no courtroom footage at all -- were silently dropped because the builder trimmed a surplus pool from the alphabetical tail, then retired them as unreferenced."
+    },
+    "thumbnail_candidates_min": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Thumbnails to build before choosing. WHY: thumbnail_ready wants at least three and a single Codex face plate produced one, so the gate failed at the very end of the run."
+    },
+    "footage_review_required": {
+      "type": "boolean",
+      "description": "Whether every staged clip must carry a recorded human verdict. WHY: write_factory_clip_qc stamped every clip reviewed/on_theme/accept unconditionally. When someone finally looked, 683 of 1,094 clips across five episodes were wrong for their story."
+    },
+    "audio_layers": {
+      "type": "integer",
+      "minimum": 1,
+      "description": "Layers the finished mix is built from. WHY: sound_layers failed on 9 of 9 because it demands an audio_provenance artifact that no step in this pipeline produces. Declaring the real number forces that contradiction to be settled instead of waived every time."
+    },
+    "forbidden_subjects": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Things this episode must never show, as lowercase keywords matched against footage titles, query terms and still names. WHY: EP60 forbids the collapse, rubble, rescue operations and casualties, and the footage queries written for it asked for exactly `rubble collapse`, `search and rescue`, `firefighter rescue`, `excavator debris` and `ambulance night`. Thirty-one clips were staged before a human noticed. Every episode carries constraints of this kind -- EP57 may not name the arresting officers or depict drug use, EP58 may not imply records were destroyed -- and until now there was nowhere machine-readable to put them, so they lived in prose that the asset tools never read."
+    },
+    "forbidden_claims": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Assertions the record does not support, which must not appear in narration, captions or on-screen text. WHY: EP60 may not say the structure was at `half the required strength` (no readable source) or that the collapse took `13 seconds` (the pool deck fell more than four minutes before the tower, so no single duration exists)."
+    },
+    "notes": {
+      "type": "string"
+    },
+    "approved_deviations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Checks the owner has knowingly accepted for THIS episode. An entry here is a decision, not a default."
+    },
+    "target_cut_sec": {
+      "type": "number",
+      "minimum": 2.0,
+      "maximum": 8.0,
+      "description": "Average cut length this episode is cut to. WHY: the builder default of 4.6s fixes the cut count, and the cut count fixes how many stills can appear, because stills may occupy at most 32% of cuts under the video-share floor. EP61 commissioned 150 stills because the archive cannot supply a prison-and-courtroom film after 60 episodes (courtroom 23/24 already used, cell 20/24, prison 18/24); at 4.6s only 105 fit and check_spec_satisfied refuses. At 3.89s all 150 fit. This does NOT relax the video-share floor or any motion check -- a shorter cut changes the picture more often, which is the same direction as the standing rule against slideshows."
+    },
+    "people_plates": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Plate ids that ARE this episode's people plates, e.g. ['G210.png', ...]. Declared because the filename does not carry that meaning: EP62-65 name people plates with the episode prefix, and check_episode_inputs used to count only names beginning with P, so it reported 0 of 10 on forty plates that exist and are correct."
+    }
+  }
+}

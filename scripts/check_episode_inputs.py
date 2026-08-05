@@ -157,9 +157,19 @@ def main() -> int:
             authored |= set(re.findall(r"\bP\d{2,3}\b", f.read_text(encoding="utf-8")))
     for f in (ROOT / "episodes" / "_planning").glob(f"EP*{slug.upper()}*PEOPLE*.md"):
         authored |= set(re.findall(r"\bP\d{2,3}\b", f.read_text(encoding="utf-8")))
+    # An episode may DECLARE which plates are its people plates. EP62-65 name theirs with
+    # the episode prefix (G210-G219, C211-C220, M198-M207, R207-R216), all ordered in the
+    # batch and all generated, and this counted 0 of 10 on every one of them because it
+    # only ever looked at names beginning with "P". A filename is not a face, and it is
+    # not a people plate either.
+    declared = {s.upper() for s in spec.get("people_plates", [])}
+    declared |= {Path(s).stem.upper() for s in spec.get("people_plates", [])}
     faces = []
     unverified = []
     for p in stills:
+        if p.name.upper() in declared or p.stem.upper() in declared:
+            faces.append(p)               # declared by the spec
+            continue
         if not p.name.upper().startswith("P"):
             continue
         if p.stem.upper() in authored:
