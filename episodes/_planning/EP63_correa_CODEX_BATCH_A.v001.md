@@ -849,3 +849,21 @@ A wall-mounted number display panel on a painted concrete wall, dead centre in t
 
 **廃止：`C095` `C099` `C128` `C137` `C169` `C189` `C191` `C206` `C221` `C223`。カットに使わない（削除はしない）。**
 ※ **`C238` `C239` はサムネ専用なので `mandatory_stills` には追加しない。** 本編の 8枚は差し替え済み。
+
+### ★再発注 3（2026-08-06・新規10枚の目視の結果）
+
+`C230` と `C232` は**まったく別の画**が来た。どちらも発注は「**X だけで画面を埋める**」であり、モデルはそれを無視して**情景を作った**。
+
+| 新 | 廃止 | 何が起きたか |
+|---|---|---|
+| `C240` | `C230` | 発注は「辞書の1ページの極接写・部屋も背景も写さない」だったが、**診療所の廊下**が来た |
+| `C241` | `C232` | 発注は「灰色の曇天が画面全体・地平線も建物も無い」だったが、**街と海の遠景**が来た |
+
+対策は2つ。一つは **「画面を埋める質感」として肯定形で書く**こと、もう一つは **モデルが実際に手を伸ばした情景の語（部屋・廊下・建物・街・海・地平線）を Avoid に入れる**こと。旧発注にはどちらも無かった。
+
+- `C240.png`
+A macro photograph of the surface of a single page of cheap printed paper, so close that the paper's own fibres and tooth are the subject and the sheet fills every part of the frame from edge to edge with nothing else in the picture at all, the printed columns present only as soft grey fibrous bands with no letterform, no numeral and no word resolvable anywhere, one hard light raking across the surface from the left so the fibre stands up in relief and the shallow valley of the gutter falls away into shadow at one side, one corner of the sheet very slightly lifted by humidity, the focus falling off at the extreme edges of the frame. The paper is the ONLY thing in the photograph. cinematic still, muted natural colour, humid tropical Caribbean light, low contrast, restrained documentary framing, Puerto Rico in 1991, worn unglamorous surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage. Avoid: text, lettering, numerals, digits, handwriting, signatures, seals, emblems, logos, signage, wayfinding arrows, room numbers, brand marks, human face, facial features, eye contact, portrait, identifiable person, people, hands, golden hour, sunset glow, drone shot, oversaturated, flat CGI, cartoon, illustration, stock photography, a room, an interior, a corridor, a hallway, a doorway, a wall, a floor, furniture, a desk, a table, a window, a building, a city, rooftops, a street, a coastline, the sea, a horizon, a landscape, sky with anything in it, any object at all, any scene, any depth, any background whatever
+
+- `C241.png`
+A photograph of nothing but overcast cloud, the grey humid tropical sky filling every part of the frame from edge to edge as one unbroken sheet, no sun and no bright spot anywhere in it, the tone drifting only very faintly from a little lighter at the lower left to a little heavier at the upper right, the cloud's texture soft and almost featureless with no defined edge and no break. The camera is pointed straight up at the sky and nothing else is in the photograph. cinematic still, muted natural colour, humid tropical Caribbean light, low contrast, restrained documentary framing, Puerto Rico in 1991, worn unglamorous surfaces, nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage. Avoid: text, lettering, numerals, digits, handwriting, signatures, seals, emblems, logos, signage, wayfinding arrows, room numbers, brand marks, human face, facial features, eye contact, portrait, identifiable person, people, hands, golden hour, sunset glow, drone shot, oversaturated, flat CGI, cartoon, illustration, stock photography, a room, an interior, a corridor, a hallway, a doorway, a wall, a floor, furniture, a desk, a table, a window, a building, a city, rooftops, a street, a coastline, the sea, a horizon, a landscape, sky with anything in it, any object at all, any scene, any depth, any background whatever
+
