@@ -265,13 +265,15 @@ EPISODES = {
         # was deleted from v002 with no record and restored on 2026-08-04, and two writer-
         # voice sentences were tightened in the same pass to stay inside the word ceiling.
         "planning": "EP64_memphis_script.en.v002.md",
-        # FINISHED-RATE model, as EP62 and EP63 -- not a raw speech rate. The script derives
-        # its own section windows from 176 words per finished minute (script line 5).
-        # 5,403 narration words / 176 = 1842.2s (30:42), inside the contract band [1620,1920].
-        # EP62 has since MEASURED 169.1 w/finished-min at these settings, which would put this
-        # script at 1917s -- 3 seconds under the ceiling. Treat the ffprobe measurement as the
-        # answer and check it against 1920 before anything downstream is committed.
-        "design_speech_seconds": 1842.2,
+        # MEASURED, not modelled. The full master WAS generated on the 5,393-word text and
+        # ffprobed: 06_audio/narration_index.v001.json total_seconds = 2023.1s (33:43) against
+        # a contract ceiling of 1920s -- 103s over. 5,379 index words / 2023.1s = 159.5 words
+        # per FINISHED minute, so the 176 model was optimistic by 10% and the 169.1 fallback
+        # by 6%. The script was cut to 5,105 narration words on 2026-08-06, which projects
+        # 1915.1s (31:55) finished and 1796.1s of pure speech at that measured rate.
+        # Re-ffprobe after regeneration and check total_seconds against 1920 before spending
+        # anything downstream.
+        "design_speech_seconds": 1796.1,
         "sections": SECTION_ORDER_5ACT,
         # PINNED, identical to EP62 and EP63 so the three ARE comparable.
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
