@@ -87,8 +87,6 @@ As Dr. Rojas began preparations to transport Ms. Gonzalez by van, the patient ex
 
 That is the whole of what the record says about how she died.
 
-One thing about that death has to be said plainly, because the rest of this case depends on it.
-
 The opinion never says the hospital's delay killed her. It never says she would have lived. Her death was attributed to hypovolemic shock, it happened at another facility, and it happened under a physician's care. The federal case that follows is not about her death. It is about what happened while she was still sitting there.
 
 ⟨HELD⟩
@@ -98,7 +96,7 @@ One more thing from that afternoon.
 
 Dr. Rojas testified that a nurse called from HSF to advise her that the patient would be coming to Hospmed for treatment. She said that this conversation probably occurred earlier that day, perhaps around one o'clock. The panel called that a datum suggesting that HSF tried to shunt Ms. Gonzalez to Hospmed as soon as it scrutinized her insurance card.
 
-Probably. Perhaps. Suggesting. The court chose those words with care. Nobody ever proved why the call was made, or by whom, or what was in anybody's mind. What the jury had was a physician's recollection of a call, placed at about the hour a card was checked.
+Probably. Perhaps. Suggesting. Nobody ever proved why the call was made, or by whom, or what was in anybody's mind. What the jury had was a physician's recollection of a call, placed at about the hour a card was checked.
 
 ---
 
@@ -110,7 +108,7 @@ Ms. Gonzalez's three adult children — Angel, Esther and Gloria — and four of
 
 They alleged two violations of a federal statute called EMTALA — inappropriate screening and improper transfer — and a pendent claim of medical malpractice under local law.
 
-The malpractice claim did not survive. The district court dismissed it, and that ruling was never appealed. That defines the shape of everything after it. Whatever a doctor should or should not have done for Carmen Gonzalez was no longer the question.
+The malpractice claim did not survive. The district court dismissed it, and that ruling was never appealed.
 
 From that point on, nobody in this case was arguing about whether she was treated well. Only about whether she was looked at.
 
@@ -118,7 +116,7 @@ The case went to the jury on the two EMTALA theories, and the jury returned a se
 
 It found that she did present an emergency medical condition, and the evidence to that effect, the appeals court later said, was ample. It found that the hospital had failed to afford her an appropriate screening. And it found, separately, that the hospital had violated the statute by transferring her improperly, before her condition had stabilized.
 
-That third finding needs a marker on it. The court of appeals never reviewed it. In footnote seven the panel wrote that because it upheld the screening finding, it need not comment upon the jury's finding that HSF also violated EMTALA by improperly transferring Ms. Gonzalez before her condition had stabilized. It is a jury finding that was never tested on appeal. It plays no part in what this case decided.
+That third finding needs a marker on it. The court of appeals never reviewed it. In footnote seven the panel wrote that because it upheld the screening finding, it need not comment upon the jury's finding that HSF also violated EMTALA by improperly transferring Ms. Gonzalez before her condition had stabilized. It plays no part in what this case decided.
 
 Then the money. The jury assessed two hundred thousand dollars in damages on the decedent's account, payable to the heirs. And five hundred thousand dollars for the pain, suffering, and mental anguish experienced by the survivors — one hundred thousand apiece for the three children, and fifty thousand apiece for the four grandchildren.
 
@@ -139,8 +137,6 @@ EMTALA is the Emergency Medical Treatment and Active Labor Act. In 1995, the Fir
 So the panel started where Congress did.
 
 As health-care costs spiralled upward and third-party payments assumed increased importance, Congress became concerned — this is the House report, quoted in the opinion — about the increasing number of reports that hospital emergency rooms are refusing to accept or treat patients with emergency conditions if the patient does not have medical insurance.
-
-That is the legislative motive in one sentence. Emergency rooms were reported to be turning away people who could not pay.
 
 The enforcement mechanism was not a police force. It was money. Needing a carrot to make health-care providers more receptive to the stick, the court wrote, Congress simultaneously amended the Social Security Act, conditioning hospitals' continued participation in the federal Medicare program — a lucrative source of institutional revenue — on acceptance of the duties imposed by the new law.
 
@@ -204,7 +200,7 @@ Then it went further. Even taking the doctor at her word, the chest pains might 
 
 Which Carmen Gonzalez was.
 
-So: a covered hospital, a patient who arrived seeking treatment, and a set of symptoms the hospital itself conceded would have counted. Everything now turns on one adjective.
+Everything now turns on one adjective.
 
 EMTALA requires an appropriate medical screening, but does not explain what constitutes one. The adjectival phrase, the court observed, is not self-defining.
 
@@ -224,13 +220,11 @@ Some procedure. Even-handed. That is the whole of the federal duty.
 
 And immediately, the limit. EMTALA does not create a cause of action for medical malpractice. A refusal to follow regular screening procedures in a particular instance contravenes the statute. But faulty screening, in a particular case, as opposed to disparate screening or refusing to screen at all, does not contravene the statute.
 
-That distinction carries enormous weight. A hospital that examines you badly has not violated this law. A hospital that examines you differently, or does not examine you at all, has.
+A hospital that examines you badly has not violated this law. A hospital that examines you differently, or does not examine you at all, has.
 
 Which raises a measurement problem. Differently from what? Uniform compared to which standard?
 
 The court's answer, in this case, was to use the hospital's own.
-
-HSF had written down what an appropriate screening was.
 
 Its rules, as explicated in its policy statement, required its emergency room personnel promptly to take the vital signs of every patient who visited the facility. To make a written record of all such visits. To treat patients suffering from chest pains as critical cases. And to refer all critical cases to an in-house physician immediately.
 
@@ -281,13 +275,13 @@ According to Dr. Rojas, HSF referred Ms. Gonzalez to Hospmed. And the panel adds
 
 If the jury believed the physician's testimony, the court wrote, it could well have found that HSF never intended to treat the decedent, or, at the least, was itself responsible for truncating her wait.
 
-That sentence has two halves and the second is the sharper one. If the jury believed that, the hospital was the reason she got up and drove there. Then the wait it says she abandoned would be a wait it had already ended.
+If the jury believed that, the hospital was the reason she got up and drove there. Then the wait it says she abandoned would be a wait it had already ended.
 
-The second reason does not depend on the telephone call at all. It is the holding that made this case matter.
+The second reason does not depend on the telephone call at all.
 
 Regardless of motive, the court wrote, a complete failure to attend a patient who presents a condition that practically everyone knows may indicate an immediate and acute threat to life can constitute a denial of an appropriate medical screening examination.
 
-And immediately, the panel fenced its own holding, because it understood what it had just made possible.
+And immediately, the panel fenced its own holding.
 
 Much depends upon circumstances. The court was not saying that waiting is unlawful. It was saying that in this case, absent any explanation or mitigating circumstances, the jury could rationally conclude that the Hospital's inaction here amounted to a deliberate denial of screening.
 
@@ -324,7 +318,7 @@ Then the holding, in its own words. We hold, therefore, that EMTALA, by its term
 
 The panel called the argument an oversimplification, and said so in a footnote. All insurance plans are not created equal. Given the bewildering array of coverage conditions, deductibles, reimbursement rates, and the like, sophisticated but esurient providers have ample provocation to discriminate not only between insured and uninsured patients but also among patients who are insured under different plans.
 
-Esurient. Greedy. A judge picking a rare word rather than an ordinary one.
+Esurient. Greedy.
 
 And in the statutory appendix at the back of the opinion is a provision that reads differently once a card has been checked at one o'clock. A participating hospital may not delay provision of an appropriate medical screening examination required under subsection (a) of this section in order to inquire about the individual's method of payment or insurance status.
 

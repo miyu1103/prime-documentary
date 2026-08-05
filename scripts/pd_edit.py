@@ -97,8 +97,13 @@ def main() -> int:
         return 1
 
     after = path.read_text(encoding="utf-8")
-    if a.new not in after:
-        return fail("the new text is not in the file after writing")
+    if a.new:
+        if a.new not in after:
+            return fail("the new text is not in the file after writing")
+    elif after.count(a.old) != found - a.count:
+        # A pure deletion (--new "") leaves no new text to look for. Proving the empty
+        # string is present proves nothing, so prove the anchor is GONE instead.
+        return fail("the deleted text is still in the file after writing")
     ok, msg = syntax_ok(path)
     if not ok:
         return fail(msg)
@@ -111,7 +116,8 @@ def main() -> int:
         print(f"[edit] smoke ok: {a.smoke}")
 
     backup.unlink(missing_ok=True)
-    line = next((i + 1 for i, l in enumerate(after.splitlines()) if a.new.splitlines()[0] in l), 0)
+    probe = next(iter(a.new.splitlines()), "")
+    line = next((i + 1 for i, l in enumerate(after.splitlines()) if probe and probe in l), 0)
     print(f"[edit] {path.name}: applied and verified ({msg}); new text at line {line}")
     return 0
 
