@@ -259,6 +259,36 @@ EPISODES = {
         # EP61 recorded no settings at all, which is why neither can be compared to anything.
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
+    "PD-2026-064-memphis": {
+        # LOCKED script is v002. v001 is stale and must not be used: ML-60 (the Trigg line
+        # "A public utility should not be able to coerce a customer to pay a disputed claim")
+        # was deleted from v002 with no record and restored on 2026-08-04, and two writer-
+        # voice sentences were tightened in the same pass to stay inside the word ceiling.
+        "planning": "EP64_memphis_script.en.v002.md",
+        # FINISHED-RATE model, as EP62 and EP63 -- not a raw speech rate. The script derives
+        # its own section windows from 176 words per finished minute (script line 5).
+        # 5,403 narration words / 176 = 1842.2s (30:42), inside the contract band [1620,1920].
+        # EP62 has since MEASURED 169.1 w/finished-min at these settings, which would put this
+        # script at 1917s -- 3 seconds under the ceiling. Treat the ffprobe measurement as the
+        # answer and check it against 1920 before anything downstream is committed.
+        "design_speech_seconds": 1842.2,
+        "sections": SECTION_ORDER_5ACT,
+        # PINNED, identical to EP62 and EP63 so the three ARE comparable.
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-065-marmet": {
+        # LOCKED script is v002. Repaired 2026-08-05: two sentences reattributed from
+        # Brown I (2011) to Brown II (2012), L130-L144 rewritten at net zero words, and the
+        # ENDING's re-report of a disposition cut from 69 words to 30.
+        "planning": "EP65_marmet_script.en.v002.md",
+        # FINISHED-RATE model. Script line 7 derives every window from 176 w/finished-min.
+        # 5,133 narration words / 176 = 1749.9s (29:10), inside the contract band.
+        # At EP62's measured 169.1 this becomes 1821s -- still inside, with the most room of
+        # the four. This is the shortest script on the slate.
+        "design_speech_seconds": 1749.9,
+        "sections": SECTION_ORDER_5ACT,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
 }
 
 GAP_BEAT, GAP_SECTION = 0.30, 1.8          # EP52-shipped defaults

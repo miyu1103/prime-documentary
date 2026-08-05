@@ -370,7 +370,9 @@ Mary Craft telephoned after a final notice and said she had paid a bill, and the
 
 She was successful in working out a deferred-payment arrangement but apparently was unable to have the amount of the bills reduced. The record therefore indicates that Mrs. Craft did meet with Division employees having adequate authority but simply failed to persuade any of them that there was any error in her bills.
 
-And the sentence planted in ACT_1 comes back inverted. Mrs. Craft testified on direct examination that after being cut off she went to the Division's office with the record of her payments on one account. She was told that she had to pay on the other account as well. In other words, an official of the Division did resolve the Crafts' dispute, correctly as it turned out.
+【callback: the ACT_1 counter sentence returns here inverted — same office, same visit, the dissent reading it as the answer】
+
+Mrs. Craft testified on direct examination that after being cut off she went to the Division's office with the record of her payments on one account. She was told that she had to pay on the other account as well. In other words, an official of the Division did resolve the Crafts' dispute, correctly as it turned out.
 
 Same sentence. Same office. One reading calls it a brush-off. The other calls it the answer.
 
