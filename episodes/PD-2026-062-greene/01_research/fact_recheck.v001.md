@@ -3,7 +3,7 @@
 - Re-check date: 2026-08-04 JST
 - Status: **PASS_WITH_7_OPEN_ITEMS** — 2 QUARANTINED, 5 NEEDS SOURCE. **Not clear for render until §6 is closed.**
 - Episode: PD-2026-062-greene · *Greene v. Lindsey*, 456 U.S. 444 (1982)
-- Script under re-check: `episodes/_planning/EP62_greene_script.en.v004.md` (5,460 narration words)
+- Script under re-check: `episodes/_planning/EP62_greene_script.en.v003.md` (5,460 narration words)
 - Prior revision compared against: `episodes/_planning/EP62_greene_script.en.v002.md`
 - Ledger: `episodes/_planning/EP62_greene_FACTS_LEDGER.v001.md` (107 rows, 69 VERBATIM)
 - Primary source: `episodes/_planning/measurements/EP62_greene_RAW.md` (CourtListener cluster 110705 — Brennan majority, O'Connor dissent, 10 majority footnotes + 2 dissent footnotes, caption block)

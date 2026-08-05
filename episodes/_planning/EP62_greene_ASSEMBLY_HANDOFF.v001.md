@@ -41,7 +41,7 @@ episodes\PD-2026-062-greene\manifest.json                   ← target_duration_
 
 **台本と設計**
 ```
-episodes\_planning\EP62_greene_script.en.v004.md            ★ 確定版。v001/v002 は使わない
+episodes\_planning\EP62_greene_script.en.v003.md            ★ 確定版。v001/v002 は使わない
 episodes\_planning\EP62_greene_FILM_BIBLE.v001.md           ← なぜこの順で語るか
 episodes\_planning\EP62_greene_FACTS_LEDGER.v001.md         ← 事実の出所。✓/VERBATIM 以外は使用不可
 episodes\_planning\measurements\EP62_greene_RAW.md          ← 判決文の全文。引用の照合先はここ
@@ -243,8 +243,8 @@ EP62で機械的に潰した口語形の欠陥：`not only … but indeed` の�
 
 ```
 .venv\Scripts\python.exe scripts\check_episode_spec.py --slug greene
-.venv\Scripts\python.exe scripts\check_script_length.py episodes\_planning\EP62_greene_script.en.v004.md --lo 1620 --hi 1920
-.venv\Scripts\python.exe scripts\check_script_craft.py  episodes\_planning\EP62_greene_script.en.v004.md --ledger episodes\_planning\EP62_greene_FACTS_LEDGER.v001.md --words 5100 5600
+.venv\Scripts\python.exe scripts\check_script_length.py episodes\_planning\EP62_greene_script.en.v003.md --lo 1620 --hi 1920
+.venv\Scripts\python.exe scripts\check_script_craft.py  episodes\_planning\EP62_greene_script.en.v003.md --ledger episodes\_planning\EP62_greene_FACTS_LEDGER.v001.md --words 5100 5600
 .venv\Scripts\python.exe scripts\check_episode_inputs.py --slug greene
 .venv\Scripts\python.exe scripts\check_spec_satisfied.py --slug greene      # film.json 生成後
 .venv\Scripts\python.exe scripts\check_final_acceptance.py PD-2026-062-greene --render <mp4> --emit-receipt

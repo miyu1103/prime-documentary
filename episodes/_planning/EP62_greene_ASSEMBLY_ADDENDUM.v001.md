@@ -90,7 +90,7 @@ Codex は**1プロンプト＝1枚**で走るので、**前の枚を参照でき
 |---|---|
 | `episodes/PD-2026-062-greene/episode_spec.v001.json` | `mandatory_stills` の13件を新番号に差し替え、`G241` を追加して **224件**（`check_episode_spec.py --slug greene` = valid） |
 | `episodes/_planning/EP62_greene_CODEX_BATCH_A.v002.md` | 末尾に「★再発注」13枚＋`G240`（サムネ）＋`G241`（モチーフ状態1）= **241枚**。冗頭に現在の真実をまとめた★ブロックを立て、古い指示3件を撤回 |
-| `episodes/_planning/EP62_greene_script.en.v004.md` | L11 のモチーフ宣言と L357 の ENDING コールバックを `G227` / `G230` / `G231` に |
+| `episodes/_planning/EP62_greene_script.en.v003.md` | L11 のモチーフ宣言と L357 の ENDING コールバックを `G227` / `G230` / `G231` に |
 | `episodes/_planning/EP62_greene_FILM_BIBLE.v001.md` | マクロ・ループの記述を `G227` → 状態7 `G231` に訂正（旧記述の `G208→G209` は状態5→6で、そもそも誤りだった） |
 | `episodes/PD-2026-062-greene/04_scenes/thumb_prompts.v001.md` | 第4候補を `G226` → `G240` に。§4 を「発注済み・`mandatory_stills` に入れるな」に書き換え |
 | `EP62_greene_ASSEMBLY_HANDOFF.v001.md` | §3-4 とファイル一覧を新番号に |
