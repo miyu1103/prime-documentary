@@ -58,6 +58,11 @@ FLAT_SD, DETAIL_SD = 3.0, 9.0
 # every one where a person or a large object arrived. The three it misses (0.806, 0.862, 0.907)
 # need the eye; a box becoming a board is not visible to any of these numbers.
 PLATE_CORR_MIN = 0.78
+# A camera move on a still is what the owner rejected as kamishibai. The EP64 visual pass found
+# 11 of 110, and unlike everything else it found, this one is measurable: honest locked-off clips
+# return a shift of exactly (0,0) on every corner patch at every timestamp -- 56 of 110 did --
+# while the rejects ramp monotonically to 17, 24, 25, 28 and 33 pixels.
+CAMERA_SHIFT_MAX = 6.0        # pixels, measured at 640 wide
 PLATE_DIRS = {"greene": "greene", "correa": "correa", "memphis": "memphis", "marmet": "marmet"}
 
 
@@ -91,6 +96,35 @@ def local_sd(a: np.ndarray, k: int = 5) -> np.ndarray:
     return np.sqrt(np.maximum(m2 - m * m, 0))
 
 
+def corner_shift(a: np.ndarray, b: np.ndarray) -> float:
+    """Largest phase-correlation shift over the four corner patches, in pixels.
+
+    Corners, because a subject moving in the middle of frame is not the camera moving.
+    """
+    h, w = a.shape
+    ph, pw = h // 3, w // 3
+    worst = 0.0
+    for y0 in (0, h - ph):
+        for x0 in (0, w - pw):
+            pa = a[y0:y0 + ph, x0:x0 + pw]
+            pb = b[y0:y0 + ph, x0:x0 + pw]
+            pa = pa - pa.mean()
+            pb = pb - pb.mean()
+            if pa.std() < 1e-3 or pb.std() < 1e-3:
+                continue
+            fa = np.fft.rfft2(pa)
+            fb = np.fft.rfft2(pb)
+            cross = fa * np.conj(fb)
+            mag = np.abs(cross)
+            mag[mag < 1e-9] = 1e-9
+            r = np.fft.irfft2(cross / mag, s=pa.shape)
+            iy, ix = np.unravel_index(int(np.argmax(r)), r.shape)
+            dy = iy - ph if iy > ph // 2 else iy
+            dx = ix - pw if ix > pw // 2 else ix
+            worst = max(worst, float(np.hypot(dy, dx)))
+    return worst
+
+
 def plate_luma(slug: str, stem: str) -> np.ndarray | None:
     p = Path(f"H:/pd-media/assets/ai/{slug}/{stem}.png")
     if not p.is_file():
@@ -108,6 +142,12 @@ def measure(clip: Path, slug: str = "") -> dict:
     contrast = float(b.std() / a.std()) if a.std() > 1e-6 else 0.0
     sa, sb = local_sd(a), local_sd(b)
     gain = float(((sa < FLAT_SD) & (sb > DETAIL_SD)).mean() * 100)
+    shift = 0.0
+    for frac in (0.35, 0.70, 1.0):
+        t = min(max(0.2, d - 0.15), 0.10 + (d - 0.25) * frac)
+        m = grab(clip, t)
+        if m is not None and m.shape == a.shape:
+            shift = max(shift, corner_shift(a, m))
     pl = plate_luma(slug, clip.stem) if slug else None
     if pl is not None:
         small = np.asarray(Image.fromarray(b.astype("uint8")).resize((256, 144))).astype("float32")
@@ -126,11 +166,14 @@ def measure(clip: Path, slug: str = "") -> dict:
     if gain > DETAIL_GAIN_MAX:
         why.append(f"{gain:.1f}% of the frame gains detail it did not have -- text written onto "
                    f"blank paper, or objects arriving")
+    if shift > CAMERA_SHIFT_MAX:
+        why.append(f"the camera moves {shift:.0f}px -- these are meant to be locked off, and a "
+                   f"camera move on a still is the thing that was rejected as kamishibai")
     if corr == corr and corr < PLATE_CORR_MIN:
         why.append(f"the last frame no longer matches the plate (correlation {corr:.2f} < "
                    f"{PLATE_CORR_MIN}) -- it has drifted into a different picture")
     return {"clip": clip, "dur": d, "amp": amp, "drift": drift, "contrast": contrast,
-            "gain": gain, "corr": corr, "ok": not why, "why": "; ".join(why)}
+            "gain": gain, "corr": corr, "shift": shift, "ok": not why, "why": "; ".join(why)}
 
 
 def main() -> int:
