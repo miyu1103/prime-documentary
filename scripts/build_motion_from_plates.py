@@ -55,10 +55,17 @@ BATCH = {
 }
 
 W, H, LENGTH, STEPS = 832, 480, 49, 20
+# fog, bloom and light leaks are in here because they are what destroyed 33 percent of the first
+# strengthened batch: the model renders "light sweeping" and "dust in the beam" as atmosphere,
+# and the atmosphere eats the picture by the third second.
 NEG = ("static, motionless, still image, frozen, blurry, low quality, distorted, deformed, "
        "extra limbs, bad anatomy, morphing face, face, human face, facial features, text, "
        "lettering, numerals, handwriting, watermark, logo, flickering, jitter, warping, "
-       "camera shake, zoom, pan, dolly, crane, whip pan")
+       "camera shake, zoom, pan, dolly, crane, whip pan, "
+       "fog, haze, mist, smoke, steam, god rays, light shaft, volumetric light, lens flare, "
+       "bloom, glow, overexposure, blown highlights, brightening, darkening, light leak, "
+       "colour shift, exposure change, fade to white, fade to black, dissolve, "
+       "scene change, new objects appearing, objects vanishing")
 
 # What moves, keyed on what the plate's own prompt says is in the picture. First match wins.
 # The first pass asked for movement "very slightly" and "almost imperceptibly" and got a third
@@ -71,24 +78,26 @@ MOTION = [
     (r"\bhand|fingers|thumb|palm|wrist\b",
      "the hand moves, the fingers opening and closing their grip and the wrist turning, the arm "
      "shifting its weight"),
-    (r"\bchair|seat|bench|desk|counter|table\b",
-     "the light sweeps across the surface as a cloud passes, shadows lengthening and contracting, "
-     "dust turning through the beam"),
     (r"\bcurtain|window|blind|glass\b",
-     "the curtain billows inward on a gust and falls back, the light beyond it swinging as the "
-     "cloud moves, the blind swaying on its cord"),
-    (r"\bdoor|walkway|corridor|hallway|stairwell\b",
-     "light and shadow sweep along the surface as a cloud passes overhead, dust turning in the air, "
-     "a draught moving through the space"),
+     "the curtain billows inward on a draught and falls back again, its hem swinging, the blind "
+     "cord swaying"),
     (r"\bmeter|dial|telephone|handset|cord|machine|printer\b",
-     "the cord swings on its own weight and slowly stills, the light travelling over the metal"),
+     "the cord swings on its own weight, turning as it slows"),
     (r"\bstreet|road|yard|grass|tree|sky|cloud|field\b",
-     "the branches and grass sway in the wind, the cloud moving visibly across the sky, light "
-     "sweeping over the ground"),
+     "the branches bend and spring back in the wind and the grass moves in waves across the ground"),
+    (r"\bchair|seat|bench|desk|counter|table\b",
+     "loose paper on the surface lifts at one corner and settles again, a hanging cord or cloth "
+     "edge swinging a little"),
+    (r"\bdoor|walkway|corridor|hallway|stairwell\b",
+     "the door moves a few degrees on its hinge and stops, anything hanging nearby swaying on the "
+     "draught"),
 ]
-DEFAULT_MOTION = ("light and shadow move visibly across the frame as a cloud passes, dust turning "
-                  "in the air, a draught moving through the space")
-COMMON = (", continuous visible movement throughout the shot, unhurried and physical, "
+# Deliberately about a thing that moves, never about light. See the module docstring.
+DEFAULT_MOTION = ("small objects in the frame shift and settle, anything loose or hanging swaying "
+                  "gently, everything solid staying exactly where it is")
+COMMON = (", continuous visible movement of the objects themselves throughout the shot, "
+          "unhurried and physical, the exposure and the colour holding perfectly steady from the "
+          "first frame to the last, the room and its light unchanged, "
           "the camera locked off and completely static on a tripod, "
           "no camera movement of any kind, no zoom, no pan, photoreal, cinematic")
 
