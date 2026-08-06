@@ -85,16 +85,21 @@ MOTION = [
      "the cord swings on its own weight, turning as it slows"),
     (r"\bstreet|road|yard|grass|tree|sky|cloud|field\b",
      "the branches bend and spring back in the wind and the grass moves in waves across the ground"),
-    (r"\bchair|seat|bench|desk|counter|table\b",
-     "loose paper on the surface lifts at one corner and settles again, a hanging cord or cloth "
-     "edge swinging a little"),
-    (r"\bdoor|walkway|corridor|hallway|stairwell\b",
-     "the door moves a few degrees on its hinge and stops, anything hanging nearby swaying on the "
-     "draught"),
+    (r"\bwater|puddle|rain|kettle|steam\b",
+     "the water surface ripples and settles"),
+    (r"\bflame|candle|fire in a grate|smoke from\b",
+     "the flame leans and recovers"),
 ]
-# Deliberately about a thing that moves, never about light. See the module docstring.
-DEFAULT_MOTION = ("small objects in the frame shift and settle, anything loose or hanging swaying "
-                  "gently, everything solid staying exactly where it is")
+# Furniture and architecture used to be in this table -- a chair, a desk, a corridor -- borrowing
+# their motion from "loose paper on the surface" and "the door on its hinge". When the plate had no
+# paper and no door that could swing, the model supplied one. Those two rules were the catch-all in
+# disguise, and between them they matched nearly every interior, which is why removing only the
+# DEFAULT left 28 plates out of 198 as stills instead of the majority. They are gone.
+# There is no catch-all any more. A plate with nothing movable in it is left as a still: told to
+# produce movement in a frame where nothing can move, the model invents, and that is where the man
+# walking into the empty corridor came from. Measured: 14 percent of correa's clips survived visual
+# QC, against 36 on the two episodes whose plates carry paper, cord, cloth and foliage.
+DEFAULT_MOTION = None
 COMMON = (", continuous visible movement of the objects themselves throughout the shot, "
           "unhurried and physical, the exposure and the colour holding perfectly steady from the "
           "first frame to the last, the room and its light unchanged, "
@@ -159,7 +164,8 @@ def plate_prompts(slug: str) -> dict[str, str]:
     return out
 
 
-def motion_for(desc: str) -> str:
+def motion_for(desc: str) -> str | None:
+    """What moves in this plate, or None if nothing in it can."""
     low = desc.lower()
     for pat, mv in MOTION:
         if re.search(pat, low):
@@ -195,11 +201,12 @@ def main() -> int:
     # (a person who moves is a person the audience looks at, and these are deliberately faceless).
     todo = [p for p in mandatory
             if p not in people and (src / f"{p}.png").exists() and not (outdir / f"{p}.mp4").exists()]
-    todo = todo[:a.limit]
+    skipped_static = [p for p in todo if motion_for(prompts.get(p, "")) is None]
+    todo = [p for p in todo if motion_for(prompts.get(p, "")) is not None][:a.limit]
     have = len(list(outdir.glob("*.mp4")))
     print(f"[motion] {a.slug}: {have} clip(s) already built, {len(todo)} to make "
-          f"({W}x{H}, {LENGTH} frames, {STEPS} steps, about 6.2 min each "
-          f"= {len(todo)*6.2/60:.1f} h)")
+          f"({W}x{H}, {LENGTH} frames, {STEPS} steps, about 1 min each), "
+          f"{len(skipped_static)} plate(s) left as stills because nothing in them can move")
     if a.dry_run:
         for p in todo[:8]:
             print(f"   {p}: {motion_for(prompts.get(p, ''))}")
