@@ -48,6 +48,17 @@ CONTRAST_LO, CONTRAST_HI = 0.72, 1.40
 # sit between 5.4 and 13.6.
 DETAIL_GAIN_MAX = 3.5
 FLAT_SD, DETAIL_SD = 3.0, 9.0
+# Is the last frame still the plate? Everything above compares the clip to itself, which cannot
+# see a slow drift into another picture.
+#
+# Calibrated twice. A 23-clip hand-judged sample said 0.88, and against the full 501 that rejects
+# 47 percent -- the sample was too small and the metric also moves when a curtain simply billows,
+# so 0.88 was fitting noise. Measured over all 501: p5 0.612, p10 0.686, p25 0.799, median 0.890.
+# 0.78 rejects 22 percent and still catches seven of the ten clips judged bad by eye, including
+# every one where a person or a large object arrived. The three it misses (0.806, 0.862, 0.907)
+# need the eye; a box becoming a board is not visible to any of these numbers.
+PLATE_CORR_MIN = 0.78
+PLATE_DIRS = {"greene": "greene", "correa": "correa", "memphis": "memphis", "marmet": "marmet"}
 
 
 def probe_duration(clip: Path) -> float:
@@ -80,7 +91,14 @@ def local_sd(a: np.ndarray, k: int = 5) -> np.ndarray:
     return np.sqrt(np.maximum(m2 - m * m, 0))
 
 
-def measure(clip: Path) -> dict:
+def plate_luma(slug: str, stem: str) -> np.ndarray | None:
+    p = Path(f"H:/pd-media/assets/ai/{slug}/{stem}.png")
+    if not p.is_file():
+        return None
+    return np.asarray(Image.open(p).convert("L").resize((256, 144))).astype("float32")
+
+
+def measure(clip: Path, slug: str = "") -> dict:
     d = probe_duration(clip)
     a, b = grab(clip, 0.10), grab(clip, max(0.2, d - 0.15))
     if a is None or b is None:
@@ -90,6 +108,12 @@ def measure(clip: Path) -> dict:
     contrast = float(b.std() / a.std()) if a.std() > 1e-6 else 0.0
     sa, sb = local_sd(a), local_sd(b)
     gain = float(((sa < FLAT_SD) & (sb > DETAIL_SD)).mean() * 100)
+    pl = plate_luma(slug, clip.stem) if slug else None
+    if pl is not None:
+        small = np.asarray(Image.fromarray(b.astype("uint8")).resize((256, 144))).astype("float32")
+        corr = float(np.corrcoef(pl.ravel(), small.ravel())[0, 1])
+    else:
+        corr = float("nan")
     why = []
     if amp < AMP_MIN:
         why.append(f"barely moves (amplitude {amp:.1f} < {AMP_MIN})")
@@ -102,8 +126,11 @@ def measure(clip: Path) -> dict:
     if gain > DETAIL_GAIN_MAX:
         why.append(f"{gain:.1f}% of the frame gains detail it did not have -- text written onto "
                    f"blank paper, or objects arriving")
+    if corr == corr and corr < PLATE_CORR_MIN:
+        why.append(f"the last frame no longer matches the plate (correlation {corr:.2f} < "
+                   f"{PLATE_CORR_MIN}) -- it has drifted into a different picture")
     return {"clip": clip, "dur": d, "amp": amp, "drift": drift, "contrast": contrast,
-            "gain": gain, "ok": not why, "why": "; ".join(why)}
+            "gain": gain, "corr": corr, "ok": not why, "why": "; ".join(why)}
 
 
 def main() -> int:
@@ -119,7 +146,7 @@ def main() -> int:
         print(f"[motion] {a.slug}: no clips in {d}", file=sys.stderr)
         return 1
 
-    rows = [measure(c) for c in clips]
+    rows = [measure(c, a.slug) for c in clips]
     bad = [r for r in rows if not r["ok"]]
     amps = np.array([r["amp"] for r in rows if "amp" in r])
     drifts = np.array([r["drift"] for r in rows if "drift" in r])
@@ -127,7 +154,9 @@ def main() -> int:
     print(f"[motion] {a.slug}: {len(clips)} clip(s)  "
           f"amplitude median {np.median(amps):.1f} (band {AMP_MIN}-{AMP_MAX})  "
           f"luma drift median {np.median(drifts):.1f} (max {DRIFT_MAX})  "
-          f"detail gain median {np.median(gains):.2f}% (max {DETAIL_GAIN_MAX})")
+          f"detail gain median {np.median(gains):.2f}% (max {DETAIL_GAIN_MAX})  "
+          f"plate fidelity median {np.nanmedian([r.get(chr(99)+chr(111)+chr(114)+chr(114), float(chr(110)+chr(97)+chr(110))) for r in rows]):.3f} "
+          f"(min {PLATE_CORR_MIN})")
     for r in bad:
         print(f"  REJECT {r['clip'].stem}: {r['why']}")
     print(f"[motion] {a.slug}: {len(clips)-len(bad)} pass, {len(bad)} fail")
