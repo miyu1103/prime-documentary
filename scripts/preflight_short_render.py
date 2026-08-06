@@ -54,6 +54,12 @@ def main() -> int:
         pass
     ap = argparse.ArgumentParser()
     ap.add_argument("shorts", nargs="+", help="e.g. 132 133 134  or  100-120")
+    # The mirror exists to keep the bundle small, but --fix-mirror only ever ADDS, so after enough
+    # batches it held 175 Shorts and 58 GB - and bundling copies the whole thing, so a render died
+    # with ENOSPC needing 58 GB against 43 GB free. --prune-mirror drops the Shorts not in this
+    # batch; they are derived copies and --fix-mirror puts them back on demand.
+    ap.add_argument("--prune-mirror", action="store_true",
+                    help="remove mirrored Shorts outside this batch before syncing")
     ap.add_argument("--fix-mirror", action="store_true",
                     help="re-sync public_min from public/shorts instead of just reporting it")
     a = ap.parse_args()
@@ -106,6 +112,15 @@ def main() -> int:
             problems.append(f"{sid}: composition Short-{sid}-yt is not registered in Root.tsx")
         if f'"ShortThumb-{sid}"' not in rtx:
             problems.append(f"{sid}: cover Still ShortThumb-{sid} is not registered in Root.tsx")
+
+    if a.prune_mirror and MIRROR.is_dir():
+        keep = {f"short{n}" for n in want}
+        freed = 0
+        for d in [x for x in MIRROR.iterdir() if x.is_dir() and x.name not in keep]:
+            freed += sum(f.stat().st_size for f in d.rglob("*") if f.is_file())
+            shutil.rmtree(d)
+        if freed:
+            print(f"pruned {freed/1e9:.1f} GB of mirrored Shorts outside this batch")
 
     if stale_mirror:
         if a.fix_mirror:

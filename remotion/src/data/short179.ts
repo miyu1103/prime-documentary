@@ -60,7 +60,6 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p37', src: 'shorts/short179/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // the history the dissent went back to
   {line: 'L7', id: 'p38', src: 'shorts/short179/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // years of it, changing almost nothing
   {line: 'L7', id: 'p39', src: 'shorts/short179/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // the record of every one of them
-  {line: 'L7', id: 'p40', src: 'shorts/short179/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // what all that changed
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -110,4 +109,11 @@ export const SHORT179: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short179.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short179/short179_kin_a.webm', atSec: 25.56, durSec: 2.3, phrase: "NO REMEDY NO RULE"},
+    {src: 'shorts/short179/short179_kin_b.webm', atSec: 41.6, durSec: 2.0, phrase: "4 / VOTES ONLY"},
+  ],
 };

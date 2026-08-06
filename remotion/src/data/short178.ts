@@ -55,6 +55,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p31', src: 'shorts/short178/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // the circuits, side by side
   {line: 'L6', id: 'p32', src: 'shorts/short178/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // one of them going the other way
   {line: 'L6', id: 'p33', src: 'shorts/short178/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // the split, in one picture
+  {line: 'L6', id: 'p35', src: 'shorts/short178/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // the cases she pulled together
   {line: 'L7', id: 'p36', src: 'shorts/short178/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // two petitions waiting
   {line: 'L7', id: 'p37', src: 'shorts/short178/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // the conference room they go to
   {line: 'L7', id: 'p38', src: 'shorts/short178/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // the date they were set for
@@ -107,4 +108,11 @@ export const SHORT178: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short178.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short178/short178_kin_a.webm', atSec: 26.92, durSec: 2.3, phrase: "FURTHER PERCOLATION"},
+    {src: 'shorts/short178/short178_kin_b.webm', atSec: 35.62, durSec: 2.3, phrase: "NO LEGAL WEIGHT"},
+  ],
 };

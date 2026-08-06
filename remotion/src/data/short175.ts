@@ -42,6 +42,7 @@ const CUTS: Cut[] = [
   {line: 'L4', id: 'p18', src: 'shorts/short175/short175_18.png', kind: 'image', motion: 'pushin'},   // the tape running on the spoken lie
   {line: 'L4', id: 'p19', src: 'shorts/short175/short175_19.png', kind: 'image', motion: 'parallax'},   // the blank page feeding out of the platen
   {line: 'L4', id: 'p20', src: 'shorts/short175/short175_20.png', kind: 'image', motion: 'kenburns'},   // the report torn in two on the floor
+  {line: 'L4', id: 'p21', src: 'shorts/short175/fx/fx_21.mp4', kind: 'video', motion: 'video'},   // the drawer the fakes were filed in
   {line: 'L4', id: 'p22', src: 'shorts/short175/short175_22.png', kind: 'image', motion: 'parallax'},   // the agency door the lie borrowed
   {line: 'L8', id: 'p23', src: 'shorts/short175/short175_04.png', kind: 'image', motion: 'parallax'},   // return to the hook - replay of the opening framing (1)
   {line: 'L8', id: 'p24', src: 'shorts/short175/short175_03.png', kind: 'image', motion: 'pushin'},   // return to the hook - replay of the opening framing (2)
@@ -107,4 +108,11 @@ export const SHORT175: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short175.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short175/short175_kin_a.webm', atSec: 31.67, durSec: 2.3, phrase: "THEY MAY SAY IT NOT PRINT IT"},
+    {src: 'shorts/short175/short175_kin_b.webm', atSec: 35.71, durSec: 2.3, phrase: "A DOCUMENT THAT WAS FALSE"},
+  ],
 };

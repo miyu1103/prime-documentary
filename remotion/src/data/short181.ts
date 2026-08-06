@@ -50,6 +50,7 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p26', src: 'shorts/short181/fx/fx_26.mp4', kind: 'video', motion: 'video'},   // the cell the rule is about
   {line: 'L5', id: 'p29', src: 'shorts/short181/fx/fx_29.mp4', kind: 'video', motion: 'video'},   // the bills that kept arriving
   {line: 'L5', id: 'p30', src: 'shorts/short181/fx/fx_30.mp4', kind: 'video', motion: 'video'},   // the door that closes if nobody asks
+  {line: 'L6', id: 'p31', src: 'shorts/short181/fx/fx_31.mp4', kind: 'video', motion: 'video'},   // the weighing the court has to do
   {line: 'L6', id: 'p32', src: 'shorts/short181/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // the punishment short of a cell
   {line: 'L6', id: 'p33', src: 'shorts/short181/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // community work instead of prison
   {line: 'L6', id: 'p34', src: 'shorts/short181/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // the notice that arrives at home
@@ -108,4 +109,11 @@ export const SHORT181: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short181.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short181/short181_kin_a.webm', atSec: 21.19, durSec: 2.0, phrase: "1983 / HE WON"},
+    {src: 'shorts/short181/short181_kin_b.webm', atSec: 33.23, durSec: 2.3, phrase: "REFUSED TO PAY OR COULD NOT"},
+  ],
 };

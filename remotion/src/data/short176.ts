@@ -55,6 +55,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p32', src: 'shorts/short176/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // where those years were served
   {line: 'L6', id: 'p33', src: 'shorts/short176/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // the stairs walked every day of them
   {line: 'L6', id: 'p34', src: 'shorts/short176/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // the calls home across sixteen years
+  {line: 'L6', id: 'p35', src: 'shorts/short176/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // the day the 257th walked out
   {line: 'L7', id: 'p36', src: 'shorts/short176/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // four thousand years, laid end to end
   {line: 'L7', id: 'p37', src: 'shorts/short176/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // time, counted out loud
   {line: 'L7', id: 'p38', src: 'shorts/short176/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // two hundred and fifty-seven people
@@ -109,4 +110,11 @@ export const SHORT176: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short176.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short176/short176_kin_a.webm', atSec: 28.2, durSec: 2.3, phrase: "NO STATE FORBIDS THE LIE"},
+    {src: 'shorts/short176/short176_kin_b.webm', atSec: 43.86, durSec: 2.3, phrase: "257 CASES 16 YEARS EACH"},
+  ],
 };

@@ -56,9 +56,12 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p32', src: 'shorts/short180/fx/fx_32.mp4', kind: 'video', motion: 'video'},   // the floor where that call was made
   {line: 'L6', id: 'p33', src: 'shorts/short180/fx/fx_33.mp4', kind: 'video', motion: 'video'},   // the office, in ordinary daylight
   {line: 'L6', id: 'p34', src: 'shorts/short180/fx/fx_34.mp4', kind: 'video', motion: 'video'},   // who was allowed in the room
+  {line: 'L6', id: 'p35', src: 'shorts/short180/fx/fx_35.mp4', kind: 'video', motion: 'video'},   // the decision the court handed away
   {line: 'L7', id: 'p36', src: 'shorts/short180/fx/fx_36.mp4', kind: 'video', motion: 'video'},   // the lawyer who was never mentioned
   {line: 'L7', id: 'p37', src: 'shorts/short180/fx/fx_37.mp4', kind: 'video', motion: 'video'},   // the place nobody spoke from
+  {line: 'L7', id: 'p38', src: 'shorts/short180/fx/fx_38.mp4', kind: 'video', motion: 'video'},   // the room these hearings happened in
   {line: 'L7', id: 'p39', src: 'shorts/short180/fx/fx_39.mp4', kind: 'video', motion: 'video'},   // the seat beside them, empty
+  {line: 'L7', id: 'p40', src: 'shorts/short180/fx/fx_40.mp4', kind: 'video', motion: 'video'},   // leaving with no idea what was owed
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -108,4 +111,11 @@ export const SHORT180: ShortData = {
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
   beats: buildBeats(),
+  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/short180.json) and installed
+  // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
+  // verbatim from the narration line each beat sits on.
+  kineticBeats: [
+    {src: 'shorts/short180/short180_kin_a.webm', atSec: 28.68, durSec: 2.3, phrase: "100 COURTS 38,000 PEOPLE"},
+    {src: 'shorts/short180/short180_kin_b.webm', atSec: 37.11, durSec: 2.3, phrase: "THEIR RUIN ITS REVENUE"},
+  ],
 };
