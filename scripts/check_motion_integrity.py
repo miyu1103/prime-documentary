@@ -63,6 +63,12 @@ PLATE_CORR_MIN = 0.78
 # return a shift of exactly (0,0) on every corner patch at every timestamp -- 56 of 110 did --
 # while the rejects ramp monotonically to 17, 24, 25, 28 and 33 pixels.
 CAMERA_SHIFT_MAX = 6.0        # pixels, measured at 640 wide
+# Every measurement above used to compare the first frame with the last, which cannot see a defect
+# that arrives and leaves. EP65 R010 begins and ends on empty floor and at 2.4s a trouser leg and
+# a brown shoe walk through it; R072 is two legs at a linen cart, mid-clip only. So sample across
+# the clip and take the WORST: a clip is only as good as its worst frame, because that frame is
+# going into the film.
+SAMPLE_FRACTIONS = (0.0, 0.25, 0.5, 0.75, 1.0)
 PLATE_DIRS = {"greene": "greene", "correa": "correa", "memphis": "memphis", "marmet": "marmet"}
 
 
@@ -137,11 +143,22 @@ def measure(clip: Path, slug: str = "") -> dict:
     a, b = grab(clip, 0.10), grab(clip, max(0.2, d - 0.15))
     if a is None or b is None:
         return {"clip": clip, "ok": False, "why": "unreadable"}
+    # every sampled frame, not just the last
+    frames = []
+    for f in SAMPLE_FRACTIONS:
+        t = 0.10 + max(0.0, d - 0.25) * f
+        m = grab(clip, min(t, max(0.2, d - 0.15)))
+        if m is not None and m.shape == a.shape:
+            frames.append(m)
+    if not frames:
+        frames = [b]
     amp = float(np.abs(a - b).mean())
-    drift = float(abs(b.mean() - a.mean()))
-    contrast = float(b.std() / a.std()) if a.std() > 1e-6 else 0.0
-    sa, sb = local_sd(a), local_sd(b)
-    gain = float(((sa < FLAT_SD) & (sb > DETAIL_SD)).mean() * 100)
+    drift = max(float(abs(m.mean() - a.mean())) for m in frames)
+    ratios = [float(m.std() / a.std()) if a.std() > 1e-6 else 0.0 for m in frames]
+    contrast = min(ratios, key=lambda r: abs(r - 1.0)) if False else (
+        max(ratios, key=lambda r: abs(r - 1.0)))
+    sa = local_sd(a)
+    gain = max(float(((sa < FLAT_SD) & (local_sd(m) > DETAIL_SD)).mean() * 100) for m in frames)
     shift = 0.0
     for frac in (0.35, 0.70, 1.0):
         t = min(max(0.2, d - 0.15), 0.10 + (d - 0.25) * frac)
@@ -150,8 +167,11 @@ def measure(clip: Path, slug: str = "") -> dict:
             shift = max(shift, corner_shift(a, m))
     pl = plate_luma(slug, clip.stem) if slug else None
     if pl is not None:
-        small = np.asarray(Image.fromarray(b.astype("uint8")).resize((256, 144))).astype("float32")
-        corr = float(np.corrcoef(pl.ravel(), small.ravel())[0, 1])
+        cs = []
+        for m in frames:
+            small = np.asarray(Image.fromarray(m.astype("uint8")).resize((256, 144))).astype("float32")
+            cs.append(float(np.corrcoef(pl.ravel(), small.ravel())[0, 1]))
+        corr = min(cs)                      # the worst frame is the one that ships
     else:
         corr = float("nan")
     why = []
