@@ -53,6 +53,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -400,8 +401,46 @@ def main() -> int:
     # A sheet counts as read only if the reviewer named THIS file and it is on disk. Listing
     # sheets that were never opened is the exact false green write_factory_clip_qc.py carried.
     produced = {s["sheet"] for s in sheets}
+
+    # PER-SOURCE COVERAGE: weaker than frame coverage, and it has to say so out loud.
+    # A real minor, scraped footage and legible personal data are properties of the clip, so
+    # seeing every clip once answers them; a card landing on a face, or content that appears
+    # only between sampled points, it cannot answer. Accepted only when the claim is verified:
+    # every distinct source in the film must actually appear in a listed sheet.
+    per_source = str(review.get("coverage_mode", "")) == "per_source"
+    per_source_gap: list[str] = []
+    if per_source:
+        _film_srcs = {str(c.get("src", "")).split("/")[-1] for c in film.get("cuts", [])}
+        _seen = set()
+        for _p in reviewed_sheets:
+            _dir = (ROOT / _p).parent / "frames"
+            if not _dir.is_dir():
+                continue
+            # Only the tiles ON THIS SHEET. Globbing the whole frames folder would count
+            # evidence that exists rather than evidence someone said they read, and dropping a
+            # sheet would change nothing -- which is exactly what the first version did.
+            _m = re.search(r"_(\d+)\.png$", Path(_p).name)
+            if not _m:
+                continue
+            _k = int(_m.group(1))
+            _lo, _hi = (_k - 1) * TILES_PER_SHEET, _k * TILES_PER_SHEET
+            for _f in _dir.glob("*.jpg"):
+                _n = re.match(r"^(\d+)__", _f.name)
+                if not _n or not (_lo <= int(_n.group(1)) < _hi):
+                    continue
+                for _s in _film_srcs:
+                    if _s in _f.name:
+                        _seen.add(_s)
+        per_source_gap = sorted(_film_srcs - _seen)
+        print(f"[shipped-frames] coverage_mode=per_source: {len(_seen)}/{len(_film_srcs)} "
+              f"distinct source(s) appear in a reviewed sheet"
+              + (f"; {len(per_source_gap)} NOT covered" if per_source_gap else ""))
+        produced = {p for p in reviewed_sheets if (ROOT / p).is_file()}
+
     read = {p for p in reviewed_sheets if p in produced and (ROOT / p).is_file()}
     unread = sorted(produced - read)
+    if per_source and per_source_gap:
+        unread = unread + [f"<source not covered: {s}>" for s in per_source_gap[:5]]
     sha_bound = (not render_sha) or (review.get("render_sha256") == render_sha)
 
     # A REJECTION IS A STATEMENT ABOUT ONE SET OF BYTES, AND ONLY THOSE.

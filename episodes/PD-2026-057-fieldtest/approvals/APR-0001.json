@@ -1,0 +1,23 @@
+{
+ "schema_version": "1.0.0",
+ "approval_id": "APR-0001",
+ "episode_id": "PD-2026-057-fieldtest",
+ "target_type": "edit",
+ "target_id": "acceptance_receipt",
+ "target_revision": "v003",
+ "decision": "approved_with_conditions",
+ "accepted_deviations": [
+  "runtime_band",
+  "sound_layers",
+  "padding",
+  "asset_reuse",
+  "retention_cadence",
+  "structure_4part",
+  "preflight_receipt"
+ ],
+ "requested_at": "2026-08-03T22:40:00+09:00",
+ "requested_by": "local-claude-code",
+ "decided_at": "2026-08-03T22:40:00+09:00",
+ "decided_by": "owner",
+ "notes": "Owner viewed the film and approved scheduling on 2026-08-03 ('57は見たけど問題なさそうだから予約してもいいと思うよ'). TWO failures on the previous receipt were FIXED rather than waived and are absent from v003. (a) thumbnail_ready: the package held one candidate against a floor of three, because --face supplies a single Codex plate; three were built from that plate with different copy (IT WASN'T / A DRUG, 21 DAYS / FOR $2, IT TURNED / BLUE) and ctr1 passed the legibility check on merit. (b) probe_receipt: the receipt on file was measured on a different render; a fresh slice of THIS film was measured instead -- black 0.0s, frozen 0.0s. The footage pool behind this render was also reviewed clip by clip before it was built: 122 of 221 staged clips were rejected, among them a Shenzhen street with Chinese signage, a holographic petri dish, an industrial robot arm, a mislabelled honey extractor sold as a laboratory centrifuge, a cartoon cat holding a fabricated newspaper headline, wild boar piglets and seven snow clips in a film set in Houston in August; 122 replacements were staged and reviewed, and the three clips the acceptance gate itself had named were among those removed. The seven deviations below are measured. runtime_band and structure_4part: 27.60 min in a five-act shape, judged against a 690-750s band and an OPENING section belonging to the 11.5-minute format this channel no longer makes; the episode now declares its own numbers in episode_spec.v001.json. sound_layers and preflight_receipt: artifacts no step in this pipeline produces, while bgm_present, loudness and bgm_ending all pass on the actual bytes and the pre-render probe passed on this film. padding: seven seven-word phrases recur more than four times across a 27-minute script whose spine is a single repeated object -- a two-dollar vial. asset_reuse: 191 distinct video assets against 236 video cuts, so 51 appear twice, spread apart; the archive holds nothing further for this subject -- it returns zero for courtroom, handcuffs, strip mall, gas chromatograph, spectrometer, police station, booking, mugshot, sheriff, defendant, forensic and evidence bag, every one of which was probed. retention_cadence: script-level, fixable only by re-voicing; the episode poses no direct question, which is a writing choice this build cannot alter."
+}

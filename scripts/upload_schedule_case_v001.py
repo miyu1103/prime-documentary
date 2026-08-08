@@ -343,17 +343,17 @@ CONFIG = {
     "flowers": {
         "ep": "PD-2026-054-flowers",
         "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-054-flowers/08_edit/flowers_final_bgm.v001.mp4",
-        "sched_local": "2026-08-08T12:00:00+09:00",
-        "sched_utc": "2026-08-08T03:00:00Z",
+        "sched_local": "2026-08-10T12:00:00+09:00",
+        "sched_utc": "2026-08-10T03:00:00Z",
         "title": '6 Trials. 4 Death Sentences. 23 Years. The Same Prosecutor Every Time.',
         "description": 'On the morning of July 16, 1996, four people were shot in the head inside Tardy Furniture in Winona, Mississippi: Bertha Tardy, 59, the owner; Carmen Rigby, 45, who kept the books; Robert Golden, 42; and Derrick "Bobo" Stewart, 16, hired days earlier, who fought for six days before he died. No murder weapon was ever found. There was no eyewitness to the crime, no fingerprint that answered the question, and no confession.\n\nWithin days, investigators fixed on Curtis Flowers — 26 years old, a gospel singer in his family\'s group, with no criminal record of any kind. He had briefly worked at the store and been let go about two weeks before the murders over roughly thirty dollars from his paycheck. He was arrested in January 1997, and he said from the first day that he had nothing to do with it.\n\nDistrict Attorney Doug Evans tried him six times for the same four murders. Trial one, in 1997, was heard by twelve white jurors in a case pulled from a county that is nearly half Black: conviction, death sentence, reversed in 2000 for prosecutorial misconduct. Trial two, in 1999: conviction, death sentence, reversed in 2003 for misconduct again. Trial three, in 2004: conviction, death sentence, reversed in 2007 because the Mississippi Supreme Court found Evans had used his strikes to remove Black citizens from the jury because they were Black — "as strong a prima facie case of racial discrimination as we have ever seen."\n\nTrials four and five hung. When trial five ended in a mistrial in 2008, the lone Black holdout juror, James Bibbs, was handcuffed in open court and charged with perjury by Evans\' office; the state attorney general\'s office took the case away and dropped it. Trial six, in June 2010, was heard by eleven white jurors and one Black juror, and produced a fourth death sentence.\n\nThe only direct evidence in any of it was Odell Hallmon, who testified in four trials that Flowers had confessed to him in jail. In 2016 Hallmon murdered three people and pleaded guilty about two weeks later. In 2018, on a recorded prison line with APM Reports\' In the Dark, he said of the jailhouse confession: "That was a lie." The same reporters pulled jury records from courthouse storerooms across Evans\' district — more than 6,700 jurors across 225 trials — and found his office struck Black prospective jurors at nearly 4.5 times the rate it struck white ones.\n\nOn June 21, 2019, the U.S. Supreme Court reversed the sixth conviction, 7 to 2. In the six trials combined, the Court wrote, the state used its strikes against "41 of the 42 black prospective jurors that it could have struck." "The numbers speak loudly." In December 2019 Flowers left jail on bail at 49, having entered custody at 26. Evans recused himself, and on September 4, 2020, Mississippi dropped every charge, with prejudice.\n\nMississippi\'s statute pays $50,000 for each lost year, capped at ten years; in March 2021 a judge awarded Flowers the maximum, $500,000, for nearly 23 years. Doug Evans was never charged and never disciplined. In November 2022 the district that had employed him for three decades refused, 70 to 30, to make him a judge. In March 2025 an attorney-discipline official petitioned the Mississippi Supreme Court to suspend his law license; that question is still open. The murders of Bertha Tardy, Carmen Rigby, Robert Golden and Derrick Stewart remain officially unsolved.\n\nSome imagery in this film is AI-assisted, symbolic and illustrative only. It is not authentic archival footage, and no real person\'s likeness is shown.\n\nSources include: Flowers v. Mississippi (U.S. Supreme Court, 2019); the Mississippi Supreme Court\'s reversal opinions of 2000, 2003 and 2007; APM Reports\' In the Dark, Season 2, and its 225-trial jury-strike study; Mississippi Today; Associated Press and NPR reporting; and the Death Penalty Information Center.\n\n#CurtisFlowers #JurySelection #WrongfulConviction',
         "tags": ['Curtis Flowers', 'Flowers v Mississippi', 'Doug Evans', 'Batson v Kentucky', 'jury selection', 'peremptory strikes', 'In the Dark podcast', 'wrongful conviction', 'death row', 'Winona Mississippi', 'Mississippi Supreme Court', 'Odell Hallmon', 'six trials', 'prosecutorial misconduct', 'criminal justice', 'documentary'],
     },
     "postoffice": {
         "ep": "PD-2026-056-postoffice",
-        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-056-postoffice/08_edit/postoffice_final_bgm.v002.mp4",
-        "sched_local": "2026-08-10T12:00:00+09:00",
-        "sched_utc": "2026-08-10T03:00:00Z",
+        "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-056-postoffice/08_edit/postoffice_final_bgm.v001.mp4",
+        "sched_local": "2026-08-13T12:00:00+09:00",
+        "sched_utc": "2026-08-13T03:00:00Z",
         "title": 'A Computer Invents a £2,000 Debt. Her Own Employer Prosecutes Her. 236 Go to Prison.',
         "description": 'In 2003, in a Hampshire village shop, sub-postmistress Jo Hamilton watched her computer invent a debt in front of her. The screen said two thousand pounds was missing from her post-office till — money she had never seen. She rang the helpline and followed its instructions, and while she was on the line the missing two thousand became four. She remortgaged her house to pay it. Her employer prosecuted her anyway.\n\nThe system was Horizon, built by the British firm ICL under its Japanese owner, Fujitsu, and rolled out to every branch counter in the country from 1999. Under their contracts, sub-postmasters were personally liable for the losses their accounts showed, and the court that later examined the system found it offered them no way to dispute Horizon\'s own figures. The helpline\'s answer never changed: no one else is having this problem, you are the only one. The public inquiry heard that same sentence described by sub-postmaster after sub-postmaster.\n\nIn England and Wales any company may bring a private prosecution, and the Post Office did so on an industrial scale — investigating, charging and prosecuting its own sub-postmasters, roughly 700 of them between 1999 and 2015, about one a week for a decade and a half. Jo Hamilton pleaded guilty to false accounting after the Post Office\'s own investigators had reported, in writing, that there was no evidence of theft. Noel Thomas, a Welsh postman with 42 years of service, went to prison over a shortfall that never existed and turned sixty inside. Lee Castleton, who refused to accept a phantom debt of around twenty-five thousand pounds, was taken to the High Court, represented himself, lost, and was bankrupted by a costs bill of £321,000. On 11 November 2010 — her son\'s tenth birthday — Seema Misra was sent to prison for fifteen months. She was eight weeks pregnant.\n\nEleven weeks before Misra\'s jury returned, an internal Post Office report had already set out the price of the truth: any independent investigation of Horizon would have to be disclosed in court, and "any perception that POL doubts its own systems would mean that all criminal prosecutions would have to be stayed." In July 2013 the Post Office\'s own barrister advised that the expert evidence underpinning years of prosecutions was unreliable, and weeks later recorded that minutes of the weekly Horizon-defect calls "should be, and have been, destroyed: the word \'shredded\' was conveyed to me."\n\nAlan Bates had put £65,000 into a branch on the North Wales coast in 1998, refused to sign for losses he could not verify, and kept every receipt. Sacked in 2003, he hired a village hall in Fenny Compton in November 2009 and invited whoever else was out there. A couple of dozen strangers walked in, each of them told for years that they were the only one. In 2017, 555 sub-postmasters sued in a group action. In December 2019 Mr Justice Fraser found Legacy Horizon "not remotely robust," described the Post Office\'s stance as "the 21st century equivalent of maintaining that the earth is flat," and found that remote access to branch accounts "does exist." The 555 settled for £57.75 million; after the litigation funders and lawyers were paid, roughly £12 million was left between them — about £20,000 each.\n\nOn 23 April 2021 the Court of Appeal quashed 39 convictions, finding that "POL knew that there were serious issues about the reliability of Horizon" and that its failures were "so egregious as to make the prosecution of any of the \'Horizon cases\' an affront to the conscience of the court." Roughly nine hundred convictions still stood. After an ITV drama in January 2024 was watched by close to ten million people in a week, Parliament passed the Post Office (Horizon System) Offences Act 2024: "Every conviction to which this Act applies is quashed on the coming into force of this Act." The inquiry\'s 2025 report found roughly a thousand people were prosecuted and convicted on Horizon evidence and about ten thousand are now eligible for redress; by the BBC\'s count, 236 of them went to prison; at least thirteen deaths have been linked to the scandal, a figure the inquiry says may be higher.\n\nAs of the summer of 2026, about £1.6 billion has been paid to more than 12,900 claimants, no one has been convicted of anything for doing this, and Horizon is still on the counters of Britain\'s post offices under a Fujitsu contract extended to 2027.\n\nSome imagery in this film is AI-assisted, symbolic and illustrative only. It is not authentic archival footage, and no real person\'s likeness is shown.\n\nSources include: the Post Office Horizon IT Inquiry\'s Final Report Volume 1 by Sir Wyn Williams; Bates and Others v Post Office Ltd (No 6) [2019] EWHC 3408 (QB); Hamilton and Others v Post Office Ltd [2021] EWCA Crim 577; the Post Office (Horizon System) Offences Act 2024; Hansard; Ministry of Justice quashed-conviction management information and gov.uk redress data; the Second Sight interim report of 2013.e',
         "tags": ['Post Office scandal', 'Horizon scandal', 'Post Office Horizon', 'sub-postmasters', 'Alan Bates', 'Fujitsu Horizon', 'Bates v Post Office', 'Post Office Inquiry', 'Jo Hamilton', 'Seema Misra', 'wrongful conviction', 'private prosecution', 'miscarriage of justice', 'Mr Bates vs the Post Office', 'criminal justice', 'documentary'],
@@ -621,6 +621,10 @@ def main(argv):
     ap = argparse.ArgumentParser()
     ap.add_argument("--ep", required=True, choices=sorted(CONFIG))
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--replaces", metavar="VIDEO_ID",
+                    help="this upload supersedes VIDEO_ID, whose bytes cannot be replaced in "
+                         "place. VIDEO_ID must exist on this channel and must already be "
+                         "private with no publishAt, or this refuses.")
     args = ap.parse_args(argv)
     cfg = CONFIG[args.ep]
     slug = args.ep
@@ -640,6 +644,17 @@ def main(argv):
     _dels = sorted(PKG.glob("final_delivery.v*.json"))
     DELIVERY = _dels[-1] if _dels else PKG / "final_delivery.v001.json"
     RESULT = PKG / "youtube_schedule_result.v001.json"
+    # A SUPERSEDING UPLOAD IS A NEW REVISION, NOT AN OVERWRITE.
+    # The v001 receipt records which bytes went up the first time; that record is what makes it
+    # possible to say later which film the public actually saw. Rewriting it would destroy the
+    # only evidence that the first upload was different.
+    if getattr(args, "replaces", None):
+        _n = 2
+        while (PKG / f"youtube_schedule_result.v{_n:03d}.json").exists():
+            _n += 1
+        RESULT = PKG / f"youtube_schedule_result.v{_n:03d}.json"
+        print(f"[supersede] receipt -> {RESULT.name} (v001 kept as the record of "
+              f"{args.replaces})")
 
     # A 401 in the middle of the run used to leave the file uploaded but unfinished, and a
     # re-run then uploaded a SECOND copy (EP53 shipped twice on 2026-08-01). Refuse to start
@@ -673,9 +688,28 @@ def main(argv):
             f"re-run when the API is reachable, or check the channel by hand first.")
     for _it in _mine.get("items", []):
         if _it["snippet"]["title"].strip() == cfg["title"].strip():
+            _vid = _it["id"]["videoId"]
+            # A RE-RENDER IS NOT A DUPLICATE -- but only if the old one is really standing down.
+            if getattr(args, "replaces", None) == _vid:
+                _st = get_state(_fresh_token(), _vid)
+                _items = (_st or {}).get("items") or []
+                if not _items:
+                    raise SystemExit(f"--replaces {_vid}: no such video on this channel")
+                _s = _items[0].get("status") or {}
+                if _s.get("privacyStatus") != "private" or _s.get("publishAt"):
+                    raise SystemExit(
+                        f"--replaces {_vid}: it is {_s.get('privacyStatus')} with "
+                        f"publishAt={_s.get('publishAt')}. Take it off the calendar first "
+                        f"(scripts/pause_schedule.py --video {_vid}) -- otherwise both copies "
+                        f"publish, which is the accident this guard exists to stop.")
+                print(f"OK supersede: {_vid} is private with no publishAt; uploading the "
+                      f"corrected render in its place")
+                break
             raise SystemExit(
-                f"REFUSING duplicate: {_it['id']['videoId']} already carries this exact title. "
-                f"Finish it with scripts/finalize_uploaded_video.py instead of uploading again.")
+                f"REFUSING duplicate: {_vid} already carries this exact title. "
+                f"Finish it with scripts/finalize_uploaded_video.py instead of uploading again, "
+                f"or -- if this is a corrected re-render and {_vid} is already off the calendar "
+                f"-- re-run with --replaces {_vid}.")
     print(f"OK duplicate pre-check: no existing video titled {cfg['title'][:48]!r}")
 
     if RESULT.exists():
