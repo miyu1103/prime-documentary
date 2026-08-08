@@ -348,6 +348,30 @@ def theme_source_unusable(theme: str, source: str) -> bool:
     return (theme, source) in _VERDICTS
 
 
+_MEETING = None
+
+
+def is_meeting_recording(title: str) -> bool:
+    """True for a gavel-to-gavel recording of a proceeding — council session, hearing,
+    sermon. Unusable as b-roll at any length: a fixed camera on a dais for two hours.
+
+    Shares its word list with scripts/purge_meeting_recordings.py so the rule that deletes
+    and the rule that blocks stay identical. Checked before download, so there is no byte
+    count yet and the purge tool's size floor is not applied here."""
+    global _MEETING
+    if _MEETING is None:
+        try:
+            sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+            from purge_meeting_recordings import MEETING_TERMS, STRONG
+            _MEETING = tuple(MEETING_TERMS) + tuple(STRONG)
+        except Exception:
+            _MEETING = ()
+    if not _MEETING:
+        return False
+    t = " " + " ".join((title or "").lower().split()) + " "
+    return any(k in t for k in _MEETING)
+
+
 def reject_log(source: str, item_id: str, theme: str, reason: str,
                score: int = -1, matched=None, negs=None, title: str = "") -> None:
     """Per-item rejects log (skipped items do NOT enter the main ledger).
@@ -1036,6 +1060,9 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
         return False
     if theme_source_unusable(theme, source):
         reject_log(source, item_id, theme, "owner-verdict-unusable", title=title)
+        return False
+    if is_meeting_recording(title):
+        reject_log(source, item_id, theme, "meeting-recording", title=title)
         return False
     ACTIVITY += 1
     if f"{source}:{item_id}".lower() in ledger.existing_ids:

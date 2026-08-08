@@ -978,6 +978,17 @@ def theme_source_unusable(theme: str, source: str) -> bool:
     return (theme, source) in _VERDICTS
 
 
+def _meeting_recording(title: str) -> bool:
+    """Same rule as the other lanes; see ingest_archive_sources.is_meeting_recording."""
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from purge_meeting_recordings import MEETING_TERMS, STRONG
+    except Exception:
+        return False
+    t = " " + " ".join((title or "").lower().split()) + " "
+    return any(k in t for k in tuple(MEETING_TERMS) + tuple(STRONG))
+
+
 def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: str,
          download_url: str, kind: str, theme: str, license_raw: str, decision: str,
          default_ext: str, dry_run: bool, desc: str = "",
@@ -989,6 +1000,9 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
         return False
     if theme_source_unusable(theme, source):
         reject_log(source, item_id, theme, "owner-verdict-unusable", title=title)
+        return False
+    if _meeting_recording(title):
+        reject_log(source, item_id, theme, "meeting-recording", title=title)
         return False
     if ledger.in_existing_index(source, item_id):   # CONTRACT §6.3 pre-download
         reject_log(source, item_id, theme, "dup_existing_id", title=title)

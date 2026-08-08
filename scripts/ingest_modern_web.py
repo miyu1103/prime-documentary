@@ -471,6 +471,9 @@ def take_item(ledger: base.Ledger, *, source: str, item_id: str, title: str,
     if base.theme_source_unusable(theme, source):
         base.reject_log(source, item_id, theme, "owner-verdict-unusable", title=title)
         return False
+    if base.is_meeting_recording(title):
+        base.reject_log(source, item_id, theme, "meeting-recording", title=title)
+        return False
     if base.PERSON_RE.search(title or ""):
         base.reject_log(source, item_id, theme, "person-filter", title=title)
         return False

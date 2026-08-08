@@ -661,6 +661,17 @@ def theme_source_unusable(theme: str, source: str) -> bool:
     return (theme, source) in _VERDICTS
 
 
+def _meeting_recording(title: str) -> bool:
+    """Same rule as the other lanes; see ingest_archive_sources.is_meeting_recording."""
+    try:
+        sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+        from purge_meeting_recordings import MEETING_TERMS, STRONG
+    except Exception:
+        return False
+    t = " " + " ".join((title or "").lower().split()) + " "
+    return any(k in t for k in tuple(MEETING_TERMS) + tuple(STRONG))
+
+
 def take_item(st: State, *, source: str, item_id: str, title: str, url: str,
               kind: str, theme: str, source_url: str, license_raw: str,
               license_decision: str, score: int, matched: list[str],
@@ -669,6 +680,11 @@ def take_item(st: State, *, source: str, item_id: str, title: str, url: str,
     """Returns True if the item landed on the shelf."""
     if theme_source_unusable(theme, source):
         st.reject(source, item_id, "owner-verdict-unusable", title=title,
+                  theme=theme, score=-1, matched=[])
+        st.known_ids.add((source, str(item_id)))
+        return False
+    if _meeting_recording(title):
+        st.reject(source, item_id, "meeting-recording", title=title,
                   theme=theme, score=-1, matched=[])
         st.known_ids.add((source, str(item_id)))
         return False

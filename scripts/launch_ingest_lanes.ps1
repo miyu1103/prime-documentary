@@ -12,7 +12,14 @@
 #
 #   .\scripts\launch_ingest_lanes.ps1              # all five lanes
 #   .\scripts\launch_ingest_lanes.ps1 ia,web       # only the named lanes
-param([string[]]$Only)
+#
+# Take the lane names as ONE bag of leftover arguments. Declaring [string[]]$Only bound
+# only the first name when the script was invoked through `powershell -File`, so asking
+# for three lanes launched one and said nothing about the other two. Accepting everything
+# and splitting on both comma and space makes `ia sci web_audio` and `ia,sci,web_audio`
+# behave the same, and an unmatched name is now reported instead of silently dropped.
+param([Parameter(ValueFromRemainingArguments = $true)][string[]]$Only)
+if ($Only) { $Only = @($Only -split '[,\s]+' | Where-Object { $_ }) }
 
 $py   = "C:\Users\aab15\AppData\Local\Programs\Python\Python310\python.exe"
 $repo = "C:\Users\aab15\Documents\prime-documentary"
@@ -50,6 +57,11 @@ $lanes = @(
      opts = '--source freesound'
      log = 'ingest_web_audio.log'  ; err = 'ingest_web_audio.err.log' }
 )
+
+if ($Only) {
+  $unknown = @($Only | Where-Object { $_ -notin $lanes.id })
+  if ($unknown) { Write-Warning "unknown lane(s): $($unknown -join ', '); known: $($lanes.id -join ', ')" }
+}
 
 foreach ($l in $lanes) {
   if ($Only -and ($l.id -notin $Only)) { continue }
