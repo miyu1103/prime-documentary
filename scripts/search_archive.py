@@ -80,6 +80,23 @@ def load_feedback() -> dict:
     return adj
 
 
+def apply_feedback(raw: int, key: str, feedback: dict) -> int:
+    """Re-rank a candidate by earlier picks — but only one that is already a candidate.
+
+    The bonus was being added to the raw score unconditionally, and a pick is recorded
+    against the shot it was made for. Four clips picked once for "prison cell block
+    corridor" were therefore scoring 15 on every shot ever run, and topped the results for
+    "bank branch interior counter", "foreclosure sign house" and "checkout till transaction"
+    — three shots whose raw score for them is 0.
+
+    A pick says "this was the right choice among relevant results", never "this is relevant
+    to everything". So feedback moves a candidate up or down; it cannot create or destroy
+    relevance that the words do not support."""
+    if raw <= 0:
+        return raw
+    return raw + feedback.get(key, 0)
+
+
 DF_CACHE = os.path.join(LEDGER_DIR, "title_df.json")
 DF_MAX_AGE = 24 * 3600
 _DF: dict = {}
@@ -411,7 +428,8 @@ def main() -> int:
                 if args.shot:
                     sc = shot_score(rec, shot_words, shot_bigrams,
                                     not args.keep_talking_heads)
-                    sc += feedback.get(f"{rec.get('source')}:{rec.get('id')}", 0)
+                    sc = apply_feedback(
+                        sc, f"{rec.get('source')}:{rec.get('id')}", feedback)
                     floor = 0 if args.weak_ok else 15
                     if sc <= floor:
                         continue
