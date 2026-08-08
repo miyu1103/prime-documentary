@@ -2,7 +2,7 @@
  "schema_version": "pd_filmconfig.v001",
  "slug": "memphis",
  "episode_id": "PD-2026-064-memphis",
- "assets": "episodes/PD-2026-064-memphis/05_visuals/asset_manifest.v001.json",
+ "assets": "episodes/PD-2026-064-memphis/05_visuals/asset_manifest.v003.json",
  "narration_index": "episodes/PD-2026-064-memphis/06_audio/narration_index.v001.json",
  "narration": "memphis/narration.mp3",
  "captions": "episodes/PD-2026-064-memphis/08_edit/captions.final.v001.srt",
@@ -10,14 +10,731 @@
  "hookSeconds": 8.0,
  "hookLine": "Two bills came to one house. Pay or face termination. Mary Craft telephoned after a final notice and said she had paid a bill.",
  "figures_by_section": {
-  "HOOK": 3,
-  "OP": 4,
-  "ACT_1": 17,
-  "ACT_2": 17,
-  "ACT_3": 17,
-  "ACT_4": 17,
-  "ACT_5": 17,
-  "ENDING": 9
+  "HOOK": [
+   {
+    "kind": "lowerthird",
+    "primary": "AI-assisted visualization",
+    "secondary": "symbolic reconstruction, no real likenesses"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "PAY OR FACE",
+     "TERMINATION."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "TERMINATION"
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "MARY CRAFT TELEPHONED",
+     "AFTER A FINAL NOTICE",
+     "AND SAID SHE",
+     "HAD PAID A BILL."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "HAD PAID"
+    ]
+   }
+  ],
+  "OP": [
+   {
+    "kind": "lowerthird",
+    "primary": "MEMPHIS LIGHT, GAS & WATER DIVISION v. CRAFT",
+    "secondary": "436 U. S. 1 — argued November 1977, decided 1 May 1978"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "JUSTICE POWELL",
+    "secondary": "wrote for the Court"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "AFFIRMED.",
+     "THE DAMAGES QUESTION",
+     "WENT BACK DOWN."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "BACK DOWN"
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THREE JUSTICES",
+     "DISSENTED."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "DISSENTED"
+    ]
+   }
+  ],
+  "ACT_1": [
+   {
+    "kind": "acttitle",
+    "title": "ONE HOUSE, TWO CUSTOMERS",
+    "kicker": "ACT ONE",
+    "index": 1
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "ALASKA STREET, MEMPHIS",
+    "secondary": "October 1972. They move in. The house had been used previously as a duplex."
+   },
+   {
+    "kind": "stat",
+    "value": 2,
+    "label": "Separate sets of gas and electric meters serving one household, and one water meter. The seller said the second set was inoperative."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "WILLIE S. CRAFT.",
+     "WILLIE C. CRAFT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "C."
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "OCTOBER 1973",
+    "secondary": "A meter reader tells them both sets are running. They hire a private plumber and electrical contractor themselves."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THEY PAID FOR THAT",
+     "THEMSELVES."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "THEMSELVES"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "Because the contractor did not consolidate the meters properly, a condition of which the Crafts were not aware, they continued to receive two bills until January 1974.",
+    "attribution": "Memphis Light, Gas & Water Div. v. Craft, 436 U. S. 1 (1978) — the body of the opinion"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "A SECOND ACCOUNT, IN A FOOTNOTE",
+    "secondary": "The Court quotes the brief filed by the Crafts' own lawyers"
+   },
+   {
+    "kind": "quote",
+    "quote": "Not until after the action was filed were the Crafts able to discover that they continued to receive double computer billings because MLG&W failed to combine the two accounts properly",
+    "attribution": "The same opinion, n. 7 — quoting Brief for Respondents 5"
+   },
+   {
+    "kind": "mechanism",
+    "mechanism": "faultsplit"
+   },
+   {
+    "kind": "stat",
+    "value": 5,
+    "label": "Terminations during this period, as the majority counts them. No month, no duration, no season, no figure for any bill behind them."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "ON SEVERAL OCCASIONS",
+     "SHE MISSED WORK."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "MISSED WORK"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "Mrs. Craft sought in good faith to determine the cause of the \"double billing,\" but was unable to obtain a satisfactory explanation or any suggestion for further recourse from MLG&W employees.",
+    "attribution": "The District Court's finding, quoted by the Court"
+   },
+   {
+    "kind": "quote",
+    "quote": "was given no satisfaction",
+    "attribution": "The District Court, on her telephone call after a final notice"
+   },
+   {
+    "kind": "quote",
+    "quote": "The procedure for an opportunity to talk with management was not adequately explained to Mrs. Craft, although she repeatedly tried to get some explanation for the problems of two bills and possible duplicate charges.",
+    "attribution": "The District Court, quoted by the Court (Pet. for Cert. 38-39)"
+   },
+   {
+    "kind": "quote",
+    "quote": "an employee of uncertain authority told Mrs. Craft, apparently without explanation or attempt at investigation, \"[w]ell, you have to pay on the other\" bill",
+    "attribution": "Memphis Light, Gas & Water Div. v. Craft (1978), n. 19 — citing App. 91"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "FEBRUARY 1974",
+    "secondary": "They file in the District Court for the Western District of Tennessee"
+   }
+  ],
+  "ACT_2": [
+   {
+    "kind": "acttitle",
+    "title": "THIRTY DAYS",
+    "kicker": "ACT TWO",
+    "index": 2
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THE COMPANY",
+     "SENDING THE BILLS",
+     "WAS THE CITY."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "WAS THE CITY"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE PROCEDURE, IN FOUR STEPS",
+    "secondary": "As the District Court set it out. This is the clock the family on Alaska Street was living on."
+   },
+   {
+    "kind": "casetimeline_c",
+    "events": [
+     {
+      "year": "About day 4",
+      "text": "A bill is mailed to the service location"
+     },
+     {
+      "year": "About day 20",
+      "text": "The last day to pay the net amount"
+     },
+     {
+      "year": "About day 24",
+      "text": "A final notice: four days"
+     },
+     {
+      "year": "Four days later",
+      "text": "The meter reader terminates electric service"
+     },
+     {
+      "year": "About five days on",
+      "text": "The remaining services are terminated"
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "Electric service is then terminated by the meter reader, unless the customer assures him that payment is in the mail, shows a paid receipt, or explains that nonpayment was due to illness.",
+    "attribution": "The District Court's description of the utility's practice, n. 4"
+   },
+   {
+    "kind": "numberticker",
+    "value": 30,
+    "label": "Days, at least, between the mailing of the bill and the actual termination of service",
+    "group": false
+   },
+   {
+    "kind": "numberticker",
+    "value": 11216,
+    "label": "Delinquent cutoffs, September 1973 through February 1974 — the dissent's figure",
+    "group": true
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "PHONE 523-0711 · INFORMATION CENTER",
+    "secondary": "A prominent legend on the notices, the dissent says. Calls answered by 30 or 40 employees, each empowered to delay a cutoff for three days."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "AND THE NUMBER",
+     "WAS PRINTED",
+     "ON THE NOTICE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "WAS PRINTED"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "FOUR RUNGS",
+    "secondary": "Credit counselors · the chief clerk · the supervisor in credit and collection · the Board of Commissioners. A customer may be accompanied by an appropriate representative."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE EXTENDED PAYMENT PLAN",
+    "secondary": "March 1973. The trial judge called it a generous program: half a past due bill, the balance over the next three. The plaintiffs were participants in it."
+   },
+   {
+    "kind": "quote",
+    "quote": "the MLG&W notice only warn[ed] the customer to pay or face termination.",
+    "attribution": "The Court of Appeals, 534 F. 2d 684, 688-689 — quoted by the Court"
+   },
+   {
+    "kind": "numberticker",
+    "value": 40,
+    "suffix": "%",
+    "label": "Of the utility's customers, about, got the flyer that made no mention of a procedure for a disputed claim. Which flyer reached Alaska Street the record does not establish.",
+    "group": false
+   },
+   {
+    "kind": "quote",
+    "quote": "if there is any dispute concerning the amount due, bring your bill to the office at . . ., or phone . . . .",
+    "attribution": "The other flyer — quoted by the Court from 534 F. 2d 684, 688 n. 4"
+   },
+   {
+    "kind": "numberticker",
+    "value": 33000,
+    "label": "High bill complaints processed in 1973, on the secretary-treasurer's testimony",
+    "group": true
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THE LADDER EXISTED.",
+     "IT WAS NEVER",
+     "WRITTEN DOWN."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NEVER"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE RULE THAT DID NOT APPLY",
+    "secondary": "Tennessee required posted rules on the adjustment of complaints — for an independent utility district, as opposed to a utility division of a municipality"
+   }
+  ],
+  "ACT_3": [
+   {
+    "kind": "acttitle",
+    "title": "THE STRANGEST PAGE",
+    "kicker": "ACT THREE",
+    "index": 3
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Plaintiffs the trial court found substantially deprived",
+      "value": 0
+     },
+     {
+      "label": "Plaintiffs named as the possible exception",
+      "value": 2
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "hope",
+    "attribution": "The trial judge's own word, in quotation marks in the opinion"
+   },
+   {
+    "kind": "numberticker",
+    "value": 35,
+    "prefix": "$",
+    "label": "The credit the trial judge hoped would be issued",
+    "group": false
+   },
+   {
+    "kind": "quote",
+    "quote": "terminations which should have been unnecessary had effectual relief been afforded them as requested",
+    "attribution": "The trial judge, in the same decision that gave judgment to the utility"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "RECOMMENDED.",
+     "NOT ORDERED.",
+     "THE UTILITY DID IT ANYWAY."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOT ORDERED"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "BEFORE IT REACHED WASHINGTON",
+    "secondary": "By an order filed 30 December 1974 the court noted the credit had been issued and some new procedures instituted"
+   },
+   {
+    "kind": "quote",
+    "quote": "[o]f the balance claimed by MLG&W in March, 1974, some involved possible gas overcharges and double or duplicate billings with respect to city service fees.",
+    "attribution": "The District Court, quoted by the Court, n. 8"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "POSSIBLE",
+     "GAS OVERCHARGES."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "POSSIBLE"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "The trial judge evidently accepted the Division's claim that it was engaged in \"split billing\" rather than \"double billing.\"",
+    "attribution": "Stevens, J., dissenting, n. 5"
+   },
+   {
+    "kind": "numberticker",
+    "value": 2.5,
+    "prefix": "$",
+    "decimals": 2,
+    "label": "The monthly city service fee, charged on each set of meters — the dissent's figure",
+    "group": false
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Courts that heard this case",
+      "value": 3
+     },
+     {
+      "label": "Courts that decided whether the money was owed",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "The validity of the damages claim is a matter for initial determination by the courts below.",
+    "attribution": "Memphis Light, Gas & Water Div. v. Craft (1978), n. 8"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE CLASS STAYED DEAD",
+    "secondary": "The refusal to certify was affirmed. What follows is a judgment about two people at one address."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE SIXTH CIRCUIT'S TWO LIMBS",
+    "secondary": "Notice that a disputed bill can be challenged · an established procedure for resolving it. Certiorari granted 22 February 1977."
+   },
+   {
+    "kind": "quote",
+    "quote": "respondents no longer desire a hearing to resolve a continuing dispute over their bills, as the double-meter problem has been clarified during this litigation",
+    "attribution": "The Court, on why the case nearly went away"
+   },
+   {
+    "kind": "quote",
+    "quote": "Respondents' claim for actual and punitive damages arising from MLG&W's terminations of service saves this cause from the bar of mootness.",
+    "attribution": "Memphis Light, Gas & Water Div. v. Craft (1978), Part II"
+   }
+  ],
+  "ACT_4": [
+   {
+    "kind": "acttitle",
+    "title": "WHERE, WHICH HOURS, BEFORE WHOM",
+    "kicker": "ACT FOUR",
+    "index": 4
+   },
+   {
+    "kind": "quote",
+    "quote": "An exception to the general rule exists when the customer has a bona fide dispute concerning the correctness of the bill.",
+    "attribution": "Trigg v. Middle Tennessee Electric Membership Corp. (Tenn. App. 1975), quoted in Craft"
+   },
+   {
+    "kind": "quote",
+    "quote": "A public utility should not be able to coerce a customer to pay a disputed claim.",
+    "attribution": "Trigg, quoted in Craft — rejecting the utility's own rulebook"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NOT AT WILL.",
+     "ONLY FOR CAUSE."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "ONLY FOR CAUSE"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "notice reasonably calculated, under all the circumstances, to apprise interested parties of the pendency of the action and afford them an opportunity to present their objections",
+    "attribution": "Mullane v. Central Hanover Trust Co., 339 U. S. 306, 314 (1950) — notice to the beneficiaries of a trust fund, quoted in Craft"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "TELL THEM IT IS HAPPENING.",
+     "TELL THEM THEY CAN",
+     "OBJECT TO IT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "OBJECT TO IT"
+    ]
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Told the customer the thing was about to happen",
+      "value": 1
+     },
+     {
+      "label": "Told the customer there was somewhere to object",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "In essence, recipients of a cutoff notice should be told where, during which hours of the day, and before whom disputed bills appropriately may be considered.",
+    "attribution": "Memphis Light, Gas & Water Div. v. Craft (1978), n. 15"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "WHERE.",
+     "WHAT HOURS.",
+     "BEFORE WHOM."
+    ],
+    "style": "maskslide"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "A DESIGNATED EMPLOYEE",
+    "secondary": "Not a judge, not a hearing officer, not a lawyer. Designated personnel duly authorized to review disputed bills with complaining customers and to correct any errors."
+   },
+   {
+    "kind": "quote",
+    "quote": "Whether or not such a procedure may be available to other MLG&W customers, both courts below found that it was not made available to Mrs. Craft.",
+    "attribution": "Memphis Light, Gas & Water Div. v. Craft (1978), Part IV-B"
+   },
+   {
+    "kind": "quote",
+    "quote": "Utility service is a necessity of modern life; indeed, the discontinuance of water or heating for even short periods of time may threaten health and safety. And the risk of an erroneous deprivation, given the necessary reliance on computers, is not insubstantial.",
+    "attribution": "The Court, weighing the private interest and the risk of error"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE UTILITY'S LAST ARGUMENT",
+    "secondary": "Sue for an injunction before the cutoff · sue for damages after it · pay and sue for a refund"
+   },
+   {
+    "kind": "quote",
+    "quote": "Although utility service may be restored ultimately, the cessation of essential services for any appreciable time works a uniquely final deprivation.",
+    "attribution": "The Court, on why a lawsuit afterwards is not the same thing"
+   },
+   {
+    "kind": "quote",
+    "quote": "sums of money too small to justify engaging counsel or bringing a lawsuit",
+    "attribution": "The Court, answering the argument that the courts were open"
+   },
+   {
+    "kind": "highlightring",
+    "cx": 0.5,
+    "cy": 0.52,
+    "r": 0.14,
+    "label": "Half the disputed bill, up front, to go on arguing"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THE JUDGMENT OF THE",
+     "COURT OF APPEALS",
+     "IS AFFIRMED."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "AFFIRMED"
+    ]
+   }
+  ],
+  "ACT_5": [
+   {
+    "kind": "acttitle",
+    "title": "RETAIN THE OPTION",
+    "kicker": "ACT FIVE",
+    "index": 5
+   },
+   {
+    "kind": "stat",
+    "value": 0,
+    "label": "Services ordered restored, cutoffs enjoined, or dollars awarded"
+   },
+   {
+    "kind": "quote",
+    "quote": "The public utility enjoys a broad discretion in the scheduling and structuring of this \"hearing,\" provided that the customer is afforded adequate time for effective presentation of his complaint prior to termination.",
+    "attribution": "Memphis Light, Gas & Water Div. v. Craft (1978), n. 22"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "POSSIBLE.",
+     "NOT HELD."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "NOT HELD"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "I have no quarrel with the Court's conclusion that as a matter of Tennessee law a customer has a legitimate claim of entitlement to continued utility services as long as the undisputed portions of his utility bills are paid.",
+    "attribution": "Stevens, J., dissenting, joined by the Chief Justice and Justice Rehnquist"
+   },
+   {
+    "kind": "quote",
+    "quote": "In fact, the two accounts were independent; because the Crafts refused to pay the balance on the second account, the Division terminated their service on several occasions. The District Court expressly found that the Division sent a final notice before each termination.",
+    "attribution": "Stevens, J., dissenting"
+   },
+   {
+    "kind": "quote",
+    "quote": "The record therefore indicates that Mrs. Craft did meet with Division employees having adequate authority but simply failed to persuade any of them that there was any error in her bills.",
+    "attribution": "Stevens, J., dissenting"
+   },
+   {
+    "kind": "quote",
+    "quote": "She was told that she had to pay on the other account as well. … In other words, an official of the Division did resolve the Crafts' dispute, correctly as it turned out.",
+    "attribution": "Stevens, J., dissenting, n. 7 — the same sentence the majority prints as a brush-off"
+   },
+   {
+    "kind": "quote",
+    "quote": "The dissent advances its own reading of the record in this case, but offers no justification for sidestepping the determinations made below.",
+    "attribution": "The Court, answering the dissent, n. 19"
+   },
+   {
+    "kind": "quote",
+    "quote": "For a homeowner surely need not be told how to complain about an error in a utility bill",
+    "attribution": "Stevens, J., dissenting — the sentence the majority answered in n. 15"
+   },
+   {
+    "kind": "quote",
+    "quote": "The Court's holding that the Division's notice was constitutionally defective rests on a paternalistic predicate that I cannot accept.",
+    "attribution": "Stevens, J., dissenting"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "SAME BUILDING.",
+     "SAME STAFF.",
+     "A DIFFERENT SIGN",
+     "ON THE DOOR."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "A DIFFERENT SIGN"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "Lay consumers of electric service, the uninterrupted continuity of which is essential to health and safety, should be informed clearly of the availability of an opportunity to present their complaint.",
+    "attribution": "The Court, n. 15 — answering the dissent"
+   },
+   {
+    "kind": "quote",
+    "quote": "Although the Division's terminations number about 2,000 each month, the record does not reveal any actual case of harm to health or safety. The District Court found that the Division does not discontinue service when there is illness in a home.",
+    "attribution": "Stevens, J., dissenting"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "SERIOUS ENOUGH",
+     "TO SUE OVER,",
+     "OR TOO SMALL TO BE",
+     "CONSTITUTIONAL."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "TOO SMALL"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "These justifications suggest that the Court's new rule is the product of a policy determination rather than a traditional construction of the Constitution.",
+    "attribution": "Stevens, J., dissenting"
+   },
+   {
+    "kind": "quote",
+    "quote": "I do not believe the Constitution requires the State to employ procedures that are so simple that every lay person can always act effectively without the assistance of counsel.",
+    "attribution": "Stevens, J., dissenting — the closing line before \"I respectfully dissent.\""
+   }
+  ],
+  "ENDING": [
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "Accounts of whose mistake it was, printed in the same opinion",
+      "value": 2
+     },
+     {
+      "label": "Times the Court resolved which one was right",
+      "value": 0
+     }
+    ]
+   },
+   {
+    "kind": "mechanism",
+    "mechanism": "faultsplit"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "FIVE TERMINATIONS,",
+     "SAID THE MAJORITY.",
+     "SEVERAL OCCASIONS,",
+     "SAID THE DISSENT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "SEVERAL OCCASIONS"
+    ]
+   },
+   {
+    "kind": "stat",
+    "value": 0,
+    "label": "Courts that decided whether the money was owed"
+   },
+   {
+    "kind": "numberticker",
+    "value": 33000,
+    "label": "High bill complaints in one year, and no description of the procedure ever distributed to customers",
+    "group": true
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "WHERE.",
+     "WHAT HOURS.",
+     "BEFORE WHOM."
+    ],
+    "style": "maskslide"
+   },
+   {
+    "kind": "quote",
+    "quote": "And petitioners would retain the option to terminate service after affording this opportunity and concluding that the amount billed was justly due.",
+    "attribution": "Memphis Light, Gas & Water Div. v. Craft, 436 U. S. 1 (1978)"
+   },
+   {
+    "kind": "mechanism",
+    "mechanism": "gears"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AI-assisted visualization",
+    "secondary": "symbolic reconstruction, no real likenesses"
+   }
+  ]
  },
  "_notes": {
   "script": "episodes/_planning/EP64_memphis_script.en.v002.md is the confirmed script. It was CUT on 2026-08-06 after the real narration master measured over the ceiling; do not restore anything from an earlier revision.",

@@ -128,30 +128,60 @@ def main() -> int:
     factory = scan(base / "factory", (".mp4", ".mov", ".webm"))
     overlay = scan(base / "overlay", (".mp4", ".mov", ".webm"))
 
+    # Which plates ARE the people plates is declared by the episode, not guessed from a filename.
+    declared_people: set[str] = set()
+    spec_path = ROOT / "episodes" / ep / "episode_spec.v001.json"
+    if spec_path.is_file():
+        try:
+            declared = json.loads(spec_path.read_text(encoding="utf-8")).get("people_plates", [])
+            declared_people = {s for s in declared} | {Path(s).stem for s in declared}
+        except Exception:
+            declared_people = set()
+
     stills: list[dict] = []
     people: list[dict] = []
     rejected: list[dict] = []          # everything excluded, with the measured reason
-    skipped_src = 0
-    for p in imgs:
+    motion_source_candidates: list[Path] = []
+
+    def add_still(p: Path) -> None:
         rel = f"{slug}/img/{p.name}"
         head = p.stem[0].upper()
-        if head == "M":                      # i2v source plate -- its motion clip is the asset
-            skipped_src += 1
-            continue
         if p.stat().st_size < MIN_OK_BYTES:
             rejected.append({"public_path": rel, "reason": f"stub {p.stat().st_size}B"})
-            continue
+            return
         if check_content:
             lum = mean_luma(p)
             if 0 <= lum < MIN_LUMA:
                 rejected.append({"public_path": rel, "reason": f"near-black luma {lum:.1f}"})
-                continue
-        if head in ("P", "F"):
+                return
+        # People plates are DECLARED in episode_spec.people_plates. EP63/64/65 name theirs with the
+        # episode prefix -- C211-C220, M198-M207, R207-R216 -- and the old P/F test reported all
+        # three as having no faces at all. The prefix test stays as a fallback for older episodes.
+        if p.name in declared_people or p.stem in declared_people or head in ("P", "F"):
             people.append(entry(slug, "PPL", len(people) + 1, p, rel,
                                 role="visible_face", scene_id=p.stem))
         else:
             stills.append(entry(slug, "S", len(stills) + 1, p, rel,
                                 role="body", scene_id=p.stem))
+
+    for p in imgs:
+        # Defer source plates until the motion file has passed content QC. A file merely existing
+        # is not enough: if it fades to black and is demoted to overlay, the source still must be
+        # restored as the safe fallback or a mandatory visual silently disappears from the film.
+        # People plates are different: the film builder needs a still PEOPLE pool even when an
+        # i2v derivative also exists. Deferring every P/F plate made all 29 safe Willingham face
+        # stills disappear merely because matching P*.mp4 files were present, so the manifest
+        # correctly refused to build with people=0. Keep declared/legacy people stills and let
+        # the independently checked motion derivative coexist in the motion pool.
+        is_people_plate = (
+            p.name in declared_people
+            or p.stem in declared_people
+            or p.stem[0].upper() in ("P", "F")
+        )
+        if (base / "motion" / f"{p.stem}.mp4").is_file() and not is_people_plate:
+            motion_source_candidates.append(p)
+            continue
+        add_still(p)
 
     def videos(paths, kind, sub, allow_dark: bool = False):
         """Returns (kept, demoted). Anything unfit as a full-frame CUT is demoted to the
@@ -197,6 +227,12 @@ def main() -> int:
     factory_e, factory_dark = videos(factory, "F", "factory")
     overlay_e, _ = videos(overlay, "O", "overlay", allow_dark=True)
     overlay_e += motion_dark + factory_dark
+
+    kept_motion_stems = {Path(row["public_path"]).stem for row in motion_e}
+    for p in motion_source_candidates:
+        if p.stem not in kept_motion_stems:
+            add_still(p)
+    skipped_src = sum(p.stem in kept_motion_stems for p in motion_source_candidates)
 
     manifest = {
         "schema_version": "asset_manifest.v003",
