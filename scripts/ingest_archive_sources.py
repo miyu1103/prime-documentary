@@ -316,6 +316,38 @@ def atomic_append(path: str, line: str) -> None:
         os.close(fd)
 
 
+_VERDICTS: dict | None = None
+
+
+def theme_source_unusable(theme: str, source: str) -> bool:
+    """True when the owner has looked at this theme/source on a contact sheet and ruled
+    it out. Read fresh from `_qc/archive_verdicts.jsonl`, cached for the process.
+
+    Added to the base 2026-08-09 so all lanes share one gate. Previously only the
+    science/museum lane checked, which is why a running lane kept re-fetching material
+    that had already been reviewed and deleted."""
+    global _VERDICTS
+    if _VERDICTS is None:
+        _VERDICTS = {}
+        path = os.path.normpath(os.path.join(LEDGER_DIR, "..", "_qc",
+                                             "archive_verdicts.jsonl"))
+        try:
+            with open(path, encoding="utf-8", errors="replace") as fh:
+                for line in fh:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        r = json.loads(line)
+                    except Exception:
+                        continue
+                    if (r.get("verdict") or "").lower() == "unusable":
+                        _VERDICTS[(r.get("theme"), r.get("source"))] = True
+        except OSError:
+            pass
+    return (theme, source) in _VERDICTS
+
+
 def reject_log(source: str, item_id: str, theme: str, reason: str,
                score: int = -1, matched=None, negs=None, title: str = "") -> None:
     """Per-item rejects log (skipped items do NOT enter the main ledger).
@@ -1001,6 +1033,9 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
     technical floors; failures land in rejects.jsonl."""
     global ACTIVITY
     if ledger.seen(source, item_id):
+        return False
+    if theme_source_unusable(theme, source):
+        reject_log(source, item_id, theme, "owner-verdict-unusable", title=title)
         return False
     ACTIVITY += 1
     if f"{source}:{item_id}".lower() in ledger.existing_ids:

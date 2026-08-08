@@ -468,6 +468,9 @@ def take_item(ledger: base.Ledger, *, source: str, item_id: str, title: str,
     routes storage to D: only. Returns True if ingested."""
     if ledger.seen(source, item_id):
         return False
+    if base.theme_source_unusable(theme, source):
+        base.reject_log(source, item_id, theme, "owner-verdict-unusable", title=title)
+        return False
     if base.PERSON_RE.search(title or ""):
         base.reject_log(source, item_id, theme, "person-filter", title=title)
         return False

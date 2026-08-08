@@ -947,6 +947,37 @@ class Ledger:
             build_contact_sheet(t, self.recent.get(t, []), self.theme_total.get(t, 0))
 
 
+_VERDICTS: dict | None = None
+
+
+def theme_source_unusable(theme: str, source: str) -> bool:
+    """True when the owner reviewed this theme/source on a contact sheet and ruled it out.
+
+    Reads the same `_qc/archive_verdicts.jsonl` the other lanes read. This lane holds no
+    opinion of its own; without this it would keep re-fetching NARA and LOC material that
+    was reviewed and deleted."""
+    global _VERDICTS
+    if _VERDICTS is None:
+        _VERDICTS = {}
+        path = os.path.normpath(os.path.join(LEDGER_DIR, "..", "_qc",
+                                             "archive_verdicts.jsonl"))
+        try:
+            with open(path, encoding="utf-8", errors="replace") as fh:
+                for line in fh:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        r = json.loads(line)
+                    except Exception:
+                        continue
+                    if (r.get("verdict") or "").lower() == "unusable":
+                        _VERDICTS[(r.get("theme"), r.get("source"))] = True
+        except OSError:
+            pass
+    return (theme, source) in _VERDICTS
+
+
 def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: str,
          download_url: str, kind: str, theme: str, license_raw: str, decision: str,
          default_ext: str, dry_run: bool, desc: str = "",
@@ -955,6 +986,9 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
     ledger.refresh()
     ledger.load_existing_index()
     if ledger.seen(source, item_id):
+        return False
+    if theme_source_unusable(theme, source):
+        reject_log(source, item_id, theme, "owner-verdict-unusable", title=title)
         return False
     if ledger.in_existing_index(source, item_id):   # CONTRACT §6.3 pre-download
         reject_log(source, item_id, theme, "dup_existing_id", title=title)

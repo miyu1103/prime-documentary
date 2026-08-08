@@ -37,6 +37,13 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
 QC_DIR = r"H:\pd-media\assets\archive\_qc"
 VERDICTS = os.path.join(QC_DIR, "archive_verdicts.jsonl")
+ABSENT = os.path.join(LEDGER_DIR, "absent_index.json")
+
+# Not stock. rejects/candidates were never taken; *_removed, purged and quarantine are
+# records of things taken and then deleted, and a purge row repeats its source row's id,
+# so counting the file adds the same item twice.
+NOT_STOCK = ("purged.jsonl", "ban_risk_quarantine.jsonl", "shot_feedback.jsonl",
+             "factory_rename.progress.jsonl", "factory.jsonl")
 OUT = os.path.join(ROOT, "episodes", "_planning", "ARCHIVE_SHELF_INVENTORY.v001.md")
 
 VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv", ".avi", ".mpeg", ".mpg", ".m4v"}
@@ -69,13 +76,24 @@ def kind_of(path: str) -> str:
     return "image"
 
 
+def load_absent() -> set[str]:
+    """(source:id) keys whose file is not on disk. Built by build_absent_index.py."""
+    if not os.path.exists(ABSENT):
+        print("  ! absent_index.json missing - run build_absent_index.py; counts will "
+              "include deleted files")
+        return set()
+    with open(ABSENT, encoding="utf-8", errors="replace") as fh:
+        return set(json.load(fh).get("absent", {}))
+
+
 def load_shelf() -> list[dict]:
+    absent = load_absent()
     recs = []
+    dropped_absent = 0
     for path in sorted(glob.glob(os.path.join(LEDGER_DIR, "*.jsonl"))):
         base = os.path.basename(path)
-        if base.startswith("rejects") or base.endswith(
-                ("_dedup_removed.jsonl", "_removed.jsonl", "_candidates.jsonl")) \
-                or base == "factory.jsonl":
+        if base.startswith("rejects") or base in NOT_STOCK or base.endswith(
+                ("_dedup_removed.jsonl", "_removed.jsonl", "_candidates.jsonl")):
             continue
         with open(path, encoding="utf-8", errors="replace") as fh:
             for line in fh:
@@ -83,9 +101,14 @@ def load_shelf() -> list[dict]:
                 if not line:
                     continue
                 try:
-                    recs.append(json.loads(line))
+                    r = json.loads(line)
                 except Exception:
                     continue
+                if f"{r.get('source')}:{r.get('id')}" in absent:
+                    dropped_absent += 1
+                    continue
+                recs.append(r)
+    print(f"  shelf {len(recs):,} rows (excluded {dropped_absent:,} deleted)")
     return recs
 
 
