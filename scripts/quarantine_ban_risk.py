@@ -64,6 +64,18 @@ RULES = {
         ("named_individual_record",
          r"\b(inmate file of|mugshot|booking photo of|prisoner record of|arrest record of)\b",
          "record of a named real person incl. mugshots — CLAUDE invariant 11"),
+        # Found by eye 2026-08-09 on the `foreclosure sign house` sheet: seven press photos
+        # of a named sitting politician sat in `household_loss`, scoring as generic b-roll.
+        # A serving officeholder in a documentary about foreclosure reads as a claim about
+        # that person, which is exactly what invariant 11 forbids — and the shot spec that
+        # cited it would never say so. The list is of OFFICE-HOLDER names and the phrases
+        # that mark a press-availability photo, not of "person" or "man": ordinary
+        # unidentifiable people are the b-roll this shelf exists to supply.
+        ("serving_officeholder",
+         r"\b(kamala harris|barack obama|president obama|joe biden|president biden"
+         r"|donald trump|hillary clinton|ag kamala)\b"
+         r"|\b(meets with|delivers remarks|greets)\b.{0,40}\b(union|victims|leaders)\b",
+         "press photograph of a named serving officeholder — invariant 11 likeness"),
     ],
     # Found by EYES, not by pattern (2026-07-31 parallel contact-sheet review). None of
     # these carry a word the earlier keyword sweep looked for — the Censored Eleven short
@@ -91,6 +103,11 @@ RULES = {
         ("disclaimed_ownership",
          r"not made by me",
          "the uploader's own title disclaims authorship — no rights chain at all"),
+        ("conspiracy_pseudoscience",
+         r"moon landing hoax|landing was faked|flat earth|chemtrail|9/?11 truth|"
+         r"crisis actor|false flag|new world order|deep state exposed|"
+         r"vaccine (hoax|truth)|great reset agenda|illuminati|reptilian",
+         "conspiracy content - a monetised channel about money and law cannot carry it"),
         ("named_litigant",
          r"brian david hill",
          "proceeding tied to a named private litigant"),
