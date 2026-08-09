@@ -307,8 +307,8 @@ CONFIG = {
     "morton": {
         "ep": "PD-2026-052-morton",
         "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-052-morton/08_edit/morton_final_bgm.v001.mp4",
-        "sched_local": "2026-08-06T12:00:00+09:00",
-        "sched_utc": "2026-08-06T03:00:00Z",
+        "sched_local": "2026-08-14T12:00:00+09:00",
+        "sched_utc": "2026-08-14T03:00:00Z",
         # R-38 present-tense injustice; the 3-year-old witness is the film's first 20s.
         "title": "A 3-Year-Old Said His Father Wasn't Home. The State Buried It for 25 Years.",
         "description": "On 13 August 1986, Michael Morton left for work before dawn. By the time he got home, his wife Christine had been beaten to death in their bed in Williamson County, Texas, and their three-year-old son Eric had been in the house.\n\nEric told his grandmother what he saw: a monster hurt his mother, and — asked directly — that his daddy was not home. A neighbour had seen a green van parked repeatedly behind the house. Christine's missing credit card surfaced in San Antonio, and a cheque with her forged signature was cashed. None of it reached the jury. The prosecution's theory was that Michael killed her because she had fallen asleep on his birthday, and he was convicted of murder and sentenced to life.\n\nHe served nearly twenty-five years. For six of them his own lawyers fought simply for the right to test a bloodied bandana found near the house. The state opposed it repeatedly.\n\nWhen the testing finally happened, the bandana carried Christine's blood and the DNA of another man: Mark Alan Norwood. He had, by then, been convicted of a second murder committed after Christine's — a killing that happened while the file that could have named him sat unexamined in a prosecutor's office.\n\nMichael Morton was released in October 2011 and formally exonerated. The lead prosecutor, who had become a sitting judge, faced a court of inquiry over the evidence that was never handed to the defence; he surrendered his law licence and served time in county jail. In 2013 Texas passed a disclosure law that carries Michael Morton's name.\n\nThis film is about what a file can hold, and how long a state will fight to keep it shut.\n\nSome imagery is AI-assisted and symbolic, not authentic footage of real people or events, and no real-person likeness is shown.\n\nSources include the Texas court of inquiry record, the Williamson County District Attorney's own case file as released in the civil proceedings, and the Michael Morton Act (2013).\n\n#MichaelMorton #WrongfulConviction #Brady #Texas #CriminalJustice #Documentary #TrueStory",
@@ -320,8 +320,8 @@ CONFIG = {
     "willingham": {
         "ep": "PD-2026-051-willingham",
         "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-051-willingham/08_edit/willingham_final_bgm.v001.mp4",
-        "sched_local": "2026-08-05T12:00:00+09:00",
-        "sched_utc": "2026-08-05T03:00:00Z",
+        "sched_local": "2026-08-13T12:00:00+09:00",
+        "sched_utc": "2026-08-13T03:00:00Z",
         # DEEP_RESEARCH R-38: present-tense injustice framing; a resolved "exonerated after
         # N years" package is banned. R-6: the thumbnail line is spoken in the first 20s.
         "title": "Texas Executed Him for an Arson. The Fire Science Was Wrong.",
@@ -506,6 +506,15 @@ def sha(p: Path) -> str:
 
 
 def initiate_upload(token, size, cfg):
+    # Every publish date in CONFIG is hand-written, and three of them were written while they were
+    # still in the future and never revisited: on 2026-08-09 norfolk, willingham and morton all
+    # carried dates from the previous week. A publishAt in the past is not a schedule - the episode
+    # goes public the moment the upload lands, with no approved date and no chance to check it.
+    when = datetime.fromisoformat(cfg["sched_utc"].replace("Z", "+00:00"))
+    if when <= datetime.now(timezone.utc):
+        raise SystemExit(
+            f"REFUSING: sched_utc {cfg['sched_utc']} is in the past. Scheduling means a future "
+            f"date; this would publish immediately. Update the CONFIG entry first.")
     snippet = {"title": cfg["title"], "description": cfg["description"].rstrip(), "tags": cfg["tags"],
                "categoryId": "27", "defaultLanguage": "en", "defaultAudioLanguage": "en"}
     status = {"privacyStatus": "private", "publishAt": cfg["sched_utc"], "selfDeclaredMadeForKids": False,
