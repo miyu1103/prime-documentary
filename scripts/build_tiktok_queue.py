@@ -85,11 +85,17 @@ def main() -> int:
         for s in d.get("shorts", []):
             designs[int(re.sub(r"\D", "", s["short_id"]))] = (d, s)
 
+    # Ids keep their leading zero on disk - short01_tt.mp4, not short1_tt.mp4. Normalising to an
+    # int drops it and the file then looks missing; that cost eight Shorts here and, in the same
+    # session, a cover batch, a render list and the preflight.
     if a.all:
-        want = sorted(int(re.match(r"short(\d+)_tt", p.stem).group(1))
-                      for p in OUT.glob("short*_tt.mp4"))
+        want = sorted((re.match(r"short(\d+)_tt", p.stem).group(1)
+                       for p in OUT.glob("short*_tt.mp4")),
+                      key=lambda s: (int(s), s))
     else:
-        want = parse_range(a.shorts)
+        want = []
+        for n in parse_range(a.shorts):
+            want.append(f"{n:02d}" if (OUT / f"short{n:02d}_tt.mp4").exists() else str(n))
 
     queue, problems = [], []
     for n in want:
@@ -101,14 +107,14 @@ def main() -> int:
         if not cover.exists():
             problems.append(f"short{n}: no cover - render ShortThumb-short{n} with layout=tt")
             continue
-        d, s = designs.get(n, (None, None))
+        d, s = designs.get(int(n), (None, None))
         if s is not None:
             slug = d["episode_id"].split("-", 3)[3]
             angle = " ".join((s.get("angle") or "").split())
         else:
             # The early Shorts pre-date the design files. Their copy still exists - it is what the
             # YouTube upload used - so fall back to that rather than dropping 28 finished videos.
-            cfg = yt_config.get(str(n).zfill(2)) or yt_config.get(str(n))
+            cfg = yt_config.get(str(n).zfill(2)) or yt_config.get(str(n)) or yt_config.get(str(int(n)))
             if cfg:
                 slug = cfg["ep"].split("-", 3)[3]
                 angle = re.sub(r"\s*#Shorts\s*$", "", cfg["title"]).strip()

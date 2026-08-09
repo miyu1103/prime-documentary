@@ -15,9 +15,12 @@ need=$(py -3.11 - <<'PY'
 import re
 from pathlib import Path
 out = Path("remotion/out")
-tt = {int(re.match(r"short(\d+)_tt", p.stem).group(1)) for p in out.glob("short*_tt.mp4")}
-cov = {int(re.match(r"short(\d+)_ttcover", p.stem).group(1)) for p in out.glob("short*_ttcover.png")}
-print(" ".join(str(n) for n in sorted(tt - cov)))
+# Keep the id exactly as it is on disk. Turning it into an int drops the leading zero, and
+# ShortThumb-short8 does not exist - the composition is ShortThumb-short08. Eight covers failed
+# that way; it is the fourth time today the same normalisation cost a run.
+tt = {re.match(r"short(\d+)_tt", p.stem).group(1) for p in out.glob("short*_tt.mp4")}
+cov = {re.match(r"short(\d+)_ttcover", p.stem).group(1) for p in out.glob("short*_ttcover.png")}
+print(" ".join(sorted(tt - cov, key=lambda s: (int(s), s))))
 PY
 )
 [ -z "$need" ] && { echo "every TikTok render already has a cover"; exit 0; }
