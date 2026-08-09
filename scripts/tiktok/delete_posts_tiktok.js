@@ -38,10 +38,20 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
       const rows = [...document.querySelectorAll('div.css-153feq8')];
       for (const row of rows) {
         const txt = (row.textContent || '').replace(/\s+/g, ' ').trim();
-        // a scheduled row carries its publish date as a chip; a published one does not
-        const scheduled = /\d+月\d+日\s*午[前後]/.test(txt);
+        // A published row carries its publish date too, so the date alone does not tell them
+        // apart - matching on it swept the whole account in one run. A scheduled row is the one
+        // whose edit controls are still dead: TikTok disables them until the post exists.
+        const rr0 = row.getBoundingClientRect();
+        const dead = [...document.querySelectorAll('div.edss2sz8')].filter(e => {
+          const r = e.getBoundingClientRect();
+          return r.y >= rr0.y && r.y < rr0.y + rr0.height && r.x > 1200;
+        }).filter(e => getComputedStyle(e).cursor === 'not-allowed').length;
+        const scheduled = dead >= 3;
         if (schedOnly && !scheduled) continue;
-        if (!all && !match.some(m => txt.includes(m))) continue;
+        // --scheduled with no caption given means every scheduled row; requiring a match too
+        // skipped all of them and reported "nothing left to delete" on a full calendar.
+        if (!all && match.length && !match.some(m => txt.includes(m))) continue;
+        if (!all && !match.length && !schedOnly) continue;
         // views sit in their own cell; a post with an audience is not disposable
         const cells = [...row.children].map(c => (c.textContent || '').trim());
         const views = parseInt((cells.find(c => /^\d[\d,]*$/.test(c)) || '0').replace(/,/g, ''), 10);

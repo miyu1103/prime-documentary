@@ -32,6 +32,24 @@ def camel(slug: str) -> str:
     return "".join(p.capitalize() for p in re.split(r"[-_ ]+", slug) if p)
 
 
+
+def from_short_data(n: int) -> tuple[str, str]:
+    """Opening narration and episode slug, read out of the Short's own source files."""
+    data = ROOT / "remotion" / "src" / "data" / f"short{n}.ts"
+    timing = ROOT / "remotion" / "src" / "data" / f"short{n}_timing.ts"
+    if not data.exists() or not timing.exists():
+        return "", ""
+    m = re.search(r"PD-\d{4}-\d{3}-([a-z0-9]+)", data.read_text(encoding="utf-8"))
+    slug = m.group(1) if m else ""
+    words = re.findall(r'"word":\s*"([^"]+)"', timing.read_text(encoding="utf-8"))
+    if not words:
+        return "", slug
+    text = " ".join(words)
+    # stop at the end of the second sentence: the hook, not the whole script
+    parts = re.split(r"(?<=[.?!])\s+", text)
+    return " ".join(parts[:2]).strip(), slug
+
+
 def parse_range(spec: str) -> list[int]:
     out: list[int] = []
     for part in spec.split(","):
@@ -91,11 +109,17 @@ def main() -> int:
             # The early Shorts pre-date the design files. Their copy still exists - it is what the
             # YouTube upload used - so fall back to that rather than dropping 28 finished videos.
             cfg = yt_config.get(str(n).zfill(2)) or yt_config.get(str(n))
-            if not cfg:
-                problems.append(f"short{n}: no design and no YouTube CONFIG entry")
-                continue
-            slug = cfg["ep"].split("-", 3)[3]
-            angle = re.sub(r"\s*#Shorts\s*$", "", cfg["title"]).strip()
+            if cfg:
+                slug = cfg["ep"].split("-", 3)[3]
+                angle = re.sub(r"\s*#Shorts\s*$", "", cfg["title"]).strip()
+            else:
+                # Last resort for the oldest Shorts, which have neither a design nor a YouTube
+                # CONFIG entry: their own spoken opening. It is the hook the video actually leads
+                # with, so it is the right thing to put in front of a TikTok viewer anyway.
+                angle, slug = from_short_data(n)
+                if not angle:
+                    problems.append(f"short{n}: no design, no CONFIG and no narration to read")
+                    continue
         if len(angle) > CAPTION_CAP:
             angle = angle[:CAPTION_CAP].rsplit(" ", 1)[0]
         angle = angle.rstrip(" .,;:")      # the angle usually already ends in a full stop
