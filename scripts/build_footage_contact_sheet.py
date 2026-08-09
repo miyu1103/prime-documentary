@@ -33,7 +33,14 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
 EPISODES = ROOT / "episodes"
-IMG_EXT = {".png", ".jpg", ".jpeg", ".webp"}
+# .tif was missing until 2026-08-09, and its absence was not a cosmetic bug: a TIF fell
+# through to the ffmpeg branch below, ffmpeg failed to seek 1s into a still, and the tile
+# was drawn as a red UNREADABLE box. 2,953 items on the shelf are TIF -- 1,447 from the
+# Library of Congress and 1,404 from Wikimedia -- so every contact sheet reviewed so far
+# showed the archival half of those sources as blank red. Verdicts were recorded from
+# those sheets. Four "Farm foreclosure sale - NARA" plates, exactly what Prime Finance was
+# short of, sat behind red boxes on the foreclosure sheet.
+IMG_EXT = {".png", ".jpg", ".jpeg", ".webp", ".tif", ".tiff", ".gif", ".bmp"}
 VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv"}
 
 COLS = 5
@@ -163,6 +170,7 @@ def build_sheet(images: list[Path], out: Path, title: str,
     draw = ImageDraw.Draw(canvas)
     draw.text((PAD, 8), title, fill=(235, 235, 240), font=_font(20))
     f_lbl = _font(12)
+    unreadable: list[tuple[str, str]] = []
     for i, img_path in enumerate(images):
         r, c = divmod(i, COLS)
         x = PAD + c * cell_w
@@ -173,7 +181,11 @@ def build_sheet(images: list[Path], out: Path, title: str,
             tile = Image.new("RGB", (THUMB_W, thumb_h), (0, 0, 0))
             tile.paste(im, ((THUMB_W - im.width) // 2, (thumb_h - im.height) // 2))
             canvas.paste(tile, (x, y))
-        except Exception:  # noqa: BLE001
+        except Exception as e:  # noqa: BLE001
+            # Swallowing the reason is how the missing .tif extension survived: the sheet
+            # showed red boxes, a red box read as "bad file", and nobody learned that one
+            # decoder was failing on 2,953 items at once. Collect and report.
+            unreadable.append((img_path.name, f"{type(e).__name__}: {str(e)[:70]}"))
             draw.rectangle([x, y, x + THUMB_W, y + thumb_h], fill=(60, 20, 20))
             draw.text((x + 6, y + 6), "UNREADABLE", fill=(255, 180, 180), font=f_lbl)
         lbl = img_path.name
@@ -191,6 +203,16 @@ def build_sheet(images: list[Path], out: Path, title: str,
                       fill=(255, 170, 120) if warn else (150, 220, 160), font=f_lbl)
     out.parent.mkdir(parents=True, exist_ok=True)
     canvas.save(out)
+    if unreadable:
+        by_reason: dict[str, int] = {}
+        for _, why in unreadable:
+            by_reason[why.split(":")[0]] = by_reason.get(why.split(":")[0], 0) + 1
+        print(f"  !! {len(unreadable)}/{len(images)} tiles could not be decoded — a sheet "
+              f"reviewed with these is a sheet reviewed blind")
+        for reason, n in sorted(by_reason.items(), key=lambda kv: -kv[1]):
+            print(f"     {n:4}  {reason}")
+        for name, why in unreadable[:3]:
+            print(f"     e.g. {name[:64]}  ({why})")
 
 
 def main() -> int:

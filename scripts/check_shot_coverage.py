@@ -33,7 +33,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import search_archive as sa  # noqa: E402  scoring, verdicts and quarantine all live here
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SHOTS = os.path.join(ROOT, "config", "shot_coverage_shots.v001.json")
+SHOTS = os.path.join(ROOT, "config", "shot_coverage_shots.v002.json")
 
 
 def shot_terms(shot: str) -> tuple[list[str], list[str]]:
@@ -54,6 +54,7 @@ def main() -> int:
     with open(SHOTS, encoding="utf-8") as fh:
         cfg = json.load(fh)
     serviceable_min = cfg["thresholds"]["serviceable_min_hits"]
+    still_short = cfg.get("still_short", {})
     channels = {k: v for k, v in cfg["channels"].items()
                 if not args.channel or k == args.channel}
     if not channels:
@@ -127,14 +128,19 @@ def main() -> int:
         print(f"  使える {len(serv)}/{len(shots)}   薄い(1-2) {len(thin)}   ゼロ {len(none)}"
               f"   → {pct:.0f}%")
         if none:
-            # A zero with weak hits behind it is a wording problem, not a supply problem.
-            dry = [s for s in none if weak[s] == 0]
-            phrasing = [s for s in none if weak[s] > 0]
-            if dry:
-                print(f"  素材なし（買う/生成する）: {', '.join(dry)}")
-            for s in phrasing:
-                print(f"  言い回しで届かず: {s} — 弱一致 {weak[s]}件あり"
-                      f" (search_archive --shot \"{s}\" --weak-ok で確認)")
+            # A weak-hit count alone cannot tell a wording problem from a supply problem:
+            # `savings passbook close up` has 5,072 weak hits and exactly two real
+            # passbooks behind them, the rest banknote stills carrying the tag. So a shot
+            # someone has actually LOOKED at reports what they found; only an unexamined
+            # one falls back to the weak count, and says so.
+            for s in none:
+                if s in still_short:
+                    print(f"  確認済み・不足: {s} — {still_short[s]}")
+                elif weak[s] == 0:
+                    print(f"  素材なし（買う/生成する）: {s}")
+                else:
+                    print(f"  未確認・弱一致 {weak[s]}件: {s}"
+                          f" (search_archive --shot \"{s}\" --weak-ok --sheet で見ること)")
         if thin:
             print(f"  薄い: {', '.join(f'{s}({counts[s]}/弱{weak[s]})' for s in thin)}")
         if args.verbose:
