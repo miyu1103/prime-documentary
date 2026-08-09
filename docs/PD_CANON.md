@@ -44,6 +44,7 @@ py -3.11 scripts/yt_schedule_audit.py | head -45  # 予約の現在地
 | ショート 関連リンク | 対象81本すべて設定済（8/7＋8/10） | `node scripts/studio/related_link_batch.js --verify-only` |
 | 関連リンク 行き先未確定 | 8本 | `runs/_cache/related_link_worklist.v002.json` の `unresolved` |
 | TikTok | 3本（カバー付き）／119本 上げ直し残 | Studio の一覧（公開グリッドは遅れる） |
+| TikTok 用レンダー | 122本＋EP62-65の12本（8/10レンダー中） | `ls remotion/out/short*_tt.mp4` |
 | 長尺エピソード | 65（EP62-65 は仕上げ中） | `ls -d episodes/PD-2026-0*` |
 
 ### 長尺の在庫が尽きている
@@ -187,6 +188,9 @@ bash scripts/daily_shorts_push.sh      # ショート投入（索引削除→実
 18. **著作権チェックが緑になるまで送信しない。**早いとチェックが止まる
 19. **1日の投稿上限がある。**回避しない
 20. **3本ごとに Chrome を taskkill してから起動。**同じプロファイルでは既存プロセスに合流するだけ
+20b. **TikTok 版の Composition は別途登録が要る。** `Short-short<N>-tt` が Root.tsx に無いと
+    `render_shorts_tiktok.sh` は12本とも「RENDER DID NOT PRODUCE A FRESH FILE」で失敗する。
+    先に `py -3.11 scripts/register_tiktok_compositions.py --apply`
 
 ### 制作・素材
 
