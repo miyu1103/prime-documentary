@@ -1,6 +1,6 @@
 # Short -> long-form related link, worklist v002
 
-Generated 2026-08-09T12:05:12.217679+00:00 by `scripts/studio/build_related_link_worklist.py`
+Generated 2026-08-09T12:24:27.563960+00:00 by `scripts/studio/build_related_link_worklist.py`
 from the live channel. Do not edit by hand: `related_link_batch.js` uses the JSON beside
 this file as its allowlist, so a hand edit here changes nothing and misleads the reader.
 
@@ -40,24 +40,24 @@ this file as its allowlist, so a hand edit here changes nothing and misleads the
 | 35 | short35 | `3rW-jeKH8Z0` | `Xc_PxdC_75c` | description | yes | Following the deposit rule is what made her a suspect |
 | 36 | short36 | `54Vo5kJj6tk` | `XWYWAgkExH4` | description | yes | Police Took His Phone. Then They Opened It. |
 | 37 | short37 | `ACS2lVlX_mQ` | `An0to4U0hJQ` | description | yes | The Police Broke In — So the Court Let Her Go |
-| 38 | short38 | `EP-iiuy6L-o` | `gR_nzXIyIlk` | legacy+description | **no** | Thirty hours in jail because an algorithm chose his phot |
-| 39 | short39 | `gZknzRSgRaw` | `SOu4Y1NkGGY` | legacy+description | **no** | He showed the officer the receipt and was arrested anywa |
-| 40 | short40 | `sP_lQebksIQ` | `Pmh6h5SfWw4` | legacy+description | **no** | A Judge Took $2.8 Million to Send Kids to Prison |
-| 41 | short41 | `v6CrJ9HtFlg` | `X40EbUw5kzQ` | legacy+description | **no** | Police Are Allowed to Lie to You Until You Confess — Eve |
-| 42 | short42 | `tFHwI4R4tJY` | `4uuY6G0LmHo` | legacy+description | **no** | Police Destroyed His Home Chasing a Stranger — Then Paid |
-| 43 | short43 | `g7q-9SOPDbE` | `tYZuE76Hwdc` | legacy+description | **no** | They Hid the Evidence That Proved Him Innocent — He Spen |
-| 46 | short46 | `HBUYD8Uv4Ak` | `GGW1SIAAgkY` | legacy+description | **no** | Police Skipped His Rights — Then He Learned He Couldn't  |
-| 47 | short47 | `TIWAscG6On8` | `AxOlQ2NIaBU` | legacy+description | **no** | She Was Jailed Because She Was Too Poor to Pay a Fine |
-| 48 | short48 | `nFEJBlEijdw` | `hC5KE6IqmhM` | legacy+description | **no** | Your School Can Search You Without a Warrant — the Supre |
-| 49 | short49 | `wNqYS4j_VwM` | `i95peRcdtz4` | legacy+description | **no** | She Was Handcuffed and Jailed Over a $50 Seatbelt Fine |
-| 50 | short50 | `1FHZ5qA6pgA` | `bSnyfsulna8` | legacy+description | **no** | Police Never Saw the Driver — the Supreme Court Let Them |
-| 51 | short51 | `lDpfSAuFMS8` | `2pLWw_vhfI8` | legacy+description | **no** | The Stop Was Illegal — the Supreme Court Kept the Eviden |
-| 52 | short52 | `SRUWd-5UCxE` | `Enok7A7wGBA` | legacy+description | **no** | Police Raided the Wrong House and Handcuffed an Innocent |
-| 53 | short53 | `qo9r7X_RnI8` | `yRwxBfrOY5o` | legacy+description | **no** | Police Came for a Welfare Check and Left With His Guns — |
-| 58 | short58 | `rDCMEWgsbX4` | `PfdEpNQyaQQ` | description | **no** | 6 Trials. 4 Death Sentences. 23 Years. The Same Prosecut |
-| 59 | short59 | `LKrAG9AhCVY` | `Iw-EPUD2nHg` | description | **no** | A Doctor Reports Police Torture in 1982. The Letter Is B |
-| 63 | short63 | `qvjB7RvpuUc` | `PfdEpNQyaQQ` | description | **no** | 6 Trials. 4 Death Sentences. 23 Years. The Same Prosecut |
-| 66 | short66 | `xhoGSk8JA5c` | `Iw-EPUD2nHg` | description | **no** | A Doctor Reports Police Torture in 1982. The Letter Is B |
+| 38 | short38 | `EP-iiuy6L-o` | `gR_nzXIyIlk` | legacy+description | yes | Thirty hours in jail because an algorithm chose his phot |
+| 39 | short39 | `gZknzRSgRaw` | `SOu4Y1NkGGY` | legacy+description | yes | He showed the officer the receipt and was arrested anywa |
+| 40 | short40 | `sP_lQebksIQ` | `Pmh6h5SfWw4` | legacy+description | yes | A Judge Took $2.8 Million to Send Kids to Prison |
+| 41 | short41 | `v6CrJ9HtFlg` | `X40EbUw5kzQ` | legacy+description | yes | Police Are Allowed to Lie to You Until You Confess — Eve |
+| 42 | short42 | `tFHwI4R4tJY` | `4uuY6G0LmHo` | legacy+description | yes | Police Destroyed His Home Chasing a Stranger — Then Paid |
+| 43 | short43 | `g7q-9SOPDbE` | `tYZuE76Hwdc` | legacy+description | yes | They Hid the Evidence That Proved Him Innocent — He Spen |
+| 46 | short46 | `HBUYD8Uv4Ak` | `GGW1SIAAgkY` | legacy+description | yes | Police Skipped His Rights — Then He Learned He Couldn't  |
+| 47 | short47 | `TIWAscG6On8` | `AxOlQ2NIaBU` | legacy+description | yes | She Was Jailed Because She Was Too Poor to Pay a Fine |
+| 48 | short48 | `nFEJBlEijdw` | `hC5KE6IqmhM` | legacy+description | yes | Your School Can Search You Without a Warrant — the Supre |
+| 49 | short49 | `wNqYS4j_VwM` | `i95peRcdtz4` | legacy+description | yes | She Was Handcuffed and Jailed Over a $50 Seatbelt Fine |
+| 50 | short50 | `1FHZ5qA6pgA` | `bSnyfsulna8` | legacy+description | yes | Police Never Saw the Driver — the Supreme Court Let Them |
+| 51 | short51 | `lDpfSAuFMS8` | `2pLWw_vhfI8` | legacy+description | yes | The Stop Was Illegal — the Supreme Court Kept the Eviden |
+| 52 | short52 | `SRUWd-5UCxE` | `Enok7A7wGBA` | legacy+description | yes | Police Raided the Wrong House and Handcuffed an Innocent |
+| 53 | short53 | `qo9r7X_RnI8` | `yRwxBfrOY5o` | legacy+description | yes | Police Came for a Welfare Check and Left With His Guns — |
+| 58 | short58 | `rDCMEWgsbX4` | `PfdEpNQyaQQ` | description | yes | 6 Trials. 4 Death Sentences. 23 Years. The Same Prosecut |
+| 59 | short59 | `LKrAG9AhCVY` | `Iw-EPUD2nHg` | description | yes | A Doctor Reports Police Torture in 1982. The Letter Is B |
+| 63 | short63 | `qvjB7RvpuUc` | `PfdEpNQyaQQ` | description | yes | 6 Trials. 4 Death Sentences. 23 Years. The Same Prosecut |
+| 66 | short66 | `xhoGSk8JA5c` | `Iw-EPUD2nHg` | description | yes | A Doctor Reports Police Torture in 1982. The Letter Is B |
 | 86 | short86 | `obluRBp2RXU` | `marQjsCagh0` | description | yes | He called safety pure waste and dove anyway |
 | 87 | short87 | `7O9U0aGUQgk` | `marQjsCagh0` | description | yes | He called safety pure waste and dove anyway |
 | 88 | short88 | `WtqLWFhjffc` | `bYcqabvvxak` | description | yes | Police Can Stop and Frisk You Without Arresting You |
@@ -78,15 +78,15 @@ this file as its allowlist, so a hand edit here changes nothing and misleads the
 | 103 | short103 | `WmlASZrzuPI` | `yRwxBfrOY5o` | description | yes | Police Came for a Welfare Check and Left With His Guns — |
 | 104 | short104 | `k0lOXQAcxaM` | `vikfOBHullI` | description | yes | There Was No Coin: $4 Billion in Empty Promises |
 | 105 | short105 | `rh5kP-sLqtg` | `vikfOBHullI` | description | yes | There Was No Coin: $4 Billion in Empty Promises |
-| None | shortNone | `G0W4-iE756k` | `zE3nCUlUmLY` | description | **no** | The phone in his pocket testified against him for months |
-| None | shortNone | `OU0-K_JgDIE` | `zE3nCUlUmLY` | description | **no** | The phone in his pocket testified against him for months |
-| None | shortNone | `SSWm1bcb_A8` | `FTm1icKgycU` | description | **no** | The website he took from never wanted him charged |
-| None | shortNone | `VfZpo-RqvtQ` | `cQFql7tT1fE` | description | **no** | Read Rights or It's Out | Miranda v. Arizona |
-| None | shortNone | `XVIKwOTDLVc` | `5L_HCGJxX_U` | description | **no** | She memorized her attacker's face to be certain |
-| None | shortNone | `XyvWOmjy0e4` | `XWYWAgkExH4` | description | **no** | Police Took His Phone. Then They Opened It. |
-| None | shortNone | `Z7hoCi11NHg` | `5L_HCGJxX_U` | description | **no** | She memorized her attacker's face to be certain |
-| None | shortNone | `eN5btn2-e6s` | `FTm1icKgycU` | description | **no** | The website he took from never wanted him charged |
-| None | shortNone | `nclLM0R9gL0` | `An0to4U0hJQ` | description | **no** | The Police Broke In — So the Court Let Her Go |
+| None | shortNone | `G0W4-iE756k` | `zE3nCUlUmLY` | description | yes | The phone in his pocket testified against him for months |
+| None | shortNone | `OU0-K_JgDIE` | `zE3nCUlUmLY` | description | yes | The phone in his pocket testified against him for months |
+| None | shortNone | `SSWm1bcb_A8` | `FTm1icKgycU` | description | yes | The website he took from never wanted him charged |
+| None | shortNone | `VfZpo-RqvtQ` | `cQFql7tT1fE` | description | yes | Read Rights or It's Out | Miranda v. Arizona |
+| None | shortNone | `XVIKwOTDLVc` | `5L_HCGJxX_U` | description | yes | She memorized her attacker's face to be certain |
+| None | shortNone | `XyvWOmjy0e4` | `XWYWAgkExH4` | description | yes | Police Took His Phone. Then They Opened It. |
+| None | shortNone | `Z7hoCi11NHg` | `5L_HCGJxX_U` | description | yes | She memorized her attacker's face to be certain |
+| None | shortNone | `eN5btn2-e6s` | `FTm1icKgycU` | description | yes | The website he took from never wanted him charged |
+| None | shortNone | `nclLM0R9gL0` | `An0to4U0hJQ` | description | yes | The Police Broke In — So the Court Let Her Go |
 
 ## No justified destination
 

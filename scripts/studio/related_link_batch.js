@@ -225,8 +225,12 @@ async function waitFor(pg, fn, arg, timeoutMs = 20000) {
   }
 }
 
+// offsetParent is part of the test on purpose: the input is in the DOM before it is laid out,
+// and the typing step needs a VISIBLE one. When the wait accepted an invisible input the very
+// next step reported NO_SEARCH_BOX on a box the screenshot showed plainly. Wait for the same
+// thing you are about to use.
 const SEARCH_BOX_PRESENT = (placeholders) => [...document.querySelectorAll("input")]
-  .some((e) => placeholders.some((p) => (e.placeholder || "").includes(p)));
+  .some((e) => e.offsetParent && placeholders.some((p) => (e.placeholder || "").includes(p)));
 
 async function readLabel(pg) {
   return pg.evaluate(() => {
@@ -429,7 +433,8 @@ async function typeAndPick(pg, query, wantTitle) {
     } else {
       streak = 0;
     }
-    console.log(`  short${String(row.short).padEnd(4)} ${row.short_video_id}  ${r.status.padEnd(13)} ${(r.label || '').slice(0, 60)}`);
+    const tag = row.short == null ? '' : `short${row.short}`;   // newer Shorts have no local number
+    console.log(`  ${tag.padEnd(9)} ${row.short_video_id}  ${r.status.padEnd(15)} ${(r.label || '').slice(0, 60)}`);
     await pg.close().catch(() => {});
     if (streak >= 3) {
       console.log('THREE FAILURES IN A ROW - stopping rather than grinding through a broken UI');
