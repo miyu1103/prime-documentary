@@ -46,7 +46,9 @@
     "AR-22240__woman_opening_dark_curtains.mp4": "scan_video_shape: 1280x720 below 1920x1080 -- upscaling into a 1920x1080 film",
     "AR-8132371__person_sitting_on_wheelchair.mp4": "scan_video_shape: 1280x720 below 1920x1080 -- upscaling into a 1920x1080 film",
     "AR-8543191__people_riding_their_wheelchairs.mp4": "scan_video_shape: 1366x720 below 1920x1080 -- upscaling into a 1920x1080 film",
-    "AR-2996079__a_dining_room_with_wooden_chairs_and_table.mp4": "check_cross_episode_reuse: already burned in lech"
+    "AR-2996079__a_dining_room_with_wooden_chairs_and_table.mp4": "check_cross_episode_reuse: already burned in lech",
+    "AR-10159563__woman_sitting_on_a_chair_while_reading_a_magazin.mp4": "REAL IDENTIFIABLE PERSON, age indeterminate and therefore possibly a minor: alone in a lounge chair against a bare wall, face sharp, centre-frame, smiling to camera at 0:51. Category 2. The filename says 'woman ... reading a magazine', so the keyword pass saw nothing; found by opening the shipped frames. Also the wrong subject for the line about negligence suits against nursing homes.",
+    "AR-5712753__chairs_arranged_in_a_circle.mp4": "School gymnasium -- volleyball net and bleachers visible -- under the words 'Clarksburg Nursing Home and Rehabilitation Center'. Not a safety issue; the picture does not mean what the sentence means."
   },
   "reviewed_sheets": [
     "runs/qc/marmet_factory/factory_footage_contact_01.png",
@@ -54,5 +56,8 @@
     "runs/qc/marmet_factory/factory_footage_contact_03.png"
   ],
   "reviewed_by": "claude, read every tile of all 3 sheets 2026-08-04",
-  "note": "57 staged, 42 rejected, 15 accepted. The survivors are corridors, empty chairs and anonymous wheelchairs -- one armchair with a cushion by a window, a ring of empty chairs in shafts of light, a dining table with nobody at it, four corridors and three wheelchairs shot without a face. There is no admission desk, no signature, no handrail and no winter window in the archive. Money and courtroom motifs were rejected on sight: this film may not use either. REVISED 2026-08-04 after running the two tools the design manual names: scan_video_shape dropped 3 (portrait or below 1920x1080) and check_cross_episode_reuse dropped 1 already burned in earlier episodes. Neither defect is visible on a contact sheet."
+  "note": "57 staged, 42 rejected, 15 accepted. The survivors are corridors, empty chairs and anonymous wheelchairs -- one armchair with a cushion by a window, a ring of empty chairs in shafts of light, a dining table with nobody at it, four corridors and three wheelchairs shot without a face. There is no admission desk, no signature, no handrail and no winter window in the archive. Money and courtroom motifs were rejected on sight: this film may not use either. REVISED 2026-08-04 after running the two tools the design manual names: scan_video_shape dropped 3 (portrait or below 1920x1080) and check_cross_episode_reuse dropped 1 already burned in earlier episodes. Neither defect is visible on a contact sheet.",
+  "notes": [
+    "2026-08-10: two clips withdrawn after the shipped-frame review of the finished render (AR-10159563 category 2, AR-5712753 off-subject). The pool review had accepted both. R043 (empty legislative chamber) was examined and KEPT: not a courtroom, no people, no identifiable subject."
+  ]
 }

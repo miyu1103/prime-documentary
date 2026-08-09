@@ -211,6 +211,52 @@ def _words(s: str) -> list[str]:
     return _WORD_RE.findall(s)
 
 
+# Lowercase words that live INSIDE a proper name rather than separating two of them, so that
+# "the Circuit Court of Kanawha County" is counted as one court and not as two entities.
+_NAME_JOINERS = {"of", "de", "la", "van", "von"}
+# Words that open a sentence without naming anyone. Capitalisation here is grammar, not a
+# name, and counting them inflated every sentence by one entity.
+_SENTENCE_OPENERS = {
+    "the", "a", "an", "in", "on", "at", "by", "for", "from", "when", "while", "after",
+    "before", "but", "and", "that", "this", "these", "those", "it", "he", "she", "they",
+    "there", "then", "no", "none", "both", "each", "every", "if", "as", "so", "yet",
+    "her", "his", "their", "its", "what", "which", "who", "nothing", "neither", "not",
+}
+
+
+def _distinct_entities(sentence: str) -> int:
+    """How many different named parties this sentence introduces.
+
+    A run of capitalised tokens (optionally bridged by a joiner such as "of") is one entity.
+    "Brown sued Marmet Health Care Center." names two: a person and a company. Name-dump prose is
+    not defined by how many capitals a sentence contains but by how many DIFFERENT parties it asks
+    the listener to hold at once -- a distinction the token ratio alone cannot make, which is why
+    it flagged three correctly-terse sentences in EP65.
+    """
+    ents: list[str] = []
+    # Punctuation is what separates one name from the next. Scanning a punctuation-stripped token
+    # list merged "Brown, Taylor, Marchio, Marmet and Genesis" into a single run and reported one
+    # entity, so the real name dump passed the check.
+    for clause in re.split(r"[,;:.()\u2014\u2013]|\band\b|\bor\b", sentence):
+        toks = re.findall(r"[A-Za-z][A-Za-z'\-]*", clause)
+        cur: list[str] = []
+        for i, t in enumerate(toks):
+            lead = (i == 0)
+            if t[0].isupper() and not (lead and t.lower() in _SENTENCE_OPENERS):
+                cur.append(t)
+            elif cur and t.lower() in _NAME_JOINERS:
+                cur.append(t)          # "Circuit Court of Kanawha County" stays one court
+            else:
+                if cur:
+                    ents.append(" ".join(cur))
+                    cur = []
+        if cur:
+            ents.append(" ".join(cur))
+    # "The Supreme Court" and "Supreme Court" are the same body to a listener.
+    cleaned = {re.sub(r"^the\s+", "", e.lower()).strip() for e in ents}
+    return len({c for c in cleaned if c})
+
+
 def _proper_noun_tokens(sentence: str) -> tuple[int, int]:
     """(proper_noun_count, total_alpha_tokens) for one sentence. A proper noun is a capitalized
     alphabetic token that is NOT the sentence's first token and is not the pronoun 'I' — a cheap,
@@ -287,8 +333,13 @@ def evaluate(ep_dir: Path) -> dict[str, Any]:
         pn, tok = _proper_noun_tokens(s)
         total_pn += pn
         total_tok += tok
-        if tok >= STUFFED_SENT_MINLEN and pn / tok >= STUFFED_SENT_FRACTION:
-            stuffed.append({"pn": pn, "tok": tok, "sentence": s.strip()[:200]})
+        # A high ratio alone flags sentences whose names ARE the content: "Brown sued Marmet
+        # Health Care Center" cannot be written with fewer proper nouns. Name-dump prose is a
+        # sentence that makes the listener hold three or more different parties at once.
+        if (tok >= STUFFED_SENT_MINLEN and pn / tok >= STUFFED_SENT_FRACTION
+                and _distinct_entities(s) >= 3):
+            stuffed.append({"pn": pn, "tok": tok, "ents": _distinct_entities(s),
+                            "sentence": s.strip()[:200]})
     proper_noun_ratio = (total_pn / total_tok) if total_tok else 0.0
     if proper_noun_ratio > MAX_PROPER_NOUN_RATIO:
         problems.append(f"proper-noun stuffing: density {proper_noun_ratio:.3f} "
