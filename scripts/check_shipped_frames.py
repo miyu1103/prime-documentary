@@ -163,11 +163,23 @@ def delivered_master(epdir: Path) -> tuple[Path | None, str, str]:
     if not recs:
         return None, "", ""
     try:
-        cf = json.loads(recs[-1].read_text(encoding="utf-8")).get("canonical_final") or {}
+        rec = json.loads(recs[-1].read_text(encoding="utf-8"))
     except Exception:  # noqa: BLE001
         return None, recs[-1].name, ""
-    raw = str(cf.get("path") or "").strip()
-    rec_sha = str(cf.get("video_sha256") or "").split(":")[-1].strip()
+    # THREE SHAPES ARE IN THIS REPO, and crashing on the old two would be worse than the defect
+    # being fixed here (the survey that found them hit AttributeError on EP38):
+    #   current  canonical_final: {"path": ..., "video_sha256": ...}   EP48 onward
+    #   EP38     canonical_final: "<path>" + canonical_final_sha256
+    #   legacy   video_file + video_sha256                             EP1-EP30
+    cf = rec.get("canonical_final")
+    if isinstance(cf, dict):
+        raw, rec_sha = cf.get("path"), cf.get("video_sha256")
+    elif isinstance(cf, str):
+        raw, rec_sha = cf, rec.get("canonical_final_sha256")
+    else:
+        raw, rec_sha = rec.get("video_file"), rec.get("video_sha256")
+    raw = str(raw or "").strip()
+    rec_sha = str(rec_sha or "").split(":")[-1].strip()
     if not raw:
         return None, recs[-1].name, rec_sha
     p = Path(raw)

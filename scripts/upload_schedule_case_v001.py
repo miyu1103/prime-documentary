@@ -20,7 +20,45 @@ from pd_factory.providers import load_env
 from pd_factory.providers.youtube import _access_token
 from upload_episode import CHANNEL_ALLOWLIST, get_channel_id, sha256_file, upload_chunks
 
+def _from_meta(epid: str, slug: str, sched_local: str, sched_utc: str) -> dict:
+    """Build a CONFIG entry from that episode's own 09_package/youtube_meta.v001.json.
+
+    Entries above carry the title, description and tags inline, which is a second copy of what the
+    packaging file already says; nothing notices when the two drift, so an edited description can
+    quietly fail to reach YouTube. Here the packaging file is the single source.
+
+    A missing or malformed packaging file is recorded on the entry rather than raised, so one bad
+    episode cannot stop an unrelated upload; main() refuses the moment that slug is selected.
+    """
+    p = ROOT / "episodes" / epid / "09_package" / "youtube_meta.v001.json"
+    entry: dict = {
+        "ep": epid,
+        "video": (ROOT / "episodes" / epid / "08_edit" / f"{slug}_final_bgm.v001.mp4").as_posix(),
+        "sched_local": sched_local, "sched_utc": sched_utc,
+        "meta_source": p.as_posix(),
+    }
+    try:
+        m = json.loads(p.read_text(encoding="utf-8"))
+    except Exception as e:  # noqa: BLE001
+        return {**entry, "_error": f"cannot read {p.name}: {e}"}
+    missing = [k for k in ("title", "description", "tags") if not m.get(k)]
+    if missing:
+        return {**entry, "_error": f"{p.name} has no {', '.join(missing)}"}
+    return {**entry, "title": m["title"], "description": m["description"], "tags": m["tags"]}
+
+
 CONFIG = {
+    # EP62-65, one per day from 16 August. 12:00 JST is the long-form slot: it is filled through
+    # the 15th, and the 16th-18th entries the schedule audit lists are shorts at 06/09/18/21 JST.
+    # Title, description and tags come from each episode's packaging file, not from copies here.
+    "greene": _from_meta("PD-2026-062-greene", "greene",
+                         "2026-08-16T12:00:00+09:00", "2026-08-16T03:00:00Z"),
+    "correa": _from_meta("PD-2026-063-correa", "correa",
+                         "2026-08-17T12:00:00+09:00", "2026-08-17T03:00:00Z"),
+    "memphis": _from_meta("PD-2026-064-memphis", "memphis",
+                          "2026-08-18T12:00:00+09:00", "2026-08-18T03:00:00Z"),
+    "marmet": _from_meta("PD-2026-065-marmet", "marmet",
+                         "2026-08-19T12:00:00+09:00", "2026-08-19T03:00:00Z"),
     "florence": {
         "ep": "PD-2026-037-florence",
         "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-037-florence/08_edit/florence_v005.mp4",
@@ -636,6 +674,10 @@ def main(argv):
                          "private with no publishAt, or this refuses.")
     args = ap.parse_args(argv)
     cfg = CONFIG[args.ep]
+    if cfg.get("_error"):
+        raise SystemExit(f"{args.ep}: {cfg['_error']} -- write the packaging file "
+                         f"({cfg.get('meta_source', '09_package/youtube_meta.v001.json')}) "
+                         f"before scheduling")
     slug = args.ep
     EP = cfg["ep"]
     EPDIR = ROOT / "episodes" / EP

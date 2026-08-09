@@ -51,4 +51,19 @@ if [ "${BLACK:-0}" -gt 0 ] || [ "${FROZEN:-0}" -gt 0 ]; then
   echo "        render would only reproduce this two hours later." >&2
   exit 1
 fi
-echo "[probe] clean -- full render approved"
+# Record it. Rendering the slice and then discarding the measurement is why the HARD
+# probe_receipt gate kept reading a receipt bound to an EARLIER film.json and failing: norfolk,
+# willingham and morton were each waived through with a full-length rescan for want of this call.
+# --probe re-measures this same slice (motion_energy as well as black and freeze) and stamps the
+# current <slug>_film.json sha, which is precisely the binding the acceptance gate looks for.
+EPDIR=$(ls -d episodes/PD-*-"$SLUG" 2>/dev/null | head -1)
+if [ -z "$EPDIR" ]; then
+  echo "[probe] REFUSED: no episodes/PD-*-${SLUG} directory, so the receipt cannot be written." >&2
+  echo "        Acceptance would fail later on a receipt from a different render." >&2
+  exit 1
+fi
+if ! py -3.11 scripts/check_final_acceptance.py "$SLUG" --probe "$OUT"; then
+  echo "[probe] REFUSED: the receipt records a FAIL on this slice -- do not spend the render." >&2
+  exit 1
+fi
+echo "[probe] clean -- full render approved (receipt written and bound to this film.json)"
