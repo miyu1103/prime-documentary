@@ -105,7 +105,13 @@ def main() -> int:
             # without inventing a fake design document merely to satisfy this preflight.
             data_file = DATA / f"{sid}.ts"
             data_text = data_file.read_text(encoding="utf-8") if data_file.is_file() else ""
-            legacy_refs = sorted(set(re.findall(r"\bimg\(['\"](\d+)['\"]\)", data_text)))
+            # Both call shapes are in use: img('01') in the older files, and img(1) where the data
+            # file pads the number itself. Reading only the quoted form declared short82 to have no
+            # plate contract at all - it has 49 plates and every depth map beside them.
+            legacy_refs = sorted({
+                ref.zfill(2)
+                for ref in re.findall(r"\bimg\(\s*['\"]?(\d+)['\"]?\s*\)", data_text)
+            })
             if not legacy_refs:
                 problems.append(f"{sid}: no design found and no legacy img() plate contract")
             for ref in legacy_refs:
