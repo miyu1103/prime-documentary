@@ -58,6 +58,11 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--from", dest="start", required=True, help="YYYY-MM-DD, JST")
     ap.add_argument("--slots", required=True, help="JST hours per day, e.g. 6,12,18,21")
+    ap.add_argument("--avoid-occupied", metavar="JSON",
+                    help="channel-truth dump (runs/shorts_thumbs/yt_scheduled.v001.json). Any JST "
+                         "hour already taken there by a video this script does not own - a "
+                         "long-form episode - is skipped, so a Short never publishes on the same "
+                         "minute as an episode.")
     ap.add_argument("--apply", action="store_true")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
@@ -72,19 +77,48 @@ def main() -> int:
     print(f"{keep} left untouched before {start}; re-spacing {len(move)} at "
           f"{len(slots)}/day ({a.slots} JST)")
 
+    # Hours already used, per JST day, by videos this script does not own. On 2026-08-09 three
+    # long-form episodes sat at 12:00 on days that also carried a Short at 12:00: the episode and
+    # the Short went to the feed on the same minute and competed with each other.
+    occupied: dict[dt.date, set[int]] = {}
+    if a.avoid_occupied:
+        mine = {c[2] for c in cur}
+        for r in json.loads(Path(a.avoid_occupied).read_text(encoding="utf-8"))["scheduled"]:
+            if r["id"] in mine:
+                continue
+            o = dt.datetime.fromisoformat(r["publishAt"].replace("Z", "+00:00")).astimezone(JST)
+            occupied.setdefault(o.date(), set()).add(o.hour)
+        if occupied:
+            print("occupied by episodes: "
+                  + ", ".join(f"{d} {sorted(h)}" for d, h in sorted(occupied.items())))
+
+    # Fallback hours, tried in order, when a requested slot is taken. Kept inside the same waking
+    # window so a displaced Short does not land at 03:00.
+    ladder = [6, 9, 12, 15, 18, 21]
+
     plan = []
     i = 0
     for day in range(400):
         d0 = start + dt.timedelta(days=day)
+        used = set(occupied.get(d0, set()))
         for h in slots:
             if i >= len(move):
                 break
+            if h in used:
+                alt = next((x for x in ladder if x not in used and x not in slots), None)
+                if alt is None:
+                    alt = next((x for x in ladder if x not in used), None)
+                if alt is None:
+                    continue
+                h = alt
+            used.add(h)
             t, n, vid, f = move[i]
             i += 1
             new = dt.datetime(d0.year, d0.month, d0.day, h, tzinfo=JST)
             plan.append((new, n, vid, f, t))
         if i >= len(move):
             break
+    plan.sort(key=lambda p: p[0])
 
     for new, n, vid, f, old in plan:
         mark = "" if new == old else "  <-"
