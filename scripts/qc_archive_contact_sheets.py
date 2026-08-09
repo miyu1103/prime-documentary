@@ -200,10 +200,17 @@ def tile(rec: dict, idx: int) -> Image.Image:
     return cell
 
 
+SOURCE_TAG = ""
+
+
 def sheet_path(theme: str, n: int, kind: str = "labeled") -> str:
     out_dir = os.path.join(QC_DIR, theme)
     os.makedirs(out_dir, exist_ok=True)
-    return os.path.join(out_dir, f"{kind}_{n:02d}.jpg")
+    # The source belongs in the name. Without it a --source run overwrites the sheet a
+    # different source of the same theme was judged from, and a verdict ends up citing a
+    # picture that is no longer there.
+    tag = f"_{SOURCE_TAG}" if SOURCE_TAG else ""
+    return os.path.join(out_dir, f"{kind}{tag}_{n:02d}.jpg")
 
 
 def build_theme(theme: str, recs: list[dict], per_theme: int, refresh: bool) -> dict:
@@ -277,6 +284,8 @@ def main() -> int:
     ap.add_argument("--min-items", type=int, default=1, help="skip themes smaller than this")
     args = ap.parse_args()
 
+    global SOURCE_TAG
+    SOURCE_TAG = args.source or ""
     by_theme = load_ledgers(args.theme, args.source)
     if not by_theme:
         print(f"no ledger rows found in {LEDGER_DIR}"

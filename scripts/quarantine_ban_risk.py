@@ -38,6 +38,9 @@ import sys
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from shelf import shelf_rows  # noqa: E402  the one definition of "on the shelf"
+
 LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
 QUARANTINE = r"H:\pd-media\assets\archive\_quarantine"
 RECORD = os.path.join(LEDGER_DIR, "ban_risk_quarantine.jsonl")
@@ -49,7 +52,10 @@ RECORD = os.path.join(LEDGER_DIR, "ban_risk_quarantine.jsonl")
 RULES = {
     "ban-risk": [
         ("advocacy_extremist",
-         r"\b(ns |national socialist|neo-?nazi|white power|aryan nation)\b"
+         # "ns " with no trailing boundary matched "NS Pearl Harbor" (Naval Station)
+         # and quarantined two US Navy photographs. It has to be the movement's own name.
+         r"\bns revolutionary\b|\bnational socialist\b|\bneo-?nazi\b"
+         r"|\bwhite power\b|\baryan nation\b"
          r"|revolutionary[^|]{0,20}(speech|address)",
          "extremist advocacy — a policy strike ends the channel"),
         ("denial_revisionist",
@@ -89,12 +95,16 @@ RULES = {
          r"hallelujah land|jungle drums|\bbosko\b|hugh harman",
          "blackface-lineage / Censored Eleven animation — unusable regardless of PD status"),
         ("third_party_character",
-         r"walt disney|\bdisney\b|superman|mr\.? bean|baby huey|oswald the lucky|"
-         r"what a cartoon|chester cheetah|keebler|star wars|taxi driver|fireball xl5|"
-         r"cartoon craze|max fleischer",
+         # A bare \bdisney\b matched a night photograph of Disneyland -- a place, not a
+         # character mislabelled pd -- and "taxi driver" matched a real taxi driver reading
+         # a newspaper. Both now need the studio or the film to be named.
+         r"walt disney|disney/|disney's|disney channel|superman|mr\.? bean|baby huey|"
+         r"oswald the lucky|what a cartoon|chester cheetah|keebler|star wars|"
+         r"taxi driver \(19|fireball xl5|cartoon craze|max fleischer",
          "actively owned studio character or feature mislabelled pd/cc0 — Content ID risk"),
         ("off_air_recording",
-         r"wgn cable|\bkvbc\b|wall street warriors|media smart",
+         # \b on media smart: it is a prefix of "media smartphone".
+         r"wgn cable|\bkvbc\b|wall street warriors|\bmedia smart\b",
          "off-air broadcast capture, often with a burned-in station logo"),
         ("fringe_channel_upload",
          r"citizen media news|citizen journalist|peter navarro|bank of ireland bail|"
@@ -106,7 +116,9 @@ RULES = {
         ("conspiracy_pseudoscience",
          r"moon landing hoax|landing was faked|flat earth|chemtrail|9/?11 truth|"
          r"crisis actor|false flag|new world order|deep state exposed|"
-         r"vaccine (hoax|truth)|great reset agenda|illuminati|reptilian",
+         # \b on illuminati: without it, it is a prefix of "illuminations", and 24
+         # photographs of street and holiday lights matched.
+         r"vaccine (hoax|truth)|great reset agenda|\billuminati\b|reptilian",
          "conspiracy content - a monetised channel about money and law cannot carry it"),
         ("named_litigant",
          r"brian david hill",
@@ -136,23 +148,11 @@ RULES = {
 
 
 def load_shelf() -> list[dict]:
-    recs = []
-    for path in sorted(glob.glob(os.path.join(LEDGER_DIR, "*.jsonl"))):
-        base = os.path.basename(path)
-        if base.startswith("rejects") or base.endswith(
-                ("_dedup_removed.jsonl", "_removed.jsonl", "_candidates.jsonl")) \
-                or base in ("factory.jsonl", "ban_risk_quarantine.jsonl"):
-            continue
-        with open(path, encoding="utf-8", errors="replace") as fh:
-            for line in fh:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    recs.append(json.loads(line))
-                except Exception:
-                    continue
-    return recs
+    # The factory shelf used to be excluded here, and it is 88,963 of the items
+    # search_archive offers -- the biggest single block a shot spec draws from. A rule
+    # that only guards the archive half leaves the other half unguarded: the first dry
+    # run over it found 73 declared-synthetic images and six Star Wars stills.
+    return list(shelf_rows(include_factory=True))
 
 
 def already_done() -> set[str]:

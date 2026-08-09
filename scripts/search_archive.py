@@ -80,6 +80,26 @@ def load_feedback() -> dict:
     return adj
 
 
+VIDEO_RES = os.path.join(LEDGER_DIR, "video_resolution.json")
+_VRES: dict | None = None
+
+
+def load_video_resolution() -> dict:
+    """(source:id) -> {w, h} for shelf video, from build_video_resolution_index.py.
+
+    The ledgers carry no width or height for any of the 31,156 videos, so nothing could
+    tell 4K from 320x240 -- and 1,770 of the 2,280 archival videos are below 720p. A shot
+    spec written without this cites SD footage by accident."""
+    global _VRES
+    if _VRES is None:
+        try:
+            with open(VIDEO_RES, encoding="utf-8", errors="replace") as fh:
+                _VRES = json.load(fh)
+        except OSError:
+            _VRES = {}
+    return _VRES
+
+
 def apply_feedback(raw: int, key: str, feedback: dict) -> int:
     """Re-rank a candidate by earlier picks — but only one that is already a candidate.
 
@@ -488,10 +508,22 @@ def main() -> int:
         os.makedirs(os.path.dirname(LAST_QUERY), exist_ok=True)
         with open(LAST_QUERY, "w", encoding="utf-8") as fh:
             json.dump({"shot": args.shot, "rows": rows}, fh, ensure_ascii=False, indent=1)
+        vres = load_video_resolution()
+        sd_offered = 0
         for r in rows:
+            wh = vres.get(f"{r['source']}:{r['id']}")
+            tag = ""
+            if wh:
+                tag = f"  [{wh['w']}x{wh['h']}]"
+                if wh["h"] < 720:
+                    tag += " SD"
+                    sd_offered += 1
             print(f"[{r['n']:2d}] s{r['score']:>3} {r['source']:>9} | "
-                  f"{str(r['title'])[:62]}")
+                  f"{str(r['title'])[:62]}{tag}")
             print(f"      {r['path']}")
+        if sd_offered:
+            print(f"  ! {sd_offered} of these are below 720p — 1,770 of the 2,280 archival "
+                  f"videos are, and an SD insert in a 1080p cut is visible to the viewer")
         print(f"-- {len(hits)} hits"
               + (f"; {skipped_quarantined} ban-risk" if skipped_quarantined else "")
               + (f"; {skipped_in_quarantine} in _quarantine" if skipped_in_quarantine else "")
