@@ -474,6 +474,29 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
     for c in cuts:
         if c.get("kind") == "footage" and c.get("srcSeconds") and c["dur"] > c["srcSeconds"] + 0.05:
             c["loopSource"] = True
+    # A clip a person opened and rejected must never reach a film.json. The builder already
+    # refuses clips it cannot read; a rejected clip reads perfectly, passes every machine measure
+    # of motion, luma and diversity, and is caught by nothing downstream. Measured 2026-08-09:
+    # correa, memphis and marmet each carried 45-52 of them in film.json files written before the
+    # rejections were applied.
+    _verdicts = ROOT / "runs" / "qc" / f"{slug}_clip_verdicts.v001.json"
+    if _verdicts.is_file():
+        try:
+            _rej = dict(json.loads(_verdicts.read_text(encoding="utf-8")).get("rejected") or {})
+        except Exception as exc:  # noqa: BLE001
+            raise SystemExit(f"{_verdicts.name} is unreadable ({exc}); cannot prove this film is "
+                             f"free of clips that were rejected by eye")
+        _used = {}
+        for c in cuts:
+            _n = Path(str(c.get("src") or "")).name
+            if _n in _rej:
+                _used[_n] = _used.get(_n, 0) + 1
+        if _used:
+            for _n in sorted(_used)[:8]:
+                print(f"  rejected clip {_n} used by {_used[_n]} cut(s): {_rej[_n]}")
+            raise SystemExit(f"{len(_used)} clip(s) rejected in visual QC reached the cut list "
+                             f"({sum(_used.values())} cuts). Not writing {slug}_film.json.")
+
     impossible = [c for c in cuts if c.get("kind") == "footage"
                   and not c.get("srcSeconds")]
     if impossible:

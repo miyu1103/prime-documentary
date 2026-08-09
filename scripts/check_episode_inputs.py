@@ -297,6 +297,36 @@ def main() -> int:
                 else:
                     problems.append(message)
 
+    # A clip that a person opened and rejected must not reach the render. The machine gates
+    # measure motion, luma and diversity; a rejected clip passes all three, so nothing downstream
+    # sees it. Measured 2026-08-09: correa 46, memphis 52, marmet 45 rejected clips sitting in
+    # film.json files written before the rejections were applied, with the rebuild that should
+    # have replaced them having failed silently. Deliberately not waivable by
+    # --allow-video-diversity-deviation: that deviation accepts a thin pool, never the rejects.
+    verdicts = ROOT / "runs" / "qc" / f"{slug}_clip_verdicts.v001.json"
+    if verdicts.is_file():
+        try:
+            rejected = set(json.loads(verdicts.read_text(encoding="utf-8")).get("rejected") or {})
+        except Exception as exc:  # noqa: BLE001
+            rejected = set()
+            problems.append(f"{verdicts.name} is unreadable ({exc}) -- cannot prove the film is "
+                            f"free of clips that were rejected by eye")
+        if rejected:
+            # Judge the POOL, not the film.json. The film.json on disk at this point is about
+            # to be rebuilt at [4/7] from whatever the pool holds, so failing on its contents
+            # stops builds that would have come out clean. If the pool is free of rejects, no
+            # rebuild can put one in the film; if it is not, the render is contaminated whatever
+            # the current film.json says.
+            pool = ROOT / "remotion" / "public" / slug / "factory"
+            present = sorted(p.name for p in pool.glob("*.mp4") if p.name in rejected)
+            if present:
+                shown = ", ".join(present[:3])
+                problems.append(
+                    f"{len(present)} clip(s) rejected in visual QC are still staged in "
+                    f"remotion/public/{slug}/factory (e.g. {shown}). The build draws from this "
+                    f"directory, so remove them before rendering -- "
+                    f"runs/qc/{slug}_clip_verdicts.v001.json records why each was rejected.")
+
     comp = ROOT / "remotion" / "src" / "Root.tsx"
     if comp.is_file():
         want = f"Ep{num}"

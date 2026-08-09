@@ -16,9 +16,10 @@ WHAT IT CHECKS (live, against the channel — never a local manifest):
      (on Shorts the description is behind a tap; line 20 is invisible)
   3. the Short and the long-form share a playlist  -> manufactures a co-watch edge
   4. a comment carrying the URL exists on the Short
-  5. the Related-video link is set  -> NOT exposed by the Data API, so it cannot be read.
-     It is recorded as an explicit owner attestation with a timestamp; without it the gate
-     fails. An unverifiable step is not a skippable step.
+  5. the Related-video link is set  -> NOT exposed by the Data API. It is read out of
+     runs/related_link/ledger.jsonl, which scripts/studio/related_link_batch.js writes after
+     reloading the Studio page and reading the control back. --attest-related-video remains as
+     an owner override, but it is now the fallback, not the evidence.
 
 Usage:
   py -3.11 scripts/short_funnel_gate.py --video <shortVideoId> --longform <longVideoId>
@@ -38,6 +39,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 RECEIPTS = ROOT / "runs" / "short_funnel"
+RELATED_LEDGER = ROOT / "runs" / "related_link" / "ledger.jsonl"
 CHANNEL_ALLOWLIST = {"UCuQPtAz1rca9eJ4xhvX0yKA"}
 
 
@@ -118,6 +120,34 @@ def comments_with_url(auth, vid: str, url: str) -> int:
     return n
 
 
+def related_link_evidence(short_id: str, longform_id: str) -> tuple[bool, str]:
+    """Read the related-video link out of the ledger written by scripts/studio/related_link_batch.js.
+
+    That batch drives the real Studio UI and, after each save, reloads the page and reads the
+    control back; a VERIFIED or ALREADY_SET line is a machine reading of the live field, not a
+    promise. The Data API still does not expose this field, so this ledger is the only readable
+    evidence that exists -- but it is evidence, which an attestation never was.
+    """
+    if not RELATED_LEDGER.exists():
+        return False, "no ledger — run scripts/studio/related_link_batch.js --verify-only"
+    latest: dict | None = None
+    for line in RELATED_LEDGER.read_text(encoding="utf-8").splitlines():
+        if not line.strip():
+            continue
+        try:
+            row = json.loads(line)
+        except json.JSONDecodeError:
+            continue
+        if row.get("short_video_id") == short_id:
+            latest = row
+    if latest is None:
+        return False, "not in the ledger"
+    if latest.get("longform_video_id") != longform_id:
+        return False, f"ledger points at {latest.get('longform_video_id')}"
+    ok = latest.get("status") in ("VERIFIED", "ALREADY_SET")
+    return ok, f"{latest.get('status')} at {latest.get('at')}"
+
+
 def main() -> int:
     try:
         sys.stdout.reconfigure(encoding="utf-8")
@@ -153,9 +183,12 @@ def main() -> int:
                    f"short in {len(sp)} playlist(s), long-form in {len(lp)}, shared {len(sp & lp)}"))
     n = comments_with_url(auth, args.video, url)
     checks.append(("a comment carries the URL", n > 0, f"{n} comment(s)"))
-    checks.append(("Related-video link set (owner attestation)",
-                   args.attest_related_video,
-                   "attested" if args.attest_related_video else "NOT attested — Studio > Edit > Related video"))
+    rel_ok, rel_detail = related_link_evidence(args.video, args.longform)
+    checks.append(("Related-video link set (read back from Studio)",
+                   rel_ok or args.attest_related_video,
+                   rel_detail if rel_ok else
+                   (f"owner attestation only ({rel_detail})" if args.attest_related_video
+                    else f"NOT set — {rel_detail}")))
 
     print(f"SHORT     {args.video}  {short['snippet']['title'][:60]}")
     print(f"LONG-FORM {args.longform}  {long_['snippet']['title'][:60]}\n")
