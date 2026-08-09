@@ -87,7 +87,12 @@ def main() -> int:
     stale_mirror: list[Path] = []
 
     for n in sorted(want):
+        # Shorts 01-09 are named with the zero kept - short01.ts, Short-short01-tt. Parsing the
+        # argument to an int drops it, and the check then looked for short1.ts and declared nine
+        # finished Shorts unassembled. Use whichever form actually exists on disk.
         sid = f"short{n}"
+        if not (DATA / f"{sid}.ts").is_file() and (DATA / f"short{n:02d}.ts").is_file():
+            sid = f"short{n:02d}"
         s = designs.get(n)
         if s:
             gen = [p for p in s["plates"] if p.get("source") in {"GENERATE", "REUSE"}]
