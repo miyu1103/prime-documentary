@@ -31,6 +31,15 @@ kept, but they are not the point. THE SHEETS ARE THE CHECK.
     py -3.11 scripts/check_shipped_frames.py --slug weimer
     py -3.11 scripts/check_shipped_frames.py --slug weimer --sheets-only
     py -3.11 scripts/check_shipped_frames.py --slug weimer --render out/weimer.mp4
+    py -3.11 scripts/check_shipped_frames.py --slug weimer --which-master
+
+WHICH MASTER. `--slug` alone used to take the highest vNNN in 08_edit, and a revision number is
+not a date. On willingham a `v002` rendered on 30 July beat the `v001` rendered that morning, and
+three burned-in name tags belonging to the dead render were one step from being filed as
+violations of the live one -- two reviewers' entire reading was invalidated. Selection now
+follows the DELIVERY RECORD (09_package/final_delivery.v*.json), falls back to newest mtime, and
+states which and why in its normal output; a verdict already on disk is checked with
+`--which-master`.
 
 The reviewer writes runs/qc/<slug>_shipped_frames_review.v001.json:
 
@@ -131,18 +140,201 @@ def probe_duration(path: Path) -> float:
         return 0.0
 
 
-def find_render(slug: str, explicit: str | None) -> Path | None:
-    """The finished master. Explicit wins; otherwise the highest revision in 08_edit."""
+def _rev_num(p: Path) -> int:
+    m = re.search(r"\.v(\d+)", p.name)
+    return int(m.group(1)) if m else -1
+
+
+def _mtime(p: Path) -> str:
+    return datetime.fromtimestamp(p.stat().st_mtime, timezone.utc).astimezone().strftime(
+        "%Y-%m-%d %H:%M")
+
+
+def delivered_master(epdir: Path) -> tuple[Path | None, str, str]:
+    """What the episode says it actually delivered: (path, record filename, recorded sha256).
+
+    The latest `09_package/final_delivery.v*.json` is the answer. Delivery records are immutable
+    and superseded rather than edited (`.claude/rules/05-episode-artifacts.md`,
+    scripts/new_delivery_revision.py), so the highest revision of THAT file really is the current
+    statement of which bytes are the episode -- unlike a render filename, which is just whatever
+    the person doing the re-render happened to type.
+    """
+    recs = sorted((epdir / "09_package").glob("final_delivery.v*.json"), key=_rev_num)
+    if not recs:
+        return None, "", ""
+    try:
+        cf = json.loads(recs[-1].read_text(encoding="utf-8")).get("canonical_final") or {}
+    except Exception:  # noqa: BLE001
+        return None, recs[-1].name, ""
+    raw = str(cf.get("path") or "").strip()
+    rec_sha = str(cf.get("video_sha256") or "").split(":")[-1].strip()
+    if not raw:
+        return None, recs[-1].name, rec_sha
+    p = Path(raw)
+    if not p.is_absolute():
+        p = ROOT / p
+    return p, recs[-1].name, rec_sha
+
+
+def select_render(slug: str, explicit: str | None) -> tuple[Path | None, dict]:
+    """The finished master, chosen by WHAT WAS DELIVERED -- never by revision number.
+
+    The rule here used to be `sorted(08_edit/<slug>_final_bgm.v*.mp4)[-1]`: the highest vNNN.
+    A revision number is not a date. On willingham (2026-08-09) a stale `v002` rendered on
+    30 July outranked the `v001` rendered that morning, so three burned-in name tags belonging
+    to a dead render were within one step of being filed as violations of the live master, and
+    two reviewers' entire reading was void. postoffice carries the identical trap right now:
+    its v002 is from 08-03 and the delivered master is v001 from 08-07.
+
+    Order:
+      1. `--render`. The uploader passes the delivery path explicitly and must keep winning.
+      2. the file named by the latest `09_package/final_delivery.v*.json`.
+      3. newest mtime in 08_edit, when there is no usable delivery record.
+
+    Whenever 2 and 3 disagree the selection SAYS SO -- in the normal console output and in the
+    receipt. Quietly picking one is the whole defect; the caller has to be told there was a
+    choice to make.
+    """
+    sel: dict = {"slug": slug, "basis": "", "why": "", "delivery_record": None,
+                 "delivered_path": None, "delivered_sha256_recorded": "",
+                 "newest_mtime_path": None, "candidates": [], "disagreement": False,
+                 "warnings": []}
+
+    epdirs = sorted((ROOT / "episodes").glob(f"PD-*-{slug}"))
+    epdir = epdirs[0] if epdirs else None
+    cands = sorted((epdir / "08_edit").glob(f"{slug}_final_bgm.v*.mp4")) if epdir else []
+    sel["candidates"] = [{"path": _rel(c), "mtime": _mtime(c),
+                          "mb": round(c.stat().st_size / 1e6)}
+                         for c in sorted(cands, key=lambda x: x.stat().st_mtime, reverse=True)]
+    newest = max(cands, key=lambda c: c.stat().st_mtime) if cands else None
+    if newest is not None:
+        sel["newest_mtime_path"] = _rel(newest)
+    delivered, rec_name, rec_sha = delivered_master(epdir) if epdir else (None, "", "")
+    sel["delivery_record"] = rec_name or None
+    sel["delivered_sha256_recorded"] = rec_sha
+    if delivered is not None:
+        sel["delivered_path"] = _rel(delivered)
+
+    # 1. explicit. Still reported against the delivery record, because the uploader can be
+    #    pointed at the wrong file too and this costs nothing to check.
     if explicit:
         p = Path(explicit)
         if not p.is_absolute():
             p = ROOT / p
-        return p if p.is_file() else None
-    for epdir in sorted((ROOT / "episodes").glob(f"PD-*-{slug}")):
-        cands = sorted((epdir / "08_edit").glob(f"{slug}_final_bgm.v*.mp4"))
-        if cands:
-            return cands[-1]
-    return None
+        sel["basis"] = "explicit"
+        sel["why"] = "--render was given; the delivery record below is reported, not used"
+        sel["explicit"] = _rel(p)
+        if (delivered is not None and p.is_file() and delivered.is_file()
+                and p.resolve() != delivered.resolve()):
+            sel["disagreement"] = True
+            sel["warnings"].append(
+                f"--render points at {_rel(p)} but {rec_name} names {_rel(delivered)} as the "
+                f"delivered master. Measuring what you asked for; make sure that is what you meant.")
+        return (p if p.is_file() else None), sel
+
+    if epdir is None:
+        sel["warnings"].append(f"no episodes/PD-*-{slug} directory")
+        return None, sel
+
+    # 2. the delivery record.
+    if delivered is not None and delivered.is_file():
+        if newest is not None and delivered.resolve() != newest.resolve():
+            sel["disagreement"] = True
+            sel["warnings"].append(
+                f"{rec_name} names {delivered.name} ({_mtime(delivered)}) but the newest file in "
+                f"08_edit is {newest.name} ({_mtime(newest)}). MEASURING THE DELIVERED ONE. If "
+                f"{newest.name} is really the master, record it with "
+                f"`scripts/new_delivery_revision.py --slug {slug} --render "
+                f"{_rel(newest)}`, or pass --render.")
+        sel["basis"] = "final_delivery"
+        sel["why"] = f"it is the file {rec_name} names as canonical_final (not the highest vNNN)"
+        return delivered, sel
+
+    if delivered is not None:
+        sel["warnings"].append(
+            f"{rec_name} names {_rel(delivered)}, which is not on disk -- falling back to mtime")
+
+    # 3. mtime.
+    if newest is None:
+        sel["warnings"].append(f"no {slug}_final_bgm.v*.mp4 under {_rel(epdir / '08_edit')}")
+        return None, sel
+    sel["basis"] = "mtime"
+    sel["why"] = ("newest mtime in 08_edit"
+                  + ("" if rec_name else "; this episode has no final_delivery record yet")
+                  + (f"; {len(cands)} revisions present and revision NUMBER was NOT used"
+                     if len(cands) > 1 else ""))
+    if len(cands) > 1:
+        sel["warnings"].append(
+            f"{len(cands)} master revisions and no usable delivery record: chose {newest.name} "
+            f"by mtime. Pass --render if that is not the file you mean.")
+    return newest, sel
+
+
+def describe_selection(sel: dict, render_sha: str) -> None:
+    """Print which master was chosen, why, and whether the delivery record agrees on the bytes."""
+    rec_sha = sel.get("delivered_sha256_recorded") or ""
+    if render_sha:
+        sel["render_sha256"] = render_sha
+        if rec_sha:
+            sel["matches_delivery_sha256"] = render_sha == rec_sha
+            if render_sha != rec_sha:
+                sel["warnings"].append(
+                    f"the bytes measured here ({render_sha[:16]}) are NOT the bytes "
+                    f"{sel.get('delivery_record')} records ({rec_sha[:16]}). Either the master was "
+                    f"re-rendered without a new delivery revision "
+                    f"(scripts/new_delivery_revision.py), or this is the wrong file.")
+    for w in sel["warnings"]:
+        print(f"[shipped-frames] !! MASTER SELECTION: {w}")
+    if sel.get("matches_delivery_sha256"):
+        print(f"[shipped-frames] sha256 == canonical_final in {sel['delivery_record']} -- these "
+              f"are the delivered bytes")
+
+
+def which_master(slug: str, explicit: str | None, do_hash: bool = True) -> int:
+    """`--which-master`: which file WOULD be measured, and which file the verdict on disk DID.
+
+    Asking that by hand -- `grep '"render"' runs/qc/<slug>_shipped_frames.v001.json` -- is how
+    the willingham mix-up was finally caught, after two readings had already been wasted. A
+    habit that depends on remembering to grep is not a habit, so it is one command, and it is
+    non-zero when the two answers disagree.
+    """
+    render, sel = select_render(slug, explicit)
+    print(f"[which-master] {slug}: would measure {_rel(render) if render else 'NOTHING'}")
+    print(f"[which-master]   basis={sel['basis'] or 'none'} -- {sel['why'] or 'no master found'}")
+    if sel.get("delivery_record"):
+        print(f"[which-master]   {sel['delivery_record']} names {sel['delivered_path']} "
+              f"sha={sel['delivered_sha256_recorded'][:16]}")
+    for c in sel["candidates"]:
+        mark = "->" if render and _rel(render) == c["path"] else "  "
+        print(f"[which-master]   {mark} {c['path']}  {c['mtime']}  {c['mb']}MB")
+    for w in sel["warnings"]:
+        print(f"[which-master]   !! {w}")
+    bad = bool(sel["warnings"])
+
+    vp = QC / f"{slug}_shipped_frames.v001.json"
+    if not vp.is_file():
+        print(f"[which-master]   no verdict on disk yet ({_rel(vp)})")
+        return 1 if bad else 0
+    v = json.loads(vp.read_text(encoding="utf-8"))
+    measured = str(v.get("render") or "")
+    print(f"[which-master] {vp.name}: verdict={v.get('verdict')} measured {measured or '(none)'}")
+    if render and measured != _rel(render):
+        print(f"[which-master]   !! THAT VERDICT IS NOT ABOUT THIS MASTER. It describes "
+              f"{measured}. Do not read it as a statement about {_rel(render)}.")
+        bad = True
+    mp = (ROOT / measured) if measured else None
+    if mp is not None and not mp.is_file():
+        print(f"[which-master]   !! the file it measured is no longer there: {measured}")
+        bad = True
+    elif mp is not None and do_hash and v.get("render_sha256"):
+        now = sha256(mp)
+        ok = now == v.get("render_sha256")
+        print(f"[which-master]   that file's sha256 {'==' if ok else '!='} the sha the verdict "
+              f"names ({now[:16]} vs {str(v.get('render_sha256'))[:16]})")
+        if not ok:
+            print("[which-master]   !! the bytes changed under the verdict -- re-run the check")
+            bad = True
+    return 1 if bad else 0
 
 
 def plan_samples(film: dict, video_seconds: float, fps: float) -> tuple[list[dict], list[str]]:
@@ -231,8 +423,9 @@ def main() -> int:
         pass
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--slug", required=True)
-    ap.add_argument("--render", help="the finished master (default: newest "
-                                     "episodes/PD-*-<slug>/08_edit/<slug>_final_bgm.v*.mp4)")
+    ap.add_argument("--render", help="the finished master (default: the file named by the "
+                                     "latest episodes/PD-*-<slug>/09_package/final_delivery.v*"
+                                     ".json, else newest mtime in 08_edit -- never highest vNNN)")
     ap.add_argument("--film", help="film json override (default remotion/src/data/<slug>_film.json)")
     ap.add_argument("--sheets-only", action="store_true",
                     help="extract and tile, then stop. Records verdict=UNREVIEWED so a later "
@@ -243,8 +436,15 @@ def main() -> int:
                          "to these exact bytes)")
     ap.add_argument("--out-dir", help="where frames and sheets go (default "
                                       "runs/qc/shipped_frames/<slug>)")
+    ap.add_argument("--which-master", action="store_true",
+                    help="print which master would be measured, why, and which one the verdict "
+                         "already on disk actually measured -- then stop. Extracts nothing. "
+                         "Exit 1 when the two disagree.")
     a = ap.parse_args()
     slug = a.slug
+
+    if a.which_master:
+        return which_master(slug, a.render, not a.no_hash)
 
     film_path = Path(a.film) if a.film else DATA / f"{slug}_film.json"
     if not film_path.is_absolute():
@@ -254,10 +454,12 @@ def main() -> int:
         return 1
     film = json.loads(film_path.read_text(encoding="utf-8"))
 
-    render = find_render(slug, a.render)
+    render, sel = select_render(slug, a.render)
     if render is None:
         print(f"[shipped-frames] {slug}: NO RENDER -- pass --render, or build "
               f"episodes/PD-*-{slug}/08_edit/{slug}_final_bgm.v*.mp4")
+        for w in sel["warnings"]:
+            print(f"[shipped-frames]   {w}")
         return 1
 
     # The episode's own contract. Missing/invalid is not fatal here -- check_episode_spec.py
@@ -278,6 +480,8 @@ def main() -> int:
     render_sha = "" if a.no_hash else sha256(render)
     print(f"[shipped-frames] {slug}: render={_rel(render)}"
           f" {render.stat().st_size / 1e6:.0f}MB {seconds:.1f}s @{fps:g}fps")
+    print(f"[shipped-frames] master chosen by {sel['basis']}: {sel['why']}")
+    describe_selection(sel, render_sha)
     print(f"[shipped-frames] film={film_path.name} cuts={len(film.get('cuts') or [])} "
           f"hook={film.get('hookSeconds')}s + opening={OPENING_SEC}s -> body starts at "
           f"{float(film.get('hookSeconds') or 0) + OPENING_SEC:g}s")
@@ -494,6 +698,7 @@ def main() -> int:
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "render": _rel(render),
         "render_sha256": render_sha,
+        "render_selection": sel,
         "render_seconds": round(seconds, 3),
         "film": _rel(film_path),
         "fps": fps,
@@ -549,6 +754,10 @@ def main() -> int:
               + (f" cut-{r['cut_index']:04d} {_basename(r['cut_src'])}" if r["matched_a_sample"] else "")
               + f": {r['reason']}")
     print(f"[shipped-frames] verdict -> {_rel(verdict_path)}")
+    print(f"[shipped-frames] it describes {_rel(render)} AND NOTHING ELSE"
+          + (f" (sha {render_sha[:16]})" if render_sha else "")
+          + f". Before acting on it: py -3.11 scripts/check_shipped_frames.py --slug {slug} "
+            f"--which-master")
 
     if verdict == "PASS":
         print(f"[shipped-frames] {slug}: PASS -- {len(sheets)} sheet(s), all read"
