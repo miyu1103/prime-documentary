@@ -53,3 +53,23 @@ AI-generated" badge, traced to Remotion's container comment (`Made with Remotion
 `render_shorts_tiktok.sh` strips container metadata with `-map_metadata -1` as a re-mux, and the
 same footage then shows the AI-generated switch OFF in the uploader. The script re-reads that
 switch before every post and refuses to continue if it is on.
+
+## The cover, and two ways of being lied to about it
+
+TikTok picks its own frame when no cover is set, and this channel's Shorts open on a near-black
+frame. Measured on the live profile on 2026-08-09: a hundred identical black tiles with unreadable
+subtitle text on them. The cover cannot be changed afterwards - on a posted or scheduled item every
+edit control in Studio renders with `cursor: not-allowed` - so it has to be attached during upload,
+and a post that went up without one has to be deleted and replaced.
+
+Both of these produced a run that reported success and delivered nothing:
+
+1. **The editor appears while the file is still uploading** - measured at 57%. A cover set before
+   the video lands is discarded when TikTok finishes processing and generates its own frame. Wait
+   for `アップロード完了`.
+2. **"cover set" only meant a button was clicked.** The script now reads the cover thumbnail's
+   image src before and after, and returns `COVER_DID_NOT_STICK` if it did not change.
+
+One more thing that looks like a failure and is not: the public profile grid shows a *video frame*
+for a scheduled post, not the cover. Check the Studio list instead - its row thumbnail is the real
+cover. Two hours were spent chasing this before looking in the right place.

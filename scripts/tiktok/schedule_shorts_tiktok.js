@@ -248,6 +248,17 @@ async function one(pg, item, slot) {
   // subtitle text, and nothing could be told apart. The cover cannot be changed after posting -
   // on a published or scheduled post every edit control is disabled - so it has to happen here.
   if (item.cover) {
+    // Wait for the upload to actually finish. The editor appears while the file is still going up
+    // - measured at 57% - and a cover set before the video lands is thrown away when TikTok
+    // finishes processing and generates its own frame. short33 was scheduled that way and its tile
+    // came back as a video frame with a burned-in subtitle across it.
+    let uploaded = false;
+    for (let i = 0; i < 60 && !uploaded; i++) {
+      uploaded = await pg.evaluate(() => /アップロード完了/.test(document.body.innerText || ''));
+      if (!uploaded) await sleep(3000);
+    }
+    if (!uploaded) return { status: 'UPLOAD_NEVER_COMPLETED' };
+    await sleep(2500);
     const opened = await pg.evaluate(() => {
       const e = [...document.querySelectorAll('*')]
         .find(n => (n.textContent || '').trim() === 'カバーを編集' && n.children.length === 0);
@@ -264,20 +275,43 @@ async function one(pg, item, slot) {
       if (!imgInput) await sleep(1200);
     }
     if (!imgInput) return { status: 'NO_COVER_INPUT' };
+    // What the cover currently is, so the save can be checked rather than assumed. Two runs
+    // logged "cover set" and produced a tile that was plainly a video frame with a burned-in
+    // subtitle across it - the log was reporting that the click happened, not that it worked.
+    const coverSrc = () => pg.evaluate(() => {
+      const lab = [...document.querySelectorAll('*')]
+        .find(n => (n.textContent || '').trim() === 'カバーを編集' && n.children.length === 0);
+      if (!lab) return null;
+      let box = lab;
+      for (let i = 0; i < 5 && box.parentElement; i++) {
+        box = box.parentElement;
+        const im = box.querySelector('img');
+        if (im) return im.src;
+      }
+      return null;
+    });
+    const before = await coverSrc();
     await imgInput.uploadFile(item.cover);
-    await sleep(6000);
+    await sleep(8000);
     const saved = await pg.evaluate(() => {
-      const b = [...document.querySelectorAll('button')]
-        .find(e => e.offsetParent && (e.textContent || '').trim() === '保存');
-      if (!b) return false;
-      b.setAttribute('data-pd-save', '1');
+      // the last one: the dialog's own save, not any other 保存 on the page behind it
+      const bs = [...document.querySelectorAll('button')]
+        .filter(e => e.offsetParent && (e.textContent || '').trim() === '保存');
+      if (!bs.length) return false;
+      bs[bs.length - 1].setAttribute('data-pd-save', '1');
       return true;
     });
     if (!saved) return { status: 'NO_COVER_SAVE' };
     const sv = await pg.$('[data-pd-save="1"]');
     await sv.click();
-    await sleep(4000);
-    console.log('    cover set');
+    await sleep(5000);
+    await pg.evaluate(() => document.querySelector('[data-pd-save="1"]')?.removeAttribute('data-pd-save'));
+    const after = await coverSrc();
+    if (!after || after === before) {
+      try { await pg.screenshot({ path: `C:/temp/studio_auto/tt_cover_fail_short${item.short}.png` }); } catch {}
+      return { status: 'COVER_DID_NOT_STICK' };
+    }
+    console.log('    cover set and verified');
   }
 
   const box = await pg.$('div[contenteditable="true"]');
@@ -341,8 +375,11 @@ async function one(pg, item, slot) {
   // they finish pops "投稿に進みますか？ 著作権侵害のチェックが完了していません" and STOPS the check.
   // A copyright strike is the one failure mode this channel cannot absorb, so wait for both checks
   // to come back clean rather than clicking through the warning.
+  // Five minutes, not two: the checks only start once the upload lands, and setting the cover now
+  // happens before this point, so the clock starts later than it used to. A two-minute window
+  // reported CHECKS_NOT_CLEAR on a video whose checks were both green moments afterwards.
   let checksDone = false;
-  for (let i = 0; i < 40 && !checksDone; i++) {
+  for (let i = 0; i < 100 && !checksDone; i++) {
     checksDone = await pg.evaluate(() => {
       const s = (document.body.innerText || '').replace(/\s+/g, ' ');
       return s.includes('問題は見つかりませんでした') && s.includes('違反は見つかりませんでした');
