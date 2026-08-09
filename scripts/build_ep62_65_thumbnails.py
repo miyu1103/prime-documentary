@@ -36,7 +36,9 @@ GOLD, RED, BLUE, WHITE = "#E5B53A", "#D22628", "#1F6BFF", "#F2F0EA"
 SPEC: dict[str, tuple[str, list[tuple[str, str, list[str], str]]]] = {
     "greene": ("PD-2026-062-greene", [
         # the kicker carries the second fact; "ONE KNOCK" repeated the headline
-        ("G242", "NOBODY HOME", ["ONE KNOCK", "WAS ENOUGH"], GOLD),
+        # "ONE KNOCK WAS ENOUGH" could not clear the 150px ink floor at any line break -- four
+        # words means a long line means small type. Three short words, same claim, huge type.
+        ("G242", "STILL SERVED", ["NOBODY", "WAS HOME"], GOLD),
         ("G220", "SERVICE", ["THIS COUNTED", "AS NOTICE"], GOLD),
         ("G222", "THE PAPER", ["THE PAPER", "CAME OFF"], RED),
         ("G221", "DID SHE KNOW", ["DID SHE", "EVER KNOW?"], BLUE),
@@ -95,22 +97,53 @@ def build(slug: str, epid: str, plate: str, kicker: str, headline: list[str],
     d = ImageDraw.Draw(im, "RGBA")
     d.rectangle([0, 0, W, int(H * 0.66)], fill=(0, 0, 0, 120))
 
-    # thumb_subject_luma wants an element at least 150 px tall at 1280 wide, so it can be read at
-    # 320 px in a feed. 96 px type measured 71 px of cap height and failed on all four.
-    # Fit to the frame: 168 px overflowed on the longest line and clipped THEIR OWN BILL at the
-    # right edge. Shrink until the widest line fits, but never below the 150 px the gate wants.
-    size = 168
-    while size > 132:
-        f = font(size)
-        if max(d.textlength(l, font=f) for l in headline[:2]) <= W - 96:
+    # thumb_subject_luma measures the tallest connected bright component and wants >= 150 px at
+    # 1280, so the headline has to be physically tall, not merely "big". Shrinking to fit the
+    # width fought that: marmet's "THE DEATH CLAIM" pushed the size down to 132, whose ink
+    # measures 97 px, and acceptance failed. Wrapping to one more line shortens every line, which
+    # lets the type be LARGER. Try two lines and three, keep the tallest ink that fits.
+    words = " ".join(headline).split()
+    MARGIN, MAXW, MAXLINES = 40, W - 80, 3
+
+    def splits(ws: list[str], maxlines: int) -> list[list[str]]:
+        """Every way to break these words into 1..maxlines contiguous lines.
+
+        Greedy filling always produced "ONE KNOCK" / "WAS ENOUGH" for greene, and the width of
+        the second line capped the size 5px under the floor. A headline is four or five words,
+        so the whole search space is a few dozen options -- measure them instead of guessing.
+        """
+        out: list[list[str]] = [[" ".join(ws)]]
+        n = len(ws)
+        for i in range(1, n):
+            out.append([" ".join(ws[:i]), " ".join(ws[i:])])
+            if maxlines >= 3:
+                for j in range(i + 1, n):
+                    out.append([" ".join(ws[:i]), " ".join(ws[i:j]), " ".join(ws[j:])])
+        return out
+
+    best: tuple[int, list[str], int] | None = None
+    for lines in splits(words, MAXLINES):
+        for size in range(248, 96, -4):
+            f = font(size)
+            if max(d.textlength(l, font=f) for l in lines) > MAXW:
+                continue
+            if len(lines) * int(size * 0.94) + 26 + 88 > H:
+                continue
+            ink = max(f.getbbox(l)[3] - f.getbbox(l)[1] for l in lines)
+            if best is None or ink > best[2]:
+                best = (size, lines, ink)
             break
-        size -= 6
+    if best is None:
+        print(f"  {plate}: headline does not fit at any size"); return None
+    size, lines, ink = best
+    if ink < 150:
+        print(f"  {plate}: WARNING ink {ink}px < 150px floor -- acceptance will fail this")
     fh = font(size)
     y = 26
-    for line in headline[:2]:
-        d.text((48, y), line, font=fh, fill=WHITE,
-               stroke_width=7, stroke_fill=(0, 0, 0, 235))
-        y += int(size * 1.06)
+    for line in lines:
+        d.text((MARGIN, y), line, font=fh, fill=WHITE,
+               stroke_width=max(6, size // 24), stroke_fill=(0, 0, 0, 235))
+        y += int(size * 0.94)
 
     fk = font(46)
     kw = d.textlength(kicker, font=fk)
