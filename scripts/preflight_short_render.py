@@ -60,11 +60,16 @@ def main() -> int:
     # batches it held 175 Shorts and 58 GB - and bundling copies the whole thing, so a render died
     # with ENOSPC needing 58 GB against 43 GB free. --prune-mirror drops the Shorts not in this
     # batch; they are derived copies and --fix-mirror puts them back on demand.
+    ap.add_argument("--platform", choices=["yt", "tiktok"], default="yt",
+                    help="tiktok skips the 58s ceiling: that limit is YouTube Shorts' 60s rule, "
+                         "and TikTok accepts up to ten minutes. 13 finished Shorts were blocked "
+                         "from their TikTok render by a constraint that does not apply to TikTok.")
     ap.add_argument("--prune-mirror", action="store_true",
                     help="remove mirrored Shorts outside this batch before syncing")
     ap.add_argument("--fix-mirror", action="store_true",
                     help="re-sync public_min from public/shorts instead of just reporting it")
     a = ap.parse_args()
+    platform = a.platform
     want: set[int] = set()
     for s in a.shorts:
         want |= parse_range(s)
@@ -142,7 +147,7 @@ def main() -> int:
                     problems.append(f"{sid}: audio is older than its timing/line contract")
             total_match = re.search(r"TOTAL_SEC\s*=\s*([0-9.]+)",
                                     timing.read_text(encoding="utf-8") if timing.is_file() else "")
-            if total_match and float(total_match.group(1)) > 58.0:
+            if platform == "yt" and total_match and float(total_match.group(1)) > 58.0:
                 problems.append(f"{sid}: duration {total_match.group(1)}s exceeds 58s")
         if f'"Short-{sid}-yt"' not in rtx:
             problems.append(f"{sid}: composition Short-{sid}-yt is not registered in Root.tsx")
