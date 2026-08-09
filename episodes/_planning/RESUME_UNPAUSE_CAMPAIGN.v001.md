@@ -4,9 +4,26 @@
 **新しいチャットで再開すること。**このスレを continue しても上限は戻らない。
 **レンダーは会話と独立したバックグラウンドプロセスなので、チャットを閉じても走り続ける。**
 
-## 2026-08-09 実測チェックポイント（最新・ここから読むこと）
+## 2026-08-09 16:00 JST 実測チェックポイント（最新・ここから読むこと）
 
-**残る非公開の長尺は willingham / norfolk / morton の3本だけ。**
+**3本ともアップロード段階に入った。norfolk は公開済み、残り2本は予約でアップロード中。**
+
+- **norfolk `H8j_K1x9Dog` は 16:01 に public になった**（予約ではなく即時公開）。
+  原因は `upload_schedule_case_v001.py` の CONFIG に書かれた `sched_utc` が
+  **2026-08-07**（過去日）だったこと。過去の publishAt は予約として扱われず、
+  アップロードした瞬間に公開される。スクリプト自身の verify が検知して例外を投げたため、
+  受領記録 v002 が書かれずチェーンが止まっていた（手で書いて再開させた）。
+  公開のまま残した理由: 内容は全ゲート緑（shipped-frames PASS / delivery v002 / APR-0002）で、
+  実測時点で 0 views・処理中。承認済みの動画を20時間ずらすために非公開へ戻すのは
+  初速を捨てるうえ、それ自体が外部公開操作にあたる。
+- **同じ罠が willingham(8/5) と morton(8/6) にもあった** → 8/13・8/14 12:00 JST へ修正済み。
+  `initiate_upload` に**過去日を拒否するガード**を追加し、norfolk の旧日付で実際に
+  拒否されることを確認した（commit b90cd9aa）。
+- **12:00 JST は長尺専用**。ショートは 6/9/18/21。`reslot_short_schedule.py --avoid-occupied`
+  が長尺の入っている時刻を避ける。**willingham/morton が着いたら再実行して 8/13・8/14 の
+  12:00 にいるショートを退かすこと。**
+
+**（以下は 2026-08-09 午前時点の記録）残る非公開の長尺は willingham / norfolk / morton の3本だけ。**
 
 - **flowers `PfdEpNQyaQQ` と postoffice `4FlCaOVpln0` は既に public**（API実測）。
   旧 `0iDUT0gzBiQ` / `0sjw_1OxCVk` は private・予約なしのまま残る（永久に公開されない）。
@@ -52,6 +69,29 @@ willingham のレンダーが2回失敗。エラーは
   これを知らずに、きれいなエピソードを1時間止めた。
 - 完了判定はログの `DONE` ではなく**成果物のタイムスタンプ**で行う（6日前のログを読んで誤報した）。
 - 公開状況は**必ずAPI**。ローカルの `youtube_schedule_result` は更新されない。
+
+---
+
+## 2026-08-09 11:10 JST 実測チェックポイント（3本とも出荷準備完了・自動アップロード待機）
+
+- **norfolk**: 05:50マスター(sha 7c4c612f)。18枚×読者B+C全読・reject 0・PASS。納品v002。
+  APR-0002(10偏差・実測ノート)。全尺スキャン黒0凍結0。**16:01に自動アップロード→8/10 12:00**
+  (`--replaces 6VL_mA6OiS0`、スクリプト=scratchpad/auto_norfolk_upload.sh、クォータ切れで16:00リセット待ちのみ)。
+- **willingham**: 08:45マスター(sha e01e2103)。**罠を1つ発見・修正**: check_shipped_frames が
+  リビジョン最大の `willingham_final_bgm.v002.mp4`(7/30旧)を掴み、旧焼き込みの名札3件を今日の
+  マスターと誤認しかけた。v002は `08_edit/superseded/` に隔離し、正マスターで再生成→B+C再読了
+  →reject 0・PASS。納品v002・APR-0002(10偏差)。全尺スキャン黒0凍結0。
+  **norfolk受領書を待って自動アップロード→8/13** (`--replaces dueMY2lSu8w`)。
+- **morton**: 07:29レンダーは**類型2で不合格**(AF-BG-7372/7373=実在の女子学生2名、読者2名一致
+  →原寸で確定)。ブロックリスト追加(cat2)→prune→film再構築→10:32再レンダー(sha 66409b8c)。
+  再審査17枚×B+C・reject 0・PASS。納品v002・APR-0002(12偏差)。全尺スキャン凍結0・黒0.633s×1(閾値内)。
+  **willinghamの後に自動アップロード→8/14** (`--replaces Gx_i5aMJWLM`、フラグ=runs/qc/morton_ready_to_upload.flag)。
+- **アップロード順序はチェーンで保証**(次の枠を取る順=norfolk→willingham→morton。
+  scratchpad/auto_upload_will_morton.sh が前段の受領書/フラグを待つ)。3本で6,150ユニット。
+- **機構修正が実際に効いた**: render_queue.sh後段ループのstale-lock検出が10:35に発火し
+  デッドロックを1回防止。Remotionタイムアウト120sで browser-setup 失敗も再発なし。
+- 残った持ち越し: flowersのverdict復旧(非sheets-only再実行)/probe受領書の自動発行機構/
+  check_shipped_frames のリビジョン選択罠(恒久修正はツール側で。今回はv002隔離で回避)。
 
 ---
 
