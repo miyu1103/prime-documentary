@@ -73,3 +73,18 @@ Both of these produced a run that reported success and delivered nothing:
 One more thing that looks like a failure and is not: the public profile grid shows a *video frame*
 for a scheduled post, not the cover. Check the Studio list instead - its row thumbnail is the real
 cover. Two hours were spent chasing this before looking in the right place.
+
+## TikTok caps how much you can upload in a day
+
+Rebuilding the account on 2026-08-09 stopped after a handful of videos with the content check
+stuck. The page said why, once anyone looked at it:
+
+    コンテンツの簡易チェック  本日のチェック回数の上限に到達しました。明日またお試しください。
+
+The music-copyright check stays green; it is the content check that is rate limited, per day, per
+account. Waiting does not help - it is the account being told it is uploading too much.
+
+The script returns `CHECK_LIMIT_REACHED` and stops the whole batch. Do not work around it by
+loosening the gate: a fresh account that deletes a hundred videos and uploads a hundred more in one
+evening is the exact shape of behaviour these limits exist to catch, and this channel cannot
+absorb a ban. Re-run the next day - finished items are skipped, so it simply continues.

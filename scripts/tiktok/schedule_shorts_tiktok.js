@@ -11,7 +11,28 @@
 // so an interrupted run resumes.
 
 const fs = require('fs');
+const { execSync, spawn } = require('child_process');
 const puppeteer = require('puppeteer-core');
+
+// TikTok's uploader spawns a pile of workers per video and never lets them go: 262 CDP targets
+// after three uploads, at which point navigation starts timing out and the copyright checks stop
+// reporting in time. Recycling the browser every few videos is the only thing that holds over a
+// run of a hundred.
+// Three, not eight: the uploader's leftover workers make navigation start timing out by the
+// fourth video. Measured - 262 CDP targets after three uploads.
+const RECYCLE_EVERY = 3;
+const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+const PROFILE = 'C:/temp/studio_auto/work_profile';
+
+function restartChrome() {
+  try { execSync('taskkill /F /IM chrome.exe', { stdio: 'ignore' }); } catch {}
+  const p = spawn(CHROME, [
+    '--remote-debugging-port=9222', `--user-data-dir=${PROFILE}`,
+    '--no-first-run', '--no-default-browser-check',
+    'https://www.tiktok.com/tiktokstudio/upload',
+  ], { detached: true, stdio: 'ignore' });
+  p.unref();
+}
 
 const QUEUE = JSON.parse(fs.readFileSync('C:/temp/studio_auto/tt_queue.json', 'utf8'));
 const OUT = 'C:/temp/studio_auto/tt_clean_result.jsonl';
@@ -379,12 +400,25 @@ async function one(pg, item, slot) {
   // happens before this point, so the clock starts later than it used to. A two-minute window
   // reported CHECKS_NOT_CLEAR on a video whose checks were both green moments afterwards.
   let checksDone = false;
-  for (let i = 0; i < 100 && !checksDone; i++) {
-    checksDone = await pg.evaluate(() => {
+  let limited = false;
+  for (let i = 0; i < 100 && !checksDone && !limited; i++) {
+    const st = await pg.evaluate(() => {
       const s = (document.body.innerText || '').replace(/\s+/g, ' ');
-      return s.includes('問題は見つかりませんでした') && s.includes('違反は見つかりませんでした');
+      return {
+        clear: s.includes('問題は見つかりませんでした') && s.includes('違反は見つかりませんでした'),
+        // TikTok caps how many content checks an account may run in a day. Once that is hit the
+        // check never returns and waiting is pointless - and, more to the point, it is the account
+        // being told it is uploading too much. Stop the batch rather than push through it.
+        limited: /本日のチェック回数の上限/.test(s),
+      };
     });
-    if (!checksDone) await sleep(3000);
+    checksDone = st.clear;
+    limited = st.limited;
+    if (!checksDone && !limited) await sleep(3000);
+  }
+  if (limited) {
+    console.log('    TikTok: daily content-check limit reached - stopping for today');
+    return { status: 'CHECK_LIMIT_REACHED' };
   }
   console.log(`    copyright/content checks clear: ${checksDone}`);
   if (!checksDone) return { status: 'CHECKS_NOT_CLEAR' };
@@ -452,18 +486,52 @@ async function one(pg, item, slot) {
   const todo = QUEUE.filter(q => !done.has(q.short));
   const slots = slotsFrom(START, todo.length + SKIP).slice(SKIP);
   console.log(`${todo.length} to schedule, 4/day from ${START}`);
-  const b = await puppeteer.connect({ browserURL: 'http://127.0.0.1:9222', defaultViewport: null });
-  const pg = await b.newPage();
+  let b = await puppeteer.connect({ browserURL: 'http://127.0.0.1:9222', defaultViewport: null });
+  let pg = await b.newPage();
   await pg.setViewport({ width: 1500, height: 1100 });
   let ok = 0, streak = 0;
   for (let i = 0; i < todo.length; i++) {
+    if (i > 0 && i % RECYCLE_EVERY === 0) {
+      console.log('  recycling the browser');
+      try { await b.disconnect(); } catch {}
+      restartChrome();
+      await sleep(20000);
+      for (let k = 0; k < 10; k++) {
+        try { b = await puppeteer.connect({ browserURL: 'http://127.0.0.1:9222', defaultViewport: null }); break; }
+        catch { await sleep(5000); }
+      }
+      pg = await b.newPage();
+      await pg.setViewport({ width: 1500, height: 1100 });
+    }
     const item = todo[i], slot = slots[i];
     let r;
     try { r = await one(pg, item, slot); }
-    catch (e) { r = { status: 'ERROR', detail: e.message.slice(0, 90) }; }
+    catch (e) {
+      r = { status: 'ERROR', detail: e.message.slice(0, 90) };
+      // Chrome dying mid-run left every later item failing on a detached frame - three in a row and
+      // the batch stopped with 118 still to do. Rebuild the browser and carry on instead.
+      if (/detached|Target closed|Session closed|WebSocket|Protocol error|Navigation timeout|timed out/i.test(e.message)) {
+        console.log('  browser died - rebuilding');
+        try { await b.disconnect(); } catch {}
+        restartChrome();
+        await sleep(20000);
+        for (let k = 0; k < 12; k++) {
+          try { b = await puppeteer.connect({ browserURL: 'http://127.0.0.1:9222', defaultViewport: null }); break; }
+          catch { await sleep(5000); }
+        }
+        try { pg = await b.newPage(); await pg.setViewport({ width: 1500, height: 1100 }); } catch {}
+        i--;                       // this one never got its chance
+        streak = 0;
+        continue;
+      }
+    }
     r.short = item.short;
     fs.appendFileSync(OUT, JSON.stringify(r) + '\n');
     console.log(`  short${item.short}  ${r.status}  ${r.when || r.detail || ''}`);
+    if (r.status === 'CHECK_LIMIT_REACHED') {
+      console.log('DAILY LIMIT - stopping. Re-run tomorrow; finished items are skipped.');
+      break;
+    }
     if (r.status === 'SCHEDULED') { ok++; streak = 0; } else { streak++; }
     if (streak >= 3) { console.log('THREE FAILURES IN A ROW - stopping'); break; }
     await sleep(4000 + Math.floor(Math.random() * 4000));
