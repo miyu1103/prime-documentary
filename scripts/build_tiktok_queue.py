@@ -124,7 +124,9 @@ def main() -> int:
             angle = angle[:CAPTION_CAP].rsplit(" ", 1)[0]
         angle = angle.rstrip(" .,;:")      # the angle usually already ends in a full stop
         caption = (f"{angle}.\nFull case on YouTube: {YT_HANDLE}\n"
-                   f"#{camel(slug)} #Documentary #TrueStory #Law")
+                   # The episode slug is a name invented for our own files - #Tyler, #Hinders -
+                   # and nobody browses it. Carry the post on tags people actually follow instead.
+                   f"#truecrime #lawtok #documentary #truestory")
         queue.append({"short": n, "file": str(video).replace("\\", "/"),
                       "caption": caption, "cover": str(cover).replace("\\", "/")})
 
