@@ -53,6 +53,17 @@ def measure_lufs(path: Path) -> float:
     return integrated
 
 
+def loudnorm_stats(path: Path) -> dict:
+    r = subprocess.run([
+        "ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
+        "-af", "loudnorm=I=-14:TP=-1.5:LRA=6:print_format=json", "-f", "null", "-",
+    ], capture_output=True, text=True, check=True)
+    matches = re.findall(r"\{[\s\S]*?\}", r.stderr)
+    if not matches:
+        raise RuntimeError(f"could not parse loudnorm analysis for {path}")
+    return json.loads(matches[-1])
+
+
 def split_caption_segments(text: str) -> list[str]:
     # 1) split at sentence AND soft boundaries: . ! ? ; : , 。、 and spaced em/en dashes " — "
     raw = re.split(r"(?<=[.!?;:,。、])\s+|\s+[—–]\s+", text)
@@ -122,7 +133,7 @@ def write_timing(short: str, lines: list[dict], caps: list[dict], total: float) 
     print(f"timing -> {out.relative_to(ROOT)}  (lines={len(windows)} captions={len(caps)})")
 
 
-def build_mix(short: str, ep: str, narration: Path, total: float, lines: list[dict]) -> Path:
+def build_mix(short: str, ep: str, narration: Path, total: float, lines: list[dict], voice_tempo: float = 1.0) -> Path:
     out_audio = MEDIA / "episodes" / ep / "07_audio"
     rem_public = ROOT / "remotion" / "public" / "shorts" / f"short{short}" / "audio"
     out_audio.mkdir(parents=True, exist_ok=True)
@@ -152,7 +163,8 @@ def build_mix(short: str, ep: str, narration: Path, total: float, lines: list[di
     # 2) a gentle full-mix glue compressor lifts quiet passages.
     # 3) loudnorm with a tighter LRA (=6) plus a final limiter keep the loudness constant over time.
     filters = [
-        f"[0:a]speechnorm=p=0.95:e=6.25:r=0.0008:l=1,asplit=4[vmix][vk1][vk2][vk3]",
+        f"[0:a]atempo={voice_tempo:.6f},speechnorm=p=0.95:e=6.25:r=0.0008:l=1,"
+        "asplit=4[vmix][vk1][vk2][vk3]",
         # Owner 2026-08-02: "音量が地中で下がる。何の意味もなく。" Measured on short82 and
         # short41: there is NO mid-video sag (thirds are -15.0 / -14.9 / -14.6 dBFS). What is
         # audible is a ~10 dB HOLE every 8-10 s, landing exactly on the inter-line gaps, because
@@ -179,15 +191,22 @@ def build_mix(short: str, ep: str, narration: Path, total: float, lines: list[di
     premaster = out_audio / f"short{short}_premaster.wav"
     run(["ffmpeg", "-y", *inputs, "-filter_complex", ";".join(filters),
          "-map", "[mix]", "-t", str(total), "-c:a", "pcm_s16le", str(premaster)])
-    # Pass 2: measure integrated loudness, apply ONE static gain to hit -14 LUFS exactly, then limit.
-    measured = measure_lufs(premaster)
-    gain_db = round(-14.0 - measured, 2)
+    # Pass 2: two-pass linear loudnorm. Supplying the measured values makes this a static
+    # transform (no mid-short pumping) while the true-peak constraint remains codec-safe.
+    stats = loudnorm_stats(premaster)
+    measured = float(stats["input_i"])
+    loudnorm = (
+        "loudnorm=I=-14:TP=-1.5:LRA=6:linear=true"
+        f":measured_I={stats['input_i']}:measured_TP={stats['input_tp']}"
+        f":measured_LRA={stats['input_lra']}:measured_thresh={stats['input_thresh']}"
+        f":offset={stats['target_offset']}:print_format=summary"
+    )
     out = out_audio / f"short{short}_final_mix_v002_en_us.mp3"
     run(["ffmpeg", "-y", "-i", str(premaster),
-         "-af", f"volume={gain_db}dB,alimiter=level_in=1:level_out=1:limit=0.97",
+         "-af", loudnorm,
          "-t", str(total), "-c:a", "libmp3lame", "-b:a", "192k", str(out)])
     premaster.unlink(missing_ok=True)
-    print(f"loudness: premaster={measured:.2f} LUFS -> static gain {gain_db:+.2f} dB -> target -14 LUFS")
+    print(f"loudness: premaster={measured:.2f} LUFS -> two-pass linear -14 LUFS / -1.5 dBTP")
     rem_public.mkdir(parents=True, exist_ok=True)
     (rem_public / out.name).write_bytes(out.read_bytes())
     return out
@@ -204,17 +223,30 @@ def main() -> int:
     ap.add_argument("--tail", type=float, default=TAIL,
                     help=f"trailing pad seconds after the last spoken line (default {TAIL}). "
                          "Lower it (e.g. 0.4) to land a short under the 40s method target.")
+    ap.add_argument("--max-total", type=float, default=0.0,
+                    help="pitch-preserving tempo fit to this total duration; 0 disables fitting")
     args = ap.parse_args()
     index = ROOT / "episodes" / args.ep / "06_audio" / f"short{args.short}_narration_index.v002.en_us.json"
     idx = json.loads(index.read_text("utf-8"))
-    lines = idx["lines"]
+    source_lines = idx["lines"]
     narration = Path(idx["master"])
+    source_voice_end = max(ln["end"] for ln in source_lines)
+    voice_tempo = 1.0
+    if args.max_total:
+        available = args.max_total - args.tail
+        if available <= 0:
+            raise SystemExit("--max-total must be greater than --tail")
+        voice_tempo = max(1.0, source_voice_end / available)
+        if voice_tempo > 1.15:
+            raise SystemExit(f"required voice tempo {voice_tempo:.3f} exceeds the review limit 1.15")
+    lines = [{**ln, "start": ln["start"] / voice_tempo, "end": ln["end"] / voice_tempo}
+             for ln in source_lines]
     voice_end = max(ln["end"] for ln in lines)
     total = round(voice_end + args.tail, 3)
     caps = build_captions(lines)
     write_timing(args.short, lines, caps, total)
-    mix = build_mix(args.short, args.ep, narration, total, lines)
-    print(f"voice_end={voice_end:.2f}s total={total:.2f}s")
+    mix = build_mix(args.short, args.ep, narration, total, lines, voice_tempo)
+    print(f"voice_tempo={voice_tempo:.3f} voice_end={voice_end:.2f}s total={total:.2f}s")
     print(f"mix -> {mix}  ({dur(mix):.2f}s)")
     return 0
 

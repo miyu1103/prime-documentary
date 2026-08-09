@@ -31,6 +31,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 import search_archive as sa  # noqa: E402  scoring, verdicts and quarantine all live here
+from shelf import shelf_rows  # noqa: E402  the one definition of "on the shelf"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SHOTS = os.path.join(ROOT, "config", "shot_coverage_shots.v002.json")
@@ -76,43 +77,31 @@ def main() -> int:
             weak[s] = 0
 
     scanned = 0
-    for fn in sorted(os.listdir(sa.LEDGER_DIR)):
-        if not fn.endswith(".jsonl") or fn.startswith("rejects") or fn in (
-                "purged.jsonl", "ban_risk_quarantine.jsonl", "shot_feedback.jsonl") \
-                or fn.endswith(("_removed.jsonl", "_candidates.jsonl")):
+    for rec in shelf_rows():
+        fp = rec.get("file_path", "") or ""
+        if args.kind and sa.kind_of(fp) != args.kind:
             continue
-        with open(os.path.join(sa.LEDGER_DIR, fn), encoding="utf-8",
-                  errors="replace") as fh:
-            for line in fh:
-                try:
-                    rec = json.loads(line)
-                except Exception:
-                    continue
-                fp = rec.get("file_path", "") or ""
-                if args.kind and sa.kind_of(fp) != args.kind:
-                    continue
-                if f"{rec.get('source')}:{rec.get('id')}" in quarantined:
-                    continue
-                if "_quarantine" in fp.lower():
-                    continue
-                if verdicts.get((rec.get("theme", ""),
-                                 rec.get("source", ""))) == "unusable":
-                    continue
-                scanned += 1
-                fbkey = f"{rec.get('source')}:{rec.get('id')}"
-                exists = None
-                for shot, (words, bigrams) in terms.items():
-                    sc = sa.apply_feedback(
-                        sa.shot_score(rec, words, bigrams, True), fbkey, feedback)
-                    if sc <= 0:
-                        continue
-                    if exists is None:            # stat once per row, not once per shot
-                        exists = os.path.exists(fp)
-                    if not exists:
-                        continue
-                    weak[shot] += 1
-                    if sc > 15:
-                        counts[shot] += 1
+        if f"{rec.get('source')}:{rec.get('id')}" in quarantined:
+            continue
+        if "_quarantine" in fp.lower():
+            continue
+        if verdicts.get((rec.get("theme", ""), rec.get("source", ""))) == "unusable":
+            continue
+        scanned += 1
+        fbkey = f"{rec.get('source')}:{rec.get('id')}"
+        exists = None
+        for shot, (words, bigrams) in terms.items():
+            sc = sa.apply_feedback(
+                sa.shot_score(rec, words, bigrams, True), fbkey, feedback)
+            if sc <= 0:
+                continue
+            if exists is None:            # stat once per row, not once per shot
+                exists = os.path.exists(fp)
+            if not exists:
+                continue
+            weak[shot] += 1
+            if sc > 15:
+                counts[shot] += 1
 
     print(f"scored {scanned:,} shelf rows"
           + (f" (kind={args.kind})" if args.kind else "") + "\n")

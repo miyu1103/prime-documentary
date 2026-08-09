@@ -12,7 +12,7 @@ drops for no reason". Shortening the gap and lifting the ducked music floor remo
 
 Usage:
   py -3.11 scripts/build_all_short_audio.py --dry-run
-  py -3.11 scripts/build_all_short_audio.py [--limit 5] [--only 86,87]
+  py -3.11 scripts/build_all_short_audio.py [--limit 5] [--only 86,87] [--voice-stage draft]
 """
 from __future__ import annotations
 
@@ -43,6 +43,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--only", default="", help="comma-separated short numbers")
+    ap.add_argument("--voice-stage", choices=("draft", "master"), default="master")
     args = ap.parse_args()
     only = {x.strip() for x in args.only.split(",") if x.strip()}
 
@@ -99,7 +100,8 @@ def main() -> int:
             print(f"[{i}/{len(todo)}] short{j['nn']} SKIP - no lines file"); fail += 1; continue
         rc, out = run(["py", "-3.11", "scripts/gen_newshort_narration.py",
                        "--short", j["nn"], "--ep", j["ep"],
-                       "--text-json", str(j["spec"]), "--gap", GAP])
+                       "--text-json", str(j["spec"]), "--gap", GAP,
+                       "--voice-stage", args.voice_stage])
         if rc:
             print(f"[{i}/{len(todo)}] short{j['nn']} NARRATION FAILED: {out[-160:]}"); fail += 1; continue
         rc, out = run(["py", "-3.11", "scripts/build_short_mix.py",

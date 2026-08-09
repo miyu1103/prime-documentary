@@ -29,7 +29,7 @@ LIST="$*"
 CSV="$(echo "$LIST" | tr ' ' ',')"
 
 echo "=== preflight ==="
-py -3.11 scripts/preflight_short_render.py "$CSV" --fix-mirror || {
+py -3.11 scripts/preflight_short_render.py "$CSV" --prune-mirror --fix-mirror || {
   echo "preflight FAILED - not rendering"; exit 1; }
 
 echo "=== free space before bundling ==="

@@ -33,6 +33,9 @@ import sys
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from shelf import shelf_rows  # noqa: E402  the one definition of "on the shelf"
+
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
 QC_DIR = r"H:\pd-media\assets\archive\_qc"
@@ -76,39 +79,10 @@ def kind_of(path: str) -> str:
     return "image"
 
 
-def load_absent() -> set[str]:
-    """(source:id) keys whose file is not on disk. Built by build_absent_index.py."""
-    if not os.path.exists(ABSENT):
-        print("  ! absent_index.json missing - run build_absent_index.py; counts will "
-              "include deleted files")
-        return set()
-    with open(ABSENT, encoding="utf-8", errors="replace") as fh:
-        return set(json.load(fh).get("absent", {}))
-
-
 def load_shelf() -> list[dict]:
-    absent = load_absent()
-    recs = []
-    dropped_absent = 0
-    for path in sorted(glob.glob(os.path.join(LEDGER_DIR, "*.jsonl"))):
-        base = os.path.basename(path)
-        if base.startswith("rejects") or base in NOT_STOCK or base.endswith(
-                ("_dedup_removed.jsonl", "_removed.jsonl", "_candidates.jsonl")):
-            continue
-        with open(path, encoding="utf-8", errors="replace") as fh:
-            for line in fh:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    r = json.loads(line)
-                except Exception:
-                    continue
-                if f"{r.get('source')}:{r.get('id')}" in absent:
-                    dropped_absent += 1
-                    continue
-                recs.append(r)
-    print(f"  shelf {len(recs):,} rows (excluded {dropped_absent:,} deleted)")
+    """The archive shelf, factory reported separately. Rule lives in shelf.py."""
+    recs = list(shelf_rows(include_factory=False))
+    print(f"  shelf {len(recs):,} rows")
     return recs
 
 

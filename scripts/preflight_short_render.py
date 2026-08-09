@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refuse to start a Shorts render that is going to fail. Checks the four things that have failed.
+"""Refuse to start a Shorts render that is going to fail. Checks known render aborts.
 
 Every one of these cost a full render before it was found, because Remotion only reports the
 problem after the bundle is built and the first frames are attempted:
@@ -14,6 +14,7 @@ problem after the bundle is built and the first frames are attempted:
      before the depth maps existed and cost a second render.
   4. The composition not registered in Root.tsx, which fails as "composition not found" only after
      bundling.
+  5. A referenced audio/kinetic/CTA file missing, or audio older than its line/timing contract.
 
 Usage:
   py -3.11 scripts/preflight_short_render.py 132 133 134
@@ -23,6 +24,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import sys
 from pathlib import Path
@@ -82,18 +84,32 @@ def main() -> int:
     for n in sorted(want):
         sid = f"short{n}"
         s = designs.get(n)
-        if not s:
-            problems.append(f"{sid}: no design found")
-            continue
-
-        gen = [p for p in s["plates"] if p.get("source") == "GENERATE"]
-        for p in gen:
-            img = PUB / sid / f"{sid}_{p['n']:02d}.png"
-            if not img.exists():
-                problems.append(f"{sid}: plate {p['n']} has no delivered image ({img.name})")
-                continue
-            if not img.with_name(img.stem + "_depth.png").exists():
-                problems.append(f"{sid}: {img.name} has no depth map - the WebGL plate will abort")
+        if s:
+            gen = [p for p in s["plates"] if p.get("source") in {"GENERATE", "REUSE"}]
+            for p in gen:
+                img = PUB / sid / f"{sid}_{p['n']:02d}.png"
+                if not img.exists():
+                    problems.append(f"{sid}: plate {p['n']} has no delivered image ({img.name})")
+                    continue
+                if not img.with_name(img.stem + "_depth.png").exists():
+                    problems.append(f"{sid}: {img.name} has no depth map - the WebGL plate will abort")
+        else:
+            # Shorts 33-43 predate the consolidated short_designs JSON. Their assembled
+            # TypeScript is the machine contract: resolve every img('NN') reference and require
+            # both the plate and its depth map. This preserves the same abort-prevention gate
+            # without inventing a fake design document merely to satisfy this preflight.
+            data_file = DATA / f"{sid}.ts"
+            data_text = data_file.read_text(encoding="utf-8") if data_file.is_file() else ""
+            legacy_refs = sorted(set(re.findall(r"\bimg\(['\"](\d+)['\"]\)", data_text)))
+            if not legacy_refs:
+                problems.append(f"{sid}: no design found and no legacy img() plate contract")
+            for ref in legacy_refs:
+                img = PUB / sid / f"{sid}_{ref}.png"
+                if not img.exists():
+                    problems.append(f"{sid}: legacy plate {ref} is missing ({img.name})")
+                    continue
+                if not img.with_name(img.stem + "_depth.png").exists():
+                    problems.append(f"{sid}: {img.name} has no depth map - the WebGL plate will abort")
 
         # Compare the WHOLE short directory, not a list of file kinds. Enumerating kinds was wrong
         # twice in a row: first it missed the staged fx/*.mp4 clips (render 404'd on fx_03.mp4),
@@ -106,8 +122,28 @@ def main() -> int:
             if not m.exists() or m.stat().st_size != src.stat().st_size:
                 stale_mirror.append(src)
 
-        if not (DATA / f"{sid}.ts").exists():
+        data_file = DATA / f"{sid}.ts"
+        if not data_file.exists():
             problems.append(f"{sid}: not assembled (remotion/src/data/{sid}.ts missing)")
+        else:
+            data_text = data_file.read_text(encoding="utf-8")
+            refs = set(re.findall(rf"['\"](shorts/{sid}/[^'\"]+)['\"]", data_text))
+            for ref in sorted(refs):
+                if not (ROOT / "remotion" / "public" / ref).is_file():
+                    problems.append(f"{sid}: referenced public asset is missing: {ref}")
+
+            audio = PUB / sid / "audio" / f"{sid}_final_mix_v002_en_us.mp3"
+            timing = DATA / f"{sid}_timing.ts"
+            line_files = list((ROOT / "episodes").glob(
+                f"PD-2026-*/09_package/{sid}_lines.v001.json"))
+            if audio.is_file() and timing.is_file():
+                newer_than = [timing, *line_files]
+                if any(path.stat().st_mtime > audio.stat().st_mtime for path in newer_than):
+                    problems.append(f"{sid}: audio is older than its timing/line contract")
+            total_match = re.search(r"TOTAL_SEC\s*=\s*([0-9.]+)",
+                                    timing.read_text(encoding="utf-8") if timing.is_file() else "")
+            if total_match and float(total_match.group(1)) > 58.0:
+                problems.append(f"{sid}: duration {total_match.group(1)}s exceeds 58s")
         if f'"Short-{sid}-yt"' not in rtx:
             problems.append(f"{sid}: composition Short-{sid}-yt is not registered in Root.tsx")
         if f'"ShortThumb-{sid}"' not in rtx:

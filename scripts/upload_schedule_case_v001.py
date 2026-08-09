@@ -334,8 +334,8 @@ CONFIG = {
     "norfolk": {
         "ep": "PD-2026-053-norfolk",
         "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-053-norfolk/08_edit/norfolk_final_bgm.v001.mp4",
-        "sched_local": "2026-08-07T12:00:00+09:00",
-        "sched_utc": "2026-08-07T03:00:00Z",
+        "sched_local": "2026-08-10T12:00:00+09:00",
+        "sched_utc": "2026-08-10T03:00:00Z",
         "title": '4 Sailors Confess to One Murder. The DNA Clears Each One. The Detective Finds Another.',
         "description": 'On July 8, 1997, a Navy sailor came home from a week at sea and found his 18-year-old wife, Michelle Moore-Bosko, dead in their apartment near the Norfolk, Virginia naval base. There was no sign of forced entry. The wounds, a medical examiner noted, were clustered and of uniform depth — the signature of a single attacker.\n\nWithin hours, a neighbor named Danial Williams was in an interrogation room. Roughly eleven hours later, before dawn, he confessed to a murder he did not commit, after being falsely told he had failed a polygraph and warned about the death penalty. His account did not match how Michelle died, so the statement was taken again, and corrected, until it agreed with the crime scene.\n\nIn December 1997 the DNA excluded him. Police did not question the confession; they questioned who else must have been there. The theory grew a man at a time: his roommate Joseph Dick, whose Navy duty records placed him aboard his ship; Eric Wilson, questioned about nine hours; Derek Tice, arrested in Florida; and three more sailors — Richard Pauley, Geoffrey Farris and John Danser — who never confessed at all. By February 1999, all seven charged men had been excluded by DNA.\n\nThat same month, a letter left a Virginia prison cell. Omar Ballard, who was a friend of Michelle\'s and had frequently been inside her apartment, wrote that he had killed her. In March 1999 his DNA matched, and he remains the only person whose DNA was ever found at that scene. He confessed voluntarily and said, in both statements and later under oath, that he acted alone. Prosecutors did not release the sailors. They recast Ballard as an eighth attacker. Joseph Dick, excluded by DNA, pleaded guilty in April 1999 — a month and a half after the state\'s own laboratory identified the real killer.\n\nThe undoing took years. Federal courts threw out Derek Tice\'s conviction and prosecutors dropped his charges in 2011. In September 2016, U.S. District Judge John A. Gibney Jr. ruled that Danial Williams and Joseph Dick were actually innocent, writing that "by any measure, the evidence shows the defendants\' innocence." In March 2017, Governor Terry McAuliffe granted absolute pardons to all four men, including Eric Wilson, who had finished his sentence years earlier. In 2018 the Commonwealth of Virginia paid $3.5 million and the City of Norfolk paid $4.9 million more — roughly $8.4 million in all.\n\nDetective Robert Glenn Ford, who obtained the confessions, was never criminally charged over this case. In 2010 a federal jury convicted him of extortion and of lying to the FBI in unrelated matters, and in February 2011 a federal judge sentenced him to 12 and a half years.\n\nSome imagery in this film is AI-assisted, symbolic and illustrative only. It is not authentic archival footage, and no real person\'s likeness is shown.\n\nSources include: Williams v. Brown (E.D. Va., 2016); Tice v. Johnson (Fourth Circuit); the PBS Frontline documentary The Confessions and its published case timeline; Associated Press reporting on the 2018 Virginia and Norfolk settlements; U.S. Department of Justice releases on the Ford prosecution; and the National Registry of Exonerations.\n\n#NorfolkFour #FalseConfession #WrongfulConviction',
         "tags": ['Norfolk Four', 'false confession', 'coerced confession', 'wrongful conviction', 'police interrogation', 'DNA evidence', 'actual innocence', 'Danial Williams', 'Joseph Dick', 'Derek Tice', 'Eric Wilson', 'Omar Ballard', 'Navy sailors', 'Norfolk Virginia', 'criminal justice', 'documentary'],
@@ -820,6 +820,11 @@ def main(argv):
     print(f"OK {EP}: title={cfg['title']!r}")
     print(f"OK video={VIDEO.name} {VIDEO.stat().st_size/1e6:.0f}MB sha_ok=True")
     print(f"OK thumb={THUMB.name} caps={CAPS.name}")
+    # 2026-08-09: norfolk carried a stale 08-07 date; a PAST publishAt makes YouTube publish the
+    # upload IMMEDIATELY and publicly (measured: H8j_K1x9Dog). Refuse it here so even a dry-run fails.
+    if datetime.fromisoformat(cfg["sched_utc"].replace("Z", "+00:00")) <= datetime.now(timezone.utc):
+        raise RuntimeError(f"sched_utc {cfg['sched_utc']} is in the PAST -- YouTube would publish "
+                           f"immediately and publicly; fix this episode's date in EPISODES first")
     print(f"OK schedule local={cfg['sched_local']} utc={cfg['sched_utc']} (private + publishAt)")
     if args.dry_run:
         print("DRY_RUN_OK no external writes")
@@ -843,7 +848,16 @@ def main(argv):
     except Exception as e:
         cap_err = str(e); print(f"WARN captions upload failed (burned-in remain): {cap_err}")
     token = _fresh_token()
-    st = get_state(token, vid); status = ((st.get("items") or [{}])[0].get("status") or {})
+    # 2026-08-09: read-after-write lag -- a GET fired right after the status update can return
+    # publishAt=None for a few seconds even when the schedule stuck (measured on H8j_K1x9Dog:
+    # verify None at t+1s, correct at t+8s). Retry the read before declaring failure; a real
+    # failure (e.g. a PAST publishAt silently published the video) stays wrong on every read.
+    status = {}
+    for _attempt in range(3):
+        st = get_state(token, vid); status = ((st.get("items") or [{}])[0].get("status") or {})
+        if status.get("privacyStatus") == "private" and status.get("publishAt") == cfg["sched_utc"]:
+            break
+        time.sleep(10)
     if status.get("privacyStatus") != "private" or status.get("publishAt") != cfg["sched_utc"]:
         raise RuntimeError(f"verify failed privacy={status.get('privacyStatus')} publishAt={status.get('publishAt')}")
     res = {"schema_version": "1.0.0", "episode_id": EP, "mode": "scheduled", "video_id": vid,

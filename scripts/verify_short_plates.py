@@ -73,7 +73,7 @@ def main() -> int:
         line_ids = None
         for s in d["shorts"]:
             plates = s.get("plates") or []
-            if not any(p and p.get("prompt") or (p and p.get("source") == "FOOTAGE") for p in plates):
+            if not any(p and (p.get("prompt") or p.get("source") in {"FOOTAGE", "REUSE"}) for p in plates):
                 continue
             done += 1
             sid = s.get("short_id", "?")
@@ -92,6 +92,7 @@ def main() -> int:
 
             gen = [p for p in plates if p and p.get("source") == "GENERATE"]
             foot = [p for p in plates if p and p.get("source") == "FOOTAGE"]
+            reuse = [p for p in plates if p and p.get("source") == "REUSE"]
             # A plate that ASKED for footage and could not get it is not a design defect - the
             # ledger genuinely has no crop-safe clip for some subjects, and 135 plates fell back
             # to GENERATE for that reason. Judge the intent, not the outcome; the outcome is
@@ -99,11 +100,18 @@ def main() -> int:
             fallback = [p for p in gen if p.get("converted_from_footage")]
             intended = len(foot) + len(fallback)
             share = intended / max(1, len(plates))
-            if not (0.15 <= share <= 0.50):
+            # A reuse-only design deliberately derives its complete visual track from approved,
+            # episode-specific long-form plates. Requiring unrelated archive footage here would
+            # weaken continuity and misclassify a zero-generation reuse workflow as incomplete.
+            reuse_only = bool(reuse) and not gen and not foot
+            if not reuse_only and not (0.15 <= share <= 0.50):
                 fails.append(f"{tag}: intended-FOOTAGE share {share:.0%} outside 15-50%")
             for p in foot:
                 if not p.get("bound_file"):
                     fails.append(f"{tag} n{p.get('n')}: FOOTAGE plate has no bound clip")
+            for p in reuse:
+                if not p.get("source_plate"):
+                    fails.append(f"{tag} n{p.get('n')}: REUSE plate has no source_plate")
 
             for p in plates:
                 if not p:
@@ -137,12 +145,13 @@ def main() -> int:
             distinct = len(set(x for x in subs if x))
             if distinct < 20:
                 fails.append(f"{tag}: only {distinct} distinct plate subjects (need >=20)")
-            stats.append((tag, len(gen), len(foot), distinct))
+            stats.append((tag, len(gen), len(foot), distinct, len(reuse)))
 
     print(f"checked {done} shorts with plates")
     if stats:
-        g = sum(s[1] for s in stats); ft = sum(s[2] for s in stats)
-        print(f"  GENERATE {g}  real FOOTAGE {ft}  actual footage share {ft/(g+ft):.0%}")
+        g = sum(s[1] for s in stats); ft = sum(s[2] for s in stats); reuse = sum(s[4] for s in stats)
+        print(f"  GENERATE {g}  REUSE {reuse}  real FOOTAGE {ft}  "
+              f"actual footage share {ft/max(1, g+reuse+ft):.0%}")
     if fails:
         print(f"\n{len(fails)} FAILURES:")
         for x in fails[:40]:

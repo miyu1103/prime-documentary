@@ -41,6 +41,9 @@ from PIL import Image, ImageDraw, ImageFont
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from shelf import shelf_rows  # noqa: E402  the one definition of "on the shelf"
+
 LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
 QC_DIR = r"H:\pd-media\assets\archive\_qc"
 VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv", ".avi", ".mpeg", ".mpg", ".m4v"}
@@ -67,28 +70,17 @@ def kind_of(path: str) -> str:
     return "other"
 
 
-def load_ledgers(theme_filter: str | None) -> dict[str, list[dict]]:
-    """theme -> records. Skips rejects/tombstones and the pre-archive factory ledger."""
+def load_ledgers(theme_filter: str | None,
+                 source_filter: str | None = None) -> dict[str, list[dict]]:
+    """theme -> records actually on the shelf. The rule itself lives in shelf.py."""
     by_theme: dict[str, list[dict]] = collections.defaultdict(list)
-    for path in sorted(glob.glob(os.path.join(LEDGER_DIR, "*.jsonl"))):
-        base = os.path.basename(path)
-        if base.startswith("rejects") or base.endswith(
-                ("_dedup_removed.jsonl", "_removed.jsonl", "_candidates.jsonl")) \
-                or base in ("factory.jsonl",):
+    for rec in shelf_rows(include_factory=False):
+        theme = rec.get("theme") or "_unthemed"
+        if theme_filter and theme != theme_filter:
             continue
-        with open(path, encoding="utf-8", errors="replace") as fh:
-            for line in fh:
-                line = line.strip()
-                if not line:
-                    continue
-                try:
-                    rec = json.loads(line)
-                except Exception:
-                    continue
-                theme = rec.get("theme") or "_unthemed"
-                if theme_filter and theme != theme_filter:
-                    continue
-                by_theme[theme].append(rec)
+        if source_filter and rec.get("source") != source_filter:
+            continue
+        by_theme[theme].append(rec)
     return by_theme
 
 
@@ -277,13 +269,15 @@ def write_verdict_template(by_theme: dict[str, list[dict]]) -> str:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--theme", help="one theme only (default: all)")
+    ap.add_argument("--source", help="one source only — the unjudged units are "
+                    "theme x source, and a theme-wide sheet stratifies them apart")
     ap.add_argument("--per-theme", type=int, default=48,
                     help="items sampled per theme, stratified by source (default 48 = 2 sheets)")
     ap.add_argument("--refresh", action="store_true", help="rebuild sheets that already exist")
     ap.add_argument("--min-items", type=int, default=1, help="skip themes smaller than this")
     args = ap.parse_args()
 
-    by_theme = load_ledgers(args.theme)
+    by_theme = load_ledgers(args.theme, args.source)
     if not by_theme:
         print(f"no ledger rows found in {LEDGER_DIR}"
               + (f" for theme={args.theme}" if args.theme else ""))

@@ -3,7 +3,7 @@
 # render -> BGM/master-VO remux -> post-render gate. Every stage is checked; the first
 # failure stops the chain so nothing downstream is built on a bad input.
 #
-#   scripts/_finish_episode.sh <slug> <CompId> <publicNN>
+#   scripts/_finish_episode.sh <slug> <CompId> <publicNN> [--allow-video-diversity-deviation]
 #   scripts/_finish_episode.sh flowers Ep54Flowers 54
 #
 # Assumes i2v for this episode is COMPLETE and the GPU is free -- a render and an i2v job
@@ -17,6 +17,7 @@ cd /c/Users/aab15/Documents/prime-documentary
 SLUG="${1:?usage: _finish_episode.sh <slug> <CompId> <publicNN>}"
 COMP="${2:?composition id required}"
 NUM="${3:?public dir number required}"
+ALLOW_DIVERSITY="${4:-}"
 LOG="out_finish_${SLUG}.log"
 : > "$LOG"
 
@@ -26,7 +27,12 @@ die(){ say "STOPPED -- $*"; exit 1; }
 say "START $(date)"
 
 say "[0/7] input pre-flight (fails in seconds, not hours)"
-py -3.11 scripts/check_episode_inputs.py --slug "$SLUG" >> "$LOG" 2>&1 || {
+INPUT_ARGS=(--slug "$SLUG")
+if [ "$ALLOW_DIVERSITY" = "--allow-video-diversity-deviation" ]; then
+  INPUT_ARGS+=(--allow-video-diversity-deviation)
+  say "  REVIEW-CUT DEVIATION: strict distinct-video floor may remain red; publish is blocked"
+fi
+py -3.11 scripts/check_episode_inputs.py "${INPUT_ARGS[@]}" >> "$LOG" 2>&1 || {
   grep -E "^\[inputs\]|^  - " "$LOG" | tail -12 | sed "s/^/[finish:$SLUG]   /"
   die "inputs missing -- fix the list above; nothing was rendered"
 }
@@ -39,6 +45,17 @@ say "[2/7] copy i2v motion into the render-visible public dir"
 mkdir -p "remotion/public/${SLUG}/motion"
 cp -n "H:/pd-media/assets/ai_video/${SLUG}/motion/"*.mp4 "remotion/public/${SLUG}/motion/" 2>/dev/null
 say "  motion clips visible: $(ls remotion/public/${SLUG}/motion/*.mp4 2>/dev/null | wc -l)"
+
+say "[2b/7] enforce episode blocklist after source copy (img + motion)"
+# The source archive is intentionally immutable, so a rejected i2v can reappear every time the
+# render-visible pool is refreshed. Pruning only before this copy is not durable: Willingham's
+# blocked P01/P03/P26 motion plates were copied back and reached the film builder again. Check
+# both pools after every copy; prune_pool_by_blocklist moves matches recoverably and is a no-op
+# when the episode has no scoped rejection.
+py -3.11 scripts/prune_pool_by_blocklist.py --slug "$SLUG" --pool img >> "$LOG" 2>&1 \
+  || die "img blocklist prune failed"
+py -3.11 scripts/prune_pool_by_blocklist.py --slug "$SLUG" --pool motion >> "$LOG" 2>&1 \
+  || die "motion blocklist prune failed"
 
 say "[3/7] rebuild asset manifest v003 (filesystem scan + per-asset content check)"
 py -3.11 scripts/build_asset_manifest_motionfirst.py --slug "$SLUG" >> "$LOG" 2>&1

@@ -65,6 +65,12 @@ def _face_share(path: Path) -> float | None:
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--slug", required=True)
+    ap.add_argument(
+        "--allow-video-diversity-deviation",
+        action="store_true",
+        help=("permit a review-cut build when the only pool shortfall is distinct footage/motion; "
+              "the deviation remains printed and check_spec_satisfied still reports it"),
+    )
     a = ap.parse_args()
     slug = a.slug
 
@@ -216,7 +222,11 @@ def main() -> int:
                         f"remotion/public/{slug}/img: {', '.join(absent)}")
     factory = list((pub / "factory").glob("*.mp4")) if (pub / "factory").is_dir() else []
     if len(factory) < MIN_FACTORY:
-        problems.append(f"only {len(factory)} factory clip(s) (need >= {MIN_FACTORY})")
+        message = f"only {len(factory)} factory clip(s) (need >= {MIN_FACTORY})"
+        if a.allow_video_diversity_deviation:
+            notes.append(f"REVIEW-CUT DEVIATION accepted: {message}")
+        else:
+            problems.append(message)
     motion = list((pub / "motion").glob("*.mp4")) if (pub / "motion").is_dir() else []
 
     qc = list((ep / "05_visuals").glob("factory_clip_qc.v*.json"))
@@ -276,12 +286,16 @@ def main() -> int:
                     f"~{no_reuse} footage cuts, so ~{no_reuse - len(accepted) - motion_n} clip(s) "
                     f"must repeat. Stage more to avoid it, or accept the deviation knowingly")
             if len(accepted) < need:
-                problems.append(
+                message = (
                     f"only {len(accepted)} clip(s) survived visual QC, but a {secs / 60:.0f}-minute "
                     f"film needs about {need} at the reuse cap ({len(rows) - len(accepted)} were "
                     f"rejected). Stage replacements with scripts/stage_episode_footage.py "
                     f"--slug {slug} before building -- a thin pool comes back as a "
                     f"footage_diversity failure after the render, not before it.")
+                if a.allow_video_diversity_deviation:
+                    notes.append(f"REVIEW-CUT DEVIATION accepted: {message}")
+                else:
+                    problems.append(message)
 
     comp = ROOT / "remotion" / "src" / "Root.tsx"
     if comp.is_file():

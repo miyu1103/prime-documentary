@@ -6,7 +6,7 @@ the design (angle, five lines, 23 plates), the -14 LUFS mix and the caption timi
 archive clips, and the generated plates dropped into remotion/public/shorts/short<NN>/.
 
 What it does:
-  1. verifies every GENERATE plate has a delivered image (refuses to assemble a Short with holes)
+  1. verifies every GENERATE/REUSE plate has a delivered image (refuses to assemble a Short with holes)
   2. copies each bound archive clip into fx/, centre-cropped to a native 1080x1920 at 30 fps,
      and records provenance (ledger title, licence, source) in fx/RIGHTS.json
   3. writes remotion/src/data/short<NN>.ts, laying the 23 plates across the five line windows
@@ -284,10 +284,29 @@ def plan_kinetic(sid: str, short: dict, cut_bounds: dict[str, list[tuple[float, 
             sys.exit(f"{sid} {sfx}: {', '.join(bad)} on screen, but {lid} does not say it")
         rows.append(f"    {{src: 'shorts/{sid}/{sid}_kin_{sfx}.webm', atSec: {at}, "
                     f"durSec: {dur}, phrase: {json.dumps(phrase)}}},")
-        job = {"id": f"{sid}_{sfx}", "style": b.get("style", "number"), "seconds": dur}
+        requested_style = b.get("style", "number")
+        # The AE template has two concrete renderers: `number` and `punch`.  Editorial designs use
+        # `turn` as the semantic name for a story turn, so map it to the punch renderer here instead
+        # of letting the JSX fall through to `number` with an undefined `big` value.  Likewise, a
+        # one-line number beat is commonly authored as `words`; promote it to `big`, which is the
+        # schema the number renderer actually consumes.
+        if requested_style in ("turn", "punch"):
+            ae_style = "punch"
+        elif requested_style == "number":
+            ae_style = "number"
+        else:
+            sys.exit(f"{sid} {sfx}: unsupported kinetic style {requested_style!r}")
+        job = {"id": f"{sid}_{sfx}", "style": ae_style, "seconds": dur}
         for k in ("big", "bigSize", "label", "labelSize", "words"):
             if k in b:
                 job[k] = b[k]
+        if ae_style == "number" and not job.get("big"):
+            words = job.get("words") or []
+            if not words:
+                sys.exit(f"{sid} {sfx}: number kinetic beat needs `big` or `words`")
+            job["big"] = " ".join(words)
+        if ae_style == "punch" and not job.get("words"):
+            sys.exit(f"{sid} {sfx}: punch kinetic beat needs `words`")
         jobs.append(job)
 
     src = ("  // Mid-roll kinetic type, built in After Effects (runs/ae_jobs/%s.json) and installed\n"
@@ -307,7 +326,7 @@ def emit_ts(sid: str, ep: str, design: dict, short: dict) -> Path:
     # ceiling. Replay the hook's own images in order instead: it fills the time with real cuts and
     # it is what a loop should look like — the ending hands you back the opening.
     hook_imgs = [q["n"] for q in short["plates"]
-                 if q.get("role") == "hook" and q.get("source") == "GENERATE"] or [1]
+                 if q.get("role") == "hook" and q.get("source") in {"GENERATE", "REUSE"}] or [1]
     loop_plates = [q["n"] for q in short["plates"] if q.get("role") == "loop"]
 
     for p in short["plates"]:
@@ -316,7 +335,7 @@ def emit_ts(sid: str, ep: str, design: dict, short: dict) -> Path:
         if p.get("source") == "FOOTAGE" and p.get("bound_file"):
             src = f"shorts/{sid}/fx/fx_{n:02d}.mp4"
             kind, motion = "video", "video"
-        elif p.get("source") == "GENERATE":
+        elif p.get("source") in {"GENERATE", "REUSE"}:
             src = f"shorts/{sid}/{sid}_{n:02d}.png"
             kind = "image"
             motion = ("pushin", "parallax", "kenburns")[n % 3]
@@ -485,7 +504,7 @@ def main() -> int:
     if not short:
         sys.exit(f"no design for {sid}")
 
-    want = {p["n"] for p in short["plates"] if p.get("source") == "GENERATE"}
+    want = {p["n"] for p in short["plates"] if p.get("source") in {"GENERATE", "REUSE"}}
     have = {int(m.group(1)) for f in (PUB / sid).glob(f"{sid}_[0-9]*.png")
             if (m := re.search(r"_(\d+)\.png$", f.name)) and "_depth" not in f.name}
     if want - have:
@@ -536,7 +555,7 @@ def main() -> int:
                      f"{pkg.relative_to(ROOT)} has no thumbnail*.png")
 
     rights = stage_footage(sid, short["plates"], args.force)
-    print(f"{sid}: {len(have)} generated plates, {len(rights)} archive clips staged")
+    print(f"{sid}: {len(have)} image plates present, {len(rights)} archive clips staged")
     out = emit_ts(sid, design["episode_id"], design, short)
     print(f"  wrote {out.relative_to(ROOT)}")
     print(f"  rights recorded in {(PUB/sid/'fx'/'RIGHTS.json').relative_to(ROOT)}")

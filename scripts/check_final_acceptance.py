@@ -463,18 +463,37 @@ def check_structure(epdir: Path) -> dict:
     if not ordered:
         return {"check": "structure_4part", "ok": True, "hard": False, "skipped": True,
                 "reason": "no narration sections to check"}
+    # How this episode spells its opening. EP62-65 declare HOOK / OP / ACT_1..5 / ENDING in
+    # episode_spec.section_vocabulary, and matching only the literal "OPENING" reported all four as
+    # having no opening while they have one. The requirement is unchanged -- an episode with no
+    # opening at all still fails -- but the label comes from the contract instead of a constant.
+    opening_names = [OPENING_SECTION]
+    _spec = epdir / "episode_spec.v001.json"
+    if _spec.is_file():
+        try:
+            _vocab = [str(s).upper() for s in
+                      json.loads(_spec.read_text(encoding="utf-8")).get("section_vocabulary", [])]
+            for _s in _vocab:
+                if _s in ("OP", "OPEN", "OPENING") and _s not in opening_names:
+                    opening_names.append(_s)
+        except Exception:
+            pass
+
+    def _is_opening(s: str) -> bool:
+        return any(s.startswith(o) for o in opening_names)
+
     problems: list[str] = []
     if not ordered[0].startswith(HOOK_SECTION):
         problems.append(f"first section '{ordered[0]}' is not HOOK")
-    if not any(s.startswith(OPENING_SECTION) for s in ordered):
-        problems.append("no OPENING section")
+    if not any(_is_opening(s) for s in ordered):
+        problems.append(f"no OPENING section (looked for {opening_names})")
     elif ordered[0].startswith(HOOK_SECTION) and len(ordered) > 1 \
-            and not ordered[1].startswith(OPENING_SECTION):
+            and not _is_opening(ordered[1]):
         problems.append(f"OPENING does not follow HOOK (got '{ordered[1]}')")
     if not any(s.startswith(m) for s in ordered for m in ENDING_MARKERS):
         problems.append("no ENDING/CTA section")
     body = [s for s in ordered if not s.startswith(HOOK_SECTION)
-            and not s.startswith(OPENING_SECTION)
+            and not _is_opening(s)
             and not any(s.startswith(m) for m in ENDING_MARKERS)]
     if not body:
         problems.append("no body/ACT sections")

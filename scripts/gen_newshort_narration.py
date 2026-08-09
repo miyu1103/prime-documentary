@@ -108,6 +108,8 @@ def main() -> int:
                     help="optional path to a JSON list [{id,delivery,text}] of trimmed line text; "
                          "overrides reconstruct-from-timing so a shortened script can be synthesized. "
                          "Delete the stale draft chunk mp3s first so the new text is re-synthesized.")
+    ap.add_argument("--voice-stage", choices=("draft", "master"), default="master",
+                    help="write the assembled voice as a review draft or approved master")
     args = ap.parse_args()
     SHORT = f"short{args.short}"
     EP = args.ep
@@ -172,14 +174,18 @@ def main() -> int:
             lines_txt.append(f"file '{silence.as_posix()}'\n")
             cursor += gap
     concat.write_text("".join(lines_txt), "utf-8")
-    master = media_root() / "episodes" / EP / "06_voice" / "master" / f"{SHORT}_vc_master_en_us_v002.mp3"
+    if args.voice_stage == "draft":
+        master = draft / f"{SHORT}_vc_draft_en_us_v002.mp3"
+    else:
+        master = media_root() / "episodes" / EP / "06_voice" / "master" / f"{SHORT}_vc_master_en_us_v002.mp3"
     master.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(concat),
                     "-c:a", "libmp3lame", "-b:a", "192k", str(master)], check=True, capture_output=True)
 
     idx = ROOT / "episodes" / EP / "06_audio" / f"{SHORT}_narration_index.v002.en_us.json"
     idx.parent.mkdir(parents=True, exist_ok=True)
-    idx.write_text(json.dumps({"short_id": SHORT, "episode_id": EP, "voice_id": VOICE_ID, "model_id": MODEL,
+    idx.write_text(json.dumps({"short_id": SHORT, "episode_id": EP, "voice_stage": args.voice_stage,
+                               "voice_id": VOICE_ID, "model_id": MODEL,
                                "estimated_cost_usd": est, "total_seconds": round(dur(master), 2),
                                "master": str(master), "lines": windows}, indent=2, ensure_ascii=False) + "\n", "utf-8")
     print(f"made={made} skipped={skipped} failed={failed}")

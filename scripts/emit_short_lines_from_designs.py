@@ -9,7 +9,7 @@ provenance is carried into the file rather than dropped.
 Idempotent: an existing file with identical spoken text is left alone, so re-running after a
 design tweak only rewrites what actually changed.
 
-Usage: py -3.11 scripts/emit_short_lines_from_designs.py [--dry-run]
+Usage: py -3.11 scripts/emit_short_lines_from_designs.py [--dry-run] [--only 259-270]
 """
 from __future__ import annotations
 
@@ -29,7 +29,18 @@ def main() -> int:
         pass
     ap = argparse.ArgumentParser()
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--only", default="", help="short numbers, comma-separated and/or ranges")
     args = ap.parse_args()
+
+    only: set[int] = set()
+    for token in (part.strip() for part in args.only.split(",")):
+        if not token:
+            continue
+        if "-" in token:
+            start, end = (int(x) for x in token.split("-", 1))
+            only.update(range(start, end + 1))
+        else:
+            only.add(int(token))
 
     written = skipped = 0
     chars = 0
@@ -40,6 +51,8 @@ def main() -> int:
             if not s.get("angle"):
                 continue
             nn = s["short_id"].replace("short", "")
+            if only and int(nn) not in only:
+                continue
             payload = [{
                 "id": l["id"],
                 "delivery": l["delivery"],

@@ -112,6 +112,18 @@ RULES = {
          r"brian david hill",
          "proceeding tied to a named private litigant"),
     ],
+    # A documentary shelf cannot hold synthetic pictures of the world it is documenting.
+    # These 464 items announce themselves in their own titles -- Pixabay contributors tag
+    # "ai generated" -- so they are the findable part of the problem, not all of it. One
+    # surfaced on the prison_jail sheet as a plausible lamplit window and another on the
+    # newspapers sheet as an anime illustration; neither is evidence of anything, and
+    # invariant 11 forbids presenting generated visuals as an authentic record.
+    "ai-generated": [
+        ("declared_synthetic",
+         r"\bai[- ]generated\b|\bgenerative ai\b|\bai art\b|\baiart\b"
+         r"|\bmidjourney\b|\bstable diffusion\b|\bdall[- ]?e\b",
+         "the contributor's own tags declare it synthetic — invariant 11"),
+    ],
     # Documented, NOT swept: studio features whose PD status the reviewers doubted. These
     # need a title-by-title copyright-renewal check, not a blanket quarantine — run this
     # set only after that check says they are in fact encumbered.

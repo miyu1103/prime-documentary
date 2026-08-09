@@ -28,9 +28,14 @@ echo "=== [3/4] RENDER $COMP -> $OUT ==="
 mkdir -p "$(dirname "$OUT")"
 LOGF="out_render_$(basename "$OUT").log"
 CONC="${PD_RENDER_CONCURRENCY:-}"
+# 2026-08-08: willingham died twice at "Timed out after 30000ms while setting up the headless
+# browser" while the 2.9GB public-dir copy was still hitting the disk. 120s costs nothing on
+# success and rides out that class of disk contention.
+TIMEOUT_MS="${PD_RENDER_TIMEOUT_MS:-120000}"
 CONC_ARG=""
 [ -n "$CONC" ] && CONC_ARG="--concurrency=$CONC"
-( cd remotion && npx remotion render "$COMP" "../$OUT" --public-dir="$(basename "$PUB")" $CONC_ARG ) > "$LOGF" 2>&1
+TIMEOUT_ARG="--timeout=$TIMEOUT_MS"
+( cd remotion && npx remotion render "$COMP" "../$OUT" --public-dir="$(basename "$PUB")" $CONC_ARG "$TIMEOUT_ARG" ) > "$LOGF" 2>&1
 rc=$?
 # EP52 morton, 2026-07-30: the render died on `Failed to fetch .../factory/AR-*.mp4` +
 # `Error: Request closed` while a 61-minute acceptance gate was hammering the same disk. The
@@ -41,7 +46,7 @@ if [ $rc -ne 0 ] || [ ! -f "$OUT" ]; then
   echo ">>> RENDER FAILED rc=$rc -- retrying once at --concurrency=4"
   grep -aoE "Failed to fetch [^ ]{0,120}|Error: [A-Za-z ]{0,60}" "$LOGF" | sort | uniq -c | sort -rn | head -3
   rm -f "$OUT"
-  ( cd remotion && npx remotion render "$COMP" "../$OUT" --public-dir="$(basename "$PUB")" --concurrency=4 ) > "${LOGF%.log}.retry.log" 2>&1
+  ( cd remotion && npx remotion render "$COMP" "../$OUT" --public-dir="$(basename "$PUB")" --concurrency=4 "$TIMEOUT_ARG" ) > "${LOGF%.log}.retry.log" 2>&1
   rc=$?
 fi
 if [ $rc -ne 0 ] || [ ! -f "$OUT" ]; then echo ">>> RENDER FAILED rc=$rc (see out_render log). ABORT."; exit 1; fi
