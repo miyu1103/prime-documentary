@@ -1046,18 +1046,35 @@ export const Short: React.FC<{data: ShortData; platform: ShortPlatform; depth?: 
 };
 
 /** Vertical thumbnail (Still): key-visual background + big headline (avoid UI edges). */
-export const ShortThumb: React.FC<{data: ShortData; headline: string; backgroundSrc: string | null; badge?: string}> = ({
-  headline,
-  backgroundSrc,
-  badge,
-}) => {
+export const ShortThumb: React.FC<{
+  data: ShortData;
+  headline: string;
+  backgroundSrc: string | null;
+  badge?: string;
+  /**
+   * 'tt' composes the same design for TikTok, where a cover is judged twice: full 9:16 in the feed,
+   * and cropped to the middle 3:4 in the profile grid. The YouTube layout puts the headline high,
+   * which in that crop sits against the top edge with two thirds of the tile left black - measured
+   * on the live profile on 2026-08-09. This centres the headline and lifts the background so a
+   * tile reads as a picture instead of a black square.
+   */
+  layout?: 'yt' | 'tt';
+}> = ({headline, backgroundSrc, badge, layout = 'yt'}) => {
+  const tt = layout === 'tt';
   const mostlyAscii = /^[\u0000-\u007f\s.,!?'"-]+$/.test(headline);
   return (
     <AbsoluteFill style={{backgroundColor: BRAND.color.ink}}>
       {backgroundSrc ? (
         <Img
           src={staticFile(backgroundSrc)}
-          style={{width: '100%', height: '100%', objectFit: 'cover', filter: 'brightness(0.58) contrast(1.06) saturate(1.12)'}}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            filter: tt
+              ? 'brightness(0.80) contrast(1.10) saturate(1.16)'
+              : 'brightness(0.58) contrast(1.06) saturate(1.12)',
+          }}
         />
       ) : (
         <BrandCard />
@@ -1066,14 +1083,17 @@ export const ShortThumb: React.FC<{data: ShortData; headline: string; background
       <AbsoluteFill
         style={{
           pointerEvents: 'none',
-          background: `linear-gradient(180deg, ${BRAND.color.ink}ee 0%, ${BRAND.color.ink}99 26%, ${BRAND.color.ink}aa 50%, ${BRAND.color.ink}80 70%, ${BRAND.color.ink}f5 100%)`,
+          background: tt
+            ? `linear-gradient(180deg, ${BRAND.color.ink}77 0%, ${BRAND.color.ink}33 30%, ${BRAND.color.ink}55 52%, ${BRAND.color.ink}33 74%, ${BRAND.color.ink}99 100%)`
+            : `linear-gradient(180deg, ${BRAND.color.ink}ee 0%, ${BRAND.color.ink}99 26%, ${BRAND.color.ink}aa 50%, ${BRAND.color.ink}80 70%, ${BRAND.color.ink}f5 100%)`,
         }}
       />
       {badge ? (
         <div
           style={{
             position: 'absolute',
-            top: 98,
+            // inside TikTok's 3:4 crop (y 240-1680) and clear of the centred headline
+            top: tt ? 430 : 98,
             left: 64,
             display: 'inline-flex',
             alignItems: 'center',
@@ -1098,7 +1118,11 @@ export const ShortThumb: React.FC<{data: ShortData; headline: string; background
       <div
         style={{
           position: 'absolute',
-          top: mostlyAscii ? 300 : 280,
+          // TikTok crops the grid tile to the middle 3:4, so the headline is centred on the frame
+          // rather than hung from the top.
+          ...(tt
+            ? {top: 0, bottom: 0, display: 'flex', flexDirection: 'column' as const, justifyContent: 'center'}
+            : {top: mostlyAscii ? 300 : 280}),
           left: 40,
           right: 40,
           textAlign: 'center',

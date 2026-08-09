@@ -243,6 +243,43 @@ async function one(pg, item, slot) {
   const ai = await aiSwitchOff(pg);
   if (ai !== 'OFF') return { status: 'AI_SWITCH_' + ai };
 
+  // Set the cover. Left alone, TikTok picks a frame from the video, and this channel's Shorts open
+  // on a near-black frame: the profile grid was a wall of identical black tiles with unreadable
+  // subtitle text, and nothing could be told apart. The cover cannot be changed after posting -
+  // on a published or scheduled post every edit control is disabled - so it has to happen here.
+  if (item.cover) {
+    const opened = await pg.evaluate(() => {
+      const e = [...document.querySelectorAll('*')]
+        .find(n => (n.textContent || '').trim() === 'カバーを編集' && n.children.length === 0);
+      if (!e) return false;
+      e.click();
+      return true;
+    });
+    if (!opened) return { status: 'NO_COVER_BUTTON' };
+    await sleep(4000);
+    // the image input appears only inside the cover dialog; the video input is gone by now
+    let imgInput = null;
+    for (let i = 0; i < 12 && !imgInput; i++) {
+      imgInput = await pg.$('input[type=file][accept*="image"]');
+      if (!imgInput) await sleep(1200);
+    }
+    if (!imgInput) return { status: 'NO_COVER_INPUT' };
+    await imgInput.uploadFile(item.cover);
+    await sleep(6000);
+    const saved = await pg.evaluate(() => {
+      const b = [...document.querySelectorAll('button')]
+        .find(e => e.offsetParent && (e.textContent || '').trim() === '保存');
+      if (!b) return false;
+      b.setAttribute('data-pd-save', '1');
+      return true;
+    });
+    if (!saved) return { status: 'NO_COVER_SAVE' };
+    const sv = await pg.$('[data-pd-save="1"]');
+    await sv.click();
+    await sleep(4000);
+    console.log('    cover set');
+  }
+
   const box = await pg.$('div[contenteditable="true"]');
   await box.click();
   await pg.keyboard.down('Control'); await pg.keyboard.press('KeyA'); await pg.keyboard.up('Control');
