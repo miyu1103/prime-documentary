@@ -43,6 +43,19 @@ def main() -> int:
     audit = json.loads((Path(__file__).resolve().parent / "_yt_audit.json").read_text(encoding="utf-8"))
     ids = [v["id"] for v in audit if v.get("privacy") == "private"]
 
+    # The audit enumerates through yt_channel_index, which caches its sweep. Four Shorts uploaded
+    # minutes earlier were simply absent from the dump, and the planner then reported free slots
+    # that were already taken. Anything the local records say is scheduled in the future belongs in
+    # this dump whether or not the sweep saw it yet.
+    for f in ROOT.glob("episodes/*/09_package/short*_youtube_schedule_result.*.json"):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        vid, when = d.get("video_id"), d.get("publishAt")
+        if not vid or not when or vid in ids:
+            continue
+        from datetime import datetime, timezone
+        if datetime.fromisoformat(when.replace("Z", "+00:00")) > datetime.now(timezone.utc):
+            ids.append(vid)
+
     rows = []
     for i in range(0, len(ids), 50):
         chunk = ids[i : i + 50]

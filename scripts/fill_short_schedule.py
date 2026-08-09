@@ -100,12 +100,30 @@ def main() -> int:
     # The channel dump is built from scripts/_yt_audit.json, and that file lists the ids to ask
     # about. Uploads made after the audit are invisible to it: five Shorts were scheduled and the
     # dump still said 29, so a second run would have planned straight over them.
-    newest = max((f.stat().st_mtime for f in
-                  ROOT.glob("episodes/*/09_package/short*_youtube_schedule_result.*.json")),
-                 default=0)
-    if newest > TRUTH.stat().st_mtime:
-        print("channel dump is older than the newest upload record. Refresh it first:\n"
-              "  py -3.11 scripts/yt_full_audit.py && py -3.11 scripts/yt_list_scheduled.py")
+    #
+    # Staleness is decided by content, not by mtime. An mtime test called the dump stale every time
+    # the ledger was synced - a write that by definition carries no new upload - and blocked a run
+    # that was perfectly safe.
+    truth = json.loads(TRUTH.read_text(encoding="utf-8"))
+    known = {r["id"] for r in truth["scheduled"]} | {r["id"] for r in truth["unscheduled"]}
+    missing = []
+    for f in ROOT.glob("episodes/*/09_package/short*_youtube_schedule_result.*.json"):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        vid = d.get("video_id")
+        when = d.get("publishAt")
+        if not vid or not when:
+            continue
+        # The dump lists private videos only, so anything already published is legitimately absent.
+        # Checking those too flagged every Short the channel has ever released.
+        if dt.datetime.fromisoformat(when.replace("Z", "+00:00")) <= dt.datetime.now(dt.timezone.utc):
+            continue
+        if vid not in known:
+            missing.append(f"{f.name} ({vid})")
+    if missing:
+        print("channel dump does not know about these uploads - refresh it first:")
+        for m in missing[:6]:
+            print(f"  {m}")
+        print("  py -3.11 scripts/yt_full_audit.py && py -3.11 scripts/yt_list_scheduled.py")
         return 2
 
     todo = backlog()
