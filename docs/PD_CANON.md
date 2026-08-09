@@ -267,11 +267,56 @@ py .venv/Scripts/python.exe scripts/... # → docs 参照。無ければ receipt
 | 失敗全集 | `docs/PD_RETRO_20260805_UNPAUSE.v001.md` / `docs/PD_RETRO_20260810_TIKTOK_AND_CALENDAR.v001.md` |
 | TikTok・カレンダー | `episodes/_planning/HANDOFF_20260810_TIKTOK_AND_CALENDAR.v001.md` |
 | 再利用部品40種 | `remotion/src/motionkit/CATALOG.md`（新演出はまず此処。二重実装禁止） |
-| 素材棚 | `docs/FACTORY_INVENTORY.md`（**ラベルは壊れている。目視必須**） |
+| 素材棚 | `docs/PD_ARCHIVE_SHELF_WORKLOG.v001.md`（**使い方・判定・罠の全部。下の §10 が要約**） |
+| 素材棚（旧・factory） | `docs/FACTORY_INVENTORY.md`（ラベルは壊れている。目視必須） |
 
 ---
 
-## 10. この文書の育て方
+## 10. 素材棚（2026-08-10 全面点検済み）
+
+詳細と根拠は `docs/PD_ARCHIVE_SHELF_WORKLOG.v001.md`。ここは他スレが踏まないための最小限。
+
+### 探すとき
+
+```bash
+py -3.11 scripts/search_archive.py --shot "courthouse building exterior" --kind video --md --sheet
+```
+
+1. **ショットは「監督の言葉」でなく「素材提供者が付ける題名の語彙」で書く。**
+   `police interview room`→0件 / `interrogation room detective`→12件。
+   `handcuffs on wrists`→0件 / `person in handcuffs`→16件。
+   カバレッジが 85/50/90% から **100/90/100%** に上がったのは、棚が増えたからではなく書き方を直したから
+2. **0件が返ったら `--weak-ok --sheet` を付けて必ず目で見る。**
+   弱一致は大半が語の衝突（`branch`＝木の枝／`card`＝基板）だが、本命が埋まっていた率が 12/13
+3. **`[640x480] SD` の表示を読む。** 動画31,107本すべて解像度既知。SDを選ぶのは判断であって事故ではない
+
+### 数えるとき
+
+**`from shelf import shelf_rows` を使う。自前で `glob("*.jsonl")` しない。**
+3つのツールが各自の定義を持ち、3つとも違う壊れ方をしていた
+（`purged.jsonl` 64,640行を在庫に加算して 197,712点と報告／`ukna_candidates` の
+22,348行を「未レビュー在庫」と誤報。全部 `file_path: null` で1本もDLしていない）。
+
+### 触らないもの
+
+- **台帳の行を消さない。** 47%は削除の記録。消すと取り込みが同じものを取り直す
+  （住所録46,707枚が実際に戻ってきた）。削除は `absent_index.json` が別管理する
+- **取り込みの技術基準を上げない。** 記録系の480p未満は削除でなく隔離する設計。
+  代替不能な記録映像に削除経路を作ると、過去にニュルンベルクのリールを7本破壊した
+
+### 組み立て側が知るべきこと
+
+- **出荷ゲートは素材の解像度を見ていない。** `check_final_acceptance` は完成尺だけを
+  `>=1920x1080` で測る。**640x480を1080pに引き伸ばした作品は通る。**
+  索引 `_ledger/video_resolution.json` を `(source:id)` で引ける
+- 危ないのは100%SDのテーマではなく、**2割だけ混ざるテーマ**
+  （`courtroom_justice` 17% / `prison_jail` 19%。nara 89% ia 73%、ストック系はほぼ0%）
+- **判定 `unusable` の theme×source を使わない。** `search_archive` 経由なら自動で外れる。
+  台帳を直接舐めるコードは危ない
+
+---
+
+## 11. この文書の育て方
 
 - **新しい罠を踏んだら §7 に1行足す。**別の場所に新しい申し送りを作らない
 - **状態が変わったら §1 を更新する。**数字だけでなく**測り直すコマンド**も一緒に
