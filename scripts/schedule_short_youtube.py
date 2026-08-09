@@ -2033,6 +2033,150 @@ CONFIG: dict[str, dict] = {
         "video_sha256": "670c1fac74d466a4229f32a88485dbdc643812620b00ec89f69907ba475968ae",
         "thumb_sha256": "59e834f2c55127b67e9825a11eb10fb56c0ffaa223c1f482b64747cd5f0feac8",
     },
+    "203": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "0sjw_1OxCVk",
+        "ep": "PD-2026-056-postoffice",
+        "rev": "v001",
+        "title": "A helpline told hundreds of sub-postmasters the same sentence, one call at a time, and being #Shorts",
+        "description": "A helpline told hundreds of sub-postmasters the same sentence, one call at a time, and being.\n\nWho finally told the sub-postmasters, in writing, that they were not the only one, and how many years did that take?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Postoffice #Law #Documentary",
+        "tags": ["Shorts", "Postoffice", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "f3b191bcbb487c88e5de0ffbd7a186f34226506b4cd733d4cb5111b4a5dc6694",
+        "thumb_sha256": "9fe130aa4ca083678d78ad975c86c83202bc60aea1b104710ae0fad927230000",
+    },
+    "204": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "0sjw_1OxCVk",
+        "ep": "PD-2026-056-postoffice",
+        "rev": "v001",
+        "title": "The Post Office investigated, charged and prosecuted its own sub-postmasters, holding all #Shorts",
+        "description": "The Post Office investigated, charged and prosecuted its own sub-postmasters, holding all.\n\nIn England and Wales, who decided that a company could prosecute its own people without the police ever being involved?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Postoffice #Law #Documentary",
+        "tags": ["Shorts", "Postoffice", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "82d66aa2df8234df404b50d5a6ec6b0d72b7b8a1ea64a469e81c3ec0e02e3b10",
+        "thumb_sha256": "6ea2ef60ea5f8f0843d7bf36ee86949979a35d75dfd28c01b8dd0273d3fe73ea",
+    },
+    "205": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "0sjw_1OxCVk",
+        "ep": "PD-2026-056-postoffice",
+        "rev": "v001",
+        "title": "In 2010 the Post Office put on paper what an honest look at its computer would cost it #Shorts",
+        "description": "In 2010 the Post Office put on paper what an honest look at its computer would cost it.\n\nWho gave the instruction that the minutes about the defects should be destroyed, and what happened to the people who carried it out?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Postoffice #Law #Documentary",
+        "tags": ["Shorts", "Postoffice", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "f3cb15d99578b88b280e2511037d7e79cc919a65d3d9e9593aa4d1711d44b34d",
+        "thumb_sha256": "4252fc5d51ef248344a7111ef5c40932fabb7b0998ce9bb762ddd23b26979535",
+    },
+    "250": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "FOdVK1qQE6w",
+        "ep": "PD-2026-057-fieldtest",
+        "rev": "v001",
+        "title": "The whole procedure that turned a crumb into a felony charge was a colour change #Shorts",
+        "description": "The whole procedure that turned a crumb into a felony charge was a colour change.\n\nIf the American government determined in writing in 1978 that this test proves nothing, why is it still riding in patrol cars?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Fieldtest #Law #Documentary",
+        "tags": ["Shorts", "Fieldtest", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "ba13bf63405fb12195a2f9127f119e33a51879178e28ddb254cddc25c838cdf9",
+        "thumb_sha256": "07cf8ea00655f64138e58f2b007e8343580ce47a482e6f2ea8f3fc2b1b4e4dfa",
+    },
+    "251": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "FOdVK1qQE6w",
+        "ep": "PD-2026-057-fieldtest",
+        "rev": "v001",
+        "title": "People who had done nothing pleaded guilty five times faster than people who really had #Shorts",
+        "description": "People who had done nothing pleaded guilty five times faster than people who really had.\n\nWhat was sitting in a sealed envelope in the property room while she was confessing to it in open court?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Fieldtest #Law #Documentary",
+        "tags": ["Shorts", "Fieldtest", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "1ca01a622d35cac3b1ff67ae2df416e19c1927d175b0efb9e976183b96fb24f1",
+        "thumb_sha256": "64ae6ce93b1aa9e43c6533ffb3444115997a1e4f138ea1a360eb8bec4b5a0e87",
+    },
+    "252": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "FOdVK1qQE6w",
+        "ep": "PD-2026-057-fieldtest",
+        "rev": "v001",
+        "title": "The office that won every one of those convictions went back through its own files #Shorts",
+        "description": "The office that won every one of those convictions went back through its own files.\n\nWhat happened to the hundred and seventy-two convictions that were still standing after the office finished counting?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Fieldtest #Law #Documentary",
+        "tags": ["Shorts", "Fieldtest", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "1ae253c5c59c7b2f79d65219504e73f4e07f34b5c03fca5e3345d9809f972314",
+        "thumb_sha256": "5cd960c448c3b1761dd8162fdf047da62e4280f67220a8c8d2ea74c339f0a33f",
+    },
+    "253": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "J97Rh1qOTPA",
+        "ep": "PD-2026-058-lejeune",
+        "rev": "v001",
+        "title": "The Marine Corps' own laboratory wrote nine words about the drinking water in March 1981 #Shorts",
+        "description": "The Marine Corps' own laboratory wrote nine words about the drinking water in March 1981.\n\nWho was still drinking that water in the six years between the form and the last plant closing?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Lejeune #Law #Documentary",
+        "tags": ["Shorts", "Lejeune", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "96d6b2ce7e746a3f6fcb926d468f8da16db20ca41e15204351a3a943770ec7b3",
+        "thumb_sha256": "b358a08201e61bdcc5f067848824762d9e5b1e22443b8fc2a1f7a9cfe18945d7",
+    },
+    "254": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "J97Rh1qOTPA",
+        "ep": "PD-2026-058-lejeune",
+        "rev": "v001",
+        "title": "A retired drill instructor with no legal or scientific training built the only archive #Shorts",
+        "description": "A retired drill instructor with no legal or scientific training built the only archive.\n\nWhat was on the form he finally pried loose, and why had the families never been told?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Lejeune #Law #Documentary",
+        "tags": ["Shorts", "Lejeune", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "0087a281338a5addef43c047b324155f4efaa83990fc703b53e796bb6683cb46",
+        "thumb_sha256": "1fee8ce050434750710ad129a63d5a3818910ab2502792c1d607f17e18b652e7",
+    },
+    "255": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "J97Rh1qOTPA",
+        "ep": "PD-2026-058-lejeune",
+        "rev": "v001",
+        "title": "Congress removed every legal barrier standing in front of Camp Lejeune claimants, and four #Shorts",
+        "description": "Congress removed every legal barrier standing in front of Camp Lejeune claimants, and four.\n\nWhat happens to four hundred and eight thousand claims when the court's October deadline passes?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Lejeune #Law #Documentary",
+        "tags": ["Shorts", "Lejeune", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "e7d2686b0c80b2ddfe9feaa6296e94c9ac0b5e6234c04791ef3665b4d74e4489",
+        "thumb_sha256": "efc64358bde9f7744091112027b603cec735070798c16168ed33a3564a64bf4a",
+    },
+    "256": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Wo-SvvGsv8g",
+        "ep": "PD-2026-059-robosigning",
+        "rev": "v001",
+        "title": "There was no mortgage on the house, and the bank foreclosed on it twice because six separate #Shorts",
+        "description": "There was no mortgage on the house, and the bank foreclosed on it twice because six separate.\n\nHow does a bank produce a sworn court document about a house nobody has ever looked at?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Robosigning #Law #Documentary",
+        "tags": ["Shorts", "Robosigning", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "9e34cc4789a2c3a9079619b2a5e78fe3e1481f31e9d86a03a855e07910aff6ad",
+        "thumb_sha256": "9463704b25fa8bcd263b1a23908b347c9936628ed283b65e47e06528e64379df",
+    },
+    "257": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Wo-SvvGsv8g",
+        "ep": "PD-2026-059-robosigning",
+        "rev": "v001",
+        "title": "One man signed ten thousand sworn foreclosure documents a month, and a working month #Shorts",
+        "description": "One man signed ten thousand sworn foreclosure documents a month, and a working month.\n\nIf nobody was reading the affidavits, how many of the houses taken on them were the wrong houses?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Robosigning #Law #Documentary",
+        "tags": ["Shorts", "Robosigning", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "8ec1a83c6843276d511cb08f1909795e38eb00a1ec04e81060fe46729e7998cd",
+        "thumb_sha256": "ac15f1c919d807e42b76e449aafe57672edc486894bd7657dc6b11b61ff731b7",
+    },
+    "258": {
+        # destination for the funnel link; ensure_funnel_description() verifies it is public
+        "longform": "Wo-SvvGsv8g",
+        "ep": "PD-2026-059-robosigning",
+        "rev": "v001",
+        "title": "A company in a Georgia office park produced more than a million forged mortgage documents #Shorts",
+        "description": "A company in a Georgia office park produced more than a million forged mortgage documents.\n\nHow many American families lost a house on a document that was manufactured?\n\nPrime Documentary covers the cases that quietly decide what the state may do to you. The full episode is linked at the top.\n\n#Shorts #Robosigning #Law #Documentary",
+        "tags": ["Shorts", "Robosigning", "Law", "Documentary"],
+        # v001: generated from the design by gen_short_publish_config.py
+        "video_sha256": "6497ceda7ef091c9e746765c607df575a511896212e671b1bd61970782ffb0fa",
+        "thumb_sha256": "44b8f240ed8daaf38b6536539fcf22d7ef55b27aa71681601907e2cfbcba15b0",
+    },
 }
 
 
