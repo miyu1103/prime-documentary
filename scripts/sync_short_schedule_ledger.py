@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -43,8 +44,20 @@ def main() -> int:
     when = {r["id"]: r["publishAt"] for r in truth["scheduled"]}
     gone = {r["id"] for r in truth["unscheduled"]}
 
+    # Only the newest revision per Short. An older revision is a record of what was true then;
+    # rewriting it would edit an immutable artifact and, on the way there, report thirty files
+    # "out of sync" that were never meant to agree with today's calendar.
+    newest: dict[int, tuple[int, Path]] = {}
+    for f in ROOT.glob("episodes/*/09_package/short*_youtube_schedule_result.*.json"):
+        m = re.match(r"short(\d+)_youtube_schedule_result\.v(\d+)\.json", f.name)
+        if not m:
+            continue
+        n_, rev = int(m.group(1)), int(m.group(2))
+        if n_ not in newest or rev > newest[n_][0]:
+            newest[n_] = (rev, f)
+
     n = 0
-    for f in sorted(ROOT.glob("episodes/*/09_package/short*_youtube_schedule_result.*.json")):
+    for _, f in sorted(newest.values(), key=lambda x: x[1].name):
         d = json.loads(f.read_text(encoding="utf-8"))
         vid = d.get("video_id")
         if not vid:
