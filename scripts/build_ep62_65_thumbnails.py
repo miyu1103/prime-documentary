@@ -35,26 +35,30 @@ GOLD, RED, BLUE, WHITE = "#E5B53A", "#D22628", "#1F6BFF", "#F2F0EA"
 # plate, kicker, headline lines, accent -- all from each episode's thumb_prompts.v001.md
 SPEC: dict[str, tuple[str, list[tuple[str, str, list[str], str]]]] = {
     "greene": ("PD-2026-062-greene", [
-        ("G242", "ONE KNOCK", ["ONE KNOCK", "WAS ENOUGH"], GOLD),
+        # the kicker carries the second fact; "ONE KNOCK" repeated the headline
+        ("G242", "NOBODY HOME", ["ONE KNOCK", "WAS ENOUGH"], GOLD),
         ("G220", "SERVICE", ["THIS COUNTED", "AS NOTICE"], GOLD),
         ("G222", "THE PAPER", ["THE PAPER", "CAME OFF"], RED),
         ("G221", "DID SHE KNOW", ["DID SHE", "EVER KNOW?"], BLUE),
     ]),
     "correa": ("PD-2026-063-correa", [
-        ("C227", "NO RECORD", ["NO RECORD", "AT ALL"], GOLD),
+        ("C227", "NUMBER 47", ["NO RECORD", "AT ALL"], GOLD),
         ("C238", "NUMBER 47", ["NOBODY", "CALLED 47"], RED),
         ("C239", "NEVER REFUSED", ["NOBODY", "SAID NO"], GOLD),
         ("C222", "TWO HOURS", ["SHE WAS", "NEVER REFUSED"], BLUE),
     ]),
     "memphis": ("PD-2026-064-memphis", [
-        ("M219", "ONE HOUSE", ["ONE LETTER", "APART"], GOLD),
+        # M208 first: the plate review ACCEPTed it as the only candidate meeting all three
+        # requirements and FLAGged M219 because the sheets occupy the upper third. Opening both
+        # agrees -- M219 never shows the two bills the hook is about.
         ("M208", "TWO METER SETS", ["BOTH WERE", "RUNNING"], GOLD),
+        ("M219", "ONE HOUSE", ["ONE LETTER", "APART"], GOLD),
         ("M209", "SAME HOUSE", ["TWO BILLS", "EVERY MONTH"], RED),
         ("M235", "AFTER FINAL NOTICE", ["GIVEN NO", "SATISFACTION"], BLUE),
     ]),
     "marmet": ("PD-2026-065-marmet", [
-        ("R217", "THE CARVE-OUT", ["EXCEPT", "THEIR OWN BILL"], GOLD),
         ("R218", "ONE LINE", ["ARBITRATE", "THE DEATH CLAIM"], RED),
+        ("R217", "THE CARVE-OUT", ["EXCEPT", "THEIR OWN BILL"], GOLD),
         ("R224", "NOT UPHELD", ["VACATED,", "NOT UPHELD"], GOLD),
         ("R219", "WHO SIGNED?", ["THE RECORD", "NEVER SAYS WHO"], BLUE),
     ]),
@@ -134,9 +138,15 @@ def main() -> int:
                 made.append(p)
                 print(f"  {p.name}  <- {plate}  {' / '.join(head)}")
         if made:
-            sel = made[0].parent / "thumbnail.selected.v001.png"
+            # Invariant 6: an approved artefact is never overwritten. The uploader takes the
+            # HIGHEST thumbnail.selected.v*.png, so a new revision is what ships and the earlier
+            # selection stays on disk to compare against.
+            n = 1
+            while (made[0].parent / f"thumbnail.selected.v{n:03d}.png").exists():
+                n += 1
+            sel = made[0].parent / f"thumbnail.selected.v{n:03d}.png"
             shutil.copy2(made[0], sel)
-            print(f"  selected -> {sel.name}  ({len(made)} candidate(s))")
+            print(f"  selected -> {sel.name}  <- {made[0].name}  ({len(made)} candidate(s))")
     return 0
 
 
