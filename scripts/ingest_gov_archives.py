@@ -121,6 +121,10 @@ HOST_INTERVAL = {
     "www.loc.gov": 2.0, "tile.loc.gov": 1.0,
     "catalog.archives.gov": 1.0,
     "discovery.nationalarchives.gov.uk": 1.0,
+    # CourtListener throttles the WHOLE API at 50 requests/hour per token
+    # (measured: {"detail":"Rate limit exceeded: 50/hour"}). 75s = 48/hour, which
+    # leaves headroom for the second call each case needs (search + audio detail).
+    "www.courtlistener.com": 75.0,
 }
 DEFAULT_INTERVAL = 1.0
 # hosts that need a fresh TCP connection per request (NARA CloudFront serves the
@@ -1485,7 +1489,172 @@ def src_ukna(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
     return 0   # never counts as media; the run's stop logic ignores candidates
 
 
-ADAPTERS = {"nara": src_nara, "loc": src_loc, "ukna": src_ukna}
+# ------------------------------------------------------------ courtlistener --
+# Oral-argument audio for the cases this channel actually covers. The shelf had
+# 8,635 audio rows before this and all of them were Freesound effects: not one
+# second of a real courtroom, on a channel whose subject IS the courtroom.
+CL_THEMES = {"courtroom_justice"}
+CL_CASES_JSON = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+                             "config", "court_audio_cases.json")
+CL_LICENSE = ("Public domain — U.S. court oral-argument recording. Court audio is a "
+              "U.S. government work and carries no copyright; CourtListener (Free Law "
+              "Project) redistributes court records as public domain. Same basis as "
+              "PD_SCOTUS in scripts/add_real_assets.py. Raw: CourtListener REST v4 "
+              "/search/?type=oa + /audio/<id>/")
+
+
+def _cl_token() -> str:
+    """Token from the environment, else the git-ignored repo .env. The ingest lanes
+    do not load .env themselves; this mirrors scripts/run_research.py."""
+    tok = os.environ.get("COURTLISTENER_TOKEN", "")
+    if tok:
+        return tok
+    path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
+    if os.path.isfile(path):
+        with open(path, encoding="utf-8", errors="ignore") as f:
+            for line in f:
+                key, _, val = line.partition("=")
+                if key.strip() == "COURTLISTENER_TOKEN":
+                    return val.strip().strip('"').strip("'")
+    return ""
+
+
+def _cl_norm(s: str) -> str:
+    """Case names for matching: 'Kelo v. City of New London' -> 'kelo v city of new
+    london'. Punctuation varies between our list and CourtListener's caseName."""
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).split())
+
+
+def src_courtlistener(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
+    """CourtListener oral-argument audio, targeted by case name.
+
+    Not a query crawl. An episode needs THE recording of THE case it is about, so
+    the case list is explicit (config/court_audio_cases.json) and a name that
+    returns nothing is logged as a miss instead of being filled with a lookalike.
+
+    Two API facts, both verified live rather than read from the docs:
+      * /audio/ has no case-name filter (checked with an OPTIONS request), so the
+        search endpoint is used and results are matched back on the normalised
+        caseName. This matters: an unanchored "Terry v. Ohio" search returns
+        Torres v. Madrid and Prado Navarette, which cite Terry but are not it.
+      * search results carry no media URL, so the mp3 comes from a second call to
+        /audio/<id>/ (local_path_mp3 = CourtListener's normalised copy;
+        download_url = the court's original, used as the fallback).
+
+    CourtListener throttles the whole API at 50 requests/hour per token, so this
+    costs two requests per case and the run is designed to stop rather than retry:
+    HOST_INTERVAL paces it at 75s, retries are off, and a 429 ends the run cleanly.
+    Progress survives in two places -- ingested cases in the ledger, cases with no
+    recording in _ledger/courtlistener_misses.json -- so a relaunch resumes instead
+    of restarting. Delete that misses file to re-ask CourtListener about them.
+    """
+    if theme not in CL_THEMES or PASS > 1:
+        return 0        # finite list: one pass covers it, later passes are noise
+    token = _cl_token()
+    if not token:
+        raise PermissionError("COURTLISTENER_TOKEN missing (.env or environment)")
+    if not os.path.isfile(CL_CASES_JSON):
+        log(f"  courtlistener: no case list at {CL_CASES_JSON}")
+        return 0
+    with open(CL_CASES_JSON, encoding="utf-8") as f:
+        cases = json.load(f).get("cases", [])
+    auth = {"Authorization": f"Token {token}"}
+    # A case with no recording costs a request every run unless the answer is
+    # remembered; at 50 requests/hour that is the difference between finishing the
+    # list and never reaching the end of it.
+    miss_path = os.path.join(LEDGER_DIR, "courtlistener_misses.json")
+    known: set[str] = set()
+    if os.path.isfile(miss_path):
+        try:
+            with open(miss_path, encoding="utf-8") as f:
+                known = set(json.load(f))
+        except Exception:  # noqa: BLE001
+            known = set()
+    got = 0
+    misses: list[str] = []
+    quota_out = False
+    for case in cases:
+        if got >= limit or not ledger.shelf_ok():
+            break
+        name = str(case.get("case", "")).strip()
+        if not name or name in known:
+            continue
+        court = str(case.get("court", "scotus")).strip()
+        try:
+            # retries=0: the shared retry loop fires four times, which turns one
+            # throttled request into four and empties the hourly quota faster than
+            # it can recover. A 429 is not a transient error here, it is the budget.
+            data = NET.get_json("https://www.courtlistener.com/api/rest/v4/search/",
+                                params={"type": "oa", "q": f'"{name}"', "court": court},
+                                headers=auth, retries=0)
+        except Exception as e:  # noqa: BLE001
+            if "429" in str(e):
+                log(f"  courtlistener: hourly quota spent at {name!r} — stopping. "
+                    f"Ingested cases and recorded misses are skipped next run, so a "
+                    f"relaunch resumes from here.")
+                break
+            log(f"  courtlistener search fail ({name!r}): {e}")
+            continue
+        want = _cl_norm(name)
+        hits = [r for r in data.get("results", []) if _cl_norm(r.get("caseName")) == want]
+        if not hits:
+            misses.append(name)
+            log(f"  courtlistener: no recording for {name!r} "
+                f"({data.get('count', 0)} hits, none matching the case name)")
+            continue
+        for r in hits:
+            if got >= limit or not ledger.shelf_ok():
+                break
+            aid = str(r.get("id", ""))
+            if not aid:
+                continue
+            try:
+                rec = NET.get_json(
+                    f"https://www.courtlistener.com/api/rest/v4/audio/{aid}/",
+                    headers=auth, retries=0)
+            except Exception as e:  # noqa: BLE001
+                if "429" in str(e):
+                    log(f"  courtlistener: hourly quota spent fetching audio {aid} "
+                        f"({name!r}) — stopping; relaunch resumes here.")
+                    quota_out = True
+                    break
+                log(f"  courtlistener audio {aid} fail: {e}")
+                continue
+            mp3 = str(rec.get("local_path_mp3") or "")
+            url = (f"https://storage.courtlistener.com/{mp3.lstrip('/')}" if mp3
+                   else str(rec.get("download_url") or ""))
+            if not url:
+                reject_log("courtlistener", aid, theme, "no-media-url", title=name)
+                continue
+            argued = str(r.get("dateArgued") or rec.get("date_argued") or "")[:10]
+            # The title must carry a theme term or take() rejects it as
+            # title-irrelevant (verified: the bare case name scores 0).
+            title = f"{r.get('caseName') or name} — Supreme Court oral argument {argued}".strip()
+            desc = (f"Oral argument recording, {court}. Duration "
+                    f"{rec.get('duration') or '?'}s. Episode {case.get('episode', '-')}.")
+            if take(ledger, source="courtlistener", item_id=aid, title=title,
+                    source_url=f"https://www.courtlistener.com{r.get('absolute_url', '')}",
+                    download_url=url, kind="audio", theme=theme,
+                    license_raw=CL_LICENSE, decision="pd", default_ext="mp3",
+                    dry_run=dry_run, desc=desc,
+                    extra={"case": name, "episode": case.get("episode", ""),
+                           "date_argued": argued, "cl_audio_id": aid}):
+                got += 1
+        if quota_out:
+            break
+    if misses:
+        try:
+            with open(miss_path, "w", encoding="utf-8") as f:
+                json.dump(sorted(known | set(misses)), f, indent=1)
+        except OSError as e:
+            log(f"  courtlistener: could not write {miss_path}: {e}")
+        log(f"  courtlistener: {len(misses)} case(s) have no recording here: "
+            f"{', '.join(misses)}")
+    return got
+
+
+ADAPTERS = {"nara": src_nara, "loc": src_loc, "ukna": src_ukna,
+            "courtlistener": src_courtlistener}
 
 
 def retriage_nara(dry_run: bool = False) -> int:
@@ -1542,7 +1711,7 @@ def main() -> int:
     global PASS, LOG_FILE
     ap = argparse.ArgumentParser(
         description="PD gov-archives ingest (NARA/LOC/UKNA -> E:\\pd-archive)")
-    ap.add_argument("--source", default="all", help="all | comma list of: nara,loc,ukna")
+    ap.add_argument("--source", default="all", help="all | comma list of: nara,loc,ukna,courtlistener")
     ap.add_argument("--theme", default="all", help="all | comma list of themes")
     ap.add_argument("--limit", type=int, default=1000,
                     help="max media items per source per theme PER PASS (smoke: 2-3)")
@@ -1614,6 +1783,8 @@ def main() -> int:
                 if src == "nara" and theme not in NARA_THEMES:
                     continue
                 if src == "ukna" and theme not in UKNA_THEMES:
+                    continue
+                if src == "courtlistener" and theme not in CL_THEMES:
                     continue
                 log(f"[p{pass_n}:{src}] theme={theme}")
                 try:
