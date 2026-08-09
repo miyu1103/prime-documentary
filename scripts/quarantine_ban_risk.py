@@ -100,7 +100,11 @@ RULES = {
          # a newspaper. Both now need the studio or the film to be named.
          r"walt disney|disney/|disney's|disney channel|superman|mr\.? bean|baby huey|"
          r"oswald the lucky|what a cartoon|chester cheetah|keebler|star wars|"
-         r"taxi driver \(19|fireball xl5|cartoon craze|max fleischer",
+         r"taxi driver \(19|fireball xl5|cartoon craze|max fleischer|"
+         # Found 2026-08-09: music_performance_pd_era/ia is eight items and six are these
+         # -- Wiggles TV episodes, three ABC For Kids concerts and a Nintendo compilation,
+         # every one tagged pd or cc0 in the ledger, every one actively owned.
+         r"the wiggles|abc for kids|\bnintendo\b",
          "actively owned studio character or feature mislabelled pd/cc0 — Content ID risk"),
         ("off_air_recording",
          # \b on media smart: it is a prefix of "media smartphone".
@@ -123,6 +127,19 @@ RULES = {
         ("named_litigant",
          r"brian david hill",
          "proceeding tied to a named private litigant"),
+        # Found by eye 2026-08-09 on the laboratory_forensics sheet. Two of that pair's
+        # seven items are COVID conspiracy broadcasts sitting beside a USAF sonic boom
+        # test and a 1945 Navy film; the older conspiracy pattern looks for "vaccine hoax"
+        # and neither title says it. Named broadcasters and claim shapes instead.
+        # "depopulation" is deliberately absent: it matched four Pixabay photographs of an
+        # empty swing tagged for RURAL depopulation, which is ordinary small-town imagery.
+        ("medical_misinformation",
+         r"stew peters|carrie madej|plandemic|scamdemic|graphene oxide"
+         r"|died suddenly|vaccine shedding|spike protein shed"
+         r"|\bco ?v ?[- ]?19\b[^|]{0,40}\bmicroscope\b"
+         r"|\bcovid\b[^|]{0,40}\bmicroscope\b"
+         r"|\bagenda 2[01]3?0?\b|adrenochrome|\bq ?anon\b|great awakening",
+         "medical or governance misinformation — a monetised channel cannot carry it"),
     ],
     # A documentary shelf cannot hold synthetic pictures of the world it is documenting.
     # These 464 items announce themselves in their own titles -- Pixabay contributors tag
