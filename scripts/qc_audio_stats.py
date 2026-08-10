@@ -92,7 +92,7 @@ def measure(path: str) -> dict | None:
 # protect a stereo music bed -- graded Terry, Kelo and Carpenter "unusable" at 100%.
 # They are primary source audio for the exact cases this channel covers. The floors do
 # not apply to them; only genuine defects do.
-SPEECH_SOURCES = {"oyez"}
+SPEECH_SOURCES = {"oyez", "courtlistener"}
 
 
 def faults(m: dict, theme: str, source: str = "") -> list[str]:
@@ -103,7 +103,14 @@ def faults(m: dict, theme: str, source: str = "") -> list[str]:
         f.append("near-silent")
     elif m.get("silence_s", 0) / dur > 0.9:
         f.append("mostly-silence")
-    if m.get("peak_db", -99) >= -0.1:
+    # Peak alone does not mean clipped. An mp3 decodes to float and legitimately
+    # overshoots full scale: the three court recordings flagged here measured +1.3,
+    # +3.0 and +3.8 dBFS with a flat factor of exactly 0 -- not one run of repeated
+    # samples, which is what actual clipping leaves behind. They need about 4dB of
+    # headroom on the way to 16-bit, not rejection. `flat` is already collected by
+    # measure() and was simply never consulted, so a file that overshoots is only a
+    # fault when the flatness confirms the waveform was squared off.
+    if m.get("peak_db", -99) >= -0.1 and (m.get("flat") or 0) > 0:
         f.append("clipped")
     if dur < 0.4:
         f.append("too-short")
