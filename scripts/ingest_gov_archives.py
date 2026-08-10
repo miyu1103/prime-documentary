@@ -405,8 +405,15 @@ def theme_terms(theme: str) -> tuple[set[str], list[str]]:
 # strong term reaches the contract's >=30 archive threshold without lowering it.
 # Measured need: 61 of 220 courtroom rejects were genuine trial footage at s=15.
 STRONG_TERMS: dict[str, set[str]] = {
+    # "oral argument" / "supreme court" added 2026-08-10: an argument recording
+    # carries neither "courtroom" nor "trial" in its title, so five genuine SCOTUS
+    # recordings (Riley, Carpenter, Timbs, Maryland v. King, Lange) were rejected
+    # at s=15 on "court" alone. For THIS theme an argument before the Court is the
+    # subject matter, not an incidental word — same domain-relative reasoning the
+    # web lane records for LANE_STRONG. The threshold is untouched.
     "courtroom_justice": {"courtroom", "courthouse", "trial", "tribunal",
-                          "verdict", "jury", "judiciary"},
+                          "verdict", "jury", "judiciary",
+                          "oral argument", "supreme court"},
     "prison_jail": {"prison", "penitentiary", "jail", "inmate", "reformatory",
                     "cellblock", "correctional"},
     "police_period": {"police", "patrolman", "constable", "precinct"},
@@ -642,6 +649,25 @@ def validate_media(path: str, kind: str) -> tuple[bool, str]:
                 long_edge = max(im.size)
             if long_edge < 1200:
                 return False, f"image-below-1200px({long_edge})"
+            return True, "ok"
+        if kind == "audio":
+            info = ffprobe_json(path)
+            fmt = info.get("format", {})
+            streams = [s for s in info.get("streams", [])
+                       if s.get("codec_type") == "audio"]
+            if not streams:
+                return False, "no-audio-stream"
+            dur = float(fmt.get("duration", 0) or 0)
+            if dur < 1:
+                return False, f"audio-too-short({dur:.1f}s)"
+            # Deliberately no bitrate floor. The shared framework rejects below
+            # 128kbps, which is a floor for music and sound effects. A court
+            # recording is archival speech that nobody will ever re-record at a
+            # higher bitrate: measured, Utah v. Strieff from CourtListener is
+            # 48kbps mono / 22.05kHz / 59min, so a 128k rule would delete every
+            # argument recording there is. CONTRACT and PD_CANON both forbid a
+            # delete path for irreplaceable records -- that is how seven
+            # Nuremberg reels were destroyed.
             return True, "ok"
         return False, f"unknown-kind:{kind}"
     except Exception as e:  # noqa: BLE001
