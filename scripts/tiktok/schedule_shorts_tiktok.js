@@ -41,6 +41,11 @@ const START = process.argv[2] || null;          // YYYY-MM-DD, first day to fill
 // Slots already taken on the start day by an earlier run - skip them, or two videos land on the
 // same minute and TikTok accepts both.
 const SKIP = parseInt(process.argv[3] || '0', 10);
+// How many to post in this run. Six, not fifteen: the calendar only drains four a day, TikTok
+// only lets you schedule about 27 days ahead, and the daily content-check cap sits somewhere
+// around fifteen to twenty. Uploading faster than the schedule drains buys nothing and spends the
+// whole day's allowance in one sitting - on an account with no followers and four prior flags.
+const MAX = parseInt(process.argv[4] || '6', 10);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 const done = new Set();
@@ -483,7 +488,7 @@ async function one(pg, item, slot) {
 
 (async () => {
   if (!START) { console.error('usage: node tt_batch_clean.js <YYYY-MM-DD first day>'); process.exit(2); }
-  const todo = QUEUE.filter(q => !done.has(q.short));
+  const todo = QUEUE.filter(q => !done.has(q.short)).slice(0, MAX);
   const slots = slotsFrom(START, todo.length + SKIP).slice(SKIP);
   console.log(`${todo.length} to schedule, 4/day from ${START}`);
   let b = await puppeteer.connect({ browserURL: 'http://127.0.0.1:9222', defaultViewport: null });
