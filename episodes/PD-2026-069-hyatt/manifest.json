@@ -57,7 +57,7 @@
       "kind": "verifier",
       "path": "episodes/PD-2026-069-hyatt/01_research/sources/verify_quotes.v001.py",
       "revision": "v001",
-      "result": "136/136 located by exact string search, exit 0, 2026-08-11"
+      "result": "140/140 located by exact string search, exit 0, 2026-08-11"
     }
   ],
   "approvals": [
@@ -75,7 +75,7 @@
     "hard_limit": { "amount": 200, "currency": "USD" }
   },
   "warnings": [
-    "FACTS LEDGER (binding, read before any script or asset work): episodes/_planning/EP69_hyatt_FACTS_LEDGER.v001.md - 138 fact rows, 136 machine-verified verbatim quotations, 21 forbidden claims, 12 open questions, and a BINDING shot-substitution table at section 12. Re-verify any quotation with: py -3.11 episodes/PD-2026-069-hyatt/01_research/sources/verify_quotes.v001.py (exits non-zero on failure).",
+    "FACTS LEDGER (binding, read before any script or asset work): episodes/_planning/EP69_hyatt_FACTS_LEDGER.v001.md - 138 fact rows, 140 machine-verified verbatim quotations, 21 forbidden claims, 12 open questions, and a BINDING shot-substitution table at section 12. Re-verify any quotation with: py -3.11 episodes/PD-2026-069-hyatt/01_research/sources/verify_quotes.v001.py (exits non-zero on failure).",
     "THE LOAD ARITHMETIC, WHICH IS THE WHOLE FILM. Original single continuous rod: design load at each connection 20.3 kips. As built with two interrupted rods: 40.7 kips at the fourth-floor connection - essentially doubled, NBS's own word, Conclusion 6. Code-expected ultimate capacity at 40.7 kips design load with the AISC factor of safety of 1.67: at least 68 kips. Actual average ultimate capacity of the six fourth-floor connections: 18.6 kips. Load actually on the most heavily loaded connection on the night: 21.4 kips = 31 percent of the 68 kips the code expected, and 53 percent of the 40.7 kips design load. Had the change never been made: required ultimate 1.67 x 20.3 = 33.9 kips against an available 20.5 kips, i.e. about 60 percent - still illegal, but it would have held that night (NBS Conclusion 8). Source: NBS BSS 143 sections 10.2, 10.3, 10.5 and chapter 11.",
     "THE NUMBER TRAP. NBS's 31 percent is a LOAD ratio (21.4 / 68), not a CAPACITY ratio. The as-built capacity ratio is 18.6 / 68 = about 27 percent and is OUR arithmetic - NBS never states it. The Missouri Court of Appeals conflates the two in its own footnote 12, so that footnote must never be quoted for the engineering. Ledger forbidden claim 1.",
     "DEATH TOLL. Use 114, citing Duncan v. Missouri Bd., 744 S.W.2d 524 (Mo. App. 1988). NBS BSS 143 (May 1982) says 111 killed plus two of the injured who subsequently died = 113. No retrieved document explains the difference and the film must not invent one. Injured: 'at least 186' (court) or 188 (NBS). NOT 216 - that figure appears in no retrieved source. Ledger forbidden claims 3 and 4.",

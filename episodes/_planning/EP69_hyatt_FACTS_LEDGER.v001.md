@@ -27,7 +27,7 @@ Machine verifier: **`verify_quotes.v001.py`** · offsets: `verified_offsets.v001
 
 **Citation convention.** `@NNNNN` is the **character offset of the first character of the quoted string
 inside the cached text file** named in the row. **Every ✓ VERBATIM row was located by exact string search
-during this pass, and the verifier re-runs green: 136 of 136, exit 0.** One of my own transcriptions failed
+during this pass, and the verifier re-runs green: 140 of 140, exit 0.** One of my own transcriptions failed
 on the first run (`M48` — the reporter breaks *Gillum* across a line as `Gil-lum`) and was corrected against
 the source rather than kept.
 
@@ -46,7 +46,7 @@ the source rather than kept.
 
 ## ⚠ THE EXTRACTION TRAPS — read this before quoting anything
 
-**Three separate traps. All three are live. All three would produce a "verbatim" quotation that is wrong.**
+**Four separate traps. All four are live. All four would produce a "verbatim" quotation that is wrong.**
 
 **1. BSS 143 is a scan-and-OCR document, and the OCR is imperfect in exactly the places the film cares
 about.** The PDF NIST serves is a 1982 print scan. Confirmed corruptions in the cached text include
@@ -68,6 +68,15 @@ as single Unicode ligature glyphs (U+FB01/FB02/FB00), so `final` extracts as `�
 their plain-ASCII equivalents — a lossless typographic expansion, applied so that offsets are stable and
 quotations can be retyped. **Nothing else was altered.** JPCF also uses doubled-comma open quotes
 (``‘‘`` / ``’’``) — reproduce them exactly or the search will fail.
+
+**4. THIS LEDGER IS NOT THE BYTE-EXACT STRING. `verify_quotes.v001.py` IS.** For legibility, quotations
+nested inside a quotation are rendered here with plain apostrophes — the ledger prints
+*"...a 'potential match'..."* where the source has typographic quotes, and JPCF's doubled open-quotes
+(``‘‘``) are shown singly. **Fourteen rows are affected.** Every one of them is byte-exact in the verifier.
+**Before any string goes on screen, in a telop, in a title or into a script, take it from
+`verify_quotes.v001.py` and not from this markdown** — open the verifier and search it for a distinctive
+phrase from the row. The verifier is keyed by source order (`N…` = NBS, `M…` = MOCA, `P…` = JPCF), not by
+this ledger's row IDs, exactly as EP67's was.
 
 ---
 
@@ -96,7 +105,7 @@ quotations can be retyped. **Nothing else was altered.** JPCF also uses doubled-
 | ID-02 | **The number the film uses is 114.** ✓ **"On July 17, 1981, the second and fourth floor walkways of the Hyatt Regency Hotel in Kansas City collapsed and fell to the floor of the main lobby. Approximately 1500 to 2000 people were in the lobby. The walkways together weighed 142,000 pounds. One hundred and fourteen people died and at least 186 were injured."** | ✓ VERBATIM | MOCA @418 — the Missouri Court of Appeals, 1988, official reporter |
 | ID-03 | Independently, in the ASCE literature: ✓ **"The final count of 114 dead and nearly 200 injured led one group of investigators to declare the Hyatt disaster ''the most devastating structural collapse'' in U.S. history"** | ✓ VERBATIM | JPCF @2531 |
 | ID-04 | NBS's own characterisation, in its own words: ✓ **"this was the most devastating structural collapse ever to take place in the United States."** | ✓ VERBATIM | NBS @8960 |
-| ID-05 | The federal investigation is **NBS Building Science Series 143**, May 1982, produced at the request of the Mayor of Kansas City: ✓ **"On July 22, Mayor Berkley formally requested that the NBS independently ascertain the most probable cause of the collapse of the Hyatt Regency walkways."** Senator Thomas F. Eagleton's office made the first contact on 20 July; Senators Eagleton and Danforth and Congressman Bolling endorsed the request on 24 July. | ✓ VERBATIM (quote) + ✓ | NBS @22496; endorsement at NBS @21900–22600 |
+| ID-05 | The federal investigation is **NBS Building Science Series 143**, May 1982, produced at the request of the Mayor of Kansas City: ✓ **"On July 22, Mayor Berkley formally requested that the NBS independently ascertain the most probable cause of the collapse of the Hyatt Regency walkways."** It began with a phone call: ✓ **"On July 20, 1981, Senator Thomas F. Eagleton's office contacted the National Bureau of Standards and requested that technical assistance be provided to Kansas City."** And it was made bipartisan and congressional: ✓ **"Senators Thomas F. Eagleton and John C. Danforth and Congressman Richard Boiling endorsed the Mayor's request for the NBS to conduct an independent investigation."** *(the OCR renders Congressman Richard **Bolling** as "Boiling" — quoted exactly; **if the name is spoken or captioned, spell it Bolling**)* | ✓ VERBATIM (all three) | NBS @22496, @9051, @9346 |
 | ID-06 | NBS did not have free access to the evidence: ✓ **"In the early phases of the investigation, NBS involvement was limited by court order to visual and photographic observations and measurements."** Permission to weigh spans and remove specimens came later, by court order, after agreement with litigants. | ✓ VERBATIM | NBS @9748 |
 | ID-07 | The disciplinary case: ✓ **"In February 1984, the Missouri Board for Architects, Professional Engineers and Land Surveyors filed its complaint seeking a determination that the engineering certificates of registration of Daniel Duncan and Jack Gillum and the engineering certificate of authority of G.C. E. International were subject to discipline"** | ✓ VERBATIM | MOCA @988 |
 | ID-08 | Its outcome: ✓ **"Upon remand for assessment of appropriate disciplinary action, the Board ordered all three certificates revoked. Upon appeal the trial court affirmed. We do likewise."** | ✓ VERBATIM | MOCA @1445 |
@@ -118,7 +127,7 @@ quotations can be retyped. **Nothing else was altered.** JPCF also uses doubled-
 | EV-07 | ✓ **"7:05 PM - Second and fourth floor walkways collapse."** | ✓ VERBATIM | NBS @59676 |
 | EV-08 | ✓ **"4:30 AM - Last survivor removed from debris."** — Saturday 18 July. Between those two lines, in NBS's own timeline: the first call for help at 7:08 PM, the call for cutting tools at 7:19, for a forklift at 7:23, more than 100 firefighters by 7:52, a heavy crane at 8:30 PM, the first walkway span lifted at 3:15 AM. | ✓ VERBATIM (quote) + ✓ (timeline) | NBS @60332; timeline NBS @59676–60400 |
 | EV-09 | ✓ **"In the collapse, the second and fourth floor walkways fell to the atrium floor, with the fourth floor walkway coming to rest on top of the lower walkway."** | ✓ VERBATIM | NBS @6394 |
-| EV-10 | **Where the dead and injured were.** NBS: *"Most of those killed or injured were either on the atrium first floor level or on the second floor walkway."* — i.e. the fourth-floor walkway fell **onto** the second-floor walkway and then onto the crowd beneath. | ✓ | NBS @21400–21520 (the sentence is broken across a column split in the OCR; **do not quote it verbatim** — paraphrase, or quote the identical statement in the executive summary) |
+| EV-10 | **Where the dead and injured were.** ✓ **"Most of those killed or injured were either on the first floor level of the atrium or on the second floor walkway. The third floor walkway was not involved in the collapse."** — the fourth-floor walkway fell **onto** the second-floor walkway and then onto the people beneath. **Quote the executive-summary wording at @11759; the same sentence in chapter 1 is scrambled by the OCR across a column split and must not be quoted.** | ✓ VERBATIM | NBS @11759 |
 | EV-11 | **The weight that fell:** ✓ **"The walkways together weighed 142,000 pounds."** | ✓ VERBATIM | MOCA @418 (same sentence as ID-02) |
 | EV-12 | **Cross-check on EV-11, ours.** NBS measured *"the dead load prior to collapse averaged 17.8 kips (79 kN) per walkway span"* (@322536) and states each walkway had four spans (@46766). Two walkways × four spans × 17.8 kips = **142.4 kips = 142,400 lb**, which independently reproduces the court's 142,000 lb. **This is our arithmetic on two verbatim figures. Say "about 71 tons" or quote the court; never say "NBS says 142,000 pounds".** | ✓ (arithmetic) | NBS @322536 + NBS @46766 + MOCA @418. See ⛔-06. |
 
@@ -227,7 +236,7 @@ The change did not weaken the steel. It doubled what the same steel was asked to
 | FN-05 | **Why one failure meant total collapse.** ✓ **"Thus, failure of any one connection would have led to complete collapse of the walkway system."** | ✓ VERBATIM | NBS @306333 |
 | FN-06 | **As constructed, three separate things violated the code.** ✓ **"the fourth floor to ceiling hanger rods, and the third floor walkway hanger rods did not satisfy the design provisions of the Kansas City Building Code."** (Conclusion 5, whose subject is the box beam-hanger rod connections as well.) | ✓ VERBATIM | NBS @15027 |
 | FN-07 | **It was not bad workmanship and it was not bad steel.** ✓ **"Neither the quality of workmanship nor the materials used in the walkway system played a significant role in initiating the collapse"** | ✓ VERBATIM | NBS @15747 (Conclusion 9) |
-| FN-08 | **The load that night was far below the legal design load.** NBS Conclusion 1: collapse occurred *"under the action of loads that were substantially less than the design loads specified by the Kansas City Building Code."* (The cached span contains the OCR fault `specif ied` — **paraphrase, or use LD-13, which says the same thing in a clean span.**) | ✓ | NBS @321100–321400. ⚠ not quotable verbatim. |
+| FN-08 | **The load that night was far below the legal design load.** NBS Conclusion 1: ✓ **"Collapse of the walkways occurred under the action of loads that were substantially less than the design loads specif ied by the Kansas City Building Code."** ⚠ **The cached text carries the OCR fault `specif ied`.** The verifier matches the faulty string because that is what the file contains; **on screen and in narration the word is `specified`.** If a clean quotation is wanted, use LD-13 instead, which says the same thing in an uncorrupted span. | ✓ VERBATIM (with a flagged OCR fault) | NBS @322158 |
 | FN-09 | **How NBS counted the people.** ✓ **"It is concluded that a total of 63 people represents a credible upper-bound combined occupancy of the second and fourth floor walkways at the time of collapse."** | ✓ VERBATIM | NBS @322318 |
 | FN-10 | ✓ **"Based on information obtained from the KMBC TV videotape, it is likely that the second floor walkway was occupied by approximately 40 people shortly before the collapse."** A television crew was filming the dance and was changing batteries when the collapse happened. | ✓ VERBATIM | NBS @66846 |
 | FN-11 | **NBS refused to build the story out of witnesses.** ✓ **"In view of the conflicting nature of eyewitness accounts and the availability of videotape showing parts of the walkways a few minutes before the collapse, this investigation did not include any organized effort to interview the injured or to solicit eyewitness accounts of the collapse."** ✓ **"the number of people and their location on the walkways at the time of collapse can only be estimated and will never be"** known with certainty. | ✓ VERBATIM (both) | NBS @63561, @64317 |
@@ -508,8 +517,8 @@ appeal, from the Harvard Caselaw Access Project's copy of the official reporter)
 secondary retelling, from an engineering-ethics teaching case, or from a subagent's unverified report.**
 **138 fact rows** (identity 8, evening 12, design 12, the change 12, load arithmetic 20, findings 14, review
 chain 19, discipline 23, profession 8, not-established 10) · **21 quarantine entries** · **12 open
-questions** · a **binding substitution table** for every image the film may not show. **136 distinct
+questions** · a **binding substitution table** for every image the film may not show. **140 distinct
 quotations are machine-verified ✓ VERBATIM** and re-verifiable with
-`episodes/PD-2026-069-hyatt/01_research/sources/verify_quotes.v001.py` (136/136, exit 0). CourtListener
+`episodes/PD-2026-069-hyatt/01_research/sources/verify_quotes.v001.py` (140/140, exit 0). CourtListener
 returned **HTTP 429** again and nothing depends on it. **Gate ○-06 (are the named engineers living?) must be
 closed before the script locks.** Nothing here has been written into a script.*

@@ -84,6 +84,12 @@ Q = [
     ("N52", "NBS", "The atrium is a large open area approximately 117 ft (36 m) by 145 ft (44 m) in plan and 50 ft (15 m) high."),
     ("N53", "NBS", "The second floor walkway was suspended from the fourth floor walkway which was directly above it."),
     ("N54", "NBS", "In the collapse, the second and fourth floor walkways fell to the atrium floor, with the fourth floor walkway coming to rest on top of the lower walkway."),
+    ("N59", "NBS", "Most of those killed or injured were either on the first floor level of the atrium or on the second floor walkway. The third floor walkway was not involved in the collapse."),
+    # NOTE: the OCR of BSS 143 splits "specified" as "specif ied" here. Quoted exactly.
+    ("N60", "NBS", "Collapse of the walkways occurred under the action of loads that were substantially less than the design loads specif ied by the Kansas City Building Code."),
+    # NOTE: the OCR renders Congressman Richard Bolling as "Boiling". Quoted exactly.
+    ("N61", "NBS", "Senators Thomas F. Eagleton and John C. Danforth and Congressman Richard Boiling endorsed the Mayor's request for the NBS to conduct an independent investigation."),
+    ("N62", "NBS", "On July 20, 1981, Senator Thomas F. Eagleton's office contacted the National Bureau of Standards and requested that technical assistance be provided to Kansas City."),
     ("N55", "NBS", "Each walkway consisted of four spans made up of W16 x 26 stringers"),
     ("N56", "NBS", "Three suspended walkways spanned the atrium at the second, third, and fourth floor levels."),
     ("N57", "NBS", "an investigation conducted by the U.S. Occupational Safety and Health Administration (OSHA) following a fatal construction accident at the Hyatt Regency Hotel in October 1979"),
