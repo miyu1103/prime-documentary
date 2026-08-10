@@ -1659,7 +1659,13 @@ def src_courtlistener(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> 
             desc = (f"Oral argument recording, {court}. Duration "
                     f"{rec.get('duration') or '?'}s. Episode {case.get('episode', '-')}.")
             if take(ledger, source="courtlistener", item_id=aid, title=title,
-                    source_url=f"https://www.courtlistener.com{r.get('absolute_url', '')}",
+                    # The id-based URL, not the search hit's absolute_url: that slug
+                    # is wrong on some records (audio 6991 IS Riley -- the mp3 tags
+                    # carry docket 13-132 -- but its absolute_url points at
+                    # "aspen-fin-servs-v-eighth-jud-dist-ct", and 10919/Rodriguez
+                    # points at "people-v-chiaravalle"). /audio/<id>/ always resolves
+                    # to the record the media actually came from.
+                    source_url=f"https://www.courtlistener.com/audio/{aid}/",
                     download_url=url, kind="audio", theme=theme,
                     license_raw=CL_LICENSE, decision="pd", default_ext="mp3",
                     dry_run=dry_run, desc=desc,
