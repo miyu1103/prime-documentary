@@ -1529,20 +1529,24 @@ CL_LICENSE = ("Public domain — U.S. court oral-argument recording. Court audio
               "/search/?type=oa + /audio/<id>/")
 
 
-def _cl_token() -> str:
-    """Token from the environment, else the git-ignored repo .env. The ingest lanes
-    do not load .env themselves; this mirrors scripts/run_research.py."""
-    tok = os.environ.get("COURTLISTENER_TOKEN", "")
-    if tok:
-        return tok
+def _env_value(name: str) -> str:
+    """A credential from the environment, else from the git-ignored repo .env. The
+    ingest lanes do not load .env themselves; this mirrors scripts/run_research.py."""
+    val = os.environ.get(name, "")
+    if val:
+        return val
     path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), ".env")
     if os.path.isfile(path):
         with open(path, encoding="utf-8", errors="ignore") as f:
             for line in f:
                 key, _, val = line.partition("=")
-                if key.strip() == "COURTLISTENER_TOKEN":
+                if key.strip() == name:
                     return val.strip().strip('"').strip("'")
     return ""
+
+
+def _cl_token() -> str:
+    return _env_value("COURTLISTENER_TOKEN")
 
 
 def _cl_norm(s: str) -> str:
@@ -1839,6 +1843,123 @@ def src_oyez(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
     return got
 
 
+# -------------------------------------------------------------------- dpla --
+# DPLA is an aggregator, so the question was never how many records it has but
+# whether anything usable comes out the other end. Measured before writing this:
+#   * rightsCategory=Unlimited Re-Use is a clean, machine-readable filter and is
+#     rare -- 415 of 7,397 records for "courtroom" (5.6%) -- which is exactly the
+#     kind of subset CONTRACT section 3 asks for.
+#   * `object` on that subset is the real file, not a preview: NARA 2973x2428,
+#     Smithsonian 3000x2396. On the unfiltered set it is a 270x185 thumbnail, so
+#     the rights filter and the resolution floor happen to select together.
+#   * 45% of that subset comes from institutions with no other route onto this
+#     shelf -- Minnesota Digital Library, PA Digital, Ohio Digital Network,
+#     Northwest Digital Heritage, Digital Library of Georgia.
+# The last point is the whole reason this source exists, so the four aggregated
+# collections already ingested directly are skipped rather than fetched twice.
+DPLA_THEMES = set(THEMES)
+DPLA_SKIP_PROVIDERS = {
+    "national archives and records administration",
+    "smithsonian institution",
+    "library of congress",
+    "the new york public library",
+}
+DPLA_RIGHTS = "Unlimited Re-Use"
+
+
+def _dpla_decision(raw: str) -> str:
+    """Unlimited Re-Use is DPLA's normalisation of "no restrictions". Where the
+    institution's own statement additionally says public domain, say so."""
+    low = (raw or "").lower()
+    if any(k in low for k in ("publicdomain", "public domain", "no known copyright",
+                              "nocopyright", "noc-us", "cc0")):
+        return "pd"
+    return "free_commercial"
+
+
+def src_dpla(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
+    """DISABLED -- kept as documentation of a measured dead end. Do not re-enable
+    without new measurements; the numbers below are why it is not in ADAPTERS.
+
+    The plan was sound on paper and wrong in fact. rightsCategory=Unlimited Re-Use
+    really is a clean filter (415 of 7,397 courtroom records), the volumes really
+    are large (30,948 police, 37,206 bank), and 45% of that subset really does come
+    from institutions with no other route onto this shelf. What none of that says
+    is how big the file is.
+
+    `object` is a preview image by design. Measured one item per provider across
+    six queries -- 21 providers, one clears the 1200px floor, and it is a
+    collection already ingested directly:
+
+        Digital Commonwealth 300px   North Carolina 298px   Wisconsin 240px
+        PA Digital 200px   Minnesota 160px   Ohio 127px   Indiana 120px
+        Maryland 120px   Tennessee 120px    (5 more returned dead links)
+
+    The full-resolution records seen in the first sample -- NARA at 2973x2428,
+    Smithsonian at 3000x2396 -- come from the four aggregated collections this
+    source was written to SKIP, because the nara/loc adapters already fetch them.
+    So the rights-clear subset splits exactly the wrong way: usable pixels only
+    where we already have a direct route, thumbnails everywhere else.
+
+    Enabling this would download 160px images for the 1200px validator to delete,
+    which is the same wasted loop the audio branch above was written to stop.
+
+    DPLA remains useful to a human as a finding aid: search it to learn WHICH
+    institution holds something, then fetch from that institution."""
+    if theme not in DPLA_THEMES:
+        return 0
+    key = os.environ.get("DPLA_API_KEY", "") or _env_value("DPLA_API_KEY")
+    if not key:
+        raise PermissionError("DPLA_API_KEY missing (.env or environment)")
+    got = 0
+    plans = [("image", THEMES[theme].get("image", []), "jpg"),
+             ("moving image", THEMES[theme].get("video", []), "mp4")]
+    for dpla_type, queries, dext in plans:
+        kind = "image" if dpla_type == "image" else "video"
+        for q in queries:
+            if got >= limit or not ledger.shelf_ok():
+                return got
+            try:
+                data = NET.get_json("https://api.dp.la/v2/items", params={
+                    "api_key": key, "q": q, "page_size": 100, "page": PASS,
+                    "rightsCategory": DPLA_RIGHTS,
+                    "sourceResource.type": dpla_type})
+            except Exception as e:  # noqa: BLE001
+                log(f"  dpla search fail ({q!r}/{dpla_type}): {e}")
+                continue
+            for x in data.get("docs", []):
+                if got >= limit or not ledger.shelf_ok():
+                    return got
+                item_id = str(x.get("id") or "")
+                url = str(x.get("object") or "")
+                if not item_id or not url:
+                    continue
+                provider = str((x.get("provider") or {}).get("name") or "")
+                if provider.strip().lower() in DPLA_SKIP_PROVIDERS:
+                    reject_log("dpla", item_id, theme, "provider-ingested-directly",
+                               title=provider)
+                    continue
+                sr = x.get("sourceResource", {}) or {}
+                title = sr.get("title")
+                title = (title[0] if isinstance(title, list) and title else title) or item_id
+                desc = sr.get("description")
+                desc = (desc[0] if isinstance(desc, list) and desc else desc) or ""
+                rights = x.get("rights") or sr.get("rights") or ""
+                rights = rights[0] if isinstance(rights, list) and rights else rights
+                raw = (f"DPLA rightsCategory={DPLA_RIGHTS}; provider={provider}; "
+                       f"item rights={str(rights)[:300]}")
+                if take(ledger, source="dpla", item_id=item_id, title=str(title)[:200],
+                        source_url=str(x.get("isShownAt") or x.get("@id") or ""),
+                        download_url=url, kind=kind, theme=theme,
+                        license_raw=raw, decision=_dpla_decision(str(rights)),
+                        default_ext=dext, dry_run=dry_run, desc=str(desc)[:900],
+                        extra={"dpla_provider": provider,
+                               "dpla_data_provider": str(x.get("dataProvider") or "")[:120]}):
+                    got += 1
+    return got
+
+
+# src_dpla is deliberately NOT in ADAPTERS. See its docstring: measured, not assumed.
 ADAPTERS = {"nara": src_nara, "loc": src_loc, "ukna": src_ukna,
             "courtlistener": src_courtlistener, "oyez": src_oyez}
 
