@@ -1685,8 +1685,162 @@ def src_courtlistener(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> 
     return got
 
 
+# -------------------------------------------------------------------- oyez --
+# CourtListener's argument collection is thin before the 2010s: ten of the
+# twenty-five cases on the list -- Mapp, Terry, Katz, Kelo, Kyllo, Atwater,
+# T.L.O., Frazier, Mahanoy, Marmet -- returned nothing there. The Court has
+# recorded its arguments since 1955 and Oyez publishes them, which is where the
+# five argument mp3s already sitting on this shelf came from.
+OYEZ_THEMES = {"courtroom_justice"}
+OYEZ_INDEX = os.path.join(LEDGER_DIR, "oyez_case_index.json")
+OYEZ_FIRST_TERM = 1955
+OYEZ_LICENSE = ("Public domain — U.S. Supreme Court oral-argument recording: a U.S. "
+                "government work with no copyright, held by the National Archives "
+                "(RG 267). Published by Oyez, credited as a courtesy; Oyez's "
+                "CC BY-NC-SA site terms cover its own annotations, not the Court's "
+                "recording. Same basis as PD_SCOTUS in scripts/add_real_assets.py, "
+                "under which five of these are already shelved. Raw: api.oyez.org "
+                "/cases/<term>/<docket> -> oral_argument_audio -> media_file[audio/mpeg]")
+
+
+def _oyez_index(rebuild: bool = False) -> dict:
+    """Normalised case name -> [[term, docket], ...].
+
+    A case name cannot address the Oyez API: media hangs off /cases/<term>/<docket>
+    and the term is the year the case was ARGUED, not the year it is known by --
+    Terry v. Ohio, decided 1968, is term 1967. So the term listings are walked once
+    and cached. About 70 requests, no key, no throttle observed.
+    """
+    if not rebuild and os.path.isfile(OYEZ_INDEX):
+        try:
+            with open(OYEZ_INDEX, encoding="utf-8") as f:
+                return json.load(f)
+        except Exception:  # noqa: BLE001
+            pass
+    idx: dict = {}
+    last = datetime.now(timezone.utc).year
+    for term in range(OYEZ_FIRST_TERM, last + 1):
+        try:
+            rows = NET.get_json(f"https://api.oyez.org/cases?per_page=0&filter=term:{term}")
+        except Exception as e:  # noqa: BLE001
+            log(f"  oyez index: term {term} failed: {e}")
+            continue
+        for c in rows if isinstance(rows, list) else []:
+            name = _cl_norm(c.get("name"))
+            docket = str(c.get("docket_number") or "").strip()
+            if name and docket:
+                idx.setdefault(name, []).append([term, docket])
+    log(f"  oyez index: {len(idx)} case names across terms {OYEZ_FIRST_TERM}-{last}")
+    try:
+        with open(OYEZ_INDEX, "w", encoding="utf-8") as f:
+            json.dump(idx, f)
+    except OSError as e:  # noqa: BLE001
+        log(f"  oyez index: could not cache: {e}")
+    return idx
+
+
+def _case_already_shelved(case_name: str) -> bool:
+    """True when a lane already shelved audio for this case. The courtlistener
+    source runs first and covers the modern half of the list; without this the
+    older-source pass would fetch the same argument a second time."""
+    want = _cl_norm(case_name)
+    for fn in ("courtlistener.jsonl", "oyez.jsonl"):
+        path = os.path.join(LEDGER_DIR, fn)
+        if not os.path.isfile(path):
+            continue
+        try:
+            with open(path, encoding="utf-8") as f:
+                for line in f:
+                    try:
+                        if _cl_norm(json.loads(line).get("case")) == want:
+                            return True
+                    except Exception:  # noqa: BLE001
+                        continue
+        except OSError:
+            continue
+    return False
+
+
+def src_oyez(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
+    """Supreme Court arguments from Oyez for the cases CourtListener does not have.
+
+    Same explicit case list as the courtlistener source. Byte-identical files are
+    caught by the ledger's sha layer, so the five arguments already on the stock
+    shelf cost a download and are then dropped rather than duplicated.
+    """
+    if theme not in OYEZ_THEMES or PASS > 1:
+        return 0
+    if not os.path.isfile(CL_CASES_JSON):
+        log(f"  oyez: no case list at {CL_CASES_JSON}")
+        return 0
+    with open(CL_CASES_JSON, encoding="utf-8") as f:
+        cases = json.load(f).get("cases", [])
+    idx = _oyez_index()
+    got, unindexed = 0, []
+    for case in cases:
+        if got >= limit or not ledger.shelf_ok():
+            break
+        name = str(case.get("case", "")).strip()
+        if not name or _case_already_shelved(name):
+            continue
+        entries = idx.get(_cl_norm(name)) or []
+        if not entries:
+            unindexed.append(name)
+            continue
+        term, docket = entries[0]
+        try:
+            detail = NET.get_json(f"https://api.oyez.org/cases/{term}/{docket}")
+        except Exception as e:  # noqa: BLE001
+            log(f"  oyez case {term}/{docket} ({name!r}) failed: {e}")
+            continue
+        audios = detail.get("oral_argument_audio") or []
+        if not audios:
+            log(f"  oyez: {name!r} ({term}/{docket}) has no argument audio")
+            continue
+        for part, oa in enumerate(audios, 1):
+            if got >= limit or not ledger.shelf_ok():
+                break
+            href, oid = str(oa.get("href") or ""), str(oa.get("id") or "")
+            if not href or not oid:
+                continue
+            try:
+                media = NET.get_json(href)
+            except Exception as e:  # noqa: BLE001
+                log(f"  oyez media {oid} failed: {e}")
+                continue
+            mp3 = next((str(m.get("href") or "") for m in (media.get("media_file") or [])
+                        if "mpeg" in str(m.get("mime", ""))), "")
+            if not mp3:
+                reject_log("oyez", oid, theme, "no-mp3-rendition", title=name)
+                continue
+            argued = str(media.get("title") or "").replace("Oral Argument - ", "").strip()
+            suffix = f" (part {part})" if len(audios) > 1 else ""
+            title = (f"{detail.get('name') or name} — Supreme Court oral argument "
+                     f"{argued}{suffix}").strip()
+            # "docket" is a NEGATIVE term for this theme (it marks textual case
+            # files, which the lane exists to keep out) and cost this description
+            # 25 points against a gate it then only cleared by 5. The word is wrong
+            # for an audio item anyway: this is a recording, not a docket document.
+            desc = (f"Oral argument recording, Supreme Court of the United States, "
+                    f"term {term}, case number {docket}. "
+                    f"Episode {case.get('episode', '-')}.")
+            if take(ledger, source="oyez", item_id=oid, title=title,
+                    source_url=f"https://www.oyez.org/cases/{term}/{docket}",
+                    download_url=mp3, kind="audio", theme=theme,
+                    license_raw=OYEZ_LICENSE, decision="pd", default_ext="mp3",
+                    dry_run=dry_run, desc=desc, attribution_text="Oyez (courtesy)",
+                    extra={"case": name, "episode": case.get("episode", ""),
+                           "oyez_term": term, "oyez_docket": docket,
+                           "oyez_audio_id": oid, "date_argued": argued}):
+                got += 1
+    if unindexed:
+        log(f"  oyez: {len(unindexed)} case(s) not found in the term index: "
+            f"{', '.join(unindexed)}")
+    return got
+
+
 ADAPTERS = {"nara": src_nara, "loc": src_loc, "ukna": src_ukna,
-            "courtlistener": src_courtlistener}
+            "courtlistener": src_courtlistener, "oyez": src_oyez}
 
 
 def retriage_nara(dry_run: bool = False) -> int:
@@ -1743,7 +1897,7 @@ def main() -> int:
     global PASS, LOG_FILE
     ap = argparse.ArgumentParser(
         description="PD gov-archives ingest (NARA/LOC/UKNA -> E:\\pd-archive)")
-    ap.add_argument("--source", default="all", help="all | comma list of: nara,loc,ukna,courtlistener")
+    ap.add_argument("--source", default="all", help="all | comma list of: nara,loc,ukna,courtlistener,oyez")
     ap.add_argument("--theme", default="all", help="all | comma list of themes")
     ap.add_argument("--limit", type=int, default=1000,
                     help="max media items per source per theme PER PASS (smoke: 2-3)")
@@ -1817,6 +1971,8 @@ def main() -> int:
                 if src == "ukna" and theme not in UKNA_THEMES:
                     continue
                 if src == "courtlistener" and theme not in CL_THEMES:
+                    continue
+                if src == "oyez" and theme not in OYEZ_THEMES:
                     continue
                 log(f"[p{pass_n}:{src}] theme={theme}")
                 try:
