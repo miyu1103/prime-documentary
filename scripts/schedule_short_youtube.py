@@ -2365,7 +2365,13 @@ def main(argv: list[str]) -> int:
     cfg = CONFIG[args.short]
     short_id = f"short{args.short}"
     video = OUT / f"{short_id}_yt_coverfirst.mp4"
-    thumb = OUT / f"{short_id}_thumb.png"
+    # The custom thumbnail is what the channel page, search and suggested rails show, and those are
+    # 16:9. Setting the vertical 1080x1920 cover there letterboxes it into two black bars with the
+    # headline cropped away - measured on the live channel, 40 Shorts were shipped like that. Use
+    # the dedicated ShortThumbYT render when it exists and only fall back to the vertical cover.
+    thumb = ROOT / "runs" / "shorts_thumbs" / "samples" / f"{short_id}.png"
+    if not thumb.is_file():
+        thumb = OUT / f"{short_id}_thumb.png"
     pkg = ROOT / "episodes" / cfg["ep"] / "09_package"
     result_path = pkg / f"{short_id}_youtube_schedule_result.{cfg['rev']}.json"
 
