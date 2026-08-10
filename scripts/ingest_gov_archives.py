@@ -1094,6 +1094,12 @@ def take(ledger: Ledger, *, source: str, item_id: str, title: str, source_url: s
         "id": str(item_id), "source": source, "source_url": source_url,
         "title": title, "license_field_raw": license_raw[:500],
         "license_decision": decision, "theme": theme, "file_path": dest,
+        # `kind` is what the other lanes write and what any tool filtering by media
+        # type reads. This lane never wrote it, so counting the shelf on that key
+        # reported ZERO archival video -- 1,422 Internet Archive and 814 NARA films
+        # are invisible to it. search_archive is unaffected (it derives kind from the
+        # extension), which is exactly why the gap went unnoticed for so long.
+        "kind": kind,
         "bytes": nbytes, "sha256": sha,
         "fetched_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
         "relevance_score": score, "matched_keywords": matched[:12],
