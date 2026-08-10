@@ -43,6 +43,55 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from factory_themes import theme_of  # legacy filename-derived theme (40% wrong; fallback only)
 import factory_ledger_themes as flt   # audited ledger -> the real theme source
 
+US_PLACES = (
+    "united states", "u s a", "usa", "american", "america", "washington dc",
+    "washington d c", "capitol hill", "white house", "supreme court of united",
+    "alabama", "alaska", "arizona", "arkansas", "california", "colorado",
+    "connecticut", "delaware", "florida", "georgia", "hawaii", "idaho", "illinois",
+    "indiana", "iowa", "kansas", "kentucky", "louisiana", "maine", "maryland",
+    "massachusetts", "michigan", "minnesota", "mississippi", "missouri", "montana",
+    "nebraska", "nevada", "new hampshire", "new jersey", "new mexico", "new york",
+    "north carolina", "north dakota", "ohio", "oklahoma", "oregon", "pennsylvania",
+    "rhode island", "south carolina", "south dakota", "tennessee", "texas", "utah",
+    "vermont", "virginia", "wisconsin", "wyoming", "chicago", "los angeles",
+    "san francisco", "boston", "philadelphia", "houston", "phoenix", "dallas",
+    "seattle", "denver", "atlanta", "miami", "detroit", "brooklyn", "manhattan",
+)
+
+# Place names that mark an item as foreign to the cases this channel covers. Measured
+# on the shelf: 226 of 3,092 legal_court titles name one of these (7.3%), and they were
+# clustering at the head of the ledger, so a Wroclaw courtroom was being offered before
+# the Supreme Court of the United States. Titles naming no place at all are the majority
+# (82%) and are never demoted by this list.
+NON_US_PLACES = (
+    "poland", "polish", "wroclaw", "warsaw", "krakow", "london", "liverpool",
+    "england", "britain", "british", "france", "french", "paris", "rennes",
+    "germany", "german", "berlin", "munich", "italy", "italian", "rome", "milan",
+    "spain", "spanish", "madrid", "barcelona", "india", "indian", "delhi", "mumbai",
+    "china", "chinese", "beijing", "shanghai", "japan", "tokyo", "russia", "moscow",
+    "turkey", "istanbul", "brazil", "mexico", "netherlands", "dutch", "amsterdam",
+    "sweden", "norway", "denmark", "finland", "czech", "prague", "hungary",
+    "budapest", "austria", "vienna", "ukraine", "kyiv", "greece", "athens",
+    "portugal", "lisbon", "belgium", "brussels", "ireland", "dublin", "scotland",
+    "edinburgh", "australia", "sydney", "melbourne", "canada", "toronto",
+    "bulgaria", "sofia", "romania", "bucharest", "serbia", "croatia", "baghdad",
+    "iraq", "iran", "tehran", "egypt", "cairo", "korea", "seoul", "thailand",
+    "bangkok", "vietnam", "indonesia", "jakarta", "philippines", "manila",
+    "malaysia", "singapore", "pakistan", "bangladesh", "nigeria", "kenya",
+    "south africa", "argentina", "chile", "colombia", "peru", "switzerland",
+    "zurich", "geneva", "israel", "jerusalem", "tel aviv",
+    # Added after a Kazakh government building reached the top ten on the first run:
+    # this list demotes the place names it knows and nothing else, so an unlisted
+    # country still surfaces. It narrows the problem; it does not close it.
+    "kazakhstan", "uzbekistan", "mongolia", "nepal", "sri lanka", "taiwan",
+    "hong kong", "new zealand", "ecuador", "venezuela", "bolivia", "uruguay",
+    "morocco", "tunisia", "algeria", "saudi", "dubai", "abu dhabi", "qatar",
+    "lithuania", "latvia", "estonia", "slovakia", "slovenia", "belarus",
+    "armenia", "azerbaijan", "iceland", "luxembourg", "malta", "cyprus",
+    "kuwait", "oman", "jordan", "lebanon", "syria", "ethiopia", "ghana",
+    "tanzania", "uganda", "zimbabwe", "botswana", "namibia",
+)
+
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAN = os.path.join(REPO, "assets", "asset_manifest.v001.json")
 SHELF = os.path.join("H:", os.sep, "pd-media", "assets")   # manifest paths are relative to here
@@ -178,6 +227,9 @@ def main() -> int:
     ap.add_argument("--kind", default="", help="image|video")
     ap.add_argument("--limit", type=int, default=30)
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--in-order", action="store_true",
+                    help="return ledger order instead of spreading across subtypes "
+                         "(reproduces a pre-2026-08-10 selection)")
     ap.add_argument("--themes", action="store_true", help="list all themes with counts and exit")
     ap.add_argument("--allow-off-label", action="store_true",
                     help="LAST RESORT: also admit contradiction:off_label items (nothing in the "
@@ -270,6 +322,52 @@ def main() -> int:
                       f"(--allow-off-label to admit them)")
         for x in hits:
             counts[x["_tier_name"]] = counts.get(x["_tier_name"], 0) + 1
+    if not a.in_order:
+        # Ledger order is contributor order. The first fifteen legal_court "match"
+        # items are AF-BG-0463..0477 and five of them are one photographer's Wroclaw
+        # courtroom, so taking the head of the list is how a Polish courtroom ends up
+        # standing in for an American one five times in a cut. Round-robin across
+        # subtype WITHIN each tier: rank still decides who is eligible, spread decides
+        # who gets picked. Same idea as stratified_sample in qc_archive_contact_sheets,
+        # which round-robins across sources for the same reason.
+        by_tier: dict = {}
+        for x in hits:
+            by_tier.setdefault(x.get("_tier", 5), []).append(x)
+        spread = []
+        for tier in sorted(by_tier):
+            groups: dict = {}
+            for x in by_tier[tier]:
+                key = str(x.get("subtype") or os.path.basename(str(x.get("path", "")))
+                          .split("__")[-1].rsplit(".", 1)[0])
+                groups.setdefault(key, []).append(x)
+            # Inside a subtype, an item whose real title names a place outside the
+            # United States goes last. Not excluded -- a Bulgarian courtroom is still a
+            # courtroom and a thin subtype may need it -- but this channel tells US
+            # cases, so it should be reached only after the domestic and unlabelled
+            # ones are used. Only explicit place names count; most titles name none.
+            def _place_rank(x) -> int:
+                """0 = names a US place, 1 = names none, 2 = names a foreign one.
+
+                Promoting the domestic ones is what makes this robust; demoting the
+                foreign ones alone was whack-a-mole. A country list caught Bulgaria
+                and Iraq, then Kazakhstan surfaced, then Montevideo -- a city whose
+                country was already on the list. Unknown foreign places now land in
+                the middle, and the Supreme Court of the United States still leads.
+                """
+                t = str(x.get("_title") or x.get("title") or "").lower()
+                if any(w in t for w in US_PLACES):
+                    return 0
+                return 2 if any(w in t for w in NON_US_PLACES) else 1
+            for k in groups:
+                groups[k].sort(key=_place_rank)
+            keys = sorted(groups)
+            i = 0
+            while any(groups[k] for k in keys):
+                k = keys[i % len(keys)]
+                if groups[k]:
+                    spread.append(groups[k].pop(0))
+                i += 1
+        hits = spread
     hits = hits[: a.limit]
 
     if a.json:
