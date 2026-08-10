@@ -80,7 +80,12 @@ def main() -> int:
         block = text[start:end]
 
         video = OUT / f"short{n}_yt_coverfirst.mp4"
-        thumb = OUT / f"short{n}_thumb.png"
+        # Same choice the uploader makes: the 16:9 ShortThumbYT render when it exists, and only
+        # then the vertical cover. Reading the vertical one here reported "already pinned" for 55
+        # Shorts whose thumbnail had in fact been replaced, and the upload then failed on the hash.
+        thumb = ROOT / "runs" / "shorts_thumbs" / "samples" / f"short{n}.png"
+        if not thumb.is_file():
+            thumb = OUT / f"short{n}_thumb.png"
         if not video.exists() or not thumb.exists():
             print(f"  short{n}: missing render or thumbnail - skipped")
             continue
