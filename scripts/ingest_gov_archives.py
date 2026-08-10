@@ -1754,7 +1754,11 @@ def _case_already_shelved(case_name: str) -> bool:
     source runs first and covers the modern half of the list; without this the
     older-source pass would fetch the same argument a second time."""
     want = _cl_norm(case_name)
-    for fn in ("courtlistener.jsonl", "oyez.jsonl"):
+    # stock.jsonl holds five arguments fetched by hand long before this lane
+    # existed. Leaving it out is how Carpenter, Riley and Timbs were downloaded a
+    # second time: same recording, different encoding, so the sha layer could not
+    # see it either. Their `case` field was backfilled to make them visible here.
+    for fn in ("courtlistener.jsonl", "oyez.jsonl", "stock.jsonl"):
         path = os.path.join(LEDGER_DIR, fn)
         if not os.path.isfile(path):
             continue
