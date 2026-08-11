@@ -207,6 +207,24 @@ SENSE_GUARDS: dict[str, list[str]] = {
     "post": [r"post ?war", r"post ?production", r"fence post", r"post ?script",
              r"post ?graduate", r"lamp ?post", r"goal ?post"],
     "mail": [r"mail ?order", r"chain ?mail", r"e-?mail"],
+    # Added 2026-08-10 from measurement, not from imagination: these are the senses
+    # actually sitting in the MATCH tier of the factory shelf, where the selector
+    # trusts them. Counts are match-tier items whose title carries the wrong sense.
+    # The right sense is deliberately left alone -- the Wall Street bull, the scales
+    # of justice, the electric chair and a bank vault all still match.
+    "bull": [r"bull (?:terrier|riding|rider|fighting|fight)", r"pit ?bull",
+             r"rodeo", r"bull in (?:a )?(?:field|pasture)"],          # 41: rodeo, dogs
+    "globe": [r"(?:desk|table|vintage|antique|decorative|wooden|snow) globe",
+              r"globe (?:ornament|decoration)", r"snow ?globe"],       # 33: ornaments
+    "blood": [r"blood (?:pressure|sugar|orange|moon)", r"bloodhound"], # 31: BP monitors
+    "chair": [r"(?:office|dining|deck|beach|high|rocking) chair",
+              r"wheel ?chair", r"arm ?chair"],                         # 12: furniture
+    "case": [r"(?:guitar|phone|pencil|camera|display|glasses) case",
+             r"book ?case", r"stair ?case", r"case study"],            # 8: containers
+    "scale": [r"(?:kitchen|bathroom|weighing) scale", r"fish scale",
+              r"scale model", r"(?:full|large|small).scale"],          # 4: cooking, models
+    "bank": [r"(?:river|canal|fog|snow|cloud|sand|grass|grassy|steep|muddy) ?banks?",
+             r"bank of (?:a )?(?:river|fog|cloud|snow)", r"riverbank"],  # 1: riverbank
 }
 # minimum relevance score to download (precision over recall; archives need >=2
 # distinct topical terms, curated stock search is already fairly relevant)
@@ -250,8 +268,20 @@ def term_weight(theme: str, term: str) -> int:
 
 
 def sense_ok(term: str, text: str) -> bool:
-    """False when the match is a different sense of the word (guard phrases)."""
-    return not any(re.search(p, text) for p in SENSE_GUARDS.get(term, []))
+    """False when the match is a different sense of the word (guard phrases).
+
+    A plural falls back to the guards written for the singular. SENSE_GUARDS is
+    keyed by term and several theme vocabularies carry the plural as its own entry,
+    so the guard written for "scale" was never consulted for "scales" -- measured,
+    that is how a kitchen scale stayed in the match tier under legal_court. The
+    same hole left "cells" (blood cells), "bars" (candy bar), "chairs" and "lights"
+    unguarded while every one of their singulars was covered."""
+    guards = SENSE_GUARDS.get(term)
+    if guards is None and term.endswith("es"):
+        guards = SENSE_GUARDS.get(term[:-2])
+    if guards is None and term.endswith("s"):
+        guards = SENSE_GUARDS.get(term[:-1])
+    return not any(re.search(p, text) for p in guards or [])
 
 
 def term_hits(term: str, text: str) -> bool:
