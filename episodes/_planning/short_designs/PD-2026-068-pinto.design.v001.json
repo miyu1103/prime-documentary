@@ -1,0 +1,114 @@
+{
+ "episode_id": "PD-2026-068-pinto",
+ "slug": "pinto",
+ "status": "DESIGN ONLY - every line traced to a line of EP68_pinto_script.en.v001.md; plates not commissioned; not approved for publication",
+ "destination": {
+  "video_id": null,
+  "title": "What the Table Was Actually About",
+  "url": null,
+  "privacy": "not_uploaded",
+  "views": 0
+ },
+ "script": "episodes/_planning/EP68_pinto_script.en.v001.md",
+ "era_note": "United States, 1972-1978. Anaheim and Winamac; the Grush-Saunby filing of September 1973.",
+ "shorts_existing": [],
+ "shorts_to_author": ["short277", "short278", "short279"],
+ "existing_angles_do_not_repeat": {},
+ "shorts": [
+  {
+   "short_id": "short277",
+   "angle": "Two engineers wrote an eight-page report with a table that counted deaths and priced them. Four years later a magazine reprinted it, and almost nobody noticed what the table was about.",
+   "avoids": "No claim about the number of burn deaths; no claim the table set a price on a Pinto life; no assertion that it was an internal memo; no dollar figure in this Short.",
+   "funnel_question_left_for_longform": "The document has a title nobody reads out. What does it say it is?",
+   "loop": true,
+   "loop_join": "The last line returns to the table the first line put on page six.",
+   "era": "September 1973 - September 1977",
+   "lines": [
+    {"id": "L1", "text": "September, nineteen seventy-three.", "delivery": "flat",
+     "source_lines": ["September, nineteen seventy-three."], "claims": ["P-HOOK"]},
+    {"id": "L2", "text": "Two engineers at Ford finish an eight-page report and send it to the federal government.", "delivery": "flat",
+     "source_lines": ["Two engineers at Ford finish an eight-page report and send it to the federal government."], "claims": ["P-HOOK"]},
+    {"id": "L3", "text": "On page six there is a table. It counts deaths, and it prices them.", "delivery": "intense",
+     "source_lines": ["On page six there is a table. It counts deaths, and it prices them."], "claims": ["P-HOOK"]},
+    {"id": "L4", "text": "Four years from now a magazine will reprint that table.", "delivery": "flat",
+     "source_lines": ["Four years from now a magazine will reprint that table, and the country will decide it knows what"], "claims": ["P-HOOK"]},
+    {"id": "L5", "text": "Almost nobody will notice what the table is about.", "delivery": "intense",
+     "source_lines": ["Almost nobody will notice what the table is about."], "claims": ["P-HOOK"]},
+    {"id": "L6", "text": "Nobody, in fifty years of telling this story, has read out the title of the table.", "delivery": "flat",
+     "source_lines": ["Nobody, in fifty years of telling this story, has read out the title of the table."], "claims": ["P-DOC"]},
+    {"id": "L7", "text": "It is not an internal memorandum. It is a filing.", "delivery": "intense",
+     "source_lines": ["It is not an internal memorandum. It is a filing."], "claims": ["P-DOC"]},
+    {"id": "L8", "text": "A submission to the federal regulator, captioned a Petition for Reconsideration.", "delivery": "flat",
+     "source_lines": ["To a submission Ford filed with the federal regulator on the nineteenth of"], "claims": ["P-DOC"]}
+   ],
+   "plates": [],
+   "kinetic_beats": [
+    {"line": "L3", "anchor": "prices them", "suffix": "prices_them", "words": ["IT PRICES", "THEM"], "style": "punch", "seconds": 2.2},
+    {"line": "L7", "anchor": "a filing", "suffix": "a_filing", "words": ["A FILING"], "style": "punch", "seconds": 2.0}
+   ]
+  },
+  {
+   "short_id": "short278",
+   "angle": "The car stalled on a freeway and the reason was not the fuel tank. A carburettor float had soaked through with petrol and sunk.",
+   "avoids": "No speed for the car behind - the script calls it the most contested fact; no injury description; no claim about who was at fault; no verdict figure in this Short.",
+   "funnel_question_left_for_longform": "How fast the car behind was going is the single most contested fact in the case. Why could nobody settle it?",
+   "loop": true,
+   "loop_join": "The last line returns to the stall the first line ended on.",
+   "era": "Anaheim to Barstow, 28 May 1972",
+   "lines": [
+    {"id": "L1", "text": "On the twenty-eighth of May, nineteen seventy-two, Mrs Lilly Gray set out in her Pinto from Anaheim.", "delivery": "flat",
+     "source_lines": ["On the twenty-eighth of May, nineteen seventy-two, Mrs Lilly Gray set out in her Pinto from Anaheim"], "claims": ["P-CRASH"]},
+    {"id": "L2", "text": "The car was six months old and had been driven approximately three thousand miles.", "delivery": "flat",
+     "source_lines": ["The car was six months old and had been driven approximately three"], "claims": ["P-CRASH"]},
+    {"id": "L3", "text": "A thirteen-year-old neighbour was in the passenger seat.", "delivery": "flat",
+     "source_lines": ["A thirteen-year-old neighbour was in the passenger seat."], "claims": ["P-CRASH"]},
+    {"id": "L4", "text": "She changed lanes. Then the car stalled and coasted to a halt in the middle lane of the freeway.", "delivery": "intense",
+     "source_lines": ["She changed lanes. Then the car stalled and coasted to a halt in the middle lane of the freeway."], "claims": ["P-CRASH"]},
+    {"id": "L5", "text": "The reason was not the fuel tank.", "delivery": "intense",
+     "source_lines": ["The reason was not the fuel tank."], "claims": ["P-CRASH"]},
+    {"id": "L6", "text": "The carburettor float had become so saturated with gasoline that it suddenly sank.", "delivery": "flat",
+     "source_lines": ["saturated with gasoline that it suddenly sank, opening the float chamber and causing the engine to"], "claims": ["P-CRASH"]},
+    {"id": "L7", "text": "That opened the float chamber and caused the engine to flood and stall.", "delivery": "flat",
+     "source_lines": ["saturated with gasoline that it suddenly sank, opening the float chamber and causing the engine to"], "claims": ["P-CRASH"]},
+    {"id": "L8", "text": "A car came up behind her. How fast it was going is the single most contested fact in the case.", "delivery": "intense",
+     "source_lines": ["A car came up behind her. How fast it was going is the single most contested fact in this entire"], "claims": ["P-CRASH"]}
+   ],
+   "plates": [],
+   "kinetic_beats": [
+    {"line": "L5", "anchor": "not the fuel tank", "suffix": "not_the_tank", "words": ["NOT THE", "FUEL TANK"], "style": "punch", "seconds": 2.2}
+   ]
+  },
+  {
+   "short_id": "short279",
+   "angle": "A grand jury indicted the company itself for reckless homicide. The maximum penalty for three deaths came to thirty-six thousand dollars.",
+   "avoids": "No verdict in the criminal case in this Short; no net-worth figure asserted as fact beyond what the trial judge put; no claim about the cause of the Indiana crash.",
+   "funnel_question_left_for_longform": "What does a fine of that size mean against a company of that size?",
+   "loop": true,
+   "loop_join": "The last line returns to the figure the first line built to.",
+   "era": "Elkhart County, Indiana, 10 August 1978",
+   "lines": [
+    {"id": "L1", "text": "On the tenth of August, nineteen seventy-eight, in Elkhart County, Indiana, three young women died.", "delivery": "flat",
+     "source_lines": ["On the tenth of August, nineteen seventy-eight, in Elkhart County, Indiana, three young women died"], "claims": ["P-WINAMAC"]},
+    {"id": "L2", "text": "A van struck the Pinto they were in.", "delivery": "flat",
+     "source_lines": ["after a van struck the Pinto they were in."], "claims": ["P-WINAMAC"]},
+    {"id": "L3", "text": "Judy Ulrich, eighteen. Her sixteen-year-old sister Lynn. Their cousin Donna Ulrich, eighteen.", "delivery": "flat",
+     "source_lines": ["The wire report named them: Judy Ulrich, eighteen, of"], "claims": ["P-WINAMAC"]},
+    {"id": "L4", "text": "A grand jury indicted the company.", "delivery": "intense",
+     "source_lines": ["A grand jury indicted the company."], "claims": ["P-WINAMAC"]},
+    {"id": "L5", "text": "Three counts of reckless homicide, and one count of criminal recklessness.", "delivery": "flat",
+     "source_lines": ["Three counts of reckless homicide, and one count of criminal"], "claims": ["P-WINAMAC"]},
+    {"id": "L6", "text": "Not a driver. Not an engineer. The corporation.", "delivery": "intense",
+     "source_lines": ["A grand jury indicted the company."], "claims": ["P-WINAMAC"]},
+    {"id": "L7", "text": "The maximum penalties would total thirty-six thousand dollars in fines.", "delivery": "flat",
+     "source_lines": ["The maximum penalties would total thirty-six thousand dollars in fines."], "claims": ["P-WINAMAC"]},
+    {"id": "L8", "text": "Thirty-six thousand. For three deaths.", "delivery": "intense",
+     "source_lines": ["Thirty-six thousand. Against a company whose net worth the California trial judge had put at seven"], "claims": ["P-WINAMAC"]}
+   ],
+   "plates": [],
+   "kinetic_beats": [
+    {"line": "L4", "anchor": "indicted the company", "suffix": "indicted_company", "words": ["THE COMPANY", "INDICTED"], "style": "punch", "seconds": 2.2},
+    {"line": "L7", "anchor": "thirty-six thousand", "suffix": "thirty_six_k", "words": ["$36,000"], "style": "number", "seconds": 2.2}
+   ]
+  }
+ ]
+}
