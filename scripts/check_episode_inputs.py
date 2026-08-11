@@ -26,6 +26,8 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import subprocess
+import sys
 from pathlib import Path
 
 from check_episode_spec import load_and_validate
@@ -70,6 +72,12 @@ def main() -> int:
         action="store_true",
         help=("permit a review-cut build when the only pool shortfall is distinct footage/motion; "
               "the deviation remains printed and check_spec_satisfied still reports it"),
+    )
+    ap.add_argument(
+        "--no-forecast",
+        action="store_true",
+        help=("skip the pre-render acceptance forecast (scripts/predict_acceptance.py). It costs "
+              "about half a minute and never changes this command exit code"),
     )
     a = ap.parse_args()
     slug = a.slug
@@ -278,7 +286,23 @@ def main() -> int:
             # the low edge of its own runtime band needs more footage, not less.
             declared = int(spec["distinct_video_assets"])
             no_reuse = max(declared, int(secs / 4.5 * 0.65)) if secs else declared
+            # Ask the planner, do not re-derive. `no_reuse // 2` encoded "the builder may
+            # reuse a factory clip twice", which stopped being true when solve_totals was changed
+            # to plan with check_asset_reuse's asymmetric caps (factory 1, motion 2). That stale
+            # halving demanded 132 clips of EP62 greene while the corrected plan uses 63 of its 74.
+            # Three copies of one sum is how the builder and the gate drifted apart in the first
+            # place; this leaves one.
             need = max(MIN_FACTORY, no_reuse // 2)
+            try:
+                from build_case_film_generic import solve_totals as _solve, _CAP_FACTORY as _capf
+                _f, _m, _s = _solve(secs or 1800.0, len(accepted), len(motion), len(stills))
+                if _f <= len(accepted) * _capf:
+                    # The pool CAN produce a legal plan -- but MIN_FACTORY still binds. Without
+                    # the outer max(), a three-clip pool would satisfy a three-clip plan and the
+                    # absolute floor would be gone: that is weakening the gate, not correcting it.
+                    need = max(MIN_FACTORY, min(need, len(accepted)))
+            except Exception:                          # planner unavailable: keep the old floor
+                pass
             motion_n = len(motion)
             if no_reuse and len(accepted) + motion_n < no_reuse:
                 notes.append(
@@ -327,11 +351,109 @@ def main() -> int:
                     f"directory, so remove them before rendering -- "
                     f"runs/qc/{slug}_clip_verdicts.v001.json records why each was rejected.")
 
+    # Wired 2026-08-10. The owner asked FOUR TIMES whether the opening design document followed
+    # their manual (C:/Users/aab15/CLAUDE.md). I answered "yes" twice; on the fourth asking I
+    # finally checked mechanically and found a missing required section. Nobody should have to ask
+    # a fourth time, so the check now runs on its own, at the stage where fixing it is free.
+    _pkg = sorted((ROOT / "episodes" / "_planning").glob(f"EP*_{slug}_PACKAGING.v*.md"))
+    if _pkg:
+        _r = subprocess.run([sys.executable, str(ROOT / "scripts" / "check_opening_spec.py"),
+                             "--slug", slug], capture_output=True, text=True, encoding="utf-8")
+        if _r.returncode != 0:
+            _bad = [l for l in (_r.stdout or "").splitlines()
+                    if l.startswith("欠落") or l.startswith("禁止事項")]
+            problems.append(f"{_pkg[-1].name} does not satisfy the opening design-doc manual: "
+                            + (" / ".join(_bad) if _bad else "see check_opening_spec.py --slug "
+                                                             + slug))
+
+    # THE POOL IS LOOKED AT ACROSS EACH CLIP, NOT ONCE AT t=1s.
+    # EP62 greene passed pre-flight, the 60s probe, the post-render gate, forty acceptance
+    # checks and the pool QC, and still shipped a modern US election ballot (filed
+    # `person_holding_papers`) and a 2011 Range Rover Evoque on an EU plate (filed
+    # `playground`) into a film about 1975 Louisville. Re-measured 2026-08-11: BOTH defects
+    # are visible in the single t=1s frame the old pool sheet already took. They survived
+    # because the verdict was recorded PER SHEET -- "somebody opened sheet 03" cleared twenty
+    # clips -- and because nothing bound that review to the pool it was made against.
+    # check_pool_frames.py requires a verdict for EVERY clip, bound by a hash of the pool id
+    # list. pool_state() reads a directory listing and one json -- no ffmpeg, no decode.
+    try:
+        from check_pool_frames import pool_state
+        _ps = pool_state(pub / "factory", verdicts, spec)
+        if not _ps["ok"]:
+            problems.extend(_ps["problems"])
+        else:
+            notes.append(_ps["reason"])
+    except Exception as exc:  # noqa: BLE001
+        # Fail closed. "The check could not run" is not "the pool was reviewed" -- that
+        # conflation is what let seven object stills pass as people plates above.
+        problems.append(f"the pool-frame review could not be checked ({type(exc).__name__}: "
+                        f"{exc}) -- run scripts/check_pool_frames.py --slug {slug} --state")
+
+    # AND THE SAME QUESTION, ASKED OF THE GENERATED PLATES.
+    # Measured 2026-08-11: check_pool_frames blocks a build on unreviewed ARCHIVE FOOTAGE, and
+    # nothing whatever blocked one on unreviewed GENERATED PLATES -- check_pool_faces and
+    # qc_delivered_plates are wired into nothing at all. Every EP66 plate defect came through
+    # that hole: a round pole where the callback needed a squared post (L170), a manufacturer
+    # wordmark that survived two [NEG] bans (L146), fused fingers on a hand that had already
+    # been re-ordered once to fix them (L236). Each was found because somebody was asked to
+    # look, never because a gate refused. check_plate_verdicts.py requires a resolved verdict
+    # for EVERY plate in the set, bound BOTH by a hash of the id list and by each file own
+    # sha256 -- a plate is regenerated under its own id, so the id list alone would carry the
+    # old verdict onto a new picture. Directory listing, one json, cached digests; no decode.
+    try:
+        from check_plate_verdicts import plate_state
+        _pv = plate_state(slug, spec)
+        if not _pv["ok"]:
+            problems.extend(_pv["problems"])
+        else:
+            notes.append(_pv["reason"])
+    except Exception as exc:  # noqa: BLE001
+        # Fail closed, for the same reason as above: "the check could not run" is not "the
+        # plates were reviewed".
+        problems.append(f"the plate review could not be checked ({type(exc).__name__}: "
+                        f"{exc}) -- run scripts/check_plate_verdicts.py --slug {slug}")
+
+    # AND THE DOCUMENTS A HUMAN BUILDS FROM MUST STATE THE NUMBERS THE MACHINE READS.
+    # CLAUDE.md s4.6 makes episode_spec the only place a TOOL reads a number from; it does not
+    # stop the prose from stating a different one, and the prose is what a person works to.
+    # Measured 2026-08-11: EP66 openfields carries eleven statements of target_cut_sec 3.5,
+    # people_plates_min 10 and mandatory_stills 65 across four documents against a spec that
+    # says 3.1, 20 and 185, and EP67 ramirez states mandatory_stills 96 against 122. The
+    # comparison lives in check_design_doc.py, which reads both; it is CALLED here because this
+    # file is on the path that blocks a build and that one is not.
+    try:
+        from check_design_doc import spec_document_drift
+        _drift = spec_document_drift(slug)
+        if _drift:
+            problems.extend(_drift)
+        else:
+            notes.append("design documents state no number that contradicts episode_spec")
+    except Exception as exc:  # noqa: BLE001
+        problems.append(f"the design-document / spec comparison could not run "
+                        f"({type(exc).__name__}: {exc}) -- run "
+                        f"scripts/check_design_doc.py --slug {slug}")
+
     comp = ROOT / "remotion" / "src" / "Root.tsx"
     if comp.is_file():
         want = f"Ep{num}"
         if not re.search(rf'id="{want}\w*"', comp.read_text(encoding="utf-8")):
             problems.append(f"no Remotion composition id starting with {want} in Root.tsx")
+
+    # AND WHAT THE POST-RENDER GATE WILL SAY, PRINTED WHERE SOMEBODY IS ALREADY LOOKING.
+    # This file lists missing INPUTS. It has never said anything about the ~40 acceptance checks
+    # that run AFTER the render, and on 2026-08-11 three episodes each surfaced acceptance
+    # failures after a 1.6-hour render that were computable from artifacts already on disk --
+    # a preflight receipt that was not green, a padding measurement over the narration index, a
+    # mux stage that does not stamp the tag sound_layers requires. scripts/predict_acceptance.py
+    # runs every acceptance check that can be decided without the mp4 and says CANNOT PREDICT for
+    # the rest. It is a FORECAST: it costs about half a minute, it never changes the exit code of
+    # this file, and a failure inside it is printed and ignored. --no-forecast skips it.
+    if not a.no_forecast:
+        try:
+            from predict_acceptance import forecast, one_line
+            print(one_line(forecast(slug)))
+        except Exception as exc:  # noqa: BLE001
+            print(f"[forecast] {slug}: unavailable ({type(exc).__name__}: {exc})")
 
     print(f"[inputs] {slug}: stills={len(stills)} (faces {len(faces)}) factory={len(factory)} "
           f"motion={len(motion)}" + (f" | {'; '.join(notes)}" if notes else ""))
