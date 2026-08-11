@@ -12,7 +12,11 @@
  "script": "episodes/_planning/EP69_hyatt_script.en.v001.md",
  "era_note": "Kansas City, Missouri, 1979-1984. R3: real deaths. No casualty figure and no victim named in any Short.",
  "shorts_existing": [],
- "shorts_to_author": ["short280", "short281", "short282"],
+ "shorts_to_author": [
+  "short280",
+  "short281",
+  "short282"
+ ],
  "existing_angles_do_not_repeat": {},
  "shorts": [
   {
@@ -24,27 +28,231 @@
    "loop_join": "The last line returns to the drawing the first line opened on.",
    "era": "Kansas City, Missouri, January 1979",
    "lines": [
-    {"id": "L1", "text": "Kansas City, Missouri. January 1979.", "delivery": "flat",
-     "source_lines": ["Kansas City, Missouri. January 1979."], "claims": ["H-HOOK"]},
-    {"id": "L2", "text": "In a fabricator's shop, somebody redraws one detail on a hotel walkway.", "delivery": "flat",
-     "source_lines": ["In a fabricator's shop, somebody redraws one detail on a hotel walkway."], "claims": ["H-HOOK"]},
-    {"id": "L3", "text": "One long steel rod becomes two shorter ones, four inches apart.", "delivery": "intense",
-     "source_lines": ["One long steel rod becomes two shorter ones, four inches apart."], "claims": ["H-HOOK"]},
-    {"id": "L4", "text": "Nobody has ever established whose hand drew it.", "delivery": "intense",
-     "source_lines": ["Nobody has ever established whose hand drew it."], "claims": ["H-HOOK"]},
-    {"id": "L5", "text": "Two walkways will hang from that detail, over a crowded room.", "delivery": "flat",
-     "source_lines": ["Two walkways will hang from that detail, over a crowded room."], "claims": ["H-HOOK"]},
-    {"id": "L6", "text": "The building went up while the drawings were still being drawn.", "delivery": "flat",
-     "source_lines": ["The Hyatt was a fast-track project, which means the building went up while the drawings were still being drawn."], "claims": ["H-ACT2"]},
-    {"id": "L7", "text": "Because of certain fabricating problems, the fabricator proposed a double rod system.", "delivery": "flat",
-     "source_lines": ["Because of certain fabricating problems, Havens proposed a double rod system to the project engineer."], "claims": ["H-ACT2"]},
-    {"id": "L8", "text": "On the drawing, it looks like the same thing.", "delivery": "intense",
-     "source_lines": ["On the drawing, it looks like the same thing."], "claims": ["H-HOOK"]}
+    {
+     "id": "L1",
+     "text": "Kansas City, Missouri. January 1979.",
+     "delivery": "flat",
+     "source_lines": [
+      "Kansas City, Missouri. January 1979."
+     ],
+     "claims": [
+      "H-HOOK"
+     ]
+    },
+    {
+     "id": "L2",
+     "text": "In a fabricator's shop, somebody redraws one detail on a hotel walkway.",
+     "delivery": "flat",
+     "source_lines": [
+      "In a fabricator's shop, somebody redraws one detail on a hotel walkway."
+     ],
+     "claims": [
+      "H-HOOK"
+     ]
+    },
+    {
+     "id": "L3",
+     "text": "One long steel rod becomes two shorter ones, four inches apart.",
+     "delivery": "intense",
+     "source_lines": [
+      "One long steel rod becomes two shorter ones, four inches apart."
+     ],
+     "claims": [
+      "H-HOOK"
+     ]
+    },
+    {
+     "id": "L4",
+     "text": "Nobody has ever established whose hand drew it.",
+     "delivery": "intense",
+     "source_lines": [
+      "Nobody has ever established whose hand drew it."
+     ],
+     "claims": [
+      "H-HOOK"
+     ]
+    },
+    {
+     "id": "L5",
+     "text": "Two walkways will hang from that detail, over a crowded room.",
+     "delivery": "flat",
+     "source_lines": [
+      "Two walkways will hang from that detail, over a crowded room."
+     ],
+     "claims": [
+      "H-HOOK"
+     ]
+    },
+    {
+     "id": "L6",
+     "text": "The building went up while the drawings were still being drawn.",
+     "delivery": "flat",
+     "source_lines": [
+      "The Hyatt was a fast-track project, which means the building went up while the drawings were still being drawn."
+     ],
+     "claims": [
+      "H-ACT2"
+     ]
+    },
+    {
+     "id": "L7",
+     "text": "Because of certain fabricating problems, the fabricator proposed a double rod system.",
+     "delivery": "flat",
+     "source_lines": [
+      "Because of certain fabricating problems, Havens proposed a double rod system to the project engineer."
+     ],
+     "claims": [
+      "H-ACT2"
+     ]
+    },
+    {
+     "id": "L8",
+     "text": "On the drawing, it looks like the same thing.",
+     "delivery": "intense",
+     "source_lines": [
+      "On the drawing, it looks like the same thing."
+     ],
+     "claims": [
+      "H-HOOK"
+     ]
+    }
    ],
-   "plates": [],
+   "plates": [
+    {
+     "n": 1,
+     "role": "hook",
+     "line": "L1",
+     "subject": "H001 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H001"
+    },
+    {
+     "n": 2,
+     "role": "hook",
+     "line": "L1",
+     "subject": "H002 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H002"
+    },
+    {
+     "n": 3,
+     "role": "hook",
+     "line": "L2",
+     "subject": "H003 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H003"
+    },
+    {
+     "n": 4,
+     "role": "hook",
+     "line": "L3",
+     "subject": "H004 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H004"
+    },
+    {
+     "n": 5,
+     "role": "body",
+     "line": "L4",
+     "subject": "H005 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H005"
+    },
+    {
+     "n": 6,
+     "role": "body",
+     "line": "L4",
+     "subject": "H006 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H006"
+    },
+    {
+     "n": 7,
+     "role": "body",
+     "line": "L5",
+     "subject": "H009 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H009"
+    },
+    {
+     "n": 8,
+     "role": "body",
+     "line": "L5",
+     "subject": "H011 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H011"
+    },
+    {
+     "n": 9,
+     "role": "body",
+     "line": "L6",
+     "subject": "H016 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H016"
+    },
+    {
+     "n": 10,
+     "role": "body",
+     "line": "L6",
+     "subject": "H021 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H021"
+    },
+    {
+     "n": 11,
+     "role": "body",
+     "line": "L7",
+     "subject": "H026 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H026"
+    },
+    {
+     "n": 12,
+     "role": "body",
+     "line": "L7",
+     "subject": "H029 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H029"
+    },
+    {
+     "n": 13,
+     "role": "close",
+     "line": "L8",
+     "subject": "H003 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H003"
+    },
+    {
+     "n": 14,
+     "role": "close",
+     "line": "L8",
+     "subject": "H004 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H004"
+    }
+   ],
    "kinetic_beats": [
-    {"line": "L3", "anchor": "four inches", "suffix": "four_inches", "words": ["4 INCHES"], "style": "number", "seconds": 2.0},
-    {"line": "L4", "anchor": "whose hand drew it", "suffix": "whose_hand", "words": ["NOBODY", "KNOWS WHO"], "style": "punch", "seconds": 2.2}
+    {
+     "line": "L3",
+     "anchor": "four inches",
+     "suffix": "four_inches",
+     "words": [
+      "4 INCHES"
+     ],
+     "style": "number",
+     "seconds": 2.0
+    },
+    {
+     "line": "L4",
+     "anchor": "whose hand drew it",
+     "suffix": "whose_hand",
+     "words": [
+      "NOBODY",
+      "KNOWS WHO"
+     ],
+     "style": "punch",
+     "seconds": 2.2
+    }
    ]
   },
   {
@@ -56,26 +264,197 @@
    "loop_join": "The last line returns to the limit the middle of the Short established.",
    "era": "Kansas City, July 1981 onwards",
    "lines": [
-    {"id": "L1", "text": "Three days after, a senator's office contacted the National Bureau of Standards.", "delivery": "flat",
-     "source_lines": ["On the twentieth of July, three days after, Senator Thomas Eagleton's office contacted the National Bureau of Standards and requested that technical assistance be provided to Kansas City."], "claims": ["H-ACT4"]},
-    {"id": "L2", "text": "Two days later the Mayor formally asked the Bureau to independently ascertain the most probable cause.", "delivery": "flat",
-     "source_lines": ["Two days later, the Mayor formally requested that the Bureau independently ascertain the most probable cause of the collapse."], "claims": ["H-ACT4"]},
-    {"id": "L3", "text": "Two senators and a congressman endorsed the request.", "delivery": "flat",
-     "source_lines": ["Two senators and a congressman endorsed the request."], "claims": ["H-ACT4"]},
-    {"id": "L4", "text": "The Bureau's people did not get a free hand.", "delivery": "intense",
-     "source_lines": ["The Bureau's people did not get a free hand."], "claims": ["H-ACT4"]},
-    {"id": "L5", "text": "Their involvement was limited by court order to visual and photographic observations and measurements.", "delivery": "flat",
-     "source_lines": ["In the early phases of the investigation, their involvement was limited by court order to visual and photographic observations and measurements."], "claims": ["H-ACT4"]},
-    {"id": "L6", "text": "They could look. They could photograph. They could measure.", "delivery": "flat",
-     "source_lines": ["In the early phases of the investigation, their involvement was limited by court order to visual and photographic observations and measurements."], "claims": ["H-ACT4"]},
-    {"id": "L7", "text": "Permission to weigh the spans and to cut specimens out of them came later, by court order.", "delivery": "flat",
-     "source_lines": ["Permission to weigh the spans and to cut specimens out of them came later, by court order, after the parties in the litigation agreed to it."], "claims": ["H-ACT4"]},
-    {"id": "L8", "text": "After the parties in the litigation agreed to it.", "delivery": "intense",
-     "source_lines": ["Permission to weigh the spans and to cut specimens out of them came later, by court order, after the parties in the litigation agreed to it."], "claims": ["H-ACT4"]}
+    {
+     "id": "L1",
+     "text": "Three days after, a senator's office contacted the National Bureau of Standards.",
+     "delivery": "flat",
+     "source_lines": [
+      "On the twentieth of July, three days after, Senator Thomas Eagleton's office contacted the National Bureau of Standards and requested that technical assistance be provided to Kansas City."
+     ],
+     "claims": [
+      "H-ACT4"
+     ]
+    },
+    {
+     "id": "L2",
+     "text": "Two days later the Mayor formally asked the Bureau to independently ascertain the most probable cause.",
+     "delivery": "flat",
+     "source_lines": [
+      "Two days later, the Mayor formally requested that the Bureau independently ascertain the most probable cause of the collapse."
+     ],
+     "claims": [
+      "H-ACT4"
+     ]
+    },
+    {
+     "id": "L3",
+     "text": "Two senators and a congressman endorsed the request.",
+     "delivery": "flat",
+     "source_lines": [
+      "Two senators and a congressman endorsed the request."
+     ],
+     "claims": [
+      "H-ACT4"
+     ]
+    },
+    {
+     "id": "L4",
+     "text": "The Bureau's people did not get a free hand.",
+     "delivery": "intense",
+     "source_lines": [
+      "The Bureau's people did not get a free hand."
+     ],
+     "claims": [
+      "H-ACT4"
+     ]
+    },
+    {
+     "id": "L5",
+     "text": "Their involvement was limited by court order to visual and photographic observations and measurements.",
+     "delivery": "flat",
+     "source_lines": [
+      "In the early phases of the investigation, their involvement was limited by court order to visual and photographic observations and measurements."
+     ],
+     "claims": [
+      "H-ACT4"
+     ]
+    },
+    {
+     "id": "L6",
+     "text": "They could look. They could photograph. They could measure.",
+     "delivery": "flat",
+     "source_lines": [
+      "In the early phases of the investigation, their involvement was limited by court order to visual and photographic observations and measurements."
+     ],
+     "claims": [
+      "H-ACT4"
+     ]
+    },
+    {
+     "id": "L7",
+     "text": "Permission to weigh the spans and to cut specimens out of them came later, by court order.",
+     "delivery": "flat",
+     "source_lines": [
+      "Permission to weigh the spans and to cut specimens out of them came later, by court order, after the parties in the litigation agreed to it."
+     ],
+     "claims": [
+      "H-ACT4"
+     ]
+    },
+    {
+     "id": "L8",
+     "text": "After the parties in the litigation agreed to it.",
+     "delivery": "intense",
+     "source_lines": [
+      "Permission to weigh the spans and to cut specimens out of them came later, by court order, after the parties in the litigation agreed to it."
+     ],
+     "claims": [
+      "H-ACT4"
+     ]
+    }
    ],
-   "plates": [],
+   "plates": [
+    {
+     "n": 1,
+     "role": "hook",
+     "line": "L1",
+     "subject": "H064 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H064"
+    },
+    {
+     "n": 2,
+     "role": "hook",
+     "line": "L1",
+     "subject": "H067 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H067"
+    },
+    {
+     "n": 3,
+     "role": "body",
+     "line": "L2",
+     "subject": "H072 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H072"
+    },
+    {
+     "n": 4,
+     "role": "body",
+     "line": "L3",
+     "subject": "H078 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H078"
+    },
+    {
+     "n": 5,
+     "role": "body",
+     "line": "L4",
+     "subject": "H083 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H083"
+    },
+    {
+     "n": 6,
+     "role": "body",
+     "line": "L5",
+     "subject": "H085 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H085"
+    },
+    {
+     "n": 7,
+     "role": "body",
+     "line": "L5",
+     "subject": "H086 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H086"
+    },
+    {
+     "n": 8,
+     "role": "body",
+     "line": "L6",
+     "subject": "H088 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H088"
+    },
+    {
+     "n": 9,
+     "role": "body",
+     "line": "L7",
+     "subject": "H093 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H093"
+    },
+    {
+     "n": 10,
+     "role": "body",
+     "line": "L7",
+     "subject": "H097 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H097"
+    },
+    {
+     "n": 11,
+     "role": "close",
+     "line": "L8",
+     "subject": "H100 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H100"
+    }
+   ],
    "kinetic_beats": [
-    {"line": "L4", "anchor": "free hand", "suffix": "free_hand", "words": ["NOT A", "FREE HAND"], "style": "punch", "seconds": 2.2}
+    {
+     "line": "L4",
+     "anchor": "free hand",
+     "suffix": "free_hand",
+     "words": [
+      "NOT A",
+      "FREE HAND"
+     ],
+     "style": "punch",
+     "seconds": 2.2
+    }
    ]
   },
   {
@@ -87,27 +466,200 @@
    "loop_join": "The last line returns to the absence of a charge the first line stated.",
    "era": "Missouri, December 1983 - February 1984",
    "lines": [
-    {"id": "L1", "text": "No one was ever charged with a crime.", "delivery": "intense",
-     "source_lines": ["No one was ever charged with a crime."], "claims": ["H-ACT5"]},
-    {"id": "L2", "text": "In December 1983 the county prosecutor and the United States Attorney announced their decision.", "delivery": "flat",
-     "source_lines": ["In December 1983, the county prosecutor and the United States Attorney announced that they had found insufficient evidence to convict anyone involved in the Hyatt construction with criminal negligence, and that no criminal charges would be filed."], "claims": ["H-ACT5"]},
-    {"id": "L3", "text": "Insufficient evidence to convict anyone of criminal negligence. No charges would be filed.", "delivery": "flat",
-     "source_lines": ["In December 1983, the county prosecutor and the United States Attorney announced that they had found insufficient evidence to convict anyone involved in the Hyatt construction with criminal negligence, and that no criminal charges would be filed."], "claims": ["H-ACT5"]},
-    {"id": "L4", "text": "By that date, insurers had paid out over seventy-eight million dollars to settle civil lawsuits.", "delivery": "flat",
-     "source_lines": ["By that date, insurance companies had paid out over seventy-eight million dollars to settle civil lawsuits filed by many of the victims and their families, and no one had yet taken responsibility for the collapse."], "claims": ["H-ACT5"]},
-    {"id": "L5", "text": "And no one had yet taken responsibility for the collapse.", "delivery": "intense",
-     "source_lines": ["By that date, insurance companies had paid out over seventy-eight million dollars to settle civil lawsuits filed by many of the victims and their families, and no one had yet taken responsibility for the collapse."], "claims": ["H-ACT5"]},
-    {"id": "L6", "text": "What happened instead came from a licensing board.", "delivery": "intense",
-     "source_lines": ["What happened instead came from a licensing board."], "claims": ["H-ACT5"]},
-    {"id": "L7", "text": "In February 1984 the state board for architects and engineers filed a complaint.", "delivery": "flat",
-     "source_lines": ["In February 1984, the Missouri Board for Architects, Professional Engineers and Land Surveyors filed a complaint seeking a determination that the certificates of registration of Daniel Duncan and Jack Gillum, and the certificate of authority of their firm, were subject to discipline."], "claims": ["H-ACT5"]},
-    {"id": "L8", "text": "Not a prosecution. A question about certificates.", "delivery": "intense",
-     "source_lines": ["What happened instead came from a licensing board."], "claims": ["H-ACT5"]}
+    {
+     "id": "L1",
+     "text": "No one was ever charged with a crime.",
+     "delivery": "intense",
+     "source_lines": [
+      "No one was ever charged with a crime."
+     ],
+     "claims": [
+      "H-ACT5"
+     ]
+    },
+    {
+     "id": "L2",
+     "text": "In December 1983 the county prosecutor and the United States Attorney announced their decision.",
+     "delivery": "flat",
+     "source_lines": [
+      "In December 1983, the county prosecutor and the United States Attorney announced that they had found insufficient evidence to convict anyone involved in the Hyatt construction with criminal negligence, and that no criminal charges would be filed."
+     ],
+     "claims": [
+      "H-ACT5"
+     ]
+    },
+    {
+     "id": "L3",
+     "text": "Insufficient evidence to convict anyone of criminal negligence. No charges would be filed.",
+     "delivery": "flat",
+     "source_lines": [
+      "In December 1983, the county prosecutor and the United States Attorney announced that they had found insufficient evidence to convict anyone involved in the Hyatt construction with criminal negligence, and that no criminal charges would be filed."
+     ],
+     "claims": [
+      "H-ACT5"
+     ]
+    },
+    {
+     "id": "L4",
+     "text": "By that date, insurers had paid out over seventy-eight million dollars to settle civil lawsuits.",
+     "delivery": "flat",
+     "source_lines": [
+      "By that date, insurance companies had paid out over seventy-eight million dollars to settle civil lawsuits filed by many of the victims and their families, and no one had yet taken responsibility for the collapse."
+     ],
+     "claims": [
+      "H-ACT5"
+     ]
+    },
+    {
+     "id": "L5",
+     "text": "And no one had yet taken responsibility for the collapse.",
+     "delivery": "intense",
+     "source_lines": [
+      "By that date, insurance companies had paid out over seventy-eight million dollars to settle civil lawsuits filed by many of the victims and their families, and no one had yet taken responsibility for the collapse."
+     ],
+     "claims": [
+      "H-ACT5"
+     ]
+    },
+    {
+     "id": "L6",
+     "text": "What happened instead came from a licensing board.",
+     "delivery": "intense",
+     "source_lines": [
+      "What happened instead came from a licensing board."
+     ],
+     "claims": [
+      "H-ACT5"
+     ]
+    },
+    {
+     "id": "L7",
+     "text": "In February 1984 the state board for architects and engineers filed a complaint.",
+     "delivery": "flat",
+     "source_lines": [
+      "In February 1984, the Missouri Board for Architects, Professional Engineers and Land Surveyors filed a complaint seeking a determination that the certificates of registration of Daniel Duncan and Jack Gillum, and the certificate of authority of their firm, were subject to discipline."
+     ],
+     "claims": [
+      "H-ACT5"
+     ]
+    },
+    {
+     "id": "L8",
+     "text": "Not a prosecution. A question about certificates.",
+     "delivery": "intense",
+     "source_lines": [
+      "What happened instead came from a licensing board."
+     ],
+     "claims": [
+      "H-ACT5"
+     ]
+    }
    ],
-   "plates": [],
+   "plates": [
+    {
+     "n": 1,
+     "role": "hook",
+     "line": "L1",
+     "subject": "H104 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H104"
+    },
+    {
+     "n": 2,
+     "role": "hook",
+     "line": "L1",
+     "subject": "H108 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H108"
+    },
+    {
+     "n": 3,
+     "role": "body",
+     "line": "L2",
+     "subject": "H109 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H109"
+    },
+    {
+     "n": 4,
+     "role": "body",
+     "line": "L3",
+     "subject": "H034 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H034"
+    },
+    {
+     "n": 5,
+     "role": "body",
+     "line": "L4",
+     "subject": "H038 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H038"
+    },
+    {
+     "n": 6,
+     "role": "body",
+     "line": "L4",
+     "subject": "H043 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H043"
+    },
+    {
+     "n": 7,
+     "role": "body",
+     "line": "L5",
+     "subject": "H045 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H045"
+    },
+    {
+     "n": 8,
+     "role": "body",
+     "line": "L6",
+     "subject": "H025 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H025"
+    },
+    {
+     "n": 9,
+     "role": "body",
+     "line": "L7",
+     "subject": "H021 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H021"
+    },
+    {
+     "n": 10,
+     "role": "close",
+     "line": "L8",
+     "subject": "H001 approved episode plate",
+     "source": "REUSE",
+     "source_plate": "H001"
+    }
+   ],
    "kinetic_beats": [
-    {"line": "L1", "anchor": "charged with a crime", "suffix": "no_charge", "words": ["NO ONE", "CHARGED"], "style": "punch", "seconds": 2.2},
-    {"line": "L4", "anchor": "seventy-eight million", "suffix": "seventy_eight_m", "words": ["$78M", "PAID OUT"], "style": "number", "seconds": 2.2}
+    {
+     "line": "L1",
+     "anchor": "charged with a crime",
+     "suffix": "no_charge",
+     "words": [
+      "NO ONE",
+      "CHARGED"
+     ],
+     "style": "punch",
+     "seconds": 2.2
+    },
+    {
+     "line": "L4",
+     "anchor": "seventy-eight million",
+     "suffix": "seventy_eight_m",
+     "words": [
+      "$78M",
+      "PAID OUT"
+     ],
+     "style": "number",
+     "seconds": 2.2
+    }
    ]
   }
  ]
