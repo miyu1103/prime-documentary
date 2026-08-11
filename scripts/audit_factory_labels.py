@@ -585,6 +585,10 @@ def cmd_sheet(sample: int = 40, seed: int = 7, contra: int = 25) -> None:
         if rec.get("kind") != "image":
             continue
         buckets[k].append(rec)
+    # --sample smaller than --contra (default 25) made every count below negative
+    # and rng.sample raised "Sample larger than population or is negative", which
+    # reads like a shelf problem and is an argument problem.
+    contra = max(0, min(contra, sample))
     plan = {"contradiction:cross_theme": contra // 2 + contra % 2,
             "contradiction:off_label": contra // 2,
             "match": (sample - contra) // 2,
