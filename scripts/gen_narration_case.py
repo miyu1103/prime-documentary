@@ -132,6 +132,16 @@ STOP_HEADINGS = [
     re.compile(r"^\*?\[END OF NARRATION", re.IGNORECASE),
     re.compile(r"^事実対応表"),
     re.compile(r"^改稿ログ"),
+    # EP66 (openfields) closes with four post-ENDING appendices -- WHAT CHANGED FROM v002 /
+    # FACTUAL CORRECTIONS AGAINST v002 / DEPARTURES FROM THE FILM BIBLE / WHAT I WANTED TO SAY
+    # AND COULD NOT. None of the patterns above match them, so the extractor would map them to
+    # no section and the orphan guard would abort the run before a single character was spent.
+    # All four are anchored; verified against every registered script (EP53-EP65) -- zero
+    # heading in any of them matches, so no existing extraction changes.
+    re.compile(r"^WHAT\s+CHANGED\b", re.IGNORECASE),
+    re.compile(r"^FACTUAL\s+CORRECTIONS\b", re.IGNORECASE),
+    re.compile(r"^DEPARTURES\s+FROM\b", re.IGNORECASE),
+    re.compile(r"^WHAT\s+I\s+WANTED\b", re.IGNORECASE),
 ]
 
 # Episode registry. design_speech_seconds = DESIGN §5 narration model (@178.1
@@ -291,6 +301,141 @@ EPISODES = {
         "sections": SECTION_ORDER_5ACT,
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
+    "PD-2026-066-openfields": {
+        # LOCKED script is v003. v001 and v002 are stale and must not be used: both were
+        # written against a 1620 s / 4565-word floor and held it with ~590 words of restored
+        # material that carried every factual error the three reads found.
+        "planning": "EP66_openfields_script.en.v003.md",
+        # RAW SPEECH model, measured -- not the finished-rate model EP62-65 used, because this
+        # is the number the runner prints against `speech_seconds` (gaps excluded). EP65 was
+        # generated at exactly these voice settings and ffprobed 5,074 index words over
+        # 1767.083 s of speech = 172.3 raw wpm. This script extracts 4,262 narration words:
+        # 4262 / 172.3 * 60 = 1484.4 s of pure speech. Adding this episode`s own gap budget
+        # (7 section boundaries at 1.8 s, 263 beat gaps at 0.3 s, and the four designed holds
+        # totalling 18.0 s) projects a 1593 s master (26:33) and a 1602 s film once
+        # ENDCARD_SEC is added -- inside episode_spec runtime_seconds [1500, 1980].
+        "design_speech_seconds": 1484.4,
+        "sections": SECTION_ORDER_5ACT,
+        # PINNED, identical to EP62-65 so all five ARE comparable.
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-067-ramirez": {
+        # LOCKED script is v002. v001 is stale and must not be generated from.
+        # v001 WAS generated in full and ffprobed: 278 chunks / 4,044 index words /
+        # 1354.425 s of speech / a 1448.020 s master. With ENDCARD_SEC 9.0 that is a 1457.0 s
+        # film against episode_spec runtime_seconds [1560, 1895] -- 103 s UNDER the declared
+        # floor. The prediction above had warned of ~45 s; the delivery was worse.
+        # ROOT CAUSE, and it was not a short script: script_words [4400, 5000] was derived from
+        # check_script_craft.narration_lines() returning 4,682, a count that included the
+        # script's front matter (182 w), the continuation lines of every wrapped 【…】 production
+        # note (217 w) and the post-ENDING appendix (282 w). The spoken text was 4,044 all
+        # along. narration_lines was fixed on 2026-08-11 to delegate to extract_events in THIS
+        # file, so the craft gate and the TTS runner can no longer disagree about what a
+        # narration word is.
+        # v002 is v001 plus 447 narration words of PURE INSERTION -- no v001 line is deleted or
+        # reworded, which is what keeps the sha-256 idempotency of all 278 paid chunks intact.
+        # The 24 new chunks were inserted mid-script, so the existing draft mp3s and their
+        # sidecars were RENUMBERED on disk to their new positions before this run
+        # (scripts/renumber_voice_chunks.py, EP66 route): $0.74 of new audio instead of $7.72
+        # of re-billing.
+        "planning": "EP67_ramirez_script.en.v002.md",
+        # RAW SPEECH model, and now MEASURED rather than borrowed. v001's own master gives the
+        # rate for this voice on this script: 4,044 index words / 1354.425 s = 179.15 raw wpm.
+        # v002 extracts 4,494 index words: 4494 / 179.15 * 60 = 1505.1 s of pure speech. Its
+        # gap budget is 7 section boundaries at 1.8 s plus 294 beat gaps at 0.30 s = 100.8 s
+        # (there are no scripted holds), projecting a 1605.9 s master and a 1614.9 s film once
+        # ENDCARD_SEC 9.0 is added -- inside [1560, 1895] with 55 s over the floor.
+        # Checked at the slow edge of PD_CANON rule 25 as well: the DELIVERED end-to-end rate on
+        # v001 was 4,044 / 1448.020 s = 167.6 wpm, NOT the 179.1 the runner printed (speech only,
+        # 6.9% fast). At 159.5 end-to-end wpm the v002 film is 1699.9 s; at 169.7 it is 1597.6 s.
+        # Both inside the band. The band is not widened, at either end.
+        "design_speech_seconds": 1505.1,
+        # Eight headings, spelled as episode_spec.v001.json section_vocabulary spells them:
+        # HOOK / OP / ACT_1..ACT_5 / ENDING. Every one carries narration (no BRAND STING).
+        "sections": SECTION_ORDER_5ACT,
+        # PINNED, identical to EP62-66 so all six ARE comparable.
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-068-pinto": {
+        # LOCKED script is v002. v001 is the verified text but must not be generated from:
+        # it hard-wrapped every paragraph at ~100 columns, and this extractor makes ONE TTS
+        # chunk per physical prose line, so v001 yields 500 chunks (against EP66's 277 for a
+        # longer script) with ~170 breaks falling mid-sentence -- three of them the fragments
+        # "A", "In", "In", which assert_clean refuses outright. v002 joins the wrapped lines
+        # of each paragraph and changes nothing else: the extracted narration text of the two
+        # files is byte-identical, both measure 4,895 narration words under check_script_craft,
+        # and every craft gate is green on both. v002 extracts 332 chunks.
+        "planning": "EP68_pinto_script.en.v002.md",
+        # RAW SPEECH model, as EP66/EP67 -- this is the number the runner prints against
+        # `speech_seconds`, which excludes inter-chunk silence. EP66 was generated at exactly
+        # these voice settings and ffprobed 4,278 index words over 1494.118 s of speech =
+        # 171.8 raw wpm. This script extracts 4,902 index words: 4902 / 171.79 * 60 = 1712.1 s
+        # of speech. This episode's own gap budget is 110.5 s -- 324 beat gaps at 0.30 s,
+        # SIX section boundaries at 1.8 s rather than seven (the ACT_3 -> ACT_4 boundary is
+        # overridden by the script's own 2.5 s hold at the TURN), and that 2.5 s hold --
+        # projecting a 1822.6 s master (30:23) and a 1831.6 s film once ENDCARD_SEC 9.0 is
+        # added, inside episode_spec runtime_seconds [1560, 1895]. Checked at the slow edge
+        # too: at the slowest END-TO-END rate in PD_CANON rule 25 (159.5 wpm) the master is
+        # 1844.0 s and the film 1853.0 s, still inside. Do NOT quote the runner's printed
+        # "measured wpm" as the delivered pace -- it is speech-only and ran 7% fast on EP66
+        # (printed 171.8, delivered 160.0 end-to-end).
+        "design_speech_seconds": 1712.1,
+        # Eight headings, spelled as episode_spec.v001.json section_vocabulary spells them:
+        # HOOK / OP / ACT_1..ACT_5 / ENDING. Every one carries narration (no BRAND STING).
+        "sections": SECTION_ORDER_5ACT,
+        # PINNED, identical to EP62-67 so all seven ARE comparable.
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-069-hyatt": {
+        "planning": "EP69_hyatt_script.en.v001.md",
+        # RAW SPEECH model, as EP66/EP67/EP68 -- this is the number the runner prints against
+        # `speech_seconds`, which excludes inter-chunk silence. EP66 was generated at exactly
+        # these voice settings and ffprobed 4,278 index words over 1494.118 s of speech =
+        # 171.79 raw wpm. This script extracts 339 chunks / 4,702 index words:
+        # 4702 / 171.79 * 60 = 1642.3 s of speech. Its own gap budget is 139.5 s -- 329 beat
+        # gaps at 0.30 s, SIX section boundaries at 1.8 s rather than seven (the ACT_1 -> ACT_2
+        # boundary is overridden by the 22.0 s H2 assembly hold), and the 30.0 s of designed
+        # silence below -- projecting a 1781.8 s master (29:42) and a 1790.8 s film once
+        # ENDCARD_SEC 9.0 is added, inside episode_spec runtime_seconds [1560, 1895].
+        # FILM BIBLE line 144 models the same film at 1798.5 s from a 160.0 words-per-FINISHED-
+        # minute rate; the two agree to within 8 s. Checked at both edges of PD_CANON rule 25
+        # (159.5-169.7 end-to-end wpm): 1777.9 s and 1671.5 s of film, both inside the band.
+        # Do NOT quote the runner's printed "measured wpm" as the delivered pace -- it is
+        # speech-only and ran 7% fast on EP66 (printed 171.8, delivered 160.0 end-to-end).
+        "design_speech_seconds": 1642.3,
+        # Eight headings, spelled as episode_spec.v001.json section_vocabulary spells them:
+        # HOOK / OP / ACT_1..ACT_5 / ENDING. Every one carries narration (no BRAND STING).
+        "sections": SECTION_ORDER_5ACT,
+        # PINNED, identical to EP62-68 so all eight ARE comparable.
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+        # FOUR DESIGNED SILENCES, declared here rather than parsed out of the script.
+        # EP66 wrote its holds as `【4 seconds. ... Silence 1 of 4.】` and NOTE_SILENCE reads
+        # them. EP69 writes every direction as a MULTI-LINE blockquoted note (`> 【... 3.0 s
+        # ... Hold black 2.5 s ...】`), which the in_note tracker in extract_events correctly
+        # swallows whole -- so no hold survives extraction, and a run without this table
+        # produces a master with ZERO scripted silence in it. Parsing the notes generically
+        # is not safe here and was rejected after measuring it: the ACT_4 opening note repeats
+        # the TURN hold ("TURN at 16:28: music out, 2.5 s of silence") that line 442 also
+        # states, so a scan double-counts it, and the ENDING note's "BrandEndcard runs 9.0 s"
+        # would be picked up as a narration gap. The anchors below are matched as substrings
+        # and every one MUST hit exactly one chunk or the run aborts before spending.
+        # Budget: 22.0 + 5.5 + 2.5 = 30.0 s, exactly EP69_hyatt_FILM_BIBLE.v001.md line 144
+        # (H2 22.0 / TURN 2.5 / 7:05 black 2.5 / H5 pull-through 3.0).
+        "designed_silence_total_seconds": 30.0,
+        "designed_silences": [
+            {"after": "Nothing behind any of them if one let go.", "seconds": 22.0,
+             "why": "script line 187-189, head of ACT_2: H2 runs at full length, the connection "
+                    "assembling itself in one continuous move, 22 seconds, no narration over it. "
+                    "Replaces the 1.8 s ACT_1 -> ACT_2 section gap."},
+            {"after": "Five minutes past seven.", "seconds": 5.5,
+             "why": "script line 370-373: H5 THE PULL-THROUGH 3.0 s, then cut to black and cut "
+                    "the sound, hold black 2.5 s, then the 7:05 PM card. Contiguous, so the two "
+                    "holds are one 5.5 s gap in the audio; the bible budgets them separately."},
+            {"after": "everything in this act is read out of it.", "seconds": 2.5,
+             "why": "script line 442, the TURN at FILM BIBLE 16:28: music out, 2.5 s of silence, "
+                    "the H4 load bar alone on screen, then NBS Conclusion 1 read straight."},
+        ],
+    },
 }
 
 GAP_BEAT, GAP_SECTION = 0.30, 1.8          # EP52-shipped defaults
@@ -304,6 +449,23 @@ SILENCE_LINE = re.compile(r"DESIGNED SILENCE\s+([0-9]+(?:\.[0-9]+)?)\s*s", re.IG
 # line". Both become a BEAT_SECONDS pause after the preceding chunk instead of spoken text.
 BEAT_LINE = re.compile(r"^(?:【\s*beat\b|⟨\s*(?:HELD|BEAT)\s*⟩)", re.IGNORECASE)
 BEAT_SECONDS = 0.6
+# EP66 (openfields) budgets its four designed holds in prose inside the production-note
+# brackets -- 【4 seconds. The empty track, still. Silence 1 of 4.】 -- rather than with the
+# EP52-lineage "DESIGNED SILENCE 4s" string. Its own script section 3 fixes the budget at
+# 4 + 5 + 4 + 5 = 18 s; at BEAT_SECONDS those four holds would collapse to 0.6 s each and the
+# film would lose every one of them, with no way to put them back once the master exists.
+# The pattern is deliberately narrow: the line must OPEN with 【, must carry the word
+# silence/held/hold inside the same bracket, and the number must be followed by "second(s)".
+# Measured against every script in episodes/_planning: it matches the four EP66 v003 lines
+# (4, 5, 4, 5) and NOTHING in EP53-EP65, so no registered episode changes.
+NOTE_SILENCE = re.compile(
+    r"^【(?=[^】]*(?:[Ss]ilence|[Hh]eld|[Hh]olds?)\b)[^】]*?(\d+(?:\.\d+)?)\s*seconds?\b")
+# A citation comment on its own line: EP66 v003 puts one under every factual line (175 of
+# them) carrying its facts-ledger row id. Nothing in it is narration. Without this the line
+# is tokenised as prose and READ ALOUD -- assert_clean cannot catch it, because "<!-- TN-13
+# ✓ VERBATIM -->" contains none of the markup characters that gate looks for. Verified: zero
+# occurrences of "<!--" in any registered script (EP53-EP65).
+HTML_COMMENT = re.compile(r"^<!--")
 # A trailing italic revision footer, e.g. EP61 v003 line 519:
 #   *v001 · 2026-08-03 · facts locked to ... · hook to be rewritten last per SPEC v2 row 9.*
 # It sits UNDER the ENDING heading with no appendix heading above it, so STOP_HEADINGS cannot
@@ -345,8 +507,31 @@ def extract_events(md: str, orphans: list[str] | None = None) -> list[tuple]:
     out: list[tuple] = []
     section: str | None = None
     started = False
+    # A production note that WRAPS ONTO THE NEXT LINE. Every rule below is line-local, and the
+    # only thing that marks a note is the bracket pair, so a note opened with 【 on one line and
+    # closed with 】 three lines later leaves its middle lines looking exactly like narration:
+    # no 【, no CJK, no markdown. EP67 (ramirez) writes ten such notes over 16 continuation
+    # lines, and the first of them ("push-in → car lot row → ... 1.9 s each ...") extracted as
+    # SIX spoken chunks at the head of the HOOK -- camera directions read aloud, paid for, and
+    # mastered. Measured across every script in episodes/_planning: EP53-EP66 contain ZERO
+    # unbalanced 【 lines (all their notes open and close on one line), so tracking the bracket
+    # across lines cannot change any registered episode; EP67 has 16 and EP69 has 31.
+    # The OPENING line is deliberately NOT short-circuited here: it still falls through to the
+    # rules below, so NOTE_SILENCE (a designed hold written in prose) and the CJK guard keep
+    # behaving exactly as they did.
+    in_note = False
     for raw in md.splitlines():
         line = raw.strip()
+        # A citation comment is stripped BEFORE anything else looks at the line, so it can
+        # neither be spoken nor be collected as an orphan (EP66 carries 175 of them).
+        if HTML_COMMENT.match(line):
+            continue
+        if in_note:
+            if "】" in line:
+                in_note = False
+            continue
+        if line.count("【") > line.count("】"):
+            in_note = True
         hm = re.match(r"^(#{1,6})\s+(.*)$", line)
         if hm:
             sec, is_stop = section_for_heading(hm.group(2).strip())
@@ -365,6 +550,13 @@ def extract_events(md: str, orphans: list[str] | None = None) -> list[tuple]:
         sm = SILENCE_LINE.search(line)
         if sm:
             out.append(("silence", section, float(sm.group(1))))
+            continue
+        nm = NOTE_SILENCE.match(line)
+        if nm:
+            # A designed hold written in prose inside a production note (EP66). It becomes
+            # the silence AFTER the preceding chunk, overwriting the 0.6 s that the ⟨HELD⟩
+            # marker on the line above has already set for the same chunk.
+            out.append(("silence", section, float(nm.group(1))))
             continue
         if BEAT_LINE.match(line):
             out.append(("silence", section, BEAT_SECONDS))
@@ -434,6 +626,35 @@ def build_chunks(ep: str, md: str) -> list[dict]:
             "REFUSING TO GENERATE -- prose found under an unmapped heading (would be "
             "dropped silently):\n  " + "\n  ".join(o[:120] for o in orphans))
     return chunks
+
+
+def apply_designed_silences(chunks: list[dict], cfg: dict) -> float:
+    """Stamp the episode's registry-declared holds onto the chunks they follow.
+
+    Returns the total scripted silence in seconds. Raises rather than guessing: an anchor
+    that matches zero chunks (the script was edited) or more than one (the anchor is not
+    distinctive) stops the run BEFORE any character is paid for, and the sum is checked
+    against the episode's own declared budget so a mistyped number cannot pass silently.
+    """
+    declared = cfg.get("designed_silences") or []
+    if not declared:
+        return round(sum(c["silence_after_seconds"] for c in chunks
+                         if c.get("silence_after_seconds") is not None), 3)
+    for d in declared:
+        hits = [c for c in chunks if d["after"] in c["spoken_text"]]
+        if len(hits) != 1:
+            raise SystemExit(
+                f"REFUSING TO GENERATE -- designed_silences anchor {d['after']!r} matched "
+                f"{len(hits)} chunk(s), expected exactly 1"
+                + ("".join(f"\n    {c['chunk_id']} {c['section']} | {c['spoken_text'][:100]}"
+                           for c in hits) if hits else ""))
+        hits[0]["silence_after_seconds"] = float(d["seconds"])
+    total = round(sum(float(d["seconds"]) for d in declared), 3)
+    want = cfg.get("designed_silence_total_seconds")
+    if want is not None and abs(total - float(want)) > 0.001:
+        raise SystemExit(f"REFUSING TO GENERATE -- designed silence sums to {total}s, "
+                         f"registry declares {want}s")
+    return total
 
 
 def assert_clean(chunks: list[dict], expected: list[str] | None = None) -> None:
@@ -670,6 +891,7 @@ def main(argv: list[str]) -> int:
     index_path = out_dir / "narration_index.v001.json"
 
     chunks = build_chunks(ep, script_src.read_text("utf-8"))
+    scripted_silence = apply_designed_silences(chunks, cfg)
     assert_clean(chunks, cfg.get("sections"))
     chars = sum(len(c["spoken_text"]) for c in chunks)
     words = sum(len(c["spoken_text"].split()) for c in chunks)
@@ -677,7 +899,8 @@ def main(argv: list[str]) -> int:
     design = cfg["design_speech_seconds"]
     print(f"episode={ep} chunks={len(chunks)} words={words} chars={chars} est=${est:.2f} model={MODEL}")
     print(f"projected @178.1wpm = {words / 178.1 * 60:.0f}s speech  (DESIGN §5 model = {design}s)")
-    print(f"gaps: beat={args.gap_beat}s section={args.gap_section}s")
+    print(f"gaps: beat={args.gap_beat}s section={args.gap_section}s "
+          f"scripted_silence={scripted_silence}s")
 
     if args.dry_run:
         for c in chunks:
