@@ -52,6 +52,10 @@ if bad or missing:
     sys.exit(1)
 PY
 
+# The account, not the ledger, decides what has already gone out. A run that dies mid-upload
+# leaves a post on TikTok that the ledger never recorded, and the retry then duplicates it.
+py -3.11 scripts/tiktok/reconcile_ledger.py --apply || echo "WARNING: could not reconcile against the account"
+
 echo "posting: day=$DAY skip=$SKIP max=$MAX"
 node scripts/tiktok/schedule_shorts_tiktok.js "$DAY" "$SKIP" "$MAX"
 rc=$?

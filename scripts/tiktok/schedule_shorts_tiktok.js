@@ -56,7 +56,9 @@ const done = new Set();
 if (fs.existsSync(OUT)) {
   for (const l of fs.readFileSync(OUT, 'utf8').split('\n')) {
     if (!l.trim()) continue;
-    try { const r = JSON.parse(l); if (r.status === 'SCHEDULED') done.add(r.short); } catch {}
+    // startsWith, not equality: reconcile_ledger.py records SCHEDULED_FOUND_ON_ACCOUNT for a
+    // Short that is already on TikTok but missing from this file, and that must skip too.
+    try { const r = JSON.parse(l); if (String(r.status || '').startsWith('SCHEDULED')) done.add(r.short); } catch {}
   }
 }
 

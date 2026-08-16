@@ -48,14 +48,22 @@ foreach ($i in 1..20) {
 if (-not $up) { Log 'FAILED: browser never came up on 9222'; exit 1 }
 
 $done = 0
+$failStreak = 0
 foreach ($slot in 0..3) {
     $out = & $bash 'scripts/tiktok/post_day.sh' $day "$slot" '1' 2>&1 | Out-String
     foreach ($line in ($out -split "`n")) {
         if ($line -match 'SCHEDULED|COVER_|CHECK_LIMIT|REFUSING|ERROR|FAIL') { Log ("slot$slot : " + $line.Trim()) }
     }
-    if ($out -match 'SCHEDULED') { $done++ }
+    if ($out -match 'SCHEDULED') { $done++; $failStreak = 0 } else { $failStreak++ }
+
     if ($out -match 'CHECK_LIMIT_REACHED') { Log 'stopping: TikTok daily check limit reached'; break }
     if ($out -match 'REFUSING')            { Log 'stopping: pre-flight refused'; break }
+
+    # Circuit breaker. On 2026-08-16 a broken profile path put the poster into a
+    # browser died - rebuilding loop that hammered the login page unattended for
+    # minutes. Repeated automated retries against a signed-out account are exactly
+    # what botting looks like from the outside. Two failures in a row ends the day.
+    if ($failStreak -ge 2) { Log 'stopping: two failures in a row - leaving the account alone until tomorrow'; break }
 }
 
 Log "scheduled $done of 4 for $day"
