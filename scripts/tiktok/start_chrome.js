@@ -2,7 +2,7 @@ const { spawn } = require('child_process');
 const exe = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const args = [
   '--remote-debugging-port=9222',
-  '--user-data-dir=C:/temp/studio_auto/work_profile',
+  '--user-data-dir=C:/temp/studio_auto/work_profile_v2',
   '--no-first-run',
   '--no-default-browser-check',
   'https://www.tiktok.com/tiktokstudio/upload',
