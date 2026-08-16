@@ -47,7 +47,7 @@ py -3.11 scripts/yt_schedule_audit.py | head -45  # 予約の現在地
 | ショート 未投稿 | 83（1日4本＝約21日分） | `bash scripts/daily_shorts_push.sh`（dry） |
 | ショート 関連リンク | 対象81本すべて設定済（8/7＋8/10） | `node scripts/studio/related_link_batch.js --verify-only` |
 | 関連リンク 行き先未確定 | 8本 | `runs/_cache/related_link_worklist.v002.json` の `unresolved` |
-| TikTok | 3本（カバー付き）／119本 上げ直し残 | Studio の一覧（公開グリッドは遅れる） |
+| TikTok | **アカウント作り直し中（2026-08-16 オーナー決定）**。v1 `@prime.documentary8` は152本すべて0再生で放棄。着手前に `docs/PD_TIKTOK_ACCOUNT_V2.v001.md` を読むこと | 同ファイル §0 の実測 |
 | TikTok 用レンダー | 122本＋EP62-65の12本（8/10レンダー中） | `ls remotion/out/short*_tt.mp4` |
 | 長尺エピソード | 65（EP62-65 は仕上げ中） | `ls -d episodes/PD-2026-0*` |
 
@@ -224,6 +224,12 @@ EP65 は実写7本で出荷し、AE は一度も使わなかった。文書に�
 20b. **TikTok 版の Composition は別途登録が要る。** `Short-short<N>-tt` が Root.tsx に無いと
     `render_shorts_tiktok.sh` は12本とも「RENDER DID NOT PRODUCE A FRESH FILE」で失敗する。
     先に `py -3.11 scripts/register_tiktok_compositions.py --apply`
+21. **TikTok は「中身」ではなく「振る舞い」で配信を止められる。** v1 は一晩で100本超アップ→
+    137本一括削除→また大量アップで、152本すべて0再生になった（公開自体はされている）。
+    大量投稿・一括削除・上限の回避を絶対にやらない。ランプは
+    `docs/PD_TIKTOK_ACCOUNT_V2.v001.md` §3
+22. **アカウントの状態は Web から読めない。** 自動操作のChromeでは `/search`・`/setting`・
+    プロフィールが Akamai `Access Denied`（Studio 管理画面だけ通る）。制限の有無はスマホアプリでのみ確認可
 
 ### 制作・素材
 
