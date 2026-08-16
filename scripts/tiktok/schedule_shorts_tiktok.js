@@ -22,7 +22,11 @@ const puppeteer = require('puppeteer-core');
 // fourth video. Measured - 262 CDP targets after three uploads.
 const RECYCLE_EVERY = 3;
 const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
-const PROFILE = 'C:/temp/studio_auto/work_profile';
+// The poster restarts Chrome itself every few videos, and this was still pointing at the v1
+// profile while start_chrome.js had moved on. Every recycle relaunched an account that no longer
+// exists, so the run fell into a browser died - rebuilding loop and stopped scheduling.
+// Keep this in step with scripts/tiktok/start_chrome.js.
+const PROFILE = process.env.TIKTOK_PROFILE_DIR || 'C:/temp/studio_auto/work_profile_new';
 
 function restartChrome() {
   try { execSync('taskkill /F /IM chrome.exe', { stdio: 'ignore' }); } catch {}
