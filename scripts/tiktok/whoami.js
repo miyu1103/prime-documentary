@@ -13,7 +13,9 @@ const puppeteer = require('puppeteer-core');
   const p = await b.newPage();
   await p.setViewport({ width: 1400, height: 900 });
   await p.goto('https://www.tiktok.com/tiktokstudio', { waitUntil: 'domcontentloaded', timeout: 120000 });
-  await new Promise(r => setTimeout(r, 9000));
+  // 9 seconds was not always enough: one run found an empty header and reported "could not
+  // read the handle" on a browser that was perfectly signed in. Wait longer, then retry once.
+  await new Promise(r => setTimeout(r, 12000));
   // Not a regex over the whole HTML: the first "prime..." in the page is the YouTube handle
   // sitting inside the bio text, so that version read "primedocumentarystudio" and would have
   // refused a correct account. The handle is the line directly under the sidebar entry
@@ -23,8 +25,23 @@ const puppeteer = require('puppeteer-core');
     const i = lines.findIndex(l => l === 'TikTokに戻る' || l === 'Back to TikTok');
     return i >= 0 ? (lines[i + 1] || '') : '';
   });
-  try { await p.close(); } catch (e) {}
+  let final = handle;
+  if (!final) {
+    await new Promise(r => setTimeout(r, 8000));
+    final = await p.evaluate(() => {
+      const lines = (document.body.innerText || '').split('\n').map(s => s.trim()).filter(Boolean);
+      const i = lines.findIndex(l => l === 'TikTokに戻る' || l === 'Back to TikTok');
+      return i >= 0 ? (lines[i + 1] || '') : '';
+    });
+  }
+  // Closing the only tab takes the whole browser down with it, and the next step then finds
+  // nothing on 9222. Close this tab only when it is not the last one.
+  try {
+    const pages = await b.pages();
+    if (pages.length > 1) await p.close();
+  } catch (e) {}
   await b.disconnect();
-  if (!handle) { console.error('could not read the Studio account handle'); process.exit(1); }
-  console.log(handle);
+  if (!final) { console.error('could not read the Studio account handle'); process.exit(1); }
+  const handleOut = final;
+  console.log(handleOut);
 })();
