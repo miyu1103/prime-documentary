@@ -1,6 +1,17 @@
 # Prime Documentary — Claude Code Project Constitution
 
-> **着手前に `docs/PD_CANON.md` を読むこと。** いま何が真実か（実測コマンド付き）、
+> ## 着手前に、まず `docs/HANDOVER.md`
+>
+> 前のセッションから引き継いだものが1ファイルにまとまっている。最初の2コマンド:
+> ```
+> py -3.11 scripts/handover_snapshot.py        # いま機械が何をしているかを実測して書き出す
+> py -3.11 scripts/check_queue_will_stall.py   # レンダーキューが止まる理由を全部並べる
+> ```
+> HANDOVER の LIVE STATE 節は生成物であり実測値。**文章と食い違ったら実測を信じる。**
+> セッションを終える前に snapshot を回し、その回の経緯を `docs/handover/YYYY-MM-DD.md` に書き、
+> HANDOVER 末尾のリンクを差し替えること。チャットログにしか無い引き継ぎは、無いのと同じ。
+
+> **次に `docs/PD_CANON.md` を読むこと。** いま何が真実か（実測コマンド付き）、
 > 絶対にやらないこと、1スレだけが触るもの、踏み抜いた罠の全一覧、作業のやり方が
 > 1ファイルにまとまっている。新しい罠を踏んだら、別の申し送りを作らずそこへ足す。
 > 本 CLAUDE.md と `.claude/rules/` が上位にあり、PD_CANON はそれを上書きしない。
@@ -98,6 +109,19 @@ So, for every episode:
 
 A check that has never been shown to fail is decoration. When one is added, demonstrate it
 rejecting a deliberately bad input before relying on it.
+
+## 4.7 セッションは工程で切る（binding, added 2026-08-16）
+
+2026-08-16 の実測: 大きいセッション5本で、会話の中身 604万トークンに対し請求は 88億トークン
+（**増幅率 約1,455倍**、うち 95% が `cache_read`）。Claude が書いた文章は請求の **0.2%** しかない。
+高いのは書いた量ではなく、**文脈の大きさ × 残りターン数**。平均文脈 53万トークンのまま
+5,004ターン回したセッションが1本で27億トークンを使っていた。
+
+- 工程の境目（調査 / 台本 / 画像 / 組み立て / レンダ / QC / 投稿）でセッションを切る。
+  切る前に `docs/HANDOVER.md` を更新する — 既存の義務がそのまま最大の節約手段になっている。
+- 現在地は `py -3.11 scripts/token_audit.py --live`。`CRIT` が出たら次の工程の頭で切る。
+- **コストを理由に品質工程を落とすことは禁止**（画像の目視QC、設計書の記述量、台本3回、
+  受入ゲートの実行）。節約はムダの側からのみ取る。詳細と実測値は `.claude/rules/20-token-efficiency.md`。
 
 ## 5. Source of truth hierarchy
 
