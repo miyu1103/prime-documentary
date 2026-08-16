@@ -65,8 +65,13 @@ CONFIG = {
                            "2026-08-17T12:00:00+09:00", "2026-08-17T03:00:00Z"),
                "video": (ROOT / "episodes" / "PD-2026-062-greene" / "08_edit"
                          / "greene_final_bgm.v002.mp4").as_posix()},
+    # 2026-08-16 22:00 JST: greene was PUBLISHED IMMEDIATELY rather than held for 08-17, on the
+    # owner's call -- the 08-16 slot was empty and "a day not shipped is gone" (ship_policy).
+    # 22:00 JST is 09:00 ET, which is a better hour for this audience than the 12:00 JST slot
+    # (23:00 ET the previous day) anyway. Everything below moves back to where it was before the
+    # 08-16 miss, so the lost day is recovered rather than carried forward for a week.
     "correa": _from_meta("PD-2026-063-correa", "correa",
-                         "2026-08-20T12:00:00+09:00", "2026-08-20T03:00:00Z"),
+                         "2026-08-17T12:00:00+09:00", "2026-08-17T03:00:00Z"),
     # 2026-08-12: owner chose to ship v002 (v001 carries no 4-layer audio mux -- no
     # audio_mix_sha256 container tag). _from_meta hardcodes v001, so the master is overridden
     # here. This weakens nothing: the final_delivery sha guard below still binds the upload to
@@ -84,13 +89,13 @@ CONFIG = {
     # have gone green and `--ep openfields` would still have been an invalid argument, at the
     # very last command. The 12:00 slot is confirmed free from 08-16 onward by yt_schedule_audit.
     "openfields": _from_meta("PD-2026-066-openfields", "openfields",
-                             "2026-08-21T12:00:00+09:00", "2026-08-21T03:00:00Z"),
+                             "2026-08-20T12:00:00+09:00", "2026-08-20T03:00:00Z"),
     "ramirez": _from_meta("PD-2026-067-ramirez", "ramirez",
-                          "2026-08-22T12:00:00+09:00", "2026-08-22T03:00:00Z"),
+                          "2026-08-21T12:00:00+09:00", "2026-08-21T03:00:00Z"),
     "pinto": _from_meta("PD-2026-068-pinto", "pinto",
-                        "2026-08-23T12:00:00+09:00", "2026-08-23T03:00:00Z"),
+                        "2026-08-22T12:00:00+09:00", "2026-08-22T03:00:00Z"),
     "hyatt": _from_meta("PD-2026-069-hyatt", "hyatt",
-                        "2026-08-24T12:00:00+09:00", "2026-08-24T03:00:00Z"),
+                        "2026-08-23T12:00:00+09:00", "2026-08-23T03:00:00Z"),
     "florence": {
         "ep": "PD-2026-037-florence",
         "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-037-florence/08_edit/florence_v005.mp4",
