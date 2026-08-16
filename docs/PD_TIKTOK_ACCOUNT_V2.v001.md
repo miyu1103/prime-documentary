@@ -31,7 +31,10 @@
 
 ## 1. アカウント（2026-08-16 作成済み）
 
-**v2 = `@prime.documentary1`**（`https://www.tiktok.com/@prime.documentary1`）。
+**v2 = `@primedocumentarystudio`**（`https://www.tiktok.com/@primedocumentarystudio`）。
+2026-08-17 に `prime.documentary1` から改名。**YouTube のハンドルと完全一致**させるため
+（TikTok はリンクを貼れず、導線の終点が「名前を検索する」ことになるため）。
+自動投稿のアカウント確認もこの名前を期待値にしている（`post_day.sh` の `EXPECT`）。
 v1 `@prime.documentary8` は放棄、削除しない（§7）。
 
 ### オーナーしかできないこと

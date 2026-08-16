@@ -29,11 +29,14 @@ curl -s --max-time 5 http://127.0.0.1:9222/json/version > /dev/null || {
 # WHICH ACCOUNT. On 2026-08-16 three videos went to the abandoned account because the browser was
 # signed into two and the poster never asked. The profile page said one thing and TikTok Studio -
 # the surface that actually uploads - was operating the other. Never post without matching this.
-EXPECT="${TIKTOK_ACCOUNT:-prime.documentary1}"
+# Renamed 2026-08-17 from prime.documentary1 to match the YouTube handle exactly: TikTok allows
+# no clickable link on this account, so every route to YouTube ends in someone typing a name.
+EXPECT="${TIKTOK_ACCOUNT:-primedocumentarystudio}"
 ACTUAL="$(node scripts/tiktok/whoami.js 2>/dev/null | tail -1)"
 if [ "$ACTUAL" != "$EXPECT" ]; then
   echo "REFUSING: TikTok Studio is operating \"$ACTUAL\", expected \"$EXPECT\"."
   echo "  Log the dedicated Chrome profile into $EXPECT, or set TIKTOK_ACCOUNT to override."
+  echo "  (the account was renamed on 2026-08-17; prime.documentary1 is the old handle)"
   exit 1
 fi
 echo "studio account confirmed: $ACTUAL"
