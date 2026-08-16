@@ -386,6 +386,37 @@ EPISODES = {
         # PINNED, identical to EP62-67 so all seven ARE comparable.
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
+    # EP70/71 registered 2026-08-17. Narration needs only the script -- no images, no GPU, no
+    # archive drive -- so both were started while the GPU was busy converting EP66-69 and while
+    # H: (which holds the only copy of their plates) was unavailable. design_speech_seconds
+    # below is PROVISIONAL until the dry run prints the real index word count; it is corrected
+    # in place before any paid call, never left as a guess.
+    "PD-2026-070-wronghouse": {
+        "planning": "EP70_wronghouse_script.en.v001.md",
+        # 45-minute flagship. episode_spec runtime_seconds [2445, 2835].
+        # MEASURED by the dry run: 542 chunks / 6,958 index words / 38,658 chars.
+        # Modelled at the RAW SPEECH rate 171.79 wpm -- the rate EP66 actually ffprobed at these
+        # exact voice settings, not the runner's printed 178.1, which is speech-only and ran ~7%
+        # fast on EP66 (PD_CANON rule 25). 6958 / 171.79 * 60 = 2430.2 s of speech.
+        # Gap budget 172.8 s: 534 beat gaps at 0.30 s, seven section boundaries at 1.8 s, no
+        # scripted silence in this script. Master 2603.0 s, film 2612.0 s (43:32) once ENDCARD
+        # 9.0 is added -- inside [2445, 2835] with 167 s of headroom at the low edge.
+        "design_speech_seconds": 2430.2,
+        "sections": SECTION_ORDER_5ACT,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-071-oroville": {
+        "planning": "EP71_oroville_script.en.v001.md",
+        # 30 minutes. episode_spec runtime_seconds [1625, 1900].
+        # MEASURED by the dry run: 343 chunks / 4,778 index words / 26,251 chars.
+        # Same raw-speech model as EP70 above: 4778 / 171.79 * 60 = 1668.9 s of speech.
+        # Gap budget 122.1 s: 335 beat gaps at 0.30 s, seven section boundaries at 1.8 s, and
+        # 9.0 s of scripted silence the extractor found. Master 1791.0 s, film 1800.0 s (30:00)
+        # with ENDCARD 9.0 -- inside [1625, 1900].
+        "design_speech_seconds": 1668.9,
+        "sections": SECTION_ORDER_5ACT,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
     "PD-2026-069-hyatt": {
         "planning": "EP69_hyatt_script.en.v001.md",
         # RAW SPEECH model, as EP66/EP67/EP68 -- this is the number the runner prints against
