@@ -57,10 +57,28 @@ def is_done(slug: str, stem: str) -> bool:
     return d.exists() and len(list(d.glob("*.png"))) >= MIN_FRAMES
 
 
-def collect_sources(slug: str, kinds: list[str]) -> list[Path]:
+def source_dir(slug: str) -> Path:
+    """The archive is authoritative, but it lives on a removable drive.
+
+    2026-08-16: H: was not attached and EVERY i2v plan pointed at H:/pd-media/assets/ai/<slug>.
+    The same plates are also staged render-visible under remotion/public/<slug>/img -- that is
+    what the film actually reads, and for these four episodes the two sets are the same files.
+    Measured on openfields: 191 png in the public dir, 191 declared in asset_manifest.v003.
+    Falling back keeps the pipeline running on a drive-out day; it does not invent inputs, and
+    the archive stays authoritative the moment it is back.
+    """
     ai = AI_ROOT / slug
-    if not ai.is_dir():
-        raise SystemExit(f"no source dir {ai}")
+    if ai.is_dir():
+        return ai
+    local = Path(__file__).resolve().parents[1] / "remotion" / "public" / slug / "img"
+    if local.is_dir():
+        print(f"[i2v] archive {ai} unavailable -- reading the render-visible copies in {local}")
+        return local
+    raise SystemExit(f"no source dir: neither {ai} nor {local}")
+
+
+def collect_sources(slug: str, kinds: list[str]) -> list[Path]:
+    ai = source_dir(slug)
     out: list[Path] = []
     for k in kinds:
         out += sorted(Path(p) for p in glob.glob(str(ai / f"{k}*.png")))

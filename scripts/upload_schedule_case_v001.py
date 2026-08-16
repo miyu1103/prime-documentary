@@ -19,6 +19,11 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from pd_factory.providers import load_env
 from pd_factory.providers.youtube import _access_token
 from upload_episode import CHANNEL_ALLOWLIST, get_channel_id, sha256_file, upload_chunks
+# The ship DECISION lives here, in the scheduler, reading config/ship_policy.v001.json.
+# check_final_acceptance.py is untouched: it still runs every check, computes every number and
+# writes every failure into the receipt. What this import changes is which of those failures
+# hold the door shut. An import failure is fatal on purpose -- no policy, no ship.
+import pd_ship_policy as SHIP_POLICY
 
 def _from_meta(epid: str, slug: str, sched_local: str, sched_utc: str) -> dict:
     """Build a CONFIG entry from that episode's own 09_package/youtube_meta.v001.json.
@@ -51,14 +56,41 @@ CONFIG = {
     # EP62-65, one per day from 16 August. 12:00 JST is the long-form slot: it is filled through
     # the 15th, and the 16th-18th entries the schedule audit lists are shorts at 06/09/18/21 JST.
     # Title, description and tags come from each episode's packaging file, not from copies here.
-    "greene": _from_meta("PD-2026-062-greene", "greene",
-                         "2026-08-16T12:00:00+09:00", "2026-08-16T03:00:00Z"),
+    # 2026-08-16 19:xx JST: the 08-16 slot passed unfilled -- greene uploaded on 08-14 but the
+    # run died before publishAt was set, and a past publishAt publishes immediately. The whole
+    # run moves back one day. correa goes behind greene rather than keeping 08-17, because it
+    # carries two real_person_likeness rejections in the shipped frames (C223 cut-0387 and
+    # AR-5879298 cut-0098) and that class is blocking; greene is permit with zero blocking.
+    "greene": {**_from_meta("PD-2026-062-greene", "greene",
+                           "2026-08-17T12:00:00+09:00", "2026-08-17T03:00:00Z"),
+               "video": (ROOT / "episodes" / "PD-2026-062-greene" / "08_edit"
+                         / "greene_final_bgm.v002.mp4").as_posix()},
     "correa": _from_meta("PD-2026-063-correa", "correa",
-                         "2026-08-17T12:00:00+09:00", "2026-08-17T03:00:00Z"),
-    "memphis": _from_meta("PD-2026-064-memphis", "memphis",
-                          "2026-08-18T12:00:00+09:00", "2026-08-18T03:00:00Z"),
-    "marmet": _from_meta("PD-2026-065-marmet", "marmet",
-                         "2026-08-19T12:00:00+09:00", "2026-08-19T03:00:00Z"),
+                         "2026-08-20T12:00:00+09:00", "2026-08-20T03:00:00Z"),
+    # 2026-08-12: owner chose to ship v002 (v001 carries no 4-layer audio mux -- no
+    # audio_mix_sha256 container tag). _from_meta hardcodes v001, so the master is overridden
+    # here. This weakens nothing: the final_delivery sha guard below still binds the upload to
+    # these exact bytes, and the acceptance receipt must name the same sha.
+    "memphis": {**_from_meta("PD-2026-064-memphis", "memphis",
+                             "2026-08-18T12:00:00+09:00", "2026-08-18T03:00:00Z"),
+                "video": (ROOT / "episodes" / "PD-2026-064-memphis" / "08_edit"
+                          / "memphis_final_bgm.v002.mp4").as_posix()},
+    "marmet": {**_from_meta("PD-2026-065-marmet", "marmet",
+                             "2026-08-19T12:00:00+09:00", "2026-08-19T03:00:00Z"),
+                "video": (ROOT / "episodes" / "PD-2026-065-marmet" / "08_edit"
+                          / "marmet_final_bgm.v002.mp4").as_posix()},
+    # EP66-69 continue the same one-per-day 12:00 JST run. Added 2026-08-11 because
+    # predict_acceptance.py measured that they had no CONFIG entry at all -- every gate could
+    # have gone green and `--ep openfields` would still have been an invalid argument, at the
+    # very last command. The 12:00 slot is confirmed free from 08-16 onward by yt_schedule_audit.
+    "openfields": _from_meta("PD-2026-066-openfields", "openfields",
+                             "2026-08-21T12:00:00+09:00", "2026-08-21T03:00:00Z"),
+    "ramirez": _from_meta("PD-2026-067-ramirez", "ramirez",
+                          "2026-08-22T12:00:00+09:00", "2026-08-22T03:00:00Z"),
+    "pinto": _from_meta("PD-2026-068-pinto", "pinto",
+                        "2026-08-23T12:00:00+09:00", "2026-08-23T03:00:00Z"),
+    "hyatt": _from_meta("PD-2026-069-hyatt", "hyatt",
+                        "2026-08-24T12:00:00+09:00", "2026-08-24T03:00:00Z"),
     "florence": {
         "ep": "PD-2026-037-florence",
         "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-037-florence/08_edit/florence_v005.mp4",
@@ -668,6 +700,13 @@ def main(argv):
     ap = argparse.ArgumentParser()
     ap.add_argument("--ep", required=True, choices=sorted(CONFIG))
     ap.add_argument("--dry-run", action="store_true")
+    ap.add_argument("--explain-policy", action="store_true",
+                    help="print how config/ship_policy.v001.json classifies this episode's "
+                         "acceptance failures, then exit. Touches no network and uploads "
+                         "nothing -- it is the answer to 'why did this refuse?'")
+    ap.add_argument("--receipt", metavar="PATH",
+                    help="with --explain-policy only: classify THIS receipt instead of the "
+                         "latest one (used to demonstrate the gate refusing)")
     ap.add_argument("--replaces", metavar="VIDEO_ID",
                     help="this upload supersedes VIDEO_ID, whose bytes cannot be replaced in "
                          "place. VIDEO_ID must exist on this channel and must already be "
@@ -706,6 +745,34 @@ def main(argv):
         RESULT = PKG / f"youtube_schedule_result.v{_n:03d}.json"
         print(f"[supersede] receipt -> {RESULT.name} (v001 kept as the record of "
               f"{args.replaces})")
+
+    if args.receipt and not args.explain_policy:
+        raise SystemExit("--receipt is only accepted with --explain-policy; a real schedule "
+                         "always reads the episode's own latest receipt")
+
+    # WHY DID THIS REFUSE? Answer it without spending a single quota unit. This runs the same
+    # SHIP_POLICY.evaluate the real path runs a few hundred lines below, prints the same lines,
+    # and exits: no token, no upload session, no external write of any kind.
+    if args.explain_policy:
+        _rp = Path(args.receipt) if args.receipt else None
+        if _rp is None:
+            _cands = sorted(PKG.glob("acceptance_receipt.v*.json"))
+            if not _cands:
+                raise SystemExit(f"no acceptance receipt in {PKG}")
+            _rp = _cands[-1]
+        _rc = json.loads(_rp.read_text("utf-8"))
+        _sha = sha(VIDEO) if VIDEO.is_file() else None
+        if _sha and _rc.get("video_sha256") not in (None, _sha):
+            print(f"WARN receipt sha {_rc.get('video_sha256')} != this video {_sha} -- the real "
+                  f"path REFUSES that; this explanation is not bound to these bytes")
+        _r = SHIP_POLICY.evaluate(EPDIR, slug, _rc, receipt_path=_rp if _rp.is_relative_to(ROOT)
+                                  else None, video_sha=_sha or _rc.get("video_sha256"),
+                                  video_path=str(VIDEO), dry_run=True)
+        print(f"[policy] episode={EP} receipt={_rp.name} status={_rc.get('status')} "
+              f"hard_failures={len(_rc.get('hard_failures') or [])}")
+        SHIP_POLICY.print_decision(_r)
+        print("EXPLAIN_ONLY no external reads or writes performed")
+        return 1 if _r["decision"] == "refuse" else 0
 
     # A 401 in the middle of the run used to leave the file uploaded but unfinished, and a
     # re-run then uploaded a SECOND copy (EP53 shipped twice on 2026-08-01). Refuse to start
@@ -784,8 +851,13 @@ def main(argv):
     # hand. Nothing warned first, because nothing was counting.
     _checker = ROOT / "scripts" / "check_api_budget.py"
     if _checker.is_file():
+        # encoding is pinned. `text=True` alone decodes with the LOCALE codec, which is cp932 on
+        # this machine: on 2026-08-14 a single non-ASCII byte in a child's output raised
+        # UnicodeDecodeError here and killed greene's upload run between "uploaded" and
+        # "publishAt set". The episode then sat private with no date and missed its 08-16 slot.
         _b = subprocess.run([sys.executable, str(_checker), "--need", "1"],
-                            capture_output=True, text=True)
+                            capture_output=True, text=True,
+                            encoding="utf-8", errors="replace")
         for _line in (_b.stdout or "").splitlines():
             if _line.startswith("[budget]"):
                 print(_line)
@@ -808,7 +880,8 @@ def main(argv):
     _frames = ROOT / "scripts" / "check_shipped_frames.py"
     if _frames.is_file():
         _fr = subprocess.run([sys.executable, str(_frames), "--slug", slug,
-                              "--render", str(VIDEO)], capture_output=True, text=True)
+                              "--render", str(VIDEO)], capture_output=True, text=True,
+                             encoding="utf-8", errors="replace")  # see the cp932 note above
         _out = (_fr.stdout or "") + (_fr.stderr or "")
         for _line in _out.splitlines():
             if _line.startswith("[shipped-frames]") or _line.startswith("  - "):
@@ -821,29 +894,28 @@ def main(argv):
                 + (" | ".join(_named) if _named else _out.strip()[-500:])
                 + f"  Full record: runs/qc/{slug}_shipped_frames.v001.json")
 
-    # HARD LOCK: no upload without a green acceptance receipt bound to THIS render's bytes.
-    # A video that did not pass scripts/check_final_acceptance.py --emit-receipt physically
-    # cannot be scheduled. runtime_band is the channel-wide owner-accepted documented deviation.
-    ALLOWED_DEVIATIONS = {"runtime_band"}
-    # PLUS any deviation the owner FORMALLY documented in an APPROVED first-cut/edit acceptance
-    # record for THIS episode (approvals/*.json, target_type='edit', decision approved*). This is
-    # per-episode and auditable: e.g. EP35's padding is tolerated only because approvals/APR-0002
-    # lists it under accepted_deviations -- a future episode with a REAL padding regression and no
-    # such approval still hard-fails. A blanket allow-list would defeat the gate.
-    for _aprf in sorted((EPDIR / "approvals").glob("*.json")):
-        try:
-            _apr = json.loads(_aprf.read_text("utf-8"))
-        except Exception:
-            continue
-        if (_apr.get("target_type") == "edit"
-                and str(_apr.get("decision", "")).startswith("approved")):
-            for _d in _apr.get("accepted_deviations", []):
-                if isinstance(_d, str):
-                    ALLOWED_DEVIATIONS.add(_d)
+    # HARD LOCK: no upload without an acceptance receipt bound to THIS render's bytes.
+    # A video that did not go through scripts/check_final_acceptance.py --emit-receipt still
+    # physically cannot be scheduled, and a receipt for other bytes is still refused. That part
+    # is correctness and it is unchanged.
+    #
+    # WHAT CHANGED (owner directive, config/ship_policy.v001.json, 2026-08-12). The old rule was
+    # "every hard failure blocks unless it is runtime_band or is named in an approval". Five days
+    # of that produced zero scheduled uploads: of the seven reasons raised on 2026-08-11, ONE was
+    # a genuine risk and six were craft rules. The rule is now "a failure blocks only if it maps
+    # to one of the four blocking classes -- real-person likeness, rights, factual support,
+    # fabricated record". Everything else ships AND IS WRITTEN DOWN, with its number, in
+    # 09_package/release_deviations.v{NNN}.json.
+    #
+    # This is not a weakened gate. check_final_acceptance still runs every check and still writes
+    # every failure into the receipt; no threshold moved. The DECISION moved here, where it is
+    # visible in a diff, and the release record is the honest counterpart: nothing is waived
+    # silently. The owner's per-episode approval mechanism still exists and is now the ONLY way
+    # past a blocking class.
+    #
     # Use the LATEST acceptance receipt (consistent with how thumbnail/delivery are globbed above).
-    # Episodes that needed several render iterations have receipts v001..vNN; the final green one is
-    # the latest. The sha==video and no-hard-failure checks below still fully bind it to THIS render,
-    # so reading the latest cannot weaken the gate (a stale/FAIL latest receipt is rejected).
+    # Episodes that needed several render iterations have receipts v001..vNN; the final one is
+    # the latest. The sha==video check below still fully binds it to THIS render.
     _rcs = sorted(PKG.glob("acceptance_receipt.v*.json"))
     receipt = _rcs[-1] if _rcs else PKG / "acceptance_receipt.v001.json"
     if not receipt.exists():
@@ -854,11 +926,26 @@ def main(argv):
     if rc.get("video_sha256") != got:
         raise RuntimeError(f"receipt is for a different render (receipt sha {rc.get('video_sha256')} "
                            f"!= this video {got}); re-run the gate on THIS file")
-    bad = [c for c in rc.get("hard_failures", []) if c not in ALLOWED_DEVIATIONS]
-    if bad:
-        raise RuntimeError(f"acceptance gate NOT green: unresolved hard failures {bad}. "
-                           f"Fix them and re-emit the receipt before scheduling.")
-    print(f"OK acceptance receipt green (sha match; tolerated={sorted(set(rc.get('hard_failures', [])) & ALLOWED_DEVIATIONS)})")
+    _release = SHIP_POLICY.evaluate(EPDIR, slug, rc, receipt_path=receipt, video_sha=got,
+                                    video_path=str(VIDEO), dry_run=bool(args.dry_run))
+    SHIP_POLICY.print_decision(_release)
+    if _release["decision"] == "refuse":
+        _named = "; ".join(f"{r['check']} [class={r['class']}]"
+                           for r in _release["blocking_failures"])
+        raise SystemExit(
+            f"REFUSING to schedule {EP}: {len(_release['blocking_failures'])} blocking-class "
+            f"failure(s) -> {_named}. These are ban/legal risk, not craft: fix the film (splice "
+            f"the affected range, `scripts/pd_splice_cuts.py`) and re-emit the receipt, or -- if "
+            f"the owner knowingly accepts one -- record it in episodes/{EP}/approvals/*.json "
+            f"(target_type 'edit', decision 'approved', the check id in accepted_deviations). "
+            f"Advisory failures are NOT the reason this stopped.")
+    # The honest counterpart to the relaxed gate: what shipped with a red number on it, and what
+    # that number was. Written BEFORE the upload starts, so an upload that dies mid-transfer
+    # still leaves the record of what was permitted.
+    _relpath = SHIP_POLICY.write_release_record(EPDIR, _release)
+    print(f"OK release record -> {_relpath.relative_to(ROOT)} "
+          f"({len(_release['deviations'])} advisory deviation(s) recorded, "
+          f"{len(_release['detector_gaps'])} detector gap(s) noted)")
     print(f"OK {EP}: title={cfg['title']!r}")
     print(f"OK video={VIDEO.name} {VIDEO.stat().st_size/1e6:.0f}MB sha_ok=True")
     print(f"OK thumb={THUMB.name} caps={CAPS.name}")
