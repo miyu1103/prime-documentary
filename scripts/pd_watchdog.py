@@ -111,7 +111,37 @@ def main() -> int:
     if free_gb < DISK_FLOOR_GB:
         notes.append(f"DISK {free_gb:.1f} GB free, below the {DISK_FLOOR_GB} GB floor")
 
-    # 3. is anything actually moving? liveness is not progress.
+    # 3. A DATE IS NOT A SCHEDULE. Every video with a publishAt must also have finished
+    # processing. 2026-08-17: EP64 memphis carried publishAt 08-18, a thumbnail and a caption
+    # track, and read as "scheduled" everywhere -- while uploadStatus was still `uploaded` and
+    # processingStatus still `processing`, eleven hours after a 1.7 GB upload was interrupted.
+    # The bytes were incomplete. Nothing on the ship path asks this question, so it is asked here,
+    # every fifteen minutes, against the live API.
+    try:
+        import sys as _sys
+        _sys.path.insert(0, str(ROOT / "scripts"))
+        from yt_channel_index import authorize, http, API   # noqa: E402
+        auth = authorize(ROOT)
+        st, r = http("GET", f"{API}/search?part=id&forMine=true&type=video&maxResults=50"
+                            f"&order=date", headers=auth)
+        ids = [x["id"]["videoId"] for x in r.get("items", []) if x.get("id", {}).get("videoId")]
+        if ids:
+            st, v = http("GET", f"{API}/videos?part=status,processingDetails,snippet"
+                                f"&id={','.join(ids[:50])}", headers=auth)
+            for it in v.get("items", []):
+                s = it.get("status", {})
+                pd_ = it.get("processingDetails", {})
+                if s.get("publishAt") and (s.get("uploadStatus") != "processed"
+                                           or pd_.get("processingStatus") != "succeeded"):
+                    notes.append(
+                        f"SCHEDULED BUT NOT PROCESSED: {it['id']} publishes "
+                        f"{s['publishAt'][:16]} with uploadStatus={s.get('uploadStatus')} "
+                        f"processing={pd_.get('processingStatus')} -- "
+                        f"{it['snippet']['title'][:40]}")
+    except Exception as exc:                                   # network/quota, never fatal here
+        notes.append(f"could not verify scheduled videos ({type(exc).__name__})")
+
+    # 4. is anything actually moving? liveness is not progress.
     changed = cur != prev.get("progress")
     if changed:
         last_move = now.isoformat()
