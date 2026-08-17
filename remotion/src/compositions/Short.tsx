@@ -1046,7 +1046,13 @@ export const Short: React.FC<{data: ShortData; platform: ShortPlatform; depth?: 
           </Series.Sequence>
         ))}
       </Series>
-      {method ? <PersonaMark /> : null}
+      {/* Not on TikTok (2026-08-17). PersonaMark is a wordmark on EVERY frame, and TikTok's
+          originality policy says repurposed content carrying a watermark or logo is in most cases
+          not treated as original - unoriginal content being made ineligible for the For You feed.
+          These files are the same ones published on YouTube, so the mark is the exact signal that
+          policy describes, and 159 of the 199 TikTok compositions carry it. YouTube keeps it: the
+          persona signature is a deliberate recognition device there (rule 9b/10). */}
+      {method && platform !== 'tiktok' ? <PersonaMark /> : null}
       {/* Under the captions on purpose: the type lives at y420–1050 and the band at ~y1305, but if
           a Short ever moves its captions up, the spoken line must still win. */}
       <KineticBeatLayer beats={data.kineticBeats} />
