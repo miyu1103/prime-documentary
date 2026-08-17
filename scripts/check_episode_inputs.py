@@ -194,6 +194,30 @@ def main() -> int:
             unverified.append(p)          # detector unavailable: say so, do not assume
         elif share > 0:
             faces.append(p)
+    # A PEOPLE PLATE CONVERTED TO MOTION IS STILL A PEOPLE PLATE. i2v moves a converted still
+    # out of img/ into img_unused/ and the film uses motion/<stem>.mp4 instead -- the person is
+    # IN the film, animated, which is the whole point of converting people first. Measured
+    # 2026-08-17 on ramirez: 16 of its 24 people plates had been converted, this count only ever
+    # looked at img/, and the episode was refused for having too FEW people at the exact moment
+    # its people became motion. Count a retired still when its motion clip exists, under the
+    # same qualification rules as the live ones.
+    unused_dir = ROOT / "remotion" / "public" / slug / "img_unused"
+    motion_dir = ROOT / "remotion" / "public" / slug / "motion"
+    if unused_dir.is_dir() and motion_dir.is_dir():
+        for p in sorted(unused_dir.glob("*.png")):
+            mp4 = motion_dir / f"{p.stem}.mp4"
+            if not (mp4.is_file() and mp4.stat().st_size > 100_000):
+                continue
+            if (p.name.upper() in declared or p.stem.upper() in declared
+                    or (p.name.upper().startswith("P") and p.stem.upper() in authored)):
+                faces.append(p)
+                continue
+            if p.name.upper().startswith("P"):
+                share = _face_share(p)
+                if share is None:
+                    unverified.append(p)
+                elif share > 0:
+                    faces.append(p)
     if unverified:
         notes.append(f"{len(unverified)} people plate(s) could not be verified -- no face "
                      f"detector in this interpreter; re-run with py -3.11")
