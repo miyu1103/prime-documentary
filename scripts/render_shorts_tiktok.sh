@@ -52,8 +52,23 @@ for n in $LIST; do
   # of the 126 files uploaded with it carries a "creator labelled this AI-generated" badge, while
   # the same footage with the tag removed shows the AI-generated switch OFF in the uploader.
   # This is a re-mux, not a re-encode - the picture is bit-identical.
-  ffmpeg -v error -y -i "$out" -map_metadata -1 -map_chapters -1 -c copy \
-         -movflags +faststart "${out}.clean" && mv -f "${out}.clean" "$out"
+  # -f mp4 and a real .mp4 temp name. Without them ffmpeg cannot infer a format from
+  # "short10_tt.mp4.clean", fails with "Unable to choose an output format", the && short-circuits
+  # the mv, and the script still prints failures=0. Measured 2026-08-17: every TikTok file ever
+  # produced here still carried comment=Made with Remotion 4.0.476 - the tag this step exists to
+  # remove, and the one that put an AI-generated badge on 127 videos of the first account.
+  tmp="${out%.mp4}.clean.mp4"
+  if ffmpeg -v error -y -i "$out" -map_metadata -1 -map_chapters -1 -c copy \
+            -movflags +faststart -f mp4 "$tmp"; then
+    mv -f "$tmp" "$out"
+    if ffprobe -v error -show_entries format_tags=comment -of default=nw=1:nk=1 "$out" | grep -qi remotion; then
+      echo "METADATA STRIP FAILED (tag survived): $out"
+      exit 1
+    fi
+  else
+    echo "METADATA STRIP FAILED (ffmpeg): $out"
+    exit 1
+  fi
 done
 
 rm -rf "$BUNDLE"

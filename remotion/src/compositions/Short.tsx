@@ -406,8 +406,17 @@ const TelopTop: React.FC<{text: string}> = ({text}) => {
   );
 };
 
-/** Closing CTA endcard (last beat). Platform-specific text; TikTok never names an external site. */
-const CtaLayer: React.FC<{text: string}> = ({text}) => {
+/** Closing CTA endcard (last beat). Platform-specific text; TikTok never names an external site.
+ *
+ * On TikTok the brand wordmark and the SUBSCRIBE pill are both omitted (2026-08-17). TikTok's
+ * originality policy states that repurposed content carrying a watermark or logo is in most cases
+ * not treated as original, and unoriginal content is made ineligible for the For You feed. These
+ * Shorts are the same files published on YouTube, so the burned-in wordmark is exactly the signal
+ * that policy describes. Measured before the change: the first two posts on a brand-new account
+ * with a clean handle sat at 0 views for 7 and 3 hours. The closing line itself stays.
+ */
+const CtaLayer: React.FC<{text: string; platform: ShortPlatform}> = ({text, platform}) => {
+  const brand = platform !== 'tiktok';
   const frame = useCurrentFrame();
   const {fps} = useVideoConfig();
   const enter = spring({frame, fps, config: {damping: 16, stiffness: 120}});
@@ -422,18 +431,20 @@ const CtaLayer: React.FC<{text: string}> = ({text}) => {
           padding: '0 80px',
         }}
       >
-        <div
-          style={{
-            color: BRAND.color.gold,
-            fontFamily: BRAND.font.body,
-            fontWeight: 700,
-            fontSize: 44,
-            letterSpacing: 4,
-            marginBottom: 22,
-          }}
-        >
-          PRIME DOCUMENTARY
-        </div>
+        {brand ? (
+          <div
+            style={{
+              color: BRAND.color.gold,
+              fontFamily: BRAND.font.body,
+              fontWeight: 700,
+              fontSize: 44,
+              letterSpacing: 4,
+              marginBottom: 22,
+            }}
+          >
+            PRIME DOCUMENTARY
+          </div>
+        ) : null}
         <div
           style={{
           color: BRAND.color.white,
@@ -447,6 +458,7 @@ const CtaLayer: React.FC<{text: string}> = ({text}) => {
         >
           {text}
         </div>
+        {brand && (
         <div
           style={{
             marginTop: 30,
@@ -466,6 +478,7 @@ const CtaLayer: React.FC<{text: string}> = ({text}) => {
         >
           <span style={{fontSize: 30}}>▶</span> SUBSCRIBE
         </div>
+        )}
       </div>
     </AbsoluteFill>
   );
@@ -881,7 +894,7 @@ const BeatView: React.FC<{beat: ShortBeat; platform: ShortPlatform; data: ShortD
             fadeOutSec={data.ctaFadeOutSec}
           />
         ) : (
-          <CtaLayer text={ctaText} />
+          <CtaLayer text={ctaText} platform={platform} />
         )
       ) : beat.telop ? (
         <TelopTop text={beat.telop} />
