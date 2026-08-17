@@ -34,6 +34,7 @@ DRIVER = r"C:/Users/aab15/ae-demo/comfy_wan.py"
 AE_DEMO = Path(r"C:/Users/aab15/ae-demo")
 AI_ROOT = Path("H:/pd-media/assets/ai")
 MIN_FRAMES = 40          # a finished clip is 81 frames; <40 means it died mid-write
+MIN_OK_BYTES = 100_000   # same threshold assemble_episode_i2v uses to call an mp4 finished
 
 PERSON_PROMPT = (
     "subtle natural human motion, the person breathes and shifts slightly, tiny head movement, "
@@ -53,6 +54,18 @@ def frame_dir(slug: str, stem: str) -> Path:
 
 
 def is_done(slug: str, stem: str) -> bool:
+    """Done means THE CLIP EXISTS, not that its intermediate frames still do.
+
+    2026-08-17: 24.5 GB of spent frame directories were reclaimed after their mp4s were
+    assembled -- which is correct, the film reads the mp4 -- and every progress counter in the
+    system instantly read 157 finished conversions as unstarted. The chain would have spent a
+    GPU-day regenerating clips that were already on disk. The frames are the scaffolding; the
+    mp4 is the building. Ask about the building.
+    """
+    mp4 = (Path(__file__).resolve().parents[1] / "remotion" / "public" / slug / "motion"
+           / f"{stem}.mp4")
+    if mp4.is_file() and mp4.stat().st_size > MIN_OK_BYTES:
+        return True
     d = frame_dir(slug, stem)
     return d.exists() and len(list(d.glob("*.png"))) >= MIN_FRAMES
 

@@ -59,7 +59,10 @@ def running(pattern: str) -> bool:
 
 def progress() -> dict:
     """Everything that counts as forward motion, measured on disk."""
-    out = {f"i2v:{s}": len(list(AE_DEMO.glob(f"wan_frames_{s}_*"))) for s in TARGETS}
+    # Count the mp4s, not the frame dirs: frames are reclaimed once their clip is assembled, and
+    # on 2026-08-17 that reclamation made this counter report 157 finished conversions as zero.
+    out = {f"i2v:{s}": len(list((ROOT / "remotion" / "public" / s / "motion").glob("*.mp4")))
+           for s in TARGETS}
     for slug in TARGETS:
         masters = list((ROOT / "episodes").glob(f"PD-2026-0*-{slug}/08_edit/{slug}_final_bgm.v*.mp4"))
         out[f"master:{slug}"] = len(masters)

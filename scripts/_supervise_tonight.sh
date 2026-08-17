@@ -25,7 +25,12 @@ say() { echo "[sup] $(date '+%m-%d %H:%M') $*" | tee -a "$LOG"; }
 # slug:target -- target counts frame dirs on disk, the only honest measure of i2v progress.
 TARGETS="openfields:53 ramirez:50 pinto:54 hyatt:32"
 
-count_done() { ls -d /c/Users/aab15/ae-demo/wan_frames_${1}_* 2>/dev/null | wc -l; }
+# COUNT THE CLIPS, NOT THE SCAFFOLDING.
+# 2026-08-17: this counted wan_frames_<slug>_* directories. 24.5 GB of those were reclaimed once
+# their mp4s existed -- correct, the film reads the mp4 -- and this counter instantly read 157
+# finished conversions as unstarted, which would have sent the chain off to regenerate them.
+# The mp4 in the render-visible pool IS the deliverable. Ask about that.
+count_done() { ls "remotion/public/${1}/motion/"*.mp4 2>/dev/null | wc -l; }
 
 alive() {   # pattern -> 0 when at least one process matches, excluding the probe itself
   local n
