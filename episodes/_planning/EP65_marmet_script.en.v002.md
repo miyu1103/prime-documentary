@@ -37,13 +37,13 @@ Five pages. Almost everything a person would want to know about these three fami
 
 This litigation involves three negligence suits against nursing homes in West Virginia. That is the opinion's own first line of fact. The suits were brought by Clayton Brown, Jeffrey Taylor, and Sharon Marchio.
 
-Brown sued Marmet Health Care Center. Taylor sued Marmet Health Care Center. Marchio sued a nursing home in Clarksburg. In the Supreme Court's caption it has two names — Clarksburg Nursing Home and Rehabilitation Center, doing business as Clarksburg Continuous Care Center. She sued as executrix of the estate of Pauline Virginia Willett.
+Brown sued Marmet Health Care Center. So did Taylor. Marchio sued a nursing home in Clarksburg. In the Supreme Court's caption it has two names — Clarksburg Nursing Home and Rehabilitation Center, doing business as Clarksburg Continuous Care Center. She sued as executrix of the estate of Pauline Virginia Willett.
 
 Three plaintiffs. Two nursing homes. One state.
 
 【motif state 2: plate R066 — a pen offered across the counter by that same hand, held out by the barrel, both hands cropped at the wrist, no face; then plate R035 — the pen from directly above, resting in the gutter of the open form, not on the line. The line is still bare. SECOND appearance of the hand, and this is also where R001's HOOK promise is first recovered (batch §4 payoff table).】
 
-The first order came on August 25, 2009. The Circuit Court of Kanawha County dismissed Clayton Brown's suit. Brown had argued that the arbitration clause was unenforceable on two grounds — that it violated section 15(c) of the West Virginia Nursing Home Act, and that it was an unconscionable contract of adhesion. The circuit court disagreed, and ruled that under the admission agreement signed with the nursing home he was required to arbitrate all of his claims.
+The first order came on August 25, 2009. The Circuit Court of Kanawha County dismissed Clayton Brown's suit. Brown had argued that the arbitration clause was unenforceable on two grounds — that it violated section 15(c) of the state's Nursing Home Act, and that it was an unconscionable contract of adhesion. The circuit court disagreed, and ruled that under the admission agreement signed with the nursing home he was required to arbitrate all of his claims.
 
 That order is one paragraph long.
 
@@ -55,7 +55,7 @@ Both plaintiffs appealed.
 
 The third order went the other way. On June 2, 2010, the Circuit Court of Harrison County refused to dismiss Sharon Marchio's suit and refused to compel arbitration. Instead it certified a question upward, because Marchio had argued that her clause was unenforceable under the same section of the Nursing Home Act. The question was whether that section was preempted by the Federal Arbitration Act.
 
-Two dismissals and one question, all travelling to the Supreme Court of Appeals of West Virginia.
+Two dismissals and one question, all travelling to the state's highest court.
 
 Now the part where the record stops.
 
@@ -65,7 +65,7 @@ Here is everything the Supreme Court's opinion tells you about what happened to 
 
 That is the whole account.
 
-No ages. No conditions. No dates of admission, no dates of death. No description of the care, and no description of what the negligence was said to be. Pauline Virginia Willett is the only patient named anywhere in the opinion, and she is named only in the caption of Marchio's case. Brown's patient is unnamed. Taylor's patient is unnamed.
+No ages. No conditions. No dates of admission, no dates of death. No description of the care, and no description of what the negligence was said to be. Pauline Virginia Willett is the only patient named anywhere in the opinion, and she is named only in the caption of Marchio's case. Brown's patient is unnamed. So is Taylor's.
 
 【motif state 3: the ruled line under one unreadable stroke of ink. It is not the shape of a name.】
 
@@ -77,7 +77,7 @@ What the record does describe closely is the paper.
 
 The relevant parts of the agreements in Brown's case and Taylor's case were identical. Both contained a clause requiring the parties to arbitrate all disputes, other than claims to collect late payments owed by the patient.
 
-A dispute about how somebody died goes to a private arbitrator. A dispute about an unpaid bill stays in a courthouse.
+So which dispute did the paper leave in a courthouse? Not the death. The money.
 
 There was a second provision in those two contracts. The party filing the arbitration is responsible for paying a filing fee, in accordance with the Rules of the American Arbitration Association fee schedules. Whoever starts the proceeding pays to start it. The opinion states no dollar figure.
 
@@ -101,7 +101,7 @@ West Virginia's legislature had put that in the statute books in 1997. Whether i
 
 【motif state 5: the ink dry; the same hand slides the completed form back across the counter and leaves the frame (plate R064), the form sits in the out-tray (R062), the drawer of identical unlabelled tabs closes on it (R022, played in reverse). FOURTH and last appearance of the hand. From here to the end of the film the desk works with nobody at it.】
 
-On June 29, 2011, the Supreme Court of Appeals of West Virginia decided all three cases together. It consolidated Brown's and Taylor's appeals with Marchio's, which was before the court on other issues. The court's own later description of what it produced: an extensive opinion with three holdings.
+On June 29, 2011, West Virginia's Supreme Court of Appeals decided all three cases together. It consolidated Brown's and Taylor's appeals with Marchio's, which was before the court on other issues. The court's own later description of what it produced: an extensive opinion with three holdings.
 
 Lawyers call it Brown One.
 
@@ -117,9 +117,9 @@ The picture of a state court simply defying Washington does not survive that. On
 
 The second holding is the one that travelled. It is Syllabus Point 21, and it reads: Congress did not intend for arbitration agreements, adopted prior to an occurrence of negligence that results in a personal injury or wrongful death, and which require questions about the negligence be submitted to arbitration, to be governed by the Federal Arbitration Act.
 
-The load is on one word. Prior.
+The load is on one word. Prior. Prior to what?
 
-The court's argument was about sequence. A commercial contract that goes wrong produces a dispute about the contract. A nursing home admission agreement that goes wrong produces a dispute about something else — an injury, a death — and the paper routing that dispute to an arbitrator was signed before the injury existed.
+The court's argument was about sequence. A commercial contract that goes wrong produces a dispute about the contract. A nursing home admission agreement that goes wrong produces something else entirely — an injury, a death — and the paper routing that dispute to an arbitrator was signed before the injury existed.
 
 From that the court drew the public policy that gave the case its shape. Its own sentence, quoted back to it the next year in Washington. As a matter of public policy under West Virginia law, an arbitration clause in a nursing home admission agreement adopted prior to an occurrence of negligence that results in a personal injury or wrongful death, shall not be enforced to compel arbitration of a dispute concerning the negligence.
 
@@ -145,13 +145,13 @@ A contract of adhesion is one drafted and imposed by a party of superior strengt
 
 Take it or leave it. The state court's finding, in Brown One: people being admitted to long-term care facilities and their families have to sign admission contracts without time to comparison shop or to negotiate the best service and price combination.
 
-But being a form is not a verdict, and the court said so. Finding that there is an adhesion contract is the beginning point for analysis, not the end of it. What courts aim at doing is distinguishing good adhesion contracts which should be enforced, from bad adhesion contracts which should not.
+Is a take-it-or-leave-it form enough on its own? Being a form is not a verdict, and the court said so. Finding that there is an adhesion contract is the beginning point for analysis, not the end of it. What courts aim at doing is distinguishing good adhesion contracts which should be enforced, from bad adhesion contracts which should not.
 
 And then the sentence that gives the whole opinion its edge. It may be disingenuous for a nursing home to later assert that the patient or family member consciously, knowingly and deliberately accepted an arbitration clause in the contract, and understood the clause was intended to eliminate their access to the courts if the nursing home negligently injured or killed the patient.
 
 Disingenuous.
 
-The defendant nursing homes in all three cases sought review in the Supreme Court of the United States. Two petitions for certiorari, docketed as 11-391 and 11-394.
+The defendant nursing homes in all three cases sought review in Washington. Two petitions for certiorari, docketed as 11-391 and 11-394.
 
 And the defendants specifically challenged Syllabus Point 21.
 
@@ -179,7 +179,7 @@ A panacea. And from that reading, the state court drew the finding it would be r
 
 Then the conclusion it reached. Congress did not intend for the FAA to be, in any way, applicable to personal injury or wrongful death suits that only collaterally derive from a written agreement that evidences a transaction affecting interstate commerce.
 
-Collaterally derive. A negligence claim is not a claim on the contract. It arrives later, out of an event nobody contracted about.
+Collaterally derive. Is a negligence claim really a claim on the contract? It arrives later, out of an event nobody contracted about.
 
 The Supreme Court granted certiorari and decided both cases on February 21, 2012. Five pages, per curiam.
 
@@ -193,7 +193,7 @@ All of them.
 
 Next, the statute. Section 2 of the Federal Arbitration Act, quoted in the opinion: a written provision in a contract evidencing a transaction involving commerce to settle by arbitration a controversy thereafter arising out of such contract or transaction shall be valid, irrevocable, and enforceable, save upon such grounds as exist at law or in equity for the revocation of any contract.
 
-Valid, irrevocable, and enforceable. And then, in the same sentence of the statute, an exception that decides everything that follows. Save upon such grounds as exist at law or in equity for the revocation of any contract.
+Valid, irrevocable, and enforceable. And then, in the same sentence of the statute, the exception that decides everything that follows.
 
 Keep the second half. It comes back.
 
@@ -205,7 +205,7 @@ That rule resolves these cases.
 
 Four words, and then the application, in the Court's own sentence. West Virginia's prohibition against predispute agreements to arbitrate personal-injury or wrongful-death claims against nursing homes is a categorical rule prohibiting arbitration of a particular type of claim, and that rule is contrary to the terms and coverage of the FAA.
 
-The Court listed four cases in which a state had tried something from the same family and lost. Preston against Ferrer, 2008 — a state commissioner given exclusive jurisdiction over an issue the parties had agreed to arbitrate. Mastrobuono, 1995 — a state rule requiring judicial resolution of claims involving punitive damages. Perry against Thomas, 1987 — a state requirement that litigants be provided a judicial forum for wage disputes. Southland against Keating, 1984 — a state investment statute banning arbitration of claims brought under it.
+Had a state tried this before? The Court listed four that had, and lost. Preston against Ferrer, 2008 — a state commissioner given exclusive jurisdiction over an issue the parties had agreed to arbitrate. Mastrobuono, 1995 — a state rule requiring judicial resolution of claims involving punitive damages. Perry against Thomas, 1987 — a state requirement that litigants be provided a judicial forum for wage disputes. Southland against Keating, 1984 — a state investment statute banning arbitration of claims brought under it.
 
 Preempted. Preempted. Preempted. Preempted.
 
@@ -245,11 +245,11 @@ The last clause is the savings clause from section 2, back again.
 
 A state may not write a rule that says: this type of claim does not go to arbitration. That is what West Virginia had written, and that is what fell.
 
-A state may say: this contract is unconscionable, and we would say so of any contract with these features, whether or not the word arbitration ever appeared in it. That is a ground that exists at law or in equity for the revocation of any contract, and the federal statute preserves it in terms.
+A state may say: this contract is unconscionable, and we would say so of any contract with these features, whether or not the word arbitration ever appeared in it. That is exactly the ground section 2 preserves, in terms.
 
 Then the disposition. The petition for certiorari is granted. The judgment of the Supreme Court of Appeals of West Virginia is vacated, and the cases are remanded for proceedings not inconsistent with this opinion.
 
-The Supreme Court of the United States did not hold that any of these three arbitration clauses was valid. It did not order anyone to arbitrate anything. It did not decide whether these families could sue, and it did not decide whether the papers they were holding meant what the nursing homes said they meant.
+The Supreme Court did not hold that any of these three arbitration clauses was valid. It did not order anyone to arbitrate anything. It did not decide whether these families could sue, and it did not decide whether the papers they were holding meant what the nursing homes said they meant.
 
 It held that one rule West Virginia had invented was preempted, and that a judgment resting on that rule could not stand. Everything else went back.
 
@@ -263,7 +263,7 @@ This was a per curiam opinion. Per curiam means by the court. There is no author
 
 So the file went back to Charleston with a mandate in it, and an unanswered question underneath the mandate.
 
-The Supreme Court of Appeals of West Virginia did not treat that as a formality. In an order dated April 3, 2012, it directed the parties to submit additional briefs and arguments. It heard the cases again.
+The West Virginia court did not treat that as a formality. In an order dated April 3, 2012, it directed the parties to submit additional briefs and arguments. It heard the cases again.
 
 At that rehearing, counsel for the plaintiffs argued that because the trial courts had never permitted the parties to develop evidence on unconscionability, parties challenging an arbitration clause must have a right to conduct discovery. Counsel for Marmet Health Care Center argued the reverse. Brown One had been wrong, they said, because there was insufficient evidence in the record to support a finding that the arbitration clause was unconscionable.
 
@@ -275,13 +275,13 @@ The cases were submitted on June 6, 2012. The opinion came down seven days later
 
 ## ACT_5 (21:02-27:05)
 
-June 13, 2012. Ketchum, Chief Justice, writing for the Supreme Court of Appeals of West Virginia, in the second opinion — the one that followed Brown One.
+June 13, 2012. Ketchum, Chief Justice, writing for the West Virginia court, in the second opinion — the one that followed Brown One.
 
 The first move is obedience, and it is exact. In accordance with the Supreme Court's mandate, we overrule Syllabus Point 21 of Brown One.
 
 Overrule. Not vacate, not modify, not distinguish. The holding that had gone to Washington was taken out of West Virginia law by the court that had written it.
 
-The next sentence, in the same paragraph:
+So had West Virginia simply surrendered? The next sentence, in the same paragraph:
 
 We otherwise find that the Supreme Court's decision does not counsel us to alter our original analysis of West Virginia's common law of contracts.
 
@@ -322,7 +322,7 @@ Then its own account of the two records in front of it. The circuit court's orde
 
 Its own line for a record in that condition, from Brown One: without factual or legal findings, this Court is greatly at sea without a chart or compass.
 
-So it sent Brown's case and Taylor's case down rather than answering them. In its own words. We conclude the correct course is to remand these cases to the circuit courts for the taking of evidence, the full development of a record, and proper consideration of whether the clauses are unconscionable.
+So it sent both cases down rather than answering them. In its own words. We conclude the correct course is to remand these cases to the circuit courts for the taking of evidence, the full development of a record, and proper consideration of whether the clauses are unconscionable.
 
 Two further arguments were on the table, and the court refused both — not on their merits, but on the order of business.
 
@@ -334,7 +334,7 @@ The second argument is the one the Supreme Court never reached. There is no evid
 
 We decline to consider these two arguments, the court wrote, which should be considered by the trial court first.
 
-Then the disposition, and it is not one thing. Brown: reversed and remanded. Taylor: reversed and remanded. Marchio: the certified question answered. Yes — the Nursing Home Act's waiver ban is preempted by the Federal Arbitration Act. Unconscionability was left to be raised by the parties on remand, because the trial court had never considered it.
+Then the disposition, and it is not one thing. Brown: reversed and remanded. Taylor: the same. Marchio: the certified question answered. Yes — the Nursing Home Act's waiver ban is preempted by the Federal Arbitration Act. Unconscionability was left to be raised by the parties on remand, because the trial court had never considered it.
 
 【OST, dockets on screen only, never in the voice: No. 35494 REVERSED AND REMANDED · No. 35546 REVERSED AND REMANDED · No. 35636 CERTIFIED QUESTION ANSWERED】
 
@@ -348,13 +348,13 @@ Nothing in that second opinion holds these clauses unenforceable. Nothing in it 
 
 So what was the paper?
 
-On the record these two opinions make, it was this. A form signed at an admission desk by a family member, on behalf of a patient who required extensive nursing care. A form that sent every dispute to a private arbitrator, except one — a claim to collect late payments owed by the patient. A form that made whoever filed first pay to file. And in one of the three cases, a form with no exceptions in it at all.
+On the record these two opinions make, it was this. A form signed at an admission desk by a family member, on behalf of a patient who required extensive nursing care. A form that sent every dispute to a private arbitrator, except one: the home's own claim for money. A form that made whoever filed first pay to file. And in one of the three cases, a form with no exceptions in it at all.
 
 It was, the Supreme Court held, a written provision in a contract evidencing a transaction involving commerce — and therefore inside an Act of Congress passed in 1925. That is what Washington decided. It decided the paper was covered by the statute.
 
 It did not decide the paper was good.
 
-Section 2 of the Federal Arbitration Act carries both halves in one sentence — valid, irrevocable, and enforceable, save upon such grounds as exist at law or in equity for the revocation of any contract. The savings clause was there the whole time. What the Supreme Court decided was that West Virginia had reached past it.
+Section 2 carries both halves in one sentence. Enforceable — and revocable on any ground that would revoke any other contract. The savings clause was there the whole time. What the Supreme Court decided was that West Virginia had reached past it.
 
 West Virginia gave up the rule it had been reversed on and kept everything else, including the doctrine that asks whether a contract is so one-sided that a court may refuse to enforce it as written.
 

@@ -1,0 +1,61 @@
+{
+  "schema_version": "shorts_codex_image_checkpoint.v1",
+  "created_at": "2026-08-04T09:02:52+09:00",
+  "status": "superseded",
+  "superseded_at": "2026-08-04T19:01:05+09:00",
+  "superseded_by": "episodes/_planning/SHORTS_CODEX_v002_COMPLETION.json",
+  "scope": "image_generation_only",
+  "prompt_file": "episodes/_planning/SHORTS_CODEX_PROMPTS.v002-remaining.md",
+  "prompt_file_sha256": "194ec76b7ee773b6fba5daaaffbf9fe35a3e1ab4710ea510135873695a6f0a19",
+  "generator": "Codex built-in image_gen",
+  "generated_originals_root": "C:/Users/aab15/.codex/generated_images/019fc991-5736-7800-a69f-359d71ad6f91",
+  "destination_root": "remotion/public/shorts",
+  "completed_shorts": [
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191
+  ],
+  "completed_image_count": 220,
+  "generated_original_count": 220,
+  "contact_sheet_count": 10,
+  "next_short": 192,
+  "next_asset": "short192_01.png",
+  "remaining_short_count": 21,
+  "remaining_image_count": 462,
+  "technical_qc": {
+    "expected_id_count": 220,
+    "present_id_count": 220,
+    "missing_ids": [],
+    "unexpected_ids": [],
+    "width": 1080,
+    "height": 1920,
+    "format": "PNG",
+    "mode": "RGB",
+    "color_profile": "sRGB",
+    "mean_luma_min": 49.85,
+    "mean_luma_max": 50.16,
+    "unique_sha256_count": 220,
+    "errors": []
+  },
+  "visual_qc": {
+    "reviewed_via_labeled_contact_sheets": true,
+    "readable_text_found": false,
+    "watermark_or_signature_found": false,
+    "identifiable_frontal_face_found": false,
+    "obvious_composition_failure_found": false,
+    "issues": []
+  },
+  "safety": {
+    "existing_assets_overwritten": false,
+    "automatic_regeneration_attempts": 0,
+    "external_publish_or_upload": false,
+    "downstream_episode_state_changed": false
+  }
+}

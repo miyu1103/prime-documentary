@@ -140,7 +140,12 @@ def build_cuts(film: Optional[dict], render_dur: float) -> tuple[list[dict[str, 
         fps = float(film.get("fps") or 30.0)
         hook = float(film.get("hookSeconds") or 0.0)
         opening = float(film.get("openingSeconds", OPENING_SEC))
-        offset = (round(hook * fps) + round(opening * fps)) / fps
+        # SPEC v2 row 9 (binds from EP66): an episode may declare `leadSeconds` and put its
+        # body -- and its narration -- at frame 0. Mirrors caseFilmLeadFrames in CaseFilm.tsx.
+        # `is None`, not falsy, so a declared 0.0 wins; absent, this is the old expression.
+        _lead = film.get("leadSeconds")
+        offset = ((round(hook * fps) + round(opening * fps)) / fps if _lead is None
+                  else round(float(_lead) * fps) / fps)
         cuts: list[dict[str, Any]] = []
         for i, c in enumerate(film["cuts"]):
             start = c.get("start")

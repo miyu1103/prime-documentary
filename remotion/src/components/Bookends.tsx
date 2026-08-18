@@ -34,8 +34,13 @@ const SILVER = BRAND.color.silver;
 export const OPENING_SEC = 3.5;
 export const ENDCARD_SEC = 9;
 
-/** Standard cinematic title opening: sunrise bg + PD monogram + series label / TITLE / subtitle. */
-export const BrandOpening: React.FC<{seriesLabel: string; title: string; subtitle?: string}> = ({
+/** Standard cinematic title opening: sunrise bg + PD monogram + series label / TITLE / subtitle.
+ *
+ * This is the `card` variant -- the full-screen 3.5 s opening every episode up to EP65 renders.
+ * Nothing inside it changed when `variant` was added (2026-08-10): the component was renamed and
+ * a dispatcher put in front of it, so EP62-65 keep an identical element tree and identical
+ * numbers. Do not tune anything in here for EP66; the overlay form is a separate component. */
+const BrandOpeningCard: React.FC<{seriesLabel: string; title: string; subtitle?: string}> = ({
   seriesLabel,
   title,
   subtitle,
@@ -193,6 +198,213 @@ export const BrandOpening: React.FC<{seriesLabel: string; title: string; subtitl
     </AbsoluteFill>
   );
 };
+
+/**
+ * OVERLAY form of the SAME brand opening (EP66 PACKAGING v001 sections 4 and 7).
+ *
+ * Why it exists: from EP66 the hook is voiced from frame 0 (SPEC v2 row 9), so the film declares
+ * `leadSeconds: 0` and there is no silent gap in front of the body to hold a full-screen card.
+ * Under the card layout the opening simply would not render at all. This form puts the brand
+ * furniture in a band across the bottom of the frame while the picture and the narration keep
+ * running underneath -- nothing cuts away and nothing pauses.
+ *
+ * TIMELINE (PACKAGING section 7.2). The component is mounted for OPENING_SEC; `frame` below is
+ * relative to its own start, which for EP66 is 0:20.5 so this table is 20.50-24.00 on the film.
+ *
+ *   in    0.000-0.400 s   F 0-12    scrim band + monogram rise from below the frame edge
+ *   in    0.133-0.600 s   F 4-18    series label mask-reveals            (+4F stagger)
+ *   in    0.267-0.800 s   F 8-24    episode title mask-reveals           (+8F stagger)
+ *   hold  0.800-2.600 s   F 24-78   still; the cut and the voice underneath do not stop
+ *   out   2.600-3.500 s   F 78-105  the three elements drop out, -6F reverse stagger
+ *
+ * MOTION DISCIPLINE (owner's opening manual, carried by PD_ONE_PASS_PRODUCTION_SPEC.v2 row 14):
+ *   - every movement is eased: spring() on the two rises, Easing.out(Easing.cubic) on the two
+ *     mask reveals, Easing.in(Easing.cubic) on the exit. No constant-linear tween anywhere.
+ *   - no element animates opacity alone. Scrim and monogram pair it with translateY (+ scale on
+ *     the monogram); the two text lines never fade at all on entry -- they are revealed by an
+ *     overflow:hidden mask -- and on exit their fade is paired with translateY.
+ *   - the entrance is staggered +4F per element and the exit -6F per element; nothing moves
+ *     together.
+ *   - Trail (@remotion/motion-blur) is applied while anything is moving and dropped during the
+ *     hold, where it would cost render time and change no pixel.
+ * All timings are SECONDS and every frame is Math.round(sec * fps) -- no frame literals. The F
+ * column above is what those seconds resolve to at the PD long-form 30 fps.
+ */
+const OVERLAY = {
+  /** layer 2 of section 7.4: the band is the bottom 22% of the frame (238 px at 1080) */
+  bandHeightRatio: 0.22,
+  bandTopFadePx: 12,
+  scrimAlpha: 0.82,
+  scrimRisePx: 72,
+  monoRisePx: 40,
+  monoScaleFrom: 0.94,
+  monoSize: 64,
+  seriesDelaySec: 0.133,
+  seriesRevealSec: 0.467,
+  seriesSize: 28,
+  titleDelaySec: 0.267,
+  titleRevealSec: 0.533,
+  titleSize: 46,
+  outStartSec: 2.6,
+  outStaggerSec: 0.2,
+  outSec: 0.5,
+  outDropPx: 64,
+  trailLayers: 6,
+  trailLagInFrames: 1.2,
+  trailOpacity: 0.34,
+} as const;
+
+const BrandOpeningOverlay: React.FC<{seriesLabel: string; title: string}> = ({seriesLabel, title}) => {
+  const frame = useCurrentFrame();
+  const {fps, height} = useVideoConfig();
+  const f = (s: number) => Math.round(s * fps);
+
+  const bandH = Math.round(height * OVERLAY.bandHeightRatio);
+  const outStart = f(OVERLAY.outStartSec);
+  const outLen = f(OVERLAY.outSec);
+  const outStagger = f(OVERLAY.outStaggerSec);
+
+  // Exit, reverse-staggered: title leaves first (order 0, F 78), then the series label
+  // (F 84), then the scrim and monogram together (F 90). translateY paired with the fade.
+  const exit = (order: number) => {
+    const from = outStart + order * outStagger;
+    const p = interpolate(frame, [from, from + outLen], [0, 1], {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+      easing: Easing.in(Easing.cubic),
+    });
+    return {y: p * OVERLAY.outDropPx, o: 1 - p};
+  };
+  const exTitle = exit(0);
+  const exSeries = exit(1);
+  const exBase = exit(2);
+
+  const scrimS = spring({frame, fps, config: {damping: 20, mass: 0.6}});
+  const monoS = spring({frame, fps, config: {damping: 18, mass: 0.5}});
+
+  // Mask reveals: the line sits at +100% of its own height inside an overflow:hidden parent and
+  // eases up to 0. Opacity is a constant 1 -- the mask is what makes it appear.
+  const maskUp = (delaySec: number, revealSec: number) =>
+    interpolate(frame, [f(delaySec), f(delaySec) + f(revealSec)], [100, 0], {
+      extrapolateLeft: 'clamp',
+      extrapolateRight: 'clamp',
+      easing: Easing.out(Easing.cubic),
+    });
+  const seriesY = maskUp(OVERLAY.seriesDelaySec, OVERLAY.seriesRevealSec);
+  const titleY = maskUp(OVERLAY.titleDelaySec, OVERLAY.titleRevealSec);
+
+  const enterEnd = f(OVERLAY.titleDelaySec) + f(OVERLAY.titleRevealSec);
+  const moving = frame < enterEnd || frame >= outStart;
+
+  const band = (
+    <AbsoluteFill>
+      {/* layer 2 -- scrim band, with the brand gold hairline riding on its top edge */}
+      <AbsoluteFill
+        style={{
+          background:
+            `linear-gradient(to bottom, rgba(8,10,14,0) 0px, ` +
+            `rgba(8,10,14,${OVERLAY.scrimAlpha}) ${OVERLAY.bandTopFadePx}px, ` +
+            `rgba(8,10,14,${OVERLAY.scrimAlpha}) 100%)`,
+          transform: `translateY(${(1 - scrimS) * OVERLAY.scrimRisePx + exBase.y}px)`,
+          opacity: Math.max(0, scrimS * exBase.o),
+        }}
+      >
+        <div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 2, background: GOLD, boxShadow: `0 0 14px 2px ${GOLD}88`}} />
+      </AbsoluteFill>
+
+      <AbsoluteFill style={{flexDirection: 'row', alignItems: 'center', padding: '0 96px', gap: 28}}>
+        {/* layer 3 -- monogram */}
+        <div
+          style={{
+            flex: '0 0 auto',
+            transform:
+              `translateY(${(1 - monoS) * OVERLAY.monoRisePx + exBase.y}px) ` +
+              `scale(${OVERLAY.monoScaleFrom + monoS * (1 - OVERLAY.monoScaleFrom)})`,
+            opacity: Math.min(1, Math.max(0, monoS * 1.25)) * exBase.o,
+          }}
+        >
+          <PdMonogram size={OVERLAY.monoSize} />
+        </div>
+
+        {/* layer 4 -- the two text lines, each in its own overflow:hidden mask */}
+        <div style={{display: 'flex', flexDirection: 'column', minWidth: 0}}>
+          <div style={{overflow: 'hidden', paddingBottom: '0.06em', transform: `translateY(${exSeries.y}px)`, opacity: exSeries.o}}>
+            <div
+              style={{
+                transform: `translateY(${seriesY}%)`,
+                fontFamily: BRAND.font.display,
+                color: WHITE,
+                fontSize: OVERLAY.seriesSize,
+                fontWeight: 900,
+                letterSpacing: 6,
+                textTransform: 'uppercase',
+                textShadow: `0 0 18px ${GOLD}66`,
+              }}
+            >
+              {seriesLabel}
+            </div>
+          </div>
+          <div style={{overflow: 'hidden', paddingBottom: '0.06em', transform: `translateY(${exTitle.y}px)`, opacity: exTitle.o}}>
+            <div
+              style={{
+                transform: `translateY(${titleY}%)`,
+                fontFamily: BRAND.font.display,
+                color: WHITE,
+                fontSize: OVERLAY.titleSize,
+                fontWeight: 900,
+                lineHeight: 1.06,
+                textTransform: 'uppercase',
+                textShadow: `0 3px 22px #000, 0 0 40px ${GOLD}44`,
+              }}
+            >
+              {title}
+            </div>
+          </div>
+        </div>
+      </AbsoluteFill>
+    </AbsoluteFill>
+  );
+
+  return (
+    <AbsoluteFill style={{pointerEvents: 'none'}}>
+      {/* The band clips its own contents, so the elements rise in from below the frame edge and
+          drop back out of it. Nothing above the band is touched: the cut keeps playing. */}
+      <div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: bandH, overflow: 'hidden'}}>
+        {moving ? (
+          <Trail layers={OVERLAY.trailLayers} lagInFrames={OVERLAY.trailLagInFrames} trailOpacity={OVERLAY.trailOpacity}>
+            {band}
+          </Trail>
+        ) : (
+          band
+        )}
+      </div>
+    </AbsoluteFill>
+  );
+};
+
+export type BrandOpeningVariant = 'card' | 'overlay';
+
+/**
+ * The channel opening. `variant` is OPT-IN and defaults to the historical full-screen card, so a
+ * caller that does not pass it renders exactly what it rendered before this prop existed.
+ *
+ *   'card'    full-screen 3.5 s title (every episode up to EP65)
+ *   'overlay' 3.5 s lower band over running picture and narration (EP66 onward, row 9 layout)
+ *
+ * `subtitle` is used by the card only; the band is 238 px tall and carries the series label and
+ * the title, which is what PACKAGING section 7.4 lists as its text layer.
+ */
+export const BrandOpening: React.FC<{
+  seriesLabel: string;
+  title: string;
+  subtitle?: string;
+  variant?: BrandOpeningVariant;
+}> = ({seriesLabel, title, subtitle, variant = 'card'}) =>
+  variant === 'overlay' ? (
+    <BrandOpeningOverlay seriesLabel={seriesLabel} title={title} />
+  ) : (
+    <BrandOpeningCard seriesLabel={seriesLabel} title={title} subtitle={subtitle} />
+  );
 
 /** Standard channel END-CARD — IDENTICAL every episode (brand sign-off + subscribe). */
 export const BrandEndcard: React.FC<{

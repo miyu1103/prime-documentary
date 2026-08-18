@@ -27,7 +27,10 @@
 | willingham | `l7-oHSNEIjc` | private・publishAt **8/13 12:00 JST** |
 | morton | `67gynOvKf1M` | private・publishAt **8/14 12:00 JST** |
 
-- 旧3本（`6VL_mA6OiS0`/`dueMY2lSu8w`/`Gx_i5aMJWLM`）は private・予約なし。
+- **2026-08-09 19:4x 追記: 旧・欠陥版7本はオーナー承認のうえ全削除した**
+  （`Gx_i5aMJWLM`/`0sjw_1OxCVk`/`0iDUT0gzBiQ`/`6VL_mA6OiS0`/`dueMY2lSu8w`/`FOdVK1qQE6w`/`Ew5bZNOk17E`。
+  削除前に全7本が private・予約なしであることをガード検証→DELETE 204×7→再GETで0本を確認。
+  ローカルの旧マスターは 08_edit/ に残存）。チャンネルに非公開・予約なしの動画は**0本**。
 - **norfolk の最終状態は下の16:00記述と異なる**: 即時公開後（0 views・処理中のうち）に
   private へ戻し、publishAt 8/10 12:00 を付け直して独立GETで検証した。1日1本12:00の
   カレンダー規律を優先した判断。2度のPUTが要ったのは read-after-write 遅延

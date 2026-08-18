@@ -15,7 +15,7 @@ COMP="${1:?compId}"; FILM="${2:?film.json}"; PUB="${3:?public dir}"; SLUG="${4:?
 
 FPS=30
 # Sample from the middle of the body, where the cut rhythm is densest: 60s = 1800 frames.
-TOTAL=$(py -3.11 -c "import json;d=json.load(open(r'$FILM',encoding='utf-8'));print(int((d['narrationSeconds']+d['hookSeconds']+3.5+9)*$FPS))")
+TOTAL=$(py -3.11 -c "import json;d=json.load(open(r'$FILM',encoding='utf-8'));lead=d['leadSeconds'] if d.get('leadSeconds') is not None else d['hookSeconds']+3.5;print(int((d['narrationSeconds']+lead+9)*$FPS))")
 START=$(( TOTAL / 2 ))
 END=$(( START + 60 * FPS - 1 ))
 OUT="out/${SLUG}_preprobe.mp4"

@@ -1,0 +1,70 @@
+EP68 pinto — 画像発注 予備バッチ 2/2（6枚）
+区分: B1 · headroom — ordered, NOT declared  [R112 – R117]
+
+★これは**予備**です。**生成してください。**本編の契約（mandatory_stills）には入って
+　いませんが、却下が出たときの差し替えと、ナレーションが伸びた場合の不足に備えます。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は上の■のとおりちょうど。**
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。同じプロンプトで2枚目を作らないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, the United States between 1968 and 1981, mixed tungsten and daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous period surfaces — painted steel, brushed aluminium, laminate, bakelite, manila card, newsprint, enamel — nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, readable words on a page, seals, emblems, logos, insignia, badge, name plates, wordmarks, manufacturer script, grille emblem, licence plate, registration plate, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, fire, flame, flames, smoke, burning, embers, soot, charred surfaces, a burning vehicle, a person on fire, burn injury, scarring, skin graft, bandages, hospital, ambulance, paramedic, blood, a crashed car, collision, wreckage, crumpled bodywork, shattered windscreen, police officer, uniform, patrol car, flashing lights, handcuffs, firearm, courtroom interior, gavel, judge's bench, jury box, witness stand, prison bars, scales of justice, hourglass, a handshake, children, modern smartphones, flat-screen monitors, LED headlights, modern cars, contemporary clothing, plastic modern fittings, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いています（全プロンプト）。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。**サムネイルでも [NEG] は変えません。**
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・**この話の中の誰か**として通る人物を描かない——Richard Grimshaw、Lilly Gray とその家族、
+　Ulrich 姉妹と従姉、バンの運転者、Ford の従業員、判事、検事、弁護人。全員不可
+・**火・炎・煙・火傷・負傷者・病院を一枚も描かない。**この映画に火は一度も出ない
+・**衝突・事故車・潰れた車体・割れたフロントガラスを描かない。**衝突は一度も映さない
+・読める文字・数字・手書き・署名を一切描かない。タイプ文字は「斜めから見た質感」までで、
+　一語も判読できてはいけない
+・車体のバッジ・オーバル・車名スクリプト・グリルのエンブレム・ネームプレート・
+　ナンバープレートを一切描かない。**実在の Pinto として通る車を作らない**
+・**1968〜1981年のアメリカ。**液晶モニタ・LEDヘッドライト・携帯電話・現代の車・現代の服・
+　現代の樹脂部品を一切入れない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+★上の絶対条件は本編バッチから一字も変えずに引き写したものです。そこに出てくる
+　プロンプト ID は本編のもので、このファイルには入っていません。
+
+──────── プロンプト ────────
+
+■ R112.png
+A two-storey small-town American main street at midday, brick shopfronts down both sides with plain canvas awnings out over the pavement, photographed from the middle of the road at standing height so the street runs away into flat haze, the pavement empty, the light hard and colourless. Not one window, awning, board or fascia carries any lettering, name or number, and there is no vehicle and nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], shop signage, fascia lettering, window lettering, awning text, street signs, house numbers, billboards, parked cars, modern cars, person in frame
+
+■ R113.png
+A gravel county road junction between two flat fields, photographed from the middle of one road at standing height so both roads run away to the horizon, a single plain white-painted wooden signpost standing at the corner with two blank arms on it that carry no lettering, no arrow and no number, dry grass in the verge, a wide pale overcast sky. No vehicle, no building and nobody in the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], lettering on the signpost, route numbers, arrows with names, road signs with words, mailboxes with names, vehicles, person in frame
+
+■ R114.png
+A plain 1970s American federal hearing room, completely empty: a low carpeted dais across the far end with a bare wooden lectern standing on it that carries no seal, no crest and no lettering of any kind, six rows of grey stacking chairs facing it, a run of fluorescent troffers in a low acoustic-tile ceiling, institutional pale green walls. Photographed from the back of the room at standing height. Nobody is present Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], seal on the lectern, crest, flag, insignia, nameplates, lettering on the wall, courtroom interior, gavel, judge's bench, jury box, witness stand, person in frame
+
+■ R115.png
+A long institutional corridor in a 1970s American federal building, photographed straight down its length from standing height: a painted green dado running the full length of both walls, a row of identical closed flush doors down the right side with blank plates where the numbers would be, a hard vinyl floor holding a long reflection, and one bright window at the far end burning out to white. Nobody is in the corridor Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], door numbers, name plates with words, directory boards, exit signage, notices on the walls, person in frame
+
+■ R116.png
+A period adding machine standing on a grey steel office desk under one lamp, photographed close from a low three-quarter angle, a narrow paper till roll feeding up out of the top of it and curling over the edge of the desk toward the floor in one long loose fall, the printing on the roll reduced by focus to a soft grey stipple with no figure, column or character resolving anywhere along it. The desk is otherwise bare Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], legible numbers, digits on the roll, printed figures, columns of numerals, keys with numerals, brand name on the machine, nameplate, person in frame
+
+■ R117.png
+Rain running down the side window glass of a stationary car, photographed from inside the car at seat height with the glass filling the frame, the water breaking into long vertical runs and beads, the world beyond the glass dissolved into soft flat grey with no shape, edge or object resolving in it. The interior is dark vinyl and hard plastic of the early 1970s, the car is not moving and nobody is in it Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable signage beyond the glass, buildings, other vehicles, headlights, wipers in motion, person in frame, reflection of a face
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（このファイルは R112.png 〜 R117.png）で
+保存してください。**他のバッチの ID を使わないこと。**
+保存先 H:\pd-media\assets\ai\pinto\
+長辺 3840px 以上・16:9・PNG。

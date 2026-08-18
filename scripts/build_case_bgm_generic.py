@@ -141,7 +141,19 @@ def main() -> int:
         raise SystemExit(f"unknown slug {a.slug}")
     idx_p = ROOT / "episodes" / ep / "06_audio" / "narration_index.v001.json"
     vo = MEDIA / "episodes" / ep / "06_voice" / "master" / "vc_master_v001.mp3"
+    # SPEC v2 row 9 (binds from EP66): where the authoritative narration master sits on the
+    # video timeline. The composition reads `leadSeconds` from <slug>_film.json (see
+    # caseFilmLeadFrames in remotion/src/compositions/CaseFilm.tsx) and this remux MUST agree
+    # with it, or the master VO lands somewhere other than the burned captions. Absent -- which
+    # is every episode up to and including EP65 -- `off` stays `--hook-sec + OPENING_SEC`, the
+    # 11.5 s this script has always used, so their remuxes are unchanged. Tested with `is not
+    # None`, never truthiness: EP66 declares 0.0 and a falsy test would discard it.
     off = a.hook_sec + OPENING_SEC
+    _film_data = ROOT / "remotion" / "src" / "data" / f"{a.slug}_film.json"
+    if _film_data.exists():
+        _lead = json.loads(_film_data.read_text(encoding="utf-8")).get("leadSeconds")
+        if _lead is not None:
+            off = float(_lead)
 
     if not a.render.exists():
         print(f"MISSING render {a.render}", file=sys.stderr)

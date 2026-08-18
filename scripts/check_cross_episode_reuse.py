@@ -18,6 +18,7 @@ different filename in every film it is in. The key here is `(bytes, sha1 of the 
 from __future__ import annotations
 
 import argparse
+import glob
 import hashlib
 import json
 import subprocess
@@ -88,12 +89,41 @@ def load() -> dict:
     return json.loads(INDEX.read_text(encoding="utf-8"))["index"]
 
 
+def expand(paths: list[str]) -> tuple[list[str], list[str]]:
+    """Resolve wildcards HERE rather than trusting the shell to have done it.
+
+    Measured 2026-08-11: `--check <glob>` reports a clean "0 already used" that is a lie in
+    two different ways, and both are silent. If the pattern reaches this script unexpanded
+    (quoted, or run from a shell that does not glob) it is one non-existent path, and the old
+    loop printed a single "? missing file" line and then "0/1 already used". If the shell DOES
+    expand it past roughly five hundred files, the command line exceeds the OS limit and the
+    script never starts at all. Either way the caller reads zero duplicates and stages them.
+
+    So: patterns are expanded in-process, a pattern that matches nothing is an ERROR and not a
+    quiet skip, and `--check-list` exists so a list of any length never touches a command line.
+    """
+    resolved: list[str] = []
+    bad: list[str] = []
+    for s in paths:
+        if any(ch in s for ch in "*?["):
+            hits = sorted(glob.glob(s))
+            if not hits:
+                bad.append(s)
+            resolved.extend(hits)
+        else:
+            resolved.append(s)
+    return resolved, bad
+
+
 def check(paths: list[str]) -> int:
     idx = load()
+    paths, bad = expand(paths)
     hits = 0
+    missing: list[str] = []
     for s in paths:
         p = Path(s)
         if not p.is_file():
+            missing.append(s)
             print(f"  ?  missing file: {s}")
             continue
         k = key_of(p)
@@ -105,6 +135,13 @@ def check(paths: list[str]) -> int:
         else:
             print(f"  new   {p.name[:56]}")
     print(f"\n{hits}/{len(paths)} already used in a previous episode")
+    if bad or missing:
+        print(f"NOT A CLEAN RESULT: {len(bad)} pattern(s) matched nothing and {len(missing)} "
+              f"named path(s) do not exist, so those clips were NOT checked. Do not read this "
+              f"as 'no duplicates'.", file=sys.stderr)
+        for s in (bad + missing)[:5]:
+            print(f"  unchecked: {s}", file=sys.stderr)
+        return 1
     return 0
 
 
@@ -117,6 +154,9 @@ def main(argv: list[str]) -> int:
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--build", action="store_true")
     ap.add_argument("--check", nargs="*", default=[])
+    ap.add_argument("--check-list",
+                    help="file with one path per line. A list of any length is safe here; "
+                         "`--check <glob>` is not, past a few hundred files.")
     ap.add_argument("--check-query", help="run search_archive.py and check its results")
     ap.add_argument("--limit", type=int, default=24)
     ap.add_argument("--kind", default="video")
@@ -136,6 +176,9 @@ def main(argv: list[str]) -> int:
                  if l.strip() and Path(l.strip()).suffix.lower() in {".mp4", ".mov", ".webm"}]
         print(f"query '{a.check_query}': {len(paths)} candidates\n")
         return check(paths)
+    if a.check_list:
+        lines = [l.strip() for l in Path(a.check_list).read_text(encoding="utf-8").splitlines()]
+        return check([l for l in lines if l])
     if a.check:
         return check(a.check)
     ap.print_help()

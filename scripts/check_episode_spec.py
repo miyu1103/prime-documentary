@@ -17,10 +17,16 @@ So the rule this file enforces is the whole point of the layer:
 
     AN UNDECLARED VALUE IS AN ERROR. NOTHING IS INFERRED.
 
-It validates episodes/PD-*-<slug>/episode_spec.v001.json against
+It validates episodes/PD-*-<slug>/episode_spec.v<NNN>.json against
 schemas/episode_spec.v001.json -- the file exists, it parses, every required field is
 present, every type and array length is right, and episode_id/slug match the directory the
 spec sits in. It reads nothing else and touches the network never.
+
+REVISIONS. The spec is an approved artifact, so it is never edited in place; a correction is
+a new immutable revision (CLAUDE.md invariant 6, .claude/rules/12). spec_path() therefore
+resolves the HIGHEST episode_spec.vNNN.json present, and main() prints which one it used --
+because a correction nobody can see the tool reading is not a correction. Almost every
+episode has only v001 and resolves exactly as before.
 
     python scripts/check_episode_spec.py --slug flowers
 
@@ -37,9 +43,31 @@ SCHEMA = ROOT / "schemas" / "episode_spec.v001.json"
 SPEC_NAME = "episode_spec.v001.json"
 
 
+SPEC_GLOB = "episode_spec.v[0-9][0-9][0-9].json"
+
+
 def spec_path(epdir: Path) -> Path:
-    """Where this episode's machine contract lives. One name, no revision search."""
-    return epdir / SPEC_NAME
+    """Where this episode's machine contract lives -- the HIGHEST revision present.
+
+    This used to be one hard-coded name with the comment "one name, no revision search", and
+    that made the constitution's own revision rule unusable here. Invariant 6 says an approved
+    artifact is never overwritten and a correction is a NEW immutable revision; but every tool
+    reads the spec through this function, so a correctly-written episode_spec.v002.json was
+    invisible to all of them. A correction that no tool reads is worse than no correction: the
+    file says one thing, the pre-flight and the post-build gate measure another, and the
+    difference is silent. Measured 2026-08-12 while correcting EP66/EP67/EP69
+    distinct_video_assets (decisions/0009).
+
+    The glob is deliberately narrow -- `episode_spec.vNNN.json` and nothing else -- so the
+    in-place backups that are already sitting in episode directories
+    (`episode_spec.v001.json.bak_cutsec`, `.bak_batchB`) can never be picked up as a revision.
+    Sorting is on the integer, not the string, so v010 beats v009.
+
+    An episode with only v001 resolves to exactly the file it resolved to before.
+    """
+    revs = sorted(epdir.glob(SPEC_GLOB),
+                  key=lambda p: int(p.name.split(".v")[1].split(".")[0]))
+    return revs[-1] if revs else epdir / SPEC_NAME
 
 
 def find_episode(slug: str) -> tuple[Path | None, list[str]]:
@@ -110,10 +138,12 @@ def main() -> int:
         return 1
 
     assert spec is not None
+    _epdir, _ = find_episode(slug)
+    _rev = spec_path(_epdir).name if _epdir else "?"
     lo, hi = spec["runtime_seconds"]
     wl, wh = spec["script_words"]
     bl, bh = spec["figure_beats_per_act"]
-    print(f"[spec] {slug}: valid -- runtime {lo:.0f}-{hi:.0f}s, script {wl}-{wh} words, "
+    print(f"[spec] {slug}: valid [{_rev}] -- runtime {lo:.0f}-{hi:.0f}s, script {wl}-{wh} words, "
           f"{len(spec['section_vocabulary'])} sections, beats {bl}-{bh}/act, "
           f"{spec['distinct_video_assets']} distinct video assets, "
           f"{spec['people_plates_min']} people plates, "

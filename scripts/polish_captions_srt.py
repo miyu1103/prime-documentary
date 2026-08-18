@@ -28,7 +28,9 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import statistics
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -189,6 +191,16 @@ def move_dangling(cues: list[dict]) -> list[dict]:
 # clean line break inside the cue.
 HARD_CUE_CHARS = 84
 MAX_CUE_CHARS = HARD_CUE_CHARS
+# A cue may not stay on screen longer than this. check_final_acceptance.MAX_CUE_SECONDS is a
+# HARD 7.0 s and EP65 marmet failed acceptance on ONE 7.8 s cue -- produced here, not by the
+# aligner: this file re-segments from word tokens and takes the WIDEST window that fits the
+# character budget, so two short sentences separated by a designed hold or a section gap fold
+# into a single cue whose span covers the silence between them. Nothing in this file measured
+# time until now. 6.8 s leaves 0.2 s of margin under the gate. It can only ever make a cue
+# SHORTER, so it cannot introduce a violation of any other caption rule: a 2x50 cue is at most
+# 100 characters, and 100 / 6.8 = 14.7 cps, far under the 27 cps ceiling.
+MAX_CUE_SECONDS = 6.8
+GATE_CUE_SECONDS = 7.0        # the hard ceiling itself, used only by the final safety trim
 PHRASE_START = {"and", "or", "but", "so", "because", "that", "which", "who", "when", "while",
                 "after", "before", "until", "if", "though", "although", "as", "than", "with",
                 "without", "for", "from", "in", "into", "on", "at", "by", "to", "of"}
@@ -230,7 +242,14 @@ def _clean_break(toks: list[tuple[str, float, float]], i: int, n: int) -> int:
     j = i
     while j >= 0 and not ALPHA_RE.search(toks[j][0]):
         j -= 1
-    last_alpha = norm(toks[j][0].rstrip("\"'”’")) if j >= 0 else ""
+    # Use this file's own _last_word -- the SAME extraction check_caption_breaks._last_word
+    # performs -- rather than normalising the whole token. On "901(a)(2)" the whole-token form
+    # normalises to "901a2", which is not a function word, while both gates read the last
+    # alphabetic run "a", which IS one: the repairer allowed a break the gate then failed on
+    # (EP66 cue 322, "...Sections 303(c) and 901(a)(2)" | "of the Code violate..."). This makes
+    # the repairer STRICTER in exactly the direction the gate measures, so it can only ever
+    # remove a failure, never create one.
+    last_alpha = _last_word(toks[j][0]) if j >= 0 else ""
     if (norm(w) in NO_DANGLE_END or last_alpha in NO_DANGLE_END) and w[-1:] not in SOFT_END:
         return -1
     if w[-1:] in ".?!":
@@ -295,7 +314,13 @@ def polish(cues: list[dict]) -> list[dict]:
     while i < n:
         # widest window that still fits one cue
         j = i
-        while j + 1 < n and len(" ".join(t[0] for t in toks[i:j + 2])) <= MAX_CUE_CHARS:
+        while (j + 1 < n
+               and len(" ".join(t[0] for t in toks[i:j + 2])) <= MAX_CUE_CHARS
+               # ...and the cue must not outlast MAX_CUE_SECONDS on screen. Without this the
+               # window is widened on characters alone and happily swallows a 4-5 s designed
+               # hold (EP66) or a 1.8 s section gap, which is how a 74-character cue ends up
+               # 8.6 s long and fails check_caption_format.
+               and toks[j + 1][2] - toks[i][1] <= MAX_CUE_SECONDS):
             j += 1
         if j >= n - 1:
             j = n - 1
@@ -360,9 +385,112 @@ def polish(cues: list[dict]) -> list[dict]:
             c["start"] = toks[k][1]
             c["end"] = max(toks[k + n_words - 1][2], c["start"] + 0.25)
         k += n_words
+    # FINAL SAFETY. Nothing leaves this function longer than the gate allows. The window bound
+    # in the segmenter prevents nearly all of it, but merge_orphans may still fold a 1-2 word
+    # fragment across a designed hold -- and an orphan cue is a hard gate failure too, so the
+    # merge is kept and the cue END is trimmed instead. Trimming an end never moves a start:
+    # audio sync and the 0.60 s caption lead are untouched, the caption just leaves earlier.
+    for c in out:
+        if c["end"] - c["start"] > GATE_CUE_SECONDS:
+            c["end"] = round(c["start"] + MAX_CUE_SECONDS, 3)
     for c in out:
         c["text"] = "\n".join(wrap(" ".join(c["text"].split())))
     return out
+
+
+GATE_CPS = 27.0        # check_final_acceptance MAX_CPS -- the hard reading-speed ceiling
+CPS_MARGIN = 0.94      # aim under the gate so millisecond rounding cannot land back on it
+MIN_CUE_SECONDS = 0.8  # gen_captions_forced MIN_CUE_SECONDS; no cue may flash
+RUN_TOUCH_SECONDS = 0.35   # cues closer together than this are one contiguous run of speech
+
+
+def _chars(c: dict) -> int:
+    return sum(len(ln) for ln in c["text"].split("\n"))
+
+
+def rebalance_cps(cues: list[dict]) -> tuple[list[dict], int, int]:
+    """C. impossible reading speed -- give a starved cue its time back from inside its own run.
+
+    `check_final_acceptance.check_caption_format` hard-fails a cue whose chars/second exceeds
+    MAX_CPS 27.0. EP67 delivered four of them: 28, 34, 68 and 123 cps, the last being 69
+    characters in 0.562 s, which is not a speed any narrator produced. It is a forced-alignment
+    artefact -- whisper front-loads a long spelled-out number ("three thousand, nine hundred and
+    thirty-six dollars and eighty-eight cents") onto the words it is confident about and leaves
+    the tail almost no window, while the neighbouring cue inside the SAME narration chunk sits
+    at 8-11 cps with seconds to spare.
+
+    The repair takes the time from where it actually is. Around each violating cue this grows
+    the SHORTEST run of touching cues whose aggregate rate clears the gate, then re-divides that
+    run's own span in proportion to characters. Therefore:
+      * the run's first start and last end do not move -- nothing outside the run changes, the
+        0.60 s lead on the run's opening cue is preserved, and total coverage is identical;
+      * no text is rewritten, re-wrapped, or moved between cues, so caption_narration_match
+        cannot change (it compares tokens only);
+      * cues stay ordered, non-overlapping and inside MAX_CUE_SECONDS.
+    A cue already under the gate is never touched, so a file with no violation comes out
+    byte-identical -- verified against the shipped srts of EP62-EP66.
+    """
+    n = len(cues)
+    out = [dict(c) for c in cues]
+    fixed = unfixable = 0
+    i = 0
+    while i < n:
+        d = out[i]["end"] - out[i]["start"]
+        ch = _chars(out[i])
+        if d > 0 and ch / d <= GATE_CPS:
+            i += 1
+            continue
+        lo = hi = i
+        ok = False
+        # Grow outward one touching cue at a time and stop the moment the whole run can be read
+        # at the gate rate. The smallest run wins, so a local artefact stays local.
+        while True:
+            span = out[hi]["end"] - out[lo]["start"]
+            total = sum(_chars(c) for c in out[lo:hi + 1])
+            if span > 0 and total / span <= GATE_CPS * CPS_MARGIN:
+                ok = True
+                break
+            grew = False
+            if lo > 0 and out[lo]["start"] - out[lo - 1]["end"] <= RUN_TOUCH_SECONDS:
+                lo -= 1
+                grew = True
+            if hi + 1 < n and out[hi + 1]["start"] - out[hi]["end"] <= RUN_TOUCH_SECONDS:
+                hi += 1
+                grew = True
+            if not grew:
+                break
+        if not ok:
+            unfixable += 1
+            i += 1
+            continue
+        s, e = out[lo]["start"], out[hi]["end"]
+        span = e - s
+        k = hi - lo + 1
+        chars = [_chars(c) for c in out[lo:hi + 1]]
+        total = sum(chars)
+        floor = min(MIN_CUE_SECONDS, span / k)   # a run too short for the floor shares evenly
+        spare = span - floor * k
+        cur = s
+        for j, ch_j in enumerate(chars):
+            width = min(floor + (spare * ch_j / total if total else spare / k), MAX_CUE_SECONDS)
+            c = out[lo + j]
+            c["start"] = round(cur, 3)
+            cur = min(cur + width, e)
+            c["end"] = round(cur, 3)
+        out[hi]["end"] = round(e, 3)
+        fixed += k
+        i = hi + 1
+    return out, fixed, unfixable
+
+
+def cps_violations(cues: list[dict]) -> list[tuple[int, float]]:
+    """Indices and rates of every cue over the hard gate. Measurement, not repair."""
+    bad: list[tuple[int, float]] = []
+    for i, c in enumerate(cues):
+        d = c["end"] - c["start"]
+        if d <= 0 or _chars(c) / d > GATE_CPS:
+            bad.append((i, _chars(c) / d if d > 0 else float("inf")))
+    return bad
 
 
 def report(cues: list[dict]) -> tuple[int, int]:
@@ -372,27 +500,205 @@ def report(cues: list[dict]) -> tuple[int, int]:
     return orph, dang
 
 
+# ------------------------------------------------------------------ lead measurement
+# THE LEAD IS MEASURED OUT OF THE FILE. IT IS NEVER TRUSTED FROM A SIDECAR.
+#
+# captions.final.vNNN.lead.json is written HERE and read by nothing else, while
+# build_case_film_generic.write_srt REGENERATES the entire srt from narration_index.v001.json at
+# raw chunk timings on every film build and never touches that sidecar. _finish_episode.sh runs
+# the builder at step [4/7] and this polish at step [4b], in that order -- so after any film
+# rebuild the lead actually present in the srt is 0.0 while the sidecar still claims whatever it
+# last claimed. A hand-patched sidecar is correct for exactly one run and wrong after the next
+# build.
+#
+# Measured 2026-08-11 over the eight queued episodes: five sidecars disagreed with their own srt,
+# in BOTH directions -- greene claimed 0.25 with 0.0 in the file, correa 0.25 / 0.0, openfields
+# 0.6 / 0.0, hyatt 0.0 / 0.6. Captions are burned into the render; they cannot be fixed after it.
+#
+# So the lead is read out of the srt itself: for every narration chunk whose first word also
+# opens a cue, chunk start minus that cue start; the median of those pairs is the lead. The
+# sidecar is still written -- as a RECORD of what was measured. An output, never an input.
+LEAD_TOL = 0.05                  # a pair agrees with the median within this many seconds
+MIN_LEAD_MATCHES = 8             # ...and there must be at least this many pairs
+MIN_LEAD_MATCH_FRACTION = 0.25   # ...covering at least this share of the narration chunks
+MIN_LEAD_AGREE_FRACTION = 0.60   # ...of which at least this share agree with the median
+
+
+def narration_index_for(srt: Path) -> Path | None:
+    """<ep>/08_edit/captions.final.vNNN.srt -> <ep>/06_audio/narration_index.v*.json, latest."""
+    found = sorted((srt.parent.parent / "06_audio").glob("narration_index.v*.json"))
+    return found[-1] if found else None
+
+
+def _lead_words(text: str) -> list[str]:
+    return [w.lower() for w in WORD_RE.findall(text)]
+
+
+def measure_lead(cues: list[dict], narr: dict) -> tuple[float | None, dict]:
+    """How much lead is ALREADY baked into these cues, measured against the narration index.
+
+    Returns (lead, diagnostics). `lead` is None when it cannot be measured honestly, which is a
+    real defect and never a reason to substitute a constant: it means this srt does not belong to
+    this narration index. EP67 ramirez was exactly that on 2026-08-11 -- its v001 srt was written
+    before the script was extended, so it carries 4,070 of the narration index's 4,518 words and
+    ends 152.8 s early. A naive median over text-matched pairs calls that a 50.2 s "lead", and
+    applying it would drag every caption fifty seconds out of sync with the voice.
+
+    Two guards separate a lead from a structural offset:
+      * enough of the narration must line up (MIN_LEAD_MATCHES / MIN_LEAD_MATCH_FRACTION), and
+      * the offset must be CONSTANT (MIN_LEAD_AGREE_FRACTION within LEAD_TOL of the median).
+    A stale revision fails the first, because the word streams diverge after the first insertion;
+    a drifting alignment fails the second, because its offsets form a staircase, not a line.
+    """
+    cue_words: list[str] = []
+    opens: dict[int, int] = {}          # word index in the stream -> the cue that starts there
+    for i, c in enumerate(cues):
+        opens.setdefault(len(cue_words), i)
+        cue_words.extend(_lead_words(c["text"].replace("\n", " ")))
+    narr_words: list[str] = []
+    deltas: list[float] = []
+    chunks = 0
+    for ch in narr.get("chunks", []):
+        words = _lead_words(str(ch.get("text") or ch.get("spoken_text") or ""))
+        if not words:
+            continue
+        chunks += 1
+        pos = len(narr_words)
+        narr_words.extend(words)
+        i = opens.get(pos)
+        if i is None:
+            continue                    # this chunk starts mid-cue: nothing to compare it to
+        k = min(4, len(words))
+        if cue_words[pos:pos + k] != words[:k]:
+            continue                    # the two word streams have drifted apart by here
+        deltas.append(round(float(ch["start"]) - cues[i]["start"], 3))
+    diag: dict = {"narration_chunks": chunks, "narration_words": len(narr_words),
+                  "cue_words": len(cue_words), "matched_pairs": len(deltas),
+                  "streams_identical": cue_words == narr_words}
+    if not deltas:
+        diag["reason"] = ("not one narration chunk opens a cue -- this srt does not belong to "
+                          "this narration index")
+        return None, diag
+    med = round(statistics.median(deltas), 3)
+    agree = sum(1 for d in deltas if abs(d - med) <= LEAD_TOL)
+    diag.update({"median": med, "agree": agree,
+                 "agree_fraction": round(agree / len(deltas), 3),
+                 "min": min(deltas), "max": max(deltas)})
+    if len(deltas) < max(MIN_LEAD_MATCHES, MIN_LEAD_MATCH_FRACTION * chunks):
+        diag["reason"] = (f"only {len(deltas)} of {chunks} narration chunks line up with a cue "
+                          f"start -- this srt does not belong to this narration index")
+        return None, diag
+    if agree / len(deltas) < MIN_LEAD_AGREE_FRACTION:
+        diag["reason"] = (f"the offset is not a constant lead: only {agree} of {len(deltas)} "
+                          f"matched pairs sit within {LEAD_TOL}s of the median {med}s")
+        return None, diag
+    return med, diag
+
+
+def aligned_sibling(srt: Path, narr: dict) -> Path | None:
+    """A caption revision beside this one that DOES line up with this narration index.
+
+    When the srt handed to this tool is stale, the useful thing to say is not "it is stale" but
+    "vNNN next to it is the one the narration matches".
+    """
+    for p in sorted(srt.parent.glob("captions.final.v*.srt"), reverse=True):
+        if p.resolve() == srt.resolve():
+            continue
+        try:
+            lead, _ = measure_lead(read_srt(p), narr)
+        except Exception:  # noqa: BLE001
+            continue
+        if lead is not None:
+            return p
+    return None
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--srt", required=True)
     ap.add_argument("--film", help="film JSON whose captions[] should match the polished srt")
     ap.add_argument("--lead", type=float, default=0.0,
-                    help="shift every cue earlier by N seconds (caption_sync: late cues)")
+                    help="the lead this srt must END UP with, in seconds. A DESTINATION, not an "
+                         "increment: the lead already present is measured against the narration "
+                         "index and only the difference is applied.")
+    ap.add_argument("--narr", help="narration index to measure the lead against (default: the "
+                                   "latest <ep>/06_audio/narration_index.v*.json)")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
     srt = Path(a.srt)
     cues = read_srt(srt)
     before = report(cues)
     fixed = polish(cues)
-    if a.lead > 0:
-        # The cues are CONTIGUOUS (each starts where the last ends), so clamping a lead to the
-        # previous cue's end silently did nothing -- EP51 measured the identical p90 +0.370s
-        # before and after "applying" a 0.15s lead. Slide the whole track instead: start AND
-        # end move together, so a cue is on screen slightly before its words are spoken.
+    # THE LEAD IS A DESTINATION, NOT AN INCREMENT, AND IT IS MEASURED RATHER THAN REMEMBERED.
+    #
+    # This block used to subtract `--lead` from every start on every run, and _finish_episode.sh
+    # step 4b runs it every time an episode is finished -- so a second finish shifted the whole
+    # track another 0.25 s early, a third another 0.25 s, with nothing recording that it had
+    # happened. The first repair recorded the applied lead in a sidecar and applied only the
+    # difference. That sidecar then went stale, because step [4/7] rebuilds the srt from the
+    # narration index at raw chunk timings on every film build and does not know the sidecar
+    # exists: measured 2026-08-11, five of the eight queued episodes had a sidecar that
+    # disagreed with their own srt, in both directions.
+    #
+    # The lead present in the file is now MEASURED (see measure_lead above) and only the
+    # difference from the requested value is applied. Any number of runs converges on the
+    # requested lead, whatever happened to the file in between, and a second run in a row shifts
+    # exactly 0.0.
+    applied_path = srt.with_suffix(".lead.json")
+    narr_p = Path(a.narr) if a.narr else narration_index_for(srt)
+    if narr_p is None or not narr_p.is_file():
+        looked = srt.parent.parent / "06_audio"
+        print(f"lead: CANNOT MEASURE -- no narration_index.v*.json under {looked}. The lead is "
+              f"measured against the narration, never assumed. Pass --narr.", file=sys.stderr)
+        return 1
+    narr = json.loads(narr_p.read_text(encoding="utf-8"))
+    measured, diag = measure_lead(fixed, narr)
+    if measured is None:
+        print(f"lead: CANNOT MEASURE -- {diag.get('reason')}", file=sys.stderr)
+        print(f"      {json.dumps(diag, ensure_ascii=False)}", file=sys.stderr)
+        print(f"      srt {srt}", file=sys.stderr)
+        print(f"      narration index {narr_p}", file=sys.stderr)
+        alt = aligned_sibling(srt, narr)
+        if alt is not None:
+            print(f"      {alt.name} in the same directory DOES line up with this narration "
+                  f"index. If that is the revision the film was built from, polish THAT file.",
+                  file=sys.stderr)
+        return 1
+    delta = round(a.lead - measured, 3)
+    if delta:
         for c in fixed:
             # START only. Moving the END earlier as well shortened every cue by the lead and
             # tripped caption_coverage (EP53, 20/304 chunks under 80% of their chunk span).
-            c["start"] = round(max(0.0, c["start"] - a.lead), 3)
+            #
+            # But moving a start earlier LENGTHENS the cue by the lead, and polish() already ran
+            # its own MAX_CUE_SECONDS safety trim before this point, so it cannot see the result.
+            # Measured 2026-08-11 on EP66 openfields: a 6.7 s cue plus a 0.6 s lead became 7.3 s
+            # and would have hard-failed check_caption_format (MAX_CUE_SECONDS 7.0) on a single
+            # cue -- exactly the way EP65 marmet failed acceptance once before. So a start is
+            # never dragged earlier than MAX_CUE_SECONDS before its own end. That cue simply
+            # takes less lead; it is not cut short, and no other cue is affected.
+            want = max(0.0, c["start"] - delta)
+            if delta > 0:
+                want = min(c["start"], max(want, c["end"] - MAX_CUE_SECONDS))
+            else:
+                # a NEGATIVE delta pushes captions LATER, which measuring the lead rather than
+                # remembering it makes possible for the first time; it must not invert a cue
+                want = min(want, c["end"] - 0.05)
+            c["start"] = round(want, 3)
+    print(f"lead: measured {measured}s in {srt.name} over {diag['matched_pairs']} of "
+          f"{diag['narration_chunks']} narration chunks, requested {a.lead}s -> shifting {delta}s")
+    # C. impossible reading speed. Runs AFTER the lead shift, because the shift moves whole cues
+    # and the rebalance divides a run's span -- doing it in the other order would let the shift
+    # re-starve a cue this just repaired. A file with no violation is untouched.
+    pre = cps_violations(fixed)
+    if pre:
+        fixed, moved, stuck = rebalance_cps(fixed)
+        post = cps_violations(fixed)
+        worst_pre = max(r for _, r in pre)
+        worst_post = max((r for _, r in post), default=0.0)
+        print(f"cps: {len(pre)} cue(s) over the {GATE_CPS:.0f} gate (worst {worst_pre:.0f}) -> "
+              f"{len(post)} (worst {worst_post:.0f}); re-divided {moved} cue(s) inside their own "
+              f"runs, {stuck} had no run that clears the gate")
     after = report(fixed)
     print(f"cues {len(cues)} -> {len(fixed)} | orphans {before[0]} -> {after[0]} | "
           f"dangling {before[1]} -> {after[1]}")
@@ -401,7 +707,28 @@ def main() -> int:
     srt.write_text("\n".join(
         f"{i}\n{ts(c['start'])} --> {ts(c['end'])}\n{c['text']}\n"
         for i, c in enumerate(fixed, 1)), encoding="utf-8")
+    final_lead, final_diag = measure_lead(fixed, narr)
+    applied_path.write_text(json.dumps({
+        "applied_lead": final_lead,
+        "requested_lead": a.lead,
+        "measured_before": measured,
+        "shifted": delta,
+        "srt": srt.name,
+        "narration_index": narr_p.name,
+        "matched_pairs": final_diag.get("matched_pairs"),
+        "narration_chunks": final_diag.get("narration_chunks"),
+        "unmeasurable_reason": final_diag.get("reason"),
+        "measured_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+        "why": ("RECORD ONLY -- nothing reads this file back, and nothing should. applied_lead "
+                "is MEASURED out of the srt that was just written: for every narration chunk "
+                "whose first word opens a cue, chunk start minus cue start, median. It used to "
+                "be an INPUT to the next run, and build_case_film_generic.write_srt rebuilds the "
+                "srt at raw chunk timings on every film build without updating it, so it went "
+                "stale on five of eight episodes at once and a hand-patched value would have "
+                "been correct for a single run."),
+    }, indent=2) + "\n", encoding="utf-8")
     print(f"WROTE {srt}")
+    print(f"WROTE {applied_path.name} (measured applied_lead {final_lead})")
     if a.film:
         fp = Path(a.film)
         d = json.loads(fp.read_text(encoding="utf-8"))

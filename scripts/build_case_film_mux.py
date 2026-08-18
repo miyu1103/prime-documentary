@@ -83,6 +83,18 @@ AAC_BITRATE = "320k"
 SAMPLE_RATE = "48000"
 CHANNELS = "2"
 
+# FRESHNESS GUARD (added 2026-08-11). The mix WAV and the video render are derived from the SAME
+# narration_index, so a freshly built pair agree on duration to within a frame or two. When they
+# do NOT agree, the WAV on disk was built from a DIFFERENT (older) narration: muxing it puts the
+# VO out of step with the burned-in captions, and `-shortest` truncates whichever side is longer,
+# so a short mix would cut the picture as well. This is not hypothetical -- measured 2026-08-11,
+# every mix sitting on disk for EP62-65 was stale against its own shipped render:
+#     greene +23.2 s   correa +29.0 s   memphis +115.0 s   marmet +15.9 s
+# Muxing those would have desynchronised four finished films while turning the ship gate green.
+# Stamping audio_mix_sha256 asserts "this audio IS that built mix"; the guard makes sure that mix
+# also belongs to THIS render. Override only with --allow-duration-drift, and say why.
+MAX_MIX_VIDEO_DRIFT_SEC = 2.0
+
 
 # ============================================================================
 # helpers
@@ -162,6 +174,18 @@ def probe_format_tag(path: Path, tag: str) -> Optional[str]:
         return None
 
 
+def probe_duration(path: Path) -> Optional[float]:
+    """Container/stream duration in seconds, or None if it cannot be read."""
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "default=nw=1:nk=1", str(path)],
+            capture_output=True, text=True, check=False)
+        return float(out.stdout.strip())
+    except Exception:  # noqa: BLE001
+        return None
+
+
 def find_prior_mux(ep_audio_dir: Path, video_sha: Optional[str], mix_sha: Optional[str]) -> Optional[dict]:
     """Idempotency: a prior receipt that muxed the SAME video sha + mix sha AND whose
     output file still exists. Returns that receipt dict, else None."""
@@ -196,6 +220,12 @@ def main() -> int:
     ap.add_argument("--video", required=True, help="the case-film video render (.mp4)")
     ap.add_argument("--audio", help="mix WAV (default: resolved from audio_provenance)")
     ap.add_argument("--provenance", help="audio_provenance JSON (default: latest audio_provenance.v*.json)")
+    ap.add_argument("--out", help="explicit output .mp4 (default: <video_dir>/<ep>_film.muxed.v{NNN}.mp4). "
+                                  "Never overwrites: an existing path is refused.")
+    ap.add_argument("--allow-duration-drift", action="store_true",
+                    help=f"proceed even when the mix WAV and the video differ by more than "
+                         f"{MAX_MIX_VIDEO_DRIFT_SEC:.1f}s (a STALE mix -- desynchronised VO). "
+                         f"Requires a recorded owner deviation; not for routine use.")
     ap.add_argument("--dry-run", action="store_true",
                     help="print resolved paths + ffmpeg command; write nothing, run no ffmpeg")
     args = ap.parse_args()
@@ -255,7 +285,13 @@ def main() -> int:
     ep_audio_dir = ep_dir / "06_audio"
     version = next_version(ep_audio_dir, video_dir, slug)
     out_name = f"{slug}_film.muxed.v{version:03d}.mp4"
-    out_path = video_dir / out_name
+    # --out lets a caller keep the pipeline's delivered filename (08_edit/<slug>_final_bgm.v001.mp4)
+    # while still producing it through THIS tool, so the deliverable carries the mix sha tag.
+    # It never overwrites (CLAUDE invariant 6); the receipt still gets its own free version.
+    out_path = Path(args.out) if args.out else video_dir / out_name
+    if args.out and out_path.exists() and not args.dry_run:
+        print(f"ERROR: --out already exists, refusing to overwrite: {out_path}", file=sys.stderr)
+        return 2
     receipt_path = ep_audio_dir / f"mux_receipt.v{version:03d}.json"
 
     # ---- assemble the ffmpeg mux command -------------------------------------
@@ -317,6 +353,35 @@ def main() -> int:
         print("ERROR: could not determine the mix sha to stamp (provenance mix.sha256 is null "
               "and the WAV could not be hashed).", file=sys.stderr)
         return 2
+
+    # ---- FRESHNESS: does this mix belong to THIS render? ---------------------
+    # The tag we are about to stamp asserts the delivered audio IS the built 4-layer mix. That
+    # claim is only useful if the mix was built from the same narration as the picture. A
+    # duration disagreement is the cheap, direct proof that it was not (see MAX_MIX_VIDEO_DRIFT_SEC).
+    video_dur = probe_duration(video_path)
+    mix_dur = probe_duration(audio_path)
+    drift = (abs(mix_dur - video_dur) if (mix_dur is not None and video_dur is not None) else None)
+    if drift is None:
+        print("ERROR: could not measure the video and/or mix duration, so the mix cannot be shown "
+              f"to belong to this render (video={video_dur}, mix={mix_dur}).", file=sys.stderr)
+        return 2
+    print(f"freshness      : video {video_dur:.3f}s vs mix {mix_dur:.3f}s -> drift {drift:.3f}s "
+          f"(limit {MAX_MIX_VIDEO_DRIFT_SEC:.1f}s)")
+    if drift > MAX_MIX_VIDEO_DRIFT_SEC and not args.allow_duration_drift:
+        print(f"ERROR: the mix WAV is STALE for this render -- it differs by {drift:.1f}s "
+              f"(limit {MAX_MIX_VIDEO_DRIFT_SEC:.1f}s).\n"
+              f"       video: {video_dur:.3f}s  {video_path}\n"
+              f"       mix  : {mix_dur:.3f}s  {audio_path}\n"
+              "       That WAV was built from a DIFFERENT narration_index, so muxing it would put\n"
+              "       the VO out of step with the burned-in captions while the ship gate turned\n"
+              "       green. Rebuild the mix against the CURRENT narration first:\n"
+              f"       py -3.11 scripts/build_case_film_audio.py --ep {ep} --revision vNNN --render\n"
+              "       (use the next free revision so the existing provenance is not overwritten).",
+              file=sys.stderr)
+        return 2
+    if drift > MAX_MIX_VIDEO_DRIFT_SEC:
+        print(f"WARNING: proceeding with a {drift:.1f}s STALE mix because --allow-duration-drift "
+              "was given; the VO will not line up with the captions.", file=sys.stderr)
 
     # ---- idempotency: same video + same mix already muxed? -------------------
     video_sha = sha256_file(video_path)
@@ -392,6 +457,16 @@ def main() -> int:
         "ffmpeg": {
             "command": command_str,
             "mux_map": "-map 0:v:0 -map 1:a:0 (mix WAV is the SOLE audio; video's own audio dropped)",
+        },
+        "freshness": {
+            "video_duration_sec": round(video_dur, 3),
+            "mix_duration_sec": round(mix_dur, 3),
+            "drift_sec": round(drift, 3),
+            "limit_sec": MAX_MIX_VIDEO_DRIFT_SEC,
+            "within_limit": drift <= MAX_MIX_VIDEO_DRIFT_SEC,
+            "override_used": bool(args.allow_duration_drift),
+            "note": ("proves the muxed mix was built from the same narration as the picture; a "
+                     "stale mix desynchronises the VO from the burned-in captions"),
         },
         "deterministic": True,
         "side_effects": {

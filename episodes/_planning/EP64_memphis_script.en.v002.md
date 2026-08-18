@@ -64,7 +64,7 @@ In a footnote, the Court quotes the brief filed by the Crafts' own lawyers. Not 
 
 That is the Crafts' account, and the Court printed it.
 
-The body says the meters. The footnote says the accounts. The record does not agree with itself about whose mistake this was. The Court never resolves it.
+Whose mistake was it? The body says the meters. The footnote says the accounts. The record does not agree with itself, and the Court never resolves it.
 
 That shape returns twice more.
 
@@ -106,7 +106,7 @@ The utility argued at first that its termination policies were not government ac
 
 The utility itself was dismissed out, because a municipality or governmental unit standing in that capacity is not a person within the meaning of section 1983. What remained were individuals, sued in both their official and personal capacities: the president and general manager, the vice president, members of the Board of Commissioners, and two employees who have had responsibility for terminating utility services.
 
-The District Court set it out in four steps, and this is the clock the family on Alaska Street was living on.
+The District Court set it out in four steps. This is the clock the family on Alaska Street was living on, but none of the four says where a disputed bill goes.
 
 Approximately four days after a meter reading date, a bill is mailed to the service location. The last day to pay the net amount would be approximately 20 days after the meter reading date.
 
@@ -144,11 +144,9 @@ Four rungs, and the right to bring somebody with you.
 
 In March 1973 the utility began an extended payment plan, which the trial judge called a generous program. Customers able to demonstrate financial hardship could pay only one-half of a past due bill, with the balance in equal installments over the next three bills. The plaintiffs in this action were participants in the plan.
 
-Whatever else this case is, it is not a case about a utility that offered nothing.
+Whatever else this case is, it is not a case about a utility that offered nothing. So what was missing?
 
 And this is what the notice itself said. The final notice contained in MLG&W's bills simply stated that payment was overdue and that service would be discontinued if payment was not made by a certain date. The Court of Appeals put it more bluntly. The MLG&W notice only warned the customer to pay or face termination.
-
-Pay or face termination.
 
 There were flyers too, folded in with the final notice, and there were two different ones.
 
@@ -168,7 +166,7 @@ William T. Mullen, secretary-treasurer of MLG&W, testified that the utility proc
 
 He conceded, however, that no description of a dispute resolution process was ever distributed to the utility's customers, and there is no indication in the record that a written account of such a procedure was accessible to customers who had complaints about their bills.
 
-The ladder was never written down.
+So where was the ladder written down?
 
 The Court finished the thought in the same footnote. Mrs. Craft's case reveals that the opportunity to invoke that procedure, if it existed at all, depended on the vagaries of word of mouth referral.
 
@@ -232,7 +230,7 @@ The Court put it plainly. Respondents' claim for actual and punitive damages ari
 
 ## ACT_4 (14:51–21:18)
 
-The first question is whether a city utility customer holds anything the Constitution recognises as property.
+Does a city utility customer hold anything the Constitution recognises as property? That is where the Court starts.
 
 State law creates the interest. Federal constitutional law decides whether it rises to a legitimate claim of entitlement.
 
@@ -282,7 +280,7 @@ On the cost: nor should some kind of hearing prove burdensome. The opportunity f
 
 The utility had one argument left. Petitioners contend that the available common-law remedies of a pretermination injunction, a post-termination suit for damages, and post-payment action for a refund are sufficient to cure any perceived inadequacy in MLG&W's procedures.
 
-The Court noted it had been advanced only obliquely below, and answered in three moves.
+Why not just sue afterwards? The Court noted it had been advanced only obliquely below, and answered in three moves.
 
 First. Although utility service may be restored ultimately, the cessation of essential services for any appreciable time works a uniquely final deprivation.
 
@@ -308,7 +306,7 @@ And petitioners would retain the option to terminate service after affording thi
 
 Retain the option to terminate. After affording the opportunity. After concluding the amount was justly due.
 
-The meter reader stays. The four-day final notice stays. The thirty-day clock stays. What is added is three items on the page, and a designated employee obliged to hear the answer before the clock runs out.
+The meter reader stays. The four-day final notice stays. The thirty-day clock stays. What is added is three items on the page, and a designated employee obliged to hear the answer.
 
 Then the list of things the Court did not decide.
 
@@ -344,7 +342,7 @@ Five times, said the majority. Several occasions, said the dissent.
 
 【callback: the telephone from the cold open】
 
-Mary Craft telephoned after a final notice and said she had paid a bill, and the trial judge wrote that she was given no satisfaction. The dissent read the same record.
+The trial judge wrote that when she called after that final notice, she was given no satisfaction. The dissent read the same record.
 
 She was successful in working out a deferred-payment arrangement but apparently was unable to have the amount of the bills reduced. The record therefore indicates that Mrs. Craft did meet with Division employees having adequate authority but simply failed to persuade any of them that there was any error in her bills.
 
@@ -352,7 +350,7 @@ She was successful in working out a deferred-payment arrangement but apparently 
 
 Mrs. Craft testified on direct examination that after being cut off she went to the Division's office with the record of her payments on one account. She was told that she had to pay on the other account as well. In other words, an official of the Division did resolve the Crafts' dispute, correctly as it turned out.
 
-Same sentence. Same office.
+Same sentence. Same office. Which of them was right?
 
 The majority answered that in a single line. The dissent advances its own reading of the record in this case, but offers no justification for sidestepping the determinations made below.
 
@@ -370,7 +368,7 @@ Although the Division's terminations number about 2,000 each month, the record d
 
 And then the dilemma. A potential loss of utility service sufficiently grievous to qualify as a constitutional deprivation can hardly be too petty to justify invoking the aid of counsel or the judiciary. Conversely, routine billing disputes too petty for the bench or the bar can hardly merit extraordinary constitutional protection.
 
-That is the dissent's question to the majority.
+Which is it? That is the dissent's question to the majority.
 
 Against the majority's picture of a household priced out of a lawyer, he noted that the Crafts' dispute involved only a relatively small amount, but they did obtain counsel and thereafter they encountered no billing problems.
 
@@ -388,17 +386,17 @@ That is where the two opinions stop describing the same woman.
 
 Two bills came to one house, and the second was addressed in a name one letter different from the man who lived there. The record never settled who put it there. A footnote quoting the Crafts' own brief says the utility failed to combine the two accounts. The body of the opinion says a contractor the Crafts hired failed to consolidate the meters. Both sentences are printed in the same opinion, and the Court chose neither.
 
-An employee of uncertain authority told Mrs. Craft she had to pay on the other bill as well. The majority prints that as a brush-off, apparently without explanation or attempt at investigation. The dissent prints it as an official of the Division resolving the dispute, correctly as it turned out. Same sentence. Same office.
+Pay on the other bill as well, an employee of uncertain authority told her. The majority prints that as a brush-off, made without explanation and without any attempt to investigate. The dissent prints it as an official of the Division resolving a dispute, correctly as it turned out.
 
-Five terminations, said the majority. Several occasions, said the dissent. The opinion gives no month, no duration and no figure for any of them.
+The majority counted five terminations; the dissent called them several occasions. The opinion gives no month, no duration and no figure for any of them.
 
 Nor did anyone settle the money. Possible gas overcharges, said the trial court. Genuinely independent accounts, said the dissent. The Supreme Court expressed no opinion and sent the question back down. No damages were awarded here. No court found that the bill was wrong.
 
-Behind the notice there was a procedure, as the District Court described it. Credit counselors, the chief clerk, the supervisor, the Board of Commissioners. Thirty-three thousand high bill complaints in one year. A telephone number printed on the notice, answered, in the dissent's account, by thirty or forty people who could each delay the cutoff by three days. No description of any of it was ever distributed to customers, and the record does not establish which flyer reached Alaska Street.
+Behind the notice there was a procedure, as the District Court described it. Credit counselors, the chief clerk, the supervisor, the Board of Commissioners. Thirty-three thousand complaints about high bills in one year. A telephone number printed on the notice, answered, in the dissent's account, by thirty or forty people who could each delay the cutoff by three days. No description of any of it was ever distributed to customers, and the record does not establish which flyer reached Alaska Street.
 
-What the case added is three items and one obligation. Where. During which hours of the day. And before whom. And a designated employee empowered to review disputed bills and rectify error, obliged to hear the complaint before the meter reader arrives.
+What the case added is three items and one obligation. Where. What hours. Before whom. And a designated employee with the power to correct the bill, obliged to hear the complaint before the meter reader arrives.
 
-And after that, the meter reader may still arrive. Petitioners, the Court wrote, would retain the option to terminate service after affording this opportunity and concluding that the amount billed was justly due. Bill at about day four. Net due at about day twenty. Final notice at about day twenty-four, giving four days. Then the meter reader. About five days after that, everything else.
+And after that, the meter reader may still arrive. The option to terminate survives the hearing: hear the complaint, then decide the money is owed, then cut the service. Bill at about day four. Net due at about day twenty. Final notice at about day twenty-four, giving four days. Then the meter reader. About five days after that, everything else.
 
 【callback: the telephone】
 

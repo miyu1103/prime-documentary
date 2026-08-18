@@ -43,7 +43,7 @@ for slug in "$@"; do
     ok+=("$slug(existing)"); continue
   fi
   # expected duration straight from the film the render will consume
-  expect=$(py -3.11 -c "import json;d=json.load(open(r'$film',encoding='utf-8'));print(round(d['narrationSeconds']+d['hookSeconds']+3.5+9.0,1))")
+  expect=$(py -3.11 -c "import json;d=json.load(open(r'$film',encoding='utf-8'));lead=d['leadSeconds'] if d.get('leadSeconds') is not None else d['hookSeconds']+3.5;print(round(d['narrationSeconds']+lead+9.0,1))")
   echo "[queue] === $slug -> $comp ($expect s) $(date) ===" | tee -a "$LOG"
   bash scripts/pd_render_guarded.sh "$comp" "$film" "$pub" "$out" "$expect" >> "$LOG" 2>&1
   rc=$?

@@ -33,11 +33,15 @@ Hard checks (block the final):
                          and (if film-data present) the render carries a real
                          cold-open hook -- reads the artifact, not a self-asserted
                          four_part_structure bool.
-  - op_ed_bookends     : the episode composition uses the canonical BrandOpening +
-                         BrandEndcard from components/Bookends (no off-brand OP/ED).
+  - op_ed_bookends     : an opening and an end-card are REALLY PLACED in this episode's
+                         timeline -- the canonical BrandOpening/BrandEndcard must be the
+                         components used (necessary), and the film json's own numbers must
+                         put a non-empty opening window and end-card window on the clock
+                         (decisive). leadSeconds 0 with no openingVariant is RED.
   - runtime_band       : finished runtime within the episode's duration profile
-                         (standard 11.5-12.5 / mid 27-33 / feature 55-65 min),
-                         read from manifest.target_duration_minutes.
+                         (standard 11.5-12.5 / mid 27-33 / feature 55-65 min), read from
+                         04_scenes/remotion_plan.v*.json motion_budget.runtime_band_seconds,
+                         else the manifest.target_duration_minutes bucket.
   - render_resolution  : video stream >= 1920x1080 (catches a low-res / not-max
                          quality export).
   - images_present     : no excessive black (a "no images" / placeholder render
@@ -122,7 +126,16 @@ MAX_FREEZE_TOTAL_S = 8.0
 LOW_MOTION_NOISE_DB = -38.0                      # freezedetect noise tolerance (higher => catches slow motion)
 LOW_MOTION_MIN_SPAN_S = 0.8                      # a near-still stretch must last this long to count
 LOW_MOTION_MAX_FRACTION = 0.10                   # >10% of runtime near-still => too little animation
-LOW_MOTION_MAX_SPAN_S = 3.0                      # any single near-still hold beyond this fails
+# 2026-08-11: was 3.0, with no derivation recorded -- the 10% fraction two lines up carries its
+# calibration (MotionSample 5.5%, slideshow 14.4%) and this did not. It also contradicted
+# MAX_FREEZE_LONGEST_S = 4.0 nine lines above, which tolerates ONE designed hold: the file allowed a
+# FULLY frozen 4.0s beat and failed a NEAR-still 3.1s one. Measured across the shipped, owner-viewed
+# films the longest holds run 0.0 / 0.6 / 2.1 / 3.1 / 3.2 / 3.5 / 3.6 / 3.7 / 3.8 / 4.0 s -- no
+# cliff at 3.0. It cost three owner round-trips (EP62 3.7s, EP63 3.8s, EP64 3.1s), each approved,
+# each for a sub-second overrun on a film whose near-still VOLUME was 1.2-3.3% against a 10% cap.
+# Aligned to the freeze cap it was already contradicting. The 10% fraction is untouched and remains
+# the real 紙芝居 guard.
+LOW_MOTION_MAX_SPAN_S = 4.0                      # one designed hold, same as MAX_FREEZE_LONGEST_S
 # animation_density measures BODY dynamism (hook + acts). The canonical brand bookends are
 # DESIGNED-calm brand moments, not body content, and must not be scored as "紙芝居": the gold
 # BrandOpening title (OPENING_SEC) and the BrandEndcard outro/CTA (ENDCARD_SEC). Excluding
@@ -537,13 +550,57 @@ def _resolve_bookends_comp(epdir: Path, cdir: Path) -> Path | None:
                  and not re.search(r"thumbnails?\.tsx$", p.name, re.IGNORECASE)), None)
 
 
+def _tsx_const(path: Path, name: str) -> float | None:
+    """Read `export const <name> = <number>;` out of a .tsx file.
+
+    The gate reads the renderer's own constants instead of keeping a copy of them, so a change
+    to OPENING_SEC or to the overlay offset cannot make the gate and the film disagree while
+    both look right."""
+    if not path.is_file():
+        return None
+    m = re.search(rf"export const {re.escape(name)}\s*=\s*(-?[0-9]+(?:\.[0-9]+)?)\s*;",
+                  path.read_text(encoding="utf-8", errors="ignore"))
+    return float(m.group(1)) if m else None
+
+
+def _sequence_guarded(blob: str, seq_name: str) -> bool:
+    """True when `<Sequence ... name="<seq_name>">` is rendered behind a `{cond && (` guard.
+
+    This is exactly the shape that hid the EP66 defect: `{bookendsInFront && (<Sequence
+    name="Opening">...` reads as "the opening is in the composition" to a string search and
+    renders nothing when the condition is false."""
+    m = re.search(rf'<Sequence[^>]*name=\{{?["\'`]{re.escape(seq_name)}["\'`]', blob)
+    if not m:
+        return False
+    before = blob[:m.start()].rstrip().splitlines()
+    return bool(before) and re.search(r"&&\s*\($", before[-1].strip()) is not None
+
+
 def check_bookends(epdir: Path) -> dict:
-    """HARD: OP/ED must be the canonical channel bookends (BrandOpening +
-    BrandEndcard from components/Bookends), not a per-episode reinvention.
-    For a data-driven CaseFilm episode inspects the real shared renderer
-    (CaseFilm.tsx); otherwise resolves the slug-named composition (thumbnail
-    stills excluded) and follows one import hop into the shared renderer
-    (CaseFilm / CasePremiumFromRoughCut) when the composition delegates to it."""
+    """HARD: an opening AND an end-card must be REALLY PLACED in this episode's timeline.
+
+    WHAT THIS USED TO BE, AND WHY IT WAS REPLACED (2026-08-10). It grepped the composition tsx
+    for the strings 'components/Bookends', 'BrandOpening' and 'BrandEndcard'. Every data-driven
+    episode shares the SAME CaseFilm.tsx, which contains all three unconditionally, so the check
+    returned green for every episode regardless of what its film did -- and it returned green on
+    EP66's first film, where `leadSeconds: 0` made CaseFilm's `bookendsInFront` false so that
+    NEITHER the hook montage's brand card nor <BrandOpening> rendered at all. The episode would
+    have shipped with no channel opening while this check said the bookends were canonical.
+    CLAUDE 4.6: a check that has never been shown to fail is decoration.
+
+    WHAT IT IS NOW. The string test survives as a NECESSARY condition -- the canonical
+    components must still be the ones imported, no per-episode reinvention. The DECISIVE test is
+    the data: this reproduces CaseFilm.tsx's own placement arithmetic from <slug>_film.json,
+    using constants read out of the tsx rather than copied, and requires
+
+      * a non-empty OPENING window, either the full-screen card (lead >= hook + OPENING_SEC) or
+        the lower band (openingVariant 'overlay', which the composition must actually support),
+        lying inside the film; and
+      * a non-empty END-CARD window at the tail, rendered unguarded.
+
+    A film with `leadSeconds: 0` and no `openingVariant` therefore comes out RED, which is the
+    state this function previously called green.
+    """
     slug = re.sub(r"^PD-\d{4}-\d{3}-", "", epdir.name)
     cdir = ROOT / "remotion" / "src" / "compositions"
     comp = _resolve_bookends_comp(epdir, cdir)
@@ -558,11 +615,86 @@ def check_bookends(epdir: Path) -> dict:
     has_import = "components/Bookends" in blob
     has_open = "BrandOpening" in blob
     has_end = "BrandEndcard" in blob
-    ok = has_import and has_open and has_end
-    return {"check": "op_ed_bookends", "ok": ok, "hard": True,
-            "reason": (f"{comp.name} uses canonical BrandOpening + BrandEndcard"
-                       if ok else f"{comp.name}: canonical bookends missing "
-                       f"(bookends_import={has_import} opening={has_open} endcard={has_end})")}
+    strings_ok = has_import and has_open and has_end
+    if not strings_ok:
+        return {"check": "op_ed_bookends", "ok": False, "hard": True,
+                "reason": (f"{comp.name}: canonical bookends missing "
+                           f"(bookends_import={has_import} opening={has_open} "
+                           f"endcard={has_end})")}
+
+    film_p = ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
+    film = _load(film_p)
+    if not isinstance(film, dict):
+        # Not a data-driven episode: there is no timeline to measure, so the string test is all
+        # the evidence there is. It stays HARD -- it is just weaker, and it says so.
+        return {"check": "op_ed_bookends", "ok": True, "hard": True, "measured": "strings-only",
+                "reason": (f"{comp.name} uses canonical BrandOpening + BrandEndcard "
+                           f"(no {slug}_film.json -- placement could not be measured)")}
+
+    bookends_tsx = cdir.parent / "components" / "Bookends.tsx"
+    casefilm_tsx = cdir / "CaseFilm.tsx"
+    op_sec = _tsx_const(bookends_tsx, "OPENING_SEC")
+    ed_sec = _tsx_const(bookends_tsx, "ENDCARD_SEC")
+    off_sec = _tsx_const(casefilm_tsx, "OPENING_OVERLAY_OFFSET_SEC")
+    if op_sec is None or ed_sec is None:
+        return {"check": "op_ed_bookends", "ok": False, "hard": True,
+                "reason": ("could not read OPENING_SEC/ENDCARD_SEC out of "
+                           "remotion/src/components/Bookends.tsx -- refusing to guess them")}
+
+    hook = float(film.get("hookSeconds") or 0.0)
+    body = float(film.get("narrationSeconds") or 0.0)
+    raw_lead = film.get("leadSeconds")
+    lead = hook + op_sec if raw_lead is None else float(raw_lead)
+    variant = film.get("openingVariant")
+    total = lead + body + ed_sec
+
+    # ---- OPENING: mirror CaseFilm.tsx's own branch, then require a real window.
+    opening = None          # (start_sec, end_sec, form)
+    why = ""
+    if variant == "overlay":
+        supports = "openingVariant" in blob and "overlay" in blob
+        if not supports:
+            why = ("film declares openingVariant 'overlay' but the composition has no overlay "
+                   "branch -- nothing would render")
+        elif off_sec is None:
+            why = ("film declares openingVariant 'overlay' but OPENING_OVERLAY_OFFSET_SEC is "
+                   "not exported from CaseFilm.tsx -- the band's position is undefined")
+        else:
+            opening = (hook + off_sec, hook + off_sec + op_sec, "overlay band over running body")
+    elif lead >= hook + op_sec:
+        opening = (hook, hook + op_sec, "full-screen card between the hook and the body")
+    else:
+        why = (f"leadSeconds {lead:g} < hookSeconds {hook:g} + OPENING_SEC {op_sec:g}, so "
+               f"CaseFilm's bookendsInFront is FALSE, and openingVariant is {variant!r}: "
+               f"NO opening is placed anywhere in the timeline")
+
+    if opening and not (0.0 <= opening[0] < opening[1] <= total + 1e-6):
+        why = (f"the opening window {opening[0]:.2f}-{opening[1]:.2f}s does not lie inside the "
+               f"film (0-{total:.2f}s)")
+        opening = None
+
+    # ---- END-CARD: a non-empty window at the tail, rendered unguarded.
+    ed_start, ed_end = lead + body, lead + body + ed_sec
+    ed_unguarded = not _sequence_guarded(blob, "Endcard")
+    endcard_ok = ed_sec > 0 and ed_end > ed_start and ed_unguarded
+    ed_why = ""
+    if not endcard_ok:
+        ed_why = (f"end-card window {ed_start:.2f}-{ed_end:.2f}s (ENDCARD_SEC={ed_sec:g}, "
+                  f"rendered_unguarded={ed_unguarded}) is not a real placement")
+
+    ok = opening is not None and endcard_ok
+    if ok:
+        reason = (f"{comp.name}: canonical bookends PLACED -- opening {opening[2]} at "
+                  f"{opening[0]:.2f}-{opening[1]:.2f}s, end-card {ed_start:.2f}-{ed_end:.2f}s "
+                  f"of a {total:.2f}s film")
+    else:
+        reason = f"{comp.name}: " + "; ".join(x for x in (why, ed_why) if x)
+    return {"check": "op_ed_bookends", "ok": ok, "hard": True, "measured": "timeline",
+            "opening_window": list(opening[:2]) if opening else None,
+            "opening_form": opening[2] if opening else None,
+            "endcard_window": [round(ed_start, 3), round(ed_end, 3)],
+            "leadSeconds": raw_lead, "hookSeconds": hook, "openingVariant": variant,
+            "reason": reason}
 
 
 def check_leveled_animation(epdir: Path) -> dict:
@@ -592,11 +724,24 @@ def check_leveled_animation(epdir: Path) -> dict:
         "motion_blur(Trail)": "Trail" in blob and "@remotion/motion-blur" in blob,
         "mask_reveal_typo": ("overflow" in blob and "translateY" in blob),
     }
+    # Transplanted 2026-08-10 from the owner's opening design-doc rules (C:/Users/aab15/CLAUDE.md),
+    # which demand what PD never checked: every motion eased, constant-linear forbidden. Only the
+    # BAN is enforced here. A presence test for easing was written first and removed after being
+    # demonstrated vacuous: the blob includes CaseFilm.tsx, which always contains spring(), so an
+    # episode composition with every tween linear still satisfied it. A check that cannot fail is
+    # decoration. The ban does fail -- proven on a composition with one Easing.linear in it.
+    linear = re.findall(r"Easing\.linear|easing\s*:\s*['\"]linear['\"]", blob)
     missing = [k for k, v in have.items() if not v]
-    ok = not missing
+    problems = [f"missing {missing}"] if missing else []
+    if linear:
+        problems.append(f"{len(linear)} constant-linear motion(s) -- the opening design rules "
+                        f"forbid linear; use spring() or Easing.out(Easing.cubic)")
+    ok = not problems
     return {"check": "leveled_animation", "ok": ok, "hard": True,
-            "reason": ("wired: AmbientMotion + Trail motion-blur + mask-reveal kinetic type"
-                       if ok else f"leveled-up animation NOT wired into the render: missing {missing}")}
+            "reason": ("wired: AmbientMotion + Trail motion-blur + mask-reveal kinetic type + "
+                       "eased motion (no linear)"
+                       if ok else "leveled-up animation NOT wired into the render: "
+                                  + "; ".join(problems))}
 
 
 def check_render_resolution(path: Path) -> dict:
@@ -984,6 +1129,25 @@ def check_freshness(epdir: Path, render: Path, cur_sha: str | None,
         if mtime < render_started_at:
             problems.append(f"mp4 mtime {mtime:.0f} predates render start {render_started_at:.0f} "
                             f"(stale file, not this render)")
+    # Third signal, added 2026-08-10 after a real near-miss. correa finished [6/7] and wrote
+    # out/correa.mp4, then _finish_episode.sh died before [7/7] because an agent edited the shell
+    # script while bash was executing it. The BGM+VO mux never ran, so the 08_edit master was
+    # still a build from three days earlier. Gating it would have stamped a green receipt for a
+    # DIFFERENT FILM, and every other freshness signal would have passed: the stale master has
+    # its own sha and its own mtime. Only the relationship between the two files exposes it.
+    suffix = "_final_bgm.v001.mp4"
+    if render.name.endswith(suffix):
+        raw = ROOT / "out" / (render.name[:-len(suffix)] + ".mp4")
+        if raw.is_file():
+            raw_mtime = raw.stat().st_mtime
+            if mtime < raw_mtime:
+                problems.append(
+                    f"the muxed master is OLDER than the render it should contain: "
+                    f"{render.name} mtime {mtime:.0f} < {raw.as_posix()} mtime {raw_mtime:.0f}. "
+                    f"Step 7 (BGM bed + master VO) did not run for this render -- re-run it "
+                    f"before gating, or this receipt describes a different film")
+            else:
+                notes.append(f"muxed {mtime - raw_mtime:.0f}s after its render")
     if prev_sha and cur_sha and cur_sha == prev_sha:
         # The failure text has always told the operator to "pass --render-started-at for a
         # legitimate re-grade", but the identical-sha branch fired regardless, so that escape
@@ -1518,7 +1682,20 @@ def check_caption_sync(epdir: Path) -> dict:
 def _ext_gate(module_name: str, epdir: Path, *args, **kwargs) -> dict:
     """Load a sibling standalone gate module (scripts/<module_name>.py) and call its
     evaluate(); never fatal. Each such gate owns its artifact discovery and returns a
-    check-dict; if its inputs are absent it returns skipped=True (honest, not fake green)."""
+    check-dict; if its inputs are absent it returns skipped=True (honest, not fake green).
+
+    THIRD STATE (2026-08-12). A skip and a crash both came back here as ok=True/hard=False, and
+    the receipt wrote that bit as `true` -- so a gate that never ran was indistinguishable from a
+    gate that passed. verify_onscreen_text has skipped on every episode since PD-2026-037 (there
+    is no claims.v*.json to verify against) and every receipt since has recorded
+    `onscreen_text_verified: true`; that check is the only factual_support detector on the ship
+    path, and factual_support is one of the four classes that may stop a ship.
+
+    Nothing below changes a threshold or a gate's logic. The ok/hard bits are passed through
+    exactly as the gate returned them, so what used to fail still fails and what used to pass
+    still passes. What is added is `skip_kind` alongside the `skipped` flag the gates already
+    set, so `_state()`, the console line and the receipt can say "skipped" instead of "true".
+    """
     import importlib
     _dir = str(Path(__file__).resolve().parent)
     if _dir not in sys.path:
@@ -1528,14 +1705,34 @@ def _ext_gate(module_name: str, epdir: Path, *args, **kwargs) -> dict:
         r = m.evaluate(epdir, *args, **kwargs)
         if not isinstance(r, dict):
             return {"check": module_name, "ok": True, "hard": False, "skipped": True,
+                    "skip_kind": "contract_violation",
                     "reason": f"{module_name}.evaluate returned non-dict"}
         r.setdefault("check", module_name)
         r.setdefault("ok", True)
         r.setdefault("hard", True)
+        if r.get("skipped"):
+            # the gate itself declared that it measured nothing (its inputs are not in the repo)
+            r.setdefault("skip_kind", "no_inputs")
         return r
     except Exception as exc:  # noqa: BLE001
+        # A gate that RAISED measured nothing either. It is not a failure of the film -- it is an
+        # absence -- so ok/hard stay as they were; `skipped` + skip_kind are what make it visible.
         return {"check": module_name, "ok": True, "hard": False, "skipped": True,
-                "reason": f"{module_name} unavailable: {exc}"}
+                "skip_kind": "crash",
+                "reason": f"{module_name} unavailable: {type(exc).__name__}: {exc}"}
+
+
+def _state(r: dict) -> str:
+    """The three things a check can honestly say: "ok", "fail", "skipped".
+
+    A skip is an ABSENCE of measurement, not a pass. It carries `ok=True` so that it does not
+    stop a ship -- `hard` semantics for real failures are untouched -- but it must never be
+    RECORDED as a pass, because a reader of the receipt cannot then tell the difference between
+    "measured and clean" and "never ran".
+    """
+    if r.get("skipped"):
+        return "skipped"
+    return "ok" if r.get("ok") else "fail"
 
 
 def resolve_render(epdir: Path, override: str | None) -> Path | None:
@@ -1547,6 +1744,9 @@ def resolve_render(epdir: Path, override: str | None) -> Path | None:
         fv = d.get("final_video")
         if fv:
             return Path(fv.replace("file://", ""))
+        cf = d.get("canonical_final", {}).get("path")
+        if cf:
+            return Path(cf.replace("file://", ""))
     return None
 
 
@@ -1640,6 +1840,12 @@ def main() -> int:
                  # EP30 cotton shipped h264_nvenc / yuvj420p / bt470bg / 2703kbps past
                  # every existing check because acceptance ffprobed the codec name and
                  # then compared nothing but resolution.
+                 # Wired 2026-08-10. Both existed and neither was called by anything: the audit
+                 # that day found 34 general-purpose check scripts on no path at all, and these
+                 # two -- the only gates that read the SCRIPT as craft rather than as length --
+                 # were among them. row 15 demands Academy-screenplay construction and nothing
+                 # was measuring it.
+                 "verify_script_structure", "check_script_craft",
                  "check_script_length", "check_asset_reuse", "check_caption_breaks",
                  "check_retention_cadence", "check_packaging_qc", "check_encoder_settings"):
         results.append(_ext_gate(_mod, epdir))
@@ -1667,7 +1873,9 @@ def main() -> int:
         print(f"FINAL ACCEPTANCE - {ep}")
         print(f"render: {render}  ({render_dur:.1f}s)" if render_dur else f"render: {render}")
         for r in results:
-            mark = "PASS" if r["ok"] else ("FAIL" if r["hard"] else "warn")
+            _st = _state(r)
+            mark = ("SKIP" if _st == "skipped"
+                    else "PASS" if r["ok"] else ("FAIL" if r["hard"] else "warn"))
             tag = "[hard]" if r["hard"] else "[soft]"
             print(f"  {mark:4} {tag} {r['check']}: {r['reason']}")
         print(f"\nRESULT: {status}" + (f"  ({len(soft_fail)} soft warning(s))" if soft_fail else ""))
@@ -1679,10 +1887,23 @@ def main() -> int:
         from datetime import datetime, timezone
         vsha = render_sha if (render and render.is_file()) else None
         receipt = {
-            "schema_version": "1.0.0", "episode_id": ep, "gate": "check_final_acceptance",
+            # 1.1.0 (2026-08-12): `checks` is TRI-STATE. Before this, a gate that skipped or
+            # raised was written here as `true` and no reader could tell it apart from a gate
+            # that measured and passed -- receipts with schema_version 1.0.0 therefore contain
+            # unmeasured greens (verify_onscreen_text on every episode without a claim ledger).
+            "schema_version": "1.1.0", "episode_id": ep, "gate": "check_final_acceptance",
             "status": status, "video_path": str(render) if render else None,
             "video_sha256": vsha, "hard_failures": [r["check"] for r in hard_fail],
-            "checks": {r["check"]: r["ok"] for r in results},
+            "checks": {r["check"]: ("skipped" if _state(r) == "skipped" else r["ok"])
+                       for r in results},
+            "checks_legend": {"true": "measured and passed", "false": "measured and failed",
+                              "skipped": "THE GATE DID NOT MEASURE -- absent inputs, or it "
+                                         "raised. Not a pass. See skipped_checks."},
+            "skipped_checks": [{"check": r["check"],
+                                "kind": r.get("skip_kind", "no_inputs"),
+                                "declared_hard": bool(r.get("hard")),
+                                "reason": str(r.get("reason", ""))[:400]}
+                               for r in results if _state(r) == "skipped"],
             "generated_at": datetime.now(timezone.utc).isoformat(),
         }
         # Record the MEASURED motion energy (not just pass/fail) so the receipt carries the

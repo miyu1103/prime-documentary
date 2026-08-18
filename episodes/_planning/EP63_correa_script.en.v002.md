@@ -77,7 +77,7 @@ Add up the clock. From no later than one o'clock until somewhere between three a
 
 Weary of waiting, the two women drove to the office of Dr. Acacia Rojas Davis, the director of Hospmed, arriving there between three and half past three in the afternoon.
 
-The opinion does not describe anyone turning her away. It does not describe anyone discharging her. She left because she had been waiting.
+The opinion does not describe anyone turning her away. It does not describe anyone discharging her. She left because she had been waiting. Can a hospital break a federal law by doing nothing at all?
 
 At the clinic she told Dr. Rojas that she was nauseated and had taken a double dose of her high blood pressure medication. Her blood pressure was very low: ninety over sixty. When she began vomiting, the physician immediately started intravenous infusions of fluids. She also dispensed medicine to control the emesis.
 
@@ -132,7 +132,7 @@ Eight ways of saying the same thing. None of them worked.
 
 Why they failed depends on what this statute actually promises. It is less than most people assume.
 
-EMTALA is the Emergency Medical Treatment and Active Labor Act. In 1995, the First Circuit had never interpreted it. The opening line of the opinion says as much: this appeal requires us to interpret, for the first time, the Emergency Medical Treatment and Active Labor Act. Six years earlier a plaintiff had put an EMTALA question to the same court, in a case called Wilson v. Atlanticare Medical Center, and the court refused to answer it, because the issue had not been preserved.
+In 1995, the First Circuit had never interpreted EMTALA. The opening line of the opinion says as much: this appeal requires us to interpret, for the first time, the Emergency Medical Treatment and Active Labor Act. Six years earlier a plaintiff had put an EMTALA question to the same court, in a case called Wilson v. Atlanticare Medical Center, and the court refused to answer it, because the issue had not been preserved.
 
 So the panel started where Congress did.
 
@@ -140,7 +140,7 @@ As health-care costs spiralled upward and third-party payments assumed increased
 
 The enforcement mechanism was not a police force. It was money. Needing a carrot to make health-care providers more receptive to the stick, the court wrote, Congress simultaneously amended the Social Security Act, conditioning hospitals' continued participation in the federal Medicare program — a lucrative source of institutional revenue — on acceptance of the duties imposed by the new law.
 
-A hospital that wants Medicare money accepts EMTALA's duties. That is the entire architecture. Nobody is commanded. Everybody is paid.
+A hospital that wants Medicare money accepts EMTALA's duties. That is the entire architecture. Nobody is commanded. Everybody is paid. So what did that money buy the patient?
 
 For patients such as Ms. Gonzalez, the court said, the statute has two linchpin provisions.
 
@@ -257,9 +257,9 @@ That ends the matter, the opinion says.
 
 The hospital had one more argument. Put at its strongest, its case went like this.
 
-Begin with what the court said about its own record. To be sure, the evidence in this case is not particularly precise. But facts at trial, as in life, do not always appear in black and white. Juries and judges frequently must distinguish between manifold shades of gray. The panel found that the grays predominate here, in a record it had already called the thicket of conflicting testimony and the chasmal gaps in the direct evidence.
+Begin with what the court said about its own record. To be sure, the evidence in this case is not particularly precise. But facts at trial, as in life, do not always appear in black and white. Juries and judges frequently must distinguish between manifold shades of gray. The panel found that the grays predominate here.
 
-The evidence, it said, was conflicted as to whom she saw and what that person was told about her condition. The Hospital maintained that its personnel were told only that Ms. Gonzalez felt dizzy and nauseated. Its own witness, Dr. Rojas — the physician who treated her that afternoon — testified that she did not develop chest pains until some time after she arrived at Hospmed. The malpractice claim, the one that asks whether her care was competent, had been dismissed and was not on appeal. And the court agreed, in the middle of its own holding, that an emergency room cannot serve everyone simultaneously.
+Nobody had established who met her at that counter, or what they were told when she got there. The hospital's own witness put the chest pains after she reached the clinic. The malpractice claim, the one that asks whether her care was competent, had been dismissed and was not on appeal. Even the panel allowed that an emergency room cannot serve everyone at once. Put like that, where is the violation?
 
 Nobody sent her away. Nobody discharged her. She was given a number, and she left before it was called.
 
@@ -334,7 +334,7 @@ The hospital's best legal argument on appeal was about damages. Its position was
 
 The court never decided it.
 
-The chronology is why.
+Why not? Look at the chronology.
 
 【cut the waiver list on the same rhythm and in the same framing as the waiting in ACT_1: one plate per omission, equal lengths, no accents. Nothing is said about the rhyme】
 
@@ -346,7 +346,7 @@ Based on this somber record of inattention, the panel held, HSF forfeited the th
 
 The post-trial motion that finally raised the point got the sentence it deserved. This motion is a classic example of a litigant locking the barn door long after the horse has bolted. A renewed motion under Rule 50(b) is bounded by the movant's earlier Rule 50(a) motion. The movant cannot use such a motion as a vehicle to introduce a legal theory not distinctly articulated in its close-of-evidence motion for a directed verdict.
 
-So whether relatives may recover under EMTALA for their own anguish was left open. The court said only that both readings of the statute are superficially plausible, and that it could not say it was plain error for the lower court, in the absence of any timely objection, to interpret the statute generously.
+So can relatives recover under EMTALA for their own anguish? That was left open. The court said only that both readings of the statute are superficially plausible, and that it could not say it was plain error for the lower court, in the absence of any timely objection, to interpret the statute generously.
 
 Not decided. Forfeited. This case turns on that difference twice.
 
@@ -360,7 +360,7 @@ It is hard to doubt, the opinion says, that the plaintiffs suffered when the wom
 
 Then the two hundred thousand awarded on her own account. Though generous, the jury's assessment does not outstrip the bounds of reason.
 
-The court gave its reason in two sentences.
+What was the two hundred thousand for? The court gave its reason in two sentences.
 
 Due to the Hospital's failure to provide even the most rudimentary screening, the court wrote, Ms. Gonzalez spent the few remaining hours of her life in agony, beset by nausea, dizziness, and chest pains. It is hard to imagine — let alone to quantify in dollars — the sheer terror that she must have felt while waiting for medical attention that never came.
 
@@ -378,15 +378,15 @@ We need go no further, the panel wrote. HSF has not presented arguments capable 
 
 What this case gives is narrower than it sounds, and the court was careful to say so.
 
-It does not guarantee treatment. EMTALA promises a screening — some procedure, administered even-handedly — and stabilisation if an emergency condition is found. A hospital that examines you badly has not broken this law. An emergency room, the panel said in the middle of its own holding, cannot serve everyone simultaneously.
+It does not guarantee treatment. EMTALA promises a screening — some procedure, administered even-handedly — and stabilisation if an emergency condition is found. Bad care is a malpractice claim, not this one. An emergency room, the panel said in the middle of its own holding, cannot serve everyone simultaneously.
 
-It does not make delay unlawful. The court expressly refused to decide whether mere negligence in failing to expedite screening would violate the statute. It held only that this delay, on this record, was so egregious and lacking in justification as to amount to an effective denial of a screening examination.
+It does not make delay unlawful. The court expressly refused to say whether ordinary negligence in slow-walking a screening would breach the statute at all. It held only that this delay, on this record, ran so far past justification that the screening counted as denied.
 
 It does not find that the hospital dumped her. A jury found a screening violation. The court of appeals held that finding unimpugnable, and said, as a proposition of law, that the statute reaches constructive dumping as well as actual dumping. Those are two different sentences, and the case is the second one.
 
 It does not hold that the transfer was unlawful. That finding was never reviewed.
 
-What is left is a method, and it is the most portable thing in the opinion. To find out whether an emergency room had screened someone, the court did not call a medical expert. It asked what the hospital's own rules required, and then asked what the hospital could produce. Vital signs. A written chart. A referral to an in-house physician. Four rules the hospital wrote for itself, and nothing produced for a woman who had been inside it for two hours.
+What is left is a method, and it is the most portable thing in the opinion. To find out whether an emergency room had screened someone, the court did not call a medical expert. It asked what the hospital's own rules required, and then asked what the hospital could produce. Vital signs. A written chart. A referral to an in-house physician. Four rules the hospital wrote for itself, and nothing at all produced for the woman who sat there two hours.
 
 【motif 7 completes · C229 · the same seat from directly above, in the same position and at the same distance as C228, the ticket gone】
 

@@ -65,6 +65,19 @@ SFX_TRIGGERS: list[tuple[str, str]] = [
     (r"\bdissent(?:ed|ing|s)?\b|\bmajority\b|\bopinion(?:s)?\b", "sub-drop"),
     (r"\bterminat(?:ed|ion|e|ions)\b|\bdisconnect(?:ed|ion)?\b|\bshut off\b", "whoosh"),
     (r"\bdollar(?:s)?\b|\bpaid\b|\bpayment(?:s)?\b|\bbill(?:s|ed)?\b", "clink"),
+    # OUTDOORS. Everything above this line is a courthouse, an office or a desk. EP66 openfields
+    # is a film about land: its declared motif (FILM_BIBLE v001 s3) is a padlock on a chain across
+    # a farm gate, and the narration speaks "gate" 11 times, "branch" 3, "gravel" 2 -- and reached
+    # 1.93 designed cues/min against build_case_film_audio SFX_PER_MIN_FLOOR of 2.0, because the
+    # table above has no word for anything outside a building. These are appended, never inserted,
+    # so no sentence that already wins an earlier trigger changes its cue; they only speak where
+    # the table was previously silent. Each maps to an existing ONESHOT_MAP sample -- a gate latch,
+    # foliage, boots on gravel, a truck going past -- so the cue is the thing the voice just named,
+    # not filler. (Padding a density number with meaningless pips is the EP32 rejection; do not.)
+    (r"\bgate(?:s|way|ways)?\b|\bpadlock(?:ed|s)?\b|\bchain(?:ed|s)?\b", "latch"),
+    (r"\bbranch(?:es)?\b|\bbrush\b|\bunderbrush\b|\bleaves\b|\bfoliage\b", "rustle"),
+    (r"\bboot(?:s)?\b|\bgravel\b|\bmud\b", "footstep"),
+    (r"\btruck(?:s)?\b|\bengine(?:s)?\b|\bvehicle(?:s)?\b|\bdrove\b|\bdriv(?:e|es|ing)\b", "pass-by"),
 ]
 MIN_BEATS_BETWEEN_CUES = 3          # never two cues back to back; the bed has to breathe
 

@@ -46,7 +46,10 @@ def main() -> int:
         # handcuff ban against films that are entitled to use handcuffs.
         slug = film.stem[: -len("_film")]
         blocked = pd_footage_blocklist.load_blocked(slug)
-        t = float(d.get("hookSeconds") or 0) + 3.5
+        # SPEC v2 row 9 (binds from EP66): `leadSeconds` moves the body to frame 0.
+        # `is None`, not falsy -- EP66 declares 0.0. Absent, this is the old expression.
+        _lead = d.get("leadSeconds")
+        t = (float(d.get("hookSeconds") or 0) + 3.5) if _lead is None else float(_lead)
         hits = []
         for h in d.get("hook", []):
             why = pd_footage_blocklist.reason_for(h.get("src"), blocked)

@@ -48,6 +48,17 @@ TARGET_CUT_SEC = 4.6        # average cut length; shorter than EP50's 6.1s for t
 MIN_VIDEO_SHARE = 0.68      # build target; the gate's hard floor is 0.62, so this leaves margin
 MAX_VIDEO_REUSE = 2         # gate allows 3; we stay at 2
 MAX_STILL_REUSE = 1         # stills are never repeated
+
+# The planner must budget with the caps the GATE enforces, and those are asymmetric:
+# check_asset_reuse allows a factory clip ONCE (free, 11k-clip library) and an i2v motion clip
+# TWICE (24-73 GPU-min each). Planning factory at 2 hands it twice the capacity that will be
+# graded and then fills it, so asset_reuse fails by about the factory-clip count no matter how
+# much footage is staged -- EP62 greene measured 28 over cap at 48 accepted clips and 28 at 74.
+# Imported, not retyped: two copies of one number is exactly how these drifted apart.
+try:
+    from check_asset_reuse import MAX_USES_FACTORY as _CAP_FACTORY, MAX_USES_MOTION as _CAP_MOTION
+except Exception:                                    # keep the builder runnable in isolation
+    _CAP_FACTORY, _CAP_MOTION = 1, 2
 PINNED_HEAD = 0             # set by the caller: this many leading pool items must all be used
 TREATMENTS = ["bleed", "duotone", "focus"]
 BANNED_TREATMENTS = {"depth", "scan", "card"}
@@ -184,8 +195,8 @@ def solve_totals(total_sec: float, n_factory: int, n_motion: int, n_still: int) 
     cut count rather than crashing when a pool is small.
     """
     want = max(60, int(round(total_sec / TARGET_CUT_SEC)))
-    cap_f = n_factory * MAX_VIDEO_REUSE
-    cap_m = n_motion * MAX_VIDEO_REUSE
+    cap_f = n_factory * _CAP_FACTORY
+    cap_m = n_motion * _CAP_MOTION
     cap_s = n_still * MAX_STILL_REUSE
     if cap_f + cap_m == 0:
         raise SystemExit("no real video assets (factory+motion pools are empty) -- kamishibai guard")
@@ -393,17 +404,43 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
     # The constant fixes the cut count, and the cut count caps how many stills can appear.
     # An episode that commissioned stills because the archive had nothing for its subject
     # needs a say in that number. The video-share floor and every motion check are untouched.
-    _cut_sec = TARGET_CUT_SEC
+    # AN UNDECLARED VALUE IS AN ERROR, NEVER AN INFERRED DEFAULT (CLAUDE.md s4.6 item 3).
+    # This block used to fall through to TARGET_CUT_SEC in silence. EP62 greene, EP63 correa and
+    # EP64 memphis were all built that way -- and the constant is not cosmetic: it fixes the cut
+    # count, the cut count caps how many stills can appear (stills may hold at most 32% of cuts
+    # under the video-share floor), and check_spec_satisfied then refuses a film whose
+    # mandatory_stills do not fit. EP61 weimer commissioned 150 stills; at 4.6s only 105 fit.
+    # An episode that never chose 4.6 was nevertheless cut to it, and nothing said so.
     _specs = sorted((ROOT / "episodes").glob(f"PD-*-{slug}/episode_spec.v001.json"))
-    if _specs:
-        try:
-            _declared = json.loads(_specs[0].read_text(encoding="utf-8")).get("target_cut_sec")
-            if isinstance(_declared, (int, float)) and 2.0 <= _declared <= 8.0:
-                _cut_sec = float(_declared)
-                print(f"  [cuts] {slug} declares {_cut_sec}s per cut "
-                      f"(builder default {TARGET_CUT_SEC}s)")
-        except Exception:  # noqa: BLE001
-            pass
+    if not _specs:
+        raise SystemExit(
+            f"[cuts] {slug} has no episodes/PD-*-{slug}/episode_spec.v001.json, so it declares "
+            f"no target_cut_sec and this builder will not substitute its own {TARGET_CUT_SEC}s "
+            f"(CLAUDE.md s4.6). Write the spec, then run "
+            f"`py -3.11 scripts/check_episode_spec.py --slug {slug}`.")
+    try:
+        _spec_doc = json.loads(_specs[0].read_text(encoding="utf-8"))
+    except Exception as _exc:  # noqa: BLE001
+        raise SystemExit(f"[cuts] {_specs[0]} is unreadable ({_exc}); refusing to guess a cut "
+                         f"length. Run `py -3.11 scripts/check_episode_spec.py --slug {slug}`.")
+    _declared = _spec_doc.get("target_cut_sec")
+    if not isinstance(_declared, (int, float)) or isinstance(_declared, bool):
+        raise SystemExit(
+            f"[cuts] {slug} declares no target_cut_sec in "
+            f"{_specs[0].relative_to(ROOT).as_posix()}. The builder will NOT fall back to its "
+            f"own {TARGET_CUT_SEC}s: an undeclared value is an error, never an inferred default "
+            f"(CLAUDE.md s4.6 item 3). Derive the episode\u0027s real value rather than picking "
+            f"one -- for a film already delivered, solve "
+            f"ceil(round(total_sec / t) * MIN_VIDEO_SHARE) == the video-cut count in "
+            f"remotion/src/data/{slug}_film.json, which pins t to a band a few hundredths wide; "
+            f"then add \"target_cut_sec\": <t> to the spec.")
+    if not (2.0 <= float(_declared) <= 8.0):
+        raise SystemExit(
+            f"[cuts] {slug} declares target_cut_sec={_declared}, outside the schema band "
+            f"2.0-8.0. Fix the spec; the builder does not clamp a declared value.")
+    _cut_sec = float(_declared)
+    print(f"  [cuts] {slug} declares {_cut_sec}s per cut "
+          f"(builder default {TARGET_CUT_SEC}s, used for nothing but the solver scale)")
 
     # solve_totals derives its cut count as runtime / TARGET_CUT_SEC; scaling the runtime it
     # is handed is how the declared cut length reaches it without touching the solver.
@@ -415,8 +452,8 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
     per_m = split_by_section(nm, weights)
     per_s = split_by_section(ns, weights)
 
-    factory_q = deque(repeated(factory_pool, nf, MAX_VIDEO_REUSE, "factory"))
-    motion_q = deque(repeated(motion_pool, nm, MAX_VIDEO_REUSE, "motion"))
+    factory_q = deque(repeated(factory_pool, nf, _CAP_FACTORY, "factory"))
+    motion_q = deque(repeated(motion_pool, nm, _CAP_MOTION, "motion"))
     still_q = deque(repeated(still_pool_src, ns, MAX_STILL_REUSE, "still"))
 
     cuts: list[dict] = []
@@ -471,6 +508,52 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
     # A clip shorter than its cut is not a planning error -- it just has to loop. Mark it so the
     # renderer repeats it instead of running out of footage and going black. Only a clip that is
     # unreadable (0s) is a real problem.
+    # A clip that barely moves must never be asked to repeat. Looping joins the end of one still
+    # stretch to the start of the next: R013 is still for 68% of its 4.8s, and on a 5.3s slot that
+    # produced a 4.03s hold -- past the 3s limit -- while the same clip on a shorter slot measured
+    # 2.1s and passed. The defect was in the pool the whole time; only the shuffle decided whether
+    # it surfaced. 45 of marmet's 149 motion clips are still for 60%+ of their length, so deleting
+    # them is not an option; not looping them is.
+    _still: dict[str, float] = {}
+    _sp = ROOT / "runs" / "qc" / f"{slug}_motion_stillness.v001.json"
+    if _sp.is_file():
+        try:
+            for _r in json.loads(_sp.read_text(encoding="utf-8")).get("clips", []):
+                _still[_r["clip"]] = float(_r.get("still_share") or 0.0)
+        except Exception:  # noqa: BLE001
+            _still = {}
+
+    def _is_still(c: dict) -> bool:
+        return _still.get(Path(str(c.get("src") or "")).name, 0.0) >= 0.60
+
+    def _would_loop(c: dict) -> bool:
+        return bool(c.get("kind") == "footage" and c.get("srcSeconds")
+                    and c["dur"] > c["srcSeconds"] + 0.05)
+
+    if _still:
+        # A still-heavy clip on a slot longer than itself trades with a lively clip whose slot it
+        # can cover. Timings and cut count are untouched -- only which clip sits where.
+        _bad = [c for c in cuts if _would_loop(c) and _is_still(c)]
+        _swapped = 0
+        for c in _bad:
+            for d in cuts:
+                if d is c or d.get("kind") != "footage" or _is_still(d):
+                    continue
+                if not d.get("srcSeconds") or _would_loop(d):
+                    continue
+                # c must fit d's slot without looping, and d must still cover c's slot
+                if c["srcSeconds"] >= d["dur"] - 0.05 and d["srcSeconds"] >= c["dur"] - 0.05:
+                    c["src"], d["src"] = d["src"], c["src"]
+                    c["srcSeconds"], d["srcSeconds"] = d["srcSeconds"], c["srcSeconds"]
+                    _swapped += 1
+                    break
+        _left = [c for c in cuts if _would_loop(c) and _is_still(c)]
+        print(f"  [stillness] {len(_bad)} near-still clip(s) were set to loop; "
+              f"swapped {_swapped}, {len(_left)} could not be placed")
+        for c in _left[:5]:
+            print(f"    still {Path(str(c['src'])).name} on a {c['dur']:.2f}s slot "
+                  f"(clip is {c['srcSeconds']:.2f}s)")
+
     for c in cuts:
         if c.get("kind") == "footage" and c.get("srcSeconds") and c["dur"] > c["srcSeconds"] + 0.05:
             c["loopSource"] = True
@@ -587,8 +670,20 @@ def build_figures(cfg: dict, order: list[str], windows: dict[str, tuple[float, f
     return figures
 
 
-def duration_frames(narration_seconds: float, hook_sec: float) -> int:
-    return (round(hook_sec * FPS) + round(OPENING_SEC * FPS)
+def lead_frames(hook_sec: float, lead_sec: float | None) -> int:
+    """Frame at which the body starts. Mirrors `caseFilmLeadFrames` in CaseFilm.tsx.
+
+    SPEC v2 row 9, binding from EP66: a filmconfig may declare `leadSeconds` and put the body,
+    and the narration inside it, at frame 0. `is None`, not falsy -- EP66 declares 0.0. When it
+    is absent (every episode up to EP65) this is the historical expression term for term."""
+    if lead_sec is None:
+        return round(hook_sec * FPS) + round(OPENING_SEC * FPS)
+    return round(lead_sec * FPS)
+
+
+def duration_frames(narration_seconds: float, hook_sec: float,
+                    lead_sec: float | None = None) -> int:
+    return (lead_frames(hook_sec, lead_sec)
             + math.ceil(narration_seconds * FPS) + round(ENDCARD_SEC * FPS))
 
 
@@ -623,6 +718,13 @@ def main() -> int:
     order = section_order(narr)
     windows = section_windows(narr, order, total)
     hook_sec = float(cfg.get("hookSeconds", HOOK_SEC))
+    # SPEC v2 row 9 (binds from EP66): the filmconfig may put the body -- and the narration
+    # master inside it -- at frame 0 by declaring `leadSeconds: 0`. Absent, `lead_sec` stays
+    # None and every downstream consumer falls back to hookSeconds + OPENING_SEC, so no
+    # existing filmconfig changes. The key is written into film.json ONLY when declared: an
+    # absent key must stay absent, because that is what CaseFilm.tsx tests for.
+    _lead_raw = cfg.get("leadSeconds")
+    lead_sec = None if _lead_raw is None else float(_lead_raw)
     cuts, plan = make_cuts(order, windows, manifest, slug)
     hook = make_hook(manifest, slug, hook_sec)
     # The hook is on screen too. EP51's rejected plates were people stills, and make_hook draws
@@ -657,7 +759,7 @@ def main() -> int:
     if not figures:
         raise SystemExit(f"{slug}: no figures -- config.figures_by_section is empty")
 
-    total_frames = duration_frames(total, hook_sec)
+    total_frames = duration_frames(total, hook_sec, lead_sec)
     film = {
         "episode_id": ep,
         "fps": FPS,
@@ -672,6 +774,26 @@ def main() -> int:
         "figures": figures,
         "overlays": [x["public_path"] for x in manifest.get("overlay", []) if x.get("public_path")],
     }
+    if lead_sec is not None:
+        film["leadSeconds"] = lead_sec
+    # EP66 PACKAGING v001 sections 4 and 7: which FORM of the channel opening this film places.
+    # Written only when the filmconfig declares it, because CaseFilm.tsx reads an absent key as
+    # the historical full-screen card -- EP62-65's film.json must not gain the key.
+    _variant = cfg.get("openingVariant")
+    if _variant is not None:
+        if _variant not in ("card", "overlay"):
+            raise SystemExit(
+                f"{slug}: openingVariant must be 'card' or 'overlay', got {_variant!r}")
+        film["openingVariant"] = _variant
+    # A zero (or short) lead leaves no room in front of the body for the full-screen card, so a
+    # film that shortens the lead and does NOT ask for the overlay would render with no channel
+    # opening at all. That shipped once as a green gate; it stops here, before the render.
+    if (lead_sec is not None and lead_sec < hook_sec + OPENING_SEC
+            and _variant != "overlay"):
+        raise SystemExit(
+            f"{slug}: leadSeconds {lead_sec} leaves no room for the {OPENING_SEC}s brand card "
+            f"in front of a {hook_sec}s hook, and openingVariant is {_variant!r}. The film "
+            f"would have NO opening. Declare openingVariant 'overlay' or restore the lead.")
     report = {
         "slug": slug, "cuts": len(cuts), **plan,
         "video_cuts": video_n, "still_cuts": stills_n,

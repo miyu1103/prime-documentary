@@ -1,0 +1,103 @@
+{
+  "schema_version": "shorts_codex_image_completion.v1",
+  "created_at": "2026-08-04T19:14:54+09:00",
+  "status": "complete_with_visual_warnings",
+  "scope": "image_generation_only",
+  "inputs": {
+    "markdown": {
+      "path": "episodes/_planning/SHORTS_CODEX_PROMPTS.v003-remaining.md",
+      "sha256": "86a4c269657563764845341e7a197fafe745245ff82b33c000e5d90faa29aa75"
+    },
+    "csv": {
+      "path": "episodes/_planning/SHORTS_CODEX_PROMPTS.v003-remaining.csv",
+      "sha256": "8d0028580398f93338ac1dfdb168c70696c405698921033329cbe39fd664674e"
+    },
+    "jsonl": {
+      "path": "episodes/_planning/SHORTS_CODEX_PROMPTS.v003-remaining.jsonl",
+      "sha256": "e12daa2f864b7aae1b0c83c4c864da2f05a1ed61e692de0d890b9980cbdac38e"
+    }
+  },
+  "generator": {
+    "provider": "Codex built-in image_gen",
+    "current_thread_originals": "C:/Users/aab15/.codex/visualizations/2026/08/04/019fcb49-5c45-73d1-8430-9935fc65e0b4",
+    "overlap_thread_originals": "C:/Users/aab15/.codex/visualizations/2026/08/04/019fc991-5736-7800-a69f-359d71ad6f91"
+  },
+  "delivery": {
+    "destination_root": "remotion/public/shorts",
+    "requested": 393,
+    "delivered": 393,
+    "generated_from_v003_only_prompts": 83,
+    "generated_from_unchanged_v002_v003_overlap": 310,
+    "missing": 0,
+    "overwritten_by_this_run": 0
+  },
+  "technical_qc": {
+    "status": "passed",
+    "unique_filenames": 393,
+    "unique_sha256": 393,
+    "dimensions": [
+      "1080x1920"
+    ],
+    "format": "PNG",
+    "color_mode": "RGB",
+    "color_profile": "sRGB built-in",
+    "mean_luma_min": 45.1,
+    "mean_luma_max": 69.57,
+    "total_bytes": 912582222,
+    "errors": []
+  },
+  "visual_qc": {
+    "status": "passed_with_warnings",
+    "contact_sheets_reviewed": 26,
+    "contact_sheet_root": "C:/Users/aab15/.codex/visualizations/2026/08/04/019fcb49-5c45-73d1-8430-9935fc65e0b4/contacts",
+    "obvious_readable_text_found": false,
+    "obvious_identifiable_frontal_likeness_found": false,
+    "warnings": [
+      {
+        "filename": "short184_35.png",
+        "type": "clock_face_borderline",
+        "detail": "Clock face has tick marks and hands but no numerals or lettering."
+      },
+      {
+        "filename": "short257_10.png",
+        "type": "clock_face_prompt_mismatch",
+        "detail": "Prompt requested a completely blank featureless clock face; generated clock has one hand and no numerals."
+      },
+      {
+        "filename": "short201_04.png",
+        "type": "multiple_visible_light_sources",
+        "detail": "A lit wall fixture and bright window/daylight are both visible."
+      },
+      {
+        "filename": "short202_10.png",
+        "type": "multiple_visible_light_sources",
+        "detail": "Overhead fluorescent light and daylight through a window are both visible."
+      },
+      {
+        "filename": "short205_08.png",
+        "type": "multiple_visible_light_sources",
+        "detail": "Overhead fluorescent light and a bright window are both visible."
+      },
+      {
+        "filename": "short252_11.png",
+        "type": "multiple_visible_light_sources",
+        "detail": "Dawn through the window and a switched-on desk lamp are both visible."
+      },
+      {
+        "filename": "short257_21.png",
+        "type": "multiple_visible_light_sources",
+        "detail": "Dawn through the window and a switched-on desk lamp are both visible."
+      },
+      {
+        "filename": "short258_10.png",
+        "type": "multiple_visible_light_sources",
+        "detail": "Dawn through the window and a lit oil lamp are both visible."
+      }
+    ]
+  },
+  "safety": {
+    "automatic_regenerations": 0,
+    "external_publish_performed": false,
+    "downstream_render_performed": false
+  }
+}

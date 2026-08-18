@@ -651,6 +651,25 @@ def run(ep_slug, repo_root, emit_receipt):
         # captions EXIST and are burned; this checks WHERE they break.
         _run_ext_gate("check_caption_breaks", "caption_breaks", repo_root, ep_slug),
         _run_ext_gate("check_visual_asset_qc", "visual_asset_qc", repo_root, ep_slug),
+        # EP62 greene, 2026-08-11. visual_asset_qc above requires that a clip-QC manifest
+        # exists and marks every staged clip reviewed+on_theme -- but that manifest derives
+        # "reviewed" from `reviewed_sheets`, i.e. from somebody having opened a 20-tile sheet,
+        # which cleared twenty clips per tick. greene passed it and shipped a modern US
+        # election ballot and a 2011 Range Rover Evoque on an EU plate (both, measured, were
+        # visible in the one frame that sheet took). This requires a verdict for EVERY clip,
+        # bound by a hash of the pool's id list so a clip staged after the review
+        # invalidates it. Reads a directory listing and one json; no ffmpeg.
+        _run_ext_gate("check_pool_frames", "pool_frame_review", repo_root, ep_slug),
+        # EP66 openfields -> EP67/68/69, 2026-08-11. The line above guards ARCHIVE FOOTAGE.
+        # Nothing guarded GENERATED PLATES: measured, the two plate-side scripts that exist
+        # are wired into nothing (see audit_gate_wiring.py). So a round pole where the
+        # callback needed a squared post, a manufacturer wordmark that survived two [NEG] bans
+        # and a pair of fused fingers all reached a re-order, each found only because somebody
+        # was asked to look. This requires a RESOLVED verdict for every plate in the set --
+        # declared mandatory_stills plus everything staged -- bound by a hash of the id list
+        # AND by each file own sha256, because a plate is regenerated under its own id and the
+        # id list alone would carry the old verdict onto a new picture. No image is decoded.
+        _run_ext_gate("check_plate_verdicts", "plate_review", repo_root, ep_slug),
         # SPEC v2 row 16 -- the ONLY contract row that had no gate at all. Measured from
         # the film.json captions, so it fires at PREFLIGHT (the film data exists here),
         # before the render/TTS spend. Audit 2026-07-19: 10 PASS / 3 FAIL / 25 SKIP;

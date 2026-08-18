@@ -1,0 +1,67 @@
+EP68 pinto — 画像発注 **統合版・全 123 枚**
+区分: 本編 R001.png – R104.png（104枚・契約） ／ 予備 R105.png – R117.png（13枚・契約外） ／ サムネ T001.png – T006.png（6枚・カットに使わない）
+
+★このファイル1本に**全 123 枚**が入っています。分割ファイルは同じ内容です。
+　上から順に、**1プロンプト＝1枚**で生成してください。
+　複数のプロンプトをまとめて1枚にしない。同じプロンプトで2枚目を作らない。
+　新しい ID を作らない。`_v2` / `_02` / `_A` を作らない。**名前は ■ のとおりちょうど。**
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, the United States between 1968 and 1981, mixed tungsten and daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous period surfaces — painted steel, brushed aluminium, laminate, bakelite, manila card, newsprint, enamel — nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+★ただし **T001.png 〜 T006.png の6枚だけ**は末尾が [TSTYLE] です。
+　その6枚は [STYLE] を使わず、次の文言に置き換えてください:
+
+editorial photographic still made to be a video thumbnail, ONE HARD DIRECTIONAL KEY LIGHT from the side, HIGH CONTRAST AND BRIGHT OVERALL EXPOSURE, the subject clearly brighter than everything behind it and cleanly separated from it, shadow only where it defines an edge and never filling the frame, THE ENTIRE UPPER 40 PERCENT OF THE FRAME IS ONE UNBROKEN UNIFORM FIELD - plain wall, plain sky or plain out-of-focus darkness, with no object, no edge, no horizon and no detail crossing it anywhere - and the whole subject sits inside the lower 60 percent with the bottom third the brightest part of the picture, the United States between 1968 and 1981, ultra-detailed, photoreal, 4K, 16:9, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+　サムネイルは本編カットの低コントラストにしません。硬い一灯・高コントラスト・明るい露出、
+　**画面の上40%は何も無い一様な面**（見出し文字を焼き込む場所）、被写体は下60%、下1/3が一番明るい。
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, readable words on a page, seals, emblems, logos, insignia, badge, name plates, wordmarks, manufacturer script, grille emblem, licence plate, registration plate, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, fire, flame, flames, smoke, burning, embers, soot, charred surfaces, a burning vehicle, a person on fire, burn injury, scarring, skin graft, bandages, hospital, ambulance, paramedic, blood, a crashed car, collision, wreckage, crumpled bodywork, shattered windscreen, police officer, uniform, patrol car, flashing lights, handcuffs, firearm, courtroom interior, gavel, judge's bench, jury box, witness stand, prison bars, scales of justice, hourglass, a handshake, children, modern smartphones, flat-screen monitors, LED headlights, modern cars, contemporary clothing, plastic modern fittings, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いているプロンプトがあります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。**サムネイルの6枚でも [NEG] は変えません。**
+
+★プロンプト冒頭の [HSTYLE] は人物レーンの印です。**次の文言に置き換えてください:**
+
+[HSTYLE] photographic, 35mm, natural light, real adults of the 1970s, ordinary period clothing and ordinary bodies, believable American setting, candid framing, no styling, no beauty retouching, no model look, no stock-photo smiles, expressions neutral and unremarkable, nobody looking at the lens
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・**この話の中の誰か**として通る人物を描かない——Richard Grimshaw、Lilly Gray とその家族、
+　Ulrich 姉妹と従姉、バンの運転者、Ford の従業員、判事、検事、弁護人。全員不可
+・**火・炎・煙・火傷・負傷者・病院を一枚も描かない。**この映画に火は一度も出ない
+・**衝突・事故車・潰れた車体・割れたフロントガラスを描かない。**衝突は一度も映さない
+・読める文字・数字・手書き・署名を一切描かない。タイプ文字は「斜めから見た質感」までで、
+　一語も判読できてはいけない
+・車体のバッジ・オーバル・車名スクリプト・グリルのエンブレム・ネームプレート・
+　ナンバープレートを一切描かない。**実在の Pinto として通る車を作らない**
+・**1968〜1981年のアメリカ。**液晶モニタ・LEDヘッドライト・携帯電話・現代の車・現代の服・
+　現代の樹脂部品を一切入れない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+★これは作り直しです。**同じ名前の既存ファイルを上書き**してください。
+　新しい ID を作らない。R047 と T003 の2枚だけです。
+
+──────── プロンプト ────────
+
+■ R047.png
+The driver's door and window of a plain unmarked early-1970s American subcompact hatchback in a pale colour, with no badge, no nameplate, no grille emblem, no model script and no plate front or rear, seen from outside, sky reflected across the glass, the interior not visible Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. The B-pillar, the C-pillar and every painted panel are COMPLETELY BARE PAINTED METAL with nothing raised, nothing chromed and no lettering of any kind on them: no model script, no chrome letterforms, no badge, no emblem and no nameplate anywhere on the body. [STYLE] Avoid: [NEG], chrome script on the pillar, raised chrome letterforms, model name on the body, badge on the pillar, emblem, nameplate
+
+■ T003.png
+The underbody of an early-1970s American subcompact hatchback raised high on a workshop lift, photographed from twelve feet away at standing height so THE WHOLE UNDERBODY RUNS AS ONE BRIGHT BAND ACROSS THE LOWER 60 PERCENT OF THE FRAME: the rear axle and the differential housing on the left, the flat forward face of the tank shell on the right, and a plain unmarked steel machinist's rule laid horizontally across the narrow gap between them, its graduations too fine and too oblique to read. One hard shop light from below and to the left makes the metal markedly brighter than anything behind it, and the bright swept concrete floor runs across the bottom third. THE ENTIRE UPPER 40 PERCENT IS ONE UNBROKEN FIELD of plain dark out-of-focus shop with nothing crossing it. The car is undamaged, carries no badge, no emblem, no wordmark, no nameplate and no plate of any kind, and there is no fire, no smoke, no scorching and no liquid anywhere in the picture Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. A MACHINIST'S STEEL RULE LIES FLAT ACROSS THE GAP between the differential housing and the fuel tank and is the sharpest thing in the frame; that gap fills the lower 60 percent of the picture, seen close and square-on -- not the whole car. [TSTYLE] Avoid: [NEG], licence plate, registration plate, number plate, badge on the grille, oval emblem, manufacturer wordmark, chrome nameplate, shop signage, readable markings on the rule, fire, flame, smoke, scorch marks, fuel spill, crumpled bodywork, hand, person in frame, object in the top of the frame, low contrast, dull flat lighting, dark subject, detail crossing the top of the frame, the whole car in frame, wide side-on view of a vehicle, no rule, no measuring tool
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前ちょうどで保存してください（このファイルは R001.png 〜 T006.png）。
+保存先 H:\pd-media\assets\ai\pinto\
+長辺 3840px 以上・16:9・PNG。

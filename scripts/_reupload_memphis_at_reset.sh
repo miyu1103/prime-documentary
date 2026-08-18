@@ -26,7 +26,13 @@ while true; do
 done
 say "quota available (${room}) -- uploading"
 
-PYTHONIOENCODING=utf-8 py -3.11 scripts/upload_schedule_case_v001.py --ep memphis --replaces "$OLD" \
+# NO --replaces. Re-measured 2026-08-17 13:10: e8zdPvBfb5k returns zero items from videos.list,
+# twice, seconds apart -- YouTube discarded the upload that never finished processing. --replaces
+# refuses when its target does not exist ("no such video on this channel"), so passing it here
+# would fail the job for the wrong reason. The receipt guard covers the same ground: it now
+# checks whether any prior receipt's video is STILL LIVE, and supersedes only when none is.
+say "old video $OLD is gone from the channel -- uploading fresh, no --replaces"
+PYTHONIOENCODING=utf-8 py -3.11 scripts/upload_schedule_case_v001.py --ep memphis \
   >> runs/memphis_reupload.log 2>&1
 rc=$?
 say "uploader exit=$rc"

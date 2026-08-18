@@ -86,7 +86,8 @@ except Exception:
 
 CHECK_NAME = "packaging_qc"
 
-TITLE_MAX_CHARS = 60        # spec row 13
+TITLE_MIN_CHARS = 59        # spec row 13, measured 2026-08-10 (Unseen, 1.41M subs)
+TITLE_MAX_CHARS = 100       # spec row 13; the old 60 was invented and the spec says so
 MIN_TITLE_VARIANTS = 2      # spec row 13 ("A/B variants")
 
 # Doctrine framing = the measured worst-retention pattern (PACKAGING_FIX_v001 s1/s6).
@@ -198,8 +199,13 @@ def evaluate_meta(meta_path: Path, extra_candidates: list[str] | None = None,
 
     if not title:
         problems.append("no title field (title/selected_title) in metadata")
-    elif len(title) > TITLE_MAX_CHARS:
-        problems.append(f"title {len(title)} chars > {TITLE_MAX_CHARS}")
+    elif not TITLE_MIN_CHARS <= len(title) <= TITLE_MAX_CHARS:
+        # A BAND, not a ceiling. Spec row 13 was rewritten 2026-08-10 from the Data API on the
+        # measured comparable: all 25 of its recent titles are 59-100 chars, every top-ten title
+        # is over 78, and its shortest title is its worst performer. The floor bites -- EP62-65's
+        # original 47/48/52/51-char titles all fail it.
+        problems.append(f"title {len(title)} chars outside "
+                        f"{TITLE_MIN_CHARS}-{TITLE_MAX_CHARS} (spec row 13)")
 
     if len(universe) < MIN_TITLE_VARIANTS:
         problems.append(

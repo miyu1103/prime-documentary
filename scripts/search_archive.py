@@ -539,8 +539,14 @@ def main() -> int:
             print(rec.get("file_path", ""))
         else:
             mb = rec.get("bytes", 0) / 1e6
-            print(f"[{rec.get('source'):>9}|{rec.get('license_decision'):>15}|"
-                  f"{rec.get('theme', ''):22}|{mb:7.1f}MB] {str(rec.get('title', ''))[:60]}")
+            # A null source/license/theme used to raise TypeError INSIDE the row loop, so the
+            # '-- N hits total' line never printed. A caller reading the last line for a count got
+            # a traceback, and a caller checking only the exit code saw a failure on a query that
+            # had results -- the measuring-instrument-lies pattern, and it could silently zero a
+            # register in a build script. Coerce to str; a missing licence prints '?', a visible
+            # unknown rather than a crash. (--md and --paths-only were never affected.)
+            print(f"[{str(rec.get('source') or '?'):>9}|{str(rec.get('license_decision') or '?'):>15}|"
+                  f"{str(rec.get('theme') or ''):22}|{mb:7.1f}MB] {str(rec.get('title', ''))[:60]}")
             print(f"    {rec.get('file_path', '')}")
     print(f"-- {len(hits)} hits total"
           + (f", showing first {args.limit}" if len(hits) > args.limit else "")

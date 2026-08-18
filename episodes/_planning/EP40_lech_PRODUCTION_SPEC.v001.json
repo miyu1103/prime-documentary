@@ -1,0 +1,167 @@
+{
+  "_generated_by": "scripts/build_production_spec.py",
+  "_source_of_truth": "This file is DERIVED from the finalised script. Do not hand-edit it, and do not restate these numbers in prose documents -- generate from here. The EP39/EP40 document set accrued 28 blocker-level contradictions precisely because the same facts were hand-copied into six files.",
+  "schema": "pd_production_spec.v1",
+  "episode_id": "PD-2026-040-lech",
+  "ep": "EP40",
+  "slug": "lech",
+  "script_file": "EP40_lech_script.en.v001.md",
+  "wpm_used": 178.1,
+  "words_total": 2100,
+  "narration_seconds": 707.5,
+  "acts": [
+    {
+      "heading": "HOOK — 0:00–0:30 （語同期字幕・ナレ入り） [S02 S05 S09]",
+      "scene_codes": [
+        "S02",
+        "S05",
+        "S09"
+      ],
+      "words": 49,
+      "seconds": 16.5
+    },
+    {
+      "heading": "FLASH-FORWARD — 8s [S23]",
+      "scene_codes": [
+        "S23"
+      ],
+      "words": 23,
+      "seconds": 7.7
+    },
+    {
+      "heading": "OP — ブランドタイトル [Bookends: BrandOpening, 3.5s]",
+      "scene_codes": [],
+      "words": 27,
+      "seconds": 9.1
+    },
+    {
+      "heading": "ACT 1 — 4219 South Alton Street [S01 S02 S03 S04 S06]",
+      "scene_codes": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S06"
+      ],
+      "words": 394,
+      "seconds": 132.7
+    },
+    {
+      "heading": "ACT 2 — What it costs to be the address [S07 S08 S10 S11 S12]",
+      "scene_codes": [
+        "S07",
+        "S08",
+        "S10",
+        "S11",
+        "S12"
+      ],
+      "words": 409,
+      "seconds": 137.8
+    },
+    {
+      "heading": "ACT 3 — Police power [S13 S14 S15 S16 S17]",
+      "scene_codes": [
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17"
+      ],
+      "words": 363,
+      "seconds": 122.3
+    },
+    {
+      "heading": "ACT 4 — The address is the only qualification [S18 S19 S20 S21 S22]",
+      "scene_codes": [
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22"
+      ],
+      "words": 598,
+      "seconds": 201.5
+    },
+    {
+      "heading": "ENDING — 感情ペイオフ ＋ CTA [S23 S24 S25]",
+      "scene_codes": [
+        "S23",
+        "S24",
+        "S25"
+      ],
+      "words": 215,
+      "seconds": 72.4
+    },
+    {
+      "heading": "ED — [Bookends: BrandEndcard, 9s]",
+      "scene_codes": [],
+      "words": 10,
+      "seconds": 3.4
+    }
+  ],
+  "scenes": {
+    "source": "script",
+    "codes": [
+      "S01",
+      "S02",
+      "S03",
+      "S04",
+      "S05",
+      "S06",
+      "S07",
+      "S08",
+      "S09",
+      "S10",
+      "S11",
+      "S12",
+      "S13",
+      "S14",
+      "S15",
+      "S16",
+      "S17",
+      "S18",
+      "S19",
+      "S20",
+      "S21",
+      "S22",
+      "S23",
+      "S24",
+      "S25"
+    ],
+    "count": 25
+  },
+  "assets": {
+    "total_cuts": 222,
+    "still": {
+      "distinct": 83,
+      "cuts": 99,
+      "mean_uses": 1.19,
+      "cap": 2
+    },
+    "factory": {
+      "distinct": 91,
+      "cuts": 91,
+      "mean_uses": 1.0,
+      "cap": 1
+    },
+    "motion": {
+      "distinct": 16,
+      "cuts": 32,
+      "mean_uses": 2.0,
+      "cap": 2
+    },
+    "distinct_total": 190,
+    "first_use_share": 0.8559,
+    "first_use_floor": 0.7,
+    "still_share_of_cuts": 0.4459,
+    "still_share_cap": 0.45
+  },
+  "motion": {
+    "beats_floor": 30,
+    "beats_per_min_floor": 2.5,
+    "variety_floor": 3,
+    "note": "check_motion_density counts graphics+figures+heroCuts inside film.json ONLY. AE cards composited afterwards do NOT count toward it -- both EP39 and EP40 planned around AE cards and would have failed. Put beats_floor beats in film.json regardless of AE."
+  },
+  "mean_shot_seconds": 3.19,
+  "max_shot_seconds": 6.0
+}

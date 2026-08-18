@@ -108,7 +108,8 @@ def main() -> int:
         if outp.exists() and outp.stat().st_size > MIN_OK_BYTES:
             skipped += 1
             if not a.dry_run and not (pub_dir / outp.name).exists():
-                shutil.copy(outp, pub_dir / outp.name)
+                if outp.resolve() != (pub_dir / outp.name).resolve():
+                    shutil.copy(outp, pub_dir / outp.name)
             continue
         if a.dry_run:
             print(f"  would assemble {stem} ({len(frames)} frames)")
@@ -116,7 +117,13 @@ def main() -> int:
             continue
         ok, err = assemble_one(frames, outp, a.fps_in)
         if ok:
-            shutil.copy(outp, pub_dir / outp.name)
+            # With the archive detached out_dir IS pub_dir, and shutil.copy onto itself raises
+            # SameFileError. Measured 2026-08-17: it killed the assembler on the FIRST clip of
+            # every chunk, so openfields finished 53 conversions and only 10 mp4 reached the
+            # render-visible pool. The i2v looked complete and the film would have been built
+            # without 43 of its motion clips.
+            if outp.resolve() != (pub_dir / outp.name).resolve():
+                shutil.copy(outp, pub_dir / outp.name)
             made += 1
         else:
             failed += 1

@@ -28,6 +28,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DESIGNS = ROOT / "episodes" / "_planning" / "short_designs"
 SPINE = 8
+# The narration builder looks delivery up in a fixed table and dies on anything else. "flat" felt
+# like a reasonable word and took all twelve Shorts down with a KeyError.
+DELIVERIES = {"intense", "building", "calm"}
 
 
 def check(path: Path) -> list[str]:
@@ -59,6 +62,11 @@ def check(path: Path) -> list[str]:
             problems.append(f"{sid}: line ids are {got}, expected {want}")
 
         for ln in lines:
+            dlv = ln.get("delivery")
+            if dlv not in DELIVERIES:
+                problems.append(
+                    f"{sid} {ln.get('id')}: delivery {dlv!r} is not one of {sorted(DELIVERIES)} - "
+                    f"the narration builder has no settings for it")
             srcs = ln.get("source_lines") or []
             if not srcs:
                 problems.append(f"{sid} {ln.get('id')}: no source_lines - unsourced sentence")

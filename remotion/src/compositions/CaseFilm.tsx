@@ -81,11 +81,45 @@ export type FilmData = {
   // above the graded body and below the captions. OPTIONAL: episodes without heroCuts (carsearch
   // etc.) are unaffected (the map runs over []).
   heroCuts?: {start: number; dur: number; src: string}[];
+  /** SPEC v2 row 9 (owner decision 2026-08-10, "66話から"): the narrator speaks from frame 0.
+   * Seconds from the start of the film at which the Body sequence -- and the <Audio> master
+   * inside it -- begins. EP66 declares 0. OPT-IN AND NULLABLE ON PURPOSE: when an episode does
+   * not declare it the lead is `hookSeconds + OPENING_SEC`, which is exactly where the Body
+   * sequence has started since this composition was written, so EP62-65 render bit-identical.
+   * Do not give it a default value in the type -- an absent key must stay absent. */
+  leadSeconds?: number;
+  /** Which form of the channel opening this film places (EP66 PACKAGING v001 sections 4 and 7).
+   *
+   * OPT-IN AND NULLABLE ON PURPOSE, exactly like `leadSeconds`. Absent means 'card': the
+   * full-screen 3.5 s <BrandOpening> between the hook montage and the body, which is what
+   * every episode up to EP65 renders. 'overlay' is the zero-lead layout: the same component
+   * in its lower-band form, placed OVER the running body so neither the picture nor the
+   * narration stops for it.
+   *
+   * A film with `leadSeconds: 0` and NO `openingVariant` has no opening at all -- the card
+   * has nowhere to go and no overlay was asked for. That combination is what
+   * check_final_acceptance.check_bookends() now fails on; it is not a legal shipping state. */
+  openingVariant?: 'card' | 'overlay';
 };
 
+/** Seconds after the end of the spoken hook at which the overlay opening rises.
+ * EP66 PACKAGING v001 section 4 fixes the band at 0:20.5-0:24.0 against a 20.3 s hook, so the
+ * offset is 0.2 s and the placement stays derived from the film's own `hookSeconds` instead of
+ * being written twice. scripts/check_final_acceptance.py reads this constant out of this file
+ * rather than keeping a copy of the number. */
+export const OPENING_OVERLAY_OFFSET_SEC = 0.2;
+
+/** Frame at which the Body sequence (and the narration master inside it) starts.
+ * Absent `leadSeconds` reproduces the historical expression term for term --
+ * `Math.round(hookSeconds * fps) + Math.round(OPENING_SEC * fps)` -- so every episode that
+ * does not declare the key keeps the identical timeline it has always had. */
+export const caseFilmLeadFrames = (data: FilmData, fps: number) =>
+  data.leadSeconds == null
+    ? Math.round((data.hookSeconds || 0) * fps) + Math.round(OPENING_SEC * fps)
+    : Math.round(data.leadSeconds * fps);
+
 export const caseFilmDurationInFrames = (data: FilmData, fps: number) =>
-  Math.round((data.hookSeconds || 0) * fps) +
-  Math.round(OPENING_SEC * fps) +
+  caseFilmLeadFrames(data, fps) +
   Math.ceil(data.narrationSeconds * fps) +
   Math.round(ENDCARD_SEC * fps);
 
@@ -96,7 +130,14 @@ const Cover: React.FC<{src: string; style?: React.CSSProperties}> = ({src, style
 /** Footage: graded + navy-tinted + vignetted so bright/washed clips (fog, snow, white tech)
  * unify into the dark navy palette; a slow push (camera move on real footage — not a still zoom)
  * gives a motion floor so even near-locked clips never read as frozen. */
-const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: number; srcSeconds?: number | null}> = ({src, startFrom, dir, dur, srcSeconds}) => {
+const Footage: React.FC<{
+  src: string;
+  startFrom: number;
+  dir: number;
+  dur: number;
+  srcSeconds?: number | null;
+  lift?: number;
+}> = ({src, startFrom, dir, dur, srcSeconds, lift: _lift}) => {
   const f = useCurrentFrame();
   const {fps: _fps} = useVideoConfig();
   // CLAMP THE IN-POINT. startFrom is derived from the cut index, which knows nothing about how
@@ -118,6 +159,10 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: numbe
   // and the frame goes black (EP55/EP57 both failed the gate on exactly that).
   const _srcFrames = srcSeconds ? Math.max(1, Math.floor(srcSeconds * _fps) - 1) : null;
   const _needsLoop = _srcFrames != null && _srcFrames < dur;
+  const lift = typeof _lift === 'number' ? Math.max(1, _lift) : 1;
+  const liftStyle = lift > 1.001 ? {
+    filter: `brightness(${lift.toFixed(3)}) contrast(${(1 + (lift - 1) * 0.25).toFixed(3)})`
+  } : null;
   const _video = (
       <OffthreadVideo
         src={staticFile(src)}
@@ -133,8 +178,14 @@ const Footage: React.FC<{src: string; startFrom: number; dir: number; dur: numbe
       />
   );
   return (
-    <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
-      {_needsLoop && _srcFrames ? <Loop durationInFrames={_srcFrames}>{_video}</Loop> : _video}
+      <AbsoluteFill style={{backgroundColor: ink, overflow: 'hidden'}}>
+      {liftStyle ? (
+        <AbsoluteFill style={liftStyle}>
+          {_needsLoop && _srcFrames ? <Loop durationInFrames={_srcFrames}>{_video}</Loop> : _video}
+        </AbsoluteFill>
+      ) : (
+        _needsLoop && _srcFrames ? <Loop durationInFrames={_srcFrames}>{_video}</Loop> : _video
+      )}
       <AbsoluteFill style={{pointerEvents: 'none', backgroundColor: navy, opacity: 0.14, mixBlendMode: 'multiply'}} />
       <AbsoluteFill
         style={{pointerEvents: 'none', background: `radial-gradient(135% 108% at 50% 44%, transparent 60%, ${ink}55 100%)`}}
@@ -420,6 +471,7 @@ const CutView: React.FC<{cut: Cut; index: number}> = ({cut, index}) => {
         src={cut.src}
         startFrom={cut.startFrom != null ? Math.round(cut.startFrom * fps) : (index * 47) % 160}
         srcSeconds={cut.srcSeconds ?? null}
+        lift={typeof cut.lift === 'number' ? cut.lift : undefined}
         dir={index % 2 === 0 ? 1 : -1}
         dur={dur}
       />
@@ -737,19 +789,37 @@ export const CaseFilm: React.FC<{data: FilmData; seriesLabel: string; title: str
   const op = Math.round(OPENING_SEC * fps);
   const ed = Math.round(ENDCARD_SEC * fps);
   const body = Math.ceil(data.narrationSeconds * fps);
+  // === hook + op for every episode that does not declare leadSeconds (see caseFilmLeadFrames).
+  const lead = caseFilmLeadFrames(data, fps);
+  // The full-frame cold-open montage and the full-frame brand card only exist in the layout
+  // that has room in FRONT of the body for them. With a zero lead (EP66) the cold open IS the
+  // first body cuts -- cut starts in <slug>_film.json are body-relative, so a zero lead makes
+  // them absolute -- and the brand opening becomes a lower-band overlay over continuing
+  // picture and narration (EP66 PACKAGING v001 sections 4 and 7, implemented below and in
+  // <BrandOpening variant="overlay">). This is true for every episode with no leadSeconds,
+  // so their element tree is unchanged.
+  const overlayOpening = data.openingVariant === 'overlay';
+  const bookendsInFront = !overlayOpening && lead >= hook + op;
+  // Where the band rises. Derived from the film's own hookSeconds so the number lives once:
+  // EP66's 20.3 s hook + 0.2 s = 0:20.5, which is PACKAGING section 4's slot.
+  const overlayFrom = Math.round(
+    ((data.hookSeconds || 0) + OPENING_OVERLAY_OFFSET_SEC) * fps,
+  );
   return (
     <AbsoluteFill style={{backgroundColor: ink}}>
-      {hook > 0 && (
+      {hook > 0 && bookendsInFront && (
         <Sequence from={0} durationInFrames={hook} name="Hook">
           <Hook hook={data.hook} line={data.hookLine} />
         </Sequence>
       )}
 
-      <Sequence from={hook} durationInFrames={op} name="Opening">
-        <BrandOpening seriesLabel={seriesLabel} title={title} subtitle={subtitle} />
-      </Sequence>
+      {bookendsInFront && (
+        <Sequence from={hook} durationInFrames={op} name="Opening">
+          <BrandOpening seriesLabel={seriesLabel} title={title} subtitle={subtitle} />
+        </Sequence>
+      )}
 
-      <Sequence from={hook + op} durationInFrames={body} name="Body">
+      <Sequence from={lead} durationInFrames={body} name="Body">
         <Audio src={staticFile(data.narration)} />
         {data.cuts.map((c, i) => (
           <Sequence key={i} from={Math.round(c.start * fps)} durationInFrames={Math.max(1, Math.round(c.dur * fps))} name={`cut-${i}`}>
@@ -786,7 +856,18 @@ export const CaseFilm: React.FC<{data: FilmData; seriesLabel: string; title: str
         <Grain opacity={0.06} />
       </Sequence>
 
-      <Sequence from={hook + op + body} durationInFrames={ed} name="Endcard">
+      {/* THE OPENING, zero-lead layout (EP66 PACKAGING v001 sections 4 and 7). Deliberately
+          placed AFTER the Body sequence so it composites ON TOP of the running cut, and
+          deliberately NOT wrapped around anything: the body keeps playing and the <Audio>
+          master inside it keeps speaking for the whole 3.5 s. Renders only when the film
+          declares openingVariant 'overlay', so no existing episode gains an element. */}
+      {overlayOpening && (
+        <Sequence from={overlayFrom} durationInFrames={op} name="Opening">
+          <BrandOpening variant="overlay" seriesLabel={seriesLabel} title={title} subtitle={subtitle} />
+        </Sequence>
+      )}
+
+      <Sequence from={lead + body} durationInFrames={ed} name="Endcard">
         <BrandEndcard />
       </Sequence>
     </AbsoluteFill>

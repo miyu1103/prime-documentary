@@ -103,7 +103,10 @@ FPS = 30
 # The CaseFilm render (remotion/src/compositions/CaseFilm.tsx) lays out:
 #   Hook[0, hookSeconds] -> Opening[hookSeconds, hookSeconds+OPENING_SEC]
 #   -> Body[lead, lead+narrationSeconds] -> Endcard[.., +ENDCARD_SEC]
-#   where lead = hookSeconds + OPENING_SEC.
+#   where lead = hookSeconds + OPENING_SEC, UNLESS the film data declares its own
+#   `leadSeconds` (SPEC v2 row 9, binding from EP66: the narrator speaks from frame 0, so
+#   EP66 declares leadSeconds 0 and there is no silent region in front of the body at all).
+#   read_video_timeline() returns the declared value or None; the caller falls back.
 # The narration audio + burned captions + moving-diagram figures ALL live in the
 # Body, offset by `lead`. So this mix MUST place the whole 4-layer body at `lead`
 # and fill the hook/opening lead + endcard tail; otherwise the narration plays
@@ -115,7 +118,9 @@ OPENING_SEC = 3.5
 ENDCARD_SEC = 9.0
 
 # hook/opening intro + endcard outro fills (no VO in these regions, so no ducking
-# needed and the bed can sit a touch louder than the ducked body bed).
+# needed and the bed can sit a touch louder than the ducked body bed). With a declared
+# lead of 0 there IS no intro region: intro_segments_for(0) returns [] and has_bookends is
+# False, so the mix is body + endcard tail only and the VO starts on the first sample.
 INTRO_MUSIC_VOL = 0.30       # hook->opening bed that builds into the body
 OUTRO_MUSIC_VOL = 0.26       # endcard bed, gently resolving
 RISER_FILL = ("sfx_riser_2s.mp3", 2.0, 0.24)  # optional riser landing on body start (lead)
@@ -372,17 +377,27 @@ def find_film_data(ep: str, override: Optional[str]) -> Optional[Path]:
     return None
 
 
-def read_video_timeline(ep: str, override: Optional[str]) -> tuple[float, float, Optional[Path]]:
-    """Return (hookSeconds, narrationSeconds, film_data_path) from the CaseFilm data
-    so the mix can be offset by `lead` and span the whole composition. Falls back to
-    (0.0, 0.0, None) if no film_data is found (mix then stays body-only == legacy)."""
+def read_video_timeline(
+        ep: str, override: Optional[str]) -> tuple[float, float, Optional[float], Optional[Path]]:
+    """Return (hookSeconds, narrationSeconds, leadSecondsOrNone, film_data_path) from the
+    CaseFilm data so the mix can be offset by `lead` and span the whole composition. Falls
+    back to (0.0, 0.0, None, None) if no film_data is found (mix stays body-only == legacy).
+
+    `leadSecondsOrNone` mirrors `caseFilmLeadFrames` in remotion/src/compositions/CaseFilm.tsx:
+    it is the film data`s own `leadSeconds` when the episode declares one (SPEC v2 row 9,
+    binding from EP66 -- the narrator speaks from frame 0), and None when it does not. The
+    caller must fall back to `hookSeconds + OPENING_SEC` on None, which is what every
+    episode before EP66 gets, so their mixes are byte-identical. A declared 0.0 must survive
+    this function: that is why the absent case is None and not 0.0."""
     fd = find_film_data(ep, override)
     if fd is None:
-        return 0.0, 0.0, None
+        return 0.0, 0.0, None, None
     data = json.loads(fd.read_text("utf-8"))
     hook = float(data.get("hookSeconds") or 0.0)
     narr = float(data.get("narrationSeconds") or 0.0)
-    return hook, narr, fd
+    raw_lead = data.get("leadSeconds")
+    lead = None if raw_lead is None else float(raw_lead)
+    return hook, narr, lead, fd
 
 
 def normalize_section(section: str) -> str:
@@ -1112,9 +1127,14 @@ def main() -> int:
 
     # SYNC FIX: read the render's video timeline so the body sits at `lead` and the
     # mix spans the WHOLE composition (hook/opening lead + body + endcard tail).
-    hook_seconds, narration_seconds, film_data_path = read_video_timeline(ep, args.film_data)
+    hook_seconds, narration_seconds, lead_declared, film_data_path = read_video_timeline(
+        ep, args.film_data)
     if film_data_path is not None and narration_seconds > 0:
-        lead = round3(hook_seconds + OPENING_SEC)
+        # SPEC v2 row 9 (binds from EP66): an episode may declare where its narration starts.
+        # `leadSeconds: 0` puts the voice at the first frame of the film. Absent -- which is
+        # every episode up to and including EP65 -- this is exactly the old expression, so
+        # their mixes are unchanged. `is None`, not falsy: a declared 0.0 must win.
+        lead = round3(hook_seconds + OPENING_SEC) if lead_declared is None else round3(lead_declared)
         # body_len == the render's Body length (narrationSeconds); guard so it always
         # covers the internal narration timeline (no cue ever falls outside the body).
         body_len = round3(max(body_internal, narration_seconds))

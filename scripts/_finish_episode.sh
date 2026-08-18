@@ -78,10 +78,19 @@ say "  built from $(basename "$CFG")"
 # a defect: EP54 lost fourteen purpose-made courtroom stills to a surplus-trimming rule and
 # EP58/EP59 carried the same loss unnoticed; EP56 rendered a red London bus into a film whose
 # highest constraint forbids bus imagery because a sub-postmaster died under one.
-py -3.11 scripts/check_spec_satisfied.py --slug "$SLUG" >> "$LOG" 2>&1
+# THE GUARD BELOW USED TO BE UNABLE TO FIRE. It searched `grep "^\[satisfied\]" | tail -4`,
+# but check_spec_satisfied prints its failures as detail lines beginning with two spaces and a
+# dash -- "  - mandatory_stills: 98 of 185 declared still(s) are in no cut". The inner grep
+# threw those away and kept only the two summary lines, which never contain the words being
+# searched for. Measured on EP66 openfields, whose film is missing 96 of 185 purpose-made
+# plates: the guard did not die. Every episode since this was written rendered unprotected by
+# the very check whose comment above lists three defects it exists to catch.
+# Fixed by capturing the check's own output instead of re-reading the shared log.
+py -3.11 scripts/check_spec_satisfied.py --slug "$SLUG" > "${LOG}.satisfied" 2>&1
 _sat=$?
-grep -E "^\[satisfied\]" "$LOG" | tail -4 | sed "s/^/[finish:$SLUG]   /"
-if [ $_sat -ne 0 ] && grep -qE "mandatory_stills|forbidden_subjects" <(grep "^\[satisfied\]" "$LOG" | tail -4); then
+cat "${LOG}.satisfied" >> "$LOG"
+sed "s/^/[finish:$SLUG]   /" "${LOG}.satisfied" | head -8
+if [ $_sat -ne 0 ] && grep -qE "mandatory_stills|forbidden_subjects" "${LOG}.satisfied"; then
   die "the film violates its own spec (mandatory stills missing, or forbidden subject present)"
 fi
 
@@ -91,10 +100,25 @@ fi
 # film.json, so the burned-in captions and the sidecar .srt break identically. It runs BEFORE
 # the render, because burned captions cannot be fixed afterwards.
 EPDIR=$(ls -d episodes/PD-2026-0*-${SLUG} | head -1)
-SRT="${EPDIR}/08_edit/captions.final.v001.srt"
+# THE FILENAME WAS HARDCODED WHILE [4/7] WRITES WHEREVER THE FILMCONFIG SAYS. On EP67
+  # ramirez those are two different files: tonight's script extension moved the master from
+  # 1448.020s to 1600.809s and the captions were re-cut as captions.final.v002.srt with the
+  # filmconfig repointed, while v001 -- 448 words short, ending 152.8s early -- stayed on disk
+  # for audit. This line would have polished v001 and written THOSE cues into the film json,
+  # burning captions 152.8 seconds out of sync into the render. Read the declared value.
+  SRT=$(py -3.11 -c "import json,sys;print(json.load(open(sys.argv[1],encoding='utf-8')).get('captions') or '')" "$CFG" 2>/dev/null)
+  [ -n "$SRT" ] && [ -f "$SRT" ] || SRT="${EPDIR}/08_edit/captions.final.v001.srt"
 if [ -f "$SRT" ]; then
-  say "[4b] polish captions (no orphans / no dangling ends / <=84 chars per cue)"
-  py -3.11 scripts/polish_captions_srt.py --srt "$SRT" --lead 0.25 \
+  # THE LEAD THIS STEP APPLIES IS THE EPISODE'S, NOT A CONSTANT. 0.25 s stays the house default
+  # and is exactly what every episode up to EP65 gets, because no filmconfig before EP66
+  # declares the key. EP66's captions were aligned with the house 0.60 s lead when they were
+  # written (out_ep66_captions.log: "applied caption lead -0.60s"), so the hard-coded 0.25 here
+  # would have re-polished them to 0.85 s -- an episode's declared value silently overwritten by
+  # its own pipeline, several steps after it was declared. A filmconfig may now declare
+  # captionLeadSeconds; when it does not, this resolves to 0.25 and nothing changes.
+  CAP_LEAD=$(py -3.11 -c "import json,sys;v=json.load(open(sys.argv[1],encoding='utf-8')).get('captionLeadSeconds');print(0.25 if v is None else float(v))" "$CFG")
+  say "[4b] polish captions (lead ${CAP_LEAD}s from $(basename "$CFG"); no orphans / no dangling ends / <=84 chars per cue)"
+  py -3.11 scripts/polish_captions_srt.py --srt "$SRT" --lead "$CAP_LEAD" \
        --film "remotion/src/data/${SLUG}_film.json" >> "$LOG" 2>&1 || die "caption polish failed"
   py -3.11 scripts/check_caption_breaks.py "$SRT" >> "$LOG" 2>&1 || die "caption breaks still bad"
   grep -E "^(PASS|FAIL) caption_breaks|cues .* orphans" "$LOG" | tail -2 | sed "s/^/[finish:$SLUG]   /"
@@ -104,11 +128,25 @@ say "[4c] retire staged clips the film does not reference (footage_utilization)"
 py -3.11 scripts/retire_unused_pool_clips.py --slug "$SLUG" >> "$LOG" 2>&1 || true
 grep -E "^\[retire\]" "$LOG" | tail -1 | sed "s/^/[finish:$SLUG]   /"
 
+# [4d] THE AUDIO IS PROVED BUILDABLE BEFORE THE RENDER, NOT AFTER IT.
+# Step 7 now depends on build_case_film_audio.py, whose density gate rejects an episode with
+# too few SFX cues or too few distinct ambience beds (it returns 1). Discovering that after a
+# four-hour render would throw the render away. The dry-run exits non-zero on exactly the same
+# conditions and takes seconds. Its provenance goes to a SCRATCH path on purpose: written into
+# 06_audio it would become the highest revision and the mux would then bind to a mix that was
+# never rendered.
+say "[4d] dry-run the 4-layer mix (a failing density gate costs seconds here, a render later)"
+mkdir -p out_qc
+py -3.11 scripts/build_case_film_audio.py --ep "$(basename "$(ls -d episodes/PD-2026-0*-${SLUG} | head -1)")" \
+     --out "out_qc/_${SLUG}_audio_dryrun.json" --dry-run >> "$LOG" 2>&1 \
+  || die "the 4-layer mix would fail its density gate -- fix the sound plan BEFORE rendering"
+grep -E "^density:" "$LOG" | tail -1 | sed "s/^/[finish:$SLUG]   /"
+
 say "[5/7] rebuild slim public dir (hardlinks, never junctions)"
 rm -rf "remotion/public_ep${NUM}"
 py -3.11 scripts/build_render_public_dir.py --slug "$SLUG" >> "$LOG" 2>&1 || die "public dir not render-ready"
 
-EXPECT=$(py -3.11 -c "import json;d=json.load(open(r'remotion/src/data/${SLUG}_film.json',encoding='utf-8'));print(round(d['narrationSeconds']+d['hookSeconds']+3.5+9.0,1))")
+EXPECT=$(py -3.11 -c "import json;d=json.load(open(r'remotion/src/data/${SLUG}_film.json',encoding='utf-8'));lead=d['leadSeconds'] if d.get('leadSeconds') is not None else d['hookSeconds']+3.5;print(round(d['narrationSeconds']+lead+9.0,1))")
 say "[5b] 60-second probe render BEFORE committing to the full film"
 bash scripts/probe_before_render.sh "$COMP" "remotion/src/data/${SLUG}_film.json" "remotion/public_ep${NUM}" "$SLUG" >> "$LOG" 2>&1 || {
   grep -E "^\[probe\]" "$LOG" | tail -4 | sed "s/^/[finish:$SLUG]   /"
@@ -122,13 +160,53 @@ bash scripts/pd_render_guarded.sh "$COMP" "remotion/src/data/${SLUG}_film.json" 
      "remotion/public_ep${NUM}" "out/${SLUG}.mp4" "$EXPECT" >> "$LOG" 2>&1 \
      || die "render or its gates failed (see $LOG and out_render_${SLUG}.mp4.log)"
 
-say "[7/7] BGM bed + authoritative master VO, then re-gate the muxed result"
+say "[7/7] 4-layer mix (VO + music + ambience + SFX) -> mux with the mix-sha stamp, then re-gate"
 EP=$(ls -d episodes/PD-2026-0*-${SLUG} | head -1)
+EPID=$(basename "$EP")
 OUT="${EP}/08_edit/${SLUG}_final_bgm.v001.mp4"
 mkdir -p "${EP}/08_edit"
 rm -f "$OUT"
-py -3.11 scripts/build_case_bgm_generic.py --slug "$SLUG" --render "out/${SLUG}.mp4" --out "$OUT" >> "$LOG" 2>&1 \
-     || die "BGM build failed"
+# WHY THIS IS NO LONGER build_case_bgm_generic.py (2026-08-11).
+# That tool builds narration + music and NOTHING else: its ambience beds are multiplied by
+# `volume=0.0` (measured: -91.0 dB, i.e. digital silence) and it contains no SFX layer at all
+# -- `grep -i sfx scripts/build_case_bgm_generic.py` returns nothing. So every episode from
+# EP38 on shipped a TWO-layer bed while build_case_film_audio.py's real FOUR-layer mix sat
+# unused on the SSD: precisely the "orphaned sound plan" that check_sound_layers was written
+# to catch. It duly failed on 83 of 108 acceptance receipts and needed an owner waiver each
+# time. The tag the gate wants (audio_mix_sha256) could NOT honestly be stamped on the BGM
+# output, because that output is not the mix the tag names -- stamping it would have been a
+# false attestation. The fix is to deliver the mix the spec actually asks for. EP32-EP36
+# shipped exactly this way and passed sound_layers 25 times.
+# The mix is written to the next FREE provenance revision: build_case_film_audio defaults to
+# v001 and would otherwise overwrite an existing provenance (CLAUDE invariant 6).
+AREV=$(py -3.11 -c "
+import glob, sys
+ns = []
+for p in glob.glob(sys.argv[1] + '/06_audio/audio_provenance.v*.json'):
+    tail = p.split('audio_provenance.v')[-1].split('.json')[0]
+    if tail.isdigit():
+        ns.append(int(tail))
+print('v%03d' % ((max(ns) + 1) if ns else 1))
+" "$EP")
+say "  building the 4-layer mix as ${AREV}"
+py -3.11 scripts/build_case_film_audio.py --ep "$EPID" --revision "$AREV" --render >> "$LOG" 2>&1 \
+     || die "4-layer mix build failed -- see $LOG"
+grep -E "^ambience:|^SFX cues:|^density:" "$LOG" | tail -3 | sed "s/^/[finish:$SLUG]   /"
+# The mux makes that WAV the SOLE audio, stamps audio_mix_sha256, and REFUSES a mix whose
+# duration disagrees with the render -- a stale mix would slide the VO off the burned-in
+# captions while the ship gate went green. All four EP62-65 mixes on disk were stale by
+# 15.9-115.0 s when this was written, so the guard is not theoretical.
+py -3.11 scripts/build_case_film_mux.py --ep "$EPID" --video "out/${SLUG}.mp4" --out "$OUT" >> "$LOG" 2>&1 \
+     || die "mux failed (stale mix, or the stamp did not read back) -- see $LOG"
+grep -E "^freshness|^stamped tag readback" "$LOG" | tail -2 | sed "s/^/[finish:$SLUG]   /"
+# Snapshot the film json BESIDE the master, before anything can rebuild it. Without this
+# the cheap repair path is lost the moment the pool changes: scripts/pd_splice_cuts.py can
+# replace a handful of cuts in a finished master in ~30 min instead of a 4-hour re-render, but
+# only if it has the json the master was actually rendered from. EP62 greene lost exactly that --
+# its json was rebuilt nine hours after its render, 278 of 389 cuts moved, and the splice aborted
+# on its own provenance probe. Cheap insurance: a few hundred KB per episode.
+cp "remotion/src/data/${SLUG}_film.json" "${EP}/08_edit/${SLUG}_film.rendered.json" 2>/dev/null \
+  && say "[7/7] snapshotted the film json beside the master (splice-repair provenance)"
 py -3.11 scripts/pd_postrender_gate.py "$OUT" --expect-sec "$EXPECT" --frames 40 \
      --out "out_qc/qc_frames_${SLUG}" >> "$LOG" 2>&1 \
      || die "post-gate FAILED on the BGM master -- do not show it"

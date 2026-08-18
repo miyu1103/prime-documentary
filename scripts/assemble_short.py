@@ -529,8 +529,12 @@ def main() -> int:
         # fetched a 1 kB 404 body, were told "fetched", and died at render time on
         # "Error loading image". The bytes we uploaded are on disk anyway.
         pkg = ROOT / "episodes" / design["episode_id"] / "09_package"
-        local = sorted(list(pkg.glob("thumbnail.ctr*.png")) + list(pkg.glob("thumbnail.auto*.png"))
-                       + list(pkg.glob("thumbnail*.jpg")))
+        # thumbnail.selected.vNNN.png is the one an owner picked and the one the upload sends, so
+        # it goes first and the highest revision wins. It was missing from this list entirely, and
+        # four episodes with a chosen thumbnail on disk reported "no destination thumbnail".
+        selected = sorted(pkg.glob("thumbnail.selected*.png"))
+        local = (selected[-1:] + sorted(list(pkg.glob("thumbnail.ctr*.png"))
+                 + list(pkg.glob("thumbnail.auto*.png")) + list(pkg.glob("thumbnail*.jpg"))))
         if local:
             subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(local[0]),
                             "-vf", "scale=1280:720", "-q:v", "3", str(thumb)], check=True)

@@ -80,7 +80,7 @@ If the officer directed to serve notice on the defendant in forcible entry or de
 
 Read it slowly and it sounds careful. Three steps, descending. Find the person. Failing that, find a family member over sixteen. Failing that, post it somewhere conspicuous on the premises. In practice, the door.
 
-Look at the middle step for a moment, because of what it assumes. A member of the defendant's family over sixteen years of age. Somebody home. Somebody old enough to understand a court paper and to pass it on. The statute even lets the officer explain it — he may explain and leave a copy. That is a conversation on a doorstep, with a person who lives there.
+What does the middle step assume? A member of the defendant's family over sixteen years of age. Somebody home. Somebody old enough to understand a court paper and to pass it on. The statute even lets the officer explain it — he may explain and leave a copy. That is a conversation on a doorstep, with a person who lives there.
 
 The statute is written for a household with somebody in it. And the third step is what happens when there is not.
 
@@ -226,9 +226,9 @@ Undisputed testimony. Often removed. Removed by other tenants, the District Cour
 
 Which is how the sheriff's side had described the statute.
 
-The trial judge found that the testimony was undisputed. The trial judge found that the notices often came off. And the trial judge ruled that the procedure was constitutionally sufficient — on the ground that posting only happens after the officer cannot find the defendant.
+So how can a step that happens on the first visit be a last resort?
 
-That is not a contradiction in the judge's logic. It is the same assumption the sheriff's side made and the same one the statute makes: that a step described as a last resort is in fact a last resort. Read the words of the law and it is. Read the depositions and it is not.
+There is no contradiction in the judge's logic. It is the same assumption the sheriff's side made and the same one the statute makes: that a step described as a last resort is in fact a last resort. Read the words of the law and it is. Read the depositions and it is not.
 
 The Sixth Circuit reversed, and overruled *Weber* to do it. Its own decision was seventy years old and pointed the other way, and the court of appeals said the ground underneath it had shifted. There may have been a time, it wrote, when posting provided a surer means of giving notice than did mailing. That time has passed. The uncontradicted testimony by process servers themselves that posted summonses are not infrequently removed by persons other than those served constitutes effective confirmation of the conclusion that notice by posting is not reasonably calculated to reach those who could easily be informed by other means at hand.
 
@@ -244,7 +244,7 @@ The Supreme Court took the appeal in 1981. It heard argument on the twenty-third
 
 【OST: No. 81-341 · decided 17 May 1982】
 
-Two lawyers argued it. Two more filed briefs as friends of the court: the National Housing Law Project, and the Antioch School of Law, urging the Court to affirm. A dispute about a thumbtack in Jefferson County had become a question about how a summary eviction begins in every State that served notice this way.
+Two lawyers argued it. Two more filed briefs as friends of the court: the National Housing Law Project, and the Antioch School of Law, which urged the Court to affirm. A dispute about a thumbtack in Jefferson County had become a question about how a summary eviction begins in every State that served notice this way.
 
 【OST: William L. Hoge III for the appellants · Robert Frederick Smith for the appellees · David M. Madway, National Housing Law Project · Lynn E. Cunningham, Antioch School of Law】
 
@@ -286,7 +286,7 @@ Continued exclusive reliance.
 
 The holding: in failing to afford appellees adequate notice of the proceedings against them before issuing final orders of eviction, the State has deprived them of property without the due process of law required by the Fourteenth Amendment.
 
-The Court did not ban posting. It said so itself, in terms, and it underlined the limit: in light of the findings of the courts below, we hold only that posted notice pursuant to section 454.030 is constitutionally inadequate.
+So had the Court banned posting? It did not, and it said so in terms, underlining the limit: in light of the findings of the courts below, we hold only that posted notice pursuant to section 454.030 is constitutionally inadequate.
 
 Only. In light of the findings below.
 
@@ -296,7 +296,7 @@ The furthest it would go was comparative — that posted service accompanied by 
 
 ⟨HELD⟩
 
-And the case was not over. What the Supreme Court affirmed was a judgment that had reversed a summary judgment and sent the whole thing back for further proceedings. Affirmed does not mean three tenants walked out holding a key. What happened on remand is not in this opinion, and neither is anything else about them. What became of Linnie Lindsey, Barbara Hodgens and Pamela Ray is not in the opinion. It simply stops.
+And the case was not over. What the Supreme Court affirmed was a judgment that had reversed a summary judgment and sent the whole thing back for further proceedings. Affirmed does not mean three tenants walked out holding a key. What happened on remand is not in this opinion, and neither is anything else about Linnie Lindsey, Barbara Hodgens or Pamela Ray. It simply stops.
 
 【motif 6: the door, nothing on it】
 
@@ -318,7 +318,7 @@ The dissent counted the legislatures involved: at least 11 States authorizing no
 
 And it read the statute the way the sheriff's side had: personal service first, a family member over sixteen second, posting only as a last resort. Both opinions read the same three clauses. One read the words. The other read the depositions.
 
-There is one more thing the Court declined to do, and the declining is deliberate. Notice law had long turned on a category: whether an action was against a person or against a thing — in personam or in rem. Which box a summary eviction belonged in had been argued for decades. The Court refused to decide it, exactly as it had refused in 1950. As in Mullane, we decline to resolve the constitutional question based upon the determination whether the particular action is more properly characterized as one in rem or in personam.
+There is one more thing the Court declined to do, and the declining is deliberate. Notice law had long turned on a category: whether an action was against a person or against a thing — in personam or in rem. Which box did a summary eviction belong in? That had been argued for decades. The Court refused to decide it, exactly as it had refused in 1950. As in Mullane, we decline to resolve the constitutional question based upon the determination whether the particular action is more properly characterized as one in rem or in personam.
 
 What the paper did was the question.
 

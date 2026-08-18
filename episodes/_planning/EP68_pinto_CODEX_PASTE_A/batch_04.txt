@@ -1,0 +1,68 @@
+EP68 pinto — 画像発注 バッチ 4/13（8枚）
+区分: A2 THE GAP AND THE FLOAT — hero objects H1 and H2
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプト末尾の [STYLE] は、次の文言に置き換えてください:
+
+cinematic still, photographic, muted natural colour, the United States between 1968 and 1981, mixed tungsten and daylight, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, shallow depth of field, restrained documentary framing, worn unglamorous period surfaces — painted steel, brushed aluminium, laminate, bakelite, manila card, newsprint, enamel — nothing staged for advertising, ultra-detailed, photoreal, 4K, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage
+
+各プロンプト末尾の Avoid: [NEG] は、次の文言に置き換えてください:
+
+text, lettering, numerals, digits, handwriting, cursive writing, legible signature, readable words on a page, seals, emblems, logos, insignia, badge, name plates, wordmarks, manufacturer script, grille emblem, licence plate, registration plate, recognisable person, identifiable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, fire, flame, flames, smoke, burning, embers, soot, charred surfaces, a burning vehicle, a person on fire, burn injury, scarring, skin graft, bandages, hospital, ambulance, paramedic, blood, a crashed car, collision, wreckage, crumpled bodywork, shattered windscreen, police officer, uniform, patrol car, flashing lights, handcuffs, firearm, courtroom interior, gavel, judge's bench, jury box, witness stand, prison bars, scales of justice, hourglass, a handshake, children, modern smartphones, flat-screen monitors, LED headlights, modern cars, contemporary clothing, plastic modern fittings, night vision green, thermal false colour, crosshairs, CCTV monitor grid, drone shot, golden hour, sunset glow, postcard scenery, Christmas, tropical, glossy advertising lighting, flat CGI, cartoon, illustration, oversaturated, HDR halo
+
+★[NEG] の後ろに「, ○○, ○○」と語が続いている行があります。
+　その場合は、上の文言をすべて展開したうえで、その末尾にその語をそのまま足してください。
+　上の文言からは1語も削らないでください。
+
+──────── 絶対条件 ────────
+
+・**人物は積極的に入れてよい。顔も描いてよい。**（オーナー決定 2026-07-04）
+・ただし実在する特定の人物に似せない。有名人・公人・実在の誰かの肖像は不可
+・**この話の中の誰か**として通る人物を描かない——Richard Grimshaw、Lilly Gray とその家族、
+　Ulrich 姉妹と従姉、バンの運転者、Ford の従業員、判事、検事、弁護人。全員不可
+・**火・炎・煙・火傷・負傷者・病院を一枚も描かない。**この映画に火は一度も出ない
+・**衝突・事故車・潰れた車体・割れたフロントガラスを描かない。**衝突は一度も映さない
+・読める文字・数字・手書き・署名を一切描かない。タイプ文字は「斜めから見た質感」までで、
+　一語も判読できてはいけない
+・車体のバッジ・オーバル・車名スクリプト・グリルのエンブレム・ネームプレート・
+　ナンバープレートを一切描かない。**実在の Pinto として通る車を作らない**
+・**1968〜1981年のアメリカ。**液晶モニタ・LEDヘッドライト・携帯電話・現代の車・現代の服・
+　現代の樹脂部品を一切入れない
+・手は指が数えられること。組んだ指・融合した指・6本指・親指の欠落にしない
+・写真として撮られたもののように。イラスト、CG、絵画調にしない
+
+──────── プロンプト ────────
+
+■ R025.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. The filler neck where it enters the top of the tank, a short rubber and steel joint, seen from below Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R026.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. Wider, showing the whole rear underbody: the tank, the axle, the two rear wheels and the underside of the boot floor, with the gap now small in the middle of the frame Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R027.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. The same view with the work light switched off and only a cold blue-grey ambient light from the open shutter door behind Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R028.png
+SAME CAMERA POSITION, SAME LENS, SAME LIGHT AS THE OTHER H1 PLATES: a low three-quarter view from behind and below an early-1970s American subcompact raised on a two-post workshop lift, the camera at the height of the underbody, one hard work light coming from below and to the left, the workshop behind falling to black. The empty lift with no car on it, arms lowered, the concrete floor stained, the same light Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R029.png
+Close on a single bolt head on a cast-iron surface, macro, oil in the threads, the background a shallow black Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R030.png
+A plain unmarked steel machinist's rule lying alone on a workbench under a work light, seen along its length so the graduations foreshorten into an unreadable band Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], readable graduations, numbers
+
+■ R031.png
+A brass carburettor float — a small hollow closed brass cylinder on a thin pivot arm — held in a bench vice under a work lamp, macro, the brass dull and slightly discoloured Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG]
+
+■ R032.png
+A small hollow brass carburettor float on a thin pivot arm, suspended in a clear glass beaker of pale amber liquid and floating high on the surface, macro, backlit so the liquid glows and the meniscus reads clearly Output at 3840x2160 pixels, 16:9, long edge at least 3840 -- a smaller file is unusable and will be rejected. [STYLE] Avoid: [NEG], fire, flame, ignition, sparks
+
+──────── 保存 ────────
+
+生成した画像は上の ■ の名前（このバッチは R025.png 〜 R032.png）で保存してください。**他のバッチの ID を使わないこと。**
+保存先 H:\pd-media\assets\ai\pinto\
+長辺 3840px 以上・16:9・PNG。

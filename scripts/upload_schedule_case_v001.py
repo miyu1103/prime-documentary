@@ -88,14 +88,28 @@ CONFIG = {
     # predict_acceptance.py measured that they had no CONFIG entry at all -- every gate could
     # have gone green and `--ep openfields` would still have been an invalid argument, at the
     # very last command. The 12:00 slot is confirmed free from 08-16 onward by yt_schedule_audit.
-    "openfields": _from_meta("PD-2026-066-openfields", "openfields",
-                             "2026-08-20T12:00:00+09:00", "2026-08-20T03:00:00Z"),
-    "ramirez": _from_meta("PD-2026-067-ramirez", "ramirez",
-                          "2026-08-21T12:00:00+09:00", "2026-08-21T03:00:00Z"),
-    "pinto": _from_meta("PD-2026-068-pinto", "pinto",
-                        "2026-08-22T12:00:00+09:00", "2026-08-22T03:00:00Z"),
-    "hyatt": _from_meta("PD-2026-069-hyatt", "hyatt",
-                        "2026-08-23T12:00:00+09:00", "2026-08-23T03:00:00Z"),
+    # 2026-08-19: EP66-69 ship as _final_bgm.v002.mp4. v001 carries the SYNTHESISED music beds
+    # written on 08-17 when the pd-media drive took the whole audio library with it; v002 is the
+    # same picture remuxed against the seven Suno tracks the owner regenerated on 08-18. Same
+    # pattern, and the same reason, as the memphis override above: _from_meta hardcodes v001, and
+    # final_delivery is bound to the bytes that actually ship. The sha guard below still binds the
+    # upload to these exact bytes -- it is what caught the mismatch.
+    "openfields": {**_from_meta("PD-2026-066-openfields", "openfields",
+                       "2026-08-20T12:00:00+09:00", "2026-08-20T03:00:00Z"),
+               "video": (ROOT / "episodes" / "PD-2026-066-openfields" / "08_edit"
+                         / "openfields_final_bgm.v002.mp4").as_posix()},
+    "ramirez": {**_from_meta("PD-2026-067-ramirez", "ramirez",
+                       "2026-08-21T12:00:00+09:00", "2026-08-21T03:00:00Z"),
+               "video": (ROOT / "episodes" / "PD-2026-067-ramirez" / "08_edit"
+                         / "ramirez_final_bgm.v002.mp4").as_posix()},
+    "pinto": {**_from_meta("PD-2026-068-pinto", "pinto",
+                       "2026-08-22T12:00:00+09:00", "2026-08-22T03:00:00Z"),
+               "video": (ROOT / "episodes" / "PD-2026-068-pinto" / "08_edit"
+                         / "pinto_final_bgm.v002.mp4").as_posix()},
+    "hyatt": {**_from_meta("PD-2026-069-hyatt", "hyatt",
+                       "2026-08-23T12:00:00+09:00", "2026-08-23T03:00:00Z"),
+               "video": (ROOT / "episodes" / "PD-2026-069-hyatt" / "08_edit"
+                         / "hyatt_final_bgm.v002.mp4").as_posix()},
     "florence": {
         "ep": "PD-2026-037-florence",
         "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-037-florence/08_edit/florence_v005.mp4",
@@ -836,7 +850,37 @@ def main(argv):
     print(f"OK duplicate pre-check: no existing video titled {cfg['title'][:48]!r}")
 
     if RESULT.exists():
-        raise RuntimeError(f"Refusing duplicate: {RESULT} exists")
+        # A RECEIPT IS EVIDENCE OF AN UPLOAD, NOT PROOF THAT THE UPLOAD IS STILL THERE.
+        # 2026-08-16: every private long-form on the channel was deleted inside 25 minutes by
+        # something outside this machine. memphis and marmet were left with eight receipts naming
+        # seven video ids, and videos.list returned an empty item array for ALL SEVEN. The guard
+        # then refused to re-upload two finished, permitted films to protect videos that no
+        # longer existed. Nothing is weakened here: the refusal stands the moment ANY receipt
+        # names a video the channel still has, and the title pre-check above independently
+        # refuses a live duplicate. This only supplies the fact the guard was missing.
+        _prior = sorted(PKG.glob("youtube_schedule_result.v*.json"))
+        _ids: list[str] = []
+        for _p in _prior:
+            try:
+                _ids.append(json.loads(_p.read_text(encoding="utf-8")).get("video_id") or "")
+            except Exception:
+                _ids.append("")
+        _tok = _fresh_token()
+        _still = [v for v in dict.fromkeys(i for i in _ids if i)
+                  if ((get_state(_tok, v) or {}).get("items") or [])]
+        if _still:
+            raise RuntimeError(
+                f"Refusing duplicate: {RESULT} exists and {_still[0]} is still on the channel. "
+                f"Finish it with scripts/finalize_uploaded_video.py, or take it off the calendar "
+                f"and re-run with --replaces {_still[0]}.")
+        _n = 2
+        while (PKG / f"youtube_schedule_result.v{_n:03d}.json").exists():
+            _n += 1
+        RESULT = PKG / f"youtube_schedule_result.v{_n:03d}.json"
+        print(f"[receipt] {len(_prior)} prior receipt(s) name {len([i for i in _ids if i])} video "
+              f"id(s) and NONE of them is on the channel any more -- they record uploads that were "
+              f"deleted. Writing a new receipt {RESULT.name}; the old ones are kept as the record "
+              f"of what was uploaded and lost.")
     for p in (VIDEO, THUMB, CAPS, DELIVERY):
         if not p.exists():
             raise RuntimeError(f"missing {p}")

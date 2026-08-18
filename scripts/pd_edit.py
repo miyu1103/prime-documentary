@@ -109,7 +109,12 @@ def main() -> int:
         return fail(msg)
 
     if a.smoke:
-        r = subprocess.run(a.smoke, shell=True, cwd=ROOT, capture_output=True, text=True)
+        # encoding pinned 2026-08-11: without it, text=True decodes with the console codepage
+        # (cp932 here) and a smoke command whose output is not cp932-encodable raises inside
+        # the failure path -- so the REVERT never runs and a bad edit survives. That defeats
+        # the entire purpose of this tool.
+        r = subprocess.run(a.smoke, shell=True, cwd=ROOT, capture_output=True, text=True,
+                           encoding="utf-8", errors="replace")
         if r.returncode != 0:
             return fail(f"smoke command failed ({r.returncode}): "
                         f"{(r.stderr or r.stdout).strip()[:300]}")

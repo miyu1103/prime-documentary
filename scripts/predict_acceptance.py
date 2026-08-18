@@ -61,7 +61,7 @@ import os
 import re
 import sys
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any, Callable, Optional
 
 _HERE = Path(__file__).resolve().parent
 if str(_HERE) not in sys.path:
@@ -225,6 +225,91 @@ def sound_layers_forecast(epdir: Path) -> dict[str, Any]:
 
 
 # --------------------------------------------------------------------------- #
+# the .srt the RENDER will burn -- not the one lying in 08_edit right now
+# --------------------------------------------------------------------------- #
+# _finish_episode.sh does TWO things to the captions between the film build and the render, and
+# a forecast that ignores them measures a file the render never sees:
+#
+#   [4/7]  build_case_film_generic.write_srt REGENERATES the whole srt from the narration index
+#          at RAW chunk timings. Whatever is on disk now -- polished or not, shifted or not --
+#          is discarded and rewritten. (Verified on EP63 correa 2026-08-12: re-running
+#          build_captions() over its narration index reproduces the shipped srt byte for byte.)
+#   [4b]   polish_captions_srt.py re-segments that stream (no orphan cues, no dangling
+#          function-word line ends, <= 84 chars per cue) and shifts it to the episode's
+#          captionLeadSeconds -- house default 0.25 s -- as a DESTINATION measured out of the
+#          file, not an increment.
+#
+# So the on-disk srt is a PRE-POLISH artifact, and measuring it forecasts defects the finisher
+# repairs before a frame is rendered. On EP63 correa that produced the whole of tonight's one
+# remaining red: caption_sync p90 lag +0.368 s against a +0.35 s gate, plus 87 dangling breaks,
+# on a file that [4b] shifts 0.25 s earlier and re-segments. Post-[4b] the same measurement is
+# p90 +0.093 s with 0 dangling breaks -- a PASS. Two agents spent a night on that phantom.
+#
+# This reproduces both steps on a scratch copy under the OS temp dir. It never writes into the
+# episode, and it runs polish_captions_srt.py as a subprocess with the same argv the finisher
+# uses, so it cannot drift from what [4b] actually does.
+_SIM_SRT_CACHE: dict[str, tuple[Optional[Path], str]] = {}
+
+
+def finisher_caption_srt(epdir: Path) -> tuple[Optional[Path], str]:
+    """Reproduce [4/7] write_srt + [4b] polish on a scratch copy. Returns (path, note).
+
+    (None, why) when the simulation cannot be trusted -- a missing filmconfig, a missing
+    narration index, or a polish that exits non-zero. A non-zero polish is itself a finding:
+    step [4b] guards that call with `|| die`, so it stops the build.
+    """
+    key = str(epdir)
+    if key in _SIM_SRT_CACHE:
+        return _SIM_SRT_CACHE[key]
+    result: tuple[Optional[Path], str]
+    try:
+        import subprocess
+        import tempfile
+        slug = epdir.name.split("-", 3)[-1]
+        cfgs = sorted((ROOT / "episodes" / "_planning").glob(f"EP*_{slug}_filmconfig.v*.json"))
+        if not cfgs:
+            raise FileNotFoundError(f"no filmconfig EP*_{slug}_filmconfig.v*.json")
+        cfg = json.loads(cfgs[-1].read_text(encoding="utf-8"))       # [4/7] takes the LATEST
+        narr_p = Path(cfg.get("narration_index")
+                      or epdir / "06_audio" / "narration_index.v001.json")
+        if not narr_p.is_file():
+            raise FileNotFoundError(f"narration index {narr_p}")
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import build_case_film_generic as bcfg
+        cues, _total = bcfg.build_captions(json.loads(narr_p.read_text(encoding="utf-8")))
+        out_dir = Path(tempfile.gettempdir()) / "pd_caption_forecast" / slug
+        out_dir.mkdir(parents=True, exist_ok=True)
+        sim = out_dir / "captions.as_rendered.srt"
+        bcfg.write_srt(cues, sim)                                     # [4/7]
+        # [4b]: the lead is the EPISODE's, defaulting to the house 0.25 s -- the same expression
+        # _finish_episode.sh evaluates. The narration index polish itself would resolve is the
+        # latest one beside the REAL srt, which is what [4b] gets; the scratch copy lives
+        # elsewhere, so it is passed explicitly.
+        lead = cfg.get("captionLeadSeconds")
+        lead = 0.25 if lead is None else float(lead)
+        real_srt = Path(cfg.get("captions") or epdir / "08_edit" / "captions.final.v001.srt")
+        import polish_captions_srt as pol
+        narr_for_polish = pol.narration_index_for(real_srt) or narr_p
+        proc = subprocess.run(
+            [sys.executable, str(ROOT / "scripts" / "polish_captions_srt.py"),
+             "--srt", str(sim), "--lead", str(lead), "--narr", str(narr_for_polish)],
+            capture_output=True, text=True)
+        tail = (proc.stdout or proc.stderr or "").strip().splitlines()
+        tail = tail[-1] if tail else ""
+        if proc.returncode != 0:
+            result = (None, f"step [4b] polish would EXIT {proc.returncode} (it is guarded by "
+                            f"`|| die`, so the build stops there): {tail}")
+        else:
+            result = (sim, f"measured on the post-[4b] stream (lead {lead}s from "
+                           f"{cfgs[-1].name}; {tail})")
+    except Exception as exc:  # noqa: BLE001 - a forecast never raises
+        result = (None, f"could not reproduce the finisher's caption steps ({exc}); "
+                        f"measured the PRE-POLISH srt on disk, which the render never burns")
+    _SIM_SRT_CACHE[key] = result
+    return result
+
+
+# --------------------------------------------------------------------------- #
 # caption_sync: only cheap when whisper already has a cached transcription
 # --------------------------------------------------------------------------- #
 def caption_sync_forecast(epdir: Path, force: bool) -> dict[str, Any]:
@@ -251,8 +336,29 @@ def caption_sync_forecast(epdir: Path, force: bool) -> dict[str, Any]:
                 "reason": ("needs a whisper transcription of the narration master (~tens of "
                            "minutes, no cache present). It does NOT need the mp4 -- re-run with "
                            "--with-caption-sync to decide it now")}
-    r = cfa.check_caption_sync(epdir)
-    return _from_check_dict(r)
+    # Measure the stream the render will BURN (post-[4/7] rebuild, post-[4b] polish), not the
+    # pre-polish file in 08_edit. The real gate is still the one doing the measuring: rather
+    # than restating its formatting or its thresholds here, verify_caption_sync.evaluate is
+    # pointed at the simulated srt for the duration of the call. cfa.check_caption_sync looks
+    # that attribute up at call time, so nothing else in the process is affected.
+    sim, note = finisher_caption_srt(epdir)
+    if sim is None:
+        out = _from_check_dict(cfa.check_caption_sync(epdir))
+        out["reason"] = f"{out.get('reason', '')} | {note}"
+        return out
+    _orig_evaluate = vcs.evaluate
+
+    def _on_simulated(ep_dir, srt=None, *args, **kwargs):
+        return _orig_evaluate(ep_dir, srt=str(sim), *args, **kwargs)
+
+    try:
+        vcs.evaluate = _on_simulated
+        r = cfa.check_caption_sync(epdir)
+    finally:
+        vcs.evaluate = _orig_evaluate
+    out = _from_check_dict(r)
+    out["reason"] = f"{out.get('reason', '')} | {note}"
+    return out
 
 
 def _ext_check_name(mod: str, r: dict) -> str:
@@ -535,12 +641,23 @@ def paperwork(epdir: Path, slug: str) -> list[dict[str, Any]]:
 def allowed_deviations(epdir: Path) -> set[str]:
     """The deviation set upload_schedule_case_v001 will tolerate for this episode.
 
-    MIRRORS the rule inline in that script's main(): the channel-wide runtime_band, plus every
-    accepted_deviation on an approvals/*.json whose target_type is 'edit' and whose decision
-    starts with 'approved'. It is inline there and cannot be imported; scheduler_rule_drift()
-    below fails loudly if that text changes, so this copy cannot go stale unnoticed.
+    REWRITTEN 2026-08-12 with the scheduler. The old rule -- runtime_band plus whatever an
+    approval named -- was replaced by config/ship_policy.v001.json: a failure stops a ship only
+    when it maps to one of four blocking classes (real-person likeness, rights, factual support,
+    fabricated record). Everything else ships and is recorded on the release.
+
+    This now reads the policy's own machine contract rather than mirroring code text, so the two
+    cannot drift by editing: `advisory_checks` IS the tolerated set. Owner approvals still count,
+    and are now the only route past a blocking class. A check id in NEITHER map is reported as
+    unresolved here on purpose -- a forecast should nag somebody into classifying it, even
+    though the scheduler itself treats an unmapped id as advisory.
     """
     allowed = {"runtime_band"}
+    try:
+        import pd_ship_policy as _sp
+        allowed |= set((_sp.load_policy()["machine_contract"]["advisory_checks"]).keys())
+    except Exception:  # noqa: BLE001  a missing policy must not crash the forecast
+        pass
     for f in sorted((epdir / "approvals").glob("*.json")):
         d = cfa._load(f) or {}
         if d.get("target_type") == "edit" and str(d.get("decision", "")).startswith("approved"):
@@ -554,12 +671,14 @@ def scheduler_rule_drift() -> str | None:
     if not p.is_file():
         return "scripts/upload_schedule_case_v001.py is gone"
     t = p.read_text(encoding="utf-8", errors="ignore")
-    for probe in ('ALLOWED_DEVIATIONS = {"runtime_band"}',
-                  '_apr.get("target_type") == "edit"',
-                  'accepted_deviations'):
+    for probe in ("import pd_ship_policy as SHIP_POLICY",
+                  "SHIP_POLICY.evaluate(",
+                  "SHIP_POLICY.write_release_record("):
         if probe not in t:
             return (f"the scheduler no longer contains {probe!r} -- allowed_deviations() in "
                     f"predict_acceptance.py mirrors a rule that has changed")
+    if not (ROOT / "config" / "ship_policy.v001.json").is_file():
+        return "config/ship_policy.v001.json is gone -- the scheduler cannot start without it"
     return None
 
 
