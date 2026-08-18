@@ -604,6 +604,21 @@ def initiate_upload(token, size, cfg):
         raise SystemExit(
             f"REFUSING: sched_utc {cfg['sched_utc']} is in the past. Scheduling means a future "
             f"date; this would publish immediately. Update the CONFIG entry first.")
+    # YOUTUBE'S OWN LIMITS, CHECKED HERE RATHER THAN AS A 400 AFTER THE PREFLIGHT PASSES.
+    # 2026-08-19: EP68 pinto failed twice with "invalid video description" -- a bare HTTP 400 with
+    # no hint -- after every gate had gone green, because a packaging correction the day before
+    # pushed the description to 5,108 characters against a 5,000 limit. The uploader had already
+    # verified the sha, the thumbnail, the captions and the schedule; the only thing it had not
+    # checked was whether the metadata could legally be sent. Sibling episodes run 4,869-4,981,
+    # so this is a real ceiling the writing sits close to, not a theoretical one.
+    _desc = cfg["description"].rstrip()
+    _limits = [("description", len(_desc), 5000), ("title", len(cfg["title"]), 100),
+               ("tags total", sum(len(t) + 1 for t in cfg["tags"]), 500)]
+    _over = [(n, got, cap) for n, got, cap in _limits if got > cap]
+    if _over:
+        raise SystemExit("REFUSING: metadata exceeds YouTube's limits before the upload starts -- "
+                         + "; ".join(f"{n} {got} > {cap}" for n, got, cap in _over)
+                         + ". Trim the packaging file, then re-run check_packaging_claims.")
     snippet = {"title": cfg["title"], "description": cfg["description"].rstrip(), "tags": cfg["tags"],
                "categoryId": "27", "defaultLanguage": "en", "defaultAudioLanguage": "en"}
     status = {"privacyStatus": "private", "publishAt": cfg["sched_utc"], "selfDeclaredMadeForKids": False,
