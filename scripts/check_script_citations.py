@@ -45,7 +45,13 @@ except Exception:
 ROOT = Path(__file__).resolve().parents[1]
 PLANNING = ROOT / "episodes" / "_planning"
 
-ID = r"(?:IT|LM|[A-Z]{2})-\d+[a-z]?|AB-\d+|⛔-\d+"
+# The lookbehind is load-bearing, added 2026-08-21 on EP76. Without it `[A-Z]{2}-\d+` matches
+# INSIDE a longer id: a citation comment that names its source as SRC-0001 yields a phantom
+# `RC-0001`, and the gate reports an UNDEFINED ID that no script ever wrote. Measured the same day:
+# it was firing on EP71 (RC-0005), EP75 (RC-0014) and EP76 (RC-0001, RC-0003). The same run found a
+# REAL defect on EP76 -- a line citing a source id instead of a row -- so this fix must not silence
+# the check, only stop it inventing ids.
+ID = r"(?<![A-Za-z])(?:(?:IT|LM|[A-Z]{2})-\d+[a-z]?|AB-\d+|⛔-\d+)"
 ROW_DEF = re.compile(r"^\|\s*(" + ID + r")\s*\|", re.M)
 UNREAD_ROW = re.compile(r"^\|\s*(" + ID + r")\s*\|.*?\|\s*\*{0,2}UNREAD\*{0,2}\s*\|", re.M)
 SUPERSEDED = re.compile(r"`(" + ID + r")`\s+is hereby superseded|\*\*(" + ID + r") is cut\*\*")

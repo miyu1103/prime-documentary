@@ -266,8 +266,8 @@ It was done without closing the road, using temporary structures built for the p
 In 2006 a steel walkway was added at the Genoa end of the same pier.
 <!-- MO-38 ✓ VERBATIM -->
 
-So by the end of it they knew what was inside a Morandi stay on this bridge. They had a method for fixing it. They owned the equipment.
-<!-- MO-33, MO-34, MO-36, MO-37 ✓ OURS — synthesis of four verbatim rows -->
+So by the end of it, what was inside a Morandi stay on this bridge had been established. There was a method for repairing it. The equipment for doing it stayed with the company.
+<!-- MO-33, MO-34, MO-36, MO-37 ✓ OURS — synthesis of four verbatim rows. The bare "they knew" was cut on 2026-08-21: it is true of the 1990s findings (MO-103, MO-104) but sits three lines from the collapse and compresses in a viewer's ear into knowledge of the outcome, which ⛔-02 bars -->
 
 【F26: three piers drawn; 9, 10 and 11 labelled; the eleven fills; nine and ten stay hollow. 4.0 s, AE beat B2.】
 
@@ -636,7 +636,10 @@ Given the condition of the two remaining stayed piers, the authorities ordered t
 【23:45.0–29:00.0 · Pictures: a road that stops, barrier across it · dark windows in a block under a viaduct · two bound reports side by side · a corridor with a bench · a lectern · an empty chair · the barrier again, hero. F63–F78.】
 
 A commission was appointed the same day, and reported a month later. It was made up of engineers from the state's own advisory body on public works, two university professors of structural engineering, and a councillor of the national audit court.
-<!-- SRC-0001 title page ✓ VERBATIM (D.M. 386 of 14/08/2018; membership) -->
+<!-- MO-142, MO-143, MO-144, MO-146 ✓ VERBATIM -->
+
+It was given thirty days, and the decree that appointed it ordered the motorway company to hand over everything it held on the building and the maintenance of the bridge.
+<!-- MO-143, MO-145 ✓ VERBATIM -->
 
 Its finding on what broke first is more careful than the one you will usually read, and the care is the point.
 <!-- OURS -->

@@ -169,6 +169,14 @@ does not gloss it.
 Sixty-five to eighty-five figure beats total, thirteen to seventeen per act (spec). Roughly one beat
 per 22 s of act. Beats are numbered `F01…`; each names its ledger row.
 
+> **`F46` is retired, not missing.** The first draft of this map gave ACT_4 eighteen beats, which
+> breaks this episode's own declared `figure_beats_per_act` of [13, 17]. Counted 2026-08-21 by
+> machine rather than by eye — the act headings claimed 16 and 15 where the lists held 18 and 16. The
+> fix merges the 2003 order and its March 2013 deadline into a single beat at `F45`; the ids after it
+> are **not renumbered**, because `script.en.v001` cites `F49 F52 F55 F58 F59 F60 F62` in its own
+> direction blocks and a silent shift would point them at the wrong beats. Totals now: 14 · 14 · 16 ·
+> **17** · **16** = 77.
+
 **ACT_1 — THE SHEATH (14 beats).** F01 the valley from above, houses and rail (MO-07) · F02 *km
 000+551* (MO-01) · F03 **1962 / 1963 / 1967**, three dates rising (MO-03) · F04 *the only
 cable-stayed viaduct on the whole network* (MO-02, held) · F05 **1,102 m** (MO-05) · F06 **56 m**
@@ -200,8 +208,8 @@ deleted (MO-58, hero return) · F41 the company's own graph: **twenty-five years
 F42 **€24,610,500** total (MO-39) · F43 **98 % before 1999 · 2 % after** (MO-40, the film's largest
 number card) · F44 **€1.3 m a year → €23,000 a year** (MO-41, MO-42, AE beat B3).
 
-**ACT_4 — THE THING NOBODY WROTE (16 beats).** F45 **2003**, the order (MO-62) · F46 **March 2013**,
-the deadline (MO-62) · F47 **23 June 2017**: reported as done (MO-64) · F48 **"had not, in fact,
+**ACT_4 — THE THING NOBODY WROTE (17 beats).** F45 **2003 → March 2013**, the order and the deadline
+it set, one card (MO-62) · F47 **23 June 2017**: reported as done (MO-64) · F48 **"had not, in fact,
 been carried out"** — quote card (MO-65) · F49 the empty tab (hero, MO-65) · F50 **10 October
 2017**: *"also under way"* (MO-66) · F51 the Level 0 sheet with **data that are not pertinent**
 (MO-68) · F52 the word **RETROFITTING**, and the two titles on one project (MO-81) · F53 the project
@@ -212,7 +220,7 @@ F57 **62 observations** (MO-77) · F58 **1 February 2018**: presented by the men
 (MO-85) · F59 **0.71 · 0.58** — the edge-beam ratios (MO-94, MO-95) · F60 **11:36, 14 August 2018**
 (MO-24) · F61 **243 metres** (MO-25) · F62 **43** (MO-26, held longest of any card in the film).
 
-**ACT_5 — WHAT WAS DECIDED (15 beats).** F63 the gap, wide and still (MO-24) · F64 the houses under
+**ACT_5 — WHAT WAS DECIDED (16 beats).** F63 the gap, wide and still (MO-24) · F64 the houses under
 piers 10 and 11, emptied (MO-28) · F65 **September 2018**: the commission's finding (MO-100) ·
 F66 **"plausible but not definitive"** — quote card (MO-102) · F67 **December 2020**: the court's
 experts, attributed on screen (MO-108) · F68 the two findings side by side, unresolved (AB-03) ·

@@ -452,7 +452,7 @@ EPISODES = {
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
     "PD-2026-074-itaewon": {
-        "planning": "EP74_itaewon_script.en.v005.md",
+        "planning": "EP74_itaewon_script.en.v006.md",
         # 30 minutes. episode_spec runtime_seconds [1740, 1920], script_words [4900, 5400].
         # The word band was set from MEASUREMENT, not from the 171.79 raw-wpm model this registry
         # carries for every episode since EP66. EP72 measured 191.1 raw wpm on its own ACT_1 and
@@ -499,7 +499,11 @@ EPISODES = {
         # projecting a 1777.6 s master (29:38) and a 1786.6 s film (29:47) once ENDCARD_SEC 9.0
         # is added -- inside episode_spec runtime_seconds [1740, 1920], and 5,118 words is inside
         # script_words [4900, 5400].
-        "design_speech_seconds": 1669.0,        "sections": SECTION_ORDER_5ACT,
+        # Re-measured after the 2026-08-21 standard pass: 329 chunks / 5,154 words.
+        # 5154 / 184.0 * 60 = 1680.7 s of speech; gaps 321 x 0.30 + 7 x 1.8 = 108.9 s;
+        # master 1789.6 s (29:50), film 1798.6 s (29:59) with ENDCARD_SEC 9.0 -- inside
+        # runtime_seconds [1740, 1920]. check_script_standard.py --slug morandi --wpm 184.0 = 12/12.
+        "design_speech_seconds": 1680.7,        "sections": SECTION_ORDER_5ACT,
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
     "PD-2026-075-lahaina": {

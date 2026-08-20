@@ -248,6 +248,21 @@ marked as such, and the film's spine is built from the two documents we did read
 | MO-140 | Reported construction cost **about € 202 million**; demolition of what remained of the old viaduct about **€ 19 million** | SECONDARY | SRC-0010 |
 | MO-141 | **The original design called for 43 points of light on the new bridge, one for each of the dead. The number was reduced, for design and safety reasons; the viaduct as built is lit by 18 lamps on poles along the centre of the carriageway** | SECONDARY | SRC-0010 |
 
+## 12.5 THE COMMISSION ITSELF
+
+**Added 2026-08-21 after `check_script_citations.py` found the script narrating the commission's
+appointment and composition against a source id rather than a row.** The facts were always in the
+document; they had no graded row, so the line could not be cited properly. This section is that fix.
+
+| id | fact | grade | source |
+|---|---|---|---|
+| MO-142 | The Commissione Ispettiva Ministeriale was constituted by ministerial decree **n. 386 of 14 August 2018 — the day of the collapse** — and by two further decrees, **n. 387 of 27 August** and **n. 392 of 5 September 2018** | VERBATIM | SRC-0001 p.1 |
+| MO-143 | It was given **30 days from receiving its mandate, expiring on 14 September 2018**, to deliver a detailed report on the facts established | VERBATIM | SRC-0001 p.7 |
+| MO-144 | Its five members were **a coordinator and one further member, both councillors of the Consiglio Superiore dei Lavori Pubblici; a councillor of the Corte dei Conti; and two full professors of structural engineering**, at Roma Tre and at G. d'Annunzio Chieti–Pescara | VERBATIM | SRC-0001 p.1 |
+| MO-145 | The decree also required **Autostrade per l'Italia to make available to the commission all documentation concerning the construction and the maintenance of the work**, and to supply all information and technical support necessary to reconstruct what had happened | VERBATIM | SRC-0001 p.7 |
+| MO-146 | The report is dated **Rome, 14 September 2018** | VERBATIM | SRC-0001 p.1 |
+| MO-147 | The commission conducted its inspection under the impartiality, confidentiality and objectivity requirements of Directive n. 2567/M of the Department of the Public Function, which requires its conclusions to **rest on probative and detailed elements, and to be demonstrable** | VERBATIM | SRC-0001 p.7 |
+
 ## 13. WHAT THE RECORD DOES NOT HAVE — and the film says so
 
 | id | absence |
