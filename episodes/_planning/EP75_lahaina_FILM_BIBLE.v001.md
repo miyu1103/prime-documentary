@@ -220,7 +220,7 @@ used for a wildfire** (LH-31) · F70 and MEMA has since implemented a process (L
 **never omitted**) · F71 Finding 36: many residents did not get the text (LH-33) · F72 Finding 75: the
 alert systems did not adequately inform (LH-34) · F73 **Finding 39 — people refused because there
 appeared to be no official notification** (LH-35) · F74 what the agency head said, attributed and dated
-(LH-38) · F75 the County's suit against the carriers (LH-37) · F76 **the sign-in sheet that does not
+(LH-120, LH-121, LH-122 — **upgraded 2026-08-21 from the read source SRC-0014; v001's LH-38 paraphrase is barred**) · F75 the County's suit against the carriers (LH-37) · F76 **the sign-in sheet that does not
 exist** (hero 5, LH-290) · F77 no activity logs (LH-291) · F78 the subpoena for the siren maintenance
 logs (LH-294) · F79 the settlement, procedurally, with its date (LH-111, LH-114, LH-115).
 

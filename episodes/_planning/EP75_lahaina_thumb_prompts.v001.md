@@ -101,7 +101,8 @@ searchable proper noun, at least two variants shipped.
 
 Every row below was run as
 `py -3.11 scripts/check_packaging_claims.py --slug lahaina --title "<title>"`
-against the script and both ledgers (**652 sentences from 2 files**). The result column is that run.
+against the script and both ledgers. The result column is that run. **Re-run after the ledger grew to
+694 sentences (the LH-38 upgrade): A and B both still PASS with unsupported=0 and zero soft notes.**
 
 | # | title | chars | measured | notes |
 |---|---|---|---|---|
@@ -137,9 +138,33 @@ this order:
    siren operable inside the burn perimeter; the network had never been used for a wildfire; and
    **no finding says that sounding it would have changed the outcome** (LH-30, LH-31, AB-01).
 
-Sources for the description's fact block are the ledger rows, not this file. The settlement paragraph,
-if one is included, is **procedural and dated** (⛔-15) and must be **re-verified on the day the
-description is written** (⛔-11) — as of 2026-08-21 no payment had been made.
+Sources for the description's fact block are the ledger rows, not this file.
+
+**A draft exists and it passes.** `episodes/PD-2026-075-lahaina/09_package/description.draft.v001.txt`,
+3,567 characters, run 2026-08-21 as
+`check_packaging_claims.py --slug lahaina --title <A> --thumb-text "NEVER USED FOR FIRE"
+--description-file <the draft>`:
+
+```
+[PASS] PD-2026-075-lahaina  claims=109 unsupported=0 (+62 soft, not blocking)
+```
+
+**62 soft notes is the documented normal for a prose description** and not a defect — rule 19 records
+that a 4,000-character description reliably produces ~55 UNVERIFIED notes because prose paraphrases
+what the script states in other words. **Zero blocking is the number that matters.**
+
+**One instrument false positive was found and is worth knowing about.** The first draft named the
+department by its full legal title, *County of Maui Department of Fire and Public Safety*. The gate
+returned **CONTRADICTED** on that line, because the words "Public Safety" collide with Finding 30 —
+*"Hawaiian Electric did not have a Public Safety Power Shut-Off program in place at the time of the
+fire"* — and the matcher attached that negation to the date claim. **Nothing was contradicted.** It
+was resolved by using **Maui Fire Department**, which is the abbreviation the record itself uses, so
+accuracy was not traded away to satisfy a matcher. **Do not restore the full legal title in the
+description**: it will block the ship on a `factual_support` verdict that is not true.
+
+The settlement paragraph is **procedural and dated** (⛔-15) and must be **re-verified on the day the
+description is finalised** (⛔-11) — as of 2026-08-21 no payment had been made, and the draft says
+"AS OF AUGUST 2026" in its own subheading for exactly that reason.
 
 ## 5. What still has to happen
 
