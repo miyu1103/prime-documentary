@@ -151,6 +151,18 @@ them, so they live here rather than in a dated file.
 
 ## Current narrative
 
+**[2026-08-21](handover/2026-08-21-ep75-writing.md)** — **EP75 lahaina: the film bible and the
+script, both written.** Two things changed the film. **Phase One was read** — the 375-page FSRI
+timeline the previous session marked NOT READ — and it is the difference between a film and a lecture,
+because Phase Two has 84 findings and no clock while Phase One is nothing but a clock (§1, including
+the +29 font-encoding trap that makes the whole report extract with **no digits in it**). And **⛔-11
+fired**: section 9 of the ledger had gone stale in eight days — **no settlement payment has been made**,
+an appeal over fees is at the Hawaiʻi Supreme Court, and `LH-101…LH-103` may not be narrated (§2).
+Measured **187.1 raw wpm** (the registry model is 8.9 % slow) and the script projects **30:32** against
+a `[1740, 1920]` band. Craft gate green, **220 of 220 spoken lines cited, all 106 row ids real** (§5).
+Two script gates SKIP and they are **right** to — they look for a `03_script` layout the channel
+abandoned thirteen episodes ago (§6). Next: image order, thumbnails, scene plan, fact_recheck (§7).
+
 **[2026-08-21](handover/2026-08-21-ep75-research.md)** — **EP75 lahaina, research process only**:
 `episode_spec.v001.json` valid, `FACTS_LEDGER.v001` written from the primary record. The brief said
 the siren network "did not sound"; the state's own Phase Two finding 37 says **one siren was

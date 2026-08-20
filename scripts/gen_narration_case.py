@@ -417,6 +417,112 @@ EPISODES = {
         "sections": SECTION_ORDER_5ACT,
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
+    "PD-2026-072-lacmegantic": {
+        "planning": "EP72_lacmegantic_script.en.v003.md",
+        # 30 minutes. episode_spec runtime_seconds [1740, 1920], script_words [4600, 4800].
+        # The script measures 5,044 narration words (check_script_length, 2026-08-20). Modelled on
+        # the SAME raw-speech rate this runner has measured for every episode since EP66 --
+        # 171.79 raw wpm, speech only, gaps excluded: 5044 / 171.79 * 60 = 1761.6 s of speech.
+        # Gap budget, using EP71's ratio of ~14 index words per chunk (343 chunks / 4,778 words):
+        # about 360 chunks -> 353 beat gaps at 0.30 s = 105.9 s, plus seven section boundaries at
+        # 1.8 s = 12.6 s. No scripted silence is declared in this script. Master ~1880.1 s and film
+        # ~1889.1 s (31:29) once ENDCARD 9.0 is added -- inside [1740, 1920] with 31 s of headroom
+        # at the high edge. Cross-checked against PD_CANON rule 25's END-TO-END band (159.5-169.7
+        # wpm), which is the delivered pace rather than the runner's speech-only figure: 5,044
+        # words lands between 1783 s (29:43) and 1897 s (31:37). Both edges are inside the band,
+        # which is why this script was NOT padded further after check_script_length's 178.1 wpm
+        # model implied 28.3 min -- that model is faster than anything this channel has delivered.
+        # ★ SUPERSEDED BY MEASUREMENT, 2026-08-20. `--measure-section ACT_1` generated 39 chunks /
+        # 523 words and ffprobed 164.214 s of speech: **191.1 raw wpm**, and 178.7 words per
+        # FINISHED minute once the 38 beat gaps are counted. That is materially faster than the
+        # 171.79 raw wpm this registry models for every episode since EP66 -- this script is short
+        # declaratives with a full stop every ten words, and the voice delivers them quickly.
+        # The script was then written to the measured rate rather than to the model. At the final
+        # dry run it extracts 378 chunks / 5,276 index words:
+        #   speech   5276 / 191.1 * 60 = 1656.4 s
+        #   gaps     377 beat gaps at 0.30 s = 113.1 s, seven section boundaries at 1.8 s = 12.6 s,
+        #            0.6 s of scripted silence -> 126.3 s
+        #   master   1782.7 s, film 1791.7 s (29:52) once ENDCARD 9.0 is added
+        # Inside episode_spec runtime_seconds [1740, 1920] with 52 s of headroom at the low edge
+        # and 128 s at the high edge. Cross-check on the finished-minute figure: 5276 / 178.7 =
+        # 29.52 min + 12.6 s of section gaps + 9 s endcard = 1793.1 s (29:53). The two agree to
+        # within 1.4 s.
+        "design_speech_seconds": 1656.4,
+        "sections": SECTION_ORDER_5ACT,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-074-itaewon": {
+        "planning": "EP74_itaewon_script.en.v004.md",
+        # 30 minutes. episode_spec runtime_seconds [1740, 1920], script_words [4900, 5400].
+        # The word band was set from MEASUREMENT, not from the 171.79 raw-wpm model this registry
+        # carries for every episode since EP66. EP72 measured 191.1 raw wpm on its own ACT_1 and
+        # then shipped 5,276 index words -> 1656.4 s speech -> a 1791.7 s film (29:52) against a
+        # declared band of [4600, 4800] that its film could never have satisfied. EP74 is written
+        # in the same register (short declaratives, a full stop every ten words).
+        # * MEASURED 2026-08-21, and this line is no longer provisional. `--measure-section ACT_1`
+        # generated 49 chunks / 734 words and ffprobed 222.025 s of speech = **198.4 raw wpm**, and
+        # 186.3 words per FINISHED minute once the 48 beat gaps are counted. That is 15.5% faster
+        # than the 171.79 this registry models and 3.8% faster than EP72's 191.1 -- this episode's
+        # own voice at these settings. The script was then written to the measurement rather than to
+        # the model, across four revisions (3,883 -> 4,669 -> 5,267 -> 5,511 words), and the word
+        # band in episode_spec was re-derived from the runtime band twice as the rate sharpened,
+        # ending at [5370, 5930]. At the v004 dry run it extracts 327 chunks / 5,511 index words:
+        #   speech   5511 / 198.4 * 60 = 1666.6 s
+        #   gaps     326 beat gaps at 0.30 s = 97.8 s, seven section boundaries at 1.8 s = 12.6 s,
+        #            no scripted silence declared -> 110.4 s
+        #   master   1777.0 s, film 1786.0 s (29:46) once ENDCARD 9.0 is added
+        # Inside episode_spec runtime_seconds [1740, 1920] with 46 s of headroom at the low edge and
+        # 134 s at the high edge. Cross-check on the finished-minute figure: 5511 / 186.3 = 29.58
+        # min + 12.6 s of section gaps + 9 s endcard = 1796.5 s (29:57); the two agree to within
+        # 10.5 s, both inside the band.
+        "design_speech_seconds": 1666.6,
+        "sections": SECTION_ORDER_5ACT,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-076-morandi": {
+        "planning": "EP76_morandi_script.en.v001.md",
+        # 30 minutes. episode_spec runtime_seconds [1740, 1920], script_words [4900, 5400].
+        # PROVISIONAL, for the same stated reason as EP74 and EP75. The 171.79 raw-wpm model this
+        # registry carried from EP66 to EP71 is 11% slow for this register: EP72 measured 191.1 raw
+        # wpm on its own ACT_1 and shipped a 29:52 film. EP76 is written in the same register --
+        # short declaratives, verbatim findings from the MIT Commissione Ispettiva read plainly.
+        # Modelled here at the measured rate: 5,150 words (the midpoint of the declared band)
+        # / 191.1 * 60 = 1616.9 s of speech.
+        # * SUPERSEDED THE MOMENT `--measure-section ACT_1` IS RUN FOR THIS EPISODE. That
+        # measurement governs over this line; rewrite design_speech_seconds from it, and from the
+        # dry run's real chunk count, before any full run.
+        "design_speech_seconds": 1616.9,
+        "sections": SECTION_ORDER_5ACT,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-075-lahaina": {
+
+        "planning": "EP75_lahaina_script.en.v001.md",
+        # 30 minutes. episode_spec runtime_seconds [1740, 1920], script_words [4900, 5400].
+        # PROVISIONAL, and provisional for a stated reason. The 171.79 raw-wpm model this registry
+        # carried from EP66 to EP71 is 11% slow for this register: EP72 measured 191.1 raw wpm on
+        # its own ACT_1 and shipped a 29:52 film against a word band its own spec could not have
+        # satisfied. EP75 is written in the same register -- short declaratives, verbatim findings
+        # read plainly -- so it is modelled here at the measured rate rather than at the model.
+        # * SUPERSEDED BY MEASUREMENT, 2026-08-21, exactly as that line required.
+        # `--measure-section ACT_1` generated 54 chunks / 808 words and ffprobed 259.133 s of
+        # speech: **187.1 raw wpm**, and 176.3 words per FINISHED minute once the 53 beat gaps are
+        # counted. That is 8.9% faster than the registry's 171.79 model and 2.1% slower than
+        # EP72's measured 191.1 -- same register, slightly longer sentences, because this script
+        # reads numbered findings verbatim. The script was then written to THIS number.
+        # At the dry run it extracts 349 chunks / 5,321 index words:
+        #   speech   5321 / 187.1 * 60 = 1706.4 s
+        #   gaps     348 beat gaps at 0.30 s = 104.4 s, seven section boundaries at 1.8 s = 12.6 s,
+        #            no scripted silence declared -> 117.0 s
+        #   master   1823.4 s, film 1832.4 s (30:32) once ENDCARD 9.0 is added
+        # Inside episode_spec runtime_seconds [1740, 1920] with 92 s of headroom at the low edge and
+        # 88 s at the high edge -- the most centred projection of any episode in this registry.
+        # Cross-check on the finished-minute figure: 5321 / 176.3 = 30.18 min + 12.6 s of section
+        # gaps + 9 s endcard = 1832.5 s. The two agree to within 0.1 s.
+        "design_speech_seconds": 1706.4,
+        "sections": SECTION_ORDER_5ACT,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
     "PD-2026-069-hyatt": {
         "planning": "EP69_hyatt_script.en.v001.md",
         # RAW SPEECH model, as EP66/EP67/EP68 -- this is the number the runner prints against
