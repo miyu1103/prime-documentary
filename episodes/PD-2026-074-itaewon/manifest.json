@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-074-itaewon",
+  "topic_id": "TOP-20260821-074",
+  "slug": "itaewon",
+  "title_working": "Eleven People Called The Police Before 159 Died In That Itaewon Alley",
+  "state": "script_verified",
+  "risk_class": "R3",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "episode_spec": "v001",
+    "facts_ledger": "v003",
+    "film_bible": "v001",
+    "script": "v004",
+    "scene_plan": "v001",
+    "image_order": "v001",
+    "thumb_prompts": "v001",
+    "fact_recheck": "v001"
+  },
+  "artifacts": [
+    {
+      "kind": "episode_spec",
+      "path": "episodes/PD-2026-074-itaewon/episode_spec.v001.json",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_episode_spec.py --slug itaewon -> exit 0"
+    },
+    {
+      "kind": "facts_ledger",
+      "path": "episodes/_planning/EP74_itaewon_FACTS_LEDGER.v003.md",
+      "revision": "v003",
+      "produced_at": "2026-08-21",
+      "note": "v001 and v002 remain in force and are not restated by v003. 83 rows, 10 ABSENCE rows, a 15-rule quarantine table. Grades include UNREAD, a grade added on this episode: a row seen only in a search-result summary is not usable until the article itself is fetched."
+    },
+    {
+      "kind": "film_bible",
+      "path": "episodes/_planning/EP74_itaewon_FILM_BIBLE.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "note": "Superseded in part by SCENE_PLAN v001 section 2.5, which measured the act lengths and found the ENDING four times its designed length. A v002 is required before the narration master."
+    },
+    {
+      "kind": "script",
+      "path": "episodes/_planning/EP74_itaewon_script.en.v004.md",
+      "revision": "v004",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/gen_narration_case.py --ep PD-2026-074-itaewon --dry-run -> 327 chunks / 5,511 words, inside episode_spec.script_words [5370, 5930]"
+    },
+    {
+      "kind": "scene_plan",
+      "path": "episodes/_planning/EP74_itaewon_SCENE_PLAN.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "note": "PROJECTED, not measured from a narration master. Rests on --measure-section ACT_1 = 198.4 raw wpm, which IS measured. Superseded entirely by a v002 written from 06_audio/narration_index once the master exists."
+    },
+    {
+      "kind": "image_order",
+      "path": "episodes/_planning/EP74_itaewon_CODEX_BATCH_A.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_image_order_neg.py --file <path> -> exit 0",
+      "note": "120 plates I001-I120, 28 of them people plates against a declared minimum of 24."
+    },
+    {
+      "kind": "thumb_prompts",
+      "path": "episodes/_planning/EP74_itaewon_thumb_prompts.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_image_order_neg.py --file <path> -> exit 0 (after the first draft was REJECTED for carrying its [NEG] by reference)",
+      "note": "Six thumbnail concepts against a minimum of three; four title candidates measured at 69/69/74/75 characters, all inside 59-100, all third person, none a question."
+    },
+    {
+      "kind": "fact_recheck",
+      "path": "episodes/PD-2026-074-itaewon/01_research/fact_recheck.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "note": "Four items must be resolved before a frame is rendered, six more before upload."
+    }
+  ],
+  "approvals": [],
+  "costs": {
+    "estimated": {
+      "amount": 12,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 1.4,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    },
+    "note": "Actual is the ElevenLabs --measure-section ACT_1 run: 49 chunks, 734 words, 222.025 s of speech. The full narration master is estimated at $9.32 from the v004 dry run and is DELIBERATELY NOT YET GENERATED -- see blockers."
+  },
+  "warnings": [
+    "THE CRUSH IS NEVER DEPICTED. No body, no fallen person, no CPR, no stretcher, no blood, no covered figure, in any frame, including the thumbnail. The alley appears in exactly three states: empty, ordinarily busy, after. The event is carried by sound, by the width of the walls and by the slope. This is the one failure the channel cannot recover from.",
+    "THE TOLL IS 159 AND NEVER 160. 159 is the official figure recorded by the Ministry of the Interior and Safety and carried by named reporting through March 2026. The figure 160 appears in an English summary of a Korean forensic study reported 22 July 2026 and is not the official toll. It may not appear in narration, caption, title, thumbnail or description.",
+    "NO FINAL LEGAL OUTCOME IS ASSERTED FOR ANYONE. Only first-instance judgments were verified. Every named person carries their status, its date and its court inside the same sentence that names them. The appellate outcome could not be verified and the film says so out loud.",
+    "FACES ARE PERMITTED AND WANTED (owner decision 2026-08-21). The [NEG] blocks must NOT contain human face, facial features, eye contact or headshot. They contain identifiable person, recognisable person and likeness of a real individual, which satisfies the NEG gate without erasing the crowd. The crowd is the subject of this film.",
+    "KOREA IS NOT INTERCHANGEABLE WITH JAPAN OR CHINA. Kana, Chinese shopfronts, red lanterns and Tokyo neon are the same class of error as an EU number plate in a Texas film. Signage in frame is hangul or unreadable. Korean courts do not use a gavel.",
+    "NO COUNTERFACTUAL. Nothing 'would have' prevented it. No verified finding establishes that closing the street, one-way flow, more officers or a safety plan would have changed the outcome, and the script states that refusal out loud three times."
+  ],
+  "blockers": [
+    "AB-02 -- THE APPELLATE OUTCOME IS UNVERIFIED, AND THIS BLOCKS THE RENDER, NOT JUST THE UPLOAD. The Seoul High Court judgment for Lee Im-jae and co-defendants was reported in May 2025 as expected around 27 October 2025. It could not be retrieved on 2026-08-21 in English or Korean. ACT_5 is built on first-instance outcomes and says so; if the judgment exists, ACT_5 is rewritten and the narration master, captions and scene plan are thrown away with it. Resolve before generating narration.",
+    "FILM_BIBLE v002 + script v005 REQUIRED. SCENE_PLAN v001 section 2.5 measured the act lengths against the bible and found ENDING at 4:10 against a designed 1:00, because every research region added in ledger v002 and v003 landed in the present-day section. Two block moves are specified with exact anchors. This invalidates the bible's beat map for ACT_4 and ACT_5, its retention map, and the timing of AE beats 4 and 5.",
+    "TWO LEDGER ROWS ARE STILL UNREAD AND ARE DELIBERATELY ABSENT FROM THE SCRIPT: IT-58 (Seoul Metro passenger figures) and IT-74 (the Constitutional Court's reported 'many factors' line). Fetch and re-grade, or cut. Quarantine rule 10.",
+    "NO IMAGES EXIST. I001-I120 are ordered but not generated. Images are Codex's lane; local SDXL is not started for a long-form episode except to fix a Codex plate.",
+    "PREFLIGHT IS NOT ADVISORY. preflight_render_gate.py --ep PD-2026-074-itaewon must be GREEN before any render. 25 of 32 episodes failed it and 10 rendered anyway; on 2026-08-20 EP70 and EP71 were three GPU-hours from a captionless slideshow."
+  ],
+  "created_at": "2026-08-21T00:00:00+09:00",
+  "updated_at": "2026-08-21T00:00:00+09:00"
+}
