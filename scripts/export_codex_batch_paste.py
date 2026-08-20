@@ -156,6 +156,15 @@ def main() -> int:
                      f"\n   {r['prompt']}\n")
         (out_dir / f"batch_{n:02d}.txt").write_text(body, encoding="utf-8")
 
+    # One combined file as well: the batches are for pasting eight at a time, this is for handing
+    # the whole order to somebody in one piece. Same house convention as EP62_greene_CODEX_PASTE_ALL.
+    all_path = out_dir.parent / f"{eptag}_CODEX_PASTE_ALL.txt"
+    all_path.write_text(
+        "\n\n".join((out_dir / f"batch_{n:02d}.txt").read_text(encoding="utf-8")
+                    for n in range(1, len(chunks) + 1)),
+        encoding="utf-8")
+    print(f"[paste] wrote {all_path.name}")
+
     rec = out_dir / "plates.v001.jsonl"
     with rec.open("w", encoding="utf-8") as fh:
         for r in rows:
