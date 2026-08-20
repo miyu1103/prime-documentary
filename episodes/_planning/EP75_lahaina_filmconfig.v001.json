@@ -9,7 +9,7 @@
   "out": "remotion/src/data/lahaina_film.json",
   "leadSeconds": 0,
   "openingVariant": "overlay",
-  "hookSeconds": null,
+  "hookSeconds": 20.266,
   "hookLine": "Three o'clock on a Tuesday afternoon, on the mountain side of a town on Maui, an engine crew",
   "captionLeadSeconds": 0.0,
   "figures_by_section": {
@@ -635,7 +635,7 @@
     "leadSeconds": "0 -- the hook is voiced from frame 0 (spec v3 row 9).",
     "openingVariant": "'overlay' -- BrandOpening over the hook's settle; the voice does not stop.",
     "captionLeadSeconds": "0.0 -- captions.final.v001.srt carries the house 0.60 s lead already.",
-    "hookSeconds": "NULL AND DELIBERATELY SO. It is measured as the sum of the HOOK-section chunk durations in narration_index.v001.json, which does not exist yet. Fill it from the index; do not estimate it.",
+    "hookSeconds": "MEASURED 2026-08-21 from narration_index.v001.json: the HOOK section runs 0:00.0 to 0:20.266 across four chunks. The film bible targeted \"trim in the edit to land at 0:20 with the last clause intact\" -- it landed at 20.3 s as written, with no trim needed.",
     "figures_by_section": "Authored 2026-08-21 from EP75_lahaina_FILM_BIBLE.v001 section 6, the beat map. Counts are 14/16/17/15/16 across ACT_1..ACT_5, inside figure_beats_per_act [13,17] at both edges, with ACT_3 AT THE CEILING -- do not add one there. Every card carries `_row`, and every `_row` was checked against both ledgers before this file was written.",
     "kinetic_16_16": "The ACT_3 card with lines ['16:16.'] is B3, the film's largest card. It is style 'hero' and holds 4.0 s with the clock stack dimmed to 25% beneath it.",
     "quarantine": "No card merges Finding 37 with the fact that the sirens were not activated (the ledger's rule 02), no card carries the word 'failed' (rule 03), no card resolves the 30-50 car range to one number, and no card carries a figure that is not a ledger row (rule 10)."

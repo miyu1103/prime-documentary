@@ -528,7 +528,11 @@ EPISODES = {
         # 88 s at the high edge -- the most centred projection of any episode in this registry.
         # Cross-check on the finished-minute figure: 5321 / 176.3 = 30.18 min + 12.6 s of section
         # gaps + 9 s endcard = 1832.5 s. The two agree to within 0.1 s.
-        "design_speech_seconds": 1711.9,
+        # DELIVERED 2026-08-21: made=311 skipped=46 failed=0. Speech total 1740.1 s against this
+        # 1711.9 s model (+28.2 s, 1.6%); measured end-to-end 184.1 wpm against the 187.1 measured on
+        # ACT_1 alone. Master 1857.403 s, film 1866.4 s (31:06) with ENDCARD 9.0 -- inside
+        # runtime_seconds [1740, 1920] with 126 s of headroom low and 54 s high.
+        "design_speech_seconds": 1740.1,
         "sections": SECTION_ORDER_5ACT,
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
