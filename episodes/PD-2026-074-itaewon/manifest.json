@@ -12,7 +12,7 @@
   "target_duration_minutes": 30,
   "active_revisions": {
     "episode_spec": "v001",
-    "facts_ledger": "v004",
+    "facts_ledger": "v005",
     "film_bible": "v002",
     "script": "v005",
     "scene_plan": "v002",
@@ -30,10 +30,11 @@
     },
     {
       "kind": "facts_ledger",
-      "path": "episodes/_planning/EP74_itaewon_FACTS_LEDGER.v004.md",
-      "revision": "v004",
+      "path": "episodes/_planning/EP74_itaewon_FACTS_LEDGER.v005.md",
+      "revision": "v005",
       "produced_at": "2026-08-21",
-      "note": "v001-v003 remain in force and are not restated by v004. v004 RESOLVES AB-02 and AB-03: there is no appellate judgment because both appeals were suspended, 14 July and 28 August 2025, to wait for the special investigation commission. It also supersedes IT-58 with IT-93/IT-94, read in the article, from Seoul Transportation Corporation's own passenger count. Grades include UNREAD, added on this episode: a row seen only in a search-result summary is not usable until the article itself is fetched."
+      "note": "v001-v004 remain in force. v004 RESOLVES AB-02/AB-03 -- both appeals suspended, 14 July and 28 August 2025 -- and supersedes IT-58 with IT-93/IT-94. v005 adds no facts: it restates quarantine rule 15 as a table row, because it had been written as prose and no tool could enumerate it.",
+      "validated": "py -3.11 scripts/check_script_citations.py --slug itaewon -> exit 0: 223 of 223 narration lines cited, 98 distinct ids all resolving, no UNREAD row cited, no superseded row cited"
     },
     {
       "kind": "film_bible",
