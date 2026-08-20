@@ -123,14 +123,42 @@ blur only on beats marked fast. `depth` maps on ≥40 % of stills (`feedback_per
 
 | block | clock | carried by | archive registers to stage | notes |
 |---|---|---|---|---|
-| HOOK | 0:00–0:20 | H001–H008, roughly one plate per line | `dry_grass_field_wind`, `wildfire_smoke_ridge` — **eyeball both** | Push-in f0→f36 on H001, Trail 6 layers to f18. RECONSTRUCTION label up for the whole hook |
+| HOOK | 0:00–0:20 | H001–H008, roughly one plate per line | `wind` (498) + `dust` (210) + `particle` (1,340) — **measured. `grass` returns 0 on both shelves**, so the slope itself is H001/H002 | Push-in f0→f36 on H001, Trail 6 layers to f18. RECONSTRUCTION label up for the whole hook |
 | OP | 0:22–0:57 | H009–H014 | — | `BrandOpening` 3.5 s lands over continuing footage at 0:20. The word *siren* is first spoken at 0:58, not before |
-| ACT_1 | 0:58–5:34 | H015–H021 (the hardware and the monthly test), H022–H038 (the town and the forecast) | `dry_grass_field_wind`, `storm_clouds_dramatic` **texture only**, `weather_radar_screen` — **reject anything with legible numerals** | **B1 at ~1:25**: four identical framings of the pole cut on 11 frames. F10, the "notice was rare" quote card, at 4:05 |
-| ACT_2 | 5:36–10:10 | H039–H050 (before dawn and the morning fire), H051–H064 (the roads, the phones, 14:17) | `power_lines_silhouette`, `utility_pole_repair`, `empty_road_sunset` **used flat, never golden** | F30, the 14:17 clock card, closes the act. The phone, H062, is seeded here and detonates in ACT_3 |
-| ACT_3 | 10:11–15:52 | H065–H088 | `wildfire_smoke_ridge`, `smoke_over_road` — **no flame in any staged clip**, no orange grade | **B2 builds across the act. B3 (16:16) at ~14:30, 4.0 s, the film's largest card.** F43, the 15:37 radio quote, at ~13:00 with the bed −6 dB |
-| ACT_4 | 15:53–22:28 | H089–H102 (the roads and the gate), H103–H110 (the water and the utility) | `chain_link_fence`, `fire_hydrant_street`, `water_main_trench` — **all three unverified on the shelf, eyeball first** | **B4 (eight ticks to six) at ~18:40.** Cut mean tightens to 3.4 s. The gate sequence H093–H099 runs unbroken at 21:00 |
-| ACT_5 | 22:30–28:17 | H111–H117 (the investigation), H118–H128 (the findings and the record) | `office_corridor_empty`, `filing_cabinets`, `server_room_lights` | H118 returns the ACT_1 pole in the identical framing under colder light — **the one deliberate repeat in the film**, and it must read as a repeat |
-| ENDING | 28:19–30:57 | H129 held, then H130–H132 | `small_town_street_day` (rebuilt, present day) | **B5: 9.0 s on H129 with no typography**, then `BrandEndcard` |
+| ACT_1 | 0:58–5:34 | H015–H021 (the hardware and the monthly test), H022–H038 (the town and the forecast) | `sky` (437) + `cloud` (244) + `wind` (498) + `screen` (139) — **reject anything with legible numerals**. `grass` 0, so the hillside is plates | **B1 at ~1:25**: four identical framings of the pole cut on 11 frames. F10, the "notice was rare" quote card, at 4:05 |
+| ACT_2 | 5:36–10:10 | H039–H050 (before dawn and the morning fire), H051–H064 (the roads, the phones, 14:17) | `silhouette` (582) + `night` (1,417) + `road` (158) — **`pole` returns 0 on the factory shelf**, so every pole in this act is H041–H045. No golden hour | F30, the 14:17 clock card, closes the act. The phone, H062, is seeded here and detonates in ACT_3 |
+| ACT_3 | 10:11–15:52 | H065–H088 | `smoke` (324) + **`ember` (149, verified real)** + `traffic` (33) — **`fire` (380) is BARRED**: campfire, fireball VFX, fireflies. No flame in any staged clip, no orange grade | **B2 builds across the act. B3 (16:16) at ~14:30, 4.0 s, the film's largest card.** F43, the 15:37 radio quote, at ~13:00 with the bed −6 dB |
+| ACT_4 | 15:53–22:28 | H089–H102 (the roads and the gate), H103–H110 (the water and the utility) | `water` (529) + `concrete` (53) + `metal` (53) + `traffic` (33) — **`fence` (128) is BARRED** (prison yard, barbed wire) and **`hydrant` returns 0**, so the gate and the hydrant are H093–H106 | **B4 (eight ticks to six) at ~18:40.** Cut mean tightens to 3.4 s. The gate sequence H093–H099 runs unbroken at 21:00 |
+| ACT_5 | 22:30–28:17 | H111–H117 (the investigation), H118–H128 (the findings and the record) | `corridor` (112) + `desk` (177) + `paper` (287) + `chair` (87) + `monitor` (165) — **the richest DL act in the film**; `folder` returns 0 | H118 returns the ACT_1 pole in the identical framing under colder light — **the one deliberate repeat in the film**, and it must read as a repeat |
+| ENDING | 28:19–30:57 | H129 held, then H130–H132 | `road` (158) + `window` (303) + `light` (1,913) — a mainland street is still the wrong clip; eyeball | **B5: 9.0 s on H129 with no typography**, then `BrandEndcard` |
+
+### 3.0 THE DL BUDGET — what the downloaded footage is actually asked to carry
+
+**"The downloaded footage never gets used" is a failure this channel has had before, so this plan
+states the number instead of hoping.**
+
+| | cuts | from |
+|---|---|---|
+| stills, ≤32 % ceiling | **156** | the 132 plates, held with motion |
+| video, 68 % floor | **330** | of which — |
+| — i2v derived from plates | ~**124** | the registers no shelf holds: the siren, the slope, the poles, the gate |
+| — **downloaded clips** | **~206** | **the factory shelf. This is a floor, not an aspiration** |
+
+**About 42 % of this film is downloaded footage** — roughly **165 distinct clips** at the planned
+1.25× reuse, against a utilisation floor of **42**. Four times the floor.
+
+**The register column above was corrected on 2026-08-21 and the correction matters.** The first draft
+named registers like `dry_grass_field_wind`, `power_lines_silhouette` and `chain_link_fence`, and
+**none of them exists**: measured on the 88,850-item factory shelf, `grass` returns **0**, `pole`
+returns **0**, `hydrant` returns **0**, and `fence` returns 128 rows of prison yard and barbed wire.
+A plan that tells the builder to stage clips that are not there is exactly how an episode ends up
+with no downloaded footage in it at all. Every register in the table is now a **measured count**, and
+the counts are in `EP75_lahaina_FOOTAGE_PLAN.v001.md` §5.5.
+
+**ACT_5 is the richest DL act in the film** — `corridor` 112, `desk` 177, `paper` 287, `chair` 87,
+`monitor` 165 — and ACT_1 and ACT_3 are next on `wind` 498, `sky` 437, `smoke` 324 and `ember` 149.
+**If the assembled `film.json` holds fewer than 42 distinct factory clips, the build is wrong**,
+whatever else is green.
 
 ### 3.1 The register problem this episode has, named before the shot list is committed
 
@@ -146,12 +174,13 @@ savannah or a cartoon.
 | register | why the shelf fails | plan |
 |---|---|---|
 | Outdoor warning sirens | no subtype exists on the shelf at all | **entirely commissioned** — H009–H021, and i2v for any movement |
-| Non-native dry grass on a leeward Pacific slope | "grassland" returns prairie, savannah and conifer edge | commissioned + heavily filtered archive, eyeballed |
+| Non-native dry grass on a leeward Pacific slope | **`grass` returns 0 rows on the 88,850-item factory shelf**, and 1 on the archive — a sunset | **entirely commissioned** — H001, H002, H026–H028, H067 |
 | A Pacific plantation-era town street | every offered street is mainland US, European or Asian | commissioned; **a mainland main street is the single most likely wrong clip** |
-| Grey wind-driven smoke with no flame and no people | fire footage is orange, close, and usually has people in it | commissioned; **no archive fire clip enters this film** |
+| Grey wind-driven smoke with no flame and no people | `smoke` (324) and `ember` (149) are real and usable; **`fire` (380) is barred** — campfire, fireball VFX, fireflies | plates carry the plume; **the shelf carries the particulate**. No fire clip enters this film |
 
-Of the 265 distinct video assets, **plan for at least 100 to come from i2v on H001–H088** rather
-than from the archive.
+Of the 265 distinct video assets, about **100 come from i2v on H001–H088** and the remaining **~165 are
+downloaded clips**. §3.0 has the cut-level budget; the DL share is **~42 % of the finished film** and
+it is a floor, not a target.
 
 **Run `check_cross_episode_reuse.py` BEFORE staging, not after.** It identifies by content, not by
 filename, so a renamed clip is still caught. EP68 pinto and EP69 hyatt have already spent this

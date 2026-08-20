@@ -111,6 +111,84 @@ the forbidden-subject sweep plus the contact sheet are what enforce that.
 | `small_town` | 617 | every street in it is mainland US, which `era_setting` names as the single most likely wrong clip for this episode |
 | `ocean_nature` | 1,060 | **conditionally** — the ocean appears in this film only as a direction, flat and grey. Anything that reads as beauty is barred by ⛔-12 |
 
+## 5.5 THE FACTORY SHELF — a second shelf, and the one the film actually draws from
+
+**There are two shelves and §1–§5 above measured only one of them.** That is a real error in the
+first draft of this document and it is corrected here rather than quietly patched:
+
+| shelf | items | searched with | what it is |
+|---|---|---|---|
+| `D:\pd-archive` | 14,663 video | `search_archive.py` | public-domain and CC archive footage, human-written titles |
+| `E:\pd-media\assets\factory` | **88,850** | `select_factory_assets.py` | the production shelf — particles, light, backgrounds, VFX overlays |
+
+The register names in `SCENE_PLAN` §3 are **factory** filenames, not archive titles, so they had to
+be measured against the factory shelf. Measured 2026-08-21:
+
+| query | rows | verdict |
+|---|---|---|
+| `light` | 1,913 | **use** |
+| `night` | 1,417 | **use** |
+| `particle` | 1,340 | **use** — grounds and overlays |
+| `silhouette` | 582 | **use** — the people lane at distance |
+| `water` | 529 | **use** — ACT_4 |
+| `wind` | 498 | **use** — the film's whole first act |
+| `sky` | 437 | **use** |
+| `smoke` | 324 | **use, after eyeballing** |
+| `window` | 303 | **use** |
+| `paper` | 287 | **use** — ACT_5 |
+| `cloud` | 244 | **use** |
+| `dust` | 210 | **use** |
+| `desk` | 177 | **use** — ACT_5 |
+| `monitor` | 165 | **use** |
+| `road` | 158 | **use** |
+| `ocean` | 153 | **conditional** — flat and grey only, never as beauty (⛔-12) |
+| `hand` | 149 | **use** — the people lane |
+| `ember` | **149** | **use** — verified real: `embers_floating`, `embers_rising_black_background` |
+| `screen` | 139 | **use** |
+| `corridor` | 112 | **use** — ACT_5 |
+| `chair` | 87 | **use** |
+| `shadow` | 81 | **use** |
+| `metal` | 53 | **use** |
+| `concrete` | 53 | **use** |
+| `traffic` | 33 | **use** — ACT_3 and ACT_4 |
+
+**Barred after reading what came back, not after assuming:**
+
+| query | rows | why barred |
+|---|---|---|
+| `fire` | 380 | `campfire_glow_night`, `explosion_fireball_black`, `fire_flames_black_background`, `fireflies_at_night`. **`movie explosion` and `fireball vfx` are in `forbidden_subjects`**, and none of it is a wildfire |
+| `fence` | 128 | `prison_yard_fence`, `barbed_wire_fence_sky` (category `crime_police`), `white_picket_fence`. **No usable chain-link.** The gate register stays commissioned |
+| `ash` | 348 | the same substring trap as the archive: `cash_stacks_money`, `flashlight_beam_fog`. Only `ash_falling` is real ash |
+| `rain` | 459 | wrong weather for a leeward slope in a drought. Not a register in this film |
+| `grass` | **0** | nothing. The film's primary fuel does not exist on this shelf |
+| `pole` | **0** | nothing |
+| `hydrant` | **0** | nothing |
+| `folder` | **0** | nothing |
+
+**`grass` 0, `pole` 0, `hydrant` 0 on a shelf of 88,850 items** is the same conclusion §1 reached
+about the archive, reached independently on the other shelf. Those registers are plates.
+
+## 5.6 THE DL BUDGET — how many downloaded clips actually reach the cut
+
+**This is the number this document exists to state, because "the downloaded footage never gets used"
+is a failure this channel has had before.**
+
+Against the measured master (486 cuts at a 3.8 s mean):
+
+| | cuts | where from |
+|---|---|---|
+| stills ceiling, 32 % | **156** | the 132 commissioned plates, held with Ken-Burns motion |
+| video cuts, 68 % | **330** | of which: |
+| — i2v derived from plates | ~**124** | motion generated from `H001`–`H088`, for the registers no shelf holds |
+| — **downloaded clips** | **~206** | **the factory shelf, and this is the floor the build must hit** |
+
+**~206 of 486 cuts, or about 42 % of the film, is downloaded footage.** In distinct terms that is
+about **165 distinct clips** at the planned 1.25× reuse — **four times** the utilisation floor of 42.
+
+**If the assembled `film.json` contains fewer than 42 distinct factory clips, the build is wrong and
+must not be rendered**, whatever else is green. `check_footage_utilization.py` measures it and
+`footage_utilization` is the receipt line to read.
+
 ## 6. DIVERSITY AND UTILISATION FLOORS — declared
 
 Measured against the delivered master (1,857.4 s) and `episode_spec`:
