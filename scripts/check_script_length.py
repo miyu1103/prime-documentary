@@ -98,6 +98,14 @@ def count_words(text: str) -> int:
         idx = text.find(h)
         if idx != -1:
             text = text[:idx]
+    # MEASURED 2026-08-20 (PD_ONE_PASS_PRODUCTION_SPEC.v3 6.6) and FIXED 2026-08-21 on EP76:
+    # every script since EP66 carries an HTML citation comment under each factual line, and
+    # they were being counted as spoken words. Inflation per script: EP69 +2,195, EP68 +1,798,
+    # EP66 +1,736, EP67 +1,565, EP71 +1,256, EP70 +975, EP76 +758. On EP76 that turned a
+    # 5,114-word script (the words the TTS extractor actually speaks) into 5,872 and made the
+    # gate report LONG by 392 words on a script that is 29:46. Strip them first: a comment can
+    # contain brackets and parentheses, so it must go before the ASCII-bracket rules below.
+    text = re.sub(r"<!--.*?-->", " ", text, flags=re.S)  # HTML citation comments
     text = re.sub(r"^#.*$", " ", text, flags=re.M)      # markdown headings
     text = re.sub(r"【[^】]*】", " ", text)               # 【OST: ...】 on-screen text
     text = re.sub(r"〔[^〕]*〕", " ", text)               # 〔CARD: ...〕 on-screen text

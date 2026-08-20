@@ -1,0 +1,2437 @@
+{
+  "episode_id": "PD-2026-076-morandi",
+  "revision": "v001",
+  "provider": "ElevenLabs",
+  "voice_id": "nPczCjzI2devNBz1zQrb",
+  "model_id": "eleven_multilingual_v2",
+  "voice_settings": {
+    "calm": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.14,
+      "use_speaker_boost": true
+    },
+    "building": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.3,
+      "use_speaker_boost": true
+    },
+    "intense": {
+      "stability": 0.35,
+      "similarity_boost": 0.8,
+      "style": 0.44,
+      "use_speaker_boost": true
+    }
+  },
+  "chunks": [
+    {
+      "chunk_id": "VC-0001",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "On the first of August 2012, under a motorway viaduct in Genoa, an inspection recorded what could be seen on one beam.",
+      "text_sha256": "sha256:7bc1f5e0c0944609d6967640092247287125e1e51d610376c657e99e069b2347",
+      "idempotency_key": "sha256:53db925bfb929d97824e1f54f6e5c0fac6f7482b0101a5cb176239ad99761408"
+    },
+    {
+      "chunk_id": "VC-0002",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "The concrete had come away.",
+      "text_sha256": "sha256:2704ae5edf2132ad2d9cf192ed22f5b23d4ffd3fe26a348dd78b2b9231f9b727",
+      "idempotency_key": "sha256:f707f0f9a27d45d0d3eb0c9250ddb26e87849f5e18eac14599080c3f9874e69f"
+    },
+    {
+      "chunk_id": "VC-0003",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "The cables inside were showing.",
+      "text_sha256": "sha256:1ac61bc74e0daba2b0a02315074159ff483c3b67f01bb408d6b966a8b10bb7d9",
+      "idempotency_key": "sha256:a8af2b1c106305882c38f1715a1ac2260b053390f6819bdb76259d516cc03892"
+    },
+    {
+      "chunk_id": "VC-0004",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Some of the wires were broken.",
+      "text_sha256": "sha256:f69096249a32af7c813e6b39396a68d13a5ad9401c65a68f3a704396efb50e0b",
+      "idempotency_key": "sha256:ab4112b1ad7923cdda4b2e07e41ce69d1a5e5ace5cf40a56c5d097787944efb4"
+    },
+    {
+      "chunk_id": "VC-0005",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "Then the form asked for a number, and the number written in the box was forty.",
+      "text_sha256": "sha256:a72e6ef6062e900d6f7221e2a16f2e82f50a8d1b06e717c6d73e4d7376fac72f",
+      "idempotency_key": "sha256:6faaa64a3094019b4e85ac34052413b16c61554d453a2dc0b46b7a78dff7bec1"
+    },
+    {
+      "chunk_id": "VC-0006",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "In the manual the motorway company had written for itself, broken wires in the prestressing steel were a seventy.",
+      "text_sha256": "sha256:d357f50efef746dea76c3947ce1a9c8445e6411e0633c0631a027b417565ca9b",
+      "idempotency_key": "sha256:f8e228aeee420db4f7de2eafc08d4036a4107fb68e4d0de728124bfbf1140482"
+    },
+    {
+      "chunk_id": "VC-0007",
+      "section": "HOOK",
+      "delivery": "intense",
+      "spoken_text": "And a seventy meant immediate measures, up to closing the road.",
+      "text_sha256": "sha256:7e6c4e2ef82c81fb13f29b68ae60e9b9436e4ba911b859156335b1a8ba35c089",
+      "idempotency_key": "sha256:352cf0c5ae0b6537ecded8ac819cae5774696b3ca2268c3532f30d088adc8c9c"
+    },
+    {
+      "chunk_id": "VC-0008",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "This is a story about a shell of concrete, a printed form, and a document that was owed by law and never written.",
+      "text_sha256": "sha256:dfca2e4c8e448cd9571801e029cb79c010a16db1451c1fde57a3487c4147f1c3",
+      "idempotency_key": "sha256:d7fde494ad02fd0e3d619115a8ef1af248cc7454e6610f30607464ef66c1eb52"
+    },
+    {
+      "chunk_id": "VC-0009",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "It is not a story about a bridge that fell down.",
+      "text_sha256": "sha256:768778787e5d51ac73fd7d067686de434a87fd1090cd76d075c07b31d521fec7",
+      "idempotency_key": "sha256:9b28380cf9cc397f16eaa9ac4e6329c7b35a92a680a64599f8e0bb32d1f824b9"
+    },
+    {
+      "chunk_id": "VC-0010",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "It is a story about the thing you do without thinking, every day, in a car: crossing a structure somebody else is responsible for looking at.",
+      "text_sha256": "sha256:3a9109f6f44afa120da1ea0d96480300e17f372ebc19e4623cb5b37f420fe0f0",
+      "idempotency_key": "sha256:dcf9adb2663c8a007a4c1f425962166079f2263c6e3570b8691bcd590d52c50c"
+    },
+    {
+      "chunk_id": "VC-0011",
+      "section": "OP",
+      "delivery": "building",
+      "spoken_text": "Over the next half hour you will see what was inside that concrete, what happened the one time anybody cut into it, what the inspections were actually measuring for twenty-five years, and what a court in Genoa decided about all of it, eight years later.",
+      "text_sha256": "sha256:d102577e1b875ab02e7cbe12dad30e2c6462743fb925c508023497ad2fe4dd70",
+      "idempotency_key": "sha256:89cac7a606bee0893927d5789485e574dd0b52e81a366d04b18c436bab2a8207"
+    },
+    {
+      "chunk_id": "VC-0012",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The Polcevera is a river in Genoa that runs down out of the hills to the sea, and by the middle of the twentieth century almost nothing of the valley floor was still river.",
+      "text_sha256": "sha256:098a8d6b3ec1626a4827258789796c016e38bfc99a66d3a65e24db3806acc190",
+      "idempotency_key": "sha256:2d50e46176c147760c71898620e7706bc8b718dad8f5b929a661216fc7b96cb4"
+    },
+    {
+      "chunk_id": "VC-0013",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There were apartment blocks in it, and industrial plants, and a railway yard, and railway lines, and city streets.",
+      "text_sha256": "sha256:7c6399f68bee06bcb70323e74deab1eff3d2c511a786d25889d1866f5191a86b",
+      "idempotency_key": "sha256:5847b7ef0627efcb970a5786850959413b9c0997bfc84e65c4b5a928179ecf3b"
+    },
+    {
+      "chunk_id": "VC-0014",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In 1962 a professor of bridge construction named Riccardo Morandi produced a design to carry a motorway across all of that.",
+      "text_sha256": "sha256:e6cb9eca2366fea6847868908ce5b9e76a4b4a1174bdca40b2a855248598b641",
+      "idempotency_key": "sha256:6783abde097e1b1d0bf3eb9e003cd8cd3b259a30c1458d90f51758231f6f7b05"
+    },
+    {
+      "chunk_id": "VC-0015",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Building started in 1963.",
+      "text_sha256": "sha256:e72d6bfc10cb7c366c25f35ae13b25f888c3a9e4f32c9ad0e872e3a26e731dbc",
+      "idempotency_key": "sha256:604c6cae34441e5cc469423cfe8b0e6c93600869700776f110d1b3ba438c6393"
+    },
+    {
+      "chunk_id": "VC-0016",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It opened in 1967.",
+      "text_sha256": "sha256:b1cff000ffce00615e9ed7d0359c40bcde7e05724fb0a7d4610883bdecd8439c",
+      "idempotency_key": "sha256:5ed06b2c0ca3e4eb4cbda26820c86251b91b5407839923610b572b7337b802a9"
+    },
+    {
+      "chunk_id": "VC-0017",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It stood at kilometre zero point five five one of the A10, the motorway that runs west out of Genoa towards Savona and France.",
+      "text_sha256": "sha256:4e6c6430a8f13ef0b32c5ffec16edd0264f738d74500fa62e986c6ab6b0cbb3e",
+      "idempotency_key": "sha256:b56420d31e6871e3a5dfa494de308a94b57ac6365fab13c044dd651de903e9aa"
+    },
+    {
+      "chunk_id": "VC-0018",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It was one thousand one hundred and two metres long, and it stood, on average, fifty-six metres above the valley floor.",
+      "text_sha256": "sha256:6ddb533b142e35778bb0227dc4b61c0fae330b884194be95b989865a0e228860",
+      "idempotency_key": "sha256:c349a9a9e8e71f43c5bc304e9c9f1bfef10b88dc602a743bf62df88a4f9e5848"
+    },
+    {
+      "chunk_id": "VC-0019",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Eleven spans.",
+      "text_sha256": "sha256:55674d7ac9353f5f2012233913063857d116f4489e86d80486f99bb85e5c8488",
+      "idempotency_key": "sha256:16dc640a8484d68cc43b025742dab7645cfd409d35abd068941c209cdd2e77dd"
+    },
+    {
+      "chunk_id": "VC-0020",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The shortest was sixty-five metres.",
+      "text_sha256": "sha256:f2c727bf3b2a245e9a6cd9a53d233943a01734ab2eb32bfad88a01d052888a59",
+      "idempotency_key": "sha256:113572f24c0d179536405721acb61ed265643f1200993112768038f3637a551a"
+    },
+    {
+      "chunk_id": "VC-0021",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The longest was two hundred and eight.",
+      "text_sha256": "sha256:88bdf89e1d29a45f2b1d4d48ec7336c83ce8df73ef3b8910b1b9371ac5f13787",
+      "idempotency_key": "sha256:f7fa41868fcd80a475d021240137d1da97e73bb9ec517129953445a82d195311"
+    },
+    {
+      "chunk_id": "VC-0022",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Most of the deck sat on ordinary concrete trestles, shaped like a letter V.",
+      "text_sha256": "sha256:0c14cf42c93f84f2d661bc247dedc29c7a8feee6942fc892f8c128b40a0a024e",
+      "idempotency_key": "sha256:a59fae6a8f11231214bffd2e9847ddbc37390dafa54770e624332873e990d61e"
+    },
+    {
+      "chunk_id": "VC-0023",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "But three of the spans were something else, and those three are the reason this story exists.",
+      "text_sha256": "sha256:bc7ea0e528cc3907d7605ba6f6aec7afdaaebcfee1a312207ae3a41093f0cadb",
+      "idempotency_key": "sha256:4ccb2be12e3f114c0d7ec0c51127096bfa24aa2e476464ce3b8d1996431c9f1c"
+    },
+    {
+      "chunk_id": "VC-0024",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "At three points along the viaduct — the piers numbered nine, ten and eleven — Morandi built what the engineers call a balanced system.",
+      "text_sha256": "sha256:327debc0c0593577d454b7fa08b887693cad4db3d30210a79f8ccbc97c362b26",
+      "idempotency_key": "sha256:22de1dc2a09ff9ab5ad09627ca35853394b3ca3658ed754a27d6ee7e266b5841"
+    },
+    {
+      "chunk_id": "VC-0025",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A concrete tower stands up out of the valley.",
+      "text_sha256": "sha256:cecfc690a16808bc7717250706f121f5a8d1fac91208e9bc05ea5f39cc17e4c6",
+      "idempotency_key": "sha256:996582a61d072b997ddbf40e1767aa443d80beaaf321763a5243bfad84cee5f4"
+    },
+    {
+      "chunk_id": "VC-0026",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The road runs through it.",
+      "text_sha256": "sha256:fc6e27ba28ca6a743eff8dc028d57f9aed1974a315b6e55dd235d0eb4f2ef349",
+      "idempotency_key": "sha256:230054474239f1a7014e8247c02bb3c2d714c8e0be1643d5784a86f73bd1c8fc"
+    },
+    {
+      "chunk_id": "VC-0027",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And from the top of that tower, four enormous diagonal ties run down and take the weight of the deck, two on each side, so that the pull on one side is balanced by the pull on the other.",
+      "text_sha256": "sha256:3cc67e8c9a83bee34d78b9634f923302bc00ea1886540cc047801ee2942bb7c8",
+      "idempotency_key": "sha256:e2dff03cc7a0287cdedbffa9523f36d2213ba46a93ffb6f7cc5832bd09401465"
+    },
+    {
+      "chunk_id": "VC-0028",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The towers stood as much as ninety metres above the ground.",
+      "text_sha256": "sha256:25e2adce87439553b560cc756bc9767a04195f56737c8a9b9bfc7b975e7a678d",
+      "idempotency_key": "sha256:05d697dd6ce45d41221d0d2bcba39fe36cd19a011bce67ba41465b6e63db2510"
+    },
+    {
+      "chunk_id": "VC-0029",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Between those big spans, the gaps were closed by short decks of six prestressed concrete beams each, thirty-six metres long.",
+      "text_sha256": "sha256:81e4e949b27b2d00906df8fae74d99459b5acc76a7f08e5cfdc251068364e86f",
+      "idempotency_key": "sha256:1412a2a6d21e76d05832362a1616519d6784bde6766c7cbaa8005e63adc39904"
+    },
+    {
+      "chunk_id": "VC-0030",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "In Italian they are called infill decks.",
+      "text_sha256": "sha256:f12078c148a209489880a3182c42591b3eae780db95f689056e892024605dae2",
+      "idempotency_key": "sha256:d8b61b25ce7c7864adf70ca0aa31dd25e275e256d10ef53f230b5aeccb5805ec"
+    },
+    {
+      "chunk_id": "VC-0031",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "There were ten of them.",
+      "text_sha256": "sha256:73a421906eedeb2632c8ad2179a8e85de57b514fd8fbcc5c0f23a45fd9201299",
+      "idempotency_key": "sha256:a37e6751bb8560d69c1efd233dbbef15690d87a2f9ef1faf5ad5d3c137927a07"
+    },
+    {
+      "chunk_id": "VC-0032",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Morandi had built this before.",
+      "text_sha256": "sha256:653039abc73acac0266d876cd5be30ba01af47e843f3b00586ea2c7e0a6cf786",
+      "idempotency_key": "sha256:59429c0f6a8ab7fe477cfb8a73a717ddcbf3b27273666fbc0ffb2333e85802a1"
+    },
+    {
+      "chunk_id": "VC-0033",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "A few years earlier he had used the same system for a bridge across the mouth of Lake Maracaibo, in Venezuela, and he would use it again in Libya.",
+      "text_sha256": "sha256:3c7242fd6c1eefde41bc8aca0cfdbd2ab23ddf78797d8f809c9500946692556b",
+      "idempotency_key": "sha256:2492d30fe0950bb57d8feb8f4206bf196b4eb17ef280f85bfc1e4992870e3354"
+    },
+    {
+      "chunk_id": "VC-0034",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "But in Italy there was only ever one of them.",
+      "text_sha256": "sha256:a6f145d41981ef267f75479af86058227cc9ecd601dce544dfe11e81dc8dd4b2",
+      "idempotency_key": "sha256:c78275cf79528e702b3665b640cfaa8e7a2875ddd374a155683229396f45f3bf"
+    },
+    {
+      "chunk_id": "VC-0035",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Out of the whole national motorway network run by the concession company, the Polcevera viaduct was the only cable-stayed bridge.",
+      "text_sha256": "sha256:e696beecf7668a4480ebcf3732aaefd6bab62bec5b405586909415ffee3274ce",
+      "idempotency_key": "sha256:6b4679f38f693acee8752557526d1d8f9ab5d90dc42955b5d45554ec4347446a"
+    },
+    {
+      "chunk_id": "VC-0036",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Now the part that matters.",
+      "text_sha256": "sha256:49eb0c18d88ea0f7b298a31f59791b729fca860f2ebc074922b94064b6c3dee7",
+      "idempotency_key": "sha256:f705667b4679a9aa6649c157d2e45729c4bd9a12f333bbd7ca8d7f89bb4e2769"
+    },
+    {
+      "chunk_id": "VC-0037",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "On a modern cable-stayed bridge, the stays are steel, and you can see them.",
+      "text_sha256": "sha256:a19e687f96e8193de81ab534362a53db79b93b3d29821c1414c2a2b1d0f6ac6a",
+      "idempotency_key": "sha256:e5aa0ade36c6b1dba0fd8ec331dae32fb0ab05e115e98d0f28f1ba869c711536"
+    },
+    {
+      "chunk_id": "VC-0038",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "They are cables in the open air.",
+      "text_sha256": "sha256:8b256b72435554139dc94166f9f4112b15c4b63c779c9b4b789e832b40c00d09",
+      "idempotency_key": "sha256:1a3d0e1ebd774701c9ead6d3d7aa8a6c5d77729842c76a90627f2106cfe113d4"
+    },
+    {
+      "chunk_id": "VC-0039",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "You can walk up to one, put a hand on it, run an instrument along it.",
+      "text_sha256": "sha256:6d08d2ef19702d8d55f97129db74c0fd4223f2800d58036503040a234d0d22bd",
+      "idempotency_key": "sha256:f276ef37a65476b04ec68a8bfbbca2958f263cf2a039ca6e95eaf1762eb3f5b0"
+    },
+    {
+      "chunk_id": "VC-0040",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Morandi's stays were concrete.",
+      "text_sha256": "sha256:abfb7f603d193d2a9f08f53de8fef27edab6958511c86bad7f163ea28dd93bdc",
+      "idempotency_key": "sha256:cb86a26e772ce90b9dfe0009b5de41aa5f2e8c52771260f9c1563324f32712ef"
+    },
+    {
+      "chunk_id": "VC-0041",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Inside each one there was steel — strands of high-tensile wire, half an inch across, running over a saddle at the top of the tower.",
+      "text_sha256": "sha256:1e86672d66672f6c34bed233a5be7e7b3b07336c06dcdf4097831cb21acdd1a4",
+      "idempotency_key": "sha256:4e92d71df9c31537db88181ea051d759c3056e35997bf3b7667680597e770557"
+    },
+    {
+      "chunk_id": "VC-0042",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Three hundred and fifty-two strands carried the weight.",
+      "text_sha256": "sha256:924e7340fd914d8420ff73e8fa395b38e8d137d6164b6585e2e3d4f547229625",
+      "idempotency_key": "sha256:5bcce36c9f711c04c93fd9fec7dcdae5ab3923c53b365ad8ba817f28675b4532"
+    },
+    {
+      "chunk_id": "VC-0043",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Another hundred and twelve did a different job.",
+      "text_sha256": "sha256:246af1ac4b56d1b1e8b63d8ce459997a7b86045bb1a350e0cfc08c1798c68e2f",
+      "idempotency_key": "sha256:3d73932812b1eb3d107f80a0796353ad2997e2a2e3faafffcc45b06fcdffc339"
+    },
+    {
+      "chunk_id": "VC-0044",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The order in which it was built is the whole point, so here it is.",
+      "text_sha256": "sha256:7af627259754b59d12a94398006419e04981bed2594c2643b4d701672c46e367",
+      "idempotency_key": "sha256:7a66fd62e37d3909f8c0d9c92f61f9cb6e24755c9f1f9510d8e239496c89f2fb"
+    },
+    {
+      "chunk_id": "VC-0045",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "First the main cables were hung and tensioned, until they were holding up the deck.",
+      "text_sha256": "sha256:2b661a151ff05cfa03a6b0d7cc17c23ec43cd4280179ddfdc932e0f69fa5fb08",
+      "idempotency_key": "sha256:560366aa1d98e091a40be5165b9a9dca4367a0d4a657aab88c9b29ed283ad72e"
+    },
+    {
+      "chunk_id": "VC-0046",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Then, and only then, a sheath of concrete was built around them — precast segments, threaded on from outside, at first free to slide against the steel.",
+      "text_sha256": "sha256:fe33cb0759da945516f5ff56355e01527971cd5c4b99e7e760daa0a404a1980b",
+      "idempotency_key": "sha256:ea7a786a53f27a15a7eeaf4b93abcef5f13927e18aca8791decb6860066a4e18"
+    },
+    {
+      "chunk_id": "VC-0047",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The second set of cables sat inside that sheath, further out, and they were pulled tight so as to squeeze the sheath itself into compression.",
+      "text_sha256": "sha256:f6e66dd4f255f36fb275d27cd418118d1e57c0255c98d1bb30f3ee0b5c445f45",
+      "idempotency_key": "sha256:733c9a8b4a488a88e0c89925ae8814af8aec8a2b2287d2880212cd423e1c094e"
+    },
+    {
+      "chunk_id": "VC-0048",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And then grout was injected into the ducts, and the steel, the second cables and the concrete shell became one solid thing.",
+      "text_sha256": "sha256:2c4dff29219b3f2fd0453e59967e5eab61ef57cc4c6c5c82da9f77fcec1cb378",
+      "idempotency_key": "sha256:9d0d2fc5f3a44a6331a20f378de6e0fba43db70bf52c39f597c6d69900047f8f"
+    },
+    {
+      "chunk_id": "VC-0049",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The stated reason for all of that, in the record, is a single phrase.",
+      "text_sha256": "sha256:5d5ac9e19aa88cfd5c79017dc550c93674d00853c8bab077f50609f735dc8be3",
+      "idempotency_key": "sha256:01d21402f43eee75ae64a73185df31da155367f6b1d27094e66d9f7b0392f9fc"
+    },
+    {
+      "chunk_id": "VC-0050",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The advantage of preserving the metal part of the stays from corrosion.",
+      "text_sha256": "sha256:d6d8681e08656e67dfb725b0ca812999ac7d5cdfe8a4e98748d79dfd9cd8da16",
+      "idempotency_key": "sha256:1f8e39e2e78eec665fd6d8485a5425872520bbf4a3098cf6e4416c9517c00ada"
+    },
+    {
+      "chunk_id": "VC-0051",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "The concrete was there to protect the steel.",
+      "text_sha256": "sha256:2efa2ba36f573a3a2e3aca4fbcdcbf308fdf18938a94a8812e9776bb780d180c",
+      "idempotency_key": "sha256:53ef49bee07e498dae926ea8ac009ae9edc3cf66dd39ad8dc5769acee4375bce"
+    },
+    {
+      "chunk_id": "VC-0052",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is also the reason nobody could look at the steel.",
+      "text_sha256": "sha256:06c98c963eb78ae9879a0d8b99659cfabf0523cee3987a53b1e37d328d23515d",
+      "idempotency_key": "sha256:64033b6ea17f23d23994e37d0286d3693db9f5e813fdcc87632660267654582e"
+    },
+    {
+      "chunk_id": "VC-0053",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "And the ministry's own commission, half a century later, put the consequence in a sentence that sounds like nothing until you understand what it is about to cost.",
+      "text_sha256": "sha256:cc61c4dd01f3708abcdcaceb37fdffe81294c7b5b6d04c68b97423306e7fd8ef",
+      "idempotency_key": "sha256:c886678bd952eeb1d437e94b91b50ec0b642c264adf80625066f17b4573054de"
+    },
+    {
+      "chunk_id": "VC-0054",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It is universally recognised that indirect methods of investigation do not permit quantitative assessment.",
+      "text_sha256": "sha256:af6c47b66ff1f1d9fd83ca3fbe9094dbaa805a6ade96bd61f26376b1bbd1f721",
+      "idempotency_key": "sha256:448adeb2ce2ab404d8438dd55a5f06a7e7916233898f73abd6ba76fb19b94576"
+    },
+    {
+      "chunk_id": "VC-0055",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Direct investigation is therefore indispensable.",
+      "text_sha256": "sha256:9853bf20158cdda3c2e37abb7024788616cde4f91ea7d3d5b84813d3d6db91f3",
+      "idempotency_key": "sha256:2b563119d21cda56b91e5f9c82f5839e927e80a98c35cb506583eccdd2c421e0"
+    },
+    {
+      "chunk_id": "VC-0056",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "Direct investigation means one thing.",
+      "text_sha256": "sha256:55f4d9cde05ca2aaf89460b08db02cde7a13b41fb44ea4be6c7c634787bffdc8",
+      "idempotency_key": "sha256:1bbeee6f0f7aafc7a3fc8ec0af4de109d0c48c2490290cb58d538bfce77e28b8"
+    },
+    {
+      "chunk_id": "VC-0057",
+      "section": "ACT_1",
+      "delivery": "building",
+      "spoken_text": "It means cutting into the concrete.",
+      "text_sha256": "sha256:f32346f82c4c55d001209612954c8e084eedcdc307f9883a3e9e6068c6144ec5",
+      "idempotency_key": "sha256:0ad1faae70d00577659205e19cb9374bd0629df8620cd3107dd19549f47ee4be"
+    },
+    {
+      "chunk_id": "VC-0058",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "By the beginning of the 1980s the bridge was fifteen years old.",
+      "text_sha256": "sha256:6cfdb6070eff3441a51ad42c664d96acb63fc34014d3399ac09b4a4dc47c1b5e",
+      "idempotency_key": "sha256:b703ba81fc81d738c7508deb3845167b66ae832b50cc0278b4f763f248572e0e"
+    },
+    {
+      "chunk_id": "VC-0059",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "In 1981 the motorway company asked Morandi himself for a report on it.",
+      "text_sha256": "sha256:131d696f5925c862da6ab0c00fb3ecb0d63489022d5f306cb8fa5bccdd2e66ea",
+      "idempotency_key": "sha256:feae24ed1517abe13555766ba8bc44abe8ad74e8b52f5d40ef15a964f0747b0b"
+    },
+    {
+      "chunk_id": "VC-0060",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "We have not read that report, and this film is not going to tell you what was in it.",
+      "text_sha256": "sha256:20aa165e15bb7151aeed06825e6ade0da440444c4c54c51766d04cc65e19912a",
+      "idempotency_key": "sha256:3f69685f63b5989032e884b3d6a1dcf7581337928b3a8e0c977bb1d7752f50da"
+    },
+    {
+      "chunk_id": "VC-0061",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "What the record does say is that from the 1980s onward — in part following that report — the viaduct became the subject of a series of maintenance works, ordinary and extraordinary.",
+      "text_sha256": "sha256:d4492ce5f21b11f458eb13663a9836141c7d09cf1dd42cae08b402df35aa2cf9",
+      "idempotency_key": "sha256:ab4ab71f31565ecb3ae86f6dfcafe377ceee13e3cd29c1adee2594e83872d82e"
+    },
+    {
+      "chunk_id": "VC-0062",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Surfaces were repaired.",
+      "text_sha256": "sha256:8b6f28c9470cfa77c7885689153830c2503911c01cd59dea200072e7e6622731",
+      "idempotency_key": "sha256:5866a45c5ce5de6860611588554847b5a9af78976a609e1a2a56cf39dc79e2dc"
+    },
+    {
+      "chunk_id": "VC-0063",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The drainage was renewed.",
+      "text_sha256": "sha256:9aeda0388d206a8ee2c482b2b64731bb6e04c0950f95ba606d039f543cd6ebcd",
+      "idempotency_key": "sha256:30998fb307bc4f6f2d6d9a281ab0cc9bb806718d91ef040e7d420a5ce8b3833c"
+    },
+    {
+      "chunk_id": "VC-0064",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And hatches were cut into the deck so that people could get inside it and look.",
+      "text_sha256": "sha256:0e145a143657be0264c7a9802f9b686968efbc23259ac6602285f482a43c011d",
+      "idempotency_key": "sha256:60538d41abe3a7e49e0186cdeb16d337102799cb02e4693a2b226c0dd129ae6b"
+    },
+    {
+      "chunk_id": "VC-0065",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Between 1986 and 1993 there was more.",
+      "text_sha256": "sha256:c8ed38098b0389bee8390c156a0a9a6bdc8ec8e9bc7f25ac1a72dc59c04ea62d",
+      "idempotency_key": "sha256:d48e3dfc9321e0a8a3dce17fac08b384fe83352d1bccfcbb9d07549814b30816"
+    },
+    {
+      "chunk_id": "VC-0066",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The lower edge of the infill-deck beams was strengthened.",
+      "text_sha256": "sha256:d26f796751d570709827de00e71bd0d4824ca0693596edd9fdffc11003a74e49",
+      "idempotency_key": "sha256:e1c8c14d1e16143a822334fd0a06f5157ed82f106d4093c455371d894040ba1b"
+    },
+    {
+      "chunk_id": "VC-0067",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The underside of the box girders was repaired.",
+      "text_sha256": "sha256:3a795cce8f855998c52b59c8badd3f829ea759c7acc6579a6b20f0791999d0f9",
+      "idempotency_key": "sha256:a312add57d36bf52ad4fba1a888b4e6b57598fc3ab1fe6779aceff8039e98282"
+    },
+    {
+      "chunk_id": "VC-0068",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "New barriers went in along the middle of the road.",
+      "text_sha256": "sha256:072f73b84ff91199ef83dc1dd6b61e1641ee784e50f28800d8e210475e9da06f",
+      "idempotency_key": "sha256:eba947f9d3f3ab4492bfde34ff95dd73d1d560e24f263d224acb7e4745c57dc9"
+    },
+    {
+      "chunk_id": "VC-0069",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "New bearings were fitted.",
+      "text_sha256": "sha256:e039f039bd0b4c938534b608e4dc1339acb67a68824f18aa036e7d5d53866f69",
+      "idempotency_key": "sha256:2638633ba0cc68a4a540a2d76c36c2baf41f25f44ee464b37f5578275f75e12b"
+    },
+    {
+      "chunk_id": "VC-0070",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Access holes were made for inspections.",
+      "text_sha256": "sha256:da071d733f7ea1acfd00755ad790f69d414b4e4869c33b973fd8b2404fed5302",
+      "idempotency_key": "sha256:6bcd93db0b7d158b795a3c02807b9a14e73cb3712bddc82fde28f7b68ead5410"
+    },
+    {
+      "chunk_id": "VC-0071",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And cables were installed to strengthen the lower slab of the box girder at pier nine.",
+      "text_sha256": "sha256:36edb7cd8b5f73e132ec6e8d8b49a018b8191c7dbde16f12fef8ce5515d761d9",
+      "idempotency_key": "sha256:5719d64ad2d1e3a1bceb7cc453ce459382354f2c21611203139e6b87e250cc39"
+    },
+    {
+      "chunk_id": "VC-0072",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Then, in 1992, they went to pier eleven.",
+      "text_sha256": "sha256:ccf73e221d2e8b41136293c23638208881f2a5bd8ba815d4ea209c809bc6af03",
+      "idempotency_key": "sha256:e71b1ce5ace95a8687e61dfb19db95ce46206eefff97f05b1cdd7788e6b9717e"
+    },
+    {
+      "chunk_id": "VC-0073",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Pier eleven was the one nearest the city.",
+      "text_sha256": "sha256:4b624f9eedf5a60b579f7810034b73a9d42a50dff4f996530931d282aa6c1569",
+      "idempotency_key": "sha256:80879f12cec1612637672bcbf883764db4f4247db3691ce736d9dd918c9cbd3e"
+    },
+    {
+      "chunk_id": "VC-0074",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The plan was modest.",
+      "text_sha256": "sha256:bb666008350c45385543df8808b75a72ccb102c32fd8cdb0491eae3c11b489dd",
+      "idempotency_key": "sha256:54f100708552d906edd34577e465dcf81f82980bed1773b3265fdae313e5faa8"
+    },
+    {
+      "chunk_id": "VC-0075",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Patch the concrete, protect it, move on.",
+      "text_sha256": "sha256:3286f3f13e8971e127939f7f2b6cb58f2f34fa853ff630159ae00a98e9c8734c",
+      "idempotency_key": "sha256:d911ba78688d97da0faf11e70d46dbea31196502d7f14b38b704a67e0b6a14dc"
+    },
+    {
+      "chunk_id": "VC-0076",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Before starting, they ran some checks.",
+      "text_sha256": "sha256:7cf0522be14973a2ce395fd4030037e73eabb94c7e818c83e9f9bbd4bed6b8db",
+      "idempotency_key": "sha256:40a8424d7759662c426685ca6363235e361ee4696fa99839eb95088f5db792d3"
+    },
+    {
+      "chunk_id": "VC-0077",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Not to find anything.",
+      "text_sha256": "sha256:1b57bc3e7f65ad46b40006a853afea0cb10a72b8ee0d3a7e42da278f73bc7a29",
+      "idempotency_key": "sha256:5666fafc30b89004143ad1b863e9b3e5edbc5e98b359bd67258017b2f19ecddb"
+    },
+    {
+      "chunk_id": "VC-0078",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "To price the job — to work out how much patching there was going to be.",
+      "text_sha256": "sha256:629660781f1e2eb6c7c54156a2e0dbf5aae0bd7923e3c6e35d047191ae7e0604",
+      "idempotency_key": "sha256:47c398ed8e8340d155b5d5d0bf4976bf9a89aabc16ff4e5e20d5a3470312c067"
+    },
+    {
+      "chunk_id": "VC-0079",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The record's phrase for what those checks turned up is a far more worrying situation.",
+      "text_sha256": "sha256:4b9a4352a83a6831d303e059cd4814b3b5c5f9333cb8904740b30c542179d658",
+      "idempotency_key": "sha256:8399220056bc8c805a6b8213afc65baa9648374853c8c03fd6d8634b4d3dae24"
+    },
+    {
+      "chunk_id": "VC-0080",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There were voids inside the concrete.",
+      "text_sha256": "sha256:c5a370f063bdeadeccc0dfb041775b963f7650a67751c28e4891aacda8796921",
+      "idempotency_key": "sha256:ef3c1c9793e98a222180df3da61adfb6c348edb58a1f87c64c28b6ee813c20c1"
+    },
+    {
+      "chunk_id": "VC-0081",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There was concentrated deterioration, worst of all at the point where the stays met the cross-beam at the top of the tower.",
+      "text_sha256": "sha256:73fd5df63fdd856b7070cfc5946d9aef93a50cad5d018b72742b6c60cec9d2e3",
+      "idempotency_key": "sha256:5ec90213772e80b40d4eb66c97212b73c41dd2b8eaccd4bc654174be98167d0b"
+    },
+    {
+      "chunk_id": "VC-0082",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "And there was corrosion in the cables.",
+      "text_sha256": "sha256:786d75873e42c81cbb8a97a806d3177de3f0e3bab47b19611922aa43d94c30ab",
+      "idempotency_key": "sha256:4497bbaa932727e462445a9040b7269f765aea0ab665494fd28795804eda31f6"
+    },
+    {
+      "chunk_id": "VC-0083",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So they opened it up properly, and here is what they found.",
+      "text_sha256": "sha256:911499142f56a09d35b61deff1eeef52983b881df5333b79a461b358e1169112",
+      "idempotency_key": "sha256:a070027d3e14f6ae340316ecd75c584c0b64b64bf4d6b3d30c0d6a82fc6bf7a9"
+    },
+    {
+      "chunk_id": "VC-0084",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The investigations therefore brought to light the grave state of oxidation of the internal prestressing cables.",
+      "text_sha256": "sha256:9e283953351ac588aa2b94204b6b1dd6ed748baa09fac4c0519d175ae3f99c85",
+      "idempotency_key": "sha256:1c7ded41b51726bdf573cfc668c9610074ef8448d91cdf8a93c78a263a239e7e"
+    },
+    {
+      "chunk_id": "VC-0085",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Numerous strands were severed, or heavily oxidised, with advanced reduction of section.",
+      "text_sha256": "sha256:10d461cbf56f4a355a097ec7c3b61c9443bad5db434771e5ebddb89e8a514bb8",
+      "idempotency_key": "sha256:78f6d23b4698aad01459340157eabca2dc59ddec8b0031081924706f69387f43"
+    },
+    {
+      "chunk_id": "VC-0086",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Other strands appeared visibly slackened, suggesting a significant loss of pretension.",
+      "text_sha256": "sha256:40da722eba85b82e7ce1509880d606fdfe860b23182761f86b996a0d6abe7e16",
+      "idempotency_key": "sha256:c20807c66eaea317c3a91c1bba4fd034e96586664e4655ffe854a1665c08c246"
+    },
+    {
+      "chunk_id": "VC-0087",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Severed means broken through.",
+      "text_sha256": "sha256:79ef004825382742e68694e98f0bd3367d6c1ac9f117512c02d2562696c1a0a9",
+      "idempotency_key": "sha256:c364e644a92f57b6f9c50982a02849afca4131cd37940cd3c4c8a8f62c34551e"
+    },
+    {
+      "chunk_id": "VC-0088",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Reduction of section means there was less steel there than there was supposed to be.",
+      "text_sha256": "sha256:0b0afc468f39be4fa1d487ab6c7a6e9b523225154db76bee709923c185908163",
+      "idempotency_key": "sha256:f685bb439ea27f56856f63e7802e25b99fee1050974bad90843d094288fd8de7"
+    },
+    {
+      "chunk_id": "VC-0089",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Slackened means it had stopped pulling.",
+      "text_sha256": "sha256:36caf02b4f9995cf21df5d7568f2dbd4d387b16ade9dfb0da52e0860a61de084",
+      "idempotency_key": "sha256:6870b09d4a01adeb95cbbdf35f9601269703ff37109517bd0790080f23716d22"
+    },
+    {
+      "chunk_id": "VC-0090",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "This was 1992, and the bridge was twenty-five years old.",
+      "text_sha256": "sha256:a615ea3956423b0bd05cd9d21692d5fad388cb361481259eee970a9564660819",
+      "idempotency_key": "sha256:848d8c53dbad385549d9f69ed247c25a94bc6308dc18ca0c2b36b8373b77cc17"
+    },
+    {
+      "chunk_id": "VC-0091",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The repair was designed by an engineer who had worked with Morandi on the original construction.",
+      "text_sha256": "sha256:538492d81ec238bfbdb89a83926a01a3ab9389a3f2b58521854e2610f2bbb803",
+      "idempotency_key": "sha256:d38f4b5141a287ddd27c599f310c797b95032992d95d3484cb5c10d2c798d24c"
+    },
+    {
+      "chunk_id": "VC-0092",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "He did not change how the bridge worked.",
+      "text_sha256": "sha256:66a9068621e61df9763390206f62e3cd2824f8d90b0fe38833f025f8e49d88c5",
+      "idempotency_key": "sha256:0c672b751ae39a5484e8de6a75adbf88415a3e871f6595ea4eae75a5868814f5"
+    },
+    {
+      "chunk_id": "VC-0093",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "He kept the same arrangement — the stay with its compressed collaborating sheath — and he added to it.",
+      "text_sha256": "sha256:35531fab3a4c502b4bcf0267df2e52806ef5cf59eafc7f9eb48373799345e722",
+      "idempotency_key": "sha256:8f2815f1d0dad091c5cdc3fb84f442786a7ab42ed0fb99e524ae196d6edc35a0"
+    },
+    {
+      "chunk_id": "VC-0094",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "What he added were new cables, and he put them on the outside.",
+      "text_sha256": "sha256:0e406c46e74fa95abd8e3387f3454f03f495c9b6d1543c69b6b27276a1c13183",
+      "idempotency_key": "sha256:9d10779b909cd024f19545af87a7366914e095b6ea166cd5620753c0a9c56f5e"
+    },
+    {
+      "chunk_id": "VC-0095",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "They ran down the flanks of the existing stay, in polyethylene ducts, in the open air.",
+      "text_sha256": "sha256:0aa37b17931a701a1219248fa0caa1b35ed50d645e1512f63a6d6fbde12e192e",
+      "idempotency_key": "sha256:fa1ed818b857a9c0bc3bb04d9cedd4c30d40f3ca67343ab990a905b5f7e8d93b"
+    },
+    {
+      "chunk_id": "VC-0096",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The record gives the reason for that in four words.",
+      "text_sha256": "sha256:4cb9e3bdca48894210d07f3898c620ef21ea1db22aa5de58ca0803ef2b53386d",
+      "idempotency_key": "sha256:bddc3fc4da5359f1a12a3402180a5b58dbbf0b0d59165cfe64bedbdb8ad58cae"
+    },
+    {
+      "chunk_id": "VC-0097",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "To permit their future maintenance.",
+      "text_sha256": "sha256:8532a22af4242f0b814cdd799bd17e261798f903108a0ab3d7d046b4513795c0",
+      "idempotency_key": "sha256:54736aac81ce4d6ec66e12079e4217de990d861ba05bf4ea5dc9abd3bb2e6a3a"
+    },
+    {
+      "chunk_id": "VC-0098",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Sixty years after Morandi wrapped the steel in concrete to protect it, the man who came to fix it put the new steel where somebody could reach it.",
+      "text_sha256": "sha256:e2fcba9d4edb3cba10254efaa02c05938b2a135f2bf36c2779bf3fd22fc0f6ab",
+      "idempotency_key": "sha256:7a1d002ad592479bc515953f5b5294d39c861b99b8f1f4fab8aa2cc59dbb08a7"
+    },
+    {
+      "chunk_id": "VC-0099",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The work was done without closing the road, using temporary structures built for the purpose, which stayed afterwards in the possession of the motorway company.",
+      "text_sha256": "sha256:c7cf21e885ecc2d33d9337b2fd7e00cc55405543e884d04d28c67d8dcf503f0f",
+      "idempotency_key": "sha256:713bfa0c8e8bd06473b7486d01403e44079945ce74ab8c4bab7030175c3cacb1"
+    },
+    {
+      "chunk_id": "VC-0100",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "So by 1996 they knew what was inside a Morandi stay on this bridge.",
+      "text_sha256": "sha256:37e2c2c1e1beb9bee830ac02332dd9c19bc866f0fb5d7790e2eb7954702097a5",
+      "idempotency_key": "sha256:d367eae15ac9945ae120e0bfb3d87f9ba6cbe306025fd15890c74a7940888cd4"
+    },
+    {
+      "chunk_id": "VC-0101",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "They had a method for fixing it.",
+      "text_sha256": "sha256:9895d1ca381819db75d9ee5765f983d98210375edb886ba2bde95b963a3ac715",
+      "idempotency_key": "sha256:a3b59e70f4bda5f9e88d4d3a5610f86f699e0045d9bbdbdb8485e52fb45c9984"
+    },
+    {
+      "chunk_id": "VC-0102",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "They owned the equipment.",
+      "text_sha256": "sha256:f85f62f5d6ba8f044cee7fb517316a44e3f01eeec2e93294e67cdc200c753b70",
+      "idempotency_key": "sha256:e9f749e2444f6e8f6f5a7c9a2f703c999481b9809575b24aebe58a6c971fb6a0"
+    },
+    {
+      "chunk_id": "VC-0103",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "The intervention was carried out only at pier eleven.",
+      "text_sha256": "sha256:e536928e673b40bfa463de29e747fc342ba6ac9d7d50fb655179e049899d56c5",
+      "idempotency_key": "sha256:1aab24462594a04b67b95c4b0a230c69b6a7f5bde3786374287fad136fdc80c9"
+    },
+    {
+      "chunk_id": "VC-0104",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "There were three stayed piers on that bridge.",
+      "text_sha256": "sha256:06de89e86bcf6f4151492055cce6e53f69c0ace668351c3b8743b8f6c5b22531",
+      "idempotency_key": "sha256:39912dbf086bd356b26b418e3100279137e26684d04cef9481072ad8040d6fe4"
+    },
+    {
+      "chunk_id": "VC-0105",
+      "section": "ACT_2",
+      "delivery": "building",
+      "spoken_text": "Twenty-two years later, one of the other two came down.",
+      "text_sha256": "sha256:9a7dfa64b8495d29572c237e4791d00bced220b6fd2d830b4bfcf000f3bb7317",
+      "idempotency_key": "sha256:febbfbdb52a29aba3827f509478ead0b4e94561b5f2d11099f9503cca8bb0577"
+    },
+    {
+      "chunk_id": "VC-0106",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "From here the story is made of paper, and the paper is more frightening than the bridge.",
+      "text_sha256": "sha256:d8544ba7e59dd14f620e59f3091e3aad79051bdc3eb75c2dc9bb9d9fe1a1fc07",
+      "idempotency_key": "sha256:c772883818f126d2fe82fc3291ffee0903f3dece97044d063a00dcfcb8f69a6c"
+    },
+    {
+      "chunk_id": "VC-0107",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The way the company checked its structures was by inspection.",
+      "text_sha256": "sha256:cddc11698238880d468c5c2fae4b9fd39b1a7ed55d738fa5afac38976ee74fe6",
+      "idempotency_key": "sha256:fdbcdc5febffabcafd37589060d54daf98e85320aa6b9363769706a5acd7267c"
+    },
+    {
+      "chunk_id": "VC-0108",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Somebody went and looked, and wrote down what they saw, and gave each defect a score out of a hundred.",
+      "text_sha256": "sha256:beda11a778defb05cbd72d7239a0ad6cd5a1183d32bdf6864e6bb7a009320e22",
+      "idempotency_key": "sha256:279e8b75f9b33f927c06d3cd6d97807bf92b8239fb4b6bcd9f50e2fcbbf31c0e"
+    },
+    {
+      "chunk_id": "VC-0109",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The scores were not arbitrary.",
+      "text_sha256": "sha256:17646274717ef4512f8254fc43f901bdaceb5c7e233376c512b38174d9f41a4d",
+      "idempotency_key": "sha256:d1e4f085b993707fadf4f21415db955f7ec90417c0c793f66705a0278d9ec242"
+    },
+    {
+      "chunk_id": "VC-0110",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "There was a manual, written by the company, that said what each number meant and what each number obliged them to do.",
+      "text_sha256": "sha256:e5f84c88c3e218eb35d5ddb7d4671e67da7413445da9cbc71ac7395d9104d3cb",
+      "idempotency_key": "sha256:301e15732970d6ad033dd26735d56006062fa9d75961fb1447c0e65a85aea042"
+    },
+    {
+      "chunk_id": "VC-0111",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A sixty meant the defect affected the structure but did not reduce the safety margins significantly.",
+      "text_sha256": "sha256:7cca7ac88bc2078ed75a25ede7e1bbbc26f2553efabba4d8b366742228eb892f",
+      "idempotency_key": "sha256:54befb3bb46d78187221ac7989d186d165e67b50e61f37fa1a2b93b3c7e1e5c9"
+    },
+    {
+      "chunk_id": "VC-0112",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It required work in the short term — and the manual defined short term as less than two years.",
+      "text_sha256": "sha256:df9271ea92f181504c6423d0e42f4442d39b9384815a56ea0156d2961d95c961",
+      "idempotency_key": "sha256:6092432b3106825cb1a63d95a0a88814fc8bef524a49a1522ea3653c50d238e8"
+    },
+    {
+      "chunk_id": "VC-0113",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A seventy was different.",
+      "text_sha256": "sha256:30d789a03fc96393f7f8a5100c5edd521f59ea17dbf8d69a0bea822a37b1c325",
+      "idempotency_key": "sha256:8cf8f5f359794bf7f99068071139ef0911d15c0cd638d1299f5b50d8e13f4967"
+    },
+    {
+      "chunk_id": "VC-0114",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Seventy.",
+      "text_sha256": "sha256:954baa97bf457643d9c5771e722bf48d1bf72419548e64e9f9d56134425efa65",
+      "idempotency_key": "sha256:03dfc21fd308fe89023ca6998e2e658cf12c696cadcc52044f19da4636b61c3d"
+    },
+    {
+      "chunk_id": "VC-0115",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Defect at an advanced state.",
+      "text_sha256": "sha256:2049449d8027234a5b86422b8da3fe562cace7e63a9b12a02cc98e37f4c9bbca",
+      "idempotency_key": "sha256:3114e98db3c853098eaf91f642a7bcb0e850ac006d76eccf72e59d448abf0298"
+    },
+    {
+      "chunk_id": "VC-0116",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Has an influence on the statics and reduces the safety coefficient.",
+      "text_sha256": "sha256:2a67cebbff9f1187d5cd781652c66c0336e211c17a821fca8b473072f6e8703f",
+      "idempotency_key": "sha256:0b43b10584f0ae836a2c38633aafdb69be3f9e4c66f9d68cef9700916f39e5ee"
+    },
+    {
+      "chunk_id": "VC-0117",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Reduction of the prestressing steel section — broken wires.",
+      "text_sha256": "sha256:74b5bd2235b0ac81ca5282c4ddfced8f5baf39a2fa1365537972a86d009c28bf",
+      "idempotency_key": "sha256:eb4722748cc4cac44f90c2b8d21e6e859d8941e26c82d45978c64999e54e28e6"
+    },
+    {
+      "chunk_id": "VC-0118",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And for a seventy: immediate measures are provided, such as traffic restrictions, up to closure of the carriageway, generally followed by temporary works and then by an intervention of extreme urgency.",
+      "text_sha256": "sha256:1417dc8c4a6bf02004b890c549abf776fdd37f519e85ab302aebb3309d254a8e",
+      "idempotency_key": "sha256:81a35fd918445fc0740415c2c73bf7e7e574e87c831e1082987ecdae1c8ec4e8"
+    },
+    {
+      "chunk_id": "VC-0119",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Closure of the carriageway.",
+      "text_sha256": "sha256:caab585dfa638fe3d023501356eb31633de9046927b9527486368c6b08f5a600",
+      "idempotency_key": "sha256:3cdf12dc4182c9e4cd5fdf8c5a01d0f81f69263d6eeea5b1bdd4437f44818f40"
+    },
+    {
+      "chunk_id": "VC-0120",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That is in the company's own manual, written by the company, about its own roads.",
+      "text_sha256": "sha256:f39907b691ff3fc9182aedcaf0081e3388fdd632e5c1c1490659b43f5fb7e67a",
+      "idempotency_key": "sha256:07c85358c0341469373100a44aba32e69a9dd5375eeded47f4e40733cfa4de5c"
+    },
+    {
+      "chunk_id": "VC-0121",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Now here is what the inspections of the Polcevera viaduct actually recorded, in the ministry's own summary of them.",
+      "text_sha256": "sha256:19ea60a74beafbd818cbc12c58baf0c37b2e9e27111e5121af6c828458da621d",
+      "idempotency_key": "sha256:fddd2100c8dc088e4c066eb56db515a96ebbb10e0d90e90d6f8fbe561ab19bd4"
+    },
+    {
+      "chunk_id": "VC-0122",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In October 1991, on a stay at pier eleven: oxidised cables, oxidised and severed strands, fine cracks across the section.",
+      "text_sha256": "sha256:11f7951ee7e49976d8b5db6913aa5da5623442423f20e75c7cf103f3fdf6d628",
+      "idempotency_key": "sha256:66f863276dbc2ebbbb915fde71814f2fb9535383370b432388bcd033ccd647c6"
+    },
+    {
+      "chunk_id": "VC-0123",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "That one was scored seventy.",
+      "text_sha256": "sha256:50e0bfb3d620ea1ba9b0410807af4c919f351d702f5cb3904c6df5e8b51381e3",
+      "idempotency_key": "sha256:2884194bb5ae83c2d7294d95d09d9808d520b57d32f8633a64498f1838e0c9a0"
+    },
+    {
+      "chunk_id": "VC-0124",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It was found in 1991.",
+      "text_sha256": "sha256:fafc788d4a3b7c4883d4cdbd99156dc71f9c7879f4f76baef5557a016f0340d2",
+      "idempotency_key": "sha256:a8c48e63b4e400aec13101c32e972b02e24f27fe9e899fb4c4ea0fb3ac326701"
+    },
+    {
+      "chunk_id": "VC-0125",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It was repaired in 1994.",
+      "text_sha256": "sha256:b723fdff76fdd3821353b67b11d10fb27f5c0f12d4ba5196b18a71cd7eaac413",
+      "idempotency_key": "sha256:711b086591f7e20877f600522d1da3e3e57e54c747df55941b0ebb022bcf2b06"
+    },
+    {
+      "chunk_id": "VC-0126",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In February 1997, a deck slab had dropped and was vibrating, because the bearing underneath it had partly failed.",
+      "text_sha256": "sha256:4015ce390f8944b5fe752b19f08c85eac1a71b743667ff6a071a56927d37899d",
+      "idempotency_key": "sha256:17b9f89e474f4d857b1ece19eb02cac506fd475cd5d15d4aa56e1e8f5185d515"
+    },
+    {
+      "chunk_id": "VC-0127",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Scored forty-three.",
+      "text_sha256": "sha256:df60b723a78d85194456da2f658d549b93585d52964c99b918c93dfe32784a9a",
+      "idempotency_key": "sha256:6d09a0a3f4df4e26cc8d54f0b1b2d818fcdb166118bd5ad55a0b473af0cd873b"
+    },
+    {
+      "chunk_id": "VC-0128",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "To be reported.",
+      "text_sha256": "sha256:1b7c299345a8026bf9e756f82425800ce77851623facb195585a98f629d87e14",
+      "idempotency_key": "sha256:60c576faf6817ade263e9a90eefa235bf8224ef147d1c353472d079cd9a6611d"
+    },
+    {
+      "chunk_id": "VC-0129",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Found in 1997.",
+      "text_sha256": "sha256:3f6ae7f7658beca306b42ead54d249b86637049026e79cc0a272475e86d13e98",
+      "idempotency_key": "sha256:05d1dee97b213c4bf0b36cb60c08c471fb262e05fa033b2bd50d7dcfb2d29a1e"
+    },
+    {
+      "chunk_id": "VC-0130",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Repaired twelve years later.",
+      "text_sha256": "sha256:6dff712c713364586172fead6dd2da084468ccb9f7b3baec6c291481be3e9931",
+      "idempotency_key": "sha256:e6801b0247e8e023525a8ec561fdbb36ec6d22b3a1246512e4327bc38807a069"
+    },
+    {
+      "chunk_id": "VC-0131",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In December 2006, steel bars severed by a slab failure.",
+      "text_sha256": "sha256:690e25c1a017f0eac622b036f18db23d4b337170295ca08d3fbdc1071d83fa82",
+      "idempotency_key": "sha256:531a75243d9e4e43f74aa1d493a1f3c89ed113e22b856405bc18db281aa5da0b"
+    },
+    {
+      "chunk_id": "VC-0132",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Scored forty.",
+      "text_sha256": "sha256:c5ef33711429c22a98e21b6a689d7eb4501ff20797c2d0f00b0b549f87bde1bf",
+      "idempotency_key": "sha256:b528e5322d6835ff246eeb071bca7c70b7bce963fc44a035333ad0e963f1b888"
+    },
+    {
+      "chunk_id": "VC-0133",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The ministry's commission said that score was absolutely not coherent with the damage found, and that in its view it should have been a seventy — with immediate measures.",
+      "text_sha256": "sha256:edbd96cdae4d77b1fac95fa0e32b739f8da2314665507510d5fb27136680019d",
+      "idempotency_key": "sha256:c314fa21a2a5e85168421914794406422220f591d6930b1bd09622d7d000485f"
+    },
+    {
+      "chunk_id": "VC-0134",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In August 2011, two defects in the deck beams.",
+      "text_sha256": "sha256:3001871a6235ad5f57e1c6c0a66dcd4370d8a45696700896c802e3894f98573a",
+      "idempotency_key": "sha256:c1059481d21da9646f58b62cc73a878b4af2e7d810d4d9860883ed0dd1d416dc"
+    },
+    {
+      "chunk_id": "VC-0135",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Scored sixty — work within two years.",
+      "text_sha256": "sha256:770c6e8fc2d56496ecdaf5d646d54f8b2af9ef0fdad72531cf2e77933a138a00",
+      "idempotency_key": "sha256:cd4c97aaefc25c80f3a643b7e0bb7e29952d54dc6361f5125c82d95b6f3a2cb3"
+    },
+    {
+      "chunk_id": "VC-0136",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Found in 2011.",
+      "text_sha256": "sha256:e22fe7262d6164cbd320769549f6302d29235f2912700e900d381038c9083b45",
+      "idempotency_key": "sha256:1798c6540a782ae79c179272a8df910a684cfd938382b2169ca8c30bb2aaee7d"
+    },
+    {
+      "chunk_id": "VC-0137",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Repaired in 2016.",
+      "text_sha256": "sha256:7cc6554d2704ee96db43f80917eba7b58afe94d9eaf4051403f900dc53b85afd",
+      "idempotency_key": "sha256:9b83c80ee3c65f22df730108b8da914ad4eafe73fecd9605baf905e00367dd56"
+    },
+    {
+      "chunk_id": "VC-0138",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In August 2012 — the inspection this film opened with — concrete detached, cables in view, some of the wires broken.",
+      "text_sha256": "sha256:05d894173a03bfc0d5236e3401c1f230c2f8e6efc426fda610e43e77fa9014f0",
+      "idempotency_key": "sha256:3ba2253f360ef0140e312886c4b77b801b7ea7ec20a34ed669f761909ca73cac"
+    },
+    {
+      "chunk_id": "VC-0139",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Scored forty.",
+      "text_sha256": "sha256:c5ef33711429c22a98e21b6a689d7eb4501ff20797c2d0f00b0b549f87bde1bf",
+      "idempotency_key": "sha256:96ec4e6350956f6fd09c3ddb5809ff04009066639832b3c7be116acd48a297a6"
+    },
+    {
+      "chunk_id": "VC-0140",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Broken wires in the prestressing steel is the manual's own example of a seventy.",
+      "text_sha256": "sha256:95b67c91adbeecf4a89b6ab525ff7a1c881d7ae1111e85db46a0d03db5f2b490",
+      "idempotency_key": "sha256:c8093fe13a8ff047ca81cf13b74c0647db1e8ab43ab26e690ba32d8f26bf4301"
+    },
+    {
+      "chunk_id": "VC-0141",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "And in June 2013, inside the box girders, in the chambers you have to climb into: corroded cables.",
+      "text_sha256": "sha256:7f35555d861cb19b220ee30bd456fc31e21942460714d4eb49a0459e1712e01b",
+      "idempotency_key": "sha256:ce9e3d18beea073043cbba32bdc9a9f784ed261533ec7bdb01e2fae81b627517"
+    },
+    {
+      "chunk_id": "VC-0142",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Scored fifty.",
+      "text_sha256": "sha256:00eccf8a6cf727663e7447093fcef09de83ae1f575644b8116eabaedac83e697",
+      "idempotency_key": "sha256:681bd92d399e0d5bfc721b0237f1ee2c9a881c6a67dcb76b58a33eabf9450055"
+    },
+    {
+      "chunk_id": "VC-0143",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The commission said sixty.",
+      "text_sha256": "sha256:af10140acb05d0a35c552e82990b7e7e2abf93d9548ef7064b437b7beb664d20",
+      "idempotency_key": "sha256:bedcc130f4cd0240c2b26d832d7f9de941fbc5d3fb2f539a6150d1c7a13de846"
+    },
+    {
+      "chunk_id": "VC-0144",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It also recorded something else about that one.",
+      "text_sha256": "sha256:80c555bc000939422d9aca4f59844202129dd7f18a517d39162c8ee850ac9bcd",
+      "idempotency_key": "sha256:ce7cf0c714fc03b03df52865c9a0e35f36ed2cdecfef32bed0834143e7ef0274"
+    },
+    {
+      "chunk_id": "VC-0145",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "It was found in 2013 and never repaired.",
+      "text_sha256": "sha256:7de20e08eb8bdb3ce1304cce51856d020ee746758856f320d56178291843d8b4",
+      "idempotency_key": "sha256:e3bfb7424162674a43e585d2caef89e5faf9725f37cf66b5d48fec49c05abae5"
+    },
+    {
+      "chunk_id": "VC-0146",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "There is one more entry worth having, and it is an absence rather than a score.",
+      "text_sha256": "sha256:865fbc07435cbaad54accff1ca25faef72f28b8baebbcec911b8ff7f93e129ef",
+      "idempotency_key": "sha256:d6d16e8923745060aca4805f4b4363af528455523c8562530bb9bd0d525dc00a"
+    },
+    {
+      "chunk_id": "VC-0147",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Across all the inspection sheets, the first and only visit in which the foundations are said to have been examined was in October 2017.",
+      "text_sha256": "sha256:25bd887197ab8fef9ad35eb16e100506052470e07a4d4a4e335071f25cbadeb6",
+      "idempotency_key": "sha256:dbcd3843d10f597f3eaaf8a2dcd76d9ebff689e1d55685ff41e6488108d5d59e"
+    },
+    {
+      "chunk_id": "VC-0148",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Fifty years after it was built.",
+      "text_sha256": "sha256:5cddab13992afbe546c7348d1f974751a083ec9a6e020257071e79dbe97a07d6",
+      "idempotency_key": "sha256:2bd7ec7a7cecaddb7fcc261761c1d83b9ade5cf6c90e615a4e8e45e38279bd5c"
+    },
+    {
+      "chunk_id": "VC-0149",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Every inspection sheet had a box on it marked observations, where the inspector wrote in words what the numbers could not carry.",
+      "text_sha256": "sha256:7e5c59070587b48f16c1d3074a999b15a0d691fd8d2b66c46432ad82581e8d16",
+      "idempotency_key": "sha256:5e6e016cf680f6a54c92361325531ba60e41c2253e7c76b79bd6697e2a458c08"
+    },
+    {
+      "chunk_id": "VC-0150",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The ministry's report puts it like this.",
+      "text_sha256": "sha256:8de79af4de5d432a67f6198d6c105f374089993cc7e2aee705c9161765f25aab",
+      "idempotency_key": "sha256:80bf5b5d3ee651391ed38b1797b19c6f2b12a9b9444f4028e3c9b82351160def"
+    },
+    {
+      "chunk_id": "VC-0151",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "From the twenty-eighth of March 2013 to the twenty-fourth of October 2017, there are no further comments in the observations box of the sheet filled in during the inspections, and all the text annotated in previous years is deleted.",
+      "text_sha256": "sha256:f170369379db8ea6edc3e8d92a84038bf3774dfc557e8c21863bafbc5bd2df14",
+      "idempotency_key": "sha256:77f3bb2cf25aee07b90f59d18d628c015cf9cff1a56cb7c5bd3aa0a0e6046322"
+    },
+    {
+      "chunk_id": "VC-0152",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not blank.",
+      "text_sha256": "sha256:8765a1c19775d048d3fd6394cdc07e1947b991b7b1ae455112a9eac3c1beecc0",
+      "idempotency_key": "sha256:31d27905497fc5a1b8be2217bb13c516dbe025c529faf1c99a6df8f6a8c6de5c"
+    },
+    {
+      "chunk_id": "VC-0153",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Deleted.",
+      "text_sha256": "sha256:297db64a4403d003bcf8843f7c6282cd8dd3c1fd4e5b34fb21477f242278d605",
+      "idempotency_key": "sha256:21518be72b4c8839cd0cddc2e2e6cb7905923b4d94d61edf754ad0d0d8d6aee3"
+    },
+    {
+      "chunk_id": "VC-0154",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Two weeks after the collapse, the company sent the ministry a technical note with graphs in it, reconstructing the scores its inspectors had given over the years.",
+      "text_sha256": "sha256:af5b589d3ae8b27211bff8c7826b6e0e132d54a5475cf70b342bdb9a7d2d950c",
+      "idempotency_key": "sha256:207879b7536cf8f99a7f9121d027b7457a5b41d682726bab26ff28404e1d9c9c"
+    },
+    {
+      "chunk_id": "VC-0155",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The commission read those graphs, and this is what it wrote about them.",
+      "text_sha256": "sha256:629d63c437e8eb188fae6e476d4cda93e9c8b3d8291d44c7315ad11b0a7c851e",
+      "idempotency_key": "sha256:317601f1b847fbaf0466b2823c4ee2d90fef1e531bd544e1b022ed6ec16b9e73"
+    },
+    {
+      "chunk_id": "VC-0156",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The unreliability of the scores assigned to the defects found, given the logical — before even technical — improbability of the perfect conservation of the structures for very long periods, even in the absence of maintenance.",
+      "text_sha256": "sha256:4692c3f3a1bd21bbcbe252e69c62e8e5874e6790b1857ba6e01af130f7772418",
+      "idempotency_key": "sha256:662304bc4e18f1942512a310cc0ac6aab37b9cb18bf2370161edc935d9fb0697"
+    },
+    {
+      "chunk_id": "VC-0157",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Score zero for twenty-five years.",
+      "text_sha256": "sha256:561bb93df99121c4c8302b444ba3490b641820adcf9f7f50cf4721ccdfd53e40",
+      "idempotency_key": "sha256:2f8f88fe32ec3e116efada1a170bac24c19a23d6cbe3fdefd52c922735b6e309"
+    },
+    {
+      "chunk_id": "VC-0158",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Followed by four years of extremely rapid evolution of the deterioration, up to critical threshold values.",
+      "text_sha256": "sha256:d2dfb5088fd3a05bef810ce97ca2a74756db9599b26c19a247f2647d171deec0",
+      "idempotency_key": "sha256:4b04cf159b02479302e34a5cb7e6e4cb0ea4cbf4e4ba785dfaa7862b6f8f9f1d"
+    },
+    {
+      "chunk_id": "VC-0159",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Followed by a stabilisation of the phenomenon — and all of it without any maintenance or repair work.",
+      "text_sha256": "sha256:80e7dccfb4bcc1558c3e05a0181767aa7a3ce57428b071e7777dc8f1a4b7ce47",
+      "idempotency_key": "sha256:435c81ce3eaf7f6e1cdfb96b4f967985bdab810cf0f90328d22c71f43a945404"
+    },
+    {
+      "chunk_id": "VC-0160",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "A structure does not sit at zero for twenty-five years, fall apart in four, and then stop.",
+      "text_sha256": "sha256:3d7ddb89db9225eab79ba483a62ea5d54fe82d939ee11501aca2b1fdb0076330",
+      "idempotency_key": "sha256:6d34ad949eef301460814ab6c0ec4cdb3faefa3b0bb50bd758e6ac7c6c20afa3"
+    },
+    {
+      "chunk_id": "VC-0161",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Which brings us to the money, because the money is the part that is not in dispute.",
+      "text_sha256": "sha256:1f92a6bd298e8bf1993311f7e7beb23bcf7b10be4196e5831908197abf9780a1",
+      "idempotency_key": "sha256:d3c6f9f629ac88f0734f910159c24cb223233071ef61aeab22fd4aeb83fe990f"
+    },
+    {
+      "chunk_id": "VC-0162",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The commission asked the company for everything it had spent on structural work on the whole viaduct, and totalled it.",
+      "text_sha256": "sha256:e341e9dcfd6821141963071fb7264f60298da5b66c9addf582124b57f4fd4c1b",
+      "idempotency_key": "sha256:0addc12571c70d1c01e40ab1e1941005f487659e9a2778b8b3e68e536b294348"
+    },
+    {
+      "chunk_id": "VC-0163",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "From 1982 to 2018: twenty-four million, six hundred and ten thousand, five hundred euros.",
+      "text_sha256": "sha256:0d25859d517e0fc4f33dc076cf7a4ee8003dd09a24054beefa75c8c3c2c4dbb3",
+      "idempotency_key": "sha256:9a7a5f632464bd16f3c876bc4358a97322de8e9ed77e06d9794da496de4d80b4"
+    },
+    {
+      "chunk_id": "VC-0164",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Ninety-eight per cent of that was spent before 1999 — the year the motorway company was privatised.",
+      "text_sha256": "sha256:b6832ce8d31145767e7946ee4b9c8850766a12a86fa7b7888d5660edce57ce7b",
+      "idempotency_key": "sha256:ab1508c866a6e251b5425b1fda6ca702a5f6e5e7a78693e9b61b04347a10bffb"
+    },
+    {
+      "chunk_id": "VC-0165",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "After 1999, two per cent.",
+      "text_sha256": "sha256:84beaccb1bdee7fc5adaeb4be21123602ae1a331a0e64fbcbee7b660f03f1626",
+      "idempotency_key": "sha256:e28cc0aa7b0fb874b301297821c8942d3779260a539b004e8d2387553f66e33a"
+    },
+    {
+      "chunk_id": "VC-0166",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In the seventeen years to 1999, structural work on the Polcevera viaduct averaged one point three million euros a year.",
+      "text_sha256": "sha256:ee3d284de1413662a2281c5411286469de4df2ded4722de049ab51e854f4f406",
+      "idempotency_key": "sha256:e5e7ac189b2a62a8ed0b662426034e4c5fe0aa72c10b649f7a7be103ffa83e11"
+    },
+    {
+      "chunk_id": "VC-0167",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "In the nineteen years after it, it averaged twenty-three thousand.",
+      "text_sha256": "sha256:017002b884e6a05da65f48803d039c70920517c94365a8b9e730816878442d9c",
+      "idempotency_key": "sha256:02ea036a036fc20b661b944c1686dfdfe529b89cd94573c59219086860390f66"
+    },
+    {
+      "chunk_id": "VC-0168",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "There was other spending.",
+      "text_sha256": "sha256:798602f695bf21ba09d75b8de594c4bc698fa757166073cb5a087f41e5979120",
+      "idempotency_key": "sha256:a85c1914221cd0b945c1aed0f037a220e46d3356717428099796162fed089b5a"
+    },
+    {
+      "chunk_id": "VC-0169",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "About four hundred and twenty-three thousand a year on things that were not structural — including new safety barriers along a bridge, which added weight to it without any corresponding strengthening.",
+      "text_sha256": "sha256:cab9fb2a7c5ac0bc3a8cf4712285586cd0624a40ed182a118151c00a24a67db6",
+      "idempotency_key": "sha256:034ee524e108700609ea760a3d20337376428f3da3cd6e2dbaffea314a01141a"
+    },
+    {
+      "chunk_id": "VC-0170",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "The commission drew the obvious conclusion, and it wrote it down in the language of the concession contract.",
+      "text_sha256": "sha256:909820659e2cdffc8a3b46bb6cc3c9c315eacf86ef5f8e6dc2fae1251156c138",
+      "idempotency_key": "sha256:51b57295a64fd1572a6712cb7426dc43b0308671786091088f47262643dc33cf"
+    },
+    {
+      "chunk_id": "VC-0171",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "Not doing simple ordinary maintenance today means wanting to do a great deal of extraordinary maintenance tomorrow, at certainly higher costs, with a mirror-image higher remunerativeness.",
+      "text_sha256": "sha256:45acf3b3c8a11b5f2f4fe458dca8bbce7772e9bc44a20bc7111ee7951c1a817b",
+      "idempotency_key": "sha256:fef913e4fccd7baffc498b5fcff339f3109b3a81daa350efc2ce894ce38c265c"
+    },
+    {
+      "chunk_id": "VC-0172",
+      "section": "ACT_3",
+      "delivery": "building",
+      "spoken_text": "From which it follows, as a logical corollary, a maximisation of profits by using the contractual clauses to one's own exclusive advantage.",
+      "text_sha256": "sha256:8f028e3636e5388f7485ae1e54f6660c620f9d51658acad0f348682c0f373e8a",
+      "idempotency_key": "sha256:9f6dc28367eb03a0fe2269c00024f00b13ad52b2d1005c6fc9ab21af5585bf76"
+    },
+    {
+      "chunk_id": "VC-0173",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There is one document at the centre of this story, and it is the one that was never written.",
+      "text_sha256": "sha256:a397fd9dd6d1c3b0093e3ee24295cfff396a3a79820c364b3f9b498819329d0f",
+      "idempotency_key": "sha256:b2766d642805d8c72f96f58e3f51fdbb52fe14257a727e15e9bea2b354990764"
+    },
+    {
+      "chunk_id": "VC-0174",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In 2003 Italy issued an order requiring the owners of strategic structures — the ones that matter in a civil-protection emergency, or whose collapse would be serious — to carry out a formal assessment of their safety.",
+      "text_sha256": "sha256:11e25285d441251557047549a5b002fa4896e49423b2ddb8a3e9589f64b4fa4c",
+      "idempotency_key": "sha256:18b46d4f7f1de3ce6c7929f821c74198f76a31db34d91985d968e51d64df1671"
+    },
+    {
+      "chunk_id": "VC-0175",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "For the Polcevera viaduct, the deadline was March 2013.",
+      "text_sha256": "sha256:ccdda683097c1920a62821a3b441d4e16df29431ff497bcd4bcb6c0b7524c657",
+      "idempotency_key": "sha256:a60c31f33cf9c812eff422ac6a01b2e8dd7696ff8c6d5dc398b220d48ee1f3e2"
+    },
+    {
+      "chunk_id": "VC-0176",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The commission explains why that assessment matters, and it is worth being exact about it, because it is the difference between the whole of this story and a story with no dead in it.",
+      "text_sha256": "sha256:077f60ce349f6211bf5186c7d9b45b750c1bf221373739ee2865b30364ca1d2d",
+      "idempotency_key": "sha256:6078c2a0b90dd2112bbd663f1259313c7200a53174f5c78b515e45af59659e10"
+    },
+    {
+      "chunk_id": "VC-0177",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "From that assessment, if correctly carried out, would have come the best possible estimate of structural safety against the risk of collapse.",
+      "text_sha256": "sha256:e4d6f0c87ef14d80f926128f0f1a94ff9ae2799c6db3f1f0d95c2d14bb8cd314",
+      "idempotency_key": "sha256:50530711e5f69b481754942626db80f22e71deba05c02642c5e0bd2e5e7e89f2"
+    },
+    {
+      "chunk_id": "VC-0178",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In July 2014 the ministry's supervision directorate wrote to the motorway concession companies asking where they had got to.",
+      "text_sha256": "sha256:a17980287e67634c6a6001d9856ee5279f29d9b03a3c3d5288f28673c7743b26",
+      "idempotency_key": "sha256:91c318e85b94ab7088aa3e43a87132310ad0035dd289b34b790a910a77a92c92"
+    },
+    {
+      "chunk_id": "VC-0179",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The company replied that same month with assurances that the safety assessments were about to be completed.",
+      "text_sha256": "sha256:779b244d0a7312c01f1fd1e34cf4c843b705923150e89d775614e37741a23347",
+      "idempotency_key": "sha256:7ba94afd6f4a9639e444ea960c29c8e825807732015fa8a2322547ec3fe954bd"
+    },
+    {
+      "chunk_id": "VC-0180",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It repeated those assurances, for the last time, in 2017.",
+      "text_sha256": "sha256:15846d0566787e9129850b9ba5dff21913937d33bcd08c1ea7732bedc19bd594",
+      "idempotency_key": "sha256:e2c49e7ea0e25711640f241044a8c1e37d566ef6650c0f03807352a3bfbf99d6"
+    },
+    {
+      "chunk_id": "VC-0181",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "On the twenty-third of June 2017, in a numbered letter to the ministry, the company stated that for the Polcevera viaduct the assessment had been carried out.",
+      "text_sha256": "sha256:d14b88ef3e8c3216d10f7116a12bf65f1dd2235eb7c6bf3ddfe668df78265980",
+      "idempotency_key": "sha256:894c890d696522acef93dfe1f1647fb015f7cafbb916060497398762d19e1c06"
+    },
+    {
+      "chunk_id": "VC-0182",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Here is the commission's finding on that.",
+      "text_sha256": "sha256:7f29fee3c1b6189bc9064aa74cb44d2fe375d249b16e4b53e5e5541b2dc5432b",
+      "idempotency_key": "sha256:9dba8bb54f90b9ff02ed8cb65c29a8d31c446d93240cb4557dab63d91cd5886f"
+    },
+    {
+      "chunk_id": "VC-0183",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In the documents requested and obtained by this Commission, that assessment had not, at the date of delivery of the present report, in fact been carried out.",
+      "text_sha256": "sha256:b8f8407a92885601ac097f2a9e08afbe7896a288bce04f260c56b92dac5e8d15",
+      "idempotency_key": "sha256:b40115ccecb54659906aa496286d2ab5324bde1b8299d9f7b62000b658da1c79"
+    },
+    {
+      "chunk_id": "VC-0184",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Elsewhere in the same report the commission puts it flatter still: for the Polcevera viaduct, no safety analysis and no seismic assessment of the viaduct was ever made.",
+      "text_sha256": "sha256:3301d2d501108d0ea1f8298e9390b5fb25d4fa84907eaf0dffa2a6fc55e456e1",
+      "idempotency_key": "sha256:e8843eb64cb955083a67c85b8a05bddf183520eca96d944abc5a7683ff19c881"
+    },
+    {
+      "chunk_id": "VC-0185",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Four months after the letter that said it was done, in October 2017, the designer of the repair project was asked by the project's own verifier whether the seismic requirements had been dealt with.",
+      "text_sha256": "sha256:bf7f800b9353e730b2bc759d2a9163858a9d262c086d307fe642268a29ebbce2",
+      "idempotency_key": "sha256:73b3d9542807b8828091c25d072b073ab78f5996c53b1e5cc479c16067805973"
+    },
+    {
+      "chunk_id": "VC-0186",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "He answered that the question was also under way.",
+      "text_sha256": "sha256:37689cc530566f49be05670f0d56191c1c163cae3caf12bec442e36890d0d0a6",
+      "idempotency_key": "sha256:a2738619f101556d122a644b68b9db6e1085499d39bfb28b5c7f6d7fdffee53e"
+    },
+    {
+      "chunk_id": "VC-0187",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The commission notes the contradiction between those two statements without further comment, and so will we.",
+      "text_sha256": "sha256:00313b786a3fd103ad9fefc0d1621800a9215f5972acd584b22801f9511a4c31",
+      "idempotency_key": "sha256:2874512a66a953a88fc46dee7ef837b9f60561a56d3395091284065d35aae671"
+    },
+    {
+      "chunk_id": "VC-0188",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "There was a form on file.",
+      "text_sha256": "sha256:0d4203641d5e66ef2ac9f82c83c474d4b63106c32a9f296252a73617559685bb",
+      "idempotency_key": "sha256:bb734107d839103940da0891366c130895fee4abbd0656c03040cd2b4ec2f350"
+    },
+    {
+      "chunk_id": "VC-0189",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "A level-zero seismic verification summary sheet, revised in October 2011.",
+      "text_sha256": "sha256:b25359d48453dbf42c66062bc5d1fbad3c75874d9c4f83264494504f9a2530e8",
+      "idempotency_key": "sha256:6e7890dba17adcbec8581751305343e3073be623d21eaa01f22668ed4782f0ea"
+    },
+    {
+      "chunk_id": "VC-0190",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The commission read it and recorded that it contained descriptive data about the viaduct that were absolutely not pertinent.",
+      "text_sha256": "sha256:b0c2c5683a56b2b33a48d9ca894776ee5e43e2e29515ea3dfee78f003f59b302",
+      "idempotency_key": "sha256:0116db7c62c3e255debc5363f987e05f26e3a629a34e281f5f1e509dd518c40a"
+    },
+    {
+      "chunk_id": "VC-0191",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The assurances themselves, the commission wrote, appear certainly adequate from a merely formal point of view.",
+      "text_sha256": "sha256:aa76efe333b37f253367dd4f61ef20b49668692d447744b7d3b3244627032762",
+      "idempotency_key": "sha256:e9358ffe2110529a912261f78ab0187d22d095b2bd3567aacaba641a651a44b5"
+    },
+    {
+      "chunk_id": "VC-0192",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Meanwhile there was a project, and the project is where the language starts doing work.",
+      "text_sha256": "sha256:70729cfd4e124efa4adf29c595e980a41557699a90a75974287a8c8216832a60",
+      "idempotency_key": "sha256:3dfa9da3d1bbcea15a0af12a10019337e8acbe5e6c51042931ffa5f2fd91a71c"
+    },
+    {
+      "chunk_id": "VC-0193",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It was called a structural retrofitting intervention.",
+      "text_sha256": "sha256:b1b37f53ffc93ed52f9207a1eb2d9d4277ccecf4d5f906dfed9d03f0855781e3",
+      "idempotency_key": "sha256:a7c624b3f4e73375f4c4824d54250ae994c0acaa8f9749406d868dcb2b2a29e3"
+    },
+    {
+      "chunk_id": "VC-0194",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Here is what it actually was.",
+      "text_sha256": "sha256:48005e83af5c2224bfab88fc6c7b36da9bea33a4b2406e285d9fffdc5797f191",
+      "idempotency_key": "sha256:a00596b6a0f740a2cdf48ce8e4476a934ca255e6dd8879db362d1a6d3fee5474"
+    },
+    {
+      "chunk_id": "VC-0195",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The retrofitting project consisted of the construction of a system of external tensioning of the concrete stays of piers nine and ten — necessary to make up for the progressive loss of functionality of the prestressing cables embedded within the stay itself.",
+      "text_sha256": "sha256:a76767a04aed1fd4924da405a1a227a689a287e3271f477207c8a680b379fad1",
+      "idempotency_key": "sha256:666aa3d759e30d1c1c4c34bc4110f054aff599821ce705358b07c22ac955c9af"
+    },
+    {
+      "chunk_id": "VC-0196",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "That is the 1993 fix, twenty-four years later, on the two piers that had not had it.",
+      "text_sha256": "sha256:888c3a6b065f89110696ef1129ac4ddf12a58b920c11b57e88403acfde737ad2",
+      "idempotency_key": "sha256:b5d7b6f34b09951ddc919a88b379e5fad74f899c6109cbb742b770eed0438d31"
+    },
+    {
+      "chunk_id": "VC-0197",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The works were worth twenty million, one hundred and fifty-nine thousand, three hundred and forty-four euros and twenty-six cents.",
+      "text_sha256": "sha256:53a18e026f133b6736d464bb8229402735b7ac11271dd60a64917c12f1e10f22",
+      "idempotency_key": "sha256:fb85f65bbbf5231aadd88361b2bff909c599642a208504a499071dd39b6f4089"
+    },
+    {
+      "chunk_id": "VC-0198",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "At that value, the law required the design to be validated by an independent accredited inspection body.",
+      "text_sha256": "sha256:7c99c5495fa1fc04ff78841f35020a4eb51bbe99aef1bc2815b2470043f898e1",
+      "idempotency_key": "sha256:f52976b655416e02cb24e1f3e0863f0c94b9b0ab08c2a394d18ab054e0cd1ee4"
+    },
+    {
+      "chunk_id": "VC-0199",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The commission's finding on whether that happened is three words long: it does not appear from the file.",
+      "text_sha256": "sha256:649c3c90a2ea26be0290c88848bb987feefe43c5e43f2fe25d8cd67df879937f",
+      "idempotency_key": "sha256:0c37a6eca76767ddff5f2ccea55ac5321e333c6fa9bb1ec8869aae0f73152c0a"
+    },
+    {
+      "chunk_id": "VC-0200",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "What there was instead was an internal verification, by an engineer inside the group.",
+      "text_sha256": "sha256:726c0e91d244f518d53baffac1fd7d88b4930b3aabac271986758f7e9cc02a51",
+      "idempotency_key": "sha256:9a31347f251dd8547b2150b0002b8d974056c15878f61ff20dbd10d323757174"
+    },
+    {
+      "chunk_id": "VC-0201",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And the officer running the procedure gave that verifier an instruction.",
+      "text_sha256": "sha256:c80e88783295bf537d9ce9941ac05695ec953b1ea2b1c286096f21c3e99a0f46",
+      "idempotency_key": "sha256:6c0d0a74299f3d2d21010aa424ff17043229e6f1b82f7b305ce70dfc2d6b3e5c"
+    },
+    {
+      "chunk_id": "VC-0202",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It was concluded that the intervention on the stays, by reason of its particularity, and the precedents to which it refers back — see pier eleven — constitutes an extremely specialist activity whose development translates into constructive and dimensional choices strongly overseen at the design stage.",
+      "text_sha256": "sha256:131de3758eb801989af7cc1930bd1d469edadc78aab3b33001b3e7378788e5d0",
+      "idempotency_key": "sha256:df8a2cb0261023bb58b19adb31322d58cefb3e7a1b278161bc41f84e0f1aa33d"
+    },
+    {
+      "chunk_id": "VC-0203",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It is therefore not considered necessary to intervene on the aspects mentioned above.",
+      "text_sha256": "sha256:8562f1f6713074310ff9d0a09b7f48b7de1dec84a2927e79392edfeb27f81b19",
+      "idempotency_key": "sha256:36ad2f7b945ae05ae593a12ead0c2804021daec6bf216e3b3f4e9d0e7aa8b9fd"
+    },
+    {
+      "chunk_id": "VC-0204",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In plain words: the stays are the hard part, the people who designed them know what they are doing, so the verifier need not check them.",
+      "text_sha256": "sha256:fcbe5bcfe2f83feb88c5c1bbd728bfd0c50626aab221b94f2b4ede779e69e77a",
+      "idempotency_key": "sha256:1f1941a2f4a10db82971d06f0f7675e13c2f7893e428abd1f36c6be77334a93f"
+    },
+    {
+      "chunk_id": "VC-0205",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The commission's response to that is one of the sharpest sentences in the whole report.",
+      "text_sha256": "sha256:f5da5ae8176e430d05ecc3a4927cc530f1a07945b858120e09fc086db00d9dea",
+      "idempotency_key": "sha256:391a5f250d8758508b8ddc25153bc54d9300c10f9e0e3b0808379673d434028c"
+    },
+    {
+      "chunk_id": "VC-0206",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "From that instruction of the officer, illogical as well as contrary to the rules, it followed that the verifier would not have to concern himself, in the verification process, with the part of the highest engineering demand — denying the principles and the very purposes of the verification process, and vitiating its final formulation.",
+      "text_sha256": "sha256:85e50383ef95575c799c56312260ac81bcd7404d87d0a8e66553c6f5c4f71cbb",
+      "idempotency_key": "sha256:06aa59448cdfed924ebf2f709de739308b9d0c42b7716950c3194ef49caa2a14"
+    },
+    {
+      "chunk_id": "VC-0207",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The verifier raised sixty-two observations anyway.",
+      "text_sha256": "sha256:53bd6ca660f7ee181107c7a5fe8a599e1ebb606f58db8db669aa7aff96e925f7",
+      "idempotency_key": "sha256:3eae38470e179e7eb9d80f252b3ab5e6b39485b7f435a8926bc16f8ba6b2139e"
+    },
+    {
+      "chunk_id": "VC-0208",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Number fourteen asked why the repairs covered only the stretch between piers nine and eleven and not the rest of the structure.",
+      "text_sha256": "sha256:7782f18a1a37617bd0d46156037a2469df760c3480f45a12e3afc6a601c393e6",
+      "idempotency_key": "sha256:2137f6891d374b9d5a28a7e596d9792899e4893106d21846014f495d70c54608"
+    },
+    {
+      "chunk_id": "VC-0209",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The answer was that the rest — piers one to eight — would be the subject of a subsequent contract.",
+      "text_sha256": "sha256:95cb35908a2fdb386ee122d6dede9d81aa832d768e4f8501ea9a5165f78bb557",
+      "idempotency_key": "sha256:9a6f93573172f393e2efd216244ba9bceffb27d073a6c04bb2cd48272a6b6845"
+    },
+    {
+      "chunk_id": "VC-0210",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Number thirty-six asked how, precisely, the new cables were going to be tensioned.",
+      "text_sha256": "sha256:e1054391fd60665c11c8ec25daec2ad90da8d8602d6218090d38ff3941266faa",
+      "idempotency_key": "sha256:84ffcfd912e99ec2c879b10c5ab8848f4dede78d92e3b924c6fbee5ecf5dce52"
+    },
+    {
+      "chunk_id": "VC-0211",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The answer was that the tensioning methods were being further studied.",
+      "text_sha256": "sha256:e9e2d3799ffc706506a457998fc5fa2ae042be9d704d60b2f16eb6e87ea92b23",
+      "idempotency_key": "sha256:35df8772b7387545828f7092612c93aa541fa65a568a08abfad71903ca849a98"
+    },
+    {
+      "chunk_id": "VC-0212",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The commission's note on that: it is entirely evident that a statement of this kind at the executive-project stage is unacceptable.",
+      "text_sha256": "sha256:cda5b5e1ffbefa0e9cc0d14130ad14264d528b985fcde23c2920db5aef22ac4d",
+      "idempotency_key": "sha256:dfe1b33dfa4edfbdcaf3faba45ec92ac64c875d73037f67646a24941b0e56045"
+    },
+    {
+      "chunk_id": "VC-0213",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "To the verifier's correct and precise observations, the report says, evasive and inconclusive answers were given.",
+      "text_sha256": "sha256:e329d22a4a660584209965c1bb286777f5b7828e2e60fd3bbd7ce34c1c16b68b",
+      "idempotency_key": "sha256:59146df986c18662ab4df91126bc5dd28c021caea8d510071c683776c69ed3cc"
+    },
+    {
+      "chunk_id": "VC-0214",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The verification concluded positively.",
+      "text_sha256": "sha256:35cf10be231e8892b9bd728181ef32624af8ab662f87f7b5f7f170cceab4d9b9",
+      "idempotency_key": "sha256:a1c8b373bf0d9b9310d4f4353b2a4efb1fae13aaeb94cd7fc150f34f7eea1257"
+    },
+    {
+      "chunk_id": "VC-0215",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Then the project went to the ministry, and the way it was described to the ministry decided who would look at it.",
+      "text_sha256": "sha256:8da6ec4164d6f70b7302ac22d16064d138744cce460bf5c83df6ee57f6ff2863",
+      "idempotency_key": "sha256:8cf858862e945c97f15855c15ec28e0a2d1fc8d923dbc6c9d02f988e6140cc41"
+    },
+    {
+      "chunk_id": "VC-0216",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It was presented as a mere conservative repair of the structure, in order to extend its useful life.",
+      "text_sha256": "sha256:c3951dd79e5bf7c1fac637c711b889fdcb09ffff7be59481188f524b9faff483",
+      "idempotency_key": "sha256:7f748e9e7c245baabd3d5bb2f1d4381c44a81e86e51c213a43f3368eea54466d"
+    },
+    {
+      "chunk_id": "VC-0217",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Described that way, it did not look complicated enough to send up to the Superior Council of Public Works — the body that exists to look hard at difficult things.",
+      "text_sha256": "sha256:858c4815a66b705493df4ddffc828e9501725b90e8d639a62f0bfbbdb3e7aad9",
+      "idempotency_key": "sha256:1681ecc9c3bdf8cd3ae4026ae43a8aa5dad3d2be39add5996f1b369a273e925d"
+    },
+    {
+      "chunk_id": "VC-0218",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "It went instead to a regional technical committee, which met on the first of February 2018.",
+      "text_sha256": "sha256:f40c93c84b1bec7e1dc554ec6b985fbd516472c80fe112fc93433accdb4c1219",
+      "idempotency_key": "sha256:8d5516e22e401bbe827057920c46a4a95fe3a5c8ba4a95d615a4783138571904"
+    },
+    {
+      "chunk_id": "VC-0219",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "At that meeting the project was explained to the committee by the technicians of the concession company who had drawn it up.",
+      "text_sha256": "sha256:d664d51024d22a24d829677d875e790ce2115fb6efafb3f7802e428dd97b0e46",
+      "idempotency_key": "sha256:4c77f0930c9324eeefc94a1d1422548c8e9d44bdfddcac237ea9834a0ed98feb"
+    },
+    {
+      "chunk_id": "VC-0220",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The commission: such a procedure — the illustration of the project under examination by the designer himself — must be regarded as irregular and inappropriate for a neutral examination of the project.",
+      "text_sha256": "sha256:62aa5f8ffca4d9515a491d6d6d7f510afb6195dd5a6c1deab7af6b8d08c60811",
+      "idempotency_key": "sha256:08455eae9143c308910a4ac1594bef55b4f358f6503196e9c3b7f9e9b9a26d2c"
+    },
+    {
+      "chunk_id": "VC-0221",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The favourable opinion therefore came after a rapid and apparently not thorough examination.",
+      "text_sha256": "sha256:11ae0b24a25a42e53f5f9f9042164dfd2e8395ae05bd814c6be8751f9333e939",
+      "idempotency_key": "sha256:0c3a367539846ed132f3ad66733445aab47a5e72e7964003a1aa599eee79153b"
+    },
+    {
+      "chunk_id": "VC-0222",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Nobody, then — neither the company, nor the ministry division, nor the committee — grasped the need to assess the importance of the project and its coherence with the particular and complex load-bearing structure of the Polcevera viaduct.",
+      "text_sha256": "sha256:2fc373c9616e738745a711892c309d13463d3a90ac9a58e9c024bafb590f87e9",
+      "idempotency_key": "sha256:c662adf3603b478bab73806484f09c26d6a08b78772715b45ec8f38d46c31928"
+    },
+    {
+      "chunk_id": "VC-0223",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "And there is one more thing in the project file, which the commission found by reading the calculations rather than the covering letter.",
+      "text_sha256": "sha256:796aa4feab486455a362e3c8c6c60aa624846bc2683eb8a68d5fb81028874396",
+      "idempotency_key": "sha256:3cf3bcc62cf731b43b95124f28d7ffe48fac00a6f0476145cd7d80d04e689095"
+    },
+    {
+      "chunk_id": "VC-0224",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "In the project's own numbers, the safety check on one of the deck's edge beams did not pass — not in bending, and not in shear.",
+      "text_sha256": "sha256:bbd7263ecfc3681bc2db7566769ea31c334e1e4cf0778cc993cbd40ad1e4b950",
+      "idempotency_key": "sha256:1838bab09b63b6eccda564d8d09aeed1618baf4c4f479db66ddce79fbf294f7a"
+    },
+    {
+      "chunk_id": "VC-0225",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The ratio of what the beam could carry to what it was being asked to carry came out, depending on how much deterioration you assumed, between zero point seven one and one point zero one in bending, and between zero point five eight and zero point nine three in shear.",
+      "text_sha256": "sha256:6710e140bfe33ef6d283f6a4d79b35b329fc3d7cde76b4b9d3eaa5b644ea2792",
+      "idempotency_key": "sha256:daf39ee50f3cf3e281d3ab7ad073468ec0f5c540958e426ce96040fa5ee35ef7"
+    },
+    {
+      "chunk_id": "VC-0226",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Below one means it does not pass.",
+      "text_sha256": "sha256:3b0bc05ce297db02519b70a31dc1e8ef2e55ffde0435f31a4c035d1f85fc8177",
+      "idempotency_key": "sha256:9eb5c5fe86df39f09b140168a5cddd016ed76c840902879638fb1a0eab4e3b50"
+    },
+    {
+      "chunk_id": "VC-0227",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "These are wholly unacceptable values, the commission wrote, which under the technical rules in force required a safety measure that could not be postponed.",
+      "text_sha256": "sha256:eb8c5d1d3179962c223dae460123c1b459617bb6481563755733e97cfff663f1",
+      "idempotency_key": "sha256:1c9121536260d64dad296f1ec73cd5aa404526705169075bb3a52ec9ffee301f"
+    },
+    {
+      "chunk_id": "VC-0228",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "From the information available to this Commission, no measure of that kind was taken.",
+      "text_sha256": "sha256:86e6f009322c8a22fd8d076407346841df20fbb56b4d09cdfff6c39ace763b06",
+      "idempotency_key": "sha256:022a8df687afb753d3ee97ff4a32ef321e92ebd2f3a3e663669fc490b49337e2"
+    },
+    {
+      "chunk_id": "VC-0229",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The commission also recorded that this information, of evidently enormous importance, was — according to what the company's own managers told it — not known to them.",
+      "text_sha256": "sha256:911aff21d6faa13240d500acb31277ce5310384b4a3857ccd3c68486b84ad620",
+      "idempotency_key": "sha256:5d9e76387ec08ddd3c7e7a7dd8d8a9b4d87e069657585ce998a3ff1659418caa"
+    },
+    {
+      "chunk_id": "VC-0230",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The same conditions were, with high probability, true of all ten of the infill decks, which were identical in design, execution, age and exposure.",
+      "text_sha256": "sha256:9c0f04c082aaca25ceb1b9310f6e50c46f1655b85324ba2f9e830ad81a1ae970",
+      "idempotency_key": "sha256:b6a247805abd0375dd7e17e0609935da3629bf2c2e3924973a53d3ae44ce2fb5"
+    },
+    {
+      "chunk_id": "VC-0231",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Three of them had been strengthened.",
+      "text_sha256": "sha256:f1a9c26bde98f969f503c2af88a99714de2f0d8b05944a54793457f4d212e12c",
+      "idempotency_key": "sha256:272c63ce6384b16e3038a1dd4c4c157cb9d219dabe6dca47aecad45225e2897c"
+    },
+    {
+      "chunk_id": "VC-0232",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "For the western part of the viaduct, at the date of the collapse, no work at all was planned.",
+      "text_sha256": "sha256:b067d0d3816525ff96c5bbae109b1c6f948a3f84bb749ae5b486d7a85a4d5455",
+      "idempotency_key": "sha256:c25bd3e1ceafcad7a1efdf88c4a95131a30639e4123c0dd4cd0a0dba71c471fc"
+    },
+    {
+      "chunk_id": "VC-0233",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The commission's phrase for why is: for reasons unknown to this Commission.",
+      "text_sha256": "sha256:b6df80f2d20631242e7e162229699f27b43a3066d89d657c78c3d4c507bd30e4",
+      "idempotency_key": "sha256:03cfb1919885687eecaf48eca3e862ddf7d5724bc1ae10446dc9a0b36ee02491"
+    },
+    {
+      "chunk_id": "VC-0234",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "The committee's opinion was signed off in February 2018, and passed on in March.",
+      "text_sha256": "sha256:0bacfb95ff5fdfc0e955b6ca7d2e05b3e0062b29b8e5a13e3a9e40af08753aed",
+      "idempotency_key": "sha256:be7ad25f7dbfbde1ffb2f439b69e5ce7012ea5fc04b22216698128aea054b6d4"
+    },
+    {
+      "chunk_id": "VC-0235",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "At eleven thirty-six in the morning, on the fourteenth of August 2018, the balanced system at pier nine, and the two infill decks joining it to the spans on either side, came down.",
+      "text_sha256": "sha256:1cbb29b18e482777d594add718a56d37758034976c4eb9254a53040b7fd9a3f4",
+      "idempotency_key": "sha256:11c3bf85ce664a9d8d2d5e8761279666f050f84b9a736d3d6a39827489215f3a"
+    },
+    {
+      "chunk_id": "VC-0236",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "About two hundred and forty-three metres of road.",
+      "text_sha256": "sha256:b5c1565703dbb6ac1f7fd8897c53b62c3423ae6bbf6c8f8d7f3f3f3eb84c10a4",
+      "idempotency_key": "sha256:49e4e1649de27e0d210816aec0262d9c9b23698343571dc5e026cdaee3f27bb2"
+    },
+    {
+      "chunk_id": "VC-0237",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Forty-three people were killed.",
+      "text_sha256": "sha256:85aa4f9c5ab7a4489881e8c0bfb1dd022316a4b7ab7fa9e685474c1a9f82f70e",
+      "idempotency_key": "sha256:60b17e6192866434880952004a4cd1698ba393d0df8066b059980e6487354e8f"
+    },
+    {
+      "chunk_id": "VC-0238",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Thirteen were injured.",
+      "text_sha256": "sha256:949b90731da14e7ff37cd32c8329b7881a1079a68e8c0a94f57ef79611aa7a97",
+      "idempotency_key": "sha256:12183a3c26e5903b96ac5f81d6d242bcbc0590feb984a618b53ce1b43eafc524"
+    },
+    {
+      "chunk_id": "VC-0239",
+      "section": "ACT_4",
+      "delivery": "building",
+      "spoken_text": "Given the condition of the two remaining stayed piers, the authorities ordered the houses underneath them to be emptied, and marked out a danger zone under the ground around all three.",
+      "text_sha256": "sha256:bd5d4e2dd48f925c82e2677a5f49c3174a33bfb644a5a48bf29a2c3983ecdb89",
+      "idempotency_key": "sha256:47cc88524af73fc82e6e0eb8b70d52559c70301e5d2442ec05a2c7b180f4e0ac"
+    },
+    {
+      "chunk_id": "VC-0240",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "A commission was appointed the same day, and reported a month later.",
+      "text_sha256": "sha256:377ab57b49bc2c38b47df16d7ed63640c7c89ba84fd566035dfe2e18b6754ccb",
+      "idempotency_key": "sha256:6c05a092139cbfb3afe3389e6491f2bcfde2e8a84318cb573c7b9a519e91a4ee"
+    },
+    {
+      "chunk_id": "VC-0241",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It was made up of engineers from the state's own advisory body on public works, together with a judge from the court of accounts.",
+      "text_sha256": "sha256:30c385b18bc8215d95293abe48894dec0055eda0af3e1a4614dddfaf5b55c614",
+      "idempotency_key": "sha256:c8fc10e0d7ed8645478bb09a82a073a8c92057559b658e469329cafd571559d6"
+    },
+    {
+      "chunk_id": "VC-0242",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Its finding on what broke first is not the one you will read anywhere else, and the reason is that it is a careful one.",
+      "text_sha256": "sha256:bdc3d09641e979d0f2204b95e5c2765309b5b8d94bff42def25dc42ab8ac4a81",
+      "idempotency_key": "sha256:a60d4384674313458198499f9414fd0a9fc9bd0ea7275854920c615f63aa7858"
+    },
+    {
+      "chunk_id": "VC-0243",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The commission held it more likely that the first cause was to be sought not so much in the rupture of one or more stays, as in that of one of the remaining structural elements — the edge beams of the infill decks, or the box-girder decks — whose survival was conditioned by the advanced state of corrosion present in the structural elements.",
+      "text_sha256": "sha256:3ab15bc5899ca284ee865464ab47edfddca5720ec116270586cfa2f207933ada",
+      "idempotency_key": "sha256:fc4b21d0eb89e0136367685644216fb998e13c178b8545be06b90e04f35886b8"
+    },
+    {
+      "chunk_id": "VC-0244",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It then said something that almost no institution says out loud.",
+      "text_sha256": "sha256:9802c7444b90a1f6ab97641ba76dc4000e68f6e850ac498fdbdec9af717b6629",
+      "idempotency_key": "sha256:36845b21a517f336dca96e2013e2d528c9129d4c1db190080f7677797609b5c0"
+    },
+    {
+      "chunk_id": "VC-0245",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It could not view the video of the collapse.",
+      "text_sha256": "sha256:b810614810b8e8a427b0a7666ff1288284fc002e75e8e3f6c0402322242e7b8b",
+      "idempotency_key": "sha256:368db86bb358ea40dd103fb5087e998f8aca456fc70decbad1b9444368b87457"
+    },
+    {
+      "chunk_id": "VC-0246",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "It had a month.",
+      "text_sha256": "sha256:7a05bc0d4b625db094f8b714c8425ed6c15a5edbf9c5381ead95dc3c44c30732",
+      "idempotency_key": "sha256:d1ac1feb981fbb848e558a78bcf2f35864232bc4edbe706f96045fb7adeb8a1a"
+    },
+    {
+      "chunk_id": "VC-0247",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And therefore the causes and mechanism of the collapse are listed as plausible but not definitive working hypotheses.",
+      "text_sha256": "sha256:f212029bcd727af8fc9a94bd7b8f051fc11c4944e4dd4e32dc963c2324b789c5",
+      "idempotency_key": "sha256:715d56ffc5c0be63dacf5070f1118fc3f26d79781fc44d2745407e086db10717"
+    },
+    {
+      "chunk_id": "VC-0248",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Two years later, a panel of experts appointed by the investigating judge filed a report of about five hundred pages, answering forty questions put by the prosecutors.",
+      "text_sha256": "sha256:edca880444054f47ce2a856bed6d44c16ffaa905335a01434323826eede0ab9b",
+      "idempotency_key": "sha256:503a90769b5a2e832416d5d69863766587b6936b1b481803a8b80f1c8e0ec1cc"
+    },
+    {
+      "chunk_id": "VC-0249",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "As reported at the time, that panel identified the cause as corrosion in the upper part of the south stay, on the Genoa side, of pier nine — and concluded that checks and maintenance, if they had been carried out correctly, would with high probability have prevented the event.",
+      "text_sha256": "sha256:664a192e28dd784817e3d0bd476f83ee7c016ea38cc6506b205182b481396f92",
+      "idempotency_key": "sha256:8b2a3ae31ccaef73c1e8232099c2a55f4b6d624c23f614bc0fe352509966813e"
+    },
+    {
+      "chunk_id": "VC-0250",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "We have not read that report.",
+      "text_sha256": "sha256:203ac12d3d1014c5cdb17659fe9680b8ba9f67d40a9570794b7d0486ceb354a6",
+      "idempotency_key": "sha256:c040deeb77517049f5110e718f74bd09be203454da0f6e13f4dba20fe9da84b8"
+    },
+    {
+      "chunk_id": "VC-0251",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "This film is not going to pretend otherwise, and it is not going to choose between the two findings.",
+      "text_sha256": "sha256:c6ec7b13fa279e05dfe175b8dd1068896073286733934d612f8aac9084fccb38",
+      "idempotency_key": "sha256:6838314b4e58494148577723716888776b61130cc1bee778e847ec0a61663839"
+    },
+    {
+      "chunk_id": "VC-0252",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "What both of them rest on is the same thing, and on that the ministry's commission is unambiguous.",
+      "text_sha256": "sha256:eaf1698cbb58c11d1838f84ffa40b67cbff79d2065a1be78586b435c6c7f80b5",
+      "idempotency_key": "sha256:e2a60adc7660ed7241c636264c42c20c87218e035ad36cc0939fbc5a148b19cb"
+    },
+    {
+      "chunk_id": "VC-0253",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The ordinary reinforcement, and some of the prestressing, in the simply supported spans had no cover — expelled years earlier.",
+      "text_sha256": "sha256:8b4f38b86574f69941d15dda7b7d164c8ce38d2be6afae45f924d7224d256dc6",
+      "idempotency_key": "sha256:b5bb09df42cf5fda77fec5db079ae256ad82cec9e71d452734c6affc05e07303"
+    },
+    {
+      "chunk_id": "VC-0254",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The quality of the grouting of the prestressing ducts was modest, both in the beams and in the stays.",
+      "text_sha256": "sha256:0bd37e0eadc28e2de5e4d295e84645c9adbab05484c8705a4e9b956b6d1f516d",
+      "idempotency_key": "sha256:943284e7793129de3de3865c3bc7e88cf691cb3cee8b95f3e3803e170ac51e9c"
+    },
+    {
+      "chunk_id": "VC-0255",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "All of it had been known to the concessionaire for years.",
+      "text_sha256": "sha256:7f8cf802b828833c184a07990a015459212cd736c00662cef925bde5bba6e06d",
+      "idempotency_key": "sha256:ae1b1b0357edec00784d2a057eaeb51b37ae371072982c5c028ccbc8fd6b2da4"
+    },
+    {
+      "chunk_id": "VC-0256",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Direct investigations were therefore indispensable, and had been for years, and that requirement was known — and could not have been otherwise — to the company.",
+      "text_sha256": "sha256:09de127e9f5b7b241c296428659a8a479cc45133c6dae4effaba65ec42232826",
+      "idempotency_key": "sha256:b83a3d96068fd7602cd8886cbec3be25ff335255cc743ddf187dec839a9b2c35"
+    },
+    {
+      "chunk_id": "VC-0257",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And then the sentence the whole report is built towards.",
+      "text_sha256": "sha256:b9ab8bf8db8cb9308b9e6e735a6cecee4cc746cafa766c8bb1c0cc471a77494e",
+      "idempotency_key": "sha256:be9fe8b4ca05ecf2ef8682353de1e981f6fa1b50eb470bcccbdb02bb92ce0570"
+    },
+    {
+      "chunk_id": "VC-0258",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The most significant immediate responsibility, the commission wrote, consists in the fact that, notwithstanding all the critical points highlighted above, the concessionaire did not, in this specific case, make use of the powers to restrict or prohibit traffic on the viaduct conferred on it by the highway code — and consequently did not carry out all the works necessary to avoid the collapse that occurred.",
+      "text_sha256": "sha256:2e5070744850b7eb4ebf7a5ec9c80163543ecbf3c99e89db4abe060015180bbd",
+      "idempotency_key": "sha256:b3492c917bb3e8e706801e32e09763513b3f9ef353a7b14de5a163ca70350876"
+    },
+    {
+      "chunk_id": "VC-0259",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The company that operated the bridge could have closed the bridge.",
+      "text_sha256": "sha256:5eba6e578a43ac9aabf627b8bb51d503b9ff2d4b3e8ed86ffe606ac1c1761638",
+      "idempotency_key": "sha256:0dea63bb70bf9a377d1c68bbaa56ff7e05de21d71b8d04c14225fd1836741962"
+    },
+    {
+      "chunk_id": "VC-0260",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "That power was in the road traffic act, and it was theirs.",
+      "text_sha256": "sha256:98d8d8a66cb6a3764dab618240d7a40d7e067fd9cdfe5f9a318f90bba68946e3",
+      "idempotency_key": "sha256:bc598058ec5919a7c78a70b7f3933009be4934d26925b3ff6e6a5bd6f2a675cf"
+    },
+    {
+      "chunk_id": "VC-0261",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The commission's closing paragraph puts the rest of it on the country.",
+      "text_sha256": "sha256:c9c8a7857410aca01f583ebbdca8680ea759e9d2ac4ce12a06c7322382d43444",
+      "idempotency_key": "sha256:03569396a4d204af20d45d2a313aa4924b1c554854d83df4cbd4375cdd5953cc"
+    },
+    {
+      "chunk_id": "VC-0262",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "This latest grievous event, which caused forty-three victims, must not be consumed without the Nation becoming conscious of the fact that this system of management of public infrastructure has not worked, and in particular has not guaranteed the safety of users.",
+      "text_sha256": "sha256:3137af1a6b704596371c672dacd510f281781e6e0e6f0f7c80f89bf65f834111",
+      "idempotency_key": "sha256:8dd7e785bf0105febacd5cdecd9032ca6c431be6b9109691292ca745747c81e9"
+    },
+    {
+      "chunk_id": "VC-0263",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Then the law moved, and it moved quickly.",
+      "text_sha256": "sha256:8f200192ad2fbde6ae6b4e27074352ea19adde02cc40f9c975e4a3193d56bfb6",
+      "idempotency_key": "sha256:d2a7f5e82b128c399153566dc7e405e36a98a2ad2a09ca4a28dd1e52175147b5"
+    },
+    {
+      "chunk_id": "VC-0264",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Within six weeks a decree created a national agency for the safety of road and motorway infrastructure, with an office in Genoa, and a national register of public works.",
+      "text_sha256": "sha256:25154831c4fb785726d8c713f3b2eb48e653ce7a367202c24e82f8726131791d",
+      "idempotency_key": "sha256:34d3d21d095c05d5eeab9202c3ab3525155fa6a3f283c433f87b385c9947b5a6"
+    },
+    {
+      "chunk_id": "VC-0265",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Two years after that, the ministry issued national guidelines for classifying, assessing and monitoring the risk of existing bridges.",
+      "text_sha256": "sha256:346209f374c31c4014e8fb03267f1bc1f53ddac6944f89b3ecdb9c536c2e5f31",
+      "idempotency_key": "sha256:d48336489ef1fb4521fd76b97b2cac02bfd2fabd8f48e502b73c7af5d7fff88c"
+    },
+    {
+      "chunk_id": "VC-0266",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And the criminal proceedings took eight years.",
+      "text_sha256": "sha256:a040cb1c0a250aaa3a741fb6de6fe4e401fc45ca306c55bc3ed7eace0ef18c71",
+      "idempotency_key": "sha256:935373e75f9c50701dc0e7e513aadf6afcebe4399c6a6a156ac6874377b303cf"
+    },
+    {
+      "chunk_id": "VC-0267",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The trial opened in Genoa in July 2022, with fifty-seven defendants.",
+      "text_sha256": "sha256:72795aae00c64b010bcf1055b25b343b57d0a453f37d68cc478e4b4f6da340db",
+      "idempotency_key": "sha256:2f7fe4cd214433ff36c4b2f869122f2ac37a207dc3ff9e74bd2878e324d71136"
+    },
+    {
+      "chunk_id": "VC-0268",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "On the sixteenth of July 2026, the court read out its decision.",
+      "text_sha256": "sha256:0ea9c68f4f1f7705fabfb6819320c89d5e122ad6c76195fb4aaec4abe377ea15",
+      "idempotency_key": "sha256:cb8becf0ca42c5243bb4cabdd84e6577ab126445254b7668573b7fc3831f008f"
+    },
+    {
+      "chunk_id": "VC-0269",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Thirty-two people were convicted.",
+      "text_sha256": "sha256:bd6725b0028660b0812f92c104e34525ea1b8ced47b9cb1f8b990d8e7c5ea279",
+      "idempotency_key": "sha256:6c07e4b15a926c712e992f031f22b0a8bf1a16e8d31f9f476ecde31f6a8467fe"
+    },
+    {
+      "chunk_id": "VC-0270",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Twenty-five were acquitted, or their charges were declared time-barred.",
+      "text_sha256": "sha256:cbec37d1c87ddf003a27569356451cdcd4285367de2138a477e6410e84e60065",
+      "idempotency_key": "sha256:55323d7aca048ab1ec3eb8cfed609048ae1cb8230c991d4ae82ea588cd38d73a"
+    },
+    {
+      "chunk_id": "VC-0271",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The former chief executive of the motorway company, Giovanni Castellucci, was convicted at first instance and sentenced to twelve years.",
+      "text_sha256": "sha256:e0f9733e23c2ecc83d7a22c00cedd1a34167011b566dd2d363e13671b96ffeaf",
+      "idempotency_key": "sha256:49a7fef9161c3323ec85684062aaa4210ec3910433850ccc1aeb2a129acca3b9"
+    },
+    {
+      "chunk_id": "VC-0272",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "His lawyers said they would appeal, and the judgment is not final.",
+      "text_sha256": "sha256:215eb3724b0d8fda8498b443a7574ba420250f7f9d0873f1f72991cdd4878c2d",
+      "idempotency_key": "sha256:83e9a650c7170ec51eb8c3e434d190e049ca8caaca413e9550fb59123de500a5"
+    },
+    {
+      "chunk_id": "VC-0273",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Twenty-eight others received sentences between eleven years and one year and eleven months, all at first instance, and all of them subject to appeal.",
+      "text_sha256": "sha256:53225380fb095c5780025c7276f80516278e521e941138cf13fba042e892aa4c",
+      "idempotency_key": "sha256:3911fd0406d85e4463221bc0fecf5c7be76ac8e8f733e18458e4df4107aa22df"
+    },
+    {
+      "chunk_id": "VC-0274",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Now the parts of that judgment that the headlines did not carry, and that this film exists to say.",
+      "text_sha256": "sha256:c94ba55d5c8c50c00a81244460603f54de32e7716249091fa677df4f6a3f23e5",
+      "idempotency_key": "sha256:78917c8b2f3c2d8e59e5a86a04d91a6a5b833e1f6afed24be162ca65f30f8bc7"
+    },
+    {
+      "chunk_id": "VC-0275",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The convictions are for negligence.",
+      "text_sha256": "sha256:997530981f93a329615cd5857dd989566136928f1b65c11da5d10ccfbe3619ae",
+      "idempotency_key": "sha256:f4c28004db37bcef159e7cf2899c510b701e62ce11648e1f47bac6d56333ab0f"
+    },
+    {
+      "chunk_id": "VC-0276",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "For every one of those defendants the court expressly struck out the aggravating circumstance of having acted while foreseeing the event.",
+      "text_sha256": "sha256:2ef71156f8511d57801c8aaf1a1cb3ee4f34b33bd50373a62ea859fd69347d68",
+      "idempotency_key": "sha256:3cf5c0b8fbe34065253c7030c921f7a704d39edc277fba1e9a2e516eb7c6a6be"
+    },
+    {
+      "chunk_id": "VC-0277",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And every defendant charged with the two intentional offences — attack on the safety of transport, and wilful omission of precautions against accidents — was acquitted, on the formula that the fact does not exist.",
+      "text_sha256": "sha256:b822aa1108050af14eee253aeb13ea2699298d7043bf35b480b3ffaafbb2ae10",
+      "idempotency_key": "sha256:cd024a31ab9d0a891e3dc1508b9427cfedadde4c6ebae502b6b0b6f26223b80c"
+    },
+    {
+      "chunk_id": "VC-0278",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Roberto Ferrazza, the former head of the regional public works office, was acquitted, because the fact does not constitute an offence.",
+      "text_sha256": "sha256:443ff9c3e021bdeb7cdac43b752aed88833a536729ee85a201d2a4742a980c8c",
+      "idempotency_key": "sha256:db3adf96dff2c721c69ea3320d8be463439974627b2a1f163df68ef42460145d"
+    },
+    {
+      "chunk_id": "VC-0279",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "So were ten others charged alongside him, and nine more on the same formula.",
+      "text_sha256": "sha256:9066defd098311e95d636de10c7a06d15a8273120e864056c51fe346726345c4",
+      "idempotency_key": "sha256:3139464148ae5d18735625021ebada86d74b4fcd1221e185bf6b6da29bef9eff"
+    },
+    {
+      "chunk_id": "VC-0280",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The engineer who signed the retrofitting project in 2017 was not judged at all.",
+      "text_sha256": "sha256:4295ff57c3486130695f8b9df2dae46f85e2af60c498b2d728ff5aa59488ebc0",
+      "idempotency_key": "sha256:8c00bb5e02237963615615548feb9c7ce86f2d5830649fa4e25984bf42aebaa3"
+    },
+    {
+      "chunk_id": "VC-0281",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The proceedings against him were closed for the extinction of the offences following the death of the accused.",
+      "text_sha256": "sha256:9d0e4101a5b6d27d10e31d1b76d6d3568e004aa88a669eadfe993724e1b34565",
+      "idempotency_key": "sha256:66fa43456bc94aea82cc37773517286be27bdfd6cdf7b39269d660cb3c066625"
+    },
+    {
+      "chunk_id": "VC-0282",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The counts of causing injury, as opposed to death, had run out of time.",
+      "text_sha256": "sha256:c9328fe06df042dfdcfd7d1bf10eae59bb233a62303a91ce198bd1836d7430af",
+      "idempotency_key": "sha256:9d6e41f3a133313c49d439bc32e7d52ea920f5059e061032f971cac5e88249c3"
+    },
+    {
+      "chunk_id": "VC-0283",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "The court ordered the convicted to compensate the civil parties, with the amounts to be worked out in separate civil proceedings, and it refused every application for an interim payment.",
+      "text_sha256": "sha256:0ac35229b8e96dcdd1543aa7c8cfb7428580d0960fecf114b4a5e3f5b80c8c17",
+      "idempotency_key": "sha256:63345884c4aa426ba9957b9d284de805474274749b20b93bece0c6ef18473d12"
+    },
+    {
+      "chunk_id": "VC-0284",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "And then it gave itself ninety days to write down why.",
+      "text_sha256": "sha256:1806d1d90fcb60053ef673b1f499ff8f5de1e9e22f60623d16239c704cdd6852",
+      "idempotency_key": "sha256:f2f7cf48a7b18b57f00777f1393746c96d0373504efa17fd29c65d175a33ed45"
+    },
+    {
+      "chunk_id": "VC-0285",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "Which is where this stands as this film is made.",
+      "text_sha256": "sha256:f268488171cdf45a2e9d16c2dacc4c392111e1e6e34de25eb3d6390f3f730757",
+      "idempotency_key": "sha256:60bb0131776c7fb061c9a98a00457f9d1c3560275ea5ce4e6efc4accfc535103"
+    },
+    {
+      "chunk_id": "VC-0286",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "We know what was decided.",
+      "text_sha256": "sha256:2ecb0bbb92fb38a0a117c34aa0ba1b9aadbde1c321d721645104157dbb8ea756",
+      "idempotency_key": "sha256:109a5d2b805cbb5354cd4e8bf485c5163cb9df25d267a82215ce7be28ef1526f"
+    },
+    {
+      "chunk_id": "VC-0287",
+      "section": "ACT_5",
+      "delivery": "building",
+      "spoken_text": "We do not yet know the reasoning, we will not know it for weeks, and it is a first-instance judgment in a country with three instances.",
+      "text_sha256": "sha256:ad8d008ecd051aa01672c0a1e6b23d727cd35516d60016bbec798beeaed75b14",
+      "idempotency_key": "sha256:c708f3acf0fdd47d53894463be336bfa6907a3a6778a8dc336aacb51af12d1a5"
+    },
+    {
+      "chunk_id": "VC-0288",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "There is a new bridge.",
+      "text_sha256": "sha256:a78f9d8a9ef39e733de49af54f1e881ba73cb325d99f5b6be690dac7a5343e52",
+      "idempotency_key": "sha256:61d88da2e36cd9d96519c0534d8ec67afb7d3868da4225244ec8a853429f96a0"
+    },
+    {
+      "chunk_id": "VC-0289",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It is a thousand and sixty-seven metres long, it was designed by Renzo Piano, it opened on the third of August 2020, and it cost about two hundred and two million euros.",
+      "text_sha256": "sha256:eacc506a9c0e16fe31ce8d27c441e3702818d025bfac1cfe58be106a171d09b5",
+      "idempotency_key": "sha256:caeeb9452693e791904b32131db3b8da5fb55625196878f09825f166542b4cad"
+    },
+    {
+      "chunk_id": "VC-0290",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "You will read that it carries forty-three lights, one for each of the dead.",
+      "text_sha256": "sha256:c0a32f610fc159e52d1e9e5210af32398df411f729eec0211b3de8a9cfbaee13",
+      "idempotency_key": "sha256:954e7303f245a26b4885ea1747bcf19646eb3453f03abe3028809239f79711cc"
+    },
+    {
+      "chunk_id": "VC-0291",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Forty-three points of light were in the original design, and the number was reduced.",
+      "text_sha256": "sha256:475adefb5ee43b74fc004972ee6f05f19c19a58f339a42cbb5dc83c237b4aaec",
+      "idempotency_key": "sha256:8bcb7fd36a280120f4cb7fa406ed5ca7afed95c03516c73c96c1ee5d8e3b613e"
+    },
+    {
+      "chunk_id": "VC-0292",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The new bridge is a fact.",
+      "text_sha256": "sha256:78f0e953878ab45d9e968bb449275da2a9b54a23080b97d6b7996097ec6aa54f",
+      "idempotency_key": "sha256:db699c11dec694d99e115a52a7a04183fccfc2767d751239b33ee2a1ba9c3e0b"
+    },
+    {
+      "chunk_id": "VC-0293",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It is not an answer.",
+      "text_sha256": "sha256:0ef75257ca7778f947cbdfc65367de86a834eeecdb473f54a590be89a987fdb6",
+      "idempotency_key": "sha256:c8375454e89f857d84d519e6550ddafca2f86178830f0fd4b4a3c57a9517d8e3"
+    },
+    {
+      "chunk_id": "VC-0294",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The question this film has been asking is who is responsible for looking at the thing you drive across, and a new bridge in Genoa does not answer it for the bridge you used this morning.",
+      "text_sha256": "sha256:480153f98d0cf5a3107ddc8bc9165bbed1b82f018d12bacb25058aeca48185bc",
+      "idempotency_key": "sha256:56e5b5a88d53ebe2a3ac9a8cf0963b4494f71b187b1e74fb3514477703ee781f"
+    },
+    {
+      "chunk_id": "VC-0295",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Italy began counting its bridges after this.",
+      "text_sha256": "sha256:9760d1abd16c782686e9f44b80da5b5e08a6cead06c8d3bb81170f0a5534b037",
+      "idempotency_key": "sha256:2860f7e2eb2b82092a025f33fd4148d81301ccfa23c6c26c1d6c85c1ffa34ac5"
+    },
+    {
+      "chunk_id": "VC-0296",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The national register has recorded more than twenty thousand road bridges, viaducts and overpasses so far, and the count is not finished — many authorities have still not registered their structures or carried out a first inspection.",
+      "text_sha256": "sha256:c4f49234415de3206561ab1e521b95d7088cb7dbbe80b84aa6ca8987d2b99b4f",
+      "idempotency_key": "sha256:c5e1a3df70f6245969d7c387588613e0c4d606d9365419855c013b27ef0fab47"
+    },
+    {
+      "chunk_id": "VC-0297",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "The concrete was put around the steel to keep the steel safe.",
+      "text_sha256": "sha256:b152ed555e2521f64490d7ba45d4332628725e59ab78155611a35629578e22a4",
+      "idempotency_key": "sha256:622a7902da6840b95483688b449f3ef750c5dc06a82a91278c95b4009d969247"
+    },
+    {
+      "chunk_id": "VC-0298",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "For fifty-one years it did something else.",
+      "text_sha256": "sha256:805e3e9c3d2294520b3ce543fb4995c2ec28a2238fd0d2d1c867e5d9cdaaa206",
+      "idempotency_key": "sha256:19680aa3948a3b769ceb8c961e9f44551462d6d24a00de75c3027cf281db5c56"
+    },
+    {
+      "chunk_id": "VC-0299",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "It meant that the only way to know was to cut into it, and that the easier thing was always to write a number in a box.",
+      "text_sha256": "sha256:14cad2ba9401a549ccaa91820d4e743f465676d14f25cacdfa15ff98782e3b45",
+      "idempotency_key": "sha256:5be35a94b85494e4b461b3dd83b539849d527c35e1845e2bd383498e642c576b"
+    },
+    {
+      "chunk_id": "VC-0300",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "Tell me in the comments which bridge you crossed today, and whether you have any idea who is supposed to be inspecting it.",
+      "text_sha256": "sha256:d0b673b49dbee442b9c219597aab235709a8456e72aad4c6265a3cae9160cc14",
+      "idempotency_key": "sha256:7655bd3e66492df7608a319c83dfa577926b6b9885a9d977a4428c9473c5af8d"
+    },
+    {
+      "chunk_id": "VC-0301",
+      "section": "ENDING",
+      "delivery": "calm",
+      "spoken_text": "I read them.",
+      "text_sha256": "sha256:3cfdd81c9f0e83a260ce09816694c6b84e3b3f66ca4ba5e0904647af393f3777",
+      "idempotency_key": "sha256:dffd5a615f6397addd85783b116f262d9981b7c8fd7c41f1bd38912e5942a94d"
+    }
+  ]
+}

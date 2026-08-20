@@ -151,6 +151,19 @@ them, so they live here rather than in a dated file.
 
 ## Current narrative
 
+**[2026-08-21](handover/2026-08-21-ep76-morandi-design.md)** — **EP76 morandi: spec, ledger, bible
+and script, all four written, and the script sized from a measurement rather than a model.** The two
+load-bearing documents were **read as documents**: the MIT Commissione Ispettiva report of
+14 September 2018 and the Genoa dispositivo of 16 July 2026 are both scanned image PDFs with zero
+extractable text, and were read by rendering their pages. **The first-instance verdict landed five
+weeks ago** — 32 convicted of 57, Castellucci 12 years, reasons not yet filed, appeal announced —
+and three parts of it are pinned in `forbidden_claims`: the court **struck out the foresight
+circumstance for every defendant**, **acquitted all of them of the intentional offences**, and
+**Ferrazza was acquitted**. `--measure-section ACT_1` gave **184.0 raw wpm**, and the script projects
+to **29:47**. `check_script_length` was fixed to stop counting HTML citation comments — it read
++758 phantom words on this script and called a 29:47 film LONG (§"Instrument fixed"). Image order,
+thumbnails, scene plan and `fact_recheck` are NOT started.
+
 **[2026-08-21](handover/2026-08-21-ep75-writing.md)** — **EP75 lahaina: the film bible and the
 script, both written.** Two things changed the film. **Phase One was read** — the 375-page FSRI
 timeline the previous session marked NOT READ — and it is the difference between a film and a lecture,

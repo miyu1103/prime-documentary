@@ -491,8 +491,15 @@ EPISODES = {
         # * SUPERSEDED THE MOMENT `--measure-section ACT_1` IS RUN FOR THIS EPISODE. That
         # measurement governs over this line; rewrite design_speech_seconds from it, and from the
         # dry run's real chunk count, before any full run.
-        "design_speech_seconds": 1616.9,
-        "sections": SECTION_ORDER_5ACT,
+        # MEASURED 2026-08-21, not modelled. `--measure-section ACT_1` generated 46 chunks / 650
+        # words at the pinned voice settings and ffprobed 211.906 s of speech = 184.0 raw wpm
+        # (173.0 words per FINISHED minute once its 45 beat gaps are added). The script extracts
+        # 328 chunks / 5,118 words: 5118 / 184.0 * 60 = 1669.0 s of speech. Gap budget 108.6 s
+        # (320 beat gaps at 0.30 s = 96.0 s, plus seven section boundaries at 1.8 s = 12.6 s),
+        # projecting a 1777.6 s master (29:38) and a 1786.6 s film (29:47) once ENDCARD_SEC 9.0
+        # is added -- inside episode_spec runtime_seconds [1740, 1920], and 5,118 words is inside
+        # script_words [4900, 5400].
+        "design_speech_seconds": 1669.0,        "sections": SECTION_ORDER_5ACT,
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
     "PD-2026-075-lahaina": {
