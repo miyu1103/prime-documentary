@@ -144,6 +144,69 @@ No other PD episode has needed this section. It is not optional here.
 
 ---
 
+## 5.5 THE SCRIPT MEASURED AGAINST THE WRITTEN STANDARD — 25/25, and one named deviation
+
+Run 2026-08-21 against the **delivered narration index**, not against the markdown, so what is
+measured is what the voice actually says. The standard is in four places and each row names its own:
+
+| source | item | result |
+|---|---|---|
+| `episode_spec.v002` | `script_words` in [4900, 5400] | **5,338** |
+| `episode_spec.v002` | `section_vocabulary` exact and in order | HOOK / OP / ACT_1–5 / ENDING |
+| `episode_spec.v002` | runtime in [1740, 1920] | **1,866.4 s = 31:06** |
+| spec v3 row 9 | hook voiced from frame 0 | first chunk starts **0.000 s** |
+| spec v3 row 9 | hook ≈ 0:20 | **20.266 s** |
+| spec v3 row 9 | hook does not summarise the outcome | no toll, no outcome word in the hook |
+| spec v3 row 10 | four-part spine | present |
+| spec v3 row 10 | ending carries one specific ask | the state's own instruction, not "subscribe" |
+| spec v3 row 16 | a question opened in the first 8 s and held | the hook's last clause; answered in ACT_2 |
+| spec v3 row 16 | re-hooks every 2–3 min | **10** marked |
+| spec v3 row 17 | every factual span links to a claim id | **221 spoken lines, all cited** |
+| spec v3 row 17 | every cited id exists in a ledger | **109 distinct ids, all resolve** |
+| spec v3 row 18 | a living person carries their legal status in the same breath | quoted, dated, resignation, "has not been charged" |
+| spec v3 §6.6 | not sized with `check_script_length` | header states the measured figures instead |
+| rule 09 | no production direction reaches the voice | **0 of 357 chunks contain a bracket** |
+| rule 09 | no LLM used as a source | none cited |
+| rule 09 | figures carry unit and date | the toll is the County's own phrasing with its date |
+| ⛔-01 | no counterfactual about the sirens | the only counterfactual-shaped sentence is the one that **denies** it (AB-01) |
+| ⛔-02 | Finding 37 and the non-activation never in one sentence | separate paragraphs, separate sources |
+| ⛔-03 | the sirens are never said to have failed | the only "failed" in the film is household plumbing |
+| ⛔-04 | no open question, no conspiracy register | **zero** of the six barred phrases |
+| ⛔-07 | no victim named or characterised | the word does not appear |
+| ⛔-08 | never says a power cut stopped the water | Finding 21 quoted verbatim instead |
+| ⛔-12 | the word *paradise* never appears | zero |
+| ⛔-16 | 14:17 travels with LH-15 and LH-85 | both in the same ACT_3 passage |
+
+**25/25.**
+
+**The instrument lied twice before it agreed, and both are worth recording.** The ⛔-01 check first
+fired on *"And not one of them says that sounding the siren would have changed the outcome"* — the
+sentence the film bible §14 **requires**, because it is the declared absence. A bare regex for a
+counterfactual cannot tell an assertion from its denial. Corrected to look for a negation cue in the
+same sentence, it still failed — because the shell heredoc that wrote the checker had turned its two
+`\b` word boundaries into literal **backspace bytes (0x08)**, so the negation pattern could never
+match anything. **Both times the script was right and the measurement was wrong**, which is the whole
+reason a failing check gets read before it gets believed.
+
+### 5.6 The one deviation, named rather than hidden
+
+`PD_ONE_PASS_PRODUCTION_SPEC.v3` §5 item 1 asks for `EPnn_FILM_BIBLE.vNNN.md` **+
+`script.annotated.vNNN`**. **This episode has no annotated script.** Measured before writing that
+down: the newest annotated script in the repository is **EP31**, and **EP62, EP66, EP69, EP70, EP71
+and EP72 all have zero** — including EP72, which is this episode's reference build. The convention
+stopped about forty episodes ago and the manual still names it, the same way it still names a
+`03_script` directory no recent episode has.
+
+**This is deliberate, not an oversight, and the argument is that an annotated script would add
+nothing the record does not already hold**: `narration_index.v001.json` carries all 357 chunks with
+their section and their exact spoken text, and every spoken line in the markdown carries its ledger
+row id one line beneath it. A second representation would be a second thing to drift.
+
+**The cost is real and is stated here**: `verify_script_lint.py` and `verify_script_structure.py`
+both look for that artefact and therefore **SKIP** on this episode — and on every episode since EP62.
+`check_script_craft.py`, which reads the file where it actually lives, ran and passed every
+mechanical gate.
+
 ## 6. What the publish-day check must cover
 
 1. **R-1 through R-6, re-run against the rendered file**, not the script.
