@@ -192,7 +192,15 @@ def main() -> int:
     outdir = ROOT / "remotion" / "public" / a.slug / "motion"
     outdir.mkdir(parents=True, exist_ok=True)
 
-    spec = json.loads((ROOT / "episodes" / epid / "episode_spec.v001.json").read_text(encoding="utf-8"))
+    # Read the HIGHEST spec revision, not a hard-coded v001. Every other tool that reads
+    # `people_plates` goes through check_episode_spec.spec_path(); this one did not, and the
+    # consequence is silent rather than loud: a correctly-written episode_spec.v002.json would be
+    # ignored here, `people_plates` would come back empty, and every people plate would be animated
+    # as if it were an ordinary cut. Found 2026-08-21 on EP75 lahaina, whose people_plates list
+    # exists only in v002 because the plate ids did not exist when v001 was written.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from check_episode_spec import spec_path  # noqa: PLC0415 - local import, same dir
+    spec = json.loads(spec_path(ROOT / "episodes" / epid).read_text(encoding="utf-8"))
     mandatory = [s[:-4] for s in spec["mandatory_stills"]]
     people = {Path(s).stem for s in spec.get("people_plates", [])}
     prompts = plate_prompts(a.slug)

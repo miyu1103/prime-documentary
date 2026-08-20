@@ -166,7 +166,13 @@ in the table itself, both mandated checks green, zero `forbidden_subjects` hits 
 the manual mandates found that **`check_prompt_diversity.py` could not read a modern order at all** —
 EP72 returns 0 rows on it as well — and that once it could, **30 identical prompts still passed**,
 because its own boilerplate filter drops every shared token and blinds the duplicate detector. Both
-fixed and both demonstrated (§7.5). Next: thumbnails, scene plan, fact_recheck (§8).
+fixed and both demonstrated (§7.5). **The rest of the left process was then built too — all six items
+of spec v3 §5 now exist**: 17 paste batches from a new generic exporter that EP72 also runs through
+unchanged, a scene plan (projected, and it says so), packaging with **two titles and two thumbnail
+headlines measured at zero unsupported claims**, and an R3 fact_recheck packet (§8). Chasing one gate
+message found **`people_plates` missing from the spec** (now `episode_spec.v002.json`, numbers
+byte-for-byte v001) **and a builder hard-coding `episode_spec.v001.json`** that would have silently
+ignored it (§8.5). Everything still open is downstream of an image (§8.6).
 
 **[2026-08-21](handover/2026-08-21-ep75-research.md)** — **EP75 lahaina, research process only**:
 `episode_spec.v001.json` valid, `FACTS_LEDGER.v001` written from the primary record. The brief said
