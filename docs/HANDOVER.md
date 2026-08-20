@@ -161,7 +161,12 @@ an appeal over fees is at the Hawaiʻi Supreme Court, and `LH-101…LH-103` may 
 Measured **187.1 raw wpm** (the registry model is 8.9 % slow) and the script projects **30:32** against
 a `[1740, 1920]` band. Craft gate green, **220 of 220 spoken lines cited, all 106 row ids real** (§5).
 Two script gates SKIP and they are **right** to — they look for a `03_script` layout the channel
-abandoned thirteen episodes ago (§6). Next: image order, thumbnails, scene plan, fact_recheck (§7).
+abandoned thirteen episodes ago (§6). **The image order is written too**: 132 plates, 24 people plates
+in the table itself, both mandated checks green, zero `forbidden_subjects` hits (§7). Running the one
+the manual mandates found that **`check_prompt_diversity.py` could not read a modern order at all** —
+EP72 returns 0 rows on it as well — and that once it could, **30 identical prompts still passed**,
+because its own boilerplate filter drops every shared token and blinds the duplicate detector. Both
+fixed and both demonstrated (§7.5). Next: thumbnails, scene plan, fact_recheck (§8).
 
 **[2026-08-21](handover/2026-08-21-ep75-research.md)** — **EP75 lahaina, research process only**:
 `episode_spec.v001.json` valid, `FACTS_LEDGER.v001` written from the primary record. The brief said

@@ -41,6 +41,32 @@ MARK = re.compile(r"^-\s*`?([SMTF]\d{2,3}[A-Za-z0-9]*?)(?:_src|_face)?\.png`?\s*
 WORD = re.compile(r"[a-z][a-z'-]+")
 
 
+# Orders from EP72 onward write the plate list as a markdown table instead of a code fence:
+#   | H001 | the beat | the prompt text | flags |
+# The fence format above is the EP53-era shape. Measured 2026-08-21: with only the fence parser,
+# BOTH EP72 lacmegantic and EP75 lahaina extracted 0 rows and this gate printed the same FAIL for a
+# file-format reason rather than a diversity reason -- i.e. it had never once measured a modern
+# order. Accept both shapes; the fence wins where a file carries both.
+TABLE_ROW = re.compile(
+    r"^\|\s*([A-Z]{1,2}\d{2,3}[A-Za-z0-9]*)\s*\|"   # id cell
+    r"\s*[^|]*\|"                                   # beat cell (not a prompt)
+    r"\s*([^|]+?)\s*\|"                             # prompt cell
+)
+
+
+def extract_table_prompts(text: str) -> dict[str, str]:
+    """Plate prompts written as markdown table rows. Same contract as extract_prompts()."""
+    out: dict[str, str] = {}
+    for line in text.splitlines():
+        m = TABLE_ROW.match(line.strip())
+        if not m:
+            continue
+        sid, prompt = m.group(1), m.group(2).strip()
+        if len(prompt) >= 40:
+            out.setdefault(sid, prompt)
+    return out
+
+
 def extract_prompts(text: str) -> dict[str, str]:
     prompts: dict[str, str] = {}
     lines = text.splitlines()
@@ -86,7 +112,7 @@ def main() -> int:
     args = ap.parse_args()
 
     text = Path(args.file).read_text(encoding="utf-8")
-    prompts = extract_prompts(text)
+    prompts = extract_prompts(text) or extract_table_prompts(text)
     if len(prompts) < 20:
         print(f"FAIL could not extract a prompt table (found {len(prompts)} rows) — "
               "check the file format or this parser")
@@ -114,6 +140,26 @@ def main() -> int:
             (pairs if a[0] == b[0] else cross_pairs).append(rec)
     pairs.sort(reverse=True)
     cross_pairs.sort(reverse=True)
+
+    # --- RAW GATE (added 2026-08-21) ----------------------------------------
+    # The boilerplate filter defeats the duplicate detector on exactly the input the
+    # detector exists to catch. Demonstrated: an order of 30 IDENTICAL prompts scored
+    # 0 dup-pairs and printed RESULT: PASS, because every shared token exceeded the 30%
+    # document-frequency threshold and was therefore dropped as "boilerplate" -- leaving
+    # nothing to compare. The same file with --boilerplate-df 1.1 returns 435 pairs at
+    # Jaccard 1.00, so the detector is sound and the filter was blinding it.
+    # So: also compare the UNFILTERED tokens at a deliberately high bar. Real plates that
+    # share a style macro sit well under it; wholesale duplication cannot.
+    RAW_THRESHOLD = 0.85
+    raw_pairs = []
+    for a, b in combinations(sorted(tok), 2):
+        ta, tb = tok[a], tok[b]
+        if not ta or not tb:
+            continue
+        j = len(ta & tb) / len(ta | tb)
+        if j >= RAW_THRESHOLD:
+            raw_pairs.append((j, a, b, sorted(ta & tb)[:8]))
+    raw_pairs.sort(reverse=True)
 
     # --- COVERAGE GATE (added 2026-07-28) -----------------------------------
     # A file with only 30 literal prompts out of 261 declared assets used to
@@ -153,14 +199,23 @@ def main() -> int:
               f"intentional — eyeball them):")
         for j, a, b, shared in cross_pairs[:args.top]:
             print(f"  {j:.2f}  {a} ~ {b}   shared: {', '.join(shared)}")
+    if raw_pairs:
+        print(f"\nFAIL {len(raw_pairs)} pair(s) near-identical BEFORE the boilerplate filter "
+              f"(raw Jaccard>={RAW_THRESHOLD}) — the filter cannot hide these:")
+        for j, a, b, shared in raw_pairs[:args.top]:
+            print(f"  {j:.2f}  {a} ~ {b}   shared: {', '.join(shared)}")
+        if len(raw_pairs) > args.top:
+            print(f"  ... and {len(raw_pairs) - args.top} more")
+    else:
+        print(f"ok   no pair reaches raw Jaccard {RAW_THRESHOLD} before filtering")
     if generic:
         tag = "FAIL" if args.strict else "WARN"
         print(f"{tag} {len(generic)} prompt(s) with <{args.min_tokens} distinctive tokens "
               f"(generic-filler risk): {', '.join(generic[:20])}")
 
-    bad = bool(pairs) or (args.strict and bool(generic))
+    bad = bool(pairs) or bool(raw_pairs) or (args.strict and bool(generic))
     print(f"\nRESULT: {'FAIL' if bad else 'PASS'} "
-          f"({len(pairs)} dup-pairs, {len(generic)} generic)")
+          f"({len(pairs)} dup-pairs, {len(raw_pairs)} raw-dup-pairs, {len(generic)} generic)")
     return 1 if bad else 0
 
 
