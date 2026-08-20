@@ -13,9 +13,9 @@
 > 38 minutes between 14:17 and 14:55 never travel without LH-15 and LH-85 in the same passage (⛔-16).
 >
 > **Sizing — measured, not modelled.** `--measure-section ACT_1` (2026-08-21) ffprobed **187.1 raw
-> wpm / 176.3 words per finished minute**. At the final dry run this script extracts **349 chunks /
-> 5,321 words**, which projects a **30:32** film against `runtime_seconds` [1740, 1920] — 92 s of
-> headroom low, 88 s high. `check_script_length` is NOT used here: it counts these citation comments
+> wpm / 176.3 words per finished minute**. At the final dry run this script extracts **357 chunks /
+> 5,338 words**, which projects a **30:40** film against `runtime_seconds` [1740, 1920] — 100 s of
+> headroom low, 80 s high. `check_script_length` is NOT used here: it counts these citation comments
 > as spoken words and reads this script about 1,800 words long. FILM BIBLE §15.
 
 ---
@@ -663,13 +663,16 @@ Not that day. Ever. In the whole life of the largest outdoor warning network in 
 <!-- LH-31, LH-01 ✓ VERBATIM -->
 
 And it was not used on the eighth of August either. Reporting at the time established that, and the head of the county's emergency management agency confirmed it publicly within days.
-<!-- LH-38 ✓ SECONDARY · ⛔-02, ⛔-03: NEVER merged with LH-30, and the word "failed" is not used -->
+<!-- LH-120 ✓ (SRC-0014, read) · ⛔-02, ⛔-03: NEVER merged with LH-30, and the word "failed" is not used -->
 
-He said he did not regret it. He said the sirens are used primarily for tsunamis, and that if they had sounded that night, he was afraid people would have gone mauka — toward the mountains — and that if that was the case, they would have gone into the fire.
-<!-- LH-38 ✓ SECONDARY QUOTE — attributed to the position, dated, and carrying no beat -->
+At a news conference on the sixteenth of August, twenty twenty-three, he was asked whether he regretted not activating them. His answer was three words. I do not.
+<!-- LH-120 ✓ VERBATIM QUOTE (SRC-0014, read) · ⛔-17: the office, not the name -->
 
-He resigned the following day, citing health reasons. He has not been charged with any offence.
-<!-- LH-38 ✓ SECONDARY · spec forbidden_claims #2: legal status in the same breath · ⛔-17: role, not name -->
+And he gave his reason. Had we sounded the sirens that night, we were afraid that people would have gone mauka — toward the mountainside — and if that was the case, they would have gone into the fire.
+<!-- LH-121 ✓ VERBATIM QUOTE (SRC-0014, read) · ⛔-18: stated, not rebutted -->
+
+He resigned the next day, the seventeenth of August, citing health reasons. He has not been charged with any offence.
+<!-- LH-122, LH-123 ✓ (SRC-0014, read) · spec forbidden_claims #2: legal status in the same breath · ⛔-17: role, not name -->
 
 The last recommendation attached to Finding thirty-seven asks for a statewide sustainable programme for the outdoor warning system, including functioning hardware resilient against mass communications failure.
 <!-- LH-32 ✓ VERBATIM -->

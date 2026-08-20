@@ -212,6 +212,39 @@ All from `SRC-0009` §4.3.1, pp.35–36, and read there.
 |---|---|---|
 | SRC-0012 | *Maui Now*, "High court clears path for $4 billion wildfire settlement payments," 13 February 2026 | fetched and read 2026-08-21 |
 | SRC-0013 | *Honolulu Star-Advertiser*, "Maui wildfire settlement payments delayed again," 16 August 2026 | fetched and read 2026-08-21 |
+| SRC-0014 | *CBS News*, "Maui emergency chief resigns following criticism of wildfire response," **18 August 2023** | **fetched and read 2026-08-21** |
+
+---
+
+## 12. THE SIREN DECISION — `LH-38` UPGRADED, and it supersedes v001's row
+
+`fact_recheck.v001` §3.2 said the `LH-38` quotation was the only place this film quotes a living
+identifiable individual and that its source (`SRC-0006`) had **never been read in a primary record** —
+so it had to be upgraded or cut. **It has been upgraded.** `SRC-0014` was fetched and read on
+2026-08-21, and the rows below replace `LH-38` for every purpose. **v001's `LH-38` wording may no
+longer be narrated**; it paraphrased a quotation from a search summary, and the two do not match.
+
+| id | fact | grade | source |
+|---|---|---|---|
+| LH-120 | At a news conference on **Wednesday 16 August 2023**, the administrator of the Maui Emergency Management Agency was asked whether he regretted not activating the sirens. His answer, in full: **"I do not."** | VERBATIM QUOTE | SRC-0014 |
+| LH-121 | He gave this reason: **"Had we sounded the sirens that night, we were afraid that people would have gone mauka (mountainside), and if that was the case, they would have gone into the fire."** | VERBATIM QUOTE | SRC-0014 |
+| LH-122 | He resigned on **Thursday 17 August 2023**, the day after that news conference, **citing health reasons**, effective immediately | VERBATIM | SRC-0014 |
+| LH-123 | The report of the resignation records public criticism of the agency's response and the Attorney General's investigation into the government response, and **contains no accusation or criminal charge against him personally** | ABSENCE | SRC-0014 |
+
+> **How these four may be used, and how they may not.** `LH-120` and `LH-121` are his own words,
+> dated, and attributed **to the office, not to his name** (⛔-17). `LH-122` and `LH-123` travel in
+> the same passage, in that order, every time — the spec's `forbidden_claims` requires the legal
+> status in the same breath, and "he has not been charged with any offence" is that status.
+>
+> **⛔-18 (new).** The film does **not** narrate his stated reason as if it were a finding, and does
+> **not** rebut it. No source in this ledger establishes what would have happened either way, which
+> is ⛔-01 exactly. The permitted form is: he was asked, this is what he said, this is when, this is
+> what happened the next day, and he has not been charged. **Then move to Finding 38, which is
+> primary, and let the film's argument rest there.**
+>
+> **v001's clause that the sirens "are used primarily for tsunamis" is NOT in `SRC-0014` and is not
+> a row here.** It may not be narrated. Finding 38 (`LH-31`) says the same thing better and is
+> primary.
 
 > **⛔-11 is not discharged by this file.** It is discharged for **2026-08-21 only**. The Hawaiʻi
 > Supreme Court may rule between now and the publish date, and LH-115/LH-116 will be wrong the day it

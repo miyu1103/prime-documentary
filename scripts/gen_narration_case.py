@@ -452,7 +452,7 @@ EPISODES = {
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
     "PD-2026-074-itaewon": {
-        "planning": "EP74_itaewon_script.en.v004.md",
+        "planning": "EP74_itaewon_script.en.v005.md",
         # 30 minutes. episode_spec runtime_seconds [1740, 1920], script_words [4900, 5400].
         # The word band was set from MEASUREMENT, not from the 171.79 raw-wpm model this registry
         # carries for every episode since EP66. EP72 measured 191.1 raw wpm on its own ACT_1 and
@@ -475,7 +475,7 @@ EPISODES = {
         # 134 s at the high edge. Cross-check on the finished-minute figure: 5511 / 186.3 = 29.58
         # min + 12.6 s of section gaps + 9 s endcard = 1796.5 s (29:57); the two agree to within
         # 10.5 s, both inside the band.
-        "design_speech_seconds": 1666.6,
+        "design_speech_seconds": 1727.1,
         "sections": SECTION_ORDER_5ACT,
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
@@ -518,15 +518,17 @@ EPISODES = {
         # EP72's measured 191.1 -- same register, slightly longer sentences, because this script
         # reads numbered findings verbatim. The script was then written to THIS number.
         # At the dry run it extracts 349 chunks / 5,321 index words:
-        #   speech   5321 / 187.1 * 60 = 1706.4 s
-        #   gaps     348 beat gaps at 0.30 s = 104.4 s, seven section boundaries at 1.8 s = 12.6 s,
-        #            no scripted silence declared -> 117.0 s
-        #   master   1823.4 s, film 1832.4 s (30:32) once ENDCARD 9.0 is added
+        #   speech   5338 / 187.1 * 60 = 1711.9 s
+        #   gaps     356 beat gaps at 0.30 s = 106.8 s, seven section boundaries at 1.8 s = 12.6 s,
+        #            no scripted silence declared -> 119.4 s
+        #   master   1831.3 s, film 1840.3 s (30:40) once ENDCARD 9.0 is added
+        #   (5,321 words at the first dry run; 5,338 after LH-38 was upgraded to the read CBS
+        #   source SRC-0014 and the paraphrase replaced with the two verbatim quotations)
         # Inside episode_spec runtime_seconds [1740, 1920] with 92 s of headroom at the low edge and
         # 88 s at the high edge -- the most centred projection of any episode in this registry.
         # Cross-check on the finished-minute figure: 5321 / 176.3 = 30.18 min + 12.6 s of section
         # gaps + 9 s endcard = 1832.5 s. The two agree to within 0.1 s.
-        "design_speech_seconds": 1706.4,
+        "design_speech_seconds": 1711.9,
         "sections": SECTION_ORDER_5ACT,
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },

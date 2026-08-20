@@ -83,17 +83,28 @@ false**. That is the mitigation, and it is deliberate.
 2. before the video is scheduled,
 3. and again if the schedule slips.
 
-### 3.2 The quote that should be re-read or cut
+### 3.2 RESOLVED 2026-08-21 — the quote was re-read, not cut
 
 **`LH-38` is the only place this film quotes a living, identifiable individual's words about the
 decision** — and `SRC-0006` is marked in the ledger as **"search summaries only — not read in a
 primary record."** The film attributes it by role, dates it, states that he resigned the next day, and
 states that he has not been charged with any offence, which is what `forbidden_claims` requires.
 
-**That is still a quotation of a real person, sourced from a summary.** Before publish, either:
+**RESOLUTION.** The first option was taken. `SRC-0014` — CBS News, "Maui emergency chief resigns
+following criticism of wildfire response", 18 August 2023 — was **fetched and read on 2026-08-21**,
+and ledger v002 §12 replaces `LH-38` with four rows read in that source: `LH-120` (the three-word
+answer, "I do not"), `LH-121` (his stated reason, verbatim), `LH-122` (the resignation the next day,
+17 August, health reasons) and `LH-123` (the absence of any charge). **The script now carries the two
+quotations verbatim instead of the paraphrase**, and v001's clause that the sirens "are used
+primarily for tsunamis" — which is **not** in the read source — has been **removed from the script and
+barred from narration**.
+
+**What is still open here:** nothing for this row. The alternative below is recorded because it was
+the fallback and because it remains true — if any doubt arises about the quotation at publish, it can
+still be cut without touching the film's argument.
 
 - retrieve the statement from a named outlet's own page or from the recorded news conference and
-  upgrade the row, **or**
+  upgrade the row **(DONE)**, **or**
 - **cut the quotation** and keep only the fact that the sirens were not activated, which the film's
   argument does not depend on.
 
