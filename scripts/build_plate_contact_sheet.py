@@ -47,8 +47,13 @@ def _font(size: int):
     return ImageFont.load_default()
 
 
-def build(slug: str, per_sheet: int, cell: tuple[int, int], cols: int) -> list[Path]:
-    src = ROOT / "remotion" / "public" / slug / "img"
+def build(slug: str, per_sheet: int, cell: tuple[int, int], cols: int,
+          src_dir: str | None = None) -> list[Path]:
+    # --src lets a batch be reviewed BEFORE it is staged. Added 2026-08-21 for EP76: Codex
+    # delivered 115 of 120 plates and deliberately did not stage them, so that a partial set could
+    # not be mistaken for render truth. Reviewing only what is already staged would have meant
+    # staging first and looking second, which is the wrong order.
+    src = Path(src_dir) if src_dir else ROOT / "remotion" / "public" / slug / "img"
     plates = sorted(p for p in src.glob("*.png") if "_depth" not in p.name)
     if not plates:
         print(f"no plates under {src}")
@@ -102,9 +107,11 @@ def main() -> int:
     ap.add_argument("--per-sheet", type=int, default=12)
     ap.add_argument("--cols", type=int, default=4)
     ap.add_argument("--cell", default="620x349")
+    ap.add_argument("--src", help="review a batch BEFORE it is staged: read plates from this "
+                                  "directory instead of remotion/public/<slug>/img")
     a = ap.parse_args()
     w, h = (int(v) for v in a.cell.lower().split("x"))
-    sheets = build(a.slug, a.per_sheet, (w, h), a.cols)
+    sheets = build(a.slug, a.per_sheet, (w, h), a.cols, a.src)
     if not sheets:
         return 1
     print(f"\n{len(sheets)} sheet(s). OPEN THEM. A tool cannot do this part -- "
