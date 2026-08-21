@@ -2,8 +2,14 @@
   "schema_version": "1.0.0",
   "episode_id": "PD-2026-076-morandi",
   "slug": "morandi",
-  "runtime_seconds": [1740, 1920],
-  "script_words": [4900, 5400],
+  "runtime_seconds": [
+    1740,
+    1920
+  ],
+  "script_words": [
+    4900,
+    5400
+  ],
   "section_vocabulary": [
     "HOOK",
     "OP",
@@ -14,7 +20,10 @@
     "ACT_5",
     "ENDING"
   ],
-  "figure_beats_per_act": [13, 17],
+  "figure_beats_per_act": [
+    13,
+    17
+  ],
   "distinct_video_assets": 265,
   "people_plates_min": 24,
   "mandatory_stills": [
@@ -146,7 +155,10 @@
   "era_setting": {
     "place": "Genoa, Liguria, Italy -- the Polcevera valley between the Certosa, Campi and Rivarolo quarters, the A10 Genova-Savona motorway at km 000+551, the port and the hills above it; the Tribunale di Genova for the 2022-2026 trial; Rome for the Ministry of Infrastructure and Transport",
     "country": "Italy",
-    "years": [1962, 2026],
+    "years": [
+      1962,
+      2026
+    ],
     "notes": "The film runs from Riccardo Morandi's 1962 design to the first-instance judgment of 16 July 2026, and its centre of gravity is 11:36 on 14 August 2018. This is a MODERN setting for everything after 1990, so contemporary stock is period-correct, and this episode is the one in the batch where the shelf's European bias is an ADVANTAGE rather than an error. What is WRONG is the COUNTRY, the REGISTER and the DRIVING SIDE. OUT OF PLACE, and wrong in any cut: American highway signage, US route shields and US number plates; British streets and right-hand-drive traffic (Italy drives on the right, so a right-hand-drive vehicle is wrong even in a European street); Asian or Latin American cityscapes; Northern-European brick terraces; megacity skylines; palm-lined boulevards, desert, ocean surf. ALSO WRONG, and the easier trap: the HOLIDAY-ITALY register. Tuscan hills, cypress avenues, vineyards, the Amalfi coast, Venetian canals and gondolas, the Colosseum and Roman ruins are a different country from this film. Genoa is a working Mediterranean port city -- container cranes, ferries, tight ochre and grey blocks stacked up steep hills, railway yards, warehouses, a river bed of concrete and gravel, motorway viaducts and tunnels running through and over housing. Italian lettering in frame must be UNREADABLE rather than ABSENT: a Ligurian street with no writing anywhere reads as a set. OUT OF PERIOD: horse traffic, steam trains, pre-1960 cars as ordinary traffic in a post-1990 scene, CRT televisions in a 2018 interior, rotary telephones. Declared because EP62 greene shipped a 2011 Range Rover on an EU plate past a green pre-flight, and because for THIS episode the inverse error -- an American street -- is the one the shelf will offer first. footage_review_required is true and a labelled contact sheet must be opened by a person before any clip enters a cut."
   },
   "forbidden_subjects": [
@@ -222,5 +234,31 @@
     "That Autostrade per l'Italia or Spea, as companies, have been criminally convicted. The operative part read for this film disposes of natural persons; corporate liability is not established by anything retrieved.",
     "Any figure for deaths, injuries, metres, years, euros, percentages, scores or sentences that is not a row in EP76_morandi_FACTS_LEDGER with a source."
   ],
-  "notes": "Runtime band [1740,1920] = 29:00-32:00, from PD_ONE_PASS_PRODUCTION_SPEC.v3 section 1 (mid profile) and the owner's 30-minute brief, matching EP72 lacmegantic which landed at a measured 29:44 inside the same band. script_words [4900,5400] is DELIBERATELY ABOVE EP72's [4600,4800]: EP72's own ACT_1 measured 191.7 raw words per minute against the narration registry's 171.79 model, 11 percent faster, so a script sized on the model finishes short. 27 minutes of narration at 185 wpm is 4,995 words; the band brackets that with room for the measured pace of this script, which is to be established with gen_narration_case.py --measure-section ACT_1 BEFORE the script is written to length, not after. distinct_video_assets = 265 from PD_EPISODE_SPEC_STANDARD.v001 (runtime x 0.65 / 4.5 at the 1,830s midpoint: 1,830 x 0.65 = 1,189.5; / 4.5 = 264.3 -> 265). people_plates_min = 24, above EP72's 20, per the EP76 handover: this is an office-and-inspection film whose human presence is hands, backs and figures at distance rather than crowds, so it needs more of them. audio_layers = 4 follows PD_ONE_PASS_PRODUCTION_SPEC.v3 section 0 row 4 and the finisher's four-layer mix, not the standard's default of 2. mandatory_stills now binds all 120 purpose-made V001-V120 plates after the seven-plate v002 regeneration and full-frame review; this prevents surplus trimming from silently dropping commissioned coverage. R3: 43 real deaths, 13 injured, living families, and 57 defendants of whom 32 were convicted at first instance one month before this film was written and 25 were acquitted or time-barred -- forbidden_claims is the legally load-bearing part of this spec and it governs the packaging as strictly as the narration."
+  "notes": "Runtime band [1740,1920] = 29:00-32:00, from PD_ONE_PASS_PRODUCTION_SPEC.v3 section 1 (mid profile) and the owner's 30-minute brief, matching EP72 lacmegantic which landed at a measured 29:44 inside the same band. script_words [4900,5400] is DELIBERATELY ABOVE EP72's [4600,4800]: EP72's own ACT_1 measured 191.7 raw words per minute against the narration registry's 171.79 model, 11 percent faster, so a script sized on the model finishes short. 27 minutes of narration at 185 wpm is 4,995 words; the band brackets that with room for the measured pace of this script, which is to be established with gen_narration_case.py --measure-section ACT_1 BEFORE the script is written to length, not after. distinct_video_assets = 265 from PD_EPISODE_SPEC_STANDARD.v001 (runtime x 0.65 / 4.5 at the 1,830s midpoint: 1,830 x 0.65 = 1,189.5; / 4.5 = 264.3 -> 265). people_plates_min = 24, above EP72's 20, per the EP76 handover: this is an office-and-inspection film whose human presence is hands, backs and figures at distance rather than crowds, so it needs more of them. audio_layers = 4 follows PD_ONE_PASS_PRODUCTION_SPEC.v3 section 0 row 4 and the finisher's four-layer mix, not the standard's default of 2. mandatory_stills now binds all 120 purpose-made V001-V120 plates after the seven-plate v002 regeneration and full-frame review; this prevents surplus trimming from silently dropping commissioned coverage. R3: 43 real deaths, 13 injured, living families, and 57 defendants of whom 32 were convicted at first instance one month before this film was written and 25 were acquitted or time-barred -- forbidden_claims is the legally load-bearing part of this spec and it governs the packaging as strictly as the narration.",
+  "people_plates": [
+    "V006.png",
+    "V016.png",
+    "V020.png",
+    "V021.png",
+    "V030.png",
+    "V045.png",
+    "V048.png",
+    "V060.png",
+    "V061.png",
+    "V076.png",
+    "V078.png",
+    "V079.png",
+    "V080.png",
+    "V094.png",
+    "V095.png",
+    "V098.png",
+    "V099.png",
+    "V100.png",
+    "V104.png",
+    "V109.png",
+    "V111.png",
+    "V112.png",
+    "V114.png",
+    "V119.png"
+  ]
 }
