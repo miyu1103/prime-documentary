@@ -210,7 +210,7 @@ firefighters at distance, the figures on the street now — may have faces.**
 | H055 | the officer looks | the back and shoulder of a standing figure in work clothing looking out across burned ground, seen from behind, no face, hard light | **P** R D W |
 | H056 | 05:40, the intersection | a two-lane road intersection at first light with a broken utility pole down across the northbound lanes and wires on the road surface, no vehicles yet | R D N |
 | H057 | traffic cones | traffic cones and a temporary barrier across one lane of a road with a downed line beyond, flat early light, nobody in frame | R D W |
-| H058 | the queue begins | a line of stationary cars on a two-lane road seen from behind at windscreen height, brake lights on, dust in the air | **P** R D W |
+| H058 | the queue begins | a line of stationary cars on a two-lane road seen from behind at windscreen height, brake lights on, dust in the air, one driver standing in an open car door looking forward up the queue, seen from behind, no face in frame | **P** R D W |
 | H059 | mauka | a steep dry mountain wall rising directly behind low corrugated roofs, seen from a street, the slope filling the top two-thirds of the frame | R D W |
 | H060 | makai | a two-lane road running downhill straight toward a flat grey sea, low buildings on both sides, the horizon high and colourless | R D W |
 | H061 | the cell mast | a lattice communications mast on a low ridge above a town, seen against a bleached sky, dry grass at its base | R D W |
@@ -257,11 +257,11 @@ firefighters at distance, the figures on the street now — may have faces.**
 | H092 | eight ways out | a plain aerial-style view of a small grid town on a coastal shelf between a mountain wall and the sea, roads visible, no labels, no text | R D O |
 | H093 | the gate, hero one | a galvanised chain-link gate closed across a dirt access track with a heavy padlock and chain on it, dry grass either side, seen straight on | R D W |
 | H094 | the gate, hero two | the same padlock and chain close up, the wire diamonds of the gate filling the frame behind it, hard light | R W |
-| H095 | the cars behind it | a line of stationary cars nose to tail on a dirt track, seen from in front and low, dust and grey smoke beyond them, windscreens reflecting flat sky | **P** R D S |
+| H095 | the cars behind it | a line of stationary cars nose to tail on a dirt track, seen from in front and low, dust and grey smoke beyond them, a driver leaning out of the nearest window looking ahead, seen from behind and to the side, no face in frame | **P** R D S |
 | H096 | the saw | a battery reciprocating saw held in two hands cutting into a padlock shackle, extreme close, sparks small and few, no face in frame | **P** R S |
 | H097 | the tow strap | a nylon tow strap looped through chain-link wire and pulled taut, close, the wire deforming under it | R S |
 | H098 | the shoulder | a chain-link gate leaf swinging open, seen from the side, the wire mesh blurred with movement, a figure's back and shoulder just entering the frame edge | **P** R D S |
-| H099 | through the gate | the view along a dirt track away from an opened gate, cars moving away from camera, dust behind them, grey smoke beyond | **P** R D S |
+| H099 | through the gate | the view along a dirt track away from an opened gate, cars moving away from camera, dust behind them, grey smoke beyond, a figure in work clothing standing at the gate post with their back to camera, holding it open | **P** R D S |
 | H100 | the fence, after | a section of chain-link fence pushed out of shape and standing open, dry grass, ash on the ground, flat cold light | R D O |
 | H101 | the school gate | a locked galvanised gate across a paved access road beside a low institutional building, chain and padlock, nobody | R D W |
 | H102 | the barrier | a steel bollard and a low concrete barrier blocking a dirt track between two lots, dry grass growing round them | R D W |
@@ -288,12 +288,12 @@ firefighters at distance, the figures on the street now — may have faces.**
 | H118 | the pole returns | the same galvanised siren pole and horn cluster from ACT_1, framed identically, under colder flatter light | R D O |
 | H119 | one of four | four warning siren poles standing in a line along a coastal road at wide intervals, seen along the road so they recede, flat grey sea beyond | R D O |
 | H120 | the blank sheet, hero | a single ruled sign-in form lying alone and completely blank on a plain wooden table in an empty room, daylight from one side | R D O |
-| H121 | the empty chair | a plain office chair pushed back from an empty desk in a municipal office, a blank notepad on the desk, nobody | **P** R D O |
+| H121 | the empty chair | a plain office chair pushed back from an empty desk in a municipal office, a blank notepad on the desk, nobody | R D O |
 | H122 | the folders | a stack of manila folders on a table, edges uneven, covers blank | R O |
 | H123 | the filing cabinet | a grey steel filing cabinet with one drawer standing open and empty, in a plain office corner | R O |
 | H124 | the envelope | a plain unmarked envelope lying on a laminate desk beside a telephone, blank | R O |
-| H125 | the corridor | a wide institutional corridor with a wooden bench along one wall, empty, strip lighting | **P** D O |
-| H126 | the bench | a worn wooden bench against a painted wall in a public building, empty, a folded coat left on one end | **P** R O |
+| H125 | the corridor | a wide institutional corridor with a wooden bench along one wall, empty, strip lighting | D O |
+| H126 | the bench | a worn wooden bench against a painted wall in a public building, empty, a folded coat left on one end | R O |
 | H127 | the building | a plain mid-century public building seen from across a street under flat overcast, no signage legible, no people | D O |
 | H128 | the ledger ground | a plain ruled accounts page filling the frame, columns empty, nothing written | R O |
 
@@ -305,6 +305,20 @@ firefighters at distance, the figures on the street now — may have faces.**
 | H130 | the town now | a rebuilt two-lane street in a low-rise Pacific town under flat overcast, new kerbs, young planted trees, a few people at a distance, none identifiable | **P** D O |
 | H131 | the wall that stood | a low lava-rock wall standing alone on a cleared lot with ash-grey ground around it and dry grass returning at its base, flat cold light | R D O |
 | H132 | the radio, last | the small mains radio from ACT_1 on a kitchen counter, framed identically, colder light, the room otherwise empty | R O |
+
+### ADDED 2026-08-22 — H133–H135, three people plates the order was short
+
+The people lane was declared at 24 and **eighteen** of the twenty-four prompts actually asked for a
+human; three of the remaining six are empty by design and have been de-flagged, and three have had a
+figure written into them. These three are new, and all three are concepts already in
+`FILM_BIBLE.v001` §11's people list that never reached the order.
+
+| id | beat | prompt | flags |
+|---|---|---|---|
+| H133 | a figure at a window, looking mauka | a person seen from behind and slightly to one side, standing at a jalousie window inside a single-storey timber house, looking out and up toward a steep dry mountain slope, hard flat daylight outside, the room dim, no face in frame | **P** R D W |
+| H134 | a lineman on a pole | a utility worker in a harness partway up a timber utility pole, seen from the ground at mid-distance and slightly behind, crossarm and insulators above them, bleached flat sky, too far for a face to resolve, no readable insignia | **P** R D W |
+| H135 | a hand closing a folder | one hand closing a plain manila folder on a laminate desk, close, the folder blank, a desk lamp at the edge of frame, no face in frame | **P** R O |
+
 
 ## 5. THE PEOPLE PLATES — twenty-four directly, twenty-nine with variants
 

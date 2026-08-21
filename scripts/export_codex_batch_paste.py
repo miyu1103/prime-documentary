@@ -215,6 +215,13 @@ def main() -> int:
         return 0
 
     out_dir.mkdir(parents=True, exist_ok=True)
+    # Clear the previous run's files first. A re-order shrinks as plates land, so a run that
+    # writes redo_01..02 into a directory still holding redo_03 from a 3-batch run leaves a STALE
+    # third file behind -- and the next person hands the generator a list containing plates that
+    # were already delivered and accepted. Measured on EP75: the combined list read 22 ids with
+    # duplicates when the true outstanding set was 14.
+    for old_file in list(out_dir.glob("batch_*.txt")) + list(out_dir.glob("redo_*.txt")):
+        old_file.unlink()
     for n, chunk in enumerate(chunks, 1):
         secs = []
         for r in chunk:
