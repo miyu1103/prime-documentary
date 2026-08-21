@@ -52,9 +52,28 @@ count_done(){
   echo "$n"
 }
 comfy_up(){ [ "$(curl -s -m 6 -o /dev/null -w '%{http_code}' http://127.0.0.1:8188/system_stats 2>/dev/null)" = "200" ]; }
+# MEASURED 2026-08-22 on EP76 morandi. This used to kill ONLY the pid listening on 8188, and
+# without //T. ComfyUI's parent is `ComfyUI/venv/Scripts/python.exe main.py`; the process that
+# actually holds the GPU is a CHILD `Python310/python.exe main.py`. Killing the parent alone
+# orphaned the child, which kept ~20 GB of VRAM at 100% utilisation. Every "fresh ComfyUI per
+# chunk" restart therefore ADDED an orphan: 22.2 GB of a 24.5 GB card was held by dead ComfyUIs,
+# Wan had ~2 GB of headroom, and throughput fell from 12 clips per chunk to 3 and then to 1,
+# each failure costing a 600 s timeout. After a full tree kill the card read 1.7 GB and 1%.
 kill_comfy(){
   for pid in $(netstat -ano 2>/dev/null | grep ':8188' | grep LISTENING | grep -oE '[0-9]+$' | head -1); do
-    taskkill //F //PID "$pid" >/dev/null 2>&1
+    taskkill //F //T //PID "$pid" >/dev/null 2>&1
+  done
+  # Sweep orphans the port lookup cannot see: a dead ComfyUI is not listening on 8188.
+  for pid in $(powershell -NoProfile -Command "(Get-CimInstance Win32_Process | Where-Object { \$_.Name -match '^python' -and \$_.CommandLine -match 'main\.py' -and (\$_.ExecutablePath -match 'ComfyUI' -or \$_.ExecutablePath -match 'Python310') }).ProcessId" 2>/dev/null | tr -d '\r'); do
+    [ -n "$pid" ] && taskkill //F //T //PID "$pid" >/dev/null 2>&1
+  done
+  # Do not return until the card is actually free. Restarting into 20 GB of orphaned VRAM is
+  # exactly the failure this function exists to prevent.
+  for _ in 1 2 3 4 5 6 7 8 9 10; do
+    used=$(nvidia-smi --query-gpu=memory.used --format=csv,noheader,nounits 2>/dev/null | head -1)
+    [ -z "$used" ] && break
+    [ "$used" -lt 4000 ] && break
+    sleep 3
   done
 }
 ensure_comfy(){
