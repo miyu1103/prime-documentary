@@ -216,6 +216,16 @@ def build_sheet(images: list[Path], out: Path, title: str,
 
 
 def main() -> int:
+    # This tool prints em-dashes and arrows, and on a Japanese Windows console stdout defaults to
+    # cp932, which cannot encode them. The crash landed inside the line that REPORTS undecodable
+    # tiles, so a real diagnosis ("N/M tiles could not be decoded") was replaced by a
+    # UnicodeEncodeError traceback and the true cause stayed hidden. Same failure class as the
+    # cp932 decode that broke uploads on 2026-08-16. Fix the console, not the message.
+    for _s in (sys.stdout, sys.stderr):
+        try:
+            _s.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:  # noqa: BLE001 - a non-reconfigurable stream is not worth failing over
+            pass
     ap = argparse.ArgumentParser(description="Labeled contact sheet of an episode's image or video pool.")
     ap.add_argument("--ep", help="episode id / slug / substring")
     ap.add_argument("--dir", help="explicit media folder (overrides --ep discovery)")

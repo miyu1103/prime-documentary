@@ -111,7 +111,80 @@ the forbidden-subject sweep plus the contact sheet are what enforce that.
 | `small_town` | 617 | every street in it is mainland US, which `era_setting` names as the single most likely wrong clip for this episode |
 | `ocean_nature` | 1,060 | **conditionally** — the ocean appears in this film only as a direction, flat and grey. Anything that reads as beauty is barred by ⛔-12 |
 
-## 5.5 THE FACTORY SHELF — a second shelf, and the one the film actually draws from
+## 5.4 CORRECTION, 2026-08-21 — §5.5 BELOW COUNTED AN INDEX, NOT FILES
+
+**Read this before §5.5. The counts in it are from an index whose files are not on disk.**
+
+`select_factory_assets.py` reports "88,850 in shelf" and answers every query from that index. The
+media it points at is **`H:\pd-media\assets\factory`**, and it is gone. Measured after mapping
+`H:` back to the real media root with `subst H: E:\`:
+
+```
+find H:/pd-media/assets/factory -type f   ->   0 files
+E:\pd-media total                          ->   13 GB, 6,766 files   (plates and voice masters)
+```
+
+The directory tree survives — `backgrounds`, `particle_assets`, `light_assets`, `vfx_overlays` —
+and **every one of them is empty**. The contact-sheet tool proved it before the arithmetic did:
+`8/8 tiles could not be decoded`, every failure an ffmpeg `CalledProcessError` on a path under
+`H:\pd-media\as…`. **A sheet reviewed with those tiles is a sheet reviewed blind**, which is the
+tool's own phrasing.
+
+### What IS reachable, measured on disk
+
+The clips survive as **per-episode copies** under `D:\pd-public\<slug>\factory\`, left behind by the
+59 episodes that have already staged from the shelf:
+
+| | measured |
+|---|---|
+| episodes with a staged factory directory | **59** |
+| **distinct factory files actually on disk** | **5,806** |
+| of those, in this film's usable registers | **2,019** |
+| this film needs | **265 distinct** |
+
+**2,019 against 265 is 7.6× the requirement. The downloaded footage is there and this film can be
+built with it** — but not through `select_factory_assets.py`, which will keep answering from the
+dead index until either the shelf is restored or the tool is pointed at `D:\pd-public`.
+
+### The real counts, from filenames on disk
+
+| register | files | | register | files |
+|---|---|---|---|---|
+| night | 482 | | office | 108 |
+| light | 276 | | road | 92 |
+| water | 192 | | desk | 88 |
+| wind | 165 | | corridor | 81 |
+| sky | 145 | | hand | 75 |
+| cloud | 140 | | dust | 68 |
+| window | 123 | | **fence** | **64** |
+| paper | 116 | | silhouette | 61 |
+| ash | 105 | | traffic | 47 |
+| smoke | 36 | | screen | 38 |
+| **grass** | **35** | | **ember** | **14** |
+
+**Two of §5.5's "zero" findings are wrong on disk.** `grass` returns 0 from the index and **35 real
+files** exist; `fence` and `pole` likewise. The index and the disk are different populations, and
+**the disk is the one that renders.**
+
+### The cost, stated plainly
+
+**Every one of those 5,806 files has already been used in another episode.** `check_cross_episode_reuse`
+identifies by content, so staging from `D:\pd-public` is knowingly re-using footage that has appeared
+in up to 59 earlier films. That collides directly with `footage_diversity` and with the standing
+instruction to avoid repeated material across episodes.
+
+**The decision this forces, and it is the owner's:**
+
+1. **Restore the factory shelf from backup** — `E:\ValueBackups` is 12.6 GB and `E:\backups` exists;
+   neither was checked for a factory archive. This is the only route that gives EP75 unused footage.
+2. **Stage from `D:\pd-public` and accept the reuse**, recording it as a release deviation.
+3. **Raise the i2v share** so more of the 330 video cuts come from this episode's own 132 plates and
+   fewer from any shelf. Costs GPU time, not diversity.
+
+**Nothing should be staged until that is decided.** §5.5 below is left unedited as the record of what
+the index claimed, so the difference between the index and the disk stays visible.
+
+## 5.5 THE FACTORY SHELF — as the INDEX reports it (superseded by §5.4)
 
 **There are two shelves and §1–§5 above measured only one of them.** That is a real error in the
 first draft of this document and it is corrected here rather than quietly patched:
