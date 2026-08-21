@@ -126,7 +126,33 @@ Measured against the projected master (1,789.6 s) and `episode_spec`:
 **EP68 pinto and EP69 hyatt have already spent this shelf's industrial and engineering registers,
 and EP71 oroville its infrastructure ones.** Run the cross-episode check first, not after.
 
-## 8. WHAT MUST HAPPEN BEFORE A CLIP ENTERS A CUT
+## 8. CROSS-EPISODE REUSE — measured 2026-08-21, BEFORE staging
+
+`check_cross_episode_reuse.py` compares by **content**, not by filename, against every clip already
+burned into a previous film. Run on the kept registers:
+
+| query | already used | share |
+|---|---|---|
+| `car traffic` | 0 of 22 | 0 % |
+| `cargo ship` | 0 of 24 | 0 % |
+| `tunnel` | 0 of 40 | 0 % |
+| `dock` | 1 of 40 | 3 % |
+| `road traffic` | 2 of 40 | 5 % |
+| `typing` | 2 of 40 | 5 % |
+| `fog` | 4 of 40 | 10 % |
+| `documents` | 3 of 11 | **27 %** |
+| `office desk` | 2 of 6 | **33 %** |
+
+**The road, port and tunnel registers are effectively untouched** — which is the opposite of what was
+feared, since EP68 pinto, EP69 hyatt and EP71 oroville were expected to have spent this ground.
+
+**The desk register is the one that is partly spent.** `office desk` and `documents` are small pools
+and a third of each is already burned. **Draw the desk register from `typing` (80), `writing` (66),
+`notebook` (39), `hands writing` (37) and `hands typing` (28) first**, and take `office desk` and
+`documents` only for what those cannot cover. ACT_3 and ACT_4 are 13 minutes of paper, so this is the
+register where a repeat would be noticed.
+
+## 9. WHAT MUST HAPPEN BEFORE A CLIP ENTERS A CUT
 
 1. **`check_cross_episode_reuse.py` runs first.** Three siblings have already drawn on the same
    registers.
