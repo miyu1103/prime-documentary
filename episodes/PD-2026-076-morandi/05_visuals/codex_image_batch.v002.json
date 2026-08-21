@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "PD-2026-076-morandi",
+  "recorded_at": "2026-08-21T10:37:59.7591884+09:00",
+  "status": "complete",
+  "scope": "EP76 Morandi V001-V120 still-image generation, selective repair, QC, 4K preparation, and Remotion staging",
+  "supersedes": "episodes/PD-2026-076-morandi/05_visuals/codex_image_batch.v001.json",
+  "source_contract": {
+    "order_file": "episodes/_planning/EP76_morandi_CODEX_BATCH_A.v001.md",
+    "order_file_sha256": "080a0e19e92c47a0428bef7c3a9000cefa97ea52c57780b4e1223ab7b32977d7",
+    "plates_file": "episodes/_planning/EP76_morandi_CODEX_PASTE/plates.v001.jsonl",
+    "plates_file_sha256": "35618a2ebae9b04146cf6dc3c951f9a18bbffc965965a44137136788928e6e72",
+    "requested_ids": 120,
+    "unique_ids": 120
+  },
+  "generation": {
+    "provider": "Codex built-in image generation",
+    "initial_calls": 120,
+    "selective_regeneration_calls": 5,
+    "selective_regeneration_authorized_by_user": true,
+    "automatic_retries": 0,
+    "paid_external_api_calls": 0,
+    "initial_raw_directory": "E:/pd-media/assets/ai/morandi/_v001_raw",
+    "replacement_raw_directory": "E:/pd-media/assets/ai/morandi/_v003_replacements",
+    "replacement_ids": [
+      "V024",
+      "V070",
+      "V073",
+      "V085",
+      "V086"
+    ]
+  },
+  "replacement_qc": {
+    "status": "pass",
+    "accepted": 5,
+    "rejected": 0,
+    "repaired_failures": {
+      "V024": "Period Morandi-type reinforced-concrete pylon and concrete-encased stay geometry is now explicit and visible.",
+      "V070": "Blank observations form with a large empty ruled lower area; no exterior scene or readable text.",
+      "V073": "Blank graph grid with unlabelled axes; no plot, data, numerals, or exterior scene.",
+      "V085": "Unbranded fax/printer unit viewed away from its controls; blank output paper and no readable glyphs.",
+      "V086": "Blank multi-field printed form with paperclip; no exterior scene or readable glyphs."
+    },
+    "replacement_4k_directory": "E:/pd-media/assets/ai/morandi/_v003_replacements_4k",
+    "replacement_4k_files": 5,
+    "replacement_4k_bytes": 44808717,
+    "dimensions": "3840x2160",
+    "exact_duplicate_groups": 0
+  },
+  "final_delivery": {
+    "media_directory": "E:/pd-media/assets/ai/morandi/_v004_final",
+    "remotion_directory": "remotion/public/morandi/img",
+    "files": 120,
+    "missing_ids": 0,
+    "unexpected_ids": 0,
+    "wrong_dimensions": 0,
+    "dimensions": "3840x2160",
+    "exact_duplicate_groups": 0,
+    "media_remotion_hash_mismatches": 0,
+    "bytes": 1208975497,
+    "inventory_sha256": "7f20f49667943bf8ed2d69b3fde85a7d1cfccf73c2e6e2568dfba5ea988493ef",
+    "remotion_staged": true
+  },
+  "visual_qc": {
+    "status": "pass",
+    "accepted_ids": 120,
+    "rejected_ids": 0,
+    "contact_sheet_directory": "runs/qc/plate_sheets/morandi",
+    "contact_sheets": 10
+  },
+  "non_blocking_source_contract_exceptions": [
+    {
+      "id": "V078",
+      "reason": "Flagged P, but the canonical subject prompt does not request a person."
+    },
+    {
+      "id": "V104",
+      "reason": "Flagged P, but the canonical subject prompt does not explicitly request a person."
+    },
+    {
+      "id": "V112",
+      "reason": "Flagged P, but the canonical subject prompt explicitly requests an empty bench."
+    },
+    {
+      "id": "V114",
+      "reason": "Flagged P, but the canonical subject prompt explicitly requests the room to be otherwise empty."
+    }
+  ],
+  "logs": [
+    "out_pdrun_ep76_morandi_upscale.log",
+    "out_pdrun_ep76_morandi_replacements_upscale.log"
+  ]
+}

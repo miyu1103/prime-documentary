@@ -235,8 +235,16 @@ def main() -> int:
     # One combined file as well: the batches are for pasting eight at a time, this is for handing
     # the whole order to somebody in one piece. Same house convention as EP62_greene_CODEX_PASTE_ALL.
     stem = "redo" if only is not None else "batch"
-    all_path = out_dir.parent / (f"{eptag}_CODEX_REDO_ALL.txt" if only is not None
-                                 else f"{eptag}_CODEX_PASTE_ALL.txt")
+    # The combined file is named from the OUT DIR whenever --out was given explicitly. Measured
+    # 2026-08-21 on EP76: exporting a 12-plate v002 regeneration order with --out pointing at a
+    # fresh directory still wrote `EP76_morandi_CODEX_PASTE_ALL.txt` into the parent and CLOBBERED
+    # the 120-plate combined file from the v001 run, because both orders share an eptag and neither
+    # run used --only. --out must isolate a run completely, combined file included.
+    if a.out:
+        all_path = out_dir.parent / f"{out_dir.name}_ALL.txt"
+    else:
+        all_path = out_dir.parent / (f"{eptag}_CODEX_REDO_ALL.txt" if only is not None
+                                     else f"{eptag}_CODEX_PASTE_ALL.txt")
     all_path.write_text(
         "\n\n".join((out_dir / f"{stem}_{n:02d}.txt").read_text(encoding="utf-8")
                     for n in range(1, len(chunks) + 1)),

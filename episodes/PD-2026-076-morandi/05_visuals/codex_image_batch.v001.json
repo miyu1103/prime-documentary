@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "episode_id": "PD-2026-076-morandi",
+  "recorded_at": "2026-08-21T06:29:28.3583358+09:00",
+  "status": "blocked_pending_selective_regeneration",
+  "scope": "EP76 Morandi V001-V120 still-image generation and QC only",
+  "source_contract": {
+    "order_file": "episodes/_planning/EP76_morandi_CODEX_BATCH_A.v001.md",
+    "order_file_sha256": "080a0e19e92c47a0428bef7c3a9000cefa97ea52c57780b4e1223ab7b32977d7",
+    "plates_file": "episodes/_planning/EP76_morandi_CODEX_PASTE/plates.v001.jsonl",
+    "plates_file_sha256": "35618a2ebae9b04146cf6dc3c951f9a18bbffc965965a44137136788928e6e72",
+    "requested_ids": 120,
+    "unique_ids": 120,
+    "missing_ids": 0,
+    "generation_policy": "one prompt equals one image; no variants; no automatic retries"
+  },
+  "generation": {
+    "provider": "Codex built-in image generation",
+    "calls": 120,
+    "successful_originals": 120,
+    "automatic_retries": 0,
+    "variants": 0,
+    "paid_external_api_calls": 0,
+    "raw_directory": "E:/pd-media/assets/ai/morandi/_v001_raw",
+    "raw_files": 120,
+    "raw_bytes": 278363749,
+    "raw_exact_duplicate_groups": 0,
+    "raw_inventory_sha256": "114a6445ae7f267ea9b3bd86058a9e7ddd624d15db0b422235815cab040db801",
+    "raw_dimension_distribution": {
+      "1672x941": 103,
+      "1536x1024": 15,
+      "1619x971": 1,
+      "1881x836": 1
+    },
+    "note": "V002 generation succeeded once; its already-generated source was recovered after a local path-extraction copy error. It was not regenerated."
+  },
+  "visual_qc": {
+    "accepted_ids": 115,
+    "rejected_ids": 5,
+    "rejections": [
+      {
+        "id": "V024",
+        "reason": "Bridge type and period mismatch: output resembles a modern conventional steel-cable bridge rather than the requested 1967 Morandi-style concrete cable-stayed structure."
+      },
+      {
+        "id": "V070",
+        "reason": "Semantic mismatch: valley landscape instead of a blank observations form."
+      },
+      {
+        "id": "V073",
+        "reason": "Semantic mismatch: valley landscape instead of a blank graph grid."
+      },
+      {
+        "id": "V085",
+        "reason": "Readable numerals and labels appear on the fax machine, violating the no-readable-text-or-numerals constraint."
+      },
+      {
+        "id": "V086",
+        "reason": "Semantic mismatch: valley landscape instead of a blank printed form."
+      }
+    ],
+    "source_contract_people_flag_exceptions": [
+      {
+        "id": "V078",
+        "reason": "Flagged P, but the canonical subject prompt requests a toll plaza and cars without a person."
+      },
+      {
+        "id": "V104",
+        "reason": "Flagged P, but the canonical subject prompt requests washing on a balcony without explicitly requesting a person."
+      },
+      {
+        "id": "V112",
+        "reason": "Flagged P, but the canonical subject prompt explicitly requests an empty bench."
+      },
+      {
+        "id": "V114",
+        "reason": "Flagged P, but the canonical subject prompt explicitly requests the room to be otherwise empty."
+      }
+    ],
+    "contact_sheet_directory": "E:/pd-media/assets/ai/morandi/_qc",
+    "accepted_4k_overview": "E:/pd-media/assets/ai/morandi/_qc/accepted_4k_overview.jpg"
+  },
+  "preparation": {
+    "directory": "E:/pd-media/assets/ai/morandi/_v001_prepped",
+    "files": 115,
+    "copied_without_crop": 98,
+    "center_cropped_to_16_9": 17,
+    "cropped_ids": [
+      "V004",
+      "V006",
+      "V031",
+      "V032",
+      "V035",
+      "V039",
+      "V043",
+      "V044",
+      "V056",
+      "V057",
+      "V071",
+      "V082",
+      "V091",
+      "V093",
+      "V102",
+      "V103",
+      "V116"
+    ],
+    "inventory_sha256": "f6a3395f0af32f7089d3ef607d217cc4703266a3a41750bacdad785d79e0ccaa",
+    "crop_visual_qc": "pass"
+  },
+  "upscale": {
+    "method": "Real-ESRGAN x4plus followed by Lanczos resize",
+    "directory": "E:/pd-media/assets/ai/morandi/_v002_4k",
+    "files": 115,
+    "dimensions": "3840x2160",
+    "missing_accepted_ids": 0,
+    "unexpected_ids": 0,
+    "exact_duplicate_groups": 0,
+    "bytes": 1164166780,
+    "inventory_sha256": "436058828450cfa80eb8c2133716bc8601a10fe51e8710f504e792a6196252ff",
+    "log": "out_pdrun_ep76_morandi_upscale.log"
+  },
+  "validators": [
+    {
+      "name": "check_image_order_neg.py",
+      "result": "pass",
+      "summary": "All 120 NEG blocks contain the five required token families."
+    },
+    {
+      "name": "check_episode_spec.py --slug morandi",
+      "result": "pass"
+    },
+    {
+      "name": "check_prompt_diversity.py",
+      "result": "pass",
+      "summary": "120 prompts, zero duplicate pairs, zero generic prompts."
+    }
+  ],
+  "delivery_gate": {
+    "remotion_directory": "remotion/public/morandi/img",
+    "staged": false,
+    "reason": "Five rejected plates remain unresolved. Partial staging could be consumed as render truth."
+  }
+}

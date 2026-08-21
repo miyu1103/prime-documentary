@@ -11,8 +11,10 @@ Runtime **29:00–32:00**. Narration **4,900–5,400 words**. Five acts. Mean cu
 **MEASURED, 2026-08-21, before the script was written to length** (v3 §6.7):
 `--measure-section ACT_1` generated 46 chunks / 650 words at the pinned voice settings and ffprobed
 **211.906 s of speech = 184.0 raw wpm**, 173.0 words per finished minute. `script.en.v001` then
-extracts **328 chunks / 5,118 words → 1,669.0 s of speech → a 1,786.6 s film (29:47)**. The
-registry entry for `PD-2026-076-morandi` carries that number, not the 171.79 model.
+extracts **329 chunks / 5,154 words → 1,680.7 s of speech → a film of 29:24–29:59** depending on
+whether the section arithmetic or the whole-script figure is used — inside the band either way. The
+registry entry for `PD-2026-076-morandi` carries the measured rate, not the 171.79 model.
+`EP76_morandi_SCENE_PLAN.v001.md` §2 holds the section sheet those numbers come from.
 
 ---
 
@@ -120,14 +122,25 @@ Every act is anchored to one object. No other object gets a hero close-up.
 
 | section | minutes | title | what it does |
 |---|---|---|---|
-| HOOK | 0:00–0:22 | — | An inspection sheet, a defect, and the number that was written in the box. §8 |
-| OP | 0:22–0:54 | — | `BrandOpening` 3.5 s over continuing footage, then the thesis and the promise |
-| ACT_1 | 0:54–5:45 | **THE SHEATH** | 1962–1967. A valley full of houses, railway lines and factories; the only cable-stayed viaduct on the whole network; four concrete ties per pier, 352 strands inside each, and a shell of precast concrete built around the steel **to preserve it from corrosion** (MO-01→MO-22) |
-| ACT_2 | 5:45–11:30 | **ONE OF THREE** | 1981–1996. Aspi asks Morandi for a report; work begins. Then, at pier 11, checks made only to price the job find severed and heavily oxidised strands inside. The fix is to run new cables **down the outside**, where they can be reached. It is done at pier 11 and nowhere else (MO-30→MO-38) |
-| ACT_3 | 11:30–17:30 | **THE NUMBER IN THE BOX** | 1997–2017. The scoring system and the company's own rule that a seventy means closing the road; the forties, the forty-three, the fifty; the observations box that empties in March 2013 and the previous years' text deleted; twenty-five years at zero on the company's own graph; and one-point-three million a year becoming twenty-three thousand (MO-39→MO-61) |
-| ACT_4 | 17:30–23:45 | **THE THING NOBODY WROTE** | 2003–14 August 2018. A safety assessment owed by March 2013; reported as done in June 2017; never made. A project called *retrofitting*, whose own stays were exempted from verification, presented to the committee by the men who wrote it, approved on 1 February 2018 — and then **11:36** (MO-62→MO-89, MO-94→MO-99, MO-24→MO-28) |
-| ACT_5 | 23:45–29:00 | **WHAT WAS DECIDED** | Two findings that disagree; a trial that opened in July 2022; a judgment on 16 July 2026; thirty-two convicted at first instance and twenty-five acquitted or time-barred; the foresight circumstance struck out; a defendant dead before judgment; ninety days for the reasons (MO-100→MO-133) |
-| ENDING | 29:00–30:00 | — | The barrier, the census that is not finished, the second-person turn, one specific ask |
+> **Corrected 2026-08-21 from `EP76_morandi_SCENE_PLAN.v001.md`, which measured the script instead
+> of trusting this table.** The designed timings below were a projection made before the script
+> existed; the projected timings are what the delivered words actually run to at the measured
+> 184.0 wpm. **ACT_2 came in 2:26 short and ACT_4 1:54 long** — the film's weight moved into ACT_4
+> when the assessment, the project, the committee and 11:36 all landed in one act. The script is not
+> being cut to fit this table: the scene plan answers the real shape with cutting rhythm (ACT_4 gets
+> the fastest mean cut in the film at 3.4 s, ACT_2 the slowest at 4.2 s). Designed → projected:
+> HOOK 0:22 → **0:23** · OP 0:32 → **0:35** · ACT_1 4:51 → **4:10** · ACT_2 5:45 → **3:19** ·
+> ACT_3 6:00 → **5:26** · ACT_4 6:15 → **8:09** · ACT_5 5:15 → **5:43** · ENDING 0:53 → **1:18**.
+> Film **29:24–29:59**, inside the band.
+
+| HOOK | 0:00–0:23 | — | An inspection sheet, a defect, and the number that was written in the box. §8 |
+| OP | 0:23–1:00 | — | `BrandOpening` 3.5 s over continuing footage, then the thesis and the promise |
+| ACT_1 | 1:02–5:12 | **THE SHEATH** | 1962–1967. A valley full of houses, railway lines and factories; the only cable-stayed viaduct on the whole network; four concrete ties per pier, 352 strands inside each, and a shell of precast concrete built around the steel **to preserve it from corrosion** (MO-01→MO-22) |
+| ACT_2 | 5:14–8:32 | **ONE OF THREE** | 1981–1996. Aspi asks Morandi for a report; work begins. Then, at pier 11, checks made only to price the job find severed and heavily oxidised strands inside. The fix is to run new cables **down the outside**, where they can be reached. It is done at pier 11 and nowhere else (MO-30→MO-38) |
+| ACT_3 | 8:34–14:00 | **THE NUMBER IN THE BOX** | 1997–2017. The scoring system and the company's own rule that a seventy means closing the road; the forties, the forty-three, the fifty; the observations box that empties in March 2013 and the previous years' text deleted; twenty-five years at zero on the company's own graph; and one-point-three million a year becoming twenty-three thousand (MO-39→MO-61) |
+| ACT_4 | 14:02–22:11 | **THE THING NOBODY WROTE** | 2003–14 August 2018. A safety assessment owed by March 2013; reported as done in June 2017; never made. A project called *retrofitting*, whose own stays were exempted from verification, presented to the committee by the men who wrote it, approved on 1 February 2018 — and then **11:36** (MO-62→MO-89, MO-94→MO-99, MO-24→MO-28) |
+| ACT_5 | 22:13–27:57 | **WHAT WAS DECIDED** | Two findings that disagree; a trial that opened in July 2022; a judgment on 16 July 2026; thirty-two convicted at first instance and twenty-five acquitted or time-barred; the foresight circumstance struck out; a defendant dead before judgment; ninety days for the reasons (MO-100→MO-133) |
+| ENDING | 27:58–29:16 | — | The barrier, the census that is not finished, the second-person turn, one specific ask |
 
 **The turn** is at the end of ACT_4. For seventeen minutes the viewer has been assembling a chain of
 documents and expects the last document — the one that says whether the bridge is safe — to arrive.
