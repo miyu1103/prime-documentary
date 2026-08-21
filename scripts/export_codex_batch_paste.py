@@ -170,9 +170,27 @@ def main() -> int:
             w, h = Image.open(p).size
             if abs(w / h - 16 / 9) / (16 / 9) > 0.02:
                 bad.append(r["id"])
-        redo = set(bad)
-        only = missing + bad
-        print(f"[paste] outstanding: {len(missing)} never delivered, {len(bad)} wrong aspect ratio")
+        # A plate can also be outstanding because a REVIEWER rejected its content -- wrong
+        # subject, wrong moment, a safeguard the prompt asked for and the image does not have.
+        # Those never show up in a dimension check, and re-ordering them by hand is how one gets
+        # dropped. Read runs/qc/<slug>_plate_verdicts.v001.json when it exists.
+        rejected = []
+        vpath = Path(__file__).resolve().parents[1] / "runs" / "qc" / f"{slug}_plate_verdicts.v001.json"
+        if vpath.exists():
+            try:
+                v = json.loads(vpath.read_text(encoding="utf-8"))
+                rejected = [Path(n).stem.upper() for n, rec in (v.get("plates") or {}).items()
+                            if isinstance(rec, dict) and rec.get("verdict") == "reject"]
+            except Exception as e:  # noqa: BLE001 - a malformed verdict file must not hide the rest
+                print(f"[paste] WARNING could not read {vpath.name}: {e}")
+        redo = set(bad) | set(rejected)
+        seen, only = set(), []
+        for i in missing + bad + rejected:
+            if i not in seen:
+                seen.add(i)
+                only.append(i)
+        print(f"[paste] outstanding: {len(missing)} never delivered, {len(bad)} wrong aspect ratio, "
+              f"{len(rejected)} rejected at review")
     elif a.only:
         only = [x.strip().upper() for x in a.only.split(",") if x.strip()]
 
