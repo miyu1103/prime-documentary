@@ -95,6 +95,14 @@
       "revision": "v001",
       "produced_at": "2026-08-21",
       "note": "86 archive queries, EVERY ONE PROBED against the shelf with measure_shelf_for_episode.py before it was written. Without this entry the staging queue falls back to one generic list for every episode, which is the recorded cause of a British Post Office film carrying the wrong footage. Fourteen plausible terms measured ZERO and were excluded (narrow, shutter, storefront, turnstile, handrail...); bare 'station' was excluded because 77 of its 99 rows are the International Space Station, and bare 'conference' because all 5 of its rows are NASA."
+    },
+    {
+      "kind": "plate_review",
+      "path": "runs/qc/itaewon_plate_verdicts.v001.json (gitignored)",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_plate_verdicts.py --slug itaewon -> exit 0: 114 in the set, every one carrying a resolved per-plate verdict whose sha256 matches the file on disk, 0 unresolved",
+      "note": "All 120 delivered plates were VIEWED on ten labelled contact sheets (scripts/build_plate_contact_sheet.py) plus two at full 3840x2160. All four blocking bars CLEAN across all 120: no body, no identifiable face, no legible glyph -- the eight document plates I097-I104 are genuinely blank -- and no Japanese, Chinese or Western signage. I119, the memorial plate, carries flowers and BLANK cards, no portraits. SIX REJECTED for subject, not for a bar: I005, I006, I025, I026, I027, I028. The pattern is that orders naming a SCENE TYPE came back right and orders naming a SPECIFIC OBJECT came back as another generic alley; section B of the order is the entire Hamilton Hotel terrace group and none of its four plates contains a terrace, which leaves a load-bearing ACT_1 beat without a picture. The six are retired to remotion/public/itaewon/img_rejected_v001/, not deleted, and are out of the pool the builder draws from -- which is the exact EP64 memphis failure and check_episode_inputs caught it."
     }
   ],
   "approvals": [],
@@ -128,7 +136,8 @@
   ],
   "blockers": [
     "FOOTAGE SUPPLY IS SHORT, MEASURED. stage_episode_footage --slug itaewon --dry-run returns 307 candidates; mechanical filters remove 134 (28 junk words, 35 place/period mismatch, 71 wrong shape, 0 blocklist and 0 of the 63 forbidden_subjects -- the queries never asked for banned material) leaving 173 presented for a content verdict. episode_spec requires 265 DISTINCT video assets over 348 video cuts. 173 < 265, and a human pass will reject some of those 173 (EP71 measured a 70-clip sample at 50 percent off-register). The lever is --per-query, currently at its default, plus more probed queries; raising the spec's number is NOT the fix. Nothing is staged yet, by design: prestage judges candidates while they are still on the shelf, so a reject costs a line in a json instead of a copy. NEXT: read the 59 contact sheets in runs/qc/prestage_frames/itaewon, then prestage_footage_review.py --decide --stage.",
-    "NO NARRATION MASTER AND NO IMAGES. Estimated $9.67 for the master from the v006 dry run.",
+    "SIX PLATES MUST BE RE-ORDERED: I005, I006, I025, I026, I027, I028. Name the object in the prompt BODY and state the camera position; do not leave it to the style block. Thumbnail T01 needs the same treatment -- it came back looking downhill when the alley rises. 114 of 120 are usable as delivered.",
+    "NO NARRATION MASTER. Estimated $9.67 from the v006 dry run. Nothing blocks it.",
     "AB-11 -- WHETHER EITHER SUSPENDED APPEAL HAS RESTARTED IS NOT ESTABLISHED. The commission's June 2026 deliberation date passed and it extended itself to December 2027. A resumed hearing rewrites the last act. Re-check on the day of publish.",
     "NO IMAGES EXIST. I001-I120 are ordered but not generated. Images are Codex's lane; local SDXL is not started for a long-form episode except to fix a Codex plate.",
     "NO NARRATION MASTER. Deliberately not generated until the packaging check clears, because a master is thrown away with any script change. Estimated $9.71 from the v005 dry run.",
