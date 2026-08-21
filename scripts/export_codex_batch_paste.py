@@ -88,8 +88,9 @@ HEADER = """{eptag} — 画像発注 バッチ {n}/{total}（{count}枚）
 
 **アスペクト比は全枚 16:9（横1.778）で固定してください。**
 シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
-誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
-2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
 
 ──────── 全プロンプト共通の指定 ────────
 
@@ -116,6 +117,13 @@ def main() -> int:
     ap.add_argument("--per-batch", type=int, default=8)
     ap.add_argument("--out", help="output dir (default: <order-dir>/<EPTAG>_CODEX_PASTE)")
     ap.add_argument("--dry-run", action="store_true", help="report and write nothing")
+    ap.add_argument("--only", help="comma-separated plate ids -- emit ONLY these, as a re-order")
+    ap.add_argument("--outstanding", action="store_true",
+                    help="compute --only automatically from the delivery dir: every ordered plate "
+                         "that has not arrived, plus every delivered plate whose aspect ratio is "
+                         "not 16:9. This is the file you hand back to the generator")
+    ap.add_argument("--media", default="E:/pd-media/assets/ai",
+                    help="delivery root for --outstanding (H: is gone; the media root moved to E:)")
     a = ap.parse_args()
 
     order = Path(a.order)
@@ -133,7 +141,50 @@ def main() -> int:
         return 1
 
     eptag = order.name.split("_CODEX_BATCH")[0]
-    out_dir = Path(a.out) if a.out else order.parent / f"{eptag}_CODEX_PASTE"
+    slug = eptag.split("_", 1)[1] if "_" in eptag else eptag
+
+    # --- re-order modes ---------------------------------------------------------------------
+    # A batch is never delivered clean in one pass, and hand-typing the leftovers is how an id
+    # gets dropped. --outstanding reads the delivery directory and works out what is still owed:
+    # never-arrived plates, plus delivered plates whose aspect ratio is not 16:9 (measured on
+    # EP75 at 5-12% -- a tendency, not an accident, and invisible until the film letterboxes).
+    only = None
+    redo: set[str] = set()
+    if a.outstanding:
+        try:
+            from PIL import Image
+        except ImportError:
+            print("[paste] FAIL --outstanding needs Pillow to read image dimensions")
+            return 1
+        dd = Path(a.media) / slug
+        if not dd.is_dir():
+            print(f"[paste] FAIL delivery dir not found: {dd}")
+            return 1
+        have = {p.stem.upper(): p for p in dd.glob("*.png")}
+        missing = [r["id"] for r in rows if r["id"] not in have]
+        bad = []
+        for r in rows:
+            p = have.get(r["id"])
+            if p is None:
+                continue
+            w, h = Image.open(p).size
+            if abs(w / h - 16 / 9) / (16 / 9) > 0.02:
+                bad.append(r["id"])
+        redo = set(bad)
+        only = missing + bad
+        print(f"[paste] outstanding: {len(missing)} never delivered, {len(bad)} wrong aspect ratio")
+    elif a.only:
+        only = [x.strip().upper() for x in a.only.split(",") if x.strip()]
+
+    if only is not None:
+        keep = set(only)
+        rows = [r for r in rows if r["id"] in keep]
+        if not rows:
+            print(f"[paste] nothing outstanding -- every ordered plate is delivered at 16:9")
+            return 0
+        out_dir = Path(a.out) if a.out else order.parent / f"{eptag}_CODEX_REDO"
+    else:
+        out_dir = Path(a.out) if a.out else order.parent / f"{eptag}_CODEX_PASTE"
     chunks = [rows[i:i + a.per_batch] for i in range(0, len(rows), a.per_batch)]
 
     print(f"[paste] {order.name}: {len(rows)} plates -> {len(chunks)} batches of "
@@ -156,16 +207,20 @@ def main() -> int:
                              style=style, neg=neg)
         for k, r in enumerate(chunk, 1):
             flags = " ".join(r["flags"])
-            body += (f"\n{k}) {r['id']}.png"
+            tag = "  ★ 作り直し（既存ファイルを上書き）" if r["id"] in redo else ""
+            body += (f"\n{k}) {r['id']}.png{tag}"
                      f"\n   [{r['beat']}]  flags: {flags}"
                      f"\n   {r['prompt']}\n")
-        (out_dir / f"batch_{n:02d}.txt").write_text(body, encoding="utf-8")
+        name = f"redo_{n:02d}.txt" if only is not None else f"batch_{n:02d}.txt"
+        (out_dir / name).write_text(body, encoding="utf-8")
 
     # One combined file as well: the batches are for pasting eight at a time, this is for handing
     # the whole order to somebody in one piece. Same house convention as EP62_greene_CODEX_PASTE_ALL.
-    all_path = out_dir.parent / f"{eptag}_CODEX_PASTE_ALL.txt"
+    stem = "redo" if only is not None else "batch"
+    all_path = out_dir.parent / (f"{eptag}_CODEX_REDO_ALL.txt" if only is not None
+                                 else f"{eptag}_CODEX_PASTE_ALL.txt")
     all_path.write_text(
-        "\n\n".join((out_dir / f"batch_{n:02d}.txt").read_text(encoding="utf-8")
+        "\n\n".join((out_dir / f"{stem}_{n:02d}.txt").read_text(encoding="utf-8")
                     for n in range(1, len(chunks) + 1)),
         encoding="utf-8")
     print(f"[paste] wrote {all_path.name}")
