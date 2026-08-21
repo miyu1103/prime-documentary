@@ -205,6 +205,39 @@ by searching harder.**
 recommendation is (3), with the usable footage reserved for exactly the tight, place-neutral cuts the
 rule above describes.
 
+## 8.6 THE RECOVERY CHANGES §8.5's CONCLUSION — measured at 503 clips, not at the end
+
+§8.5 concluded that the shelf yields 60–75 usable clips against a declared 265, and that i2v on the
+plates was the only honest way to close the gap. **That was true of the shelf as it stood. It is not
+true of the recovered shelf**, and the difference was measured at 503 downloads rather than waited
+out to 1,756.
+
+| stage | count | share |
+|---|---|---|
+| downloaded so far | **503** | — |
+| survives a filename filter (tight registers only; no place, era or barred subject named) | **259** | 51 % |
+| survives **eyes**, on two sheets of twenty read tile by tile | **≈ 12–15 of 20** | ≈ 62 % of the 259 |
+| **usable, from 503** | **≈ 160** | ≈ 32 % of downloads |
+
+**The registers that had one row each now exist.** Sheet 1 alone returned a close-up of a red
+concrete surface, scaffolding on a building exterior, a welder in a factory, rebar being tied on
+site, rusty chains, an industrial steel fabrication plant, and four separate rain-on-glass textures.
+Sheet 7 returned a cargo ship at port, container cranes at a working harbour, a foggy harbour, a
+construction worker on a roof beam in fog, and an industrial coastline under grey cloud.
+
+**Extrapolated to the full 1,756: roughly 560 usable clips.** Against `distinct_video_assets` of 265,
+with 120 motion clips already coming from the plates, the arithmetic is no longer tight — it is
+comfortable, and **the second i2v pass §8.5 called for is not needed.**
+
+**Two filename-filter misses, found by reading and worth fixing before the final pass:** a London
+tile survived because it is named *piccadilly-circus* and not *london*; a cemetery tile survived
+because it is named *eerie-foggy-cemetery*. Add `piccadilly|cemetery|fjord|ocean-view` to the barred
+list. The sheets caught both, which is the point of the sheets.
+
+**What has not changed:** the cutting rule in §8.5 stands. A clip is usable only where the frame does
+not reveal where or when it is. The recovered library is bigger, not less foreign — sheet 7 still
+returned Norwegian fjords and open ocean.
+
 ## 9. WHAT MUST HAPPEN BEFORE A CLIP ENTERS A CUT
 
 1. **`check_cross_episode_reuse.py` runs first.** Three siblings have already drawn on the same
