@@ -116,6 +116,32 @@ scheduling. It is a splice, not a re-render.**
 | footage | **0 staged.** `check_cross_episode_reuse.py` first, then a labelled contact sheet |
 | render | not started, and `preflight_render_gate.py` must be green first |
 
+## 6.5 The preflight was run early, so the remaining work is known rather than discovered
+
+`preflight_render_gate.py --ep PD-2026-076-morandi` — run now, not on render day. Receipt written to
+`04_scenes/preflight_receipt.v001.json`, which is the artefact **19 of 32 episodes never had**.
+
+**Already green, and two of them are real quality signals:**
+
+| check | result |
+|---|---|
+| `script_length` | PASS — ~28.4 min against a 27–33 band |
+| `visual_asset_qc` | PASS — **2.6 % of stills dark against a 40 % allowance, variety 1.00 against a 0.60 floor**. Compare EP70, which was 64.4 % dark |
+| `plate_review` | PASS — 117 signed and sha-bound |
+
+**Red, and all of it is one thing: the assembly inputs do not exist yet.** These four files are the
+whole of the gap between here and a render:
+
+```
+03_script/script.annotated.v001.json
+04_scenes/scene_plan.v001.json      <- the MACHINE one, not the markdown SCENE_PLAN
+04_scenes/remotion_plan.v001.json
+05_visuals/asset_selection.v001.json
+```
+
+`motion_budget`, `assets_exist` and `coverage` are red only because they derive from those. Every
+other red is a WARN that resolves once `film.json` exists.
+
 ## 7. Next, in order
 
 1. Paste `EP76_morandi_CODEX_REDO_ALL.txt` to Codex — seven plates. Upscale to exactly 3840×2160,
