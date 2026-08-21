@@ -151,6 +151,18 @@ them, so they live here rather than in a dated file.
 
 ## Current narrative
 
+**[2026-08-21](handover/2026-08-21-ep76-morandi-plates-and-plan.md)** — **EP76 morandi: 120 plates
+delivered, and the delivery report did not match the disk.** The report said five were withheld and
+nothing staged; **all 120 were staged in render truth**, and **four of the five rejections did not
+survive a look at the file**. One rejection of mine did not either — I called the severed-deck plate
+"an intact viaduct" off a 400 px tile, and at full resolution it is exactly the brief. **A thumbnail
+is not evidence.** Three real rejects are quarantined, four more plates were an error in the ORDER
+(a `P` people flag on prompts asking for no person, which put the real people count at 20 against a
+declared 24), and the regeneration batch is seven. `check_plate_verdicts` PASS at 117/3. Also built:
+FOOTAGE_PLAN (this shelf CAN carry this film — but `italy` returns Venice and Tuscany, and every
+other obvious term is a substring trap), SCENE_PLAN, thumb_prompts, fact_recheck and manifest.
+**The ending expires ~14 October 2026**, when the court's reasons are due.
+
 **[2026-08-21](handover/2026-08-21-ep76-morandi-design.md)** — **EP76 morandi: spec, ledger, bible
 and script, all four written, and the script sized from a measurement rather than a model.** The two
 load-bearing documents were **read as documents**: the MIT Commissione Ispettiva report of

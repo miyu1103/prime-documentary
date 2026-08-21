@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-076-morandi",
+  "topic_id": "TOP-20260821-076",
+  "slug": "morandi",
+  "title_working": "Structural Spending On The Genoa Motorway Viaduct Fell To 23,000 Euros A Year",
+  "state": "script_verified",
+  "risk_class": "R3",
+  "production_tier": "B",
+  "autonomy_level": 3,
+  "target_language": "en",
+  "target_duration_minutes": 30,
+  "active_revisions": {
+    "episode_spec": "v001",
+    "facts_ledger": "v001",
+    "film_bible": "v001",
+    "script": "v001",
+    "scene_plan": "v001",
+    "footage_plan": "v001",
+    "image_order": "v002",
+    "thumb_prompts": "v001",
+    "fact_recheck": "v001"
+  },
+  "artifacts": [
+    {
+      "kind": "episode_spec",
+      "path": "episodes/PD-2026-076-morandi/episode_spec.v001.json",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_episode_spec.py --slug morandi -> exit 0"
+    },
+    {
+      "kind": "facts_ledger",
+      "path": "episodes/_planning/EP76_morandi_FACTS_LEDGER.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "note": "171 rows. Two primary documents read AS DOCUMENTS, both scanned image PDFs with zero extractable text, read by rendering their pages: the MIT Commissione Ispettiva relazione of 14 September 2018 (pages 1-8, 21-31, 47-49, 53-54, 59-60, 74-88 of 225) and the Tribunale di Genova dispositivo of 16 July 2026 (10 pages, in full). The court experts' 500-page report was NOT read and every row from it is graded SECONDARY and barred from carrying a beat. MO-142..MO-147 were added after check_script_citations found a line citing a source id instead of a row.",
+      "validated": "py -3.11 scripts/check_script_citations.py --slug morandi -> exit 0: 218 narration lines, 142 distinct ids, all resolving, 0 UNREAD, 0 superseded"
+    },
+    {
+      "kind": "film_bible",
+      "path": "episodes/_planning/EP76_morandi_FILM_BIBLE.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "note": "14 sections. Its ARC table was CORRECTED from the scene plan's measurement of the delivered script rather than left as the pre-script projection: ACT_2 came in 2:26 short and ACT_4 1:54 long. Its beat map was corrected too -- ACT_4 held 18 beats against a declared [13,17], found by counting rather than by reading the headings, and F46 is merged into F45 and RETIRED rather than renumbered because the script cites the later ids."
+    },
+    {
+      "kind": "script",
+      "path": "episodes/_planning/EP76_morandi_script.en.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_script_standard.py --slug morandi --wpm 184.0 -> 12/12; check_script_citations -> exit 0; check_script_length -> PASS. gen_narration_case --dry-run: 329 chunks / 5,154 words, inside script_words [4900, 5400]; projected film 29:24-29:59 at the MEASURED 184.0 raw wpm, inside runtime_seconds [1740, 1920]",
+      "note": "Sized from a measurement rather than a model: --measure-section ACT_1 ffprobed 211.906 s over 650 words = 184.0 raw wpm, run BEFORE the script was written to length."
+    },
+    {
+      "kind": "scene_plan",
+      "path": "episodes/_planning/EP76_morandi_SCENE_PLAN.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "note": "PROJECTED, and says so. 468 cuts at a 3.75 s mean; 119 plate cuts against a 150 ceiling; 349 video-and-motion cuts against a 318 floor; 265 distinct at 1.20x reuse. Superseded by a v002 written from 06_audio/narration_index.v001.json the moment the master exists."
+    },
+    {
+      "kind": "footage_plan",
+      "path": "episodes/_planning/EP76_morandi_FOOTAGE_PLAN.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "note": "34 queries, 3,067 rows measured against the archive BEFORE the query set was written, and registered in config/episode_footage_queries.v001.json. Unlike EP75 this shelf can carry the film's road, port and paperwork registers; it cannot carry its concrete texture, which is what the plates are for. Eight terms excluded as measured substring traps, and `italy` excluded by subject because it returns Venice and Tuscany."
+    },
+    {
+      "kind": "image_order",
+      "path": "episodes/_planning/EP76_morandi_CODEX_BATCH_A.v002.md",
+      "revision": "v002",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_image_order_neg.py --file <path> -> exit 0; check_prompt_diversity -> PASS (0 dup-pairs, 0 generic)",
+      "note": "v001 ordered 120 plates V001-V120 and all 120 were delivered at exactly 3840x2160. v002 reorders SEVEN: three rejected on the full frame (V008 aggregate instead of the stay's cables, V020 modern hi-vis in a 1965 scene, V024 a steel truss instead of a concrete cable-stayed viaduct) and four whose ORDER was wrong (V078, V104, V112, V114 carried the P people flag on prompts asking for no person, which put the real people count at 20 against a declared 24)."
+    },
+    {
+      "kind": "plate_verdicts",
+      "path": "runs/qc/morandi_plate_verdicts.v001.json",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_plate_verdicts.py --slug morandi -> PASS, 117 accept / 3 reject, every verdict sha-bound to the file on disk",
+      "note": "NOT TRACKED IN GIT (runs/ is ignored). Read from pixels: six labelled contact sheets over all 120 tiles, then a suspect sheet of the eight either party doubted, then full-resolution crops of the two a tile could not settle. That third step overturned two verdicts, one of them mine (V106)."
+    },
+    {
+      "kind": "thumb_prompts",
+      "path": "episodes/_planning/EP76_morandi_thumb_prompts.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_packaging_claims.py --slug morandi --title <A> --thumb-text '23,000 EUROS A YEAR' -> [PASS] claims=4 unsupported=0; check_image_order_neg -> exit 0",
+      "note": "Three titles, all PASS with zero unsupported claims; six thumbnail concepts T01-T06, three to be built. The title/thumbnail choice is an owner gate (.claude/rules/16), not an agent decision."
+    },
+    {
+      "kind": "fact_recheck",
+      "path": "episodes/PD-2026-076-morandi/01_research/fact_recheck.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "note": "Four items before the render, six for publish day, and ONE WITH A DATE ON IT: the court gave itself ninety days from 16 July 2026 to file its reasons, so the film's line 'we will not know it for weeks' expires on or about 14 October 2026."
+    }
+  ],
+  "approvals": [],
+  "costs": {
+    "estimated": { "amount": 12, "currency": "USD" },
+    "actual": { "amount": 1.3, "currency": "USD" },
+    "soft_limit": { "amount": 100, "currency": "USD" },
+    "hard_limit": { "amount": 200, "currency": "USD" },
+    "note": "Actual is the ElevenLabs --measure-section ACT_1 run: 46 chunks, 650 words, 211.906 s of speech, 184.0 raw wpm. The full narration master is estimated at $8.86 from the v001 dry run."
+  },
+  "warnings": [
+    "NOBODY FORESAW IT, AND THE COURT SAID SO. On 16 July 2026 the Tribunale di Genova EXCLUDED the aggravating circumstance of article 61 no. 3 -- acting while foreseeing the event -- for every single defendant, and ACQUITTED all of them of the intentional offences under articles 432 and 437 'perche il fatto non sussiste'. The convictions are for negligence. No line, card, caption, title, thumbnail or description may say or imply that anyone knew.",
+    "THE JUDGMENT IS NOT FINAL AND ITS REASONS ARE NOT WRITTEN. 32 convicted at first instance, 25 acquitted or time-barred, an appeal announced, and Italy has three instances. Every named convicted person carries 'convicted at first instance' and 'not final' in the same breath; every named acquitted person carries the acquittal. Roberto Ferrazza was ACQUITTED.",
+    "THE COLLAPSE IS NEVER DEPICTED. No falling deck, no falling vehicle, no car at a broken edge, no debris field, no rescue, no casualty, no memorial with a face, in any frame including the thumbnail. The event is the gap afterwards, the scale of it, and a road that stops.",
+    "TWO AUTHORITATIVE FINDINGS DISAGREE ON THE CAUSE AND THE FILM RESOLVES NEITHER. The MIT commission (September 2018) held it more likely that the first cause was an edge beam or a box-girder deck rather than a stay, and called its own account 'plausible but not definitive working hypotheses'. The court's experts (December 2020) identified corrosion in the pier 9 south stay. Both are given with their date and author.",
+    "MORANDI DID NOT PREDICT THIS, AS FAR AS THE RECORD READ HERE GOES. Aspi commissioned a report from him in 1981 and maintenance followed. The contents of that report were NOT read. 'The designer warned about corrosion' is the sentence every retelling reaches for and it is barred.",
+    "HOLIDAY ITALY IS THE WRONG COUNTRY. Tuscany, cypress avenues, vineyards, Amalfi, Venice, gondolas, the Colosseum and Roman ruins are the same class of error as a US route shield in a Genoa film -- and the archive term `italy` returns exactly those. Genoa is a working Mediterranean port in a narrow valley. Italian signage in frame is present and UNREADABLE, never absent.",
+    "FACES ARE PERMITTED AND WANTED (owner decision 2026-08-21). The NEG blocks must NOT contain human face, facial features, eye contact or headshot. They contain identifiable person, recognisable person and likeness of a real individual. Ten plates stay in a carve-out with no face resolved at all, because their roles map to real identifiable individuals: the inspector, the officer who ran the procedure, the verifier, the designer and the committee."
+  ],
+  "blockers": [
+    "SEVEN PLATES OUTSTANDING. V008, V020, V024, V078, V104, V112, V114 are ordered in v002 and not yet generated. 117 of 120 are staged and verdict-bound; three are quarantined to remotion/public/morandi/_rejected_v001/. Until the seven return, people_plates is 20 against a declared 24 and mandatory_stills stays empty.",
+    "NO NARRATION MASTER. Estimated $8.86 from the v001 dry run. The scene plan is PROJECTED until it exists.",
+    "NO FOOTAGE STAGED. 0 clips. check_cross_episode_reuse.py runs BEFORE staging, then a person opens a labelled contact sheet -- footage_review_required is true and the shelf's labels are known to be wrong.",
+    "THE ENDING EXPIRES ~14 OCTOBER 2026. The court gave itself ninety days from 16 July 2026 to file its reasons. The film says they are not yet written. Re-check on the day the publish date is set; if they have been filed, or an appeal has been formally lodged, ACT_5's last lines and the description are rewritten before scheduling. It is a splice, not a re-render.",
+    "PREFLIGHT IS NOT ADVISORY. preflight_render_gate.py --ep PD-2026-076-morandi must be GREEN before any render. It has failed on 25 of 32 episodes and been overridden on 10; on 2026-08-20 EP70 and EP71 were each one command from a three-hour render of a captionless slideshow."
+  ],
+  "created_at": "2026-08-21T00:00:00+09:00",
+  "updated_at": "2026-08-21T00:00:00+09:00"
+}
