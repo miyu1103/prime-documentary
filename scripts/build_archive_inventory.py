@@ -37,8 +37,8 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from shelf import shelf_rows  # noqa: E402  the one definition of "on the shelf"
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
-QC_DIR = r"H:\pd-media\assets\archive\_qc"
+LEDGER_DIR = r"E:\pd-archive\_ledger"
+QC_DIR = r"E:\pd-archive\_qc"
 VERDICTS = os.path.join(QC_DIR, "archive_verdicts.jsonl")
 ABSENT = os.path.join(LEDGER_DIR, "absent_index.json")
 

@@ -2,9 +2,10 @@
 
 **Episode `PD-2026-071-oroville` · slug `oroville` · 2026-08-12**
 
-**Contract:** `episodes/PD-2026-071-oroville/episode_spec.v001.json` —
-`mandatory_stills` **O001.png … O118.png (118 ids)**, `people_plates` **20 ids**, `people_plates_min`
-**20**, **131** `forbidden_subjects`, **27** `forbidden_claims`, `era_setting` **USA 2005–2023, centre
+**Contract:** `episodes/PD-2026-071-oroville/episode_spec.v002.json` (v002 supersedes v001,
+2026-08-12; the only change is the people-plate count, lowered by one) —
+`mandatory_stills` **O001.png … O118.png (118 ids)**, `people_plates` **19 ids**, `people_plates_min`
+**19**, **131** `forbidden_subjects`, **27** `forbidden_claims`, `era_setting` **USA 2005–2023, centre
 of gravity 2017**, `target_cut_sec` **3.8**.
 **Design:** `EP71_oroville_FILM_BIBLE.v001.md` · **Scenes:** `EP71_oroville_SCENE_PLAN.v001.md` ·
 **Facts:** `EP71_oroville_FACTS_LEDGER.v001.md` · **Script:** `EP71_oroville_script.en.v001.md` ·

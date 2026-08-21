@@ -27,7 +27,10 @@ import json
 import os
 from typing import Iterator
 
-LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
+# 2026-08-20: the T7 holding H: failed its USB interface. Storage moved to E > D > F and the
+# ledger now lives on the roomiest surviving drive. Pinning it to a single tier is what let
+# one dead drive take the whole shelf's memory with it.
+LEDGER_DIR = r"E:\pd-archive\_ledger"
 ABSENT = os.path.join(LEDGER_DIR, "absent_index.json")
 
 # Records of items we do NOT have, or never took. A purge/quarantine row carries the same

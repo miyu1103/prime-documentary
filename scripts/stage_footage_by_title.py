@@ -28,7 +28,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-LEDGER_DIR = Path(r"H:\pd-media\assets\archive\_ledger")
+LEDGER_DIR = Path(r"E:\pd-archive\_ledger")
 VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv"}
 OK_LICENSE = {"free_commercial", "pd", "cc0"}
 # titles that read as stock-cheap or plainly wrong for a documentary, whatever they matched

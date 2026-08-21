@@ -158,6 +158,38 @@ FACTORY_MANIFESTS = [
     r"H:\pd-media\assets\stock\video\STOCK_MANIFEST.json",
     r"H:\pd-media\assets\stock\audio\STOCK_MANIFEST.json",
 ]
+_MEDIA_ASSETS: str | None = None
+
+
+def _media_assets_root() -> str:
+    """<media>/assets, resolved through the one config every writer already uses."""
+    global _MEDIA_ASSETS
+    if _MEDIA_ASSETS is None:
+        try:
+            with open(os.path.join(REPO, "config", "storage.local.json"),
+                      encoding="utf-8") as f:
+                _MEDIA_ASSETS = os.path.join(
+                    json.load(f)["roots"]["media"]["path"], "assets")
+        except Exception:  # noqa: BLE001
+            _MEDIA_ASSETS = ""
+    return _MEDIA_ASSETS
+
+
+def _asset_present(a: dict) -> bool:
+    """True only when this manifest entry\x27s BYTES are on this machine.
+
+    2026-08-20: the drive holding <media>/assets/factory failed and took all 88,850
+    registered files with it, while the manifest -- which lives in the git repo -- survived
+    intact. Indexing an entry whose file is gone tells this lane it already owns the entire
+    lost library, and every attempt to fetch it back is then refused as `dup_existing_id`.
+    """
+    p = str(a.get("path", "") or "")
+    if not p:
+        return False
+    if os.path.isabs(p):
+        return os.path.exists(p)
+    root = _media_assets_root()
+    return bool(root) and os.path.exists(os.path.join(root, p))
 
 # ------------------------------------------------------------------ themes ----
 # Video/image themes reuse the sibling's curated query tables (base.THEMES).
@@ -186,6 +218,13 @@ def rate_limited(source: str) -> bool:
 
 
 VIDEO_THEMES = [
+    # 2026-08-20: episode-scoped registers, added because the general themes could not
+    # supply EP70's. Their queries are the SUBTYPE NAMES of the lost factory shelf, taken
+    # from assets/asset_manifest.v001.json -- the vocabulary that actually built a usable
+    # shelf, which outlived the drive that held the files. See the comment on the themes
+    # themselves in ingest_archive_sources.py.
+    'ep70_american_suburb',
+    'ep70_federal_court',
     'hands_and_transactions',
     'bank_and_branch',
     'household_loss',
@@ -372,6 +411,7 @@ def build_existing_index() -> dict:
     ids: dict[str, set[str]] = {}
     shas: set[str] = set()
     n_assets = 0
+    n_absent = 0
     for mp in FACTORY_MANIFESTS:
         if not os.path.exists(mp):
             continue
@@ -391,6 +431,9 @@ def build_existing_index() -> dict:
             if not isinstance(a, dict):
                 continue
             n_assets += 1
+            if not _asset_present(a):
+                n_absent += 1
+                continue
             src_id = str(a.get("_srcId", "") or a.get("srcId", "") or "")
             m = re.match(r"(pexels|pixabay)_([iva])_(\d+)", src_id)
             if m:
@@ -410,6 +453,9 @@ def build_existing_index() -> dict:
         json.dump(idx, f)
     os.replace(tmp, EXISTING_INDEX)
     log(f"existing-index rebuilt: {idx['counts']}")
+    if n_absent:
+        log(f"existing-index: {n_absent} of {n_assets} manifest entrie(s) have NO FILE on "
+            f"disk and were NOT indexed -- they can be fetched again")
     return idx
 
 

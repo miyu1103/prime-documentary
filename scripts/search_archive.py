@@ -23,13 +23,13 @@ import sys
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
+LEDGER_DIR = r"E:\pd-archive\_ledger"
 VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv", ".avi", ".mpeg", ".mpg"}
 IMAGE_EXT = {".jpg", ".jpeg", ".png", ".gif", ".tif", ".tiff", ".webp"}
 AUDIO_EXT = {".mp3", ".wav", ".flac", ".ogg", ".m4a", ".aac"}
 
 
-QC_DIR = r"H:\pd-media\assets\archive\_qc"
+QC_DIR = r"E:\pd-archive\_qc"
 VERDICT_FILE = os.path.join(QC_DIR, "archive_verdicts.jsonl")
 
 # Titles that pass the relevance gate but are a person talking to camera, not a picture.

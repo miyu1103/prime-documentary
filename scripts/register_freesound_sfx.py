@@ -46,7 +46,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
-LEDGER = Path(r"H:\pd-media\assets\archive\_ledger\freesound.jsonl")
+LEDGER = Path(r"E:\pd-archive\_ledger\freesound.jsonl")
 REGISTRY = REPO / "episodes" / "_planning" / "SOUND_LIBRARY_RIGHTS.v001.json"
 PENDING = REPO / "episodes" / "_planning" / "SOUND_LIBRARY_RIGHTS.freesound_pending.v001.json"
 LIBRARY_SFX = Path(r"H:\pd-media\library\sfx")

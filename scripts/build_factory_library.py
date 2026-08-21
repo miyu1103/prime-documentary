@@ -179,7 +179,18 @@ def main() -> int:
         man = json.load(open(man_path, encoding="utf-8"))
     else:
         man = {"schema": "asset-manifest/v1", "assets": []}
-    seen = {x.get("_srcId") for x in man["assets"]}
+    # THE MANIFEST IS NOT PROOF OF POSSESSION. 2026-08-20: the drive holding
+    # <media>/assets/factory failed and took all 88,850 registered files with it, while the
+    # manifest -- which lives in the git repo -- survived intact. Skipping by id alone
+    # therefore reported the ENTIRE LOST LIBRARY as "already owned", so a re-run restored
+    # none of it and printed a confident +0. An id counts as seen only when its bytes are
+    # actually on this machine.
+    seen = {x.get("_srcId") for x in man["assets"]
+            if x.get("path") and os.path.exists(os.path.join(media, "assets", x["path"]))}
+    _lost = len(man["assets"]) - len(seen)
+    if _lost > 0:
+        print(f"  [restock] {_lost} manifest entrie(s) have no file on disk -- their source "
+              f"ids are NOT treated as owned, so they can be fetched again")
     counters = {}
     for x in man["assets"]:
         c = x.get("type")
