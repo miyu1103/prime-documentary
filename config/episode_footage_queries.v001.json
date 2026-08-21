@@ -2672,10 +2672,8 @@
     },
     "itaewon": {
       "note": "Itaewon, Yongsan-gu, Seoul, 29 October 2022: a sloping alley beside the Hamilton Hotel, about 50 m long, 5 m wide at the top and 3.2 m at the bottom, fills from both ends on the first Halloween after the mask mandate lifted. Eleven 112 calls between 18:34 and 22:11; officers sent to four. 159 dead. BANNED SUBJECT MATTER (binding, episode_spec.forbidden_subjects, 63 terms): this film NEVER depicts the crush or anything implying one -- no body, no fallen person, no CPR, no stretcher, no blood, no covered figure -- and never a crowd at crush density. The alley appears in three states only: empty, ordinarily busy, after. No memorial, no candles, no flowers, no funeral. No gavel: Korean courts do not use one. WRONG COUNTRY IS THE OTHER FAILURE: Tokyo, Shibuya, Shanghai, Hong Kong, Bangkok, Times Square, London and generic European streets are all blocked, as are kana and Chinese shopfronts. Korea, or unreadable. Festival, parade, carnival, concert and stadium crowds are blocked: they read as fun.",
-      "_why": "Every term below was PROBED against the shelf with measure_shelf_for_episode.py on 2026-08-21 before it was written, for the reason this file's surfside entry records: a list written as plausible descriptive phrases returned zero rows on 37 of 38 queries. The shelf holds 14,663 video rows, 13,116 with a clear commercial licence. MEASURED SINGLE-TERM SUPPLY: city 858, traffic 483, aerial 468, walking 361, street 338, people 320, night 312, lights 302, building 301, car 295, screen 266, office 206, empty 125, rain 124, hand 108, desk 105, library 100, camera 97, room 91, train 89, shop 88, fence 79, phone 79, book 70, tunnel 62, reflection 57, asia 55, corridor 50, police 49, clock 40, wall 37, neon 32, korea 30, asphalt 29, silhouette 29, security 28, map 21, government 20, monitor 19, smartphone 19, concrete 18, stairs 18, crowd 17, alley 10, steam 10, patrol 10, barrier 9, subway 9, wires 8, puddle 7, documents 7, korean 5, underground 5. TERMS DELIBERATELY EXCLUDED BECAUSE THEY MEASURED ZERO: narrow, streetlight, shutter, storefront, handrail, railing, commuters, turnstile, cone, whistle, conditioner, vent, drain, manhole. Do not add them back on the strength of how right they sound. ONE TRAP FOUND AND AVOIDED: bare 'station' returns 99 rows of which 77 are NASA -- the INTERNATIONAL SPACE STATION, not a subway. 'conference' returns 5 and all 5 are NASA. Both are excluded; 'train station' is used instead because it cannot match a space station. A HIT COUNT IS NOT A SUPPLY COUNT. EP71 measured a 70-clip sample at 50 percent off-register. Every clip staged from these queries goes to a labelled contact sheet and a person opens it before it enters a cut -- episode_spec.footage_review_required is true.",
+      "_why": "Every term below was PROBED against the shelf with measure_shelf_for_episode.py on 2026-08-21 before it was written, for the reason this file's surfside entry records: a list written as plausible descriptive phrases returned zero rows on 37 of 38 queries. The shelf holds 14,663 video rows, 13,116 with a clear commercial licence. MEASURED SINGLE-TERM SUPPLY: city 858, traffic 483, aerial 468, walking 361, street 338, people 320, night 312, lights 302, building 301, car 295, screen 266, office 206, empty 125, rain 124, hand 108, desk 105, library 100, camera 97, room 91, train 89, shop 88, fence 79, phone 79, book 70, tunnel 62, reflection 57, asia 55, corridor 50, police 49, clock 40, wall 37, neon 32, korea 30, asphalt 29, silhouette 29, security 28, map 21, government 20, monitor 19, smartphone 19, concrete 18, stairs 18, crowd 17, alley 10, steam 10, patrol 10, barrier 9, subway 9, wires 8, puddle 7, documents 7, korean 5, underground 5. TERMS DELIBERATELY EXCLUDED BECAUSE THEY MEASURED ZERO: narrow, streetlight, shutter, storefront, handrail, railing, commuters, turnstile, cone, whistle, conditioner, vent, drain, manhole. Do not add them back on the strength of how right they sound. ONE TRAP FOUND AND AVOIDED: bare 'station' returns 99 rows of which 77 are NASA -- the INTERNATIONAL SPACE STATION, not a subway. 'conference' returns 5 and all 5 are NASA. Both are excluded; 'train station' is used instead because it cannot match a space station. A HIT COUNT IS NOT A SUPPLY COUNT. EP71 measured a 70-clip sample at 50 percent off-register. Every clip staged from these queries goes to a labelled contact sheet and a person opens it before it enters a cut -- episode_spec.footage_review_required is true. || REVISED 2026-08-21 AFTER LOOKING AT THE CANDIDATES, not at the counts. The first dry run returned 307 candidates and the prestage contact sheets show the counts were lying in a way no number could reveal. 'alley' -- 10 hits, the film's central object -- returns the BOTANICAL sense: avenues of trees in parks and boulevards (AR-v_123 'alley trees strolling woman walking', AR-v_142 'boulevard park alley trees pedestrian'), plus a GREEN-SCREEN medieval brick corridor (AR-v_169741 'door chroma key green screen') and a CARTOON street (AR-v_172779). 'train station' -- chosen precisely to dodge the International-Space-Station trap in bare 'station' -- returns Eastern European passenger platforms with a smiling, fully identifiable woman across six frames (AR-v_11572, AR-v_11584): wrong country, wrong register, and a real-person-likeness hazard. Both queries are REMOVED. What the same look found on the other side: 'seoul' measures only 15 rows but AR-v_14037 ('subway, seoul, tunnel, travel') is a real Seoul subway tunnel and is exactly the film. Bare 'seoul' was not in the first list and should have been. Added, with seoul night / seoul street / subway seoul / subway tunnel / tunnel subway. THE SHELF CARRIES CONTAMINANTS THAT NO QUERY HERE ASKS FOR BUT NEIGHBOURING WORDS DRAG IN: cartoon 140 rows, animation 67, chroma 52, greenscreen 9, render 23, illustration 4. They are not in forbidden_subjects because they are not SUBJECTS, and the mechanical filters passed all of them. Only the contact sheet caught them. THIS IS THE MEASURED PROOF OF THE STANDING RULE: a hit count is not a supply count, and the shelf's labels are broken (pd-factory-shelf-mislabeled). Nothing in this file may be trusted until a person has looked at the frames it returns.",
       "queries": [
-        "alley",
-        "alley night",
         "korea",
         "korean",
         "asia city",
@@ -2706,7 +2704,6 @@
         "underground",
         "subway",
         "subway train",
-        "train station",
         "metro",
         "people walking",
         "walking street",
@@ -2759,7 +2756,95 @@
         "air conditioner",
         "window night",
         "doorway",
-        "entrance building"
+        "entrance building",
+        "seoul",
+        "seoul night",
+        "seoul street",
+        "subway seoul",
+        "subway tunnel",
+        "tunnel subway"
+      ]
+    },
+    "morandi": {
+      "note": "EP76 Morandi, v001 query set, MEASURED 2026-08-21 before it was written. THE HEADLINE FINDING IS POSITIVE, which is the opposite of EP75 and worth saying plainly: this shelf CAN carry most of this film. The registers this story needs -- an ordinary car on an ordinary elevated road, a working container port, and hands on paper in an office -- are the shelf's strongest holdings. Measured: road traffic 303, car traffic 265, urban traffic 102, highway traffic 117, night road 53, tunnel 68; dock 46, shipping 34, cargo ship 33, shipyard 23, container ship 9; office desk 78, typing 80, writing 66, keyboard 62, notebook 39, hands writing 37, hands typing 28, documents 12, library 111; timelapse 906, fog 154, particle 98, cloudscape 79, dust 52. WHAT THE SHELF DOES NOT HAVE is the film's own texture, and that is what plates V001-V120 were written for: concrete 20, rust 19, warehouse 19, industrial 20, excavator 45 -- and then corrosion 1, rebar 1, girder 1, viaduct 1, scaffolding 1, cracked wall 1, guardrail 1, roadworks 1, hillside 1, shutters 1. There is no weathered prestressed concrete on this shelf and there is no Ligurian street on it either. EXCLUDED BY SUBSTRING TRAP, measured by reading what came back, do not re-add: `port` (554) is mostly transPORTation, PORTugal and PORTal; `rain` (491) is mostly tRAINing, railway and 'money raining' which is itself a forbidden subject; `paper` (914) is mostly newsPAPER and 'beautiful wallPAPER' flags and landscapes, and a legible newspaper is a fabricated_record; `file` (30) is proFILE and 'video file'; `toll` (6) is entirely aTOLL, tropical reef; `beam` (30) is a gymnast's balance beam and sunbeams, with zero structural beams; `stamp` (12) is passport stamps and rubber stamps WITH READABLE TEXT; `hand` (807) and `hands` (723) are people eating pizza and dancing, not paperwork -- use `hands writing` and `hands typing`. EXCLUDED BY SUBJECT, and this is the one that matters most here: `italy` (84) returns VENICE GONDOLAS, TUSCAN CYPRESS AVENUES and the DOLOMITES -- precisely the holiday-Italy register this episode's own era_setting and forbidden_subjects bar. The most obvious search term for an Italian film is the most dangerous term in it. CONDITIONAL, kept but never taken on the count alone: `crane` (43) mixes port and construction cranes with CRANE BIRDS; `railway` (52) is Japan, Switzerland, Disneyland and snow; `corridor` (55) is largely sci-fi and horror 3D tunnels; `city street` (230) shows Mexico City, Bogota and Basel, and a visible foreign street is the same class of error as a US route shield; `cloudscape` (79) is heavy with drone sunsets and golden hour, which this film bars outright; `construction` (140) mixes welders and excavators with birds and cathedrals. footage_review_required is TRUE and the factory shelf's labels are known to be wrong, so nothing here enters a cut before a person opens a labelled contact sheet.",
+      "measured_at": "2026-08-21",
+      "registers": [
+        "the ordinary drive -- a car on an elevated road, traffic at deck level, a tunnel portal, wet asphalt. This is the film's subject ('the thing you do without thinking') and the shelf's strongest holding. Place must not be legible: no US route shield, no right-hand drive, no visibly foreign street furniture",
+        "a working container port -- cranes, docks, a cargo ship, a shipyard. Genoa is a port, and this is the ONE place-register the shelf can actually supply",
+        "hands and paper at a desk -- typing, writing, a notebook, documents, an office desk, a library shelf. Carries the whole of ACT_3 and ACT_4, at a scale where no face resolves",
+        "sky and texture -- fog, haze, cloud, dust, grain, particle, timelapse. Flat and grey only; golden hour and drone sunsets are barred by the film's three light states",
+        "the valley floor under the bridge -- warehouse, industrial, excavator, freight. Thin on this shelf and supplemented by plates"
+      ],
+      "queries": [
+        "road traffic",
+        "car traffic",
+        "urban traffic",
+        "highway traffic",
+        "night road",
+        "asphalt road",
+        "tunnel",
+        "dock",
+        "shipping",
+        "cargo ship",
+        "shipyard",
+        "container ship",
+        "office desk",
+        "typing",
+        "writing",
+        "keyboard",
+        "notebook",
+        "hands writing",
+        "hands typing",
+        "documents",
+        "library",
+        "timelapse",
+        "fog",
+        "haze",
+        "particle",
+        "dust",
+        "grain",
+        "rainy",
+        "puddle",
+        "excavator",
+        "industrial",
+        "warehouse",
+        "stairs",
+        "city aerial"
+      ],
+      "excluded": {
+        "substring_trap": [
+          "port -- 554 rows, mostly transPORTation / PORTugal / PORTal / sPORTs",
+          "rain -- 491 rows, mostly tRAINing / railway / 'money raining' (a forbidden subject)",
+          "paper -- 914 rows, mostly newsPAPER and 'beautiful wallPAPER'; a legible newspaper is a fabricated_record",
+          "file -- 30 rows, proFILE and 'video file'",
+          "toll -- 6 rows, entirely aTOLL",
+          "beam -- 30 rows, balance beam and sunbeam, zero structural beams",
+          "stamp -- 12 rows, passport and rubber stamps carrying READABLE TEXT",
+          "hand / hands -- 807 / 723 rows of people doing unrelated things; use 'hands writing' and 'hands typing'"
+        ],
+        "zero_or_useless": [
+          "corrosion 1, rebar 1, girder 1, viaduct 1, scaffolding 1, cracked wall 1, guardrail 1, roadworks 1",
+          "hillside 1, shutters 1, rooftops 3, balcony 4, coastal city 2, genoa 3 -- the Ligurian register does not exist here",
+          "concrete 20, cement 8, steel 6, welding 6, rust 19 -- present but far too thin to carry the film's texture",
+          "overcast 5 -- the register is real but lives under 'fog' (154) and 'cloudscape' (79)"
+        ],
+        "by_subject": [
+          "italy (84) -- returns Venice gondolas, Tuscan cypress avenues and the Dolomites, which are exactly the holiday-Italy register forbidden_subjects bars. The most obvious term for this episode is its most dangerous",
+          "any golden hour, sunset, blue hour or drone-sunset clip, from any query -- this film has three light states and none is pretty",
+          "city street (230) -- Mexico City, Bogota, Basel; a legible foreign street is the same error class as a US route shield",
+          "railway (52) -- Japan, Switzerland, Disneyland, snow; use only after a contact sheet",
+          "crane (43) -- mixed with crane BIRDS",
+          "corridor (55) -- largely sci-fi and horror 3D tunnels"
+        ]
+      },
+      "carried_by_plates_instead": [
+        "weathered prestressed concrete, spalling, exposed reinforcement, rust staining -- the film's texture",
+        "the interior of a concrete box girder, and anything beneath a deck",
+        "a prestressed concrete stay in section, its strands, its grout and its precast sheath",
+        "any Ligurian street, balcony, shutter or rooftop; Genoa itself",
+        "printed inspection forms, ruled score boxes, blank drawings, index tabs and archive boxes -- every glyph composited in Remotion",
+        "the 1960s construction sequence, and the 1990s works on pier 11",
+        "the gap afterwards, the severed road and the barrier across it"
       ]
     }
   }
