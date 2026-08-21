@@ -232,6 +232,21 @@ def forbidden_hit(forbidden: frozenset[str], words: tuple[str, ...],
     for k in keys:
         if k in forbidden:
             return k
+    # MULTI-WORD TERMS, added 2026-08-21. The three tests above are word-wise, so a forbidden
+    # subject written as a PHRASE -- "hong kong", "concert crowd", "european street", "body bag" --
+    # could never appear in `words` and could never fire. Measured across every episode_spec on
+    # disk: 434 of 1,442 declared forbidden subjects, 30%, contained a space and were therefore
+    # inert, and five episodes (weimer, correa, marmet, greene, memphis) had NO working term at
+    # all. EP74 itaewon found it the only way it can be found -- by opening the candidate frames
+    # and seeing Hong Kong aerials in a film that forbids Hong Kong by name.
+    #
+    # Matched against the token sequence with sentinels, so word boundaries still hold: a spec
+    # that forbids "concert crowd" does not fire on "concerted".
+    if any(" " in t for t in forbidden):
+        joined = " " + " ".join(words) + " "
+        for t in forbidden:
+            if " " in t and f" {t} " in joined:
+                return t
     return ""
 
 
