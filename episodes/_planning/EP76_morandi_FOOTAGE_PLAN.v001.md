@@ -152,6 +152,59 @@ and a third of each is already burned. **Draw the desk register from `typing` (8
 `documents` only for what those cannot cover. ACT_3 and ACT_4 are 13 minutes of paper, so this is the
 register where a repeat would be noticed.
 
+## 8.5 THE CANDIDATES WERE BUILT AND READ, AND THE HIT COUNT DOES NOT SURVIVE IT
+
+§6 warned that "a hit count is not a supply count". That is now **measured** rather than predicted,
+and it is the most important paragraph in this document.
+
+**384 candidates** were selected across all 34 queries — cross-episode-used clips excluded, obvious
+forbidden-subject filenames excluded — and tiled into **20 labelled contact sheets** at
+`runs/qc/morandi_footage_review/`. Nothing was staged. Then they were read.
+
+**`select_factory_assets.py` could not do the selection at all.** It looks for a `factory.jsonl` at
+`H:\pd-media\assets\archive\_ledger` — the dead drive — and returns **zero rows for all 34 queries**.
+The live ledger is `E:\pd-archive\_ledger` and holds per-source files with no `factory.jsonl` among
+them. Selection went through `search_archive.py`, the same instrument this document's counts came
+from. That tool's own warning says theme selection without the ledger falls back to filename
+parsing, measured at 40 % wrong, so an explicit query is the better path and not a workaround.
+
+**What the sheets show, sheet 1 (`road traffic`, 20 tiles):** Kyoto crossings with Japanese signage;
+New York yellow cabs; Mumbai; Vietnam; a Canadian road sign reading Calgary in snow; a grey 3D render
+of a traffic light; a miniature toy car; an architectural render at sunset; four Nordic roads lined
+with pine. **Three or four of twenty are usable for a Ligurian film.**
+
+**Sheet 9 (`office desk` / `typing`, 20 tiles):** two green screens, and otherwise 2020s corporate
+stock — exposed brick lofts, headphones, smartphones, coffee shops, laptops in every frame. **The
+film's paperwork is 1990s–2010s Italian municipal administration**: manila, ring binders, terrazzo,
+laminate, one desk lamp. Perhaps four of twenty survive.
+
+**The rule this produces, and it is a cutting rule, not a search rule:**
+
+> **A clip from this shelf is usable only where the frame does not reveal WHERE or WHEN it is.**
+> Tight on asphalt, a wheel, a barrier, a hand, a keyboard, rain on a surface, cloud. Any wide
+> street, skyline, shopfront or open-plan office is a place-and-era claim, and this film's place and
+> era are specific.
+
+**What that does to the arithmetic.** `episode_spec.distinct_video_assets` is **265**, derived
+correctly by the standard's formula. If the usable fraction is the 15–20 % these two sheets suggest,
+this shelf yields **roughly 60–75 distinct clips**, not 265. **That gap is real and it is not closed
+by searching harder.**
+
+**Three ways it can be closed, and only one of them is honest:**
+
+1. **More commissioned plates** — capped. Stills may occupy at most 32 % of cuts under the
+   video-share floor, and 120 already sit under a ceiling of 157.
+2. **Revise `distinct_video_assets` down** — **barred.** `PD_EPISODE_SPEC_STANDARD.v001` allows a
+   revision only for a value that was *wrong when written*. 265 was derived correctly; the shelf
+   simply cannot supply it. Changing it would be moving the goalposts.
+3. **i2v the plates into motion assets** — the repo's existing lane, and motion assets count toward
+   the video share. 117 accepted plates animated is the difference between 60–75 and a number that
+   clears 265.
+
+**This is an owner decision and it is recorded here rather than absorbed silently.** The
+recommendation is (3), with the usable footage reserved for exactly the tight, place-neutral cuts the
+rule above describes.
+
 ## 9. WHAT MUST HAPPEN BEFORE A CLIP ENTERS A CUT
 
 1. **`check_cross_episode_reuse.py` runs first.** Three siblings have already drawn on the same
