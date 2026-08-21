@@ -11,7 +11,7 @@
   "target_language": "en",
   "target_duration_minutes": 30,
   "active_revisions": {
-    "episode_spec": "v001",
+    "episode_spec": "v002",
     "facts_ledger": "v005",
     "film_bible": "v002",
     "script": "v006",
@@ -24,10 +24,11 @@
   "artifacts": [
     {
       "kind": "episode_spec",
-      "path": "episodes/PD-2026-074-itaewon/episode_spec.v001.json",
-      "revision": "v001",
+      "path": "episodes/PD-2026-074-itaewon/episode_spec.v002.json",
+      "revision": "v002",
       "produced_at": "2026-08-21",
-      "validated": "py -3.11 scripts/check_episode_spec.py --slug itaewon -> exit 0"
+      "validated": "py -3.11 scripts/check_episode_spec.py --slug itaewon -> exit 0",
+      "note": "v002 declares people_plates = I035-I062, section C of the image order. Not a threshold change: people_plates_min stays at 24 and every other value is unchanged. Without the declaration check_episode_inputs fell back to a haarcascade and reported 6 of 114, because every people plate here is deliberately composed so no face is identifiable, which is exactly what a face detector cannot find. EP59 carried the same failure and EP62-65 solved it the same way."
     },
     {
       "kind": "facts_ledger",
@@ -103,6 +104,14 @@
       "produced_at": "2026-08-21",
       "validated": "py -3.11 scripts/check_plate_verdicts.py --slug itaewon -> exit 0: 114 in the set, every one carrying a resolved per-plate verdict whose sha256 matches the file on disk, 0 unresolved",
       "note": "All 120 delivered plates were VIEWED on ten labelled contact sheets (scripts/build_plate_contact_sheet.py) plus two at full 3840x2160. All four blocking bars CLEAN across all 120: no body, no identifiable face, no legible glyph -- the eight document plates I097-I104 are genuinely blank -- and no Japanese, Chinese or Western signage. I119, the memorial plate, carries flowers and BLANK cards, no portraits. SIX REJECTED for subject, not for a bar: I005, I006, I025, I026, I027, I028. The pattern is that orders naming a SCENE TYPE came back right and orders naming a SPECIFIC OBJECT came back as another generic alley; section B of the order is the entire Hamilton Hotel terrace group and none of its four plates contains a terrace, which leaves a load-bearing ACT_1 beat without a picture. The six are retired to remotion/public/itaewon/img_rejected_v001/, not deleted, and are out of the pool the builder draws from -- which is the exact EP64 memphis failure and check_episode_inputs caught it."
+    },
+    {
+      "kind": "image_order_b",
+      "path": "episodes/_planning/EP74_itaewon_CODEX_BATCH_B.v001.md",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "py -3.11 scripts/check_image_order_neg.py --file <path> -> exit 0",
+      "note": "Seven re-orders: the six rejected plates plus the thumbnail background. Object and camera position are the first two clauses of the prompt body, and each carries a one-line MUST CONTAIN."
     }
   ],
   "approvals": [],
