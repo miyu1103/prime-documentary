@@ -15,11 +15,12 @@
     "facts_ledger": "v001",
     "film_bible": "v001",
     "script": "v001",
-    "scene_plan": "v001",
+    "scene_plan": "v002",
     "footage_plan": "v001",
     "image_order": "v002",
     "thumb_prompts": "v001",
-    "fact_recheck": "v001"
+    "fact_recheck": "v001",
+    "narration": "v001"
   },
   "artifacts": [
     {
@@ -54,10 +55,10 @@
     },
     {
       "kind": "scene_plan",
-      "path": "episodes/_planning/EP76_morandi_SCENE_PLAN.v001.md",
-      "revision": "v001",
+      "path": "episodes/_planning/EP76_morandi_SCENE_PLAN.v002.md",
+      "revision": "v002",
       "produced_at": "2026-08-21",
-      "note": "PROJECTED, and says so. 468 cuts at a 3.75 s mean; 119 plate cuts against a 150 ceiling; 349 video-and-motion cuts against a 318 floor; 265 distinct at 1.20x reuse. Superseded by a v002 written from 06_audio/narration_index.v001.json the moment the master exists."
+      "note": "MEASURED from 06_audio/narration_index.v001.json, superseding the projected v001 entirely. 492 cuts at a 3.74 s mean; 119 plate cuts under a 157 ceiling; 373 video-and-motion cuts over a 335 floor; 265 distinct at 1.26x reuse. v001 stays on disk because its projection was wrong in a way worth keeping."
     },
     {
       "kind": "footage_plan",
@@ -96,15 +97,35 @@
       "revision": "v001",
       "produced_at": "2026-08-21",
       "note": "Four items before the render, six for publish day, and ONE WITH A DATE ON IT: the court gave itself ninety days from 16 July 2026 to file its reasons, so the film's line 'we will not know it for weeks' expires on or about 14 October 2026."
+    },
+    {
+      "kind": "narration_master",
+      "path": "E:/pd-media/episodes/PD-2026-076-morandi/06_voice/master/vc_master_v001.mp3",
+      "revision": "v001",
+      "produced_at": "2026-08-21",
+      "validated": "ffprobe duration=1842.130292 bit_rate=192006; narration_index is_stub=false, provider=elevenlabs, voice=nPczCjzI2devNBz1zQrb, model=eleven_multilingual_v2",
+      "note": "329 chunks, 0 failed. speech 1733.2 s, master 1842.130 s, film 1851.1 s (30:51) with ENDCARD 9.0 -- inside runtime_seconds [1740, 1920]. Delivered 178.4 raw wpm against the 184.0 measured on ACT_1: the projection was 61 s short and the whole error sits in ACT_3 (+46 s) and ACT_4 (+31 s), the two acts built out of long verbatim quotation. Sampling ACT_1 alone biases a quotation-heavy script fast."
     }
   ],
   "approvals": [],
   "costs": {
-    "estimated": { "amount": 12, "currency": "USD" },
-    "actual": { "amount": 1.3, "currency": "USD" },
-    "soft_limit": { "amount": 100, "currency": "USD" },
-    "hard_limit": { "amount": 200, "currency": "USD" },
-    "note": "Actual is the ElevenLabs --measure-section ACT_1 run: 46 chunks, 650 words, 211.906 s of speech, 184.0 raw wpm. The full narration master is estimated at $8.86 from the v001 dry run."
+    "estimated": {
+      "amount": 12,
+      "currency": "USD"
+    },
+    "actual": {
+      "amount": 10.2,
+      "currency": "USD"
+    },
+    "soft_limit": {
+      "amount": 100,
+      "currency": "USD"
+    },
+    "hard_limit": {
+      "amount": 200,
+      "currency": "USD"
+    },
+    "note": "ACT_1 measurement run ~\\.3 plus the full narration master ~\\.9 (329 chunks, 29,523 characters at eleven_multilingual_v2). Nothing else has been spent; no render, no footage licence, no image cost."
   },
   "warnings": [
     "NOBODY FORESAW IT, AND THE COURT SAID SO. On 16 July 2026 the Tribunale di Genova EXCLUDED the aggravating circumstance of article 61 no. 3 -- acting while foreseeing the event -- for every single defendant, and ACQUITTED all of them of the intentional offences under articles 432 and 437 'perche il fatto non sussiste'. The convictions are for negligence. No line, card, caption, title, thumbnail or description may say or imply that anyone knew.",
@@ -117,7 +138,7 @@
   ],
   "blockers": [
     "SEVEN PLATES OUTSTANDING. V008, V020, V024, V078, V104, V112, V114 are ordered in v002 and not yet generated. 117 of 120 are staged and verdict-bound; three are quarantined to remotion/public/morandi/_rejected_v001/. Until the seven return, people_plates is 20 against a declared 24 and mandatory_stills stays empty.",
-    "NO NARRATION MASTER. Estimated $8.86 from the v001 dry run. The scene plan is PROJECTED until it exists.",
+    "THE FOUR ASSEMBLY INPUTS DO NOT EXIST: 03_script/script.annotated.v001.json, 04_scenes/scene_plan.v001.json, 04_scenes/remotion_plan.v001.json, 05_visuals/asset_selection.v001.json. preflight_render_gate is red on those four and on nothing else; motion_budget, assets_exist and coverage are red only because they derive from them.",
     "NO FOOTAGE STAGED. 0 clips. check_cross_episode_reuse.py runs BEFORE staging, then a person opens a labelled contact sheet -- footage_review_required is true and the shelf's labels are known to be wrong.",
     "THE ENDING EXPIRES ~14 OCTOBER 2026. The court gave itself ninety days from 16 July 2026 to file its reasons. The film says they are not yet written. Re-check on the day the publish date is set; if they have been filed, or an appeal has been formally lodged, ACT_5's last lines and the description are rewritten before scheduling. It is a splice, not a re-render.",
     "PREFLIGHT IS NOT ADVISORY. preflight_render_gate.py --ep PD-2026-076-morandi must be GREEN before any render. It has failed on 25 of 32 episodes and been overridden on 10; on 2026-08-20 EP70 and EP71 were each one command from a three-hour render of a captionless slideshow."

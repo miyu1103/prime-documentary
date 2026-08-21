@@ -452,7 +452,7 @@ EPISODES = {
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
     "PD-2026-074-itaewon": {
-        "planning": "EP74_itaewon_script.en.v006.md",
+        "planning": "EP74_itaewon_script.en.v007.md",
         # 30 minutes. episode_spec runtime_seconds [1740, 1920], script_words [4900, 5400].
         # The word band was set from MEASUREMENT, not from the 171.79 raw-wpm model this registry
         # carries for every episode since EP66. EP72 measured 191.1 raw wpm on its own ACT_1 and
@@ -503,7 +503,15 @@ EPISODES = {
         # 5154 / 184.0 * 60 = 1680.7 s of speech; gaps 321 x 0.30 + 7 x 1.8 = 108.9 s;
         # master 1789.6 s (29:50), film 1798.6 s (29:59) with ENDCARD_SEC 9.0 -- inside
         # runtime_seconds [1740, 1920]. check_script_standard.py --slug morandi --wpm 184.0 = 12/12.
-        "design_speech_seconds": 1680.7,        "sections": SECTION_ORDER_5ACT,
+        # DELIVERED 2026-08-21. 329 chunks, 0 failed. speech 1733.2 s, master 1842.130 s,
+        # film 1851.1 s (30:51) with ENDCARD_SEC 9.0 -- inside runtime_seconds [1740, 1920].
+        # THE PROJECTION WAS 61 s SHORT AND THE REASON IS WORTH KEEPING: --measure-section ACT_1
+        # gave 184.0 raw wpm, the whole script delivered 178.4. ACT_1 is short declaratives; ACT_3
+        # and ACT_4 carry long verbatim quotation from the ministry report and the judgment, and
+        # they came in +46 s and +31 s over projection while HOOK, OP, ACT_1, ACT_2 and ENDING
+        # landed within 2 s each. Sampling ACT_1 alone biases a quotation-heavy script FAST.
+        # Sample an act that quotes, or add ~3% when the back half is verbatim-led.
+        "design_speech_seconds": 1733.2,        "sections": SECTION_ORDER_5ACT,
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
     "PD-2026-075-lahaina": {
