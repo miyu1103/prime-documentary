@@ -90,8 +90,13 @@ def source_dir(slug: str) -> Path:
     raise SystemExit(f"no source dir: neither {ai} nor {local}")
 
 
-def collect_sources(slug: str, kinds: list[str]) -> list[Path]:
-    ai = source_dir(slug)
+def collect_sources(slug: str, kinds: list[str], src: str | None = None) -> list[Path]:
+    # --src names the ACCEPTED set explicitly. Added 2026-08-22 on EP76: AI_ROOT/<slug> exists on
+    # H: but holds only subfolders (_v001_raw, _v002_4k, _rejected_v001), so the top-level glob
+    # found 0 sources and the fallback never fired. Worse, the delivery folder still contains
+    # plates that were REJECTED at review, and i2v-ing a reject wastes 206 s of GPU and then puts
+    # a motion clip of it into the pool. The accepted set is what is staged in render truth.
+    ai = Path(src) if src else source_dir(slug)
     out: list[Path] = []
     for k in kinds:
         out += sorted(Path(p) for p in glob.glob(str(ai / f"{k}*.png")))
@@ -109,6 +114,9 @@ def main() -> int:
     ap.add_argument("--slug", required=True)
     ap.add_argument("--kinds", default="M,P", help="comma-separated filename prefixes to i2v")
     ap.add_argument("--only", default=None, help="substring filter on the source filename")
+    ap.add_argument("--src", default=None,
+                    help="explicit source dir of ACCEPTED plates (default: AI_ROOT/<slug>, then "
+                         "remotion/public/<slug>/img). Use it to keep rejected plates out.")
     ap.add_argument("--width", type=int, default=1280)
     ap.add_argument("--height", type=int, default=704)
     ap.add_argument("--length", type=int, default=81)
@@ -138,7 +146,7 @@ def main() -> int:
     a = ap.parse_args()
 
     kinds = [k.strip() for k in a.kinds.split(",") if k.strip()]
-    imgs = collect_sources(a.slug, kinds)
+    imgs = collect_sources(a.slug, kinds, a.src)
     if a.only:
         # Comma-separated list, not a single substring. EP61 weimer converts a NAMED subset of
         # its commissioned stills to motion (65 of 150); one substring cannot express that, and
