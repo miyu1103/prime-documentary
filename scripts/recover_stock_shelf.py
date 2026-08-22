@@ -51,7 +51,9 @@ import os
 import re
 import shutil
 import sys
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -255,6 +257,42 @@ def pick_shelf() -> Path:
     raise SystemExit("[recover] every tier is below its free-space floor; nothing written")
 
 
+class Pace:
+    """Thread-safe request pacer for the METADATA call only.
+
+    The provider limit applies to the API (Pexels 200/hour, Pixabay 100/minute); the file
+    itself comes from a CDN with no such limit. So the pacer gates the small call and lets the
+    big transfers overlap, which is the whole point of running more than one worker.
+    """
+
+    def __init__(self, per_hour: int) -> None:
+        self.gap = 3600.0 / max(per_hour, 1)
+        self.next_at = 0.0
+        self.lock = threading.Lock()
+
+    def wait(self) -> None:
+        with self.lock:
+            due = max(time.time(), self.next_at)
+            self.next_at = due + self.gap
+        delay = due - time.time()
+        if delay > 0:
+            time.sleep(delay)
+
+
+def append_row(ledger: Path, row: dict) -> None:
+    """One O_APPEND write of one short line -- atomic across threads and processes.
+
+    Same rule the ingest lane learned on 2026-08-20, when writers sharing one handle tore 586
+    lines in half. A held file object plus a thread pool is that mistake with a smaller cast.
+    """
+    data = (json.dumps(row, ensure_ascii=False) + "\n").encode("utf-8")
+    fd = os.open(ledger, os.O_WRONLY | os.O_CREAT | os.O_APPEND, 0o644)
+    try:
+        os.write(fd, data)
+    finally:
+        os.close(fd)
+
+
 def pick_file(files: list[dict]) -> dict | None:
     """Largest rendition inside a 1920x1080 frame; if none fits, the SMALLEST available.
 
@@ -337,6 +375,8 @@ def main() -> int:
                     help="only EP76's registers, and none the episode_spec bars (pexels only)")
     ap.add_argument("--limit", type=int, default=0, help="stop after N downloads (0 = all)")
     ap.add_argument("--per-hour", type=int, default=0, help="0 = the provider's own limit")
+    ap.add_argument("--workers", type=int, default=4,
+                    help="concurrent downloads; 4 measured as the knee, 8 congests")
     ap.add_argument("--plan", action="store_true", help="report and write nothing")
     ap.add_argument("--write", action="store_true", help="actually download")
     a = ap.parse_args()
@@ -375,56 +415,73 @@ def main() -> int:
     shelf = pick_shelf()
     print(f"[recover] writing to {shelf}")
     key = api_key(src)
-    s = requests.Session()
-    if cfg["auth"] == "header":
-        s.headers.update({"Authorization": key})
     ledger.parent.mkdir(parents=True, exist_ok=True)
-    gap = 3600.0 / max(per_hour, 1)
+    print(f"[recover] {a.workers} worker(s)")
 
-    ok = fail = 0
-    with ledger.open("a", encoding="utf-8") as led:
-        for i, (vid, slug, theme) in enumerate(todo, 1):
-            t0 = time.time()
-            try:
-                url = cfg["url"].format(id=vid, key=key)
-                r = s.get(url, timeout=30)
-                if r.status_code == 429:
-                    print("[recover] 429 -- backing off 10 min")
-                    time.sleep(600)
-                    r = s.get(url, timeout=30)
-                if r.status_code != 200:
-                    print(f"  {vid} HTTP {r.status_code}")
-                    fail += 1
-                    continue
-                meta = r.json()
-                f = pick_file(cfg["files"](meta))
-                if not f:
-                    print(f"  {vid} no usable file")
-                    fail += 1
-                    continue
-                dest = shelf / theme / f"{src}__{vid}__{slug}.mp4"
-                dest.parent.mkdir(parents=True, exist_ok=True)
-                tmp = dest.with_suffix(".part")
-                # (connect, read) rather than one 180 s number, plus a wall-clock budget.
-                # Measured 2026-08-23 03:20 on a degraded line -- 11 Mbps, 393 ms RTT -- the
-                # run had dropped from 350-600 clips/hour to 10-22 while the link itself could
-                # still carry ~250. The time was going into dying transfers: requests' timeout
-                # is PER READ, so a socket that trickles a byte every few seconds never trips a
-                # 180 s read timeout and blocks the single-threaded loop for as long as it likes.
-                # A short read timeout catches the stalls; the budget catches the trickles.
-                budget = 180.0
-                t_dl = time.time()
-                with s.get(f["link"], stream=True, timeout=(10, 30)) as dl:
-                    dl.raise_for_status()
-                    with tmp.open("wb") as fh:
-                        for chunk in dl.iter_content(1 << 20):
-                            fh.write(chunk)
-                            if time.time() - t_dl > budget:
-                                raise TimeoutError(
-                                    f"download exceeded {budget:.0f}s wall clock; abandoning "
-                                    f"this clip so the run keeps moving")
-                tmp.replace(dest)
-                led.write(json.dumps({
+    # WHY A POOL, MEASURED 2026-08-23 03:35 on the degraded line. Against a 10 MB reference
+    # download: 1 stream 2.93 MB/s, 4 streams 5.09 MB/s, 8 streams 2.97 MB/s -- four is the
+    # knee, eight congests and is no better than one. Meanwhile this run was managing 0.76 MB/s,
+    # a quarter of what ONE stream could do, because a 235 ms round trip was being paid serially
+    # for every clip: API call, connect, transfer, hash, next. The pool overlaps those waits.
+    # The provider's request limit is respected by Pace, which gates only the metadata call.
+    pace = Pace(per_hour)
+    local = threading.local()
+    counts = {"ok": 0, "fail": 0}
+    clock = threading.Lock()
+
+    def session() -> requests.Session:
+        if not hasattr(local, "s"):
+            local.s = requests.Session()
+            if cfg["auth"] == "header":
+                local.s.headers.update({"Authorization": key})
+        return local.s
+
+    def fetch(item: tuple[str, str, str]) -> None:
+        vid, slug, theme = item
+        s = session()
+        try:
+            pace.wait()
+            url = cfg["url"].format(id=vid, key=key)
+            r = s.get(url, timeout=(10, 30))
+            if r.status_code == 429:
+                print("[recover] 429 -- backing off 10 min")
+                time.sleep(600)
+                r = s.get(url, timeout=(10, 30))
+            if r.status_code != 200:
+                print(f"  {vid} HTTP {r.status_code}")
+                with clock:
+                    counts["fail"] += 1
+                return
+            meta = r.json()
+            f = pick_file(cfg["files"](meta))
+            if not f:
+                print(f"  {vid} no usable file")
+                with clock:
+                    counts["fail"] += 1
+                return
+            dest = shelf / theme / f"{src}__{vid}__{slug}.mp4"
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            tmp = dest.with_suffix(".part")
+            # (connect, read) rather than one 180 s number, plus a wall-clock budget.
+            # Measured 2026-08-23 03:20 on a degraded line -- 11 Mbps, 393 ms RTT -- the
+            # run had dropped from 350-600 clips/hour to 10-22 while the link itself could
+            # still carry ~250. The time was going into dying transfers: requests' timeout
+            # is PER READ, so a socket that trickles a byte every few seconds never trips a
+            # 180 s read timeout and blocks the single-threaded loop for as long as it likes.
+            # A short read timeout catches the stalls; the budget catches the trickles.
+            budget = 180.0
+            t_dl = time.time()
+            with s.get(f["link"], stream=True, timeout=(10, 30)) as dl:
+                dl.raise_for_status()
+                with tmp.open("wb") as fh:
+                    for chunk in dl.iter_content(1 << 20):
+                        fh.write(chunk)
+                        if time.time() - t_dl > budget:
+                            raise TimeoutError(
+                                f"download exceeded {budget:.0f}s wall clock; abandoning "
+                                f"this clip so the run keeps moving")
+            tmp.replace(dest)
+            append_row(ledger, {
                     "id": f"{src}_{vid}",
                     "source": src,
                     "source_url": cfg["page_url"](meta),
@@ -442,17 +499,21 @@ def main() -> int:
                                       "at D:/pd-media-browse carried the id"),
                     "license_basis": cfg["licence"],
                     "width": f.get("width"), "height": f.get("height"),
-                }, ensure_ascii=False) + "\n")
-                led.flush()
-                ok += 1
-                if ok % 25 == 0:
-                    print(f"  [{i}/{len(todo)}] ok={ok} fail={fail} last={dest.name[:60]}")
-            except Exception as e:  # noqa: BLE001 - one bad clip must not stop a 9-hour run
-                print(f"  {vid} ERROR {type(e).__name__}: {e}")
-                fail += 1
-            wait = gap - (time.time() - t0)
-            if wait > 0:
-                time.sleep(wait)
+            })
+            with clock:
+                counts["ok"] += 1
+                n = counts["ok"]
+            if n % 25 == 0:
+                print(f"  [{n + counts['fail']}/{len(todo)}] ok={n} fail={counts['fail']} "
+                      f"last={dest.name[:60]}", flush=True)
+        except Exception as e:  # noqa: BLE001 - one bad clip must not stop a multi-hour run
+            print(f"  {vid} ERROR {type(e).__name__}: {e}")
+            with clock:
+                counts["fail"] += 1
+
+    with ThreadPoolExecutor(max_workers=a.workers) as pool:
+        list(pool.map(fetch, todo))
+    ok, fail = counts["ok"], counts["fail"]
 
     print(f"[recover] done: {ok} fetched, {fail} failed")
     print(f"[recover] ledger -> {ledger}")
