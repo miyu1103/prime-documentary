@@ -36,6 +36,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -121,7 +122,73 @@ def load_and_validate(slug: str) -> tuple[dict | None, list[str], Path | None]:
     if spec.get("slug") != slug:
         problems.append(f"slug is {spec.get('slug')!r} but the directory says {slug!r}")
 
+    # After Effects, from EP77 (decisions/0011). Every caller reads the spec through this
+    # function, so the AE declaration is checked wherever the spec is checked -- there is no
+    # separate AE gate to forget to run.
+    problems.extend(ae_problems(spec, epdir))
+
     return (None if problems else spec), problems, epdir
+
+
+AE_FROM_EPISODE = 77  # decisions/0011, owner directive 2026-08-23
+
+
+def _episode_number(epdir: Path) -> int | None:
+    m = re.match(r"^PD-\d{4}-(\d{3})-", epdir.name)
+    return int(m.group(1)) if m else None
+
+
+def ae_problems(spec: dict, epdir: Path) -> list[str]:
+    """After Effects, checked at DESIGN time -- before an image, a render or an AE launch.
+
+    decisions/0011 accepted AE from EP77. The owner's same-day clarification is that AE is
+    used heavily and that the DESIGN STAGE is what has to work first, so this is the gate
+    that turns "we will use AE" into a declaration a machine can refuse. It reads nothing
+    but the spec: no AE, no GPU, no network, no episode assets.
+
+    It does NOT prove an AE card rendered. decisions/0011 requires a verify step that reads
+    pixels before the film json is built, because eight EP76 figures would have drawn white
+    and only a type check caught them. This gate cannot see that and never claims to.
+    """
+    n = _episode_number(epdir)
+    ae = spec.get("ae_beats")
+    if ae is None:
+        if n is not None and n >= AE_FROM_EPISODE:
+            return [f"ae_beats is missing and this is EP{n:03d}, at or past EP{AE_FROM_EPISODE} "
+                    f"(decisions/0011). An undeclared value is an error -- write the beats."]
+        return []
+
+    out: list[str] = []
+    beats = ae.get("beats") or []
+    if len(beats) < ae["min_count"]:
+        out.append(f"ae_beats: {len(beats)} beat(s) declared, min_count says {ae['min_count']}")
+
+    ids = [b.get("id") for b in beats]
+    dupes = sorted({i for i in ids if ids.count(i) > 1 and i is not None})
+    if dupes:
+        out.append(f"ae_beats: duplicate beat id(s) {dupes}")
+
+    vocab = spec.get("section_vocabulary") or []
+    unknown = sorted({b.get("act") for b in beats if b.get("act") not in vocab})
+    if unknown:
+        out.append(f"ae_beats: act(s) {unknown} are not in section_vocabulary {vocab}")
+
+    per_act = ae["per_act_min"]
+    thin = [a for a in vocab if sum(1 for b in beats if b.get("act") == a) < per_act]
+    if thin:
+        out.append(f"ae_beats: per_act_min is {per_act} but {thin} carry fewer -- twelve beats "
+                   f"in one act is not the same film as twelve spread across the acts")
+
+    seconds = sum(float(b.get("duration_sec", 7.5)) for b in beats)
+    if seconds < ae["screen_seconds_min"]:
+        out.append(f"ae_beats: {seconds:.1f}s of AE declared, screen_seconds_min says "
+                   f"{float(ae['screen_seconds_min']):.1f}s")
+
+    want = f"scripts/ae/jobs_{spec.get('slug')}.json"
+    if ae["jobs_file"] != want:
+        out.append(f"ae_beats: jobs_file is {ae['jobs_file']!r}, expected {want!r}")
+
+    return out
 
 
 def main() -> int:
@@ -149,6 +216,16 @@ def main() -> int:
           f"{spec['people_plates_min']} people plates, "
           f"{len(spec.get('mandatory_stills') or [])} mandatory still(s), "
           f"{len(spec.get('forbidden_subjects') or [])} forbidden subject(s)")
+    ae = spec.get("ae_beats")
+    if ae:
+        beats = ae.get("beats") or []
+        secs = sum(float(b.get("duration_sec", 7.5)) for b in beats)
+        kinds = sorted({b.get("kind") for b in beats})
+        print(f"[spec] {slug}: AE -- {len(beats)} beat(s), {secs:.0f}s on screen, "
+              f"{len(kinds)} kind(s) {kinds}, jobs {ae['jobs_file']}")
+    elif (_epdir is not None and (_n := _episode_number(_epdir)) is not None
+          and _n < AE_FROM_EPISODE):
+        print(f"[spec] {slug}: AE -- not declared (EP{_n:03d} predates EP{AE_FROM_EPISODE})")
     return 0
 
 

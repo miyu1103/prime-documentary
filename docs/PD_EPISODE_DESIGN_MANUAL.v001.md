@@ -88,6 +88,49 @@ scripts/scan_video_shape.py                                # 縦動画・HD未�
 `scripts/set_figure_beats.py --config <filmconfig> --beats <json> --dry-run` が
 Remotionの型定義を読んで検証する。**書き込み前に必ず通す。**
 
+### ⑤b After Effects のビートを置く（**EP77以降は必須**）
+
+決定は `decisions/0011-AE-FROM-EP77.md`（2026-08-23）。オーナー指示は
+「**77話以降は設計段階から AE をガッツリ使う**」。まず設計で効かせる。
+
+**どれだけ置くか（下限。目標ではない）**
+
+| 項目 | 下限 | 根拠（2026-08-23 実測・spec を持つ26話） |
+|---|---|---|
+| ビート数 | **12** | 中央値は8幕×13〜17＝図版104〜136個。AEはその約1割 |
+| 1幕あたり | **1** | 12個を1幕に固めたら別の映画になる |
+| 画面に出る合計秒数 | **90秒** | 12個 × 7.5秒（ヒーローカードが読める長さ） |
+
+旧基準は PD_CANON §6 の「中盤に1〜2回」で、これは全図版の1〜2%。**そこから6〜12倍にする。**
+
+**何をAEに任せるか（9種類から選ぶ）**
+
+`hero_number`（数字1つを大きく） / `document_blowup`（書類の一点を拡大） /
+`comparison`（AとBを並べる） / `timeline` / `system_map` / `quote_card` /
+`map_move` / `list_build` / `title_card`。
+
+カット・字幕・OP/ED・モーションブラー・38種の図版は **Remotion のまま**。
+同じものを二重に作らない（不変条件14）。
+
+**書き方**
+
+`episode_spec` に `ae_beats` を書く（テンプレートは §4）。1ビートごとに
+`id` / `act` / `kind` / `headline`（60字以内）/ `source` が要る。
+
+**`source` は必須で、逃げ道が無い。** AEカードは画面で事実を主張するので、
+タイトルと同じ `factual_support` の対象（rule 19）。台帳の行番号か台本の行を必ず書く。
+
+**検証（設計段階で走る。AEもGPUも要らない）**
+
+```
+py -3.11 scripts/check_episode_spec.py --slug <slug>
+py -3.11 -m pytest tests/test_ae_beats_design_gate.py -q
+```
+
+**この検査が保証しないこと。** 「AEカードが実際に描けたか」は見ていない。
+EP76で図版8個が真っ白になりかけた件と同じで、**画素を読む検証は組み立て段階**に別途要る
+（`decisions/0011`）。設計が通っても、描けた証拠にはならない。
+
 ### ⑥ 画像を発注する → **足りない分だけ**
 
 **「たぶん足りない」で発注しない。** 順番は：
@@ -141,9 +184,27 @@ EP54は静止画134枚に対し画像カット119個で、余った15枚が**ア
   "audio_layers": 2,
   "forbidden_subjects": [],
   "forbidden_claims": [],
+  "ae_beats": {
+    "min_count": 12,
+    "per_act_min": 1,
+    "screen_seconds_min": 90,
+    "jobs_file": "scripts/ae/jobs_<slug>.json",
+    "gpu_accel": "SOFTWARE",
+    "beats": [
+      {"id": "AE001", "act": "HOOK",  "kind": "hero_number",
+       "headline": "$86,900", "source": "FACTS_LEDGER row 12", "duration_sec": 8},
+      {"id": "AE002", "act": "ACT_1", "kind": "document_blowup",
+       "headline": "NO CHARGES FILED", "source": "script.en.v001.md:57", "duration_sec": 9}
+    ]
+  },
   "notes": ""
 }
 ```
+
+- `ae_beats` は **EP77以降は必須**（`decisions/0011`）。EP76以前は書かなくてよく、
+  書いても検査は通る。下限と考え方は §2 の ⑤b。
+- `beats` は12個以上・全幕に1個以上・合計90秒以上。**この3つは同時に満たす必要がある。**
+- `gpu_accel` は既定 `SOFTWARE`。このPCではAEのGPU支援が不安定（`decisions/0011`）。
 
 - `distinct_video_assets` = `runtime_seconds[0] × 0.65 ÷ 4.5`。**「上限2回まで使える」前提で半分にしない。**
   EP54はそれで188本しか用意せず、253カットに対し**65回の使い回し**になった。

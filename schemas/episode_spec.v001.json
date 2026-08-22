@@ -114,8 +114,69 @@
       },
       "description": "Assertions the record does not support, which must not appear in narration, captions or on-screen text. WHY: EP60 may not say the structure was at `half the required strength` (no readable source) or that the collapse took `13 seconds` (the pool deck fell more than four minutes before the tower, so no single duration exists)."
     },
+    "ae_beats": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["min_count", "per_act_min", "screen_seconds_min", "jobs_file", "beats"],
+      "properties": {
+        "min_count": {"type": "integer", "minimum": 12},
+        "per_act_min": {"type": "integer", "minimum": 1},
+        "screen_seconds_min": {"type": "number", "minimum": 90},
+        "jobs_file": {"type": "string", "pattern": "^scripts/ae/jobs_[a-z0-9]+\\.json$"},
+        "gpu_accel": {"enum": ["SOFTWARE", "CUDA", "OPENCL"]},
+        "beats": {
+          "type": "array",
+          "minItems": 12,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "act", "kind", "headline", "source"],
+            "properties": {
+              "id": {"type": "string", "pattern": "^AE[0-9]{3}$"},
+              "act": {"type": "string", "minLength": 1},
+              "kind": {"enum": ["hero_number", "document_blowup", "comparison", "timeline", "system_map", "quote_card", "map_move", "list_build", "title_card"]},
+              "headline": {"type": "string", "minLength": 2, "maxLength": 60},
+              "source": {"type": "string", "minLength": 8},
+              "duration_sec": {"type": "number", "minimum": 1.5, "maximum": 20},
+              "notes": {"type": "string"}
+            }
+          }
+        }
+      },
+      "description": "Where After Effects appears in THIS film, declared at design time. Required from PD-2026-077 onward (decisions/0011, owner directive 2026-08-23 and its same-day clarification). WHY THE FLOORS ARE THESE NUMBERS, measured 2026-08-23 across the 26 episodes that carry a spec: the median episode declares 8 acts at 13-17 figure beats per act, i.e. 104-136 declared motion-graphic beats, and built film json carries 16-99 actual figures. The previous AE standard was PD_CANON section 6's 'one or two kinetic beats mid-film', which is 1-2 percent of that. min_count 12 puts AE at roughly a tenth of the declared beats and 6-12x the old standard, per_act_min 1 stops all twelve landing in one act, and screen_seconds_min 90 is 12 beats at the 7.5s a hero card needs to be read. These are floors for the DESIGN, not a promise that the beats rendered -- decisions/0011 requires a pixel-reading verify before the film json is built, and nothing here replaces it. `source` is the claim id, ledger row or script line the headline comes from: an AE card states a fact on screen, so it is subject to `factual_support` exactly like a title (rule 19), and a headline with no record behind it must be impossible to declare."
+    },
     "notes": {
       "type": "string"
+    },
+    "revision_reason": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["revision", "supersedes", "date", "authority", "changes"],
+      "properties": {
+        "revision": {"type": "string", "pattern": "^v[0-9]{3}$"},
+        "supersedes": {"type": "string", "pattern": "^v[0-9]{3}$"},
+        "date": {"type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"},
+        "authority": {"type": "string", "minLength": 20},
+        "changes": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["field", "old", "new", "arithmetic", "provenance_of_the_error"],
+            "properties": {
+              "field": {"type": "string"},
+              "old": {},
+              "new": {},
+              "arithmetic": {"type": "string", "minLength": 40},
+              "provenance_of_the_error": {"type": "string", "minLength": 40},
+              "not_changed_because": {"type": "string"}
+            }
+          }
+        },
+        "unchanged": {"type": "array", "items": {"type": "string"}}
+      },
+      "description": "Present ONLY on a spec revision above v001, and it must say why. WHY: a declared value is a commitment, and the standing rule is that a threshold is never lowered to make something pass. The one legitimate reason to change one is that it was WRONG WHEN WRITTEN -- derived from an input that did not hold, or never derived at all. That claim has to be provable by a later reader, so this block carries the old value, the new value, the arithmetic that produced the new one, where the original error came from, the date, and the named owner decision that authorised it. A revision without this block is indistinguishable from moving the goalposts. Required sub-fields are deliberately hard to satisfy with a hand-wave: `arithmetic` and `provenance_of_the_error` both have minimum lengths. First used 2026-08-12 for EP66/EP67/EP69 distinct_video_assets."
     },
     "approved_deviations": {
       "type": "array",
@@ -136,6 +197,33 @@
         "type": "string"
       },
       "description": "Plate ids that ARE this episode's people plates, e.g. ['G210.png', ...]. Declared because the filename does not carry that meaning: EP62-65 name people plates with the episode prefix, and check_episode_inputs used to count only names beginning with P, so it reported 0 of 10 on forty plates that exist and are correct."
+    },
+    "era_setting": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["place", "years"],
+      "properties": {
+        "place": {
+          "type": "string",
+          "minLength": 3,
+          "description": "Where the story happens, most specific first, e.g. 'Louisville, Kentucky, USA'."
+        },
+        "country": {
+          "type": "string",
+          "description": "The country on its own, so a place marker in a clip's title can be compared against it."
+        },
+        "years": {
+          "type": "array",
+          "items": {"type": "integer", "minimum": 1000, "maximum": 2200},
+          "minItems": 2,
+          "maxItems": 2,
+          "description": "First and last year the film depicts, inclusive."
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "description": "WHEN and WHERE this episode is set. WHY: EP62 greene shipped, past a green pre-flight, a green probe, a green post-render gate, forty green acceptance checks and a green pool QC, with two clips that cannot exist in it -- a modern US election ballot reading 'United States President and Vice President / VOTE FOR ONE' (filed person_holding_papers, used twice, the second time under the narration 'the only evidence anybody brought') and a modern European park with a 2011 Range Rover Evoque on an EU plate (filed playground, used twice, the first inside the opening minute). Neither was forbidden by anything, because nothing anywhere in the episode's machine contract said greene is 1975, Louisville, USA. forbidden_subjects lists what this story must not show; this says what CENTURY AND CONTINENT it is in, which is the constraint those two clips broke. check_pool_frames.py reads it and surfaces, FOR HUMAN ATTENTION ONLY, clips whose filename or ledger title suggests a modern vehicle, a mobile phone, a computer screen, foreign or EU signage, or legible political text when the era predates them. That surfacing is a reading order, not a detector: on the ballot clip it fires only on the word 'papers', and on the Evoque clip it fires nothing at all."
     }
   }
 }

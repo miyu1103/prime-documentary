@@ -68,3 +68,46 @@ None of this is optional and none of it is done yet:
 - The rule that generated imagery is never presented as an authentic record. An AE hero card is
   a designed graphic; if it renders a document, the same `fabricated_record` rules apply.
 - EP70–EP76. They ship as they are.
+
+---
+
+## 2026-08-23 — owner clarification, and the design stage built against it
+
+The owner restated the directive the same day, in one line: **from EP77, After Effects is used
+heavily, and it is the DESIGN STAGE that has to work now.** That widens §"How it is used" item 1.
+Written down rather than reconciled silently, because a reader six weeks from now will otherwise
+find two readings of one directive:
+
+| | as first written above | as clarified 2026-08-23 |
+|---|---|---|
+| AE's role | hero cards only | nine declared kinds: `hero_number`, `document_blowup`, `comparison`, `timeline`, `system_map`, `quote_card`, `map_move`, `list_build`, `title_card` |
+| how much | not stated | **≥12 beats, ≥1 per act, ≥90s on screen** — floors, not targets |
+| what is built first | the generic builder and the pixel verify | **the design contract**, so an episode cannot be designed without AE in it |
+
+Item 2 is unchanged and still governs: cuts, captions, bookends, motion blur and the 38 figure
+kinds stay in Remotion, and nothing here is a second implementation of them (invariant 14).
+
+**Where the floors come from.** Measured 2026-08-23 across the 26 episodes carrying an
+`episode_spec`: the median declares 8 acts at 13–17 figure beats each — 104–136 declared
+motion-graphic beats — and built film json carries 16–99 actual figures. Twelve AE beats is
+about a tenth of the declared beats and **6–12× the previous standard**, which was PD_CANON §6's
+"one or two kinetic beats mid-film" (1–2%). 90 seconds is 12 × the 7.5 s a hero card needs to be
+readable. If a later measurement moves these, move them here and in the schema together.
+
+**What now exists (design stage only, as instructed).**
+
+| what | where | proof |
+|---|---|---|
+| the declaration | `ae_beats` in `schemas/episode_spec.v001.json` — optional field, so every EP001–076 spec still validates unchanged | 26 specs re-validated; the only two failures (`lacmegantic`, `uri`) are a pre-existing `_people_plates_note` extra property and predate this change |
+| the gate | `ae_problems()` in `scripts/check_episode_spec.py`, called from `load_and_validate()` — so it runs wherever the spec is already checked, with **no new tool to forget** (invariant 14) | reads the spec only: no AE, no GPU, no network |
+| required from EP77 | `AE_FROM_EPISODE = 77`; a missing `ae_beats` on EP077+ is an error, and on EP076 and earlier is silence | `test_ep77_without_ae_beats_is_refused`, `test_ep76_without_ae_beats_is_left_alone` |
+| shown to fail | `tests/test_ae_beats_design_gate.py`, 11 cases, all green 2026-08-23 | every floor is broken on purpose: 11 beats, 16 beats piled into one act, an act outside the vocabulary, duplicate ids, 12 two-second flashes, another episode's jobs file, a headline with no `source` |
+
+**`source` is required on every beat.** An AE card states a fact on screen, so it is subject to
+`factual_support` exactly as a title is (rule 19). The schema refuses a beat without the ledger
+row or script line its headline came from.
+
+**What this still does not do, stated plainly.** It cannot see whether an AE card rendered. The
+pixel-reading verify in "What must exist before EP77's first AE beat" above is untouched and
+still required before a film json is built — eight EP76 figures would have drawn white and only
+a type check caught them. A green design is not a rendered beat.
