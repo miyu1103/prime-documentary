@@ -188,8 +188,14 @@ AMBIENCE_BEDS = (
     "amb_light_wind.mp3",
     "amb_road_rumble_1920s.mp3",
 )
+# Beds that carry a DATE. Never selected to satisfy distinctness; only on a keyword hit in the
+# chapter's own text, or an explicit declaration.
+PERIOD_BEDS = {"amb_road_rumble_1920s.mp3"}
 AMBIENCE_KEYWORDS: list[tuple[tuple[str, ...], str]] = [
-    (("prohibition", "1920s", "1925", "model-t", "period", "lazyback", "whisky", "gin"), "amb_road_rumble_1920s.mp3"),
+    # "period" was in this list and it is an ordinary English word -- "a period of two days" put a
+    # 1920s road rumble under EP71's 2017 California opening, and the EP74 thread found the same
+    # bed under a 2022 Seoul alley. The remaining terms name the decade itself; nothing else does.
+    (("prohibition", "1920s", "1925", "model-t", "lazyback", "whisky", "gin"), "amb_road_rumble_1920s.mp3"),
     (("highway", "traffic", "aerial", "thousands of cars", "multi-lane", "shoulder"), "amb_highway_traffic.mp3"),
     (("rain", "wet asphalt", "rain-slick", "downpour", "storm"), "amb_rain_street.mp3"),
     (("engine", "idle", "motor", "pull over", "pulled over", "ignition"), "amb_engine_idle.mp3"),
@@ -656,16 +662,40 @@ def ambience_overrides(slug: str) -> dict[str, str]:
     return out
 
 
+def _kw_hits(low: str, keywords: tuple[str, ...]) -> int:
+    """Count keyword hits on WORD BOUNDARIES, not substrings.
+
+    `low.count(k)` matched "gin" inside "beginning" and "engineering" and put a 1920s road
+    rumble under EP71 oroville's ACT_2 -- a chapter about a 2017 California reservoir. The same
+    class of substring hit is what the EP74 thread measured on its own beds. Multi-word and
+    hyphenated terms still work:  anchors on the outside of the phrase.
+    """
+    total = 0
+    for k in keywords:
+        total += len(re.findall(r"" + re.escape(k) + r"", low))
+    return total
+
+
 def rank_beds(chapter_id: str, text: str) -> list[str]:
     """Ranked ambience-bed candidates for a chapter (keyword hits desc)."""
     low = text.lower()
     scored: list[tuple[int, int, str]] = []
     for order, (keywords, fname) in enumerate(AMBIENCE_KEYWORDS):
-        hits = sum(low.count(k) for k in keywords)
+        hits = _kw_hits(low, keywords)
         scored.append((-hits, order, fname))
     scored.sort()
     ranked = [f for _, _, f in scored]
-    default = CHAPTER_AMBIENCE_DEFAULT.get(chapter_id)
+    # CHAPTER ID SPELLING. The defaults are keyed "opening"/"act1"; data-driven CaseFilm episodes
+    # name their chapters "op"/"act_1". The lookup missed, the chapter counted as having no
+    # default, and the winner became whatever leads AMBIENCE_KEYWORDS -- the Prohibition bed.
+    # Measured 2026-08-23 on EP71 oroville: its OP is February 2017 in California and it was
+    # assigned a 1920s road rumble. Same class as the EP74 hook, one layer further down.
+    _cid = chapter_id.lower().replace("-", "_")
+    _alias = {"op": "opening", "intro": "opening", "end": "ending", "outro": "ending"}
+    _cid = _alias.get(_cid, _cid)
+    if _cid not in CHAPTER_AMBIENCE_DEFAULT and _cid.startswith("act_"):
+        _cid = "act" + _cid[4:]
+    default = CHAPTER_AMBIENCE_DEFAULT.get(chapter_id) or CHAPTER_AMBIENCE_DEFAULT.get(_cid)
     if default and default in ranked:
         # A chapter that matched NO keyword has expressed no preference, so its declared default
         # must lead -- otherwise the winner is simply whichever bed happens to be first in
@@ -675,7 +705,7 @@ def rank_beds(chapter_id: str, text: str) -> list[str]:
         # seven distinct beds satisfied its floor of four. The main thread reports the same class
         # of misfire on EP76. Keeping the default at index 1 was only ever right when the chapter
         # DID match something and the default should merely rank high.
-        no_hits = not any(k in low for kws, _f in AMBIENCE_KEYWORDS for k in kws)
+        no_hits = not any(_kw_hits(low, kws) for kws, _f in AMBIENCE_KEYWORDS)
         ranked.remove(default)
         ranked.insert(0 if (no_hits or not text.strip()) else 1, default)
     return ranked
@@ -715,6 +745,14 @@ def assign_ambience(spans: list[tuple[str, float, float, list[int]]],
             used.add(assigned[cid])
             continue
         ranked = rank_beds(cid, text_by_chapter.get(cid, ""))
+        # PERIOD-SPECIFIC BEDS ARE OPT-IN. A 1920s road rumble is not a neutral texture: it dates
+        # the picture. The distinctness sweep, which only wants an unused bed, put it under a
+        # February 2017 California chapter (EP71) and a 2022 Seoul alley (EP74). It may now be
+        # chosen only when this chapter's own words ask for it, or when the episode declares it.
+        _low = text_by_chapter.get(cid, "").lower()
+        _asked = {f for kws, f in AMBIENCE_KEYWORDS if f in PERIOD_BEDS
+                  and _kw_hits(_low, kws)}
+        ranked = [f for f in ranked if f not in PERIOD_BEDS or f in _asked]
         pick = next((f for f in ranked if f not in used), None)
         if pick is None:  # all beds used -> allow reuse of top-ranked
             pick = ranked[0] if ranked else CHAPTER_AMBIENCE_DEFAULT.get(cid, AMBIENCE_BEDS[0])
