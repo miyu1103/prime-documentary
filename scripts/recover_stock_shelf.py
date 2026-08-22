@@ -353,6 +353,19 @@ class Pace:
         if delay > 0:
             time.sleep(delay)
 
+    def slow_down(self) -> float:
+        """Halve the pace after a 429 and stay there.
+
+        The true ceiling is not published for this account -- X-Ratelimit-Limit reads -1 and a
+        40-request burst drew nothing -- so it cannot be configured, only discovered. Two lanes
+        sharing one Pexels key at 1,200/hour each found it on 2026-08-23. Rather than guess a
+        new constant, each lane backs its own pace off by half whenever the provider says no,
+        which converges from either direction without anyone having to know the number.
+        """
+        with self.lock:
+            self.gap = min(self.gap * 2, 60.0)
+            return 3600.0 / self.gap
+
 
 def append_row(ledger: Path, row: dict) -> None:
     """One O_APPEND write of one short line -- atomic across threads and processes.
@@ -521,8 +534,14 @@ def main() -> int:
             url = kc["url"].format(id=vid, key=key)
             r = s.get(url, timeout=(10, 30))
             if r.status_code == 429:
-                print("[recover] 429 -- backing off 10 min")
-                time.sleep(600)
+                # 60 s, not 10 minutes. A 429 is "too fast just now", and the old ten-minute
+                # sleep punished the whole lane for it; measured 2026-08-23, one 429 in the
+                # pexels image lane cost more wall clock than the fifty clips around it.
+                new_rate = pace.slow_down()
+                wait_s = float(r.headers.get("Retry-After") or 60)
+                print(f"[recover] 429 -- pace now {new_rate:.0f}/hour, waiting {wait_s:.0f}s",
+                      flush=True)
+                time.sleep(wait_s)
                 r = s.get(url, timeout=(10, 30))
             if r.status_code != 200:
                 print(f"  {vid} HTTP {r.status_code}")
