@@ -34,6 +34,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import atexit
 import hashlib
 import json
 import os
@@ -148,6 +149,36 @@ def sha256(p: Path) -> str:
     return h.hexdigest()
 
 
+def single_instance() -> None:
+    """Refuse to start when another recovery is already appending to this ledger.
+
+    Measured 2026-08-22 16:11: TWO copies of this script were running against
+    pexels.jsonl -- "--want-ep76 --per-hour 200 --write" (09:55) and "--write" (11:29),
+    whose candidate list CONTAINS the first list. This is the same shape that tore 586
+    lines and destroyed 117 rows in reindex_archive_shelf.py on 2026-08-20; that script
+    grew a lock, this one was missed. Nothing was torn here because every row is written
+    and flushed one short line at a time, but already_have() is read ONCE at start, so the
+    two todo lists overlap and the same id can be fetched twice and written twice.
+
+    It also buys nothing. Pexels allows 200 requests/hour; two copies pacing at 200/hour
+    each hit 429 and back off. Measured throughput with both running was 44-155 rows/hour,
+    the throughput of ONE copy, for twice the monthly API budget.
+    """
+    lock = LEDGER.parent / "pexels_recover.lock"
+    lock.parent.mkdir(parents=True, exist_ok=True)
+    try:
+        fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+    except FileExistsError:
+        raise SystemExit(
+            f"[recover] REFUSING TO START: {lock} exists, so another recovery is writing "
+            f"this ledger. Two writers duplicate rows and burn the 200/hour Pexels budget "
+            f"for no extra throughput. If you are certain none is running, delete that "
+            f"file and re-run.")
+    os.write(fd, f"{os.getpid()}".encode())
+    os.close(fd)
+    atexit.register(lambda: lock.unlink(missing_ok=True))
+
+
 def main() -> int:
     try:
         sys.stdout.reconfigure(encoding="utf-8")
@@ -188,6 +219,7 @@ def main() -> int:
         print("[recover] --plan: nothing written")
         return 0
 
+    single_instance()
     key = api_key()
     s = requests.Session()
     s.headers.update({"Authorization": key})
