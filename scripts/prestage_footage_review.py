@@ -463,6 +463,7 @@ def content_look(slug: str, rows: list[dict], out_dir: Path, pool: Path, jobs: i
 # --------------------------------------------------------------------------------------
 def record_and_stage(slug: str, pool: Path, verdicts_path: Path, plan: dict,
                      decisions: dict, cand_file: Path, dry_run: bool) -> dict:
+    pool_before = {p.name for p in pool.glob("*.mp4")} if pool.is_dir() else set()
     presented = [c["clip"] for c in plan["presented"]]
     rejected_now = {str(k): str(v) for k, v in (decisions.get("reject") or {}).items()}
     unknown = sorted(set(rejected_now) - set(presented))
@@ -518,7 +519,10 @@ def record_and_stage(slug: str, pool: Path, verdicts_path: Path, plan: dict,
         verdicts_path.parent.mkdir(parents=True, exist_ok=True)
         verdicts_path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n",
                                  encoding="utf-8")
-    return {"accepted": accepted, "rejected": rejected_now, "pool_clips": len(names)}
+    # staged_now is measured off the pool directory, not off the accept list: the two came
+    # apart once already (see the --candidates note in main) and the summary believed the list.
+    return {"accepted": accepted, "rejected": rejected_now, "pool_clips": len(names),
+            "staged_now": len(set(names) - pool_before)}
 
 
 # --------------------------------------------------------------------------------------
@@ -563,7 +567,14 @@ def main() -> int:  # noqa: C901
     if not out_dir.is_absolute():
         out_dir = ROOT / out_dir
     plan_path = QC / f"{slug}_prestage.v001.json"
-    cand_file = QC / f"{slug}_prestage_candidates.v001.json"
+    # --candidates was honoured for the REVIEW and ignored at the COPY: staging always read
+    # this default path, so a review of one list staged from another (2026-08-23, EP71: 16
+    # accepted clips matched nothing in an 08-20 file and 0 were copied, under a summary line
+    # that said "16 accepted and staged"). The list that was looked at is the list that is
+    # staged from.
+    cand_file = Path(a.candidates) if a.candidates else QC / f"{slug}_prestage_candidates.v001.json"
+    if not cand_file.is_absolute():
+        cand_file = ROOT / cand_file
 
     spec, spec_problems, _ = load_and_validate(slug)
     era = (spec or {}).get("era_setting") if not spec_problems else None
@@ -580,7 +591,10 @@ def main() -> int:  # noqa: C901
                              "which is the failure this file exists to remove")
         res = record_and_stage(slug, pool, verdicts_path, plan, decisions,
                                cand_file, a.dry_run)
-        print(f"[prestage] {slug}: {len(res['accepted'])} accepted and "
+        # Report what the COPY did, not what the review decided -- those differed silently.
+        _staged = res.get("staged_now")
+        _staged = len(res["accepted"]) if _staged is None else _staged
+        print(f"[prestage] {slug}: {len(res['accepted'])} accepted, {_staged} "
               f"{'would be ' if a.dry_run else ''}staged, {len(res['rejected'])} rejected at "
               f"the content look, {len(plan['dropped'])} dropped mechanically before it. "
               f"Pool now {res['pool_clips']} clip(s).")
