@@ -92,15 +92,25 @@ GB = 1024 ** 3
 TB = 1024 * GB
 
 # --- tiered storage (router falls through in order; C: never used) ---
+# 2026-08-20: THE H: TIER IS GONE AND IS NOT COMING BACK. The plain Samsung T7 that
+# carried it failed its USB interface -- proven by swapping only the drive in a port and
+# cable that the T7 Shield then used successfully, twice. It draws bus power (the LED
+# lights) and never enumerates, so the controller is dead and the ledger it held -- 39,092
+# licensed videos, and the provenance for 88,850 catalogued assets whose files went with
+# it -- is unrecoverable by any means available here.
+#
+# The router already fell through to D/E/F, so the FILES had somewhere to go. Only the
+# LEDGER was pinned to tier 0, which meant a dead tier 0 took the whole shelf's memory with
+# it. That is the same single-point-of-failure the media root had, and it is fixed the same
+# way: the ledger lives on the roomiest surviving drive, and no tier is load-bearing for it.
 TIERS = [
-    {"name": "H", "root": r"H:\pd-media\assets\archive", "drive": "H:\\", "floor": 500 * GB},
-    {"name": "D", "root": r"D:\pd-archive", "drive": "D:\\", "floor": 250 * GB},
     {"name": "E", "root": r"E:\pd-archive", "drive": "E:\\", "floor": 250 * GB},
+    {"name": "D", "root": r"D:\pd-archive", "drive": "D:\\", "floor": 250 * GB},
     {"name": "F", "root": r"F:\pd-archive", "drive": "F:\\", "floor": 50 * GB},
 ]
-H_ROOT = TIERS[0]["root"]
-LEDGER_DIR = os.path.join(H_ROOT, "_ledger")     # ledger centralized on H:
-QUARANTINE = os.path.join(H_ROOT, "_quarantine")  # quarantine on H: only
+LEDGER_ROOT = r"E:\pd-archive"                   # 1,081 GB free at the time of the move
+LEDGER_DIR = os.path.join(LEDGER_ROOT, "_ledger")
+QUARANTINE = os.path.join(LEDGER_ROOT, "_quarantine")
 
 UA = "PrimeDocumentaryIngest/1.0 (archival research; contact: aab153792@gmail.com)"
 MAX_ITEM_BYTES = 2 * GB             # never take a single file bigger than this
@@ -435,6 +445,56 @@ PASS = 1  # current pass number == page number for paginated sources (set by mai
 # queries are deliberately environmental/period-scenery biased (no people terms)
 # priority order: uk_highstreet_postoffice (EP56) first, then the rest
 THEMES: dict[str, dict[str, list[str]]] = {
+    # Added 2026-08-21 for EP74 itaewon. The local shelf holds 14,663 videos -- verified
+    # by counting the files on E:, D: and F:, which match the ledger row for row, so the
+    # index is not the problem: roughly half the video archive went with the H: drive.
+    # Nothing left in it answers "a Korean hillside backstreet at night". Pixabay does --
+    # probed 2026-08-21, "seoul night", "korea street", "night alley", "neon alley",
+    # "wet street night" and "crowd night street" each return the 500-item display cap.
+    #
+    # EXCLUDED ON PURPOSE, learned from this episode's own footage review: bare "alley"
+    # returns the BOTANICAL sense (avenues of trees in parks) and bare "station" returns
+    # the International Space Station. Both are paired here or left out.
+    "itaewon_korea_night": {
+        "video": [
+                  'seoul',
+                  'seoul night',
+                  'seoul street',
+                  'seoul street night',
+                  'korea street',
+                  'korean street',
+                  'korea night',
+                  'korean night street',
+                  'seoul subway',
+                  'subway seoul',
+                  'korean alleyway',
+                  'korea alleyway',
+                  'night alley',
+                  'narrow street night',
+                  'neon alley',
+                  'neon street night',
+                  'wet street night',
+                  'rain street night',
+                  'asian street night',
+                  'night market street',
+                  'crowd night street',
+                  'crowded street night',
+                  'pedestrian night street',
+                  'shop shutter street',
+                  'street food stall night',
+                  'underground station stairs',
+                  'subway escalator crowd',
+                  'turnstile station',
+                  'cctv camera street',
+                  'traffic cone barrier',
+                  'police barrier street',
+                  'empty alley morning',
+                  'street cleaning morning',
+                  'korean signage street',
+        ],
+        "image": ["seoul street", "korea street night", "neon alley"],
+        "audio": [],
+    },
     'uk_highstreet_postoffice': {
         'video': ['british high street', 'post office britain', 'england village shops'],
         'image': ['british high street shops', 'royal mail post office', 'red postbox england'],
@@ -464,6 +524,42 @@ THEMES: dict[str, dict[str, list[str]]] = {
         'video': ['main street 1950s', 'american factory 1940s', 'trains railroad 1950s', 'diner drive-in 1950s', 'american city street 1930s'],
         'image': ['main street storefronts 1950s', 'railroad steam locomotive', 'american diner neon sign', 'factory assembly line 1940s'],
         'audio': ['steam train whistle', 'diner ambience 1950s'],
+    },
+    # 2026-08-20. EP70 wronghouse needs an American suburban / federal-courthouse / 1973
+    # register, and measuring the surviving shelf for it returned Copenhagen, a Japanese
+    # pagoda, Mexican desert highways and 3D chroma-key offices -- 5 of 5 sampled contact
+    # sheets a total loss. The broad theme queries ('small town america', 'rural town street')
+    # then fetched Africa, beaches and a business meeting: 267 items, 21 reaching candidates,
+    # none on register.
+    #
+    # These queries are NOT invented. They are the SUBTYPE NAMES of the lost factory shelf,
+    # read out of the surviving catalogue , which recorded
+    # 141 EP70-relevant video subtypes at ~50 clips each -- front_door_house 57,
+    # government_building_exterior 57, rural_road_america 56, police_badge_close_up 55,
+    # vintage_typewriter 54, american_suburb_aerial 53, courthouse_steps 52,
+    # documents_on_desk 52, law_library_books 52, white_picket_fence 50,
+    # small_town_main_street 49, for_sale_sign_yard 49, long_shadow_of_a_person 49.
+    # That shelf was built from these phrases and it worked; the files died with H:, the
+    # vocabulary did not. A subject is the unit that retrieves footage. A word is not.
+    'ep70_american_suburb': {
+        'video': ['front door house', 'american suburb aerial', 'white picket fence',
+                  'suburban house exterior', 'for sale sign yard', 'small town main street',
+                  'rural road america', 'empty road sunset', 'highway night long exposure',
+                  'moving boxes empty room', 'rain on window night', 'long shadow of a person',
+                  'lone person silhouette walking', 'foggy forest', 'lone tree in field',
+                  'sun through trees forest'],
+        'image': ['front door house', 'american suburb aerial', 'white picket fence',
+                  'suburban house exterior', 'small town main street', 'rural road america'],
+        'audio': [],
+    },
+    'ep70_federal_court': {
+        'video': ['courthouse steps', 'government building exterior', 'law library books',
+                  'documents on desk', 'office interior dark', 'contract paperwork signing',
+                  'us constitution document', 'police badge close up', 'prison corridor',
+                  'vintage typewriter', 'vintage film camera', 'newspaper macro'],
+        'image': ['courthouse steps', 'government building exterior', 'law library books',
+                  'documents on desk', 'us constitution document', 'vintage typewriter'],
+        'audio': [],
     },
     'small_town': {
         'video': ['small town america', 'rural town street', 'county fair town', 'rural highway driving night', 'gas station at night', 'suburban street driving', 'mailbox rural road', 'porch of old house'],

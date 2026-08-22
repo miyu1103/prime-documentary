@@ -218,6 +218,7 @@ def rate_limited(source: str) -> bool:
 
 
 VIDEO_THEMES = [
+    'itaewon_korea_night',   # EP74; see the theme's own comment in ingest_archive_sources.py
     # 2026-08-20: episode-scoped registers, added because the general themes could not
     # supply EP70's. Their queries are the SUBTYPE NAMES of the lost factory shelf, taken
     # from assets/asset_manifest.v001.json -- the vocabulary that actually built a usable
@@ -317,6 +318,28 @@ LANE_STRONG: dict[str, list[str]] = {
                      "tokyo", "london", "paris", "new york", "mexico city",
                      "berlin", "rome", "madrid", "istanbul", "shanghai",
                      "hong kong", "dubai", "singapore", "bangkok"],
+    # Added 2026-08-21 for EP74 itaewon. The local shelf holds 14,663 videos -- verified by
+    # counting the files on E:, D: and F:, which match the ledger exactly, so the index is not
+    # the problem -- and roughly half the archive was lost with the H: drive. Nothing in it
+    # answers "a Korean hillside backstreet at night". Pixabay does: probed 2026-08-21, "seoul
+    # night", "korea street", "night alley", "neon alley", "wet street night" and "crowd night
+    # street" each return the 500-item display cap.
+    #
+    # TERMS DELIBERATELY EXCLUDED, learned from this episode's own footage review: bare "alley"
+    # returns the BOTANICAL sense -- avenues of trees in parks -- and bare "station" returns the
+    # International Space Station. Both are paired here or left out.
+    "itaewon_korea_night": [
+        "seoul", "seoul night", "seoul street", "seoul street night",
+        "korea street", "korean street", "korea night", "korean night street",
+        "seoul subway", "subway seoul", "korean alleyway", "korea alleyway",
+        "night alley", "narrow street night", "neon alley", "neon street night",
+        "wet street night", "rain street night", "asian street night",
+        "night market street", "crowd night street", "crowded street night",
+        "pedestrian night street", "shop shutter street", "street food stall night",
+        "underground station stairs", "subway escalator crowd", "turnstile station",
+        "cctv camera street", "traffic cone barrier", "police barrier street",
+        "empty alley morning", "street cleaning morning", "korean signage street",
+    ],
     "japan": ["japan", "japanese", "tokyo", "kyoto", "osaka", "mount fuji",
               "torii", "shrine", "pagoda", "shinto", "shinkansen", "ryokan",
               "tokyo street", "kyoto temple", "neon street", "temple"],
