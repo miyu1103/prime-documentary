@@ -102,6 +102,17 @@ already_done() {   # slug num -> true when the accepted film is byte-for-byte on
 #   pinto    -- IN. The 1,160-byte pinto_film.json is a placeholder BY DESIGN: its own _placeholder
 #     key says step [4/7] runs build_case_film_generic.py against EP68_pinto_filmconfig.v001.json
 #     and overwrites it before the render. Nothing to rebuild by hand.
+# Before spending three GPU-hours, prove the gates that will judge the result can still
+# reject the thing they exist to reject. Costs no GPU, no network and no quota. Added
+# 2026-08-23, after a gate was found that had stopped applying without failing or warning:
+# it had been keyed to a filename version six of seven episodes no longer used.
+if ! py -3.11 scripts/check_gates_still_bite.py; then
+  echo "[q] REFUSING TO START: a gate has stopped biting. Rendering now would be judged by a"
+  echo "    check that cannot fail. Fix it first, or run with GATES_MAY_SLEEP=1 deliberately."
+  [ "${GATES_MAY_SLEEP:-0}" = "1" ] || exit 1
+  echo "[q] GATES_MAY_SLEEP=1 -- continuing with a known-blunt gate, on purpose."
+fi
+
 JOBS="openfields:Ep66Openfields:66 ramirez:Ep67Ramirez:67 pinto:Ep68Pinto:68 hyatt:Ep69Hyatt:69"
 JOBS_HELD="marmet:Ep65Marmet:65 greene:Ep62Greene:62 correa:Ep63Correa:63"
 
