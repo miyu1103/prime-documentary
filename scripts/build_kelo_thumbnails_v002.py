@@ -18,7 +18,7 @@ EPDIR = ROOT / "episodes" / EP
 THUMB_DIR = EPDIR / "10_thumbnail"
 PACKAGE_DIR = EPDIR / "09_package"
 REMOTION_THUMBS = ROOT / "remotion" / "public" / "kelo" / "thumbs"
-SOURCE_THUMBS = Path("H:/pd-media/assets/ai/thumbs/kelo")
+SOURCE_THUMBS = Path("E:/pd-media/assets/ai/thumbs/kelo")
 SELECTED_BACKGROUND = "THUMB-02.png"
 
 OPTIONS = [

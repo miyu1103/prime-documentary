@@ -24,7 +24,7 @@ from PIL import Image
 
 sys.stdout.reconfigure(encoding="utf-8")
 
-WORK = Path("H:/pd-media/episodes/PD-2026-040-lech/08_edit/ae_hero")
+WORK = Path("E:/pd-media/episodes/PD-2026-040-lech/08_edit/ae_hero")
 SHOTS = WORK / "_compare_qc"
 FFMPEG = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 FFPROBE = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffprobe.exe"

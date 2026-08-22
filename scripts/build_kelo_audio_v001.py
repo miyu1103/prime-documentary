@@ -2,8 +2,8 @@
 """Build Kelo final audio mix and captions.
 
 Outputs:
-- H:/pd-media/.../06_voice/master/vc_master_v001_fit_631s.wav
-- H:/pd-media/.../08_edit/captions.v001.srt
+- E:/pd-media/.../06_voice/master/vc_master_v001_fit_631s.wav
+- E:/pd-media/.../08_edit/captions.v001.srt
 - episodes/.../08_edit/captions.v001.srt
 - remotion/src/data/kelo_captions.ts
 - remotion/public/kelo/audio/kelo_final_mix_v001.mp3

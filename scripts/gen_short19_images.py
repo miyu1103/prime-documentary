@@ -5,7 +5,7 @@ Source: episodes/_planning/SHORTS_EP19-24.md SHORT #19 image list + common style
 R3 / sensitive: living people who pleaded guilty. NO real-person likeness, NO nameable school/logo,
 NO legible real text/numerals. Symbolic reconstruction only (invariant 11).
 Backend: local SDXL (A1111) 127.0.0.1:7860, Juggernaut XL.
-Output : H:/pd-media/assets/ai/shorts/short19/short19_01.png .. _07.png + short19_thumb.png
+Output : E:/pd-media/assets/ai/shorts/short19/short19_01.png .. _07.png + short19_thumb.png
 Idempotent unless --force. --no-hr falls back to base 1088x1920 if hires.fix 500s.
 """
 import argparse
@@ -17,7 +17,7 @@ import urllib.request
 import json
 
 API = "http://127.0.0.1:7860"
-OUT = r"H:/pd-media/assets/ai/shorts/short19"
+OUT = r"E:/pd-media/assets/ai/shorts/short19"
 
 # Common style suffix from SHORTS_EP19-24.md §0 (EP1-8 §1) + vertical/no-text technicals.
 SUFFIX = (

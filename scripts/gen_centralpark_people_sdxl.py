@@ -1,11 +1,11 @@
 """EP50 rebuild: diverse SDXL PEOPLE/FACES to break the repetitive-imagery + no-faces problem.
 Generic anonymized NYC-1989 people (NOT the real Five). JuggernautXL photoreal, moody doc grade.
-Output -> H:/pd-media/assets/ai/centralpark/P<NN>.png + remotion/public/centralpark/img/."""
+Output -> E:/pd-media/assets/ai/centralpark/P<NN>.png + remotion/public/centralpark/img/."""
 import base64, io, json, urllib.request, sys
 from pathlib import Path
 from PIL import Image
 API="http://127.0.0.1:7860"; JUGG="juggernautXL_ragnarokBy.safetensors [dd08fa32f9]"
-OUT=Path(r"H:/pd-media/assets/ai/centralpark"); PUB=Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/centralpark/img")
+OUT=Path(r"E:/pd-media/assets/ai/centralpark"); PUB=Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/centralpark/img")
 OUT.mkdir(parents=True,exist_ok=True); PUB.mkdir(parents=True,exist_ok=True)
 GRADE=("cinematic documentary film still, 1989 New York City, moody low-key lighting, "
        "muted cool teal-and-amber grade, 35mm film grain, shallow depth of field, photoreal, "

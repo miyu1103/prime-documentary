@@ -48,7 +48,7 @@ FPS = 30
 NARR = ROOT / "episodes" / EP / "06_audio" / "narration_index.v001.json"
 FACTORY_SEL = ROOT / "runs" / "qc" / "young_factory_selected.v001.json"
 SRT = ROOT / "episodes" / EP / "08_edit" / "captions.final.v001.srt"
-H_MASTER = Path("H:/pd-media/episodes/PD-2026-042-young/06_voice/master/vc_master_v001.mp3")
+H_MASTER = Path("E:/pd-media/episodes/PD-2026-042-young/06_voice/master/vc_master_v001.mp3")
 
 PUB = ROOT / "remotion" / "public" / "young"
 PUB_IMG = PUB / "img"

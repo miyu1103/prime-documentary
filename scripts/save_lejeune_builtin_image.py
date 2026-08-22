@@ -13,7 +13,7 @@ from PIL import Image, ImageOps
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MEDIA_DIR = Path("H:/pd-media/assets/ai/lejeune")
+MEDIA_DIR = Path("E:/pd-media/assets/ai/lejeune")
 PUBLIC_IMG_DIR = ROOT / "remotion" / "public" / "lejeune" / "img"
 VISUAL_DIR = ROOT / "episodes" / "PD-2026-058-lejeune" / "05_visuals"
 PROGRESS = VISUAL_DIR / "builtin_imagegen_progress.v001.jsonl"

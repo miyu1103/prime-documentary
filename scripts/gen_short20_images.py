@@ -5,7 +5,7 @@ Source: episodes/_planning/SHORTS_EP19-24.md SHORT #20 image list + common style
 R2 / sensitive: unsolved crime. NO real-person likeness, NO named suspect, NO reproduction of the actual
 stolen works (symbolic voids only), NO legible real text. Symbolic reconstruction only (invariant 11).
 Backend: local SDXL (A1111) 127.0.0.1:7860, Juggernaut XL.
-Output : H:/pd-media/assets/ai/shorts/short20/short20_01.png .. _07.png + short20_thumb.png
+Output : E:/pd-media/assets/ai/shorts/short20/short20_01.png .. _07.png + short20_thumb.png
 Idempotent unless --force. --no-hr falls back to base 1088x1920 if hires.fix 500s.
 """
 import argparse
@@ -17,7 +17,7 @@ import urllib.request
 import json
 
 API = "http://127.0.0.1:7860"
-OUT = r"H:/pd-media/assets/ai/shorts/short20"
+OUT = r"E:/pd-media/assets/ai/shorts/short20"
 
 SUFFIX = (
     ", museum-grade cinematic symbolic documentary still, vertical 9:16 full-frame composition, "

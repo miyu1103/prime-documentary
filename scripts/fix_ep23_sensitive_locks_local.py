@@ -22,7 +22,7 @@ import build_ep23_swartz_final as ep23  # noqa: E402
 
 EP = "PD-2026-023-swartz"
 EPDIR = ROOT / "episodes" / EP
-MEDIA = Path("H:/pd-media/episodes") / EP
+MEDIA = Path("E:/pd-media/episodes") / EP
 MASTER_DIR = MEDIA / "06_audio" / "master_elevenlabs_v001"
 SPN7 = MASTER_DIR / "wav" / "SPN-0007.wav"
 VOICE_MASTER = MASTER_DIR / "voice_master.v001.wav"

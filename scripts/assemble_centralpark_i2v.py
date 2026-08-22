@@ -4,7 +4,7 @@ import subprocess, glob, os
 from pathlib import Path
 FF=r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 SRC_DIRS=glob.glob(r"C:/Users/aab15/ae-demo/wan_frames_cp_*")
-OUT=Path(r"H:/pd-media/assets/ai_video/centralpark/motion2"); OUT.mkdir(parents=True,exist_ok=True)
+OUT=Path(r"E:/pd-media/assets/ai_video/centralpark/motion2"); OUT.mkdir(parents=True,exist_ok=True)
 PUB=Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/centralpark/motion2"); PUB.mkdir(parents=True,exist_ok=True)
 made=skip=0
 for d in SRC_DIRS:

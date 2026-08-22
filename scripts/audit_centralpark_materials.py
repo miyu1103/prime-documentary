@@ -20,8 +20,8 @@ VISUALS = EP_DIR / "05_visuals"
 STOCK = EP_DIR / "05_stock"
 MANIFEST = VISUALS / "asset_manifest.v001.json"
 PUBLIC_ROOT = ROOT / "remotion" / "public"
-MEDIA_AI = Path("H:/pd-media/assets/ai/centralpark")
-MEDIA_VIDEO = Path("H:/pd-media/assets/ai_video/centralpark")
+MEDIA_AI = Path("E:/pd-media/assets/ai/centralpark")
+MEDIA_VIDEO = Path("E:/pd-media/assets/ai_video/centralpark")
 
 EXPECTED_COUNTS = {
     "still_body": 430,

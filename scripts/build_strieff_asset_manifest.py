@@ -20,8 +20,8 @@ from PIL import Image, ImageDraw, ImageFilter, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 EPISODE_ID = "PD-2026-049-strieff"
 SLUG = "strieff"
-MEDIA_DIR = Path("H:/pd-media/assets/ai/strieff")
-MOTION_DIR = Path("H:/pd-media/assets/ai_video/strieff")
+MEDIA_DIR = Path("E:/pd-media/assets/ai/strieff")
+MOTION_DIR = Path("E:/pd-media/assets/ai_video/strieff")
 PUBLIC_ROOT = ROOT / "remotion" / "public" / SLUG
 PUBLIC_IMG_DIR = PUBLIC_ROOT / "img"
 VISUALS_DIR = ROOT / "episodes" / EPISODE_ID / "05_visuals"

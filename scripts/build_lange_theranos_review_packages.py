@@ -13,7 +13,7 @@ from urllib import request
 
 
 ROOT = Path(__file__).resolve().parents[1]
-MEDIA = Path("H:/pd-media")
+MEDIA = Path("E:/pd-media")
 A1111 = "http://127.0.0.1:7860/sdapi/v1"
 MODEL = "juggernautXL_ragnarokBy.safetensors [dd08fa32f9]"
 NEG = (

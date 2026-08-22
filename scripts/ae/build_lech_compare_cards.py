@@ -13,7 +13,7 @@ same question. Until now that act had zero cards on screen.
 
 DESIGN DECISION: NO PHOTOGRAPHS
 -------------------------------
-Every still under H:/pd-media/assets/ai/lech is an AI rendering of the Greenwood
+Every still under E:/pd-media/assets/ai/lech is an AI rendering of the Greenwood
 Village house. Laying one of those behind a card about Amy Hadley's house in
 South Bend, or Vicki Baker's in McKinney, would show the viewer a picture of the
 wrong building and imply it is that case. So every card in this deck is pure
@@ -59,7 +59,7 @@ ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
 EP = "PD-2026-040-lech"
 SPEC_OUT = ROOT / "episodes" / "_planning" / "EP40_lech_hero_beats.spec.v001.json"
 REPO_BEATS = ROOT / "episodes" / EP / "08_edit" / "ae_hero" / "beats.json"
-WORK = Path("H:/pd-media/episodes/PD-2026-040-lech/08_edit/ae_hero")
+WORK = Path("E:/pd-media/episodes/PD-2026-040-lech/08_edit/ae_hero")
 # Fixed (measurement-based, de-densified) renders go to a NEW dir so the
 # existing composited renders are never clobbered; re-compositing consumes it.
 OUT = WORK / "fixed"

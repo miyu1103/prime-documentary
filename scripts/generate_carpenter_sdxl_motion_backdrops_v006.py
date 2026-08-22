@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate premium local SDXL backdrops for EP8 Carpenter motion cut v006.
 
-Local A1111 only. No upload. Outputs go to H:/pd-media and are registered
+Local A1111 only. No upload. Outputs go to E:/pd-media and are registered
 later in the episode rights manifest.
 """
 from __future__ import annotations

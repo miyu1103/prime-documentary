@@ -77,7 +77,7 @@ def still_record(path: Path, idx: int) -> dict:
     scene, var_s = m.groups()
     variant = int(var_s)
     source_name = f"{scene}.png" if variant == 1 else f"{scene}_{variant:02d}.png"
-    source = Path("H:/pd-media/assets/ai/frazier") / source_name
+    source = Path("E:/pd-media/assets/ai/frazier") / source_name
     if not source.is_file():
         raise FileNotFoundError(source)
     depth = path.with_name(path.stem + "_depth.png")
@@ -129,7 +129,7 @@ def factory_record(path: Path, idx: int, qc: dict, item: dict) -> dict:
         "max_uses": 1,
         "public_path": public_path(path),
         "abs_path": abs_path(path),
-        "source_path": str(Path("H:/pd-media/assets") / item["path"]).replace("\\", "/"),
+        "source_path": str(Path("E:/pd-media/assets") / item["path"]).replace("\\", "/"),
         "scene_code": scene,
         "act": act_for(scene),
         "variant": None,

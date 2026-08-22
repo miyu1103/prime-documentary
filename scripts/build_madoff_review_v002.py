@@ -3,7 +3,7 @@
 
 No paid APIs, no upload. Uses the existing local draft narration for now.
 Output:
-  H:/pd-media/episodes/PD-2026-005-madoff/08_edit/madoff_review_v002_local_audio.mp4
+  E:/pd-media/episodes/PD-2026-005-madoff/08_edit/madoff_review_v002_local_audio.mp4
   episodes/PD-2026-005-madoff/08_edit/renders/review.proxy.v002.mp4
 """
 from __future__ import annotations

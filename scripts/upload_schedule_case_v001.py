@@ -321,7 +321,7 @@ CONFIG = {
     },
     "forfeiture": {
         "ep": "PD-2026-028-forfeiture",
-        "video": r"H:/pd-media/episodes/PD-2026-028-forfeiture/08_edit/final.v004.mp4",
+        "video": r"E:/pd-media/episodes/PD-2026-028-forfeiture/08_edit/final.v004.mp4",
         "sched_local": "2026-07-13T12:00:00+09:00",
         "sched_utc": "2026-07-13T03:00:00Z",
         "title": "They Took Their House Over $40 — and Never Charged Anyone",
@@ -345,7 +345,7 @@ CONFIG = {
     },
     "katz": {
         "ep": "PD-2026-026-katz",
-        "video": r"H:/pd-media/episodes/PD-2026-026-katz/08_edit/final.v001.mp4",
+        "video": r"E:/pd-media/episodes/PD-2026-026-katz/08_edit/final.v001.mp4",
         "sched_local": "2026-07-11T12:00:00+09:00",
         "sched_utc": "2026-07-11T03:00:00Z",
         "title": "The FBI Recorded His Calls — and Never Touched the Booth",
@@ -371,7 +371,7 @@ CONFIG = {
     },
     "rodriguez": {
         "ep": "PD-2026-027-rodriguez",
-        "video": r"H:/pd-media/episodes/PD-2026-027-rodriguez/08_edit/final.v001.mp4",
+        "video": r"E:/pd-media/episodes/PD-2026-027-rodriguez/08_edit/final.v001.mp4",
         "sched_local": "2026-07-12T12:00:00+09:00",
         "sched_utc": "2026-07-12T03:00:00Z",
         "title": "How Long Can the Police Keep You at a Traffic Stop?",
@@ -558,7 +558,7 @@ CONFIG = {
     },
     "cotton": {
         "ep": "PD-2026-030-cotton",
-        "video": r"H:/pd-media/episodes/PD-2026-030-cotton/08_edit/renders/final.premium.v004.mp4",
+        "video": r"E:/pd-media/episodes/PD-2026-030-cotton/08_edit/renders/final.premium.v004.mp4",
         "sched_local": "2026-07-15T12:00:00+09:00",
         "sched_utc": "2026-07-15T03:00:00Z",
         "title": "She Studied His Face to Be Certain. She Convicted the Wrong Man.",

@@ -17,7 +17,7 @@ This reuses the EXACT winning layout from build_caniglia_thumbnails.py:
     headline glyphs -> the 22px black stroke gives the dark outline ring check_thumb_subject_luma wants.
 The ONE brand change: the lane accent is EP44's TEAL #2FA6A0 (replaces Caniglia's amber). Kicker stays RED.
 
-Backgrounds (episode's own SDXL 4K photoreal stills, H:/pd-media/assets/ai/tekoh):
+Backgrounds (episode's own SDXL 4K photoreal stills, E:/pd-media/assets/ai/tekoh):
   option 1  S36 -- the tall columns and pale marble facade of the Supreme Court seen frontally at
                    night (the 6-3 court that decided it).
   option 2  S04 -- a bare interrogation table with a single lit page and NO recorder present
@@ -39,7 +39,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "episodes" / "PD-2026-044-tekoh" / "09_package"
 # real photoreal stills live on the media SSD
-IMG = Path("H:/pd-media/assets/ai/tekoh")
+IMG = Path("E:/pd-media/assets/ai/tekoh")
 W, H = 1280, 720
 
 FONT_BLACK = "C:/Windows/Fonts/ariblk.ttf"

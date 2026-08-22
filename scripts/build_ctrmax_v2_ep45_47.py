@@ -19,7 +19,7 @@ and its own strong SDXL background still. The ONLY changes are the shared v2 bra
     EP46 tlo:       green  lane/punch/underline    -> gold; kicker red stays.
     EP47 atwater:   violet lane/punch/underline    -> gold; VIOLET kicker -> RED. bg brighten +.
 
-Backgrounds reuse each episode's own selected still (H:/pd-media/assets/ai/<slug>). No SDXL regen.
+Backgrounds reuse each episode's own selected still (E:/pd-media/assets/ai/<slug>). No SDXL regen.
 Output: episodes/PD-2026-0XX-<slug>/09_package/thumbnail.selected.v002.png (v001 preserved).
 
     py -3.11 scripts/build_ctrmax_v2_ep45_47.py
@@ -144,7 +144,7 @@ SPECS = [
      "JAILED OVER", "A SEATBELT", "ATWATER v. LAGO VISTA", (0.62, 0.50)),
 ]
 
-IMG_ROOT = Path("H:/pd-media/assets/ai")
+IMG_ROOT = Path("E:/pd-media/assets/ai")
 
 
 def next_selected(pkg: Path) -> Path:

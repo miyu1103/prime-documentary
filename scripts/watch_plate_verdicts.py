@@ -8,7 +8,7 @@ somebody reviews it. The review's wall clock is added on top of the generation's
 as they land, it is not: the last plate is verdicted minutes after it is written, and the
 episode is already unblocked when the generator stops.
 
-So this watches `H:\pd-media\assets\ai\<slug>\` on an interval, measures every new or
+So this watches `E:\pd-media\assets\ai\<slug>\` on an interval, measures every new or
 CHANGED `.png` the moment it settles, builds the review packet a content reviewer actually
 needs (native-resolution crops, the callback pair side by side, the plate's own order text),
 and appends the reviewer's verdict incrementally to the one file the pre-build gate reads.
@@ -88,7 +88,7 @@ WHAT IS WRITTEN, AND WHERE
     {"schema_version": "plate_verdicts.v001",
      "slug": "openfields",
      "plate_review": {"reviewer": "...", "reviewed_at": "2026-08-11",
-                      "plate_dir": "H:/pd-media/assets/ai/openfields",
+                      "plate_dir": "E:/pd-media/assets/ai/openfields",
                       "plate_id_sha256": "<sha256 of the sorted id list>",
                       "reviewed_ids": ["L070.png", ...]},
      "plates": {"L070.png": {"verdict": "accept", "sha256": "<of the bytes>", "note": "..."},
@@ -1311,7 +1311,7 @@ def main() -> int:
     ap.add_argument("--plate-dir", default=None,
                     help="override check_plate_verdicts.resolve_plate_dir() "
                          "(remotion/public/<slug>/img once staged, else "
-                         "H:/pd-media/assets/ai/<slug>)")
+                         "E:/pd-media/assets/ai/<slug>)")
     ap.add_argument("--verdicts", default=None, help="override the verdict file path")
     ap.add_argument("--receipt", default=None,
                     help="override runs/qc/<slug>_plate_watch.v001.json (use with --plate-dir "

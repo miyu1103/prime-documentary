@@ -8,8 +8,8 @@ concatenates exactly to the plan.v001.json narration_script — so the locked wo
 Delivery arc mirrors short35: L1 intense / L2 building / L3 building / L4 intense / L5 calm.
 
 Writes:
-  H:/pd-media/episodes/<ep>/06_voice/draft/short<NN>/en_us/short<NN>_L?.mp3  (idempotent chunks)
-  H:/pd-media/episodes/<ep>/06_voice/master/short<NN>_vc_master_en_us_v002.mp3
+  E:/pd-media/episodes/<ep>/06_voice/draft/short<NN>/en_us/short<NN>_L?.mp3  (idempotent chunks)
+  E:/pd-media/episodes/<ep>/06_voice/master/short<NN>_vc_master_en_us_v002.mp3
   episodes/<ep>/06_audio/short<NN>_narration_index.v002.en_us.json   (consumed by build_short_mix.py)
 
 Usage: gen_newshort_narration.py --short 38 --ep PD-2026-036-williams [--dry-run]

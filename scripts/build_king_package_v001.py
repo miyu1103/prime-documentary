@@ -17,7 +17,7 @@ EP = ROOT / "episodes" / EPISODE_ID
 PKG = EP / "09_package"
 THUMBS = EP / "10_thumbnail"
 RENDERS = EP / "08_edit" / "renders"
-VIDEO = Path(r"H:\pd-media\episodes\PD-2026-013-king\08_edit\king_premium_v001.mp4")
+VIDEO = Path(r"E:\pd-media\episodes\PD-2026-013-king\08_edit\king_premium_v001.mp4")
 CAPTIONS = EP / "08_edit" / "captions.v001.srt"
 SELECTED_THUMB = PKG / "thumbnail.selected.v001.png"
 SCHEDULE_JST = "2026-06-28T12:00:00+09:00"
@@ -165,7 +165,7 @@ def build_thumbnail_candidates() -> dict[str, object]:
         "revision": "v001",
         "generated_at": generated_at,
         "status": "selected_upload_ready_candidate",
-        "source_note": "Requested THUMB-01..06 files were not present under H:/pd-media/assets/ai/thumbs/king; candidates were rendered from existing King AI stills.",
+        "source_note": "Requested THUMB-01..06 files were not present under E:/pd-media/assets/ai/thumbs/king; candidates were rendered from existing King AI stills.",
         "selection": {
             "selected_id": "B",
             "selected_title": options[1]["title"],
@@ -310,11 +310,11 @@ def build_package() -> None:
         "contains_judge_likeness": False,
         "contains_victim_reenactment": False,
         "source_categories": [
-            {"kind": "ai_stills", "path": "H:/pd-media/assets/ai/king/SPN-*.png", "rights": "project-generated symbolic stills"},
+            {"kind": "ai_stills", "path": "E:/pd-media/assets/ai/king/SPN-*.png", "rights": "project-generated symbolic stills"},
             {"kind": "stock_video", "path": "remotion/public/king/*.mp4", "rights": "asset_map licensed downloads"},
             {"kind": "factory_media", "path": "remotion/public/king/factory/*", "rights": "license=allowed selections from Pexels/Pixabay factory library"},
-            {"kind": "voice", "path": "H:/pd-media/episodes/PD-2026-013-king/06_voice", "rights": "ElevenLabs narration generated for this episode"},
-            {"kind": "music_sfx_mix", "path": "H:/pd-media/episodes/PD-2026-013-king/07_audio/final_mix_v001.mp3", "rights": "project audio mix from allowed local library/generated layers"},
+            {"kind": "voice", "path": "E:/pd-media/episodes/PD-2026-013-king/06_voice", "rights": "ElevenLabs narration generated for this episode"},
+            {"kind": "music_sfx_mix", "path": "E:/pd-media/episodes/PD-2026-013-king/07_audio/final_mix_v001.mp3", "rights": "project audio mix from allowed local library/generated layers"},
         ],
         "accuracy_guards": [
             "King arrest reason is presented as assault.",

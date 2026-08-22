@@ -16,7 +16,7 @@ APPROVALS = EPDIR / "approvals"
 EVENTS = EPDIR / "events" / "events.jsonl"
 MANIFEST = EPDIR / "manifest.json"
 
-VIDEO = Path("H:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v011.mp4")
+VIDEO = Path("E:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v011.mp4")
 THUMB = PKG / "thumbnail.selected.v008.png"
 CAPTIONS = EPDIR / "08_edit" / "captions.v008.structure_v011.srt"
 QC = EPDIR / "08_edit" / "renders" / "final.v011.qc.json"

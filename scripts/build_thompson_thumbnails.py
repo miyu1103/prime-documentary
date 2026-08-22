@@ -9,7 +9,7 @@ render natively at 1920x1080 (task requirement). Palette per the script spec (li
 153 of EP41_thompson_script.en.v001.md): dark navy/black bg + gold #E5B53A accent,
 UPPERCASE headline words, 320px-legible.
 
-Backgrounds (episode's own SDXL photoreal stills, H:/pd-media/assets/ai/thompson):
+Backgrounds (episode's own SDXL photoreal stills, E:/pd-media/assets/ai/thompson):
   option 1 (SELECTED) S02 -- a heavy steel/iron cell door in a concrete wall, wall
                              lamp: the 14 years on death row.  "BURIED FOR 14 YEARS"
   option 2            S24 -- two hands holding up a single glowing sheet of paper in
@@ -39,7 +39,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "episodes" / "PD-2026-041-thompson" / "09_package"
 # real photoreal stills live on the media SSD
-IMG = Path("H:/pd-media/assets/ai/thompson")
+IMG = Path("E:/pd-media/assets/ai/thompson")
 W, H = 1920, 1080
 S = 1.5  # scale factor from the proven 1280x720 layout
 

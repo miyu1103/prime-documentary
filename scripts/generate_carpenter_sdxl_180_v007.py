@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate 180 high-quality symbolic plates for EP8 Carpenter v007.
 
-Local A1111 only. No upload, no paid API. Outputs stay under H:/pd-media.
+Local A1111 only. No upload, no paid API. Outputs stay under E:/pd-media.
 Each of the 18 narrative scenes gets 10 plates for Remotion crossfades,
 pan/zoom motion, and parallax-like visual variety.
 """

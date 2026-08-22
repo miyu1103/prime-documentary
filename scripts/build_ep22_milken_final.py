@@ -36,7 +36,7 @@ from factory_themes import theme_of  # noqa: E402
 EP = "PD-2026-022-milken"
 EP_NUM = 22
 EPDIR = ROOT / "episodes" / EP
-MEDIA = Path("H:/pd-media")
+MEDIA = Path("E:/pd-media")
 EP_MEDIA = MEDIA / "episodes" / EP
 LIB = MEDIA / "library"
 VOICE_ID = "nPczCjzI2devNBz1zQrb"
@@ -1328,7 +1328,7 @@ def write_acceptance_note(precheck: dict[str, Any] | None = None) -> None:
                 "captions": str(CAPTIONS_SRT).replace("\\", "/"),
                 "thumbnails": "episodes/PD-2026-022-milken/10_thumbnail/*.png; 09_package/thumbnail.selected.v001.png",
                 "notes": [
-                    "Hero images must come from Codex app output under H:/pd-media/episodes/PD-2026-022-milken/05_visuals/selected; no local image generation.",
+                    "Hero images must come from Codex app output under E:/pd-media/episodes/PD-2026-022-milken/05_visuals/selected; no local image generation.",
                     "R3 living+pardoned owner review remains required before upload/publish.",
                 ],
                 "independent_gate": precheck,

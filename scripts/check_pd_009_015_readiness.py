@@ -21,7 +21,7 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 PLANNING = ROOT / "episodes" / "_planning"
-MEDIA = Path("H:/pd-media")
+MEDIA = Path("E:/pd-media")
 EPISODES = {
     "9": "PD-2026-009-timbs",
     "10": "PD-2026-010-kelo",

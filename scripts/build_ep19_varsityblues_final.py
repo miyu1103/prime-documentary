@@ -35,7 +35,7 @@ from factory_themes import theme_of  # noqa: E402
 
 EP = "PD-2026-019-varsityblues"
 EPDIR = ROOT / "episodes" / EP
-MEDIA = Path("H:/pd-media")
+MEDIA = Path("E:/pd-media")
 EP_MEDIA = MEDIA / "episodes" / EP
 LIB = MEDIA / "library"
 VOICE_ID = "nPczCjzI2devNBz1zQrb"

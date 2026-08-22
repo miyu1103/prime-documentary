@@ -11,7 +11,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-056-postoffice"
 MANIFEST = ROOT / "episodes" / EP / "05_visuals" / "asset_manifest.v001.json"
-MEDIA_DIR = Path("H:/pd-media/assets/ai/postoffice")
+MEDIA_DIR = Path("E:/pd-media/assets/ai/postoffice")
 PUBLIC_DIR = ROOT / "remotion" / "public" / "postoffice" / "img"
 
 

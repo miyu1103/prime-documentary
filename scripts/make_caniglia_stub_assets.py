@@ -3,7 +3,7 @@
 
 Writes only local dry-run media under remotion/public/caniglia_dryrun plus the
 stub manifest required by the EP43 build handoff. It never writes production
-media under remotion/public/caniglia or H:/pd-media.
+media under remotion/public/caniglia or E:/pd-media.
 """
 from __future__ import annotations
 

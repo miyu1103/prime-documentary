@@ -29,7 +29,7 @@ SCRIPT_REV = "v001"
 SCHEDULE_LOCAL = "2026-07-01T12:00:00+09:00"
 SCHEDULE_UTC = "2026-07-01T03:00:00Z"
 
-VIDEO = Path("H:/pd-media/episodes/PD-2026-016-titan/07_edit/v008.mp4")
+VIDEO = Path("E:/pd-media/episodes/PD-2026-016-titan/07_edit/v008.mp4")
 THUMB = PKG / "thumbnail.selected.v002.png"
 CAPTIONS = EPDIR / "08_edit" / "captions.v008.srt"
 FINAL_QC = EPDIR / "08_edit" / "renders" / "final.v008.qc.json"

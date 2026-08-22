@@ -2,7 +2,7 @@
 """PD Visual System — P03 Asset Scene-Index PoC (PySceneDetect).
 
 READ-ONLY on source media. Writes only a SQLite index (repo data/) and small
-JPEG thumbnails (external approved write root H:/pd-media/previews/...).
+JPEG thumbnails (external approved write root E:/pd-media/previews/...).
 
 Design goals (P03 acceptance):
 - limit to 100-500 assets (never process all 85k)
@@ -135,12 +135,12 @@ def enumerate_assets(root: str, limit: int):
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--media-root", default=r"H:\pd-media\assets")
+    ap.add_argument("--media-root", default=r"E:\pd-media\assets")
     ap.add_argument("--limit", type=int, default=150)
     ap.add_argument("--threshold", type=float, default=27.0)
     ap.add_argument("--db", default=r"data\pd_vs_scene_index.sqlite")
     ap.add_argument("--thumbs-dir",
-                    default=r"H:\pd-media\previews\pd-visual-system\scene_index")
+                    default=r"E:\pd-media\previews\pd-visual-system\scene_index")
     args = ap.parse_args()
 
     if args.limit > 500:

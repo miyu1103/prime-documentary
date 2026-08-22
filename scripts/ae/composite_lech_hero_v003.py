@@ -34,9 +34,9 @@ except Exception:
 
 FFMPEG = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 FFPROBE = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffprobe.exe"
-FIXED = Path("H:/pd-media/episodes/PD-2026-040-lech/08_edit/ae_hero/fixed")
-BASE = Path("H:/pd-media/episodes/PD-2026-040-lech/08_edit/lech_final_bgm.v003.mp4")
-OUT = Path("H:/pd-media/episodes/PD-2026-040-lech/08_edit/lech_final_bgm.v003_ae.mp4")
+FIXED = Path("E:/pd-media/episodes/PD-2026-040-lech/08_edit/ae_hero/fixed")
+BASE = Path("E:/pd-media/episodes/PD-2026-040-lech/08_edit/lech_final_bgm.v003.mp4")
+OUT = Path("E:/pd-media/episodes/PD-2026-040-lech/08_edit/lech_final_bgm.v003_ae.mp4")
 W, H, FPS = 1920, 1080, 30
 
 # id -> (enable_start, enable_end).  Windows recovered from v002_ae vs v001 diff scan,

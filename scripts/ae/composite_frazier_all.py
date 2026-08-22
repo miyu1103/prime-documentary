@@ -16,7 +16,7 @@ import json, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-EDIT = Path("H:/pd-media/episodes/PD-2026-039-frazier/08_edit")
+EDIT = Path("E:/pd-media/episodes/PD-2026-039-frazier/08_edit")
 HERO = EDIT / "ae_hero"
 CARDS_DIR = EDIT / "ae_cards"
 TIMING = ROOT / "scripts" / "ae" / "frazier_cards_timing.json"

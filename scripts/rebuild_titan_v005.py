@@ -30,13 +30,13 @@ PACKAGE = EPDIR / "09_package"
 MANIFEST = EPDIR / "manifest.json"
 EVENTS = EPDIR / "events" / "events.jsonl"
 
-SOURCE_VIDEO = Path("H:/pd-media/episodes/PD-2026-016-titan/07_edit/v001.mp4")
-FINAL_VIDEO = Path(f"H:/pd-media/episodes/PD-2026-016-titan/07_edit/{REV}.mp4")
-MEDIA_AUDIO = Path(f"H:/pd-media/episodes/PD-2026-016-titan/06_audio/titan_final_mix_{REV}.wav")
+SOURCE_VIDEO = Path("E:/pd-media/episodes/PD-2026-016-titan/07_edit/v001.mp4")
+FINAL_VIDEO = Path(f"E:/pd-media/episodes/PD-2026-016-titan/07_edit/{REV}.mp4")
+MEDIA_AUDIO = Path(f"E:/pd-media/episodes/PD-2026-016-titan/06_audio/titan_final_mix_{REV}.wav")
 REM_AUDIO = ROOT / "remotion" / "public" / "titan" / "audio" / f"titan_final_mix_{REV}.wav"
-WORK = Path(f"H:/pd-media/episodes/PD-2026-016-titan/06_audio/final_mix_{REV}_work")
-VOICE_DIR = Path("H:/pd-media/episodes/PD-2026-016-titan/06_voice/draft")
-LIB = Path("H:/pd-media/library")
+WORK = Path(f"E:/pd-media/episodes/PD-2026-016-titan/06_audio/final_mix_{REV}_work")
+VOICE_DIR = Path("E:/pd-media/episodes/PD-2026-016-titan/06_voice/draft")
+LIB = Path("E:/pd-media/library")
 
 PLAN_PATH = RENDERS / f"recut_plan.{REV}.json"
 VIDEO_FILTER = RENDERS / f"titan_{REV}_video.ffscript"

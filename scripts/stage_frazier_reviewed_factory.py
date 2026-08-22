@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from factory_themes import theme_of  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-SHELF = Path("H:/pd-media/assets")
+SHELF = Path("E:/pd-media/assets")
 GLOBAL_MANIFEST = ROOT / "assets" / "asset_manifest.v001.json"
 DEST = ROOT / "remotion/public/frazier/factory/selected"
 QC_OUT = ROOT / "episodes/PD-2026-039-frazier/05_visuals/factory_clip_qc.v001.json"

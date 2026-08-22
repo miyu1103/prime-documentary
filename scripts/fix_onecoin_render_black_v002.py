@@ -15,8 +15,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-017-onecoin"
 EPDIR = ROOT / "episodes" / EP
-SRC = Path("H:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v001.mp4")
-OUT = Path("H:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v002.mp4")
+SRC = Path("E:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v001.mp4")
+OUT = Path("E:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v002.mp4")
 QC = EPDIR / "08_edit" / "renders" / "final.v002.qc.json"
 EVENTS = EPDIR / "events" / "events.jsonl"
 FFMPEG = "ffmpeg"
@@ -139,7 +139,7 @@ def main() -> int:
     artifacts = manifest.setdefault("artifacts", [])
     for aid in ["PD-2026-017-onecoin-final-render-v002", "PD-2026-017-onecoin-final-qc-v002"]:
         artifacts[:] = [a for a in artifacts if a.get("artifact_id") != aid]
-    artifacts.append({"artifact_id": "PD-2026-017-onecoin-final-render-v002", "artifact_type": "final_render", "revision": "v002", "uri": "artifact://H:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v002.mp4", "checksum": sha256(OUT), "status": "candidate", "rights_status": "conditional", "qc_status": "draft_voice"})
+    artifacts.append({"artifact_id": "PD-2026-017-onecoin-final-render-v002", "artifact_type": "final_render", "revision": "v002", "uri": "artifact://E:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v002.mp4", "checksum": sha256(OUT), "status": "candidate", "rights_status": "conditional", "qc_status": "draft_voice"})
     artifacts.append({"artifact_id": "PD-2026-017-onecoin-final-qc-v002", "artifact_type": "final_render_qc", "revision": "v002", "uri": "artifact://episodes/PD-2026-017-onecoin/08_edit/renders/final.v002.qc.json", "checksum": sha256(QC), "status": "candidate", "rights_status": "conditional", "qc_status": "pass"})
     manifest["updated_at"] = datetime.now(timezone.utc).isoformat()
     manifest_path.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")

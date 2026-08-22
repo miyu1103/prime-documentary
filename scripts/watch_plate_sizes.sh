@@ -18,7 +18,7 @@ state = Path("runs/qc/plate_size_watch.txt")
 seen = set(state.read_text(encoding="utf-8").split()) if state.is_file() else set()
 new = []
 for slug in ("pinto", "hyatt", "ramirez", "greene"):
-    d = Path(f"H:/pd-media/assets/ai/{slug}")
+    d = Path(f"E:/pd-media/assets/ai/{slug}")
     if not d.is_dir():
         continue
     for p in d.glob("*.png"):

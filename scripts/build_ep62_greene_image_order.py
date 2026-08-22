@@ -54,8 +54,8 @@ GREENE_A = PLANNING / "EP62_greene_CODEX_BATCH_A.v002.md"
 OUT_MD = PLANNING / "EP62_greene_CODEX_BATCH_B.v001.md"
 OUT_PASTE = PLANNING / "EP62_greene_CODEX_PASTE_B"
 OUT_ALL = PLANNING / "EP62_greene_CODEX_PASTE_ALL.txt"
-SAVE_DIR = r"H:\pd-media\assets\ai\greene"
-STORE = Path(r"H:/pd-media/assets/ai/greene")
+SAVE_DIR = r"E:\pd-media\assets\ai\greene"
+STORE = Path(r"E:/pd-media/assets/ai/greene")
 CHUNK = 7
 
 # ---------------------------------------------------------------------------------------------

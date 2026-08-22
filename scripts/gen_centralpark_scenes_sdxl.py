@@ -1,12 +1,12 @@
 """EP50 rebuild: diverse SDXL SCENES to break the repetitive dark-room imagery.
 Wide variety (NYC establishing / park / institutional-varied / textural detail / media /
 2002 DNA era / time-of-day). NO readable text (SDXL garbles it). Max quality 4K.
-Output -> H:/pd-media/assets/ai/centralpark/V<NN>.png + remotion/public/centralpark/img/."""
+Output -> E:/pd-media/assets/ai/centralpark/V<NN>.png + remotion/public/centralpark/img/."""
 import base64, io, json, urllib.request, sys
 from pathlib import Path
 from PIL import Image
 API="http://127.0.0.1:7860"; JUGG="juggernautXL_ragnarokBy.safetensors [dd08fa32f9]"
-OUT=Path(r"H:/pd-media/assets/ai/centralpark"); PUB=Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/centralpark/img")
+OUT=Path(r"E:/pd-media/assets/ai/centralpark"); PUB=Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/centralpark/img")
 OUT.mkdir(parents=True,exist_ok=True); PUB.mkdir(parents=True,exist_ok=True)
 GRADE=("cinematic documentary film still, moody atmospheric lighting, 35mm film grain, "
        "shallow depth of field, photoreal, high detail, no text, no writing")

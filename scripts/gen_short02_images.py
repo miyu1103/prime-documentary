@@ -4,7 +4,7 @@
 Source: episodes/_planning/SHORTS_EP1-8.md SHORT #2 + §1 style suffix.
 R1 / not sensitive (1963 case). NO real-person likeness, NO logo, NO legible real text.
 Backend: local SDXL (A1111) 127.0.0.1:7860, Juggernaut XL.
-Output : H:/pd-media/assets/ai/shorts/short02/short02_01.png .. _07.png + short02_thumb.png
+Output : E:/pd-media/assets/ai/shorts/short02/short02_01.png .. _07.png + short02_thumb.png
 Idempotent unless --force. Note: hires.fix occasionally returns HTTP 500; --no-hr falls back to 1088x1920.
 """
 import argparse
@@ -16,7 +16,7 @@ import urllib.request
 import json
 
 API = "http://127.0.0.1:7860"
-OUT = r"H:/pd-media/assets/ai/shorts/short02"
+OUT = r"E:/pd-media/assets/ai/shorts/short02"
 
 SUFFIX = (
     ", vertical 9:16 full-frame composition, cinematic documentary still, dramatic moody "

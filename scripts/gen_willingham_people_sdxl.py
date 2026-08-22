@@ -1,11 +1,11 @@
 """EP50 rebuild: diverse SDXL PEOPLE/FACES to break the repetitive-imagery + no-faces problem.
 Generic anonymized NYC-1989 people (NOT the real Five). JuggernautXL photoreal, moody doc grade.
-Output -> H:/pd-media/assets/ai/willingham/P<NN>.png + remotion/public/willingham/img/."""
+Output -> E:/pd-media/assets/ai/willingham/P<NN>.png + remotion/public/willingham/img/."""
 import base64, io, json, urllib.request, sys
 from pathlib import Path
 from PIL import Image
 API="http://127.0.0.1:7860"; JUGG="juggernautXL_ragnarokBy.safetensors [dd08fa32f9]"
-OUT=Path(r"H:/pd-media/assets/ai/willingham"); PUB=Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/willingham/img")
+OUT=Path(r"E:/pd-media/assets/ai/willingham"); PUB=Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/willingham/img")
 OUT.mkdir(parents=True,exist_ok=True); PUB.mkdir(parents=True,exist_ok=True)
 GRADE=("cinematic documentary film still, early 1990s small-town Texas, moody low-key lighting, warm dusty amber-and-teal grade, 35mm film grain, shallow depth of field, photoreal, candid, natural skin, high detail")
 NEG=("skin blemishes, scars, facial scars, spots, moles, acne, blotchy skin, wrinkled leathery skin, skin lesions, red marks, over-detailed pores, cartoon, illustration, cgi, plastic skin, deformed, extra fingers, mutated hands, "

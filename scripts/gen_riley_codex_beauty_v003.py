@@ -2,7 +2,7 @@
 """Generate stronger Riley v003 cinematic stills via local A1111 SDXL.
 
 Codex-controlled local generation. No upload, no publish.
-Outputs go to H:/pd-media and are later copied into remotion/public/riley.
+Outputs go to E:/pd-media and are later copied into remotion/public/riley.
 """
 from __future__ import annotations
 

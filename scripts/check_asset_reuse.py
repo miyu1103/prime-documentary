@@ -12,7 +12,7 @@ reads as "cheap AI slideshow", which is exactly the retention + YPP-policy risk 
 The cap is deliberately asymmetric, because the assets differ in cost:
 
   * FACTORY stock clips -- effectively free: an 11,443-clip library sits on
-    H:/pd-media/assets/factory. There is no excuse to repeat one. CAP = 1.
+    E:/pd-media/assets/factory. There is no excuse to repeat one. CAP = 1.
   * i2v MOTION shots -- very expensive (~24-73 GPU-min each). CAP = 2.
   * SDXL STILLS -- cheap-ish but not free. CAP = 2.
 

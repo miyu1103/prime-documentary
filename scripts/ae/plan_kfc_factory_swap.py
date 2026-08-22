@@ -17,7 +17,7 @@ from pathlib import Path
 ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
 EP = "PD-2026-038-kidsforcash"
 FILM = ROOT / "remotion" / "src" / "data" / "kidsforcash_film.json"
-LIBDIR = Path(r"H:/pd-media/assets/factory/backgrounds")
+LIBDIR = Path(r"E:/pd-media/assets/factory/backgrounds")
 OUT = ROOT / "episodes" / EP / "08_edit" / "ae_hero" / "factory_swap"
 QC = OUT / "qc_frames"
 FFMPEG = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"

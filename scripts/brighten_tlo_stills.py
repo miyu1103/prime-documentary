@@ -12,7 +12,7 @@ import numpy as np
 from PIL import Image, ImageEnhance
 
 ROOT = Path(__file__).resolve().parents[1]
-AI_DIR = Path("H:/pd-media/assets/ai/tlo")
+AI_DIR = Path("E:/pd-media/assets/ai/tlo")
 PUBLIC_IMG = ROOT / "remotion" / "public" / "tlo" / "img"
 FLOOR = 45.0
 TARGET = 58.0

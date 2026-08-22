@@ -15,7 +15,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MUS = Path("H:/pd-media/library/music")
+MUS = Path("E:/pd-media/library/music")
 OUT = ROOT / "episodes" / "PD-2026-030-cotton" / "06_audio" / "bgm_bed.v001.mp3"
 TARGET = 710.0           # ~ video length
 OUTRO_LEN = 159.68

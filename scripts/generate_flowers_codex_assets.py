@@ -29,9 +29,9 @@ EP = "PD-2026-054-flowers"
 SLUG = "flowers"
 VISUALS = ROOT / "episodes" / EP / "05_visuals"
 STOCK = ROOT / "episodes" / EP / "05_stock"
-MEDIA_AI = Path("H:/pd-media/assets/ai/flowers")
-MEDIA_VIDEO = Path("H:/pd-media/assets/ai_video/flowers")
-SHELF = Path("H:/pd-media/assets")
+MEDIA_AI = Path("E:/pd-media/assets/ai/flowers")
+MEDIA_VIDEO = Path("E:/pd-media/assets/ai_video/flowers")
+SHELF = Path("E:/pd-media/assets")
 PUBLIC = ROOT / "remotion" / "public" / SLUG
 CATALOG = ROOT / "assets" / "asset_manifest.v001.json"
 

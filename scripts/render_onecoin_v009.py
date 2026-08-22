@@ -25,7 +25,7 @@ REMOTION = ROOT / "remotion"
 ROUGH = REMOTION / "src" / "data" / "onecoin_roughcut.ts"
 BOOKENDS = REMOTION / "src" / "components" / "Bookends.tsx"
 AUDIO = REMOTION / "public" / "onecoin" / "audio" / "onecoin_final_mix_v009.wav"
-MEDIA = Path("H:/pd-media")
+MEDIA = Path("E:/pd-media")
 OUT_DIR = MEDIA / "episodes" / EP / "07_edit"
 CHAPTER_DIR = OUT_DIR / "chapters_v009"
 CHUNK_DIR = OUT_DIR / "chapter_chunks_v009"
@@ -322,7 +322,7 @@ def update_manifest() -> None:
             "artifact_id": "PD-2026-017-onecoin-final-render-v009",
             "artifact_type": "final_render",
             "revision": "v009",
-            "uri": "artifact://H:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v009.mp4",
+            "uri": "artifact://E:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v009.mp4",
             "checksum": sha256(FINAL),
             "status": "candidate",
             "rights_status": "conditional",

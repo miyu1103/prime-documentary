@@ -8,7 +8,7 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
-H_AI = Path("H:/pd-media/assets/ai/young")
+H_AI = Path("E:/pd-media/assets/ai/young")
 PUBLIC_IMG = ROOT / "remotion" / "public" / "young" / "img"
 
 

@@ -15,8 +15,8 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-042-young"
 SLUG = "young"
-H_AI = Path("H:/pd-media/assets/ai/young")
-H_MOTION = Path("H:/pd-media/assets/ai_video/young")
+H_AI = Path("E:/pd-media/assets/ai/young")
+H_MOTION = Path("E:/pd-media/assets/ai_video/young")
 PUBLIC = ROOT / "remotion" / "public" / SLUG
 EP_DIR = ROOT / "episodes" / EP
 OUT_MANIFEST = EP_DIR / "05_visuals" / "asset_manifest.v001.json"

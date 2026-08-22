@@ -11,7 +11,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-048-glover"
 MANIFEST = ROOT / "episodes" / EP / "05_visuals" / "asset_manifest.v001.json"
-MEDIA_DIR = Path("H:/pd-media/assets/ai/glover")
+MEDIA_DIR = Path("E:/pd-media/assets/ai/glover")
 PUBLIC_DIR = ROOT / "remotion" / "public" / "glover" / "img"
 
 

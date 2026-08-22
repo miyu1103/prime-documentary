@@ -16,11 +16,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-017-onecoin"
 EPDIR = ROOT / "episodes" / EP
-SRC = Path("H:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v001.mp4")
-OUT = Path("H:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v003.mp4")
+SRC = Path("E:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v001.mp4")
+OUT = Path("E:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v003.mp4")
 QC = EPDIR / "08_edit" / "renders" / "final.v003.qc.json"
 EVENTS = EPDIR / "events" / "events.jsonl"
-LOG = Path("H:/pd-media/episodes/PD-2026-017-onecoin/07_edit/fix_onecoin_render_motion_v003.log")
+LOG = Path("E:/pd-media/episodes/PD-2026-017-onecoin/07_edit/fix_onecoin_render_motion_v003.log")
 FFMPEG = "ffmpeg"
 FFPROBE = "ffprobe"
 
@@ -87,7 +87,7 @@ def manifest_update(render_sha: str, qc_sha: str) -> None:
             "artifact_id": "PD-2026-017-onecoin-final-render-v003",
             "artifact_type": "final_render",
             "revision": "v003",
-            "uri": "artifact://H:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v003.mp4",
+            "uri": "artifact://E:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v003.mp4",
             "checksum": render_sha,
             "status": "candidate",
             "rights_status": "conditional",

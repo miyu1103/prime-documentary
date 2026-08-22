@@ -43,7 +43,7 @@ py -3.11 scripts/assemble_episode_i2v.py --slug "$SLUG" >> "$LOG" 2>&1 || die "a
 
 say "[2/7] copy i2v motion into the render-visible public dir"
 mkdir -p "remotion/public/${SLUG}/motion"
-cp -n "H:/pd-media/assets/ai_video/${SLUG}/motion/"*.mp4 "remotion/public/${SLUG}/motion/" 2>/dev/null
+cp -n "E:/pd-media/assets/ai_video/${SLUG}/motion/"*.mp4 "remotion/public/${SLUG}/motion/" 2>/dev/null
 say "  motion clips visible: $(ls remotion/public/${SLUG}/motion/*.mp4 2>/dev/null | wc -l)"
 
 say "[2b/7] enforce episode blocklist after source copy (img + motion)"

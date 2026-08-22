@@ -74,7 +74,7 @@ done
 
 echo "[all] QUEUE DONE $(date)" | tee -a "$LOG"
 for slug in flowers morton willingham norfolk burge postoffice; do
-  n=$(ls "H:/pd-media/assets/ai_video/${slug}/motion/"*.mp4 2>/dev/null | wc -l)
+  n=$(ls "E:/pd-media/assets/ai_video/${slug}/motion/"*.mp4 2>/dev/null | wc -l)
   echo "[all] $slug motion mp4 = $n" | tee -a "$LOG"
 done
 echo "[all] NEXT: rebuild manifests -> film.json -> pre-gate -> ONE render each" | tee -a "$LOG"

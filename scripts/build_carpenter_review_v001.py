@@ -2,7 +2,7 @@
 """Build PD-2026-008 Carpenter first-cut review render.
 
 Uses Remotion for visuals and FFmpeg for final audio/caption mix.
-No upload. Heavy media stays under H:/pd-media.
+No upload. Heavy media stays under E:/pd-media.
 """
 from __future__ import annotations
 

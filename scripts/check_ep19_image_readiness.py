@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-019-varsityblues"
 EPDIR = ROOT / "episodes" / EP
-SELECTED = Path("H:/pd-media") / "episodes" / EP / "05_visuals" / "selected"
+SELECTED = Path("E:/pd-media") / "episodes" / EP / "05_visuals" / "selected"
 REPORT = EPDIR / "08_edit" / "image_readiness.v001.json"
 EXPECTED = 92
 MIN_LONG_EDGE = 3840

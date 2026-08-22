@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Generate EP51 Willingham non-SDXL still assets locally.
 
-This is intentionally limited to image files under H:/pd-media/assets/ai/willingham.
+This is intentionally limited to image files under E:/pd-media/assets/ai/willingham.
 It does not write the episode manifest, stock selections, Remotion source, or video.
 """
 from __future__ import annotations
@@ -22,7 +22,7 @@ EMBER = (194, 90, 46)
 COLD = (127, 168, 176)
 INK = (11, 10, 9)
 BONE = (236, 231, 223)
-OUT_DIR = Path("H:/pd-media/assets/ai/willingham")
+OUT_DIR = Path("E:/pd-media/assets/ai/willingham")
 
 
 def sha256(path: Path) -> str:

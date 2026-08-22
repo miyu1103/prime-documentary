@@ -65,7 +65,7 @@ DAWN = [0.788, 0.541, 0.235]     # #C98A3C dawn-amber -- exoneration/close momen
 WHITE = [0.961, 0.969, 0.980]    # #F5F7FA
 SILVER = [0.784, 0.804, 0.839]   # #C8CDD6 labels / disclosure
 
-STILLS = Path("H:/pd-media/assets/ai/centralpark")
+STILLS = Path("E:/pd-media/assets/ai/centralpark")
 
 # Bookend offset: figures[] and these AE beats are body/narration-relative.
 # Absolute time in the finished bookended base mp4 = start + FILM_OFFSET_SEC.

@@ -61,7 +61,7 @@ INK = [0.039, 0.039, 0.047]      # #0A0A0C near-black root
 DAWN = [0.788, 0.541, 0.227]     # #C98A3A single doorway/dawn practical glow
 RED = [0.780, 0.290, 0.243]      # #C74A3E strike mark only
 
-STILLS = Path("H:/pd-media/assets/ai/strieff")
+STILLS = Path("E:/pd-media/assets/ai/strieff")
 
 # Bookend offset: figures[] and these AE beats are body/narration-relative.
 # Absolute time in the finished bookended base mp4 = start + FILM_OFFSET_SEC.

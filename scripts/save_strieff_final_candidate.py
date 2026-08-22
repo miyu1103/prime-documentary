@@ -9,7 +9,7 @@ from PIL import Image, ImageFilter, ImageOps
 
 ROOT = Path(__file__).resolve().parents[1]
 GENERATED_ROOT = Path.home() / ".codex" / "generated_images"
-MEDIA_DIR = Path("H:/pd-media/assets/ai/strieff_final_v002")
+MEDIA_DIR = Path("E:/pd-media/assets/ai/strieff_final_v002")
 PUBLIC_DIR = ROOT / "remotion" / "public" / "strieff_final_v002" / "img"
 
 

@@ -12,7 +12,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 EPISODE_ID = "PD-2026-047-atwater"
 SLUG = "atwater"
-MEDIA_DIR = Path("H:/pd-media/assets/ai/atwater")
+MEDIA_DIR = Path("E:/pd-media/assets/ai/atwater")
 PUBLIC_DIR = ROOT / "remotion" / "public" / SLUG / "img"
 VISUALS_DIR = ROOT / "episodes" / EPISODE_ID / "05_visuals"
 

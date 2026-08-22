@@ -2,7 +2,7 @@
 """Select EP42 (young) real factory footage from the Asset Factory shelf.
 
 Models scripts/build_thompson_film.py's FACTORY_SEL flow: pick real .mp4 clips from
-H:/pd-media/assets/factory/backgrounds that fit EP42's DARK / CINEMATIC / LEGAL tone
+E:/pd-media/assets/factory/backgrounds that fit EP42's DARK / CINEMATIC / LEGAL tone
 (courthouse, marble, night interiors, documents, doors), with:
   - sha256 NO-OVERLAP against EP39 (frazier) / EP40 (lech) / EP41 (thompson) staged factory,
   - per-subtype caps for visual variety,
@@ -28,7 +28,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SHELF = Path("H:/pd-media/assets/factory/backgrounds")
+SHELF = Path("E:/pd-media/assets/factory/backgrounds")
 PRIOR_FACTORY = [ROOT / "remotion" / "public" / s / "factory"
                  for s in ("frazier", "lech", "thompson")]   # EP39 / EP40 / EP41
 QC = ROOT / "runs" / "qc"

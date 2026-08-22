@@ -15,8 +15,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-023-swartz"
 EPDIR = ROOT / "episodes" / EP
-SELECTED = Path("H:/pd-media/episodes/PD-2026-023-swartz/05_visuals/selected")
-FINAL = Path("H:/pd-media/episodes/PD-2026-023-swartz/08_edit/final.mp4")
+SELECTED = Path("E:/pd-media/episodes/PD-2026-023-swartz/05_visuals/selected")
+FINAL = Path("E:/pd-media/episodes/PD-2026-023-swartz/08_edit/final.mp4")
 LOG_DIR = EPDIR / "09_package" / "logs"
 
 

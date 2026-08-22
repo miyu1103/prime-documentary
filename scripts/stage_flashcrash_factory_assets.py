@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Stage licensed factory assets for EP18 Flash Crash.
 
-Copies selected shelf assets from H:/pd-media into remotion/public so Remotion
+Copies selected shelf assets from E:/pd-media into remotion/public so Remotion
 can render them, then writes a rights ledger and the TS data consumed by the
 FlashCrashPremium composition. No network or paid provider calls.
 """

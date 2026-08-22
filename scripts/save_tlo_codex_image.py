@@ -8,7 +8,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 GEN_ROOT = Path(r"C:/Users/aab15/.codex/generated_images")
-MEDIA_ROOT = Path(r"H:/pd-media/assets/ai/tlo")
+MEDIA_ROOT = Path(r"E:/pd-media/assets/ai/tlo")
 PUBLIC_ROOT = ROOT / "remotion" / "public" / "tlo" / "img"
 TARGET = (3840, 2160)
 

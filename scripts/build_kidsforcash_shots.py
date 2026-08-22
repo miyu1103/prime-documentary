@@ -12,8 +12,8 @@ from pathlib import Path
 ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
 EP = "PD-2026-038-kidsforcash"
 SHOTLIST = ROOT / "episodes" / EP / "04_scenes" / "shotlist.v001.json"
-STILL_DIR = Path(r"H:/pd-media/assets/ai/kidsforcash")
-RIFE_DIR = Path(r"H:/pd-media/assets/ai_video/kidsforcash")
+STILL_DIR = Path(r"E:/pd-media/assets/ai/kidsforcash")
+RIFE_DIR = Path(r"E:/pd-media/assets/ai_video/kidsforcash")
 OUTDIR = ROOT / "episodes" / EP / "08_edit" / "shots"
 FFMPEG = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 FFPROBE = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffprobe.exe"
@@ -36,8 +36,8 @@ def stem_of(shot: dict) -> str:
 
 
 OVERLAYS = [
-    Path(r"H:/pd-media/assets/factory/particle_assets/AF-PART-0049__dust_particles_floating.mp4"),
-    Path(r"H:/pd-media/assets/factory/light_assets/AF-LIGHT-0060__light_leak_overlay.mp4"),
+    Path(r"E:/pd-media/assets/factory/particle_assets/AF-PART-0049__dust_particles_floating.mp4"),
+    Path(r"E:/pd-media/assets/factory/light_assets/AF-LIGHT-0060__light_leak_overlay.mp4"),
 ]
 
 

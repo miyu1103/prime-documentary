@@ -26,7 +26,7 @@ from pathlib import Path
 
 sys.stdout.reconfigure(encoding="utf-8")
 
-WORK = Path("H:/pd-media/episodes/PD-2026-039-frazier/08_edit/ae_hero")
+WORK = Path("E:/pd-media/episodes/PD-2026-039-frazier/08_edit/ae_hero")
 RENDER = WORK
 FFMPEG = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 FFPROBE = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffprobe.exe"

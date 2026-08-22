@@ -15,7 +15,8 @@
 # is absent -- E: swapped, unplugged, or a different disk -- it exits 1 and maps nothing, because
 # a wrong H: is worse than no H:: the scripts would run and write to the wrong place.
 #
-# THIS IS THE BANDAGE, NOT THE CURE. The cure is removing `H:\pd-media` from those 339 scripts.
+# THIS IS THE BANDAGE, NOT THE CURE. The cure is removing `H:\pd-media` from those scripts -- scripts/fix_h_paths.py did 385 of
+# them on 2026-08-22; this task still covers the .json records and anything added since.
 
 $ErrorActionPreference = 'Continue'
 $repo   = 'C:\Users\aab15\Documents\prime-documentary'

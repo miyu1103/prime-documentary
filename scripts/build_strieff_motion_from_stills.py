@@ -16,8 +16,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SLUG = "strieff"
-SRC_DIR = Path("H:/pd-media/assets/ai/strieff")
-OUT_DIR = Path("H:/pd-media/assets/ai_video/strieff")
+SRC_DIR = Path("E:/pd-media/assets/ai/strieff")
+OUT_DIR = Path("E:/pd-media/assets/ai_video/strieff")
 PUBLIC_DIR = ROOT / "remotion" / "public" / SLUG / "motion"
 
 

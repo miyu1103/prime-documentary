@@ -28,8 +28,8 @@ from pathlib import Path
 ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
 EP = "PD-2026-050-centralpark"
 IDX = ROOT / "episodes" / EP / "06_audio" / "narration_index.v001.json"
-VO = Path(r"H:/pd-media/episodes/PD-2026-050-centralpark/06_voice/master/vc_master_v001.mp3")
-LIB = Path(r"H:/pd-media/library")
+VO = Path(r"E:/pd-media/episodes/PD-2026-050-centralpark/06_voice/master/vc_master_v001.mp3")
+LIB = Path(r"E:/pd-media/library")
 MUS = LIB / "music"
 AMB = LIB / "ambience"
 FFMPEG = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"

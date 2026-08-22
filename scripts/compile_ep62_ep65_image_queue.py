@@ -188,7 +188,7 @@ def build_queue() -> list[dict[str, object]]:
                     "asset_id": asset_id,
                     "filename": f"{asset_id}.png",
                     "kind": "body_thumbnail_shared" if is_thumb else "body",
-                    "destination": str(Path(f"H:/pd-media/assets/ai/{order.slug}/{asset_id}.png")),
+                    "destination": str(Path(f"E:/pd-media/assets/ai/{order.slug}/{asset_id}.png")),
                     "source_markdown": str(order.order_path),
                     "prompt": full_prompt,
                 }
@@ -211,7 +211,7 @@ def build_queue() -> list[dict[str, object]]:
                 "asset_id": order.new_thumb_id,
                 "filename": f"{order.new_thumb_id}.png",
                 "kind": "thumbnail_only",
-                "destination": str(Path(f"H:/pd-media/assets/ai/{order.slug}/{order.new_thumb_id}.png")),
+                "destination": str(Path(f"E:/pd-media/assets/ai/{order.slug}/{order.new_thumb_id}.png")),
                 "source_markdown": str(order.thumb_path),
                 "prompt": re.sub(r"\s+", " ", new_prompt).strip(),
             }

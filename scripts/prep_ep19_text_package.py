@@ -98,7 +98,7 @@ def main() -> int:
                 "voice_provider": "elevenlabs",
                 "captions_file": "episodes/PD-2026-019-varsityblues/08_edit/captions.v001.srt",
                 "captions_format": "max line chars 42; max cps measured 16.21",
-                "audio_mix": "H:/pd-media/episodes/PD-2026-019-varsityblues/08_edit/varsityblues_final_mix.v001.wav",
+                "audio_mix": "E:/pd-media/episodes/PD-2026-019-varsityblues/08_edit/varsityblues_final_mix.v001.wav",
                 "audio_loudness_precheck": "-14.3 LUFS",
                 "factory_assets_staged": 64,
             },

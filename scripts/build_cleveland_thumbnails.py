@@ -15,7 +15,7 @@ This reuses the EXACT winning layout from build_caniglia_thumbnails.py:
     headline glyphs -> the 22px black stroke gives the dark outline ring check_thumb_subject_luma wants.
 The ONE brand change: the lane accent is EP45's CRIMSON #B23A48 (replaces Caniglia's amber). Kicker RED.
 
-Backgrounds (episode's own SDXL 4K photoreal stills, H:/pd-media/assets/ai/cleveland):
+Backgrounds (episode's own SDXL 4K photoreal stills, E:/pd-media/assets/ai/cleveland):
   option 1  S04 -- a heavy county intake / booking door standing shut in a cold grey block corridor
                    (no bars, no cell -- the door that closes on a debt that was never a crime).
   option 2  S01 -- a thick stack of unpaid citations, edges printed in overdue crimson, bound with a
@@ -36,7 +36,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "episodes" / "PD-2026-045-cleveland" / "09_package"
 # real photoreal stills live on the media SSD
-IMG = Path("H:/pd-media/assets/ai/cleveland")
+IMG = Path("E:/pd-media/assets/ai/cleveland")
 W, H = 1280, 720
 
 FONT_BLACK = "C:/Windows/Fonts/ariblk.ttf"

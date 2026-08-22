@@ -60,7 +60,7 @@ INK = [0.039, 0.039, 0.047]      # #0A0A0C near-black root
 DAWN = [0.788, 0.541, 0.227]     # #C98A3A single doorway/dawn practical glow
 RED = [0.780, 0.290, 0.243]      # #C74A3E r01 REJECTED mark only
 
-STILLS = Path("H:/pd-media/assets/ai/young")
+STILLS = Path("E:/pd-media/assets/ai/young")
 
 # Bookend offset: figures[] and these AE beats are body/narration-relative.
 # Absolute time in the finished bookended base mp4 = start + FILM_OFFSET_SEC.
@@ -210,7 +210,7 @@ def build(dryrun: bool) -> int:
     if dryrun:
         media = work
     else:
-        media = Path("H:/pd-media/episodes") / EP / "08_edit" / "ae_hero"
+        media = Path("E:/pd-media/episodes") / EP / "08_edit" / "ae_hero"
     render = media / "render"
     media.mkdir(parents=True, exist_ok=True)
     render.mkdir(parents=True, exist_ok=True)

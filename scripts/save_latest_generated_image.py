@@ -8,7 +8,7 @@ from PIL import Image
 
 
 GEN_ROOT = Path(r"C:/Users/aab15/.codex/generated_images")
-MEDIA_ROOT = Path(r"H:/pd-media/assets/ai/tekoh")
+MEDIA_ROOT = Path(r"E:/pd-media/assets/ai/tekoh")
 PUBLIC_ROOT = Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/tekoh/img")
 
 

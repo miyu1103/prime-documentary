@@ -10,7 +10,7 @@ winning 1280x720 layout is scaled 1.0 -> 1.5 to render natively at 1920x1080.
 EP42 palette (task spec): warrant-blue accent #3B7DD8 on dark INK #0A0A0C, UPPERCASE
 headline words, 320px-legible.
 
-Backgrounds (episode's own photoreal stills, H:/pd-media/assets/ai/young):
+Backgrounds (episode's own photoreal stills, E:/pd-media/assets/ai/young):
   option 1 (SELECTED) S40 -- a brick building front door with iron railing: the raided
                              address.  "THE WRONG HOUSE"
   option 2            S03 -- a single pair of handcuffs on a bare wooden floor, lit:
@@ -41,7 +41,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "episodes" / "PD-2026-042-young" / "09_package"
 # real photoreal stills live on the media SSD
-IMG = Path("H:/pd-media/assets/ai/young")
+IMG = Path("E:/pd-media/assets/ai/young")
 W, H = 1920, 1080
 S = 1.5  # scale factor from the proven 1280x720 layout
 

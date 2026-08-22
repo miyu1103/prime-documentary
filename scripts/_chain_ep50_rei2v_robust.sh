@@ -49,7 +49,7 @@ done
 
 echo "[robust] i2v phase done people=$(count_people)/76 -> assemble $(date)" >> $LOG
 py -3.11 scripts/assemble_centralpark_i2v.py >> out_i2v_reclean2.log 2>&1
-CPN=$(ls H:/pd-media/assets/ai_video/centralpark/motion2/cp_P*.mp4 2>/dev/null | wc -l)
+CPN=$(ls E:/pd-media/assets/ai_video/centralpark/motion2/cp_P*.mp4 2>/dev/null | wc -l)
 echo "[robust] ASSEMBLE DONE cp_P mp4=$CPN" >> $LOG
 # free VRAM for the render: kill ComfyUI
 for pid in $(netstat -ano 2>/dev/null | grep ':8188' | grep LISTENING | grep -oE '[0-9]+$' | head -1); do taskkill //F //PID $pid >/dev/null 2>&1; done

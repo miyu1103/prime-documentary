@@ -5,7 +5,7 @@ import base64, io, json, urllib.request, sys
 from pathlib import Path
 from PIL import Image
 API="http://127.0.0.1:7860"; JUGG="juggernautXL_ragnarokBy.safetensors [dd08fa32f9]"
-OUT=Path(r"H:/pd-media/assets/ai/centralpark"); PUB=Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/centralpark/img")
+OUT=Path(r"E:/pd-media/assets/ai/centralpark"); PUB=Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/centralpark/img")
 GRADE=("cinematic documentary film still, 1989 New York City, moody low-key lighting, muted cool "
        "teal-and-amber grade, 35mm film grain, shallow depth of field, photoreal, candid, natural skin, high detail")
 NEG=("skin blemishes, scars, facial scars, spots, moles, acne, blotchy skin, wrinkled leathery skin, skin lesions, red marks, over-detailed pores, cartoon, illustration, cgi, plastic skin, deformed, extra fingers, mutated hands, bad anatomy, "

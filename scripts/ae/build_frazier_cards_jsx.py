@@ -51,7 +51,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
 SCRIPT = ROOT / "episodes" / "_planning" / "EP39_frazier_script.en.v001.md"
-WORK = Path("H:/pd-media/episodes/PD-2026-039-frazier/08_edit/ae_cards")
+WORK = Path("E:/pd-media/episodes/PD-2026-039-frazier/08_edit/ae_cards")
 
 FPS = 30
 W, H = 1920, 1080

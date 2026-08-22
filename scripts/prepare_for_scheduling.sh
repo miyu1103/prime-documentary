@@ -39,7 +39,7 @@ while :; do
 
     echo "[prep] $slug $(date)" | tee -a "$LOG"
     py -3.11 scripts/build_thumbs_ctr_v2.py --slug "$slug" \
-        --face "H:/pd-media/assets/ai/${slug}/thumb/$(echo ${slug} | tr a-z A-Z)_FACE_v001.png" \
+        --face "E:/pd-media/assets/ai/${slug}/thumb/$(echo ${slug} | tr a-z A-Z)_FACE_v001.png" \
         --line1 "$l1" --line2 "$l2" --shock-word "$shock" >> "$LOG" 2>&1
     py -3.11 /c/Users/aab15/scratchpad/add_config_from_draft.py --slug "$slug" \
         --draft "$draft" --date "$date" >> "$LOG" 2>&1

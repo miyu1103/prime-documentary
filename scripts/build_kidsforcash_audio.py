@@ -32,7 +32,7 @@ EP = "PD-2026-038-kidsforcash"
 EPDIR = ROOT / "episodes" / EP
 PUB = ROOT / "remotion" / "public" / "kidsforcash"
 SFXDIR = ROOT / "remotion" / "public" / "florence" / "sfx"   # reusable Florence SFX
-LIB = Path("H:/pd-media/library")
+LIB = Path("E:/pd-media/library")
 
 # ---- Timeline (hook-first, cold open; brand overlaid in video, not in this audio) ------
 LEAD = 0.0                 # narration t0 lands at audio 0

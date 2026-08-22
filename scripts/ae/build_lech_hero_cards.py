@@ -41,14 +41,14 @@ ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
 EP = "PD-2026-040-lech"
 SPEC_OUT = ROOT / "episodes" / "_planning" / "EP40_lech_hero_beats.spec.v001.json"
 REPO_BEATS = ROOT / "episodes" / EP / "08_edit" / "ae_hero" / "beats.json"
-WORK = Path("H:/pd-media/episodes/PD-2026-040-lech/08_edit/ae_hero")
+WORK = Path("E:/pd-media/episodes/PD-2026-040-lech/08_edit/ae_hero")
 # Fixed (measurement-based) renders go to a NEW dir so the existing composited
 # renders are never clobbered; re-compositing consumes ae_hero/fixed/.
 OUT = WORK / "fixed"
 
 FPS = 30
 W, H = 1920, 1080
-STILLS = Path("H:/pd-media/assets/ai/lech")
+STILLS = Path("E:/pd-media/assets/ai/lech")
 
 # DESIGN v002 section 9.4 colour constants (0..1 float)
 GOLD = [0.898, 0.710, 0.227]

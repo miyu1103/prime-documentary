@@ -19,8 +19,8 @@ import argparse, json, subprocess, sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-REG = Path("H:/pd-media/library/music_registry.v001.json")
-MEDIA = Path("H:/pd-media")   # path_relative in the registry is media-root-relative
+REG = Path("E:/pd-media/library/music_registry.v001.json")
+MEDIA = Path("E:/pd-media")   # path_relative in the registry is media-root-relative
 FFMPEG = "ffmpeg"
 FFPROBE = "ffprobe"
 XF = 1.2                 # crossfade seconds between chapters

@@ -5,7 +5,7 @@ Source: episodes/_planning/SHORTS_EP16-18.md SHORT #16 + EP1-8 §1 style suffix.
 R2 / sensitive (real, deceased people; ongoing litigation): ALL imagery symbolic and disclosed.
 NO real-person likeness, NO remains, NO implosion depiction, NO brand markings, NO legible real text.
 Tone: elegiac, restrained, deeply respectful. Backend: local SDXL (A1111) 127.0.0.1:7860, Juggernaut XL.
-Output : H:/pd-media/assets/ai/shorts/short16/short16_01.png .. _07.png + short16_thumb.png
+Output : E:/pd-media/assets/ai/shorts/short16/short16_01.png .. _07.png + short16_thumb.png
 Idempotent unless --force. Note: hires.fix occasionally returns HTTP 500; --no-hr falls back to 1088x1920.
 """
 import argparse
@@ -17,7 +17,7 @@ import urllib.request
 import json
 
 API = "http://127.0.0.1:7860"
-OUT = r"H:/pd-media/assets/ai/shorts/short16"
+OUT = r"E:/pd-media/assets/ai/shorts/short16"
 
 SUFFIX = (
     ", vertical 9:16 full-frame composition, cinematic documentary still, dramatic moody "

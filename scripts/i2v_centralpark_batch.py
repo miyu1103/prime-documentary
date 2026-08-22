@@ -3,7 +3,7 @@ Output frames -> ComfyUI output; then assembled to mp4. Subtle, natural, documen
 import subprocess, sys, glob, os, time
 from pathlib import Path
 DRIVER=r"C:/Users/aab15/ae-demo/comfy_wan.py"
-AI=Path("H:/pd-media/assets/ai/centralpark")
+AI=Path("E:/pd-media/assets/ai/centralpark")
 # motion prompt per prefix type
 def mprompt(name):
     if name.startswith("P"):

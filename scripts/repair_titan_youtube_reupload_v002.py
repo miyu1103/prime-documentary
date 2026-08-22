@@ -41,7 +41,7 @@ FINAL_DELIVERY = PKG / f"final_delivery.{REV}.json"
 MANIFEST = EPDIR / "manifest.json"
 EVENTS = EPDIR / "events" / "events.jsonl"
 CAPTIONS = EPDIR / "08_edit" / "captions.v008.srt"
-FALLBACK_VIDEO = Path("H:/pd-media/episodes/PD-2026-016-titan/07_edit/v008_youtube_faststart_fallback.mp4")
+FALLBACK_VIDEO = Path("E:/pd-media/episodes/PD-2026-016-titan/07_edit/v008_youtube_faststart_fallback.mp4")
 
 RESULT = PKG / "youtube_reupload_repair_result.v002.json"
 STATUS_VERIFY = PKG / "youtube_reupload_repair_status_verify.v002.json"

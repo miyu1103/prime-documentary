@@ -16,9 +16,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-048-glover"
 IDX = ROOT / "episodes" / EP / "06_audio" / "narration_index.v001.json"
-VO = Path("H:/pd-media/episodes/PD-2026-048-glover/06_voice/master/vc_master_v001.mp3")  # REAL ElevenLabs "Brian" master (was SAPI local_review)
+VO = Path("E:/pd-media/episodes/PD-2026-048-glover/06_voice/master/vc_master_v001.mp3")  # REAL ElevenLabs "Brian" master (was SAPI local_review)
 EDIT = ROOT / "episodes" / EP / "08_edit"
-LIB = Path("H:/pd-media/library")
+LIB = Path("E:/pd-media/library")
 MUS = LIB / "music"
 AMB = LIB / "ambience"
 FFMPEG = shutil.which("ffmpeg") or r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"

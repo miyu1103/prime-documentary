@@ -13,8 +13,8 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-046-tlo"
-AI_DIR = Path("H:/pd-media/assets/ai/tlo")
-VIDEO_DIR = Path("H:/pd-media/assets/ai_video/tlo")
+AI_DIR = Path("E:/pd-media/assets/ai/tlo")
+VIDEO_DIR = Path("E:/pd-media/assets/ai_video/tlo")
 PUBLIC = ROOT / "remotion" / "public" / "tlo"
 FACTORY_PUBLIC = PUBLIC / "factory"
 OVERLAY_PUBLIC = PUBLIC / "overlay"

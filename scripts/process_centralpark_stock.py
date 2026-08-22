@@ -3,8 +3,8 @@ Curated (thematic, real motion, no green-screen/modern/illustrative)."""
 import subprocess, glob, os
 from pathlib import Path
 FF=r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
-SRC=sorted(glob.glob(r"H:/pd-media/assets/stock/video/*.mp4"))
-OUT=Path(r"H:/pd-media/assets/ai_video/centralpark/stock"); OUT.mkdir(parents=True,exist_ok=True)
+SRC=sorted(glob.glob(r"E:/pd-media/assets/stock/video/*.mp4"))
+OUT=Path(r"E:/pd-media/assets/ai_video/centralpark/stock"); OUT.mkdir(parents=True,exist_ok=True)
 PUB=Path(r"C:/Users/aab15/Documents/prime-documentary/remotion/public/centralpark/stock"); PUB.mkdir(parents=True,exist_ok=True)
 USABLE=[4,6,7,8,9,12,15,17,18,19,21,24,27,29,30,36,37,38,41,48,51,52,54,57,58,59,60,61,62,66,67,68,71,72]
 made=0

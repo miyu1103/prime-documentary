@@ -23,7 +23,7 @@ CTR-max headlines (<=3-4 huge words, second-person / curiosity-gap hook, mobile-
   option 2  "THEY SEARCHED HER BAG"  -- an open purse on the administrator's desk (the search).
   option 3  "YOUR LOCKER ISN'T SAFE" -- a single closed locker (second-person threat / relatability).
 
-Backgrounds (episode's own SDXL 4K photoreal stills, H:/pd-media/assets/ai/tlo):
+Backgrounds (episode's own SDXL 4K photoreal stills, E:/pd-media/assets/ai/tlo):
   S06 -- a high-school hallway lined with grey metal lockers receding into low institutional light.
   S15 -- a canvas purse tipped open on a vice principal's wooden desk under warm lamplight.
   S08 -- a single closed school locker with its combination dial in cool institutional light.
@@ -46,7 +46,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "episodes" / "PD-2026-046-tlo" / "09_package"
 # real photoreal stills live on the media SSD
-IMG = Path("H:/pd-media/assets/ai/tlo")
+IMG = Path("E:/pd-media/assets/ai/tlo")
 W, H = 1280, 720
 
 FONT_BLACK = "C:/Windows/Fonts/ariblk.ttf"

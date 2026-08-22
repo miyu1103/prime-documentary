@@ -23,7 +23,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-023-swartz"
 EPDIR = ROOT / "episodes" / EP
-EP_MEDIA = Path("H:/pd-media/episodes") / EP
+EP_MEDIA = Path("E:/pd-media/episodes") / EP
 EDIT = EPDIR / "08_edit"
 MEDIA_EDIT = EP_MEDIA / "08_edit"
 PKG = EPDIR / "09_package"

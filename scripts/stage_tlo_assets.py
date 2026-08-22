@@ -6,8 +6,8 @@ import shutil
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-AI = Path("H:/pd-media/assets/ai/tlo")
-MOTION = Path("H:/pd-media/assets/ai_video/tlo")
+AI = Path("E:/pd-media/assets/ai/tlo")
+MOTION = Path("E:/pd-media/assets/ai_video/tlo")
 PUBLIC = ROOT / "remotion" / "public" / "tlo"
 
 

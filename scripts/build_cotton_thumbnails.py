@@ -13,7 +13,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SEL = "H:/pd-media/episodes/PD-2026-030-cotton/05_visuals/selected"
+SEL = "E:/pd-media/episodes/PD-2026-030-cotton/05_visuals/selected"
 TDIR = ROOT / "episodes" / "PD-2026-030-cotton" / "10_thumbnail"
 PKG = ROOT / "episodes" / "PD-2026-030-cotton" / "09_package"
 FONT_SRC = Path("C:/Windows/Fonts/arialbd.ttf")

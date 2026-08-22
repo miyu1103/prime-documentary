@@ -18,7 +18,7 @@ Reuses the EXACT winning layout:
 The ONE brand change vs Cleveland: the lane accent is EP47's VIOLET #7A5CD0 (replaces the crimson).
 The violet keyword (SEATBELT / $50 / IT'S LEGAL) is the POP element -- used sparingly, once per option.
 
-Backgrounds (episode's own SDXL 4K photoreal stills, H:/pd-media/assets/ai/atwater):
+Backgrounds (episode's own SDXL 4K photoreal stills, E:/pd-media/assets/ai/atwater):
   option 1  S53 -- a car seatbelt buckle lit by violet electric arcs on a dark cracked surface
                    (the $50 seatbelt that put her in cuffs -- already carries the lane's violet).
   option 2  S54 -- a single pair of steel handcuffs, spotlit and isolated on cold dark stone
@@ -39,7 +39,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "episodes" / "PD-2026-047-atwater" / "09_package"
 # real photoreal stills live on the media SSD
-IMG = Path("H:/pd-media/assets/ai/atwater")
+IMG = Path("E:/pd-media/assets/ai/atwater")
 W, H = 1280, 720
 
 FONT_BLACK = "C:/Windows/Fonts/ariblk.ttf"

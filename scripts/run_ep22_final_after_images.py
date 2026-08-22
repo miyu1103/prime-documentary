@@ -2,7 +2,7 @@
 """Wait for EP22 Codex hero images, then build final video and run acceptance.
 
 This script performs no image generation and no upload/publish action. It only
-waits for EP22-IMG-001..074 under H:/pd-media, runs the local build, and records
+waits for EP22-IMG-001..074 under E:/pd-media, runs the local build, and records
 the independent acceptance output.
 """
 from __future__ import annotations
@@ -19,7 +19,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-022-milken"
 EPDIR = ROOT / "episodes" / EP
-SELECTED = Path("H:/pd-media/episodes/PD-2026-022-milken/05_visuals/selected")
+SELECTED = Path("E:/pd-media/episodes/PD-2026-022-milken/05_visuals/selected")
 EXPECTED = 74
 PY = ROOT / ".venv" / "Scripts" / "python.exe"
 EVIDENCE = EPDIR / "09_package" / "EVIDENCE"
@@ -55,7 +55,7 @@ def update_manifest_blocker(count: int) -> None:
     data = json.loads(path.read_text(encoding="utf-8"))
     blocker = (
         f"Final render is blocked because hero images are incomplete: found {count}/{EXPECTED} under "
-        "H:/pd-media/episodes/PD-2026-022-milken/05_visuals/selected. "
+        "E:/pd-media/episodes/PD-2026-022-milken/05_visuals/selected. "
         "No local image generation was performed for missing hero stills."
     )
     if count >= EXPECTED:

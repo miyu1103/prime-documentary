@@ -2,8 +2,8 @@
 """Generate Miranda SDXL scene plates and thumbnail backgrounds with local A1111.
 
 Outputs:
-  H:/pd-media/assets/ai/miranda/SPN-XXXX*.png
-  H:/pd-media/assets/ai/thumbs/miranda/THUMB-01..06.png
+  E:/pd-media/assets/ai/miranda/SPN-XXXX*.png
+  E:/pd-media/assets/ai/thumbs/miranda/THUMB-01..06.png
   episodes/PD-2026-001-miranda/05_stock/stock_ledger.v001.json
 """
 from __future__ import annotations

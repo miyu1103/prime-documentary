@@ -17,7 +17,7 @@ So this measures, per clip, the three things a human otherwise has to eyeball:
   motion         mean |frame delta| on a tiny greyscale proxy. Low = a still with a container.
   luma           mean brightness of the CROPPED region, not the whole frame.
 
-Writes H:/pd-media/assets/archive/_qc/vertical_index.jsonl (resumable; re-running skips done rows).
+Writes E:/pd-media/assets/archive/_qc/vertical_index.jsonl (resumable; re-running skips done rows).
 
 Usage:
   py -3.11 scripts/index_archive_vertical.py --limit 400
@@ -34,8 +34,8 @@ from pathlib import Path
 
 import numpy as np
 
-LEDGER = r"H:\pd-media\assets\archive\_ledger\*.jsonl"
-OUT = Path(r"H:\pd-media\assets\archive\_qc\vertical_index.jsonl")
+LEDGER = r"E:\pd-media\assets\archive\_ledger\*.jsonl"
+OUT = Path(r"E:\pd-media\assets\archive\_qc\vertical_index.jsonl")
 W, H = 128, 72          # proxy frame for the whole 16:9 image
 USABLE = {"free_commercial", "pd", "cc0"}
 

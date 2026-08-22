@@ -8,7 +8,7 @@ scrim) but drops the CG subject and paints a REAL photoreal still from the episo
 a classic police interrogation room (steel table, two facing chairs, hard overhead light, one-way
 mirror on the back wall) -- the exact "police can lie to you" setting.
 
-Backgrounds (episode's own SDXL photoreal stills, H:/pd-media/assets/ai/frazier):
+Backgrounds (episode's own SDXL photoreal stills, E:/pd-media/assets/ai/frazier):
   option 1 (SELECTED) S01 -- interrogation room: steel table, two chairs, hanging light, one-way mirror.
   option 2            S31 -- interrogation room with a desk lamp pool of light on a scarred wood table.
   option 3            S19 -- a stack of signed statement pages with a pen (the false confession), blue.
@@ -34,7 +34,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "episodes" / "PD-2026-039-frazier" / "09_package"
 # real photoreal stills live on the media SSD (remotion/public/frazier holds only stub placeholders)
-IMG = Path("H:/pd-media/assets/ai/frazier")
+IMG = Path("E:/pd-media/assets/ai/frazier")
 W, H = 1280, 720
 
 FONT_BLACK = "C:/Windows/Fonts/ariblk.ttf"

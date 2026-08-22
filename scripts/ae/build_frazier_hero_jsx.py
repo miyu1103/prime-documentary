@@ -27,7 +27,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
 SPEC = ROOT / "episodes" / "_planning" / "EP39_frazier_hero_beats.spec.v001.json"
-WORK = Path("H:/pd-media/episodes/PD-2026-039-frazier/08_edit/ae_hero")
+WORK = Path("E:/pd-media/episodes/PD-2026-039-frazier/08_edit/ae_hero")
 RENDER = WORK  # final mp4s live directly in ae_hero/ as hb01.mp4 .. hb08.mp4
 
 SUPPORTED_LAYOUTS = {"A_BIG_NUMBER", "B_SPLIT_RATIO", "D_CITATION_STAMP"}

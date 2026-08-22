@@ -264,7 +264,7 @@ def main() -> int:
     except (OSError, ValueError, KeyError):
         master = None
     if not (master and master.exists()):
-        alt = Path("H:/pd-media/episodes") / EP / "06_voice" / "master" / "vc_master_v001.mp3"
+        alt = Path("E:/pd-media/episodes") / EP / "06_voice" / "master" / "vc_master_v001.mp3"
         master = alt if alt.exists() else master
     PUB.mkdir(parents=True, exist_ok=True)
     if master and master.exists():

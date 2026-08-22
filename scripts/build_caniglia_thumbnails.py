@@ -16,7 +16,7 @@ This reuses the EXACT winning layout from build_frazier_thumbnails_v003.py:
 The ONE brand change: Frazier's GOLD accent -> Caniglia's lane color AMBER #E0913C (no gold/blue, which
 belong to other episodes' lanes). The kicker tag stays RED.
 
-Backgrounds (episode's own SDXL 4K photoreal stills, H:/pd-media/assets/ai/caniglia):
+Backgrounds (episode's own SDXL 4K photoreal stills, E:/pd-media/assets/ai/caniglia):
   option 1  S05 -- a residential FRONT DOOR at dusk under a lit porch lantern (warrantless home entry).
   option 2  S06 -- the U.S. Supreme Court building at night, marble columns lit (the 9-0 ruling).
   option 3  S01 -- a HANDGUN resting on a dining table beside a warm lamp (the two seized handguns).
@@ -36,7 +36,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "episodes" / "PD-2026-043-caniglia" / "09_package"
 # real photoreal stills live on the media SSD
-IMG = Path("H:/pd-media/assets/ai/caniglia")
+IMG = Path("E:/pd-media/assets/ai/caniglia")
 W, H = 1280, 720
 
 FONT_BLACK = "C:/Windows/Fonts/ariblk.ttf"

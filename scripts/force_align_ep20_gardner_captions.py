@@ -12,7 +12,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-020-gardner"
 EPDIR = ROOT / "episodes" / EP
-AUDIO = Path("H:/pd-media/episodes/PD-2026-020-gardner/06_audio/master_elevenlabs_v001/voice_master.v001.wav")
+AUDIO = Path("E:/pd-media/episodes/PD-2026-020-gardner/06_audio/master_elevenlabs_v001/voice_master.v001.wav")
 NARRATION_INDEX = EPDIR / "06_audio" / "narration_index.v001.json"
 REVISION = "v003"
 CAPTIONS_SRT = EPDIR / "08_edit" / f"captions.{REVISION}.srt"

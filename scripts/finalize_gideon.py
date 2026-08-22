@@ -142,7 +142,7 @@ def main() -> int:
     sc = ym["safety_checklist"]
     sc["final_cut_hash_recorded"] = True
     sc["final_cut_hash"] = cut_hash
-    sc["final_cut_path"] = f"H:/pd-media/episodes/{EP}/08_edit/gideon_v001.mp4"
+    sc["final_cut_path"] = f"E:/pd-media/episodes/{EP}/08_edit/gideon_v001.mp4"
     sc["final_cut_size_bytes"] = cut_size
     sc["final_cut_notes"] = f"v001 GideonAnimatic (stills+Ken Burns) + layered audio + burned SRT. {cut_dur:.1f}s."
     sc["ai_disclosure_set"] = False  # honest: on-screen reconstruction label still pending (QC-0005)

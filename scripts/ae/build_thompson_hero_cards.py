@@ -37,9 +37,9 @@ ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
 EP = "PD-2026-041-thompson"
 SPEC_OUT = ROOT / "episodes" / "_planning" / "EP41_thompson_hero_beats.spec.v001.json"
 REPO_BEATS = ROOT / "episodes" / EP / "08_edit" / "ae_hero" / "beats.json"
-WORK = Path("H:/pd-media/episodes/PD-2026-041-thompson/08_edit/ae_hero")
+WORK = Path("E:/pd-media/episodes/PD-2026-041-thompson/08_edit/ae_hero")
 RENDER = WORK / "render"
-STILLS = Path("H:/pd-media/assets/ai/thompson")
+STILLS = Path("E:/pd-media/assets/ai/thompson")
 
 FPS = 30
 W, H = 1920, 1080

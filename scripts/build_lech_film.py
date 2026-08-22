@@ -38,7 +38,7 @@ FPS = 30
 
 ASSET_MAP = ROOT / "episodes" / "_planning" / "EP40_lech_asset_map.v001.json"
 NARR = ROOT / "episodes" / EP / "06_audio" / "narration_index.v001.json"
-H_SRC = Path("H:/pd-media/assets/ai/lech")
+H_SRC = Path("E:/pd-media/assets/ai/lech")
 PUB_DIR = ROOT / "remotion" / "public" / "lech" / "img"
 OUT_FILM = ROOT / "remotion" / "src" / "data" / "lech_film.json"
 PUB_FILM = ROOT / "remotion" / "public" / "lech" / "film_data.v001.json"

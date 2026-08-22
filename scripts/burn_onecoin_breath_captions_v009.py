@@ -18,7 +18,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-017-onecoin"
 EPDIR = ROOT / "episodes" / EP
-MEDIA = Path("H:/pd-media")
+MEDIA = Path("E:/pd-media")
 SOURCE_VIDEO = MEDIA / "episodes" / EP / "07_edit" / "v008.mp4"
 SOURCE_AUDIO = ROOT / "remotion" / "public" / "onecoin" / "audio" / "onecoin_final_mix_v009.wav"
 CAPTIONS_JSON = EPDIR / "08_edit" / "captions.v006.editorial_v009.json"
@@ -226,7 +226,7 @@ def update_manifest() -> None:
             "artifact_id": "PD-2026-017-onecoin-final-render-v009",
             "artifact_type": "final_render",
             "revision": "v009",
-            "uri": "artifact://H:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v009.mp4",
+            "uri": "artifact://E:/pd-media/episodes/PD-2026-017-onecoin/07_edit/v009.mp4",
             "checksum": sha256(OUT),
             "status": "candidate",
             "rights_status": "conditional",

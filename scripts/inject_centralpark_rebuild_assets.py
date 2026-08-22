@@ -6,7 +6,7 @@ from pathlib import Path
 ROOT=Path(r"C:/Users/aab15/Documents/prime-documentary")
 MAN=ROOT/"episodes/PD-2026-050-centralpark/05_visuals/asset_manifest.v001.json"
 OUT=ROOT/"episodes/PD-2026-050-centralpark/05_visuals/asset_manifest.v002.json"
-AI=Path("H:/pd-media/assets/ai/centralpark")
+AI=Path("E:/pd-media/assets/ai/centralpark")
 m=json.load(open(MAN,encoding="utf-8"))
 existing=m.get("stills",[])
 # new P + V as body stills

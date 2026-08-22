@@ -12,7 +12,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-059-robosigning"
 QUEUE = ROOT / "episodes" / EP / "05_visuals" / "imagegen_prompt_queue.v001.json"
-MEDIA_AI = Path("H:/pd-media/assets/ai/robosigning")
+MEDIA_AI = Path("E:/pd-media/assets/ai/robosigning")
 PUBLIC = ROOT / "remotion" / "public" / "robosigning"
 GEN_ROOT = Path.home() / ".codex" / "generated_images"
 TARGET_SIZE = (3840, 2160)

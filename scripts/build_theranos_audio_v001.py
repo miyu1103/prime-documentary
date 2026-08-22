@@ -27,7 +27,7 @@ CAPTIONS_JSON = EPDIR / "08_edit" / "captions.v001.json"
 CAPTIONS_TS = ROOT / "remotion" / "src" / "data" / "theranos_captions.ts"
 AUDIO_MIX_META = EPDIR / "06_audio" / "audio_mix.v001.json"
 
-MEDIA = Path("H:/pd-media")
+MEDIA = Path("E:/pd-media")
 LIB = MEDIA / "library"
 NARR_MASTER = MEDIA / "episodes" / EP / "06_voice" / "master" / "vc_master_v001.mp3"
 VOICE_TIMELINE = MEDIA / "episodes" / EP / "06_voice" / "master" / "theranos_vo_timeline_v001.wav"

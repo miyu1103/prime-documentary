@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate EP7 Riley SDXL still candidates locally.
 
-Local A1111 only. No paid API, no upload. Outputs go to H:/pd-media.
+Local A1111 only. No paid API, no upload. Outputs go to E:/pd-media.
 """
 from __future__ import annotations
 

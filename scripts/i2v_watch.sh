@@ -315,7 +315,7 @@ RUNBOOK="$WORK/runbook.tsv"
 plates_available() {
   local slug="$1" only="$2" n=0 p
   for p in $(echo "$only" | tr ',' ' '); do
-    ls "H:/pd-media/assets/ai/$slug/"*"$p"*.png >/dev/null 2>&1 && n=$((n + 1))
+    ls "E:/pd-media/assets/ai/$slug/"*"$p"*.png >/dev/null 2>&1 && n=$((n + 1))
   done
   echo "$n"
 }
@@ -324,8 +324,8 @@ plates_available() {
 # 24 fps-in would survive forever. Measure, move the wrong ones aside (never delete), re-assemble.
 fix_fps() {
   local slug="$1" fps="$2" len="$3"
-  local master="H:/pd-media/assets/ai_video/$slug/motion"
-  local super="H:/pd-media/assets/ai_video/$slug/_superseded_fps24"
+  local master="E:/pd-media/assets/ai_video/$slug/motion"
+  local super="E:/pd-media/assets/ai_video/$slug/_superseded_fps24"
   if [ "$fps" != "24" ] && [ -d "$master" ]; then
     local want moved f dur
     want=$(awk -v l="$len" -v f="$fps" 'BEGIN{printf "%.3f", l/f}')

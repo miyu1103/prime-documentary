@@ -29,8 +29,8 @@ SCENES = EP_DIR / "04_scenes"
 VISUALS = EP_DIR / "05_visuals"
 STOCK = EP_DIR / "05_stock"
 MANIFEST = VISUALS / "asset_manifest.v001.json"
-MEDIA_AI = Path("H:/pd-media/assets/ai/postoffice")
-MEDIA_VIDEO = Path("H:/pd-media/assets/ai_video/postoffice")
+MEDIA_AI = Path("E:/pd-media/assets/ai/postoffice")
+MEDIA_VIDEO = Path("E:/pd-media/assets/ai_video/postoffice")
 PUBLIC = ROOT / "remotion" / "public" / SLUG
 
 EXPECTED = {

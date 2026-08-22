@@ -13,7 +13,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EPDIR = ROOT / "episodes" / "PD-2026-023-swartz"
-SELECTED = Path("H:/pd-media/episodes/PD-2026-023-swartz/05_visuals/selected")
+SELECTED = Path("E:/pd-media/episodes/PD-2026-023-swartz/05_visuals/selected")
 
 
 def exists(path: Path) -> bool:
@@ -42,7 +42,7 @@ def main() -> int:
         "images_complete": not missing,
         "voice_ready": exists(EPDIR / "06_audio" / "narration_index.v001.json"),
         "captions_ready": exists(EPDIR / "08_edit" / "captions.v001.srt"),
-        "audio_mix_ready": exists(Path("H:/pd-media/episodes/PD-2026-023-swartz/08_edit/swartz_final_mix.v001.wav")),
+        "audio_mix_ready": exists(Path("E:/pd-media/episodes/PD-2026-023-swartz/08_edit/swartz_final_mix.v001.wav")),
         "thumbnails_ready": exists(EPDIR / "09_package" / "thumbnail.selected.v001.png"),
         "factory_ready": (ROOT / "remotion" / "public" / "swartz" / "factory").is_dir(),
         "sensitive_locks_pass": sensitive.get("status") == "PASS",

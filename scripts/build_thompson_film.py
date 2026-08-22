@@ -38,8 +38,8 @@ FPS = 30
 ASSET_MAP = ROOT / "episodes" / "_planning" / "EP41_thompson_asset_map.v001.json"
 NARR = ROOT / "episodes" / EP / "06_audio" / "narration_index.v001.json"
 FACTORY_SEL = ROOT / "runs" / "qc" / "thompson_factory_selected.v001.json"
-H_STILL = Path("H:/pd-media/assets/ai/thompson")
-H_MASTER = Path("H:/pd-media/episodes/PD-2026-041-thompson/06_voice/master/vc_master_v001.mp3")
+H_STILL = Path("E:/pd-media/assets/ai/thompson")
+H_MASTER = Path("E:/pd-media/episodes/PD-2026-041-thompson/06_voice/master/vc_master_v001.mp3")
 
 PUB_IMG = ROOT / "remotion" / "public" / "thompson" / "img"
 PUB_FAC = ROOT / "remotion" / "public" / "thompson" / "factory"

@@ -10,7 +10,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 QC = ROOT / "episodes" / "PD-2026-054-flowers" / "05_visuals" / "still_qc.v001.json"
-MEDIA = Path("H:/pd-media/assets/ai/flowers")
+MEDIA = Path("E:/pd-media/assets/ai/flowers")
 
 
 def expected_ids() -> list[str]:

@@ -26,8 +26,8 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-049-strieff"
 SLUG = "strieff"
-AI_DIR = Path("H:/pd-media/assets/ai/strieff")
-VIDEO_DIR = Path("H:/pd-media/assets/ai_video/strieff")
+AI_DIR = Path("E:/pd-media/assets/ai/strieff")
+VIDEO_DIR = Path("E:/pd-media/assets/ai_video/strieff")
 PUBLIC = ROOT / "remotion" / "public" / SLUG
 FACTORY_PUBLIC = PUBLIC / "factory"
 MOTION_PUBLIC = PUBLIC / "motion"

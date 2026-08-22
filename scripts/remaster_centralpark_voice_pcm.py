@@ -19,9 +19,9 @@ ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-050-centralpark"
 VOICE_PLAN = ROOT / "episodes" / EP / "06_audio" / "voice_plan.v001.json"
 INDEX = ROOT / "episodes" / EP / "06_audio" / "narration_index.v001.json"
-DRAFT = Path("H:/pd-media/episodes/PD-2026-050-centralpark/06_voice/draft")
-MASTER = Path("H:/pd-media/episodes/PD-2026-050-centralpark/06_voice/master/vc_master_v001.mp3")
-CACHE = Path("H:/pd-media/episodes/PD-2026-050-centralpark/06_voice/_pcm_cache")
+DRAFT = Path("E:/pd-media/episodes/PD-2026-050-centralpark/06_voice/draft")
+MASTER = Path("E:/pd-media/episodes/PD-2026-050-centralpark/06_voice/master/vc_master_v001.mp3")
+CACHE = Path("E:/pd-media/episodes/PD-2026-050-centralpark/06_voice/_pcm_cache")
 LOUDNORM = "loudnorm=I=-16:TP=-1.5:LRA=11"
 
 

@@ -7,7 +7,7 @@ Source: episodes/_planning/EP38_kidsforcash_script.en.v003.md (FACT-LOCKED v003)
 Chunking: by section (HOOK / ACT 1..4 / ED). Strips annotations, 〔CARD〕, [L:...], (parenthetical), headers, JP notes.
 QC: per-chunk loudnorm -16 LUFS / -1.5 TP / LRA 11. Concatenate to narration_master.mp3.
 Output:
-  H:/pd-media/episodes/PD-2026-038-kidsforcash/06_audio/draft/VC-00xx.mp3
+  E:/pd-media/episodes/PD-2026-038-kidsforcash/06_audio/draft/VC-00xx.mp3
   remotion/public/kidsforcash/narration_master.mp3
   episodes/PD-2026-038-kidsforcash/06_audio/narration_index.v001.json  (per-chunk offset/duration + char log)
 Idempotent by SHA-256 of spoken_text. --dry-run prints chunks + char counts, no API spend.
@@ -24,7 +24,7 @@ ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
 ENV_PATH = ROOT / ".env"
 SCRIPT_MD = ROOT / "episodes" / "_planning" / "EP38_kidsforcash_script.en.v004.md"
 EP = "PD-2026-038-kidsforcash"
-DRAFT_DIR = Path(r"H:/pd-media/episodes") / EP / "06_audio" / "draft"
+DRAFT_DIR = Path(r"E:/pd-media/episodes") / EP / "06_audio" / "draft"
 PUB_DIR = ROOT / "remotion" / "public" / "kidsforcash"
 INDEX_PATH = ROOT / "episodes" / EP / "06_audio" / "narration_index.v001.json"
 FFMPEG = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"

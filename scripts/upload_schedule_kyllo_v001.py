@@ -24,7 +24,7 @@ from upload_episode import CHANNEL_ALLOWLIST, get_channel_id, sha256_file, uploa
 EP = "PD-2026-025-kyllo"
 EPDIR = ROOT / "episodes" / EP
 PKG = EPDIR / "09_package"
-VIDEO = Path(r"H:/pd-media/episodes/PD-2026-025-kyllo/08_edit/final.v007.mp4")
+VIDEO = Path(r"E:/pd-media/episodes/PD-2026-025-kyllo/08_edit/final.v007.mp4")
 THUMB = PKG / "thumbnail.selected.v001.png"
 CAPS = EPDIR / "08_edit" / "captions.final.v001.srt"
 DELIVERY = PKG / "final_delivery.v001.json"

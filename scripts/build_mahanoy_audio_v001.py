@@ -2,7 +2,7 @@
 """Build Mahanoy final audio mix and captions for MahanoyPremium.
 
 Creates:
-- H:/pd-media/.../06_voice/master/vc_master_v001_fit_711s.wav
+- E:/pd-media/.../06_voice/master/vc_master_v001_fit_711s.wav
 - episodes/.../08_edit/captions.v001.srt and captions.v001.json
 - remotion/src/data/mahanoy_captions.ts
 - remotion/public/mahanoy/audio/mahanoy_final_mix_v001.mp3

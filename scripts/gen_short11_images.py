@@ -3,7 +3,7 @@
 
 Source: episodes/_planning/SHORTS_EP9-15.md SHORT #11 + EP1-8 §1 style suffix.
 Backend: local SDXL (AUTOMATIC1111 API) 127.0.0.1:7860, Juggernaut XL.
-Output : H:/pd-media/assets/ai/shorts/short11/short11_01.png .. _07.png + short11_thumb.png
+Output : E:/pd-media/assets/ai/shorts/short11/short11_01.png .. _07.png + short11_thumb.png
 No identifiable real person (esp. no minors' faces). Idempotent unless --force.
 """
 import argparse
@@ -15,7 +15,7 @@ import urllib.request
 import json
 
 API = "http://127.0.0.1:7860"
-OUT = r"H:/pd-media/assets/ai/shorts/short11"
+OUT = r"E:/pd-media/assets/ai/shorts/short11"
 
 SUFFIX = (
     ", vertical 9:16 full-frame composition, cinematic documentary still, dramatic moody "

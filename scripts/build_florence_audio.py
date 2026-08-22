@@ -23,7 +23,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-037-florence"
 EPDIR = ROOT / "episodes" / EP
 PUB = ROOT / "remotion" / "public" / "florence"
-LIB = Path("H:/pd-media/library")
+LIB = Path("E:/pd-media/library")
 # Timeline: BrandOpening (3.5s) + 106-cut body (542.93s) + BrandEndcard (9s) = 555.43s.
 # The narration/SFX/BGM/ambience all shift +LEAD so narration t0 lands at the body start
 # (after the brand opening); the outro bed + endcard ambience carry the 9s endcard.

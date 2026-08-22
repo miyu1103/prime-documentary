@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-017-onecoin"
 EPDIR = ROOT / "episodes" / EP
 PKG = EPDIR / "09_package"
-MEDIA = Path("H:/pd-media")
+MEDIA = Path("E:/pd-media")
 OUT_DIR = MEDIA / "episodes" / EP / "07_edit"
 
 SOURCE = OUT_DIR / "v009.mp4"

@@ -3,7 +3,7 @@
 
 Source of truth: episodes/_planning/SHORTS_EP1-8.md  (SHORT #7 prompts + §1 common style suffix).
 Backend: local SDXL (AUTOMATIC1111 API) on 127.0.0.1:7860, Juggernaut XL.
-Output : H:/pd-media/assets/ai/shorts/short07/short07_01.png .. _07.png + short07_thumb.png
+Output : E:/pd-media/assets/ai/shorts/short07/short07_01.png .. _07.png + short07_thumb.png
 
 Invariants: vertical 9:16, >=1080x1920 (hires fix), no on-screen text, no identifiable real person.
 Idempotent: skips a file that already exists unless --force.
@@ -17,7 +17,7 @@ import urllib.request
 import json
 
 API = "http://127.0.0.1:7860"
-OUT = r"H:/pd-media/assets/ai/shorts/short07"
+OUT = r"E:/pd-media/assets/ai/shorts/short07"
 
 # §1 common style suffix (appended to every prompt, verbatim from the design doc).
 SUFFIX = (

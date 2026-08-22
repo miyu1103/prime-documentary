@@ -15,8 +15,8 @@ import numpy as np
 from PIL import Image, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[1]
-AI = Path("H:/pd-media/assets/ai/cleveland")
-MOTION_SRC = Path("H:/pd-media/assets/ai_video/cleveland")
+AI = Path("E:/pd-media/assets/ai/cleveland")
+MOTION_SRC = Path("E:/pd-media/assets/ai_video/cleveland")
 PUBLIC = ROOT / "remotion" / "public" / "cleveland"
 FACTORY = PUBLIC / "factory"
 MOTION = PUBLIC / "motion"

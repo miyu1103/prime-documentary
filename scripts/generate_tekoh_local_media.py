@@ -6,8 +6,8 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-IMG_ROOT = Path(r"H:/pd-media/assets/ai/tekoh")
-MOTION_ROOT = Path(r"H:/pd-media/assets/ai_video/tekoh")
+IMG_ROOT = Path(r"E:/pd-media/assets/ai/tekoh")
+MOTION_ROOT = Path(r"E:/pd-media/assets/ai_video/tekoh")
 PUBLIC = ROOT / "remotion" / "public" / "tekoh"
 
 

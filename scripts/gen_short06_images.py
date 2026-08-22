@@ -3,7 +3,7 @@
 
 Source of truth: episodes/_planning/SHORTS_EP1-8.md  (SHORT #6 prompts + §1 common style suffix).
 Backend: local SDXL (AUTOMATIC1111 API) on 127.0.0.1:7860, Juggernaut XL Ragnarok.
-Output : H:/pd-media/assets/ai/shorts/short06/short06_01.png .. _07.png + short06_thumb.png
+Output : E:/pd-media/assets/ai/shorts/short06/short06_01.png .. _07.png + short06_thumb.png
 
 Quality-first (project policy [[render-quality-first]]): native 832x1472 9:16, hires-fix to ~4K
 vertical via DAT x4, 60 base steps + 25 hires steps, DPM++ 2M SDE Karras. No NVENC / no shortcuts.
@@ -22,7 +22,7 @@ import time
 import urllib.request
 
 API = "http://127.0.0.1:7860"
-OUT = r"H:/pd-media/assets/ai/shorts/short06"
+OUT = r"E:/pd-media/assets/ai/shorts/short06"
 MODEL = "juggernautXL_ragnarokBy"  # photoreal flagship ([[reference_sdxl_launch]])
 
 # §1 common style suffix (appended to every prompt, verbatim from the design doc).

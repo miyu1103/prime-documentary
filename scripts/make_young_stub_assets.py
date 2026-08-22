@@ -3,7 +3,7 @@
 
 Writes only local dry-run media under remotion/public/young_dryrun plus the
 stub manifest required by the EP42 build handoff. It never writes production
-media under remotion/public/young or H:/pd-media.
+media under remotion/public/young or E:/pd-media.
 """
 from __future__ import annotations
 

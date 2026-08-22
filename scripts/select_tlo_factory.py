@@ -30,7 +30,7 @@ PRIOR_SELECTED = [
     ROOT / "runs" / "qc" / "cleveland_factory_selected.v001.json",
 ]
 VIDEO_EXTS = {".mp4", ".mov", ".webm", ".mkv", ".m4v"}
-MEDIA_ROOT = Path("H:/pd-media/assets")
+MEDIA_ROOT = Path("E:/pd-media/assets")
 
 # Conservative first pass: no children, no identifiable people, no courtroom actors.
 FACTORY_SUBTYPE_ORDER = [

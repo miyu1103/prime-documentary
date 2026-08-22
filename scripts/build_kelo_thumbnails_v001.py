@@ -16,44 +16,44 @@ EPDIR = ROOT / "episodes" / EP
 THUMB_DIR = EPDIR / "10_thumbnail"
 PACKAGE_DIR = EPDIR / "09_package"
 REMOTION_THUMBS = ROOT / "remotion" / "public" / "kelo" / "thumbs"
-SOURCE_THUMBS = Path("H:/pd-media/assets/ai/thumbs/kelo")
+SOURCE_THUMBS = Path("E:/pd-media/assets/ai/thumbs/kelo")
 SELECTED_BACKGROUND = "THUMB-02.png"
 
 
 BACKGROUND_SCORES = [
     {
         "id": "THUMB-01",
-        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-01.png",
+        "file": "E:/pd-media/assets/ai/thumbs/kelo/THUMB-01.png",
         "scores": {"browse_stop": 23, "story_clarity": 22, "mobile_legibility": 23, "rights_safety": 25, "total": 93},
         "assessment": "Strong symbolic house-versus-demolition image; less immediate than option 02 because the demolition threat is farther from the house.",
     },
     {
         "id": "THUMB-02",
-        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-02.png",
+        "file": "E:/pd-media/assets/ai/thumbs/kelo/THUMB-02.png",
         "scores": {"browse_stop": 25, "story_clarity": 25, "mobile_legibility": 23, "rights_safety": 25, "total": 98},
         "assessment": "Selected. The small home under a looming wrecking ball communicates the stakes instantly, with no real-person likeness and enough negative space for bold text.",
     },
     {
         "id": "THUMB-03",
-        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-03.png",
+        "file": "E:/pd-media/assets/ai/thumbs/kelo/THUMB-03.png",
         "scores": {"browse_stop": 21, "story_clarity": 20, "mobile_legibility": 24, "rights_safety": 25, "total": 90},
         "assessment": "Clean public/private contrast, but the emotional event is less obvious at small sizes.",
     },
     {
         "id": "THUMB-04",
-        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-04.png",
+        "file": "E:/pd-media/assets/ai/thumbs/kelo/THUMB-04.png",
         "scores": {"browse_stop": 22, "story_clarity": 22, "mobile_legibility": 21, "rights_safety": 25, "total": 90},
         "assessment": "Moody and safe, but busier and less instantly legible than option 02.",
     },
     {
         "id": "THUMB-05",
-        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-05.png",
+        "file": "E:/pd-media/assets/ai/thumbs/kelo/THUMB-05.png",
         "scores": {"browse_stop": 18, "story_clarity": 17, "mobile_legibility": 24, "rights_safety": 25, "total": 84},
         "assessment": "Safe legal-document mood, but too abstract for a high-CTR browse surface.",
     },
     {
         "id": "THUMB-06",
-        "file": "H:/pd-media/assets/ai/thumbs/kelo/THUMB-06.png",
+        "file": "E:/pd-media/assets/ai/thumbs/kelo/THUMB-06.png",
         "scores": {"browse_stop": 19, "story_clarity": 19, "mobile_legibility": 23, "rights_safety": 25, "total": 86},
         "assessment": "Good aftermath symbolism, but lacks the immediate conflict shown in option 02.",
     },

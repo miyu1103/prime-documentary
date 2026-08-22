@@ -14,7 +14,7 @@ MANIFEST = ROOT / "assets" / "asset_manifest.v001.json"
 LEDGER = ROOT / "episodes" / EP / "05_stock" / "stock_ledger.v001.json"
 OUT_TS = ROOT / "remotion" / "src" / "data" / "theranos_factory_assets.ts"
 PUBLIC_ROOT = ROOT / "remotion" / "public" / "theranos" / "factory"
-MEDIA_FACTORY = Path("H:/pd-media/assets")
+MEDIA_FACTORY = Path("E:/pd-media/assets")
 
 
 SELECTED = [

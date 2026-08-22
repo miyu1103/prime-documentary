@@ -21,7 +21,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-049-strieff"
 SLUG = "strieff"
-MEDIA = Path("H:/pd-media/assets/ai/strieff")
+MEDIA = Path("E:/pd-media/assets/ai/strieff")
 PUBLIC_FACTORY = ROOT / "remotion" / "public" / SLUG / "factory"
 STOCK = ROOT / "episodes" / EP / "05_stock"
 VISUALS = ROOT / "episodes" / EP / "05_visuals"

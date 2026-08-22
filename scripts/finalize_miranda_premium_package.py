@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EP = ROOT / "episodes" / "PD-2026-001-miranda"
-MEDIA_EP = Path("H:/pd-media/episodes/PD-2026-001-miranda")
+MEDIA_EP = Path("E:/pd-media/episodes/PD-2026-001-miranda")
 RENDER_SRC = ROOT / "remotion" / "out" / "miranda_premium.mp4"
 RENDER_DST = MEDIA_EP / "08_edit" / "miranda_premium_v001.mp4"
 THUMB_SELECTED_SRC = EP / "10_thumbnail" / "thumbnail_miranda_option_A.v002.png"
@@ -232,7 +232,7 @@ def main() -> None:
             "sdxl_thumbnail_backgrounds": {
                 "count": 6,
                 "source": "local_sdxl_juggernautxl",
-                "path": "H:/pd-media/assets/ai/thumbs/miranda",
+                "path": "E:/pd-media/assets/ai/thumbs/miranda",
                 "commercial_use": "allowed",
             },
             "factory_assets": {

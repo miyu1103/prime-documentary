@@ -12,7 +12,7 @@ from pathlib import Path
 RIFE = Path(r"D:/AI/tools/rife-ncnn-vulkan-20221029-windows/rife-ncnn-vulkan.exe")
 SRC = Path(r"C:/Users/aab15/ComfyUI/output/wan_kfc")
 WORK = Path(r"C:/Users/aab15/ComfyUI/output/_rife_work")
-OUT = Path(r"H:/pd-media/assets/ai_video/kidsforcash")
+OUT = Path(r"E:/pd-media/assets/ai_video/kidsforcash")
 FFMPEG = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 SHOTS = ["S03", "S05", "S07", "S08", "S10", "S12", "S14", "S16", "S22", "S23", "S29", "S37"]
 DROP_VALIDATE = 5  # first 5 frames per dir are the length=5 dry-validate probe

@@ -22,7 +22,7 @@ EP = "PD-2026-039-frazier"
 STILL_DIR = ROOT / "remotion/public/frazier/img/selected"
 GRAPH_DIR = ROOT / "episodes" / EP / "05_visuals/wan_graphs"
 CONFORM_DIR = ROOT / "episodes" / EP / "05_visuals/wan_input"
-VIDEO_OUT_DIR = Path("H:/pd-media/assets/ai_video/frazier")
+VIDEO_OUT_DIR = Path("E:/pd-media/assets/ai_video/frazier")
 
 SHOTS = [
     ("S02", "the heavy steel door slowly swings closed, the blade of corridor light narrowing across the floor"),

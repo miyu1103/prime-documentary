@@ -2,7 +2,7 @@
 """Render PD-2026-006 Terry thumbnail options.
 
 No upload and no publish. Outputs repo-side PNGs because thumbnails are package
-artifacts, while approved source stills remain under H:/pd-media.
+artifacts, while approved source stills remain under E:/pd-media.
 """
 from __future__ import annotations
 

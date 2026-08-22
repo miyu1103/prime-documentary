@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Generate 180 premium symbolic plates for EP6 Terry v002.
 
-Local A1111 only. No upload, no paid API. Outputs stay under H:/pd-media.
+Local A1111 only. No upload, no paid API. Outputs stay under E:/pd-media.
 18 visual chapters x 10 variants = 180 hero plates for Remotion motion.
 """
 from __future__ import annotations

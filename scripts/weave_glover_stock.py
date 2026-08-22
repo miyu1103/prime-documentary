@@ -18,7 +18,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-STOCK_SRC = Path("H:/pd-media/assets/stock/video")
+STOCK_SRC = Path("E:/pd-media/assets/stock/video")
 PUBDIR = ROOT / "remotion" / "public" / "glover" / "stock"
 FILM_SRC = ROOT / "remotion" / "src" / "data" / "glover_film.json"
 FILM_PUB = ROOT / "remotion" / "public" / "glover" / "film_data.v001.json"

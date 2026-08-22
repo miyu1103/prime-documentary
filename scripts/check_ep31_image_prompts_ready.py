@@ -21,7 +21,7 @@ EPDIR = ROOT / "episodes" / EP
 PROMPTS = EPDIR / "04_scenes" / "ai_prompts.v001.md"
 MANIFEST = EPDIR / "04_scenes" / "ai_prompt_manifest.v001.json"
 QUEUE_DIR = EPDIR / "04_scenes" / "codex_prompt_queue.v001"
-MEDIA = Path("H:/pd-media/episodes") / EP
+MEDIA = Path("E:/pd-media/episodes") / EP
 HERO_DIR = MEDIA / "05_visuals" / "selected"
 THUMB_BG_DIR = MEDIA / "10_thumbnail" / "backgrounds"
 

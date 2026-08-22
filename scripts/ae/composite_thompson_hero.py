@@ -23,7 +23,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
 EP = "PD-2026-041-thompson"
-EDIT = Path("H:/pd-media/episodes") / EP / "08_edit"
+EDIT = Path("E:/pd-media/episodes") / EP / "08_edit"
 WORK = EDIT / "ae_hero"
 RENDER = WORK / "render"
 FFMPEG = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"

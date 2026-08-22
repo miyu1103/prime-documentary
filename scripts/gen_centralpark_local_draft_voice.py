@@ -16,7 +16,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-050-centralpark"
 VOICE_PLAN = ROOT / "episodes" / EP / "06_audio" / "voice_plan.v001.json"
-DRAFT = Path("H:/pd-media/episodes/PD-2026-050-centralpark/06_voice/draft")
+DRAFT = Path("E:/pd-media/episodes/PD-2026-050-centralpark/06_voice/draft")
 VOICE = "Microsoft Zira Desktop"
 
 

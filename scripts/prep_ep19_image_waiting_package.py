@@ -17,7 +17,7 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-019-varsityblues"
 EPDIR = ROOT / "episodes" / EP
-MEDIA = Path("H:/pd-media")
+MEDIA = Path("E:/pd-media")
 EP_MEDIA = MEDIA / "episodes" / EP
 SELECTED = EP_MEDIA / "05_visuals" / "selected"
 PKG = EPDIR / "09_package"
@@ -204,14 +204,14 @@ def write_resume_runbook(snapshot: dict[str, Any]) -> None:
 Status: audio/factory/Remotion scaffold ready; hero images, thumbnails, final render pending.
 
 Ready now:
-- ElevenLabs master voice: `H:/pd-media/episodes/{EP}/06_audio/master_elevenlabs_v001/voice_master.v001.wav`
-- Final audio mix: `H:/pd-media/episodes/{EP}/08_edit/varsityblues_final_mix.v001.wav`
+- ElevenLabs master voice: `E:/pd-media/episodes/{EP}/06_audio/master_elevenlabs_v001/voice_master.v001.wav`
+- Final audio mix: `E:/pd-media/episodes/{EP}/08_edit/varsityblues_final_mix.v001.wav`
 - Captions: `episodes/{EP}/08_edit/captions.v001.srt`
 - Factory b-roll ledger: `episodes/{EP}/05_stock/factory_ledger.v001.json`
 - Remotion composition: `VarsityBluesPremium`
 
 When images are ready:
-1. Place all files as `H:/pd-media/episodes/{EP}/05_visuals/selected/EP19-IMG-001.png` through `EP19-IMG-092.png`.
+1. Place all files as `E:/pd-media/episodes/{EP}/05_visuals/selected/EP19-IMG-001.png` through `EP19-IMG-092.png`.
 2. Confirm every used still is 16:9 and long edge >= 3840 px.
 3. Run:
 

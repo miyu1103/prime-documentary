@@ -5,7 +5,7 @@ Source: episodes/_planning/SHORTS_EP16-18.md SHORT #18 + EP1-8 §1 style suffix.
 R3 / sensitive: living person who pleaded guilty. NO real-person likeness, NO nameable firm, NO legible
 real text. Causation stays neutral (visuals never imply one man caused the crash). Neutral key visuals only.
 Backend: local SDXL (A1111) 127.0.0.1:7860, Juggernaut XL.
-Output : H:/pd-media/assets/ai/shorts/short18/short18_01.png .. _07.png + short18_thumb.png
+Output : E:/pd-media/assets/ai/shorts/short18/short18_01.png .. _07.png + short18_thumb.png
 Idempotent unless --force. Note: hires.fix occasionally returns HTTP 500; --no-hr falls back to 1088x1920.
 """
 import argparse
@@ -17,7 +17,7 @@ import urllib.request
 import json
 
 API = "http://127.0.0.1:7860"
-OUT = r"H:/pd-media/assets/ai/shorts/short18"
+OUT = r"E:/pd-media/assets/ai/shorts/short18"
 
 SUFFIX = (
     ", vertical 9:16 full-frame composition, cinematic documentary still, dramatic moody "

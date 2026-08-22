@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 """Lift EP49 Strieff still exposure for the visual-asset QC luma floor.
 
-Original Codex outputs are preserved once under H:/pd-media/assets/ai/strieff/_pre_grade_backup.
+Original Codex outputs are preserved once under E:/pd-media/assets/ai/strieff/_pre_grade_backup.
 The active media and Remotion public copies are then updated in place, followed
 by depth-map regeneration. This uses no SDXL or external provider.
 """
@@ -13,7 +13,7 @@ from pathlib import Path
 from PIL import Image, ImageEnhance, ImageFilter, ImageOps, ImageStat
 
 ROOT = Path(__file__).resolve().parents[1]
-MEDIA = Path("H:/pd-media/assets/ai/strieff")
+MEDIA = Path("E:/pd-media/assets/ai/strieff")
 BACKUP = MEDIA / "_pre_grade_backup"
 PUBLIC = ROOT / "remotion" / "public" / "strieff" / "img"
 TARGET_MEDIAN = 54.0

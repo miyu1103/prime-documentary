@@ -6,6 +6,7 @@ Downloads THEMED (not bulk) public-domain / CC0 / clearly-free-commercial assets
 approved sources into a rights-tracked, MULTI-ROOT tiered shelf (~4.4TB total budget):
 
   Tier 1  H:\\pd-media\\assets\\archive\\<theme>\\   STOP if H: free < 500GB
+          (historical: H: died, and TIERS below no longer contains this root)
   Tier 2  D:\\pd-archive\\<theme>\\                  STOP if D: free < 250GB
   Tier 3  E:\\pd-archive\\<theme>\\                  STOP if E: free < 250GB
   Tier 4  F:\\pd-archive\\<theme>\\                  STOP if F: free < 50GB
@@ -15,8 +16,8 @@ Lane routing: PD-lane themes start on Tier 1 (H:, production-adjacent); BROAD th
 (future channels: space/nature/cities/japan/PD films/etc.) start on Tier 2 and fill D->E->F.
 C: is NEVER used. Quarantine and the centralized ledger always live on H::
 
-    H:\\pd-media\\assets\\archive\\_quarantine\\<theme>\\  (license_decision=review_required)
-    H:\\pd-media\\assets\\archive\\_ledger\\<source>.jsonl (per-item rights ledger)
+    E:\\pd-media\\assets\\archive\\_quarantine\\<theme>\\  (license_decision=review_required)
+    E:\\pd-media\\assets\\archive\\_ledger\\<source>.jsonl (per-item rights ledger)
 
 Ledger JSONL schema (one object per line; file_path records which drive an item landed on):
     {id, source, source_url, title, license_field_raw, license_decision
@@ -59,7 +60,7 @@ before shipping any item into an episode.
 AGENT ASSIGNMENT (multi-agent split): THIS runner owns Internet Archive / Prelinger
 only, tier affinity H,D. Adapters for other sources remain in this file as the shared
 framework reference (sibling agents own those sources — do not run them from here).
-Ledger contract for all agents: H:\\pd-media\\assets\\archive\\_ledger\\CONTRACT.md
+Ledger contract for all agents: E:\\pd-media\\assets\\archive\\_ledger\\CONTRACT.md
 
 Usage:
   python scripts/ingest_archive_sources.py --source ia --theme americana_1930s_1970s --limit 2

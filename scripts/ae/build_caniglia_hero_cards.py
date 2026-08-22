@@ -69,7 +69,7 @@ NIGHT = [0.078, 0.067, 0.055]    # #14110E warm near-black grade wash (domestic 
 DAWN = [0.788, 0.541, 0.227]     # #C98A3A single warm porch/dawn practical glow
 RED = [0.780, 0.314, 0.243]      # #C7503E BEACON (ambulance) -- glow/strike only
 
-STILLS = Path("H:/pd-media/assets/ai/caniglia")   # not imported this pass (still=None)
+STILLS = Path("E:/pd-media/assets/ai/caniglia")   # not imported this pass (still=None)
 
 # Bookend offset: figures[] and these AE beats are body/narration-relative.
 # Absolute time in the finished bookended base mp4 = start + FILM_OFFSET_SEC.
@@ -227,7 +227,7 @@ def build(dryrun: bool) -> int:
     if dryrun:
         media = work
     else:
-        media = Path("H:/pd-media/episodes") / EP / "08_edit" / "ae_hero"
+        media = Path("E:/pd-media/episodes") / EP / "08_edit" / "ae_hero"
     render = media / "render"
     media.mkdir(parents=True, exist_ok=True)
     render.mkdir(parents=True, exist_ok=True)
