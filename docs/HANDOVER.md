@@ -303,3 +303,14 @@ stalled and what was done about each; two caption burn-in defects caught before 
 measurements that overturned older canon (narration pace, CTR, audience age, and the finding that
 the apparent long-form advantage is confounded by two outlier videos); EP70 chosen and then failed
 its own new gate at 77/100.
+
+**[2026-08-23 — EP74 itaewon](handover/EP74_ITAEWON_TO_MAIN_ASSEMBLY.md)** — the Itaewon crowd
+crush, built to the point where only the assembly thread's own step is left. slug `itaewon`,
+composition `Ep74Itaewon`, `remotion/src/data/itaewon_film.json`; Root.tsx deliberately untouched.
+826 clips read as 104 contact sheets, 257 accepted. What the sheets found that no gate could:
+**two North Korean flags in a South Korea pool** (the shelf labels both `korea flag`), and the
+**pixabay ambience-loop hole** beside the ai-generated defence — that defence works, zero of the
+793 disclosed clips reached this pool, but CG whose title never says so walks straight through.
+Also: **episode_spec v002/v003 were invisible to the pipeline** — 47 tools open `v001` by name, so
+28 face plates on disk were reported as `people=0`. Two-word footage queries kept 34 per cent
+against 27 for one-word queries. One deviation left standing and written down, not argued away.
