@@ -1149,9 +1149,16 @@ def check_freshness(epdir: Path, render: Path, cur_sha: str | None,
     # still a build from three days earlier. Gating it would have stamped a green receipt for a
     # DIFFERENT FILM, and every other freshness signal would have passed: the stale master has
     # its own sha and its own mtime. Only the relationship between the two files exposes it.
-    suffix = "_final_bgm.v001.mp4"
-    if render.name.endswith(suffix):
-        raw = ROOT / "out" / (render.name[:-len(suffix)] + ".mp4")
+    #
+    # 2026-08-23: this signal was gated on the literal name "<slug>_final_bgm.v001.mp4", so it
+    # NEVER RAN on a v002 master -- and seven shipped episodes were graded on v002 (marmet,
+    # greene, memphis, openfields, ramirez, pinto, hyatt). It did not fail and it did not warn;
+    # it silently did not apply, and render_freshness went green without it. That is precisely
+    # the failure the paragraph above describes. Match the shape instead of one literal name,
+    # and when the name has no recognisable shape, SAY SO rather than skipping in silence.
+    m = re.match(r"^(?P<stem>.+)_final_bgm\.v\d+(?:_[A-Za-z0-9]+)?\.mp4$", render.name)
+    if m:
+        raw = ROOT / "out" / (m.group("stem") + ".mp4")
         if raw.is_file():
             raw_mtime = raw.stat().st_mtime
             if mtime < raw_mtime:
@@ -1162,6 +1169,11 @@ def check_freshness(epdir: Path, render: Path, cur_sha: str | None,
                     f"before gating, or this receipt describes a different film")
             else:
                 notes.append(f"muxed {mtime - raw_mtime:.0f}s after its render")
+        else:
+            stem = m.group("stem")
+            notes.append(f"mux-order signal not run: no out/{stem}.mp4 to compare against")
+    else:
+        notes.append(f"mux-order signal not run: {render.name} is not <stem>_final_bgm.v<N>.mp4")
     if prev_sha and cur_sha and cur_sha == prev_sha:
         # The failure text has always told the operator to "pass --render-started-at for a
         # legitimate re-grade", but the identical-sha branch fired regardless, so that escape

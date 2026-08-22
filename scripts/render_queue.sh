@@ -29,9 +29,17 @@ for entry in "$@"; do
   waited=0
   while [ -f out_pdrun_render.lock ]; do
     pid=$(cat out_pdrun_render.lock 2>/dev/null | tr -d '[:space:]')
-    # NOT `kill -0`: in Git Bash it returns success for a DEAD Windows pid, so the stale-lock
-    # branch never fired and this queue once sat 50 minutes behind a process that had exited.
-    # tasklist is the only thing here that can actually see a Windows process.
+    # NOT `kill -0`. tasklist is the only thing here that can see a Windows process.
+    #
+    # 2026-08-23, measured: this comment had the direction BACKWARDS, and the wrong direction
+    # would send the next fix the wrong way. What `kill -0` actually does in this Git Bash:
+    #   own bash child, alive        -> ALIVE   (correct)
+    #   own bash child, killed       -> dead    (correct)
+    #   NATIVE Windows pid, ALIVE    -> dead    (WRONG -- measured on a live `py -3.11`, pid 43560)
+    # So a lock holding a live Windows pid reads as STALE, and the holder gets robbed of it.
+    # That is the recorded incident in queue_unattended.sh: pd_run.sh cleared its own render
+    # lock as stale ("Windows pid 8100 is not live") and three finishers then wrote the same
+    # film json. The 50-minute wait in the original note is a separate symptom, not this cause.
     if [ -n "$pid" ] && ! tasklist //FI "PID eq $pid" 2>/dev/null | grep -q "$pid"; then
       log "lock held by dead pid $pid -- clearing"
       rm -f out_pdrun_render.lock
