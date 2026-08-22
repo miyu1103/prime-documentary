@@ -126,12 +126,22 @@ def episodes() -> list[str]:
         n = lambda d, ext: len(list((pub / d).glob(ext))) if (pub / d).is_dir() else 0
         film = ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
         eps = sorted(ROOT.glob(f"episodes/PD-*-0{num}-{slug}"))
-        master = (eps[0] / f"08_edit/{slug}_final_bgm.v001.mp4") if eps else None
+        # 2026-08-23: this hard-coded v001 and compared mtimes, and printed
+        # "QUEUE SKIPS THIS" for five episodes that were all genuinely finished. Six of the
+        # seven ship as v002, so it was reading a file nobody uses. The same defect was fixed
+        # in check_queue_will_stall.py the same day; this copy was missed on the first pass.
+        # Ask episode_is_done.py, which compares the receipt sha against the bytes on disk.
+        masters = sorted((eps[0] / "08_edit").glob(f"{slug}_final_bgm.v*.mp4")) if eps else []
         fm = datetime.fromtimestamp(film.stat().st_mtime).strftime("%m-%d %H:%M") if film.is_file() else "MISSING"
-        if master and master.is_file():
-            mm = datetime.fromtimestamp(master.stat().st_mtime).strftime("%m-%d %H:%M")
-            if film.is_file() and film.stat().st_mtime < master.stat().st_mtime:
-                mm += "  <-- QUEUE SKIPS THIS (film older than master)"
+        if masters:
+            latest = masters[-1]
+            ver = latest.name.split("_final_bgm.")[-1].removesuffix(".mp4")
+            stamp = datetime.fromtimestamp(latest.stat().st_mtime).strftime("%m-%d %H:%M")
+            built = subprocess.run(["py", "-3.11", str(ROOT / "scripts/episode_is_done.py"),
+                                    slug, "--quiet"], capture_output=True, cwd=ROOT).returncode == 0
+            note = "BUILT (accepted film is on disk; do not rebuild)" if built \
+                else "the accepted film is NOT on disk"
+            mm = f"{stamp} {ver}  <-- {note}"
         else:
             mm = "none"
         out.append(f"  {slug:11s} {n('img','*.png'):5d} {n('factory','*.mp4'):8d} {n('motion','*.mp4'):7d}  {fm:>10s}  {mm}")

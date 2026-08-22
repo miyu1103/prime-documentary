@@ -100,6 +100,19 @@ def test_the_seven_live_episodes_are_all_built():
         assert rc == eid.DONE, f"{slug}: {why}"
 
 
+@pytest.mark.parametrize("script", ["handover_snapshot.py", "check_queue_will_stall.py"])
+def test_no_alarm_panel_hard_codes_a_master_version(script):
+    """Both panels had the same bug and only one was fixed on the first pass.
+
+    handover_snapshot.py still printed "QUEUE SKIPS THIS" off a v001 mtime comparison after
+    check_queue_will_stall.py had been corrected. Guard both, or the next fix misses one again.
+    """
+    src = (REPO / "scripts" / script).read_text(encoding="utf-8")
+    body = "\n".join(l for l in src.splitlines() if not l.lstrip().startswith("#"))
+    assert "_final_bgm.v001" not in body, f"{script} hard-codes a master version again"
+    assert "episode_is_done.py" in body, f"{script} no longer asks the content-based check"
+
+
 def test_the_queue_no_longer_decides_from_mtime():
     src = (REPO / "scripts" / "queue_unattended.sh").read_text(encoding="utf-8")
     body = src[src.index("already_done()"):]
