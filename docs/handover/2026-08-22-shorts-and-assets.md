@@ -151,3 +151,71 @@ master to the byte on a transfer that had failed. Size agreement is not evidence
 **Not this lane** — EP70 wronghouse rendered and FAILED acceptance with 13 hard failures
 (39:59 against a 40:45 floor, plus motion density). EP71 oroville is `READY to build` with 118
 plates and 48 staged clips and needs i2v. Both belong to the long-form thread.
+
+---
+
+## 7. Second session, 2026-08-22 16:00–18:00
+
+### The line above that said "running now: nothing" was wrong
+
+Three jobs in this lane were running when it was written: two copies of
+`recover_pexels_shelf.py` (09:55 `--want-ep76`, 11:29 plain) and `ingest_modern_web.py`. The
+ledger was being written at 16:11:32, during the integrity check that reported PASS.
+
+**Two writers, and this script was the one that never got a lock.** The 2026-08-20 fix landed in
+`reindex_archive_shelf.py`, `ingest_modern_web.py`, `ingest_archive_sources.py` and
+`ingest_science_museum.py`. This one was missed. Nothing was torn — every row is written and
+flushed one short line at a time — but `already_have()` is read once at start, so the two todo
+lists overlapped and the same id could be written twice. And it bought nothing: Pexels allows
+200 requests/hour, so two copies at 200/hour each hit 429 and back off. Measured throughput with
+both running was 44–155 rows/hour: **the throughput of one copy for twice the monthly budget.**
+
+### What changed
+
+| | |
+|---|---|
+| `recover_pexels_shelf.py` → **`recover_stock_shelf.py`** | one script, `--source pexels\|pixabay`. A sibling would have copied the browse scan, theme map, tier placement, ledger row and lock |
+| `single_instance()`, per source | shown refusing a locked ledger (exit 1) and releasing on a clean run |
+| destination | was hard-coded `D:\pd-archive`; now `TIERS`, so it lands on E: (1,490 GB free vs D:'s 530) |
+| `already_have()` | read ONE root and ONE filename prefix. Reported 1,399 pexels clips held when the ledger knew 1,434, and **0** pixabay clips when 668 were there under `pixabay_extra__v_<id>__` naming. Now reads every tier and the ledger, `.mp4` rows only |
+| `pick_file()` | capped `width<=1920 AND height<=1080`, which **no portrait clip can satisfy**, then fell back to the LARGEST. Live proof: pixabay 359377 came down 2160x3840, 197.8 MB. Now caps long/short edge and falls back to the smallest — retested live at 1920x1080, 15.6 MB |
+| `ensure_h_drive.ps1` + task **PD-EnsureHDrive** | recreates the H: alias at logon. Refuses if `E:\pd-archive` is absent: a wrong H: is worse than no H: |
+| `fix_h_paths.py` | **247 tracked scripts rewritten** `H:\pd-media` → `E:\pd-media` |
+| `.claude/pd-safety-policy.json` | `protected_paths` named `H:/pd-media/assets` only. The moment the code said E:, the guard stopped covering what it exists to cover. Both spellings listed now |
+
+### Running now (really)
+
+Both detached via `scripts/run_stock_recovery.ps1`, logs in `runs/recover_<source>.log`:
+
+```
+pexels   7,924 to fetch, ~40 h at the provider's 200/hour (EP76's 596 first, then the rest)
+pixabay  5,663 to fetch, ~2 h at 50/min
+```
+
+Measured 30 minutes in: pexels +75, pixabay +87, all onto E:. Ledger still PASS at 63,985 files,
+0 torn / 0 duplicate / 0 missing. Videos only — the owner chose that on 2026-08-22; **100,460
+images are still missing and out of scope.**
+
+### Three mistakes worth not repeating
+
+1. **A process search matched its own PowerShell.** `Where CommandLine -match 'recover_stock_shelf'`
+   matched the shell running that very query, and `Stop-Process` killed it mid-script — so the
+   locks were never cleaned and the relaunch never happened. Exclude `$PID`.
+2. **`Path.write_text` translated line endings.** All 385 rewritten files flipped LF → CRLF, and
+   six were `.sh`, where CRLF makes bash fail on the first line. Repaired and re-checked with
+   `bash -n`. The tool now uses `newline=""` on both ends.
+3. **The rewrite hit prose.** Two docstrings ended up reading "E:\pd-media … H: is dead". Restored.
+
+### Still open
+
+- **473 `.json` files still say `H:`.** They are records of where a file *was* — manifests,
+  ledgers, receipts. `fix_h_paths.py --include-json` when that decision is taken. Until then
+  PD-EnsureHDrive is what keeps them resolvable.
+- Untracked scripts were skipped (another lane owns them) and still say `H:`.
+- `scripts/gen_short25_images.py` does not compile at HEAD either — `SyntaxError`, unclosed `[`
+  at `SHOTS`. Pre-existing, unrelated, still broken.
+- Disk: cleared 27.3 GB of temp and caches from C: (297.3 → 324.6 GB free). **Not touched, needs
+  a decision:** `.git` 163 GB, `hiberfil.sys` 51 GB, Codex sessions 54 GB, Codex images 23 GB,
+  Ollama 24 GB.
+- Today's `PD-ShortsPush` ran at 16:20, result 0, five Shorts scheduled, no collisions. Backlog
+  47 → 42.
