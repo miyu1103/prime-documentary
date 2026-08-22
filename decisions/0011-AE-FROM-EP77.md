@@ -1,6 +1,14 @@
 # ADR-0011 — After Effects is part of the picture from EP77 onward
 
 **Status:** Accepted (owner directive, 2026-08-23). Binding on every thread.
+**Review by:** 2026-10-05
+**Revoke if:** the thumbnail experiment `thumbnail-2026-09-07` returns WIN on 2026-10-05
+(`py -3.11 scripts/pd_experiments.py`), i.e. the measured constraint is packaging rather than
+the picture — in which case AE work is deferred, not cancelled, and the 51 scripts stay on disk.
+Also revoke if adding AE raises per-episode production time by more than 25% without the
+median watch percentage of AE episodes exceeding 30% (`scripts/_yt_studio_video_ctr.*.json`).
+The review date and the condition are the assistant's reading, added 2026-08-23 under
+`scripts/check_decisions.py`; the owner may replace either at any time.
 **Scope:** episodes **PD-2026-077-\*** and later. EP70–EP76 are unaffected and finish on the
 current Remotion-only path.
 **Supersedes:** nothing. **Superseded by:** nothing.

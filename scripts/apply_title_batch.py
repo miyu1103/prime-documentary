@@ -52,6 +52,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from check_packaging_qc import TITLE_MIN_CHARS, TITLE_MAX_CHARS  # noqa: E402  single source of truth
 from yt_channel_index import API, authorize, http, list_video_ids, fetch_videos  # noqa: E402
 import yt_quota  # noqa: E402
+import pd_experiments  # noqa: E402  running-experiment locks (config/pd_experiments.v001.json)
 
 try:
     sys.stdout.reconfigure(encoding="utf-8")
@@ -188,6 +189,13 @@ def main() -> int:
 
     # Assert the invariant before any write, loudly, rather than trusting the loop above.
     assert not (set(v for v, _, _, _ in todo) & locked), "REFUSING: a target is inside the lock"
+
+    # Fourth way a title update destroys something, added 2026-08-23: it lands inside an arm of
+    # a running experiment. On 2026-08-12 a proposed batch would have retitled 6 of the 13
+    # controls of title-band-2026-08-10; it was caught by one agent reading one markdown file.
+    # This raises SystemExit, so it stops a dry run too -- the point is that the plan is wrong,
+    # not only the write. --rollback is deliberately not gated: restoring the arm is the remedy.
+    pd_experiments.assert_unlocked([v for v, _, _, _ in todo], "title")
 
     record = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
