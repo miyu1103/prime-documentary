@@ -297,5 +297,12 @@ sections 1–13 above or the user's latest explicit instruction.
   - Never delete, move, or overwrite existing assets, videos, baseline renders, or Git
     history. AI/Python phase work uses isolated environments, not the existing Remotion env.
 
-- **Current status:** P00 audit is `not_started` for episode `PD-2026-009-timbs`.
-  Start it only via `/pd-phase-00-audit PD-2026-009-timbs` (read-only audit).
+- **Current status (corrected 2026-08-23): RETIRED, not in progress.** This section said
+  "P00 audit is `not_started`" for over six weeks while
+  `docs/pd-visual-system/PHASE_STATE.json` has read `current_phase: P12`,
+  `phase_status: candidate_complete` since **2026-07-11**. The workstream ran to its last
+  phase and stopped; nothing has touched it since. Every new session was reading an
+  instruction to begin a programme that had already finished.
+  **Do not start a phase.** The thirteen `/pd-phase-*` skills stay on disk as the record of
+  what was done. If the visual system is picked up again, that is an owner decision and this
+  section is where it gets written down.

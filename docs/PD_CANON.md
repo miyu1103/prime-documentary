@@ -164,9 +164,12 @@ EP65 は実写7本で出荷し、AE は一度も使わなかった。文書に�
 `upload_schedule_case_v001.py` は次を全部満たさないと上げない。
 
 1. `acceptance_receipt.v*.json` の `video_sha256` が**そのファイルの実 sha と一致**
-2. ハード不合格が `runtime_band`、**または**そのエピソードの
-   `approvals/*.json`（`target_type:"edit"` かつ `decision:"approved*"`）の
-   `accepted_deviations[]` に載っているものだけ
+2. **止めてよい失敗は4クラスだけ**（`real_person_likeness` / `rights_and_licence` /
+   `factual_support` / `fabricated_record`）。それ以外は記録して出荷する。
+   判断は `scripts/pd_ship_policy.py` が `config/ship_policy.v001.json` を読んで下す
+   （`upload_schedule_case_v001.py:26` が import しているのを実測・2026-08-23）。
+   **旧ルール（runtime_band ＋ accepted_deviations の部分集合の時だけ投稿）は
+   2026-08-12 に廃止**。5日間ゼロ投稿の直接原因だった。詳細は `.claude/rules/19-ship-gate.md`
 3. `sched_utc` が未来（過去なら dry-run でも拒否）
 
 **APR は形が決まっている。** `check`/`decision:"accepted"` だけの JSON は**効かない**。
@@ -294,7 +297,8 @@ py .venv/Scripts/python.exe scripts/... # → docs 参照。無ければ receipt
 ### 着手前
 
 1. **正典パイプラインから始める。**独自 ffmpeg 組み立て禁止。
-   `PD_ONE_PASS_PRODUCTION_SPEC.v2.md` → ship-gate → `check_final_acceptance` を読んでから触る
+   `PD_ONE_PASS_PRODUCTION_SPEC.v3.md`（**EP72以降**。EP62-71 は v2）→ ship-gate →
+   `check_final_acceptance` を読んでから触る
 2. **全 fail を先に把握してから1バッチで直す。**1つ直して回すと連動ゲートの副作用で沼る
    （EP35 で v003→v04 の1回を無駄にした）
 3. **オーナー基準で自分で1周見てから出す** — 字幕サイズ／OP-ED／8秒フック／非静止／
@@ -340,17 +344,17 @@ py .venv/Scripts/python.exe scripts/... # → docs 参照。無ければ receipt
 | 拘束ルール | `.claude/rules/`（特に `19-ship-gate.md`） |
 | **「設計書を作って」と言われたら** | **下の2つのどちらかを必ず開く。自己流で書かない** |
 | ├ 動画オープニングの設計書 | `C:/Users/aab15/CLAUDE.md`（37行）。**Codex が単体で読んで実装する前提**なので、品質ルール・イージング・レイヤー数・秒数を**本文に数値で書ききる**。抽象語で済ませない。正典実装は `Documents/pino-channel/remotion/src/Opening.tsx` |
-| └ PDエピソードの設計書 | `docs/PD_EPISODE_SPEC_STANDARD.v001.md`（契約JSONの書き方）＋ `docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md`（一発完璧の仕様） |
-| 1発完璧の仕様 | `docs/PD_ONE_PASS_PRODUCTION_SPEC.v2.md`（EP19以降を拘束） |
+| └ PDエピソードの設計書 | `docs/PD_EPISODE_SPEC_STANDARD.v001.md`（契約JSONの書き方）＋ `docs/PD_ONE_PASS_PRODUCTION_SPEC.v3.md`（一発完璧の仕様・EP72以降）＋ `docs/PD_EPISODE_DESIGN_MANUAL.v001.md`（決める順番。**EP77以降はAEの宣言が必須**） |
+| 1発完璧の仕様 | `docs/PD_ONE_PASS_PRODUCTION_SPEC.v3.md`（**EP72以降を拘束**）。EP62-71 は `v2`、EP17-18 は `v1`。**古い版は記録として残す**（受領書が読めなくなるため消さない） |
 | 出荷ゲート詳細 | `docs/PD_SHIP_GATE.md` |
 | 契約の書き方 | `docs/PD_EPISODE_SPEC_STANDARD.v001.md` |
 | 勝ち筋・数値目標 | `docs/PD_WINNING_PATTERN.md` |
-| 視聴データの実測 | `docs/DEEP_RESEARCH_FINDINGS.v001.md` |
+| 視聴データの実測 | `episodes/_planning/DEEP_RESEARCH_FINDINGS.v001.md`（**docs/ には無い**。2026-08-23 に実パスへ訂正） |
 | 失敗全集 | `docs/PD_RETRO_20260805_UNPAUSE.v001.md` / `docs/PD_RETRO_20260810_TIKTOK_AND_CALENDAR.v001.md` |
 | TikTok・カレンダー | `episodes/_planning/HANDOFF_20260810_TIKTOK_AND_CALENDAR.v001.md` |
 | 再利用部品40種 | `remotion/src/motionkit/CATALOG.md`（新演出はまず此処。二重実装禁止） |
 | 素材棚 | `docs/PD_ARCHIVE_SHELF_WORKLOG.v001.md`（**使い方・判定・罠の全部。下の §10 が要約**） |
-| 素材棚（旧・factory） | `docs/FACTORY_INVENTORY.md`（ラベルは壊れている。目視必須） |
+| 素材棚（旧・factory） | `episodes/_planning/FACTORY_INVENTORY.md`（**docs/ には無い**。2026-08-23 に実パスへ訂正。ラベルは壊れている。目視必須） |
 
 ---
 
@@ -401,6 +405,11 @@ py -3.11 scripts/search_archive.py --shot "courthouse building exterior" --kind 
 ## 11. この文書の育て方
 
 - **新しい罠を踏んだら §7 に1行足す。**別の場所に新しい申し送りを作らない
+- **文書どうしが食い違ったら、直したうえで `scripts/check_doc_contradictions.py` に規則を1行足す。**
+  2026-08-23、拘束文書98本で10件の食い違いが見つかった（出荷条件・仕様の版・タイトル長・
+  フックの順番・尺・アニメ・退役ツール・リンク切れ）。どれも不注意ではなく、
+  **新しい決定が新しい場所に書かれ、古い場所が古い文のまま残った**もの。
+  意志では防げないので機械に持たせた。`--demo` が「わざと悪い入力で落ちること」を毎回実演する
 - **状態が変わったら §1 を更新する。**数字だけでなく**測り直すコマンド**も一緒に
 - **機構で塞いだら「機構化済み」と書き、どのファイルかを書く。**
   意志で防ぐと書いてあるものは、いずれ必ず破られる

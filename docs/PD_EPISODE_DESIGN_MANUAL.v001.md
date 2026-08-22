@@ -59,8 +59,18 @@ scripts/scan_video_shape.py                                # 縦動画・HD未�
 
 ### ② 尺を決める → **数字で宣言する**
 
-30分が標準（実測1656〜1786秒）。40分などの例外は必ず `manifest.json` に
-`target_duration_minutes` を書く。書かなければゲートは11.5分として測る。
+**尺の正は `episodes/<EPID>/episode_spec.v*.json` の `runtime_seconds` ただ1つ。**
+（2026-08-23 訂正：それまで「11.5分」「30分」「三段（8-11/15-22/18-30分）」の3つの答えが
+別々の文書に書かれていた）
+
+- `check_final_acceptance.py:284` は **まず spec の `runtime_seconds` を読む。** 宣言があれば
+  それが band になる。実測で確認済み。
+- **宣言が無い話数だけ** `manifest.target_duration_minutes` に落ち、それも無ければ
+  **690〜750秒（11.5〜12.5分）** の既定で測られる。EP50-59 が全滅したのはこれ。
+- `PD_EDITORIAL_DIRECTION.v002.md` の三段（Daily 8-11 / Investigates 15-22 /
+  Prime Original 18-30）は**企画を選ぶときの目安**であって、ゲートが読む値ではない。
+- 実績としては30分が多い（実測1656〜1786秒）。ただしそれは**慣習であって既定値ではない。
+  話ごとに必ず宣言する。**
 
 ### ③ 「映してはいけないもの」を書く ← **最重要**
 
