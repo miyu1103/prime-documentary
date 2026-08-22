@@ -302,12 +302,17 @@ def _end_norm(tok):
     return norm(tok.rstrip(_TRAIL))
 
 
-def _smart_split(seg):
+def _smart_split(seg, max_words=None, max_chars=None):
     """seg: [(token, idx), ...] for a single comma-less clause that ALONE exceeds the caps. Pack
     into the fewest lines within the SEG caps, breaking only at GRAMMATICALLY clean points: a line
     never ends on a dangling function word (_NO_DANGLE_END), and breaks are preferred right after
     punctuation or right before a phrase-starting word (_PHRASE_START). This replaces the old pure
     size-balanced split, which cut mid-phrase ('...torn his car apart on the' / 'floorboards')."""
+    # Callers with a different cue budget pass their own caps. The Shorts builder needs a ~7-word
+    # mobile cue where long-form uses 10; what it wants to reuse is the BREAK RULE, not the
+    # numbers. Defaults keep every existing caller byte-identical.
+    max_words = SEG_MAX_WORDS if max_words is None else max_words
+    max_chars = SEG_MAX_CHARS if max_chars is None else max_chars
     n = len(seg)
     if n <= 1:
         return [seg]
@@ -318,7 +323,7 @@ def _smart_split(seg):
         e = start
         while e + 1 < n:
             trial = seg[start:e + 2]
-            if _wc(trial) <= SEG_MAX_WORDS and len(_line_of(trial)) <= SEG_MAX_CHARS:
+            if _wc(trial) <= max_words and len(_line_of(trial)) <= max_chars:
                 e += 1
             else:
                 break

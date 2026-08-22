@@ -18,6 +18,8 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / "scripts"))
+from gen_captions_forced import _smart_split  # noqa: E402 -- the long-form caption break rule
 MEDIA = Path(json.loads((ROOT / "config/storage.local.json").read_text("utf-8"))["roots"]["media"]["path"])
 LIB = MEDIA / "library"
 REM_DATA = ROOT / "remotion" / "src" / "data"
@@ -70,20 +72,27 @@ def split_caption_segments(text: str) -> list[str]:
     segs = [s.strip(" ,、—–") for s in raw if s and s.strip(" ,、—–")]
     # 2) enforce a breath-unit max length (~7 words) so mobile captions stay 1–2 lines,
     #    splitting any long run at word boundaries
-    MAX_WORDS = 7
+    MAX_WORDS, MAX_CHARS = 7, 42
     broken: list[str] = []
     for s in segs:
         words = s.split()
         if len(words) <= MAX_WORDS:
             broken.append(s)
         else:
-            # Split into roughly EQUAL parts instead of MAX_WORDS-from-the-left. Chunking from
-            # the left leaves a stranded tail and breaks mid-phrase ("...is your | own state's
-            # law", short67 L5, measured 2026-08-01); equal parts land nearer a natural pause.
-            parts = -(-len(words) // MAX_WORDS)
-            size = -(-len(words) // parts)
-            for i in range(0, len(words), size):
-                broken.append(" ".join(words[i:i + size]))
+            # Break where the GRAMMAR allows, not where the word count runs out. Equal-size
+            # parts were an improvement on chunk-from-the-left and still cut mid-phrase: read
+            # off the finished frames of shorts 259-270 on 2026-08-22, cues ended on "tried to
+            # get", "would stop unless", "could also refer callers to", "contract principles
+            # not", "It did not itself decide whether". A cue that ends on a preposition or a
+            # conjunction reads as a mistake on a phone.
+            #
+            # gen_captions_forced._smart_split is the long-form rule for exactly this: never end
+            # a line on a dangling function word, prefer a break after punctuation or before a
+            # phrase-starting word. It is imported rather than copied (rule 18); its caps are
+            # parameters so Shorts can keep a 7-word mobile cue while long-form keeps 10.
+            toks = [(w, i) for i, w in enumerate(words)]
+            for part in _smart_split(toks, max_words=MAX_WORDS, max_chars=MAX_CHARS):
+                broken.append(" ".join(t for t, _ in part))
     # 3) fold tiny fragments (≤2 words) into the previous cue so nothing flashes alone
     merged: list[str] = []
     for s in broken:
