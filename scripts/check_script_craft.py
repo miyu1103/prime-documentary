@@ -265,7 +265,12 @@ def evaluate(epdir, **_kw) -> dict:
     if ledgers:
         banned = forbidden_from_ledger(ledgers[-1])
         low = body.lower()
-        broke = [(t, why) for t, why in banned if t and t.lower() in low]
+        # forbidden_from_ledger has returned (phrase, row-id, MODE) since 2026-08-18 and this
+        # adapter still unpacked two, so evaluate() raised ValueError and every caller recorded
+        # factual_support as UNMEASURED. Use the same mode-aware matcher main() uses -- a plain
+        # substring test here would also reintroduce the four false blocks that fix removed.
+        broke = quarantine_hits(banned, low,
+                                [s.lower() for s in SENT_SPLIT.split(body) if s.strip()])
         if broke:
             problems.append(f"{len(broke)} forbidden claim(s) from {ledgers[-1].name} appear in "
                             f"the narration: {[t for t, _ in broke][:3]}")

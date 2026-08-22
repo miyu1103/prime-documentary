@@ -110,6 +110,12 @@ CONFIG = {
                        "2026-08-23T12:00:00+09:00", "2026-08-23T03:00:00Z"),
                "video": (ROOT / "episodes" / "PD-2026-069-hyatt" / "08_edit"
                          / "hyatt_final_bgm.v002.mp4").as_posix()},
+    # EP70 wronghouse. 2026-08-24 12:00 JST -- the long-form slot the day after hyatt;
+    # the 08-24 shorts sit at 06/09/18/21 and 12:00 is free (yt_schedule_audit, 2026-08-22).
+    # The master is v001 and its sha is the one the acceptance receipt and the shipped-frames
+    # review are both bound to (3a11cb7c). Title/description/tags come from the packaging file.
+    "wronghouse": {**_from_meta("PD-2026-070-wronghouse", "wronghouse",
+                       "2026-08-24T12:00:00+09:00", "2026-08-24T03:00:00Z")},
     "florence": {
         "ep": "PD-2026-037-florence",
         "video": r"C:/Users/aab15/Documents/prime-documentary/episodes/PD-2026-037-florence/08_edit/florence_v005.mp4",
