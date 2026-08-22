@@ -32,7 +32,7 @@ import unicodedata
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
+LEDGER_DIR = r"E:\pd-media\assets\archive\_ledger"
 FACTORY = os.path.join(LEDGER_DIR, "factory.jsonl")
 PROGRESS = os.path.join(LEDGER_DIR, "factory_rename.progress.jsonl")
 

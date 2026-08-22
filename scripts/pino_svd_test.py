@@ -3,7 +3,7 @@ import os, numpy as np, cv2, torch, subprocess
 from PIL import Image
 from diffusers import StableVideoDiffusionPipeline
 
-SRC = r"H:\pd-media\assets\characters\pino\expressions\neutral_v001.png"
+SRC = r"E:\pd-media\assets\characters\pino\expressions\neutral_v001.png"
 OUT = r"C:\Users\aab15\Documents\prime-documentary\_demo\pino"
 FR  = os.path.join(OUT, "svd_test_frames")
 os.makedirs(FR, exist_ok=True)

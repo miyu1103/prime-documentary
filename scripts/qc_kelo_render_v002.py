@@ -10,7 +10,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-010-kelo"
-VIDEO = Path(r"H:\pd-media\episodes\PD-2026-010-kelo\08_edit\kelo_premium_v002.mp4")
+VIDEO = Path(r"E:\pd-media\episodes\PD-2026-010-kelo\08_edit\kelo_premium_v002.mp4")
 SOURCE = ROOT / "remotion" / "out" / "kelo_premium_v002.mp4"
 CAPTIONS = ROOT / "episodes" / EP / "08_edit" / "captions.v002.json"
 OUT = ROOT / "episodes" / EP / "08_edit" / "renders" / "final.v002.qc.json"

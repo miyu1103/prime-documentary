@@ -59,7 +59,7 @@ does not exist yet). Atomic writes (temp + rename). Windows paths via pathlib.
 
 SELF-TEST (dry-run on EP32):
     ./.venv/Scripts/python.exe scripts/build_case_film_mux.py \
-        --ep PD-2026-032-carsearch --video H:\pd-media\episodes\PD-2026-032-carsearch\08_edit\case_film.v001.mp4 --dry-run
+        --ep PD-2026-032-carsearch --video E:\pd-media\episodes\PD-2026-032-carsearch\08_edit\case_film.v001.mp4 --dry-run
 """
 from __future__ import annotations
 

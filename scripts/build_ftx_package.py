@@ -18,7 +18,7 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-004-ftx"
-MEDIA = Path(r"H:\pd-media")
+MEDIA = Path(r"E:\pd-media")
 EP_DIR = ROOT / "episodes" / EP
 PKG = EP_DIR / "09_package"
 QC = EP_DIR / "08_qc"

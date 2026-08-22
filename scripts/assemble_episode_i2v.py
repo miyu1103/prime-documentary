@@ -21,6 +21,26 @@ import sys
 import tempfile
 from pathlib import Path
 
+
+def _pd_media_root() -> Path:
+    """The media root, resolved -- never assumed.
+
+    FIXED 2026-08-22. This file hardcoded H:/pd-media. That drive stopped being enumerated by
+    Windows around the 2026-08-16 reboot and config/storage.local.json was repointed to E:\pd-media
+    on 2026-08-17. Rule 14: no OS-absolute path is a source of truth. The literal below is kept only
+    as a last-resort fallback so an unconfigured checkout behaves as it used to instead of crashing.
+    """
+    import json as _json
+    _cfg = Path(__file__).resolve().parents[1] / "config" / "storage.local.json"
+    try:
+        return Path(_json.loads(_cfg.read_text(encoding="utf-8"))["roots"]["media"]["path"])
+    except Exception:
+        return Path("H:/pd-media")
+
+
+PD_MEDIA = _pd_media_root()
+
+
 FF = shutil.which("ffmpeg") or r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 ROOT = Path(__file__).resolve().parents[1]
 AE_DEMO = Path(r"C:/Users/aab15/ae-demo")
@@ -54,7 +74,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
-    out_dir = Path(f"H:/pd-media/assets/ai_video/{a.slug}/motion")
+    out_dir = PD_MEDIA / "assets" / "ai_video" / a.slug / "motion"
     pub_dir = ROOT / "remotion" / "public" / a.slug / "motion"
     src_dirs = sorted(glob.glob(str(AE_DEMO / f"wan_frames_{a.slug}_*")))
 

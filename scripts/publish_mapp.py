@@ -12,7 +12,7 @@ from pd_factory.providers.youtube import _access_token
 
 VIDEO_ID      = "An0to4U0hJQ"
 EXPECTED_HASH = "d153a16f08f74e0322190267d2640f88a45629dfbe69bea21d355c4f957b6abe"
-VIDEO_FILE    = Path(r"H:\pd-media\episodes\PD-2026-003-mapp\08_edit\mapp_premium_v002.mp4")
+VIDEO_FILE    = Path(r"E:\pd-media\episodes\PD-2026-003-mapp\08_edit\mapp_premium_v002.mp4")
 THUMB_FILE    = ROOT / "remotion" / "out" / "thumb_mapp_a.png"
 EPISODE_DIR   = ROOT / "episodes" / "PD-2026-003-mapp"
 APR_PATH      = EPISODE_DIR / "approvals" / "APR-0004.json"

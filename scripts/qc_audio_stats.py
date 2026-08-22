@@ -40,7 +40,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 from shelf import shelf_rows  # noqa: E402
 
-QC_DIR = r"H:\pd-media\assets\archive\_qc"
+QC_DIR = r"E:\pd-media\assets\archive\_qc"
 VERDICTS = os.path.join(QC_DIR, "archive_verdicts.jsonl")
 AUDIO_EXT = {".mp3", ".wav", ".flac", ".ogg", ".m4a", ".aac", ".aif", ".aiff"}
 

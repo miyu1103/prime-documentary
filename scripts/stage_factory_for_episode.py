@@ -32,7 +32,33 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "remotion" / "public"
-MEDIA_FACTORY_ROOT = Path("H:/pd-media/assets")
+
+
+def _media_factory_root() -> Path:
+    r"""Where the factory footage lives, resolved -- never assumed.
+
+    FIXED 2026-08-22. This line read `Path("H:/pd-media/assets")`. The H: drive -- a Samsung T7 --
+    stopped being enumerated by Windows around the 2026-08-16 reboot and the media root was
+    repointed to E:\pd-media in config/storage.local.json on 2026-08-17. Every other writer
+    resolves through that one key, which is why repointing it unblocked narration, sound and the
+    film build without editing a single script. This script did not, so it kept joining ledger
+    paths onto a dead letter and finding nothing -- silently, because "no candidates" and "wrong
+    drive" look identical from the caller.
+
+    Rule 14: no OS-absolute path is a source of truth. Read the config; fall back to the old
+    literal only so an unconfigured checkout behaves the way it used to rather than crashing.
+    """
+    cfg = ROOT / "config" / "storage.local.json"
+    try:
+        with open(cfg, encoding="utf-8") as fh:
+            return Path(json.load(fh)["roots"]["media"]["path"]) / "assets"
+    except Exception as e:  # noqa: BLE001 - a missing or malformed config must not be fatal here
+        print(f"[factory] WARNING could not read {cfg.name} ({type(e).__name__}); "
+              f"falling back to H:/pd-media/assets, which is very probably gone")
+        return Path("H:/pd-media/assets")
+
+
+MEDIA_FACTORY_ROOT = _media_factory_root()
 SELECTOR = ROOT / "scripts" / "select_factory_assets.py"
 MIN_OK_BYTES = 50_000
 MIN_LUMA = 8.0

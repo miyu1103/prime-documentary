@@ -12,11 +12,11 @@ FFMPEG  = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffmpeg.exe"
 FFPROBE = r"C:\Users\aab15\AppData\Local\Microsoft\WinGet\Links\ffprobe.exe"
 
 REPO       = pathlib.Path(__file__).resolve().parents[1]
-DRAFT_DIR  = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_voice\draft")
-SLOW_DIR   = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_voice\slow_v001")
-MASTER_OUT = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_voice\master\vc_master_v002.mp3")
+DRAFT_DIR  = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_voice\draft")
+SLOW_DIR   = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_voice\slow_v001")
+MASTER_OUT = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_voice\master\vc_master_v002.mp3")
 PLAN_JSON  = REPO / "episodes/PD-2026-001-miranda/06_audio/voice_plan.v001.json"
-SRT_OUT    = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\subs_vc_v002.srt")
+SRT_OUT    = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\07_edit\sample\subs_vc_v002.srt")
 
 SLOW_FACTOR = 0.856   # output speed; <1 = slower; output_dur = input_dur / SLOW_FACTOR
 MAX_WORDS   = 10      # max words per subtitle entry (American documentary standard)

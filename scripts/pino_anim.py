@@ -9,7 +9,7 @@ import os, math, wave, subprocess
 import numpy as np, cv2
 from scipy.signal import butter, lfilter
 
-EXPR = r"H:\pd-media\assets\characters\pino\expressions"
+EXPR = r"E:\pd-media\assets\characters\pino\expressions"
 OUT  = r"C:\Users\aab15\Documents\prime-documentary\_demo\pino"
 FR   = os.path.join(OUT, "frames")
 os.makedirs(FR, exist_ok=True)

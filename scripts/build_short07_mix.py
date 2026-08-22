@@ -6,7 +6,7 @@ Reads short07_narration_index.v002.en_us.json (per-line spoken windows), then:
     inside the line window (exact text match; no whisper — VO text is known) -> short07_timing.ts
   - mixes narration + BGM (explainer bed) + tension lift + ambience + SFX with sidechain ducking
     and -14 LUFS loudnorm -> final_mix -> copied to remotion/public/shorts/short08/audio/
-All music/SFX are from the rights-tracked library (H:\\pd-media\\library).
+All music/SFX are from the rights-tracked library (E:\\pd-media\\library).
 """
 from __future__ import annotations
 

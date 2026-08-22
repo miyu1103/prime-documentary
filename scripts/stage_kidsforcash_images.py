@@ -37,7 +37,7 @@ from pathlib import Path
 from PIL import Image
 
 ROOT = Path(r"C:\Users\aab15\Documents\prime-documentary")
-SRC = Path(r"H:\pd-media\assets\ai\kidsforcash")
+SRC = Path(r"E:\pd-media\assets\ai\kidsforcash")
 EP = "PD-2026-038-kidsforcash"
 SLUG = "kidsforcash"
 N = 40

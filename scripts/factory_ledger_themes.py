@@ -46,7 +46,7 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 
-DEFAULT_LEDGER = Path(r"H:\pd-media\assets\archive\_ledger\factory.jsonl")
+DEFAULT_LEDGER = Path(r"E:\pd-media\assets\archive\_ledger\factory.jsonl")
 
 # tier -> human label, in the order used for reporting
 TIER_NAMES = {

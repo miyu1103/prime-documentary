@@ -32,9 +32,9 @@ Sources (all keyless; verified live 2026-07-27):
 
 Storage contract (owner directives, binding):
     media       E:\\pd-archive\\<theme>\\           HARD STOP if E: free < 250GB
-    quarantine  H:\\pd-media\\assets\\archive\\_quarantine\\<theme>\\  (review_required)
-    ledgers     H:\\pd-media\\assets\\archive\\_ledger\\{nara,loc,ukna}.jsonl
-    log         H:\\pd-media\\assets\\archive\\_ledger\\ingest_gov.log  (--log-file)
+    quarantine  E:\\pd-media\\assets\\archive\\_quarantine\\<theme>\\  (review_required)
+    ledgers     E:\\pd-media\\assets\\archive\\_ledger\\{nara,loc,ukna}.jsonl
+    log         E:\\pd-media\\assets\\archive\\_ledger\\ingest_gov.log  (--log-file)
     C: is never written (repo code excepted).
 
 Ledger JSONL schema (one object per line):
@@ -66,7 +66,7 @@ contact e-mail in the User-Agent. Resumable at any point; the run may span days.
 
 Usage:
     py -3.11 scripts/ingest_gov_archives.py --source nara --theme courtroom_justice --limit 2 --passes 1
-    py -3.11 scripts/ingest_gov_archives.py --source all --theme all --log-file H:\\pd-media\\assets\\archive\\_ledger\\ingest_gov.log
+    py -3.11 scripts/ingest_gov_archives.py --source all --theme all --log-file E:\\pd-media\\assets\\archive\\_ledger\\ingest_gov.log
     py -3.11 scripts/ingest_gov_archives.py --sweep-existing-index   # retroactive sha sweep
 """
 from __future__ import annotations
@@ -94,7 +94,7 @@ GB = 1024 ** 3
 SHELF_ROOT = r"E:\pd-archive"
 SHELF_DRIVE = "E:\\"
 SHELF_FLOOR = 250 * GB                      # owner hard guard: stop below this
-H_ARCHIVE = r"H:\pd-media\assets\archive"
+H_ARCHIVE = r"E:\pd-media\assets\archive"
 LEDGER_DIR = os.path.join(H_ARCHIVE, "_ledger")
 QUARANTINE = os.path.join(H_ARCHIVE, "_quarantine")
 QUAR_DRIVE = "H:\\"

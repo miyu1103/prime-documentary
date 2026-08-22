@@ -31,6 +31,26 @@ import sys
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+
+def _pd_media_root() -> Path:
+    """The media root, resolved -- never assumed.
+
+    FIXED 2026-08-22. This file hardcoded H:/pd-media. That drive stopped being enumerated by
+    Windows around the 2026-08-16 reboot and config/storage.local.json was repointed to E:\pd-media
+    on 2026-08-17. Rule 14: no OS-absolute path is a source of truth. The literal below is kept only
+    as a last-resort fallback so an unconfigured checkout behaves as it used to instead of crashing.
+    """
+    import json as _json
+    _cfg = Path(__file__).resolve().parents[1] / "config" / "storage.local.json"
+    try:
+        return Path(_json.loads(_cfg.read_text(encoding="utf-8"))["roots"]["media"]["path"])
+    except Exception:
+        return Path("H:/pd-media")
+
+
+PD_MEDIA = _pd_media_root()
+
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "episodes" / "_planning" / "measurements" / "VIDEO_SHAPE_SCAN.jsonl"
 VIDEO_EXT = {".mp4", ".mov", ".m4v", ".webm", ".mkv"}
@@ -96,7 +116,7 @@ def main(argv: list[str]) -> int:
         pass
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--root", default=r"H:/pd-media/assets")
+    ap.add_argument("--root", default=str(PD_MEDIA / "assets"))
     ap.add_argument("--stage", choices=["probe", "crop", "both"], default="probe")
     ap.add_argument("--workers", type=int, default=12)
     ap.add_argument("--limit", type=int, default=0, help="0 = every clip")

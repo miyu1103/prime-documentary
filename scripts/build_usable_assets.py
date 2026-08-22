@@ -101,7 +101,80 @@ def normalize(item: dict[str, Any]) -> dict[str, Any]:
     return out
 
 
+def load_editorial(ep_dir: str) -> dict[str, dict[str, str]]:
+    """Verdicts from the human eyeball pass, if one has been done for this episode.
+
+    WHY THIS GATE GREW AN EDITORIAL ARM (2026-08-22, EP72). This script is a RIGHTS gate and it
+    was doing its job: all 108 of EP72's harvested clips are Pexels/Pixabay, commercially
+    licensed, hashed -- 108 'usable'. Then the clips were watched
+    (`runs/qc/lacmegantic_stock_verdicts.v001.md`) and 55 of them could not appear in the film:
+    snow in a July story, passenger and steam trains the film bible bars, catenary on an
+    unelectrified line, and thirteen clips that are not documentary objects at all -- jellyfish,
+    tortoises, an insect, Tokyo at night, five separate Christmas-light toy trains.
+
+    Rights-clean and unusable are different properties, and nothing downstream was checking the
+    second one. A clip a human has rejected must not be placeable on the timeline just because
+    its licence is fine, so it is routed to `blocked` with the reason carried through. Absent a
+    verdicts file this function returns {} and the gate behaves exactly as it always has.
+    """
+    # `resolve()` returns the episode FOLDER NAME, not a path -- join it onto EPDIR like
+    # load_items() does, or this silently finds nothing and the gate reports "NONE".
+    p = os.path.join(EPDIR, ep_dir, "05_stock", "editorial_verdicts.v001.json")
+    if not os.path.exists(p):
+        return {}
+    with open(p, encoding="utf-8") as fh:
+        return {r["asset_id"]: r for r in json.load(fh)["verdicts"]}
+
+
+EDITORIAL: dict[str, dict[str, str]] = {}
+
+
+def _media_root() -> str:
+    try:
+        with open(os.path.join(ROOT, "config", "storage.local.json"), encoding="utf-8") as fh:
+            return json.load(fh)["roots"]["media"]["path"]
+    except Exception:
+        return ""
+
+
+MEDIA_ROOT = _media_root()
+
+
+def on_disk(a: dict[str, Any]) -> bool:
+    """Is the byte stream this row describes actually present on this machine?
+
+    MEASURED 2026-08-22 on EP72. This gate reported `usable=274` on 351 rows. 234 of those 274 are
+    the shared library in references/stock_manifest.json, and NOT ONE of its files exists: every
+    path is `assets/stock/images/...`, which lived on the H: drive that died on 2026-08-16. The
+    gate was counting ROWS, not FILES, so a library that is entirely gone read as the healthiest
+    part of the pool -- a false green in exactly the place a false green is most expensive,
+    because the next step places these on a timeline.
+
+    Rights-clean, editorially fit and PRESENT are three different properties. This checks the
+    third. Paths resolve through config/storage.local.json (rule 14: no OS-absolute path is a
+    source of truth), trying the media root first and the repo second, because the two manifest
+    generations disagree about which one their relative paths are relative to.
+    """
+    f = str(a.get("file") or "")
+    if not f:
+        return False
+    if f.startswith("artifact://"):
+        f = f[len("artifact://"):]
+    elif os.path.isabs(f):
+        return os.path.exists(f)
+    return any(os.path.exists(os.path.join(base, f))
+               for base in (MEDIA_ROOT, ROOT) if base)
+
+
 def classify(a: dict[str, Any]) -> tuple[str, str]:
+    if not on_disk(a):
+        return "blocked", (f"file not on disk ('{a.get('file', '')}') - the row survives, the "
+                           f"bytes do not; it cannot be placed")
+    ed = EDITORIAL.get(a.get("asset_id", ""))
+    if ed and ed["verdict"] == "reject":
+        return "blocked", f"editorial reject ({ed['reason']}) - {ed.get('note', '')}".strip(" -")
+    if ed and ed["verdict"] == "conditional":
+        return "review", f"editorial conditional ({ed['reason']}) - {ed.get('note', '')}".strip(" -")
     host = host_of(a["source_url"])
     lic = (a["license"] or "").lower()
     if host and any(d in host for d in DENY_HOSTS):
@@ -183,6 +256,14 @@ def main() -> int:
     ep_id = os.path.basename(ep)
     items, src = load_items(ep, from_path)
     schema = json.load(open(os.path.join(ROOT, "schemas", "stock-ledger.schema.json"), encoding="utf-8"))
+
+    global EDITORIAL
+    EDITORIAL = load_editorial(ep)
+    if EDITORIAL:
+        print(f"Editorial verdicts: {len(EDITORIAL)} clip(s) carry a human verdict")
+    else:
+        print("Editorial verdicts: NONE. This gate is checking rights only -- it cannot tell you "
+              "whether the footage belongs in the film. Watch the clips before the timeline.")
 
     usable, review, blocked = [], [], []
     for a in items:

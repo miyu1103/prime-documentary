@@ -21,9 +21,9 @@ Usage:
     python scripts/qc_archive_contact_sheets.py --theme courtroom_justice
     python scripts/qc_archive_contact_sheets.py --per-theme 96 --refresh
 Output:
-    H:\\pd-media\\assets\\archive\\_qc\\<theme>\\labeled_NN.jpg   (visual themes)
-    H:\\pd-media\\assets\\archive\\_qc\\<theme>\\listen_NN.m3u8   (audio themes)
-    H:\\pd-media\\assets\\archive\\_qc\\verdicts.template.jsonl   (fill in + save as archive_verdicts.jsonl)
+    E:\\pd-media\\assets\\archive\\_qc\\<theme>\\labeled_NN.jpg   (visual themes)
+    E:\\pd-media\\assets\\archive\\_qc\\<theme>\\listen_NN.m3u8   (audio themes)
+    E:\\pd-media\\assets\\archive\\_qc\\verdicts.template.jsonl   (fill in + save as archive_verdicts.jsonl)
 """
 from __future__ import annotations
 
@@ -44,8 +44,8 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from shelf import shelf_rows  # noqa: E402  the one definition of "on the shelf"
 
-LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
-QC_DIR = r"H:\pd-media\assets\archive\_qc"
+LEDGER_DIR = r"E:\pd-media\assets\archive\_ledger"
+QC_DIR = r"E:\pd-media\assets\archive\_qc"
 VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv", ".avi", ".mpeg", ".mpg", ".m4v"}
 IMAGE_EXT = {".jpg", ".jpeg", ".png", ".gif", ".tif", ".tiff", ".webp", ".bmp"}
 AUDIO_EXT = {".mp3", ".wav", ".flac", ".ogg", ".m4a", ".aac", ".aif", ".aiff"}

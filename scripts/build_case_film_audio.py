@@ -315,7 +315,7 @@ def media_root() -> Path:
         cfg = json.loads(cfg_path.read_text("utf-8"))
         return Path(cfg["roots"]["media"]["path"])
     except Exception:
-        return Path(r"H:\pd-media")
+        return Path(r"E:\pd-media")
 
 
 def sha256_text(text: str) -> str:

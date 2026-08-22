@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Measure and correct FACTORY SHELF MISLABELING using recovered source metadata.
 
-The incident: `H:\\pd-media\\assets\\factory\\` was filled by running ~300 curated
+The incident: `E:\\pd-media\\assets\\factory\\` was filled by running ~300 curated
 queries against Pexels/Pixabay and naming every downloaded file after the QUERY
 ("AF-BG-40537__voting_booth_curtain.jpg"), not after what actually came back. The
 theme a builder reads off that filename (`factory_themes.theme_of(subtype)`) is
@@ -10,7 +10,7 @@ theme folder `evidence_bag` containing cartoons.
 
 Since 2026-07-27 the retrofit recovered the REAL provider title for 88,740 of those
 files (Pexels/Pixabay canonical URL slug) into
-`H:\\pd-media\\assets\\archive\\_ledger\\factory.jsonl`. That makes the mislabel
+`E:\\pd-media\\assets\\archive\\_ledger\\factory.jsonl`. That makes the mislabel
 measurable for the first time: compare the recovered title against (a) the local
 filename slug and (b) the theme's keyword set.
 
@@ -38,7 +38,7 @@ Outputs (additive only — originals are never moved, renamed or deleted):
      corrected themes, plus `_mislabeled\\` holding every contradiction as a symlink
      (`<local>__to__<recovered>` for re-homed, `<local>__unsupported` for flagged
      in place) so they can be eyeballed as a group.
-  3. H:\\pd-media\\assets\\archive\\_qc\\factory_label_audit\\  labeled contact
+  3. E:\\pd-media\\assets\\archive\\_qc\\factory_label_audit\\  labeled contact
      sheets for eyeball verification + audit JSON/CSV.
 
 Usage:
@@ -73,7 +73,7 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 import ingest_archive_sources as ing  # noqa: E402  (relevance engine — reused, not copied)
 from factory_themes import RULES  # noqa: E402  (factory taxonomy — single source)
 
-ASSETS_ROOT = r"H:\pd-media\assets"
+ASSETS_ROOT = r"E:\pd-media\assets"
 LEDGER = os.path.join(ASSETS_ROOT, "archive", "_ledger", "factory.jsonl")
 QC_DIR = os.path.join(ASSETS_ROOT, "archive", "_qc", "factory_label_audit")
 BROWSE = r"D:\pd-media-browse\factory_browse"

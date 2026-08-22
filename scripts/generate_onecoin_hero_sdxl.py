@@ -10,7 +10,7 @@ from __future__ import annotations
 import urllib.request, json, base64, time, os, sys
 
 BASE = "http://127.0.0.1:7860"
-OUT = r"H:\pd-media\episodes\PD-2026-017-onecoin\05_stock\hero"
+OUT = r"E:\pd-media\episodes\PD-2026-017-onecoin\05_stock\hero"
 N_VAR = int(sys.argv[1]) if len(sys.argv) > 1 else 4
 
 SUFFIX = (", cinematic documentary still, dramatic chiaroscuro lighting, photorealistic, "

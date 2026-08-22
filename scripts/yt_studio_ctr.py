@@ -36,7 +36,7 @@ CHANNEL_ID = "UCuQPtAz1rca9eJ4xhvX0yKA"
 # serializedDelegationContext は channelId のみに依存する不変トークン
 SERIALIZED_DELEGATION = "EhhVQ3VRUHRBejFyY2E5ZUo0eGh2WDB5S0EqAggI"
 CLIENT_NAME = 62
-CLIENT_VERSION = "1.20260722.04.00"  # last_verified_at 2026-07-25
+CLIENT_VERSION = "1.20260815.00.01"  # last_verified_at 2026-08-19 (fresh DevTools capture)
 ORIGIN = "https://studio.youtube.com"
 ENDPOINT = f"{ORIGIN}/youtubei/v1/yta_web/get_screen?alt=json"
 UTC_OFFSET_MIN = 540  # Asia/Tokyo

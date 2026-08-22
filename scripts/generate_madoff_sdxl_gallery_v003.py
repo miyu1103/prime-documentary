@@ -6,7 +6,7 @@ from pathlib import Path
 import requests
 
 API = 'http://127.0.0.1:7860'
-OUT = Path(r'H:\pd-media\episodes\PD-2026-005-madoff\05_visuals\sdxl_gallery_v003')
+OUT = Path(r'E:\pd-media\episodes\PD-2026-005-madoff\05_visuals\sdxl_gallery_v003')
 LOG = OUT / '_progress.jsonl'
 STATUS = OUT / '_status.json'
 OUT.mkdir(parents=True, exist_ok=True)

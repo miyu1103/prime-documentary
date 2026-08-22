@@ -30,6 +30,26 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
+
+def _pd_media_root() -> Path:
+    """The media root, resolved -- never assumed.
+
+    FIXED 2026-08-22. This file hardcoded H:/pd-media. That drive stopped being enumerated by
+    Windows around the 2026-08-16 reboot and config/storage.local.json was repointed to E:\pd-media
+    on 2026-08-17. Rule 14: no OS-absolute path is a source of truth. The literal below is kept only
+    as a last-resort fallback so an unconfigured checkout behaves as it used to instead of crashing.
+    """
+    import json as _json
+    _cfg = Path(__file__).resolve().parents[1] / "config" / "storage.local.json"
+    try:
+        return Path(_json.loads(_cfg.read_text(encoding="utf-8"))["roots"]["media"]["path"])
+    except Exception:
+        return Path("H:/pd-media")
+
+
+PD_MEDIA = _pd_media_root()
+
+
 try:
     sys.stdout.reconfigure(encoding="utf-8")
 except Exception:
@@ -132,7 +152,7 @@ def corner_shift(a: np.ndarray, b: np.ndarray) -> float:
 
 
 def plate_luma(slug: str, stem: str) -> np.ndarray | None:
-    p = Path(f"H:/pd-media/assets/ai/{slug}/{stem}.png")
+    p = PD_MEDIA / "assets" / "ai" / slug / f"{stem}.png"
     if not p.is_file():
         return None
     return np.asarray(Image.open(p).convert("L").resize((256, 144))).astype("float32")

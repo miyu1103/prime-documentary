@@ -373,7 +373,7 @@ class ContentIndex:
     Usage (selector side)::
 
         idx = ContentIndex(target_labels={"openfields"})
-        owners = idx.owners_of(Path(r"H:\\pd-media\\...\\clip.mp4"))   # [] means genuinely fresh
+        owners = idx.owners_of(Path(r"E:\\pd-media\\...\\clip.mp4"))   # [] means genuinely fresh
         idx.save()
 
     Nothing is hashed when the index is built. A candidate whose exact byte SIZE appears nowhere

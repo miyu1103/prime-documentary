@@ -4,7 +4,7 @@ r"""Procedurally synthesize a RIGHTS-FREE (owned) SFX + ambience palette with ff
 WHY THIS FILE EXISTS
 --------------------
 An adversarial critic found the reusable PD sound palette
-(``H:\pd-media\library\sfx`` + ``\ambience``) is THIN and REPETITIVE: a handful
+(``E:\pd-media\library\sfx`` + ``\ambience``) is THIN and REPETITIVE: a handful
 of one-shots (ui_tick / sub_drop / whoosh_short) are reused dozens of times per
 episode -- an audible "cheap" tell. The fix is MORE VARIETY, generated in a way
 whose rights are unambiguous: everything here is synthesized from first
@@ -39,7 +39,7 @@ No network, no paid API, no GPU. Idempotent: same inputs -> same bytes; every
 noise source is seeded, every oscillator is analytic. Re-running rebuilds the
 same files in place. Writes ONLY to the two library folders (new filenames).
 Windows raw-string paths; storage root resolved from config/storage.local.json
-with an ``H:\pd-media`` fallback (same contract as build_case_film_audio.py).
+with an ``E:\pd-media`` fallback (same contract as build_case_film_audio.py).
 
 RUN
 ---
@@ -73,7 +73,7 @@ def media_root() -> Path:
         cfg = json.loads(cfg_path.read_text("utf-8"))
         return Path(cfg["roots"]["media"]["path"])
     except Exception:
-        return Path(r"H:\pd-media")
+        return Path(r"E:\pd-media")
 
 
 def run(argv: list[str]) -> subprocess.CompletedProcess:

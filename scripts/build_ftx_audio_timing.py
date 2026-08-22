@@ -11,7 +11,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-004-ftx"
-MEDIA = Path(r"H:\pd-media")
+MEDIA = Path(r"E:\pd-media")
 PLAN = ROOT / "episodes" / EP / "06_audio" / "voice_plan.v001.json"
 DRAFT = MEDIA / "episodes" / EP / "06_voice" / "draft"
 MASTER_DIR = MEDIA / "episodes" / EP / "06_voice" / "master"

@@ -1,5 +1,5 @@
 import os, base64, requests, cv2, numpy as np
-SRC = r"H:\pd-media\assets\characters\pino\expressions"
+SRC = r"E:\pd-media\assets\characters\pino\expressions"
 DST = r"C:\Users\aab15\Documents\prime-documentary\_demo\pino\hires"
 os.makedirs(DST, exist_ok=True)
 API = "http://127.0.0.1:7860/sdapi/v1/extra-single-image"

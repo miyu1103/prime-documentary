@@ -23,7 +23,7 @@ if ($Only) { $Only = @($Only -split '[,\s]+' | Where-Object { $_ }) }
 
 $py   = "C:\Users\aab15\AppData\Local\Programs\Python\Python310\python.exe"
 $repo = "C:\Users\aab15\Documents\prime-documentary"
-$led  = "H:\pd-media\assets\archive\_ledger"
+$led  = "E:\pd-media\assets\archive\_ledger"
 
 # Lane set as of 2026-08-01. Owner directive: fetch material that is actually usable.
 # What the contact-sheet review measured, and what each exclusion below costs nothing:

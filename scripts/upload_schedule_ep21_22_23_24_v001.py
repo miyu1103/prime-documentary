@@ -39,7 +39,7 @@ EPISODES: list[dict[str, Any]] = [
     {
         "num": 21,
         "episode_id": "PD-2026-021-dbcooper",
-        "video": r"H:\pd-media\episodes\PD-2026-021-dbcooper\08_edit\final.mp4",
+        "video": r"E:\pd-media\episodes\PD-2026-021-dbcooper\08_edit\final.mp4",
         "captions": "episodes/PD-2026-021-dbcooper/08_edit/captions.v001.srt",
         "thumbnail": "episodes/PD-2026-021-dbcooper/09_package/thumbnail.selected.v001.png",
         "title": "D.B. Cooper: The Only Hijacking America Never Solved",
@@ -59,7 +59,7 @@ EPISODES: list[dict[str, Any]] = [
     {
         "num": 22,
         "episode_id": "PD-2026-022-milken",
-        "video": r"H:\pd-media\episodes\PD-2026-022-milken\08_edit\final.mp4",
+        "video": r"E:\pd-media\episodes\PD-2026-022-milken\08_edit\final.mp4",
         "captions": "episodes/PD-2026-022-milken/08_edit/captions.v001.srt",
         "thumbnail": "episodes/PD-2026-022-milken/09_package/thumbnail.selected.v001.png",
         "title": "Michael Milken: Genius, or the Face of Greed?",
@@ -72,7 +72,7 @@ EPISODES: list[dict[str, Any]] = [
     {
         "num": 23,
         "episode_id": "PD-2026-023-swartz",
-        "video": r"H:\pd-media\episodes\PD-2026-023-swartz\08_edit\final.motionfix.v001.mp4",
+        "video": r"E:\pd-media\episodes\PD-2026-023-swartz\08_edit\final.motionfix.v001.mp4",
         "captions": "episodes/PD-2026-023-swartz/08_edit/captions.v001.srt",
         "thumbnail": "episodes/PD-2026-023-swartz/09_package/thumbnail.selected.v001.png",
         "title": "The Internet's Own Boy: Aaron Swartz",
@@ -93,7 +93,7 @@ EPISODES: list[dict[str, Any]] = [
     {
         "num": 24,
         "episode_id": "PD-2026-024-rajaratnam",
-        "video": r"H:\pd-media\episodes\PD-2026-024-rajaratnam\08_edit\v001.mp4",
+        "video": r"E:\pd-media\episodes\PD-2026-024-rajaratnam\08_edit\v001.mp4",
         "captions": "episodes/PD-2026-024-rajaratnam/08_edit/captions.v001.srt",
         "thumbnail": "episodes/PD-2026-024-rajaratnam/09_package/thumbnail.selected.v001.png",
         "title": "The Wiretap That Cracked Wall Street",

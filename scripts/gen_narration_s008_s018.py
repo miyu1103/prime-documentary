@@ -130,7 +130,7 @@ def main():
     voice_id = env.get("ELEVENLABS_VOICE_ID", "")
     if not api_key or not voice_id:
         print("ERROR: .env にキーがありません"); sys.exit(1)
-    out_dir = pathlib.Path(r"H:\pd-media\episodes\PD-2026-001-miranda\06_audio\narration")
+    out_dir = pathlib.Path(r"E:\pd-media\episodes\PD-2026-001-miranda\06_audio\narration")
     out_dir.mkdir(parents=True, exist_ok=True)
     for name, text in SCENES.items():
         path = out_dir / f"{name}.mp3"

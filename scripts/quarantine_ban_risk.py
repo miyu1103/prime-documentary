@@ -41,8 +41,8 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from shelf import shelf_rows  # noqa: E402  the one definition of "on the shelf"
 
-LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
-QUARANTINE = r"H:\pd-media\assets\archive\_quarantine"
+LEDGER_DIR = r"E:\pd-media\assets\archive\_ledger"
+QUARANTINE = r"E:\pd-media\assets\archive\_quarantine"
 RECORD = os.path.join(LEDGER_DIR, "ban_risk_quarantine.jsonl")
 
 # Each pattern is a channel-safety judgement, not a relevance one. Keep them narrow and

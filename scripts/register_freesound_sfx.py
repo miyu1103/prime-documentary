@@ -3,7 +3,7 @@
 
 WHY THIS EXISTS
 ---------------
-`H:\\pd-media\\assets\\archive\\_ledger\\freesound.jsonl` holds 125 CC0 audio
+`E:\\pd-media\\assets\\archive\\_ledger\\freesound.jsonl` holds 125 CC0 audio
 files (all `license_decision == "cc0"`, all `usage_tag == "sfx"`, all
 `theme == "sfx_environment"`).  CC0 is not the gate: **the publish gate is
 inclusion in `episodes/_planning/SOUND_LIBRARY_RIGHTS.v001.json`**, and none of
@@ -12,9 +12,9 @@ these rows are in it.  Until they are registered, no shipped mix may use them
 
 There is a SECOND blocker that registration alone does not clear: the files live
 at `D:\\pd-archive\\sfx_environment\\`, outside the library root
-(`H:\\pd-media\\library`).  `scripts/build_case_film_audio.py` resolves one-shot
+(`E:\\pd-media\\library`).  `scripts/build_case_film_audio.py` resolves one-shot
 SFX as `lib / "sfx" / filename`, so a clip must also be STAGED into
-`H:\\pd-media\\library\\sfx\\` before the builder can see it.
+`E:\\pd-media\\library\\sfx\\` before the builder can see it.
 
   UNLOCK = (1) --apply  [rights registry entry]  AND  (2) --stage  [library copy]
 
@@ -49,7 +49,7 @@ REPO = Path(__file__).resolve().parent.parent
 LEDGER = Path(r"E:\pd-archive\_ledger\freesound.jsonl")
 REGISTRY = REPO / "episodes" / "_planning" / "SOUND_LIBRARY_RIGHTS.v001.json"
 PENDING = REPO / "episodes" / "_planning" / "SOUND_LIBRARY_RIGHTS.freesound_pending.v001.json"
-LIBRARY_SFX = Path(r"H:\pd-media\library\sfx")
+LIBRARY_SFX = Path(r"E:\pd-media\library\sfx")
 
 ID_PREFIX = "FSX"  # distinct from SFX- (ElevenLabs), MUS- (Suno), SYN- (ffmpeg)
 
@@ -145,7 +145,7 @@ def build_entries(rows: list[dict]) -> tuple[list[dict], list[str]]:
                 "provenance_status": "recorded_license",
                 "publish_gate": (
                     "CC0 needs no clearance, but this asset may only enter a shipped mix once it is "
-                    "(1) present in this manifest and (2) staged into H:\\pd-media\\library\\sfx\\ so "
+                    "(1) present in this manifest and (2) staged into E:\\pd-media\\library\\sfx\\ so "
                     "build_case_film_audio.py can resolve it; L4 one-shot / thin texture use ONLY — it "
                     "must never replace an L3 canonical AMBIENCE_BEDS bed"
                 ),
@@ -200,7 +200,7 @@ def write_pending(entries: list[dict], problems: list[str]) -> None:
         "library_sfx_dir": str(LIBRARY_SFX),
         "unlock_steps": [
             "1. python scripts/register_freesound_sfx.py --apply   (writes the entries into SOUND_LIBRARY_RIGHTS.v001.json, .bak kept)",
-            "2. python scripts/register_freesound_sfx.py --stage <IDS>   (copies just the clips a build needs into H:\\pd-media\\library\\sfx\\)",
+            "2. python scripts/register_freesound_sfx.py --stage <IDS>   (copies just the clips a build needs into E:\\pd-media\\library\\sfx\\)",
             "L4 one-shot / thin texture use only — never as an L3 AMBIENCE_BEDS replacement",
         ],
         "summary": {

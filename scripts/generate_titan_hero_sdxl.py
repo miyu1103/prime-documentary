@@ -574,7 +574,7 @@ def update_asset_manifest(
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--repo", default=r"C:\Users\aab15\Documents\prime-documentary")
-    parser.add_argument("--media-root", default=fr"H:\pd-media\episodes\{EPISODE_ID}\05_stock\hero")
+    parser.add_argument("--media-root", default=fr"E:\pd-media\episodes\{EPISODE_ID}\05_stock\hero")
     parser.add_argument("--a1111", default="http://127.0.0.1:7860")
     parser.add_argument("--checkpoint", default="juggernautXL_ragnarokBy")
     parser.add_argument("--generate-only", action="store_true")

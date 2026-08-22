@@ -2,7 +2,7 @@
 """
 Search the PD archive shelf across ALL ingest ledgers (every agent/source) in seconds.
 
-Queries the centralized rights ledger H:\\pd-media\\assets\\archive\\_ledger\\*.jsonl
+Queries the centralized rights ledger E:\\pd-media\\assets\\archive\\_ledger\\*.jsonl
 (contract: CONTRACT.md in the same folder) by free-text keywords + optional filters,
 printing file path, title, license and theme for each hit.
 

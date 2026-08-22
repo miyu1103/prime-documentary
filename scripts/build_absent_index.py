@@ -17,7 +17,7 @@ Two categories, kept apart because they mean different things:
                 download, or a bug. Worth looking at.
 
     python scripts/build_absent_index.py
-Output: H:\\pd-media\\assets\\archive\\_ledger\\absent_index.json
+Output: E:\\pd-media\\assets\\archive\\_ledger\\absent_index.json
 """
 from __future__ import annotations
 
@@ -29,7 +29,7 @@ import collections
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
+LEDGER_DIR = r"E:\pd-media\assets\archive\_ledger"
 OUT = os.path.join(LEDGER_DIR, "absent_index.json")
 SKIP = ("reject", "removed", "candidates", "ban_risk", "feedback", "purged",
         "title_df", "bak", "progress", "absent_index", "existing_index")

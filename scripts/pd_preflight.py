@@ -33,18 +33,52 @@ import subprocess
 import sys
 from pathlib import Path
 
+
+def _pd_media_root() -> Path:
+    """The media root, resolved -- never assumed.
+
+    FIXED 2026-08-22. This file hardcoded H:/pd-media. That drive stopped being enumerated by
+    Windows around the 2026-08-16 reboot and config/storage.local.json was repointed to E:\pd-media
+    on 2026-08-17. Rule 14: no OS-absolute path is a source of truth. The literal below is kept only
+    as a last-resort fallback so an unconfigured checkout behaves as it used to instead of crashing.
+    """
+    import json as _json
+    _cfg = Path(__file__).resolve().parents[1] / "config" / "storage.local.json"
+    try:
+        return Path(_json.loads(_cfg.read_text(encoding="utf-8"))["roots"]["media"]["path"])
+    except Exception:
+        return Path("H:/pd-media")
+
+
+PD_MEDIA = _pd_media_root()
+
+
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "remotion" / "public"
-MEDIA = Path("H:/pd-media")
+MEDIA = PD_MEDIA
 MIN_OK_BYTES = 50_000
 MIN_LUMA = 8.0
 MIN_VIDEO_SHARE = 0.62
 TARGET_CUT_SEC = 4.6
 MAX_VIDEO_REUSE = 2
 CAPTION_MAX_CHARS = 84
+# 2026-08-22: this set had 17 entries and FigureBeats.tsx draws 38. The gate was refusing
+# kinds that are ALREADY IN PUBLISHED FILMS -- casetimeline_c appears 28 times across shipped
+# episodes, hinders 28, brightline 7, probablecause 5 -- and it BLOCKED EP71 oroville on
+# `casetimeline_c` while hyatt/marmet/greene/correa shipped with it. The config was right and
+# the gate\x27s vocabulary was stale. Measured, not guessed: the list below is every kind
+# FigureBeats.tsx actually renders, minus BANNED_FIGURE_KINDS.
+#
+# This is NOT a weakened threshold. The gate still refuses anything FigureBeats cannot draw,
+# which is the property that matters; it simply stopped refusing things it can.
 VALID_KINDS = {"numberticker", "stat", "votetally", "timeline", "quote", "kinetic",
                "lowerthird", "acttitle", "compbars", "bar", "mechanism", "regionmap",
-               "pindropmap", "routemap", "arrow", "highlightring", "spotlight"}
+               "pindropmap", "routemap", "arrow", "highlightring", "spotlight",
+               # drawn by FigureBeats.tsx and present in shipped films, previously refused:
+               "brightline", "burdenflip", "carcutaway", "carkeylock", "casetimeline_c",
+               "cashstack", "convergemap", "curtilage", "equitytheft", "govtargument",
+               "hallladder", "hinders", "oralargtally", "probablecause", "returnledger",
+               "signswap", "splitladder", "statemap", "thresholdmeter", "xrayscan"}
 BANNED_FIGURE_KINDS = {"dochighlight"}
 
 EPISODES = {p.name.split("-", 3)[-1]: p.name for p in sorted((ROOT / "episodes").glob("PD-*"))}

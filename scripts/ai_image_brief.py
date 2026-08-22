@@ -72,7 +72,7 @@ def main() -> int:
         subject = json.load(open(os.path.join(EPDIR, ep, "00_topic", "topic.v001.json"), encoding="utf-8")).get("subject", ep_id)
     except Exception:
         subject = ep_id
-    save_dir = f"H:\\pd-media\\assets\\ai\\{slug}\\"
+    save_dir = f"E:\\pd-media\\assets\\ai\\{slug}\\"
 
     ai_shots = [s for s in shotlist["shots"] if s["suggested_asset_type"] == "ai_image"]
     counts = {s["span_id"]: max(1, math.ceil(s["estimated_seconds"] / SECONDS_PER_IMAGE)) for s in ai_shots}

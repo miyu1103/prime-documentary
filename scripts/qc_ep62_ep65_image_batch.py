@@ -29,7 +29,7 @@ def sha256(path: Path) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--root", type=Path, default=Path(r"H:\pd-media\assets\ai"))
+    parser.add_argument("--root", type=Path, default=Path(r"E:\pd-media\assets\ai"))
     parser.add_argument(
         "--report",
         type=Path,

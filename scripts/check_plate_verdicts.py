@@ -176,6 +176,26 @@ from check_final_acceptance import IMG_MIN_LONG_EDGE      # noqa: E402  (the shi
 from check_pool_frames import pool_id_hash                # noqa: E402  (the ONE id-list hash)
 from check_shipped_frames import _rel                     # noqa: E402
 
+
+def _pd_media_root() -> Path:
+    """The media root, resolved -- never assumed.
+
+    FIXED 2026-08-22. This file hardcoded H:/pd-media. That drive stopped being enumerated by
+    Windows around the 2026-08-16 reboot and config/storage.local.json was repointed to E:\pd-media
+    on 2026-08-17. Rule 14: no OS-absolute path is a source of truth. The literal below is kept only
+    as a last-resort fallback so an unconfigured checkout behaves as it used to instead of crashing.
+    """
+    import json as _json
+    _cfg = Path(__file__).resolve().parents[1] / "config" / "storage.local.json"
+    try:
+        return Path(_json.loads(_cfg.read_text(encoding="utf-8"))["roots"]["media"]["path"])
+    except Exception:
+        return Path("H:/pd-media")
+
+
+PD_MEDIA = _pd_media_root()
+
+
 try:
     sys.stdout.reconfigure(encoding="utf-8")
 except Exception:  # noqa: BLE001
@@ -187,7 +207,7 @@ QC = ROOT / "runs" / "qc"
 # Where Codex delivers plates. Overridable for a fixture or a moved drive; there is no shared
 # constant for this in the repo (eleven scripts hard-code the same string), so it is named once
 # here and taken from the environment when set.
-AI_DELIVERY_ROOT = Path(os.environ.get("PD_AI_PLATES_ROOT", r"H:/pd-media/assets/ai"))
+AI_DELIVERY_ROOT = Path(os.environ.get("PD_AI_PLATES_ROOT", str(PD_MEDIA / "assets" / "ai")))
 
 REVIEW_KEY = "plate_review"
 PLATES_KEY = "plates"

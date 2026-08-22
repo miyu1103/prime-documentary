@@ -18,7 +18,7 @@ from PIL import Image, ImageDraw, ImageEnhance, ImageFont
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-031-unlock"
 EPDIR = ROOT / "episodes" / EP
-BG_DIR = Path(r"H:\pd-media\episodes\PD-2026-031-unlock\10_thumbnail\backgrounds")
+BG_DIR = Path(r"E:\pd-media\episodes\PD-2026-031-unlock\10_thumbnail\backgrounds")
 OUT = EPDIR / "10_thumbnail"
 PKG = EPDIR / "09_package"
 W, H = 1280, 720

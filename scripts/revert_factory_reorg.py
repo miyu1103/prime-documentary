@@ -14,7 +14,7 @@ from __future__ import annotations
 import os, sys, shutil, argparse, collections
 
 sys.stdout.reconfigure(encoding="utf-8")
-MEDIA = os.environ.get("PD_MEDIA_ROOT", r"H:\pd-media")
+MEDIA = os.environ.get("PD_MEDIA_ROOT", r"E:\pd-media")
 FACTORY = os.path.join(MEDIA, "assets", "factory")
 CATS = ["backgrounds", "light_assets", "vfx_overlays", "particle_assets", "texture_assets", "loops"]
 

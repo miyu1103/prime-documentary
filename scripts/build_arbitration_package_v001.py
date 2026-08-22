@@ -14,7 +14,7 @@ QC = EPDIR / "08_edit" / "renders" / "final.v001.qc.json"
 CAPTIONS = EPDIR / "08_edit" / "captions.v001.srt"
 THUMB_META = PKG / "title_thumbnail_candidates.v001.json"
 THUMB = PKG / "thumbnail.selected.v001.png"
-VIDEO = Path(r"H:\pd-media\episodes\PD-2026-012-arbitration\08_edit\arbitration_premium_v001.mp4")
+VIDEO = Path(r"E:\pd-media\episodes\PD-2026-012-arbitration\08_edit\arbitration_premium_v001.mp4")
 SCHEDULE_LOCAL = "2026-06-27T12:00:00+09:00"
 SCHEDULE_UTC = "2026-06-27T03:00:00Z"
 

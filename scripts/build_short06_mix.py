@@ -9,7 +9,7 @@ windows), then:
     ducking and -14 LUFS loudnorm -> final_mix -> remotion/public/shorts/short06/audio/
 SFX positions are DERIVED from the line windows so they self-align to the real narration:
 hook riser, "reasonable suspicion" blip, the handgun reveal (end of L3), the ruling (start of L4),
-and the CTA. All music/SFX are from the rights-tracked library (H:\\pd-media\\library).
+and the CTA. All music/SFX are from the rights-tracked library (E:\\pd-media\\library).
 """
 from __future__ import annotations
 

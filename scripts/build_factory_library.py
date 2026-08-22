@@ -2,7 +2,7 @@
 """
 Asset Factory bulk library builder.
 Reuses fetch_stock.py's Pexels/Pixabay helpers (no second implementation) to pull a LARGE,
-commercial-OK, rights-clean visual library into H:\\pd-media\\assets\\factory\\<category>\\
+commercial-OK, rights-clean visual library into E:\\pd-media\\assets\\factory\\<category>\\
 and registers every item into assets/asset_manifest.v001.json (AF-<CAT>-NNNN ids).
 
 Idempotent: skips source ids already in the manifest. Safe to re-run / resume.
@@ -170,7 +170,7 @@ def main() -> int:
     pk, xk = env.get("PEXELS_API_KEY"), env.get("PIXABAY_API_KEY")
     if not pk and not xk:
         print("NO API KEYS in .env (PEXELS_API_KEY / PIXABAY_API_KEY). Abort."); return 2
-    media = fs.media_root() or "H:\\pd-media"
+    media = fs.media_root() or "E:\\pd-media"
     factory = os.path.join(media, "assets", "factory")
 
     man_path = os.path.join(REPO, "assets", "asset_manifest.v001.json")

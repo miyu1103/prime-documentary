@@ -30,9 +30,29 @@ import factory_ledger_themes as flt  # noqa: E402  (audited theme source)
 from factory_themes import theme_of  # noqa: E402  (fallback only, ledger missing)
 from select_factory_assets import used_basenames  # noqa: E402
 
+
+def _pd_media_root() -> Path:
+    """The media root, resolved -- never assumed.
+
+    FIXED 2026-08-22. This file hardcoded H:/pd-media. That drive stopped being enumerated by
+    Windows around the 2026-08-16 reboot and config/storage.local.json was repointed to E:\pd-media
+    on 2026-08-17. Rule 14: no OS-absolute path is a source of truth. The literal below is kept only
+    as a last-resort fallback so an unconfigured checkout behaves as it used to instead of crashing.
+    """
+    import json as _json
+    _cfg = Path(__file__).resolve().parents[1] / "config" / "storage.local.json"
+    try:
+        return Path(_json.loads(_cfg.read_text(encoding="utf-8"))["roots"]["media"]["path"])
+    except Exception:
+        return Path("H:/pd-media")
+
+
+PD_MEDIA = _pd_media_root()
+
+
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "assets" / "asset_manifest.v001.json"
-SHELF = Path("H:/pd-media/assets")   # manifest paths are relative to here
+SHELF = PD_MEDIA / "assets"   # manifest paths are relative to here
 
 # per-episode theme -> how many distinct clips to stage (total ~ runtime/7s worth, denser than needed)
 PLANS = {

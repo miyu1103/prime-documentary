@@ -47,8 +47,8 @@ EP = "PD-2026-038-kidsforcash"
 SHOTLIST = ROOT / "episodes" / EP / "04_scenes" / "shotlist.v001.json"
 GRAPH_DIR = ROOT / "episodes" / EP / "05_stock" / "wan_graphs"
 CONFORM_DIR = ROOT / "episodes" / EP / "05_stock" / "wan_input"
-STILL_DIR = Path(r"H:\pd-media\assets\ai\kidsforcash")
-VIDEO_OUT_DIR = Path(r"H:\pd-media\assets\ai_video\kidsforcash")
+STILL_DIR = Path(r"E:\pd-media\assets\ai\kidsforcash")
+VIDEO_OUT_DIR = Path(r"E:\pd-media\assets\ai_video\kidsforcash")
 
 HOST = "http://127.0.0.1:8188"
 

@@ -120,6 +120,26 @@ SPEC: dict[str, tuple[str, list[tuple]]] = {   # row = (plate, kicker, headline,
     # kickers each add a SECOND fact the headline does not state (zero content-word overlap).
     # R234 additionally carries a layout: the plate is reframed so the man sits left and the
     # headline gets the bare right wall, instead of being stamped across his face.
+    # EP70 wronghouse. Unlike EP62-65 this episode HAS a packaging document, so the wording is
+    # not invented here -- every row below is EP70_wronghouse_PACKAGING.v001.md section 3 verbatim,
+    # including which plate carries which headline and the ledger row each claim is cited to.
+    # The doc bars from every candidate: the real address as legible numerals, any face, any FBI
+    # seal or badge, any document, any child, any weapon pointed at anything.
+    "wronghouse": ("PD-2026-070-wronghouse", [
+        # T1, the doc marks it SHIP THIS. F-01 verbatim; G-05 puts the number on the mailbox at
+        # the end of the driveway. W122 was deliberately shot with ONE digit sharp and the rest
+        # soft so it reads as "a house number" and not as "their house number".
+        # NOTE: W122 is on this episode\x27s motion blocklist, but for a defect of the CLIP (the
+        # digits morph across the animation). The still plate is untouched and is what the
+        # packaging doc names.
+        ("W122", "THE NUMBER WAS ON THE MAILBOX", ["WRONG HOUSE"], GOLD, {"gain": 1.30}),
+        # T2. N-11: no trial, four independent negatives. The doc calls it the single most
+        # checkable fact in the film.
+        ("W132", "EIGHT YEARS", ["NO TRIAL"], GOLD, {"gain": 1.35}),
+        # T3, the only candidate carrying a question mark -- on the image, not the title. G-06
+        # verbatim: three or four houses down, same corner, same tree.
+        ("W128", "THREE HOUSES APART", ["SAME HOUSE?"], BLUE, {"gain": 1.25}),
+    ]),
     "marmet": ("PD-2026-065-marmet", [
         ("R234", "AUTHORITY NEVER DECIDED", ["SIGNED FOR", "SOMEONE ELSE"], GOLD, R234_LAYOUT),
         ("R238", "NO EXCEPTIONS",           ["ONE FORM", "WAS DIFFERENT"],  RED),
@@ -217,8 +237,18 @@ def font(size: int, bold: bool = True) -> ImageFont.FreeTypeFont:
 
 def build(slug: str, epid: str, plate: str, kicker: str, headline: list[str],
           accent: str, n: int, layout: dict | None = None) -> Path | None:
-    src = Path(f"H:/pd-media/assets/ai/{slug}/{plate}.png")
-    if not src.is_file():
+    # 2026-08-21: H: is dead (the T7 that held it failed its USB interface on 08-16), so the
+    # archive path resolves to nothing and every plate read as "missing". The render-visible copies
+    # under remotion/public/<slug>/ are what the films actually use and they survived; img_unused
+    # holds the plates that _finish_episode [4c] retired after their motion clip entered the film,
+    # which is where a thumbnail plate usually ends up once the episode is built.
+    src = next((p for p in (
+        Path(f"E:/pd-media/assets/ai/{slug}/{plate}.png"),
+        ROOT / "remotion" / "public" / slug / "img" / f"{plate}.png",
+        ROOT / "remotion" / "public" / slug / "img_unused" / f"{plate}.png",
+        Path(f"H:/pd-media/assets/ai/{slug}/{plate}.png"),
+    ) if p.is_file()), None)
+    if src is None:
         print(f"  {plate}: plate missing"); return None
     im = Image.open(src).convert("RGB")
     layout = layout or {}

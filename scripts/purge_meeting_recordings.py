@@ -32,7 +32,7 @@ from datetime import datetime, timezone
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
+LEDGER_DIR = r"E:\pd-media\assets\archive\_ledger"
 ABSENT = os.path.join(LEDGER_DIR, "absent_index.json")
 TOMBSTONES = os.path.join(LEDGER_DIR, "purged.jsonl")
 

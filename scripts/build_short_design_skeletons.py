@@ -26,7 +26,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "episodes" / "_planning" / "short_designs"
 DATA = ROOT / "remotion" / "src" / "data"
-INDEX = Path(r"H:\pd-media\assets\archive\_qc\vertical_index.jsonl")
+INDEX = Path(r"E:\pd-media\assets\archive\_qc\vertical_index.jsonl")
 
 NUM = re.compile(r"(\$[\d,.]+|\b\d[\d,]*(?:\.\d+)?\s?(?:percent|%|years?|months?|days?|hours?|"
                  r"minutes?|dollars?|million|billion|thousand|times|cases?|people|convictions?)\b|\b\d{3,}\b)", re.I)

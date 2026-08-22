@@ -15,6 +15,26 @@ import subprocess
 import sys
 from pathlib import Path
 
+
+def _pd_media_root() -> Path:
+    """The media root, resolved -- never assumed.
+
+    FIXED 2026-08-22. This file hardcoded H:/pd-media. That drive stopped being enumerated by
+    Windows around the 2026-08-16 reboot and config/storage.local.json was repointed to E:\pd-media
+    on 2026-08-17. Rule 14: no OS-absolute path is a source of truth. The literal below is kept only
+    as a last-resort fallback so an unconfigured checkout behaves as it used to instead of crashing.
+    """
+    import json as _json
+    _cfg = Path(__file__).resolve().parents[1] / "config" / "storage.local.json"
+    try:
+        return Path(_json.loads(_cfg.read_text(encoding="utf-8"))["roots"]["media"]["path"])
+    except Exception:
+        return Path("H:/pd-media")
+
+
+PD_MEDIA = _pd_media_root()
+
+
 MAX_FREEZE_TOTAL_S = 8.0
 MAX_FREEZE_LONGEST_S = 4.0
 FREEZE_DETECT_S = 2.5
@@ -66,7 +86,7 @@ def resolve_video(arg: str) -> Path:
         final_video = data.get("final_video")
         if final_video and Path(final_video).is_file():
             return Path(final_video)
-    return Path("H:/pd-media") / "episodes" / ep / "08_edit" / "final.mp4"
+    return PD_MEDIA / "episodes" / ep / "08_edit" / "final.mp4"
 
 
 def check_freeze(path: Path) -> dict:

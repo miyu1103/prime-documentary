@@ -3,7 +3,7 @@
 Generate brand-styled Asset Factory images LOCALLY via the running SDXL (A1111) API on :7860.
 Free (local GPU), authorized (CLAUDE.md sec.3 lists local image generation as automated).
 Fills gaps stock can't: brand-consistent cinematic backgrounds + ANONYMOUS people (no real-person
-likeness). Saves to H:\\pd-media\\assets\\factory\\<category>\\ and registers in asset_manifest.
+likeness). Saves to E:\\pd-media\\assets\\factory\\<category>\\ and registers in asset_manifest.
 
 Usage:
   python scripts/generate_factory_sdxl.py --limit 1            # smoke test (1 image)
@@ -94,7 +94,7 @@ def main():
     ap.add_argument("--write", action="store_true")
     a = ap.parse_args()
 
-    media = os.environ.get("PD_MEDIA_ROOT", r"H:\pd-media")
+    media = os.environ.get("PD_MEDIA_ROOT", r"E:\pd-media")
     factory = os.path.join(media, "assets", "factory")
     man = json.load(open(MAN, encoding="utf-8")) if os.path.exists(MAN) else {"schema": "asset-manifest/v1", "assets": []}
     counters = {}

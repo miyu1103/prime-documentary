@@ -28,7 +28,7 @@ sys.stdout.reconfigure(encoding="utf-8")  # cp932 console safety
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DEFAULT_MANIFEST = os.path.join(ROOT, "assets", "asset_manifest.v001.json")
 SCHEMA_PATH = os.path.join(ROOT, "schemas", "asset-manifest.schema.json")
-MEDIA_ROOT = os.environ.get("PD_MEDIA_ROOT", r"H:\pd-media")
+MEDIA_ROOT = os.environ.get("PD_MEDIA_ROOT", r"E:\pd-media")
 
 # license -> commercial-use class. Canonical vocabulary (docs sec.4.3) plus the
 # real stock licenses the bulk builder records. Anything else => unknown (warn).

@@ -28,8 +28,8 @@ import sys
 
 sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 
-LEDGER_DIR = r"H:\pd-media\assets\archive\_ledger"
-VERDICTS = r"H:\pd-media\assets\archive\_qc\archive_verdicts.jsonl"
+LEDGER_DIR = r"E:\pd-media\assets\archive\_ledger"
+VERDICTS = r"E:\pd-media\assets\archive\_qc\archive_verdicts.jsonl"
 TOMBSTONE = os.path.join(LEDGER_DIR, "purged.jsonl")
 
 

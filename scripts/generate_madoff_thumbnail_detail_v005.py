@@ -3,7 +3,7 @@ from pathlib import Path
 import requests
 
 API='http://127.0.0.1:7860'
-OUT=Path(r'H:\pd-media\episodes\PD-2026-005-madoff\09_thumbnail\sdxl_detail_v005')
+OUT=Path(r'E:\pd-media\episodes\PD-2026-005-madoff\09_thumbnail\sdxl_detail_v005')
 OUT.mkdir(parents=True, exist_ok=True)
 
 style=(

@@ -21,7 +21,7 @@ appending to.
 
     python scripts/build_video_resolution_index.py                 # nara, ia, noaa
     python scripts/build_video_resolution_index.py --source all
-Output: H:\\pd-media\\assets\\archive\\_ledger\\video_resolution.json
+Output: E:\\pd-media\\assets\\archive\\_ledger\\video_resolution.json
 """
 from __future__ import annotations
 

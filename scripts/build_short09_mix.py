@@ -6,7 +6,7 @@ Reads short09_narration_index.v002.en_us.json (per-line spoken windows), then:
   - mixes narration + BGM (explainer bed) + tension lift + ambience + SFX with sidechain ducking
     and -14 LUFS loudnorm -> final_mix -> copied to remotion/public/shorts/short09/audio/
 Bed/tension/ambience bases kept high enough that the 2.70s inter-line gaps don't sag.
-All music/SFX are from the rights-tracked library (H:\\pd-media\\library).
+All music/SFX are from the rights-tracked library (E:\\pd-media\\library).
 """
 from __future__ import annotations
 

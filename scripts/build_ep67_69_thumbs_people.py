@@ -165,7 +165,7 @@ EPISODES = [
         "slug": "ramirez",
         "ep": "EP67",
         "title": "TransUnion LLC v. Ramirez",
-        "dir": r"H:\pd-media\assets\ai\ramirez",
+        "dir": r"E:\pd-media\assets\ai\ramirez",
         "era": ("A car dealership showroom in Dublin, California, in the United States, on a bright "
                 "February afternoon in 2011"),
         "neg_add": [
@@ -258,7 +258,7 @@ EPISODES = [
         "slug": "pinto",
         "ep": "EP68",
         "title": "The Ford Pinto / Grimshaw v. Ford",
-        "dir": r"H:\pd-media\assets\ai\pinto",
+        "dir": r"E:\pd-media\assets\ai\pinto",
         "era": ("The United States between 1968 and 1981, period surfaces only -- painted steel, "
                 "brushed aluminium, laminate, bakelite, manila card, enamel -- and 1970s clothing "
                 "throughout"),
@@ -357,7 +357,7 @@ EPISODES = [
         "slug": "hyatt",
         "ep": "EP69",
         "title": "The Kansas City Hyatt Regency walkways",
-        "dir": r"H:\pd-media\assets\ai\hyatt",
+        "dir": r"E:\pd-media\assets\ai\hyatt",
         "era": ("An engineering drawing office in the American Midwest between 1978 and 1980, "
                 "tungsten lamps, vellum, brass, oiled steel and painted metal, late-1970s American "
                 "working clothes throughout"),

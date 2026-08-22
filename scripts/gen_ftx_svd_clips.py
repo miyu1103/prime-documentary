@@ -30,7 +30,7 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-004-ftx"
-MEDIA = Path(r"H:\pd-media")
+MEDIA = Path(r"E:\pd-media")
 VIS = MEDIA / "episodes" / EP / "05_visuals" / "upscaled_4x_v001"
 OUT_DIR = MEDIA / "episodes" / EP / "05_visuals" / "svd_motion_v001"
 WORK = OUT_DIR / "_work"

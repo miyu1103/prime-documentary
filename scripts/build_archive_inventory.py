@@ -221,7 +221,7 @@ def main() -> int:
         w("Filenames are `<source>__<id>__<title-slug>.<ext>` and 53,333/53,567 conform, "
           "but a name is NOT evidence: NOAA titles are survey codes and 27k NYPL scans all "
           "read `new-york-city-directory`. The verdicts below come from eyeballing the "
-          "labeled sheets in `H:\\pd-media\\assets\\archive\\_qc\\<theme>\\`.\n\n")
+          "labeled sheets in `E:\\pd-media\\assets\\archive\\_qc\\<theme>\\`.\n\n")
 
         w("## 1. Supply and verdicts (theme x source)\n\n")
         if not verdicts:

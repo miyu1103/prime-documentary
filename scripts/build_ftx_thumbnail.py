@@ -18,7 +18,7 @@ except Exception:
 
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-004-ftx"
-MEDIA = Path(r"H:\pd-media")
+MEDIA = Path(r"E:\pd-media")
 VIS = MEDIA / "episodes" / EP / "05_visuals" / "upscaled_4x_v001" / "openai_heroes"
 OUT_DIR = MEDIA / "episodes" / EP / "09_package"
 W, H = 1280, 720

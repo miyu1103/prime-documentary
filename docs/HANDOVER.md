@@ -239,6 +239,17 @@ they belong in `config/footage_blocklist.v001.json` (§3). **EP70 is rendered** 
 mandatory stills in a cut — after stopping three times pre-render, none for the reason its message gave;
 its sound plan had to be authored from scratch (§4). Plate/4K status for EP72-76 in §5.
 
+**[2026-08-22](handover/2026-08-22.md)** — **staged is not sourced.** EP70 was planned on 177 clips
+nobody had looked at; three contact sheets sampled across the pool produced zero usable clips, and four
+other threads measured the same 22-30% acceptance independently. **EP70 loses its 8/24 slot.** Also: the
+preflight gate was refusing 20 figure kinds that shipped episodes already contain (fixed); EP76's "64
+sound cues" are really 22 because 42 resolve to no sample; four one-off sound scripts retired into
+`write_sound_plan.py`. Messages to the parallel threads: `handover/MAIN_TO_THREADS_2026-08-22.md`.
+
+**[2026-08-21](handover/2026-08-21.md)** — EP69 shipped once the network guard stopped counting stale
+routes; i2v invents people and nothing on the ship path was looking (32 of 160 EP70 clips rejected);
+hand-quarantine does not hold, the blocklist does.
+
 **[2026-08-20](handover/2026-08-20.md)** — **the archive shelf was rebuilt from the files, and the
 brief that ordered it was wrong about the most important thing.** The 24,364 "unattributable"
 files are all `pixabay_extra` and all commercially usable — one `isalnum()` call had been sending

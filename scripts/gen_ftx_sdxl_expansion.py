@@ -22,7 +22,7 @@ from sdxl_quality_profiles import available_sdxl_profiles, get_sdxl_profile
 
 API = "http://127.0.0.1:7860"
 EPISODE_ID = "PD-2026-004-ftx"
-OUT_ROOT = Path(r"H:\pd-media\episodes\PD-2026-004-ftx\05_visuals\sdxl_expansion_v001")
+OUT_ROOT = Path(r"E:\pd-media\episodes\PD-2026-004-ftx\05_visuals\sdxl_expansion_v001")
 MANIFEST = OUT_ROOT / "sdxl_expansion_manifest.v001.json"
 BASE_SEED = 40619700
 

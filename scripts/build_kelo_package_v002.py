@@ -15,7 +15,7 @@ QC = EPDIR / "08_edit" / "renders" / "final.v002.qc.json"
 CAPTIONS = EPDIR / "08_edit" / "captions.v002.srt"
 THUMB = PKG / "thumbnail.selected.v002.png"
 THUMB_META = PKG / "title_thumbnail_candidates.v002.json"
-VIDEO = Path(r"H:\pd-media\episodes\PD-2026-010-kelo\08_edit\kelo_premium_v002.mp4")
+VIDEO = Path(r"E:\pd-media\episodes\PD-2026-010-kelo\08_edit\kelo_premium_v002.mp4")
 PLANNED_RELEASE_JST = "2026-06-25T12:00:00+09:00"
 
 

@@ -43,7 +43,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-LEDGER = Path(r"H:\pd-media\assets\archive\_ledger\factory.jsonl")
+LEDGER = Path(r"E:\pd-media\assets\archive\_ledger\factory.jsonl")
 OK_LICENSE = {"free_commercial", "pd", "cc0"}
 VIDEO_EXT = {".mp4", ".mov", ".webm", ".mkv"}
 NAME_RE = re.compile(r"^(AF-[A-Z]+-\d+)__(.+)\.(mp4|mov|webm|mkv)$", re.I)

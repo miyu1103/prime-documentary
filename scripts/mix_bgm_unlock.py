@@ -22,7 +22,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-MUSIC = Path(r"H:\pd-media\library\music")
+MUSIC = Path(r"E:\pd-media\library\music")
 TENSION = MUSIC / "tension_build" / "mus_20260614_tension_build_courtroom_horizon_v1.mp3"
 SOMBER = MUSIC / "somber" / "mus_20260614_somber_ledger_of_ash_v1.mp3"
 

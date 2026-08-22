@@ -42,7 +42,7 @@ LEDGER_PATH = os.path.join(EP, "04_scenes", "image_ledger.v001.json")
 WORDS_PATH = os.path.join(EP, "06_audio", "word_timings.v001.json")
 OUT_PATH = os.path.join(EP, "04_scenes", "shotlist.v001.json")
 
-IMG_ROOT = r"H:\pd-media\assets\ai\kidsforcash"
+IMG_ROOT = r"E:\pd-media\assets\ai\kidsforcash"
 
 # Motion-graphic (card) components -> (source_type, truth_status, claim_ref)
 CARD_META = {

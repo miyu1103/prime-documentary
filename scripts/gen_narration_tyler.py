@@ -15,7 +15,7 @@ Modeled on scripts/gen_narration_carsearch.py. Differences for this episode:
     windows (align_windowed) stay paired to the verbatim text.
 
 Downstream contract (do not change layout — these consumers depend on it):
-  * master  -> H:\\pd-media\\episodes\\<EP>\\06_voice\\master\\vc_master_v001.mp3
+  * master  -> E:\\pd-media\\episodes\\<EP>\\06_voice\\master\\vc_master_v001.mp3
               (gen_captions_forced.resolve_master / verify_caption_sync.resolve_master glob
                vc_master_v*.mp3 here).
   * windows -> 06_audio/narration_index.v001.json chunks[].start/end (align_windowed + both gates).

@@ -451,6 +451,39 @@ EPISODES = {
         "sections": SECTION_ORDER_5ACT,
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
+    "PD-2026-073-uri": {
+        "planning": "EP73_uri_script.en.v002.md",
+        # 30 minutes. episode_spec runtime_seconds [1740, 1920], script_words [4900, 5400].
+        # ★ MEASURED 2026-08-22, no longer provisional. `--measure-section ACT_1` generated 67
+        # chunks / 976 words and ffprobed 308.411 s of speech: **189.9 raw wpm**, and 178.4 words
+        # per FINISHED minute. The estimate below was built on EP72's measured 191.1 before this
+        # ran; the measurement came in 0.6 % slower, which lengthens the film slightly. Redone on
+        # the measured number:
+        #   speech   5230 / 189.9 * 60 = 1652.4 s
+        #   gaps     368 beat gaps at 0.30 s = 110.4 s + seven section boundaries at 1.8 s = 123.0 s
+        #   master   1775.4 s, film 1784.4 s (29:44) once ENDCARD 9.0 is added
+        # Inside [1740, 1920] with 44 s at the low edge and 136 s at the high edge.
+        # Sized on EP72's MEASURED rate, not on this registry's 171.79 raw-wpm model, which was
+        # 11 % slow on EP72 and produced a script four minutes short. EP73 is written in the same
+        # register as EP72 and EP74 -- short declaratives, a full stop every ten words -- and those
+        # two measured 191.1 and 198.4 raw wpm. Taking the slower of the two, 191.1:
+        #   script   5,230 spoken words (check_script_length 2026-08-22, after the blockquote fix
+        #            below; independently confirmed by scratchpad/count_ep73.py at 5,230)
+        #   speech   5230 / 191.1 * 60 = 1641.9 s
+        #   gaps     ~374 beat gaps at 0.30 s = 112.2 s, seven section boundaries at 1.8 s = 12.6 s,
+        #            plus 22 frames of scripted silence (0.37 s) -> ~125.2 s
+        #   master   1767.1 s, film 1776.1 s (29:36) once ENDCARD 9.0 is added
+        # Inside [1740, 1920] with 36 s at the low edge and 144 s at the high edge. If ACT_1
+        # measures faster than 191.1 the film shortens toward the floor -- RE-MEASURE BEFORE
+        # GENERATING THE FULL SET, and add to ACT_5 rather than speeding the voice if it is short.
+        # NOTE ON THE GATE: check_script_length reported 5,572 words for this script until
+        # 2026-08-22, because it stripped the ">" character but kept the words of the blockquote
+        # header every script has carried since EP66 (+342 words here). Fixed in that script; the
+        # two instruments now agree exactly.
+        "design_speech_seconds": 1652.4,
+        "sections": SECTION_ORDER_5ACT,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
     "PD-2026-074-itaewon": {
         "planning": "EP74_itaewon_script.en.v007.md",
         # 30 minutes. episode_spec runtime_seconds [1740, 1920], script_words [4900, 5400].

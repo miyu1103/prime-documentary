@@ -77,7 +77,7 @@ MUSIC_VOL = 0.22              # ducked bed
 AMBIENCE_VOL = 0.06          # very low continuous bed
 
 # ---- chapter -> layer-2 music slot ----------------------------------------
-# category folder names under H:\pd-media\library\music\<category>\
+# category folder names under E:\pd-media\library\music\<category>\
 CHAPTER_MUSIC: dict[str, tuple[str, str, str]] = {
     # chapter_id: (slot_role, category_folder, candidate_file)
     "hook":    ("hook",     "hook",          "mus_20260614_hook_glass_air_bed_v2.mp3"),
@@ -165,7 +165,7 @@ def media_root() -> Path:
         cfg = json.loads(cfg_path.read_text("utf-8"))
         return Path(cfg["roots"]["media"]["path"])
     except Exception:
-        return Path(r"H:\pd-media")
+        return Path(r"E:\pd-media")
 
 
 def sha256_text(text: str) -> str:

@@ -13,7 +13,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 EP = "PD-2026-004-ftx"
-MEDIA = Path(r"H:\pd-media")
+MEDIA = Path(r"E:\pd-media")
 VIS = MEDIA / "episodes" / EP / "05_visuals"
 UPSCALED = VIS / "upscaled_4x_v001"
 SDXL_HQ = VIS / "sdxl_coverage_hq_v001"

@@ -51,7 +51,7 @@ The four layers (identical roles to build_case_film_audio, re-timed):
 
 OUTPUT
 ------
-  * mix WAV  -> H:\pd-media\episodes\<ep>\06_audio\mix\<ep>_film_audio_v002.wav
+  * mix WAV  -> E:\pd-media\episodes\<ep>\06_audio\mix\<ep>_film_audio_v002.wav
                (+ a copy under 08_edit\audio\ so build_case_film_mux resolves it)
   * provenance -> episodes/<ep>/06_audio/audio_provenance.v002.json (bumped so
                   v001 is not clobbered) recording the layer inventory + mix sha,

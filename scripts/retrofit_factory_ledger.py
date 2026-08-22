@@ -3,14 +3,14 @@
 
 ADDITIVE ONLY — never renames, moves, or modifies original files. Outputs:
 
-  1. H:\\pd-media\\assets\\archive\\_ledger\\factory.jsonl   (CONTRACT.md schema)
-  2. H:\\pd-media\\assets\\archive\\_ledger\\stock.jsonl     (CONTRACT.md schema)
+  1. E:\\pd-media\\assets\\archive\\_ledger\\factory.jsonl   (CONTRACT.md schema)
+  2. E:\\pd-media\\assets\\archive\\_ledger\\stock.jsonl     (CONTRACT.md schema)
   3. D:\\pd-media-browse\\factory_browse\\<theme>\\<source>__<id>__<title-slug>.<ext>
      D:\\pd-media-browse\\stock_browse\\<theme>\\...
      (NTFS symlinks -> H: originals, zero copies. H: itself is exFAT and supports
       neither hardlinks nor symlinks, so the browse tree cannot live on H:.
-      Pointer note: H:\\pd-media\\assets\\FACTORY_BROWSE_LOCATION.txt)
-  4. H:\\pd-media\\assets\\archive\\_ledger\\factory_backfill_queue.json
+      Pointer note: E:\\pd-media\\assets\\FACTORY_BROWSE_LOCATION.txt)
+  4. E:\\pd-media\\assets\\archive\\_ledger\\factory_backfill_queue.json
      (deliberately .json, NOT .jsonl: ingest agents load every *.jsonl in _ledger
       and would crash on records without source/id keys)
 
@@ -18,7 +18,7 @@ Metadata sources, in order:
   a. assets/asset_manifest.v001.json  — covers ALL 88,740 factory files (source,
      _srcId, sourceUrl, license, sha256, bytes). Titles derived from the sourceUrl
      slug (real provider titles). ~34 slugless URLs queued for API backfill.
-  b. H:\\pd-media\\assets\\stock\\STOCK_MANIFEST.json — 20 of 234 stock files.
+  b. E:\\pd-media\\assets\\stock\\STOCK_MANIFEST.json — 20 of 234 stock files.
      The other 214 embed provider ids in the filename (pexels_i_123.jpg) and are
      queued for API backfill (title/canonical URL).
   c. `backfill` subcommand — Pexels (paced ~20 s/req, limit ~200/hr) and Pixabay
@@ -59,7 +59,7 @@ import urllib.request
 import urllib.error
 
 REPO = r"C:\Users\aab15\Documents\prime-documentary"
-ASSETS_ROOT = r"H:\pd-media\assets"
+ASSETS_ROOT = r"E:\pd-media\assets"
 FACTORY_ROOT = os.path.join(ASSETS_ROOT, "factory")
 STOCK_ROOT = os.path.join(ASSETS_ROOT, "stock")
 LEDGER_DIR = os.path.join(ASSETS_ROOT, "archive", "_ledger")
@@ -70,7 +70,7 @@ LOG_PATH = os.path.join(LEDGER_DIR, "retrofit_factory.log")
 # H: is exFAT — it supports neither hardlinks nor symlinks (both verified 2026-07-27:
 # os.link/os.symlink => WinError 1). The browse tree therefore lives on D: (NTFS) as
 # SYMLINKS to the H: originals: zero data duplication, transparent to Explorer/tools.
-# A pointer file is left at H:\pd-media\assets\FACTORY_BROWSE_LOCATION.txt.
+# A pointer file is left at E:\pd-media\assets\FACTORY_BROWSE_LOCATION.txt.
 BROWSE_ROOT = r"D:\pd-media-browse"
 BROWSE = {"factory": os.path.join(BROWSE_ROOT, "factory_browse"),
           "stock": os.path.join(BROWSE_ROOT, "stock_browse")}

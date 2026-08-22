@@ -30,9 +30,29 @@ import subprocess
 import sys
 from pathlib import Path
 
+
+def _pd_media_root() -> Path:
+    """The media root, resolved -- never assumed.
+
+    FIXED 2026-08-22. This file hardcoded H:/pd-media. That drive stopped being enumerated by
+    Windows around the 2026-08-16 reboot and config/storage.local.json was repointed to E:\pd-media
+    on 2026-08-17. Rule 14: no OS-absolute path is a source of truth. The literal below is kept only
+    as a last-resort fallback so an unconfigured checkout behaves as it used to instead of crashing.
+    """
+    import json as _json
+    _cfg = Path(__file__).resolve().parents[1] / "config" / "storage.local.json"
+    try:
+        return Path(_json.loads(_cfg.read_text(encoding="utf-8"))["roots"]["media"]["path"])
+    except Exception:
+        return Path("H:/pd-media")
+
+
+PD_MEDIA = _pd_media_root()
+
+
 DRIVER = r"C:/Users/aab15/ae-demo/comfy_wan.py"
 AE_DEMO = Path(r"C:/Users/aab15/ae-demo")
-AI_ROOT = Path("H:/pd-media/assets/ai")
+AI_ROOT = PD_MEDIA / "assets" / "ai"
 MIN_FRAMES = 40          # a finished clip is 81 frames; <40 means it died mid-write
 MIN_OK_BYTES = 100_000   # same threshold assemble_episode_i2v uses to call an mp4 finished
 

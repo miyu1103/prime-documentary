@@ -14,6 +14,27 @@ Exit 0 = PASS, 1 = FAIL (would ship a robotic voice).
 """
 from __future__ import annotations
 import sys, os, json, subprocess, glob
+from pathlib import Path   # added 2026-08-22 with _pd_media_root() below; this file used os.path only
+
+
+def _pd_media_root() -> Path:
+    """The media root, resolved -- never assumed.
+
+    FIXED 2026-08-22. This file hardcoded H:/pd-media. That drive stopped being enumerated by
+    Windows around the 2026-08-16 reboot and config/storage.local.json was repointed to E:\pd-media
+    on 2026-08-17. Rule 14: no OS-absolute path is a source of truth. The literal below is kept only
+    as a last-resort fallback so an unconfigured checkout behaves as it used to instead of crashing.
+    """
+    import json as _json
+    _cfg = Path(__file__).resolve().parents[1] / "config" / "storage.local.json"
+    try:
+        return Path(_json.loads(_cfg.read_text(encoding="utf-8"))["roots"]["media"]["path"])
+    except Exception:
+        return Path("H:/pd-media")
+
+
+PD_MEDIA = _pd_media_root()
+
 
 BRIAN = "nPczCjzI2devNBz1zQrb"
 
@@ -57,7 +78,7 @@ def main(slug):
             break
     # duration match vs the real Brian master
     epid = os.path.basename(epdir)
-    master = f"H:/pd-media/episodes/{epid}/06_voice/master/vc_master_v001.mp3"
+    master = str(PD_MEDIA / "episodes" / epid / "06_voice" / "master" / "vc_master_v001.mp3")
     total = d.get("total_seconds")
     md = ffdur(master) if os.path.exists(master) else None
     if md is not None and total is not None and abs(float(total)-md) > 1.0:

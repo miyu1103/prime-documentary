@@ -34,8 +34,8 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 DESIGNS = ROOT / "episodes" / "_planning" / "short_designs"
-LEDGER = r"H:\pd-media\assets\archive\_ledger\*.jsonl"
-CACHE = Path(r"H:\pd-media\assets\archive\_qc\vertical_index.jsonl")
+LEDGER = r"E:\pd-media\assets\archive\_ledger\*.jsonl"
+CACHE = Path(r"E:\pd-media\assets\archive\_qc\vertical_index.jsonl")
 USABLE = {"free_commercial", "pd", "cc0"}
 W, H = 128, 72
 

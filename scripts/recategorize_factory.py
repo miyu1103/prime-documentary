@@ -22,7 +22,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MANIFEST = os.path.join(ROOT, "assets", "asset_manifest.v001.json")
 BACKUP = os.path.join(ROOT, "assets", "asset_manifest.v001.prereorg.bak.json")
-MEDIA_ROOT = os.environ.get("PD_MEDIA_ROOT", r"H:\pd-media")
+MEDIA_ROOT = os.environ.get("PD_MEDIA_ROOT", r"E:\pd-media")
 
 # Ordered (substring, theme) rules applied to subtype. First match wins -> put
 # specific before general. Covers the 190 background subtypes + future ones.

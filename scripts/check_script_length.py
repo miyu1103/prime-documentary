@@ -112,6 +112,15 @@ def count_words(text: str) -> int:
     text = re.sub(r"\[[^\]]*\]", " ", text)             # [B-ROLL: ...] directions
     text = re.sub(r"\([^)]*\)", " ", text)              # (beat) directions
     text = re.sub(r"^\s*[-*]\s*\w+\s*:", " ", text, flags=re.M)  # "- NARRATOR:" tags
+    # MEASURED 2026-08-22 on EP73: the SECOND source of the same defect. Every script since EP66
+    # opens with a blockquote header carrying the design contract, the register rules and the
+    # revision note -- prose addressed to the producer, never to the microphone. Line 115 below
+    # strips the ">" CHARACTER but leaves the words behind it, so the header was counted as
+    # speech: on EP73 v002 that is +342 words, enough to flip a 5,230-word script (in band) to
+    # 5,572 and report FAIL LONG. Drop the whole line, not the marker. Same reasoning as the
+    # HTML-comment rule above: if it is not sent to TTS, it is not a spoken word.
+    text = re.sub(r"^\s*>.*$", " ", text, flags=re.M)   # blockquoted producer notes
+    text = re.sub(r"^\s*\|.*$", " ", text, flags=re.M)  # markdown tables (ledger extracts)
     text = re.sub(r"[*_`>|#]", " ", text)
     return len(re.findall(r"[A-Za-z][A-Za-z'’-]*", text))
 

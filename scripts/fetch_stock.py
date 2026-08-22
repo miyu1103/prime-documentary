@@ -155,11 +155,20 @@ def main() -> int:
     write = "--write" in argv
     images_only = "--images-only" in argv
     images = "--images" in argv or images_only
+    # MEASURED 2026-08-22 on EP72 (runs/qc/lacmegantic_stock_verdicts.v001.md): 108 harvested clips
+    # were read frame by frame, 55 were unusable, and EVERY clip in the worst rejection class --
+    # jellyfish, aquarium fish, tortoises, an insect, a ferris wheel, a Christmas model village,
+    # Tokyo at night, five separate Christmas-light toy trains -- came from Pixabay on a loose
+    # query. Pexels' relevance held; Pixabay's did not. This flag does not ban Pixabay: it is a
+    # cheap source, and on a query specific enough that a wrong answer is self-evident it is still
+    # worth running. It exists so a broad, atmospheric query can be run Pexels-only on purpose.
+    pexels_only = "--pexels-only" in argv
     per = int(argv[argv.index("--per-source") + 1]) if "--per-source" in argv else 1
     query = argv[argv.index("--query") + 1] if "--query" in argv else None
     pos = [a for a in argv if not a.startswith("--") and a != query and (not a.isdigit() or a == argv[0])]
     if not pos:
-        raise SystemExit("usage: fetch_stock.py <episode> [--query Q] [--per-source N] [--images] [--write]")
+        raise SystemExit("usage: fetch_stock.py <episode> [--query Q] [--per-source N] [--images] "
+                         "[--pexels-only] [--write]")
     ep = resolve_ep(pos[0])
     b = os.path.join(EPDIR, ep)
     ep_id = os.path.basename(ep)
@@ -196,7 +205,7 @@ def main() -> int:
         try:
             if pk:
                 cands += ([] if images_only else pexels_video(q, pk, per)) + (pexels_image(q, pk, per) if images else [])
-            if xk:
+            if xk and not pexels_only:
                 cands += ([] if images_only else pixabay_video(q, xk, per)) + (pixabay_image(q, xk, per) if images else [])
         except Exception as e:
             print(f"  search error q='{q}': {e}")

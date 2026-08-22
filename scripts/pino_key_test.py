@@ -1,5 +1,5 @@
 import os, numpy as np, cv2
-P = r"H:\pd-media\assets\characters\pino\expressions"
+P = r"E:\pd-media\assets\characters\pino\expressions"
 OUT = r"C:\Users\aab15\Documents\prime-documentary\_demo\pino"
 os.makedirs(OUT, exist_ok=True)
 

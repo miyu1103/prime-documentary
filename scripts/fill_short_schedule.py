@@ -145,10 +145,20 @@ def main() -> int:
             [sys.executable, str(ROOT / "scripts" / "schedule_short_youtube.py"),
              "--short", s, "--publish-at", iso],
             cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace")
-        tail = "\n".join((r.stdout or "").strip().splitlines()[-3:])
-        print(f"    {'OK' if r.returncode == 0 else 'FAILED'}  {tail}")
-        if r.returncode != 0:
-            print((r.stderr or "").strip()[-600:])
+        # On success, echo the child's own last lines. On FAILURE, never echo them: the child
+        # prints "OK short<N>: scheduled publish at ..." as a PRE-FLIGHT confirmation, before it
+        # touches the API, so a failure that happens later was being logged as
+        #     FAILED  OK short151: scheduled publish at 2026-08-24T12:00:00Z
+        # which reads as a success and hid the real error for a full day (2026-08-20).
+        if r.returncode == 0:
+            tail = "\n".join((r.stdout or "").strip().splitlines()[-3:])
+            print(f"    OK  {tail}")
+        else:
+            err = (r.stderr or "").strip() or (r.stdout or "").strip()
+            print(f"    FAILED short{s}: exit {r.returncode} -- the lines below are the ERROR, "
+                  f"not the child's progress output")
+            for line in err.splitlines()[-12:]:
+                print(f"      | {line}")
             print("  stopping on first failure - a half-uploaded batch is worse than a short one")
             return 1
     if not a.apply:

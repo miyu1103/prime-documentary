@@ -28,8 +28,8 @@ Sources (this lane):
 
 Storage (tier affinity of THIS lane):
     media       D:\\pd-archive\\<theme>\\        HARD GUARD: stop when D: free < 250GB
-    quarantine  H:\\pd-media\\assets\\archive\\_quarantine\\<theme>\\  (review_required)
-    ledgers     H:\\pd-media\\assets\\archive\\_ledger\\{mixkit,coverr,pixabay_extra,
+    quarantine  E:\\pd-media\\assets\\archive\\_quarantine\\<theme>\\  (review_required)
+    ledgers     E:\\pd-media\\assets\\archive\\_ledger\\{mixkit,coverr,pixabay_extra,
                 unsplash,freesound}.jsonl   (shared dir with the archival lane;
                 the Ledger loads ALL *.jsonl there, so (source,id) and sha256
                 dedup work across BOTH lanes and across restarts)
@@ -48,7 +48,7 @@ e.g. mixkit__4432__aerial-tokyo-shibuya-crossing-night.mp4
 
 Factory dedup index: built once per run from assets/asset_manifest.v001.json
 (+ stock STOCK_MANIFEST files if present) and cached as
-H:\\pd-media\\assets\\archive\\_ledger\\existing_index.json
+E:\\pd-media\\assets\\archive\\_ledger\\existing_index.json
     {generated_at, counts, ids: {"pixabay": ["i_123","v_456",...],
      "pexels": [...]}, sha256: [...]}
 Factory sha256 values are also seeded into the run's content-dedup set.
@@ -153,10 +153,10 @@ D_FLOOR = 250 * GB                       # binding hard guard for this lane
 EXISTING_INDEX = os.path.join(LEDGER_DIR, "existing_index.json")
 FACTORY_MANIFESTS = [
     os.path.join(REPO, "assets", "asset_manifest.v001.json"),
-    r"H:\pd-media\assets\stock\STOCK_MANIFEST.json",
-    r"H:\pd-media\assets\stock\images\STOCK_MANIFEST.json",
-    r"H:\pd-media\assets\stock\video\STOCK_MANIFEST.json",
-    r"H:\pd-media\assets\stock\audio\STOCK_MANIFEST.json",
+    r"E:\pd-media\assets\stock\STOCK_MANIFEST.json",
+    r"E:\pd-media\assets\stock\images\STOCK_MANIFEST.json",
+    r"E:\pd-media\assets\stock\video\STOCK_MANIFEST.json",
+    r"E:\pd-media\assets\stock\audio\STOCK_MANIFEST.json",
 ]
 _MEDIA_ASSETS: str | None = None
 

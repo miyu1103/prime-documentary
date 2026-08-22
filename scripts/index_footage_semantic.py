@@ -46,14 +46,14 @@ ROOT = Path(__file__).resolve().parents[1]
 # stock/ are the real-footage shelves and belong in the same index.
 # ai_video/ is deliberately left out - it is generated material and must not enter documentary
 # b-roll through a search that cannot tell the difference.
-# The ingest contract (H:\pd-media\assets\archive\_ledger\CONTRACT.md) routes downloads to the
+# The ingest contract (E:\pd-media\assets\archive\_ledger\CONTRACT.md) routes downloads to the
 # first storage tier above its free-space floor, so the library is spread over four drives. Only
 # H: was ever indexed, which left 15,527 rights-cleared clips - courtroom_justice,
 # government_buildings, decision_rooms, household_loss, bench_to_line - invisible to every search.
 # That, not the queries, is why 165 documentary lookups peaked at 0.342.
-SHELVES = [Path(r"H:\pd-media\assets\factory"),
-           Path(r"H:\pd-media\assets\archive"),
-           Path(r"H:\pd-media\assets\stock"),
+SHELVES = [Path(r"E:\pd-media\assets\factory"),
+           Path(r"E:\pd-media\assets\archive"),
+           Path(r"E:\pd-media\assets\stock"),
            Path(r"D:\pd-archive"),
            Path(r"E:\pd-archive"),
            Path(r"F:\pd-archive")]

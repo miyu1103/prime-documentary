@@ -29,15 +29,15 @@ Storage (tier affinity for this adapter; C: is NEVER used):
     Tier B  D:\\pd-archive\\<theme>\\      STOP using D: when free < 250 GB
 When both floors are hit the run stops cleanly. Quarantine + ledgers stay on H::
 
-    H:\\pd-media\\assets\\archive\\_quarantine\\<theme>\\
-    H:\\pd-media\\assets\\archive\\_ledger\\{nasa,noaa,met,smithsonian,nypl,rawpixel}.jsonl
+    E:\\pd-media\\assets\\archive\\_quarantine\\<theme>\\
+    E:\\pd-media\\assets\\archive\\_ledger\\{nasa,noaa,met,smithsonian,nypl,rawpixel}.jsonl
 
 Ledger JSONL schema (one object per line):
     {id, source, source_url, title, license_field_raw,
      license_decision (pd|cc0|review_required), theme, file_path, bytes, sha256,
      fetched_at, relevance_score, matched_keywords}
 Rejects (corrupt / below technical floor / license fail) are logged to
-    H:\\pd-media\\assets\\archive\\_ledger\\rejects.jsonl
+    E:\\pd-media\\assets\\archive\\_ledger\\rejects.jsonl
 
 Quality gates (per item, precision-first):
   * relevance score from title/description keyword match vs the themed query;
@@ -95,7 +95,7 @@ TIERS = [
     {"name": "F", "root": r"F:\pd-archive", "drive": "F:\\", "floor": 50 * GB},
     {"name": "D", "root": r"D:\pd-archive", "drive": "D:\\", "floor": 250 * GB},
 ]
-H_ROOT = r"H:\pd-media\assets\archive"
+H_ROOT = r"E:\pd-media\assets\archive"
 LEDGER_DIR = os.path.join(H_ROOT, "_ledger")
 QUARANTINE = os.path.join(H_ROOT, "_quarantine")
 REJECTS_PATH = os.path.join(LEDGER_DIR, "rejects.jsonl")

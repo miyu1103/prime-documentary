@@ -32,7 +32,7 @@ PLANNING = ROOT / "episodes" / "_planning"
 BATCH_D = PLANNING / "EP66_openfields_CODEX_BATCH_D.v001.md"
 OUT_MD = PLANNING / "EP67_ramirez_CODEX_BATCH_A.v002.md"
 OUT_PASTE = PLANNING / "EP67_ramirez_CODEX_PASTE_A"
-SAVE_DIR = r"H:\pd-media\assets\ai\ramirez"
+SAVE_DIR = r"E:\pd-media\assets\ai\ramirez"
 
 # ---------------------------------------------------------------------------------------------
 # style blocks

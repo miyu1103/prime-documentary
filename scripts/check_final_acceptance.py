@@ -272,6 +272,20 @@ def runtime_band(epdir: Path) -> tuple[float, float]:
     The generic 'target>=20 -> 1620-1980s (27-33 min)' bucket badly mismatches a
     20-min-target episode whose plan is 1225s, so the plan band wins when present.
     """
+    # THE EPISODE SPEC OUTRANKS BOTH OF THE SOURCES BELOW and was not being read at all.
+    # Measured 2026-08-21 on EP70 wronghouse: episode_spec declares runtime_seconds [2445, 2835]
+    # and script_words [6900, 7500]; the film is 2398.7 s of 6,908 words, i.e. inside its own
+    # word band. But manifest.target_duration_minutes is 45, so the `t >= 45` bucket below handed
+    # back 3300-3900 s and the receipt reported the film 568 words SHORT of a 55-65 minute band
+    # the episode never declared. CLAUDE.md 4.6: "an undeclared value is an error, never an
+    # inferred default" -- the inverse is just as true, a DECLARED value must not be overridden
+    # by an inferred one. The spec is the machine contract (rule 4.6.2); read it first.
+    spec = _load(epdir / "episode_spec.v001.json") or {}
+    band = spec.get("runtime_seconds")
+    if (isinstance(band, (list, tuple)) and len(band) == 2
+            and all(isinstance(x, (int, float)) for x in band) and band[0] < band[1]):
+        return float(band[0]), float(band[1])
+
     plans = sorted((epdir / "04_scenes").glob("remotion_plan.v*.json"))
     if plans:
         plan = _load(plans[-1]) or {}

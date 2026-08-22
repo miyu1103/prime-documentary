@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 EP = ROOT / "episodes" / "PD-2026-011-mahanoy"
 OUT = EP / "10_thumbnail"
 PKG = EP / "09_package"
-AI = Path(r"H:\pd-media\assets\ai\mahanoy")
+AI = Path(r"E:\pd-media\assets\ai\mahanoy")
 
 W, H = 1280, 720
 YELLOW = (244, 190, 44)

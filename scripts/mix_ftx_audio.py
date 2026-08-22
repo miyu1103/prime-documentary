@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 EP = "PD-2026-004-ftx"
-MEDIA = Path(r"H:\pd-media")
+MEDIA = Path(r"E:\pd-media")
 LIB = MEDIA / "library"
 NARR = MEDIA / "episodes" / EP / "06_voice" / "master" / "vc_master_v001.mp3"
 OUT_DIR = MEDIA / "episodes" / EP / "06_audio"

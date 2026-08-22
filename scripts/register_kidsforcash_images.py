@@ -33,7 +33,7 @@ EPISODE_ID = "PD-2026-038-kidsforcash"
 SCHEMA_VERSION = "image_ledger.v1"
 GENERATED_AT = "2026-07-17T00:00:00Z"  # fixed; do NOT use now()
 
-IMAGE_DIR = Path(r"H:\pd-media\assets\ai\kidsforcash")
+IMAGE_DIR = Path(r"E:\pd-media\assets\ai\kidsforcash")
 HANDOFF_MD = Path(
     r"C:\Users\aab15\Documents\prime-documentary\episodes\_planning"
     r"\EP38_kidsforcash_CODEX_HANDOFF.md"

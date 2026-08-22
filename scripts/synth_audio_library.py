@@ -3,7 +3,7 @@
 4-layer mix actually dereferences.
 
 2026-08-17. The pd-media SSD stopped being enumerated by Windows and took
-H:\\pd-media\\library with it -- every SFX one-shot, every ambience bed and the three music
+E:\\pd-media\\library with it -- every SFX one-shot, every ambience bed and the three music
 beds. Measured: not one of these files exists anywhere on C/D/E/F. Without them the [7/7]
 mix step fails for every episode, so EP66-69 cannot finish and EP70/71 cannot start.
 

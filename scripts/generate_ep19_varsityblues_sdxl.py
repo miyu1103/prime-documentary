@@ -2,7 +2,7 @@
 """Generate EP19 Operation Varsity Blues still candidates via local A1111 SDXL.
 
 Local-only workflow:
-- reads the EP19 prompt plan already extracted under H:\\pd-media
+- reads the EP19 prompt plan already extracted under E:\\pd-media
 - generates missing candidate images with local A1111 txt2img
 - writes 4K PNG candidates under one folder per prompt ID
 - selects one candidate per ID with deterministic image-quality heuristics
@@ -32,7 +32,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageEnhance, ImageFilter, ImageFo
 
 ROOT = Path(__file__).resolve().parent.parent
 EPISODE_ID = "PD-2026-019-varsityblues"
-MEDIA_BASE = Path(r"H:\pd-media\episodes") / EPISODE_ID / "05_visuals"
+MEDIA_BASE = Path(r"E:\pd-media\episodes") / EPISODE_ID / "05_visuals"
 PLAN_PATH = MEDIA_BASE / "ep19_prompt_plan.json"
 API = "http://127.0.0.1:7860"
 

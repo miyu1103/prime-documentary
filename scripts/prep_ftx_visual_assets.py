@@ -18,7 +18,7 @@ from PIL import Image, ImageDraw, ImageOps
 
 API = "http://127.0.0.1:7860"
 EP = "PD-2026-004-ftx"
-MEDIA = Path(r"H:\pd-media")
+MEDIA = Path(r"E:\pd-media")
 VIS = MEDIA / "episodes" / EP / "05_visuals"
 SRC_DIRS = [
     VIS / "openai_heroes",

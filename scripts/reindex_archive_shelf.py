@@ -3,7 +3,7 @@ r"""Rebuild the archive ledger from the files that are still on disk.
 
 WHY THIS EXISTS
 ---------------
-2026-08-20. The plain Samsung T7 that held `H:\pd-media` failed its USB interface --
+2026-08-20. The plain Samsung T7 that held `E:\pd-media` failed its USB interface --
 proven by swapping only the drive in a port and cable the T7 Shield then used
 successfully. It carried `_ledger`, and the ledger was the shelf's only memory: what each
 file is, where it came from, and on what licence basis it may be used.
