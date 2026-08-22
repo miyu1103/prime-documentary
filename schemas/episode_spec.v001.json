@@ -86,6 +86,13 @@
       },
       "description": "Stills that MUST appear in the film, by basename. WHY: EP54's fourteen purpose-made courtroom stills -- generated because the archive holds no courtroom footage at all -- were silently dropped because the builder trimmed a surplus pool from the alphabetical tail, then retired them as unreferenced."
     },
+    "intentionally_empty_stills": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Plate basenames the IMAGE ORDER asks to be empty -- a bare ground for text composited in Remotion, or a near-featureless field. WHY (2026-08-23, EP71 oroville): the manifest's near-black filter cannot tell these from a dead render, because there is genuinely nothing in them; O086's brief is 'plain deep ground, empty, for a single word set alone'. Plates that are dark but CARRY content need no declaration -- they are measured and kept. This list is only for the ones with nothing to measure, and every entry is a claim that somebody read the order."
+    },
     "thumbnail_candidates_min": {
       "type": "integer",
       "minimum": 1,

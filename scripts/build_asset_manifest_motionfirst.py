@@ -47,6 +47,11 @@ ROOT = Path(__file__).resolve().parents[1]
 PUBLIC = ROOT / "remotion" / "public"
 MIN_OK_BYTES = 50_000          # same floor as pd_prerender_gate.py MIN_IMG_BYTES
 MIN_LUMA = 8.0                 # same floor as pd_prerender_gate.py MIN_LUMA
+# Below MIN_LUMA, these two say whether anything is actually IN the frame. Measured on the four
+# EP71 plates the old rule threw away (peak 45-108, sd 5-14) against EP52's dead ones (peak <10,
+# sd <1). Deliberately generous: a plate has to be nearly featureless to be called dead.
+DARK_PEAK_MIN = 30             # brightest pixels present anywhere in the frame
+DARK_SPREAD_MIN = 2.0          # luma standard deviation
 # Library families authored to be SCREENED over a picture, never to be the picture itself.
 OVERLAY_CLASS_PREFIXES = ("AF-LIGHT", "AF-PART", "AF-VFX")
 
@@ -74,6 +79,20 @@ def video_sample_times(path: Path) -> list[float]:
     if d <= 0:
         return [0.5]
     return [min(0.15, d * 0.05), d * 0.5, max(0.0, d - 0.15)]
+
+
+def dark_content(path: Path) -> tuple[int, float]:
+    """(peak luma, luma stdev) of a still. Tells a designed dark plate from a dead render."""
+    try:
+        from PIL import Image, ImageStat
+    except ImportError:
+        return (0, 0.0)
+    try:
+        im = Image.open(path).convert("L")
+        st = ImageStat.Stat(im)
+        return (int(im.getextrema()[1]), round(float(st.stddev[0]), 2))
+    except Exception:  # noqa: BLE001
+        return (0, 0.0)
 
 
 def mean_luma(path: Path, at: float | None = None) -> float:
@@ -130,17 +149,23 @@ def main() -> int:
 
     # Which plates ARE the people plates is declared by the episode, not guessed from a filename.
     declared_people: set[str] = set()
+    declared_empty: set[str] = set()
     spec_path = ROOT / "episodes" / ep / "episode_spec.v001.json"
     if spec_path.is_file():
         try:
-            declared = json.loads(spec_path.read_text(encoding="utf-8")).get("people_plates", [])
+            _spec = json.loads(spec_path.read_text(encoding="utf-8"))
+            declared = _spec.get("people_plates", [])
             declared_people = {s for s in declared} | {Path(s).stem for s in declared}
+            _empty = _spec.get("intentionally_empty_stills", [])
+            declared_empty = {s for s in _empty} | {Path(s).stem for s in _empty}
         except Exception:
             declared_people = set()
+            declared_empty = set()
 
     stills: list[dict] = []
     people: list[dict] = []
     rejected: list[dict] = []          # everything excluded, with the measured reason
+    dark_by_design: list[dict] = []    # below the luma floor, but the frame carries content
     motion_source_candidates: list[Path] = []
 
     def add_still(p: Path) -> None:
@@ -152,8 +177,34 @@ def main() -> int:
         if check_content:
             lum = mean_luma(p)
             if 0 <= lum < MIN_LUMA:
-                rejected.append({"public_path": rel, "reason": f"near-black luma {lum:.1f}"})
-                return
+                # A DARK PLATE AND A DEAD PLATE ARE NOT THE SAME PICTURE (2026-08-23, EP71).
+                # Four oroville plates were rejected here at mean luma 0.0-1.0 -- and all four
+                # are exactly what the image order asked for: "pure black field with a single
+                # hand-drawn red boundary line, nothing else in frame". The film then failed its
+                # own spec on four missing mandatory stills. EP52's genuinely dead plates were
+                # flat: mean 1.0-1.8 with nothing in them. So measure the difference instead of
+                # keeping a list of exceptions -- a designed dark plate HAS content, a dead one
+                # does not.
+                peak, spread = dark_content(p)
+                if p.stem in declared_empty or p.name in declared_empty:
+                    dark_by_design.append({"public_path": rel, "mean_luma": round(lum, 2),
+                                           "peak_luma": peak, "stdev": spread,
+                                           "note": "declared in episode_spec."
+                                                   "intentionally_empty_stills"})
+                    print(f"  [empty-by-order] {rel} mean={lum:.1f} peak={peak} sd={spread} "
+                          f"-- kept because the spec declares it empty on purpose")
+                elif peak >= DARK_PEAK_MIN and spread >= DARK_SPREAD_MIN:
+                    dark_by_design.append({"public_path": rel, "mean_luma": round(lum, 2),
+                                           "peak_luma": peak, "stdev": spread,
+                                           "note": "dark by design: mean is below the floor but "
+                                                   "the frame carries bright content"})
+                    print(f"  [dark-by-design] {rel} mean={lum:.1f} peak={peak} sd={spread} "
+                          f"-- kept; a flat dead render has neither")
+                else:
+                    rejected.append({"public_path": rel,
+                                     "reason": f"near-black luma {lum:.1f} "
+                                               f"(peak {peak}, sd {spread}: nothing in the frame)"})
+                    return
         # People plates are DECLARED in episode_spec.people_plates. EP63/64/65 name theirs with the
         # episode prefix -- C211-C220, M198-M207, R207-R216 -- and the old P/F test reported all
         # three as having no faces at all. The prefix test stays as a fallback for older episodes.
@@ -252,6 +303,7 @@ def main() -> int:
         "factory": factory_e,
         "overlay": overlay_e,
         "rejected": rejected,          # kept for audit: what was excluded and why
+        "dark_by_design": dark_by_design,  # below the luma floor and KEPT, with the measurement
     }
 
     # ---- readiness verdict against the pre-render gate's real thresholds ----
