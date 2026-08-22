@@ -179,6 +179,14 @@ def forbidden_from_ledger(path: Path) -> list[tuple[str, str, str]]:
             continue
         mode = "voice" if re.search(r"own voice|always attributed|never in the film", low_claim) \
             else "always"
+        # A quarantine row can MANDATE a phrasing rather than ban one. EP76 morandi's row 01 says
+        # a convicted person may be named only if "convicted at first instance" and "the judgment
+        # is not final" appear in the same breath -- and this extractor emitted both mandated
+        # phrases as banned, so a script that obeys the row to the letter failed on it. Same
+        # family as the 2026-08-18 false blocks: there, the quoted string was the attribution the
+        # row demands; here it is the qualifier the row demands.
+        if re.search(r"in the same breath|must appear|appears? in the same", low_claim):
+            mode = "require"
         for ph in quoted:
             if len(ph) >= 6:
                 out.append((ph, cells[0], mode))
@@ -203,6 +211,12 @@ def quarantine_hits(forb, text_low: str, sentences: list[str]) -> list[tuple[str
             a, b = ph.split("\x1f")
             if any(a.lower() in sn and b.lower() in sn for sn in sentences):
                 hits.append((f"{a} … {b}", why))
+        elif mode == "require":
+            # The row demands this phrasing. It is a violation to be MISSING, never to be present.
+            # Honest limit: this asks only whether the film says it somewhere, not whether it says
+            # it in the same sentence as every name the row governs. A human still reads the row.
+            if ph.lower() not in text_low:
+                hits.append((f"required phrasing absent: {ph}", why))
         elif mode == "voice":
             for sn in sentences:
                 if ph.lower() in sn and not ATTRIBUTION_RE.search(sn):
