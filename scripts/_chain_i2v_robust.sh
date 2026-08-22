@@ -37,8 +37,36 @@ if [ -f "$LOCK" ] && kill -0 "$(cat "$LOCK" 2>/dev/null)" 2>/dev/null; then
   echo "[chain:$SLUG] another chain (pid $(cat "$LOCK")) is running -- refusing to double-launch"
   exit 0
 fi
+
+# GPU-WIDE LOCK. MEASURED 2026-08-22: the per-slug lock above cannot see a chain running a
+# DIFFERENT episode, and there is only one ComfyUI. Two chains then submit prompts to it and each
+# waits its own 600 s for a clip the other is occupying the card with; each concludes ComfyUI has
+# died and RESTARTS IT, destroying the other's in-flight work. Timeline, to the minute:
+#   03:38  morandi alone            12 clips per chunk
+#   06:06:54  an oroville chain starts on the same card
+#   06:07:21  morandi falls to 3 clips per chunk, then 1, then 0
+# ComfyUI was never crashing -- its own log shows "Prompt executed in 171.81 seconds" throughout.
+# The clips were fine; the WAIT was being spent in another episode's queue.
+GPU_LOCK="out_gpu_comfy.lock"
+if [ -f "$GPU_LOCK" ]; then
+  holder_pid=$(cut -d' ' -f1 "$GPU_LOCK" 2>/dev/null)
+  holder_slug=$(cut -d' ' -f2 "$GPU_LOCK" 2>/dev/null)
+  if [ -n "$holder_pid" ] && kill -0 "$holder_pid" 2>/dev/null; then
+    if [ "$holder_slug" = "$SLUG" ]; then
+      echo "[chain:$SLUG] this episode already holds the GPU (pid $holder_pid) -- refusing"
+    else
+      echo "[chain:$SLUG] REFUSING: '$holder_slug' (pid $holder_pid) is driving ComfyUI."
+      echo "[chain:$SLUG] One card, one i2v chain. Running both makes BOTH slower and each"
+      echo "[chain:$SLUG] restart kills the other's in-flight clip. Wait for it, or stop it first."
+    fi
+    exit 0
+  fi
+  rm -f "$GPU_LOCK"   # stale: the holder is gone
+fi
+echo "$$ $SLUG" > "$GPU_LOCK"
+
 echo $$ > "$LOCK"
-trap 'rm -f "$LOCK"' EXIT
+trap 'rm -f "$LOCK" "$GPU_LOCK"' EXIT
 
 echo "[chain:$SLUG] START $(date) target=$TARGET kinds=$KINDS chunk=$CHUNK" >> "$LOG"
 
