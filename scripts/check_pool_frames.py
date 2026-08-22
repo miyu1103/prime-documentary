@@ -509,6 +509,52 @@ def staging_rows(slug: str) -> dict[str, dict]:
     return {str(r.get("staged_as")): r for r in rows if r.get("staged_as")}
 
 
+def episode_stock_rows(slug: str) -> dict[str, dict]:
+    """clip id -> the EPISODE's own stock ledger row (05_stock/stock_ledger.v001.json).
+
+    THE THIRD PLACE A POOL CLIP CAN COME FROM, and until 2026-08-22 this tool knew about only
+    two. `staging_rows()` covers what `stage_footage_by_title.py` pulled off the archive shelf,
+    and `shelf_index()` covers the shelf itself. Neither covers footage HARVESTED FOR THIS
+    EPISODE by `fetch_stock.py`, which writes its rights record to the episode's own
+    `05_stock/stock_ledger.v001.json` -- source, licence, author, source_url, query, sha256.
+
+    Measured on 2026-08-22: 99 of EP72's 159 pool clips and 113 of EP73's 150 came back
+    "FILENAME ONLY -- no ledger row" (62 % and 75 %). Every one of them had a full rights record
+    sitting in the episode ledger the whole time. EP75 reported the same symptom.
+
+    A clip reported as unbacked when it is fully documented is worse than useless: it trains the
+    reviewer to ignore the field, and the field is what a rights challenge would be answered
+    with.
+    """
+    epdir = next((p for p in sorted((ROOT / "episodes").glob(f"PD-*-{slug}"))), None)
+    if epdir is None:
+        return {}
+    p = epdir / "05_stock" / "stock_ledger.v001.json"
+    if not p.is_file():
+        return {}
+    try:
+        assets = json.loads(p.read_text(encoding="utf-8")).get("assets") or []
+    except Exception:  # noqa: BLE001
+        return {}
+    out: dict[str, dict] = {}
+    for a in assets:
+        aid = str(a.get("asset_id") or "")
+        if not aid:
+            continue
+        row = {
+            "title": a.get("depicts") or a.get("query") or "",
+            "source": a.get("source"),
+            "license": a.get("license"),
+            "author": a.get("author"),
+            "source_url": a.get("source_url"),
+            "sha256": a.get("sha256"),
+        }
+        # the merge step names these AR-<asset_id>__<title-slug>.mp4, so key on both forms
+        out[aid.lower()] = row
+        out[f"ar-{aid}".lower()] = row
+    return out
+
+
 def shelf_index(ids: set[str]) -> dict[str, dict]:
     """Ledger records for clip ids the staging receipt did not cover.
 
@@ -811,17 +857,20 @@ def main() -> int:  # noqa: C901
     for r in cand_rows:
         staged.setdefault(str(r["name"]), r)
     unresolved = {clip_id(c.name) for c in clips if c.name not in staged}
-    shelf = shelf_index(unresolved)
+    epstock = episode_stock_rows(slug)
+    from_ep = {i for i in unresolved if i.lower() in epstock}
+    shelf = shelf_index(unresolved - from_ep)
     if unresolved:
         print(f"[pool-frames] {len(unresolved)} clip(s) have no staging-receipt row; "
-              f"{len(shelf)} of them were found on the shelf ledger, "
-              f"{len(unresolved) - len(shelf)} have NO provenance beyond a filename")
+              f"{len(from_ep)} resolved from the episode's own 05_stock ledger, "
+              f"{len(shelf)} from the shelf ledger, "
+              f"{len(unresolved) - len(from_ep) - len(shelf)} have NO provenance beyond a filename")
 
     rows: list[dict] = []
     samples: list[dict] = []
     for c, dur in zip(clips, durations):
         cid = clip_id(c.name)
-        row = staged.get(c.name) or shelf.get(cid.lower()) or {}
+        row = staged.get(c.name) or epstock.get(cid.lower()) or shelf.get(cid.lower()) or {}
         title = str(row.get("title") or "")
         hay = _words(f"{c.name} {title}")
         prompts = era_prompts(hay, era)
@@ -838,6 +887,7 @@ def main() -> int:  # noqa: C901
             "license": row.get("license") or row.get("license_decision"),
             "provenance": ("candidate list (ledger row, not yet staged)" if c.name in cand_names
                            else "staging receipt" if c.name in staged
+                           else "episode 05_stock ledger" if cid.lower() in epstock
                            else "shelf ledger" if cid.lower() in shelf
                            else "FILENAME ONLY -- no ledger row"),
             "era_prompts": prompts,

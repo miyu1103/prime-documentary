@@ -258,6 +258,31 @@ def check_config(r: Report, sections: list[str]) -> None:
         r.block(f"D/CONFIG: invalid figure kinds {sorted(set(bad))}")
     if banned:
         r.block(f"D/CONFIG: BANNED figure kinds {sorted(set(banned))}")
+
+    # A CORRECTLY SPELLED KIND WITH THE WRONG PROPS RENDERS NOTHING, and until 2026-08-22 this gate
+    # could not see it. EP72 and EP73 both returned READY carrying six figures between them whose
+    # props no component reads -- `timeline` given `items` instead of `events`, `bar` given
+    # `series`, `routemap` given `from`/`to`, `mechanism` given `steps`. Six blank full-screen
+    # figures in films the gate had cleared for render. figure_spec parses the FigureSpec union out
+    # of FigureBeats.tsx, so it cannot drift the way the hand-written VALID_KINDS list did.
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        from figure_spec import check_figure, spec as figure_spec_table  # noqa: PLC0415
+        table = figure_spec_table()
+        shape_problems = []
+        for sec, items in figs.items():
+            for i, f in enumerate(items or []):
+                for msg in check_figure(f, table):
+                    shape_problems.append(f"{sec}[{i}] {f.get('kind')}: {msg}")
+        if shape_problems:
+            head = "; ".join(shape_problems[:3])
+            r.block(f"D/CONFIG: {len(shape_problems)} figure(s) carry props the renderer does not "
+                    f"read -- they would draw BLANK: {head}"
+                    f"{' ...' if len(shape_problems) > 3 else ''} "
+                    f"(full list: py -3.11 scripts/figure_spec.py --config <this file>)")
+    except Exception as e:  # noqa: BLE001
+        r.warn(f"D/CONFIG: figure prop-shape check did not run ({type(e).__name__}: {e}). "
+               f"A blank figure would not be caught here.")
     if len(kinds) < 6:
         r.warn(f"D/CONFIG: only {len(kinds)} distinct figure kinds (<6 = monotony)")
     hook = str(cfg.get("hookLine") or "")

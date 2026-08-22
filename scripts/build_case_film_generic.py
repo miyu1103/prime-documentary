@@ -411,7 +411,13 @@ def make_cuts(order: list[str], windows: dict[str, tuple[float, float]], manifes
     # under the video-share floor), and check_spec_satisfied then refuses a film whose
     # mandatory_stills do not fit. EP61 weimer commissioned 150 stills; at 4.6s only 105 fit.
     # An episode that never chose 4.6 was nevertheless cut to it, and nothing said so.
-    _specs = sorted((ROOT / "episodes").glob(f"PD-*-{slug}/episode_spec.v001.json"))
+    # The HIGHEST revision, through the canonical resolver (invariant 14). Reading v001 by name
+    # is how a corrected contract goes unread: lahaina's v001 says people_plates=null and its
+    # v003 lists them, so a v001 reader sees an episode with no faces in it.
+    sys.path.insert(0, str(SCRIPTS if "SCRIPTS" in dir() else Path(__file__).resolve().parent))
+    from check_episode_spec import spec_path as _resolve_spec  # noqa: PLC0415
+    _specs = [_resolve_spec(d) for d in sorted((ROOT / "episodes").glob(f"PD-*-{slug}"))
+              if _resolve_spec(d).is_file()]
     if not _specs:
         raise SystemExit(
             f"[cuts] {slug} has no episodes/PD-*-{slug}/episode_spec.v001.json, so it declares "
@@ -653,6 +659,23 @@ def build_figures(cfg: dict, order: list[str], windows: dict[str, tuple[float, f
         if hi - lo < dur:
             lo, hi = s, e
         span = max(hi - lo, dur)
+        # OPTIONAL PINNING. Figures are spread evenly across their section, which is right for
+        # most of them and wrong for the few that must land on ONE cut -- EP71's O086 is a bare
+        # ground the image order describes as "for a single word set alone", and even placement
+        # left it on screen for five seconds carrying nothing. A payload may declare
+        # `at_seconds`; nothing else changes, and a figure without it is placed exactly as before.
+        pinned = [p for p in payloads if p.get("at_seconds") is not None]
+        payloads = [p for p in payloads if p.get("at_seconds") is None]
+        for payload in pinned:
+            kind = payload.get("kind")
+            if kind in BANNED_FIGURE_KINDS:
+                raise SystemExit(f"banned figure kind {kind} in {sec}")
+            if kind not in VALID_KINDS:
+                raise SystemExit(f"invalid figure kind {kind!r} in {sec}")
+            at = float(payload.pop("at_seconds"))
+            hold = float(payload.pop("hold_seconds", dur))
+            figures.append({"start": round(at, 3),
+                            "end": round(min(at + hold, total - 0.5), 3), **payload})
         for i, payload in enumerate(payloads):
             kind = payload.get("kind")
             if kind in BANNED_FIGURE_KINDS:
