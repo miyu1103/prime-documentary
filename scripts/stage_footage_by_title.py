@@ -23,6 +23,7 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -40,6 +41,46 @@ TITLE_BLOCK = re.compile(
 RIP_SIGNATURE = re.compile(
     r"y[-_ ]?2mate|ytmp3|savefrom|ss[-_ ]?youtube|9convert|yt1s|snaptube|x2mate|"
     r"onlinevideoconverter|tubemate|4k[-_ ]?download|ytdlp|youtube[-_ ]?dl", re.I)
+
+# SYNTHETIC AND STUDIO-PLATE MATERIAL. Measured across the shelf's 18,273 video rows on
+# 2026-08-22: 977 titles announce themselves as generated, rendered or shot against a keying
+# backdrop, and they cluster in two themes -- vfx (254) and particle (183). A chroma-key plate of
+# a woman holding a green tablet is a perfectly good asset for an advertisement and is not
+# documentary footage of anything. EP74 and EP76 both staged some.
+SYNTHETIC_SIGNATURE = re.compile(
+    r"\bai[\s\-_]?generated\b|generated (?:by|with) ai|midjourney|\bsora\b|runway ?ml|"
+    r"stable diffusion|\bcgi\b|3d ?render|rendered in 3d|animation loop|motion graphic|"
+    r"green ?screen|chroma ?key|\bvfx\b|particle|lower ?third|mock ?up|template", re.I)
+SYNTHETIC_THEMES = {"vfx", "particle"}
+
+# A 16:9 film cannot use a vertical clip without pillarboxing it or blowing it up past its own
+# pixels. 241 of the shelf rows that carry dimensions are taller than they are wide.
+MIN_ASPECT = 1.30   # 4:3 still crops; anything squarer or taller is refused
+
+
+def clip_aspect(row: dict, src: Path) -> float | None:
+    """width/height, from the ledger row if it has one, else from the file.
+
+    Only 2,936 of the shelf's 18,273 video rows carry width and height, so the ledger alone
+    decides 16 % of cases. ffprobe settles the rest -- but it is called ONLY on a clip that has
+    already survived title matching, size and de-dup, which is a handful per query rather than
+    thousands.
+    """
+    try:
+        w, h = int(row.get("width") or 0), int(row.get("height") or 0)
+        if w > 0 and h > 0:
+            return w / h
+    except (TypeError, ValueError):
+        pass
+    try:
+        r = subprocess.run(
+            ["ffprobe", "-v", "error", "-select_streams", "v:0",
+             "-show_entries", "stream=width,height", "-of", "csv=p=0:s=x", str(src)],
+            capture_output=True, text=True, timeout=30)
+        w, h = (int(x) for x in r.stdout.strip().split("x")[:2])
+        return w / h if h else None
+    except Exception:  # noqa: BLE001
+        return None
 
 
 def slugify(text: str, limit: int = 48) -> str:
@@ -471,8 +512,10 @@ def main() -> int:
         print(f"[stage] !! {a.slug} declares no usable forbidden_subjects -- no subject screen")
 
     prepared: list[tuple[dict, str, tuple[str, ...], frozenset[str]]] = []
-    n_block = n_rip = n_forbidden = 0
+    n_block = n_rip = n_forbidden = n_synth = n_vertical = 0
     forbidden_examples: list[str] = []
+    synth_examples: list[str] = []
+    vertical_examples: list[str] = []
     for r in rows:
         title = str(r.get("title", "")).strip()
         if not title or TITLE_BLOCK.search(title):
@@ -486,6 +529,12 @@ def main() -> int:
             print(f"  RIGHTS: refusing {title[:60]!r} -- its name says it was ripped from "
                   f"YouTube; a CC0 tag on archive.org is the uploader's word, not proof")
             continue
+        if (SYNTHETIC_SIGNATURE.search(f"{title} {r.get('file_path', '')}")
+                or str(r.get("theme", "")).lower() in SYNTHETIC_THEMES):
+            n_synth += 1
+            if len(synth_examples) < 5:
+                synth_examples.append(f"{r.get('theme') or '-'}: {title[:56]}")
+            continue
         words = title_words(title)
         keys = match_keys(words)
         banned = forbidden_hit(forbidden, words, keys)
@@ -496,7 +545,10 @@ def main() -> int:
             continue
         prepared.append((r, title, words, keys))
     print(f"[stage] titles: -{n_block} blocked, -{n_rip} ripped-upload signature, "
+          f"-{n_synth} synthetic/plate material, "
           f"-{n_forbidden} carrying a forbidden_subject -> {len(prepared)} searchable")
+    for ex in synth_examples:
+        print(f"  SYNTHETIC: {ex}")
     for ex in forbidden_examples:
         print(f"  FORBIDDEN: {ex}")
 
@@ -522,6 +574,16 @@ def main() -> int:
             name = f"{ident}__{slugify(title)}{src.suffix.lower()}"
             if name in have:
                 continue
+            # A 16:9 film cannot use a vertical clip. Checked HERE rather than in the title pass
+            # because ffprobe is the authority for the 84 % of shelf rows that carry no
+            # dimensions, and by this point the candidate has already survived matching, size and
+            # the name checks -- so this runs a handful of times per query, not thousands.
+            ar = clip_aspect(r, src)
+            if ar is not None and ar < MIN_ASPECT:
+                n_vertical += 1
+                if len(vertical_examples) < 5:
+                    vertical_examples.append(f"{ar:.2f}:1  {title[:52]}")
+                continue
             # THE NAME CHECKS ABOVE ARE THE FAST PATH; THIS ONE IS THE AUTHORITY.
             owners = _content_owners(content, src)
             if owners:
@@ -546,6 +608,12 @@ def main() -> int:
         for ex in dupe_examples:
             print(f"  REUSE: {ex}")
         content.save()
+
+    if n_vertical:
+        print(f"[stage] aspect: -{n_vertical} clip(s) rejected as vertical or squarer than "
+              f"{MIN_ASPECT:.2f}:1 -- a 16:9 film can only pillarbox them or blow them up")
+        for ex in vertical_examples:
+            print(f"  VERTICAL: {ex}")
 
     if a.emit_candidates:
         out = Path(a.emit_candidates)
