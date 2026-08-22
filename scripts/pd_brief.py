@@ -24,9 +24,8 @@ Usage:
 from __future__ import annotations
 
 import datetime as dt
-import io
 import sys
-from contextlib import redirect_stdout
+from collections import Counter
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -39,11 +38,49 @@ JST = dt.timezone(dt.timedelta(hours=9))
 BAR = "-" * 78
 
 
+def compact() -> int:
+    """A few lines, printed automatically at session start. Loud only when a person is needed.
+
+    Nobody should have to remember to run this, and nobody should have to read a screenful of
+    it every time. It prints the number that decides the month and what may not be touched,
+    and shouts only when an experiment is due or a decision has outlived its own review date.
+    """
+    reg = pd_experiments.load()
+    b = reg["measured_baselines"]
+    ctr = b["long_form_ctr_pct_median"]["value"]
+    views = b["long_form_lifetime_views_median"]["value"]
+    print(f"PD  long-form CTR {ctr}% (median) | lifetime views per film {views} (median)")
+
+    locked = len(pd_experiments.locks("title"))
+    if locked:
+        nxt = min((e["read_on"] for e in reg["experiments"]
+                   if str(e.get("read_on", "")).startswith("20")), default="-")
+        print(f"    {locked} video ids locked: no retitle, no new thumbnail. Next read {nxt}.")
+        print("    apply_title_batch.py refuses them. A change made by hand in Studio is unseen.")
+
+    dues = pd_experiments.due()
+    if dues:
+        print("    !! DUE NOW: " + ", ".join(e["experiment_id"] for e in dues))
+
+    bad = [r for r in check_decisions.scan() if r["state"] in ("EXPIRED", "MISSING")]
+    if bad:
+        print("    !! decisions needing a date: "
+              + ", ".join(f"{r['path'].name} ({r['state']})" for r in bad))
+
+    stopped = ", ".join(s["what"] for s in reg.get("stopped", []))
+    if stopped:
+        print(f"    stopped, do not restart: {stopped}")
+    print("    py -3.11 scripts/pd_brief.py --full   # the numbers, their sources, and why")
+    return 0
+
+
 def main() -> int:
     try:
         sys.stdout.reconfigure(encoding="utf-8")
     except Exception:
         pass
+    if "--full" not in sys.argv:
+        return compact()
     now = dt.datetime.now(JST)
     reg = pd_experiments.load()
     print(f"=== PD BRIEF — {now:%Y-%m-%d %H:%M} JST ===")
@@ -105,17 +142,19 @@ def main() -> int:
     print(f"\n{BAR}")
     print("DECISIONS")
     print(BAR)
-    buf = io.StringIO()
-    with redirect_stdout(buf):
-        rc = check_decisions.main()
-    for line in buf.getvalue().splitlines():
-        if line.startswith(("EXPIRED", "MISSING")) or line.startswith(("12 ", "11 ")) or \
-           " decision(s):" in line:
-            print("  " + line)
-    if rc == 0:
-        print("  no decision is expired or undated (LEGACY ones listed by --legacy)")
-    else:
+    # scan() rather than main(): main() parses sys.argv, and this module has its own flags.
+    rows = check_decisions.scan()
+    counts = Counter(r["state"] for r in rows)
+    print(f"  {len(rows)} decision(s): " +
+          ", ".join(f"{n} {s.lower()}" for s, n in sorted(counts.items())))
+    for r in rows:
+        if r["state"] in ("EXPIRED", "MISSING"):
+            print(f"  {r['state']:<7} {r['path'].name}")
+    if counts.get("EXPIRED") or counts.get("MISSING"):
         print("  py -3.11 scripts/check_decisions.py    # the full list and what to write")
+    else:
+        print("  nothing expired, nothing new left undated "
+              "(pre-2026-08-23 ones are LEGACY: --legacy lists them)")
 
     print(f"\n{BAR}")
     print("NEXT")

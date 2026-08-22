@@ -9,18 +9,21 @@ they are trusted differently.
 - **The narrative** is the judgement, the traps and the reasons — the part a machine cannot produce.
   The current one is linked at the bottom; older ones stay in `docs/handover/`.
 
-Four commands to run before doing anything:
+The channel brief prints itself. A `SessionStart` hook runs `scripts/pd_brief.py` at the top of
+every session, so what is decided, what is being measured and what may not be touched arrive
+without anyone typing anything. `--full` when you want the sources and the reasoning.
+
+Three commands to run before doing anything:
 
 ```
-py -3.11 scripts/pd_brief.py                 # what is decided, what is measured, what you may not touch
 py -3.11 scripts/handover_snapshot.py        # refresh the block below, then read it
 py -3.11 scripts/check_queue_will_stall.py   # every reason the render queue would stall
 py -3.11 scripts/check_doc_contradictions.py # the binding documents still agree with each other
 ```
 
-`pd_brief.py` reads `config/pd_experiments.v001.json`, which is **the only copy** of the
-channel's measured figures, its running experiments, their read dates, and the video ids that
-must not be retitled or re-thumbnailed. Prose in this repository no longer holds those numbers.
+It reads `config/pd_experiments.v001.json`, which is **the only copy** of the channel's
+measured figures, its running experiments, their read dates, and the video ids that must not be
+retitled or re-thumbnailed. Prose in this repository no longer holds those numbers.
 `scripts/apply_title_batch.py` refuses a write that lands in a running experiment — but nothing
 can see a change made by hand in the Studio UI, so read the brief before opening Studio.
 
