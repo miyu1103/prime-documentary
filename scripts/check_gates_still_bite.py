@@ -197,7 +197,86 @@ def _probe_pd_edit_reverts() -> Result:
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+# --------------------------------------------------------------------------- #
+# vacuous passes
+# --------------------------------------------------------------------------- #
+# A gate handed an EMPTY episode should not answer "ok". Ten of them currently do, each with a
+# reason of the form "nothing here to check". Measured 2026-08-23 against all 161 acceptance
+# receipts on disk: not one of those branches has ever fired on a real episode, so nothing has
+# shipped through them and NO VERDICT IS BEING CHANGED HERE -- changing ten gates from pass to
+# fail could stop the line over a path rename, which is a worse defect than the one it fixes.
+#
+# What is guarded is GROWTH. Today's bug was a gate that quietly stopped applying; a gate that
+# passes because its input moved is the same failure with a different cause. This baseline
+# freezes the ten that already do it. An eleventh makes the probe fire, and whoever added it has
+# to say so out loud instead of it becoming normal.
+VACUOUS_BASELINE = {
+    "check_bookends",                 # no composition matching slug
+    "check_caption_format",           # no final .srt to format-check
+    "check_caption_narration_match",  # no narration spoken_text and/or final .srt
+    "check_caption_sync",             # SRT not found
+    "check_footage_diversity",        # no film-data cutlist
+    "check_hook",                     # shotlist totals missing
+    "check_image_resolution",         # no hero PNGs staged
+    "check_leveled_animation",        # no composition matching slug
+    "check_structure",                # no narration sections
+    "check_thumbnail_visibility",     # no selected thumbnail to measure
+}
+
+
+def vacuous_passes() -> set[str]:
+    """Gate functions that return ok=True when handed an episode directory with nothing in it."""
+    import inspect
+    import check_final_acceptance as cfa
+    tmp = Path(tempfile.mkdtemp())
+    try:
+        ep = tmp / "episodes" / "PD-2026-099-probe"
+        (ep / "09_package").mkdir(parents=True)
+        (ep / "08_edit").mkdir(parents=True)
+        out = set()
+        for name, fn in sorted(vars(cfa).items()):
+            if not (name.startswith("check_") and inspect.isfunction(fn)):
+                continue
+            sig = inspect.signature(fn)
+            params = list(sig.parameters)
+            if params[:1] != ["epdir"]:
+                continue                       # needs a real mp4; not probeable this cheaply
+            kwargs, usable = {}, True
+            for p in params[1:]:
+                if sig.parameters[p].default is inspect.Parameter.empty:
+                    if "dur" in p:
+                        kwargs[p] = 700.0
+                    else:
+                        usable = False
+                        break
+            if not usable:
+                continue
+            try:
+                if fn(ep, **kwargs).get("ok"):
+                    out.add(name)
+            except Exception:
+                pass                            # raising on an empty episode is a rejection
+        return out
+    finally:
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
+def _probe_no_new_vacuous_passes() -> Result:
+    now = vacuous_passes()
+    added = sorted(now - VACUOUS_BASELINE)
+    healed = sorted(VACUOUS_BASELINE - now)
+    if added:
+        return Result(bit=False, detail="now passes an EMPTY episode: " + ", ".join(added))
+    if healed:
+        return Result(bit=True, detail="fixed since the baseline (remove from it): "
+                                       + ", ".join(healed))
+    return Result(bit=True, detail=f"{len(now)} known, none added")
+
+
 PROBES = [
+    Probe("no_new_vacuous_passes",
+          "a gate passing because its input moved, exactly as today’s gate stopped applying",
+          _probe_no_new_vacuous_passes),
     Probe("freshness_mux_order", "a receipt stamped green on a film the master does not contain",
           _probe_freshness_mux_order),
     Probe("episode_is_done", "rebuilding a finished film, or silently skipping an unfinished one",
