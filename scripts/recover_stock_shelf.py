@@ -29,10 +29,11 @@ WHAT IT WRITES.
   ledger  E:\\pd-archive\\_ledger\\<source>.jsonl        -- one row per file, the shape
           `search_archive.py` already reads, so recovered clips become searchable immediately
 
-RATE LIMITS. Pexels allows 200 requests/hour; only the metadata call counts, the file comes from
-a CDN. Pixabay allows 100 requests per 60 seconds. The defaults are deliberate -- being throttled
-costs more time than waiting. The two providers have separate limits and separate locks, so they
-can and should run at the same time.
+RATE LIMITS, measured rather than assumed (2026-08-23). This key is NOT on the published 200/hour
+free tier: X-Ratelimit-Limit returns -1, a 40-request burst at a 7,487/hour pace drew zero 429s,
+and X-Ratelimit-Remaining reads ~23,000. Pixabay allows 100 requests per 60 seconds. Only the
+metadata call counts against either; the file itself comes from a CDN. The two providers have
+separate limits and separate locks, so they can and should run at the same time.
 
 SAFE TO RE-RUN. Resumable by design: a clip already on disk with a non-zero size is skipped.
 
@@ -108,7 +109,13 @@ SOURCES: dict[str, dict] = {
         "files": _pexels_files,
         "title": _pexels_title,
         "page_url": lambda m: m.get("url", ""),
-        "per_hour": 200,                      # provider limit, not a preference
+        # Was 200, from the published free-tier figure rather than from this account.
+        # Asked the API directly on 2026-08-23: X-Ratelimit-Limit came back -1 and a 40-request
+        # burst at a 7,487/hour pace returned zero 429s, with X-Ratelimit-Remaining sitting
+        # around 23,000. The 200 was a self-imposed throttle costing ~30 hours on the video set
+        # alone. 1,200 is still far under what the account allows and under what the link can
+        # carry, so the download stays the bottleneck rather than the provider.
+        "per_hour": 1200,
         "licence": ("Pexels License -- free for commercial and non-commercial use, no "
                     "attribution required, identifiable persons may not be used for "
                     "anything defamatory"),
@@ -126,6 +133,71 @@ SOURCES: dict[str, dict] = {
         "licence_field": "Pixabay Content License",
     },
 }
+
+def _pexels_photo_files(meta: dict) -> list[dict]:
+    """Pexels photos carry named renditions with no per-rendition dimensions, so the top-level
+    width/height of the original is reported and `large2x` (~1880 px wide) is the one taken:
+    plenty for a 1920-wide timeline, a fraction of the original's bytes."""
+    src = meta.get("src") or {}
+    for name in ("large2x", "large", "original", "medium"):
+        if src.get(name):
+            return [{"link": src[name], "width": meta.get("width", 0), "height": meta.get("height", 0)}]
+    return []
+
+
+def _pixabay_image_files(meta: dict) -> list[dict]:
+    hits = meta.get("hits") or []
+    if not hits:
+        return []
+    h = hits[0]
+    for name in ("largeImageURL", "webformatURL"):
+        if h.get(name):
+            return [{"link": h[name], "width": h.get("imageWidth", 0), "height": h.get("imageHeight", 0)}]
+    return []
+
+
+def _pexels_photo_title(meta: dict, slug: str) -> str:
+    return (meta.get("alt") or slug.replace("-", " "))[:120]
+
+
+# Per (source, kind): the four things that differ. Everything account-level -- key, auth, pacing,
+# licence -- stays in SOURCES above and is shared by both kinds.
+#
+# Images were out of scope until 2026-08-23, when the owner asked for the whole shelf back. They
+# are the bulk of it: of 83,683 items still missing, 72,616 are stills. They are also cheap --
+# roughly 0.6 MB against 16 MB for a clip -- so an image lane costs API calls, not bandwidth, and
+# can run beside the video lanes without slowing them.
+KINDS: dict[tuple[str, str], dict] = {
+    ("pexels", "video"): {
+        "ext": "mp4",
+        "url": "https://api.pexels.com/videos/videos/{id}",
+        "files": _pexels_files,
+        "title": _pexels_title,
+        "page_url": lambda m: m.get("url", ""),
+    },
+    ("pexels", "image"): {
+        "ext": "jpg",
+        "url": "https://api.pexels.com/v1/photos/{id}",
+        "files": _pexels_photo_files,
+        "title": _pexels_photo_title,
+        "page_url": lambda m: m.get("url", ""),
+    },
+    ("pixabay", "video"): {
+        "ext": "mp4",
+        "url": "https://pixabay.com/api/videos/?key={key}&id={id}",
+        "files": _pixabay_files,
+        "title": _pixabay_title,
+        "page_url": lambda m: ((m.get("hits") or [{}])[0].get("pageURL", "")),
+    },
+    ("pixabay", "image"): {
+        "ext": "jpg",
+        "url": "https://pixabay.com/api/?key={key}&id={id}",
+        "files": _pixabay_image_files,
+        "title": _pixabay_title,
+        "page_url": lambda m: ((m.get("hits") or [{}])[0].get("pageURL", "")),
+    },
+}
+
 
 # EP76's registers, and the registers its episode_spec bars. Only used with --want-ep76, and only
 # meaningful for pexels: pixabay browse names carry no title, so nothing would ever match.
@@ -149,8 +221,9 @@ BAR = re.compile(
     r"digital-animation|computer-generated|3d-render)")
 
 
-def name_re(source: str) -> re.Pattern[str]:
-    return re.compile(rf"^{source}__(\d+)__(.+)\.mp4$", re.I)
+def name_re(source: str, kind: str) -> re.Pattern[str]:
+    ext = KINDS[(source, kind)]["ext"]
+    return re.compile(rf"^{source}__(\d+)__(.+)\.{ext}$", re.I)
 
 
 def api_key(source: str) -> str:
@@ -177,11 +250,12 @@ def theme_for(p: Path) -> str:
     return "misc"
 
 
-def candidates(source: str, want_ep76: bool) -> list[tuple[str, str, str]]:
+def candidates(source: str, kind: str, want_ep76: bool) -> list[tuple[str, str, str]]:
     """(id, slug, theme) for every dead symlink, newest-first by id so recent stock comes back first."""
-    pat = name_re(source)
+    pat = name_re(source, kind)
+    ext = KINDS[(source, kind)]["ext"]
     out, seen = [], set()
-    for p in BROWSE.rglob(f"{source}__*.mp4"):
+    for p in BROWSE.rglob(f"{source}__*.{ext}"):
         m = pat.match(p.name)
         if not m:
             continue
@@ -197,7 +271,7 @@ def candidates(source: str, want_ep76: bool) -> list[tuple[str, str, str]]:
     return out
 
 
-def already_have(source: str) -> set[str]:
+def already_have(source: str, kind: str) -> set[str]:
     """Ids already held: on disk under EVERY tier, and in the ledger under ANY naming.
 
     Two blind spots, both measured 2026-08-22.
@@ -213,12 +287,13 @@ def already_have(source: str) -> set[str]:
     Only .mp4 rows count. Pixabay reuses its numeric id space across images and videos,
     and an image row must never mask a video that really is missing.
     """
-    pat = name_re(source)
+    pat = name_re(source, kind)
+    ext = KINDS[(source, kind)]["ext"]
     have = set()
     for shelf in SHELVES:
         if not shelf.exists():
             continue
-        for p in shelf.rglob(f"{source}__*.mp4"):
+        for p in shelf.rglob(f"{source}__*.{ext}"):
             m = pat.match(p.name)
             if m and p.stat().st_size > 0:
                 have.add(m.group(1))
@@ -234,7 +309,7 @@ def already_have(source: str) -> set[str]:
                 rec = json.loads(line)
             except Exception:
                 continue
-            if not str(rec.get("file_path", "")).lower().endswith(".mp4"):
+            if not str(rec.get("file_path", "")).lower().endswith("." + ext):
                 continue
             digits = re.findall(r"\d+", str(rec.get("id", "")))
             if digits:
@@ -329,7 +404,7 @@ def sha256(p: Path) -> str:
     return h.hexdigest()
 
 
-def single_instance(source: str) -> None:
+def single_instance(source: str, kind: str) -> None:
     """Refuse to start when another recovery is already appending to this source's ledger.
 
     Measured 2026-08-22 16:11: TWO copies of this script were running against
@@ -347,7 +422,7 @@ def single_instance(source: str) -> None:
     The lock is PER SOURCE. pexels and pixabay have separate limits and separate ledger
     files, so blocking one on the other would cost days for no safety.
     """
-    lock = LEDGER_DIR / f"{source}_recover.lock"
+    lock = LEDGER_DIR / f"{source}_{kind}_recover.lock"
     lock.parent.mkdir(parents=True, exist_ok=True)
     try:
         fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
@@ -370,6 +445,7 @@ def main() -> int:
 
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", choices=sorted(SOURCES), default="pexels")
+    ap.add_argument("--kind", choices=("video", "image"), default="video")
     ap.add_argument("--ids-file", help="one id per line; overrides the browse scan")
     ap.add_argument("--want-ep76", action="store_true",
                     help="only EP76's registers, and none the episode_spec bars (pexels only)")
@@ -383,19 +459,20 @@ def main() -> int:
     if not a.plan and not a.write:
         ap.error("give --plan or --write")
 
-    src = a.source
+    src, kind = a.source, a.kind
     cfg = SOURCES[src]
+    kc = KINDS[(src, kind)]
     per_hour = a.per_hour or cfg["per_hour"]
     ledger = LEDGER_DIR / f"{src}.jsonl"
 
-    rows = candidates(src, a.want_ep76)
+    rows = candidates(src, kind, a.want_ep76)
     if a.ids_file:
         keep = {l.strip() for l in Path(a.ids_file).read_text(encoding="utf-8").splitlines() if l.strip()}
         rows = [r for r in rows if r[0] in keep]
 
-    have = already_have(src)
+    have = already_have(src, kind)
     todo = [r for r in rows if r[0] not in have]
-    print(f"[recover] source: {src}")
+    print(f"[recover] source: {src} {kind}")
     print(f"[recover] browse manifest: {len(rows)} candidate(s)")
     print(f"[recover] already on the shelf: {len(rows) - len(todo)}")
     print(f"[recover] to fetch: {len(todo)}")
@@ -411,7 +488,7 @@ def main() -> int:
         print("[recover] --plan: nothing written")
         return 0
 
-    single_instance(src)
+    single_instance(src, kind)
     shelf = pick_shelf()
     print(f"[recover] writing to {shelf}")
     key = api_key(src)
@@ -441,7 +518,7 @@ def main() -> int:
         s = session()
         try:
             pace.wait()
-            url = cfg["url"].format(id=vid, key=key)
+            url = kc["url"].format(id=vid, key=key)
             r = s.get(url, timeout=(10, 30))
             if r.status_code == 429:
                 print("[recover] 429 -- backing off 10 min")
@@ -453,13 +530,13 @@ def main() -> int:
                     counts["fail"] += 1
                 return
             meta = r.json()
-            f = pick_file(cfg["files"](meta))
+            f = pick_file(kc["files"](meta))
             if not f:
                 print(f"  {vid} no usable file")
                 with clock:
                     counts["fail"] += 1
                 return
-            dest = shelf / theme / f"{src}__{vid}__{slug}.mp4"
+            dest = shelf / theme / f"{src}__{vid}__{slug}.{kc['ext']}"
             dest.parent.mkdir(parents=True, exist_ok=True)
             tmp = dest.with_suffix(".part")
             # (connect, read) rather than one 180 s number, plus a wall-clock budget.
@@ -484,8 +561,8 @@ def main() -> int:
             append_row(ledger, {
                     "id": f"{src}_{vid}",
                     "source": src,
-                    "source_url": cfg["page_url"](meta),
-                    "title": cfg["title"](meta, slug),
+                    "source_url": kc["page_url"](meta),
+                    "title": kc["title"](meta, slug),
                     "license_field_raw": cfg["licence_field"],
                     "license_decision": "free_commercial",
                     "theme": theme,

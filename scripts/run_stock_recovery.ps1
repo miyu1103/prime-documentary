@@ -1,27 +1,39 @@
-# Run the stock-video recovery detached, so it survives the chat session that started it.
+# Run one stock-recovery lane detached, so it survives the chat session that started it.
 #
-# WHY DETACHED. The job is long: pexels is ~40 hours at the provider's 200 requests/hour, pixabay
-# ~2 hours at 50/minute. A run tied to a shell dies with the shell, and the previous copy of this
-# work was restarted by hand three times for exactly that reason.
+# WHY DETACHED. The job is long and a run tied to a shell dies with the shell; the previous copy
+# of this work was restarted by hand three times for exactly that reason.
 #
-# WHY PEXELS RUNS TWICE. EP76's registers are a 596-clip subset of the 7,924, and an episode that
-# is waiting should not sit behind forty hours of general stock. The subset runs first; the full
-# pass then skips everything it already fetched, because already_have() reads the disk and the
-# ledger, not a list held in memory.
+# FOUR LANES. (pexels|pixabay) x (video|image), each with its own lock and its own pacing, so all
+# four run at once. Measured 2026-08-23 on the degraded line, per lane:
 #
-#   pwsh -NoProfile -File scripts\run_stock_recovery.ps1 -Source pexels    <- pwsh, not powershell:
-#   Windows PowerShell 5.1 has no -Encoding on Tee-Object and writes the log as UTF-16, which
-#   reads back as spaced-out gibberish. pwsh 7 defaults to UTF-8.
-#   pwsh -NoProfile -File scripts\run_stock_recovery.ps1 -Source pixabay
+#     pexels  video  4 workers  ~1,000/hour   (16 MB each, bandwidth-bound)
+#     pixabay video  4 workers  ~1,086/hour
+#     pexels  image  8 workers  ~1,220/hour   (0.25 MB each, latency-bound)
+#     pixabay image  8 workers  ~2,742/hour
 #
-# Progress:  Get-Content runs\recover_<source>.log -Tail 20
-# Stop it:   the recover script releases its lock on exit; kill the python process and delete
-#            E:\pd-archive\_ledger\<source>_recover.lock only if it was killed hard.
+# WORKER COUNTS ARE MEASURED, NOT GUESSED. Video: 1 stream 2.93 MB/s, 4 streams 5.09, 8 streams
+# 2.97 -- four is the knee and eight congests. Image: 8 workers 2,742/hour, 16 workers 2,618 --
+# eight is the knee there too. The defaults below are those two measurements.
+#
+# WHY PEXELS VIDEO RUNS TWICE. EP76's registers are a subset of the whole pexels video set, and
+# an episode that is waiting should not sit behind the general stock. The subset runs first; the
+# full pass then skips everything it already fetched, because already_have() reads the disk and
+# the ledger, not a list held in memory.
+#
+#   pwsh -NoProfile -File scripts\run_stock_recovery.ps1 -Source pexels  -Kind video
+#   pwsh -NoProfile -File scripts\run_stock_recovery.ps1 -Source pixabay -Kind image
+#
+# Progress:  Get-Content runs\recover_<source>_<kind>.log -Tail 20
+# Stop it:   kill the python process; delete E:\pd-archive\_ledger\<source>_<kind>_recover.lock
+#            only if it was killed hard (a clean exit releases it).
 
 param(
     [Parameter(Mandatory = $true)]
     [ValidateSet('pexels', 'pixabay')]
-    [string]$Source
+    [string]$Source,
+    [ValidateSet('video', 'image')]
+    [string]$Kind = 'video',
+    [int]$Workers = 0
 )
 
 $ErrorActionPreference = 'Continue'
@@ -29,17 +41,19 @@ $repo = 'C:\Users\aab15\Documents\prime-documentary'
 Set-Location $repo
 $env:PYTHONIOENCODING = 'utf-8'
 
-$log = Join-Path $repo "runs\recover_$Source.log"
-New-Item -ItemType Directory -Force -Path (Split-Path $log) | Out-Null
-Add-Content -Path $log -Encoding utf8 -Value ("=== {0} recovery start {1} ===" -f $Source, (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'))
+if ($Workers -le 0) { $Workers = if ($Kind -eq 'image') { 8 } else { 4 } }
 
-if ($Source -eq 'pexels') {
-    & py -3.11 -u scripts\recover_stock_shelf.py --source pexels --want-ep76 --write *>&1 |
+$log = Join-Path $repo ("runs\recover_{0}_{1}.log" -f $Source, $Kind)
+New-Item -ItemType Directory -Force -Path (Split-Path $log) | Out-Null
+Add-Content -Path $log -Encoding utf8 -Value ("=== {0} {1} start {2} ({3} workers) ===" -f $Source, $Kind, (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Workers)
+
+if ($Source -eq 'pexels' -and $Kind -eq 'video') {
+    & py -3.11 -u scripts\recover_stock_shelf.py --source pexels --kind video --want-ep76 --write --workers $Workers *>&1 |
         Tee-Object -FilePath $log -Append | Out-Null
     Add-Content -Path $log -Encoding utf8 -Value ("--- EP76 subset done {0}; starting the full pass ---" -f (Get-Date -Format 'HH:mm:ss'))
 }
 
-& py -3.11 -u scripts\recover_stock_shelf.py --source $Source --write *>&1 |
+& py -3.11 -u scripts\recover_stock_shelf.py --source $Source --kind $Kind --write --workers $Workers *>&1 |
     Tee-Object -FilePath $log -Append | Out-Null
 
-Add-Content -Path $log -Encoding utf8 -Value ("=== {0} recovery end {1} ===" -f $Source, (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'))
+Add-Content -Path $log -Encoding utf8 -Value ("=== {0} {1} end {2} ===" -f $Source, $Kind, (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'))
