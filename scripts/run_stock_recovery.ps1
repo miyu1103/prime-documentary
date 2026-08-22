@@ -31,7 +31,11 @@ param(
     [Parameter(Mandatory = $true)]
     [ValidateSet('pexels', 'pixabay')]
     [string]$Source,
-    [ValidateSet('video', 'image')]
+    # "both" runs video then image IN ONE LANE. Pexels shares a single API key across kinds,
+    # so two lanes at once simply take turns being told no: measured 2026-08-23, 34 rate-limit
+    # responses between them and both paces ratcheted to the floor. One lane at a time on that
+    # key held ~1,000/hour with none.
+    [ValidateSet('video', 'image', 'both')]
     [string]$Kind = 'video',
     [int]$Workers = 0
 )
@@ -47,13 +51,18 @@ $log = Join-Path $repo ("runs\recover_{0}_{1}.log" -f $Source, $Kind)
 New-Item -ItemType Directory -Force -Path (Split-Path $log) | Out-Null
 Add-Content -Path $log -Encoding utf8 -Value ("=== {0} {1} start {2} ({3} workers) ===" -f $Source, $Kind, (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $Workers)
 
-if ($Source -eq 'pexels' -and $Kind -eq 'video') {
+if ($Source -eq 'pexels' -and $Kind -ne 'image') {
     & py -3.11 -u scripts\recover_stock_shelf.py --source pexels --kind video --want-ep76 --write --workers $Workers *>&1 |
         Tee-Object -FilePath $log -Append | Out-Null
     Add-Content -Path $log -Encoding utf8 -Value ("--- EP76 subset done {0}; starting the full pass ---" -f (Get-Date -Format 'HH:mm:ss'))
 }
 
-& py -3.11 -u scripts\recover_stock_shelf.py --source $Source --kind $Kind --write --workers $Workers *>&1 |
-    Tee-Object -FilePath $log -Append | Out-Null
+$kinds = if ($Kind -eq 'both') { @('video', 'image') } else { @($Kind) }
+foreach ($kk in $kinds) {
+    $w = if ($kk -eq 'image') { 8 } else { $Workers }
+    Add-Content -Path $log -Encoding utf8 -Value ("--- {0} {1} pass start {2} ({3} workers) ---" -f $Source, $kk, (Get-Date -Format 'HH:mm:ss'), $w)
+    & py -3.11 -u scripts\recover_stock_shelf.py --source $Source --kind $kk --write --workers $w *>&1 |
+        Tee-Object -FilePath $log -Append | Out-Null
+}
 
 Add-Content -Path $log -Encoding utf8 -Value ("=== {0} {1} end {2} ===" -f $Source, $Kind, (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'))

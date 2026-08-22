@@ -341,8 +341,10 @@ class Pace:
     """
 
     def __init__(self, per_hour: int) -> None:
-        self.gap = 3600.0 / max(per_hour, 1)
+        self.base_gap = 3600.0 / max(per_hour, 1)
+        self.gap = self.base_gap
         self.next_at = 0.0
+        self.ok_since_429 = 0
         self.lock = threading.Lock()
 
     def wait(self) -> None:
@@ -364,6 +366,23 @@ class Pace:
         """
         with self.lock:
             self.gap = min(self.gap * 2, 60.0)
+            self.ok_since_429 = 0
+            return 3600.0 / self.gap
+
+    def speed_up(self) -> float | None:
+        """Climb back after a clean stretch, or the first 429 of the night is permanent.
+
+        Measured 2026-08-23 08:20: backing off without ever recovering left the pexels image
+        lane pinned at 60 requests/hour -- 2,097 hours for the work in front of it -- because
+        23 scattered 429s had each halved a pace nothing could raise again. Backoff without
+        recovery is not adaptive, it is a ratchet.
+        """
+        with self.lock:
+            self.ok_since_429 += 1
+            if self.ok_since_429 < 50 or self.gap <= self.base_gap:
+                return None
+            self.gap = max(self.base_gap, self.gap / 2)
+            self.ok_since_429 = 0
             return 3600.0 / self.gap
 
 
@@ -596,6 +615,9 @@ def main() -> int:
                     "license_basis": cfg["licence"],
                     "width": f.get("width"), "height": f.get("height"),
             })
+            faster = pace.speed_up()
+            if faster:
+                print(f"[recover] clean run -- pace back up to {faster:.0f}/hour", flush=True)
             with clock:
                 counts["ok"] += 1
                 n = counts["ok"]
