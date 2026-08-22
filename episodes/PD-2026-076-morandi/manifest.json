@@ -18,6 +18,8 @@
     "scene_plan": "v002",
     "footage_plan": "v001",
     "image_order": "v002",
+    "codex_image_batch": "v003",
+    "visual_assets": "v007",
     "thumb_prompts": "v001",
     "fact_recheck": "v001",
     "narration": "v001"
@@ -76,12 +78,20 @@
       "note": "v001 ordered 120 plates V001-V120 and all 120 were delivered at exactly 3840x2160. v002 reorders SEVEN: three rejected on the full frame (V008 aggregate instead of the stay's cables, V020 modern hi-vis in a 1965 scene, V024 a steel truss instead of a concrete cable-stayed viaduct) and four whose ORDER was wrong (V078, V104, V112, V114 carried the P people flag on prompts asking for no person, which put the real people count at 20 against a declared 24)."
     },
     {
+      "kind": "visual_assets",
+      "path": "episodes/PD-2026-076-morandi/05_visuals/codex_image_batch.v003.json",
+      "revision": "v003",
+      "produced_at": "2026-08-22",
+      "validated": "check_plate_verdicts.py --slug morandi -> PASS 120/120; check_episode_spec.py --slug morandi -> valid; SSD final and Remotion staging: 120 files, 3840x2160, 0 hash mismatches, 0 exact duplicate groups",
+      "note": "Seven v002 plates regenerated one prompt per image with Codex built-in image generation, upscaled by Real-ESRGAN x4plus then LANCZOS to exact 3840x2160, individually reviewed at full frame, staged, and SHA-bound. Final media revision is E:/pd-media/assets/ai/morandi/_v007_final; old rejected and reordered files remain preserved."
+    },
+    {
       "kind": "plate_verdicts",
       "path": "runs/qc/morandi_plate_verdicts.v001.json",
       "revision": "v001",
-      "produced_at": "2026-08-21",
-      "validated": "py -3.11 scripts/check_plate_verdicts.py --slug morandi -> PASS, 117 accept / 3 reject, every verdict sha-bound to the file on disk",
-      "note": "NOT TRACKED IN GIT (runs/ is ignored). Read from pixels: six labelled contact sheets over all 120 tiles, then a suspect sheet of the eight either party doubted, then full-resolution crops of the two a tile could not settle. That third step overturned two verdicts, one of them mine (V106)."
+      "produced_at": "2026-08-22",
+      "validated": "py -3.11 scripts/check_plate_verdicts.py --slug morandi -> PASS, 120 accept / 0 reject / 0 unresolved, every verdict sha-bound to the file on disk",
+      "note": "NOT TRACKED IN GIT (runs/ is ignored). Ten labelled contact sheets were rebuilt over all 120 staged plates. The seven regenerated files were each read at full 3840x2160 frame and again in sheets 01, 02, 07, 09 and 10 before their verdicts were rebound."
     },
     {
       "kind": "thumb_prompts",
@@ -137,12 +147,11 @@
     "FACES ARE PERMITTED AND WANTED (owner decision 2026-08-21). The NEG blocks must NOT contain human face, facial features, eye contact or headshot. They contain identifiable person, recognisable person and likeness of a real individual. Ten plates stay in a carve-out with no face resolved at all, because their roles map to real identifiable individuals: the inspector, the officer who ran the procedure, the verifier, the designer and the committee."
   ],
   "blockers": [
-    "SEVEN PLATES OUTSTANDING. V008, V020, V024, V078, V104, V112, V114 are ordered in v002 and not yet generated. 117 of 120 are staged and verdict-bound; three are quarantined to remotion/public/morandi/_rejected_v001/. Until the seven return, people_plates is 20 against a declared 24 and mandatory_stills stays empty.",
     "THE FOUR ASSEMBLY INPUTS DO NOT EXIST: 03_script/script.annotated.v001.json, 04_scenes/scene_plan.v001.json, 04_scenes/remotion_plan.v001.json, 05_visuals/asset_selection.v001.json. preflight_render_gate is red on those four and on nothing else; motion_budget, assets_exist and coverage are red only because they derive from them.",
     "NO FOOTAGE STAGED. 0 clips. check_cross_episode_reuse.py runs BEFORE staging, then a person opens a labelled contact sheet -- footage_review_required is true and the shelf's labels are known to be wrong.",
     "THE ENDING EXPIRES ~14 OCTOBER 2026. The court gave itself ninety days from 16 July 2026 to file its reasons. The film says they are not yet written. Re-check on the day the publish date is set; if they have been filed, or an appeal has been formally lodged, ACT_5's last lines and the description are rewritten before scheduling. It is a splice, not a re-render.",
     "PREFLIGHT IS NOT ADVISORY. preflight_render_gate.py --ep PD-2026-076-morandi must be GREEN before any render. It has failed on 25 of 32 episodes and been overridden on 10; on 2026-08-20 EP70 and EP71 were each one command from a three-hour render of a captionless slideshow."
   ],
   "created_at": "2026-08-21T00:00:00+09:00",
-  "updated_at": "2026-08-21T00:00:00+09:00"
+  "updated_at": "2026-08-22T01:49:59+09:00"
 }
