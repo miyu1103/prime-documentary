@@ -405,11 +405,24 @@ def main() -> int:
                 dest = shelf / theme / f"{src}__{vid}__{slug}.mp4"
                 dest.parent.mkdir(parents=True, exist_ok=True)
                 tmp = dest.with_suffix(".part")
-                with s.get(f["link"], stream=True, timeout=180) as dl:
+                # (connect, read) rather than one 180 s number, plus a wall-clock budget.
+                # Measured 2026-08-23 03:20 on a degraded line -- 11 Mbps, 393 ms RTT -- the
+                # run had dropped from 350-600 clips/hour to 10-22 while the link itself could
+                # still carry ~250. The time was going into dying transfers: requests' timeout
+                # is PER READ, so a socket that trickles a byte every few seconds never trips a
+                # 180 s read timeout and blocks the single-threaded loop for as long as it likes.
+                # A short read timeout catches the stalls; the budget catches the trickles.
+                budget = 180.0
+                t_dl = time.time()
+                with s.get(f["link"], stream=True, timeout=(10, 30)) as dl:
                     dl.raise_for_status()
                     with tmp.open("wb") as fh:
                         for chunk in dl.iter_content(1 << 20):
                             fh.write(chunk)
+                            if time.time() - t_dl > budget:
+                                raise TimeoutError(
+                                    f"download exceeded {budget:.0f}s wall clock; abandoning "
+                                    f"this clip so the run keeps moving")
                 tmp.replace(dest)
                 led.write(json.dumps({
                     "id": f"{src}_{vid}",
