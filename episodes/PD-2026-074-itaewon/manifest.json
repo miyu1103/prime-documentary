@@ -11,7 +11,7 @@
   "target_language": "en",
   "target_duration_minutes": 30,
   "active_revisions": {
-    "episode_spec": "v002",
+    "episode_spec": "v003",
     "facts_ledger": "v005",
     "film_bible": "v002",
     "script": "v007",
@@ -24,11 +24,11 @@
   "artifacts": [
     {
       "kind": "episode_spec",
-      "path": "episodes/PD-2026-074-itaewon/episode_spec.v002.json",
-      "revision": "v002",
+      "path": "episodes/PD-2026-074-itaewon/episode_spec.v003.json",
+      "revision": "v003",
       "produced_at": "2026-08-21",
       "validated": "py -3.11 scripts/check_episode_spec.py --slug itaewon -> exit 0",
-      "note": "v002 declares people_plates = I035-I062, section C of the image order. Not a threshold change: people_plates_min stays at 24 and every other value is unchanged. Without the declaration check_episode_inputs fell back to a haarcascade and reported 6 of 114, because every people plate here is deliberately composed so no face is identifiable, which is exactly what a face detector cannot find. EP59 carried the same failure and EP62-65 solved it the same way."
+      "note": "v002 declared people_plates. v003 adds twelve PHRASE forbidden subjects -- ai generated, green screen, chroma key, vj loop, seamless loop, science fiction, 3d render and kin -- which became enforceable only on 2026-08-21 when forbidden_hit was fixed to match multi-word terms. 20 of this episode's own 453 downloaded clips carry 'ai generated' in their archive title, and invariant 11 forbids presenting generated visuals as authentic footage. No threshold changed."
     },
     {
       "kind": "facts_ledger",
@@ -159,5 +159,5 @@
     "PREFLIGHT IS NOT ADVISORY. preflight_render_gate.py --ep PD-2026-074-itaewon must be GREEN before any render. 25 of 32 episodes failed it and 10 rendered anyway; on 2026-08-20 EP70 and EP71 were three GPU-hours from a captionless slideshow."
   ],
   "created_at": "2026-08-21T00:00:00+09:00",
-  "updated_at": "2026-08-21T00:00:00+09:00"
+  "updated_at": "2026-08-22T00:00:00+09:00"
 }
