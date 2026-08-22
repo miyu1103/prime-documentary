@@ -76,7 +76,27 @@ def load_rules(path: Path | None, default: Path) -> list[tuple[str, str, str]]:
     # a row whose needle starts with __ is documentation, not a rule. A rule file has to
     # carry the reasoning for what the film sounds like, and JSON has no comments.
     return [(r["needle"], r["kind"], r["anchor"]) for r in rows
-            if not str(r.get("needle", "")).startswith("__")]
+            if "needle" in r and not str(r.get("needle", "")).startswith("__")]
+
+
+def load_silences(path: Path | None, default: Path) -> list[str]:
+    """Beats that must carry NO cue, from rows shaped {"silent": "<substring>", "why": "..."}.
+
+    Added 2026-08-22 for EP74 itaewon, an R3 film about 159 real deaths. Its design forbids
+    DEPICTING the crush, and that bar applies to the mix as much as to the picture: a one-shot
+    landing on "a hundred and fifty-nine people died there", or on "crushed to death",
+    dramatises the event the film refuses to dramatise. The episode-specific placer that
+    produced that plan held 27 beats silent by name. The rule list survived the migration into
+    config/sound_rules/ and this mechanism did not, so a regenerate would have put the cues
+    back onto those beats.
+
+    Additive and opt-in: a config with no `silent` rows behaves exactly as before.
+    """
+    p = path or default
+    if not p.is_file():
+        return []
+    rows = json.loads(p.read_text(encoding="utf-8"))
+    return [str(r["silent"]).lower() for r in rows if "silent" in r]
 
 
 def main() -> int:
@@ -115,6 +135,8 @@ def main() -> int:
     last, beat, placed = -99, 0, 0
     per: dict[str, int] = {}
     unmatched_anchor = 0
+    held_silent = 0
+    silences = load_silences(a.rules, ROOT / "config" / "sound_rules" / f"{a.slug}.json")
     for ln in lines:
         out.append(ln)
         if not ln.startswith("[VO:]"):
@@ -123,6 +145,9 @@ def main() -> int:
         if beat - last < a.min_gap:
             continue
         low = ln[5:].strip().lower()
+        if any(s in low for s in silences):
+            held_silent += 1
+            continue
         for needle, kind, anchor in rules:
             if needle.lower() not in low:
                 continue
@@ -150,6 +175,9 @@ def main() -> int:
             print(f"[sound] BELOW FLOOR -- add about {short} more rule hits, or widen the needles")
     for k, v in sorted(per.items(), key=lambda kv: -kv[1]):
         print(f"           {v:3d}  {k}  -> {vocab[k.lower()]}")
+    if held_silent:
+        print(f"[sound] {held_silent} beat(s) HELD SILENT by config -- a cue there would "
+              f"dramatise something this episode refuses to dramatise")
     if unmatched_anchor:
         print(f"[sound] {unmatched_anchor} rule match(es) skipped: the beat did not speak the anchor word")
 

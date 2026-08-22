@@ -624,6 +624,38 @@ def chapter_spans(chunks: list[Chunk], total: float) -> list[tuple[str, float, f
     return spans
 
 
+def ambience_overrides(slug: str) -> dict[str, str]:
+    """{chapter_id: bed filename} an episode DECLARES, from config/sound_rules/<slug>.json.
+
+    Rows shaped {"ambience": "<chapter_id>", "bed": "<amb_*.mp3>", "why": "..."}.
+
+    Why this exists, measured 2026-08-22 on EP74 itaewon. Bed selection is keyword-driven, and a
+    chapter that matches no keyword falls through to whatever is FIRST in AMBIENCE_KEYWORDS --
+    amb_road_rumble_1920s.mp3, the Prohibition bed. EP74's HOOK is a 2022 Seoul alley. It drew the
+    1920s bed; fixing the ranking moved the same bed onto ACT_4. The bed was never wrong-ranked so
+    much as wrong-for-this-film, and nothing let the film say so: CHAPTER_AMBIENCE_DEFAULT is keyed
+    for a different episode's chapter names (`opening`, `act1`) and EP74's are `op`, `act_1`.
+
+    The density gate cannot catch this. It counts DISTINCT beds against a floor of four, and seven
+    wrong beds pass exactly as easily as seven right ones. Only an ear catches it, so the episode
+    has to be able to write the answer down.
+
+    Additive and opt-in: a config with no `ambience` rows behaves exactly as before.
+    """
+    p = ROOT / "config" / "sound_rules" / f"{slug}.json"
+    if not p.is_file():
+        return {}
+    try:
+        rows = json.loads(p.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001
+        return {}
+    out: dict[str, str] = {}
+    for r in rows:
+        if isinstance(r, dict) and r.get("ambience") and r.get("bed"):
+            out[str(r["ambience"])] = str(r["bed"])
+    return out
+
+
 def rank_beds(chapter_id: str, text: str) -> list[str]:
     """Ranked ambience-bed candidates for a chapter (keyword hits desc)."""
     low = text.lower()
@@ -635,13 +667,23 @@ def rank_beds(chapter_id: str, text: str) -> list[str]:
     ranked = [f for _, _, f in scored]
     default = CHAPTER_AMBIENCE_DEFAULT.get(chapter_id)
     if default and default in ranked:
+        # A chapter that matched NO keyword has expressed no preference, so its declared default
+        # must lead -- otherwise the winner is simply whichever bed happens to be first in
+        # AMBIENCE_KEYWORDS, which is amb_road_rumble_1920s.mp3, the Prohibition bed.
+        # Measured 2026-08-22 on EP74 itaewon: its HOOK is a 2022 Seoul alley, matched zero
+        # keywords, and was assigned a 1920s road rumble. The density gate cannot hear that --
+        # seven distinct beds satisfied its floor of four. The main thread reports the same class
+        # of misfire on EP76. Keeping the default at index 1 was only ever right when the chapter
+        # DID match something and the default should merely rank high.
+        no_hits = not any(k in low for kws, _f in AMBIENCE_KEYWORDS for k in kws)
         ranked.remove(default)
-        ranked.insert(0 if ranked and text.strip() == "" else 1, default)
+        ranked.insert(0 if (no_hits or not text.strip()) else 1, default)
     return ranked
 
 
 def assign_ambience(spans: list[tuple[str, float, float, list[int]]],
-                    chunks: list[Chunk], beats: list[Beat]) -> dict[str, str]:
+                    chunks: list[Chunk], beats: list[Beat],
+                    declared: dict[str, str] | None = None) -> dict[str, str]:
     """M3: distinct bed per chapter -- greedily prefer an unused bed to
     MAXIMISE distinctness (deterministic)."""
     text_by_chapter: dict[str, str] = {}
@@ -658,7 +700,14 @@ def assign_ambience(spans: list[tuple[str, float, float, list[int]]],
 
     used: set[str] = set()
     assigned: dict[str, str] = {}
+    declared = declared or {}
     for cid, _s, _e, _m in spans:
+        # An episode that named its bed for this chapter gets it, before keywords and before the
+        # distinctness sweep. A declaration is an ear's decision and outranks a word count.
+        if cid in declared:
+            assigned[cid] = declared[cid]
+            used.add(declared[cid])
+            continue
         # Locked chapters (e.g. Ending/CTA) always use their controlled default bed, regardless of
         # keyword hits or distinctness -- so an incidental word can't inject a roaring outdoor bed.
         if cid in FORCED_DEFAULT_CHAPTERS and CHAPTER_AMBIENCE_DEFAULT.get(cid):
@@ -1155,7 +1204,7 @@ def main() -> int:
     # chapter spans stay body-local [0, body_len]; the last chapter extends to
     # body_len so the ambience bed covers the full Body region.
     spans = chapter_spans(chunks, body_len)
-    beds = assign_ambience(spans, chunks, beats)
+    beds = assign_ambience(spans, chunks, beats, ambience_overrides(ep.rsplit("-", 1)[-1]))
     sfx_raw, swells, unmapped = build_cues(beats, chunks, spans, gtok, gtime)
     sfx, dropped = dedup_sfx(sfx_raw)
     density = compute_density(sfx, beds, spans, total)
