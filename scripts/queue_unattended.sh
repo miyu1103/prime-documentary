@@ -75,11 +75,20 @@ wait_job() {   # slug -> return when no finisher for this slug is running
   done
 }
 
-already_done() {   # slug num -> true when a master exists that is newer than its film json
-  local slug="$1" num="$2" m f
-  m="episodes/PD-2026-0${num}-${slug}/08_edit/${slug}_final_bgm.v001.mp4"
-  f="remotion/src/data/${slug}_film.json"
-  [ -f "$m" ] && [ -f "$f" ] && [ "$f" -ot "$m" ]
+# 2026-08-23: this answered from mtime against a HARD-CODED v001 master, and it was wrong in
+# both directions. Six of the seven live episodes ship as v002, so it was asking about a file
+# nobody uses; and mtime says nothing about content, so touching the film json flipped the
+# answer. A false "not done" re-rendered two finished, scheduled films (~3 GPU-hours, see the
+# JOBS note below). A false "done" is quieter and worse. The manual JOBS_HELD list below exists
+# only because of this bug.
+#
+# It now asks the ship gate own question: does the acceptance receipt sha match a master that
+# is actually on disk? Content, not clocks. episode_is_done.py exits 0 done / 1 not / 2 unusable,
+# and only exit 0 skips -- an unusable receipt builds rather than silently doing nothing.
+already_done() {   # slug num -> true when the accepted film is byte-for-byte on disk
+  local slug="$1"
+  py -3.11 scripts/episode_is_done.py "$slug" --quiet
+  [ $? -eq 0 ]
 }
 
 # slug:composition:number, in deadline order. memphis is already scheduled and is not here.

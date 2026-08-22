@@ -85,12 +85,23 @@ def check(slug: str, comp: str, num: str) -> tuple[str, list[str]]:
     if f'"{slug}"' not in sched and f"'{slug}'" not in sched:
         bad.append("no CONFIG entry in upload_schedule_case_v001.py (cannot be scheduled)")
 
-    # 6. THE SILENT ONE. The queue skips this episode entirely and says nothing.
-    film = ROOT / f"remotion/src/data/{slug}_film.json"
-    master = ep / f"08_edit/{slug}_final_bgm.v001.mp4"
-    skipped = film.is_file() and master.is_file() and mtime(film) < mtime(master)
-    if skipped:
-        bad.append("SILENTLY SKIPPED: film json older than master -- queue thinks it is done")
+    # 6. Already built? Answered from bytes, not from mtime (2026-08-23).
+    #
+    # This used to compare the film json's mtime against a hard-coded v001 master and report
+    # "SILENTLY SKIPPED -- queue thinks it is done". Measured 2026-08-23: it printed that for
+    # five episodes, and all five were GENUINELY FINISHED -- receipt sha matching a master on
+    # disk. The alarm was the defect. Meanwhile marmet read READY, and building it would have
+    # re-rendered a finished, scheduled film for about three GPU-hours.
+    #
+    # Six of the seven live episodes ship as v002, so a check hard-coded to v001 was answering
+    # about a file nobody uses. episode_is_done.py asks the ship gate's own question instead.
+    rc = subprocess.run(
+        ["py", "-3.11", str(ROOT / "scripts/episode_is_done.py"), slug, "--quiet"],
+        capture_output=True, text=True, cwd=ROOT,
+    ).returncode
+    if rc == 0:
+        return "BUILT", ["already built: the accepted film is on disk (episode_is_done.py). "
+                         "Building it again spends the GPU for nothing."]
 
     # 7. the input gate the queue itself runs before starting anything
     r = subprocess.run(
