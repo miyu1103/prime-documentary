@@ -155,6 +155,24 @@ them, so they live here rather than in a dated file.
 
 ## Current narrative
 
+**[2026-08-23 — cleanup](handover/2026-08-23-cleanup.md)** — **the two files every new session
+is told to read first disagreed with each other.** `PD_CANON` stated the shipping rule
+abolished on 2026-08-12, under the heading "rule 19 enforces this", while the code had already
+moved on. Ten contradictions in all, every one caused by a correct decision written in a NEW
+place while the OLD place kept its sentence: the production spec had **zero** binding pointers
+at the v3 that EP72-76 were actually built to; the title cap was both `<=60` and `59-100`; the
+hook FIRST and last in one file; three answers for runtime; a retired editor still instructing
+live skills. **Two were found by the new checker, not by hand** — including
+`PD_SCREENPLAY_STANDARD`, itself BINDING, still saying the hook is written last six days after
+the owner decided otherwise. Fixed, with the CODE checked first to see which side was real, and
+`scripts/check_doc_contradictions.py` added so the same ones cannot come back quietly (now 0;
+`--demo` fires 6 of 6). Root went **455 -> 78** files and `scripts/` **1,046 -> 832**, all moved
+and none deleted — after three exclusions were measured that would each have caused damage,
+the worst being that `out_finish_<slug>.log.satisfied` is a completion marker, not a log.
+**AE is now required at design time from EP77** (12 beats, 1 per act, 90s, every beat sourced).
+**Not done: EP77+ topics** — 49 of them were demand-measured on 2026-08-20 and have never been
+read.
+
 **[2026-08-22 — shorts + assets lane](handover/2026-08-22-shorts-and-assets.md)** — **the lane that
 owns the archive shelf and the Shorts calendar, handed over.** Shelf rebuilt from disk after the T7
 died and verified against the FILES (63,629 rows, 0 torn/dup/missing); the `isalnum()` call that
