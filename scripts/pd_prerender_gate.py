@@ -64,6 +64,25 @@ def main():
     a = ap.parse_args()
     film = json.load(open(a.film, encoding="utf-8"))
     pub = Path(a.public)
+    # The dark/dead/empty split is defined once, in the manifest builder, and imported here.
+    global _dark_content, _DARK_PEAK_MIN, _DARK_SPREAD_MIN, _declared_empty
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from build_asset_manifest_motionfirst import (  # noqa: PLC0415
+        dark_content as _dark_content, DARK_PEAK_MIN as _DARK_PEAK_MIN,
+        DARK_SPREAD_MIN as _DARK_SPREAD_MIN)
+    from check_episode_spec import spec_path as _resolve_spec  # noqa: PLC0415
+    _declared_empty = set()
+    # From the film's own episode_id, not its filename: a copy of the film under any other name
+    # would otherwise resolve to no episode and silently lose the declaration.
+    _epid = str(film.get("episode_id") or "")
+    _slug = _epid.split("-")[-1] if _epid else Path(a.film).stem.replace("_film", "")
+    for _d in sorted((Path(__file__).resolve().parents[1] / "episodes").glob(f"PD-*-{_slug}")):
+        try:
+            _s = json.loads(_resolve_spec(_d).read_text(encoding="utf-8"))
+        except Exception:  # noqa: BLE001
+            continue
+        for _n in _s.get("intentionally_empty_stills", []) or []:
+            _declared_empty |= {_n, Path(_n).stem}
     cuts = film["cuts"]; caps = film.get("captions", [])
     fails, warns = [], []
 
@@ -113,7 +132,21 @@ def main():
         if fp.suffix.lower() in (".png",".jpg",".jpeg"):
             if sz < MIN_IMG_BYTES: stub.append(f"{s}({sz}B)"); continue
             l = img_luma(fp)
-            if 0 <= l < MIN_LUMA: dark.append(f"{s}(luma{l:.1f})")
+            if 0 <= l < MIN_LUMA:
+                # Same three-way split the manifest makes, from the same code (invariant 14):
+                # a DESIGNED dark plate carries content, a DEAD one does not, and a plate the
+                # order asks to be EMPTY has nothing to measure and must be declared. EP71's
+                # O008 is "pure black field with a single hand-drawn red boundary line" -- the
+                # picture is correct and this gate was forbidding the render over it.
+                peak, spread = _dark_content(fp)
+                if fp.stem in _declared_empty or fp.name in _declared_empty:
+                    print(f"  [empty-by-order] {s} luma{l:.1f} peak{peak} sd{spread} -- declared "
+                          f"in episode_spec.intentionally_empty_stills")
+                elif peak >= _DARK_PEAK_MIN and spread >= _DARK_SPREAD_MIN:
+                    print(f"  [dark-by-design] {s} luma{l:.1f} peak{peak} sd{spread} -- kept; "
+                          f"a flat dead render has neither")
+                else:
+                    dark.append(f"{s}(luma{l:.1f}, peak{peak}, sd{spread})")
         elif fp.suffix.lower() in (".mp4",".mov",".webm"):
             if sz < MIN_IMG_BYTES: stub.append(f"{s}({sz}B)"); continue
             d = ffprobe_dur(fp)
