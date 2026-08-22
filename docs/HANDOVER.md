@@ -163,8 +163,8 @@ place while the OLD place kept its sentence: the production spec had **zero** bi
 at the v3 that EP72-76 were actually built to; the title cap was both `<=60` and `59-100`; the
 hook FIRST and last in one file; three answers for runtime; a retired editor still instructing
 live skills. **Two were found by the new checker, not by hand** — including
-`PD_SCREENPLAY_STANDARD`, itself BINDING, still saying the hook is written last six days after
-the owner decided otherwise. Fixed, with the CODE checked first to see which side was real, and
+`PD_SCREENPLAY_STANDARD`, itself BINDING, still carrying the superseded hook-order line six days
+after the owner decided otherwise. Fixed, with the CODE checked first to see which side was real, and
 `scripts/check_doc_contradictions.py` added so the same ones cannot come back quietly (now 0;
 `--demo` fires 6 of 6). Root went **455 -> 78** files and `scripts/` **1,046 -> 832**, all moved
 and none deleted — after three exclusions were measured that would each have caused damage,
