@@ -150,7 +150,13 @@ def main() -> int:
     # Which plates ARE the people plates is declared by the episode, not guessed from a filename.
     declared_people: set[str] = set()
     declared_empty: set[str] = set()
-    spec_path = ROOT / "episodes" / ep / "episode_spec.v001.json"
+    # THE HIGHEST REVISION, through the canonical resolver (invariant 14 -- imported, not
+    # restated). oroville's real contract is v002 and this file was reading a superseded v001;
+    # lahaina's v001 says people_plates=null while its v003 lists them, so a v001 reader builds
+    # a film that thinks the episode has no faces in it.
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from check_episode_spec import spec_path as _resolve_spec  # noqa: PLC0415
+    spec_path = _resolve_spec(ROOT / "episodes" / ep)
     if spec_path.is_file():
         try:
             _spec = json.loads(spec_path.read_text(encoding="utf-8"))
@@ -229,7 +235,13 @@ def main() -> int:
             or p.stem in declared_people
             or p.stem[0].upper() in ("P", "F")
         )
-        if (base / "motion" / f"{p.stem}.mp4").is_file() and not is_people_plate:
+        # A plate the order asks to be EMPTY is the cut itself -- the word is composited over it
+        # in Remotion. Its i2v derivative is near-black video, which lands in the overlay pool
+        # (screened, never cut), so treating the plate as an i2v source leaves it in NO cut at
+        # all and the film fails its own mandatory_stills (EP71 oroville O086, 2026-08-23).
+        is_declared_empty = p.name in declared_empty or p.stem in declared_empty
+        if ((base / "motion" / f"{p.stem}.mp4").is_file()
+                and not is_people_plate and not is_declared_empty):
             motion_source_candidates.append(p)
             continue
         add_still(p)
