@@ -1,0 +1,56 @@
+EP78_colgan — 画像発注 バッチ 12/17（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) C089.png
+   [C089]  flags: 
+   A public hearing room in bright daylight, a raised bench, microphones on stands, empty seating behind
+
+2) C090.png
+   [C090]  flags: 
+   A single microphone on a witness table in a hearing room, water glass beside it, hard overhead light
+
+3) C091.png
+   [C091]  flags: 
+   Rows of empty press seats in a hearing room, bright daylight, notebooks left on the chairs
+
+4) C092.png
+   [C092]  flags: P
+   A government building corridor in daylight, marble floor, tall windows, two figures walking away from camera
+
+5) C093.png
+   [C093]  flags: 
+   An office noticeboard on a corridor wall with several blank sheets pinned to it, overhead strip light burning
+
+6) C094.png
+   [C094]  flags: 
+   Close-up of a single blank sheet pinned to a noticeboard, one corner curling, hard light from the side
+
+7) C095.png
+   [C095]  flags: 
+   An airline crew room in daylight, bright ceiling panels, lockers, a sofa, coats on hooks, no one present
+
+8) C096.png
+   [C096]  flags: 
+   The same crew room after dark, one lamp on, a blanket folded on the sofa, the rest in shadow

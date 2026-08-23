@@ -1,0 +1,56 @@
+EP78_colgan — 画像発注 バッチ 13/17（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) C097.png
+   [C097]  flags: 
+   A row of steel lockers in a crew room, one door ajar, strip light overhead
+
+2) C098.png
+   [C098]  flags: 
+   A vending machine glowing in a dim staff room at night, its light filling the frame, an empty table beside it
+
+3) C099.png
+   [C099]  flags: 
+   A staff kitchenette in an airline building, bright fluorescent light, a coffee machine, mugs on a rack
+
+4) C100.png
+   [C100]  flags: 
+   An airport employee car park at first light, frost on the cars, pale orange sky
+
+5) C101.png
+   [C101]  flags: 
+   A long-haul airline cabin at night from the back, almost all lights off, one reading lamp burning over an empty seat
+
+6) C102.png
+   [C102]  flags: 
+   An airport moving walkway at night, empty, lit from below, receding into the distance
+
+7) C103.png
+   [C103]  flags: 
+   A payslip-sized blank sheet lying on a kitchen table under a pendant lamp, no lettering, warm domestic light
+
+8) C104.png
+   [C104]  flags: 
+   A modest American suburban kitchen in morning daylight, bright window, a mug on the counter, no one present

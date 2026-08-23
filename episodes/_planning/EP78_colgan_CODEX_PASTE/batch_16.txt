@@ -1,0 +1,56 @@
+EP78_colgan — 画像発注 バッチ 16/17（8枚）
+区分: ACT_4 / ENDING
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) C121.png
+   [C121]  flags: 
+   A modern regional airliner cockpit in daylight, panels dark, bright cloud through the windscreen
+
+2) C122.png
+   [C122]  flags: 
+   A commercial airliner climbing away into a clear bright morning sky seen from the ground
+
+3) C123.png
+   [C123]  flags: P
+   An airport terminal in full daylight, glass wall, aircraft on stands beyond, travellers as distant blurred figures
+
+4) C124.png
+   [C124]  flags: 
+   A control tower against a bright blue sky in the middle of the day, hard sunlight
+
+5) C125.png
+   [C125]  flags: 
+   A wide daylight view of an American airport apron, several regional aircraft, ground vehicles, clear sky
+
+6) C126.png
+   [C126]  flags: 
+   A quiet suburban street in upstate New York in summer daylight, mature trees, ordinary houses, nothing remarkable
+
+7) C127.png
+   [C127]  flags: 
+   Extreme close-up of a glass cockpit airspeed tape, the red and black bar low and still at the bottom, the digits above it clean white, instrument backlight glowing
+
+8) C128.png
+   [C128]  flags: 
+   The same airspeed tape pulled back slightly to show the whole instrument panel around it, everything normal, dim cockpit
