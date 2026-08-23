@@ -386,18 +386,48 @@ class Pace:
             return 3600.0 / self.gap
 
 
+_APPEND_LOCK = threading.Lock()
+
+
+def _lock_tail(fd: int, nbytes: int) -> None:
+    """Block until this process owns the bytes it is about to append.
+
+    Windows has no O_APPEND atomicity guarantee, so the seek and the write are separable and
+    two processes can land inside each other. msvcrt.locking takes a byte-range lock from the
+    current offset; the range is released when the descriptor closes.
+    """
+    try:
+        import msvcrt
+        msvcrt.locking(fd, msvcrt.LK_LOCK, max(1, nbytes))
+    except (ImportError, OSError):
+        try:
+            import fcntl
+            fcntl.flock(fd, fcntl.LOCK_EX)
+        except Exception:  # noqa: BLE001 - no OS lock available; the thread lock still holds
+            pass
+
+
 def append_row(ledger: Path, row: dict) -> None:
-    """One O_APPEND write of one short line -- atomic across threads and processes.
+    """One locked write of one line -- atomic across threads AND processes.
 
     Same rule the ingest lane learned on 2026-08-20, when writers sharing one handle tore 586
     lines in half. A held file object plus a thread pool is that mistake with a smaller cast.
+
+    O_APPEND alone was not enough, and this cost three rows to learn. POSIX makes an append
+    write atomic; Windows does not -- it seeks to the end and then writes, and a second process
+    can land between those steps. Measured 2026-08-23 16:00: while the pixabay video and image
+    lanes were both appending to pixabay.jsonl, three rows were torn in half. Exactly the
+    failure this function exists to prevent, in the one place I had assumed it could not
+    happen. The thread lock covers this process; the byte-range lock covers the others.
     """
     data = (json.dumps(row, ensure_ascii=False) + "\n").encode("utf-8")
-    fd = os.open(ledger, os.O_WRONLY | os.O_CREAT | os.O_APPEND, 0o644)
-    try:
-        os.write(fd, data)
-    finally:
-        os.close(fd)
+    with _APPEND_LOCK:
+        fd = os.open(ledger, os.O_WRONLY | os.O_CREAT | os.O_APPEND, 0o644)
+        try:
+            _lock_tail(fd, len(data))
+            os.write(fd, data)
+        finally:
+            os.close(fd)
 
 
 def pick_file(files: list[dict]) -> dict | None:
