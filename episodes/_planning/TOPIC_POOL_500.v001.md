@@ -782,7 +782,113 @@ Two shapes convert, not one:
 `scripts/score_title_ctr.py` scores SHAPE 1 and **cannot see SHAPE 2** — it gives OneCoin a 1
 and Theranos a 6. It is one input, not the decision. Said in the script's own docstring.
 
-## 2. THE SIX
+## 2b. THE SIX — FINAL (third and last pass, 2026-08-23)
+
+> **This section supersedes §2 below.** Two more measurements arrived after §2 was written and
+> both were decisive. §2 is kept unedited as the record of the second pass. Three passes were
+> needed because each one was overturned by a number that had been sitting on disk unread.
+
+### The two findings that produced this slate
+
+**F1 — a famous subject is worth +47 % CTR, and a giant incumbent is not a penalty.**
+Controlled for age (20–70 days, n = 41): famous subjects weighted CTR **2.24 %**, unknown cases
+**1.52 %**. That is a larger effect than any title feature measured all day. And PD's two best
+long-form videos sit on the two most crowded topics in the dataset:
+
+| PD episode | PD CTR | biggest competitor on the same subject |
+|---|---|---|
+| OceanGate | **3.14 %** | 17,060,282 |
+| D.B. Cooper | **2.37 %** | 26,945,133 |
+
+`PD_CANON` §6's topic rule — *reject where a definitive film exists at 3 M+* — is **contradicted
+by the channel's own two best results.** The second pass obeyed that rule and threw away every
+high-demand subject because of it. This pass does not. The rule should be re-examined by the
+owner; it is not edited here.
+
+**F2 — the 11-minute case-law episodes are clicked and abandoned.**
+Average view percentage, from the funnel snapshot (2026-08-01…07):
+
+| duration | n | median AVP | median minutes actually watched |
+|---|---|---|---|
+| 10–15 min | 14 | 17.3 % | **1.9** |
+| 15–25 min | 4 | 18.5 % | 3.5 |
+| **25–43 min** | 4 | **47.5 %** | **16.0** |
+
+Per video: OceanGate 36 min at **58.8 %**; OneCoin 20 min at **64.8 %**; D.B. Cooper 29 min at
+36.1 % — against **Terry 11 min at 4.5 %** and **Atwater 11 min at 2.0 %**. Terry converts at
+3.11 % and is abandoned in half a minute. **Optimising CTR alone would have selected the topics
+that teach YouTube the channel is not worth showing.** n is small (4 long episodes) and one row
+has two views; treat the size of the gap as provisional and the direction as established.
+
+Two more numbers that bear on the slate: long-form converts **7.03 subscribers per 1,000 views**
+against Shorts' **1.42**, and the external feeder is real but tiny — **246 views in a week, 203
+of them from other channels, 132 from a single video**.
+
+### The profile every measurement now agrees on
+
+> **A subject an American over 40 can already name · a court at the end of it · 28–35 minutes ·
+> the event's name in the title · no death count in the title.**
+
+### The six
+
+| EP | slug | subject | demand: median / ch ≥100k | the court at the centre | shelf, measured today |
+|---|---|---|---|---|---|
+| **77** | `fukushima` | **Fukushima Daiichi, 2011** | **958,264** / 10 | Three executives were **acquitted of criminal negligence**, then in 2022 a civil court ordered them to pay **¥13 trillion** — the largest such order in Japanese history. Both are true | `ocean waves coast storm` 145 · `empty town abandoned houses` 13 · `nuclear power plant` 3 · `control room` 2 |
+| **78** | `alaska261` | **Alaska Airlines 261, 2000** | **546,237** / 8 | No prosecution. **The FAA had approved lengthening the lubrication interval**, and the jackscrew wore through. Civil suits settled quietly | `airport terminal window night` 12 · `mountains coast aerial` 3 · `aircraft in flight clouds` 1 — plates needed |
+| **79** | `concordia` | **Costa Concordia, 2012** | **433,734** / 11 | The captain was **convicted and sentenced to sixteen years**, and left the ship while passengers were still aboard | `cruise ship at sea` 15 · `ocean waves coast storm` 145 · `port harbour night` 5 · `coastal town italy sea` 3 |
+| **80** | `keybridge` | **Baltimore Key Bridge, 2024** | **307,441** / 5 | The limitation-of-liability action and the United States' claim. **Live**, so the ending can move | `bridge over water ships` 10 · `cargo ship port cranes` 9 |
+| **81** | `station` | **The Station nightclub, Rhode Island, 2003** | **124,495** / 7 | The owners and the tour manager were **criminally convicted**; the settlement reached dozens of defendants | `concert stage crowd lights` 13 · `emergency lights night street` 10 · `bar interior people night` 8 — **best shelf of the six** |
+| **82** | `valdez` | **Exxon Valdez, 1989** | **84,103** / 6 | A jury set punitive damages and **the Supreme Court cut them nineteen years later** — the channel's home ground | `rocky coastline birds` 23 · `fishing boat crew nets` 7; tanker and slick imagery absent — plates needed |
+
+**Title drafts.** Event name present, authority acting, no death count:
+
+| EP | draft |
+|---|---|
+| 77 | The Study Said the Wave Could Reach Fifteen Metres. Fukushima Was Built for Five. |
+| 78 | The FAA Approved a Longer Grease Interval. Alaska 261 Flew on the Worn Jackscrew. |
+| 79 | The Captain of the Costa Concordia Was Ashore Before His Passengers Were. |
+| 80 | The Ship Lost Power Four Times Before It Left Baltimore. Nobody Ashore Was Told. |
+| 81 | The Foam on the Walls Was Not Fire Retardant. The Station Sold Tickets Anyway. |
+| 82 | The Spill Plan Promised Barges in Five Hours. Exxon Valdez Waited Fourteen. |
+
+### The ordinary person each film opens on (editorial direction v002, §1)
+
+v002 requires *person → abnormal event → why? → system*, never the reverse. A disaster film
+fails that test unless someone is at the front of it.
+
+| EP | the person the film opens on |
+|---|---|
+| 77 | a Futaba resident who left for three days and has not been allowed home |
+| 78 | a family flying back from a holiday, and the mechanic who signed the interval |
+| 79 | a passenger on a dinner sitting; and the coastguard officer ordering the captain back aboard |
+| 80 | one of the six men filling potholes on the deck at half past one in the morning |
+| 81 | a man who bought a ticket to see a band he had followed since school |
+| 82 | a Cordova fisherman whose herring never came back, who waited nineteen years for a payment that shrank by ninety per cent |
+
+### What this slate gives up, said plainly
+
+1. **Two of the six are not American** (Fukushima, Costa Concordia). They are chosen because
+   American appetite for both is measured — FRONTLINE's Fukushima film has 7.5 M and Kyle
+   Hill's 6.7 M, both American channels — but the owner asked for US men over 40 and this is a
+   deviation from that instruction, not an oversight.
+2. **Six disasters in a row, following six disasters (EP71–76).** Twelve consecutive. Lane
+   spacing was traded away for the fame effect.
+3. **EP80 has no final ending yet.** Same exposure as EP76 Morandi, whose ending expires when
+   the court files its reasons.
+4. **EP82's register is the weakest**: no tanker and no slick footage on the shelf. Budget
+   commissioned plates at the design stage, not at assembly.
+5. **F2 rests on four long episodes.** The direction is supported by three independent angles
+   (AVP, minutes watched, and the CTR-without-retention pattern on Terry and Atwater), but the
+   magnitude is not yet reliable.
+6. **Reserves, in order, if any of the six is rejected:** Lockerbie/Pan Am 103 (the trial *is*
+   the story, 190 Americans, but demand only 72,267), Colgan Air 3407 (232,564), Triangle
+   Shirtwaist 1911 (114,926 and **nobody has made the long film**), MGM Grand 1980 (98,385).
+   **Piper Alpha stays rejected on the shelf alone** — five phrasings for an offshore rig
+   returned zero clips, and Deepwater Horizon fails the same test.
+
+---
+
+## 2. THE SIX — **SUPERSEDED by §2b, kept as the record of the second pass**
 
 All six are American, named, court-centred, demand-measured and shelf-checked. Ordered by
 measured demand, which is the number that decides whether a CTR exists to optimise.
