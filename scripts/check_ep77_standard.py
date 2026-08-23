@@ -76,10 +76,21 @@ def planning_script(slug: str, num: int) -> Path | None:
 # inputs stage
 # --------------------------------------------------------------------------- #
 def check_template(text: str) -> list[str]:
+    out = []
     heads = set(RE_HEADING.findall(text))
     missing = [h for h in REQUIRED_HEADINGS if h not in heads]
-    return ([f"script is missing the template headings: {missing}. Start from "
-             f"episodes/_planning/_EP_SCRIPT_TEMPLATE.v001.md"] if missing else [])
+    if missing:
+        out.append(f"script is missing the template headings: {missing}. Start from "
+                   f"episodes/_planning/_EP_SCRIPT_TEMPLATE.v001.md")
+    # The template ships with headings AND spaced example questions, so an UNFILLED copy of it
+    # would sail through both structural checks -- the adversarial pass of 2026-08-23 found
+    # that a bare `cp` of the template counts as a compliant script. Unresolved {PLACEHOLDER}
+    # braces mean nobody wrote the episode yet.
+    ph = sorted(set(re.findall(r"\{[A-Za-z .぀-ヿ一-鿿][^{}\n]{0,40}\}", text)))
+    if ph:
+        out.append(f"{len(ph)} unfilled template placeholder(s) remain, e.g. {ph[:3]} -- "
+                   f"the template is a form, not a script")
+    return out
 
 
 def check_retention(script: Path) -> list[str]:

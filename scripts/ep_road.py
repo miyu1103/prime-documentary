@@ -233,7 +233,8 @@ def main() -> int:
         print(f"    command: {frontier.next_cmd}")
     if a.run and frontier.mechanical and frontier.next_cmd:
         print(f"\n  --run: executing the mechanical step now")
-        rc, out = sh(frontier.next_cmd.split())
+        import shlex
+        rc, out = sh(shlex.split(frontier.next_cmd))   # .split() broke on any quoted argument
         print("\n".join("    " + l for l in out.strip().splitlines()[-6:]))
         return rc
     return 1

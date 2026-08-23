@@ -159,6 +159,14 @@ def ae_problems(spec: dict, epdir: Path) -> list[str]:
         return []
 
     out: list[str] = []
+    # A malformed ae_beats block must produce a PROBLEM LINE, not a traceback. Found live on
+    # 2026-08-23: a spec carrying ae_beats without min_count crashed this whole gate with
+    # KeyError -- so [0/7], and everything behind it, died instead of saying what to write.
+    # An undeclared value is an error; a crashed gate is neither.
+    missing = [k for k in ("min_count", "per_act_min") if k not in ae]
+    if missing:
+        return out + [f"ae_beats is declared but incomplete: missing {missing}. Declare them "
+                      f"(see decisions/0011); an undeclared value is an error, never a default."]
     beats = ae.get("beats") or []
     if len(beats) < ae["min_count"]:
         out.append(f"ae_beats: {len(beats)} beat(s) declared, min_count says {ae['min_count']}")

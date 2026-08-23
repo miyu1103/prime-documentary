@@ -142,3 +142,23 @@ def test_still_hold_thresholds_live_in_exactly_one_place():
     assert "check_animation_mix.py" in src
     body = "\n".join(l for l in src.splitlines() if not l.lstrip().startswith(("#", '"', "'")))
     assert "LONG_HOLD" not in body, "the standard grew its own copy of the still-hold threshold"
+
+
+def test_an_unfilled_copy_of_the_template_is_refused(road):
+    """The adversarial pass found that a bare `cp` of the template -- which ships with headings
+    AND spaced example questions -- counted as a compliant script. A form is not a script."""
+    template = (REPO / "episodes" / "_planning" / "_EP_SCRIPT_TEMPLATE.v001.md").read_text(
+        encoding="utf-8")
+    road(template)
+    rc, msgs = e77.evaluate("probe", "inputs")
+    assert rc == 1
+    assert any("placeholder" in m for m in msgs)
+
+
+def test_the_choke_point_fired_on_a_real_episode_once():
+    """Round-1 evidence, pinned: the wiring was proven by building a real EP099 in the real
+    repo -- spec satisfied, no script -> [0/7] refused with the EP77 message; template copy ->
+    refused for placeholders; a proper script -> PASS. This test keeps the two source-order
+    assertions honest by ALSO requiring the subprocess call shape that run actually used."""
+    src = (REPO / "scripts" / "check_episode_inputs.py").read_text(encoding="utf-8")
+    assert '"--stage", "inputs"' in src
