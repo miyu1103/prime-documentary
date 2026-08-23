@@ -163,6 +163,14 @@ them, so they live here rather than in a dated file.
 
 ## Current narrative
 
+**[2026-08-23 — the rebuild](handover/2026-08-23-rebuild.md)** — **instruments fixed, experiments
+machine-guarded, and the EP77 road opened: from EP77 the old way cannot reach the render.**
+"Done" is decided from bytes (`episode_is_done.py`); gates prove they still bite before every
+render (8 probes); `preflight_receipt` retired on the record (decisions/0012 — it was red on
+27/34 ships because it measures a pipeline abandoned at ~EP67); the script template makes the
+two most-failed gates green by construction; `ep_road.py` is the one seat from theme to
+scheduled upload. EP70-76 untouched. The offense backlog is §Open in the narrative.
+
 **[2026-08-23 — cleanup](handover/2026-08-23-cleanup.md)** — **the two files every new session
 is told to read first disagreed with each other.** `PD_CANON` stated the shipping rule
 abolished on 2026-08-12, under the heading "rule 19 enforces this", while the code had already
