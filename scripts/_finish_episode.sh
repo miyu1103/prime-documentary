@@ -26,6 +26,21 @@ die(){ say "STOPPED -- $*"; exit 1; }
 
 say "START $(date)"
 
+# RESTORE WHAT [5/7] SET ASIDE, BEFORE MEASURING ANYTHING (2026-08-23).
+# [5/7] builds the slim render dir and moves every unreferenced asset into <pool>_unused/.
+# That is correct for the render and wrong for the NEXT run: re-entering this chain then sees
+# a pool that has already been trimmed to one film's cuts and refuses on "inputs missing".
+# EP71 oroville hit it -- stills 118 -> 13, factory 63 -> 45 -- and it costs a full restart
+# every time. Nothing is deleted by that step, so putting it back is safe and idempotent.
+for _p in img motion factory; do
+  _u="remotion/public/${SLUG}/${_p}_unused"
+  if [ -d "$_u" ] && [ -n "$(ls -A "$_u" 2>/dev/null)" ]; then
+    _n=$(ls -A "$_u" | wc -l)
+    mv -n "$_u"/* "remotion/public/${SLUG}/${_p}/" 2>/dev/null
+    say "[0/7] restored ${_n} asset(s) from ${_p}_unused (set aside by a previous [5/7])"
+  fi
+done
+
 say "[0/7] input pre-flight (fails in seconds, not hours)"
 INPUT_ARGS=(--slug "$SLUG")
 if [ "$ALLOW_DIVERSITY" = "--allow-video-diversity-deviation" ]; then
@@ -123,6 +138,15 @@ if [ -f "$SRT" ]; then
   py -3.11 scripts/check_caption_breaks.py "$SRT" >> "$LOG" 2>&1 || die "caption breaks still bad"
   grep -E "^(PASS|FAIL) caption_breaks|cues .* orphans" "$LOG" | tail -2 | sed "s/^/[finish:$SLUG]   /"
 fi
+
+# THE EP77 ROAD, plan stage (owner directive 2026-08-23). The film json exists, the render
+# has not started: this is the last moment a 紙芝居 plan (still holds over the cap -- red on
+# 8/34 shipped episodes, always discovered three hours too late) can be fixed for the cost of
+# an i2v pass instead of a re-render. Episodes below 077 pass instantly inside the tool.
+say "[4d] EP77 standard, plan stage (still-hold caps before any GPU is spent)"
+py -3.11 scripts/check_ep77_standard.py --slug "$SLUG" --stage plan >> "$LOG" 2>&1 \
+  || die "the film plan fails the EP77 standard -- fix the plan; the render has not started, so this costs minutes"
+grep "\[ep77-standard\]" "$LOG" | tail -1 | sed "s/^/[finish:$SLUG]   /"
 
 say "[4c] retire staged clips the film does not reference (footage_utilization)"
 py -3.11 scripts/retire_unused_pool_clips.py --slug "$SLUG" >> "$LOG" 2>&1 || true

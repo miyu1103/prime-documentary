@@ -132,9 +132,10 @@ def _repair_final_delivery(slug: str, epdir: Path, dry: bool) -> Repair:
 
 
 RULES: list[Rule] = [
-    Rule("preflight_receipt", "wiring",
-         "the receipt is missing because preflight_render_gate.py is called from nowhere",
-         _repair_preflight_receipt),
+    # preflight_receipt had a wiring rule here for about an hour. Running it on hyatt proved
+    # the gate measures an abandoned pipeline (verdict=BLOCK on a finished, scheduled film),
+    # so the check was retired instead -- decisions/0012. The repair function stays below,
+    # unreferenced, as part of the reinstatement path.
     Rule("final_delivery", "wiring",
          "HANDOVER tells a person to run write_final_delivery.py by hand",
          _repair_final_delivery),

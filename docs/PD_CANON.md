@@ -126,6 +126,18 @@ bash scripts/daily_shorts_push.sh      # ショート投入（索引削除→実
 
 ## 6. 長尺の作り方
 
+### EP77以降の入口は1つ（2026-08-23 オーナー指示・機械が強制）
+
+```bash
+py -3.11 scripts/ep_road.py --slug <slug>     # いまどの工程で、次に何をするかを実測で出す
+```
+
+**旧ルートは配線で塞いである。** EP77以降は `check_ep77_standard.py` を通らないと
+[0/7]（台本テンプレ・7分ごとの問い・素材の他話被り）と [4d]（紙芝居の上限）で止まる。
+台本は `episodes/_planning/_EP_SCRIPT_TEMPLATE.v001.md` から書く（型を満たせばゲートは構造的に緑）。
+`preflight_receipt` は**退役**（`decisions/0012`・直近10話で要求成果物が0件だった）。
+EP76以前は何も変わらない。
+
 ### 工程
 
 ```
@@ -271,6 +283,10 @@ EP65 は実写7本で出荷し、AE は一度も使わなかった。文書に�
     `ffprobe -v error -show_entries format=duration -of csv=p=0 <master.mp3>` と
     `06_audio/narration_index.v001.json` の語数で、自分で除算してから使う。
 26. **英語台本に日本語を混ぜない**（ナレ欠落バグ）
+26b. **EP62-66 の `03_script/script.en.v001.md` は古い。** ファイル自身が「編集するな・
+    企画台本から再生成しろ」と言っているのに、誰も再生成しなかった。greene は台本5問に対し
+    実際に喋ったのは9問（memphis 0対7・marmet 1対7）。**読むと別の映画の台本が出てくる。**
+    正は `06_audio/narration_index.v001.json`。EP67以降は一致している。
 27. **実行中のシェルスクリプトを絶対に編集しない。** bash はスクリプトを
     **バイトオフセットで逐次読む**ので、走っている最中に本体を書き換えるとオフセットがずれ、
     残りがゴミとして解析される。2026-08-10、`_finish_episode.sh` を別作業が編集した結果、

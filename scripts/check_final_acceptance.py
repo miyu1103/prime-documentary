@@ -1411,10 +1411,23 @@ def _iso_to_epoch(s) -> float | None:
 
 
 def check_preflight_receipt(epdir: Path) -> dict:
-    """HARD (EP32 §M5): a GREEN pre-render preflight receipt must exist -- acceptance must REFUSE a
-    render that was never preflighted. Reads the highest-rev 04_scenes/preflight_receipt.v*.json and
-    requires overall pass (render_allowed == true AND verdict == 'GREEN'), i.e. the motion budget /
-    asset existence / coverage floors were validated BEFORE the heavy render."""
+    """RETIRED 2026-08-23 (decisions/0012). It measured a pipeline that no longer exists.
+
+    27 of 34 finished episodes were red here at ship time, and the red was never information
+    about the films: preflight_render_gate.py is called from nowhere, and the four planning
+    artifacts it validates exist on 0, 0, 1 and 2 of the last ten episodes. Run on hyatt -- a
+    finished, receipted, scheduled film -- it writes verdict=BLOCK. The pre-render protection
+    it stood for is carried by check_spec_satisfied ([4/7]), probe_before_render (its own
+    receipt), and check_ep77_standard --stage plan ([4d]); the revoke condition that brings
+    this back is written in the ADR, with a review date the decisions gate enforces."""
+    return {"check": "preflight_receipt", "ok": True, "hard": False, "skipped": True,
+            "reason": "retired 2026-08-23 (decisions/0012-RETIRE-PREFLIGHT-RECEIPT.md): "
+                      "measures artifacts the pipeline stopped producing at ~EP67; "
+                      "replaced by spec_satisfied + probe receipt + ep77 plan stage"}
+
+
+def _check_preflight_receipt_retired(epdir: Path) -> dict:
+    """The original body, kept callable for the ADR's revoke path -- reinstating is a rename."""
     recs = sorted((epdir / "04_scenes").glob("preflight_receipt.v*.json"))
     if not recs:
         return {"check": "preflight_receipt", "ok": False, "hard": True,

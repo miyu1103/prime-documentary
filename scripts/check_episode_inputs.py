@@ -98,6 +98,23 @@ def main() -> int:
 
     problems: list[str] = []
     notes: list[str] = []
+
+    # THE EP77 ROAD (owner directive 2026-08-23: 「77話以降は今までのやり方で進まないようにして
+    # ほしい」). For episode 077+ the script/pool standard is checked HERE, at the choke point
+    # both the queue and the finisher refuse on -- so the old route is closed by wiring, not by
+    # policy prose. Episodes below 077 return PASS instantly inside the tool; EP70-76 finish
+    # exactly as they are. Details and the measured numbers: scripts/check_ep77_standard.py.
+    r77 = subprocess.run(
+        ["py", "-3.11", str(ROOT / "scripts/check_ep77_standard.py"),
+         "--slug", slug, "--stage", "inputs"],
+        capture_output=True, text=True, encoding="utf-8", errors="replace", cwd=ROOT)
+    if r77.returncode == 1:
+        for ln in r77.stdout.splitlines():
+            if ln.strip().startswith("- "):
+                problems.append("EP77 standard: " + ln.strip()[2:])
+    elif r77.returncode not in (0, 1):
+        problems.append(f"EP77 standard could not be evaluated (exit {r77.returncode}) -- "
+                        f"fail closed rather than silently skipping")
     num = ep.name.split("-")[2].lstrip("0")
 
     # SORTED: an unsorted glob returned v001 while the design owner had already delivered

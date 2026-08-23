@@ -221,6 +221,9 @@ VACUOUS_BASELINE = {
     "check_leveled_animation",        # no composition matching slug
     "check_structure",                # no narration sections
     "check_thumbnail_visibility",     # no selected thumbnail to measure
+    # Joined the list 2026-08-23 by RETIREMENT, not by accident: decisions/0012. It now skips
+    # everywhere, including on an empty episode. The ADR carries the revoke condition.
+    "check_preflight_receipt",
 }
 
 
@@ -273,7 +276,40 @@ def _probe_no_new_vacuous_passes() -> Result:
     return Result(bit=True, detail=f"{len(now)} known, none added")
 
 
+def _probe_ep77_road_is_closed() -> Result:
+    """A questionless 15-minute EP77 script must be refused at the inputs stage.
+
+    The owner's directive is 「77話以降は今までのやり方で進まないようにしてほしい」, and the
+    old way is precisely this input: long, no questions, red on retention_cadence 18 of 34
+    times -- always discovered three GPU-hours too late. If this probe goes ASLEEP, the road
+    has silently reopened.
+    """
+    import check_ep77_standard as e77
+    tmp = Path(tempfile.mkdtemp())
+    old_root = e77.ROOT
+    try:
+        e77.ROOT = tmp
+        (tmp / "episodes" / "PD-2026-077-probe").mkdir(parents=True)
+        pl = tmp / "episodes" / "_planning"
+        pl.mkdir()
+        # 1600 words ~ 10 projected minutes. 900 was not enough: at 160 wpm that is 5.6
+        # minutes, UNDER the 7-minute ceiling, so the gate correctly passed it and this probe
+        # reported the road open when the input was simply not bad enough. The docstring at the
+        # top of this file warns about exactly that; its author tripped on it anyway.
+        (pl / "EP77_probe_script.en.v001.md").write_text(
+            "# EP77\n\n## HOOK\nplain.\n\n## ACT_1 — X\n" + "word " * 1600 +
+            "\n\n## ENDING\nplain.\n", encoding="utf-8")
+        rc, msgs = e77.evaluate("probe", "inputs")
+        return Result(bit=rc == 1, detail="; ".join(msgs)[:150] or f"rc={rc}")
+    finally:
+        e77.ROOT = old_root
+        shutil.rmtree(tmp, ignore_errors=True)
+
+
 PROBES = [
+    Probe("ep77_road_is_closed",
+          "an EP77 built the old way (long, questionless script) reaching the render",
+          _probe_ep77_road_is_closed),
     Probe("no_new_vacuous_passes",
           "a gate passing because its input moved, exactly as today’s gate stopped applying",
           _probe_no_new_vacuous_passes),
