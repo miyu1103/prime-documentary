@@ -179,7 +179,11 @@ Then it happened a second time in port, for a different reason — not enough fu
 
 Nobody died in either of those. They are the kind of thing that gets written in a log and talked about over a meal.
 
-But something happened during the recovery from the second one, and it is the hinge of the entire night.
+So why would a night at a pier where nothing happened turn out to matter more than anything else in this story?
+
+Because of what was done to put the ship right afterwards.
+
+Something happened during the recovery from the second in-port blackout, and it is the hinge of the entire night.
 
 Coming back up, the crew changed the ship's electrical configuration. They stopped using breakers HR2 and LR2 with transformer TR2 — which had been in use for several months — and switched to HR1, LR1 and TR1. <!-- KB-103 -->
 
@@ -224,6 +228,28 @@ So the chain the indictment draws is: the lights go out, the generators need fue
 And then comes the sentence that will be fought over in court for years. The indictment alleges that if the Dali had used the proper fuel supply pumps, the vessel would have regained power in time to navigate safely under the Key Bridge. <!-- KB-408 -->
 
 Alleges. Not found. Not proven. A grand jury heard a case and returned a charge, and that is a beginning, not an ending. <!-- KB-501 -->
+
+And then, five weeks later, something happened that is not an allegation at all.
+
+On the eighteenth of June, 2026, the chief engineer of the Dali entered into a deferred prosecution agreement with the United States. His name is Karthikeyan Deenadayalan. He was aboard that night. <!-- KB-701, KB-702, KB-703 -->
+
+In that agreement he admitted to failing to report a hazardous condition, in violation of the Ports and Waterways Safety Act. <!-- KB-704 -->
+
+And the things he acknowledged are worth hearing slowly.
+
+He had also been chief engineer on two of the Dali's sister ships — the Maersk Saltoro and the Cezanne. And he knew that all three of them used an unsafe fuel supply pump. <!-- KB-705 -->
+
+Not one ship. Three. <!-- KB-705 -->
+
+He acknowledged that the pump lacked redundancy, and that this compromised the vessels' safe navigation and their ability to recover from a loss of power. <!-- KB-706 -->
+
+And he knew that a ship unable to recover from a loss of power could adversely affect the safety of the vessel itself — and of any bridge, structure or shore area. <!-- KB-707 -->
+
+That sentence was written in a legal agreement in 2026. It describes, in the abstract, exactly what happened in the Patapsco in 2024.
+
+He also said he had spoken and corresponded with people at Synergy about using that pump, including the co-defendant, Nair. <!-- KB-708 -->
+
+And he said something else, and here the guardrail goes back up, because this is one man's account of another man's conduct and that other man has not been tried. The chief engineer said that Nair directed him to send a convincing email to the ship's charterer, so that the charterer would not ask more questions about fuel consumption and find out that the flushing pump was being used. <!-- KB-709, KB-501 -->
 
 There is one more count, and it is the one that tells you what kind of story this is. The obstruction charge relates, among other things, to what Nair is alleged to have told the investigators: that he was unaware the Dali was using the flushing pump to fuel the generators. <!-- KB-409 -->
 

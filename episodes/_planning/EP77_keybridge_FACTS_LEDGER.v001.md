@@ -127,6 +127,57 @@ from a primary source in this ledger.** Either source it or say nothing.
 |---|---|---|
 | **KB-501** | **"An indictment is merely an accusation. All defendants are presumed innocent until proven guilty beyond a reasonable doubt in a court of law."** | S4 |
 
+## E2. NOT alleged — **admitted**. The chief engineer's deferred prosecution agreement
+
+**Added 2026-08-23 after a second research pass. This is the single most important block in the
+ledger, and it is a different legal animal from section E.** These are not charges. They are
+things a participant **acknowledged** in a written agreement with the United States.
+
+| id | fact | source |
+|---|---|---|
+| KB-701 | **United States v. Karthikeyan Deenadayalan**, No. **1:26-CR-00197** (District of Maryland) | S8 |
+| KB-702 | On **18 June 2026** Deenadayalan entered into a **Deferred Prosecution Agreement** | S8 |
+| KB-703 | He was the **chief engineer of the M/V Dali** and was aboard on 26 March 2024. An Indian national | S8 |
+| KB-704 | He **admitted failing to report a hazardous condition**, in violation of the **Ports and Waterways Safety Act, 46 U.S.C. § 70036(b)** | S8 |
+| KB-705 | **The flushing pump was not used on one ship.** He had also served as chief engineer on the Dali's sister vessels **M/V Maersk Saltoro** and **M/V Cezanne**, and **knew that all three used an unsafe fuel supply pump** | S8 |
+| KB-706 | He **acknowledged that the flushing pump lacked redundancy**, which compromised the vessels' safe navigation and their **ability to recover from a loss of power** | S8 |
+| KB-707 | He **knew that an inability to recover from a loss of power could adversely affect the safety of the vessel itself, and of any bridge, structure or shore area** | S8 |
+| KB-708 | He **spoke and corresponded with Synergy personnel, including co-defendant Nair, about using the flushing pump** | S8 |
+| KB-709 | **`[HIS ACCOUNT, NOT A FINDING]`** Deenadayalan **said that Nair directed him to send a "convincing" email to the Dali's charterer** so the charterer would not ask further questions about fuel consumption and discover the use of the flushing pump | S8 |
+
+**How to narrate the difference, because the whole R3 posture turns on it.**
+
+- KB-704 to KB-708 are **admissions by the man who made them**. They may be stated as what he
+  admitted — *the chief engineer admitted…*, *he acknowledged…* — never as a finding against
+  anyone else.
+- **KB-709 is his account of another man's conduct.** Nair is a charged defendant who has not
+  been tried. It must be attributed twice over: *the chief engineer said that Nair directed
+  him…*, and the presumption of innocence must be restated in the same passage (KB-501).
+
+## E3. Case posture as of 2026-08-23 — **check this again before publication**
+
+| id | fact | source |
+|---|---|---|
+| KB-801 | The indictment was **returned by a grand jury on 8 April 2026** and **unsealed 12 May 2026**. It runs to **18 counts** | S9 `[SECONDARY]` |
+| KB-802 | The US Attorney for Maryland is **Kelly O. Hayes**; prosecutors are AUSAs Phelps, Mostoufi and Phillips with ECS Trial Attorney Leigh Rendé | S4, S8 |
+| KB-803 | **No arraignment, plea or trial date for the three indicted defendants has been established by any primary source read for this ledger.** Reporting indicates Nair is believed to be **in India** | S9 `[SECONDARY]` |
+| KB-804 | **Synergy Marine Group issued a statement on 13 May 2026 calling the charges baseless and disputing the characterisation of the flushing pump.** **The defence position must appear in the film** | S9 `[SECONDARY — get Synergy's own words from Synergy before broadcasting them]` |
+| KB-805 | The NTSB's full report is **MIR-25-40**, and the bridge-vulnerability companion is **MIR-25-10**, both dated **18 November 2025**. This **answers KB-207**: the complete report exists | S10 |
+| KB-806 | The Port of Baltimore was closed for **77 days** | S9 `[SECONDARY — confirm against a federal source]` |
+
+## Sources added 2026-08-23
+
+| id | document | date | url |
+|---|---|---|---|
+| S8 | DOJ ENRD **Environmental Crimes Bulletin — June 2026** (published 24 July 2026), entry *United States v. Karthikeyan Deenadayalan* | 2026-06/07 | https://www.justice.gov/enrd/blog/environmental-crimes-bulletin-june-2026 |
+| S9 | Press reporting (Daily Record, The Banner, MinnLawyer, Environment+Energy Leader) | 2026-05/06 | **secondary — every row citing S9 is marked and must be re-sourced** |
+| S10 | NTSB investigation page DCA24MM031, listing MIR-25-40 and MIR-25-10 | 2025-11-18 | https://www.ntsb.gov/investigations/Pages/DCA24MM031.aspx |
+
+**Fetching trap, recorded for the next session.** `justice.gov/opa/*` can be read with `curl`
+and a browser user-agent. **`justice.gov/usao-*` cannot** — it returns an Akamai `bm-verify`
+interstitial instead of the page, and the DPA press release lives there. The ENRD monthly
+bulletin carried the same facts and was readable.
+
 ## F. Contradictions between official sources — do not silently pick one
 
 | id | the conflict | resolution |
