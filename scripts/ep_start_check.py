@@ -37,6 +37,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
+# Windows consoles here are cp932. Without this the tool dies on its own em dash
+# before printing a single target, which is the opposite of its whole purpose.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+except Exception:
+    pass
+
 
 def sh(cmd: list[str]) -> tuple[int, str]:
     p = subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, errors="ignore")
