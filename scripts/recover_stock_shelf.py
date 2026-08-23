@@ -64,6 +64,7 @@ ROOT = Path(__file__).resolve().parents[1]
 BROWSE = Path(r"D:\pd-media-browse")
 sys.path.insert(0, str(ROOT / "scripts"))
 from ingest_archive_sources import TIERS  # noqa: E402 -- the shelf owns its own tier table
+from rename_shelf_for_search import slugify as slugify_title  # noqa: E402 -- one slug rule
 
 # Every root the shelf spans. Was a single hard-coded D:\pd-archive, which is how
 # already_have() below went blind: measured 2026-08-22 it reported 1,399 clips already
@@ -638,7 +639,18 @@ def main() -> int:
                 with clock:
                     counts["fail"] += 1
                 return
-            dest = shelf / theme / f"{src}__{vid}__{slug}.{kc['ext']}"
+            # Name it from the TITLE when the browse slug carries no words. Pixabay's browse
+            # tree names every clip `pixabay__<id>__id`, so the slug is the literal string
+            # "id" -- and stage_footage_by_title.py matches the filename and nothing else.
+            # 5,638 files arrived that way before anyone noticed, unfindable by any search a
+            # person would type while their titles sat one field away in the ledger. They
+            # were renamed on 2026-08-23; this stops the next batch needing it.
+            name_slug = slug
+            if len([w for w in re.findall(r"[a-z0-9]+", slug.lower()) if len(w) > 2]) < 2:
+                from_title = slugify_title(kc["title"](meta, slug))
+                if len(from_title.split("-")) >= 2:
+                    name_slug = from_title
+            dest = shelf / theme / f"{src}__{vid}__{name_slug}.{kc['ext']}"
             dest.parent.mkdir(parents=True, exist_ok=True)
             tmp = dest.with_suffix(".part")
             # (connect, read) rather than one 180 s number, plus a wall-clock budget.
