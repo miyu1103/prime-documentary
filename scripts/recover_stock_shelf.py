@@ -345,6 +345,8 @@ class Pace:
         self.gap = self.base_gap
         self.next_at = 0.0
         self.ok_since_429 = 0
+        self.last_429 = 0.0
+        self.known_bad_gap = 0.0   # the fastest pace that has actually been refused
         self.lock = threading.Lock()
 
     def wait(self) -> None:
@@ -365,6 +367,16 @@ class Pace:
         which converges from either direction without anyone having to know the number.
         """
         with self.lock:
+            now = time.time()
+            # One incident, one halving. Four workers hit the ceiling within the same second
+            # and each reported it, so a single refusal was being counted four times and the
+            # pace fell 1200 -> 600 -> 300 -> 150 -> 75 in a breath. Measured 2026-08-23: 27
+            # refusals produced that collapse repeatedly, and the lane spent the night
+            # oscillating between 60/hour and 1,200 instead of settling anywhere.
+            if now - self.last_429 < 30.0:
+                return 3600.0 / self.gap
+            self.last_429 = now
+            self.known_bad_gap = max(self.known_bad_gap, self.gap)
             self.gap = min(self.gap * 2, 60.0)
             self.ok_since_429 = 0
             return 3600.0 / self.gap
@@ -379,9 +391,21 @@ class Pace:
         """
         with self.lock:
             self.ok_since_429 += 1
-            if self.ok_since_429 < 50 or self.gap <= self.base_gap:
+            if self.ok_since_429 < 25 or self.gap <= self.base_gap:
                 return None
-            self.gap = max(self.base_gap, self.gap / 2)
+            # Climb back 10% at a time, and never back onto a pace that has already been
+            # refused. Doubling walked straight into the ceiling again every time: the log
+            # reads 150, 300, 600, 1200, refused, 600, 300, 150, 75. Additive increase with a
+            # remembered ceiling settles just under whatever the real limit turns out to be,
+            # which is the only way to find a number the provider will not tell us.
+            floor = self.base_gap
+            if self.known_bad_gap:
+                floor = max(floor, self.known_bad_gap * 1.15)
+            nxt = max(floor, self.gap * 0.9)
+            if nxt >= self.gap:
+                self.ok_since_429 = 0
+                return None
+            self.gap = nxt
             self.ok_since_429 = 0
             return 3600.0 / self.gap
 
