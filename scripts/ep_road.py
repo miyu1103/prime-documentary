@@ -206,7 +206,9 @@ def stages(c) -> list[Stage]:
         Stage("schedule", "予約投稿 (12:00 JST 長尺枠)", p_scheduled,
               next_cmd=f"py -3.11 scripts/upload_schedule_case_v001.py --ep {slug} --explain-policy",
               human="scheduling touches the channel: dry-run first, then the real call -- "
-                    "the scheduler's own guards (sha match, policy, future publishAt) decide"),
+                    "the scheduler's own guards (sha match, policy, future publishAt) decide. "
+                    "ONE THREAD owns the calendar (PD_CANON §3: two sessions once rescheduled "
+                    "simultaneously and the ledger drifted by 30 entries) -- confirm you are it"),
     ]
     return [s for s in out if s is not None]
 
