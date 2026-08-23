@@ -50,7 +50,7 @@
 
 ---
 
-# EP77 — 福島第一（2011） · slug `fukushima`
+# EP78 — 福島第一（2011） · slug `fukushima`
 
 **要検証**: 津波試算の高さと年次／防潮堤の設計高／刑事無罪の判決日と理由／2022年の株主代表訴訟の命令額と被告
 
@@ -74,7 +74,7 @@
 
 ---
 
-# EP78 — アラスカ航空261便（2000） · slug `alaska261`
+# EP79 — アラスカ航空261便（2000） · slug `alaska261`
 
 **要検証**: 給油間隔の延長がいつ誰の認可で行われたか／ジャッキスクリューとナットの摩耗の実測値／民事和解の内容
 
@@ -98,7 +98,7 @@
 
 ---
 
-# EP79 — コスタ・コンコルディア（2012） · slug `concordia`
+# EP80 — コスタ・コンコルディア（2012） · slug `concordia`
 
 **要検証**: 船長の量刑と確定年／沿岸警備隊の通信の日時と内容／乗客が船内に残っていた時刻との前後関係
 
@@ -122,18 +122,32 @@
 
 ---
 
-# EP80 — ボルチモア橋崩落（2024） · slug `keybridge`
+# EP77 — ボルチモア橋崩落（2024） · slug `keybridge`
 
-**要検証**: 出港前の停電の回数と時刻／橋上で作業していた人数と作業内容／責任制限訴訟の当事者と現在地
-**⚠ 係争中です。** 当事者の過失を断定する文言をタイトル・サムネに載せないこと。**「知らされていなかった」までが安全域**です。
+> **⚠ この話だけ、2026-08-23 に一次資料で裏取り済みです。** 事実は
+> `episodes/_planning/EP77_keybridge_FACTS_LEDGER.v001.md` にあり、台本も書き上がっています。
+> 下の案はもう仮説ではなく、**行IDのついた記録**に載っています。
 
-**本編タイトル**
-- **A**: `The Ship Lost Power Four Times Before It Left Baltimore. Nobody Ashore Was Told.`
-- **B**: `Six Men Were Filling Potholes on the Bridge at Half Past One.`
+**⛔ 削除した旧案（絶対に使わないこと）**
+`The Ship Lost Power Four Times Before It Left Baltimore.` — **これは事実と違います。**
+NTSB暫定報告では、停電は**停泊中に2回（3月25日）**と**航行中に2回（3月26日）**。
+「出港前に4回」は誤りで、台帳の `forbidden_claims` 7番で永久に禁止しました。
+
+**⚠ 係争中です。** 2026年5月12日に**刑事起訴**が開封されました（被告3者）。**有罪を断定する語は一切使えません。**
+司法省自身の言葉：「起訴は単なる告発にすぎない。全被告は有罪が証明されるまで無罪と推定される」。
+
+**本編タイトル**（すべて台帳の行に紐づく）
+- **A（本命・台本の題）**: `The Ship Got Its Lights Back Thirty-One Seconds Before the Bridge. Not Its Propeller.` <!-- KB-112 -->
+- **B（広め）**: `Sixty-Seven Seconds After the Order to Stop the Traffic, the Bridge Was in the River.` <!-- KB-113, KB-002 -->
+- **C（原因を前に出す）**: `A Band of Label on One Wire. Six Men on the Deck at Half Past One.` <!-- KB-203, KB-004 -->
 
 **サムネ文字**
-- 本命: `SIX MEN` / **`WERE UP THERE`**
-- 代案: `FOUR` / **`BLACKOUTS`**
+- 本命: `SIX MEN` / **`WERE UP THERE`** <!-- KB-004 -->
+- 代案A: `LIGHTS BACK` / **`NOT THE PROPELLER`** <!-- KB-112 -->
+- 代案B: `ONE WIRE` / **`ONE LABEL`** <!-- KB-203 -->
+
+**⛔ サムネに載せてはいけない語**: `GUILTY` / `THEY LIED` / `COVER-UP` / 被告の社名・人名。
+また**死者数を数字で置かない**（`SIX MEN` は人数ではなく主語として使う。数として強調しない）。
 
 **プレート**
 - `THUMB-01.png`
@@ -143,7 +157,13 @@
 - `THUMB-03.png`
     A battered steel thermos flask and a folded work jacket left on a bridge parapet at night, black water far below, harbour lights small and distant on the far shore, nobody present, vast empty dark negative space on one side for a title, ultra high resolution 8K, masterpiece quality, hyper-detailed, razor-sharp focus, dramatic cinematic key-art lighting, bold high-contrast composition, a single powerful focal subject, deep navy-and-black palette with distant warm harbour light, photorealistic, volumetric light, shallow depth of field, 16:9 thumbnail hero shot, scroll-stopping. Avoid: no on-screen text, no letters, no watermark, no logo, no identifiable real person, no ship, no collapse, no low-resolution.
 - `THUMB-04.png`
-    A steel truss bridge span photographed from water level at night, one pier lit from below and the rest of the structure in silhouette against a starless sky, still black water, no vessels of any kind, vast empty dark negative space on the left for a title, ultra high resolution 8K, masterpiece quality, hyper-detailed, razor-sharp focus, dramatic cinematic key-art lighting, bold high-contrast composition, a single powerful focal subject, deep black palette with a single cold blue-white uplight, photorealistic, volumetric light, 16:9 thumbnail hero shot, scroll-stopping. Avoid: no on-screen text, no letters, no watermark, no logo, no identifiable real person, no ship, no impact, no collapse, no low-resolution.
+    A steel truss bridge span photographed from water level at night, one pier lit from below and the rest of the structure in silhouette against a starless sky, still black water, no vessels of any kind, vast empty dark negative space on the left for a title, ultra high resolution 8K, masterpiece quality, hyper-detailed, razor-sharp focus, dramatic cinematic key-art lighting, bold high-contrast composition, a single powerful focal subject, deep black palette with a single cold blue-white uplight, photorealistic, volumetric light, 16:9 thumbnail hero shot, scroll-stopping. Avoid: on-screen text, letters, watermark, logo, identifiable real person, ship, impact, collapse, low-resolution.
+- `THUMB-05.png`  ← **本命候補。物そのものが矛盾を語る型（OneCoinがやったこと）**
+    Extreme macro of an industrial electrical terminal block, one thick insulated wire held just short of its spring-clamp gate because a band of plastic labelling wrapped around the wire is too thick to pass through, the gap between wire and clamp clearly visible, the label band completely blank with no printing on it, hard raking light, everything else falling to pure black, vast empty black negative space on the left for a title, ultra high resolution 8K, masterpiece quality, hyper-detailed, razor-sharp focus, dramatic cinematic key-art lighting, bold high-contrast composition, a single powerful focal subject, deep black palette with cold steel-blue and a thin gold rim, photorealistic, volumetric light, shallow depth of field, 16:9 thumbnail hero shot, scroll-stopping. Avoid: on-screen text, letters, printing on the label, watermark, logo, identifiable real person, ship, bridge, collapse, low-resolution.
+    <!-- KB-203。NTSBが認定した機構そのもの：ラベルの帯が邪魔で電線が奥まで入らない。
+         これが「穴の空いたコイン」に相当する。説明文なしで矛盾が伝わる唯一の物。 -->
+- `THUMB-06.png`
+    A ship's engine-room switchboard seen straight on in near darkness, one small green indicator lamp lit among dozens of dark ones, brushed steel panels, no gauges legible, no words or numerals anywhere, vast empty dark negative space on one side for a title, ultra high resolution 8K, masterpiece quality, hyper-detailed, razor-sharp focus, dramatic cinematic key-art lighting, bold high-contrast composition, a single powerful focal subject, deep black palette with one green indicator and a cold steel rim, photorealistic, volumetric light, shallow depth of field, 16:9 thumbnail hero shot, scroll-stopping. Avoid: on-screen text, letters, numerals, readable gauge markings, watermark, logo, identifiable real person, low-resolution.
 
 ---
 
