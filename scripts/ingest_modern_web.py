@@ -218,6 +218,11 @@ def rate_limited(source: str) -> bool:
 
 
 VIDEO_THEMES = [
+    # Place-neutral registers, added 2026-08-23. The shelf measured thin in exactly these
+    # five and thick in every other place-neutral one; see the note above THEMES in
+    # ingest_archive_sources.py for the rule the queries follow.
+    "night_road_lamp", "window_interior_light", "clock_and_waiting",
+    "corridor_and_stairs", "anonymous_crowd",
     'itaewon_korea_night',   # EP74; see the theme's own comment in ingest_archive_sources.py
     # 2026-08-20: episode-scoped registers, added because the general themes could not
     # supply EP70's. Their queries are the SUBTYPE NAMES of the lost factory shelf, taken

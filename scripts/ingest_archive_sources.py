@@ -446,6 +446,58 @@ PASS = 1  # current pass number == page number for paginated sources (set by mai
 # queries are deliberately environmental/period-scenery biased (no people terms)
 # priority order: uk_highstreet_postoffice (EP56) first, then the rest
 THEMES: dict[str, dict[str, list[str]]] = {
+    # ------------------------------------------------------------------ place-neutral
+    # Added 2026-08-23. Measured against the 25,758 commercially-licensed videos on the
+    # shelf, these five registers were the thin ones: night road 41, window light 107,
+    # clock 118, corridor 212, anonymous crowd 324, against 700-2,700 for rain, sky, water,
+    # fog, hands, paper and texture.
+    #
+    # Every query here obeys the rule EP71 paid for: TIGHT FRAMING TRAVELS, A WIDE SHOT
+    # CARRIES ITS PLACE WITH IT. A raindrop on glass, a lamp in fog and an anonymous hand
+    # are the same object anywhere on earth; a hillside, a street or a building are not.
+    # EP71's first query set asked a global stock shelf for places and 3 of 56 clips
+    # survived contact-sheet review. The replacement asked for objects and 38 of 112 did.
+    # So: no city, no country, no architecture, no signage, no faces. Close, and anonymous.
+    "night_road_lamp": {
+        "video": ["street lamp glow night", "headlights passing in the dark",
+                  "wet asphalt reflection night", "single lamp in fog",
+                  "car light streaks long exposure", "rain on road at night",
+                  "traffic light reflection wet street", "kerb at night in rain"],
+        "image": ["street lamp at night", "wet asphalt at night", "headlight trails"],
+        "audio": [],
+    },
+    "window_interior_light": {
+        "video": ["sunlight through blinds", "curtain moving in breeze",
+                  "dust floating in a sunbeam", "light moving across an empty wall",
+                  "rain on a window from inside", "shadow moving on a floor",
+                  "lamp in a dark room", "morning light on a table"],
+        "image": ["light through blinds", "dust in sunlight", "empty room window light"],
+        "audio": [],
+    },
+    "clock_and_waiting": {
+        "video": ["clock second hand close up", "wall clock ticking",
+                  "wristwatch close up", "calendar page turning",
+                  "hourglass sand falling", "digital clock numbers changing",
+                  "empty chairs in a waiting room"],
+        "image": ["clock face close up", "wristwatch macro", "hourglass sand"],
+        "audio": [],
+    },
+    "corridor_and_stairs": {
+        "video": ["empty corridor walking", "stairwell looking up",
+                  "footsteps on concrete stairs", "fluorescent corridor lights",
+                  "a door closing at the end of a hallway", "handrail close up",
+                  "elevator doors closing"],
+        "image": ["empty corridor", "stairwell from below", "handrail detail"],
+        "audio": [],
+    },
+    "anonymous_crowd": {
+        "video": ["crowd walking blurred", "silhouettes of people backlit",
+                  "commuters in slow motion", "feet walking on pavement",
+                  "shoulders passing in a crowd", "people crossing out of focus",
+                  "hands in a crowd"],
+        "image": ["blurred crowd", "silhouette of a person backlit", "feet on pavement"],
+        "audio": [],
+    },
     # Added 2026-08-21 for EP74 itaewon. The local shelf holds 14,663 videos -- verified
     # by counting the files on E:, D: and F:, which match the ledger row for row, so the
     # index is not the problem: roughly half the video archive went with the H: drive.
