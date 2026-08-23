@@ -160,7 +160,8 @@ def p_scheduled(c):
 
 def stages(c) -> list[Stage]:
     slug, num = c["slug"], c["num"]
-    return [
+    ep77 = (num or 0) >= 77
+    out = [
         Stage("spec", "機械が読む契約 (episode_spec)", p_spec,
               human="write episode_spec.v001.json per docs/PD_EPISODE_SPEC_STANDARD.v001.md"),
         Stage("facts", "事実台帳 (一次資料つき)", p_facts,
@@ -185,6 +186,9 @@ def stages(c) -> list[Stage]:
         # ADR-0011: from EP77 the hero cards are After Effects' job. The spec now declares the
         # beats (ae_beats, enforced at [0/7] by check_episode_spec); this stage is where the
         # declared beats become rendered cards. Absent from the road, the ADR was prose again.
+        # None for the old fleet: ADR-0011 binds EP77+, and round 3 of the brushup caught
+        # this stage appearing on hyatt (EP69) and un-DONE-ing a shipped, scheduled episode.
+        None if not ep77 else
         Stage("ae_hero", "AEヒーローカード (ADR-0011)", p_ae,
               next_cmd=f"bash scripts/ae/render_beats.sh   # jobs: scripts/ae/jobs_{slug}.json",
               human="author scripts/ae/jobs_<slug>.json from the spec's ae_beats, then render "
@@ -204,6 +208,7 @@ def stages(c) -> list[Stage]:
               human="scheduling touches the channel: dry-run first, then the real call -- "
                     "the scheduler's own guards (sha match, policy, future publishAt) decide"),
     ]
+    return [s for s in out if s is not None]
 
 
 def start(slug: str, num: int) -> int:
