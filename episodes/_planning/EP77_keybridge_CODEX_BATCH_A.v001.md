@@ -65,13 +65,11 @@ write that phrase here.** Every plate has a light in it.
 
 ## 4. `[NEG]` — paste at the end of every subject
 
-```
-Avoid: on-screen text, letters, numerals, readable documents, signage lettering, watermark,
-logo, brand marks, identifiable real person, recognisable faces, bodies, injuries, blood,
-rescue operations, the moment of collision, the bridge collapsing, wreckage in water,
-children, gavel, handcuffs, prison, flat evenly-dark image, muted grey wash, low-resolution,
-distorted anatomy, extra fingers.
-```
+**`[NEG]`** — the canonical negative for EP77. It carries every token family
+`scripts/check_image_order_neg.py` requires, because a plate whose own prompt forgets a bar is
+protected only by this line:
+
+> Avoid: text, lettering, legible text, readable text, captions, subtitles, handwriting, cursive, signature, numerals, numbers, digits, house numbers, readable documents, signage lettering, watermark, seal, seals, emblem, emblems, logo, logos, badge, insignia, human face, facial features, portrait, identifiable person, recognisable person, looking at the camera, bodies, corpse, injuries, blood, rescue operations, the moment of collision, the bridge collapsing, wreckage in water, children, gavel, handcuffs, prison bars, police uniform, patrol car, golden hour, drone shot, cartoon, oversaturated, flat evenly-dark image, muted grey wash, desaturated, low-resolution, distorted anatomy, extra fingers.
 
 ---
 
@@ -150,7 +148,7 @@ distorted anatomy, extra fingers.
 
 | id | subject |
 |---|---|
-| H057 | A quayside at dusk with a ship alongside, gangway down, cargo work under floodlights |
+| H057 | A quayside at dusk with a ship alongside, gangway down, an anonymous crew member in a hard hat walking up it seen from behind, cargo work under floodlights **[PEOPLE]** |
 | H058 | An exhaust scrubber unit on a ship's funnel casing, pipework and platforms, one lamp |
 | H059 | An anonymous crewman's gloved hand on a large exhaust damper lever **[PEOPLE]** |
 | H060 | A closed damper plate inside an exhaust duct, soot-stained metal, torch beam across it |
@@ -196,10 +194,10 @@ distorted anatomy, extra fingers.
 | H095 | Two anonymous figures in suits walking away down a courthouse corridor, seen from behind **[PEOPLE]** |
 | H096 | A stack of bound legal volumes on a table under a green desk lamp, spines blank |
 | H097 | A ship's registry office counter, brass fittings, nobody present |
-| H098 | A container terminal working again at dawn, cranes moving, the channel open |
+| H098 | A container terminal working again at dawn, cranes moving, an anonymous figure in a high-visibility vest small against a gantry leg, the channel open **[PEOPLE]** |
 | H099 | A salvage crane barge on a river at first light, cables and hooks, no wreck visible |
 | H100 | A newly poured concrete pier cap with reinforcement bar stubs, construction lighting |
-| H101 | Surveyors' equipment on a tripod beside a highway at dawn, nobody attending |
+| H101 | Surveyors' equipment on a tripod beside a highway at dawn, an anonymous surveyor stooping to the eyepiece seen from behind **[PEOPLE]** |
 | H102 | An anonymous inspector in a hard hat and harness on a bridge walkway, seen from behind **[PEOPLE]** |
 | H103 | A bridge inspection gantry hanging beneath a deck, empty, seen from the water |
 | H104 | A long line of bridges receding into haze along a coastline at dawn, aerial |
@@ -221,7 +219,7 @@ distorted anatomy, extra fingers.
 | H115 | A car's headlights crossing an empty bridge deck at dawn, seen from the road surface |
 | H116 | A family car crossing a long bridge over water in early morning light, seen from far away |
 | H117 | An anonymous driver's hands on a steering wheel, bridge cables passing overhead **[PEOPLE]** |
-| H118 | A road crew's cones stacked neatly on a truck bed at the end of a shift, dawn light |
+| H118 | Anonymous gloved hands stacking cones onto a truck bed at the end of a shift, dawn light, no face **[PEOPLE]** |
 | H119 | An empty high-visibility jacket hanging on a hook in a works depot, morning light through a window |
 | H120 | A wide dawn view of a working harbour with a bridge in the middle distance, calm water |
 | H121 | A single work light being switched off on an empty bridge deck as the sky lightens |
@@ -230,8 +228,10 @@ distorted anatomy, extra fingers.
 
 ## 11. The people lane — 24 plates, floor is 20
 
-`H007 H011 H014 H019 H021 H023 H032 H046 H047 H048 H054 H059 H064 H071 H074 H079 H094 H095
-H102 H108 H113 H117` **plus** `H018` and `H030` if a figure is included.
+`H007 H011 H014 H019 H021 H023 H032 H046 H047 H048 H054 H057 H059 H071 H074 H079 H094 H095
+H098 H101 H102 H108 H113 H117 H118` — **25 marked**, against a spec floor of **20**.
+(A first draft of this file claimed 24 and only marked 20. The self-check caught it; at a
+measured rejection rate of 22-34 % a floor with no margin is a rebuild.)
 
 **Every one is a back, a hand, a silhouette or a distant figure. No face resolves anywhere.**
 

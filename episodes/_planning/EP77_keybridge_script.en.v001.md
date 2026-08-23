@@ -23,7 +23,7 @@ She was a working ship on a working schedule, and she was bound for Sri Lanka.
 
 She was loaded. Not riding high and empty on her way to pick something up — loaded, which matters, because a loaded ship carries her momentum differently and answers a rudder differently. <!-- KB-115 -->
 
-It is worth stopping on the two halves of this picture for a moment, because the whole night lives in the distance between them.
+Two halves of one picture. The night lives in the distance between them.
 
 Up on the deck, the work is small and physical. Somebody is walking backwards guiding a truck. Somebody is checking that a cone has not blown over. It is the kind of job where the most dangerous thing you expect is a car that does not slow down.
 
@@ -33,17 +33,17 @@ Neither group can see the other's risks. That is not a criticism. That is just w
 
 And there was one more witness aboard that neither of them would have thought about. International rules require a ship of the Dali's tonnage and age to carry a voyage data recorder — the maritime equivalent of a black box. Through everything that followed, with the ship's lighting gone twice, the bridge audio kept recording. <!-- KB-116 -->
 
-Somebody was going to be able to hear this night.
+Somebody would hear this night.
 
 At about a quarter to one, the senior pilot ordered the main engine to dead slow ahead. <!-- KB-008 -->
 
 That engine was not a small thing. Fifty-five thousand six hundred and twenty-six horsepower, turning one propeller. <!-- KB-007 -->
 
-To put that in a shape a person can hold: this was a single machine with the output of about five hundred family cars, driving one shaft, moving a loaded ship out of a harbour in the dark.
+Call it five hundred family cars. One shaft. One loaded ship. In the dark.
 
-At about seven minutes past one, once she was in the channel, the tugboats let go. That is normal. That is how it is done, every night, in every port. <!-- KB-008 -->
+At about seven minutes past one, once she was in the channel, the tugboats let go. That is normal. Every night. Every port. <!-- KB-008 -->
 
-From that moment the Dali was moving under her own power, with two pilots aboard, toward a bridge she had passed under before.
+From that moment she moved under her own power. Two pilots aboard. A bridge she had passed under before.
 
 At about twenty-five minutes past one, she was six tenths of a mile out. Three of her own lengths. <!-- KB-105 -->
 
@@ -71,24 +71,24 @@ They got the electricity back before the ship touched the bridge.
 
 They did not get the propeller back. <!-- KB-112 -->
 
-One more thing was true in those last seconds, and it is the cruellest engineering fact in the file. The emergency power could run a single steering pump. But that pump, running alone on emergency power, was designed to turn the rudder more slowly than it would with all pumps working. And a rudder needs water moving past it to steer at all — so without the propeller turning, it would have been less effective anyway. <!-- KB-117 -->
+One more thing was true. The emergency power could run a single steering pump. But that pump, running alone on emergency power, was designed to turn the rudder more slowly than it would with all pumps working. And a rudder needs water moving past it to steer at all — so without the propeller turning, it would have been less effective anyway. <!-- KB-117 -->
 
-The ship had a wheel. Turning it was going to do very little.
+The ship had a wheel. Turning it did almost nothing.
 
 At about twenty-nine minutes past one, the Dali struck pier number seventeen. <!-- KB-002, KB-005 -->
 
 The piers were not naked. They were protected by structures called dolphins — sheet pile and concrete, built to take a hit and keep a ship off the column. Two of them are drawn on the Safety Board's own map of the Dali's last three minutes. <!-- KB-114 -->
 
-They were not enough, and the reason they were not enough is a question this programme will come back to, because it is the part that is still standing over other people's roads tonight.
+They were not enough. Why they were not enough is still standing over other people's roads tonight.
 
 The span came down. Eight people had been on it. Six of them died. <!-- KB-003, KB-004 -->
 
 Which raises the first thing that does not fit. If a ship losing power is a known event, and this bridge had protection built for exactly that, why did the protection not hold?
 
 ## ACT_2 — SHIPS LOSE POWER. THIS IS NOT SUPPOSED TO BE WHAT HAPPENS NEXT
-Here is the part that is easy to get wrong, and almost everybody does.
+Everybody gets this part wrong.
 
-The obvious answer is that a ship lost power and hit a bridge. That is true, and it explains nothing, because ships lose power. It is not rare. It is a thing that happens at sea and in port and in channels, and it happens because a vessel is a small industrial city with four generators and several thousand connections, and industrial cities have bad nights.
+The obvious answer is that a ship lost power and hit a bridge. That is true, and it explains nothing, because ships lose power. It is not rare. A vessel is a small industrial city with four generators and several thousand connections. Industrial cities have bad nights.
 
 So the question was never whether the Dali could lose power.
 
@@ -265,15 +265,17 @@ And here the Board did something careful that is worth noticing. It did not find
 
 Not a cover-up. Something more ordinary and harder to fix: a recommendation that existed, and a bridge whose owner did not know it applied to them.
 
-It is worth being precise about what a vulnerability assessment actually is, because the phrase sounds like a filing cabinet and it is not.
+A vulnerability assessment sounds like a filing cabinet. It is a sum.
 
-It is a sum. You take the bridge you have. You take the ships that actually use the channel now — not the ships that used it when the bridge was drawn. You work out what happens to that pier if that ship arrives at that speed at that angle. And then you find out whether the protection you already have is protection, or decoration.
+Take the bridge you have. Take the ships that use the channel now, not the ships that used it when the bridge was drawn. Work out what happens to that pier if that ship arrives at that speed at that angle. Then find out whether the protection you already have is protection.
 
-The dolphins in the water by pier seventeen were real structures. Sheet pile and concrete, built by people who were not being careless. <!-- KB-114 -->
+Or decoration.
 
-But protection is not an absolute. It is always protection against something, at some speed, of some size. And the thing about a shipping channel is that the bridge stays exactly where it is while the ships that pass under it keep getting bigger.
+The dolphins by pier seventeen were real. Sheet pile and concrete, built by people who were not careless. <!-- KB-114 -->
 
-That is the failure mode. Not neglect. Arithmetic that quietly went out of date, on a structure that could not be moved, under a guideline that recommended checking and did not require it.
+But protection is never absolute. It is protection against something, at some speed, of some size. And a bridge stays exactly where it is while the ships underneath it keep getting bigger.
+
+That is the failure. Not neglect. Arithmetic that went quietly out of date.
 
 So how many other bridges are standing over shipping channels tonight without anyone having done that sum?
 
@@ -292,15 +294,15 @@ Six days after the collapse, on the first of April, 2024, the ship's owner and m
 
 That is a very old piece of American maritime law, and it does something that sounds impossible when you first hear it. It allows the owner of a vessel to ask a court to cap what they can be made to pay, at roughly the value of what is left of the ship.
 
-Before the outrage, the reason. This is the part most people never hear, and the film owes it to you.
+Before the outrage, the reason.
 
-That law exists because of a problem that is genuinely hard. A ship is an asset that leaves. It sails out of reach of the country that built it, under the command of people its owner cannot see, into weather nobody controls. If a single voyage could destroy the entire company that financed it, the argument runs, then nobody rational finances ships, and a trading nation stops trading.
+That law exists because of a hard problem. A ship is an asset that leaves. She sails out of reach, under people her owner cannot see, into weather nobody controls. If one voyage could destroy the company that financed it, the argument runs, nobody finances ships.
 
-So the deal that the law strikes is this: an owner who did not know about the fault, and could not have known, may ask a court to limit what they owe to the value of the vessel and her freight.
+So the law strikes a deal. An owner who did not know about the fault, and could not have known, may ask a court to cap what he owes at the value of the vessel and her freight.
 
-Read it in the abstract and it is a sensible rule for a maritime economy.
+In the abstract it is a sensible rule for a trading nation.
 
-Read it after a bridge falls on a work crew and it is a number.
+After a bridge falls on a work crew it is a number.
 
 The figure they asked to be limited to was about forty-three point seven million dollars. <!-- KB-302 -->
 
@@ -345,30 +347,40 @@ Sixty-seven seconds. And in that window a decision made ten hours earlier at a p
 So what is the rule that was actually running that night?
 
 ## ENDING
-Here is the hidden rule, and it is not about ships.
+Go back to the deck.
 
-**A system is only as redundant as the last person who changed it says it is.**
+The work light is still burning. The cone is still standing in it. Nothing has happened yet.
 
-The Dali was designed to survive a blackout. The drawings promised automatic restart and reliable redundancy, and the drawings were honest. <!-- KB-406 -->
+Down the channel, a ship is leaving a berth with her lights on. Every lamp aboard her is lit. That is what a working ship looks like. <!-- KB-008 -->
 
-What the United States alleges is that somewhere between the drawings and the water, that promise was quietly edited — and that the edit stayed in the engine room. <!-- KB-407, KB-409 -->
+⟨HELD⟩
 
-And on the other side of the channel, a bridge stood over a working shipping channel while the ships that passed under it changed, and the guidance about checking for exactly that had been written, and published, and simply had not reached the people who owned the bridge. <!-- KB-204, KB-205 -->
+She loses them at twenty-five past one. She gets them back. She loses them again. And at twenty-seven minutes and thirty-two seconds past one, with two tenths of a mile to run, she gets them back for the last time. <!-- KB-105, KB-107, KB-110, KB-112 -->
 
-Neither of those is a villain. Both of them are worse than a villain, because a villain can be removed and a gap in the paperwork cannot.
+Lit from bow to stern. Every lamp burning. <!-- KB-112 -->
 
-There is a version of this story that ends in anger, and it is available, and it is not the useful one. Anger needs a person to point at, and the person is exactly what a court in Maryland has not finished deciding. <!-- KB-501 -->
+And not moving under her own power. <!-- KB-112 -->
 
-The useful ending is smaller and it is something you can carry out of the room.
+⟨HELD⟩
 
-Every safety system you rely on is a promise made in a drawing, and then a series of small decisions made by people you will never meet, in rooms you will never enter, about whether that drawing is still true. A pump swapped for another pump. A configuration changed at a pier at midnight and never changed back. A guideline that recommends and does not require. None of those is a scandal on the day it happens. All of them are the day it happens.
+The drawings promised she could recover. They were honest drawings. <!-- KB-406 -->
 
-And this concerns you because the same shape is above your road too. Sixty-eight bridges in this country are now on a list that says: somebody go and check what happens if a ship hits this. <!-- KB-206 -->
+Somewhere between those drawings and that water, the United States says, the promise was edited — and the edit stayed in the engine room. <!-- KB-407, KB-409, KB-501 -->
+
+Nobody has been tried for that. <!-- KB-501 -->
+
+On the other side of the channel, the guidance about ship strikes had been written, and published, and had not reached the people who owned the bridge. The Board found they were likely unaware. <!-- KB-204, KB-205 -->
+
+Not a villain. A gap.
+
+Sixty-eight bridges are now on a list that says: go and check what happens if a ship hits this. <!-- KB-206 -->
 
 That list did not exist on the twenty-fifth of March, 2024.
 
-It exists because eight people went to work on a bridge at night, and six of them did not come home, and a Board spent twenty months finding a wire. <!-- KB-003, KB-004, KB-202 -->
+⟨HELD⟩
 
-The next time you drive over water, you are crossing something that somebody, somewhere, has either run that sum on or has not.
+The work light on the deck goes off at dawn. The cone gets stacked on the truck. The lane opens. <!-- KB-004 -->
 
-Now you know the sum exists.
+Every light in this story came back on.
+
+That was never the thing that had to hold.
