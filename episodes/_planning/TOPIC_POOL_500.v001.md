@@ -888,6 +888,81 @@ fails that test unless someone is at the front of it.
 
 ---
 
+## 2c. THE THUMBNAILS
+
+CTR is the title **and** the thumbnail, and only the title had been measured. This is what the
+thumbnails say.
+
+### What was measured, and how far it goes
+
+59 episodes were matched to a video id, a CTR and the thumbnail actually shipped; 36 have at
+least 300 impressions. Every numeric correlation with CTR is **weak**:
+
+| measurement | r with CTR |
+|---|---|
+| fraction of frame very dark (<40) | **+0.19** |
+| mean brightness | **−0.18** |
+| contrast (sd) | −0.12 |
+| edge energy | +0.03 |
+| warmth (gold vs blue) | −0.06 |
+
+**So brightness and contrast do not explain CTR on their own, and any claim that they do is
+wrong.** What is strong is the picture at the two ends, read at thumbnail size:
+
+| | CTR | what the image actually is |
+|---|---|---|
+| `016-titan` | **3.14 %** | Black. Two lines, `THEY WERE / WARNED`, filling the left half. One submarine silhouette against cyan light |
+| `017-onecoin` | **3.71 %** | Black and gold. Three short lines. **One coin with a hole through it** — the object *is* the contradiction |
+| `035-hinders` | **1.00 %** on **7,436 impressions** | **Five text elements that collide.** `$32,820` overlaps `SEIZED BY`; a rotated `NO CRIME.` sticker sits on top of that; the background is unreadable. At feed size it is a grey block. **The channel's single biggest loss: about 150 clicks** |
+| `047-atwater` | **0.39 %** | A calm purple photograph of a courthouse dome, text small in the bottom-left. At feed size it is a purple building. The title was good; nothing in the image says anything |
+| `015-theranos` | **0.00 %** | Five elements, a light grey ground, a featureless box, and a question mark |
+
+### The rule the six are built to
+
+1. **One object, in silhouette, that carries the contradiction by itself.** Not a photograph
+   used as wallpaper. If the object needs the caption to make sense, it is the wrong object.
+2. **Two text blocks. Three at most. They must not touch.** hinders and theranos both have
+   five and both underperform badly; the two best have effectively two.
+3. **Type fills one half of the frame and the object owns the other.** Never both, never
+   neither.
+4. **Black ground, one accent.** Weakly supported (dark fraction r = +0.19) and consistent with
+   every top row, so it is the default until measured otherwise.
+5. **No death count, no question mark, no `$` in the largest line.** The death-count finding is
+   from two independent datasets; the question mark is v3's title rule applied to the image.
+6. **Every word on the thumbnail must be checkable** — `check_packaging_claims.py` runs on
+   thumbnail text as well as titles (rule 19).
+7. Invariant 11 stands: **no real person's likeness, and no generated document that reads as a
+   record.**
+
+### The six
+
+| EP | the one object | text block 1 (white) | text block 2 (accent) | what must not appear |
+|---|---|---|---|---|
+| **77 fukushima** | A sea wall in silhouette, and the water line drawn **above** its top edge | `BUILT FOR` | `FIVE METRES` | no reactor building on fire, no bodies, no radiation trefoil used as decoration |
+| **78 alaska261** | A jackscrew thread, worn smooth at one end, isolated on black | `APPROVED` | `LONGER` | no aircraft in distress, no ocean recovery imagery, no casualty figure |
+| **79 concordia** | The hull, tilted, with the horizon line kept level so the ship is visibly wrong | `HE WAS` | `ASHORE FIRST` | no passengers in the water, no lifeboat crush, no rock in the hull as the hero object |
+| **80 keybridge** | A single roadwork cone standing on an empty deck, the span cut off behind it | `SIX MEN` | `WERE UP THERE` | no vessel striking the pier, no collapse frame, no named party while litigation is live |
+| **81 station** | A ceiling of acoustic foam tiles, lit from below, one tile lifted away | `NOT FIRE` | `RETARDANT` | no interior of the fire, no crowd at the exit, no victim count |
+| **82 valdez** | A gloved hand holding one oiled stone | `FIVE HOURS` | `FOURTEEN` | no oiled wildlife as the hero object, no tanker as wallpaper |
+
+**Why an object and not a scene, on each of these.** A sea wall drawn *shorter than the water*,
+a jackscrew worn *at one end*, a hull *tilted against a level horizon*, a cone *alone on a deck*,
+a foam tile *lifted away*, a stone *that should not be black*: each one states the contradiction
+without the caption. That is what the coin with the hole does, and what the purple courthouse
+does not.
+
+### Two things to settle before building them
+
+1. **The back-catalogue title experiment reads on 2026-09-07 and its 13 controls must not be
+   touched.** New episodes are outside it, so new thumbnails are safe — but **do not** start a
+   back-catalogue thumbnail experiment before that date or the two confound.
+2. **`035-hinders` should be re-thumbnailed on its own**, outside any slate. It is receiving
+   more impressions than anything else on the channel and converting at 1.00 %. Rebuilding that
+   one image is the cheapest measurable CTR work available, and it is not part of the 13
+   controls.
+
+---
+
 ## 2. THE SIX — **SUPERSEDED by §2b, kept as the record of the second pass**
 
 All six are American, named, court-centred, demand-measured and shelf-checked. Ordered by
