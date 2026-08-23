@@ -125,6 +125,18 @@ def p_motion(c):
     return n > 0, f"{n} i2v motion clip(s)"
 
 
+def p_ae(c):
+    slug = c["slug"]
+    jobs = ROOT / "scripts" / "ae" / f"jobs_{slug}.json"
+    if not jobs.is_file():
+        return False, (f"scripts/ae/jobs_{slug}.json: missing "
+                       f"(spec declares the beats; this file renders them)")
+    out = ROOT / "ae-kinetic" / "out"
+    n = len(list(out.glob("*.webm"))) if out.is_dir() else 0
+    extra = f" ({n} rendered card(s) in ae out)" if n else ""
+    return True, jobs.name + " present" + extra
+
+
 def p_film(c):
     if not c["film"].is_file() or c["film"].stat().st_size < 2000:
         return False, "film json: missing or placeholder"
@@ -170,6 +182,13 @@ def stages(c) -> list[Stage]:
                     "no machine can clear a face)"),
         Stage("motion", "i2v モーション", p_motion,
               human="run the i2v batch for staged stills (GPU; one job at a time)"),
+        # ADR-0011: from EP77 the hero cards are After Effects' job. The spec now declares the
+        # beats (ae_beats, enforced at [0/7] by check_episode_spec); this stage is where the
+        # declared beats become rendered cards. Absent from the road, the ADR was prose again.
+        Stage("ae_hero", "AEヒーローカード (ADR-0011)", p_ae,
+              next_cmd=f"bash scripts/ae/render_beats.sh   # jobs: scripts/ae/jobs_{slug}.json",
+              human="author scripts/ae/jobs_<slug>.json from the spec's ae_beats, then render "
+                    "(AE traps: PriorSafeMode.txt / gpu_accel per reference_after_effects_automation)"),
         Stage("film", "film.json (組立+plan検査)", p_film,
               next_cmd=f"bash scripts/pd_run.sh --name finish_{slug} -- "
                        f"/usr/bin/bash scripts/_finish_episode.sh {slug} <Composition> {num}",
@@ -187,6 +206,45 @@ def stages(c) -> list[Stage]:
     ]
 
 
+def start(slug: str, num: int) -> int:
+    """Theme decided -> everything that can be scaffolded, scaffolded; everything else, named.
+
+    Deliberately does NOT invent content: the spec stays absent (an undeclared value is an
+    error, and a scaffolded spec full of guesses would be worse than none), and the script is
+    the TEMPLATE COPY, which the placeholder rule refuses until a human fills it -- so the
+    scaffold cannot be mistaken for progress by any gate.
+    """
+    if num < 77:
+        print(f"--start is the EP77 road; EP{num} belongs to the old fleet")
+        return 2
+    if not re.fullmatch(r"[a-z0-9]+", slug):
+        print(f"slug {slug!r} must be lowercase alphanumeric (it becomes filenames and ids)")
+        return 2
+    ep = ROOT / "episodes" / f"PD-2026-{num:03d}-{slug}"
+    if ep.exists():
+        print(f"{ep.name} already exists -- showing the road instead")
+        return 0
+    ep.mkdir(parents=True)
+    for sub in ("01_research", "03_script", "04_scenes", "06_audio", "08_edit", "09_package"):
+        (ep / sub).mkdir()
+    tpl = ROOT / "episodes" / "_planning" / "_EP_SCRIPT_TEMPLATE.v001.md"
+    dst = ROOT / "episodes" / "_planning" / f"EP{num}_{slug}_script.en.v001.md"
+    if not dst.exists():
+        dst.write_text(tpl.read_text(encoding="utf-8").replace("EP{NN}", f"EP{num}"),
+                       encoding="utf-8")
+    print(f"=== EP road opened: {ep.name} ===")
+    print(f"  scaffolded: {ep.name}/ (6 dirs), {dst.name} (template copy -- the placeholder "
+          f"rule refuses it until filled, so this cannot be mistaken for a script)")
+    print(f"  write next, in order:")
+    print(f"    1. {ep.name}/episode_spec.v001.json  (docs/PD_EPISODE_SPEC_STANDARD.v001.md; "
+          f"ae_beats is required from EP77)")
+    print(f"    2. episodes/_planning/EP{num}_{slug}_FACTS_LEDGER.v001.md  (primary sources)")
+    print(f"    3. fill {dst.name}  (one question per act; check with "
+          f"check_script_retention_plan.py)")
+    print(f"  then: py -3.11 scripts/ep_road.py --slug {slug}")
+    return 0
+
+
 def main() -> int:
     try:
         sys.stdout.reconfigure(encoding="utf-8")
@@ -196,12 +254,19 @@ def main() -> int:
     ap.add_argument("--slug", required=True)
     ap.add_argument("--run", action="store_true", help="run the mechanical next steps now")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--start", type=int, metavar="NUM",
+                    help="theme decided: scaffold episodes/PD-2026-0NUM-<slug>/ and the "
+                         "planning files, then show the road")
     a = ap.parse_args()
+
+    if a.start:
+        return start(a.slug, a.start)
 
     c = ctx_for(a.slug)
     if c["ep"] is None:
-        print(f"no episode directory for {a.slug!r}. Create episodes/PD-2026-0NN-{a.slug}/ "
-              f"with episode_spec.v001.json first (the spec is stage 1 for a reason).")
+        print(f"no episode directory for {a.slug!r}.")
+        print(f"  theme decided? start the road with ONE command:")
+        print(f"    py -3.11 scripts/ep_road.py --slug {a.slug} --start <NUM>")
         return 2
 
     rows = []
