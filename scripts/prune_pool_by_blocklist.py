@@ -18,6 +18,17 @@ from __future__ import annotations
 import argparse
 import json
 import shutil
+import sys
+
+# cp932 GUARD. This script prints the blocklist's own reason text, and those reasons quote the
+# ledger's rule ids -- which contain U+26D4. On Windows the default console codepage is cp932 and
+# the print CRASHED the whole finisher at [2b/7] (EP76 morandi, 2026-08-24 00:59), after a clean
+# render chain had already produced two masters. Same defect class as the 2026-08-16 upload crash.
+try:
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+except Exception:  # noqa: BLE001
+    pass
 from pathlib import Path
 
 import pd_footage_blocklist

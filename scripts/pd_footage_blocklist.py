@@ -75,17 +75,40 @@ def load_blocked(slug: str | None = None, path: Path | None = None) -> dict[str,
         if scope is not None and (slug is None or slug not in scope):
             continue
         where = "global" if scope is None else f"episode-scoped to {', '.join(scope)}"
+        # APPLIES_TO: a row may bind to one MEDIUM only. Ids are matched by stem, and a plate
+        # and its i2v derivative share one (V003.png / V003.mp4). EP76 morandi blocked 52
+        # hallucinating CLIPS and the same rule then removed 52 correct PLATES -- the pictures
+        # are fine, only their animations invent an inspector. Absent, a row binds to everything,
+        # which is what every existing row means.
+        media = row.get("applies_to")
         for ident in row["ids"]:
-            blocked[ident] = f"{row['label']} ({where}): {row['reason']}"
+            blocked[ident] = (f"{row['label']} ({where}): {row['reason']}", tuple(media) if media else None)
     return blocked
 
 
-def reason_for(src: str, blocked: dict[str, str]) -> str | None:
+def _medium_of(src: str) -> str:
+    """`motion`, `stills`, or `footage` -- read from the path, then the extension."""
+    s = str(src).replace("\\", "/").lower()
+    if "/motion/" in s:
+        return "motion"
+    if "/img/" in s:
+        return "stills"
+    if "/factory/" in s:
+        return "footage"
+    return "stills" if s.endswith((".png", ".jpg", ".jpeg")) else "motion"
+
+
+def reason_for(src: str, blocked: dict) -> str | None:
     """The blocklist reason this src falls under, or None."""
+    medium = _medium_of(src)
     for ident in identifiers(src):
-        why = blocked.get(ident)
-        if why:
-            return why
+        row = blocked.get(ident)
+        if not row:
+            continue
+        why, media = row if isinstance(row, tuple) else (row, None)
+        if media and medium not in media:
+            continue          # the row binds to another medium; this file is not blocked
+        return why
     return None
 
 

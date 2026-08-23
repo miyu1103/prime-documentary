@@ -5,6 +5,11 @@
   "description": "The numbers an episode commits to, in the one place every tool reads. Prose design documents stay as they are -- this is the layer a machine can check. Every field here exists because its absence caused a measured production failure; the failure is named in each description so nobody deletes a field without knowing what it cost.",
   "type": "object",
   "additionalProperties": false,
+  "patternProperties": {
+    "^_": {
+      "description": "ANNOTATION KEYS. A leading underscore marks a note for humans -- why a number was chosen, who decided it, what was rejected. lacmegantic and uri each carried `_people_plates_note` and the whole pipeline REFUSED to build them for it, so the reasoning had to be deleted to make the episode buildable: the schema was making the constitution's own habit of recording why unusable. Underscore keys are read by nobody; an unknown key WITHOUT the underscore is still an error."
+    }
+  },
   "required": [
     "schema_version",
     "episode_id",

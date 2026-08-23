@@ -379,6 +379,9 @@
    "hard_category": "cat4_wrong_subject_reads_as_the_claim",
    "episodes": [
     "morandi"
+   ],
+   "applies_to": [
+    "motion"
    ]
   },
   {
@@ -391,6 +394,9 @@
    "hard_category": "cat2_real_person_likeness",
    "episodes": [
     "morandi"
+   ],
+   "applies_to": [
+    "motion"
    ]
   },
   {
@@ -403,7 +409,11 @@
    "hard_category": "none_kept_for_a_mechanical_reason",
    "episodes": [
     "morandi"
-   ]
+   ],
+   "applies_to": [
+    "motion"
+   ],
+   "applies_to_note": "2026-08-23: scoped to the CLIP. Both findings are about what the i2v ANIMATION does -- V026/V056 go black over their run, and V120's car drives onto the severed carriageway 'by frame N'. The plates themselves were accepted at plate review and are not what was rejected. The shipped-frames read is where a wrong call here is caught."
   },
   {
    "ids": [
@@ -414,7 +424,11 @@
    "hard_category": "cat4_wrong_subject_reads_as_the_claim",
    "episodes": [
     "morandi"
-   ]
+   ],
+   "applies_to": [
+    "motion"
+   ],
+   "applies_to_note": "2026-08-23: scoped to the CLIP. Both findings are about what the i2v ANIMATION does -- V026/V056 go black over their run, and V120's car drives onto the severed carriageway 'by frame N'. The plates themselves were accepted at plate review and are not what was rejected. The shipped-frames read is where a wrong call here is caught."
   },
   {
    "ids": [
@@ -612,7 +626,10 @@
    "episodes": [
     "oroville"
    ],
-   "reason": "i2v output measured at mean luma 0.8 (pd_preflight B/ASSETS, 2026-08-23) -- the clip came back black, the same failure mode EP76 recorded as 'broken clips'. The plate itself is fine; only this animation is dead."
+   "reason": "i2v output measured at mean luma 0.8 (pd_preflight B/ASSETS, 2026-08-23) -- the clip came back black, the same failure mode EP76 recorded as 'broken clips'. The plate itself is fine; only this animation is dead.",
+   "applies_to": [
+    "motion"
+   ]
   }
  ],
  "quality_deferred": [

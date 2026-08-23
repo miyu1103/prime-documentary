@@ -203,7 +203,12 @@ def check_assets(r: Report, ep_dir: Path, total_sec: float, fast: bool) -> None:
     if stub:
         r.block(f"B/ASSETS: {len(stub)} files under {MIN_OK_BYTES}B e.g. {stub[:3]}")
     if dark:
-        r.block(f"B/ASSETS: {len(dark)} near-black cut assets e.g. {dark[:3]}")
+        # "cut assets" was wrong and cost a diagnosis: this scans the whole POOL from the asset
+        # manifest, not the film's cuts. On 2026-08-23 it blocked itaewon, lahaina and morandi on
+        # clips that are in no cut at all, while pd_prerender_gate -- which does read the cuts --
+        # passed all three. Say which set is being measured.
+        r.block(f"B/ASSETS: {len(dark)} near-black asset(s) STAGED IN THE POOL (not necessarily "
+                f"in any cut -- pd_prerender_gate measures the cuts) e.g. {dark[:3]}")
 
     # C. pool capacity for motion-first across the FULL runtime
     n_video = len(pools["motion"]) + len(pools["factory"])
