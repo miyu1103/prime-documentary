@@ -87,15 +87,61 @@ def p_facts(c):   return _exists(_glob1(f"episodes/_planning/EP{c['num']}_{c['sl
 
 
 def p_script(c):
+    """Three gates, not one.
+
+    Until 2026-08-24 this stage ran check_ep77_standard alone, and that check measures the
+    SHAPE of a script -- the headings, the question spacing -- and nothing about its size or
+    its craft. So the road printed a tick twice on scripts that were nowhere near finished:
+    EP77 at 3,062 words against a declared 4,640-5,120 band, and EP78 at 2,784. Both were
+    caught only because a person happened to run check_script_length and check_script_craft
+    by hand. Nothing on the road ran them.
+
+    They run here now. The bands come from the episode's own contract, never from a constant.
+    """
     s = _glob1(f"episodes/_planning/EP{c['num']}_{c['slug']}_script.en.v*.md")
     if not s:
         return False, "planning script: missing (start from _EP_SCRIPT_TEMPLATE.v001.md)"
+
+    problems = []
+
     rc, out = sh(["py", "-3.11", str(ROOT / "scripts/check_ep77_standard.py"),
                   "--slug", c["slug"], "--stage", "inputs"])
-    if rc == 0:
-        return True, f"{s.name} + EP77 standard PASS"
-    detail = "; ".join(l.strip()[2:] for l in out.splitlines() if l.strip().startswith("- "))
-    return False, f"{s.name} but EP77 standard: {detail[:160]}"
+    if rc != 0:
+        detail = "; ".join(l.strip()[2:] for l in out.splitlines() if l.strip().startswith("- "))
+        problems.append(f"EP77 standard: {detail[:120]}")
+
+    try:
+        from check_episode_spec import load_and_validate
+        spec, _p, _e = load_and_validate(c["slug"])
+    except Exception:
+        spec = None
+
+    if not spec:
+        problems.append("spec unreadable, so length and craft could not be measured")
+    else:
+        lo_s, hi_s = (int(v) for v in spec["runtime_seconds"])
+        lo_w, hi_w = (int(v) for v in spec["script_words"])
+
+        rc, out = sh(["py", "-3.11", str(ROOT / "scripts/check_script_length.py"),
+                      "--lo", str(lo_s), "--hi", str(hi_s), str(s)])
+        if rc != 0:
+            first = next((l.strip() for l in out.splitlines() if l.strip().startswith("FAIL")),
+                         "length FAIL")
+            problems.append(first[:120])
+
+        ledger = _glob1(f"episodes/_planning/EP{c['num']}_{c['slug']}_FACTS_LEDGER.v*.md")
+        cmd = ["py", "-3.11", str(ROOT / "scripts/check_script_craft.py"), str(s),
+               "--words", str(lo_w), str(hi_w)]
+        if ledger:
+            cmd += ["--ledger", str(ledger)]
+        rc, out = sh(cmd)
+        if rc != 0:
+            fails = [l.strip()[5:].strip() for l in out.splitlines() if l.strip().startswith("FAIL")]
+            problems.append("craft: " + ("; ".join(fails)[:140] if fails else "FAIL"))
+
+    if not problems:
+        return True, f"{s.name} + standard, length and craft all PASS"
+    return False, f"{s.name} -- " + " | ".join(problems)[:230]
 
 
 def p_narration(c):
