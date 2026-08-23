@@ -109,13 +109,23 @@ SOURCES: dict[str, dict] = {
         "files": _pexels_files,
         "title": _pexels_title,
         "page_url": lambda m: m.get("url", ""),
-        # Was 200, from the published free-tier figure rather than from this account.
-        # Asked the API directly on 2026-08-23: X-Ratelimit-Limit came back -1 and a 40-request
-        # burst at a 7,487/hour pace returned zero 429s, with X-Ratelimit-Remaining sitting
-        # around 23,000. The 200 was a self-imposed throttle costing ~30 hours on the video set
-        # alone. 1,200 is still far under what the account allows and under what the link can
-        # carry, so the download stays the bottleneck rather than the provider.
-        "per_hour": 1200,
+        # 600, and the road to that number is worth keeping because two probes lied first.
+        #
+        # It was 200, taken from Pexels' published free-tier figure rather than from this
+        # account. Asking the API returns X-Ratelimit-Limit: -1 and X-Ratelimit-Remaining: -1,
+        # which reads as "no limit", so it went to 1,200. The run then drew 27 throttles a
+        # night and the pace collapsed to 60/hour.
+        #
+        # Two burst tests said there was no limit at any speed, including flat out with four
+        # concurrent CDN downloads running. Both were wrong for the same reason: they reused a
+        # handful of ids, and a repeated id is served from the edge cache. The real work asks
+        # for a DIFFERENT id every time and misses the cache every time.
+        #
+        # Re-run with genuinely unfetched ids, 2026-08-23 16:50:
+        #     1,200/hour, fresh ids : 9 of 40 refused, "Throttle limit exceeded"
+        #       600/hour, fresh ids : 0 of 25 refused
+        # A measurement that does not reproduce the real request pattern measures nothing.
+        "per_hour": 600,
         "licence": ("Pexels License -- free for commercial and non-commercial use, no "
                     "attribution required, identifiable persons may not be used for "
                     "anything defamatory"),
