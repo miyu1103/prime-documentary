@@ -309,6 +309,29 @@ def term_hits(term: str, text: str) -> bool:
     return re.search(rf"\b{core}(?:s|es|'s|s')?\b", text) is not None
 
 
+# Themes where a FULL QUERY PHRASE is required, not a pile of its words.
+#
+# Measured 2026-08-23/24. The five place-neutral themes pulled 1,481 clips overnight and a
+# contact sheet said almost none were the thing asked for: night_road_lamp returned Brooklyn
+# Bridge, a rice-terrace night view and five abstract CGI loops -- 0 of 12 usable;
+# anonymous_crowd returned a leopard, an egret, a bumblebee and a gull -- 1 of 12. All 1,481
+# were quarantined.
+#
+# The queries were tight ("street lamp glow night"). The gate is not: every word of a query is
+# also a positive term worth +15, so a firework render carrying "light" and "night" clears the
+# threshold on words alone. That is fine for a theme like courtroom_justice, where the SUBJECT
+# is the word. It is wrong for a theme whose subject only exists in the combination -- a lamp
+# at night is not "lamp" plus "night".
+#
+# Listed per theme rather than switched on globally, because the existing themes were tuned
+# against this gate and measured against it, and changing it under them would be a second
+# uncontrolled experiment.
+PHRASE_ONLY_THEMES = {
+    "night_road_lamp", "window_interior_light", "clock_and_waiting",
+    "corridor_and_stairs", "anonymous_crowd",
+}
+
+
 def relevance(theme: str, title: str, desc: str = "") -> tuple[int, list[str], list[str], bool]:
     """Score 0-100 from item metadata vs theme keywords.
     Returns (score, matched, neg_hits, title_ok).
@@ -333,6 +356,8 @@ def relevance(theme: str, title: str, desc: str = "") -> tuple[int, list[str], l
     # Encoded in the score (not a 5th return value) to keep this function's signature
     # stable for the sibling lanes that import it.
     if not phrase_ok and not any(term_weight(theme, t) >= 30 for t in matched):
+        score = min(score, 15)
+    if theme in PHRASE_ONLY_THEMES and not phrase_ok:
         score = min(score, 15)
     negs = [n for n in GLOBAL_NEG if n in low]
     score -= 25 * len(negs)
