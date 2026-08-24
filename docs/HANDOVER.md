@@ -340,6 +340,11 @@ measurements that overturned older canon (narration pace, CTR, audience age, and
 the apparent long-form advantage is confounded by two outlier videos); EP70 chosen and then failed
 its own new gate at 77/100.
 
+**[2026-08-24 — EP77-82 の設計スレ](handover/2026-08-24-design-ep77-82.md)** — 6話の契約・事実台帳・台本・
+Codex発注書が完成（台本は4ゲート緑、EP77-80の画像は納品・QC済み）。**次は EP81/EP82 の画像発注**、
+そのあと工程4〜9。**未処理で組み立てを止めるもの: 台本にSFX行が1つもない**（audio builder は20個以上を要求）。
+メインスレの3点への回答と、実在企業の意匠が3話連続で出た件の対処もここ。
+
 **[2026-08-23 — EP74 itaewon](handover/EP74_ITAEWON_TO_MAIN_ASSEMBLY.md)** — the Itaewon crowd
 crush, built to the point where only the assembly thread's own step is left. slug `itaewon`,
 composition `Ep74Itaewon`, `remotion/src/data/itaewon_film.json`; Root.tsx deliberately untouched.
