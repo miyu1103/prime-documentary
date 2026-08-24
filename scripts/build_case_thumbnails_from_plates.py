@@ -237,12 +237,22 @@ def compose_winner(plate: Path, lines: list[str], accent_line: int, side: str, o
         raise ValueError(f"winner-style line too wide for a side placement: {lines!r}")
 
     if side == "auto":
+        # Put the type where the PICTURE ISN'T. The first version picked the darker side, and on
+        # plates whose subject sits in shadow (a firefighter, a siren pole, an empty chair) that
+        # planted the words on the subject's face -- the owner caught it on the EP71-76 sheet.
+        # Detail (edge density) finds the subject regardless of its brightness; luma only breaks
+        # ties, weighted low.
+        from PIL import ImageFilter, ImageStat
         g = im.convert("L")
         band = g.crop((0, 200, W, 640))
-        left = band.crop((0, 0, int(W * 0.42), band.height))
-        right = band.crop((W - int(W * 0.42), 0, W, band.height))
-        from PIL import ImageStat
-        side = "left" if ImageStat.Stat(left).mean[0] <= ImageStat.Stat(right).mean[0] else "right"
+        edges = band.filter(ImageFilter.FIND_EDGES)
+        lw = int(W * 0.42)
+        score = {}
+        for name, box in (("left", (0, 0, lw, band.height)),
+                          ("right", (W - lw, 0, W, band.height))):
+            score[name] = (ImageStat.Stat(edges.crop(box)).mean[0] * 3.0
+                           + ImageStat.Stat(band.crop(box)).mean[0] * 0.2)
+        side = "left" if score["left"] <= score["right"] else "right"
 
     lh = font.size + 18
     total = lh * len(lines) - 18
