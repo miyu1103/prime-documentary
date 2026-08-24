@@ -1,6 +1,9 @@
 # EP77-82 ＋ EP35 サムネ選定 v001 — 2026-08-24
 
 > **APPROVED 2026-08-24 夜（オーナー目視承認「サムネ見た。いいと思う」）。**
+> **PREMIUM PASS APPROVED 2026-08-24 深夜（「みた。いいんじゃない」）** — Anton書体＋シネマ
+> グレード＋グロー版（commit ead2913f）で全13話37枚を刷新。対象はEP71-76も含む
+> （メインスレ発注 docs/handover/MAIN_TO_THUMBNAILS_2026-08-24.md）。EP35はライブ反映済み。
 > 対象 = winnerスタイル合成済みの21枚（各話01が本命）。確定ファイル:
 > EP77-82 = `09_package/thumbnail.selected.v001.png`、EP35 = `thumbnail.selected.v003.png`
 > （v001/v002は既存の不変リビジョン）。公開時は各話01/02/03でTest & compare。
