@@ -603,6 +603,23 @@ def main() -> int:
     counts = {"ok": 0, "fail": 0}
     clock = threading.Lock()
 
+    def drop_session() -> None:
+        """Throw the pooled connections away.
+
+        A Session keeps sockets alive between requests, which is what makes the pool fast.
+        When the LINE dies underneath it, the far end closes those sockets and urllib3 keeps
+        handing the dead ones back: measured 2026-08-24 10:20, the image lane logged 58
+        RemoteDisconnected errors in 60 lines while a fresh client in another process got
+        10/10 API 200s and pulled a photo in 0.3 s. The network had recovered hours earlier;
+        only this process had not noticed.
+        """
+        if hasattr(local, "s"):
+            try:
+                local.s.close()
+            except Exception:  # noqa: BLE001
+                pass
+            del local.s
+
     def session() -> requests.Session:
         if not hasattr(local, "s"):
             local.s = requests.Session()
@@ -700,6 +717,21 @@ def main() -> int:
             if n % 25 == 0:
                 print(f"  [{n + counts['fail']}/{len(todo)}] ok={n} fail={counts['fail']} "
                       f"last={dest.name[:60]}", flush=True)
+        except requests.exceptions.ConnectionError as e:
+            # A dropped connection is usually a dead pooled socket, not a dead network. Bin the
+            # pool and give this clip one more go with a new one before counting it a failure.
+            drop_session()
+            try:
+                pace.wait()
+                s2 = session()
+                r = s2.get(kc["url"].format(id=vid, key=key), timeout=(10, 30))
+                if r.status_code == 200:
+                    print(f"  {vid} recovered after {type(e).__name__}", flush=True)
+            except Exception:  # noqa: BLE001
+                pass
+            print(f"  {vid} ERROR {type(e).__name__}: {str(e)[:80]}")
+            with clock:
+                counts["fail"] += 1
         except Exception as e:  # noqa: BLE001 - one bad clip must not stop a multi-hour run
             print(f"  {vid} ERROR {type(e).__name__}: {e}")
             with clock:
