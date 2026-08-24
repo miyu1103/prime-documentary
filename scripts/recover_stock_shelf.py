@@ -402,6 +402,15 @@ class Pace:
         """
         with self.lock:
             self.ok_since_429 += 1
+            # Forget the remembered ceiling after a clean stretch. Measured 2026-08-24 19:24:
+            # the lane sat at 75/hour while a probe at 600/hour with fresh ids drew 0 of 24
+            # refusals -- the provider was not limiting anything. known_bad_gap was: every 429
+            # recorded the pace it happened at as permanently unsafe, so a refusal at 150/hour
+            # lowered the ceiling to 130, the next one to 65, and nothing could lift it again.
+            # That is the same one-way ratchet as this morning, moved one variable across.
+            # A transient refusal is not evidence that a slow pace is too fast.
+            if self.known_bad_gap and time.time() - self.last_429 > 1200:
+                self.known_bad_gap = 0.0
             if self.ok_since_429 < 25 or self.gap <= self.base_gap:
                 return None
             # Climb back 10% at a time, and never back onto a pace that has already been

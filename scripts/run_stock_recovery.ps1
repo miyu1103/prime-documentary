@@ -59,7 +59,11 @@ if ($Source -eq 'pexels' -and $Kind -ne 'image') {
 
 $kinds = if ($Kind -eq 'both') { @('video', 'image') } else { @($Kind) }
 foreach ($kk in $kinds) {
-    $w = if ($kk -eq 'image') { 8 } else { $Workers }
+    # Images were 8, measured as the knee against a HEALTHY line on 2026-08-23. On 2026-08-24
+    # the image lane drew 429s steadily at that width while the video lane, four wide, held
+    # 260/hour for twelve hours with almost none. The pacer gates the metadata call only, so
+    # eight concurrent CDN fetches is eight times the pressure the pacer can see. Four.
+    $w = $Workers
     Add-Content -Path $log -Encoding utf8 -Value ("--- {0} {1} pass start {2} ({3} workers) ---" -f $Source, $kk, (Get-Date -Format 'HH:mm:ss'), $w)
     & py -3.11 -u scripts\recover_stock_shelf.py --source $Source --kind $kk --write --workers $w *>&1 |
         Tee-Object -FilePath $log -Append | Out-Null
