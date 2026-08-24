@@ -326,6 +326,92 @@ def term_hits(term: str, text: str) -> bool:
 # Listed per theme rather than switched on globally, because the existing themes were tuned
 # against this gate and measured against it, and changing it under them would be a second
 # uncontrolled experiment.
+# Tag-list sources do not carry phrases. Pixabay titles are comma-separated tags -- "spotlight,
+# lamp, light, night, bright, glow" -- so requiring "street lamp glow night" verbatim admitted
+# NOTHING: measured 2026-08-24, 0 candidates across two sources and five themes. That was a
+# second wrong measurement of the same kind as the first: the phrase rule was validated against
+# titles I wrote myself, which contained the phrase, instead of against titles the sources
+# actually return.
+#
+# What a tag list can express is CO-OCCURRENCE. A lamp at night is "lamp" AND "night" and not a
+# firework. So each of these themes carries groups that must all be represented, plus a deny
+# list for the things that kept arriving: abstract renders, famous skylines, landscapes.
+CO_OCCUR: dict[str, dict] = {
+    "night_road_lamp": {
+        "all": [["lamp", "street lamp", "streetlight", "street light", "lamppost", "lamp post",
+                 "headlight", "headlights", "asphalt", "road", "street", "kerb", "curb"],
+                ["night", "dark", "darkness", "dusk", "evening", "rain", "wet", "fog"]],
+        "deny": ["firework", "confetti", "abstract", "3d", "render", "party", "christmas",
+                 "galaxy", "space", "bokeh background", "skyline", "bridge", "terrace",
+                 "tropical", "beach", "flower", "butterfly", "bulb", "candle", "diode",
+                 # added after the 2026-08-24 contact sheet: a wind turbine and a moonlit
+                 # landscape are places, and a place is the one thing these registers must not
+                 # carry. "ai generated" anywhere is invariant 11.
+                 "turbine", "windmill", "moon", "landscape", "mountain", "ai generated",
+                 "computer generated", "sunrise", "sunset", "aerial", "drone"],
+    },
+    "window_interior_light": {
+        "all": [["window", "blind", "blinds", "curtain", "curtains", "sunbeam", "windowsill"],
+                ["interior", "indoor", "indoors", "room", "wall", "floor", "table", "shadow",
+                 "light", "home", "house", "apartment"]],
+        "deny": ["firework", "confetti", "abstract", "3d", "render", "galaxy", "beach",
+                 "skyline", "flower", "butterfly", "portrait", "model", "wedding",
+                 # the contact sheet returned forests, fog, snow and a theatre curtain
+                 "forest", "trees", "fog", "mist", "snow", "landscape", "mountain",
+                 "sunrise", "theater", "theatre", "stage", "ai generated", "computer generated"],
+    },
+    "clock_and_waiting": {
+        "all": [["clock", "wristwatch", "watch", "hourglass", "calendar", "timer",
+                 "second hand", "pocket watch"],
+                ["close up", "closeup", "macro", "wall", "desk", "table", "hand", "hands",
+                 "wooden", "antique", "vintage", "old", "sand", "waiting room", "ticking"]],
+        # Every clock the sheet returned on 2026-08-24 was a motion graphic: floating alarm
+        # clocks on black, a clock made of fire, a spiral of dials, green neon rings. 0 of 5.
+        # A real clock is filmed close, so the deny list carries the vocabulary of animation
+        # and the second group now asks for the language of a camera.
+        "deny": ["firework", "confetti", "abstract", "3d", "render", "galaxy", "smartwatch",
+                 "app", "fitness", "countdown animation", "ai generated", "computer generated",
+                 "landscape", "beach", "loop", "neon", "glow", "glowing", "animation",
+                 "animated", "motion graphic", "background", "digital art", "spiral",
+                 "particle", "fire", "flame", "led", "hologram"],
+    },
+    "corridor_and_stairs": {
+        "all": [["corridor", "hallway", "hall", "stair", "stairs", "staircase", "stairwell",
+                 "handrail", "banister", "elevator", "lift", "doorway"],
+                ["empty", "walking", "walk", "footstep", "footsteps", "interior", "indoor",
+                 "building", "concrete", "light", "shadow", "old", "abandoned"]],
+        "deny": ["firework", "confetti", "abstract", "3d", "render", "galaxy", "beach",
+                 "flower", "butterfly", "wedding", "escalator mall",
+                 "ai generated", "computer generated", "landscape", "forest", "mountain"],
+    },
+    "anonymous_crowd": {
+        "all": [["crowd", "crowds", "pedestrian", "pedestrians", "commuter", "commuters",
+                 "people", "silhouette", "silhouettes", "feet", "legs", "footsteps"],
+                ["walking", "walk", "street", "pavement", "sidewalk", "blur", "blurred",
+                 "motion", "slow motion", "rush", "city", "crossing", "backlit"]],
+        "deny": ["leopard", "bird", "egret", "gull", "bee", "bumblebee", "insect", "animal",
+                 "flower", "laptop", "desk", "office", "sock", "sand", "beach", "wedding",
+                 "portrait", "smile", "yoga", "fitness", "hiker", "hiking",
+                 # the contact sheet returned a shiba inu, a bus, an aerial intersection and
+                 # a set of 3D figures -- none of them an anonymous crowd
+                 "dog", "shiba", "cat", "puppy", "bus", "car", "vehicle", "traffic",
+                 "aerial", "drone", "timelapse", "time lapse", "3d", "figure", "render",
+                 "ai generated", "computer generated", "silhouette icon", "vector"],
+    },
+}
+
+
+def co_occurrence_ok(theme: str, text: str) -> bool:
+    """True when a tag-list title shows every required group and nothing on the deny list."""
+    rule = CO_OCCUR.get(theme)
+    if not rule:
+        return True
+    low = text.lower()
+    if any(d in low for d in rule["deny"]):
+        return False
+    return all(any(term_hits(w, low) for w in group) for group in rule["all"])
+
+
 PHRASE_ONLY_THEMES = {
     "night_road_lamp", "window_interior_light", "clock_and_waiting",
     "corridor_and_stairs", "anonymous_crowd",
@@ -357,7 +443,7 @@ def relevance(theme: str, title: str, desc: str = "") -> tuple[int, list[str], l
     # stable for the sibling lanes that import it.
     if not phrase_ok and not any(term_weight(theme, t) >= 30 for t in matched):
         score = min(score, 15)
-    if theme in PHRASE_ONLY_THEMES and not phrase_ok:
+    if theme in PHRASE_ONLY_THEMES and not (phrase_ok or co_occurrence_ok(theme, low)):
         score = min(score, 15)
     negs = [n for n in GLOBAL_NEG if n in low]
     score -= 25 * len(negs)
