@@ -219,18 +219,54 @@ def compose(plate: Path, headline: str, sub: str, band: str, out: Path) -> None:
 # win; the live winner's tallest component is ~94 px. Winner rows therefore print the gate
 # line for the record but a text_height failure against the 150 px floor is EXPECTED there.
 # ---------------------------------------------------------------------------------------------
-WINNER_FONT_PX = 130
-WINNER_RED = (226, 32, 38)
+WINNER_FONT_PX = 150
+WINNER_ACCENTS = {"red": (226, 32, 38), "yellow": (255, 200, 12)}
+
+# Anton (SIL OFL, licence bundled beside it) is the heavy condensed grotesque the reference
+# winners actually use; Arial Bold was a stand-in. Falls back to the system list.
+WINNER_FONT_CANDIDATES = [str(ROOT / "assets" / "fonts" / "Anton-Regular.ttf")] + FONT_CANDIDATES
 
 
-def compose_winner(plate: Path, lines: list[str], accent_line: int, side: str, out: Path) -> None:
+def load_winner_font(px: int) -> ImageFont.FreeTypeFont:
+    for p in WINNER_FONT_CANDIDATES:
+        if Path(p).exists():
+            return ImageFont.truetype(p, px)
+    return ImageFont.load_default()
+
+
+def _grade_plate(im: Image.Image) -> Image.Image:
+    """Deterministic cinema grade: teal shadows, warm highlights, vignette, gentle sharpen.
+
+    Numbers were eyeballed against the live 4.48% winner, which has exactly this split-tone
+    (cool dark house, warm doorway). Subtle on purpose -- the plate must stay the subject."""
+    im = ImageEnhance.Contrast(im).enhance(1.06)
+    im = ImageEnhance.Color(im).enhance(1.10)
+    lut_r, lut_g, lut_b = [], [], []
+    for v in range(256):
+        s = max(0, 128 - v) / 128.0      # shadow amount
+        h = max(0, v - 128) / 127.0      # highlight amount
+        lut_r.append(max(0, min(255, round(v - 10 * s + 9 * h))))
+        lut_g.append(max(0, min(255, round(v + 4 * s + 2 * h))))
+        lut_b.append(max(0, min(255, round(v + 12 * s - 9 * h))))
+    im = im.point(lut_r + lut_g + lut_b)
+    im = im.filter(ImageFilter.UnsharpMask(radius=3, percent=70, threshold=3))
+    mask = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(mask).ellipse((-int(W * 0.25), -int(H * 0.30),
+                                  W + int(W * 0.25), H + int(H * 0.30)), fill=255)
+    mask = mask.filter(ImageFilter.GaussianBlur(120))
+    return Image.composite(im, ImageEnhance.Brightness(im).enhance(0.72), mask)
+
+
+def compose_winner(plate: Path, lines: list[str], accent_line: int, side: str, out: Path,
+                   accent: str = "red") -> None:
     im = Image.open(plate).convert("RGB")
     scale = max(W / im.width, H / im.height)
     im = im.resize((round(im.width * scale), round(im.height * scale)), Image.LANCZOS)
     im = im.crop(((im.width - W) // 2, (im.height - H) // 2,
                   (im.width - W) // 2 + W, (im.height - H) // 2 + H))
+    im = _grade_plate(im)
 
-    font = load_font(WINNER_FONT_PX)
+    font = load_winner_font(WINNER_FONT_PX)
     lines = [l.upper() for l in lines]
     widths = [font.getbbox(l)[2] for l in lines]
     if max(widths) > W * 0.48:
@@ -242,7 +278,7 @@ def compose_winner(plate: Path, lines: list[str], accent_line: int, side: str, o
         # planted the words on the subject's face -- the owner caught it on the EP71-76 sheet.
         # Detail (edge density) finds the subject regardless of its brightness; luma only breaks
         # ties, weighted low.
-        from PIL import ImageFilter, ImageStat
+        from PIL import ImageStat
         g = im.convert("L")
         band = g.crop((0, 200, W, 640))
         edges = band.filter(ImageFilter.FIND_EDGES)
@@ -254,21 +290,40 @@ def compose_winner(plate: Path, lines: list[str], accent_line: int, side: str, o
                            + ImageStat.Stat(band.crop(box)).mean[0] * 0.2)
         side = "left" if score["left"] <= score["right"] else "right"
 
-    lh = font.size + 18
-    total = lh * len(lines) - 18
+    lh = font.size + 22
+    total = lh * len(lines) - 22
     top = int(H * 0.52) - total // 2
-    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    d = ImageDraw.Draw(layer)
     if accent_line < 0:
         accent_line = len(lines) + accent_line
+    accent_rgb = WINNER_ACCENTS.get(accent, WINNER_ACCENTS["red"])
+
+    # A soft dark pool behind the text block only (not a band): lifts legibility on busy or
+    # bright plates without hiding the picture. Then a colour bloom under the accent word so
+    # red never sinks into a dark plate (the itaewon 3.2 problem).
+    block_w = max(widths)
+    bx = 55 if side == "left" else W - 55 - block_w
+    pool = Image.new("L", (W, H), 0)
+    ImageDraw.Draw(pool).rounded_rectangle(
+        (bx - 70, top - 60, bx + block_w + 70, top + total + 60), radius=90, fill=110)
+    pool = pool.filter(ImageFilter.GaussianBlur(70))
+    im = Image.composite(ImageEnhance.Brightness(im).enhance(0.55), im, pool)
+
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    dg = ImageDraw.Draw(glow)
     y = top
     for idx, line in enumerate(lines):
         w = font.getbbox(line)[2]
-        x = 55 if side == "left" else W - 55 - w
-        fill = WINNER_RED if idx == accent_line else (255, 255, 255)
-        d.text((x, y), line, font=font, fill=fill, stroke_width=12, stroke_fill=(0, 0, 0, 255))
+        x = bx if side == "left" else W - 55 - w
+        fill = accent_rgb if idx == accent_line else (255, 255, 255)
+        if idx == accent_line:
+            dg.text((x, y), line, font=font, fill=accent_rgb + (160,))
+        d.text((x, y), line, font=font, fill=fill, stroke_width=11, stroke_fill=(0, 0, 0, 255))
         y += lh
-    Image.alpha_composite(im.convert("RGBA"), layer).convert("RGB").save(out, quality=95)
+    glow = glow.filter(ImageFilter.GaussianBlur(26))
+    base = Image.alpha_composite(im.convert("RGBA"), glow)
+    Image.alpha_composite(base, layer).convert("RGB").save(out, quality=95)
 
 
 def main() -> int:
@@ -313,7 +368,8 @@ def main() -> int:
         try:
             if row.get("style") == "winner":
                 compose_winner(plate, row["lines"], row.get("accent_line", -1),
-                               row.get("side", "auto"), out)
+                               row.get("side", "auto"), out,
+                               row.get("accent_color", "red"))
             else:
                 compose(plate, row["headline"], row.get("sub", ""), row.get("band", "lower"), out)
         except ValueError as exc:
