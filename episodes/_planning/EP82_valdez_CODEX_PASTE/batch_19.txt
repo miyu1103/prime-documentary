@@ -1,0 +1,56 @@
+EP82_valdez — 画像発注 バッチ 19/23（8枚）
+区分: PEOPLE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, ship name, funnel marking, company colour, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) V145.png
+   [V145]  flags: P
+   Two officers seen from behind on a bridge wing at night, deck lights blazing beyond
+
+2) V146.png
+   [V146]  flags: P
+   A crew member seen from behind climbing a steel stairway under bright work lights
+
+3) V147.png
+   [V147]  flags: P
+   A deck hand seen from behind at a valve wheel on a floodlit tanker deck at night
+
+4) V148.png
+   [V148]  flags: P
+   A figure seen from behind walking away down a brightly lit ship's alleyway
+
+5) V149.png
+   [V149]  flags: P
+   A crew member seen from behind sitting alone in a bright mess room
+
+6) V150.png
+   [V150]  flags: P
+   A person seen from behind at a terminal control desk, mimic panel glowing ahead
+
+7) V151.png
+   [V151]  flags: P
+   An office worker seen from behind at a lit desk covered in blank forms
+
+8) V152.png
+   [V152]  flags: P
+   A person seen from behind at a courtroom lectern facing a bright empty bench
