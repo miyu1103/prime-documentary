@@ -1,5 +1,21 @@
 # EP77 · The Ship Got Its Lights Back. It Never Got Its Propeller Back. — SCRIPT v001
 
+<!--
+CONTROLLING IDEA (never spoken in the film):
+Power coming back is not the same as control coming back.
+
+MOTIF: light. Working lights on an empty deck. Lights going out. Lights coming back on a
+ship that still cannot steer. A work lamp burning on a bridge at dawn. Never explained
+as a symbol.
+
+R3: six men died and a criminal case arising from this casualty was live when this was
+written. An indictment is an accusation and nothing more. No charge, plea or outcome may
+be stated as a finding of fact.
+
+Every factual line traces to EP77_keybridge_FACTS_LEDGER.v001.md by KB- id.
+Source: NTSB preliminary and investigative material, page-cited in the ledger.
+-->
+
 ## HOOK
 At twenty-seven minutes and fifty-three seconds past one in the morning, a duty officer in Baltimore gave an order to stop the traffic. <!-- KB-113 -->
 Sixty-seven seconds later the bridge was in the river, and six men who had been filling potholes on it were gone. <!-- KB-113, KB-002, KB-004 -->

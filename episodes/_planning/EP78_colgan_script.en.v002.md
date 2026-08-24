@@ -2,7 +2,7 @@
 
 <!--
 CONTROLLING IDEA (never spoken in the film):
-A rule nobody can verify is not a rule. It is a wish with a penalty attached.
+A rule nobody can verify is only a wish with a penalty attached.
 
 MOTIF: the red and black bar at the bottom of the airspeed scale. Shown low and still,
 shown climbing, shown reached, shown low and still again. Never explained as a symbol.

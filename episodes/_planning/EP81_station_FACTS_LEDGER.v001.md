@@ -130,6 +130,52 @@ foams. Fifteen seconds, or nothing at all.
 | ST-606 | NIST records the behaviours that compromise a protective system: installing decorations that exceed flame-spread provisions, exposing the building to strong ignition sources, **exceeding the posted occupancy limits, temporarily blocking an exit, and disabling sprinklers for maintenance** | 27, 238 |
 | ST-607 | NIST states the need to **understand better how crowds behave in emergencies, to pinpoint the factors that lead to crowd crush**, and to change building design to reduce the possibility | 28 |
 
+
+## 8 · The foam, in detail
+
+| id | fact | page |
+|---|---|---|
+| ST-211 | The foam was installed on the **rear wall, the platform wall and the alcove, as a sound attenuation material** | 71 |
+| ST-212 | **Packaging-grade polyurethane foam typically contains no fire-retardant additives at all** and is sold commercially in 1.22 m by 2.44 m sheets -- four feet by eight. Grey. Available flat or convoluted, the "egg-crate" pattern | 71 |
+| ST-213 | Photographs of the interior **clearly show gaps where two sheets of foam meet**, and gaps between the foam and the wall at the external corners of the alcove | 72 |
+| ST-214 | Earlier photographs show the foam grey; **later photographs show it darker, indicating it may have been sprayed with black paint**. The surface also had a glittery appearance, possibly wet paint dusted with glitter | 72 |
+| ST-215 | The foam was installed **over rigid polystyrene foam thermal insulation** laid between the wood studs | 72 |
+| ST-216 | The ceiling over the dance floor, the raised platform and the area toward the sun room had been **raised to 3.8 m**, built of gypsum board, with a light rack suspended about 12 cm below it | 71 |
+| ST-217 | Cone calorimeter results at a 35 kW/m2 flux: the **non-flame-retarded** foam peaked at about **600 kW/m2**; the **flame-retarded** foam at **453**; **the ceiling tile did not ignite at all**; wood panelling took **41 seconds** to sustained ignition | 73, 78 |
+| ST-218 | ⚠ **An important nuance.** In one NIST bench arrangement, a gerb's sparks were aimed at foam with a deliberate gap and lip built in to catch hot sparks. **No ignition was observed.** The sparks caused pitting -- small melted areas -- but the process did not propagate | 91 |
+
+**ST-218 must be carried honestly.** Ignition was not automatic in every arrangement. The film
+may not say a pyrotechnic near this foam always ignites it.
+
+## 9 · The response
+
+| id | fact | page |
+|---|---|---|
+| ST-701 | **The first 911 call reporting a fire came before 11:09 pm -- less than 40 seconds after ignition of the foam** | 23 |
+| ST-702 | West Warwick police officers already at the scene reported the fire **about one minute after ignition** | 23 |
+| ST-703 | That report brought a dispatch of **four engine companies, a tower-ladder truck, a rescue unit and a battalion chief** | 23 |
+| ST-704 | **The first fire engine was staffed with one firefighter and one fire officer.** It was confirmed on scene **less than five minutes after the first 911 call** | 23 |
+| ST-705 | The first apparatus were about **500 m west of the nightclub** when dispatched and arrived **within three minutes of dispatch, roughly five and a half minutes into the fire** | 58 |
+| ST-706 | On arrival the first engine reported heavy fire conditions, with flame visible at multiple locations and heavy volumes of thick black smoke | 58 |
+| ST-707 | **Water from the first engine's booster tank was flowing at about 11:14 pm, roughly six minutes into the fire** | 40 |
+| ST-708 | The battalion chief activated a task force under a mutual aid agreement, bringing **seven additional engine and ladder companies** from surrounding communities, and requested **twelve rescue units** | 40 |
+| ST-709 | **A mass casualty plan was implemented within about ten minutes of the first engine arriving** | 23 |
+| ST-710 | **NIST's own sentence, verbatim in substance:** given the hazardous mix of materials in The Station and the lack of installed sprinklers, **nothing that the fire department could have done that night would have saved the building from the fast growing fire** | 23 |
+
+**ST-710 is why the fire service is not a thread in this film.** The investigators closed it.
+
+## 10 · Two details the report is careful about
+
+| id | fact | page |
+|---|---|---|
+| ST-801 | **The foam at the vertical corners of the drummer's alcove ignited 8 seconds after the pyrotechnic display was initiated** | 50 |
+| ST-802 | **The crowd crush occurred in the front vestibule**, before 90 seconds, and **almost entirely disrupted the flow through the main exit**. Many people became **stuck in the prone position in the exterior double doors** | 22 |
+| ST-803 | **The windows accounted for over one third of the successful evacuations** | 22 |
+| ST-804 | NIST estimated evacuation using two commercial packages, **Simulex and buildingEXODUS**, distributing **420 occupants** through the floor plan | 203 |
+| ST-805 | The modelled densities: the dance floor and platform area at the maximum the model codes permit, **2.17 persons per square metre**, and the sun room and raised area at **1.56** | 203 |
+| ST-806 | NIST tracked one occupant through his whole evacuation on video, and states that **his face has been blurred in the published figures in order to preserve his anonymity** | 180 |
+| ST-807 | The conditions around the platform, dance floor, sun room and dart room **would have led to severe incapacitation or death within about a minute and a half of ignition for anyone remaining standing** -- and not much longer even for those close to the floor | 23 |
+
 ---
 
 ## Open items — must be closed before the ENDING is written

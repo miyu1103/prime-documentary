@@ -250,7 +250,9 @@ So the greasing interval had grown by four hundred per cent, and the check that 
 
 And then there is the sentence that removes the floor from underneath all of it.
 
-Before July 2000 — five months after this accident — an end play measurement that came out inside the limits was not required to be recorded anywhere. <!-- AK-309 -->
+Before July 2000 - five months after this accident - an end play measurement that came out inside the limits was not required to be recorded anywhere. <!-- AK-309 -->
+
+The thing that changed it has a number. Airworthiness Directive 2000-15-15, issued that July. After it, an in-limits reading goes in the file like any other. <!-- AK-902 -->
 
 Read that slowly.
 
@@ -333,7 +335,11 @@ The Safety Board could not test the actual fixture used for the accident aeropla
 
 So the number from 1997 was never written down, and the tool that produced it could no longer be examined.
 
-Investigators asked the airline for information about that fixture on the twenty-sixth of June, 2000. The airline provided it on the second of August — the same day it told the regulator the fixtures might be wrong. <!-- AK-411 -->
+Investigators asked the airline for information about that fixture on the twenty-sixth of June, 2000. The airline provided it on the second of August - the same day it told the regulator the fixtures might be wrong. <!-- AK-411 -->
+
+A federal grand jury looked at all of this. In December 2001, prosecutors stated that no charges would be filed against Alaska Airlines. <!-- AK-901 -->
+
+That is worth stating early rather than saving, because it changes what kind of story the rest of this is. Nobody was charged. Not the airline, not a manager, not the mechanic. Whatever failed here did not resolve into a person a prosecutor could name.
 
 For its part, the airline's own submission to the Board argued that the tool used in 1997 had been made by the manufacturer after all. Its evidence for that was the mechanic's deposition, taken in 2002 in the civil litigation, in which he said he thought it was. <!-- AK-412 -->
 
@@ -404,8 +410,6 @@ That is what it looks like when everything is correct. It looks like a needle, n
 
 ⟨HELD⟩
 
-A federal grand jury looked at this. In December 2001, prosecutors said no charges would be filed against Alaska Airlines. <!-- AK-901 -->
-
 Nobody was charged, and that is not a scandal. It is the shape of the thing. There was no single person who could have been charged, because the failure was distributed across fifteen years of decisions that were each, on their own, defensible.
 
 The greasing interval was extended four times, and each extension was approved. <!-- AK-202, AK-207, AK-102 -->
@@ -416,7 +420,7 @@ The measurement was taken with the only tool the airline owned, and that tool di
 
 And when the measurement came out inside the limits, nobody wrote it down, because the rules did not require it. <!-- AK-309 -->
 
-Five months after eighty-eight people died, that last one changed. Since July 2000, the number gets recorded. <!-- AK-309, AK-902 -->
+That last one is the one that changed. <!-- AK-902 -->
 
 Tonight, somewhere, a mechanic is clamping a fixture to the tail of an aeroplane and watching a needle settle.
 

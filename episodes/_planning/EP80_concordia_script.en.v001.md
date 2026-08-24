@@ -2,7 +2,7 @@
 
 <!--
 CONTROLLING IDEA (never spoken in the film):
-The ship stayed up long enough. Nothing else did.
+The ship stayed up long enough for everyone and nothing else did.
 
 MOTIF: the angle of a floor. Level. Thirteen degrees. Thirty. Forty. Eighty. Level again.
 Never explained as a symbol.
