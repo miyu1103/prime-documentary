@@ -136,6 +136,30 @@ stopped making, and the appraisal system paid people to be tired.
 | VZ-511 | The judgment was **vacated and remanded**, on **25 June 2008 — nineteen years after the grounding** | S2 p1, p45 |
 | VZ-512 | The plaintiffs are described as people **"who depend on Prince William Sound for their livelihoods"** | S2 p1 |
 
+
+## 7 · What the Supreme Court's own account contains
+
+| id | fact | source |
+|---|---|---|
+| VZ-601 | **The tanker was over 900 feet long** | S2 p6 |
+| VZ-602 | The state and federal environmental claims were settled with **payments exceeding $1 billion** | S2 p6 |
+| VZ-603 | The plaintiffs included **commercial fishermen and native Alaskans** bringing claims for economic losses | S2 p6 |
+| VZ-604 | The jury heard evidence that the master drank **"at Exxon-sponsored functions, at various ports, and aboard Exxon tankers"** | S2 p7 |
+| VZ-605 | The jury also heard **contested** testimony that he drank with Exxon officials and that **members of Exxon management knew of his relapse**. ⚠ the opinion marks this as contested; report it as testimony the jury heard, never as established fact | S2 p7 |
+| VZ-606 | **Exxon had a clear policy prohibiting employees from serving onboard within four hours of consuming alcohol** | S2 p7 |
+| VZ-607 | **Exxon presented no evidence that it monitored him after his return to duty, or that it considered giving him a shoreside assignment** | S2 p7 |
+| VZ-608 | The trial was **divided into four phases**, and the punitive-damages class was **32,000 people** | S2 p18 |
+| VZ-609 | The Phase III punitive verdict was returned on **16 September 1994**. The Supreme Court decided the case on **25 June 2008** | S2 p15, p1 |
+| VZ-610 | **Exxon filed eleven post-trial motions**, all of which were denied | S2 p15 |
+| VZ-611 | The trial court instructed the jury that punitive damages exist **not to compensate but to punish and deter**, and told it to consider **the reprehensibility of the conduct, the defendants' financial condition, the magnitude of the harm, and any mitigating facts** | S2 p11 |
+| VZ-612 | The Supreme Court treats the case **categorically as one of recklessness, because that is what the jury found** — and adds expressly that in contrasting it with categories of greater fault it does **"not mean to suggest that Exxon's and Hazelwood's failings were less than reprehensible"** | S2 p40 |
+| VZ-613 | On the studies the Court relied on: **most accounts show the median ratio of punitive to compensatory awards remains less than 1:1**, and the data do not show a marked increase in the percentage of cases carrying punitive awards | S2 p2 |
+| VZ-614 | **The Court names the real problem as "the stark unpredictability of punitive awards"**, and says the spread between high and low individual awards is unacceptable | S2 p2 |
+| VZ-615 | The Court's reasoning for the cap: awards at or below the median **"would roughly express jurors' sense of reasonable penalties in cases like this one that have no earmarks of exceptional blameworthiness"** | S2 p4 |
+
+**VZ-606 and VZ-607 sit beside VZ-303 and VZ-305 and say the same thing twice, from two
+different institutions.** There was a rule, and there was no follow-up.
+
 ---
 
 ## Open items — must be closed before the ENDING is written
