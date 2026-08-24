@@ -1,10 +1,11 @@
-# EP79 alaska261 — 本編プレート発注 A（184枚・これで全部）
+# EP79 alaska261 — 本編プレート発注 **v002**（192枚・これ1本で全部）
 
 > 保存先: `E:\pd-media\05_visuals\alaska261\img\`  ファイル名は id そのまま（例 `K001.png`）
 > 出力は 1672x941。**文字は一切焼き込まないでください。**
 >
-> **この発注書は台本より先に出しています。** そのぶん予備を **36枚（25%）** 積んであります。
-> EP77 は121枚発注して10枚（8%）の追加が出ました。EP78 は18%。今回は台本が後から来るので25%です。
+> **台本は完成済み（3ゲート緑）。この発注書はその台本と突き合わせ済みです。**
+> v001（184枚）に、台本を書いて初めて必要になった8枚（K185-K192）を統合しました。**追加発注は出ません。**
+> 予備36枚（K149-K184）はそのまま残してあります。
 >
 > **この話数で描いてはいけないもの（機械が拒否します）**
 > 事故そのもの・墜落・残骸・海上の破片・裏返った機体・引き揚げ・遺体・葬儀・子ども・読める文書。
@@ -71,6 +72,9 @@
 | K037 | K037 | A wide view of the southern Californian coastline from the air at golden hour, brilliant low sun, the ocean glittering | |
 | K038 | K038 | A US Navy-style coastal air station seen in bright daylight, runway and hangars, clear sky | |
 | K039 | K039 | An empty stretch of Pacific water at dusk under a brilliant orange sky, calm, no boats | |
+| K185 | K185 | Two hands gripping an airliner control column and holding it back under load, seen from the side, tendons showing, a bright instrument glow washing across the knuckles | P |
+| K186 | K186 | An analogue artificial horizon instrument rolling back toward level, crisp and brightly backlit, a hard specular highlight across the glass | |
+| K187 | K187 | A 2000-era cockpit seen wide from behind the seats, two crew silhouetted against a brilliant afternoon sky over water, every instrument alight | P |
 
 ### ACT_2
 
@@ -145,6 +149,9 @@
 | K101 | K101 | A row of MD-80 airliners parked on an apron in brilliant daylight, clear sky, no activity | |
 | K102 | K102 | An airline maintenance base seen wide in bright daylight, hangars and parked aircraft, mountains beyond | |
 | K103 | K103 | An aircraft on jacks inside a hangar in bright light, panels open along the belly | |
+| K188 | K188 | Two mechanics working a measurement together inside an aircraft tail cavity, one applying a torque wrench and the other watching a dial gauge, both seen from behind, a work lamp blazing between them | P |
+| K189 | K189 | An abrasive blasting cabinet in a hangar workshop, fine reddish grit heaped in the hopper, a bright inspection lamp blazing across it | |
+| K190 | K190 | Fine reddish grit particles caught in dark grease on a steel surface, extreme macro, a bright examination lamp raking across the contamination | |
 
 ### ACT_4
 
@@ -176,6 +183,8 @@
 | K127 | K127 | A regulatory office in daylight with a wall of ring binders, a brilliant window, an empty desk | |
 | K128 | K128 | A steel component sealed in an evidence bag on a bright laboratory bench, unlabelled | |
 | K129 | K129 | A conference table with a jackscrew assembly laid across it under brilliant overhead light, several empty chairs around | |
+| K191 | K191 | Rows of steel jackscrew assemblies laid out on long benches in a brightly lit overhaul shop, dozens of them receding into the distance | |
+| K192 | K192 | An engineering display board split into two halves, one side showing structural frames and the other showing system schematics, brilliant even lighting, linework only, no lettering | |
 
 ### ENDING
 
