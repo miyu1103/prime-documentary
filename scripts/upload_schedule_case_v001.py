@@ -114,6 +114,14 @@ CONFIG = {
     # the 08-24 shorts sit at 06/09/18/21 and 12:00 is free (yt_schedule_audit, 2026-08-22).
     # The master is v001 and its sha is the one the acceptance receipt and the shipped-frames
     # review are both bound to (3a11cb7c). Title/description/tags come from the packaging file.
+    # EP71 oroville. 2026-08-26 12:00 JST. The 08-25 12:00 slot could not be filled: the Shorts
+    # lane spent the 08-24 quota by 16:20 and the reset (16:00 JST) lands after noon, so the
+    # 16:05 push uploads this on 08-25 and it publishes 08-26 (handover 2026-08-24 §1). The
+    # 08-25T12:00 value that briefly lived here would have been IN THE PAST at push time and
+    # the past-publishAt guard would have burned the slot. Master v001, sha bound to
+    # acceptance_receipt v001 and to the 61-sheet shipped-frames review.
+    "oroville": {**_from_meta("PD-2026-071-oroville", "oroville",
+                       "2026-08-26T12:00:00+09:00", "2026-08-26T03:00:00Z")},
     "wronghouse": {**_from_meta("PD-2026-070-wronghouse", "wronghouse",
                        "2026-08-24T12:00:00+09:00", "2026-08-24T03:00:00Z")},
     "florence": {
