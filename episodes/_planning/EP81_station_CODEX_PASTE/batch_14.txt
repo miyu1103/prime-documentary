@@ -1,0 +1,56 @@
+EP81_station — 画像発注 バッチ 14/24（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, brand name, company colour scheme, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) S105.png
+   [S105]  flags: 
+   A pressure gauge and a length of charged pipe on a test rig, a bright work lamp beside it
+
+2) S106.png
+   [S106]  flags: 
+   A laboratory ventilation hood with a bright light inside it, empty and clean
+
+3) S107.png
+   [S107]  flags: 
+   A computational simulation of a room shown as brilliant coloured temperature bands on a dark screen, the screen glow blown out and filling the frame, no lettering
+
+4) S108.png
+   [S108]  flags: 
+   A cutaway three-dimensional render of a small building interior, edge-lit against black, rooms and doorways picked out, no lettering
+
+5) S109.png
+   [S109]  flags: 
+   A wide bright laboratory hall with a full-scale timber mock-up standing in the middle of it
+
+6) S110.png
+   [S110]  flags: 
+   A steel gantry of video cameras aimed at a test enclosure, a bright lamp above them
+
+7) S111.png
+   [S111]  flags: 
+   A blank ruled laboratory notebook open on a bench under a bright angled lamp, no writing
+
+8) S112.png
+   [S112]  flags: 
+   An oscilloscope-style trace glowing bright on a dark laboratory screen, curves only, no lettering
