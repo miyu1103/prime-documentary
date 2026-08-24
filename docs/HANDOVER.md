@@ -162,6 +162,15 @@ them, so they live here rather than in a dated file.
 
 ## Current narrative
 
+**[2026-08-25](handover/2026-08-25.md)** — **the sheet-reading session (mid-session snapshot).**
+EP75 lahaina's master shipped **180 cuts / 678 s of raw depth maps as picture** (two globs swept
+`_depth` companions into the pools — both fixed, gate added and demonstrated); EP74 itaewon's
+re-render still carried the wrong-country class at scale — full pool country-eyeball rejected
+**116 of 248 clips**, 66 Korea-labeled replacements staged, spec gained 33 place terms, film
+rebuilt clean. ComparisonBars grouping + QuoteCard attribution wrap fixed for every future
+render. Both defective masters carry recorded REJECT reviews; renders re-queued in deadline
+order. EP72 L169 accepted (20/20, READY); uri pruned 26 and READY.
+
 **[2026-08-24](handover/2026-08-24.md)** — **EP70 published, four masters finished, and the day the
 gates were proved blind.** EP76 morandi's shipped master says **"NaN" in 100-pixel type, five
 times**, with every automated check green on it -- no black frames, runtime and loudness in band,
