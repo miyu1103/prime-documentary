@@ -205,6 +205,62 @@ def compose(plate: Path, headline: str, sub: str, band: str, out: Path) -> None:
     Image.alpha_composite(im.convert("RGBA"), layer).convert("RGB").save(out, quality=95)
 
 
+# ---------------------------------------------------------------------------------------------
+# style = "winner"
+#
+# Calibrated 2026-08-24 against the channel's best measured thumbnail, live on Sz8zPUoBANM
+# (lange/carsearch, 4.48% CTR at 752 impressions): two stacked words set LEFT in the plate's
+# dark side, cap height ~94 px (font ~130), one line in red, thick black rim, and NO scrim --
+# the plate stays fully visible. That is 40% smaller type than this file's default layout and
+# it is the layout that actually converted. The default (215 px, centred, scrimmed) stays for
+# episodes that want it; rows opt in with "style": "winner".
+#
+# The check_thumb_subject_luma 150 px text floor was derived from EP71's plates, not from a
+# win; the live winner's tallest component is ~94 px. Winner rows therefore print the gate
+# line for the record but a text_height failure against the 150 px floor is EXPECTED there.
+# ---------------------------------------------------------------------------------------------
+WINNER_FONT_PX = 130
+WINNER_RED = (226, 32, 38)
+
+
+def compose_winner(plate: Path, lines: list[str], accent_line: int, side: str, out: Path) -> None:
+    im = Image.open(plate).convert("RGB")
+    scale = max(W / im.width, H / im.height)
+    im = im.resize((round(im.width * scale), round(im.height * scale)), Image.LANCZOS)
+    im = im.crop(((im.width - W) // 2, (im.height - H) // 2,
+                  (im.width - W) // 2 + W, (im.height - H) // 2 + H))
+
+    font = load_font(WINNER_FONT_PX)
+    lines = [l.upper() for l in lines]
+    widths = [font.getbbox(l)[2] for l in lines]
+    if max(widths) > W * 0.48:
+        raise ValueError(f"winner-style line too wide for a side placement: {lines!r}")
+
+    if side == "auto":
+        g = im.convert("L")
+        band = g.crop((0, 200, W, 640))
+        left = band.crop((0, 0, int(W * 0.42), band.height))
+        right = band.crop((W - int(W * 0.42), 0, W, band.height))
+        from PIL import ImageStat
+        side = "left" if ImageStat.Stat(left).mean[0] <= ImageStat.Stat(right).mean[0] else "right"
+
+    lh = font.size + 18
+    total = lh * len(lines) - 18
+    top = int(H * 0.52) - total // 2
+    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    d = ImageDraw.Draw(layer)
+    if accent_line < 0:
+        accent_line = len(lines) + accent_line
+    y = top
+    for idx, line in enumerate(lines):
+        w = font.getbbox(line)[2]
+        x = 55 if side == "left" else W - 55 - w
+        fill = WINNER_RED if idx == accent_line else (255, 255, 255)
+        d.text((x, y), line, font=font, fill=fill, stroke_width=12, stroke_fill=(0, 0, 0, 255))
+        y += lh
+    Image.alpha_composite(im.convert("RGBA"), layer).convert("RGB").save(out, quality=95)
+
+
 def main() -> int:
     try:
         sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -245,7 +301,11 @@ def main() -> int:
             return 2
         out = out_dir / f"thumbnail.{a.slug}.{i:02d}.v001.png"
         try:
-            compose(plate, row["headline"], row.get("sub", ""), row.get("band", "lower"), out)
+            if row.get("style") == "winner":
+                compose_winner(plate, row["lines"], row.get("accent_line", -1),
+                               row.get("side", "auto"), out)
+            else:
+                compose(plate, row["headline"], row.get("sub", ""), row.get("band", "lower"), out)
         except ValueError as exc:
             print(f"[thumbs] row {i} REFUSED: {exc}")
             return 2
@@ -257,7 +317,9 @@ def main() -> int:
                             str(out)], capture_output=True, text=True, encoding="utf-8")
         verdict = (r.stdout or r.stderr).strip().splitlines()
         line = next((l for l in verdict if "subject luma" in l or "PASS" in l or "FAIL" in l), "")
-        print(f"  {out.name}  [{row['plate']}]  {line.strip()}")
+        tag = "  (winner-style: text_height<150 vs the EP71 floor is EXPECTED; live winner is ~94px)" \
+            if row.get("style") == "winner" and "text" in line else ""
+        print(f"  {out.name}  [{row['plate']}]  {line.strip()}{tag}")
     print("[thumbs] NOTHING IS SELECTED. Look at them, then copy one to "
           f"{out_dir.name}/thumbnail.selected.v001.png")
     return 0
