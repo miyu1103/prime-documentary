@@ -396,7 +396,11 @@ CO_OCCUR: dict[str, dict] = {
                  # a set of 3D figures -- none of them an anonymous crowd
                  "dog", "shiba", "cat", "puppy", "bus", "car", "vehicle", "traffic",
                  "aerial", "drone", "timelapse", "time lapse", "3d", "figure", "render",
-                 "ai generated", "computer generated", "silhouette icon", "vector"],
+                 "ai generated", "computer generated", "silhouette icon", "vector",
+                 # 2026-08-25 dry-run round: place-specific and child-adjacent titles
+                 # were passing (india/shiva, ukraine/pokrov, baby stroller)
+                 "india", "asia", "asian", "shiva", "culture", "ukraine", "pokrov",
+                 "russia", "baby", "stroller", "pram", "toddler", "child", "kid"],
     },
 }
 

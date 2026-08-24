@@ -1,0 +1,350 @@
+{
+  "episode_id": "PD-2026-074-itaewon",
+  "slug": "itaewon",
+  "status": "DESIGN ONLY - every line traced to a line of episodes/PD-2026-074-itaewon/03_script/script.en.v001.md; checked against episode_spec.v001.json, the highest revision; plates are REUSE of approved episode plates (120/120 accept in runs/qc/itaewon_plate_verdicts.v001.json); not approved for publication",
+  "destination": {
+    "video_id": null,
+    "title": null,
+    "url": null,
+    "privacy": "not_uploaded",
+    "views": 0
+  },
+  "script": "episodes/PD-2026-074-itaewon/03_script/script.en.v001.md",
+  "era_note": "The sloping alley beside the Hamilton Hotel in Itaewon, Seoul, 29 October 2022, and the courts and commission that followed, to 2026. R3-grade sensitivity: 159 people died and their families are alive. Per episode_spec forbidden_subjects, no corpse, CPR, stretcher, blood, funeral, memorial portrait, or victim likeness appears in any line or plate; the alley appears only empty, ordinarily busy, or afterwards - the film's own rule. Per forbidden_claims, no Short names a victim, states 160, names an official without their verified first-instance status, identifies who started the crush, blames drugs or a stampede, asserts the hotel caused the deaths, or says any measure would have prevented it. Signage in plates is Korean or unreadable.",
+  "plate_pool_note": "116 approved plates on disk at remotion/public/itaewon/img (I001/I063/I092/I120 absent from disk); every plate below verified present. All 120 reviewed plates carry verdict=accept. Subjects are from the episode's own Codex plate table: the alley empty/busy/after, station flows, faceless crowds, police presence at distance, corridors and blank paperwork for the courts, and the today-measures set I105-I118.",
+  "shorts_existing": [],
+  "shorts_to_author": ["short295", "short296", "short297"],
+  "existing_angles_do_not_repeat": {},
+  "shorts": [
+    {
+      "short_id": "short295",
+      "angle": "Four hours before anything happened, a caller standing in the alley used the words crushed to death and asked for somebody to come and control it. Eleven calls came; four were attended; the question is what happens to a warning after somebody makes it.",
+      "avoids": "No depiction of the crush, no victims, no toll, no bodies, no CPR, no memorials. Does not say the police did nothing - states that officers were sent and dispersed crowds, and gives the four-of-eleven split with its attribution (Al Jazeera) spoken aloud. Does not name or characterise any caller beyond the published translations the film itself uses.",
+      "funnel_question_left_for_longform": "Where were the officers instead that night - and why did the official answer take three years?",
+      "loop": true,
+      "loop_join": "The last line asks what happens to a warning after somebody makes it; the first line is the warning being made.",
+      "era": "Itaewon, Seoul, South Korea, 29 October 2022",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "Thirty-four minutes past six, on a Saturday evening in Seoul, someone pushed their way out of a crowded alley, took out a phone, and called the police.",
+          "delivery": "building",
+          "source_lines": [
+            "Thirty-four minutes past six, on a Saturday evening in Seoul, someone pushed their way out of a crowded alley, took out a phone, and called the police."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L2",
+          "text": "It was not a crime they were reporting. They said people were being forced uphill into a place where there was no room to come back down.",
+          "delivery": "calm",
+          "source_lines": [
+            "It was not a crime they were reporting.",
+            "They said people were being forced uphill into a place where there was no room to come back down, and that somebody should come and control it."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L3",
+          "text": "Four hours before anything happened, a person standing in that alley used the words crushed to death, and asked for somebody to come and control it.",
+          "delivery": "building",
+          "source_lines": [
+            "Four hours before anything happened, a person standing in that alley used the words crushed to death, and asked for somebody to come and control it."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L4",
+          "text": "Between six thirty-four in the evening and eleven minutes past ten, the police in Itaewon received eleven distress reports about dangerous levels of overcrowding.",
+          "delivery": "intense",
+          "source_lines": [
+            "Between six thirty-four in the evening and eleven minutes past ten, the police in Itaewon received eleven distress reports about dangerous levels of overcrowding."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L5",
+          "text": "Officers were sent. Officers went. They dispersed crowds where they went.",
+          "delivery": "calm",
+          "source_lines": [
+            "Officers were sent.",
+            "Officers went.",
+            "They dispersed crowds where they went."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L6",
+          "text": "The calls kept coming, and the language in them stopped being about congestion. I am almost being crushed to death.",
+          "delivery": "building",
+          "source_lines": [
+            "The calls kept coming, and the language in them stopped being about congestion.",
+            "I am almost being crushed to death."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L7",
+          "text": "Eleven calls. Officers were deployed to four of them. On the other seven, according to Al Jazeera's reporting at the time, there was no action.",
+          "delivery": "intense",
+          "source_lines": [
+            "Eleven calls.",
+            "Officers were deployed to four of them.",
+            "On the other seven, according to Al Jazeera's reporting at the time, there was no action."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L8",
+          "text": "The question is not who to blame. It is what happens to a warning after somebody makes it.",
+          "delivery": "intense",
+          "source_lines": [
+            "The question is not who to blame.",
+            "It is what happens to a warning after somebody makes it."
+          ],
+          "claims": ["IT"]
+        }
+      ],
+      "plates": [
+        {"n": 1, "role": "hook", "line": "L1", "subject": "somebody on a phone at the kerb from behind: shoulder, ear, hand", "source": "REUSE", "source_plate": "I054"},
+        {"n": 2, "role": "hook", "line": "L1", "subject": "hands holding phones up above head height, faces out of frame", "source": "REUSE", "source_plate": "I040"},
+        {"n": 3, "role": "hook", "line": "L2", "subject": "the mouth of the alley seen from across the main road, traffic passing, night", "source": "REUSE", "source_plate": "I023"},
+        {"n": 4, "role": "hook", "line": "L2", "subject": "a main-road pavement in the evening, a crowd flowing past, motion blur", "source": "REUSE", "source_plate": "I035"},
+        {"n": 5, "role": "body", "line": "L3", "subject": "the alley from the bottom looking up, ordinary evening, backs of heads", "source": "REUSE", "source_plate": "I010"},
+        {"n": 6, "role": "body", "line": "L3", "subject": "the alley ordinarily busy, mid-evening, a dozen people walking, all at distance and in motion", "source": "REUSE", "source_plate": "I008"},
+        {"n": 7, "role": "body", "line": "L4", "subject": "backs of heads under a run of vertical sign boxes", "source": "REUSE", "source_plate": "I036"},
+        {"n": 8, "role": "body", "line": "L4", "subject": "an office window at night, blinds half open, lit from within", "source": "REUSE", "source_plate": "I093"},
+        {"n": 9, "role": "body", "line": "L5", "subject": "a high-visibility vest at distance in a crowd, back turned", "source": "REUSE", "source_plate": "I071"},
+        {"n": 10, "role": "body", "line": "L5", "subject": "two high-visibility figures at the far end of a street", "source": "REUSE", "source_plate": "I075"},
+        {"n": 11, "role": "body", "line": "L6", "subject": "a hand holding a two-way radio, no marking on it", "source": "REUSE", "source_plate": "I073"},
+        {"n": 12, "role": "body", "line": "L7", "subject": "the back of a high-visibility figure at a junction, night", "source": "REUSE", "source_plate": "I080"},
+        {"n": 13, "role": "close", "line": "L8", "subject": "the alley in rain at night, empty, reflections doubling the sign light", "source": "REUSE", "source_plate": "I020"},
+        {"n": 14, "role": "close", "line": "L8", "subject": "the alley at dusk, empty, sign boxes coming on, all lettering out of focus", "source": "REUSE", "source_plate": "I007"}
+      ],
+      "kinetic_beats": [
+        {"line": "L4", "anchor": "eleven distress reports", "suffix": "eleven_reports", "words": ["ELEVEN", "REPORTS"], "style": "punch", "seconds": 2.2},
+        {"line": "L7", "anchor": "there was no action", "suffix": "no_action", "words": ["NO", "ACTION"], "style": "punch", "seconds": 2.4}
+      ]
+    },
+    {
+      "short_id": "short296",
+      "angle": "Nine people on a doormat: the measured geometry of a fifty-metre sloping alley, and why the same headcount is a different kind of place in a narrow passage fed from both ends.",
+      "avoids": "No victims, no depiction of the crush, no death toll, no blame, no named person. Uses only the published measurements the film itself uses (the PLOS One study's density figures, the width and length figures); gives no gradient figure because none is published, exactly as the film refuses to. Does not say the geometry caused the deaths - it describes the mechanism the study identifies and stops there.",
+      "funnel_question_left_for_longform": "Who was supposed to decide, before the evening started, what that street was for on a Saturday night?",
+      "loop": true,
+      "loop_join": "The last line's claim - a different kind of place - loops straight back into the doormat that proves it.",
+      "era": "Itaewon, Seoul, South Korea, 29 October 2022",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "One square metre is a doormat. Nine people. On a doormat.",
+          "delivery": "intense",
+          "source_lines": [
+            "One square metre is a doormat.",
+            "Nine people.",
+            "On a doormat."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L2",
+          "text": "Four researchers published a study of that night. They put the average density during the crush at seven point five seven people per square metre.",
+          "delivery": "calm",
+          "source_lines": [
+            "In 2024 four researchers published a study of that night in PLOS One, reconstructing the crowd from the record.",
+            "They put the average density during the crush at seven point five seven people per square metre, with a maximum of nine point nine five."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L3",
+          "text": "The street is about fifty metres long. At the top it is about five metres wide. At the bottom it is three point two.",
+          "delivery": "calm",
+          "source_lines": [
+            "The street is about fifty metres long.",
+            "At the top it is about five metres wide.",
+            "At the bottom it is three point two."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L4",
+          "text": "The street slopes. That direction matters more than any number would, because it decides which way the weight goes.",
+          "delivery": "building",
+          "source_lines": [
+            "The street slopes.",
+            "That direction matters more than any number would, because it decides which way the weight goes."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L5",
+          "text": "The alley was full in both directions: people coming up from the bottom, and people coming down from the top.",
+          "delivery": "building",
+          "source_lines": [
+            "By the middle of the evening the alley was full, and it was full in both directions: people coming up from the station at the bottom, and people coming down from the streets at the top, in a passage that narrows as it descends."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L6",
+          "text": "A crowd on flat ground has one thing going for it: the pressure has somewhere to go, in every direction at once. A crowd being fed into a passage from both ends has none.",
+          "delivery": "calm",
+          "source_lines": [
+            "A crowd on flat ground that becomes too dense has one thing going for it: the pressure has somewhere to go, in every direction at once.",
+            "A crowd being fed into that passage from both ends has none."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L7",
+          "text": "At the density those researchers measured, a person cannot lift their arms. The direction they travel is decided by the people behind them.",
+          "delivery": "building",
+          "source_lines": [
+            "At the density those researchers measured, a person cannot lift their arms.",
+            "They are not standing in a crowd any more; they are part of one, and the direction they travel is decided by the people behind them."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L8",
+          "text": "At the same headcount, a narrow sloping alley is a different kind of place from a wide flat one.",
+          "delivery": "intense",
+          "source_lines": [
+            "That is what those numbers describe: at the same headcount, a narrow sloping alley is a different kind of place from a wide flat one."
+          ],
+          "claims": ["IT"]
+        }
+      ],
+      "plates": [
+        {"n": 1, "role": "hook", "line": "L1", "subject": "the narrowest point at the foot of the alley, both walls in one frame, nobody in it", "source": "REUSE", "source_plate": "I003"},
+        {"n": 2, "role": "hook", "line": "L1", "subject": "the alley's two walls converging, long lens, compressed, empty", "source": "REUSE", "source_plate": "I033"},
+        {"n": 3, "role": "hook", "line": "L2", "subject": "the alley floor: drain grate, tile edging, a patched square of asphalt", "source": "REUSE", "source_plate": "I006"},
+        {"n": 4, "role": "hook", "line": "L2", "subject": "a builder's tape measure lying open across the alley floor, no numerals legible", "source": "REUSE", "source_plate": "I029"},
+        {"n": 5, "role": "body", "line": "L3", "subject": "a wall at arm's length: painted breeze block, conduit, a condenser bracket, morning", "source": "REUSE", "source_plate": "I004"},
+        {"n": 6, "role": "body", "line": "L3", "subject": "the same alley looking down from its top end, empty, morning", "source": "REUSE", "source_plate": "I002"},
+        {"n": 7, "role": "body", "line": "L3", "subject": "the granite kerb where the alley meets the main road, worn round, empty", "source": "REUSE", "source_plate": "I005"},
+        {"n": 8, "role": "body", "line": "L4", "subject": "the alley's slope read from the side: a stepped kerb rising away, nobody", "source": "REUSE", "source_plate": "I022"},
+        {"n": 9, "role": "body", "line": "L5", "subject": "the same from a high angle, ordinary density, heads and shoulders", "source": "REUSE", "source_plate": "I009"},
+        {"n": 10, "role": "body", "line": "L5", "subject": "a crowd from directly above: heads, shoulders, nothing else", "source": "REUSE", "source_plate": "I047"},
+        {"n": 11, "role": "body", "line": "L6", "subject": "the awning line overhead: PVC awnings and stacked illuminated sign boxes, unreadable", "source": "REUSE", "source_plate": "I013"},
+        {"n": 12, "role": "body", "line": "L6", "subject": "the building line from above: roofscape, condenser units, the alley as a dark seam", "source": "REUSE", "source_plate": "I031"},
+        {"n": 13, "role": "close", "line": "L7", "subject": "the alley wall at arm's length, sodium and LED mixed on a wet sheen", "source": "REUSE", "source_plate": "I014"},
+        {"n": 14, "role": "close", "line": "L8", "subject": "steam from a wall vent crossing the empty alley, night", "source": "REUSE", "source_plate": "I021"}
+      ],
+      "kinetic_beats": [
+        {"line": "L1", "anchor": "Nine people", "suffix": "doormat", "words": ["NINE PEOPLE", "ON A DOORMAT"], "style": "punch", "seconds": 2.2},
+        {"line": "L8", "anchor": "narrow sloping alley", "suffix": "narrow_sloping", "words": ["NARROW", "SLOPING"], "style": "punch", "seconds": 2.4}
+      ]
+    },
+    {
+      "short_id": "short297",
+      "angle": "The acquittal was built on a definition: the law attached no duty to a crowd with no organiser, and the sentence that changes that did not exist on the night.",
+      "avoids": "Names no official: the ward chief appears only by office, and the acquittal is stated as the court's first-instance finding without implying finality - the prosecutors' appeal and its suspension are left to the long-form. Does not say the law was to blame, does not say a plan would have prevented the deaths, does not characterise the Korean statute beyond the film's own verified sentences. States the official toll, one hundred and fifty-nine, and no other figure.",
+      "funnel_question_left_for_longform": "What is the sentence that replaced the definition - and why did it take fourteen months to write?",
+      "loop": true,
+      "loop_join": "The close - on that night it was not law - lands back on the hook's single sentence about who the law was written for.",
+      "era": "Seoul, South Korea, 2022-2024",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "By the end of that night a hundred and fifty-nine people were dead, and by the end of the following year a court had convicted one official, acquitted another, and explained the difference in a single sentence about who the law was written for.",
+          "delivery": "building",
+          "source_lines": [
+            "By the end of that night a hundred and fifty-nine people were dead, and by the end of the following year a court had convicted one official, acquitted another, and explained the difference in a single sentence about who the law was written for."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L2",
+          "text": "Nobody organised it. There was no ticket, no promoter, no stage, no permit, no name on anything.",
+          "delivery": "calm",
+          "source_lines": [
+            "Nobody organised it.",
+            "There was no ticket, no promoter, no stage, no permit, no name on anything."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L3",
+          "text": "The chief of the ward office, and other ward officials, were indicted. The court found them not guilty.",
+          "delivery": "calm",
+          "source_lines": [
+            "Park Hee-young, the chief of the Yongsan ward office, and other ward officials, were also indicted.",
+            "The same court found them not guilty."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L4",
+          "text": "Not insufficient evidence. Something more specific than that.",
+          "delivery": "intense",
+          "source_lines": [
+            "Not insufficient evidence.",
+            "Something more specific than that, and it is the sentence this whole film has been walking toward."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L5",
+          "text": "Related law and regulations did not require them to come up with safety measures for events without organizers.",
+          "delivery": "intense",
+          "source_lines": [
+            "Related law and regulations did not require them to come up with safety measures for events without organizers."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L6",
+          "text": "A hundred thousand people walking into a district because it is the twenty-ninth of October is not anybody's event. There is no form for it.",
+          "delivery": "calm",
+          "source_lines": [
+            "A hundred thousand people walking into a district because it is the twenty-ninth of October is not anybody's event.",
+            "There is no form for it."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L7",
+          "text": "And so, in the judgment of that court, there was no duty attached to it. There is now.",
+          "delivery": "building",
+          "source_lines": [
+            "And so, in the judgment of that court, there was no duty attached to it.",
+            "There is now."
+          ],
+          "claims": ["IT"]
+        },
+        {
+          "id": "L8",
+          "text": "The law now knows that a crowd can happen without anybody calling it an event. On the night this film is about, it was not law.",
+          "delivery": "intense",
+          "source_lines": [
+            "The law now knows that a crowd can happen without anybody calling it an event.",
+            "On the night this film is about, it was not law."
+          ],
+          "claims": ["IT"]
+        }
+      ],
+      "plates": [
+        {"n": 1, "role": "hook", "line": "L1", "subject": "a bound statute volume, closed, spine blank", "source": "REUSE", "source_plate": "I100"},
+        {"n": 2, "role": "hook", "line": "L1", "subject": "a chamber of empty seats, wide, no emblem anywhere", "source": "REUSE", "source_plate": "I087"},
+        {"n": 3, "role": "hook", "line": "L2", "subject": "one empty chair at a plain table in a plain room", "source": "REUSE", "source_plate": "I085"},
+        {"n": 4, "role": "hook", "line": "L2", "subject": "a date stamp standing on a desk, no numerals legible", "source": "REUSE", "source_plate": "I091"},
+        {"n": 5, "role": "body", "line": "L3", "subject": "a corridor with a bench along one wall, empty, overcast light", "source": "REUSE", "source_plate": "I081"},
+        {"n": 6, "role": "body", "line": "L3", "subject": "a closed door at the end of a corridor", "source": "REUSE", "source_plate": "I083"},
+        {"n": 7, "role": "body", "line": "L4", "subject": "a filing counter, daytime, nobody at it", "source": "REUSE", "source_plate": "I089"},
+        {"n": 8, "role": "body", "line": "L5", "subject": "a blank report cover lying on a desk", "source": "REUSE", "source_plate": "I097"},
+        {"n": 9, "role": "body", "line": "L5", "subject": "a blank form on a clipboard", "source": "REUSE", "source_plate": "I102"},
+        {"n": 10, "role": "body", "line": "L6", "subject": "a crowd crossing at a signalised junction, high angle, night", "source": "REUSE", "source_plate": "I039"},
+        {"n": 11, "role": "body", "line": "L6", "subject": "a corridor of identical doors receding", "source": "REUSE", "source_plate": "I095"},
+        {"n": 12, "role": "body", "line": "L7", "subject": "an empty noticeboard", "source": "REUSE", "source_plate": "I104"},
+        {"n": 13, "role": "close", "line": "L8", "subject": "the alley today, empty, a sign standing at its mouth", "source": "REUSE", "source_plate": "I118"},
+        {"n": 14, "role": "close", "line": "L8", "subject": "the same street at three in the morning, three figures far off", "source": "REUSE", "source_plate": "I060"}
+      ],
+      "kinetic_beats": [
+        {"line": "L4", "anchor": "Not insufficient evidence", "suffix": "not_insufficient", "words": ["NOT", "INSUFFICIENT EVIDENCE"], "style": "punch", "seconds": 2.2},
+        {"line": "L7", "anchor": "no duty attached to it", "suffix": "no_duty", "words": ["NO DUTY", "ATTACHED"], "style": "punch", "seconds": 2.4}
+      ]
+    }
+  ]
+}
