@@ -22,9 +22,16 @@ import {BRAND} from '../../brand';
 // 秒→フレーム（フレーム直書き禁止・fpsから算出）
 const sec = (fps: number, s: number) => Math.round(fps * s);
 
-// 値フォーマット（整数ターゲットは整数・小数ターゲットは1桁 / tabular-nums前提）
-const formatVal = (target: number, current: number): string =>
-  current.toFixed(Number.isInteger(target) ? 0 : 1);
+// 値フォーマット（整数ターゲットは桁区切り整数・小数ターゲットは自身の桁数まで / tabular-nums前提）
+// 2026-08-25 EP76: toFixed には桁区切りが無く "1300000" が 100px 級で出荷された。同じ図で
+// 0.58 が toFixed(1) の "0.6" に丸まり、自分のラベル（0.58）と食い違って着地していた。
+const formatVal = (target: number, current: number): string => {
+  const decimals = Number.isInteger(target) ? 0 : Number.isInteger(target * 10) ? 1 : 2;
+  return current.toLocaleString('en-US', {
+    minimumFractionDigits: decimals,
+    maximumFractionDigits: decimals,
+  });
+};
 
 // 直接ラベル（overflow:hidden + translateY のマスク切れ上がり）
 const MaskLabel: React.FC<{

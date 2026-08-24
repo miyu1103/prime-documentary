@@ -144,6 +144,23 @@ def main() -> int:
 
     imgs = scan(base / "img", (".png", ".jpg", ".jpeg"))
     motion = scan(base / "motion", (".mp4", ".mov", ".webm"))
+
+    # DEPTH COMPANIONS ARE RENDERER INPUTS, NEVER PICTURES (2026-08-25, EP75).
+    # lahaina staged H0xx_depth.png beside its hero plates and ran i2v over them; this scan
+    # then swept 73 depth PNGs into the stills pool and 62 depth MP4s into the motion pool,
+    # and the film shipped 180 cuts -- 678 seconds -- of raw grayscale depth mattes as
+    # picture, with every gate green. A depth map belongs in a "depth" prop, not a "src".
+    def _split_depth(paths):
+        keep = [p for p in paths if not p.stem.endswith("_depth")]
+        dropped = [p for p in paths if p.stem.endswith("_depth")]
+        return keep, dropped
+    imgs, _depth_imgs = _split_depth(imgs)
+    motion, _depth_motion = _split_depth(motion)
+    for _p in _depth_imgs:
+        rejected_depth = f"{slug}/img/{_p.name}"
+        print(f"  [depth-companion] {rejected_depth} -- excluded: renderer input, never a picture")
+    for _p in _depth_motion:
+        print(f"  [depth-companion] {slug}/motion/{_p.name} -- excluded: renderer input, never a picture")
     factory = scan(base / "factory", (".mp4", ".mov", ".webm"))
     overlay = scan(base / "overlay", (".mp4", ".mov", ".webm"))
 

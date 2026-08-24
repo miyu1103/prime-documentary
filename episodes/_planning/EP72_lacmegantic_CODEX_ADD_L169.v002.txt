@@ -1,0 +1,30 @@
+EP72_lacmegantic — 追加画像発注（1枚だけ・L169）
+
+v001からの変更（実測 2026-08-24）
+  v001 はファイル名を L168.png と指定していましたが、L168.png は既にディスクに存在し
+  （2026-08-22 生成・asset_manifest.v003 に登録済みの使用中画像）、そのまま納品すると
+  既存アセットを上書きします。空き番号は L169 なので、本 v002 で L169.png に改番しました。
+  プロンプト本文は v001 から一切変えていません。
+
+なぜ1枚だけか（実測 2026-08-23）
+  episode_spec.v001.json は people_plates_min = 20 を宣言していますが、
+  people_plates の一覧は 19 件しかなく、img/ にも該当19枚しかありません。
+  check_episode_inputs はこの1枚差で組み立てを止めます。宣言値は動かさない規則
+  （出荷ゲートを通すために宣言を書き換えない）なので、足りない1枚を作ります。
+
+  この話数の people plate は全て「顔が判別できない人物」です。実在の関係者を描くことは
+  できません（無罪判決を受けた3名を含め、誰の肖像も作らない）。
+
+納品の決まり
+  ・1プロンプト＝1枚。**アスペクト比 16:9（横÷縦＝1.778）**。
+  ・ファイル名は L169.png（連番がそのまま組み立てに使われます）。
+  ・置き場所: remotion/public/lacmegantic/img/L169.png
+  ・読める文字・数字・ロゴ・標識は入れないでください。
+  ・顔が判別できる人物は禁止です。
+
+──────── プロンプト ────────
+
+--- L169 (ACT_3) [PEOPLE PLATE] — for the beat: "the town waits"
+cinematic still, photographic, the Estrie region of Quebec, Canada — a small lakeside mill town, low forested hills, spruce and birch, a single-track freight railway running through inhabited streets, contemporary and specifically 2012 to 2018, muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet ballast, creosoted sleepers, black tank car steel, galvanised handrail, painted breeze block, laminate desk, manila card, spruce bark — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain, no text, no lettering, no numerals, no watermark, no logo, no signage, a small inland Quebec town's main street at night in July, seen from across the road: two people standing well apart on the far pavement under a street lamp, both turned away from camera and out of focus, unidentifiable, small in the frame; parked cars, low brick storefronts, no signage legible
+NEGATIVE: text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, burn victim, stretcher, paramedic, ambulance, hospital, funeral, grave, mourner, crying, rescue, search and rescue, gavel, scales of justice, lady justice, jury box, judge's bench, courtroom interior, handcuffs, firearm, prison bars, american highway sign, US route shield, EU number plate, right-hand-drive traffic, european street, asian street, megacity skyline, skyscrapers, expressway interchange, palm trees, beach, surf, ocean, tropical, desert, cruise ship, high speed train, passenger train interior, subway, steam locomotive, crash test, action movie explosion, fireball with people, video game, golden hour, sunset glow, postcard scenery, christmas, wedding, handshake, money rain, falling banknotes, stock ticker, candlestick chart, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark, identifiable face, face in focus, portrait, close-up of a person, child, snow, winter, steam locomotive, passenger train, high speed train, european train, subway, catenary, overhead wires, US flag, american highway sign
+File name L169.png

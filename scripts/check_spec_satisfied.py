@@ -127,6 +127,18 @@ def main() -> int:
                           f"{' ...' if len(v) > 4 else ''}"
                           for kw, v in sorted(offenders.items())))
 
+    # 2.5 A depth companion in a src is a broken picture, categorically (2026-08-25, EP75).
+    # lahaina shipped 180 cuts / 678 seconds of raw grayscale depth mattes as picture and
+    # every gate stayed green -- a machine saw "frames with content". A *_depth file is a
+    # renderer input for the parallax effect; it may appear in a "depth" prop, never in "src".
+    depth_srcs = sorted({n for n in names if Path(n).stem.endswith("_depth")})
+    if depth_srcs:
+        total = sum(1 for n in names if Path(n).stem.endswith("_depth"))
+        failures.append(
+            f"depth_as_picture: {total} cut(s) use {len(depth_srcs)} depth-companion file(s) "
+            f"as their src -- these are grayscale depth maps, not pictures: "
+            + ", ".join(depth_srcs[:5]) + (" ..." if len(depth_srcs) > 5 else ""))
+
     # 3. Enough distinct video to fill the film without repeating a clip.
     need = int(spec["distinct_video_assets"])
     if len(videos) < need:

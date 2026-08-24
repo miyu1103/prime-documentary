@@ -120,6 +120,10 @@ def collect_sources(slug: str, kinds: list[str], src: str | None = None) -> list
     out: list[Path] = []
     for k in kinds:
         out += sorted(Path(p) for p in glob.glob(str(ai / f"{k}*.png")))
+    # DEPTH COMPANIONS ARE NEVER i2v SOURCES (2026-08-25, EP75). lahaina's img/ held
+    # H0xx_depth.png beside the plates; the H* glob swept them in and 62 of the 71 motion
+    # clips produced were animated grayscale depth maps, which then shipped as picture.
+    out = [p for p in out if not p.stem.endswith("_depth")]
     # stable, de-duplicated
     seen, uniq = set(), []
     for p in out:

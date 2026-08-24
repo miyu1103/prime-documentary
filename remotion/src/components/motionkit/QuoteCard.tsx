@@ -244,7 +244,11 @@ export const QuoteCard: React.FC<{
                   letterSpacing: 4,
                   textTransform: 'uppercase',
                   color: BRAND.color.silver,
-                  whiteSpace: 'nowrap',
+                  // 2026-08-25 EP75/EP76: nowrap は 70 文字超の帰属を右端で切り落として出荷した
+                  // （"…ASKED WHETHER HE R" / "…MOST SIGNIFICANT IMMEDIA"）。折り返して全文を出す。
+                  whiteSpace: 'normal',
+                  maxWidth: 1360,
+                  lineHeight: 1.35,
                 }}
               >
                 {'— '}
