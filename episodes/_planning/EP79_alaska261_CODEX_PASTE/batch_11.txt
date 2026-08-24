@@ -1,0 +1,56 @@
+EP79_alaska261 — 画像発注 バッチ 11/23（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) K081.png
+   [K081]  flags: 
+   A clipboard of blank ruled sheets hanging on a hangar wall in bright light
+
+2) K082.png
+   [K082]  flags: 
+   A wall of pigeonholes holding blank work cards in a maintenance office, a strip light burning above
+
+3) K083.png
+   [K083]  flags: 
+   A maintenance records office in brilliant daylight, shelves of binders, a window wall blowing out
+
+4) K084.png
+   [K084]  flags: 
+   Close-up of unmarked binder spines packed on a shelf, a bright lamp blazing across them from the side and flaring into the lens
+
+5) K085.png
+   [K085]  flags: 
+   A steel filing cabinet with one drawer open, hanging folders blank, an inspection lamp blazing into the lens
+
+6) K086.png
+   [K086]  flags: 
+   A microfiche or index card cabinet with one drawer pulled out, blank cards packed tight, bright overhead light
+
+7) K087.png
+   [K087]  flags: 
+   A 2000-era desktop computer with a CRT monitor showing a blank form with empty fields, the screen glow blown out in a dim office
+
+8) K088.png
+   [K088]  flags: 
+   A dot-matrix printer feeding a blank continuous sheet under a bright office light

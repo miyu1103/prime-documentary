@@ -1,0 +1,56 @@
+EP79_alaska261 — 画像発注 バッチ 6/23（8枚）
+区分: ACT_2
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) K041.png
+   [K041]  flags: 
+   The same report standing upright, brightly side-lit, plain cover, no lettering
+
+2) K042.png
+   [K042]  flags: 
+   A government laboratory bench in brilliant white light, a steel component laid on a clean sheet, calipers beside it
+
+3) K043.png
+   [K043]  flags: 
+   Extreme macro of a sheared and worn steel thread remnant, torn metal edges, a hard lamp blown out at frame edge
+
+4) K044.png
+   [K044]  flags: 
+   Steel thread remnants wrapped around a threaded screw shaft, close-up, brilliant laboratory lighting
+
+5) K045.png
+   [K045]  flags: 
+   The interior of a cut-open steel nut showing smooth ridges where threads used to be, macro, a bright examination lamp raking hard across the ridges
+
+6) K046.png
+   [K046]  flags: 
+   A steel screw thread photographed at extreme magnification under bright examination lighting, wear polish visible on one flank
+
+7) K047.png
+   [K047]  flags: 
+   A metallurgical microscope in a laboratory, its illuminator burning bright, a specimen mounted beneath
+
+8) K048.png
+   [K048]  flags: 
+   Two steel components side by side on a bright bench, one heavily worn and one new, hard even lighting

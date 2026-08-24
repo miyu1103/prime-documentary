@@ -1,0 +1,56 @@
+EP79_alaska261 — 画像発注 バッチ 1/23（8枚）
+区分: HOOK / ACT_1
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) K001.png
+   [K001]  flags: 
+   Extreme macro of a dial indicator gauge, the needle at rest near zero, polished chrome bezel, a bright work lamp blazing across the glass face, no numerals
+
+2) K002.png
+   [K002]  flags: 
+   A huge steel acme-threaded jackscrew standing vertical in a hangar, threads sharp and greased, an inspection lamp flaring into the lens beside it
+
+3) K003.png
+   [K003]  flags: 
+   The tail of an MD-80 airliner seen from below at dusk, the vertical stabilizer filling the frame, apron floodlights blazing up at it
+
+4) K004.png
+   [K004]  flags: 
+   An analogue aircraft trim wheel in a 2000-era cockpit, brightly lit from one side, worn paint on the rim
+
+5) K005.png
+   [K005]  flags: 
+   The open Pacific from high altitude in the afternoon, brilliant sun on the water, a scatter of low cloud, empty
+
+6) K006.png
+   [K006]  flags: 
+   A round wall clock in an airline maintenance office, one bright desk lamp beside it flaring into the lens, no numerals on the dial
+
+7) K007.png
+   [K007]  flags: 
+   A Mexican coastal airport apron in brilliant tropical afternoon sun, an MD-80 at a stand, palm trees at the perimeter, hard shadows
+
+8) K008.png
+   [K008]  flags: P
+   Passengers boarding an airliner by air stairs in strong sunlight, all seen from behind and at a distance, tropical heat haze

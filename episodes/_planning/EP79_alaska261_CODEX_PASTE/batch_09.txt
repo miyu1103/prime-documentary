@@ -1,0 +1,56 @@
+EP79_alaska261 — 画像発注 バッチ 9/23（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) K065.png
+   [K065]  flags: 
+   The same hangar at night, sodium work lights blazing overhead and flaring into the lens
+
+2) K066.png
+   [K066]  flags: 
+   A maintenance stand raised to an aircraft tail, work lamps blazing up into the structure
+
+3) K067.png
+   [K067]  flags: P
+   A mechanic seen from behind on a maintenance stand reaching into an open tail panel, a work lamp burning beside him
+
+4) K068.png
+   [K068]  flags: P
+   A grease gun held in a gloved hand against a steel fitting, close-up, a bright work lamp flaring
+
+5) K069.png
+   [K069]  flags: 
+   Fresh grease being forced into a lubrication port on a steel assembly, macro, brilliant task lighting
+
+6) K070.png
+   [K070]  flags: 
+   An open tub of aviation grease on a hangar bench under a bright strip light, a spatula across it
+
+7) K071.png
+   [K071]  flags: 
+   A rack of hand tools on a hangar wall in bright daylight, sockets and wrenches in rows
+
+8) K072.png
+   [K072]  flags: 
+   A torque wrench lying on a steel bench, a hard lamp blown out just behind it, brushed metal catching the light

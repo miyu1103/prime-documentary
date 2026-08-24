@@ -1,0 +1,56 @@
+EP79_alaska261 — 画像発注 バッチ 15/23（8枚）
+区分: ACT_4
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) K113.png
+   [K113]  flags: P
+   A courthouse corridor in brilliant daylight, marble and tall windows, two figures walking away from camera
+
+2) K114.png
+   [K114]  flags: 
+   A grand jury style room in daylight, plain chairs in rows, a bright window, empty
+
+3) K115.png
+   [K115]  flags: 
+   An aviation regulator's notice pinned to a board under a bright strip light, blank sheet, no lettering
+
+4) K116.png
+   [K116]  flags: 
+   A row of aircraft parked and idle on an apron under brilliant daylight, chocks in place, engine covers fitted
+
+5) K117.png
+   [K117]  flags: 
+   Engine intake covers and pitot covers fitted to a parked airliner, close-up, brilliant sunlight
+
+6) K118.png
+   [K118]  flags: 
+   A hangar with a jackscrew assembly removed and laid on a bright bench, the empty tail cavity behind
+
+7) K119.png
+   [K119]  flags: 
+   A crate of new steel assemblies packed in protective wrap under bright warehouse lighting
+
+8) K120.png
+   [K120]  flags: 
+   A tool crib counter in bright fluorescent light, calibrated fixtures racked behind it

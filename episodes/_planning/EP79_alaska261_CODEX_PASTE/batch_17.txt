@@ -1,0 +1,56 @@
+EP79_alaska261 — 画像発注 バッチ 17/23（8枚）
+区分: ACT_4 / ENDING
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) K129.png
+   [K129]  flags: 
+   A conference table with a jackscrew assembly laid across it under brilliant overhead light, several empty chairs around
+
+2) K130.png
+   [K130]  flags: 
+   Extreme macro of a dial indicator gauge, the needle at rest near zero, polished chrome bezel, a bright work lamp blazing across the glass face, no numerals
+
+3) K131.png
+   [K131]  flags: 
+   The same dial indicator pulled back to show the whole measuring rig mounted on a steel assembly, brilliant task lighting
+
+4) K132.png
+   [K132]  flags: P
+   A gloved hand writing a figure into a blank ruled log under a bright lamp, the writing not legible
+
+5) K133.png
+   [K133]  flags: 
+   A steel jackscrew freshly greased and gleaming under a bright work lamp, threads perfect
+
+6) K134.png
+   [K134]  flags: 
+   An aircraft tail against a brilliant dawn sky seen from the apron, the fin catching the first light
+
+7) K135.png
+   [K135]  flags: 
+   An airliner climbing into a brilliant clear morning sky seen from the ground
+
+8) K136.png
+   [K136]  flags: 
+   The open Pacific at sunrise, a brilliant sun band on the horizon, calm water, empty
