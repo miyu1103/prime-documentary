@@ -512,5 +512,29 @@
   "ambience": "ending",
   "bed": "amb_night_window.mp3",
   "why": "柵とカメラ。フックと同じ床で閉じる。"
+ },
+ {
+  "needle": "street",
+  "kind": "whoosh",
+  "anchor": "street",
+  "_added": "2026-08-24: sound_layers measured 11 distinct sample files against a floor of 12. The one-shot library holds 13 files in total, so an episode has to reach nearly all of them; these four are the ones EP74 was not using. Anchors are words this script actually speaks (street 26, alley 9, report 4, door 1)."
+ },
+ {
+  "needle": "alley",
+  "kind": "low boom",
+  "anchor": "alley",
+  "_added": "2026-08-24: sound_layers measured 11 distinct sample files against a floor of 12. The one-shot library holds 13 files in total, so an episode has to reach nearly all of them; these four are the ones EP74 was not using. Anchors are words this script actually speaks (street 26, alley 9, report 4, door 1)."
+ },
+ {
+  "needle": "report",
+  "kind": "riser",
+  "anchor": "report",
+  "_added": "2026-08-24: sound_layers measured 11 distinct sample files against a floor of 12. The one-shot library holds 13 files in total, so an episode has to reach nearly all of them; these four are the ones EP74 was not using. Anchors are words this script actually speaks (street 26, alley 9, report 4, door 1)."
+ },
+ {
+  "needle": "door",
+  "kind": "gavel",
+  "anchor": "door",
+  "_added": "2026-08-24: sound_layers measured 11 distinct sample files against a floor of 12. The one-shot library holds 13 files in total, so an episode has to reach nearly all of them; these four are the ones EP74 was not using. Anchors are words this script actually speaks (street 26, alley 9, report 4, door 1)."
  }
 ]

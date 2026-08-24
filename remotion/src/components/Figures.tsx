@@ -153,7 +153,13 @@ export const StatCounter: React.FC<{
     extrapolateLeft: 'clamp',
     extrapolateRight: 'clamp',
   });
-  const shown = (value * p).toFixed(decimals);
+  // Thousands separators. EP74 itaewon shipped "11666" beside a NumberTicker showing "79,877":
+  // the same film, the same kind of fact, two different readings, because only the ticker groups.
+  // A four-figure number without separators is measurably slower to read at speed.
+  const shown = (value * p).toLocaleString('en-US', {
+    minimumFractionDigits: decimals,
+    maximumFractionDigits: decimals,
+  });
   const barW = interpolate(
     spring({frame: frame - sec(fps, 0.3), fps, config: {damping: 18}}),
     [0, 1],

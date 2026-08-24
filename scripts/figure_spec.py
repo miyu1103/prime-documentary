@@ -130,6 +130,15 @@ def check_figure(fig: dict, table: dict) -> list[str]:
         problems.append("bar needs data or items: {label, value}[]")
     if missing:
         problems.append(f"missing required {sorted(missing)}")
+    # A NUMBER CARD WITH A STRING VALUE RENDERS "NaN" IN 100-PIXEL TYPE. FigureBeats types both
+    # `stat` and `numberticker` as `value: number`; "1,102 m" or "11,666" reaches the component as
+    # a string and comes out NaN. EP76 morandi shipped five of them past every automated check --
+    # black frames, runtime, loudness, animation density all green -- because a machine can see
+    # that text is on screen and not that the text is broken. 29 cards across four configs.
+    if kind in ("stat", "numberticker") and "value" in fig:
+        if not isinstance(fig["value"], (int, float)) or isinstance(fig["value"], bool):
+            problems.append(f"value must be a NUMBER, got {fig['value']!r} -- it will render NaN; "
+                            f"put the unit in prefix/suffix")
     stray = have - want["required"] - want["optional"]
     if stray:
         problems.append(f"props no component reads {sorted(stray)} "

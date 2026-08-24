@@ -360,10 +360,32 @@ def _srt_last_end_seconds(p: Path) -> float:
     return int(h) * 3600 + int(m) * 60 + int(s) + int(ms) / 1000.0
 
 
+def shipped_srt(epdir: Path) -> Path | None:
+    """The caption file the FILM ships, not the newest .srt lying in 08_edit.
+
+    2026-08-24, EP75 lahaina: `captions.smartsplit.v001.srt` is a 907-cue working file that no
+    film references; the film json carries the 533 cues of `captions.final.v001.srt`. Picking by
+    "latest last-cue" measured the working file and failed the episode on a 0.15 s fragment that
+    is not in the master. The filmconfig names the file explicitly -- read it.
+    """
+    slug = epdir.name.split("-")[-1]
+    for cfg in sorted((ROOT / "episodes" / "_planning").glob(f"EP*_{slug}_filmconfig.v*.json")):
+        try:
+            named = json.loads(cfg.read_text(encoding="utf-8")).get("captions")
+        except Exception:  # noqa: BLE001
+            continue
+        if named:
+            p = ROOT / named if not Path(named).is_absolute() else Path(named)
+            if p.is_file() and p.stat().st_size > 0:
+                return p
+    return None
+
+
 def check_captions(epdir: Path, render_dur: float | None) -> dict:
     edit = epdir / "08_edit"
-    srts = [p for p in edit.glob("*.srt") if "review_proxy" not in p.name]
-    srts = [p for p in srts if p.stat().st_size > 0]
+    _named = shipped_srt(epdir)
+    srts = [_named] if _named else [p for p in edit.glob("*.srt")
+                                    if "review_proxy" not in p.name and p.stat().st_size > 0]
     if not srts:
         return {"check": "captions_final", "ok": False, "hard": True,
                 "reason": "no non-proxy caption .srt in 08_edit (only review-proxy captions, or none)"}
@@ -394,8 +416,9 @@ def check_caption_format(epdir: Path) -> dict:
     """Captions must break cleanly: <=2 lines, <=42 chars/line, sane cue duration
     and reading speed. Catches the recurring 'captions cut at weird points'."""
     edit = epdir / "08_edit"
-    srts = [p for p in edit.glob("*.srt")
-            if "review_proxy" not in p.name and p.stat().st_size > 0]
+    _named = shipped_srt(epdir)
+    srts = [_named] if _named else [p for p in edit.glob("*.srt")
+                                    if "review_proxy" not in p.name and p.stat().st_size > 0]
     if not srts:
         return {"check": "caption_format", "ok": True, "hard": False, "skipped": True,
                 "reason": "no final .srt to format-check"}

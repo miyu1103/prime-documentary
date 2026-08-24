@@ -1,138 +1,681 @@
 {
-  "schema_version": "pd_filmconfig.v001",
-  "slug": "morandi",
-  "episode_id": "PD-2026-076-morandi",
-  "assets": "episodes/PD-2026-076-morandi/05_visuals/asset_manifest.v001.json",
-  "narration_index": "episodes/PD-2026-076-morandi/06_audio/narration_index.v001.json",
-  "narration": "morandi/narration.mp3",
-  "captions": "episodes/PD-2026-076-morandi/08_edit/captions.final.v001.srt",
-  "out": "remotion/src/data/morandi_film.json",
-  "leadSeconds": 0,
-  "openingVariant": "overlay",
-  "hookSeconds": 22.4,
-  "hookLine": "On the first of August 2012, under a motorway viaduct in Genoa, an inspection recorded a beam with the concrete gone, the cables showing, and some of the wires broken.",
-  "captionLeadSeconds": 0.6,
-  "figures_by_section": {
-    "HOOK": [
-      {"kind": "lowerthird", "primary": "AI-assisted visualization", "secondary": "symbolic reconstruction, no real likenesses"},
-      {"kind": "kinetic", "lines": ["1 AUGUST 2012.", "UNDER A MOTORWAY VIADUCT IN GENOA."], "style": "emphasis", "emphasisWords": ["1 AUGUST 2012"]},
-      {"kind": "kinetic", "lines": ["THE NUMBER IN THE BOX", "WAS FORTY."], "style": "emphasis", "emphasisWords": ["FORTY"]}
+ "schema_version": "pd_filmconfig.v001",
+ "slug": "morandi",
+ "episode_id": "PD-2026-076-morandi",
+ "assets": "episodes/PD-2026-076-morandi/05_visuals/asset_manifest.v003.json",
+ "narration_index": "episodes/PD-2026-076-morandi/06_audio/narration_index.v001.json",
+ "narration": "morandi/narration.mp3",
+ "captions": "episodes/PD-2026-076-morandi/08_edit/captions.final.v001.srt",
+ "out": "remotion/src/data/morandi_film.json",
+ "leadSeconds": 0,
+ "openingVariant": "overlay",
+ "hookSeconds": 22.4,
+ "hookLine": "On the first of August 2012, under a motorway viaduct in Genoa, an inspection recorded a beam with the concrete gone, the cables showing, and some of the wires broken.",
+ "captionLeadSeconds": 0.6,
+ "figures_by_section": {
+  "HOOK": [
+   {
+    "kind": "lowerthird",
+    "primary": "AI-assisted visualization",
+    "secondary": "symbolic reconstruction, no real likenesses"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "1 AUGUST 2012.",
+     "UNDER A MOTORWAY VIADUCT IN GENOA."
     ],
-    "OP": [
-      {"kind": "lowerthird", "primary": "THE POLCEVERA VIADUCT", "secondary": "Genoa, Liguria. The A10 at kilometre zero point five five one."}
-    ],
-    "ACT_1": [
-      {"kind": "kinetic", "lines": ["1962 DESIGNED.", "1963 BEGUN.", "1967 OPENED."], "style": "emphasis"},
-      {"kind": "stat", "value": "1,102 m", "label": "length of the viaduct"},
-      {"kind": "stat", "value": "56 m", "label": "average height above the valley floor"},
-      {"kind": "stat", "value": "65 m – 208 m", "label": "clear spans, eleven of them"},
-      {"kind": "lowerthird", "primary": "THE ONLY ONE", "secondary": "Out of the whole national motorway network, the Polcevera viaduct was the only cable-stayed bridge."},
-      {"kind": "stat", "value": "90 m", "label": "height of the antennae above the ground"},
-      {"kind": "stat", "value": "10", "label": "infill decks between the balanced systems"},
-      {"kind": "compbars", "items": [{"label": "352 primary strands", "value": 352}, {"label": "112 secondary strands", "value": 112}]},
-      {"kind": "lowerthird", "primary": "AT LEAST 500 PEOPLE", "secondary": "The balanced systems stood a few metres from inhabited blocks. It is in a footnote of the ministry's report."},
-      {"kind": "quote", "quote": "the advantage of preserving the metal part of the stays from corrosion", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018 — on why the concrete was built around the steel"},
-      {"kind": "quote", "quote": "Indirect methods of investigation do not permit quantitative assessment. Direct investigation is therefore indispensable.", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"},
-      {"kind": "kinetic", "lines": ["DIRECT INVESTIGATION", "MEANS CUTTING INTO IT."], "style": "emphasis", "emphasisWords": ["CUTTING INTO IT"]},
-      {"kind": "lowerthird", "primary": "MARACAIBO, AND WADI AL-KUF", "secondary": "Morandi had built the same system in Venezuela, and would build it again in Libya. In Italy there was only ever one."}
-    ],
-    "ACT_2": [
-      {"kind": "kinetic", "lines": ["1981.", "ASPI ASKS MORANDI FOR A REPORT."], "style": "emphasis", "emphasisWords": ["1981"]},
-      {"kind": "lowerthird", "primary": "WE HAVE NOT READ IT", "secondary": "The contents of the 1981 report are not in anything retrieved for this film, and it does not say what was in it."},
-      {"kind": "kinetic", "lines": ["1992.", "THEY GO TO PIER ELEVEN."], "style": "emphasis", "emphasisWords": ["PIER ELEVEN"]},
-      {"kind": "lowerthird", "primary": "TO PRICE THE JOB", "secondary": "The checks were made to calibrate the work, not to find anything."},
-      {"kind": "quote", "quote": "The investigations therefore brought to light the grave state of oxidation of the internal prestressing cables. Numerous strands were severed, or heavily oxidised, with advanced reduction of section.", "attribution": "Commissione Ispettiva Ministeriale, on the 1992 checks at pier 11"},
-      {"kind": "quote", "quote": "Other strands appeared visibly slackened, suggesting a significant loss of pretension.", "attribution": "Commissione Ispettiva Ministeriale"},
-      {"kind": "lowerthird", "primary": "THE FIX WENT OUTSIDE", "secondary": "New cables in polyethylene ducts, down the flanks of the stay, in the open air."},
-      {"kind": "quote", "quote": "to permit their future maintenance", "attribution": "Commissione Ispettiva Ministeriale — the stated reason for putting the new cables outside the concrete"},
-      {"kind": "quote", "quote": "The intervention was carried out only at pier 11.", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"},
-      {"kind": "compbars", "items": [{"label": "1 stayed pier repaired", "value": 1}, {"label": "3 stayed piers on the bridge", "value": 3}]},
-      {"kind": "kinetic", "lines": ["TWENTY-SIX YEARS AFTER", "THAT WORK BEGAN,", "ONE OF THE OTHER TWO CAME DOWN."], "style": "emphasis", "emphasisWords": ["TWENTY-SIX YEARS"]},
-      {"kind": "lowerthird", "primary": "2006", "secondary": "A steel walkway was added at the Genoa end of the same pier."},
-      {"kind": "lowerthird", "primary": "THE EQUIPMENT STAYED", "secondary": "The temporary structures built for the pier 11 work remained in the company's possession."}
-    ],
-    "ACT_3": [
-      {"kind": "lowerthird", "primary": "THE COMPANY'S OWN MANUAL", "secondary": "Manutenzione programmata delle opere d'arte stradali. Every quotation on this card and the next is from it."},
-      {"kind": "quote", "quote": "SCORE 70 — defect at an advanced state, has an influence on the statics and reduces the safety coefficient — reduction of the prestressing steel section (broken wires)", "attribution": "Aspi maintenance manual, p.53/149, quoted by the ministry's commission"},
-      {"kind": "quote", "quote": "Whereas for score 70 immediate measures are provided: such as traffic restrictions, up to closure of the carriageway.", "attribution": "Aspi maintenance manual, p.50/149"},
-      {"kind": "kinetic", "lines": ["A SEVENTY MEANS", "CLOSING THE ROAD."], "style": "emphasis", "emphasisWords": ["CLOSING THE ROAD"]},
-      {"kind": "lowerthird", "primary": "OCTOBER 1991", "secondary": "Oxidised cables, oxidised and severed strands, at pier 11. Scored 70. Remedied in 1994."},
-      {"kind": "lowerthird", "primary": "FEBRUARY 1997", "secondary": "A deck slab dropped and vibrating. Scored 43. Remedied twelve years later."},
-      {"kind": "lowerthird", "primary": "DECEMBER 2006", "secondary": "Steel bars severed by a slab failure. Scored 40. The commission says it should have been a 70."},
-      {"kind": "lowerthird", "primary": "AUGUST 2011", "secondary": "Two defects in the deck beams. Scored 60 — work within two years. Remedied in 2016."},
-      {"kind": "compbars", "items": [{"label": "40 — the score entered, August 2012", "value": 40}, {"label": "70 — the manual's own example for broken wires", "value": 70}]},
-      {"kind": "lowerthird", "primary": "JUNE 2013", "secondary": "Corroded cables inside the box girders. Scored 50. Found in 2013 and never remedied."},
-      {"kind": "quote", "quote": "From 28/03/2013 to 24/10/2017 there are no further comments in the observations box of the sheet filled in during the inspections, and all the text annotated in previous years is deleted.", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"},
-      {"kind": "kinetic", "lines": ["NOT BLANK.", "DELETED."], "style": "emphasis", "emphasisWords": ["DELETED"]},
-      {"kind": "quote", "quote": "the improbability, logical before it is technical, of the perfect conservation of the structures for very long periods, even in the absence of maintenance — score zero for twenty-five years", "attribution": "Commissione Ispettiva Ministeriale, on the graphs the company supplied after the collapse"},
-      {"kind": "stat", "value": "€24,610,500", "label": "all structural work on the viaduct, 1982–2018"},
-      {"kind": "compbars", "items": [{"label": "98% spent before 1999", "value": 98}, {"label": "2% spent after", "value": 2}]},
-      {"kind": "compbars", "items": [{"label": "€1,300,000 a year, 1982–1999", "value": 1300000}, {"label": "€23,000 a year, 1999–2018", "value": 23000}]},
-      {"kind": "quote", "quote": "Not doing simple ordinary maintenance today means wanting to do a great deal of extraordinary maintenance tomorrow, at certainly higher costs, with a mirror-image higher remunerativeness.", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"}
-    ],
-    "ACT_4": [
-      {"kind": "kinetic", "lines": ["2003.", "THE ASSESSMENT IS ORDERED.", "DEADLINE: MARCH 2013."], "style": "emphasis", "emphasisWords": ["MARCH 2013"]},
-      {"kind": "quote", "quote": "From that assessment, if correctly carried out, would have come the best possible estimate of structural safety against the risk of collapse.", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"},
-      {"kind": "lowerthird", "primary": "23 JUNE 2017", "secondary": "In a numbered letter to the ministry, the company states that for the Polcevera viaduct the assessment has been carried out."},
-      {"kind": "quote", "quote": "In the documents requested and obtained by this Commission, that assessment had not, at the date of delivery of the present report, in fact been carried out.", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"},
-      {"kind": "quote", "quote": "no safety analysis and no seismic assessment of the viaduct was ever made", "attribution": "Commissione Ispettiva Ministeriale, on the Polcevera viaduct"},
-      {"kind": "lowerthird", "primary": "RETROFITTING", "secondary": "The project's own words: external tensioning of the concrete stays of piers 9 and 10, to make up for the progressive loss of functionality of the cables inside."},
-      {"kind": "stat", "value": "€20,159,344.26", "label": "value of the works put out to tender"},
-      {"kind": "quote", "quote": "It is therefore not considered necessary to intervene on the aspects mentioned above.", "attribution": "The officer running the procedure, on whether the stays needed verifying"},
-      {"kind": "quote", "quote": "From that instruction of the officer, illogical as well as contrary to the rules, it followed that the verifier would not have to concern himself with the part of the highest engineering demand.", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"},
-      {"kind": "stat", "value": "62", "label": "observations the verifier raised anyway"},
-      {"kind": "lowerthird", "primary": "1 FEBRUARY 2018", "secondary": "The committee examines the project. It is explained to them by the technicians of the company who drew it up."},
-      {"kind": "quote", "quote": "Such a procedure must be regarded as irregular and inappropriate for a neutral examination of the project. The favourable opinion therefore came after a rapid and apparently not thorough examination.", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"},
-      {"kind": "compbars", "items": [{"label": "0.71 capacity over demand, bending", "value": 0.71}, {"label": "0.58 capacity over demand, shear", "value": 0.58}]},
-      {"kind": "quote", "quote": "These are wholly unacceptable values, which required a safety measure that could not be postponed. From the information available to this Commission, no measure of that kind was taken.", "attribution": "Commissione Ispettiva Ministeriale, on the project's own calculations"},
-      {"kind": "kinetic", "lines": ["11:36.", "14 AUGUST 2018."], "style": "emphasis", "emphasisWords": ["11:36"]},
-      {"kind": "stat", "value": "243 m", "label": "of deck came down"},
-      {"kind": "stat", "value": "43", "label": "people were killed. Thirteen were injured."}
-    ],
-    "ACT_5": [
-      {"kind": "lowerthird", "primary": "SEPTEMBER 2018", "secondary": "A ministry commission of engineers, two professors of structural engineering and a councillor of the national audit court reports one month after the collapse."},
-      {"kind": "quote", "quote": "more likely that the first cause is to be sought not so much in the rupture of one or more stays, as in that of one of the remaining structural elements", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"},
-      {"kind": "quote", "quote": "the causes and mechanism of the collapse are listed as plausible but not definitive working hypotheses", "attribution": "Commissione Ispettiva Ministeriale, on the limits of its own month-long inquiry"},
-      {"kind": "lowerthird", "primary": "DECEMBER 2020", "secondary": "Court-appointed experts identify corrosion in the upper part of the pier 9 stay, south side. As reported — this film has not read that report."},
-      {"kind": "kinetic", "lines": ["2018 — THE MINISTRY: AN EDGE BEAM OR A DECK.", "2020 — THE COURT'S EXPERTS: THE PIER 9 STAY."], "style": "emphasis", "emphasisWords": ["2018", "2020"]},
-      {"kind": "quote", "quote": "the quality of the grouting of the prestressing ducts was modest, both in the beams and in the stays; all of it had been known to the concessionaire for years", "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"},
-      {"kind": "quote", "quote": "the concessionaire did not make use of the powers to restrict or prohibit traffic on the viaduct conferred on it by the highway code", "attribution": "Commissione Ispettiva Ministeriale — its finding on the most significant immediate responsibility"},
-      {"kind": "quote", "quote": "this system of management of public infrastructure has not worked and in particular has not guaranteed the safety of users", "attribution": "Commissione Ispettiva Ministeriale, closing paragraph"},
-      {"kind": "lowerthird", "primary": "7 JULY 2022", "secondary": "The trial opens in Genoa with fifty-seven defendants."},
-      {"kind": "kinetic", "lines": ["16 JULY 2026.", "THE COURT READS ITS DECISION."], "style": "emphasis", "emphasisWords": ["16 JULY 2026"]},
-      {"kind": "compbars", "items": [{"label": "32 convicted at first instance", "value": 32}, {"label": "25 acquitted or time-barred", "value": 25}]},
-      {"kind": "lowerthird", "primary": "GIOVANNI CASTELLUCCI", "secondary": "Former chief executive. Convicted at first instance and sentenced to twelve years. His lawyers said they would appeal. The judgment is not final."},
-      {"kind": "lowerthird", "primary": "WHAT THE COURT STRUCK OUT", "secondary": "For every defendant, the aggravating circumstance of having acted while foreseeing the event. The convictions are for negligence."},
-      {"kind": "quote", "quote": "because the fact does not exist", "attribution": "The formula on which every defendant charged with the two intentional offences was acquitted"},
-      {"kind": "lowerthird", "primary": "ROBERTO FERRAZZA", "secondary": "Former head of the regional public works office. Acquitted, because the fact does not constitute an offence."},
-      {"kind": "lowerthird", "primary": "NOT JUDGED AT ALL", "secondary": "The engineer who signed the retrofitting project in 2017 died before judgment, and the proceedings against him were closed."},
-      {"kind": "stat", "value": "90 days", "label": "the court gave itself to write down why"}
-    ],
-    "ENDING": [
-      {"kind": "lowerthird", "primary": "VIADOTTO GENOVA SAN GIORGIO", "secondary": "1,067 metres, designed by Renzo Piano, opened 3 August 2020, about €202 million."},
-      {"kind": "lowerthird", "primary": "THE FORTY-THREE LIGHTS", "secondary": "Forty-three points of light were in the original design. The number was reduced."},
-      {"kind": "stat", "value": "20,000+", "label": "road bridges recorded so far. The census is not finished."}
+    "style": "emphasis",
+    "emphasisWords": [
+     "1 AUGUST 2012"
     ]
-  },
-  "_figure_sources": {
-    "_readme": [
-      "EVERY card here is a row in EP76_morandi_FACTS_LEDGER.v001.md. A card with no row does not go on screen -- the ship-blocking class factual_support covers cards exactly as it covers narration.",
-      "THE TWO RULES THAT BREAK THIS FILM IF BROKEN, restated because they bind CARDS and not only lines:",
-      "1. No card may state or imply that anyone foresaw or intended the collapse. On 16 July 2026 the court excluded article 61 no. 3 for every defendant and acquitted all of them of articles 432 and 437 'because the fact does not exist'. The ACT_5 cards 'WHAT THE COURT STRUCK OUT' and 'because the fact does not exist' exist to make that unmissable.",
-      "2. Every named person carries their status in the same card. CASTELLUCCI carries 'convicted at first instance', 'appeal' and 'the judgment is not final'. FERRAZZA carries the acquittal and its formula. The engineer who signed the 2017 project is NOT NAMED at all.",
-      "3. No card resolves the cause to one finding. The ACT_5 split card puts the ministry's 2018 conclusion and the court experts' 2020 conclusion side by side, with their dates, and the film does not choose between them.",
-      "4. The 43 card is the largest and longest-held in the film, and it carries no name, no face and no personal detail.",
-      "5. The ENDING card on the lights CONTRADICTS the widely repeated story on purpose: forty-three points of light were designed and the number was reduced."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "THE NUMBER IN THE BOX",
+     "WAS FORTY."
     ],
-    "counts": {"HOOK": 3, "OP": 1, "ACT_1": 13, "ACT_2": 13, "ACT_3": 17, "ACT_4": 17, "ACT_5": 17, "ENDING": 3},
-    "against_spec": "figure_beats_per_act is [13, 17]. ACT_1 13, ACT_2 13, ACT_3 17, ACT_4 17, ACT_5 17 -- all inside the band at both edges. HOOK, OP and ENDING are not acts and are not counted against it."
+    "style": "emphasis",
+    "emphasisWords": [
+     "FORTY"
+    ]
+   }
+  ],
+  "OP": [
+   {
+    "kind": "lowerthird",
+    "primary": "THE POLCEVERA VIADUCT",
+    "secondary": "Genoa, Liguria. The A10 at kilometre zero point five five one."
+   }
+  ],
+  "ACT_1": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "1962 DESIGNED.",
+     "1963 BEGUN.",
+     "1967 OPENED."
+    ],
+    "style": "emphasis"
+   },
+   {
+    "kind": "stat",
+    "value": 1102,
+    "label": "length of the viaduct",
+    "suffix": " m",
+    "_was_value": "1,102 m",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "stat",
+    "value": 56,
+    "label": "average height above the valley floor",
+    "suffix": " m",
+    "_was_value": "56 m",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "65 M – 208 M",
+     "CLEAR SPANS, ELEVEN OF THEM"
+    ],
+    "style": "emphasis",
+    "_was": {
+     "kind": "stat",
+     "value": "65 m – 208 m",
+     "label": "clear spans, eleven of them"
+    },
+    "_why": "a range is not a single number; as a stat it rendered NaN"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE ONLY ONE",
+    "secondary": "Out of the whole national motorway network, the Polcevera viaduct was the only cable-stayed bridge."
+   },
+   {
+    "kind": "stat",
+    "value": 90,
+    "label": "height of the antennae above the ground",
+    "suffix": " m",
+    "_was_value": "90 m",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "stat",
+    "value": 10,
+    "label": "infill decks between the balanced systems",
+    "_was_value": "10",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "352 primary strands",
+      "value": 352
+     },
+     {
+      "label": "112 secondary strands",
+      "value": 112
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AT LEAST 500 PEOPLE",
+    "secondary": "The balanced systems stood a few metres from inhabited blocks. It is in a footnote of the ministry's report."
+   },
+   {
+    "kind": "quote",
+    "quote": "the advantage of preserving the metal part of the stays from corrosion",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018 — on why the concrete was built around the steel"
+   },
+   {
+    "kind": "quote",
+    "quote": "Indirect methods of investigation do not permit quantitative assessment. Direct investigation is therefore indispensable.",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "DIRECT INVESTIGATION",
+     "MEANS CUTTING INTO IT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "CUTTING INTO IT"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "MARACAIBO, AND WADI AL-KUF",
+    "secondary": "Morandi had built the same system in Venezuela, and would build it again in Libya. In Italy there was only ever one."
+   }
+  ],
+  "ACT_2": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "FIRST THE CABLES HELD THE DECK.",
+     "THE CONCRETE CAME AFTERWARDS."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "AFTERWARDS"
+    ],
+    "at_seconds": 246.0,
+    "hold_seconds": 6.6,
+    "_why": "2026-08-24: V010 is a bare black ground -- the plate the i2v rejected because Wan drew a face into it -- and the solver gave it a 7.36s cut of its own at 245.7s. blackdetect read 7.0s of black and the post-render gate refused the film. The plate is mandatory (all 120 are), so it carries text instead. Both lines are the script's own sentence at line 66-68: 'First the main cables were hung and tensioned, until they were holding up the deck. Then, and only then, a sheath of concrete was built around them.'"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "1981.",
+     "ASPI ASKS MORANDI FOR A REPORT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "1981"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "WE HAVE NOT READ IT",
+    "secondary": "The contents of the 1981 report are not in anything retrieved for this film, and it does not say what was in it."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "1992.",
+     "THEY GO TO PIER ELEVEN."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "PIER ELEVEN"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "TO PRICE THE JOB",
+    "secondary": "The checks were made to calibrate the work, not to find anything."
+   },
+   {
+    "kind": "quote",
+    "quote": "The investigations therefore brought to light the grave state of oxidation of the internal prestressing cables. Numerous strands were severed, or heavily oxidised, with advanced reduction of section.",
+    "attribution": "Commissione Ispettiva Ministeriale, on the 1992 checks at pier 11"
+   },
+   {
+    "kind": "quote",
+    "quote": "Other strands appeared visibly slackened, suggesting a significant loss of pretension.",
+    "attribution": "Commissione Ispettiva Ministeriale"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE FIX WENT OUTSIDE",
+    "secondary": "New cables in polyethylene ducts, down the flanks of the stay, in the open air."
+   },
+   {
+    "kind": "quote",
+    "quote": "to permit their future maintenance",
+    "attribution": "Commissione Ispettiva Ministeriale — the stated reason for putting the new cables outside the concrete"
+   },
+   {
+    "kind": "quote",
+    "quote": "The intervention was carried out only at pier 11.",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "1 stayed pier repaired",
+      "value": 1
+     },
+     {
+      "label": "3 stayed piers on the bridge",
+      "value": 3
+     }
+    ]
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "TWENTY-SIX YEARS AFTER",
+     "THAT WORK BEGAN,",
+     "ONE OF THE OTHER TWO CAME DOWN."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "TWENTY-SIX YEARS"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "2006",
+    "secondary": "A steel walkway was added at the Genoa end of the same pier."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE EQUIPMENT STAYED",
+    "secondary": "The temporary structures built for the pier 11 work remained in the company's possession."
+   }
+  ],
+  "ACT_3": [
+   {
+    "kind": "lowerthird",
+    "primary": "THE COMPANY'S OWN MANUAL",
+    "secondary": "Manutenzione programmata delle opere d'arte stradali. Every quotation on this card and the next is from it."
+   },
+   {
+    "kind": "quote",
+    "quote": "SCORE 70 — defect at an advanced state, has an influence on the statics and reduces the safety coefficient — reduction of the prestressing steel section (broken wires)",
+    "attribution": "Aspi maintenance manual, p.53/149, quoted by the ministry's commission"
+   },
+   {
+    "kind": "quote",
+    "quote": "Whereas for score 70 immediate measures are provided: such as traffic restrictions, up to closure of the carriageway.",
+    "attribution": "Aspi maintenance manual, p.50/149"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "A SEVENTY MEANS",
+     "CLOSING THE ROAD."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "CLOSING THE ROAD"
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "OCTOBER 1991",
+    "secondary": "Oxidised cables, oxidised and severed strands, at pier 11. Scored 70. Remedied in 1994."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "FEBRUARY 1997",
+    "secondary": "A deck slab dropped and vibrating. Scored 43. Remedied twelve years later."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "DECEMBER 2006",
+    "secondary": "Steel bars severed by a slab failure. Scored 40. The commission says it should have been a 70."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "AUGUST 2011",
+    "secondary": "Two defects in the deck beams. Scored 60 — work within two years. Remedied in 2016."
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "40 — the score entered, August 2012",
+      "value": 40
+     },
+     {
+      "label": "70 — the manual's own example for broken wires",
+      "value": 70
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "JUNE 2013",
+    "secondary": "Corroded cables inside the box girders. Scored 50. Found in 2013 and never remedied."
+   },
+   {
+    "kind": "quote",
+    "quote": "From 28/03/2013 to 24/10/2017 there are no further comments in the observations box of the sheet filled in during the inspections, and all the text annotated in previous years is deleted.",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "NOT BLANK.",
+     "DELETED."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "DELETED"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "the improbability, logical before it is technical, of the perfect conservation of the structures for very long periods, even in the absence of maintenance — score zero for twenty-five years",
+    "attribution": "Commissione Ispettiva Ministeriale, on the graphs the company supplied after the collapse"
+   },
+   {
+    "kind": "stat",
+    "value": 24610500,
+    "label": "all structural work on the viaduct, 1982–2018",
+    "prefix": "€",
+    "_was_value": "€24,610,500",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "98% spent before 1999",
+      "value": 98
+     },
+     {
+      "label": "2% spent after",
+      "value": 2
+     }
+    ]
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "€1,300,000 a year, 1982–1999",
+      "value": 1300000
+     },
+     {
+      "label": "€23,000 a year, 1999–2018",
+      "value": 23000
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "Not doing simple ordinary maintenance today means wanting to do a great deal of extraordinary maintenance tomorrow, at certainly higher costs, with a mirror-image higher remunerativeness.",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"
+   }
+  ],
+  "ACT_4": [
+   {
+    "kind": "kinetic",
+    "lines": [
+     "2003.",
+     "THE ASSESSMENT IS ORDERED.",
+     "DEADLINE: MARCH 2013."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "MARCH 2013"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "From that assessment, if correctly carried out, would have come the best possible estimate of structural safety against the risk of collapse.",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "23 JUNE 2017",
+    "secondary": "In a numbered letter to the ministry, the company states that for the Polcevera viaduct the assessment has been carried out."
+   },
+   {
+    "kind": "quote",
+    "quote": "In the documents requested and obtained by this Commission, that assessment had not, at the date of delivery of the present report, in fact been carried out.",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"
+   },
+   {
+    "kind": "quote",
+    "quote": "no safety analysis and no seismic assessment of the viaduct was ever made",
+    "attribution": "Commissione Ispettiva Ministeriale, on the Polcevera viaduct"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "RETROFITTING",
+    "secondary": "The project's own words: external tensioning of the concrete stays of piers 9 and 10, to make up for the progressive loss of functionality of the cables inside."
+   },
+   {
+    "kind": "stat",
+    "value": 20159344.26,
+    "label": "value of the works put out to tender",
+    "prefix": "€",
+    "_was_value": "€20,159,344.26",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master)."
+   },
+   {
+    "kind": "quote",
+    "quote": "It is therefore not considered necessary to intervene on the aspects mentioned above.",
+    "attribution": "The officer running the procedure, on whether the stays needed verifying"
+   },
+   {
+    "kind": "quote",
+    "quote": "From that instruction of the officer, illogical as well as contrary to the rules, it followed that the verifier would not have to concern himself with the part of the highest engineering demand.",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"
+   },
+   {
+    "kind": "stat",
+    "value": 62,
+    "label": "observations the verifier raised anyway",
+    "_was_value": "62",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "1 FEBRUARY 2018",
+    "secondary": "The committee examines the project. It is explained to them by the technicians of the company who drew it up."
+   },
+   {
+    "kind": "quote",
+    "quote": "Such a procedure must be regarded as irregular and inappropriate for a neutral examination of the project. The favourable opinion therefore came after a rapid and apparently not thorough examination.",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "0.71 capacity over demand, bending",
+      "value": 0.71
+     },
+     {
+      "label": "0.58 capacity over demand, shear",
+      "value": 0.58
+     }
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "These are wholly unacceptable values, which required a safety measure that could not be postponed. From the information available to this Commission, no measure of that kind was taken.",
+    "attribution": "Commissione Ispettiva Ministeriale, on the project's own calculations"
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "11:36.",
+     "14 AUGUST 2018."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "11:36"
+    ]
+   },
+   {
+    "kind": "stat",
+    "value": 243,
+    "label": "of deck came down",
+    "suffix": " m",
+    "_was_value": "243 m",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   },
+   {
+    "kind": "stat",
+    "value": 43,
+    "label": "people were killed. Thirteen were injured.",
+    "_was_value": "43",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   }
+  ],
+  "ACT_5": [
+   {
+    "kind": "lowerthird",
+    "primary": "SEPTEMBER 2018",
+    "secondary": "A ministry commission of engineers, two professors of structural engineering and a councillor of the national audit court reports one month after the collapse."
+   },
+   {
+    "kind": "quote",
+    "quote": "more likely that the first cause is to be sought not so much in the rupture of one or more stays, as in that of one of the remaining structural elements",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"
+   },
+   {
+    "kind": "quote",
+    "quote": "the causes and mechanism of the collapse are listed as plausible but not definitive working hypotheses",
+    "attribution": "Commissione Ispettiva Ministeriale, on the limits of its own month-long inquiry"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "DECEMBER 2020",
+    "secondary": "Court-appointed experts identify corrosion in the upper part of the pier 9 stay, south side. As reported — this film has not read that report."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "2018 — THE MINISTRY: AN EDGE BEAM OR A DECK.",
+     "2020 — THE COURT'S EXPERTS: THE PIER 9 STAY."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "2018",
+     "2020"
+    ]
+   },
+   {
+    "kind": "quote",
+    "quote": "the quality of the grouting of the prestressing ducts was modest, both in the beams and in the stays; all of it had been known to the concessionaire for years",
+    "attribution": "Commissione Ispettiva Ministeriale, 14 September 2018"
+   },
+   {
+    "kind": "quote",
+    "quote": "the concessionaire did not make use of the powers to restrict or prohibit traffic on the viaduct conferred on it by the highway code",
+    "attribution": "Commissione Ispettiva Ministeriale — its finding on the most significant immediate responsibility"
+   },
+   {
+    "kind": "quote",
+    "quote": "this system of management of public infrastructure has not worked and in particular has not guaranteed the safety of users",
+    "attribution": "Commissione Ispettiva Ministeriale, closing paragraph"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "7 JULY 2022",
+    "secondary": "The trial opens in Genoa with fifty-seven defendants."
+   },
+   {
+    "kind": "kinetic",
+    "lines": [
+     "16 JULY 2026.",
+     "THE COURT READS ITS DECISION."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "16 JULY 2026"
+    ]
+   },
+   {
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "32 convicted at first instance",
+      "value": 32
+     },
+     {
+      "label": "25 acquitted or time-barred",
+      "value": 25
+     }
+    ]
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "GIOVANNI CASTELLUCCI",
+    "secondary": "Former chief executive. Convicted at first instance and sentenced to twelve years. His lawyers said they would appeal. The judgment is not final."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "WHAT THE COURT STRUCK OUT",
+    "secondary": "For every defendant, the aggravating circumstance of having acted while foreseeing the event. The convictions are for negligence."
+   },
+   {
+    "kind": "quote",
+    "quote": "because the fact does not exist",
+    "attribution": "The formula on which every defendant charged with the two intentional offences was acquitted"
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "ROBERTO FERRAZZA",
+    "secondary": "Former head of the regional public works office. Acquitted, because the fact does not constitute an offence."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "NOT JUDGED AT ALL",
+    "secondary": "The engineer who signed the retrofitting project in 2017 died before judgment, and the proceedings against him were closed."
+   },
+   {
+    "kind": "stat",
+    "value": 90,
+    "label": "the court gave itself to write down why",
+    "suffix": " days",
+    "_was_value": "90 days",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   }
+  ],
+  "ENDING": [
+   {
+    "kind": "lowerthird",
+    "primary": "VIADOTTO GENOVA SAN GIORGIO",
+    "secondary": "1,067 metres, designed by Renzo Piano, opened 3 August 2020, about €202 million."
+   },
+   {
+    "kind": "lowerthird",
+    "primary": "THE FORTY-THREE LIGHTS",
+    "secondary": "Forty-three points of light were in the original design. The number was reduced."
+   },
+   {
+    "kind": "stat",
+    "value": 20000,
+    "label": "road bridges recorded so far. The census is not finished.",
+    "suffix": " +",
+    "_was_value": "20,000+",
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "decimals": 0
+   }
+  ]
+ },
+ "_figure_sources": {
+  "_readme": [
+   "EVERY card here is a row in EP76_morandi_FACTS_LEDGER.v001.md. A card with no row does not go on screen -- the ship-blocking class factual_support covers cards exactly as it covers narration.",
+   "THE TWO RULES THAT BREAK THIS FILM IF BROKEN, restated because they bind CARDS and not only lines:",
+   "1. No card may state or imply that anyone foresaw or intended the collapse. On 16 July 2026 the court excluded article 61 no. 3 for every defendant and acquitted all of them of articles 432 and 437 'because the fact does not exist'. The ACT_5 cards 'WHAT THE COURT STRUCK OUT' and 'because the fact does not exist' exist to make that unmissable.",
+   "2. Every named person carries their status in the same card. CASTELLUCCI carries 'convicted at first instance', 'appeal' and 'the judgment is not final'. FERRAZZA carries the acquittal and its formula. The engineer who signed the 2017 project is NOT NAMED at all.",
+   "3. No card resolves the cause to one finding. The ACT_5 split card puts the ministry's 2018 conclusion and the court experts' 2020 conclusion side by side, with their dates, and the film does not choose between them.",
+   "4. The 43 card is the largest and longest-held in the film, and it carries no name, no face and no personal detail.",
+   "5. The ENDING card on the lights CONTRADICTS the widely repeated story on purpose: forty-three points of light were designed and the number was reduced."
+  ],
+  "counts": {
+   "HOOK": 3,
+   "OP": 1,
+   "ACT_1": 13,
+   "ACT_2": 13,
+   "ACT_3": 17,
+   "ACT_4": 17,
+   "ACT_5": 17,
+   "ENDING": 3
   },
-  "_declared_values": {
-    "hookSeconds": "22.4 -- MEASURED from 06_audio/narration_index.v001.json, where the HOOK section ends. Not a design target.",
-    "leadSeconds": "0 -- the hook is voiced from frame 0 (ONE_PASS v3 row 9).",
-    "openingVariant": "'overlay' -- the brand band sits over the hook's settle and the voice does not stop.",
-    "captionLeadSeconds": "0.6 -- the house lead from feedback_anim_caption_polish.",
-    "assets": "asset_manifest.v001.json DOES NOT EXIST YET. It is written by build_case_film_assets.py once the 120 i2v motion clips and the reviewed footage are staged. This config is deliberately written first so that step has a target.",
-    "captions": "captions.final.v001.srt does not exist yet either; it is forced-aligned to the delivered master after the render."
-  }
+  "against_spec": "figure_beats_per_act is [13, 17]. ACT_1 13, ACT_2 13, ACT_3 17, ACT_4 17, ACT_5 17 -- all inside the band at both edges. HOOK, OP and ENDING are not acts and are not counted against it."
+ },
+ "_declared_values": {
+  "hookSeconds": "22.4 -- MEASURED from 06_audio/narration_index.v001.json, where the HOOK section ends. Not a design target.",
+  "leadSeconds": "0 -- the hook is voiced from frame 0 (ONE_PASS v3 row 9).",
+  "openingVariant": "'overlay' -- the brand band sits over the hook's settle and the voice does not stop.",
+  "captionLeadSeconds": "0.6 -- the house lead from feedback_anim_caption_polish.",
+  "assets": "asset_manifest.v001.json DOES NOT EXIST YET. It is written by build_case_film_assets.py once the 120 i2v motion clips and the reviewed footage are staged. This config is deliberately written first so that step has a target.",
+  "captions": "captions.final.v001.srt does not exist yet either; it is forced-aligned to the delivered master after the render."
+ }
 }

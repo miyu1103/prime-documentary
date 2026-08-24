@@ -1,102 +1,475 @@
 [
-  {"_comment": "EP75 lahaina. WHAT THIS FILM SOUNDS LIKE: a municipal warning network tested on the first business day of every month, wind on a leeward slope, radio traffic, a phone with no service, a padlock and a shoulder, water that never stopped flowing, and 518 pages. The film bible bars sensationalism and quarantine rule 07 bars anything that dramatises the fire, so NOTHING here is a flame, an explosion or a scream. The loud events are carried plainly and the filing cabinet is as loud as the hillside. No gavel: the spec bars courtroom furniture and this film never reaches a courtroom.", "needle": "__doc__", "kind": "click", "anchor": "__doc__"},
-
-  {"needle": "wind", "kind": "whoosh", "anchor": "wind"},
-  {"needle": "gusts", "kind": "whoosh", "anchor": "gusts"},
-  {"needle": "blowing", "kind": "whoosh", "anchor": "blowing"},
-  {"needle": "smoke", "kind": "whoosh", "anchor": "smoke"},
-  {"needle": "embers", "kind": "rustle", "anchor": "embers"},
-  {"needle": "grass", "kind": "rustle", "anchor": "grass"},
-  {"needle": "vegetation", "kind": "rustle", "anchor": "vegetation"},
-
-  {"needle": "siren", "kind": "click", "anchor": "siren"},
-  {"needle": "sirens", "kind": "click", "anchor": "sirens"},
-  {"needle": "warning", "kind": "click", "anchor": "warning"},
-  {"needle": "alert", "kind": "click", "anchor": "alert"},
-  {"needle": "alerts", "kind": "click", "anchor": "alerts"},
-  {"needle": "notification", "kind": "click", "anchor": "notification"},
-  {"needle": "message", "kind": "click", "anchor": "message"},
-  {"needle": "text", "kind": "click", "anchor": "text"},
-  {"needle": "tested", "kind": "click", "anchor": "tested"},
-  {"needle": "activated", "kind": "click", "anchor": "activated"},
-  {"needle": "operable", "kind": "click", "anchor": "operable"},
-
-  {"needle": "phone", "kind": "tick", "anchor": "phone"},
-  {"needle": "phones", "kind": "tick", "anchor": "phones"},
-  {"needle": "cellphones", "kind": "tick", "anchor": "cellphones"},
-  {"needle": "cellular", "kind": "tick", "anchor": "cellular"},
-  {"needle": "radio", "kind": "tick", "anchor": "radio"},
-
-  {"needle": "report", "kind": "rustle", "anchor": "report"},
-  {"needle": "findings", "kind": "rustle", "anchor": "findings"},
-  {"needle": "finding", "kind": "rustle", "anchor": "finding"},
-  {"needle": "investigation", "kind": "rustle", "anchor": "investigation"},
-  {"needle": "recommendation", "kind": "rustle", "anchor": "recommendation"},
-  {"needle": "recommendations", "kind": "rustle", "anchor": "recommendations"},
-  {"needle": "records", "kind": "rustle", "anchor": "records"},
-  {"needle": "record", "kind": "rustle", "anchor": "record"},
-  {"needle": "log", "kind": "rustle", "anchor": "log"},
-
-  {"needle": "pages", "kind": "page turn", "anchor": "pages"},
-  {"needle": "sheet", "kind": "page turn", "anchor": "sheet"},
-  {"needle": "forms", "kind": "page turn", "anchor": "forms"},
-  {"needle": "wrote", "kind": "page turn", "anchor": "wrote"},
-  {"needle": "written", "kind": "page turn", "anchor": "written"},
-  {"needle": "subpoena", "kind": "page turn", "anchor": "subpoena"},
-
-  {"needle": "published", "kind": "stamp", "anchor": "published"},
-  {"needle": "publication", "kind": "stamp", "anchor": "publication"},
-  {"needle": "classification", "kind": "stamp", "anchor": "classification"},
-  {"needle": "accidental", "kind": "stamp", "anchor": "Accidental"},
-  {"needle": "commissioned", "kind": "stamp", "anchor": "commissioned"},
-
-  {"needle": "gate", "kind": "latch", "anchor": "gate"},
-  {"needle": "locked", "kind": "latch", "anchor": "locked"},
-  {"needle": "padlock", "kind": "latch", "anchor": "padlock"},
-  {"needle": "barrier", "kind": "latch", "anchor": "barrier"},
-  {"needle": "barriers", "kind": "latch", "anchor": "barriers"},
-  {"needle": "unlock", "kind": "latch", "anchor": "unlock"},
-
-  {"needle": "shoulder", "kind": "impact", "anchor": "shoulder"},
-  {"needle": "ran", "kind": "impact", "anchor": "ran"},
-  {"needle": "cut", "kind": "impact", "anchor": "cut"},
-  {"needle": "broken", "kind": "impact", "anchor": "broken"},
-  {"needle": "down", "kind": "impact", "anchor": "down"},
-
-  {"needle": "water", "kind": "clink", "anchor": "water"},
-  {"needle": "hydrant", "kind": "clink", "anchor": "hydrant"},
-  {"needle": "hydrants", "kind": "clink", "anchor": "hydrants"},
-  {"needle": "plumbing", "kind": "clink", "anchor": "plumbing"},
-  {"needle": "pressure", "kind": "clink", "anchor": "pressure"},
-  {"needle": "trickle", "kind": "clink", "anchor": "trickle"},
-
-  {"needle": "power", "kind": "mechanical", "anchor": "power"},
-  {"needle": "pole", "kind": "mechanical", "anchor": "pole"},
-  {"needle": "poles", "kind": "mechanical", "anchor": "poles"},
-  {"needle": "lines", "kind": "mechanical", "anchor": "lines"},
-  {"needle": "transformer", "kind": "mechanical", "anchor": "transformer"},
-
-  {"needle": "o'clock", "kind": "clock", "anchor": "clock"},
-  {"needle": "minutes", "kind": "clock", "anchor": "minutes"},
-  {"needle": "past", "kind": "clock", "anchor": "past"},
-  {"needle": "morning", "kind": "clock", "anchor": "morning"},
-  {"needle": "afternoon", "kind": "clock", "anchor": "afternoon"},
-  {"needle": "hours", "kind": "clock", "anchor": "hours"},
-
-  {"needle": "crew", "kind": "footstep", "anchor": "crew"},
-  {"needle": "crews", "kind": "footstep", "anchor": "crews"},
-  {"needle": "officer", "kind": "footstep", "anchor": "officer"},
-  {"needle": "officers", "kind": "footstep", "anchor": "officers"},
-  {"needle": "firefighters", "kind": "footstep", "anchor": "firefighters"},
-  {"needle": "walked", "kind": "footstep", "anchor": "walked"},
-
-  {"needle": "engine", "kind": "engine pull", "anchor": "engine"},
-  {"needle": "traffic", "kind": "engine pull", "anchor": "traffic"},
-  {"needle": "cars", "kind": "engine pull", "anchor": "cars"},
-  {"needle": "vehicles", "kind": "engine pull", "anchor": "vehicles"},
-
-  {"needle": "evacuate", "kind": "check", "anchor": "evacuate"},
-  {"needle": "evacuation", "kind": "check", "anchor": "evacuation"},
-  {"needle": "shelter", "kind": "check", "anchor": "shelter"},
-  {"needle": "activation", "kind": "check", "anchor": "activation"}
+ {
+  "_comment": "EP75 lahaina. WHAT THIS FILM SOUNDS LIKE: a municipal warning network tested on the first business day of every month, wind on a leeward slope, radio traffic, a phone with no service, a padlock and a shoulder, water that never stopped flowing, and 518 pages. The film bible bars sensationalism and quarantine rule 07 bars anything that dramatises the fire, so NOTHING here is a flame, an explosion or a scream. The loud events are carried plainly and the filing cabinet is as loud as the hillside. No gavel: the spec bars courtroom furniture and this film never reaches a courtroom.",
+  "needle": "__doc__",
+  "kind": "click",
+  "anchor": "__doc__"
+ },
+ {
+  "needle": "wind",
+  "kind": "whoosh",
+  "anchor": "wind"
+ },
+ {
+  "needle": "gusts",
+  "kind": "whoosh",
+  "anchor": "gusts"
+ },
+ {
+  "needle": "blowing",
+  "kind": "whoosh",
+  "anchor": "blowing"
+ },
+ {
+  "needle": "smoke",
+  "kind": "whoosh",
+  "anchor": "smoke"
+ },
+ {
+  "needle": "embers",
+  "kind": "rustle",
+  "anchor": "embers"
+ },
+ {
+  "needle": "grass",
+  "kind": "rustle",
+  "anchor": "grass"
+ },
+ {
+  "needle": "vegetation",
+  "kind": "rustle",
+  "anchor": "vegetation"
+ },
+ {
+  "needle": "siren",
+  "kind": "click",
+  "anchor": "siren"
+ },
+ {
+  "needle": "sirens",
+  "kind": "click",
+  "anchor": "sirens"
+ },
+ {
+  "needle": "warning",
+  "kind": "click",
+  "anchor": "warning"
+ },
+ {
+  "needle": "alert",
+  "kind": "click",
+  "anchor": "alert"
+ },
+ {
+  "needle": "alerts",
+  "kind": "click",
+  "anchor": "alerts"
+ },
+ {
+  "needle": "notification",
+  "kind": "click",
+  "anchor": "notification"
+ },
+ {
+  "needle": "message",
+  "kind": "click",
+  "anchor": "message"
+ },
+ {
+  "needle": "text",
+  "kind": "click",
+  "anchor": "text"
+ },
+ {
+  "needle": "tested",
+  "kind": "click",
+  "anchor": "tested"
+ },
+ {
+  "needle": "activated",
+  "kind": "click",
+  "anchor": "activated"
+ },
+ {
+  "needle": "operable",
+  "kind": "click",
+  "anchor": "operable"
+ },
+ {
+  "needle": "phone",
+  "kind": "tick",
+  "anchor": "phone"
+ },
+ {
+  "needle": "phones",
+  "kind": "tick",
+  "anchor": "phones"
+ },
+ {
+  "needle": "cellphones",
+  "kind": "tick",
+  "anchor": "cellphones"
+ },
+ {
+  "needle": "cellular",
+  "kind": "tick",
+  "anchor": "cellular"
+ },
+ {
+  "needle": "radio",
+  "kind": "tick",
+  "anchor": "radio"
+ },
+ {
+  "needle": "report",
+  "kind": "rustle",
+  "anchor": "report"
+ },
+ {
+  "needle": "findings",
+  "kind": "rustle",
+  "anchor": "findings"
+ },
+ {
+  "needle": "finding",
+  "kind": "rustle",
+  "anchor": "finding"
+ },
+ {
+  "needle": "investigation",
+  "kind": "rustle",
+  "anchor": "investigation"
+ },
+ {
+  "needle": "recommendation",
+  "kind": "rustle",
+  "anchor": "recommendation"
+ },
+ {
+  "needle": "recommendations",
+  "kind": "rustle",
+  "anchor": "recommendations"
+ },
+ {
+  "needle": "records",
+  "kind": "rustle",
+  "anchor": "records"
+ },
+ {
+  "needle": "record",
+  "kind": "rustle",
+  "anchor": "record"
+ },
+ {
+  "needle": "log",
+  "kind": "rustle",
+  "anchor": "log"
+ },
+ {
+  "needle": "pages",
+  "kind": "page turn",
+  "anchor": "pages"
+ },
+ {
+  "needle": "sheet",
+  "kind": "page turn",
+  "anchor": "sheet"
+ },
+ {
+  "needle": "forms",
+  "kind": "page turn",
+  "anchor": "forms"
+ },
+ {
+  "needle": "wrote",
+  "kind": "page turn",
+  "anchor": "wrote"
+ },
+ {
+  "needle": "written",
+  "kind": "page turn",
+  "anchor": "written"
+ },
+ {
+  "needle": "subpoena",
+  "kind": "page turn",
+  "anchor": "subpoena"
+ },
+ {
+  "needle": "published",
+  "kind": "stamp",
+  "anchor": "published"
+ },
+ {
+  "needle": "publication",
+  "kind": "stamp",
+  "anchor": "publication"
+ },
+ {
+  "needle": "classification",
+  "kind": "stamp",
+  "anchor": "classification"
+ },
+ {
+  "needle": "accidental",
+  "kind": "stamp",
+  "anchor": "Accidental"
+ },
+ {
+  "needle": "commissioned",
+  "kind": "stamp",
+  "anchor": "commissioned"
+ },
+ {
+  "needle": "gate",
+  "kind": "latch",
+  "anchor": "gate"
+ },
+ {
+  "needle": "locked",
+  "kind": "latch",
+  "anchor": "locked"
+ },
+ {
+  "needle": "padlock",
+  "kind": "latch",
+  "anchor": "padlock"
+ },
+ {
+  "needle": "barrier",
+  "kind": "latch",
+  "anchor": "barrier"
+ },
+ {
+  "needle": "barriers",
+  "kind": "latch",
+  "anchor": "barriers"
+ },
+ {
+  "needle": "unlock",
+  "kind": "latch",
+  "anchor": "unlock"
+ },
+ {
+  "needle": "shoulder",
+  "kind": "impact",
+  "anchor": "shoulder"
+ },
+ {
+  "needle": "ran",
+  "kind": "impact",
+  "anchor": "ran"
+ },
+ {
+  "needle": "cut",
+  "kind": "impact",
+  "anchor": "cut"
+ },
+ {
+  "needle": "broken",
+  "kind": "impact",
+  "anchor": "broken"
+ },
+ {
+  "needle": "down",
+  "kind": "impact",
+  "anchor": "down"
+ },
+ {
+  "needle": "water",
+  "kind": "clink",
+  "anchor": "water"
+ },
+ {
+  "needle": "hydrant",
+  "kind": "clink",
+  "anchor": "hydrant"
+ },
+ {
+  "needle": "hydrants",
+  "kind": "clink",
+  "anchor": "hydrants"
+ },
+ {
+  "needle": "plumbing",
+  "kind": "clink",
+  "anchor": "plumbing"
+ },
+ {
+  "needle": "pressure",
+  "kind": "clink",
+  "anchor": "pressure"
+ },
+ {
+  "needle": "trickle",
+  "kind": "clink",
+  "anchor": "trickle"
+ },
+ {
+  "needle": "power",
+  "kind": "mechanical",
+  "anchor": "power"
+ },
+ {
+  "needle": "pole",
+  "kind": "mechanical",
+  "anchor": "pole"
+ },
+ {
+  "needle": "poles",
+  "kind": "mechanical",
+  "anchor": "poles"
+ },
+ {
+  "needle": "lines",
+  "kind": "mechanical",
+  "anchor": "lines"
+ },
+ {
+  "needle": "transformer",
+  "kind": "mechanical",
+  "anchor": "transformer"
+ },
+ {
+  "needle": "o'clock",
+  "kind": "clock",
+  "anchor": "clock"
+ },
+ {
+  "needle": "minutes",
+  "kind": "clock",
+  "anchor": "minutes"
+ },
+ {
+  "needle": "past",
+  "kind": "clock",
+  "anchor": "past"
+ },
+ {
+  "needle": "morning",
+  "kind": "clock",
+  "anchor": "morning"
+ },
+ {
+  "needle": "afternoon",
+  "kind": "clock",
+  "anchor": "afternoon"
+ },
+ {
+  "needle": "hours",
+  "kind": "clock",
+  "anchor": "hours"
+ },
+ {
+  "needle": "crew",
+  "kind": "footstep",
+  "anchor": "crew"
+ },
+ {
+  "needle": "crews",
+  "kind": "footstep",
+  "anchor": "crews"
+ },
+ {
+  "needle": "officer",
+  "kind": "footstep",
+  "anchor": "officer"
+ },
+ {
+  "needle": "officers",
+  "kind": "footstep",
+  "anchor": "officers"
+ },
+ {
+  "needle": "firefighters",
+  "kind": "footstep",
+  "anchor": "firefighters"
+ },
+ {
+  "needle": "walked",
+  "kind": "footstep",
+  "anchor": "walked"
+ },
+ {
+  "needle": "engine",
+  "kind": "engine pull",
+  "anchor": "engine"
+ },
+ {
+  "needle": "traffic",
+  "kind": "engine pull",
+  "anchor": "traffic"
+ },
+ {
+  "needle": "cars",
+  "kind": "engine pull",
+  "anchor": "cars"
+ },
+ {
+  "needle": "vehicles",
+  "kind": "engine pull",
+  "anchor": "vehicles"
+ },
+ {
+  "needle": "evacuate",
+  "kind": "check",
+  "anchor": "evacuate"
+ },
+ {
+  "needle": "evacuation",
+  "kind": "check",
+  "anchor": "evacuation"
+ },
+ {
+  "needle": "shelter",
+  "kind": "check",
+  "anchor": "shelter"
+ },
+ {
+  "needle": "activation",
+  "kind": "check",
+  "anchor": "activation"
+ },
+ {
+  "needle": "wind",
+  "kind": "low boom",
+  "anchor": "wind",
+  "_added": "2026-08-24: sound_layers measured 10 distinct sample files against a floor of 12; the library holds 13. These four are the files EP75 was not reaching, anchored on words this script actually speaks (wind 14, report 17, door 4, camera 1)."
+ },
+ {
+  "needle": "report",
+  "kind": "riser",
+  "anchor": "report",
+  "_added": "2026-08-24: sound_layers measured 10 distinct sample files against a floor of 12; the library holds 13. These four are the files EP75 was not reaching, anchored on words this script actually speaks (wind 14, report 17, door 4, camera 1)."
+ },
+ {
+  "needle": "door",
+  "kind": "knock",
+  "anchor": "door",
+  "_added": "2026-08-24: sound_layers measured 10 distinct sample files against a floor of 12; the library holds 13. These four are the files EP75 was not reaching, anchored on words this script actually speaks (wind 14, report 17, door 4, camera 1)."
+ },
+ {
+  "needle": "camera",
+  "kind": "shutter",
+  "anchor": "camera",
+  "_added": "2026-08-24: sound_layers measured 10 distinct sample files against a floor of 12; the library holds 13. These four are the files EP75 was not reaching, anchored on words this script actually speaks (wind 14, report 17, door 4, camera 1)."
+ },
+ {
+  "needle": "ocean",
+  "kind": "low boom",
+  "anchor": "ocean",
+  "_added": "2026-08-24: reaching sfx_low_boom, which the film had no route to."
+ },
+ {
+  "needle": "night",
+  "kind": "low boom",
+  "anchor": "night",
+  "_added": "2026-08-24: reaching sfx_low_boom, which the film had no route to."
+ },
+ {
+  "needle": "hill",
+  "kind": "low boom",
+  "anchor": "hill",
+  "_added": "2026-08-24: reaching sfx_low_boom, which the film had no route to."
+ }
 ]

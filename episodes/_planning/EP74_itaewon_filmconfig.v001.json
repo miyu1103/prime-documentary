@@ -2,7 +2,7 @@
  "schema_version": "pd_filmconfig.v001",
  "slug": "itaewon",
  "episode_id": "PD-2026-074-itaewon",
- "assets": "episodes/PD-2026-074-itaewon/05_visuals/asset_manifest.v001.json",
+ "assets": "episodes/PD-2026-074-itaewon/05_visuals/asset_manifest.v003.json",
  "narration_index": "episodes/PD-2026-074-itaewon/06_audio/narration_index.v001.json",
  "narration": "itaewon/narration.mp3",
  "captions": "episodes/PD-2026-074-itaewon/08_edit/captions.final.v001.srt",
@@ -56,9 +56,18 @@
     ]
    },
    {
-    "kind": "lowerthird",
-    "primary": "3.2 METRES",
-    "secondary": "Two cars side by side. The end that opens onto the main road."
+    "kind": "stat",
+    "label": "THE ALLEY AT ITS NARROWEST",
+    "value": 3.2,
+    "suffix": " METRES",
+    "decimals": 1,
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "3.2 METRES",
+     "secondary": "Two cars side by side. The end that opens onto the main road."
+    },
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "_was_value": "3.2"
    },
    {
     "kind": "lowerthird",
@@ -94,14 +103,36 @@
     ]
    },
    {
-    "kind": "lowerthird",
-    "primary": "SEOUL TRANSPORTATION CORPORATION",
-    "secondary": "81,573 people left the train at Itaewon station that day."
+    "kind": "numberticker",
+    "value": 81573,
+    "group": true,
+    "label": "LEFT THE TRAIN AT ITAEWON THAT DAY",
+    "topLabel": "SEOUL TRANSPORTATION CORPORATION",
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "SEOUL TRANSPORTATION CORPORATION",
+     "secondary": "81,573 people left the train at Itaewon station that day."
+    },
+    "_why": "2026-08-24: same fact, different form. The film carried 71 lowerthirds and nothing else; the acceptance gate reads that as one motion-graphic repeated."
    },
    {
-    "kind": "lowerthird",
-    "primary": "THE SAME SATURDAY, A YEAR EARLIER",
-    "secondary": "31,878."
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "the same Saturday, a year earlier",
+      "value": 31878
+     },
+     {
+      "label": "29 October 2022",
+      "value": 81573
+     }
+    ],
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "THE SAME SATURDAY, A YEAR EARLIER",
+     "secondary": "31,878."
+    },
+    "_why": "2026-08-24: same fact, different form. The film carried 71 lowerthirds and nothing else; the acceptance gate reads that as one motion-graphic repeated."
    },
    {
     "kind": "kinetic",
@@ -114,19 +145,57 @@
     ]
    },
    {
-    "kind": "lowerthird",
-    "primary": "6 P.M. – 7 P.M.",
-    "secondary": "10,747 people out of the station."
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "6 p.m. - 7 p.m.",
+      "value": 10747
+     },
+     {
+      "label": "7 p.m. - 8 p.m.",
+      "value": 11873
+     },
+     {
+      "label": "8 p.m. - 9 p.m.",
+      "value": 11666
+     }
+    ],
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "6 P.M. – 7 P.M.",
+     "secondary": "10,747 people out of the station."
+    },
+    "_why": "2026-08-24: same fact, different form. The film carried 71 lowerthirds and nothing else; the acceptance gate reads that as one motion-graphic repeated."
    },
    {
-    "kind": "lowerthird",
-    "primary": "7 P.M. – 8 P.M.",
-    "secondary": "11,873."
+    "kind": "kinetic",
+    "lines": [
+     "ELEVEN THOUSAND AN HOUR.",
+     "OUT OF ONE STATION EXIT."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "ELEVEN THOUSAND"
+    ],
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "7 P.M. – 8 P.M.",
+     "secondary": "11,873."
+    },
+    "_why": "2026-08-24: same fact, different form. The film carried 71 lowerthirds and nothing else; the acceptance gate reads that as one motion-graphic repeated."
    },
    {
-    "kind": "lowerthird",
-    "primary": "8 P.M. – 9 P.M.",
-    "secondary": "11,666."
+    "kind": "stat",
+    "label": "OUT OF THE STATION, 8 P.M. - 9 P.M.",
+    "value": 11666,
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "8 P.M. – 9 P.M.",
+     "secondary": "11,666."
+    },
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "_was_value": "11,666",
+    "decimals": 0
    },
    {
     "kind": "lowerthird",
@@ -158,24 +227,63 @@
     ]
    },
    {
-    "kind": "lowerthird",
-    "primary": "6:34 P.M. – 10:11 P.M.",
-    "secondary": "Police in Itaewon received eleven distress reports about dangerous levels of overcrowding."
+    "kind": "numberticker",
+    "value": 11,
+    "label": "DISTRESS REPORTS ABOUT OVERCROWDING",
+    "topLabel": "6:34 P.M. - 10:11 P.M.",
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "6:34 P.M. – 10:11 P.M.",
+     "secondary": "Police in Itaewon received eleven distress reports about dangerous levels of overcrowding."
+    },
+    "_why": "2026-08-24: same fact, different form. The film carried 71 lowerthirds and nothing else; the acceptance gate reads that as one motion-graphic repeated."
    },
    {
-    "kind": "lowerthird",
-    "primary": "112",
-    "secondary": "In South Korea, the number you dial for the police."
+    "kind": "stat",
+    "label": "IN SOUTH KOREA, THE NUMBER YOU DIAL FOR THE POLICE",
+    "value": 112,
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "112",
+     "secondary": "In South Korea, the number you dial for the police."
+    },
+    "_why": "2026-08-24: value must be a number; the unit moved to prefix/suffix. As a string it rendered as NaN on screen (seen in EP76's shipped master).",
+    "_was_value": "112",
+    "decimals": 0
    },
    {
-    "kind": "lowerthird",
-    "primary": "CALL 1 — 6:34 P.M.",
-    "secondary": "People were being forced uphill into a place with no room to come back down. Somebody should come and control it."
+    "kind": "quote",
+    "quote": "People were being forced uphill into a place with no room to come back down. Somebody should come and control it.",
+    "attribution": "the first of the eleven calls, 6:34 p.m.",
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "CALL 1 — 6:34 P.M.",
+     "secondary": "People were being forced uphill into a place with no room to come back down. Somebody should come and control it."
+    },
+    "_why": "2026-08-24: same fact, different form. The film carried 71 lowerthirds and nothing else; the acceptance gate reads that as one motion-graphic repeated."
    },
    {
-    "kind": "lowerthird",
-    "primary": "CALL 2 — 8:09 P.M.",
-    "secondary": "One hour and thirty-five minutes after the first."
+    "kind": "timeline",
+    "events": [
+     {
+      "year": "6:34 p.m.",
+      "text": "the first call"
+     },
+     {
+      "year": "8:09 p.m.",
+      "text": "the second, an hour and thirty-five minutes later"
+     },
+     {
+      "year": "10:11 p.m.",
+      "text": "the eleventh, and the last"
+     }
+    ],
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "CALL 2 — 8:09 P.M.",
+     "secondary": "One hour and thirty-five minutes after the first."
+    },
+    "_why": "2026-08-24: same fact, different form. The film carried 71 lowerthirds and nothing else; the acceptance gate reads that as one motion-graphic repeated."
    },
    {
     "kind": "lowerthird",
@@ -183,9 +291,21 @@
     "secondary": "Two different calls. The same evening. The same street."
    },
    {
-    "kind": "lowerthird",
-    "primary": "CALL 11 — 10:11 P.M.",
-    "secondary": "The last of the eleven."
+    "kind": "kinetic",
+    "lines": [
+     "ELEVEN CALLS.",
+     "THE LAST AT 10:11 P.M."
+    ],
+    "style": "emphasis",
+    "emphasisWords": [
+     "ELEVEN"
+    ],
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "CALL 11 — 10:11 P.M.",
+     "secondary": "The last of the eleven."
+    },
+    "_why": "2026-08-24: same fact, different form. The film carried 71 lowerthirds and nothing else; the acceptance gate reads that as one motion-graphic repeated."
    },
    {
     "kind": "kinetic",
@@ -239,9 +359,23 @@
     "secondary": "Four researchers published a study of that night, reconstructing the crowd from the record."
    },
    {
-    "kind": "lowerthird",
-    "primary": "AVERAGE DENSITY DURING THE CRUSH",
-    "secondary": "7.57 people per square metre. Maximum 9.95."
+    "kind": "compbars",
+    "items": [
+     {
+      "label": "average density during the crush",
+      "value": 7.57
+     },
+     {
+      "label": "maximum recorded",
+      "value": 9.95
+     }
+    ],
+    "_was": {
+     "kind": "lowerthird",
+     "primary": "AVERAGE DENSITY DURING THE CRUSH",
+     "secondary": "7.57 people per square metre. Maximum 9.95."
+    },
+    "_why": "2026-08-24: same fact, different form. The film carried 71 lowerthirds and nothing else; the acceptance gate reads that as one motion-graphic repeated."
    },
    {
     "kind": "lowerthird",
