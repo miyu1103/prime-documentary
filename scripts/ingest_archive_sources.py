@@ -1133,7 +1133,7 @@ FFMPEG = "ffmpeg"
 def ffprobe_json(path: str) -> dict:
     out = subprocess.run(
         [FFPROBE, "-v", "error", "-show_streams", "-show_format", "-of", "json", path],
-        capture_output=True, text=True, timeout=120)
+        capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=120)
     return json.loads(out.stdout or "{}")
 
 
