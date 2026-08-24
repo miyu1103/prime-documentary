@@ -1016,6 +1016,9 @@ NASA_THEMES = {"space_nasa", "weather_disasters", "ocean_nature", "science_tech"
 
 
 def log(msg: str) -> None:
+    # Secrets rule: exception text can carry a full request URL, and keyed sources put the
+    # API key in the query string. Redact key-ish params before anything reaches the log.
+    msg = re.sub(r"(?i)\b(key|api_key|apikey|access_key|token)=[^&\s]+", r"\1=REDACTED", msg)
     print(f"[{datetime.now().strftime('%m-%d %H:%M:%S')}] {msg}", flush=True)
 
 
