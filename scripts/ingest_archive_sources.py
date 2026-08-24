@@ -342,6 +342,9 @@ CO_OCCUR: dict[str, dict] = {
                  "headlight", "headlights", "asphalt", "road", "street", "kerb", "curb"],
                 ["night", "dark", "darkness", "dusk", "evening", "rain", "wet", "fog"]],
         "deny": ["firework", "confetti", "abstract", "3d", "render", "party", "christmas",
+                 # 2026-08-25 restore-sheet round: daytime/CG rejects that the gate admitted
+                 "morning", "ambulance", "emergency", "winter", "snow", "spotlight",
+                 "r34", "jdm", "sports car",
                  "galaxy", "space", "bokeh background", "skyline", "bridge", "terrace",
                  "tropical", "beach", "flower", "butterfly", "bulb", "candle", "diode",
                  # added after the 2026-08-24 contact sheet: a wind turbine and a moonlit
@@ -356,6 +359,8 @@ CO_OCCUR: dict[str, dict] = {
                  "light", "home", "house", "apartment"]],
         "deny": ["firework", "confetti", "abstract", "3d", "render", "galaxy", "beach",
                  "skyline", "flower", "butterfly", "portrait", "model", "wedding",
+                 # 2026-08-25 restore-sheet round: bare skies and CG cozy-ambience rooms
+                 "sky", "cloud", "sunbeam", "relax", "sleep", "cozy",
                  # the contact sheet returned forests, fog, snow and a theatre curtain
                  "forest", "trees", "fog", "mist", "snow", "landscape", "mountain",
                  "sunrise", "theater", "theatre", "stage", "ai generated", "computer generated"],
@@ -370,6 +375,9 @@ CO_OCCUR: dict[str, dict] = {
         # A real clock is filmed close, so the deny list carries the vocabulary of animation
         # and the second group now asks for the language of a camera.
         "deny": ["firework", "confetti", "abstract", "3d", "render", "galaxy", "smartwatch",
+                 # 2026-08-25 restore-sheet round: countdown graphics, HUDs and AI romance
+                 "countdown", "count down", "counter", "digits", "hearts", "romantic",
+                 "valentine", "virtual", "hud",
                  "app", "fitness", "countdown animation", "ai generated", "computer generated",
                  "landscape", "beach", "loop", "neon", "glow", "glowing", "animation",
                  "animated", "motion graphic", "background", "digital art", "spiral",
@@ -400,7 +408,9 @@ CO_OCCUR: dict[str, dict] = {
                  # 2026-08-25 dry-run round: place-specific and child-adjacent titles
                  # were passing (india/shiva, ukraine/pokrov, baby stroller)
                  "india", "asia", "asian", "shiva", "culture", "ukraine", "pokrov",
-                 "russia", "baby", "stroller", "pram", "toddler", "child", "kid"],
+                 "russia", "baby", "stroller", "pram", "toddler", "child", "kid",
+                 # 2026-08-25 restore-sheet round
+                 "religion", "cross", "church", "snow", "winter"],
     },
 }
 
