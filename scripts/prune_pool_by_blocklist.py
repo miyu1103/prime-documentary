@@ -62,7 +62,12 @@ def main() -> int:
                                                      ".png", ".jpg", ".jpeg", ".webp"}]
     moved = []
     for p in media:
-        why = pd_footage_blocklist.reason_for(p.name, blocked)
+        # FULL PATH, not just the name. reason_for reads the medium off the path
+        # (/factory/ -> footage, /motion/ -> motion, /img/ -> stills) and falls back to the
+        # extension when there is none -- so a bare "AR-20148__x.mp4" was read as MOTION and a
+        # row scoped to footage never matched it. Measured on EP74 itaewon: five wrong-country
+        # clips were blocked and the pruner removed zero.
+        why = pd_footage_blocklist.reason_for(str(p), blocked)
         if why:
             moved.append((p.name, why))
             if not a.dry_run:

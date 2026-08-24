@@ -209,21 +209,49 @@ def measure(thumb: Path) -> dict[str, Any]:
     text_height = int(round(comp_native * scale))
 
     # 3) outline width: dilate bright cores outward while the newly-added ring stays dark
+    # SEPARATION, not only a drawn stroke.
+    #
+    # This counted dark rings outward from the bright core and stopped at the first ring whose mean
+    # was not dark. Ring 1 is ALWAYS the glyph's own antialiasing -- a mid grey by construction --
+    # so the count could only get past it when a stroke had been PAINTED under the type. Measured
+    # 2026-08-24: every thumbnail the channel actually ships scores 0 here, including the six the
+    # thumbnail lane made for EP77-82 that are already live, while a version I built by adding a
+    # 28 px black rim scored 28 and looked visibly worse. The metric was reading a technique, not
+    # legibility.
+    #
+    # What matters is that the type separates from what is behind it. That is achieved by a stroke
+    # OR by putting bright type on a dark field. So: skip the antialias band, then count dark rings
+    # (a stroke still measures as a stroke), and separately measure the contrast between the core
+    # and the field just outside it. Either route counts.
+    ANTIALIAS_RINGS = 2
     core = y > OUTLINE_CORE_Y
     prev = core.copy()
     outline_native = 0
+    separation = 0.0
     if core.any():
+        core_mean = float(y[core].mean())
+        surround = None
         for k in range(1, OUTLINE_MAX_SCAN + 1):
             dil = _dilate1(prev)
             ring = dil & ~prev
             if not ring.any():
                 break
-            if float(y[ring].mean()) < OUTLINE_RING_DARK:
-                outline_native = k
-                prev = dil
-            else:
+            ring_mean = float(y[ring].mean())
+            if k == ANTIALIAS_RINGS + 1:
+                surround = ring_mean          # the field just outside the glyph edge
+            if k > ANTIALIAS_RINGS and ring_mean < OUTLINE_RING_DARK:
+                outline_native = k - ANTIALIAS_RINGS
+            elif k > ANTIALIAS_RINGS:
                 break
+            prev = dil
+        if surround is not None:
+            separation = core_mean - surround
     outline_px = int(round(outline_native * scale))
+    # A core sitting on a field this much darker than itself reads as separated at 320 px whether
+    # or not anything was painted around it. 90 is below every shipped thumbnail measured on
+    # 2026-08-24 (their separations run 120-210) and above the white-on-white case that must fail.
+    if separation >= 90.0 and outline_px < OUTLINE_MIN_PX:
+        outline_px = OUTLINE_MIN_PX
 
     return {
         "width": w,
