@@ -628,6 +628,22 @@ def main() -> int:
         return local.s
 
     def fetch(item: tuple[str, str, str]) -> None:
+        """Two attempts, each on its own connection pool.
+
+        Measured 2026-08-24 17:46: the image lane was returning ConnectionError on every clip
+        for an hour while a fresh client in another process, at the same pace and with the same
+        unfetched ids, got 10/10 API 200s and 10/10 CDN downloads. Nothing was wrong outside
+        this process. The earlier fix dropped the poisoned Session but only re-ran the METADATA
+        call -- it printed "recovered", then counted the clip a failure and moved on without
+        ever downloading it. A retry that does not redo the work is not a retry.
+        """
+        for attempt in (1, 2):
+            if attempt == 2:
+                drop_session()
+            if _attempt_one(item, attempt):
+                return
+
+    def _attempt_one(item: tuple[str, str, str], attempt: int) -> bool:
         vid, slug, theme = item
         s = session()
         try:
@@ -648,14 +664,14 @@ def main() -> int:
                 print(f"  {vid} HTTP {r.status_code}")
                 with clock:
                     counts["fail"] += 1
-                return
+                return True
             meta = r.json()
             f = pick_file(kc["files"](meta))
             if not f:
                 print(f"  {vid} no usable file")
                 with clock:
                     counts["fail"] += 1
-                return
+                return True
             # Name it from the TITLE when the browse slug carries no words. Pixabay's browse
             # tree names every clip `pixabay__<id>__id`, so the slug is the literal string
             # "id" -- and stage_footage_by_title.py matches the filename and nothing else.
@@ -717,25 +733,22 @@ def main() -> int:
             if n % 25 == 0:
                 print(f"  [{n + counts['fail']}/{len(todo)}] ok={n} fail={counts['fail']} "
                       f"last={dest.name[:60]}", flush=True)
+            return True
         except requests.exceptions.ConnectionError as e:
-            # A dropped connection is usually a dead pooled socket, not a dead network. Bin the
-            # pool and give this clip one more go with a new one before counting it a failure.
-            drop_session()
-            try:
-                pace.wait()
-                s2 = session()
-                r = s2.get(kc["url"].format(id=vid, key=key), timeout=(10, 30))
-                if r.status_code == 200:
-                    print(f"  {vid} recovered after {type(e).__name__}", flush=True)
-            except Exception:  # noqa: BLE001
-                pass
+            # A dropped connection is usually a dead pooled socket, not a dead network. The
+            # caller bins the pool and runs the WHOLE item again; only the second failure is
+            # a failure.
+            if attempt == 1:
+                return False
             print(f"  {vid} ERROR {type(e).__name__}: {str(e)[:80]}")
             with clock:
                 counts["fail"] += 1
+            return True
         except Exception as e:  # noqa: BLE001 - one bad clip must not stop a multi-hour run
             print(f"  {vid} ERROR {type(e).__name__}: {e}")
             with clock:
                 counts["fail"] += 1
+            return True
 
     with ThreadPoolExecutor(max_workers=a.workers) as pool:
         list(pool.map(fetch, todo))
