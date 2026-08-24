@@ -433,6 +433,10 @@ IA_TITLE_DENY = [
     "star wars", "star trek", "marvel", "batman", "superman", "simpsons", "spongebob",
     "family guy", "south park", "anime", "nintendo", "playstation", "xbox",
     "new world next week", "conspiracy", "truther", "flat earth", "qanon", "illuminati",
+    # 2026-08-25: real-incident police recordings show identifiable private individuals and
+    # can carry violence -- a ban risk, not a footage source. 20 items quarantined on arrival.
+    "body cam", "bodycam", "body camera", "body worn", "body-worn", "dash cam", "dashcam",
+    "cop city", "officer involved", "police shooting",
 ]
 
 PHRASE_ONLY_THEMES = {
