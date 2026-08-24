@@ -23,6 +23,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import shutil
 import sys
 from datetime import datetime, timezone
@@ -38,12 +39,39 @@ def main() -> int:
     except Exception:  # noqa: BLE001
         pass
     ap = argparse.ArgumentParser()
-    ap.add_argument("--theme", required=True, help="comma-separated theme names")
+    ap.add_argument("--theme", default="", help="comma-separated theme names")
+    ap.add_argument("--title-regex", default="",
+                    help="quarantine rows whose TITLE matches this instead of/as well as a theme")
+    ap.add_argument("--not-theme", default="",
+                    help="never touch these themes (for graphic themes where generated IS the subject)")
     ap.add_argument("--reason", default="contact-sheet review: the query returned the word, not "
                                         "the subject")
     ap.add_argument("--apply", action="store_true")
     a = ap.parse_args()
     themes = {t.strip() for t in a.theme.split(",") if t.strip()}
+    skip = {t.strip() for t in a.not_theme.split(",") if t.strip()}
+    rx = re.compile(a.title_regex, re.I) if a.title_regex else None
+    if not themes and not rx:
+        ap.error("give --theme or --title-regex")
+
+    def wanted(rec: dict) -> bool:
+        """Which rows this run takes off the shelf.
+
+        --title-regex exists for a criterion no theme expresses: measured 2026-08-24, 259 clips
+        on the searchable shelf carry an AI-generated marker in their own title, and 179 of them
+        sit under themes a documentary draws from -- courtroom_justice, police_modern,
+        government_buildings, forensics_dna, and 47 under itaewon_korea_night while EP74 is in
+        production. A generated image cut as a record of a real place is invariant 11. The
+        remaining 73 are under abstract, vfx, particle and light, where a generated graphic IS
+        the subject, and --not-theme leaves those alone.
+        """
+        if str(rec.get("theme", "")) in skip:
+            return False
+        if themes and str(rec.get("theme", "")) in themes:
+            return True
+        if rx and rx.search(str(rec.get("title", ""))):
+            return True
+        return False
 
     moved = missing = failed = 0
     for ledger in sorted(LEDGER_DIR.glob("*.jsonl")):
@@ -62,12 +90,12 @@ def main() -> int:
         if torn:
             print(f"  {ledger.name}: {torn} torn line(s) -- REFUSING, repair the ledger first")
             return 1
-        if not any(r.get("theme") in themes for r in rows):
+        if not any(wanted(r) for r in rows):
             continue
 
         changed = 0
         for rec in rows:
-            if rec.get("theme") not in themes:
+            if not wanted(rec):
                 continue
             src = Path(str(rec.get("file_path", "")))
             if QUARANTINE.as_posix().lower() in src.as_posix().lower():
