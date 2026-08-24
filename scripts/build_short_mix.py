@@ -22,6 +22,20 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from gen_captions_forced import _smart_split  # noqa: E402 -- the long-form caption break rule
 MEDIA = Path(json.loads((ROOT / "config/storage.local.json").read_text("utf-8"))["roots"]["media"]["path"])
 LIB = MEDIA / "library"
+
+
+def newest_take(directory: Path, stem_prefix: str) -> Path:
+    """Resolve a music cue to its HIGHEST revision on disk.
+
+    2026-08-25: every one of 21 Shorts failed its mix because this file named
+    `..._soft_explainer_v1.mp3` and the library holds only `_v2`. ffmpeg exits -2 on a
+    missing input, which surfaced as an opaque status 4294967294 with no filename in it.
+    Naming a revision by hand is the bug; resolving it is the fix.
+    """
+    takes = sorted(p for p in directory.glob(f"{stem_prefix}*.mp3") if "UNUSED" not in p.name)
+    if not takes:
+        raise SystemExit(f"no take found for {directory}/{stem_prefix}* -- library changed?")
+    return takes[-1]
 REM_DATA = ROOT / "remotion" / "src" / "data"
 TAIL = 1.0
 MIN_CAP = 0.7
@@ -146,8 +160,8 @@ def build_mix(short: str, ep: str, narration: Path, total: float, lines: list[di
     out_audio = MEDIA / "episodes" / ep / "07_audio"
     rem_public = ROOT / "remotion" / "public" / "shorts" / f"short{short}" / "audio"
     out_audio.mkdir(parents=True, exist_ok=True)
-    bed = LIB / "music" / "explainer_bed" / "mus_20260614_explainer_bed_soft_explainer_v1.mp3"
-    tension = LIB / "music" / "tension_build" / "mus_20260614_tension_build_courtroom_horizon_v1.mp3"
+    bed = newest_take(LIB / "music" / "explainer_bed", "mus_20260614_explainer_bed_soft_explainer")
+    tension = newest_take(LIB / "music" / "tension_build", "mus_20260614_tension_build_courtroom_horizon")
     amb = LIB / "ambience" / "amb_night_window.mp3"
     climax = next((ln["start"] for ln in lines if ln["id"] == "L4"), total - 12)
     cta = next((ln["start"] for ln in lines if ln["id"] == "L5"), total - 4)
