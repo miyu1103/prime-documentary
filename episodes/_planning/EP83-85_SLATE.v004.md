@@ -1,6 +1,6 @@
 # EP83–85 SLATE v004 — FINAL: CTR最大化の因果連鎖で並べ直した3本
 
-**Built 2026-08-25. Supersedes v003.** **Status: PROPOSAL.**
+**Built 2026-08-25. Supersedes v003.** **Status: APPROVED — オーナーGO 2026-08-25「其の3つでいこう」。EP83=max737 / EP84=threemile / EP85=katrina で確定。**
 v003からの差分は2つだけ: ①最後の未計測候補 **Three Mile Island を実測したら盤上2位**（median
 759,620 / ≥100k 9ch、`TOPIC_DEMAND_PROBE.json` 2026-08-25）だった。②オーナーが基準を
 「CTR最大から逆算」と再指定した。これで並べ替えの軸が確定し、slot 2-3が入れ替わる。
