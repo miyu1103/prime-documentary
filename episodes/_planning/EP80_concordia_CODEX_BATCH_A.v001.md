@@ -33,7 +33,7 @@
 |---|---|---|---|
 | N001 | N001 | Extreme macro of a brass ship's clinometer mounted on a bulkhead, the pendulum hanging dead centre at rest, a bright brass lamp burning beside it, no numerals on the arc | |
 | N002 | N002 | A wide carpeted cruise ship lounge in the evening, chandeliers blazing, deep upholstered chairs, polished floor, empty and level | |
-| N003 | N003 | The lit superstructure of a very large cruise ship at night seen from the sea, every deck window blazing, calm dark water | |
+| N003 | N003 | The lit superstructure of a very large cruise ship at night seen from the sea, every deck window blazing, calm dark water, the ship entirely plain unmarked white with a completely bare funnel carrying no symbol, no name and no company colour of any kind | |
 | N004 | N004 | A brass ship's clock on a panelled bulkhead, hands near a quarter to ten, a bright wall lamp flaring beside it, no numerals on the dial | |
 | N005 | N005 | An orange lifejacket hanging alone on the open door of a cabin wardrobe, a bright bedside lamp throwing hard shadow across it | |
 | N006 | N006 | A cruise ship stairwell of polished brass and glass seen from below, chandelier blazing at the top, empty and level | |
@@ -44,7 +44,7 @@
 |---|---|---|---|
 | N007 | N007 | A calm Mediterranean sea at dusk, a brilliant orange band low on the horizon, no vessels, glassy water | |
 | N008 | N008 | An Italian island harbour in brilliant afternoon sun, pastel stone houses stacked up the hillside, small fishing boats, clear sky | |
-| N009 | N009 | A very large white cruise ship at a Mediterranean quay in brilliant daylight, gangways down, the white hull blown out where the sun strikes | |
+| N009 | N009 | A very large white cruise ship at a Mediterranean quay in brilliant daylight, gangways down, the white hull blown out where the sun strikes, the ship entirely plain unmarked white with a completely bare funnel carrying no symbol, no name and no company colour of any kind | |
 | N010 | N010 | A cruise ship dining room in the evening, every chandelier blazing gold, tables laid, glassware catching the light, empty | |
 | N011 | N011 | A cruise ship corridor of cabin doors receding into the distance, ceiling lights burning bright along the whole run, carpet, level | |
 | N012 | N012 | A ship's bridge at night photographed square on, flat panel displays alight, chart table lamp burning, tall windows dark beyond | |
@@ -54,7 +54,7 @@
 | N016 | N016 | A ship's engine order telegraph in polished brass, a bright overhead lamp blazing across it, no lettering on the quadrant | |
 | N017 | N017 | A helm station on a modern ship's bridge, a small wheel and a bank of alight repeaters, one lamp burning above | |
 | N018 | N018 | A ship's rudder angle indicator on a bridge console, brightly backlit, needle at centre, no numerals | |
-| N019 | N019 | A cruise ship seen from directly astern at night, her wake glowing white under the deck floodlights, open sea | |
+| N019 | N019 | A cruise ship seen from directly astern at night, her wake glowing white under the deck floodlights, open sea, the ship entirely plain unmarked white with a completely bare funnel carrying no symbol, no name and no company colour of any kind | |
 | N020 | N020 | Rocky islets rising out of a calm Mediterranean sea at dusk, brilliant last light on the water, seen from a distance | |
 | N021 | N021 | A ship's engine room walkway between huge diesel generator sets, work lights blazing overhead, no one present | |
 | N022 | N022 | Close-up of a large marine diesel generator, insulated pipework and gauges, a bright inspection lamp flaring into the lens | |
@@ -86,8 +86,8 @@
 | N043 | N043 | Close-up of an orange lifejacket being fastened at the waist, hands only, brilliant daylight, no face in frame | P |
 | N044 | N044 | A rack of folded orange lifejackets in a deck locker under a bright strip light | |
 | N045 | N045 | A muster station sign board mounted on a bulkhead, blank, a bright deck light burning beside it | |
-| N046 | N046 | A cruise ship promenade deck in brilliant daylight, lifeboats hanging in their davits along the side, sea beyond | |
-| N047 | N047 | An orange enclosed lifeboat hanging level in its davit, seen close, brilliant sunlight on the hull | |
+| N046 | N046 | A cruise ship promenade deck in brilliant daylight, lifeboats hanging in their davits along the side, sea beyond, the lifeboats plain orange with no name or marking painted on them | |
+| N047 | N047 | An orange enclosed lifeboat hanging level in its davit, seen close, brilliant sunlight on the hull, the hull plain orange with no name, no numerals and no marking of any kind | |
 | N048 | N048 | A lifeboat davit mechanism in close-up, steel arms and wire falls, a work lamp blazing into the lens | |
 | N049 | N049 | A crowded cruise ship theatre in the evening, house lights blazing, rows of seats, seen from the back, all heads facing away | P |
 | N050 | N050 | A cruise ship reception atrium in daylight, a glass lift, brilliant light from a skylight above, level polished floor | |
@@ -141,7 +141,7 @@
 | N093 | N093 | A stairwell packed with people climbing, all seen from above and behind, bright emergency lighting on the treads | P |
 | N094 | N094 | An open deck at night under blazing floodlights, empty, with lifeboats in their davits along one side | |
 | N095 | N095 | Close-up of a lifeboat release gear and wire fall, brilliantly lit by a deck floodlight, wet steel | |
-| N096 | N096 | An orange lifeboat sitting level on dark water at night, its own lamp burning, seen from above | |
+| N096 | N096 | An orange lifeboat sitting level on dark water at night, its own lamp burning, seen from above, the hull plain orange with no name, no numerals and no marking of any kind | |
 | N097 | N097 | A liferaft canister in its cradle on a deck rail, a bright deck light burning above it | |
 | N098 | N098 | An Italian island quay at night, stone steps down to the water, a bright quay lamp flaring, small boats moored | |
 | N099 | N099 | A village square on an Italian island at night, a church front lit by floodlights, empty | |
@@ -182,7 +182,7 @@
 | N129 | N129 | A modern bridge simulator running a daylight sea image on wraparound screens, brilliant and empty | |
 | N130 | N130 | A classroom of officers seen from behind facing a bright projected screen, ceiling lights on | P |
 | N131 | N131 | A muster station drill on an open deck in brilliant daylight, orange lifejackets in neat rows, all seen from behind | P |
-| N132 | N132 | A modern cruise ship at sea in brilliant daylight seen from the air, white hull, deep blue water | |
+| N132 | N132 | A modern cruise ship at sea in brilliant daylight seen from the air, white hull, deep blue water, the ship entirely plain unmarked white with a completely bare funnel carrying no symbol, no name and no company colour of any kind | |
 | N133 | N133 | A cruise ship promenade deck in brilliant morning sun, deck chairs in rows, sea beyond, level | |
 | N134 | N134 | An Italian coastal town seen from the sea in brilliant daylight, stone harbour, church tower, small boats | |
 | N135 | N135 | A Mediterranean horizon at midday, brilliant sun, deep blue, empty water | |
@@ -202,7 +202,7 @@
 | N144 | N144 | An orange lifejacket hanging squarely on a hook in a lit cabin, a bright bedside lamp beside it | |
 | N145 | N145 | A muster station on an open deck in brilliant morning sun, painted lines, empty and waiting | |
 | N146 | N146 | Rows of people in orange lifejackets standing at a muster station in brilliant daylight, all seen from behind | P |
-| N147 | N147 | A cruise ship at a quay at dawn, a brilliant orange sky behind her, gangways down | |
+| N147 | N147 | A cruise ship at a quay at dawn, a brilliant orange sky behind her, gangways down, the ship entirely plain unmarked white with a completely bare funnel carrying no symbol, no name and no company colour of any kind | |
 | N148 | N148 | A calm Mediterranean sea at sunrise, brilliant sun on the horizon, empty water | |
 | N149 | N149 | An Italian island harbour at first light, brilliant pale sky, stone quay, boats level at their moorings | |
 | N150 | N150 | A ship's bridge at dawn, every screen alight, brilliant orange light coming through the windows | |
@@ -258,6 +258,8 @@
 ## 発注時の注意（EP77・EP78・EP79で実際に起きたことの反映）
 
 **① 光源は必ず画面の中に入れてください。** EP77 は「暗い部屋」を主題にした結果、明るさ20台のプレートが16枚出て追加発注になりました。**この発注書は全プレートに光源を書いてあります。**
+
+**⓪ 船は「完全に無地」で描いてください（最重要）。** EP79 では禁止語に「航空会社の塗装禁止」を入れて生成したのに、実在航空会社のロゴが3枚出ました。**禁止語だけでは足りません。** 船体・煙突・救命艇に、社名・記号・会社色を**一切**入れないでください。該当は N003 / N009 / N019 / N046 / N047 / N096 / N132 / N147。
 
 **② 事故は一枚も描きません。** 傾いた船・横倒し・沈没・岩・破損・引き揚げ・海中の人。**この話数では一度も映しません。** 傾きは**船橋の傾斜計**だけで表します（N001 / N036 / N081 / N104 / N116 / N141）。
 
