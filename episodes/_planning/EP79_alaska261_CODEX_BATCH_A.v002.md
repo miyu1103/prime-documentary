@@ -20,7 +20,7 @@
 
 **`[NEG]`** — 各プレートの後ろに付ける:
 
-> Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+> Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, airline livery, airline tail markings, ship funnel markings, company colour scheme, low-resolution.
 
 ---
 
@@ -142,7 +142,7 @@
 | K094 | K094 | An aviation regulator's office in daylight, plain desks, filing cabinets, a brilliant window | |
 | K095 | K095 | A government office corridor in bright daylight, doors along one side, a window blowing out at the end | |
 | K096 | K096 | A rubber stamp and ink pad on a bare desk in close-up, a hard lamp blazing from the side, no legible impression | |
-| K097 | K097 | An in-tray of blank sheets on a desk in brilliant daylight | |
+| K097 | K097 | Top-down close view of a steel mesh in-tray holding staggered blank inspection sheets with curled corners, hard window light casting diagonal shadows across a worn government-office desk | |
 | K098 | K098 | A hangar graveyard shift at 3am, an aircraft under blazing work lights, everything beyond in darkness | |
 | K099 | K099 | A shift handover board in a hangar office under a bright strip light, blank magnetic strips in rows | |
 | K100 | K100 | A hangar floor at dawn, doors rolling open to a brilliant orange sky, an aircraft silhouetted | |
@@ -179,7 +179,7 @@
 | K123 | K123 | A safety inspection team of several people seen from behind walking through a bright hangar in high-visibility vests | P |
 | K124 | K124 | A modern aircraft maintenance record on a CRT screen showing rows of empty fields, screen glow blown out, no legible text | |
 | K125 | K125 | An aircraft tail in a hangar with an inspection panel open and a bright lamp burning inside the fin | |
-| K126 | K126 | A wide bright hangar interior with several aircraft in maintenance, brilliant daylight through open doors | |
+| K126 | K126 | High-angle view from an indoor maintenance catwalk looking down across several aircraft bays, open access panels, mobile scaffolds and tool carts forming parallel lines, hard daylight pouring through distant hangar doors | |
 | K127 | K127 | A regulatory office in daylight with a wall of ring binders, a brilliant window, an empty desk | |
 | K128 | K128 | A steel component sealed in an evidence bag on a bright laboratory bench, unlabelled | |
 | K129 | K129 | A conference table with a jackscrew assembly laid across it under brilliant overhead light, several empty chairs around | |
@@ -190,7 +190,7 @@
 
 | id | beat | prompt | flags |
 |---|---|---|---|
-| K130 | K130 | Extreme macro of a dial indicator gauge, the needle at rest near zero, polished chrome bezel, a bright work lamp blazing across the glass face, no numerals | |
+| K130 | K130 | A bench-mounted dial indicator contacting the flank of a coarse steel jackscrew thread during a runout test, articulated magnetic base and probe visible, a bright inspection lamp raking across the polished mechanism, no numerals | |
 | K131 | K131 | The same dial indicator pulled back to show the whole measuring rig mounted on a steel assembly, brilliant task lighting | |
 | K132 | K132 | A gloved hand writing a figure into a blank ruled log under a bright lamp, the writing not legible | P |
 | K133 | K133 | A steel jackscrew freshly greased and gleaming under a bright work lamp, threads perfect | |
@@ -236,8 +236,8 @@
 | K158 | K158 | A cabin aisle seen from the rear in bright daylight, sun through the windows, empty seats | |
 | K159 | K159 | An overwing exit and wing seen from a cabin window in brilliant daylight | |
 | K160 | K160 | A 2000-era CRT flight information display glowing in a dim terminal, rows of blank lines | |
-| K161 | K161 | A control tower against a brilliant blue sky at midday | |
-| K162 | K162 | A windsock stretched taut against a brilliant sky, seen from below | |
+| K161 | K161 | Low-angle symmetrical view of a late-1990s airport control tower cab with period antenna arrays and sunshades, hard midday light carving shadows under the windows, empty brilliant blue sky | |
+| K162 | K162 | Low-angle close view of an orange airport windsock stretched rigid in a strong crosswind, fabric seams and the riveted metal mast sharply visible against a brilliant cloudless sky | |
 | K163 | K163 | An apron in brilliant rain-washed daylight, reflections of parked aircraft in standing water | |
 | K164 | K164 | A hangar door seal and rollers in close-up, bright daylight beyond the gap | |
 | K165 | K165 | A steel workbench top with tools laid out in order under a brilliant strip light | |
