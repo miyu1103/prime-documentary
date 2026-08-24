@@ -43,6 +43,20 @@
 文字は合成のみ（生成グリフ禁止）・実在人物肖像禁止 / サムネ文字はタイトルと同じ数字・事実を
 言わない（分業） / 全headlineはclaims照合必須。
 
+## 追記 2026-08-24（後続セッション・実測済み）
+
+- **③完了（発注書まで）**: EP74の生プレート2枚の発注書を作成
+  `episodes/_planning/THUMBNAIL_ORDERS_2026-08-24/EP74_itaewon_thumbnails.txt`
+  （T07=路地の口・大通り越し / T08=電話の画面と手。CTR最優先節＋EP74正典[NEG]同梱、
+  `check_image_order_neg.py` PASS）。**Codexの生成待ち**（前バッチ同様、Codexがこの.txtを読む）。
+  見出し側の注意: タイトルAと数字重複のため FOUR OF ELEVEN / ELEVEN CALLS は02/03に使えない。
+  残る claims済み候補 = 137 OFFICERS / NOBODY ORGANISED IT / NO LAW REQUIRED IT。
+- **④は引き続きブロック**: EP81/82 は `01_research/` `03_script/` とも空（実測）。台本完成後に
+  `check_packaging_claims.py --thumb-text` 再実行。
+- **②の現状**: A/B用途（01/02/03=Test & compare）は `THUMBNAILS_TO_MAIN_2026-08-24.md` に記載済み。
+  ただし**どのレーンがStudio UIで投入するかは未決** — EP71公開（8/26 16:05）までにメインと要調整。
+- ①CTR実測は8/27以降（変更なし）。
+
 ## 前スレの教訓（メモリにも保存済み: retro-thumbnail-lane-20260824）
 
 **ゲート適合≠ベスト。新しい見た目を作る前に、実際に勝った現物を取得して採寸する。**
