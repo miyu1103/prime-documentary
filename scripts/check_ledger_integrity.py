@@ -29,6 +29,7 @@ import glob
 import json
 import os
 import sys
+import time
 from collections import Counter
 from pathlib import Path
 
@@ -85,6 +86,17 @@ def main() -> int:
                 continue
             for p in root.rglob("*"):
                 if p.is_file() and kind_of(p.suffix):
+                    # A file written in the last 60 s may simply not have reached the ledger
+                    # yet: the recovery lane renames the .part into place and appends the row
+                    # a moment later. Counting that gap as a lost row makes this check cry
+                    # wolf while a lane is running -- it reported FAIL twice on 2026-08-23/24
+                    # and both times a re-run seconds later read 0. A check that fails when
+                    # nothing is wrong gets ignored when something is.
+                    try:
+                        if time.time() - p.stat().st_mtime < 60:
+                            continue
+                    except OSError:
+                        continue
                     on_disk += 1
                     if str(p) not in paths:
                         missing += 1
