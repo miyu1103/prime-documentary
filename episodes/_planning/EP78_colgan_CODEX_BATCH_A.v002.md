@@ -1,4 +1,4 @@
-# EP78 colgan — 本編プレート発注 A **v002**（160枚・これで全部）
+# EP78 colgan — 本編プレート発注 A **v002**（166枚・これで全部）
 
 > 保存先: `E:\pd-media\05_visuals\colgan\img\`  ファイル名は id そのまま（例 `C001.png`）
 > 出力は 1672x941。**文字は一切焼き込まないでください。**
@@ -217,6 +217,19 @@
 | C158 | C158 | A commercial airliner on short final over an American highway in bright daylight, gear down, clear sky | |
 | C159 | C159 | A wide airport view at golden hour, aircraft at stands, brilliant low sun flaring across the apron | |
 | C160 | C160 | A calm empty winter field at sunrise, brilliant sun on the horizon, bare trees, untouched snow | |
+
+### PEOPLE
+
+**この6枚は契約の下限を満たすための追加です。** `episode_spec` は人物プレート20枚以上を要求しており、C001-C160 には14枚しかありませんでした。**全て後ろ姿かシルエット。顔が判別できたら不合格です。**
+
+| id | beat | prompt | flags |
+|---|---|---|---|
+| C161 | C161 | A lone airline crew member asleep on a crew room sofa seen from behind, a coat pulled over them, one lamp burning bright in the corner | P |
+| C162 | C162 | Two airline crew walking away down a jet bridge with flight bags, seen from behind, the bridge brilliantly lit ahead of them | P |
+| C163 | C163 | A single person seated at a witness table seen from directly behind, brilliant daylight from tall windows ahead, a microphone in front of them | P |
+| C164 | C164 | A flight instructor and a student walking toward a small aircraft on a desert ramp, both seen from behind, brilliant afternoon sun, hard shadows | P |
+| C165 | C165 | A person standing at an employment office counter seen from behind, filling in a blank form, a brilliant window beyond the counter | P |
+| C166 | C166 | A lone figure silhouetted at an airport window at dawn, the sky beyond blown out bright, an empty departure lounge behind them | P |
 
 ---
 
