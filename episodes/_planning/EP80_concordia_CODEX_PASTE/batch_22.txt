@@ -1,0 +1,56 @@
+EP80_concordia — 画像発注 バッチ 22/23（8枚）
+区分: SPARE
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) N169.png
+   [N169]  flags: 
+   A panelled ship's library, a brass reading lamp burning bright beside an empty armchair, shelves of unmarked spines
+
+2) N170.png
+   [N170]  flags: 
+   An officer's cap resting on a lit console, close-up, no insignia
+
+3) N171.png
+   [N171]  flags: 
+   A pair of binoculars on a bridge window ledge, brilliant daylight beyond the glass
+
+4) N172.png
+   [N172]  flags: 
+   A wire mooring rope coiled on a bright steel deck, close-up, sunlight raking across it
+
+5) N173.png
+   [N173]  flags: 
+   An anchor chain running through a hawse pipe, close-up, a work lamp blazing on the links
+
+6) N174.png
+   [N174]  flags: 
+   A capstan on a foredeck in brilliant morning sun, painted steel, sea beyond
+
+7) N175.png
+   [N175]  flags: 
+   An Italian coastal cliff face rising from calm water in brilliant afternoon light, no vessels
+
+8) N176.png
+   [N176]  flags: 
+   A Mediterranean fishing boat at a stone quay in brilliant sun, nets piled, no one aboard

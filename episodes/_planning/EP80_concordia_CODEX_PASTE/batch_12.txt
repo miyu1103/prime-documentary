@@ -1,0 +1,56 @@
+EP80_concordia — 画像発注 バッチ 12/23（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) N089.png
+   [N089]  flags: 
+   A search light beam sweeping out over dark water from a small vessel, the beam blazing through spray
+
+2) N090.png
+   [N090]  flags: 
+   A cruise ship lounge with the emergency lighting on and the chandeliers dark, low lamps burning along the walls, empty chairs
+
+3) N091.png
+   [N091]  flags: P
+   A crowded ship's lounge in the evening seen from the back, the house lights and chandeliers blazing overhead, every head facing away
+
+4) N092.png
+   [N092]  flags: P
+   A ship's corridor with passengers walking away from camera toward a lit stairwell, all seen from behind
+
+5) N093.png
+   [N093]  flags: P
+   A stairwell packed with people climbing, all seen from above and behind, bright emergency lighting on the treads
+
+6) N094.png
+   [N094]  flags: 
+   An open deck at night under blazing floodlights, empty, with lifeboats in their davits along one side
+
+7) N095.png
+   [N095]  flags: 
+   Close-up of a lifeboat release gear and wire fall, brilliantly lit by a deck floodlight, wet steel
+
+8) N096.png
+   [N096]  flags: 
+   An orange lifeboat sitting level on dark water at night, its own lamp burning, seen from above

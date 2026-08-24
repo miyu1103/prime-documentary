@@ -1,0 +1,56 @@
+EP80_concordia — 画像発注 バッチ 13/23（8枚）
+区分: ACT_3
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) N097.png
+   [N097]  flags: 
+   A liferaft canister in its cradle on a deck rail, a bright deck light burning above it
+
+2) N098.png
+   [N098]  flags: 
+   An Italian island quay at night, stone steps down to the water, a bright quay lamp flaring, small boats moored
+
+3) N099.png
+   [N099]  flags: 
+   A village square on an Italian island at night, a church front lit by floodlights, empty
+
+4) N100.png
+   [N100]  flags: 
+   A church interior at night lit by candles and one bright overhead lamp, empty pews
+
+5) N101.png
+   [N101]  flags: 
+   A row of blankets folded on a trestle table in a bright hall, an emergency shelter set up, no one present
+
+6) N102.png
+   [N102]  flags: 
+   A ferry quay at first light, a brilliant pale orange sky, ropes coiled on the stone
+
+7) N103.png
+   [N103]  flags: 
+   A hillside of pastel houses on an Italian island at dawn, brilliant low sun on the stone
+
+8) N104.png
+   [N104]  flags: 
+   A brass clinometer with the pendulum swung far over, a bright lamp burning beside it

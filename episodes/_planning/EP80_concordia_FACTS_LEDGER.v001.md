@@ -125,6 +125,84 @@ everyone could have got off.
 | CC-305 | The search and rescue response involved **25 patrol boats, 14 vessels, 4 tugs and 8 helicopters** | 9 |
 | CC-306 | The first emergency naval unit reached the ship at **22:39** | 21 |
 
+
+## 6 · The crew, and where the rock actually landed
+
+| id | fact | page |
+|---|---|---|
+| CC-401 | **272 of the 1,023 crew had been replaced since 1 December 2011** — a quarter of the workforce turned over in six weeks | 88 |
+| CC-402 | The breakdown of those 272: **12 embarked the same day**, 6 the day before, 1 two days before, 28 six days before, 58 between one and two weeks before, 62 about three weeks before, 48 about four weeks before, 44 five weeks before, and 21 forty days before | 88 |
+| CC-403 | **The breach was 53 metres long.** That was only discovered in the days after the casualty | 9 |
+| CC-404 | The flooded compartments held the machinery the ship runs on. **Watertight compartment 5 contained the propulsion electric motors and the fire and bilge pumps. Compartment 6 contained three main diesel generators** | 9 |
+| CC-405 | SOLAS requires the **company to establish a language of work** so that safety performance is effective, and the operator's safety management manual carries that requirement | 43 |
+| CC-406 | **The second grounding occurred at 22:39** — the same minute the first rescue vessel reached the ship. This is the moment the Body used as the start of its counterfactual (CC-201) | 92 |
+
+**CC-404 is why the blackout was not bad luck.** The rock opened the two compartments that
+contained the pumps and the generators. The ship lost the power and the means to pump in the
+same stroke.
+
+**CC-402 belongs beside CC-004.** Nearly two thousand passengers had never walked to a muster
+station, and twelve of the crew had been aboard for a matter of hours.
+
+
+## 7 · Language
+
+| id | fact | page |
+|---|---|---|
+| CC-501 | The crew were of **38 different nationalities** and the passengers came from **26 countries** | 80 |
+| CC-502 | **Costa Crociere chose Italian as the language of work** on its ships. The Body links this to the Italian flag and the need for Italian-language certificates and logbooks | 80 |
+| CC-503 | The Body's judgement: the choice is **"not censurable"** formally, but choosing a more widespread international language **"would have given, of course, concrete advantages"** for communication among crew and with passengers, above all where understanding each other is fundamental | 80 |
+| CC-504 | The safety trainer testified that **both Italian and English** were used aboard, and that **training was usually carried out in English** | 81 |
+| CC-505 | **Many American passengers testified that during the emergency several crew members on duty at the muster stations were not able to speak English** | 81 |
+| CC-506 | **It was proved that the helmsman did not understand the master's orders in English, twice, during the last phases** | 81 |
+| CC-507 | A flag administration audit of the company on **6-7 March 2012** raised a formal non-conformity: **the recruitment procedure for deck and engine personnel does not assess the work language**, and neither does the procedure for complementary-services personnel | 79 |
+
+## 8 · Training, and a warning the master himself sent
+
+| id | fact | page |
+|---|---|---|
+| CC-601 | **After an abandon-ship drill on 15 October 2011, the master warned the company that his crew's performance was decreasing and showed critical findings** | 84 |
+| CC-602 | The safety trainer, on joining, found the crew's training **unaligned** and **no evidence of the on-board training required by the safety-management procedure**. He informed his hierarchy; the master told him the company had asked the ship's management to improve the training programme | 84 |
+| CC-603 | **The master had never attended a Bridge Resources Management course** - not the junior, senior or staff-master version - although he held the required passenger-ship competence certificate from 2008 and had 16 years, 11 months and 6 days of sea service | 84 |
+| CC-604 | Other officers had been trained at the operator group's training centre in Amsterdam: bridge team management for a staff master in 2010, and for the chief mate, safety officer, a second officer and two third officers in 2011 | 85 |
+| CC-605 | **Before this casualty those courses were not mandatory.** From **1 September 2012** the parent corporation made BRM, ECDIS-NACOS, ship handling and stability mandatory for its officers, with the master and staff master required to attend all of them | 85 |
+| CC-606 | The ship's **Minimum Safe Manning document provided for 75 crew**. Across 50 similar cruise ships calling at Italian ports the median figure is **50**, in a range of 40 to 60 | 81 |
+
+## 9 · The hour, minute by minute, as the Body tabulated it
+
+| id | fact | page |
+|---|---|---|
+| CC-701 | **21:55** - compartments 4, 5, 6 and 7 ascertained as flooded. **No distress or securite message had been sent** | 86 |
+| CC-702 | **21:57:34** - the master informed the company's designated person ashore, who went to the company building to form a crisis team | 78 |
+| CC-703 | **22:07** - contacted by the Civitavecchia rescue organisation, the ship **communicated only the black out** and said it was managing to solve the failure. The Body's note against this line: **"very serious scenario is held back"** | 86 |
+| CC-704 | **22:11** - the ship was adrift towards the coastline | 86 |
+| CC-705 | **22:12** - the public address ordered passengers to **the lounges**. The Body records that crew and passengers moved to the muster stations **by themselves, without an order** | 86 |
+| CC-706 | **22:21** - the designated person ashore telephoned a company manager believing him to be the crisis manager on duty, and that manager said he was. **Under the company's own procedure the crisis manager was a different person, who was not immediately informed** | 78 |
+| CC-707 | **22:22** - the ship asked for the aid of two tugs | 86 |
+| CC-708 | **22:26** - the chief mate told the rescue authority **for the first time** that a breach and flooding had occurred. The Body's words: **"This is an evident, very serious lye, because the breach was known by 21 49 23."** WARNING: that is the report's own broken English - do not put it on a quote card verbatim | 86 |
+| CC-709 | **22:30** - flooding reached Deck 0, the watertight deck. **Passengers were boarding the lifeboats by themselves** | 86 |
+| CC-710 | **22:33:26** - the general emergency was announced. **Forty-eight minutes after the contact** | 78, 86 |
+| CC-711 | **22:36** - something resembling an abandon-ship announcement was made, **but the words were never spoken**: it said only to reach the muster stations calmly and follow the crew's instructions | 86 |
+| CC-712 | **22:39-22:47** - the ship touched the shoreline and grounded. The master ordered the starboard anchor dropped | 86 |
+| CC-713 | **22:54:10** - the abandon ship was announced **in English, by the second master, over the public address** | 78 |
+| CC-714 | The muster list required something else entirely: **"ORDER OF THE MASTER THROUGH THE PUBLIC ADDRESS OF THE SHIP, FOLLOWED BY A CONTINUOUS DOUBLE TONE SOUND (OR BY THE ALLARM BELLS), TILL THE SHIP EVACUATION IS COMPLETED."** That is not what happened | 78 |
+| CC-715 | **23:00** - the company's crisis committee was formed. **Seventy-five minutes after the contact** | 78 |
+
+## 10 · What the crew actually did
+
+| id | fact | page |
+|---|---|---|
+| CC-801 | The emergency was managed by the master, but **the procedure under the ship's decision support system was not followed**, and several bridge staff carried out duties differently from the established procedures | 87 |
+| CC-802 | **The engine and electrical departments faced the emergency throughout.** Under the chief engineer's coordination they fed the bridge continuous, detailed, systematically updated information on flooding, propulsion and emergency power; the chief engineer spoke directly to the master several times | 87 |
+| CC-803 | They tried, in vain, to restore vital equipment inside the flooded compartments, **at serious risk to their own lives**, and remained on the bulkhead deck after the flooding reached it, **knowing the ship was lost**, leaving only when the bridge cleared them | 87 |
+| CC-804 | **Some crew members told passengers they met in corridors to go back to their cabins**, saying it was only a black out that would be resolved soon | 88 |
+| CC-805 | **Passengers were not gathered from their cabins**, as the procedure requires. The proof: **two passengers were found alive three days later on deck 8**, which has no public rooms - only cabins | 88 |
+| CC-806 | Passengers testified that the public areas stayed lit by emergency lighting throughout, **but their cabins were completely dark** - they found their lifejackets in the wardrobe using personal torches and mobile phones | 88 |
+| CC-807 | WARNING: **the Body states the crew turnover was irrelevant to performance.** The replacements were mainly in complementary services and very few key personnel were new. **CC-401 and CC-402 must never be presented as a cause** | 89 |
+| CC-808 | The Body's assessment of the crew: **on the whole they gave an adequate performance in the core phase of the evacuation**, moving passengers off **until about four in the morning**, with the ship listed at 80 degrees and in very dangerous conditions | 89 |
+| CC-809 | **Nobody called the roll, or attempted to, or counted the passengers as they boarded the lifeboats and rafts** | 89 |
+| CC-810 | The Body's explanation for that: **the lack of orders in accordance with the muster list disoriented the crew who had been assigned by it** | 89 |
+
 ---
 
 ## Open items — must be closed before the ENDING is written
@@ -135,10 +213,7 @@ everyone could have got off.
 - **S4 — the company's own resolution with prosecutors.** Same rule.
 - **S5 — what SOLAS changed afterwards.** The payoff of this film is what the casualty bought,
   and right now that is unsourced.
-- **What "the second grounding at 22:39" was**, exactly. CC-201 refers to it in passing and the
-  chronology needs re-reading around that time.
-- **CC-107's counterpart at p88** is cut off mid-sentence in the extraction: "272 crewmembers out
-  of 1,023…". Re-read that page before using any crew figure.
+- ~~CC-107's counterpart at p88, the "272 crewmembers" sentence~~ — **closed. Now CC-401 and CC-402.**
 
 ## Controlling idea (never spoken in the film)
 
