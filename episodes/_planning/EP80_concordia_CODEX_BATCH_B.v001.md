@@ -83,5 +83,5 @@ py -3.11 scripts/build_plate_contact_sheet.py --slug concordia --src E:\pd-media
 
 N185 の明るさ14.9は黒地のワイヤーフレーム図として正常で、線は明瞭です。
 
-古い4枚（N003 / N009 / N019 / N111）は  へ移動しました。削除ではありません。
+古い4枚（N003 / N009 / N019 / N111）は `E:\pd-media\05_visuals\concordia\_superseded\` へ移動しました。削除ではありません。
 **本編に入るのは181枚。**
