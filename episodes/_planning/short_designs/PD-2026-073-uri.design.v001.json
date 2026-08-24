@@ -13,7 +13,11 @@
   "era_note": "Texas, February 2021, reaching back to the 2011 FERC/NERC report and forward to the 2022 weatherization rules. Per episode_spec forbidden_subjects, no victims, no ski-resort or alpine register, no deep-snow postcard imagery, no EU/Asian streets, no gavel. Per forbidden_claims, no Short says winterization was legally required before 2021, names a culprit individual or company, says the grid collapsed (load was shed to prevent a collapse and the margin is stated as the measured four minutes twenty-three seconds against the nine-minute threshold), or blames renewables or any single fuel. No death toll appears in any of the three Shorts. Every figure spoken is a verified script sentence backed by the FACTS_LEDGER.",
   "plate_pool_note": "163 plate files on disk at remotion/public/uri/img (U125/U129 among the absent). Subjects from the episode's own Codex plate table: the control room U001/U057-U061, frequency screens U008/U059/U080, the 2011 report and paper world U033-U045, winterization hardware U036-U037/U116-U117, the gas chain U081-U095, the critical list U089-U092. Every plate below verified present on disk; no plate is used by more than one Short.",
   "shorts_existing": [],
-  "shorts_to_author": ["short307", "short308", "short309"],
+  "shorts_to_author": [
+    "short307",
+    "short308",
+    "short309"
+  ],
   "existing_angles_do_not_repeat": {},
   "shorts": [
     {
@@ -28,22 +32,20 @@
         {
           "id": "L1",
           "text": "This is a story about a recommendation that was written down and not made a rule.",
-          "delivery": "building",
+          "delivery": "intense",
           "source_lines": [
             "This is a story about a recommendation that was written down and not made a rule."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L2",
           "text": "In two thousand and eleven, Texas got weather like this. Power plants tripped offline. Rolling blackouts were ordered.",
-          "delivery": "calm",
+          "delivery": "building",
           "source_lines": [
             "In two thousand and eleven, Texas got weather like this.",
             "Power plants tripped offline.",
             "Rolling blackouts were ordered."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L3",
@@ -52,8 +54,7 @@
           "source_lines": [
             "They produced a report, and the report made a recommendation.",
             "It recommended the development of winterization standards."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L4",
@@ -64,8 +65,7 @@
             "Nobody audits a recommendation.",
             "Nobody is penalised for not following one.",
             "A standard is a rule with a mechanism behind it."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L5",
@@ -74,8 +74,7 @@
           "source_lines": [
             "The standards organisation ultimately declined to act on it.",
             "Nobody refused in a room with a table."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L6",
@@ -84,8 +83,7 @@
           "source_lines": [
             "Ten years passed between the report and the storm.",
             "When February twenty twenty-one arrived, generating units failed from freezing above their own stated ambient design temperature."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L7",
@@ -95,39 +93,155 @@
             "Not below the temperature the unit was built to survive.",
             "Above it.",
             "The machines were failing in weather they were rated for."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L8",
           "text": "And the rules themselves were adopted on the thirtieth of August, twenty twenty-two. Eleven years, five months and nineteen days after the report that recommended them.",
-          "delivery": "intense",
+          "delivery": "calm",
           "source_lines": [
             "And the rules themselves were adopted on the thirtieth of August, twenty twenty-two.",
             "Eleven years, five months and nineteen days after the report that recommended them."
-          ],
-          "claims": ["UR"]
+          ]
         }
       ],
       "plates": [
-        {"n": 1, "role": "hook", "line": "L1", "subject": "a thick bound report lying closed on a desk, cover entirely blank", "source": "REUSE", "source_plate": "U034"},
-        {"n": 2, "role": "hook", "line": "L1", "subject": "a single sheet of paper on a desk, blank, held flat", "source": "REUSE", "source_plate": "U035"},
-        {"n": 3, "role": "hook", "line": "L2", "subject": "a Texas street under thin snow at dawn, ten years older in feel", "source": "REUSE", "source_plate": "U031"},
-        {"n": 4, "role": "hook", "line": "L2", "subject": "steam and rime on the pipework of a power station in freezing fog", "source": "REUSE", "source_plate": "U032"},
-        {"n": 5, "role": "body", "line": "L3", "subject": "a plain federal-style hearing room, rows of chairs and a long table", "source": "REUSE", "source_plate": "U033"},
-        {"n": 6, "role": "body", "line": "L3", "subject": "pipe lagging being wrapped around an outdoor pipe run, gloved hands", "source": "REUSE", "source_plate": "U036"},
-        {"n": 7, "role": "body", "line": "L4", "subject": "a row of ring binders on a steel shelf, spines blank", "source": "REUSE", "source_plate": "U040"},
-        {"n": 8, "role": "body", "line": "L4", "subject": "a training room with a projector, blank screen and rows of chairs", "source": "REUSE", "source_plate": "U042"},
-        {"n": 9, "role": "body", "line": "L5", "subject": "an empty chair pushed back from a meeting table in a plain room", "source": "REUSE", "source_plate": "U039"},
-        {"n": 10, "role": "body", "line": "L6", "subject": "a straight road across flat land in ordinary weather, receding", "source": "REUSE", "source_plate": "U048"},
-        {"n": 11, "role": "body", "line": "L7", "subject": "a manufacturer's blank metal data plate riveted to a machine casing", "source": "REUSE", "source_plate": "U043"},
-        {"n": 12, "role": "body", "line": "L7", "subject": "an outdoor valve assembly on a plant site, no ice, ordinary day", "source": "REUSE", "source_plate": "U044"},
-        {"n": 13, "role": "close", "line": "L8", "subject": "new pipe insulation on outdoor plant pipework, clean and recent", "source": "REUSE", "source_plate": "U116"},
-        {"n": 14, "role": "close", "line": "L8", "subject": "new heat-trace cable and cladding on a wellhead, clean", "source": "REUSE", "source_plate": "U117"}
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a thick bound report lying closed on a desk, cover entirely blank",
+          "source": "REUSE",
+          "source_plate": "U034"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a single sheet of paper on a desk, blank, held flat",
+          "source": "REUSE",
+          "source_plate": "U035"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a Texas street under thin snow at dawn, ten years older in feel",
+          "source": "REUSE",
+          "source_plate": "U031"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "steam and rime on the pipework of a power station in freezing fog",
+          "source": "REUSE",
+          "source_plate": "U032"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a plain federal-style hearing room, rows of chairs and a long table",
+          "source": "REUSE",
+          "source_plate": "U033"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "pipe lagging being wrapped around an outdoor pipe run, gloved hands",
+          "source": "REUSE",
+          "source_plate": "U036"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a row of ring binders on a steel shelf, spines blank",
+          "source": "REUSE",
+          "source_plate": "U040"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L4",
+          "subject": "a training room with a projector, blank screen and rows of chairs",
+          "source": "REUSE",
+          "source_plate": "U042"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "an empty chair pushed back from a meeting table in a plain room",
+          "source": "REUSE",
+          "source_plate": "U039"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a straight road across flat land in ordinary weather, receding",
+          "source": "REUSE",
+          "source_plate": "U048"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "a manufacturer's blank metal data plate riveted to a machine casing",
+          "source": "REUSE",
+          "source_plate": "U043"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "an outdoor valve assembly on a plant site, no ice, ordinary day",
+          "source": "REUSE",
+          "source_plate": "U044"
+        },
+        {
+          "n": 13,
+          "role": "close",
+          "line": "L8",
+          "subject": "new pipe insulation on outdoor plant pipework, clean and recent",
+          "source": "REUSE",
+          "source_plate": "U116"
+        },
+        {
+          "n": 14,
+          "role": "close",
+          "line": "L8",
+          "subject": "new heat-trace cable and cladding on a wellhead, clean",
+          "source": "REUSE",
+          "source_plate": "U117"
+        }
       ],
       "kinetic_beats": [
-        {"line": "L5", "anchor": "declined to act", "suffix": "declined", "words": ["DECLINED", "TO ACT"], "style": "punch", "seconds": 2.2},
-        {"line": "L8", "anchor": "Eleven years", "suffix": "eleven_years", "words": ["ELEVEN", "YEARS"], "style": "punch", "seconds": 2.4}
+        {
+          "line": "L5",
+          "anchor": "declined to act",
+          "suffix": "declined",
+          "words": [
+            "DECLINED",
+            "TO ACT"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L8",
+          "anchor": "Eleven years",
+          "suffix": "eleven_years",
+          "words": [
+            "ELEVEN",
+            "YEARS"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
       ]
     },
     {
@@ -142,22 +256,20 @@
         {
           "id": "L1",
           "text": "At twenty past one in the morning, in a control room north of Austin, an operator gave an order that had never been given at that scale in American history.",
-          "delivery": "building",
+          "delivery": "intense",
           "source_lines": [
             "At twenty past one in the morning, in a control room north of Austin, an operator gave an order that had never been given at that scale in American history."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L2",
           "text": "Cut the power to twenty thousand megawatts of customers. Now. Before the grid takes itself apart.",
-          "delivery": "intense",
+          "delivery": "building",
           "source_lines": [
             "Cut the power to twenty thousand megawatts of customers.",
             "Now.",
             "Before the grid takes itself apart."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L3",
@@ -167,8 +279,7 @@
             "It was the correct order.",
             "It is not a failure.",
             "It is the thing you do so that the failure does not happen."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L4",
@@ -178,8 +289,7 @@
             "Twenty thousand megawatts were shed.",
             "It was the largest manually controlled load shedding event in the history of the United States.",
             "And it was not enough."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L5",
@@ -188,8 +298,7 @@
           "source_lines": [
             "That morning, the frequency of the Texas grid fell below fifty-nine point four hertz, and stayed there for four minutes and twenty-three seconds.",
             "The line was nine minutes."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L6",
@@ -198,8 +307,7 @@
           "source_lines": [
             "Not blackouts.",
             "A system-wide shutdown, cutting power to millions more, significantly slowing restoration, and damaging units across the grid."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L7",
@@ -208,38 +316,154 @@
           "source_lines": [
             "A grid that sheds load can be brought back when the machines are ready.",
             "A grid that trips its machines has to repair them first."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L8",
           "text": "Texas got to within four minutes and thirty-seven seconds of that.",
-          "delivery": "intense",
+          "delivery": "calm",
           "source_lines": [
             "Texas got to within four minutes and thirty-seven seconds of that."
-          ],
-          "claims": ["UR"]
+          ]
         }
       ],
       "plates": [
-        {"n": 1, "role": "hook", "line": "L1", "subject": "a utility control room at night, banks of screens on a curved wall", "source": "REUSE", "source_plate": "U001"},
-        {"n": 2, "role": "hook", "line": "L1", "subject": "a hand resting beside a desk telephone on a control-room console", "source": "REUSE", "source_plate": "U002"},
-        {"n": 3, "role": "hook", "line": "L2", "subject": "a utility control room at night with several operators at screens", "source": "REUSE", "source_plate": "U057"},
-        {"n": 4, "role": "hook", "line": "L2", "subject": "a desk telephone handset lifted, a hand and a forearm", "source": "REUSE", "source_plate": "U060"},
-        {"n": 5, "role": "body", "line": "L3", "subject": "a plain analogue wall clock in an operations room, hands near half past one", "source": "REUSE", "source_plate": "U061"},
-        {"n": 6, "role": "body", "line": "L4", "subject": "a wall of unlabelled line-graph displays in a dim control room", "source": "REUSE", "source_plate": "U058"},
-        {"n": 7, "role": "body", "line": "L5", "subject": "one screen filling the frame, a single line descending", "source": "REUSE", "source_plate": "U059"},
-        {"n": 8, "role": "body", "line": "L5", "subject": "a single line drawn across a dark screen with a second line below it", "source": "REUSE", "source_plate": "U080"},
-        {"n": 9, "role": "body", "line": "L6", "subject": "a suburban street at night in which the near half is lit and the far half dark", "source": "REUSE", "source_plate": "U062"},
-        {"n": 10, "role": "body", "line": "L6", "subject": "a dead traffic signal over an empty snow-dusted intersection", "source": "REUSE", "source_plate": "U063"},
-        {"n": 11, "role": "body", "line": "L7", "subject": "a substation seen through a chain-link fence, transformers and bus", "source": "REUSE", "source_plate": "U012"},
-        {"n": 12, "role": "body", "line": "L7", "subject": "a close layered view through an electrical substation, iced", "source": "REUSE", "source_plate": "U078"},
-        {"n": 13, "role": "close", "line": "L8", "subject": "a single screen in a dark room showing an unlabelled descending line", "source": "REUSE", "source_plate": "U008"},
-        {"n": 14, "role": "close", "line": "L8", "subject": "a plain near-black surface with faint horizontal grain", "source": "REUSE", "source_plate": "U010"}
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a utility control room at night, banks of screens on a curved wall",
+          "source": "REUSE",
+          "source_plate": "U001"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a hand resting beside a desk telephone on a control-room console",
+          "source": "REUSE",
+          "source_plate": "U002"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a utility control room at night with several operators at screens",
+          "source": "REUSE",
+          "source_plate": "U057"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a desk telephone handset lifted, a hand and a forearm",
+          "source": "REUSE",
+          "source_plate": "U060"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a plain analogue wall clock in an operations room, hands near half past one",
+          "source": "REUSE",
+          "source_plate": "U061"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L4",
+          "subject": "a wall of unlabelled line-graph displays in a dim control room",
+          "source": "REUSE",
+          "source_plate": "U058"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L5",
+          "subject": "one screen filling the frame, a single line descending",
+          "source": "REUSE",
+          "source_plate": "U059"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L5",
+          "subject": "a single line drawn across a dark screen with a second line below it",
+          "source": "REUSE",
+          "source_plate": "U080"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L6",
+          "subject": "a suburban street at night in which the near half is lit and the far half dark",
+          "source": "REUSE",
+          "source_plate": "U062"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a dead traffic signal over an empty snow-dusted intersection",
+          "source": "REUSE",
+          "source_plate": "U063"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "a substation seen through a chain-link fence, transformers and bus",
+          "source": "REUSE",
+          "source_plate": "U012"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a close layered view through an electrical substation, iced",
+          "source": "REUSE",
+          "source_plate": "U078"
+        },
+        {
+          "n": 13,
+          "role": "close",
+          "line": "L8",
+          "subject": "a single screen in a dark room showing an unlabelled descending line",
+          "source": "REUSE",
+          "source_plate": "U008"
+        },
+        {
+          "n": 14,
+          "role": "close",
+          "line": "L8",
+          "subject": "a plain near-black surface with faint horizontal grain",
+          "source": "REUSE",
+          "source_plate": "U010"
+        }
       ],
       "kinetic_beats": [
-        {"line": "L5", "anchor": "four minutes and twenty-three seconds", "suffix": "four_twentythree", "words": ["FOUR MINUTES", "TWENTY-THREE SECONDS"], "style": "punch", "seconds": 2.2},
-        {"line": "L8", "anchor": "four minutes and thirty-seven seconds", "suffix": "the_margin", "words": ["FOUR MINUTES", "THIRTY-SEVEN SECONDS"], "style": "punch", "seconds": 2.4}
+        {
+          "line": "L5",
+          "anchor": "four minutes and twenty-three seconds",
+          "suffix": "four_twentythree",
+          "words": [
+            "FOUR MINUTES",
+            "TWENTY-THREE SECONDS"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L8",
+          "anchor": "four minutes and thirty-seven seconds",
+          "suffix": "the_margin",
+          "words": [
+            "FOUR MINUTES",
+            "THIRTY-SEVEN SECONDS"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
       ]
     },
     {
@@ -254,24 +478,22 @@
         {
           "id": "L1",
           "text": "Every grid keeps a list. It is called critical load, and it is the set of customers who do not get shed no matter what.",
-          "delivery": "building",
+          "delivery": "intense",
           "source_lines": [
             "Every grid keeps a list.",
             "It is called critical load, and it is the set of customers who do not get shed no matter what: hospitals, water plants, emergency services, and the infrastructure the grid itself depends on."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L2",
           "text": "The obvious answers are on it. Hospitals. Water treatment. Emergency dispatch.",
-          "delivery": "calm",
+          "delivery": "building",
           "source_lines": [
             "The obvious answers are on it.",
             "Hospitals.",
             "Water treatment.",
             "Emergency dispatch."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L3",
@@ -279,8 +501,7 @@
           "delivery": "intense",
           "source_lines": [
             "Most natural gas production and processing facilities in Texas were not identified as critical load."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L4",
@@ -288,8 +509,7 @@
           "delivery": "building",
           "source_lines": [
             "So when the operator shed twenty thousand megawatts to save the grid, some of what went dark was the gas industry that fuelled it."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L5",
@@ -301,8 +521,7 @@
             "Wells that needed power stopped.",
             "Which took fuel sources offline.",
             "Which forced further load shedding."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L6",
@@ -310,8 +529,7 @@
           "delivery": "building",
           "source_lines": [
             "The grid cut power to save itself, the power it cut fed the fuel system, the fuel system stopped, and the grid had to cut more."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L7",
@@ -320,38 +538,154 @@
           "source_lines": [
             "Nobody in that chain did anything wrong at the moment they did it.",
             "That is what makes it a loop and not a mistake."
-          ],
-          "claims": ["UR"]
+          ]
         },
         {
           "id": "L8",
           "text": "Which is to say: somebody now has to keep the list that the gas fields were not on.",
-          "delivery": "intense",
+          "delivery": "calm",
           "source_lines": [
             "Which is to say: somebody now has to keep the list that the gas fields were not on."
-          ],
-          "claims": ["UR"]
+          ]
         }
       ],
       "plates": [
-        {"n": 1, "role": "hook", "line": "L1", "subject": "a printed list on a plain desk under a lamp, the page entirely blank", "source": "REUSE", "source_plate": "U089"},
-        {"n": 2, "role": "hook", "line": "L1", "subject": "two hands holding a blank ruled page over a desk, no face", "source": "REUSE", "source_plate": "U090"},
-        {"n": 3, "role": "hook", "line": "L2", "subject": "a municipal water treatment plant from outside the fence", "source": "REUSE", "source_plate": "U096"},
-        {"n": 4, "role": "hook", "line": "L2", "subject": "a large blank board on an office wall with pins and string", "source": "REUSE", "source_plate": "U114"},
-        {"n": 5, "role": "body", "line": "L3", "subject": "a gas field of low wellheads across flat land under thin snow", "source": "REUSE", "source_plate": "U081"},
-        {"n": 6, "role": "body", "line": "L3", "subject": "a wellhead valve tree glazed with ice, close", "source": "REUSE", "source_plate": "U082"},
-        {"n": 7, "role": "body", "line": "L4", "subject": "a gas compressor station at night, buildings and stacks, lights on", "source": "REUSE", "source_plate": "U085"},
-        {"n": 8, "role": "body", "line": "L4", "subject": "the same low gas compressor compound seen from outside, dark", "source": "REUSE", "source_plate": "U086"},
-        {"n": 9, "role": "body", "line": "L5", "subject": "a gas-fired power station at night standing cold and dormant", "source": "REUSE", "source_plate": "U093"},
-        {"n": 10, "role": "body", "line": "L5", "subject": "an industrial disconnect switch on a pole, handle down, snow", "source": "REUSE", "source_plate": "U091"},
-        {"n": 11, "role": "body", "line": "L6", "subject": "a plain dark surface for a composited three-node loop diagram", "source": "REUSE", "source_plate": "U092"},
-        {"n": 12, "role": "body", "line": "L7", "subject": "a gas wellhead valve tree with rime ice on every surface", "source": "REUSE", "source_plate": "U023"},
-        {"n": 13, "role": "close", "line": "L8", "subject": "a figure in high-visibility clothing walking a gas pad in ordinary weather", "source": "REUSE", "source_plate": "U115"},
-        {"n": 14, "role": "close", "line": "L8", "subject": "the same gas field under a hot flat sky, dry grass", "source": "REUSE", "source_plate": "U118"}
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a printed list on a plain desk under a lamp, the page entirely blank",
+          "source": "REUSE",
+          "source_plate": "U089"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "two hands holding a blank ruled page over a desk, no face",
+          "source": "REUSE",
+          "source_plate": "U090"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a municipal water treatment plant from outside the fence",
+          "source": "REUSE",
+          "source_plate": "U096"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a large blank board on an office wall with pins and string",
+          "source": "REUSE",
+          "source_plate": "U114"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a gas field of low wellheads across flat land under thin snow",
+          "source": "REUSE",
+          "source_plate": "U081"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "a wellhead valve tree glazed with ice, close",
+          "source": "REUSE",
+          "source_plate": "U082"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a gas compressor station at night, buildings and stacks, lights on",
+          "source": "REUSE",
+          "source_plate": "U085"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L4",
+          "subject": "the same low gas compressor compound seen from outside, dark",
+          "source": "REUSE",
+          "source_plate": "U086"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "a gas-fired power station at night standing cold and dormant",
+          "source": "REUSE",
+          "source_plate": "U093"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L5",
+          "subject": "an industrial disconnect switch on a pole, handle down, snow",
+          "source": "REUSE",
+          "source_plate": "U091"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L6",
+          "subject": "a plain dark surface for a composited three-node loop diagram",
+          "source": "REUSE",
+          "source_plate": "U092"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a gas wellhead valve tree with rime ice on every surface",
+          "source": "REUSE",
+          "source_plate": "U023"
+        },
+        {
+          "n": 13,
+          "role": "close",
+          "line": "L8",
+          "subject": "a figure in high-visibility clothing walking a gas pad in ordinary weather",
+          "source": "REUSE",
+          "source_plate": "U115"
+        },
+        {
+          "n": 14,
+          "role": "close",
+          "line": "L8",
+          "subject": "the same gas field under a hot flat sky, dry grass",
+          "source": "REUSE",
+          "source_plate": "U118"
+        }
       ],
       "kinetic_beats": [
-        {"line": "L3", "anchor": "not identified as critical load", "suffix": "not_critical", "words": ["NOT IDENTIFIED", "AS CRITICAL"], "style": "punch", "seconds": 2.2},
-        {"line": "L6", "anchor": "cut more", "suffix": "cut_more", "words": ["CUT", "MORE"], "style": "punch", "seconds": 2.4}
+        {
+          "line": "L3",
+          "anchor": "not identified as critical load",
+          "suffix": "not_critical",
+          "words": [
+            "NOT IDENTIFIED",
+            "AS CRITICAL"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L6",
+          "anchor": "cut more",
+          "suffix": "cut_more",
+          "words": [
+            "CUT",
+            "MORE"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
       ]
     }
   ]

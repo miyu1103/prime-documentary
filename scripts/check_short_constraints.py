@@ -40,12 +40,24 @@ WORDS_MIN, WORDS_MAX = 159, 180
 WPS = 2.90
 
 
+def plate_dirs(slug: str) -> list[Path]:
+    """Every directory that can hold this episode's plates, best first.
+
+    `img/` is curated while other threads work -- on 2026-08-25 the itaewon set went
+    116 -> 94 files mid-session because the assembly thread re-ran its selection, and
+    eleven plates a Short had already staged read as "not on disk" although their bytes
+    were untouched one directory away. A plate that exists in the episode's own raw or
+    upscaled set still exists; reporting otherwise measures the curation, not the plate.
+    """
+    pub = ROOT / "remotion" / "public" / slug
+    cands = [pub / "img", *sorted(pub.glob("img_raw_codex*")), *sorted(pub.glob("img_esrgan*")),
+             *sorted((ROOT / "remotion").glob(f"public_ep*/{slug}/img"))]
+    return [c for c in cands if c.is_dir()]
+
+
 def plate_dir(slug: str) -> Path | None:
-    for cand in (ROOT / "remotion" / "public" / slug / "img",
-                 *sorted((ROOT / "remotion").glob(f"public_ep*/{slug}/img"))):
-        if cand.is_dir():
-            return cand
-    return None
+    dirs = plate_dirs(slug)
+    return dirs[0] if dirs else None
 
 
 def main() -> int:
@@ -70,8 +82,8 @@ def main() -> int:
         claims = [c.lower() for c in spec.get("forbidden_claims", [])]
         short_claims = [c for c in claims if len(c) < 80]
         long_claims = [c for c in claims if len(c) >= 80]
-        pdir = plate_dir(slug)
-        avail = {p.stem for p in pdir.glob("*.png")} if pdir else set()
+        dirs = plate_dirs(slug)
+        avail = {p.stem for d in dirs for p in d.glob("*.png")}
 
         print(f"\n{epid}   spec {spec_file.name}   plates {len(avail)}")
         for sh in d["shorts"]:

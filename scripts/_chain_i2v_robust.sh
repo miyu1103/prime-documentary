@@ -128,7 +128,10 @@ while [ "$(count_done)" -lt "$TARGET" ] && [ $attempt -lt $MAX_ATTEMPTS ]; do
   kill_comfy
   sleep 3
   ensure_comfy || { sleep 15; continue; }
-  I2V_MAX="$CHUNK" py -3.11 scripts/i2v_episode_batch.py --slug "$SLUG" --kinds "$KINDS" ${ONLY:+--only "$ONLY"} ${LENGTH:+--length "$LENGTH"} ${I2V_PROMPT:+--prompt "$I2V_PROMPT"} ${I2V_NEG:+--neg "$I2V_NEG"} ${I2V_SEED_BASE:+--seed-base "$I2V_SEED_BASE"} >> "$LOG" 2>&1
+  # I2V_SRC names the ACCEPTED plate directory. Without it the batch falls back to
+  # AI_ROOT/<slug>, which for EP72 lacmegantic holds only sub-folders (_batch_b, _v001, ...) and
+  # no plates at all: the chain reported "0 sources, 0 to do" and looped restarting ComfyUI.
+  I2V_MAX="$CHUNK" py -3.11 scripts/i2v_episode_batch.py --slug "$SLUG" --kinds "$KINDS" ${I2V_SRC:+--src "$I2V_SRC"} ${ONLY:+--only "$ONLY"} ${LENGTH:+--length "$LENGTH"} ${I2V_PROMPT:+--prompt "$I2V_PROMPT"} ${I2V_NEG:+--neg "$I2V_NEG"} ${I2V_SEED_BASE:+--seed-base "$I2V_SEED_BASE"} >> "$LOG" 2>&1
   after=$(count_done)
   echo "[chain:$SLUG] chunk end done=$after/$TARGET" >> "$LOG"
   # assemble what is finished so far (idempotent, safe while more are in flight)

@@ -33,8 +33,23 @@ RULES: list[tuple[str, str]] = [
     (r"stamp|seal|signature|signed|notaris|certif", "stamp"),
     (r"photograph|photo|camera|snapshot|picture", "camera"),
     (r"page|pages|file|files|document|documents|report|form|forms|letter|letters|envelope|record|records|paperwork", "page turn"),
-    (r"door|doors|gate|gates|lock|locked|latch|bolt|key|keys|padlock|chain|chained|drawer|cabinet", "latch"),
+    # `key(?!s?\s+bridge)`: EP77 is set on the Francis Scott KEY BRIDGE, and a latch cue on a
+    # bridge's proper name is the wrong-sense trap the comment below already bans for `ran`.
+    (r"door|doors|gate|gates|lock|locked|latch|bolt|key(?!s?\s+bridge)|keys(?!\s+bridge)|padlock|chain|chained|drawer|cabinet", "latch"),
     (r"telephone|phone|rang|ring|dial|receiver|call came|hung up", "click"),
+    # EP77-82 (2026-08-25): six disaster episodes name machinery the courtroom vocabulary
+    # above never does. Every mapping lands on a sound the named thing actually makes,
+    # and only on existing ONESHOT_MAP groups -- no new samples.
+    (r"breaker|breakers|switchboard|circuit", "click"),
+    (r"indictment|indicted|unsealed|grand jury|charged with|courtroom", "gavel"),
+    (r"ship|vessel|tug|tugboat|propeller|sailed|ferry|hull", "pass-by"),
+    (r"airplane|aircraft|turboprop|jet\b|wing|wings|cockpit|takeoff|runway|flew|flying", "pass-by"),
+    (r"stick shaker|stick pusher|control column|autopilot|throttle|landing gear|flaps", "click"),
+    (r"checklist|check ride|checkride|simulator|proficiency check|application", "page turn"),
+    (r"jackscrew|acme nut|threads|stabilizer|trim system|elevator\b", "click"),
+    (r"dial indicator|end play|gauge|measured|measurement|inspection|inspected", "tick"),
+    (r"wrench|fixture|tools|hangar|workbench|grease", "clink"),
+    (r"million|billion|dollars|percent|per cent", "data-blip"),
     (r"car|cars|truck|van|vehicle|engine|drove|driving|traffic|road|highway|sedan", "pass-by"),
     (r"clock|hour|hours|minutes|waited|waiting|time passed|years later", "clock"),
     # `ran` and `hit` are excluded on purpose: the dry run put a footstep under "the dealership
@@ -49,7 +64,8 @@ RULES: list[tuple[str, str]] = [
     # Weight cues rather than literal objects. This is the house style -- EP66 openfields uses
     # `low boom "court"` the same way -- and they are placed only on beats that carry the weight,
     # never as spacing. Kept last so a literal sound always wins the beat.
-    (r"\bdied\b|\bdeath\b|\bdeaths\b|\bkilled\b|\bdead\b|fatal|\bburned\b|collapse", "low boom"),
+    (r"pyrotechnic|pyrotechnics|ignited|ignition|sparks?\b", "impact"),
+    (r"\bdied\b|\bdeath\b|\bdeaths\b|\bkilled\b|\bdead\b|fatal|\bburned\b|collapse|\bfire\b|flames|\bsmoke\b", "low boom"),
     (r"but nobody|what nobody|the truth|in fact|instead|and then everything|it turned out", "riser"),
 ]
 
@@ -58,7 +74,9 @@ TARGET_PER_MIN = 2.6       # comfortably over the 2.0 floor without becoming wal
 
 
 def pick_trigger(text: str, pattern: str) -> str | None:
-    m = re.search(pattern, text, re.IGNORECASE)
+    # \b-wrapped: the docstring always promised word boundaries but the code never applied
+    # them, and EP77's dry run put a telephone click on "duRING the day". Found 2026-08-25.
+    m = re.search(rf"\b(?:{pattern})\b", text, re.IGNORECASE)
     if not m:
         return None
     word = m.group(0).split()[0]
@@ -118,7 +136,10 @@ def main() -> int:
 
     print(f"[sfx] {a.ep}: {len(vo_idx)} beats, placing {len(placed)} cue(s) (target {want})")
     for i, kw, trig in placed[:6]:
-        print(f'   beat {i}: (SFX: {kw} "{trig}")   <- {lines[i][6:70]}')
+        # ascii-safe: the console is cp932 and an em-dash in the script text killed this
+        # print (and with it the whole run) on 2026-08-25.
+        ctx = lines[i][6:70].encode("ascii", "replace").decode()
+        print(f'   beat {i}: (SFX: {kw} "{trig}")   <- {ctx}')
     if a.dry_run:
         print("[sfx] DRY RUN -- nothing written")
         return 0

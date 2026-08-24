@@ -127,13 +127,37 @@ def main() -> int:
         fixed += 1
         print(f"  cue #{cues[i]['idx']}: moved trailing {moved} -> next cue")
 
+    # Orphan merge (2026-08-25): the move above can strand one or two words as a cue of
+    # their own ("What she" / "claim.") and check_caption_breaks rejects ANY such cue.
+    # Fold an orphan into its predecessor; the predecessor keeps its start (sync preserved)
+    # and inherits the orphan's end.
+    TERM = ".?!—-:;"
+    merged, morph = [], 0
+    for c in cues:
+        t = c["text"].strip()
+        ws = re.findall(r"[A-Za-z0-9'’]+", t)
+        if merged and len(ws) < 3 and (not t or t[-1] not in TERM or not t[:1].isupper()) \
+           and len(merged[-1]["text"]) + len(t) + 1 <= 100:
+            merged[-1]["text"] = (merged[-1]["text"] + " " + t).strip()
+            merged[-1]["ts"] = (merged[-1]["ts"].split("-->")[0].rstrip()
+                                + " --> " + c["ts"].split("-->")[1].strip())
+            morph += 1
+            # ascii-safe: an em-dash in the orphan text killed this print (and the whole
+            # repair, leaving the srt unfixed) on a cp932 console, EP81 2026-08-25.
+            safe = t.encode("ascii", "replace").decode()
+            print(f"  cue #{c['idx']}: orphan {safe!r} merged into predecessor")
+        else:
+            merged.append(c)
+    cues = merged
+    fixed += morph
+
     if not fixed:
         print(f"{ep}: no dangling line-ends to fix ({srt_p.name})"); return 0
 
     out_lines = []
-    for c in cues:
+    for n, c in enumerate(cues, 1):
         wrapped = wrap(c["text"])[:MAX_LINES]
-        out_lines.append(c["idx"]); out_lines.append(c["ts"]); out_lines.extend(wrapped); out_lines.append("")
+        out_lines.append(str(n)); out_lines.append(c["ts"]); out_lines.extend(wrapped); out_lines.append("")
     new = "\n".join(out_lines).strip() + "\n"
 
     if a.dry_run:

@@ -65,7 +65,11 @@ def main() -> int:
             new = json.dumps(payload, ensure_ascii=False, indent=2)
             if out.exists():
                 old = json.loads(out.read_text(encoding="utf-8"))
-                if [x.get("text") for x in old] == [x["text"] for x in payload]:
+                # delivery is an input to the voice, not decoration: comparing spoken text
+                # alone left 20 lines files carrying superseded delivery values after a
+                # design pass fixed the intense/calm arc (2026-08-25).
+                if [(x.get("text"), x.get("delivery")) for x in old] == \
+                        [(x["text"], x["delivery"]) for x in payload]:
                     skipped += 1
                     continue
             if not args.dry_run:

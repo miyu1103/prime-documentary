@@ -50,9 +50,28 @@ def split_lines(tokens):
     lines=[]; cur=[]
     def flush(seq):
         if seq: lines.append(([t for t,_ in seq], seq[0][1], seq[-1][1]))
+    def flush_sentence_end(seq):
+        # A 1-2 word sentence tail becomes an orphan cue ("the specification.") and
+        # check_caption_breaks rejects any such cue. Borrow words back from the
+        # previously flushed line so the tail reads as a phrase (2026-08-25).
+        if len(seq)<3 and lines:
+            ptoks=[(t,i) for t,i in zip(lines[-1][0], range(lines[-1][1], lines[-1][2]+1))]
+            combined=ptoks+seq
+            if 3<len(combined)<=2*MAX_WORDS:
+                # head=combined[:cut+1], tail=combined[cut+1:], so the tail gets 3 words
+                # only when cut = len-4 (len-3 recreated the 2-word tail it was fixing).
+                cut=len(combined)-4
+                while cut>0 and norm(combined[cut][0]) in STOP: cut-=1
+                if cut>0:
+                    lines.pop()
+                    flush(combined[:cut+1]); flush(combined[cut+1:])
+                    return
+        flush(seq)
     for i,w in enumerate(tokens):
         cur.append((w,i)); wl=len(" ".join(t for t,_ in cur))
-        if re.search(r"[.?!—:;]$", w) or (w.endswith(",") and len(cur)>=4):
+        if re.search(r"[.?!—:;]$", w):
+            flush_sentence_end(cur); cur=[]; continue
+        if w.endswith(",") and len(cur)>=4:
             flush(cur); cur=[]; continue
         if len(cur)>=MAX_WORDS or wl>=MAX_CHARS:
             cut=len(cur)-1
@@ -78,7 +97,11 @@ def main():
     for c in idx["chunks"]:
         wstart, wend = c["start"], c["end"]
         cw=[w for w in words if wstart-0.2 <= (w["start"]+w["end"])/2 <= wend+0.2]
-        toks=c["spoken_text"].split(); times=[None]*len(toks); j=0
+        # EP77 (2026-08-25): the v3 scripts cite inline -- "The lane opens. <!-- KB-004 -->" --
+        # and those chunks reach the index verbatim. The voice never speaks them (verified:
+        # zero KB- hits in the whisper transcript) but this aligner was writing them into the
+        # srt: 103 citation comments in EP77's first captions.final.v001.srt.
+        toks=re.sub(r"<!--.*?-->", " ", c["spoken_text"]).split(); times=[None]*len(toks); j=0
         for ti,tk in enumerate(toks):
             tn=norm(tk)
             if not tn: continue
@@ -110,22 +133,41 @@ def main():
         if cps>22 and k+1<len(cues) and len(t)+len(cues[k+1][2])+1 <= 92:
             ns,ne,nt=cues[k+1]; cues[k+1]=[s,ne,(t+" "+nt).strip()]; k+=1; continue
         out.append([s,e,t]); k+=1
+    # orphan merge (2026-08-25): check_caption_breaks rejects any cue under 3 words that does
+    # not both end a sentence and start uppercase -- a two-word tail like "wants it." alone on
+    # screen. Fold such cues back into the cue they grammatically belong to.
+    merged=[]
+    for s,e,t in out:
+        ws=re.findall(r"[A-Za-z0-9'’]+", t)
+        if merged and len(ws)<3 and (not t or t[-1] not in ".?!—-:;" or not t[0].isupper()) \
+           and len(merged[-1][2])+len(t)+1<=92:
+            merged[-1][1]=e; merged[-1][2]=(merged[-1][2]+" "+t).strip()
+        else:
+            merged.append([s,e,t])
+    out=merged
     for k in range(len(out)):
         s,e,t=out[k]; need=len(t)/24.0
         if e-s<need:
             cap=(out[k+1][0]+0.9) if k+1<len(out) else s+need
             out[k][1]=min(s+need, cap)
     def wrap2(t, maxc=44):
+        # Grammar-aware since 2026-08-25: the old midpoint split ended line 1 on function
+        # words ("...the bridge was in the" / "river") and check_caption_breaks rejects
+        # exactly that. Prefer the split nearest the midpoint whose first line does NOT end
+        # on a no-dangle word; fall back to the plain midpoint only if none qualifies.
         if len(t)<=maxc: return t
+        from fix_caption_dangling import NO_DANGLE_END as _ND
         words2=t.split(); half=len(t)/2
-        for kk in range(1,len(words2)):
-            if len(" ".join(words2[:kk]))>=half:
-                for z in (kk,kk-1,kk+1):
-                    if 1<=z<len(words2):
-                        aa=" ".join(words2[:z]); bb=" ".join(words2[z:])
-                        if len(aa)<=50 and len(bb)<=50: return aa+"\n"+bb
-                break
-        return t
+        kk=next((k for k in range(1,len(words2)) if len(" ".join(words2[:k]))>=half), None)
+        if kk is None: return t
+        best=None
+        for z in sorted(range(1,len(words2)), key=lambda z: abs(z-kk)):
+            aa=" ".join(words2[:z]); bb=" ".join(words2[z:])
+            if len(aa)<=50 and len(bb)<=50:
+                if norm(words2[z-1]) not in _ND:
+                    return aa+"\n"+bb
+                if best is None: best=aa+"\n"+bb
+        return best or t
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text("\n".join(f"{k+1}\n{srt_ts(s)} --> {srt_ts(e)}\n{wrap2(t)}\n" for k,(s,e,t) in enumerate(out)), "utf-8")
     worst=max((len(t)/max(e-s,0.001) for s,e,t in out), default=0)

@@ -71,6 +71,11 @@ DELIVERY_BY_SECTION = {
 # `sections` in the registry below (EP56 is the first 5-act case film).
 SECTION_ORDER = ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ENDING"]
 SECTION_ORDER_5ACT = ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ACT_5", "ENDING"]
+# EP77+ (v3 template, 2026-08-23 rebuild): `## OP` carries only the comment
+# "canonical bookend — not narrated, do not write copy here", so OP is absent from the
+# NARRATION coverage list -- the bookend audio is placed at assembly, not spoken here.
+# EP72-76 narrated a thesis under OP; from EP77 the template forbids copy there.
+SECTION_ORDER_V3 = ["HOOK", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ENDING"]
 # EP60 (surfside) is the first film with a tense break. Ten script headings --
 # COLD OPEN / BRAND STING / OPENING / ACT I..ACT V / THE NIGHT / ENDING -- of which
 # BRAND STING is narration-free (as in EP56), so NINE sections carry speech. THE NIGHT
@@ -631,6 +636,80 @@ EPISODES = {
                     "the H4 load bar alone on screen, then NBS Conclusion 1 read straight."},
         ],
     },
+    # ------------------------------------------------------------------ EP77-82 (2026-08-24) --
+    # RUNTIME, OWNER-DECIDED 2026-08-25 ('秒数は多少不足しててもOK' then '20分を超えてればOK'):
+    # the measured voice reads this register at ~199 raw wpm (EP77 ACT_1 205.1 + ACT_3 195.5,
+    # both ffprobed), so all six project 25:40-27:50 against runtime_seconds [1740, 1920].
+    # The owner set the acceptance floor for this batch at 20:00 -- every projection clears it.
+    # Declared spec values are UNCHANGED (rule 4); runtime_band lands in release_deviations at
+    # ship time as usual. Do not pad scripts or stretch gaps to reach the old band. EP82
+    # additionally carries APR-0001 (episodes/PD-2026-082-valdez/approvals/).
+    # Six 30-minute episodes, all written to the same v3 template: HOOK/OP/ACT_1..ACT_4/ENDING
+    # (SECTION_ORDER, 4 acts -- not the 5-act order EP72-76 used). episode_spec runtime_seconds
+    # [1740, 1920], script_words [4640, 5120] for all six. All six PROVISIONAL, modelled at
+    # 178.4 raw wpm -- the rate EP76 morandi actually DELIVERED whole-script at these voice
+    # settings (its ACT_1 sample read 184.0 and the back half's verbatim quotation pulled the
+    # whole script down to 178.4; these six also carry verbatim findings in their back halves,
+    # so the delivered rate is the honest model). Word counts here are `wc -w` on the planning
+    # script and OVERCOUNT (headings, citation comments), so each line is superseded the moment
+    # `--dry-run` prints the extractor's real chunk/word count for that episode -- rewrite
+    # design_speech_seconds from it before any full run.
+    "PD-2026-077-keybridge": {
+        "planning": "EP77_keybridge_script.en.v001.md",
+        # DRY RUN 2026-08-24: 358 chunks / 5,070 extractor words. 5070 / 178.4 * 60 = 1705.2 s.
+        # DELIVERED 2026-08-25: made=159 skipped=199 failed=0, speech 1509.3 s = 201.6 wpm
+        # whole-script (ACT_1 measured 205.1, ACT_3 195.5 -- the blend landed between them).
+        # Film projects ~1633 s (27:13) with gaps and endcard: under the [1740, 1920] band,
+        # inside the owner's 20:00 floor of 2026-08-25 (see block note above).
+        "design_speech_seconds": 1509.3,
+        "sections": SECTION_ORDER_V3,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-078-colgan": {
+        "planning": "EP78_colgan_script.en.v002.md",
+        # DRY RUN 2026-08-24: 394 chunks / 4,759 extractor words. 4759 / 178.4 * 60 = 1600.6 s.
+        # Still PROVISIONAL until --measure-section runs; see block note.
+        "design_speech_seconds": 1600.6,
+        "sections": SECTION_ORDER_V3,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-079-alaska261": {
+        "planning": "EP79_alaska261_script.en.v001.md",
+        # DRY RUN 2026-08-24: 352 chunks / 4,848 extractor words. 4848 / 178.4 * 60 = 1630.5 s.
+        # Still PROVISIONAL until --measure-section runs; see block note.
+        "design_speech_seconds": 1630.5,
+        "sections": SECTION_ORDER_V3,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-080-concordia": {
+        "planning": "EP80_concordia_script.en.v001.md",
+        # DRY RUN 2026-08-24: 388 chunks / 5,117 extractor words. 5117 / 178.4 * 60 = 1721.0 s.
+        # Still PROVISIONAL until --measure-section runs; see block note.
+        "design_speech_seconds": 1721.0,
+        "sections": SECTION_ORDER_V3,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-081-station": {
+        "planning": "EP81_station_script.en.v001.md",
+        # DRY RUN 2026-08-24: 323 chunks / 4,757 extractor words. 4757 / 178.4 * 60 = 1599.9 s.
+        # Still PROVISIONAL until --measure-section runs; see block note.
+        "design_speech_seconds": 1599.9,
+        "sections": SECTION_ORDER_V3,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-082-valdez": {
+        "planning": "EP82_valdez_script.en.v001.md",
+        # DRY RUN 2026-08-24: 341 chunks / 4,710 extractor words. 4710 / 178.4 * 60 = 1584.1 s.
+        # RUNTIME WATCH: 1584.1 s speech + ~113 s gaps + 9 s endcard projects ~1706 s (28:26),
+        # UNDER runtime_seconds [1740, 1920] by ~34 s at the modelled rate.
+        # OWNER APPROVED 2026-08-25 ('28:26でもいいよ') -- recorded as APR-0001 in
+        # episodes/PD-2026-082-valdez/approvals/. Do NOT pad the script or stretch gaps to
+        # reach the band; the declared spec value is unchanged (rule 4).
+        # Still PROVISIONAL until --measure-section runs; see block note.
+        "design_speech_seconds": 1584.1,
+        "sections": SECTION_ORDER_V3,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
 }
 
 GAP_BEAT, GAP_SECTION = 0.30, 1.8          # EP52-shipped defaults
@@ -804,6 +883,13 @@ def build_chunks(ep: str, md: str) -> list[dict]:
                 chunks[-1]["silence_after_seconds"] = ev[2]
             continue
         _, section, para = ev
+        # EP77+ (2026-08-25): the v3 template cites INLINE at the end of narration lines --
+        # "The lane opens. <!-- KB-004 -->". HTML_COMMENT above only skips comments that own
+        # a whole line, so these reached spoken_text, inflated the word/char counts by ~7%
+        # (EP77: 5,070 counted vs 4,698 actually spoken) and were paid for as TTS characters.
+        # ElevenLabs happened to read nothing for them (verified against the whisper
+        # transcript), but paying for luck is not a pipeline.
+        para = re.sub(r"<!--.*?-->", " ", para)
         for sent in split_sentences(para):
             n += 1
             cid = f"VC-{n:04d}"

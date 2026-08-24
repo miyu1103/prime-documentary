@@ -13,7 +13,11 @@
   "era_note": "Nantes and Lac-Megantic, Quebec, 2012-2018; centre of gravity 22:50 on 5 July 2013 to 01:15 on 6 July 2013. Per episode_spec forbidden_subjects, no victims, no funerals, no movie explosions, no steam or passenger trains, no US flags or highway signs. Per forbidden_claims, no Short blames the three acquitted men or names them (none is named or described), none says a second crew member or two-person operation would have prevented it, the seven applied hand brakes are always given against the investigation's seventeen-to-twenty-six range and the railway's own nine (never one figure alone), no deliberate mislabelling is asserted, and every figure spoken is a verified script sentence backed by the FACTS_LEDGER.",
   "plate_pool_note": "157 plate files on disk at remotion/public/lacmegantic/img (L121/L122/L125/L128/L132 absent). Subjects from the episode's own Codex plate table: the hand-brake wheels L036-L041, the gauges L068-L070, the securement test L043-L048, the fire at Nantes L056-L067, the breached cars L086-L089, the paper world L091-L104. Every plate below verified present on disk; no plate is used by more than one Short.",
   "shorts_existing": [],
-  "shorts_to_author": ["short304", "short305", "short306"],
+  "shorts_to_author": [
+    "short304",
+    "short305",
+    "short306"
+  ],
   "existing_angles_do_not_repeat": {},
   "shorts": [
     {
@@ -28,35 +32,32 @@
         {
           "id": "L1",
           "text": "This was not a man skipping a check. The check was done. It was the check itself that could not fail.",
-          "delivery": "building",
+          "delivery": "intense",
           "source_lines": [
             "This was not a man skipping a check.",
             "The check was done.",
             "It was the check itself that could not fail."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L2",
           "text": "A parked train is held by two different things. The first is the air brake, which needs a running engine. The second is the hand brake.",
-          "delivery": "calm",
+          "delivery": "building",
           "source_lines": [
             "A parked train is held by two different things, and the difference between them is the whole of this film.",
             "The first is the air brake.",
             "That pressure is made by a compressor, and the compressor is driven by a running locomotive engine.",
             "The second is the hand brake."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L3",
           "text": "Hand brakes were applied to seven, out of a train of seventy-eight vehicles. The railway's own minimum, by the railway's own arithmetic, was nine.",
-          "delivery": "calm",
+          "delivery": "building",
           "source_lines": [
             "Seven, out of a train of seventy-eight vehicles.",
             "The railway's own minimum, by the railway's own arithmetic, was nine."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L4",
@@ -64,8 +65,7 @@
           "delivery": "building",
           "source_lines": [
             "And the investigation, working out what it would actually have taken to hold ten thousand tons on that grade with no air, concluded that the real number was a minimum of seventeen, and possibly as many as twenty-six."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L5",
@@ -73,8 +73,7 @@
           "delivery": "calm",
           "source_lines": [
             "But none of that was left to judgement, because there was a test."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L6",
@@ -84,8 +83,7 @@
             "The test was performed.",
             "It was performed with the independent brakes still active.",
             "So the thing holding the train during the test was not the thing being tested."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L7",
@@ -95,38 +93,154 @@
             "The train held.",
             "Of course it held.",
             "And because it held, nobody in that yard had any way of knowing that seven hand brakes were not enough."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L8",
           "text": "At the end of it, forty-seven people were dead, and eighteen separate things had gone wrong.",
-          "delivery": "intense",
+          "delivery": "calm",
           "source_lines": [
             "At the end of it, forty-seven people were dead, and eighteen separate things had gone wrong."
-          ],
-          "claims": ["LM"]
+          ]
         }
       ],
       "plates": [
-        {"n": 1, "role": "hook", "line": "L1", "subject": "a hand-brake wheel on a tank car end platform, three-quarter", "source": "REUSE", "source_plate": "L036"},
-        {"n": 2, "role": "hook", "line": "L1", "subject": "the standing train from the side, still, at night, absolutely still", "source": "REUSE", "source_plate": "L048"},
-        {"n": 3, "role": "hook", "line": "L2", "subject": "the brake stand in a locomotive cab: two handles, gauges above", "source": "REUSE", "source_plate": "L043"},
-        {"n": 4, "role": "hook", "line": "L2", "subject": "a round brass-rimmed air pressure gauge on a locomotive console", "source": "REUSE", "source_plate": "L044"},
-        {"n": 5, "role": "body", "line": "L3", "subject": "two hands gripping a hand-brake wheel and turning it", "source": "REUSE", "source_plate": "L039"},
-        {"n": 6, "role": "body", "line": "L3", "subject": "the same wheel from directly above, the chain and rod visible", "source": "REUSE", "source_plate": "L037"},
-        {"n": 7, "role": "body", "line": "L4", "subject": "a hand-brake wheel in the extreme foreground, the line of cars beyond", "source": "REUSE", "source_plate": "L038"},
-        {"n": 8, "role": "body", "line": "L5", "subject": "a plain ring-bound operating manual lying open on a desk", "source": "REUSE", "source_plate": "L045"},
-        {"n": 9, "role": "body", "line": "L6", "subject": "close on couplers between two cars with the slack run out", "source": "REUSE", "source_plate": "L047"},
-        {"n": 10, "role": "body", "line": "L6", "subject": "close on a locomotive control stand: throttle lever, reverser, brake handles", "source": "REUSE", "source_plate": "L026"},
-        {"n": 11, "role": "body", "line": "L7", "subject": "a locomotive consist standing still on the main track at night", "source": "REUSE", "source_plate": "L033"},
-        {"n": 12, "role": "body", "line": "L7", "subject": "a figure walking away along the ballast beside a line of tank cars", "source": "REUSE", "source_plate": "L041"},
-        {"n": 13, "role": "close", "line": "L8", "subject": "a line of black tank cars receding into darkness", "source": "REUSE", "source_plate": "L005"},
-        {"n": 14, "role": "close", "line": "L8", "subject": "a small town at night seen from a low hill above it", "source": "REUSE", "source_plate": "L006"}
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a hand-brake wheel on a tank car end platform, three-quarter",
+          "source": "REUSE",
+          "source_plate": "L036"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "the standing train from the side, still, at night, absolutely still",
+          "source": "REUSE",
+          "source_plate": "L048"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "the brake stand in a locomotive cab: two handles, gauges above",
+          "source": "REUSE",
+          "source_plate": "L043"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a round brass-rimmed air pressure gauge on a locomotive console",
+          "source": "REUSE",
+          "source_plate": "L044"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "two hands gripping a hand-brake wheel and turning it",
+          "source": "REUSE",
+          "source_plate": "L039"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "the same wheel from directly above, the chain and rod visible",
+          "source": "REUSE",
+          "source_plate": "L037"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a hand-brake wheel in the extreme foreground, the line of cars beyond",
+          "source": "REUSE",
+          "source_plate": "L038"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L5",
+          "subject": "a plain ring-bound operating manual lying open on a desk",
+          "source": "REUSE",
+          "source_plate": "L045"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L6",
+          "subject": "close on couplers between two cars with the slack run out",
+          "source": "REUSE",
+          "source_plate": "L047"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "close on a locomotive control stand: throttle lever, reverser, brake handles",
+          "source": "REUSE",
+          "source_plate": "L026"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "a locomotive consist standing still on the main track at night",
+          "source": "REUSE",
+          "source_plate": "L033"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a figure walking away along the ballast beside a line of tank cars",
+          "source": "REUSE",
+          "source_plate": "L041"
+        },
+        {
+          "n": 13,
+          "role": "close",
+          "line": "L8",
+          "subject": "a line of black tank cars receding into darkness",
+          "source": "REUSE",
+          "source_plate": "L005"
+        },
+        {
+          "n": 14,
+          "role": "close",
+          "line": "L8",
+          "subject": "a small town at night seen from a low hill above it",
+          "source": "REUSE",
+          "source_plate": "L006"
+        }
       ],
       "kinetic_beats": [
-        {"line": "L6", "anchor": "not the thing being tested", "suffix": "not_tested", "words": ["NOT THE THING", "BEING TESTED"], "style": "punch", "seconds": 2.2},
-        {"line": "L7", "anchor": "seven hand brakes", "suffix": "seven_brakes", "words": ["SEVEN", "HAND BRAKES"], "style": "punch", "seconds": 2.4}
+        {
+          "line": "L6",
+          "anchor": "not the thing being tested",
+          "suffix": "not_tested",
+          "words": [
+            "NOT THE THING",
+            "BEING TESTED"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L7",
+          "anchor": "seven hand brakes",
+          "suffix": "seven_brakes",
+          "words": [
+            "SEVEN",
+            "HAND BRAKES"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
       ]
     },
     {
@@ -141,32 +255,29 @@
         {
           "id": "L1",
           "text": "Before the investigation reached any question of who did what, it looked at the tank cars, and what it found there is its own kind of answer.",
-          "delivery": "building",
+          "delivery": "intense",
           "source_lines": [
             "Before the investigation reached any question of who did what, it looked at the tank cars, and what it found there is its own kind of answer."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L2",
           "text": "All sixty-three of the derailed cars had been built to a single specification. Seventy-eight per cent of them were less than five years old.",
-          "delivery": "calm",
+          "delivery": "building",
           "source_lines": [
             "All sixty-three of the derailed cars had been built to a single specification, between nineteen eighty and twenty twelve.",
             "Seventy-eight per cent of them were less than five years old."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L3",
           "text": "Fifty-nine of the sixty-three were breached. Ninety-four per cent. Thirty-seven of them were holed through the shell.",
-          "delivery": "intense",
+          "delivery": "building",
           "source_lines": [
             "Fifty-nine of the sixty-three were breached.",
             "Ninety-four per cent.",
             "Thirty-seven of them were holed through the shell."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L4",
@@ -174,8 +285,7 @@
           "delivery": "calm",
           "source_lines": [
             "All sixty-three derailed tank cars were in compliance with the specification requirement that was in effect at the time of their approval and construction."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L5",
@@ -185,8 +295,7 @@
             "They were legal.",
             "They were current.",
             "Ninety-four per cent of them opened."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L6",
@@ -195,8 +304,7 @@
           "source_lines": [
             "Compliance is not a description of how strong something is.",
             "It is a description of what was asked of it, on the day it was approved."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L7",
@@ -204,38 +312,154 @@
           "delivery": "building",
           "source_lines": [
             "A car built in nineteen eighty and a car built in twenty twelve were both in compliance, because the requirement had not moved between them."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L8",
           "text": "The damage clearly indicated that product release could have been reduced had the tank car shells and heads been more impact-resistant.",
-          "delivery": "intense",
+          "delivery": "calm",
           "source_lines": [
             "The damage clearly indicated that product release could have been reduced had the tank car shells and heads been more impact-resistant."
-          ],
-          "claims": ["LM"]
+          ]
         }
       ],
       "plates": [
-        {"n": 1, "role": "hook", "line": "L1", "subject": "a section of black tank car steel with a large torn opening in the side", "source": "REUSE", "source_plate": "L087"},
-        {"n": 2, "role": "hook", "line": "L1", "subject": "the flat end of a tank car, punctured, the metal folded inward", "source": "REUSE", "source_plate": "L088"},
-        {"n": 3, "role": "hook", "line": "L2", "subject": "a very long line of black tank cars from a low three-quarter angle", "source": "REUSE", "source_plate": "L023"},
-        {"n": 4, "role": "hook", "line": "L2", "subject": "the top of a tank car - walkway, dome cover, handrail - from above", "source": "REUSE", "source_plate": "L022"},
-        {"n": 5, "role": "body", "line": "L3", "subject": "valve fittings sheared off the top of a tank car, lying on ballast", "source": "REUSE", "source_plate": "L089"},
-        {"n": 6, "role": "body", "line": "L3", "subject": "a wide flat view of cleared industrial ground with rail track", "source": "REUSE", "source_plate": "L086"},
-        {"n": 7, "role": "body", "line": "L4", "subject": "a single sheet of paper on a clipboard on a desk, a pen beside it", "source": "REUSE", "source_plate": "L097"},
-        {"n": 8, "role": "body", "line": "L4", "subject": "a plain thick bound document lying closed on a desk", "source": "REUSE", "source_plate": "L091"},
-        {"n": 9, "role": "body", "line": "L5", "subject": "a blank diamond-shaped placard bracket on the side of a tank car", "source": "REUSE", "source_plate": "L098"},
-        {"n": 10, "role": "body", "line": "L6", "subject": "a plain sheet of cream paper filling the frame", "source": "REUSE", "source_plate": "L092"},
-        {"n": 11, "role": "body", "line": "L7", "subject": "a ring binder open on a desk, pages blank", "source": "REUSE", "source_plate": "L095"},
-        {"n": 12, "role": "body", "line": "L7", "subject": "close on a knuckle coupler joining two tank cars, slack chains", "source": "REUSE", "source_plate": "L021"},
-        {"n": 13, "role": "close", "line": "L8", "subject": "a document storage box on a steel shelf, lid on, label area blank", "source": "REUSE", "source_plate": "L096"},
-        {"n": 14, "role": "close", "line": "L8", "subject": "a plain matte near-black surface with faint horizontal grain", "source": "REUSE", "source_plate": "L010"}
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a section of black tank car steel with a large torn opening in the side",
+          "source": "REUSE",
+          "source_plate": "L087"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "the flat end of a tank car, punctured, the metal folded inward",
+          "source": "REUSE",
+          "source_plate": "L088"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a very long line of black tank cars from a low three-quarter angle",
+          "source": "REUSE",
+          "source_plate": "L023"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "the top of a tank car - walkway, dome cover, handrail - from above",
+          "source": "REUSE",
+          "source_plate": "L022"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "valve fittings sheared off the top of a tank car, lying on ballast",
+          "source": "REUSE",
+          "source_plate": "L089"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "a wide flat view of cleared industrial ground with rail track",
+          "source": "REUSE",
+          "source_plate": "L086"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a single sheet of paper on a clipboard on a desk, a pen beside it",
+          "source": "REUSE",
+          "source_plate": "L097"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L4",
+          "subject": "a plain thick bound document lying closed on a desk",
+          "source": "REUSE",
+          "source_plate": "L091"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "a blank diamond-shaped placard bracket on the side of a tank car",
+          "source": "REUSE",
+          "source_plate": "L098"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a plain sheet of cream paper filling the frame",
+          "source": "REUSE",
+          "source_plate": "L092"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "a ring binder open on a desk, pages blank",
+          "source": "REUSE",
+          "source_plate": "L095"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "close on a knuckle coupler joining two tank cars, slack chains",
+          "source": "REUSE",
+          "source_plate": "L021"
+        },
+        {
+          "n": 13,
+          "role": "close",
+          "line": "L8",
+          "subject": "a document storage box on a steel shelf, lid on, label area blank",
+          "source": "REUSE",
+          "source_plate": "L096"
+        },
+        {
+          "n": 14,
+          "role": "close",
+          "line": "L8",
+          "subject": "a plain matte near-black surface with faint horizontal grain",
+          "source": "REUSE",
+          "source_plate": "L010"
+        }
       ],
       "kinetic_beats": [
-        {"line": "L5", "anchor": "Ninety-four per cent", "suffix": "ninetyfour", "words": ["NINETY-FOUR", "PER CENT"], "style": "punch", "seconds": 2.2},
-        {"line": "L7", "anchor": "had not moved", "suffix": "not_moved", "words": ["HAD NOT", "MOVED"], "style": "punch", "seconds": 2.4}
+        {
+          "line": "L5",
+          "anchor": "Ninety-four per cent",
+          "suffix": "ninetyfour",
+          "words": [
+            "NINETY-FOUR",
+            "PER CENT"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L7",
+          "anchor": "had not moved",
+          "suffix": "not_moved",
+          "words": [
+            "HAD NOT",
+            "MOVED"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
       ]
     },
     {
@@ -250,21 +474,19 @@
         {
           "id": "L1",
           "text": "Shortly before midnight, in a village called Nantes, somebody looked at a parked locomotive and saw flames on the front of it.",
-          "delivery": "building",
+          "delivery": "intense",
           "source_lines": [
             "Shortly before midnight, in a village called Nantes, somebody looked at a parked locomotive and saw flames on the front of it."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L2",
           "text": "The firefighters who arrived did exactly what they were trained to do, and they did it correctly. The fire went out.",
-          "delivery": "calm",
+          "delivery": "building",
           "source_lines": [
             "The firefighters who arrived did exactly what they were trained to do, and they did it correctly.",
             "The fire went out."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L3",
@@ -272,8 +494,7 @@
           "delivery": "building",
           "source_lines": [
             "What nobody standing in that yard knew was that the engine they were about to switch off was the only thing holding seventy-two tank cars of crude oil on the hill above a sleeping town."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L4",
@@ -282,8 +503,7 @@
           "source_lines": [
             "No decision was documented, after the fire was extinguished, to move the train or to apply additional hand brakes.",
             "No decision."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L5",
@@ -291,8 +511,7 @@
           "delivery": "calm",
           "source_lines": [
             "The pressure holding a ten-thousand-ton train on a descending grade fell, slowly, in an empty yard, with nobody watching it, for about an hour and a half."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L6",
@@ -302,8 +521,7 @@
             "At fifty-eight minutes past midnight and twenty-one seconds, the train began to move.",
             "One mile an hour.",
             "There was no person."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L7",
@@ -311,38 +529,154 @@
           "delivery": "intense",
           "source_lines": [
             "Seventeen minutes later it was doing sixty-five miles an hour."
-          ],
-          "claims": ["LM"]
+          ]
         },
         {
           "id": "L8",
           "text": "Seven point two miles of descending grade, no driver, no brake that was coming back, and a town at the bottom.",
-          "delivery": "intense",
+          "delivery": "calm",
           "source_lines": [
             "Seven point two miles of descending grade, no driver, no brake that was coming back, and a town at the bottom."
-          ],
-          "claims": ["LM"]
+          ]
         }
       ],
       "plates": [
-        {"n": 1, "role": "hook", "line": "L1", "subject": "the front of a parked diesel locomotive seen from a distance, flame visible", "source": "REUSE", "source_plate": "L002"},
-        {"n": 2, "role": "hook", "line": "L1", "subject": "thick dark smoke pouring from the exhaust stack of a locomotive at night", "source": "REUSE", "source_plate": "L056"},
-        {"n": 3, "role": "hook", "line": "L2", "subject": "a rural volunteer fire truck on a gravel road at night, headlights", "source": "REUSE", "source_plate": "L059"},
-        {"n": 4, "role": "hook", "line": "L2", "subject": "macro of a red emergency fuel shut-off switch on the flank of a locomotive", "source": "REUSE", "source_plate": "L061"},
-        {"n": 5, "role": "body", "line": "L3", "subject": "steam and smoke rising where a fire has just been put out", "source": "REUSE", "source_plate": "L064"},
-        {"n": 6, "role": "body", "line": "L3", "subject": "the lit town seen from the track above it, the rails running toward it", "source": "REUSE", "source_plate": "L035"},
-        {"n": 7, "role": "body", "line": "L4", "subject": "tail lights of two vehicles receding down a gravel road at night", "source": "REUSE", "source_plate": "L065"},
-        {"n": 8, "role": "body", "line": "L4", "subject": "the yard entirely still, no vehicle, one floodlight, the train standing", "source": "REUSE", "source_plate": "L067"},
-        {"n": 9, "role": "body", "line": "L5", "subject": "the air pressure gauge, close, needle high", "source": "REUSE", "source_plate": "L068"},
-        {"n": 10, "role": "body", "line": "L5", "subject": "the same gauge, needle noticeably lower", "source": "REUSE", "source_plate": "L069"},
-        {"n": 11, "role": "body", "line": "L6", "subject": "extreme close on a freight car wheel on rail, the tread just beginning to move", "source": "REUSE", "source_plate": "L074"},
-        {"n": 12, "role": "body", "line": "L7", "subject": "the side of a moving train at night, blurred, one light streaking", "source": "REUSE", "source_plate": "L075"},
-        {"n": 13, "role": "close", "line": "L8", "subject": "a railway curve seen from outside it at night, the outer rail higher", "source": "REUSE", "source_plate": "L078"},
-        {"n": 14, "role": "close", "line": "L8", "subject": "the first houses beside the line, dark, seen from track level", "source": "REUSE", "source_plate": "L080"}
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "the front of a parked diesel locomotive seen from a distance, flame visible",
+          "source": "REUSE",
+          "source_plate": "L002"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "thick dark smoke pouring from the exhaust stack of a locomotive at night",
+          "source": "REUSE",
+          "source_plate": "L056"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a rural volunteer fire truck on a gravel road at night, headlights",
+          "source": "REUSE",
+          "source_plate": "L059"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "macro of a red emergency fuel shut-off switch on the flank of a locomotive",
+          "source": "REUSE",
+          "source_plate": "L061"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "steam and smoke rising where a fire has just been put out",
+          "source": "REUSE",
+          "source_plate": "L064"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "the lit town seen from the track above it, the rails running toward it",
+          "source": "REUSE",
+          "source_plate": "L035"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "tail lights of two vehicles receding down a gravel road at night",
+          "source": "REUSE",
+          "source_plate": "L065"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L4",
+          "subject": "the yard entirely still, no vehicle, one floodlight, the train standing",
+          "source": "REUSE",
+          "source_plate": "L067"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "the air pressure gauge, close, needle high",
+          "source": "REUSE",
+          "source_plate": "L068"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L5",
+          "subject": "the same gauge, needle noticeably lower",
+          "source": "REUSE",
+          "source_plate": "L069"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L6",
+          "subject": "extreme close on a freight car wheel on rail, the tread just beginning to move",
+          "source": "REUSE",
+          "source_plate": "L074"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "the side of a moving train at night, blurred, one light streaking",
+          "source": "REUSE",
+          "source_plate": "L075"
+        },
+        {
+          "n": 13,
+          "role": "close",
+          "line": "L8",
+          "subject": "a railway curve seen from outside it at night, the outer rail higher",
+          "source": "REUSE",
+          "source_plate": "L078"
+        },
+        {
+          "n": 14,
+          "role": "close",
+          "line": "L8",
+          "subject": "the first houses beside the line, dark, seen from track level",
+          "source": "REUSE",
+          "source_plate": "L080"
+        }
       ],
       "kinetic_beats": [
-        {"line": "L4", "anchor": "No decision", "suffix": "no_decision", "words": ["NO", "DECISION"], "style": "punch", "seconds": 2.2},
-        {"line": "L7", "anchor": "sixty-five miles an hour", "suffix": "sixtyfive", "words": ["SIXTY-FIVE", "MILES AN HOUR"], "style": "punch", "seconds": 2.4}
+        {
+          "line": "L4",
+          "anchor": "No decision",
+          "suffix": "no_decision",
+          "words": [
+            "NO",
+            "DECISION"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L7",
+          "anchor": "sixty-five miles an hour",
+          "suffix": "sixtyfive",
+          "words": [
+            "SIXTY-FIVE",
+            "MILES AN HOUR"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
       ]
     }
   ]

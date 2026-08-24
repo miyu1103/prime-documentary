@@ -79,7 +79,10 @@ def parse_srt(path: Path) -> list[dict]:
 
 
 def _last_word(s: str) -> str:
-    w = re.findall(r"[A-Za-z'’]+", s)
+    # Digits count as word characters: "...the winter of 1989" ends on "1989", not on "of".
+    # The letters-only pattern misread it and flagged a legitimate year-ending cue as a
+    # dangling function word (EP82, 2026-08-25).
+    w = re.findall(r"[A-Za-z0-9'’]+", s)
     return w[-1].lower() if w else ""
 
 

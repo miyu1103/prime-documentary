@@ -13,7 +13,11 @@
   "era_note": "Genoa, Italy, 1962-2026; centre of gravity 11:36 on 14 August 2018. Per episode_spec forbidden_subjects, no falling vehicle, no wreck, no victims, no rescue, no vigil, no memorial portrait, no US/UK street furniture, no postcard Italy. Per forbidden_claims, no Short names any defendant or states guilt flatly (the 16 July 2026 judgment is first instance and under appeal), no Short states a single agreed cause (two authoritative findings disagree), none says Morandi foresaw it or that the collapse was foreseen as fact, and every figure spoken is a verified script sentence backed by the FACTS_LEDGER. The register is concrete, steel strand, printed forms and empty boxes.",
   "plate_pool_note": "60 plate files on disk at remotion/public/morandi/img (many reviewed plates were consumed by the i2v/motion pipeline and are no longer present as PNGs; the blocklist episode taught that plate and clip share a stem, so only on-disk PNGs are named here). Subjects from the episode's own Codex plate table: decay macro V003/V004/V031-V044, the paper world V055-V093/V101-V116, the structure V007-V048. Every plate below verified present on disk; no plate is used by more than one Short.",
   "shorts_existing": [],
-  "shorts_to_author": ["short301", "short302", "short303"],
+  "shorts_to_author": [
+    "short301",
+    "short302",
+    "short303"
+  ],
   "existing_angles_do_not_repeat": {},
   "shorts": [
     {
@@ -28,31 +32,28 @@
         {
           "id": "L1",
           "text": "On the first of August 2012, under a motorway viaduct in Genoa, an inspection recorded a beam with the concrete gone, the cables showing, and some of the wires broken.",
-          "delivery": "building",
+          "delivery": "intense",
           "source_lines": [
             "On the first of August 2012, under a motorway viaduct in Genoa, an inspection recorded a beam with the concrete gone, the cables showing, and some of the wires broken."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L2",
           "text": "Then the form asked for a number. The number written in the box was forty.",
-          "delivery": "calm",
+          "delivery": "building",
           "source_lines": [
             "Then the form asked for a number.",
             "The number written in the box was forty."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L3",
           "text": "In the company's own manual, broken wires in the prestressing steel are a seventy. And a seventy means measures up to closing the road.",
-          "delivery": "intense",
+          "delivery": "building",
           "source_lines": [
             "In the company's own manual, broken wires in the prestressing steel are a seventy.",
             "And a seventy means measures up to closing the road."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L4",
@@ -60,8 +61,7 @@
           "delivery": "calm",
           "source_lines": [
             "There was a manual, written by the company, that said what each number meant and what each number obliged them to do."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L5",
@@ -70,8 +70,7 @@
           "source_lines": [
             "In December 2006, steel bars severed by a slab failure.",
             "Scored forty."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L6",
@@ -81,8 +80,7 @@
             "And in June 2013, inside the box girders, in the chambers you have to climb into: corroded cables.",
             "Scored fifty.",
             "It was found in 2013 and never repaired."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L7",
@@ -90,38 +88,154 @@
           "delivery": "intense",
           "source_lines": [
             "Broken wires in the prestressing steel is the manual's own example of a seventy."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L8",
           "text": "It meant that the only way to know was to cut into it, and that the easier thing was always to write a number in a box.",
-          "delivery": "intense",
+          "delivery": "calm",
           "source_lines": [
             "It meant that the only way to know was to cut into it, and that the easier thing was always to write a number in a box."
-          ],
-          "claims": ["MO"]
+          ]
         }
       ],
       "plates": [
-        {"n": 1, "role": "hook", "line": "L1", "subject": "close on a concrete beam where the cover has broken away, rusted steel showing", "source": "REUSE", "source_plate": "V003"},
-        {"n": 2, "role": "hook", "line": "L1", "subject": "macro of a bundle of high-tensile steel wires inside broken concrete", "source": "REUSE", "source_plate": "V004"},
-        {"n": 3, "role": "hook", "line": "L2", "subject": "a hand holding a ballpoint pen above one empty ruled box on a form", "source": "REUSE", "source_plate": "V006"},
-        {"n": 4, "role": "hook", "line": "L2", "subject": "extreme close on one empty ruled box on a printed inspection form", "source": "REUSE", "source_plate": "V057"},
-        {"n": 5, "role": "body", "line": "L3", "subject": "a plain ring-bound technical manual lying open on a laminate desk", "source": "REUSE", "source_plate": "V055"},
-        {"n": 6, "role": "body", "line": "L3", "subject": "a printed table on a plain sheet: ruled rows and columns", "source": "REUSE", "source_plate": "V056"},
-        {"n": 7, "role": "body", "line": "L4", "subject": "a clipboard carrying a blank ruled form, hooked over a rail", "source": "REUSE", "source_plate": "V058"},
-        {"n": 8, "role": "body", "line": "L4", "subject": "a printed form with a large empty ruled observations area", "source": "REUSE", "source_plate": "V070"},
-        {"n": 9, "role": "body", "line": "L5", "subject": "close on a bundle of prestressing strands inside broken concrete, severed", "source": "REUSE", "source_plate": "V043"},
-        {"n": 10, "role": "body", "line": "L6", "subject": "close inside a concrete box girder chamber - prestressing ducts", "source": "REUSE", "source_plate": "V038"},
-        {"n": 11, "role": "body", "line": "L6", "subject": "close on prestressing strands gone visibly slack inside a broken duct", "source": "REUSE", "source_plate": "V044"},
-        {"n": 12, "role": "body", "line": "L7", "subject": "macro of seven-wire steel strand, rust-brown and deeply pitted", "source": "REUSE", "source_plate": "V032"},
-        {"n": 13, "role": "close", "line": "L8", "subject": "a blank graph grid printed on a plain sheet, axes ruled, no line drawn", "source": "REUSE", "source_plate": "V073"},
-        {"n": 14, "role": "close", "line": "L8", "subject": "a rubber date stamp lying on an ink pad beside a blank document", "source": "REUSE", "source_plate": "V101"}
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "close on a concrete beam where the cover has broken away, rusted steel showing",
+          "source": "REUSE",
+          "source_plate": "V003"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "macro of a bundle of high-tensile steel wires inside broken concrete",
+          "source": "REUSE",
+          "source_plate": "V004"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a hand holding a ballpoint pen above one empty ruled box on a form",
+          "source": "REUSE",
+          "source_plate": "V006"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "extreme close on one empty ruled box on a printed inspection form",
+          "source": "REUSE",
+          "source_plate": "V057"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a plain ring-bound technical manual lying open on a laminate desk",
+          "source": "REUSE",
+          "source_plate": "V055"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "a printed table on a plain sheet: ruled rows and columns",
+          "source": "REUSE",
+          "source_plate": "V056"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a clipboard carrying a blank ruled form, hooked over a rail",
+          "source": "REUSE",
+          "source_plate": "V058"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L4",
+          "subject": "a printed form with a large empty ruled observations area",
+          "source": "REUSE",
+          "source_plate": "V070"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "close on a bundle of prestressing strands inside broken concrete, severed",
+          "source": "REUSE",
+          "source_plate": "V043"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "close inside a concrete box girder chamber - prestressing ducts",
+          "source": "REUSE",
+          "source_plate": "V038"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L6",
+          "subject": "close on prestressing strands gone visibly slack inside a broken duct",
+          "source": "REUSE",
+          "source_plate": "V044"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "macro of seven-wire steel strand, rust-brown and deeply pitted",
+          "source": "REUSE",
+          "source_plate": "V032"
+        },
+        {
+          "n": 13,
+          "role": "close",
+          "line": "L8",
+          "subject": "a blank graph grid printed on a plain sheet, axes ruled, no line drawn",
+          "source": "REUSE",
+          "source_plate": "V073"
+        },
+        {
+          "n": 14,
+          "role": "close",
+          "line": "L8",
+          "subject": "a rubber date stamp lying on an ink pad beside a blank document",
+          "source": "REUSE",
+          "source_plate": "V101"
+        }
       ],
       "kinetic_beats": [
-        {"line": "L3", "anchor": "closing the road", "suffix": "close_the_road", "words": ["SEVENTY", "CLOSE THE ROAD"], "style": "punch", "seconds": 2.2},
-        {"line": "L8", "anchor": "a number in a box", "suffix": "number_in_box", "words": ["A NUMBER", "IN A BOX"], "style": "punch", "seconds": 2.4}
+        {
+          "line": "L3",
+          "anchor": "closing the road",
+          "suffix": "close_the_road",
+          "words": [
+            "SEVENTY",
+            "CLOSE THE ROAD"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L8",
+          "anchor": "a number in a box",
+          "suffix": "number_in_box",
+          "words": [
+            "A NUMBER",
+            "IN A BOX"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
       ]
     },
     {
@@ -136,29 +250,26 @@
         {
           "id": "L1",
           "text": "This is a story about a shell of concrete, a printed form, and a document that was owed by law and never written.",
-          "delivery": "building",
+          "delivery": "intense",
           "source_lines": [
             "This is a story about a shell of concrete, a printed form, and a document that was owed by law and never written."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L2",
           "text": "In 2003 Italy issued an order requiring the owners of strategic structures to carry out a formal assessment of their safety.",
-          "delivery": "calm",
+          "delivery": "building",
           "source_lines": [
             "In 2003 Italy issued an order requiring the owners of strategic structures — the ones that matter in a civil-protection emergency, or whose collapse would be serious — to carry out a formal assessment of their safety."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L3",
           "text": "For the Polcevera viaduct, the deadline was March 2013.",
-          "delivery": "calm",
+          "delivery": "building",
           "source_lines": [
             "For the Polcevera viaduct, the deadline was March 2013."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L4",
@@ -167,8 +278,7 @@
           "source_lines": [
             "In July 2014 the ministry's supervision directorate wrote to the motorway concession companies asking where they had got to.",
             "The company replied that same month with assurances that the safety assessments were about to be completed."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L5",
@@ -176,8 +286,7 @@
           "delivery": "intense",
           "source_lines": [
             "On the twenty-third of June 2017, in a numbered letter to the ministry, the company stated that for the Polcevera viaduct the assessment had been carried out."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L6",
@@ -185,8 +294,7 @@
           "delivery": "intense",
           "source_lines": [
             "In the documents requested and obtained by this Commission, that assessment had not, at the date of delivery of the present report, in fact been carried out."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L7",
@@ -194,38 +302,154 @@
           "delivery": "calm",
           "source_lines": [
             "From that assessment, if correctly carried out, would have come the best possible estimate of structural safety against the risk of collapse."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L8",
           "text": "For the Polcevera viaduct, no safety analysis and no seismic assessment of the viaduct was ever made.",
-          "delivery": "intense",
+          "delivery": "calm",
           "source_lines": [
             "for the Polcevera viaduct, no safety analysis and no seismic assessment of the viaduct was ever made."
-          ],
-          "claims": ["MO"]
+          ]
         }
       ],
       "plates": [
-        {"n": 1, "role": "hook", "line": "L1", "subject": "a single sheet of headed paper lying on a desk, an empty ruled area below", "source": "REUSE", "source_plate": "V084"},
-        {"n": 2, "role": "hook", "line": "L1", "subject": "a thick ring binder standing open on a desk, every page blank", "source": "REUSE", "source_plate": "V116"},
-        {"n": 3, "role": "hook", "line": "L2", "subject": "a printed form ruled into many small empty fields", "source": "REUSE", "source_plate": "V086"},
-        {"n": 4, "role": "hook", "line": "L2", "subject": "a card index drawer pulled open, dividers standing upright, empty", "source": "REUSE", "source_plate": "V081"},
-        {"n": 5, "role": "body", "line": "L3", "subject": "a plain wall calendar in an office, its grid ruled, no dates", "source": "REUSE", "source_plate": "V115"},
-        {"n": 6, "role": "body", "line": "L4", "subject": "an outgoing post tray with three plain envelopes in it", "source": "REUSE", "source_plate": "V102"},
-        {"n": 7, "role": "body", "line": "L4", "subject": "a fax machine in a 2010s office, a curl of blank thermal paper", "source": "REUSE", "source_plate": "V085"},
-        {"n": 8, "role": "body", "line": "L5", "subject": "close on a blank ruled signature line at the foot of a plain sheet", "source": "REUSE", "source_plate": "V093"},
-        {"n": 9, "role": "body", "line": "L6", "subject": "two thick bound documents lying side by side on a table", "source": "REUSE", "source_plate": "V110"},
-        {"n": 10, "role": "body", "line": "L6", "subject": "a shelf of identical archive box files, every label blank", "source": "REUSE", "source_plate": "V083"},
-        {"n": 11, "role": "body", "line": "L7", "subject": "a bound calculation report open on a desk, its pages ruled and blank", "source": "REUSE", "source_plate": "V090"},
-        {"n": 12, "role": "body", "line": "L7", "subject": "close on one blank index tab standing above the others", "source": "REUSE", "source_plate": "V082"},
-        {"n": 13, "role": "close", "line": "L8", "subject": "close on the empty title block panel of a blank engineering drawing", "source": "REUSE", "source_plate": "V089"},
-        {"n": 14, "role": "close", "line": "L8", "subject": "a plain white ground with a single fine horizontal line ruled across it", "source": "REUSE", "source_plate": "V026"}
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a single sheet of headed paper lying on a desk, an empty ruled area below",
+          "source": "REUSE",
+          "source_plate": "V084"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a thick ring binder standing open on a desk, every page blank",
+          "source": "REUSE",
+          "source_plate": "V116"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a printed form ruled into many small empty fields",
+          "source": "REUSE",
+          "source_plate": "V086"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a card index drawer pulled open, dividers standing upright, empty",
+          "source": "REUSE",
+          "source_plate": "V081"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a plain wall calendar in an office, its grid ruled, no dates",
+          "source": "REUSE",
+          "source_plate": "V115"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L4",
+          "subject": "an outgoing post tray with three plain envelopes in it",
+          "source": "REUSE",
+          "source_plate": "V102"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a fax machine in a 2010s office, a curl of blank thermal paper",
+          "source": "REUSE",
+          "source_plate": "V085"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L5",
+          "subject": "close on a blank ruled signature line at the foot of a plain sheet",
+          "source": "REUSE",
+          "source_plate": "V093"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L6",
+          "subject": "two thick bound documents lying side by side on a table",
+          "source": "REUSE",
+          "source_plate": "V110"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a shelf of identical archive box files, every label blank",
+          "source": "REUSE",
+          "source_plate": "V083"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "a bound calculation report open on a desk, its pages ruled and blank",
+          "source": "REUSE",
+          "source_plate": "V090"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "close on one blank index tab standing above the others",
+          "source": "REUSE",
+          "source_plate": "V082"
+        },
+        {
+          "n": 13,
+          "role": "close",
+          "line": "L8",
+          "subject": "close on the empty title block panel of a blank engineering drawing",
+          "source": "REUSE",
+          "source_plate": "V089"
+        },
+        {
+          "n": 14,
+          "role": "close",
+          "line": "L8",
+          "subject": "a plain white ground with a single fine horizontal line ruled across it",
+          "source": "REUSE",
+          "source_plate": "V026"
+        }
       ],
       "kinetic_beats": [
-        {"line": "L5", "anchor": "had been carried out", "suffix": "carried_out", "words": ["CARRIED", "OUT"], "style": "punch", "seconds": 2.2},
-        {"line": "L8", "anchor": "no safety analysis", "suffix": "never_made", "words": ["NO ANALYSIS", "EVER MADE"], "style": "punch", "seconds": 2.4}
+        {
+          "line": "L5",
+          "anchor": "had been carried out",
+          "suffix": "carried_out",
+          "words": [
+            "CARRIED",
+            "OUT"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L8",
+          "anchor": "no safety analysis",
+          "suffix": "never_made",
+          "words": [
+            "NO ANALYSIS",
+            "EVER MADE"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
       ]
     },
     {
@@ -240,11 +464,10 @@
         {
           "id": "L1",
           "text": "The commission asked the company for everything it had spent on structural work on the whole viaduct, and totalled it.",
-          "delivery": "building",
+          "delivery": "intense",
           "source_lines": [
             "The commission asked the company for everything it had spent on structural work on the whole viaduct, and totalled it."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L2",
@@ -252,18 +475,16 @@
           "delivery": "building",
           "source_lines": [
             "From 1982 to 2018: twenty-four million, six hundred and ten thousand, five hundred euros."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L3",
           "text": "Ninety-eight per cent of that was spent before 1999 — the year the motorway company was privatised. After 1999, two per cent.",
-          "delivery": "intense",
+          "delivery": "building",
           "source_lines": [
             "Ninety-eight per cent of that was spent before 1999 — the year the motorway company was privatised.",
             "After 1999, two per cent."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L4",
@@ -272,8 +493,7 @@
           "source_lines": [
             "In the seventeen years to 1999, structural work on the Polcevera viaduct averaged one point three million euros a year.",
             "In the nineteen years after it, it averaged twenty-three thousand."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L5",
@@ -281,8 +501,7 @@
           "delivery": "calm",
           "source_lines": [
             "The whole list of structural works on that bridge, over thirty-six years, is seven lines long, and you can hear all of it."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L6",
@@ -294,8 +513,7 @@
             "2009 again: ninety-five thousand.",
             "2015: two hundred and eighty-eight thousand.",
             "That is the whole of it."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L7",
@@ -303,38 +521,154 @@
           "delivery": "calm",
           "source_lines": [
             "The commission drew the obvious conclusion, and it wrote it down in the language of the concession contract."
-          ],
-          "claims": ["MO"]
+          ]
         },
         {
           "id": "L8",
           "text": "Not doing simple ordinary maintenance today means wanting to do a great deal of extraordinary maintenance tomorrow, at certainly higher costs, with a mirror-image higher remunerativeness.",
-          "delivery": "intense",
+          "delivery": "calm",
           "source_lines": [
             "Not doing simple ordinary maintenance today means wanting to do a great deal of extraordinary maintenance tomorrow, at certainly higher costs, with a mirror-image higher remunerativeness."
-          ],
-          "claims": ["MO"]
+          ]
         }
       ],
       "plates": [
-        {"n": 1, "role": "hook", "line": "L1", "subject": "a plain ruled accounts ledger open on a desk, its columns empty", "source": "REUSE", "source_plate": "V075"},
-        {"n": 2, "role": "hook", "line": "L1", "subject": "a desk in a technical office: lamp, rolled drawings, a chair pushed back", "source": "REUSE", "source_plate": "V092"},
-        {"n": 3, "role": "hook", "line": "L2", "subject": "a concrete bridge tower ninety metres tall seen from below", "source": "REUSE", "source_plate": "V027"},
-        {"n": 4, "role": "hook", "line": "L2", "subject": "the four diagonal concrete stays of a cable-stayed bridge tower", "source": "REUSE", "source_plate": "V007"},
-        {"n": 5, "role": "body", "line": "L3", "subject": "a plain matte near-black surface with faint horizontal grain", "source": "REUSE", "source_plate": "V010"},
-        {"n": 6, "role": "body", "line": "L3", "subject": "a corroded steel bracket on the flank of a concrete bridge beam", "source": "REUSE", "source_plate": "V072"},
-        {"n": 7, "role": "body", "line": "L4", "subject": "a steel bridge bearing between pier head and deck, corroded", "source": "REUSE", "source_plate": "V064"},
-        {"n": 8, "role": "body", "line": "L4", "subject": "the base of a concrete bridge pier where it meets the ground, weeds", "source": "REUSE", "source_plate": "V069"},
-        {"n": 9, "role": "body", "line": "L5", "subject": "a stack of rolled engineering drawings standing in an office corner", "source": "REUSE", "source_plate": "V087"},
-        {"n": 10, "role": "body", "line": "L6", "subject": "a row of concrete core samples lying on a plank, some sound, some not", "source": "REUSE", "source_plate": "V041"},
-        {"n": 11, "role": "body", "line": "L6", "subject": "a rectangular access hatch cut into the underside of a concrete deck", "source": "REUSE", "source_plate": "V036"},
-        {"n": 12, "role": "body", "line": "L7", "subject": "a plain wooden lectern at the front of a meeting room", "source": "REUSE", "source_plate": "V097"},
-        {"n": 13, "role": "close", "line": "L8", "subject": "a plain public room with rows of chairs, one chair out of line", "source": "REUSE", "source_plate": "V114"},
-        {"n": 14, "role": "close", "line": "L8", "subject": "the barrier across the severed road, closer and held", "source": "REUSE", "source_plate": "V120"}
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a plain ruled accounts ledger open on a desk, its columns empty",
+          "source": "REUSE",
+          "source_plate": "V075"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a desk in a technical office: lamp, rolled drawings, a chair pushed back",
+          "source": "REUSE",
+          "source_plate": "V092"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a concrete bridge tower ninety metres tall seen from below",
+          "source": "REUSE",
+          "source_plate": "V027"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "the four diagonal concrete stays of a cable-stayed bridge tower",
+          "source": "REUSE",
+          "source_plate": "V007"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a plain matte near-black surface with faint horizontal grain",
+          "source": "REUSE",
+          "source_plate": "V010"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "a corroded steel bracket on the flank of a concrete bridge beam",
+          "source": "REUSE",
+          "source_plate": "V072"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a steel bridge bearing between pier head and deck, corroded",
+          "source": "REUSE",
+          "source_plate": "V064"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L4",
+          "subject": "the base of a concrete bridge pier where it meets the ground, weeds",
+          "source": "REUSE",
+          "source_plate": "V069"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "a stack of rolled engineering drawings standing in an office corner",
+          "source": "REUSE",
+          "source_plate": "V087"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a row of concrete core samples lying on a plank, some sound, some not",
+          "source": "REUSE",
+          "source_plate": "V041"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L6",
+          "subject": "a rectangular access hatch cut into the underside of a concrete deck",
+          "source": "REUSE",
+          "source_plate": "V036"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a plain wooden lectern at the front of a meeting room",
+          "source": "REUSE",
+          "source_plate": "V097"
+        },
+        {
+          "n": 13,
+          "role": "close",
+          "line": "L8",
+          "subject": "a plain public room with rows of chairs, one chair out of line",
+          "source": "REUSE",
+          "source_plate": "V114"
+        },
+        {
+          "n": 14,
+          "role": "close",
+          "line": "L8",
+          "subject": "the barrier across the severed road, closer and held",
+          "source": "REUSE",
+          "source_plate": "V120"
+        }
       ],
       "kinetic_beats": [
-        {"line": "L3", "anchor": "two per cent", "suffix": "two_percent", "words": ["TWO", "PER CENT"], "style": "punch", "seconds": 2.2},
-        {"line": "L4", "anchor": "twenty-three thousand", "suffix": "twentythree_k", "words": ["TWENTY-THREE", "THOUSAND"], "style": "punch", "seconds": 2.4}
+        {
+          "line": "L3",
+          "anchor": "two per cent",
+          "suffix": "two_percent",
+          "words": [
+            "TWO",
+            "PER CENT"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L4",
+          "anchor": "twenty-three thousand",
+          "suffix": "twentythree_k",
+          "words": [
+            "TWENTY-THREE",
+            "THOUSAND"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
       ]
     }
   ]

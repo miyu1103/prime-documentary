@@ -35,6 +35,38 @@ DATA = ROOT / "remotion" / "src" / "data"
 JOBS = ROOT / "runs" / "ae_jobs"          # After Effects job lists, one per Short
 
 
+def destination_title(design: dict) -> str:
+    """The long-form title for the CTA card, resolved rather than assumed.
+
+    A Short can be built before its long-form is booked, so the design carries
+    destination.title = null and this used to crash inside short_title() with
+    "object of type NoneType has no len()" -- a stack trace instead of a fact.
+    Falls back to the episode package: the booked metadata first, then the highest
+    title draft. Refuses loudly if the episode has neither.
+    """
+    t = (design.get("destination") or {}).get("title")
+    if t:
+        return t
+    pkg = ROOT / "episodes" / design["episode_id"] / "09_package"
+    for pattern, keys in (("youtube_meta*.json", ("title",)),
+                          ("_title_draft.v*.json", ("chosen", "selected", "title"))):
+        for path in sorted(pkg.glob(pattern), reverse=True):
+            data = json.loads(path.read_text(encoding="utf-8"))
+            cand = data
+            for k in keys:
+                if isinstance(cand, dict) and k in cand:
+                    cand = cand[k]
+            while isinstance(cand, list) and cand:
+                cand = cand[0]
+            if isinstance(cand, dict):
+                cand = cand.get("title") or cand.get("text")
+            if isinstance(cand, str) and cand.strip():
+                print(f"  CTA title from {path.name}: {cand[:60]}")
+                return cand
+    sys.exit(f"{design['episode_id']}: no destination title in the design and none in "
+             f"{pkg.relative_to(ROOT)} -- the CTA card would render empty")
+
+
 def short_title(t: str, cap: int = 38) -> str:
     """Trim to whole words. A title cut mid-word ("...pure waste and do") reads as a defect."""
     if len(t) <= cap:
@@ -434,7 +466,7 @@ export const {up}: ShortData = {{
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/{sid}/{sid}_ctathumb.jpg',
-  ctaLongTitle: {json.dumps(short_title(design["destination"]["title"]))},
+  ctaLongTitle: {json.dumps(short_title(destination_title(design)))},
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
