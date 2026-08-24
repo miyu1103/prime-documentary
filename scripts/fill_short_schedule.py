@@ -64,6 +64,29 @@ UPLOAD_UNITS = yt_quota.UNITS.get("videos.insert", 1600)
 # LONG-FORM, because four Shorts plus one long-form is five uploads and that is the arrangement
 # that fits. What must be capped is Shorts specifically, which only this script counts.
 DAILY_SHORTS_CAP = 4
+PAUSE_FILE = ROOT / "config" / "shorts_pause.v001.json"
+
+
+def paused() -> tuple[bool, str]:
+    """A dated pause that expires on its own, rather than a disabled task somebody must remember.
+
+    Turning off PD-ShortsPush works and then depends on a human turning it back on. This file
+    carries the date it stops applying and the reason it was set, so a run during the pause
+    prints WHY it is doing nothing, and the run after it needs no action at all.
+    """
+    if not PAUSE_FILE.exists():
+        return False, ""
+    try:
+        d = json.loads(PAUSE_FILE.read_text(encoding="utf-8"))
+    except Exception:  # noqa: BLE001 - an unreadable pause file is not a pause
+        return False, ""
+    until = str(d.get("paused_until", ""))
+    if not until:
+        return False, ""
+    today = dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).strftime("%Y-%m-%d")
+    if today >= until:
+        return False, ""
+    return True, f"paused until {until}: {d.get('reason', 'no reason recorded')}"
 
 
 def uploaded_today() -> int:
@@ -170,6 +193,11 @@ def main() -> int:
     todo = backlog()
     usable = max(0, yt_quota.remaining() - a.reserve)
     budget_allows = usable // UPLOAD_UNITS
+    is_paused, why = paused()
+    if is_paused and not a.over_cap:
+        print(f"[fill] {why}")
+        print("[fill] nothing uploaded. --over-cap overrides, after telling the long-form thread.")
+        return 0
     done = uploaded_today()
     room = max(0, DAILY_SHORTS_CAP - done)
     if a.over_cap:
