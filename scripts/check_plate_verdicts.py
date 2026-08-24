@@ -262,6 +262,25 @@ def _find_as_motion(plate_dir: Path, pid: str) -> Path | None:
     return None
 
 
+def _find_still_after_motion(plate_dir: Path, pid: str) -> Path | None:
+    """The judged STILL, after the finisher has moved it out of img/.
+
+    A plate converted to i2v leaves img/ and the finisher retires the source PNG to
+    img_unused/. The verdict's sha256 is the PNG's, so it can only be checked against the
+    PNG -- hashing the .mp4 instead reported all 60 of EP76 morandi's converted plates as
+    REGENERATED. Returns None when no still survives, in which case the bytes simply go
+    unverified rather than being reported as a change nobody made.
+    """
+    name = Path(pid).name
+    for d in (plate_dir.parent / f"{plate_dir.name}_unused",
+              plate_dir.parent / "img_unused",
+              plate_dir.parent / "img"):
+        q = d / name
+        if q.is_file():
+            return q
+    return None
+
+
 def resolve_plate_dir(slug: str) -> tuple[Path, str]:
     """Render truth first, delivery second. Returns (dir, which).
 
@@ -622,6 +641,16 @@ def plate_state(slug: str, spec: dict | None, plate_dir: Path | None = None,
                     missing_file.append(pid)
                 continue
             on_disk[pid] = p
+            # ...but the .mp4 IS A DIFFERENT FILE, so its sha256 can never match the verdict,
+            # which was bound to the PNG. Hashing it reported all 60 of EP76 morandi's
+            # i2v-converted plates as REGENERATED (2026-08-25) and sent the build to re-review
+            # 60 pictures that had not changed. The still is the thing that was judged: hash it
+            # where it now lives (img_unused/ after the finisher retires it), and only say
+            # nothing about the bytes when the still is genuinely gone.
+            still = _find_still_after_motion(plate_dir, pid)
+            if still is None:
+                continue
+            p = still
         want = str(e.get("sha256") or "").strip().lower()
         if not want:
             unbound.append(pid)
