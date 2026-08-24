@@ -42,6 +42,44 @@ TRUTH = ROOT / "runs" / "shorts_thumbs" / "yt_scheduled.v001.json"
 UPLOAD_UNITS = yt_quota.UNITS.get("videos.insert", 1600)
 
 
+# Four, not five. Owner's decision 2026-08-24, and the arithmetic that forced it:
+#
+#   daily allowance                                    10,000
+#   one long-form  (videos.insert 1,600 + thumb 50)     1,650
+#   four Shorts    (1,600 + 50 each)                    6,600
+#   pinned comments, ~6 x 50                              300
+#   reads (videos.list, commentThreads.list, audits)      ~150
+#   ------------------------------------------------------------
+#   total                                               8,700   margin 1,300
+#
+# Five Shorts makes that 10,350 -- over the allowance before the long-form is attempted. On
+# 2026-08-24 that is exactly what happened: measured at 17:45, videos.insert read 5 calls and
+# 8,000 units, spent 9,885 of 10,000, 115 left against the 1,650 a long-form needs. EP71
+# oroville was finished that morning -- master rendered, 61 shipped-frame sheets read, thumbnail
+# picked, packaging at zero unsupported claims, dry run green -- and could not be uploaded. Six
+# days of the long-form calendar moved by one day.
+#
+# The cap lives HERE and not in yt_quota.assert_budget, which is where the other thread
+# suggested it. A guard that refuses "the fifth upload of the Pacific day" would refuse the
+# LONG-FORM, because four Shorts plus one long-form is five uploads and that is the arrangement
+# that fits. What must be capped is Shorts specifically, which only this script counts.
+DAILY_SHORTS_CAP = 4
+
+
+def uploaded_today() -> int:
+    """Shorts this Pacific day, from the quota ledger rather than from this run's memory.
+
+    PD-ShortsPush and PD-ShortsPush-Retry can both run in one day. Counting only what this
+    process has done would let the retry add another four on top of the four already sent.
+    """
+    try:
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import yt_quota
+        return int(yt_quota.calls_today().get("videos.insert", 0))
+    except Exception:  # noqa: BLE001 - no ledger is a reason to be careful, not to stop
+        return 0
+
+
 def backlog() -> list[str]:
     """Shorts that are rendered and packaged but have no video on the channel."""
     src = (ROOT / "scripts" / "schedule_short_youtube.py").read_text(encoding="utf-8")
@@ -90,7 +128,10 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--reserve", type=int, default=0,
                     help="units to leave untouched for the episode upload chain")
-    ap.add_argument("--max", type=int, default=99)
+    ap.add_argument("--max", type=int, default=DAILY_SHORTS_CAP,
+                    help=f"Shorts to upload this run (default {DAILY_SHORTS_CAP}, the daily cap)")
+    ap.add_argument("--over-cap", action="store_true",
+                    help="exceed the daily Shorts cap; tell the long-form thread FIRST")
     a = ap.parse_args()
     if not a.apply and not a.dry_run:
         ap.error("pass --apply or --dry-run")
@@ -129,9 +170,18 @@ def main() -> int:
     todo = backlog()
     usable = max(0, yt_quota.remaining() - a.reserve)
     budget_allows = usable // UPLOAD_UNITS
-    n = min(len(todo), budget_allows, a.max)
+    done = uploaded_today()
+    room = max(0, DAILY_SHORTS_CAP - done)
+    if a.over_cap:
+        room = a.max
+    n = min(len(todo), budget_allows, a.max, room)
     print(f"backlog={len(todo)}  quota remaining={yt_quota.remaining()} "
-          f"(reserve {a.reserve}) -> {budget_allows} uploads  doing {n}")
+          f"(reserve {a.reserve}) -> {budget_allows} uploads  "
+          f"cap {DAILY_SHORTS_CAP}/day, {done} already today -> room {room}  doing {n}")
+    if not room and not a.over_cap:
+        print(f"[fill] the daily cap of {DAILY_SHORTS_CAP} Shorts is already used. The fifth "
+              f"Short costs the long-form its upload -- on 2026-08-24 it did. If today really "
+              f"needs five, tell the long-form thread first, then pass --over-cap.")
     if not n:
         return 0
 

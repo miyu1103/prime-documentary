@@ -93,6 +93,16 @@ def spent_today() -> int:
     return _load().get(_today(), {}).get("total", 0)
 
 
+def calls_today() -> dict[str, int]:
+    """Calls per operation for the current Pacific day.
+
+    Added 2026-08-24 so the Shorts lane can count its own uploads across processes: the daily
+    push and its retry task can both run in one day, and a count held in one run's memory would
+    let the second send four more on top of the first four.
+    """
+    return dict(_load().get(_today(), {}).get("ops", {}))
+
+
 def remaining() -> int:
     return max(0, DAILY_LIMIT - spent_today())
 

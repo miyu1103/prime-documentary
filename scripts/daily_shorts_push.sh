@@ -13,6 +13,9 @@
 #   5. re-read and report - never finish on a self-declared success
 #
 # --reserve holds units back when an episode upload is also due today (1650 per episode).
+# The COUNT is capped separately, at four, inside fill_short_schedule.py (DAILY_SHORTS_CAP):
+# on 2026-08-24 five Shorts spent 9,885 of 10,000 and EP71 oroville, finished and green that
+# morning, could not be uploaded. Four Shorts + one long-form + comments + reads = 8,700.
 set -uo pipefail
 cd "$(dirname "$0")/.." || exit 1
 RESERVE="${1:-0}"
