@@ -426,6 +426,15 @@ def co_occurrence_ok(theme: str, text: str) -> bool:
     return all(any(term_hits(w, low) for w in group) for group in rule["all"])
 
 
+# IA uploads self-label licenses; a franchise title with licenseurl=publicdomain is a
+# rights trap, not a licence (2026-08-25: Sesame Street arrived on the shelf as "pd").
+IA_TITLE_DENY = [
+    "sesame", "muppet", "disney", "mickey mouse", "looney", "warner bros", "pokemon",
+    "star wars", "star trek", "marvel", "batman", "superman", "simpsons", "spongebob",
+    "family guy", "south park", "anime", "nintendo", "playstation", "xbox",
+    "new world next week", "conspiracy", "truther", "flat earth", "qanon", "illuminati",
+]
+
 PHRASE_ONLY_THEMES = {
     "night_road_lamp", "window_interior_light", "clock_and_waiting",
     "corridor_and_stairs", "anonymous_crowd",
@@ -1559,6 +1568,9 @@ def src_ia(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
             ident = doc["identifier"]
             if ledger.seen("ia", ident):
                 continue
+            _t = (str(doc.get("title", "") or "") + " " + ident).lower()
+            if any(b in _t for b in IA_TITLE_DENY):
+                continue
             try:
                 md = NET.get_json(f"https://archive.org/metadata/{ident}")
             except Exception:
@@ -1779,7 +1791,7 @@ def src_nasa(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
             break
         try:
             data = NET.get_json("https://images-api.nasa.gov/search", params={
-                "q": q, "media_type": "image,video", "page": PASS, "page_size": 50})
+                "q": q, "media_type": "video", "page": PASS, "page_size": 50})  # 2026-08-25 owner: video over images
         except Exception as e:  # noqa: BLE001
             log(f"  nasa search fail: {e}")
             continue
