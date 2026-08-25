@@ -67,16 +67,44 @@ def destination_title(design: dict) -> str:
              f"{pkg.relative_to(ROOT)} -- the CTA card would render empty")
 
 
+# Words a shortened title must never end on. Trimming to whole words is not enough: on
+# 2026-08-25 the shipped CTA cards read "246 Died in the Texas Freeze. The" and "They Got
+# the Lights Back. They Did Not" -- whole words, and both of them read as a broken caption.
+# A card that stops on a sentence boundary says the same thing and looks deliberate.
+_DANGLING = {
+    "a", "an", "the", "and", "but", "or", "nor", "so", "yet", "of", "to", "in", "on", "at",
+    "by", "for", "from", "with", "into", "over", "under", "after", "before", "that", "which",
+    "who", "whom", "whose", "what", "when", "where", "why", "how", "he", "she", "it", "they",
+    "we", "you", "his", "her", "its", "their", "our", "your", "this", "these", "those",
+    "is", "was", "were", "are", "be", "been", "did", "do", "does", "had", "has", "have",
+    "not", "no", "then", "than", "as", "if", "up", "out", "off", "one", "two", "there",
+}
+
+
 def short_title(t: str, cap: int = 38) -> str:
-    """Trim to whole words. A title cut mid-word ("...pure waste and do") reads as a defect."""
+    """Shorten to one clean line: whole words, and never ending on a dangling function word.
+
+    A title cut mid-word ("...pure waste and do") reads as a defect, and so does a title cut
+    on a whole word that leaves a clause hanging ("246 Died in the Texas Freeze. The"). Prefer
+    the last sentence boundary inside the cap; otherwise drop trailing function words and
+    trailing punctuation that only makes sense mid-sentence.
+    """
     if len(t) <= cap:
         return t
-    out = []
+    out: list[str] = []
     for w in t.split():
         if len(" ".join(out + [w])) > cap:
             break
         out.append(w)
-    return " ".join(out) or t[:cap]
+    if not out:
+        return t[:cap]
+    # A full sentence inside the cap beats a fragment of the next one.
+    for i in range(len(out) - 1, -1, -1):
+        if out[i].endswith((".", "!", "?")) and not out[i].endswith("..."):
+            return " ".join(out[:i + 1])
+    while out and out[-1].strip(".,;:-—").lower() in _DANGLING:
+        out.pop()
+    return (" ".join(out).rstrip(",;:-— ") or t[:cap])
 
 
 def find_design(sid: str):

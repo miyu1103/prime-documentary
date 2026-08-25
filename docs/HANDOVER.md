@@ -424,3 +424,13 @@ composition `Ep74Itaewon`, `remotion/src/data/itaewon_film.json`; Root.tsx delib
 Also: **episode_spec v002/v003 were invisible to the pipeline** — 47 tools open `v001` by name, so
 28 face plates on disk were reported as `people=0`. Two-word footage queries kept 34 per cent
 against 27 for one-word queries. One deviation left standing and written down, not argued away.
+
+**[2026-08-26 — shorts + assets lane](handover/2026-08-26-shorts-and-assets.md)** — short310-327
+(EP77-82) rendered, 18 files, 52.1-57.7 s, three gates clean, nothing uploaded. Two defects that
+reach past this batch: the CTA card was printing **truncated titles** ("246 Died in the Texas
+Freeze. The") on already-published Shorts — `short_title()` now cuts on sentence boundaries; and
+**74 Shorts carry no funnel CTA cut at all**, a contiguous block ending at short282. **short322-324
+are rendered but NOT shippable**: EP81's own thumbnail says "100 COUNTS." and
+`check_packaging_claims` rejects it against EP81's own ledger ("no charge, no plea, no sentence").
+Long-form titles for EP78-82 were written this session and are **provisional pending owner approval**
+— changing one means re-rendering its three Shorts.

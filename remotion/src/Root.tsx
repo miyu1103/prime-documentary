@@ -370,6 +370,24 @@ import {SHORT306} from './data/short306';
 import {SHORT307} from './data/short307';
 import {SHORT308} from './data/short308';
 import {SHORT309} from './data/short309';
+import {SHORT310} from './data/short310';
+import {SHORT311} from './data/short311';
+import {SHORT312} from './data/short312';
+import {SHORT313} from './data/short313';
+import {SHORT314} from './data/short314';
+import {SHORT315} from './data/short315';
+import {SHORT316} from './data/short316';
+import {SHORT317} from './data/short317';
+import {SHORT318} from './data/short318';
+import {SHORT319} from './data/short319';
+import {SHORT320} from './data/short320';
+import {SHORT321} from './data/short321';
+import {SHORT322} from './data/short322';
+import {SHORT323} from './data/short323';
+import {SHORT324} from './data/short324';
+import {SHORT325} from './data/short325';
+import {SHORT326} from './data/short326';
+import {SHORT327} from './data/short327';
 import lechOpeningProps from '../props/lech.json';
 import youngOpeningProps from '../props/young.json';
 import canigliaOpeningProps from '../props/caniglia.json';
@@ -5068,6 +5086,204 @@ export const RemotionRoot: React.FC = () => {
         defaultProps={{data: SHORT309, platform: 'tiktok' as const, depth: true, method: true}} />
       <Still id="ShortThumb-short309" component={ShortThumb} width={1080} height={1920}
         defaultProps={{data: SHORT309, headline: 'NOT IDENTIFIED\nAS CRITICAL', badge: 'FULL CASE', backgroundSrc: 'shorts/short309/short309_01.png'}} />
+
+      <Composition id="Short-short310-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT310, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT310, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short310-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT310, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT310, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short310" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT310, headline: 'SIXTY-SEVEN\nSECONDS', badge: '2024', backgroundSrc: 'shorts/short310/short310_01.png'}} />
+
+      <Composition id="Short-short311-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT311, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT311, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short311-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT311, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT311, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short311" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT311, headline: 'A LOOSE\nWIRE', badge: 'NTSB', backgroundSrc: 'shorts/short311/short311_01.png'}} />
+
+      <Composition id="Short-short312-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT312, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT312, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short312-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT312, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT312, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short312" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT312, headline: 'SIXTY-EIGHT\nBRIDGES', badge: 'FULL CASE', backgroundSrc: 'shorts/short312/short312_01.png'}} />
+
+      <Composition id="Short-short313-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT313, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT313, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short313-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT313, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT313, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short313" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT313, headline: 'EIGHTEEN\nSECONDS', badge: '2009', backgroundSrc: 'shorts/short313/short313_01.png'}} />
+
+      <Composition id="Short-short314-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT314, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT314, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short314-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT314, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT314, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short314" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT314, headline: 'ENTIRELY\nOPT-IN', badge: 'FULL CASE', backgroundSrc: 'shorts/short314/short314_01.png'}} />
+
+      <Composition id="Short-short315-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT315, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT315, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short315-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT315, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT315, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short315" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT315, headline: 'TRUE.\nNOT COMPLETE', badge: 'NTSB', backgroundSrc: 'shorts/short315/short315_01.png'}} />
+
+      <Composition id="Short-short316-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT316, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT316, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short316-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT316, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT316, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short316" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT316, headline: 'THE ENTIRE\nSAFETY NET', badge: '2000', backgroundSrc: 'shorts/short316/short316_01.png'}} />
+
+      <Composition id="Short-short317-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT317, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT317, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short317-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT317, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT317, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short317" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT317, headline: 'IT WAS\nCIRCULATED', badge: 'FULL CASE', backgroundSrc: 'shorts/short317/short317_01.png'}} />
+
+      <Composition id="Short-short318-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT318, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT318, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short318-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT318, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT318, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short318" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT318, headline: 'FOUR HUNDRED\nPER CENT', badge: 'NTSB', backgroundSrc: 'shorts/short318/short318_01.png'}} />
+
+      <Composition id="Short-short319-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT319, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT319, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short319-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT319, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT319, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short319" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT319, headline: 'EVERYBODY\nCOULD HAVE GOT OFF', badge: '2012', backgroundSrc: 'shorts/short319/short319_01.png'}} />
+
+      <Composition id="Short-short320-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT320, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT320, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short320-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT320, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT320, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short320" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT320, headline: 'NEVER ONCE\nWALKED IT', badge: 'FULL CASE', backgroundSrc: 'shorts/short320/short320_01.png'}} />
+
+      <Composition id="Short-short321-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT321, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT321, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short321-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT321, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT321, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short321" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT321, headline: 'NOT ONE\nHUMAN', badge: 'FULL CASE', backgroundSrc: 'shorts/short321/short321_01.png'}} />
+
+      <Composition id="Short-short322-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT322, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT322, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short322-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT322, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT322, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short322" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT322, headline: 'NINETY\nSECONDS', badge: '2003', backgroundSrc: 'shorts/short322/short322_01.png'}} />
+
+      <Composition id="Short-short323-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT323, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT323, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short323-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT323, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT323, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short323" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT323, headline: 'IT DID NOT\nIGNITE AT ALL', badge: 'NIST', backgroundSrc: 'shorts/short323/short323_01.png'}} />
+
+      <Composition id="Short-short324-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT324, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT324, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short324-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT324, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT324, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short324" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT324, headline: 'IT IS\nTHE DOOR', badge: 'FULL CASE', backgroundSrc: 'shorts/short324/short324_01.png'}} />
+
+      <Composition id="Short-short325-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT325, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT325, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short325-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT325, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT325, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short325" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT325, headline: 'THE SAME\nNUMBER OF PEOPLE', badge: '1989', backgroundSrc: 'shorts/short325/short325_01.png'}} />
+
+      <Composition id="Short-short326-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT326, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT326, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short326-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT326, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT326, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short326" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT326, headline: 'THE FIRST THING\nTAKEN AWAY', badge: 'FULL CASE', backgroundSrc: 'shorts/short326/short326_01.png'}} />
+
+      <Composition id="Short-short327-yt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT327, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT327, platform: 'yt' as const, depth: true, method: true}} />
+      <Composition id="Short-short327-tt" component={Short}
+        durationInFrames={shortDurationInFrames(SHORT327, BRAND.video.fps)}
+        fps={BRAND.video.fps} width={1080} height={1920}
+        defaultProps={{data: SHORT327, platform: 'tiktok' as const, depth: true, method: true}} />
+      <Still id="ShortThumb-short327" component={ShortThumb} width={1080} height={1920}
+        defaultProps={{data: SHORT327, headline: 'FORESEEABLE.', badge: 'NTSB', backgroundSrc: 'shorts/short327/short327_01.png'}} />
 </>
   );
 };
