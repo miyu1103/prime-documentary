@@ -43,6 +43,9 @@ W, H = 128, 72          # proxy frame for the whole 16:9 image
 USABLE = {"free_commercial", "pd", "cc0"}
 
 
+VIDEO_EXT = (".mp4", ".webm", ".mov", ".mkv", ".avi", ".m4v")
+
+
 def rows():
     seen = set()
     for f in sorted(glob.glob(LEDGER)):
@@ -55,7 +58,13 @@ def rows():
             except Exception:
                 continue
             p = d.get("file_path")
-            if (not p or p in seen or d.get("kind") != "video"
+            # `kind` is written by only some adapters: measured 2026-08-25, 207,846 of 211,157
+            # ledger rows have no kind at all, so filtering on kind == "video" saw 2,287 clips
+            # out of 31,683 and reported "indexed 1,971, scanned 1,971" -- a full run over 7%
+            # of the shelf, with nothing to say it was not the whole thing.
+            is_video = (d.get("kind") == "video"
+                        or str(p or "").lower().endswith(VIDEO_EXT))
+            if (not p or p in seen or not is_video
                     or d.get("license_decision") not in USABLE):
                 continue
             seen.add(p)
