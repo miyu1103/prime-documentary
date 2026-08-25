@@ -80,7 +80,7 @@ export const SHORT293: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short293/short293_ctathumb.jpg',
-  ctaLongTitle: "There Was Never A Zone",
+  ctaLongTitle: "188,000 Left in a Few Hours.",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,

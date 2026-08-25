@@ -80,7 +80,7 @@ export const SHORT309: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short309/short309_ctathumb.jpg',
-  ctaLongTitle: "246 Died in the Texas Freeze. The",
+  ctaLongTitle: "246 Died in the Texas Freeze.",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,

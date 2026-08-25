@@ -33,7 +33,7 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p09', src: 'shorts/short276/short276_09.png', kind: 'image', motion: 'pushin'},   // R095 approved episode plate
   {line: 'L7', id: 'p10', src: 'shorts/short276/short276_10.png', kind: 'image', motion: 'parallax'},   // R096 approved episode plate
   {line: 'L8', id: 'p11', src: 'shorts/short276/short276_11.png', kind: 'image', motion: 'kenburns'},   // R017 approved episode plate
-  {line: 'L8', id: 'p12', src: 'shorts/short276/short276_12.png', kind: 'image', motion: 'pushin'},   // R018 approved episode plate
+  {line: 'L8', id: 'p12', src: 'shorts/short276/short276_12.png', kind: 'image', motion: 'pushin', isCta: true, rewind: true, fast: true},   // R018 approved episode plate
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -78,7 +78,7 @@ export const SHORT276: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short276/short276_ctathumb.jpg',
-  ctaLongTitle: "No Concrete Harm, No Standing",
+  ctaLongTitle: "A Salesman Said His Name...",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,

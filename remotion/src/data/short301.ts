@@ -80,7 +80,7 @@ export const SHORT301: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short301/short301_ctathumb.jpg',
-  ctaLongTitle: "Genoa's Motorway Viaduct Got 23,000",
+  ctaLongTitle: "Genoa's Motorway Viaduct Got 23,000...",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,

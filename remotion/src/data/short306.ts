@@ -80,7 +80,7 @@ export const SHORT306: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short306/short306_ctathumb.jpg',
-  ctaLongTitle: "A Town Burned Because Seven Hand",
+  ctaLongTitle: "A Town Burned Because Seven Hand...",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,

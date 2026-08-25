@@ -43,10 +43,14 @@ def destination_title(design: dict) -> str:
     "object of type NoneType has no len()" -- a stack trace instead of a fact.
     Falls back to the episode package: the booked metadata first, then the highest
     title draft. Refuses loudly if the episode has neither.
+
+    The package is read BEFORE design.destination.title, not after. That field holds
+    whatever the designer typed while writing the Shorts, and on 2026-08-26 four of them
+    held internal shorthand -- EP69 said "Non-Delegable" while the episode published as
+    "One Rod Became Two. The Load on One Beam Doubled..." -- so short271-282 pointed their
+    funnel card at a doctrine name no viewer would recognise. It also goes stale on its own:
+    a title changed on the channel is written to youtube_meta, never back into the design.
     """
-    t = (design.get("destination") or {}).get("title")
-    if t:
-        return t
     pkg = ROOT / "episodes" / design["episode_id"] / "09_package"
     for pattern, keys in (("youtube_meta*.json", ("title",)),
                           ("_title_draft.v*.json", ("chosen", "selected", "title"))):
@@ -63,6 +67,9 @@ def destination_title(design: dict) -> str:
             if isinstance(cand, str) and cand.strip():
                 print(f"  CTA title from {path.name}: {cand[:60]}")
                 return cand
+    t = (design.get("destination") or {}).get("title")
+    if t:
+        return t
     sys.exit(f"{design['episode_id']}: no destination title in the design and none in "
              f"{pkg.relative_to(ROOT)} -- the CTA card would render empty")
 
@@ -104,7 +111,16 @@ def short_title(t: str, cap: int = 38) -> str:
             return " ".join(out[:i + 1])
     while out and out[-1].strip(".,;:-—").lower() in _DANGLING:
         out.pop()
-    return (" ".join(out).rstrip(",;:-— ") or t[:cap])
+    s = " ".join(out).rstrip(",;:-— ")
+    if not s:
+        return t[:cap]
+    # No sentence fitted, so this IS a fragment ("A Camera Watches the Woods for 78"). Say so.
+    # An ellipsis reads as a deliberate shortening; the same words without one read as a bug.
+    # ASCII dots, not U+2026: the card's own type note says ASCII, and a missing glyph
+    # would put a tofu box on screen -- worse than the fragment it is meant to explain.
+    while len(s) + 3 > cap and " " in s:
+        s = s.rsplit(" ", 1)[0].rstrip(",;:-— ")
+    return s + "..."
 
 
 def find_design(sid: str):

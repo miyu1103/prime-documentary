@@ -80,7 +80,7 @@ export const SHORT295: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short295/short295_ctathumb.jpg',
-  ctaLongTitle: "A Street Fifty Metres Long Killed 159",
+  ctaLongTitle: "A Street Fifty Metres Long Killed...",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,

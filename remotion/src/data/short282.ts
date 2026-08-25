@@ -31,7 +31,7 @@ const CUTS: Cut[] = [
   {line: 'L5', id: 'p07', src: 'shorts/short282/short282_07.png', kind: 'image', motion: 'parallax'},   // H045 approved episode plate
   {line: 'L6', id: 'p08', src: 'shorts/short282/short282_08.png', kind: 'image', motion: 'kenburns'},   // H025 approved episode plate
   {line: 'L7', id: 'p09', src: 'shorts/short282/short282_09.png', kind: 'image', motion: 'pushin'},   // H021 approved episode plate
-  {line: 'L8', id: 'p10', src: 'shorts/short282/short282_10.png', kind: 'image', motion: 'parallax'},   // H001 approved episode plate
+  {line: 'L8', id: 'p10', src: 'shorts/short282/short282_10.png', kind: 'image', motion: 'parallax', isCta: true, rewind: true, fast: true},   // H001 approved episode plate
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -76,7 +76,7 @@ export const SHORT282: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short282/short282_ctathumb.jpg',
-  ctaLongTitle: "Non-Delegable",
+  ctaLongTitle: "One Rod Became Two.",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,

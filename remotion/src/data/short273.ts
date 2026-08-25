@@ -32,7 +32,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p08', src: 'shorts/short273/short273_08.png', kind: 'image', motion: 'kenburns'},   // L045 approved episode plate
   {line: 'L7', id: 'p09', src: 'shorts/short273/short273_09.png', kind: 'image', motion: 'pushin'},   // L002 approved episode plate
   {line: 'L7', id: 'p10', src: 'shorts/short273/short273_10.png', kind: 'image', motion: 'parallax'},   // L003 approved episode plate
-  {line: 'L8', id: 'p11', src: 'shorts/short273/short273_11.png', kind: 'image', motion: 'kenburns'},   // L057 approved episode plate
+  {line: 'L8', id: 'p11', src: 'shorts/short273/short273_11.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // L057 approved episode plate
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -77,7 +77,7 @@ export const SHORT273: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short273/short273_ctathumb.jpg',
-  ctaLongTitle: "The Open-Fields Doctrine",
+  ctaLongTitle: "A Camera Watches the Woods for 78...",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,

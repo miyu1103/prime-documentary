@@ -80,7 +80,7 @@ export const SHORT291: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short291/short291_ctathumb.jpg',
-  ctaLongTitle: "No Rule To Break",
+  ctaLongTitle: "The FBI Raided the Wrong House.",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,

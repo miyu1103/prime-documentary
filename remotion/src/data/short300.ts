@@ -80,7 +80,7 @@ export const SHORT300: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short300/short300_ctathumb.jpg',
-  ctaLongTitle: "The Sirens Had Never Been Used for a",
+  ctaLongTitle: "The Sirens Had Never Been Used...",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,

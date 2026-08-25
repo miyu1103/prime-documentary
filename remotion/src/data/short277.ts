@@ -32,7 +32,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p08', src: 'shorts/short277/short277_08.png', kind: 'image', motion: 'kenburns'},   // R022 approved episode plate
   {line: 'L7', id: 'p09', src: 'shorts/short277/short277_09.png', kind: 'image', motion: 'pushin'},   // R065 approved episode plate
   {line: 'L7', id: 'p10', src: 'shorts/short277/short277_10.png', kind: 'image', motion: 'parallax'},   // R072 approved episode plate
-  {line: 'L8', id: 'p11', src: 'shorts/short277/short277_11.png', kind: 'image', motion: 'kenburns'},   // R001 approved episode plate
+  {line: 'L8', id: 'p11', src: 'shorts/short277/short277_11.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // R001 approved episode plate
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -77,7 +77,7 @@ export const SHORT277: ShortData = {
   ctaTextYT: 'Watch the full case on the channel',
   ctaTextTT: 'Full case on our profile',
   ctaLongThumbSrc: 'shorts/short277/short277_ctathumb.jpg',
-  ctaLongTitle: "What the Table Was Actually About",
+  ctaLongTitle: "Everyone Quotes the Ford Pinto Memo.",
   ctaHeadline: 'FULL CASE',
   captionTop: 1210,
   ctaFadeOutSec: 0.8,
