@@ -1,9 +1,8 @@
 # Handover 2026-08-25 — the shorts + assets lane
 
-This lane is **asset gathering and Shorts**. Owner's direction, restated 2026-08-25 in-session:
-this thread does footage DL and Shorts creation, **and Shorts are stopped for a while** — so the
-Shorts deliverable was frozen at the design stage (deliberately complete, ready to thaw) and the
-thread's active work is the shelf. Long-form belongs to the main thread, as before.
+This lane is **asset gathering and Shorts**. Owner's direction this session, in order:
+build the Shorts, then "素材のDL、とくに動画", then "画像よりも動画を大量に", then "再開して"
+— which unfroze the Shorts and carried them from design all the way to rendered files.
 
 Everything below is measured. Commands are inline.
 
@@ -12,98 +11,110 @@ Everything below is measured. Commands are inline.
 ## 1. State at handover
 
 ```
-Shorts designs        short289-309 ALL 21 designed -- the 15 remaining (295-309) were
-                      authored this session, 5 design files, 0 problems on both gates
-Shorts audio/build    NOT STARTED, on purpose (owner: shorts stopped for a while)
-Shorts scheduled      26 uploaded with publishAt, publishing through 2026-08-30; push
-                      itself PAUSED until 2026-08-29 (config/shorts_pause.v001.json)
-shelf                 128,160 files, ledger PASS, 0 torn / 0 dup / 0 missing (measured
-                      at session start; ingest has added since)
-ingest                place-neutral 4 themes (night_road_lamp, window_interior_light,
-                      clock_and_waiting, corridor_and_stairs) x pixabay+mixkit+coverr,
-                      50-pass run live in background, log runs/ingest_placeneutral_20260824c.log
-anonymous_crowd       deny round 3 applied (india/ukraine/baby-stroller class), smoke-
-                      verified; REAL batch + contact sheet still owed (see §4)
+Shorts 289-309       21 designed, voiced, assembled, registered; RENDERING at handover
+                     (bash scripts/render_shorts.sh, log runs/render_shorts_20260825b.log)
+Shorts audio         21/21 mixes, measured 50.8-56.7 s, -14 LUFS
+plates / depth       294 crops + 294 depth maps (torch lives in Python 3.10, not 3.11)
+kinetic beats        42 AE overlays (VP9+alpha), render_beats.sh, all 21 shorts
+gates                check_short_design 0 / check_short_constraints 0 / verify_short_designs 0
+archive ingest       deep video run since 02:01, 195 items / 47.4 GB, still walking
+shelf                ledger PASS after every mutation this session
 ```
 
 Re-measure:
 
 ```
 py -3.11 scripts/check_ledger_integrity.py
-py -3.11 scripts/check_short_design.py --all          # 99 problems, ALL in short86-269 (old designs); short295-309 = 0
-py -3.11 scripts/check_short_constraints.py episodes/_planning/short_designs/PD-2026-07*.design.v001.json
-tail -5 runs/ingest_placeneutral_20260824c.log
+py -3.11 scripts/check_short_constraints.py episodes/_planning/short_designs/PD-2026-07*.json
+py -3.11 scripts/verify_short_designs.py | grep -E "short(289|29[0-9]|30[0-9])"
+grep -E "RENDER_DONE|DID NOT PRODUCE" runs/render_shorts_20260825b.log
 ```
 
-## 2. The 15 Shorts, and what "designed" means here
+## 2. Seven defects, and the one habit that found all of them
 
-Five design files, `episodes/_planning/short_designs/`:
+Every one was found by measuring the artefact, never by reading a green line.
 
-| file | shorts | words (measured) |
+| what was wrong | how it presented | how it was found |
 |---|---|---|
-| PD-2026-074-itaewon.design.v001.json | short295-297 | 178 / 175 / 174 |
-| PD-2026-075-lahaina.design.v001.json | short298-300 | 172 / 175 / 161 |
-| PD-2026-076-morandi.design.v001.json | short301-303 | 171 / 173 / 178 |
-| PD-2026-072-lacmegantic.design.v001.json | short304-306 | 173 / 176 / 178 |
-| PD-2026-073-uri.design.v001.json | short307-309 | 168 / 178 / 164 |
+| music cue named `_v1`, library holds `_v2` | all 21 mixes failed with ffmpeg status `4294967294` — an opaque -2 with no filename | listed the library |
+| narration reused on FILE EXISTENCE | two trim passes rewrote text, index and every gate output; **the audio never changed** | durations byte-identical after a "rebuild" |
+| word band as a length proxy | 8 Shorts sat inside 159-180 words and rendered 58.7-69.7 s | measured the mix; spoken figures run 0.4-0.8 s/word |
+| `depth: true` with no depth maps | three.js `Could not load`, render dead | compared against short282, which had 10 |
+| CTA card never drawn | the last two seconds were just a plate | **opened the finished mp4 and looked at it** |
+| `destination.title = null` | `len(None)` stack trace inside assemble | ran it |
+| plate dir curated by another thread | 11 staged plates read as "not on disk" although their bytes were untouched | `ls` on the siblings |
 
-Every line traces verbatim to the episode's own `03_script/script.en.v001.md` (the gate proves
-it), every plate was verified present on disk before being named, specs were read at their
-HIGHEST revision (lahaina = v003), and the prose `forbidden_claims` — 12 for itaewon, 10 for
-lahaina, 10 for morandi, 8 each for lacmegantic and uri — were read by hand against every Short.
-The deliberate design choices worth knowing before touching them:
+**The CTA one is the important one.** `assemble_short` flags the funnel cut only on a plate
+whose role is `loop`; these designs said `close`, so no card. Then: **short280 and short282,
+already published, carry `isCta: 0` too.** This is not a regression in this batch — the lane
+stopped authoring the `loop` role at some point and the funnel card has been missing from
+shipped Shorts. All 21 now draw FULL CASE + destination thumbnail + title + LINK BELOW,
+verified on a real frame at 54.3 s of short289. **Worth checking the shipped back catalogue.**
 
-* **No Short names a person.** itaewon's ward chief appears only by office with the first-instance
-  acquittal in the same breath; morandi's convictions are not mentioned at all; lacmegantic's
-  acquitted three are absent entirely. This is what keeps the four ship-blocking classes clean.
-* **Counterfactuals are refused in the text itself** — lahaina's siren Short CLOSES on "not one
-  of them says that sounding the siren would have changed the outcome"; uri never says the grid
-  collapsed; lacmegantic gives the seven hand brakes against BOTH the railway's nine and the
-  investigation's 17-26, per spec.
-* Lines files for the narration generator are already emitted:
-  `episodes/<EPID>/09_package/short295..309_lines.v001.json` (via emit_short_lines_from_designs.py,
-  ElevenLabs estimate ~$0.90/episode).
+Fixes are in `gen_newshort_narration.py` (idempotency key), `build_short_mix.py`
+(`newest_take`), `check_short_constraints.py` (measures the mix, keeps the word band as the
+pre-audio proxy), `assemble_short.py` (`destination_title`, `plate_dirs`),
+`emit_short_lines_from_designs.py` (compares delivery, not only text).
 
-**To thaw the lane**: `build_all_short_audio.py --only 289-309` (resumable, skips existing) →
-`assemble_short.py` / `build_short_mix.py` / `verify_short_designs.py` / `verify_short_plates.py`
-→ the 16:20 push from 8/29, four a day at 06/09/18/21. Nothing before the owner un-stops Shorts.
+## 3. Shorts: what is authored, and what it says
 
-## 3. Plate-on-disk is not plate-reviewed: three episodes have holes
+21 Shorts across seven episodes, three per episode, 8-line spine, 14 REUSE plates each.
+Delivery arc normalised to the house form (first line intense, last calm, ≥3 building in the
+middle) and claim ids cleared — `pd-verify` binds those, the design must not.
 
-The constraint gate checks the plate EXISTS; existence turned out to be the scarce thing:
+Editorial constraints that were read by hand against every line (the machine cannot):
+itaewon names no victim and no official without their first-instance status; lahaina never
+completes the siren counterfactual; morandi asserts no cause and names no defendant;
+lacmegantic gives seven hand brakes against both the railway's nine and the investigation's
+17-26; uri never says the grid collapsed and blames no fuel.
 
-* lahaina: 14 of the reviewed plates are NOT on disk as PNGs (H010, H013, H016, H022, H025,
-  H049, H053, H061, H076, H084, H089, H108, H111, H132) — consumed by i2v/motion. Designs
-  were re-pointed at on-disk alternates and re-verified.
-* morandi: only 60 of ~120 reviewed plates survive as PNGs. itaewon: I001/I063/I092/I120 absent.
-* If anyone regenerates or restores plates, the designs name their exact plate ids — re-run
-  `check_short_constraints.py` and it will tell you if a named plate vanished.
+**Render is in flight at handover.** When it finishes: `coverfirst` runs per Short inside the
+same script, then the 16:20 push takes over from 8/29 (four a day at 06/09/18/21 JST).
 
-## 4. The shelf work (the thread's active lane)
+## 4. Assets: video only, and the two things that had to be blocked
 
-* The 4 tuned place-neutral themes are being walked to exhaustion across pixabay/mixkit/coverr
-  in a 50-pass background run. **Trap measured this session**: `--cap-gb` is a CUMULATIVE cap
-  against the whole archive total (1,417 GB), not a per-run download cap — any value below the
-  archive total stops the run at pass 1 with "ARCHIVE CAP reached, 0 items". Run with no cap;
-  the tier free-space floors still guard the disks.
-* `anonymous_crowd` deny round 3 is IN the code (ingest_archive_sources.py CO_OCCUR, applied via
-  pd_edit with a smoke import): dry-run titles showed place-specific (india/shiva, ukraine/pokrov)
-  and child-adjacent (baby stroller) passing. Still owed: a REAL batch of ~12, then
-  `py -3.11 scripts/qc_archive_contact_sheets.py --theme anonymous_crowd --refresh` and a human
-  read of the sheet. The bar from 8/24: trust the theme only after a sheet reads ≥~55% usable.
-* **Do not run two ingest processes at once** — the ledger has been corrupted by concurrent
-  appends before (this lane's own memory). One at a time, always.
-* 135 quarantined clips still pass the tuned gate and could be restored without downloading —
-  but ~45% are still wrong; restore only after a sheet. (Unchanged from 8/24.)
+Owner asked for volume in video and to stop spending on images. Both were done in code:
+NASA is now `media_type=video`, and the ingest walks IA/NASA/coverr/mixkit only.
 
-## 5. Old-design debt, measured and left
+**pexels and pixabay video are exhausted** — 15,704 already on the shelf, and a 12-item
+`anonymous_crowd` probe returned 1 new item and 11 dup-shas. The remaining seam is Internet
+Archive: 195 items / 47.4 GB this run, 80-570 MB each, mostly mid-century public-domain
+newsreel and government film. Under 360p goes to quarantine as `review_required` by the
+technical floor, which is why roughly a third of the haul is not on the searchable shelf.
 
-`check_short_design.py --all`: 99 problems across short86-269 — scripts those old designs point
-at have moved/renamed. Zero of them touch short289-309. Not this session's scope; recorded so
-the number doesn't surprise anyone.
+Two classes were blocked at the gate after arriving:
 
-## 6. Token audit (rule 20)
+* **Franchise/conspiracy titles self-labelled `publicdomain`** — Sesame Street reached the
+  shelf as `pd` because IA licences are uploader-set. 11 quarantined, `IA_TITLE_DENY` added.
+* **Real-incident police body-worn and dash footage** — 20 items (Minneapolis body cam, Vegas
+  shooting evidence, Cop City). A public-record licence does not make footage of identifiable
+  private individuals safe to cut into a documentary. Quarantined, then denied at the gate.
 
-`token_audit.py --live` at handover: average context 189,419 / peak 342,182 / amplification
-263x / billed 37.2M. Design work (5 scripts read whole + 5 designs authored) is the honest cost
-of doing provenance by hand; the next session should start clean at the audio 工程 if Shorts thaw.
+Also this session: **32 of 59 quarantined video candidates restored** after a labelled contact
+sheet was read tile by tile (54 % usable, matching the gate's estimate), via the new
+`restore_from_quarantine.py`; deny round 4 written from the 27 rejects.
+
+## 5. Traps that cost real time here
+
+* `--cap-gb` is a **cumulative** cap against the whole 1.4 TB archive, not a per-run download
+  cap. Any value below the archive total stops the run at pass 1 with 0 items.
+* `remotion/public` is **377 GB**, and a hand-run `npx remotion render` copies all of it.
+  Always go through `scripts/render_shorts.sh`, which bundles from the pruned `public_min`.
+* The ledger's `fetched_at` is **UTC**. Counting "today's" items in JST reads 0 and looks like
+  a dead lane.
+* `subprocess(..., text=True)` on Windows decodes as cp932 and the reader thread dies on
+  non-ASCII ffprobe output — a good probe becomes an empty result and a false reject.
+* Root.tsx had **no entries past short282**, so the previous session's six Shorts were
+  unrenderable as well. 21 registrations added; `tsc --noEmit` clean.
+
+## 6. My own mistake, recorded
+
+One commit used `git add -A scripts/` and swept in **203 files** of another thread's
+uncommitted work under this lane's message. Nothing was altered or lost, but the lanes are
+mixed in history. Commit explicit paths.
+
+## 7. Token audit (rule 20)
+
+`token_audit.py --live` at handover: 680 API calls, average context 306,978, peak 481,998,
+billed 209M. Above the 300k CRIT line — **the next session should start at the render/QC
+step, not continue this one.**
