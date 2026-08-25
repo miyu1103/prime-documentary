@@ -112,26 +112,92 @@ the accident**; and **no source in this ledger says the faking caused the meltdo
 says what the record says: the test that was supposed to catch a leak had been meaningless for
 months before the morning it would have mattered.
 
-## F. The accident, the Commission, the aftermath ⛔ NOT YET CONFIRMED BY THIS THREAD
+## F. The morning of 28 March 1979 (S5 — Kemeny, "Account of the Accident")
 
-**None of this may be narrated yet.** A research pass is out on it; every row lands here with a
-page number before it enters the script.
+**⚠️ Cite Kemeny by the page footer printed on the page, never by arithmetic on the PDF page
+number: the offset varies by section (−6 in the Preface, −5 in Findings, −4 in the Account).**
 
-| id | claim to confirm | where from |
+| id | fact | source |
 |---|---|---|
-| ⛔TM-401 | The timeline of 28 March 1979 from 04:00: the PORV that stuck open, how long, and that the control-room indicator showed **the signal sent to the valve, not the valve's position**. | S5 / S6 |
-| ⛔TM-402 | When high-pressure injection was throttled back and why; when the core was uncovered; when the valve was isolated. | S5 / S6 |
-| ⛔TM-403 | The number of alarms, and whether the alarm printer fell behind and by how long. | S5 |
-| ⛔TM-404 | Kemeny's central conclusions **verbatim**, including the "fundamental changes will be necessary" sentence, and what it says about **mindset** and about the NRC. | S5 |
-| ⛔TM-405 | Collective dose (**Kemeny's 2,000 person-rem, p.34** — a 3,300 figure is circulating and is **unverified**) and the health conclusion with its caveats. | S5 p.34 |
-| ⛔TM-406 | The evacuation advisory: exact date/time, who issued it, and the exact population named (pregnant women and pre-school children within a stated radius). | S5 |
-| ⛔TM-407 | Aftermath: creation of **INPO**, the NRC action plan, and reactor orders after 1979 (**the orders-by-year table must be eyeballed in DOE/EIA-0392 before it goes on screen**). | S5 / EIA |
+| TM-401 | **"At 4:00 a.m. on March 28, 1979, a serious accident occurred at the Three Mile Island 2 nuclear power plant near Middletown, Pennsylvania. The accident was initiated by mechanical malfunctions in the plant and made much worse by a combination of human errors in responding to it."** | S5 p.2 [VERBATIM] |
+| TM-402 | Feedwater pumps tripped with the plant **at 97 percent power**. **"The first pump trip occurred at 36 seconds after 4:00 a.m."** | S5 p.90 [VERBATIM] |
+| TM-403 | **8 seconds in, "TMI-2's reactor — as it was designed to do — scrammed."** | S5 p.90 [VERBATIM] |
+| TM-404 | **THE VALVE.** **"The PORV should have closed 13 seconds into the accident, when pressure dropped to 2,205 psi. It did not."** | S5 p.91 [VERBATIM] |
+| TM-405 | **"But the PORV was stuck open, and would remain open for 2 hours and 22 minutes, draining needed coolant water — a LOCA was in progress. In the first 100 minutes of the accident, some 32,000 gallons — over one-third of the entire capacity of the reactor coolant system — would escape."** | S5 p.91 [VERBATIM] |
+| TM-406 | **THE COUNTERFACTUAL, IN THE COMMISSION'S OWN WORDS.** Had the valve closed, or had the operators realised it was open and shut the backup, **"or if they had simply left on the plant's high pressure injection pumps, the accident at Three Mile Island would have remained little more than a minor inconvenience for Met Ed."** | S5 p.91 [VERBATIM] |
+| TM-407 | **THE TWO LIGHTS.** At 14 seconds an operator noted the emergency feed pumps running but missed two lights showing a closed valve on each emergency feedwater line — **"One light was covered by a yellow maintenance tag. No one knows why the second light was missed."** | S5 p.91 [VERBATIM] |
+| TM-408 | Because the emergency water lines were blocked, **the steam generators boiled dry** about 1 minute 45 seconds in. | S5 p.93 |
+| TM-409 | High-pressure injection started automatically at about 2 minutes, **"about 1,000 gallons a minute"** — and an operator then shut one pump down and reduced the other **to less than 100 gallons per minute**. | S5 p.93 [VERBATIM of the quoted figures] |
+| TM-410 | At about 8 minutes **"someone — just who is a matter of dispute — discovered that no emergency feedwater was reaching the steam generators"**; the closed valves were opened. | S5 p.94 [VERBATIM] |
+| TM-411 | **"The operators shut the block valve at 6:22 a.m., 2 hours and 22 minutes after the PORV had opened."** Evidence indicates the water was **below the top of the core at 6:15 a.m.** | S5 p.100 [VERBATIM] |
+| TM-412 | At 6:48 a.m. **as much as two-thirds of the 12-foot-high core stood uncovered**; later analyses indicate core temperatures **"as high as 3,500 to 4,000°F or more."** | S5 p.100 [VERBATIM] |
+| TM-413 | A **site emergency** was declared shortly before 7:00 a.m.; a **general emergency** followed. The containment dome monitor read **8 rems per hour at 7:20 a.m.** **NRC Region I first learned of the accident at 7:45 a.m., when its office opened.** | S5 pp.100–101 [VERBATIM] |
+| TM-414 | **IT HAD HAPPENED BEFORE, AT THIS PLANT.** A faulty valve let water leak into the polishers' air control system. **"The same problem of water leaking into the polishers' valve control system had occurred at least twice before at TMI-2. Had Met Ed corrected the earlier polisher problem, the March 28 sequence of events may never have begun."** | S5 p.93 [VERBATIM] |
+| TM-415 | The four men on shift **"each was a product of his training — training that did not adequately prepare them to cope with the accident at TMI-2."** | S5 p.91 [VERBATIM] |
+
+## G. The control room (S5)
+
+| id | fact | source |
+|---|---|---|
+| TM-501 | **"During the first few minutes of the accident, more than 100 alarms went off, and there was no system for suppressing the unimportant signals so that operators could concentrate on the significant alarms."** | S5 p.11 [VERBATIM] |
+| TM-502 | **"Information was not presented in a clear and sufficiently understandable form; for example, although the pressure and temperature within the reactor coolant system were shown, there was no direct indication that the combination of pressure and temperature meant that the cooling water was turning into steam."** | S5 p.11 [VERBATIM] |
+| TM-503 | Finding A.8: **"The control room was not adequately designed with the management of an accident in mind."** The architect-engineer **had never systematically evaluated control room design in the context of a serious accident.** **"The danger of having too many alarms was recognized by Burns and Roe during the design stage, but the problem was never resolved."** | S5 p.29 [VERBATIM] |
+| TM-504 | **"Some key indicators relevant to the accident were on the back of the control panel."** Several instruments **went off-scale**, "depriving the operators of highly significant diagnostic information." | S5 pp.29–30 [VERBATIM] |
+| TM-505 | **"The computer printer registering alarms was running more than 2[½] hours behind the events and at one point jammed, thereby losing valuable information."** ⚠️ The fraction is corrupted in the text layer — **confirm the number on the page image before it goes on screen.** | S5 p.30 [VERBATIM except the fraction] |
+| TM-506 | **"After an April 1978 incident, a TMI-2 control room operator complained to his superiors about problems with the control room. No corrective action was taken by the utility."** | S5 p.30 [VERBATIM] |
+| TM-507 | An operator to the Commission: **"I would have liked to have thrown away the alarm panel. It wasn't giving us any useful information."** | S5 p.91 [VERBATIM] |
+
+## H. What the Commission concluded (S5)
+
+| id | fact | source |
+|---|---|---|
+| TM-601 | **THE OVERALL CONCLUSION.** **"To prevent nuclear accidents as serious as Three Mile Island, fundamental changes will be necessary in the organization, procedures, and practices — and above all — in the attitudes of the Nuclear Regulatory Commission and, to the extent that the institutions we investigated are typical, of the nuclear industry."** | S5 p.7 [VERBATIM] |
+| TM-602 | And immediately: **"We do not claim that our proposed recommendations are sufficient to assure the safety of nuclear power."** | S5 p.7 [VERBATIM] |
+| TM-603 | **"But as the evidence accumulated, it became clear that the fundamental problems are people-related problems and not equipment problems… The equipment was sufficiently good that, except for human failures, the major accident at Three Mile Island would have been a minor incident."** | S5 p.8 [VERBATIM] |
+| TM-604 | **MINDSET.** **"In the testimony we received, one word occurred over and over again. That word is 'mindset.'"** An NRC division director used it five times in ten minutes: **"I think [the] mindset [was] that the operator was a force for good, that if you discounted him, it was a measure of conservatism."** | S5 p.8 [VERBATIM] |
+| TM-605 | **"The most serious 'mindset' is the preoccupation of everyone with the safety of equipment, resulting in the down-playing of the importance of the human element… the human beings who manage and operate the plants constitute an important safety system."** | S5 p.10 [VERBATIM] |
+| TM-606 | **ON THE REGULATOR.** **"We find that there is a lack of 'closure' in the system — that is, important safety issues are frequently raised and may be studied to some degree of depth, but are not carried through to resolution; and the lessons learned from these studies do not reach those individuals and agencies that most need to know about them."** | S5 p.11 [VERBATIM] |
+| TM-607 | **THE ENDING SENTENCE.** **"Therefore — whether or not operator error 'explains' this particular case — given all the above deficiencies, we are convinced that an accident like Three Mile Island was eventually inevitable."** | S5 p.11 [VERBATIM] |
+| TM-608 | **THE WARNING THAT WAS DISREGARDED.** More than a year earlier a Babcock & Wilcox engineer wrote internally that had the September 1977 Davis-Besse event occurred at full power, **"it is quite possible, perhaps probable, that core uncovery and possible fuel damage would have occurred."** Finding A.7 states these warnings **"had been disregarded by Babcock & Wilcox (B&W) and the Nuclear Regulatory Commission (NRC)."** | S5 p.29 [VERBATIM] |
+| TM-609 | Neither endorsement nor abolition: **"if the country wishes, for larger reasons, to confront the risks that are inherently associated with nuclear power, fundamental changes are necessary if those risks are to be kept within tolerable limits."** | S5 pp.7–8 [VERBATIM] |
+
+## I. Dose, health and the advisory (S5)
+
+| id | fact | source |
+|---|---|---|
+| TM-701 | **"the collective dose resulting from the radioactivity released to the population living within a 50-mile radius of the plant was approximately 2,000 person-rems."** Annual background for the same population is about **240,000 person-rems** — so the accident added **"somewhat less than one percent of the annual background level."** | S5 p.34 [VERBATIM] |
+| TM-702 | ⛔ **THE 3,300 PERSON-REM FIGURE IS NOT KEMENY'S AND MAY NOT BE USED.** The string does not appear in Kemeny, in Rogovin, or in NUREG-0660 (searched 2026-08-25). **Use 2,000, cited to p.34.** | derived; negative search recorded |
+| TM-703 | **"The maximum estimated radiation dose received by any one individual in the off-site general population… was 70 millirems. On the basis of present scientific knowledge, the radiation doses received by the general population… were so small that there will be no detectable additional cases of cancer, developmental abnormalities, or genetic ill-health as a consequence of the accident at TMI."** | S5 p.34 [VERBATIM] |
+| TM-704 | **THE CAVEAT THAT MUST TRAVEL WITH TM-703.** **"The health effects of radiation dose levels of a few rems or less are not known. Estimates of the potential health effects of the TMI accident are based on extrapolations from the known health effects of higher levels of radiation."** | S5 p.35 [VERBATIM] |
+| TM-705 | **"There were deficiencies in instrumentation for measuring the radioactivity released, particularly during the early stages of the accident."** | S5 p.34 [VERBATIM] |
+| TM-706 | Three TMI workers received **3 to 4 rems**, exceeding the NRC quarterly limit of 3 rems. | S5 p.34 |
+| TM-707 | **THE ACTUAL HARM.** **"The major health effect of the accident appears to have been on the mental health of the people living in the region of Three Mile Island and of the workers at TMI."** Highest distress: adults within 5 miles or with preschool children, and teenagers within 5 miles, with preschool siblings, or whose families left. | S5 p.35 [VERBATIM] |
+| TM-708 | **"the most serious health effect of the accident was severe mental stress, which was short-lived."** | S5 p.13 [VERBATIM] |
+| TM-709 | **THE ADVISORY — read it exactly.** **"At approximately 12:30 p.m., March 30, Governor Thornburgh advised pregnant women and preschool aged children to leave the area within a 5-mile radius of TMI until further notice… The advisory to pregnant women and preschool children was lifted on April 9."** An **advisory**, from the **Governor**, naming **two populations**, within **5 miles**. **Not a general evacuation order.** | S5 p.41 [VERBATIM] |
+| TM-710 | **THE OFFICIALS DISAGREED.** **"the Pennsylvania Bureau of Radiation Protection told the Governor on Friday that radiation levels indicated that no protective action of any kind was required; on that same morning, NRC Chairman Hendrie recommended that pregnant women and young children be advised to leave the area."** | S5 p.41 [VERBATIM] |
+| TM-711 | **"On Friday, a mistaken interpretation of the release of a burst of radiation led some NRC officials to recommend immediate evacuation."** On the weekend, others **mistakenly believed there was an imminent danger of a hydrogen-bubble explosion.** | S5 p.13 [VERBATIM] |
+| TM-712 | **THE ARC THIS FILM IS BUILT ON.** **"Starting Saturday, the PEMA director was no longer included in these meetings with the result that PEMA and county and local civil defense organizations had to rely primarily on the news media for information about conditions at the site."** — the same **PEMA** that receives the **$1,000,000** under plea agreement ¶10 five years later (TM-311). | S5 p.41 [VERBATIM] |
+| TM-713 | At the time of the accident, potassium iodide for this use **"was not commercially available in the United States."** | S5 p.41 [VERBATIM] |
+| TM-714 | **"The direct financial cost of the accident is enormous. Our best estimate puts it in a range of $1 to $2 billion."** | S5 p.13 [VERBATIM] |
+
+## J. What changed (S5, GAO, NRC)
+
+| id | fact | source |
+|---|---|---|
+| TM-801 | Kemeny's recommendation that created the industry's own body: **"merely meeting the requirements of a government regulation does not guarantee safety. Therefore, the industry must also set and police its own standards of excellence to ensure the effective management and safe operation of nuclear power plants."** | S5 p.68 [VERBATIM] |
+| TM-802 | **INPO was established in 1979 by the nuclear industry.** GAO: **"In response to the 1979 Three Mile Island accident, the nuclear utility industry established INPO… INPO was created not to supplant the regulatory role of NRC but to provide the means whereby the industry itself could make its nuclear operations safer."** | GAO/RCED-91-122 p.2 [VERBATIM] |
+| TM-803 | **THE SHARP FACT.** GAO: **"[NRC] information notices are available to the public, INPO's reports are not."** | GAO/RCED-91-122 [VERBATIM] |
+| TM-804 | **NUREG-0660, Vol. 1 — NRC Action Plan Developed as a Result of the TMI-2 Accident**, published **May 1980**. | NUREG-0660 title page [VERBATIM] |
+| TM-805 | Post-TMI changes included expanding the resident inspector programme so that **at least two inspectors live nearby and work exclusively at each plant**. | NRC TMI backgrounder |
+| TM-806 | Public confidence: **"The accident raised concerns all over the world and led to a lowering of public confidence in the nuclear industry and in the NRC."** | S5 p.13 [VERBATIM] |
+| TM-807 | ⛔ **NO REACTOR-ORDER STATISTICS MAY BE USED.** A search of the whole corpus returned zero order/cancellation data. Any orders-by-year figure must be read directly out of **DOE/EIA-0392** first. Until then the beat is carried by TM-806, which is sourced. | negative search recorded 2026-08-25 |
 
 ## Open items
 
-1. **Section F is the whole first half of the film and none of it is confirmed.** In progress.
-2. **S5 and S6 have not been obtained by this thread.** Until they are, the film cannot describe
-   the accident minute by minute.
-3. Whether the **$1,000,000 was actually paid to PEMA** and what it bought is not established.
-4. The film's ending depends on what changed in the industry after 1979 — none of that is in this
-   ledger yet.
+1. **S6 (Rogovin) has not been read.** Kemeny carries the film; Rogovin would add the NRC's own
+   view and is worth reading before the script locks.
+2. **Two OCR-corrupted numbers** are flagged in place (TM-409's throttle-back interval, TM-505's
+   printer lag). Confirm on the page image before either goes on screen.
+3. Whether the **$1,000,000 was actually paid to PEMA**, and what it bought, is not established.
+4. **No reactor-order statistics** (TM-807).
+5. The **health rows must always travel as a pair** — TM-703 with TM-704. Either alone misleads.
