@@ -1,0 +1,71 @@
+{
+ "schema_version": "1.0.0",
+ "episode_id": "PD-2026-085-katrina",
+ "slug": "katrina",
+ "runtime_seconds": [1740, 2100],
+ "script_words": [4700, 5300],
+ "section_vocabulary": ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ENDING"],
+ "figure_beats_per_act": [13, 17],
+ "distinct_video_assets": 260,
+ "people_plates_min": 20,
+ "mandatory_stills": [],
+ "thumbnail_candidates_min": 3,
+ "footage_review_required": true,
+ "audio_layers": 2,
+ "target_cut_sec": 4.6,
+ "era_setting": {
+  "place": "The drainage canals of New Orleans -- 17th Street, London Avenue, and the Industrial Canal -- their floodwalls and the streets behind them; a test embankment in the Atchafalaya basin; an engineering office; and a federal courthouse in New Orleans",
+  "country": "USA",
+  "years": [1977, 2012],
+  "notes": "Three time layers. 1977: the E-99 full-scale test on a levee in the Atchafalaya basin. The 1990s: the floodwalls being built -- these are MODERN structures and the film says so. 29 August 2005 and after: the water. 2009-2012: the courtroom. Present-day material is mid-2000s: 2005 cars, no smartphones, CRT televisions in homes. The canals are urban drainage channels with houses within metres of the wall, not wide rivers."
+ },
+ "forbidden_subjects": [
+  "body", "bodies", "corpse", "victim", "casualty", "coffin", "funeral", "mourner", "grieving", "memorial",
+  "drowning", "person in water", "person on a roof", "rooftop rescue", "person being rescued", "person wading",
+  "identifiable face", "real person likeness", "recognisable individual", "family photograph", "portrait",
+  "child", "minor", "crowd at a stadium", "superdome", "convention centre crowd", "looting", "looter", "riot", "armed patrol",
+  "school bus", "buses in floodwater", "abandoned bus",
+  "readable document", "readable court filing", "readable report", "legible sign", "legible street sign", "legible screen text",
+  "company logo", "agency seal", "Army Corps insignia", "FEMA logo", "any real organisation mark",
+  "helicopter rescue basket", "person hanging from a helicopter",
+  "gavel", "scales of justice", "handcuffs", "generic courtroom drama",
+  "hurricane satellite image with a name label", "map with a death toll", "graveyard", "cross marker on a house"
+ ],
+ "forbidden_claims": [
+  "That a court found the levees or floodwalls were negligently built. The negligence finding covers the MAINTENANCE AND OPERATION of the MR-GO channel and NOTHING ELSE (ledger KT-201, KT-203). The district court held the MR-GO design features themselves were shielded by the discretionary function exception, and the plaintiffs did not even challenge that (KT-207).",
+  "That the negligence finding stands. The Fifth Circuit AFFIRMED it on 2 March 2012 and then, on rehearing, REVERSED it on 25 September 2012 (KT-301, KT-302). The film's ending is the reversal.",
+  "That the reversal means the Corps was careful. The court held the failure to armour was 'shielded by the DFE' (KT-304), and the exception applies 'whether or not the discretion involved be abused' (KT-303, KT-307).",
+  "That MR-GO funnelled the storm surge into the city. IPET demonstrated it 'had little impact on storm water levels for large storms' (KT-708). The MR-GO claim in the lawsuit is about bank erosion and lost protection, not surge amplification. The two may never be merged.",
+  "Any single breach count stated as THE number. IPET says 50 raw and 29 aggregated for repair; ASCE counts 4 pre-overtopping I-wall failures; Team Louisiana says over 50; ILIT gives no total at all (KT-402). Whichever figure is used, the film says whose it is.",
+  "'Over 1,800 dead', or 1,833. The National Hurricane Center retired its own estimate in 2023 (KT-1004). The film uses 1,118 in Louisiana with 135 missing as of August 2006 (KT-1001, KT-1005), or the storm-wide 1,392 -- never blended.",
+  "Anything about school buses, or about the evacuation of the city, or about who should have moved whom. No source in this ledger addresses any of it (KT-1106). This is not that film.",
+  "That the whole city flooded because the walls were overtopped. Approximately two-thirds of the flooding in Orleans East Bank and St. Bernard came through BREACHES (KT-801), and at the outfall canals the water never reached the top of the wall (KT-501).",
+  "Any statement that resolves the disagreement between IPET and ILIT on failure mechanism. They differ on the 17th Street failure surface and on the Lower Ninth Ward (KT-510). The film presents both and picks neither.",
+  "Any figure not in the facts ledger, and in particular any number taken from the GPO DRAFT of IPET Volume I, whose figures differ from the June 2009 final (see the ledger's provenance trap)."
+ ],
+ "ae_beats": {
+  "min_count": 12,
+  "per_act_min": 1,
+  "screen_seconds_min": 90,
+  "jobs_file": "scripts/ae/jobs_katrina.json",
+  "gpu_accel": "SOFTWARE",
+  "beats": [
+   {"id": "AE001", "act": "HOOK", "kind": "comparison", "headline": "8.2 FEET / 14.4 FEET", "source": "FACTS_LEDGER row KT-505", "duration_sec": 8, "notes": "The water at the London Avenue south breach against the design height. The whole film in two numbers."},
+   {"id": "AE002", "act": "HOOK", "kind": "hero_number", "headline": "29 AUGUST 2005", "source": "FACTS_LEDGER row KT-503", "duration_sec": 7},
+   {"id": "AE003", "act": "OP", "kind": "title_card", "headline": "NEW ORLEANS", "source": "FACTS_LEDGER row KT-202", "duration_sec": 7.5},
+   {"id": "AE004", "act": "ACT_1", "kind": "system_map", "headline": "A WALL ON A LEVEE", "source": "FACTS_LEDGER rows KT-405 and KT-601", "duration_sec": 12, "notes": "I-wall on an earthen levee, sheetpile below. Drawn as a mechanism, no lettering."},
+   {"id": "AE005", "act": "ACT_1", "kind": "timeline", "headline": "6 A.M. / 7 A.M. / 8 A.M.", "source": "FACTS_LEDGER rows KT-503 and KT-505", "duration_sec": 10},
+   {"id": "AE006", "act": "ACT_2", "kind": "hero_number", "headline": "TWO-THIRDS", "source": "FACTS_LEDGER row KT-801", "duration_sec": 9, "notes": "The share of the flooding that came through breaches rather than over the top."},
+   {"id": "AE007", "act": "ACT_2", "kind": "comparison", "headline": "HOURS / DAYS", "source": "FACTS_LEDGER row KT-803", "duration_sec": 10, "notes": "Overtopping would have lasted hours. Breaching let water in for days."},
+   {"id": "AE008", "act": "ACT_3", "kind": "system_map", "headline": "THE GAP BEHIND THE WALL", "source": "FACTS_LEDGER rows KT-603 and KT-607", "duration_sec": 12, "notes": "The water-filled gap that cuts the embankment in half. This is the mechanism the 1977 test found."},
+   {"id": "AE009", "act": "ACT_3", "kind": "hero_number", "headline": "1977", "source": "FACTS_LEDGER row KT-602", "duration_sec": 8},
+   {"id": "AE010", "act": "ACT_3", "kind": "quote_card", "headline": "NEITHER OF THESE LESSONS WERE INCORPORATED", "source": "FACTS_LEDGER row KT-604", "duration_sec": 10, "notes": "ILIT verbatim. Designed typography, never a facsimile of a report page."},
+   {"id": "AE011", "act": "ACT_3", "kind": "hero_number", "headline": "1.3", "source": "FACTS_LEDGER row KT-608", "duration_sec": 9, "notes": "The design factor of safety -- traced back to standards for levees protecting farmland."},
+   {"id": "AE012", "act": "ACT_4", "kind": "list_build", "headline": "WHAT THE COURT FOUND", "source": "FACTS_LEDGER rows KT-203 to KT-206", "duration_sec": 12, "notes": "Duval's findings, built one line at a time. The card must carry that this is the TRIAL court."},
+   {"id": "AE013", "act": "ACT_4", "kind": "timeline", "headline": "AFFIRMED / REVERSED", "source": "FACTS_LEDGER rows KT-301 and KT-302", "duration_sec": 10, "notes": "2 March 2012 and 25 September 2012. Same court."},
+   {"id": "AE014", "act": "ENDING", "kind": "quote_card", "headline": "SHIELDED BY THE DFE", "source": "FACTS_LEDGER row KT-304", "duration_sec": 10, "notes": "The sentence that ended it, verbatim."},
+   {"id": "AE015", "act": "ENDING", "kind": "timeline", "headline": "1915 · 1940 · 1947 · 1965 · 1969 · 2005", "source": "FACTS_LEDGER row KT-909", "duration_sec": 9, "notes": "ILIT's own closing list."}
+  ]
+ },
+ "notes": "EP85 of the EP83-85 slate (owner GO 2026-08-25). Bands as EP83/EP84. This episode's forbidden_subjects are the strictest of the three and deliberately so: the owner has ruled that no face appears on the thumbnail at all, and the story is race-charged, so the film carries no identifiable resident, no rescue subject and no body anywhere. School buses are forbidden as a SUBJECT, not only as a claim -- the image is the most-reproduced Katrina photograph in the world and it belongs to a different argument about local evacuation that this film does not make and cannot support. Size the script with gen_narration_case --dry-run and confirm with --measure-section before writing to length (spec v3 6.6, 6.7)."
+}

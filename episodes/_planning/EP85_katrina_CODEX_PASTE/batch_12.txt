@@ -1,0 +1,56 @@
+EP85_katrina — 画像発注 バッチ 12/24（8枚）
+区分: ACT_3 — 湿地の試験
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, person in water, rooftop figure, rescue, school bus, crowd, body, corpse, cross marker, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) W089.png
+   [W089]  flags: 
+   The same report open, both pages blank, desk lamp above
+
+2) W090.png
+   [W090]  flags: 
+   A filing cabinet drawer open on rows of unlabelled folders, one hard light
+
+3) W091.png
+   [W091]  flags: 
+   A single folder pulled halfway out of a full drawer, blank tab, hard light
+
+4) W092.png
+   [W092]  flags: 
+   A journal on a library table, plain cover, reading lamp
+
+5) W093.png
+   [W093]  flags: 
+   A microfilm reader glowing in a dim archive room, the screen a plain bright rectangle
+
+6) W094.png
+   [W094]  flags: 
+   An archive corridor of shelving receding into the dark, one strip light
+
+7) W095.png
+   [W095]  flags: 
+   A permeability test apparatus on a bench, water and tubing, one work lamp
+
+8) W096.png
+   [W096]  flags: 
+   A short length of steel sheet piling standing beside a much longer one for comparison, bright daylight

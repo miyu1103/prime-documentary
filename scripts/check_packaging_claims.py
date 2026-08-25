@@ -457,7 +457,16 @@ def _digit_value(tok: str) -> float | None:
 
 
 def find_numbers(text: str) -> list[NumMention]:
-    """Every number in a span, normalised, with the noun it is attached to."""
+    """Every number in a span, normalised, with the noun it is attached to.
+
+    Ledger ROW IDS are not quantities. Every facts ledger numbers its rows `XX-NNN`
+    (KB-113, MX-602, TM-404 ...) and the script cites them in HTML comments. MEASURED
+    2026-08-25 on EP84: the thumbnail text ONE VALVE was rejected NUMBER_MISMATCH because
+    the ledger line `| TM-404 | THE VALVE.` was read as "the record states 404 valv where
+    the packaging states 1". Strip the ids before tokenising -- they are addresses, and no
+    episode's ledger is safe from this until they are.
+    """
+    text = re.sub(r"\b[A-Z]{2,3}-\d{2,4}\b", " ", text)
     toks = tokens_of(text)
     out: list[NumMention] = []
     i = 0

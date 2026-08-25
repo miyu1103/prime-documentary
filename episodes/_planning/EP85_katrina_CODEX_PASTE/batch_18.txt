@@ -1,0 +1,56 @@
+EP85_katrina — 画像発注 バッチ 18/24（8枚）
+区分: ENDING / PEOPLE（人物あり・顔は一切写さない）
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。**実測（EP75 lahaina・納品117枚時点）: 6枚が
+シネスコで返ってきて作り直しになりました**（1881x836 = 2.25:1 と 1832x859 = 2.13:1）。
+納品前に確認してください: 横÷縦 = 1.778 ちょうど。1672x941 でも 3840x2160 でも構いません。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic documentary reconstruction, one practical light source visible in the frame, high contrast, photorealistic, 16:9,
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+Avoid: text, lettering, handwriting, cursive, signature, numerals, numbers, seals, emblems, logos, badge, insignia, human face, facial features, portrait, identifiable person, person in water, rooftop figure, rescue, school bus, crowd, body, corpse, cross marker, low-resolution.
+
+──────── このバッチの8枚 ────────
+
+1) W137.png
+   [W137]  flags: 
+   A new levee crest freshly grassed, running to the horizon, bright daylight
+
+2) W138.png
+   [W138]  flags: 
+   A quiet residential street at dusk with the floodwall visible at the end of it, one street lamp burning in frame
+
+3) W139.png
+   [W139]  flags: 
+   A canal at dusk, water low, the wall dark against a deepening sky, one street lamp burning in frame
+
+4) W140.png
+   [W140]  flags: 
+   Six plain horizontal bars of different lengths drawn as a lit graphic on dark ground, no characters
+
+5) W141.png
+   [W141]  flags: 
+   A closed folder on a desk under a single lamp, blank cover
+
+6) W142.png
+   [W142]  flags: 
+   A domestic street in bright morning light, ordinary and dry, houses on both sides
+
+7) W143.png
+   [W143]  flags: P
+   An engineer seen from behind on a levee crest looking along the wall, bright daylight
+
+8) W144.png
+   [W144]  flags: P
+   Two engineers seen from behind at a drawing board, drafting lamp burning

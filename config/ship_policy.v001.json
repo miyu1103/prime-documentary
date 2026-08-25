@@ -1,0 +1,426 @@
+{
+  "schema_version": "1.0.0",
+  "artifact_type": "pd_ship_policy",
+  "authored": "2026-08-12",
+  "authority": "Owner directive, 2026-08-12. Supersedes the practical reading of .claude/rules/19-ship-gate.md that treated every acceptance check as a ship blocker.",
+  "why_this_exists": "Five days produced zero scheduled uploads. Reviewing what actually held them back: of seven distinct reasons raised on the night of 2026-08-11, ONE was a genuine risk (an identifiable real minor in frame) and six were self-imposed craft rules -- a real legislative chamber, a Turkish exit sign, a stock clock, footage shared with other episodes, an audio mix revision, a declared asset count, a 0.3-second still-frame overrun. Each of those individually justified hours of rework, and together they justified shipping nothing. A quality bar that prevents publication is not a quality bar; it is a way of never being judged. The owner's instruction is explicit: block on ban and legal risk, not on taste.",
+  "the_rule": "A check may STOP a ship only if it is in `blocking`. Everything else is measured, recorded on the release, and shipped. Nothing here lowers a threshold -- every check still runs and every number is still written down. What changes is which numbers hold the door shut.",
+  "blocking": [
+    {
+      "id": "real_person_likeness",
+      "covers": "An identifiable real person, and above all an identifiable minor, appearing in footage or in a generated image.",
+      "why": "Privacy and likeness exposure, and CLAUDE.md invariant 11. The one genuine finding on 2026-08-11 was of this class.",
+      "checks": [
+        "check_shipped_frames",
+        "plate review verdicts naming a real person"
+      ]
+    },
+    {
+      "id": "rights_and_licence",
+      "covers": "Any asset without a cleared licence or provenance; any third-party mark or trademarked character.",
+      "why": "Strikes and takedowns end a channel. Non-negotiable.",
+      "checks": [
+        "rights_manifest",
+        "footage_blocklist",
+        "asset provenance"
+      ]
+    },
+    {
+      "id": "factual_support",
+      "covers": "A claim with no source id, a claim contradicted by the record, a live case stated as settled, an unpublished opinion cited as precedent. **This covers the TITLE, the THUMBNAIL TEXT and the DESCRIPTION exactly as it covers the narration** -- they are the first claim a viewer meets and the most widely read sentence the channel publishes.",
+      "why": "Defamation exposure and the only thing this channel actually sells.",
+      "checks": [
+        "claim ledger coverage",
+        "forbidden_claims",
+        "title/thumbnail text read against the episode's own script"
+      ],
+      "measured_2026_08_12": "A repackaging pass proposed two titles that were false and that passed every mechanical check: 'Five Boys Confessed on Camera' for the Central Park episode, whose own narration states that Yusef Salaam gave no videotaped confession (four were videotaped, not five); and 'Seven Sailors Signed Confessions' for Norfolk, whose narration enumerates four false confessions and says of the other three that none ever confessed -- seven were CHARGED. Both cleared length, question-form, second-person, citation and punctuation rules.",
+      "the_rule_that_follows": "A mechanical title gate cannot discharge this check and must never be treated as having done so. Length, form and punctuation rules say nothing about truth. **Every figure, name and outcome in a title, thumbnail or description must be located in that episode's own script or facts ledger, and the line cited, before it is published.** A number graded B or uncertain in the source does not go on the thumbnail.",
+      "second_rule": "Live experiments are protected state. Before changing any published title, thumbnail or description, check for a running measurement -- on 2026-08-12 a repackaging instruction would have overwritten 6 of the 13 control films in an experiment with a pre-declared 2026-09-07 read date, destroying the only real measurement the channel has. Read `episodes/_planning/measurements/*RECEIPT*` first."
+    },
+    {
+      "id": "fabricated_record",
+      "covers": "AI-generated documents, judgments, newspapers, police files or evidence presented as authentic; a real event's reconstruction shown as record.",
+      "why": "CLAUDE.md invariant 11 and .claude/rules/media-truth-license.md.",
+      "checks": [
+        "media truth labels",
+        "reconstruction disclosure"
+      ]
+    }
+  ],
+  "advisory": {
+    "note": "These still run, still print, and are recorded on the release. They NEVER stop a ship. They accumulate into the next revision's backlog.",
+    "checks": [
+      "animation_density",
+      "footage_diversity",
+      "arc_nonrepeat",
+      "asset_reuse",
+      "distinct_video_assets",
+      "visual_asset_qc",
+      "forbidden_subjects (craft categories: courtroom interiors, identifiable buildings, stock clichés)",
+      "runtime_band",
+      "padding",
+      "caption_sync",
+      "caption_breaks",
+      "caption_format",
+      "footage_utilization",
+      "sound_layers",
+      "loudness",
+      "bgm_present",
+      "probe_receipt",
+      "preflight_receipt",
+      "spec_satisfied / mandatory_stills"
+    ],
+    "forbidden_subjects_split": "An episode's `forbidden_subjects` mixes two kinds of entry. Terms that protect against risk (a real person, a real building shown as evidence, a live-case claim) stay BLOCKING. Terms that encode taste (a gavel, a clock ticking down, a handshake, a courtroom interior) are ADVISORY. Where a spec does not distinguish them, treat them as advisory unless the entry names a risk in the `blocking` list above."
+  },
+  "no_rebuild_rule": {
+    "statement": "A finished master is never rebuilt from scratch to fix a defect measured in seconds. This has happened repeatedly and it is the single largest waste in the project's history.",
+    "ladder": [
+      "1. Ship it and record the deviation. Default for anything advisory.",
+      "2. Fix it in the NEXT revision of that episode, if there is ever a reason to make one.",
+      "3. Splice only the affected range (`scripts/pd_splice_cuts.py`, ~10-15 min) when the defect is blocking and localised.",
+      "4. Full re-render ONLY when a blocking defect is distributed across the film and cannot be spliced. This requires a written reason on the release."
+    ],
+    "measured": "A full re-render is 1h35m-2h10m plus receipt, delivery, frame extraction and sheet review. A splice of one cut is ~10-15 min. On 2026-08-11 a full re-render was launched redundantly by a queue bug and cost 1h35m for nothing."
+  },
+  "schedule_first": {
+    "statement": "Upload as private-with-publishAt as soon as the blocking set is clear. A scheduled video is not published -- it can be swapped, retitled, re-thumbnailed or replaced right up to its date.",
+    "why": "Shipping is reversible until the publish moment. Holding is not: a day not shipped is gone.",
+    "practice": "Book the slot, then improve against the date. Do not wait for perfect before booking."
+  },
+  "decision_rights": {
+    "statement": "Advisory findings are decided by the agent doing the work, not escalated. Escalate only what is in `blocking`, plus anything that spends money or touches a published video.",
+    "why": "On 2026-08-11 roughly fifteen decisions were put to the owner in one night, nearly all of them advisory. That is its own form of blocking."
+  },
+  "release_record": {
+    "statement": "Every ship writes an honest record of what was advisory-failed, with numbers. Nothing is hidden and nothing is silently waived.",
+    "path": "episodes/<EPID>/09_package/release_deviations.v001.json",
+    "contains": [
+      "check id",
+      "measured value",
+      "threshold",
+      "why it did not block",
+      "backlog: yes/no"
+    ]
+  },
+  "machine_contract": {
+    "note": "Added 2026-08-12 alongside the implementation, per CLAUDE.md 4.6: a policy a machine cannot read cannot be enforced. Nothing above is changed by this block -- it is the same rule written in the form `scripts/pd_ship_policy.py` reads. Every check id below is a real id emitted by scripts/check_final_acceptance.py or one of its _ext_gate modules; the list was taken from the code, not invented.",
+    "reader": "scripts/pd_ship_policy.py",
+    "consumer": "scripts/upload_schedule_case_v001.py",
+    "blocking_checks": {
+      "onscreen_text_verified": "factual_support",
+      "spec_satisfied.forbidden_subjects": "see forbidden_subject_terms -- classified per term, not per check",
+      "script_craft.forbidden_claim": "factual_support",
+      "packaging_qc.ai_disclosure": "fabricated_record"
+    },
+    "blocking_checks_note": "Only four rows, and that is the finding, not an oversight. Of the ~50 ids the acceptance gate emits, these are the only ones that measure a ban or legal risk; the rest measure craft or process. Two of them (script_craft, packaging_qc) are MIXED checks whose failure can be either kind, so they are split on the failing sub-condition rather than on the check id -- see split_checks.",
+    "split_checks": {
+      "script_craft": {
+        "blocking_when_reason_matches": [
+          "forbidden claim",
+          "FACTS_LEDGER"
+        ],
+        "class": "factual_support",
+        "why": "check_script_craft folds an Academy-structure craft measure together with the only forbidden-claim comparison on the ship path. A word-count miss is taste; a forbidden claim in the narration, or a missing ledger that makes the claim set uncheckable, is defamation exposure."
+      },
+      "packaging_qc": {
+        "blocking_when_field_false": "has_ai_disclosure",
+        "class": "fabricated_record",
+        "why": "check_packaging_qc mixes title length and A/B variant counts (taste) with the AI-disclosure line in the description (the disclosure that keeps a reconstruction from being presented as a record). Only the disclosure blocks."
+      }
+    },
+    "advisory_groups": {
+      "craft_motion": "movement and animation richness -- the owner's standing complaint, and a real one, but it is taste and it goes in the backlog, not on the door",
+      "craft_footage": "which clips were used and how often -- diversity, reuse, utilisation, factory share",
+      "craft_image": "picture brightness, resolution and per-cut exposure",
+      "craft_caption": "caption timing, wording, line breaks and formatting",
+      "craft_audio": "mix layers, music bed, loudness and ending fade",
+      "craft_script": "script length, structure, cadence and AI-smell",
+      "craft_packaging": "title, thumbnail and description craft (the AI-disclosure line is split out and blocks -- see split_checks)",
+      "runtime": "finished length against the declared band -- the channel-wide accepted deviation since EP34",
+      "process_receipt": "a preceding receipt is missing, stale or from another render. This is bookkeeping about the build, not a property of the film that goes out; the scheduler separately binds the acceptance receipt to the exact bytes and that binding is not relaxed",
+      "measurement_gap": "the gate could not measure this on the render. Recorded so the gap is visible; the sha binding and the shipped-frame review still bind the bytes",
+      "unclassified": "not present in this map. The rule says only the four blocking classes stop a ship, so an unmapped check is advisory -- but it is recorded as unclassified so somebody adds it here",
+      "craft_pacing": "dead air between narration chunks and repeated phrasing -- pacing craft"
+    },
+    "advisory_checks": {
+      "runtime_band": "runtime",
+      "padding": "craft_pacing",
+      "animation_density": "craft_motion",
+      "animation_mix": "craft_motion",
+      "motion_density": "craft_motion",
+      "motion_energy": "craft_motion",
+      "motion_present": "craft_motion",
+      "leveled_animation": "craft_motion",
+      "low_motion": "craft_motion",
+      "footage_diversity": "craft_footage",
+      "arc_nonrepeat": "craft_footage",
+      "asset_reuse": "craft_footage",
+      "footage_utilization": "craft_footage",
+      "factory_used": "craft_footage",
+      "visual_asset_qc": "craft_footage",
+      "distinct_video_assets": "craft_footage",
+      "mandatory_stills": "craft_footage",
+      "images_present": "craft_image",
+      "body_luma": "craft_image",
+      "image_cut_luma": "craft_image",
+      "image_resolution": "craft_image",
+      "render_resolution": "craft_image",
+      "encoder_settings": "craft_image",
+      "captions_final": "craft_caption",
+      "caption_format": "craft_caption",
+      "caption_sync": "craft_caption",
+      "caption_breaks": "craft_caption",
+      "caption_coverage": "craft_caption",
+      "caption_integrity": "craft_caption",
+      "caption_narration_match": "craft_caption",
+      "sound_layers": "craft_audio",
+      "bgm_present": "craft_audio",
+      "bgm_ending": "craft_audio",
+      "loudness": "craft_audio",
+      "voice_is_master": "craft_audio",
+      "hook_added": "craft_script",
+      "structure_4part": "craft_script",
+      "op_ed_bookends": "craft_script",
+      "script_length": "craft_script",
+      "script_craft": "craft_script",
+      "packaging_qc": "craft_packaging",
+      "spec_satisfied": "craft_footage",
+      "script_lint": "craft_script",
+      "script_structure": "craft_script",
+      "retention_cadence": "craft_script",
+      "thumbnail_ready": "craft_packaging",
+      "thumbnail_visibility": "craft_packaging",
+      "thumb_subject_luma": "craft_packaging",
+      "preflight_receipt": "process_receipt",
+      "probe_receipt": "process_receipt",
+      "render_freshness": "process_receipt",
+      "render_present": "measurement_gap",
+      "render_probe": "measurement_gap"
+    },
+    "forbidden_subject_terms": {
+      "note": "check_spec_satisfied reports a forbidden_subjects hit as `<keyword> (n): file, file`. The keyword is what decides: an entry naming a person, a licence exposure or a fabricated record blocks; an entry naming a look blocks nothing. Seeded from every forbidden_subjects list on disk on 2026-08-12, so no episode shipping today meets the fail-closed default below by surprise.",
+      "blocking": {
+        "child": "real_person_likeness",
+        "children": "real_person_likeness",
+        "kid": "real_person_likeness",
+        "kids": "real_person_likeness",
+        "boy": "real_person_likeness",
+        "boys": "real_person_likeness",
+        "girl": "real_person_likeness",
+        "girls": "real_person_likeness",
+        "baby": "real_person_likeness",
+        "infant": "real_person_likeness",
+        "toddler": "real_person_likeness",
+        "minor": "real_person_likeness",
+        "minors": "real_person_likeness",
+        "teen": "real_person_likeness",
+        "teens": "real_person_likeness",
+        "teenager": "real_person_likeness",
+        "teenagers": "real_person_likeness",
+        "schoolgirl": "real_person_likeness",
+        "schoolboy": "real_person_likeness",
+        "student": "real_person_likeness",
+        "students": "real_person_likeness",
+        "pupil": "real_person_likeness",
+        "pupils": "real_person_likeness",
+        "daughter": "real_person_likeness",
+        "daughters": "real_person_likeness",
+        "son": "real_person_likeness",
+        "sons": "real_person_likeness",
+        "mugshot": "real_person_likeness",
+        "victim": "real_person_likeness",
+        "corpse": "real_person_likeness",
+        "human remains": "real_person_likeness",
+        "burned body": "real_person_likeness",
+        "beaten body": "real_person_likeness",
+        "body bag": "real_person_likeness",
+        "autopsy": "real_person_likeness",
+        "morgue": "real_person_likeness",
+        "gore": "real_person_likeness",
+        "blood": "real_person_likeness",
+        "murder scene": "real_person_likeness",
+        "crime scene": "real_person_likeness",
+        "bludgeoned": "real_person_likeness",
+        "stabbing": "real_person_likeness",
+        "rape": "real_person_likeness",
+        "torture": "real_person_likeness",
+        "electric shock": "real_person_likeness",
+        "suffocation": "real_person_likeness",
+        "casualty": "real_person_likeness",
+        "casualties": "real_person_likeness",
+        "noose": "real_person_likeness",
+        "suicide": "real_person_likeness",
+        "drug use": "real_person_likeness",
+        "drug injection": "real_person_likeness",
+        "watermark": "rights_and_licence",
+        "chyron": "rights_and_licence",
+        "logo": "rights_and_licence",
+        "trademark": "rights_and_licence",
+        "reporter": "rights_and_licence",
+        "news anchor": "rights_and_licence",
+        "rebel": "rights_and_licence",
+        "rebel news": "rights_and_licence",
+        "rebelnews": "rights_and_licence",
+        "y2mate": "rights_and_licence",
+        "2mate": "rights_and_licence",
+        "yt1s": "rights_and_licence",
+        "savefrom": "rights_and_licence",
+        "ssyoutube": "rights_and_licence",
+        "readable document": "fabricated_record",
+        "legible document": "fabricated_record",
+        "fabricated document": "fabricated_record",
+        "forged document": "fabricated_record",
+        "legible signature": "fabricated_record",
+        "readable text": "fabricated_record",
+        "deepfake": "fabricated_record"
+      },
+      "blocking_notes": {
+        "graphic_and_self_harm": "gore/corpse/autopsy/noose/suicide and their neighbours are not one of the four classes by name. They are filed under real_person_likeness because what they depict is a real person's body or death, and because a strike for graphic or self-harm content ends the channel exactly as a likeness complaint would. This is the nearest owner class, and it is named here rather than hidden.",
+        "news_terms": "reporter / news anchor / chyron / watermark and the four download-site tokens all appear together in the specs that ban ripped broadcast footage. They are a licence exposure, not a look."
+      },
+      "advisory": [
+        "gavel",
+        "clock",
+        "handshake",
+        "courtroom",
+        "courthouse",
+        "judge",
+        "bench",
+        "scales",
+        "scales of justice",
+        "stock",
+        "classroom",
+        "playground",
+        "school",
+        "nursery",
+        "collapse",
+        "rubble",
+        "rescue",
+        "firefighter",
+        "debris",
+        "excavator",
+        "ambulance",
+        "body",
+        "weapon",
+        "knife",
+        "gun",
+        "assault",
+        "pills",
+        "rope",
+        "bus",
+        "smartphone",
+        "cellphone",
+        "futuristic",
+        "sci fi",
+        "shredder",
+        "shredded documents",
+        "burning documents",
+        "destroyed records",
+        "baku",
+        "azerbaijan",
+        "kashmir",
+        "vigo",
+        "lynden"
+      ],
+      "advisory_notes": {
+        "places": "classroom / playground / school / nursery name a PLACE. The minor is the risk and the minor terms are blocking; a school exterior is a look, and blocking it would be exactly the kind of self-imposed rule this policy exists to end.",
+        "place_names": "vigo / lynden / baku / azerbaijan / kashmir are era-and-place constraints (the wrong country in shot). Craft."
+      },
+      "unlisted_term_default": {
+        "decision": "block",
+        "class": "unclassified_forbidden_subject",
+        "why": "A forbidden term nobody has classified is the one place a real risk can hide -- EP57's `duc nguyen` is a real person's name and would read as ordinary text to any keyword rule. An unlisted term that actually MATCHES a shipped cut stops the ship and names itself, so it takes one line in this file to resolve. A term that matches nothing costs nothing.",
+        "resolve_by": "add the term to forbidden_subject_terms.blocking (with its class) or .advisory in this file"
+      },
+      "spec_unevaluable": {
+        "no_spec": "advisory -- an episode with no episode_spec declares no forbidden term, so there is nothing to enforce and refusing would be refusing on missing paperwork",
+        "no_film": "blocking when a spec EXISTS -- the episode declared terms and they cannot be checked against the film, which is the case where a real risk hides",
+        "parse_failure": "blocking -- an unreadable answer from check_spec_satisfied is not a clean answer"
+      }
+    },
+    "plate_reject_reasons": {
+      "note": "EP64 memphis was scheduled with 16 reviewer-REJECTED plates cut into the shipped film. The plate gate (scripts/check_plate_verdicts.py) existed, worked, and was never asked again after the render: it is wired into check_episode_inputs.py and preflight_render_gate.py, both INPUT stage, and referenced 0 times in check_final_acceptance.py and upload_schedule_case_v001.py. pd_ship_policy.plate_verdict_rows now re-asks it at ship time. A rejection only matters here when the plate is CUT INTO THE FILM -- marmet (9 rejects) and correa (12) had theirs regenerated or dropped before the build and are unaffected.",
+      "how_read": "The reviewer's own reason TEXT decides the class, not the plate id and not a guess. Rules are tried in order and the first whose `any_of` matches (and whose `unless_any_of` does not) wins. Matching is lowercase substring over the verdict note.",
+      "rules": [
+        {
+          "class": "real_person_likeness",
+          "any_of": ["unambiguously identifiable", "identifiable face", "identifiable", "reads as a depiction of", "depiction of", "likeness", "recognisable face", "recognizable face", "faces fully lit", "all resolve"],
+          "unless_any_of": ["not identifiable", "faces are not visible", "no face visible", "no faces visible", "r3 is clean", "the failure is factual"],
+          "why": "memphis M117 delivered two men, 'both faces fully lit and unambiguously identifiable', in a room the order says is EMPTY; M049 delivered a woman at the family's kitchen window that 'reads as a depiction of Mary Craft'. The unless_any_of list is what keeps M070 ('silhouetted, not identifiable') and M202 ('Faces are not visible, so R3 is clean') out of this class -- a reviewer who wrote down that the face is NOT visible is not reporting a likeness risk."
+        },
+        {
+          "class": "rights_and_licence",
+          "any_of": ["watermark", "chyron", "wordmark", "trademark", "logo", "emblem", "getty", "shutterstock", "alamy", "stock overlay"],
+          "unless_any_of": [],
+          "why": "memphis M159 carries a generator watermark -- 'a line-art emblem ... an overlay, not part of the scene'. Same vocabulary as forbidden_subject_terms.blocking, which already maps watermark/logo/trademark/chyron to this class."
+        },
+        {
+          "class": "factual_support",
+          "any_of": ["states a fact the record does not", "the record does not", "the opinion does not record", "does not record", "the opinion says", "contradicts the record", "the failure is factual", "asserts a household member"],
+          "unless_any_of": [],
+          "why": "memphis M013 delivered seven meters where 'the opinion says two separate gas and electric meters'; M202 'asserts a household member the opinion does not record' and the reviewer wrote in terms that 'the failure is factual'. Ordered BEFORE fabricated_record so M013, whose note names the meter count first and the digit-shaped marks second, is classed by its primary reason."
+        },
+        {
+          "class": "fabricated_record",
+          "any_of": ["glyphs resolve", "individual characters", "readable document", "legible document", "readable text", "legible text", "legible signature", "digit-shaped marks", "fabricated document", "forged", "deepfake"],
+          "unless_any_of": [],
+          "why": "memphis M079: 'Discrete typewriter glyphs resolve on the transcript page at native resolution - individual characters with ascenders and descenders'. A generated document a viewer can read is the media-truth rule in .claude/rules/media-truth-license.md, not a craft complaint."
+        }
+      ],
+      "advisory_reasons": {
+        "any_of": ["nothing of the order survives", "does not exist", "match-cut", "callback fails", "no rhyme with", "breaks the", "unusable as thumb", "the opposite of what", "frame area"],
+        "why": "Continuity, framing and thumbnail-composition rejections are TASTE, and this policy does not stop a ship on taste. They are recorded in the release record as advisory with the reviewer's own words. This list is tried only AFTER every blocking rule above has been given its chance, so a note that also names a watermark or an identifiable face is classed by the risk, never by the craft phrase it happens to contain.",
+        "seeded_from": "the 10 memphis rejects that name only a continuity or composition failure: M048 M070 M073 M094 M156 M168 M172 M181 M191 M210"
+      },
+      "unclassified_reject_default": {
+        "decision": "block",
+        "class": "unclassified_plate_reject",
+        "why": "Same rule, and for the same reason, as unlisted_term_default above: a rejection reason nobody has classified is where a real risk hides. The plate was REJECTED by a reviewer and is on screen anyway -- the only open question is which class, and 'nobody looked' is not an answer. Costs one line here to resolve.",
+        "resolve_by": "add the phrase to plate_reject_reasons.rules[].any_of (with its class) or to advisory_reasons.any_of in this file"
+      },
+      "unresolved_verdict_default": {
+        "decision": "block",
+        "class": "unclassified_plate_verdict",
+        "why": "flag / pending / revise / blank on a plate that is CUT INTO THE FILM is an unmeasured blocking class, not a pass -- there is no reason text to read, so no class can be cleared. memphis shipped with 49 of these. check_plate_verdicts.py already refuses to call `flag` a pass at input stage (EP66's L259 was a FLAG and its hair crosses the headline band); this keeps that answer true after the render.",
+        "resolve_by": "record a verdict for the plate, or drop it from the film"
+      },
+      "no_verdict_file": {
+        "decision": "permit_and_record",
+        "why": "Measured 2026-08-12: 8 of 45 built films carry runs/qc/<slug>_plate_verdicts.v001.json and 37 do not. Refusing on a missing file would stop 37 episodes on a tooling gap no operator can close tonight, and a gate that stops everything on day one is switched off on day two. The absence is written into detector_gaps and printed as UNMEASURED instead -- the same trade, and the same honesty about its cost, as unmeasured_rows() in pd_ship_policy.py.",
+        "cost": "an episode with no plate review at all can still ship, and this record says so rather than showing a green"
+      }
+    },
+    "owner_override": {
+      "statement": "A blocking failure may be shipped only when the owner has formally accepted it for THIS episode: an approvals/*.json with target_type 'edit', decision 'approved*', and the check id in accepted_deviations. This is the pre-existing per-episode mechanism (APR-0002, APR-0003) and it is unchanged. Advisory failures need no approval at all -- that is the point of this policy.",
+      "recorded_as": "owner_approved_blocking in the release record"
+    },
+    "release_record_schema": {
+      "path": "episodes/<EPID>/09_package/release_deviations.v001.json",
+      "versioning": "v001 if free, else the next free v{NNN} -- an existing record is never overwritten (CLAUDE invariant 6)",
+      "row": [
+        "check",
+        "class",
+        "measured",
+        "measured_source",
+        "measured_unavailable",
+        "threshold",
+        "detail",
+        "why_it_did_not_block",
+        "backlog"
+      ],
+      "measured_sources": {
+        "receipt": "a number the acceptance receipt itself carries (today: motion_energy only)",
+        "reevaluated": "the gate's own evaluate() re-run at schedule time on files only -- no ffmpeg, no render decode. Its verdict is compared with the receipt's and any disagreement is recorded",
+        "unavailable": "the receipt records pass/fail per check and not the measured value, and the gate cannot be re-run cheaply (it needs the render). The row is still written, saying so"
+      }
+    }
+  },
+  "unchanged": [
+    "Never fabricate a number, a citation, or a verdict.",
+    "Never report a check as green when it is red -- advisory means shipped-with-it-recorded, never hidden.",
+    "Never delete media; retire it.",
+    "A publishAt in the past publishes immediately.",
+    "Exactly one session operates the publishing calendar."
+  ]
+}

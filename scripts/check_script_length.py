@@ -93,11 +93,20 @@ def count_words(text: str) -> int:
     difference between a projected 725s (PASS) and 671s (below the 690s floor), i.e. the
     gate would have cleared exactly the defect it exists to catch.
     """
-    # cut the appendix: its heading was removed below, but its body was being counted
+    # Strip citation comments FIRST: the appendix cut below is a substring search, and a
+    # comment is exactly where a script explains what it must not say.
+    text = re.sub(r"<!--.*?-->", " ", text, flags=re.S)
+
+    # Cut the appendix: its heading was removed below, but its body was being counted.
+    # MEASURED 2026-08-25 on EP84 threemile: this was a bare `text.find(h)` over a list that
+    # includes "Title", and the script says "Title 18, United States Code" and "Title 10, Code
+    # of Federal Regulations" because that is what the indictment charges. The gate truncated
+    # the script at the first legal citation and reported **80 words** for a 4,800-word script.
+    # An appendix heading is a HEADING: anchor it to the start of a line, after optional '#'.
     for h in APPENDIX_HEADINGS:
-        idx = text.find(h)
-        if idx != -1:
-            text = text[:idx]
+        m = re.search(rf"^#{{0,6}}\s*{re.escape(h)}", text, flags=re.M)
+        if m:
+            text = text[:m.start()]
     # MEASURED 2026-08-20 (PD_ONE_PASS_PRODUCTION_SPEC.v3 6.6) and FIXED 2026-08-21 on EP76:
     # every script since EP66 carries an HTML citation comment under each factual line, and
     # they were being counted as spoken words. Inflation per script: EP69 +2,195, EP68 +1,798,
