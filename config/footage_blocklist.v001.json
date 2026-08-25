@@ -1120,6 +1120,16 @@
    ],
    "label": "monochrome_reads_as_archival",
    "reason": "a fully monochrome silhouette insert among colour shots, under 'They told the jury they were not receiving deals in exchange for their testimony' -- it reads as an authentic archival record of real people, which is what invariant 11 exists to prevent. AMBIGUOUS: the defect is the grade, not the content, and a colour treatment would remove it, so this is scoped rather than blocked. The durable fix is a rule that no cut may render monochrome, not a ban on this clip."
+  },
+  {
+   "ids": [
+    "H014"
+   ],
+   "episodes": [
+    "lahaina"
+   ],
+   "label": "i2v_clip_opens_below_black_threshold",
+   "reason": "EP75 lahaina failed its POST-RENDER GATE on 3 black stretches (114.1-115.4s, 117.4-118.6s, 1076.2-1077.4s). All three are this one clip: a 3.37s exposure ramp measured YAVG 28 -> 110, whose first 1.2s is dark enough that blackdetect (pix_th 0.10) calls it black. Looped into a 6.26s cut it produces TWO holes per cut, and the cut is used twice. The generated frames are faithful -- the source plate H014.png is itself near-black -- so this is a plate problem, not an i2v failure. The clip is quarantined in remotion/public/lahaina/_motion_black_head_rejected_20260825/ and in the E: archive copy; nothing was deleted. Scoped to lahaina: H014 names a different picture in other episodes."
   }
  ],
  "quality_deferred_note": "Set aside on 2026-08-05 by owner decision to ship, NOT because the finding was wrong. Every row here was written from a frame someone actually opened and is an accurate record of what this shelf contains; it is retained verbatim so the same judgement does not have to be made again. These rows do not bind any tool. Restore a row to `blocked` by moving it back."
