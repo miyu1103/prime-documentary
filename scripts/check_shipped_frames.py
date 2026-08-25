@@ -73,6 +73,7 @@ import hashlib
 import json
 import math
 import re
+import shutil
 import subprocess
 import sys
 from datetime import datetime, timezone
@@ -872,6 +873,21 @@ def main() -> int:
         s["flags"] = flags
 
     # ---- sheets --------------------------------------------------------------------------
+    # A SHORTER FILM LEAVES THE LONGER FILM'S SHEETS BEHIND (2026-08-25, EP74). This run writes
+    # sheets 01..N and overwrites in place; when the previous master had MORE cuts, its sheets
+    # N+1.. survive in the same folder under a header that says "SHIPPED MASTER". A reviewer read
+    # itaewon that way today and reported Singapore, Brooklyn, Moscow, Venice and Taipei as
+    # shipped -- none of them is in this master. Sheets from an earlier run are moved aside
+    # before the new ones are written, never silently mixed with them.
+    _prior = sorted(out_dir.glob(f"{slug}_shipped_frames_*.png"))
+    if _prior:
+        _attic = out_dir / "_superseded_sheets"
+        _attic.mkdir(exist_ok=True)
+        for _p in _prior:
+            shutil.move(str(_p), str(_attic / _p.name))
+        print(f"[shipped-frames] moved {len(_prior)} sheet(s) from a previous run to "
+              f"{_rel(_attic)} -- a shorter master must not inherit a longer one's tail")
+
     sheets: list[dict] = []
     tiles = [s for s in samples if not s.get("extract_failed")]
     for n in range(0, len(tiles), TILES_PER_SHEET):
