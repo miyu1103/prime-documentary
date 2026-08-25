@@ -122,6 +122,21 @@ CONFIG = {
     # acceptance_receipt v001 and to the 61-sheet shipped-frames review.
     "oroville": {**_from_meta("PD-2026-071-oroville", "oroville",
                        "2026-08-26T12:00:00+09:00", "2026-08-26T03:00:00Z")},
+    # EP74-EP73, one publication a day with no gap (owner directive 2026-08-25). oroville was
+    # taken public early to fill 08-25, which emptied the 08-26 slot it had been holding, so
+    # itaewon is uploaded the same evening it finishes rather than waiting for the next 16:05
+    # push -- a push at 16:05 can only ever schedule for the FOLLOWING noon, so the seam has to
+    # be closed by hand once. After that the daily push keeps the run going by itself.
+    "itaewon": {**_from_meta("PD-2026-074-itaewon", "itaewon",
+                       "2026-08-26T12:00:00+09:00", "2026-08-26T03:00:00Z")},
+    "lahaina": {**_from_meta("PD-2026-075-lahaina", "lahaina",
+                       "2026-08-27T12:00:00+09:00", "2026-08-27T03:00:00Z")},
+    "morandi": {**_from_meta("PD-2026-076-morandi", "morandi",
+                       "2026-08-28T12:00:00+09:00", "2026-08-28T03:00:00Z")},
+    "lacmegantic": {**_from_meta("PD-2026-072-lacmegantic", "lacmegantic",
+                       "2026-08-29T12:00:00+09:00", "2026-08-29T03:00:00Z")},
+    "uri": {**_from_meta("PD-2026-073-uri", "uri",
+                       "2026-08-30T12:00:00+09:00", "2026-08-30T03:00:00Z")},
     "wronghouse": {**_from_meta("PD-2026-070-wronghouse", "wronghouse",
                        "2026-08-24T12:00:00+09:00", "2026-08-24T03:00:00Z")},
     "florence": {
