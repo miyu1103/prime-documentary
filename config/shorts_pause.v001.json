@@ -1,8 +1,12 @@
 {
   "schema_version": "shorts_pause.v001",
-  "paused_until": "2026-08-29",
-  "reason": "Owner's decision, relayed 2026-08-24: the long-form queue needs the daily quota for four days. Pausing the push stops UPLOADS, not PUBLICATIONS -- 26 Shorts are already uploaded and carry a publishAt, and every one of them goes out as booked through 2026-08-31. Verified against the live channel, not the local ledger: 8/24 1, 8/25-8/30 4 each, 8/31 1. The first genuinely empty day is 8/31 onward whether the push runs or not, so nothing is lost by stopping. The four days go into building short289-309 for EP70-76 instead.",
+  "paused_until": "2026-12-31",
+  "reason": "Owner's decision, 2026-08-25: do not book any more Shorts -- an upload spends 1,650 quota units and four Shorts spend 6,600 of the daily 10,000, which is what stops the long-form from being scheduled. This replaces the 2026-08-24 four-day pause, which would have auto-resumed on 08-29 and started uploading again without anyone asking. Lift it only when the owner says so: set paused_until back to a past date.",
   "set_by": "shorts lane",
-  "set_at": "2026-08-24",
-  "resumes_at_uploads_per_day": 4
+  "set_at": "2026-08-25",
+  "resumes_at_uploads_per_day": 4,
+  "prior_pause": {
+    "paused_until": "2026-08-29",
+    "set_at": "2026-08-24"
+  }
 }
