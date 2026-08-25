@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.1.0",
+  "episode_id": "PD-2026-075-lahaina",
+  "gate": "check_final_acceptance",
+  "status": "FAIL",
+  "video_path": "episodes\\PD-2026-075-lahaina\\08_edit\\lahaina_final_bgm.v001.mp4",
+  "video_sha256": "sha256:06967d35e3154c43683b6065ebd595038fee9f4d74574c6033160de40e341962",
+  "hard_failures": [
+    "animation_density",
+    "sound_layers",
+    "caption_format",
+    "caption_sync",
+    "arc_nonrepeat",
+    "script_structure",
+    "script_length",
+    "retention_cadence",
+    "thumbnail_ready"
+  ],
+  "checks": {
+    "runtime_band": true,
+    "render_resolution": true,
+    "render_freshness": true,
+    "images_present": true,
+    "motion_present": true,
+    "animation_density": false,
+    "motion_energy": true,
+    "body_luma": true,
+    "image_cut_luma": true,
+    "bgm_present": true,
+    "sound_layers": false,
+    "bgm_ending": "skipped",
+    "hook_added": "skipped",
+    "loudness": true,
+    "probe_receipt": true,
+    "voice_is_master": true,
+    "captions_final": true,
+    "caption_format": false,
+    "caption_narration_match": true,
+    "caption_sync": false,
+    "arc_nonrepeat": false,
+    "caption_coverage": true,
+    "footage_utilization": true,
+    "script_lint": true,
+    "thumb_subject_luma": "skipped",
+    "padding": true,
+    "onscreen_text_verified": "skipped",
+    "motion_density": true,
+    "animation_mix": true,
+    "caption_integrity": true,
+    "visual_asset_qc": true,
+    "script_structure": false,
+    "script_craft": true,
+    "script_length": false,
+    "asset_reuse": true,
+    "caption_breaks": true,
+    "retention_cadence": false,
+    "check_packaging_qc": "skipped",
+    "check_encoder_settings": "skipped",
+    "structure_4part": true,
+    "op_ed_bookends": true,
+    "leveled_animation": true,
+    "preflight_receipt": "skipped",
+    "thumbnail_ready": false,
+    "thumbnail_visibility": "skipped",
+    "image_resolution": "skipped",
+    "factory_used": true,
+    "footage_diversity": true
+  },
+  "checks_legend": {
+    "true": "measured and passed",
+    "false": "measured and failed",
+    "skipped": "THE GATE DID NOT MEASURE -- absent inputs, or it raised. Not a pass. See skipped_checks."
+  },
+  "skipped_checks": [
+    {
+      "check": "bgm_ending",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "no music bed under the tail to resolve (body -91.0 dB)"
+    },
+    {
+      "check": "hook_added",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "shotlist totals missing"
+    },
+    {
+      "check": "thumb_subject_luma",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "no selected thumbnail (09_package/thumbnail.selected*.png) to measure"
+    },
+    {
+      "check": "onscreen_text_verified",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "claims not in repo: C:\\Users\\aab15\\Documents\\prime-documentary\\episodes\\PD-2026-075-lahaina\\01_research\\claims.v001.json (skipped honestly)"
+    },
+    {
+      "check": "check_packaging_qc",
+      "kind": "no_inputs",
+      "declared_hard": true,
+      "reason": "no 09_package/youtube_meta.v*.json yet (packaging not authored)"
+    },
+    {
+      "check": "check_encoder_settings",
+      "kind": "no_inputs",
+      "declared_hard": true,
+      "reason": "no long-form final render resolved yet"
+    },
+    {
+      "check": "preflight_receipt",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "retired 2026-08-23 (decisions/0012-RETIRE-PREFLIGHT-RECEIPT.md): measures artifacts the pipeline stopped producing at ~EP67; replaced by spec_satisfied + probe receipt + ep77 plan stage"
+    },
+    {
+      "check": "thumbnail_visibility",
+      "kind": "no_inputs",
+      "declared_hard": false,
+      "reason": "no selected thumbnail to measure"
+    },
+    {
+      "check": "image_resolution",
+      "kind": "no_inputs",
+      "declared_hard": true,
+      "reason": "no hero PNGs staged in remotion/public/lahaina"
+    }
+  ],
+  "generated_at": "2026-08-23T20:42:48.667672+00:00",
+  "motion_energy": {
+    "ok": true,
+    "body_mean": 46.62,
+    "body_p10": 45.04,
+    "body_p50": 45.81,
+    "min_mean": 12.0,
+    "min_p10": 9.0
+  }
+}
