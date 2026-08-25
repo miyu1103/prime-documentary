@@ -72,7 +72,8 @@ def main() -> int:
                         [a.python, "scripts/index_footage_semantic.py", "--build"], a.dry_run) != 0
     if not a.skip_vertical:
         failures += run("score clips missing from the vertical index",
-                        ["py", "-3.11", "scripts/index_archive_vertical.py"], a.dry_run) != 0
+                        ["py", "-3.11", "scripts/index_archive_vertical.py",
+                         "--limit", "100000"], a.dry_run) != 0   # its default caps at 300
 
     print(f"\nrefresh finished; {failures} step(s) reported a failure")
     return 1 if failures else 0
