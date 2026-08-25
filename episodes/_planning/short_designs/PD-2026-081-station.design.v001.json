@@ -1,0 +1,681 @@
+{
+  "episode_id": "PD-2026-081-station",
+  "slug": "station",
+  "status": "DESIGN ONLY - every line traced to a line of episodes/PD-2026-081-station/03_script/script.en.v001.md; checked against episode_spec.v001.json, the highest revision; plates are REUSE of approved episode plates present on disk at remotion/public/station/img; not approved for publication",
+  "destination": {
+    "video_id": null,
+    "title": null,
+    "url": null,
+    "privacy": "not_uploaded",
+    "views": 0
+  },
+  "script": "episodes/PD-2026-081-station/03_script/script.en.v001.md",
+  "era_note": "West Warwick, Rhode Island, 20 February 2003, and the NIST fire laboratory. Per episode_spec forbidden_claims, no Short touches charges, pleas, sentences or convictions (three living men were convicted and the court record has not been opened), says the band caused the deaths, says the owners knew the foam was flammable (the record establishes how the foam behaved, not what any person knew), says the fire department was slow or negligent, states an occupant figure as established fact (the range 440-458 is a media range and is spoken as one), says the exits were illegal or below the code in force, says everyone could have escaped, or says the crowd panicked (NIST's own recommendation states crowd-crush behaviour is not yet well understood). Per forbidden_subjects, no body, no victim, no burning building interior with people, no child.",
+  "plate_pool_note": "188 plates on disk at remotion/public/station/img with matching depth maps. Subjects from the episode's own Codex plate table: the doors and the vestibule S001-S003/S019-S026, the building S005-S018, the foam S027-S033, the laboratory bench S004, the paperwork and the occupancy placard S047-S069. Every plate below verified present; no plate is used by more than one Short.",
+  "shorts_existing": [],
+  "shorts_to_author": [
+    "short322",
+    "short323",
+    "short324"
+  ],
+  "existing_angles_do_not_repeat": {},
+  "shorts": [
+    {
+      "short_id": "short322",
+      "angle": "From the car park the way in is a pair of wide doors. Behind them is a small lobby, and on the far side of that lobby there is one door - and NIST found the rate of escape was set by the narrow one nobody notices.",
+      "avoids": "No charges, no convictions, no named person. Does not say the exits were illegal or below code, does not say the crowd panicked, does not say everyone could have escaped, and gives the occupant figure only as the media range the record supports.",
+      "funnel_question_left_for_longform": "Ninety seconds is not long. What was on the walls that made it ninety?",
+      "loop": true,
+      "loop_join": "The close - nobody forms a view about the throughput of a vestibule - answers the hook's question about two doors outside and one inside.",
+      "era": "West Warwick, Rhode Island, 20 February 2003",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "From the car park it is a pair of doors. Wide, painted, obvious. The way in.",
+          "delivery": "intense",
+          "source_lines": [
+            "From the car park it is a pair of doors.",
+            "Wide, painted, obvious.",
+            "The way in."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "One step inside there is a small lobby, and at the far side of that lobby there is one door.",
+          "delivery": "building",
+          "source_lines": [
+            "One step inside there is a small lobby, and at the far side of that lobby there is one door."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "On a February night in 2003, somewhere between four hundred and forty and four hundred and fifty-eight people were in the building behind it. They had about ninety seconds.",
+          "delivery": "building",
+          "source_lines": [
+            "On a February night in 2003, somewhere between four hundred and forty and four hundred and fifty-eight people were in the building behind it.",
+            "They had about ninety seconds."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "So why does a building have two doors on the outside and one on the inside?",
+          "delivery": "building",
+          "source_lines": [
+            "So why does a building have two doors on the outside and one on the inside?"
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "NIST states the consequence in a single line, and it is the most important sentence in the report.",
+          "delivery": "building",
+          "source_lines": [
+            "NIST states the consequence in a single line, and it is the most important sentence in the report."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The rate of egress from the main entrance was limited by the single doorway inside the vestibule — not by the double doors visible from the outside.",
+          "delivery": "intense",
+          "source_lines": [
+            "The rate of egress from the main entrance was limited by the single doorway inside the vestibule — not by the double doors visible from the outside."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Walk in, and you go through the wide doors first and the narrow one second. Your experience of the entrance is: wide, then a small lobby, then through.",
+          "delivery": "intense",
+          "source_lines": [
+            "Walk in, and you go through the wide doors first and the narrow one second.",
+            "Your experience of the entrance is: wide, then a small lobby, then through."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "Nobody arriving at a club at nine o'clock at night forms a view about the throughput of a vestibule.",
+          "delivery": "calm",
+          "source_lines": [
+            "Nobody arriving at a club at nine o'clock at night forms a view about the throughput of a vestibule."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a pair of wide painted double doors on the front of a building",
+          "source": "REUSE",
+          "source_plate": "S001"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a wooden entrance ramp and handrail leading to a door",
+          "source": "REUSE",
+          "source_plate": "S009"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "the interior of a small entrance vestibule",
+          "source": "REUSE",
+          "source_plate": "S002"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a single doorway seen straight on from a dark interior",
+          "source": "REUSE",
+          "source_plate": "S023"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a small American roadside building at night",
+          "source": "REUSE",
+          "source_plate": "S005"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "a mechanical stopwatch lying on a dark bench",
+          "source": "REUSE",
+          "source_plate": "S004"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a pair of exterior double doors seen from inside",
+          "source": "REUSE",
+          "source_plate": "S021"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L4",
+          "subject": "a tape measure stretched across the width of a doorway",
+          "source": "REUSE",
+          "source_plate": "S003"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "architectural floor plan of a small single-storey building",
+          "source": "REUSE",
+          "source_plate": "S010"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a vestibule floor mat and threshold plate",
+          "source": "REUSE",
+          "source_plate": "S022"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L6",
+          "subject": "a single interior door with a push bar, closed",
+          "source": "REUSE",
+          "source_plate": "S019"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a door closer arm at the top of a doorframe",
+          "source": "REUSE",
+          "source_plate": "S020"
+        },
+        {
+          "n": 13,
+          "role": "loop",
+          "line": "L8",
+          "subject": "close-up of a green emergency exit sign glowing",
+          "source": "REUSE",
+          "source_plate": "S006"
+        },
+        {
+          "n": 14,
+          "role": "loop",
+          "line": "L8",
+          "subject": "an empty coat rail by a club entrance",
+          "source": "REUSE",
+          "source_plate": "S045"
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L3",
+          "anchor": "ninety seconds",
+          "suffix": "ninety",
+          "words": [
+            "ABOUT NINETY",
+            "SECONDS"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L6",
+          "anchor": "the single doorway",
+          "suffix": "single_doorway",
+          "words": [
+            "THE SINGLE",
+            "DOORWAY"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "short_id": "short323",
+      "angle": "NIST ran the test nobody had run in that building: the same device, the same arrangement, three materials. Non-retarded foam lit in under fifteen seconds. Fire-retarded foam did not ignite. Bare wood did not ignite.",
+      "avoids": "Does not say the band caused the deaths or that anyone knew the foam was flammable - the Short is about what the material did, which is what the record establishes. Includes NIST's own contrary bench result, so the finding is not overstated. No charges, no victims.",
+      "funnel_question_left_for_longform": "If the foam was only the ignition, what was the building made of?",
+      "loop": true,
+      "loop_join": "The close - the ordinary product on a wall it was never sold for - returns to the hook's three outcomes from one device.",
+      "era": "Gaithersburg, Maryland, and West Warwick, Rhode Island",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "After the fire, NIST bought foam and ran the test that nobody had run in that building.",
+          "delivery": "intense",
+          "source_lines": [
+            "After the fire, NIST bought foam and ran the test that nobody had run in that building."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "They took a non-fire-retarded polyurethane foam and set a pyrotechnic device beside it, arranged as it had been on the platform. It ignited in less than fifteen seconds.",
+          "delivery": "building",
+          "source_lines": [
+            "They took a non-fire-retarded polyurethane foam and set a pyrotechnic device beside it, arranged as it had been on the club's platform.",
+            "It ignited in less than fifteen seconds."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "Then they took a fire-retarded foam — the same material class, the same purpose, the same look, bought off the shelf — and did the same thing. It did not ignite at all.",
+          "delivery": "building",
+          "source_lines": [
+            "Then they took a fire-retarded polyurethane foam — the same material class, the same purpose, the same look, bought off the shelf — and did exactly the same thing.",
+            "It did not ignite at all."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "And then they removed the foam entirely and exposed the bare wood panelling to the same source. The wood did not ignite either.",
+          "delivery": "building",
+          "source_lines": [
+            "And then they removed the foam entirely and exposed the bare wood panelling to the same source.",
+            "The wood did not ignite either."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "Same device. Same arrangement. Same room. Three outcomes, and only one of them ends this way.",
+          "delivery": "intense",
+          "source_lines": [
+            "Same device.",
+            "Same arrangement.",
+            "Same room.",
+            "Three outcomes, and only one of them ends this way."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The report states the thing that matters about the grade normally sold for packing: it typically contains no fire-retardant additives at all.",
+          "delivery": "intense",
+          "source_lines": [
+            "And the report states the thing that matters about the grade normally sold for packing: it typically contains no fire-retardant additives at all."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "In another arrangement, NIST aimed sparks at foam with a gap built in to make ignition more likely. No ignition was observed.",
+          "delivery": "intense",
+          "source_lines": [
+            "In another bench arrangement, NIST aimed a device's sparks at foam with a deliberate gap and lip built in, specifically to catch hot sparks and make ignition more likely.",
+            "No ignition was observed."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "Not a defective batch. Not a counterfeit. The ordinary product, on a wall it was never sold for.",
+          "delivery": "calm",
+          "source_lines": [
+            "Not a defective batch.",
+            "Not a counterfeit.",
+            "The ordinary product, doing the ordinary job it is sold for, on a wall it was never sold for."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a sheet of grey convoluted egg-crate acoustic foam",
+          "source": "REUSE",
+          "source_plate": "S027"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "extreme macro of grey egg-crate acoustic foam",
+          "source": "REUSE",
+          "source_plate": "S028"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a wall lined with black-painted acoustic foam",
+          "source": "REUSE",
+          "source_plate": "S029"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "close-up of the seam where two sheets of acoustic foam meet",
+          "source": "REUSE",
+          "source_plate": "S030"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "acoustic foam glued over plywood panelling",
+          "source": "REUSE",
+          "source_plate": "S031"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "a can of spray paint and a sheet of foam on a bench",
+          "source": "REUSE",
+          "source_plate": "S032"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "sheets of plywood panelling stacked against a wall",
+          "source": "REUSE",
+          "source_plate": "S036"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L4",
+          "subject": "rigid polystyrene insulation board fitted between studs",
+          "source": "REUSE",
+          "source_plate": "S033"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "an empty raised performance platform in a small venue",
+          "source": "REUSE",
+          "source_plate": "S013"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a raised gypsum-board ceiling in a small venue",
+          "source": "REUSE",
+          "source_plate": "S034"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "a cluster of stage par-can lights hanging on a bar",
+          "source": "REUSE",
+          "source_plate": "S035"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a ceiling tile held in a gloved hand",
+          "source": "REUSE",
+          "source_plate": "S037"
+        },
+        {
+          "n": 13,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a roll of carpet flooring standing on end in a room",
+          "source": "REUSE",
+          "source_plate": "S038"
+        },
+        {
+          "n": 14,
+          "role": "loop",
+          "line": "L8",
+          "subject": "an empty small-venue interior at night",
+          "source": "REUSE",
+          "source_plate": "S043"
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L3",
+          "anchor": "It did not ignite at all",
+          "suffix": "did_not_ignite",
+          "words": [
+            "DID NOT",
+            "IGNITE"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L5",
+          "anchor": "Three outcomes",
+          "suffix": "three_outcomes",
+          "words": [
+            "THREE",
+            "OUTCOMES"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "short_id": "short324",
+      "angle": "An occupant limit is arithmetic tied to the exits - a statement about the doors. The number was raised from 253 to 317 by removing tables and chairs, which genuinely creates floor space. The doors did not change.",
+      "avoids": "Does not say the limit was illegal, that the fire department was negligent, or that anyone broke a rule - the mechanism is described as reasonable, in the script's own words, before its limitation is named. No charges, no convictions, no occupant figure stated as established fact.",
+      "funnel_question_left_for_longform": "If the constraint that kills is the door, what did the door on this building actually measure?",
+      "loop": true,
+      "loop_join": "The close - it is the door - is the hook's arithmetic, resolved.",
+      "era": "West Warwick, Rhode Island, 1981-2003",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "An occupant limit is not decoration and it is not about comfort. It is arithmetic tied to the exits.",
+          "delivery": "intense",
+          "source_lines": [
+            "An occupant limit is not a fire-safety decoration and it is not about comfort.",
+            "It is arithmetic tied to the exits."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "You take the width of the ways out, how fast people move through an opening of that width, how long the building stays survivable, and you work backwards to how many may be inside.",
+          "delivery": "building",
+          "source_lines": [
+            "You take the width of the ways out, you take how fast people move through an opening of that width, you take how long the building will stay survivable, and you work backwards to how many people may be inside."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "The limit is a statement about the doors. Which means that if the doors do not change, the number cannot honestly change either.",
+          "delivery": "building",
+          "source_lines": [
+            "The limit is a statement about the doors.",
+            "Which means that if the doors do not change, the number cannot honestly change either."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "In a memorandum dated the thirtieth of December, 1999, the fire department identified the occupant load as two hundred and fifty-three.",
+          "delivery": "building",
+          "source_lines": [
+            "In a memorandum dated the thirtieth of December, 1999, the West Warwick Fire Department identified the occupant load as two hundred and fifty-three."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "That same memorandum granted an allowance to increase the occupancy to three hundred and seventeen, by removing tables and chairs from three lounge areas.",
+          "delivery": "intense",
+          "source_lines": [
+            "And that same memorandum granted an allowance to increase the occupancy to three hundred and seventeen — by removing tables and chairs from three lounge areas and providing standing room only in those areas."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Read that mechanism carefully, because it is reasonable. Tables and chairs take floor space. Take them out and more people fit.",
+          "delivery": "building",
+          "source_lines": [
+            "Read that mechanism carefully, because it is reasonable and it is exactly how the number moved.",
+            "Tables and chairs take floor space.",
+            "Take them out and more people fit."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "If the constraint you are thinking about is floor area, removing furniture genuinely does let you hold more people, and raising the number is correct.",
+          "delivery": "intense",
+          "source_lines": [
+            "If the constraint you are thinking about is floor area, then removing furniture genuinely does let you hold more people, and raising the number is the correct answer."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "But the constraint that kills is not the floor. It is the door.",
+          "delivery": "calm",
+          "source_lines": [
+            "But the constraint that kills is not the floor.",
+            "It is the door."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a wall-mounted occupancy placard frame beside a door",
+          "source": "REUSE",
+          "source_plate": "S054"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a blank ruled municipal form lying on a desk",
+          "source": "REUSE",
+          "source_plate": "S047"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "an architect's scale rule and pencil on a light table",
+          "source": "REUSE",
+          "source_plate": "S057"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a tape measure and a folded floor plan lying together",
+          "source": "REUSE",
+          "source_plate": "S056"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a close-up of a floor plan on a lit drafting table",
+          "source": "REUSE",
+          "source_plate": "S011"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L4",
+          "subject": "a typewritten memorandum lying on a desk",
+          "source": "REUSE",
+          "source_plate": "S052"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a small-town fire department office in daylight",
+          "source": "REUSE",
+          "source_plate": "S053"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L5",
+          "subject": "an empty lounge area of a small club with the tables in place",
+          "source": "REUSE",
+          "source_plate": "S059"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "the same lounge area with tables and chairs removed",
+          "source": "REUSE",
+          "source_plate": "S060"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a stack of tables and chairs pushed against a wall",
+          "source": "REUSE",
+          "source_plate": "S058"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "a floor plan with coloured density shading",
+          "source": "REUSE",
+          "source_plate": "S061"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a municipal records office in brilliant daylight",
+          "source": "REUSE",
+          "source_plate": "S050"
+        },
+        {
+          "n": 13,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a side exit door on the outside of a wood-shingled wall",
+          "source": "REUSE",
+          "source_plate": "S024"
+        },
+        {
+          "n": 14,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a second side exit door on the opposite wall",
+          "source": "REUSE",
+          "source_plate": "S025"
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L3",
+          "anchor": "a statement about the doors",
+          "suffix": "about_doors",
+          "words": [
+            "A STATEMENT",
+            "ABOUT DOORS"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L8",
+          "anchor": "It is the door",
+          "suffix": "the_door",
+          "words": [
+            "NOT THE FLOOR.",
+            "THE DOOR."
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
+      ]
+    }
+  ]
+}
