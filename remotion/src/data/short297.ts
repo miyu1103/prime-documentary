@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p11', src: 'shorts/short297/short297_11.png', kind: 'image', motion: 'kenburns'},   // a corridor of identical doors receding
   {line: 'L7', id: 'p12', src: 'shorts/short297/short297_12.png', kind: 'image', motion: 'pushin'},   // an empty noticeboard
   {line: 'L8', id: 'p13', src: 'shorts/short297/short297_13.png', kind: 'image', motion: 'parallax'},   // the alley today, empty, a sign standing at its mouth
-  {line: 'L8', id: 'p14', src: 'shorts/short297/short297_14.png', kind: 'image', motion: 'kenburns'},   // the same street at three in the morning, three figures far
+  {line: 'L8', id: 'p14', src: 'shorts/short297/short297_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // the same street at three in the morning, three figures far
 ];
 
 const buildBeats = (): ShortBeat[] => {

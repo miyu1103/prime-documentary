@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p11', src: 'shorts/short308/short308_11.png', kind: 'image', motion: 'kenburns'},   // a substation seen through a chain-link fence, transformers
   {line: 'L7', id: 'p12', src: 'shorts/short308/short308_12.png', kind: 'image', motion: 'pushin'},   // a close layered view through an electrical substation, ice
   {line: 'L8', id: 'p13', src: 'shorts/short308/short308_13.png', kind: 'image', motion: 'parallax'},   // a single screen in a dark room showing an unlabelled desce
-  {line: 'L8', id: 'p14', src: 'shorts/short308/short308_14.png', kind: 'image', motion: 'kenburns'},   // a plain near-black surface with faint horizontal grain
+  {line: 'L8', id: 'p14', src: 'shorts/short308/short308_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // a plain near-black surface with faint horizontal grain
 ];
 
 const buildBeats = (): ShortBeat[] => {

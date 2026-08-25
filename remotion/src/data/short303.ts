@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p11', src: 'shorts/short303/short303_11.png', kind: 'image', motion: 'kenburns'},   // a rectangular access hatch cut into the underside of a con
   {line: 'L7', id: 'p12', src: 'shorts/short303/short303_12.png', kind: 'image', motion: 'pushin'},   // a plain wooden lectern at the front of a meeting room
   {line: 'L8', id: 'p13', src: 'shorts/short303/short303_13.png', kind: 'image', motion: 'parallax'},   // a plain public room with rows of chairs, one chair out of 
-  {line: 'L8', id: 'p14', src: 'shorts/short303/short303_14.png', kind: 'image', motion: 'kenburns'},   // the barrier across the severed road, closer and held
+  {line: 'L8', id: 'p14', src: 'shorts/short303/short303_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // the barrier across the severed road, closer and held
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -90,6 +90,6 @@ export const SHORT303: ShortData = {
   // verbatim from the narration line each beat sits on.
   kineticBeats: [
     {src: 'shorts/short303/short303_kin_two_percent.webm', atSec: 16.37, durSec: 2.2, phrase: "TWO PER CENT"},
-    {src: 'shorts/short303/short303_kin_twentythree_k.webm', atSec: 23.67, durSec: 2.4, phrase: "TWENTY-THREE THOUSAND"},
+    {src: 'shorts/short303/short303_kin_twentythree_k.webm', atSec: 24.11, durSec: 2.4, phrase: "TWENTY-THREE THOUSAND"},
   ],
 };

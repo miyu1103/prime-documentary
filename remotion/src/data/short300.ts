@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p11', src: 'shorts/short300/short300_11.png', kind: 'image', motion: 'kenburns'},   // a two-lane road running downhill straight toward a flat gr
   {line: 'L7', id: 'p12', src: 'shorts/short300/short300_12.png', kind: 'image', motion: 'pushin'},   // an empty fire station apparatus bay with the roller door u
   {line: 'L8', id: 'p13', src: 'shorts/short300/short300_13.png', kind: 'image', motion: 'parallax'},   // a low lava-rock wall standing alone on a cleared lot
-  {line: 'L8', id: 'p14', src: 'shorts/short300/short300_14.png', kind: 'image', motion: 'kenburns'},   // the town now: a rebuilt two-lane street under flat overcas
+  {line: 'L8', id: 'p14', src: 'shorts/short300/short300_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // the town now: a rebuilt two-lane street under flat overcas
 ];
 
 const buildBeats = (): ShortBeat[] => {

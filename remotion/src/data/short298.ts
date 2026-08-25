@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p11', src: 'shorts/short298/short298_11.png', kind: 'image', motion: 'kenburns'},   // a plain matte near-black surface with faint horizontal gra
   {line: 'L7', id: 'p12', src: 'shorts/short298/short298_12.png', kind: 'image', motion: 'pushin'},   // the same galvanised siren pole and horn cluster, framed as
   {line: 'L8', id: 'p13', src: 'shorts/short298/short298_13.png', kind: 'image', motion: 'parallax'},   // a thick bound document lying open on a desk
-  {line: 'L8', id: 'p14', src: 'shorts/short298/short298_14.png', kind: 'image', motion: 'kenburns'},   // a plain municipal meeting room with a long table and stack
+  {line: 'L8', id: 'p14', src: 'shorts/short298/short298_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // a plain municipal meeting room with a long table and stack
 ];
 
 const buildBeats = (): ShortBeat[] => {

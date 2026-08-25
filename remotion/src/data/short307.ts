@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p11', src: 'shorts/short307/short307_11.png', kind: 'image', motion: 'kenburns'},   // a manufacturer's blank metal data plate riveted to a machi
   {line: 'L7', id: 'p12', src: 'shorts/short307/short307_12.png', kind: 'image', motion: 'pushin'},   // an outdoor valve assembly on a plant site, no ice, ordinar
   {line: 'L8', id: 'p13', src: 'shorts/short307/short307_13.png', kind: 'image', motion: 'parallax'},   // new pipe insulation on outdoor plant pipework, clean and r
-  {line: 'L8', id: 'p14', src: 'shorts/short307/short307_14.png', kind: 'image', motion: 'kenburns'},   // new heat-trace cable and cladding on a wellhead, clean
+  {line: 'L8', id: 'p14', src: 'shorts/short307/short307_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // new heat-trace cable and cladding on a wellhead, clean
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -90,6 +90,6 @@ export const SHORT307: ShortData = {
   // verbatim from the narration line each beat sits on.
   kineticBeats: [
     {src: 'shorts/short307/short307_kin_declined.webm', atSec: 20.81, durSec: 2.2, phrase: "DECLINED TO ACT"},
-    {src: 'shorts/short307/short307_kin_eleven_years.webm', atSec: 47.46, durSec: 2.4, phrase: "ELEVEN YEARS"},
+    {src: 'shorts/short307/short307_kin_eleven_years.webm', atSec: 42.64, durSec: 2.4, phrase: "ELEVEN YEARS"},
   ],
 };

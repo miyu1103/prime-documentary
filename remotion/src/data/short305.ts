@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p11', src: 'shorts/short305/short305_11.png', kind: 'image', motion: 'kenburns'},   // a ring binder open on a desk, pages blank
   {line: 'L7', id: 'p12', src: 'shorts/short305/short305_12.png', kind: 'image', motion: 'pushin'},   // close on a knuckle coupler joining two tank cars, slack ch
   {line: 'L8', id: 'p13', src: 'shorts/short305/short305_13.png', kind: 'image', motion: 'parallax'},   // a document storage box on a steel shelf, lid on, label are
-  {line: 'L8', id: 'p14', src: 'shorts/short305/short305_14.png', kind: 'image', motion: 'kenburns'},   // a plain matte near-black surface with faint horizontal gra
+  {line: 'L8', id: 'p14', src: 'shorts/short305/short305_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // a plain matte near-black surface with faint horizontal gra
 ];
 
 const buildBeats = (): ShortBeat[] => {

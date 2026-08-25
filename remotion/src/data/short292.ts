@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p11', src: 'shorts/short292/short292_11.png', kind: 'image', motion: 'kenburns'},   // O108 approved episode plate
   {line: 'L7', id: 'p12', src: 'shorts/short292/short292_12.png', kind: 'image', motion: 'pushin'},   // O109 approved episode plate
   {line: 'L8', id: 'p13', src: 'shorts/short292/short292_13.png', kind: 'image', motion: 'parallax'},   // O098 approved episode plate
-  {line: 'L8', id: 'p14', src: 'shorts/short292/short292_14.png', kind: 'image', motion: 'kenburns'},   // O102 approved episode plate
+  {line: 'L8', id: 'p14', src: 'shorts/short292/short292_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // O102 approved episode plate
 ];
 
 const buildBeats = (): ShortBeat[] => {

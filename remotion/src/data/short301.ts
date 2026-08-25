@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p11', src: 'shorts/short301/short301_11.png', kind: 'image', motion: 'kenburns'},   // close on prestressing strands gone visibly slack inside a 
   {line: 'L7', id: 'p12', src: 'shorts/short301/short301_12.png', kind: 'image', motion: 'pushin'},   // macro of seven-wire steel strand, rust-brown and deeply pi
   {line: 'L8', id: 'p13', src: 'shorts/short301/short301_13.png', kind: 'image', motion: 'parallax'},   // a blank graph grid printed on a plain sheet, axes ruled, n
-  {line: 'L8', id: 'p14', src: 'shorts/short301/short301_14.png', kind: 'image', motion: 'kenburns'},   // a rubber date stamp lying on an ink pad beside a blank doc
+  {line: 'L8', id: 'p14', src: 'shorts/short301/short301_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // a rubber date stamp lying on an ink pad beside a blank doc
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -90,6 +90,6 @@ export const SHORT301: ShortData = {
   // verbatim from the narration line each beat sits on.
   kineticBeats: [
     {src: 'shorts/short301/short301_kin_close_the_road.webm', atSec: 17.88, durSec: 2.2, phrase: "SEVENTY CLOSE THE ROAD"},
-    {src: 'shorts/short301/short301_kin_number_in_box.webm', atSec: 51.48, durSec: 2.4, phrase: "A NUMBER IN A BOX"},
+    {src: 'shorts/short301/short301_kin_number_in_box.webm', atSec: 47.94, durSec: 2.4, phrase: "A NUMBER IN A BOX"},
   ],
 };

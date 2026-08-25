@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p11', src: 'shorts/short299/short299_11.png', kind: 'image', motion: 'kenburns'},   // a plain municipal operations room with rows of desks
   {line: 'L7', id: 'p12', src: 'shorts/short299/short299_12.png', kind: 'image', motion: 'pushin'},   // the town on an ordinary bright weekday, low-rise Pacific s
   {line: 'L8', id: 'p13', src: 'shorts/short299/short299_13.png', kind: 'image', motion: 'parallax'},   // a small mains-powered radio standing on a kitchen counter
-  {line: 'L8', id: 'p14', src: 'shorts/short299/short299_14.png', kind: 'image', motion: 'kenburns'},   // a plain matte near-black surface with faint horizontal gra
+  {line: 'L8', id: 'p14', src: 'shorts/short299/short299_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // a plain matte near-black surface with faint horizontal gra
 ];
 
 const buildBeats = (): ShortBeat[] => {
@@ -90,6 +90,6 @@ export const SHORT299: ShortData = {
   // verbatim from the narration line each beat sits on.
   kineticBeats: [
     {src: 'shorts/short299/short299_kin_shelter_closed.webm', atSec: 12.89, durSec: 2.2, phrase: "ALREADY CLOSED"},
-    {src: 'shorts/short299/short299_kin_network_died.webm', atSec: 50.15, durSec: 2.4, phrase: "ALREADY DIED"},
+    {src: 'shorts/short299/short299_kin_network_died.webm', atSec: 45.71, durSec: 2.4, phrase: "ALREADY DIED"},
   ],
 };

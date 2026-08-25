@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L7', id: 'p11', src: 'shorts/short302/short302_11.png', kind: 'image', motion: 'kenburns'},   // a bound calculation report open on a desk, its pages ruled
   {line: 'L7', id: 'p12', src: 'shorts/short302/short302_12.png', kind: 'image', motion: 'pushin'},   // close on one blank index tab standing above the others
   {line: 'L8', id: 'p13', src: 'shorts/short302/short302_13.png', kind: 'image', motion: 'parallax'},   // close on the empty title block panel of a blank engineerin
-  {line: 'L8', id: 'p14', src: 'shorts/short302/short302_14.png', kind: 'image', motion: 'kenburns'},   // a plain white ground with a single fine horizontal line ru
+  {line: 'L8', id: 'p14', src: 'shorts/short302/short302_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // a plain white ground with a single fine horizontal line ru
 ];
 
 const buildBeats = (): ShortBeat[] => {

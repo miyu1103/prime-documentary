@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p11', src: 'shorts/short306/short306_11.png', kind: 'image', motion: 'kenburns'},   // extreme close on a freight car wheel on rail, the tread ju
   {line: 'L7', id: 'p12', src: 'shorts/short306/short306_12.png', kind: 'image', motion: 'pushin'},   // the side of a moving train at night, blurred, one light st
   {line: 'L8', id: 'p13', src: 'shorts/short306/short306_13.png', kind: 'image', motion: 'parallax'},   // a railway curve seen from outside it at night, the outer r
-  {line: 'L8', id: 'p14', src: 'shorts/short306/short306_14.png', kind: 'image', motion: 'kenburns'},   // the first houses beside the line, dark, seen from track le
+  {line: 'L8', id: 'p14', src: 'shorts/short306/short306_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // the first houses beside the line, dark, seen from track le
 ];
 
 const buildBeats = (): ShortBeat[] => {

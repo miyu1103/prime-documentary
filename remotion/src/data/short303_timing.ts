@@ -3,7 +3,7 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT303_TOTAL_SEC = 51.766;
+export const SHORT303_TOTAL_SEC = 57.293;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
@@ -24,27 +24,27 @@ export const LINE_WINDOWS: LineWindow[] = [
   {
     "id": "L4",
     "start": 20.537,
-    "end": 26.481
+    "end": 27.364
   },
   {
     "id": "L5",
-    "start": 26.701,
-    "end": 30.881
+    "start": 27.584,
+    "end": 33.157
   },
   {
     "id": "L6",
-    "start": 31.101,
-    "end": 34.212
+    "start": 33.377,
+    "end": 39.739
   },
   {
     "id": "L7",
-    "start": 34.432,
-    "end": 39.958
+    "start": 39.959,
+    "end": 45.485
   },
   {
     "id": "L8",
-    "start": 40.178,
-    "end": 50.766
+    "start": 45.705,
+    "end": 56.293
   }
 ];
 
@@ -110,83 +110,103 @@ export const SHORT303_CAPTIONS: ShortCaption[] = [
     "endSec": 20.317
   },
   {
-    "word": "Before 1999 it averaged one point three",
+    "word": "In the seventeen years to 1999",
     "startSec": 20.537,
-    "endSec": 23.142
+    "endSec": 22.451
   },
   {
-    "word": "million euros a year. After twenty-three thousand.",
-    "startSec": 23.142,
-    "endSec": 26.481
+    "word": "it averaged one point three million euros",
+    "startSec": 22.451,
+    "endSec": 25.067
+  },
+  {
+    "word": "a year. After twenty-three thousand.",
+    "startSec": 25.067,
+    "endSec": 27.364
   },
   {
     "word": "The whole list of structural works",
-    "startSec": 26.701,
-    "endSec": 28.571
+    "startSec": 27.584,
+    "endSec": 29.713
   },
   {
-    "word": "over thirty-six years is seven lines long.",
-    "startSec": 28.571,
-    "endSec": 30.881
+    "word": "on that bridge",
+    "startSec": 29.713,
+    "endSec": 30.59
   },
   {
-    "word": "Then 2005: fifty thousand.",
-    "startSec": 31.101,
-    "endSec": 32.719
+    "word": "over thirty-six years",
+    "startSec": 30.59,
+    "endSec": 31.905
+  },
+  {
+    "word": "is seven lines long.",
+    "startSec": 31.905,
+    "endSec": 33.157
+  },
+  {
+    "word": "Then 2005: fifty thousand. 2015:",
+    "startSec": 33.377,
+    "endSec": 35.543
+  },
+  {
+    "word": "two hundred and eighty-eight thousand.",
+    "startSec": 35.543,
+    "endSec": 38.115
   },
   {
     "word": "That is the whole of it.",
-    "startSec": 32.719,
-    "endSec": 34.212
+    "startSec": 38.115,
+    "endSec": 39.739
   },
   {
     "word": "The commission drew the obvious conclusion",
-    "startSec": 34.432,
-    "endSec": 36.664
+    "startSec": 39.959,
+    "endSec": 42.191
   },
   {
     "word": "and it wrote it down",
-    "startSec": 36.664,
-    "endSec": 37.726
+    "startSec": 42.191,
+    "endSec": 43.253
   },
   {
     "word": "in the language",
-    "startSec": 37.726,
-    "endSec": 38.523
+    "startSec": 43.253,
+    "endSec": 44.05
   },
   {
     "word": "of the concession contract.",
-    "startSec": 38.523,
-    "endSec": 39.958
+    "startSec": 44.05,
+    "endSec": 45.485
   },
   {
     "word": "Not doing simple ordinary maintenance",
-    "startSec": 40.178,
-    "endSec": 42.354
+    "startSec": 45.705,
+    "endSec": 47.881
   },
   {
     "word": "today means wanting",
-    "startSec": 42.354,
-    "endSec": 43.472
+    "startSec": 47.881,
+    "endSec": 48.999
   },
   {
     "word": "to do a great deal",
-    "startSec": 43.472,
-    "endSec": 44.531
+    "startSec": 48.999,
+    "endSec": 50.058
   },
   {
     "word": "of extraordinary maintenance tomorrow",
-    "startSec": 44.531,
-    "endSec": 46.707
+    "startSec": 50.058,
+    "endSec": 52.234
   },
   {
     "word": "at certainly higher costs",
-    "startSec": 46.707,
-    "endSec": 48.178
+    "startSec": 52.234,
+    "endSec": 53.705
   },
   {
     "word": "with a mirror-image higher remunerativeness.",
-    "startSec": 48.178,
-    "endSec": 50.766
+    "startSec": 53.705,
+    "endSec": 56.293
   }
 ];

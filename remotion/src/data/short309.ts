@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p11', src: 'shorts/short309/short309_11.png', kind: 'image', motion: 'kenburns'},   // a plain dark surface for a composited three-node loop diag
   {line: 'L7', id: 'p12', src: 'shorts/short309/short309_12.png', kind: 'image', motion: 'pushin'},   // a gas wellhead valve tree with rime ice on every surface
   {line: 'L8', id: 'p13', src: 'shorts/short309/short309_13.png', kind: 'image', motion: 'parallax'},   // a figure in high-visibility clothing walking a gas pad in 
-  {line: 'L8', id: 'p14', src: 'shorts/short309/short309_14.png', kind: 'image', motion: 'kenburns'},   // the same gas field under a hot flat sky, dry grass
+  {line: 'L8', id: 'p14', src: 'shorts/short309/short309_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // the same gas field under a hot flat sky, dry grass
 ];
 
 const buildBeats = (): ShortBeat[] => {

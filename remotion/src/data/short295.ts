@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p11', src: 'shorts/short295/short295_11.png', kind: 'image', motion: 'kenburns'},   // a hand holding a two-way radio, no marking on it
   {line: 'L7', id: 'p12', src: 'shorts/short295/short295_12.png', kind: 'image', motion: 'pushin'},   // the back of a high-visibility figure at a junction, night
   {line: 'L8', id: 'p13', src: 'shorts/short295/short295_13.png', kind: 'image', motion: 'parallax'},   // the alley in rain at night, empty, reflections doubling th
-  {line: 'L8', id: 'p14', src: 'shorts/short295/short295_14.png', kind: 'image', motion: 'kenburns'},   // the alley at dusk, empty, sign boxes coming on, all letter
+  {line: 'L8', id: 'p14', src: 'shorts/short295/short295_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // the alley at dusk, empty, sign boxes coming on, all letter
 ];
 
 const buildBeats = (): ShortBeat[] => {

@@ -35,7 +35,7 @@ const CUTS: Cut[] = [
   {line: 'L6', id: 'p11', src: 'shorts/short296/short296_11.png', kind: 'image', motion: 'kenburns'},   // the awning line overhead: PVC awnings and stacked illumina
   {line: 'L6', id: 'p12', src: 'shorts/short296/short296_12.png', kind: 'image', motion: 'pushin'},   // the building line from above: roofscape, condenser units, 
   {line: 'L7', id: 'p13', src: 'shorts/short296/short296_13.png', kind: 'image', motion: 'parallax'},   // the alley wall at arm's length, sodium and LED mixed on a 
-  {line: 'L8', id: 'p14', src: 'shorts/short296/short296_14.png', kind: 'image', motion: 'kenburns'},   // steam from a wall vent crossing the empty alley, night
+  {line: 'L8', id: 'p14', src: 'shorts/short296/short296_14.png', kind: 'image', motion: 'kenburns', isCta: true, rewind: true, fast: true},   // steam from a wall vent crossing the empty alley, night
 ];
 
 const buildBeats = (): ShortBeat[] => {
