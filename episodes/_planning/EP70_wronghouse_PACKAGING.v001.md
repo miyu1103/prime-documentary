@@ -102,3 +102,138 @@ zero-CTA rule).
 and C are all false, T2 is false, and the description's first two lines are false. **Re-verify §9 of the
 facts ledger before the render and again before scheduling**, and if a decision has landed, this file is
 rewritten rather than patched.
+
+## 7. OPENING OVERLAY — 動画オープニング設計書ルール準拠
+
+`C:/Users/aab15/CLAUDE.md`（動画オープニング設計書の作成ルール）に従い、すべて数値で書く。
+同ルールが禁じる抽象表現はこの節に一つも無い。**フレーム直書きはしない。**F値はすべて
+`Math.round(秒 * fps)` の算出結果であり、括弧内は 30fps のときの実数である。
+
+EP70 は EP66 以降と同じ **overlay** レイアウトである（`filmconfig` の
+`openingVariant: "overlay"` / `leadSeconds: 0`）。**新規部品は作らない。**既存の
+`remotion/src/components/Bookends.tsx` の `BrandOpening` を `variant='overlay'` で呼ぶだけで、
+本節はその実装の実数を書き写したものである（推測値はひとつも無い）。
+
+### 7.0 環境・Remotion設定（マニュアル セクション0）
+
+リポジトリから読んだ実値。**記憶ではない。**実装者はここだけ見れば調べ直す必要がない。
+
+| 項目 | 値 | 出所 |
+|---|---|---|
+| 解像度 | **1920 × 1080** | `remotion/src/brand.ts` `BRAND.video` |
+| fps | **30**（マニュアルの例示は60だが PD 長尺は 30。**F値は必ず `useVideoConfig()` の fps から算出**） | 同上 |
+| composition id | **`Ep70Wronghouse`** | `remotion/src/Root.tsx:804` |
+| durationInFrames | `wronghouseFilmDurationInFrames = caseFilmDurationInFrames(data, BRAND.video.fps)` ＝ `Math.round((narrationSeconds + ENDCARD_SEC) * fps)`。`leadSeconds: 0` なので hook 分の加算は無い | `WronghouseFilm.tsx:8`。**直書き禁止** |
+| 中間画像フォーマット | **png**（`setVideoImageFormat('png')`） | `remotion/remotion.config.ts` |
+| コーデック | **h264 / libx264**・**CRF 16** | 同上 |
+| pixelFormat | **yuv420p** | 同上 |
+| colorSpace（色空間） | **bt709**（`setColorSpace`） | 同上 |
+| 音声 | **aac**・ビットレート **320k** | 同上 |
+| GPU | **angle**（`setChromiumOpenGlRenderer('angle')`） | 同上 |
+| 並列度 concurrency | `os.cpus().length`。ただし WebGL/深度を含む長尺は **`--concurrency=4`** | 同上＋正典 §7 |
+
+必要な依存パッケージ（**導入済み。再インストール不要**）:
+
+```bash
+npm i @remotion/motion-blur     # Trail。7.3 の入退場に使う
+```
+
+### 7.1 前提と不変条件
+
+- 対象は既存部品 `Bookends.tsx` の `BrandOpening`。**新規作成も fork もしない**（invariant 14）。
+- `OPENING_SEC = 3.5` と `ENDCARD_SEC = 9.0` は**変更しない**（`Bookends.tsx:34-35`）。
+- `BrandEndcard` は末尾 **9.0秒**（`Math.round(9.0 * fps)` = 270F）。
+- overlay は `seriesLabel` と `title` だけを描く。`subtitle` は card 版のみが使う
+  （`Bookends.tsx:404`）。EP70 の subtitle は endcard 側の署名であり、帯には出ない。
+
+### 7.2 秒数ベースのタイムライン（開始 30.512s ／ 全長 3.50s）
+
+開始位置は `filmconfig` の `hookSeconds: 30.512`。フックが終わった瞬間に帯が上がる。
+
+| 区間 | 秒 | F（開始からの相対） | 内容 |
+|---|---|---|---|
+| in | 30.512–30.912 | 0–12 | 帯とモノグラムが下から入る |
+| in | 30.645–31.112 | 4–18 | シリーズ名が切り上がる |
+| in | 30.779–31.312 | 8–24 | タイトルが切り上がる |
+| hold | 31.312–33.112 | 24–78 | 静止。裏は動き続ける |
+| out | 33.112–34.012 | 78–105 | 3要素が下へ抜ける |
+
+**ナレーションは止めない。**この 3.5 秒の裏で `OP` セクションの台詞が進む。
+これが overlay を選ぶ唯一の理由であり、full-screen card との違いのすべてである。
+
+### 7.3 各モーションの数値（**等速線形は禁止**・opacity 単独も禁止）
+
+| 要素 | 開始F | 終了F | 移動量 | イージング | opacity |
+|---|---|---|---|---|---|
+| スクリム帯 | 0 | 12 | translateY **+72 → 0 px** | `spring({fps, config:{damping: 20, mass: 0.6}})` | 0 → 0.82（**translateY と併用**） |
+| モノグラム | 0 | 12 | translateY **+40 → 0 px** ／ scale **0.94 → 1.0** | `spring({fps, config:{damping: 18, mass: 0.5}})` | 0 → 1（併用） |
+| シリーズ名 | 4 | 18 | translateY **+100% → 0 px**（親 `overflow:hidden`） | `Easing.out(Easing.cubic)` | 常時 1（**マスクで見せる**） |
+| タイトル | 8 | 24 | translateY **+100% → 0 px**（親 `overflow:hidden`） | `Easing.out(Easing.cubic)` | 常時 1（同上） |
+| 退場（3要素） | 78 / 84 / 90 | +15 | translateY **0 → +64 px** | `Easing.in(Easing.cubic)` | 1 → 0（併用） |
+
+- **スタッガー**：入場は +4F ずつ、退場は -6F ずつ。3要素を同時に動かさない。
+- **モーションブラー**：入退場の translate に `@remotion/motion-blur` の `Trail`
+  （`layers={6} lagInFrames={1.2}`）。hold 区間には掛けない。
+- 数値はすべて**定数として1箇所**に置く：
+  `OVERLAY = { inF: 12, holdF: 54, outF: 15, bandH: 360, scale: 0.36 }`。
+- **opacity だけで出る要素はひとつも無い。**上表のとおり全要素が translateY か scale を伴う。
+
+### 7.4 レイヤー構成（下から。最低3層の要件を満たす）
+
+1. **本編カット**（`OffthreadVideo` ／ 静止画）— 止めない。overlay は上に乗るだけ
+2. **スクリム帯**（画面下 22%・`rgba(8,10,14,0.82)`・上端 12px はグラデでフェード）
+3. **モノグラム**（左・高さ 64px）
+4. **文字**（シリーズ名 28px ／ タイトル 46px・`overflow:hidden` の親でマスク切り上がり）
+
+全画面カードと違い **1層目が生き続ける**。「話が止まらない」の実装上の意味はこれである。
+
+### 7.5 props と型
+
+```ts
+type BrandOpeningProps = {
+  seriesLabel: string;
+  title: string;
+  subtitle?: string;
+  variant?: 'card' | 'overlay';   // 既定 'card' = 現行。EP62-65 は無変更
+};
+```
+
+EP70 の実値（`remotion/src/compositions/WronghouseFilm.tsx:14-16`）:
+
+| prop | 型 | 値 |
+|---|---|---|
+| `seriesLabel` | `string` | `"PRIME DOCUMENTARY"` |
+| `title` | `string` | `"The Wrong House"` |
+| `subtitle` | `string?` | `"Five o'clock in the morning, an FBI raid, and the address that was never theirs."`（endcard のみ） |
+| `variant` | `'card' \| 'overlay'` | `'overlay'` |
+
+`film.json` 側が受け取る props 名は **`openingVariant`**（`'card' \| 'overlay'`）と
+**`leadSeconds`**（number）。EP70 は `openingVariant: 'overlay'`・`leadSeconds: 0`。
+どちらも任意項目であり、宣言しない既存話の挙動は変わらない。
+
+**§2 のタイトル（71–78字）は帯には入らない。**帯に出るのは `"The Wrong House"` である。
+YouTube のタイトルと画面上のタイトルは別物であり、ここを取り違えると帯が破綻する。
+
+### 7.6 確認方法
+
+`npm run studio` で `Ep70Wronghouse` を開き、**30.5s と 34.0s の前後 15F** を1コマ送りで確認する。
+見る点は3つ——①本編カットが裏で動き続けているか ②文字が下からマスクで現れるか
+（フェードだけになっていないか） ③3要素が同時に動いていないか。
+
+**書き出しコマンド**（マニュアル §5 の「props 差し替えで量産できる形」）:
+
+```bash
+# 本番（全尺）
+bash scripts/_finish_episode.sh wronghouse Ep70Wronghouse 70
+
+# オープニングだけ確認する（0:29–0:36 ＝ frames 870-1080 @30fps）
+cd remotion && npx remotion render Ep70Wronghouse ../out/ep70_op_check.mp4 \
+  --public-dir=public_ep70 --frames=870-1080
+
+# variant を差し替えて比較する（card = 全画面 ／ overlay = 本設計）
+cd remotion && npx remotion render Ep70Wronghouse ../out/ep70_op_card.mp4 \
+  --public-dir=public_ep70 --frames=870-1080 \
+  --props='{"openingVariant":"card"}'
+```
+
+**props を差し替えるだけで両方が出せること自体が要件である。**`variant` をコードに直書きしない。

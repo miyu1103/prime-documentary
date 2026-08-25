@@ -1,4 +1,4 @@
-# EP80 · The Ship Held For Seventy-Five Minutes. - SCRIPT v001
+# EP80 · The Ship Held For Sixty-Nine Minutes. - SCRIPT v001
 
 <!--
 CONTROLLING IDEA (never spoken in the film):
@@ -20,9 +20,9 @@ A cruise ship is a building that floats, and the thing that tells you a building
 
 On a January night off the Italian coast, four thousand two hundred and twenty-nine people felt a floor stop being level. <!-- CC-002 -->
 
-It took seventy-five minutes to give the order to leave. <!-- CC-012, CC-021 -->
+It took sixty-nine minutes to give the order to leave. <!-- CC-012, CC-021 -->
 
-The people who investigated it worked out that everybody could have got off. So what used up the seventy-five minutes?
+The people who investigated it worked out that everybody could have got off. So what used up the sixty-nine minutes?
 
 ## OP
 <!-- canonical bookend - not narrated, do not write copy here -->
@@ -227,7 +227,7 @@ The people trained to challenge were on the bridge. The person they would have b
 
 From the first of September 2012 - eight months after this night - the parent corporation made that course mandatory, along with electronic chart training, ship handling and stability. The master and the staff master have to attend all of them. <!-- CC-605 -->
 
-## ACT_3 - SEVENTY-FIVE MINUTES
+## ACT_3 - SIXTY-NINE MINUTES
 Here is the clock. Every time in it comes off the ship's own recorder.
 
 Nine forty-five and seven seconds: the contact. <!-- CC-012 -->
@@ -490,7 +490,7 @@ The blackout took the rudder and the pumps in ninety seconds. <!-- CC-013, CC-01
 
 Neither of those could be undone by anybody on board.
 
-What was left was time, and there was more of it than the night needed. Seventy-five minutes to the order. Another twenty-two before the heel reached thirty degrees. <!-- CC-021, CC-204 -->
+What was left was time, and there was more of it than the night needed. Sixty-nine minutes to the order. Another eighteen before the heel reached thirty degrees. <!-- CC-021, CC-204 -->
 
 Thirteen degrees. Thirty. Forty. Eighty. <!-- CC-203, CC-204, CC-025 -->
 

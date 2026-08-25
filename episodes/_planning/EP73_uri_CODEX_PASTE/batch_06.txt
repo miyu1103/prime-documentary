@@ -1,0 +1,55 @@
+EP73_uri — 画像発注 バッチ 6/15（8枚）
+区分: ACT_2 — THE RECOMMENDATION
+
+以下を1枚ずつ生成してください。**1プロンプト＝1枚**です。
+複数のプロンプトをまとめて1枚にしないでください。
+ファイル名は指定のとおりにしてください（連番がそのまま組み立てに使われます）。
+
+**アスペクト比は全枚 16:9（横1.778）で固定してください。**
+シネスコ（2.35:1 / 2.25:1 / 2.13:1）にしないでください。16:9の映像に入れると、
+誰も選んでいない切り取りか黒帯になります。実測: EP75 lahaina の最初の16枚のうち
+2枚（H002 が 1881x836 = 2.25:1、H014 が 1832x859 = 2.13:1）がこれで作り直しになりました。
+
+──────── 全プロンプト共通の指定 ────────
+
+各プロンプトの先頭に、次の [STYLE] を必ず付けてください:
+
+cinematic still, photographic, location and period follow the individual subject exactly; unless another year or place is stated, the register is Texas in February 2021 — flat land, low mesquite and live oak, wide suburban streets, single-storey brick and stucco houses with attached garages, strip malls and drive-throughs, pickup trucks, water towers, transmission pylons crossing open ground, an enormous overcast grey sky. For exterior plates flagged A, or whose subject explicitly asks for snow or outdoor ice: show thin unfamiliar snow only two to six inches deep on ground that has never been ploughed or salted, with ice glazing branches, fences and cars. Never bring snow into an interior. For plates flagged B, or whose subject says ordinary weather, no snow, before, after, summer, office, room or blank ground: do not introduce snow or ice unless the individual subject explicitly requests it. Muted natural colour, low contrast but never crushed: shadows keep their detail and the frame reads clearly on a phone screen, restrained documentary framing, people small in frame and never posed, worn unglamorous ordinary surfaces — wet asphalt, breeze block, vinyl siding, laminate counter, galvanised steel, manila card — nothing staged for advertising, ultra-detailed, photoreal, 4K, long edge 3840 or greater, 16:9, fine film grain. Apply every written-content, identity and watermark exclusion from [NEG].
+
+各プロンプトに、次の [NEG] を「避けるもの」として必ず適用してください:
+
+text, lettering, readable text, legible text, numerals, numbers, digits, house numbers, handwriting, cursive, signature, legible signature, seals, seal, emblems, emblem, logos, logo, badge, insignia, wordmarks, name plates, licence plate, registration plate, identifiable person, recognisable person, recognizable person, likeness of a real individual, portrait of a named person, celebrity, public figure, deepfake, body, corpse, injured person, blood, hospital, funeral, grave, mourner, crying, child in distress, ski resort, ski slope, snowboard, alpine, nordic, aurora, frozen lake, deep snowbank, snowdrift, snow plough convoy, pine forest under snow, igloo, husky, polar bear, european street, asian street, EU number plate, right-hand-drive traffic, new york skyline, chicago skyline, megacity skyline, expressway interchange, palm beach, ocean surf, tropical, desert dune, gavel, scales of justice, jury box, courtroom interior, handcuffs, money rain, falling banknotes, stock ticker, candlestick chart, hacking screens, green code rain, golden hour, sunset glow, postcard scenery, christmas, glossy advertising lighting, flat CGI, 3D render, cartoon, illustration, oversaturated, HDR halo, watermark
+
+──────── このバッチの8枚 ────────
+
+1) U041.png
+   [the years]  flags: R B
+   a wall calendar grid with no printing, in a plain office
+
+2) U042.png
+   [the workshop]  flags: P D B
+   a training room with a projector, blank screen and rows of chairs, several anonymous utility trainees seated sparsely with their backs to camera
+
+3) U043.png
+   [the design plate]  flags: R B
+   a manufacturer's blank metal data plate riveted to a machine casing, no lettering
+
+4) U044.png
+   [the same valve]  flags: R B
+   an outdoor valve assembly on a plant site, no ice, ordinary day
+
+5) U045.png
+   [dust]  flags: R B
+   an unopened box file on a shelf with a film of dust, label area blank
+
+6) U046.png
+   [the corridor]  flags: P D B
+   a plain government office corridor, doors and strip lighting, one distant anonymous office worker walking away from camera
+
+7) U047.png
+   [the chair's statement]  flags: P R D B
+   an anonymous official standing at a lectern in a plain room, seen from behind and to one side with face hidden, no insignia
+
+8) U048.png
+   [ten years]  flags: D B
+   a straight road across flat land in ordinary weather, receding to a vanishing point

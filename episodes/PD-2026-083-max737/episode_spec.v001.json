@@ -1,0 +1,69 @@
+{
+ "schema_version": "1.0.0",
+ "episode_id": "PD-2026-083-max737",
+ "slug": "max737",
+ "runtime_seconds": [1740, 2100],
+ "script_words": [4700, 5300],
+ "section_vocabulary": ["HOOK", "OP", "ACT_1", "ACT_2", "ACT_3", "ACT_4", "ENDING"],
+ "figure_beats_per_act": [13, 17],
+ "distinct_video_assets": 260,
+ "people_plates_min": 20,
+ "mandatory_stills": [],
+ "thumbnail_candidates_min": 3,
+ "footage_review_required": true,
+ "audio_layers": 2,
+ "target_cut_sec": 4.6,
+ "era_setting": {
+  "place": "Renton and Seattle, Washington (the 737 line, the simulator bay, the engineers' desks); the FAA's offices; a flight deck; the Java Sea off Jakarta and farmland near Ejere, Ethiopia; and a federal courthouse in Fort Worth, Texas",
+  "country": "USA",
+  "years": [2011, 2026],
+  "notes": "The film runs from a December 2011 contract to a Fifth Circuit order of 22 May 2026. Present-day for the aircraft material is 2016-2019: flat-panel airliner flight decks, 2010s phones, open-plan engineering offices with dual monitors. The courtroom material is 2021-2026. Nothing may look like the 1970s-90s: this is a modern aeroplane, and its ordinariness is the point. Cabin interiors are modern narrow-body. No airline branding of any kind anywhere -- see forbidden_subjects."
+ },
+ "forbidden_subjects": [
+  "body", "bodies", "corpse", "victim", "casualty", "coffin", "funeral", "mourner", "grieving", "memorial wall", "portrait of the dead",
+  "crash site", "wreckage", "debris field", "impact crater", "burning aircraft", "aircraft on fire", "fireball", "explosion",
+  "aircraft breaking up", "aircraft falling", "nose-dive from outside", "smoke trail in sky",
+  "real airline livery", "airline logo", "airline name on a tail", "Boeing logo", "Lion Air", "Ethiopian Airlines", "Southwest livery", "FAA seal", "any real company mark",
+  "readable document", "readable email", "readable court filing", "readable memo", "legible screen text", "legible chat window", "legible manual page",
+  "mugshot", "named executive", "real person likeness", "recognisable face of a real individual", "family photograph",
+  "child", "minor", "identifiable passenger",
+  "gavel", "scales of justice", "generic stock courtroom drama", "handcuffs",
+  "map of Indonesia with a crash marker", "map of Ethiopia with a crash marker", "flight-path animation ending in an impact"
+ ],
+ "forbidden_claims": [
+  "That Boeing was convicted, found guilty, or lost a criminal case. The information was DISMISSED on 6 November 2025 (ledger MX-308) after the Government moved under Rule 48(a). Everything Boeing acknowledged, it acknowledged by agreement in the 2021 Statement of Facts (MX-201..MX-215). The verb is 'Boeing admitted', sourced to the agreement -- never 'the court found'.",
+  "That the acquitted individual lied, deceived anyone, or is responsible. A federal jury found the former 737 MAX Chief Technical Pilot NOT GUILTY on all four counts on 23 March 2022 (MX-405). He is never named, never depicted, and no sentence may imply guilt. The film uses the agreement's own 'Boeing Employee-1' and 'Boeing Employee-2'.",
+  "That an off-duty pilot in the jump seat saved the previous Lion Air flight. KNKT attributes the stab-trim cutout decision to the CAPTAIN (MX-707). The jump-seat pilot said the aircraft was diving, asked whether to return, and was asked to monitor and compute -- all of which the film may say (MX-708). It may not say he saved the aeroplane.",
+  "That the FAA knew 15 people-loads of passengers would die and let it happen anyway. The TARAM projected >15 fatal crashes over the fleet life (MX-602), AND the OIG records the same analysis sat below the grounding guideline at 2.68 fatalities per million flight hours (MX-609), AND the OIG says the figures 'should not be viewed as predictive values' (MX-610). Any sentence using the 15 must carry whose frame it is.",
+  "That either crew was incompetent, or that either crew's actions caused the crash. The record is CONTESTED on exactly this point: EAIB's probable cause is MCAS (MX-801); the NTSB says appropriate crew management would have allowed recovery and asked for that to be causal (MX-805); the NTSB's comments were not appended to the final report (MX-806). The film presents the disagreement AS a disagreement and resolves nothing.",
+  "That the AOA sensor failure on ET302 was definitively a bird strike, or definitively an electrical fault. EAIB and NTSB disagree (MX-806). Both are stated, neither is adopted.",
+  "Any statement that MCAS was 'hidden' from pilots as a deliberate corporate decision to conceal it from pilots specifically. What the record supports: pilots were given no information about MCAS in their manuals (MX-111), references were removed from the FCOM with FAA approval (MX-616), and two employees deceived the FAA AEG (MX-110). Say those.",
+  "The number 346 as a headline, a title, a thumbnail or a dramatic beat. It is narrated once, plainly (MX-005, MX-622).",
+  "Any figure not in the facts ledger. In particular: no invented delivery counts, no invented fine totals, no invented dates for the two crashes beyond MX-901's rule."
+ ],
+ "ae_beats": {
+  "min_count": 12,
+  "per_act_min": 1,
+  "screen_seconds_min": 90,
+  "jobs_file": "scripts/ae/jobs_max737.json",
+  "gpu_accel": "SOFTWARE",
+  "beats": [
+   {"id": "AE001", "act": "HOOK", "kind": "hero_number", "headline": "0.6 TO 2.5", "source": "FACTS_LEDGER row MX-615", "duration_sec": 8, "notes": "Degrees of stabiliser the software could move. The whole film is the distance between those two numbers."},
+   {"id": "AE002", "act": "HOOK", "kind": "timeline", "headline": "FIVE MONTHS", "source": "FACTS_LEDGER rows MX-001 and MX-002", "duration_sec": 7, "notes": "29 October 2018 to 10 March 2019. Arithmetic on two sourced dates."},
+   {"id": "AE003", "act": "OP", "kind": "title_card", "headline": "29 OCTOBER 2018", "source": "FACTS_LEDGER row MX-001", "duration_sec": 7.5, "notes": "Local Indonesian date per the DPA and KNKT -- see the MX-901 trap before changing this."},
+   {"id": "AE004", "act": "ACT_1", "kind": "system_map", "headline": "WHAT MCAS WAS FOR", "source": "FACTS_LEDGER rows MX-614 and MX-615", "duration_sec": 11, "notes": "One sensor, one input, nose down. Drawn as a mechanism, never as a document."},
+   {"id": "AE005", "act": "ACT_1", "kind": "hero_number", "headline": "ONE SENSOR", "source": "FACTS_LEDGER row MX-614", "duration_sec": 8},
+   {"id": "AE006", "act": "ACT_2", "kind": "quote_card", "headline": "SHOCKER ALERT", "source": "FACTS_LEDGER row MX-108", "duration_sec": 10, "notes": "The chat verbatim from the Statement of Facts. Rendered as designed typography, NEVER as a facsimile of a chat window (fabricated_record)."},
+   {"id": "AE007", "act": "ACT_2", "kind": "comparison", "headline": "LEVEL B / LEVEL D", "source": "FACTS_LEDGER rows MX-101 and MX-612", "duration_sec": 10, "notes": "Computer-based training against full-flight simulator -- and the money that hung on which one."},
+   {"id": "AE008", "act": "ACT_2", "kind": "hero_number", "headline": "ONE MILLION PER AIRPLANE", "source": "FACTS_LEDGER rows MX-612 and MX-613", "duration_sec": 9},
+   {"id": "AE009", "act": "ACT_3", "kind": "hero_number", "headline": "FIFTEEN", "source": "FACTS_LEDGER rows MX-602 and MX-609", "duration_sec": 9, "notes": "The card must carry the frame: the House's figure, and the fact that the same analysis sat below the grounding guideline."},
+   {"id": "AE010", "act": "ACT_3", "kind": "document_blowup", "headline": "THE DIRECTIVE THAT DID NOT SAY MCAS", "source": "FACTS_LEDGER row MX-607", "duration_sec": 9, "notes": "Illustrate an AD as an object with one blank line; no legible generated document text."},
+   {"id": "AE011", "act": "ACT_3", "kind": "timeline", "headline": "150 MORE AIRPLANES", "source": "FACTS_LEDGER row MX-606", "duration_sec": 9},
+   {"id": "AE012", "act": "ACT_4", "kind": "list_build", "headline": "WHAT THE COMMITTEE NAMED", "source": "FACTS_LEDGER row MX-617", "duration_sec": 12, "notes": "The five themes verbatim, built one line at a time."},
+   {"id": "AE013", "act": "ACT_4", "kind": "comparison", "headline": "28 OF 87 / 79 OF 91", "source": "FACTS_LEDGER row MX-619", "duration_sec": 10},
+   {"id": "AE014", "act": "ENDING", "kind": "quote_card", "headline": "NO JUDICIALLY COGNIZABLE INTEREST", "source": "FACTS_LEDGER row MX-311", "duration_sec": 10, "notes": "The Fifth Circuit's own sentence. This is the R3 safeguard made visible: the case ended, and this is how."},
+   {"id": "AE015", "act": "ENDING", "kind": "timeline", "headline": "WHAT IS STILL OPEN", "source": "FACTS_LEDGER Open items", "duration_sec": 9, "notes": "Rehearing denied 22 May 2026. Re-check the docket before publication."}
+  ]
+ },
+ "notes": "EP83 of the EP83-85 slate (owner GO 2026-08-25). Runtime band 29:00-35:00 comes from the slate's own basis -- TOPIC_POOL_500 F2, 25-43 minute films measured at 47.5% average view percentage -- and is wider at the top than EP77-82's because this story carries two accidents, a regulator and a court. Word band 4,700-5,300 is that band divided at the rate this register actually delivers: EP77-82 measured 184-202 raw wpm on the same short-declarative style (gen_narration_case delivered logs), NOT the 171.79 registry model and not 176. Size the script with `gen_narration_case.py --dry-run` and confirm with `--measure-section ACT_1` before writing to length (spec v3 6.6, 6.7). distinct_video_assets 260 = runtime x 0.65 / 4.5 at the midpoint of the band. people_plates_min 20 matches EP81/EP82, which delivered 20-21 usable people plates with no visible face. audio_layers 2 is the channel standard and the known contradiction with the four-layer mixer (spec v3 6.4) -- declared 2 deliberately."
+}

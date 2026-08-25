@@ -1,7 +1,7 @@
 # Build the distinct-playable-video pool exactly as EP68_pinto_register_inventory did.
 import json,os,sys,glob
 sys.stdout.reconfigure(encoding="utf-8",errors="replace")
-L=r"H:\pd-media\assets\archive\_ledger"
+L=r"E:\pd-media\assets\archive\_ledger"
 NOT={"purged.jsonl","ban_risk_quarantine.jsonl","shot_feedback.jsonl","factory_rename.progress.jsonl"}
 SUF=("_removed.jsonl","_candidates.jsonl"); PRE=("rejects",)
 def stock(b):
@@ -17,7 +17,7 @@ if os.path.exists(p):
         try:r=json.loads(l);ban.add(f"{r.get('source')}:{r.get('id')}")
         except:pass
 unus=set()
-qv=r"H:\pd-media\assets\archive\_qc\archive_verdicts.jsonl"
+qv=r"E:\pd-media\assets\archive\_qc\archive_verdicts.jsonl"
 if os.path.exists(qv):
     for l in open(qv,encoding="utf-8",errors="replace"):
         try:

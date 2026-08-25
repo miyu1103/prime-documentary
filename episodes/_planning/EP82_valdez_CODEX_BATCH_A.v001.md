@@ -170,7 +170,7 @@
 | V110 | V110 | A judge's bench and gavel block photographed square on in bright daylight, no one seated | |
 | V111 | V111 | A stack of bound legal volumes on a bright table beside a green glass lamp, plain spines | |
 | V112 | V112 | A law library aisle in brilliant daylight, shelves of unmarked spines receding | |
-| V113 | V113 | A blank verdict form on a table under a hard bright lamp, ruled boxes only | |
+| V113 | V113 | Top-down view of a blank verdict form clipped to a dark courtroom folder, a brass desk lamp casting a sharp pool of light, ruled boxes only | |
 | V114 | V114 | A federal courthouse exterior on a clear winter morning, hard brilliant sunlight on the stone columns | |
 | V115 | V115 | A marble courthouse corridor in brilliant daylight, two figures walking away from camera | P |
 | V116 | V116 | The bench of a supreme court in brilliant daylight, nine empty chairs, tall drapes behind | |
@@ -195,15 +195,15 @@
 
 | id | beat | prompt | flags |
 |---|---|---|---|
-| V133 | V133 | A narrow ship's cabin bunk, made up tight with a grey blanket, empty, a bright reading lamp burning above it | |
+| V133 | V133 | Low view from the foot of a narrow ship's cabin bunk, a tightly folded grey blanket in the foreground, the empty pillow beneath a bright bulkhead reading lamp | |
 | V134 | V134 | The same bunk turned back and ready, the lamp still on, the cabin empty | |
 | V135 | V135 | A ship's alleyway with the lights on and every cabin door closed | |
-| V136 | V136 | A watch schedule board on a bulkhead, blank strips in rows, a strip light burning above | |
-| V137 | V137 | A ship's bridge at dawn, instruments alight, brilliant orange light through the windows | |
+| V136 | V136 | Side-on close view of anonymous duty magnets aligned across a bare grey planning panel, a narrow overhead fluorescent fixture glaring into the lens | |
+| V137 | V137 | View from the dark chart-table corner across an empty ship's bridge at dawn, analogue instruments glowing below brilliant orange windows | |
 | V138 | V138 | An empty lookout position at a bow rail at first light, brilliant pale sky, calm water | |
 | V139 | V139 | A wide Alaskan sound at sunrise, brilliant sun on the horizon, snow on the mountains, empty water | |
 | V140 | V140 | A plain unmarked tanker at sea in brilliant morning light seen from the air, open ocean | |
-| V141 | V141 | A blank ruled crew list form on a desk in brilliant morning light, columns and empty rows | |
+| V141 | V141 | A blank ruled crew list form pinned beneath a brass paperweight on a steel desk, brilliant morning light cutting diagonally across its empty columns | |
 | V142 | V142 | A cabin porthole at sunrise with brilliant orange light coming through onto an empty bunk | |
 
 ### PEOPLE
@@ -222,7 +222,7 @@
 | V149 | V149 | A crew member seen from behind sitting alone in a bright mess room | P |
 | V150 | V150 | A person seen from behind at a terminal control desk, mimic panel glowing ahead | P |
 | V151 | V151 | An office worker seen from behind at a lit desk covered in blank forms | P |
-| V152 | V152 | A person seen from behind at a courtroom lectern facing a bright empty bench | P |
+| V152 | V152 | A person seen from directly behind gripping both sides of a dark courtroom lectern, a broad sunlit judge's bench towering beyond | P |
 | V153 | V153 | A row of people seated from behind in a courtroom gallery, brilliant daylight, faces not visible | P |
 | V154 | V154 | A lone figure silhouetted at a ship's rail against a brilliant dawn sky | P |
 
