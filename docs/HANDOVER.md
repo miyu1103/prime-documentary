@@ -164,7 +164,7 @@ them, so they live here rather than in a dated file.
 
 **[2026-08-25](handover/2026-08-25.md)** — **the day two defective masters were caught by reading
 sheets, and their causes fixed in code.** EP75 lahaina had shipped **180 cuts / 678 s of raw depth
-maps as picture** (two globs swept  companions into the pools; both fixed, gate added and
+maps as picture** (two globs swept `_depth` companions into the pools; both fixed, gate added and
 demonstrated). EP74 itaewon still carried the wrong-country class at scale — the pool was
 country-eyeballed and **116 of 248 clips rejected**, 66 Korea-labelled replacements staged, 33
 place terms added to the spec; the rebuilt film hits **zero** forbidden terms. Three instruments
