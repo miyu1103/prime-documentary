@@ -58,7 +58,16 @@ py -3.11 scripts/assemble_episode_i2v.py --slug "$SLUG" >> "$LOG" 2>&1 || die "a
 
 say "[2/7] copy i2v motion into the render-visible public dir"
 mkdir -p "remotion/public/${SLUG}/motion"
-cp -n "E:/pd-media/assets/ai_video/${SLUG}/motion/"*.mp4 "remotion/public/${SLUG}/motion/" 2>/dev/null
+# A *_depth.mp4 IS A RENDERER INPUT, NEVER A PICTURE (2026-08-25, EP75). The archive still
+# holds the 63 depth-map clips an earlier i2v run made by globbing H* over the depth
+# companions. This copy is unconditional, so every finisher run put them back into the
+# render-visible pool -- lahaina went from 91 real clips to 155 sixty seconds after the
+# quarantine, and would have shipped depth maps as picture for the second time.
+for _m in "E:/pd-media/assets/ai_video/${SLUG}/motion/"*.mp4; do
+  [ -e "$_m" ] || continue
+  case "$(basename "$_m")" in *_depth.mp4) continue;; esac
+  cp -n "$_m" "remotion/public/${SLUG}/motion/" 2>/dev/null
+done
 say "  motion clips visible: $(ls remotion/public/${SLUG}/motion/*.mp4 2>/dev/null | wc -l)"
 
 say "[2b/7] enforce episode blocklist after source copy (img + motion)"
