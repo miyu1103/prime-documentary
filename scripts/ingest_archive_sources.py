@@ -437,6 +437,9 @@ IA_TITLE_DENY = [
     # can carry violence -- a ban risk, not a footage source. 20 items quarantined on arrival.
     "body cam", "bodycam", "body camera", "body worn", "body-worn", "dash cam", "dashcam",
     "cop city", "officer involved", "police shooting",
+    # 2026-08-25 second sweep: the first denylist missed "Body Worn Cam" because it only
+    # had "body worn"; one Vegas evidence dump reached the shelf. Match the words apart.
+    "worn cam", "shooting evidence", "evidence batch", "incident video",
 ]
 
 PHRASE_ONLY_THEMES = {
