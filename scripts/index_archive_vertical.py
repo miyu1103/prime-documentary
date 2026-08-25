@@ -34,7 +34,10 @@ from pathlib import Path
 
 import numpy as np
 
-LEDGER = r"E:\pd-media\assets\archive\_ledger\*.jsonl"
+# The shelf moved off H: when that drive died and the ledger moved with it. This pointed at
+# E:\pd-media\assets\archive\_ledger, which no longer exists, so the tool scanned zero rows and
+# wrote no index -- silently, because "no clips" is not an error (measured 2026-08-25).
+LEDGER = r"E:\pd-archive\_ledger\*.jsonl"
 OUT = Path(r"E:\pd-media\assets\archive\_qc\vertical_index.jsonl")
 W, H = 128, 72          # proxy frame for the whole 16:9 image
 USABLE = {"free_commercial", "pd", "cc0"}
