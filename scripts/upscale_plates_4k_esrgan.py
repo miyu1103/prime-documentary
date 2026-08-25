@@ -63,6 +63,12 @@ def main() -> int:
                     "completeness against the ORDER is check_plate_delivery's job -- EP78-80 "
                     "have legitimate id gaps from withdrawn plates, so contiguity is not checked)")
     ap.add_argument("--dst", help="default: remotion/public/<slug>/img")
+    ap.add_argument("--resume", action="store_true",
+                    help="skip plates already written at the target size and continue. "
+                         "MEASURED 2026-08-25: an EP82 run died at plate 56 of 183 with "
+                         "`cuDNN error: CUDNN_STATUS_EXECUTION_FAILED` while another process "
+                         "held 14 GB of VRAM, and without this the only way back was to throw "
+                         "away 56 good plates and start again.")
     ap.add_argument("--only", help="comma ids (K102,K134) to add into an EXISTING destination. "
                     "Regenerated plates arrive after the first pass, and refusing a non-empty "
                     "destination would otherwise force a full re-upscale of the whole episode. "
@@ -100,9 +106,28 @@ def main() -> int:
         if clash:
             print(f"FAIL: --only would overwrite existing 4K plate(s): {clash}")
             return 2
-    if dst.exists() and any(dst.glob("*.png")):
+    if dst.exists() and any(dst.glob("*.png")) and not (a.only or a.resume):
         print(f"FAIL: destination is not empty; refusing overwrite: {dst}")
         return 2
+
+    if a.resume:
+        done = set()
+        for p in sources:
+            q = dst / p.name
+            if q.is_file():
+                try:
+                    with Image.open(q) as im:
+                        if im.size == TARGET:
+                            done.add(p.name)
+                except Exception:
+                    pass
+        if done:
+            print(f"[resume] {len(done)} plate(s) already at {TARGET[0]}x{TARGET[1]}; "
+                  f"{len(sources) - len(done)} to go")
+        sources = [p for p in sources if p.name not in done]
+        if not sources:
+            print("[resume] nothing left to do")
+            return 0
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     if device == "cpu":
@@ -113,9 +138,29 @@ def main() -> int:
 
     dst.mkdir(parents=True, exist_ok=True)
     started = time.time()
+    global TILE
+    failed: list[str] = []
     for index, source in enumerate(sources, 1):
         image = Image.open(source)
-        large = upscale(model, image, device)
+        # A CUDA/cuDNN failure on one plate must not throw away the run. Free the cache,
+        # halve the tile, try once more, and if it still fails record it and keep going --
+        # a run that dies at plate 56 of 183 costs the whole pass (measured 2026-08-25).
+        large = None
+        for attempt in (1, 2):
+            try:
+                large = upscale(model, image, device)
+                break
+            except RuntimeError as e:
+                torch.cuda.empty_cache()
+                if attempt == 1:
+                    TILE = max(128, TILE // 2)
+                    print(f"  !! {source.name}: {type(e).__name__}: {str(e)[:70]} -- "
+                          f"retrying at tile {TILE}")
+                else:
+                    print(f"  !! {source.name}: FAILED TWICE, skipping")
+                    failed.append(source.name)
+        if large is None:
+            continue
         final = large.resize(TARGET, Image.Resampling.LANCZOS)
         final.save(dst / source.name, "PNG", optimize=False)
         print(f"[{index}/{len(sources)}] {source.name} {image.width}x{image.height} -> "
@@ -128,7 +173,9 @@ def main() -> int:
                 bad.append({"file": path.name, "size": image.size, "mode": image.mode})
     print(f"done in {time.time() - started:.0f}s -> {dst}")
     print(f"technical failures: {len(bad)} {bad[:5]}")
-    return 1 if bad else 0
+    if failed:
+        print(f"GPU failures (not written, re-run with --resume): {len(failed)} {failed[:10]}")
+    return 1 if (bad or failed) else 0
 
 
 if __name__ == "__main__":
