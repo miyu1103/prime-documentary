@@ -698,13 +698,14 @@
   },
   {
    "ids": [
-    "H014"
+    "H014",
+    "H014_black_head_rejected_20260825"
    ],
    "episodes": [
     "lahaina"
    ],
    "label": "i2v_clip_opens_black_post_render_gate_refuses",
-   "reason": "EP75 lahaina's POST-RENDER GATE refused the master on 3 black stretches (114.1-115.4s, 117.4-118.6s, 1076.2-1077.4s) after a 2.5-hour render. All three are this clip: a 3.37s exposure ramp, luma YAVG 28 -> 110, whose first 1.20s ffmpeg blackdetect calls black at the same pixel threshold the gate uses. Looped into a 6.26s cut it plays that head TWICE per cut, and the builder used it in cut-0018 and cut-0172. The 81 generated frames are faithful; the source plate img_unused/H014.png is itself near-black, so this is a dark plate, not an i2v failure. Quarantining the mp4 by hand did NOT hold: finisher step [1/7] re-assembled it from ae-demo/wan_frames_lahaina_H014/ on the next run and step [2b/7] pruned nothing, because it reads `blocked` only. Frame dir moved aside as well. Detected in advance from now on by check_motion_saturation --  BLACK-HEAD.",
+   "reason": "EP75 lahaina's POST-RENDER GATE refused the master on 3 black stretches (114.1-115.4s, 117.4-118.6s, 1076.2-1077.4s) after a 2.5-hour render. All three are this clip: a 3.37s exposure ramp, luma YAVG 28 -> 110, whose first 1.20s ffmpeg blackdetect calls black at the same pixel threshold the gate uses. Looped into a 6.26s cut it plays that head TWICE per cut, and the builder used it in cut-0018 and cut-0172. The 81 generated frames are faithful; the source plate img_unused/H014.png is itself near-black, so this is a dark plate, not an i2v failure. Quarantining the mp4 by hand did NOT hold: finisher step [1/7] re-assembled it from ae-demo/wan_frames_lahaina_H014/ on the next run and step [2b/7] pruned nothing, because it reads `blocked` only. Frame dir moved aside as well. Detected in advance from now on by check_motion_saturation --  BLACK-HEAD. SECOND NAME: renaming the frame dir in place made [1/7] re-assemble the same clip as H014_black_head_rejected_20260825.mp4 -- the assembler takes the clip name from the directory -- and the archive at E:/pd-media/assets/ai_video/lahaina/motion/ then restored that name on every run. Both names are blocked; the frame dir now lives outside ae-demo at E:/pd-media/_rejected_i2v_frames/wan_frames_lahaina_H014.",
    "hard_category": "cat5_build_breaking_asset"
   }
  ],
