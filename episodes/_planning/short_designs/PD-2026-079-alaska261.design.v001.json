@@ -1,0 +1,678 @@
+{
+  "episode_id": "PD-2026-079-alaska261",
+  "slug": "alaska261",
+  "status": "DESIGN ONLY - every line traced to a line of episodes/PD-2026-079-alaska261/03_script/script.en.v001.md; checked against episode_spec.v001.json, the highest revision; plates are REUSE of approved episode plates present on disk at remotion/public/alaska261/img; not approved for publication",
+  "destination": {
+    "video_id": null,
+    "title": null,
+    "url": null,
+    "privacy": "not_uploaded",
+    "views": 0
+  },
+  "script": "episodes/PD-2026-079-alaska261/03_script/script.en.v001.md",
+  "era_note": "31 January 2000, reaching back to 1985 for the first maintenance interval and forward to the NTSB report of December 2002. Per episode_spec forbidden_claims, no Short says the mechanic who performed the September 1997 end play check was negligent (the Board placed the cause upstream and no charges were filed), that Alaska Airlines was prosecuted or found criminally liable (prosecutors stated in December 2001 that no charges would be filed), that the September 1997 check produced a specific measurement (no number exists), that the FAA approved the extensions out of favouritism, that the flight crew erred (the probable cause names no crew action), that a particular lubrication was skipped, or that the 0.043/0.048/0.075 readings belong to this aeroplane (they belong to other carriers' assemblies). Per forbidden_subjects, no body, no victim, no crash site, no wreckage recovery, no aeroplane inverted or diving, no child.",
+  "plate_pool_note": "198 plates on disk at remotion/public/alaska261/img with matching depth maps. Subjects from the episode's own Codex plate table: the dial indicator and the jackscrew K001-K002/K016-K019/K075-K076, the cockpit K004/K010/K020-K021/K030-K034, the laboratory and the worn threads K042-K050, the hangar and the grease K064-K074, the records office and blank cards K080-K084. Every plate below verified present; no plate is used by more than one Short.",
+  "shorts_existing": [],
+  "shorts_to_author": [
+    "short316",
+    "short317",
+    "short318"
+  ],
+  "existing_angles_do_not_repeat": {},
+  "shorts": [
+    {
+      "short_id": "short316",
+      "angle": "The entire safety net was a number in thousandths of an inch read off a needle - and before July 2000, a reading inside the limits was not required to be recorded anywhere. Pass, and the number went nowhere.",
+      "avoids": "Names no mechanic and says nothing about what the September 1997 check measured, because no number exists. Does not say anyone was prosecuted, does not blame the crew, does not quote the end play figures that belong to other carriers' assemblies. No wreckage, no victims.",
+      "funnel_question_left_for_longform": "If nobody could see a number creeping up, what was happening to the threads between the checks?",
+      "loop": true,
+      "loop_join": "The close - no way to see a number creeping up - returns to the needle the hook opens on.",
+      "era": "United States, 1985-2000",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "There is a gauge in this story. It is about the size of a pocket watch, it costs less than a good pair of boots, and it has one needle.",
+          "delivery": "intense",
+          "source_lines": [
+            "There is a gauge in this story.",
+            "It is about the size of a pocket watch, it costs less than a good pair of boots, and it has one needle."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "You cannot see the threads inside the nut without taking the whole assembly off the aeroplane. So the manufacturer designed a way to measure the wear in place.",
+          "delivery": "building",
+          "source_lines": [
+            "You cannot see the threads inside the nut without taking the whole assembly off the aeroplane.",
+            "So the manufacturer designed a way to measure the wear without removing anything."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "You measure that movement with a dial indicator. If the reading is between three thousandths of an inch and forty thousandths, the assembly stays on the aeroplane. Above forty, it comes off.",
+          "delivery": "building",
+          "source_lines": [
+            "You measure that movement with a dial indicator.",
+            "If the reading is between three thousandths of an inch and forty thousandths, the assembly stays on the aeroplane.",
+            "Above forty, it comes off."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "That is the entire safety net. A number, in thousandths of an inch, read off a needle.",
+          "delivery": "intense",
+          "source_lines": [
+            "That is the entire safety net.",
+            "A number, in thousandths of an inch, read off a needle."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "Before July 2000 — five months after this accident — an end play measurement that came out inside the limits was not required to be recorded anywhere.",
+          "delivery": "intense",
+          "source_lines": [
+            "Before July 2000 - five months after this accident - an end play measurement that came out inside the limits was not required to be recorded anywhere."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "If the needle read thirty-nine thousandths, the aeroplane passed, and the number went nowhere.",
+          "delivery": "building",
+          "source_lines": [
+            "If the needle read thirty-nine thousandths, the aeroplane passed, and the number went nowhere."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "Nobody wrote it down, because nobody had to.",
+          "delivery": "intense",
+          "source_lines": [
+            "Nobody wrote it down, because nobody had to."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "Which means there was no way to compare one check against the next. No way to see a number creeping up over the years.",
+          "delivery": "calm",
+          "source_lines": [
+            "Which means there was no way to compare one check against the next.",
+            "No way to see a number creeping up over the years."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "extreme macro of a dial indicator gauge, the needle at rest",
+          "source": "REUSE",
+          "source_plate": "K001"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "extreme macro of a dial indicator face, needle deflected",
+          "source": "REUSE",
+          "source_plate": "K076"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a huge steel acme-threaded jackscrew standing vertical",
+          "source": "REUSE",
+          "source_plate": "K002"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "an acme nut cut away to show its internal spiral threads",
+          "source": "REUSE",
+          "source_plate": "K017"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a dial indicator mounted on a bracket with its plunger set",
+          "source": "REUSE",
+          "source_plate": "K075"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "a steel restraining fixture clamped to an aircraft structure",
+          "source": "REUSE",
+          "source_plate": "K073"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a torque wrench lying on a steel bench under a hard lamp",
+          "source": "REUSE",
+          "source_plate": "K072"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L4",
+          "subject": "extreme macro of a coarse acme thread on a steel screw",
+          "source": "REUSE",
+          "source_plate": "K016"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "a blank ruled work card lying on a hangar bench",
+          "source": "REUSE",
+          "source_plate": "K080"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a clipboard of blank ruled sheets hanging on a hangar wall",
+          "source": "REUSE",
+          "source_plate": "K081"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "a wall of pigeonholes holding blank work cards",
+          "source": "REUSE",
+          "source_plate": "K082"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a maintenance records office in brilliant daylight",
+          "source": "REUSE",
+          "source_plate": "K083"
+        },
+        {
+          "n": 13,
+          "role": "loop",
+          "line": "L8",
+          "subject": "close-up of unmarked binder spines packed on a shelf",
+          "source": "REUSE",
+          "source_plate": "K084"
+        },
+        {
+          "n": 14,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a round wall clock in an airline maintenance office",
+          "source": "REUSE",
+          "source_plate": "K006"
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "the entire safety net",
+          "suffix": "safety_net",
+          "words": [
+            "THE ENTIRE",
+            "SAFETY NET"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L7",
+          "anchor": "nobody had to",
+          "suffix": "nobody_had_to",
+          "words": [
+            "NOBODY",
+            "HAD TO"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "short_id": "short317",
+      "angle": "Sixteen years before the accident the manufacturer wrote to operators describing this exact failure - nuts worn severely, grease dry and without evidence of recent renewal - and named the remedy. None of it was hidden. It was circulated.",
+      "avoids": "Blames no individual and no airline in the film's own voice; the 1984 letter and the 1990 report are quoted as the record. Does not say anyone knew the threads on this aeroplane were failing - nothing in the record supports foreknowledge. No prosecution claim, no crew error, no wreckage.",
+      "funnel_question_left_for_longform": "If the warning was circulated in 1984, what happened to the interval that was supposed to act on it?",
+      "loop": true,
+      "loop_join": "The close - none of this was hidden, it was circulated - answers the hook's question of what the industry did not know.",
+      "era": "United States, 1984-2000",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "Was any of this a secret? Was there some piece of knowledge that the industry did not have?",
+          "delivery": "intense",
+          "source_lines": [
+            "Now, was any of this a secret?",
+            "Was there some piece of knowledge that the industry did not have?"
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "On the twenty-ninth of May, 1984 — sixteen years before this accident — McDonnell Douglas issued a service letter to operators.",
+          "delivery": "building",
+          "source_lines": [
+            "On the twenty-ninth of May, 1984 — sixteen years before this accident — McDonnell Douglas issued a service letter to operators."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "It reported three cases where a jackscrew assembly had come off an aeroplane far earlier than expected, because of excessive play between the screw and the nut.",
+          "delivery": "building",
+          "source_lines": [
+            "It reported three cases where a jackscrew assembly had come off an aeroplane far earlier than expected, because of excessive play between the screw and the nut."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "Every nut showed severe wear on the thread surfaces. And the letter records what they found in the lubrication passages of two of them. The grease was dry, and without evidence of recent renewal.",
+          "delivery": "intense",
+          "source_lines": [
+            "Every nut showed severe wear on the thread surfaces.",
+            "And the letter records what they found in the lubrication passages of two of them.",
+            "The grease was dry, and without evidence of recent renewal."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "Dry. In 1984.",
+          "delivery": "intense",
+          "source_lines": [
+            "Dry.",
+            "In 1984."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "The letter concluded that inadequate lubrication was the most probable cause of the wear, and it asked operators to keep to a conscientious lubrication programme.",
+          "delivery": "building",
+          "source_lines": [
+            "The letter concluded that inadequate lubrication was the most probable cause of the wear, and it asked operators to keep to a conscientious lubrication programme — at six-hundred-flight-hour intervals."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "That is the manufacturer, in writing, sixteen years early, describing the exact failure sequence that would eventually bring down flight 261, and naming the exact remedy.",
+          "delivery": "intense",
+          "source_lines": [
+            "That is the manufacturer, in writing, sixteen years early, describing the exact failure sequence that would eventually bring down flight 261, and naming the exact remedy."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "None of this was hidden. It was circulated.",
+          "delivery": "calm",
+          "source_lines": [
+            "None of this was hidden.",
+            "It was circulated."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a technical manual lying open on a desk under a bright lamp",
+          "source": "REUSE",
+          "source_plate": "K029"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "engineering drawings pinned to a bright drafting board",
+          "source": "REUSE",
+          "source_plate": "K052"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a 1960s-era engineering drawing on a light table",
+          "source": "REUSE",
+          "source_plate": "K053"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "an aircraft certification office in daylight, filing cabinets",
+          "source": "REUSE",
+          "source_plate": "K054"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a steel jackscrew assembly mounted on a display stand",
+          "source": "REUSE",
+          "source_plate": "K059"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "two steel components side by side on a bright bench",
+          "source": "REUSE",
+          "source_plate": "K048"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "the interior of a cut-open steel nut showing smooth ridges",
+          "source": "REUSE",
+          "source_plate": "K045"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L4",
+          "subject": "an open tub of aviation grease on a hangar bench",
+          "source": "REUSE",
+          "source_plate": "K070"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "a grease gun held in a gloved hand against a steel fitting",
+          "source": "REUSE",
+          "source_plate": "K068"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "fresh grease being forced into a lubrication port",
+          "source": "REUSE",
+          "source_plate": "K069"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "extreme macro of a sheared and worn steel thread remnant",
+          "source": "REUSE",
+          "source_plate": "K043"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a metallurgical microscope in a laboratory, illuminator on",
+          "source": "REUSE",
+          "source_plate": "K047"
+        },
+        {
+          "n": 13,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a wall of aircraft engineering diagrams under bright light",
+          "source": "REUSE",
+          "source_plate": "K060"
+        },
+        {
+          "n": 14,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a rack of hand tools on a hangar wall in bright daylight",
+          "source": "REUSE",
+          "source_plate": "K071"
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L5",
+          "anchor": "Dry",
+          "suffix": "dry_1984",
+          "words": [
+            "DRY.",
+            "IN 1984."
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L8",
+          "anchor": "It was circulated",
+          "suffix": "circulated",
+          "words": [
+            "NOT HIDDEN.",
+            "CIRCULATED."
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "short_id": "short318",
+      "angle": "The greasing interval grew by four hundred per cent over fifteen years, and the check that would have caught the consequences grew alongside it. Wear tracks flight hours. A calendar does not know that.",
+      "avoids": "States that an extension is not by itself evidence of anything, in the script's own words, and does not assert motive, favouritism or capture for any approval. Names no mechanic, no prosecution, no crew error. No wreckage, no victims.",
+      "funnel_question_left_for_longform": "There was a second line of defence, a gauge with one needle. What happened to that one?",
+      "loop": true,
+      "loop_join": "The close - a calendar does not know that - lands back on the staircase of intervals the hook opens.",
+      "era": "United States, 1985-2000",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "The manufacturer's original recommendation was to grease this screw every six hundred to nine hundred flight hours.",
+          "delivery": "intense",
+          "source_lines": [
+            "The manufacturer's original recommendation was to grease this screw every six hundred to nine hundred flight hours."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "Intervals get reviewed, and sometimes they get extended, and an extension is not by itself evidence of anything.",
+          "delivery": "building",
+          "source_lines": [
+            "So intervals get reviewed, and sometimes they get extended, and an extension is not by itself evidence of anything."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "In July 1996, the task came off the flight-hour schedule altogether and went onto a card with a maximum interval of eight months, with no flight-hour limit at all.",
+          "delivery": "building",
+          "source_lines": [
+            "And in July 1996, the task came off the flight-hour schedule altogether and went onto a card with a maximum interval of eight months — with no flight-hour limit attached to it at all."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "At the time of the accident, Alaska Airlines' lubrication interval for the jackscrew assembly was more than four hundred per cent greater than it was in 1987.",
+          "delivery": "intense",
+          "source_lines": [
+            "At the time of the accident, Alaska Airlines' lubrication interval for the jackscrew assembly was more than four hundred per cent greater than it was in 1987."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "Wear tracks flight hours. It does not track calendar time. An aeroplane that flies harder wears faster. A calendar does not know that.",
+          "delivery": "intense",
+          "source_lines": [
+            "Wear tracks flight hours.",
+            "It does not track calendar time.",
+            "An aeroplane that flies harder wears faster.",
+            "A calendar does not know that."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "When the industry group revised the maintenance guidance, the manufacturer's original six-hundred-to-nine-hundred-hour figure was not considered at all.",
+          "delivery": "building",
+          "source_lines": [
+            "When the industry group revised the maintenance guidance, the manufacturer's original six-hundred-to-nine-hundred-hour figure was not considered at all."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The number everyone had moved away from was not weighed and rejected. It was simply no longer in the room.",
+          "delivery": "intense",
+          "source_lines": [
+            "The number everyone had moved away from was not weighed and rejected.",
+            "It was simply no longer in the room."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "So the greasing interval had grown by four hundred per cent, and the check that would have caught the consequences of not greasing enough had grown alongside it.",
+          "delivery": "calm",
+          "source_lines": [
+            "So the greasing interval had grown by four hundred per cent, and the check that would have caught the consequences of not greasing enough had grown alongside it."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a wide aircraft maintenance hangar in brilliant daylight",
+          "source": "REUSE",
+          "source_plate": "K064"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a maintenance stand raised to an aircraft tail, work lights",
+          "source": "REUSE",
+          "source_plate": "K066"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a hangar tool control room in bright fluorescent light",
+          "source": "REUSE",
+          "source_plate": "K077"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a machinist's bench with a part clamped in a vice",
+          "source": "REUSE",
+          "source_plate": "K078"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a hand-drawn shop sketch pinned above a bench",
+          "source": "REUSE",
+          "source_plate": "K079"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "the same hangar at night, sodium work lights blazing",
+          "source": "REUSE",
+          "source_plate": "K065"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a three-dimensional render of a threaded screw and nut",
+          "source": "REUSE",
+          "source_plate": "K062"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L5",
+          "subject": "two independent thread spirals rendered in contrasting colour",
+          "source": "REUSE",
+          "source_plate": "K063"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "an airliner cruising in brilliant clear afternoon air",
+          "source": "REUSE",
+          "source_plate": "K022"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "an empty conference room with a long table in brilliant light",
+          "source": "REUSE",
+          "source_plate": "K061"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "a large engineering exhibit board on an easel",
+          "source": "REUSE",
+          "source_plate": "K058"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a public hearing room in bright daylight, a raised bench",
+          "source": "REUSE",
+          "source_plate": "K055"
+        },
+        {
+          "n": 13,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a precision measuring rig on a laboratory bench",
+          "source": "REUSE",
+          "source_plate": "K049"
+        },
+        {
+          "n": 14,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a mechanic seen from behind on a maintenance stand",
+          "source": "REUSE",
+          "source_plate": "K067"
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "four hundred per cent",
+          "suffix": "four_hundred",
+          "words": [
+            "FOUR HUNDRED",
+            "PER CENT"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L5",
+          "anchor": "A calendar does not know that",
+          "suffix": "calendar",
+          "words": [
+            "A CALENDAR",
+            "DOES NOT KNOW"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
+      ]
+    }
+  ]
+}
