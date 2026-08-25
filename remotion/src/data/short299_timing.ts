@@ -3,48 +3,48 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT299_TOTAL_SEC = 61.008;
+export const SHORT299_TOTAL_SEC = 54.552;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
     "id": "L1",
     "start": 0.0,
-    "end": 7.198
+    "end": 6.873
   },
   {
     "id": "L2",
-    "start": 7.418,
-    "end": 12.805
+    "start": 7.093,
+    "end": 12.619
   },
   {
     "id": "L3",
-    "start": 13.025,
-    "end": 16.787
+    "start": 12.839,
+    "end": 16.879
   },
   {
     "id": "L4",
-    "start": 17.007,
-    "end": 22.858
+    "start": 17.099,
+    "end": 23.461
   },
   {
     "id": "L5",
-    "start": 23.078,
-    "end": 33.341
+    "start": 23.681,
+    "end": 30.136
   },
   {
     "id": "L6",
-    "start": 33.561,
-    "end": 43.871
+    "start": 30.356,
+    "end": 36.997
   },
   {
     "id": "L7",
-    "start": 44.091,
-    "end": 52.125
+    "start": 37.217,
+    "end": 45.437
   },
   {
     "id": "L8",
-    "start": 52.345,
-    "end": 60.008
+    "start": 45.657,
+    "end": 53.552
   }
 ];
 
@@ -52,186 +52,171 @@ export const SHORT299_CAPTIONS: ShortCaption[] = [
   {
     "word": "At sixteen minutes past four",
     "startSec": 0.0,
-    "endSec": 1.612
+    "endSec": 1.54
   },
   {
     "word": "in the afternoon",
-    "startSec": 1.612,
-    "endSec": 2.534
+    "startSec": 1.54,
+    "endSec": 2.419
   },
   {
     "word": "the first evacuation order in that log",
-    "startSec": 2.534,
-    "endSec": 4.722
+    "startSec": 2.419,
+    "endSec": 4.509
   },
   {
     "word": "that names",
-    "startSec": 4.722,
-    "endSec": 5.422
+    "startSec": 4.509,
+    "endSec": 5.209
   },
   {
     "word": "a Lahaina neighbourhood was sent.",
-    "startSec": 5.422,
-    "endSec": 7.198
+    "startSec": 5.209,
+    "endSec": 6.873
   },
   {
     "word": "Evacuate your family and pets now",
-    "startSec": 7.418,
-    "endSec": 9.485
+    "startSec": 7.093,
+    "endSec": 9.213
   },
   {
     "word": "do not delay.",
-    "startSec": 9.485,
-    "endSec": 10.299
+    "startSec": 9.213,
+    "endSec": 10.049
   },
   {
     "word": "Shelter is open at Lahaina Civic Center.",
-    "startSec": 10.299,
-    "endSec": 12.805
+    "startSec": 10.049,
+    "endSec": 12.619
   },
   {
     "word": "The shelter named",
-    "startSec": 13.025,
-    "endSec": 13.815
+    "startSec": 12.839,
+    "endSec": 13.687
   },
   {
     "word": "in that message had closed two hours",
-    "startSec": 13.815,
-    "endSec": 15.487
+    "startSec": 13.687,
+    "endSec": 15.482
   },
   {
     "word": "and sixteen minutes earlier.",
-    "startSec": 15.487,
-    "endSec": 16.787
+    "startSec": 15.482,
+    "endSec": 16.879
   },
   {
     "word": "And the message was sent to cellphones",
-    "startSec": 17.007,
-    "endSec": 18.829
+    "startSec": 17.099,
+    "endSec": 19.081
   },
   {
     "word": "in a region where cellular phone",
-    "startSec": 18.829,
-    "endSec": 20.364
+    "startSec": 19.081,
+    "endSec": 20.749
   },
   {
     "word": "communication had been destroyed",
-    "startSec": 20.364,
-    "endSec": 21.899
+    "startSec": 20.749,
+    "endSec": 22.418
   },
   {
     "word": "in the late morning.",
-    "startSec": 21.899,
-    "endSec": 22.858
+    "startSec": 22.418,
+    "endSec": 23.461
   },
   {
     "word": "With no cellular communication",
-    "startSec": 23.078,
-    "endSec": 24.817
+    "startSec": 23.681,
+    "endSec": 25.38
   },
   {
-    "word": "residents and tourists were not able",
-    "startSec": 24.817,
-    "endSec": 26.905
+    "word": "residents were not able",
+    "startSec": 25.38,
+    "endSec": 26.682
   },
   {
     "word": "to receive emergency alerts.",
-    "startSec": 26.905,
-    "endSec": 28.528
+    "startSec": 26.682,
+    "endSec": 28.267
   },
   {
-    "word": "That is the state's own sentence",
-    "startSec": 28.528,
-    "endSec": 30.384
+    "word": "That is the state's own sentence.",
+    "startSec": 28.267,
+    "endSec": 30.136
   },
   {
-    "word": "about the late morning",
-    "startSec": 30.384,
-    "endSec": 31.659
+    "word": "The County says it sent",
+    "startSec": 30.356,
+    "endSec": 31.684
   },
   {
-    "word": "hours before the town burned.",
-    "startSec": 31.659,
-    "endSec": 33.341
-  },
-  {
-    "word": "The County's position is that it sent",
-    "startSec": 33.561,
-    "endSec": 35.753
-  },
-  {
-    "word": "at least fourteen alert messages that day",
-    "startSec": 35.753,
-    "endSec": 38.183
+    "word": "at least fourteen alert messages",
+    "startSec": 31.684,
+    "endSec": 33.532
   },
   {
     "word": "and that all twenty-one cell towers",
-    "startSec": 38.183,
-    "endSec": 40.257
+    "startSec": 33.532,
+    "endSec": 35.553
   },
   {
-    "word": "serving West Maui including Lahaina",
-    "startSec": 40.257,
-    "endSec": 42.33
-  },
-  {
-    "word": "experienced total failure.",
-    "startSec": 42.33,
-    "endSec": 43.871
+    "word": "serving West Maui failed.",
+    "startSec": 35.553,
+    "endSec": 36.997
   },
   {
     "word": "Finding thirty-six.",
-    "startSec": 44.091,
-    "endSec": 45.274
+    "startSec": 37.217,
+    "endSec": 38.428
   },
   {
     "word": "Many residents did not receive",
-    "startSec": 45.274,
-    "endSec": 47.143
+    "startSec": 38.428,
+    "endSec": 40.339
   },
   {
     "word": "a text notification",
-    "startSec": 47.143,
-    "endSec": 48.326
+    "startSec": 40.339,
+    "endSec": 41.55
   },
   {
     "word": "from the county regarding the high winds",
-    "startSec": 48.326,
-    "endSec": 50.817
+    "startSec": 41.55,
+    "endSec": 44.099
   },
   {
     "word": "and high fire danger.",
-    "startSec": 50.817,
-    "endSec": 52.125
+    "startSec": 44.099,
+    "endSec": 45.437
   },
   {
     "word": "An evacuation order",
-    "startSec": 52.345,
-    "endSec": 53.519
+    "startSec": 45.657,
+    "endSec": 46.867
   },
   {
     "word": "at sixteen minutes past four",
-    "startSec": 53.519,
-    "endSec": 55.25
+    "startSec": 46.867,
+    "endSec": 48.649
   },
   {
     "word": "naming a shelter that had closed",
-    "startSec": 55.25,
-    "endSec": 57.227
+    "startSec": 48.649,
+    "endSec": 50.687
   },
   {
     "word": "at two",
-    "startSec": 57.227,
-    "endSec": 57.927
+    "startSec": 50.687,
+    "endSec": 51.387
   },
   {
     "word": "sent to a network",
-    "startSec": 57.927,
-    "endSec": 58.978
+    "startSec": 51.387,
+    "endSec": 52.469
   },
   {
     "word": "that had already died.",
-    "startSec": 58.978,
-    "endSec": 60.008
+    "startSec": 52.469,
+    "endSec": 53.552
   }
 ];

@@ -3,48 +3,48 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT295_TOTAL_SEC = 58.686;
+export const SHORT295_TOTAL_SEC = 54.412;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
     "id": "L1",
     "start": 0.0,
-    "end": 8.452
+    "end": 6.13
   },
   {
     "id": "L2",
-    "start": 8.672,
-    "end": 15.684
+    "start": 6.35,
+    "end": 13.362
   },
   {
     "id": "L3",
-    "start": 15.904,
-    "end": 23.799
+    "start": 13.582,
+    "end": 20.78
   },
   {
     "id": "L4",
-    "start": 24.019,
-    "end": 32.657
+    "start": 21.0,
+    "end": 29.591
   },
   {
     "id": "L5",
-    "start": 32.877,
-    "end": 37.428
+    "start": 29.811,
+    "end": 33.062
   },
   {
     "id": "L6",
-    "start": 37.648,
-    "end": 44.196
+    "start": 33.282,
+    "end": 39.551
   },
   {
     "id": "L7",
-    "start": 44.416,
-    "end": 52.543
+    "start": 39.771,
+    "end": 47.944
   },
   {
     "id": "L8",
-    "start": 52.763,
-    "end": 57.686
+    "start": 48.164,
+    "end": 53.412
   }
 ];
 
@@ -52,176 +52,166 @@ export const SHORT295_CAPTIONS: ShortCaption[] = [
   {
     "word": "Thirty-four minutes past six",
     "startSec": 0.0,
-    "endSec": 1.667
+    "endSec": 1.467
   },
   {
     "word": "on a Saturday evening in Seoul",
-    "startSec": 1.667,
-    "endSec": 3.452
+    "startSec": 1.467,
+    "endSec": 3.039
   },
   {
-    "word": "someone pushed their way",
-    "startSec": 3.452,
-    "endSec": 4.881
-  },
-  {
-    "word": "out of a crowded alley",
-    "startSec": 4.881,
-    "endSec": 6.19
-  },
-  {
-    "word": "took out a phone",
-    "startSec": 6.19,
-    "endSec": 7.143
+    "word": "someone walked out of a crowded alley",
+    "startSec": 3.039,
+    "endSec": 4.977
   },
   {
     "word": "and called the police.",
-    "startSec": 7.143,
-    "endSec": 8.452
+    "startSec": 4.977,
+    "endSec": 6.13
   },
   {
     "word": "It was not a crime they",
-    "startSec": 8.672,
-    "endSec": 9.885
+    "startSec": 6.35,
+    "endSec": 7.563
   },
   {
     "word": "were reporting.",
-    "startSec": 9.885,
-    "endSec": 10.675
+    "startSec": 7.563,
+    "endSec": 8.353
   },
   {
     "word": "They said people were being forced uphill",
-    "startSec": 10.675,
-    "endSec": 12.837
+    "startSec": 8.353,
+    "endSec": 10.515
   },
   {
     "word": "into a place where there",
-    "startSec": 12.837,
-    "endSec": 14.102
+    "startSec": 10.515,
+    "endSec": 11.78
   },
   {
     "word": "was no room to come back down.",
-    "startSec": 14.102,
-    "endSec": 15.684
+    "startSec": 11.78,
+    "endSec": 13.362
   },
   {
     "word": "Four hours before anything happened",
-    "startSec": 15.904,
-    "endSec": 17.85
+    "startSec": 13.582,
+    "endSec": 15.356
   },
   {
     "word": "a person standing in that alley used",
-    "startSec": 17.85,
-    "endSec": 19.852
+    "startSec": 15.356,
+    "endSec": 17.181
   },
   {
     "word": "the words crushed to death",
-    "startSec": 19.852,
-    "endSec": 21.297
+    "startSec": 17.181,
+    "endSec": 18.499
   },
   {
     "word": "and asked for somebody to come",
-    "startSec": 21.297,
-    "endSec": 22.965
+    "startSec": 18.499,
+    "endSec": 20.02
   },
   {
     "word": "and control it.",
-    "startSec": 22.965,
-    "endSec": 23.799
+    "startSec": 20.02,
+    "endSec": 20.78
   },
   {
     "word": "Between six thirty-four in the evening",
-    "startSec": 24.019,
-    "endSec": 26.096
+    "startSec": 21.0,
+    "endSec": 23.066
   },
   {
     "word": "and eleven minutes past ten the police",
-    "startSec": 26.096,
-    "endSec": 28.174
+    "startSec": 23.066,
+    "endSec": 25.132
   },
   {
     "word": "in Itaewon received eleven distress",
-    "startSec": 28.174,
-    "endSec": 30.087
+    "startSec": 25.132,
+    "endSec": 27.035
   },
   {
     "word": "reports about dangerous levels of overcrowding.",
-    "startSec": 30.087,
-    "endSec": 32.657
+    "startSec": 27.035,
+    "endSec": 29.591
   },
   {
-    "word": "Officers were sent. Officers went.",
-    "startSec": 32.877,
-    "endSec": 35.026
+    "word": "Officers were sent.",
+    "startSec": 29.811,
+    "endSec": 30.895
   },
   {
     "word": "They dispersed crowds where they went.",
-    "startSec": 35.026,
-    "endSec": 37.428
+    "startSec": 30.895,
+    "endSec": 33.062
   },
   {
     "word": "The calls kept coming",
-    "startSec": 37.648,
-    "endSec": 38.887
+    "startSec": 33.282,
+    "endSec": 34.468
   },
   {
     "word": "and the language",
-    "startSec": 38.887,
-    "endSec": 39.831
+    "startSec": 34.468,
+    "endSec": 35.372
   },
   {
     "word": "in them stopped being about congestion.",
-    "startSec": 39.831,
-    "endSec": 42.131
+    "startSec": 35.372,
+    "endSec": 37.574
   },
   {
     "word": "I am almost being crushed to death.",
-    "startSec": 42.131,
-    "endSec": 44.196
+    "startSec": 37.574,
+    "endSec": 39.551
   },
   {
     "word": "Eleven calls.",
-    "startSec": 44.416,
-    "endSec": 45.193
+    "startSec": 39.771,
+    "endSec": 40.552
   },
   {
     "word": "Officers were deployed to four of them.",
-    "startSec": 45.193,
-    "endSec": 47.523
+    "startSec": 40.552,
+    "endSec": 42.896
   },
   {
     "word": "On the other seven",
-    "startSec": 47.523,
-    "endSec": 48.599
+    "startSec": 42.896,
+    "endSec": 43.978
   },
   {
     "word": "according to Al Jazeera's reporting",
-    "startSec": 48.599,
-    "endSec": 50.691
+    "startSec": 43.978,
+    "endSec": 46.081
   },
   {
     "word": "at the time",
-    "startSec": 50.691,
-    "endSec": 51.391
+    "startSec": 46.081,
+    "endSec": 46.781
   },
   {
     "word": "there was no action.",
-    "startSec": 51.391,
-    "endSec": 52.543
+    "startSec": 46.781,
+    "endSec": 47.944
   },
   {
     "word": "The question is not who to blame.",
-    "startSec": 52.763,
-    "endSec": 54.609
+    "startSec": 48.164,
+    "endSec": 50.132
   },
   {
     "word": "It is what happens to a warning",
-    "startSec": 54.609,
-    "endSec": 56.343
+    "startSec": 50.132,
+    "endSec": 51.981
   },
   {
     "word": "after somebody makes it.",
-    "startSec": 56.343,
-    "endSec": 57.686
+    "startSec": 51.981,
+    "endSec": 53.412
   }
 ];

@@ -3,48 +3,48 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT298_TOTAL_SEC = 59.149;
+export const SHORT298_TOTAL_SEC = 52.509;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
     "id": "L1",
     "start": 0.0,
-    "end": 6.269
+    "end": 6.362
   },
   {
     "id": "L2",
-    "start": 6.489,
-    "end": 12.201
+    "start": 6.582,
+    "end": 11.087
   },
   {
     "id": "L3",
-    "start": 12.421,
-    "end": 19.898
+    "start": 11.307,
+    "end": 19.062
   },
   {
     "id": "L4",
-    "start": 20.118,
-    "end": 31.031
+    "start": 19.282,
+    "end": 27.548
   },
   {
     "id": "L5",
-    "start": 31.251,
-    "end": 33.434
+    "start": 27.768,
+    "end": 29.858
   },
   {
     "id": "L6",
-    "start": 33.654,
-    "end": 43.592
+    "start": 30.078,
+    "end": 40.155
   },
   {
     "id": "L7",
-    "start": 43.812,
-    "end": 47.341
+    "start": 40.375,
+    "end": 44.555
   },
   {
     "id": "L8",
-    "start": 47.561,
-    "end": 58.149
+    "start": 44.775,
+    "end": 51.509
   }
 ];
 
@@ -52,181 +52,161 @@ export const SHORT298_CAPTIONS: ShortCaption[] = [
   {
     "word": "Hawaiʻi has more outdoor warning sirens",
     "startSec": 0.0,
-    "endSec": 2.037
+    "endSec": 2.068
   },
   {
     "word": "than any other place on earth.",
-    "startSec": 2.037,
-    "endSec": 3.605
+    "startSec": 2.068,
+    "endSec": 3.658
   },
   {
     "word": "More than four hundred of them stand",
-    "startSec": 3.605,
-    "endSec": 5.485
+    "startSec": 3.658,
+    "endSec": 5.567
   },
   {
     "word": "on the islands.",
-    "startSec": 5.485,
-    "endSec": 6.269
+    "startSec": 5.567,
+    "endSec": 6.362
   },
   {
     "word": "They are tested.",
-    "startSec": 6.489,
-    "endSec": 7.493
+    "startSec": 6.582,
+    "endSec": 7.494
   },
   {
-    "word": "On a schedule in public in daylight",
-    "startSec": 7.493,
-    "endSec": 9.69
+    "word": "On a schedule in public",
+    "startSec": 7.494,
+    "endSec": 8.806
   },
   {
     "word": "on the first business day",
-    "startSec": 9.69,
-    "endSec": 11.259
+    "startSec": 8.806,
+    "endSec": 10.232
   },
   {
     "word": "of every month.",
-    "startSec": 11.259,
-    "endSec": 12.201
+    "startSec": 10.232,
+    "endSec": 11.087
   },
   {
     "word": "And the state publishes what it",
-    "startSec": 12.421,
-    "endSec": 14.587
+    "startSec": 11.307,
+    "endSec": 13.554
   },
   {
     "word": "is for. Tsunamis. Hurricanes. Flooding. Wildfires.",
-    "startSec": 14.587,
-    "endSec": 18.081
+    "startSec": 13.554,
+    "endSec": 17.178
   },
   {
     "word": "Wildfires are on the list.",
-    "startSec": 18.081,
-    "endSec": 19.898
+    "startSec": 17.178,
+    "endSec": 19.062
   },
   {
     "word": "Finding thirty-seven.",
-    "startSec": 20.118,
-    "endSec": 21.384
+    "startSec": 19.282,
+    "endSec": 20.577
   },
   {
-    "word": "Only one siren",
-    "startSec": 21.384,
-    "endSec": 22.228
-  },
-  {
-    "word": "from the All-Hazard Outdoor Warning Siren",
-    "startSec": 22.228,
-    "endSec": 24.7
-  },
-  {
-    "word": "System was operable within",
-    "startSec": 24.7,
-    "endSec": 26.268
+    "word": "Only one siren was operable within",
+    "startSec": 20.577,
+    "endSec": 22.675
   },
   {
     "word": "the burn perimeter of the Lahaina area",
-    "startSec": 26.268,
-    "endSec": 28.559
+    "startSec": 22.675,
+    "endSec": 25.019
   },
   {
     "word": "on August the eighth twenty twenty-three.",
-    "startSec": 28.559,
-    "endSec": 31.031
+    "startSec": 25.019,
+    "endSec": 27.548
   },
   {
     "word": "One.",
-    "startSec": 31.251,
-    "endSec": 31.951
+    "startSec": 27.768,
+    "endSec": 28.468
   },
   {
     "word": "Inside the area that burned.",
-    "startSec": 31.951,
-    "endSec": 33.434
+    "startSec": 28.468,
+    "endSec": 29.858
   },
   {
     "word": "Finding thirty-eight is a separate finding",
-    "startSec": 33.654,
-    "endSec": 36.012
+    "startSec": 30.078,
+    "endSec": 32.469
   },
   {
     "word": "about a separate thing.",
-    "startSec": 36.012,
-    "endSec": 37.304
+    "startSec": 32.469,
+    "endSec": 33.779
   },
   {
     "word": "In the whole life",
-    "startSec": 37.304,
-    "endSec": 38.258
+    "startSec": 33.779,
+    "endSec": 34.746
   },
   {
     "word": "of the largest outdoor warning network",
-    "startSec": 38.258,
-    "endSec": 40.392
+    "startSec": 34.746,
+    "endSec": 36.91
   },
   {
     "word": "in the world",
-    "startSec": 40.392,
-    "endSec": 41.092
+    "startSec": 36.91,
+    "endSec": 37.61
   },
   {
     "word": "it had never once been used",
-    "startSec": 41.092,
-    "endSec": 42.608
+    "startSec": 37.61,
+    "endSec": 39.147
   },
   {
     "word": "to warn of a fire.",
-    "startSec": 42.608,
-    "endSec": 43.592
+    "startSec": 39.147,
+    "endSec": 40.155
   },
   {
     "word": "Not that day. Ever.",
-    "startSec": 43.812,
-    "endSec": 44.784
+    "startSec": 40.375,
+    "endSec": 41.526
   },
   {
     "word": "And it was not used",
-    "startSec": 44.784,
-    "endSec": 45.756
+    "startSec": 41.526,
+    "endSec": 42.677
   },
   {
     "word": "on the eighth of August either.",
-    "startSec": 45.756,
-    "endSec": 47.341
+    "startSec": 42.677,
+    "endSec": 44.555
   },
   {
     "word": "Eighty-four findings.",
-    "startSec": 47.561,
-    "endSec": 48.803
-  },
-  {
-    "word": "A hundred and forty recommendations.",
-    "startSec": 48.803,
-    "endSec": 50.933
+    "startSec": 44.775,
+    "endSec": 45.963
   },
   {
     "word": "And not one of them says",
-    "startSec": 50.933,
-    "endSec": 52.352
+    "startSec": 45.963,
+    "endSec": 47.321
   },
   {
     "word": "that sounding the siren would have changed",
-    "startSec": 52.352,
-    "endSec": 54.837
+    "startSec": 47.321,
+    "endSec": 49.698
   },
   {
     "word": "the outcome.",
-    "startSec": 54.837,
-    "endSec": 55.546
-  },
-  {
-    "word": "That is not a loose end.",
-    "startSec": 55.546,
-    "endSec": 56.966
+    "startSec": 49.698,
+    "endSec": 50.398
   },
   {
     "word": "That is the finding.",
-    "startSec": 56.966,
-    "endSec": 58.149
+    "startSec": 50.398,
+    "endSec": 51.509
   }
 ];

@@ -3,48 +3,48 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT306_TOTAL_SEC = 58.687;
+export const SHORT306_TOTAL_SEC = 53.67;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
     "id": "L1",
     "start": 0.0,
-    "end": 6.316
+    "end": 6.362
   },
   {
     "id": "L2",
-    "start": 6.536,
+    "start": 6.582,
     "end": 12.805
   },
   {
     "id": "L3",
     "start": 13.025,
-    "end": 23.474
+    "end": 21.338
   },
   {
     "id": "L4",
-    "start": 23.694,
-    "end": 30.614
+    "start": 21.558,
+    "end": 28.988
   },
   {
     "id": "L5",
-    "start": 30.834,
-    "end": 40.401
+    "start": 29.208,
+    "end": 35.245
   },
   {
     "id": "L6",
-    "start": 40.621,
-    "end": 47.587
+    "start": 35.465,
+    "end": 42.617
   },
   {
     "id": "L7",
-    "start": 47.807,
-    "end": 51.058
+    "start": 42.837,
+    "end": 46.088
   },
   {
     "id": "L8",
-    "start": 51.278,
-    "end": 57.687
+    "start": 46.308,
+    "end": 52.67
   }
 ];
 
@@ -52,196 +52,186 @@ export const SHORT306_CAPTIONS: ShortCaption[] = [
   {
     "word": "Shortly before midnight",
     "startSec": 0.0,
-    "endSec": 1.211
+    "endSec": 1.219
   },
   {
     "word": "in a village called Nantes",
-    "startSec": 1.211,
-    "endSec": 2.579
+    "startSec": 1.219,
+    "endSec": 2.598
   },
   {
     "word": "somebody looked at a parked locomotive",
-    "startSec": 2.579,
-    "endSec": 4.579
+    "startSec": 2.598,
+    "endSec": 4.612
   },
   {
     "word": "and saw flames on the front",
-    "startSec": 4.579,
-    "endSec": 6.0
+    "startSec": 4.612,
+    "endSec": 6.044
   },
   {
     "word": "of it.",
-    "startSec": 6.0,
-    "endSec": 6.316
+    "startSec": 6.044,
+    "endSec": 6.362
   },
   {
     "word": "The firefighters",
-    "startSec": 6.536,
-    "endSec": 7.44
+    "startSec": 6.582,
+    "endSec": 7.479
   },
   {
     "word": "who arrived did exactly what they",
-    "startSec": 7.44,
-    "endSec": 9.303
+    "startSec": 7.479,
+    "endSec": 9.329
   },
   {
     "word": "were trained to do",
-    "startSec": 9.303,
-    "endSec": 10.32
+    "startSec": 9.329,
+    "endSec": 10.338
   },
   {
     "word": "and they did it correctly.",
-    "startSec": 10.32,
-    "endSec": 11.788
+    "startSec": 10.338,
+    "endSec": 11.796
   },
   {
     "word": "The fire went out.",
-    "startSec": 11.788,
+    "startSec": 11.796,
     "endSec": 12.805
   },
   {
-    "word": "What nobody standing",
+    "word": "What nobody",
     "startSec": 13.025,
-    "endSec": 14.192
+    "endSec": 13.725
   },
   {
     "word": "in that yard knew",
-    "startSec": 14.192,
-    "endSec": 15.185
+    "startSec": 13.725,
+    "endSec": 14.619
   },
   {
     "word": "was that the engine they",
-    "startSec": 15.185,
-    "endSec": 16.586
+    "startSec": 14.619,
+    "endSec": 15.882
   },
   {
     "word": "were about to switch",
-    "startSec": 16.586,
-    "endSec": 17.753
+    "startSec": 15.882,
+    "endSec": 16.934
   },
   {
     "word": "off was the only thing holding seventy-two",
-    "startSec": 17.753,
-    "endSec": 20.205
+    "startSec": 16.934,
+    "endSec": 19.144
   },
   {
-    "word": "tank cars of crude oil",
-    "startSec": 20.205,
-    "endSec": 21.489
+    "word": "tank cars of crude oil above",
+    "startSec": 19.144,
+    "endSec": 20.617
   },
   {
-    "word": "on the hill above a sleeping town.",
-    "startSec": 21.489,
-    "endSec": 23.474
+    "word": "a sleeping town.",
+    "startSec": 20.617,
+    "endSec": 21.338
   },
   {
     "word": "No decision was documented",
-    "startSec": 23.694,
-    "endSec": 25.181
+    "startSec": 21.558,
+    "endSec": 23.155
   },
   {
     "word": "after the fire was extinguished",
-    "startSec": 25.181,
-    "endSec": 26.954
+    "startSec": 23.155,
+    "endSec": 25.058
   },
   {
     "word": "to move the train",
-    "startSec": 26.954,
-    "endSec": 27.926
+    "startSec": 25.058,
+    "endSec": 26.102
   },
   {
     "word": "or to apply additional hand brakes.",
-    "startSec": 27.926,
-    "endSec": 29.928
+    "startSec": 26.102,
+    "endSec": 28.251
   },
   {
     "word": "No decision.",
-    "startSec": 29.928,
-    "endSec": 30.614
+    "startSec": 28.251,
+    "endSec": 28.988
   },
   {
     "word": "The pressure holding",
-    "startSec": 30.834,
-    "endSec": 32.154
+    "startSec": 29.208,
+    "endSec": 30.347
   },
   {
     "word": "a ten-thousand-ton train",
-    "startSec": 32.154,
-    "endSec": 33.737
+    "startSec": 30.347,
+    "endSec": 31.714
   },
   {
     "word": "on a descending grade fell slowly",
-    "startSec": 33.737,
-    "endSec": 35.914
-  },
-  {
-    "word": "in an empty yard",
-    "startSec": 35.914,
-    "endSec": 36.97
-  },
-  {
-    "word": "with nobody watching it",
-    "startSec": 36.97,
-    "endSec": 38.488
+    "startSec": 31.714,
+    "endSec": 33.593
   },
   {
     "word": "for about an hour and a half.",
-    "startSec": 38.488,
-    "endSec": 40.401
+    "startSec": 33.593,
+    "endSec": 35.245
   },
   {
     "word": "At fifty-eight minutes past midnight",
-    "startSec": 40.621,
-    "endSec": 42.728
+    "startSec": 35.465,
+    "endSec": 37.629
   },
   {
     "word": "and twenty-one seconds",
-    "startSec": 42.728,
-    "endSec": 44.016
+    "startSec": 37.629,
+    "endSec": 38.951
   },
   {
     "word": "the train began to move.",
-    "startSec": 44.016,
-    "endSec": 45.421
+    "startSec": 38.951,
+    "endSec": 40.393
   },
   {
     "word": "One mile an hour.",
-    "startSec": 45.421,
-    "endSec": 46.416
+    "startSec": 40.393,
+    "endSec": 41.415
   },
   {
     "word": "There was no person.",
-    "startSec": 46.416,
-    "endSec": 47.587
+    "startSec": 41.415,
+    "endSec": 42.617
   },
   {
     "word": "Seventeen minutes later it was doing",
-    "startSec": 47.807,
-    "endSec": 49.726
+    "startSec": 42.837,
+    "endSec": 44.756
   },
   {
     "word": "sixty-five miles an hour.",
-    "startSec": 49.726,
-    "endSec": 51.058
+    "startSec": 44.756,
+    "endSec": 46.088
   },
   {
     "word": "Seven point two miles of descending grade",
-    "startSec": 51.278,
-    "endSec": 53.805
+    "startSec": 46.308,
+    "endSec": 48.816
   },
   {
     "word": "no driver",
-    "startSec": 53.805,
-    "endSec": 54.505
+    "startSec": 48.816,
+    "endSec": 49.516
   },
   {
     "word": "no brake that was coming back",
-    "startSec": 54.505,
-    "endSec": 56.292
+    "startSec": 49.516,
+    "endSec": 51.29
   },
   {
     "word": "and a town at the bottom.",
-    "startSec": 56.292,
-    "endSec": 57.687
+    "startSec": 51.29,
+    "endSec": 52.67
   }
 ];

@@ -29,6 +29,7 @@ from __future__ import annotations
 
 import json
 import re
+import subprocess
 import sys
 from pathlib import Path
 
@@ -38,6 +39,28 @@ from check_episode_spec import spec_path  # noqa: E402 -- one resolver, not a se
 
 WORDS_MIN, WORDS_MAX = 159, 180
 WPS = 2.90
+# The render gate refuses a YouTube Short composition longer than 58 s
+# (preflight_short_render.py). The word band is a PROXY for that, calibrated at 2.90
+# words/second on 28 finished Shorts -- and on 2026-08-25 eight Shorts sat inside the
+# band and still rendered long, because a line delivered "calm" runs at 2.6 w/s and a
+# spoken figure ("twenty-four million, six hundred and ten thousand") runs slower still.
+# So when the mix exists, measure it; the proxy only stands in until it does.
+DUR_MIN, DUR_MAX = 45.0, 57.0
+
+
+def mix_seconds(short_id: str) -> float | None:
+    """Measured duration of the Short's final mix, or None if it has not been built."""
+    mix = (ROOT / "remotion" / "public" / "shorts" / short_id / "audio"
+           / f"{short_id}_final_mix_v002_en_us.mp3")
+    if not mix.is_file():
+        return None
+    out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration",
+                          "-of", "csv=p=0", str(mix)], capture_output=True, text=True,
+                         encoding="utf-8", errors="replace")
+    try:
+        return float(out.stdout.strip())
+    except ValueError:
+        return None
 
 
 def plate_dirs(slug: str) -> list[Path]:
@@ -93,10 +116,20 @@ def main() -> int:
             hits = [s for s in short_subjects if re.search(rf"\b{re.escape(s)}\b", low)]
             chits = [c[:50] for c in short_claims if c in low]
             miss = [p["source_plate"] for p in sh["plates"] if avail and p["source_plate"] not in avail]
-            bad = bool(hits or chits or miss) or not (WORDS_MIN <= n <= WORDS_MAX)
+            secs = mix_seconds(sh["short_id"])
+            if secs is None:
+                length_bad = not (WORDS_MIN <= n <= WORDS_MAX)
+                length_note = ("" if not length_bad
+                               else f"  <- OUTSIDE {WORDS_MIN}-{WORDS_MAX} words (no mix yet)")
+                length_desc = f"{n:>3} words ~{n / WPS:.0f}s est"
+            else:
+                length_bad = not (DUR_MIN <= secs <= DUR_MAX)
+                length_note = ("" if not length_bad
+                               else f"  <- OUTSIDE {DUR_MIN:.0f}-{DUR_MAX:.0f}s measured")
+                length_desc = f"{n:>3} words {secs:.1f}s measured"
+            bad = bool(hits or chits or miss) or length_bad
             problems += bool(bad)
-            print(f"  {sh['short_id']}  {n:>3} words ~{n / WPS:.0f}s"
-                  f"{'' if WORDS_MIN <= n <= WORDS_MAX else '  <- OUTSIDE ' + str(WORDS_MIN) + '-' + str(WORDS_MAX)}")
+            print(f"  {sh['short_id']}  {length_desc}{length_note}")
             if hits:
                 print(f"      forbidden_subjects in narration: {hits}")
             if chits:

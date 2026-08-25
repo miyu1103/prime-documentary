@@ -136,7 +136,15 @@ def main() -> int:
     made = skipped = failed = 0
     for lid, dlv, text in LINES:
         out = draft / f"{SHORT}_{lid}.mp3"
-        if out.exists() and out.stat().st_size > 2048:
+        stamp = out.with_suffix(".idem")
+        want = idem(args.short, text, lid)
+        # Existence is not identity. Skipping on "the file is there" meant that on
+        # 2026-08-25 eight Shorts were re-voiced twice after their lines were trimmed,
+        # the index text was rewritten, every gate reported the new words -- and the
+        # audio, and therefore the duration, never changed. The chunk is reused only
+        # when its idempotency key (text + voice + model) still matches.
+        if out.exists() and out.stat().st_size > 2048 and \
+                stamp.exists() and stamp.read_text(encoding="utf-8").strip() == want:
             skipped += 1
             continue
         body = json.dumps({"text": text, "model_id": MODEL, "voice_settings": SETTINGS[dlv]}).encode("utf-8")
@@ -146,6 +154,7 @@ def main() -> int:
         try:
             with urllib.request.urlopen(req, timeout=180) as r:
                 out.write_bytes(r.read())
+            stamp.write_text(want, encoding="utf-8")
             print(f"  {lid} {dlv:8s} {len(text):3d}ch -> {out.stat().st_size//1024}KB {dur(out):.2f}s")
             made += 1
             time.sleep(0.35)

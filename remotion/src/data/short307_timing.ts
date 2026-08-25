@@ -3,48 +3,48 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT307_TOTAL_SEC = 59.94;
+export const SHORT307_TOTAL_SEC = 52.232;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
     "id": "L1",
     "start": 0.0,
-    "end": 3.947
+    "end": 4.18
   },
   {
     "id": "L2",
-    "start": 4.167,
-    "end": 11.226
+    "start": 4.4,
+    "end": 9.23
   },
   {
     "id": "L3",
-    "start": 11.446,
-    "end": 18.04
+    "start": 9.45,
+    "end": 13.165
   },
   {
     "id": "L4",
-    "start": 18.26,
-    "end": 27.827
+    "start": 13.385,
+    "end": 20.537
   },
   {
     "id": "L5",
-    "start": 28.047,
-    "end": 33.295
+    "start": 20.757,
+    "end": 26.237
   },
   {
     "id": "L6",
-    "start": 33.515,
-    "end": 43.407
+    "start": 26.457,
+    "end": 36.024
   },
   {
     "id": "L7",
-    "start": 43.627,
-    "end": 49.896
+    "start": 36.244,
+    "end": 42.374
   },
   {
     "id": "L8",
-    "start": 50.116,
-    "end": 58.94
+    "start": 42.594,
+    "end": 51.232
   }
 ];
 
@@ -52,176 +52,161 @@ export const SHORT307_CAPTIONS: ShortCaption[] = [
   {
     "word": "This is a story about a recommendation",
     "startSec": 0.0,
-    "endSec": 1.899
+    "endSec": 2.011
   },
   {
     "word": "that was written down and not made",
-    "startSec": 1.899,
-    "endSec": 3.597
+    "startSec": 2.011,
+    "endSec": 3.81
   },
   {
     "word": "a rule.",
-    "startSec": 3.597,
-    "endSec": 3.947
+    "startSec": 3.81,
+    "endSec": 4.18
   },
   {
     "word": "In two thousand and eleven",
-    "startSec": 4.167,
-    "endSec": 5.777
+    "startSec": 4.4,
+    "endSec": 5.877
   },
   {
     "word": "Texas got weather like this.",
-    "startSec": 5.777,
-    "endSec": 7.511
-  },
-  {
-    "word": "Power plants tripped offline.",
-    "startSec": 7.511,
-    "endSec": 9.306
+    "startSec": 5.877,
+    "endSec": 7.468
   },
   {
     "word": "Rolling blackouts were ordered.",
-    "startSec": 9.306,
-    "endSec": 11.226
+    "startSec": 7.468,
+    "endSec": 9.23
   },
   {
-    "word": "They produced a report",
-    "startSec": 11.446,
-    "endSec": 12.686
+    "word": "They produced a report.",
+    "startSec": 9.45,
+    "endSec": 10.828
   },
   {
-    "word": "and the report made a recommendation.",
-    "startSec": 12.686,
-    "endSec": 14.771
-  },
-  {
-    "word": "It recommended the development of winterization standards.",
-    "startSec": 14.771,
-    "endSec": 18.04
+    "word": "It recommended winterization standards.",
+    "startSec": 10.828,
+    "endSec": 13.165
   },
   {
     "word": "A recommendation is a document.",
-    "startSec": 18.26,
-    "endSec": 20.224
+    "startSec": 13.385,
+    "endSec": 15.313
   },
   {
-    "word": "Nobody audits a recommendation.",
-    "startSec": 20.224,
-    "endSec": 22.188
-  },
-  {
-    "word": "Nobody is penalised for not following one.",
-    "startSec": 22.188,
-    "endSec": 24.849
+    "word": "Nobody is penalised for ignoring one.",
+    "startSec": 15.313,
+    "endSec": 17.614
   },
   {
     "word": "A standard is a rule",
-    "startSec": 24.849,
-    "endSec": 26.116
+    "startSec": 17.614,
+    "endSec": 18.858
   },
   {
     "word": "with a mechanism behind it.",
-    "startSec": 26.116,
-    "endSec": 27.827
+    "startSec": 18.858,
+    "endSec": 20.537
   },
   {
     "word": "The standards organisation ultimately",
-    "startSec": 28.047,
-    "endSec": 30.07
+    "startSec": 20.757,
+    "endSec": 22.869
   },
   {
     "word": "declined to act on it.",
-    "startSec": 30.07,
-    "endSec": 31.272
+    "startSec": 22.869,
+    "endSec": 24.125
   },
   {
     "word": "Nobody refused in a room",
-    "startSec": 31.272,
-    "endSec": 32.584
+    "startSec": 24.125,
+    "endSec": 25.495
   },
   {
     "word": "with a table.",
-    "startSec": 32.584,
-    "endSec": 33.295
+    "startSec": 25.495,
+    "endSec": 26.237
   },
   {
     "word": "Ten years passed between the report",
-    "startSec": 33.515,
-    "endSec": 35.505
+    "startSec": 26.457,
+    "endSec": 28.381
   },
   {
     "word": "and the storm.",
-    "startSec": 35.505,
-    "endSec": 36.301
+    "startSec": 28.381,
+    "endSec": 29.151
   },
   {
     "word": "When February twenty twenty-one arrived",
-    "startSec": 36.301,
-    "endSec": 38.518
+    "startSec": 29.151,
+    "endSec": 31.295
   },
   {
     "word": "generating units failed",
-    "startSec": 38.518,
-    "endSec": 39.825
+    "startSec": 31.295,
+    "endSec": 32.56
   },
   {
     "word": "from freezing above their own stated",
-    "startSec": 39.825,
-    "endSec": 41.872
+    "startSec": 32.56,
+    "endSec": 34.539
   },
   {
     "word": "ambient design temperature.",
-    "startSec": 41.872,
-    "endSec": 43.407
+    "startSec": 34.539,
+    "endSec": 36.024
   },
   {
     "word": "Not below the temperature",
-    "startSec": 43.627,
-    "endSec": 44.933
+    "startSec": 36.244,
+    "endSec": 37.521
   },
   {
     "word": "the unit was built to survive.",
-    "startSec": 44.933,
-    "endSec": 46.5
+    "startSec": 37.521,
+    "endSec": 39.054
   },
   {
     "word": "Above it.",
-    "startSec": 46.5,
-    "endSec": 47.2
+    "startSec": 39.054,
+    "endSec": 39.754
   },
   {
     "word": "The machines were failing",
-    "startSec": 47.2,
-    "endSec": 48.506
+    "startSec": 39.754,
+    "endSec": 41.031
   },
   {
     "word": "in weather they were rated for.",
-    "startSec": 48.506,
-    "endSec": 49.896
+    "startSec": 41.031,
+    "endSec": 42.374
   },
   {
     "word": "And the rules themselves were adopted",
-    "startSec": 50.116,
-    "endSec": 52.131
+    "startSec": 42.594,
+    "endSec": 44.567
   },
   {
     "word": "on the thirtieth of August twenty twenty-two.",
-    "startSec": 52.131,
-    "endSec": 54.582
+    "startSec": 44.567,
+    "endSec": 46.966
   },
   {
     "word": "Eleven years",
-    "startSec": 54.582,
-    "endSec": 55.282
+    "startSec": 46.966,
+    "endSec": 47.666
   },
   {
     "word": "five months and nineteen days",
-    "startSec": 55.282,
-    "endSec": 56.862
+    "startSec": 47.666,
+    "endSec": 49.213
   },
   {
     "word": "after the report that recommended them.",
-    "startSec": 56.862,
-    "endSec": 58.94
+    "startSec": 49.213,
+    "endSec": 51.232
   }
 ];

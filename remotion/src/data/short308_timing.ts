@@ -3,48 +3,48 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT308_TOTAL_SEC = 59.615;
+export const SHORT308_TOTAL_SEC = 54.879;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
     "id": "L1",
     "start": 0.0,
-    "end": 7.895
+    "end": 6.269
   },
   {
     "id": "L2",
-    "start": 8.115,
-    "end": 13.595
+    "start": 6.489,
+    "end": 12.062
   },
   {
     "id": "L3",
-    "start": 13.815,
-    "end": 20.084
+    "start": 12.282,
+    "end": 18.459
   },
   {
     "id": "L4",
-    "start": 20.304,
-    "end": 29.453
+    "start": 18.679,
+    "end": 27.178
   },
   {
     "id": "L5",
-    "start": 29.673,
-    "end": 38.868
+    "start": 27.398,
+    "end": 36.5
   },
   {
     "id": "L6",
-    "start": 39.088,
-    "end": 47.726
+    "start": 36.72,
+    "end": 43.686
   },
   {
     "id": "L7",
-    "start": 47.946,
-    "end": 54.866
+    "start": 43.906,
+    "end": 50.315
   },
   {
     "id": "L8",
-    "start": 55.086,
-    "end": 58.615
+    "start": 50.535,
+    "end": 53.879
   }
 ];
 
@@ -52,181 +52,166 @@ export const SHORT308_CAPTIONS: ShortCaption[] = [
   {
     "word": "At twenty past one in the morning",
     "startSec": 0.0,
-    "endSec": 1.737
+    "endSec": 1.738
   },
   {
-    "word": "in a control room north of Austin",
-    "startSec": 1.737,
-    "endSec": 3.474
+    "word": "north of Austin",
+    "startSec": 1.738,
+    "endSec": 2.529
   },
   {
-    "word": "an operator gave an order",
-    "startSec": 3.474,
-    "endSec": 4.79
-  },
-  {
-    "word": "that had never been given",
-    "startSec": 4.79,
-    "endSec": 6.105
+    "word": "an operator gave an order never given",
+    "startSec": 2.529,
+    "endSec": 4.478
   },
   {
     "word": "at that scale in American history.",
-    "startSec": 6.105,
-    "endSec": 7.895
+    "startSec": 4.478,
+    "endSec": 6.269
   },
   {
     "word": "Cut the power to twenty thousand megawatts",
-    "startSec": 8.115,
-    "endSec": 10.538
+    "startSec": 6.489,
+    "endSec": 8.953
   },
   {
     "word": "of customers. Now.",
-    "startSec": 10.538,
-    "endSec": 11.576
+    "startSec": 8.953,
+    "endSec": 10.009
   },
   {
     "word": "Before the grid takes itself apart.",
-    "startSec": 11.576,
-    "endSec": 13.595
+    "startSec": 10.009,
+    "endSec": 12.062
   },
   {
     "word": "It was the correct order.",
-    "startSec": 13.815,
-    "endSec": 15.352
+    "startSec": 12.282,
+    "endSec": 13.796
   },
   {
     "word": "It is not a failure.",
-    "startSec": 15.352,
-    "endSec": 16.581
+    "startSec": 13.796,
+    "endSec": 15.007
   },
   {
     "word": "It is the thing you",
-    "startSec": 16.581,
-    "endSec": 17.748
+    "startSec": 15.007,
+    "endSec": 16.158
   },
   {
     "word": "do so that the failure",
-    "startSec": 17.748,
-    "endSec": 19.101
+    "startSec": 16.158,
+    "endSec": 17.49
   },
   {
     "word": "does not happen.",
-    "startSec": 19.101,
-    "endSec": 20.084
+    "startSec": 17.49,
+    "endSec": 18.459
   },
   {
     "word": "Twenty thousand megawatts were shed.",
-    "startSec": 20.304,
-    "endSec": 22.485
+    "startSec": 18.679,
+    "endSec": 20.864
   },
   {
     "word": "It was the largest manually controlled",
-    "startSec": 22.485,
-    "endSec": 24.788
+    "startSec": 20.864,
+    "endSec": 23.171
   },
   {
-    "word": "load shedding event in the history",
-    "startSec": 24.788,
-    "endSec": 26.848
+    "word": "load shedding event",
+    "startSec": 23.171,
+    "endSec": 24.325
   },
   {
-    "word": "of the United States.",
-    "startSec": 26.848,
-    "endSec": 28.12
+    "word": "in United States history.",
+    "startSec": 24.325,
+    "endSec": 25.842
   },
   {
     "word": "And it was not enough.",
-    "startSec": 28.12,
-    "endSec": 29.453
+    "startSec": 25.842,
+    "endSec": 27.178
   },
   {
     "word": "That morning the frequency",
-    "startSec": 29.673,
-    "endSec": 31.122
+    "startSec": 27.398,
+    "endSec": 28.832
   },
   {
     "word": "of the Texas grid fell below fifty-nine",
-    "startSec": 31.122,
-    "endSec": 33.295
+    "startSec": 28.832,
+    "endSec": 30.984
   },
   {
     "word": "point four hertz",
-    "startSec": 33.295,
-    "endSec": 34.187
+    "startSec": 30.984,
+    "endSec": 31.866
   },
   {
     "word": "and stayed there for four minutes",
-    "startSec": 34.187,
-    "endSec": 36.026
+    "startSec": 31.866,
+    "endSec": 33.687
   },
   {
     "word": "and twenty-three seconds.",
-    "startSec": 36.026,
-    "endSec": 37.419
+    "startSec": 33.687,
+    "endSec": 35.066
   },
   {
     "word": "The line was nine minutes.",
-    "startSec": 37.419,
-    "endSec": 38.868
+    "startSec": 35.066,
+    "endSec": 36.5
   },
   {
     "word": "Not blackouts.",
-    "startSec": 39.088,
-    "endSec": 39.99
+    "startSec": 36.72,
+    "endSec": 37.686
   },
   {
     "word": "A system-wide shutdown",
-    "startSec": 39.99,
-    "endSec": 41.409
+    "startSec": 37.686,
+    "endSec": 39.203
   },
   {
     "word": "cutting power to millions more",
-    "startSec": 41.409,
-    "endSec": 43.343
-  },
-  {
-    "word": "significantly slowing restoration",
-    "startSec": 43.343,
-    "endSec": 45.47
+    "startSec": 39.203,
+    "endSec": 41.272
   },
   {
     "word": "and damaging units across the grid.",
-    "startSec": 45.47,
-    "endSec": 47.726
+    "startSec": 41.272,
+    "endSec": 43.686
   },
   {
-    "word": "A grid",
-    "startSec": 47.946,
-    "endSec": 48.646
-  },
-  {
-    "word": "that sheds load can be brought back",
-    "startSec": 48.646,
-    "endSec": 50.599
+    "word": "A grid that sheds load comes back",
+    "startSec": 43.906,
+    "endSec": 45.729
   },
   {
     "word": "when the machines are ready. A grid",
-    "startSec": 50.599,
-    "endSec": 52.552
+    "startSec": 45.729,
+    "endSec": 47.663
   },
   {
     "word": "that trips its machines has to repair",
-    "startSec": 52.552,
-    "endSec": 54.617
+    "startSec": 47.663,
+    "endSec": 49.707
   },
   {
     "word": "them first.",
-    "startSec": 54.617,
-    "endSec": 54.866
+    "startSec": 49.707,
+    "endSec": 50.315
   },
   {
     "word": "Texas got to within four minutes",
-    "startSec": 55.086,
-    "endSec": 56.823
+    "startSec": 50.535,
+    "endSec": 52.181
   },
   {
     "word": "and thirty-seven seconds of that.",
-    "startSec": 56.823,
-    "endSec": 58.615
+    "startSec": 52.181,
+    "endSec": 53.879
   }
 ];

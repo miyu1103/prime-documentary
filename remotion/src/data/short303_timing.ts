@@ -3,48 +3,48 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT303_TOTAL_SEC = 69.693;
+export const SHORT303_TOTAL_SEC = 51.766;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
     "id": "L1",
     "start": 0.0,
-    "end": 5.712
+    "end": 5.573
   },
   {
     "id": "L2",
-    "start": 5.932,
-    "end": 12.759
+    "start": 5.793,
+    "end": 11.877
   },
   {
     "id": "L3",
-    "start": 12.979,
-    "end": 20.874
+    "start": 12.097,
+    "end": 20.317
   },
   {
     "id": "L4",
-    "start": 21.094,
-    "end": 32.379
+    "start": 20.537,
+    "end": 26.481
   },
   {
     "id": "L5",
-    "start": 32.599,
-    "end": 39.844
+    "start": 26.701,
+    "end": 30.881
   },
   {
     "id": "L6",
-    "start": 40.064,
-    "end": 53.392
+    "start": 31.101,
+    "end": 34.212
   },
   {
     "id": "L7",
-    "start": 53.612,
-    "end": 58.906
+    "start": 34.432,
+    "end": 39.958
   },
   {
     "id": "L8",
-    "start": 59.126,
-    "end": 68.693
+    "start": 40.178,
+    "end": 50.766
   }
 ];
 
@@ -52,191 +52,141 @@ export const SHORT303_CAPTIONS: ShortCaption[] = [
   {
     "word": "The commission asked the company",
     "startSec": 0.0,
-    "endSec": 1.603
+    "endSec": 1.564
   },
   {
     "word": "for everything it had spent",
-    "startSec": 1.603,
-    "endSec": 2.956
+    "startSec": 1.564,
+    "endSec": 2.884
   },
   {
     "word": "on structural work on the whole viaduct",
-    "startSec": 2.956,
-    "endSec": 4.91
+    "startSec": 2.884,
+    "endSec": 4.791
   },
   {
     "word": "and totalled it.",
-    "startSec": 4.91,
-    "endSec": 5.712
+    "startSec": 4.791,
+    "endSec": 5.573
   },
   {
     "word": "From 1982 to 2018: twenty-four million",
-    "startSec": 5.932,
-    "endSec": 8.984
+    "startSec": 5.793,
+    "endSec": 8.513
   },
   {
     "word": "six hundred and ten thousand",
-    "startSec": 8.984,
-    "endSec": 11.233
+    "startSec": 8.513,
+    "endSec": 10.517
   },
   {
     "word": "five hundred euros.",
-    "startSec": 11.233,
-    "endSec": 12.759
+    "startSec": 10.517,
+    "endSec": 11.877
   },
   {
     "word": "Ninety-eight per cent of that was spent",
-    "startSec": 12.979,
-    "endSec": 15.588
+    "startSec": 12.097,
+    "endSec": 14.814
   },
   {
     "word": "before 1999",
-    "startSec": 15.588,
-    "endSec": 16.324
+    "startSec": 14.814,
+    "endSec": 15.58
   },
   {
     "word": "the year the motorway company was privatised.",
-    "startSec": 16.324,
-    "endSec": 19.335
+    "startSec": 15.58,
+    "endSec": 18.715
   },
   {
     "word": "After 1999",
-    "startSec": 19.335,
-    "endSec": 20.035
+    "startSec": 18.715,
+    "endSec": 19.415
   },
   {
     "word": "two per cent.",
-    "startSec": 20.035,
-    "endSec": 20.874
+    "startSec": 19.415,
+    "endSec": 20.317
   },
   {
-    "word": "In the seventeen years to 1999",
-    "startSec": 21.094,
-    "endSec": 22.985
+    "word": "Before 1999 it averaged one point three",
+    "startSec": 20.537,
+    "endSec": 23.142
   },
   {
-    "word": "structural work",
-    "startSec": 22.985,
-    "endSec": 23.931
-  },
-  {
-    "word": "on the Polcevera viaduct averaged one",
-    "startSec": 23.931,
-    "endSec": 26.264
-  },
-  {
-    "word": "point three million euros a year.",
-    "startSec": 26.264,
-    "endSec": 28.344
-  },
-  {
-    "word": "In the nineteen years after it",
-    "startSec": 28.344,
-    "endSec": 30.235
-  },
-  {
-    "word": "it averaged twenty-three thousand.",
-    "startSec": 30.235,
-    "endSec": 32.379
+    "word": "million euros a year. After twenty-three thousand.",
+    "startSec": 23.142,
+    "endSec": 26.481
   },
   {
     "word": "The whole list of structural works",
-    "startSec": 32.599,
-    "endSec": 34.741
+    "startSec": 26.701,
+    "endSec": 28.571
   },
   {
-    "word": "on that bridge",
-    "startSec": 34.741,
-    "endSec": 35.623
+    "word": "over thirty-six years is seven lines long.",
+    "startSec": 28.571,
+    "endSec": 30.881
   },
   {
-    "word": "over thirty-six years",
-    "startSec": 35.623,
-    "endSec": 36.946
-  },
-  {
-    "word": "is seven lines long",
-    "startSec": 36.946,
-    "endSec": 38.143
-  },
-  {
-    "word": "and you can hear all of it.",
-    "startSec": 38.143,
-    "endSec": 39.844
-  },
-  {
-    "word": "Then 2005: fifty thousand. 2009:",
-    "startSec": 40.064,
-    "endSec": 42.603
-  },
-  {
-    "word": "thirty-seven thousand five hundred. 2009 again:",
-    "startSec": 42.603,
-    "endSec": 46.331
-  },
-  {
-    "word": "ninety-five thousand. 2015:",
-    "startSec": 46.331,
-    "endSec": 48.473
-  },
-  {
-    "word": "two hundred and eighty-eight thousand.",
-    "startSec": 48.473,
-    "endSec": 51.488
+    "word": "Then 2005: fifty thousand.",
+    "startSec": 31.101,
+    "endSec": 32.719
   },
   {
     "word": "That is the whole of it.",
-    "startSec": 51.488,
-    "endSec": 53.392
+    "startSec": 32.719,
+    "endSec": 34.212
   },
   {
     "word": "The commission drew the obvious conclusion",
-    "startSec": 53.612,
-    "endSec": 55.75
+    "startSec": 34.432,
+    "endSec": 36.664
   },
   {
     "word": "and it wrote it down",
-    "startSec": 55.75,
-    "endSec": 56.768
+    "startSec": 36.664,
+    "endSec": 37.726
   },
   {
     "word": "in the language",
-    "startSec": 56.768,
-    "endSec": 57.532
+    "startSec": 37.726,
+    "endSec": 38.523
   },
   {
     "word": "of the concession contract.",
-    "startSec": 57.532,
-    "endSec": 58.906
+    "startSec": 38.523,
+    "endSec": 39.958
   },
   {
     "word": "Not doing simple ordinary maintenance",
-    "startSec": 59.126,
-    "endSec": 61.093
+    "startSec": 40.178,
+    "endSec": 42.354
   },
   {
     "word": "today means wanting",
-    "startSec": 61.093,
-    "endSec": 62.102
+    "startSec": 42.354,
+    "endSec": 43.472
   },
   {
     "word": "to do a great deal",
-    "startSec": 62.102,
-    "endSec": 63.059
+    "startSec": 43.472,
+    "endSec": 44.531
   },
   {
     "word": "of extraordinary maintenance tomorrow",
-    "startSec": 63.059,
-    "endSec": 65.026
+    "startSec": 44.531,
+    "endSec": 46.707
   },
   {
     "word": "at certainly higher costs",
-    "startSec": 65.026,
-    "endSec": 66.354
+    "startSec": 46.707,
+    "endSec": 48.178
   },
   {
     "word": "with a mirror-image higher remunerativeness.",
-    "startSec": 66.354,
-    "endSec": 68.693
+    "startSec": 48.178,
+    "endSec": 50.766
   }
 ];

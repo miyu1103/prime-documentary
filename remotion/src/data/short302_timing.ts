@@ -3,48 +3,48 @@ import type {ShortCaption} from '../compositions/Short';
 
 export type LineWindow = {id: string; start: number; end: number};
 
-export const SHORT302_TOTAL_SEC = 58.779;
+export const SHORT302_TOTAL_SEC = 55.017;
 
 export const LINE_WINDOWS: LineWindow[] = [
   {
     "id": "L1",
     "start": 0.0,
-    "end": 6.362
+    "end": 6.827
   },
   {
     "id": "L2",
-    "start": 6.582,
-    "end": 13.502
+    "start": 7.047,
+    "end": 14.199
   },
   {
     "id": "L3",
-    "start": 13.722,
-    "end": 17.344
+    "start": 14.419,
+    "end": 17.763
   },
   {
     "id": "L4",
-    "start": 17.564,
-    "end": 26.62
+    "start": 17.983,
+    "end": 24.763
   },
   {
     "id": "L5",
-    "start": 26.84,
-    "end": 35.71
+    "start": 24.983,
+    "end": 33.853
   },
   {
     "id": "L6",
-    "start": 35.93,
-    "end": 43.825
+    "start": 34.073,
+    "end": 42.339
   },
   {
     "id": "L7",
-    "start": 44.045,
-    "end": 51.522
+    "start": 42.559,
+    "end": 48.085
   },
   {
     "id": "L8",
-    "start": 51.742,
-    "end": 57.779
+    "start": 48.305,
+    "end": 54.017
   }
 ];
 
@@ -52,181 +52,181 @@ export const SHORT302_CAPTIONS: ShortCaption[] = [
   {
     "word": "This is a story about a shell",
     "startSec": 0.0,
-    "endSec": 1.724
+    "endSec": 1.85
   },
   {
     "word": "of concrete",
-    "startSec": 1.724,
-    "endSec": 2.424
+    "startSec": 1.85,
+    "endSec": 2.552
   },
   {
     "word": "a printed form",
-    "startSec": 2.424,
-    "endSec": 3.257
+    "startSec": 2.552,
+    "endSec": 3.445
   },
   {
     "word": "and a document that was owed",
-    "startSec": 3.257,
-    "endSec": 4.922
+    "startSec": 3.445,
+    "endSec": 5.232
   },
   {
     "word": "by law and never written.",
-    "startSec": 4.922,
-    "endSec": 6.362
+    "startSec": 5.232,
+    "endSec": 6.827
   },
   {
     "word": "In 2003 Italy issued an order requiring",
-    "startSec": 6.582,
-    "endSec": 8.812
+    "startSec": 7.047,
+    "endSec": 9.352
   },
   {
     "word": "the owners of strategic structures",
-    "startSec": 8.812,
-    "endSec": 10.757
+    "startSec": 9.352,
+    "endSec": 11.362
   },
   {
     "word": "to carry out a formal assessment",
-    "startSec": 10.757,
-    "endSec": 12.587
+    "startSec": 11.362,
+    "endSec": 13.253
   },
   {
     "word": "of their safety.",
-    "startSec": 12.587,
-    "endSec": 13.502
+    "startSec": 13.253,
+    "endSec": 14.199
   },
   {
     "word": "For the Polcevera viaduct",
-    "startSec": 13.722,
-    "endSec": 15.43
+    "startSec": 14.419,
+    "endSec": 15.996
   },
   {
     "word": "the deadline was March 2013.",
-    "startSec": 15.43,
-    "endSec": 17.344
+    "startSec": 15.996,
+    "endSec": 17.763
   },
   {
-    "word": "In July 2014 the ministry wrote",
-    "startSec": 17.564,
-    "endSec": 19.448
+    "word": "In July 2014",
+    "startSec": 17.983,
+    "endSec": 18.683
   },
   {
-    "word": "to ask where they had got to.",
-    "startSec": 19.448,
-    "endSec": 21.211
+    "word": "the ministry asked where they had got",
+    "startSec": 18.683,
+    "endSec": 20.809
   },
   {
-    "word": "The company replied with assurances",
-    "startSec": 21.211,
-    "endSec": 23.338
+    "word": "to.",
+    "startSec": 20.809,
+    "endSec": 21.509
   },
   {
-    "word": "that the safety assessments",
-    "startSec": 23.338,
-    "endSec": 24.979
+    "word": "The company replied",
+    "startSec": 21.509,
+    "endSec": 22.601
+  },
+  {
+    "word": "that the assessments",
+    "startSec": 22.601,
+    "endSec": 23.75
   },
   {
     "word": "were about to be completed.",
-    "startSec": 24.979,
-    "endSec": 26.62
+    "startSec": 23.75,
+    "endSec": 24.763
   },
   {
     "word": "On the twenty-third of June 2017",
-    "startSec": 26.84,
-    "endSec": 28.707
+    "startSec": 24.983,
+    "endSec": 26.85
   },
   {
     "word": "in a numbered letter to the ministry",
-    "startSec": 28.707,
-    "endSec": 30.808
+    "startSec": 26.85,
+    "endSec": 28.951
   },
   {
     "word": "the company stated",
-    "startSec": 30.808,
-    "endSec": 31.859
+    "startSec": 28.951,
+    "endSec": 30.002
   },
   {
     "word": "that for the Polcevera viaduct",
-    "startSec": 31.859,
-    "endSec": 33.609
+    "startSec": 30.002,
+    "endSec": 31.752
   },
   {
     "word": "the assessment had been carried out.",
-    "startSec": 33.609,
-    "endSec": 35.71
+    "startSec": 31.752,
+    "endSec": 33.853
   },
   {
     "word": "In the documents requested and obtained",
-    "startSec": 35.93,
-    "endSec": 37.996
+    "startSec": 34.073,
+    "endSec": 36.237
   },
   {
     "word": "by this Commission",
-    "startSec": 37.996,
-    "endSec": 38.95
+    "startSec": 36.237,
+    "endSec": 37.235
   },
   {
     "word": "that assessment had not",
-    "startSec": 38.95,
-    "endSec": 40.169
+    "startSec": 37.235,
+    "endSec": 38.511
   },
   {
     "word": "at the date of delivery",
-    "startSec": 40.169,
-    "endSec": 41.388
+    "startSec": 38.511,
+    "endSec": 39.787
   },
   {
     "word": "of the present report",
-    "startSec": 41.388,
-    "endSec": 42.5
+    "startSec": 39.787,
+    "endSec": 40.952
   },
   {
     "word": "in fact been carried out.",
-    "startSec": 42.5,
-    "endSec": 43.825
+    "startSec": 40.952,
+    "endSec": 42.339
   },
   {
-    "word": "From that assessment",
-    "startSec": 44.045,
-    "endSec": 45.153
+    "word": "From that assessment would have come",
+    "startSec": 42.559,
+    "endSec": 44.351
   },
   {
-    "word": "if correctly carried out",
-    "startSec": 45.153,
-    "endSec": 46.482
-  },
-  {
-    "word": "would have come the best possible estimate",
-    "startSec": 46.482,
-    "endSec": 48.808
+    "word": "the best possible estimate",
+    "startSec": 44.351,
+    "endSec": 45.646
   },
   {
     "word": "of structural safety against the risk",
-    "startSec": 48.808,
-    "endSec": 50.857
+    "startSec": 45.646,
+    "endSec": 47.488
   },
   {
     "word": "of collapse.",
-    "startSec": 50.857,
-    "endSec": 51.522
+    "startSec": 47.488,
+    "endSec": 48.085
   },
   {
     "word": "For the Polcevera viaduct",
-    "startSec": 51.742,
-    "endSec": 53.298
+    "startSec": 48.305,
+    "endSec": 49.777
   },
   {
     "word": "no safety analysis",
-    "startSec": 53.298,
-    "endSec": 54.418
+    "startSec": 49.777,
+    "endSec": 50.837
   },
   {
     "word": "and no seismic assessment",
-    "startSec": 54.418,
-    "endSec": 55.974
+    "startSec": 50.837,
+    "endSec": 52.309
   },
   {
     "word": "of the viaduct was ever made.",
-    "startSec": 55.974,
-    "endSec": 57.779
+    "startSec": 52.309,
+    "endSec": 54.017
   }
 ];

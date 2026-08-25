@@ -89,7 +89,7 @@ export const SHORT295: ShortData = {
   // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
   // verbatim from the narration line each beat sits on.
   kineticBeats: [
-    {src: 'shorts/short295/short295_kin_eleven_reports.webm', atSec: 28.5, durSec: 2.2, phrase: "ELEVEN REPORTS"},
-    {src: 'shorts/short295/short295_kin_no_action.webm', atSec: 44.47, durSec: 2.4, phrase: "NO ACTION"},
+    {src: 'shorts/short295/short295_kin_eleven_reports.webm', atSec: 25.46, durSec: 2.2, phrase: "ELEVEN REPORTS"},
+    {src: 'shorts/short295/short295_kin_no_action.webm', atSec: 39.82, durSec: 2.4, phrase: "NO ACTION"},
   ],
 };

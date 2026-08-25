@@ -89,7 +89,7 @@ export const SHORT298: ShortData = {
   // into this Short's public directory by scripts/ae/render_beats.sh. Words are taken
   // verbatim from the narration line each beat sits on.
   kineticBeats: [
-    {src: 'shorts/short298/short298_kin_one_siren.webm', atSec: 31.3, durSec: 2.2, phrase: "ONE OPERABLE"},
-    {src: 'shorts/short298/short298_kin_never_once.webm', atSec: 43.86, durSec: 2.4, phrase: "NOT THAT DAY EVER"},
+    {src: 'shorts/short298/short298_kin_one_siren.webm', atSec: 27.82, durSec: 2.2, phrase: "ONE OPERABLE"},
+    {src: 'shorts/short298/short298_kin_never_once.webm', atSec: 40.42, durSec: 2.4, phrase: "NOT THAT DAY EVER"},
   ],
 };
