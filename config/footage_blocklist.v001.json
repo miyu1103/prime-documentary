@@ -1,6 +1,6 @@
 {
  "schema_version": "1.0.0",
- "note": "Shelf clips and generated plates that visual QC rejected. SCOPE OF THIS FILE CHANGED ON 2026-08-05. `blocked` is now HARD findings only -- the four kinds that can end the channel or harm a real person: (1) scraped or third-party copyrighted production footage (a y2mate rip, broadcast news carrying a chyron/watermark/branded mic, another production's burned-in subtitles or title cards, copyrighted characters); (2) a real identifiable minor on screen; (3) a real named person's identity captioned onto a different real person, including a generated plate presented AS a named real person; (4) legible personal data of a real private individual. `blocked` is the ONLY key any tool reads. Everything else -- legible generic document props, 'CITY COP' invented insignia, wrong-city police cruisers, foreign locations standing in for the US, foreign-language signage, stock-photo cliches, sci-fi imagery, register mismatches, ruins, restraint imagery and subject bans from an episode's own spec -- moved to `quality_deferred` by owner decision to ship. Those findings are correct and are kept verbatim; they simply no longer block, because the reject rate they imply is one the archive cannot sustain and the calendar was empty. A row with no `episodes` key is global; a row WITH one binds only for those slugs.",
+ "note": "Shelf clips and generated plates that visual QC rejected. SCOPE OF THIS FILE CHANGED ON 2026-08-05. `blocked` is now HARD findings only -- the four kinds that can end the channel or harm a real person: (1) scraped or third-party copyrighted production footage (a y2mate rip, broadcast news carrying a chyron/watermark/branded mic, another production's burned-in subtitles or title cards, copyrighted characters); (2) a real identifiable minor on screen; (3) a real named person's identity captioned onto a different real person, including a generated plate presented AS a named real person; (4) legible personal data of a real private individual. `blocked` is the ONLY key any tool reads. Everything else -- legible generic document props, 'CITY COP' invented insignia, wrong-city police cruisers, foreign locations standing in for the US, foreign-language signage, stock-photo cliches, sci-fi imagery, register mismatches, ruins, restraint imagery and subject bans from an episode's own spec -- moved to `quality_deferred` by owner decision to ship. Those findings are correct and are kept verbatim; they simply no longer block, because the reject rate they imply is one the archive cannot sustain and the calendar was empty. A row with no `episodes` key is global; a row WITH one binds only for those slugs. SCOPE EXTENDED 2026-08-25, narrowly: `blocked` also takes (5) an asset that BREAKS THE BUILD -- one the pre-render or post-render gate refuses, so leaving it in the pool costs a 2.5-hour render every run. This is not a re-opening of the taste rejects demoted on 08-05; those were demoted because enforcing them emptied the calendar, and a build-breaking file costs the calendar rather than saving it. Rows of this kind carry hard_category cat5_build_breaking_asset and MUST be episode-scoped.",
  "reviewed_by": "owner-standard visual QC, contact sheets runs/qc/ep51_new + runs/qc/ep52; plus runs/qc/*_shipped_frames_review.v001.json (EP51-EP61, 201 rejections) and runs/qc/burge_clip_verdicts.v001.json (172 rejections), re-read row by row and classified HARD/SOFT on 2026-08-05",
  "blocked": [
   {
@@ -695,6 +695,17 @@
     "footage"
    ],
    "reason": "a Chinatown market at 26:46-26:49: Chinese lanterns with Chinese characters, in a Korean street. Found by reading the shipped master's contact sheets on 2026-08-24; the automated gates were all green on this render. Same class as EP72's British passenger train and EP71's legible STILLWATER water tower: the shelf is searched by words like 'street' and 'city', and the words do not carry a country."
+  },
+  {
+   "ids": [
+    "H014"
+   ],
+   "episodes": [
+    "lahaina"
+   ],
+   "label": "i2v_clip_opens_black_post_render_gate_refuses",
+   "reason": "EP75 lahaina's POST-RENDER GATE refused the master on 3 black stretches (114.1-115.4s, 117.4-118.6s, 1076.2-1077.4s) after a 2.5-hour render. All three are this clip: a 3.37s exposure ramp, luma YAVG 28 -> 110, whose first 1.20s ffmpeg blackdetect calls black at the same pixel threshold the gate uses. Looped into a 6.26s cut it plays that head TWICE per cut, and the builder used it in cut-0018 and cut-0172. The 81 generated frames are faithful; the source plate img_unused/H014.png is itself near-black, so this is a dark plate, not an i2v failure. Quarantining the mp4 by hand did NOT hold: finisher step [1/7] re-assembled it from ae-demo/wan_frames_lahaina_H014/ on the next run and step [2b/7] pruned nothing, because it reads `blocked` only. Frame dir moved aside as well. Detected in advance from now on by check_motion_saturation --  BLACK-HEAD.",
+   "hard_category": "cat5_build_breaking_asset"
   }
  ],
  "quality_deferred": [
@@ -1120,16 +1131,6 @@
    ],
    "label": "monochrome_reads_as_archival",
    "reason": "a fully monochrome silhouette insert among colour shots, under 'They told the jury they were not receiving deals in exchange for their testimony' -- it reads as an authentic archival record of real people, which is what invariant 11 exists to prevent. AMBIGUOUS: the defect is the grade, not the content, and a colour treatment would remove it, so this is scoped rather than blocked. The durable fix is a rule that no cut may render monochrome, not a ban on this clip."
-  },
-  {
-   "ids": [
-    "H014"
-   ],
-   "episodes": [
-    "lahaina"
-   ],
-   "label": "i2v_clip_opens_below_black_threshold",
-   "reason": "EP75 lahaina failed its POST-RENDER GATE on 3 black stretches (114.1-115.4s, 117.4-118.6s, 1076.2-1077.4s). All three are this one clip: a 3.37s exposure ramp measured YAVG 28 -> 110, whose first 1.2s is dark enough that blackdetect (pix_th 0.10) calls it black. Looped into a 6.26s cut it produces TWO holes per cut, and the cut is used twice. The generated frames are faithful -- the source plate H014.png is itself near-black -- so this is a plate problem, not an i2v failure. The clip is quarantined in remotion/public/lahaina/_motion_black_head_rejected_20260825/ and in the E: archive copy; nothing was deleted. Scoped to lahaina: H014 names a different picture in other episodes."
   }
  ],
  "quality_deferred_note": "Set aside on 2026-08-05 by owner decision to ship, NOT because the finding was wrong. Every row here was written from a frame someone actually opened and is an accurate record of what this shelf contains; it is retained verbatim so the same judgement does not have to be made again. These rows do not bind any tool. Restore a row to `blocked` by moving it back."
