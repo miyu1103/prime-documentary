@@ -707,6 +707,28 @@
    "label": "i2v_clip_opens_black_post_render_gate_refuses",
    "reason": "EP75 lahaina's POST-RENDER GATE refused the master on 3 black stretches (114.1-115.4s, 117.4-118.6s, 1076.2-1077.4s) after a 2.5-hour render. All three are this clip: a 3.37s exposure ramp, luma YAVG 28 -> 110, whose first 1.20s ffmpeg blackdetect calls black at the same pixel threshold the gate uses. Looped into a 6.26s cut it plays that head TWICE per cut, and the builder used it in cut-0018 and cut-0172. The 81 generated frames are faithful; the source plate img_unused/H014.png is itself near-black, so this is a dark plate, not an i2v failure. Quarantining the mp4 by hand did NOT hold: finisher step [1/7] re-assembled it from ae-demo/wan_frames_lahaina_H014/ on the next run and step [2b/7] pruned nothing, because it reads `blocked` only. Frame dir moved aside as well. Detected in advance from now on by check_motion_saturation --  BLACK-HEAD. SECOND NAME: renaming the frame dir in place made [1/7] re-assemble the same clip as H014_black_head_rejected_20260825.mp4 -- the assembler takes the clip name from the directory -- and the archive at E:/pd-media/assets/ai_video/lahaina/motion/ then restored that name on every run. Both names are blocked; the frame dir now lives outside ae-demo at E:/pd-media/_rejected_i2v_frames/wan_frames_lahaina_H014.",
    "hard_category": "cat5_build_breaking_asset"
+  },
+  {
+   "ids": [
+    "L092"
+   ],
+   "episodes": [
+    "lacmegantic"
+   ],
+   "label": "i2v_clip_is_black_for_87_percent_of_its_duration",
+   "reason": "Measured before EP72's first render, not after it: blackdetect reports black from 0.43s to 3.33s of a 3.37s clip -- 2.90s, 87 per cent. Opened at full frame it is the edge of a curtain for two tenths of a second and then nothing. Looped into a ~6s cut it would have produced a black hole far over the post-render gate's 1.2s limit and cost a 2.5-hour render, which is exactly what the same defect cost EP75 lahaina the same evening. Quarantined from the public pool and the E: archive; frame dir moved to E:/pd-media/_rejected_i2v_frames/ (renaming it in place makes the assembler rebuild the clip under the new name).",
+   "hard_category": "cat5_build_breaking_asset"
+  },
+  {
+   "ids": [
+    "L010"
+   ],
+   "episodes": [
+    "lacmegantic"
+   ],
+   "label": "i2v_clip_opens_black_and_invents_a_person",
+   "reason": "Two findings in one clip. blackdetect reports 0.00-0.77s black at the head, which a looped cut plays twice. And at 2.5s the frame carries a person facing camera with legible facial features, in a corridor -- the i2v-invents-people defect that put a person into 32 of EP70's 160 clips against plates that have none. Neither was visible at contact-sheet scale. Quarantined from the public pool and the E: archive; frame dir moved out of ae-demo.",
+   "hard_category": "cat5_build_breaking_asset"
   }
  ],
  "quality_deferred": [
