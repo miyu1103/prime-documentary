@@ -5,7 +5,24 @@
 Every PD design document is prose: it tells a writer and Codex what the film should feel like.
 Nothing in it is machine-readable, so nothing in it can be enforced. This file fixes the
 **numbers** an episode commits to, and `schemas/episode_spec.v001.json` fixes their shape. Each
-episode carries its own `episode_spec.v001.json`; every tool reads that file and nothing else.
+episode carries its own `episode_spec.v<NNN>.json`; every tool reads that file and nothing else.
+
+**Revisions.** The spec is an approved artifact, so it is never edited in place: a correction
+is a new immutable revision (`CLAUDE.md` invariant 6, `.claude/rules/12`).
+`check_episode_spec.spec_path()` resolves the **highest** `episode_spec.vNNN.json` present, and
+`check_episode_spec.py` prints which one it used. Almost every episode has only `v001` and
+resolves exactly as it always did. A revision above v001 MUST carry a `revision_reason` block —
+old value, new value, the arithmetic, the provenance of the error, the date, and the named owner
+decision that authorised it — and the schema requires it to be substantive rather than a
+hand-wave. The v001 `notes` are carried forward unedited, because they are the record of the
+error; where they and `revision_reason` disagree, `revision_reason` governs.
+
+**A revision is for a value that was wrong when written, never for a value a film is failing.**
+Derived from an input that did not hold, or never derived at all — that is a correction. "The
+film cannot reach it" is not, on its own, a reason to change anything: see
+`decisions/0009-DISTINCT-VIDEO-ASSETS-CORRECTION.md`, where three episodes were corrected and a
+fourth (EP63 correa) was examined under the same authority and deliberately left alone, because
+its number was reachable and its film was merely short of the work.
 
 Prose design documents do not change. This is a second layer, not a replacement.
 

@@ -1,0 +1,702 @@
+{
+  "episode_id": "PD-2026-078-colgan",
+  "slug": "colgan",
+  "status": "DESIGN ONLY - every line traced to a line of episodes/PD-2026-078-colgan/03_script/script.en.v001.md; checked against episode_spec.v001.json, the highest revision; plates are REUSE of approved episode plates present on disk at remotion/public/colgan/img; not approved for publication",
+  "destination": {
+    "video_id": null,
+    "title": null,
+    "url": null,
+    "privacy": "not_uploaded",
+    "views": 0
+  },
+  "script": "episodes/PD-2026-078-colgan/03_script/script.en.v001.md",
+  "era_note": "Clarence Center and Buffalo, New York, and Newark, 12 February 2009, forward to the NTSB report of February 2010. Per episode_spec forbidden_claims, no Short says fatigue caused the crash (the Board declined to determine the degree), that the captain lied on his application (the record says incomplete), that the first officer's pay or commute caused it (neither is in the probable cause or the four contributing factors), that the 1,500-hour rule would have prevented it, or that the crew were unqualified. No characterisation of either pilot's state of mind - both died and cannot answer. Per forbidden_subjects, no body, no victim, no crash site, no burning house or wreckage, no impact, no child.",
+  "plate_pool_note": "166 plates on disk at remotion/public/colgan/img with matching depth maps. Subjects from the episode's own Codex plate table: the airspeed tape and the low-speed cue C001-C009/C034-C035, the cockpit and columns C010/C027-C030/C036-C038/C050-C052, the crew room C019-C020/C095-C099, the operations terminal and blank forms C056-C060/C085-C087, the records rooms C068-C072. Every plate below verified present; no plate is used by more than one Short.",
+  "shorts_existing": [],
+  "shorts_to_author": [
+    "short313",
+    "short314",
+    "short315"
+  ],
+  "existing_angles_do_not_repeat": {},
+  "shorts": [
+    {
+      "short_id": "short313",
+      "angle": "The only warning on the aeroplane that arrives early arrives silently: a bar climbing an airspeed tape. It climbed for eighteen seconds, in the one place a pilot is trained to look, and neither pilot responded.",
+      "avoids": "Says nothing about fatigue, pay, commuting or the crew's state of mind. Does not describe the impact, the house or the deaths - the Short ends at the Board's contributing factor. Quotes the Board's own language for the failure to monitor, and stops there.",
+      "funnel_question_left_for_longform": "When the warning finally fired, the wings were level and there was speed to fix it. What happened in the next four seconds?",
+      "loop": true,
+      "loop_join": "The close asks what a warning does if nobody is looking; the hook is the warning that only shows, never speaks.",
+      "era": "Buffalo, New York, 12 February 2009",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "At seventeen minutes past ten on a February night, a turboprop on approach to Buffalo was five miles from the runway. Everything on board was working.",
+          "delivery": "intense",
+          "source_lines": [
+            "At seventeen minutes past ten on a February night, a turboprop on approach to Buffalo was five miles from the runway.",
+            "Everything on board was working."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "On the pilot's display there is a vertical strip of numbers. Beside it sits a red and black bar.",
+          "delivery": "building",
+          "source_lines": [
+            "On the pilot's display there is a vertical strip of numbers.",
+            "That is the airspeed.",
+            "Beside it, at the bottom, sits a red and black bar."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "The bar marks the speed below which the wing stops flying. When the aeroplane slows, it climbs toward the number.",
+          "delivery": "building",
+          "source_lines": [
+            "The bar is not decoration.",
+            "It marks the speed below which the wing stops flying.",
+            "When the aeroplane slows, the bar climbs the scale toward the number."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "It is the only warning on the aeroplane that arrives early, and it arrives silently, and it arrives in the one place a pilot is trained to look.",
+          "delivery": "building",
+          "source_lines": [
+            "It is the only warning on the aeroplane that arrives early, and it arrives silently, and it arrives in the one place a pilot is trained to look."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "The low-speed cue appeared on the display. The bar began to climb. And nothing happened for eighteen seconds.",
+          "delivery": "intense",
+          "source_lines": [
+            "The low-speed cue appeared on the display.",
+            "The bar began to climb.",
+            "And nothing happened for eighteen seconds."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Eighteen seconds is a long time in a cockpit. It is long enough to push two levers forward.",
+          "delivery": "building",
+          "source_lines": [
+            "Eighteen seconds is a long time in a cockpit.",
+            "It is long enough to say a sentence, hear an answer, and act on it.",
+            "It is long enough to push two levers forward."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The cues gave adequate time for the pilots to initiate corrective action — and neither pilot responded to the presence of these cues.",
+          "delivery": "intense",
+          "source_lines": [
+            "The cues gave adequate time for the pilots to initiate corrective action — and neither pilot responded to the presence of these cues."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "What does a warning do, if the thing it warns about is already on the screen and nobody is looking at the screen?",
+          "delivery": "calm",
+          "source_lines": [
+            "What does a warning do, if the thing it warns about is already on the screen and nobody is looking at the screen?"
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a twin turboprop airliner on approach at night seen from the ground",
+          "source": "REUSE",
+          "source_plate": "C002"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "an airport approach light bar firing sequenced strobes",
+          "source": "REUSE",
+          "source_plate": "C005"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "extreme close-up of a glass cockpit airspeed tape with a red bar",
+          "source": "REUSE",
+          "source_plate": "C001"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "macro of a glass instrument display showing a vertical strip",
+          "source": "REUSE",
+          "source_plate": "C007"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "the same airspeed tape, the red and black bar now risen",
+          "source": "REUSE",
+          "source_plate": "C003"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "a cockpit instrument panel photographed square on",
+          "source": "REUSE",
+          "source_plate": "C008"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "close-up of the amber and red glow spilling from a cockpit display",
+          "source": "REUSE",
+          "source_plate": "C009"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L5",
+          "subject": "close-up of an airspeed tape with the red and black bar risen high",
+          "source": "REUSE",
+          "source_plate": "C034"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "a plain round wall clock in an airline operations room",
+          "source": "REUSE",
+          "source_plate": "C006"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "two power levers in a cockpit quadrant photographed in close-up",
+          "source": "REUSE",
+          "source_plate": "C029"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L6",
+          "subject": "a cockpit quadrant with no hand on it, levers set mid-travel",
+          "source": "REUSE",
+          "source_plate": "C030"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a wide shot of a dark cockpit from behind the seats",
+          "source": "REUSE",
+          "source_plate": "C036"
+        },
+        {
+          "n": 13,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a cockpit at night, long exposure, every instrument lit",
+          "source": "REUSE",
+          "source_plate": "C038"
+        },
+        {
+          "n": 14,
+          "role": "loop",
+          "line": "L8",
+          "subject": "close-up of a headset resting on a cockpit glareshield",
+          "source": "REUSE",
+          "source_plate": "C044"
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L5",
+          "anchor": "eighteen seconds",
+          "suffix": "eighteen",
+          "words": [
+            "EIGHTEEN",
+            "SECONDS"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L7",
+          "anchor": "neither pilot responded",
+          "suffix": "neither",
+          "words": [
+            "NEITHER PILOT",
+            "RESPONDED"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "short_id": "short314",
+      "angle": "A ground computer offered the crew twenty knots of extra margin for one typed word — icing — and a second word for the ice they were carrying. The box was there, on the form, in front of a crew who had discussed ice all flight. Neither word was typed.",
+      "avoids": "Blames no one: the script's own sentences that nobody hid the box and nobody disabled it are spoken. No fatigue, no pay, no commute, no state of mind. No impact, no deaths, no house.",
+      "funnel_question_left_for_longform": "The company had also written the speed floor down, in numbers. What happened when the aeroplane went through it?",
+      "loop": true,
+      "loop_join": "The close - no part of the system asked the question on its own - lands back on the box nobody typed into.",
+      "era": "Newark to Buffalo, 12 February 2009",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "There were two more chances, and both of them were offered by a computer on the ground.",
+          "delivery": "intense",
+          "source_lines": [
+            "Now go back an hour, because there were two more chances, and both of them were offered by a computer on the ground."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "Before an approach, the crew sends it the numbers and it sends back the speeds. That evening it returned a reference speed for a clean wing.",
+          "delivery": "building",
+          "source_lines": [
+            "Before an approach, the crew sends it the numbers and it sends back the speeds.",
+            "That evening, at fifty-three minutes past nine, it returned a reference speed of one hundred and eighteen knots.",
+            "That is the speed for a clean wing."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "There was a box on the request form. Remarks. A crew flying into ice could type one word into it — icing — and the system would give a different answer.",
+          "delivery": "building",
+          "source_lines": [
+            "AeroData had a box on the request form.",
+            "Remarks.",
+            "A crew flying into ice could type one word into it — icing — and the system would give a different answer."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "For a flaps fifteen landing it raised the reference speed by twenty knots. Twenty knots of margin, for one word.",
+          "delivery": "intense",
+          "source_lines": [
+            "For a flaps fifteen landing it raised the reference speed by twenty knots.",
+            "Twenty knots of margin, for one word."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "There was a second word. Eice — en route ice accumulation — so the numbers would be run against the ice the aeroplane was actually carrying.",
+          "delivery": "building",
+          "source_lines": [
+            "There was a second word.",
+            "Eice — en route ice accumulation — which added ninety pounds to the calculated landing weight, so the numbers would be run against an aeroplane carrying the ice it was actually carrying."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "Neither word was typed. Nobody hid the box. Nobody disabled it.",
+          "delivery": "intense",
+          "source_lines": [
+            "Neither word was typed.",
+            "Nobody hid the box.",
+            "Nobody disabled it."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "It was there, on the form, in front of a crew who had been discussing ice for most of the flight.",
+          "delivery": "building",
+          "source_lines": [
+            "It was there, on the form, in front of a crew who had been discussing ice for most of the flight."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "The protection existed. It was correctly designed and correctly available. It was also entirely opt-in. No part of the system asked the question on its own.",
+          "delivery": "calm",
+          "source_lines": [
+            "The protection existed.",
+            "It was correctly designed and correctly available.",
+            "It was also entirely opt-in.",
+            "No part of the system asked the question on its own."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a ground operations desk in daylight, a computer terminal glowing",
+          "source": "REUSE",
+          "source_plate": "C056"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "extreme close-up of a computer keyboard under a desk lamp",
+          "source": "REUSE",
+          "source_plate": "C057"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a printer feeding out a sheet in an airline operations room",
+          "source": "REUSE",
+          "source_plate": "C059"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "an airspeed tape in close-up with a marker bug set on the scale",
+          "source": "REUSE",
+          "source_plate": "C061"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a blank data entry form on a computer screen with empty input fields",
+          "source": "REUSE",
+          "source_plate": "C058"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "ice accreting on the leading edge of an aircraft wing",
+          "source": "REUSE",
+          "source_plate": "C025"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "an aircraft wing seen from a cabin window at night, inspection light",
+          "source": "REUSE",
+          "source_plate": "C026"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L5",
+          "subject": "a de-icing rig spraying an aircraft wing at night",
+          "source": "REUSE",
+          "source_plate": "C032"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "an airport ramp in a snowstorm, ground crew in high-visibility",
+          "source": "REUSE",
+          "source_plate": "C033"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a clipboard with a blank sheet resting on an aircraft glareshield",
+          "source": "REUSE",
+          "source_plate": "C060"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "an overhead cockpit panel in close-up, rows of guarded switches",
+          "source": "REUSE",
+          "source_plate": "C027"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a cockpit windscreen filled with grey cloud, wipers still",
+          "source": "REUSE",
+          "source_plate": "C067"
+        },
+        {
+          "n": 13,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a stack of identical unmarked operations manuals on a shelf",
+          "source": "REUSE",
+          "source_plate": "C062"
+        },
+        {
+          "n": 14,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a wall-mounted whiteboard in an operations room, wiped clean",
+          "source": "REUSE",
+          "source_plate": "C063"
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L4",
+          "anchor": "for one word",
+          "suffix": "one_word",
+          "words": [
+            "TWENTY KNOTS",
+            "ONE WORD"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L8",
+          "anchor": "entirely opt-in",
+          "suffix": "opt_in",
+          "words": [
+            "ENTIRELY",
+            "OPT-IN"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
+      ]
+    },
+    {
+      "short_id": "short315",
+      "angle": "Four certificate disapprovals sat in a federal filing cabinet the airline could not open, one incomplete line sat on its own employment form, and a fifth event happened in its own aeroplane with its own examiner. Three years later it upgraded him to captain.",
+      "avoids": "Does not say the captain lied - the script's own words, true but not complete, are spoken, and the failure rate of one applicant in eight is given so the record is not read as a mark of a dangerous man. No fatigue, no pay, no state of mind, no deaths.",
+      "funnel_question_left_for_longform": "The same company had a written rule about sleeping in the crew room. What happened to that one?",
+      "loop": true,
+      "loop_join": "The close - what matters is who could see them - re-opens the hook's cabinet nobody could open.",
+      "era": "Newark, New Jersey, 1991-2009",
+      "lines": [
+        {
+          "id": "L1",
+          "text": "Airlines cannot watch their pilots fly. So the industry tests them, over and over, and writes down what happened.",
+          "delivery": "intense",
+          "source_lines": [
+            "Airlines cannot watch their pilots fly.",
+            "So the industry does the only thing it can.",
+            "It tests them, over and over, and it writes down what happened."
+          ]
+        },
+        {
+          "id": "L2",
+          "text": "Every check ride is a file. Every failure is a file. The paper is the substitute for the watching.",
+          "delivery": "building",
+          "source_lines": [
+            "Every check ride is a file.",
+            "Every failure is a file.",
+            "The paper is the substitute for the watching."
+          ]
+        },
+        {
+          "id": "L3",
+          "text": "Failing a check ride is not rare. In 2008 the first-attempt failure rate for an airline transport pilot certificate was thirteen point one per cent.",
+          "delivery": "building",
+          "source_lines": [
+            "Failing a check ride is not rare.",
+            "In 2008, the overall failure rate for a first attempt at an airline transport pilot certificate was thirteen point one per cent.",
+            "Roughly one applicant in eight."
+          ]
+        },
+        {
+          "id": "L4",
+          "text": "A film that treats a check ride failure as a mark of a dangerous man is not describing aviation. It is describing a prejudice.",
+          "delivery": "building",
+          "source_lines": [
+            "A film that treats a check ride failure as a mark of a dangerous man is not describing aviation.",
+            "It is describing a prejudice."
+          ]
+        },
+        {
+          "id": "L5",
+          "text": "Colgan's application asked one question. Have you ever failed any proficiency check, FAA check ride, IOE or line check? In 2005 he answered yes, and described one.",
+          "delivery": "building",
+          "source_lines": [
+            "Colgan's employment application asked a question.",
+            "\"Have you ever failed any proficiency check, FAA check ride, IOE or line check?\"",
+            "In 2005 he answered yes.",
+            "And he described one."
+          ]
+        },
+        {
+          "id": "L6",
+          "text": "True. Complete? No. At that point he was carrying two other certificate disapprovals. Neither appeared on the form.",
+          "delivery": "intense",
+          "source_lines": [
+            "True.",
+            "Complete?",
+            "No.",
+            "At that point he was carrying two other certificate disapprovals.",
+            "Neither appeared on the form."
+          ]
+        },
+        {
+          "id": "L7",
+          "text": "The file that would have contradicted it existed, at the Federal Aviation Administration, the whole time. Nobody had to hide it. The systems simply did not talk.",
+          "delivery": "intense",
+          "source_lines": [
+            "The file that would have contradicted it existed, at the Federal Aviation Administration, the whole time.",
+            "Nobody was hiding it.",
+            "Nobody had to.",
+            "The systems simply did not talk."
+          ]
+        },
+        {
+          "id": "L8",
+          "text": "So the record on its own proves nothing. What matters is not the failures. What matters is who could see them.",
+          "delivery": "calm",
+          "source_lines": [
+            "So the record on its own proves nothing.",
+            "What matters is not the failures.",
+            "What matters is who could see them."
+          ]
+        }
+      ],
+      "plates": [
+        {
+          "n": 1,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a wall of steel filing cabinets in a government records room",
+          "source": "REUSE",
+          "source_plate": "C069"
+        },
+        {
+          "n": 2,
+          "role": "hook",
+          "line": "L1",
+          "subject": "a turboprop flight deck seen from the jump seat in daylight",
+          "source": "REUSE",
+          "source_plate": "C083"
+        },
+        {
+          "n": 3,
+          "role": "hook",
+          "line": "L2",
+          "subject": "close-up of hanging file folders packed tight in an open drawer",
+          "source": "REUSE",
+          "source_plate": "C070"
+        },
+        {
+          "n": 4,
+          "role": "hook",
+          "line": "L2",
+          "subject": "a single manila folder lying closed on a desk under a green lamp",
+          "source": "REUSE",
+          "source_plate": "C071"
+        },
+        {
+          "n": 5,
+          "role": "body",
+          "line": "L3",
+          "subject": "a pilot's logbook lying open on a table in daylight",
+          "source": "REUSE",
+          "source_plate": "C077"
+        },
+        {
+          "n": 6,
+          "role": "body",
+          "line": "L3",
+          "subject": "a light aircraft parked on a grass airfield in afternoon light",
+          "source": "REUSE",
+          "source_plate": "C073"
+        },
+        {
+          "n": 7,
+          "role": "body",
+          "line": "L4",
+          "subject": "a flight training school ramp in bright daylight",
+          "source": "REUSE",
+          "source_plate": "C075"
+        },
+        {
+          "n": 8,
+          "role": "body",
+          "line": "L5",
+          "subject": "an airline employment office in daylight, a counter",
+          "source": "REUSE",
+          "source_plate": "C084"
+        },
+        {
+          "n": 9,
+          "role": "body",
+          "line": "L5",
+          "subject": "extreme close-up of a printed form with empty tick boxes",
+          "source": "REUSE",
+          "source_plate": "C085"
+        },
+        {
+          "n": 10,
+          "role": "body",
+          "line": "L6",
+          "subject": "a pen lying across a blank sheet of paper on a desk",
+          "source": "REUSE",
+          "source_plate": "C086"
+        },
+        {
+          "n": 11,
+          "role": "body",
+          "line": "L7",
+          "subject": "a long fluorescent-lit government archive corridor",
+          "source": "REUSE",
+          "source_plate": "C072"
+        },
+        {
+          "n": 12,
+          "role": "body",
+          "line": "L7",
+          "subject": "a steel in-tray holding a stack of blank sheets",
+          "source": "REUSE",
+          "source_plate": "C087"
+        },
+        {
+          "n": 13,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a public hearing room in bright daylight, a raised bench",
+          "source": "REUSE",
+          "source_plate": "C089"
+        },
+        {
+          "n": 14,
+          "role": "loop",
+          "line": "L8",
+          "subject": "a single microphone on a witness table in a hearing room",
+          "source": "REUSE",
+          "source_plate": "C090"
+        }
+      ],
+      "kinetic_beats": [
+        {
+          "line": "L6",
+          "anchor": "Complete",
+          "suffix": "complete",
+          "words": [
+            "TRUE.",
+            "COMPLETE?"
+          ],
+          "style": "punch",
+          "seconds": 2.2
+        },
+        {
+          "line": "L7",
+          "anchor": "did not talk",
+          "suffix": "did_not_talk",
+          "words": [
+            "THE SYSTEMS",
+            "DID NOT TALK"
+          ],
+          "style": "punch",
+          "seconds": 2.4
+        }
+      ]
+    }
+  ]
+}
