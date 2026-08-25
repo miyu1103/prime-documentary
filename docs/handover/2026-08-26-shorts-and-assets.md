@@ -137,3 +137,47 @@ titles, the 15 Shorts have to be re-rendered** — the card burns the text in.
 ElevenLabs, all at standing approval: $5.37 for the first 18, then $2.04 + $0.86 + $0.30 + $0.28
 across four trim passes. **$8.85 total**, of which $3.48 was re-recording lines that were written
 too long the first time.
+
+---
+
+## 8. Second half of the session — the CTA card, fixed across the back catalogue
+
+§3 said 74 Shorts had no funnel cut and that the fix was not applied. It is applied now for the
+twelve that mattered, and two more defects turned up in the same card.
+
+* **short271-282 had no funnel cut** because their plates were tagged `role: "close"`, and only
+  `"loop"` fires the card. Their designs already said `loop: true` with a `loop_join`, so the tag
+  was the bug, not the intent. 16 plates retagged. (The remaining 62 without a card are short01-66
+  and 82 — an older format, left alone.)
+* **`destination_title()` read `design.destination.title` before the package.** That field holds
+  the designer's shorthand: EP69 said `"Non-Delegable"` while the episode published as *"One Rod
+  Became Two. The Load on One Beam Doubled..."*, so short280 and short282 pointed the funnel at a
+  doctrine name. It also cannot learn about a retitle — the channel change is written to
+  `youtube_meta`, never back into the design. **The package is read first now**; the design field
+  is the last resort.
+* **A title whose first sentence does not fit 38 characters still ended mid-clause.** `"A Camera
+  Watches the Woods for 78"` now becomes `"A Camera Watches the Woods for 78..."`. ASCII dots, not
+  U+2026, because the card's own type note says ASCII and a missing glyph is worse than the
+  fragment it explains.
+
+**33 Shorts re-assembled and re-rendered** (271-282, 289-309): `failures=0` on all eleven chunks,
+`tsc` clean, and 8 sampled end-frames read as complete cards — checked on frames, not exit codes.
+**short310-327 came out byte-identical** and were not re-rendered.
+
+Measured and left alone: **short271-282 run 26.4-44.5 s**, under the 45-57 s band. No `_timing`
+file changed, so that is their original narration and not a regression from this work.
+
+## 9. The ingest was dead, and is running again
+
+`runs/ingest_video_deep_20260825.log` stopped at 22:00 mid-theme with no traceback: it was a
+foreground job of the previous session and died with the session. Restarted as
+`runs/ingest_video_deep_20260826.log`:
+
+```
+py -3.11 scripts/ingest_archive_sources.py --source ia,nasa,coverr,mixkit --theme all \
+         --limit 200 --passes 20
+```
+
+`check_ledger_integrity.py` is PASS at **128,796 media files, 0 orphans, 0 torn lines**. It is
+resumable and dedupes against the ledger, so restarting from pass 1 costs listing calls, not
+downloads. **It will die with this session too** — check it is alive before assuming the shelf grew.
