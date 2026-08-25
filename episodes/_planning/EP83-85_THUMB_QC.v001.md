@@ -55,6 +55,26 @@
 ○= FACTS_LEDGER成立後に `check_packaging_claims.py --thumb-text` PASSが条件。落ちたら
 THUMB_TEXT.v001の「断定なし」見出しへ差し替え。
 
+## 5b. 合成ビルド結果と機械ゲート（2026-08-25 追加実測）
+
+9枚を `build_case_thumbnails_from_plates.py`（style:winner）で合成。
+`check_thumb_subject_luma.py` の結果:
+
+| thumb | subject luma (床60) | text height (床150px) | 結果 |
+|---|---|---|---|
+| max737 01/02/03 | 34.8 / 21.7 / 36.1 | 131 / 131 / 153 | FAIL / FAIL / FAIL |
+| threemile 01/02/03 | 45.4 / 49.3 / 72.7 | 131(2行版) / 343 / 142 | FAIL / FAIL / FAIL |
+| katrina 01/02/03 | 53.1 / 55.2 / 111.2 | 131 / 485 / 476 | FAIL / FAIL / **PASS** |
+
+**このFAILは直さない（既知・意図的）。** 引き継ぎに明記のとおり
+「150pxの文字ゲートはwinnerスタイルでは意図的に不適合（勝者実測94px）」であり、
+luma床60も同様に**CTR_PLAYBOOK v002の実測（勝者の輝度中央値45・暗い方が勝つ）と正面から矛盾**する。
+ライブ最高CTR 4.48%のサムネ自身がこのゲートを通らない。**緑にするために明るく大きくすると、
+実測で負けている側の見た目に戻る。** ゲートは記録として残し、`release_deviations` 相当の扱いにする。
+
+**ゲートと無関係に直した1件**: threemile 01 は `4 A.M.` の1行だと組み幅が小さく、明るい制御盤の上で
+320pxで最も読みにくかった。**2行 `IT BEGAN / AT 4 A.M.` に変更**して視認性を確保（claimは同一・○のまま）。
+
 ## 6. 残作業
 
 1. **EP85 T06の再生成1枚**（発注書 = `THUMBNAIL_ORDERS_2026-08-25/EP85_T06_REDO.txt`）
