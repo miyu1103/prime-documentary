@@ -461,3 +461,17 @@ Long-form titles for EP78-82 were written this session and are **provisional pen
 **今後チャットから ingest を直接起動しないこと**（スクリプトに lock は無く、`IgnoreNew` は
 タスク以外の書き手を見られない）。未決＝8/10 の「素材集めは終わり」判断に対し IA だけ再開状態
 （Gov/Science/Web は Disabled のまま）。
+
+**[2026-08-27 — shorts + assets lane](handover/2026-08-27-shorts-and-assets.md)** — the CTA card
+had **three** defects reaching the back catalogue, all found on rendered frames rather than exit
+codes: short271-282 had no funnel cut at all (plates tagged `close`, only `loop` fires the card,
+while their designs already said `loop: true`), the card printed the designer's shorthand instead
+of the real title (EP69 said "Non-Delegable"; it published as "One Rod Became Two."), and a title
+whose first sentence did not fit still ended mid-clause. 33 Shorts re-assembled and re-rendered.
+EP81's thumbnail said "100 COUNTS." — sourced, but out of scope for an episode whose ledger says
+"no charge, no plea, no sentence" — rebuilt from its own script, unblocking short322-324.
+**And the shelf's "free" was a claim, not a licence**: 590 rows rested on an archive.org
+`licenseurl` typed by the uploader, including a Blu-ray remux, `Robocop: The Animated Series` and a
+2017 McDonald's advertisement. Re-decided from collection membership, which an uploader cannot set:
+313 restored, 148 refused, 129 held. **The ingest is a scheduled task now — never launch it from a
+session, and read its log's write time, not the process list.**
