@@ -62,8 +62,13 @@ def main() -> int:
                 row["note"] = notes[name]
             n_acc += 1
     doc.setdefault("plate_review", {})
+    # KEEP the scaffold's reviewer when the decision file does not name one. The old default
+    # of "unknown" OVERWROTE it, so a reviewer who scaffolded with --reviewer and then applied
+    # a decision json without repeating the name erased the only record of who looked. Found
+    # on EP83 max737, 2026-08-27, by the reviewer who had to write their own name back in.
+    prev_reviewer = doc["plate_review"].get("reviewer")
     doc["plate_review"].update({
-        "reviewer": dec.get("reviewer", "unknown"),
+        "reviewer": dec.get("reviewer") or prev_reviewer or "unknown",
         "reviewed_at": date.today().isoformat(),
         "method": dec.get("_note", ""),
     })

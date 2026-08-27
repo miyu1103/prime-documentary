@@ -1,0 +1,138 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "max737",
+  "episode_id": "PD-2026-083-max737",
+  "assets": "episodes/PD-2026-083-max737/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-083-max737/06_audio/narration_index.v001.json",
+  "narration": "max737/narration.mp3",
+  "captions": "episodes/PD-2026-083-max737/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/max737_film.json",
+  "leadSeconds": 0,
+  "openingVariant": "overlay",
+  "hookSeconds": 8.773,
+  "hookLine": "Over the Java Sea, a wheel beside the captain's knee turns by itself.",
+  "captionLeadSeconds": 0.0,
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses",
+        "_row": "invariant-11"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["A WHEEL TURNS BY ITSELF.", "HE WAS NEVER TOLD IT COULD."],
+        "style": "emphasis",
+        "emphasisWords": ["HE WAS NEVER TOLD IT COULD."],
+        "_row": "MX-704, MX-111"
+      }
+    ],
+    "ACT_1": [
+      {"kind": "acttitle", "title": "THE FLIGHT BEFORE", "kicker": "ACT ONE", "index": 1, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["28 OCTOBER 2018.", "THE EVENING BEFORE."], "style": "emphasis", "emphasisWords": ["28 OCTOBER 2018."], "_row": "MX-706"},
+      {"kind": "kinetic", "lines": ["A THIRD PILOT IN THE JUMP SEAT.", "RIDING HOME."], "style": "emphasis", "emphasisWords": ["RIDING HOME."], "_row": "MX-706"},
+      {"kind": "stat", "value": 21, "suffix": " DEGREES", "label": "of error from one vane on the outside of the fuselage, and it stayed wrong", "topLabel": "REPORTING THE WRONG ANGLE BY", "_row": "MX-702"},
+      {"kind": "stat", "value": 96, "label": "minutes of stall warning, on an aeroplane that was flying normally", "topLabel": "THE STICK SHAKER RAN", "_row": "MX-706"},
+      {"kind": "kinetic", "lines": ["THE NOSE WENT DOWN ON ITS OWN.", "THREE TIMES."], "style": "emphasis", "emphasisWords": ["THREE TIMES."], "_row": "MX-707"},
+      {"kind": "stat", "value": 2, "label": "switches on the console between the seats, and a fix that lives in the memory", "topLabel": "THE CAPTAIN NAMED IT", "_row": "MX-707"},
+      {"kind": "kinetic", "lines": ["RUNAWAY STABILISER.", "CUT THE ELECTRICITY TO THE TRIM."], "style": "emphasis", "emphasisWords": ["CUT THE ELECTRICITY TO THE TRIM."], "_row": "MX-707"},
+      {"kind": "kinetic", "lines": ["THEY LANDED.", "EVERYBODY WALKED OFF."], "style": "emphasis", "emphasisWords": ["EVERYBODY WALKED OFF."], "_row": "MX-707"},
+      {"kind": "quote", "quote": "was able to land the aeroplane while experiencing the same conditions as the flight that crashed", "attribution": "The investigators, on the crew of the flight before", "_row": "MX-709"},
+      {"kind": "kinetic", "lines": ["THE NEXT MORNING,", "THE SAME AEROPLANE TOOK OFF AGAIN."], "style": "emphasis", "emphasisWords": ["THE SAME AEROPLANE TOOK OFF AGAIN."], "_row": "MX-709"},
+      {"kind": "stat", "value": 10, "label": "seconds of automatic nose-down trim, once the flaps came up", "topLabel": "SOMETHING ELSE WOKE UP", "_row": "MX-704"},
+      {"kind": "compbars", "items": [{"label": "STABILISER BEFORE, UNITS", "value": 6.1}, {"label": "STABILISER AFTER, UNITS", "value": 3.8}], "_row": "MX-704"},
+      {"kind": "stat", "value": 20, "label": "times the wheel turned itself down, and two men turned it back up", "topLabel": "MORE THAN", "_row": "MX-704, MX-111"},
+      {"kind": "compbars", "items": [{"label": "PULL ON THE COLUMN, POUNDS", "value": 93}, {"label": "AND THEN, POUNDS", "value": 103}], "_row": "MX-705"},
+      {"kind": "stat", "value": 189, "label": "people on board, on a flight that left the runway that morning", "topLabel": "ALL", "_row": "MX-001"},
+      {"kind": "compbars", "items": [{"label": "THE FLIGHT BEFORE, MINUTES", "value": 96}, {"label": "THE NEXT MORNING, MINUTES", "value": 11}], "_row": "MX-705, MX-706"}
+    ],
+    "ACT_2": [
+      {"kind": "acttitle", "title": "NOT SUPPOSED TO BE POSSIBLE", "kicker": "ACT TWO", "index": 2, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["NOTHING WAS DIFFERENT", "IN THE COCKPIT."], "style": "emphasis", "emphasisWords": ["IN THE COCKPIT."], "_row": "MX-702, MX-707"},
+      {"kind": "stat", "value": 4, "suffix": " INCHES", "label": "from the captain's right hand, the same switches on the same console", "topLabel": "THE FIX WAS", "_row": "MX-707"},
+      {"kind": "kinetic", "lines": ["AIRLINES DO NOT BUY AEROPLANES.", "THEY BUY FLEETS."], "style": "emphasis", "emphasisWords": ["THEY BUY FLEETS."], "_row": "MX-101"},
+      {"kind": "kinetic", "lines": ["LEVEL B IS A COURSE ON A LAPTOP.", "LEVEL D IS THE SIMULATOR."], "style": "emphasis", "emphasisWords": ["LEVEL D IS THE SIMULATOR."], "_row": "MX-101"},
+      {"kind": "kinetic", "lines": ["THE 737 MAX WAS DESIGNED", "TO LAND ON LEVEL B."], "style": "emphasis", "emphasisWords": ["TO LAND ON LEVEL B."], "_row": "MX-101, MX-612"},
+      {"kind": "kinetic", "lines": ["DECEMBER 2011.", "A CONTRACT WITH THE LAUNCH CUSTOMER."], "style": "emphasis", "emphasisWords": ["DECEMBER 2011."], "_row": "MX-612"},
+      {"kind": "stat", "value": 1000000, "prefix": "$", "label": "off every aeroplane delivered, if the regulator required simulator training", "topLabel": "AT LEAST", "_row": "MX-612"},
+      {"kind": "stat", "value": 200, "label": "aeroplanes ordered, with options for nearly two hundred more", "topLabel": "THE LAUNCH CUSTOMER", "_row": "MX-613"},
+      {"kind": "kinetic", "lines": ["TWO HUNDRED MILLION DOLLARS", "TO NEARLY FOUR HUNDRED MILLION."], "style": "emphasis", "emphasisWords": ["TO NEARLY FOUR HUNDRED MILLION."], "_row": "MX-613"},
+      {"kind": "kinetic", "lines": ["A NUMBER IS NOT A MOTIVE.", "WRITE IT DOWN AND LEAVE IT THERE."], "style": "emphasis", "emphasisWords": ["A NUMBER IS NOT A MOTIVE."], "_row": "MX-613"},
+      {"kind": "kinetic", "lines": ["MANEUVERING CHARACTERISTICS", "AUGMENTATION SYSTEM."], "style": "emphasis", "emphasisWords": ["AUGMENTATION SYSTEM."], "_row": "MX-204"},
+      {"kind": "kinetic", "lines": ["ITS JOB WAS TO MAKE", "A DIFFERENCE DISAPPEAR."], "style": "emphasis", "emphasisWords": ["A DIFFERENCE DISAPPEAR."], "_row": "MX-204"},
+      {"kind": "quote", "quote": "a provisional approval, assuming no significant systems changes to the airplane", "attribution": "The Boeing engineer who managed the regulator relationship, writing in August 2016", "_row": "MX-104"},
+      {"kind": "quote", "quote": "To go back to them now, and tell them there is in fact a difference, would be a huge threat to that differences training determination.", "attribution": "The same man, to colleagues, November 2016", "_row": "MX-105"},
+      {"kind": "mechanism", "mechanism": "closingdoor", "_row": "MX-105"},
+      {"kind": "kinetic", "lines": ["A DOOR THAT ONLY OPENS ONE WAY.", "YOU MAY NOT WALK BACK WITH A CORRECTION."], "style": "emphasis", "emphasisWords": ["YOU MAY NOT WALK BACK WITH A CORRECTION."], "_row": "MX-105"}
+    ],
+    "ACT_3": [
+      {"kind": "acttitle", "title": "NOBODY HAD TO MENTION IT", "kicker": "ACT THREE", "index": 3, "_row": "structure"},
+      {"kind": "stat", "value": 2, "label": "angle-of-attack vanes on the aeroplane, one on each side of the nose", "topLabel": "THE 737 HAS", "_row": "MX-614"},
+      {"kind": "kinetic", "lines": ["MCAS LISTENED TO ONE.", "NOT ONE AT A TIME. ONE."], "style": "emphasis", "emphasisWords": ["NOT ONE AT A TIME. ONE."], "_row": "MX-614"},
+      {"kind": "kinetic", "lines": ["MARCH 2016.", "ONE YEAR BEFORE THE AEROPLANE WAS CERTIFIED."], "style": "emphasis", "emphasisWords": ["MARCH 2016."], "_row": "MX-615"},
+      {"kind": "kinetic", "lines": ["FROM MACH POINT SIX TO POINT EIGHT.", "TO MACH POINT TWO TO POINT EIGHT."], "style": "emphasis", "emphasisWords": ["TO MACH POINT TWO TO POINT EIGHT."], "_row": "MX-106"},
+      {"kind": "compbars", "items": [{"label": "AS DESIGNED, DEGREES", "value": 0.6}, {"label": "AFTER THE REDESIGN, DEGREES", "value": 2.5}], "_row": "MX-615"},
+      {"kind": "kinetic", "lines": ["THE NAME CAME OUT OF THE BOOK.", "THE REGULATOR APPROVED THE REMOVAL."], "style": "emphasis", "emphasisWords": ["THE REGULATOR APPROVED THE REMOVAL."], "_row": "MX-616"},
+      {"kind": "kinetic", "lines": ["THE PILOTS WERE NEVER TOLD", "THE SYSTEM EXISTED."], "style": "emphasis", "emphasisWords": ["THE SYSTEM EXISTED."], "_row": "MX-111"},
+      {"kind": "kinetic", "lines": ["15 NOVEMBER 2016.", "HE FELT IT OPERATE IN THE SIMULATOR."], "style": "emphasis", "emphasisWords": ["15 NOVEMBER 2016."], "_row": "MX-107"},
+      {"kind": "quote", "quote": "Oh shocker alert. MCAS is now active down to point two. It's running rampant in the sim on me.", "attribution": "One of Boeing's two 737 MAX technical pilots, quoted word for word in the company's own agreement", "_row": "MX-108"},
+      {"kind": "quote", "quote": "deceived the Aircraft Evaluation Group into believing that the basis on which it had agreed to remove MCAS from the report still held", "attribution": "Boeing's own statement of facts, signed in a federal court", "_row": "MX-110"},
+      {"kind": "kinetic", "lines": ["THE WORDS WERE ACCURATE.", "THE IMPRESSION WAS FALSE."], "style": "emphasis", "emphasisWords": ["THE IMPRESSION WAS FALSE."], "_row": "MX-113"},
+      {"kind": "kinetic", "lines": ["BOEING KNEW.", "THAT IS THE COMPANY'S OWN WORD FOR IT."], "style": "emphasis", "emphasisWords": ["BOEING KNEW."], "_row": "MX-114, MX-109"},
+      {"kind": "kinetic", "lines": ["A FEDERAL JURY ACQUITTED HIM", "ON ALL FOUR COUNTS."], "style": "emphasis", "emphasisWords": ["ON ALL FOUR COUNTS."], "_row": "MX-405"},
+      {"kind": "kinetic", "lines": ["A BENCH TEST PASSED.", "THE PART WAS WRONG BY TWENTY-ONE DEGREES."], "style": "emphasis", "emphasisWords": ["THE PART WAS WRONG BY TWENTY-ONE DEGREES."], "_row": "MX-701, MX-702"},
+      {"kind": "stat", "value": 9, "label": "contributing factors, and no single cause written anywhere in the report", "topLabel": "THE INVESTIGATORS WROTE", "_row": "MX-701"},
+      {"kind": "compbars", "items": [{"label": "2013, OF 87 TASKS", "value": 28}, {"label": "NOVEMBER 2016, OF 91", "value": 79}], "_row": "MX-619"}
+    ],
+    "ACT_4": [
+      {"kind": "acttitle", "title": "FIVE MONTHS", "kicker": "ACT FOUR", "index": 4, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["THE EMERGENCY DIRECTIVE", "DID NOT MENTION MCAS. NOT ONCE."], "style": "emphasis", "emphasisWords": ["DID NOT MENTION MCAS. NOT ONCE."], "_row": "MX-607"},
+      {"kind": "kinetic", "lines": ["A PROCEDURE FOR A SYMPTOM.", "NOT THE NAME OF THE CAUSE."], "style": "emphasis", "emphasisWords": ["NOT THE NAME OF THE CAUSE."], "_row": "MX-607, MX-608"},
+      {"kind": "stat", "value": 15, "label": "fatal crashes over a thirty-year fleet life, on the agency's own analysis of its own aeroplane", "topLabel": "MORE THAN", "_row": "MX-602"},
+      {"kind": "kinetic", "lines": ["ONE FATAL ACCIDENT EVERY TWO YEARS,", "FOR THIRTY YEARS."], "style": "emphasis", "emphasisWords": ["FOR THIRTY YEARS."], "_row": "MX-603"},
+      {"kind": "stat", "value": 2.68, "decimals": 2, "label": "fatalities per million flight hours, below the guideline the method itself uses", "topLabel": "THE CALCULATED RISK", "_row": "MX-609"},
+      {"kind": "kinetic", "lines": ["FIFTEEN CRASHES.", "BELOW THE THRESHOLD."], "style": "emphasis", "emphasisWords": ["BELOW THE THRESHOLD."], "_row": "MX-602, MX-609"},
+      {"kind": "quote", "quote": "should not be viewed as predictive values", "attribution": "The Inspector General's office, on the same figures", "_row": "MX-610"},
+      {"kind": "compbars", "items": [{"label": "MORE AIRCRAFT DELIVERED", "value": 150}, {"label": "THE GLOBAL FLEET GREW TO", "value": 387}], "_row": "MX-606"},
+      {"kind": "kinetic", "lines": ["10 MARCH 2019.", "TEN SECONDS AFTER LIFT-OFF, THE SENSOR LIED."], "style": "emphasis", "emphasisWords": ["10 MARCH 2019."], "_row": "MX-802"},
+      {"kind": "kinetic", "lines": ["THEY CUT THE POWER, AS THE PROCEDURE SAID.", "THEN THEY COULD NOT MOVE THE WHEEL."], "style": "emphasis", "emphasisWords": ["THEN THEY COULD NOT MOVE THE WHEEL."], "_row": "MX-803"},
+      {"kind": "stat", "value": 157, "label": "people aboard, six minutes after the aeroplane left the runway", "topLabel": "ALL", "_row": "MX-802"},
+      {"kind": "kinetic", "lines": ["13 MARCH 2019.", "THE FLEET WAS GROUNDED."], "style": "emphasis", "emphasisWords": ["THE FLEET WAS GROUNDED."], "_row": "MX-620, MX-003"},
+      {"kind": "kinetic", "lines": ["TWO AUTHORITIES, THE SAME RECORDER DATA.", "TWO DIFFERENT ENDINGS."], "style": "emphasis", "emphasisWords": ["TWO DIFFERENT ENDINGS."], "_row": "MX-801, MX-805, MX-806"},
+      {"kind": "compbars", "items": [{"label": "CRIMINAL PENALTY, $M", "value": 243.6}, {"label": "TO THE AIRLINE CUSTOMERS, $M", "value": 1770}, {"label": "TO THE HEIRS AND RELATIVES, $M", "value": 500}], "_row": "MX-202"},
+      {"kind": "kinetic", "lines": ["THE FINE WAS THE PRICE OF THE TRAINING.", "THE EXACT THING THE DESIGN HAD AVOIDED."], "style": "emphasis", "emphasisWords": ["THE FINE WAS THE PRICE OF THE TRAINING."], "_row": "MX-203"},
+      {"kind": "kinetic", "lines": ["6 NOVEMBER 2025. THE CASE WAS DISMISSED.", "NOBODY WAS CONVICTED OF ANYTHING."], "style": "emphasis", "emphasisWords": ["NOBODY WAS CONVICTED OF ANYTHING."], "_row": "MX-308"}
+    ],
+    "ENDING": [
+      {
+        "kind": "kinetic",
+        "lines": ["THE WHOLE POINT OF THE SYSTEM", "WAS THAT IT NEED NOT BE MENTIONED."],
+        "style": "emphasis",
+        "emphasisWords": ["WAS THAT IT NEED NOT BE MENTIONED."],
+        "_row": "MX-612"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["AND IT WORKED.", "NOBODY WAS TOLD."],
+        "style": "emphasis",
+        "emphasisWords": ["NOBODY WAS TOLD."],
+        "_row": "MX-111"
+      }
+    ]
+  },
+  "_declared_values": {
+    "leadSeconds": "0 -- VC-0001 is voiced from frame 0; 06_audio/narration_index.v001.json puts the HOOK at 0.0s.",
+    "openingVariant": "'overlay' -- BrandOpening over the hook's settle, as on EP74-EP82. The voice does not stop.",
+    "captionLeadSeconds": "0.0 -- 08_edit/captions.final.v001.srt will carry the house 0.60 s lead when it is written; this config adds none on top.",
+    "hookSeconds": "MEASURED 2026-08-27 from 06_audio/narration_index.v001.json: section HOOK spans 0.0 to 8.773 across three chunks (VC-0001..VC-0003). ACT_1 opens at 10.573, ACT_2 at 233.883, ACT_3 at 546.851, ACT_4 at 1026.368, ENDING at 1678.845, and the last chunk ends at 1772.827. Not estimated. The hook is short because this episode's hook is three sentences; the number is what the voice actually did, not the 8-second house target it happens to sit beside.",
+    "hookLine": "VC-0001 verbatim.",
+    "not_yet_on_disk": "`assets` and `captions` name the files the staging and caption steps will write (asset_manifest.v003.json, captions.final.v001.srt). Neither exists yet, which is the same state EP78, EP79, EP81 and EP82 were in when their filmconfigs were authored -- the config declares the contract, the later step fills it. 06_audio/narration_index.v001.json and remotion/public/max737/narration.mp3 DO exist and were read for this file.",
+    "figures_by_section": "Authored 2026-08-27 from 03_script/script.en.v001.md and EP83_max737_FACTS_LEDGER.v001.md. Counts are 17/17/17/17 across ACT_1..ACT_4, at the top of episode_spec's figure_beats_per_act [13,17]; HOOK 2 and ENDING 2; 72 cards in total, the same shape as EP82. EVERY number on a card is a number the narration speaks -- 21, 96, 2, 10, 6.1, 3.8, 20, 93, 103, 189, 11, 4, 1000000, 200, 2, 0.6, 2.5, 9, 28, 79, 15, 2.68, 150, 387, 157, 243.6, 1770 and 500 all appear in the script -- and every `stat` `value` is numeric so nothing can render as NaN. No `stat` carries a `group` key (the FigureSpec union does not give `stat` one; only `numberticker` has it).",
+    "ranges_are_never_stats": "Every range in this record is drawn as a kinetic pair or a comparison, never squeezed into one number card: the 200-to-400 million dollar training bill (MX-613), the Mach 0.6-0.8 to Mach 0.2-0.8 expansion (MX-106), the 0.6 to 2.5 degree authority change (MX-615, drawn as compbars), the 28-of-87 to 79-of-91 delegation shift (MX-619), and the 96-minutes-against-11-minutes comparison that is ACT_1's whole argument.",
+    "no_OP_section": "episode_spec's section_vocabulary lists OP, but narration_index has no OP chunks -- the brand opening is an overlay on the HOOK, not a spoken section. A card there would have no window to live in.",
+    "money_scale": "The three parts of the 2021 payment are one compbars row (243.6 / 1770 / 500, in $M) rather than three stat cards, because the point the narration makes is the SHAPE -- the airline customers received more than three times what the families received -- and that is a comparison, not three numbers. The $1 million per-aircraft discount is a separate stat card in ACT_2 because it belongs to the training decision, not to the settlement.",
+    "quarantine": "Nothing on screen says Boeing was convicted, found guilty or lost a criminal case: the ACT_4 closing card says the case was dismissed and nobody was convicted of anything (MX-308). Nothing on screen names or depicts the acquitted individual; the ACT_3 card states the acquittal on all four counts (MX-405) and no card implies he lied. No card says the jump-seat pilot saved the previous flight -- the ACT_1 cards attribute the cut-out to the captain (MX-707). The FIFTEEN card carries its frame on the card itself ('on the agency's own analysis') and is immediately followed by the 2.68-per-million card and the FIFTEEN CRASHES / BELOW THE THRESHOLD pair, so the number never appears without the guideline beside it (MX-602, MX-609, MX-610). No card adopts either ending of the ET302 dispute: the card says two authorities wrote two different endings (MX-801, MX-805, MX-806). No card says MCAS was hidden from pilots as a deliberate decision to conceal it from pilots -- the cards say the name came out of the manual with the regulator's approval (MX-616) and that the pilots were never told the system existed (MX-111). The number 346 appears on no card at all, per episode_spec's forbidden_claims. No card carries an airline name, an airline livery, a company mark or a readable document.",
+    "act_4_selection": "ACT_4 runs 651 seconds and carries the second accident, the grounding, the contested reports, the money and the end of the criminal case; 17 cards is the spec ceiling, so the five committee themes (MX-617), the Fifth Circuit order (MX-309/MX-311) and the return to service (MX-621) are carried by the narration and by the description rather than by a card. The 346 and the rescue diver (MX-622) are narrated once, plainly, and are deliberately not drawn."
+  }
+}
