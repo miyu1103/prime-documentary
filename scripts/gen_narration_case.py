@@ -710,6 +710,59 @@ EPISODES = {
         "sections": SECTION_ORDER_V3,
         "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
     },
+    # ------------------------------------------------------------------ EP83-85 (2026-08-27) --
+    # Same v3 template as EP77-82: HOOK / OP (bookend comment only, no copy) / ACT_1..ACT_4 /
+    # ENDING, so SECTION_ORDER_V3 and the same voice_settings. All three episode_spec files
+    # declare runtime_seconds [1740, 2100] and script_words [4700, 5300] -- a WIDER runtime band
+    # than EP77-82's [1740, 1920]. Modelled at 178.4 raw wpm, the rate EP76 morandi actually
+    # delivered whole-script at these settings and the model EP77-82 were written against.
+    # design_speech_seconds below are rewritten from the extractor's own --dry-run word count
+    # (not `wc -w`, which overcounts headings and citation comments).
+    "PD-2026-083-max737": {
+        "planning": "EP83_max737_script.en.v001.md",
+        # DRY RUN 2026-08-27: 353 chunks / 5,047 extractor words. 5047 / 178.4 * 60 = 1697.4 s.
+        # RUNTIME: 1697.4 s speech + 114.9 s gaps (347 beat @0.30 + 5 section @1.8 + 1.8 scripted)
+        # + 9 s endcard projects 1821.3 s (30:21), INSIDE runtime_seconds [1740, 2100].
+        # DELIVERED 2026-08-27: made=353 skipped=0 failed=0, speech 1658.8 s, MASTER ffprobed
+        # at 1772.834 s (29:33) at 182.6 wpm whole-script -- inside the band on its own, before
+        # the endcard. 28,361 characters, $8.51.
+        "design_speech_seconds": 1697.4,
+        "sections": SECTION_ORDER_V3,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-084-threemile": {
+        "planning": "EP84_threemile_script.en.v001.md",
+        # DRY RUN 2026-08-27: 296 chunks / 4,476 extractor words. 4476 / 178.4 * 60 = 1505.4 s.
+        # RUNTIME WATCH: 1505.4 s speech + 97.2 s gaps (290 beat @0.30 + 5 section @1.8 + 1.2
+        # scripted) + 9 s endcard projects 1611.6 s (26:52), UNDER runtime_seconds [1740, 2100]
+        # by ~128 s at the modelled rate -- and the delivered rate has been running ~200 wpm,
+        # so the real master will be shorter still. Extractor words (4,476) are also under the
+        # declared script_words [4700, 5300]; `wc -w` on the planning file counts headings and
+        # citation comments and does not. Do NOT pad the script or stretch gaps to reach the
+        # band -- the declared spec value is unchanged (rule 4) and runtime_band lands in
+        # release_deviations at ship time, or carries an owner APR the way EP82 did.
+        # DELIVERED 2026-08-27: made=296 skipped=0 failed=0, speech 1449.0 s, MASTER ffprobed
+        # at 1545.618 s (25:46) at 185.3 wpm whole-script -- 194 s UNDER the band floor.
+        # 25,401 characters, $7.62. Recorded, not corrected.
+        "design_speech_seconds": 1505.4,
+        "sections": SECTION_ORDER_V3,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
+    "PD-2026-085-katrina": {
+        "planning": "EP85_katrina_script.en.v001.md",
+        # DRY RUN 2026-08-27: 278 chunks / 4,511 extractor words. 4511 / 178.4 * 60 = 1517.2 s.
+        # RUNTIME WATCH: 1517.2 s speech + 92.4 s gaps (272 beat @0.30 + 5 section @1.8 + 1.8
+        # scripted) + 9 s endcard projects 1618.6 s (26:59), UNDER runtime_seconds [1740, 2100]
+        # by ~121 s at the modelled rate. Same two caveats as EP84 above: the delivered rate is
+        # closer to 200 wpm, and 4,511 extractor words is under script_words [4700, 5300].
+        # Do NOT pad the script or stretch gaps to reach the band.
+        # DELIVERED 2026-08-28: made=278 skipped=0 failed=0, speech 1505.2 s, MASTER ffprobed
+        # at 1595.164 s (26:35) at 179.8 wpm whole-script -- the closest any of these three came
+        # to the 178.4 model, and 145 s UNDER the band floor. 25,605 characters, $7.68.
+        "design_speech_seconds": 1517.2,
+        "sections": SECTION_ORDER_V3,
+        "voice_settings": {"stability": 0.35, "similarity_boost": 0.80},
+    },
 }
 
 GAP_BEAT, GAP_SECTION = 0.30, 1.8          # EP52-shipped defaults

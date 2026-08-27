@@ -100,6 +100,7 @@ import {LahainaFilm, lahainaFilmDurationInFrames} from './compositions/LahainaFi
 import {MorandiFilm, morandiFilmDurationInFrames} from './compositions/MorandiFilm';
 import {KeyBridgeFilm, keybridgeFilmDurationInFrames} from './compositions/KeyBridgeFilm';
 import {ConcordiaFilm, concordiaFilmDurationInFrames} from './compositions/ConcordiaFilm';
+import {StationFilm, stationFilmDurationInFrames} from './compositions/StationFilm';
 import {RamirezFilm, ramirezFilmDurationInFrames} from './compositions/RamirezFilm';
 import {CentralparkThumbnail, CENTRALPARK_THUMBS} from './compositions/CentralparkThumbnails';
 import {Frazier39Opening, frazier39OpeningDurationInFrames} from './compositions/Frazier39Opening';
@@ -916,6 +917,14 @@ export const RemotionRoot: React.FC = () => {
         id="Ep76Morandi"
         component={MorandiFilm}
         durationInFrames={morandiFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep81Station"
+        component={StationFilm}
+        durationInFrames={stationFilmDurationInFrames}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}

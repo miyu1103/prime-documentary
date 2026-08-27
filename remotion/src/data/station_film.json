@@ -1,0 +1,6060 @@
+{
+  "episode_id": "PD-2026-081-station",
+  "fps": 30,
+  "narration": "station/narration.mp3",
+  "narrationSeconds": 1536.619,
+  "hookSeconds": 26.923,
+  "hookLine": "From the car park it is a pair of doors.",
+  "hook": [
+    {
+      "start": 0.0,
+      "dur": 3.365,
+      "kind": "img",
+      "src": "station/img/S037.png",
+      "seed": "station-hook-00"
+    },
+    {
+      "start": 3.365,
+      "dur": 3.365,
+      "kind": "img",
+      "src": "station/img/S078.png",
+      "seed": "station-hook-01"
+    },
+    {
+      "start": 6.73,
+      "dur": 3.365,
+      "kind": "img",
+      "src": "station/img/S121.png",
+      "seed": "station-hook-02"
+    },
+    {
+      "start": 10.095,
+      "dur": 3.365,
+      "kind": "img",
+      "src": "station/img/S122.png",
+      "seed": "station-hook-03"
+    },
+    {
+      "start": 13.46,
+      "dur": 3.365,
+      "kind": "img",
+      "src": "station/img/S157.png",
+      "seed": "station-hook-04"
+    },
+    {
+      "start": 16.825,
+      "dur": 3.365,
+      "kind": "img",
+      "src": "station/img/S158.png",
+      "seed": "station-hook-05"
+    },
+    {
+      "start": 20.19,
+      "dur": 3.365,
+      "kind": "img",
+      "src": "station/img/S159.png",
+      "seed": "station-hook-06"
+    },
+    {
+      "start": 23.555,
+      "dur": 3.368,
+      "kind": "img",
+      "src": "station/img/S160.png",
+      "seed": "station-hook-07"
+    }
+  ],
+  "cuts": [
+    {
+      "id": "cut-0000",
+      "start": 0.0,
+      "dur": 7.181,
+      "kind": "footage",
+      "src": "station/motion/S001.mp4",
+      "seed": "station-0000",
+      "act": "HOOK",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0001",
+      "start": 7.181,
+      "dur": 7.181,
+      "kind": "footage",
+      "src": "station/motion/S002.mp4",
+      "seed": "station-0001",
+      "act": "HOOK",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0002",
+      "start": 14.362,
+      "dur": 7.181,
+      "kind": "footage",
+      "src": "station/motion/S003.mp4",
+      "seed": "station-0002",
+      "act": "HOOK",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0003",
+      "start": 21.543,
+      "dur": 7.18,
+      "kind": "footage",
+      "src": "station/motion/S004.mp4",
+      "seed": "station-0003",
+      "act": "HOOK",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0004",
+      "start": 28.723,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S005.mp4",
+      "seed": "station-0004",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0005",
+      "start": 35.389,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S006.mp4",
+      "seed": "station-0005",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0006",
+      "start": 42.055,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S007.mp4",
+      "seed": "station-0006",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0007",
+      "start": 48.721,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S008.mp4",
+      "seed": "station-0007",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0008",
+      "start": 55.387,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S009.mp4",
+      "seed": "station-0008",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0009",
+      "start": 62.053,
+      "dur": 5.982,
+      "kind": "img",
+      "src": "station/img/S104.png",
+      "seed": "station-0009",
+      "act": "ACT_1",
+      "treatment": "bleed"
+    },
+    {
+      "id": "cut-0010",
+      "start": 68.035,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S010.mp4",
+      "seed": "station-0010",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0011",
+      "start": 74.701,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S011.mp4",
+      "seed": "station-0011",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0012",
+      "start": 81.367,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S012.mp4",
+      "seed": "station-0012",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0013",
+      "start": 88.033,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S013.mp4",
+      "seed": "station-0013",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0014",
+      "start": 94.699,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S014.mp4",
+      "seed": "station-0014",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0015",
+      "start": 101.365,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S015.mp4",
+      "seed": "station-0015",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0016",
+      "start": 108.031,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S016.mp4",
+      "seed": "station-0016",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0017",
+      "start": 114.697,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S017.mp4",
+      "seed": "station-0017",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0018",
+      "start": 121.363,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S018.mp4",
+      "seed": "station-0018",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0019",
+      "start": 128.029,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S019.mp4",
+      "seed": "station-0019",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0020",
+      "start": 134.695,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S020.mp4",
+      "seed": "station-0020",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0021",
+      "start": 141.361,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S021.mp4",
+      "seed": "station-0021",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0022",
+      "start": 148.027,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S022.mp4",
+      "seed": "station-0022",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0023",
+      "start": 154.693,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S023.mp4",
+      "seed": "station-0023",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0024",
+      "start": 161.359,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S024.mp4",
+      "seed": "station-0024",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0025",
+      "start": 168.025,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S025.mp4",
+      "seed": "station-0025",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0026",
+      "start": 174.691,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S026.mp4",
+      "seed": "station-0026",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0027",
+      "start": 181.357,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S027.mp4",
+      "seed": "station-0027",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0028",
+      "start": 188.023,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S028.mp4",
+      "seed": "station-0028",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0029",
+      "start": 194.689,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S029.mp4",
+      "seed": "station-0029",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0030",
+      "start": 201.355,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S030.mp4",
+      "seed": "station-0030",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0031",
+      "start": 208.021,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S031.mp4",
+      "seed": "station-0031",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0032",
+      "start": 214.687,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S032.mp4",
+      "seed": "station-0032",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0033",
+      "start": 221.353,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S033.mp4",
+      "seed": "station-0033",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0034",
+      "start": 228.019,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S034.mp4",
+      "seed": "station-0034",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0035",
+      "start": 234.685,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S035.mp4",
+      "seed": "station-0035",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0036",
+      "start": 241.351,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S036.mp4",
+      "seed": "station-0036",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0037",
+      "start": 248.017,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S037.mp4",
+      "seed": "station-0037",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0038",
+      "start": 254.683,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S038.mp4",
+      "seed": "station-0038",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0039",
+      "start": 261.349,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S039.mp4",
+      "seed": "station-0039",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0040",
+      "start": 268.015,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S040.mp4",
+      "seed": "station-0040",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0041",
+      "start": 274.681,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S041.mp4",
+      "seed": "station-0041",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0042",
+      "start": 281.347,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S042.mp4",
+      "seed": "station-0042",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0043",
+      "start": 288.013,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S043.mp4",
+      "seed": "station-0043",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0044",
+      "start": 294.679,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S044.mp4",
+      "seed": "station-0044",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0045",
+      "start": 301.345,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S045.mp4",
+      "seed": "station-0045",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0046",
+      "start": 308.011,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S046.mp4",
+      "seed": "station-0046",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0047",
+      "start": 314.677,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S047.mp4",
+      "seed": "station-0047",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0048",
+      "start": 321.343,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S048.mp4",
+      "seed": "station-0048",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0049",
+      "start": 328.009,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S049.mp4",
+      "seed": "station-0049",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0050",
+      "start": 334.675,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S050.mp4",
+      "seed": "station-0050",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0051",
+      "start": 341.341,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S051.mp4",
+      "seed": "station-0051",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0052",
+      "start": 348.007,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S052.mp4",
+      "seed": "station-0052",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0053",
+      "start": 354.673,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S053.mp4",
+      "seed": "station-0053",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0054",
+      "start": 361.339,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S054.mp4",
+      "seed": "station-0054",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0055",
+      "start": 368.005,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S055.mp4",
+      "seed": "station-0055",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0056",
+      "start": 374.671,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S056.mp4",
+      "seed": "station-0056",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0057",
+      "start": 381.337,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S057.mp4",
+      "seed": "station-0057",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0058",
+      "start": 388.003,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S058.mp4",
+      "seed": "station-0058",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0059",
+      "start": 394.669,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S059.mp4",
+      "seed": "station-0059",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0060",
+      "start": 401.335,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S060.mp4",
+      "seed": "station-0060",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0061",
+      "start": 408.001,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S061.mp4",
+      "seed": "station-0061",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0062",
+      "start": 414.667,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S062.mp4",
+      "seed": "station-0062",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0063",
+      "start": 421.333,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S063.mp4",
+      "seed": "station-0063",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0064",
+      "start": 427.999,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S064.mp4",
+      "seed": "station-0064",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0065",
+      "start": 434.665,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S065.mp4",
+      "seed": "station-0065",
+      "act": "ACT_1",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0066",
+      "start": 441.331,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S066.mp4",
+      "seed": "station-0066",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0067",
+      "start": 447.997,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S067.mp4",
+      "seed": "station-0067",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0068",
+      "start": 454.663,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S068.mp4",
+      "seed": "station-0068",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0069",
+      "start": 461.329,
+      "dur": 6.666,
+      "kind": "footage",
+      "src": "station/motion/S069.mp4",
+      "seed": "station-0069",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0070",
+      "start": 467.995,
+      "dur": 6.673,
+      "kind": "footage",
+      "src": "station/motion/S070.mp4",
+      "seed": "station-0070",
+      "act": "ACT_1",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0071",
+      "start": 474.668,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S071.mp4",
+      "seed": "station-0071",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0072",
+      "start": 481.431,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S072.mp4",
+      "seed": "station-0072",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0073",
+      "start": 488.194,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S073.mp4",
+      "seed": "station-0073",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0074",
+      "start": 494.957,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S074.mp4",
+      "seed": "station-0074",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0075",
+      "start": 501.72,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S075.mp4",
+      "seed": "station-0075",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0076",
+      "start": 508.483,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S076.mp4",
+      "seed": "station-0076",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0077",
+      "start": 515.246,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S077.mp4",
+      "seed": "station-0077",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0078",
+      "start": 522.009,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S078.mp4",
+      "seed": "station-0078",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0079",
+      "start": 528.772,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S079.mp4",
+      "seed": "station-0079",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0080",
+      "start": 535.535,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S081.mp4",
+      "seed": "station-0080",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0081",
+      "start": 542.298,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S082.mp4",
+      "seed": "station-0081",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0082",
+      "start": 549.061,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S083.mp4",
+      "seed": "station-0082",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0083",
+      "start": 555.824,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S084.mp4",
+      "seed": "station-0083",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0084",
+      "start": 562.587,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S085.mp4",
+      "seed": "station-0084",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0085",
+      "start": 569.35,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S088.mp4",
+      "seed": "station-0085",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0086",
+      "start": 576.113,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S089.mp4",
+      "seed": "station-0086",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0087",
+      "start": 582.876,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S090.mp4",
+      "seed": "station-0087",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0088",
+      "start": 589.639,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S091.mp4",
+      "seed": "station-0088",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0089",
+      "start": 596.402,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S092.mp4",
+      "seed": "station-0089",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0090",
+      "start": 603.165,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S093.mp4",
+      "seed": "station-0090",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0091",
+      "start": 609.928,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S094.mp4",
+      "seed": "station-0091",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0092",
+      "start": 616.691,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S095.mp4",
+      "seed": "station-0092",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0093",
+      "start": 623.454,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S096.mp4",
+      "seed": "station-0093",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0094",
+      "start": 630.217,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S097.mp4",
+      "seed": "station-0094",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0095",
+      "start": 636.98,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S098.mp4",
+      "seed": "station-0095",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0096",
+      "start": 643.743,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S099.mp4",
+      "seed": "station-0096",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0097",
+      "start": 650.506,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S100.mp4",
+      "seed": "station-0097",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0098",
+      "start": 657.269,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S101.mp4",
+      "seed": "station-0098",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0099",
+      "start": 664.032,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S102.mp4",
+      "seed": "station-0099",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0100",
+      "start": 670.795,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S103.mp4",
+      "seed": "station-0100",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0101",
+      "start": 677.558,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S105.mp4",
+      "seed": "station-0101",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0102",
+      "start": 684.321,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S106.mp4",
+      "seed": "station-0102",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0103",
+      "start": 691.084,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S107.mp4",
+      "seed": "station-0103",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0104",
+      "start": 697.847,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S108.mp4",
+      "seed": "station-0104",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0105",
+      "start": 704.61,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S109.mp4",
+      "seed": "station-0105",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0106",
+      "start": 711.373,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S110.mp4",
+      "seed": "station-0106",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0107",
+      "start": 718.136,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S111.mp4",
+      "seed": "station-0107",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0108",
+      "start": 724.899,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S112.mp4",
+      "seed": "station-0108",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0109",
+      "start": 731.662,
+      "dur": 6.763,
+      "kind": "footage",
+      "src": "station/motion/S113.mp4",
+      "seed": "station-0109",
+      "act": "ACT_2",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0110",
+      "start": 738.425,
+      "dur": 6.75,
+      "kind": "footage",
+      "src": "station/motion/S114.mp4",
+      "seed": "station-0110",
+      "act": "ACT_2",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0111",
+      "start": 745.175,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S115.mp4",
+      "seed": "station-0111",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0112",
+      "start": 751.935,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S116.mp4",
+      "seed": "station-0112",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0113",
+      "start": 758.695,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S117.mp4",
+      "seed": "station-0113",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0114",
+      "start": 765.455,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S118.mp4",
+      "seed": "station-0114",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0115",
+      "start": 772.215,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S119.mp4",
+      "seed": "station-0115",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0116",
+      "start": 778.975,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S120.mp4",
+      "seed": "station-0116",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0117",
+      "start": 785.735,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S121.mp4",
+      "seed": "station-0117",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0118",
+      "start": 792.495,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S122.mp4",
+      "seed": "station-0118",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0119",
+      "start": 799.255,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S123.mp4",
+      "seed": "station-0119",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0120",
+      "start": 806.015,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S124.mp4",
+      "seed": "station-0120",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0121",
+      "start": 812.775,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S125.mp4",
+      "seed": "station-0121",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0122",
+      "start": 819.535,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S126.mp4",
+      "seed": "station-0122",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0123",
+      "start": 826.295,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S127.mp4",
+      "seed": "station-0123",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0124",
+      "start": 833.055,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S128.mp4",
+      "seed": "station-0124",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0125",
+      "start": 839.815,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S129.mp4",
+      "seed": "station-0125",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0126",
+      "start": 846.575,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S130.mp4",
+      "seed": "station-0126",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0127",
+      "start": 853.335,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S131.mp4",
+      "seed": "station-0127",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0128",
+      "start": 860.095,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S132.mp4",
+      "seed": "station-0128",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0129",
+      "start": 866.855,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S133.mp4",
+      "seed": "station-0129",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0130",
+      "start": 873.615,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S134.mp4",
+      "seed": "station-0130",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0131",
+      "start": 880.375,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S136.mp4",
+      "seed": "station-0131",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0132",
+      "start": 887.135,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S137.mp4",
+      "seed": "station-0132",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0133",
+      "start": 893.895,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S138.mp4",
+      "seed": "station-0133",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0134",
+      "start": 900.655,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S139.mp4",
+      "seed": "station-0134",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0135",
+      "start": 907.415,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S140.mp4",
+      "seed": "station-0135",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0136",
+      "start": 914.175,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S141.mp4",
+      "seed": "station-0136",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0137",
+      "start": 920.935,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S142.mp4",
+      "seed": "station-0137",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0138",
+      "start": 927.695,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S143.mp4",
+      "seed": "station-0138",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0139",
+      "start": 934.455,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S144.mp4",
+      "seed": "station-0139",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0140",
+      "start": 941.215,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S145.mp4",
+      "seed": "station-0140",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0141",
+      "start": 947.975,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S146.mp4",
+      "seed": "station-0141",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0142",
+      "start": 954.735,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S147.mp4",
+      "seed": "station-0142",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0143",
+      "start": 961.495,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S148.mp4",
+      "seed": "station-0143",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0144",
+      "start": 968.255,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S149.mp4",
+      "seed": "station-0144",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0145",
+      "start": 975.015,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S150.mp4",
+      "seed": "station-0145",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0146",
+      "start": 981.775,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S151.mp4",
+      "seed": "station-0146",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0147",
+      "start": 988.535,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S152.mp4",
+      "seed": "station-0147",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0148",
+      "start": 995.295,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S153.mp4",
+      "seed": "station-0148",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0149",
+      "start": 1002.055,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S154.mp4",
+      "seed": "station-0149",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0150",
+      "start": 1008.815,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S155.mp4",
+      "seed": "station-0150",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0151",
+      "start": 1015.575,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S156.mp4",
+      "seed": "station-0151",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0152",
+      "start": 1022.335,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S157.mp4",
+      "seed": "station-0152",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0153",
+      "start": 1029.095,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S158.mp4",
+      "seed": "station-0153",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0154",
+      "start": 1035.855,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S159.mp4",
+      "seed": "station-0154",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0155",
+      "start": 1042.615,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S160.mp4",
+      "seed": "station-0155",
+      "act": "ACT_3",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0156",
+      "start": 1049.375,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S161.mp4",
+      "seed": "station-0156",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0157",
+      "start": 1056.135,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S162.mp4",
+      "seed": "station-0157",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0158",
+      "start": 1062.895,
+      "dur": 6.76,
+      "kind": "footage",
+      "src": "station/motion/S163.mp4",
+      "seed": "station-0158",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0159",
+      "start": 1069.655,
+      "dur": 6.738,
+      "kind": "footage",
+      "src": "station/motion/S164.mp4",
+      "seed": "station-0159",
+      "act": "ACT_3",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0160",
+      "start": 1076.393,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S165.mp4",
+      "seed": "station-0160",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0161",
+      "start": 1083.102,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S166.mp4",
+      "seed": "station-0161",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0162",
+      "start": 1089.811,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S167.mp4",
+      "seed": "station-0162",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0163",
+      "start": 1096.52,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S168.mp4",
+      "seed": "station-0163",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0164",
+      "start": 1103.229,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S169.mp4",
+      "seed": "station-0164",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0165",
+      "start": 1109.938,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S170.mp4",
+      "seed": "station-0165",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0166",
+      "start": 1116.647,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S171.mp4",
+      "seed": "station-0166",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0167",
+      "start": 1123.356,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S172.mp4",
+      "seed": "station-0167",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0168",
+      "start": 1130.065,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S173.mp4",
+      "seed": "station-0168",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0169",
+      "start": 1136.774,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S174.mp4",
+      "seed": "station-0169",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0170",
+      "start": 1143.483,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S175.mp4",
+      "seed": "station-0170",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0171",
+      "start": 1150.192,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S176.mp4",
+      "seed": "station-0171",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0172",
+      "start": 1156.901,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S177.mp4",
+      "seed": "station-0172",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0173",
+      "start": 1163.61,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S178.mp4",
+      "seed": "station-0173",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0174",
+      "start": 1170.319,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S179.mp4",
+      "seed": "station-0174",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0175",
+      "start": 1177.028,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S180.mp4",
+      "seed": "station-0175",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0176",
+      "start": 1183.737,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S181.mp4",
+      "seed": "station-0176",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0177",
+      "start": 1190.446,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S182.mp4",
+      "seed": "station-0177",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0178",
+      "start": 1197.155,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S183.mp4",
+      "seed": "station-0178",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0179",
+      "start": 1203.864,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S184.mp4",
+      "seed": "station-0179",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0180",
+      "start": 1210.573,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S185.mp4",
+      "seed": "station-0180",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0181",
+      "start": 1217.282,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S186.mp4",
+      "seed": "station-0181",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0182",
+      "start": 1223.991,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S187.mp4",
+      "seed": "station-0182",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0183",
+      "start": 1230.7,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S188.mp4",
+      "seed": "station-0183",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0184",
+      "start": 1237.409,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S001.mp4",
+      "seed": "station-0184",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0185",
+      "start": 1244.118,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S002.mp4",
+      "seed": "station-0185",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0186",
+      "start": 1250.827,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S003.mp4",
+      "seed": "station-0186",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0187",
+      "start": 1257.536,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S004.mp4",
+      "seed": "station-0187",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0188",
+      "start": 1264.245,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S005.mp4",
+      "seed": "station-0188",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0189",
+      "start": 1270.954,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S006.mp4",
+      "seed": "station-0189",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0190",
+      "start": 1277.663,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S007.mp4",
+      "seed": "station-0190",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0191",
+      "start": 1284.372,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S008.mp4",
+      "seed": "station-0191",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0192",
+      "start": 1291.081,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S009.mp4",
+      "seed": "station-0192",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0193",
+      "start": 1297.79,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S010.mp4",
+      "seed": "station-0193",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0194",
+      "start": 1304.499,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S011.mp4",
+      "seed": "station-0194",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0195",
+      "start": 1311.208,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S012.mp4",
+      "seed": "station-0195",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0196",
+      "start": 1317.917,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S013.mp4",
+      "seed": "station-0196",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0197",
+      "start": 1324.626,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S014.mp4",
+      "seed": "station-0197",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0198",
+      "start": 1331.335,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S015.mp4",
+      "seed": "station-0198",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0199",
+      "start": 1338.044,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S016.mp4",
+      "seed": "station-0199",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0200",
+      "start": 1344.753,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S017.mp4",
+      "seed": "station-0200",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0201",
+      "start": 1351.462,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S018.mp4",
+      "seed": "station-0201",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0202",
+      "start": 1358.171,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S019.mp4",
+      "seed": "station-0202",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0203",
+      "start": 1364.88,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S020.mp4",
+      "seed": "station-0203",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0204",
+      "start": 1371.589,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S021.mp4",
+      "seed": "station-0204",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0205",
+      "start": 1378.298,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S022.mp4",
+      "seed": "station-0205",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0206",
+      "start": 1385.007,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S023.mp4",
+      "seed": "station-0206",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0207",
+      "start": 1391.716,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S024.mp4",
+      "seed": "station-0207",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0208",
+      "start": 1398.425,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S025.mp4",
+      "seed": "station-0208",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0209",
+      "start": 1405.134,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S026.mp4",
+      "seed": "station-0209",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0210",
+      "start": 1411.843,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S027.mp4",
+      "seed": "station-0210",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0211",
+      "start": 1418.552,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S028.mp4",
+      "seed": "station-0211",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0212",
+      "start": 1425.261,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S029.mp4",
+      "seed": "station-0212",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0213",
+      "start": 1431.97,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S030.mp4",
+      "seed": "station-0213",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0214",
+      "start": 1438.679,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S031.mp4",
+      "seed": "station-0214",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0215",
+      "start": 1445.388,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S032.mp4",
+      "seed": "station-0215",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0216",
+      "start": 1452.097,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S033.mp4",
+      "seed": "station-0216",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0217",
+      "start": 1458.806,
+      "dur": 6.709,
+      "kind": "footage",
+      "src": "station/motion/S034.mp4",
+      "seed": "station-0217",
+      "act": "ACT_4",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0218",
+      "start": 1465.515,
+      "dur": 6.698,
+      "kind": "footage",
+      "src": "station/motion/S035.mp4",
+      "seed": "station-0218",
+      "act": "ACT_4",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0219",
+      "start": 1472.213,
+      "dur": 6.441,
+      "kind": "footage",
+      "src": "station/motion/S036.mp4",
+      "seed": "station-0219",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0220",
+      "start": 1478.654,
+      "dur": 6.441,
+      "kind": "footage",
+      "src": "station/motion/S037.mp4",
+      "seed": "station-0220",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0221",
+      "start": 1485.095,
+      "dur": 6.441,
+      "kind": "footage",
+      "src": "station/motion/S038.mp4",
+      "seed": "station-0221",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0222",
+      "start": 1491.536,
+      "dur": 6.441,
+      "kind": "footage",
+      "src": "station/motion/S039.mp4",
+      "seed": "station-0222",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0223",
+      "start": 1497.977,
+      "dur": 6.441,
+      "kind": "footage",
+      "src": "station/motion/S040.mp4",
+      "seed": "station-0223",
+      "act": "ENDING",
+      "srcSeconds": 3.367,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0224",
+      "start": 1504.418,
+      "dur": 6.441,
+      "kind": "footage",
+      "src": "station/motion/S041.mp4",
+      "seed": "station-0224",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0225",
+      "start": 1510.859,
+      "dur": 6.441,
+      "kind": "footage",
+      "src": "station/motion/S042.mp4",
+      "seed": "station-0225",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0226",
+      "start": 1517.3,
+      "dur": 6.441,
+      "kind": "footage",
+      "src": "station/motion/S043.mp4",
+      "seed": "station-0226",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0227",
+      "start": 1523.741,
+      "dur": 6.441,
+      "kind": "footage",
+      "src": "station/motion/S044.mp4",
+      "seed": "station-0227",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    },
+    {
+      "id": "cut-0228",
+      "start": 1530.182,
+      "dur": 6.437,
+      "kind": "footage",
+      "src": "station/motion/S045.mp4",
+      "seed": "station-0228",
+      "act": "ENDING",
+      "srcSeconds": 3.366,
+      "treatment": "footage",
+      "loopSource": true
+    }
+  ],
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 2.183,
+      "text": "From the car park it is a pair of doors."
+    },
+    {
+      "start": 2.483,
+      "end": 4.433,
+      "text": "Wide, painted, obvious."
+    },
+    {
+      "start": 4.733,
+      "end": 5.848,
+      "text": "The way in."
+    },
+    {
+      "start": 6.148,
+      "end": 11.211,
+      "text": "One step inside there is a small lobby, and at the far side of that lobby there is"
+    },
+    {
+      "start": 11.211,
+      "end": 11.767,
+      "text": "one door."
+    },
+    {
+      "start": 12.067,
+      "end": 16.491,
+      "text": "On a February night in 2003, somewhere between four hundred and forty and four"
+    },
+    {
+      "start": 16.491,
+      "end": 20.008,
+      "text": "hundred and fifty-eight people were in the building behind it."
+    },
+    {
+      "start": 20.308,
+      "end": 22.258,
+      "text": "They had about ninety seconds."
+    },
+    {
+      "start": 22.558,
+      "end": 26.923,
+      "text": "So why does a building have two doors on the outside and one on the inside?"
+    },
+    {
+      "start": 28.723,
+      "end": 32.903,
+      "text": "Start with the building, because it is very ordinary, and that is the point."
+    },
+    {
+      "start": 33.203,
+      "end": 36.965,
+      "text": "The Station stood at 211 Cowesett Avenue in West Warwick, Rhode Island."
+    },
+    {
+      "start": 37.265,
+      "end": 38.472,
+      "text": "Single storey."
+    },
+    {
+      "start": 38.772,
+      "end": 39.747,
+      "text": "Wood frame."
+    },
+    {
+      "start": 40.047,
+      "end": 41.115,
+      "text": "No sprinklers."
+    },
+    {
+      "start": 41.415,
+      "end": 45.641,
+      "text": "About four hundred and twelve square metres — call it a large barn."
+    },
+    {
+      "start": 45.941,
+      "end": 48.635,
+      "text": "Roadside buildings like it exist in every state."
+    },
+    {
+      "start": 48.935,
+      "end": 50.607,
+      "text": "That is not an accusation."
+    },
+    {
+      "start": 50.907,
+      "end": 54.251,
+      "text": "It is a description of the population this story belongs to."
+    },
+    {
+      "start": 54.551,
+      "end": 57.291,
+      "text": "Three exits were available to the people inside."
+    },
+    {
+      "start": 57.591,
+      "end": 59.959,
+      "text": "The front main entrance, on the north side."
+    },
+    {
+      "start": 60.259,
+      "end": 64.578,
+      "text": "A single door on the west, near the platform the band used as a stage."
+    },
+    {
+      "start": 64.878,
+      "end": 67.664,
+      "text": "And a single door on the east, at the side of the main bar."
+    },
+    {
+      "start": 67.964,
+      "end": 69.914,
+      "text": "There was a fourth door, in the kitchen."
+    },
+    {
+      "start": 70.214,
+      "end": 72.722,
+      "text": "It was not considered accessible to patrons."
+    },
+    {
+      "start": 73.022,
+      "end": 74.322,
+      "text": "So: three."
+    },
+    {
+      "start": 74.622,
+      "end": 79.359,
+      "text": "Now look closely at the first one, because the entire film is inside this detail."
+    },
+    {
+      "start": 79.659,
+      "end": 82.12,
+      "text": "The front main entrance is a pair of doors."
+    },
+    {
+      "start": 82.42,
+      "end": 88.074,
+      "text": "From outside, from the car park, from the road, it is plainly the way in and plainly"
+    },
+    {
+      "start": 88.074,
+      "end": 88.411,
+      "text": "wide."
+    },
+    {
+      "start": 88.711,
+      "end": 93.843,
+      "text": "Behind those doors is a vestibule — a small lobby, the sort of thing a New England"
+    },
+    {
+      "start": 93.843,
+      "end": 98.788,
+      "text": "building has so that February does not come inside every time somebody arrives."
+    },
+    {
+      "start": 99.088,
+      "end": 101.921,
+      "text": "And on the far side of that vestibule there is one door."
+    },
+    {
+      "start": 102.221,
+      "end": 107.149,
+      "text": "NIST states the consequence in a single line, and it is the most important sentence"
+    },
+    {
+      "start": 107.149,
+      "end": 107.98,
+      "text": "in the report."
+    },
+    {
+      "start": 108.28,
+      "end": 112.762,
+      "text": "The rate of egress from the main entrance was limited by the single doorway inside"
+    },
+    {
+      "start": 112.762,
+      "end": 116.314,
+      "text": "the vestibule — not by the double doors visible from the outside."
+    },
+    {
+      "start": 116.914,
+      "end": 121.14,
+      "text": "Stay with that a moment, because it is not a defect anyone would see."
+    },
+    {
+      "start": 121.44,
+      "end": 125.666,
+      "text": "Walk in, and you go through the wide doors first and the narrow one second."
+    },
+    {
+      "start": 125.966,
+      "end": 130.749,
+      "text": "Your experience of the entrance is: wide, then a small lobby, then through."
+    },
+    {
+      "start": 131.049,
+      "end": 135.344,
+      "text": "Nobody arriving at a club at nine o'clock at night forms a view about the throughput"
+    },
+    {
+      "start": 135.344,
+      "end": 136.111,
+      "text": "of a vestibule."
+    },
+    {
+      "start": 136.411,
+      "end": 141.055,
+      "text": "And the building looks, from the road, exactly as capacious as its widest opening."
+    },
+    {
+      "start": 141.355,
+      "end": 144.234,
+      "text": "So why put a second, narrower door there at all?"
+    },
+    {
+      "start": 144.534,
+      "end": 147.785,
+      "text": "For the reason every cold-climate building has one."
+    },
+    {
+      "start": 148.085,
+      "end": 149.803,
+      "text": "A vestibule is an air lock."
+    },
+    {
+      "start": 150.103,
+      "end": 155.174,
+      "text": "It stops the weather arriving in the room every time somebody opens a door, it stops"
+    },
+    {
+      "start": 155.174,
+      "end": 160.185,
+      "text": "the heat leaving, and it gives a doorman somewhere to stand that is neither outside"
+    },
+    {
+      "start": 160.185,
+      "end": 162.177,
+      "text": "in February nor inside the noise."
+    },
+    {
+      "start": 162.477,
+      "end": 164.427,
+      "text": "It is a good piece of building."
+    },
+    {
+      "start": 164.727,
+      "end": 166.817,
+      "text": "It is in tens of thousands of them."
+    },
+    {
+      "start": 167.117,
+      "end": 169.903,
+      "text": "And it is the narrowest thing on the route out."
+    },
+    {
+      "start": 170.203,
+      "end": 171.132,
+      "text": "Now the walls."
+    },
+    {
+      "start": 171.432,
+      "end": 175.891,
+      "text": "The platform used as a stage was lined with polyurethane foam — on portions of the"
+    },
+    {
+      "start": 175.891,
+      "end": 177.794,
+      "text": "walls, and on the ceiling above it."
+    },
+    {
+      "start": 178.094,
+      "end": 182.559,
+      "text": "Foam goes on the walls of a small music venue for a reason that has nothing to do"
+    },
+    {
+      "start": 182.559,
+      "end": 183.11,
+      "text": "with fire."
+    },
+    {
+      "start": 183.41,
+      "end": 185.035,
+      "text": "It is there for sound."
+    },
+    {
+      "start": 185.335,
+      "end": 189.925,
+      "text": "A room with hard parallel walls and a low ceiling is unpleasant to play in and"
+    },
+    {
+      "start": 189.925,
+      "end": 191.279,
+      "text": "unpleasant to stand in."
+    },
+    {
+      "start": 191.579,
+      "end": 193.344,
+      "text": "Foam absorbs the reflections."
+    },
+    {
+      "start": 193.644,
+      "end": 198.195,
+      "text": "It is cheap, it is light, and it goes up with adhesive in an afternoon."
+    },
+    {
+      "start": 198.495,
+      "end": 200.074,
+      "text": "Thousands of rooms have it."
+    },
+    {
+      "start": 200.374,
+      "end": 202.139,
+      "text": "What matters is which foam."
+    },
+    {
+      "start": 202.439,
+      "end": 206.389,
+      "text": "After the fire, NIST bought foam and ran the test that nobody had run in that"
+    },
+    {
+      "start": 206.389,
+      "end": 206.851,
+      "text": "building."
+    },
+    {
+      "start": 207.151,
+      "end": 212.242,
+      "text": "They took a non-fire-retarded polyurethane foam and set a pyrotechnic device beside"
+    },
+    {
+      "start": 212.242,
+      "end": 215.371,
+      "text": "it, arranged as it had been on the club's platform."
+    },
+    {
+      "start": 215.671,
+      "end": 218.132,
+      "text": "It ignited in less than fifteen seconds."
+    },
+    {
+      "start": 218.432,
+      "end": 223.802,
+      "text": "Then they took a fire-retarded polyurethane foam — the same material class, the same"
+    },
+    {
+      "start": 223.802,
+      "end": 228.788,
+      "text": "purpose, the same look, bought off the shelf — and did exactly the same thing."
+    },
+    {
+      "start": 229.088,
+      "end": 230.621,
+      "text": "It did not ignite at all."
+    },
+    {
+      "start": 230.921,
+      "end": 235.134,
+      "text": "And then they removed the foam entirely and exposed the bare wood panelling to the"
+    },
+    {
+      "start": 235.134,
+      "end": 235.751,
+      "text": "same source."
+    },
+    {
+      "start": 236.051,
+      "end": 237.862,
+      "text": "The wood did not ignite either."
+    },
+    {
+      "start": 238.162,
+      "end": 239.23,
+      "text": "Same device."
+    },
+    {
+      "start": 239.53,
+      "end": 240.691,
+      "text": "Same arrangement."
+    },
+    {
+      "start": 240.991,
+      "end": 241.966,
+      "text": "Same room."
+    },
+    {
+      "start": 242.266,
+      "end": 244.96,
+      "text": "Three outcomes, and only one of them ends this way."
+    },
+    {
+      "start": 245.26,
+      "end": 247.536,
+      "text": "Now, what was actually on those walls."
+    },
+    {
+      "start": 247.836,
+      "end": 252.799,
+      "text": "The foam was there as sound attenuation - on the rear wall, on the platform wall,"
+    },
+    {
+      "start": 252.799,
+      "end": 255.127,
+      "text": "and in the alcove where the drums sat."
+    },
+    {
+      "start": 255.427,
+      "end": 256.96,
+      "text": "It is a packaging material."
+    },
+    {
+      "start": 257.26,
+      "end": 262.039,
+      "text": "It is sold in sheets four feet by eight, in grey, flat or moulded into the"
+    },
+    {
+      "start": 262.039,
+      "end": 267.012,
+      "text": "convoluted egg-crate pattern that everybody recognises from a rehearsal room."
+    },
+    {
+      "start": 267.312,
+      "end": 271.916,
+      "text": "And the report states the thing that matters about the grade normally sold for"
+    },
+    {
+      "start": 271.916,
+      "end": 275.811,
+      "text": "packing: it typically contains no fire-retardant additives at all."
+    },
+    {
+      "start": 276.111,
+      "end": 277.504,
+      "text": "Not a defective batch."
+    },
+    {
+      "start": 277.804,
+      "end": 278.965,
+      "text": "Not a counterfeit."
+    },
+    {
+      "start": 279.265,
+      "end": 284.334,
+      "text": "The ordinary product, doing the ordinary job it is sold for, on a wall it was never"
+    },
+    {
+      "start": 284.334,
+      "end": 284.884,
+      "text": "sold for."
+    },
+    {
+      "start": 285.184,
+      "end": 287.97,
+      "text": "The photographs of the interior show it in detail."
+    },
+    {
+      "start": 288.27,
+      "end": 290.546,
+      "text": "There are gaps where two sheets meet."
+    },
+    {
+      "start": 290.846,
+      "end": 295.583,
+      "text": "There are gaps between the foam and the wall at the outside corners of the alcove."
+    },
+    {
+      "start": 295.883,
+      "end": 300.543,
+      "text": "And there is a detail in those photographs that tells you how long it had been there"
+    },
+    {
+      "start": 300.543,
+      "end": 302.152,
+      "text": "and how normal it had become."
+    },
+    {
+      "start": 302.452,
+      "end": 304.449,
+      "text": "Earlier pictures show the foam grey."
+    },
+    {
+      "start": 304.749,
+      "end": 309.383,
+      "text": "Later pictures show it darker - the report says it may have been sprayed with black"
+    },
+    {
+      "start": 309.383,
+      "end": 309.718,
+      "text": "paint."
+    },
+    {
+      "start": 310.018,
+      "end": 314.198,
+      "text": "The surface has a glittery look, possibly wet paint dusted with glitter."
+    },
+    {
+      "start": 314.498,
+      "end": 315.938,
+      "text": "Somebody decorated it."
+    },
+    {
+      "start": 316.238,
+      "end": 317.863,
+      "text": "Does that sound careless?"
+    },
+    {
+      "start": 318.163,
+      "end": 319.37,
+      "text": "It should not."
+    },
+    {
+      "start": 319.67,
+      "end": 323.554,
+      "text": "Painting the acoustic foam black is what you do to a room that is going to be dark"
+    },
+    {
+      "start": 323.554,
+      "end": 324.407,
+      "text": "with a band in it."
+    },
+    {
+      "start": 324.707,
+      "end": 327.261,
+      "text": "Grey packing foam looks like grey packing foam."
+    },
+    {
+      "start": 327.561,
+      "end": 329.047,
+      "text": "Black looks like a stage."
+    },
+    {
+      "start": 329.347,
+      "end": 332.458,
+      "text": "Adding glitter is the same instinct one step further."
+    },
+    {
+      "start": 332.758,
+      "end": 337.508,
+      "text": "It is a decision about how the room feels, made by somebody thinking about how the"
+    },
+    {
+      "start": 337.508,
+      "end": 338.145,
+      "text": "room feels."
+    },
+    {
+      "start": 338.445,
+      "end": 344.009,
+      "text": "Behind the foam was more foam: rigid polystyrene thermal insulation, laid between"
+    },
+    {
+      "start": 344.009,
+      "end": 345.039,
+      "text": "the wood studs."
+    },
+    {
+      "start": 345.339,
+      "end": 349.758,
+      "text": "Above all of it, the ceiling over the dance floor and the platform had been raised"
+    },
+    {
+      "start": 349.758,
+      "end": 354.231,
+      "text": "to about twelve and a half feet, built of gypsum board, with a lighting rack hung a"
+    },
+    {
+      "start": 354.231,
+      "end": 355.416,
+      "text": "hand's width below it."
+    },
+    {
+      "start": 355.716,
+      "end": 358.874,
+      "text": "There was a second material as well, easy to overlook."
+    },
+    {
+      "start": 359.174,
+      "end": 363.802,
+      "text": "A foam plastic thermal insulation had been installed in the stud space of the"
+    },
+    {
+      "start": 363.802,
+      "end": 368.369,
+      "text": "drummer's alcove walls, with no fire-resistant barrier on the interior side."
+    },
+    {
+      "start": 368.969,
+      "end": 374.092,
+      "text": "NIST measured all of it properly, in a cone calorimeter, which does one thing: it"
+    },
+    {
+      "start": 374.092,
+      "end": 379.279,
+      "text": "exposes a small sample to a known heat and records how much energy comes back out."
+    },
+    {
+      "start": 379.579,
+      "end": 384.54,
+      "text": "At the standard exposure, the non-flame-retarded foam peaked at around six hundred"
+    },
+    {
+      "start": 384.54,
+      "end": 386.173,
+      "text": "kilowatts per square metre."
+    },
+    {
+      "start": 386.473,
+      "end": 389.817,
+      "text": "The flame-retarded foam peaked at four hundred and fifty-three."
+    },
+    {
+      "start": 390.117,
+      "end": 392.16,
+      "text": "The ceiling tile did not ignite at all."
+    },
+    {
+      "start": 392.46,
+      "end": 395.711,
+      "text": "The wood panelling took forty-one seconds to sustained ignition."
+    },
+    {
+      "start": 396.011,
+      "end": 400.701,
+      "text": "And one number from the night itself, taken off the video frame by frame."
+    },
+    {
+      "start": 401.001,
+      "end": 406.117,
+      "text": "The foam at the vertical corners of the drummer's alcove ignited eight seconds after"
+    },
+    {
+      "start": 406.117,
+      "end": 408.431,
+      "text": "the pyrotechnic display was initiated."
+    },
+    {
+      "start": 408.731,
+      "end": 409.753,
+      "text": "Eight seconds."
+    },
+    {
+      "start": 410.053,
+      "end": 414.138,
+      "text": "One more thing about the testing, and this programme is going to say it because"
+    },
+    {
+      "start": 414.138,
+      "end": 417.344,
+      "text": "leaving it out would make a cleaner story and a less true one."
+    },
+    {
+      "start": 417.644,
+      "end": 422.752,
+      "text": "In another bench arrangement, NIST aimed a device's sparks at foam with a deliberate"
+    },
+    {
+      "start": 422.752,
+      "end": 427.435,
+      "text": "gap and lip built in, specifically to catch hot sparks and make ignition more"
+    },
+    {
+      "start": 427.435,
+      "end": 427.861,
+      "text": "likely."
+    },
+    {
+      "start": 428.161,
+      "end": 429.879,
+      "text": "No ignition was observed."
+    },
+    {
+      "start": 430.179,
+      "end": 435.473,
+      "text": "The sparks pitted the foam - small melted craters - and the process did not spread."
+    },
+    {
+      "start": 435.773,
+      "end": 440.556,
+      "text": "So the honest statement is not that a device near this foam always sets it alight."
+    },
+    {
+      "start": 440.856,
+      "end": 445.886,
+      "text": "It is that the same device, the same foam and a slightly different geometry can give"
+    },
+    {
+      "start": 445.886,
+      "end": 450.796,
+      "text": "you a wall of pits or a wall on fire, and nobody standing in the room can tell you"
+    },
+    {
+      "start": 450.796,
+      "end": 452.652,
+      "text": "in advance which one they have."
+    },
+    {
+      "start": 452.952,
+      "end": 457.782,
+      "text": "One more fact about the fuel, and it changes what kind of building this became."
+    },
+    {
+      "start": 458.082,
+      "end": 462.056,
+      "text": "The wood structure and panelling contained over ninety-five percent of the fuel"
+    },
+    {
+      "start": 462.056,
+      "end": 462.308,
+      "text": "load."
+    },
+    {
+      "start": 462.608,
+      "end": 467.203,
+      "text": "Once most of the foam was consumed, this stopped being a foam fire and became an"
+    },
+    {
+      "start": 467.203,
+      "end": 469.156,
+      "text": "ordinary wood-frame building fire."
+    },
+    {
+      "start": 469.456,
+      "end": 471.035,
+      "text": "The foam was not the fire."
+    },
+    {
+      "start": 471.335,
+      "end": 472.868,
+      "text": "The foam was the ignition."
+    },
+    {
+      "start": 474.668,
+      "end": 477.083,
+      "text": "Before the numbers, what the number is for."
+    },
+    {
+      "start": 477.383,
+      "end": 481.981,
+      "text": "An occupant limit is not a fire-safety decoration and it is not about comfort."
+    },
+    {
+      "start": 482.281,
+      "end": 484.51,
+      "text": "It is arithmetic tied to the exits."
+    },
+    {
+      "start": 484.81,
+      "end": 489.521,
+      "text": "You take the width of the ways out, you take how fast people move through an opening"
+    },
+    {
+      "start": 489.521,
+      "end": 494.008,
+      "text": "of that width, you take how long the building will stay survivable, and you work"
+    },
+    {
+      "start": 494.008,
+      "end": 496.42,
+      "text": "backwards to how many people may be inside."
+    },
+    {
+      "start": 496.72,
+      "end": 498.763,
+      "text": "That is the whole calculation."
+    },
+    {
+      "start": 499.063,
+      "end": 501.339,
+      "text": "The limit is a statement about the doors."
+    },
+    {
+      "start": 501.639,
+      "end": 505.645,
+      "text": "Which means that if the doors do not change, the number cannot honestly change"
+    },
+    {
+      "start": 505.645,
+      "end": 506.004,
+      "text": "either."
+    },
+    {
+      "start": 506.304,
+      "end": 507.465,
+      "text": "Now the paperwork."
+    },
+    {
+      "start": 507.765,
+      "end": 512.509,
+      "text": "In 1981, an application under the fire safety code — to leave the boiler room not"
+    },
+    {
+      "start": 512.509,
+      "end": 517.371,
+      "text": "fully enclosed — identified an occupant load of two hundred and twenty-five for the"
+    },
+    {
+      "start": 517.371,
+      "end": 519.421,
+      "text": "building as it was then being used."
+    },
+    {
+      "start": 519.721,
+      "end": 524.259,
+      "text": "In a memorandum dated the thirtieth of December, 1999, the West Warwick Fire"
+    },
+    {
+      "start": 524.259,
+      "end": 528.498,
+      "text": "Department identified the occupant load as two hundred and fifty-three."
+    },
+    {
+      "start": 528.798,
+      "end": 533.166,
+      "text": "And that same memorandum granted an allowance to increase the occupancy to three"
+    },
+    {
+      "start": 533.166,
+      "end": 537.588,
+      "text": "hundred and seventeen — by removing tables and chairs from three lounge areas and"
+    },
+    {
+      "start": 537.588,
+      "end": 539.99,
+      "text": "providing standing room only in those areas."
+    },
+    {
+      "start": 540.29,
+      "end": 545.052,
+      "text": "Read that mechanism carefully, because it is reasonable and it is exactly how the"
+    },
+    {
+      "start": 545.052,
+      "end": 545.816,
+      "text": "number moved."
+    },
+    {
+      "start": 546.116,
+      "end": 548.159,
+      "text": "Tables and chairs take floor space."
+    },
+    {
+      "start": 548.459,
+      "end": 550.642,
+      "text": "Take them out and more people fit."
+    },
+    {
+      "start": 550.942,
+      "end": 555.148,
+      "text": "If the constraint you are thinking about is floor area, then removing furniture"
+    },
+    {
+      "start": 555.148,
+      "end": 559.301,
+      "text": "genuinely does let you hold more people, and raising the number is the correct"
+    },
+    {
+      "start": 559.301,
+      "end": 559.673,
+      "text": "answer."
+    },
+    {
+      "start": 559.973,
+      "end": 562.713,
+      "text": "But the constraint that kills is not the floor."
+    },
+    {
+      "start": 563.013,
+      "end": 564.081,
+      "text": "It is the door."
+    },
+    {
+      "start": 564.381,
+      "end": 565.867,
+      "text": "And nobody moved the door."
+    },
+    {
+      "start": 566.167,
+      "end": 570.918,
+      "text": "Against those figures, NIST offers the one from the codes: under the 2003 model"
+    },
+    {
+      "start": 570.918,
+      "end": 575.729,
+      "text": "codes, the occupant limit for a building like The Station would have been around"
+    },
+    {
+      "start": 575.729,
+      "end": 577.173,
+      "text": "four hundred and twenty."
+    },
+    {
+      "start": 577.473,
+      "end": 581.73,
+      "text": "And the number of people reported to have been inside on the night was between four"
+    },
+    {
+      "start": 581.73,
+      "end": 584.346,
+      "text": "hundred and forty and four hundred and fifty-eight."
+    },
+    {
+      "start": 584.646,
+      "end": 586.179,
+      "text": "Where do those come from?"
+    },
+    {
+      "start": 586.479,
+      "end": 590.734,
+      "text": "News media reports, and an attribution to the state Attorney General's office for"
+    },
+    {
+      "start": 590.734,
+      "end": 591.68,
+      "text": "the higher figure."
+    },
+    {
+      "start": 591.98,
+      "end": 596.412,
+      "text": "This programme is going to be careful here, because it is the kind of number that"
+    },
+    {
+      "start": 596.412,
+      "end": 597.506,
+      "text": "films state as fact."
+    },
+    {
+      "start": 597.806,
+      "end": 599.431,
+      "text": "NIST itself tried to count."
+    },
+    {
+      "start": 599.731,
+      "end": 603.873,
+      "text": "Investigators used a television crew's video shot inside the club that night and"
+    },
+    {
+      "start": 603.873,
+      "end": 605.582,
+      "text": "counted the people visible in it."
+    },
+    {
+      "start": 605.882,
+      "end": 610.817,
+      "text": "Across four still frames as the camera pans, one hundred and forty-four occupants"
+    },
+    {
+      "start": 610.817,
+      "end": 611.548,
+      "text": "can be seen."
+    },
+    {
+      "start": 611.848,
+      "end": 616.162,
+      "text": "And NIST says plainly that it is not clear at what point in the evening that"
+    },
+    {
+      "start": 616.162,
+      "end": 619.511,
+      "text": "sequence was recorded, so it cannot be scaled into a total."
+    },
+    {
+      "start": 619.811,
+      "end": 621.761,
+      "text": "So the honest statement is this."
+    },
+    {
+      "start": 622.061,
+      "end": 627.077,
+      "text": "The paperwork said two twenty-five, then two fifty-three, then three seventeen."
+    },
+    {
+      "start": 627.377,
+      "end": 630.256,
+      "text": "The codes of the year said about four hundred and twenty."
+    },
+    {
+      "start": 630.556,
+      "end": 634.783,
+      "text": "And the reported figure for that night was four hundred and forty to four hundred"
+    },
+    {
+      "start": 634.783,
+      "end": 635.618,
+      "text": "and fifty-eight."
+    },
+    {
+      "start": 635.918,
+      "end": 640.258,
+      "text": "Every one of those numbers was calculated for a building whose front exit was one"
+    },
+    {
+      "start": 640.258,
+      "end": 640.794,
+      "text": "door wide."
+    },
+    {
+      "start": 641.094,
+      "end": 642.627,
+      "text": "So who is supposed to notice?"
+    },
+    {
+      "start": 642.927,
+      "end": 644.831,
+      "text": "That is not a rhetorical question."
+    },
+    {
+      "start": 645.131,
+      "end": 647.825,
+      "text": "There is an answer, and it has a job title."
+    },
+    {
+      "start": 648.125,
+      "end": 649.843,
+      "text": "A code is only a document."
+    },
+    {
+      "start": 650.143,
+      "end": 655.119,
+      "text": "What converts a document into a building is an inspection regime - somebody with a"
+    },
+    {
+      "start": 655.119,
+      "end": 658.456,
+      "text": "tape measure, a floor plan and the authority to say no."
+    },
+    {
+      "start": 658.756,
+      "end": 663.436,
+      "text": "NIST's first recommendation is entirely about that machinery, and it reads like a"
+    },
+    {
+      "start": 663.436,
+      "end": 666.094,
+      "text": "list of the places the machinery goes missing."
+    },
+    {
+      "start": 666.394,
+      "end": 669.738,
+      "text": "It asks jurisdictions to adopt a model code and keep it updated."
+    },
+    {
+      "start": 670.038,
+      "end": 674.695,
+      "text": "Then it asks for inspection and enforcement programmes that cover, specifically:"
+    },
+    {
+      "start": 674.695,
+      "end": 679.177,
+      "text": "documentation of building permits and alterations; inspection of the means of"
+    },
+    {
+      "start": 679.177,
+      "end": 683.892,
+      "text": "egress, and the record keeping that goes with it; the frequency and the rigour of"
+    },
+    {
+      "start": 683.892,
+      "end": 688.316,
+      "text": "inspections, including follow-up and auditing; and clear guidance on what an"
+    },
+    {
+      "start": 688.316,
+      "end": 691.4,
+      "text": "inspector can actually do when they find a deviation."
+    },
+    {
+      "start": 691.7,
+      "end": 696.509,
+      "text": "And then a plainer item than any of those: that enough inspectors and plan examiners"
+    },
+    {
+      "start": 696.509,
+      "end": 700.802,
+      "text": "are on the staff to do the job, and that they are professionally qualified."
+    },
+    {
+      "start": 701.102,
+      "end": 704.306,
+      "text": "Enough people, properly trained, to go and look."
+    },
+    {
+      "start": 704.606,
+      "end": 709.472,
+      "text": "NIST also lists, without adjectives, the ordinary behaviours that quietly switch a"
+    },
+    {
+      "start": 709.472,
+      "end": 713.863,
+      "text": "protective system off: installing decorations that exceed the flame-spread"
+    },
+    {
+      "start": 713.863,
+      "end": 718.61,
+      "text": "provisions, exposing a building to strong ignition sources, exceeding the posted"
+    },
+    {
+      "start": 718.61,
+      "end": 723.12,
+      "text": "occupancy limits, temporarily blocking an exit, and disabling sprinklers for"
+    },
+    {
+      "start": 723.12,
+      "end": 723.832,
+      "text": "maintenance."
+    },
+    {
+      "start": 724.132,
+      "end": 725.85,
+      "text": "Read that list again slowly."
+    },
+    {
+      "start": 726.15,
+      "end": 730.916,
+      "text": "Every item on it is a thing somebody does on an ordinary Tuesday afternoon, for an"
+    },
+    {
+      "start": 730.916,
+      "end": 735.566,
+      "text": "ordinary reason, in a building that is not on fire and will probably never be on"
+    },
+    {
+      "start": 735.566,
+      "end": 735.856,
+      "text": "fire."
+    },
+    {
+      "start": 736.156,
+      "end": 737.642,
+      "text": "None of them is sabotage."
+    },
+    {
+      "start": 737.942,
+      "end": 742.666,
+      "text": "Each is a small local decision that makes the room work better for the thing the"
+    },
+    {
+      "start": 742.666,
+      "end": 743.375,
+      "text": "room is for."
+    },
+    {
+      "start": 745.175,
+      "end": 746.754,
+      "text": "Here is the clock."
+    },
+    {
+      "start": 747.054,
+      "end": 750.165,
+      "text": "Every time on it is measured from the moment the foam ignited."
+    },
+    {
+      "start": 750.465,
+      "end": 751.719,
+      "text": "Twenty-four seconds."
+    },
+    {
+      "start": 752.019,
+      "end": 754.62,
+      "text": "The first patrons recognise the danger."
+    },
+    {
+      "start": 754.92,
+      "end": 756.035,
+      "text": "Thirty seconds."
+    },
+    {
+      "start": 756.335,
+      "end": 760.468,
+      "text": "The bulk of the crowd begins to move, around the time the band stops playing."
+    },
+    {
+      "start": 760.768,
+      "end": 764.298,
+      "text": "Six seconds between the first person understanding and most of the room"
+    },
+    {
+      "start": 764.298,
+      "end": 764.994,
+      "text": "understanding."
+    },
+    {
+      "start": 765.294,
+      "end": 766.409,
+      "text": "That is fast."
+    },
+    {
+      "start": 766.709,
+      "end": 770.471,
+      "text": "Whatever else is true about that night, the recognition was not slow."
+    },
+    {
+      "start": 770.771,
+      "end": 772.304,
+      "text": "A little over one minute."
+    },
+    {
+      "start": 772.604,
+      "end": 774.972,
+      "text": "Smoke is visible in the exit doorways."
+    },
+    {
+      "start": 775.272,
+      "end": 776.433,
+      "text": "One minute eleven."
+    },
+    {
+      "start": 776.733,
+      "end": 779.287,
+      "text": "People are leaving the building in a steady stream."
+    },
+    {
+      "start": 779.587,
+      "end": 780.98,
+      "text": "Note what that means."
+    },
+    {
+      "start": 781.28,
+      "end": 782.905,
+      "text": "The evacuation is working."
+    },
+    {
+      "start": 783.205,
+      "end": 784.784,
+      "text": "There is a stream."
+    },
+    {
+      "start": 785.084,
+      "end": 786.199,
+      "text": "It is moving."
+    },
+    {
+      "start": 786.499,
+      "end": 787.939,
+      "text": "About one minute thirty."
+    },
+    {
+      "start": 788.239,
+      "end": 790.747,
+      "text": "The front exit becomes blocked with people."
+    },
+    {
+      "start": 791.047,
+      "end": 795.893,
+      "text": "And on the video, occupants can be seen breaking windows and escaping from the pool"
+    },
+    {
+      "start": 795.893,
+      "end": 797.177,
+      "text": "room and the sun room."
+    },
+    {
+      "start": 797.477,
+      "end": 799.01,
+      "text": "One minute forty-two."
+    },
+    {
+      "start": 799.31,
+      "end": 802.004,
+      "text": "The crush at the front exit is on the recording."
+    },
+    {
+      "start": 802.604,
+      "end": 807.202,
+      "text": "Now the part of the clock that is not on the video, because it is inside the air."
+    },
+    {
+      "start": 807.502,
+      "end": 811.902,
+      "text": "NIST's simulation of the fire puts the dance floor and the areas next to it at"
+    },
+    {
+      "start": 811.902,
+      "end": 815.118,
+      "text": "untenable temperatures within ninety seconds of ignition."
+    },
+    {
+      "start": 815.418,
+      "end": 819.365,
+      "text": "The sun room and dart room reach the same state about ten seconds later."
+    },
+    {
+      "start": 819.665,
+      "end": 823.334,
+      "text": "Untenable has a definition, and it is not a figure of speech."
+    },
+    {
+      "start": 823.634,
+      "end": 827.991,
+      "text": "It is the point at which the temperature passes a hundred and twenty degrees"
+    },
+    {
+      "start": 827.991,
+      "end": 832.463,
+      "text": "Celsius, or the heat flux passes a threshold, or the oxygen falls below twelve"
+    },
+    {
+      "start": 832.463,
+      "end": 832.922,
+      "text": "percent."
+    },
+    {
+      "start": 833.222,
+      "end": 838.052,
+      "text": "And in the sun room beside the entranceway — a place where many of the dead were"
+    },
+    {
+      "start": 838.052,
+      "end": 842.58,
+      "text": "later found — the simulation shows the temperature going from ordinary room"
+    },
+    {
+      "start": 842.58,
+      "end": 845.9,
+      "text": "conditions to around a thousand degrees in ten seconds."
+    },
+    {
+      "start": 846.2,
+      "end": 850.798,
+      "text": "NIST puts the human consequence of that in one sentence, and it does not soften it."
+    },
+    {
+      "start": 851.098,
+      "end": 856.036,
+      "text": "Comparing its own experiment with the full nightclub, the report says the conditions"
+    },
+    {
+      "start": 856.036,
+      "end": 860.915,
+      "text": "around the platform, the dance floor, the sun room and the dart room would have led"
+    },
+    {
+      "start": 860.915,
+      "end": 865.735,
+      "text": "to severe incapacitation or death within about a minute and a half of ignition for"
+    },
+    {
+      "start": 865.735,
+      "end": 870.556,
+      "text": "anyone remaining standing — and not much longer even for those close to the floor."
+    },
+    {
+      "start": 870.856,
+      "end": 873.224,
+      "text": "So how long did anybody actually have?"
+    },
+    {
+      "start": 873.524,
+      "end": 878.23,
+      "text": "Ninety seconds, from a fire nobody in the room knew about until twenty-four seconds"
+    },
+    {
+      "start": 878.23,
+      "end": 878.4,
+      "text": "in."
+    },
+    {
+      "start": 878.7,
+      "end": 880.372,
+      "text": "Which leaves about a minute."
+    },
+    {
+      "start": 880.672,
+      "end": 885.497,
+      "text": "One minute, from the moment the room understood, to the moment the room stopped"
+    },
+    {
+      "start": 885.497,
+      "end": 890.2,
+      "text": "being survivable — for four hundred and forty to four hundred and fifty-eight"
+    },
+    {
+      "start": 890.2,
+      "end": 893.071,
+      "text": "people, most of whom were heading for one door."
+    },
+    {
+      "start": 893.371,
+      "end": 895.6,
+      "text": "So set the two clocks beside each other."
+    },
+    {
+      "start": 895.9,
+      "end": 899.337,
+      "text": "The crush at the front door is on video at one minute forty-two."
+    },
+    {
+      "start": 899.637,
+      "end": 903.724,
+      "text": "The air in that part of the building stopped being survivable at ninety seconds."
+    },
+    {
+      "start": 904.024,
+      "end": 907.228,
+      "text": "The blockage and the deadline are the same twelve seconds apart."
+    },
+    {
+      "start": 907.528,
+      "end": 909.153,
+      "text": "Now: where did everybody go?"
+    },
+    {
+      "start": 909.453,
+      "end": 913.956,
+      "text": "Between fifty-six and sixty-six percent of the occupants appear to have attempted to"
+    },
+    {
+      "start": 913.956,
+      "end": 916.744,
+      "text": "leave through the single main entrance at the front."
+    },
+    {
+      "start": 917.044,
+      "end": 918.53,
+      "text": "Many were unsuccessful."
+    },
+    {
+      "start": 918.83,
+      "end": 923.102,
+      "text": "Between a half and two thirds of everyone in that building, at one door."
+    },
+    {
+      "start": 923.402,
+      "end": 925.306,
+      "text": "That is not a failure of judgement."
+    },
+    {
+      "start": 925.606,
+      "end": 928.81,
+      "text": "It is the most ordinary thing people do in a building."
+    },
+    {
+      "start": 929.11,
+      "end": 930.689,
+      "text": "You leave the way you came in."
+    },
+    {
+      "start": 930.989,
+      "end": 932.382,
+      "text": "You know that route."
+    },
+    {
+      "start": 932.682,
+      "end": 934.586,
+      "text": "You walked it."
+    },
+    {
+      "start": 934.886,
+      "end": 939.873,
+      "text": "In a room you have never studied, filling with smoke, in the dark, the way you came"
+    },
+    {
+      "start": 939.873,
+      "end": 942.456,
+      "text": "in is the only route your body already has."
+    },
+    {
+      "start": 942.756,
+      "end": 944.335,
+      "text": "The side doors existed."
+    },
+    {
+      "start": 944.635,
+      "end": 946.075,
+      "text": "The report lists them."
+    },
+    {
+      "start": 946.375,
+      "end": 950.443,
+      "text": "But knowing that a door exists and having walked through a door are not the same"
+    },
+    {
+      "start": 950.443,
+      "end": 954.409,
+      "text": "kind of knowledge, and only one of them is available to you at ninety seconds."
+    },
+    {
+      "start": 954.709,
+      "end": 959.305,
+      "text": "And here the report is more precise than the summaries of it, in a way that changes"
+    },
+    {
+      "start": 959.305,
+      "end": 960.468,
+      "text": "the picture entirely."
+    },
+    {
+      "start": 960.768,
+      "end": 963.462,
+      "text": "The crush did not happen at the outside doors."
+    },
+    {
+      "start": 963.762,
+      "end": 965.945,
+      "text": "It happened inside the vestibule."
+    },
+    {
+      "start": 966.245,
+      "end": 971.195,
+      "text": "That small lobby - the one that exists so the winter stays out - is where the flow"
+    },
+    {
+      "start": 971.195,
+      "end": 971.678,
+      "text": "stopped."
+    },
+    {
+      "start": 971.978,
+      "end": 976.724,
+      "text": "The report says the crush there almost entirely disrupted the flow through the main"
+    },
+    {
+      "start": 976.724,
+      "end": 981.527,
+      "text": "exit, and that many people became stuck in the prone position in the exterior double"
+    },
+    {
+      "start": 981.527,
+      "end": 981.87,
+      "text": "doors."
+    },
+    {
+      "start": 982.17,
+      "end": 984.817,
+      "text": "Prone."
+    },
+    {
+      "start": 985.117,
+      "end": 986.51,
+      "text": "In the wide doors."
+    },
+    {
+      "start": 986.81,
+      "end": 991.402,
+      "text": "The wide doors were not the problem and the wide doors are where it ended, because a"
+    },
+    {
+      "start": 991.402,
+      "end": 995.994,
+      "text": "single doorway upstream of them had already decided how many bodies per second could"
+    },
+    {
+      "start": 995.994,
+      "end": 996.377,
+      "text": "arrive."
+    },
+    {
+      "start": 996.677,
+      "end": 1001.281,
+      "text": "Once the front blocked, the windows of the main bar room and the sun room became the"
+    },
+    {
+      "start": 1001.281,
+      "end": 1002.761,
+      "text": "secondary routes of escape."
+    },
+    {
+      "start": 1003.061,
+      "end": 1005.383,
+      "text": "And the windows did something extraordinary."
+    },
+    {
+      "start": 1005.683,
+      "end": 1009.073,
+      "text": "They accounted for over one third of the successful evacuations."
+    },
+    {
+      "start": 1009.373,
+      "end": 1013.46,
+      "text": "More than a third of everyone who got out of that building did not use a door."
+    },
+    {
+      "start": 1013.76,
+      "end": 1015.153,
+      "text": "They went through a wall."
+    },
+    {
+      "start": 1015.453,
+      "end": 1017.636,
+      "text": "Think about what that number is made of."
+    },
+    {
+      "start": 1017.936,
+      "end": 1021.001,
+      "text": "Somebody has to decide that the window is the way."
+    },
+    {
+      "start": 1021.301,
+      "end": 1024.691,
+      "text": "Somebody has to break it, in a room where the air is already going."
+    },
+    {
+      "start": 1024.991,
+      "end": 1029.088,
+      "text": "Somebody has to be near enough to a wall rather than caught in the middle of a"
+    },
+    {
+      "start": 1029.088,
+      "end": 1029.403,
+      "text": "floor."
+    },
+    {
+      "start": 1029.703,
+      "end": 1032.629,
+      "text": "And then somebody outside has to reach back in."
+    },
+    {
+      "start": 1032.929,
+      "end": 1037.165,
+      "text": "The video shows occupants still being helped out through the main bar windows at"
+    },
+    {
+      "start": 1037.165,
+      "end": 1038.595,
+      "text": "four minutes eight seconds."
+    },
+    {
+      "start": 1038.895,
+      "end": 1040.474,
+      "text": "None of that is in a plan."
+    },
+    {
+      "start": 1040.774,
+      "end": 1042.214,
+      "text": "All of it is in the count."
+    },
+    {
+      "start": 1042.514,
+      "end": 1043.954,
+      "text": "Nobody designed that."
+    },
+    {
+      "start": 1044.254,
+      "end": 1045.508,
+      "text": "Nobody drilled it."
+    },
+    {
+      "start": 1045.808,
+      "end": 1047.433,
+      "text": "It is not on any plan."
+    },
+    {
+      "start": 1047.733,
+      "end": 1051.753,
+      "text": "It happened because a window is a way out if you are willing to break it, and"
+    },
+    {
+      "start": 1051.753,
+      "end": 1055.303,
+      "text": "several hundred people worked that out at the same time in the dark."
+    },
+    {
+      "start": 1055.603,
+      "end": 1060.252,
+      "text": "The last recorded escape from inside the main bar, through a window, is at four"
+    },
+    {
+      "start": 1060.252,
+      "end": 1061.547,
+      "text": "minutes eight seconds."
+    },
+    {
+      "start": 1061.847,
+      "end": 1066.434,
+      "text": "And people stuck in the front entrance are seen escaping as late as five and a half"
+    },
+    {
+      "start": 1066.434,
+      "end": 1070.856,
+      "text": "minutes into the fire — just before the fire department ran its first hose line."
+    },
+    {
+      "start": 1071.156,
+      "end": 1074.593,
+      "text": "In under five minutes, flames had come through part of the roof."
+    },
+    {
+      "start": 1076.393,
+      "end": 1081.351,
+      "text": "The value of a technical investigation is that it can run the night again with one"
+    },
+    {
+      "start": 1081.351,
+      "end": 1082.198,
+      "text": "thing changed."
+    },
+    {
+      "start": 1082.498,
+      "end": 1083.891,
+      "text": "NIST ran it twice."
+    },
+    {
+      "start": 1084.191,
+      "end": 1085.816,
+      "text": "The first change was water."
+    },
+    {
+      "start": 1086.116,
+      "end": 1091.393,
+      "text": "In the laboratory reconstruction, the club was rebuilt and burned twice — once"
+    },
+    {
+      "start": 1091.393,
+      "end": 1093.964,
+      "text": "without sprinklers and once with them."
+    },
+    {
+      "start": 1094.264,
+      "end": 1099.279,
+      "text": "In the unsprinklered version, investigators fitted sprinkler heads that had no water"
+    },
+    {
+      "start": 1099.279,
+      "end": 1102.623,
+      "text": "supply, purely to measure when they would have gone off."
+    },
+    {
+      "start": 1102.923,
+      "end": 1106.889,
+      "text": "The first one above the platform would have activated thirty-three seconds after"
+    },
+    {
+      "start": 1106.889,
+      "end": 1107.335,
+      "text": "ignition."
+    },
+    {
+      "start": 1107.635,
+      "end": 1108.935,
+      "text": "Thirty-three seconds."
+    },
+    {
+      "start": 1109.235,
+      "end": 1113.6,
+      "text": "Nine seconds after the first person in the room realised anything was wrong."
+    },
+    {
+      "start": 1113.9,
+      "end": 1115.804,
+      "text": "The second change was the door."
+    },
+    {
+      "start": 1116.104,
+      "end": 1120.695,
+      "text": "NIST modelled the evacuation with the entrance doorway made twice as wide, and"
+    },
+    {
+      "start": 1120.695,
+      "end": 1125.522,
+      "text": "reports the result plainly: doubling the entrance door width brought the number of"
+    },
+    {
+      "start": 1125.522,
+      "end": 1130.231,
+      "text": "people still inside the building at ninety seconds back down to the range of the"
+    },
+    {
+      "start": 1130.231,
+      "end": 1131.29,
+      "text": "baseline scenario."
+    },
+    {
+      "start": 1131.59,
+      "end": 1135.352,
+      "text": "And there is a detail attached to that calculation which matters."
+    },
+    {
+      "start": 1135.652,
+      "end": 1139.395,
+      "text": "The crush had not occurred before ninety seconds, and the front door remained open"
+    },
+    {
+      "start": 1139.395,
+      "end": 1140.993,
+      "text": "through those first ninety seconds."
+    },
+    {
+      "start": 1141.293,
+      "end": 1143.569,
+      "text": "So the model is not describing a miracle."
+    },
+    {
+      "start": 1143.869,
+      "end": 1145.494,
+      "text": "It is describing width."
+    },
+    {
+      "start": 1146.094,
+      "end": 1150.566,
+      "text": "There is a third thing the report settles, and it closes a question this kind of"
+    },
+    {
+      "start": 1150.566,
+      "end": 1152.131,
+      "text": "film usually leaves hanging."
+    },
+    {
+      "start": 1152.431,
+      "end": 1154.056,
+      "text": "Where was the fire brigade?"
+    },
+    {
+      "start": 1154.356,
+      "end": 1156.26,
+      "text": "They were four hundred metres away."
+    },
+    {
+      "start": 1156.56,
+      "end": 1160.832,
+      "text": "The first 911 call reporting a fire came in less than forty seconds after ignition."
+    },
+    {
+      "start": 1161.132,
+      "end": 1165.478,
+      "text": "West Warwick police officers were already outside the building and reported the fire"
+    },
+    {
+      "start": 1165.478,
+      "end": 1167.03,
+      "text": "about a minute after ignition."
+    },
+    {
+      "start": 1167.33,
+      "end": 1172.295,
+      "text": "That brought a dispatch of four engine companies, a tower-ladder truck, a rescue"
+    },
+    {
+      "start": 1172.295,
+      "end": 1173.971,
+      "text": "unit and a battalion chief."
+    },
+    {
+      "start": 1174.271,
+      "end": 1178.786,
+      "text": "The first apparatus were sitting about five hundred metres west on the same avenue,"
+    },
+    {
+      "start": 1178.786,
+      "end": 1183.355,
+      "text": "and were on scene within three minutes of dispatch - roughly five and a half minutes"
+    },
+    {
+      "start": 1183.355,
+      "end": 1184.116,
+      "text": "into the fire."
+    },
+    {
+      "start": 1184.416,
+      "end": 1189.631,
+      "text": "And there is a detail in the staffing that says something about small-town American"
+    },
+    {
+      "start": 1189.631,
+      "end": 1190.825,
+      "text": "fire cover in 2003."
+    },
+    {
+      "start": 1191.125,
+      "end": 1194.469,
+      "text": "The first engine carried one firefighter and one fire officer."
+    },
+    {
+      "start": 1194.769,
+      "end": 1195.744,
+      "text": "Two people."
+    },
+    {
+      "start": 1196.044,
+      "end": 1199.666,
+      "text": "Water was flowing from that engine's own tank at about six minutes."
+    },
+    {
+      "start": 1199.966,
+      "end": 1204.423,
+      "text": "The battalion chief invoked a mutual aid agreement, which brought seven more engine"
+    },
+    {
+      "start": 1204.423,
+      "end": 1208.557,
+      "text": "and ladder companies from surrounding towns, and requested twelve ambulances."
+    },
+    {
+      "start": 1208.857,
+      "end": 1213.158,
+      "text": "A mass casualty plan was running within about ten minutes of the first engine's"
+    },
+    {
+      "start": 1213.158,
+      "end": 1213.594,
+      "text": "arrival."
+    },
+    {
+      "start": 1213.894,
+      "end": 1218.663,
+      "text": "That is a fast response by any measure, and NIST closes the question in one"
+    },
+    {
+      "start": 1218.663,
+      "end": 1219.235,
+      "text": "sentence."
+    },
+    {
+      "start": 1219.535,
+      "end": 1223.931,
+      "text": "Given the hazardous mix of materials in The Station and the lack of installed"
+    },
+    {
+      "start": 1223.931,
+      "end": 1228.612,
+      "text": "sprinklers, nothing that the fire department could have done that night would have"
+    },
+    {
+      "start": 1228.612,
+      "end": 1231.238,
+      "text": "saved the building from the fast-growing fire."
+    },
+    {
+      "start": 1231.538,
+      "end": 1234.232,
+      "text": "Read that as the technical statement it is."
+    },
+    {
+      "start": 1234.532,
+      "end": 1237.783,
+      "text": "It is not consolation and it is not a compliment."
+    },
+    {
+      "start": 1238.083,
+      "end": 1239.383,
+      "text": "It is a boundary."
+    },
+    {
+      "start": 1239.683,
+      "end": 1244.596,
+      "text": "The event was over before the profession that exists to stop it could physically be"
+    },
+    {
+      "start": 1244.596,
+      "end": 1245.07,
+      "text": "present."
+    },
+    {
+      "start": 1245.37,
+      "end": 1248.481,
+      "text": "Which is precisely why the sprinkler timing matters."
+    },
+    {
+      "start": 1248.781,
+      "end": 1252.357,
+      "text": "The thing that would have been there in thirty-three seconds was not a truck."
+    },
+    {
+      "start": 1252.657,
+      "end": 1253.679,
+      "text": "It was a pipe."
+    },
+    {
+      "start": 1254.279,
+      "end": 1257.019,
+      "text": "So which of those two changes would have mattered more?"
+    },
+    {
+      "start": 1257.319,
+      "end": 1262.05,
+      "text": "The report does not rank them and this programme will not either, because they are"
+    },
+    {
+      "start": 1262.05,
+      "end": 1263.031,
+      "text": "not alternatives."
+    },
+    {
+      "start": 1263.331,
+      "end": 1265.328,
+      "text": "They are the same finding twice."
+    },
+    {
+      "start": 1265.628,
+      "end": 1270.306,
+      "text": "One is about the time the room gives you, and the other is about how fast the room"
+    },
+    {
+      "start": 1270.306,
+      "end": 1270.876,
+      "text": "can empty."
+    },
+    {
+      "start": 1271.176,
+      "end": 1274.241,
+      "text": "Water at thirty-three seconds makes the deadline later."
+    },
+    {
+      "start": 1274.541,
+      "end": 1277.281,
+      "text": "A door twice as wide makes the queue shorter."
+    },
+    {
+      "start": 1277.581,
+      "end": 1282.004,
+      "text": "Either one moves the two numbers apart, and the whole of that night lives in the gap"
+    },
+    {
+      "start": 1282.004,
+      "end": 1282.689,
+      "text": "between them."
+    },
+    {
+      "start": 1282.989,
+      "end": 1285.497,
+      "text": "One hundred people lost their lives in the fire."
+    },
+    {
+      "start": 1285.797,
+      "end": 1290.311,
+      "text": "NIST names three direct contributors, and it is worth hearing all three in order,"
+    },
+    {
+      "start": 1290.311,
+      "end": 1294.713,
+      "text": "because most tellings of this night stop after the first word of the first one."
+    },
+    {
+      "start": 1295.013,
+      "end": 1298.171,
+      "text": "One: the hazardous mix of building contents."
+    },
+    {
+      "start": 1298.471,
+      "end": 1303.451,
+      "text": "Two: the inadequate capability to suppress the fire during its early stage of"
+    },
+    {
+      "start": 1303.451,
+      "end": 1303.904,
+      "text": "growth."
+    },
+    {
+      "start": 1304.204,
+      "end": 1309.239,
+      "text": "Three: the inability of the exits to handle all of the occupants in the short time"
+    },
+    {
+      "start": 1309.239,
+      "end": 1311.634,
+      "text": "available for such a fast-growing fire."
+    },
+    {
+      "start": 1311.934,
+      "end": 1312.863,
+      "text": "Contents."
+    },
+    {
+      "start": 1313.163,
+      "end": 1314.138,
+      "text": "Suppression."
+    },
+    {
+      "start": 1314.438,
+      "end": 1315.088,
+      "text": "Exits."
+    },
+    {
+      "start": 1315.388,
+      "end": 1317.524,
+      "text": "Not one of those three is a person."
+    },
+    {
+      "start": 1317.824,
+      "end": 1322.218,
+      "text": "And then the sentence in the report that is easiest to read past and hardest to"
+    },
+    {
+      "start": 1322.218,
+      "end": 1322.607,
+      "text": "answer."
+    },
+    {
+      "start": 1322.907,
+      "end": 1327.644,
+      "text": "Both of the 2003 editions of the major model building and fire codes have provisions"
+    },
+    {
+      "start": 1327.644,
+      "end": 1329.223,
+      "text": "that address these problems."
+    },
+    {
+      "start": 1329.523,
+      "end": 1331.659,
+      "text": "The codes of that year already said it."
+    },
+    {
+      "start": 1331.959,
+      "end": 1336.295,
+      "text": "NIST's recommendations are about closing the distance between what a code says and"
+    },
+    {
+      "start": 1336.295,
+      "end": 1337.3,
+      "text": "what a building is."
+    },
+    {
+      "start": 1337.6,
+      "end": 1342.294,
+      "text": "It asks that pyrotechnic devices be banned from indoor use in nightclubs that do not"
+    },
+    {
+      "start": 1342.294,
+      "end": 1344.194,
+      "text": "have a compliant sprinkler system."
+    },
+    {
+      "start": 1344.494,
+      "end": 1348.813,
+      "text": "It asks that the factor of safety used to set occupancy limits be increased."
+    },
+    {
+      "start": 1349.113,
+      "end": 1354.051,
+      "text": "And it lists, without adjectives, the ordinary behaviours that quietly disable a"
+    },
+    {
+      "start": 1354.051,
+      "end": 1359.113,
+      "text": "protective system: installing decorations that exceed the flame-spread provisions,"
+    },
+    {
+      "start": 1359.113,
+      "end": 1363.928,
+      "text": "exposing a building to strong ignition sources, exceeding the posted occupancy"
+    },
+    {
+      "start": 1363.928,
+      "end": 1368.804,
+      "text": "limits, temporarily blocking an exit, and disabling sprinklers for maintenance."
+    },
+    {
+      "start": 1369.104,
+      "end": 1373.957,
+      "text": "Every item on that list is a thing somebody does on a normal Tuesday, for a normal"
+    },
+    {
+      "start": 1373.957,
+      "end": 1376.442,
+      "text": "reason, in a building that is not on fire."
+    },
+    {
+      "start": 1376.742,
+      "end": 1381.014,
+      "text": "There is one more recommendation, and it is the most honest thing in the document."
+    },
+    {
+      "start": 1381.314,
+      "end": 1385.947,
+      "text": "NIST says there is a clear need to understand better how people and crowds behave in"
+    },
+    {
+      "start": 1385.947,
+      "end": 1390.36,
+      "text": "emergencies, in order to pinpoint the factors that lead to crowd crush — so that"
+    },
+    {
+      "start": 1390.36,
+      "end": 1393.063,
+      "text": "buildings can be designed to make it less likely."
+    },
+    {
+      "start": 1393.363,
+      "end": 1398.295,
+      "text": "Which is an official body saying, in print, that it does not yet know why a doorway"
+    },
+    {
+      "start": 1398.295,
+      "end": 1400.375,
+      "text": "does what a doorway did that night."
+    },
+    {
+      "start": 1400.675,
+      "end": 1403.978,
+      "text": "It is worth knowing how careful the modelling was, because the"
+    },
+    {
+      "start": 1403.978,
+      "end": 1407.548,
+      "text": "four-hundred-and-twenty figure is doing a lot of work in this film."
+    },
+    {
+      "start": 1407.848,
+      "end": 1412.315,
+      "text": "NIST ran the evacuation through two separate commercial packages, and had to decide"
+    },
+    {
+      "start": 1412.315,
+      "end": 1416.674,
+      "text": "where to put four hundred and twenty people inside the floor plan before it could"
+    },
+    {
+      "start": 1416.674,
+      "end": 1416.997,
+      "text": "start."
+    },
+    {
+      "start": 1417.297,
+      "end": 1421.737,
+      "text": "It assumed the dance floor and the area around the platform were at the maximum"
+    },
+    {
+      "start": 1421.737,
+      "end": 1426.401,
+      "text": "density the model codes allow - a little over two people per square metre - and the"
+    },
+    {
+      "start": 1426.401,
+      "end": 1430.672,
+      "text": "sun room and the raised area around the dance floor at about one and a half."
+    },
+    {
+      "start": 1430.972,
+      "end": 1436.346,
+      "text": "That is a crowded room, modelled honestly as a crowded room, at the number the code"
+    },
+    {
+      "start": 1436.346,
+      "end": 1437.706,
+      "text": "would have permitted."
+    },
+    {
+      "start": 1438.006,
+      "end": 1442.583,
+      "text": "And one last thing about how this report was written, which is not a finding and is"
+    },
+    {
+      "start": 1442.583,
+      "end": 1443.3,
+      "text": "in it anyway."
+    },
+    {
+      "start": 1443.6,
+      "end": 1448.054,
+      "text": "To understand who got out and why, investigators tracked individual people frame by"
+    },
+    {
+      "start": 1448.054,
+      "end": 1452.347,
+      "text": "frame across the video - from where they were standing when the foam lit, to the"
+    },
+    {
+      "start": 1452.347,
+      "end": 1453.956,
+      "text": "moment they left the building."
+    },
+    {
+      "start": 1454.256,
+      "end": 1456.067,
+      "text": "One man is followed the whole way."
+    },
+    {
+      "start": 1456.367,
+      "end": 1460.694,
+      "text": "The report says that his face has been blurred in the published figures in order to"
+    },
+    {
+      "start": 1460.694,
+      "end": 1461.893,
+      "text": "preserve his anonymity."
+    },
+    {
+      "start": 1462.193,
+      "end": 1467.036,
+      "text": "A federal technical report, in the middle of a fluid dynamics investigation,"
+    },
+    {
+      "start": 1467.036,
+      "end": 1470.413,
+      "text": "stopping to protect a survivor from being recognised."
+    },
+    {
+      "start": 1472.213,
+      "end": 1473.56,
+      "text": "Go back to the doorway."
+    },
+    {
+      "start": 1473.86,
+      "end": 1474.882,
+      "text": "It is empty."
+    },
+    {
+      "start": 1475.182,
+      "end": 1479.574,
+      "text": "The wide doors are propped, the vestibule is lit, and the single door beyond is"
+    },
+    {
+      "start": 1479.574,
+      "end": 1482.52,
+      "text": "standing open onto a room where a band is setting up."
+    },
+    {
+      "start": 1482.82,
+      "end": 1486.164,
+      "text": "That is what a building looks like when everything is correct."
+    },
+    {
+      "start": 1486.464,
+      "end": 1487.95,
+      "text": "It looks like a way in."
+    },
+    {
+      "start": 1488.55,
+      "end": 1490.5,
+      "text": "The foam was on the walls for sound."
+    },
+    {
+      "start": 1490.8,
+      "end": 1493.494,
+      "text": "The tables came out so more people could stand."
+    },
+    {
+      "start": 1493.794,
+      "end": 1497.045,
+      "text": "The vestibule was there so February stayed outside."
+    },
+    {
+      "start": 1497.345,
+      "end": 1500.039,
+      "text": "Nobody in that chain was doing anything unusual."
+    },
+    {
+      "start": 1500.339,
+      "end": 1505.289,
+      "text": "Each decision was small, sensible, and about something other than the night it"
+    },
+    {
+      "start": 1505.289,
+      "end": 1506.748,
+      "text": "turned out to be about."
+    },
+    {
+      "start": 1507.048,
+      "end": 1511.935,
+      "text": "And the arithmetic underneath all of them was the same arithmetic the whole time: a"
+    },
+    {
+      "start": 1511.935,
+      "end": 1516.645,
+      "text": "room holds as many people as it can put back outside, in the time the room gives"
+    },
+    {
+      "start": 1516.645,
+      "end": 1516.94,
+      "text": "them."
+    },
+    {
+      "start": 1517.24,
+      "end": 1518.215,
+      "text": "Ninety seconds."
+    },
+    {
+      "start": 1518.515,
+      "end": 1519.397,
+      "text": "One door."
+    },
+    {
+      "start": 1519.697,
+      "end": 1523.899,
+      "text": "Between a half and two thirds of everyone in the building, walking toward the way"
+    },
+    {
+      "start": 1523.899,
+      "end": 1524.573,
+      "text": "they came in."
+    },
+    {
+      "start": 1524.873,
+      "end": 1529.776,
+      "text": "Tonight, in a small venue somewhere, a fire officer is standing in a vestibule with"
+    },
+    {
+      "start": 1529.776,
+      "end": 1532.907,
+      "text": "a tape measure and a clipboard, working out a number."
+    },
+    {
+      "start": 1533.207,
+      "end": 1535.065,
+      "text": "The number is not about the room."
+    },
+    {
+      "start": 1535.365,
+      "end": 1536.619,
+      "text": "It is about the door."
+    }
+  ],
+  "graphics": [],
+  "figures": [
+    {
+      "start": 5.731,
+      "end": 8.731,
+      "kind": "lowerthird",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction, no real likenesses",
+      "_row": "invariant-11"
+    },
+    {
+      "start": 19.992,
+      "end": 22.992,
+      "kind": "kinetic",
+      "lines": [
+        "TWO DOORS OUTSIDE.",
+        "ONE DOOR INSIDE."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "ONE DOOR INSIDE."
+      ],
+      "_row": "ST-004"
+    },
+    {
+      "start": 41.56,
+      "end": 47.56,
+      "kind": "acttitle",
+      "title": "THE NARROWEST THING ON THE ROUTE OUT",
+      "kicker": "ACT ONE",
+      "index": 1,
+      "_row": "structure"
+    },
+    {
+      "start": 67.233,
+      "end": 73.233,
+      "kind": "kinetic",
+      "lines": [
+        "211 COWESETT AVENUE.",
+        "WEST WARWICK, RHODE ISLAND."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "WEST WARWICK, RHODE ISLAND."
+      ],
+      "_row": "ST-001"
+    },
+    {
+      "start": 92.906,
+      "end": 98.906,
+      "kind": "stat",
+      "value": 412,
+      "label": "square metres — call it a large barn",
+      "topLabel": "THE BUILDING",
+      "_row": "ST-001"
+    },
+    {
+      "start": 118.579,
+      "end": 124.579,
+      "kind": "kinetic",
+      "lines": [
+        "SINGLE STOREY. WOOD FRAME.",
+        "NO SPRINKLERS."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "NO SPRINKLERS."
+      ],
+      "_row": "ST-001"
+    },
+    {
+      "start": 144.253,
+      "end": 150.253,
+      "kind": "stat",
+      "value": 3,
+      "label": "exits were available to the people inside",
+      "topLabel": "THREE WAYS OUT",
+      "_row": "ST-002"
+    },
+    {
+      "start": 169.926,
+      "end": 175.926,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "FRONT MAIN ENTRANCE",
+          "value": 2
+        },
+        {
+          "label": "WEST DOOR",
+          "value": 1
+        },
+        {
+          "label": "EAST DOOR",
+          "value": 1
+        }
+      ],
+      "_row": "ST-002"
+    },
+    {
+      "start": 195.599,
+      "end": 201.599,
+      "kind": "kinetic",
+      "lines": [
+        "THERE WAS A FOURTH DOOR.",
+        "NOT ACCESSIBLE TO PATRONS."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "NOT ACCESSIBLE TO PATRONS."
+      ],
+      "_row": "ST-003"
+    },
+    {
+      "start": 221.272,
+      "end": 227.272,
+      "kind": "quote",
+      "quote": "The rate of egress from the main entrance was limited by the single doorway inside the vestibule — not by the double doors visible from the outside.",
+      "attribution": "NIST, in a single line, on the front entrance",
+      "_row": "ST-004"
+    },
+    {
+      "start": 246.945,
+      "end": 252.945,
+      "kind": "kinetic",
+      "lines": [
+        "A VESTIBULE IS AN AIR LOCK.",
+        "IT IS A GOOD PIECE OF BUILDING."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "IT IS A GOOD PIECE OF BUILDING."
+      ],
+      "_row": "ST-005"
+    },
+    {
+      "start": 272.619,
+      "end": 278.619,
+      "kind": "kinetic",
+      "lines": [
+        "AND IT IS THE NARROWEST THING",
+        "ON THE ROUTE OUT."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "ON THE ROUTE OUT."
+      ],
+      "_row": "ST-004"
+    },
+    {
+      "start": 298.292,
+      "end": 304.292,
+      "kind": "stat",
+      "value": 15,
+      "label": "seconds to ignite the non-fire-retarded foam",
+      "topLabel": "LESS THAN",
+      "_row": "ST-203"
+    },
+    {
+      "start": 323.965,
+      "end": 329.965,
+      "kind": "kinetic",
+      "lines": [
+        "THE FIRE-RETARDED FOAM.",
+        "IT DID NOT IGNITE AT ALL."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "IT DID NOT IGNITE AT ALL."
+      ],
+      "_row": "ST-204"
+    },
+    {
+      "start": 349.638,
+      "end": 355.638,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "NON-FLAME-RETARDED FOAM",
+          "value": 600
+        },
+        {
+          "label": "FLAME-RETARDED FOAM",
+          "value": 453
+        }
+      ],
+      "_row": "ST-217"
+    },
+    {
+      "start": 375.312,
+      "end": 381.312,
+      "kind": "stat",
+      "value": 41,
+      "label": "seconds for the wood panelling to reach sustained ignition",
+      "topLabel": "THE CONE CALORIMETER",
+      "_row": "ST-217"
+    },
+    {
+      "start": 400.985,
+      "end": 406.985,
+      "kind": "stat",
+      "value": 8,
+      "label": "seconds after the pyrotechnic display was initiated, the alcove foam ignited",
+      "topLabel": "FROM THE NIGHT ITSELF",
+      "_row": "ST-801"
+    },
+    {
+      "start": 426.658,
+      "end": 432.658,
+      "kind": "stat",
+      "value": 95,
+      "label": "percent of the fuel load was the wood structure and panelling",
+      "suffix": "%",
+      "topLabel": "OVER",
+      "_row": "ST-006"
+    },
+    {
+      "start": 452.331,
+      "end": 458.331,
+      "kind": "kinetic",
+      "lines": [
+        "THE FOAM WAS NOT THE FIRE.",
+        "THE FOAM WAS THE IGNITION."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "THE FOAM WAS THE IGNITION."
+      ],
+      "_row": "ST-006"
+    },
+    {
+      "start": 482.345,
+      "end": 488.345,
+      "kind": "acttitle",
+      "title": "THE LIMIT IS A STATEMENT ABOUT THE DOORS",
+      "kicker": "ACT TWO",
+      "index": 2,
+      "_row": "structure"
+    },
+    {
+      "start": 497.698,
+      "end": 503.698,
+      "kind": "kinetic",
+      "lines": [
+        "AN OCCUPANT LIMIT",
+        "IS ARITHMETIC TIED TO THE EXITS."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "IS ARITHMETIC TIED TO THE EXITS."
+      ],
+      "_row": "ST-102"
+    },
+    {
+      "start": 513.051,
+      "end": 519.051,
+      "kind": "kinetic",
+      "lines": [
+        "IF THE DOORS DO NOT CHANGE,",
+        "THE NUMBER CANNOT HONESTLY CHANGE."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "THE NUMBER CANNOT HONESTLY CHANGE."
+      ],
+      "_row": "ST-102"
+    },
+    {
+      "start": 528.405,
+      "end": 534.405,
+      "kind": "stat",
+      "value": 225,
+      "label": "was the occupant load identified in a 1981 application",
+      "topLabel": "1981",
+      "_row": "ST-103"
+    },
+    {
+      "start": 543.758,
+      "end": 549.758,
+      "kind": "stat",
+      "value": 253,
+      "label": "was the occupant load in the fire department memorandum",
+      "topLabel": "30 DECEMBER 1999",
+      "_row": "ST-104"
+    },
+    {
+      "start": 559.111,
+      "end": 565.111,
+      "kind": "stat",
+      "value": 317,
+      "label": "was the allowance the same memorandum granted",
+      "topLabel": "AND THEN",
+      "_row": "ST-105"
+    },
+    {
+      "start": 574.465,
+      "end": 580.465,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "1981 APPLICATION",
+          "value": 225
+        },
+        {
+          "label": "1999 MEMORANDUM",
+          "value": 253
+        },
+        {
+          "label": "THE ALLOWANCE",
+          "value": 317
+        },
+        {
+          "label": "2003 MODEL CODES",
+          "value": 420
+        }
+      ],
+      "_row": "ST-102"
+    },
+    {
+      "start": 589.818,
+      "end": 595.818,
+      "kind": "kinetic",
+      "lines": [
+        "TAKE THE TABLES OUT",
+        "AND MORE PEOPLE FIT."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "AND MORE PEOPLE FIT."
+      ],
+      "_row": "ST-105"
+    },
+    {
+      "start": 605.171,
+      "end": 611.171,
+      "kind": "kinetic",
+      "lines": [
+        "THE CONSTRAINT IS NOT THE FLOOR.",
+        "IT IS THE DOOR."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "IT IS THE DOOR."
+      ],
+      "_row": "ST-004"
+    },
+    {
+      "start": 620.525,
+      "end": 626.525,
+      "kind": "kinetic",
+      "lines": [
+        "AND NOBODY",
+        "MOVED THE DOOR."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "MOVED THE DOOR."
+      ],
+      "_row": "ST-004"
+    },
+    {
+      "start": 635.878,
+      "end": 641.878,
+      "kind": "stat",
+      "value": 420,
+      "label": "was the occupant limit under the 2003 model codes for a building like this",
+      "topLabel": "THE CODES OF THE YEAR",
+      "_row": "ST-102"
+    },
+    {
+      "start": 651.232,
+      "end": 657.232,
+      "kind": "kinetic",
+      "lines": [
+        "REPORTED THAT NIGHT.",
+        "440 TO 458."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "440 TO 458."
+      ],
+      "_row": "ST-101"
+    },
+    {
+      "start": 666.585,
+      "end": 672.585,
+      "kind": "kinetic",
+      "lines": [
+        "NEWS MEDIA REPORTS.",
+        "AND THE ATTORNEY GENERAL'S OFFICE."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "AND THE ATTORNEY GENERAL'S OFFICE."
+      ],
+      "_row": "ST-106"
+    },
+    {
+      "start": 681.938,
+      "end": 687.938,
+      "kind": "stat",
+      "value": 144,
+      "label": "occupants visible across four still frames of the club's video",
+      "topLabel": "NIST TRIED TO COUNT",
+      "_row": "ST-107"
+    },
+    {
+      "start": 697.292,
+      "end": 703.292,
+      "kind": "kinetic",
+      "lines": [
+        "NIST CANNOT SAY WHEN",
+        "THAT SEQUENCE WAS RECORDED."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "THAT SEQUENCE WAS RECORDED."
+      ],
+      "_row": "ST-107"
+    },
+    {
+      "start": 712.645,
+      "end": 718.645,
+      "kind": "kinetic",
+      "lines": [
+        "EVERY ONE OF THOSE NUMBERS",
+        "WAS FOR A FRONT EXIT ONE DOOR WIDE."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "ONE DOOR WIDE."
+      ],
+      "_row": "ST-403"
+    },
+    {
+      "start": 727.998,
+      "end": 733.998,
+      "kind": "kinetic",
+      "lines": [
+        "ENOUGH PEOPLE, PROPERLY TRAINED,",
+        "TO GO AND LOOK."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "TO GO AND LOOK."
+      ],
+      "_row": "ST-606"
+    },
+    {
+      "start": 754.637,
+      "end": 760.637,
+      "kind": "acttitle",
+      "title": "THE CLOCK, AND THE OTHER CLOCK",
+      "kicker": "ACT THREE",
+      "index": 3,
+      "_row": "structure"
+    },
+    {
+      "start": 773.562,
+      "end": 779.562,
+      "kind": "stat",
+      "value": 24,
+      "label": "seconds — the first patrons recognise the danger",
+      "topLabel": "FROM IGNITION",
+      "_row": "ST-301"
+    },
+    {
+      "start": 792.486,
+      "end": 798.486,
+      "kind": "stat",
+      "value": 30,
+      "label": "seconds — the bulk of the crowd begins to move",
+      "topLabel": "FROM IGNITION",
+      "_row": "ST-302"
+    },
+    {
+      "start": 811.411,
+      "end": 817.411,
+      "kind": "kinetic",
+      "lines": [
+        "SIX SECONDS BETWEEN THE FIRST PERSON",
+        "AND MOST OF THE ROOM."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "AND MOST OF THE ROOM."
+      ],
+      "_row": "ST-302"
+    },
+    {
+      "start": 830.336,
+      "end": 836.336,
+      "kind": "stat",
+      "value": 71,
+      "label": "seconds — people are leaving in a steady stream",
+      "topLabel": "ONE MINUTE ELEVEN",
+      "_row": "ST-304"
+    },
+    {
+      "start": 849.26,
+      "end": 855.26,
+      "kind": "kinetic",
+      "lines": [
+        "THE EVACUATION IS WORKING.",
+        "THERE IS A STREAM. IT IS MOVING."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "IT IS MOVING."
+      ],
+      "_row": "ST-304"
+    },
+    {
+      "start": 868.185,
+      "end": 874.185,
+      "kind": "stat",
+      "value": 90,
+      "label": "seconds — the front exit becomes blocked with people",
+      "topLabel": "ABOUT ONE MINUTE THIRTY",
+      "_row": "ST-305"
+    },
+    {
+      "start": 887.109,
+      "end": 893.109,
+      "kind": "stat",
+      "value": 102,
+      "label": "seconds — the crush at the front exit is on the recording",
+      "topLabel": "ONE MINUTE FORTY-TWO",
+      "_row": "ST-306"
+    },
+    {
+      "start": 906.034,
+      "end": 912.034,
+      "kind": "stat",
+      "value": 90,
+      "label": "seconds to untenable temperatures on the dance floor",
+      "topLabel": "NIST'S SIMULATION",
+      "_row": "ST-310"
+    },
+    {
+      "start": 924.959,
+      "end": 930.959,
+      "kind": "kinetic",
+      "lines": [
+        "120 DEGREES CELSIUS.",
+        "OR OXYGEN BELOW TWELVE PERCENT."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "OR OXYGEN BELOW TWELVE PERCENT."
+      ],
+      "_row": "ST-312"
+    },
+    {
+      "start": 943.883,
+      "end": 949.883,
+      "kind": "stat",
+      "value": 1000,
+      "label": "degrees in ten seconds, from ordinary room conditions",
+      "topLabel": "THE SUN ROOM",
+      "_row": "ST-311"
+    },
+    {
+      "start": 962.808,
+      "end": 968.808,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "UNTENABLE AT, SEC",
+          "value": 90
+        },
+        {
+          "label": "CRUSH ON VIDEO AT, SEC",
+          "value": 102
+        }
+      ],
+      "_row": "ST-306"
+    },
+    {
+      "start": 981.732,
+      "end": 987.732,
+      "kind": "kinetic",
+      "lines": [
+        "THE BLOCKAGE AND THE DEADLINE",
+        "ARE TWELVE SECONDS APART."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "TWELVE SECONDS APART."
+      ],
+      "_row": "ST-310"
+    },
+    {
+      "start": 1000.657,
+      "end": 1006.657,
+      "kind": "kinetic",
+      "lines": [
+        "BETWEEN 56 AND 66 PER CENT",
+        "TRIED THE SINGLE MAIN ENTRANCE."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "TRIED THE SINGLE MAIN ENTRANCE."
+      ],
+      "_row": "ST-401"
+    },
+    {
+      "start": 1019.582,
+      "end": 1025.582,
+      "kind": "kinetic",
+      "lines": [
+        "THE CRUSH DID NOT HAPPEN OUTSIDE.",
+        "IT HAPPENED INSIDE THE VESTIBULE."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "IT HAPPENED INSIDE THE VESTIBULE."
+      ],
+      "_row": "ST-802"
+    },
+    {
+      "start": 1038.506,
+      "end": 1044.506,
+      "kind": "quote",
+      "quote": "The crush there almost entirely disrupted the flow through the main exit, and many people became stuck in the prone position in the exterior double doors.",
+      "attribution": "The report, on where the flow stopped",
+      "_row": "ST-802"
+    },
+    {
+      "start": 1057.431,
+      "end": 1063.431,
+      "kind": "kinetic",
+      "lines": [
+        "MORE THAN A THIRD OF EVERYONE WHO GOT OUT",
+        "DID NOT USE A DOOR."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "DID NOT USE A DOOR."
+      ],
+      "_row": "ST-803"
+    },
+    {
+      "start": 1088.466,
+      "end": 1094.466,
+      "kind": "acttitle",
+      "title": "RUN THE NIGHT AGAIN, WITH ONE THING CHANGED",
+      "kicker": "ACT FOUR",
+      "index": 4,
+      "_row": "structure"
+    },
+    {
+      "start": 1112.611,
+      "end": 1118.611,
+      "kind": "kinetic",
+      "lines": [
+        "THE FIRST CHANGE",
+        "WAS WATER."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "WAS WATER."
+      ],
+      "_row": "ST-501"
+    },
+    {
+      "start": 1136.755,
+      "end": 1142.755,
+      "kind": "stat",
+      "value": 33,
+      "label": "seconds after ignition, the first sprinkler above the platform would have activated",
+      "topLabel": "THE UNSPRINKLERED TEST",
+      "_row": "ST-501"
+    },
+    {
+      "start": 1160.9,
+      "end": 1166.9,
+      "kind": "kinetic",
+      "lines": [
+        "NINE SECONDS AFTER",
+        "THE FIRST PERSON REALISED."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "THE FIRST PERSON REALISED."
+      ],
+      "_row": "ST-501"
+    },
+    {
+      "start": 1185.045,
+      "end": 1191.045,
+      "kind": "kinetic",
+      "lines": [
+        "THE SECOND CHANGE",
+        "WAS THE DOOR."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "WAS THE DOOR."
+      ],
+      "_row": "ST-502"
+    },
+    {
+      "start": 1209.19,
+      "end": 1215.19,
+      "kind": "quote",
+      "quote": "Doubling the entrance door width brought the number of people still inside the building at ninety seconds back down to the range of the baseline scenario.",
+      "attribution": "NIST's evacuation model, reported plainly",
+      "_row": "ST-502"
+    },
+    {
+      "start": 1233.335,
+      "end": 1239.335,
+      "kind": "kinetic",
+      "lines": [
+        "THE MODEL IS NOT DESCRIBING A MIRACLE.",
+        "IT IS DESCRIBING WIDTH."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "IT IS DESCRIBING WIDTH."
+      ],
+      "_row": "ST-502"
+    },
+    {
+      "start": 1257.481,
+      "end": 1263.481,
+      "kind": "stat",
+      "value": 400,
+      "label": "metres away was the fire brigade",
+      "topLabel": "WHERE WAS THE FIRE BRIGADE",
+      "_row": "ST-705"
+    },
+    {
+      "start": 1281.626,
+      "end": 1287.626,
+      "kind": "stat",
+      "value": 40,
+      "label": "seconds after ignition, the first 911 call reporting a fire",
+      "topLabel": "LESS THAN",
+      "_row": "ST-701"
+    },
+    {
+      "start": 1305.771,
+      "end": 1311.771,
+      "kind": "stat",
+      "value": 2,
+      "label": "people on the first engine — one firefighter and one fire officer",
+      "topLabel": "THE STAFFING",
+      "_row": "ST-704"
+    },
+    {
+      "start": 1329.916,
+      "end": 1335.916,
+      "kind": "compbars",
+      "items": [
+        {
+          "label": "ADDITIONAL COMPANIES",
+          "value": 7
+        },
+        {
+          "label": "AMBULANCES REQUESTED",
+          "value": 12
+        }
+      ],
+      "_row": "ST-708"
+    },
+    {
+      "start": 1354.061,
+      "end": 1360.061,
+      "kind": "quote",
+      "quote": "Given the hazardous mix of materials in The Station and the lack of installed sprinklers, nothing that the fire department could have done that night would have saved the building from the fast-growing fire.",
+      "attribution": "NIST, closing the question in one sentence",
+      "_row": "ST-710"
+    },
+    {
+      "start": 1378.206,
+      "end": 1384.206,
+      "kind": "kinetic",
+      "lines": [
+        "THE THING THAT WOULD HAVE BEEN THERE",
+        "IN THIRTY-THREE SECONDS WAS A PIPE."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "WAS A PIPE."
+      ],
+      "_row": "ST-501"
+    },
+    {
+      "start": 1402.351,
+      "end": 1408.351,
+      "kind": "stat",
+      "value": 100,
+      "label": "people lost their lives in the fire",
+      "topLabel": "IN THE FIRE",
+      "_row": "ST-601"
+    },
+    {
+      "start": 1426.495,
+      "end": 1432.495,
+      "kind": "kinetic",
+      "lines": [
+        "CONTENTS. SUPPRESSION. EXITS.",
+        "NOT ONE OF THOSE THREE IS A PERSON."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "NOT ONE OF THOSE THREE IS A PERSON."
+      ],
+      "_row": "ST-602"
+    },
+    {
+      "start": 1450.64,
+      "end": 1456.64,
+      "kind": "quote",
+      "quote": "Both of the 2003 editions of the major model building and fire codes have provisions that address these problems.",
+      "attribution": "The report, in the sentence easiest to read past",
+      "_row": "ST-603"
+    },
+    {
+      "start": 1485.939,
+      "end": 1491.939,
+      "kind": "kinetic",
+      "lines": [
+        "NINETY SECONDS.",
+        "ONE DOOR."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "ONE DOOR."
+      ],
+      "_row": "ST-310"
+    },
+    {
+      "start": 1513.392,
+      "end": 1519.392,
+      "kind": "lowerthird",
+      "lines": [
+        "THE NUMBER IS NOT ABOUT THE ROOM.",
+        "IT IS ABOUT THE DOOR."
+      ],
+      "style": "emphasis",
+      "emphasisWords": [
+        "IT IS ABOUT THE DOOR."
+      ],
+      "_row": "ST-004",
+      "primary": "AI-assisted visualization",
+      "secondary": "symbolic reconstruction, no real likenesses"
+    }
+  ],
+  "overlays": [],
+  "leadSeconds": 0.0,
+  "openingVariant": "overlay"
+}
