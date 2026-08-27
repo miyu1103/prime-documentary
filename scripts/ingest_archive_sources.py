@@ -1586,12 +1586,17 @@ def src_ia(ledger: Ledger, theme: str, limit: int, dry_run: bool) -> int:
             licurl = str(meta.get("licenseurl", "") or "")
             colls = meta.get("collection", [])
             colls = [colls] if isinstance(colls, str) else colls
-            if "/zero/" in licurl or "cc0" in licurl.lower():
-                decision, raw = "cc0", licurl
-            elif "publicdomain" in licurl:
-                decision, raw = "pd", licurl
-            elif any("prelinger" in c.lower() for c in colls):
+            # An Internet Archive item's `licenseurl` is typed by whoever uploaded the file.
+            # It is a claim, not a licence, and this branch used to believe it outright. Measured
+            # 2026-08-27, that is how a Blu-ray remux of a 1964 feature, `Killer Klowns From Outer
+            # Space 1988 1080p`, `Robocop: The Animated Series`, a New Kids On The Block concert
+            # and a 2017 McDonald's advertisement all entered the shelf marked usable -- 590 rows,
+            # the same mechanism that let Sesame Street in on 2026-08-25. Only a curated COLLECTION
+            # is evidence; the uploader's own field now sends the item to review.
+            if any("prelinger" in c.lower() for c in colls):
                 decision, raw = "pd", f"collection:prelinger (Prelinger Archives public domain); licenseurl={licurl}"
+            elif licurl:
+                decision, raw = "review_required", f"uploader-asserted licenseurl={licurl}; collections={colls[:4]}"
             else:
                 decision, raw = "review_required", f"licenseurl={licurl}; collections={colls[:4]}"
             subj = meta.get("subject", [])
