@@ -435,3 +435,13 @@ are rendered but NOT shippable**: EP81's own thumbnail says "100 COUNTS." and
 `check_packaging_claims` rejects it against EP81's own ledger ("no charge, no plea, no sentence").
 Long-form titles for EP78-82 were written this session and are **provisional pending owner approval**
 — changing one means re-rendering its three Shorts.
+
+**[2026-08-27 — i2v lane EP78-82](handover/2026-08-27-i2v-ep78-82.md)** — **EP80 concordia 納品済み
+(181本・saturation exit 0・`_depth` 0)**。`scripts/_chain_i2v_ep78_82.sh` が切り離しプロセスとして
+生存中で、station→valdez→colgan→alaska261 を自動で流す(実測 3.08分/本・8/28 21:20 完了見込み)。
+**機械がやらないのは4つ**: 話数ごとの全数プレート対照QC(`qc_i2v_tail_vs_plate.py` — 機械ゲートは
+「何が写っているか」を一度も見ない。keybridge は既定プロンプトで 30/112=27% に人物が湧いた)、
+設計レーンの reject を `motion/rejected/` へ退避、隔離板(concordia **N093**)の振り直し、納品連絡。
+罠: **GPU は1枚**でロックを消して割り込むと両方壊れる(EP77 と取り合って10時間後退)/フレームを
+0枚しか出さない毒プレートが次チャンクの先頭に居座る/`set -u` の `local a=$1 b=${a}` で無言死。
+起動前に `_chain_i2v_ep78_82.sh --selftest`。
