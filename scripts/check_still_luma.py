@@ -45,11 +45,26 @@ BRIGHT_MEAN = 225.0
 FLAT_STDEV = 12.0
 
 
-def measure(path: Path) -> tuple[float, float]:
+# A human reviewer rejected EP81 station's S080 on 2026-08-27: mean 6.1, but stdev 15.6,
+# because a single red exit lamp and a table edge lifted the spread past the flatness test
+# above. 90.7 per cent of its pixels are below luma 16 -- on screen it is a black frame with a
+# smear in it. Spread is the wrong instrument for that; the SHARE of the frame that is black
+# is the right one, and it needs no companion test.
+DARK_PIXEL = 16
+BRIGHT_PIXEL = 239
+MOSTLY_FRACTION = 0.85
+
+
+def measure(path: Path) -> tuple[float, float, float, float]:
+    """mean, stdev, fraction of pixels that are near-black, fraction that are near-white."""
     with Image.open(path) as im:
         g = im.convert("L")
         st = ImageStat.Stat(g)
-        return st.mean[0], st.stddev[0]
+        hist = g.histogram()
+        total = sum(hist) or 1
+        dark = sum(hist[: DARK_PIXEL + 1]) / total
+        bright = sum(hist[BRIGHT_PIXEL:]) / total
+        return st.mean[0], st.stddev[0], dark, bright
 
 
 def stills_in_cuts(film: dict) -> dict[str, list[str]]:
@@ -83,14 +98,20 @@ def run(film_path: Path, slug: str) -> int:
         if p is None:
             missing.append(name)
             continue
-        mean, stdev = measure(p)
-        rows.append((mean, stdev, name, cuts))
+        mean, stdev, dark, bright = measure(p)
+        rows.append((mean, stdev, dark, bright, name, cuts))
     rows.sort()
 
     bad = []
-    for mean, stdev, name, cuts in rows:
+    for mean, stdev, dark, bright, name, cuts in rows:
         why = None
-        if mean < DARK_MEAN and stdev < FLAT_STDEV:
+        if dark >= MOSTLY_FRACTION:
+            why = (f"{dark*100:.1f}% of the frame is below luma {DARK_PIXEL} "
+                   f"-- a black frame, whatever else is in it")
+        elif bright >= MOSTLY_FRACTION:
+            why = (f"{bright*100:.1f}% of the frame is above luma {BRIGHT_PIXEL} "
+                   f"-- a blank frame, whatever else is in it")
+        elif mean < DARK_MEAN and stdev < FLAT_STDEV:
             why = (f"mean {mean:.1f} < {DARK_MEAN} and stdev {stdev:.1f} < {FLAT_STDEV} "
                    f"-- an empty dark ground, not a picture")
         elif mean > BRIGHT_MEAN and stdev < FLAT_STDEV:
@@ -128,18 +149,27 @@ def selftest() -> int:
             ("white_ground.png", Image.new("RGB", (256, 144), (243, 243, 240)), True),
             ("dark_photo.png", None, False),     # dark but textured -- must PASS
             ("normal_photo.png", None, False),
+            # The real S080 shape: nearly all black, but one bright object lifts the spread
+            # past the flatness test. Must FAIL on the dark-share rule alone.
+            ("black_with_a_lamp.png", None, True),
         ]
         import random
         rnd = random.Random(7)
         for name, img, should_fail in cases:
-            if img is None:
+            if img is None and name == "black_with_a_lamp.png":
+                img = Image.new("RGB", (256, 144), (4, 4, 5))
+                for y in range(60, 76):
+                    for x in range(120, 136):
+                        img.putpixel((x, y), (250, 40, 40))
+            elif img is None:
                 base = 30 if name.startswith("dark") else 130
                 img = Image.new("RGB", (256, 144))
                 img.putdata([(max(0, min(255, base + rnd.randint(-60, 60))),) * 3
                              for _ in range(256 * 144)])
             img.save(d / name)
-            mean, stdev = measure(d / name)
-            flagged = ((mean < DARK_MEAN or mean > BRIGHT_MEAN) and stdev < FLAT_STDEV)
+            mean, stdev, dark, bright = measure(d / name)
+            flagged = (dark >= MOSTLY_FRACTION or bright >= MOSTLY_FRACTION
+                       or ((mean < DARK_MEAN or mean > BRIGHT_MEAN) and stdev < FLAT_STDEV))
             verdict = "PASS" if flagged == should_fail else "SELFTEST FAILED"
             if flagged != should_fail:
                 ok = False
