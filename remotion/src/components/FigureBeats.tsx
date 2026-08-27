@@ -57,7 +57,7 @@ import {FIGURE_REGISTRY, HinderLane} from './hinders';
 export type FigureSpec =
   | {start: number; end: number; kind: 'stat'; value: number; prefix?: string; suffix?: string; decimals?: number; label: string; topLabel?: string}
   | {start: number; end: number; kind: 'timeline'; events: {year: string; text: string}[]}
-  | {start: number; end: number; kind: 'bar'; data?: {label: string; value: number}[]; items?: {label: string; value: number}[]}
+  | {start: number; end: number; kind: 'bar'; title?: string; data?: {label: string; value: number}[]; items?: {label: string; value: number}[]}
   // --- carsearch / motionkit "moving diagram" tier (real components rendered full-screen) ---
   | {start: number; end: number; kind: 'brightline'; mode?: 'draw' | 'hold' | 'slam'}
   | {start: number; end: number; kind: 'carcutaway'; mode?: 'all' | 'big' | 'small'; zones?: string[]}
@@ -358,7 +358,7 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
                   />
                 )}
                 {b.kind === 'timeline' && <Timeline accent={accent} events={b.events} dur={dur} />}
-                {b.kind === 'bar' && <BarChart accent={accent} data={b.data ?? b.items ?? []} dur={dur} />}
+                {b.kind === 'bar' && <BarChart accent={accent} data={b.data ?? b.items ?? []} dur={dur} title={b.title} />}
                 {/* carsearch / motionkit components: each self-contained full-screen scene, dur in frames */}
                 {b.kind === 'brightline' && <BrightLine mode={b.mode} dur={dur} />}
                 {b.kind === 'carcutaway' && <CarCutaway mode={b.mode} zones={b.zones} dur={dur} />}

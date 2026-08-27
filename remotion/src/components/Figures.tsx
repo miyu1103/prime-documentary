@@ -248,7 +248,18 @@ export const BarChart: React.FC<{
   data: {label: string; value: number}[];
   unit?: string;
   dur: number;
-}> = ({accent, data, unit = '', dur}) => {
+  /**
+   * The heading above the bars. It used to be the literal string
+   * "FORFEITURE CASES / YEAR", hardcoded here, so EVERY episode drawing a bar chart
+   * got a civil-forfeiture caption whatever its subject was. Found 2026-08-27 in the
+   * shipped frames of EP73 uri at 14:32-14:36, where bars correctly labelled
+   * "Held below 59.4 Hz" and "The nine-minute threshold" sat under a heading about
+   * forfeiture cases. `.claude/rules/remotion-motion.md` already forbids hardcoding a
+   * specific case into a component; this was the violation.
+   * Omitted -> no heading, which is the safe default: silence beats a wrong label.
+   */
+  title?: string;
+}> = ({accent, data, unit = '', dur, title}) => {
   const frame = useCurrentFrame();
   const {fps, width} = useVideoConfig();
   const {opacity, y} = sceneFade(frame, dur);
@@ -263,9 +274,11 @@ export const BarChart: React.FC<{
 
   return (
     <AbsoluteFill style={{opacity, transform: `translateY(${y}px)`}}>
-      <div style={{position: 'absolute', top: 150, left: 220}}>
-        <MaskTitle text="FORFEITURE CASES / YEAR" fps={fps} start={0.1} size={40} weight={600} color={INK2} />
-      </div>
+      {title ? (
+        <div style={{position: 'absolute', top: 150, left: 220}}>
+          <MaskTitle text={title} fps={fps} start={0.1} size={40} weight={600} color={INK2} />
+        </div>
+      ) : null}
       <svg width={width} height={1080} style={{position: 'absolute', inset: 0}}>
         {/* ベースライン（抑えた軸） */}
         <line x1={200} y1={baseY} x2={width - 200} y2={baseY} stroke={MUTED} strokeWidth={2} opacity={0.5} />
