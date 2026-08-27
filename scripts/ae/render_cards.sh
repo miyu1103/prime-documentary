@@ -34,7 +34,12 @@ python - "$JOBS_SRC" "$AE_DIR/jobs.json" $ONLY <<'PY'
 import json, sys
 src, dst = sys.argv[1], sys.argv[2]
 only = set(sys.argv[3:])
-KNOWN = {"hero_number", "title_card", "quote_card", "list_build"}
+# The nine kinds ADR-0011 declares, and the exact set kinetic_card.jsx dispatches by name. Adding
+# a kind here without adding a `cardX` to the jsx is the failure this guard exists to stop: the
+# jsx now THROWS on an unknown kind (-> "FAILED" in the log -> the render below never starts), so
+# the two lists cannot drift into a silently empty card. Do not add a name speculatively.
+KNOWN = {"hero_number", "title_card", "quote_card", "list_build",
+         "comparison", "timeline", "system_map", "map_move", "document_blowup"}
 jobs = json.load(open(src, encoding="utf-8"))
 if only:
     jobs = [j for j in jobs if j["id"] in only]
@@ -56,6 +61,12 @@ for id in $ids; do rm -f "$AE_DIR/out/$id.avi" "$AE_DIR/out/$id.webm"; done
 rm -f "$AE_DIR/kinetic.log" "$AE_DIR/kinetic.aep"
 
 echo "== build =="
+# ADR-0011's crash trap: a force-killed AE leaves PriorSafeMode.txt, and the crash-recovery dialog
+# then blocks EVERY later launch, including -noui ones -- the process sits there with no window to
+# dismiss until it is killed, which leaves the file behind again. Clearing it is the only thing
+# that breaks the loop, and it costs nothing when AE exited cleanly.
+find "$HOME/AppData/Roaming/Adobe/After Effects" -name "PriorSafeMode*.txt" -delete 2>/dev/null || true
+
 "$AE" -noui -r "$JSX" || true
 cat "$AE_DIR/kinetic.log"
 grep -q "FAILED" "$AE_DIR/kinetic.log" && { echo "BUILD FAILED - not rendering"; exit 1; }

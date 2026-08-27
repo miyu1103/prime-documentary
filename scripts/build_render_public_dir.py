@@ -37,7 +37,11 @@ PUBLIC = ROOT / "remotion" / "public"
 SLIM = ROOT / "remotion" / "public_slim"
 # EP50 has two i2v generations (motion + motion2) and a real-stock pool; a pool that is not
 # listed here is silently absent from the bundle and 404s mid-render.
-POOL_DIRS = ("img", "motion", "motion2", "factory", "overlay", "stock")
+# "ae" is the After Effects plate pool (ADR-0011, from EP77): transparent .webm cards that
+# CaseFilm composites over the body via film.json's `aeBeats`. It is listed here for exactly
+# the reason above -- an unlinked plate is not in the bundle, 404s mid-render, and verify()
+# below used to be blind to it because it only walked cuts[].src.
+POOL_DIRS = ("img", "motion", "motion2", "factory", "overlay", "stock", "ae")
 # referenced by literal name inside the compositions -> absent from film.json's src list
 STATIC_ASSETS = ("banner_sunrise.png",)
 FONT_FILES = ("Anton.ttf", "Archivo.ttf", "Oswald.ttf", "LICENSE_FONTS.md")
@@ -80,10 +84,17 @@ def verify(out: Path, slug: str) -> list[str]:
         problems.append(f"missing {slug}/narration.mp3")
     film = ROOT / "remotion" / "src" / "data" / f"{slug}_film.json"
     if film.exists():
-        srcs = {c["src"] for c in json.loads(film.read_text(encoding="utf-8"))["cuts"]}
+        data = json.loads(film.read_text(encoding="utf-8"))
+        srcs = {c["src"] for c in data["cuts"]}
         absent = [s for s in sorted(srcs) if not (out / s).is_file()]
         if absent:
             problems.append(f"{len(absent)} film.json srcs absent e.g. {absent[:3]}")
+        # AE plates are referenced from `aeBeats`, never from cuts[], so the check above cannot
+        # see them. Without this an unstaged plate 404s mid-render with a green pre-flight.
+        ae_srcs = {b["src"] for b in (data.get("aeBeats") or []) if b.get("src")}
+        ae_absent = [s for s in sorted(ae_srcs) if not (out / s).is_file()]
+        if ae_absent:
+            problems.append(f"{len(ae_absent)} film.json aeBeats srcs absent e.g. {ae_absent[:3]}")
     return problems
 
 

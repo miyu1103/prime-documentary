@@ -17,6 +17,7 @@ Classification by filename prefix under remotion/public/<slug>/:
   motion/*.mp4  -> motion   (i2v)
   factory/*.mp4 -> factory  (stock / staged real footage)
   overlay/*.mp4 -> overlay  (particles, light leaks; composited, never a cut)
+  ae/*.webm     -> ae       (ADR-0011 After Effects plates; composited via aeBeats, never a cut)
 
 Every entry is size-checked against the pre-render gate's own black-stub floor (50KB) AND
 content-checked by sampling a real frame's mean luma, so a manifest that passes here cannot
@@ -163,6 +164,12 @@ def main() -> int:
         print(f"  [depth-companion] {slug}/motion/{_p.name} -- excluded: renderer input, never a picture")
     factory = scan(base / "factory", (".mp4", ".mov", ".webm"))
     overlay = scan(base / "overlay", (".mp4", ".mov", ".webm"))
+    # ADR-0011 (from EP77): an AE card is a PLATE and is "registered like any other asset".
+    # Scanned exactly like the three video pools above; it is never a cut, it is composited by
+    # CaseFilm's aeBeats layer. allow_dark is not a relaxation here -- an alpha plate is mostly
+    # TRANSPARENT, so its decoded RGB luma is legitimately near zero and the black-video rule
+    # (written for dead i2v renders) would demote every card ever made.
+    ae = scan(base / "ae", (".webm", ".mov", ".mp4"))
 
     # Which plates ARE the people plates is declared by the episode, not guessed from a filename.
     declared_people: set[str] = set()
@@ -307,6 +314,7 @@ def main() -> int:
     factory_e, factory_dark = videos(factory, "F", "factory")
     overlay_e, _ = videos(overlay, "O", "overlay", allow_dark=True)
     overlay_e += motion_dark + factory_dark
+    ae_e, _ = videos(ae, "A", "ae", allow_dark=True)
 
     kept_motion_stems = {Path(row["public_path"]).stem for row in motion_e}
     for p in motion_source_candidates:
@@ -324,13 +332,14 @@ def main() -> int:
         "source_of_truth": f"filesystem scan of remotion/public/{slug}",
         "content_checked": check_content,
         "counts": {"stills": len(stills), "people": len(people), "motion": len(motion_e),
-                   "factory": len(factory_e), "overlay": len(overlay_e),
+                   "factory": len(factory_e), "overlay": len(overlay_e), "ae": len(ae_e),
                    "rejected": len(rejected)},
         "stills": stills + people,     # people are stills too; role distinguishes them
         "people": people,
         "motion": motion_e,
         "factory": factory_e,
         "overlay": overlay_e,
+        "ae": ae_e,                    # ADR-0011 plates: composited by aeBeats, never a cut
         "rejected": rejected,          # kept for audit: what was excluded and why
         "dark_by_design": dark_by_design,  # below the luma floor and KEPT, with the measurement
     }
@@ -347,7 +356,7 @@ def main() -> int:
     cap_video = (len(motion_e) + len(factory_e)) * 2
     supports_min = cap_video / 0.68 * 4.6 / 60
     print(f"[{slug}] stills={len(stills)} people={len(people)} motion={len(motion_e)} "
-          f"factory={len(factory_e)} overlay={len(overlay_e)} rejected={len(rejected)} "
+          f"factory={len(factory_e)} overlay={len(overlay_e)} ae={len(ae_e)} rejected={len(rejected)} "
           f"(skipped {skipped_src} M-source plates)")
     print(f"[{slug}] video capacity at reuse<=2: {cap_video} cuts "
           f"-> supports up to ~{int(cap_video / 0.68)} total cuts / ~{supports_min:.1f} min")

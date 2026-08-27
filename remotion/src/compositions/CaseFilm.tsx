@@ -81,6 +81,14 @@ export type FilmData = {
   // above the graded body and below the captions. OPTIONAL: episodes without heroCuts (carsearch
   // etc.) are unaffected (the map runs over []).
   heroCuts?: {start: number; dur: number; src: string}[];
+  /** After Effects PLATES (ADR-0011, from EP77). Each is a transparent .webm card rendered by
+   * scripts/ae/render_cards.sh and staged at remotion/public/<slug>/ae/. Remotion only CUTS it
+   * in: nothing here invokes or requires After Effects, and a film that does not declare the
+   * key gains no element (the layer returns null), so all 54 existing *_film.json render
+   * bit-identical. Shape and semantics are Short.tsx's `kineticBeats` verbatim -- the same
+   * field on the same kind of asset, so there is one AE-plate compositor, not two (invariant 14).
+   * Times are body-relative seconds, the same clock cuts[].start uses. */
+  aeBeats?: {src: string; atSec: number; durSec: number; phrase?: string}[];
   /** SPEC v2 row 9 (owner decision 2026-08-10, "66話から"): the narrator speaks from frame 0.
    * Seconds from the start of the film at which the Body sequence -- and the <Audio> master
    * inside it -- begins. EP66 declares 0. OPT-IN AND NULLABLE ON PURPOSE: when an episode does
@@ -544,6 +552,41 @@ const HeroCut: React.FC<{src: string; index: number; dur: number}> = ({src, inde
   );
 };
 
+/** Composites the After Effects plates over the body, under the caption band (ADR-0011).
+ *
+ *  This is `Short.tsx`'s KineticBeatLayer, unchanged — the Shorts line has composited AE plates
+ *  this way for ~70 episodes, so long-form uses the proven body rather than a second mechanism.
+ *
+ *  `transparent` is not optional: without it Remotion's frame extractor decodes the WebM without
+ *  its alpha plane and the plate arrives as type on a BLACK card that hides the picture. The
+ *  alpha itself is verified upstream by scripts/ae/verify_cards.py (alpha_mode=1).
+ *
+ *  Deliberately NOT routed through the per-cut `overlay` field: that path is a light-leak
+ *  compositor (opacity 0.28, plus-lighter blend, objectFit cover, no `transparent`), so type sent
+ *  through it arrives faint, additively blended and with its alpha discarded. And deliberately NOT
+ *  `heroCuts`: that path adds a Ken-Burns push that would drift a 1920×1080 type card's glyphs out
+ *  of the safe area. Hence: no objectFit, no mixBlendMode, no opacity, no transform. */
+const AeBeatLayer: React.FC<{beats?: FilmData['aeBeats']}> = ({beats}) => {
+  const {fps} = useVideoConfig();
+  if (!beats || beats.length === 0) return null;
+  return (
+    <>
+      {beats.map((b, i) => (
+        <Sequence
+          key={`ae-${b.src}-${i}`}
+          from={Math.round(b.atSec * fps)}
+          durationInFrames={Math.max(1, Math.round(b.durSec * fps))}
+          name={`ae-${i}`}
+        >
+          <AbsoluteFill style={{pointerEvents: 'none'}}>
+            <OffthreadVideo src={staticFile(b.src)} transparent muted style={{width: '100%', height: '100%'}} />
+          </AbsoluteFill>
+        </Sequence>
+      ))}
+    </>
+  );
+};
+
 /** BODY GRADE — one consistent cinematic wash laid over the WHOLE body (stills, footage AND
  * motion-graphics) so the three visual registers share a single noir-navy/teal world. Sits above
  * every visual layer but BELOW the captions so text stays crisp. Two very-low-opacity layers:
@@ -849,6 +892,9 @@ export const CaseFilm: React.FC<{data: FilmData; seriesLabel: string; title: str
             <HeroCut src={h.src} index={i} dur={Math.max(1, Math.round(h.dur * fps))} />
           </Sequence>
         ))}
+        {/* AE plates (ADR-0011): full-frame transparent cards over the graded picture and under
+            the captions — the same stack position Shorts use. No-op for films without aeBeats. */}
+        <AeBeatLayer beats={data.aeBeats} />
         <Captions cues={data.captions} />
         {/* EP49: grain 0.11 -> 0.06 (its default). At 0.11 it added to the milky veil; 0.06 still
             gives a unique-per-frame full-frame delta (freezedetect floor now that DriftLight's

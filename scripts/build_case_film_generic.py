@@ -725,6 +725,54 @@ def duration_frames(narration_seconds: float, hook_sec: float,
 
 
 # ------------------------------------------------------------------ main
+def build_ae_beats(placement: Path, slug: str, total: float) -> list[dict] | None:
+    """ADR-0011: resolve a per-episode AE placement file into film.json's `aeBeats`.
+
+    Returns None when the episode declares no placement file at all -- an absent key must stay
+    absent, exactly like `leadSeconds`, so no existing film gains an element. Returns a list
+    (possibly EMPTY) when a placement file exists: on a machine with no After Effects and an
+    empty remotion/public/<slug>/ae/, every id drops and the film renders exactly as it does
+    today. After Effects is never invoked here or at render time; this reads two things, a json
+    and the webm files already on disk.
+
+    It deliberately does NOT write `externalKineticBeats`. That key is counted by
+    check_motion_density.py:184 and check_animation_mix.py:228 and is rendered by NOTHING
+    (`grep -rn externalKineticBeats remotion/src` returns nothing), so writing it turns the
+    animation-density gate green over a blank screen. `aeBeats` is read by CaseFilm.tsx's
+    AeBeatLayer and draws.
+    """
+    if not placement.is_file():
+        return None
+    doc = load_json(placement)
+    rows = doc.get("beats") if isinstance(doc, dict) else doc
+    beats: list[dict] = []
+    for row in rows or []:
+        bid = str(row["id"])
+        rel = f"{slug}/ae/{bid}.webm"
+        if not (ROOT / "remotion" / "public" / rel).is_file():
+            print(f"  [ae] {bid}: no plate on disk -- dropped ({rel})", file=sys.stderr)
+            continue
+        at, dur = float(row["atSec"]), float(row["durSec"])
+        if at < 0 or dur <= 0:
+            raise SystemExit(f"{slug}: ae beat {bid} has atSec={at} durSec={dur}")
+        if at + dur > total:
+            raise SystemExit(
+                f"{slug}: ae beat {bid} ends at {at + dur:.2f}s, past the {total:.2f}s body")
+        beat = {"src": rel, "atSec": round(at, 3), "durSec": round(dur, 3)}
+        if row.get("phrase"):
+            beat["phrase"] = str(row["phrase"])
+        beats.append(beat)
+    beats.sort(key=lambda b: b["atSec"])
+    # Two full-frame type cards on screen at once is never intended and is invisible to every
+    # gate, so it stops here rather than in the render.
+    for prev, nxt in zip(beats, beats[1:]):
+        if nxt["atSec"] < prev["atSec"] + prev["durSec"]:
+            raise SystemExit(
+                f"{slug}: ae plates overlap -- {prev['src']} runs to "
+                f"{prev['atSec'] + prev['durSec']:.2f}s, {nxt['src']} starts {nxt['atSec']:.2f}s")
+    return beats
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--config", type=Path, required=True)
@@ -732,6 +780,9 @@ def main() -> int:
     ap.add_argument("--narr", type=Path, default=None)
     ap.add_argument("--out", type=Path, default=None)
     ap.add_argument("--captions", type=Path, default=None)
+    ap.add_argument("--ae-placement", type=Path, default=None,
+                    help="AE plate placement json (ADR-0011). Default: "
+                         "episodes/<EPID>/08_edit/ae_placement.v001.json when it exists.")
     ap.add_argument("--dry-run", action="store_true")
     a = ap.parse_args()
 
@@ -743,6 +794,8 @@ def main() -> int:
     narr_p = a.narr or Path(cfg.get("narration_index") or ep_dir / "06_audio" / "narration_index.v001.json")
     out = a.out or Path(cfg.get("out") or ROOT / "remotion" / "src" / "data" / f"{slug}_film.json")
     srt = a.captions or Path(cfg.get("captions") or ep_dir / "08_edit" / "captions.final.v001.srt")
+    ae_placement = a.ae_placement or Path(
+        cfg.get("ae_placement") or ep_dir / "08_edit" / "ae_placement.v001.json")
 
     manifest = load_json(assets)
     if manifest.get("is_stub") is True:
@@ -813,6 +866,11 @@ def main() -> int:
     }
     if lead_sec is not None:
         film["leadSeconds"] = lead_sec
+    # ADR-0011 AE plates. Written ONLY when the episode declares a placement file, for the same
+    # reason leadSeconds is: an absent key must stay absent so no existing film gains an element.
+    ae_beats = build_ae_beats(ae_placement, slug, total)
+    if ae_beats is not None:
+        film["aeBeats"] = ae_beats
     # EP66 PACKAGING v001 sections 4 and 7: which FORM of the channel opening this film places.
     # Written only when the filmconfig declares it, because CaseFilm.tsx reads an absent key as
     # the historical full-screen card -- EP62-65's film.json must not gain the key.
@@ -843,6 +901,10 @@ def main() -> int:
         "duration_sec_with_bookends": round(total_frames / FPS, 2),
         "sections": order,
     }
+    # Reported only when the episode declares AE plates, so the build manifest of an episode
+    # without them is byte-identical to the one already on disk (immutability, rule 12).
+    if ae_beats is not None:
+        report["ae_beats"] = len(ae_beats)
     if a.dry_run:
         print(json.dumps(report, ensure_ascii=False, indent=2))
         return 0

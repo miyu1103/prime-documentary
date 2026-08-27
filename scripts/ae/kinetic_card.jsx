@@ -13,11 +13,22 @@
 // So: same traps, same primitives, different frame. If a third frame size ever appears, THAT is
 // the moment to extract a shared library -- not before.
 //
-// KINDS (the four the episode order books ask for that are buildable from type alone):
-//   hero_number   big + optional label + rule        -- the film's largest fact
-//   title_card    big alone                          -- a date or a section title
-//   quote_card    a verbatim sentence + attribution  -- wrapped by MEASUREMENT, never by guess
-//   list_build    headline + lines arriving in turn  -- e.g. the four counts of an indictment
+// KINDS -- all nine ADR-0011 declares. The first four were built 2026-08-26; the last five were
+// added 2026-08-27 and are what turns `render_cards.sh`'s by-name refusal from a wall into a gate.
+//   hero_number      big + optional label + rule        -- the film's largest fact
+//   title_card       big alone                          -- a date or a section title
+//   quote_card       a verbatim sentence + attribution  -- wrapped by MEASUREMENT, never by guess
+//   list_build       headline + lines arriving in turn  -- e.g. the four counts of an indictment
+//   comparison       two columns, a drawn divider       -- value_a vs value_b and their evidence
+//   timeline         a drawn spine + staggered nodes    -- two or more sourced moments in order
+//   system_map       chained panels + drawn connectors  -- "this, then this, then this"
+//   map_move         a marker that TRAVELS to a target  -- a distance, shown as distance
+//   document_blowup  a detail frame that magnifies      -- draws NO glyphs inside the frame, ever
+//
+// document_blowup and the fabricated_record class: the frame's interior is built from abstract
+// bars and ticks and the card's meaning is carried by type OUTSIDE the frame. There is no code
+// path that puts a character inside the magnifier, so the card cannot render a readable document
+// even if an episode's copy asks it to. That is a structural guarantee, not a review step.
 //
 // Job file C:/temp/ae/jobs.json, evaluated (ExtendScript has no JSON object):
 //   [{"id":"keybridge_ae001","kind":"hero_number","seconds":8,
@@ -182,6 +193,162 @@ function mkRule(comp, cy, widthPct, t0, t1) {
     return s;
 }
 
+// ------------------------------------------------------- primitives shared by the five new kinds
+
+function fmtVal(v, prefix, suffix) {
+    // A number arrives as a JSON number (JOBS_FORMAT v001: a string arrives on screen as NaN).
+    // Thousands separators from 10000 up, because $103078056 is unreadable and $103,078,056 is not.
+    if (v === undefined || v === null) return null;
+    var s;
+    if (typeof v === "number" && v === Math.floor(v) && Math.abs(v) >= 10000) {
+        var neg = v < 0, d = String(Math.abs(v)), out = "";
+        for (var i = 0; i < d.length; i++) {
+            if (i > 0 && (d.length - i) % 3 === 0) out += ",";
+            out += d.charAt(i);
+        }
+        s = (neg ? "-" : "") + out;
+    } else {
+        s = String(v);
+    }
+    return (prefix || "") + s + (suffix || "");
+}
+
+function enterUp(layer, cx, cy, t0, dy, opTarget) {
+    // The house entrance: a rise INTO place, eased, with opacity riding along. Opacity alone is
+    // banned -- a card whose type only fades in reads as a slide, not as a film.
+    dy = (dy === undefined) ? 40 : dy;
+    var p = layer.property("Transform").property("Position");
+    p.setValueAtTime(t0, [Math.round(cx), Math.round(cy) + dy]);
+    p.setValueAtTime(t0 + 0.34, [Math.round(cx), Math.round(cy)]);
+    bez(p);
+    var o = layer.property("Transform").property("Opacity");
+    o.setValueAtTime(t0, 0);
+    o.setValueAtTime(t0 + 0.20, (opTarget === undefined) ? 100 : opTarget);
+    return layer;
+}
+
+function enterSide(layer, cx, cy, t0, dx, opTarget) {
+    // For two-column layouts, where each side arriving from its own edge is what says "two things".
+    var p = layer.property("Transform").property("Position");
+    p.setValueAtTime(t0, [Math.round(cx) + dx, Math.round(cy)]);
+    p.setValueAtTime(t0 + 0.38, [Math.round(cx), Math.round(cy)]);
+    bez(p);
+    var o = layer.property("Transform").property("Opacity");
+    o.setValueAtTime(t0, 0);
+    o.setValueAtTime(t0 + 0.20, (opTarget === undefined) ? 100 : opTarget);
+    return layer;
+}
+
+function punch(layer, t0, from) {
+    var sc = layer.property("Transform").property("Scale");
+    var f = from || 124;
+    sc.setValueAtTime(t0, [f, f]);
+    sc.setValueAtTime(t0 + 0.36, [100, 100]);
+    bez(sc);
+    return layer;
+}
+
+function headlineIn(comp, str, y, size, t0) {
+    var tl = mkText(comp, str, size, W / 2, y);
+    enterUp(tl, W / 2, y, t0, 34);
+    maskReveal(tl, t0, t0 + 0.40);
+    if (y < SAFE_TOP) log("WARN headline y=" + y + " above safe area");
+    return tl;
+}
+
+function mkBar(comp, xLeft, cy, w, h, op, name) {
+    // Anchored on its own LEFT edge so a scale in x draws the bar rightward from xLeft. addSolid
+    // rejects a non-integer size outright, so every dimension is rounded before it gets here.
+    w = Math.max(1, Math.round(w));
+    h = Math.max(1, Math.round(h));
+    var s = comp.layers.addSolid([1, 1, 1], name || "bar", w, h, 1.0);
+    s.property("Transform").property("Anchor Point").setValue([0, h / 2]);
+    s.property("Transform").property("Position").setValue([Math.round(xLeft), Math.round(cy)]);
+    s.property("Transform").property("Opacity").setValue(op === undefined ? 100 : op);
+    s.motionBlur = true;
+    return s;
+}
+
+function growX(layer, t0, t1) {
+    var sc = layer.property("Transform").property("Scale");
+    sc.setValueAtTime(t0, [0, 100]);
+    sc.setValueAtTime(t1, [100, 100]);
+    bez(sc);
+    return layer;
+}
+
+function mkVBar(comp, cx, cy, w, h, op, name) {
+    w = Math.max(1, Math.round(w));
+    h = Math.max(1, Math.round(h));
+    var s = comp.layers.addSolid([1, 1, 1], name || "vbar", w, h, 1.0);
+    s.property("Transform").property("Position").setValue([Math.round(cx), Math.round(cy)]);
+    s.property("Transform").property("Opacity").setValue(op === undefined ? 100 : op);
+    s.motionBlur = true;
+    return s;
+}
+
+function growY(layer, t0, t1) {
+    var sc = layer.property("Transform").property("Scale");
+    sc.setValueAtTime(t0, [100, 0]);
+    sc.setValueAtTime(t1, [100, 100]);
+    bez(sc);
+    return layer;
+}
+
+function mkPanel(comp, cx, cy, w, h, op, t0) {
+    // A dark plate behind ONE node of a chain, so a system map reads as objects rather than as
+    // free-floating words. It rises with its own type instead of fading, same rule as the text.
+    w = Math.max(1, Math.round(w));
+    h = Math.max(1, Math.round(h));
+    var s = comp.layers.addSolid([0, 0, 0], "panel", w, h, 1.0);
+    var p = s.property("Transform").property("Position");
+    p.setValueAtTime(t0, [Math.round(cx), Math.round(cy) + 30]);
+    p.setValueAtTime(t0 + 0.34, [Math.round(cx), Math.round(cy)]);
+    bez(p);
+    var o = s.property("Transform").property("Opacity");
+    o.setValueAtTime(t0, 0);
+    o.setValueAtTime(t0 + 0.26, (op === undefined) ? 46 : op);
+    return s;
+}
+
+function mkFrameOutline(comp, cx, cy, w, h, thick) {
+    // One layer, two masks: an outer rect ADDed and an inner rect SUBTRACTed leaves an outline.
+    // One layer matters -- the whole frame can then be scaled as a group by scaling that layer,
+    // with no null and no parenting. Mask vertices are in LAYER space (the trap at the top).
+    w = Math.max(4, Math.round(w));
+    h = Math.max(4, Math.round(h));
+    thick = Math.max(1, Math.round(thick || 6));
+    var s = comp.layers.addSolid([1, 1, 1], "frame", w, h, 1.0);
+    s.property("Transform").property("Position").setValue([Math.round(cx), Math.round(cy)]);
+    var outer = s.Masks.addProperty("Mask");
+    var so = new Shape();
+    so.vertices = [[0, 0], [w, 0], [w, h], [0, h]];
+    so.closed = true;
+    outer.property("maskPath").setValue(so);
+    var inner = s.Masks.addProperty("Mask");
+    var si = new Shape();
+    si.vertices = [[thick, thick], [w - thick, thick], [w - thick, h - thick], [thick, h - thick]];
+    si.closed = true;
+    inner.property("maskPath").setValue(si);
+    inner.maskMode = MaskMode.SUBTRACT;
+    s.motionBlur = true;
+    return s;
+}
+
+function centredLines(comp, items, t0, cy, size, lineH, maxW, id) {
+    // A short staggered block under a drawing. Not cardList's routine: that one is left-aligned
+    // against a tick column because a list of criminal counts is a list. This is a caption block
+    // under a diagram, where centring under the thing it describes is what makes it belong to it.
+    for (var i = 0; i < items.length; i++) {
+        var txt = items[i].t || items[i];
+        var y = cy + i * lineH;
+        if (y > SAFE_BOT) log("WARN " + id + " caption line " + i + " y=" + y + " below safe area");
+        var tl = mkText(comp, txt, size, W / 2, y, maxW);
+        enterUp(tl, W / 2, y, t0 + 0.20 * i, 24);
+    }
+    return cy + (items.length - 1) * lineH;
+}
+
 function exitAll(comp, dur) {
     // Everything leaves together, upward, 0.34 s before the overlay ends. Without an exit the
     // type pops off on a hard cut, which is the single thing that makes an overlay look bolted on.
@@ -343,14 +510,286 @@ function cardList(comp, job, dur) {
     exitAll(comp, dur);
 }
 
+function cardComparison(comp, job, dur) {
+    // Two things, side by side, arriving from their own edges with a divider drawn between them.
+    // The headline is SPLIT on " / " into the two column labels rather than sat on top: both real
+    // orders write it that way ("IN PORT / UNDER WAY"), and a label over its own column is what
+    // makes the two numbers a comparison instead of two unrelated facts.
+    var parts = (job.headline || "").split(" / ");
+    var labA = null, labB = null, topHead = null;
+    if (parts.length === 2) { labA = parts[0]; labB = parts[1]; }
+    else if (job.headline) { topHead = job.headline; }
+
+    var items = job.lines || [];
+    var la = job.linesA, lb = job.linesB;
+    if (!la || !lb) {
+        var half = Math.ceil(items.length / 2);
+        la = items.slice(0, half);
+        lb = items.slice(half);
+    }
+
+    var sa = fmtVal(job.value_a, job.prefixA || job.prefix, job.suffixA || job.suffix);
+    var sb = fmtVal(job.value_b, job.prefixB || job.prefix, job.suffixB || job.suffix);
+    // A card whose two sides are on different scales is the defect that ships silently: 43.7
+    // (millions) beside 103,078,056 (dollars) under one suffix is a false comparison. Warn with
+    // the measured ratio; the fix belongs in the episode's jobs file, not here.
+    if (typeof job.value_a === "number" && typeof job.value_b === "number"
+        && !job.suffixA && !job.suffixB && job.value_a > 0 && job.value_b > 0) {
+        var r = job.value_b / job.value_a;
+        if (r < 1) r = 1 / r;
+        if (r > 1000) log("WARN " + job.id + " comparison sides differ by " + Math.round(r)
+                          + "x under one suffix -- check both are on the same scale");
+    }
+
+    var dy = topHead ? 56 : 0;
+    var yLab = 250 + dy, yNum = 424 + dy, yLine0 = 582 + dy;
+    var colW = 780, cxA = 496, cxB = 1424, lineH = 54;
+    if (topHead) headlineIn(comp, topHead, 194, 58, 0.00);
+
+    var maxRows = Math.max(la.length, lb.length);
+    var cols = [{lab: labA, val: sa, rows: la, cx: cxA, dx: -70, t: 0.16},
+                {lab: labB, val: sb, rows: lb, cx: cxB, dx: 70, t: 0.30}];
+    for (var c = 0; c < cols.length; c++) {
+        var col = cols[c];
+        if (col.lab) {
+            var lt = mkText(comp, col.lab, 54, col.cx, yLab, colW);
+            enterSide(lt, col.cx, yLab, col.t, col.dx);
+        }
+        if (col.val) {
+            var nt = mkText(comp, col.val, 132, col.cx, yNum, colW);
+            enterSide(nt, col.cx, yNum, col.t + 0.14, col.dx);
+            punch(nt, col.t + 0.14);
+        }
+        for (var i = 0; i < col.rows.length; i++) {
+            var y = yLine0 + i * lineH;
+            if (y > SAFE_BOT) log("WARN " + job.id + " column line " + i + " y=" + y);
+            var rt = mkText(comp, col.rows[i].t || col.rows[i], 38, col.cx, y, colW);
+            enterUp(rt, col.cx, y, col.t + 0.46 + 0.20 * i, 22);
+        }
+    }
+
+    var top = yLab - 66, bot = yLine0 + Math.max(0, maxRows - 1) * lineH + 42;
+    growY(mkVBar(comp, W / 2, (top + bot) / 2, 4, bot - top, 70), 0.10, 0.58);
+    mkScrim(comp, (top + bot) / 2, (bot - top) / 2 + 150, 0.00).moveToEnd();
+    exitAll(comp, dur);
+}
+
+function cardTimeline(comp, job, dur) {
+    // A drawn spine with its moments hung under it in order. The spine draws left to right BEFORE
+    // any node appears, so the eye has somewhere to put them; the nodes then land in sequence,
+    // which is the whole point of a timeline over a list.
+    var items = job.lines || [];
+    var n = Math.max(1, items.length);
+    headlineIn(comp, job.headline, 214, 62, 0.00);
+
+    var hasVal = (job.value !== undefined && job.value !== null);
+    if (hasVal) {
+        var bigStr = fmtVal(job.value, job.prefix, job.suffix);
+        var big = mkText(comp, bigStr, 150, W / 2, 396);
+        enterUp(big, W / 2, 396, 0.26, 30);
+        punch(big, 0.26, 118);
+    }
+    var spineY = hasVal ? 588 : 496;
+    var x0 = 210, x1 = 1710, span = x1 - x0;
+    growX(mkBar(comp, x0, spineY, span, 5, 40, "spine"), 0.22, 0.78);
+
+    var nodeW = Math.floor(span / n) - 40;
+    for (var i = 0; i < n; i++) {
+        var cx = Math.round(x0 + span * (i + 0.5) / n);
+        var t0 = 0.62 + 0.46 * i;
+        // dot on the spine, then a stem down to its own words -- the node is attached to the line,
+        // not merely near it
+        var dot = mkVBar(comp, cx, spineY, 22, 22, 100, "node");
+        punch(dot, t0, 10);
+        var od = dot.property("Transform").property("Opacity");
+        od.setValueAtTime(t0, 0);
+        od.setValueAtTime(t0 + 0.10, 100);
+        var stem = mkVBar(comp, cx, spineY + 34, 3, 44, 65, "stem");
+        growY(stem, t0 + 0.10, t0 + 0.34);
+
+        var blk = fitBlock(comp, items[i].t || items[i], 46, nodeW, 2);
+        var lh = Math.round(blk.size * 1.24);
+        for (var k = 0; k < blk.lines.length; k++) {
+            var y = spineY + 82 + k * lh;
+            if (y > SAFE_BOT) log("WARN " + job.id + " node " + i + " line " + k + " y=" + y);
+            var tl = mkText(comp, blk.lines[k], blk.size, cx, y, nodeW);
+            enterUp(tl, cx, y, t0 + 0.16 + 0.08 * k, 26);
+        }
+    }
+    mkScrim(comp, (214 + spineY + 120) / 2, (spineY + 120 - 214) / 2 + 170, 0.00).moveToEnd();
+    exitAll(comp, dur);
+}
+
+function cardSystemMap(comp, job, dur) {
+    // "This, then this, then this." Each stage is a panel that rises with its own words, and the
+    // CONNECTOR between two stages draws only after the earlier one has landed -- so the card
+    // performs the sequence rather than presenting a finished diagram.
+    var items = job.lines || [];
+    var n = Math.max(1, items.length);
+    var head = headlineIn(comp, job.headline, 200, 58, 0.00);
+    mkRule(comp, 200 + head.__rect.height / 2 + 36, 30, 0.16, 0.48);
+
+    // boxH was 300 and the gutter 44 on the first cut. In the QC frame the top edge rules sat 150
+    // px above their own words and read as three underlines of nothing, and the 44 px connectors
+    // were so short the verifier reported the connector zone EMPTY. 216 puts the edge rule just
+    // above the type it heads; 72 makes the connector a link you can see.
+    var xa = 130, span = 1660, gutter = 72;
+    var boxW = Math.floor((span - gutter * (n - 1)) / n);
+    // 216 with the block centred on boxY put a four-line node's first line hard against the edge
+    // rule. 250, with the block centred 18 px low, leaves ~60 px of headroom under the rule for
+    // the tallest node the fitter will produce (four lines) and still reads as one row of panels.
+    var boxH = 250, boxY = 480, textY = boxY + 18;
+    for (var i = 0; i < n; i++) {
+        var cx = Math.round(xa + boxW / 2 + i * (boxW + gutter));
+        var t0 = 0.40 + 0.62 * i;
+        mkPanel(comp, cx, boxY, boxW, boxH, 46, t0);
+        growX(mkBar(comp, cx - boxW / 2, boxY - boxH / 2, boxW, 5, 90, "edge"), t0 + 0.10, t0 + 0.40);
+
+        var blk = fitBlock(comp, items[i].t || items[i], 42, boxW - 60, 4);
+        var lh = Math.round(blk.size * 1.28);
+        var top = textY - (blk.lines.length - 1) * lh / 2;
+        for (var k = 0; k < blk.lines.length; k++) {
+            var y = Math.round(top + k * lh);
+            var tl = mkText(comp, blk.lines[k], blk.size, cx, y, boxW - 60);
+            enterUp(tl, cx, y, t0 + 0.12 + 0.07 * k, 26);
+        }
+        if (i < n - 1) {
+            growX(mkBar(comp, cx + boxW / 2, boxY, gutter, 6, 80, "connector"),
+                  t0 + 0.42, t0 + 0.62);
+        }
+    }
+
+    var bot = boxY + boxH / 2;
+    if (job.attribution) {
+        // KB-406 is the United States' account to a grand jury, not a finding. The attribution is
+        // not decoration: without it the panels state a design promise as established fact.
+        var attY = bot + 62;
+        var att = mkText(comp, job.attribution, 42, W / 2, attY);
+        enterUp(att, W / 2, attY, 0.40 + 0.62 * n, 22);
+        if (attY > SAFE_BOT) log("WARN " + job.id + " attribution y=" + attY + " below safe area");
+        bot = attY;
+    }
+    mkScrim(comp, (200 + bot) / 2, (bot - 200) / 2 + 150, 0.00).moveToEnd();
+    exitAll(comp, dur);
+}
+
+function cardMapMove(comp, job, dur) {
+    // A distance shown as a distance. A marker leaves its start and TRAVELS toward the target on
+    // an eased move with motion blur, and only when it stops does the bracket close between the
+    // two -- so the number lands on a gap the viewer has just watched shrink.
+    headlineIn(comp, job.headline, 200, 58, 0.00);
+    // 150 pt at y 372 put the number's descenders into the target's deck in the QC frame. 130 at
+    // 340 clears it with room, and the number is still the largest thing on the card.
+    var bigStr = fmtVal(job.value, job.prefix, job.suffix);
+    if (bigStr) {
+        var big = mkText(comp, bigStr, 130, W / 2, 340);
+        enterUp(big, W / 2, 340, 1.62, 30);
+        punch(big, 1.62, 118);
+    }
+
+    var trackY = 560, xStart = 240, xStop = 1180, xTarget = 1616;
+    growX(mkBar(comp, 150, trackY, 1620, 6, 26, "track"), 0.16, 0.66);
+
+    // The target: a deck carried on an upright that stands ON the track, not through it. The
+    // first cut ran the upright from 95 px above the line to 95 below and it read as a T with the
+    // water crossing it. Abstract on purpose -- a recognisable structure would be a depiction
+    // (invariant 11), and this card's own `forbid` bars stating a length.
+    var post = mkVBar(comp, xTarget, trackY - 50, 8, 100, 90, "target");
+    growY(post, 0.34, 0.62);
+    var deck = mkBar(comp, xTarget - 130, trackY - 98, 260, 10, 95, "deck");
+    growX(deck, 0.44, 0.70);
+
+    // the mover
+    var ship = mkVBar(comp, xStart, trackY, 150, 40, 100, "mover");
+    var so = ship.property("Transform").property("Opacity");
+    so.setValueAtTime(0.46, 0);
+    so.setValueAtTime(0.62, 100);
+    var sp = ship.property("Transform").property("Position");
+    sp.setValueAtTime(0.46, [xStart - 90, trackY]);
+    sp.setValueAtTime(0.66, [xStart, trackY]);
+    sp.setValueAtTime(1.86, [xStop, trackY]);
+    bez(sp);
+    ship.motionBlur = true;
+
+    // The gap, bracketed only after the move stops. gapR lands ON the upright rather than 8 px
+    // short of it, where the tick and the post read as two marks fighting for the same edge.
+    var gapL = xStop + 78, gapR = xTarget, gapY = 648;
+    growX(mkBar(comp, gapL, gapY, gapR - gapL, 4, 85, "gap"), 1.92, 2.20);
+    growY(mkVBar(comp, gapL, gapY, 4, 30, 85, "tick"), 1.92, 2.10);
+    growY(mkVBar(comp, gapR, gapY, 4, 30, 85, "tick"), 2.06, 2.24);
+
+    var bot = 648;
+    if (job.lines && job.lines.length) {
+        bot = centredLines(comp, job.lines, 2.20, 720, 42, 56, 1500, job.id);
+    }
+    mkScrim(comp, (200 + bot) / 2, (bot - 200) / 2 + 150, 0.00).moveToEnd();
+    exitAll(comp, dur);
+}
+
+function cardDocBlowup(comp, job, dur) {
+    // A magnification, not a document. The frame starts small and off-centre and eases up to full
+    // size; inside it are ABSTRACT bars, one of which is picked out by calipers. Nothing that can
+    // be read is ever drawn inside the frame -- see the header note on fabricated_record.
+    headlineIn(comp, job.headline, 206, 58, 0.00);
+
+    var fx = 960, fy = 424, fw = 940, fh = 300;
+    var frame = mkFrameOutline(comp, fx, fy, fw, fh, 6);
+    var fp = frame.property("Transform").property("Position");
+    fp.setValueAtTime(0.00, [fx - 130, fy + 62]);
+    fp.setValueAtTime(0.62, [fx, fy]);
+    bez(fp);
+    var fs = frame.property("Transform").property("Scale");
+    fs.setValueAtTime(0.00, [34, 34]);
+    fs.setValueAtTime(0.62, [100, 100]);
+    bez(fs);
+    var fo = frame.property("Transform").property("Opacity");
+    fo.setValueAtTime(0.00, 0);
+    fo.setValueAtTime(0.18, 100);
+
+    var barX = fx - fw / 2 + 40;
+    var widths = [640, 540, 700, 470, 600];
+    var barY0 = fy - 72;
+    for (var i = 0; i < widths.length; i++) {
+        growX(mkBar(comp, barX, barY0 + i * 36, widths[i], 16, 44, "detail"),
+              0.66 + 0.12 * i, 0.92 + 0.12 * i);
+    }
+
+    // the thing being pointed at: a bright segment ON the third bar, then its calipers
+    var hlX = barX + 170, hlW = 240, hlY = barY0 + 2 * 36;
+    var hl = mkVBar(comp, hlX + hlW / 2, hlY, hlW, 22, 100, "detail_focus");
+    punch(hl, 1.30, 150);
+    var ho = hl.property("Transform").property("Opacity");
+    ho.setValueAtTime(1.30, 0);
+    ho.setValueAtTime(1.44, 100);
+    growY(mkVBar(comp, hlX, hlY, 4, 56, 90, "caliper"), 1.44, 1.60);
+    growY(mkVBar(comp, hlX + hlW, hlY, 4, 56, 90, "caliper"), 1.52, 1.68);
+
+    var bot = fy + fh / 2;
+    if (job.lines && job.lines.length) {
+        bot = centredLines(comp, job.lines, 1.62, 648, 40, 58, 1560, job.id);
+    }
+    mkScrim(comp, (206 + bot) / 2, (bot - 206) / 2 + 150, 0.00).moveToEnd();
+    exitAll(comp, dur);
+}
+
 function buildComp(job) {
     var dur = job.seconds || 6.0;
     var comp = app.project.items.addComp("CARD_" + job.id, W, H, 1.0, dur, FPS);
     comp.bgColor = [0, 0, 0];
     var k = job.kind || "hero_number";
-    if (k === "quote_card") cardQuote(comp, job, dur);
+    // Dispatch BY NAME, with no catch-all. The old `else cardHeroNumber` meant an unrecognised
+    // kind drew a hero number out of whatever fields happened to be present -- a wrong card that
+    // renders is worse than no card, because nothing downstream can tell. An unknown kind now
+    // writes FAILED, which render_cards.sh reads and refuses to render on.
+    if (k === "hero_number" || k === "title_card") cardHeroNumber(comp, job, dur);
+    else if (k === "quote_card") cardQuote(comp, job, dur);
     else if (k === "list_build") cardList(comp, job, dur);
-    else cardHeroNumber(comp, job, dur);       // hero_number and title_card share the layout
+    else if (k === "comparison") cardComparison(comp, job, dur);
+    else if (k === "timeline") cardTimeline(comp, job, dur);
+    else if (k === "system_map") cardSystemMap(comp, job, dur);
+    else if (k === "map_move") cardMapMove(comp, job, dur);
+    else if (k === "document_blowup") cardDocBlowup(comp, job, dur);
+    else throw new Error("no card for kind '" + k + "' (job " + job.id + ")");
     comp.motionBlur = true;
     return comp;
 }
