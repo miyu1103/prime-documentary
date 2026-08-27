@@ -1,0 +1,120 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "concordia",
+  "episode_id": "PD-2026-080-concordia",
+  "assets": "episodes/PD-2026-080-concordia/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-080-concordia/06_audio/narration_index.v001.json",
+  "narration": "concordia/narration.mp3",
+  "captions": "episodes/PD-2026-080-concordia/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/concordia_film.json",
+  "leadSeconds": 0,
+  "openingVariant": "overlay",
+  "hookSeconds": 22.98,
+  "hookLine": "A cruise ship is a building that floats, and the thing that tells you a building is in trouble is the floor.",
+  "captionLeadSeconds": 0.0,
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses",
+        "_row": "invariant-11"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["69 MINUTES", "TO GIVE THE ORDER."],
+        "style": "emphasis",
+        "emphasisWords": ["69 MINUTES"],
+        "_row": "CC-001"
+      }
+    ],
+    "ACT_1": [
+      {"kind": "acttitle", "title": "FOUR THOUSAND TWO HUNDRED AND TWENTY-NINE", "kicker": "ACT ONE", "index": 1, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["13 JANUARY 2012.", "OFF THE ITALIAN COAST."], "style": "emphasis", "emphasisWords": ["13 JANUARY 2012."], "_row": "CC-002"},
+      {"kind": "stat", "value": 4229, "label": "people on board", "topLabel": "A BUILDING THAT FLOATS", "_row": "CC-003"},
+      {"kind": "compbars", "items": [{"label": "PASSENGERS", "value": 3206}, {"label": "CREW", "value": 1023}], "_row": "CC-003"},
+      {"kind": "stat", "value": 1270, "label": "of the 3,206 passengers had attended a muster", "topLabel": "WHO HAD WALKED IT", "_row": "CC-004"},
+      {"kind": "compbars", "items": [{"label": "AT TOULON", "value": 463}, {"label": "AT BARCELONA", "value": 456}], "_row": "CC-004"},
+      {"kind": "kinetic", "lines": ["NEARLY TWO THOUSAND", "HAD NEVER WALKED IT."], "style": "emphasis", "emphasisWords": ["HAD NEVER WALKED IT."], "_row": "CC-005"},
+      {"kind": "stat", "value": 16, "label": "knots, three tenths of a mile from Le Scole", "topLabel": "21:44:05", "_row": "CC-006"},
+      {"kind": "kinetic", "lines": ["21:45:07.", "THE HULL STRIKES THE ROCK."], "style": "emphasis", "emphasisWords": ["21:45:07."], "_row": "CC-007"},
+      {"kind": "stat", "value": 51, "label": "seconds later, the recorder captures the blackout", "topLabel": "THE LIGHTS", "_row": "CC-008"},
+      {"kind": "stat", "value": 41, "label": "seconds is how long the emergency generator ran", "topLabel": "AND THEN", "_row": "CC-009"},
+      {"kind": "kinetic", "lines": ["THE RUDDER.", "THE BILGE PUMP."], "style": "emphasis", "emphasisWords": ["THE BILGE PUMP."], "_row": "CC-009"},
+      {"kind": "kinetic", "lines": ["COMPARTMENT FIVE.", "COMPARTMENT SIX."], "style": "emphasis", "emphasisWords": ["COMPARTMENT SIX."], "_row": "CC-010"},
+      {"kind": "stat", "value": 53, "label": "metres of hull opened by the rock", "topLabel": "THE BREACH", "_row": "CC-011"},
+      {"kind": "kinetic", "lines": ["THE POWER AND THE PUMPING", "WERE STANDING IN THE WATER."], "style": "emphasis", "emphasisWords": ["WERE STANDING IN THE WATER."], "_row": "CC-010"},
+      {"kind": "stat", "value": 90, "label": "seconds to lose all power to the essential systems", "topLabel": "INSIDE", "_row": "CC-008"}
+    ],
+    "ACT_2": [
+      {"kind": "acttitle", "title": "A THOUSAND SEPARATE JUDGEMENTS", "kicker": "ACT TWO", "index": 2, "_row": "structure"},
+      {"kind": "stat", "value": 272, "label": "of the thousand crew had joined since 1 December", "topLabel": "SIX WEEKS", "_row": "CC-012"},
+      {"kind": "kinetic", "lines": ["TWELVE OF THEM", "HAD EMBARKED THAT DAY."], "style": "emphasis", "emphasisWords": ["THAT DAY."], "_row": "CC-012"},
+      {"kind": "stat", "value": 38, "label": "nationalities among the crew", "topLabel": "ON ONE SHIP", "_row": "CC-013"},
+      {"kind": "stat", "value": 26, "label": "countries the passengers came from", "topLabel": "AND THE PASSENGERS", "_row": "CC-013"},
+      {"kind": "quote", "quote": "the recruitment procedure for deck and engine personnel does not assess the applicant's work language", "attribution": "The flag authority's formal non-conformity, March 2012", "_row": "CC-014"},
+      {"kind": "kinetic", "lines": ["EVERY ONE OF THOSE", "EXISTS ON PAPER."], "style": "emphasis", "emphasisWords": ["EXISTS ON PAPER."], "_row": "CC-015"},
+      {"kind": "kinetic", "lines": ["15 OCTOBER 2011.", "AN ABANDON-SHIP DRILL."], "style": "emphasis", "emphasisWords": ["15 OCTOBER 2011."], "_row": "CC-016"},
+      {"kind": "kinetic", "lines": ["THREE MONTHS", "BEFORE THIS NIGHT."], "style": "emphasis", "emphasisWords": ["THREE MONTHS"], "_row": "CC-016"},
+      {"kind": "stat", "value": 2008, "label": "is when the master obtained the passenger-ship certificate", "topLabel": "QUALIFIED", "_row": "CC-017"},
+      {"kind": "stat", "value": 17, "label": "years of sea service behind him", "topLabel": "NEARLY", "_row": "CC-017"},
+      {"kind": "kinetic", "lines": ["A STAFF MASTER IN 2010.", "SIX MORE DURING 2011."], "style": "emphasis", "emphasisWords": ["SIX MORE DURING 2011."], "_row": "CC-018"},
+      {"kind": "kinetic", "lines": ["1 SEPTEMBER 2012.", "THE COURSE BECOMES MANDATORY."], "style": "emphasis", "emphasisWords": ["THE COURSE BECOMES MANDATORY."], "_row": "CC-019"},
+      {"kind": "stat", "value": 8, "label": "months after this night", "topLabel": "WHICH WAS", "_row": "CC-019"},
+      {"kind": "kinetic", "lines": ["A THOUSAND SEPARATE JUDGEMENTS", "IS NOT AN EVACUATION PLAN."], "style": "emphasis", "emphasisWords": ["IS NOT AN EVACUATION PLAN."], "_row": "CC-015"},
+      {"kind": "kinetic", "lines": ["21:55.", "FOUR COMPARTMENTS FLOODED."], "style": "emphasis", "emphasisWords": ["FOUR COMPARTMENTS FLOODED."], "_row": "CC-020"}
+    ],
+    "ACT_3": [
+      {"kind": "acttitle", "title": "WHICH SHORE, AND WHAT THEY WERE TOLD", "kicker": "ACT THREE", "index": 3, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["21:57:34.", "THE COMPANY IS TOLD."], "style": "emphasis", "emphasisWords": ["21:57:34."], "_row": "CC-021"},
+      {"kind": "kinetic", "lines": ["22:07.", "CIVITAVECCHIA CONTACTS THE SHIP."], "style": "emphasis", "emphasisWords": ["22:07."], "_row": "CC-021"},
+      {"kind": "kinetic", "lines": ["22:12.", "THE FIRST WORD TO THE PASSENGERS."], "style": "emphasis", "emphasisWords": ["22:12."], "_row": "CC-022"},
+      {"kind": "stat", "value": 29, "label": "minutes after the rocks", "topLabel": "LIVORNO IS CONTACTED", "_row": "CC-022"},
+      {"kind": "quote", "quote": "there is a hull breach on the left side causing a gradual heel", "attribution": "The master to Livorno, 22:25:15 — forty minutes after the contact", "_row": "CC-023"},
+      {"kind": "stat", "value": 40, "label": "minutes before the shore hears the word breach", "topLabel": "THE FIRST TIME", "_row": "CC-023"},
+      {"kind": "compbars", "items": [{"label": "KNOWN ON BOARD, MIN", "value": 37}, {"label": "TOLD TO SHORE AT, MIN", "value": 41}], "_row": "CC-023"},
+      {"kind": "kinetic", "lines": ["22:30.", "THE FLOODING REACHES DECK ZERO."], "style": "emphasis", "emphasisWords": ["DECK ZERO."], "_row": "CC-024"},
+      {"kind": "kinetic", "lines": ["22:33:26.", "THE GENERAL EMERGENCY."], "style": "emphasis", "emphasisWords": ["22:33:26."], "_row": "CC-025"},
+      {"kind": "stat", "value": 48, "label": "minutes after the contact", "topLabel": "WHICH WAS", "_row": "CC-025"},
+      {"kind": "kinetic", "lines": ["3,208. 3,206. 3,216.", "THREE NUMBERS FOR THE SAME PEOPLE."], "style": "emphasis", "emphasisWords": ["THREE NUMBERS FOR THE SAME PEOPLE."], "_row": "CC-026"},
+      {"kind": "kinetic", "lines": ["22:54:10.", "ABANDON SHIP."], "style": "emphasis", "emphasisWords": ["ABANDON SHIP."], "_row": "CC-027"},
+      {"kind": "stat", "value": 69, "label": "minutes after the hull struck the rock", "topLabel": "THE ORDER CAME", "_row": "CC-001"},
+      {"kind": "kinetic", "lines": ["SEVEN SHORT BLASTS", "AND ONE LONG ONE."], "style": "emphasis", "emphasisWords": ["AND ONE LONG ONE."], "_row": "CC-028"},
+      {"kind": "stat", "value": 75, "label": "minutes after the rock, the crisis committee is formed", "topLabel": "23:00", "_row": "CC-029"},
+      {"kind": "kinetic", "lines": ["23:20.", "THE BRIDGE IS LEFT."], "style": "emphasis", "emphasisWords": ["23:20."], "_row": "CC-030"}
+    ],
+    "ACT_4": [
+      {"kind": "acttitle", "title": "WHAT THE ANGLE DOES", "kicker": "ACT FOUR", "index": 4, "_row": "structure"},
+      {"kind": "quote", "quote": "no measure is sufficient to render the ship unsinkable when more than two contiguous watertight compartments are flooded", "attribution": "The investigative body, stated directly", "_row": "CC-031"},
+      {"kind": "stat", "value": 13, "label": "degrees — you can still walk, badly", "suffix": "°", "topLabel": "THE HEEL", "_row": "CC-032"},
+      {"kind": "stat", "value": 30, "label": "degrees — the decks are ramps", "suffix": "°", "topLabel": "THE HEEL", "_row": "CC-032"},
+      {"kind": "stat", "value": 40, "label": "degrees around midnight — walking is climbing", "suffix": "°", "topLabel": "THE HEEL", "_row": "CC-032"},
+      {"kind": "stat", "value": 80, "label": "degrees, where she ended — the corridors are shafts", "suffix": "°", "topLabel": "THE HEEL", "_row": "CC-032"},
+      {"kind": "kinetic", "lines": ["00:34.", "NINETY DEGREES."], "style": "emphasis", "emphasisWords": ["NINETY DEGREES."], "_row": "CC-033"},
+      {"kind": "kinetic", "lines": ["00:53.", "THE HELICOPTERS BEGIN."], "style": "emphasis", "emphasisWords": ["00:53."], "_row": "CC-034"},
+      {"kind": "compbars", "items": [{"label": "PATROL BOATS", "value": 25}, {"label": "VESSELS", "value": 14}, {"label": "HELICOPTERS", "value": 8}, {"label": "TUGS", "value": 4}], "_row": "CC-035"},
+      {"kind": "kinetic", "lines": ["SUPPOSE THE SIGNAL", "HAD COME AT 22:39."], "style": "emphasis", "emphasisWords": ["AT 22:39."], "_row": "CC-036"},
+      {"kind": "stat", "value": 36, "label": "minutes is what the investigators call adequate to muster", "topLabel": "ON THAT TIMELINE", "_row": "CC-036"},
+      {"kind": "kinetic", "lines": ["LEAVING AT THIRTEEN DEGREES.", "NOT AT EIGHTY."], "style": "emphasis", "emphasisWords": ["NOT AT EIGHTY."], "_row": "CC-036"},
+      {"kind": "stat", "value": 33, "label": "minutes later the ship reached thirty degrees", "topLabel": "23:12", "_row": "CC-036"},
+      {"kind": "kinetic", "lines": ["ALL OF THEM", "COULD HAVE REACHED SAFETY."], "style": "emphasis", "emphasisWords": ["COULD HAVE REACHED SAFETY."], "_row": "CC-036"},
+      {"kind": "stat", "value": 32, "label": "people died", "topLabel": "INSTEAD", "_row": "CC-037"},
+      {"kind": "compbars", "items": [{"label": "PASSENGERS", "value": 26}, {"label": "CREW", "value": 4}], "_row": "CC-037"},
+      {"kind": "stat", "value": 157, "label": "passengers claimed injuries", "topLabel": "AND", "_row": "CC-038"}
+    ],
+    "ENDING": [
+      {"kind": "kinetic", "lines": ["TWO WERE NEVER FOUND.", "ONE PASSENGER. ONE CREW."], "style": "emphasis", "emphasisWords": ["TWO WERE NEVER FOUND."], "_row": "CC-037"},
+      {"kind": "kinetic", "lines": ["SIXTY-NINE MINUTES", "TO SAY THE WORD."], "style": "emphasis", "emphasisWords": ["SIXTY-NINE MINUTES"], "_row": "CC-001"}
+    ]
+  },
+  "_declared_values": {
+    "leadSeconds": "0 -- VC-0001 is voiced from frame 0; narration_index.v001.json puts the HOOK at 0.0s.",
+    "openingVariant": "'overlay' -- BrandOpening over the hook's settle, as on EP74-EP77. The voice does not stop.",
+    "captionLeadSeconds": "0.0 -- 08_edit/captions.final.v001.srt already carries the house 0.60 s lead.",
+    "hookSeconds": "MEASURED 2026-08-27 from 06_audio/narration_index.v001.json: section HOOK spans 0.0 to 22.980 across five chunks (VC-0001..VC-0005). Not estimated.",
+    "hookLine": "VC-0001 verbatim.",
+    "figures_by_section": "Authored 2026-08-27 from 03_script/script.en.v001.md and EP80_concordia_FACTS_LEDGER.v001.md. Counts are 16/16/17/17 across ACT_1..ACT_4, inside episode_spec's figure_beats_per_act [13,17]; HOOK 2 and ENDING 2. EVERY number on a card is a number the narration speaks -- 4229, 3206, 1023, 1270, 463, 456, 16, 51, 41, 53, 90, 272, 38, 26, 2008, 17, 8, 29, 40, 37, 48, 69, 75, 13, 30, 40, 80, 25, 14, 8, 4, 36, 33, 32, 26, 4, 157 all appear in the script, and every `value` is numeric so nothing can render as NaN.",
+    "no_OP_section": "episode_spec's section_vocabulary lists OP, but narration_index has no OP chunks -- the brand opening is an overlay on the HOOK, not a spoken section. A card there would have no window to live in.",
+    "quarantine": "Nothing on screen touches the master's charge, trial or sentence: the Italian court record is source S3 and has not been opened (forbidden_claims). No card says he abandoned the ship, fled or was a coward -- the 23:20 and 00:34 cards report only what the record states, and stop. No card calls the crew incompetent or says they panicked; the report records the opposite from the passengers themselves. The ACT_4 counterfactual is the investigators' own, attributed as theirs, and is drawn as a comparison of two timelines rather than as a claim about anyone's conduct."
+  }
+}

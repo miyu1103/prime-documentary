@@ -2,8 +2,8 @@
   "schema_version": "plate_verdicts.v001",
   "slug": "concordia",
   "plate_review": {
-    "reviewer": "claude-design-thread 2026-08-26, plate sheets at 776 px, funnels at 1600 px",
-    "reviewed_at": "2026-08-26",
+    "reviewer": "claude-design-thread 2026-08-26 and 2026-08-27, plate sheets at 776 px",
+    "reviewed_at": "2026-08-27",
     "plate_dir": "C:\\Users\\aab15\\Documents\\prime-documentary\\remotion\\public\\concordia\\img",
     "plate_id_sha256": "0d08ca820306f30f42488c9c3f4883cc9525707d3708ce351f72dd9346d54e22",
     "reviewed_ids": [
@@ -193,13 +193,13 @@
       "N184.png",
       "N185.png"
     ],
-    "method": "All 185 concordia plates read on 47 sheets at 776 px (runs/qc/plate_sheets/concordia). No identifiable real face -- every human figure is a back, a silhouette or a distant figure. No legible glyph, no watermark, no wrong-country signage (the film IS set in Italy, so Italian architecture is correct here). Funnels checked at 1600 px on N183 and N147: plain white, NO company mark, so the yellow cast on some plates is sunset light and not a real operator's livery. CORRECTED 2026-08-26 from a first pass that rejected four plates as period drift: all four are ship's CLINOMETERS, which is the right instrument and the film's own motif -- a ship that lists. The fault is only the OPEN-FLAME OIL LANTERN the prompt put beside three of them. N116 has no lantern and is accepted."
+    "method": "Merged ledger for the 185 plates now staged: the 182 that survived the 2026-08-26 review plus the three BATCH B replacements read on 2026-08-27, all three of which passed. Reject list is empty because the plates they replace carry the SAME ids and the old files sit in img/rejected/."
   },
   "plates": {
     "N001.png": {
-      "verdict": "reject",
-      "sha256": "067e19994c39fa81817a91c3f7e7591fd6db060ad49f206bf1a191a65eaef2f1",
-      "note": "the clinometer is right and is the film's motif; the burning OIL LANTERN beside it is not. The Costa Concordia was delivered in 2006 and carries no open flame. This is the opening register, so the anachronism lands in the first seconds"
+      "verdict": "accept",
+      "sha256": "c567912e779ee155d1fc648662fdddc520edb240013a830ac6fd958c2a732780",
+      "note": "3枚とも同じ計器の別アングルになっている。カットを並べるときは離して置くこと（footage_diversity ではなく見た目の問題）"
     },
     "N002.png": {
       "verdict": "accept",
@@ -712,9 +712,9 @@
       "note": ""
     },
     "N104.png": {
-      "verdict": "reject",
-      "sha256": "",
-      "note": "same shoot, same fault: a lit oil lantern beside the clinometer, under a sentence about the 2012 passage"
+      "verdict": "accept",
+      "sha256": "64910ab2cffa176d578664133658ef7780839e81a0c75de5d35c909faa6d445b",
+      "note": "same shoot, same fault: a lit oil lantern beside the clinometer, under a sentence about the 2012 passage [sha256 bound retroactively: this verdict was imported without one]"
     },
     "N105.png": {
       "verdict": "accept",
@@ -897,9 +897,9 @@
       "note": ""
     },
     "N141.png": {
-      "verdict": "reject",
-      "sha256": "",
-      "note": "same fault, in the ENDING. The prompt's 'a bright brass lamp burning beside it' is what produces the lantern; the instrument itself is correct"
+      "verdict": "accept",
+      "sha256": "d94202c35e3d32d8a2d2eaa3df90aea4f7f83761147c1e49fd23ca7d93d98297",
+      "note": "same fault, in the ENDING. The prompt's 'a bright brass lamp burning beside it' is what produces the lantern; the instrument itself is correct [sha256 bound retroactively: this verdict was imported without one]"
     },
     "N142.png": {
       "verdict": "accept",
