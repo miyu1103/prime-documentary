@@ -88,6 +88,7 @@ CHECK_NAME = "packaging_qc"
 
 TITLE_MIN_CHARS = 59        # spec row 13, measured 2026-08-10 (Unseen, 1.41M subs)
 TITLE_MAX_CHARS = 100       # spec row 13; the old 60 was invented and the spec says so
+DESC_MAX_CHARS = 5000        # YouTube's hard ceiling on snippet.description
 MIN_TITLE_VARIANTS = 2      # spec row 13 ("A/B variants")
 
 # Doctrine framing = the measured worst-retention pattern (PACKAGING_FIX_v001 s1/s6).
@@ -219,8 +220,18 @@ def evaluate_meta(meta_path: Path, extra_candidates: list[str] | None = None,
 
     if not desc:
         problems.append("no description in metadata")
-    elif not RE_AI_DISCLOSURE.search(desc):
-        problems.append("description carries no AI-disclosure line (VIDEO_RULES s5)")
+    else:
+        if not RE_AI_DISCLOSURE.search(desc):
+            problems.append("description carries no AI-disclosure line (VIDEO_RULES s5)")
+        # YouTube refuses a description over 5,000 characters. Nothing in this repo measured
+        # that until 2026-08-27, when a sweep of every youtube_meta found EP78 colgan at 6,279
+        # and EP82 valdez at 5,591 -- both would have been rejected at the upload call, after
+        # a 2.5-hour render and a full read of the shipped frames. PD-2026-034-rolin sits at
+        # 5,139 and is already published, so whatever went up for it is not what is on disk.
+        if len(desc) > DESC_MAX_CHARS:
+            problems.append(
+                f"description {len(desc)} chars > {DESC_MAX_CHARS} -- YouTube will reject the "
+                f"upload. Cut it before the render, not after.")
 
     # SOFT signal -- reported, never blocking (see module docstring).
     if title and not re.search(r"\d", title):
