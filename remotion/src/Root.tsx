@@ -99,6 +99,7 @@ import {ItaewonFilm, itaewonFilmDurationInFrames} from './compositions/ItaewonFi
 import {LahainaFilm, lahainaFilmDurationInFrames} from './compositions/LahainaFilm';
 import {MorandiFilm, morandiFilmDurationInFrames} from './compositions/MorandiFilm';
 import {KeyBridgeFilm, keybridgeFilmDurationInFrames} from './compositions/KeyBridgeFilm';
+import {ConcordiaFilm, concordiaFilmDurationInFrames} from './compositions/ConcordiaFilm';
 import {RamirezFilm, ramirezFilmDurationInFrames} from './compositions/RamirezFilm';
 import {CentralparkThumbnail, CENTRALPARK_THUMBS} from './compositions/CentralparkThumbnails';
 import {Frazier39Opening, frazier39OpeningDurationInFrames} from './compositions/Frazier39Opening';
@@ -915,6 +916,14 @@ export const RemotionRoot: React.FC = () => {
         id="Ep76Morandi"
         component={MorandiFilm}
         durationInFrames={morandiFilmDurationInFrames}
+        fps={BRAND.video.fps}
+        width={BRAND.video.width}
+        height={BRAND.video.height}
+      />
+      <Composition
+        id="Ep80Concordia"
+        component={ConcordiaFilm}
+        durationInFrames={concordiaFilmDurationInFrames}
         fps={BRAND.video.fps}
         width={BRAND.video.width}
         height={BRAND.video.height}

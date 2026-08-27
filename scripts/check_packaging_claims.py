@@ -1434,8 +1434,31 @@ def _thumb_text(epdir: Path) -> str:
                 cur = stack.pop()
                 if isinstance(cur, dict):
                     for k, v in cur.items():
-                        if isinstance(v, str) and "thumb" in k.lower() and "text" in k.lower():
-                            parts.append(v)
+                        # The key used to have to contain BOTH "thumb" and "text". Measured
+                        # 2026-08-27: 11 episodes -- varsityblues, wronghouse, oroville,
+                        # lacmegantic, uri, itaewon, lahaina, morandi, keybridge, concordia,
+                        # station -- declare their thumbnail wording as `thumbnail_headline`,
+                        # which has "thumb" but not "text". Every one of them shipped, or is
+                        # about to ship, with its thumbnail wording NEVER checked against its
+                        # own script. Any "thumb" key now counts, minus the ones that hold a
+                        # file path (`thumbnail`, `thumbnail_path`, ...) rather than wording.
+                        if isinstance(v, str) and "thumb" in k.lower():
+                            s = v.strip()
+                            # A path ends in an image extension, or has a separator and no
+                            # spaces. Thumbnail wording uses " / " as a LINE BREAK -- morandi's
+                            # is "23,000 euros a year / on the viaduct that came down" -- so a
+                            # bare slash test throws away exactly the rows this fix is for.
+                            looks_like_path = (
+                                s.lower().endswith((".png", ".jpg", ".jpeg", ".webp"))
+                                or (("/" in s or "\\" in s) and not any(c.isspace() for c in s)))
+                            # Some episodes hang a sha, a one-letter variant tag or a
+                            # selection note off a "thumb" key too. Wording has whitespace
+                            # and is not a hash.
+                            looks_like_id = (s.lower().startswith(("sha256:", "sha1:"))
+                                             or (len(s) >= 32 and all(
+                                                 c in "0123456789abcdefABCDEF" for c in s)))
+                            if s and not looks_like_path and not looks_like_id and len(s) > 3:
+                                parts.append(s)
                         elif isinstance(v, (dict, list)):
                             stack.append(v)
                 elif isinstance(cur, list):
