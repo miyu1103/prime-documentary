@@ -24,6 +24,21 @@
 #
 # The originals are already archived in runs/qc/keybridge_person_v2/. After this runs, compare
 # again before believing it: a regeneration is a claim until the pixels are read.
+# TWO WAYS THIS SCRIPT EXITED 0 WITHOUT DOING ANYTHING, 2026-08-27. Both looked like
+# success in the log and both were caught only by sha256-ing the clips afterwards:
+#
+#   1. The GPU lock was written as "<pid> keybridge-regen" while the chain identifies
+#      itself as "keybridge". Different strings, so _chain_i2v_robust.sh read it as
+#      ANOTHER chain holding the card and refused: "One card, one i2v chain."
+#      Write the lock with the bare slug, or not at all.
+#   2. The chain FILLS GAPS; it does not replace. With the 17 mp4s still on disk it
+#      reported "17 sources, 17 already done, 0 to do" and ran for 27 minutes doing
+#      nothing. The clips being replaced must be REMOVED from motion/ first -- they
+#      are archived in runs/qc/keybridge_person_v2/, so this is safe.
+#
+# CLAUDE.md 4.5 says it plainly: exit 0 means the command ran, never that the intent
+# landed. Check the sha256s, not the exit code.
+
 set -euo pipefail
 cd "$(dirname "$0")/.." || exit 1
 
