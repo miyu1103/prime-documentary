@@ -2,156 +2,20 @@
   "schema_version": "asset_manifest.v003",
   "episode_id": "PD-2026-077-keybridge",
   "slug": "keybridge",
-  "generated_at": "2026-08-26T13:29:54.624191+00:00",
+  "generated_at": "2026-08-27T00:55:15.230647+00:00",
   "producer": "scripts/build_asset_manifest_motionfirst.py",
   "is_stub": false,
   "source_of_truth": "filesystem scan of remotion/public/keybridge",
   "content_checked": true,
   "counts": {
-    "stills": 17,
+    "stills": 0,
     "people": 21,
-    "motion": 111,
+    "motion": 128,
     "factory": 42,
-    "overlay": 1,
+    "overlay": 0,
     "rejected": 0
   },
   "stills": [
-    {
-      "asset_id": "KEY-S-001",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H132.png",
-      "public_path": "keybridge/img/H132.png",
-      "bytes": 8799897,
-      "role": "body",
-      "scene_id": "H132"
-    },
-    {
-      "asset_id": "KEY-S-002",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H133.png",
-      "public_path": "keybridge/img/H133.png",
-      "bytes": 8461263,
-      "role": "body",
-      "scene_id": "H133"
-    },
-    {
-      "asset_id": "KEY-S-003",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H134.png",
-      "public_path": "keybridge/img/H134.png",
-      "bytes": 7401933,
-      "role": "body",
-      "scene_id": "H134"
-    },
-    {
-      "asset_id": "KEY-S-004",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H135.png",
-      "public_path": "keybridge/img/H135.png",
-      "bytes": 9535352,
-      "role": "body",
-      "scene_id": "H135"
-    },
-    {
-      "asset_id": "KEY-S-005",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H136.png",
-      "public_path": "keybridge/img/H136.png",
-      "bytes": 7923471,
-      "role": "body",
-      "scene_id": "H136"
-    },
-    {
-      "asset_id": "KEY-S-006",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H137.png",
-      "public_path": "keybridge/img/H137.png",
-      "bytes": 6202469,
-      "role": "body",
-      "scene_id": "H137"
-    },
-    {
-      "asset_id": "KEY-S-007",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H138.png",
-      "public_path": "keybridge/img/H138.png",
-      "bytes": 6891109,
-      "role": "body",
-      "scene_id": "H138"
-    },
-    {
-      "asset_id": "KEY-S-008",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H139.png",
-      "public_path": "keybridge/img/H139.png",
-      "bytes": 7005036,
-      "role": "body",
-      "scene_id": "H139"
-    },
-    {
-      "asset_id": "KEY-S-009",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H140.png",
-      "public_path": "keybridge/img/H140.png",
-      "bytes": 7781092,
-      "role": "body",
-      "scene_id": "H140"
-    },
-    {
-      "asset_id": "KEY-S-010",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H141.png",
-      "public_path": "keybridge/img/H141.png",
-      "bytes": 8606553,
-      "role": "body",
-      "scene_id": "H141"
-    },
-    {
-      "asset_id": "KEY-S-011",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H142.png",
-      "public_path": "keybridge/img/H142.png",
-      "bytes": 8506482,
-      "role": "body",
-      "scene_id": "H142"
-    },
-    {
-      "asset_id": "KEY-S-012",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H143.png",
-      "public_path": "keybridge/img/H143.png",
-      "bytes": 8123231,
-      "role": "body",
-      "scene_id": "H143"
-    },
-    {
-      "asset_id": "KEY-S-013",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H144.png",
-      "public_path": "keybridge/img/H144.png",
-      "bytes": 7034221,
-      "role": "body",
-      "scene_id": "H144"
-    },
-    {
-      "asset_id": "KEY-S-014",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H145.png",
-      "public_path": "keybridge/img/H145.png",
-      "bytes": 6933881,
-      "role": "body",
-      "scene_id": "H145"
-    },
-    {
-      "asset_id": "KEY-S-015",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H146.png",
-      "public_path": "keybridge/img/H146.png",
-      "bytes": 7342745,
-      "role": "body",
-      "scene_id": "H146"
-    },
-    {
-      "asset_id": "KEY-S-016",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H147.png",
-      "public_path": "keybridge/img/H147.png",
-      "bytes": 8505439,
-      "role": "body",
-      "scene_id": "H147"
-    },
-    {
-      "asset_id": "KEY-S-017",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H030.png",
-      "public_path": "keybridge/img/H030.png",
-      "bytes": 5124119,
-      "role": "body",
-      "scene_id": "H030"
-    },
     {
       "asset_id": "KEY-PPL-001",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/img/H007.png",
@@ -683,590 +547,709 @@
     },
     {
       "asset_id": "KEY-M-028",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H030.mp4",
+      "public_path": "keybridge/motion/H030.mp4",
+      "bytes": 1642300,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-029",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H031.mp4",
       "public_path": "keybridge/motion/H031.mp4",
       "bytes": 1991636,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-029",
+      "asset_id": "KEY-M-030",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H032.mp4",
       "public_path": "keybridge/motion/H032.mp4",
       "bytes": 4574095,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-030",
+      "asset_id": "KEY-M-031",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H033.mp4",
       "public_path": "keybridge/motion/H033.mp4",
       "bytes": 1160719,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-031",
+      "asset_id": "KEY-M-032",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H034.mp4",
       "public_path": "keybridge/motion/H034.mp4",
       "bytes": 2024505,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-032",
+      "asset_id": "KEY-M-033",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H035.mp4",
       "public_path": "keybridge/motion/H035.mp4",
       "bytes": 2909037,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-033",
+      "asset_id": "KEY-M-034",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H036.mp4",
       "public_path": "keybridge/motion/H036.mp4",
       "bytes": 2852966,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-034",
+      "asset_id": "KEY-M-035",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H037.mp4",
       "public_path": "keybridge/motion/H037.mp4",
       "bytes": 1477940,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-035",
+      "asset_id": "KEY-M-036",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H038.mp4",
       "public_path": "keybridge/motion/H038.mp4",
       "bytes": 1026726,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-036",
+      "asset_id": "KEY-M-037",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H039.mp4",
       "public_path": "keybridge/motion/H039.mp4",
       "bytes": 1667521,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-037",
+      "asset_id": "KEY-M-038",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H040.mp4",
       "public_path": "keybridge/motion/H040.mp4",
       "bytes": 2371677,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-038",
+      "asset_id": "KEY-M-039",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H041.mp4",
       "public_path": "keybridge/motion/H041.mp4",
       "bytes": 3050668,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-039",
+      "asset_id": "KEY-M-040",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H042.mp4",
       "public_path": "keybridge/motion/H042.mp4",
       "bytes": 2549048,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-040",
+      "asset_id": "KEY-M-041",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H043.mp4",
       "public_path": "keybridge/motion/H043.mp4",
       "bytes": 2322914,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-041",
+      "asset_id": "KEY-M-042",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H044.mp4",
       "public_path": "keybridge/motion/H044.mp4",
       "bytes": 3008953,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-042",
+      "asset_id": "KEY-M-043",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H045.mp4",
       "public_path": "keybridge/motion/H045.mp4",
       "bytes": 1292504,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-043",
+      "asset_id": "KEY-M-044",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H046.mp4",
       "public_path": "keybridge/motion/H046.mp4",
       "bytes": 1864614,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-044",
+      "asset_id": "KEY-M-045",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H047.mp4",
       "public_path": "keybridge/motion/H047.mp4",
       "bytes": 1096611,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-045",
+      "asset_id": "KEY-M-046",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H048.mp4",
       "public_path": "keybridge/motion/H048.mp4",
       "bytes": 2306386,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-046",
+      "asset_id": "KEY-M-047",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H049.mp4",
       "public_path": "keybridge/motion/H049.mp4",
       "bytes": 2242516,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-047",
+      "asset_id": "KEY-M-048",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H050.mp4",
       "public_path": "keybridge/motion/H050.mp4",
       "bytes": 3454696,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-048",
+      "asset_id": "KEY-M-049",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H051.mp4",
       "public_path": "keybridge/motion/H051.mp4",
       "bytes": 4341036,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-049",
+      "asset_id": "KEY-M-050",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H052.mp4",
       "public_path": "keybridge/motion/H052.mp4",
       "bytes": 2561045,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-050",
+      "asset_id": "KEY-M-051",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H053.mp4",
       "public_path": "keybridge/motion/H053.mp4",
       "bytes": 4253773,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-051",
+      "asset_id": "KEY-M-052",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H054.mp4",
       "public_path": "keybridge/motion/H054.mp4",
       "bytes": 2673365,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-052",
+      "asset_id": "KEY-M-053",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H056.mp4",
       "public_path": "keybridge/motion/H056.mp4",
       "bytes": 5758930,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-053",
+      "asset_id": "KEY-M-054",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H059.mp4",
       "public_path": "keybridge/motion/H059.mp4",
       "bytes": 2119682,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-054",
+      "asset_id": "KEY-M-055",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H060.mp4",
       "public_path": "keybridge/motion/H060.mp4",
       "bytes": 3551497,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-055",
+      "asset_id": "KEY-M-056",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H061.mp4",
       "public_path": "keybridge/motion/H061.mp4",
       "bytes": 1330539,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-056",
+      "asset_id": "KEY-M-057",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H063.mp4",
       "public_path": "keybridge/motion/H063.mp4",
       "bytes": 1796570,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-057",
+      "asset_id": "KEY-M-058",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H064.mp4",
       "public_path": "keybridge/motion/H064.mp4",
       "bytes": 2287006,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-058",
+      "asset_id": "KEY-M-059",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H066.mp4",
       "public_path": "keybridge/motion/H066.mp4",
       "bytes": 2569751,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-059",
+      "asset_id": "KEY-M-060",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H067.mp4",
       "public_path": "keybridge/motion/H067.mp4",
       "bytes": 1653904,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-060",
+      "asset_id": "KEY-M-061",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H068.mp4",
       "public_path": "keybridge/motion/H068.mp4",
       "bytes": 1359542,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-061",
+      "asset_id": "KEY-M-062",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H069.mp4",
       "public_path": "keybridge/motion/H069.mp4",
       "bytes": 2057862,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-062",
+      "asset_id": "KEY-M-063",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H070.mp4",
       "public_path": "keybridge/motion/H070.mp4",
       "bytes": 2073427,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-063",
+      "asset_id": "KEY-M-064",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H071.mp4",
       "public_path": "keybridge/motion/H071.mp4",
       "bytes": 1988315,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-064",
+      "asset_id": "KEY-M-065",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H072.mp4",
       "public_path": "keybridge/motion/H072.mp4",
       "bytes": 3025925,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-065",
+      "asset_id": "KEY-M-066",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H073.mp4",
       "public_path": "keybridge/motion/H073.mp4",
       "bytes": 2817061,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-066",
+      "asset_id": "KEY-M-067",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H074.mp4",
       "public_path": "keybridge/motion/H074.mp4",
       "bytes": 3022227,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-067",
+      "asset_id": "KEY-M-068",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H075.mp4",
       "public_path": "keybridge/motion/H075.mp4",
       "bytes": 3167156,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-068",
+      "asset_id": "KEY-M-069",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H076.mp4",
       "public_path": "keybridge/motion/H076.mp4",
       "bytes": 1805334,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-069",
+      "asset_id": "KEY-M-070",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H077.mp4",
       "public_path": "keybridge/motion/H077.mp4",
       "bytes": 1283042,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-070",
+      "asset_id": "KEY-M-071",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H078.mp4",
       "public_path": "keybridge/motion/H078.mp4",
       "bytes": 1111676,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-071",
+      "asset_id": "KEY-M-072",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H080.mp4",
       "public_path": "keybridge/motion/H080.mp4",
       "bytes": 1255423,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-072",
+      "asset_id": "KEY-M-073",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H081.mp4",
       "public_path": "keybridge/motion/H081.mp4",
       "bytes": 3295893,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-073",
+      "asset_id": "KEY-M-074",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H082.mp4",
       "public_path": "keybridge/motion/H082.mp4",
       "bytes": 2505297,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-074",
+      "asset_id": "KEY-M-075",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H083.mp4",
       "public_path": "keybridge/motion/H083.mp4",
       "bytes": 2156625,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-075",
+      "asset_id": "KEY-M-076",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H085.mp4",
       "public_path": "keybridge/motion/H085.mp4",
       "bytes": 3676579,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-076",
+      "asset_id": "KEY-M-077",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H087.mp4",
       "public_path": "keybridge/motion/H087.mp4",
       "bytes": 3863829,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-077",
+      "asset_id": "KEY-M-078",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H088.mp4",
       "public_path": "keybridge/motion/H088.mp4",
       "bytes": 1173493,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-078",
+      "asset_id": "KEY-M-079",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H089.mp4",
       "public_path": "keybridge/motion/H089.mp4",
       "bytes": 4200465,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-079",
+      "asset_id": "KEY-M-080",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H090.mp4",
       "public_path": "keybridge/motion/H090.mp4",
       "bytes": 2237235,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-080",
+      "asset_id": "KEY-M-081",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H091.mp4",
       "public_path": "keybridge/motion/H091.mp4",
       "bytes": 1662151,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-081",
+      "asset_id": "KEY-M-082",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H092.mp4",
       "public_path": "keybridge/motion/H092.mp4",
       "bytes": 1567604,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-082",
+      "asset_id": "KEY-M-083",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H093.mp4",
       "public_path": "keybridge/motion/H093.mp4",
       "bytes": 907408,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-083",
+      "asset_id": "KEY-M-084",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H094.mp4",
       "public_path": "keybridge/motion/H094.mp4",
       "bytes": 1681290,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-084",
+      "asset_id": "KEY-M-085",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H095.mp4",
       "public_path": "keybridge/motion/H095.mp4",
       "bytes": 2668196,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-085",
+      "asset_id": "KEY-M-086",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H096.mp4",
       "public_path": "keybridge/motion/H096.mp4",
       "bytes": 1786245,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-086",
+      "asset_id": "KEY-M-087",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H098.mp4",
       "public_path": "keybridge/motion/H098.mp4",
       "bytes": 4095334,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-087",
+      "asset_id": "KEY-M-088",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H100.mp4",
       "public_path": "keybridge/motion/H100.mp4",
       "bytes": 1493685,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-088",
+      "asset_id": "KEY-M-089",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H101.mp4",
       "public_path": "keybridge/motion/H101.mp4",
       "bytes": 4493407,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-089",
+      "asset_id": "KEY-M-090",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H102.mp4",
       "public_path": "keybridge/motion/H102.mp4",
       "bytes": 2785233,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-090",
+      "asset_id": "KEY-M-091",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H103.mp4",
       "public_path": "keybridge/motion/H103.mp4",
       "bytes": 1764851,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-091",
+      "asset_id": "KEY-M-092",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H104.mp4",
       "public_path": "keybridge/motion/H104.mp4",
       "bytes": 4425403,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-092",
+      "asset_id": "KEY-M-093",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H105.mp4",
       "public_path": "keybridge/motion/H105.mp4",
       "bytes": 2748952,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-093",
+      "asset_id": "KEY-M-094",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H106.mp4",
       "public_path": "keybridge/motion/H106.mp4",
       "bytes": 1877068,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-094",
+      "asset_id": "KEY-M-095",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H107.mp4",
       "public_path": "keybridge/motion/H107.mp4",
       "bytes": 2208685,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-095",
+      "asset_id": "KEY-M-096",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H108.mp4",
       "public_path": "keybridge/motion/H108.mp4",
       "bytes": 2427169,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-096",
+      "asset_id": "KEY-M-097",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H111.mp4",
       "public_path": "keybridge/motion/H111.mp4",
       "bytes": 4994088,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-097",
+      "asset_id": "KEY-M-098",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H112.mp4",
       "public_path": "keybridge/motion/H112.mp4",
       "bytes": 4252745,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-098",
+      "asset_id": "KEY-M-099",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H113.mp4",
       "public_path": "keybridge/motion/H113.mp4",
       "bytes": 2716491,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-099",
+      "asset_id": "KEY-M-100",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H115.mp4",
       "public_path": "keybridge/motion/H115.mp4",
       "bytes": 6456786,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-100",
+      "asset_id": "KEY-M-101",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H119.mp4",
       "public_path": "keybridge/motion/H119.mp4",
       "bytes": 871508,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-101",
+      "asset_id": "KEY-M-102",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H121.mp4",
       "public_path": "keybridge/motion/H121.mp4",
       "bytes": 4409742,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-102",
+      "asset_id": "KEY-M-103",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H122.mp4",
       "public_path": "keybridge/motion/H122.mp4",
       "bytes": 4584469,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-103",
+      "asset_id": "KEY-M-104",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H123.mp4",
       "public_path": "keybridge/motion/H123.mp4",
       "bytes": 2346091,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-104",
+      "asset_id": "KEY-M-105",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H124.mp4",
       "public_path": "keybridge/motion/H124.mp4",
       "bytes": 6801492,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-105",
+      "asset_id": "KEY-M-106",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H125.mp4",
       "public_path": "keybridge/motion/H125.mp4",
       "bytes": 4180406,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-106",
+      "asset_id": "KEY-M-107",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H126.mp4",
       "public_path": "keybridge/motion/H126.mp4",
       "bytes": 2181421,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-107",
+      "asset_id": "KEY-M-108",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H127.mp4",
       "public_path": "keybridge/motion/H127.mp4",
       "bytes": 6761822,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-108",
+      "asset_id": "KEY-M-109",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H128.mp4",
       "public_path": "keybridge/motion/H128.mp4",
       "bytes": 1003445,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-109",
+      "asset_id": "KEY-M-110",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H129.mp4",
       "public_path": "keybridge/motion/H129.mp4",
       "bytes": 2669723,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-110",
+      "asset_id": "KEY-M-111",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H130.mp4",
       "public_path": "keybridge/motion/H130.mp4",
       "bytes": 8008564,
       "kind_": "video"
     },
     {
-      "asset_id": "KEY-M-111",
+      "asset_id": "KEY-M-112",
       "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H131.mp4",
       "public_path": "keybridge/motion/H131.mp4",
       "bytes": 4596504,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-113",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H132.mp4",
+      "public_path": "keybridge/motion/H132.mp4",
+      "bytes": 2692217,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-114",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H133.mp4",
+      "public_path": "keybridge/motion/H133.mp4",
+      "bytes": 6163797,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-115",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H134.mp4",
+      "public_path": "keybridge/motion/H134.mp4",
+      "bytes": 1310713,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-116",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H135.mp4",
+      "public_path": "keybridge/motion/H135.mp4",
+      "bytes": 3491273,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-117",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H136.mp4",
+      "public_path": "keybridge/motion/H136.mp4",
+      "bytes": 1860408,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-118",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H137.mp4",
+      "public_path": "keybridge/motion/H137.mp4",
+      "bytes": 781488,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-119",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H138.mp4",
+      "public_path": "keybridge/motion/H138.mp4",
+      "bytes": 2622668,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-120",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H139.mp4",
+      "public_path": "keybridge/motion/H139.mp4",
+      "bytes": 1655908,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-121",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H140.mp4",
+      "public_path": "keybridge/motion/H140.mp4",
+      "bytes": 2318808,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-122",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H141.mp4",
+      "public_path": "keybridge/motion/H141.mp4",
+      "bytes": 3916253,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-123",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H142.mp4",
+      "public_path": "keybridge/motion/H142.mp4",
+      "bytes": 3832184,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-124",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H143.mp4",
+      "public_path": "keybridge/motion/H143.mp4",
+      "bytes": 3962920,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-125",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H144.mp4",
+      "public_path": "keybridge/motion/H144.mp4",
+      "bytes": 1521642,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-126",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H145.mp4",
+      "public_path": "keybridge/motion/H145.mp4",
+      "bytes": 1189584,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-127",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H146.mp4",
+      "public_path": "keybridge/motion/H146.mp4",
+      "bytes": 1198998,
+      "kind_": "video"
+    },
+    {
+      "asset_id": "KEY-M-128",
+      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H147.mp4",
+      "public_path": "keybridge/motion/H147.mp4",
+      "bytes": 4220963,
       "kind_": "video"
     }
   ],
@@ -1566,19 +1549,7 @@
       "kind_": "video"
     }
   ],
-  "overlay": [
-    {
-      "asset_id": "KEY-O-001",
-      "path": "C:/Users/aab15/Documents/prime-documentary/remotion/public/keybridge/motion/H030.mp4",
-      "public_path": "keybridge/motion/H030.mp4",
-      "bytes": 2184535,
-      "kind_": "video",
-      "blend_hint": "screen",
-      "demoted_from": "motion",
-      "min_luma": 7.98,
-      "reason": "fades to black at an end"
-    }
-  ],
+  "overlay": [],
   "rejected": [],
   "dark_by_design": []
 }
