@@ -32,6 +32,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import re
 import subprocess
 import sys
 from collections import Counter, deque
@@ -97,10 +98,23 @@ def split_caption_text(text: str, limit: int = CAPTION_MAX_CHARS) -> list[str]:
     return segs
 
 
+def strip_authoring_markers(text: str) -> str:
+    """Remove HTML comments from caption text before it is burned into the picture.
+
+    EP77 keybridge writes its claim links inline -- "...an order to stop the traffic.
+    <!-- KB-113 -->" -- and 103 of its 525 cues carried one through to film.json. One cue
+    at 50.0 s was nothing BUT a marker. Burned captions cannot be fixed after the render,
+    so this runs where the cue text is first made rather than in the composition.
+    Measured before the fix: keybridge 103, morandi 0, lahaina 0.
+    """
+    return re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL).strip()
+
+
 def build_captions(narr: dict) -> tuple[list[dict], float]:
     cues: list[dict] = []
     for c in narr["chunks"]:
-        text = str(c.get("text") or c.get("spoken_text") or "").strip()
+        text = strip_authoring_markers(
+            str(c.get("text") or c.get("spoken_text") or "").strip())
         if not text:
             continue
         start, end = round(float(c["start"]), 3), round(float(c["end"]), 3)
