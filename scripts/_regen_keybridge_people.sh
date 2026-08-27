@@ -36,8 +36,18 @@
 #      nothing. The clips being replaced must be REMOVED from motion/ first -- they
 #      are archived in runs/qc/keybridge_person_v2/, so this is safe.
 #
+#   3. THE E: ARCHIVE PUTS THEM BACK. Removing the 17 from remotion/public/<slug>/motion/
+#      is not enough: E:/pd-media/assets/ai_video/<slug>/motion/ holds its own copy, and
+#      the chain restored all 17 from there, then skipped assembly because it could see
+#      "128 clip(s) already render-visible". It reported COMPLETE frames_done=17 while the
+#      mp4s on disk were byte-identical to the originals. Remove from BOTH, then run
+#      scripts/assemble_episode_i2v.py --slug <slug> to build the mp4s from the frames.
+#      This trap is written down in docs/handover/2026-08-25-build-publish.md section 4.4
+#      and I walked into it anyway.
+#
 # CLAUDE.md 4.5 says it plainly: exit 0 means the command ran, never that the intent
-# landed. Check the sha256s, not the exit code.
+# landed. Check the sha256s, not the exit code. Three runs of this script reported success
+# and changed nothing; all three were caught by sha256 and by nothing else.
 
 set -euo pipefail
 cd "$(dirname "$0")/.." || exit 1
