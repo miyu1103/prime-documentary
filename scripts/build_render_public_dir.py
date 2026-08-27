@@ -50,8 +50,32 @@ EPISODES = {p.name.split("-", 3)[-1]: p.name for p in sorted((ROOT / "episodes")
 
 
 def link_or_copy(src: Path, dst: Path) -> str:
+    """Stage one asset, and REPLACE a stale one rather than keeping it.
+
+    This used to be `if dst.exists(): return "kept"`, which is wrong in the one case that
+    matters: an asset that has been FIXED since the last staging run. The staged copy is a
+    hardlink to the old inode, so replacing the file in remotion/public/ leaves the render
+    directory pointing at the old bytes, and the render silently uses them.
+
+    Measured 2026-08-28 on EP77 keybridge. Seventeen i2v clips that invented people -- five
+    of them resolving a face into recognisable features, in an episode that names people
+    charged with crimes -- were regenerated, verified clip by clip against their plates, and
+    hand-checked by me at the exact frames the faces used to appear. All 17 of them were
+    still the OLD bytes in remotion/public_ep77/, dated 08-26 05:30, sha-identical to the
+    archived rejects. The render was three hours away from using them.
+
+    Size and mtime are enough to catch it and cost nothing; a hash of every asset on every
+    staging run would read gigabytes. A same-size, same-mtime replacement would slip through,
+    which is why the render still ends at a human reading the shipped frames.
+    """
     if dst.exists():
-        return "kept"
+        try:
+            s, d = src.stat(), dst.stat()
+            if s.st_size == d.st_size and int(s.st_mtime) == int(d.st_mtime):
+                return "kept"
+        except OSError:
+            pass
+        dst.unlink()               # stale: the source changed after this was staged
     try:
         os.link(src, dst)          # same volume: no extra bytes, indistinguishable from a file
         return "linked"

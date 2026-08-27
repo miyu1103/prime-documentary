@@ -137,6 +137,31 @@ CONFIG = {
                        "2026-08-29T12:00:00+09:00", "2026-08-29T03:00:00Z")},
     "uri": {**_from_meta("PD-2026-073-uri", "uri",
                        "2026-08-30T12:00:00+09:00", "2026-08-30T03:00:00Z")},
+
+    # EP77-85, one per day at the 12:00 JST long-form slot, 08-31 to 09-08. Added 2026-08-28
+    # because CONFIG had none of them: `--ep keybridge` was an invalid argument, so every gate
+    # could have gone green -- render, shipped frames, receipt, policy, dry run -- and the
+    # booking would have died at the very last command. That is the same failure the EP66-69
+    # comment above records, and it was found by auditing rather than by hitting it.
+    # Order is readiness, not episode number: EP80/81 have their i2v and EP78/79 do not.
+    "keybridge": {**_from_meta("PD-2026-077-keybridge", "keybridge",
+                       "2026-08-31T12:00:00+09:00", "2026-08-31T03:00:00Z")},
+    "concordia": {**_from_meta("PD-2026-080-concordia", "concordia",
+                       "2026-09-01T12:00:00+09:00", "2026-09-01T03:00:00Z")},
+    "station": {**_from_meta("PD-2026-081-station", "station",
+                       "2026-09-02T12:00:00+09:00", "2026-09-02T03:00:00Z")},
+    "valdez": {**_from_meta("PD-2026-082-valdez", "valdez",
+                       "2026-09-03T12:00:00+09:00", "2026-09-03T03:00:00Z")},
+    "colgan": {**_from_meta("PD-2026-078-colgan", "colgan",
+                       "2026-09-04T12:00:00+09:00", "2026-09-04T03:00:00Z")},
+    "alaska261": {**_from_meta("PD-2026-079-alaska261", "alaska261",
+                       "2026-09-05T12:00:00+09:00", "2026-09-05T03:00:00Z")},
+    "threemile": {**_from_meta("PD-2026-084-threemile", "threemile",
+                       "2026-09-06T12:00:00+09:00", "2026-09-06T03:00:00Z")},
+    "max737": {**_from_meta("PD-2026-083-max737", "max737",
+                       "2026-09-07T12:00:00+09:00", "2026-09-07T03:00:00Z")},
+    "katrina": {**_from_meta("PD-2026-085-katrina", "katrina",
+                       "2026-09-08T12:00:00+09:00", "2026-09-08T03:00:00Z")},
     "wronghouse": {**_from_meta("PD-2026-070-wronghouse", "wronghouse",
                        "2026-08-24T12:00:00+09:00", "2026-08-24T03:00:00Z")},
     "florence": {
