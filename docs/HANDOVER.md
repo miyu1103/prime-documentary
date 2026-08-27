@@ -393,6 +393,10 @@ measurements that overturned older canon (narration pace, CTR, audience age, and
 the apparent long-form advantage is confounded by two outlier videos); EP70 chosen and then failed
 its own new gate at 77/100.
 
+**[2026-08-27 — 設計レーン（EP77-85）→ メインスレ](handover/2026-08-27-design-ep77-85-to-main.md)** — **EP77 は READY to build で組み立てスレへ引き渡し済み。EP80 は Root.tsx だけ残り。**
+9話とも画像は4K＋深度が完成し、Codex への追加発注はゼロ。1話を仕上げる手順、作った道具6つ、踏んだ罠9件、i2v レーンの生存確認コマンドまで1ファイルにある。
+**オーナー決定(2026-08-27): 83/84/85 は実写を集めない**（棚の客船映像は全部に会社名が読めるため、EP80 は候補80本→採用16本だった）。
+
 **[2026-08-25 (part 2) — EP77 を引き渡し条件まで詰めた](handover/2026-08-25-design-ep77-85-part2.md)** —
 EP77 keybridge の NOT READY を **6件 → 1件**。実写プール 11→**42本**（候補181本を全画面で1本ずつ読み、
 採用32本＝**歩留まり18%**）、プレート131枚を判定（**115 accept / 16 reject**、理由は時代ずれと国）、
