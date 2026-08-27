@@ -449,3 +449,5 @@ Long-form titles for EP78-82 were written this session and are **provisional pen
 罠: **GPU は1枚**でロックを消して割り込むと両方壊れる(EP77 と取り合って10時間後退)/フレームを
 0枚しか出さない毒プレートが次チャンクの先頭に居座る/`set -u` の `local a=$1 b=${a}` で無言死。
 起動前に `_chain_i2v_ep78_82.sh --selftest`。
+
+**[2026-08-27 — パッケージング(サムネ/タイトル)レーン 終了記録](handover/2026-08-27-packaging-lane-retro.md)** — EP83-85の題材確定(737 MAX/Three Mile Island/Katrina堤防・`EP83-85_SLATE.v004.md` APPROVED)、タイトル各話10案＋ベスト1(`EP83-85_TITLES.v004.md`)、生プレート30枚発注→納品29枚合格・**1枚不合格**(EP85 T06がコラージュ・`EP85_T06_REDO.txt` 未実行)、**A/B候補9枚合成済み**でオーナー目視合格。**selected は意図的に未確定**(選定はオーナー決定・引き継ぎ `EP83-85_THUMB_SELECTION_HANDOFF.v001.md`)。教訓3つ: **「ベスト」と言う前に候補空間を閉じる**(3回ひっくり返った)/**中央値の上位行を必ず読む**(冤罪193万の実体は釈放リアクション切り抜き・前提の動画は391視聴)/**判定は320pxで行う**(原寸で最良の板がフィードで読めない)。`check_thumb_subject_luma` の FAIL 8/9 は**意図的で直さない**(4.48%の勝者自身が通らない)。次の待ち: 8/27以降のCTR実測・9/7の改題実験判定。
