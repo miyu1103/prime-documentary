@@ -25,9 +25,11 @@
     "public safety",
     "true story"
   ],
-  "thumbnail": "episodes/PD-2026-073-uri/09_package/thumbnail.selected.v001.png",
+  "thumbnail": "episodes/PD-2026-073-uri/09_package/thumbnail.selected.v002.png",
   "thumbnail_headline": "246 dead / and the warnings were ten years old",
   "categoryId": 27,
   "defaultLanguage": "en",
-  "_built": "2026-08-25 by Claude Fable 5 (Claude Code): title from _title_draft.v001.json, description from description.draft.v001.txt (4,792 chars, check_packaging_claims PASS with 0 hard failures)."
+  "_built": "2026-08-25 by Claude Fable 5 (Claude Code): title from _title_draft.v001.json, description from description.draft.v001.txt (4,792 chars, check_packaging_claims PASS with 0 hard failures).",
+  "thumbnail_text": "$17,000",
+  "thumbnail_note": "v001 burned $9,000 over a domestic electricity meter. Both halves are real and they do not belong together: script.en.v001.md:396 gives $9,000 as the PUC wholesale price cap PER MEGAWATT-HOUR, and :402 gives $17,000 as the bills some households actually received. A meter is a household, so the number on it has to be the household number. v002 is the same plate with $17,000. The thumbnail config's own provenance field already said 'nine thousand dollars per megawatt-hour' -- it was filled in correctly and still let a per-MWh figure sit on a domestic meter. Provenance proves a number is in the script; it never proves the number belongs to the picture. Found 2026-08-28 by opening all 33 candidates across eleven episodes."
 }

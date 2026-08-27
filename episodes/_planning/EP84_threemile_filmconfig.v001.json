@@ -1,0 +1,135 @@
+{
+  "schema_version": "pd_filmconfig.v001",
+  "slug": "threemile",
+  "episode_id": "PD-2026-084-threemile",
+  "assets": "episodes/PD-2026-084-threemile/05_visuals/asset_manifest.v003.json",
+  "narration_index": "episodes/PD-2026-084-threemile/06_audio/narration_index.v001.json",
+  "narration": "threemile/narration.mp3",
+  "captions": "episodes/PD-2026-084-threemile/08_edit/captions.final.v001.srt",
+  "out": "remotion/src/data/threemile_film.json",
+  "leadSeconds": 0,
+  "openingVariant": "overlay",
+  "hookSeconds": 12.51,
+  "hookLine": "At four in the morning a pump stops, and a valve opens exactly as designed.",
+  "captionLeadSeconds": 0.0,
+  "figures_by_section": {
+    "HOOK": [
+      {
+        "kind": "lowerthird",
+        "primary": "AI-assisted visualization",
+        "secondary": "symbolic reconstruction, no real likenesses",
+        "_row": "invariant-11"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["THIRTEEN SECONDS LATER,", "THE VALVE DID NOT CLOSE."],
+        "style": "emphasis",
+        "emphasisWords": ["THE VALVE DID NOT CLOSE."],
+        "_row": "TM-404"
+      }
+    ],
+    "ACT_1": [
+      {"kind": "acttitle", "title": "NINETY SECONDS OF ORDINARY", "kicker": "ACT ONE", "index": 1, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["28 MARCH 1979.", "THIRTY-SIX SECONDS PAST FOUR IN THE MORNING."], "style": "emphasis", "emphasisWords": ["28 MARCH 1979."], "_row": "TM-401, TM-402"},
+      {"kind": "stat", "value": 97, "suffix": " PERCENT", "label": "power, on a plant that was doing nothing unusual that morning", "topLabel": "IT WAS RUNNING AT", "_row": "TM-402"},
+      {"kind": "kinetic", "lines": ["NOT A NUCLEAR PROBLEM.", "A PLUMBING PROBLEM."], "style": "emphasis", "emphasisWords": ["A PLUMBING PROBLEM."], "_row": "script.en.v001.md:32"},
+      {"kind": "stat", "value": 8, "label": "seconds in, the control rods dropped and the chain reaction stopped", "topLabel": "THE REACTOR SCRAMMED", "_row": "TM-403"},
+      {"kind": "stat", "value": 13, "label": "seconds, when the pressure came back down to two thousand two hundred and five pounds", "topLabel": "THE VALVE SHOULD HAVE CLOSED AT", "_row": "TM-404"},
+      {"kind": "kinetic", "lines": ["IT DID NOT.", "THE LIGHT ON THE PANEL SAID IT DID."], "style": "emphasis", "emphasisWords": ["THE LIGHT ON THE PANEL SAID IT DID."], "_row": "TM-404, script.en.v001.md:50"},
+      {"kind": "kinetic", "lines": ["THE LIGHT WAS NOT WIRED TO THE VALVE.", "IT REPORTED THE SIGNAL SENT TO IT."], "style": "emphasis", "emphasisWords": ["IT REPORTED THE SIGNAL SENT TO IT."], "_row": "script.en.v001.md:50, script.en.v001.md:52"},
+      {"kind": "stat", "value": 32000, "label": "gallons gone in the first hundred minutes, over a third of the whole coolant system", "topLabel": "SOME", "_row": "TM-405"},
+      {"kind": "kinetic", "lines": ["TWO HOURS AND TWENTY-TWO MINUTES.", "THE WATER WAS LEAVING. THE PANEL SAID IT WAS NOT."], "style": "emphasis", "emphasisWords": ["TWO HOURS AND TWENTY-TWO MINUTES."], "_row": "TM-405, TM-411"},
+      {"kind": "quote", "quote": "or if they had simply left on the plant's high pressure injection pumps, the accident at Three Mile Island would have remained little more than a minor inconvenience", "attribution": "The President's Commission, on the first minutes", "_row": "TM-406"},
+      {"kind": "quote", "quote": "One light was covered by a yellow maintenance tag. No one knows why the second light was missed.", "attribution": "The Commission, on the two lights nobody saw at fourteen seconds", "_row": "TM-407"},
+      {"kind": "compbars", "items": [{"label": "HIGH-PRESSURE INJECTION, GALLONS A MINUTE", "value": 1000}, {"label": "AFTER AN OPERATOR THROTTLED IT, UNDER", "value": 100}], "_row": "TM-409"},
+      {"kind": "kinetic", "lines": ["THE INSTRUMENT TOLD THE TRUTH ABOUT THE PRESSURISER.", "IT LIED ABOUT THE REACTOR."], "style": "emphasis", "emphasisWords": ["IT LIED ABOUT THE REACTOR."], "_row": "script.en.v001.md:80"},
+      {"kind": "stat", "value": 12, "suffix": " FEET", "label": "of core, as much as two-thirds of it standing uncovered by a quarter to seven", "topLabel": "THE CORE IS", "_row": "TM-412"},
+      {"kind": "kinetic", "lines": ["THE REGULATOR'S REGIONAL OFFICE FOUND OUT", "WHEN IT OPENED FOR THE DAY."], "style": "emphasis", "emphasisWords": ["WHEN IT OPENED FOR THE DAY."], "_row": "TM-413"},
+      {"kind": "kinetic", "lines": ["THE SAME PROBLEM HAD HAPPENED HERE BEFORE.", "AT LEAST TWICE."], "style": "emphasis", "emphasisWords": ["AT LEAST TWICE."], "_row": "TM-414"}
+    ],
+    "ACT_2": [
+      {"kind": "acttitle", "title": "SUPPOSED TO BE SEEN", "kicker": "ACT TWO", "index": 2, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["A CONTROL ROOM IS AN ARGUMENT", "MADE IN FURNITURE."], "style": "emphasis", "emphasisWords": ["MADE IN FURNITURE."], "_row": "script.en.v001.md:116"},
+      {"kind": "stat", "value": 100, "label": "alarms in the first few minutes, with no system to suppress the unimportant ones", "topLabel": "MORE THAN", "_row": "TM-501"},
+      {"kind": "kinetic", "lines": ["ONE HUNDRED. IN MINUTES.", "NOTHING TO SAY WHICH ONES MATTERED."], "style": "emphasis", "emphasisWords": ["NOTHING TO SAY WHICH ONES MATTERED."], "_row": "TM-501"},
+      {"kind": "quote", "quote": "there was no direct indication that the combination of pressure and temperature meant that the cooling water was turning into steam", "attribution": "The Commission, on what the wall did not say", "_row": "TM-502"},
+      {"kind": "kinetic", "lines": ["BOTH NUMBERS WERE ON THE WALL.", "THE MEANING OF THE TWO TOGETHER WAS NOT."], "style": "emphasis", "emphasisWords": ["THE MEANING OF THE TWO TOGETHER WAS NOT."], "_row": "TM-502"},
+      {"kind": "quote", "quote": "the control room was not adequately designed with the management of an accident in mind", "attribution": "The Commission's formal finding", "_row": "TM-503"},
+      {"kind": "kinetic", "lines": ["THE DANGER OF TOO MANY ALARMS", "WAS RECOGNISED AT THE DESIGN STAGE."], "style": "emphasis", "emphasisWords": ["WAS RECOGNISED AT THE DESIGN STAGE."], "_row": "TM-503"},
+      {"kind": "kinetic", "lines": ["SOME KEY INDICATORS", "WERE ON THE BACK OF THE PANEL."], "style": "emphasis", "emphasisWords": ["WERE ON THE BACK OF THE PANEL."], "_row": "TM-504"},
+      {"kind": "kinetic", "lines": ["INSTRUMENTS WENT OFF-SCALE.", "THEY WERE NOT BUILT TO FOLLOW AN ACCIDENT."], "style": "emphasis", "emphasisWords": ["THEY WERE NOT BUILT TO FOLLOW AN ACCIDENT."], "_row": "TM-504"},
+      {"kind": "kinetic", "lines": ["A YEAR EARLIER AN OPERATOR COMPLAINED.", "NO CORRECTIVE ACTION WAS TAKEN."], "style": "emphasis", "emphasisWords": ["NO CORRECTIVE ACTION WAS TAKEN."], "_row": "TM-506"},
+      {"kind": "quote", "quote": "I would have liked to have thrown away the alarm panel. It wasn't giving us any useful information.", "attribution": "One of the men who was in that room, to the Commission", "_row": "TM-507"},
+      {"kind": "quote", "quote": "Each was a product of his training -- training that did not adequately prepare them to cope with the accident at TMI-2.", "attribution": "The Commission, on the four men on that shift", "_row": "TM-415"},
+      {"kind": "quote", "quote": "it is quite possible, perhaps probable, that core uncovery and possible fuel damage would have occurred", "attribution": "An engineer at the reactor's manufacturer, seventeen months early", "_row": "TM-608"}
+    ],
+    "ACT_3": [
+      {"kind": "acttitle", "title": "THE TEST THAT ANSWERED AS ASKED", "kicker": "ACT THREE", "index": 3, "_row": "structure"},
+      {"kind": "stat", "value": 1, "label": "gallon a minute from unidentified sources, written into the licence itself", "topLabel": "THE LIMIT WAS", "_row": "TM-103"},
+      {"kind": "stat", "value": 4, "label": "hours to bring the leakage back inside the limit, or shut the reactor down", "topLabel": "AN ACTION STATEMENT ALLOWED", "_row": "TM-103"},
+      {"kind": "kinetic", "lines": ["A SHUTDOWN IS NOT A REBUKE.", "IT IS A BILL, ARRIVING DAILY."], "style": "emphasis", "emphasisWords": ["IT IS A BILL, ARRIVING DAILY."], "_row": "script.en.v001.md:176"},
+      {"kind": "kinetic", "lines": ["NOT GUIDELINES FROM A REGULATOR.", "THE PROMISES THE COMPANY MADE ABOUT ITSELF."], "style": "emphasis", "emphasisWords": ["THE PROMISES THE COMPANY MADE ABOUT ITSELF."], "_row": "TM-101"},
+      {"kind": "quote", "quote": "keep the facility at a safe temperature, and transfer heat generated by the nuclear reaction", "attribution": "What the reactor coolant is for, in the charge's own order", "_row": "TM-102"},
+      {"kind": "kinetic", "lines": ["MEASURE WHAT WENT IN. MEASURE WHAT CAME OUT.", "THE DIFFERENCE IS THE LEAK."], "style": "emphasis", "emphasisWords": ["THE DIFFERENCE IS THE LEAK."], "_row": "script.en.v001.md:188"},
+      {"kind": "quote", "quote": "an accurate and meaningful reactor coolant system water inventory balance procedure to demonstrate that unidentified leakage was within allowable limits", "attribution": "What the licence and the regulations both required", "_row": "TM-201, TM-202"},
+      {"kind": "kinetic", "lines": ["ACCURATE AND MEANINGFUL.", "TWO WORDS DOING ALL THE WORK."], "style": "emphasis", "emphasisWords": ["ACCURATE AND MEANINGFUL."], "_row": "TM-202, script.en.v001.md:192"},
+      {"kind": "kinetic", "lines": ["7 NOVEMBER 1983.", "A FEDERAL GRAND JURY RETURNED AN INDICTMENT."], "style": "emphasis", "emphasisWords": ["7 NOVEMBER 1983."], "_row": "TM-206"},
+      {"kind": "stat", "value": 11, "label": "counts against the company that ran the plant, four and a half years after the accident", "topLabel": "THERE WERE", "_row": "TM-206, script.en.v001.md:196"},
+      {"kind": "quote", "quote": "the defendant company continued to use such inaccurate and meaningless procedure in an effort to generate results which appeared to establish that reactor coolant leakage was within allowable limits", "attribution": "Count 2, in the grand jury's own words", "_row": "TM-203"},
+      {"kind": "kinetic", "lines": ["THAT IS NOT A CLERICAL FAILURE.", "THAT IS A TEST RUN TO PRODUCE AN ANSWER."], "style": "emphasis", "emphasisWords": ["THAT IS A TEST RUN TO PRODUCE AN ANSWER."], "_row": "script.en.v001.md:208"},
+      {"kind": "quote", "quote": "it goes to the very heart of the leak rate test, the primary method of measuring leakage from unidentified sources", "attribution": "The prosecutor, on why that count and no other", "_row": "TM-314"},
+      {"kind": "kinetic", "lines": ["THE CHARGE ENDS ON 28 MARCH 1979.", "IT DOES NOT REACH INTO THE ACCIDENT."], "style": "emphasis", "emphasisWords": ["IT DOES NOT REACH INTO THE ACCIDENT."], "_row": "TM-203"},
+      {"kind": "kinetic", "lines": ["FOUR YEARS AND SEVEN MONTHS LATER.", "ON THE EVE OF THE STATUTE OF LIMITATIONS."], "style": "emphasis", "emphasisWords": ["ON THE EVE OF THE STATUTE OF LIMITATIONS."], "_row": "TM-206, script.en.v001.md:228"}
+    ],
+    "ACT_4": [
+      {"kind": "acttitle", "title": "WHAT IT COST", "kicker": "ACT FOUR", "index": 4, "_row": "structure"},
+      {"kind": "kinetic", "lines": ["29 FEBRUARY 1984.", "COURTROOM NUMBER TWO, HARRISBURG."], "style": "emphasis", "emphasisWords": ["29 FEBRUARY 1984."], "_row": "TM-313, script.en.v001.md:236"},
+      {"kind": "compbars", "items": [{"label": "PLEADED GUILTY, COUNTS", "value": 1}, {"label": "NO CONTEST, COUNTS", "value": 6}, {"label": "DISMISSED, COUNTS", "value": 4}], "_row": "TM-301, TM-302, TM-303"},
+      {"kind": "kinetic", "lines": ["AMONG THE DISMISSED, COUNT 11.", "THE ONLY COUNT UNDER TITLE 18."], "style": "emphasis", "emphasisWords": ["THE ONLY COUNT UNDER TITLE 18."], "_row": "TM-205, TM-305"},
+      {"kind": "kinetic", "lines": ["NEVER CONVICTED OF LYING TO THE REGULATOR.", "CONVICTED OF RUNNING A MEANINGLESS TEST."], "style": "emphasis", "emphasisWords": ["CONVICTED OF RUNNING A MEANINGLESS TEST."], "_row": "TM-301, script.en.v001.md:248"},
+      {"kind": "stat", "value": 45000, "prefix": "$", "label": "the total fine on all counts, to be paid within thirty days", "topLabel": "THE SENTENCE", "_row": "TM-304"},
+      {"kind": "kinetic", "lines": ["FORTY-FIVE THOUSAND DOLLARS.", "AGAINST ONE TO TWO BILLION IN DAMAGE."], "style": "emphasis", "emphasisWords": ["AGAINST ONE TO TWO BILLION IN DAMAGE."], "_row": "TM-304, TM-714"},
+      {"kind": "stat", "value": 1000000, "prefix": "$", "label": "into escrow for the state emergency management agency, as a material condition of the plea", "topLabel": "AND SEPARATELY", "_row": "TM-311"},
+      {"kind": "kinetic", "lines": ["THAT MILLION WAS NOT A FINE.", "IT WAS A PAYMENT FOR THE ABILITY TO WARN PEOPLE."], "style": "emphasis", "emphasisWords": ["IT WAS A PAYMENT FOR THE ABILITY TO WARN PEOPLE."], "_row": "TM-311, script.en.v001.md:266"},
+      {"kind": "stat", "value": 20, "suffix": " MILES", "label": "around the station, the ring the emergency planning money was for", "topLabel": "WITHIN", "_row": "TM-311"},
+      {"kind": "kinetic", "lines": ["AN ADVISORY, NOT AN EVACUATION.", "PREGNANT WOMEN AND PRESCHOOL CHILDREN, WITHIN FIVE MILES."], "style": "emphasis", "emphasisWords": ["AN ADVISORY, NOT AN EVACUATION."], "_row": "TM-709"},
+      {"kind": "quote", "quote": "was not commercially available in the United States", "attribution": "The Commission, on potassium iodide at the time of the accident", "_row": "TM-713"},
+      {"kind": "quote", "quote": "Starting Saturday, the state emergency management director was no longer included in these meetings", "attribution": "The Commission, on who was left out of the room", "_row": "TM-712"},
+      {"kind": "quote", "quote": "As the evidence accumulated, it became clear that the fundamental problems are people-related problems and not equipment problems.", "attribution": "The Commission, on what was actually broken", "_row": "TM-603"},
+      {"kind": "quote", "quote": "the human beings who manage and operate the plants constitute an important safety system", "attribution": "The Commission, on the thing nobody had put on the diagram", "_row": "TM-605"},
+      {"kind": "kinetic", "lines": ["NOBODY DIED AT THREE MILE ISLAND.", "THE EFFECTS OF A FEW REMS OR LESS ARE NOT KNOWN."], "style": "emphasis", "emphasisWords": ["THE EFFECTS OF A FEW REMS OR LESS ARE NOT KNOWN."], "_row": "TM-703, TM-704"},
+      {"kind": "quote", "quote": "given all the above deficiencies, we are convinced that an accident like Three Mile Island was eventually inevitable", "attribution": "The Commission, in its overview", "_row": "TM-607"}
+    ],
+    "ENDING": [
+      {
+        "kind": "kinetic",
+        "lines": ["ONE OF THEM WAS WIRED TO THE ORDER SENT.", "NOT TO THE VALVE."],
+        "style": "emphasis",
+        "emphasisWords": ["NOT TO THE VALVE."],
+        "_row": "script.en.v001.md:362"
+      },
+      {
+        "kind": "kinetic",
+        "lines": ["EVERY SYSTEM YOU RELY ON HAS A LIGHT ON IT.", "SOMEONE DECIDED WHAT IT IS WIRED TO."],
+        "style": "emphasis",
+        "emphasisWords": ["SOMEONE DECIDED WHAT IT IS WIRED TO."],
+        "_row": "script.en.v001.md:372"
+      }
+    ]
+  },
+  "_declared_values": {
+    "leadSeconds": "0 -- VC-0001 is voiced from frame 0; 06_audio/narration_index.v001.json puts the HOOK at 0.0s.",
+    "openingVariant": "'overlay' -- BrandOpening over the hook's settle, as on EP74-EP83. The voice does not stop.",
+    "captionLeadSeconds": "0.0 -- 08_edit/captions.final.v001.srt will carry the house 0.60 s lead when it is written; this config adds none on top.",
+    "hookSeconds": "MEASURED 2026-08-28 from 06_audio/narration_index.v001.json (296 chunks, total_seconds 1545.618). Section HOOK spans 0.0 to 12.510 across four chunks (VC-0001..VC-0004). ACT_1 opens at 14.310 (VC-0005) and ends 349.246; ACT_2 351.046 to 581.090 (VC-0076, 48 chunks); ACT_3 582.890 to 885.288 (VC-0124, 61 chunks); ACT_4 887.088 to 1488.012 (VC-0185, 102 chunks); ENDING 1489.812 to 1545.614 (VC-0287, 10 chunks). Not estimated. The hook is four sentences and runs longer than EP83's 8.773 because the fourth line is the question the film is built on; the number is what the voice actually did.",
+    "hookLine": "VC-0001 verbatim.",
+    "section_durations": "HOOK 12.510 s / ACT_1 334.936 s / ACT_2 230.044 s / ACT_3 302.398 s / ACT_4 600.924 s / ENDING 55.802 s. Card counts were set from these durations, not from a constant: ACT_2 is the shortest act and carries 14 cards (one per 16.4 s), ACT_4 is the longest and carries 17 (one per 35.3 s). Every act is inside episode_spec's figure_beats_per_act [13, 17], which check_episode_inputs enforces as a floor of 13.",
+    "runtime_deviation": "The narration measures 1545.618 s against episode_spec's declared runtime_seconds band of [1740, 2100] -- 194 s under the floor -- and the script is under the declared word band. BOTH ARE ALREADY ACCEPTED by the owner in approvals/APR-0001.json. Nothing in this config pads a section, stretches a hold or repeats a beat to close that gap, and no declared value in episode_spec was lowered to make it green.",
+    "not_yet_on_disk": "`assets` and `captions` name the files the staging and caption steps will write (asset_manifest.v003.json, captions.final.v001.srt). Neither exists yet, which is the same state EP78-EP83 were in when their filmconfigs were authored -- the config declares the contract, the later step fills it. 06_audio/narration_index.v001.json and remotion/public/threemile/narration.mp3 (1545.618 s) DO exist and were read for this file, as did the 181 reviewed plates in remotion/public/threemile/img/ (5 rejected plates are in img/rejected/ and are not referenced here).",
+    "figures_by_section": "Authored 2026-08-28 from 03_script/script.en.v001.md and episodes/_planning/EP84_threemile_FACTS_LEDGER.v001.md. Counts are 17/14/16/17 across ACT_1..ACT_4, HOOK 2 and ENDING 2; 68 cards in total. EVERY number on a card is a number the narration speaks -- 97, 8, 13, 32000, 1000, 100, 12, 1, 4, 11, 45000, 1000000 and 20 all appear in the script -- and every `stat` `value` is a NUMBER, so nothing can render as NaN. No `stat` carries a `group` key: the FigureSpec union gives `group` to `numberticker` only, and this config uses no numberticker.",
+    "ranges_are_never_stats": "Every range is drawn as a kinetic pair or a comparison, never squeezed into one number card: the thousand-gallons-a-minute injection against the under-a-hundred throttle-back is a compbars row (TM-409, quoted figures only -- the throttle-back INTERVAL is OCR-corrupted in TM-409 and appears nowhere); the one-to-two-billion damage estimate is a kinetic line beside the fine (TM-714); the three-to-four-thousand-degree core temperature and the three-to-four rem worker doses are carried by the narration and are not drawn at all; the guilty/no-contest/dismissed split is a compbars row of three counts (TM-301, TM-302, TM-303).",
+    "no_OP_section": "episode_spec's section_vocabulary lists OP, but narration_index has no OP chunks -- the brand opening is an overlay on the HOOK, not a spoken section. A card there would have no window to live in. episode_spec's ae_beats AE003 is an OP title card and is an After Effects job, not a figure beat; it is unaffected by this file.",
+    "quarantine": "Read against episode_spec's forbidden_claims, one by one. (1) No card says anybody died or was made ill; the only health card carries the Commission's finding and its caveat ON THE SAME CARD, so TM-703 can never appear without TM-704 (they are the two lines of one kinetic beat). (2) No card connects the leak-rate count to the accident: the ACT_3 card states that the charge ENDS on 28 March 1979 and does not reach into it (TM-203), which is the opposite of a causal claim. (3) No card says the company was convicted of falsifying records or of any Title 18 offence -- the ACT_4 cards say Count 11 was dismissed, that it was the only count under Title 18, and that the company was never convicted of lying to the regulator (TM-205, TM-305, script:248). (4) No card calls the million a fine; two cards say the opposite (TM-311). The fine card says $45,000 (TM-304). (5) No card mentions the separate individual case, and no individual is named or depicted anywhere in this config. (6) No card blames the operators: the ACT_2 quote is the Commission's 'product of his training' finding (TM-415) and the ACT_4 quote is 'people-related problems' with 'the human beings ... constitute an important safety system' beside it (TM-603, TM-605). (7) The 3,300 person-rem figure appears on no card; no person-rem figure is drawn at all. (8) No reactor-order or cancellation statistic appears (TM-807). (9) The advisory card says 'AN ADVISORY, NOT AN EVACUATION' and names the two populations and the five-mile ring (TM-709). (10) Neither OCR-corrupted figure is on a card: TM-409's throttle-back interval is absent (only the two verbatim flow figures are drawn) and TM-505's printer lag is absent entirely -- there is no printer card. No card carries a company mark, a utility name, a readable document or a legible screen.",
+    "act_4_selection": "ACT_4 runs 601 seconds and carries the plea, the money, the advisory, the disagreement among officials, the health findings and the Commission's last word. The 17 cards are spaced across that whole span rather than clustered on the courtroom: the last four sit on TM-603, TM-605, TM-703/TM-704 and TM-607. The judge's $85,000-maximum reasoning (TM-312), the mistaken burst-of-radiation interpretation (TM-711), the mental-health finding (TM-707), INPO (TM-802, TM-803), the 1980 action plan (TM-804, TM-805) and public confidence (TM-806) are carried by the narration and by the description rather than by a card."
+  }
+}
