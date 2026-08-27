@@ -253,6 +253,33 @@ EP65 は実写7本で出荷し、AE は一度も使わなかった。文書に�
 
 ### 制作・素材
 
+20a. **i2v は元プレートに無い人物を生成する。既定プロンプトだと 27%。**（2026-08-27 実測）
+    EP77 keybridge は組み込みの `SCENE_PROMPT`（"atmospheric living environment"）＋既定 neg で
+    **112本中30本**に人が湧いた。無人の会議室にスーツの男、無人の法廷ベンチに2人、
+    コンクリート橋桁だけの絵に男、設計図のホワイトボードに女性。
+    EP80 concordia は下のプロンプトで **182本中0本**。母数が違うので断定はできないが、
+    定義は `scripts/_chain_i2v_ep78_82.sh` の `BASE_PROMPT` / `neg_for()` にあり、
+    `I2V_PROMPT` / `I2V_NEG` にそのまま渡せる。**新規の話数はこれを使うこと。**
+
+    - prompt: `the scene stays exactly as it is, only ambient motion: haze and air drift slowly,
+      water surface ripples, light flickers gently, a very slow subtle camera push-in,
+      archival documentary footage, nothing new enters the frame`
+    - neg: `new person, people appearing, man appearing, woman appearing, human face, crowd,
+      walking figure, silhouette of a person, animal, bird, vehicle entering frame,
+      new object appearing, text, lettering, watermark, logo, morphing, warping, deformed,
+      extra limbs, cartoon, low quality, jitter, scene change, cut to another shot,`
+      ＋その話数の `forbidden_subjects`
+
+    **`check_motion_saturation` はこれを一切検出しない**（色しか測らない。ツール自身が
+    「クリップが何を映しているかについては何も言わない」と出力する）。**検出は目視だけ。**
+    手順は `scripts/qc_i2v_tail_vs_plate.py`＝終端フレームを元プレートの真下に貼って全数対照。
+
+20b. **人物禁止ネガは、元から写っている人まで消す。**（2026-08-27 実測）
+    EP77 の H146 で、元プレートにいた作業員の腕（黄色い上着＋黒手袋）が i2v 後に消えた。
+    H135 / H137 / H145 では保持されたので常にではない。
+    **プレートに人が写っている絵には人物禁止ネガを使わない。** 無人のプレートにだけ使う。
+    正しい言い方は「すでに写っている人はそのまま、新しい人だけ入れない」。
+
 20c. **アーカイブ実写の「顔」はファイル名では絶対に分からない。** EP65 marmet の
     `AR-10159563__woman_sitting_on_a_chair_while_reading_a_magazine.mp4` は、
     **無地の壁の前に一人で座り、顔がはっきり写り、カメラに笑いかける実在の人物**だった。
