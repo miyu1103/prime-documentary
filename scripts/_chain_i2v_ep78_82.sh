@@ -74,6 +74,25 @@ QUEUE="concordia:N:185 station:S:184 valdez:V:179 colgan:C:156 alaska261:K:190 m
 
 delivered(){ ls "remotion/public/$1/motion/"*.mp4 2>/dev/null | grep -v '_depth' | wc -l | tr -d ' '; }
 
+# Frame dirs that already carry a finished clip's worth of pngs. This is the SAME thing the
+# inner chain's count_done() measures, and it is why the inner loop has to be given a target it
+# can actually reach. MEASURED 2026-08-30: concordia took 34 minutes to make its last TWO clips.
+# count_done() counts /c/Users/aab15/ae-demo/wan_frames_<slug>_*, but THIS script runs
+# reclaim_i2v_frames.py --apply, which deletes the frame dir of every clip whose mp4 is already
+# on disk. So after a reclaim count_done reported 2 against a TARGET of 185, never converged, and
+# ran all 60 attempts -- restarting ComfyUI on each one -- before giving up. Roughly 20-28 wasted
+# minutes per episode, about three hours across the eight, and ~45 needless ComfyUI restarts.
+# The inner chain is invoked with --only, so the most it can ever reach is
+# (frames already present) + (plates we asked for). Give it that.
+frames_present(){
+  local n=0 d
+  for d in /c/Users/aab15/ae-demo/wan_frames_$1_*; do
+    [ -d "$d" ] || continue
+    if [ "$(ls "$d"/*.png 2>/dev/null | wc -l)" -ge 40 ]; then n=$((n + 1)); fi
+  done
+  echo "$n"
+}
+
 # POISON PLATES. Measured 2026-08-26 on concordia N093: ComfyUI accepted the prompt, wrote
 # ZERO files to output/wanout, and comfy_wan polled a job that never produced anything until
 # i2v_episode_batch's 600 s clip timeout fired and exited the chunk. Because is_done() is false
@@ -187,10 +206,15 @@ for item in $QUEUE; do
     round=$((round + 1))
     wait_for_gpu "$SLUG"
     say "$SLUG: round $round -- $(echo "$ONLY" | tr ',' '\n' | wc -l) plate(s) pending (delivered=$(delivered "$SLUG")/$TARGET)"
+    # Not "$TARGET": see frames_present() above. The inner loop runs until count_done
+    # reaches the number it is given, and with --only it can never reach the episode's full
+    # plate count once reclaim has deleted the finished frame dirs.
+    N_ONLY=$(echo "$ONLY" | tr ',' '\n' | wc -l | tr -d ' ')
+    INNER_TARGET=$(( $(frames_present "$SLUG") + N_ONLY ))
     I2V_SRC="$SRC" \
     I2V_PROMPT="$BASE_PROMPT" \
     I2V_NEG="$(neg_for "$SLUG")" \
-      scripts/_chain_i2v_robust.sh "$SLUG" "$TARGET" "$KIND" 12 "$ONLY" >> "$LOG" 2>&1
+      scripts/_chain_i2v_robust.sh "$SLUG" "$INNER_TARGET" "$KIND" 12 "$ONLY" >> "$LOG" 2>&1
     harvest_timeouts "$SLUG" "$KIND"
     after=$(delivered "$SLUG")
     say "$SLUG: round $round end delivered=$after/$TARGET"
