@@ -295,3 +295,103 @@ either statement instead of reasoning from source.
 Commits this session: CONFIG re-date only. `runs/` and `remotion/public/` are both gitignored, so
 the reviews, the station decide file and the staged pool are local artefacts — they are not
 backed up by a push.
+
+---
+
+## 10. What happened after the owner ruled (added 21:10 JST)
+
+The owner was shown the full read and gave three answers. All three are recorded in
+`episodes/PD-2026-080-concordia/approvals/APR-0001.json` together with the evidence they were
+given, because a ruling that lives only in chat is a ruling nobody can audit later.
+
+1. **concordia's funnel ships as it is.** Fastest route back to a dated slot.
+2. **lacmegantic and uri: fix the dangerous cuts only** — readable third-party marks and
+   identifiable faces. Season mismatches, near-black holes and clipped cards are recorded, not
+   fixed.
+3. **A distasteful juxtaposition does not stop a ship; record it.** General, not episode-specific.
+   The four blocking classes remain the only grounds for refusal.
+
+### concordia is BOOKED — video `o98hKLTK93g`, 2026-08-31 12:00 JST
+
+Verified on the channel rather than from a manifest: `processed / succeeded / private /
+publishAt 2026-08-31T03:00:00Z`, **0 problems**. It sat in `processing` for six minutes after
+upload; "uploaded" is not "shippable" and the difference was watched rather than assumed.
+
+Nothing was deleted to get there. All 21 findings survive verbatim under `recorded_deviations`,
+and the REJECT verdict is kept at `concordia_shipped_frames_review.REJECT_20260830.json`.
+
+**The machine refused anyway, correctly, and the reason is worth keeping.**
+`packaging_claims[description]` came back CONTRADICTED, class `factual_support` — a class the
+rulings do not cover. The cause was real: that check is **sentence-scoped by design**, but the
+description packed into one sentence what the film says in three (`script.en.v001.md:25-27`), so
+no single sentence carried *passengers* + *crew* + *1,023*, and the checker reached five minutes
+away for *"Not on the passengers. Not on the crew on the decks"* — a line about where the report
+puts the blame, not about a count. The description now states the three facts the way the film
+states them. **No threshold and no check was touched**; `refuse` → `permit`, blocking 1 → 0.
+
+Two more things were verified before booking rather than waved through: the AI disclosure
+required by invariant 11 **is** in the description (so the end card's missing AI line is
+cosmetic), and the `KNOWN ON BOARD, MIN 37` figure a reader flagged as a possible contradiction
+matches `script.en.v001.md:261` exactly. That one cleared a suspicion rather than confirming it,
+which is the point of checking.
+
+### EP72 and EP73 rebuilt, 23 clips removed, both clean, rendering
+
+| | blocked | audit before → after | diversity | max reuse |
+|---|---|---|---|---|
+| lacmegantic | 16 clips / 18 cuts | 18 → **0** | 0.69 | 2 |
+| uri | 7 clips / 12 cuts | 12 → **0** | 0.70 | 2 |
+
+Thresholds are 0.40 and 4, so both pass with room. `audit_films_vs_blocklist` was run **before**
+the rebuild specifically to watch it fail — a check never seen failing is decoration.
+
+**Two traps worth passing on.**
+
+*Order.* Pruning `factory` alone and rebuilding died with `14 cut(s) reference an unreadable
+clip`: the asset manifest still pointed at files that had been moved. The order in
+`_finish_episode.sh` is **prune factory + img + motion → `build_asset_manifest_motionfirst` →
+the film**. Read the pipeline before deciding the order; I did not, and paid one failed build.
+
+*The archive restores what you remove.* All seven blocked plates were still in
+`E:/pd-media/assets/ai_video/<slug>/motion/` and `assemble_episode_i2v.py` put them back on every
+run — the prune only won because it happens after the assemble. They are now quarantined in
+`motion_blocked_20260830/` alongside. This is the trap §3 of the earlier handover recorded for
+keybridge; it is general, not keybridge-specific.
+
+### Rendering: `scripts/_render_after_blocklist_20260830.sh`
+
+lacmegantic → uri → keybridge, back to back, started 20:57. **Deliberately not
+`_render_queue_tonight.sh`**, which also renders concordia — now booked against sha `f0add8ed`.
+New bytes would break the binding its receipt and its review both name. *Never re-render a booked
+master.*
+
+keybridge has **not** had its shipped frames read. On tonight's evidence, do not assume it is
+clean because its i2v was audited.
+
+### The GPU, and a documented trap that still bit
+
+The chain was stopped to free the card. Killing the parent processes left VRAM at **18 GB / 100%**
+— `_chain_i2v_robust.sh`'s own `kill_comfy()` comment explains exactly this: the process holding
+the card is a *child* `Python310/python.exe main.py`, and killing the parent orphans it. A tree
+kill plus an orphan sweep brought the card to 2,119 MiB, which was measured before launching.
+
+Resume state: **concordia 184 · station 184 · valdez 40 · colgan/alaska261/max737/threemile/
+katrina 0.** 1,023 clips remain. Restart with `bash scripts/_chain_i2v_ep78_82.sh` once the render
+queue is done.
+
+### i2v: the 28-minutes-per-episode waste is FIXED (`823dfbe2`)
+
+The inner chain is now given `frames_present() + |ONLY|` instead of the episode's full plate
+count, because with `--only` it can never reach the full count once `reclaim_i2v_frames.py` has
+deleted the finished frame dirs. Measured after the edit: valdez `frames_present=39`, 139 pending
+→ target 178; the old code asked for 179. Applied **while the chain was stopped** — it could not
+be applied earlier because bash reads a running script incrementally from disk.
+
+### Still open
+
+- `Figures.tsx` `Timeline` overflow — **not touched on purpose.** Editing it mid-queue would give
+  three renders three different bundles. Do it between queues, then prove it on lacmegantic 25:05
+  and uri 26:45.
+- The `lowerthird` both-ends clipping — still not diagnosed. See §2; reproduce before patching.
+- After each render: **re-extract the sheets and read them again.** Tonight three masters passed
+  every machine gate and carried 139 defects between them.
