@@ -78,8 +78,14 @@ bash scripts/_chain_i2v_ep78_82.sh          # read its header first; it resumes 
 Two episodes cannot render until their own blocker clears:
 - **EP81 station: zero stock clips, floor is 40.** A staging agent got as far as reading 12 of
   135 strips and died on the account's weekly limit. Its queries and candidate list are on disk.
-- **EP77 keybridge: render started 05:47 on 8/28 and produced no master.** Cause unknown —
-  check `out_finish_keybridge.log` before re-running.
+- **EP77 keybridge: FIXED, needs a re-render.** Its 05:47 render stopped at `[4b] polish
+  captions` saying *"only 1 of 358 narration chunks line up with a cue start -- this srt does
+  not belong to this narration index"*. That was false and the falsity was mine: I stripped
+  `<!-- KB-113 -->` markers out of the captions on 8/27 so they could not be burned into the
+  picture, and the narration index still carries them, so the comparison measured 5,030
+  narration words against 4,768 cue words. `_lead_words` in `polish_captions_srt.py` now
+  strips markers from both sides. Re-run: lead measured over 275 of 358 chunks, cues 504 →
+  445, orphans 36 → 0, dangling ends 74 → 0. **Just render it.**
 
 ---
 
@@ -149,6 +155,7 @@ uploader takes the highest `thumbnail.selected.v*.png`):
 | descriptions over YouTube's 5,000 cap | colgan 6,279, valdez 5,591 — both would have been rejected at the upload call. Now a hard problem in `check_packaging_qc`. |
 | `check_packaging_claims` never read 11 episodes' thumbnail wording | keyed on `thumbnail_headline` vs `thumbnail_text`. Fixed; it immediately caught morandi. |
 | `apply_plate_decision` erased the reviewer | colgan's 166 plates said "unknown". Fixed and repaired. |
+| `polish_captions_srt` compared a cleaned srt against an uncleaned index | keybridge's render died on it. Both sides now normalised. |
 | `check_still_luma.py` is new | a backdrop cut in as a picture is a 4-second hole. Found 3 in lacmegantic before its render. Dark-SHARE rule added after a human beat the check on EP81 S080. |
 
 ---
@@ -179,8 +186,22 @@ uri (74, bound to superseded bytes — redo).
 2. **Restart the i2v chain.** 54 hours of GPU stand between now and EP82/78/79/83/84/85.
 3. **EP81 station stock footage** — 0 of 40. Resume the staging agent; its candidate list and
    135 strips are on disk.
-4. **EP77 keybridge** — find out why the 05:47 render produced no master, then re-render.
+4. **EP77 keybridge** — the caption blocker is fixed; render it.
+   `bash scripts/_render_keybridge_after.sh` runs it alone with the pre-render checks.
 5. Ask the owner to re-capture `secrets/studio_cookies.txt`.
 
+## 8. Two mistakes of mine, so they are not repeated
+
+**I ran a writing tool at a published episode believing it had `--dry-run`.**
+`polish_captions_srt.py` has no such flag; it writes. lahaina's srt was restored from git;
+morandi's `08_edit/` is untracked so git could not, but the damage is nil and measured rather
+than assumed — its `morandi_film.rendered.json` snapshot and the live film json both hold 510
+cues, and the shipped master has its captions burned in. **Check a tool's flags before pointing
+it at anything already public.**
+
+**I let the calendar slip while fixing quality.** Every defect caught this session was worth
+catching, and two dated slots still went empty with finished masters on disk. The order that
+works is: book what is already built, then fix. Not the reverse.
+
 Commits this session: `6eea8489` `24c5a531` `e37c4f30` `caf31d61` `e0a931f9` `a2680365`
-`057aaf86` `e31d2ca5` `de7c8312` `bc169f8d` `b38d5126` `d0a64e37` `0634df1c` — all pushed.
+`057aaf86` `e31d2ca5` `de7c8312` `bc169f8d` `b38d5126` `d0a64e37` `0634df1c` `bc9672e1` `98e40ab0` — all pushed.
