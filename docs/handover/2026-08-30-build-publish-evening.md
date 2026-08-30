@@ -136,11 +136,21 @@ is printed straight **across** the pull-quote's attribution line, giving
 The same attribution is clean one second earlier, so this is a collision between two overlay
 layers, not a layout constant.
 
-One more caution for whoever picks this up: a reader watching the 20:12→20:16 card described it
-as *"sliding left out of frame as a designed exit"*, which is flatly inconsistent with
-`slideX = 0` in `motionkit/LowerThird.tsx`. Either a second lowerthird implementation is in play
-on this composition, or the exit is being read wrongly. **Settle which component actually renders
-these before editing either one.**
+**One branch is now closed.** There is exactly ONE implementation: `kind === 'lowerthird'` is
+rendered in a single place, `FigureBeats.tsx:407`, which calls `motionkit/LowerThird`, and
+`CaseFilm.tsx:879` mounts `FigureBeats` directly with no wrapping transform. So "a second
+lowerthird implementation" is ruled out, and the contradiction stands: a component with
+`slideX = 0`, whose entrance is a `clipPath` wipe and whose exit is `translateY` + fade, is
+losing characters off BOTH frame edges on long strings.
+
+What is left to explain is why the panel is not constrained. It is `position:absolute; left:92`
+with no `maxWidth`, so its shrink-to-fit width should cap at 1828px against the `AbsoluteFill`
+containing block, and `WordMask` is `flexWrap: 'wrap'` so it should wrap there. It does wrap --
+the evidence frame shows two lines -- but at a width far past the frame. The remaining suspects
+are the `Trail` motion-blur wrapper the card sits inside and whatever containing block it
+establishes. **Reproduce in the studio with the 230-character string before changing anything.**
+A reader also described the 20:12→20:16 card as "sliding left out of frame as a designed exit",
+which the source cannot produce; treat that description as unreliable rather than as evidence.
 
 **Read this before trying to fix it.** I went down the wrong path first and want to save the next
 person the trip. `motionkit/LowerThird.tsx` has `const slideX = 0` and a comment recording that
