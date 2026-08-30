@@ -405,3 +405,72 @@ be applied earlier because bash reads a running script incrementally from disk.
 - The `lowerthird` both-ends clipping — still not diagnosed. See §2; reproduce before patching.
 - After each render: **re-extract the sheets and read them again.** Tonight three masters passed
   every machine gate and carried 139 defects between them.
+
+---
+
+## 11. Overnight results (added 01:00 JST on 08-31)
+
+### Two masters re-rendered clean
+
+| | rendered | new sha | blocked clips in the rendered film | diversity / max reuse |
+|---|---|---|---|---|
+| lacmegantic | 20:57→22:28 (92 min) | `6fc5468ff549963e…` | **0 of 16** | 0.72 / 2 |
+| uri | 22:29→00:54 (143 min) | `a41a29956601d9c7…` | **0 of 7** | 0.71 / 2 |
+
+Verified on the `*_film.rendered.json` snapshot beside each master — i.e. on what was actually
+burned in, not on the film json I built. `_finish_episode.sh` rebuilds the film itself at [4/7],
+so those are not always the same object; check the snapshot, not your own build.
+
+Both old reviews are superseded to `*_shipped_frames_review.PRE_REBUILD_20260830.json` and carry a
+note explaining what they are. The gate detects the sha change on its own — *"the bytes changed
+under the verdict"* — so a stale review cannot be used by accident.
+
+**When you read the new masters, expect roughly 53 (lacmegantic) and 42 (uri) findings to still be
+there. That is correct, not a failure.** Only the readable-mark and identifiable-face cuts were
+fixed, on the owner's ruling. The job of the new read is two questions only: did the dangerous
+clips go, and did anything new and dangerous come in.
+
+uri cost ~50 minutes to one `Request closed` failure under load; the finisher retried once at
+`--concurrency=4` and it succeeded. `U102.mp4`, named in the error, was present and intact both
+in the pool and in `public_ep73` — it was resource pressure, not a missing asset. **The retry is
+once only**; a second failure needs a hand.
+
+### Four packaging defects found and fixed before their publish dates
+
+All five upcoming packages were read by hand against their own scripts, and every candidate
+thumbnail was opened. **Every one of these passed `check_packaging_claims`.**
+
+- **EP85 katrina — the serious one.** Title violated TWO of its own `forbidden_claims`: it
+  reported a negligence finding that the Fifth Circuit **REVERSED on rehearing** (`:280`, "We
+  REVERSE each judgment for the plaintiffs"), and it attached that finding to "Flooding New
+  Orleans" when `:238` says the case "was not about the floodwalls at all" and `:92` records that
+  two-thirds of the flooding came through floodwall breaches. Now `title_candidates[1]`.
+- **EP82 valdez title.** "Exxon Operated…" is active with a living corporation as subject; the
+  source is agentless (`:169` and ledger VZ-206 both read "was operated"), and the film twice says
+  the practice was industry-wide. Now `title_candidates[1]`. Description: restored the speaker on
+  an unattributed quoted judgement about a named company.
+- **EP82 valdez thumbnail — SELECTED IMAGE SWAPPED to v002.** The old one is a gloved hand cupping
+  a black oil-slicked rounded object. At 1280px it is provably a stone. At 320px it is the
+  oiled-wildlife-rescue photograph, and this episode bans "oiled animal" / "wildlife rescue" /
+  "distressed animal" by name. **Judged at full resolution it passes; at ship size it does not.**
+- **Four candidates recorded as never-promote**: `station.02` (a shield emblem baked into the
+  corner in the watermark position — rights class), `station.03` ("IT DID NOT IGNITE." over a
+  pyrotechnic, the reverse of NCSTAR 2), `keybridge.03` (a suspension bridge reading as San
+  Francisco, a forbidden term), `colgan.03` (the house on the ground with fire-coloured light).
+
+Checked and left alone: keybridge, station, colgan, alaska261 titles are all carried by a named
+body's findings, quoted line by line. **EP83 max737's "Boeing Knew" is Boeing's own signed
+admission** (`:216`, `:220`), not a court's, and the script says so out loud — but one dependency
+is unverified and worth a ledger line: whether the 2025 NPA preserved the 2021 Statement of Facts
+the whole title rests on.
+
+**EP84 threemile: title left as "Was Faking Its Safety Tests" on the owner's ruling**, reasoning
+recorded in its `packaging_note`. The guilty count's own language carries the conduct; the
+dismissed count is where the connotation lands; no `forbidden_claim` is violated either way.
+
+### What this says about the gates
+
+Four real defects, none visible to any machine check. `check_packaging_claims` matches word stems,
+so a finding reported without its reversal is green. Nothing reads `forbidden_subjects` against a
+picture at all. **The rule that caught the valdez thumbnail is not in any script — it is "judge at
+320px, the full-resolution read has no authority."**
