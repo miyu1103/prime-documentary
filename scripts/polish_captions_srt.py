@@ -531,6 +531,22 @@ def narration_index_for(srt: Path) -> Path | None:
 
 
 def _lead_words(text: str) -> list[str]:
+    """The comparable word stream, with authoring markers removed from BOTH sides.
+
+    EP77 keybridge writes its claim links inline in the script -- "...an order to stop the
+    traffic. <!-- KB-113 -->" -- and 103 of its narration chunks carry one. Those markers were
+    stripped out of the captions on 2026-08-27 so they could not be burned into the picture,
+    but they are still in the narration index, which is the record of what was written rather
+    than of what was spoken. Comparing the two streams then measured 5,030 narration words
+    against 4,768 cue words, matched 1 chunk of 358, and reported "this srt does not belong to
+    this narration index" -- which was false. The srt belonged to it; one side had been cleaned
+    and the other had not, and the difference is exactly the 262 words of marker text.
+
+    Normalising here rather than editing the index is deliberate: the index is bound to the
+    audio and to per-chunk sha sidecars, and a marker is authoring metadata that was never
+    spoken. Episodes with no markers are unaffected -- the regex finds nothing to remove.
+    """
+    text = re.sub(r"<!--.*?-->", " ", text, flags=re.DOTALL)
     return [w.lower() for w in WORD_RE.findall(text)]
 
 
