@@ -22,11 +22,36 @@ OUT="out/${SLUG}_preprobe.mp4"
 LOG="out_preprobe_${SLUG}.log"
 rm -f "$OUT"
 
+# CONCURRENCY. MEASURED 2026-08-31: this probe killed EP77 keybridge six minutes into its
+# render with "Failed to fetch .../motion/H123.mp4". H123 was present and intact in the pool, in
+# public_ep77 AND in the E: archive, all 128 clips were there, none was zero-byte, and the disk
+# had 288 GB free -- Remotion just guesses "disk space is low" for any failed fetch. It was
+# contention, the same class that had cost EP73 uri fifty minutes an hour earlier.
+#
+# pd_render_guarded.sh already knows how to survive this: it honours PD_RENDER_CONCURRENCY and
+# retries once at 4, with a comment calling 4 "the setting long-form WebGL already needs". The
+# probe had neither, so the cheap check that exists to SAVE a two-hour render was instead
+# throwing the episode away on a failure the expensive step would have shrugged off.
+CONC="${PD_RENDER_CONCURRENCY:-}"
+CONC_ARG=""
+[ -n "$CONC" ] && CONC_ARG="--concurrency=$CONC"
+
+probe_once() {
+  ( cd remotion && npx remotion render "$COMP" "../$OUT" --public-dir="$(basename "$PUB")" \
+      --frames="${START}-${END}" $1 ) > "$2" 2>&1
+}
+
 echo "[probe] rendering frames ${START}-${END} of ${TOTAL} (60s) before the full film"
-( cd remotion && npx remotion render "$COMP" "../$OUT" --public-dir="$(basename "$PUB")" \
-    --frames="${START}-${END}" ) > "$LOG" 2>&1
+probe_once "$CONC_ARG" "$LOG"
 if [ ! -f "$OUT" ]; then
-  echo "[probe] REFUSED: the probe render itself failed -- see $LOG" >&2
+  echo "[probe] first attempt produced no file -- retrying once at --concurrency=4" >&2
+  tail -6 "$LOG" >&2
+  rm -f "$OUT"
+  probe_once "--concurrency=4" "${LOG%.log}.retry.log"
+  LOG="${LOG%.log}.retry.log"
+fi
+if [ ! -f "$OUT" ]; then
+  echo "[probe] REFUSED: the probe render itself failed twice -- see $LOG" >&2
   tail -12 "$LOG" >&2
   exit 1
 fi
