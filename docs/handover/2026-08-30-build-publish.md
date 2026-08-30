@@ -67,17 +67,36 @@ EP85 katrina      --    173     0      0       ✅       --
 "design ✅" means filmconfig + youtube_meta exist and pass `figure_spec`, `check_packaging_claims`
 and `check_packaging_qc`. All eleven do. All eleven are in `upload_schedule_case_v001.CONFIG`.
 
-**i2v is the long pole and it is not running.** 1,059 clips remain at 3.08 min each ≈ **54 hours
+**i2v is the long pole and it is not running.** 1,062 clips remain at 3.08 min each ≈ **54 hours
 of GPU**. I stopped the chain on 8/27 to get renders through and never restarted it. Restart it
 before anything else that is not a booking:
 
 ```
-bash scripts/_chain_i2v_ep78_82.sh          # read its header first; it resumes from delivered counts
+bash scripts/_chain_i2v_ep78_82.sh --selftest   # prints pending per episode, touches no GPU
+bash scripts/_chain_i2v_ep78_82.sh              # resumes from delivered counts on disk
+```
+
+**Its QUEUE was wrong until 2026-08-30 and I rewrote it.** It read
+`concordia:N:185 station:S:188 valdez:V:183 colgan:C:166 alaska261:K:198` — it **stopped at
+alaska261**, so max737, threemile and katrina (the 9/6, 9/7 and 9/8 slots) would have sat at
+zero i2v while 54 hours of GPU ran on the five above them, and nothing would have said so until
+their render day. Every target was also the pre-review plate count, and 49 plates were rejected
+on 08-27, so the old numbers hunt plates that are no longer on disk. `neg_for()` likewise had no
+entry for those three, so each would have run on the base negative — and each has a signature
+false image its own spec forbids by name (a burning aircraft; black smoke from a cooling tower;
+a school bus in floodwater). Both fixed. Selftest on 08-30 reads:
+
+```
+concordia 182/185   station 183/184   valdez 4/179    colgan 0/156
+alaska261 0/190     max737 0/184      threemile 0/181 katrina 0/173
 ```
 
 Two episodes cannot render until their own blocker clears:
-- **EP81 station: zero stock clips, floor is 40.** A staging agent got as far as reading 12 of
-  135 strips and died on the account's weekly limit. Its queries and candidate list are on disk.
+- **EP81 station: zero stock clips, floor is 40.** A staging agent read 12 of 135 strips and
+  died on the account's weekly limit. Verified present on disk 08-30:
+  `scripts/_ep81_stage_round1.sh`, `runs/qc/station_candidates_r1.json`,
+  `runs/qc/station_prestage.v001.json`, and all 135 strips in
+  `runs/qc/fullframe/station_candidates/`. **Resume the reading; do not re-select.**
 - **EP77 keybridge: FIXED, needs a re-render.** Its 05:47 render stopped at `[4b] polish
   captions` saying *"only 1 of 358 narration chunks line up with a cue start -- this srt does
   not belong to this narration index"*. That was false and the falsity was mine: I stripped

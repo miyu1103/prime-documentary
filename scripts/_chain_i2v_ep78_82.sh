@@ -45,12 +45,32 @@ neg_for(){
     valdez)    echo "$BASE_NEG, oil spill, spreading oil slick, oil pouring, oiled bird, oiled animal, dead animal, ship aground, ship on a reef, hull breach, tanker breaking, ship name painted on hull, company logo, funnel markings" ;;
     colgan)    echo "$BASE_NEG, crash, impact, explosion, fire, burning house, burning wreckage, falling airplane, crash site" ;;
     alaska261) echo "$BASE_NEG, crash, impact, explosion, debris field, wreckage, airplane inverted, airplane diving, falling airplane, splash on the water, crash site" ;;
+    # Added 2026-08-30 with the queue. Each of these three episodes has a signature FALSE
+    # image that i2v reaches for unprompted, and each is named in its own forbidden_subjects.
+    max737)    echo "$BASE_NEG, crash site, wreckage, debris field, impact crater, burning aircraft, aircraft on fire, fireball, explosion, aircraft breaking up, aircraft falling, nose dive, cockpit alarm light, airline livery, tail registration, manufacturer marking" ;;
+    threemile) echo "$BASE_NEG, explosion, fireball, mushroom cloud, burning reactor, reactor on fire, melting floor, green glow, glowing rods, glowing water, radioactive slime, mutation, black smoke from a cooling tower, smoke from a cooling tower, flat screen monitor, laptop, mobile phone, LED lighting, modern car" ;;
+    katrina)   echo "$BASE_NEG, drowning, person in water, person on a roof, rooftop rescue, person being rescued, person wading, identifiable face, family photograph, portrait, child, school bus, buses in floodwater, abandoned bus, helicopter rescue basket, superdome crowd" ;;
     *)         echo "$BASE_NEG" ;;
   esac
 }
 
-# slug:kind:target -- target is the plate count measured on disk 2026-08-26 (depth excluded).
-QUEUE="concordia:N:185 station:S:188 valdez:V:183 colgan:C:166 alaska261:K:198"
+# slug:kind:target -- target is the plate count measured on disk (depth excluded).
+#
+# REWRITTEN 2026-08-30. The old queue was
+#   "concordia:N:185 station:S:188 valdez:V:183 colgan:C:166 alaska261:K:198"
+# and it was wrong twice over. It STOPPED AT alaska261, so max737, threemile and katrina --
+# the 9/6, 9/7 and 9/8 slots -- would have sat at zero i2v while 54 hours of GPU ran on the
+# five episodes above them, and nobody would have noticed until their render day. And every
+# target was the pre-review plate count: 49 plates were rejected across these episodes on
+# 08-27 (an Alaska Airlines emblem, Chernobyl's sarcophagus, the Twin Towers, three generator
+# watermarks, empty grounds), so a chain aiming at the old numbers hunts plates that are no
+# longer on disk.
+#
+# Counts below are `ls img/*.png | grep -v _depth | wc -l` on 2026-08-30 17:xx.
+# concordia and station are done (182/185 and 183/184) and are left in so the chain's own
+# resume logic confirms it rather than taking my word; each costs one pass of the pending
+# check and no GPU.
+QUEUE="concordia:N:185 station:S:184 valdez:V:179 colgan:C:156 alaska261:K:190 max737:X:184 threemile:T:181 katrina:W:173"
 
 delivered(){ ls "remotion/public/$1/motion/"*.mp4 2>/dev/null | grep -v '_depth' | wc -l | tr -d ' '; }
 
