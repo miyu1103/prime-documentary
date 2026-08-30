@@ -475,3 +475,17 @@ EP81's thumbnail said "100 COUNTS." — sourced, but out of scope for an episode
 2017 McDonald's advertisement. Re-decided from collection membership, which an uploader cannot set:
 313 restored, 148 refused, 129 held. **The ingest is a scheduled task now — never launch it from a
 session, and read its log's write time, not the process list.**
+
+**[2026-08-30 — build/publish + design lane (EP72-85)](handover/2026-08-30-build-publish.md)** —
+**8/29 lacmegantic と 8/30 uri の枠が空いた。レンダー失敗でもゲートでもなく、マスターが出来ていたのに
+出荷フレームを読み切る前にセッションが尽きた**。予約可能なマスターが3本(lacmegantic 29:44 / uri 30:02 /
+concordia 27:56・いずれも黒0を実測)、どれも未予約。**uri のレビューは差し替え前のバイト列に bind されている
+ので読み直すこと**(棒グラフ見出しの修正は新マスターで反映を確認済み)。CONFIG の 08-29/08-30 は過去日付なので
+**再設定しないと即時公開になる**。i2v は 8/27 に私が止めたまま — **残り1,059本・54時間**が EP82/78/79/83/84/85
+すべての律速。EP81 station は実写0本(床40)、EP77 keybridge は 8/28 05:47 のレンダーがマスターを残していない。
+今回の主要な発見: **①レンダー用ディレクトリが「直した素材」を古いまま保持していた**(`if dst.exists(): return
+"kept"`。作り直した17本が sha 一致で残存・レンダー3時間前に発見)、**②11話中9話が scheduler 未登録**(全ゲート緑
+でも最後のコマンドで落ちる)、**③選択済みサムネ2枚が出せない**(concordia=難破船＋実在社名の塗色＋コラージュ、
+uri=卸売単価$9,000を家庭用メーターに。正しくは$17,000)、**④棒グラフの見出しが13話で「FORFEITURE CASES / YEAR」**
+(コンポーネント直書き)。**サムネの「絵」に対して forbidden_subjects を照合する仕組みは存在しない** — 33候補を
+全部開いて10枚が不可、うち8枚は機械の構造上見えない。目視実績: 板1,110枚/実写317本/i2v照合497本/出荷フレーム296枚。
