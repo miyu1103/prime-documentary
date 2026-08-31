@@ -701,9 +701,36 @@ def build_figures(cfg: dict, order: list[str], windows: dict[str, tuple[float, f
             end = min(start + dur, total - 0.5)
             figures.append({"start": round(start, 3), "end": round(end, 3), **payload})
     figures.sort(key=lambda x: x["start"])
+    # THE DISCLOSURE USED TO EAT A BEAT (fixed 2026-09-01).
+    # This was `figures[0] = {**figures[0], **disclosure}` and the same for [-1]. A dict merge
+    # overwrites `kind`, so whenever the first or last figure was a KINETIC card, its `lines`,
+    # `style` and `emphasisWords` survived in the dict and were never drawn: FigureBeats
+    # dispatches on `kind`, saw "lowerthird", and rendered the disclosure in its place.
+    #
+    # MEASURED across every beatsheet on disk: 20 beats in 15 episodes, and they are the films
+    # own opening and closing statements. EP52 morton lost "A MONSTER DID IT. DADDY WASNT HOME."
+    # from 8s in, and "THE TRUTH WAS NEVER MISSING. THEY JUST BURIED IT." from the end. EP56
+    # postoffice lost "THE COMPUTER LIED. PEOPLE WENT TO PRISON. NO ONE HAS." EP80 concordia
+    # lost "SIXTY-NINE MINUTES TO SAY THE WORD." EP81 station lost "THE NUMBER IS NOT ABOUT THE
+    # ROOM. IT IS ABOUT THE DOOR." EP72 and EP73 both lost "NO INDIVIDUAL WAS FOUND TO BE THE
+    # CAUSE." Most of those episodes are already public and cannot be repaired without replacing
+    # a published upload, which is an owner decision, not this function.
+    #
+    # The merge is kept ONLY where nothing can be lost: a lowerthird carrying no kinetic payload.
+    # Anywhere else the disclosure becomes its OWN beat over the same window. The two occupy
+    # different parts of the frame - the lowerthird sits top-left, kinetic captions are centred -
+    # so both draw, which is how every other pair of cards in these films already coexists.
     if figures:
-        figures[0] = {**figures[0], **disclosure}
-        figures[-1] = {**figures[-1], **disclosure}
+        extra: list[dict] = []
+        for idx in sorted({0, len(figures) - 1}):
+            b = figures[idx]
+            if b.get("kind") == "lowerthird" and not b.get("lines"):
+                figures[idx] = {**b, **disclosure}
+            else:
+                extra.append({"start": b["start"], "end": b["end"], **disclosure})
+        if extra:
+            figures.extend(extra)
+            figures.sort(key=lambda x: x["start"])
     return figures
 
 
