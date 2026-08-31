@@ -193,6 +193,19 @@ export const LowerThird: React.FC<{
             opacity: exitO * interpolate(enter, [0, 0.35], [0, 1], {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'}),
             display: 'flex',
             alignItems: 'stretch',
+            // WIDTH CEILING (2026-09-01). This element is absolutely positioned with no width, so
+            // it shrink-to-fits against its containing block: 1920 - left(92) = 1828px. A long
+            // `secondary` therefore wraps at 1828 and the panel becomes 1828 + bar(8) + padding(56)
+            // = 1892 wide, starting at x=92 -- a right edge at 1984, i.e. 64px PAST the frame,
+            // before any outer transform is applied at all.
+            // MEASURED on EP73 uri: bodies of 33-236 characters across 39 beats. The one the reader
+            // used as the control, "FIVE THOUSAND TO ONE MILLION" (121 chars, one line), sits fully
+            // inside the frame; "SENATE BILL 3" (178 chars, two lines) is cut mid-word at "maps the
+            // supply". Every clipped card had a body that wrapped; every clean one did not.
+            // 1736 = 1920 - 92*2, so the right edge lands at 1828 and the card carries the same 92px
+            // margin on both sides. minWidth: 0 on the panel below is what lets the flex child
+            // actually shrink to this instead of overflowing it.
+            maxWidth: 1736,
           }}
         >
           {/* アクセントバー：左origin で scaleX 伸長＋発光脈動 */}
@@ -212,6 +225,7 @@ export const LowerThird: React.FC<{
           <div
             style={{
               position: 'relative',
+              minWidth: 0,
               overflow: 'hidden',
               clipPath: `inset(0 ${panelClip}% 0 0)`,
               background: `linear-gradient(100deg, ${BRAND.color.navy}E6 0%, ${BRAND.color.ink}D9 100%)`,

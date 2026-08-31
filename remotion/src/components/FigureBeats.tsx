@@ -234,7 +234,7 @@ const SceneBed: React.FC = () => {
  * as a premium "raking light" pass and leaves the figure fully legible (screen over white text stays
  * white; over the dark bed it lifts to a soft sheen). Each band re-enters from off-frame at its wrap so
  * the reset is invisible. This is the layer that guarantees dark/opaque diagram figures clear the gate. */
-const FigureScene: React.FC<{dur: number; children: React.ReactNode}> = ({dur, children}) => {
+const FigureScene: React.FC<{dur: number; noTransform?: boolean; children: React.ReactNode}> = ({dur, noTransform, children}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const p = interpolate(f, [0, Math.max(1, dur - 1)], [0, 1], {
@@ -251,7 +251,27 @@ const FigureScene: React.FC<{dur: number; children: React.ReactNode}> = ({dur, c
   const sweepB = interpolate((t % 3.3) / 3.3, [0, 1], [124, -24]); // % pos, R->L
   return (
     <AbsoluteFill
-      style={{transformOrigin: '50% 50%', transform: `translate(${x}px, ${y}px) scale(${scale})`}}
+      style={
+        // EDGE-ANCHORED OVERLAYS OPT OUT (2026-09-01). The doc above states the safety argument in
+        // its own words -- "so CENTERED content stays centered and legible and never leaves frame".
+        // That argument holds only for content that fills or is centred in the frame. A LowerThird is
+        // pinned at left: 92, and for it the arithmetic runs the other way: at the END of a beat this
+        // scale of 1.16 about the centre carries the left edge 1920*0.16/2 = 153.6px off to the left,
+        // the pan adds another 46, and the inner Drift adds ~50 more -- about 250px. The panel's left
+        // edge lands at 92 - 250 = -158, so the gold bar, the 26px padding and the first characters
+        // are simply not on screen. At the START of the beat the pan runs the other way (+46, +17)
+        // and pushes the right end off instead.
+        // MEASURED, not inferred: EP73 uri, twelve topper cards clipped in their settled state --
+        // "SENATE BILL 3" reading "NATE BILL 3", "THE COUNT ROSE SIX TIMES" reading "E COUNT ROSE",
+        // and the AI-disclosure card at 29:23 losing the S of "symbolic"; EP77 keybridge, the
+        // presumption-of-innocence panel at 17:32 reading "n indictment is merely an accusation" and
+        // the same panel again at 23:58. Frames opened at full resolution before this was written.
+        // The anti-freeze job is unaffected: the light sweeps below still run, AmbientMotion still
+        // runs, and a lowerthird is an OVERLAY -- the footage cut underneath keeps its own motion.
+        noTransform
+          ? {}
+          : {transformOrigin: '50% 50%', transform: `translate(${x}px, ${y}px) scale(${scale})`}
+      }
     >
       {children}
       <AbsoluteFill
@@ -301,7 +321,7 @@ const FigureScene: React.FC<{dur: number; children: React.ReactNode}> = ({dur, c
  * amplitude is small (x <= +/-17px, y <= +/-11px, scale 1.001..1.035) so centered content stays
  * centered and never leaves frame; the un-drifted SceneBed behind covers any sub-pixel edge. */
 const TAU = Math.PI * 2;
-const Drift: React.FC<{children: React.ReactNode}> = ({children}) => {
+const Drift: React.FC<{disabled?: boolean; children: React.ReactNode}> = ({disabled, children}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
   const t = f / fps; // seconds — continuous, independent of clip length -> never stops on a hold
@@ -311,7 +331,11 @@ const Drift: React.FC<{children: React.ReactNode}> = ({children}) => {
   // breathing scale: 1.001 .. 1.035 (always >= 1.0 so the figure never shrinks below full frame)
   const s = 1.018 + 0.017 * Math.sin((TAU * t) / 9.0);
   return (
-    <AbsoluteFill style={{transformOrigin: '50% 50%', transform: `translate(${x}px, ${y}px) scale(${s})`}}>
+    // Same exemption as FigureScene above: this sinusoid is safe for centred content and unsafe for
+    // anything pinned to a frame edge. Its own contribution is ~50px (scale 1.035 about the centre
+    // = 33.6px at each edge, plus 17px of pan), which is what turns a card that FigureScene has
+    // already pushed to the edge into one that is visibly cut.
+    <AbsoluteFill style={disabled ? {} : {transformOrigin: '50% 50%', transform: `translate(${x}px, ${y}px) scale(${s})`}}>
       {children}
     </AbsoluteFill>
   );
@@ -341,10 +365,10 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
         }
         return (
           <Sequence key={i} from={Math.round(b.start * fps)} durationInFrames={dur} name={`figure-${i}`}>
-            <FigureScene dur={dur}>
+            <FigureScene dur={dur} noTransform={b.kind === 'lowerthird'}>
               <SceneBed />
               <AmbientMotion count={12} intensity={0.4} />
-              <Drift>
+              <Drift disabled={b.kind === 'lowerthird'}>
                 {b.kind === 'stat' && (
                   <StatCounter
                     accent={accent}

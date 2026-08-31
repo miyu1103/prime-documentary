@@ -78,3 +78,47 @@ py -3.11 scripts/short_funnel_gate.py --video <shortId> --longform <longId> --at
 | short268 | PD-2026-065-marmet | The Paper You Sign at the Door | [ ] |
 | short269 | PD-2026-065-marmet | The Paper You Sign at the Door | [ ] |
 | short270 | PD-2026-065-marmet | The Paper You Sign at the Door | [ ] |
+
+---
+
+## まだ公開していないショート（アップロード後に設定する）
+
+2026-09-01 追加。オーナー指示でショートの投稿を再開したときに、`check_short_funnel.py` の
+layer 4（関連動画）が「書き留められていない」で落ちたため。ここに行が無いショートは予約できない。
+
+**ここに書いてあるのは設定先だけで、設定そのものはまだ済んでいない。**
+アップロードして video id が付いたら Studio で下の長尺を選び、その行を上の表へ移すこと。
+
+| ショート | 話数 | ← 設定する長尺 (video id) | 長尺タイトル |
+|---|---|---|---|
+| short182 | PD-2026-046-tlo | `hC5KE6IqmhM` | A Vice Principal Opened a 14-Year-Old's Purse. The Supreme |
+| short183 | PD-2026-046-tlo | `hC5KE6IqmhM` | A Vice Principal Opened a 14-Year-Old's Purse. The Supreme |
+| short184 | PD-2026-047-atwater | `i95peRcdtz4` | A Seatbelt Ticket Carried No Jail Time. She Was Handcuffed |
+| short185 | PD-2026-047-atwater | `i95peRcdtz4` | A Seatbelt Ticket Carried No Jail Time. She Was Handcuffed |
+| short186 | PD-2026-051-willingham | `l7-oHSNEIjc` | Texas Executed Him for an Arson. The Fire Science Was Wron |
+| short187 | PD-2026-051-willingham | `l7-oHSNEIjc` | Texas Executed Him for an Arson. The Fire Science Was Wron |
+| short188 | PD-2026-052-morton | `67gynOvKf1M` | A 3-Year-Old Said His Father Wasn't Home. The State Buried |
+| short189 | PD-2026-052-morton | `67gynOvKf1M` | A 3-Year-Old Said His Father Wasn't Home. The State Buried |
+| short190 | PD-2026-032-carsearch | `bXATF9ZnKLE` | Police Searched the Motorcycle in His Driveway. The Court  |
+| short191 | PD-2026-032-carsearch | `bXATF9ZnKLE` | Police Searched the Motorcycle in His Driveway. The Court  |
+| short192 | PD-2026-033-tyler | `rU2vk9XL4vY` | She Owed the County $15,000. It Sold Her Home for $40,000  |
+| short193 | PD-2026-033-tyler | `rU2vk9XL4vY` | She Owed the County $15,000. It Sold Her Home for $40,000  |
+| short194 | PD-2026-034-rolin | `6ozsIfwqrP0` | They Took His Life Savings at the Airport — No Charges, No |
+| short195 | PD-2026-034-rolin | `6ozsIfwqrP0` | They Took His Life Savings at the Airport — No Charges, No |
+| short196 | PD-2026-035-hinders | `Xc_PxdC_75c` | She Banked Under $10,000 Because That Is What the Till Hel |
+| short197 | PD-2026-035-hinders | `Xc_PxdC_75c` | She Banked Under $10,000 Because That Is What the Till Hel |
+| short200 | PD-2026-053-norfolk | `H8j_K1x9Dog` | 4 Sailors Confess to One Murder. The DNA Clears Each One.  |
+| short201 | PD-2026-054-flowers | `PfdEpNQyaQQ` | 6 Trials. 4 Death Sentences. 23 Years. The Same Prosecutor |
+| short202 | PD-2026-055-burge | `Iw-EPUD2nHg` | A Doctor Reports Police Torture in 1982. The Letter Is Bur |
+| short203 | PD-2026-056-postoffice | `4FlCaOVpln0` | A Computer Invents a £2,000 Debt. Her Own Employer Prosecu |
+| short204 | PD-2026-056-postoffice | `4FlCaOVpln0` | A Computer Invents a £2,000 Debt. Her Own Employer Prosecu |
+| short205 | PD-2026-056-postoffice | `4FlCaOVpln0` | A Computer Invents a £2,000 Debt. Her Own Employer Prosecu |
+| short250 | PD-2026-057-fieldtest | `KPYLtYYODLE` | A $2 Test Turned Blue. She Served 21 Days. Police Still Ca |
+| short251 | PD-2026-057-fieldtest | `KPYLtYYODLE` | A $2 Test Turned Blue. She Served 21 Days. Police Still Ca |
+| short252 | PD-2026-057-fieldtest | `KPYLtYYODLE` | A $2 Test Turned Blue. She Served 21 Days. Police Still Ca |
+| short253 | PD-2026-058-lejeune | `J97Rh1qOTPA` | He Buried His Daughter at Nine. 408,000 Have Filed. One Cl |
+| short254 | PD-2026-058-lejeune | `J97Rh1qOTPA` | He Buried His Daughter at Nine. 408,000 Have Filed. One Cl |
+| short255 | PD-2026-058-lejeune | `J97Rh1qOTPA` | He Buried His Daughter at Nine. 408,000 Have Filed. One Cl |
+| short256 | PD-2026-059-robosigning | `Wo-SvvGsv8g` | He Paid $139,000 Cash. There Was No Mortgage. The Bank Pad |
+| short257 | PD-2026-059-robosigning | `Wo-SvvGsv8g` | He Paid $139,000 Cash. There Was No Mortgage. The Bank Pad |
+| short258 | PD-2026-059-robosigning | `Wo-SvvGsv8g` | He Paid $139,000 Cash. There Was No Mortgage. The Bank Pad |
