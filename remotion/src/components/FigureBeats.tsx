@@ -365,10 +365,20 @@ export const FigureBeats: React.FC<{beats: FigureSpec[]}> = ({beats}) => {
         }
         return (
           <Sequence key={i} from={Math.round(b.start * fps)} durationInFrames={dur} name={`figure-${i}`}>
-            <FigureScene dur={dur} noTransform={b.kind === 'lowerthird'}>
+            {/* EDGE-REACHING FIGURES OPT OUT of both ken-burns transforms. 'lowerthird' was
+                exempted on 2026-09-01; 'timeline' is added the same day after the fix proved
+                INSUFFICIENT on the 06:31 EP73 master. Wrapping and clamping the captions keeps
+                them inside the SVG's own 1920 box, but the box itself is then translated and
+                scaled by FigureScene (+/-46px pan, scale to 1.16 about the centre) and Drift
+                (+/-17px, scale 1.035) -- so at the END of a beat the whole graphic walks ~250px
+                left and the leftmost node goes off screen anyway. Measured at 26:48.6-26:50.6:
+                'Extreme cold. A joint federal inquiry follows' rendered as 'treme cold.'
+                A timeline's first node sits at x=220 and its last at width-220; that is close
+                enough to the edge that no in-SVG clamp can survive an outer transform. */}
+            <FigureScene dur={dur} noTransform={b.kind === 'lowerthird' || b.kind === 'timeline'}>
               <SceneBed />
               <AmbientMotion count={12} intensity={0.4} />
-              <Drift disabled={b.kind === 'lowerthird'}>
+              <Drift disabled={b.kind === 'lowerthird' || b.kind === 'timeline'}>
                 {b.kind === 'stat' && (
                   <StatCounter
                     accent={accent}
