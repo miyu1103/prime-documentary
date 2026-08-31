@@ -39,7 +39,7 @@ say(){ echo "[uri5] $(date '+%m-%d %H:%M:%S') $*" | tee -a "$LOG"; }
 # ---- 1. prove the blocked clips cannot come back before spending two hours ------------------
 say "checking the five blocked clips are out of the pool AND out of the archive"
 BAD=0
-for id in 10008320 10008388 10058364 10058463 12891229 30243440 30243437; do
+for id in 10008320 10008388 10058364 10058463 12891229 30243440 30243437 38683845; do
   if ls remotion/public/uri/factory/ 2>/dev/null | grep -q "$id"; then
     say "  STILL IN POOL: $id"; BAD=1
   fi
@@ -96,7 +96,7 @@ import json, pathlib
 p = pathlib.Path('episodes/PD-2026-073-uri/08_edit/uri_film.rendered.json')
 f = json.loads(p.read_text(encoding='utf-8'))
 bad = ['10008320', '10008388', '10058364', '10058463', '12891229', '30243440', '30243437',
-       'U004', 'U012', 'U023', 'U027']
+       '38683845', 'U004', 'U012', 'U023', 'U027']
 hits = [pathlib.Path(c.get('src', '')).stem for c in (f.get('cuts') or [])
         if any(b in pathlib.Path(c.get('src', '')).stem for b in bad)]
 print(f"[uri5] rendered film: {len(f.get('cuts') or [])} cuts, blocked present: {hits or 'NONE'}")
