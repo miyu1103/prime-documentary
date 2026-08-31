@@ -34,7 +34,19 @@ def main() -> int:
         print(f"no blocklist at {BLOCKLIST}")
         return 0
 
-    films = sorted(DATA.glob("*_film.json"))
+    # THE RENDERED SNAPSHOTS TOO (added 2026-09-01). Auditing only remotion/src/data/*_film.json
+    # answers a question nobody asked: what the film on the BENCH says. A film json is rebuilt
+    # every time the finisher runs and can be rebuilt again afterwards by hand, so it drifts away
+    # from the bytes that were actually rendered.
+    # MEASURED: EP73 uri was reported CLEAN by this tool while the master on disk carried all five
+    # clips blocked the day before -- three ABB nameplates, two Cyrillic cabinet placards and the
+    # HollyFrontier wordmark on a tank. The bench film had been rebuilt clean at 11:45; the render
+    # had finished at 06:05. The tool was reading a file five and a half hours younger than the
+    # thing it was being trusted to describe.
+    # episodes/*/08_edit/<slug>_film.rendered.json is written BY the render, so it is the only
+    # film json that describes a master. It is now audited first and never skipped.
+    films = sorted((ROOT / "episodes").glob("PD-*/08_edit/*_film.rendered.json")) + \
+        sorted(DATA.glob("*_film.json"))
     bad = 0
     for film in films:
         try:

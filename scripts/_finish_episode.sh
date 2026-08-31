@@ -80,6 +80,16 @@ py -3.11 scripts/prune_pool_by_blocklist.py --slug "$SLUG" --pool img >> "$LOG" 
   || die "img blocklist prune failed"
 py -3.11 scripts/prune_pool_by_blocklist.py --slug "$SLUG" --pool motion >> "$LOG" 2>&1 \
   || die "motion blocklist prune failed"
+# FACTORY TOO (added 2026-09-01, measured on EP73 uri). This step pruned img and motion and NOT
+# factory, and every stock clip on the blocklist is a factory clip, so a blocked shelf clip was
+# pruned by hand and then restored by the copy above on the very next run. Consequence, measured:
+# the uri master rendered 08-31 06:05 carries all FIVE clips blocked the day before -- three ABB
+# nameplates at 0:33, two more plus a Russian site board at 0:58, Cyrillic cabinet placards at
+# 1:08 and 1:19, and the HollyFrontier wordmark on a tank at 3:25. audit_films_vs_blocklist said
+# uri was CLEAN the whole time, because it reads the film json rebuilt afterwards at 11:45, not
+# the film the render actually used. Three renders of EP72 were spent on the same shape of bug.
+py -3.11 scripts/prune_pool_by_blocklist.py --slug "$SLUG" --pool factory >> "$LOG" 2>&1 \
+  || die "factory blocklist prune failed"
 
 say "[3/7] rebuild asset manifest v003 (filesystem scan + per-asset content check)"
 py -3.11 scripts/build_asset_manifest_motionfirst.py --slug "$SLUG" >> "$LOG" 2>&1
