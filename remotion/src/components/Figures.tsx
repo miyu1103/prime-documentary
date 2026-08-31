@@ -201,6 +201,49 @@ export const Timeline: React.FC<{
   const x0 = 220;
   const x1 = width - 220;
   const cy = 540;
+  // KEEPING THE CAPTIONS ON SCREEN (2026-09-01).
+  // The node captions are SVG <text x={0} textAnchor="middle"> centred on their node, and the
+  // first and last nodes sit at x=220 and x=width-220. So any caption wider than 440px hangs off
+  // the frame -- half of it at each end. SVG text does not wrap, so a long event string just kept
+  // going. MEASURED on EP73 uri: at 6:04-6:11 the right-hand node read "the report, and the
+  // decision take" with "taken" severed at the frame edge and the left-hand node sat flush at
+  // x=0; at 26:47 the same figure read "he cold. A joint federal inquiry follows" (missing the
+  // T) and "Statewide Rule 66 adopte" (missing the d), and the first and last dots were half
+  // off-frame. 25 films and 83 figures use this component.
+  // Two things are needed and neither is optional: wrap the string so one line cannot be wider
+  // than the space a node owns, and clamp the anchor so an end node's caption cannot cross the
+  // safe margin. Width is approximated from the character count -- there is no text metric in a
+  // deterministic render -- with 0.54em, which over-estimates for Inter and therefore errs
+  // towards wrapping early rather than late.
+  const SAFE = 96;                       // px kept clear at each frame edge
+  const nEvents = events.length;         // NOT `n`: that const is declared below this block
+  const span = nEvents > 1 ? (x1 - x0) / (nEvents - 1) : x1 - x0;
+  const capMax = Math.max(200, Math.min(span - 28, 430));
+  const em = (size: number) => size * 0.54;
+  const wrap = (text: string, size: number): string[] => {
+    const max = Math.max(8, Math.floor(capMax / em(size)));
+    const out: string[] = [];
+    let line = '';
+    for (const w of String(text ?? '').split(' ')) {
+      const next = line ? line + ' ' + w : w;
+      if (next.length > max && line) {
+        out.push(line);
+        line = w;
+      } else {
+        line = next;
+      }
+    }
+    if (line) out.push(line);
+    return out.slice(0, 3);              // three lines is already a wall of text on a node
+  };
+  // dx that pulls a centred line back inside [SAFE, width - SAFE] without moving the node itself
+  const clampDx = (ex: number, text: string, size: number) => {
+    const half = (text.length * em(size)) / 2;
+    const lo = SAFE + half;
+    const hi = width - SAFE - half;
+    if (lo > hi) return 0;               // a line wider than the frame: leave it centred
+    return Math.max(lo, Math.min(hi, ex)) - ex;
+  };
   const lineP = interpolate(
     spring({frame: frame - sec(fps, 0.2), fps, config: {damping: 30, mass: 1}}),
     [0, 1],
@@ -218,7 +261,8 @@ export const Timeline: React.FC<{
         {/* ベース線（伸びる） */}
         <line x1={x0} y1={cy} x2={lineX} y2={cy} stroke={accent} strokeWidth={2} opacity={0.55} />
         {events.map((e, i) => {
-          const ex = x0 + ((x1 - x0) * i) / (n - 1);
+          // n === 1 divided by zero here and put the only node at NaN, which SVG drops silently.
+          const ex = n > 1 ? x0 + ((x1 - x0) * i) / (n - 1) : (x0 + x1) / 2;
           const cs = spring({frame: frame - sec(fps, 0.5) - i * sec(fps, 0.18), fps, config: {damping: 14, mass: 0.8}});
           const r = interpolate(cs, [0, 1], [0, 9]);
           const glow = interpolate(cs, [0, 1], [0, 0.9]);
@@ -229,8 +273,21 @@ export const Timeline: React.FC<{
               <circle cx={ex} cy={cy} r={r + 8} fill={accent} opacity={glow * 0.18} />
               <circle cx={ex} cy={cy} r={r} fill={INK} stroke={accent} strokeWidth={3} />
               <g transform={`translate(${ex}, ${up ? cy - 40 - capY : cy + 40 + capY})`} opacity={glow}>
-                <text x={0} y={up ? -34 : 34} fill={accent} fontFamily="Inter, system-ui" fontWeight={800} fontSize={34} textAnchor="middle">{e.year}</text>
-                <text x={0} y={up ? -6 : 62} fill={INK2} fontFamily="Inter, system-ui" fontWeight={500} fontSize={22} textAnchor="middle">{e.text}</text>
+                <text x={clampDx(ex, String(e.year ?? ""), 34)} y={up ? -34 : 34} fill={accent} fontFamily="Inter, system-ui" fontWeight={800} fontSize={34} textAnchor="middle">{e.year}</text>
+                {wrap(e.text, 22).map((ln, li) => (
+                  <text
+                    key={li}
+                    x={clampDx(ex, ln, 22)}
+                    y={(up ? -6 : 62) + li * 26}
+                    fill={INK2}
+                    fontFamily="Inter, system-ui"
+                    fontWeight={500}
+                    fontSize={22}
+                    textAnchor="middle"
+                  >
+                    {ln}
+                  </text>
+                ))}
               </g>
             </g>
           );
