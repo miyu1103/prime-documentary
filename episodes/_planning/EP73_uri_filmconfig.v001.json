@@ -279,6 +279,8 @@
    },
    {
     "kind": "bar",
+    "_correction_20260901": "unit added. The bars rendered bare 263 and 540 directly above a label reading The nine-minute threshold, so the number and its own label contradicted each other on screen. Both are correct only as SECONDS: 4 min 23 s below 59.4 Hz against a 540 s threshold (TX-11, TX-12). BarChart takes a unit prop and this call did not pass one.",
+    "unit": "s",
     "data": [
      {
       "label": "Held below 59.4 Hz",
@@ -355,12 +357,12 @@
    {
     "kind": "lowerthird",
     "primary": "NOT ONE KIND OF PLANT",
-    "secondary": "Freeze-related outages happened across fuel types. The largest single problem was not a type of plant at all - it was fuel that could not get to the plants. (TX-16)"
+    "secondary": "Freeze-related outages happened across fuel types. Of the gas fuel-supply problems, 43.3 per cent were freezing and weather and 21.5 per cent were power losses at midstream, wellhead or gathering facilities. (TX-16)"
    },
    {
     "kind": "lowerthird",
     "primary": "THE CRITICAL LOAD LIST",
-    "secondary": "The set of customers who do not get shed no matter what: hospitals, water plants, emergency services, and the infrastructure the grid itself depends on. (TX-17)"
+    "secondary": "The set of customers who do not get shed no matter what: hospitals, water plants, emergency services. Most gas production and processing facilities were not on it. (TX-17)"
    },
    {
     "kind": "kinetic",
@@ -375,7 +377,7 @@
    },
    {
     "kind": "quote",
-    "quote": "Most natural gas production and processing facilities in ERCOT were not identified as critical load, and thus the controlled load shedding took fuel sources offline.",
+    "quote": "Most natural gas production and processing facilities in ERCOT were not identified as critical load, so the controlled load shedding took their power away.",
     "attribution": "FERC / NERC final report on the February 2021 outages (TX-17)"
    },
    {
