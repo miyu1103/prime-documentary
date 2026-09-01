@@ -1211,6 +1211,17 @@
    "label": "reviewer_rejected_plate_cut_into_film",
    "reason": "EP73 uri. episodes/_planning/EP73_uri_plate_verdicts.v001.json carries EIGHT plates at agent_preliminary_verdict=reject_recommended with human_verdict=null, and ALL EIGHT are cut into the film. A reader opened four of them on the 06:31 master and enlarged to 10-20x. Two are clearable on the evidence -- U057 (monitors) and U101 (badges, plates, bottle labels) resolve to illegible glyph noise. These two are not:\nU075 (cut-0119, 9:58.7-10:03.8) the reviewer wrote: Generator carries a visible wordmark-like label. Confirmed at 20x -- a white wordmark panel across the red housing, reading as a brand badge. Cleared at sheet scale, unmistakable enlarged.\nU112 (cut-0178, 14:57.5-15:02.7) the reviewer wrote: Legislative chamber includes multiple official portraits, flags, and plaque-like insignia. It is also FACTUALLY WRONG WHERE IT SITS: a daylit legislative chamber under the kinetic card \"1:20 A.M. / LOAD SHEDDING ORDERED\", when TX-10 attributes that order to ERCOT's control room. The picture misassigns the act and contradicts the time on its own card.\nThe remaining four (U001, U011, U033, U038) are in ranges still being read; they stay in unless a reader finds something, and the honest position is that nobody has cleared them either.",
    "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01, from the post-render read of the 06:31 master (sha 3352f939). The reviewer's own agent_reasons are quoted above verbatim; the reader confirmed both at 20x before either id was written down."
+  },
+  {
+   "ids": [
+    "U033"
+   ],
+   "episodes": [
+    "uri"
+   ],
+   "label": "reviewer_rejected_plate_cut_into_film",
+   "reason": "EP73 uri, cut-0056. The plate reviewer wrote: US and Texas flags visible, conflicting with the emblem exclusion -- agent_preliminary_verdict=reject_recommended, human_verdict=null, and it is cut into the film. A reader opened it on the 06:31 master and the flags are plainly visible exactly as described.\nTwo other rejects in the same range were checked and do NOT survive into the master: U001's storefront glyphs do not resolve at 10x, and U038's calculator numerals are garbled. Recorded so nobody blocks them later on the verdict text alone.\nSTANDING PROBLEM, not solved by this row: EP73_uri_plate_verdicts.v001.json is human_review_status=pending_owner_review and ALL 120 plates carry a blank human_verdict. Separately, twelve stills actually on screen (U121, U122, U123, U124, U126, U127, U128, U131, U139, U149, U150, U167) fall OUTSIDE the file's U001-U120 range and have no verdict row at all -- they are among the largest and longest-held images in act one. A reader has now looked at all twelve and found no face and no readable mark, which is a review by a reader, not by the plate owner.",
+   "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01, from the post-render read of sha 3352f939."
   }
  ],
  "quality_deferred": [

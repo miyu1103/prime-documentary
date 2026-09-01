@@ -179,7 +179,16 @@ export const StatCounter: React.FC<{
         <span style={{fontSize: 90, color: accent, marginLeft: 8}}>{suffix}</span>
       </div>
       <div style={{width: barW, height: 5, borderRadius: 3, backgroundColor: accent, boxShadow: `0 0 24px ${accent}aa`, marginTop: 20}} />
-      <div style={{marginTop: 22, fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 500, fontSize: 30, letterSpacing: 2, color: INK2}}>
+      {/* WIDTH CEILING (2026-09-01). This line had no width and no wrap, so a long source note
+          grew past both frame edges and stayed there for the whole hold. MEASURED on the EP73
+          uri master of 11:48: the 246 card read "he Texas Department of State Health Services
+          figure ... This film uses no oth" / "umber as fact. (TX-26)" -- the attribution was
+          unreadable for its entire six seconds. Same defect the lower-third and the timeline had;
+          the fixes for those did not reach this component.
+          1400 = 1920 - 2*260, and 260 covers the worst case of the two ken-burns transforms this
+          figure still rides (FigureScene pan 46 + scale 1.16 about the centre = 153.6, Drift pan
+          17 + scale 1.035 = 33.6, about 250px). Centred content, so the margin is symmetric. */}
+      <div style={{marginTop: 22, fontFamily: 'Inter, system-ui, sans-serif', fontWeight: 500, fontSize: 30, letterSpacing: 2, color: INK2, maxWidth: 1400, textAlign: 'center', lineHeight: 1.25}}>
         {label}
       </div>
     </AbsoluteFill>
