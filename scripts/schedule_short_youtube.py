@@ -1911,7 +1911,7 @@ CONFIG: dict[str, dict] = {
     },
     "186": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "dueMY2lSu8w",
+        "longform": "l7-oHSNEIjc",
         "ep": "PD-2026-051-willingham",
         "rev": "v002",
         "title": "Each of the arson indicators had an ordinary explanation: flashover makes the pour patterns #Shorts",
@@ -1924,7 +1924,7 @@ CONFIG: dict[str, dict] = {
     },
     "187": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "dueMY2lSu8w",
+        "longform": "l7-oHSNEIjc",
         "ep": "PD-2026-051-willingham",
         "rev": "v002",
         "title": "Texas built a commission to ask whether the science was reliable, and the meeting where #Shorts",
@@ -1937,7 +1937,7 @@ CONFIG: dict[str, dict] = {
     },
     "188": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "Gx_i5aMJWLM",
+        "longform": "67gynOvKf1M",
         "ep": "PD-2026-052-morton",
         "rev": "v002",
         "title": "The alibi was not disproved, it was engineered away: a stomach-contents estimate moved #Shorts",
@@ -1950,7 +1950,7 @@ CONFIG: dict[str, dict] = {
     },
     "189": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "Gx_i5aMJWLM",
+        "longform": "67gynOvKf1M",
         "ep": "PD-2026-052-morton",
         "rev": "v002",
         "title": "The successor district attorney spent roughly six years fighting the DNA test itself, so #Shorts",
@@ -2067,7 +2067,7 @@ CONFIG: dict[str, dict] = {
     },
     "200": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "6VL_mA6OiS0",
+        "longform": "H8j_K1x9Dog",
         "ep": "PD-2026-053-norfolk",
         "rev": "v002",
         "title": "Every DNA exclusion made the state's theory bigger instead of smaller, until it required #Shorts",
@@ -2080,7 +2080,7 @@ CONFIG: dict[str, dict] = {
     },
     "201": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "0iDUT0gzBiQ",
+        "longform": "PfdEpNQyaQQ",
         "ep": "PD-2026-054-flowers",
         "rev": "v002",
         "title": "Reporters walked into rural Mississippi courthouse storerooms and counted every juror #Shorts",
@@ -2093,7 +2093,7 @@ CONFIG: dict[str, dict] = {
     },
     "202": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "Ew5bZNOk17E",
+        "longform": "Iw-EPUD2nHg",
         "ep": "PD-2026-055-burge",
         "rev": "v002",
         "title": "Illinois gave prosecutors three years to charge these crimes, so the clock on every provable #Shorts",
@@ -2106,7 +2106,7 @@ CONFIG: dict[str, dict] = {
     },
     "203": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "0sjw_1OxCVk",
+        "longform": "4FlCaOVpln0",
         "ep": "PD-2026-056-postoffice",
         "rev": "v002",
         "title": "A helpline told hundreds of sub-postmasters the same sentence, one call at a time, and being #Shorts",
@@ -2119,7 +2119,7 @@ CONFIG: dict[str, dict] = {
     },
     "204": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "0sjw_1OxCVk",
+        "longform": "4FlCaOVpln0",
         "ep": "PD-2026-056-postoffice",
         "rev": "v002",
         "title": "The Post Office investigated, charged and prosecuted its own sub-postmasters, holding all #Shorts",
@@ -2132,7 +2132,7 @@ CONFIG: dict[str, dict] = {
     },
     "205": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "0sjw_1OxCVk",
+        "longform": "4FlCaOVpln0",
         "ep": "PD-2026-056-postoffice",
         "rev": "v002",
         "title": "In 2010 the Post Office put on paper what an honest look at its computer would cost it #Shorts",
@@ -2145,7 +2145,7 @@ CONFIG: dict[str, dict] = {
     },
     "250": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "FOdVK1qQE6w",
+        "longform": "KPYLtYYODLE",
         "ep": "PD-2026-057-fieldtest",
         "rev": "v002",
         "title": "The whole procedure that turned a crumb into a felony charge was a colour change #Shorts",
@@ -2158,7 +2158,7 @@ CONFIG: dict[str, dict] = {
     },
     "251": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "FOdVK1qQE6w",
+        "longform": "KPYLtYYODLE",
         "ep": "PD-2026-057-fieldtest",
         "rev": "v002",
         "title": "People who had done nothing pleaded guilty five times faster than people who really had #Shorts",
@@ -2171,7 +2171,7 @@ CONFIG: dict[str, dict] = {
     },
     "252": {
         # destination for the funnel link; ensure_funnel_description() verifies it is public
-        "longform": "FOdVK1qQE6w",
+        "longform": "KPYLtYYODLE",
         "ep": "PD-2026-057-fieldtest",
         "rev": "v002",
         "title": "The office that won every one of those convictions went back through its own files #Shorts",
