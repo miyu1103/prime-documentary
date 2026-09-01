@@ -1222,6 +1222,14 @@
    "label": "reviewer_rejected_plate_cut_into_film",
    "reason": "EP73 uri, cut-0056. The plate reviewer wrote: US and Texas flags visible, conflicting with the emblem exclusion -- agent_preliminary_verdict=reject_recommended, human_verdict=null, and it is cut into the film. A reader opened it on the 06:31 master and the flags are plainly visible exactly as described.\nTwo other rejects in the same range were checked and do NOT survive into the master: U001's storefront glyphs do not resolve at 10x, and U038's calculator numerals are garbled. Recorded so nobody blocks them later on the verdict text alone.\nSTANDING PROBLEM, not solved by this row: EP73_uri_plate_verdicts.v001.json is human_review_status=pending_owner_review and ALL 120 plates carry a blank human_verdict. Separately, twelve stills actually on screen (U121, U122, U123, U124, U126, U127, U128, U131, U139, U149, U150, U167) fall OUTSIDE the file's U001-U120 range and have no verdict row at all -- they are among the largest and longest-held images in act one. A reader has now looked at all twelve and found no face and no readable mark, which is a review by a reader, not by the plate owner.",
    "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-01, from the post-render read of sha 3352f939."
+  },
+  {
+   "ids": [
+    "AR-pexels_v_2882182"
+   ],
+   "label": "identifiable_face",
+   "reason": "Global, not episode-scoped: a real-photography clip with an identifiable face is unsafe in any film. EP73 uri cut-0096, 8:10-8:15 (source AR-pexels_v_2882182, shelved as flashlight_beam_dark_room). A previous read of an earlier uri render flagged this clip only as off-subject (night hikers with headlamps standing in for a power station) and did not catch the face -- the sheet's four sample points happened to land on backlit/blown-out moments. A later read at full resolution, p20 sample, found a smiling face at frame-left: sunglasses pushed up, headlamp, orange bandana, mouth/teeth/cheek clearly resolved. Confirmed by the lane owner at 4x crop before blocking. Real, identifiable, not AI-generated.",
+   "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-02, final pre-publish read of EP73 uri."
   }
  ],
  "quality_deferred": [
