@@ -493,12 +493,6 @@
     ]
    },
    {
-    "kind": "lowerthird",
-    "_provenance": "in August of twenty thirteen the railway and its Canadian subsidiary filed for bankruptcy protection",
-    "primary": "AUGUST 2013",
-    "secondary": "the railway files for bankruptcy protection"
-   },
-   {
     "kind": "stat",
     "_provenance": "the settlement fund came to between four hundred and forty-six and four hundred and fifty million Canadian dollars",
     "label": "THE SETTLEMENT FUND",
@@ -510,10 +504,20 @@
     "decimals": 0
    },
    {
+    "kind": "stat",
+    "_correction_20260903": "added to restore ACT_5's beat count after two mistimed duplicate cards were deleted (see AUGUST 2013 / SHERBROOKE, OCTOBER 2017 removal above) rather than leave the section under the episode_spec floor. Uses two rows from FACTS_LEDGER v003 that were researched but never placed on screen: LM-96 (the bypass cost) here and LM-98 (expropriation and the signed agreement) below. Matches script.en.v001.md lines 425-429 verbatim.",
+    "_provenance": "it was costed in twenty eighteen at a hundred and thirty-three million dollars, sixty per cent federal and forty per cent provincial",
+    "label": "THE BYPASS",
+    "value": 133,
+    "prefix": "CA$",
+    "suffix": "M",
+    "decimals": 0
+   },
+   {
     "kind": "lowerthird",
-    "_provenance": "it opened in Sherbrooke in October of twenty seventeen, before a bilingual jury",
-    "primary": "SHERBROOKE, OCTOBER 2017",
-    "secondary": "the criminal trial opens before a bilingual jury"
+    "_provenance": "the federal government took possession of the land it needed in august of twenty twenty-three, by expropriation; the contribution agreement with the province was signed in july of twenty twenty-four",
+    "primary": "THE LAND, THEN THE SIGNATURE",
+    "secondary": "Expropriated by the federal government in August 2023. The contribution agreement with Quebec was signed in July 2024. (LM-98)"
    },
    {
     "kind": "kinetic",

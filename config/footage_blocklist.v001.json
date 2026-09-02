@@ -1230,6 +1230,36 @@
    "label": "identifiable_face",
    "reason": "Global, not episode-scoped: a real-photography clip with an identifiable face is unsafe in any film. EP73 uri cut-0096, 8:10-8:15 (source AR-pexels_v_2882182, shelved as flashlight_beam_dark_room). A previous read of an earlier uri render flagged this clip only as off-subject (night hikers with headlamps standing in for a power station) and did not catch the face -- the sheet's four sample points happened to land on backlit/blown-out moments. A later read at full resolution, p20 sample, found a smiling face at frame-left: sunglasses pushed up, headlamp, orange bandana, mouth/teeth/cheek clearly resolved. Confirmed by the lane owner at 4x crop before blocking. Real, identifiable, not AI-generated.",
    "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-02, final pre-publish read of EP73 uri."
+  },
+  {
+   "ids": [
+    "AR-pexels_20654632"
+   ],
+   "label": "readable_third_party_branding",
+   "reason": "Global: real company logos in an industrial-yard aerial. EP77 keybridge cut-0053, ~6:07-6:10, shelved as 'an_aerial_view_of_a_truck_and_trailer'. Confirmed at full 1920px: a red 'AEP' (American Electric Power) roundel on a semi-trailer, and 'KOHLER' embossed on a generator housing. Both fully legible without cropping. Confirmed by the lane owner before blocking.",
+   "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-02, keybridge re-read."
+  },
+  {
+   "ids": [
+    "AR-v_90789"
+   ],
+   "episodes": [
+    "lacmegantic"
+   ],
+   "label": "readable_third_party_branding_and_wrong_era",
+   "reason": "EP72 lacmegantic, cut-0334, ~28:23-28:28. A junkyard of real, photographed EUROPEAN electric locomotives (catenary/pantograph masts visible in frame) with a faded curved livery mark and a white placard carrying illegible text on the nose. Neither mark resolves to a specific readable name at 1080p, but this film has already lost three renders to exactly this asset class (construction plant and rail rolling-stock branding: CASE, KOMATSU, PC 400 LC, a cast CP monogram, Goliath, UTLX) -- blocked on the same precedent rather than argued from an inconclusive crop. Also wrong era/region on its own terms: these are electrified European locomotives, and the 2013 Lac-Megantic derailment was a North American short-line diesel train.",
+   "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-02, lacmegantic re-read."
+  },
+  {
+   "ids": [
+    "L089"
+   ],
+   "episodes": [
+    "lacmegantic"
+   ],
+   "label": "dramatised_victim_at_wreck_site",
+   "reason": "EP72 lacmegantic, ~11:48, a generated clip of a man crouched beside the ruptured tank car at the derailment site, near-frontal, mouth open in apparent distress, raising a hand. This is not a rendering glitch -- it is a coherent, identifiable-style human figure dramatising a person in danger at the wreck. This episode's own card, 'WHAT THIS FILM DOES NOT SHOW: No victim, no rescue, no body' (corrected 2026-09-01), makes exactly this promise; a distressed figure at the wreck breaks it, and it is the same class of image (a person reacting to the derailment, not simply present near generic wreckage) as the ruptured-tank-car sequence corrected earlier in this project. Confirmed by the lane owner at full resolution before blocking.",
+   "reviewed_by": "Claude (Opus 5, Claude Code) 2026-09-03, lacmegantic re-read."
   }
  ],
  "quality_deferred": [
