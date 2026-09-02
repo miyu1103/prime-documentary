@@ -185,7 +185,8 @@ def forbidden_from_ledger(path: Path) -> list[tuple[str, str, str]]:
         # phrases as banned, so a script that obeys the row to the letter failed on it. Same
         # family as the 2026-08-18 false blocks: there, the quoted string was the attribution the
         # row demands; here it is the qualifier the row demands.
-        if re.search(r"in the same breath|must appear|appears? in the same", low_claim):
+        if re.search(r"in the same breath|must appear|appears? in the same"
+                     r"|with the outlet named and the word|and the word \x22", low_claim):
             mode = "require"
         for ph in quoted:
             if len(ph) >= 6:
