@@ -83,8 +83,11 @@ def main() -> int:
             except Exception:
                 out.append(stripped)
                 continue
+            # Widened 2026-09-03 with the audit: match every held IA row, not only the ones the
+            # licenceurl fix had touched. 859 of them carried no reindex_basis at all.
             ident = row.get("id")
-            if row.get("reindex_basis") != "uploader_asserted_licenseurl" or ident not in plan:
+            if (row.get("source") != "ia" or row.get("license_decision") != "review_required"
+                    or row.get("rights_verdict") or ident not in plan):
                 out.append(stripped)
                 continue
             bucket, why = plan[ident]

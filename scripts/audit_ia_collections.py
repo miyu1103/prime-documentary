@@ -85,7 +85,13 @@ def held_rows() -> list[dict]:
                 r = json.loads(line)
             except Exception:
                 continue
-            if r.get("reindex_basis") == "uploader_asserted_licenseurl":
+            # Widened 2026-09-03: the first run only looked at rows the licenceurl fix had
+            # touched (590). Measured that day, 1,335 IA rows are held in total and every one
+            # carries an id, so the same collection lookup answers for all of them -- 859 have
+            # no reindex_basis at all and had simply never been examined.
+            if (r.get("source") == "ia"
+                    and r.get("license_decision") == "review_required"
+                    and not r.get("rights_verdict") and r.get("id")):
                 out.append(r)
     return out
 
