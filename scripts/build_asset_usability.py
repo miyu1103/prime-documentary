@@ -37,6 +37,7 @@ OUT = ROOT / "runs" / "asset_usability.v001.jsonl"
 RES_INDEX = Path(LEDGER_DIR) / "video_resolution.json"
 VERT_INDEX = Path(r"E:\pd-media\assets\archive\_qc\vertical_index.jsonl")
 SEM_PATHS = ROOT / "runs" / "footage_semantic" / "paths.json"
+HONESTY = ROOT / "runs" / "theme_label_honesty.v001.json"
 
 VIDEO_EXT = {".mp4", ".mov", ".mkv", ".webm", ".m4v", ".avi"}
 AUDIO_EXT = {".mp3", ".wav", ".flac", ".m4a", ".ogg", ".aac"}
@@ -75,6 +76,18 @@ def load_side_indexes() -> tuple[dict, dict, set]:
     return res, vert, sem
 
 
+def load_theme_honesty() -> dict:
+    """theme -> % of its usable assets whose title carries a word distinctive to that theme.
+
+    Written by check_theme_label_honesty.py. It is carried here because the theme label is the
+    single least trustworthy field on the shelf and an editor picking a clip must see that at
+    the moment of picking, not in a report nobody opens.
+    """
+    if not HONESTY.exists():
+        return {}
+    return {r["theme"]: r for r in json.loads(HONESTY.read_text("utf-8"))}
+
+
 def ledger_rows():
     for f in sorted(glob.glob(os.path.join(LEDGER_DIR, "*.jsonl"))):
         for line in open(f, encoding="utf-8"):
@@ -89,7 +102,7 @@ def ledger_rows():
                 yield r
 
 
-def classify(row: dict, res: dict, vert: dict, sem: set) -> dict:
+def classify(row: dict, res: dict, vert: dict, sem: set, honesty: dict) -> dict:
     path = row["file_path"]
     kind = kind_of(path)
     decision = row.get("license_decision")
@@ -130,6 +143,12 @@ def classify(row: dict, res: dict, vert: dict, sem: set) -> dict:
         gaps.append("framing/motion unmeasured")
     if kind == "video" and not tech["searchable"]:
         gaps.append("not in the semantic index -- a search will never surface it")
+    h = honesty.get(row.get("theme"))
+    if h:
+        tech["theme_on_label_pct"] = h["on_label_pct"]
+        if h["on_label_pct"] < 50:
+            gaps.append(f"theme '{row.get('theme')}' is only {h['on_label_pct']}% on-label "
+                        f"-- assume this clip is off-theme until you look at it")
     gaps.append("no human has confirmed the content matches the label")
     gaps.append("no check for a watermark, a logo or an identifiable real face")
 
@@ -156,6 +175,10 @@ def print_checklist(rec: dict) -> None:
         print(f"              motion={t['motion']}  centre_energy={t['centre_energy']}"
               f"  luma_crop={t['luma_crop']}")
     print(f"              in semantic search: {t.get('searchable')}")
+    if "theme_on_label_pct" in t:
+        pct = t["theme_on_label_pct"]
+        flag = "  <-- THEME IS UNRELIABLE" if pct < 50 else ""
+        print(f"\n  THEME       {rec['theme']}  {pct}% on-label{flag}")
     print("\n  NOT CHECKED (a person must):")
     for g in rec["unchecked"]:
         print(f"              - {g}")
@@ -192,13 +215,15 @@ def main() -> int:
         return 0
 
     res, vert, sem = load_side_indexes()
-    print(f"side indexes: resolution={len(res)} vertical={len(vert)} semantic={len(sem)}")
+    honesty = load_theme_honesty()
+    print(f"side indexes: resolution={len(res)} vertical={len(vert)} semantic={len(sem)} "
+          f"theme-honesty={len(honesty)}")
     tally: collections.Counter = collections.Counter()
     tmp = str(OUT) + ".tmp"
     n = 0
     with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
         for row in ledger_rows():
-            rec = classify(row, res, vert, sem)
+            rec = classify(row, res, vert, sem, honesty)
             fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
             tally[(rec["kind"], rec["rights"])] += 1
             n += 1

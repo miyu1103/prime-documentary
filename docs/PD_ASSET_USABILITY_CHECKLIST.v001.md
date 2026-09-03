@@ -61,6 +61,47 @@ all (every endpoint returns 403, measured 2026-09-03).
 A missing technical field is printed as absent rather than as zero. `resolution unmeasured`
 means nobody probed it, not that it is small.
 
+## 2.5 THEME — the least trustworthy field on the shelf
+
+Printed whenever the theme has been scored, with a warning below 50 per cent:
+
+```
+  THEME       courtroom_justice  30.3% on-label  <-- THEME IS UNRELIABLE
+```
+
+**Measured 2026-09-04 by looking at the pixels.** A 20-tile sheet of `courtroom_justice` held
+one courthouse. The other nineteen were a mountain range, a Delhi mosque, a bedroom, a
+supermarket drinks aisle, a garden swing, stacking stones, an Italian fruit market and a woman
+reading Chomsky on a green screen. `americana_1930s_1970s` was worse: nineteen of twenty tiles
+were 16th-18th century European allegorical engravings from the Met.
+
+The queries were never the problem. The ingest asked pixabay for "judge bench gavel" and pixabay
+matched it a word at a time, returning "bank wooden bench bench relax to sit sea". It asked the
+Met for "america" and got "allegory of america", a 17th century engraving. **Nothing compared the
+result to the request**, so 66 per cent of the shelf carries a theme nobody checked.
+
+`check_theme_label_honesty.py` scores each theme: what share of its assets carry a word
+distinctive to that theme, after generic scene words (bench, yard, case, cell, room, building)
+are removed — those are the exact words that let the wrong assets in. Worst first, measured:
+
+| theme | usable | on-label |
+|---|---|---|
+| americana_1930s_1970s | 334 | **1.8%** |
+| bank_and_branch | 470 | 12.1% |
+| world_cities | 1,547 | 12.3% |
+| decision_rooms | 209 | 12.4% |
+| small_town | 1,451 | 21.0% |
+| courtroom_justice | 1,889 | 30.3% |
+| police_modern | 1,771 | 33.3% |
+| prison_jail | 1,566 | 47.3% |
+| money_banking | 2,256 | 47.3% |
+
+Full ranking: `runs/theme_label_honesty.v001.json`. Sheets: `runs/qc/theme_sheets/`.
+
+**A title is not a picture.** This ranks themes for review; it does not condemn an individual
+asset. But under 50 per cent, searching by theme is worse than useless — it returns confident
+wrong answers. Search semantically (`index_footage_semantic.py --query`) and look at the result.
+
 ## 3. NOT CHECKED — printed on every asset, on purpose
 
 Two lines appear under every single record:
