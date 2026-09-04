@@ -26,6 +26,7 @@ import collections
 import glob
 import json
 import os
+import re
 import sys
 from pathlib import Path
 
@@ -45,6 +46,26 @@ IMAGE_EXT = {".jpg", ".jpeg", ".png", ".tif", ".tiff", ".webp"}
 
 # A licence that permits commercial use with no attribution obligation.
 CLEAR_DECISIONS = {"pd", "cc0", "free_commercial"}
+
+# PD is about American institutions and the ordinary Americans they fail. A Russian flag, a
+# Delhi ministry or a Berlin facade is not "close enough" -- it is a different country's state.
+# Episode specs already forbid these by name (EP78's forbidden_subjects lists 90 of them); the
+# shelf never applied the same filter, so `government_buildings` returns Afghanistan and
+# Saint Kitts alongside the California State Capitol. Measured 2026-09-04: 10,978 of 117,338
+# usable image/video assets NAME a foreign country in their own title, and the true figure is
+# higher because a mosque or a Dutch ministry often names no country at all.
+FOREIGN_WORDS = """japan japanese tokyo kyoto osaka china chinese beijing shanghai taiwan taipei
+hong kong korea korean seoul singapore thailand bangkok vietnam india indian mumbai delhi dubai
+turkey istanbul moscow russia russian paris france french london england english british uk
+venice rome italy italian spain madrid barcelona germany berlin munich netherlands amsterdam
+poland warsaw prague vienna budapest greece athens sweden stockholm norway denmark copenhagen
+finland iceland switzerland zurich brazil rio mexico peru chile argentina colombia egypt cairo
+morocco kenya nigeria australia sydney melbourne zealand canada toronto vancouver montreal
+afghanistan pakistan iran iraq israel ukraine belgium portugal ireland scotland wales austria
+hungary romania croatia serbia philippines indonesia malaysia nepal bali""".split()
+# Word boundaries are not optional: without them "uk" matches inside "bucket", "rio"
+# inside "interior" and "iran" inside "vibrant", flagging American footage as foreign.
+FOREIGN_PAT = re.compile(r"\b(" + "|".join(FOREIGN_WORDS) + r")\b", re.I)
 
 
 def kind_of(path: str) -> str:
@@ -131,6 +152,9 @@ def classify(row: dict, res: dict, vert: dict, sem: set, honesty: dict) -> dict:
         tech["luma_crop"] = v.get("luma_crop")
     tech["mb"] = round((row.get("bytes") or 0) / 1e6, 1)
     tech["searchable"] = path in sem
+    m = FOREIGN_PAT.search(row.get("title") or "")
+    if m:
+        tech["foreign"] = m.group(0).lower()
 
     # --- what nobody has checked --------------------------------------------------------
     # There is no shelf-wide record of a human having looked at an archive clip. Episode
@@ -143,6 +167,8 @@ def classify(row: dict, res: dict, vert: dict, sem: set, honesty: dict) -> dict:
         gaps.append("framing/motion unmeasured")
     if kind == "video" and not tech["searchable"]:
         gaps.append("not in the semantic index -- a search will never surface it")
+    if "foreign" in tech:
+        gaps.append(f"title names '{tech['foreign']}' -- this is not an American subject")
     h = honesty.get(row.get("theme"))
     if h:
         tech["theme_on_label_pct"] = h["on_label_pct"]
@@ -175,6 +201,8 @@ def print_checklist(rec: dict) -> None:
         print(f"              motion={t['motion']}  centre_energy={t['centre_energy']}"
               f"  luma_crop={t['luma_crop']}")
     print(f"              in semantic search: {t.get('searchable')}")
+    if "foreign" in t:
+        print(f"              NON-US SUBJECT: title names '{t['foreign']}'")
     if "theme_on_label_pct" in t:
         pct = t["theme_on_label_pct"]
         flag = "  <-- THEME IS UNRELIABLE" if pct < 50 else ""
