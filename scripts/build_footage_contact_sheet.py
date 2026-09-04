@@ -133,11 +133,28 @@ def load_selection(json_path: str) -> tuple[str, list[Path], dict[str, str]]:
     return str(title), media, labels
 
 
+def _seek_seconds(media_path: Path) -> str:
+    """Where to grab the frame. One second in is right for a five-second stock clip and wrong
+    for anything longer: measured 2026-09-04, fifteen of twenty tiles on the
+    `ep70_american_suburb` sheet were the identical "This film is from Prelinger Archives" title
+    card, because every one of those films opens with it. The sheet was reviewing leaders, not
+    content. Seek a quarter of the way in instead, so an archive film shows its own footage."""
+    try:
+        out = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "csv=p=0", str(media_path)],
+            capture_output=True, text=True, timeout=20).stdout.strip()
+        dur = float(out)
+    except Exception:
+        return "1"
+    return f"{max(1.0, min(dur * 0.25, 600.0)):.1f}"
+
+
 def load_frame(media_path: Path) -> Image.Image:
     if media_path.suffix.lower() in IMG_EXT:
         return Image.open(media_path).convert("RGB")
     proc = subprocess.run(
-        ["ffmpeg", "-v", "error", "-ss", "1", "-i", str(media_path),
+        ["ffmpeg", "-v", "error", "-ss", _seek_seconds(media_path), "-i", str(media_path),
          "-frames:v", "1", "-f", "image2pipe", "-vcodec", "png", "-"],
         check=True,
         stdout=subprocess.PIPE,
