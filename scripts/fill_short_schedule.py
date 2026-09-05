@@ -125,10 +125,13 @@ def free_slots(n: int) -> list[dt.datetime]:
     for r in json.loads(TRUTH.read_text(encoding="utf-8"))["scheduled"]:
         t = dt.datetime.fromisoformat(r["publishAt"].replace("Z", "+00:00")).astimezone(JST)
         taken.add(t.replace(minute=0, second=0, microsecond=0))
-    # start the day after the last thing already on the calendar, so nothing lands in the past
-    last = max(taken).date() if taken else dt.datetime.now(JST).date()
+    # Scan forward from today and fill every open Shorts hour, in order -- do not skip ahead
+    # to "the day after the last thing on the calendar". A long-form booked far ahead (e.g.
+    # valdez at 09-06 12:00) used to become that anchor and the walk started AT 09-06,
+    # silently skipping open Shorts days 09-04/09-05 in between. Found 2026-09-04 when those
+    # two days ended up with zero Shorts scheduled while a Short two days later got filled.
     out: list[dt.datetime] = []
-    day = last
+    day = dt.datetime.now(JST).date()
     while len(out) < n:
         for h in SHORT_HOURS:
             if len(out) >= n:

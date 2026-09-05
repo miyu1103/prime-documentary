@@ -4,21 +4,19 @@
   "episode_id": "PD-2026-063-correa",
   "slug": "correa",
   "loop": true,
-  "loop_join": "last beat is a blank clipboard on a hook; it turns edge-on and becomes the dissolved statute page of frame 0",
-  "second_watch_detail": "EVEN-HANDEDLY reads as fairness on pass 1; on pass 2 it reads as 'the same bad service for everybody is still legal'",
-  "funnel_question_left_for_longform": "If the rule is only to treat everyone the same, what happens when a hospital treats everyone badly?",
-  "funnel_long_title": "Never Called",
-  "funnel_long_video_id": null,
-  "description_line_1": "▶ FULL CASE: Never Called",
+  "loop_join": "The final three beats (p21-p23) rewind the hook images in reverse -- short263_03, then short263_02, then short263_01 -- under the FULL CASE card, with p23 marked isCta and rewind and held to the last frame. Frame 0 opens on that same short263_01 image, a close-up of a blank, faded page, so the loop closes on the same unmarked surface the opening line is about to call appropriate.",
+  "second_watch_detail": "The blank, faded page held up in the opening frame (short263_01) first reads as plain texture; once L2 has called appropriate one of the most wonderful weasel words in the dictionary, that same blank surface reads as the undefined word itself -- a page with nothing written on it.",
+  "funnel_question_left_for_longform": "If the rule requires sameness, what happens when a hospital treats every similar patient equally badly?",
+  "funnel_long_title": "A Hospital Handed Her Number 47 and Never Called It",
+  "funnel_long_video_id": "D5zX7PcL6zQ",
+  "description_line_1": "▶ FULL CASE: A Hospital Handed Her Number 47 and Never Called It | https://youtu.be/D5zX7PcL6zQ",
   "cta": {
     "ctaHeadline": "FULL CASE",
     "ctaLongTitle": "Never Called",
-    "ctaLongThumbSrc": "shorts/short263/short263_ctathumb.png",
+    "ctaLongThumbSrc": "shorts/short263/short263_ctathumb.jpg",
     "scrim": 0.46,
     "fake_button": false
   },
-  "pinned_comment": null,
-  "note": "funnel_long_video_id and pinned_comment stay null until the episode has at least a private upload. check_short_funnel.py fails until then, and that is the intended behaviour: a short cannot be scheduled before the corridor has somewhere to lead.",
-  "renumbered_from": "short186",
-  "renumber_reason": "short182-193 were reserved on 2026-08-04 when the highest number on disk was 181. Another thread then wrote short182-193 for tlo, willingham, tyler and others at 06:32 the same day. The true high-water mark is 258, so this slate moved to 259-270."
+  "pinned_comment": "If the rule requires sameness, what happens when a hospital treats every similar patient equally badly? The full case is here: https://youtu.be/D5zX7PcL6zQ",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it: the question and loop-join intent are read off episodes/_planning/short_designs/PD-2026-063-correa.design.v001.json and remotion/src/data/short263.ts (CUTS p21-p23, ctaLongTitle 'Never Called'), the second-watch detail and loop-image identity were confirmed by opening remotion/public/shorts/short263/short263_01.png directly, and the long-form title and video id are read off episodes/PD-2026-063-correa/09_package/youtube_meta.v001.json and the live channel audit in scripts/_yt_audit.json. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet."
 }

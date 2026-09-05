@@ -524,3 +524,14 @@ decisions. **All 68 themes eye-reviewed** (docs/shelf/theme_eye_review.v001.json
 QUARANTINE-grade label rot, 357 self-tagged AI assets were marked usable (now blocked), Mickey
 Mouse/LEGO/Bee Gees IP found, and the honesty metric failed in both directions — only looking
 works. Trap that cost three commits: `git add` on an ignored path stages nothing and exits 0.
+
+**[2026-09-05 — build/publish lane](handover/2026-09-05-build-publish.md)** — station published;
+shorts stock unlocked 12→72 (60 unregistered shorts given CONFIG rows + funnel records, 91/91
+green); colgan unblocked with 4 locally generated people plates (owner exception, Codex down),
+rendered, full 49-sheet read found ONE blocker — a generated plate reproduced Delta Air Lines'
+tail livery — C014 blocklisted/quarantined and the re-render (v002) launched same evening for the
+09-07 12:00 slot. Traps: `_finish_episode.sh [0/7]` restores img_unused AFTER a scaffold prunes
+absent plates (restore verdicts sha-verified from `colgan_plate_decision/plate_hashes`);
+`register_face_stills.py` found 7/7 false-positive "faces" (a depth map among them) — never
+register without eyes. EP83–85: footage pools 74/76/81 done, thumbs done, people plates
+19/20+20base/0. EP86–88 slate drafted for owner approval (Columbia/El Faro/Purdue).

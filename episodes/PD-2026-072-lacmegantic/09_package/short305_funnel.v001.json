@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 305,
+  "episode_id": "PD-2026-072-lacmegantic",
+  "slug": "lacmegantic",
+  "loop": true,
+  "loop_join": "The final beat p14 (short305_14.png, a plain matte near-black surface with faint horizontal grain) carries isCta and rewind, so its kenburns drift runs backward under the held FULL CASE card and settles at the same zoom/pan state frame 0 begins at. Frame 0, p01 (short305_01.png, a section of black tank car steel with a large torn opening), is itself another dark, textured black surface, so the hard cut from the near-black card back to the torn steel reads as a continuation of the same tonal frame rather than a jump to an unrelated picture.",
+  "second_watch_detail": "p07/p08, a blank clipboard sheet and a closed bound document, are introduced under L4 as generic paperwork; once L7 states that a car built in 1980 and a car built in 2012 were both in compliance because the requirement never moved between them, that closed, unopened document reads as the specification itself, unrevised for over three decades while the cars kept being filled.",
+  "funnel_question_left_for_longform": "What was in those cars, and did the shipping papers say what it really was?",
+  "funnel_long_title": "Seven Hand Brakes Were Set Where the Rule Asked for Nine",
+  "funnel_long_video_id": "sylgSOcCe1k",
+  "description_line_1": "\u25b6 FULL CASE: Seven Hand Brakes Were Set Where the Rule Asked for Nine | https://youtu.be/sylgSOcCe1k",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Town Burned Because Seven Hand...",
+    "ctaLongThumbSrc": "shorts/short305/short305_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What was in those cars, and did the shipping papers say what it really was? The full case is here: https://youtu.be/sylgSOcCe1k",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered (remotion/out/short305_yt.mp4 exists) but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the header LEAVES-FOR-THE-LONG-FORM question, the CTA block, and the loop-cut ids/comments all come from remotion/src/data/short305.ts, and the long-form id/title come from the now-live video sylgSOcCe1k. Layer 4 -- the Studio related-video setting -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but cannot be performed yet because short305 is not uploaded. BLOCKER (informational, does not affect the gate): cta.ctaLongThumbSrc points at shorts/short305/short305_ctathumb.jpg, but that file does not exist anywhere in remotion/public_min, remotion/public_shorts_slim, remotion/public_ep72, or E:/pd-media -- it was searched for and not found, so the in-video CTA card thumbnail source is missing and must be generated before the card renders correctly, even though check_short_funnel.py only validates that the field is a non-empty string."
+}

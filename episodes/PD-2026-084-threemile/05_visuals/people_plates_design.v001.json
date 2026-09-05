@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0.0",
+  "episode_id": "PD-2026-084-threemile",
+  "slug": "threemile",
+  "authored": "2026-09-05",
+  "note": "Fills the empty people_plates declaration (people_plates_min: 20 in episode_spec.v001.json) for local SD3.5 generation under the owner's emergency-addition exception while Codex is down. Every figure is anonymous: from behind, silhouette, or hands only. No real-person likeness (Governor, operators, judge, executives are never depicted recognisably and never named). No readable text, signage, logos or documents anywhere; compositions avoid plausible sign surfaces. Era is strictly 1978-1984 central Pennsylvania: analogue instrumentation, backlit annunciator tiles, strip-chart recorders, rotary telephones, fanfold line printers, 1979 cars, brown and orange interiors. Cooling towers emit water vapour only, never smoke. All of episode_spec.v001.json forbidden_subjects bind these rows. 16:9 intent on every plate.",
+  "style_base": "cinematic documentary reconstruction, photorealistic, 35mm film grain, late-1970s American colour palette of brown orange and avocado, one practical light source visible in the frame, high contrast, shallow depth of field, 16:9",
+  "negative_base": "text, sign, lettering, logo, watermark, numerals, handwriting, signature, emblem, badge, insignia, readable document, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, mobile phone, modern car, modern clothing, smoke, smokestack, chimney smoke, black smoke, fire, explosion, glow, green glow, corpse, blood, deformed hands, extra fingers, low quality, cartoon, illustration",
+  "plates": [
+    {
+      "id": "P001",
+      "section": "HOOK",
+      "beat": "The light on the panel says it did. (TM-505) — reprised in ENDING: 'Go back to the light.'",
+      "subject": "A single lit amber annunciator tile on a dark wall of unlit tiles, one anonymous hand hovering just before it, frozen mid-reach.",
+      "prompt": "Extreme close-up of one backlit amber indicator tile glowing on a dark wall of square annunciator tiles in a 1979 nuclear control room, a single anonymous adult hand in a rolled shirtsleeve hovering inches from the tile, blank featureless tile faces, deep shadow all around, the lit tile the only light source, cinematic documentary reconstruction, photorealistic, 35mm film grain, late-1970s brown and beige panel finish, high contrast, shallow depth of field, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, handwriting, emblem, badge, readable document, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern car, smoke, fire, explosion, green glow, deformed hands, extra fingers, low quality, cartoon, illustration",
+      "constraints": "Hand only, no face, no reflection showing a face. Tile faces must be blank glass with no glyphs or pseudo-lettering. No engraved labels on the panel."
+    },
+    {
+      "id": "P002",
+      "section": "HOOK",
+      "beat": "At four in the morning a pump stops... What do you do when the instrument is the thing that is broken? (TM-402)",
+      "subject": "A lone control-room operator seen from behind in silhouette, dwarfed by a wall of analogue gauges and dark annunciator tiles at 4 a.m.",
+      "prompt": "Wide shot from behind of a lone man in silhouette standing before a curved wall of 1979 analogue nuclear control panels, hundreds of round gauges and dark square annunciator tiles, a few scattered amber lamps burning, fluorescent ceiling fixtures dimmed, late-1970s American control room in beige and brown, short-sleeved shirt era workwear, his back fully to camera, cinematic documentary reconstruction, photorealistic, 35mm film grain, high contrast, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, handwriting, emblem, badge, readable document, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern clothing, modern car, smoke, fire, explosion, green glow, deformed hands, low quality, cartoon, illustration",
+      "constraints": "Back to camera only; no profile, no reflected face in glass. All gauge dials blank or unreadable at this distance. No wall plaques, no ceiling signage surfaces."
+    },
+    {
+      "id": "P003",
+      "section": "ACT_1",
+      "beat": "The plant was running at ninety-seven percent power... a machine looking after itself. (TM-401, TM-402)",
+      "subject": "Two operators from behind at their stations in an ordinary, calm control room minutes before 4 a.m., coffee cup on the console.",
+      "prompt": "Two men seen from behind seated at a long 1979 analogue control console, rows of round black gauges and toggle switches, strip-chart recorders slowly turning, a plain ceramic coffee cup on the desk edge, calm and ordinary night shift atmosphere, late-1970s short-sleeved shirts, beige and avocado console panels, warm fluorescent light, cinematic documentary reconstruction, photorealistic, 35mm film grain, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, handwriting, emblem, badge, readable document, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern clothing, smoke, fire, alarm lights, red flashing, deformed hands, low quality, cartoon, illustration",
+      "constraints": "Both figures back to camera. No mugs with printing, no name badges, no shoulder patches. Chart paper shows only faint unreadable trace lines. Mood is pre-accident calm: no lit alarm tiles."
+    },
+    {
+      "id": "P004",
+      "section": "ACT_1",
+      "beat": "An operator shut one of them down, and turned the other down to less than a hundred gallons a minute... reading a real instrument, correctly. (TM-409)",
+      "subject": "A close-up of an operator's hand turning a large rotary control knob beneath a round pressure gauge, decisive and deliberate.",
+      "prompt": "Macro close-up of an anonymous adult male hand gripping and turning a large bakelite rotary control knob on a 1979 analogue control panel, a big round glass-faced gauge above it with a single white needle, brushed metal panel in institutional beige, one hot practical panel lamp burning at frame edge, tension in the fingers, cinematic documentary reconstruction, photorealistic, 35mm film grain, high contrast, shallow depth of field, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, handwriting, emblem, badge, readable document, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, wristwatch with digits, smoke, fire, deformed hands, extra fingers, low quality, cartoon, illustration",
+      "constraints": "Hand only, no face, no ring or watch face with readable dial. Gauge face has a needle and tick marks but no numerals or lettering."
+    },
+    {
+      "id": "P005",
+      "section": "ACT_1",
+      "beat": "One light was covered by a yellow maintenance tag. No one knows why the second light was missed. (TM-407)",
+      "subject": "An operator from behind leaning close to a panel where a blank yellow paper tag hangs on a string directly over a small indicator lamp.",
+      "prompt": "Over-the-shoulder shot from behind an anonymous man in a late-1970s short-sleeved work shirt leaning toward a beige analogue control panel, a blank yellow cardboard maintenance tag hanging from a thin string directly in front of one small indicator lamp, the lamp's glow bleeding around the tag's edges, a second unlit lamp nearby in shadow, cinematic documentary reconstruction, photorealistic, 35mm film grain, high contrast, shallow depth of field, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, handwriting, signature, emblem, badge, readable document, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern clothing, smoke, fire, deformed hands, low quality, cartoon, illustration",
+      "constraints": "The yellow tag is completely blank — no writing, no printed lines, no hole-punched form ruling that could resolve into pseudo-glyphs; keep the tag slightly out of focus. Figure's back and shoulder only, no face."
+    },
+    {
+      "id": "P006",
+      "section": "ACT_1",
+      "beat": "Shortly before seven, the shift declared a site emergency. (TM-413)",
+      "subject": "A shift supervisor in silhouette at a wall-mounted rotary telephone, first grey daylight through a small window, control room behind him alive with lit tiles.",
+      "prompt": "A man in silhouette seen from behind and to the side, holding the handset of a beige wall-mounted rotary telephone with a coiled cord, early pre-dawn grey light through a small high window, out-of-focus wall of glowing amber annunciator tiles behind him, late-1970s American industrial interior, tired posture, cinematic documentary reconstruction, photorealistic, 35mm film grain, high contrast, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals on dial, handwriting, emblem, badge, readable document, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, push-button phone, modern clothing, smoke, fire, deformed hands, low quality, cartoon, illustration",
+      "constraints": "Silhouette or back three-quarter only; jawline acceptable, no recognisable features. Rotary dial visible but its finger-holes blank, no printed numbers or letters. He is not any named real supervisor."
+    },
+    {
+      "id": "P007",
+      "section": "ACT_1",
+      "beat": "The federal regulator's regional office found out at a quarter to eight — when it opened for the day... somebody walked into an office. (TM-413)",
+      "subject": "A man from behind, raincoat over one arm, entering a fluorescent-lit 1979 government office of steel desks, morning light, a rotary phone on every desk.",
+      "prompt": "A man seen fully from behind in a rumpled 1970s suit, raincoat over one arm and briefcase in hand, stepping into an opening government office with rows of grey steel tanker desks, beige rotary telephones, in-trays and a fanfold line printer, harsh fluorescent ceiling light just flickering on against cold morning window light, cinematic documentary reconstruction, photorealistic, 35mm film grain, muted institutional green and tan palette, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, handwriting, seal, emblem, flag with emblem, badge, readable document, legible papers, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, computer monitor, LCD, LED, smartphone, modern office, smoke, deformed hands, low quality, cartoon, illustration",
+      "constraints": "Back to camera. All papers on desks face down, blank, or defocused beyond legibility. No door glass with painted lettering, no wall plaques, no seals — keep walls bare. Not a depiction of any named NRC official."
+    },
+    {
+      "id": "P008",
+      "section": "ACT_1",
+      "beat": "The thing that tripped the feedwater pumps was a maintenance job on the condensate polishers... the same problem had occurred at least twice before. (TM-414)",
+      "subject": "A maintenance worker's gloved hands with a large wrench on a valve amid dense industrial pipework, dated equipment, work light glare.",
+      "prompt": "Close-up of gloved workman's hands fitting a heavy open-end wrench onto the packing nut of an industrial valve among dense painted steel pipes, 1970s American plant machinery with chipped institutional grey and safety-yellow paint, a bare caged incandescent work lamp blazing at frame edge, drips of water on the pipe lagging, cinematic documentary reconstruction, photorealistic, 35mm film grain, high contrast, shallow depth of field, 16:9",
+      "negative": "text, sign, lettering, stencilled letters, logo, watermark, numerals, handwriting, emblem, badge, readable document, legible tag, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern equipment, smoke, steam cloud, fire, deformed hands, extra fingers, low quality, cartoon, illustration",
+      "constraints": "Hands only. No stencilled pipe labels, valve tags blank or absent. No face reflected in metal."
+    },
+    {
+      "id": "P009",
+      "section": "ACT_2",
+      "beat": "More than one hundred alarms went off, and there was no system for suppressing the unimportant signals. (TM-501)",
+      "subject": "An operator from behind, arms slightly raised, facing an entire annunciator wall blazing with dozens of lit amber and red tiles at once.",
+      "prompt": "Dramatic wide shot from directly behind a man in a late-1970s short-sleeved shirt facing a floor-to-ceiling wall of small square annunciator tiles, dozens upon dozens lit simultaneously in amber and red, his arms half-raised in overload, the tile light flooding over his shoulders into a dark room, 1979 analogue nuclear control room, cinematic documentary reconstruction, photorealistic, 35mm film grain, very high contrast, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, glyphs on tiles, handwriting, emblem, badge, readable document, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern clothing, smoke, fire, explosion, green glow, deformed hands, low quality, cartoon, illustration",
+      "constraints": "Every lit tile is a blank rectangle of colour — absolutely no engraved legends or pseudo-glyphs on tile faces; render tiles slightly defocused if needed. Back to camera only."
+    },
+    {
+      "id": "P010",
+      "section": "ACT_2",
+      "beat": "The computer printer registering the alarms fell hours behind the events, and at one point jammed, losing information. (TM-505)",
+      "subject": "Hands pulling a mounded spill of continuous fanfold paper from a jammed 1970s line printer, paper cascading to the floor.",
+      "prompt": "Close-up of anonymous shirtsleeved hands wrestling a thick concertina spill of continuous fanfold computer paper out of a jammed beige 1970s line printer, perforated tractor-feed edges, paper mounding and cascading off the desk onto the floor, one desk lamp burning hot at frame edge, dark control room beyond, cinematic documentary reconstruction, photorealistic, 35mm film grain, high contrast, shallow depth of field, 16:9",
+      "negative": "text, printed characters, lettering, logo, watermark, numerals, handwriting, emblem, badge, readable document, legible printout, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern printer, smoke, fire, deformed hands, extra fingers, low quality, cartoon, illustration",
+      "constraints": "The paper is blank or carries only faint unreadable grey banding — no resolvable characters anywhere on any sheet. Hands only, no face."
+    },
+    {
+      "id": "P011",
+      "section": "ACT_2",
+      "beat": "Some key indicators relevant to the accident were on the back of the control panel. (TM-504)",
+      "subject": "An operator from behind squeezing into the narrow gap behind a control panel with a flashlight, wiring and gauge backs in the beam.",
+      "prompt": "A man seen from behind in a late-1970s work shirt leaning with a chrome flashlight into the narrow service gap behind a large control panel, the beam raking across looms of cloth-wrapped wiring, terminal strips and the brass backs of gauges, deep shadow everywhere else, cramped industrial space, cinematic documentary reconstruction, photorealistic, 35mm film grain, very high contrast, 16:9",
+      "negative": "text, sign, lettering, logo, watermark, numerals, handwriting, wire labels with characters, emblem, badge, readable document, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern wiring, zip ties, smoke, fire, deformed hands, low quality, cartoon, illustration",
+      "constraints": "Back and shoulder only. Wire tags and terminal labels blank or absent. Period wiring: cloth loom and lacing cord, no modern plastic cable ties."
+    },
+    {
+      "id": "P012",
+      "section": "ACT_2",
+      "beat": "An engineer wrote an internal note... 'it is quite possible, perhaps probable, that core uncovery and possible fuel damage would have occurred.' (TM-608)",
+      "subject": "An engineer in silhouette hunched over a desk at night writing under a single lamp, the page angled away and unreadable.",
+      "prompt": "A man in silhouette seen from behind and above, hunched over a wooden office desk at night writing with a pen under a green-shaded banker's lamp, the paper steeply angled away from camera and blown out by lamplight into a blank white shape, a heavy desk telephone with rotary dial and a slide rule beside the blotter, dark wood-panelled 1970s office, venetian blind shadows, cinematic documentary reconstruction, photorealistic, 35mm film grain, high contrast, 16:9",
+      "negative": "text, lettering, handwriting visible, words on paper, logo, watermark, numerals, seal, emblem, badge, readable document, legible page, human face, facial features, portrait, identifiable person, child, flat panel display, computer, LCD, LED, smartphone, modern office, smoke, deformed hands, low quality, cartoon, illustration",
+      "constraints": "The written page must read as pure blank white — overexposed, no stroke of handwriting resolvable. Silhouette only, no face. He is a generic engineer, not any named individual."
+    },
+    {
+      "id": "P013",
+      "section": "ACT_2",
+      "beat": "Each was a product of his training — training that did not adequately prepare them. (TM-415)",
+      "subject": "Rows of trainees seen from behind in a 1970s classroom facing a replica control panel, one instructor pointing with a wooden pointer.",
+      "prompt": "A 1970s training classroom seen from the back row, half a dozen men from behind in short-sleeved shirts at wooden desks, facing a wall-sized replica analogue control panel with round gauges and switch banks, an instructor at the side seen in silhouette pointing with a long wooden pointer, fluorescent light, chalkboard washed blank by glare, avocado and tan palette, cinematic documentary reconstruction, photorealistic, 35mm film grain, 16:9",
+      "negative": "text, chalk writing, lettering, logo, watermark, numerals, handwriting, emblem, badge, readable document, legible screen, poster, human face, facial features, portrait, identifiable person, child, flat panel display, projector screen with content, LCD, LED, smartphone, modern classroom, smoke, deformed hands, low quality, cartoon, illustration",
+      "constraints": "All heads from behind or silhouetted; instructor in profile silhouette only. Chalkboard completely blank under glare. No posters or charts on walls. All figures adult men (era-correct for a 1979 operator class)."
+    },
+    {
+      "id": "P014",
+      "section": "ACT_3",
+      "beat": "You run a water inventory balance... A leak rate test. (TM-201, TM-202)",
+      "subject": "A technician's hands holding a clipboard and pen before a bank of gauges, mid-reading, the sheet a blank form blur.",
+      "prompt": "Close-up over the shoulder of anonymous hands holding a metal clipboard and a ballpoint pen in front of a bank of round analogue gauges and vertical sight glasses, pen poised as if copying a reading, the clipboard sheet a soft out-of-focus white blank, warm incandescent panel lighting, late-1970s plant instrumentation in beige steel, cinematic documentary reconstruction, photorealistic, 35mm film grain, shallow depth of field, 16:9",
+      "negative": "text, form ruling, lettering, logo, watermark, numerals, handwriting, emblem, badge, readable document, legible page, legible gauge face, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern instruments, smoke, deformed hands, extra fingers, low quality, cartoon, illustration",
+      "constraints": "Hands and clipboard only. Clipboard page defocused pure white — no printed form lines that could resolve into pseudo-text. Gauge faces show needles only, no numerals."
+    },
+    {
+      "id": "P015",
+      "section": "ACT_3",
+      "beat": "Months of leak rate results, all of them inside the limit, produced by a procedure the company had been told did not measure anything. (TM-203) — reprised in ENDING ('in a filing cabinet somewhere in that same building').",
+      "subject": "Hands sliding a manila folder into a packed drawer of a steel filing cabinet, dozens of identical folders, dim office.",
+      "prompt": "Close-up of anonymous shirtsleeved hands sliding one manila folder into an overfull open drawer of a battered grey steel filing cabinet, dozens of identical blank-tabbed folders pressed together, a single desk lamp raking light across the drawer in an otherwise dark 1970s office, dust in the lamp beam, cinematic documentary reconstruction, photorealistic, 35mm film grain, high contrast, shallow depth of field, 16:9",
+      "negative": "text, tab labels, lettering, logo, watermark, numerals, handwriting, stamped marks, emblem, badge, readable document, legible page, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern office, smoke, deformed hands, extra fingers, low quality, cartoon, illustration",
+      "constraints": "Hands only. Every folder tab blank; no visible sheets of paper with any marking. Drawer front has no label card."
+    },
+    {
+      "id": "P016",
+      "section": "ACT_3",
+      "beat": "A shutdown is not a rebuke. It is a bill, arriving daily... the promises the company made about itself. (TM-101, TM-103)",
+      "subject": "A manager's silhouette at an office window at dusk, looking out at hyperboloid cooling towers releasing thin white water vapour.",
+      "prompt": "A man in full silhouette seen from behind at a large office window at dusk, hands clasped behind his back, looking out across a river landscape toward two hyperboloid concrete cooling towers releasing thin drifting white water vapour into an orange-grey Pennsylvania evening sky, dark 1970s office interior with wood panelling framing the window, cinematic documentary reconstruction, photorealistic, 35mm film grain, high contrast, 16:9",
+      "negative": "smoke, black smoke, dark plume, smokestack, chimney, fire, explosion, text, sign, lettering, logo, watermark, numerals, emblem, badge, readable document, legible screen, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern skyline, modern car, deformed hands, low quality, cartoon, illustration",
+      "constraints": "The tower plumes must read unmistakably as thin white water vapour, not smoke — never dark, never billowing black. Silhouette only, generic executive, not any named person. No signage on or near the building."
+    },
+    {
+      "id": "P017",
+      "section": "ACT_3",
+      "beat": "On the seventh of November, 1983... a federal grand jury in the Middle District of Pennsylvania returned an indictment. (TM-206)",
+      "subject": "Attorneys with briefcases from behind climbing broad stone courthouse steps on a grey November day, early-1980s cars at the kerb.",
+      "prompt": "Three men seen entirely from behind in long dark 1980s overcoats carrying leather briefcases, climbing the broad granite steps of a stone federal courthouse on an overcast November day, bare trees, boxy sedans of the late 1970s and early 1980s parked along the kerb below, breath fogging in cold air, muted grey and brown palette, cinematic documentary reconstruction, photorealistic, 35mm film grain, 16:9",
+      "negative": "text, sign, lettering, building inscription, carved letters, logo, watermark, numerals, flag with emblem, seal, emblem, badge, readable document, newspaper, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern car, modern clothing, smoke, deformed hands, low quality, cartoon, illustration",
+      "constraints": "All figures fully from behind. The courthouse facade must carry no carved inscription or lettering — plain stone frieze. Cars must be pre-1984 American sedans with unreadable plates."
+    },
+    {
+      "id": "P018",
+      "section": "ACT_4",
+      "beat": "On the twenty-ninth of February, 1984, in Courtroom Number Two of the federal building in Harrisburg, the company changed its plea. (TM-313, TM-304)",
+      "subject": "A wood-panelled federal courtroom from the gallery: suited figures from behind at counsel tables, the bench distant and empty of detail.",
+      "prompt": "View from the back gallery of a wood-panelled 1980s federal courtroom, rows of suited men seen only from behind at two long counsel tables, the judge's raised bench far away and softly defocused with an empty high-backed chair, tall windows throwing pale winter light across polished wood, hushed formal atmosphere, muted browns, cinematic documentary reconstruction, photorealistic, 35mm film grain, 16:9",
+      "negative": "gavel, scales of justice, handcuffs, text, sign, lettering, seal, eagle emblem, flag with readable detail, logo, watermark, numerals, handwriting, readable document, legible papers, human face, facial features, portrait, identifiable person, judge's face, child, flat panel display, LCD, LED, smartphone, microphone array, modern courtroom, smoke, deformed hands, low quality, cartoon, illustration",
+      "constraints": "No gavel, no scales, no seal or eagle above the bench — bare panelling. Every figure from behind; the bench unoccupied or its occupant fully defocused beyond recognition (the real judge must not be depicted). Papers on tables blank or face down."
+    },
+    {
+      "id": "P019",
+      "section": "ACT_4",
+      "beat": "The Governor advised pregnant women and preschool aged children to leave the area within five miles. (TM-709) — the film shows only anonymous adults preparing to go.",
+      "subject": "Two adults from behind loading suitcases into the open tailgate of a 1970s station wagon in a suburban Pennsylvania driveway, grey spring light.",
+      "prompt": "Two adults seen entirely from behind, a man and a woman in 1979 spring coats, lifting hard-shell suitcases into the open rear tailgate of a wood-panelled American station wagon in the driveway of a modest brick suburban house, bare late-March trees, overcast grey light, a folded road map on the car roof blurred to illegibility, quiet urgency, cinematic documentary reconstruction, photorealistic, 35mm film grain, muted palette, 16:9",
+      "negative": "child, baby, stroller, pregnant belly emphasized, crowd, panic, text, sign, street sign, lettering, license plate characters, logo, watermark, numerals, emblem, badge, readable document, readable map, human face, facial features, portrait, identifiable person, flat panel display, LCD, LED, smartphone, modern car, modern house, smoke, fire, hazmat suit, gas mask, deformed hands, low quality, cartoon, illustration",
+      "constraints": "Adults only, both fully from behind — no children, no visibly pregnant figure (spec forbids both). No mass-evacuation scale: one household, quiet, not panicked. Licence plate blank or unreadable. Car and house strictly pre-1980."
+    },
+    {
+      "id": "P020",
+      "section": "ACT_4",
+      "beat": "The state agency... had to rely primarily on the news media for information about conditions at the site. The people whose job was to tell the public what to do were watching television. (TM-712)",
+      "subject": "An official from behind in a dim emergency-operations office, lit only by the glow of a small 1979 CRT television on a filing cabinet.",
+      "prompt": "A man seen from behind in a rumpled white short-sleeved shirt and loosened dark tie, standing motionless in a dim 1979 government office, watching a small wood-cabinet CRT television that sits on top of a grey steel filing cabinet, the screen a soft indistinct glow of static-washed broadcast light on his shoulders, rotary telephones and paper piles on the desks in the dark behind him, cinematic documentary reconstruction, photorealistic, 35mm film grain, very high contrast, 16:9",
+      "negative": "legible screen, screen text, broadcast captions, recognisable TV imagery, text, sign, lettering, logo, watermark, numerals, map with labels, emblem, badge, readable document, human face, facial features, portrait, identifiable person, child, flat panel display, LCD, LED, smartphone, modern television, modern office, smoke, fire, deformed hands, low quality, cartoon, illustration",
+      "constraints": "The TV screen must be an abstract glow — no resolvable picture, no caption bar, no news graphics, no anchor's face. Figure fully from behind. Wall maps, if any, blurred beyond reading; prefer bare walls."
+    }
+  ]
+}

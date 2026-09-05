@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 302,
+  "episode_id": "PD-2026-076-morandi",
+  "slug": "morandi",
+  "loop": true,
+  "loop_join": "The final beat p14 (short302_14.png) is a plain white ground with a single fine horizontal line ruled across it, held under the FULL CASE card and rewound to the last frame. Frame 0 is p01 (short302_01.png), a single sheet of headed paper with an empty ruled area below. The loop closes on the same blankness at both ends: a ruled line with nothing written above it, and a ruled area with nothing written below it.",
+  "second_watch_detail": "That thick ring binder standing open with every page blank reads as an empty prop on the first pass; once L5-L6 place the company's June 2017 letter beside the commission's finding side by side, the same blank pages read as the safety assessment that was reported complete but, on the record obtained by the commission, was never carried out.",
+  "funnel_question_left_for_longform": "What did the same paper trail record about the project that was supposed to fix the stays - and who was allowed not to check it?",
+  "funnel_long_title": "Genoa's Viaduct Got 1.3 Million a Year. Then It Got 23,000.",
+  "funnel_long_video_id": "ippMyC49OyI",
+  "description_line_1": "▶ FULL CASE: Genoa's Viaduct Got 1.3 Million a Year. Then It Got 23,000. | https://youtu.be/ippMyC49OyI",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "Genoa's Motorway Viaduct Got 23,000...",
+    "ctaLongThumbSrc": "shorts/short302/short302_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "What did the same paper trail record about the project that was supposed to fix the stays - and who was allowed not to check it? The full case is here: https://youtu.be/ippMyC49OyI",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that is already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. The standing question is copied verbatim from the LEAVES FOR THE LONG-FORM line in remotion/src/data/short302.ts; the loop join and second-watch detail are read off the CUTS list in that file (cross-checked against the full plate subjects in episodes/_planning/short_designs/PD-2026-076-morandi.design.v001.json, since the inline .ts comments are truncated); the CTA block reuses that file's own hardcoded ctaLongTitle and ctaHeadline; the long-form video id and its exact live title were verified directly against the published watch page at https://youtu.be/ippMyC49OyI, which reads 'Genoa's Viaduct Got 1.3 Million a Year for Repairs. Then It Got 23,000.' (71 chars, over the 60-char funnel_long_title limit, so this record truncates it to the first and last clauses rather than inventing a new one). Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md with a PENDING placeholder, since short302 has not been uploaded yet."
+}

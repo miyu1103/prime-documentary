@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 256,
+  "episode_id": "PD-2026-059-robosigning",
+  "slug": "robosigning",
+  "loop": true,
+  "loop_join": "The final three beats (p23-p25) rewind back through the hook plates in reverse order -- short256_03, then short256_02, then short256_01 -- under the FULL CASE card, with p25 marked isCta/rewind and held to the last frame. Frame 0 of the short is that same short256_01 plate, a suburban front door from inside a dim hallway, so the loop closes on the identical opening image.",
+  "second_watch_detail": "p02's padlock and hasp screwed across a house door reads as ordinary bank enforcement on the first pass; once L8 explains that the deed for the right house sat the entire time in the county's own filing cabinet, unread, the same padlocked door reads as a lock the bank put on a house it never checked.",
+  "funnel_question_left_for_longform": "How does a bank produce a sworn court document about a house nobody has ever looked at?",
+  "funnel_long_title": "He Paid $139,000 Cash. There Was No Mortgage.",
+  "funnel_long_video_id": "Wo-SvvGsv8g",
+  "description_line_1": "▶ FULL CASE: He Paid $139,000 Cash. There Was No Mortgage. | https://youtu.be/Wo-SvvGsv8g",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "He Paid $139,000 Cash. There Was No",
+    "ctaLongThumbSrc": "shorts/short256/short256_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "How does a bank produce a sworn court document about a house nobody has ever looked at? The full case is here: https://youtu.be/Wo-SvvGsv8g",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. Every field is read off the built short: the loop join and second-watch detail from the CUTS comments in remotion/src/data/short256.ts, the CTA block from that same file's ctaLongTitle/ctaLongThumbSrc, the standing question from its file-header docstring, and the long-form id from the live YouTube video Wo-SvvGsv8g. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a placeholder row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet because this short is not yet uploaded."
+}

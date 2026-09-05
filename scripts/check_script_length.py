@@ -217,11 +217,34 @@ def _episode_band(epdir: Path) -> tuple[float, float]:
     """Resolve this episode's target band.
 
     MUST mirror check_runtime_band.infer_band_from_render_path -- if the pre-spend gate
-    and the post-render gate disagree, one of them is lying. Order: the episode's own
-    planned band, then the manifest's target_duration_minutes bucket, then the channel
-    default. (Omitting the manifest step was a false-RED: it judged the 24-35 min
-    long-form batch EP016-024 against the 11.5-12.5 min standard.)
+    and the post-render gate disagree, one of them is lying. Order: episode_spec.v001.json
+    (the machine contract, CLAUDE.md 4.6), then the episode's own planned band, then the
+    manifest's target_duration_minutes bucket, then the channel default. (Omitting the
+    manifest step was a false-RED: it judged the 24-35 min long-form batch EP016-024
+    against the 11.5-12.5 min standard.)
+
+    THE EPISODE SPEC OUTRANKS THE OTHER SOURCES and was not being read at all here --
+    the same bug check_final_acceptance.runtime_band() was fixed for on 2026-08-21 (see
+    its comment), but this sibling function duplicates the same resolution logic
+    independently and never got the fix. Measured 2026-09-05 on EP79 alaska261:
+    episode_spec declares runtime_seconds [1740, 1920] and script_words [4640, 5120]; the
+    script is 4,817 words, inside its own declared band, and check_script_craft (which DOES
+    read episode_spec) passed it. But this function found no remotion_plan.v*.json and no
+    usable manifest.target_duration_minutes bucket, fell through to the channel default
+    (690-750s / 11.5-12.5 min), and check_script_length reported the script "LONG by 2,433
+    words" against a 1,575-2,141 word band the episode never declared -- CLAUDE.md 4.6's
+    exact failure mode: "the gate fell back to a default describing an 11.5-minute format
+    the channel stopped making."
     """
+    try:
+        spec = json.loads((epdir / "episode_spec.v001.json").read_text(encoding="utf-8"))
+    except Exception:
+        spec = {}
+    band = spec.get("runtime_seconds")
+    if (isinstance(band, (list, tuple)) and len(band) == 2
+            and all(isinstance(x, (int, float)) for x in band) and band[0] < band[1]):
+        return float(band[0]), float(band[1])
+
     plans = sorted((epdir / "04_scenes").glob("remotion_plan.v*.json"))
     if plans:
         try:

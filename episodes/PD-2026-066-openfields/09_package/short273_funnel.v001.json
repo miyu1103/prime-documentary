@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0.0",
+  "short": 273,
+  "episode_id": "PD-2026-066-openfields",
+  "slug": "openfields",
+  "loop": true,
+  "loop_join": "The final beat p11 is short273_11.png, a boot-level close-up on wet leaf litter and stone, CTA and rewind and held to the last frame under the FULL CASE card. It is not the same file as the opening plate (short273_01.png, the dusk farmhouse the short opens on), but Short.tsx's rewind flag still runs its camera motion backward so the beat's ending scale/drift matches the scale/drift the opening beat began at, so the seam is a motion match rather than a hard cut into frame 0.",
+  "second_watch_detail": "The man in the beanie framed from behind at the gate, looking out over the field (p02, short273_02.png), reads as generic atmosphere on the first pass; once L3 and L7-L8 have explained the court found the statute facially constitutional but unconstitutional as applied, the same anonymous back reads as someone standing at the exact line the ruling drew between those two halves of its own opinion.",
+  "funnel_question_left_for_longform": "How can one law be lawful on its face and unlawful in the hands that used it?",
+  "funnel_long_title": "A Camera Watches the Woods for 78 Days.",
+  "funnel_long_video_id": "hIuvo897Mr4",
+  "description_line_1": "▶ FULL CASE: A Camera Watches the Woods for 78 Days. | https://youtu.be/hIuvo897Mr4",
+  "cta": {
+    "ctaHeadline": "FULL CASE",
+    "ctaLongTitle": "A Camera Watches the Woods for 78...",
+    "ctaLongThumbSrc": "shorts/short273/short273_ctathumb.jpg",
+    "scrim": 0.46,
+    "fake_button": false
+  },
+  "pinned_comment": "How can one law be lawful on its face and unlawful in the hands that used it? The full case is here: https://youtu.be/hIuvo897Mr4",
+  "note": "Record authored on 2026-09-05 to unblock scheduling for a Short that was already finished and rendered but had no machine-readable corridor to its episode, so check_short_funnel.py refused it. The loop join and second-watch detail were confirmed by reading remotion/src/data/short273.ts and viewing short273_01.png, short273_02.png and short273_11.png directly (md5 of p11 does not match p01, unlike short271/short272, so the join is described as a motion match, not an identical-frame loop), the standing question is copied from that file's LEAVES FOR THE LONG-FORM header, the CTA block matches the same file's hardcoded ctaHeadline/ctaLongTitle/ctaLongThumbSrc, and the long-form id and exact live title were cross-checked against episodes/PD-2026-066-openfields/09_package/youtube_schedule_result.v001.json and scripts/_yt_audit.json. Layer 4 -- the Studio related-video setting, which the API cannot set -- has a row in episodes/_planning/SHORTS_RELATED_VIDEO_WORKLIST.v001.md but has NOT been performed yet, and short273 is itself not yet uploaded."
+}
