@@ -40,6 +40,7 @@ VERT_INDEX = Path(r"E:\pd-media\assets\archive\_qc\vertical_index.jsonl")
 SEM_PATHS = ROOT / "runs" / "footage_semantic" / "paths.json"
 HONESTY = ROOT / "runs" / "theme_label_honesty.v001.json"
 EYE_REVIEW = ROOT / "docs" / "shelf" / "theme_eye_review.v001.json"
+INTEGRITY = ROOT / "runs" / "image_integrity.v001.jsonl"
 
 VIDEO_EXT = {".mp4", ".mov", ".mkv", ".webm", ".m4v", ".avi"}
 AUDIO_EXT = {".mp3", ".wav", ".flac", ".m4a", ".ogg", ".aac"}
@@ -133,6 +134,22 @@ def load_eye_review() -> dict:
     return {r["theme"]: r for r in json.loads(EYE_REVIEW.read_text("utf-8"))["reviewed"]}
 
 
+def load_integrity() -> dict:
+    """path -> defect for images that failed the decode/luma/alpha sweep.
+
+    check_image_integrity.py opened all 85,423 usable images on 2026-09-05 and 652 failed:
+    343 near-black, 233 mostly-transparent (logo cut-outs that composite as a black rectangle),
+    60 near-white, 16 truncated. None of this blocks the asset -- a near-black texture can be
+    deliberate -- but a picker must see it before the render does. Videos are NOT covered."""
+    if not INTEGRITY.exists():
+        return {}
+    out = {}
+    for line in INTEGRITY.open(encoding="utf-8"):
+        r = json.loads(line)
+        out[r["path"]] = f"{r['defect']}: {r['detail']}"
+    return out
+
+
 def ledger_rows():
     for f in sorted(glob.glob(os.path.join(LEDGER_DIR, "*.jsonl"))):
         for line in open(f, encoding="utf-8"):
@@ -147,7 +164,7 @@ def ledger_rows():
                 yield r
 
 
-def classify(row: dict, res: dict, vert: dict, sem: set, honesty: dict, eye: dict) -> dict:
+def classify(row: dict, res: dict, vert: dict, sem: set, honesty: dict, eye: dict, integrity: dict) -> dict:
     path = row["file_path"]
     kind = kind_of(path)
     decision = row.get("license_decision")
@@ -200,6 +217,10 @@ def classify(row: dict, res: dict, vert: dict, sem: set, honesty: dict, eye: dic
         gaps.append("not in the semantic index -- a search will never surface it")
     if "foreign" in tech:
         gaps.append(f"title names '{tech['foreign']}' -- this is not an American subject")
+    bad = integrity.get(path)
+    if bad:
+        tech["integrity"] = bad
+        gaps.append(f"failed the image integrity sweep -- {bad[:110]}")
     e = eye.get(row.get("theme"))
     if e:
         tech["theme_eye_verdict"] = e["verdict"]
@@ -239,6 +260,8 @@ def print_checklist(rec: dict) -> None:
     print(f"              in semantic search: {t.get('searchable')}")
     if "foreign" in t:
         print(f"              NON-US SUBJECT: title names '{t['foreign']}'")
+    if "integrity" in t:
+        print(f"              INTEGRITY: {t['integrity'][:90]}")
     if "theme_on_label_pct" in t or "theme_eye_verdict" in t:
         pct = t.get("theme_on_label_pct")
         line = f"\n  THEME       {rec['theme']}"
@@ -285,14 +308,15 @@ def main() -> int:
     res, vert, sem = load_side_indexes()
     honesty = load_theme_honesty()
     eye = load_eye_review()
+    integrity = load_integrity()
     print(f"side indexes: resolution={len(res)} vertical={len(vert)} semantic={len(sem)} "
-          f"theme-honesty={len(honesty)} eye-review={len(eye)}")
+          f"theme-honesty={len(honesty)} eye-review={len(eye)} integrity-defects={len(integrity)}")
     tally: collections.Counter = collections.Counter()
     tmp = str(OUT) + ".tmp"
     n = 0
     with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
         for row in ledger_rows():
-            rec = classify(row, res, vert, sem, honesty, eye)
+            rec = classify(row, res, vert, sem, honesty, eye, integrity)
             fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
             tally[(rec["kind"], rec["rights"])] += 1
             n += 1
