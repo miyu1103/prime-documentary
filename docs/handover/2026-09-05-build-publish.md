@@ -69,3 +69,25 @@ Everything below is verified, not recalled.
 - Captions (whisper) still needed for max737/threemile/katrina before their builds' polish step.
 - Owner decisions parked: readable brands in two published episodes; 20 lost kinetic cards in 15
   published episodes; EP86–88 slate approval.
+
+## Brush-up proposals (owner asked these be kept; implement in coming sessions)
+
+1. **Pre-render livery sweep as a standing preflight step** — proven same-day: the sweep of
+   max737's legacy (pre-zoom-standard) plates caught 3 real-carrier liveries (Air France
+   tricolor, a DL monogram, carrier-red nacelles) BEFORE the render; colgan's identical defect
+   was only caught AFTER a full render. Scope: plates whose design rows mention aircraft/
+   vehicles/ships/signage, zoomed 5-8x. Candidate home: a --livery-sweep mode on
+   check_plate_verdicts or a small standalone checker wired into ship_episode.sh preflight.
+2. **Durable daily shorts push** — replace session-bound sleep timers with a Windows scheduled
+   task (schtasks) running yt refresh + fill_short_schedule --apply --reserve <day's need>.
+   No PD-ShortsPush task exists today; a thread switch kills the timer.
+3. **Scaffold ordering guard** — check_plate_verdicts --scaffold should WARN (or refuse without
+   --force) when remotion/public/<slug>/img_unused|motion_unused are non-empty: scaffolding
+   then destroys verdicts the next [0/7] restore will need (cost today: 125 rows, recovered
+   sha-verified from plate_decision + plate_hashes).
+4. **Caption canonical naming** — gen_captions_forced writes captions.vNNN.srt but every
+   filmconfig reads captions.final.v001.srt; add a --promote flag or teach the finisher to
+   accept the newest vNNN. Manual copy step today for 3 episodes.
+5. **Generation agent sizing** — one episode per generation agent, max ~20 plates; the single
+   60-plate agent died to a session cap mid-batch and its successor had to reconstruct state
+   from disk.

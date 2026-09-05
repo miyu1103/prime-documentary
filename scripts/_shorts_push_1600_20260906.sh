@@ -19,5 +19,5 @@ py -3.11 scripts/yt_full_audit.py >/dev/null 2>&1
 py -3.11 scripts/yt_list_scheduled.py | tail -3
 
 echo "[push-timer] pushing shorts (reserve 1650 for the day's long-form booking)"
-py -3.11 scripts/fill_short_schedule.py --apply --reserve 1650
+py -3.11 scripts/fill_short_schedule.py --apply --reserve 5200
 echo "[push-timer] done, exit $?"

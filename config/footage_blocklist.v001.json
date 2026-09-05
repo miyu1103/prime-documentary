@@ -1279,6 +1279,19 @@
       "label": "delta_air_lines_tail_liveries",
       "reason": "EP78 colgan, 2:13-2:20 (cut-0020, colgan/motion/C014.mp4 from generated plate C014.png): three aircraft tails through a rain-streaked window carry Delta Air Lines' recognizable widget livery (dark navy tail, red upper wedge) -- the generator reproduced a real carrier's trade dress. rights_and_licence class. Found in the 2026-09-05 shipped-frames read of render v001 (sha 979c4a76), confirmed by independent crop-zoom. Episode-scoped because C-prefix plate ids are per-episode, not global shelf ids; the offending pixels exist only in colgan's C014 assets (img/C014.png, img/C014_depth.png, motion/C014.mp4 and the E:/pd-media ai_video archive copy).",
       "added": "2026-09-05"
+    },
+    {
+      "ids": [
+        "X043",
+        "X062",
+        "X065"
+      ],
+      "episodes": [
+        "max737"
+      ],
+      "label": "real_carrier_liveries_in_window_backgrounds",
+      "reason": "EP83 max737 pre-render livery sweep 2026-09-05 (runs/qc/max737_livery_sweep.v001.json): X043 shows Air France-style red/blue tricolor tail stripes on two background aircraft through an office window; X062 shows a dark navy tail with a white DL monogram (reads as Delta) twice; X065 shows crimson carrier-style engine nacelles/trim. Same failure mode as colgan C014 (window-background aircraft, invisible at contact-sheet scale, resolves under zoom). rights_and_licence. X-prefix plate ids are max737-local; blocked for the plate, its depth sibling, and the i2v motion derivative everywhere they exist.",
+      "added": "2026-09-05"
     }
   ],
   "quality_deferred": [
