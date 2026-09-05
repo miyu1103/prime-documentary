@@ -39,6 +39,7 @@ RES_INDEX = Path(LEDGER_DIR) / "video_resolution.json"
 VERT_INDEX = Path(r"E:\pd-media\assets\archive\_qc\vertical_index.jsonl")
 SEM_PATHS = ROOT / "runs" / "footage_semantic" / "paths.json"
 HONESTY = ROOT / "runs" / "theme_label_honesty.v001.json"
+EYE_REVIEW = ROOT / "docs" / "shelf" / "theme_eye_review.v001.json"
 
 VIDEO_EXT = {".mp4", ".mov", ".mkv", ".webm", ".m4v", ".avi"}
 AUDIO_EXT = {".mp3", ".wav", ".flac", ".m4a", ".ogg", ".aac"}
@@ -118,6 +119,20 @@ def load_theme_honesty() -> dict:
     return {r["theme"]: r for r in json.loads(HONESTY.read_text("utf-8"))}
 
 
+def load_eye_review() -> dict:
+    """theme -> the verdict a person gave after opening that theme's 20-tile sheet.
+
+    2026-09-04/05: all 68 themes were reviewed by eye (docs/shelf/theme_eye_review.v001.json).
+    The honesty score proved wrong in BOTH directions -- police_modern scored 33% and holds zero
+    real police; bank_and_branch scored 12% and is three-quarters real American banks -- so the
+    eye verdict, not the score, is what a picker should see. A QUARANTINE verdict does not block
+    an individual asset (the defect is the LABEL: a mountain filed under courtroom_justice is
+    still a fine mountain) -- it means the theme name must not be trusted as a description."""
+    if not EYE_REVIEW.exists():
+        return {}
+    return {r["theme"]: r for r in json.loads(EYE_REVIEW.read_text("utf-8"))["reviewed"]}
+
+
 def ledger_rows():
     for f in sorted(glob.glob(os.path.join(LEDGER_DIR, "*.jsonl"))):
         for line in open(f, encoding="utf-8"):
@@ -132,7 +147,7 @@ def ledger_rows():
                 yield r
 
 
-def classify(row: dict, res: dict, vert: dict, sem: set, honesty: dict) -> dict:
+def classify(row: dict, res: dict, vert: dict, sem: set, honesty: dict, eye: dict) -> dict:
     path = row["file_path"]
     kind = kind_of(path)
     decision = row.get("license_decision")
@@ -185,6 +200,11 @@ def classify(row: dict, res: dict, vert: dict, sem: set, honesty: dict) -> dict:
         gaps.append("not in the semantic index -- a search will never surface it")
     if "foreign" in tech:
         gaps.append(f"title names '{tech['foreign']}' -- this is not an American subject")
+    e = eye.get(row.get("theme"))
+    if e:
+        tech["theme_eye_verdict"] = e["verdict"]
+        if e["verdict"] in ("QUARANTINE", "NOT-FOR-PD", "AI-CONTAMINATED", "RIGHTS-CAUTION"):
+            gaps.append(f"a person reviewed this theme's sheet: {e['verdict']} -- {e['note'][:120]}")
     h = honesty.get(row.get("theme"))
     if h:
         tech["theme_on_label_pct"] = h["on_label_pct"]
@@ -219,10 +239,14 @@ def print_checklist(rec: dict) -> None:
     print(f"              in semantic search: {t.get('searchable')}")
     if "foreign" in t:
         print(f"              NON-US SUBJECT: title names '{t['foreign']}'")
-    if "theme_on_label_pct" in t:
-        pct = t["theme_on_label_pct"]
-        flag = "  <-- THEME IS UNRELIABLE" if pct < 50 else ""
-        print(f"\n  THEME       {rec['theme']}  {pct}% on-label{flag}")
+    if "theme_on_label_pct" in t or "theme_eye_verdict" in t:
+        pct = t.get("theme_on_label_pct")
+        line = f"\n  THEME       {rec['theme']}"
+        if pct is not None:
+            line += f"  {pct}% on-label"
+        if "theme_eye_verdict" in t:
+            line += f"  |  eye verdict: {t['theme_eye_verdict']}"
+        print(line)
     print("\n  NOT CHECKED (a person must):")
     for g in rec["unchecked"]:
         print(f"              - {g}")
@@ -260,14 +284,15 @@ def main() -> int:
 
     res, vert, sem = load_side_indexes()
     honesty = load_theme_honesty()
+    eye = load_eye_review()
     print(f"side indexes: resolution={len(res)} vertical={len(vert)} semantic={len(sem)} "
-          f"theme-honesty={len(honesty)}")
+          f"theme-honesty={len(honesty)} eye-review={len(eye)}")
     tally: collections.Counter = collections.Counter()
     tmp = str(OUT) + ".tmp"
     n = 0
     with open(tmp, "w", encoding="utf-8", newline="\n") as fh:
         for row in ledger_rows():
-            rec = classify(row, res, vert, sem, honesty)
+            rec = classify(row, res, vert, sem, honesty, eye)
             fh.write(json.dumps(rec, ensure_ascii=False) + "\n")
             tally[(rec["kind"], rec["rights"])] += 1
             n += 1

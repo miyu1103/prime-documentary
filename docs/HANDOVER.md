@@ -514,3 +514,13 @@ concordia 21件、計139件を記録し、レビュー3本は**測定した実�
 書き換え不可）。CONFIG は過去日0・重複0に是正済みだが、**08-31/09-01/09-02 の割当は3本が出せる前提なので要再設定**。
 
 **追記(21:10)**: オーナー判断3件を `APR-0001` に記録。①concordiaのファンネルはそのまま出荷 ②EP72/73は「読める商標＋判別可能な顔」だけ直す ③不快な並べ方は止めず記録のみ（4クラスは不変）。**concordia 予約完了 `o98hKLTK93g`／8-31 12:00 JST**（チャンネル実測 processed/succeeded/問題0）。機械は一度 refuse を出したが本物で、`packaging_claims[description]`＝**説明欄が3つの事実を1文に詰めていた**ため1文単位の照合が成立せず5分先の否定文を拾っていた。本編と同じ3文に直して permit（しきい値も検査も未変更）。**EP72は16クリップ/18カット・EP73は7クリップ/12カットを除去**し再構築、監査は18→0・12→0、被り0.69/0.70・最大再利用2。罠2つ: **剪定はfactory/img/motion→素材マニフェスト→フィルムの順**（factoryだけ刈るとビルドが落ちる）、**E:アーカイブが毎回復元する**ので隔離が要る。GPUは親殺しでは解放されず子が18GB保持（ツリーkillで2,119MiBへ）。i2vの空回り(28分/話)は `823dfbe2` で修正済み。**残: Timeline のはみ出し(25話)・lowerthird両端欠けの原因特定・焼き上がり3本の目視読み直し。**
+
+**[2026-09-05 — shorts + assets lane](handover/2026-09-05-shorts-and-assets.md)** — the shelf now
+answers "can I use this?" per asset: `build_asset_usability.py --path <file>` prints rights (with
+the source's own words), technical floors, theme trust and what nobody has checked. Rights:
+21,652 held → ~9,300, resolved from collection membership, per-item lookups and file-hash
+identification; only answered-and-refused rows are marked, so rate limits never look like
+decisions. **All 68 themes eye-reviewed** (docs/shelf/theme_eye_review.v001.json): 11 themes are
+QUARANTINE-grade label rot, 357 self-tagged AI assets were marked usable (now blocked), Mickey
+Mouse/LEGO/Bee Gees IP found, and the honesty metric failed in both directions — only looking
+works. Trap that cost three commits: `git add` on an ignored path stages nothing and exits 0.

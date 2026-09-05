@@ -102,6 +102,20 @@ Full ranking: `runs/theme_label_honesty.v001.json`. Sheets: `runs/qc/theme_sheet
 asset. But under 50 per cent, searching by theme is worse than useless — it returns confident
 wrong answers. Search semantically (`index_footage_semantic.py --query`) and look at the result.
 
+**Since 2026-09-05 the checklist also prints the EYE VERDICT** — the judgement a person made
+after opening that theme's 20-tile sheet (all 68 themes were reviewed; the record is
+`docs/shelf/theme_eye_review.v001.json`):
+
+```
+  THEME       courtroom_justice  30.3% on-label  |  eye verdict: QUARANTINE
+```
+
+The score and the eye disagree in both directions — `police_modern` scored 33% and holds zero
+real police; `bank_and_branch` scored 12% and is three-quarters real American banks — so when
+they conflict, **the eye verdict wins**. A `QUARANTINE` verdict does not block the asset (the
+defect is the label: a mountain filed under `courtroom_justice` is still a fine mountain); it
+means the theme name must not be trusted as a description of what the file shows.
+
 ## 3. NOT CHECKED — printed on every asset, on purpose
 
 Two lines appear under every single record:
